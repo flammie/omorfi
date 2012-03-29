@@ -1,0 +1,150 @@
+====================================================
+ Omorfi–Open source Morphology for Finnish language
+====================================================
+
+This package contains free and open source implementation of morphological
+analysis for Finnish language. It uses GPL licenced HFST tools as
+implementation of morphological description. This package is licenced under GNU
+GPL version 3, but not necessarily later. Licence can be found from ``COPYING``
+file in root of the distribution package. Other licences are possible from
+authors named in the ``AUTHORS``.
+
+The dictionaries used in omorfi are `Nykysuomen sanalista
+<http://kaino.kotus.fi>`_ (LGPL),  `Joukahainen
+<http://joukahainen.lokalisointi.org>`_ (GPL) and `Finnwordnet
+<http://www.ling.helsinki.fi/research/finnwordnet>`_ (Princeton Wordnet licence
+/ GPL; relicenced with kind permission from University of Helsinki). Some words
+have also been collected by omorfi developers and contributors.
+
+Downloading
+-----------
+
+`Omorfi can be found from gna! service <http://gna.org/projects/omorfi>`_.
+`Omorfi download directory <http://download.gna.org/omorfi/>`_ contains
+release packages. Development version can be found from gna! SVN server.
+In Gentoo_ distribution omorfi can be installed from `science overlay`_.
+
+Dependencies
+------------
+
+Compilation of automata requires HFST tools or compatible installed:
+
+* hfst-3.0.2 or greater is required for omorfi version 20110505
+
+The rebuilding of lexical data is not usually necessary unless you want to
+update the base resources. For lexical data handling, additional tools are
+needed:
+
+- ``python`` is needed to rebuild lexc lexicons from CSV data
+
+- XSLT processor supporting XSLT 2.0 is needed to extract CSV data from
+  XML-based lexical sources:
+
+  - ``java`` must be able to access ``net.sf.saxon.Transform`` in existing
+    env., or
+  
+  - script named ``saxon``, ``saxon8``, ``saxon9``, or ``saxonb-xslt`` must
+    execute it
+
+The final transducers can be used with HFST tools, HFST runtime tools, SFST
+tools or OpenFST tools (the last two are untested but should work). The
+automata can also be used by other software projects, such as Voikko
+spell checking library and apertium machine translation system.
+
+Installation
+------------
+
+Installation uses standard autotools system::
+
+  ./configure && make && make install
+
+The compiling may take forever or more depending on the hardware you are using.
+The stable versions should be compilable on average end-user laptops, such as
+my Acer Aspire one.
+
+If configure cannot find HFST tools, you must tell it where to find them::
+
+  ./configure --with-hfst=${HFSTPATH}
+
+Autotools system supports installation to e.g. home directory::
+
+  ./configure --prefix=${HOME}
+
+In CVS or SVN version you must create necessary autotools files in host system::
+
+  ./autogen.sh
+
+For further instructions, see ``INSTALL``, the GNU standard install instructions
+for autotools systems.
+
+Usage
+-----
+
+Omorfi installs experimental scripts that are meant for easy command line
+based use of omorfi automata: ``omorfi-analyse.sh`` is a simple shell script
+invoking ``hfst-proc`` tokenising analyser, which uses the morphological
+analyser to break the input into words and then analyses them. The basic
+usage::
+
+  omorfi-analyse.sh [TAGSET [FILENAME]]
+
+So for basic analysis of a text file named ``kalevala.txt`` is::
+
+  omorfi-analyse.sh cg kalevala.txt
+
+or::
+
+  omorfi-analyse.sh cg < kalevala.txt
+
+To see other tagging formats, replace ``cg`` with ``omor``, ``apertium``,
+``ftc``, ``finntreebank`` etc. Use --help to get full listing of installed
+tagsets. 
+
+The script ``omorfi-interactive.sh`` can be used to analyse pre-tokenised text
+or input one word form at a time from the shell (N.B. the input is read raw
+from command line, so special keys, such as arrows will not work).
+
+The other functions of omorfi are also accesible through scripts:
+``omorfi-spell.sh`` performs spell-checking using the dictionary,
+``omorfi-suggest.sh`` performs spelling correction, ``omorfi-hyphenate.sh`` can
+hyphenate isolated word forms and ``omorfi-generate.sh`` may be used to turn
+analysis strings into word forms.  These scripts are experimental and may not
+work in current version.
+
+For more advanced usage, you may see ``${prefix}/share/hfst/fi/`` directory,
+which contains all the omorfi automata. These can be manipulated by standard
+HFST tools.
+
+On character codings
+--------------------
+
+The implementation of morphology uses UTF-8 encoded Unicode, and all relevant
+tools typically only process UTF-8 encoded format. This may cause
+some problems. Firstly there are some characters which have less ambiguous
+Unicode variants than their ASCII versions, namely the U+2019 RIGHT SINGLE
+QUOTATION MARK and U+2010 HYPHEN. The analysis should work with both them and
+the legacy 0x27 APOSTROPHE and 0x2D HYPHEN-MINUS, but this variation may cause
+problems. 
+
+On some systems characters with potential diacritics, such as ä and ö,
+may be encoded differently; the implemented version uses the form of unicode
+where diacritics are precomposed to characters, also known as unicode
+normal form C (NFC). Systems using decomposed form (NFD) may experience
+problems.
+
+Programming and project management
+----------------------------------
+
+Omorfi rulesets and codes are free and libre open source, modifiable and
+redistributable by anyone. For participation in project it is recommended to
+follow rules common in majority of free and open source projects, such as
+`GNU project style guide <http://www.gnu.org/prep/standards/standards.html>`_,
+and `autobook book <http://sources.redhat.com/autobook/>`_ (esp. § 9.1.1)
+and instructions in project’s HACKING_ file. Bugs should be reported through
+`omorfi’s gna! bug tracker <http://gna.org/bugs/?group=omorfi>`_ system.
+
+.. _Gentoo: http://www.gentoo.org
+.. _science overlay: http://overlays.gentoo.org/proj/science
+.. _pysfst: http://gna.org/projects/pysfst/
+.. _HACKING: HACKING.html
+.. vim: set ft=rst:

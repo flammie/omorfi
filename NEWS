@@ -1,0 +1,83 @@
+======
+ NEWS
+======
+
+This file lists noteworthy changes between releases, for full list of changes, 
+see ChangeLog.
+
+Significant changes in 20110505
+-------------------------------
+
+* whole new finntreebank tagset for forthcoming finntreebank work
+* uppercasing is noted in the analysis level
+* the word boundaries of lexicalised compounds may be available for more cases
+  (depending on the tagset)
+* whole new lemmatizer tagset is available
+* some dozens of new words added and fixed
+* combine corpus analysis script with apertium's preprocessors
+* causative derivation chain added
+* bbreviations, adpositions, prefixes and suffixes are no longer pos but subcat
+  analyses
+
+
+Significant changes since 20100401
+----------------------------------
+
+* Include deverbal nouns in compounding system
+
+* Start marking compound and strong morpheme boundaries
+
+* New lexical data handling systems
+
+* Implement generator from analyser
+
+* Subcategorize lots of classes for CG and apertium
+
+* Write documentation in booklet format
+
+* New URI and digit string guessers
+
+* New tagging style colorterm for interactive use
+
+* Include weighting scheme in default build
+
+* Demote SUFFIX from POS reading to SUBCAT
+
+Significant changes since 20100111
+----------------------------------
+
+* Added marginal enclitics kA, kAs
+
+* Added LEMMA= structure
+
+* re-organized source code to modules
+
+* Added tagging schemes, weighting schemes and suggestion algorithms
+
+Significant changes since 0.5
+-----------------------------
+
+* completely new morphology built on traditional lexc-twolc model
+
+* easier route to add new lexical data via simple CSV format
+
+* lots of new lexical data from Joukahainen project as well as extended
+  from kotus-sanalista semi-automatically and *by hand*.
+
+* titlecasing filter for regular words
+
+* š filter for old orthography variants
+
+* compounding much less haphazard concoction
+
+* parts of speech classified and included
+
+* pronouns, interjections, numerals, proper nouns
+
+* much closer to real full fledged morphology
+
+* movement from SFST to HFST toolset with lots of new cool toys (SFST support
+  is retained in HFST)
+
+* towards full-scale automatic test suite
+
