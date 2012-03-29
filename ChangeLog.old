@@ -1,0 +1,2673 @@
+This changelog is archived from gna.org repository. For newer changes
+use git log.
+
+2011-12-06 11:27  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/99-viskista.csv,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/broken-paradigms.csv,
+	  src/morphology/lexical-data/extra-fiwn.csv,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/plurale-tantum.csv,
+	  src/morphology/lexical-data/possessives.csv,
+	  src/morphology/lexical-data/pronunciation.csv,
+	  src/morphology/lexical-data/proper-classes.csv,
+	  src/morphology/lexical-data/usage.csv: Fixes to CSV data found
+	  while hacking new scripts
+
+2011-12-06 10:26  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py: no more analyses / flags
+	  in python
+
+2011-12-06 10:10  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/csvjoin.py,
+	  src/morphology/lexical-data/pronouns2lexc.py: Convert csvjoin to
+	  python3 and fix verbose printing a bit
+
+2011-12-06 09:04  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py: Finalise python3
+	  conversion here
+
+2011-12-04 12:05  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py: Convert to python 3 and
+	  make more hackable
+
+2011-11-22 21:02  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/filters/filter.finntreebank.twolc,
+	  src/tagsets/finntreebank.relabel: Some new finntreebanks
+
+2011-11-11 06:50  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/hyphenations.twolc, src/phonology/omorfi.twolc:
+	  Rules to handle new hyphen types
+
+2011-11-11 06:48  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/compounding.hlexc,
+	  src/morphology/definitions.lexc, src/morphology/guessers: Add
+	  analysis tag for optionally dashed compounds
+
+2011-11-11 01:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: only install selected tagset
+
+2011-11-11 01:12  Flammie Pirinen <flammie@iki.fi>
+
+	* README: Mention finnwordnet relicencing in README
+
+2011-11-04 11:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/Makefile.am, src/orthography/uppercase-no.twolc:
+	  disabled uppercasing files
+
+2011-11-04 00:27  Flammie Pirinen <flammie@iki.fi>
+
+	* src/phonology/omorfi.twolc: extend k:' restrictions, disallow k:'
+	  without AV-
+
+2011-11-01 19:11  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/inflection/nouns.lexc: correct tag for ihin
+	  illatives, thanks to Jyrki for reporting at ML
+
+2011-10-25 20:11  Flammie Pirinen <flammie@iki.fi>
+
+	* src/scripts/finntreebank.py: script to rewrite analyses in
+	  finntreebank format
+
+2011-09-30 09:36  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/weights/Makefile.am,
+	  src/weights/analysis-sigma-star.regex,
+	  src/weights/omorfi.tags.regex, src/weights/sigma-star.regex,
+	  src/weights/surface-sigma-star.regex: cicling weighting schemes
+
+2011-09-05 01:07  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/51.hlexc: +vanhapiika ILL & INS
+
+2011-09-05 01:01  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: +vihko^D
+
+2011-09-04 23:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/pos.lexc: Include non-inflecting proper nouns
+
+2011-09-04 23:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am: Swing lexc data by foma directly into
+	  openfst
+
+2011-09-04 23:53  Flammie Pirinen <flammie@iki.fi>
+
+	* src/filters/filter.finntreebank.twolc: fix few finntreebank rules
+
+2011-08-17 05:48  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/broken-paradigms.csv,
+	  src/morphology/lexical-data/extra-fiwn.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/plurale-tantum.csv,
+	  src/morphology/lexical-data/pronunciation.csv,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/regenerate-lexicons.sh,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: finnwordnet lexicon
+
+2011-08-16 03:10  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: port|viini
+
+2011-08-16 03:02  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv: pfx-mielinen word
+	  boundaries
+
+2011-08-16 02:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: ruijanpallas
+	  vastenmielinen kommunikaatio (my next passphrase)
+
+2011-08-16 02:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adverbs.hlexc: varuilla+poss
+
+2011-08-16 02:33  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/exceptions.hlexc: +jumalten
+
+2011-08-16 02:33  Flammie Pirinen <flammie@iki.fi>
+
+	* src/phonology/omorfi.twolc: Add space as word-boundary (not
+	  working?)
+
+2011-08-16 02:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/stems/nouns.lexc: ^41 + arch pl gen is av-
+
+2011-08-16 02:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc: Add word boundaries
+	  to mwes
+
+2011-08-16 02:08  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/kotus.csv: Add missing optional
+	  gradation in hkas
+
+2011-08-12 11:11  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/exceptions.hlexc: olemme -> pl1,
+	  olette -> pl2
+
+2011-08-11 16:50  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/broken-paradigms.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/plurale-tantum.csv,
+	  src/morphology/stems/nouns.lexc: Fix unsplit unmarked gradation
+	  in 28: orsi, jälsi, kynsi
+
+2011-08-11 15:18  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: +hapan^34-B
+
+2011-08-11 15:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/index.xml.in: zhfst metadata
+
+2011-08-09 23:56  Flammie Pirinen <flammie@iki.fi>
+
+	* autogen.sh, configure.ac, src/Makefile.am: Add zhfst support to
+	  voikko targets; clean m4 if usage
+
+2011-08-09 19:08  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium-lower.relabel, src/tagsets/apertium.relabel,
+	  src/tagsets/cg.relabel, src/tagsets/colorterm.relabel,
+	  src/tagsets/fdg.relabel, src/tagsets/finntreebank.relabel,
+	  src/tagsets/ftc.relabel, src/tagsets/lemmatize.relabel: some of
+	  the new tags to all tagsets
+
+2011-08-02 17:29  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: top missing words
+	  from europarl
+
+2011-08-02 17:26  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/exceptions.hlexc: Disallow more
+	  compounds
+
+2011-08-02 17:21  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adpositions.hlexc: Document and
+	  classify adpositions a bit
+
+2011-07-04 11:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/filters/filter.finntreebank.twolc: Missing finntreebank
+	  filter file
+
+2011-06-20 23:24  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/proper-classes.csv,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/punctuation.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: few more
+	  reclassifications
+
+2011-06-20 23:18  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/51.hlexc,
+	  src/morphology/lexical-data/numeral-stubs.hlexc: some typoed
+	  optionals
+
+2011-06-20 22:55  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/regenerate-lexicons.sh: add adverbs
+	  to list of closed pos and don't regen
+
+2011-06-20 22:51  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/finntreebank.relabel: kill indef reading for
+	  finntreebank
+
+2011-06-20 21:57  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/uppercase-word.twolc: Try harder at tagging
+	  two-letter words when recasing
+
+2011-06-20 20:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adpositions.hlexc: set of new
+	  adpositions from finntreebank
+
+2011-06-20 20:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/conjunctions.hlexc: Finntreebank
+	  version of mutta
+
+2011-06-15 06:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/filters/Makefile.am: one more finntreebank
+
+2011-06-15 06:18  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/tagsets/Makefile.am: extra targets for
+	  finntreebank
+
+2011-06-15 06:17  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am: remove unused guessers
+
+2011-06-15 06:16  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/definitions.lexc: Disallow extra long analysis
+	  paths
+
+2011-06-15 06:16  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/inflection/acronyms.lexc,
+	  src/morphology/inflection/adjectives.lexc,
+	  src/morphology/inflection/nouns.lexc,
+	  src/morphology/inflection/verbs.lexc: attempt to invent extra
+	  paths for legacy long analysis style
+
+2011-06-15 06:14  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/pronouns.hlexc: New finntreebank
+	  pronoun categories
+
+2011-06-15 06:13  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adverbs.hlexc: New finntreebank
+	  adverb categories
+
+2011-06-15 06:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/finntreebank-tags.strings,
+	  src/tagsets/finntreebank.relabel: finntreebank tag update
+
+2011-06-01 17:31  ftyers
+
+	* src/tagsets/apertium-lower.relabel: new tags
+
+2011-05-31 08:29  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: right filenames for voikko
+
+2011-05-30 05:02  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: few hundred most
+	  popular misses in coverage tests
+
+2011-05-30 04:51  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/pronouns.hlexc: Document and classify
+	  pronouns
+
+2011-05-28 11:14  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/definitions.lexc,
+	  src/morphology/lexical-data/punctuation.hlexc: document and
+	  extend symbols
+
+2011-05-28 10:40  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/51.hlexc,
+	  src/morphology/lexical-data/numeral-stubs.hlexc: Rest of the
+	  agreement compounds
+
+2011-05-26 21:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/definitions.lexc,
+	  src/morphology/lexical-data/99-viskista.csv,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/tagsets/apertium.relabel, src/tagsets/cg.relabel,
+	  src/tagsets/colorterm.relabel, src/tagsets/fdg.relabel,
+	  src/tagsets/finntreebank.relabel, src/tagsets/ftc.relabel,
+	  src/tagsets/lemmatize.relabel: Documented and checked
+	  conjunctions
+
+2011-05-26 14:46  Flammie Pirinen <flammie@iki.fi>
+
+	* src/suggestion/Makefile.am: use hfstol all over
+
+2011-05-26 14:45  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/Makefile.am: extra dist finntreebank
+
+2011-05-26 14:45  Flammie Pirinen <flammie@iki.fi>
+
+	* Makefile.am, configure.ac: dist-xz instead of bz2
+
+2011-05-26 07:22  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/conjunctions.hlexc: mut
+
+2011-05-26 06:03  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: New IT words from
+	  Tommi Jauhiainen via clt
+
+2011-05-24 00:47  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: more noun adjective
+	  fixes from finnwordnet
+
+2011-05-24 00:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: More double class
+	  Adjective Nouns
+
+2011-05-24 00:28  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/broken-paradigms.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: Adjectives marked
+	  as nouns from finnwordnet
+
+2011-05-23 23:58  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/51.hlexc, src/morphology/pos.lexc:
+	  Additions to 51
+
+2011-05-23 21:14  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am, src/morphology/pos.lexc: Include
+	  missing compound paradigms
+
+2011-05-23 21:13  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/hyphenations.twolc,
+	  src/orthography/uppercase-word.twolc: Fix handling of hyphenated
+	  compounds and uppercasing in rules
+
+2011-05-18 09:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/orthography/Makefile.am,
+	  src/orthography/hyphenations.twolc: add lost hyphenation rule to
+	  orthography
+
+2011-05-18 00:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/numeral-stubs.hlexc: kymmmenes is
+	  ordinal multiplicant instead of multiplier.
+
+2011-05-18 00:04  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/numeral-stubs.hlexc: Fix %0 bug for
+	  foma parsing in one more place
+
+2011-05-09 14:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/scripts/omorfi-analyse.sh.in: Fix fallback sed script to
+	  cleanup corpus. Thanks to spectie and Traubert
+	  for report and help with fixing.
+
+2011-05-05 22:00  Flammie Pirinen <flammie@iki.fi>
+
+	* NEWS: Significant changes
+
+2011-05-05 20:55  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/morphology.rst: Add new tags
+
+2011-05-05 20:34  Flammie Pirinen <flammie@iki.fi>
+
+	* README: version updates in requirements
+
+2011-05-05 20:28  Flammie Pirinen <flammie@iki.fi>
+
+	* ChangeLog, authors.xml: Update ChangeLog for release; add
+	  authors.xml for svn2cl
+
+2011-05-05 13:19  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/tagsets/Makefile.am: Fixes for
+	  20110505 distribution
+
+2011-05-05 11:55  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/colorterm.relabel: Add new tags to rainbow analyser
+
+2011-05-05 11:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/scripts/omorfi-analyse.sh.in,
+	  src/scripts/omorfi-generate.sh.in,
+	  src/scripts/omorfi-interactive.sh.in: Make scripts bash to avoid
+	  confusing lesser distros with broken shells
+
+2011-05-04 13:45  Flammie Pirinen <flammie@iki.fi>
+
+	* src/scripts/omorfi-analyse.sh.in,
+	  src/scripts/omorfi-generate.sh.in,
+	  src/scripts/omorfi-interactive.sh.in: Update scripts to new
+	  directories and add more checks
+
+2011-05-03 21:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: more optional targets
+
+2011-05-03 19:59  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/punctuation.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: regenerate lexdata
+	  once more
+
+2011-05-03 19:58  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/uppercase-first.twolc,
+	  src/orthography/uppercase-word.twolc: Insert casechange tag
+	  between rock and a hard place to avoid confusing
+	  intersecting composition and inverting substitution
+
+2011-05-03 15:11  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/uppercase-first.twolc,
+	  src/orthography/uppercase-word.twolc: Try to avoid camel cases in
+	  words with non-alpha chars
+
+2011-05-03 15:00  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/definitions.lexc: Fix multichars with 0 for foma
+
+2011-05-03 14:52  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/Makefile.am, src/tagsets/finntreebank-tags.strings,
+	  src/tagsets/resume-final-lemma.regex,
+	  src/tagsets/rewrite-final-boundary.regex: Add partial rewriting
+	  rules for old twol style derivation/compounding analysis
+
+2011-05-03 14:51  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel,
+	  src/tagsets/colorterm.relabel, src/tagsets/fdg.relabel,
+	  src/tagsets/ftc.relabel, src/tagsets/lemmatize.relabel: Update
+	  tagsets and epsilons
+
+2011-05-03 14:51  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/finntreebank.relabel: the tagset for finntreebank
+	  development
+
+2011-04-26 16:43  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am: conditional targets
+
+2011-04-26 15:49  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac: check rst utils more
+
+2011-04-26 00:48  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am: avoid generating documentation without proper
+	  docutils
+
+2011-04-11 13:07  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: +kvestori
+
+2011-04-11 08:45  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: suggestion target for voikko
+
+2011-04-11 07:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/definitions.lexc,
+	  src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/punctuation.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: another word
+	  boundary marking
+
+2011-04-11 07:18  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/pos.lexc: missing file after re-org
+
+2011-04-08 07:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am: missing line continuations
+
+2011-04-08 07:06  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am, src/morphology/acronym-infl.hlexc,
+	  src/morphology/adjective-infl.hlexc,
+	  src/morphology/adjective-stems.hlexc,
+	  src/morphology/codified-infl.hlexc,
+	  src/morphology/common-infl.hlexc,
+	  src/morphology/compounding.hlexc,
+	  src/morphology/definitions.lexc, src/morphology/digit-infl.hlexc,
+	  src/morphology/digit-stems.hlexc, src/morphology/inflection,
+	  src/morphology/inflection/acronyms.lexc,
+	  src/morphology/inflection/adjectives.lexc,
+	  src/morphology/inflection/codifieds.lexc,
+	  src/morphology/inflection/commons.lexc,
+	  src/morphology/inflection/digits.lexc,
+	  src/morphology/inflection/nouns.lexc,
+	  src/morphology/inflection/verbs.lexc,
+	  src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/punctuation.hlexc,
+	  src/morphology/noun-infl.hlexc, src/morphology/noun-stems.hlexc,
+	  src/morphology/numeral-stems.hlexc, src/morphology/omorfi.hlexc,
+	  src/morphology/proper-noun-stems.hlexc, src/morphology/stems,
+	  src/morphology/stems/adjectives.lexc,
+	  src/morphology/stems/digits.lexc,
+	  src/morphology/stems/nouns.lexc,
+	  src/morphology/stems/numerals.lexc,
+	  src/morphology/stems/proper-nouns.lexc,
+	  src/morphology/stems/verbs.lexc, src/morphology/verb-infl.hlexc,
+	  src/morphology/verb-stems.hlexc: Reorganise a bit
+
+2011-04-07 15:17  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc,
+	  src/morphology/omorfi.hlexc: Add word boundary markers for some
+	  tagsets
+
+2011-04-06 11:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/noun-infl.hlexc: mark llinen derivation adjective
+
+2011-04-06 11:28  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/noun-stems.hlexc, src/morphology/omorfi.hlexc: fix
+	  49e paradigms
+
+2011-04-06 10:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/broken-paradigms.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: classify kysta 10
+	  or 9
+
+2011-04-06 09:48  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/proper-classes.csv,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc: fix
+	  classification of *.iia, *.kukka and kyse
+
+2011-04-06 09:40  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/noun-infl.hlexc: mark t in drv=ton gradating and
+	  add +uus derivation
+
+2011-04-06 06:27  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/omorfi.hlexc: Remove URL guesser by default
+
+2011-04-03 05:25  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am: Use new tool to fix optimisable
+	  automata
+
+2011-03-23 05:29  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/extra.csv: kännissä
+
+2011-03-23 04:47  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Use -Q for optimisations and name dictionaries
+
+2011-03-23 04:47  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adpositions.hlexc: Allow both
+	  syntactic readings on all and rank by statistics
+
+2011-03-18 07:09  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/verb-stems.hlexc,
+	  src/orthography/uppercase-word.twolc: add: kyse, minkäänlainen,
+	  tiedetään
+
+2011-03-18 07:07  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/scripts/omorfi-analyse.sh.in: use apertium
+	  formatters for proc stuff
+
+2011-03-14 06:23  Flammie Pirinen <flammie@iki.fi>
+
+	* src/hyphenation/hyphenate.twolc,
+	  src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/numeral-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc,
+	  src/morphology/noun-stems.hlexc: Bunch of words from finnwordnet
+
+2011-03-14 06:22  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am: Allow disabling optimise because
+	  it's too slow
+
+2011-03-13 22:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/adjective-stems.hlexc, src/phonology/omorfi.twolc:
+	  Replace twol rules for a:e variation with easier lexc
+	  combinatorics
+
+2011-03-11 08:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/codified-expressions.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc,
+	  src/morphology/omorfi.hlexc: Fix mail URIs
+
+2011-03-11 08:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/uppercase-word.twolc: Remove stillbroken case
+	  marking
+
+2011-03-11 08:18  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Remove extra \ at end of target list
+
+2011-03-11 05:56  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac: Allow selecting precompiled tagsets while
+	  substitute is too slow
+
+2011-03-11 05:48  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/orthography/uppercase-word.twolc: new
+	  tagging targets
+
+2011-03-11 05:40  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/common-infl.hlexc, src/morphology/noun-infl.hlexc,
+	  src/morphology/omorfi.hlexc, src/phonology/omorfi.twolc:
+	  Apparently 0 shouldn't be used in multichars
+
+2011-03-11 04:36  Flammie Pirinen <flammie@iki.fi>
+
+	* src/eliminate-boundaries.relabel: use new epsilon symbol to
+	  eliminate boundaries
+
+2011-03-11 04:31  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthography/uppercase-word.twolc: Fix tagging uppercasing
+	  rule used
+
+2011-03-11 04:31  Flammie Pirinen <flammie@iki.fi>
+
+	* src/phonology/omorfi.twolc: remove U+00C5 from Finnish vowels
+	  (and damn this SVN for not supporting the
+	  character in commit log)
+
+2011-03-11 03:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/filters/filter.guesses.twolc,
+	  src/filters/filter.no.twolc, src/filters/filter.styles.twolc,
+	  src/hyphenation/hyphenate.twolc,
+	  src/orthography/uppercase-first.twolc,
+	  src/orthography/uppercase-none.twolc,
+	  src/orthography/uppercase-word.twolc, src/phonology/omorfi.twolc:
+	  Remove Alphabet listings in twol files, no longer needed in hfst3
+
+2011-03-02 21:01  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: compose-intersect requires now -2 parameter
+
+2011-02-28 02:03  Flammie Pirinen <flammie@iki.fi>
+
+	* src/filters/filter.no.twolc,
+	  src/orthography/uppercase-first.twolc,
+	  src/orthography/uppercase-none.twolc,
+	  src/orthography/uppercase-word.twolc: remove rule variables,
+	  recursive sets and definitions for hfst3 twolc support
+
+2011-02-24 23:06  Flammie Pirinen <flammie@iki.fi>
+
+	* src/filters/Makefile.am, src/filters/filter.guesses.twolc,
+	  src/filters/filter.styles.twolc, src/hyphenation/Makefile.am,
+	  src/orthography/Makefile.am,
+	  src/orthography/uppercase-word.twolc, src/phonology/Makefile.am,
+	  src/phonology/omorfi.twolc: %-encode more stuff for stricter
+	  twolc parser
+
+2011-02-13 00:42  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/suggestion/Makefile.am,
+	  src/suggestion/edit-distance-0.text: Make targets for spell
+	  checker installation
+
+2011-02-13 00:25  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Allow unweighted builds
+
+2011-02-12 21:54  Flammie Pirinen <flammie@iki.fi>
+
+	* Makefile.am, src/morphology/lexical-data/numeral-stubs.hlexc,
+	  src/omorfi.symbols, src/orthography/Makefile.am: remove symbols
+	  as they've become unneeded
+
+2011-02-07 08:44  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, doc/implementation.rst, doc/morphology.rst,
+	  src/Makefile.am, src/hyphenation/Makefile.am,
+	  src/morphology/Makefile.am, src/morphology/derivations.hlexc,
+	  src/orthography/Makefile.am, src/scripts/omorfi-analyse.sh.in,
+	  src/scripts/omorfi-interactive.sh.in, src/suggestion/Makefile.am,
+	  src/weights/Makefile.am: Use hfst3 to make
+
+2011-01-26 19:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/tagsets/Makefile.am,
+	  src/tagsets/lemmatize.relabel: Add lemmatizer
+
+2011-01-06 10:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/Makefile.am, src/tagsets/fdg.relabel: Add fdg tagset
+
+2010-12-31 11:31  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel, src/tagsets/colorterm.relabel,
+	  src/tagsets/ftc.relabel: relabeling causatives
+
+2010-12-31 11:03  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/adjective-infl.hlexc,
+	  src/morphology/noun-infl.hlexc, src/morphology/verb-infl.hlexc,
+	  src/morphology/verb-stems.hlexc: Move derivation around to
+	  support foma/xfst
+
+2010-12-31 10:34  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/noun-infl.hlexc, src/morphology/omorfi.hlexc,
+	  src/morphology/verb-infl.hlexc: Well, add the causatives
+
+2010-12-31 08:52  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/verb-infl.hlexc: typofix
+
+2010-12-31 08:39  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/noun-infl.hlexc, src/morphology/verb-infl.hlexc:
+	  Use NONSTANDARD instead of SUBSTANDARD
+
+2010-12-31 08:25  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel,
+	  src/tagsets/colorterm.relabel, src/tagsets/ftc.relabel: Inlcude
+	  allos in tagsets
+
+2010-12-31 07:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/codified-expressions.hlexc: fix
+	  regexps
+
+2010-12-31 06:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/phonology/omorfi.twolc: The t deletion before ks
+
+2010-12-31 06:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel,
+	  src/tagsets/colorterm.relabel, src/tagsets/ftc.relabel: Rewrite
+	  new tags
+
+2010-12-31 06:40  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/omorfi.hlexc: recode adpositions
+
+2010-12-31 06:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/common-infl.hlexc, src/morphology/noun-infl.hlexc,
+	  src/morphology/noun-stems.hlexc, src/morphology/omorfi.hlexc,
+	  src/morphology/verb-infl.hlexc: * add archaic verb stuff and few
+	  spoken language forms
+	  * move abbreviations and adpositions to second class tags
+
+2010-12-31 06:17  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/codified-expressions.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/csvjoin.py,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: New terms from
+	  treebank
+
+2010-12-31 04:57  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/51.hlexc: add 51 compounds
+
+2010-11-25 17:39  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/morphology.rst, src/filters/filter.guesses.twolc,
+	  src/filters/filter.no.twolc, src/filters/filter.styles.twolc,
+	  src/morphology/omorfi.hlexc, src/tagsets/apertium.relabel,
+	  src/tagsets/cg.relabel, src/tagsets/colorterm.relabel,
+	  src/tagsets/ftc.relabel, src/weights/train-tags.bash,
+	  test/exceptions.difftest, test/taivutusluokat.difftest,
+	  test/top100.difftest: Replace scary ULTIMATE boundaries with
+	  pleasant LEXITEMs
+
+2010-11-23 18:29  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/pronouns.hlexc: Missing few
+	  (dialectal?) forms of jokin
+
+2010-10-26 22:02  Flammie Pirinen <flammie@iki.fi>
+
+	* ChangeLog, NEWS: Update Changelog and news
+
+2010-10-26 21:52  Flammie Pirinen <flammie@iki.fi>
+
+	* README, README.bindist, TODO, doc/applications.rst,
+	  doc/definitions.rst, doc/hacking-intro.rst,
+	  doc/implementation.rst, doc/morphology.rst: Update docs for
+	  release
+
+2010-10-26 21:27  Flammie Pirinen <flammie@iki.fi>
+
+	* doc, doc/.cvsignore: Ignore generated files
+
+2010-10-26 21:09  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/omorfi.symbols: Version and misc data for
+	  release
+
+2010-10-26 21:09  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/derivations.hlexc, src/morphology/omorfi.hlexc:
+	  Rule for restricting lowercased proper nouns
+
+2010-10-26 21:08  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am, src/morphology/lexical-data/Makefile.am,
+	  src/weights/Makefile.am,
+	  src/weights/fiwiki.tokens.weights.strings, test/Makefile.am: Fix
+	  distcheck
+
+2010-10-26 09:53  Flammie Pirinen <flammie@iki.fi>
+
+	* test/analyses.sh, test/dictionary.sh, test/hyphenation.difftest,
+	  test/hyphenation.random.difftest, test/hyphenation.sh,
+	  test/logs2html5.bash, test/speling.difftest,
+	  test/speling.random.difftest, test/suggestion.difftest,
+	  test/suggestion.random.difftest, test/suggestion.sh: Tests
+	  failing at end only
+
+2010-10-26 09:33  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/csvjoin.py,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: Hopefully last of
+	  larger reshufflings for now§
+
+2010-10-13 10:47  Flammie Pirinen <flammie@iki.fi>
+
+	* test/coverages.bash: Set test script executable
+
+2010-10-13 07:49  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: +hipsteri
+
+2010-10-13 07:39  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/hacking-intro.rst: Missing doc fragment here
+
+2010-10-11 05:08  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am, doc/definitions.rst, doc/implementation.rst,
+	  doc/omorfi_hacker.rst, src/omorfi.symbols: New doc set
+
+2010-10-11 05:07  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am, src/morphology/adjective-stems.hlexc,
+	  src/morphology/derivations.hlexc, src/morphology/omorfi.hlexc:
+	  Suffix not a pos
+
+2010-10-11 04:58  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/99-viskista.csv,
+	  src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/boundaries.csv,
+	  src/morphology/lexical-data/broken-paradigms.csv,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/csvjoin.py,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/plurale-tantum.csv,
+	  src/morphology/lexical-data/possessives.csv,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/pronominit.csv,
+	  src/morphology/lexical-data/pronunciation.csv,
+	  src/morphology/lexical-data/proper-classes.csv,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/regenerate-lexicons.sh,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/usage.csv,
+	  src/morphology/lexical-data/verb-stubs.hlexc: Move data around
+	  for someone to make a proper database
+
+2010-10-10 16:24  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/analyses.sh, test/coverages.bash,
+	  test/dictionary.sh, test/europarl-fi-coverages.bash,
+	  test/exceptions.sh, test/fiwiki-coverages.bash,
+	  test/gutenberg-fi-coverages.bash,
+	  test/hyphenation.random.dict.sh, test/hyphenation.random.rule.sh,
+	  test/hyphenation.sh, test/speling.random.sh,
+	  test/suggestion.random.sh, test/suggestion.sh,
+	  test/taivutusluokat.sh, test/top100.sh,
+	  test/voikko-hyphenate.dict.sh, test/voikko-hyphenate.rule.sh,
+	  test/voikko-spell.sh: Combine tests by category
+
+2010-09-10 23:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/morphology/lexical-data/digit-stubs.hlexc,
+	  src/morphology/omorfi.hlexc, src/omorfi.symbols: disable URI
+	  guesser again to save 20 megs from
+
+2010-09-09 21:45  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Fix missing filename from unfiltered version
+
+2010-09-08 12:41  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.symbols: Insert bogus symbols into tree before
+	  symbolless strings2fst comes
+
+2010-09-08 12:25  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am: Allow disabling stuff to speed up
+	  stuff on low end stuff
+
+2010-09-07 21:51  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/weights/Makefile.am,
+	  src/weights/fiwiki.tokens.weights.strings,
+	  src/weights/surface-sigma-star.regex,
+	  src/weights/train-tokens.bash: Fiw token weights, add reference
+	  wikiweights
+
+2010-09-07 21:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/adjective-stems.hlexc,
+	  src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/digit-stubs.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/regenerate-lexicons.sh,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc,
+	  src/morphology/omorfi.hlexc,
+	  src/morphology/proper-noun-stems.hlexc,
+	  src/morphology/verb-stems.hlexc, src/orthography/Makefile.am,
+	  test/gutenberg-fi-coverages.bash, test/suggestion.random.sh: Fix
+	  spurious lexical entries and targets; regenerate lexicons
+	  
+	  of course sort isn't stable so there's 100000 deletes and inserts
+
+2010-09-06 23:42  Flammie Pirinen <flammie@iki.fi>
+
+	* src/suggestion/edit-distance-1.text, test/suggestion.random.sh:
+	  Fix the weighted edit distance 1
+
+2010-09-05 22:55  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am, src/scripts/Makefile.am: Some final touches
+
+2010-09-05 22:36  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data: Ignore generated makefiles
+
+2010-09-05 22:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/suggestion: Ignore optimized error models from suggestions
+
+2010-09-05 22:34  Flammie Pirinen <flammie@iki.fi>
+
+	* src/filters: Ignore generated automata and makefiles
+
+2010-09-05 22:33  Flammie Pirinen <flammie@iki.fi>
+
+	* src/weights: Ignore weighting automata
+
+2010-09-05 22:31  Flammie Pirinen <flammie@iki.fi>
+
+	* src/scripts: ignore generated scripts and makefiles
+
+2010-09-05 22:31  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/scripts/omorfi-analyse.sh.in,
+	  src/scripts/omorfi-interactive.sh.in: Add interactive analysis
+	  script and colorterm tagset as default
+
+2010-09-05 22:30  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/colorterm.relabel: Fix broken escape for guesses
+
+2010-09-05 18:03  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am, src/morphology/codified-infl.hlexc,
+	  src/morphology/lexical-data/codified-expressions.hlexc,
+	  src/morphology/omorfi.hlexc, src/tagsets/apertium.relabel,
+	  src/tagsets/cg.relabel, src/tagsets/colorterm.relabel,
+	  src/tagsets/ftc.relabel, src/weights/Makefile.am: Very basic
+	  guessing and inflection of web and mail addresses
+
+2010-09-05 13:36  Flammie Pirinen <flammie@iki.fi>
+
+	* doc: Ignore stuff
+
+2010-09-05 13:35  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/.cvsignore: Ignore stuff
+
+2010-09-04 17:04  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/filters,
+	  src/filters/Makefile.am, src/filters/filter.guesses.twolc,
+	  src/filters/filter.no.twolc, src/filters/filter.styles.twolc:
+	  Examples of filtering analyses
+
+2010-09-04 15:30  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Retain the default suggestion engine, just in
+	  case
+
+2010-09-04 15:25  Flammie Pirinen <flammie@iki.fi>
+
+	* src/suggestion/Makefile.am, src/suggestion/edit-distance-1.text:
+	  Add weight to edit distance
+
+2010-09-04 15:25  Flammie Pirinen <flammie@iki.fi>
+
+	* src/weights/Makefile.am: Plus the no weights option
+
+2010-09-04 15:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/weights/Makefile.am, src/weights/no-tags.regex,
+	  src/weights/omorfi.tags.regex, src/weights/train-strings.bash,
+	  src/weights/voikko.tags.maxw.regex,
+	  src/weights/voikko.tags.regex: allow single tag weights to add up
+
+2010-09-04 15:19  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/europarl-fi-coverages.bash,
+	  test/gutenberg-fi-coverages.bash,
+	  test/hyphenation.random.rule.sh, test/mispelt.difftest,
+	  test/misspell.sh, test/voikko-hyphenate.rule.sh: Fixed test
+	  scripts
+
+2010-09-03 23:15  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac: Fix broken with-hfst with explicit path
+
+2010-09-03 22:06  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/tagsets/Makefile.am,
+	  src/tagsets/colorterm.relabel: Using ansi escape sequences for
+	  colored analyses, teh coolness
+
+2010-09-02 01:18  Flammie Pirinen <flammie@iki.fi>
+
+	* test/fiwiki-coverages.bash, test/gutenberg-fi-coverages.bash:
+	  Remove reserved symbols from texts
+
+2010-09-02 00:19  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/morphology/digit-stems.hlexc,
+	  src/weights/Makefile.am, src/weights/omorfi.tags.regex,
+	  src/weights/sigma-star.regex, src/weights/voikko.tags.regex: New
+	  weighting system, enabled by default but requires training data
+
+2010-09-02 00:19  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/digit-stubs.hlexc: Remove lots of
+	  useless digit patterns
+
+2010-09-02 00:18  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc: Fix terribly
+	  broken file data
+
+2010-09-02 00:14  Flammie Pirinen <flammie@iki.fi>
+
+	* test/exceptions.difftest, test/exceptions.sh,
+	  test/fiwiki-xml2strings.bash, test/gutenberg2strings.bash,
+	  test/taivutusluokat.difftest, test/taivutusluokat.sh,
+	  test/top100.difftest, test/top100.sh: Recode tests along new tags
+
+2010-09-01 23:28  Flammie Pirinen <flammie@iki.fi>
+
+	* test/europarl-fi-coverages.bash, test/exceptions.sh,
+	  test/fiwiki-coverages.bash, test/gutenberg-fi-coverages.bash,
+	  test/gutenberg2text.bash, test/hyphenation.random.dict.sh,
+	  test/speling.random.sh, test/taivutusluokat.sh, test/top100.sh,
+	  test/voikko-hyphenate.dict.sh, test/voikko-spell.sh: rename
+	  automata in tests
+
+2010-09-01 23:01  Flammie Pirinen <flammie@iki.fi>
+
+	* src/weights/train-tokens.bash: new corpus weighting script
+
+2010-09-01 17:24  Flammie Pirinen <flammie@iki.fi>
+
+	* src/scripts/Makefile.am: Missing makefile
+
+2010-08-31 02:54  Flammie Pirinen <flammie@iki.fi>
+
+	* README, configure.ac, doc/Makefile.am, doc/omorfi_basics.rst,
+	  doc/omorfi_hacker.rst, src/Makefile.am,
+	  src/hyphenation/Makefile.am, src/omorfi-analyse.sh.in,
+	  src/scripts, src/scripts/omorfi-analyse.sh.in,
+	  src/scripts/omorfi-generate.sh.in,
+	  src/scripts/omorfi-hyphenate.sh.in,
+	  src/scripts/omorfi-spell.sh.in, src/scripts/omorfi-suggest.sh.in,
+	  src/suggestion/Makefile.am: Nifty helper scripts for users and
+	  rename transducers along the imaginary
+	  library and tool conventions
+
+2010-08-30 23:45  Flammie Pirinen <flammie@iki.fi>
+
+	* AUTHORS, README, configure.ac, doc/Makefile.am,
+	  doc/applications.rst, doc/definitions.rst, doc/introduction.rst,
+	  doc/morphology.rst, doc/omorfi.rst, doc/omorfi_basics.rst,
+	  doc/omorfi_hacker.rst, doc/omorfi_user.rst, doc/references.rst,
+	  src/phonemize, src/suggestion/Makefile.am: Update documentation a
+	  bit and include in autostuff
+
+2010-08-18 17:43  ftyers
+
+	* src/morphology/lexical-data/adverbs.hlexc: add hyvästi as
+	  lexicalised adverb
+
+2010-08-14 14:34  rtxanson
+
+	* src/morphology/lexical-data/proper-noun-stubs.hlexc: +Tromssa
+
+2010-08-13 09:43  ftyers
+
+	* src/morphology/lexical-data/adpositions.hlexc: comment out one
+	  adposition/postposition
+
+2010-08-11 21:50  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Have separate error and hyphen models installed
+
+2010-08-11 21:42  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/suggestion/Makefile.am,
+	  src/suggestion/simple-edit-distance-1.text,
+	  src/suggestion/simple-edit-distance-2.text: Use hfst-concatenate
+	  instead of repeat for larger edits
+
+2010-08-11 21:10  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/suggestion/Makefile.am,
+	  src/suggestion/edit-distance-1.text,
+	  src/suggestion/edit-distance-2.text: Use hfst-repeat to conjure
+	  edit-distance-n, n>1
+
+2010-08-11 19:28  ftyers
+
+	* src/morphology/lexical-data/conjunctions.hlexc: comment out
+	  'eikä' and 'enkä' as conjunctions
+
+2010-08-10 13:23  rtxanson
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc: moni - adj
+
+2010-08-10 11:32  rtxanson
+
+	* src/morphology/lexical-data/adverbs.hlexc: samoin - Adv
+
+2010-08-09 16:13  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc: saati missing
+	  SUBORD tag
+
+2010-08-09 15:44  rtxanson
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc: koko + Adj
+
+2010-08-06 15:24  rtxanson
+
+	* src/tagsets/cg.relabel: tweaking cg tagset: POSS -> Pl;
+	  disambiguates PERS and POSS
+
+2010-08-01 16:12  rtxanson
+
+	* src/morphology/lexical-data/proper-noun-stubs.hlexc: lisäsin
+	  NONSTANDARD-tagin minneso{t~~}{a}-sanaan. useimmiten yleisessä
+	  kielessä on vain kvantitativinen astevaihtelu lainasanoissa, eikä
+	  kvalitatiivinen astevaihtelu.
+
+2010-08-01 15:19  rtxanson
+
+	* src/morphology/lexical-data/pronouns.hlexc: unohdin mainita
+	  toista muutosta pronomineissa, mutta en ole hyvin päättänyt
+	  pitääkö muuttaa tätä, joten olen kommentoinut sitä ulos
+
+2010-08-01 15:15  rtxanson
+
+	* src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc: Minnesotassa
+	  ei ole astevaihtelua kaikissa murteissa.
+
+2010-07-28 18:18  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc: niinkuin - CS
+
+2010-07-23 22:40  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/omorfi-analyse.sh.in: provide
+	  convenience helper script for analysis
+
+2010-07-23 22:10  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adpositions.hlexc: Remove +Vn
+	  allomorphs from possessives where impossible
+
+2010-07-23 20:34  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/Makefile.am: Restore accidentally deleted lexical
+	  data
+
+2010-07-22 18:31  rtxanson
+
+	* src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/numeral-stubs.hlexc: nyt + Adv
+	  reading; fixed syntax of seitsämän entry
+
+2010-07-21 13:30  rtxanson
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: Relabel
+	  change for apertium/cg: Qst_ko -> Qst
+
+2010-07-20 19:10  rtxanson
+
+	* src/morphology/lexical-data/adpositions.hlexc: Making sure some
+	  postpositions can have possessive suffixes
+
+2010-07-20 14:30  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/morphology/Makefile.am,
+	  src/morphology/lexical-data/Makefile.am: make lexical data have
+	  own makefile.am; require hfst-proc for testing
+
+2010-07-20 14:23  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/joukahainen.xml,
+	  src/morphology/lexical-data/kotus-sanalista_v1.xml: Include xml
+	  sources in svn/dist
+
+2010-07-17 10:09  ftyers
+
+	* src/morphology/lexical-data/punctuation.hlexc: comment out hyphen
+	  as punctuation
+
+2010-07-12 15:25  rtxanson
+
+	* src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc: Added some
+	  adverbs and a CS
+
+2010-07-06 16:02  ftyers
+
+	* src/morphology/lexical-data/punctuation.hlexc: remove " as a
+	  symbol
+
+2010-07-05 21:01  rtxanson
+
+	* src/morphology/lexical-data/pronouns.hlexc: adding Rel readings
+	  for mikä
+
+2010-07-02 13:22  rtxanson
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: Tagset
+	  change +Cmt -> +Com
+
+2010-06-30 23:02  rtxanson
+
+	* src/morphology/lexical-data/adpositions.hlexc: Added some more
+	  postpositions
+
+2010-06-30 22:08  rtxanson
+
+	* src/morphology/lexical-data/adpositions.hlexc: Added some
+	  postpositions
+
+2010-06-30 19:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/pronouns.hlexc: Add few missing
+	  particles and pronouns
+
+2010-06-29 23:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/punctuation.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: Sort entries
+	  alphabetically and document non-generated files.
+
+2010-06-29 20:44  rtxanson
+
+	* src/morphology/lexical-data/adpositions.hlexc: uups, sijaan ->
+	  Postpositio
+
+2010-06-29 20:43  rtxanson
+
+	* src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/regenerate-lexicons.sh,
+	  src/morphology/omorfi.hlexc, src/tagsets/apertium.relabel,
+	  src/tagsets/cg.relabel: Uudet sanaluokat: postpositio ja
+	  prepositio
+
+2010-06-26 21:30  rtxanson
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: ordering
+	  tags and consolidating some differences between cg.relabel and
+	  apertium.relabel
+
+2010-06-26 20:59  rtxanson
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: Syncing
+	  PrsPrc tag, adding missing POS=PROPER
+
+2010-06-24 13:28  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am, doc/definitions.rst, doc/introduction.rst,
+	  doc/omorfi.rst, doc/references.rst: references to the end
+
+2010-06-24 09:27  ftyers
+
+	* src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/extra.csv: add sangen as an adverb,
+	  as 'hui' in sme
+
+2010-06-23 22:36  ftyers
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: add 'viherikä'
+
+2010-06-23 16:54  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc: taikka-> coord &
+	  subord
+
+2010-06-23 16:05  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc: Commenting out
+	  non-compound analyses for compound conjunctions
+
+2010-06-23 15:30  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc: Added compound
+	  conjunctions for jottei, koskei, kunnei, muttei, ellei, ettei,
+	  jollei, miksei, ehkei, siksei, jossei, vaikkei; and all persons
+
+2010-06-23 13:57  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc: fixed right side
+	  of ettei paradigm
+
+2010-06-23 13:13  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc: completing
+	  paradigm
+
+2010-06-23 13:08  ftyers
+
+	* src/morphology/lexical-data/conjunctions.hlexc: adjust format for
+	  ettei etc.
+
+2010-06-23 08:47  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am, doc/definitions.rst, doc/introduction.rst,
+	  doc/morphology.rst: new
+
+2010-06-21 23:38  ftyers
+
+	* src/morphology/omorfi.hlexc: add a missing possessive category to
+	  the list of multichar symbols '[POSS=SG3,PL3]'
+
+2010-06-21 21:04  ftyers
+
+	* src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/extra.csv: add 'erittäin' as an
+	  adverb
+
+2010-06-21 20:56  ftyers
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: add 'kulta' as a
+	  noun
+
+2010-06-21 10:44  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, doc/Makefile.am: add doc target
+
+2010-06-19 20:45  ftyers
+
+	* src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc: add saamekieli
+
+2010-06-17 21:22  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am: Makefile targets for the documentation
+
+2010-06-17 21:19  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/applications.rst, doc/definitions.rst,
+	  doc/implementation.rst, doc/introduction.rst, doc/morphology.rst,
+	  doc/omorfi.rst, doc/preprocessing.rst: Basis for the full
+	  developer's documentation
+
+2010-06-15 00:32  ftyers
+
+	* src/morphology/lexical-data/extra.csv: add 'Eeden' to extra.csv
+
+2010-06-15 00:23  ftyers
+
+	* src/morphology/lexical-data/proper-noun-stubs.hlexc: add 'Eeden'
+	  as a proper noun
+
+2010-06-14 15:48  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: New neatly
+	  decorated autogenerated files (no content change)
+
+2010-06-14 15:47  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/extra.csv: Sort and comment extra
+	  lexical data
+
+2010-06-14 15:46  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/regenerate-lexicons.sh: Make scripts
+	  to generate lexicons prettier; remove conjunctions from
+	  autogenerated
+
+2010-06-13 23:03  ftyers
+
+	* src/tagsets/apertium.relabel: fix up tagset
+
+2010-06-13 18:53  ftyers
+
+	* src/morphology/lexical-data/pronouns.hlexc: subcategorise one
+	  pronoun
+
+2010-06-13 18:42  ftyers
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: add new tag
+	  <Indef> / +Indef
+
+2010-06-13 18:37  ftyers
+
+	* src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/omorfi.hlexc: subcategorise some pronouns, add
+	  [SUBCAT=INDEF] for indefinite pronouns like 'each' (kukin)
+
+2010-06-13 12:01  ftyers
+
+	* src/tagsets/apertium.relabel: update apertium relabel script
+
+2010-06-13 10:38  ftyers
+
+	* src/tagsets/apertium.relabel: unhammer style
+
+2010-06-13 10:38  ftyers
+
+	* src/tagsets/apertium.relabel: add <Cmp> to compound boundary
+
+2010-06-13 00:02  ftyers
+
+	* src/tagsets/apertium.relabel: fix tag
+
+2010-06-12 23:06  ftyers
+
+	* src/morphology/lexical-data/punctuation.hlexc: comment out some
+	  punctuation
+
+2010-06-12 20:24  ftyers
+
+	* src/tagsets/apertium.relabel: apertium relabel
+
+2010-06-12 18:53  ftyers
+
+	* src/tagsets/apertium.relabel: compound boundary to +
+
+2010-06-12 18:14  ftyers
+
+	* src/tagsets/apertium.relabel: imperative mood
+
+2010-06-12 17:45  ftyers
+
+	* src/morphology/omorfi.hlexc: add multichar tag for [SUBCAT=REAL]
+
+2010-06-10 16:47  rtxanson
+
+	* src/tagsets/cg.relabel: cg.relabel: Recip -> Recipr
+
+2010-06-10 07:45  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/inflection.rst, doc/morphology.rst: Almost rewritten
+	  morphology chapter
+
+2010-06-09 17:36  rtxanson
+
+	* src/morphology/lexical-data/conjunctions.hlexc,
+	  src/tagsets/cg.relabel: ryhmitään konjunktioita, lisätään täggejä
+	  cg-settiin
+
+2010-06-09 16:58  ftyers
+
+	* src/morphology/lexical-data/punctuation.hlexc: remove space ' '
+	  as a punctuation character
+
+2010-06-09 09:04  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/acronym-infl.hlexc,
+	  src/morphology/common-infl.hlexc,
+	  src/morphology/derivations.hlexc,
+	  src/morphology/digit-infl.hlexc,
+	  src/morphology/digit-stems.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/lexical-data/punctuation.hlexc,
+	  src/morphology/noun-infl.hlexc, src/morphology/omorfi.hlexc,
+	  src/morphology/verb-infl.hlexc: Split combined tags into multiple
+	  paths again
+
+2010-06-06 19:43  ftyers
+
+	* src/tagsets/cg.relabel: update the cg.relabel script with the
+	  giellatekno one from trunk/kt/fin/src
+
+2010-06-03 22:40  ftyers
+
+	* src/tagsets/cg.relabel: change PARTICLE -> +Pcle from +Part
+
+2010-05-23 15:38  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc: Proper
+	  handling of proper nouns proper
+
+2010-05-21 12:04  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel,
+	  src/tagsets/ftc.relabel: Make most tagsets the same
+
+2010-05-21 11:51  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel: fix apertium relabel for conneg.
+
+2010-05-21 11:48  Flammie Pirinen <flammie@iki.fi>
+
+	* test/ihmisoikeusjulistus.strings: Declaration of human rights
+
+2010-05-21 11:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/digit-stems.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/numeral-stubs.hlexc,
+	  src/morphology/omorfi.hlexc, src/morphology/verb-infl.hlexc,
+	  src/tagsets/apertium.relabel, src/tagsets/cg.relabel,
+	  src/tagsets/ftc.relabel: Fix further subcats and labels
+
+2010-05-21 11:12  ftyers
+
+	* src/morphology/derivations.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/tagsets/cg.relabel: fix cg relabel script and rename gen=act
+	  and gen=pss to voice
+
+2010-05-20 15:41  ftyers
+
+	* src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc: some
+	  subcategorisation
+
+2010-05-20 15:36  ftyers
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: more tags
+	  changed
+
+2010-05-16 12:25  Flammie Pirinen <flammie@iki.fi>
+
+	* test/fiwiki-xml2strings.bash, test/gutenberg2strings.bash,
+	  test/misspell.sh, test/suggestion.random.sh: different
+	  tokenization for testing, waiting for proper tokenization
+
+2010-05-05 07:23  ftyers
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: add pronoun
+	  subcategories to relabel files
+
+2010-05-04 14:33  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/verb-infl.hlexc: call verbal genus voice per
+	  popular request
+
+2010-05-04 14:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/derivations.hlexc: Include POS in derivations
+
+2010-05-04 12:57  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/omorfi.hlexc: Add pronoun subcats
+
+2010-05-03 22:00  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc: Fix adverbs with
+	  possessives per default
+
+2010-05-03 21:40  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Include generator to building rules
+
+2010-05-03 20:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: Rescue of the lost
+	  souls
+
+2010-04-28 13:39  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/preprocessing.rst: Update preprocessing style for extra
+	  fields in csv
+
+2010-04-28 13:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/phonology/omorfi.twolc: Fix incorrect gradation patterns for
+	  t:0 gradation and dd:d gradation.
+
+2010-04-23 15:44  snomos
+
+	* src, src/hyphenation, src/morphology, src/orthography,
+	  src/phonology, src/suggestion, src/tagsets, src/weights, test:
+	  Added svn:ignore properties for generated files.
+
+2010-04-23 11:40  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: Sort joukahainen
+
+2010-04-23 09:34  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/99-viskista.csv,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc: All automated data
+	  herding added (NB includes regressions)
+
+2010-04-23 07:36  Flammie Pirinen <flammie@iki.fi>
+
+	* test/fiwiki-coverages.bash, test/hyphenation.random.rule.sh,
+	  test/misspell.sh, test/suggestion.random.sh,
+	  test/voikko-hyphenate.rule.sh: add missing hyph tests
+
+2010-04-21 14:39  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/csv2lexc.py: new csv handler
+
+2010-04-21 14:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/kotus.csv: Some automatic compound
+	  boundaries
+
+2010-04-18 19:11  ftyers
+
+	* src/tagsets/apertium.relabel, src/tagsets/cg.relabel: update to
+	  giellatekno standards
+
+2010-04-10 00:00  Flammie Pirinen <flammie@iki.fi>
+
+	* src/voikko-fi_FI.pro: Update to declare all used backends as hfst
+
+2010-04-09 23:59  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/verb-infl.hlexc: Disallow forward compounding for
+	  non-nominals
+
+2010-04-08 05:06  Flammie Pirinen <flammie@iki.fi>
+
+	* test/europarl-fi-coverages.bash, test/fiwiki-coverages.bash,
+	  test/gutenberg-fi-coverages.bash: Remove analyses at the end
+	  because of the size
+
+2010-04-06 05:50  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/kotus.csv,
+	  src/morphology/lexical-data/verb-stubs.hlexc: Fix exceptional
+	  word handling for compounds
+
+2010-04-06 05:49  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/omorfi.hlexc: Fix nominalised verbs for both sides
+	  of compound
+
+2010-04-06 04:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/morphology/omorfi.hlexc, src/morphology/verb-infl.hlexc:
+	  introduce verb nominal compounding
+
+2010-04-01 17:07  Flammie Pirinen <flammie@iki.fi>
+
+	* src/tagsets/apertium.relabel: One missing peace
+
+2010-04-01 16:36  Flammie Pirinen <flammie@iki.fi>
+
+	* ChangeLog, NEWS: Update news for new release
+
+2010-04-01 16:19  Flammie Pirinen <flammie@iki.fi>
+
+	* test/mispelt.difftest: Add misspelling corpus
+
+2010-04-01 16:18  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/exceptions.difftest,
+	  test/fiwiki-coverages.bash, test/logs2html5.bash,
+	  test/misspell.sh, test/suggestion.random.sh,
+	  test/taivutusluokat.difftest, test/top100.difftest,
+	  test/voikko-spell.sh: Up-to-date testing scripts
+
+2010-04-01 16:17  Flammie Pirinen <flammie@iki.fi>
+
+	* Makefile.am, configure.ac: post-release clean-up
+
+2010-04-01 15:08  Flammie Pirinen <flammie@iki.fi>
+
+	* src/.cvsignore, src/Makefile.am, src/hyphenation/Makefile.am,
+	  src/lexical-data, src/morphology/Makefile.am,
+	  src/morphology/acronym-infl.hlexc,
+	  src/morphology/compounding.hlexc, src/morphology/lexical-data,
+	  src/morphology/lexical-data/abbreviation-stubs.hlexc,
+	  src/morphology/lexical-data/acronym-stubs.hlexc,
+	  src/morphology/lexical-data/adjective-stubs.hlexc,
+	  src/morphology/lexical-data/adpositions.hlexc,
+	  src/morphology/lexical-data/adverbs.hlexc,
+	  src/morphology/lexical-data/conjunctions.hlexc,
+	  src/morphology/lexical-data/csv2lexc.py,
+	  src/morphology/lexical-data/exceptions.hlexc,
+	  src/morphology/lexical-data/extra.csv,
+	  src/morphology/lexical-data/interjections.hlexc,
+	  src/morphology/lexical-data/joukahainen.csv,
+	  src/morphology/lexical-data/noun-stubs.hlexc,
+	  src/morphology/lexical-data/numeral-stubs.hlexc,
+	  src/morphology/lexical-data/particles.hlexc,
+	  src/morphology/lexical-data/prefixes.hlexc,
+	  src/morphology/lexical-data/pronouns.hlexc,
+	  src/morphology/lexical-data/proper-noun-stubs.hlexc,
+	  src/morphology/lexical-data/suffixes.hlexc,
+	  src/morphology/lexical-data/verb-stubs.hlexc,
+	  src/morphology/omorfi.hlexc,
+	  src/morphology/proper-noun-stems.hlexc, src/omorfi.hlexc,
+	  src/orthography/Makefile.am,
+	  src/orthography/orthographic-variations.regex,
+	  src/orthography/uppercase-first.twolc,
+	  src/orthography/uppercase-none.twolc, src/phonology/Makefile.am,
+	  src/suggestion/Makefile.am, src/suggestion/edit-distance-1.text,
+	  src/suggestion/edit-distance-2.text,
+	  src/suggestion/edit-distance-infinity.text,
+	  src/tagsets/Makefile.am, src/tagsets/cg.relabel,
+	  src/tagsets/ftc.relabel, src/weights/Makefile.am,
+	  src/weights/sigma-star.regex, src/weights/train-strings.bash,
+	  src/weights/train-tags.bash, src/weights/train-tokens.bash,
+	  src/weights/voikko.tags.maxw.regex,
+	  src/weights/voikko.tags.regex: Finalize re-organization of code
+	  from morphology into different pieces:
+	  
+	  Suggestion, hyphenation, weights and tagging formats are
+	  separated into
+	  modules now. Lexical data is under morphology, why not.
+
+2010-04-01 15:00  Flammie Pirinen <flammie@iki.fi>
+
+	* README, README.bindist, doc/inflection.rst,
+	  doc/preprocessing.rst, doc/weights.rst: Update documentation for
+	  next release
+
+2010-04-01 03:01  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac: Fix long-standing bug w.r.t. intersect vs. conjunct
+
+2010-01-21 06:28  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/europarl-fi-coverages.bash,
+	  test/exceptions.sh, test/fiwiki-coverages.bash,
+	  test/gutenberg-fi-coverages.bash, test/gutenberg2strings.bash,
+	  test/hyphenation.random.dict.sh, test/hyphenation.random.sh,
+	  test/logs2html5.bash, test/speling.random.sh,
+	  test/suggestion.random.sh, test/taivutusluokat.sh,
+	  test/top100.difftest, test/top100.sh,
+	  test/voikko-hyphenate.dict.sh, test/voikko-hyphenate.sh,
+	  test/voikko-spell.sh: Add europarl corpus to coverage testing,
+	  tweak gutenberg tokens
+
+2010-01-15 09:46  Flammie Pirinen <flammie@iki.fi>
+
+	* src/suggestion/edit-distance-2.text: Implement proper edit
+	  distance 2 with swap
+
+2010-01-15 09:11  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/99-viskista.csv, src/Makefile.am,
+	  src/abbreviation-stubs.hlexc, src/acronym-infl.hlexc,
+	  src/acronym-stubs.hlexc, src/adjective-infl.hlexc,
+	  src/adjective-stems.hlexc, src/adjective-stubs.hlexc,
+	  src/adpositions.hlexc, src/adverbs.hlexc, src/common-infl.hlexc,
+	  src/compounding.hlexc, src/conjunctions.hlexc, src/csv2lexc.py,
+	  src/derivations.hlexc, src/digit-infl.hlexc,
+	  src/digit-stems.hlexc, src/digit-stubs.hlexc,
+	  src/exceptions.hlexc, src/extra.csv, src/hyphenate.relabel,
+	  src/hyphenate.twolc, src/hyphenation,
+	  src/hyphenation/hyphenate.relabel,
+	  src/hyphenation/hyphenate.twolc, src/interjections.hlexc,
+	  src/joukahainen.csv, src/kotus.csv, src/lexical-data,
+	  src/lexical-data/99-viskista.csv,
+	  src/lexical-data/abbreviation-stubs.hlexc,
+	  src/lexical-data/acronym-stubs.hlexc,
+	  src/lexical-data/adjective-stubs.hlexc,
+	  src/lexical-data/adpositions.hlexc,
+	  src/lexical-data/adverbs.hlexc,
+	  src/lexical-data/conjunctions.hlexc,
+	  src/lexical-data/csv2lexc.py, src/lexical-data/digit-stubs.hlexc,
+	  src/lexical-data/exceptions.hlexc, src/lexical-data/extra.csv,
+	  src/lexical-data/interjections.hlexc,
+	  src/lexical-data/joukahainen.csv, src/lexical-data/kotus.csv,
+	  src/lexical-data/noun-stubs.hlexc,
+	  src/lexical-data/numeral-stubs.hlexc,
+	  src/lexical-data/particles.hlexc,
+	  src/lexical-data/prefixes.hlexc, src/lexical-data/pronominit.csv,
+	  src/lexical-data/pronouns.hlexc,
+	  src/lexical-data/pronouns2lexc.py,
+	  src/lexical-data/proper-noun-stubs.hlexc,
+	  src/lexical-data/punctuation.hlexc,
+	  src/lexical-data/regenerate-lexicons.sh,
+	  src/lexical-data/suffixes.hlexc,
+	  src/lexical-data/verb-stubs.hlexc, src/morphology,
+	  src/morphology/acronym-infl.hlexc,
+	  src/morphology/adjective-infl.hlexc,
+	  src/morphology/adjective-stems.hlexc,
+	  src/morphology/common-infl.hlexc,
+	  src/morphology/compounding.hlexc,
+	  src/morphology/derivations.hlexc,
+	  src/morphology/digit-infl.hlexc,
+	  src/morphology/digit-stems.hlexc, src/morphology/noun-infl.hlexc,
+	  src/morphology/noun-stems.hlexc,
+	  src/morphology/numeral-stems.hlexc,
+	  src/morphology/proper-noun-stems.hlexc,
+	  src/morphology/verb-infl.hlexc, src/morphology/verb-stems.hlexc,
+	  src/noun-infl.hlexc, src/noun-stems.hlexc, src/noun-stubs.hlexc,
+	  src/numeral-stems.hlexc, src/numeral-stubs.hlexc,
+	  src/omor2cg.relabel, src/omorfi.hlexc, src/omorfi.twolc,
+	  src/orthographic-variations.regex, src/orthography,
+	  src/orthography/orthographic-variations.regex,
+	  src/orthography/sh.regex, src/orthography/uppercase-first.twolc,
+	  src/orthography/uppercase-word.twolc, src/orthography/zh.regex,
+	  src/particles.hlexc, src/phonology, src/phonology/omorfi.twolc,
+	  src/prefixes.hlexc, src/pronominit.csv, src/pronouns.hlexc,
+	  src/pronouns2lexc.py, src/proper-noun-stems.hlexc,
+	  src/proper-noun-stubs.hlexc, src/punctuation.hlexc,
+	  src/regenerate-lexicons.sh, src/sh.regex,
+	  src/simple-edit-distance-2.text, src/suffixes.hlexc,
+	  src/suggestion, src/suggestion/simple-edit-distance-2.text,
+	  src/tagsets, src/tagsets/cg.relabel, src/uppercase-first.twolc,
+	  src/uppercase-word.twolc, src/verb-infl.hlexc,
+	  src/verb-stems.hlexc, src/verb-stubs.hlexc, src/weights,
+	  src/zh.regex: The source dir is filled with clutter; reorganised
+
+2010-01-15 04:24  Flammie Pirinen <flammie@iki.fi>
+
+	* src/hyphenate.relabel, src/hyphenate.twolc: Use ~ as hyphens to
+	  avoid ambiguous parsing
+
+2010-01-15 02:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/pronouns.hlexc: Allow kA and kAs clitics in some pronouns
+
+2010-01-15 02:00  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/hyphenate.relabel, src/hyphenate.twolc:
+	  Hyphenate trivowelic contexts and certain diphthongs when
+	  unstressed
+
+2010-01-13 03:50  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.hlexc: Add missing tags to Multichar_Symbols
+
+2010-01-11 02:22  Flammie Pirinen <flammie@iki.fi>
+
+	* ChangeLog: Update ChangeLog for release
+
+2010-01-11 02:16  Flammie Pirinen <flammie@iki.fi>
+
+	* Makefile.am, NEWS, README, README.bindist, THANKS, TODO,
+	  configure.ac, doc/Makefile.am, doc/inflection.rst,
+	  doc/preprocessing.rst, doc/tests.rst, doc/weights.rst: Updated
+	  documentation for release
+
+2010-01-11 02:14  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/voikko-fi_FI.pro: Add preliminary support
+	  for use of HFST transducers with voikko spell
+	  checking engine.
+
+2010-01-10 22:30  Flammie Pirinen <flammie@iki.fi>
+
+	* src/exceptions.hlexc, src/numeral-stubs.hlexc,
+	  src/omor2cg.relabel, src/verb-infl.hlexc: Fix broken tags and CG
+	  tag set
+
+2010-01-10 20:16  Flammie Pirinen <flammie@iki.fi>
+
+	* test, test/.cvsignore, test/suggestion.random.sh: Add missing
+	  suggestion test script and ignores
+
+2010-01-10 20:14  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/exceptions.difftest, test/exceptions.sh,
+	  test/fiwiki-coverages.bash, test/gutenberg-fi-coverages.bash,
+	  test/hyphenation.random.difftest, test/hyphenation.random.sh,
+	  test/logs2html5.bash, test/speling.random.difftest,
+	  test/speling.random.sh, test/suggestion.random.difftest,
+	  test/taivutusluokat.difftest, test/taivutusluokat.sh,
+	  test/top100.difftest, test/top100.sh, test/voikko-hyphenate.sh,
+	  test/voikko-spell.sh: Full test suite with logs using
+	  hfst-omor-evaluate tool
+
+2010-01-10 20:12  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am: Build hyphenation and suggestion
+	  relations as self-standing transducers.
+
+2010-01-10 20:11  Flammie Pirinen <flammie@iki.fi>
+
+	* src/simple-edit-distance-2.text: Allow insertions and deletions
+	  in ed-2
+
+2010-01-07 17:37  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Also include hyphenate relabeling to makefile
+
+2010-01-07 17:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/hyphenate.relabel: Missing hyphenator relabeling
+
+2010-01-07 07:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/99-viskista.csv, src/Multichar_Symbols,
+	  src/adjective-stubs.hlexc, src/adpositions.hlexc,
+	  src/compounding.hlexc, src/csv2lexc.py, src/derivations.hlexc,
+	  src/exceptions.hlexc, src/inflection.hlexc, src/noun-infl.hlexc,
+	  src/noun-stems.hlexc, src/noun-stubs.hlexc,
+	  src/numeral-stems.hlexc, src/omorfi.hlexc, src/pronouns.hlexc,
+	  src/suffixes.hlexc: Change tagset, limit plurale tantum, add kA
+	  clitic, allow possessives with Adp's.
+
+2010-01-07 07:49  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/omor2cg.relabel,
+	  src/simple-edit-distance-2.text: New tag set and suggestion
+	  mechanism
+
+2009-12-30 18:42  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/coverage.py, test/exceptions.sh,
+	  test/fiwiki-coverages.bash, test/gutenberg-fi-coverages.bash,
+	  test/gutenberg2strings.bash, test/hyphenation.random.difftest,
+	  test/hyphenation.random.sh, test/speling.random.sh,
+	  test/speling.sh, test/taivutusluokat.sh, test/top100.sh,
+	  test/voikko-hyphenate.sh, test/voikko-spell.sh: Coverage tests
+	  added
+
+2009-12-26 00:30  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/derivations.hlexc, src/noun-infl.hlexc,
+	  src/omorfi.hlexc, src/verb-infl.hlexc, src/verb-stems.hlexc: Move
+	  derivations back to derivations.hlexc and add distributive drv.
+
+2009-12-21 01:06  Flammie Pirinen <flammie@iki.fi>
+
+	* test, test/.cvsignore, test/Makefile.am,
+	  test/fiwiki-coverages.bash, test/speling.difftest,
+	  test/speling.random.difftest, test/speling.sh,
+	  test/top100.difftest, test/voikko-hyphenate.sh: Semi-automatic
+	  fiwiki coverage test and few changes to scripts
+
+2009-12-16 09:16  Flammie Pirinen <flammie@iki.fi>
+
+	* src/abbreviation-stubs.hlexc, src/acronym-stubs.hlexc,
+	  src/exceptions.hlexc, src/extra.csv, src/prefixes.hlexc: Some new
+	  word forms harvested from top 100 misses in wikipedia test and
+	  from an
+	  university course feedback stuff
+
+2009-12-16 00:24  Flammie Pirinen <flammie@iki.fi>
+
+	* src/uppercase-word.twolc: Loosen uppercasing rule a bit (still
+	  relatively broken)
+
+2009-12-15 21:51  Flammie Pirinen <flammie@iki.fi>
+
+	* src/kotus.csv, src/noun-stubs.hlexc: Add kenkä to nouns
+
+2009-12-14 21:41  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/sh.regex, src/zh.regex, src/š-sh.regex,
+	  src/ž-zh.regex: Work around Mac OS X's different file name
+	  system.
+
+2009-12-14 20:18  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/Makefile.am: Remove spurious builds in doc makefile
+
+2009-12-14 00:43  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/eliminate-boundaries.relabel,
+	  src/eliminate-boundaries.twolc, src/omorfi.twolc,
+	  src/orthographic-variation.twolc,
+	  src/orthographic-variations.regex, src/š-sh.regex,
+	  src/ž-zh.regex: Renew build system to avoid excessive twol ruling
+	  for simple tasks.
+
+2009-12-12 16:48  Flammie Pirinen <flammie@iki.fi>
+
+	* README, doc/inflection.rst, doc/preprocessing.rst: Documentation
+	  updates for release-candidate 2
+
+2009-12-11 18:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/orthographic-variation.twolc: Disable
+	  malfunctional orthography
+
+2009-12-11 09:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/verb-stems.hlexc: Fix gradation for lähdetty.
+
+2009-12-11 02:16  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/abbreviation-infl.hlexc,
+	  src/abbreviation-stubs.hlexc, src/acronym-infl.hlexc,
+	  src/acronym-stubs.hlexc, src/csv2lexc.py, src/extra.csv,
+	  src/kotus.csv, src/noun-stubs.hlexc, src/omorfi.hlexc,
+	  src/orthographic-variation.twolc: Split abbreviations to acronyms
+	  (initialisms) and add single alphabets as lexemes.
+
+2009-12-11 00:50  Flammie Pirinen <flammie@iki.fi>
+
+	* src/kotus.csv, src/noun-stubs.hlexc: Add gradation C to -periaate
+
+2009-12-10 23:43  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/hyphenate.twolc: Use better hyphenation now
+	  that speller allows it.
+
+2009-12-10 23:20  Flammie Pirinen <flammie@iki.fi>
+
+	* src/digit-stems.hlexc, src/numeral-stubs.hlexc, src/omorfi.hlexc,
+	  src/punctuation.hlexc: Add approximative numerals, remove word
+	  boundary as punctuation, add real genus for numerals.
+
+2009-12-10 18:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/orthographic-variation.twolc: I suppose I need to declare
+	  this?
+
+2009-12-10 17:02  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/digit-infl.hlexc, src/digit-stems.hlexc,
+	  src/omorfi.hlexc: Reorg digits
+
+2009-12-10 15:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/noun-infl.hlexc, src/omorfi.hlexc: Fix two missing flag
+	  diacritics
+
+2009-12-10 15:31  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.twolc: Add - to word boundaries preventing rules to
+	  leak over again.
+	  
+	  This fixes long compilation times and huge transducers again.
+
+2009-12-08 01:13  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Remove unweighted stuff
+
+2009-12-07 04:40  Flammie Pirinen <flammie@iki.fi>
+
+	* test/speling.difftest: Include handmade speling testset from
+	  harvested unanalysed strings
+
+2009-12-07 04:34  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/difftest.sh, test/exceptions.difftest,
+	  test/exceptions.sh, test/fiwiki-xml2strings.bash,
+	  test/speling.sh, test/taivutusluokat.difftest,
+	  test/taivutusluokat.sh, test/top100.difftest, test/top100.sh,
+	  test/voikko-hyphenate.sh, test/voikko-spell.sh: New test cases in
+	  automatic test suite
+
+2009-12-06 18:06  Flammie Pirinen <flammie@iki.fi>
+
+	* test/coverage.py, test/voikko-hyphenate.difftest,
+	  test/voikko-spell.difftest, test/voikko-spell.none.difftest: New
+	  set of difftests thanks to from voikko spelling project test set.
+	  
+	  Thanks to Harri Pitkänen for tests. Originals at
+	  <http://voikko.svn.sourceforge.net/viewvc/voikko/trunk/tests/voikkotest/>.
+
+2009-12-02 08:47  Flammie Pirinen <flammie@iki.fi>
+
+	* src/99-viskista.csv, src/Makefile.am, src/adjective-stems.hlexc,
+	  src/adjective-stubs.hlexc, src/adverbs.hlexc,
+	  src/compounding.hlexc, src/conjunctions.hlexc, src/csv2lexc.py,
+	  src/noun-stubs.hlexc, src/omorfi.hlexc, src/particles.hlexc,
+	  src/suffixes.hlexc, src/verb-stubs.hlexc: Move suffixes to own
+	  lexicon
+
+2009-12-01 17:36  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.hlexc: Add missing flags for translatives
+
+2009-12-01 17:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/adjective-stems.hlexc: Missing a:e cases in adjectives
+
+2009-11-29 19:22  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.twolc: Partially implement comparative a:e limitations
+
+2009-11-29 14:56  Flammie Pirinen <flammie@iki.fi>
+
+	* src/noun-stems.hlexc: Disallow compounding of 38 nominative
+	  singulars
+
+2009-11-29 14:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/adjective-stubs.hlexc, src/adpositions.hlexc,
+	  src/adverbs.hlexc, src/conjunctions.hlexc,
+	  src/interjections.hlexc, src/ksk.csv, src/noun-stubs.hlexc,
+	  src/particles.hlexc, src/prefixes.hlexc,
+	  src/proper-noun-stubs.hlexc, src/regenerate-lexicons.sh,
+	  src/verb-stubs.hlexc: Remove ksk stuff due to licencing issues
+
+2009-11-25 23:02  Flammie Pirinen <flammie@iki.fi>
+
+	* src/hyphenate.twolc: Do hyphenate word boundaries
+
+2009-11-25 22:45  Flammie Pirinen <flammie@iki.fi>
+
+	* src/noun-infl.hlexc, src/numeral-stems.hlexc,
+	  src/numeral-stubs.hlexc, src/omorfi.hlexc: Mostly implement
+	  numeral compounding limits (excluding ascending multiplier)
+
+2009-11-25 08:49  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: Missed hyp-omorfi.hwfst build rules
+
+2009-11-24 00:59  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/eliminate-boundaries.twolc,
+	  src/hyphenate.twolc, src/omorfi.twolc, src/uppercase-first.twolc,
+	  src/uppercase-word.twolc: Add hyphenation ruleset, split word
+	  boundary handling from other rulesets
+
+2009-11-20 11:15  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.twolc: Add word boundaries to rules to improve
+	  compilation times(?)
+
+2009-11-20 10:59  Flammie Pirinen <flammie@iki.fi>
+
+	* src/compounding.hlexc, src/noun-infl.hlexc,
+	  src/numeral-stubs.hlexc, src/omorfi.hlexc, src/prefixes.hlexc:
+	  Embrace the horror called flag diacritics
+
+2009-11-19 18:57  Flammie Pirinen <flammie@iki.fi>
+
+	* src/digit-infl.hlexc, src/digit-stubs.hlexc: Include decimal
+	  nominative singulars, remove dot operator
+
+2009-11-19 17:52  Flammie Pirinen <flammie@iki.fi>
+
+	* src/digit-infl.hlexc, src/digit-stubs.hlexc: Allow initial 0 in
+	  digit expressions and simplify digit inflection structure.
+
+2009-11-19 00:36  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.hlexc: Include derivative i zeroing trigger to lexicon
+	  symbol set
+
+2009-11-19 00:35  Flammie Pirinen <flammie@iki.fi>
+
+	* src/digit-stubs.hlexc: Allow all sorts of codified digit
+	  expressions as numerals
+
+2009-11-19 00:34  Flammie Pirinen <flammie@iki.fi>
+
+	* src/uppercase-word.twolc: Separate rule for uppercasing whole
+	  words instead of capitalisation
+
+2009-11-19 00:33  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.twolc: Further regression fixes in gradation ruleset
+
+2009-11-18 09:28  Flammie Pirinen <flammie@iki.fi>
+
+	* src/common-infl.hlexc, src/exceptions.hlexc, src/noun-infl.hlexc,
+	  src/noun-stems.hlexc, src/omorfi.twolc: Further changes from
+	  feedback by Harri Pitkänen w comparison to suomi-malaga
+
+2009-11-18 00:01  Flammie Pirinen <flammie@iki.fi>
+
+	* test/fiwiki.strings.bz2: Remove big test materials from svn (move
+	  towards script based solution instead)
+
+2009-11-12 23:29  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.twolc: Some possible fixes to gradation and vowel
+	  lengthening rules after feedback
+	  from comparison to voikko/suomi-malaga by Harri Pitkänen
+
+2009-11-11 03:05  Flammie Pirinen <flammie@iki.fi>
+
+	* ., .cvsignore, src, src/.cvsignore: Finegrain svn:ignores
+
+2009-11-11 03:00  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/abbreviation-infl.hlexc,
+	  src/abbreviation-stubs.hlexc, src/abbreviations.hlexc,
+	  src/adjective-infl.hlexc, src/adjective-stems.hlexc,
+	  src/adjective-stubs.hlexc, src/adpositions.hlexc,
+	  src/adverbs.hlexc, src/common-infl.hlexc, src/compounding.hlexc,
+	  src/conjunctions.hlexc, src/csv2lexc.py, src/digit-infl.hlexc,
+	  src/digit-stubs.hlexc, src/digits.hlexc, src/extra.csv,
+	  src/inflection.hlexc, src/interjections.hlexc,
+	  src/joukahainen.hlexc, src/kotus.hlexc, src/ksk.csv,
+	  src/noun-infl.hlexc, src/noun-stems.hlexc, src/noun-stubs.hlexc,
+	  src/numeral-stems.hlexc, src/numeral-stubs.hlexc,
+	  src/numerals.hlexc, src/omorfi.hlexc, src/particles.hlexc,
+	  src/prefixes.hlexc, src/proper-noun-stems.hlexc,
+	  src/proper-noun-stubs.hlexc, src/regenerate-lexicons.sh,
+	  src/stemparts.hlexc, src/verb-infl.hlexc, src/verb-stems.hlexc,
+	  src/verb-stubs.hlexc: Reorganize sources along parts of speech
+	  rather than dictionary sources
+
+2009-10-20 14:30  Flammie Pirinen <flammie@iki.fi>
+
+	* src/compounding.hlexc: Fix compound weights towards voikko
+	  algorithm
+
+2009-10-19 09:41  Flammie Pirinen <flammie@iki.fi>
+
+	* test/difftest.sh: missing test script added
+
+2009-10-19 08:17  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/exceptions.hlexc, src/kotus.hlexc,
+	  src/omorfi.twolc, test/exceptions.difftest, test/top100.difftest:
+	  Fix out rest of exception cases to get rid of last regressions
+	  since 0.2
+
+2009-10-19 00:49  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am, test/top100.difftest: More misc. cleanups of
+	  test scheme
+
+2009-10-19 00:48  Flammie Pirinen <flammie@iki.fi>
+
+	* src/pronouns.hlexc: Include dictionary data to some pronouns
+
+2009-10-19 00:48  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am: Make speller-optimized automata
+
+2009-10-18 23:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/inflection.hlexc: Use voikko spelling weights in cases, verb
+	  forms, possessives and clitics
+
+2009-10-18 22:12  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Multichar_Symbols, src/digits.hlexc, src/omorfi.twolc:
+	  include greek support for some inline math notations in test
+	  corpora :-)
+
+2009-10-18 22:11  Flammie Pirinen <flammie@iki.fi>
+
+	* src/inflection.hlexc: Inflect abbreviations with :
+
+2009-10-18 22:10  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/abbreviations.hlexc, src/omorfi.hlexc:
+	  preliminary support for abbreviations
+
+2009-10-18 19:11  Flammie Pirinen <flammie@iki.fi>
+
+	* test/taivutusluokat.difftest, test/top100.difftest: Update tests
+
+2009-10-17 17:47  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am: clean up test act
+
+2009-10-17 14:30  Flammie Pirinen <flammie@iki.fi>
+
+	* test/fiwiki.log.ref.bz2, test/fiwiki.wlog.ref.bz2,
+	  test/gutenberg-fi.log.ref.bz2, test/gutenberg-fi.strings.bz2,
+	  test/gutenberg-fi.wlog.ref.bz2, test/test.strings.bz2:
+	  Externalize large test sets
+
+2009-10-17 14:27  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am, src/inflection.hlexc: Update weighting and
+	  runtiming
+
+2009-10-14 21:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/digits.hlexc: Operator fixes in digits
+
+2009-10-14 21:54  Flammie Pirinen <flammie@iki.fi>
+
+	* src/Makefile.am: argument change in hfst-tools
+
+2009-10-08 20:49  Flammie Pirinen <flammie@iki.fi>
+
+	* src/omorfi.twolc: Vv as disambiguent variable name, matched
+
+2009-10-04 12:32  Flammie Pirinen <flammie@iki.fi>
+
+	* src/digits.hlexc: Test regular expressions with digit expressions
+
+2009-10-04 12:31  Flammie Pirinen <flammie@iki.fi>
+
+	* test/Makefile.am: Use at-least test for title-cased transducers
+
+2009-10-04 12:31  Flammie Pirinen <flammie@iki.fi>
+
+	* test/taivutusluokat.difftest: Fixed marking for boundaries
+
+2009-10-04 12:29  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac: Yet another name for hfst-tools
+
+2009-09-03 09:32  Flammie Pirinen <flammie@iki.fi>
+
+	* aclocal.m4: Also delete this generated file
+
+2009-09-03 09:31  Flammie Pirinen <flammie@iki.fi>
+
+	* aclocal.m4, autogen.sh, configure.ac, src/Makefile.am,
+	  src/omorfi.hlexc, test/Makefile.am: new hfst tool names
+
+2009-08-26 20:34  Flammie Pirinen <flammie@iki.fi>
+
+	* autom4te.cache, config-aux, configure: Keep automatically
+	  generated files out from version control
+
+2009-08-26 08:38  Flammie Pirinen <flammie@iki.fi>
+
+	* doc/frequencies-for-weights.ods, doc/weights.rst: documentation
+	  for weighting scheme
+
+2009-08-26 08:37  Flammie Pirinen <flammie@iki.fi>
+
+	* Makefile.in, doc/Makefile.in, test/Makefile.in: remove generated
+	  files again
+
+2009-08-26 08:36  Flammie Pirinen <flammie@iki.fi>
+
+	* ., Makefile.in, aclocal.m4, autom4te.cache/output.0,
+	  autom4te.cache/output.1, autom4te.cache/requests,
+	  autom4te.cache/traces.0, autom4te.cache/traces.1, configure, doc,
+	  doc/Makefile.in, src, src/Makefile.in, test, test/Makefile.in:
+	  remove generated files again
+
+2009-08-26 08:30  Flammie Pirinen <flammie@iki.fi>
+
+	* configure.ac, src/Makefile.am, src/Makefile.in,
+	  src/Multichar_Symbols, src/compounding.hlexc,
+	  src/derivations.hlexc, src/inflection.hlexc, src/omorfi.hlexc,
+	  src/omorfi.twolc: Missing characters and weights
+
+2009-07-19 11:22  Flammie Pirinen <flammie@iki.fi>
+
+	* ., .cvsignore, AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am,
+	  Makefile.in, NEWS, README, THANKS, TODO, aclocal.m4, autogen.sh,
+	  autom4te.cache, autom4te.cache/output.0, autom4te.cache/output.1,
+	  autom4te.cache/requests, autom4te.cache/traces.0,
+	  autom4te.cache/traces.1, config-aux, config-aux/install-sh,
+	  config-aux/missing, configure, configure.ac, doc,
+	  doc/Makefile.am, doc/Makefile.in, doc/inflection.rst,
+	  doc/preprocessing.rst, src, src/99-viskista.csv, src/Makefile.am,
+	  src/Makefile.in, src/Multichar_Symbols, src/compounding.hlexc,
+	  src/csv2lexc.py, src/derivations.hlexc, src/digits.hlexc,
+	  src/exceptions.hlexc, src/inflection.hlexc, src/joukahainen.csv,
+	  src/joukahainen.hlexc, src/kotus.csv, src/kotus.hlexc,
+	  src/ksk.csv, src/numerals.hlexc, src/omorfi.hlexc,
+	  src/omorfi.twolc, src/orthographic-variation.twolc,
+	  src/particles.hlexc, src/pronominit.csv, src/pronouns.hlexc,
+	  src/pronouns2lexc.py, src/punctuation.hlexc,
+	  src/regenerate-lexicons.sh, src/stemparts.hlexc,
+	  src/uppercase-first.twolc, test, test/Makefile.am,
+	  test/Makefile.in, test/coverage.py, test/exceptions.difftest,
+	  test/fiwiki.log.ref.bz2, test/fiwiki.strings.bz2,
+	  test/fiwiki.wlog.ref.bz2, test/gutenberg-fi.log.ref.bz2,
+	  test/gutenberg-fi.strings.bz2, test/gutenberg-fi.wlog.ref.bz2,
+	  test/taivutusluokat.difftest, test/test.strings.bz2,
+	  test/top100.difftest: Initial import of lexc+twolc implementation
+	  as trunk
+
