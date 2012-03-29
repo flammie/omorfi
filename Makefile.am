@@ -4,12 +4,7 @@
 
 EXTRA_DIST=README.bindist
 ## N.B. GNU standards COPYING AUTHORS INSTALL README NEWS need not be declared
-SUBDIRS = src doc test
-
-.PHONY: doc
-
-doc:
-	cd doc && $(MAKE) doc
+SUBDIRS = src doc test man
 
 bindist: bindist-xz bindist-gzip
 
