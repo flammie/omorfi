@@ -1,0 +1,19 @@
+Alphabet
+
+a e i o u y ä ö
+
+%{%-%}:%- %{%#%}:0
+%-
+
+;
+
+Sets
+Vowels = a e i o u y ä ö ;
+Consonants = b c d f g h j k l m n p q r s t v w x z ;
+
+Rules
+
+"Dissallow no hyphen on vowel boundaries"
+%{%#%}:0 /<= Vv :0*  _ :0* Vv ; where Vv in Vowels ;
+
+

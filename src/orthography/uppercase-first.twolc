@@ -1,0 +1,58 @@
+Alphabet
+! Basic finnish alphabet
+a b c d e f g h i j k l m n o p q r s š t u v w x y z ž å ä ö
+A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
+! Uppercasing
+a:A b:B c:C d:D e:E f:F g:G h:H i:I j:J k:K l:L m:M n:N o:O p:P
+q:Q r:R s:S š:Š t:T u:U v:V w:W x:X y:Y z:Z ž:Ž å:Å ä:Ä ö:Ö
+! compounding hyphen
+%-
+
+! Latin extension for European multilingual plane (prune if necessary)
+á à â ã ā ă ą ç ć ĉ ċ č đ ð ď é è ê ë ē ĕ ę ė ě ƒ ĝ ğ ġ ģ ȟ ħ í ì î ï ĩ ī ĭ 
+į ı ĳ ĵ ķ ĸ ĺ ļ ľ ŀ ł ñ ń ņ ň ŉ ŋ ó ò ô ō ŏ ŕ ŗ ř ś ŝ ş ſ ţ ť ŧ ß þ ú ù û ü
+ũ ū ŭ ů ų ŵ ý ŷ ÿ ű ź ż ʒ æ ø œ ő ə
+Á À Â Ã Ā Ă Ą Ç Ć Ĉ Ċ Č Ð Ď É È Ê Ë Ē Ĕ Ę Ė Ě Ĝ Ğ Ġ Ģ Ȟ Ħ Í Ì Î Ï Ĩ Ī Ĭ Į İ
+Ĳ Ĵ Ķ Ĺ Ļ Ľ Ŀ Ł Ñ Ń Ņ Ň Ŋ Ó Ò Ô Ō Ŏ Ŕ Ŗ Ř Ś Ŝ Ş Ţ Ť Ŧ Þ Ú Ù Û Ü Ũ Ū Ŭ Ů Ų Ŵ
+Ý Ŷ Ű Ź Ż Ʒ Æ Ø Œ Ő Ə
+! Uppercase latin extensions as needed...
+! FIXME: missing slasheds
+! FIXME: I seriously cannot uppercase turkish I here
+! FIXME: and won't bother for ß either
+á:Á à:À â:Â ã:Ã ā:Ā ă:Ǎ ą:Ą ç:Ç ć:Ć ĉ:Ĉ ċ:Ċ č:Č ð:Ð ď:Ď
+é:É è:È ê:Ê ë:Ë ē:Ē ĕ:Ě ę:Ę ė:Ė ě:Ě ĝ:Ĝ ğ:Ǧ ġ:Ġ ģ:Ǵ ȟ:Ḣ
+í:Í ì:Ì î:Î ï:Ï ĩ:Ĩ ī:Ī ĭ:Ĭ ĵ:Ĵ ķ:Ķ ĺ:Ĺ ļ:Ļ ľ:Ľ ŀ:Ŀ
+ñ:Ñ ń:Ǹ ņ:Ņ ň:Ň ŉ:Ṅ ó:Ó ò:Ò ô:Ô ō:Ō ŏ:Ŏ ŕ:Ŕ ŗ:Ŗ ř:Ř ś:Ś ŝ:Ŝ ş:Ş
+ţ:Ţ ť:Ť þ:Þ ú:Ú ù:Ù û:Û ü:Ü
+
+
+%{#%} %{##%}
+
+! Uppercasing analyses
+0:%[CASECHANGE%=UPFIRST%] 0:%[CASECHANGE%=UPALL%]
+0:%[CASECHANGE%=NONE%]
+;
+
+Sets
+Lower = a b c d e f g h i j k l m n o p q r s š t u v w x y z ž å ä ö
+        á à â ã ā ă ç ć ĉ ċ č ð ď é è ê ë ē ė ĕ ĝ ġ í ì ï î ĩ ī ǐ
+        ķ ĺ ļ ľ ŀ ñ ń ņ ň ó ò ô ō ŏ ŕ ŗ ř ś ŝ ş ţ ť þ ú ù û ü         ;
+Upper = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
+        Á À Â Ã Ā Ǎ Ç Ć Ĉ Ċ Č Ð Ď É È Ê Ë Ē Ė Ě Ĝ Ġ Í Ì Ï Î Ĩ Ī Ǐ 
+        Ķ Ĺ Ļ Ľ Ŀ Ñ Ń Ņ Ň Ó Ò Ô Ō Ǒ Ŕ Ŗ Ř Ś Ŝ Ş Ţ Ť Þ Ú Ù Û Ü         ;
+CaseChange = %[CASECHANGE%=NONE%] %[CASECHANGE%=UPALL%] %[CASECHANGE%=UPFIRST%] ;
+
+Rules
+"Require uppercase at beginning and after upper-cases"
+Lc:Uc => %{##%}: _ ; 
+         :Upper _ ; where Lc in Lower Uc in Upper matched ;
+
+"Disallow retained lowercase after word medial uppercase"
+Lc /<= Lower:Upper Lower:Upper [Lower:Upper | ?]* _ ; where Lc in Lower ;
+
+"Mark no case changes"
+0:%[CASECHANGE%=NONE%] <=> %{##%}: [Lower | Upper] [? - [Lower:Upper | %{##%}: | 0:CaseChange]]+ %{##%}: _ # ;
+
+"Mark uppercasing first"
+0:%[CASECHANGE%=UPFIRST%] <=> %{##%}: Lower:Upper :Lower [? - [Lower:Upper | %{##%}: | 0:CaseChange]]+ %{##%}: _ # ;
+

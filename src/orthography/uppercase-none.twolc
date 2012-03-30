@@ -1,0 +1,10 @@
+Alphabet
+
+A
+;
+
+Rules
+
+"No uppercasing rule"
+A <=  _  ; where Lc in Lower Uc in Upper matched ;
+
