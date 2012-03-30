@@ -1,0 +1,444 @@
+LEXICON kotus_52_VERB/stemfiller
+	VerbStem/AInfinitive	;
+	VerbStem/EInfinitive	;
+	VerbStem/Present	;
+	VerbStem/Past	;
+	VerbStem/Potential	;
+	VerbStem/Imperative	;
+	VerbStem/Conditional	;
+0:t	VerbStem/ParticiplePassive	;
+0:t	VerbStem/Passive	;
+0:t	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_53_VERB/stemfiller
+0:{aä}	VerbStem/AInfinitive	;
+0:{aä}	VerbStem/EInfinitive	;
+0:{aä}	VerbStem/Present	;
+	VerbStem/Past	;
+0:{aä}	VerbStem/Potential	;
+0:{aä}	VerbStem/Imperative	;
+0:{aä}	VerbStem/Conditional	;
+0:et	VerbStem/ParticiplePassive	;
+0:et	VerbStem/Passive	;
+0:et	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_54_VERB/stemfiller
+0:t{aä}	VerbStem/AInfinitive	;
+0:t{aä}	VerbStem/EInfinitive	;
+0:t{aä}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:t{aä}	VerbStem/Potential	;
+0:t{aä}	VerbStem/Imperative	;
+0:t{aä}	VerbStem/Conditional	;
+0:tet	VerbStem/ParticiplePassive	;
+0:tet	VerbStem/Passive	;
+0:tet	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_54F_VERB/stemfiller
+0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{aä}{F}	VerbStem/Potential	;
+0:{t~~}{aä}{F}	VerbStem/Imperative	;
+0:{t~~}{aä}{F}	VerbStem/Conditional	;
+0:{t~~}et{F}	VerbStem/ParticiplePassive	;
+0:{t~~}et{F}	VerbStem/Passive	;
+0:{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_54I_VERB/stemfiller
+0:{t~~}{aä}{I}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{I}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{I}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{aä}{I}	VerbStem/Potential	;
+0:{t~~}{aä}{I}	VerbStem/Imperative	;
+0:{t~~}{aä}{I}	VerbStem/Conditional	;
+0:{t~~}et{I}	VerbStem/ParticiplePassive	;
+0:{t~~}et{I}	VerbStem/Passive	;
+0:{t~~}et{I}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_54J_VERB/stemfiller
+0:{t~~}{aä}{J}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{J}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{J}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{aä}{J}	VerbStem/Potential	;
+0:{t~~}{aä}{J}	VerbStem/Imperative	;
+0:{t~~}{aä}{J}	VerbStem/Conditional	;
+0:{t~~}et{J}	VerbStem/ParticiplePassive	;
+0:{t~~}et{J}	VerbStem/Passive	;
+0:{t~~}et{J}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_54K_VERB/stemfiller
+0:{t~~}{aä}{K}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{K}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{K}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{aä}{K}	VerbStem/Potential	;
+0:{t~~}{aä}{K}	VerbStem/Imperative	;
+0:{t~~}{aä}{K}	VerbStem/Conditional	;
+0:{t~~}et{K}	VerbStem/ParticiplePassive	;
+0:{t~~}et{K}	VerbStem/Passive	;
+0:{t~~}et{K}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_55F_VERB/stemfiller
+0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{F}	VerbStem/Past	;
+0:{t~~}{aä}{F}	VerbStem/Potential	;
+0:{t~~}{aä}{F}	VerbStem/Imperative	;
+0:{t~~}{aä}{F}	VerbStem/Conditional	;
+0:{t~~}et{F}	VerbStem/ParticiplePassive	;
+0:{t~~}et{F}	VerbStem/Passive	;
+0:{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_55I_VERB/stemfiller
+0:{t~~}{aä}{I}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{I}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{I}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{I}	VerbStem/Past	;
+0:{t~~}{aä}{I}	VerbStem/Potential	;
+0:{t~~}{aä}{I}	VerbStem/Imperative	;
+0:{t~~}{aä}{I}	VerbStem/Conditional	;
+0:{t~~}et{I}	VerbStem/ParticiplePassive	;
+0:{t~~}et{I}	VerbStem/Passive	;
+0:{t~~}et{I}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_55J_VERB/stemfiller
+0:{t~~}{aä}{J}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{J}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{J}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{J}	VerbStem/Past	;
+0:{t~~}{aä}{J}	VerbStem/Potential	;
+0:{t~~}{aä}{J}	VerbStem/Imperative	;
+0:{t~~}{aä}{J}	VerbStem/Conditional	;
+0:{t~~}et{J}	VerbStem/ParticiplePassive	;
+0:{t~~}et{J}	VerbStem/Passive	;
+0:{t~~}et{J}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_56_VERB/stemfiller
+0:{aä}	VerbStem/AInfinitive	;
+0:{aä}	VerbStem/EInfinitive	;
+0:{aä}	VerbStem/Present	;
+0:{oö}	VerbStem/Past	;
+0:{aä}	VerbStem/Potential	;
+0:{aä}	VerbStem/Imperative	;
+0:{aä}	VerbStem/Conditional	;
+0:et	VerbStem/ParticiplePassive	;
+0:et	VerbStem/Passive	;
+0:et	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_57F_VERB/stemfiller
+0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{oö}{F}	VerbStem/Past	;
+0:{t~~}{aä}{F}	VerbStem/Potential	;
+0:{t~~}{aä}{F}	VerbStem/Imperative	;
+0:{t~~}{aä}{F}	VerbStem/Conditional	;
+0:{t~~}et{F}	VerbStem/ParticiplePassive	;
+0:{t~~}et{F}	VerbStem/Passive	;
+0:{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_57K_VERB/stemfiller
+0:{t~~}{aä}{K}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{K}	VerbStem/EInfinitive	;
+0:{t~~}{aä}{K}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{oö}{K}	VerbStem/Past	;
+0:{t~~}{aä}{K}	VerbStem/Potential	;
+0:{t~~}{aä}{K}	VerbStem/Imperative	;
+0:{t~~}{aä}{K}	VerbStem/Conditional	;
+0:{t~~}et{K}	VerbStem/ParticiplePassive	;
+0:{t~~}et{K}	VerbStem/Passive	;
+0:{t~~}et{K}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_58_VERB/stemfiller
+0:e	VerbStem/AInfinitive	;
+0:i	VerbStem/EInfinitive	;
+0:e	VerbStem/Present	;
+	VerbStem/Past	;
+0:e	VerbStem/Potential	;
+0:e	VerbStem/Imperative	;
+	VerbStem/Conditional	;
+0:et	VerbStem/ParticiplePassive	;
+0:et	VerbStem/Passive	;
+0:et	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_59_VERB/stemfiller
+0:{t~~}e{J}	VerbStem/AInfinitive	;
+0:{t~~}i{J}	VerbStem/EInfinitive	;
+0:{t~~}e{J}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}e{J}	VerbStem/Potential	;
+0:{t~~}e{J}	VerbStem/Imperative	;
+0:t	VerbStem/Conditional	;
+0:{t~~}et{J}	VerbStem/ParticiplePassive	;
+0:{t~~}et{J}	VerbStem/Passive	;
+0:{t~~}et{J}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_60_VERB/stemfiller
+0:h{t~~}e{F}	VerbStem/AInfinitive	;
+0:h{t~~}i{F}	VerbStem/EInfinitive	;
+0:h{t~~}e{F}	VerbStem/Present	;
+0:h{t~~}{F}	VerbStem/Past	;
+0:ks	VerbStem/Past	;
+0:ksi	VerbStem/EInfinitive	;
+0:h{t~~}e{F}	VerbStem/Potential	;
+0:h{t~~}e{F}	VerbStem/Imperative	;
+0:h{t~~}{F}	VerbStem/Conditional	;
+0:h{t~~}e{F}t	VerbStem/ParticiplePassive	;
+0:h{t~~}e{F}t	VerbStem/Passive	;
+0:h{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_61_VERB/stemfiller
+0:i	VerbStem/AInfinitive	;
+0:i	VerbStem/EInfinitive	;
+0:i	VerbStem/Present	;
+	VerbStem/Past	;
+0:i	VerbStem/Potential	;
+0:i	VerbStem/Imperative	;
+	VerbStem/Conditional	;
+0:it	VerbStem/ParticiplePassive	;
+0:it	VerbStem/Passive	;
+0:it	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_62_VERB/stemfiller
+0:id{BVL}	VerbStem/AInfinitive	;
+0:id{BVL}	VerbStem/EInfinitive	;
+0:i{BVL}	VerbStem/Present	;
+0:{BVL}	VerbStem/Past	;
+0:i{BVL}	VerbStem/Potential	;
+0:i{BVL}	VerbStem/Imperative	;
+0:{BVL}	VerbStem/Conditional	;
+0:id{BVL}	VerbStem/ParticiplePassive	;
+0:i{BVL}	VerbStem/Passive	;
+0:i{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_63_VERB/stemfiller
+0:{aeiouyäö}d{BVL}	VerbStem/AInfinitive	;
+0:{aeiouyäö}d{BVL}	VerbStem/EInfinitive	;
+0:{aeiouyäö}{BVL}	VerbStem/Present	;
+0:{BVL}	VerbStem/Past	;
+0:{aeiouyäö}{BVL}	VerbStem/Potential	;
+0:{aeiouyäö}{BVL}	VerbStem/Imperative	;
+0:{BVL}	VerbStem/Conditional	;
+0:{aeiouyäö}d{BVL}	VerbStem/ParticiplePassive	;
+0:{aeiouyäö}{BVL}	VerbStem/Passive	;
+0:{aeiouyäö}{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_64uo_VERB/stemfiller
+0:uod{BVL}	VerbStem/AInfinitive	;
+0:uod{BVL}	VerbStem/EInfinitive	;
+0:uo{BVL}	VerbStem/Present	;
+0:o{BVL}	VerbStem/Past	;
+0:uo{BVL}	VerbStem/Potential	;
+0:uo{BVL}	VerbStem/Imperative	;
+0:o{BVL}	VerbStem/Conditional	;
+0:uod{BVL}	VerbStem/ParticiplePassive	;
+0:uo{BVL}	VerbStem/Passive	;
+0:uo{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_64yö_VERB/stemfiller
+0:yöd{BVL}	VerbStem/AInfinitive	;
+0:yöd{BVL}	VerbStem/EInfinitive	;
+0:yö{BVL}	VerbStem/Present	;
+0:ö{BVL}	VerbStem/Past	;
+0:yö{BVL}	VerbStem/Potential	;
+0:yö{BVL}	VerbStem/Imperative	;
+0:ö{BVL}	VerbStem/Conditional	;
+0:yöd{BVL}	VerbStem/ParticiplePassive	;
+0:yö{BVL}	VerbStem/Passive	;
+0:yö{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_64ie_VERB/stemfiller
+0:ied{BVL}	VerbStem/AInfinitive	;
+0:ied{BVL}	VerbStem/EInfinitive	;
+0:ie{BVL}	VerbStem/Present	;
+0:e{BVL}	VerbStem/Past	;
+0:ie{BVL}	VerbStem/Potential	;
+0:ie{BVL}	VerbStem/Imperative	;
+0:e{BVL}	VerbStem/Conditional	;
+0:ied{BVL}	VerbStem/ParticiplePassive	;
+0:ie{BVL}	VerbStem/Passive	;
+0:ie{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_65_VERB/stemfiller
+0:yd{BVL}	VerbStem/AInfinitive	;
+0:yd{BVL}	VerbStem/EInfinitive	;
+0:y{BVL}	VerbStem/Present	;
+0:v{BVL}	VerbStem/Past	;
+0:y{BVL}	VerbStem/Potential	;
+0:y{BVL}	VerbStem/Imperative	;
+0:v{BVL}	VerbStem/Conditional	;
+0:yd{BVL}	VerbStem/ParticiplePassive	;
+0:y{BVL}	VerbStem/Passive	;
+0:y{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_66_VERB/stemfiller
+0:{AV-}t	VerbStem/AInfinitive	;
+0:{AV-}t	VerbStem/EInfinitive	;
+0:{AV+}e	VerbStem/Present	;
+0:{AV+}	VerbStem/Past	;
+0:{AV-}	VerbStem/Potential	;
+0:{AV+}	VerbStem/Imperative	;
+0:{AV+}	VerbStem/Conditional	;
+0:{AV-}t	VerbStem/ParticiplePassive	;
+0:{AV-}	VerbStem/Passive	;
+0:{AV-}	VerbAllomorph/NUTPassiveParticiple	;
+
+LEXICON kotus_67_VERB/stemfiller
+0:{AV-}{nlrs}	VerbStem/AInfinitive	;
+0:{AV-}{nlrs}	VerbStem/EInfinitive	;
+0:{AV+}e	VerbStem/Present	;
+0:{AV+}	VerbStem/Past	;
+0:{AV-}	VerbStem/Potential	;
+0:{AV-}	VerbStem/Imperative	;
+0:{AV+}	VerbStem/Conditional	;
+0:{AV-}{nlrs}	VerbStem/ParticiplePassive	;
+0:{AV-}	VerbStem/Passive	;
+0:{AV-}	VerbAllomorph/NUTPassiveParticiple/I	;
+! derivations
+[DRV=U]:{AV+}{uy}	kotus_2_NOUN/stemfiller		;
+
+
+LEXICON kotus_68_VERB/stemfiller
+0:id	VerbStem/AInfinitive	;
+0:id	VerbStem/EInfinitive	;
+0:i	VerbStem/Present	;
+0:itse	VerbStem/Present	;
+	VerbStem/Past	;
+0:its	VerbStem/Past	;
+0:i	VerbStem/Potential	;
+	VerbStem/Conditional	;
+0:i	VerbStem/Imperative	;
+0:its	VerbStem/Conditional	;
+0:id	VerbStem/ParticiplePassive	;
+0:i	VerbStem/Passive	;
+0:i	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_69_VERB/stemfiller
+0:t	VerbStem/AInfinitive	;
+0:t	VerbStem/EInfinitive	;
+0:tse	VerbStem/Present	;
+0:ts	VerbStem/Past	;
+0:n	VerbStem/Potential	;
+0:t	VerbStem/Imperative	;
+0:ts	VerbStem/Conditional	;
+0:t	VerbStem/ParticiplePassive	;
+0:t	VerbStem/Passive	;
+0:t	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_70_VERB/stemfiller
+0:st	VerbStem/AInfinitive	;
+0:st	VerbStem/EInfinitive	;
+0:kse	VerbStem/Present	;
+0:ks	VerbStem/Past	;
+0:s	VerbStem/Potential	;
+0:s	VerbStem/Imperative	;
+0:ks	VerbStem/Conditional	;
+0:st	VerbStem/ParticiplePassive	;
+0:s	VerbStem/Passive	;
+0:s	VerbAllomorph/NUTPassiveParticiple	;
+
+LEXICON kotus_71_VERB/stemfiller
+0:hd	VerbStem/AInfinitive	;
+0:hd	VerbStem/EInfinitive	;
+0:{k~~}e{D}	VerbStem/Present	;
+0:{k~~}{D}	VerbStem/Past	;
+0:h	VerbStem/Potential	;
+0:h	VerbStem/Imperative	;
+0:{k~~}{D}	VerbStem/Conditional	;
+0:hd	VerbStem/ParticiplePassive	;
+0:h	VerbStem/Passive	;
+0:h	VerbAllomorph/NUTPassiveParticiple/F	;
+
+LEXICON kotus_72_VERB/stemfiller
+0:{AV-}t	VerbStem/AInfinitive	;
+0:{AV-}t	VerbStem/EInfinitive	;
+0:{AV+}ne	VerbStem/Present	;
+0:{AV+}n	VerbStem/Past	;
+0:{AV-}n	VerbStem/Potential	;
+0:{AV-}t	VerbStem/Imperative	;
+0:{AV+}n	VerbStem/Conditional	;
+0:{AV-}t	VerbStem/ParticiplePassive	;
+0:{AV-}t	VerbStem/Passive	;
+0:{AV-}t	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_73_VERB/stemfiller
+0:{AV-}t{BVL}	VerbStem/AInfinitive	;
+0:{AV-}t{BVL}	VerbStem/EInfinitive	;
+0:{AV+}{aeiouyäö}{BVL}	VerbStem/Present	;
+0:{AV+}s{BVL}	VerbStem/Past	;
+0:{AV-}n{BVL}	VerbStem/Potential	;
+0:{AV-}t{BVL}	VerbStem/Imperative	;
+0:{AV+}{BVL}	VerbStem/Conditional	;
+0:{AV-}t{BVL}	VerbStem/ParticiplePassive	;
+0:{AV-}t{BVL}	VerbStem/Passive	;
+0:{AV-}t{BVL}	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_74_VERB/stemfiller
+0:{AV-}t	VerbStem/AInfinitive	;
+0:{AV-}t	VerbStem/EInfinitive	;
+0:{AV+}{aä}	VerbStem/Present	;
+0:{AV+}s	VerbStem/Past	;
+0:{AV+}{aä}	VerbStem/Conditional	;
+0:{AV-}n	VerbStem/Potential	;
+0:{AV-}t	VerbStem/Imperative	;
+0:{AV+}	VerbStem/Conditional	;
+0:{AV-}t	VerbStem/ParticiplePassive	;
+0:{AV-}t	VerbStem/Passive	;
+0:{AV-}t	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_75_VERB/stemfiller
+0:{AV-}t	VerbStem/AInfinitive	;
+0:{AV-}t	VerbStem/EInfinitive	;
+0:{AV+}{aä}	VerbStem/Present	;
+0:{AV+}s	VerbStem/Past	;
+0:{AV+}{aä}	VerbStem/Conditional	;
+0:{AV-}n	VerbStem/Potential	;
+0:{AV-}t	VerbStem/Imperative	;
+0:{AV-}t	VerbStem/ParticiplePassive	;
+0:{AV-}t	VerbStem/Passive	;
+0:{AV-}t	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_76_VERB/stemfiller
+0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
+0:{t~~}{aä}{F}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:{t~~}{aä}{F}	VerbStem/Potential	;
+0:n	VerbStem/Potential	;
+0:{t~~}{aä}{F}	VerbStem/Imperative	;
+0:{t~~}{aä}{F}	VerbStem/Conditional	;
+0:det	VerbStem/ParticiplePassive	;
+0:det	VerbStem/Passive	;
+0:det	VerbAllomorph/NUTPassiveParticiple/C	;
+
+LEXICON kotus_77_VERB/stemfiller
+0:{aä}	VerbStem/AInfinitive	;
+0:{aä}	VerbStem/Present	;
+	VerbStem/Past	;
+0:{aä}	VerbStem/Conditional	;
+
+LEXICON kotus_78_VERB/stemfiller
+	VerbStem/AInfinitive	;
+	VerbStem/Present	;
+	VerbStem/Conditional	;
+
+! N.B. present and conditional have been dropped to exceptions.hlexc
+LEXICON exceptional_67_VERB/stemfiller
+0:{AV-}{nlrs}	VerbStem/AInfinitive	;
+0:{AV-}{nlrs}	VerbStem/EInfinitive	;
+0:{AV+}	VerbStem/Past	;
+0:{AV+}	VerbStem/Conditional	;
+0:{AV-}	VerbStem/Imperative	;
+0:{AV-}{nlrs}	VerbStem/ParticiplePassive	;
+0:{AV-}	VerbStem/Passive	;
+
+

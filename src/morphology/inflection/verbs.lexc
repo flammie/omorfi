@@ -1,0 +1,142 @@
+LEXICON VerbStem/Present
+@D.NEED@@P.NEED.REST@[VOICE=ACT][DRV=MAISILLA]:@D.NEED@@P.NEED.REST@{AV+}m{aä}isill{aä}	Possessive/Obligatory+Vn		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ABE]:@D.NEED@@P.NEED.REST@{AV+}m{aä}tt{aä}	Possessive/Optional+Vn		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ADE]:@D.NEED@@P.NEED.REST@{AV+}m{aä}ll{aä}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ELA]:@D.NEED@@P.NEED.REST@{AV+}m{aä}st{aä}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ILL]:@D.NEED@@P.NEED.REST@{AV+}m{aä}{aä}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=INE]:@D.NEED@@P.NEED.REST@{AV+}m{aä}ss{aä}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=INS]:@D.NEED@@P.NEED.REST@{AV+}m{aä}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG2][CLIT=S]:@D.NEED@@P.NEED.REST@{AV-}s	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=PL1]:@D.NEED@@P.NEED.REST@{present}m{AV-}me	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=PL2]:@D.NEED@@P.NEED.REST@{present}t{AV-}te	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=PL3]:@D.NEED@@P.NEED.REST@{present}{AV+}v{aä}t	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=SG1]:@D.NEED@@P.NEED.REST@{present}n{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=SG2]:@D.NEED@@P.NEED.REST@{present}t{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=SG3]:@D.NEED@@P.NEED.REST@{present}{aeiouyäö}{AV+}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[MOOD=INDV][TENSE=PRES][NEG=CON]:@D.NEED@@P.NEED.REST@{present}{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=MA]:@D.NEED@@P.NEED.REST@{AV+}m	kotus_10_ADJECTIVE/stemfiller		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=NEG]:@D.NEED@@P.NEED.REST@{AV+}m{aä}t{t~~}{oö}{C}	kotus_34_ADJECTIVE/stemfiller		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=VA]:@D.NEED@@P.NEED.REST@{AV+}v	kotus_10_ADJECTIVE/stemfiller		;
+! semi-derivs
+@U.NEED.NOMINAL@[DRV=MINEN][POS=NOUN]:@U.NEED.NOMINAL@{AV+}mi	kotus_38_NOUN/stemfiller		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=VA][DRV=INEN]:@D.NEED@@P.NEED.REST@{AV+}v{aä}i	kotus_38_ADJECTIVE/stemfiller		;
+@D.NEED@[GUESS=DERIVE][DRV=TTAA][POS=VERB][KTN=53][KAV=C]:@D.NEED@{present}{AV-}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+@D.NEED@[GUESS=DERIVE][DRV=TATTAA][POS=VERB][KTN=53][KAV=C]:@D.NEED@{present}{AV-}t{aä}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+@D.NEED@[GUESS=DERIVE][DRV=TATUTTAA][POS=VERB][KTN=53][KAV=C]:@D.NEED@{present}{AV-}t{aä}t{uy}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+! derivatoins
+[GUESS=DERIVE][DRV=JA][POS=NOUN]:{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
+[GUESS=DERIVE][VOICE=ACT][PCP=VA][DRV=VS][POS=NOUN]:{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
+! ugly long analyses
+@P.LONGxANALYSIS.TURE@@U.NEED.NOMINAL@{AV+}mi	kotus_38_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@@D.NEED@@P.NEED.REST@{AV+}v{aä}i	kotus_38_ADJECTIVE/stemfiller		;
+@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{uy}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+@P.LONGxANALYSIS.TURE@{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
+@P.LONGxANALYSIS.TURE@{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
+
+LEXICON VerbStem/AInfinitive
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=A][NUM=SG][CASE=LAT]:@D.NEED@@P.NEED.REST@{AV+}{aä}		Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=A][NUM=SG][CASE=TRA]:@D.NEED@@P.NEED.REST@{AV+}{aä}kse	Possessive/Obligatory+Vn		;
+
+LEXICON VerbStem/EInfinitive
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=E][NUM=SG][CASE=INE]:@D.NEED@@P.NEED.REST@{AV+}ess{aä}	Possessive/Optional+Vn		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=E][NUM=SG][CASE=INS]:@D.NEED@@P.NEED.REST@{AV+}en	Clitic/Optional		;
+
+LEXICON VerbStem/Imperative
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}mme	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2][CLIT=S]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}s	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL3]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}t	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG3]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[MOOD=IMPV][NEG=CON]:@D.NEED@@P.NEED.REST@{AV+}k{oö}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG1][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}ni	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG1][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}mi	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}tte	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}tten	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=RARE][PRS=SG1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}{oö}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=ARCHAIC][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}{oö}s	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=RARE][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}tte	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=RARE][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}mme	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}	Clitic/Optional		;
+
+LEXICON VerbStem/Conditional
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=PL1]:@D.NEED@@P.NEED.REST@i{AV+}simme	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=PL2]:@D.NEED@@P.NEED.REST@i{AV+}sitte	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=PL3]:@D.NEED@@P.NEED.REST@i{AV+}siv{aä}t	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG1]:@D.NEED@@P.NEED.REST@i{AV+}sin	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG2]:@D.NEED@@P.NEED.REST@i{AV+}sit	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG3]:@D.NEED@@P.NEED.REST@i{AV+}si	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG3][STYLE=NONSTANDARD]:@D.NEED@@P.NEED.REST@i{AV+}s	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[MOOD=COND][NEG=CON]:@D.NEED@@P.NEED.REST@i{AV+}si	Clitic/Optional		;
+
+LEXICON VerbStem/Passive
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=COND][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}t{aä}isiin	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=COND][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}isi	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=COND][PRS=PE4][STYLE=NONSTANDARD][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}is	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=IMPV][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=IMPV][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}{oö}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][INF=E][CASE=INE]:@D.NEED@@P.NEED.REST@{AV-}t{aä}ess{aä}	Possessive/Optional+Vn		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][INF=E][CASE=INS]:@D.NEED@@P.NEED.REST@{AV-}t{aä}en	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][INF=MA][NUM=SG][CASE=INS]:@D.NEED@@P.NEED.REST@{AV-}t{aä}m{aä}n	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=POTN][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}t{aä}neen	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=POTN][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}ne	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PAST][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}tiin	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PAST][PRS=PE4][STYLE=NONSTANDARD]:@D.NEED@@P.NEED.REST@{AV-}tii	Clitic/Optional		;
+@U.NEED.NOMINAL@[VOICE=PSS][PCP=VA]:@U.NEED.NOMINAL@{AV-}t{aä}v	kotus_10_ADJECTIVE/stemfiller		;
+
+LEXICON VerbStem/Past
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=PL1]:@D.NEED@@P.NEED.REST@im{AV-}me	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=PL2]:@D.NEED@@P.NEED.REST@it{AV-}te	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=PL3]:@D.NEED@@P.NEED.REST@i{AV+}v{aä}t	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=SG1]:@D.NEED@@P.NEED.REST@in{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=SG2]:@D.NEED@@P.NEED.REST@it{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=SG3]:@D.NEED@@P.NEED.REST@i{AV+}	Clitic/Optional		;
+
+LEXICON VerbStem/Potential
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}emme	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}ette	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=PL3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}ev{aä}t	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=SG1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}en	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}et	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=SG3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}ee	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[MOOD=POTN][NEG=CON]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}e	Clitic/Optional		;
+@U.NEED.NOMINAL@[VOICE=ACT][PCP=NUT]:@U.NEED.NOMINAL@{AV+}{nlrs}	kotus_47_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@[VOICE=ACT][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV+}{nlrs}{uy}t	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=SG1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisin	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisit	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=SG3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisi	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisimme	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisitte	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=PL3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisivät	Clitic/Optional		;
+
+LEXICON VerbStem/ParticiplePassive
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PRES][PRS=PE4]:@D.NEED@@P.NEED.REST@{aä}{aä}n{AV-}{F}{AV-}	Clitic/Optional		;
+@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PRES][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{aä}{AV-}	Clitic/Optional		;
+
+LEXICON VerbAllomorph/NUTPassiveParticiple
+@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
+[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
+
+LEXICON VerbAllomorph/NUTPassiveParticiple/C
+@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{C}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
+[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
+
+LEXICON VerbAllomorph/NUTPassiveParticiple/F
+@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{F}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
+[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
+
+LEXICON VerbAllomorph/NUTPassiveParticiple/I
+@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{I}	kotus_1_ADJECTIVE/stemfiller		;
+@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
+[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
+
+

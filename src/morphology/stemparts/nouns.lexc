@@ -1,0 +1,736 @@
+LEXICON kotus_1_NOUN/stemfiller
+	NounStem/Nominative	;
+	NounAllomorph/PartitiveA+Vn	;
+	NounAllomorph/IllativeVN	;
+	NounStem/Singular	;
+	NounAllomorph/PartitiveJA	;
+	NounAllomorph/GenitiveJEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_2_NOUN/stemfiller
+	NounStem/Nominative	;
+	NounAllomorph/PartitiveA+Vn	;
+	NounAllomorph/IllativeVN	;
+	NounStem/Singular	;
+	NounAllomorph/PartitiveJA	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveJEN	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_3_NOUN/stemfiller
+	NounStem/Nominative	;
+	NounAllomorph/PartitiveTA	;
+	NounAllomorph/IllativeVN	;
+	NounStem/Singular	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_4_NOUN/stemfiller
+	NounStem/Nominative	;
+	NounAllomorph/PartitiveA+Vn	;
+	NounAllomorph/IllativeVN	;
+	NounStem/Singular	;
+	NounAllomorph/PartitiveJA	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveJEN	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+0:{AV-}	NounAllomorph/IllativeIHIN	;
+
+LEXICON kotus_5_NOUN/stemfiller
+	NounStem/Nominative	;
+0:i	NounAllomorph/PartitiveA+Vn	;
+0:i	NounAllomorph/IllativeVN	;
+0:i	NounStem/Singular	;
+0:e	NounAllomorph/PartitiveJA	;
+0:e	NounAllomorph/IllativeIHIN	;
+0:e	NounStem/Plural	;
+	NounAllomorph/GenitiveIEN	;
+
+LEXICON kotus_5i_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:i	NounAllomorph/PartitiveA+Vn	;
+0:i	NounAllomorph/IllativeVN	;
+0:i	NounStem/Singular	;
+0:e	NounAllomorph/PartitiveJA	;
+0:e	NounAllomorph/IllativeIHIN	;
+0:e	NounStem/Plural	;
+	NounAllomorph/GenitiveIEN	;
+
+LEXICON kotus_6_NOUN/stemfiller
+	NounStem/Nominative	;
+0:i	NounAllomorph/PartitiveA+Vn	;
+0:i	NounAllomorph/IllativeVN	;
+0:i	NounStem/Singular	;
+0:e	NounAllomorph/PartitiveJA	;
+0:e	NounAllomorph/PartitiveITA	;
+0:e	NounAllomorph/GenitiveIDEN	;
+0:e	NounAllomorph/GenitiveITTEN	;
+0:e	NounAllomorph/IllativeIHIN	;
+0:e	NounStem/Plural	;
+	NounAllomorph/GenitiveIEN	;
+
+LEXICON kotus_6i_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:i	NounAllomorph/PartitiveA+Vn	;
+0:i	NounAllomorph/IllativeVN	;
+0:i	NounStem/Singular	;
+0:e	NounAllomorph/PartitiveJA	;
+0:e	NounAllomorph/PartitiveITA	;
+0:e	NounAllomorph/GenitiveIDEN	;
+0:e	NounAllomorph/GenitiveITTEN	;
+0:e	NounAllomorph/IllativeIHIN	;
+0:e	NounStem/Plural	;
+	NounAllomorph/GenitiveIEN	;
+
+LEXICON kotus_7_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:e	NounAllomorph/PartitiveA+Vn	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_8_NOUN/stemfiller
+	NounStem/Nominative	;
+	NounAllomorph/IllativeVN	;
+	NounAllomorph/PartitiveA+Vn	;
+	NounStem/Singular	;
+	NounAllomorph/PartitiveJA	;
+	NounAllomorph/GenitiveJEN	;
+	NounAllomorph/GenitiveIN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_9_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+0:{oö}	NounAllomorph/PartitiveJA	;
+0:{oö}	NounAllomorph/GenitiveJEN	;
+0:{oö}	NounAllomorph/IllativeIHIN	;
+0:{oö}	NounStem/Plural	;
+
+LEXICON kotus_10_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_11_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+0:{oö}	NounAllomorph/PartitiveJA	;
+0:{oö}	NounAllomorph/PartitiveITA	;
+0:{oö}	NounAllomorph/GenitiveJEN	;
+0:{oö}	NounAllomorph/GenitiveIDEN	;
+0:{oö}	NounAllomorph/GenitiveITTEN	;
+0:{oö}	NounAllomorph/IllativeIHIN	;
+0:{oö}	NounStem/Plural	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_12_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+0:{oö}	NounAllomorph/PartitiveITA	;
+0:{oö}	NounAllomorph/GenitiveIDEN	;
+0:{oö}	NounAllomorph/GenitiveITTEN	;
+0:{oö}	NounAllomorph/IllativeIHIN	;
+0:{oö}	NounStem/Plural	;
+
+LEXICON kotus_13_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_13_NOUN/stemfiller	;
+0:e	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_13_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+0:{oö}	NounAllomorph/PartitiveITA	;
+0:{oö}	NounAllomorph/PartitiveJA	;
+0:{oö}	NounAllomorph/GenitiveIDEN	;
+0:{oö}	NounAllomorph/GenitiveJEN	;
+0:{oö}	NounAllomorph/GenitiveITTEN	;
+0:{oö}	NounAllomorph/IllativeIHIN	;
+0:{oö}	NounStem/Plural	;
+
+LEXICON kotus_14_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+0:{oö}	NounAllomorph/PartitiveITA	;
+0:{oö}	NounAllomorph/PartitiveJA	;
+0:{oö}	NounAllomorph/GenitiveIDEN	;
+0:{oö}	NounAllomorph/GenitiveITTEN	;
+0:{oö}	NounAllomorph/GenitiveJEN	;
+0:{oö}	NounAllomorph/IllativeIHIN	;
+0:{oö}	NounStem/Plural	;
+0:{oö}{AV-}	NounAllomorph/IllativeIHIN	;
+
+LEXICON kotus_15_NOUN/stemfiller
+0:{aä}	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/PartitiveTA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeISIIN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_16_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:{aä}	NounAllomorph/PartitiveA	;
+0:{aä}	NounAllomorph/IllativeVN	;
+0:{aä}	NounAllomorph/GenitiveIN	;
+0:{aä}	NounStem/Singular	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_17_NOUN/stemfiller
+0:{aeiouyäö}	NounStem/Nominative	;
+0:{aeiouyäö}	NounAllomorph/PartitiveTA	;
+0:{aeiouyäö}	NounAllomorph/IllativeSEEN	;
+0:{aeiouyäö}	NounStem/Singular	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeISIIN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_18_NOUN/stemfiller
+0:{aeiouyäö}	NounStem/Nominative	;
+0:{aeiouyäö}	NounAllomorph/PartitiveTA	;
+0:{aeiouyäö}	NounAllomorph/IllativeHVN	;
+0:{aeiouyäö}	NounStem/Singular	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_19uo_NOUN/stemfiller
+0:uo	NounStem/Nominative	;
+0:uo	NounAllomorph/PartitiveTA	;
+0:uo	NounAllomorph/IllativeHVN	;
+0:uo	NounStem/Singular	;
+0:o	NounAllomorph/PartitiveITA	;
+0:o	NounAllomorph/GenitiveIDEN	;
+0:o	NounAllomorph/GenitiveITTEN	;
+0:o	NounAllomorph/IllativeIHIN	;
+0:o	NounStem/Plural	;
+
+LEXICON kotus_19yö_NOUN/stemfiller
+0:yö	NounStem/Nominative	;
+0:yö	NounAllomorph/PartitiveTA	;
+0:yö	NounAllomorph/IllativeHVN	;
+0:yö	NounStem/Singular	;
+0:ö	NounAllomorph/PartitiveITA	;
+0:ö	NounAllomorph/GenitiveIDEN	;
+0:ö	NounAllomorph/GenitiveITTEN	;
+0:ö	NounAllomorph/IllativeIHIN	;
+0:ö	NounStem/Plural	;
+
+LEXICON kotus_19ie_NOUN/stemfiller
+0:ie	NounStem/Nominative	;
+0:ie	NounAllomorph/PartitiveTA	;
+0:ie	NounAllomorph/IllativeHVN	;
+0:ie	NounStem/Singular	;
+0:e	NounAllomorph/PartitiveITA	;
+0:e	NounAllomorph/GenitiveIDEN	;
+0:e	NounAllomorph/GenitiveITTEN	;
+0:e	NounAllomorph/IllativeIHIN	;
+0:e	NounStem/Plural	;
+
+LEXICON kotus_20_NOUN/stemfiller
+0:{aeiouyäö}	NounStem/Nominative	;
+0:{aeiouyäö}	NounAllomorph/PartitiveTA	;
+0:{aeiouyäö}	NounAllomorph/IllativeHVN	;
+0:{aeiouyäö}	NounAllomorph/IllativeSEEN	;
+0:{aeiouyäö}	NounStem/Singular	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounAllomorph/IllativeISIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_21_NOUN/stemfiller
+	NounStem/Nominative	;
+	NounAllomorph/PartitiveTA	;
+	NounAllomorph/IllativeHVN	;
+	NounStem/Singular	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_22_NOUN/stemfiller
+	NounStem/Nominative	;
+0:’	NounAllomorph/PartitiveTA	;
+0:’	NounAllomorph/IllativeHVN	;
+0:’	NounStem/Singular	;
+0:’	NounAllomorph/PartitiveITA	;
+0:’	NounAllomorph/GenitiveIDEN	;
+0:’	NounAllomorph/IllativeIHIN	;
+0:’	NounStem/Plural	;
+
+LEXICON kotus_23_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+	NounAllomorph/PartitiveTA	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/IllativeIIN	;
+	NounAllomorph/GenitiveIEN	;
+	NounStem/Plural	;
+
+LEXICON kotus_24_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+	NounAllomorph/PartitiveTA	;
+	NounAllomorph/GenitiveTEN	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/GenitiveTEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_25_NOUN/stemfiller
+0:mi	NounStem/Nominative	;
+0:me	NounAllomorph/PartitiveA+Vn	;
+0:me	NounAllomorph/IllativeVN	;
+0:me	NounStem/Singular	;
+0:n	NounAllomorph/PartitiveTA	;
+0:n	NounAllomorph/GenitiveTEN	;
+0:m	NounAllomorph/PartitiveIA	;
+0:m	NounAllomorph/GenitiveIEN	;
+0:m	NounAllomorph/IllativeIIN	;
+0:m	NounStem/Plural	;
+
+LEXICON kotus_26_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+	NounAllomorph/PartitiveTA	;
+	NounAllomorph/GenitiveTEN	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_27_NOUN/stemfiller
+0:si	NounStem/Nominative	;
+0:{t~~}e{F}	NounAllomorph/IllativeVN	;
+0:{t~~}e{F}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:t	NounAllomorph/GenitiveTEN	;
+0:s	NounAllomorph/PartitiveIA	;
+0:s	NounAllomorph/GenitiveIEN	;
+0:s	NounAllomorph/IllativeIIN	;
+0:s	NounStem/Plural	;
+
+LEXICON kotus_28_NOUN/stemfiller
+0:si	NounStem/Nominative	;
+0:te	NounAllomorph/IllativeVN	;
+0:te	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:t	NounAllomorph/GenitiveTEN	;
+0:s	NounAllomorph/PartitiveIA	;
+0:s	NounAllomorph/GenitiveIEN	;
+0:s	NounAllomorph/IllativeIIN	;
+0:s	NounStem/Plural	;
+
+LEXICON kotus_28I_NOUN/stemfiller
+0:si	NounStem/Nominative	;
+0:{t~~}e{I}	NounAllomorph/IllativeVN	;
+0:{t~~}e{I}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:t	NounAllomorph/GenitiveTEN	;
+0:s	NounAllomorph/PartitiveIA	;
+0:s	NounAllomorph/GenitiveIEN	;
+0:s	NounAllomorph/IllativeIIN	;
+0:s	NounStem/Plural	;
+LEXICON kotus_28J_NOUN/stemfiller
+0:si	NounStem/Nominative	;
+0:{t~~}e{J}	NounAllomorph/IllativeVN	;
+0:{t~~}e{J}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:t	NounAllomorph/GenitiveTEN	;
+0:s	NounAllomorph/PartitiveIA	;
+0:s	NounAllomorph/GenitiveIEN	;
+0:s	NounAllomorph/IllativeIIN	;
+0:s	NounStem/Plural	;
+
+LEXICON kotus_28K_NOUN/stemfiller
+0:si	NounStem/Nominative	;
+0:{t~~}e{K}	NounAllomorph/IllativeVN	;
+0:{t~~}e{K}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:t	NounAllomorph/GenitiveTEN	;
+0:s	NounAllomorph/PartitiveIA	;
+0:s	NounAllomorph/GenitiveIEN	;
+0:s	NounAllomorph/IllativeIIN	;
+0:s	NounStem/Plural	;
+
+LEXICON kotus_29_NOUN/stemfiller
+0:psi	NounStem/Nominative	;
+0:pse	NounAllomorph/IllativeVN	;
+0:pse	NounStem/Singular	;
+0:s	NounAllomorph/PartitiveTA	;
+0:s	NounAllomorph/GenitiveTEN	;
+0:ps	NounAllomorph/PartitiveIA	;
+0:ps	NounAllomorph/GenitiveIEN	;
+0:ps	NounAllomorph/IllativeIIN	;
+0:ps	NounStem/Plural	;
+
+LEXICON kotus_30_NOUN/stemfiller
+0:tsi	NounStem/Nominative	;
+0:tse	NounAllomorph/IllativeVN	;
+0:tse	NounStem/Singular	;
+0:s	NounAllomorph/PartitiveTA	;
+0:s	NounAllomorph/GenitiveTEN	;
+0:ts	NounAllomorph/PartitiveIA	;
+0:ts	NounAllomorph/GenitiveIEN	;
+0:ts	NounAllomorph/IllativeIIN	;
+0:ts	NounStem/Plural	;
+
+LEXICON kotus_31_NOUN/stemfiller
+0:ksi	NounStem/Nominative	;
+0:h{t~~}e{F}	NounAllomorph/IllativeVN	;
+0:h{t~~}e{F}	NounStem/Singular	;
+0:h	NounAllomorph/PartitiveTA	;
+0:ks	NounAllomorph/PartitiveIA	;
+0:ks	NounAllomorph/GenitiveIEN	;
+0:ks	NounAllomorph/IllativeIIN	;
+0:ks	NounStem/Plural	;
+
+LEXICON kotus_32_NOUN/stemfiller
+0:{AV-}	NounStem/Nominative	;
+0:{AV+}e	NounAllomorph/IllativeVN	;
+0:{AV+}e	NounStem/Singular	;
+0:{AV-}	NounAllomorph/PartitiveTA	;
+0:{AV-}	NounAllomorph/GenitiveTEN	;
+0:{AV+}	NounAllomorph/PartitiveIA	;
+0:{AV+}	NounAllomorph/GenitiveIEN	;
+0:{AV+}	NounAllomorph/IllativeIIN	;
+0:{AV+}	NounStem/Plural	;
+
+LEXICON kotus_33_NOUN/stemfiller
+0:{AV-}n	NounStem/Nominative	;
+0:{AV+}me	NounAllomorph/IllativeVN	;
+0:{AV+}me	NounStem/Singular	;
+0:{AV-}n	NounAllomorph/PartitiveTA	;
+0:{AV-}n	NounAllomorph/GenitiveTEN	;
+0:{AV+}m	NounAllomorph/PartitiveIA	;
+0:{AV+}m	NounAllomorph/GenitiveIEN	;
+0:{AV+}m	NounAllomorph/IllativeIIN	;
+0:{AV+}m	NounStem/Plural	;
+
+LEXICON kotus_34_NOUN/stemfiller
+0:{AV-}n	NounStem/Nominative	;
+0:{AV+}m{aä}	NounAllomorph/IllativeVN	;
+0:{AV+}m{aä}	NounStem/Singular	;
+0:{AV-}n	NounAllomorph/PartitiveTA	;
+0:{AV-}n	NounAllomorph/GenitiveTEN	;
+0:{AV+}m	NounAllomorph/PartitiveIA	;
+0:{AV+}m	NounAllomorph/GenitiveIEN	;
+0:{AV+}m	NounAllomorph/IllativeIIN	;
+0:{AV+}m	NounStem/Plural	;
+
+LEXICON kotus_35_NOUN/stemfiller
+0:{AV-}n	NounStem/Nominative	;
+0:{AV+}m{aä}	NounAllomorph/GenitiveIN	;
+0:{AV+}m{aä}	NounAllomorph/IllativeVN	;
+0:{AV+}m{aä}	NounStem/Singular	;
+0:{AV-}n	NounAllomorph/PartitiveTA	;
+0:{AV+}m	NounAllomorph/GenitiveIEN	;
+0:{AV+}m	NounAllomorph/IllativeIIN	;
+0:{AV+}m	NounAllomorph/PartitiveIA	;
+0:{AV+}m	NounStem/Plural	;
+
+LEXICON kotus_36_NOUN/stemfiller
+0:n	NounStem/Nominative	;
+0:m{p~~}{aä}{H}	NounAllomorph/IllativeVN	;
+0:m{p~~}{aä}{H}	NounAllomorph/GenitiveIN	;
+[STY=NONSTANDARD]:m{p~~}{aä}{H}	NounAllomorph/PartitiveA	;
+0:m{p~~}{aä}{H}	NounStem/Singular	;
+0:n	NounAllomorph/PartitiveTA	;
+0:n	NounAllomorph/GenitiveTEN	;
+0:m{p~~}{H}	NounAllomorph/PartitiveIA	;
+0:m{p~~}{H}	NounAllomorph/GenitiveIEN	;
+0:m{p~~}{H}	NounAllomorph/IllativeIIN	;
+0:m{p~~}{H}	NounStem/Plural	;
+
+LEXICON kotus_37_NOUN/stemfiller
+0:n	NounStem/Nominative	;
+0:m{p~~}{aä}{H}	NounAllomorph/IllativeVN	;
+0:m{p~~}{aä}{H}	NounAllomorph/GenitiveIN	;
+0:m{p~~}{aä}{H}	NounAllomorph/PartitiveA	;
+0:m{p~~}{aä}{H}	NounStem/Singular	;
+0:n	NounAllomorph/PartitiveTA	;
+0:n	NounAllomorph/GenitiveTEN	;
+0:m{p~~}{H}	NounAllomorph/GenitiveIEN	;
+0:m{p~~}{H}	NounAllomorph/PartitiveIA	;
+0:m{p~~}{H}	NounAllomorph/IllativeIIN	;
+0:m{p~~}{H}	NounStem/Plural	;
+
+LEXICON kotus_38_NOUN/stemfiller
+@P.NEED.REST@:@P.NEED.REST@nen	NounStem/Nominative	;
+0:se	NounAllomorph/IllativeVN	;
+0:se	NounStem/Singular	;
+0:s	NounAllomorph/PartitiveTA	;
+0:s	NounAllomorph/GenitiveTEN	;
+0:s	NounAllomorph/PartitiveIA	;
+0:s	NounAllomorph/GenitiveIEN	;
+0:s	NounAllomorph/IllativeIIN	;
+0:s	NounStem/Plural	;
+[COMPOUND_FORM=S]:s	Compounding		;
+
+LEXICON kotus_39_NOUN/stemfiller
+0:s	NounStem/Nominative	;
+0:kse	NounAllomorph/IllativeVN	;
+0:kse	NounStem/Singular	;
+0:s	NounAllomorph/PartitiveTA	;
+0:s	NounAllomorph/GenitiveTEN	;
+0:ks	NounAllomorph/PartitiveIA	;
+0:ks	NounAllomorph/GenitiveIEN	;
+0:ks	NounAllomorph/IllativeIIN	;
+0:ks	NounStem/Plural	;
+
+LEXICON kotus_40_NOUN/stemfiller
+0:s	NounStem/Nominative	;
+0:{t~~}e{F}	NounAllomorph/IllativeVN	;
+0:{t~~}e{F}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:ks	NounAllomorph/PartitiveIA	;
+0:ks	NounAllomorph/GenitiveIEN	;
+0:ks	NounAllomorph/IllativeIIN	;
+0:ks	NounStem/Plural	;
+
+LEXICON kotus_41_NOUN/stemfiller
+0:{AV-}s	NounStem/Nominative	;
+0:{AV+}{aeiouyäö}	NounAllomorph/IllativeSEEN	;
+0:{AV+}{aeiouyäö}	NounStem/Singular	;
+0:{AV-}s	NounAllomorph/PartitiveTA	;
+0:{AV+}	NounAllomorph/PartitiveITA	;
+0:{AV+}	NounAllomorph/GenitiveIDEN	;
+0:{AV+}	NounAllomorph/GenitiveITTEN	;
+0:{AV+}	NounAllomorph/IllativeISIIN	;
+0:{AV+}	NounAllomorph/IllativeIHIN	;
+0:{AV+}	NounStem/Plural	;
+! The form 'kuningas+ten' is not in official dictionary
+[STYLE=ARCHAIC]:{AV-}s   NounAllomorph/GenitiveTEN   ;
+
+LEXICON kotus_42_NOUN/stemfiller
+0:s	NounStem/Nominative	;
+0:he	NounAllomorph/IllativeVN	;
+0:he	NounStem/Singular	;
+0:s	NounAllomorph/PartitiveTA	;
+0:s	NounAllomorph/GenitiveTEN	;
+0:h	NounAllomorph/PartitiveIA	;
+0:h	NounAllomorph/GenitiveIEN	;
+0:h	NounAllomorph/IllativeIIN	;
+0:h	NounStem/Plural	;
+
+LEXICON kotus_43_NOUN/stemfiller
+0:t	NounStem/Nominative	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeISIIN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_44_NOUN/stemfiller
+0:t	NounStem/Nominative	;
+0:{aeiouyäö}	NounAllomorph/IllativeSEEN	;
+0:{aeiouyäö}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+	NounAllomorph/PartitiveITA	;
+	NounAllomorph/GenitiveIDEN	;
+	NounAllomorph/GenitiveITTEN	;
+	NounAllomorph/IllativeISIIN	;
+	NounAllomorph/IllativeIHIN	;
+	NounStem/Plural	;
+
+LEXICON kotus_45_NOUN/stemfiller
+0:s	NounStem/Nominative	;
+0:n{t~~}e{J}	NounAllomorph/IllativeVN	;
+0:n{t~~}e{J}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:ns	NounAllomorph/PartitiveIA	;
+0:ns	NounAllomorph/GenitiveIEN	;
+0:ns	NounAllomorph/IllativeIIN	;
+0:ns	NounStem/Plural	;
+
+LEXICON kotus_46_NOUN/stemfiller
+0:t	NounStem/Nominative	;
+0:n{t~~}e{J}	NounAllomorph/IllativeVN	;
+0:n{t~~}e{J}	NounStem/Singular	;
+0:t	NounAllomorph/PartitiveTA	;
+0:n	NounAllomorph/GenitiveTEN	;
+0:ns	NounAllomorph/PartitiveIA	;
+0:ns	NounAllomorph/GenitiveIEN	;
+0:ns	NounAllomorph/IllativeIIN	;
+0:ns	NounStem/Plural	;
+
+LEXICON kotus_47_NOUN/stemfiller
+0:{uy}t	NounStem/Nominative	;
+0:ee	NounAllomorph/IllativeSEEN	;
+0:ee	NounStem/Singular	;
+0:{uy}t	NounAllomorph/PartitiveTA	;
+0:e	NounAllomorph/PartitiveITA	;
+0:e	NounAllomorph/GenitiveIDEN	;
+0:e	NounAllomorph/GenitiveITTEN	;
+0:e	NounAllomorph/IllativeISIIN	;
+0:e	NounAllomorph/IllativeIHIN	;
+0:e	NounStem/Plural	;
+[STYLE=NONSTANDARD]:{uy}	NounStem/Nominative	;
+
+LEXICON kotus_48_NOUN/stemfiller
+0:{AV-}	NounStem/Nominative	;
+0:{AV+}{aeiouyäö}	NounAllomorph/IllativeSEEN	;
+0:{AV+}{aeiouyäö}	NounStem/Singular	;
+0:{AV-}t	NounAllomorph/PartitiveTA	;
+0:{AV+}	NounAllomorph/PartitiveITA	;
+0:{AV+}	NounAllomorph/GenitiveIDEN	;
+0:{AV+}	NounAllomorph/GenitiveITTEN	;
+0:{AV+}	NounAllomorph/IllativeISIIN	;
+0:{AV+}	NounAllomorph/IllativeIHIN	;
+0:{AV+}	NounStem/Plural	;
+
+LEXICON kotus_49_NOUN/stemfiller
+0:{AV-}	NounStem/Nominative	;
+0:{AV+}e	NounStem/Nominative	;
+0:{AV+}e	NounAllomorph/IllativeVN	;
+0:{AV+}e	NounStem/Singular	;
+0:{AV+}ee	NounAllomorph/IllativeSEEN	;
+0:{AV+}ee	NounStem/Singular	;
+0:{AV-}	NounAllomorph/PartitiveTA	;
+0:{AV-}	NounAllomorph/GenitiveTEN	;
+0:{AV+}et	NounAllomorph/PartitiveTA	;
+0:{AV+}	NounAllomorph/PartitiveIA	;
+0:{AV+}	NounAllomorph/GenitiveIEN	;
+0:{AV+}	NounAllomorph/IllativeIIN	;
+0:{AV+}	NounStem/Plural	;
+0:{AV+}e	NounAllomorph/PartitiveITA	;
+0:{AV+}e	NounAllomorph/GenitiveIDEN	;
+0:{AV+}e	NounAllomorph/GenitiveITTEN	;
+0:{AV+}e	NounAllomorph/IllativeIHIN	;
+0:{AV+}e	NounAllomorph/IllativeISIIN	;
+0:{AV+}e	NounStem/Plural	;
+
+LEXICON kotus_49e_NOUN/stemfiller
+0:{AV-}	NounStem/Nominative	;
+0:{AV+}e	NounStem/Singular	;
+0:{AV+}e	NounAllomorph/IllativeSEEN	;
+0:{AV+}t	NounAllomorph/PartitiveTA	;
+0:{AV+}	NounStem/Plural	;
+0:{AV+}	NounAllomorph/PartitiveITA	;
+0:{AV+}	NounAllomorph/GenitiveIDEN	;
+0:{AV+}	NounAllomorph/GenitiveITTEN	;
+0:{AV+}	NounAllomorph/IllativeIHIN	;
+0:{AV+}	NounAllomorph/IllativeISIIN	;
+
+LEXICON exceptional_7_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:je	NounAllomorph/PartitiveA+Vn	;
+0:je	NounAllomorph/IllativeVN	;
+0:je	NounStem/Singular	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON exceptional_9_NOUN/stemfiller
+0:ika	NounStem/Nominative	;
+0:ja	NounStem/Singular/Weak	;
+0:ika	NounStem/Singular/Strong	;
+0:jo	NounStem/Plural/Weak	;
+0:iko	NounStem/Plural/Strong	;
+0:ika	NounAllomorph/PartitiveA	;
+0:ika	NounAllomorph/IllativeVN	;
+0:ika	NounAllomorph/GenitiveIN	;
+0:iko	NounAllomorph/PartitiveJA	;
+0:iko	NounAllomorph/GenitiveJEN	;
+0:iko	NounAllomorph/IllativeIHIN	;
+
+LEXICON exceptional_10_NOUN/stemfiller
+0:ika	NounStem/Nominative	;
+0:ja	NounStem/Singular/Weak	;
+0:ika	NounStem/Singular/Strong	;
+0:j	NounStem/Plural/Weak	;
+0:k	NounStem/Plural/Strong	;
+0:ika	NounAllomorph/PartitiveA	;
+0:ika	NounAllomorph/IllativeVN	;
+0:ika	NounAllomorph/GenitiveIN	;
+0:ik	NounAllomorph/PartitiveIA	;
+0:ik	NounAllomorph/GenitiveIEN	;
+0:ik	NounAllomorph/IllativeIIN	;
+
+LEXICON exceptional_24_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+0:{^a}	NounAllomorph/PartitiveTA	;
+	NounAllomorph/GenitiveTEN	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+LEXICON exceptional_26_NOUN/stemfiller
+0:i	NounStem/Nominative	;
+0:e	NounAllomorph/IllativeVN	;
+0:e	NounStem/Singular	;
+0:{^a}	NounAllomorph/PartitiveTA	;
+	NounAllomorph/GenitiveTEN	;
+	NounAllomorph/PartitiveIA	;
+	NounAllomorph/GenitiveIEN	;
+	NounAllomorph/IllativeIIN	;
+	NounStem/Plural	;
+
+

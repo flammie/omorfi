@@ -1,0 +1,25 @@
+! The adjectives are inflected like regular nouns. The only morphological
+! difference in adjectives compared to other nouns is higher likelihood of
+! comparative derivations. 
+! |VISK 300|
+
+LEXICON AdjectiveStem/Superlative
+! The superlative derivation is formed by *in* suffix, which creates a new
+! adjective baseform. This adjective however is handled slightly more like
+! a noun to avoid double comparative derivations for example.
+[CMP=SUP]:{AV-}i	kotus_36_NOUN/stemfiller		;
+! The adjective bases form superlative adverb derivations fully productively
+! by basically superlative instructive suffixes.
+! |VISK 375|
+[GUESS=DERIVE][DRV=STI][POS=ADVERB][CMP=SUP]:{AV-}immin Clitic/Optional ;
+
+LEXICON AdjectiveStem/Comparative
+! The comparative derivation is formed by *mpi* suffix, which creates a new
+! adjective baseform. This adjective is handled slightly more like a noun
+! to avoid double comparative forms.
+[CMP=CMP]:m{AV-}{p~~}{H}	kotus_16_NOUN/stemfiller		;
+! The adjective comparatives form comparative adverb productively using
+! the instructive suffix
+! |VISK 375|
+[GUESS=DERIVE][DRV=STI][POS=ADVERB][CMP=CMP]:{AV-}mmin	Clitic/Optional	;
+

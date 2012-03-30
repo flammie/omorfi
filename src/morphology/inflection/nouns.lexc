@@ -1,0 +1,175 @@
+! Nominal inflection and derivation
+
+LEXICON NounStem/Nominative
+@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@[NUM=SG][CASE=NOM]:@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@{AV+}	Clitic/Optional		;
+@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@[NUM=SG][CASE=NOM]:@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@{AV+}	Compounding		;
+! derivation
+[GUESS=DERIVE][DRV=INEN][POS=ADJECTIVE]:{←i~}{AV+}i	kotus_38_ADJECTIVE/stemfiller		;
+@C.LOWERCASED@[GUESS=DERIVE][DRV=LAINEN][POS=ADJECTIVE]:@C.LOWERCASED@l{aä}i	kotus_38_ADJECTIVE/stemfiller		;
+@P.LONGxANALYSIS.TURE@{←i~}{AV+}i	kotus_38_ADJECTIVE/stemfiller		;
+@C.LOWERCASED@@P.LONGxANALYSIS.TURE@l{aä}i	kotus_38_ADJECTIVE/stemfiller		;
+
+LEXICON NounStem/Singular
+@D.PLURALE.TANTUM@	NounStem/Singular/Strong	;
+@D.PLURALE.TANTUM@	NounStem/Singular/Weak	;
+	NounStem/Singular/Weak/Plural	;
+
+LEXICON NounStem/Plural
+	NounStem/Plural/Strong	;
+	NounStem/Plural/Weak	;
+
+LEXICON NounStem/Singular/Weak/Plural
+@U.AGREE.PLfNOMACC@[NUM=PL][CASE=NOM]:@U.AGREE.PLfNOMACC@{AV-}t	Clitic/Optional		;
+
+LEXICON NounStem/Singular/Weak
+	NounStem/Singular/Weak/Plural	;
+@U.AGREE.SGfABE@[NUM=SG][CASE=ABE]:@U.AGREE.SGfABE@t{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfABE@[NUM=SG][CASE=ABE]:@U.NEED.NUMERAL@@U.AGREE.SGfABE@t{AV-}t{aä}	Compounding		;
+@U.AGREE.SGfABL@[NUM=SG][CASE=ABL]:@U.AGREE.SGfABL@l{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfABL@[NUM=SG][CASE=ABL]:@U.NEED.NUMERAL@@U.AGREE.SGfABL@l{AV-}t{aä}	Compounding		;
+@U.AGREE.SGfADE@[NUM=SG][CASE=ADE]:@U.AGREE.SGfADE@l{AV-}l{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfADE@[NUM=SG][CASE=ADE]:@U.NEED.NUMERAL@@U.AGREE.SGfADE@l{AV-}l{aä}	Compounding		;
+@U.AGREE.SGfALL@[NUM=SG][CASE=ALL]:@U.AGREE.SGfALL@l{AV-}le	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfALL@[NUM=SG][CASE=ALL]:@U.NEED.NUMERAL@@U.AGREE.SGfALL@l{AV-}le	Compounding		;
+@U.AGREE.SGfELA@[NUM=SG][CASE=ELA]:@U.AGREE.SGfELA@s{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfELA@[NUM=SG][CASE=ELA]:@U.NEED.NUMERAL@@U.AGREE.SGfELA@s{AV-}t{aä}	Compounding		;
+@U.AGREE.SGfGENACC@[NUM=SG][CASE=GEN]:@U.AGREE.SGfGENACC@n{AV-}	Clitic/Optional		;
+@U.AGREE.SGfGENACC@[NUM=SG][CASE=GEN]:@U.AGREE.SGfGENACC@n{AV-}	Compounding		;
+@U.AGREE.SGfINE@[NUM=SG][CASE=INE]:@U.AGREE.SGfINE@s{AV-}s{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfINE@[NUM=SG][CASE=INE]:@U.NEED.NUMERAL@@U.AGREE.SGfINE@s{AV-}s{aä}	Compounding		;
+@U.AGREE.SGfTRA@[NUM=SG][CASE=TRA]:@U.AGREE.SGfTRA@k{AV-}se	Possessive/Obligatory+Vn		;
+@U.AGREE.SGfTRA@[NUM=SG][CASE=TRA]:@U.AGREE.SGfTRA@k{AV-}si	Clitic/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.SGfTRA@[NUM=SG][CASE=TRA]:@U.NEED.NUMERAL@@U.AGREE.SGfTRA@k{AV-}si	Clitic/Optional		;
+! derivations
+[GUESS=DERIVE][NUM=SG][DRV=TSE][POS=ADVERB][CASE=PRL]:{AV-}tse	Clitic/Optional	 ;
+[GUESS=DERIVE][DRV=LLINEN][POS=ADJECTIVE]:{AV-}lli	kotus_38_NOUN/stemfiller		;
+[GUESS=DERIVE][DRV=LLINEN][DRV=VS][POS=NOUN]:{AV-}llis{uy}{uy}	kotus_40_NOUN/stemfiller		;
+[GUESS=DERIVE][DRV=STI][POS=ADVERB]:{AV-}sti	Clitic/Optional		;
+[GUESS=DERIVE][DRV=TAR][POS=NOUN]:{AV-}t{t~~}{aä}r{C}	kotus_32_NOUN/stemfiller		;
+[GUESS=DERIVE][DRV=TON][POS=ADJECTIVE]:{AV-}t{t~~}{oö}{C}	kotus_34_NOUN/stemfiller		;
+[GUESS=DERIVE][DRV=TON][DRV=UUS][POS=NOUN]:{AV-}tt{oö}m{uy}{uy}   kotus_40_NOUN/stemfiller    ;
+@P.LONGxANALYSIS.TURE@{AV-}tse	Clitic/Optional	 ;
+@P.LONGxANALYSIS.TURE@{AV-}lli	kotus_38_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}llis{uy}{uy}	kotus_40_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}sti	Clitic/Optional		;
+@P.LONGxANALYSIS.TURE@{AV-}t{t~~}{aä}r{C}	kotus_32_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}t{t~~}{oö}{C}	kotus_34_NOUN/stemfiller		;
+@P.LONGxANALYSIS.TURE@{AV-}tt{oö}m{uy}{uy}   kotus_40_NOUN/stemfiller    ;
+
+LEXICON NounStem/Singular/Strong
+@U.AGREE.SGfESS@[NUM=SG][CASE=ESS]:@U.AGREE.SGfESS@{AV+}n{aä}	Possessive/Optional+Vn		;
+@R.NEED.NUMERAL@@U.AGREE.SGfESS@[NUM=SG][CASE=ESS]:@R.NEED.NUMERAL@@U.AGREE.SGfESS@{AV+}n{aä}	Compounding		;
+[NUM=SG][CASE=NOM]:{AV+}	Possessive/Obligatory 	;
+[NUM=SG][CASE=GEN]:{AV+}	Possessive/Obligatory 	;
+[NUM=PL][CASE=NOM]:{AV+}	Possessive/Obligatory 	;
+
+LEXICON NounStem/Plural/Weak
+@U.AGREE.PLfABE@[NUM=PL][CASE=ABE]:@U.AGREE.PLfABE@it{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfABE@[NUM=PL][CASE=ABE]:@U.NEED.NUMERAL@@U.AGREE.PLfABE@it{AV-}t{aä}	Compounding		;
+@U.AGREE.PLfABL@[NUM=PL][CASE=ABL]:@U.AGREE.PLfABL@il{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfABL@[NUM=PL][CASE=ABL]:@U.NEED.NUMERAL@@U.AGREE.PLfABL@il{AV-}t{aä}	Compounding		;
+@U.AGREE.PLfADE@[NUM=PL][CASE=ADE]:@U.AGREE.PLfADE@il{AV-}l{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfADE@[NUM=PL][CASE=ADE]:@U.NEED.NUMERAL@@U.AGREE.PLfADE@il{AV-}l{aä}	Compounding		;
+@U.AGREE.PLfALL@[NUM=PL][CASE=ALL]:@U.AGREE.PLfALL@il{AV-}le	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfALL@[NUM=PL][CASE=ALL]:@U.NEED.NUMERAL@@U.AGREE.PLfALL@il{AV-}le	Compounding		;
+@U.AGREE.PLfELA@[NUM=PL][CASE=ELA]:@U.AGREE.PLfELA@is{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfELA@[NUM=PL][CASE=ELA]:@U.NEED.NUMERAL@@U.AGREE.PLfELA@is{AV-}t{aä}	Compounding		;
+@U.AGREE.PLfINE@[NUM=PL][CASE=INE]:@U.AGREE.PLfINE@is{AV-}s{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfINE@[NUM=PL][CASE=INE]:@U.NEED.NUMERAL@@U.AGREE.PLfINE@is{AV-}s{aä}	Compounding		;
+@U.AGREE.PLfINS@[NUM=PL][CASE=INS]:@U.AGREE.PLfINS@in{AV-}	Clitic/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.PLfINS@[NUM=PL][CASE=INS]:@U.NEED.NUMERAL@@U.AGREE.PLfINS@in{AV-}	Compounding		;
+@U.AGREE.PLfTRA@[NUM=PL][CASE=TRA]:@U.AGREE.PLfTRA@ik{AV-}se	Possessive/Obligatory+Vn		;
+@U.AGREE.PLfTRA@[NUM=PL][CASE=TRA]:@U.AGREE.PLfTRA@ik{AV-}si	Clitic/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.PLfTRA@[NUM=PL][CASE=TRA]:@U.NEED.NUMERAL@@U.AGREE.PLfTRA@ik{AV-}si	Compounding		;
+! derivations
+[GUESS=DERIVE][NUM=PL][DRV=TSE][POS=ADVERB][CASE=PRL]:{AV-}itse	Clitic/Optional		;
+[GUESS=DERIVE][NUM=PL][DRV=TTAIN][POS=ADVERB][CASE=DIS]:{AV-}itt{aä}in	Clitic/Optional		;
+@P.LONGxANALYSIS.TURE@{AV-}itse	Clitic/Optional		;
+@P.LONGxANALYSIS.TURE@{AV-}itt{aä}in	Clitic/Optional		;
+
+LEXICON NounStem/Plural/Strong
+@U.AGREE.PLfESS@[NUM=PL][CASE=ESS]:@U.AGREE.PLfESS@{AV+}in{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfESS@[NUM=PL][CASE=ESS]:@U.NEED.NUMERAL@@U.AGREE.PLfESS@{AV+}in{aä}	Compounding		;
+@U.AGREE.CMT@[CASE=CMT]:@U.AGREE.CMT@i{AV+}ne	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.CMT@[CASE=CMT]:@U.NEED.NUMERAL@@U.AGREE.CMT@i{AV+}ne	Compounding		;
+
+LEXICON NounAllomorph/PartitiveA+Vn
+@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.AGREE.SGfPAR@{aä}{AV+}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{aä}{AV+}	Compounding		;
+@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Compounding		;
+
+LEXICON NounAllomorph/PartitiveA
+@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.AGREE.SGfPAR@{aä}{AV+}	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{aä}{AV+}	Compounding		;
+@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Compounding		;
+
+LEXICON NounAllomorph/PartitiveTA
+@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.AGREE.SGfPAR@{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{AV-}t{aä}	Compounding		;
+@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{AV-}t{aä}	Compounding		;
+
+LEXICON NounAllomorph/IllativeHVN
+@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=HVN]:@U.AGREE.SGfILL@{AV+}h{aeiouyäö}n	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=HVN]:@U.NEED.NUMERAL@@U.AGREE.SGfILL@{AV+}h{aeiouyäö}n	Compounding		;
+
+LEXICON NounAllomorph/PartitiveIA
+@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=IA]:@U.AGREE.PLfPAR@i{aä}{AV+}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=IA]:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@i{aä}{AV+}	Compounding		;
+
+LEXICON NounAllomorph/GenitiveIDEN
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IDEN]:@U.AGREE.PLfGEN@i{AV-}den	Possessive/Optional		;
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IDEN]:@U.AGREE.PLfGEN@i{AV-}den	Compounding		;
+
+LEXICON NounAllomorph/GenitiveIEN
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IEN]:@U.AGREE.PLfGEN@i{AV+}en	Possessive/Optional		;
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IEN]:@U.AGREE.PLfGEN@i{AV+}en	Compounding		;
+
+LEXICON NounAllomorph/IllativeIHIN
+@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IHIN]:@U.AGREE.PLfILL@i{AV+}hin	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IHIN]:@U.NEED.NUMERAL@@U.AGREE.PLfILL@i{AV+}hin	Compounding		;
+
+LEXICON NounAllomorph/IllativeIIN
+@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IIN]:@U.AGREE.PLfILL@iin{AV+}	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IIN]:@U.NEED.NUMERAL@@U.AGREE.PLfILL@iin{AV+}	Compounding		;
+
+LEXICON NounAllomorph/GenitiveIN
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IN]:@U.AGREE.PLfGEN@in{AV+}	Possessive/Optional		;
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IN]:@U.AGREE.PLfGEN@in{AV+}	Compounding		;
+
+LEXICON NounAllomorph/IllativeISIIN
+@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=ISIIN]:@U.AGREE.PLfILL@i{AV+}siin	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=ISIIN]:@U.NEED.NUMERAL@@U.AGREE.PLfILL@i{AV+}siin	Compounding		;
+
+LEXICON NounAllomorph/PartitiveITA
+@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=ITA]:@U.AGREE.PLfPAR@i{AV-}t{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=ITA]:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@i{AV-}t{aä}	Compounding		;
+
+
+LEXICON NounAllomorph/GenitiveITTEN
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=ITTEN]:@U.AGREE.PLfGEN@it{AV-}ten	Possessive/Optional		;
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=ITTEN]:@U.AGREE.PLfGEN@it{AV-}ten	Compounding		;
+
+LEXICON NounAllomorph/PartitiveJA
+@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=JA]:@U.AGREE.PLfPAR@{AV+}j{aä}	Possessive/Optional+Vn		;
+@U.NEED.NUMERAL@@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=JA]:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@{AV+}j{aä}	Compounding		;
+
+LEXICON NounAllomorph/GenitiveJEN
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=JEN]:@U.AGREE.PLfGEN@{AV+}jen	Possessive/Optional		;
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=JEN]:@U.AGREE.PLfGEN@{AV+}jen	Compounding		;
+
+LEXICON NounAllomorph/IllativeSEEN
+@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=SEEN]:@U.AGREE.SGfILL@seen	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=SEEN]:@U.NEED.NUMERAL@@U.AGREE.SGfILL@seen	Compounding		;
+
+LEXICON NounAllomorph/GenitiveTEN
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=TEN]:@U.AGREE.PLfGEN@{AV-}ten	Possessive/Optional		;
+@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=TEN]:@U.AGREE.PLfGEN@{AV-}ten	Compounding		;
+
+LEXICON NounAllomorph/IllativeVN
+@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=VN]:@U.AGREE.SGfILL@{AV+}{aeiouyäö}n	Possessive/Optional		;
+@U.NEED.NUMERAL@@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=VN]:@U.NEED.NUMERAL@@U.AGREE.SGfILL@{AV+}{aeiouyäö}n	Compounding		;
+
+

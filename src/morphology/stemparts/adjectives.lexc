@@ -1,0 +1,190 @@
+LEXICON kotus_1_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_1_NOUN/stemfiller	;
+	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_2_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_2_NOUN/stemfiller	;
+	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_3_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_3_NOUN/stemfiller	;
+	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_4_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_4_NOUN/stemfiller	;
+	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_5i_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_5i_NOUN/stemfiller	;
+0:i	AdjectiveStem/Comparative	;
+0:e	AdjectiveStem/Superlative	;
+	NounAllomorph/GenitiveIEN	;
+
+! LEXICON kotus_6_ADJECTIVE/stemfiller
+! [CMP=POS]:0	kotus_6_NOUN/stemfiller	;
+! 0:i	AdjectiveStem/Comparative	;
+! 0:e	AdjectiveStem/Superlative	;
+
+LEXICON kotus_6i_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_6i_NOUN/stemfiller	;
+0:i	AdjectiveStem/Comparative	;
+0:e	AdjectiveStem/Superlative	;
+
+! LEXICON kotus_7_ADJECTIVE/stemfiller
+! [CMP=POS]:0	kotus_7_NOUN/stemfiller	;
+! 0:i	AdjectiveStem/Comparative	;
+! 0:e	AdjectiveStem/Superlative	;
+
+LEXICON kotus_8_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_8_NOUN/stemfiller	;
+	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_9_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_9_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+0:e	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_10_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_10_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+0:e AdjectiveStem/Comparative   ;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_11_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_11_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_12_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_12_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_13_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_13_NOUN/stemfiller	;
+0:e	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_14_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_14_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+0:e	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_15_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_15_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_16_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_16_NOUN/stemfiller	;
+0:{aä}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_17_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_17_NOUN/stemfiller	;
+0:{aeiouyäö}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_18_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_18_NOUN/stemfiller	;
+0:{aeiouyäö}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+!LEXICON kotus_20_ADJECTIVE/stemfiller
+![CMP=POS]:0	kotus_20_NOUN/stemfiller	;
+!0:{aeiouyäö}	AdjectiveStem/Comparative	;
+!	AdjectiveStem/Superlative	;
+
+LEXICON kotus_21_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_21_NOUN/stemfiller	;
+0:{aeiouyäö}	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_26_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_26_NOUN/stemfiller	;
+0:e	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_27_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_27_NOUN/stemfiller	;
+0:{t~~}e{F}	AdjectiveStem/Comparative	;
+0:s	AdjectiveStem/Superlative	;
+
+LEXICON kotus_32_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_32_NOUN/stemfiller	;
+0:{AV+}e	AdjectiveStem/Comparative	;
+0:{AV+}	AdjectiveStem/Superlative	;
+
+LEXICON kotus_33_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_33_NOUN/stemfiller	;
+0:{AV+}me	AdjectiveStem/Comparative	;
+0:{AV+}m	AdjectiveStem/Superlative	;
+
+LEXICON kotus_34_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_34_NOUN/stemfiller	;
+0:{AV+}m{aä}	AdjectiveStem/Comparative	;
+0:{AV+}m	AdjectiveStem/Superlative	;
+
+LEXICON kotus_35_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_35_NOUN/stemfiller	;
+0:{AV+}m{aä}	AdjectiveStem/Comparative	;
+0:{AV+}m	AdjectiveStem/Superlative	;
+
+LEXICON kotus_36_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_36_NOUN/stemfiller	;
+0:m{p~~}{aä}{H}	AdjectiveStem/Comparative	;
+0:m{p~~}{H}	AdjectiveStem/Superlative	;
+
+LEXICON kotus_37_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_37_NOUN/stemfiller	;
+0:m{p~~}{aä}{H}	AdjectiveStem/Comparative	;
+0:m{p~~}{H}	AdjectiveStem/Superlative	;
+
+LEXICON kotus_38_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_38_NOUN/stemfiller	;
+0:se	AdjectiveStem/Comparative	;
+0:s	AdjectiveStem/Superlative	;
+
+
+LEXICON kotus_39_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_39_NOUN/stemfiller	;
+0:kse	AdjectiveStem/Comparative	;
+0:ks	AdjectiveStem/Superlative	;
+
+LEXICON kotus_40_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_40_NOUN/stemfiller	;
+0:{t~~}e{F} AdjectiveStem/Comparative	;
+0:ks	AdjectiveStem/Superlative	;
+
+LEXICON kotus_41_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_41_NOUN/stemfiller	;
+0:{AV+}{aeiouyäö}	AdjectiveStem/Comparative	;
+0:{AV+}	AdjectiveStem/Superlative	;
+
+LEXICON kotus_43_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_43_NOUN/stemfiller	;
+0:e	AdjectiveStem/Comparative	;
+	AdjectiveStem/Superlative	;
+
+LEXICON kotus_47_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_47_NOUN/stemfiller	;
+0:ee	AdjectiveStem/Comparative	;
+0:e	AdjectiveStem/Superlative	;
+
+LEXICON kotus_48_ADJECTIVE/stemfiller
+[CMP=POS]:0	kotus_48_NOUN/stemfiller	;
+0:{AV+}{aeiouyäö}	AdjectiveStem/Comparative	;
+0:{AV+}	AdjectiveStem/Superlative	;
+
+LEXICON exceptional_10_ADJECTIVE/stemfiller
+[CMP=POS]:tk	kotus_10_NOUN/stemfiller	;
+0:de	AdjectiveStem/Comparative	;
+0:te	AdjectiveStem/Comparative	;
+0:s	AdjectiveStem/Superlative	;

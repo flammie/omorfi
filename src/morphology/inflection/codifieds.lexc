@@ -1,0 +1,490 @@
+! Codifieds are inflected with a colon, depending on the last letter
+! of the word (or inflection class of the thing)
+
+LEXICON CodifiedAcroStem/Common
+[NUM=SG][CASE=NOM]:	Ennd	;
+	Compounding/Dashed	;
+
+LEXICON CodifiedAcroStem/a
+	CodifiedAcroStem/A	;
+
+LEXICON CodifiedAcroStem/A
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:ta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:han	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:ita	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/b
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/B
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/c
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/C
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/d
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/D
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/e
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/E
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/g
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/G
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/p
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/P
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/v
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/V
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/w
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/W
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/t
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/T
+	CodifiedAcroStem/ee	;
+
+LEXICON CodifiedAcroStem/ee
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hen	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/i
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/I
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/j
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/J
+	CodifiedAcroStem/ii	;
+
+LEXICON CodifiedAcroStem/ii
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hin	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/h
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/H
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/k
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/K
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/o
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/O
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/å
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/Å
+	CodifiedAcroStem/oo	;
+
+LEXICON CodifiedAcroStem/oo
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:ta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hon	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:ita	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/q
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/Q
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/u
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/U
+	CodifiedAcroStem/uu	;
+
+LEXICON CodifiedAcroStem/uu
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:ta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hun	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:ita	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/f
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/F
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/l
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/L
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/m
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/M
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/n
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/N
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/r
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/R
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/s
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/S
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/š
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/Š
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/x
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/X
+	CodifiedAcroStem/äX	;
+
+LEXICON CodifiedAcroStem/äX
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:ää	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:ään	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:iä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/y
+	CodifiedAcroStem/Y	;
+
+LEXICON CodifiedAcroStem/Y
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hin	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/ž
+    CodifiedAcroStem/Z   ;
+
+LEXICON CodifiedAcroStem/Ž
+    CodifiedAcroStem/Z   ;
+
+LEXICON CodifiedAcroStem/z
+    CodifiedAcroStem/Z   ;
+
+LEXICON CodifiedAcroStem/Z
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:aa	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:aan	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:ja	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/ä
+	CodifiedAcroStem/Ä	;
+
+LEXICON CodifiedAcroStem/Ä
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hän	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAcroStem/ö
+	CodifiedAcroStem/Ö	;
+
+LEXICON CodifiedAcroStem/Ö
+	CodifiedAcroStem/Common	;
+[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
+[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
+[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
+[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
+[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ILL]:%:hön	Possessive/Optional	;
+[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
+[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
+[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
+[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
+[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
+[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
+[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
+[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
+[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+
+LEXICON CodifiedAbbreviation
+    Compounding/Dashed ;
