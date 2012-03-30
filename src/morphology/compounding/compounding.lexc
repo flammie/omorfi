@@ -1,0 +1,54 @@
+
+LEXICON Main
+[LEMMA=':    Compounding/Initial ;
+[LEMMA=':    Compounding/Free    ;
+[LEMMA=':    Compounding/None   ;
+[COMPOUND_FORM=OMIT][LEMMA=':{-}   Compounding/Final   ;
+[COMPOUND_FORM=OMIT][LEMMA=':{-}   Compounding/Free   ;
+@D.NEED@@P.NEED.REST@[COMPOUND_FORM=OMIT][LEMMA=':@D.NEED@@P.NEED.REST@-	SUFFIX	; ! sole suffixes in broken compounds
+
+LEXICON Compounding
+	Compounding/Undashed	;
+	Compounding/Dashed	;
+
+LEXICON Compounding/Undashed
+[BOUNDARY=COMPOUND][GUESS=COMPOUND]:{#}	Compounding/Middle		;
+[BOUNDARY=COMPOUNDDASH][GUESS=COMPOUND]:{-}	Compounding/Middle		;
+
+LEXICON Compounding/Dashed
+[BOUNDARY=COMPOUNDDASH][GUESS=COMPOUND]:{-}	Compounding/Middle		;
+
+LEXICON Compounding/Omission
+[COMPOUND_FORM=OMIT]:-  Ennd    ;
+
+LEXICON Compounding/Middle
+[LEMMA=':    Compounding/Free    ;
+[LEMMA=':    Compounding/Final   ;
+
+LEXICON Compounding/Initial
+@D.NEED@@P.NEED.NOMINAL@	Digits	;
+@D.NEED@@P.NEED.NOMINAL@	ACRONYM	;
+@D.NEED@	PREFIX	;
+
+LEXICON Compounding/None
+@D.NEED@@P.NEED.REST@	ABBREVIATION	;
+@D.NEED@@P.NEED.REST@	PROPER	;
+@D.NEED@@P.NEED.REST@	PRONOUN	;
+@D.NEED@@P.NEED.REST@	ADPOSITION	;
+@D.NEED@@P.NEED.REST@	ADVERB	;
+@D.NEED@@P.NEED.REST@	CONJUNCTION	;
+@D.NEED@@P.NEED.REST@	INTERJECTION	;
+@D.NEED@@P.NEED.REST@	PARTICLE	;
+@D.NEED@@P.NEED.REST@	PUNCTUATION	;
+
+LEXICON Compounding/Free
+@U.NEED.NOMINAL@@C.AGREE@@C.PLURALE@	Nominal	;
+@U.NEED.NUMERAL@	NUMERAL	;
+@C.AGREE@	VERB	; ! NB: nominalised verbs tell what they NEED in infl
+@C.AGREE@	exceptions	; ! NB: exceptions tell what they NEED if anything
+
+LEXICON Compounding/Final
+@R.NEED.NOMINAL@@C.AGREE@@P.NEED.REST@	SUFFIX	;
+
+LEXICON Prefix+Compounding
+    Compounding/Undashed    ;

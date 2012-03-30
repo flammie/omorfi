@@ -118,7 +118,7 @@ temporary.omor.hfst: temporary.weighted.hfst
 		$(HMIN) $(HFST_FLAGS) > $@
 
 morphology.omor.hfst: temporary.omor.hfst
-	$(HF2F) -f olw -o $@
+	$(HF2F) -f olw -o $@ -i $<
 
 # create generator from analyzer
 generation.omor.hfst: temporary.unbounded.hfst
@@ -148,10 +148,10 @@ hyphenation.dict.hfst: temporary.orth.hfst eliminate-boundaries.relabel hyphenat
 	$(HF2F) $(HFST_FLAGS) -f sfst -i $< -o $@
 
 # voikko speller HFST beta targets
-speller.zhfst: dictionary.default.hfstol spell-checking/error.edit-distance-2.hfstol index.xml
-	cp -f dictionary.default.hfstol acceptor.default.hfst
-	cp -f suggestion/error.edit-distance-2.hfstol errmodel.default.hfst
-	$(ZIP) -v -9 $@ index.xml acceptor.default.hfst acceptor.limited.hfst errmodel.default.hfst
+speller.zhfst: dictionary.default.hfst spell-checking/error.edit-distance-2.hfst index.xml
+	cp -f dictionary.default.hfst acceptor.default.hfst
+	cp -f spell-checking/error.edit-distance-2.hfst errmodel.default.hfst
+	$(ZIP) -v -9 $@ index.xml acceptor.default.hfst errmodel.default.hfst
 
 
 clean-local:
