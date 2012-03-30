@@ -1,0 +1,22 @@
+#!/bin/sh
+omorfidir=@prefix@/share/hfst/fi_FI/
+omorfiprefix=$omorfidir/hyphenation
+if [ ! -d "$omorfidir" ] ; then
+    echo "omorfi not found in $omorfidir"
+    exit 1
+fi
+if test "x$1" == "x--help" ; then
+    echo Usage: $0 [twol|dict [FILENAME]]
+    exit 0
+fi
+if [ $# -lt 1 ] ; then
+    hfst-lookup "$omorfiprefix".rule.hfst
+elif [ $# -lt 2 ] ; then
+    hfst-lookup "$omorfiprefix".$1.hfst
+else
+    if [ $# -gt 3 ] ; then
+        echo "Ignoring $3..., for multiple file hyphenation use cat"
+    fi
+    hfst-lookup "$omorfiprefix".$1.hfst < $2
+fi
+

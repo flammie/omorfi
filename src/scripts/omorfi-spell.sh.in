@@ -1,0 +1,20 @@
+#!/bin/sh
+omorfidir=@prefix@/share/hfst/fi_FI/
+omorfiprefix=$omorfidir/dictionary.
+if [ ! -d "$omorfidir" ] ; then
+    echo "omorfi not found in $omorfidir"
+    exit 1
+fi
+if test "x$1" == "x--help" ; then
+    echo Usage: $0 [twol|dict [FILENAME]]
+    exit 0
+fi
+if [ $# -lt 1 ] ; then
+    hfst-optimized-lookup "$omorfiprefix".hfst.ol
+elif [ $# -lt 2 ] ; then
+    hfst-optimized-lookup "$omorfiprefix".hfst.ol < $1
+else
+    echo "Ignoring $2..., for multiple file hyphenation use cat"
+    hfst-optimized-lookup "$omorfiprefix".hfst.ol < $1
+fi
+

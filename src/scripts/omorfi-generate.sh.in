@@ -1,0 +1,53 @@
+#!/bin/bash
+omorfidir="@prefix@/share/hfst/fi"
+omorfiprefix=$omorfidir/generate.
+if [ ! -d "$omorfidir" ] ; then
+    echo "omorfi not found in $omorfidir"
+    exit 1
+fi
+if test "x$1" == "x--help" ; then
+    echo Usage: $0 [TAGSET [FILENAME]]
+    echo
+    echo "Available TAGSETs:"
+    ls -1 "$omorfiprefix" | sed -e 's/.*morphology\.//' -e 's/\.hfstol//'
+    exit 0
+fi
+tagset="omor"
+if [ $# -ge 1 ] ; then
+    case $1 in
+        cg|CG)
+            tagset="cg";
+            procflags="--cg";
+            shift 1;
+            ;;
+        apertium)
+            tagset="apertium";
+            procflags="--apertium";
+            shift 1;
+            ;;
+        omor)
+            tagset="omor";
+            procflags="-x";
+            shift 1;
+            ;;
+        colorterm)
+            tagset="colorterm";
+            procflags="-x";
+            shift 1;
+            ;;
+        finntreebank)
+            tagset="finntreebank";
+            procflags="--cg";
+            shift 1;
+            ;;
+        *)
+            procflags="-x";
+            ;;
+    esac
+fi
+if test -r "$omorfiprefix".$tagset.hfstol ; then
+    cat $@ | hfst-proc -g "$omorfiprefix".$tagset.hfstol
+else
+    echo "Cannot find $omorfiprefix.$tagset.hfstol, falling back to $omorfiprefix.omor.hfstol"
+    cat $@ | hfst-proc -g "$omorfiprefix".omor.hfstol
+fi

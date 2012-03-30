@@ -1,0 +1,26 @@
+#!/bin/sh
+omorfidir=@prefix@/share/hfst/fi_FI/
+omorfiprefix=$omorfidir/dictionary
+errorprefix=$omorfidir/error
+if [ ! -d "$omorfidir" ] ; then
+    echo "omorfi not found in $omorfidir"
+    exit 1
+fi
+if test "x$1" == "x--help" ; then
+    echo Usage: $0 [ERROR [FILENAME]]
+    exit 0
+fi
+if [ $# -lt 1 ] ; then
+    cat "$errorprefix".edit-distance-2.hfst "$omorfiprefix".hfst > /tmp/suggest.hfst 
+    hfst-lookup /tmp/suggest.hfst
+elif [ $# -lt 2 ] ; then
+    cat "$errorprefix".$1.hfst "$omorfiprefix".hfst > /tmp/suggest.hfst
+    hfst-lookup /tmp/suggest.hfst
+else
+    if [ $# -ge 3 ] ; then
+        echo "Ignoring $3... use cat to suggest more files"
+    fi
+    cat "$errorprefix".$1.hfst "$omorfiprefix".hfst > /tmp/suggest.hfst
+    hfst-lookup /tmp/suggest.hfst < $2
+fi
+rm -f /tmp/suggest.hfst

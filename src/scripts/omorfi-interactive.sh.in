@@ -1,0 +1,57 @@
+#!/bin/bash
+omorfidir="@prefix@/share/hfst/fi/"
+omorfiprefix=$omorfidir/morphology
+if [ ! -d "$omorfidir" ] ; then
+    echo omorfi not found in $omorfidir
+    exit 1
+fi
+if test "x$1" == "x--help" -o "x$1" == "x-h" ; then
+    echo Usage: $0 [TAGSET [FILENAME]]
+    echo 
+    echo "Possible TAGSETS:"
+    ls -1 "$omorfiprefix" | sed -e 's/.*morphology\.//' -e 's/\.hfstol//'
+    exit 0
+fi
+if [ -t 1 ] ; then
+    tagset=colorterm
+else
+    tagset=omor
+fi
+if [ $# -ge 1 ] ; then
+    case $1 in
+        cg|CG)
+            tagset="cg";
+            procflags="--cg";
+            shift 1;
+            ;;
+        apertium)
+            tagset="apertium";
+            procflags="--apertium";
+            shift 1;
+            ;;
+        omor)
+            tagset="omor";
+            procflags="-x";
+            shift 1;
+            ;;
+        colorterm)
+            tagset="colorterm";
+            procflags="-x";
+            shift 1;
+            ;;
+        finntreebank)
+            tagset="finntreebank";
+            procflags="--cg";
+            ;;
+        *)
+            procflags="-x";
+            ;;
+    esac
+fi
+if test -r "$omorfiprefix".$tagset.hfstol ; then
+    cat $@ | hfst-lookup $procflags "$omorfiprefix".$tagset.hfstol
+else
+    echo cannot read "$omorfiprefix".$tagset.hfstol, falling back to "$omorfiprefix".omor.hfstol
+    cat $@ | hfst-lookup -x "$omorfiprefix".omor.hfstol
+fi
+
