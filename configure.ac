@@ -223,7 +223,18 @@ AM_CONDITIONAL([WANT_DOC], [test "x$enable_doc" != xfalse])
 # Checks for typedefs, structures and compiler characteristics
 # Checks for library functions
 
-AC_CONFIG_FILES([Makefile src/Makefile src/index.xml src/morphology/Makefile src/morphology/lexical-data/Makefile src/hyphenation/Makefile src/orthography/Makefile src/phonology/Makefile src/suggestion/Makefile src/tagsets/Makefile src/weights/Makefile src/filters/Makefile doc/Makefile test/Makefile src/scripts/Makefile src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-suggest.sh src/scripts/omorfi-interactive.sh], [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-suggest.sh src/scripts/omorfi-interactive.sh])
+AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
+                 src/morphology/Makefile src/lexical/Makefile 
+                 src/hyphenation/Makefile src/orthography/Makefile
+                 src/phonology/Makefile src/spell-checking/Makefile
+                 src/probabilistics/Makefile 
+                 doc/Makefile test/Makefile 
+                 src/scripts/Makefile src/scripts/omorfi-analyse.sh
+                 src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh
+                 src/scripts/omorfi-spell.sh src/scripts/omorfi-suggest.sh
+                 src/scripts/omorfi-interactive.sh
+                 man/Makefile], 
+                 [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-suggest.sh src/scripts/omorfi-interactive.sh])
 AC_OUTPUT
 
 cat <<EOF
