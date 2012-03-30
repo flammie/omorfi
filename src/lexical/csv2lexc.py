@@ -32,7 +32,10 @@ from time import strftime
 import argparse
 
 from format_output import format_analysis_omor, format_surface_omor, format_lexc_omor
-
+from gradation import gradation_make_morphophonemes
+from parse_csv_data import parse_defaults_from_csv, parse_extras_from_csv, parse_conts, finetune_conts, add_extras
+from plurale_tantum import plurale_tantum_get_singular_stem
+from stub import stub_all
 
 # standard UI stuff
 
@@ -40,7 +43,7 @@ def main():
     # defaults
     pos_files = {"ADJECTIVE": 'adjectives.lexc', 
             "NOUN": 'nouns.lexc',
-            "VERB": 'verb-stubs.lexc',
+            "VERB": 'verbs.lexc',
             "PROPER": 'proper-nouns.lexc',
             "ADVERB": 'adverbs.lexc',
             "PARTICLE": 'particles.lexc',
@@ -55,7 +58,6 @@ def main():
             "NUMERAL": 'numerals.lexc'}
     outfiles = dict()
     curr_lexicon = dict()
-    outdir = "."
     # initialise argument parser
     ap = argparse.ArgumentParser(description="Convert Finnish dictionary CSV or TSV data into xerox/HFST lexc format")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
@@ -86,8 +88,8 @@ def main():
     for (pos, pos_filename) in pos_files.items():
         if not pos in args.exclude_pos:
             if args.verbose: 
-                print("Writing", pos, "to", pos_filename)
-            outfiles[pos] = open(outdir + "/" + pos_filename, "w")
+                print("Writing", pos, "to", args.output + "/" + pos_filename)
+            outfiles[pos] = open(args.output + "/" + pos_filename, "w")
             
             print("! Omorfi stubs", pos, "generated from", args.input,
                     file=outfiles[pos])
@@ -147,9 +149,19 @@ def main():
                 if wordmap['lemma'] not in lemmas:
                     csv_line = csv_file.readline()
                     continue
-            parse_extras(wordmap, csv_parts)
+            parse_extras_from_csv(wordmap, csv_parts)
             # here is actual python code doing the pre-processing
-            wordmap = stub_word(mark_gradation(handle_plurale_tantum(wordmap)))
+            wordmap = plurale_tantum_get_singular_stem(wordmap)
+            if not wordmap:
+                print("Could not parse plt on", linecount, ":\n",
+                        csv_line)
+                csv_line = csv_file.readline()
+            wordmap = gradation_make_morphophonemes(wordmap)
+            if not wordmap:
+                print("Could not parse gradation on", linecount, ":\n",
+                        csv_line)
+                csv_line = csv_file.readline()
+            wordmap = stub_all(wordmap)
             # guessing inflectional classes by KOTUS paradigm
             wordmap = parse_conts(wordmap)
             # split classes because shortcomings in KOTUS paradigm classes

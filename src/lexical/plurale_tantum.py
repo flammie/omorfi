@@ -6,6 +6,8 @@ from lexc_string_utils import replace_rightmost, replace_rightmosts
 def plurale_tantum_get_singular_stem(wordmap):
     '''Guess inflectional singulars for words whose dictionary form is plural.
     '''
+    tn = wordmap['kotus_tn']
+    av = wordmap['kotus_av']
     if not wordmap['plurale_tantum'] == 'obligatory':
         return wordmap
     if wordmap['kotus_av']:
@@ -68,6 +70,8 @@ def plurale_tantum_get_singular_stem(wordmap):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'jat', 'ika')
         else:
             print("Unhandled plt in ", wordmap, file=stderr)
+            return None
+        return wordmap
     else:
         if tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 't', '')
@@ -109,6 +113,7 @@ def plurale_tantum_get_singular_stem(wordmap):
             wordmap['stub'] = wordmap['stub'][:-3] + 'e'
         else:
             print("Unhandled plurale tantum in", wordmap, file=stderr)
+            return None
         return wordmap
     return None
 

@@ -11,6 +11,8 @@ SCIRPTS=csv2lexc.py csvjoin.py regenerate-lexicons.sh
 
 EXTRA_DIST=$(XML_SRCS) $(LEXICAL_SRCS) $(SCIRPTS)
 
+noinst_DATA=omor.timestamp
+
 lexemes.csv: $(LEXEMES)
 	echo "# This file has been generated automatically from lexemes/" > $@
 	echo "# Updates to this file will be deleted on next make" >> $@
@@ -24,6 +26,6 @@ master.csv: lexemes.csv $(JOINS)
 		-j attributes/usage.csv -o $@
 
 omor.timestamp: master.csv
-	./csv2lexc.py -v -i $< -o $(topsrcdir)/morphology/roots
+	./csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
 	touch $@
 

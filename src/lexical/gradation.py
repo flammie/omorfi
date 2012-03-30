@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-from lexc_string_utils import replace_rightmost
+from lexc_string_utils import replace_rightmost, replace_rightmosts
 
 def gradation_make_morphophonemes(wordmap):
     '''mark up gradating stop for morphophonological handling'''
     tn = wordmap['kotus_tn']
     av = wordmap['kotus_av']
-    if not wordmap['kotus_av']):
+    if not wordmap['kotus_av']:
         return wordmap
     if tn in range(1, 28) or tn in range(29, 32) or tn in range(52, 66) or tn == 76 or tn in [1009, 1010]:
         # strong root stem
@@ -44,6 +44,8 @@ def gradation_make_morphophonemes(wordmap):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'd', '{d~0}')
         else:
             print("unhandled gradation in", wordmap, file=stderr)
+            return None
+        return wordmap
     else:
         # weak root stem
         if av == 'A':
@@ -109,6 +111,7 @@ def gradation_make_morphophonemes(wordmap):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'e', '{t~0}e')
         else:
             print("unhandled gradation in", wordmap, file=stderr)
+            return None
         return wordmap
     return None
 

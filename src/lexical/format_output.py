@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from lexc_string_utils import lexc_escape
+
 def format_analysis_omor(wordmap):
     tn = int(wordmap['analysis_tn'])
     if wordmap['pos'] == 'PROPER':
@@ -51,5 +53,5 @@ def format_surface_omor(wordmap):
 
 def format_lexc_omor(wordmap):
     return ("%s:%s   %s  ;" % (lexc_escape(wordmap['analysis']), 
-        lexc_escape(wordmap['stub']), wordmap['lexicon']))
+        lexc_escape(wordmap['stub']), wordmap['continuation']))
 

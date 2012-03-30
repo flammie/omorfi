@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from lexc_string_utils import replace_rightmost
+
 def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['lexicon'] = ''
     wordmap['continuation'] = ''

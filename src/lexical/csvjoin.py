@@ -105,10 +105,10 @@ def main():
             join_on = []
             if join_line.count(',') >= 3:
                 join_parts = join_line.split(',')
-                join_on = ','.join(join_parts[0:2])
+                join_on = ','.join(join_parts[0:4])
             elif join_line.count('\t') >= 3:
                 join_parts = join_line.split('\t')
-                join_on = '\t'.join(join_parts[0:2])
+                join_on = '\t'.join(join_parts[0:4])
             else:
                 print("Must have at least 2 commas or tabs on each non-comment non-empty line of dictionary data; Skipping:", file=stderr)
                 print(join_line)
