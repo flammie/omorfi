@@ -10,6 +10,9 @@ LEXICON kotus_1_PROPER_geo/stemfiller
 LEXICON kotus_1_PROPER_misc/stemfiller
 	kotus_1_NOUN/stemfiller	;
 
+LEXICON kotus_2_PROPER/stemfiller
+BROKEN	kotus_2_NOUN/stemfiller	;
+
 LEXICON kotus_2_PROPER_first/stemfiller
 	kotus_2_NOUN/stemfiller	;
 
@@ -43,6 +46,9 @@ LEXICON kotus_4_PROPER_last/stemfiller
 LEXICON kotus_4_PROPER_geo/stemfiller
 	kotus_4_NOUN/stemfiller	;
 
+LEXICON kotus_5_PROPER/stemfiller
+BROKEN	kotus_5_NOUN/stemfiller	;
+
 LEXICON kotus_5_PROPER_first/stemfiller
 	kotus_5_NOUN/stemfiller	;
 
@@ -54,6 +60,9 @@ LEXICON kotus_5_PROPER_geo/stemfiller
 
 LEXICON kotus_5_PROPER_misc/stemfiller
 	kotus_5_NOUN/stemfiller	;
+
+LEXICON kotus_5i_PROPER/stemfiller
+BROKEN	kotus_5i_NOUN/stemfiller	;
 
 LEXICON kotus_5i_PROPER_first/stemfiller
 	kotus_5i_NOUN/stemfiller	;
@@ -123,6 +132,12 @@ LEXICON kotus_9_PROPER_geo/stemfiller
 
 LEXICON kotus_9_PROPER_misc/stemfiller
 	kotus_9_NOUN/stemfiller	;
+
+LEXICON kotus_9_PROPER/stemfiller
+BROKEN	kotus_9_NOUN/stemfiller	;
+
+LEXICON kotus_10_PROPER/stemfiller
+BROKEN	kotus_10_NOUN/stemfiller	;
 
 LEXICON kotus_10_PROPER_first/stemfiller
 	kotus_10_NOUN/stemfiller	;
@@ -252,6 +267,9 @@ LEXICON kotus_26_PROPER_geo/stemfiller
 
 LEXICON kotus_27_PROPER_geo/stemfiller
 	kotus_27_NOUN/stemfiller	;
+
+LEXICON kotus_32_PROPER_geo/stemfiller
+	kotus_32_NOUN/stemfiller	;
 
 LEXICON kotus_32_PROPER_last/stemfiller
 	kotus_32_NOUN/stemfiller	;

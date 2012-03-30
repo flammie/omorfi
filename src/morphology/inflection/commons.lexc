@@ -67,3 +67,13 @@ LEXICON Clitic/Obligatory/Rest
 [CLIT=KAAN][CLIT=KO]:k{aä}{aä}nk{oö}	Ennd		;
 [CLIT=KAAN][CLIT=PA]:k{aä}{aä}np{aä}	Ennd		;
 
+
+LEXICON Particle+Clitic/Optional
+    Clitic/Optional ;
+
+LEXICON Adverb+Clitic/Optional
+    Clitic/Optional ;
+
+LEXICON Adposition+Clitic/Optional
+    Clitic/Optional ;
+

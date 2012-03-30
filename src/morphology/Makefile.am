@@ -1,18 +1,16 @@
 ## Process this file with automake to produce Makefile.in
 
-SUBDIRS=lexical-data
-
 # lexc data
 LEXC_MAIN=definitions.lexc
 MORPHOLOGY_SRCS=\
 				pos.lexc \
-				compounding.hlexc \
-				stems/adjectives.lexc \
-				stems/digits.lexc \
-				stems/nouns.lexc \
-				stems/numerals.lexc \
-				stems/proper-nouns.lexc \
-				stems/verbs.lexc \
+				compounding/compounding.lexc \
+				stemparts/adjectives.lexc \
+				stemparts/digits.lexc \
+				stemparts/nouns.lexc \
+				stemparts/numerals.lexc \
+				stemparts/proper-nouns.lexc \
+				stemparts/verbs.lexc \
 				inflection/acronyms.lexc \
 				inflection/adjectives.lexc \
 				inflection/commons.lexc \
@@ -20,25 +18,25 @@ MORPHOLOGY_SRCS=\
 				inflection/nouns.lexc \
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
-			lexical-data/abbreviation-stubs.hlexc \
-			lexical-data/acronym-stubs.hlexc \
-			lexical-data/adjective-stubs.hlexc \
-			lexical-data/adpositions.hlexc \
-			lexical-data/adverbs.hlexc \
-			lexical-data/conjunctions.hlexc \
-			lexical-data/digit-stubs.hlexc \
-			lexical-data/exceptions.hlexc \
-			lexical-data/interjections.hlexc \
-			lexical-data/noun-stubs.hlexc \
-			lexical-data/numeral-stubs.hlexc \
-			lexical-data/particles.hlexc \
-			lexical-data/prefixes.hlexc \
-			lexical-data/suffixes.hlexc \
-			lexical-data/pronouns.hlexc \
-			lexical-data/proper-noun-stubs.hlexc \
-			lexical-data/punctuation.hlexc \
-			lexical-data/verb-stubs.hlexc \
-			lexical-data/51.hlexc
+			roots/abbreviations.lexc \
+			roots/acronyms.lexc \
+			roots/adjectives.lexc \
+			roots/adpositions.lexc \
+			roots/adverbs.lexc \
+			roots/conjunctions.lexc \
+			roots/digits.lexc \
+			roots/exceptions.lexc \
+			roots/interjections.lexc \
+			roots/nouns.lexc \
+			roots/numerals.lexc \
+			roots/particles.lexc \
+			roots/prefixes.lexc \
+			roots/suffixes.lexc \
+			roots/pronouns.lexc \
+			roots/proper-nouns.lexc \
+			roots/punctuation.lexc \
+			roots/verbs.lexc \
+			roots/51.lexc
 LEXC_SRCS=$(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS)
 EXTRA_DIST=$(LEXC_MAIN) $(MORPHOLOGY_SRCS)
 
@@ -48,7 +46,7 @@ noinst_DATA=omorfi.lexc.hfst #guess-universal.lexc.hfst
 
 # lexical transducer
 omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS)
-	$(HLEXC) -o $@.foma $^
+	$(HLEXC) -f foma -o $@.foma $^
 	$(HF2F) -f openfst -o $@ $@.foma
 	rm $@.foma
 

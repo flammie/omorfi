@@ -422,3 +422,12 @@ LEXICON Ennd
 @D.LONGxANALYSIS@@D.LOWERCASED@[BOUNDARY=LEXITEM]:@D.LONGxANALYSIS@@D.LOWERCASED@{##}	#	;
 
 
+LEXICON Interjection+Ennd
+    Ennd    ;
+
+LEXICON Conjunction+Ennd
+    Ennd    ;
+
+LEXICON Abbreviation+Ennd
+    Ennd    ;
+
