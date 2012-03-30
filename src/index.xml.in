@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hfstspeller dtdversion="1.0" hfstversion="3">
+  <info>
+    <locale>fi</locale>
+    <title>Suomen kielen oikaisuluin (@PACKAGE_STRING@)</title>
+    <title xml:lang="sv">Finsk stavningskontrol (@PACKAGE_STRING@)</title>
+    <title xml:lang="en">Finnish spell-checking (@PACKAGE_STRING@)</title>
+    <description>
+        Suomen kielen oikaisuluku, joka perustuu HFST-tekniikaan ja
+        omorfin kielimalleihin. Aloitettu Helsingin yliopistossa, avoimen 
+        lähdekoodin projekti.
+    </description>
+    <description xml:lang="sv">
+        En finsk stavningskontroll som änvänds HFST teknologi och
+        omorfi. Som är byggd i universitetet Helsingfors.
+    </description>
+    <version vcsrev="@PACKAGE_REVISION@">@PACKAGE_VERSION@</version>
+    <date>@PACKAGE_VERSION@</date>
+    <producer>Univ. Helsinki &amp; omorfi contributors</producer>
+    <contact email="@PACKAGE_BUGREPORT@" 
+        website="@PACKAGE_URL@"/>
+  </info>
+  <acceptor type="general" id="acceptor.default.hfst">
+    <title>Täysmittainen suomen sanakirja</title>
+    <title xml:lang="sv">Fulskalig finsk leksikon</title>
+    <title xml:lang="en">Full Finnish morphological lexicon</title>
+    <description>
+        Omorfin koko suomen sanasto suodattamattomana, sisältää nykysuomen
+        sanalistan, joukahaisen, omorfin lisäykset ja joukkion murteellisia,
+        yleispuhekielisiä ja harvinaisia sanoja ja sananmuotoja.
+    </description>
+    <description xml:lang="sv">
+        En finsk leksikon med all slags som ord.
+    </description>
+    <description xml:lang="en">
+        Finnish dictionary unfiltered, contains three word lists from
+        different sources and includes dialects, slang and archaic and 
+        rare forms.
+    </description>
+  </acceptor>
+  <acceptor type="general" id="acceptor.limited.hfst">
+    <title>Oikaisulukuun rajoitettu sanakirja</title>
+    <title xml:lang="sv">Mindre leksikon för korrigering</title>
+    <title xml:lang="en">Limited Finnish lexicon for spell-checking</title>
+    <description>
+        Oikaisulukua varten kehitetty, rajoitetumpi versio sanastosta.
+        Normaalista sanakirjasta on poistettu kaikki murteellisina,
+        harvinaisina ja vanhahtavina pidetyt muodot, sekä monet harvinaisemmat
+        taivutus- ja johtomuodot sekä ennalta tuntemattomat yhdyssanat.
+    </description>
+    <description xml:lang="sv">
+        En finsk leksikon med färre ord.
+    </description>
+    <description xml:lang="en">
+        Finnish dictionary specially manufactured for spell-checking and
+        correcting. This dictionary is excluded of rare, archaic and dialectal
+        words and word forms as well as most of the derivation and compounding.
+    </description>
+  </acceptor>
+  <errmodel id="errmodel.default.hfst">
+    <title>Levenstein 2 transduktori homogeenisellä painotuksella</title>
+    <title xml:lang="sv">Levenstein 2 transducer</title>
+    <title xml:lang="en">Levenstein 2 transducer</title>
+    <description>
+        Virheenkorjausmalli, joka osaa ehjätä enintään kaksi näppäilyvirhettä.
+    </description>
+    <description xml:lang="sv">
+        Korrigering som kan rätta nästan 2 skrivningsfel på ordet.
+    </description>
+    <description xml:lang="en">
+        Correction model for keyboard misstrokes, at most 2 per word.
+    </description>
+        <type type="default"/>
+        <model>errormodel.default.hfst</model>
+    </errmodel>
+</hfstspeller>
