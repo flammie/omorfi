@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
 
-# TESTS=
+TESTS=rough-tests.sh
 
-# EXTRA_DIST=
+EXTRA_DIST=rough-tests.sh
