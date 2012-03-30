@@ -1,0 +1,57 @@
+Alphabet
+
+! Basic finnish alphabet
+a b c d e f g h i j k l m n o p q r s š t u v w x y z ž å ä ö
+A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
+
+! digits
+1 2 3 4 5 6 7 8 9 %0
+
+! basic punctuation
+‐ –
+’ %" ” »
+
+0:%~2 0:%~3 0:%~4
+%':%~3 ’:%~3
+
+%{#%}:%~1
+%-:%-
+%{##%}:0
+
+;
+
+Sets
+
+Vowels = a e i o u y ä ö A E I O U Y Ä Ö ;
+Consonants = b c d f g h j k l m n p q r s š t v w x z ž B C D F G H J K L M N P Q R S Š T V W X Z Ž ;
+
+Definitions
+WordBoundary = [#: | %{#%}: | %{##%}: ] ;
+
+Rules
+! Hyphenation in order of priority
+! 1. on compound boundary
+! 2. before last consonant of a consonant cluster that is between vowels
+! 3. between vowel pairs that do not form long vowel or diphthong;
+!    diphthongs are:
+!    ai, ei, oi, ui, yi, äi, öi, au, eu, iu, ou, äy, öy, uo, yö, iy, ey ja ie
+! 4. following diphtongs in non-stressed syllable, trivowelic contexts, etc.:
+!    ie, ...
+! 5. intervowelic k:0
+
+"Hyphenate Before consonant clusters"
+0:%~2 <=> Vowels Consonants* _ Consonants Vowels ;
+
+"Hyphenate between non-diphtongs"
+0:%~3 <=>
+	Vx _ Vy ; where Vx in (a a a a a e e e e i i i i o o o o o u u u u u y y y y y ä ä ä ä ä ö ö ö ö)
+					Vy in (e o y ä ö a o ä ö a o ä ö a e y ä ö a e y ä ö e ä a o u e ö a o u ä a o u) matched ;
+
+"Hyphenate diphtongs in certain contexts"
+0:%~4 <=> ! Vowels Vx _ Vy ;
+!	Vx _ Vy Vowels ; ! these block too many nice diphtongs
+	WordBoundary Consonants* [Vowels+ Consonants+]+ Vx _ Vy ;
+				  where Vx in (a e o u y ä ö a e i o ä ö u y i e i)
+						Vy in (i i i i i i i u u u u y y o ö y y e) matched ;
+
+! vim: set ft=xfst-twol:
