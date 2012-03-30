@@ -90,9 +90,9 @@ AC_ARG_ENABLE([dictionary],
 AM_CONDITIONAL([WANT_DICTIONARY], [test "x$enable_dictionary" != xno])
 AC_ARG_ENABLE([hyphenation],
               [AS_HELP_STRING([--enable-hyphenation],
-                              [compile hyphenators @<:@default=yes@:>@])],
+                              [compile hyphenators @<:@default=no@:>@])],
                               [enable_hyphenation=$enableval],
-                              [enable_hyphenation=yes])
+                              [enable_hyphenation=no])
 AM_CONDITIONAL([WANT_HYPHENATION], [test "x$enable_hyphenation" != xno])
 AC_ARG_ENABLE([voikko],
               [AS_HELP_STRING([--enable-voikko],
