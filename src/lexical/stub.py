@@ -74,7 +74,9 @@ def stub_all(wordmap):
         wordmap['stub'] = wordmap['stub'][:-1] 
     elif tn == 19:
         wordmap['stub'] = wordmap['stub'][:-2] 
-    elif tn in [25, 27, 28]:
+    elif tn in [25, 27]:
+        wordmap['stub'] = wordmap['stub'][:-2]
+    elif tn == 28:
         wordmap['stub'] = wordmap['stub'][:-2]
     elif tn in [29, 30, 31, 38]:
         wordmap['stub'] = wordmap['stub'][:-3]

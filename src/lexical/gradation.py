@@ -46,6 +46,9 @@ def gradation_make_morphophonemes(wordmap):
             print("unhandled gradation in", wordmap, file=stderr)
             return None
         return wordmap
+    elif tn == 28:
+        # gah gradation in stemparts
+        return wordmap
     else:
         # weak root stem
         if av == 'A':
