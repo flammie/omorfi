@@ -36,6 +36,7 @@ hfstfidata_DATA=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
 
 EXTRA_DIST=\
 		eliminate-boundaries.relabel \
+		lemmatize.relabel \
 		voikko-fi_FI.pro index.xml
 
 # combine lexical data with phonology
@@ -127,7 +128,7 @@ generation.omor.hfst: temporary.unbounded.hfst
 
 # lemmatization is a special case of tagset variant
 lemmatize.default.hfst: temporary.omor.hfst lemmatize.relabel
-	$(HSUB) $(HFST_FLAGS) -F lemmatize.relabel -i $< -o $@
+	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/lemmatize.relabel -i $< -o $@
 
 # create one tape spell checker
 dictionary.default.hfst: temporary.omor.hfst
