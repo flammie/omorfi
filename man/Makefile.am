@@ -3,7 +3,7 @@
 bootstrappable=omorfi-analyse.1 omorfi-hyphenate.1 omorfi-generate.1\
 			   omorfi-spell.1
 
-man1_MANS=$(bootstrappable) $(broken)
+dist_man1_MANS=$(bootstrappable) $(broken)
 
 bootstrap: 
 	for f in $(bootstrappable) ; do \
