@@ -1,53 +1,64 @@
 #!/bin/bash
-omorfidir="@prefix@/share/hfst/fi"
-omorfiprefix=$omorfidir/generate.
-if [ ! -d "$omorfidir" ] ; then
-    echo "omorfi not found in $omorfidir"
+omorfidir="@prefix@/share/hfst/fi/"
+omorfifile="$omorfidir/generate.omor.hfst"
+args=$@
+
+function print_version() {
+    echo "omorfi-generate 0.1"
+    echo "Copyright (c) 2012 Tommi A Pirinen"
+    echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
+    echo "This is free software: you are free to change and redistribute it."
+    echo "There is NO WARRANTY, to the extent permitted by law."
+
+}
+
+function print_usage() {
+    echo "Usage: $0 [OPTION] [FILENAME...]"
+}
+
+function print_help() {
+    echo "Generates word-forms from omorfi definitions"
+    echo
+    echo "  -h, --help      Print this help dialog"
+    echo "  -V, --version   Print version info"
+    echo "  -v, --verbose   Print verbosely while processing"
+    echo
+    echo "If no FILENAMEs are given, input is read from standard input."
+}
+
+
+function check_omorfi() {
+    if test ! -d "$omorfidir" ; then
+        echo omorfi not found in $omorfidir
+        exit 1
+    fi
+    if test ! -r "$omorfifile" ; then
+        echo generator not found in $omorfifile
+        exit 1
+    fi
+    if test x$1 == xverbose ; then
+        echo using $omorfifile as generator
+    fi
+}
+
+function generate() {
+    cat $@ | hfst-lookup -x "$omorfifile"
+}
+
+if test x$1 == x-h -o x$1 == x--help ; then
+    print_usage
+    print_help
+    exit 0
+elif test x$1 == x-V -o x$1 == x--version ; then
+    print_version
+    exit 0
+elif test x$1 == x-v -o x$1 == x--verbose ; then
+    verbose=verbose
+    shift 1
+elif test ! -r $1 ; then
+    echo "Cannot read from $1"
+    print_usage
     exit 1
 fi
-if test "x$1" == "x--help" ; then
-    echo Usage: $0 [TAGSET [FILENAME]]
-    echo
-    echo "Available TAGSETs:"
-    ls -1 "$omorfiprefix" | sed -e 's/.*morphology\.//' -e 's/\.hfstol//'
-    exit 0
-fi
-tagset="omor"
-if [ $# -ge 1 ] ; then
-    case $1 in
-        cg|CG)
-            tagset="cg";
-            procflags="--cg";
-            shift 1;
-            ;;
-        apertium)
-            tagset="apertium";
-            procflags="--apertium";
-            shift 1;
-            ;;
-        omor)
-            tagset="omor";
-            procflags="-x";
-            shift 1;
-            ;;
-        colorterm)
-            tagset="colorterm";
-            procflags="-x";
-            shift 1;
-            ;;
-        finntreebank)
-            tagset="finntreebank";
-            procflags="--cg";
-            shift 1;
-            ;;
-        *)
-            procflags="-x";
-            ;;
-    esac
-fi
-if test -r "$omorfiprefix".$tagset.hfstol ; then
-    cat $@ | hfst-proc -g "$omorfiprefix".$tagset.hfstol
-else
-    echo "Cannot find $omorfiprefix.$tagset.hfstol, falling back to $omorfiprefix.omor.hfstol"
-    cat $@ | hfst-proc -g "$omorfiprefix".omor.hfstol
-fi
+check_omorfi $verbose
+generate $@

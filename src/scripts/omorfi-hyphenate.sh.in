@@ -1,22 +1,64 @@
-#!/bin/sh
-omorfidir=@prefix@/share/hfst/fi_FI/
-omorfiprefix=$omorfidir/hyphenation
-if [ ! -d "$omorfidir" ] ; then
-    echo "omorfi not found in $omorfidir"
+#!/bin/bash
+omorfidir="@prefix@/share/hfst/fi/"
+omorfifile="$omorfidir/hyphenate.dict.hfst"
+args=$@
+
+function print_version() {
+    echo "omorfi-hyphenate 0.1"
+    echo "Copyright (c) 2012 Tommi A Pirinen"
+    echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
+    echo "This is free software: you are free to change and redistribute it."
+    echo "There is NO WARRANTY, to the extent permitted by law."
+
+}
+
+function print_usage() {
+    echo "Usage: $0 [OPTION] [FILENAME...]"
+}
+
+function print_help() {
+    echo "Hyphenates word-forms using omorfi as compound breaker"
+    echo
+    echo "  -h, --help      Print this help dialog"
+    echo "  -V, --version   Print version info"
+    echo "  -v, --verbose   Print verbosely while processing"
+    echo
+    echo "If no FILENAMEs are given, input is read from standard input."
+}
+
+
+function check_omorfi() {
+    if test ! -d "$omorfidir" ; then
+        echo omorfi not found in $omorfidir
+        exit 1
+    fi
+    if test ! -r "$omorfifile" ; then
+        echo hyphenator not found in $omorfifile
+        exit 1
+    fi
+    if test x$1 == xverbose ; then
+        echo using $omorfifile as hyphenator
+    fi
+}
+
+function hyphenate() {
+    cat $@ | hfst-lookup -x "$omorfifile"
+}
+
+if test x$1 == x-h -o x$1 == x--help ; then
+    print_usage
+    print_help
+    exit 0
+elif test x$1 == x-V -o x$1 == x--version ; then
+    print_version
+    exit 0
+elif test x$1 == x-v -o x$1 == x--verbose ; then
+    verbose=verbose
+    shift 1
+elif test ! -r $1 ; then
+    echo "Cannot read from $1"
+    print_usage
     exit 1
 fi
-if test "x$1" == "x--help" ; then
-    echo Usage: $0 [twol|dict [FILENAME]]
-    exit 0
-fi
-if [ $# -lt 1 ] ; then
-    hfst-lookup "$omorfiprefix".rule.hfst
-elif [ $# -lt 2 ] ; then
-    hfst-lookup "$omorfiprefix".$1.hfst
-else
-    if [ $# -gt 3 ] ; then
-        echo "Ignoring $3..., for multiple file hyphenation use cat"
-    fi
-    hfst-lookup "$omorfiprefix".$1.hfst < $2
-fi
-
+check_omorfi $verbose
+hyphenate $@

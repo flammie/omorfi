@@ -1,6 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
 bin_SCRIPTS=omorfi-analyse.sh omorfi-generate.sh \
-			omorfi-hyphenate.sh omorfi-spell.sh omorfi-suggest.sh \
+			omorfi-hyphenate.sh omorfi-spell.sh \
 			omorfi-interactive.sh
 
