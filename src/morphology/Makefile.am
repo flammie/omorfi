@@ -24,33 +24,35 @@ LEXICAL_SRCS=\
 			roots/adpositions.lexc \
 			roots/adverbs.lexc \
 			roots/conjunctions.lexc \
-			roots/digits.lexc \
-			roots/exceptions.lexc \
 			roots/interjections.lexc \
 			roots/nouns.lexc \
-			roots/numerals.lexc \
 			roots/particles.lexc \
 			roots/prefixes.lexc \
 			roots/suffixes.lexc \
-			roots/pronouns.lexc \
 			roots/proper-nouns.lexc \
+			roots/verbs.lexc
+NOTGENERATED_SRCS=\
+			roots/digits.lexc \
+			roots/exceptions.lexc \
+			roots/numerals.lexc \
+			roots/pronouns.lexc \
 			roots/punctuation.lexc \
-			roots/verbs.lexc \
 			roots/51.lexc
-LEXC_SRCS=$(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS)
-EXTRA_DIST=$(LEXC_MAIN) $(MORPHOLOGY_SRCS)
+
+LEXC_SRCS=$(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
+EXTRA_DIST=$(LEXC_MAIN) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
 
 LEXICAL_TARGETS=omorfi.lexc.hfst #guess-universal.lexc.hfst
 
 noinst_DATA=omorfi.lexc.hfst #guess-universal.lexc.hfst
 
 # lexical transducer
-omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS)
+omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NONGENERATED_SRCS)
 	$(HLEXC) -f foma -o $@.foma $^
 	$(HF2F) -f openfst -o $@ $@.foma
 	rm $@.foma
 
-omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS)
+omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NONGENERATED_SRCS)
 	cat $^ > combined.lexc
 	printf "read lexc combined.lexc\nsave stack $@" | foma
 

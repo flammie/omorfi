@@ -1,0 +1,219 @@
+! TODO: unimpl.
+! [[2-9]*100|100]?[[[2-9]*10|10][1-9]?]|[[1-9][2.-10.]]?[1-9]]
+! [[kaksi-yhdeksän]?[sataa]|sata]
+! [?[kaksi-yhdeksän]?[kymmentä]?|[kymmenen]
+LEXICON NUMERAL
+@U.NUMGEN.CARD@@C.ALLOW@	Cardinals	;
+@U.NUMGEN.ORD@	Ordinals	;
+    misc_multiples  ;
+
+LEXICON Cardinals
+@D.MULTIPLIER@@P.MULTIPLIER.TRUE@@P.ALLOW.SGfNOM@	CardinalMultipliers	;
+@D.AGREE.SGfNOM@@D.MULTIPLIER.YKSI@@C.MULTIPLIER@	CardinalMultiplicants	;
+@D.MULTIPLIER@@P.NEED.REST@	ApproximativeMultipliers	;
+@R.AGREE.SGfNOM@@R.MULTIPLIER.TRUE@@C.MULTIPLIER@@P.ALLOW.SGfPAR@	CardinalMultiplicants	;
+@R.MULTIPLIER@@C.MULTIPLIER@	CardinalInverseMultiplicants	;
+
+LEXICON CardinalMultipliers
+@P.MULTIPLIER.YKSI@yksi'][POS=NUMERAL][KTN=31][SUBCAT=CARD]:@P.MULTIPLIER.YKSI@y	kotus_31_NUMERAL/stemfiller	;
+kaksi'][POS=NUMERAL][KTN=31][SUBCAT=CARD]:ka	kotus_31_NUMERAL/stemfiller	;
+kolme'][POS=NUMERAL][KTN=7][SUBCAT=CARD]:kolme	kotus_8_NUMERAL/stemfiller	;
+neljä'][POS=NUMERAL][KTN=1%0][SUBCAT=CARD]:nelj	kotus_10_NUMERAL/stemfiller	;
+viisi'][POS=NUMERAL][KTN=27][SUBCAT=CARD]:vii	kotus_27_NUMERAL/stemfiller	;
+kuusi'][POS=NUMERAL][KTN=27][SUBCAT=CARD]:kuu	kotus_27_NUMERAL/stemfiller	;
+seitsemän'][POS=NUMERAL][KTN=1%0][SUBCAT=CARD]:seitsem	kotus_10n_NUMERAL/stemfiller	;
+seitsämän'][STY=NONSTANDARD][POS=NUMERAL][KTN=1%0][SUBCAT=CARD]:seitsäm	kotus_10n_NUMERAL/stemfiller	;
+kahdeksan'][POS=NUMERAL][KTN=1%0][SUBCAT=CARD]:kahdeks	kotus_10n_NUMERAL/stemfiller	;
+
+yhdeksän'][POS=NUMERAL][KTN=1%0][SUBCAT=CARD]:yhdeks	kotus_10n_NUMERAL/stemfiller	;
+pari'][POS=NUMERAL][KTN=5][SUBCAT=CARD]:par kotus_5i_NUMERAL/stemfiller ;
+
+LEXICON ApproximativeMultipliers
+@P.AGREE.SGfPAR@yksisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:yksisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kaksisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:kaksisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@yhtisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:yhtisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kahtisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:kahtisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kolmisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:kolmisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@nelisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:nelisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@viitisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:viitisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kuutisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:kuutisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@seitsemisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:seitsemisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@kahdeksisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:kahdeksisen{#}	CardinalMultiplicants	;
+@P.AGREE.SGfPAR@yhdeksisen'][POS=NUMERAL][SUBCAT=APPROX][BOUNDARY=COMPOUND]:yhdeksisen{#}	CardinalMultiplicants	;
+
+LEXICON CardinalMultiplicants
+kymmenen'][POS=NUMERAL][KTN=32][SUBCAT=CARD]:kymmen	kotus_32_NUMERAL/stemfiller	;
+sata'][POS=NUMERAL][KTN=9][KAV=F][SUBCAT=CARD]:sa{t~~}{F}	kotus_9_NUMERAL/stemfiller	;
+tuhat'][POS=NUMERAL][KTN=46][SUBCAT=CARD]:tuha	kotus_46_NUMERAL/stemfiller	;
+mi	ljoonat_ljardit	;
+bi	ljoonat_ljardit	;
+tri	ljoonat_ljardit	;
+kvadri	ljoonat_ljardit	;
+kvinti	ljoonat_ljardit	;
+seksti	ljoonat_ljardit	;
+okti	ljoonat_ljardit	;
+novi	ljoonat_ljardit	;
+undeki	ljoonat_ljardit	;
+duodeki	ljoonat_ljardit	;
+tredeki	ljoonat_ljardit	;
+kvattuordeki	ljoonat_ljardit	;
+kvindeki	ljoonat_ljardit	;
+sedeki	ljoonat_ljardit	;
+septendeki	ljoonat_ljardit	;
+oktodeki	ljoonat_ljardit	;
+novemdeki	ljoonat_ljardit	;
+vidingti	ljoonat_ljardit	;
+tridingti	ljoonat_ljardit	;
+senti	ljoonat_ljardit	;
+ki	ljoonat_ljardit	;
+pi	ljoonat_ljardit	;
+Googol'][POS=NUMERAL][KTN=5][SUBCAT=CARD]:Googol	kotus_5_NUMERAL/stemfiller	;
+Googolplex'][POS=NUMERAL][KTN=5][SUBCAT=CARD]:Googolplex	kotus_5_NUMERAL/stemfiller	;
+
+LEXICON CardinalInverseMultiplicants
+toista'][POS=NUMERAL]:toista	Ennd	;
+kolmatta'][POS=NUMERAL]:kolmatta	Ennd	;
+neljättä'][POS=NUMERAL]:neljättä	Ennd	;
+kuudetta'][POS=NUMERAL]:kuudetta	Ennd	;
+viidettä'][POS=NUMERAL]:viidettä	Ennd	;
+seitsemättä'][POS=NUMERAL]:seitsemättä	Ennd	;
+kahdeksatta'][POS=NUMERAL]:kahdeksatta	Ennd	;
+yhdeksättä'][POS=NUMERAL]:yhdeksättä	Ennd	;
+kymmenettä'][POS=NUMERAL]:kymmenettä	Ennd	;
+toista'][POS=NUMERAL]:toista	Ennd	;
+kolmatta'][POS=NUMERAL]:kolmatta	Ennd	;
+neljättä'][POS=NUMERAL]:neljättä	Ennd	;
+kuudetta'][POS=NUMERAL]:kuudetta	Ennd	;
+viidettä'][POS=NUMERAL]:viidettä	Ennd	;
+seitsemättä'][POS=NUMERAL]:seitsemättä	Ennd	;
+kahdeksatta'][POS=NUMERAL]:kahdeksatta	Ennd	;
+yhdeksättä'][POS=NUMERAL]:yhdeksättä	Ennd	;
+kymmenettä'][POS=NUMERAL]:kymmenettä	Ennd	;
+
+LEXICON ljoonat_ljardit
+ljoona'][POS=NUMERAL][KTN=1%0][SUBCAT=CARD]:ljoon	kotus_10_NUMERAL/stemfiller	;
+ljardi'][POS=NUMERAL][KTN=5][SUBCAT=CARD]:ljard	kotus_5i_NUMERAL/stemfiller	;
+
+LEXICON Ordinals
+@D.MULTIPLIER@@P.MULTIPLIER.TRUE@	OrdinalMultipliers	;
+@C.MULTIPLIER@	OrdinalMultiplicants	;
+@R.MULTIPLIER@@C.MULTIPLIER@	OrdinalInverseMultiplicants	;
+
+
+LEXICON OrdinalMultipliers
+ensimmäinen'][POS=NUMERAL][KTN=38][SUBCAT=ORD]:ensimmäi	kotus_38_NUMERAL/stemfiller	;
+yhdes'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:yhde	kotus_45_NUMERAL/stemfiller	;
+toinen'][POS=NUMERAL][KTN=38][SUBCAT=ORD]:toi	kotus_38_NUMERAL/stemfiller	;
+kahdes'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:kahde	kotus_45_NUMERAL/stemfiller	;
+kolmas'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:kolma	kotus_45_NUMERAL/stemfiller	;
+neljäs'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:neljä	kotus_45_NUMERAL/stemfiller	;
+viides'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:viide	kotus_45_NUMERAL/stemfiller	;
+kuudes'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:kuude	kotus_45_NUMERAL/stemfiller	;
+seitsemäs'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:seitsemä	kotus_45_NUMERAL/stemfiller	;
+kahdeksas'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:kahdeksa	kotus_45_NUMERAL/stemfiller	;
+yhdeksäs'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:yhdeksä	kotus_45_NUMERAL/stemfiller	;
+
+LEXICON OrdinalMultiplicants
+kymmenes'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:kymmene	kotus_45_NUMERAL/stemfiller	;
+sadas'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:sada	kotus_45_NUMERAL/stemfiller	;
+tuhannes'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:tuhanne	kotus_45_NUMERAL/stemfiller	;
+mi	ljoonannet_ljardinnet	;
+bi	ljoonannet_ljardinnet	;
+tri	ljoonannet_ljardinnet	;
+kvadri	ljoonannet_ljardinnet	;
+kvinti	ljoonannet_ljardinnet	;
+seksti	ljoonannet_ljardinnet	;
+okti	ljoonannet_ljardinnet	;
+novi	ljoonannet_ljardinnet	;
+undeki	ljoonannet_ljardinnet	;
+duodeki	ljoonannet_ljardinnet	;
+tredeki	ljoonannet_ljardinnet	;
+kvattuordeki	ljoonannet_ljardinnet	;
+kvindeki	ljoonannet_ljardinnet	;
+sedeki	ljoonannet_ljardinnet	;
+septendeki	ljoonannet_ljardinnet	;
+oktodeki	ljoonannet_ljardinnet	;
+novemdeki	ljoonannet_ljardinnet	;
+vidingti	ljoonannet_ljardinnet	;
+tridingti	ljoonannet_ljardinnet	;
+senti	ljoonannet_ljardinnet	;
+ki	ljoonannet_ljardinnet	;
+pi	ljoonannet_ljardinnet	;
+
+LEXICON OrdinalInverseMultiplicants
+toista'][POS=NUMERAL]:toista	Ennd	;
+kolmatta'][POS=NUMERAL]:kolmatta	Ennd	;
+neljättä'][POS=NUMERAL]:neljättä	Ennd	;
+kuudetta'][POS=NUMERAL]:kuudetta	Ennd	;
+viidettä'][POS=NUMERAL]:viidettä	Ennd	;
+seitsemättä'][POS=NUMERAL]:seitsemättä	Ennd	;
+kahdeksatta'][POS=NUMERAL]:kahdeksatta	Ennd	;
+yhdeksättä'][POS=NUMERAL]:yhdeksättä	Ennd	;
+kymmenettä'][POS=NUMERAL]:kymmenettä	Ennd	;
+toista'][POS=NUMERAL]:toista	Ennd	;
+kolmatta'][POS=NUMERAL]:kolmatta	Ennd	;
+neljättä'][POS=NUMERAL]:neljättä	Ennd	;
+kuudetta'][POS=NUMERAL]:kuudetta	Ennd	;
+viidettä'][POS=NUMERAL]:viidettä	Ennd	;
+seitsemättä'][POS=NUMERAL]:seitsemättä	Ennd	;
+kahdeksatta'][POS=NUMERAL]:kahdeksatta	Ennd	;
+yhdeksättä'][POS=NUMERAL]:yhdeksättä	Ennd	;
+kymmenettä'][POS=NUMERAL]:kymmenettä	Ennd	;
+
+LEXICON ljoonannet_ljardinnet
+ljoona'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:ljoona	kotus_45_NUMERAL/stemfiller	;
+ljardi'][POS=NUMERAL][KTN=45][SUBCAT=ORD]:ljardi	kotus_45_NUMERAL/stemfiller	;
+LEXICON misc_multiples
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=ABE]:puolitta{#}kymmenittä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=ABL]:puolilta{#}kymmeniltä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=ADE]:puolilla{#}kymmenillä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=ALL]:puolille{#}kymmenille Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=ELA]:puolista{#}kymmenistä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=ESS]:puolina{#}kymmeninä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:puolien{#}kymmenien   Clitic/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:puolten{#}kymmenien   Clitic/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=INE]:puolissa{#}kymmenissä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=NOM]:puolet{#}kymmenet  Clitic/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=PAR]:puolia{#}kymmeniä     Possessive/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:puoliksi{#}kymmenikse Possessive/Obligatory ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:puoliksi{#}kymmeniksi Clitic/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=ABE]:puoletta{#}kymmennettä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=ABL]:puolelta{#}kymmenneltä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=ADE]:puolella{#}kymmennellä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=ALL]:puolelle{#}kymmennelle Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=ELA]:puolesta{#}kymmennestä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=ESS]:puolena{#}kymmennenä   Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=GEN]:puolen{#}kymmennen Clitic/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=INE]:puolessa{#}kymmennessä Possessive/Optional+Vn ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:puoli{#}kymmentä Clitic/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:puoli{#}kymmentä Possessive/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=PAR]:puolta{#}kymmentä    Possessive/Optional ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:puoliksi{#}kymmennekse Possessive/Obligatory ;
+puoli'|'kymmentä'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:puoliksi{#}kymmenneksi Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=ABE]:puolitta{#}sadoitta Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=ABL]:puolilta{#}sadoilta Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=ADE]:puolilla{#}sadoilla Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=ALL]:puolille{#}sadoille Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=ELA]:puolista{#}sadoista Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=ESS]:puolina{#}satoina Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:puolien{#}satojen   Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:puolten{#}satojen   Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=INE]:puolissa{#}sadoissa Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=NOM]:puolet{#}sadat Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=PAR]:puolia{#}satoja    Possessive/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:puoliksi{#}sadoikse Possessive/Obligatory ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:puoliksi{#}sadoiksi Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=ABE]:puoletta{#}sadatta Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=ABL]:puolelta{#}sadalta Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=ADE]:puolella{#}sadalla Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=ALL]:puolelle{#}sadalle Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=ELA]:puolesta{#}sadasta Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=ESS]:puolena{#}satana   Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=GEN]:puolen{#}sadan Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=INE]:puolessa{#}sadassa Possessive/Optional+Vn ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:puoli{#}sataa Clitic/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:puoli{#}sataa Possessive/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=PAR]:puolta{#}sataa  Possessive/Optional ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:puoliksi{#}sadakse Possessive/Obligatory ;
+puoli'|'sataa'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:puoliksi{#}sadaksi Clitic/Optional ;
+

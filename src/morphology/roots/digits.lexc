@@ -1,0 +1,56 @@
+! Supplementary for digit expressions in Finnish
+! Inflection and compounding is possible for digit strings
+
+LEXICON Digits
+	IntegerDigits/InitialLoop	;
+	RomanOrdinals	;
+
+! Full integers with inflections
+LEXICON IntegerDigits/InitialLoop
+< [%0|1|2|3|4|5|6|7|8|9]* >	IntegerDigits/Final	;
+< [%0]+ >	IntegerDigits/0	;
+
+LEXICON IntegerDigits/Final
+1:1{^y}{^i}	IntegerDigits/1	;
+2:2{^a}{^i}	IntegerDigits/2	;
+3:3{^o}{^e}	IntegerDigits/3	;
+4:4{^ä}	IntegerDigits/4	;
+5:5{^i}	IntegerDigits/5	;
+6:6{^u}{^i}	IntegerDigits/6	;
+7:7{^ä}	IntegerDigits/7	;
+8:8{^a}	IntegerDigits/8	;
+9:9{^ä}	IntegerDigits/9	;
+1%0:1%0{^y}{^e}	IntegerDigits/10	;
+< [2|3|4|5|6|7|8|9] %0 0:%{%^ä%} >	IntegerDigits/10	;
+< [1|2|3|4|5|6|7|8|9] %0 %0 0:%{%^a%} >	IntegerDigits/100	;
+< [1|2|3|4|5|6|7|8|9] %0 %0 %0 0:%{%^a%} >	IntegerDigits/1000	;
+< [1|2|3|4|5|6|7|8|9] [%0 %0 %0 %0 %0 %0]+ 0:%{%^a%} >	IntegerDigits/10e6n	;
+< [1|2|3|4|5|6|7|8|9] %0 %0 %0 [ %0 %0 %0 %0 %0 %0]+ 0:%{%^a%} >	IntegerDigits/10e9+6n	;
+½:½{^o}{^i}	IntegerDigits/½	;
+¾:¾{^o}{^a}	IntegerDigits/¾	;
+¼:¼{^o}{^a}	IntegerDigits/¼	;
+
+! Decimal part of digit with inflection
+LEXICON DecimalDigits
+	DecimalDigits/InitialLoop	;
+
+LEXICON DecimalDigits/InitialLoop
+< [%0|1|2|3|4|5|6|7|8|9]* >	DecimalDigits/Final	;
+
+LEXICON DecimalDigits/Final
+%0:%0{^a}	DecimalDigits/0	;
+1:1{^y}{^i}	DecimalDigits/1	;
+2:2{^a}{^i}	DecimalDigits/2	;
+3:3{^o}{^e}	DecimalDigits/3	;
+4:4{^ä}	DecimalDigits/4	;
+5:5{^i}	DecimalDigits/5	;
+6:6{^u}{^i}	DecimalDigits/6	;
+7:7{^ä}	DecimalDigits/7	;
+8:8{^a}	DecimalDigits/8	;
+9:9{^ä}	DecimalDigits/9	;
+
+! Roman numerals with inflection
+LEXICON RomanOrdinals
+< [(M) (M) (M) (M) (C M | D (C) (C) (C) | C D | (C) (C) C) (X C | L (X) (X) (X) | X L | (X) (X) X) (I X | V (I) (I) (I) | I V | I I I )] - 0 >	RomanOrdinal/45	;
+< [(M) (M) (M) (M) (C M | D (C) (C) (C) | C D | (C) (C) C) (X C | L (X) (X) (X) | X L | (X) (X) X) (I) I] - 0 >	RomanOrdinal/38	;
+
