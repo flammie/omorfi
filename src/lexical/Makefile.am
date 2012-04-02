@@ -8,8 +8,14 @@ JOINS=attributes/boundaries.csv attributes/broken-paradigms.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
 	  attributes/usage.csv
 SCIRPTS=csv2lexc.py csvjoin.py
-
-EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS)
+FINNISC=\
+		format_output.py \
+		gradation.py \
+		lexc_string_utils.py \
+		parse_csv_data.py \
+		plurale_tantum.py \
+		stub.py
+EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC)
 
 noinst_DATA=omor.timestamp
 
@@ -19,13 +25,19 @@ lexemes.csv: $(LEXEMES)
 	cat $^ | sort | uniq >> $@
 
 master.csv: lexemes.csv $(JOINS)
-	./csvjoin.py -v -i lexemes.csv -j attributes/boundaries.csv \
-		-j attributes/broken-paradigms.csv \
-		-j attributes/plurale-tantum.csv -j attributes/possessives.csv \
-		-j attributes/pronunciation.csv -j attributes/proper-classes.csv \
-		-j attributes/usage.csv -o $@
+	$(srcdir)/csvjoin.py -v -i lexemes.csv \
+		-j $(srcdir)/attributes/boundaries.csv \
+		-j $(srcdir)/attributes/broken-paradigms.csv \
+		-j $(srcdir)/attributes/plurale-tantum.csv \
+		-j $(srcdir)/attributes/possessives.csv \
+		-j $(srcdir)/attributes/pronunciation.csv \
+		-j $(srcdir)/attributes/proper-classes.csv \
+		-j $(srcdir)/attributes/usage.csv -o $@
 
 omor.timestamp: master.csv
-	./csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
+	if test ! -d $(top_builddir)/src/morphology/roots ; then \
+		mkdir -p $(top_builddir)/src/morphology/roots ; \
+	fi
+	$(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
 	touch $@
 
