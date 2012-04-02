@@ -153,6 +153,7 @@ speller.zhfst: dictionary.default.hfst spell-checking/error.edit-distance-2.hfst
 	cp -f dictionary.default.hfst acceptor.default.hfst
 	cp -f spell-checking/error.edit-distance-2.hfst errmodel.default.hfst
 	$(ZIP) -v -9 $@ index.xml acceptor.default.hfst errmodel.default.hfst
+	-rm -f acceptor.default.hfst errmodel.default.hfst
 
 
 clean-local:

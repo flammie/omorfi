@@ -47,15 +47,14 @@ LEXICAL_TARGETS=omorfi.lexc.hfst #guess-universal.lexc.hfst
 noinst_DATA=omorfi.lexc.hfst #guess-universal.lexc.hfst
 
 # lexical transducer
-omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NONGENERATED_SRCS)
+omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
 	$(HLEXC) -f foma -o $@.foma $^
 	$(HF2F) -f openfst -o $@ $@.foma
 	rm $@.foma
 
-omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NONGENERATED_SRCS)
+omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
 	cat $^ > combined.lexc
 	printf "read lexc combined.lexc\nsave stack $@" | foma
 
 clean-local:
-	-rm -f *.hfst *.ol
-
+	-rm -f *.hfst *.ol $(LEXICAL_SRCS)

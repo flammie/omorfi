@@ -41,3 +41,5 @@ omor.timestamp: master.csv
 	$(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
 	touch $@
 
+clean-local:
+	-rm -f omor.timestamp master.csv lexemes.csv
