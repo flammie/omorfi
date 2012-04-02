@@ -3,7 +3,17 @@
 ======
 
 This file lists noteworthy changes between releases, for full list of changes, 
-see ChangeLog.
+see git log and then ``ChangeLog.old``.
+
+Significant changes in 20120401
+-------------------------------
+
+* Fixed some twol rules w.r.t. new features that blocked compiling
+* Removed lots of dead code
+* Autogenerate lexicons from csv data all the time
+* Moved to git and googlecode -> chopped most of the documentation and such
+* Fixed scripts a bit, added man pages
+* Made very crude tests to have at least something back in.
 
 Significant changes in 20110505
 -------------------------------
@@ -81,3 +91,4 @@ Significant changes since 0.5
 
 * towards full-scale automatic test suite
 
+.. vim: set ft=rst:
