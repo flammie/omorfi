@@ -4,7 +4,7 @@
 AC_PREREQ(2.64)
 AC_INIT([omorfi],[20120401],[tommi.pirinen@helsinki.fi], [http://home.gna.org/omorfi])
 AC_CONFIG_AUX_DIR([config-aux])
-AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign dist-xz])
+AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign dist-xz color-tests])
 AC_REVISION([$Revision: 487 $])
 
 PACKAGE=omorfi
