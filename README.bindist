@@ -1,0 +1,28 @@
+========================
+ Omorfi binary packages
+========================
+
+Omorfi is open source implementation of Finnish morphology. It's licenced under
+GNU GPL. The binary packages of omorfi contain only some of the transducers and
+documentation of open source morphology for Finnish language. If you need to
+modify or customize them you must compile from source code packages or version
+control system instead. Binary packages are not released as often as morphology
+is updated.
+
+For full documentation see also README and ``doc/`` directory.
+
+Installation
+------------
+
+Transducers and documentation of binary packages can be copied anywhere. Some
+hfst-related programs may automatically search default installation locations,
+such as ``$prefix/share/omorfi/`` or ``$prefix/share/hfst/fi-FI/``.
+
+Usage
+-----
+
+The most typical way to use the transducers is via command line utilities,
+such as ``hfst-optimized-lookup`` or ``hfst-lookup``. You may also access them
+using the HFST library, or the HFST optimized lookup library.
+
+.. vim: set ft=rst:
