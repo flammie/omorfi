@@ -5,7 +5,6 @@ HFST_FLAGS=--verbose
 suggestion_SRCS=\
 				edit-distance-0.text \
 				edit-distance-1.text \
-				simple-edit-distance-1.text \
 				edit-distance-infinity.text
 suggestion_TARGETS=error.edit-distance-0.hfst\
 				   error.edit-distance-1.hfst error.edit-distance-2.hfst \

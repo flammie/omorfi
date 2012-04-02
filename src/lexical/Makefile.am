@@ -7,9 +7,9 @@ JOINS=attributes/boundaries.csv attributes/broken-paradigms.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
 	  attributes/usage.csv
-SCIRPTS=csv2lexc.py csvjoin.py regenerate-lexicons.sh
+SCIRPTS=csv2lexc.py csvjoin.py
 
-EXTRA_DIST=$(XML_SRCS) $(LEXICAL_SRCS) $(SCIRPTS)
+EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS)
 
 noinst_DATA=omor.timestamp
 
