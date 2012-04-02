@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
 
-TESTS=rough-tests.sh
+TESTS=rough-tests.sh scripts-runnable.sh
 
-EXTRA_DIST=rough-tests.sh wordforms.list
+EXTRA_DIST=rough-tests.sh scripts-runnable.sh wordforms.list
