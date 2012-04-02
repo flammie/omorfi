@@ -2,4 +2,4 @@
 
 TESTS=rough-tests.sh
 
-EXTRA_DIST=rough-tests.sh
+EXTRA_DIST=rough-tests.sh wordforms.list
