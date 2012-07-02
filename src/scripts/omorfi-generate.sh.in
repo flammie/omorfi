@@ -1,6 +1,6 @@
 #!/bin/bash
 omorfidir="@prefix@/share/hfst/fi/"
-omorfifile="$omorfidir/generate.omor.hfst"
+omorfifile="$omorfidir/generation.omor.hfst"
 args=$@
 
 function print_version() {
