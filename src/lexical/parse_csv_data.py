@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from lexc_string_utils import replace_rightmost
+from sys import stderr
 
 def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['lexicon'] = ''
@@ -9,7 +10,11 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['lemma'] = csv_parts[0].strip('"')
     wordmap['stub'] = wordmap['lemma']
     # second field is KOTUS paradigm class
-    wordmap['kotus_tn'] = int(csv_parts[1].strip('"'))
+    try:
+        wordmap['kotus_tn'] = int(csv_parts[1].strip('"'))
+    except ValueError:
+        print("Confusing paradigm on", csv_parts, "Retarding to 99", file=stderr)
+        wordmap['kotus_tn'] = 99
     wordmap['analysis_tn'] = int(wordmap['kotus_tn'])
     if wordmap['kotus_tn'] < 1 or (wordmap['kotus_tn'] > 78 and wordmap['kotus_tn'] < 99):
         print("Bad paradigm", csv_parts[1], "in", csv_parts, file=stderr)
@@ -110,9 +115,8 @@ def parse_extras_from_csv(wordmap, csv_parts):
             elif extra_fields[0] == '"boundaries':
                 wordmap['stub'] = extra_fields[1].strip('"').replace("|", "{#}").replace("_", "{_}").replace(" ", " {#}")
                 wordmap['lemma'] = extra_fields[1].strip('"').replace("|", "'|'").replace("_", "'_'")
-                
             else:
-                print >> stderru8, "Unrecognised extra field %s in CSV" %(csv_extra)
+                print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     return wordmap
 
 def parse_conts(wordmap):
