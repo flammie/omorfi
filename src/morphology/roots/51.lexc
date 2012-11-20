@@ -2266,7 +2266,7 @@ vanha'|'poika'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:vanha{#}poika Clitic/Optiona
 vanha'|'poika'][POS=NOUN][KTN=51][NUM=SG][CASE=PAR]:vanhaa{#}poikaa Possessive/Optional+Vn ;
 vanha'|'poika'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:vanhaksi{#}pojakse Possessive/Obligatory+Vn ;
 vanha'|'poika'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:vanhaksi{#}pojaksi Clitic/Optional ;
-vieras'|'mies'][POS=NOUN][KTN=51][CASE=CMT]:vieraine{#}meihine Possessive/Optional+Vn ;
+vieras'|'mies'][POS=NOUN][KTN=51][CASE=CMT]:vieraine{#}miehine Possessive/Optional+Vn ;
 vieras'|'mies'][POS=NOUN][KTN=51][NUM=PL][CASE=ABE]:vieraitta{#}miehittä Possessive/Optional+Vn ;
 vieras'|'mies'][POS=NOUN][KTN=51][NUM=PL][CASE=ABL]:vierailta{#}miehiltä Possessive/Optional+Vn ;
 vieras'|'mies'][POS=NOUN][KTN=51][NUM=PL][CASE=ADE]:vierailla{#}miehillä Possessive/Optional+Vn ;
