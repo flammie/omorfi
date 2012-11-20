@@ -7,6 +7,32 @@
 ! |FIXME some are still missing|
 
 LEXICON 51
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ABE]:Alasitta{#}päittä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ABL]:Alasilta{#}päiltä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ADE]:Alasilla{#}päillä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ALL]:Alasille{#}päille Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ELA]:Alasista{#}päistä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ESS]:Alasina{#}päinä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:Alasien{#}päiden   Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:Alasten{#}päiden   Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:Alasten{#}päitten   Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=INE]:Alasissa{#}päissä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=NOM]:Alaset{#}päät Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=PAR]:Alasia{#}päitä    Possessive/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:Alasiksi{#}päikse Possessive/Obligatory ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:Alasiksi{#}päiksi Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ABE]:Alasetta{#}päättä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ABL]:Alaselta{#}päältä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ADE]:Alasella{#}päällä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ALL]:Alaselle{#}päälle Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ELA]:Alasesta{#}päästä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ESS]:Alasena{#}päänä   Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=GEN]:Alasen{#}pään Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=INE]:Alasessa{#}päässä Possessive/Optional+Vn ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:Alanen{#}pää Clitic/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=PAR]:Alasta{#}päätä  Possessive/Optional ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:Alaseksi{#}pääkse Possessive/Obligatory ;
+Alanen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:Alaseksi{#}pääksi Clitic/Optional ;
 Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][CASE=CMT]:Isoine-Britannioine  Possessive/Optional+Vn ;
 Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][NUM=PL][CASE=ABE]:Isoitta-Britannioitta  Possessive/Optional+Vn ;
 Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][NUM=PL][CASE=ABL]:Isoilta-Britannioilta  Possessive/Optional+Vn ;
@@ -35,6 +61,32 @@ Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][NUM=SG][CASE=NOM]:Iso-Britannia
 Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][NUM=SG][CASE=PAR]:Isoa-Britanniaa  Possessive/Optional ;
 Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][NUM=SG][CASE=TRA]:Isoksi-Britanniakse  Possessive/Obligatory+Vn ;
 Iso-Britannia'][POS=NOUN][SUBCAT=PROPER][KTN=51][NUM=SG][CASE=TRA]:Isoksi-Britanniaksi  Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ABE]:Ylisittä{#}päittä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ABL]:Ylisiltä{#}päiltä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ADE]:Ylisillä{#}päillä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ALL]:Ylisille{#}päille Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ELA]:Ylisistä{#}päistä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=ESS]:Ylisinä{#}päinä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:Ylisien{#}päiden   Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:Ylisten{#}päiden   Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=GEN]:Ylisten{#}päitten   Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=INE]:Ylisissä{#}päissä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=NOM]:Yliset{#}päät Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=PAR]:Ylisiä{#}päitä    Possessive/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:Ylisiksi{#}päikse Possessive/Obligatory ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=PL][CASE=TRA]:Ylisiksi{#}päiksi Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ABE]:Ylisettä{#}päättä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ABL]:Yliseltä{#}päältä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ADE]:Ylisellä{#}päällä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ALL]:Yliselle{#}päälle Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ELA]:Ylisestä{#}päästä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=ESS]:Ylisenä{#}päänä   Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=GEN]:Ylisen{#}pään Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=INE]:Ylisessä{#}päässä Possessive/Optional+Vn ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=NOM]:Ylinen{#}pää Clitic/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=PAR]:Ylistä{#}päätä  Possessive/Optional ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:Yliseksi{#}pääkse Possessive/Obligatory ;
+Ylinen'|'pää'][POS=NOUN][KTN=51][NUM=SG][CASE=TRA]:Yliseksi{#}pääksi Clitic/Optional ;
 
 aava'|'meri'][POS=NOUN][KTN=51][CASE=CMT]:aavoine{#}merine Possessive/Optional+Vn ;
 aava'|'meri'][POS=NOUN][KTN=51][NUM=PL][CASE=ABE]:aavoitta{#}merittä Possessive/Optional+Vn ;
