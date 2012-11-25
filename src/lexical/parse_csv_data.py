@@ -40,7 +40,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
         wordmap['lexicon'] = 'Particles'
         wordmap['continuation'] = 'Particle+Clitic/Optional'
     elif wordmap['pos'] == 'Prop':
-        wordmap['pos'] = 'PROPER'
+        wordmap['pos'] = 'NOUN'
     elif wordmap['pos'] == 'Adv':
         wordmap['pos'] = 'ADVERB'
         wordmap['lexicon'] = 'Adverbs'
@@ -150,8 +150,6 @@ def finetune_conts(wordmap):
     if wordmap['kotus_tn'] < 99 or wordmap['kotus_tn'] > 1000:
         wordmap['continuation'] += '_' + wordmap['pos']
         wordmap['lexicon'] += '_' + wordmap['pos']
-        if wordmap['proper_noun_class']:
-            wordmap['continuation'] += '_' + wordmap['proper_noun_class']
         wordmap['lexicon'] += '/stub'
         wordmap['continuation'] += '/stemfiller'
     elif wordmap['pos'] == "ACRONYM":
