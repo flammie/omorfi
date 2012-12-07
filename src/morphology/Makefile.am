@@ -6,12 +6,9 @@ MORPHOLOGY_SRCS=\
 				pos.lexc \
 				compounding/compounding.lexc \
 				stemparts/adjectives.lexc \
-				stemparts/digits.lexc \
 				stemparts/nouns.lexc \
 				stemparts/numerals.lexc \
-				stemparts/proper-nouns.lexc \
 				stemparts/verbs.lexc \
-				inflection/acronyms.lexc \
 				inflection/adjectives.lexc \
 				inflection/commons.lexc \
 				inflection/digits.lexc \
@@ -19,7 +16,6 @@ MORPHOLOGY_SRCS=\
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
 			roots/abbreviations.lexc \
-			roots/acronyms.lexc \
 			roots/adjectives.lexc \
 			roots/adpositions.lexc \
 			roots/adverbs.lexc \
@@ -32,7 +28,6 @@ LEXICAL_SRCS=\
 			roots/proper-nouns.lexc \
 			roots/verbs.lexc
 NOTGENERATED_SRCS=\
-			roots/digits.lexc \
 			roots/exceptions.lexc \
 			roots/numerals.lexc \
 			roots/pronouns.lexc \
