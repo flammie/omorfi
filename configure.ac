@@ -131,9 +131,6 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HMIN], [hfst-minimize], [no])
        AS_IF([test "x$HMIN" = "xno"],
              [AC_MSG_ERROR([hfst-minimize is needed])])
-       AC_PATH_PROG([HRME], [hfst-preprocess-for-optimized-lookup-format], [no])
-       AS_IF([test "x$HRME" = "xno"],
-             [AC_MSG_ERROR([hfst-remove-epsilons is needed for fast lookup transducers])])
        AC_PATH_PROG([HF2F], [hfst-fst2fst], [no])
        AS_IF([test "x$HF2F" = "xno"],
              [AC_MSG_ERROR([hfst-fsts2fst is needed for optimized automata])])
