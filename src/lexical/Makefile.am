@@ -26,7 +26,7 @@ lexemes.csv: $(LEXEMES)
 	cat $^ | sort | uniq >> $@
 
 master.csv: lexemes.csv $(JOINS)
-	$(srcdir)/csvjoin.py -v -i lexemes.csv \
+	$(PYTHON) $(srcdir)/csvjoin.py -v -i lexemes.csv \
 		-j $(srcdir)/attributes/boundaries.csv \
 		-j $(srcdir)/attributes/broken-paradigms.csv \
 		-j $(srcdir)/attributes/plurale-tantum.csv \
@@ -39,7 +39,7 @@ omor.timestamp: master.csv
 	if test ! -d $(top_builddir)/src/morphology/roots ; then \
 		mkdir -p $(top_builddir)/src/morphology/roots ; \
 	fi
-	$(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
+	$(PYTHON) $(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
 	touch $@
 
 clean-local:
