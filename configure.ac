@@ -180,7 +180,6 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HIC], $with_hfst/hfst-compose-intersect)
     AC_SUBST([HINV], $with_hfst/hfst-invert)
     AC_SUBST([HU2W], $with_hfst/hfst-unweighted2weighted)
-    AC_SUBST([HRME], $with_hfst/hfst-preprocess-for-optimized-lookup-format)
     AC_SUBST([HF2F], $with_hfst/hfst-fst2fst)
     AC_SUBST([HPR], $with_hfst/hfst-project)
     AC_SUBST([HRUNR], $with_hfst/hfst-lookup)
