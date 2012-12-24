@@ -6,6 +6,7 @@ MORPHOLOGY_SRCS=\
 				pos.lexc \
 				compounding/compounding.lexc \
 				stemparts/adjectives.lexc \
+				stemparts/digits.lexc \
 				stemparts/nouns.lexc \
 				stemparts/numerals.lexc \
 				stemparts/verbs.lexc \
@@ -29,6 +30,7 @@ LEXICAL_SRCS=\
 			roots/verbs.lexc
 NOTGENERATED_SRCS=\
 			roots/exceptions.lexc \
+			roots/digits.lexc \
 			roots/numerals.lexc \
 			roots/pronouns.lexc \
 			roots/punctuation.lexc \
