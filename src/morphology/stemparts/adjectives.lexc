@@ -168,10 +168,20 @@ LEXICON kotus_41_ADJECTIVE/stemfiller
 0:{AV+}{aeiouyäö}	AdjectiveStem/Comparative	;
 0:{AV+}	AdjectiveStem/Superlative	;
 
+LEXICON kotus_42_ADJECTIVE/stemfiller
+[CMP=POS]:0 kotus_42_NOUN/stemfiller    ;
+0:he    AdjectiveStem/Comparative   ;
+0:h     AdjectiveStem/Superlative   ;
+
 LEXICON kotus_43_ADJECTIVE/stemfiller
 [CMP=POS]:0	kotus_43_NOUN/stemfiller	;
 0:e	AdjectiveStem/Comparative	;
 	AdjectiveStem/Superlative	;
+
+LEXICON kotus_44_ADJECTIVE/stemfiller
+[CMP=POS]:0 kotus_44_NOUN/stemfiller    ;
+0:{aeiouyäö}    AdjectiveStem/Comparative   ;
+0   AdjectiveStem/Superlative   ;
 
 LEXICON kotus_47_ADJECTIVE/stemfiller
 [CMP=POS]:0	kotus_47_NOUN/stemfiller	;

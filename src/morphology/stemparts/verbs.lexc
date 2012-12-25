@@ -82,6 +82,19 @@ LEXICON kotus_54K_VERB/stemfiller
 0:{t~~}et{K}	VerbStem/Passive	;
 0:{t~~}et{K}	VerbAllomorph/NUTPassiveParticiple/C	;
 
+LEXICON kotus_55_VERB/stemfiller
+0:t{aä}	VerbStem/AInfinitive	;
+0:t{aä}	VerbStem/EInfinitive	;
+0:t{aä}	VerbStem/Present	;
+0:s	VerbStem/Past	;
+0:t	VerbStem/Past	;
+0:t{aä}	VerbStem/Potential	;
+0:t{aä}	VerbStem/Imperative	;
+0:t{aä}	VerbStem/Conditional	;
+0:tet	VerbStem/ParticiplePassive	;
+0:tet	VerbStem/Passive	;
+0:tet	VerbAllomorph/NUTPassiveParticiple/C	;
+
 LEXICON kotus_55F_VERB/stemfiller
 0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
 0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
