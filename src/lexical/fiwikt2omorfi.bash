@@ -87,5 +87,6 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
     tr '|' ',' |\
     sed -re 's/([[:digit:]]+)-([[:upper:]])/\1,\2/' |\
     gawk -F , 'NF == 3 {printf("\"%s\",\"%s\",\"0\",\"%s\"\n", $1, $2, $3);} NF == 4 {printf("\"%s\",\"%s\",\"%s\",\"%s\"\n", $1, $2, $3, $4);}' |\
-    sed -e 's/Substantiivi/N/' -e 's/Adjektiivi/A/' -e 's/Numeraali/Num/'\
-        -e 's/Verbi/V/' -e 's/Erisnimi/Prop/' -e 's/Pronomini/Pron/' 
+    sed -e 's/Substantiivi/N/' -e 's/Adjektiivi/A/' -e 's/Numeraali/Num/' \
+        -e 's/Verbi/V/' -e 's/Erisnimi/Prop/' -e 's/Pronomini/Pron/' \
+        -e 's/Adverbi/Adv/' 

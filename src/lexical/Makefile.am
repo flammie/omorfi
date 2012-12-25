@@ -3,7 +3,7 @@
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 LEXEMES=lexemes/fiwn.csv lexemes/joukahainen.csv lexemes/nss.csv \
 		lexemes/omorfi.csv lexemes/pronouns.csv lexemes/visk.csv \
-		lexemes/propers-unihu-proj.csv
+		lexemes/propers-unihu-proj.csv lexemes/fiwikt.csv
 JOINS=attributes/boundaries.csv attributes/broken-paradigms.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
