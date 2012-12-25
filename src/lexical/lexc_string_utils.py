@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from sys import stderr
 
 # misc functions
 def replace_rightmost(s, needle, repl):
