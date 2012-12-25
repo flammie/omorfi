@@ -90,15 +90,27 @@ def stub_all(wordmap):
     elif tn in [53, 56, 77]:
         wordmap['stub'] = wordmap['stub'][:-2]
     elif tn == 54:
-        wordmap['stub'] = wordmap['stub'][:-7]
+        if wordmap['kotus_av']:
+            wordmap['stub'] = wordmap['stub'][:-7]
+        else:
+            wordmap['stub'] = wordmap['stub'][:-3]
     elif tn in [55, 57, 76]:
-        wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
+        if wordmap['kotus_av']:
+            wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
+        else:
+            wordmap['stub'] = wordmap['stub'][:-3]
     elif tn == 58:
         wordmap['stub'] = wordmap['stub'][:-2]
     elif tn == 59:
-        wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
+        if wordmap['kotus_av']:
+            wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
+        else:
+            wordmap['stub'] = wordmap['stub'][:-3]
     elif tn == 60:
-        wordmap['stub'] = wordmap['stub'][:-8] # 4 + gradation mark
+        if wordmap['kotus_av']:
+            wordmap['stub'] = wordmap['stub'][:-8] # 4 + gradation mark
+        else:
+            wordmap['stub'] = wordmap['stub'][:-4]
     elif tn == 61:
         wordmap['stub'] = wordmap['stub'][:-2]
     elif tn in [62, 68]:
