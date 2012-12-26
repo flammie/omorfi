@@ -2,13 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi],[20120401],[tommi.pirinen@helsinki.fi], [http://home.gna.org/omorfi])
+AC_INIT([omorfi],[20121226],[tommi.pirinen@helsinki.fi], [http://home.gna.org/omorfi])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign dist-xz color-tests])
-AC_REVISION([$Revision: 487 $])
 
 PACKAGE=omorfi
-VERSION=20120401
+VERSION=20121226
 
 # Options
 AC_ARG_WITH([hfst],

@@ -14,29 +14,30 @@ The dictionaries used in omorfi are `Nykysuomen sanalista
 <http://joukahainen.lokalisointi.org>`_ (GPL) and `Finnwordnet
 <http://www.ling.helsinki.fi/research/finnwordnet>`_ (Princeton Wordnet licence
 / GPL; relicenced with kind permission from University of Helsinki). Some words
-have also been collected by omorfi developers and contributors.
+have also been collected by omorfi developers and contributors and are
+GPLv3 like the rest of the package.
 
 Downloading
 -----------
 
-`Omorfi can be found from gna! service <http://gna.org/projects/omorfi>`_.
-`Omorfi download directory <http://download.gna.org/omorfi/>`_ contains
-release packages. Development version can be found from gna! SVN server.
-In Gentoo_ distribution omorfi can be installed from `science overlay`_.
+Omorfi can be fetched from `omorfi page on google code service 
+<http://code.google.com/p/omorfi/>`_. 
 
 Dependencies
 ------------
 
 Compilation of automata requires HFST tools or compatible installed:
 
-* hfst-3.0.2 or greater is required for omorfi version 20120401
+* hfst-3.0.2 or greater is required for omorfi version 20121226
 
-* ``python`` is needed to rebuild lexc lexicons from CSV data
+  * hfst-3.4 or newer is highly recommended
+
+* python-3 is needed to rebuild lexc lexicons from CSV data
 
 It is not usually necessary or advisable to reprocess the original source data:
 
 - XSLT processor supporting XSLT 2.0 is needed to extract CSV data from
-  XML-based lexical sources:
+  XML-based lexical sources
 
 The final transducers can be used with HFST tools, HFST runtime tools, SFST
 tools or OpenFST tools (the last two are untested but should work). The
@@ -113,7 +114,7 @@ QUOTATION MARK and U+2010 HYPHEN. The analysis should work with both them and
 the legacy 0x27 APOSTROPHE and 0x2D HYPHEN-MINUS, but this variation may cause
 problems.
 
-On some systems characters with potential diacritics, such as ä and ö,
+On some systems, characters with potential diacritics, such as ä and ö,
 may be encoded differently; the implemented version uses the form of unicode
 where diacritics are precomposed to characters, also known as unicode
 normal form C (NFC). Systems using decomposed form (NFD) may experience
@@ -131,8 +132,4 @@ instructions in project’s HACKING_ file. Bugs should be reported through
 `omorfi’s google code bug tracker
 <https://code.google.com/p/omorfi/issues/list>`_ system.
 
-.. _Gentoo: http://www.gentoo.org
-.. _science overlay: http://overlays.gentoo.org/proj/science
-.. _pysfst: http://gna.org/projects/pysfst/
-.. _HACKING: HACKING.html
 .. vim: set ft=rst:

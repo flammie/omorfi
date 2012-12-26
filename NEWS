@@ -5,6 +5,16 @@
 This file lists noteworthy changes between releases, for full list of changes, 
 see git log and then ``ChangeLog.old``.
 
+Significant changes in 20121226
+-------------------------------
+
+* Added fi.wiktionary.org as lexical source (much thanks to students of my unix
+  tools course for scripting)
+* Added first batch of new proper nouns from a project in Univ. Helsinki
+* Lexc data is now rebuild from lexical sources as standard processing;
+    * requiring python3
+* Minor bug fixes to man pages, special boundaries (e.g. in arkki_tehti)
+
 Significant changes in 20120401
 -------------------------------
 
