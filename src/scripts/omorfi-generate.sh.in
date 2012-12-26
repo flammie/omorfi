@@ -17,13 +17,17 @@ function print_usage() {
 }
 
 function print_help() {
-    echo "Generates word-forms from omorfi definitions"
+    echo "Generates word-forms from line separated omorfi definitions"
     echo
     echo "  -h, --help      Print this help dialog"
     echo "  -V, --version   Print version info"
     echo "  -v, --verbose   Print verbosely while processing"
     echo
     echo "If no FILENAMEs are given, input is read from standard input."
+    echo
+    echo "Examples:"
+    echo "  omorfi-analyse.sh < text | cut -f 2 | omorfi-generate.sh"
+    echo "    Regenerate word-forms from analysed text"
 }
 
 
