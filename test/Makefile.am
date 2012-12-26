@@ -3,3 +3,6 @@
 TESTS=rough-tests.sh scripts-runnable.sh
 
 EXTRA_DIST=rough-tests.sh scripts-runnable.sh wordforms.list
+
+clean-local:
+	-rm -f wordforms.anals
