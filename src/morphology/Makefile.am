@@ -10,6 +10,7 @@ MORPHOLOGY_SRCS=\
 				stemparts/nouns.lexc \
 				stemparts/numerals.lexc \
 				stemparts/verbs.lexc \
+				inflection/acronyms.lexc \
 				inflection/adjectives.lexc \
 				inflection/commons.lexc \
 				inflection/digits.lexc \
@@ -17,6 +18,7 @@ MORPHOLOGY_SRCS=\
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
 			roots/abbreviations.lexc \
+			roots/acronyms.lexc \
 			roots/adjectives.lexc \
 			roots/adpositions.lexc \
 			roots/adverbs.lexc \
