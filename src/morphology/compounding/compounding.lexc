@@ -8,12 +8,12 @@ LEXICON Main
 @D.NEED@@P.NEED.REST@[COMPOUND_FORM=OMIT][LEMMA=':@D.NEED@@P.NEED.REST@-	SUFFIX	; ! sole suffixes in broken compounds
 
 LEXICON Compounding
-	Compounding/Undashed	;
-	Compounding/Dashed	;
+    Compounding/Undashed    ;
+    Compounding/Dashed      ;
+    Compounding/Omission    ;
 
 LEXICON Compounding/Undashed
 [BOUNDARY=COMPOUND][GUESS=COMPOUND]:{#}	Compounding/Middle		;
-[BOUNDARY=COMPOUNDDASH][GUESS=COMPOUND]:{-}	Compounding/Middle		;
 
 LEXICON Compounding/Dashed
 [BOUNDARY=COMPOUNDDASH][GUESS=COMPOUND]:{-}	Compounding/Middle		;
