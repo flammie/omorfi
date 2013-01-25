@@ -122,10 +122,16 @@ def parse_extras_from_csv(wordmap, csv_parts):
 def parse_conts(wordmap):
     tn = wordmap['kotus_tn']
     if (0 < tn and tn < 50) or (51 < tn and tn < 99):
-        wordmap['lexicon'] = 'kotus_' + str(wordmap['kotus_tn'])
+        wordmap['lexicon'] = 'kotus_' + str(tn)
         wordmap['continuation'] = wordmap['lexicon']
     elif tn > 1000:
-        wordmap['lexicon'] = "exceptional_" + str(wordmap['analysis_tn'])
+        if tn < 2000:
+            cont_tn = tn - 1000
+            if wordmap['analysis_tn'] > 1000:
+                wordmap['analysis_tn'] = cont_tn
+        else:
+            cont_tn = wordmap['analysis_tn']
+        wordmap['lexicon'] = "exceptional_" + str(cont_tn)
         wordmap['continuation'] = wordmap['lexicon']
     elif tn == 99:
         if wordmap['lexicon'] == '':
@@ -134,7 +140,7 @@ def parse_conts(wordmap):
     elif tn == 101:
         wordmap['lexicon'] = wordmap['lexicon']
     else:
-        print('Unrecognised tn in', wordmap['kotus_tn'], file=stderr)
+        print('Unrecognised tn', tn, 'in', wordmap['lemma'], file=stderr)
     return wordmap
 
 def finetune_conts(wordmap):
@@ -161,7 +167,7 @@ def finetune_conts(wordmap):
         elif wordmap['possessive'] == 'obl':
             wordmap['continuation'] = 'Possessive/Obligatory+Vn'
         else:
-            print("Odd possessive in", wordmap, file=stderr)
+            print("Odd possessive in", wordmap['lemma'], file=stderr)
     return wordmap
 
 def add_extras(wordmap):
