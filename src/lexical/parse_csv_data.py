@@ -80,6 +80,12 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     else:
         print("Unrecognised POS", csv_parts[3], "in", csv_parts)
 
+    # basic compatibility checking
+    tn = wordmap['kotus_tn'] % 1000
+    if (tn < 52 and wordmap['pos'] == 'VERB') \
+            or (52 <= tn <= 78 and wordmap['pos'] in ['NOUN','ADJECTIVE','PRONOUN','NUMERAL']):
+        print("Incompatible paradigm class and POS in", csv_parts, file=stderr)
+
     # this is all the optional extra data we found useful
     wordmap['plurale_tantum'] = False
     wordmap['proper_noun_class'] = False
