@@ -111,7 +111,7 @@ def parse_extras_from_csv(wordmap, csv_parts):
             elif extra_fields[0] == '"stem-vowel':
                 wordmap['stem_vowel'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"original-ktn':
-                wordmap['analysis_tn'] = extra_fields[1].strip('"')
+                wordmap['analysis_tn'] = int(extra_fields[1].strip('"'))
             elif extra_fields[0] == '"style':
                 wordmap['style'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"stub':
