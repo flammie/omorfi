@@ -156,11 +156,13 @@ def main():
                 print("Could not parse plt on", linecount, ":\n",
                         csv_line)
                 csv_line = csv_file.readline()
+                continue
             wordmap = gradation_make_morphophonemes(wordmap)
             if not wordmap:
                 print("Could not parse gradation on", linecount, ":\n",
                         csv_line)
                 csv_line = csv_file.readline()
+                continue
             wordmap = stub_all(wordmap)
             # guessing inflectional classes by KOTUS paradigm
             wordmap = parse_conts(wordmap)

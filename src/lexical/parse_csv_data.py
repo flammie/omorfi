@@ -80,6 +80,12 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     else:
         print("Unrecognised POS", csv_parts[3], "in", csv_parts)
 
+    # basic compatibility checking
+    tn = wordmap['kotus_tn'] % 1000
+    if (tn < 52 and wordmap['pos'] == 'VERB') \
+            or (52 <= tn <= 78 and wordmap['pos'] in ['NOUN','ADJECTIVE','PRONOUN','NUMERAL']):
+        print("Incompatible paradigm class and POS in", csv_parts, file=stderr)
+
     # this is all the optional extra data we found useful
     wordmap['plurale_tantum'] = False
     wordmap['proper_noun_class'] = False
@@ -105,7 +111,7 @@ def parse_extras_from_csv(wordmap, csv_parts):
             elif extra_fields[0] == '"stem-vowel':
                 wordmap['stem_vowel'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"original-ktn':
-                wordmap['analysis_tn'] = extra_fields[1].strip('"')
+                wordmap['analysis_tn'] = int(extra_fields[1].strip('"'))
             elif extra_fields[0] == '"style':
                 wordmap['style'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"stub':
@@ -122,10 +128,16 @@ def parse_extras_from_csv(wordmap, csv_parts):
 def parse_conts(wordmap):
     tn = wordmap['kotus_tn']
     if (0 < tn and tn < 50) or (51 < tn and tn < 99):
-        wordmap['lexicon'] = 'kotus_' + str(wordmap['kotus_tn'])
+        wordmap['lexicon'] = 'kotus_' + str(tn)
         wordmap['continuation'] = wordmap['lexicon']
     elif tn > 1000:
-        wordmap['lexicon'] = "exceptional_" + str(wordmap['analysis_tn'])
+        if tn < 2000:
+            cont_tn = tn - 1000
+            if wordmap['analysis_tn'] > 1000:
+                wordmap['analysis_tn'] = cont_tn
+        else:
+            cont_tn = wordmap['analysis_tn']
+        wordmap['lexicon'] = "exceptional_" + str(cont_tn)
         wordmap['continuation'] = wordmap['lexicon']
     elif tn == 99:
         if wordmap['lexicon'] == '':
@@ -134,7 +146,7 @@ def parse_conts(wordmap):
     elif tn == 101:
         wordmap['lexicon'] = wordmap['lexicon']
     else:
-        print('Unrecognised tn in', wordmap['kotus_tn'], file=stderr)
+        print('Unrecognised tn', tn, 'in', wordmap['lemma'], file=stderr)
     return wordmap
 
 def finetune_conts(wordmap):
@@ -161,7 +173,7 @@ def finetune_conts(wordmap):
         elif wordmap['possessive'] == 'obl':
             wordmap['continuation'] = 'Possessive/Obligatory+Vn'
         else:
-            print("Odd possessive in", wordmap, file=stderr)
+            print("Odd possessive in", wordmap['lemma'], file=stderr)
     return wordmap
 
 def add_extras(wordmap):
