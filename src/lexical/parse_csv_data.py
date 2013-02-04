@@ -189,10 +189,8 @@ def add_extras(wordmap):
         wordmap['stub'] += '{PLT?}'
     if wordmap['pos'] == 'PREFIX':
         wordmap['stub'] = replace_rightmost(wordmap['stub'], '-', '')
-        wordmap['analysis'] = replace_rightmost(wordmap['analysis'], '-', '')
     elif wordmap['pos'] == 'SUFFIX':
         wordmap['stub'] = wordmap['stub'][1:]
-        wordmap['analysis'] = wordmap['analysis'][1:]
     return wordmap
 
 

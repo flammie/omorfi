@@ -1,16 +1,9 @@
 
-LEXICON Main
-[LEMMA=':    Compounding/Initial ;
-[LEMMA=':    Compounding/Free    ;
-[LEMMA=':    Compounding/None   ;
-[COMPOUND_FORM=OMIT][LEMMA=':{-}   Compounding/Final   ;
-[COMPOUND_FORM=OMIT][LEMMA=':{-}   Compounding/Free   ;
-@D.NEED@@P.NEED.REST@[COMPOUND_FORM=OMIT][LEMMA=':@D.NEED@@P.NEED.REST@-	SUFFIX	; ! sole suffixes in broken compounds
 
 LEXICON Compounding
-    Compounding/Undashed    ;
-    Compounding/Dashed      ;
-    Compounding/Omission    ;
+0    Compounding/Undashed    ;
+0    Compounding/Dashed      ;
+0    Compounding/Omission    ;
 
 LEXICON Compounding/Undashed
 [BOUNDARY=COMPOUND][GUESS=COMPOUND]:{#}	Compounding/Middle		;
@@ -22,8 +15,8 @@ LEXICON Compounding/Omission
 [COMPOUND_FORM=OMIT]:-  Ennd    ;
 
 LEXICON Compounding/Middle
-[LEMMA=':    Compounding/Free    ;
-[LEMMA=':    Compounding/Final   ;
+0    Compounding/Free    ;
+0    Compounding/Final   ;
 
 LEXICON Compounding/Initial
 @D.NEED@@P.NEED.NOMINAL@	Digits	;
