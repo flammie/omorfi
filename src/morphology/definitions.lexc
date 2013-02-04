@@ -107,6 +107,30 @@ Multichar_Symbols
 [SUBCAT=OPERATION] [SUBCAT=RELATION]
 [SUBCAT=INITIAL] [SUBCAT=FINAL]
 
+! Semantic subcategories of proper names can be useful in some applications.
+! Some names can be ambiguous in respect of the subcategory, so we need
+! combined tags too.
+[PROP=FIRST] [PROP=GEO] [PROP=LAST] [PROP=MISC] [PROP=ORG]
+[PROP=FIRST,GEO,LAST,MISC,ORG]
+[PROP=FIRST,GEO,LAST,MISC]
+[PROP=FIRST,GEO,LAST,ORG]
+[PROP=FIRST,GEO,MISC,ORG]
+[PROP=FIRST,LAST,MISC,ORG]
+[PROP=GEO,LAST,MISC,ORG]
+[PROP=FIRST,GEO,LAST]
+[PROP=FIRST,GEO,MISC]
+[PROP=FIRST,GEO,ORG]
+[PROP=FIRST,LAST,MISC]
+[PROP=FIRST,LAST,ORG]
+[PROP=FIRST,MISC,ORG]
+[PROP=GEO,LAST,MISC]
+[PROP=GEO,LAST,ORG]
+[PROP=GEO,MISC,ORG]
+[PROP=LAST,MISC,ORG]
+[PROP=FIRST,GEO] [PROP=FIRST,LAST] [PROP=FIRST,MISC] [PROP=FIRST,ORG]
+[PROP=GEO,LAST] [PROP=GEO,MISC] [PROP=GEO,ORG]
+[PROP=LAST,MISC] [PROP=LAST,ORG] [PROP=MISC,ORG]
+
 ! The analyses of nominals and verbs contain the paradigm classification.
 ! The lexical source Nykysuomen sanalista classifies words according to their
 ! morphophonological properties into 78 classes. These are also used in the
