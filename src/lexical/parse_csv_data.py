@@ -25,6 +25,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     elif grad in 'ABCDEFGHIJKLMNOPT':
         wordmap['kotus_av'] = csv_parts[2].strip('"')
     else:
+        wordmap['kotus_av'] = False
         print("Unknown gradation field", csv_parts[2], "in", csv_parts,
                 file=stderr)
     # fourth field is morphosyntactic POS

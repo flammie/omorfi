@@ -75,7 +75,10 @@ def main():
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True, type=str,
             metavar="ODIR", help="write roots to ODIR")
+    ap.add_argument("--proper-subclasses", "-P", choices=["yes","no"], default="no",
+            help="include subclasses of proper names in analyses")
     args = ap.parse_args()
+    args.proper_subclasses = (args.proper_subclasses == "yes")
     # check args
     lemmas = []
     if args.include_lemmas:
@@ -175,7 +178,7 @@ def main():
                 wordmap['pos'] = 'SUFFIX'
                 # N.B: suffixes may inflect however so retain original cont
             # format analysis
-            format_analysis_omor(wordmap)
+            format_analysis_omor(wordmap, args.proper_subclasses)
             # ...
             wordmap = add_extras(wordmap)
             # format surface
