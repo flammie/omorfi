@@ -82,7 +82,32 @@ temporary.tagweighted.hfst: temporary.tagweights-only.hfst temporary.tag-backoff
 
 else
 temporary.tagweighted.hfst: temporary.unbounded.hfst
-	cp -v $< $@
+	$(HREW) $(HFST_FLAGS) -S '[GUESS=COMPOUND]' -a 16 < $< |\
+		$(HREW) $(HFST_FLAGS) -S '[GUESS=DERIVE]' -a 16 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=INS]' -a 32 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ABE]' -a 8 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=NOM]' -a 1 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=GEN]' -a 1 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=PAR]' -a 1 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=INE]' -a 2 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ELA]' -a 2 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ILL]' -a 2 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ADE]' -a 2 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ABL]' -a 2 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ALL]' -a 2 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=ESS]' -a 4 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=TRA]' -a 4 |\
+		$(HREW) $(HFST_FLAGS) -S '[CASE=CMT]' -a 8 |\
+		$(HREW) $(HFST_FLAGS) -S '[MOOD=INDV]' -a 1 |\
+		$(HREW) $(HFST_FLAGS) -S '[MOOD=COND]' -a 4 |\
+		$(HREW) $(HFST_FLAGS) -S '[MOOD=POTN]' -a 8 |\
+		$(HREW) $(HFST_FLAGS) -S '[MOOD=IMPV]' -a 4 |\
+		$(HREW) $(HFST_FLAGS) -S '[MOOD=OPTV]' -a 32 |\
+		$(HREW) $(HFST_FLAGS) -S '[MOOD=EVNV]' -a 32 |\
+		$(HREW) $(HFST_FLAGS) -S '[STYLE=NONSTANDARD]' -a 32 |\
+		$(HREW) $(HFST_FLAGS) -S '[STYLE=RARE]' -a 32 |\
+		$(HREW) $(HFST_FLAGS) -S '[STYLE=DIALECTAL]' -a 32 |\
+		$(HREW) $(HFST_FLAGS) -S '[STYLE=ARCHAIC]' -a 32 > $@
 endif
 
 # the token weights from corpus without flags
@@ -110,8 +135,7 @@ endif
 
 # add unlikelihood to guesses by 1/65536
 temporary.weighted.hfst: temporary.tokenweighted.hfst
-	$(HREW) $(HFST_FLAGS) -S '[GUESS=COMPOUND]' -a 11.09 $< |\
-		$(HREW) $(HFST_FLAGS) -S '[GUESS=DERIVE]' -a 11.09 -o $@
+	cp -v $< $@
 
 # create morphological analyzer
 temporary.omor.hfst: temporary.weighted.hfst
@@ -140,13 +164,6 @@ hyphenation.dict.hfst: temporary.orth.hfst eliminate-boundaries.relabel hyphenat
 		$(HPR) $(HFST_FLAGS) --project=lower |\
 		$(HIC) $(HFST_FLAGS) -2 hyphenation/hyphenation.rule.hfst |\
 		$(HSUB) $(HFST_FLAGS) -F $(srcdir)/eliminate-boundaries.relabel > $@
-
-# compatibility formats
-%.openfst: %.hfst
-	$(HF2F) $(HFST_FLAGS) -f openfst -i $< -o $@
-
-%.sfst: %.hfst
-	$(HF2F) $(HFST_FLAGS) -f sfst -i $< -o $@
 
 # voikko speller HFST beta targets
 speller.zhfst: dictionary.default.hfst spell-checking/error.edit-distance-2.hfst index.xml

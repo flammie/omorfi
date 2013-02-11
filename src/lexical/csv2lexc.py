@@ -75,6 +75,9 @@ def main():
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True, type=str,
             metavar="ODIR", help="write roots to ODIR")
+    ap.add_argument("--format", "-f", action="store", default="omor",
+            help="use specific output format for lexc data",
+            choices=["omor", "ktnkav"])
     ap.add_argument("--proper-subclasses", "-P", choices=["yes","no"], default="no",
             help="include subclasses of proper names in analyses")
     args = ap.parse_args()
@@ -178,7 +181,10 @@ def main():
                 wordmap['pos'] = 'SUFFIX'
                 # N.B: suffixes may inflect however so retain original cont
             # format analysis
-            format_analysis_omor(wordmap, args.proper_subclasses)
+            if args.format == 'ktnkav':
+                format_analysis_omor_paralysed(wordmap, args.proper_subclasses)
+            elif args.format == 'omor':
+                format_analysis_omor(wordmap)
             # ...
             wordmap = add_extras(wordmap)
             # format surface

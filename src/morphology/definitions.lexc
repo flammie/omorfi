@@ -12,7 +12,7 @@
 ! later stages (and rather lengthy, and hard to read, unfortunately).
 
 Multichar_Symbols
-! The lemma in omorfi is encoded between multichar symbols [LEMMA=' and '],
+! The lemma in omorfi is encoded between multichar symbols [WORD_ID=' and '],
 ! delimiting arbitrary strings. The string that is contained between these tags
 ! is a reference to the lexical data sources of omorfi. This is, a word in
 ! dictionary form. The form should always be lookuppable from the original
@@ -23,7 +23,7 @@ Multichar_Symbols
 ! legacy systems where the base form used has been the closest non-derived,
 ! non-compound form. There are configuration options and tagsets to get the
 ! legacy functionality for applications that need this.
-[LEMMA=' ']
+[WORD_ID=
 
 ! The parts of speech are encoded in field named POS. The part of speech is
 ! indicated for all analysed forms, including punctuation.
@@ -138,19 +138,19 @@ Multichar_Symbols
 ! of this classification is in 
 ! `<http://kaino.kotus.fi/sanat/nykysuomi/taivutustyypit.php>`_. 
 [KTN=1] [KTN=2] [KTN=3] [KTN=4] [KTN=5]
-[KTN=6] [KTN=7] [KTN=8] [KTN=9] [KTN=1%0]
+[KTN=6] [KTN=7] [KTN=8] [KTN=9] [KTN=10]
 [KTN=11] [KTN=12] [KTN=13] [KTN=14] [KTN=15]
-[KTN=16] [KTN=17] [KTN=18] [KTN=19] [KTN=2%0]
+[KTN=16] [KTN=17] [KTN=18] [KTN=19] [KTN=20]
 [KTN=21] [KTN=22] [KTN=23] [KTN=24] [KTN=25]
-[KTN=26] [KTN=27] [KTN=28] [KTN=29] [KTN=3%0]
+[KTN=26] [KTN=27] [KTN=28] [KTN=29] [KTN=30]
 [KTN=31] [KTN=32] [KTN=33] [KTN=34] [KTN=35]
-[KTN=36] [KTN=37] [KTN=38] [KTN=39] [KTN=4%0]
+[KTN=36] [KTN=37] [KTN=38] [KTN=39] [KTN=40]
 [KTN=41] [KTN=42] [KTN=43] [KTN=44] [KTN=45]
-[KTN=46] [KTN=47] [KTN=48] [KTN=49] [KTN=5%0]
+[KTN=46] [KTN=47] [KTN=48] [KTN=49] [KTN=50]
 [KTN=51] [KTN=52] [KTN=53] [KTN=54] [KTN=55]
-[KTN=56] [KTN=57] [KTN=58] [KTN=59] [KTN=6%0]
+[KTN=56] [KTN=57] [KTN=58] [KTN=59] [KTN=60]
 [KTN=61] [KTN=62] [KTN=63] [KTN=64] [KTN=65]
-[KTN=66] [KTN=67] [KTN=68] [KTN=69] [KTN=7%0]
+[KTN=66] [KTN=67] [KTN=68] [KTN=69] [KTN=70]
 [KTN=71] [KTN=72] [KTN=73] [KTN=74] [KTN=75]
 [KTN=76] [KTN=77] [KTN=78]
 
@@ -312,7 +312,7 @@ Multichar_Symbols
 ! The cases where the morphological analyser can strongly suggest existence of
 ! clause, sentence, or even paragraph boundaries can be marked with boundary
 ! analysis structures on supported backends.
-[BOUNDARY=COMPOUND] [BOUNDARY=LEXITEM]
+[BOUNDARY=COMPOUND]
 [BOUNDARY=CLAUSE] [BOUNDARY=SENTENCE] [BOUNDARY=PARAGRAPH]
 
 ! The analyses of nouns include the allomorphic selection where applicable.
@@ -436,22 +436,32 @@ Multichar_Symbols
 ! This lexicon must not be used elsewhere; it contains only the markers for
 ! absolute start of the transducer.
 LEXICON Root
-[BOUNDARY=LEXITEM]:{##}	Main	;
+0:{##}	Main	;
+
+! Foo
+LEXICON Main
+0    Compounding/Initial ;
+0    Compounding/Free    ;
+0    Compounding/None   ;
+[COMPOUND_FORM=OMIT]:{-}   Compounding/Final   ;
+[COMPOUND_FORM=OMIT]:{-}   Compounding/Free   ;
+@D.NEED@@P.NEED.REST@[COMPOUND_FORM=OMIT]:@D.NEED@@P.NEED.REST@-	SUFFIX	; ! sole suffixes in broken compounds
+
 
 ! The end lexicon, named Ennd due to a bug in certain implementations of lexc,
 ! is unique end point in this morphological description. This lexicon must be
 ! used as only end point; it contains the markers for absolute end of the
 ! transducer, but also the flag value set validation.
 LEXICON Ennd
-@D.LONGxANALYSIS@@D.LOWERCASED@[BOUNDARY=LEXITEM]:@D.LONGxANALYSIS@@D.LOWERCASED@{##}	#	;
+0@D.LOWERCASED@:{##}@D.LOWERCASED@	#	;
 
 
 LEXICON Interjection+Ennd
-    Ennd    ;
+0    Ennd    ;
 
 LEXICON Conjunction+Ennd
-    Ennd    ;
+0    Ennd    ;
 
 LEXICON Abbreviation+Ennd
-    Ennd    ;
+0    Ennd    ;
 
