@@ -40,7 +40,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
         wordmap['lexicon'] = 'Particles'
         wordmap['continuation'] = 'Particle+Clitic/Optional'
     elif wordmap['pos'] == 'Prop':
-        wordmap['pos'] = 'NOUN'
+        wordmap['pos'] = 'PROPER'
     elif wordmap['pos'] == 'Adv':
         wordmap['pos'] = 'ADVERB'
         wordmap['lexicon'] = 'Adverbs'

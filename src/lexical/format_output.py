@@ -19,9 +19,9 @@ def format_analysis_omor(wordmap):
     elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)
     elif wordmap['pos'] in ['CONJUNCTION', 'INTERJECTION']:
-        wordmap['analysis'] = "[POS=PARTICLE][SUBCAT=%(pos)s]" %(wordmap)
+        wordmap['analysis'] += "[POS=PARTICLE][SUBCAT=%(pos)s]" %(wordmap)
     else:
-        wordmap['analysis'] = "[POS=%(pos)s]" %(wordmap)
+        wordmap['analysis'] += "[POS=%(pos)s]" %(wordmap)
     return wordmap
 
 def format_analysis_omor_paralysed(wordmap):
