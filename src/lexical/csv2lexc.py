@@ -31,7 +31,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_analysis_omor, format_surface_omor, format_lexc_omor
+from format_output import format_analysis_omor, format_analysis_omor_paralysed, format_surface_omor, format_lexc_omor
 from gradation import gradation_make_morphophonemes
 from parse_csv_data import parse_defaults_from_csv, parse_extras_from_csv, parse_conts, finetune_conts, add_extras
 from plurale_tantum import plurale_tantum_get_singular_stem

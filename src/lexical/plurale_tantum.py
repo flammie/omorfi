@@ -71,10 +71,8 @@ def plurale_tantum_get_singular_stem(wordmap):
             wordmap['stub'] = wordmap['stub'][:-5] + 'nin'
         elif tn == 33 and wordmap['kotus_av'] == 'K':
             wordmap['stub'] = wordmap['stub'][:-5] + 'rin'
-        elif tn == 41 and wordmap['kotus_av'] in ['A', 'B', 'C']:
+        elif tn == 41 and wordmap['kotus_av'] in ['A', 'B', 'C', 'D']:
             wordmap['stub'] = wordmap['stub'][:-4] + '{aä}s'
-        elif tn == 41 and wordmap['kotus_av'] == 'D':
-            wordmap['stub'] = wordmap['stub'][:-4] + '{k~~}{aä}s'  # avoid replacement problem at gradation.py
         elif tn == 41 and wordmap['kotus_av'] == 'E':
             wordmap['stub'] = wordmap['stub'][:-4] + 'v{aä}s'
         elif tn == 41 and wordmap['kotus_av'] == 'F':

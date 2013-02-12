@@ -28,7 +28,7 @@ def format_analysis_omor(wordmap):
         wordmap['analysis'] = "[POS=%(pos)s]" %(wordmap)
     return wordmap
 
-def format_analysis_omor_paralysed(wordmap):
+def format_analysis_omor_paralysed(wordmap, use_prop_subclasses):
     '''
     format analysis string for canonical omor format for kotus
     paradigm harvesting applications
