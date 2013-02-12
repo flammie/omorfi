@@ -3,8 +3,8 @@
 ! [[kaksi-yhdeksän]?[sataa]|sata]
 ! [?[kaksi-yhdeksän]?[kymmentä]?|[kymmenen]
 LEXICON NUMERAL
-@U.NUMGEN.CARD@@C.ALLOW@[WORD_ID=	Cardinals	;
-@U.NUMGEN.ORD@[WORD_ID=	Ordinals	;
+@U.NUMGEN.CARD@@C.ALLOW@[WORD_ID=:@U.NUMGEN.CARD@@C.ALLOW@   Cardinals	;
+@U.NUMGEN.ORD@[WORD_ID=:@U.NUMGEN.ORD@   Ordinals	;
 [WORD_ID=:0    misc_multiples  ;
 
 LEXICON Cardinals
