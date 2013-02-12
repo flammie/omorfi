@@ -86,7 +86,7 @@ def main():
                 csv_line = csv_file.readline()
                 continue
 
-            words[csv_line.strip()] = csv_parts
+            words[csv_line] = csv_parts
             csv_line = csv_file.readline()
     # join all join files (slow but more workable)
     for join_file in args.join:
@@ -102,7 +102,7 @@ def main():
                 join_line = join_file.readline()
                 continue
             join_parts = []
-            join_on = []
+            join_on = ''
             if join_line.count(',') >= 3:
                 join_parts = join_line.split(',')
                 join_on = ','.join(join_parts[0:4])
@@ -110,8 +110,8 @@ def main():
                 join_parts = join_line.split('\t')
                 join_on = '\t'.join(join_parts[0:4])
             else:
-                print("Must have at least 2 commas or tabs on each non-comment non-empty line of dictionary data; Skipping:", file=stderr)
-                print(join_line)
+                print("Must have at least 3 commas or tabs on each non-comment non-empty line of dictionary data; Skipping:", file=stderr)
+                print(join_line, file=stderr)
                 join_line = join_file.readline()
                 continue
             if join_parts[-1] == '<-HEADERS':

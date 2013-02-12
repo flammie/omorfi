@@ -39,7 +39,8 @@ omor.timestamp: master.csv
 	if test ! -d $(top_builddir)/src/morphology/roots ; then \
 		mkdir -p $(top_builddir)/src/morphology/roots ; \
 	fi
-	$(PYTHON) $(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots -x NUMERAL -x PRONOUN
+	$(PYTHON) $(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots \
+              -f=$(TAG_FORMAT) -P=$(PROPER_SUBCLASSES) -x NUMERAL -x PRONOUN
 	touch $@
 
 clean-local:

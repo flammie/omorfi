@@ -68,7 +68,7 @@ def gradation_make_morphophonemes(wordmap):
             elif tn == 33:
                 wordmap['stub'] = replace_rightmost(wordmap['stub'], 'i', '{k~~}i')
             elif tn == 41:
-                wordmap['stub'] = replace_rightmosts(wordmap['stub'], ['as', 'es', 'is'], ['{k~~}as', '{k~0}es', '{k~0}is'])
+                wordmap['stub'] = replace_rightmosts(wordmap['stub'], ['as', 'es', 'is', '{aä}s'], ['{k~~}as', '{k~0}es', '{k~0}is', '{k~~}{aä}s'])
             elif tn == 48:
                 wordmap['stub'] = replace_rightmost(wordmap['stub'], 'e', '{k~~}e')
             elif tn == 49:

@@ -31,7 +31,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_analysis_omor, format_surface_omor, format_lexc_omor
+from format_output import format_analysis_omor, format_analysis_omor_paralysed, format_surface_omor, format_lexc_omor
 from gradation import gradation_make_morphophonemes
 from parse_csv_data import parse_defaults_from_csv, parse_extras_from_csv, parse_conts, finetune_conts, add_extras
 from plurale_tantum import plurale_tantum_get_singular_stem
@@ -78,7 +78,10 @@ def main():
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
             choices=["omor", "ktnkav"])
+    ap.add_argument("--proper-subclasses", "-P", choices=["yes","no"], default="no",
+            help="include subclasses of proper names in analyses")
     args = ap.parse_args()
+    args.proper_subclasses = (args.proper_subclasses == "yes")
     # check args
     lemmas = []
     if args.include_lemmas:
@@ -179,7 +182,7 @@ def main():
                 # N.B: suffixes may inflect however so retain original cont
             # format analysis
             if args.format == 'ktnkav':
-                format_analysis_omor_paralysed(wordmap)
+                format_analysis_omor_paralysed(wordmap, args.proper_subclasses)
             elif args.format == 'omor':
                 format_analysis_omor(wordmap)
             # ...

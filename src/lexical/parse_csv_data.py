@@ -25,9 +25,11 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     elif grad in 'ABCDEFGHIJKLMNOPT':
         wordmap['kotus_av'] = csv_parts[2].strip('"')
     else:
+        wordmap['kotus_av'] = False
         print("Unknown gradation field", csv_parts[2], "in", csv_parts,
                 file=stderr)
     # fourth field is morphosyntactic POS
+    wordmap['is_proper'] = False
     wordmap['pos'] = csv_parts[3].strip('"')
     if wordmap['pos'] == 'A':
         wordmap['pos'] = 'ADJECTIVE'
@@ -41,6 +43,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
         wordmap['continuation'] = 'Particle+Clitic/Optional'
     elif wordmap['pos'] == 'Prop':
         wordmap['pos'] = 'PROPER'
+        wordmap['is_proper'] = True
     elif wordmap['pos'] == 'Adv':
         wordmap['pos'] = 'ADVERB'
         wordmap['lexicon'] = 'Adverbs'
@@ -88,7 +91,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
 
     # this is all the optional extra data we found useful
     wordmap['plurale_tantum'] = False
-    wordmap['proper_noun_class'] = False
+    wordmap['proper_noun_class'] = []
     wordmap['possessive'] = False
     wordmap['harmony'] = False
     wordmap['stem_vowel'] = False
@@ -105,7 +108,7 @@ def parse_extras_from_csv(wordmap, csv_parts):
             if extra_fields[0] == '"plt':
                 wordmap['plurale_tantum'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"prop':
-                wordmap['proper_noun_class'] = extra_fields[1].strip('"')
+                wordmap['proper_noun_class'].append( extra_fields[1].strip('"').upper() )
             elif extra_fields[0] == '"poss':
                 wordmap['possessive'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"stem-vowel':

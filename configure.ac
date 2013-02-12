@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi],[2013-poke],[tommi.pirinen@helsinki.fi], [http://home.gna.org/omorfi])
+AC_INIT([omorfi],[20130212],[tommi.pirinen@helsinki.fi], [http://home.gna.org/omorfi])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20121226
+VERSION=20130212
 
 # Options
 AC_ARG_WITH([hfst],
@@ -99,6 +99,20 @@ AC_ARG_ENABLE([voikko],
                               [enable_voikko=$enableval],
                               [enable_voikko=yes])
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
+AC_ARG_ENABLE([proper_subclasses],
+              [AS_HELP_STRING([--enable-proper-subclasses],
+                              [include subclasses of proper names in analyses @<:@default=no@:>@])],
+                              [enable_proper_subclasses=$enableval],
+                              [enable_proper_subclasses=no])
+AM_CONDITIONAL([WANT_PROPER_SUBCLASSES], [test "x$enable_proper_subclasses" != xno])
+AC_SUBST([PROPER_SUBCLASSES], [$enable_proper_subclasses])
+AC_ARG_ENABLE([kotus_tags],
+              [AS_HELP_STRING([--enable-kotus-tags],
+                              [include Kotus inflection class tags KTN=, KAV= in analyses @<:@default=no@:>@])],
+                              [tag_format=ktnkav],
+                              [tag_format=omor])
+AC_SUBST([TAG_FORMAT], [$tag_format])
+
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
 AC_MSG_RESULT([no])
@@ -248,4 +262,6 @@ Configured $PACKAGE_STRING:
     * Dictionaries: $enable_dictionary
     * Hyphenation: $enable_hyphenation
     * Voikko support: $enable_voikko
+    * Proper subclasses: $enable_proper_subclasses
+    * Tag format: $tag_format
 EOF
