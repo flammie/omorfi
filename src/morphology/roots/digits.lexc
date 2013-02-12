@@ -2,8 +2,8 @@
 ! Inflection and compounding is possible for digit strings
 
 LEXICON Digits
-	IntegerDigits/InitialLoop	;
-	RomanOrdinals	;
+[WORD_ID=:0	IntegerDigits/InitialLoop	;
+[WORD_ID=:0	RomanOrdinals	;
 
 ! Full integers with inflections
 LEXICON IntegerDigits/InitialLoop

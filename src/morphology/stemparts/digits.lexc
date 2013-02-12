@@ -1,177 +1,177 @@
 ! Digit strings inflect with colons
 
 LEXICON IntegerDigits/Common
-'][POS=NUMERAL][SUBCAT=CARD][NUM=SG][CASE=NOM]:0	Ennd	;
-.'][POS=NUMERAL][SUBCAT=ORD][NUM=SG][CASE=NOM]:.	Ennd	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	Compounding/Dashed	;
+][POS=NUMERAL][SUBCAT=CARD][NUM=SG][CASE=NOM]:0	Ennd	;
+.][POS=NUMERAL][SUBCAT=ORD][NUM=SG][CASE=NOM]:.	Ennd	;
+][POS=NUMERAL][SUBCAT=CARD]:0	Compounding/Dashed	;
 ,	DecimalDigits	;
 .[STYLE=NONSTANDARD]:.	DecimalDigits	;
 
 LEXICON IntegerDigits/0
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/1
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem31	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	; ! yhdes
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem31	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	; ! yhdes
 
 LEXICON IntegerDigits/2
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem31	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	; ! kahdes
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem31	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	; ! kahdes
 
 LEXICON IntegerDigits/3
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem7	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem7	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/4
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/5
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem27	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem27	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/6
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem27	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem27	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/7
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/8
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/9
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/10
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem32	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem32	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/100
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem9	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem9	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON IntegerDigits/1000
 	IntegerDigits/Common	;
 %0	IntegerDigits/Common	; ! 10000
 %0%0	IntegerDigits/Common	; ! 100000
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem46	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-%0'][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem46	;
-%0'][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
-%0%0'][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem46	;
-%0%0'][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem46	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+%0][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem46	;
+%0][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
+%0%0][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem46	;
+%0%0][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
 
 LEXICON IntegerDigits/10e6n
 %0	IntegerDigits/Common	; ! 10000
 %0%0	IntegerDigits/Common	; ! 100000
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-%0'][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem10	;
-%0'][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
-%0%0'][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem10	;
-%0%0'][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+%0][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem10	;
+%0][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
+%0%0][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem10	;
+%0%0][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
 
 LEXICON IntegerDigits/10e9+6n
 %0	IntegerDigits/Common	; ! 10000
 %0%0	IntegerDigits/Common	; ! 100000
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem5i	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-%0'][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem5i	;
-%0'][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
-%0%0'][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem5i	;
-%0%0'][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem5i	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+%0][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem5i	;
+%0][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
+%0%0][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem5i	;
+%0%0][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
 
 LEXICON IntegerDigits/½
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
 
 LEXICON IntegerDigits/¼
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
 
 LEXICON IntegerDigits/¾
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
 
 LEXICON IntegerDigits/∞
 	IntegerDigits/Common	;
-'][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem34	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem34	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON DecimalDigits/Common
-'][POS=NUMERAL][SUBCAT=REAL][NUM=SG][CASE=NOM]:0	Ennd	;
-'][POS=NUMERAL][SUBCAT=REAL][NUM=SG][CASE=NOM]:0	Compounding/Dashed	;
+][POS=NUMERAL][SUBCAT=REAL][NUM=SG][CASE=NOM]:0	Ennd	;
+][POS=NUMERAL][SUBCAT=REAL][NUM=SG][CASE=NOM]:0	Compounding/Dashed	;
 
 LEXICON DecimalDigits/0
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
 
 LEXICON DecimalDigits/1
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem31	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem31	;
 
 LEXICON DecimalDigits/2
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem31	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem31	;
 
 LEXICON DecimalDigits/3
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem7	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem7	;
 
 LEXICON DecimalDigits/4
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
 
 LEXICON DecimalDigits/5
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem27	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem27	;
 
 LEXICON DecimalDigits/6
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem27	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem27	;
 
 LEXICON DecimalDigits/7
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
 
 LEXICON DecimalDigits/8
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
 
 LEXICON DecimalDigits/9
 	DecimalDigits/Common	;
-'][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem9	;
+][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem9	;
 
 LEXICON FractionDigits/Common
-'][POS=NUMERAL][SUBCAT=CARD][NUM=SG][CASE=NOM]:0	Ennd	;
-'][POS=NUMERAL][SUBCAT=CARD]:{^a}	DigitStem10	;
+][POS=NUMERAL][SUBCAT=CARD][NUM=SG][CASE=NOM]:0	Ennd	;
+][POS=NUMERAL][SUBCAT=CARD]:{^a}	DigitStem10	;
 
 LEXICON RomanOrdinal/45
-'][POS=NUMERAL][SUBCAT=ORD]:0	Ennd	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
+][POS=NUMERAL][SUBCAT=ORD]:0	Ennd	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
 
 LEXICON RomanOrdinal/38
-'][POS=NUMERAL][SUBCAT=ORD]:0	Ennd	;
-'][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
+][POS=NUMERAL][SUBCAT=ORD]:0	Ennd	;
+][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
 
 
 

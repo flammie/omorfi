@@ -11,12 +11,12 @@
 ! current issue on punctuation was [KK2/2006]_.
 
 LEXICON PUNCTUATION
-    Brackets                    ;
-    ClauseBoundingPunctuation  ;
-    MiscSymbols                 ;
-    QuotationMarks              ;
-    SentenceBoundingPunctuation ;
-    ClauseBoundingPunctuation   ;
+[WORD_ID=:0    Brackets                    ;
+[WORD_ID=:0    ClauseBoundingPunctuation  ;
+[WORD_ID=:0    MiscSymbols                 ;
+[WORD_ID=:0    QuotationMarks              ;
+[WORD_ID=:0    SentenceBoundingPunctuation ;
+[WORD_ID=:0    ClauseBoundingPunctuation   ;
 
 ! The primary punctuation marks are sentence final punctuation, they mark
 ! the end of a sentence. The most typical of these is full stop symbol, which
@@ -29,24 +29,24 @@ LEXICON PUNCTUATION
 ! sentence ending punctuation marks, the most common of these have separate
 ! analyses.
 LEXICON SentenceBoundingPunctuation
-.'][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:.      Ennd        ;
-%!'][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:%!      Ennd        ;
-?'][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:?        Ennd        ;
-...'][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:...    Ennd    ;
-..'][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:..  Ennd    ;
-....'][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:.... Ennd ;
-%!?'][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:%!?    Ennd    ;
-?&!'][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:?%!    Ennd    ;
-%#'][POS=PUNCTUATION]:%#    Ennd    ;
+.][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:.      Ennd        ;
+%!][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:%!      Ennd        ;
+?][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:?        Ennd        ;
+...][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:...    Ennd    ;
+..][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:..  Ennd    ;
+....][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:.... Ennd ;
+%!?][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:%!?    Ennd    ;
+?&!][STYLE=NONSTANDARD][SUBCAT=PUNCTUATION][BOUNDARY=SENTENCE]:?%!    Ennd    ;
+%#][POS=PUNCTUATION]:%#    Ennd    ;
 
 ! The clause level punctuation marks are used in clause boundaries. The most
 ! typical of these is comma. The colon and semicolon are too. The clause
 ! boundaries do not have separate semantics needed in applications so they only
 ! have analyses for clause boundaries.
 LEXICON ClauseBoundingPunctuation
-,'][SUBCAT=PUNCTUATION][BOUNDARY=CLAUSE]:,	Ennd	;
-%:'][SUBCAT=PUNCTUATION][BOUNDARY=CLAUSE]:%:	Ennd	;
-%;'][SUBCAT=PUNCTUATION][BOUNDARY=CLAUSE]:%;	Ennd	;
+,][SUBCAT=PUNCTUATION][BOUNDARY=CLAUSE]:,	Ennd	;
+%:][SUBCAT=PUNCTUATION][BOUNDARY=CLAUSE]:%:	Ennd	;
+%;][SUBCAT=PUNCTUATION][BOUNDARY=CLAUSE]:%;	Ennd	;
 
 
 ! The brackets are used to offset portions of text in opening and closing
@@ -59,18 +59,18 @@ LEXICON ClauseBoundingPunctuation
 ! exclamation mark to indicate surprise, both of these annotations are used
 ! within sentence as other bracketed constructions.
 LEXICON Brackets
-%<'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:%<	Ennd	;
-%>'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:%>	Ennd	;
-('][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:(	Ennd	;
-)'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:)	Ennd	;
-['][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:[	Ennd	;
-]'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:]	Ennd	;
-{'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:{	Ennd	;
-}'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:}	Ennd	;
-‹'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:‹ Ennd    ;
-›'][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:› Ennd    ;
-(?)'][SUBCAT=PUNCTUATION]:(?)  Ennd    ;
-(%!)'][SUBCAT=PUNCTUATION]:(%!)    Ennd    ;
+%<][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:%<	Ennd	;
+%>][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:%>	Ennd	;
+(][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:(	Ennd	;
+)][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:)	Ennd	;
+[][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:[	Ennd	;
+]][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:]	Ennd	;
+{][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:{	Ennd	;
+}][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:}	Ennd	;
+‹][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=INITIAL]:‹ Ennd    ;
+›][SUBCAT=PUNCTUATION][SUBCAT=BRACKET][SUBCAT=FINAL]:› Ennd    ;
+(?)][SUBCAT=PUNCTUATION]:(?)  Ennd    ;
+(%!)][SUBCAT=PUNCTUATION]:(%!)    Ennd    ;
 
 ! The quotation marks are used to offset quotations. The typical ones in
 ! Finnish are the 9-shaped double quotation marks and apostrophes. Angle
@@ -79,16 +79,16 @@ LEXICON Brackets
 ! ones where technology limits. It is also common to see foreign quotation
 ! marks or accent marks in place of quotation marks in sloppy writing style.
 LEXICON QuotationMarks
-”'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:”	Ennd	;
-”'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:”	Ennd	;
-»'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:»	Ennd	;
-»'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:»	Ennd	;
-’'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:’	Ennd	;
-’'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:’	Ennd	;
-%"'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL][FILTER=NO_PROC]:%"	Ennd	;
-%"'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL][FILTER=NO_PROC]:%"	Ennd	;
-''][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:'	Ennd	;
-''][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:'	Ennd	;
+”][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:”	Ennd	;
+”][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:”	Ennd	;
+»][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:»	Ennd	;
+»][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:»	Ennd	;
+’][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:’	Ennd	;
+’][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:’	Ennd	;
+%"][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL][FILTER=NO_PROC]:%"	Ennd	;
+%"][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL][FILTER=NO_PROC]:%"	Ennd	;
+'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=FINAL]:'	Ennd	;
+'][SUBCAT=PUNCTUATION][SUBCAT=QUOTATION][SUBCAT=INITIAL]:'	Ennd	;
 
 ! There are two different dashes in Finnish. The hyphen is used for mainly
 ! word internally and won't appear as itself. The dash is used to offset
@@ -96,9 +96,9 @@ LEXICON QuotationMarks
 ! dash symbols or replaced with dash offset by spaces. In sloppy writing,
 ! two hyphens are often used in place of dashes.
 LEXICON Dashes
--'][SUBCAT=PUNCTUATION][SUBCAT=DASH][FILTER=NO_PROC]:-	Ennd	;
-–'][SUBCAT=PUNCTUATION][SUBCAT=DASH]:–  Ennd    ;
---'][SUBCAT=PUNCTUATION][SUBCAT=DASH]:--	Ennd	;
+-][SUBCAT=PUNCTUATION][SUBCAT=DASH][FILTER=NO_PROC]:-	Ennd	;
+–][SUBCAT=PUNCTUATION][SUBCAT=DASH]:–  Ennd    ;
+--][SUBCAT=PUNCTUATION][SUBCAT=DASH]:--	Ennd	;
 
 ! The space is used to separate words. For most applications the space has
 ! separate meaning so it rarely gets used as a symbol in applications of
@@ -131,33 +131,33 @@ LEXICON Spaces
 ! The currency signs for euro, dollar, pound sterling, cent and yen can be
 ! used. I don't think anyone uses the currency sign ever.
 LEXICON MiscSymbols
-/'][SUBCAT=SYMBOL]:/	Ennd	;
-\'][SUBCAT=SYMBOL]:\  Ennd    ;
-_'][SUBCAT=SYMBOL]:_  Ennd    ;
-|'][SUBCAT=SYMBOL]:|  Ennd    ;
-@'][SUBCAT=SYMBOL]:@  Ennd    ;
-&'][SUBCAT=SYMBOL]:&	Ennd	;
-%%'][SUBCAT=SYMBOL]:%%    Ennd    ;
-‰'][SUBCAT=SYMBOL]:‰      Ennd    ;
-§'][SUBCAT=SYMBOL]:§	Ennd	;
-°'][SUBCAT=SYMBOL]:°  Ennd    ;
-′'][SUBCAT=SYMBOL]:′  Ennd    ;
-″'][SUBCAT=SYMBOL]:″  Ennd    ;
-+'][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:+	Ennd	;
-−'][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:−  Ennd    ;
-±'][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:±  Ennd    ;
-×'][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:×  Ennd    ;
-·'][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:·  Ennd    ;
-*'][SUBCAT=SYMBOL]:*  Ennd    ;
-®'][SUBCAT=SYMBOL]:®  Ennd    ;
-™'][SUBCAT=SYMBOL]:™  Ennd    ;
-©'][SUBCAT=SYMBOL]:©  Ennd    ;
-%#'][SUBCAT=SYMBOL]:%#    Ennd    ;
+/][SUBCAT=SYMBOL]:/	Ennd	;
+\][SUBCAT=SYMBOL]:\  Ennd    ;
+_][SUBCAT=SYMBOL]:_  Ennd    ;
+|][SUBCAT=SYMBOL]:|  Ennd    ;
+@][SUBCAT=SYMBOL]:@  Ennd    ;
+&][SUBCAT=SYMBOL]:&	Ennd	;
+%%][SUBCAT=SYMBOL]:%%    Ennd    ;
+‰][SUBCAT=SYMBOL]:‰      Ennd    ;
+§][SUBCAT=SYMBOL]:§	Ennd	;
+°][SUBCAT=SYMBOL]:°  Ennd    ;
+′][SUBCAT=SYMBOL]:′  Ennd    ;
+″][SUBCAT=SYMBOL]:″  Ennd    ;
++][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:+	Ennd	;
+−][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:−  Ennd    ;
+±][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:±  Ennd    ;
+×][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:×  Ennd    ;
+·][SUBCAT=SYMBOL][SUBCAT=MATH][SUBCAT=OPERATOR]:·  Ennd    ;
+*][SUBCAT=SYMBOL]:*  Ennd    ;
+®][SUBCAT=SYMBOL]:®  Ennd    ;
+™][SUBCAT=SYMBOL]:™  Ennd    ;
+©][SUBCAT=SYMBOL]:©  Ennd    ;
+%#][SUBCAT=SYMBOL]:%#    Ennd    ;
 !! The lines below this one are not from any referenced source
-§§'][SUBCAT=SYMBOL]:§§	Ennd	;
-¶'][SUBCAT=SYMBOL]:¶  Ennd    ;
-€'][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:€  Ennd    ;
-$'][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:$  Ennd    ;
-¥'][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:¥  Ennd    ;
-¢'][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:¢  Ennd    ;
-¤'][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:¤ Ennd    ;
+§§][SUBCAT=SYMBOL]:§§	Ennd	;
+¶][SUBCAT=SYMBOL]:¶  Ennd    ;
+€][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:€  Ennd    ;
+$][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:$  Ennd    ;
+¥][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:¥  Ennd    ;
+¢][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:¢  Ennd    ;
+¤][SUBCAT=SYMBOL][SUBCAT=CURRENCY]:¤ Ennd    ;
