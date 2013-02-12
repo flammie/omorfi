@@ -40,7 +40,7 @@ omor.timestamp: master.csv
 		mkdir -p $(top_builddir)/src/morphology/roots ; \
 	fi
 	$(PYTHON) $(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots \
-              -P=$(PROPER_SUBCLASSES) -x NUMERAL -x PRONOUN
+              -f=$(TAG_FORMAT) -P=$(PROPER_SUBCLASSES) -x NUMERAL -x PRONOUN
 	touch $@
 
 clean-local:
