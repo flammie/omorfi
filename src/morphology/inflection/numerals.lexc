@@ -1,0 +1,424 @@
+!! !!!Numeral inflection
+!! Numeral inflection is like nominal, except that numerals compound in all
+!! forms which requires great amount of care in the inflection patterns.
+! FIXME: compounding
+
+
+LEXICON NUM_BACK_NOMINATIVE
+
+
++Sg+Nom:0   NUM_BACK_CLIT_OPT  ;
+
+LEXICON NUM_FRONT_NOMINATIVE
+
++Sg+Nom:0   NUM_FRONT_CLIT_OPT  ;
+
+LEXICON NUM_BACK_PLNOM_CLIT
+
++Pl+Nom:%>t     NUM_BACK_CLIT_OPT  ;
+
+LEXICON NUM_FRONT_PLNOM_CLIT
+
++Pl+Nom:%>t     NUM_FRONT_CLIT_OPT  ;
+
+
+LEXICON NUM_BACK_WEAK_SINGULARS
+
+
+
+
+
+
+
+
+
+0    NUM_BACK_PLNOM_CLIT   ;
++Sg+Gen:%>n     NUM_BACK_CLIT_OPT   ;
++Sg+Abe:%>tta   NUM_BACK_POSS_AN_OPT      ;
++Sg+Abl:%>lta   NUM_BACK_POSS_AN_OPT      ;
++Sg+Ade:%>lla   NUM_BACK_POSS_AN_OPT      ;
++Sg+All:%>lle   NUM_BACK_POSS_EN_OPT      ;
++Sg+Ela:%>sta   NUM_BACK_POSS_AN_OPT      ;
++Sg+Ine:%>ssa   NUM_BACK_POSS_AN_OPT      ;
++Sg+Tra:%>kse   NUM_BACK_POSS_EN_OBL       ;
++Sg+Tra:%>ksi   NUM_BACK_CLIT_OPT     ;
++Sg+Tra:%>ksi   NUM_BACK_CLIT_OPT     ;
+
+LEXICON NUM_FRONT_WEAK_SINGULARS
+
+
+
+
+
+
+
+
+0    NUM_FRONT_PLNOM_CLIT   ;
++Sg+Gen:%>n     NUM_FRONT_CLIT_OPT   ;
++Sg+Abe:%>ttä   NUM_FRONT_POSS_ÄN_OPT      ;
++Sg+Abl:%>ltä   NUM_FRONT_POSS_ÄN_OPT      ;
++Sg+Ade:%>llä   NUM_FRONT_POSS_ÄN_OPT      ;
++Sg+All:%>lle   NUM_FRONT_POSS_EN_OPT      ;
++Sg+Ela:%>stä   NUM_FRONT_POSS_ÄN_OPT      ;
++Sg+Ine:%>ssä   NUM_FRONT_POSS_ÄN_OPT      ;
++Sg+Tra:%>kse   NUM_FRONT_POSS_EN_OBL       ;
++Sg+Tra:%>ksi   NUM_FRONT_CLIT_OPT     ;
++Sg+Tra:%>ksi   NUM_FRONT_CLIT_OPT     ;
+
+LEXICON NUM_BACK_STRONG_SINGULARS
+
+
++Sg+Ess:%>na NUM_BACK_POSS_AN_OPT      ;
++Sg+Nom:0  NUM_BACK_POSS   ;
++Sg+Gen:0  NUM_BACK_POSS   ;
++Pl+Nom:0  NUM_BACK_POSS   ;
+
+LEXICON NUM_FRONT_STRONG_SINGULARS
+
++Sg+Ess:%>nä NUM_FRONT_POSS_ÄN_OPT      ;
++Sg+Nom:0  NUM_FRONT_POSS   ;
++Sg+Gen:0  NUM_FRONT_POSS   ;
++Pl+Nom:0  NUM_FRONT_POSS   ;
+
+LEXICON NUM_BACK_WEAK_PLURALS
+
+
+
+
+
+
+
+
++Pl+Abe:%>i%>tta   NUM_BACK_POSS_AN_OPT      ;
++Pl+Abl:%>i%>lta   NUM_BACK_POSS_AN_OPT      ;
++Pl+Ade:%>i%>lla   NUM_BACK_POSS_AN_OPT      ;
++Pl+All:%>i%>lle  NUM_BACK_POSS_AN_OPT      ;
++Pl+Ela:%>i%>sta   NUM_BACK_POSS_AN_OPT      ;
++Pl+Ine:%>i%>ssa   NUM_BACK_POSS_AN_OPT      ;
++Pl+Ins:%>i%>n    NUM_BACK_CLIT_OPT     ;
++Pl+Tra:%>i%>kse  NUM_BACK_POSS_EN_OBL        ;
++Pl+Tra:%>i%>ksi  NUM_BACK_CLIT_OPT     ;
+
+LEXICON NUM_FRONT_WEAK_PLURALS
+
+
+
+
+
+
+
++Pl+Abe:%>i%>ttä   NUM_FRONT_POSS_ÄN_OPT      ;
++Pl+Abl:%>i%>ltä   NUM_FRONT_POSS_ÄN_OPT      ;
++Pl+Ade:%>i%>llä   NUM_FRONT_POSS_ÄN_OPT      ;
++Pl+All:%>i%>lle  NUM_FRONT_POSS_ÄN_OPT      ;
++Pl+Ela:%>i%>stä   NUM_FRONT_POSS_ÄN_OPT      ;
++Pl+Ine:%>i%>ssä   NUM_FRONT_POSS_ÄN_OPT      ;
++Pl+Ins:%>i%>n    NUM_FRONT_CLIT_OPT     ;
++Pl+Tra:%>i%>kse  NUM_FRONT_POSS_EN_OBL        ;
++Pl+Tra:%>i%>ksi  NUM_FRONT_CLIT_OPT     ;
+
+LEXICON NUM_FRONT_STRONG_PLURALS
+
+
++Pl+Ess:%>i%>nä   NUM_FRONT_POSS_ÄN_OPT      ;
++Com:%>i%>ne        NUM_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON NUM_BACK_STRONG_PLURALS
+
+
++Pl+Ess:%>i%>na   NUM_BACK_POSS_AN_OPT      ;
++Com:%>i%>ne        NUM_BACK_POSS_AN_OPT      ;
+
+
+
+LEXICON NUM_BACK_PARTITIVE_A
+
+
++Sg+Par:%>a      NUM_BACK_POSS_OPT      ;
+
+LEXICON NUM_FRONT_PARTITIVE_Ä
+
++Sg+Par:%>ä      NUM_FRONT_POSS_OPT      ;
+
+LEXICON NUM_BACK_PARTITIVE_A_AN
+
++Sg+Par:%>a      NUM_BACK_POSS_AN_OPT      ;
+
+LEXICON NUM_BACK_PARTITIVE_TA
+
++Sg+Par:%>ta     NUM_BACK_POSS_AN_OPT      ;
+
+LEXICON NUM_FRONT_PARTITIVE_TÄ
+
++Sg+Par:%>tä     NUM_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON NUM_BACK_ILLATIVE_AN
+
+
++Sg+Ill:%>an     #         ;
++Sg+Ill:%>a      NUM_BACK_POSS     ;
+
+LEXICON NUM_BACK_ILLATIVE_EN
+
++Sg+Ill:%>en     #         ;
++Sg+Ill:%>e      NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_ILLATIVE_EN
+
++Sg+Ill:%>en     #         ;
++Sg+Ill:%>e      NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_ILLATIVE_IN
+
++Sg+Ill:%>in     #         ;
++Sg+Ill:%>i      NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_ILLATIVE_ÄN
+
++Sg+Ill:%>än     #         ;
++Sg+Ill:%>ä      NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_PARTITIVE_IA
+
+
++Pl+Par:%>i%>a    NUM_BACK_POSS_AN_OPT      ;
+
+LEXICON NUM_FRONT_PARTITIVE_IÄ
+
++Pl+Par:%>i%>ä    NUM_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON NUM_BACK_PARTITIVE_JA
+
++Pl+Par:%>j%>a     NUM_BACK_POSS_AN_OPT      ;
+
+LEXICON NUM_BACK_GENITIVE_IEN
+
+
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_GENITIVE_IEN
+
++Pl+Gen:%>i%>en   #     ;
++Pl+Gen:%>i%>e    NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_GENITIVE_JEN
+
++Pl+Gen:%>j%>en    #     ;
++Pl+Gen:%>j%>e     NUM_BACK_POSS     ;
+
+LEXICON NUM_BACK_GENITIVE_TEN
+
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_GENITIVE_TEN
+
++Pl+Gen:%>ten    #     ;
++Pl+Gen:%>te     NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_GENITIVE_IN
+
++Pl+Gen+Use/Rare:%>i%>n    #     ;
++Pl+Gen+Use/Rare:%>i     NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_GENITIVE_IN
+
++Pl+Gen+Use/Rare:%>i%>n    #     ;
++Pl+Gen+Use/Rare:%>i     NUM_FRONT_POSS     ;
+
+LEXICON NUM_BACK_ILLATIVE_IHIN
+
+
++Pl+Ill:%>i%>hin   #    ;
++Pl+Ill:%>i%>hi    NUM_BACK_POSS     ;
+
+LEXICON NUM_BACK_ILLATIVE_IIN
+
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     NUM_BACK_POSS     ;
+
+LEXICON NUM_FRONT_ILLATIVE_IIN
+
++Pl+Ill:%>i%>in    #     ;
++Pl+Ill:%>i%>i     NUM_FRONT_POSS     ;
+
+
+
+LEXICON NUM_BACK_POSS
+
+
++PxSg1:%>ni  NUM_BACK_CLIT_OPT        ;
++PxSg2:%>si  NUM_BACK_CLIT_OPT        ;
++PxSg3:%>nsa NUM_BACK_CLIT_OPT        ;
++PxPl1:%>mme NUM_BACK_CLIT_OPT        ;
++PxPl2:%>nne NUM_BACK_CLIT_OPT        ;
++PxPl3:%>nsa NUM_BACK_CLIT_OPT        ;
+
+LEXICON NUM_FRONT_POSS
+
++PxSg1:%>ni  NUM_FRONT_CLIT_OPT        ;
++PxSg2:%>si  NUM_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä NUM_FRONT_CLIT_OPT        ;
++PxPl1:%>mme NUM_FRONT_CLIT_OPT        ;
++PxPl2:%>nne NUM_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä NUM_FRONT_CLIT_OPT        ;
+
+LEXICON NUM_BACK_POSS_AN
+
++PxSg3:%>an    NUM_BACK_CLIT_OPT     ;
++PxPl3:%>an    NUM_BACK_CLIT_OPT     ;
+
+LEXICON NUM_BACK_POSS_EN
+
++PxSg3:%>en    NUM_BACK_CLIT_OPT     ;
++PxPl3:%>en    NUM_BACK_CLIT_OPT     ;
+
+LEXICON NUM_FRONT_POSS_EN
+
++PxSg3:%>en    NUM_FRONT_CLIT_OPT     ;
++PxPl3:%>en    NUM_FRONT_CLIT_OPT     ;
+
+LEXICON NUM_FRONT_POSS_ÄN
+
++PxSg3:%>än    NUM_FRONT_CLIT_OPT     ;
++PxPl3:%>än    NUM_FRONT_CLIT_OPT     ;
+
+LEXICON NUM_BACK_CLIT
+
+
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>hankaan  #        ;
++Foc/han+Qst:%>hanko #        ;
++Foc/han+Foc/pa:%>hanpa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>kohan #        ;
++Qst+Foc/kaan:%>kokaan    #        ;
++Qst+Foc/kin:%>kokin    #        ;
++Qst+Foc/pa:%>kopa   #        ;
++Qst+Foc/s:%>kos    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pahan #        ;
++Foc/pa+Foc/kaan:%>pakaan    #        ;
++Foc/pa+Foc/kin:%>pakin    #        ;
++Foc/pa+Qst:%>pako   #        ;
++Foc/pa+Foc/s:%>pas    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhan  #        ;
++Foc/kin+Foc/kaan:%>kinkaan #        ;
++Foc/kin+Qst:%>kinko    #        ;
++Foc/kin+Foc/pa:%>kinpa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaanhan  #        ;
++Foc/kaan+Foc/kin:%>kaankin #        ;
++Foc/kaan+Qst:%>kaanko    #        ;
++Foc/kaan+Foc/pa:%>kaanpa    #        ;
+
+LEXICON NUM_FRONT_CLIT
+
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hänkään  #        ;
++Foc/han+Qst:%>hänkö #        ;
++Foc/han+Foc/pa:%>hänpä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>köhän #        ;
++Qst+Foc/kaan:%>kökään    #        ;
++Qst+Foc/kin:%>kökin    #        ;
++Qst+Foc/pa:%>köpä   #        ;
++Qst+Foc/s:%>kös    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pähän #        ;
++Foc/pa+Foc/kaan:%>päkään    #        ;
++Foc/pa+Foc/kin:%>päkin    #        ;
++Foc/pa+Qst:%>päkö   #        ;
++Foc/pa+Foc/s:%>päs    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhän  #        ;
++Foc/kin+Foc/kaan:%>kinkään #        ;
++Foc/kin+Qst:%>kinkö    #        ;
++Foc/kin+Foc/pa:%>kinpä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>käänhän  #        ;
++Foc/kaan+Foc/kin:%>käänkin #        ;
++Foc/kaan+Qst:%>käänkö    #        ;
++Foc/kaan+Foc/pa:%>käänpä    #        ;
+
+
+
+
+LEXICON NUM_BACK_CLIT_OPT
+0    #   ;
+0   NUM_BACK_CLIT    ;
+0   NUM_COMPOUND ;
+
+LEXICON NUM_FRONT_CLIT_OPT
+0    #   ;
+0   NUM_FRONT_CLIT    ;
+0   NUM_COMPOUND ;
+
+LEXICON NUM_BACK_SINGULARS
+0    NUM_BACK_STRONG_SINGULARS ;
+0    NUM_BACK_WEAK_SINGULARS   ;
+
+LEXICON NUM_FRONT_SINGULARS
+0    NUM_FRONT_STRONG_SINGULARS ;
+0    NUM_FRONT_WEAK_SINGULARS   ;
+
+LEXICON NUM_FRONT_PLURALS
+0   NUM_FRONT_STRONG_PLURALS ;
+0   NUM_FRONT_WEAK_PLURALS ;
+
+LEXICON NUM_BACK_PLURALS
+0   NUM_BACK_STRONG_PLURALS ;
+0   NUM_BACK_WEAK_PLURALS ;
+
+LEXICON NUM_BACK_POSS_AN_OPT
+0    NUM_BACK_POSS   ;
+0    NUM_BACK_POSS_AN ;
+0    NUM_BACK_CLIT ;
+0   NUM_COMPOUND ;
+0    #    ;
+
+LEXICON NUM_FRONT_POSS_ÄN_OPT
+0    NUM_FRONT_POSS   ;
+0    NUM_FRONT_POSS_ÄN  ;
+0    NUM_FRONT_CLIT ;
+0   NUM_COMPOUND ;
+0    #    ;
+
+LEXICON NUM_BACK_POSS_EN_OPT
+0    NUM_BACK_POSS   ;
+0    NUM_BACK_POSS_EN ;
+0    NUM_BACK_CLIT ;
+0   NUM_COMPOUND ;
+0    #    ;
+
+LEXICON NUM_FRONT_POSS_EN_OPT
+0    NUM_FRONT_POSS   ;
+0    NUM_FRONT_POSS_EN  ;
+0    NUM_FRONT_CLIT ;
+0   NUM_COMPOUND ;
+0    #    ;
+
+LEXICON NUM_BACK_POSS_OPT
+0    NUM_BACK_POSS   ;
+0    NUM_BACK_CLIT ;
+0   NUM_COMPOUND ;
+0    #    ;
+
+LEXICON NUM_FRONT_POSS_OPT
+0    NUM_FRONT_POSS   ;
+0    NUM_FRONT_CLIT ;
+0   NUM_COMPOUND ;
+0    #    ;
+
+LEXICON NUM_BACK_POSS_EN_OBL
+0   NUM_BACK_POSS  ;
+0   NUM_BACK_POSS_EN   ;
+
+LEXICON NUM_FRONT_POSS_EN_OBL
+0   NUM_FRONT_POSS  ;
+0   NUM_FRONT_POSS_EN   ;
+
+LEXICON NUM_COMPOUND
++Use/Circ#:0#   NUM   ;

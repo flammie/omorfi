@@ -1,0 +1,112 @@
+LEXICON ADP_FRONT_POSS
++PxSg1:%>ni  ADP_FRONT_CLIT_OPT        ;
++PxSg2:%>si  ADP_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä ADP_FRONT_CLIT_OPT        ;
++PxPl1:%>mme ADP_FRONT_CLIT_OPT        ;
++PxPl2:%>nne ADP_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä ADP_FRONT_CLIT_OPT        ;
+
+LEXICON ADP_BACK_POSS
++PxSg1:%>ni  ADP_BACK_CLIT_OPT        ;
++PxSg2:%>si  ADP_BACK_CLIT_OPT        ;
++PxSg3:%>nsa ADP_BACK_CLIT_OPT        ;
++PxPl1:%>mme ADP_BACK_CLIT_OPT        ;
++PxPl2:%>nne ADP_BACK_CLIT_OPT        ;
++PxPl3:%>nsa ADP_BACK_CLIT_OPT        ;
+
+LEXICON ADP_BACK_POSS_EN
++PxSg3:%>en    ADP_BACK_CLIT_OPT     ;
++PxPl3:%>en    ADP_BACK_CLIT_OPT     ;
+
+LEXICON ADP_FRONT_POSS_EN
++PxSg3:%>en    ADP_FRONT_CLIT_OPT     ;
++PxPl3:%>en    ADP_FRONT_CLIT_OPT     ;
+
+LEXICON ADP_FRONT_POSS_ÄN
++PxSg3:%>än    ADP_FRONT_CLIT_OPT     ;
++PxPl3:%>än    ADP_FRONT_CLIT_OPT     ;
+
+LEXICON ADP_BACK_CLIT
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>hankaan  #        ;
++Foc/han+Qst:%>hanko #        ;
++Foc/han+Foc/pa:%>hanpa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>kohan #        ;
++Qst+Foc/kaan:%>kokaan    #        ;
++Qst+Foc/kin:%>kokin    #        ;
++Qst+Foc/pa:%>kopa   #        ;
++Qst+Foc/s:%>kos    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pahan #        ;
++Foc/pa+Foc/kaan:%>pakaan    #        ;
++Foc/pa+Foc/kin:%>pakin    #        ;
++Foc/pa+Qst:%>pako   #        ;
++Foc/pa+Foc/s:%>pas    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhan  #        ;
++Foc/kin+Foc/kaan:%>kinkaan #        ;
++Foc/kin+Qst:%>kinko    #        ;
++Foc/kin+Foc/pa:%>kinpa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaanhan  #        ;
++Foc/kaan+Foc/kin:%>kaankin #        ;
++Foc/kaan+Qst:%>kaanko    #        ;
++Foc/kaan+Foc/pa:%>kaanpa    #        ;
+
+LEXICON ADP_FRONT_CLIT
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hänkään  #        ;
++Foc/han+Qst:%>hänkö #        ;
++Foc/han+Foc/pa:%>hänpä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>köhän #        ;
++Qst+Foc/kaan:%>kökään    #        ;
++Qst+Foc/kin:%>kökin    #        ;
++Qst+Foc/pa:%>köpä   #        ;
++Qst+Foc/s:%>kös    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pähän #        ;
++Foc/pa+Foc/kaan:%>päkään    #        ;
++Foc/pa+Foc/kin:%>päkin    #        ;
++Foc/pa+Qst:%>päkö   #        ;
++Foc/pa+Foc/s:%>päs    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhän  #        ;
++Foc/kin+Foc/kaan:%>kinkään #        ;
++Foc/kin+Qst:%>kinkö    #        ;
++Foc/kin+Foc/pa:%>kinpä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>käänhän  #        ;
++Foc/kaan+Foc/kin:%>käänkin #        ;
++Foc/kaan+Qst:%>käänkö    #        ;
++Foc/kaan+Foc/pa:%>käänpä    #        ;
+
+
+! shorthands
+
+LEXICON ADP_BACK_CLIT_OPT
+0    #   ;
+0   ADP_BACK_CLIT    ;
+
+LEXICON ADP_FRONT_CLIT_OPT
+0    #   ;
+0   ADP_FRONT_CLIT    ;
+
+LEXICON ADP_FRONT_POSS_ÄN_OPT
+0    ADP_FRONT_POSS   ;
+0    ADP_FRONT_POSS_ÄN  ;
+0    ADP_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ADP_BACK_POSS_EN_OPT
+0    ADP_BACK_POSS   ;
+0    ADP_BACK_POSS_EN ;
+0    ADP_BACK_CLIT ;
+0    #    ;
+
+LEXICON ADP_FRONT_POSS_EN_OPT
+0    ADP_FRONT_POSS   ;
+0    ADP_FRONT_POSS_EN  ;
+0    ADP_FRONT_CLIT ;
+0    #    ;

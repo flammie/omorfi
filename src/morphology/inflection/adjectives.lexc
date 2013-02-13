@@ -1,25 +1,645 @@
-! The adjectives are inflected like regular nouns. The only morphological
-! difference in adjectives compared to other nouns is higher likelihood of
-! comparative derivations. 
-! |VISK 300|
+!! !!!Adjective inflection
+!! The adjectives are inflected like regular nouns. The only morphological
+!! difference in adjectives compared to other nouns is higher likelihood of
+!! comparative derivations–they are fully productive. For adjectives that do
+!! not compare, use qualifiers classification instead.
+!! VISK § 300
 
-LEXICON AdjectiveStem/Superlative
-! The superlative derivation is formed by *in* suffix, which creates a new
-! adjective baseform. This adjective however is handled slightly more like
-! a noun to avoid double comparative derivations for example.
-[CMP=SUP]:{AV-}i	kotus_36_NOUN/stemfiller		;
-! The adjective bases form superlative adverb derivations fully productively
-! by basically superlative instructive suffixes.
-! |VISK 375|
-[GUESS=DERIVE][DRV=STI][POS=ADVERB][CMP=SUP]:{AV-}immin Clitic/Optional ;
+LEXICON A_BACK_SUPERLATIVE
 
-LEXICON AdjectiveStem/Comparative
-! The comparative derivation is formed by *mpi* suffix, which creates a new
-! adjective baseform. This adjective is handled slightly more like a noun
-! to avoid double comparative forms.
-[CMP=CMP]:m{AV-}{p~~}{H}	kotus_16_NOUN/stemfiller		;
-! The adjective comparatives form comparative adverb productively using
-! the instructive suffix
-! |VISK 375|
-[GUESS=DERIVE][DRV=STI][POS=ADVERB][CMP=CMP]:{AV-}mmin	Clitic/Optional	;
+
+
+
+
++Sup:i  A_BACK_SUPERLATIVE_STEMS ;
+
+
+LEXICON A_FRONT_SUPERLATIVE
+
++Sup:i  A_FRONT_SUPERLATIVE_STEMS ;
+
+LEXICON A_BACK_COMPARATIVE
+
+
+
+
+
++Comp:m     A_BACK_COMPARATIVE_STEMS ;
+
+LEXICON A_FRONT_COMPARATIVE
+
++Comp:m     A_FRONT_COMPARATIVE_STEMS ;
+
+
+LEXICON A_BACK_COMPARATIVE_STEMS
+
+
+
+
+
+
+0:pi  A_BACK_NOMINATIVE    ;
+0:pa  A_BACK_STRONG_SINGULARS    ;
+0:ma  A_BACK_WEAK_SINGULARS    ;
+0:p   A_BACK_STRONG_PLURALS ;
+0:m    A_BACK_WEAK_PLURALS    ;
+0:pa  A_BACK_PARTITIVE_A ;
+0:pi  A_BACK_ILLATIVE_IN ;
+0:p    A_BACK_PARTITIVE_IA    ;
+0:p    A_BACK_GENITIVE_IEN    ;
+0:pa   A_BACK_GENITIVE_IN    ;
+0:p    A_BACK_ILLATIVE_IIN    ;
+
+LEXICON A_FRONT_COMPARATIVE_STEMS
+
+
+0:pi  A_FRONT_NOMINATIVE    ;
+0:pä  A_FRONT_STRONG_SINGULARS    ;
+0:mä  A_FRONT_WEAK_SINGULARS    ;
+0:p   A_FRONT_STRONG_PLURALS ;
+0:m    A_FRONT_WEAK_PLURALS    ;
+0:pä  A_FRONT_PARTITIVE_Ä ;
+0:pi  A_FRONT_ILLATIVE_IN ;
+0:p    A_FRONT_PARTITIVE_IÄ    ;
+0:p    A_FRONT_GENITIVE_IEN    ;
+0:pä   A_FRONT_GENITIVE_IN    ;
+0:p    A_FRONT_ILLATIVE_IIN    ;
+
+LEXICON A_BACK_SUPERLATIVE_STEMS
+
+
+
+
+
+
+0:n   A_BACK_NOMINATIVE    ;
+0:mpa   A_BACK_STRONG_SINGULARS    ;
+0:mma   A_BACK_WEAK_SINGULARS   ;
+0:mp    A_BACK_STRONG_PLURALS ;
+0:mm    A_BACK_WEAK_PLURALS    ;
+0:n   A_BACK_PARTITIVE_TA    ;
+0:mpa   A_BACK_ILLATIVE_AN ;
+0:mp    A_BACK_PARTITIVE_IA    ;
+0:mp    A_BACK_GENITIVE_IEN    ;
+0:n   A_BACK_GENITIVE_TEN    ;
+0:mpa   A_BACK_GENITIVE_IN ;
+0:mp    A_BACK_ILLATIVE_IIN    ;
+
+LEXICON A_FRONT_SUPERLATIVE_STEMS
+
+
+0:n   A_FRONT_NOMINATIVE    ;
+0:mpä   A_FRONT_STRONG_SINGULARS    ;
+0:mmä   A_FRONT_WEAK_SINGULARS   ;
+0:mp    A_FRONT_STRONG_PLURALS ;
+0:mm    A_FRONT_WEAK_PLURALS    ;
+0:n   A_FRONT_PARTITIVE_TÄ    ;
+0:mpä   A_FRONT_ILLATIVE_ÄN ;
+0:mp    A_FRONT_PARTITIVE_IÄ    ;
+0:mp    A_FRONT_GENITIVE_IEN    ;
+0:n   A_FRONT_GENITIVE_TEN    ;
+0:mpä   A_FRONT_GENITIVE_IN ;
+0:mp    A_FRONT_ILLATIVE_IIN    ;
+
+
+
+
+
+
+LEXICON A_BACK_NOMINATIVE
+
+
++Sg+Nom:0   A_BACK_CLIT_OPT  ;
+
+LEXICON A_FRONT_NOMINATIVE
+
++Sg+Nom:0   A_FRONT_CLIT_OPT  ;
+
+LEXICON A_BACK_PLNOM_CLIT
+
++Pl+Nom:t     A_BACK_CLIT_OPT  ;
+
+LEXICON A_FRONT_PLNOM_CLIT
+
++Pl+Nom:t     A_FRONT_CLIT_OPT  ;
+
+LEXICON A_BACK_WEAK_SINGULARS
+
+
+
+0    A_BACK_PLNOM_CLIT   ;
++Sg+Gen:n     A_BACK_CLIT_OPT   ;
++Sg+Abe:tta   A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Abl:lta   A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Ade:lla   A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+All:lle   A_BACK_POSS_EN_CLIT_OPT      ;
++Sg+Ela:sta   A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Ine:ssa   A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Tra:kse   A_BACK_POSS_EN_OBL       ;
++Sg+Tra:ksi   A_BACK_CLIT_OPT     ;
++Sg+Tra:ksi   A_BACK_CLIT_OPT     ;
+
+LEXICON A_FRONT_WEAK_SINGULARS
+
+
+0    A_FRONT_PLNOM_CLIT   ;
++Sg+Gen:n     A_FRONT_CLIT_OPT   ;
++Sg+Abe:ttä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Abl:ltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Ade:llä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+All:lle   A_FRONT_POSS_EN_CLIT_OPT      ;
++Sg+Ela:stä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Ine:ssä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Tra:kse   A_FRONT_POSS_EN_OBL       ;
++Sg+Tra:ksi   A_FRONT_CLIT_OPT     ;
++Sg+Tra:ksi   A_FRONT_CLIT_OPT     ;
+
+LEXICON A_BACK_STRONG_SINGULARS
+
+
++Sg+Ess:na A_BACK_POSS_AN_CLIT_OPT      ;
++Sg+Nom:0  A_BACK_POSS   ;
++Sg+Gen:0  A_BACK_POSS   ;
++Pl+Nom:0  A_BACK_POSS   ;
+
+LEXICON A_FRONT_STRONG_SINGULARS
+
+
++Sg+Ess:nä A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Sg+Nom:0  A_FRONT_POSS   ;
++Sg+Gen:0  A_FRONT_POSS   ;
++Pl+Nom:0  A_FRONT_POSS   ;
+
+
+LEXICON A_BACK_WEAK_PLURALS
+
+
+
++Pl+Abe:itta   A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Abl:ilta   A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ade:illa   A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+All:ille  A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ela:ista   A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ine:issa   A_BACK_POSS_AN_CLIT_OPT      ;
++Pl+Ins:in    A_BACK_CLIT_OPT     ;
++Pl+Tra:ikse  A_BACK_POSS_EN_OBL        ;
++Pl+Tra:iksi  A_BACK_CLIT_OPT     ;
+
+LEXICON A_FRONT_WEAK_PLURALS
+
+
++Pl+Abe:ittä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Abl:iltä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ade:illä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+All:ille  A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ela:istä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ine:issä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Pl+Ins:in    A_FRONT_CLIT_OPT     ;
++Pl+Tra:ikse  A_FRONT_POSS_EN_OBL        ;
++Pl+Tra:iksi  A_FRONT_CLIT_OPT     ;
+
+LEXICON A_FRONT_STRONG_PLURALS
+
+
++Pl+Ess:inä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
++Cmt:ine        A_FRONT_POSS_ÄN_CLIT_OPT      ;
+
+LEXICON A_BACK_STRONG_PLURALS
+
+
++Pl+Ess:ina   A_BACK_POSS_AN_CLIT_OPT      ;
++Cmt:ine        A_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON A_BACK_PARTITIVE_A
+
+
+
++Sg+Par:a      A_BACK_POSS_CLIT_OPT      ;
+
+LEXICON A_FRONT_PARTITIVE_Ä
+
+
++Sg+Par:ä      A_FRONT_POSS_CLIT_OPT      ;
+
+LEXICON A_BACK_PARTITIVE_A_AN
+
+
++Sg+Par:a      A_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON A_FRONT_PARTITIVE_Ä_ÄN
+
+
+0+Sg+Par:ä     A_FRONT_POSS_ÄN_CLIT_OPT     ;
+
+LEXICON A_BACK_PARTITIVE_TA
+
++Sg+Par:ta     A_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON A_FRONT_PARTITIVE_TÄ
+
++Sg+Par:tä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
+
+LEXICON A_BACK_ILLATIVE_HAN
+
+
++Sg+Ill:han    A_BACK_CLIT_OPT         ;
++Sg+Ill:ha     A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_HIN
+
++Sg+Ill:hin    A_FRONT_CLIT_OPT        ;
++Sg+Ill:hi     A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_HUN
+
++Sg+Ill:hun    A_BACK_CLIT_OPT        ;
++Sg+Ill:hu     A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_HYN
+
++Sg+Ill:hyn    A_FRONT_CLIT_OPT         ;
++Sg+Ill:hy     A_FRONT_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_HÄN
+
++Sg+Ill:hän    A_FRONT_CLIT_OPT         ;
++Sg+Ill:hä     A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_SEEN
+
++Sg+Ill:seen      A_BACK_CLIT_OPT     ;
++Sg+Ill:see       A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_SEEN
+
++Sg+Ill:seen      A_FRONT_CLIT_OPT     ;
++Sg+Ill:see       A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_AN
+
++Sg+Ill:an     A_BACK_CLIT_OPT         ;
++Sg+Ill:a      A_BACK_POSS     ;
+
+
+LEXICON A_BACK_ILLATIVE_EN
+
++Sg+Ill:en     A_BACK_CLIT_OPT         ;
++Sg+Ill:e      A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_EN
+
++Sg+Ill:en     A_FRONT_CLIT_OPT         ;
++Sg+Ill:e      A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_IN
+
++Sg+Ill:in     A_BACK_CLIT_OPT         ;
++Sg+Ill:i      A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_IN
+
++Sg+Ill:in     A_FRONT_CLIT_OPT         ;
++Sg+Ill:i      A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_ON
+
++Sg+Ill:on     A_BACK_CLIT_OPT         ;
++Sg+Ill:o      A_BACK_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_UN
+
++Sg+Ill:un     A_BACK_CLIT_OPT         ;
++Sg+Ill:u      A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_YN
+
++Sg+Ill:yn     A_FRONT_CLIT_OPT         ;
++Sg+Ill:y      A_FRONT_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_ÄN
+
++Sg+Ill:än     A_FRONT_CLIT_OPT         ;
++Sg+Ill:ä      A_FRONT_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_ÖN
+
++Sg+Ill:ön     A_FRONT_CLIT_OPT         ;
++Sg+Ill:ö      A_FRONT_POSS     ;
+
+LEXICON A_BACK_PARTITIVE_IA
+
+
++Pl+Par:ia    A_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON A_FRONT_PARTITIVE_IÄ
+
++Pl+Par:iä    A_FRONT_POSS_ÄN_CLIT_OPT      ;
+
+LEXICON A_BACK_PARTITIVE_ITA
+
++Pl+Par:ita   A_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON A_FRONT_PARTITIVE_ITÄ
+
++Pl+Par:itä   A_FRONT_POSS_ÄN_CLIT_OPT      ;
+
+LEXICON A_BACK_PARTITIVE_JA
+
++Pl+Par:ja     A_BACK_POSS_AN_CLIT_OPT      ;
+
+LEXICON A_FRONT_PARTITIVE_JÄ
+
++Pl+Par:jä     A_FRONT_POSS_ÄN_CLIT_OPT      ;
+
+LEXICON A_BACK_GENITIVE_IDEN
+
+
++Pl+Gen:iden    A_BACK_CLIT_OPT     ;
++Pl+Gen:ide     A_BACK_POSS     ;
+
+LEXICON A_FRONT_GENITIVE_IDEN
+
++Pl+Gen:iden    A_FRONT_CLIT_OPT     ;
++Pl+Gen:ide     A_FRONT_POSS     ;
+
+LEXICON A_BACK_GENITIVE_IEN
+
++Pl+Gen:ien   A_BACK_CLIT_OPT     ;
++Pl+Gen:ie    A_BACK_POSS     ;
+
+LEXICON A_FRONT_GENITIVE_IEN
+
++Pl+Gen:ien   A_FRONT_CLIT_OPT     ;
++Pl+Gen:ie    A_FRONT_POSS     ;
+
+LEXICON A_BACK_GENITIVE_ITTEN
+
++Pl+Gen:itten     A_BACK_CLIT_OPT     ;
++Pl+Gen:itte      A_BACK_POSS     ;
+
+LEXICON A_FRONT_GENITIVE_ITTEN
+
++Pl+Gen:itten     A_FRONT_CLIT_OPT     ;
++Pl+Gen:itte      A_FRONT_POSS     ;
+
+LEXICON A_BACK_GENITIVE_JEN
+
++Pl+Gen:jen    A_BACK_CLIT_OPT     ;
++Pl+Gen:je     A_BACK_POSS     ;
+
+LEXICON A_FRONT_GENITIVE_JEN
+
++Pl+Gen:jen    A_FRONT_CLIT_OPT     ;
++Pl+Gen:je     A_FRONT_POSS     ;
+
+LEXICON A_BACK_GENITIVE_TEN
+
++Pl+Gen:ten    A_BACK_CLIT_OPT     ;
++Pl+Gen:te     A_BACK_POSS     ;
+
+LEXICON A_FRONT_GENITIVE_TEN
+
++Pl+Gen:ten    A_FRONT_CLIT_OPT     ;
++Pl+Gen:te     A_FRONT_POSS     ;
+
+LEXICON A_BACK_GENITIVE_IN
+
++Pl+Gen+Use/Rare:in    A_BACK_CLIT_OPT     ;
++Pl+Gen+Use/Rare:i     A_BACK_POSS     ;
+
+LEXICON A_FRONT_GENITIVE_IN
+
++Pl+Gen+Use/Rare:in    A_FRONT_CLIT_OPT     ;
++Pl+Gen+Use/Rare:i     A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_IHIN
+
+
++Pl+Ill:ihin   A_BACK_CLIT_OPT    ;
++Pl+Ill:ihi    A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_IHIN
+
++Pl+Ill:ihin   A_FRONT_CLIT_OPT    ;
++Pl+Ill:ihi    A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_IIN
+
++Pl+Ill:iin    A_BACK_CLIT_OPT     ;
++Pl+Ill:ii     A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_IIN
+
++Pl+Ill:iin    A_FRONT_CLIT_OPT     ;
++Pl+Ill:ii     A_FRONT_POSS     ;
+
+LEXICON A_BACK_ILLATIVE_ISIIN
+
++Pl+Ill:isiin  A_BACK_CLIT_OPT     ;
++Pl+Ill:isii   A_BACK_POSS     ;
+
+LEXICON A_FRONT_ILLATIVE_ISIIN
+
++Pl+Ill:isiin  A_FRONT_CLIT_OPT     ;
++Pl+Ill:isii   A_FRONT_POSS     ;
+
+LEXICON A_FRONT_POSS
+
+
++PxSg1:ni  A_FRONT_CLIT_OPT        ;
++PxSg2:si  A_FRONT_CLIT_OPT        ;
++PxSg3:nsä A_FRONT_CLIT_OPT        ;
++PxPl1:mme A_FRONT_CLIT_OPT        ;
++PxPl2:nne A_FRONT_CLIT_OPT        ;
++PxPl3:nsä A_FRONT_CLIT_OPT        ;
+
+LEXICON A_BACK_POSS
+
++PxSg1:ni  A_BACK_CLIT_OPT        ;
++PxSg2:si  A_BACK_CLIT_OPT        ;
++PxSg3:nsa A_BACK_CLIT_OPT        ;
++PxPl1:mme A_BACK_CLIT_OPT        ;
++PxPl2:nne A_BACK_CLIT_OPT        ;
++PxPl3:nsa A_BACK_CLIT_OPT        ;
+
+LEXICON A_BACK_POSS_AN
+
++PxSg3:an    A_BACK_CLIT_OPT     ;
++PxPl3:an    A_BACK_CLIT_OPT     ;
+
+LEXICON A_BACK_POSS_EN
+
++PxSg3:en    A_BACK_CLIT_OPT     ;
++PxPl3:en    A_BACK_CLIT_OPT     ;
+
+LEXICON A_FRONT_POSS_EN
+
++PxSg3:en    A_FRONT_CLIT_OPT     ;
++PxPl3:en    A_FRONT_CLIT_OPT     ;
+
+LEXICON A_FRONT_POSS_ÄN
+
++PxSg3:än    A_FRONT_CLIT_OPT     ;
++PxPl3:än    A_FRONT_CLIT_OPT     ;
+
+LEXICON A_BACK_CLIT
+
+
++Foc/han:han   #        ;
++Foc/han+Foc/kaan:hankaan  #        ;
++Foc/han+Qst:hanko #        ;
++Foc/han+Foc/pa:hanpa #        ;
++Qst:ko #        ;
++Qst+Foc/han:kohan #        ;
++Qst+Foc/kaan:kokaan    #        ;
++Qst+Foc/kin:kokin    #        ;
++Qst+Foc/pa:kopa   #        ;
++Qst+Foc/s:kos    #        ;
++Foc/pa:pa #        ;
++Foc/pa+Foc/han:pahan #        ;
++Foc/pa+Foc/kaan:pakaan    #        ;
++Foc/pa+Foc/kin:pakin    #        ;
++Foc/pa+Qst:pako   #        ;
++Foc/pa+Foc/s:pas    #        ;
++Foc/kin:kin  #        ;
++Foc/kin+Foc/han:kinhan  #        ;
++Foc/kin+Foc/kaan:kinkaan #        ;
++Foc/kin+Qst:kinko    #        ;
++Foc/kin+Foc/pa:kinpa    #        ;
++Foc/kaan:kaan  #        ;
++Foc/kaan+Foc/han:kaanhan  #        ;
++Foc/kaan+Foc/kin:kaankin #        ;
++Foc/kaan+Qst:kaanko    #        ;
++Foc/kaan+Foc/pa:kaanpa    #        ;
+
+LEXICON A_FRONT_CLIT
+
++Foc/han:hän   #        ;
++Foc/han+Foc/kaan:hänkään  #        ;
++Foc/han+Qst:hänkö #        ;
++Foc/han+Foc/pa:hänpä #        ;
++Qst:kö #        ;
++Qst+Foc/han:köhän #        ;
++Qst+Foc/kaan:kökään    #        ;
++Qst+Foc/kin:kökin    #        ;
++Qst+Foc/pa:köpä   #        ;
++Qst+Foc/s:kös    #        ;
++Foc/pa:pä #        ;
++Foc/pa+Foc/han:pähän #        ;
++Foc/pa+Foc/kaan:päkään    #        ;
++Foc/pa+Foc/kin:päkin    #        ;
++Foc/pa+Qst:päkö   #        ;
++Foc/pa+Foc/s:päs    #        ;
++Foc/kin:kin  #        ;
++Foc/kin+Foc/han:kinhän  #        ;
++Foc/kin+Foc/kaan:kinkään #        ;
++Foc/kin+Qst:kinkö    #        ;
++Foc/kin+Foc/pa:kinpä    #        ;
++Foc/kaan:kään  #        ;
++Foc/kaan+Foc/han:käänhän  #        ;
++Foc/kaan+Foc/kin:käänkin #        ;
++Foc/kaan+Qst:käänkö    #        ;
++Foc/kaan+Foc/pa:käänpä    #        ;
+
+
+
+
+LEXICON A_BACK_CLIT_OPT
+0    #   ;
+0   A_BACK_CLIT    ;
+
+LEXICON A_FRONT_CLIT_OPT
+0    #   ;
+0   A_FRONT_CLIT    ;
+
+LEXICON A_BACK_SINGULARS
+0    A_BACK_STRONG_SINGULARS       ;
+0    A_BACK_WEAK_SINGULARS      ;
+
+LEXICON A_FRONT_SINGULARS
+0    A_FRONT_STRONG_SINGULARS       ;
+0    A_FRONT_WEAK_SINGULARS      ;
+
+LEXICON A_BACK_PLURALS
+0   A_BACK_STRONG_PLURALS ;
+0   A_BACK_WEAK_PLURALS    ;
+
+LEXICON A_FRONT_PLURALS
+0   A_FRONT_STRONG_PLURALS ;
+0   A_FRONT_WEAK_PLURALS    ;
+
+LEXICON A_BACK_POSS_AN_CLIT_OPT
+0    A_BACK_POSS   ;
+0    A_BACK_POSS_AN ;
+0    A_BACK_CLIT ;
+0    #    ;
+
+LEXICON A_FRONT_POSS_ÄN_CLIT_OPT
+0    A_FRONT_POSS   ;
+0    A_FRONT_POSS_ÄN  ;
+0    A_FRONT_CLIT ;
+0    #    ;
+
+LEXICON A_BACK_POSS_EN_CLIT_OPT
+0    A_BACK_POSS   ;
+0    A_BACK_POSS_EN ;
+0    A_BACK_CLIT ;
+0    #    ;
+
+LEXICON A_FRONT_POSS_EN_CLIT_OPT
+0    A_FRONT_POSS   ;
+0    A_FRONT_POSS_EN  ;
+0    A_FRONT_CLIT ;
+0    #    ;
+
+LEXICON A_BACK_POSS_CLIT_OPT
+0    A_BACK_POSS   ;
+0    A_BACK_CLIT ;
+0    #    ;
+
+LEXICON A_FRONT_POSS_CLIT_OPT
+0    A_FRONT_POSS   ;
+0    A_FRONT_CLIT ;
+0    #    ;
+
+LEXICON A_BACK_POSS_EN_OBL
+0   A_BACK_POSS  ;
+0   A_BACK_POSS_EN   ;
+
+LEXICON A_FRONT_POSS_EN_OBL
+0   A_FRONT_POSS  ;
+0   A_FRONT_POSS_EN   ;
+
+LEXICON A_COMPOUND_0
+0   A_COMPOUND  ;
+
+LEXICON A_COMPOUND_N
+0:n     A_COMPOUND  ;
+
+LEXICON A_COMPOUND_IEN
+0:ien   A_COMPOUND  ;
+
+LEXICON A_COMPOUND_IDEN
+0:iden  A_COMPOUND  ;
+
+LEXICON A_COMPOUND_IN
+0:in    A_COMPOUND  ;
+
+LEXICON A_COMPOUND_ITTEN
+0:itten A_COMPOUND  ;
+
+LEXICON A_COMPOUND_JEN
+0:jen   A_COMPOUND  ;
+
+LEXICON A_COMPOUND_TEN
+0:ten   A_COMPOUND  ;
+
+LEXICON A_COMPOUND
+[BOUNDARY=COMPOUND][GUESS=COMPOUND]:{#}   NOMINALS  ;
+
+
+
+
+
+
 

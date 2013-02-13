@@ -1,0 +1,166 @@
+!! !!!Adverb inflection
+!! Most adverbs are morphologically either sti-derivations of adjectives or
+!! some specific form of an existing or archaic noun, and they have limited
+!! inflection in form of possessives and clitics carried over. According to
+!! modern dictionaries different forms of same root are separate adverbs,
+!! so they are not inflected here, but listed in roots.
+
+
+LEXICON ADV_BACK_POSS
+
+
++PxSg1:%>ni  ADV_BACK_CLIT_OPT        ;
++PxSg2:%>si  ADV_BACK_CLIT_OPT        ;
++PxSg3:%>nsa ADV_BACK_CLIT_OPT        ;
++PxPl1:%>mme ADV_BACK_CLIT_OPT        ;
++PxPl2:%>nne ADV_BACK_CLIT_OPT        ;
++PxPl3:%>nsa ADV_BACK_CLIT_OPT        ;
+
+LEXICON ADV_FRONT_POSS
+
++PxSg1:%>ni  ADV_FRONT_CLIT_OPT        ;
++PxSg2:%>si  ADV_FRONT_CLIT_OPT        ;
++PxSg3:%>nsä ADV_FRONT_CLIT_OPT        ;
++PxPl1:%>mme ADV_FRONT_CLIT_OPT        ;
++PxPl2:%>nne ADV_FRONT_CLIT_OPT        ;
++PxPl3:%>nsä ADV_FRONT_CLIT_OPT        ;
+
+LEXICON ADV_BACK_POSS_AN
+
++PxSg3:%>an    ADV_BACK_CLIT_OPT     ;
++PxPl3:%>an    ADV_BACK_CLIT_OPT     ;
+
+LEXICON ADV_BACK_POSS_EN
+
++PxSg3:%>en    ADV_BACK_CLIT_OPT     ;
++PxPl3:%>en    ADV_BACK_CLIT_OPT     ;
+
+LEXICON ADV_FRONT_POSS_EN
+
++PxSg3:%>en    ADV_FRONT_CLIT_OPT     ;
++PxPl3:%>en    ADV_FRONT_CLIT_OPT     ;
+
+LEXICON ADV_FRONT_POSS_ÄN
+
++PxSg3:%>än    ADV_FRONT_CLIT_OPT     ;
++PxPl3:%>än    ADV_FRONT_CLIT_OPT     ;
+
+LEXICON ADV_BACK_CLIT
+
+
++Foc/han:%>han   #        ;
++Foc/han+Foc/kaan:%>hankaan  #        ;
++Foc/han+Qst:%>hanko #        ;
++Foc/han+Foc/pa:%>hanpa #        ;
++Qst:%>ko #        ;
++Qst+Foc/han:%>kohan #        ;
++Qst+Foc/kaan:%>kokaan    #        ;
++Qst+Foc/kin:%>kokin    #        ;
++Qst+Foc/pa:%>kopa   #        ;
++Qst+Foc/s:%>kos    #        ;
++Foc/pa:%>pa #        ;
++Foc/pa+Foc/han:%>pahan #        ;
++Foc/pa+Foc/kaan:%>pakaan    #        ;
++Foc/pa+Foc/kin:%>pakin    #        ;
++Foc/pa+Qst:%>pako   #        ;
++Foc/pa+Foc/s:%>pas    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhan  #        ;
++Foc/kin+Foc/kaan:%>kinkaan #        ;
++Foc/kin+Qst:%>kinko    #        ;
++Foc/kin+Foc/pa:%>kinpa    #        ;
++Foc/kaan:%>kaan  #        ;
++Foc/kaan+Foc/han:%>kaanhan  #        ;
++Foc/kaan+Foc/kin:%>kaankin #        ;
++Foc/kaan+Qst:%>kaanko    #        ;
++Foc/kaan+Foc/pa:%>kaanpa    #        ;
+
+LEXICON ADV_FRONT_CLIT
+
++Foc/han:%>hän   #        ;
++Foc/han+Foc/kaan:%>hänkään  #        ;
++Foc/han+Qst:%>hänkö #        ;
++Foc/han+Foc/pa:%>hänpä #        ;
++Qst:%>kö #        ;
++Qst+Foc/han:%>köhän #        ;
++Qst+Foc/kaan:%>kökään    #        ;
++Qst+Foc/kin:%>kökin    #        ;
++Qst+Foc/pa:%>köpä   #        ;
++Qst+Foc/s:%>kös    #        ;
++Foc/pa:%>pä #        ;
++Foc/pa+Foc/han:%>pähän #        ;
++Foc/pa+Foc/kaan:%>päkään    #        ;
++Foc/pa+Foc/kin:%>päkin    #        ;
++Foc/pa+Qst:%>päkö   #        ;
++Foc/pa+Foc/s:%>päs    #        ;
++Foc/kin:%>kin  #        ;
++Foc/kin+Foc/han:%>kinhän  #        ;
++Foc/kin+Foc/kaan:%>kinkään #        ;
++Foc/kin+Qst:%>kinkö    #        ;
++Foc/kin+Foc/pa:%>kinpä    #        ;
++Foc/kaan:%>kään  #        ;
++Foc/kaan+Foc/han:%>käänhän  #        ;
++Foc/kaan+Foc/kin:%>käänkin #        ;
++Foc/kaan+Qst:%>käänkö    #        ;
++Foc/kaan+Foc/pa:%>käänpä    #        ;
+
+
+
+
+LEXICON ADV_BACK_CLIT_OPT
+0    #   ;
+0   ADV_BACK_CLIT    ;
+
+LEXICON ADV_FRONT_CLIT_OPT
+0    #   ;
+0   ADV_FRONT_CLIT    ;
+
+LEXICON ADV_BACK_POSS_AN_OPT
+0    ADV_BACK_POSS   ;
+0    ADV_BACK_POSS_AN ;
+0    ADV_BACK_CLIT ;
+0    #    ;
+
+LEXICON ADV_FRONT_POSS_ÄN_OPT
+0    ADV_FRONT_POSS   ;
+0    ADV_FRONT_POSS_ÄN  ;
+0    ADV_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ADV_BACK_POSS_EN_OPT
+0    ADV_BACK_POSS   ;
+0    ADV_BACK_POSS_EN ;
+0    ADV_BACK_CLIT ;
+0    #    ;
+
+LEXICON ADV_FRONT_POSS_EN_OPT
+0    ADV_FRONT_POSS   ;
+0    ADV_FRONT_POSS_EN  ;
+0    ADV_FRONT_CLIT ;
+0    #    ;
+
+
+
+
+
+
+LEXICON ADV_FRONT_POSS_OPT
+0    ADV_FRONT_POSS   ;
+0    ADV_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ADV_BACK_POSS_AN_OBL
+0   ADV_BACK_POSS  ;
+0   ADV_BACK_POSS_AN   ;
+
+LEXICON ADV_BACK_POSS_EN_OBL
+0   ADV_BACK_POSS  ;
+0   ADV_BACK_POSS_EN   ;
+
+LEXICON ADV_FRONT_POSS_EN_OBL
+0   ADV_FRONT_POSS  ;
+0   ADV_FRONT_POSS_EN   ;
+
+LEXICON ADV_FRONT_POSS_ÄN_OBL
+0   ADV_FRONT_POSS  ;
+0   ADV_FRONT_POSS_ÄN   ;

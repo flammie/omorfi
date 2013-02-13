@@ -1,142 +1,730 @@
-LEXICON VerbStem/Present
-@D.NEED@@P.NEED.REST@[VOICE=ACT][DRV=MAISILLA]:@D.NEED@@P.NEED.REST@{AV+}m{aä}isill{aä}	Possessive/Obligatory+Vn		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ABE]:@D.NEED@@P.NEED.REST@{AV+}m{aä}tt{aä}	Possessive/Optional+Vn		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ADE]:@D.NEED@@P.NEED.REST@{AV+}m{aä}ll{aä}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ELA]:@D.NEED@@P.NEED.REST@{AV+}m{aä}st{aä}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=ILL]:@D.NEED@@P.NEED.REST@{AV+}m{aä}{aä}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=INE]:@D.NEED@@P.NEED.REST@{AV+}m{aä}ss{aä}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=MA][NUM=SG][CASE=INS]:@D.NEED@@P.NEED.REST@{AV+}m{aä}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG2][CLIT=S]:@D.NEED@@P.NEED.REST@{AV-}s	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=PL1]:@D.NEED@@P.NEED.REST@{present}m{AV-}me	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=PL2]:@D.NEED@@P.NEED.REST@{present}t{AV-}te	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=PL3]:@D.NEED@@P.NEED.REST@{present}{AV+}v{aä}t	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=SG1]:@D.NEED@@P.NEED.REST@{present}n{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=SG2]:@D.NEED@@P.NEED.REST@{present}t{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PRES][PRS=SG3]:@D.NEED@@P.NEED.REST@{present}{aeiouyäö}{AV+}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[MOOD=INDV][TENSE=PRES][NEG=CON]:@D.NEED@@P.NEED.REST@{present}{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=MA]:@D.NEED@@P.NEED.REST@{AV+}m	kotus_10_ADJECTIVE/stemfiller		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=NEG]:@D.NEED@@P.NEED.REST@{AV+}m{aä}t{t~~}{oö}{C}	kotus_34_ADJECTIVE/stemfiller		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=VA]:@D.NEED@@P.NEED.REST@{AV+}v	kotus_10_ADJECTIVE/stemfiller		;
-! semi-derivs
-@U.NEED.NOMINAL@[DRV=MINEN][POS=NOUN]:@U.NEED.NOMINAL@{AV+}mi	kotus_38_NOUN/stemfiller		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][PCP=VA][DRV=INEN]:@D.NEED@@P.NEED.REST@{AV+}v{aä}i	kotus_38_ADJECTIVE/stemfiller		;
-@D.NEED@[GUESS=DERIVE][DRV=TTAA][POS=VERB][KTN=53][KAV=C]:@D.NEED@{present}{AV-}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@D.NEED@[GUESS=DERIVE][DRV=TATTAA][POS=VERB][KTN=53][KAV=C]:@D.NEED@{present}{AV-}t{aä}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@D.NEED@[GUESS=DERIVE][DRV=TATUTTAA][POS=VERB][KTN=53][KAV=C]:@D.NEED@{present}{AV-}t{aä}t{uy}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-! derivatoins
-[GUESS=DERIVE][DRV=JA][POS=NOUN]:{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
-[GUESS=DERIVE][VOICE=ACT][PCP=VA][DRV=VS][POS=NOUN]:{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
-! ugly long analyses
-@P.LONGxANALYSIS.TURE@@U.NEED.NOMINAL@{AV+}mi	kotus_38_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@@P.NEED.REST@{AV+}v{aä}i	kotus_38_ADJECTIVE/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{uy}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@P.LONGxANALYSIS.TURE@{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
-@P.LONGxANALYSIS.TURE@{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
+!! !!!Verb inflection and derivation
+!! The verbs' conjugation includes voice (in Finnish grammars also verbal 
+!! genus),  tense/mood (tempus/modus), personal endings and negation marker
+!! The verbs also have productive derivations to defective nouns as
+!! infinitives, and to adjectives as participles, which are considered to be 
+!! part of inflection and thus included in most versions 
+!! ([VISK § 105|http://scripta.kotus.fi/visk/sisalto.php?p?105]).
+!! The morphology of participles and historical 4th infinitive is further
+!! detailed in section Deverbal nouns'  morphology.
+!!
+!! The analysis strings of verb are not as systematic as nouns,
+!! as many categories collapse together in forms, e.g. the tense and mood
+!! are only distinct with indicative past and non-past, otherwise mood implies
+!! tense in semantic sense.
 
-LEXICON VerbStem/AInfinitive
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=A][NUM=SG][CASE=LAT]:@D.NEED@@P.NEED.REST@{AV+}{aä}		Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=A][NUM=SG][CASE=TRA]:@D.NEED@@P.NEED.REST@{AV+}{aä}kse	Possessive/Obligatory+Vn		;
 
-LEXICON VerbStem/EInfinitive
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=E][NUM=SG][CASE=INE]:@D.NEED@@P.NEED.REST@{AV+}ess{aä}	Possessive/Optional+Vn		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][INF=E][NUM=SG][CASE=INS]:@D.NEED@@P.NEED.REST@{AV+}en	Clitic/Optional		;
 
-LEXICON VerbStem/Imperative
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}mme	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2][CLIT=S]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}s	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL3]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}t	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG3]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[MOOD=IMPV][NEG=CON]:@D.NEED@@P.NEED.REST@{AV+}k{oö}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG1][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}ni	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=SG1][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}mi	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}tte	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2][STYLE=RARE]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}tten	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=RARE][PRS=SG1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}{oö}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=ARCHAIC][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}{oö}s	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=RARE][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}tte	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=OPTV][STYLE=RARE][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}k{oö}{oö}mme	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=IMPV][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}k{aä}{aä}	Clitic/Optional		;
+LEXICON V_BACK_WEAK_PRESENT
 
-LEXICON VerbStem/Conditional
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=PL1]:@D.NEED@@P.NEED.REST@i{AV+}simme	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=PL2]:@D.NEED@@P.NEED.REST@i{AV+}sitte	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=PL3]:@D.NEED@@P.NEED.REST@i{AV+}siv{aä}t	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG1]:@D.NEED@@P.NEED.REST@i{AV+}sin	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG2]:@D.NEED@@P.NEED.REST@i{AV+}sit	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG3]:@D.NEED@@P.NEED.REST@i{AV+}si	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=COND][PRS=SG3][STYLE=NONSTANDARD]:@D.NEED@@P.NEED.REST@i{AV+}s	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[MOOD=COND][NEG=CON]:@D.NEED@@P.NEED.REST@i{AV+}si	Clitic/Optional		;
 
-LEXICON VerbStem/Passive
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=COND][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}t{aä}isiin	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=COND][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}isi	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=COND][PRS=PE4][STYLE=NONSTANDARD][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}is	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=IMPV][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=IMPV][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}t{aä}k{oö}{oö}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][INF=E][CASE=INE]:@D.NEED@@P.NEED.REST@{AV-}t{aä}ess{aä}	Possessive/Optional+Vn		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][INF=E][CASE=INS]:@D.NEED@@P.NEED.REST@{AV-}t{aä}en	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][INF=MA][NUM=SG][CASE=INS]:@D.NEED@@P.NEED.REST@{AV-}t{aä}m{aä}n	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=POTN][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}t{aä}neen	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=POTN][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{AV-}t{aä}ne	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PAST][PRS=PE4]:@D.NEED@@P.NEED.REST@{AV-}tiin	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PAST][PRS=PE4][STYLE=NONSTANDARD]:@D.NEED@@P.NEED.REST@{AV-}tii	Clitic/Optional		;
-@U.NEED.NOMINAL@[VOICE=PSS][PCP=VA]:@U.NEED.NOMINAL@{AV-}t{aä}v	kotus_10_ADJECTIVE/stemfiller		;
 
-LEXICON VerbStem/Past
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=PL1]:@D.NEED@@P.NEED.REST@im{AV-}me	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=PL2]:@D.NEED@@P.NEED.REST@it{AV-}te	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=PL3]:@D.NEED@@P.NEED.REST@i{AV+}v{aä}t	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=SG1]:@D.NEED@@P.NEED.REST@in{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=SG2]:@D.NEED@@P.NEED.REST@it{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=INDV][TENSE=PAST][PRS=SG3]:@D.NEED@@P.NEED.REST@i{AV+}	Clitic/Optional		;
++Act+Ind+Prs+Sg1:n V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Sg2:t V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Pl1:mme   V_BACK_CLIT_OPT     ;
++Act+Ind+Prs+Pl2:tte   V_BACK_CLIT_OPT     ;
++Ind+Prs+ConNeg:0    V_BACK_CLIT_OPT     ;
++Act+Imprt+Sg2:0    V_BACK_CLIT_OPT     ;
 
-LEXICON VerbStem/Potential
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}emme	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}ette	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=PL3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}ev{aä}t	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=SG1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}en	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}et	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=POTN][PRS=SG3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}ee	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[MOOD=POTN][NEG=CON]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}e	Clitic/Optional		;
-@U.NEED.NOMINAL@[VOICE=ACT][PCP=NUT]:@U.NEED.NOMINAL@{AV+}{nlrs}	kotus_47_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@[VOICE=ACT][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV+}{nlrs}{uy}t	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=SG1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisin	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=SG2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisit	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=SG3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisi	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=PL1]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisimme	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=PL2]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisitte	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=ACT][MOOD=EVNV][STYLE=ARCHAIC][PRS=PL3]:@D.NEED@@P.NEED.REST@{AV+}{nlrs}eisivät	Clitic/Optional		;
+LEXICON V_FRONT_WEAK_PRESENT
 
-LEXICON VerbStem/ParticiplePassive
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PRES][PRS=PE4]:@D.NEED@@P.NEED.REST@{aä}{aä}n{AV-}{F}{AV-}	Clitic/Optional		;
-@D.NEED@@P.NEED.REST@[VOICE=PSS][MOOD=INDV][TENSE=PRES][PRS=PE4][NEG=CON]:@D.NEED@@P.NEED.REST@{aä}{AV-}	Clitic/Optional		;
 
-LEXICON VerbAllomorph/NUTPassiveParticiple
-@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
++Act+Ind+Prs+Sg1:n V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Sg2:t V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Pl1:mme   V_FRONT_CLIT_OPT     ;
++Act+Ind+Prs+Pl2:tte   V_FRONT_CLIT_OPT     ;
++Ind+Prs+ConNeg:0    V_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg2:0    V_FRONT_CLIT_OPT     ;
 
-LEXICON VerbAllomorph/NUTPassiveParticiple/C
-@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{C}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
 
-LEXICON VerbAllomorph/NUTPassiveParticiple/F
-@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{F}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
 
-LEXICON VerbAllomorph/NUTPassiveParticiple/I
-@U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{I}	kotus_1_ADJECTIVE/stemfiller		;
-@U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
-[GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
+LEXICON V_BACK_STRONG_PRESENT
+
+
+
++Act+Ind+Prs+Pl3:vat   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Abe:matta   V_BACK_POSS_AN_OPT      ;
++Act+InfMa+Sg+Ade:malla   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ela:masta   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ill:maan    V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ine:massa   V_BACK_CLIT_OPT     ;
++Act+InfMa+Sg+Ins:man    V_BACK_CLIT_OPT     ;
++Act+Der/maisilla:maisilla   V_BACK_POSS_AN_OBL        ;
+
+LEXICON V_FRONT_STRONG_PRESENT
+
+
++Act+Ind+Prs+Pl3:vät   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Abe:mättä   V_FRONT_POSS_AN_OPT      ;
++Act+InfMa+Sg+Ade:mällä   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ela:mästä   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ill:mään    V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ine:mässä   V_FRONT_CLIT_OPT     ;
++Act+InfMa+Sg+Ins:män    V_FRONT_CLIT_OPT     ;
++Act+Der/maisilla:mäisillä   V_FRONT_POSS_AN_OBL        ;
+
+
+
+
+
+LEXICON V_BACK_3SG_A
+
++Act+Ind+Prs+Sg3:a V_BACK_CLIT_OPT     ;
+
+LEXICON V_BACK_3SG_E
+
++Act+Ind+Prs+Sg3:e V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_3SG_E
+
++Act+Ind+Prs+Sg3:e V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_3SG_I
+
++Act+Ind+Prs+Sg3:i V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_3SG_I
+
++Act+Ind+Prs+Sg3:i V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_3SG_O
+
++Act+Ind+Prs+Sg3:o V_BACK_CLIT_OPT     ;
+
+LEXICON V_BACK_3SG_U
+
++Act+Ind+Prs+Sg3:u V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_3SG_Y
+
++Act+Ind+Prs+Sg3:y V_FRONT_CLIT_OPT     ;
+
+LEXICON V_FRONT_3SG_Ö
+
++Act+Ind+Prs+Sg3:ö V_FRONT_CLIT_OPT     ;
+
+LEXICON V_FRONT_3SG_Ä
+
++Act+Ind+Prs+Sg3:ä V_FRONT_CLIT_OPT     ;
+
+
+
+LEXICON V_BACK_WEAK_PAST
+
+
++Act+Ind+Prt+Sg1:in   V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Sg2:it   V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl1:imme V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl2:itte V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_WEAK_PAST
+
++Act+Ind+Prt+Sg1:in   V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg2:it   V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl1:imme V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Pl2:itte V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_STRONG_PAST
+
++Act+Ind+Prt+Sg3:i    V_BACK_CLIT_OPT     ;
++Act+Ind+Prt+Pl3:ivat  V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_STRONG_PAST
+
++Act+Ind+Prt+Pl3:ivät  V_FRONT_CLIT_OPT     ;
++Act+Ind+Prt+Sg3:i    V_FRONT_CLIT_OPT     ;
+
+
+
+LEXICON V_BACK_IMPERATIVE
+
+
++Act+Imprt+Pl1:kaamme   V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2+Foc/s:kaas  V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2:kaa  V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl3:koot V_BACK_CLIT_OPT     ;
++Act+Imprt+Sg3:kon V_BACK_CLIT_OPT     ;
++Imprt+ConNeg:ko   V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_IMPERATIVE
+
++Act+Imprt+Pl1:käämme   V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2+Foc/s:kääs  V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2:kää  V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl3:kööt V_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg3:kön V_FRONT_CLIT_OPT     ;
++Imprt+ConNeg:kö   V_FRONT_CLIT_OPT     ;
+
+
+
+LEXICON V_BACK_CONDITIONAL
+
+
++Act+Cond+Pl1:isimme V_BACK_CLIT_OPT     ;
++Act+Cond+Pl2:isitte V_BACK_CLIT_OPT     ;
++Act+Cond+Pl3:isivat  V_BACK_CLIT_OPT     ;
++Act+Cond+Sg1:isin   V_BACK_CLIT_OPT     ;
++Act+Cond+Sg2:isit   V_BACK_CLIT_OPT     ;
++Act+Cond+Sg3:isi    V_BACK_CLIT_OPT     ;
++Cond+ConNeg:isi V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_CONDITIONAL
+
++Act+Cond+Pl1:isimme V_FRONT_CLIT_OPT     ;
++Act+Cond+Pl2:isitte V_FRONT_CLIT_OPT     ;
++Act+Cond+Pl3:isivät  V_FRONT_CLIT_OPT     ;
++Act+Cond+Sg1:isin   V_FRONT_CLIT_OPT     ;
++Act+Cond+Sg2:isit   V_FRONT_CLIT_OPT     ;
++Act+Cond+Sg3:isi    V_FRONT_CLIT_OPT     ;
++Cond+ConNeg:isi V_FRONT_CLIT_OPT     ;
+
+
+
+LEXICON V_BACK_POTENTIAL_N
+
+
++Act+Pot+Pl1:nemme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:nette V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:nevat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:nen   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:net   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:nee   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:ne V_BACK_CLIT_OPT     ;
++Act+PrfPrc:n   A_KULUNUT       ;
++Act+Ind+Prt+ConNeg:nut  V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_POTENTIAL_N
+
++Act+Pot+Pl1:nemme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:nette V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:nevät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:nen   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:net   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:nee   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:ne V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:n   A_ÄLLISTYNYT     ;
++Act+Ind+Prt+ConNeg:nyt  V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_POTENTIAL_S
+
++Act+Pot+Pl1:semme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:sette V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:sevat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:sen   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:set   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:see   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:se V_BACK_CLIT_OPT     ;
++Act+PrfPrc:s   A_KULUNUT       ;
++Act+Ind+Prt+ConNeg:sut  V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_POTENTIAL_S
+
++Act+Pot+Pl1:semme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:sette V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:sevät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:sen   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:set   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:see   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:se V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:s A_ÄLLISTYNYT      ;
++Act+Ind+Prt+ConNeg:syt  V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_POTENTIAL_L
+
++Act+Pot+Pl1:lemme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:lette V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:levat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:len   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:let   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:lee   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:le V_BACK_CLIT_OPT     ;
++Act+PrfPrc:l  A_KULUNUT      ;
++Act+Ind+Prt+ConNeg:lut  V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_POTENTIAL_L
+
++Act+Pot+Pl1:lemme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:lette V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:levät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:len   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:let   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:lee   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:le V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:l  A_ÄLLISTYNYT  ;
++Act+Ind+Prt+ConNeg:lyt  V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_POTENTIAL_R
+
++Act+Pot+Pl1:remme V_BACK_CLIT_OPT     ;
++Act+Pot+Pl2:rette V_BACK_CLIT_OPT     ;
++Act+Pot+Pl3:revat  V_BACK_CLIT_OPT     ;
++Act+Pot+Sg1:ren   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg2:ret   V_BACK_CLIT_OPT     ;
++Act+Pot+Sg3:ree   V_BACK_CLIT_OPT     ;
++Pot+ConNeg:re V_BACK_CLIT_OPT     ;
++Act+PrfPrc:r  A_KULUNUT      ;
++Act+Ind+Prt+ConNeg:rut  V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_POTENTIAL_R
+
++Act+Pot+Pl1:remme V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl2:rette V_FRONT_CLIT_OPT     ;
++Act+Pot+Pl3:revät  V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg1:ren   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg2:ret   V_FRONT_CLIT_OPT     ;
++Act+Pot+Sg3:ree   V_FRONT_CLIT_OPT     ;
++Pot+ConNeg:re V_FRONT_CLIT_OPT     ;
++Act+PrfPrc:r  A_ÄLLISTYNYT  ;
++Act+Ind+Prt+ConNeg:ryt  V_FRONT_CLIT_OPT     ;
+
+
+
+
+
+
+LEXICON V_BACK_PASSIVE
+
+
+
++Pss+Cond+Pe4:taisiin V_BACK_CLIT_OPT     ;
++Pss+Cond+Pe4+ConNeg:taisi  V_BACK_CLIT_OPT     ;
++Pss+Imprt+Pe4+ConNeg:tako    V_BACK_CLIT_OPT     ;
++Pss+Imprt+Pe4:takoon    V_BACK_CLIT_OPT     ;
++Pss+InfE+Ine:taessa  V_BACK_CLIT_OPT      ;
++Pss+InfE+Ins:taen   V_BACK_CLIT_OPT     ;
++Pss+InfMa+Sg+Ins:taman  V_BACK_CLIT_OPT     ;
++Pss+Pot+Pe4:taneen  V_BACK_CLIT_OPT     ;
++Pss+Pot+Pe4+ConNeg:tane   V_BACK_CLIT_OPT     ;
++Pss+Ind+Prt+Pe4:tiin V_BACK_CLIT_OPT     ;
++Pss+PrsPrc:tav    N_SOITTAJA   ;
+
+LEXICON V_FRONT_PASSIVE
+
++Pss+Cond+Pe4:täisiin V_FRONT_CLIT_OPT     ;
++Pss+Cond+Pe4+ConNeg:täisi  V_FRONT_CLIT_OPT     ;
++Pss+Imprt+Pe4+ConNeg:täkö    V_FRONT_CLIT_OPT     ;
++Pss+Imprt+Pe4:täköön    V_FRONT_CLIT_OPT     ;
++Pss+InfE+Ine:täessa  V_FRONT_CLIT_OPT      ;
++Pss+InfE+Ins:täen   V_FRONT_CLIT_OPT     ;
++Pss+InfMa+Ins:tämän  V_FRONT_CLIT_OPT     ;
++Pss+Pot+Pe4:täneen  V_FRONT_CLIT_OPT     ;
++Pss+Pot+Pe4+ConNeg:täne   V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prt+Pe4:tiin V_FRONT_CLIT_OPT     ;
++Pss+PrsPrc:täv    A_TYÖLLISTETTÄVÄ ;
+
+
+
+
+
+LEXICON V_BACK_PASSIVE_T
+
++Pss+Ind+Prs+Pe4:taan    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:ta    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_PASSIVE_T
+
++Pss+Ind+Prs+Pe4:tään    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:tä    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_PASSIVE_D
+
++Pss+Ind+Prs+Pe4:daan    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:da    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_PASSIVE_D
+
++Pss+Ind+Prs+Pe4:dään    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:dä    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_PASSIVE_L
+
++Pss+Ind+Prs+Pe4:laan    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:la    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_PASSIVE_L
+
++Pss+Ind+Prs+Pe4:lään    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:lä    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_PASSIVE_R
+
++Pss+Ind+Prs+Pe4:raan    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:ra    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_FRONT_PASSIVE_R
+
++Pss+Ind+Prs+Pe4:rään    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:rä    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_PASSIVE_N
+
++Pss+Ind+Prs+Pe4:naan    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:na    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_PASSIVE_N
+
++Pss+Ind+Prs+Pe4:nään    V_FRONT_CLIT_OPT     ;
++Pss+Ind+Prs+Pe4+ConNeg:nä    V_FRONT_CLIT_OPT     ;
+
+
+
+
+LEXICON V_BACK_AINF
+
+
++Act+InfA+Sg+Lat:a     V_BACK_CLIT_OPT     ;
++Act+InfA+Sg+Tra:akse  V_BACK_POSS_EN_OBL        ;
+
+LEXICON V_FRONT_AINF
+
++Act+InfA+Sg+Lat:ä     V_FRONT_CLIT_OPT     ;
++Act+InfA+Sg+Tra:äkse  V_FRONT_POSS_EN_OBL        ;
+
+LEXICON V_BACK_EINF
+
+
++Act+InfE+Sg+Ine:essa   V_BACK_POSS_AN_OPT      ;
++Act+InfE+Sg+Ins:en    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_EINF
+
++Act+InfE+Sg+Ine:essä   V_FRONT_POSS_AN_OPT      ;
++Act+InfE+Sg+Ins:en    V_FRONT_CLIT_OPT     ;
+
+
+
+LEXICON V_BACK_TUPCP_STRONG
+
+
++Pss+PrfPrc:tu            A_VALKAISTU        ;
++Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_TUPCP_STRONG
+
++Pss+PrfPrc:ty            A_HÄPÄISTY     ;
++Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_TUPCP_0
+
++Pss+PrfPrc:0             A_VIMMATTU      ;
++Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_TUPCP_0
+
++Pss+PrfPrc:0             A_YLENNETTY       ;
++Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_TUPCP_D
+
++Pss+PrfPrc:0             A_VIIPALOITU    ;
++Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_TUPCP_D
+
++Pss+PrfPrc:0             A_YKSILÖITY        ;
++Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_TUPCP_L
+
++Pss+PrfPrc:0             A_PARANNELTU  ;
++Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_TUPCP_L
+
++Pss+PrfPrc:0             A_VÄHÄTELTY        ;
++Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_TUPCP_N
+
++Pss+PrfPrc:0             A_PANTU  ;
++Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_TUPCP_N
+
++Pss+PrfPrc:0             A_MENTY        ;
++Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_TUPCP_R
+
++Pss+PrfPrc:0             A_PURTU ;
++Pss+Ind+Prt+ConNeg:tu    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_TUPCP_R
+
++Pss+PrfPrc:0             A_PIERTY     ;
++Pss+Ind+Prt+ConNeg:ty    V_FRONT_CLIT_OPT     ;
+
+
+LEXICON V_FRONT_POSS
+
+
+
++PxSg1:ni  V_FRONT_CLIT_OPT        ;
++PxSg2:si  V_FRONT_CLIT_OPT        ;
++PxSg3:nsä V_FRONT_CLIT_OPT        ;
++PxPl1:mme V_FRONT_CLIT_OPT        ;
++PxPl2:nne V_FRONT_CLIT_OPT        ;
++PxPl3:nsä V_FRONT_CLIT_OPT        ;
+
+LEXICON V_BACK_POSS
+
+
++PxSg1:ni  V_BACK_CLIT_OPT        ;
++PxSg2:si  V_BACK_CLIT_OPT        ;
++PxSg3:nsa V_BACK_CLIT_OPT        ;
++PxPl1:mme V_BACK_CLIT_OPT        ;
++PxPl2:nne V_BACK_CLIT_OPT        ;
++PxPl3:nsa V_BACK_CLIT_OPT        ;
+
+LEXICON V_BACK_POSS_AN
+
++PxSg3:an    V_BACK_CLIT_OPT     ;
++PxPl3:an    V_BACK_CLIT_OPT     ;
+
+LEXICON V_BACK_POSS_EN
+
++PxSg3:en    V_BACK_CLIT_OPT     ;
++PxPl3:en    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_POSS_EN
+
++PxSg3:en    V_FRONT_CLIT_OPT     ;
++PxPl3:en    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_FRONT_POSS_AN
+
++PxSg3:än    V_FRONT_CLIT_OPT     ;
++PxPl3:än    V_FRONT_CLIT_OPT     ;
+
+
+
+LEXICON V_BACK_CLIT
+
+
+
++Foc/han:han   #        ;
++Foc/han+Foc/kaan:hankaan  #        ;
++Foc/han+Qst:hanko #        ;
++Foc/han+Foc/pa:hanpa #        ;
++Qst:ko #        ;
++Qst+Foc/han:kohan #        ;
++Qst+Foc/kaan:kokaan    #        ;
++Qst+Foc/kin:kokin    #        ;
++Qst+Foc/pa:kopa   #        ;
++Qst+Foc/s:kos    #        ;
++Foc/pa:pa #        ;
++Foc/pa+Foc/han:pahan #        ;
++Foc/pa+Foc/kaan:pakaan    #        ;
++Foc/pa+Foc/kin:pakin    #        ;
++Foc/pa+Qst:pako   #        ;
++Foc/pa+Foc/s:pas    #        ;
++Foc/kin:kin  #        ;
++Foc/kin+Foc/han:kinhan  #        ;
++Foc/kin+Foc/kaan:kinkaan #        ;
++Foc/kin+Qst:kinko    #        ;
++Foc/kin+Foc/pa:kinpa    #        ;
++Foc/kaan:kaan  #        ;
++Foc/kaan+Foc/han:kaanhan  #        ;
++Foc/kaan+Foc/kin:kaankin #        ;
++Foc/kaan+Qst:kaanko    #        ;
++Foc/kaan+Foc/pa:kaanpa    #        ;
+
+LEXICON V_FRONT_CLIT
+
+
++Foc/han:hän   #        ;
++Foc/han+Foc/kaan:hänkään  #        ;
++Foc/han+Qst:hänkö #        ;
++Foc/han+Foc/pa:hänpä #        ;
++Qst:kö #        ;
++Qst+Foc/han:köhän #        ;
++Qst+Foc/kaan:kökään    #        ;
++Qst+Foc/kin:kökin    #        ;
++Qst+Foc/pa:köpä   #        ;
++Qst+Foc/s:kös    #        ;
++Foc/pa:pä #        ;
++Foc/pa+Foc/han:pähän #        ;
++Foc/pa+Foc/kaan:päkään    #        ;
++Foc/pa+Foc/kin:päkin    #        ;
++Foc/pa+Qst:päkö   #        ;
++Foc/pa+Foc/s:päs    #        ;
++Foc/kin:kin  #        ;
++Foc/kin+Foc/han:kinhän  #        ;
++Foc/kin+Foc/kaan:kinkään #        ;
++Foc/kin+Qst:kinkö    #        ;
++Foc/kin+Foc/pa:kinpä    #        ;
++Foc/kaan:kään  #        ;
++Foc/kaan+Foc/han:käänhän  #        ;
++Foc/kaan+Foc/kin:käänkin #        ;
++Foc/kaan+Qst:käänkö    #        ;
++Foc/kaan+Foc/pa:käänpä    #        ;
+
+
+LEXICON V_BACK_CLIT_OPT
+0   V_BACK_CLIT    ;
+0   #   ;
+
+LEXICON V_FRONT_CLIT_OPT
+0   V_FRONT_CLIT    ;
+0   #   ;
+
+LEXICON V_BACK_POSS_EN_OBL
+0   V_BACK_POSS  ;
+0   V_BACK_POSS_EN ;
+
+LEXICON V_FRONT_POSS_EN_OBL
+0   V_FRONT_POSS  ;
+0   V_FRONT_POSS_EN ;
+
+LEXICON V_BACK_POSS_AN_OBL
+0   V_BACK_POSS  ;
+0   V_BACK_POSS_AN ;
+
+LEXICON V_BACK_POSS_OPT
+0   V_BACK_POSS  ;
+0   #   ;
+
+LEXICON V_BACK_POSS_AN_OPT
+0   V_BACK_POSS  ;
+0   V_BACK_POSS_AN ;
+0   #   ;
+
+LEXICON V_FRONT_POSS_AN_OBL
+0   V_FRONT_POSS  ;
+0   V_FRONT_POSS_AN ;
+
+
+
+
+
+LEXICON V_FRONT_POSS_AN_OPT
+0   V_FRONT_POSS  ;
+0   V_FRONT_POSS_AN ;
+0   #   ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LEXICON V_BACK_DERIV_PCPS
+
+
+
+
++AgPrc:m       A_AALTOILEVA        ;
++NegPrc:mat     A_VIATON      ;
++Act+PrsPrc:v       A_AALTOILEVA      ;
++Der/minen:mi      N_AAKKOSTAMINEN        ;
++Act+PrsPrc+Der/inen:vai     N_AAKKOSTAMINEN  ;
+
+LEXICON V_FRONT_DERIV_PCPS
+
+
+
++AgPrc:m       A_TYÖLLISTETTÄVÄ        ;
++NegPrc:mät     A_KYVYTÖN       ;
++Act+PrsPrc:v       A_TYÖLLISTETTÄVÄ       ;
++Der/minen:mi      N_KYLKIÄINEN        ;
++Act+PrsPrc+Der/inen:väi     N_KYLKIÄINEN  ;
+
+
+
+
+LEXICON N_BACK_DERIV_VAINEN
++PrsPrc+Der/inen:vai  N_AAKKOSTAMINEN ;
+
+LEXICON N_FRONT_DERIV_VÄINEN
++PrsPrc+Der/inen:väi    N_KYLKIÄINEN   ;
+
+LEXICON N_BACK_DERIV_JA
++Der/ja:j     N_MAKKARA    ;
+
+LEXICON N_FRONT_DERIV_JÄ
++Der/ja:j     N_HÄKKYRÄ ;
+
+LEXICON N_BACK_DERIV_VUUS
++PrsPrc+Drv/uus:vuu     N_AAKKOSELLISUUS  ;
+
+LEXICON N_FRONT_DERIV_VUUS
++PrsPrc+Drv/uus:vyy   N_KÖYHYYS ;
+
+LEXICON V_BACK_DERIV_CAUSATIVE
++Der/ttaa:t       V_VIEROITTAA ;
++Der/tattaa:tat     V_VIEROITTAA ;
++Der/tatuttaa:tatut   V_VIEROITTAA ;
+
+LEXICON V_FRONT_DERIV_CAUSATIVE
++Der/ttaa:t       V_RÄPSYTTÄÄ ;
++Der/tattaa:tat     V_RÄPSYTTÄÄ ;
++Der/tatuttaa:tatut   V_RÄPSYTTÄÄ ;
+
+LEXICON V_BACK_DERIV_TUUS
+0:tuu     N_AAKKOSELLISUUS        ;
+
+LEXICON V_FRONT_DERIV_TYYS
+0:tyy   N_KÖYHYYS   ;
+
+
+LEXICON V_BACK_CONDITIONAL_DIAL
++Act+Cond+Sg1+Qst+Dial/Standard:inks V_BACK_CLIT_OPT ;
++Act+Cond+Sg2+Qst+Dial/Standard:iks V_BACK_CLIT_OPT ;
++Act+Cond+Sg3+Dial/Standard:is  V_BACK_CLIT_OPT     ;
+
+LEXICON V_BACK_PASSIVE_DIAL
++Pss+Cond+Pe4+ConNeg+Dial/Standard:tais    V_BACK_CLIT_OPT     ;
++Pss+Ind+Prt+Pe4+Dial/Standard:tii   V_BACK_CLIT_OPT     ;
+
+
+LEXICON V_BACK_IMPERATIVE_ARCHAIC
+
+
++Act+Imprt+Sg1+Use/Rare:kaani    V_BACK_CLIT_OPT     ;
++Act+Imprt+Sg1+Use/Rare:kaami    V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2+Use/Rare:kaatte   V_BACK_CLIT_OPT     ;
++Act+Imprt+Pl2+Use/Rare:kaatten  V_BACK_CLIT_OPT     ;
++Act+Optat+Sg2+Use/Rare:kootte  V_BACK_CLIT_OPT     ;
++Act+Optat+Pl1+Use/Rare:koomme  V_BACK_CLIT_OPT     ;
++Act+Optat+Pl2+Use/Rare:kaa  V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_IMPERATIVE_ARCHAIC
+
+
++Act+Imprt+Sg1+Use/Rare:kaani    V_FRONT_CLIT_OPT     ;
++Act+Imprt+Sg1+Use/Rare:käämi    V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2+Use/Rare:käätte   V_FRONT_CLIT_OPT     ;
++Act+Imprt+Pl2+Use/Rare:käätten  V_FRONT_CLIT_OPT     ;
++Act+Optat+Sg2+Use/Rare:köötte  V_FRONT_CLIT_OPT     ;
++Act+Optat+Pl1+Use/Rare:köömme  V_FRONT_CLIT_OPT     ;
++Act+Optat+Pl2+Use/Rare:kää  V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_OPTATIVE_0_ARCHAIC
++Act+Optat+Sg1+Use/Rare:on   V_BACK_CLIT_OPT     ;
++Act+Optat+Sg2+Use/Rare:os    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_OPTATIVE_0_ARCHAIC
++Act+Optat+Sg1+Use/Rare:ön   V_FRONT_CLIT_OPT     ;
++Act+Optat+Sg2+Use/Rare:ös    V_FRONT_CLIT_OPT     ;
+
+LEXICON V_BACK_OPTATIVE_N_ARCHAIC
++Act+Optat+Sg1+Use/Rare:non   V_BACK_CLIT_OPT     ;
++Act+Optat+Sg2+Use/Rare:nos    V_BACK_CLIT_OPT     ;
+
+LEXICON V_FRONT_OPTATIVE_N_ARCHAIC
++Act+Optat+Sg1+Use/Rare:nön   V_FRONT_CLIT_OPT     ;
++Act+Optat+Sg2+Use/Rare:nös    V_FRONT_CLIT_OPT     ;
 
 
