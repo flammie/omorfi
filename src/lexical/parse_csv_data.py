@@ -42,7 +42,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
         wordmap['lexicon'] = 'Particles'
         wordmap['continuation'] = 'Particle+Clitic/Optional'
     elif wordmap['pos'] == 'Prop':
-        wordmap['pos'] = 'PROPER'
+        wordmap['pos'] = 'NOUN'
         wordmap['is_proper'] = True
     elif wordmap['pos'] == 'Adv':
         wordmap['pos'] = 'ADVERB'
@@ -108,7 +108,11 @@ def parse_extras_from_csv(wordmap, csv_parts):
             if extra_fields[0] == '"plt':
                 wordmap['plurale_tantum'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"prop':
-                wordmap['proper_noun_class'].append( extra_fields[1].strip('"').upper() )
+                if wordmap['is_proper'] or wordmap['pos'] == 'ACRONYM':
+                    wordmap['proper_noun_class'].append( extra_fields[1].strip('"').upper() )
+                    wordmap['is_proper'] = True
+                else:
+                    print("Warning: Ignoring attribute", csv_extra, "for", wordmap['lemma'], file=stderr)
             elif extra_fields[0] == '"poss':
                 wordmap['possessive'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"stem-vowel':
@@ -168,7 +172,11 @@ def finetune_conts(wordmap):
         wordmap['lexicon'] += '/stub'
         wordmap['continuation'] += '/stemfiller'
     elif wordmap['pos'] == "ACRONYM":
-        wordmap['continuation'] += '/' + wordmap['stub'][-1]
+        if wordmap['stub'][-1] in '0123456789':
+            cardnum_stem_type = ['10','31','31','7','10','27','27','10','10','10']
+            wordmap['continuation'] = 'DigitStem' + cardnum_stem_type[int(wordmap['stub'][-1])]
+        else:
+            wordmap['continuation'] += '/' + wordmap['stub'][-1]
     
     elif wordmap['pos'] in ["ADPOSITION","ADVERB"]  and wordmap['possessive']:
         if wordmap['possessive'] == 'opt':
