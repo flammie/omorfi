@@ -1,457 +1,3773 @@
-LEXICON kotus_52_VERB/stemfiller
-	VerbStem/AInfinitive	;
-	VerbStem/EInfinitive	;
-	VerbStem/Present	;
-	VerbStem/Past	;
-	VerbStem/Potential	;
-	VerbStem/Imperative	;
-	VerbStem/Conditional	;
-0:t	VerbStem/ParticiplePassive	;
-0:t	VerbStem/Passive	;
-0:t	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_53_VERB/stemfiller
-0:{aä}	VerbStem/AInfinitive	;
-0:{aä}	VerbStem/EInfinitive	;
-0:{aä}	VerbStem/Present	;
-	VerbStem/Past	;
-0:{aä}	VerbStem/Potential	;
-0:{aä}	VerbStem/Imperative	;
-0:{aä}	VerbStem/Conditional	;
-0:et	VerbStem/ParticiplePassive	;
-0:et	VerbStem/Passive	;
-0:et	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_54_VERB/stemfiller
-0:t{aä}	VerbStem/AInfinitive	;
-0:t{aä}	VerbStem/EInfinitive	;
-0:t{aä}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:t{aä}	VerbStem/Potential	;
-0:t{aä}	VerbStem/Imperative	;
-0:t{aä}	VerbStem/Conditional	;
-0:tet	VerbStem/ParticiplePassive	;
-0:tet	VerbStem/Passive	;
-0:tet	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_54F_VERB/stemfiller
-0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{aä}{F}	VerbStem/Potential	;
-0:{t~~}{aä}{F}	VerbStem/Imperative	;
-0:{t~~}{aä}{F}	VerbStem/Conditional	;
-0:{t~~}et{F}	VerbStem/ParticiplePassive	;
-0:{t~~}et{F}	VerbStem/Passive	;
-0:{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_54I_VERB/stemfiller
-0:{t~~}{aä}{I}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{I}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{I}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{aä}{I}	VerbStem/Potential	;
-0:{t~~}{aä}{I}	VerbStem/Imperative	;
-0:{t~~}{aä}{I}	VerbStem/Conditional	;
-0:{t~~}et{I}	VerbStem/ParticiplePassive	;
-0:{t~~}et{I}	VerbStem/Passive	;
-0:{t~~}et{I}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_54J_VERB/stemfiller
-0:{t~~}{aä}{J}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{J}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{J}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{aä}{J}	VerbStem/Potential	;
-0:{t~~}{aä}{J}	VerbStem/Imperative	;
-0:{t~~}{aä}{J}	VerbStem/Conditional	;
-0:{t~~}et{J}	VerbStem/ParticiplePassive	;
-0:{t~~}et{J}	VerbStem/Passive	;
-0:{t~~}et{J}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_54K_VERB/stemfiller
-0:{t~~}{aä}{K}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{K}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{K}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{aä}{K}	VerbStem/Potential	;
-0:{t~~}{aä}{K}	VerbStem/Imperative	;
-0:{t~~}{aä}{K}	VerbStem/Conditional	;
-0:{t~~}et{K}	VerbStem/ParticiplePassive	;
-0:{t~~}et{K}	VerbStem/Passive	;
-0:{t~~}et{K}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_55_VERB/stemfiller
-0:t{aä}	VerbStem/AInfinitive	;
-0:t{aä}	VerbStem/EInfinitive	;
-0:t{aä}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:t	VerbStem/Past	;
-0:t{aä}	VerbStem/Potential	;
-0:t{aä}	VerbStem/Imperative	;
-0:t{aä}	VerbStem/Conditional	;
-0:tet	VerbStem/ParticiplePassive	;
-0:tet	VerbStem/Passive	;
-0:tet	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_55F_VERB/stemfiller
-0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{F}	VerbStem/Past	;
-0:{t~~}{aä}{F}	VerbStem/Potential	;
-0:{t~~}{aä}{F}	VerbStem/Imperative	;
-0:{t~~}{aä}{F}	VerbStem/Conditional	;
-0:{t~~}et{F}	VerbStem/ParticiplePassive	;
-0:{t~~}et{F}	VerbStem/Passive	;
-0:{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_55I_VERB/stemfiller
-0:{t~~}{aä}{I}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{I}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{I}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{I}	VerbStem/Past	;
-0:{t~~}{aä}{I}	VerbStem/Potential	;
-0:{t~~}{aä}{I}	VerbStem/Imperative	;
-0:{t~~}{aä}{I}	VerbStem/Conditional	;
-0:{t~~}et{I}	VerbStem/ParticiplePassive	;
-0:{t~~}et{I}	VerbStem/Passive	;
-0:{t~~}et{I}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_55J_VERB/stemfiller
-0:{t~~}{aä}{J}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{J}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{J}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{J}	VerbStem/Past	;
-0:{t~~}{aä}{J}	VerbStem/Potential	;
-0:{t~~}{aä}{J}	VerbStem/Imperative	;
-0:{t~~}{aä}{J}	VerbStem/Conditional	;
-0:{t~~}et{J}	VerbStem/ParticiplePassive	;
-0:{t~~}et{J}	VerbStem/Passive	;
-0:{t~~}et{J}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_56_VERB/stemfiller
-0:{aä}	VerbStem/AInfinitive	;
-0:{aä}	VerbStem/EInfinitive	;
-0:{aä}	VerbStem/Present	;
-0:{oö}	VerbStem/Past	;
-0:{aä}	VerbStem/Potential	;
-0:{aä}	VerbStem/Imperative	;
-0:{aä}	VerbStem/Conditional	;
-0:et	VerbStem/ParticiplePassive	;
-0:et	VerbStem/Passive	;
-0:et	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_57F_VERB/stemfiller
-0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{oö}{F}	VerbStem/Past	;
-0:{t~~}{aä}{F}	VerbStem/Potential	;
-0:{t~~}{aä}{F}	VerbStem/Imperative	;
-0:{t~~}{aä}{F}	VerbStem/Conditional	;
-0:{t~~}et{F}	VerbStem/ParticiplePassive	;
-0:{t~~}et{F}	VerbStem/Passive	;
-0:{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_57K_VERB/stemfiller
-0:{t~~}{aä}{K}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{K}	VerbStem/EInfinitive	;
-0:{t~~}{aä}{K}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{oö}{K}	VerbStem/Past	;
-0:{t~~}{aä}{K}	VerbStem/Potential	;
-0:{t~~}{aä}{K}	VerbStem/Imperative	;
-0:{t~~}{aä}{K}	VerbStem/Conditional	;
-0:{t~~}et{K}	VerbStem/ParticiplePassive	;
-0:{t~~}et{K}	VerbStem/Passive	;
-0:{t~~}et{K}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_58_VERB/stemfiller
-0:e	VerbStem/AInfinitive	;
-0:i	VerbStem/EInfinitive	;
-0:e	VerbStem/Present	;
-	VerbStem/Past	;
-0:e	VerbStem/Potential	;
-0:e	VerbStem/Imperative	;
-	VerbStem/Conditional	;
-0:et	VerbStem/ParticiplePassive	;
-0:et	VerbStem/Passive	;
-0:et	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_59_VERB/stemfiller
-0:{t~~}e{J}	VerbStem/AInfinitive	;
-0:{t~~}i{J}	VerbStem/EInfinitive	;
-0:{t~~}e{J}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}e{J}	VerbStem/Potential	;
-0:{t~~}e{J}	VerbStem/Imperative	;
-0:t	VerbStem/Conditional	;
-0:{t~~}et{J}	VerbStem/ParticiplePassive	;
-0:{t~~}et{J}	VerbStem/Passive	;
-0:{t~~}et{J}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_60_VERB/stemfiller
-0:h{t~~}e{F}	VerbStem/AInfinitive	;
-0:h{t~~}i{F}	VerbStem/EInfinitive	;
-0:h{t~~}e{F}	VerbStem/Present	;
-0:h{t~~}{F}	VerbStem/Past	;
-0:ks	VerbStem/Past	;
-0:ksi	VerbStem/EInfinitive	;
-0:h{t~~}e{F}	VerbStem/Potential	;
-0:h{t~~}e{F}	VerbStem/Imperative	;
-0:h{t~~}{F}	VerbStem/Conditional	;
-0:h{t~~}e{F}t	VerbStem/ParticiplePassive	;
-0:h{t~~}e{F}t	VerbStem/Passive	;
-0:h{t~~}et{F}	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_61_VERB/stemfiller
-0:i	VerbStem/AInfinitive	;
-0:i	VerbStem/EInfinitive	;
-0:i	VerbStem/Present	;
-	VerbStem/Past	;
-0:i	VerbStem/Potential	;
-0:i	VerbStem/Imperative	;
-	VerbStem/Conditional	;
-0:it	VerbStem/ParticiplePassive	;
-0:it	VerbStem/Passive	;
-0:it	VerbAllomorph/NUTPassiveParticiple/C	;
-
-LEXICON kotus_62_VERB/stemfiller
-0:id{BVL}	VerbStem/AInfinitive	;
-0:id{BVL}	VerbStem/EInfinitive	;
-0:i{BVL}	VerbStem/Present	;
-0:{BVL}	VerbStem/Past	;
-0:i{BVL}	VerbStem/Potential	;
-0:i{BVL}	VerbStem/Imperative	;
-0:{BVL}	VerbStem/Conditional	;
-0:id{BVL}	VerbStem/ParticiplePassive	;
-0:i{BVL}	VerbStem/Passive	;
-0:i{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
-
-LEXICON kotus_63_VERB/stemfiller
-0:{aeiouyäö}d{BVL}	VerbStem/AInfinitive	;
-0:{aeiouyäö}d{BVL}	VerbStem/EInfinitive	;
-0:{aeiouyäö}{BVL}	VerbStem/Present	;
-0:{BVL}	VerbStem/Past	;
-0:{aeiouyäö}{BVL}	VerbStem/Potential	;
-0:{aeiouyäö}{BVL}	VerbStem/Imperative	;
-0:{BVL}	VerbStem/Conditional	;
-0:{aeiouyäö}d{BVL}	VerbStem/ParticiplePassive	;
-0:{aeiouyäö}{BVL}	VerbStem/Passive	;
-0:{aeiouyäö}{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
-
-LEXICON kotus_64uo_VERB/stemfiller
-0:uod{BVL}	VerbStem/AInfinitive	;
-0:uod{BVL}	VerbStem/EInfinitive	;
-0:uo{BVL}	VerbStem/Present	;
-0:o{BVL}	VerbStem/Past	;
-0:uo{BVL}	VerbStem/Potential	;
-0:uo{BVL}	VerbStem/Imperative	;
-0:o{BVL}	VerbStem/Conditional	;
-0:uod{BVL}	VerbStem/ParticiplePassive	;
-0:uo{BVL}	VerbStem/Passive	;
-0:uo{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
-
-LEXICON kotus_64yö_VERB/stemfiller
-0:yöd{BVL}	VerbStem/AInfinitive	;
-0:yöd{BVL}	VerbStem/EInfinitive	;
-0:yö{BVL}	VerbStem/Present	;
-0:ö{BVL}	VerbStem/Past	;
-0:yö{BVL}	VerbStem/Potential	;
-0:yö{BVL}	VerbStem/Imperative	;
-0:ö{BVL}	VerbStem/Conditional	;
-0:yöd{BVL}	VerbStem/ParticiplePassive	;
-0:yö{BVL}	VerbStem/Passive	;
-0:yö{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
-
-LEXICON kotus_64ie_VERB/stemfiller
-0:ied{BVL}	VerbStem/AInfinitive	;
-0:ied{BVL}	VerbStem/EInfinitive	;
-0:ie{BVL}	VerbStem/Present	;
-0:e{BVL}	VerbStem/Past	;
-0:ie{BVL}	VerbStem/Potential	;
-0:ie{BVL}	VerbStem/Imperative	;
-0:e{BVL}	VerbStem/Conditional	;
-0:ied{BVL}	VerbStem/ParticiplePassive	;
-0:ie{BVL}	VerbStem/Passive	;
-0:ie{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
-
-LEXICON kotus_65_VERB/stemfiller
-0:yd{BVL}	VerbStem/AInfinitive	;
-0:yd{BVL}	VerbStem/EInfinitive	;
-0:y{BVL}	VerbStem/Present	;
-0:v{BVL}	VerbStem/Past	;
-0:y{BVL}	VerbStem/Potential	;
-0:y{BVL}	VerbStem/Imperative	;
-0:v{BVL}	VerbStem/Conditional	;
-0:yd{BVL}	VerbStem/ParticiplePassive	;
-0:y{BVL}	VerbStem/Passive	;
-0:y{BVL}	VerbAllomorph/NUTPassiveParticiple/F	;
-
-LEXICON kotus_66_VERB/stemfiller
-0:{AV-}t	VerbStem/AInfinitive	;
-0:{AV-}t	VerbStem/EInfinitive	;
-0:{AV+}e	VerbStem/Present	;
-0:{AV+}	VerbStem/Past	;
-0:{AV-}	VerbStem/Potential	;
-0:{AV+}	VerbStem/Imperative	;
-0:{AV+}	VerbStem/Conditional	;
-0:{AV-}t	VerbStem/ParticiplePassive	;
-0:{AV-}	VerbStem/Passive	;
-0:{AV-}	VerbAllomorph/NUTPassiveParticiple	;
-
-LEXICON kotus_67_VERB/stemfiller
-0:{AV-}{nlrs}	VerbStem/AInfinitive	;
-0:{AV-}{nlrs}	VerbStem/EInfinitive	;
-0:{AV+}e	VerbStem/Present	;
-0:{AV+}	VerbStem/Past	;
-0:{AV-}	VerbStem/Potential	;
-0:{AV-}	VerbStem/Imperative	;
-0:{AV+}	VerbStem/Conditional	;
-0:{AV-}{nlrs}	VerbStem/ParticiplePassive	;
-0:{AV-}	VerbStem/Passive	;
-0:{AV-}	VerbAllomorph/NUTPassiveParticiple/I	;
-! derivations
-[DRV=U]:{AV+}{uy}	kotus_2_NOUN/stemfiller		;
+!! !!Verb stem variation
+!! Verbs have no allomorphic variation per se, except for some assimilation
+!! and variation of ð forms, but the stem variation is the same
+!! as in nouns. The examples for verb stems are given for each class:
+!! A infinitive's lative, e infinitive's inessive, indicative present 1st 
+!! singular, indicative present 3rd singular, indicative past 1st singular, 
+!! indicative past 3rd singular, conditional past 3rd singular, 
+!! imperative 2nd plural, potential 1st singular, present passive, 
+!! past passive, nut participle passive
 
 
-LEXICON kotus_68_VERB/stemfiller
-0:id	VerbStem/AInfinitive	;
-0:id	VerbStem/EInfinitive	;
-0:i	VerbStem/Present	;
-0:itse	VerbStem/Present	;
-	VerbStem/Past	;
-0:its	VerbStem/Past	;
-0:i	VerbStem/Potential	;
-	VerbStem/Conditional	;
-0:i	VerbStem/Imperative	;
-0:its	VerbStem/Conditional	;
-0:id	VerbStem/ParticiplePassive	;
-0:i	VerbStem/Passive	;
-0:i	VerbAllomorph/NUTPassiveParticiple/F	;
 
-LEXICON kotus_69_VERB/stemfiller
-0:t	VerbStem/AInfinitive	;
-0:t	VerbStem/EInfinitive	;
-0:tse	VerbStem/Present	;
-0:ts	VerbStem/Past	;
-0:n	VerbStem/Potential	;
-0:t	VerbStem/Imperative	;
-0:ts	VerbStem/Conditional	;
-0:t	VerbStem/ParticiplePassive	;
-0:t	VerbStem/Passive	;
-0:t	VerbAllomorph/NUTPassiveParticiple/C	;
+LEXICON V_KAUNISTUA
 
-LEXICON kotus_70_VERB/stemfiller
-0:st	VerbStem/AInfinitive	;
-0:st	VerbStem/EInfinitive	;
-0:kse	VerbStem/Present	;
-0:ks	VerbStem/Past	;
-0:s	VerbStem/Potential	;
-0:s	VerbStem/Imperative	;
-0:ks	VerbStem/Conditional	;
-0:st	VerbStem/ParticiplePassive	;
-0:s	VerbStem/Passive	;
-0:s	VerbAllomorph/NUTPassiveParticiple	;
 
-LEXICON kotus_71_VERB/stemfiller
-0:hd	VerbStem/AInfinitive	;
-0:hd	VerbStem/EInfinitive	;
-0:{k~~}e{D}	VerbStem/Present	;
-0:{k~~}{D}	VerbStem/Past	;
-0:h	VerbStem/Potential	;
-0:h	VerbStem/Imperative	;
-0:{k~~}{D}	VerbStem/Conditional	;
-0:hd	VerbStem/ParticiplePassive	;
-0:h	VerbStem/Passive	;
-0:h	VerbAllomorph/NUTPassiveParticiple/F	;
 
-LEXICON kotus_72_VERB/stemfiller
-0:{AV-}t	VerbStem/AInfinitive	;
-0:{AV-}t	VerbStem/EInfinitive	;
-0:{AV+}ne	VerbStem/Present	;
-0:{AV+}n	VerbStem/Past	;
-0:{AV-}n	VerbStem/Potential	;
-0:{AV-}t	VerbStem/Imperative	;
-0:{AV+}n	VerbStem/Conditional	;
-0:{AV-}t	VerbStem/ParticiplePassive	;
-0:{AV-}t	VerbStem/Passive	;
-0:{AV-}t	VerbAllomorph/NUTPassiveParticiple/C	;
 
-LEXICON kotus_73_VERB/stemfiller
-0:{AV-}t{BVL}	VerbStem/AInfinitive	;
-0:{AV-}t{BVL}	VerbStem/EInfinitive	;
-0:{AV+}{aeiouyäö}{BVL}	VerbStem/Present	;
-0:{AV+}s{BVL}	VerbStem/Past	;
-0:{AV-}n{BVL}	VerbStem/Potential	;
-0:{AV-}t{BVL}	VerbStem/Imperative	;
-0:{AV+}{BVL}	VerbStem/Conditional	;
-0:{AV-}t{BVL}	VerbStem/ParticiplePassive	;
-0:{AV-}t{BVL}	VerbStem/Passive	;
-0:{AV-}t{BVL}	VerbAllomorph/NUTPassiveParticiple/C	;
 
-LEXICON kotus_74_VERB/stemfiller
-0:{AV-}t	VerbStem/AInfinitive	;
-0:{AV-}t	VerbStem/EInfinitive	;
-0:{AV+}{aä}	VerbStem/Present	;
-0:{AV+}s	VerbStem/Past	;
-0:{AV+}{aä}	VerbStem/Conditional	;
-0:{AV-}n	VerbStem/Potential	;
-0:{AV-}t	VerbStem/Imperative	;
-0:{AV+}	VerbStem/Conditional	;
-0:{AV-}t	VerbStem/ParticiplePassive	;
-0:{AV-}t	VerbStem/Passive	;
-0:{AV-}t	VerbAllomorph/NUTPassiveParticiple/C	;
 
-LEXICON kotus_75_VERB/stemfiller
-0:{AV-}t	VerbStem/AInfinitive	;
-0:{AV-}t	VerbStem/EInfinitive	;
-0:{AV+}{aä}	VerbStem/Present	;
-0:{AV+}s	VerbStem/Past	;
-0:{AV+}{aä}	VerbStem/Conditional	;
-0:{AV-}n	VerbStem/Potential	;
-0:{AV-}t	VerbStem/Imperative	;
-0:{AV-}t	VerbStem/ParticiplePassive	;
-0:{AV-}t	VerbStem/Passive	;
-0:{AV-}t	VerbAllomorph/NUTPassiveParticiple/C	;
 
-LEXICON kotus_76_VERB/stemfiller
-0:{t~~}{aä}{F}	VerbStem/AInfinitive	;
-0:{t~~}{aä}{F}	VerbStem/Present	;
-0:s	VerbStem/Past	;
-0:{t~~}{aä}{F}	VerbStem/Potential	;
-0:n	VerbStem/Potential	;
-0:{t~~}{aä}{F}	VerbStem/Imperative	;
-0:{t~~}{aä}{F}	VerbStem/Conditional	;
-0:det	VerbStem/ParticiplePassive	;
-0:det	VerbStem/Passive	;
-0:det	VerbAllomorph/NUTPassiveParticiple/C	;
 
-LEXICON kotus_77_VERB/stemfiller
-0:{aä}	VerbStem/AInfinitive	;
-0:{aä}	VerbStem/Present	;
-	VerbStem/Past	;
-0:{aä}	VerbStem/Conditional	;
 
-LEXICON kotus_78_VERB/stemfiller
-	VerbStem/AInfinitive	;
-	VerbStem/Present	;
-	VerbStem/Conditional	;
 
-! N.B. present and conditional have been dropped to exceptions.hlexc
-LEXICON exceptional_67_VERB/stemfiller
-0:{AV-}{nlrs}	VerbStem/AInfinitive	;
-0:{AV-}{nlrs}	VerbStem/EInfinitive	;
-0:{AV+}	VerbStem/Past	;
-0:{AV+}	VerbStem/Conditional	;
-0:{AV-}	VerbStem/Imperative	;
-0:{AV-}{nlrs}	VerbStem/ParticiplePassive	;
-0:{AV-}	VerbStem/Passive	;
 
+
+
+
+
+0    V_BACK_AINF    ;
+0    V_BACK_EINF    ;
+0    V_BACK_WEAK_PRESENT    ;
+0    V_BACK_STRONG_PRESENT    ;
+0    V_BACK_3SG_U  ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_N ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE  ;
+0:t   V_BACK_TUPCP_0    ;
+0     V_BACK_DERIV_PCPS ;
+
+LEXICON V_PUNOA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0    V_BACK_AINF    ;
+0    V_BACK_EINF    ;
+0    V_BACK_WEAK_PRESENT    ;
+0    V_BACK_STRONG_PRESENT    ;
+0    V_BACK_3SG_O  ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_N ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE  ;
+0:t   V_BACK_TUPCP_0    ;
+0     V_BACK_DERIV_PCPS ;
+
+LEXICON V_SÄILÖÄ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0    V_FRONT_AINF    ;
+0    V_FRONT_EINF    ;
+0    V_FRONT_WEAK_PRESENT    ;
+0    V_FRONT_STRONG_PRESENT    ;
+0    V_FRONT_3SG_Ö  ;
+0    V_FRONT_WEAK_PAST   ;
+0    V_FRONT_STRONG_PAST ;
+0    V_FRONT_CONDITIONAL  ;
+0   V_FRONT_IMPERATIVE ;
+0   V_FRONT_POTENTIAL_N ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE  ;
+0:t   V_FRONT_TUPCP_0    ;
+0     V_FRONT_DERIV_PCPS    ;
+
+LEXICON V_ÄLLISTYÄ
+
+
+
+
+
+
+
+
+
+
+
+
+
+0    V_FRONT_AINF    ;
+0    V_FRONT_EINF    ;
+0    V_FRONT_WEAK_PRESENT    ;
+0    V_FRONT_STRONG_PRESENT    ;
+0    V_FRONT_3SG_Y  ;
+0    V_FRONT_WEAK_PAST   ;
+0    V_FRONT_STRONG_PAST ;
+0    V_FRONT_CONDITIONAL  ;
+0   V_FRONT_IMPERATIVE ;
+0   V_FRONT_POTENTIAL_N ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE  ;
+0:t   V_FRONT_TUPCP_0    ;
+0     V_FRONT_DERIV_PCPS    ;
+
+
+
+LEXICON V_HAUKKOA
+
+
+0:ko    V_BACK_AINF    ;
+0:ko    V_BACK_EINF    ;
+0:o    V_BACK_WEAK_PRESENT    ;
+0:ko    V_BACK_STRONG_PRESENT    ;
+0:ko    V_BACK_3SG_O  ;
+0:o    V_BACK_WEAK_PAST   ;
+0:ko    V_BACK_STRONG_PAST ;
+0:ko    V_BACK_CONDITIONAL  ;
+0:ko   V_BACK_IMPERATIVE ;
+0:ko   V_BACK_POTENTIAL_N ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE  ;
+0:ot   V_BACK_TUPCP_0    ;
+0:ko    V_BACK_DERIV_PCPS   ;
+
+LEXICON V_NUOKKUA
+
+0:ku    V_BACK_AINF    ;
+0:ku    V_BACK_EINF    ;
+0:u    V_BACK_WEAK_PRESENT    ;
+0:ku    V_BACK_STRONG_PRESENT    ;
+0:ku    V_BACK_3SG_U  ;
+0:u    V_BACK_WEAK_PAST   ;
+0:ku    V_BACK_STRONG_PAST ;
+0:ku    V_BACK_CONDITIONAL  ;
+0:ku   V_BACK_IMPERATIVE ;
+0:ku   V_BACK_POTENTIAL_N ;
+0:u   V_BACK_PASSIVE_T    ;
+0:ut   V_BACK_PASSIVE  ;
+0:ut   V_BACK_TUPCP_0    ;
+0:ku    V_BACK_DERIV_PCPS   ;
+
+LEXICON V_KÄRKKYÄ
+
+0:ky    V_FRONT_AINF    ;
+0:ky    V_FRONT_EINF    ;
+0:y    V_FRONT_WEAK_PRESENT    ;
+0:ky    V_FRONT_STRONG_PRESENT    ;
+0:ky    V_FRONT_3SG_Y  ;
+0:y    V_FRONT_WEAK_PAST   ;
+0:ky    V_FRONT_STRONG_PAST ;
+0:ky    V_FRONT_CONDITIONAL  ;
+0:ky   V_FRONT_IMPERATIVE ;
+0:ky   V_FRONT_POTENTIAL_N ;
+0:y   V_FRONT_PASSIVE_T    ;
+0:yt   V_FRONT_PASSIVE  ;
+0:yt   V_FRONT_TUPCP_0    ;
+0:ky    V_FRONT_DERIV_PCPS  ;
+
+LEXICON V_HARPPOA
+
+0:po    V_BACK_AINF    ;
+0:po    V_BACK_EINF    ;
+0:o    V_BACK_WEAK_PRESENT    ;
+0:po    V_BACK_STRONG_PRESENT    ;
+0:po    V_BACK_3SG_O  ;
+0:o    V_BACK_WEAK_PAST   ;
+0:po    V_BACK_STRONG_PAST ;
+0:po    V_BACK_CONDITIONAL  ;
+0:po   V_BACK_IMPERATIVE ;
+0:po   V_BACK_POTENTIAL_N ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE  ;
+0:ot   V_BACK_TUPCP_0    ;
+0:po    V_BACK_DERIV_PCPS ;
+
+LEXICON V_LOPPUA
+
+0:pu    V_BACK_AINF    ;
+0:pu    V_BACK_EINF    ;
+0:u    V_BACK_WEAK_PRESENT    ;
+0:pu    V_BACK_STRONG_PRESENT    ;
+0:pu    V_BACK_3SG_U  ;
+0:u    V_BACK_WEAK_PAST   ;
+0:pu    V_BACK_STRONG_PAST ;
+0:pu    V_BACK_CONDITIONAL  ;
+0:pu   V_BACK_IMPERATIVE ;
+0:pu   V_BACK_POTENTIAL_N ;
+0:u   V_BACK_PASSIVE_T    ;
+0:ut   V_BACK_PASSIVE  ;
+0:ut   V_BACK_TUPCP_0    ;
+0:pu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_LEPPYÄ
+
+0:py    V_FRONT_AINF    ;
+0:py    V_FRONT_EINF    ;
+0:y    V_FRONT_WEAK_PRESENT    ;
+0:py    V_FRONT_STRONG_PRESENT    ;
+0:py    V_FRONT_3SG_Y  ;
+0:y    V_FRONT_WEAK_PAST   ;
+0:py    V_FRONT_STRONG_PAST ;
+0:py    V_FRONT_CONDITIONAL  ;
+0:py   V_FRONT_IMPERATIVE ;
+0:py   V_FRONT_POTENTIAL_N ;
+0:y   V_FRONT_PASSIVE_T    ;
+0:yt   V_FRONT_PASSIVE  ;
+0:yt   V_FRONT_TUPCP_0    ;
+0:py    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KIVETTYÄ
+
+0:ty    V_FRONT_AINF    ;
+0:ty    V_FRONT_EINF    ;
+0:y    V_FRONT_WEAK_PRESENT    ;
+0:ty    V_FRONT_STRONG_PRESENT    ;
+0:ty    V_FRONT_3SG_Y  ;
+0:y    V_FRONT_WEAK_PAST   ;
+0:ty    V_FRONT_STRONG_PAST ;
+0:ty    V_FRONT_CONDITIONAL  ;
+0:ty   V_FRONT_IMPERATIVE ;
+0:ty   V_FRONT_POTENTIAL_N ;
+0:y   V_FRONT_PASSIVE_T    ;
+0:yt   V_FRONT_PASSIVE  ;
+0:yt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_VIITTOA
+
+0:to    V_BACK_AINF    ;
+0:to    V_BACK_EINF    ;
+0:o    V_BACK_WEAK_PRESENT    ;
+0:to    V_BACK_STRONG_PRESENT    ;
+0:to    V_BACK_3SG_O  ;
+0:o    V_BACK_WEAK_PAST   ;
+0:to    V_BACK_STRONG_PAST ;
+0:to    V_BACK_CONDITIONAL  ;
+0:to   V_BACK_IMPERATIVE ;
+0:to   V_BACK_POTENTIAL_N ;
+0:o   V_BACK_PASSIVE_T    ;
+0:tu   V_BACK_PASSIVE  ;
+0:tu   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_HERMOTTUA
+
+0:tu    V_BACK_AINF    ;
+0:tu    V_BACK_EINF    ;
+0:u    V_BACK_WEAK_PRESENT    ;
+0:tu    V_BACK_STRONG_PRESENT    ;
+0:tu    V_BACK_3SG_U  ;
+0:u    V_BACK_WEAK_PAST   ;
+0:tu    V_BACK_STRONG_PAST ;
+0:tu    V_BACK_CONDITIONAL  ;
+0:tu   V_BACK_IMPERATIVE ;
+0:tu   V_BACK_POTENTIAL_N ;
+0:u   V_BACK_PASSIVE_T    ;
+0:ut   V_BACK_PASSIVE  ;
+0:ut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_MÄIKYÄ
+
+0:ky    V_FRONT_AINF    ;
+0:ky    V_FRONT_EINF    ;
+0:y    V_FRONT_WEAK_PRESENT    ;
+0:ky    V_FRONT_STRONG_PRESENT    ;
+0:ky    V_FRONT_3SG_Y  ;
+0:y    V_FRONT_WEAK_PAST   ;
+0:ky    V_FRONT_STRONG_PAST ;
+0:ky    V_FRONT_CONDITIONAL  ;
+0:ky   V_FRONT_IMPERATIVE ;
+0:ky   V_FRONT_POTENTIAL_N ;
+0:y   V_FRONT_PASSIVE_T    ;
+0:yt   V_FRONT_PASSIVE  ;
+0:yt   V_FRONT_TUPCP_0    ;
+0:ky    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_TAKOA
+
+0:ko    V_BACK_AINF    ;
+0:ko    V_BACK_EINF    ;
+0:o    V_BACK_WEAK_PRESENT    ;
+0:ko    V_BACK_STRONG_PRESENT    ;
+0:ko    V_BACK_3SG_O  ;
+0:o    V_BACK_WEAK_PAST   ;
+0:ko    V_BACK_STRONG_PAST ;
+0:ko    V_BACK_CONDITIONAL  ;
+0:ko   V_BACK_IMPERATIVE ;
+0:ko   V_BACK_POTENTIAL_N ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE  ;
+0:ot   V_BACK_TUPCP_0    ;
+0:ko    V_BACK_DERIV_PCPS ;
+
+LEXICON V_MAUKUA
+
+0:ku    V_BACK_AINF    ;
+0:ku    V_BACK_EINF    ;
+0:’u   V_BACK_WEAK_PRESENT    ;
+0:ku    V_BACK_STRONG_PRESENT    ;
+0:ku    V_BACK_3SG_U  ;
+0:’u   V_BACK_WEAK_PAST   ;
+0:ku    V_BACK_STRONG_PAST ;
+0:ku    V_BACK_CONDITIONAL  ;
+0:ku   V_BACK_IMPERATIVE ;
+0:ku   V_BACK_POTENTIAL_N ;
+0:’u  V_BACK_PASSIVE_T    ;
+0:’ut  V_BACK_PASSIVE  ;
+0:’ut  V_BACK_TUPCP_0    ;
+0:ku    V_BACK_DERIV_PCPS ;
+
+LEXICON V_ELPYÄ
+
+0:py    V_FRONT_AINF    ;
+0:py    V_FRONT_EINF    ;
+0:vy    V_FRONT_WEAK_PRESENT    ;
+0:py    V_FRONT_STRONG_PRESENT    ;
+0:py    V_FRONT_3SG_Y  ;
+0:vy    V_FRONT_WEAK_PAST   ;
+0:py    V_FRONT_STRONG_PAST ;
+0:py    V_FRONT_CONDITIONAL  ;
+0:py   V_FRONT_IMPERATIVE ;
+0:py   V_FRONT_POTENTIAL_N ;
+0:vy   V_FRONT_PASSIVE_T    ;
+0:vyt   V_FRONT_PASSIVE  ;
+0:vyt   V_FRONT_TUPCP_0    ;
+0:py    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_HIIPUA
+
+0:pu    V_BACK_AINF    ;
+0:pu    V_BACK_EINF    ;
+0:vu    V_BACK_WEAK_PRESENT    ;
+0:pu    V_BACK_STRONG_PRESENT    ;
+0:pu    V_BACK_3SG_U  ;
+0:vu    V_BACK_WEAK_PAST   ;
+0:pu    V_BACK_STRONG_PAST ;
+0:pu    V_BACK_CONDITIONAL  ;
+0:pu   V_BACK_IMPERATIVE ;
+0:pu   V_BACK_POTENTIAL_N ;
+0:vu   V_BACK_PASSIVE_T    ;
+0:vut   V_BACK_PASSIVE  ;
+0:vut   V_BACK_TUPCP_0    ;
+0:pu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_SILPOA
+
+0:po    V_BACK_AINF    ;
+0:po    V_BACK_EINF    ;
+0:vo    V_BACK_WEAK_PRESENT    ;
+0:po    V_BACK_STRONG_PRESENT    ;
+0:po    V_BACK_3SG_O  ;
+0:vo    V_BACK_WEAK_PAST   ;
+0:po    V_BACK_STRONG_PAST ;
+0:po    V_BACK_CONDITIONAL  ;
+0:po   V_BACK_IMPERATIVE ;
+0:po   V_BACK_POTENTIAL_N ;
+0:vo   V_BACK_PASSIVE_T    ;
+0:vot   V_BACK_PASSIVE  ;
+0:vot   V_BACK_TUPCP_0    ;
+0:po    V_BACK_DERIV_PCPS ;
+
+LEXICON V_KIETOA
+
+0:to    V_BACK_AINF    ;
+0:to    V_BACK_EINF    ;
+0:do    V_BACK_WEAK_PRESENT    ;
+0:to    V_BACK_STRONG_PRESENT    ;
+0:to    V_BACK_3SG_O  ;
+0:do    V_BACK_WEAK_PAST   ;
+0:to    V_BACK_STRONG_PAST ;
+0:to    V_BACK_CONDITIONAL  ;
+0:to   V_BACK_IMPERATIVE ;
+0:to   V_BACK_POTENTIAL_N ;
+0:do   V_BACK_PASSIVE_T    ;
+0:dot   V_BACK_PASSIVE  ;
+0:dot   V_BACK_TUPCP_0    ;
+0:to    V_BACK_DERIV_PCPS ;
+
+LEXICON V_SILIYTYÄ
+
+0:ty    V_FRONT_AINF    ;
+0:ty    V_FRONT_EINF    ;
+0:dy    V_FRONT_WEAK_PRESENT    ;
+0:ty    V_FRONT_STRONG_PRESENT    ;
+0:ty    V_FRONT_3SG_Y  ;
+0:dy    V_FRONT_WEAK_PAST   ;
+0:ty    V_FRONT_STRONG_PAST ;
+0:ty    V_FRONT_CONDITIONAL  ;
+0:ty   V_FRONT_IMPERATIVE ;
+0:ty   V_FRONT_POTENTIAL_N ;
+0:dy   V_FRONT_PASSIVE_T    ;
+0:dyt   V_FRONT_PASSIVE  ;
+0:dyt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_ROHTUA
+
+0:tu    V_BACK_AINF    ;
+0:tu    V_BACK_EINF    ;
+0:du    V_BACK_WEAK_PRESENT    ;
+0:tu    V_BACK_STRONG_PRESENT    ;
+0:tu    V_BACK_3SG_U  ;
+0:du    V_BACK_WEAK_PAST   ;
+0:tu    V_BACK_STRONG_PAST ;
+0:tu    V_BACK_CONDITIONAL  ;
+0:tu   V_BACK_IMPERATIVE ;
+0:tu   V_BACK_POTENTIAL_N ;
+0:du   V_BACK_PASSIVE_T    ;
+0:dut   V_BACK_PASSIVE  ;
+0:dut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_VINKUA
+
+0:ku    V_BACK_AINF    ;
+0:ku    V_BACK_EINF    ;
+0:gu    V_BACK_WEAK_PRESENT    ;
+0:ku    V_BACK_STRONG_PRESENT    ;
+0:ku    V_BACK_3SG_U  ;
+0:gu    V_BACK_WEAK_PAST   ;
+0:ku    V_BACK_STRONG_PAST ;
+0:ku    V_BACK_CONDITIONAL  ;
+0:ku   V_BACK_IMPERATIVE ;
+0:ku   V_BACK_POTENTIAL_N ;
+0:gu   V_BACK_PASSIVE_T    ;
+0:gut   V_BACK_PASSIVE  ;
+0:gut   V_BACK_TUPCP_0    ;
+0:ku    V_BACK_DERIV_PCPS ;
+
+LEXICON V_PENKOA
+
+0:ko    V_BACK_AINF    ;
+0:ko    V_BACK_EINF    ;
+0:go    V_BACK_WEAK_PRESENT    ;
+0:ko    V_BACK_STRONG_PRESENT    ;
+0:ko    V_BACK_3SG_O  ;
+0:go    V_BACK_WEAK_PAST   ;
+0:ko    V_BACK_STRONG_PAST ;
+0:ko    V_BACK_CONDITIONAL  ;
+0:ko   V_BACK_IMPERATIVE ;
+0:ko   V_BACK_POTENTIAL_N ;
+0:go   V_BACK_PASSIVE_T    ;
+0:got   V_BACK_PASSIVE  ;
+0:got   V_BACK_TUPCP_0    ;
+0:ko    V_BACK_DERIV_PCPS ;
+
+LEXICON V_TEMPOA
+
+0:po    V_BACK_AINF    ;
+0:po    V_BACK_EINF    ;
+0:mo    V_BACK_WEAK_PRESENT    ;
+0:po    V_BACK_STRONG_PRESENT    ;
+0:po    V_BACK_3SG_O  ;
+0:mo    V_BACK_WEAK_PAST   ;
+0:po    V_BACK_STRONG_PAST ;
+0:po    V_BACK_CONDITIONAL  ;
+0:po   V_BACK_IMPERATIVE ;
+0:po   V_BACK_POTENTIAL_N ;
+0:mo   V_BACK_PASSIVE_T    ;
+0:mot   V_BACK_PASSIVE  ;
+0:mot   V_BACK_TUPCP_0    ;
+0:po    V_BACK_DERIV_PCPS ;
+
+LEXICON V_AMPUA
+
+0:pu    V_BACK_AINF    ;
+0:pu    V_BACK_EINF    ;
+0:mu    V_BACK_WEAK_PRESENT    ;
+0:pu    V_BACK_STRONG_PRESENT    ;
+0:pu    V_BACK_3SG_U  ;
+0:mu    V_BACK_WEAK_PAST   ;
+0:pu    V_BACK_STRONG_PAST ;
+0:pu    V_BACK_CONDITIONAL  ;
+0:pu   V_BACK_IMPERATIVE ;
+0:pu   V_BACK_POTENTIAL_N ;
+0:mu   V_BACK_PASSIVE_T    ;
+0:mut   V_BACK_PASSIVE  ;
+0:mut   V_BACK_TUPCP_0    ;
+0:pu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_MIELTYÄ
+
+0:ty    V_FRONT_AINF    ;
+0:ty    V_FRONT_EINF    ;
+0:ly    V_FRONT_WEAK_PRESENT    ;
+0:ty    V_FRONT_STRONG_PRESENT    ;
+0:ty    V_FRONT_3SG_Y  ;
+0:ly    V_FRONT_WEAK_PAST   ;
+0:ty    V_FRONT_STRONG_PAST ;
+0:ty    V_FRONT_CONDITIONAL  ;
+0:ty   V_FRONT_IMPERATIVE ;
+0:ty   V_FRONT_POTENTIAL_N ;
+0:ly   V_FRONT_PASSIVE_T    ;
+0:lyt   V_FRONT_PASSIVE  ;
+0:lyt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_HUMALTUA
+
+0:tu    V_BACK_AINF    ;
+0:tu    V_BACK_EINF    ;
+0:lu    V_BACK_WEAK_PRESENT    ;
+0:tu    V_BACK_STRONG_PRESENT    ;
+0:tu    V_BACK_3SG_U  ;
+0:lu    V_BACK_WEAK_PAST   ;
+0:tu    V_BACK_STRONG_PAST ;
+0:tu    V_BACK_CONDITIONAL  ;
+0:tu   V_BACK_IMPERATIVE ;
+0:tu   V_BACK_POTENTIAL_N ;
+0:lu   V_BACK_PASSIVE_T    ;
+0:lut   V_BACK_PASSIVE  ;
+0:lut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_VAKAANTUA
+
+0:tu    V_BACK_AINF    ;
+0:tu    V_BACK_EINF    ;
+0:nu    V_BACK_WEAK_PRESENT    ;
+0:tu    V_BACK_STRONG_PRESENT    ;
+0:tu    V_BACK_3SG_U  ;
+0:nu    V_BACK_WEAK_PAST   ;
+0:tu    V_BACK_STRONG_PAST ;
+0:tu    V_BACK_CONDITIONAL  ;
+0:tu   V_BACK_IMPERATIVE ;
+0:tu   V_BACK_POTENTIAL_N ;
+0:nu   V_BACK_PASSIVE_T    ;
+0:nut   V_BACK_PASSIVE  ;
+0:nut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
+
+LEXICON V_TYHJENTYÄ
+
+0:ty    V_FRONT_AINF    ;
+0:ty    V_FRONT_EINF    ;
+0:ny    V_FRONT_WEAK_PRESENT    ;
+0:ty    V_FRONT_STRONG_PRESENT    ;
+0:ty    V_FRONT_3SG_Y  ;
+0:ny    V_FRONT_WEAK_PAST   ;
+0:ty    V_FRONT_STRONG_PAST ;
+0:ty    V_FRONT_CONDITIONAL  ;
+0:ty   V_FRONT_IMPERATIVE ;
+0:ty   V_FRONT_POTENTIAL_N ;
+0:ny   V_FRONT_PASSIVE_T    ;
+0:nyt   V_FRONT_PASSIVE  ;
+0:nyt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_PYÖRTYÄ
+
+0:ty    V_FRONT_AINF    ;
+0:ty    V_FRONT_EINF    ;
+0:ry    V_FRONT_WEAK_PRESENT    ;
+0:ty    V_FRONT_STRONG_PRESENT    ;
+0:ty    V_FRONT_3SG_Y  ;
+0:ry    V_FRONT_WEAK_PAST   ;
+0:ty    V_FRONT_STRONG_PAST ;
+0:ty    V_FRONT_CONDITIONAL  ;
+0:ty   V_FRONT_IMPERATIVE ;
+0:ty   V_FRONT_POTENTIAL_N ;
+0:ry   V_FRONT_PASSIVE_T    ;
+0:ryt   V_FRONT_PASSIVE  ;
+0:ryt   V_FRONT_TUPCP_0    ;
+0:ty    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_VARTOA
+
+0:to    V_BACK_AINF    ;
+0:to    V_BACK_EINF    ;
+0:ro    V_BACK_WEAK_PRESENT    ;
+0:to    V_BACK_STRONG_PRESENT    ;
+0:to    V_BACK_3SG_O  ;
+0:ro    V_BACK_WEAK_PAST   ;
+0:to    V_BACK_STRONG_PAST ;
+0:to    V_BACK_CONDITIONAL  ;
+0:to   V_BACK_IMPERATIVE ;
+0:to   V_BACK_POTENTIAL_N ;
+0:ro   V_BACK_PASSIVE_T    ;
+0:rot   V_BACK_PASSIVE  ;
+0:rot   V_BACK_TUPCP_0    ;
+0:to    V_BACK_DERIV_PCPS ;
+
+LEXICON V_PUSERTUA
+
+0:tu    V_BACK_AINF    ;
+0:tu    V_BACK_EINF    ;
+0:ru    V_BACK_WEAK_PRESENT    ;
+0:tu    V_BACK_STRONG_PRESENT    ;
+0:tu    V_BACK_3SG_U  ;
+0:ru    V_BACK_WEAK_PAST   ;
+0:tu    V_BACK_STRONG_PAST ;
+0:tu    V_BACK_CONDITIONAL  ;
+0:tu   V_BACK_IMPERATIVE ;
+0:tu   V_BACK_POTENTIAL_N ;
+0:ru   V_BACK_PASSIVE_T    ;
+0:rut   V_BACK_PASSIVE  ;
+0:rut   V_BACK_TUPCP_0    ;
+0:tu    V_BACK_DERIV_PCPS ;
+
+
+
+
+LEXICON V_MUTRISTAA
+
+
+0:a      V_BACK_AINF   ;
+0:a      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:a      V_BACK_STRONG_PRESENT    ;
+0:a      V_BACK_3SG_A      ;
+0:a      V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0       V_BACK_STRONG_PAST  ;
+0:a        V_BACK_IMPERATIVE   ;
+0:a        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:a    V_BACK_DERIV_PCPS ;
+
+LEXICON V_KIVISTÄÄ
+
+0:ä      V_FRONT_AINF   ;
+0:ä      V_FRONT_EINF  ;
+0:ä      V_FRONT_WEAK_PRESENT    ;
+0:ä      V_FRONT_STRONG_PRESENT    ;
+0:ä      V_FRONT_3SG_Ä      ;
+0:ä      V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0       V_FRONT_STRONG_PAST  ;
+0:ä        V_FRONT_IMPERATIVE   ;
+0:ä        V_FRONT_POTENTIAL_N  ;
+0:e        V_FRONT_PASSIVE_T    ;
+0:et       V_FRONT_PASSIVE    ;
+0:et       V_FRONT_TUPCP_0   ;
+0:ä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_RÄPSYTTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:ä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä     V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:e        V_FRONT_PASSIVE_T    ;
+0:et       V_FRONT_PASSIVE    ;
+0:et       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_VIEROITTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta    V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:ta    V_BACK_DERIV_PCPS ;
+
+
+LEXICON V_PURKAA
+
+0:ka      V_BACK_AINF   ;
+0:ka      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:ka      V_BACK_STRONG_PRESENT    ;
+0:ka      V_BACK_3SG_A      ;
+0:ka      V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0:k       V_BACK_STRONG_PAST  ;
+0:ka        V_BACK_IMPERATIVE   ;
+0:ka        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:ka    V_BACK_DERIV_PCPS ;
+
+LEXICON V_YSKÄHTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:dä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:d       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:de        V_FRONT_PASSIVE_T    ;
+0:det       V_FRONT_PASSIVE    ;
+0:det       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MOJAHTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:da      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:d       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:de        V_BACK_PASSIVE_T    ;
+0:det       V_BACK_PASSIVE    ;
+0:det       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_KYNTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:nä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:n       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:ne        V_FRONT_PASSIVE_T    ;
+0:net       V_FRONT_PASSIVE    ;
+0:net       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_SORTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:ra      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:r       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:re        V_BACK_PASSIVE_T    ;
+0:ret       V_BACK_PASSIVE    ;
+0:ret       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+
+
+LEXICON V_HUUTAA
+
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:da      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:de        V_BACK_PASSIVE_T    ;
+0:det       V_BACK_PASSIVE    ;
+0:det       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_PYYTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:dä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:de        V_FRONT_PASSIVE_T    ;
+0:det       V_FRONT_PASSIVE    ;
+0:det       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_SIVALTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:la      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:le        V_BACK_PASSIVE_T    ;
+0:let       V_BACK_PASSIVE    ;
+0:let       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_VIHELTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:lä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:le        V_FRONT_PASSIVE_T    ;
+0:let       V_FRONT_PASSIVE    ;
+0:let       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_HIVENTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:nä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:ne        V_FRONT_PASSIVE_T    ;
+0:net       V_FRONT_PASSIVE    ;
+0:net       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_HUONONTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:na      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:ne        V_BACK_PASSIVE_T    ;
+0:net       V_BACK_PASSIVE    ;
+0:net       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_KUHERTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:ra      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:re        V_BACK_PASSIVE_T    ;
+0:ret       V_BACK_PASSIVE    ;
+0:ret       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_NÄPERTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:rä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:re        V_FRONT_PASSIVE_T    ;
+0:ret       V_FRONT_PASSIVE    ;
+0:ret       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+
+
+
+LEXICON V_KIITÄÄ
+
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:dä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:d       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:de        V_FRONT_PASSIVE_T    ;
+0:det       V_FRONT_PASSIVE    ;
+0:det       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_JOUTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:da      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ;
+0:d       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:de        V_BACK_PASSIVE_T    ;
+0:det       V_BACK_PASSIVE    ;
+0:det       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_YLTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:lä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:l       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:le        V_FRONT_PASSIVE_T    ;
+0:let       V_FRONT_PASSIVE    ;
+0:let       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_ENTÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:nä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:tä      V_FRONT_CONDITIONAL ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:n       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:ne        V_FRONT_PASSIVE_T    ;
+0:net       V_FRONT_PASSIVE    ;
+0:net       V_FRONT_TUPCP_0   ;
+0:tä        V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_KASVAA
+
+
+0:a      V_BACK_AINF   ;
+0:a      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:a      V_BACK_STRONG_PRESENT    ;
+0:a      V_BACK_3SG_A      ;
+0:a      V_BACK_CONDITIONAL ;
+0:o       V_BACK_WEAK_PAST    ;
+0:o       V_BACK_STRONG_PAST  ;
+0:a        V_BACK_IMPERATIVE   ;
+0:a        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:a        V_BACK_DERIV_PCPS ;
+
+LEXICON V_VIRKKAA
+
+0:ka      V_BACK_AINF   ;
+0:ka      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:ka      V_BACK_STRONG_PRESENT    ;
+0:ka      V_BACK_3SG_A      ;
+0:ka      V_BACK_CONDITIONAL ;
+0:o       V_BACK_WEAK_PAST    ;
+0:ko       V_BACK_STRONG_PAST  ;
+0:ka        V_BACK_IMPERATIVE   ;
+0:ka        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:ka        V_BACK_DERIV_PCPS ;
+
+LEXICON V_TAPPAA
+
+0:pa      V_BACK_AINF   ;
+0:pa      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:pa      V_BACK_STRONG_PRESENT    ;
+0:pa      V_BACK_3SG_A      ;
+0:pa      V_BACK_CONDITIONAL ;
+0:o       V_BACK_WEAK_PAST    ;
+0:po       V_BACK_STRONG_PAST  ;
+0:pa        V_BACK_IMPERATIVE   ;
+0:pa        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:pa        V_BACK_DERIV_PCPS ;
+
+LEXICON V_AUTTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:a      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:o       V_BACK_WEAK_PAST    ;
+0:to       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_SATAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:da     V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:do      V_BACK_WEAK_PAST    ;
+0:to       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:de       V_BACK_PASSIVE_T    ;
+0:det      V_BACK_PASSIVE    ;
+0:det      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_KANTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:na     V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:no      V_BACK_WEAK_PAST    ;
+0:to       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:ne       V_BACK_PASSIVE_T    ;
+0:net      V_BACK_PASSIVE    ;
+0:net      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+
+
+LEXICON V_KAATAA
+
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:da     V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:do      V_BACK_WEAK_PAST    ;
+0:s      V_BACK_WEAK_PAST    ;
+0:to       V_BACK_STRONG_PAST  ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:de       V_BACK_PASSIVE_T    ;
+0:det      V_BACK_PASSIVE    ;
+0:det      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+LEXICON V_SAARTAA
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:ra     V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:ta      V_BACK_CONDITIONAL ;
+0:ro      V_BACK_WEAK_PAST    ;
+0:s      V_BACK_WEAK_PAST    ;
+0:to       V_BACK_STRONG_PAST  ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:re       V_BACK_PASSIVE_T    ;
+0:ret      V_BACK_PASSIVE    ;
+0:ret      V_BACK_TUPCP_0   ;
+0:ta        V_BACK_DERIV_PCPS ;
+
+
+
+LEXICON V_KYTKEÄ
+
+
+0:e      V_FRONT_AINF   ;
+0:i      V_FRONT_EINF  ;
+0:e      V_FRONT_WEAK_PRESENT    ;
+0:e      V_FRONT_STRONG_PRESENT    ;
+0:e      V_FRONT_3SG_E ;
+0      V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0       V_FRONT_STRONG_PAST  ;
+0:e        V_FRONT_IMPERATIVE   ;
+0:e        V_FRONT_POTENTIAL_N  ;
+0:e        V_FRONT_PASSIVE_T    ;
+0:et       V_FRONT_PASSIVE    ;
+0:et       V_FRONT_TUPCP_0   ;
+0:e        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_SOTKEA
+
+0:e      V_BACK_AINF   ;
+0:i      V_BACK_EINF  ;
+0:e      V_BACK_WEAK_PRESENT    ;
+0:e      V_BACK_STRONG_PRESENT    ;
+0:e      V_BACK_3SG_E ;
+0       V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0       V_BACK_STRONG_PAST  ;
+0:e        V_BACK_IMPERATIVE   ;
+0:e        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:e        V_BACK_DERIV_PCPS ;
+
+LEXICON V_PUKEA
+
+0:ke      V_BACK_AINF   ;
+0:ki      V_BACK_EINF  ;
+0:e      V_BACK_WEAK_PRESENT    ;
+0:ke      V_BACK_STRONG_PRESENT    ;
+0:ke      V_BACK_3SG_E ;
+0:k     V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0:k       V_BACK_STRONG_PAST  ;
+0:ke        V_BACK_IMPERATIVE   ;
+0:ke        V_BACK_POTENTIAL_N  ;
+0:e        V_BACK_PASSIVE_T    ;
+0:et       V_BACK_PASSIVE    ;
+0:et       V_BACK_TUPCP_0   ;
+0:ke        V_BACK_DERIV_PCPS ;
+
+LEXICON V_RYPEÄ
+
+0:pe      V_FRONT_AINF   ;
+0:pi      V_FRONT_EINF  ;
+0:ve      V_FRONT_WEAK_PRESENT    ;
+0:pe      V_FRONT_STRONG_PRESENT    ;
+0:pe      V_FRONT_3SG_E ;
+0:p       V_FRONT_CONDITIONAL ;
+0:v       V_FRONT_WEAK_PAST    ;
+0:p       V_FRONT_STRONG_PAST  ;
+0:pe        V_FRONT_IMPERATIVE   ;
+0:pe        V_FRONT_POTENTIAL_N  ;
+0:ve        V_FRONT_PASSIVE_T    ;
+0:vet       V_FRONT_PASSIVE    ;
+0:vet       V_FRONT_TUPCP_0   ;
+0:pe        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_PÄTEÄ
+
+0:te      V_FRONT_AINF   ;
+0:ti      V_FRONT_EINF  ;
+0:de      V_FRONT_WEAK_PRESENT    ;
+0:te      V_FRONT_STRONG_PRESENT    ;
+0:te      V_FRONT_3SG_E ;
+0:t       V_FRONT_CONDITIONAL ;
+0:d       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:te        V_FRONT_IMPERATIVE   ;
+0:te        V_FRONT_POTENTIAL_N  ;
+0:de        V_FRONT_PASSIVE_T    ;
+0:det       V_FRONT_PASSIVE    ;
+0:det       V_FRONT_TUPCP_0   ;
+0:te        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KUTEA
+
+0:te      V_BACK_AINF   ;
+0:ti      V_BACK_EINF  ;
+0:de      V_BACK_WEAK_PRESENT    ;
+0:te      V_BACK_STRONG_PRESENT    ;
+0:te      V_BACK_3SG_E ;
+0:t       V_BACK_CONDITIONAL ;
+0:d       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ; 
+0:te        V_BACK_IMPERATIVE   ;
+0:te        V_BACK_POTENTIAL_N  ;
+0:de        V_BACK_PASSIVE_T    ;
+0:det       V_BACK_PASSIVE    ;
+0:det       V_BACK_TUPCP_0   ;
+0:te        V_BACK_DERIV_PCPS ;
+
+LEXICON V_TUNKEA
+
+0:ke      V_BACK_AINF   ;
+0:ki      V_BACK_EINF  ;
+0:ge      V_BACK_WEAK_PRESENT    ;
+0:ke      V_BACK_STRONG_PRESENT    ;
+0:ke      V_BACK_3SG_E ;
+0:k       V_BACK_CONDITIONAL ;
+0:g       V_BACK_WEAK_PAST    ;
+0:k       V_BACK_STRONG_PAST  ; 
+0:ke        V_BACK_IMPERATIVE   ;
+0:ke        V_BACK_POTENTIAL_N  ;
+0:ge        V_BACK_PASSIVE_T    ;
+0:get       V_BACK_PASSIVE    ;
+0:get       V_BACK_TUPCP_0   ;
+0:ke        V_BACK_DERIV_PCPS ;
+
+LEXICON V_POLKEA
+
+0:ke      V_BACK_AINF   ;
+0:ki      V_BACK_EINF  ;
+0:je      V_BACK_WEAK_PRESENT    ;
+0:ke      V_BACK_STRONG_PRESENT    ;
+0:ke      V_BACK_3SG_E ;
+0:k       V_BACK_CONDITIONAL ;
+0:j       V_BACK_WEAK_PAST    ;
+0:k       V_BACK_STRONG_PAST  ; 
+0:ke        V_BACK_IMPERATIVE   ;
+0:ke        V_BACK_POTENTIAL_N  ;
+0:je        V_BACK_PASSIVE_T    ;
+0:jet       V_BACK_PASSIVE    ;
+0:jet       V_BACK_TUPCP_0   ;
+0:ke        V_BACK_DERIV_PCPS ;
+
+LEXICON V_SÄRKEÄ
+
+0:ke      V_FRONT_AINF   ;
+0:ki      V_FRONT_EINF  ;
+0:je      V_FRONT_WEAK_PRESENT    ;
+0:ke      V_FRONT_STRONG_PRESENT    ;
+0:ke      V_FRONT_3SG_E ;
+0:k       V_FRONT_CONDITIONAL ;
+0:j       V_FRONT_WEAK_PAST    ;
+0:k       V_FRONT_STRONG_PAST  ;
+0:ke        V_FRONT_IMPERATIVE   ;
+0:ke        V_FRONT_POTENTIAL_N  ;
+0:je        V_FRONT_PASSIVE_T    ;
+0:jet       V_FRONT_PASSIVE    ;
+0:jet       V_FRONT_TUPCP_0   ;
+0:ke        V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_TUNTEA
+
+
+0:te      V_BACK_AINF   ;
+0:ti      V_BACK_EINF  ;
+0:ne      V_BACK_WEAK_PRESENT    ;
+0:te      V_BACK_STRONG_PRESENT    ;
+0:te      V_BACK_3SG_E ;
+0:t       V_BACK_CONDITIONAL ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ; 
+0:te        V_BACK_IMPERATIVE   ;
+0:te        V_BACK_POTENTIAL_N  ;
+0:ne        V_BACK_PASSIVE_T    ;
+0:net       V_BACK_PASSIVE    ;
+0:net       V_BACK_TUPCP_0   ;
+0:te        V_BACK_DERIV_PCPS ;
+
+
+
+LEXICON V_LÄHTEÄ
+
+
+0:hte      V_FRONT_AINF   ;
+0:hti      V_FRONT_EINF  ;
+0:hde      V_FRONT_WEAK_PRESENT    ;
+0:hte      V_FRONT_STRONG_PRESENT    ;
+0:hte      V_FRONT_3SG_E ;
+0:ht       V_FRONT_CONDITIONAL ;
+0:hd       V_FRONT_WEAK_PAST    ;
+0:ht       V_FRONT_STRONG_PAST  ;
+0:ks       V_FRONT_WEAK_PAST    ;
+0:ks       V_FRONT_STRONG_PAST  ;
+0:hte        V_FRONT_IMPERATIVE   ;
+0:hte        V_FRONT_POTENTIAL_N  ;
+0:hde        V_FRONT_PASSIVE_T    ;
+0:hdet       V_FRONT_PASSIVE    ;
+0:hdet       V_FRONT_TUPCP_0   ;
+0:hte        V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_KOSIA
+
+
+0:i      V_BACK_AINF   ;
+0:i      V_BACK_EINF  ;
+0:i      V_BACK_WEAK_PRESENT    ;
+0:i      V_BACK_STRONG_PRESENT    ;
+0:i      V_BACK_3SG_I ;
+0        V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0       V_BACK_STRONG_PAST  ;
+0:i        V_BACK_IMPERATIVE   ;
+0:i        V_BACK_POTENTIAL_N  ;
+0:i        V_BACK_PASSIVE_T    ;
+0:it       V_BACK_PASSIVE    ;
+0:it       V_BACK_TUPCP_0   ;
+0:i        V_BACK_DERIV_PCPS ;
+
+LEXICON V_RYSKIÄ
+
+0:i      V_FRONT_AINF   ;
+0:i      V_FRONT_EINF  ;
+0:i      V_FRONT_WEAK_PRESENT    ;
+0:i      V_FRONT_STRONG_PRESENT    ;
+0:i      V_FRONT_3SG_I ;
+0       V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0       V_FRONT_STRONG_PAST  ;
+0:i        V_FRONT_IMPERATIVE   ;
+0:i        V_FRONT_POTENTIAL_N  ;
+0:i        V_FRONT_PASSIVE_T    ;
+0:it       V_FRONT_PASSIVE    ;
+0:it       V_FRONT_TUPCP_0   ;
+0:i        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KUKKIA
+
+0:ki      V_BACK_AINF   ;
+0:ki      V_BACK_EINF  ;
+0:i      V_BACK_WEAK_PRESENT    ;
+0:ki      V_BACK_STRONG_PRESENT    ;
+0:ki      V_BACK_3SG_I ;
+0:k     V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0:k       V_BACK_STRONG_PAST  ;
+0:ki        V_BACK_IMPERATIVE   ;
+0:ki        V_BACK_POTENTIAL_N  ;
+0:i        V_BACK_PASSIVE_T    ;
+0:it       V_BACK_PASSIVE    ;
+0:it       V_BACK_TUPCP_0   ;
+0:ki       V_BACK_DERIV_PCPS ;
+
+LEXICON V_SÖRKKIÄ
+
+0:ki      V_FRONT_AINF   ;
+0:ki      V_FRONT_EINF  ;
+0:i      V_FRONT_WEAK_PRESENT    ;
+0:ki      V_FRONT_STRONG_PRESENT    ;
+0:ki      V_FRONT_3SG_I ;
+0:k       V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0:k       V_FRONT_STRONG_PAST  ;
+0:ki        V_FRONT_IMPERATIVE   ;
+0:ki        V_FRONT_POTENTIAL_N  ;
+0:i        V_FRONT_PASSIVE_T    ;
+0:it       V_FRONT_PASSIVE    ;
+0:it       V_FRONT_TUPCP_0   ;
+0:ki        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KALPPIA
+
+0:pi      V_BACK_AINF   ;
+0:pi      V_BACK_EINF  ;
+0:i      V_BACK_WEAK_PRESENT    ;
+0:pi      V_BACK_STRONG_PRESENT    ;
+0:pi      V_BACK_3SG_I ;
+0:p       V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0:p       V_BACK_STRONG_PAST  ;
+0:pi        V_BACK_IMPERATIVE   ;
+0:pi        V_BACK_POTENTIAL_N  ;
+0:i        V_BACK_PASSIVE_T    ;
+0:it       V_BACK_PASSIVE    ;
+0:it       V_BACK_TUPCP_0   ;
+0:pi        V_BACK_DERIV_PCPS ;
+
+LEXICON V_HYPPIÄ
+
+0:pi      V_FRONT_AINF   ;
+0:pi      V_FRONT_EINF  ;
+0:i      V_FRONT_WEAK_PRESENT    ;
+0:pi      V_FRONT_STRONG_PRESENT    ;
+0:pi      V_FRONT_3SG_I ;
+0:p       V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0:p       V_FRONT_STRONG_PAST  ;
+0:pi        V_FRONT_IMPERATIVE   ;
+0:pi        V_FRONT_POTENTIAL_N  ;
+0:i        V_FRONT_PASSIVE_T    ;
+0:it       V_FRONT_PASSIVE    ;
+0:it       V_FRONT_TUPCP_0   ;
+0:pi        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MOITTIA
+
+0:ti      V_BACK_AINF   ;
+0:ti      V_BACK_EINF  ;
+0:i      V_BACK_WEAK_PRESENT    ;
+0:ti      V_BACK_STRONG_PRESENT    ;
+0:ti      V_BACK_3SG_I ;
+0:t       V_BACK_CONDITIONAL ;
+0       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ti        V_BACK_IMPERATIVE   ;
+0:ti        V_BACK_POTENTIAL_N  ;
+0:i        V_BACK_PASSIVE_T    ;
+0:it       V_BACK_PASSIVE    ;
+0:it       V_BACK_TUPCP_0   ;
+0:ti        V_BACK_DERIV_PCPS ;
+
+LEXICON V_MIETTIÄ
+
+0:ti      V_FRONT_AINF   ;
+0:ti      V_FRONT_EINF  ;
+0:i      V_FRONT_WEAK_PRESENT    ;
+0:ti      V_FRONT_STRONG_PRESENT    ;
+0:ti      V_FRONT_3SG_I ;
+0:t       V_FRONT_CONDITIONAL ;
+0       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:ti        V_FRONT_IMPERATIVE   ;
+0:ti        V_FRONT_POTENTIAL_N  ;
+0:i        V_FRONT_PASSIVE_T    ;
+0:it       V_FRONT_PASSIVE    ;
+0:it       V_FRONT_TUPCP_0   ;
+0:ti        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_RIIPIÄ
+
+0:pi      V_FRONT_AINF   ;
+0:pi      V_FRONT_EINF  ;
+0:vi     V_FRONT_WEAK_PRESENT    ;
+0:pi      V_FRONT_STRONG_PRESENT    ;
+0:pi      V_FRONT_3SG_I ;
+0:p       V_FRONT_CONDITIONAL ;
+0:v       V_FRONT_WEAK_PAST    ;
+0:p       V_FRONT_STRONG_PAST  ;
+0:pi        V_FRONT_IMPERATIVE   ;
+0:pi        V_FRONT_POTENTIAL_N  ;
+0:vi       V_FRONT_PASSIVE_T    ;
+0:vit       V_FRONT_PASSIVE    ;
+0:vit       V_FRONT_TUPCP_0   ;
+0:pi        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_RAAPIA
+
+0:pi      V_BACK_AINF   ;
+0:pi      V_BACK_EINF  ;
+0:vi     V_BACK_WEAK_PRESENT    ;
+0:pi      V_BACK_STRONG_PRESENT    ;
+0:pi      V_BACK_3SG_I ;
+0:p     V_BACK_CONDITIONAL ;
+0:v       V_BACK_WEAK_PAST    ;
+0:p       V_BACK_STRONG_PAST  ;
+0:pi        V_BACK_IMPERATIVE   ;
+0:pi        V_BACK_POTENTIAL_N  ;
+0:vi       V_BACK_PASSIVE_T    ;
+0:vit      V_BACK_PASSIVE    ;
+0:vit      V_BACK_TUPCP_0   ;
+0:pi        V_BACK_DERIV_PCPS ;
+
+LEXICON V_AHNEHTIA
+
+0:ti      V_BACK_AINF   ;
+0:ti      V_BACK_EINF  ;
+0:di     V_BACK_WEAK_PRESENT    ;
+0:ti      V_BACK_STRONG_PRESENT    ;
+0:ti      V_BACK_3SG_I ;
+0:t       V_BACK_CONDITIONAL ;
+0:d       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ti        V_BACK_IMPERATIVE   ;
+0:ti        V_BACK_POTENTIAL_N  ;
+0:di       V_BACK_PASSIVE_T    ;
+0:dit      V_BACK_PASSIVE    ;
+0:dit      V_BACK_TUPCP_0   ;
+0:ti        V_BACK_DERIV_PCPS ;
+
+LEXICON V_EHTIÄ
+
+0:ti      V_FRONT_AINF   ;
+0:ti      V_FRONT_EINF  ;
+0:di     V_FRONT_WEAK_PRESENT    ;
+0:ti      V_FRONT_STRONG_PRESENT    ;
+0:ti      V_FRONT_3SG_I ;
+0:t       V_FRONT_CONDITIONAL ;
+0:d       V_FRONT_WEAK_PAST    ;
+0:t       V_FRONT_STRONG_PAST  ;
+0:ti        V_FRONT_IMPERATIVE   ;
+0:ti        V_FRONT_POTENTIAL_N  ;
+0:di       V_FRONT_PASSIVE_T    ;
+0:dit       V_FRONT_PASSIVE    ;
+0:dit       V_FRONT_TUPCP_0   ;
+0:ti        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MÖNKIÄ
+
+0:ki      V_FRONT_AINF   ;
+0:ki      V_FRONT_EINF  ;
+0:gi     V_FRONT_WEAK_PRESENT    ;
+0:ki      V_FRONT_STRONG_PRESENT    ;
+0:ki      V_FRONT_3SG_I ;
+0:k       V_FRONT_CONDITIONAL ;
+0:g       V_FRONT_WEAK_PAST    ;
+0:k       V_FRONT_STRONG_PAST  ;
+0:ki        V_FRONT_IMPERATIVE   ;
+0:ki        V_FRONT_POTENTIAL_N  ;
+0:gi       V_FRONT_PASSIVE_T    ;
+0:git       V_FRONT_PASSIVE    ;
+0:git       V_FRONT_TUPCP_0   ;
+0:ki        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_ONKIA
+
+0:ki      V_BACK_AINF   ;
+0:ki      V_BACK_EINF  ;
+0:gi     V_BACK_WEAK_PRESENT    ;
+0:ki      V_BACK_STRONG_PRESENT    ;
+0:ki      V_BACK_3SG_I ;
+0:k       V_BACK_CONDITIONAL ;
+0:g       V_BACK_WEAK_PAST    ;
+0:k       V_BACK_STRONG_PAST  ;
+0:ki        V_BACK_IMPERATIVE   ;
+0:ki        V_BACK_POTENTIAL_N  ;
+0:gi       V_BACK_PASSIVE_T    ;
+0:git      V_BACK_PASSIVE    ;
+0:git      V_BACK_TUPCP_0   ;
+0:ki        V_BACK_DERIV_PCPS ;
+
+LEXICON V_TYMPIÄ
+
+0:pi      V_FRONT_AINF   ;
+0:pi      V_FRONT_EINF  ;
+0:mi     V_FRONT_WEAK_PRESENT    ;
+0:pi      V_FRONT_STRONG_PRESENT    ;
+0:pi      V_FRONT_3SG_I ;
+0:p       V_FRONT_CONDITIONAL ;
+0:m       V_FRONT_WEAK_PAST    ;
+0:p       V_FRONT_STRONG_PAST  ;
+0:pi        V_FRONT_IMPERATIVE   ;
+0:pi        V_FRONT_POTENTIAL_N  ;
+0:mi       V_FRONT_PASSIVE_T    ;
+0:mit       V_FRONT_PASSIVE    ;
+0:mit       V_FRONT_TUPCP_0   ;
+0:pi        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KONTIA
+
+0:ti      V_BACK_AINF   ;
+0:ti      V_BACK_EINF  ;
+0:ni     V_BACK_WEAK_PRESENT    ;
+0:ti      V_BACK_STRONG_PRESENT    ;
+0:ti      V_BACK_3SG_I ;
+0:t       V_BACK_CONDITIONAL ;
+0:n       V_BACK_WEAK_PAST    ;
+0:t       V_BACK_STRONG_PAST  ;
+0:ti        V_BACK_IMPERATIVE   ;
+0:ti        V_BACK_POTENTIAL_N  ;
+0:ni       V_BACK_PASSIVE_T    ;
+0:nit      V_BACK_PASSIVE    ;
+0:nit      V_BACK_TUPCP_0   ;
+0:ti        V_BACK_DERIV_PCPS ;
+
+LEXICON V_HYLKIÄ
+
+0:ki      V_FRONT_AINF   ;
+0:ki      V_FRONT_EINF  ;
+0:ji     V_FRONT_WEAK_PRESENT    ;
+0:ki      V_FRONT_STRONG_PRESENT    ;
+0:ki      V_FRONT_3SG_I ;
+0:k       V_FRONT_CONDITIONAL ;
+0:j       V_FRONT_WEAK_PAST    ;
+0:k       V_FRONT_STRONG_PAST  ;
+0:ki        V_FRONT_IMPERATIVE   ;
+0:ki        V_FRONT_POTENTIAL_N  ;
+0:ji       V_FRONT_PASSIVE_T    ;
+0:jit       V_FRONT_PASSIVE    ;
+0:jit       V_FRONT_TUPCP_0   ;
+0:ki        V_FRONT_DERIV_PCPS ;
+
+
+
+
+LEXICON V_KOPIOIDA
+
+
+0:id    V_BACK_AINF    ;
+0:id    V_BACK_EINF  ;
+0:i     V_BACK_WEAK_PRESENT  ;
+0:i   V_BACK_STRONG_PRESENT    ;
+0   V_BACK_3SG_I  ;
+0       V_BACK_CONDITIONAL ;
+0   V_BACK_WEAK_PAST    ;
+0   V_BACK_STRONG_PAST    ;
+0:i   V_BACK_IMPERATIVE   ;
+0:i   V_BACK_POTENTIAL_N  ;
+0:i   V_BACK_PASSIVE_D    ;
+0:i   V_BACK_PASSIVE    ;
+0:i   V_BACK_TUPCP_D  ;
+0:i        V_BACK_DERIV_PCPS ;
+
+LEXICON V_ÖYKKÄRÖIDÄ
+
+0:id    V_FRONT_AINF    ;
+0:id    V_FRONT_EINF  ;
+0:i     V_FRONT_WEAK_PRESENT  ;
+0:i   V_FRONT_STRONG_PRESENT    ;
+0   V_FRONT_3SG_I  ;
+0       V_FRONT_CONDITIONAL ;
+0   V_FRONT_WEAK_PAST    ;
+0   V_FRONT_STRONG_PAST    ;
+0:i   V_FRONT_IMPERATIVE   ;
+0:i   V_FRONT_POTENTIAL_N  ;
+0:i   V_FRONT_PASSIVE_D    ;
+0:i   V_FRONT_PASSIVE    ;
+0:i   V_FRONT_TUPCP_D  ;
+0:i        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_SAADA
+
+
+0:ad    V_BACK_AINF    ;
+0:ad    V_BACK_EINF  ;
+0:a     V_BACK_WEAK_PRESENT  ;
+0:a   V_BACK_STRONG_PRESENT    ;
+0   V_BACK_3SG_A          ;
+0       V_BACK_CONDITIONAL ;
+0   V_BACK_WEAK_PAST    ;
+0   V_BACK_STRONG_PAST    ;
+0:a   V_BACK_IMPERATIVE   ;
+0:a   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_D    ;
+0:a   V_BACK_PASSIVE    ;
+0:a   V_BACK_TUPCP_D  ;
+0:a        V_BACK_DERIV_PCPS ;
+
+LEXICON V_MYYDÄ
+
+0:yd    V_FRONT_AINF    ;
+0:yd    V_FRONT_EINF  ;
+0:y     V_FRONT_WEAK_PRESENT  ;
+0:y   V_FRONT_STRONG_PRESENT    ;
+0   V_FRONT_3SG_Y          ;
+0       V_FRONT_CONDITIONAL ;
+0   V_FRONT_WEAK_PAST    ;
+0   V_FRONT_STRONG_PAST    ;
+0:y   V_FRONT_IMPERATIVE   ;
+0:y   V_FRONT_POTENTIAL_N  ;
+0:y   V_FRONT_PASSIVE_D    ;
+0:y   V_FRONT_PASSIVE    ;
+0:y   V_FRONT_TUPCP_D  ;
+0:y        V_FRONT_DERIV_PCPS ;
+
+LEXICON V_JÄÄDÄ
+
+0:äd    V_FRONT_AINF    ;
+0:äd    V_FRONT_EINF  ;
+0:ä     V_FRONT_WEAK_PRESENT  ;
+0:ä   V_FRONT_STRONG_PRESENT    ;
+0   V_FRONT_3SG_Ä          ;
+0       V_FRONT_CONDITIONAL ;
+0   V_FRONT_WEAK_PAST    ;
+0   V_FRONT_STRONG_PAST    ;
+0:ä   V_FRONT_IMPERATIVE   ;
+0:ä   V_FRONT_POTENTIAL_N  ;
+0:ä   V_FRONT_PASSIVE_D    ;
+0:ä   V_FRONT_PASSIVE    ;
+0:ä   V_FRONT_TUPCP_D  ;
+0:ä        V_FRONT_DERIV_PCPS ;
+
+
+
+
+
+LEXICON V_VIEDÄ
+
+
+0:ied   V_FRONT_AINF    ;
+0:ied   V_FRONT_EINF  ;
+0:ie    V_FRONT_WEAK_PRESENT  ;
+0:ie  V_FRONT_STRONG_PRESENT    ;
+0:i   V_FRONT_3SG_E  ;
+0:e       V_FRONT_CONDITIONAL ;
+0:e   V_FRONT_WEAK_PAST    ;
+0:e   V_FRONT_STRONG_PAST    ;
+0:ie  V_FRONT_IMPERATIVE   ;
+0:ie  V_FRONT_POTENTIAL_N  ;
+0:ie  V_FRONT_PASSIVE_D    ;
+0:ie  V_FRONT_PASSIVE    ;
+0:ie  V_FRONT_TUPCP_D  ;
+0:ie       V_FRONT_DERIV_PCPS ;
+
+LEXICON V_TUODA
+
+0:uod   V_BACK_AINF    ;
+0:uod   V_BACK_EINF  ;
+0:uo    V_BACK_WEAK_PRESENT  ;
+0:uo  V_BACK_STRONG_PRESENT    ;
+0:u   V_BACK_3SG_O          ;
+0:o       V_BACK_CONDITIONAL ;
+0:o   V_BACK_WEAK_PAST    ;
+0:o   V_BACK_STRONG_PAST    ;
+0:uo  V_BACK_IMPERATIVE   ;
+0:uo  V_BACK_POTENTIAL_N  ;
+0:uo  V_BACK_PASSIVE_D    ;
+0:uo  V_BACK_PASSIVE    ;
+0:uo  V_BACK_TUPCP_D  ;
+0:uo       V_BACK_DERIV_PCPS ;
+
+LEXICON V_SYÖDÄ
+
+0:yöd   V_FRONT_AINF    ;
+0:yöd   V_FRONT_EINF  ;
+0:yö    V_FRONT_WEAK_PRESENT  ;
+0:yö  V_FRONT_STRONG_PRESENT    ;
+0:y   V_FRONT_3SG_Ö          ;
+0:ö       V_FRONT_CONDITIONAL ;
+0:ö   V_FRONT_WEAK_PAST    ;
+0:ö   V_FRONT_STRONG_PAST    ;
+0:yö  V_FRONT_IMPERATIVE   ;
+0:yö  V_FRONT_POTENTIAL_N  ;
+0:yö  V_FRONT_PASSIVE_D    ;
+0:yö  V_FRONT_PASSIVE    ;
+0:yö  V_FRONT_TUPCP_D  ;
+0:yö       V_FRONT_DERIV_PCPS ;
+
+
+
+
+LEXICON V_KÄYDÄ
+
+
+0:yd   V_FRONT_AINF    ;
+0:yd   V_FRONT_EINF  ;
+0:y    V_FRONT_WEAK_PRESENT  ;
+0:y  V_FRONT_STRONG_PRESENT    ;
+0   V_FRONT_3SG_Y          ;
+0:v       V_FRONT_CONDITIONAL ;
+0:v  V_FRONT_WEAK_PAST    ;
+0:v  V_FRONT_STRONG_PAST    ;
+0:y  V_FRONT_IMPERATIVE   ;
+0:y  V_FRONT_POTENTIAL_N  ;
+0:y  V_FRONT_PASSIVE_D    ;
+0:y  V_FRONT_PASSIVE    ;
+0:y  V_FRONT_TUPCP_D  ;
+0:y        V_FRONT_DERIV_PCPS ;
+
+
+
+
+
+LEXICON V_MARISTA
+
+
+0:t    V_BACK_AINF    ;
+0:t    V_BACK_EINF  ;
+0:e     V_BACK_WEAK_PRESENT  ;
+0:e   V_BACK_STRONG_PRESENT    ;
+0:e   V_BACK_3SG_E          ;
+0       V_BACK_CONDITIONAL ;
+0   V_BACK_WEAK_PAST    ;
+0   V_BACK_STRONG_PAST    ;
+0   V_BACK_IMPERATIVE   ;
+0   V_BACK_POTENTIAL_S  ;
+0   V_BACK_PASSIVE_T    ;
+0   V_BACK_PASSIVE    ;
+0   V_BACK_TUPCP_STRONG  ;
+0:e        V_BACK_DERIV_PCPS ;
+
+LEXICON V_ÄRISTÄ
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:e     V_FRONT_WEAK_PRESENT  ;
+0:e   V_FRONT_STRONG_PRESENT    ;
+0:e   V_FRONT_3SG_E          ;
+0       V_FRONT_CONDITIONAL ;
+0   V_FRONT_WEAK_PAST    ;
+0   V_FRONT_STRONG_PAST    ;
+0   V_FRONT_IMPERATIVE   ;
+0   V_FRONT_POTENTIAL_S  ;
+0   V_FRONT_PASSIVE_T    ;
+0   V_FRONT_PASSIVE    ;
+0   V_FRONT_TUPCP_STRONG  ;
+0:e        V_FRONT_DERIV_PCPS ;
+
+
+LEXICON V_HÄVÄISTÄ
+
+0:väist    V_FRONT_AINF    ;
+0:väist    V_FRONT_EINF  ;
+0:päise     V_FRONT_WEAK_PRESENT  ;
+0:päise   V_FRONT_STRONG_PRESENT    ;
+0:päise   V_FRONT_3SG_E          ;
+0:päis    V_FRONT_CONDITIONAL ;
+0:päis   V_FRONT_WEAK_PAST    ;
+0:päis   V_FRONT_STRONG_PAST    ;
+0:väis   V_FRONT_IMPERATIVE   ;
+0:väis   V_FRONT_POTENTIAL_S  ;
+0:väis   V_FRONT_PASSIVE_T    ;
+0:väis   V_FRONT_PASSIVE    ;
+0:väis   V_FRONT_TUPCP_STRONG  ;
+0:päise  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_VAVISTA
+
+0:vist    V_BACK_AINF    ;
+0:vist    V_BACK_EINF  ;
+0:pise     V_BACK_WEAK_PRESENT  ;
+0:pise   V_BACK_STRONG_PRESENT    ;
+0:pise   V_BACK_3SG_E          ;
+0:pis     V_BACK_CONDITIONAL ;
+0:pis   V_BACK_WEAK_PAST    ;
+0:pis   V_BACK_STRONG_PAST    ;
+0:vis   V_BACK_IMPERATIVE   ;
+0:vis   V_BACK_POTENTIAL_S  ;
+0:vis   V_BACK_PASSIVE_T    ;
+0:vis   V_BACK_PASSIVE    ;
+0:vis   V_BACK_TUPCP_STRONG  ;
+0:pis   V_BACK_DERIV_PCPS ;
+
+LEXICON V_RANGAISTA
+
+0:gaist    V_BACK_AINF    ;
+0:gaist    V_BACK_EINF  ;
+0:kaise     V_BACK_WEAK_PRESENT  ;
+0:kaise   V_BACK_STRONG_PRESENT    ;
+0:kaise   V_BACK_3SG_E          ;
+0:kais    V_BACK_CONDITIONAL ;
+0:kais   V_BACK_WEAK_PAST    ;
+0:kais   V_BACK_STRONG_PAST    ;
+0:gais   V_BACK_IMPERATIVE   ;
+0:gais   V_BACK_POTENTIAL_S  ;
+0:gais   V_BACK_PASSIVE_T    ;
+0:gais   V_BACK_PASSIVE    ;
+0:gais   V_BACK_TUPCP_STRONG  ;
+0:kaise  V_BACK_DERIV_PCPS ;
+
+
+
+
+LEXICON V_SURRA
+
+
+0:r    V_BACK_AINF    ;
+0:r    V_BACK_EINF    ;
+0:e    V_BACK_WEAK_PRESENT    ;
+0:e    V_BACK_STRONG_PRESENT    ;
+0:e    V_BACK_3SG_E ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_R ;
+0   V_BACK_PASSIVE_R    ;
+0   V_BACK_PASSIVE  ;
+0   V_BACK_TUPCP_R    ;
+0:e V_BACK_DERIV_PCPS ;
+
+LEXICON V_PIERRÄ
+
+0:r    V_FRONT_AINF    ;
+0:r    V_FRONT_EINF    ;
+0:e    V_FRONT_WEAK_PRESENT    ;
+0:e    V_FRONT_STRONG_PRESENT    ;
+0:e    V_FRONT_3SG_E ;
+0    V_FRONT_WEAK_PAST   ;
+0    V_FRONT_STRONG_PAST ;
+0    V_FRONT_CONDITIONAL  ;
+0   V_FRONT_IMPERATIVE ;
+0   V_FRONT_POTENTIAL_R ;
+0   V_FRONT_PASSIVE_R    ;
+0   V_FRONT_PASSIVE  ;
+0   V_FRONT_TUPCP_R    ;
+0:e V_FRONT_DERIV_PCPS ;
+
+LEXICON V_PANNA
+
+0:n    V_BACK_AINF    ;
+0:n    V_BACK_EINF    ;
+0:e    V_BACK_WEAK_PRESENT    ;
+0:e    V_BACK_STRONG_PRESENT    ;
+0:e    V_BACK_3SG_E ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_N ;
+0   V_BACK_PASSIVE_N    ;
+0   V_BACK_PASSIVE  ;
+0   V_BACK_TUPCP_N    ;
+0:e V_BACK_DERIV_PCPS ;
+
+LEXICON V_MENNÄ
+
+0:n    V_FRONT_AINF    ;
+0:n    V_FRONT_EINF    ;
+0:e    V_FRONT_WEAK_PRESENT    ;
+0:e    V_FRONT_STRONG_PRESENT    ;
+0:e    V_FRONT_3SG_E ;
+0    V_FRONT_WEAK_PAST   ;
+0    V_FRONT_STRONG_PAST ;
+0    V_FRONT_CONDITIONAL  ;
+0   V_FRONT_IMPERATIVE ;
+0   V_FRONT_POTENTIAL_N ;
+0   V_FRONT_PASSIVE_N    ;
+0   V_FRONT_PASSIVE  ;
+0   V_FRONT_TUPCP_N    ;
+0:e V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_VASTAILLA
+
+0:l    V_BACK_AINF    ;
+0:l    V_BACK_EINF    ;
+0:e    V_BACK_WEAK_PRESENT    ;
+0:e    V_BACK_STRONG_PRESENT    ;
+0:e    V_BACK_3SG_E ;
+0    V_BACK_WEAK_PAST   ;
+0    V_BACK_STRONG_PAST ;
+0    V_BACK_CONDITIONAL  ;
+0   V_BACK_IMPERATIVE ;
+0   V_BACK_POTENTIAL_L ;
+0   V_BACK_PASSIVE_L    ;
+0   V_BACK_PASSIVE  ;
+0   V_BACK_TUPCP_L    ;
+0:e V_BACK_DERIV_PCPS ;
+
+LEXICON V_ÄKSYILLÄ
+
+0:l    V_FRONT_AINF    ;
+0:l    V_FRONT_EINF    ;
+0:e    V_FRONT_WEAK_PRESENT    ;
+0:e    V_FRONT_STRONG_PRESENT    ;
+0:e    V_FRONT_3SG_E ;
+0    V_FRONT_WEAK_PAST   ;
+0    V_FRONT_STRONG_PAST ;
+0    V_FRONT_CONDITIONAL  ;
+0   V_FRONT_IMPERATIVE ;
+0   V_FRONT_POTENTIAL_L ;
+0   V_FRONT_PASSIVE_L    ;
+0   V_FRONT_PASSIVE  ;
+0   V_FRONT_TUPCP_L    ;
+0:e V_FRONT_DERIV_PCPS ;
+
+LEXICON V_LEIKELLÄ
+
+0:ell    V_FRONT_AINF    ;
+0:ell    V_FRONT_EINF    ;
+0:kele    V_FRONT_WEAK_PRESENT    ;
+0:kele    V_FRONT_STRONG_PRESENT    ;
+0:kele    V_FRONT_3SG_E ;
+0:kel    V_FRONT_WEAK_PAST   ;
+0:kel    V_FRONT_STRONG_PAST ;
+0:kel    V_FRONT_CONDITIONAL  ;
+0:el   V_FRONT_IMPERATIVE ;
+0:el   V_FRONT_POTENTIAL_L ;
+0:el   V_FRONT_PASSIVE_L    ;
+0:el   V_FRONT_PASSIVE  ;
+0:el   V_FRONT_TUPCP_L    ;
+0:kele V_FRONT_DERIV_PCPS ;
+
+LEXICON V_NAKELLA
+
+0:ell    V_BACK_AINF    ;
+0:ell    V_BACK_EINF    ;
+0:kele    V_BACK_WEAK_PRESENT    ;
+0:kele    V_BACK_STRONG_PRESENT    ;
+0:kele    V_BACK_3SG_E ;
+0:kel    V_BACK_WEAK_PAST   ;
+0:kel    V_BACK_STRONG_PAST ;
+0:kel    V_BACK_CONDITIONAL  ;
+0:el   V_BACK_IMPERATIVE ;
+0:el   V_BACK_POTENTIAL_L ;
+0:el   V_BACK_PASSIVE_L    ;
+0:el   V_BACK_PASSIVE  ;
+0:el   V_BACK_TUPCP_L    ;
+0:kele V_BACK_DERIV_PCPS ;
+
+LEXICON V_TAPELLA
+
+0:ell    V_BACK_AINF    ;
+0:ell    V_BACK_EINF    ;
+0:pele    V_BACK_WEAK_PRESENT    ;
+0:pele    V_BACK_STRONG_PRESENT    ;
+0:pele    V_BACK_3SG_E ;
+0:pel    V_BACK_WEAK_PAST   ;
+0:pel    V_BACK_STRONG_PAST ;
+0:pel    V_BACK_CONDITIONAL  ;
+0:el   V_BACK_IMPERATIVE ;
+0:el   V_BACK_POTENTIAL_L ;
+0:el   V_BACK_PASSIVE_L    ;
+0:el   V_BACK_PASSIVE  ;
+0:el   V_BACK_TUPCP_L    ;
+0:pele V_BACK_DERIV_PCPS ;
+
+LEXICON V_HYPELLÄ
+
+0:ell    V_FRONT_AINF    ;
+0:ell    V_FRONT_EINF    ;
+0:pele    V_FRONT_WEAK_PRESENT    ;
+0:pele    V_FRONT_STRONG_PRESENT    ;
+0:pele    V_FRONT_3SG_E ;
+0:pel    V_FRONT_WEAK_PAST   ;
+0:pel    V_FRONT_STRONG_PAST ;
+0:pel    V_FRONT_CONDITIONAL  ;
+0:el   V_FRONT_IMPERATIVE ;
+0:el   V_FRONT_POTENTIAL_L ;
+0:el   V_FRONT_PASSIVE_L    ;
+0:el   V_FRONT_PASSIVE  ;
+0:el   V_FRONT_TUPCP_L    ;
+0:pele V_FRONT_DERIV_PCPS ;
+
+LEXICON V_SULATELLA
+
+0:ell    V_BACK_AINF    ;
+0:ell    V_BACK_EINF    ;
+0:tele    V_BACK_WEAK_PRESENT    ;
+0:tele    V_BACK_STRONG_PRESENT    ;
+0:tele    V_BACK_3SG_E ;
+0:tel    V_BACK_WEAK_PAST   ;
+0:tel    V_BACK_STRONG_PAST ;
+0:tel    V_BACK_CONDITIONAL  ;
+0:el   V_BACK_IMPERATIVE ;
+0:el   V_BACK_POTENTIAL_L ;
+0:el   V_BACK_PASSIVE_L    ;
+0:el   V_BACK_PASSIVE  ;
+0:el   V_BACK_TUPCP_L    ;
+0:tele V_BACK_DERIV_PCPS ;
+
+LEXICON V_HERÄTELLÄ
+
+0:ell    V_FRONT_AINF    ;
+0:ell    V_FRONT_EINF    ;
+0:tele    V_FRONT_WEAK_PRESENT    ;
+0:tele    V_FRONT_STRONG_PRESENT    ;
+0:tele    V_FRONT_3SG_E ;
+0:tel    V_FRONT_WEAK_PAST   ;
+0:tel    V_FRONT_STRONG_PAST ;
+0:tel    V_FRONT_CONDITIONAL  ;
+0:el   V_FRONT_IMPERATIVE ;
+0:el   V_FRONT_POTENTIAL_L ;
+0:el   V_FRONT_PASSIVE_L    ;
+0:el   V_FRONT_PASSIVE  ;
+0:el   V_FRONT_TUPCP_L    ;
+0:tele V_FRONT_DERIV_PCPS ;
+
+LEXICON V_TIPAHDELLA
+
+0:dell    V_BACK_AINF    ;
+0:dell    V_BACK_EINF    ;
+0:tele    V_BACK_WEAK_PRESENT    ;
+0:tele    V_BACK_STRONG_PRESENT    ;
+0:tele    V_BACK_3SG_E ;
+0:tel    V_BACK_WEAK_PAST   ;
+0:tel    V_BACK_STRONG_PAST ;
+0:tel    V_BACK_CONDITIONAL  ;
+0:del   V_BACK_IMPERATIVE ;
+0:del   V_BACK_POTENTIAL_L ;
+0:del   V_BACK_PASSIVE_L    ;
+0:del   V_BACK_PASSIVE  ;
+0:del   V_BACK_TUPCP_L    ;
+0:tele  V_BACK_DERIV_PCPS ;
+
+LEXICON V_SÄPSÄHDELLÄ
+
+0:dell    V_FRONT_AINF    ;
+0:dell    V_FRONT_EINF    ;
+0:tele    V_FRONT_WEAK_PRESENT    ;
+0:tele    V_FRONT_STRONG_PRESENT    ;
+0:tele    V_FRONT_3SG_E ;
+0:tel    V_FRONT_WEAK_PAST   ;
+0:tel    V_FRONT_STRONG_PAST ;
+0:tel    V_FRONT_CONDITIONAL  ;
+0:del   V_FRONT_IMPERATIVE ;
+0:del   V_FRONT_POTENTIAL_L ;
+0:del   V_FRONT_PASSIVE_L    ;
+0:del   V_FRONT_PASSIVE  ;
+0:del   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_OMMELLA
+
+0:mell    V_BACK_AINF    ;
+0:mell    V_BACK_EINF    ;
+0:pele    V_BACK_WEAK_PRESENT    ;
+0:pele    V_BACK_STRONG_PRESENT    ;
+0:pele    V_BACK_3SG_E ;
+0:pel    V_BACK_WEAK_PAST   ;
+0:pel    V_BACK_STRONG_PAST ;
+0:pel    V_BACK_CONDITIONAL  ;
+0:mel   V_BACK_IMPERATIVE ;
+0:mel   V_BACK_POTENTIAL_L ;
+0:mel   V_BACK_PASSIVE_L    ;
+0:mel   V_BACK_PASSIVE  ;
+0:mel   V_BACK_TUPCP_L    ;
+0:pele  V_BACK_DERIV_PCPS ;
+
+LEXICON V_VAELLELLA
+
+0:lell    V_BACK_AINF    ;
+0:lell    V_BACK_EINF    ;
+0:tele    V_BACK_WEAK_PRESENT    ;
+0:tele    V_BACK_STRONG_PRESENT    ;
+0:tele    V_BACK_3SG_E ;
+0:tel    V_BACK_WEAK_PAST   ;
+0:tel    V_BACK_STRONG_PAST ;
+0:tel    V_BACK_CONDITIONAL  ;
+0:lel   V_BACK_IMPERATIVE ;
+0:lel   V_BACK_POTENTIAL_L ;
+0:lel   V_BACK_PASSIVE_L    ;
+0:lel   V_BACK_PASSIVE  ;
+0:lel   V_BACK_TUPCP_L    ;
+0:tele  V_BACK_DERIV_PCPS ;
+
+LEXICON V_KIILLELLÄ
+
+0:lell    V_FRONT_AINF    ;
+0:lell    V_FRONT_EINF    ;
+0:tele    V_FRONT_WEAK_PRESENT    ;
+0:tele    V_FRONT_STRONG_PRESENT    ;
+0:tele    V_FRONT_3SG_E ;
+0:tel    V_FRONT_WEAK_PAST   ;
+0:tel    V_FRONT_STRONG_PAST ;
+0:tel    V_FRONT_CONDITIONAL  ;
+0:lel   V_FRONT_IMPERATIVE ;
+0:lel   V_FRONT_POTENTIAL_L ;
+0:lel   V_FRONT_PASSIVE_L    ;
+0:lel   V_FRONT_PASSIVE  ;
+0:lel   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KOMENNELLA
+
+0:nell    V_BACK_AINF    ;
+0:nell    V_BACK_EINF    ;
+0:tele    V_BACK_WEAK_PRESENT    ;
+0:tele    V_BACK_STRONG_PRESENT    ;
+0:tele    V_BACK_3SG_E ;
+0:tel    V_BACK_WEAK_PAST   ;
+0:tel    V_BACK_STRONG_PAST ;
+0:tel    V_BACK_CONDITIONAL  ;
+0:nel   V_BACK_IMPERATIVE ;
+0:nel   V_BACK_POTENTIAL_L ;
+0:nel   V_BACK_PASSIVE_L    ;
+0:nel   V_BACK_PASSIVE  ;
+0:nel   V_BACK_TUPCP_L    ;
+0:tele  V_BACK_DERIV_PCPS ;
+
+LEXICON V_KÄÄNNELLÄ
+
+0:nell    V_FRONT_AINF    ;
+0:nell    V_FRONT_EINF    ;
+0:tele    V_FRONT_WEAK_PRESENT    ;
+0:tele    V_FRONT_STRONG_PRESENT    ;
+0:tele    V_FRONT_3SG_E ;
+0:tel    V_FRONT_WEAK_PAST   ;
+0:tel    V_FRONT_STRONG_PAST ;
+0:tel    V_FRONT_CONDITIONAL  ;
+0:nel   V_FRONT_IMPERATIVE ;
+0:nel   V_FRONT_POTENTIAL_L ;
+0:nel   V_FRONT_PASSIVE_L    ;
+0:nel   V_FRONT_PASSIVE  ;
+0:nel   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_NAKERRELLA
+
+0:rell    V_BACK_AINF    ;
+0:rell    V_BACK_EINF    ;
+0:tele    V_BACK_WEAK_PRESENT    ;
+0:tele    V_BACK_STRONG_PRESENT    ;
+0:tele    V_BACK_3SG_E ;
+0:tel    V_BACK_WEAK_PAST   ;
+0:tel    V_BACK_STRONG_PAST ;
+0:tel    V_BACK_CONDITIONAL  ;
+0:rel   V_BACK_IMPERATIVE ;
+0:rel   V_BACK_POTENTIAL_L ;
+0:rel   V_BACK_PASSIVE_L    ;
+0:rel   V_BACK_PASSIVE  ;
+0:rel   V_BACK_TUPCP_L    ;
+0:tele  V_BACK_DERIV_PCPS ;
+
+LEXICON V_KIHERRELLÄ
+
+0:rell    V_FRONT_AINF    ;
+0:rell    V_FRONT_EINF    ;
+0:tele    V_FRONT_WEAK_PRESENT    ;
+0:tele    V_FRONT_STRONG_PRESENT    ;
+0:tele    V_FRONT_3SG_E ;
+0:tel    V_FRONT_WEAK_PAST   ;
+0:tel    V_FRONT_STRONG_PAST ;
+0:tel    V_FRONT_CONDITIONAL  ;
+0:rel   V_FRONT_IMPERATIVE ;
+0:rel   V_FRONT_POTENTIAL_L ;
+0:rel   V_FRONT_PASSIVE_L    ;
+0:rel   V_FRONT_PASSIVE  ;
+0:rel   V_FRONT_TUPCP_L    ;
+0:tele  V_FRONT_DERIV_PCPS ;
+
+
+
+
+LEXICON V_ISÄNNÖIDÄ
+
+
+0:id    V_FRONT_AINF    ;
+0:id    V_FRONT_EINF  ;
+0:i     V_FRONT_WEAK_PRESENT  ;
+0:itse     V_FRONT_WEAK_PRESENT  ;
+0:i   V_FRONT_STRONG_PRESENT    ;
+0:itse   V_FRONT_STRONG_PRESENT    ;
+0   V_FRONT_3SG_I  ;
+0:itse   V_FRONT_3SG_E  ;
+0   V_FRONT_WEAK_PAST    ;
+0:its   V_FRONT_WEAK_PAST    ;
+0   V_FRONT_STRONG_PAST    ;
+0:its   V_FRONT_STRONG_PAST    ;
+0:i   V_FRONT_IMPERATIVE   ;
+0:i   V_FRONT_POTENTIAL_N  ;
+0:i   V_FRONT_PASSIVE_D    ;
+0:i   V_FRONT_PASSIVE    ;
+0:i   V_FRONT_TUPCP_D  ;
+0:i   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MELLAKOIDA
+
+0:id    V_BACK_AINF    ;
+0:id    V_BACK_EINF  ;
+0:i     V_BACK_WEAK_PRESENT  ;
+0:itse     V_BACK_WEAK_PRESENT  ;
+0:i   V_BACK_STRONG_PRESENT    ;
+0:itse   V_BACK_STRONG_PRESENT    ;
+0   V_BACK_3SG_I  ;
+0:itse   V_BACK_3SG_E  ;
+0   V_BACK_WEAK_PAST    ;
+0:its   V_BACK_WEAK_PAST    ;
+0   V_BACK_STRONG_PAST    ;
+0:its   V_BACK_STRONG_PAST    ;
+0:i   V_BACK_IMPERATIVE   ;
+0:i   V_BACK_POTENTIAL_N  ;
+0:i   V_BACK_PASSIVE_D    ;
+0:i   V_BACK_PASSIVE    ;
+0:i   V_BACK_TUPCP_D  ;
+0:i   V_BACK_DERIV_PCPS ;
+
+
+
+LEXICON V_PALKITA
+
+
+0:t     V_BACK_AINF    ;
+0:t     V_BACK_EINF  ;
+0:tse     V_BACK_WEAK_PRESENT  ;
+0:tse   V_BACK_STRONG_PRESENT    ;
+0:tse   V_BACK_3SG_E  ;
+0:ts   V_BACK_WEAK_PAST    ;
+0:ts   V_BACK_STRONG_PAST    ;
+0:t   V_BACK_IMPERATIVE   ;
+0:n   V_BACK_POTENTIAL_N  ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE    ;
+0:t   V_BACK_TUPCP_0  ;
+0:tse V_BACK_DERIV_PCPS ;
+
+LEXICON V_MERKITÄ
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:tse     V_FRONT_WEAK_PRESENT  ;
+0:tse   V_FRONT_STRONG_PRESENT    ;
+0:tse   V_FRONT_3SG_E  ;
+0:ts   V_FRONT_WEAK_PAST    ;
+0:ts   V_FRONT_STRONG_PAST    ;
+0:t   V_FRONT_IMPERATIVE   ;
+0:n   V_FRONT_POTENTIAL_N  ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE    ;
+0:t   V_FRONT_TUPCP_0  ;
+0:tse V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_JUOSTA
+
+
+0:st     V_BACK_AINF    ;
+0:st     V_BACK_EINF  ;
+0:kse     V_BACK_WEAK_PRESENT  ;
+0:kse   V_BACK_STRONG_PRESENT    ;
+0:kse   V_BACK_3SG_E  ;
+0:ks   V_BACK_WEAK_PAST    ;
+0:ks   V_BACK_STRONG_PAST    ;
+0:s   V_BACK_IMPERATIVE   ;
+0:s   V_BACK_POTENTIAL_S  ;
+0:s   V_BACK_PASSIVE_T    ;
+0:s   V_BACK_PASSIVE    ;
+0:s   V_BACK_TUPCP_STRONG  ;
+0:kse V_BACK_DERIV_PCPS ;
+
+LEXICON V_PIESTÄ
+
+0:st    V_FRONT_AINF    ;
+0:st    V_FRONT_EINF  ;
+0:kse     V_FRONT_WEAK_PRESENT  ;
+0:kse   V_FRONT_STRONG_PRESENT    ;
+0:kse   V_FRONT_3SG_E  ;
+0:ks   V_FRONT_WEAK_PAST    ;
+0:ks   V_FRONT_STRONG_PAST    ;
+0:s   V_FRONT_IMPERATIVE   ;
+0:s   V_FRONT_POTENTIAL_S  ;
+0:s   V_FRONT_PASSIVE_T    ;
+0:s   V_FRONT_PASSIVE    ;
+0:s   V_FRONT_TUPCP_0  ;
+0:kse V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_NÄHDÄ
+
+
+0:hd   V_FRONT_AINF    ;
+0:hd   V_FRONT_EINF  ;
+0:e       V_FRONT_WEAK_PRESENT  ;
+0:ke    V_FRONT_STRONG_PRESENT    ;
+0:ke    V_FRONT_3SG_E  ;
+0    V_FRONT_WEAK_PAST    ;
+0:k    V_FRONT_STRONG_PAST    ;
+0:h   V_FRONT_IMPERATIVE   ;
+0:h   V_FRONT_POTENTIAL_N  ;
+0:h   V_FRONT_PASSIVE_D    ;
+0:h   V_FRONT_PASSIVE    ;
+0:h   V_FRONT_TUPCP_D  ;
+0:ke  V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_KARHETA
+
+
+0:t    V_BACK_AINF    ;
+0:t    V_BACK_EINF  ;
+0:ne     V_BACK_WEAK_PRESENT  ;
+0:ne   V_BACK_STRONG_PRESENT    ;
+0:ne   V_BACK_3SG_E          ;
+0:n   V_BACK_WEAK_PAST    ;
+0:n   V_BACK_STRONG_PAST    ;
+0:t   V_BACK_IMPERATIVE   ;
+0:n   V_BACK_POTENTIAL_N  ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE    ;
+0:t   V_BACK_TUPCP_0  ;
+0:ne    V_BACK_DERIV_PCPS ;
+
+LEXICON V_VÄHETÄ
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:ne     V_FRONT_WEAK_PRESENT  ;
+0:ne   V_FRONT_STRONG_PRESENT    ;
+0:ne   V_FRONT_3SG_E          ;
+0:n   V_FRONT_WEAK_PAST    ;
+0:n   V_FRONT_STRONG_PAST    ;
+0:t   V_FRONT_IMPERATIVE   ;
+0:n   V_FRONT_POTENTIAL_N  ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE    ;
+0:t   V_FRONT_TUPCP_0  ;
+0:ne    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_NIUKETA
+
+0:et    V_BACK_AINF    ;
+0:et    V_BACK_EINF  ;
+0:kene     V_BACK_WEAK_PRESENT  ;
+0:kene   V_BACK_STRONG_PRESENT    ;
+0:kene   V_BACK_3SG_E          ;
+0:ken   V_BACK_WEAK_PAST    ;
+0:ken   V_BACK_STRONG_PAST    ;
+0:et   V_BACK_IMPERATIVE   ;
+0:en   V_BACK_POTENTIAL_N  ;
+0:e   V_BACK_PASSIVE_T    ;
+0:et   V_BACK_PASSIVE    ;
+0:et   V_BACK_TUPCP_0  ;
+0:kene  V_BACK_DERIV_PCPS ;
+
+LEXICON V_JYRKETÄ
+
+0:et    V_FRONT_AINF    ;
+0:et    V_FRONT_EINF  ;
+0:kene     V_FRONT_WEAK_PRESENT  ;
+0:kene   V_FRONT_STRONG_PRESENT    ;
+0:kene   V_FRONT_3SG_E          ;
+0:ken   V_FRONT_WEAK_PAST    ;
+0:ken   V_FRONT_STRONG_PAST    ;
+0:et   V_FRONT_IMPERATIVE   ;
+0:en   V_FRONT_POTENTIAL_N  ;
+0:e   V_FRONT_PASSIVE_T    ;
+0:et   V_FRONT_PASSIVE    ;
+0:et   V_FRONT_TUPCP_0  ;
+0:kene  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_HAPATA
+
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:pane     V_BACK_WEAK_PRESENT  ;
+0:pane   V_BACK_STRONG_PRESENT    ;
+0:pane   V_BACK_3SG_E          ;
+0:pan   V_BACK_WEAK_PAST    ;
+0:pan   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:pane  V_BACK_DERIV_PCPS ;
+
+LEXICON V_SUPETA
+
+0:et    V_BACK_AINF    ;
+0:et    V_BACK_EINF  ;
+0:pene     V_BACK_WEAK_PRESENT  ;
+0:pene   V_BACK_STRONG_PRESENT    ;
+0:pene   V_BACK_3SG_E          ;
+0:pen   V_BACK_WEAK_PAST    ;
+0:pen   V_BACK_STRONG_PAST    ;
+0:et   V_BACK_IMPERATIVE   ;
+0:en   V_BACK_POTENTIAL_N  ;
+0:e   V_BACK_PASSIVE_T    ;
+0:et   V_BACK_PASSIVE    ;
+0:et   V_BACK_TUPCP_0  ;
+0:pene  V_BACK_DERIV_PCPS ;
+
+LEXICON V_TYLPETÄ
+
+0:et    V_FRONT_AINF    ;
+0:et    V_FRONT_EINF  ;
+0:pene     V_FRONT_WEAK_PRESENT  ;
+0:pene   V_FRONT_STRONG_PRESENT    ;
+0:pene   V_FRONT_3SG_E          ;
+0:pen   V_FRONT_WEAK_PAST    ;
+0:pen   V_FRONT_STRONG_PAST    ;
+0:et   V_FRONT_IMPERATIVE   ;
+0:en   V_FRONT_POTENTIAL_N  ;
+0:e   V_FRONT_PASSIVE_T    ;
+0:et   V_FRONT_PASSIVE    ;
+0:et   V_FRONT_TUPCP_0  ;
+0:pene  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_HELPOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:pone     V_BACK_WEAK_PRESENT  ;
+0:pone   V_BACK_STRONG_PRESENT    ;
+0:pone   V_BACK_3SG_E          ;
+0:pon   V_BACK_WEAK_PAST    ;
+0:pon   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:pone  V_BACK_DERIV_PCPS ;
+
+LEXICON V_LOITOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:tone     V_BACK_WEAK_PRESENT  ;
+0:tone   V_BACK_STRONG_PRESENT    ;
+0:tone   V_BACK_3SG_E          ;
+0:ton   V_BACK_WEAK_PAST    ;
+0:ton   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:tone  V_BACK_DERIV_PCPS ;
+
+LEXICON V_ULOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:kone     V_BACK_WEAK_PRESENT  ;
+0:kone   V_BACK_STRONG_PRESENT    ;
+0:kone   V_BACK_3SG_E          ;
+0:kon   V_BACK_WEAK_PAST    ;
+0:kon   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:kone  V_BACK_DERIV_PCPS ;
+
+LEXICON V_KAVETA
+
+0:vet    V_BACK_AINF    ;
+0:vet    V_BACK_EINF  ;
+0:pene     V_BACK_WEAK_PRESENT  ;
+0:pene   V_BACK_STRONG_PRESENT    ;
+0:pene   V_BACK_3SG_E          ;
+0:pen   V_BACK_WEAK_PAST    ;
+0:pen   V_BACK_STRONG_PAST    ;
+0:vet   V_BACK_IMPERATIVE   ;
+0:ven   V_BACK_POTENTIAL_N  ;
+0:ve   V_BACK_PASSIVE_T    ;
+0:vet   V_BACK_PASSIVE    ;
+0:vet   V_BACK_TUPCP_0  ;
+0:pene  V_BACK_DERIV_PCPS ;
+
+LEXICON V_MÄDÄTÄ
+
+0:dät    V_FRONT_AINF    ;
+0:dät    V_FRONT_EINF  ;
+0:täne     V_FRONT_WEAK_PRESENT  ;
+0:täne   V_FRONT_STRONG_PRESENT    ;
+0:täne   V_FRONT_3SG_E          ;
+0:tän   V_FRONT_WEAK_PAST    ;
+0:tän   V_FRONT_STRONG_PAST    ;
+0:dät   V_FRONT_IMPERATIVE   ;
+0:dän   V_FRONT_POTENTIAL_N  ;
+0:dä   V_FRONT_PASSIVE_T    ;
+0:dät   V_FRONT_PASSIVE    ;
+0:dät   V_FRONT_TUPCP_0  ;
+0:täne  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_LEUDOTA
+
+0:dot    V_BACK_AINF    ;
+0:dot    V_BACK_EINF  ;
+0:tone     V_BACK_WEAK_PRESENT  ;
+0:tone   V_BACK_STRONG_PRESENT    ;
+0:tone   V_BACK_3SG_E          ;
+0:ton   V_BACK_WEAK_PAST    ;
+0:ton   V_BACK_STRONG_PAST    ;
+0:dot   V_BACK_IMPERATIVE   ;
+0:don   V_BACK_POTENTIAL_N  ;
+0:do   V_BACK_PASSIVE_T    ;
+0:dot   V_BACK_PASSIVE    ;
+0:dot   V_BACK_TUPCP_0  ;
+0:tone  V_BACK_DERIV_PCPS ;
+
+LEXICON V_PIDETÄ
+
+0:det    V_FRONT_AINF    ;
+0:det    V_FRONT_EINF  ;
+0:tene     V_FRONT_WEAK_PRESENT  ;
+0:tene   V_FRONT_STRONG_PRESENT    ;
+0:tene   V_FRONT_3SG_E          ;
+0:ten   V_FRONT_WEAK_PAST    ;
+0:ten   V_FRONT_STRONG_PAST    ;
+0:det   V_FRONT_IMPERATIVE   ;
+0:den   V_FRONT_POTENTIAL_N  ;
+0:de   V_FRONT_PASSIVE_T    ;
+0:det   V_FRONT_PASSIVE    ;
+0:det   V_FRONT_TUPCP_0  ;
+0:det   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_LÄMMETÄ
+
+0:met    V_FRONT_AINF    ;
+0:met    V_FRONT_EINF  ;
+0:pene     V_FRONT_WEAK_PRESENT  ;
+0:pene   V_FRONT_STRONG_PRESENT    ;
+0:pene   V_FRONT_3SG_E          ;
+0:pen   V_FRONT_WEAK_PAST    ;
+0:pen   V_FRONT_STRONG_PAST    ;
+0:met   V_FRONT_IMPERATIVE   ;
+0:men   V_FRONT_POTENTIAL_N  ;
+0:me   V_FRONT_PASSIVE_T    ;
+0:met   V_FRONT_PASSIVE    ;
+0:met   V_FRONT_TUPCP_0  ;
+0:pene  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KIINNETÄ
+
+0:net    V_FRONT_AINF    ;
+0:net    V_FRONT_EINF  ;
+0:tene     V_FRONT_WEAK_PRESENT  ;
+0:tene   V_FRONT_STRONG_PRESENT    ;
+0:tene   V_FRONT_3SG_E          ;
+0:ten   V_FRONT_WEAK_PAST    ;
+0:ten   V_FRONT_STRONG_PAST    ;
+0:net   V_FRONT_IMPERATIVE   ;
+0:nen   V_FRONT_POTENTIAL_N  ;
+0:ne   V_FRONT_PASSIVE_T    ;
+0:net   V_FRONT_PASSIVE    ;
+0:net   V_FRONT_TUPCP_0  ;
+0:tene  V_FRONT_DERIV_PCPS ;
+
+LEXICON V_JULJETA
+
+0:jet    V_BACK_AINF    ;
+0:jet    V_BACK_EINF  ;
+0:kene     V_BACK_WEAK_PRESENT  ;
+0:kene   V_BACK_STRONG_PRESENT    ;
+0:kene   V_BACK_3SG_E          ;
+0:ken   V_BACK_WEAK_PAST    ;
+0:ken   V_BACK_STRONG_PAST    ;
+0:jet   V_BACK_IMPERATIVE   ;
+0:jen   V_BACK_POTENTIAL_N  ;
+0:je   V_BACK_PASSIVE_T    ;
+0:jet   V_BACK_PASSIVE    ;
+0:jet   V_BACK_TUPCP_0  ;
+0:kene  V_BACK_DERIV_PCPS ;
+
+
+
+LEXICON V_ARVATA
+
+
+0:t    V_BACK_AINF    ;
+0:t    V_BACK_EINF  ;
+0:a     V_BACK_WEAK_PRESENT  ;
+0:a   V_BACK_STRONG_PRESENT    ;
+0   V_BACK_3SG_A          ;
+0:s   V_BACK_WEAK_PAST    ;
+0:s   V_BACK_STRONG_PAST    ;
+0:t   V_BACK_IMPERATIVE   ;
+0:n   V_BACK_POTENTIAL_N  ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE    ;
+0:t   V_BACK_TUPCP_0  ;
+0:a     V_BACK_DERIV_PCPS ;
+
+LEXICON V_YNNÄTÄ
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:ä     V_FRONT_WEAK_PRESENT  ;
+0:ä   V_FRONT_STRONG_PRESENT    ;
+0   V_FRONT_3SG_Ä          ;
+0:s   V_FRONT_WEAK_PAST    ;
+0:s   V_FRONT_STRONG_PAST    ;
+0:t   V_FRONT_IMPERATIVE   ;
+0:n   V_FRONT_POTENTIAL_N  ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE    ;
+0:t   V_FRONT_TUPCP_0  ;
+0:ä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MORKATA
+
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:kaa     V_BACK_WEAK_PRESENT  ;
+0:kaa   V_BACK_STRONG_PRESENT    ;
+0:ka   V_BACK_3SG_A          ;
+0:kas   V_BACK_WEAK_PAST    ;
+0:kas   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:kaa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_YÖKÄTÄ
+
+0:ät    V_FRONT_AINF    ;
+0:ät    V_FRONT_EINF  ;
+0:kää     V_FRONT_WEAK_PRESENT  ;
+0:kää   V_FRONT_STRONG_PRESENT    ;
+0:kä   V_FRONT_3SG_Ä          ;
+0:käs   V_FRONT_WEAK_PAST    ;
+0:käs   V_FRONT_STRONG_PAST    ;
+0:ät   V_FRONT_IMPERATIVE   ;
+0:än   V_FRONT_POTENTIAL_N  ;
+0:ä   V_FRONT_PASSIVE_T    ;
+0:ät   V_FRONT_PASSIVE    ;
+0:ät   V_FRONT_TUPCP_0  ;
+0:kää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_SIEPATA
+
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:paa     V_BACK_WEAK_PRESENT  ;
+0:paa   V_BACK_STRONG_PRESENT    ;
+0:pa   V_BACK_3SG_A          ;
+0:pas   V_BACK_WEAK_PAST    ;
+0:pas   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:paa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_VÄLPÄTÄ
+
+0:ät    V_FRONT_AINF    ;
+0:ät    V_FRONT_EINF  ;
+0:pää     V_FRONT_WEAK_PRESENT  ;
+0:pää   V_FRONT_STRONG_PRESENT    ;
+0:pä   V_FRONT_3SG_Ä          ;
+0:päs   V_FRONT_WEAK_PAST    ;
+0:päs   V_FRONT_STRONG_PAST    ;
+0:ät   V_FRONT_IMPERATIVE   ;
+0:än   V_FRONT_POTENTIAL_N  ;
+0:ä   V_FRONT_PASSIVE_T    ;
+0:ät   V_FRONT_PASSIVE    ;
+0:ät   V_FRONT_TUPCP_0  ;
+0:pää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_LUNTATA
+
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:taa     V_BACK_WEAK_PRESENT  ;
+0:taa   V_BACK_STRONG_PRESENT    ;
+0:ta   V_BACK_3SG_A          ;
+0:tas   V_BACK_WEAK_PAST    ;
+0:tas   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_LÄNTÄTÄ
+
+0:ät    V_FRONT_AINF    ;
+0:ät    V_FRONT_EINF  ;
+0:tää     V_FRONT_WEAK_PRESENT  ;
+0:tää   V_FRONT_STRONG_PRESENT    ;
+0:tä   V_FRONT_3SG_Ä          ;
+0:täs   V_FRONT_WEAK_PAST    ;
+0:täs   V_FRONT_STRONG_PAST    ;
+0:ät   V_FRONT_IMPERATIVE   ;
+0:än   V_FRONT_POTENTIAL_N  ;
+0:ä   V_FRONT_PASSIVE_T    ;
+0:ät   V_FRONT_PASSIVE    ;
+0:ät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KAIVATA
+
+0:vat    V_BACK_AINF    ;
+0:vat    V_BACK_EINF  ;
+0:paa     V_BACK_WEAK_PRESENT  ;
+0:paa   V_BACK_STRONG_PRESENT    ;
+0:pa   V_BACK_3SG_A          ;
+0:pas   V_BACK_WEAK_PAST    ;
+0:pas   V_BACK_STRONG_PAST    ;
+0:vat   V_BACK_IMPERATIVE   ;
+0:van   V_BACK_POTENTIAL_N  ;
+0:va   V_BACK_PASSIVE_T    ;
+0:vat   V_BACK_PASSIVE    ;
+0:vat   V_BACK_TUPCP_0  ;
+0:paa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_LEVÄTÄ
+
+0:vät    V_FRONT_AINF    ;
+0:vät    V_FRONT_EINF  ;
+0:pää     V_FRONT_WEAK_PRESENT  ;
+0:pää   V_FRONT_STRONG_PRESENT    ;
+0:pä   V_FRONT_3SG_Ä          ;
+0:päs   V_FRONT_WEAK_PAST    ;
+0:päs   V_FRONT_STRONG_PAST    ;
+0:vät   V_FRONT_IMPERATIVE   ;
+0:vän   V_FRONT_POTENTIAL_N  ;
+0:vä   V_FRONT_PASSIVE_T    ;
+0:vät   V_FRONT_PASSIVE    ;
+0:vät   V_FRONT_TUPCP_0  ;
+0:pää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_JAHDATA
+
+0:dat    V_BACK_AINF    ;
+0:dat    V_BACK_EINF  ;
+0:taa     V_BACK_WEAK_PRESENT  ;
+0:taa   V_BACK_STRONG_PRESENT    ;
+0:ta   V_BACK_3SG_A          ;
+0:tas   V_BACK_WEAK_PAST    ;
+0:tas   V_BACK_STRONG_PAST    ;
+0:dat   V_BACK_IMPERATIVE   ;
+0:dan   V_BACK_POTENTIAL_N  ;
+0:da   V_BACK_PASSIVE_T    ;
+0:dat   V_BACK_PASSIVE    ;
+0:dat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_TÄHDÄTÄ
+
+0:dät    V_FRONT_AINF    ;
+0:dät    V_FRONT_EINF  ;
+0:tää     V_FRONT_WEAK_PRESENT  ;
+0:tää   V_FRONT_STRONG_PRESENT    ;
+0:tä   V_FRONT_3SG_Ä          ;
+0:täs   V_FRONT_WEAK_PAST    ;
+0:täs   V_FRONT_STRONG_PAST    ;
+0:dät   V_FRONT_IMPERATIVE   ;
+0:dän   V_FRONT_POTENTIAL_N  ;
+0:dä   V_FRONT_PASSIVE_T    ;
+0:dät   V_FRONT_PASSIVE    ;
+0:dät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_VONGATA
+
+0:gat    V_BACK_AINF    ;
+0:gat    V_BACK_EINF  ;
+0:kaa     V_BACK_WEAK_PRESENT  ;
+0:kaa   V_BACK_STRONG_PRESENT    ;
+0:ka   V_BACK_3SG_A          ;
+0:kas   V_BACK_WEAK_PAST    ;
+0:kas   V_BACK_STRONG_PAST    ;
+0:gat   V_BACK_IMPERATIVE   ;
+0:gan   V_BACK_POTENTIAL_N  ;
+0:ga   V_BACK_PASSIVE_T    ;
+0:gat   V_BACK_PASSIVE    ;
+0:gat   V_BACK_TUPCP_0  ;
+0:kaa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_VÄNGÄTÄ
+
+0:gät    V_FRONT_AINF    ;
+0:gät    V_FRONT_EINF  ;
+0:kää     V_FRONT_WEAK_PRESENT  ;
+0:kää   V_FRONT_STRONG_PRESENT    ;
+0:kä   V_FRONT_3SG_Ä          ;
+0:käs   V_FRONT_WEAK_PAST    ;
+0:käs   V_FRONT_STRONG_PAST    ;
+0:gät   V_FRONT_IMPERATIVE   ;
+0:gän   V_FRONT_POTENTIAL_N  ;
+0:gä   V_FRONT_PASSIVE_T    ;
+0:gät   V_FRONT_PASSIVE    ;
+0:gät   V_FRONT_TUPCP_0  ;
+0:kää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_TEMMATA
+
+0:mat    V_BACK_AINF    ;
+0:mat    V_BACK_EINF  ;
+0:paa     V_BACK_WEAK_PRESENT  ;
+0:paa   V_BACK_STRONG_PRESENT    ;
+0:pa   V_BACK_3SG_A          ;
+0:pas   V_BACK_WEAK_PAST    ;
+0:pas   V_BACK_STRONG_PAST    ;
+0:mat   V_BACK_IMPERATIVE   ;
+0:man   V_BACK_POTENTIAL_N  ;
+0:ma   V_BACK_PASSIVE_T    ;
+0:mat   V_BACK_PASSIVE    ;
+0:mat   V_BACK_TUPCP_0  ;
+0:paa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_MULLATA
+
+0:lat    V_BACK_AINF    ;
+0:lat    V_BACK_EINF  ;
+0:taa     V_BACK_WEAK_PRESENT  ;
+0:taa   V_BACK_STRONG_PRESENT    ;
+0:ta   V_BACK_3SG_A          ;
+0:tas   V_BACK_WEAK_PAST    ;
+0:tas   V_BACK_STRONG_PAST    ;
+0:lat   V_BACK_IMPERATIVE   ;
+0:lan   V_BACK_POTENTIAL_N  ;
+0:la   V_BACK_PASSIVE_T    ;
+0:lat   V_BACK_PASSIVE    ;
+0:lat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_SUUNNATA
+
+0:nat    V_BACK_AINF    ;
+0:nat    V_BACK_EINF  ;
+0:taa     V_BACK_WEAK_PRESENT  ;
+0:taa   V_BACK_STRONG_PRESENT    ;
+0:ta   V_BACK_3SG_A          ;
+0:tas   V_BACK_WEAK_PAST    ;
+0:tas   V_BACK_STRONG_PAST    ;
+0:nat   V_BACK_IMPERATIVE   ;
+0:nan   V_BACK_POTENTIAL_N  ;
+0:na   V_BACK_PASSIVE_T    ;
+0:nat   V_BACK_PASSIVE    ;
+0:nat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_RYNNÄTÄ
+
+0:nät    V_FRONT_AINF    ;
+0:nät    V_FRONT_EINF  ;
+0:tää     V_FRONT_WEAK_PRESENT  ;
+0:tää   V_FRONT_STRONG_PRESENT    ;
+0:tä   V_FRONT_3SG_Ä          ;
+0:täs   V_FRONT_WEAK_PAST    ;
+0:täs   V_FRONT_STRONG_PAST    ;
+0:nät   V_FRONT_IMPERATIVE   ;
+0:nän   V_FRONT_POTENTIAL_N  ;
+0:nä   V_FRONT_PASSIVE_T    ;
+0:nät   V_FRONT_PASSIVE    ;
+0:nät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_VIRRATA
+
+0:rat    V_BACK_AINF    ;
+0:rat    V_BACK_EINF  ;
+0:taa     V_BACK_WEAK_PRESENT  ;
+0:taa   V_BACK_STRONG_PRESENT    ;
+0:ta   V_BACK_3SG_A          ;
+0:tas   V_BACK_WEAK_PAST    ;
+0:tas   V_BACK_STRONG_PAST    ;
+0:rat   V_BACK_IMPERATIVE   ;
+0:ran   V_BACK_POTENTIAL_N  ;
+0:ra   V_BACK_PASSIVE_T    ;
+0:rat   V_BACK_PASSIVE    ;
+0:rat   V_BACK_TUPCP_0  ;
+0:taa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_HYLJÄTÄ
+
+0:jät    V_FRONT_AINF    ;
+0:jät    V_FRONT_EINF  ;
+0:kää     V_FRONT_WEAK_PRESENT  ;
+0:kää   V_FRONT_STRONG_PRESENT    ;
+0:kä   V_FRONT_3SG_Ä          ;
+0:käs   V_FRONT_WEAK_PAST    ;
+0:käs   V_FRONT_STRONG_PAST    ;
+0:jät   V_FRONT_IMPERATIVE   ;
+0:jän   V_FRONT_POTENTIAL_N  ;
+0:jä   V_FRONT_PASSIVE_T    ;
+0:jät   V_FRONT_PASSIVE    ;
+0:jät   V_FRONT_TUPCP_0  ;
+0:tää   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_DIGATA
+
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:gaa     V_BACK_WEAK_PRESENT  ;
+0:gaa   V_BACK_STRONG_PRESENT    ;
+0:ga   V_BACK_3SG_A          ;
+0:gas   V_BACK_WEAK_PAST    ;
+0:gas   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:kaa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_LOBATA
+
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:baa     V_BACK_WEAK_PRESENT  ;
+0:baa   V_BACK_STRONG_PRESENT    ;
+0:ba   V_BACK_3SG_A          ;
+0:bas   V_BACK_WEAK_PAST    ;
+0:bas   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:baa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KARHUTA
+
+0:t    V_BACK_AINF    ;
+0:t    V_BACK_EINF  ;
+0:a     V_BACK_WEAK_PRESENT  ;
+0:a   V_BACK_STRONG_PRESENT    ;
+0:a   V_BACK_3SG_A          ;
+0:s   V_BACK_WEAK_PAST    ;
+0:s   V_BACK_STRONG_PAST    ;
+0:t   V_BACK_IMPERATIVE   ;
+0:n   V_BACK_POTENTIAL_N  ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE    ;
+0:t   V_BACK_TUPCP_0  ;
+0:a     V_BACK_DERIV_PCPS ;
+
+LEXICON V_TÄHYTÄ
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:ä     V_FRONT_WEAK_PRESENT  ;
+0:ä   V_FRONT_STRONG_PRESENT    ;
+0:ä   V_FRONT_3SG_Ä          ;
+0:s   V_FRONT_WEAK_PAST    ;
+0:s   V_FRONT_STRONG_PAST    ;
+0:t   V_FRONT_IMPERATIVE   ;
+0:n   V_FRONT_POTENTIAL_N  ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE    ;
+0:t   V_FRONT_TUPCP_0  ;
+0:ä     V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KAIKOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:koa     V_BACK_WEAK_PRESENT  ;
+0:koa   V_BACK_STRONG_PRESENT    ;
+0:koa   V_BACK_3SG_A          ;
+0:kos   V_BACK_WEAK_PAST    ;
+0:kos   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:koa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_POIKETA
+
+0:et    V_BACK_AINF    ;
+0:et    V_BACK_EINF  ;
+0:kea     V_BACK_WEAK_PRESENT  ;
+0:kea   V_BACK_STRONG_PRESENT    ;
+0:kea   V_BACK_3SG_A          ;
+0:kes   V_BACK_WEAK_PAST    ;
+0:kes   V_BACK_STRONG_PAST    ;
+0:et   V_BACK_IMPERATIVE   ;
+0:en   V_BACK_POTENTIAL_N  ;
+0:e   V_BACK_PASSIVE_T    ;
+0:et   V_BACK_PASSIVE    ;
+0:et   V_BACK_TUPCP_0  ;
+0:kea   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KERETÄ
+
+0:et    V_FRONT_AINF    ;
+0:et    V_FRONT_EINF  ;
+0:keä     V_FRONT_WEAK_PRESENT  ;
+0:keä   V_FRONT_STRONG_PRESENT    ;
+0:keä   V_FRONT_3SG_Ä          ;
+0:kes   V_FRONT_WEAK_PAST    ;
+0:kes   V_FRONT_STRONG_PAST    ;
+0:et   V_FRONT_IMPERATIVE   ;
+0:en   V_FRONT_POTENTIAL_N  ;
+0:e   V_FRONT_PASSIVE_T    ;
+0:et   V_FRONT_PASSIVE    ;
+0:et   V_FRONT_TUPCP_0  ;
+0:keä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KOUKUTA
+
+0:ut    V_BACK_AINF    ;
+0:ut    V_BACK_EINF  ;
+0:kua     V_BACK_WEAK_PRESENT  ;
+0:kua   V_BACK_STRONG_PRESENT    ;
+0:kua   V_BACK_3SG_A          ;
+0:kus   V_BACK_WEAK_PAST    ;
+0:kus   V_BACK_STRONG_PAST    ;
+0:ut   V_BACK_IMPERATIVE   ;
+0:un   V_BACK_POTENTIAL_N  ;
+0:u   V_BACK_PASSIVE_T    ;
+0:ut   V_BACK_PASSIVE    ;
+0:ut   V_BACK_TUPCP_0  ;
+0:kua   V_BACK_DERIV_PCPS ;
+
+LEXICON V_PULPUTA
+
+0:ut    V_BACK_AINF    ;
+0:ut    V_BACK_EINF  ;
+0:pua     V_BACK_WEAK_PRESENT  ;
+0:pua   V_BACK_STRONG_PRESENT    ;
+0:pua   V_BACK_3SG_A          ;
+0:pus   V_BACK_WEAK_PAST    ;
+0:pus   V_BACK_STRONG_PAST    ;
+0:ut   V_BACK_IMPERATIVE   ;
+0:un   V_BACK_POTENTIAL_N  ;
+0:u   V_BACK_PASSIVE_T    ;
+0:ut   V_BACK_PASSIVE    ;
+0:ut   V_BACK_TUPCP_0  ;
+0:pua   V_BACK_DERIV_PCPS ;
+
+LEXICON V_UPOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:poa     V_BACK_WEAK_PRESENT  ;
+0:poa   V_BACK_STRONG_PRESENT    ;
+0:poa   V_BACK_3SG_A          ;
+0:pos   V_BACK_WEAK_PAST    ;
+0:pos   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:poa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_LOTOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_LUUTUTA
+
+0:ut    V_BACK_AINF    ;
+0:ut    V_BACK_EINF  ;
+0:tua     V_BACK_WEAK_PRESENT  ;
+0:tua   V_BACK_STRONG_PRESENT    ;
+0:tua   V_BACK_3SG_A          ;
+0:tus   V_BACK_WEAK_PAST    ;
+0:tus   V_BACK_STRONG_PAST    ;
+0:ut   V_BACK_IMPERATIVE   ;
+0:un   V_BACK_POTENTIAL_N  ;
+0:u   V_BACK_PASSIVE_T    ;
+0:ut   V_BACK_PASSIVE    ;
+0:ut   V_BACK_TUPCP_0  ;
+0:tua   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KIVUTA
+
+0:vut    V_BACK_AINF    ;
+0:vut    V_BACK_EINF  ;
+0:pua     V_BACK_WEAK_PRESENT  ;
+0:pua   V_BACK_STRONG_PRESENT    ;
+0:pua   V_BACK_3SG_A          ;
+0:pus   V_BACK_WEAK_PAST    ;
+0:pus   V_BACK_STRONG_PAST    ;
+0:vut   V_BACK_IMPERATIVE   ;
+0:vun   V_BACK_POTENTIAL_N  ;
+0:vu   V_BACK_PASSIVE_T    ;
+0:vut   V_BACK_PASSIVE    ;
+0:vut   V_BACK_TUPCP_0  ;
+0:pua   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KORVETA
+
+0:vet    V_BACK_AINF    ;
+0:vet    V_BACK_EINF  ;
+0:pea     V_BACK_WEAK_PRESENT  ;
+0:pea   V_BACK_STRONG_PRESENT    ;
+0:pea   V_BACK_3SG_A          ;
+0:pes   V_BACK_WEAK_PAST    ;
+0:pes   V_BACK_STRONG_PAST    ;
+0:vet   V_BACK_IMPERATIVE   ;
+0:ven   V_BACK_POTENTIAL_N  ;
+0:ve   V_BACK_PASSIVE_T    ;
+0:vet   V_BACK_PASSIVE    ;
+0:vet   V_BACK_TUPCP_0  ;
+0:pea   V_BACK_DERIV_PCPS ;
+
+LEXICON V_REVETÄ
+
+0:vet    V_FRONT_AINF    ;
+0:vet    V_FRONT_EINF  ;
+0:peä     V_FRONT_WEAK_PRESENT  ;
+0:peä   V_FRONT_STRONG_PRESENT    ;
+0:peä   V_FRONT_3SG_Ä          ;
+0:pes   V_FRONT_WEAK_PAST    ;
+0:pes   V_FRONT_STRONG_PAST    ;
+0:vet   V_FRONT_IMPERATIVE   ;
+0:ven   V_FRONT_POTENTIAL_N  ;
+0:ve   V_FRONT_PASSIVE_T    ;
+0:vet   V_FRONT_PASSIVE    ;
+0:vet   V_FRONT_TUPCP_0  ;
+0:peä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KIRVOTA
+
+0:vot    V_BACK_AINF    ;
+0:vot    V_BACK_EINF  ;
+0:poa     V_BACK_WEAK_PRESENT  ;
+0:poa   V_BACK_STRONG_PRESENT    ;
+0:poa   V_BACK_3SG_A          ;
+0:pos   V_BACK_WEAK_PAST    ;
+0:pos   V_BACK_STRONG_PAST    ;
+0:vot   V_BACK_IMPERATIVE   ;
+0:von   V_BACK_POTENTIAL_N  ;
+0:vo   V_BACK_PASSIVE_T    ;
+0:vot   V_BACK_PASSIVE    ;
+0:vot   V_BACK_TUPCP_0  ;
+0:poa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KADOTA
+
+0:dot    V_BACK_AINF    ;
+0:dot    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:dot   V_BACK_IMPERATIVE   ;
+0:don   V_BACK_POTENTIAL_N  ;
+0:do   V_BACK_PASSIVE_T    ;
+0:dot   V_BACK_PASSIVE    ;
+0:dot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_TODETA
+
+0:det    V_BACK_AINF    ;
+0:det    V_BACK_EINF  ;
+0:tea     V_BACK_WEAK_PRESENT  ;
+0:tea   V_BACK_STRONG_PRESENT    ;
+0:tea   V_BACK_3SG_A          ;
+0:tes   V_BACK_WEAK_PAST    ;
+0:tes   V_BACK_STRONG_PAST    ;
+0:det   V_BACK_IMPERATIVE   ;
+0:den   V_BACK_POTENTIAL_N  ;
+0:de   V_BACK_PASSIVE_T    ;
+0:det   V_BACK_PASSIVE    ;
+0:det   V_BACK_TUPCP_0  ;
+0:tea   V_BACK_DERIV_PCPS ;
+
+LEXICON V_VYYHDETÄ
+
+0:det    V_FRONT_AINF    ;
+0:det    V_FRONT_EINF  ;
+0:teä     V_FRONT_WEAK_PRESENT  ;
+0:teä   V_FRONT_STRONG_PRESENT    ;
+0:teä   V_FRONT_3SG_Ä          ;
+0:tes   V_FRONT_WEAK_PAST    ;
+0:tes   V_FRONT_STRONG_PAST    ;
+0:det   V_FRONT_IMPERATIVE   ;
+0:den   V_FRONT_POTENTIAL_N  ;
+0:de   V_FRONT_PASSIVE_T    ;
+0:det   V_FRONT_PASSIVE    ;
+0:det   V_FRONT_TUPCP_0  ;
+0:teä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_LIIDUTA
+
+0:dut    V_BACK_AINF    ;
+0:dut    V_BACK_EINF  ;
+0:tua     V_BACK_WEAK_PRESENT  ;
+0:tua   V_BACK_STRONG_PRESENT    ;
+0:tua   V_BACK_3SG_A          ;
+0:tus   V_BACK_WEAK_PAST    ;
+0:tus   V_BACK_STRONG_PAST    ;
+0:dut   V_BACK_IMPERATIVE   ;
+0:dun   V_BACK_POTENTIAL_N  ;
+0:du   V_BACK_PASSIVE_T    ;
+0:dut   V_BACK_PASSIVE    ;
+0:dut   V_BACK_TUPCP_0  ;
+0:tua   V_BACK_DERIV_PCPS ;
+
+LEXICON V_TUNGETA
+
+0:get    V_BACK_AINF    ;
+0:get    V_BACK_EINF  ;
+0:kea     V_BACK_WEAK_PRESENT  ;
+0:kea   V_BACK_STRONG_PRESENT    ;
+0:kea   V_BACK_3SG_A          ;
+0:kes   V_BACK_WEAK_PAST    ;
+0:kes   V_BACK_STRONG_PAST    ;
+0:get   V_BACK_IMPERATIVE   ;
+0:gen   V_BACK_POTENTIAL_N  ;
+0:ge   V_BACK_PASSIVE_T    ;
+0:get   V_BACK_PASSIVE    ;
+0:get   V_BACK_TUPCP_0  ;
+0:kea   V_BACK_DERIV_PCPS ;
+
+LEXICON V_PINGOTA
+
+0:got    V_BACK_AINF    ;
+0:got    V_BACK_EINF  ;
+0:koa     V_BACK_WEAK_PRESENT  ;
+0:koa   V_BACK_STRONG_PRESENT    ;
+0:koa   V_BACK_3SG_A          ;
+0:kos   V_BACK_WEAK_PAST    ;
+0:kos   V_BACK_STRONG_PAST    ;
+0:got   V_BACK_IMPERATIVE   ;
+0:gon   V_BACK_POTENTIAL_N  ;
+0:go   V_BACK_PASSIVE_T    ;
+0:got   V_BACK_PASSIVE    ;
+0:got   V_BACK_TUPCP_0  ;
+0:koa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_ÄNGETÄ
+
+0:get    V_FRONT_AINF    ;
+0:get    V_FRONT_EINF  ;
+0:keä     V_FRONT_WEAK_PRESENT  ;
+0:keä   V_FRONT_STRONG_PRESENT    ;
+0:keä   V_FRONT_3SG_Ä          ;
+0:kes   V_FRONT_WEAK_PAST    ;
+0:kes   V_FRONT_STRONG_PAST    ;
+0:get   V_FRONT_IMPERATIVE   ;
+0:gen   V_FRONT_POTENTIAL_N  ;
+0:ge   V_FRONT_PASSIVE_T    ;
+0:get   V_FRONT_PASSIVE    ;
+0:get   V_FRONT_TUPCP_0  ;
+0:keä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_KUMMUTA
+
+0:mut    V_BACK_AINF    ;
+0:mut    V_BACK_EINF  ;
+0:pua     V_BACK_WEAK_PRESENT  ;
+0:pua   V_BACK_STRONG_PRESENT    ;
+0:pua   V_BACK_3SG_A          ;
+0:pus   V_BACK_WEAK_PAST    ;
+0:pus   V_BACK_STRONG_PAST    ;
+0:mut   V_BACK_IMPERATIVE   ;
+0:mun   V_BACK_POTENTIAL_N  ;
+0:mu   V_BACK_PASSIVE_T    ;
+0:mut   V_BACK_PASSIVE    ;
+0:mut   V_BACK_TUPCP_0  ;
+0:pua   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KAMMETA
+
+0:met    V_BACK_AINF    ;
+0:met    V_BACK_EINF  ;
+0:pea     V_BACK_WEAK_PRESENT  ;
+0:pea   V_BACK_STRONG_PRESENT    ;
+0:pea   V_BACK_3SG_A          ;
+0:pes   V_BACK_WEAK_PAST    ;
+0:pes   V_BACK_STRONG_PAST    ;
+0:met   V_BACK_IMPERATIVE   ;
+0:men   V_BACK_POTENTIAL_N  ;
+0:me   V_BACK_PASSIVE_T    ;
+0:met   V_BACK_PASSIVE    ;
+0:met   V_BACK_TUPCP_0  ;
+0:pea   V_BACK_DERIV_PCPS ;
+
+LEXICON V_SAMMOTA
+
+0:mot    V_BACK_AINF    ;
+0:mot    V_BACK_EINF  ;
+0:poa     V_BACK_WEAK_PRESENT  ;
+0:poa   V_BACK_STRONG_PRESENT    ;
+0:poa   V_BACK_3SG_A          ;
+0:pos   V_BACK_WEAK_PAST    ;
+0:pos   V_BACK_STRONG_PAST    ;
+0:mot   V_BACK_IMPERATIVE   ;
+0:mon   V_BACK_POTENTIAL_N  ;
+0:mo   V_BACK_PASSIVE_T    ;
+0:mot   V_BACK_PASSIVE    ;
+0:mot   V_BACK_TUPCP_0  ;
+0:poa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_INNOTA
+
+0:not    V_BACK_AINF    ;
+0:not    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:not   V_BACK_IMPERATIVE   ;
+0:non   V_BACK_POTENTIAL_N  ;
+0:no   V_BACK_PASSIVE_T    ;
+0:not   V_BACK_PASSIVE    ;
+0:not   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_IRROTA
+
+0:rot    V_BACK_AINF    ;
+0:rot    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:rot   V_BACK_IMPERATIVE   ;
+0:ron   V_BACK_POTENTIAL_N  ;
+0:ro   V_BACK_PASSIVE_T    ;
+0:rot   V_BACK_PASSIVE    ;
+0:rot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_HALJETA
+
+0:jet    V_BACK_AINF    ;
+0:jet    V_BACK_EINF  ;
+0:kea     V_BACK_WEAK_PRESENT  ;
+0:kea   V_BACK_STRONG_PRESENT    ;
+0:kea   V_BACK_3SG_A          ;
+0:kes   V_BACK_WEAK_PAST    ;
+0:kes   V_BACK_STRONG_PAST    ;
+0:jet   V_BACK_IMPERATIVE   ;
+0:jen   V_BACK_POTENTIAL_N  ;
+0:je   V_BACK_PASSIVE_T    ;
+0:jet   V_BACK_PASSIVE    ;
+0:jet   V_BACK_TUPCP_0  ;
+0:kea   V_BACK_DERIV_PCPS ;
+
+LEXICON V_ILJETÄ
+
+0:jet    V_FRONT_AINF    ;
+0:jet    V_FRONT_EINF  ;
+0:keä     V_FRONT_WEAK_PRESENT  ;
+0:keä   V_FRONT_STRONG_PRESENT    ;
+0:keä   V_FRONT_3SG_Ä          ;
+0:kes   V_FRONT_WEAK_PAST    ;
+0:kes   V_FRONT_STRONG_PAST    ;
+0:jet   V_FRONT_IMPERATIVE   ;
+0:jen   V_FRONT_POTENTIAL_N  ;
+0:je   V_FRONT_PASSIVE_T    ;
+0:jet   V_FRONT_PASSIVE    ;
+0:jet   V_FRONT_TUPCP_0  ;
+0:keä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MYRSKYTÄ
+
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:ä     V_FRONT_WEAK_PRESENT  ;
+0:ä   V_FRONT_STRONG_PRESENT    ;
+0:ä   V_FRONT_3SG_Ä          ;
+0:s   V_FRONT_WEAK_PAST    ;
+0:s   V_FRONT_STRONG_PAST    ;
+0:t   V_FRONT_IMPERATIVE   ;
+0:n   V_FRONT_POTENTIAL_N  ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE    ;
+0:t   V_FRONT_TUPCP_0  ;
+0:ä     V_FRONT_DERIV_PCPS ;
+
+LEXICON V_LASSOTA
+
+0:t    V_BACK_AINF    ;
+0:t    V_BACK_EINF  ;
+0:a     V_BACK_WEAK_PRESENT  ;
+0:a   V_BACK_STRONG_PRESENT    ;
+0:a   V_BACK_3SG_A          ;
+0:s   V_BACK_WEAK_PAST    ;
+0:s   V_BACK_STRONG_PAST    ;
+0:t   V_BACK_IMPERATIVE   ;
+0:n   V_BACK_POTENTIAL_N  ;
+0   V_BACK_PASSIVE_T    ;
+0:t   V_BACK_PASSIVE    ;
+0:t   V_BACK_TUPCP_0  ;
+0:a     V_BACK_DERIV_PCPS ;
+
+LEXICON V_SELVITÄ
+
+0:t    V_FRONT_AINF    ;
+0:t    V_FRONT_EINF  ;
+0:ä     V_FRONT_WEAK_PRESENT  ;
+0:ä   V_FRONT_STRONG_PRESENT    ;
+0:ä   V_FRONT_3SG_Ä          ;
+0:s   V_FRONT_WEAK_PAST    ;
+0:s   V_FRONT_STRONG_PAST    ;
+0:t   V_FRONT_IMPERATIVE   ;
+0:n   V_FRONT_POTENTIAL_N  ;
+0   V_FRONT_PASSIVE_T    ;
+0:t   V_FRONT_PASSIVE    ;
+0:t   V_FRONT_TUPCP_0  ;
+0:ä     V_FRONT_DERIV_PCPS ;
+
+LEXICON V_RYÖPYTÄ
+
+0:yt    V_FRONT_AINF    ;
+0:yt    V_FRONT_EINF  ;
+0:pyä     V_FRONT_WEAK_PRESENT  ;
+0:pyä   V_FRONT_STRONG_PRESENT    ;
+0:pyä   V_FRONT_3SG_Ä          ;
+0:pys   V_FRONT_WEAK_PAST    ;
+0:pys   V_FRONT_STRONG_PAST    ;
+0:yt   V_FRONT_IMPERATIVE   ;
+0:yn   V_FRONT_POTENTIAL_N  ;
+0:y   V_FRONT_PASSIVE_T    ;
+0:yt   V_FRONT_PASSIVE    ;
+0:yt   V_FRONT_TUPCP_0  ;
+0:py    V_FRONT_DERIV_PCPS ;
+
+LEXICON V_PEITOTA
+
+0:ot    V_BACK_AINF    ;
+0:ot    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:ot   V_BACK_IMPERATIVE   ;
+0:on   V_BACK_POTENTIAL_N  ;
+0:o   V_BACK_PASSIVE_T    ;
+0:ot   V_BACK_PASSIVE    ;
+0:ot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_KERITÄ
+
+0:it    V_FRONT_AINF    ;
+0:it    V_FRONT_EINF  ;
+0:kiä     V_FRONT_WEAK_PRESENT  ;
+0:kiä   V_FRONT_STRONG_PRESENT    ;
+0:kiä   V_FRONT_3SG_Ä          ;
+0:kis   V_FRONT_WEAK_PAST    ;
+0:kis   V_FRONT_STRONG_PAST    ;
+0:it   V_FRONT_IMPERATIVE   ;
+0:in   V_FRONT_POTENTIAL_N  ;
+0:i   V_FRONT_PASSIVE_T    ;
+0:it   V_FRONT_PASSIVE    ;
+0:it   V_FRONT_TUPCP_0  ;
+0:kiä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_MUODOTA
+
+0:dot    V_BACK_AINF    ;
+0:dot    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:dot   V_BACK_IMPERATIVE   ;
+0:don   V_BACK_POTENTIAL_N  ;
+0:do   V_BACK_PASSIVE_T    ;
+0:dot   V_BACK_PASSIVE    ;
+0:dot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_LÄMMITÄ
+
+0:mit    V_FRONT_AINF    ;
+0:mit    V_FRONT_EINF  ;
+0:piä     V_FRONT_WEAK_PRESENT  ;
+0:piä   V_FRONT_STRONG_PRESENT    ;
+0:piä   V_FRONT_3SG_Ä          ;
+0:pis   V_FRONT_WEAK_PAST    ;
+0:pis   V_FRONT_STRONG_PAST    ;
+0:mit   V_FRONT_IMPERATIVE   ;
+0:min   V_FRONT_POTENTIAL_N  ;
+0:mi   V_FRONT_PASSIVE_T    ;
+0:mit   V_FRONT_PASSIVE    ;
+0:mit   V_FRONT_TUPCP_0  ;
+0:piä   V_FRONT_DERIV_PCPS ;
+
+LEXICON V_AALLOTA
+
+0:lot    V_BACK_AINF    ;
+0:lot    V_BACK_EINF  ;
+0:toa     V_BACK_WEAK_PRESENT  ;
+0:toa   V_BACK_STRONG_PRESENT    ;
+0:toa   V_BACK_3SG_A          ;
+0:tos   V_BACK_WEAK_PAST    ;
+0:tos   V_BACK_STRONG_PAST    ;
+0:lot   V_BACK_IMPERATIVE   ;
+0:lon   V_BACK_POTENTIAL_N  ;
+0:lo   V_BACK_PASSIVE_T    ;
+0:lot   V_BACK_PASSIVE    ;
+0:lot   V_BACK_TUPCP_0  ;
+0:toa   V_BACK_DERIV_PCPS ;
+
+LEXICON V_HELLITÄ
+
+0:lit    V_FRONT_AINF    ;
+0:lit    V_FRONT_EINF  ;
+0:tiä     V_FRONT_WEAK_PRESENT  ;
+0:tiä   V_FRONT_STRONG_PRESENT    ;
+0:tiä   V_FRONT_3SG_Ä          ;
+0:tis   V_FRONT_WEAK_PAST    ;
+0:tis   V_FRONT_STRONG_PAST    ;
+0:lit   V_FRONT_IMPERATIVE   ;
+0:lin   V_FRONT_POTENTIAL_N  ;
+0:li   V_FRONT_PASSIVE_T    ;
+0:lit   V_FRONT_PASSIVE    ;
+0:lit   V_FRONT_TUPCP_0  ;
+0:tiä   V_FRONT_DERIV_PCPS ;
+
+
+
+LEXICON V_TAITAA
+
+
+0:ta      V_BACK_AINF   ;
+0:ta      V_BACK_EINF  ;
+0:da      V_BACK_WEAK_PRESENT    ;
+0:ta      V_BACK_STRONG_PRESENT    ;
+0:ta      V_BACK_3SG_A      ;
+0:s       V_BACK_WEAK_PAST    ;
+0:s       V_BACK_STRONG_PAST  ;
+0:ta        V_BACK_IMPERATIVE   ;
+0:ta        V_BACK_POTENTIAL_N  ;
+0:de        V_BACK_PASSIVE_T    ;
+0:det       V_BACK_PASSIVE    ;
+0:det       V_BACK_TUPCP_0   ;
+0:ta    V_BACK_DERIV_PCPS ;
+
+LEXICON V_TIETÄÄ
+
+0:tä      V_FRONT_AINF   ;
+0:tä      V_FRONT_EINF  ;
+0:dä      V_FRONT_WEAK_PRESENT    ;
+0:tä      V_FRONT_STRONG_PRESENT    ;
+0:tä      V_FRONT_3SG_Ä      ;
+0:s       V_FRONT_WEAK_PAST    ;
+0:s       V_FRONT_STRONG_PAST  ;
+0:tä        V_FRONT_IMPERATIVE   ;
+0:tä        V_FRONT_POTENTIAL_N  ;
+0:de        V_FRONT_PASSIVE_T    ;
+0:det       V_FRONT_PASSIVE    ;
+0:det       V_FRONT_TUPCP_0   ;
+0:tä    V_FRONT_DERIV_PCPS ;
+
+
+
+
+LEXICON V_VIPAJAA
+
+
+0:a   V_BACK_AINF    ;
+0     V_BACK_STRONG_PRESENT    ;
+0     V_BACK_3SG_A  ;
+0     V_BACK_STRONG_PAST ;
+0     V_BACK_CONDITIONAL  ;
+0     V_BACK_DERIV_PCPS ;
+
+LEXICON V_HELÄJÄÄ
+
+0:ä   V_FRONT_AINF    ;
+0     V_FRONT_STRONG_PRESENT    ;
+0     V_FRONT_3SG_Ä  ;
+0     V_FRONT_STRONG_PAST ;
+0     V_FRONT_CONDITIONAL  ;
+0     V_FRONT_DERIV_PCPS ;
+
+LEXICON V_RAIKAA
+
+
+0     V_BACK_AINF    ;
+0     V_BACK_STRONG_PRESENT    ;
+0     V_BACK_3SG_A  ;
+0     V_BACK_CONDITIONAL  ;
+0     V_BACK_DERIV_PCPS ;
+
+LEXICON V_ÄHKÄÄ
+
+0     V_FRONT_AINF    ;
+0     V_FRONT_STRONG_PRESENT    ;
+0     V_FRONT_3SG_Ä  ;
+0     V_FRONT_CONDITIONAL  ;
+0     V_FRONT_DERIV_PCPS ;
+
+
+
+
+
+LEXICON V_OLLA
+
+
+
+
+
+
+
+0:oll    V_BACK_AINF    ;
+0:oll    V_BACK_EINF    ;
+0:ole    V_BACK_WEAK_PRESENT    ;
++Act+Ind+Prs+Sg3:on V_BACK_CLIT_OPT ;
++Act+Ind+Prs+Pl3:ovat V_BACK_CLIT_OPT ;
+0:ol    V_BACK_WEAK_PAST   ;
+0:ol    V_BACK_STRONG_PAST ;
+0:ol    V_BACK_CONDITIONAL  ;
+0:lie   V_FRONT_POTENTIAL_N  ;
+0:ol   V_BACK_IMPERATIVE ;
+0:ol   V_BACK_PASSIVE_L    ;
+0:ol  V_BACK_PASSIVE  ;
+0:ol   V_BACK_TUPCP_L    ;
+0:ole   V_BACK_DERIV_PCPS ;
+
+
+
+
+
++Act+Der/maisilla:olemaisilla             V_BACK_POSS_AN ;
++Act+InfMa+Sg+Abe:olematta                V_BACK_POSS_AN_OPT ;
++Act+InfMa+Sg+Ade:olemalla                V_BACK_POSS_AN_OPT ;
++Act+InfMa+Sg+Ela:olemasta                V_BACK_POSS_AN_OPT ;
++Act+InfMa+Sg+Ill:olemaan                 V_BACK_POSS_OPT ;
++Act+InfMa+Sg+Ine:olemassa                V_BACK_POSS_OPT ;
++Act+InfMa+Sg+Ins:oleman                  V_BACK_CLIT_OPT ;
++Act+Imprt+Sg2+s:oles                     # ;
++Act+Cond+Sg1+Dial/standard:oisin         V_BACK_CLIT_OPT ;
++Act+Cond+Sg2+Dial/standard:oisit         V_BACK_CLIT_OPT ;
++Act+Cond+Sg3+Dial/standard:ois           V_BACK_CLIT_OPT ;
++Act+Cond+Pl1+Dial/standard:oisimme       V_BACK_CLIT_OPT ;
++Act+Cond+Pl2+Dial/standard:oisitte       V_BACK_CLIT_OPT ;
++Act+Cond+Pl3+Dial/standard:oisivat       V_BACK_CLIT_OPT ;
++Pss+PrfPrc:ol                           A_PARANNELTU ;
++Act+AgentPrc:olem                        A_AALTOILEVA ;
++Act+NegPrc:olemat                        A_VIATON ;
++Act+PrsPrc+Der/inen:olevai               A_AAKKOSELLINEN ;
++Act+PrsPrc:olev                          A_AALTOILEVA ;
++Der/minen:olemi                          N_AAKKOSTAMINEN ;
++Der/ja:olij                              N_SOITTAJA ;
++Act+PrfPrc:oll                           A_KULUNUT ;
++Act+Pot+Sg1:lienen                       V_FRONT_CLIT_OPT ;
++Act+Pot+Sg2:lienet                       V_FRONT_CLIT_OPT ;
++Act+Pot+Sg3:lienee                       V_FRONT_CLIT_OPT ;
++Act+Pot+Pl1:lienemme                     V_FRONT_CLIT_OPT ;
++Act+Pot+Pl2:lienette                     V_FRONT_CLIT_OPT ;
++Act+Pot+Pl3:lienevät                     V_FRONT_CLIT_OPT ;
++Act+Pot+ConNeg:liene                     V_FRONT_CLIT_OPT ;
++Act+Pot+ConNeg:lie                       V_FRONT_CLIT_OPT ;
 

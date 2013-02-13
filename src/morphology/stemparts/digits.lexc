@@ -1,177 +1,744 @@
-! Digit strings inflect with colons
-
-LEXICON IntegerDigits/Common
-][POS=NUMERAL][SUBCAT=CARD][NUM=SG][CASE=NOM]:0	Ennd	;
-.][POS=NUMERAL][SUBCAT=ORD][NUM=SG][CASE=NOM]:.	Ennd	;
-][POS=NUMERAL][SUBCAT=CARD]:0	Compounding/Dashed	;
-,	DecimalDigits	;
-.[STYLE=NONSTANDARD]:.	DecimalDigits	;
-
-LEXICON IntegerDigits/0
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/1
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem31	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	; ! yhdes
-
-LEXICON IntegerDigits/2
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem31	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	; ! kahdes
-
-LEXICON IntegerDigits/3
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem7	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/4
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/5
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem27	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/6
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem27	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/7
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/8
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/9
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/10
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem32	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/100
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem9	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON IntegerDigits/1000
-	IntegerDigits/Common	;
-%0	IntegerDigits/Common	; ! 10000
-%0%0	IntegerDigits/Common	; ! 100000
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem46	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-%0][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem46	;
-%0][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
-%0%0][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem46	;
-%0%0][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
-
-LEXICON IntegerDigits/10e6n
-%0	IntegerDigits/Common	; ! 10000
-%0%0	IntegerDigits/Common	; ! 100000
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-%0][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem10	;
-%0][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
-%0%0][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem10	;
-%0%0][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
-
-LEXICON IntegerDigits/10e9+6n
-%0	IntegerDigits/Common	; ! 10000
-%0%0	IntegerDigits/Common	; ! 100000
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem5i	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-%0][POS=NUMERAL][SUBCAT=CARD]:%0	DigitStem5i	;
-%0][POS=NUMERAL][SUBCAT=ORD]:%0	DigitStem45	;
-%0%0][POS=NUMERAL][SUBCAT=CARD]:%0%0	DigitStem5i	;
-%0%0][POS=NUMERAL][SUBCAT=ORD]:%0%0	DigitStem45	;
-
-LEXICON IntegerDigits/½
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-
-LEXICON IntegerDigits/¼
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-
-LEXICON IntegerDigits/¾
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem10	;
-
-LEXICON IntegerDigits/∞
-	IntegerDigits/Common	;
-][POS=NUMERAL][SUBCAT=CARD]:0	DigitStem34	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON DecimalDigits/Common
-][POS=NUMERAL][SUBCAT=REAL][NUM=SG][CASE=NOM]:0	Ennd	;
-][POS=NUMERAL][SUBCAT=REAL][NUM=SG][CASE=NOM]:0	Compounding/Dashed	;
-
-LEXICON DecimalDigits/0
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
-
-LEXICON DecimalDigits/1
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem31	;
-
-LEXICON DecimalDigits/2
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem31	;
-
-LEXICON DecimalDigits/3
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem7	;
-
-LEXICON DecimalDigits/4
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
-
-LEXICON DecimalDigits/5
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem27	;
-
-LEXICON DecimalDigits/6
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem27	;
-
-LEXICON DecimalDigits/7
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
-
-LEXICON DecimalDigits/8
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem10	;
-
-LEXICON DecimalDigits/9
-	DecimalDigits/Common	;
-][POS=NUMERAL][SUBCAT=REAL]:0	DigitStem9	;
-
-LEXICON FractionDigits/Common
-][POS=NUMERAL][SUBCAT=CARD][NUM=SG][CASE=NOM]:0	Ennd	;
-][POS=NUMERAL][SUBCAT=CARD]:{^a}	DigitStem10	;
-
-LEXICON RomanOrdinal/45
-][POS=NUMERAL][SUBCAT=ORD]:0	Ennd	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem45	;
-
-LEXICON RomanOrdinal/38
-][POS=NUMERAL][SUBCAT=ORD]:0	Ennd	;
-][POS=NUMERAL][SUBCAT=ORD]:0	DigitStem38	;
 
 
+LEXICON DIGITS_YKSI
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_FRONT_POSS    ;
++Sg+Nom:%:  DIGITS_FRONT_CLIT   ;
++Pl+Nom:%:t DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:een   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:ttä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:ittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_FRONT_POSS_EN_OBL    ;
+
+LEXICON DIGITS_KAKSI
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:ta    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:een   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_EN_OBL    ;
+
+LEXICON DIGITS_KOLME
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:a DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:een   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_EN_OBL    ;
+
+LEXICON DIGITS_NELJÄ
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_FRONT_POSS    ;
++Sg+Nom:%:  DIGITS_FRONT_CLIT   ;
++Pl+Nom:%:t DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:ään   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:ttä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:ittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_FRONT_POSS_EN_OBL    ;
+
+LEXICON DIGITS_VIISI
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_FRONT_POSS    ;
++Sg+Nom:%:  DIGITS_FRONT_CLIT   ;
++Pl+Nom:%:t DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ill:%:een   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:ttä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:ittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_FRONT_POSS_EN_OBL    ;
+
+LEXICON DIGITS_KUUSI
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:ta    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ill:%:een   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_EN_OBL    ;
+
+LEXICON DIGITS_SEITSEMÄN
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_FRONT_POSS    ;
++Sg+Nom:%:  DIGITS_FRONT_CLIT   ;
++Pl+Nom:%:t DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    DIGITS_FRONT_POSS_OPT  ;
++Sg+Ill:%:ään   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:ttä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:ittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_FRONT_POSS_EN_OBL    ;
+
+LEXICON DIGITS_KAHDEKSAN
+
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:aa    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:aan   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_EN_OBL    ;
+
+LEXICON DIGITS_YHDEKSÄN
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_FRONT_POSS    ;
++Sg+Nom:%:  DIGITS_FRONT_CLIT   ;
++Pl+Nom:%:t DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:ää    DIGITS_FRONT_POSS_OPT  ;
++Sg+Ill:%:ään   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:ttä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:ittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_FRONT_POSS_ÄN_OBL    ;
+
+LEXICON DIGITS_NOLLA
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:aa    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:aan   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_KYMMENEN
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_FRONT_POSS    ;
++Sg+Nom:%:  DIGITS_FRONT_CLIT   ;
++Pl+Nom:%:t DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:tä    DIGITS_FRONT_POSS_OPT  ;
++Sg+Ill:%:een   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:ttä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:ltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:llä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:lle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:nä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:ssä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:iä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:iin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:ittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:iltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:illä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:ille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:inä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:ine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:istä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:issä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:in    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_FRONT_POSS_ÄN_OBL    ;
+
+LEXICON DIGITS_SATA
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:aa    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:aan   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ja    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_TUHAT
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:ta    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:een   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:stä   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_MILJOONA
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:aa    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:aan   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_MILJARDI
+
+
+
+
+0  DIGITS_COMPOUND   ;
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Sg+Nom:%:  DIGITS_BACK_CLIT   ;
++Pl+Nom:%:t DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:n DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:a     DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ja    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_ENSIMMÄINEN
+
+
+
+
++Sg+Nom:.    #   ;
++Sg+Nom:%:nen  DIGITS_FRONT_POSS_OPT    ;
++Pl+Nom:%:set DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:sen DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:stä    DIGITS_FRONT_POSS_OPT  ;
++Sg+Ill:%:seen   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:settä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:seltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:sellä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:selle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:sestä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:senä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:sessä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:seksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:sekse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:siä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:siin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:sittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:siltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:sillä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:sille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:sinä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:sine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:sistä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:sissä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:sin    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:siksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:sikse  DIGITS_FRONT_POSS_ÄN_OBL    ;
+
+LEXICON DIGITS_TOINEN
+
+
+
+
++Sg+Nom:.    #   ;
++Sg+Nom:%:nen  DIGITS_BACK_POSS_OPT    ;
++Pl+Nom:%:set DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:sen DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:sta    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:seen   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:setta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:selta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:sella   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:selle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sesta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:sena    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:sessa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:seksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:sekse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:sia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:siin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:sitta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:silta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:silla  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:sille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:sina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:sine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:sista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:sisss  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:sin    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:siksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:sikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_KOLMAS
+
+
+
+
++Sg+Nom:.    #   ;
++Sg+Nom:%:s  DIGITS_BACK_POSS_OPT    ;
++Pl+Nom:%:nnet DIGITS_BACK_CLIT_OPT ;
++Sg+Nom:%:nnen DIGITS_BACK_CLIT_OPT ;
++Sg+Par:%:tta    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:nteen   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:nnetta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:nnelta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:nnella   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:nnelle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:nnesta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:ntena    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:nnessa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:nneksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:nnekse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:nsia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:nsiin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:nsitta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:nsilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:nsilla  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:nsille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:nsina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:nsine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:nsista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:nsisss  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:nsin    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:nsiksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:nsikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_NELJÄS
+
+
+
+
++Sg+Nom:.    #   ;
++Sg+Nom:%:s  DIGITS_FRONT_POSS_OPT    ;
++Pl+Nom:%:nnet DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:nnen DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:ttä    DIGITS_FRONT_POSS_OPT  ;
++Sg+Ill:%:nteen   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:nnettä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:nneltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:nnellä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:nnelle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:nnestä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:ntenä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:nnessä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:nneksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:nnekse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:nsia    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:nsiin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:nsittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:nsiltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:nsillä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:nsille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:nsinä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:nsine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:nsistä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:nsissä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:nsin    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:nsiksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:nsikse  DIGITS_FRONT_POSS_ÄN_OBL    ;
+
+LEXICON DIGITS_ROMANS_TOINEN
+
+
+
++Sg+Nom:0    #   ;
++Sg+Nom:%:  DIGITS_BACK_POSS    ;
++Pl+Nom:%:  DIGITS_BACK_CLIT ;
++Sg+Par:%:ta    DIGITS_BACK_POSS_OPT  ;
++Sg+Ill:%:een   DIGITS_BACK_POSS_OPT ;
++Sg+Abe:%:tta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Abl:%:lta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ade:%:lla   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+All:%:lle   DIGITS_BACK_POSS_EN_OPT  ;
++Sg+Ela:%:sta   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ess:%:na    DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Ine:%:ssa   DIGITS_BACK_POSS_AN_OPT  ;
++Sg+Tra:%:ksi   DIGITS_BACK_CLIT_OPT ;
++Sg+Tra:%:kse   DIGITS_BACK_POSS_EN_OBL    ;
++Pl+Par:%:ia    DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ill:%:iin   DIGITS_BACK_POSS_OPT ;
++Pl+Abe:%:itta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Abl:%:ilta  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ade:%:illa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+All:%:ille  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ess:%:ina   DIGITS_BACK_POSS_AN_OPT  ;
++Cmt:%:ine  DIGITS_BACK_POSS_EN_OPT  ;
++Pl+Ela:%:ista  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ine:%:issa  DIGITS_BACK_POSS_AN_OPT  ;
++Pl+Ins:%:in    DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:iksi  DIGITS_BACK_CLIT_OPT ;
++Pl+Tra:%:ikse  DIGITS_BACK_POSS_AN_OBL    ;
+
+LEXICON DIGITS_ROMANS_ENSIMMÄINEN
+
+
+
++Sg+Nom:0    #   ;
++Sg+Nom:%:s  DIGITS_FRONT_POSS_OPT    ;
++Pl+Nom:%:nnet DIGITS_FRONT_CLIT_OPT ;
++Sg+Nom:%:nnen DIGITS_FRONT_CLIT_OPT ;
++Sg+Par:%:tä   DIGITS_FRONT_POSS_OPT  ;
++Sg+Ill:%:nteen   DIGITS_FRONT_POSS_OPT ;
++Sg+Abe:%:nnettä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Abl:%:nneltä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ade:%:nnellä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+All:%:nnelle   DIGITS_FRONT_POSS_EN_OPT  ;
++Sg+Ela:%:nnestä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ess:%:ntenä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Ine:%:nnessä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Sg+Tra:%:nneksi   DIGITS_FRONT_CLIT_OPT ;
++Sg+Tra:%:nnekse   DIGITS_FRONT_POSS_EN_OBL    ;
++Pl+Par:%:nsiä    DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ill:%:nsiin   DIGITS_FRONT_POSS_OPT ;
++Pl+Abe:%:nsittä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Abl:%:nsiltä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ade:%:nsillä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+All:%:nsille  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ess:%:nsinä   DIGITS_FRONT_POSS_ÄN_OPT  ;
++Cmt:%:nsine  DIGITS_FRONT_POSS_EN_OPT  ;
++Pl+Ela:%:nsistä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ine:%:nsissä  DIGITS_FRONT_POSS_ÄN_OPT  ;
++Pl+Ins:%:nsin    DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:nsiksi  DIGITS_FRONT_CLIT_OPT ;
++Pl+Tra:%:nsikse  DIGITS_FRONT_POSS_ÄN_OBL    ;
 
