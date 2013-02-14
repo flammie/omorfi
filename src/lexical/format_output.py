@@ -41,6 +41,6 @@ def format_surface_omor(wordmap):
     return wordmap
 
 def format_lexc_omor(wordmap):
-    return ("%s:%s   %s  ;" % (lexc_escape(wordmap['analysis']), 
+    return ("%s:%s\t%s\t;" % (lexc_escape(wordmap['analysis']), 
         lexc_escape(wordmap['stub']), wordmap['continuation']))
 

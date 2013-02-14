@@ -524,3 +524,43 @@ LEXICON AcronymStem/Ö
 [NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
 [NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
 
+LEXICON AcronymDigitStem/0
+	AcronymStem/Common	;
+0:{^a}	DigitStem10	;
+
+LEXICON AcronymDigitStem/1
+	AcronymStem/Common	;
+0:{^y}{^i}	DigitStem31	;
+
+LEXICON AcronymDigitStem/2
+	AcronymStem/Common	;
+0:{^a}{^i}	DigitStem31	;
+
+LEXICON AcronymDigitStem/3
+	AcronymStem/Common	;
+0:{^o}{^e}	DigitStem7	;
+
+LEXICON AcronymDigitStem/4
+	AcronymStem/Common	;
+0:{^ä}	DigitStem10	;
+
+LEXICON AcronymDigitStem/5
+	AcronymStem/Common	;
+0:{^i}	DigitStem27	;
+
+LEXICON AcronymDigitStem/6
+	AcronymStem/Common	;
+0:{^u}{^i}	DigitStem27	;
+
+LEXICON AcronymDigitStem/7
+	AcronymStem/Common	;
+0:{^ä}	DigitStem10	;
+
+LEXICON AcronymDigitStem/8
+	AcronymStem/Common	;
+0:{^a}	DigitStem10	;
+
+LEXICON AcronymDigitStem/9
+	AcronymStem/Common	;
+0:{^ä}	DigitStem10	;
+

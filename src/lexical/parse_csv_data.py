@@ -71,7 +71,10 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     elif wordmap['pos'] == 'Acro':
         wordmap['pos'] = 'ACRONYM'
         wordmap['lexicon'] = 'Acronyms'
-        wordmap['continuation'] = 'AcronymStem'
+        if wordmap['stub'][-1] in '0123456789':
+            wordmap['continuation'] = 'AcronymDigitStem'
+        else:
+            wordmap['continuation'] = 'AcronymStem'
     elif wordmap['pos'] == 'Num':
         wordmap['pos'] = 'NUMERAL'
         wordmap['lexicon'] = 'Numerals'
@@ -172,12 +175,7 @@ def finetune_conts(wordmap):
         wordmap['lexicon'] += '/stub'
         wordmap['continuation'] += '/stemfiller'
     elif wordmap['pos'] == "ACRONYM":
-        if wordmap['stub'][-1] in '0123456789':
-            cardnum_stem_type = ['10','31','31','7','10','27','27','10','10','10']
-            wordmap['continuation'] = 'DigitStem' + cardnum_stem_type[int(wordmap['stub'][-1])]
-        else:
-            wordmap['continuation'] += '/' + wordmap['stub'][-1]
-    
+        wordmap['continuation'] += '/' + wordmap['stub'][-1]
     elif wordmap['pos'] in ["ADPOSITION","ADVERB"]  and wordmap['possessive']:
         if wordmap['possessive'] == 'opt':
             wordmap['continuation'] = 'Possessive/Optional+Vn'
