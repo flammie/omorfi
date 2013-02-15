@@ -130,8 +130,8 @@ def main():
             csv_parts = []
             if csv_line.count('\t') >= 2:
                 csv_parts = csv_line.split("\t")
-            elif csv_line.count(',') >= 2:
-                csv_parts = csv_line.split(",")
+            elif csv_line.count('","') >= 2:
+                csv_parts = csv_line.split('","')
             else:
                 print("Too few commas or tabs on line", linecount, 
                     "skipping following line completely:", file=stderr)

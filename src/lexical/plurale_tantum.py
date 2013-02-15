@@ -29,6 +29,8 @@ def plurale_tantum_get_singular_stem(wordmap):
             wordmap['stub'] = replace_rightmosts(wordmap['stub'], ['at', 'ät'], ['ka', 'kä'])
         elif tn in [1009, 1010] and wordmap['kotus_av'] == 'D':
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'jat', 'ika')
+        elif tn == 32 and wordmap['kotus_av'] == 'C':
+            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 'et', ''), 'tt', 't')
         elif tn == 32 and wordmap['kotus_av'] == 'D':
             wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 'et', ''), 'k', '')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'E':

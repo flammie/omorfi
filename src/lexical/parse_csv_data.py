@@ -107,30 +107,30 @@ def parse_defaults_from_csv(wordmap, csv_parts):
 def parse_extras_from_csv(wordmap, csv_parts):
     if len(csv_parts) >= 5:
         for csv_extra in csv_parts[4:]:
-            extra_fields = csv_extra.split("=")
-            if extra_fields[0] == '"plt':
-                wordmap['plurale_tantum'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"prop':
+            extra_fields = csv_extra.strip('"').split("=")
+            if extra_fields[0] == 'plt':
+                wordmap['plurale_tantum'] = extra_fields[1]
+            elif extra_fields[0] == 'prop':
                 if wordmap['is_proper'] or wordmap['pos'] == 'ACRONYM':
-                    wordmap['proper_noun_class'].append( extra_fields[1].strip('"').upper() )
+                    wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                     wordmap['is_proper'] = True
                 else:
                     print("Warning: Ignoring attribute", csv_extra, "for", wordmap['lemma'], file=stderr)
-            elif extra_fields[0] == '"poss':
-                wordmap['possessive'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"stem-vowel':
-                wordmap['stem_vowel'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"original-ktn':
-                wordmap['analysis_tn'] = int(extra_fields[1].strip('"'))
-            elif extra_fields[0] == '"style':
-                wordmap['style'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"stub':
-                wordmap['explicit_stub'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"stem':
-                wordmap['explicit_stem'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"boundaries':
-                wordmap['stub'] = extra_fields[1].strip('"').replace("|", "{#}").replace("_", "{_}").replace(" ", " {#}")
-                wordmap['lemma'] = extra_fields[1].strip('"').replace("|", "'|'").replace("_", "'_'")
+            elif extra_fields[0] == 'poss':
+                wordmap['possessive'] = extra_fields[1]
+            elif extra_fields[0] == 'stem-vowel':
+                wordmap['stem_vowel'] = extra_fields[1]
+            elif extra_fields[0] == 'original-ktn':
+                wordmap['analysis_tn'] = int(extra_fields[1])
+            elif extra_fields[0] == 'style':
+                wordmap['style'] = extra_fields[1]
+            elif extra_fields[0] == 'stub':
+                wordmap['explicit_stub'] = extra_fields[1]
+            elif extra_fields[0] == 'stem':
+                wordmap['explicit_stem'] = extra_fields[1]
+            elif extra_fields[0] == 'boundaries':
+                wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}").replace(" ", " {#}")
+                wordmap['lemma'] = extra_fields[1].replace("|", "'|'").replace("_", "'_'")
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     return wordmap
