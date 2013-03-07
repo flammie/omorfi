@@ -2,9 +2,9 @@
 
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 LEXEMES=lexemes/fiwn.csv lexemes/joukahainen.csv lexemes/nss.csv \
-		lexemes/omorfi.csv lexemes/pronouns.csv lexemes/visk.csv \
+		lexemes/omorfi.csv lexemes/visk.csv \
 		lexemes/propers-unihu-proj.csv lexemes/fiwikt.csv
-JOINS=attributes/boundaries.csv attributes/broken-paradigms.csv \
+JOINS=attributes/boundaries.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
 	  attributes/usage.csv
@@ -28,7 +28,6 @@ lexemes.csv: $(LEXEMES)
 master.csv: lexemes.csv $(JOINS)
 	$(PYTHON) $(srcdir)/csvjoin.py -v -i lexemes.csv \
 		-j $(srcdir)/attributes/boundaries.csv \
-		-j $(srcdir)/attributes/broken-paradigms.csv \
 		-j $(srcdir)/attributes/plurale-tantum.csv \
 		-j $(srcdir)/attributes/possessives.csv \
 		-j $(srcdir)/attributes/pronunciation.csv \

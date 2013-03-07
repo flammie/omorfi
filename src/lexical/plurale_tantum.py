@@ -14,7 +14,7 @@ def plurale_tantum_get_singular_stem(wordmap):
     if wordmap['kotus_av'] and tn not in [27, 28, 34]:
         if tn in [7, 23, 24, 25, 26, 29, 30]:
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'e', 'i')
-			
+        # ^^ generic extra tweak
         if (tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'A':
             wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'k', 'kk')
         elif (tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'B':
@@ -72,21 +72,21 @@ def plurale_tantum_get_singular_stem(wordmap):
         elif tn == 33 and wordmap['kotus_av'] == 'K':
             wordmap['stub'] = wordmap['stub'][:-5] + 'rin'
         elif tn == 41 and wordmap['kotus_av'] in ['A', 'B', 'C', 'D']:
-            wordmap['stub'] = wordmap['stub'][:-4] + '{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'as'
         elif tn == 41 and wordmap['kotus_av'] == 'E':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'v{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'vas'
         elif tn == 41 and wordmap['kotus_av'] == 'F':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'd{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'das'
         elif tn == 41 and wordmap['kotus_av'] == 'G':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'g{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'gas'
         elif tn == 41 and wordmap['kotus_av'] == 'H':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'm{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'mas'
         elif tn == 41 and wordmap['kotus_av'] == 'I':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'l{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'las'
         elif tn == 41 and wordmap['kotus_av'] == 'J':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'n{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'nas'
         elif tn == 41 and wordmap['kotus_av'] == 'K':
-            wordmap['stub'] = wordmap['stub'][:-4] + 'r{aä}s'
+            wordmap['stub'] = wordmap['stub'][:-4] + 'ras'
         elif tn == 48 and wordmap['kotus_av'] in ['A', 'B', 'C', 'D']:
             wordmap['stub'] = wordmap['stub'][:-4] + 'e'
         elif tn == 48 and wordmap['kotus_av'] == 'E':
@@ -108,7 +108,6 @@ def plurale_tantum_get_singular_stem(wordmap):
         else:
             print("Unhandled plt in ", wordmap, file=stderr)
             return None
-        return wordmap
     else:
         if tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 't', '')
@@ -154,6 +153,5 @@ def plurale_tantum_get_singular_stem(wordmap):
         else:
             print("Unhandled plurale tantum in", wordmap, file=stderr)
             return None
-        return wordmap
-    return None
-
+    wordmap['gradestem'] = wordmap['stub']
+    return wordmap
