@@ -69,6 +69,8 @@ def gradation_make_morphophonemes(wordmap):
                 wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'i', '{k~~}i')
             elif tn == 41:
                 wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['as', 'es', 'is', '{aä}s'], ['{k~~}as', '{k~0}es', '{k~0}is', '{k~~}{aä}s'])
+            elif tn == 44:
+                wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'e', '{k~~}e')
             elif tn == 48:
                 wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'e', '{k~~}e')
             elif tn == 49:
@@ -76,13 +78,15 @@ def gradation_make_morphophonemes(wordmap):
             elif tn == 67:
                 wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'ell', '{k~~}ell')
             elif tn == 72:
-                wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['et', 'ot'], ['{k~~}et', '{k~0}ot'])
+                wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['at', 'et', 'ot'], ['{k~~}at', '{k~~}et', '{k~0}ot'])
             elif tn == 73:
                 wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['ata', 'ätä'], ['{k~~}ata', '{k~0}ätä'])
             elif tn == 74:
                 wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['ota', 'eta', 'ötä', 'etä'], ['{k~~}ota', '{k~0}eta', '{k~0}ötä', '{k~0}etä'])
             elif tn == 75:
                 wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['ita', 'itä'], ['{k~~}ita', '{k~0}itä'])
+            elif tn == 99:
+                pass
             else:
                 print("Unhandled D weak", wordmap['gradestem'], tn, file=stderr)
         elif av == 'E':

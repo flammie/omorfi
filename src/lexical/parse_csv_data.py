@@ -87,23 +87,23 @@ def parse_extras_from_csv(wordmap, csv_parts):
     if len(csv_parts) >= 5:
         for csv_extra in csv_parts[4:]:
             extra_fields = csv_extra.split("=")
-            if extra_fields[0] == '"plt':
-                wordmap['plurale_tantum'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"prop':
-                wordmap['proper_noun_class'].append( extra_fields[1].strip('"').upper() )
+            if extra_fields[0] == 'plt':
+                wordmap['plurale_tantum'] = extra_fields[1]
+            elif extra_fields[0] == 'prop':
+                wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                 if wordmap['is_proper'] or wordmap['pos'] == 'ACRONYM':
                     wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                     wordmap['is_proper'] = True
                 else:
                     print("Warning: Ignoring attribute", csv_extra, "for", wordmap['lemma'], file=stderr)
-            elif extra_fields[0] == '"poss':
-                wordmap['possessive'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"stem-vowel':
-                wordmap['stem_vowel'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"style':
-                wordmap['style'] = extra_fields[1].strip('"')
-            elif extra_fields[0] == '"boundaries':
-                wordmap['stub'] = extra_fields[1].strip('"').replace("|", "{#}").replace("_", "{_}")
+            elif extra_fields[0] == 'poss':
+                wordmap['possessive'] = extra_fields[1]
+            elif extra_fields[0] == 'stem-vowel':
+                wordmap['stem_vowel'] = extra_fields[1]
+            elif extra_fields[0] == 'style':
+                wordmap['style'] = extra_fields[1]
+            elif extra_fields[0] == 'boundaries':
+                wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}")
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     return wordmap
@@ -175,4 +175,26 @@ def add_extras(wordmap):
         wordmap['stub'] = wordmap['stub'][1:]
     return wordmap
 
+def parse_from_tsv(wordmap, fields):
+    wordmap['lemma'] = fields[0]
+    wordmap['new_para'] = fields[1]
+    wordmap['pos'] = fields[2]
+    wordmap['kotus_tn'] = fields[3]
+    wordmap['kotus_av'] = fields[4]
+    wordmap['plurale_tantum'] = fields[5]
+    wordmap['possessive'] = fields[6]
+    wordmap['clitics'] = fields[7]
+    wordmap['is_proper'] = fields[8]
+    wordmap['proper_noun_class'] = fields[9]
+    wordmap['style'] = fields[10]
+    wordmap['stub'] = fields[11]
+    wordmap['gradestem'] = fields[12]
+    wordmap['twolstem'] = fields[13]
+    wordmap['grade_dir'] = fields[14]
+    wordmap['harmony'] = fields[15]
+    wordmap['is_suffix'] = fields[16]
+    wordmap['is_prefix'] = fields[17]
+    wordmap['stem_vowel'] = fields[18]
+    wordmap['stem_diphthong'] = fields[19]
+    return wordmap
 

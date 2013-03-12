@@ -126,20 +126,24 @@ def stub_all(wordmap):
         elif wordmap['kotus_av'] == 'D':
             # DANGER TERROR HORROR !!!!!!
             if wordmap['kotus_tn'] == 32:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['en'])
             elif wordmap['kotus_tn'] == 33:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['i'])
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['in'])
             elif wordmap['kotus_tn'] == 41:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
                         ['as', 'es', 'is', 'äs'])
+            elif wordmap['kotus_tn'] == 44:
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['et'])
             elif wordmap['kotus_tn'] == 48:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+            elif wordmap['kotus_tn'] == 49:
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['en'])
             elif wordmap['kotus_tn'] == 67:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
                         ['ella', 'illa'])
-            elif wordmap['kotus_tn'] ==72:
+            elif wordmap['kotus_tn'] == 72:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
-                        ['eta', 'etä', 'ota'])
+                        ['ata', 'eta', 'etä', 'ota'])
             elif wordmap['kotus_tn'] == 73:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
                         ['ata', 'ätä'])
@@ -149,9 +153,11 @@ def stub_all(wordmap):
             elif wordmap['kotus_tn'] == 75:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
                         ['ita', 'itä'])
+            elif wordmap['kotus_tn'] == 99:
+                pass
             else:
-                fail_guess_because(wordmap, ['N', 'V', 'D'], [32, 33, 48, 67,
-                    72, 73, 74, 75], "missing inverse 0:k gradation")
+                fail_guess_because(wordmap, ['N', 'V', 'D'], [32, 33, 44, 48,
+                    49, 67, 72, 73, 74, 75], "missing inverse 0:k gradation")
         elif wordmap['kotus_av'] == 'E': 
             lastp = wordmap['stub'].rfind('v')
             wordmap['stub'] = wordmap['stub'][:lastp]

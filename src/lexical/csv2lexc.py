@@ -32,10 +32,7 @@ from time import strftime
 import argparse
 
 from format_output import format_analysis_omor, format_surface_omor, format_lexc_omor
-from gradation import gradation_make_morphophonemes
-from parse_csv_data import parse_defaults_from_csv, parse_extras_from_csv, parse_conts, finetune_conts, add_extras
-from plurale_tantum import plurale_tantum_get_singular_stem
-from stub import stub_all
+from parse_csv_data import parse_from_tsv
 
 # standard UI stuff
 
@@ -59,7 +56,7 @@ def main():
     outfiles = dict()
     curr_lexicon = dict()
     # initialise argument parser
-    ap = argparse.ArgumentParser(description="Convert Finnish dictionary CSV or TSV data into xerox/HFST lexc format")
+    ap = argparse.ArgumentParser(description="Convert Finnish dictionary TSV data into xerox/HFST lexc format")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
             default=False,
             help="do not print output to stdout while processing")
@@ -128,17 +125,15 @@ def main():
                 csv_line = csv_file.readline()
                 continue
             csv_parts = []
-            if csv_line.count('\t') >= 2:
+            if csv_line.count('\t') >= 18:
                 csv_parts = csv_line.split("\t")
-            elif csv_line.count('","') >= 2:
-                csv_parts = csv_line.split('","')
             else:
-                print("Too few commas or tabs on line", linecount, 
+                print("Too few tabs on line", linecount, 
                     "skipping following line completely:", file=stderr)
                 print(csv_line, file=stderr)
                 csv_line = csv_file.readline()
                 continue
-            if csv_parts[-1] == '<-HEADERS':
+            if csv_parts[-1] == '<- HEADERS':
                 # skip header line
                 csv_line = csv_file.readline()
                 continue
@@ -146,7 +141,7 @@ def main():
             # the aim is to fill dict wordmap with data necessary to
             # generate a lexc line
             wordmap = dict()
-            wordmap = parse_defaults_from_csv(wordmap, csv_parts)
+            wordmap = parse_from_tsv(wordmap, csv_parts)
             if args.exclude_pos:
                 if wordmap['pos'] in args.exclude_pos:
                     csv_line = csv_file.readline()
@@ -155,38 +150,10 @@ def main():
                 if wordmap['lemma'] not in lemmas:
                     csv_line = csv_file.readline()
                     continue
-            parse_extras_from_csv(wordmap, csv_parts)
-            # here is actual python code doing the pre-processing
-            wordmap = plurale_tantum_get_singular_stem(wordmap)
-            if not wordmap:
-                print("Could not parse plt on", linecount, ":\n",
-                        csv_line)
-                csv_line = csv_file.readline()
-                continue
-            wordmap = gradation_make_morphophonemes(wordmap)
-            if not wordmap:
-                print("Could not parse gradation on", linecount, ":\n",
-                        csv_line)
-                csv_line = csv_file.readline()
-                continue
-            wordmap = stub_all(wordmap)
-            # guessing inflectional classes by KOTUS paradigm
-            wordmap = parse_conts(wordmap)
-            # split classes because shortcomings in KOTUS paradigm classes
-            wordmap = finetune_conts(wordmap)
-            # suffixes can be id'd by the - in beginning
-            if wordmap['lemma'].startswith('-'):
-                wordmap['lexicon'] = 'Suffixes'
-                wordmap['is_suffix'] = True
-                wordmap['pos'] = 'SUFFIX'
-                # N.B: suffixes may inflect however so retain original cont
-            # format analysis
-            format_analysis_omor(wordmap, args.format, args.proper_subclasses)
-            # ...
-            wordmap = add_extras(wordmap)
-            # format surface
-            wordmap['stub'] = format_surface_omor(wordmap['stub'])
             # format output
+            wordmap = format_analysis_omor(wordmap, args.format,
+                    args.proper_subclasses)
+            wordmap = format_surface_omor(wordmap)
             print(format_lexc_omor(wordmap), file=outfiles[wordmap['pos']])
             csv_line = csv_file.readline()
     exit()

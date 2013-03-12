@@ -8,25 +8,27 @@ JOINS=attributes/boundaries.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
 	  attributes/usage.csv
-SCIRPTS=csv2lexc.py csvjoin.py
+SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
 FINNISC=\
 		format_output.py \
 		gradation.py \
 		lexc_string_utils.py \
 		parse_csv_data.py \
 		plurale_tantum.py \
-		stub.py
+		stub.py \
+		guess_feats.py guess_new_class.py wordmap.py \
+		omor_strings_io.py
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC)
 
 noinst_DATA=omor.timestamp
 
-lexemes.csv: $(LEXEMES)
+kotus-style.csv: $(LEXEMES)
 	echo "# This file has been generated automatically from lexemes/" > $@
 	echo "# Updates to this file will be deleted on next make" >> $@
 	cat $^ | sort | uniq >> $@
 
-master.csv: lexemes.csv $(JOINS)
-	$(PYTHON) $(srcdir)/csvjoin.py -v -i lexemes.csv \
+joint.tsv: kotus-style.csv $(JOINS)
+	$(PYTHON) $(srcdir)/csvjoin.py -v -i $< \
 		-j $(srcdir)/attributes/boundaries.csv \
 		-j $(srcdir)/attributes/plurale-tantum.csv \
 		-j $(srcdir)/attributes/possessives.csv \
@@ -34,7 +36,10 @@ master.csv: lexemes.csv $(JOINS)
 		-j $(srcdir)/attributes/proper-classes.csv \
 		-j $(srcdir)/attributes/usage.csv -o $@
 
-omor.timestamp: master.csv
+master.tsv: joint.tsv
+	$(PYTHON) $(srcdir)/csv_expand.py -i $< -o $@
+
+omor.timestamp: master.tsv
 	if test ! -d $(top_builddir)/src/morphology/roots ; then \
 		mkdir -p $(top_builddir)/src/morphology/roots ; \
 	fi
@@ -43,5 +48,5 @@ omor.timestamp: master.csv
 	touch $@
 
 clean-local:
-	-rm -f omor.timestamp master.csv lexemes.csv
+	-rm -f omor.timestamp master.tsv joint.tsv kotus-style.csv
 

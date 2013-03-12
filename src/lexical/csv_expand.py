@@ -114,7 +114,7 @@ def main():
         # print result
         print(wordmap['lemma'], wordmap['new_para'], wordmap['pos'],
                 wordmap['kotus_tn'], wordmap['kotus_av'],
-                wordmap['plurale_tantum'], wordmap['stub'], wordmap['twolstem'],
+                wordmap['plurale_tantum'],
                 wordmap['possessive'], wordmap['clitics'], wordmap['is_proper'],
                 wordmap['proper_noun_class'], wordmap['style'], wordmap['stub'],
                 wordmap['gradestem'], wordmap['twolstem'], wordmap['grade_dir'],

@@ -11,7 +11,7 @@ def guess_grade_dir(wordmap):
         wordmap['grade_dir'] = 'strengthen'
     elif tn == 99 or tn == 101:
         wordmap['grade_dir'] = False
-    elif tn in [1009, 1010, 1024, 1026]:
+    elif tn in [1007, 1009, 1010, 1024, 1026, 1067]:
         wordmap['grade_dir'] = 'weaken'
     else:
         print("Unguessable gradation direction in", wordmap, file=stderr)

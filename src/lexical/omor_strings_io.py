@@ -11,6 +11,10 @@ def fail_guess_because(wordmap, matches, failures, moar=None):
             wordmap['harmony'], ")", file=stderr)
     if moar:
         print("\033[92mExplanation\033[0m:", moar, file=stderr)
+    # This can be used to automate classifying plurales etc.
+    #if wordmap['lemma'].endswith('t'):
+    if wordmap['is_proper']:
+        print(wordmap['lemma'], wordmap['kotus_tn'], wordmap['kotus_av'])
 
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):

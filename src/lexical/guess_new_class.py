@@ -38,16 +38,21 @@ def guess_new_noun(wordmap):
     if not wordmap['plurale_tantum']:
         if tn == 1:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('o'):
+                if wordmap['lemma'].endswith('o') or wordmap['lemma'].endswith('O'):
                     wordmap['new_para'] = 'N_TALO'
-                elif wordmap['lemma'].endswith('u'):
+                elif wordmap['lemma'].endswith('u') or wordmap['lemma'].endswith('U'):
                     wordmap['new_para'] = 'N_ASU'
-                elif wordmap['lemma'].endswith('y'):
+                elif wordmap['lemma'].endswith('ú'):
+                    wordmap['new_para'] = 'N_ASU'
+                elif wordmap['lemma'].endswith('y') or wordmap['lemma'].endswith('Y'):
+                    wordmap['new_para'] = 'N_KÄRRY'
+                elif wordmap['lemma'].endswith('ÿ'):
                     wordmap['new_para'] = 'N_KÄRRY'
                 elif wordmap['lemma'].endswith('ö'):
                     wordmap['new_para'] = 'N_MÖMMÖ'
                 else:
-                    fail_guess_because(wordmap, ['N', 1, False], ['o', 'u', 'y', 'ö'])
+                    fail_guess_because(wordmap, ['N', 1, False], 
+                            ['o O', 'u ú', 'y ÿ Y', 'ö'])
             elif wordmap['kotus_av'] == 'A':
                 if wordmap['lemma'].endswith('ko'):
                     wordmap['new_para'] = 'N_UKKO'
@@ -213,6 +218,8 @@ def guess_new_noun(wordmap):
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('ao'):
                     wordmap['new_para'] = 'N_TUOMIO'
+                elif wordmap['lemma'].endswith('ão'):
+                    wordmap['new_para'] = 'N_TUOMIO'
                 elif wordmap['lemma'].endswith('ae'):
                     wordmap['new_para'] = 'N_ZOMBIE'
                 elif wordmap['lemma'].endswith('eo'):
@@ -225,13 +232,19 @@ def guess_new_noun(wordmap):
                     wordmap['new_para'] = 'N_ZOMBIE'
                 elif wordmap['lemma'].endswith('ie') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_BERNIE'
+                elif wordmap['lemma'].endswith('ye') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_BERNIE'
                 elif wordmap['lemma'].endswith('oe'):
                     wordmap['new_para'] = 'N_ZOMBIE'
                 elif wordmap['lemma'].endswith('ue'):
                     wordmap['new_para'] = 'N_ZOMBIE'
+                elif wordmap['lemma'].endswith('yo'):
+                    wordmap['new_para'] = 'N_TUOMIO'
+                elif wordmap['lemma'].endswith('kolme'):
+                    wordmap['new_para'] = 'N_AAMUKOLME'
                 else:
                     fail_guess_because(wordmap, ['N', 3, False],
-                            ['ae', 'ao', 'eo', 'io', 'ie', 'iö', 'oe', 'ue'])
+                            ['ae', 'ao ão', 'eo', 'io', 'ie', 'iö', 'oe', 'ue', '*yo ye'])
             else:
                 fail_guess_because(wordmap, ['N', 3], [False])
         elif tn == 4:
@@ -438,12 +451,24 @@ def guess_new_noun(wordmap):
                     wordmap['new_para'] = 'N_NALLE'
                 elif wordmap['lemma'].endswith('e') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_NISSE'
+                elif wordmap['lemma'].endswith('E') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_NALLE'
+                elif wordmap['lemma'].endswith('E') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_NISSE'
                 elif wordmap['lemma'].endswith('ë') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_NALLE'
                 elif wordmap['lemma'].endswith('ě') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_NALLE'
+                elif wordmap['lemma'].endswith('ě') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_NISSE'
                 elif wordmap['lemma'].endswith('ë') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_NISSE'
+                elif wordmap['lemma'].endswith('an') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_AAMUKAHDEKSAN'
+                elif wordmap['lemma'].endswith('än') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_AAMUSEITSEMÄN'
+                elif wordmap['lemma'].endswith('en') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_AAMUKYMMENEN'
                 else:
                     fail_guess_because(wordmap, ['N', 8, False],
                             ['e', 'ë', 'ě', 'front', 'back'])
@@ -477,11 +502,15 @@ def guess_new_noun(wordmap):
                         "New loan words do not simply walk into quantitative gradation")
         elif tn == 9:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a'):
+                if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
                     wordmap['new_para'] = 'N_KIRJA'
+                elif wordmap['lemma'].endswith('ą'):
+                    wordmap['new_para'] = 'N_KIRJA'
+                elif wordmap['lemma'].endswith('ä'):
+                    wordmap['new_para'] = 'N_YMPÄRYSTÄ'
                 else:
                     fail_guess_because(wordmap, ['N', 9, False],
-                            ['a'])
+                            ['a', 'ä'])
             elif wordmap['kotus_av'] == 'A':
                 if wordmap['lemma'].endswith('ka'):
                     wordmap['new_para'] = 'N_VIRKA'
@@ -559,13 +588,21 @@ def guess_new_noun(wordmap):
                         [False, 'A-K'])
         elif tn == 10:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a'):
+                if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
+                    wordmap['new_para'] = 'N_SOITTAJA'
+                elif wordmap['lemma'].endswith('ą'):
+                    wordmap['new_para'] = 'N_SOITTAJA'
+                elif wordmap['lemma'].endswith('ă'):
                     wordmap['new_para'] = 'N_SOITTAJA'
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_para'] = 'N_HÖPÖTTÄJÄ'
+                elif wordmap['lemma'].endswith('an'):
+                    wordmap['new_para'] = 'N_AAMUKAHDEKSAN'
+                elif wordmap['lemma'].endswith('ä'):
+                    wordmap['new_para'] = 'N_AAMUYHDEKSÄN'
                 else:
                     fail_guess_because(wordmap, ['N', 10, False],
-                            ['a', 'ä'])
+                            ['a ą ă', 'ä'])
             elif wordmap['kotus_av'] == 'A':
                 if wordmap['lemma'].endswith('ka'):
                     wordmap['new_para'] = 'N_LUOKKA'
@@ -644,9 +681,17 @@ def guess_new_noun(wordmap):
                 else:
                     fail_guess_because(wordmap, ['N', 10, 'J'],
                             ['nta', 'ntä'])
+            elif wordmap['kotus_av'] == 'K':
+                if wordmap['lemma'].endswith('rta'):
+                    wordmap['new_para'] = 'N_HORTA'
+                else:
+                    fail_guess_because(wordmap, ['N', 10, 'K'],
+                            ['rta'])
             elif wordmap['kotus_av'] == 'L':
                 if wordmap['lemma'].endswith('kä'):
                     wordmap['new_para'] = 'N_SELKÄ'
+                elif wordmap['lemma'].endswith('ka'):
+                    wordmap['new_para'] = 'N_OLKA'
                 else:
                     fail_guess_because(wordmap, ['N', 10, 'L'],
                             ['kä'])
@@ -656,6 +701,8 @@ def guess_new_noun(wordmap):
         elif tn == 11:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('a'):
+                    wordmap['new_para'] = 'N_PROBLEEMA'
+                elif wordmap['lemma'].endswith('ă'):
                     wordmap['new_para'] = 'N_PROBLEEMA'
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_para'] = 'N_KÄPÄLÄ'
@@ -667,7 +714,7 @@ def guess_new_noun(wordmap):
                         [False])
         elif tn == 12:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a'):
+                if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
                     wordmap['new_para'] = 'N_MAKKARA'
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_para'] = 'N_HÄKKYRÄ'
@@ -717,13 +764,17 @@ def guess_new_noun(wordmap):
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('oa'):
                     wordmap['new_para'] = 'N_AINOA'
+                elif wordmap['lemma'].endswith('ôa'):
+                    wordmap['new_para'] = 'N_AINOA'
                 elif wordmap['lemma'].endswith('ea'):
                     wordmap['new_para'] = 'N_SOKEA'
                 elif wordmap['lemma'].endswith('eä'):
                     wordmap['new_para'] = 'N_LIPEÄ'
+                elif wordmap['lemma'].endswith('ua'):
+                    wordmap['new_para'] = 'N_TANHUA'
                 else:
                     fail_guess_because(wordmap, ['N', 15, False],
-                            ['ea', 'eä'])
+                            ['oa ôa', 'ea', 'eä', 'ua'])
             else:
                 fail_guess_because(wordmap, ['N', 15],
                         [False])
@@ -810,6 +861,10 @@ def guess_new_noun(wordmap):
                 elif wordmap['lemma'].endswith('ee') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_PATEE'
                 elif wordmap['lemma'].endswith('ee') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_BIDEE'
+                elif wordmap['lemma'].endswith('EE') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_PATEE'
+                elif wordmap['lemma'].endswith('EE') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_BIDEE'
                 elif wordmap['lemma'].endswith('oo'):
                     wordmap['new_para'] = 'N_TRIKOO'
@@ -985,6 +1040,12 @@ def guess_new_noun(wordmap):
                     else:
                         fail_guess_because(wordmap, ['N', 29, False, 'psi'],
                             ['back'])
+                elif wordmap['lemma'].endswith('ksi'):
+                    if wordmap['harmony'] == 'back':
+                        wordmap['new_para'] = 'N_UKSI'
+                    else:
+                        fail_guess_because(wordmap, ['N', 29, False, 'ksi'],
+                            ['back'])
                 else:
                     fail_guess_because(wordmap, ['N', 29, False],
                             ['psi'])
@@ -1054,6 +1115,12 @@ def guess_new_noun(wordmap):
                 else:
                     fail_guess_because(wordmap, ['N', 33, False],
                         ['back', 'front'])
+            elif wordmap['kotus_av'] == 'A':
+                if wordmap['lemma'].endswith('kin') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_HÄRKIN'
+                else:
+                    fail_guess_because(wordmap, ['N', 33, 'A'],
+                        ['kin', 'front'])
             elif wordmap['kotus_av'] == 'C':
                 if wordmap['lemma'].endswith('tin') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_SUODATIN'
@@ -1083,6 +1150,8 @@ def guess_new_noun(wordmap):
                     wordmap['new_para'] = 'N_VAADIN'
                 elif wordmap['lemma'].endswith('din') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_SÄÄDIN'
+                elif wordmap['lemma'].endswith('don'):
+                    wordmap['new_para'] = 'N_JÄRVITAHDON'
                 elif wordmap['lemma'].endswith('dun'):
                     wordmap['new_para'] = 'N_LAIDUN'
                 else:
@@ -1122,20 +1191,32 @@ def guess_new_noun(wordmap):
                         ['jin', 'back'])
             else:
                 fail_guess_because(wordmap, ['N', 33],
-                    [False, 'C-F', 'J-L'])
+                    [False, 'A', 'C-F', 'J-L'])
         elif wordmap['kotus_tn'] == 34:
-            if wordmap['kotus_av'] == 'C':
+            if not wordmap['kotus_av']:
+                if wordmap['lemma'].endswith('toin'):
+                    wordmap['new_para'] = 'N_KALATOIN'
+                elif wordmap['lemma'].endswith('töin'):
+                    wordmap['new_para'] = 'N_NIMETÖIN'
+                else:
+                    fail_guess_because(wordmap, ['N', 34, False],
+                            ['toin', 'töin'])
+            elif wordmap['kotus_av'] == 'B':
+                if wordmap['lemma'].endswith('pan'):
+                    wordmap['new_para'] = 'N_HAPAN'
+                else:
+                    fail_guess_because(wordmap, ['N', 34, 'B'],
+                            ['pan'])
+            elif wordmap['kotus_av'] == 'C':
                 if wordmap['lemma'].endswith('ton'):
                     wordmap['new_para'] = 'N_KELVOTON'
                 elif wordmap['lemma'].endswith('tön'):
                     wordmap['new_para'] = 'N_HÖMETÖN'
-                elif wordmap['lemma'].endswith('toin'):
-                    wordmap['new_para'] = 'N_KALATOIN'
                 else:
                     fail_guess_because(wordmap, ['N', 34, 'C'],
-                            ['ton', 'tön'], 'mainly A class')
+                            ['ton', 'tön'])
             else:
-                fail_guess_because(wordmap, ['N', 34], ['C'])
+                fail_guess_because(wordmap, ['N', 34], [False, 'C'])
         elif wordmap['kotus_tn'] == 35:
             if not wordmap['kotus_av']:
                 if wordmap['harmony'] == 'back':
@@ -1218,11 +1299,13 @@ def guess_new_noun(wordmap):
                     wordmap['new_para'] = 'N_RUUMIS'
                 elif wordmap['lemma'].endswith('is') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_TIIVIS'
+                elif wordmap['lemma'].endswith('os'):
+                    wordmap['new_para'] = 'N_UROS'
                 elif wordmap['lemma'].endswith('äs'):
                     wordmap['new_para'] = 'N_ÄYRÄS'
                 else:
-                    fail_guess_because(wordmap, ['N', 38, False],
-                        ['as', 'es', 'is', 'äs', 'front', 'back'])
+                    fail_guess_because(wordmap, ['N', 41, False],
+                        ['as', 'es', 'is', 'os', 'äs', 'front', 'back'])
             elif wordmap['kotus_av'] == 'A':
                 if wordmap['lemma'].endswith('kas'):
                     wordmap['new_para'] = 'N_ASUKAS'
@@ -1242,6 +1325,10 @@ def guess_new_noun(wordmap):
             elif wordmap['kotus_av'] == 'C':
                 if wordmap['lemma'].endswith('tas'):
                     wordmap['new_para'] = 'N_RATAS'
+                elif wordmap['lemma'].endswith('tes') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_KORTES'
+                elif wordmap['lemma'].endswith('tis') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_ALTIS'
                 elif wordmap['lemma'].endswith('tis') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_KELTIS'
                 elif wordmap['lemma'].endswith('täs'):
@@ -1272,11 +1359,13 @@ def guess_new_noun(wordmap):
             elif wordmap['kotus_av'] == 'F':
                 if wordmap['lemma'].endswith('das'):
                     wordmap['new_para'] = 'N_TEHDAS'
+                elif wordmap['lemma'].endswith('des') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_LUODES'
                 elif wordmap['lemma'].endswith('des') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_LÄHDES'
                 else:
                     fail_guess_because(wordmap, ['N', 41, 'F'],
-                        ['das'])
+                        ['das', 'des'])
             elif wordmap['kotus_av'] == 'G':
                 if wordmap['lemma'].endswith('ngas'):
                     wordmap['new_para'] = 'N_KANGAS'
@@ -1294,7 +1383,7 @@ def guess_new_noun(wordmap):
             elif wordmap['kotus_av'] == 'I':
                 if wordmap['lemma'].endswith('llas'):
                     wordmap['new_para'] = 'N_ALLAS'
-                if wordmap['lemma'].endswith('lles') and wordmap['harmony'] == 'back':
+                elif wordmap['lemma'].endswith('lles') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_AKILLES'
                 else:
                     fail_guess_because(wordmap, ['N', 41, 'I'],
@@ -1318,7 +1407,7 @@ def guess_new_noun(wordmap):
                     [False, 'A-K'])
         elif wordmap['kotus_tn'] == 42:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('mies'):
+                if wordmap['lemma'].endswith('mies') or wordmap['lemma'].endswith('Mies'):
                     wordmap['new_para'] = 'N_MIES'
                 else:
                     fail_guess_because(wordmap, ['N', 42, False],
@@ -1348,18 +1437,64 @@ def guess_new_noun(wordmap):
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('ät'):
                     wordmap['new_para'] = 'N_KEVÄT'
+                elif wordmap['lemma'].endswith('et') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_KAARET'
+                elif wordmap['lemma'].endswith('et') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_HÄMET'
                 else:
                     fail_guess_because(wordmap, ['N', 44, False],
-                        ['ät'])
+                        ['ät','et'])
+            elif wordmap['kotus_av'] == 'C':
+                if wordmap['lemma'].endswith('tet') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_KORTET'
+                else:
+                    fail_guess_because(wordmap, ['N', 44, 'C'],
+                            ['tet'])
+            elif wordmap['kotus_av'] == 'D':
+                if wordmap['lemma'].endswith('et') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_LOUET'
+                else:
+                    fail_guess_because(wordmap, ['N', 44, 'D'],
+                            ['et'])
+            elif wordmap['kotus_av'] == 'F':
+                if wordmap['lemma'].endswith('det') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_AHDET'
+                elif wordmap['lemma'].endswith('det') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_LÄHDET'
+                else:
+                    fail_guess_because(wordmap, ['N', 44, 'F'],
+                            ['det'])
+            elif wordmap['kotus_av'] == 'G':
+                if wordmap['lemma'].endswith('get') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_INGET'
+                else:
+                    fail_guess_because(wordmap, ['N', 44, 'F'],
+                            ['det'])
             elif wordmap['kotus_av'] == 'I':
                 if wordmap['lemma'].endswith('llet') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_VUOLLET'
                 else:
                     fail_guess_because(wordmap, ['N', 44, 'I'],
                             ['llet'])
+            elif wordmap['kotus_av'] == 'J':
+                if wordmap['lemma'].endswith('nnet') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_LANNET'
+                elif wordmap['lemma'].endswith('nnet') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_RINNET'
+                else:
+                    fail_guess_because(wordmap, ['N', 44, 'J'],
+                            ['nnet'])
+            elif wordmap['kotus_av'] == 'K':
+                if wordmap['lemma'].endswith('rret') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_KAARRET'
+                elif wordmap['lemma'].endswith('rret') and wordmap['harmony'] == 'front':
+                    wordmap['new_para'] = 'N_VIIRRET'
+                else:
+                    fail_guess_because(wordmap, ['N', 44, 'K'],
+                            ['rret'])
             else:
                 fail_guess_because(wordmap, ['N', 44],
-                    [False, 'I'])
+                    [False, 'C', 'D', 'F', 'G', 'I', 'J', 'K'])
         elif wordmap['kotus_tn'] == 45:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('s'):
@@ -1496,6 +1631,8 @@ def guess_new_noun(wordmap):
                     wordmap['new_para'] = 'N_ASKAR'
                 elif wordmap['lemma'].endswith('ar'):
                     wordmap['new_para'] = 'N_ASKAR'
+                elif wordmap['lemma'].endswith('en') and wordmap['harmony'] == 'back':
+                    wordmap['new_para'] = 'N_ASKAR'
                 elif wordmap['lemma'].endswith('el') and wordmap['harmony'] == 'back':
                     wordmap['new_para'] = 'N_ASKAR'
                 elif wordmap['lemma'].endswith('el') and wordmap['harmony'] == 'front':
@@ -1506,7 +1643,7 @@ def guess_new_noun(wordmap):
                     wordmap['new_para'] = 'N_PISTE'
                 else:
                     fail_guess_because(wordmap, ['N', 49, False],
-                        ['al', 'ar', 'el', 'e', 'front', 'back'])
+                        ['al ar', 'el en', 'e', 'front', 'back'])
             elif wordmap['kotus_av'] == 'D':
                 if wordmap['lemma'].endswith('en') and wordmap['harmony'] == 'front':
                     wordmap['new_para'] = 'N_SÄEN'
@@ -1564,19 +1701,56 @@ def guess_new_noun(wordmap):
                     [False, 'D-H', 'J', 'T'])
         elif tn == 99:
             wordmap['new_para'] = '#'
+        elif tn == 1007:
+            if not wordmap['kotus_av']:
+                if wordmap['lemma'].endswith('veli'):
+                    wordmap['new_para'] = 'N_VELI'
+                else:
+                    fail_guess_because(wordmap, ['N', 7, False, 'VELI'],
+                            ['veli'], 'must be veli')
+            else:
+                fail_guess_because(wordmap, ['N', 7, 'VELI'],
+                        [False], 'Cannot gradate')
         elif tn == 1009:
             if wordmap['kotus_av'] == 'D':
                 if wordmap['lemma'].endswith('aika'):
-                    wordmap['new_para'] = 'N_AKA'
+                    wordmap['new_para'] = 'N_AIKA'
                 else:
-                    fail_guess_because(wordmap, ['N', 9, 'D', 'PAKA'],
-                            ['poika'], 'must be aika')
+                    fail_guess_because(wordmap, ['N', 9, 'D', 'AIKA'],
+                            ['aika'], 'must be aika')
+            elif not wordmap['kotus_av']:
+                if wordmap['lemma'].endswith('aika'):
+                    print("N_AIKA is k:0 gradation + i:j variation!",
+                            "in", wordmap['lemma'],
+                            file=stderr)
+                    wordmap['new_para'] = 'N_AIKA'
+                else:
+                    fail_guess_because(wordmap, ['N', 9, 'D', 'AIKA'],
+                            ['aika'], 'must be aika')
+            elif wordmap['kotus_av'] == 'L':
+                if wordmap['lemma'].endswith('aika'):
+                    wordmap['new_para'] = 'N_AIKA'
+                    print("N_AIKA is k:0 gradation + i:j variation, not k:j!",
+                            "in", wordmap['lemma'],
+                            file=stderr)
+                else:
+                    fail_guess_because(wordmap, ['N', 9, 'D', 'AIKA'],
+                            ['aika'], 'must be aika')
             else:
                 fail_guess_because(wordmap, ['N', 9, 'AIKA'],
                         ['D'], 'must be D')
         elif tn == 1010:
             if wordmap['kotus_av'] == 'D':
+                if wordmap['lemma'].endswith('poika') or wordmap['lemma'].endswith('Poika'):
+                    wordmap['new_para'] = 'N_POIKA'
+                else:
+                    fail_guess_because(wordmap, ['N', 10, 'D', 'POIKA'],
+                            ['poika'], 'must be poika')
+            elif not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('poika'):
+                    print("N_POIKA is k:0 gradation + i:j variation!",
+                            "in", wordmap['lemma'],
+                            file=stderr)
                     wordmap['new_para'] = 'N_POIKA'
                 else:
                     fail_guess_because(wordmap, ['N', 10, 'D', 'POIKA'],
@@ -1586,11 +1760,11 @@ def guess_new_noun(wordmap):
                         ['D'], 'must be D')
         elif tn == 1024:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('meri'):
+                if wordmap['lemma'].endswith('meri') or wordmap['lemma'].endswith('Meri'):
                     wordmap['new_para'] = 'N_MERI'
                 else:
                     fail_guess_because(wordmap, ['N', 24, False, 'MERI'],
-                            ['meri'], 'must be aika')
+                            ['meri'], 'must be meri')
             else:
                 fail_guess_because(wordmap, ['N', 24, 'MERI'],
                         [False], 'must be 0')
