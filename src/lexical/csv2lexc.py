@@ -31,7 +31,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_analysis_omor, format_analysis_omor_paralysed, format_surface_omor, format_lexc_omor
+from format_output import format_analysis_omor, format_surface_omor, format_lexc_omor
 from gradation import gradation_make_morphophonemes
 from parse_csv_data import parse_defaults_from_csv, parse_extras_from_csv, parse_conts, finetune_conts, add_extras
 from plurale_tantum import plurale_tantum_get_singular_stem
@@ -130,8 +130,8 @@ def main():
             csv_parts = []
             if csv_line.count('\t') >= 2:
                 csv_parts = csv_line.split("\t")
-            elif csv_line.count(',') >= 2:
-                csv_parts = csv_line.split(",")
+            elif csv_line.count('","') >= 2:
+                csv_parts = csv_line.split('","')
             else:
                 print("Too few commas or tabs on line", linecount, 
                     "skipping following line completely:", file=stderr)
@@ -181,10 +181,7 @@ def main():
                 wordmap['pos'] = 'SUFFIX'
                 # N.B: suffixes may inflect however so retain original cont
             # format analysis
-            if args.format == 'ktnkav':
-                format_analysis_omor_paralysed(wordmap, args.proper_subclasses)
-            elif args.format == 'omor':
-                format_analysis_omor(wordmap)
+            format_analysis_omor(wordmap, args.format, args.proper_subclasses)
             # ...
             wordmap = add_extras(wordmap)
             # format surface

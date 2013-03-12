@@ -72,8 +72,8 @@ def main():
                 csv_line = csv_file.readline()
                 continue
             csv_parts = []
-            if csv_line.count(',') >= 2:
-                csv_parts = csv_line.split(',')
+            if csv_line.count('","') >= 2:
+                csv_parts = csv_line.strip('"').split('","')
             elif csv_line.count('\t') >= 2:
                 csv_parts = csv_line.split('\t')
             else:
@@ -81,7 +81,7 @@ def main():
                 print(csv_line, file=stderr)
                 csv_line = csv_file.readline()
                 continue
-            if csv_parts[-1] == '<-HEADERS':
+            if csv_parts[-1].endswith('<-HEADERS'):
                 # skip header line
                 csv_line = csv_file.readline()
                 continue
@@ -103,9 +103,9 @@ def main():
                 continue
             join_parts = []
             join_on = ''
-            if join_line.count(',') >= 4:
+            if join_line.count('","') >= 4:
                 join_parts = join_line.split(',')
-                join_on = ','.join(join_parts[0:4])
+                join_on = '","'.join(join_parts[0:4])
             elif join_line.count('\t') >= 4:
                 join_parts = join_line.split('\t')
                 join_on = '\t'.join(join_parts[0:4])
@@ -116,12 +116,12 @@ def main():
                 print(join_line, file=stderr)
                 join_line = join_file.readline()
                 continue
-            if join_parts[-1] == '<-HEADERS':
+            if join_parts[-1].endswith('<-HEADERS'):
                 # skip header line
                 join_line = join_file.readline()
                 continue
             if not join_on in words.keys():
-                print("Could not find the key", join_on, "of", join_file,
+                print("Could not find the key", join_on, "of", join_file.name,
                 "line", linecount, "from any of", args.input, file=stderr)
             else:
                 this_entry = words[join_on]

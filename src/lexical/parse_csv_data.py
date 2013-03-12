@@ -91,6 +91,11 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['plurale_tantum'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"prop':
                 wordmap['proper_noun_class'].append( extra_fields[1].strip('"').upper() )
+                if wordmap['is_proper'] or wordmap['pos'] == 'ACRONYM':
+                    wordmap['proper_noun_class'].append( extra_fields[1].upper() )
+                    wordmap['is_proper'] = True
+                else:
+                    print("Warning: Ignoring attribute", csv_extra, "for", wordmap['lemma'], file=stderr)
             elif extra_fields[0] == '"poss':
                 wordmap['possessive'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"stem-vowel':
@@ -99,8 +104,6 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['style'] = extra_fields[1].strip('"')
             elif extra_fields[0] == '"boundaries':
                 wordmap['stub'] = extra_fields[1].strip('"').replace("|", "{#}").replace("_", "{_}")
-            elif extra_fields[0] == '"prop':
-                wordmap['proper_noun_class'] = extra_fields[1].strip('"')
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     return wordmap
@@ -146,7 +149,6 @@ def finetune_conts(wordmap):
         wordmap['continuation'] += '/stemfiller'
     elif wordmap['pos'] == "ACRONYM":
         wordmap['continuation'] += '/' + wordmap['stub'][-1]
-    
     elif wordmap['pos'] in ["ADPOSITION","ADVERB"]  and wordmap['possessive']:
         if wordmap['possessive'] == 'opt':
             wordmap['continuation'] = 'Possessive/Optional+Vn'
