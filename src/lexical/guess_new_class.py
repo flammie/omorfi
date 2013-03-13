@@ -2281,7 +2281,7 @@ def guess_new_adjective(wordmap):
             if wordmap['lemma'].endswith('ton'):
                 wordmap['new_para'] = 'A_ALASTON'
             else:
-                fail_guess_with(wordmap, ['A', 34, False],
+                fail_guess_because(wordmap, ['A', 34, False],
                         ['ton'])
         elif wordmap['kotus_av'] == 'C':
             if wordmap['lemma'].endswith('ton'):
@@ -2461,7 +2461,1043 @@ def guess_new_adjective(wordmap):
     return wordmap
 
 def guess_new_verb(wordmap):
-    #fail_guess_because(wordmap, ['V'], [], "Not impl Verbs")
+    tn = int(wordmap['kotus_tn'])
+    if tn == 52:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('oa'):
+                wordmap['new_para'] = 'V_PUNOA'
+            elif wordmap['lemma'].endswith('ua'):
+                wordmap['new_para'] = 'V_KAUNISTUA'
+            elif wordmap['lemma'].endswith('yä'):
+                wordmap['new_para'] = 'V_ÄLLISTYÄ'
+            elif wordmap['lemma'].endswith('öä'):
+                wordmap['new_para'] = 'V_SÄILÖÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, False], 
+                        ['oa', 'ua', 'yä', 'öä'])
+        elif wordmap['kotus_av'] == 'A':
+            if wordmap['lemma'].endswith('koa'):
+                wordmap['new_para'] = 'V_HAUKKOA'
+            elif wordmap['lemma'].endswith('kua'):
+                wordmap['new_para'] = 'V_NUOKKUA'
+            elif wordmap['lemma'].endswith('kyä'):
+                wordmap['new_para'] = 'V_KÄRKKYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'A'], 
+                        ['ko', 'ku', 'ky'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('ppoa'):
+                wordmap['new_para'] = 'V_HARPPOA'
+            elif wordmap['lemma'].endswith('ppua'):
+                wordmap['new_para'] = 'V_LOPPUA'
+            elif wordmap['lemma'].endswith('ppyä'):
+                wordmap['new_para'] = 'V_LEPPYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'B'], 
+                        ['ppo', 'ppu', 'ppy'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('ttoa'):
+                wordmap['new_para'] = 'V_VIITTOA'
+            elif wordmap['lemma'].endswith('ttua'):
+                wordmap['new_para'] = 'V_HERMOTTUA'
+            elif wordmap['lemma'].endswith('ttyä'):
+                wordmap['new_para'] = 'V_KIVETTYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'C'], 
+                        ['tto', 'ttu', 'tty'])
+        elif wordmap['kotus_av'] == 'D':
+            if wordmap['lemma'].endswith('koa'):
+                wordmap['new_para'] = 'V_TAKOA'
+            elif wordmap['lemma'].endswith('ukua'):
+                wordmap['new_para'] = 'V_MAUKUA'
+            elif wordmap['lemma'].endswith('kua'):
+                wordmap['new_para'] = 'V_NUOKKUA'
+            elif wordmap['lemma'].endswith('kyä'):
+                wordmap['new_para'] = 'V_MÄIKYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'D'],
+                        ['ko'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('poa'):
+                wordmap['new_para'] = 'V_SILPOA'
+            elif wordmap['lemma'].endswith('pua'):
+                wordmap['new_para'] = 'V_HIIPUA'
+            elif wordmap['lemma'].endswith('pyä'):
+                wordmap['new_para'] = 'V_SYÖPYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'E'],
+                        ['poa', 'pua', 'pyä'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('toa'):
+                wordmap['new_para'] = 'V_KIETOA'
+            elif wordmap['lemma'].endswith('tua'):
+                wordmap['new_para'] = 'V_ROHTUA'
+            elif wordmap['lemma'].endswith('tyä'):
+                wordmap['new_para'] = 'V_SILIYTYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'F'],
+                        ['toa', 'tua', 'tyä'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('nkua'):
+                wordmap['new_para'] = 'V_VINKUA'
+            elif wordmap['lemma'].endswith('nkoa'):
+                wordmap['new_para'] = 'V_PENKOA'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'G'],
+                        ['nko'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mpoa'):
+                wordmap['new_para'] = 'V_TEMPOA'
+            elif wordmap['lemma'].endswith('mpua'):
+                wordmap['new_para'] = 'V_AMPUA'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'G'],
+                        ['nko'])
+        elif wordmap['kotus_av'] == 'I':
+            if wordmap['lemma'].endswith('ltua'):
+                wordmap['new_para'] = 'V_HUMALTUA'
+            elif wordmap['lemma'].endswith('ltyä'):
+                wordmap['new_para'] = 'V_MIELTYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'I'],
+                        ['lto', 'ltu', 'lty'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntua'):
+                wordmap['new_para'] = 'V_VAKAANTUA'
+            elif wordmap['lemma'].endswith('ntyä'):
+                wordmap['new_para'] = 'V_TYHJENTYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'J'],
+                        ['nto', 'ntu', 'nty'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rtoa'):
+                wordmap['new_para'] = 'V_VARTOA'
+            elif wordmap['lemma'].endswith('rtua'):
+                wordmap['new_para'] = 'V_PUSERTUA'
+            elif wordmap['lemma'].endswith('rtyä'):
+                wordmap['new_para'] = 'V_KIERTYÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 52, 'K'],
+                        ['rtoa', 'rtua', 'rtyä'])
+        else:
+            fail_guess_because(wordmap, ['V', 52],
+
+                    [False, 'A-K'])
+    elif tn == 53:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('aa'):
+                wordmap['new_para'] = 'V_MUTRISTAA'
+            elif wordmap['lemma'].endswith('ää'):
+                wordmap['new_para'] = 'V_KIVISTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 53, False],
+                        ['aa', 'ää'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('ttaa'):
+                wordmap['new_para'] = 'V_VIEROITTAA'
+            elif wordmap['lemma'].endswith('ttää'):
+                wordmap['new_para'] = 'V_RÄPSYTTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 53, 'C'],
+                        ['nto', 'ntu', 'nty'])
+        elif wordmap['kotus_av'] == 'D':
+            if wordmap['lemma'].endswith('kaa'):
+                wordmap['new_para'] = 'V_PURKAA'
+            else:
+                fail_guess_because(wordmap, ['V', 53, 'D'],
+                        ['nto', 'ntu', 'nty'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('taa'):
+                wordmap['new_para'] = 'V_MOJAHTAA'
+            elif wordmap['lemma'].endswith('tää'):
+                wordmap['new_para'] = 'V_YSKÄHTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 53, 'F'],
+                        ['nto', 'ntu', 'nty'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntää'):
+                wordmap['new_para'] = 'V_KYNTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 53, 'J'],
+                        ['nto', 'ntu', 'nty'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rtaa'):
+                wordmap['new_para'] = 'V_SORTAA'
+            else:
+                fail_guess_because(wordmap, ['V', 53, 'K'],
+                        ['nto', 'ntu', 'nty'])
+        else:
+            fail_guess_because(wordmap, ['V', 53], [False])
+    elif tn == 54:
+        if wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('taa'):
+                wordmap['new_para'] = 'V_HUUTAA'
+            elif wordmap['lemma'].endswith('tää'):
+                wordmap['new_para'] = 'V_PYYTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 54, False],
+                        ['tää', 'taa'])
+        elif wordmap['kotus_av'] == 'I':
+            if wordmap['lemma'].endswith('ltaa'):
+                wordmap['new_para'] = 'V_SIVALTAA'
+            elif wordmap['lemma'].endswith('ltää'):
+                wordmap['new_para'] = 'V_VIHELTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 54, 'I'],
+                        ['tää', 'taa'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntaa'):
+                wordmap['new_para'] = 'V_HUONONTAA'
+            elif wordmap['lemma'].endswith('ntää'):
+                wordmap['new_para'] = 'V_HIVENTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 54, 'J'],
+                        ['tää', 'taa'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rtaa'):
+                wordmap['new_para'] = 'V_KUHERTAA'
+            elif wordmap['lemma'].endswith('rtää'):
+                wordmap['new_para'] = 'V_NÄPERTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 54, 'K'],
+                        ['tää', 'taa'])
+        else:
+            fail_guess_because(wordmap, ['V', 54], ['F', 'I-K'])
+    elif tn == 55:
+        if wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('taa'):
+                wordmap['new_para'] = 'V_JOUTAA'
+            elif wordmap['lemma'].endswith('tää'):
+                wordmap['new_para'] = 'V_KIITÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 55, 'F'],
+                        ['kko'])
+        elif wordmap['kotus_av'] == 'I':
+            if wordmap['lemma'].endswith('ltää'):
+                wordmap['new_para'] = 'V_YLTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 55, 'I'],
+                        ['ltää'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntää'):
+                wordmap['new_para'] = 'V_ENTÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 55, 'J'],
+                        ['tää', 'taa'])
+        else:
+            fail_guess_because(wordmap, ['V', 55], ['F', 'I', 'J'])
+    elif tn == 56:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('aa'):
+                wordmap['new_para'] = 'V_KASVAA'
+            else:
+                fail_guess_because(wordmap, ['V', 56, False],
+                        ['front', 'back'])
+        elif wordmap['kotus_av'] in ['A', 'D']:
+            if wordmap['lemma'].endswith('kaa'):
+                wordmap['new_para'] = 'V_VIRKKAA'
+            else:
+                fail_guess_because(wordmap, ['V', 56, 'A'],
+                        ['kaa'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('ppaa'):
+                wordmap['new_para'] = 'V_TAPPAA'
+            else:
+                fail_guess_because(wordmap, ['V', 56, 'B'],
+                        ['kkaa'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('ttaa'):
+                wordmap['new_para'] = 'V_AUTTAA'
+            else:
+                fail_guess_because(wordmap, ['V', 56, 'C'],
+                        ['kkaa'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('taa'):
+                wordmap['new_para'] = 'V_SATAA'
+            else:
+                fail_guess_because(wordmap, ['V', 56, 'F'],
+                        ['kkaa'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntaa'):
+                wordmap['new_para'] = 'V_KANTAA'
+            else:
+                fail_guess_because(wordmap, ['V', 56, 'J'],
+                        ['kkaa'])
+        else:
+            fail_guess_because(wordmap, ['V', 56],
+                    [False])
+    elif tn == 57:
+        if wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('taa'):
+                wordmap['new_para'] = 'V_KAATAA'
+            else:
+                fail_guess_because(wordmap, ['V', 57, 'F'],
+                        ['e', 'front', 'back'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rtaa'):
+                wordmap['new_para'] = 'V_SAARTAA'
+            else:
+                fail_guess_because(wordmap, ['V', 57, 'K'],
+                        ['e', 'front', 'back'])
+        else:
+            fail_guess_because(wordmap, ['V', 57],
+                    [False])
+    elif tn == 58:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ea'):
+                wordmap['new_para'] = 'V_SOTKEA'
+            elif wordmap['lemma'].endswith('eä'):
+                wordmap['new_para'] = 'V_KYTKEÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 58, False],
+                        ['ea', 'eä'])
+        elif wordmap['kotus_av'] == 'D':
+            if wordmap['lemma'].endswith('kea'):
+                wordmap['new_para'] = 'V_PUKEA'
+            else:
+                fail_guess_because(wordmap, ['V', 58, 'D'],
+                        ['kka'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('peä'):
+                wordmap['new_para'] = 'V_RYPEÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 58, 'E'],
+                        ['tta'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('tea'):
+                wordmap['new_para'] = 'V_KUTEA'
+            elif wordmap['lemma'].endswith('teä'):
+                wordmap['new_para'] = 'V_PÄTEÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 58, 'F'],
+                        ['ka'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('nkea'):
+                wordmap['new_para'] = 'V_TUNKEA'
+            else:
+                fail_guess_because(wordmap, ['V', 58, 'G'],
+                        ['pa'])
+        elif wordmap['kotus_av'] == 'L':
+            if wordmap['lemma'].endswith('kea'):
+                wordmap['new_para'] = 'V_POLKEA'
+            elif wordmap['lemma'].endswith('keä'):
+                wordmap['new_para'] = 'V_SÄRKEÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 58, 'L'],
+                        ['ta'])
+        else:
+            fail_guess_because(wordmap, ['V', 58],
+                    [False, 'V-K'])
+    elif tn == 59:
+        if wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntea'):
+                wordmap['new_para'] = 'V_TUNTEA'
+            else:
+                fail_guess_because(wordmap, ['V', 59, False],
+                        ['a', 'ä'])
+        else:
+            fail_guess_because(wordmap, ['V', 59, 'K'],
+                    ['rta'])
+    elif tn == 60:
+        if wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('hteä'):
+                wordmap['new_para'] = 'V_LÄHTEÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 60, False],
+                        ['a', 'ä'])
+        else:
+            fail_guess_because(wordmap, ['V', 60],
+                    [False])
+    elif tn == 61:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ia'):
+                wordmap['new_para'] = 'V_KOSIA'
+            elif wordmap['lemma'].endswith('iä'):
+                wordmap['new_para'] = 'V_RYSKIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, False],
+                        ['ia', 'iä'])
+        elif wordmap['kotus_av'] == 'A':
+            if wordmap['lemma'].endswith('kia'):
+                wordmap['new_para'] = 'V_KUKKIA'
+            elif wordmap['lemma'].endswith('kiä'):
+                wordmap['new_para'] = 'V_SÖRKKIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'A'],
+                        ['kia', 'kiä'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('ppia'):
+                wordmap['new_para'] = 'V_KALPPIA'
+            elif wordmap['lemma'].endswith('ppiä'):
+                wordmap['new_para'] = 'V_HYPPIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'B'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('ttia'):
+                wordmap['new_para'] = 'V_MOITTIA'
+            elif wordmap['lemma'].endswith('ttiä'):
+                wordmap['new_para'] = 'V_MIETTIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'C'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'D':
+            if wordmap['lemma'].endswith('kia'):
+                wordmap['new_para'] = 'V_KUKKIA'
+            elif wordmap['lemma'].endswith('kiä'):
+                wordmap['new_para'] = 'V_SÖRKKIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'D'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('pia'):
+                wordmap['new_para'] = 'V_RAAPIA'
+            elif wordmap['lemma'].endswith('piä'):
+                wordmap['new_para'] = 'V_RAAPIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'E'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('tia'):
+                wordmap['new_para'] = 'V_AHNEHTIA'
+            elif wordmap['lemma'].endswith('tiä'):
+                wordmap['new_para'] = 'V_EHTIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'F'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('nkia'):
+                wordmap['new_para'] = 'V_ONKIA'
+            elif wordmap['lemma'].endswith('nkiä'):
+                wordmap['new_para'] = 'V_MÖNKIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'G'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mpiä'):
+                wordmap['new_para'] = 'V_TYMPIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'H'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('ntia'):
+                wordmap['new_para'] = 'V_KONTIA'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'J'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'L':
+            if wordmap['lemma'].endswith('kiä'):
+                wordmap['new_para'] = 'V_HYLKIÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 61, 'L'],
+                        ['a'])
+        else:
+            fail_guess_because(wordmap, ['V', 61],
+                    [False])
+    elif tn == 62:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ida'):
+                wordmap['new_para'] = 'V_KOPIOIDA'
+            elif wordmap['lemma'].endswith('idä'):
+                wordmap['new_para'] = 'V_ÖYKKÄRÖIDÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 62, False],
+                        ['ida', 'idä'])
+        else:
+            fail_guess_because(wordmap, ['V', 62],
+                    [False])
+    elif tn == 63:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('aada'):
+                wordmap['new_para'] = 'V_SAADA'
+            elif wordmap['lemma'].endswith('yydä'):
+                wordmap['new_para'] = 'V_MYYDÄ'
+            elif wordmap['lemma'].endswith('äädä'):
+                wordmap['new_para'] = 'V_MÄÄDÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 63, False],
+                        ['kka', 'kkä'])
+        else:
+            fail_guess_because(wordmap, ['V', 63],
+                    [False])
+    elif tn == 64:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('iedä'):
+                wordmap['new_para'] = 'V_VIEDÄ'
+            elif wordmap['lemma'].endswith('uoda'):
+                wordmap['new_para'] = 'V_TUODA'
+            elif wordmap['lemma'].endswith('yödä'):
+                wordmap['new_para'] = 'V_SYÖDÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 64, False],
+                        ['oa', 'ea', 'eä'])
+        else:
+            fail_guess_because(wordmap, ['V', 64],
+                    [False])
+    elif tn == 65:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('käydä'):
+                wordmap['new_para'] = 'V_KÄYDÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 65, False],
+                        ['back'])
+        else:
+            fail_guess_because(wordmap, ['V', 65],
+                    ['H'])
+    elif tn == 66:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ta'):
+                wordmap['new_para'] = 'V_MARISTA'
+            elif wordmap['lemma'].endswith('tä'):
+                wordmap['new_para'] = 'V_ÄRISTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 66, False],
+                        ['ta', 'tä'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('vista'):
+                wordmap['new_para'] = 'V_VAVISTA'
+            elif wordmap['lemma'].endswith('väistä'):
+                wordmap['new_para'] = 'V_HÄVÄISTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 66, False],
+                        ['vista', 'väistä'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('ngaista'):
+                wordmap['new_para'] = 'V_RANGAISTA'
+            else:
+                fail_guess_because(wordmap, ['V', 66, False],
+                        ['gaista'])
+        else:
+            fail_guess_because(wordmap, ['V', 66],
+                    [False])
+    elif tn == 67:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('rra'):
+                wordmap['new_para'] = 'V_SURRA'
+            elif wordmap['lemma'].endswith('lla'):
+                wordmap['new_para'] = 'V_VASTAILLA'
+            elif wordmap['lemma'].endswith('llä'):
+                wordmap['new_para'] = 'V_ÄKSYILLÄ'
+            elif wordmap['lemma'].endswith('nna'):
+                wordmap['new_para'] = 'V_PANNA'
+            elif wordmap['lemma'].endswith('nnä'):
+                wordmap['new_para'] = 'V_MENNÄ'
+            elif wordmap['lemma'].endswith('rrä'):
+                wordmap['new_para'] = 'V_PIERRÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, False],
+                        ['rra', 'rrä'])
+        elif wordmap['kotus_av'] in ['A', 'D']:
+            if wordmap['lemma'].endswith('ella'):
+                wordmap['new_para'] = 'V_NAKELLA'
+            elif wordmap['lemma'].endswith('ellä'):
+                wordmap['new_para'] = 'V_LEIKELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'A'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('pella'):
+                wordmap['new_para'] = 'V_TAPELLA'
+            elif wordmap['lemma'].endswith('pellä'):
+                wordmap['new_para'] = 'V_HYPELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'B'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('tella'):
+                wordmap['new_para'] = 'V_SULATELLA'
+            elif wordmap['lemma'].endswith('tellä'):
+                wordmap['new_para'] = 'V_HERÄTELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'C'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('della'):
+                wordmap['new_para'] = 'V_TIPAHDELLA'
+            elif wordmap['lemma'].endswith('dellä'):
+                wordmap['new_para'] = 'V_SÄPSÄHDELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'F'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mmella'):
+                wordmap['new_para'] = 'V_OMMELLA'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'H'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'I':
+            if wordmap['lemma'].endswith('llella'):
+                wordmap['new_para'] = 'V_VAELLELLA'
+            elif wordmap['lemma'].endswith('llellä'):
+                wordmap['new_para'] = 'V_KIILLELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'I'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('nnella'):
+                wordmap['new_para'] = 'V_KOMENNELLA'
+            elif wordmap['lemma'].endswith('nnellä'):
+                wordmap['new_para'] = 'V_KÄÄNNELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'J'],
+                        ['a'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rrella'):
+                wordmap['new_para'] = 'V_NAKERRELLA'
+            elif wordmap['lemma'].endswith('rrellä'):
+                wordmap['new_para'] = 'V_KIHERRELLÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 67, 'K'],
+                        ['a'])
+        else:
+            fail_guess_because(wordmap, ['V', 18],
+                    [False])
+    elif tn == 68:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('oida'):
+                wordmap['new_para'] = 'V_MELLAKOIDA'
+            elif wordmap['lemma'].endswith('öidä'):
+                wordmap['new_para'] = 'V_ISÄNNÖIDÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 68, False],
+                        ['a'])
+        else:
+            fail_guess_because(wordmap, ['V', 68],
+                    [False])
+    elif tn == 69:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ita'):
+                wordmap['new_para'] = 'V_PALKITA'
+            elif wordmap['lemma'].endswith('itä'):
+                wordmap['new_para'] = 'V_MERKITÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 69, False],
+                        ['a'])
+        else:
+            fail_guess_because(wordmap, ['V', 69],
+                    [False])
+    elif tn == 70:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('sta'):
+                wordmap['new_para'] = 'V_JUOSTA'
+            elif wordmap['lemma'].endswith('stä'):
+                wordmap['new_para'] = 'V_PIESTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 70, False],
+                        ['back', 'front'])
+        else:
+            fail_guess_because(wordmap, ['V', 70],
+                    [False])
+    elif tn == 71:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('hdä'):
+                wordmap['new_para'] = 'V_NÄHDÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 71, False],
+                        ['back', 'front'])
+        else:
+            fail_guess_because(wordmap, ['V', 71],
+                    [False])
+    elif tn == 72:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ta'):
+                wordmap['new_para'] = 'V_KARHETA'
+            elif wordmap['lemma'].endswith('tä'):
+                wordmap['new_para'] = 'V_VÄHETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, False],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'A':
+            if wordmap['lemma'].endswith('keta'):
+                wordmap['new_para'] = 'V_NIUKETA'
+            elif wordmap['lemma'].endswith('kota'):
+                wordmap['new_para'] = 'V_ULOTA'
+            elif wordmap['lemma'].endswith('ketä'):
+                wordmap['new_para'] = 'V_JYRKETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'A'],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('peta'):
+                wordmap['new_para'] = 'V_SUPETA'
+            elif wordmap['lemma'].endswith('petä'):
+                wordmap['new_para'] = 'V_TYLPETÄ'
+            elif wordmap['lemma'].endswith('pota'):
+                wordmap['new_para'] = 'V_HELPOTA'
+            elif wordmap['lemma'].endswith('pata'):
+                wordmap['new_para'] = 'V_HAPATA'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'B'],
+                    ['peta', 'petä', 'pata', 'pota'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('tota'):
+                wordmap['new_para'] = 'V_LOITOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'C'],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'D':
+            if wordmap['lemma'].endswith('ota'):
+                wordmap['new_para'] = 'V_ULOTA'
+            elif wordmap['lemma'].endswith('ata'):
+                wordmap['new_para'] = 'V_ERATA'
+            elif wordmap['lemma'].endswith('eta'):
+                wordmap['new_para'] = 'V_NIUKETA'
+            elif wordmap['lemma'].endswith('etä'):
+                wordmap['new_para'] = 'V_JYRKETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'D'],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('veta'):
+                wordmap['new_para'] = 'V_KAVETA'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'E'],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('dota'):
+                wordmap['new_para'] = 'V_LEUDOTA'
+            elif wordmap['lemma'].endswith('detä'):
+                wordmap['new_para'] = 'V_PIDETÄ'
+            elif wordmap['lemma'].endswith('dätä'):
+                wordmap['new_para'] = 'V_MÄDÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'F'],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mmetä'):
+                wordmap['new_para'] = 'V_LÄMMETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'H'],
+                    ['back', 'front'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('nnetä'):
+                wordmap['new_para'] = 'V_KIINNETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'I'],
+                    ['nnetä'])
+        elif wordmap['kotus_av'] == 'L':
+            if wordmap['lemma'].endswith('jeta'):
+                wordmap['new_para'] = 'V_JULJETA'
+            elif wordmap['lemma'].endswith('jetä'):
+                wordmap['new_para'] = 'V_ILJETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 72, 'L'],
+                    ['back', 'front'])
+        else:
+            fail_guess_because(wordmap, ['V', 72],
+                [False, 'A-L'])
+    elif wordmap['kotus_tn'] == 73:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ata'):
+                wordmap['new_para'] = 'V_ARVATA'
+            elif wordmap['lemma'].endswith('ätä'):
+                wordmap['new_para'] = 'V_YNNÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, False],
+                        ['ata', 'ätä'])
+        elif wordmap['kotus_av'] in ['A', 'D']:
+            if wordmap['lemma'].endswith('ata'):
+                wordmap['new_para'] = 'V_MORKATA'
+            elif wordmap['lemma'].endswith('ätä'):
+                wordmap['new_para'] = 'V_YÖKÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'A'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('pata'):
+                wordmap['new_para'] = 'V_SIEPATA'
+            elif wordmap['lemma'].endswith('pätä'):
+                wordmap['new_para'] = 'V_VÄLPÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'B'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('tata'):
+                wordmap['new_para'] = 'V_LUNTATA'
+            elif wordmap['lemma'].endswith('tätä'):
+                wordmap['new_para'] = 'V_LÄNTÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'C'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('vata'):
+                wordmap['new_para'] = 'V_KAIVATA'
+            elif wordmap['lemma'].endswith('vätä'):
+                wordmap['new_para'] = 'V_LEVÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'E'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('data'):
+                wordmap['new_para'] = 'V_JAHDATA'
+            elif wordmap['lemma'].endswith('dätä'):
+                wordmap['new_para'] = 'V_TÄHDÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'F'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('gata'):
+                wordmap['new_para'] = 'V_VONGATA'
+            elif wordmap['lemma'].endswith('gätä'):
+                wordmap['new_para'] = 'V_VÄNGÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'G'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mmata'):
+                wordmap['new_para'] = 'V_MORKATA'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'H'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'I':
+            if wordmap['lemma'].endswith('llata'):
+                wordmap['new_para'] = 'V_MULLATA'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'I'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('nnata'):
+                wordmap['new_para'] = 'V_SUUNNATA'
+            elif wordmap['lemma'].endswith('nnätä'):
+                wordmap['new_para'] = 'V_RYNNÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'J'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rata'):
+                wordmap['new_para'] = 'V_VERRATA'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'K'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'L':
+            if wordmap['lemma'].endswith('jätä'):
+                wordmap['new_para'] = 'V_HYLJÄTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'K'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'O':
+            if wordmap['lemma'].endswith('gata'):
+                wordmap['new_para'] = 'V_DIGATA'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'N'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'P':
+            if wordmap['lemma'].endswith('bata'):
+                wordmap['new_para'] = 'V_LOBATA'
+            else:
+                fail_guess_because(wordmap, ['V', 73, 'P'],
+                        ['hapan'])
+        else:
+            fail_guess_because(wordmap, ['V', 73], [False, 'A-P'])
+    elif wordmap['kotus_tn'] == 74:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ta'):
+                wordmap['new_para'] = 'V_KARHUTA'
+            elif wordmap['lemma'].endswith('tä'):
+                wordmap['new_para'] = 'V_TÄHYTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 74, False],
+                        ['ton'])
+        elif wordmap['kotus_av'] in ['A', 'D']:
+            if wordmap['lemma'].endswith('ota'):
+                wordmap['new_para'] = 'V_KAIKOTA'
+            elif wordmap['lemma'].endswith('eta'):
+                wordmap['new_para'] = 'V_POIKETA'
+            elif wordmap['lemma'].endswith('etä'):
+                wordmap['new_para'] = 'V_KERETÄ'
+            elif wordmap['lemma'].endswith('uta'):
+                wordmap['new_para'] = 'V_KOUKUTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'A'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('puta'):
+                wordmap['new_para'] = 'V_PULPUTA'
+            elif wordmap['lemma'].endswith('pota'):
+                wordmap['new_para'] = 'V_UPOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'B'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('tota'):
+                wordmap['new_para'] = 'V_LOTOTA'
+            elif wordmap['lemma'].endswith('tuta'):
+                wordmap['new_para'] = 'V_LUUTUTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'C'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'E':
+            if wordmap['lemma'].endswith('vuta'):
+                wordmap['new_para'] = 'V_KIVUTA'
+            elif wordmap['lemma'].endswith('veta'):
+                wordmap['new_para'] = 'V_KORVETA'
+            elif wordmap['lemma'].endswith('vetä'):
+                wordmap['new_para'] = 'V_REVETÄ'
+            elif wordmap['lemma'].endswith('vota'):
+                wordmap['new_para'] = 'V_KIRVOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'E'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('duta'):
+                wordmap['new_para'] = 'V_LIIDUTA'
+            elif wordmap['lemma'].endswith('deta'):
+                wordmap['new_para'] = 'V_TODETA'
+            elif wordmap['lemma'].endswith('dota'):
+                wordmap['new_para'] = 'V_VAAHDOTA'
+            elif wordmap['lemma'].endswith('detä'):
+                wordmap['new_para'] = 'V_VYYHDETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'F'],
+                        ['deta', 'detä', 'dota', 'duta'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('geta'):
+                wordmap['new_para'] = 'V_TUNGETA'
+            elif wordmap['lemma'].endswith('gota'):
+                wordmap['new_para'] = 'V_PINGOTA'
+            elif wordmap['lemma'].endswith('getä'):
+                wordmap['new_para'] = 'V_ÄNGETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'G'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mmuta'):
+                wordmap['new_para'] = 'V_KUMMUTA'
+            elif wordmap['lemma'].endswith('mmeta'):
+                wordmap['new_para'] = 'V_KAMMETA'
+            elif wordmap['lemma'].endswith('mmota'):
+                wordmap['new_para'] = 'V_SAMMOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'H'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'J':
+            if wordmap['lemma'].endswith('nnota'):
+                wordmap['new_para'] = 'V_INNOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'J'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'K':
+            if wordmap['lemma'].endswith('rrota'):
+                wordmap['new_para'] = 'V_IRROTA'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'K'],
+                        ['hapan'])
+        elif wordmap['kotus_av'] == 'L':
+            if wordmap['lemma'].endswith('jeta'):
+                wordmap['new_para'] = 'V_HALJETA'
+            elif wordmap['lemma'].endswith('jetä'):
+                wordmap['new_para'] = 'V_ILJETÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 74, 'K'],
+                        ['hapan'])
+        else:
+            fail_guess_because(wordmap, ['V', 74], [False, 'A-K'])
+    elif wordmap['kotus_tn'] == 75:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ta'):
+                wordmap['new_para'] = 'V_LASSOTA'
+            elif wordmap['lemma'].endswith('tä'):
+                wordmap['new_para'] = 'V_SELVITÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 75, False],
+                        ['ta', 'tä'])
+        elif wordmap['kotus_av'] == 'B':
+            if wordmap['lemma'].endswith('pytä'):
+                wordmap['new_para'] = 'V_RYÖPYTÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 75, 'B'],
+                        ['ton'])
+        elif wordmap['kotus_av'] == 'C':
+            if wordmap['lemma'].endswith('tota'):
+                wordmap['new_para'] = 'V_PEITOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 75, 'C'],
+                        ['ton'])
+        elif wordmap['kotus_av'] == 'D':
+            if wordmap['lemma'].endswith('itä'):
+                wordmap['new_para'] = 'V_KERITÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 75, 'D'],
+                        ['ton'])
+        elif wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('dota'):
+                wordmap['new_para'] = 'V_MUODOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 75, 'E'],
+                        ['ton'])
+        elif wordmap['kotus_av'] == 'H':
+            if wordmap['lemma'].endswith('mmitä'):
+                wordmap['new_para'] = 'V_LÄMMITÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 75, 'H'],
+                        ['ton'])
+        elif wordmap['kotus_av'] == 'I':
+            if wordmap['lemma'].endswith('llitä'):
+                wordmap['new_para'] = 'V_HELLITÄ'
+            elif wordmap['lemma'].endswith('llota'):
+                wordmap['new_para'] = 'V_AALLOTA'
+            else:
+                fail_guess_because(wordmap, ['V', 75, 'I'],
+                        ['ton'])
+        else:
+            fail_guess_because(wordmap, ['V', 75],
+                [False, 'B', 'D', 'F', 'H', 'I' ])
+    elif wordmap['kotus_tn'] == 76:
+        if wordmap['kotus_av'] == 'F':
+            if wordmap['lemma'].endswith('taa'):
+                wordmap['new_para'] = 'V_TAITAA'
+            elif wordmap['lemma'].endswith('tää'):
+                wordmap['new_para'] = 'V_TIETÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 76, 'F'],
+                    ['front', 'back'])
+        else:
+            fail_guess_because(wordmap, ['V', 76],
+                ['F'])
+    elif wordmap['kotus_tn'] == 77:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('aa'):
+                wordmap['new_para'] = 'V_VIPAJAA'
+            elif wordmap['lemma'].endswith('ää'):
+                wordmap['new_para'] = 'V_HELÄJÄÄ'
+            else:
+                fail_guess_because(wordmap, ['V', 77, False],
+                    ['vasen'])
+        else:
+            fail_guess_because(wordmap, ['V', 77],
+                [False], "cannot have gradation")
+    elif wordmap['kotus_tn'] == 78:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('aa'):
+                wordmap['new_para'] = 'V_RAIKAA'
+            elif wordmap['lemma'].endswith('ää'):
+                wordmap['new_para'] = 'V_ÄHKÄÄ'
+            elif wordmap['lemma'].endswith('ata'):
+                wordmap['new_para'] = 'V_HALAJAA'
+            else:
+                fail_guess_because(wordmap, ['V', 78, False],
+                    ['aa', 'ää', 'ata'])
+        elif wordmap['kotus_av'] == 'A':
+            if wordmap['lemma'].endswith('kkaa'):
+                wordmap['new_para'] = 'V_TUIKKAA'
+            else:
+                fail_guess_because(wordmap, ['V', 78, 'A'],
+                    ['kkaa'])
+        else:
+            fail_guess_because(wordmap, ['V', 78],
+                [False, 'A'])
+    elif tn == 99:
+        wordmap['new_para'] = '#'
+    elif tn == 1067:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('olla'):
+                wordmap['new_para'] = 'V_OLLA'
+            else:
+                fail_guess_because(wordmap, ['V', 10, 'D', 'OLLA'],
+                        ['olla'], 'must be olla')
+    else:
+        fail_guess_because(wordmap, ['V'],
+            ['1-49', '99', '1010'])
     return wordmap
 
 def guess_new_acro(wordmap):
@@ -2532,14 +3568,14 @@ def guess_new_adverb(wordmap):
             else:
                 wordmap['new_para'] = 'ADV_BACK_POSS_OPT'
         else:
-            fail_guess_with(wordmap, ["ADV", "POSS"], ["front", "back"])
+            fail_guess_because(wordmap, ["ADV", "POSS"], ["front", "back"])
     elif wordmap['clitics']:
         if wordmap['harmony'] == 'front':
             wordmap['new_para'] = 'ADV_FRONT_CLIT_OPT'
         elif wordmap['harmony'] == 'back':
             wordmap['new_para'] = 'ADV_BACK_CLIT_OPT'
         else:
-            fail_guess_with(wordmap, ["ADV", "POSS"], ["front", "back"])
+            fail_guess_because(wordmap, ["ADV", "POSS"], ["front", "back"])
     else:
         wordmap['new_para'] = '#'
     return wordmap
@@ -2561,14 +3597,14 @@ def guess_new_adposition(wordmap):
             else:
                 wordmap['new_para'] = 'ADP_BACK_POSS_OPT'
         else:
-            fail_guess_with(wordmap, ["ADP", "POSS"], ["front", "back"])
+            fail_guess_because(wordmap, ["ADP", "POSS"], ["front", "back"])
     elif wordmap['clitics']:
         if wordmap['harmony'] == 'front':
             wordmap['new_para'] = 'ADP_FRONT_CLIT_OPT'
         elif wordmap['harmony'] == 'back':
             wordmap['new_para'] = 'ADP_BACK_CLIT_OPT'
         else:
-            fail_guess_with(wordmap, ["ADP", "POSS"], ["front", "back"])
+            fail_guess_because(wordmap, ["ADP", "POSS"], ["front", "back"])
     else:
         wordmap['new_para'] = '#'
     return wordmap
