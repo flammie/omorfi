@@ -196,5 +196,10 @@ def parse_from_tsv(wordmap, fields):
     wordmap['is_prefix'] = fields[17]
     wordmap['stem_vowel'] = fields[18]
     wordmap['stem_diphthong'] = fields[19]
+    for k,v in wordmap.items():
+        if v == 'False':
+            wordmap[k] = False
+        if v == 'None':
+            wordmap[k] = None
     return wordmap
 

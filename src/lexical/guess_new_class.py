@@ -2026,6 +2026,12 @@ def guess_new_adjective(wordmap):
             else:
                 fail_guess_because(wordmap, ['A', 9, 'F'],
                         ['ta'])
+        elif wordmap['kotus_av'] == 'G':
+            if wordmap['lemma'].endswith('nka'):
+                wordmap['new_para'] = 'A_SANKA'
+            else:
+                fail_guess_because(wordmap, ['A', 9, 'F'],
+                        ['ta'])
         elif wordmap['kotus_av'] == 'H':
             if wordmap['lemma'].endswith('mpa'):
                 wordmap['new_para'] = 'A_RAMPA'
@@ -2107,6 +2113,8 @@ def guess_new_adjective(wordmap):
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('a'):
                 wordmap['new_para'] = 'A_HAPERA'
+            elif wordmap['lemma'].endswith('ä'):
+                wordmap['new_para'] = 'A_SÄKKÄRÄ'
             else:
                 fail_guess_because(wordmap, ['A', 11, False],
                         ['a', 'ä'])
@@ -2263,11 +2271,11 @@ def guess_new_adjective(wordmap):
                     ['back', 'front'])
     elif wordmap['kotus_tn'] == 33:
         if not wordmap['kotus_av']:
-            if wordmap['lemma'].endswith('in') and wordmap['harmony'] == 'front':
+            if wordmap['lemma'].endswith('in') and wordmap['harmony'] == 'back':
                 wordmap['new_para'] = 'A_AVOIN'
             else:
                 fail_guess_because(wordmap, ['A', 33, 'B'],
-                        ['hapan'])
+                        ['in', 'back'])
         elif wordmap['kotus_av'] == 'B':
             if wordmap['lemma'].endswith('hapan'):
                 wordmap['new_para'] = 'A_HAPAN'
@@ -2411,8 +2419,18 @@ def guess_new_adjective(wordmap):
                 fail_guess_because(wordmap, ['A', 43, False],
                     ['ut', 'yt'])
         else:
+            fail_guess_because(wordmap, ['A', 43],
+                [False])
+    elif wordmap['kotus_tn'] == 44:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ut'):
+                wordmap['new_para'] = 'A_AINUT'
+            else:
+                fail_guess_because(wordmap, ['A', 44, False],
+                    ['ut'])
+        else:
             fail_guess_because(wordmap, ['A', 44],
-                [False, 'C', 'D', 'F', 'G', 'I', 'J', 'K'])
+                [False])
     elif wordmap['kotus_tn'] == 47:
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('ut'):
