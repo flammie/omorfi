@@ -1,14 +1,3 @@
-!! !!Verb stem variation
-!! Verbs have no allomorphic variation per se, except for some assimilation
-!! and variation of ð forms, but the stem variation is the same
-!! as in nouns. The examples for verb stems are given for each class:
-!! A infinitive's lative, e infinitive's inessive, indicative present 1st 
-!! singular, indicative present 3rd singular, indicative past 1st singular, 
-!! indicative past 3rd singular, conditional past 3rd singular, 
-!! imperative 2nd plural, potential 1st singular, present passive, 
-!! past passive, nut participle passive
-
-
 
 LEXICON V_KAUNISTUA
 
@@ -337,7 +326,7 @@ LEXICON V_MAUKUA
 0:’ut  V_BACK_TUPCP_0    ;
 0:ku    V_BACK_DERIV_PCPS ;
 
-LEXICON V_ELPYÄ
+LEXICON V_SYÖPYÄ
 
 0:py    V_FRONT_AINF    ;
 0:py    V_FRONT_EINF    ;
@@ -575,7 +564,7 @@ LEXICON V_TYHJENTYÄ
 0:nyt   V_FRONT_TUPCP_0    ;
 0:ty    V_FRONT_DERIV_PCPS ;
 
-LEXICON V_PYÖRTYÄ
+LEXICON V_KIERTYÄ
 
 0:ty    V_FRONT_AINF    ;
 0:ty    V_FRONT_EINF    ;
@@ -2559,6 +2548,21 @@ LEXICON V_ULOTA
 0:ot   V_BACK_TUPCP_0  ;
 0:kone  V_BACK_DERIV_PCPS ;
 
+LEXICON V_ERATA
+0:at    V_BACK_AINF    ;
+0:at    V_BACK_EINF  ;
+0:kane     V_BACK_WEAK_PRESENT  ;
+0:kane   V_BACK_STRONG_PRESENT    ;
+0:kane   V_BACK_3SG_E          ;
+0:kan   V_BACK_WEAK_PAST    ;
+0:kan   V_BACK_STRONG_PAST    ;
+0:at   V_BACK_IMPERATIVE   ;
+0:an   V_BACK_POTENTIAL_N  ;
+0:a   V_BACK_PASSIVE_T    ;
+0:at   V_BACK_PASSIVE    ;
+0:at   V_BACK_TUPCP_0  ;
+0:kane  V_BACK_DERIV_PCPS ;
+
 LEXICON V_KAVETA
 
 0:vet    V_BACK_AINF    ;
@@ -2962,7 +2966,7 @@ LEXICON V_RYNNÄTÄ
 0:nät   V_FRONT_TUPCP_0  ;
 0:tää   V_FRONT_DERIV_PCPS ;
 
-LEXICON V_VIRRATA
+LEXICON V_VERRATA
 
 0:rat    V_BACK_AINF    ;
 0:rat    V_BACK_EINF  ;
@@ -3250,7 +3254,7 @@ LEXICON V_KIRVOTA
 0:vot   V_BACK_TUPCP_0  ;
 0:poa   V_BACK_DERIV_PCPS ;
 
-LEXICON V_KADOTA
+LEXICON V_VAAHDOTA
 
 0:dot    V_BACK_AINF    ;
 0:dot    V_BACK_EINF  ;
@@ -3673,7 +3677,7 @@ LEXICON V_TIETÄÄ
 
 
 
-LEXICON V_VIPAJAA
+LEXICON V_HALAJAA
 
 
 0:a   V_BACK_AINF    ;
