@@ -54976,7 +54976,7 @@
 "tomaattipuriste","48","0","N","boundaries=tomaatti|puriste"
 "tomaattipyree","20","0","N","boundaries=tomaatti|pyree"
 "tomaattisalaatti","5","C","N","boundaries=tomaatti|salaatti"
-"tomaattisilakat","14","0","N","boundaries=tomaatti|silakat"
+"tomaattisilakat","14","A","N","boundaries=tomaatti|silakat"
 "tomaatti-sipulisalaatti","5","C","N","boundaries=tomaatti|sipuli|salaatti"
 "tomaattisose","48","0","N","boundaries=tomaatti|sose"
 "tomaattivoileipä","10","E","N","boundaries=tomaatti|voi|leipä"
