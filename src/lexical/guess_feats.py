@@ -84,7 +84,7 @@ def guess_harmony(wordmap):
                     wordmap, file=stderr)
     else:
         lastbound = -1
-        for bound in ['#', ' ']:
+        for bound in ['#', ' ', '-']:
             b = wordmap['stub'].rfind(bound)
             if b > lastbound:
                 lastbound = b

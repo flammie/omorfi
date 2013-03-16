@@ -50,6 +50,9 @@ def gradation_make_morphophonemes(wordmap):
     elif tn == 28:
         # gah gradation in stemparts
         return wordmap
+    elif tn == 1007:
+        # not gradation
+        return wordmap
     else:
         # weak root stem
         if av == 'A':

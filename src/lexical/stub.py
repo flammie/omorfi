@@ -9,7 +9,7 @@ def stub_all(wordmap):
     this cuts every morphologically varying character.
     '''
     tn = int(wordmap['kotus_tn'])
-    if not wordmap['kotus_av'] or tn == 28:
+    if not wordmap['kotus_av'] or tn in [28, 1007]:
         if tn in range(1, 5) or tn in [8, 21, 22, 32, 48]:
             wordmap['stub'] = wordmap['stub']
         elif tn in [5, 6]:
