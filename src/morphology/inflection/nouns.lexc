@@ -1,615 +1,368 @@
 
 
-
-
-
-
-
-
-
-
 LEXICON N_BACK_NOMINATIVE
-
-
-
-
-+Sg+Nom:0   N_BACK_CLIT_OPT  ;
+[NUM=SG][CASE=NOM]:0   N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_NOMINATIVE
-
-+Sg+Nom:0   N_FRONT_CLIT_OPT  ;
-
-
-
+[NUM=SG][CASE=NOM]:0   N_FRONT_CLIT_OPT  ;
 
 LEXICON N_BACK_PLNOM_CLIT
-
-
-
-+Pl+Nom:%>t     N_BACK_CLIT_OPT  ;
+[NUM=PL][CASE=NOM]:%>t     N_BACK_CLIT_OPT  ;
 
 LEXICON N_FRONT_PLNOM_CLIT
-
-
-+Pl+Nom:%>t     N_FRONT_CLIT_OPT  ;
-
-
-
-
-
-
+[NUM=PL][CASE=NOM]:%>t     N_FRONT_CLIT_OPT  ;
 
 LEXICON N_BACK_WEAK_SINGULARS
-
-
-
-
-
-
-
-
-
-
 0    N_BACK_PLNOM_CLIT   ;
-+Sg+Gen:%>n     N_BACK_CLIT_OPT   ;
-+Sg+Abe:%>tta   N_BACK_POSS_AN_OPT      ;
-+Sg+Abl:%>lta   N_BACK_POSS_AN_OPT      ;
-+Sg+Ade:%>lla   N_BACK_POSS_AN_OPT      ;
-+Sg+All:%>lle   N_BACK_POSS_EN_OPT      ;
-+Sg+Ela:%>sta   N_BACK_POSS_AN_OPT      ;
-+Sg+Ine:%>ssa   N_BACK_POSS_AN_OPT      ;
-+Sg+Tra:%>kse   N_BACK_POSS_EN_OBL       ;
-+Sg+Tra:%>ksi   N_BACK_CLIT_OPT     ;
-+Sg+Tra:%>ksi   N_BACK_CLIT_OPT     ;
+[NUM=SG][CASE=GEN]:%>n     N_BACK_CLIT_OPT   ;
+[NUM=SG][CASE=ABE]:%>tta   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=ABL]:%>lta   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=ADE]:%>lla   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=ALL]:%>lle   N_BACK_POSS_EN_OPT      ;
+[NUM=SG][CASE=ELA]:%>sta   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=INE]:%>ssa   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=TRA]:%>kse   N_BACK_POSS_EN_OBL       ;
+[NUM=SG][CASE=TRA]:%>ksi   N_BACK_CLIT_OPT     ;
+[NUM=SG][CASE=TRA]:%>ksi   N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_WEAK_SINGULARS
-
-
-
-
-
-
-
-
-
 0    N_FRONT_PLNOM_CLIT   ;
-+Sg+Gen:%>n     N_FRONT_CLIT_OPT   ;
-+Sg+Abe:%>ttä   N_FRONT_POSS_ÄN_OPT      ;
-+Sg+Abl:%>ltä   N_FRONT_POSS_ÄN_OPT      ;
-+Sg+Ade:%>llä   N_FRONT_POSS_ÄN_OPT      ;
-+Sg+All:%>lle   N_FRONT_POSS_EN_OPT      ;
-+Sg+Ela:%>stä   N_FRONT_POSS_ÄN_OPT      ;
-+Sg+Ine:%>ssä   N_FRONT_POSS_ÄN_OPT      ;
-+Sg+Tra:%>kse   N_FRONT_POSS_EN_OBL       ;
-+Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
-+Sg+Tra:%>ksi   N_FRONT_CLIT_OPT     ;
-
-
-
+[NUM=SG][CASE=GEN]:%>n     N_FRONT_CLIT_OPT   ;
+[NUM=SG][CASE=ABE]:%>ttä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=ABL]:%>ltä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=ADE]:%>llä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=ALL]:%>lle   N_FRONT_POSS_EN_OPT      ;
+[NUM=SG][CASE=ELA]:%>stä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=INE]:%>ssä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=TRA]:%>kse   N_FRONT_POSS_EN_OBL       ;
+[NUM=SG][CASE=TRA]:%>ksi   N_FRONT_CLIT_OPT     ;
+[NUM=SG][CASE=TRA]:%>ksi   N_FRONT_CLIT_OPT     ;
 
 LEXICON N_BACK_STRONG_SINGULARS
-
-
-
-+Sg+Ess:%>na N_BACK_POSS_AN_OPT      ;
-+Sg+Nom:0  N_BACK_POSS   ;
-+Sg+Gen:0  N_BACK_POSS   ;
-+Pl+Nom:0  N_BACK_POSS   ;
+[NUM=SG][CASE=ESS]:%>na N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=NOM]:0  N_BACK_POSS   ;
+[NUM=SG][CASE=GEN]:0  N_BACK_POSS   ;
+[NUM=PL][CASE=NOM]:0  N_BACK_POSS   ;
 
 LEXICON N_FRONT_STRONG_SINGULARS
-
-
-
-+Sg+Ess:%>nä N_FRONT_POSS_ÄN_OPT      ;
-+Sg+Nom:0  N_FRONT_POSS   ;
-+Sg+Gen:0  N_FRONT_POSS   ;
-+Pl+Nom:0  N_FRONT_POSS   ;
-
-
+[NUM=SG][CASE=ESS]:%>nä N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=NOM]:0  N_FRONT_POSS   ;
+[NUM=SG][CASE=GEN]:0  N_FRONT_POSS   ;
+[NUM=PL][CASE=NOM]:0  N_FRONT_POSS   ;
 
 LEXICON N_BACK_WEAK_PLURALS
-
-
-
-
-
-
-
-
-
-+Pl+Abe:%>i%>tta   N_BACK_POSS_AN_OPT      ;
-+Pl+Abl:%>i%>lta   N_BACK_POSS_AN_OPT      ;
-+Pl+Ade:%>i%>lla   N_BACK_POSS_AN_OPT      ;
-+Pl+All:%>i%>lle  N_BACK_POSS_AN_OPT      ;
-+Pl+Ela:%>i%>sta   N_BACK_POSS_AN_OPT      ;
-+Pl+Ine:%>i%>ssa   N_BACK_POSS_AN_OPT      ;
-+Pl+Ins:%>i%>n    N_BACK_CLIT_OPT     ;
-+Pl+Tra:%>i%>kse  N_BACK_POSS_EN_OBL        ;
-+Pl+Tra:%>i%>ksi  N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=ABE]:%>i%>tta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ABL]:%>i%>lta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ADE]:%>i%>lla   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ALL]:%>i%>lle  N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ELA]:%>i%>sta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=INE]:%>i%>ssa   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=INS]:%>i%>n    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=TRA]:%>i%>kse  N_BACK_POSS_EN_OBL        ;
+[NUM=PL][CASE=TRA]:%>i%>ksi  N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_WEAK_PLURALS
-
-
-
-
-
-
-
-
-+Pl+Abe:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
-+Pl+Abl:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
-+Pl+Ade:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
-+Pl+All:%>i%>lle  N_FRONT_POSS_ÄN_OPT      ;
-+Pl+Ela:%>i%>stä   N_FRONT_POSS_ÄN_OPT      ;
-+Pl+Ine:%>i%>ssä   N_FRONT_POSS_ÄN_OPT      ;
-+Pl+Ins:%>i%>n    N_FRONT_CLIT_OPT     ;
-+Pl+Tra:%>i%>kse  N_FRONT_POSS_EN_OBL        ;
-+Pl+Tra:%>i%>ksi  N_FRONT_CLIT_OPT     ;
-
-
-
+[NUM=PL][CASE=ABE]:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ABL]:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ADE]:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ALL]:%>i%>lle  N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ELA]:%>i%>stä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=INE]:%>i%>ssä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=INS]:%>i%>n    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=TRA]:%>i%>kse  N_FRONT_POSS_EN_OBL        ;
+[NUM=PL][CASE=TRA]:%>i%>ksi  N_FRONT_CLIT_OPT     ;
 
 LEXICON N_BACK_STRONG_PLURALS
-
-
-+Pl+Ess:%>i%>na   N_BACK_POSS_AN_OPT      ;
-+Com:%>i%>ne        N_BACK_POSS_EN_OPT      ;
+[NUM=PL][CASE=ESS]:%>i%>na   N_BACK_POSS_AN_OPT      ;
+[CASE=CMT]:%>i%>ne        N_BACK_POSS_EN_OPT      ;
 
 LEXICON N_FRONT_STRONG_PLURALS
-
-
-+Pl+Ess:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
-+Com:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
-
-
-
-
-
-
-
-
-
-
-
+[NUM=PL][CASE=ESS]:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
+[CASE=CMT]:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
 
 LEXICON N_BACK_PARTITIVE_A
-
-
-
-+Sg+Par:%>a      N_BACK_POSS_OPT      ;
+[NUM=SG][CASE=PAR]:%>a      N_BACK_POSS_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_Ä
-
-
-+Sg+Par:%>ä      N_FRONT_POSS_OPT      ;
-
-
+[NUM=SG][CASE=PAR]:%>ä      N_FRONT_POSS_OPT      ;
 
 LEXICON N_BACK_PARTITIVE_A_AN
-
-
-
-+Sg+Par:%>a      N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=PAR]:%>a      N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_Ä_ÄN
-
-
-0+Sg+Par:%>ä     N_FRONT_POSS_ÄN_OPT     ;
-
-
-
-
-
-
+0[NUM=SG][CASE=PAR]:%>ä     N_FRONT_POSS_ÄN_OPT     ;
 
 LEXICON N_BACK_PARTITIVE_TA
-
-
-+Sg+Par:%>ta     N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=PAR]:%>ta     N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_TÄ
-
-
-
-
-+Sg+Par:%>tä     N_FRONT_POSS_ÄN_OPT      ;
-
-
-
+[NUM=SG][CASE=PAR]:%>tä     N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_ILLATIVE_HAN
-
-
-
-
-+Sg+Ill:%>han    N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>ha     N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>han    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ha     N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HEN
-
-
-+Sg+Ill:%>hen    N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>he     N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>hen    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>he     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HEN
-
-+Sg+Ill:%>hen    N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>he     N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>hen    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>he     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HIN
-
-
-+Sg+Ill:%>hin    N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>hi     N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>hin    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hi     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HIN
-
-
-+Sg+Ill:%>hin    N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>hi     N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>hin    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hi     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HON
-
-
-+Sg+Ill:%>hon    N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>ho     N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>hon    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ho     N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_HUN
-
-
-+Sg+Ill:%>hun    N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>hu     N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>hun    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hu     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HYN
-
-
-+Sg+Ill:%>hyn    N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>hy     N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>hyn    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hy     N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HÄN
-
-
-+Sg+Ill:%>hän    N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>hä     N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>hän    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hä     N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_HÖN
-
-
-+Sg+Ill:%>hön    N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>hö     N_FRONT_POSS     ;
-
-
+[NUM=SG][CASE=ILL]:%>hön    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hö     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_AN
-
-
-+Sg+Ill:%>an     N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>a      N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>an     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>a      N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_EN
-
-
-+Sg+Ill:%>en     N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>e      N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>en     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>e      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_EN
-
-
-+Sg+Ill:%>en     N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>e      N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>en     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>e      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_IN
-
-
-+Sg+Ill:%>in     N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>i      N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>in     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>i      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IN
-
-
-+Sg+Ill:%>in     N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>i      N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>in     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>i      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_ON
-
-+Sg+Ill:%>on     N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>o      N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>on     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>o      N_BACK_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_UN
-
-
-+Sg+Ill:%>un     N_BACK_CLIT_OPT         ;
-+Sg+Ill:%>u      N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>un     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>u      N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_YN
-
-+Sg+Ill:%>yn     N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>y      N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>yn     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>y      N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ÄN
-
-
-+Sg+Ill:%>än     N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>ä      N_FRONT_POSS     ;
+[NUM=SG][CASE=ILL]:%>än     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ä      N_FRONT_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ÖN
-
-
-+Sg+Ill:%>ön     N_FRONT_CLIT_OPT         ;
-+Sg+Ill:%>ö      N_FRONT_POSS     ;
-
+[NUM=SG][CASE=ILL]:%>ön     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ö      N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_SEEN
-
-
-+Sg+Ill:%>seen      N_BACK_CLIT_OPT     ;
-+Sg+Ill:%>see       N_BACK_POSS     ;
+[NUM=SG][CASE=ILL]:%>seen      N_BACK_CLIT_OPT     ;
+[NUM=SG][CASE=ILL]:%>see       N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_SEEN
-
-
-+Sg+Ill:%>seen      N_FRONT_CLIT_OPT     ;
-+Sg+Ill:%>see       N_FRONT_POSS     ;
-
-
+[NUM=SG][CASE=ILL]:%>seen      N_FRONT_CLIT_OPT     ;
+[NUM=SG][CASE=ILL]:%>see       N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_IDEN
-
-
-
-+Pl+Gen:%>i%>den    N_BACK_CLIT_OPT     ;
-+Pl+Gen:%>i%>de     N_BACK_POSS     ;
+[NUM=PL][CASE=GEN]:%>i%>den    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>de     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_IDEN
-
-
-+Pl+Gen:%>i%>den    N_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>i%>de     N_FRONT_POSS     ;
+[NUM=PL][CASE=GEN]:%>i%>den    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>de     N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_ITTEN
-
-+Pl+Gen:%>i%>tten     N_BACK_CLIT_OPT     ;
-+Pl+Gen:%>i%>tte      N_BACK_POSS     ;
+[NUM=PL][CASE=GEN]:%>i%>tten     N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>tte      N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_ITTEN
-
-+Pl+Gen:%>i%>tten     N_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>i%>tte      N_FRONT_POSS     ;
+[NUM=PL][CASE=GEN]:%>i%>tten     N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>tte      N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_IEN
-
-
-+Pl+Gen:%>i%>en   N_BACK_CLIT_OPT     ;
-+Pl+Gen:%>i%>e    N_BACK_POSS     ;
+[NUM=PL][CASE=GEN]:%>i%>en   N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>e    N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_IEN
-
-
-+Pl+Gen:%>i%>en   N_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>i%>e    N_FRONT_POSS     ;
+[NUM=PL][CASE=GEN]:%>i%>en   N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>e    N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_JEN
-
-+Pl+Gen:%>j%>en    N_BACK_CLIT_OPT     ;
-+Pl+Gen:%>j%>e     N_BACK_POSS     ;
+[NUM=PL][CASE=GEN]:%>j%>en    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>j%>e     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_JEN
-
-
-+Pl+Gen:%>j%>en    N_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>j%>e     N_FRONT_POSS     ;
+[NUM=PL][CASE=GEN]:%>j%>en    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>j%>e     N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_TEN
-
-
-+Pl+Gen:%>ten    N_BACK_CLIT_OPT     ;
-+Pl+Gen:%>te     N_BACK_POSS     ;
+[NUM=PL][CASE=GEN]:%>ten    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>te     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_TEN
-
-
-+Pl+Gen:%>ten    N_FRONT_CLIT_OPT     ;
-+Pl+Gen:%>te     N_FRONT_POSS     ;
-
-
-
+[NUM=PL][CASE=GEN]:%>ten    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>te     N_FRONT_POSS     ;
 
 LEXICON N_BACK_GENITIVE_IN
-
-
-+Pl+Gen+Use/Rare:%>i%>n    N_BACK_CLIT_OPT     ;
-+Pl+Gen+Use/Rare:%>i     N_BACK_POSS     ;
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i%>n    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i     N_BACK_POSS     ;
 
 LEXICON N_FRONT_GENITIVE_IN
-
-
-+Pl+Gen+Use/Rare:%>i%>n    N_FRONT_CLIT_OPT     ;
-+Pl+Gen+Use/Rare:%>i     N_FRONT_POSS     ;
-
-
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i%>n    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i     N_FRONT_POSS     ;
 
 LEXICON N_BACK_PARTITIVE_IA
-
-
-+Pl+Par:%>i%>a    N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=PAR]:%>i%>a    N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_IÄ
-
-
-+Pl+Par:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=PAR]:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_PARTITIVE_ITA
-
-+Pl+Par:%>i%>ta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=PAR]:%>i%>ta   N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_ITÄ
-
-+Pl+Par:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=PAR]:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_PARTITIVE_JA
-
-+Pl+Par:%>j%>a     N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=PAR]:%>j%>a     N_BACK_POSS_AN_OPT      ;
 
 LEXICON N_FRONT_PARTITIVE_JÄ
-
-+Pl+Par:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
-
-
+[NUM=PL][CASE=PAR]:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
 
 LEXICON N_BACK_ILLATIVE_IHIN
-
-
-+Pl+Ill:%>i%>hin   #    ;
-+Pl+Ill:%>i%>hi    N_BACK_POSS     ;
+[NUM=PL][CASE=ILL]:%>i%>hin   #    ;
+[NUM=PL][CASE=ILL]:%>i%>hi    N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IHIN
-
-+Pl+Ill:%>i%>hin   #    ;
-+Pl+Ill:%>i%>hi    N_FRONT_POSS     ;
+[NUM=PL][CASE=ILL]:%>i%>hin   #    ;
+[NUM=PL][CASE=ILL]:%>i%>hi    N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_IIN
-
-+Pl+Ill:%>i%>in    #     ;
-+Pl+Ill:%>i%>i     N_BACK_POSS     ;
+[NUM=PL][CASE=ILL]:%>i%>in    #     ;
+[NUM=PL][CASE=ILL]:%>i%>i     N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_IIN
-
-
-+Pl+Ill:%>i%>in    #     ;
-+Pl+Ill:%>i%>i     N_FRONT_POSS     ;
+[NUM=PL][CASE=ILL]:%>i%>in    #     ;
+[NUM=PL][CASE=ILL]:%>i%>i     N_FRONT_POSS     ;
 
 LEXICON N_BACK_ILLATIVE_ISIIN
-
-
-+Pl+Ill:%>i%>siin  #     ;
-+Pl+Ill:%>i%>sii   N_BACK_POSS     ;
+[NUM=PL][CASE=ILL]:%>i%>siin  #     ;
+[NUM=PL][CASE=ILL]:%>i%>sii   N_BACK_POSS     ;
 
 LEXICON N_FRONT_ILLATIVE_ISIIN
-
-
-+Pl+Ill:%>i%>siin  #     ;
-+Pl+Ill:%>i%>sii   N_FRONT_POSS     ;
-
-
-
-
+[NUM=PL][CASE=ILL]:%>i%>siin  #     ;
+[NUM=PL][CASE=ILL]:%>i%>sii   N_FRONT_POSS     ;
 
 LEXICON N_BACK_POSS
-
-
-
-
-
-
-+PxSg1:%>ni  N_BACK_CLIT_OPT        ;
-+PxSg2:%>si  N_BACK_CLIT_OPT        ;
-+PxSg3:%>nsa N_BACK_CLIT_OPT        ;
-+PxPl1:%>mme N_BACK_CLIT_OPT        ;
-+PxPl2:%>nne N_BACK_CLIT_OPT        ;
-+PxPl3:%>nsa N_BACK_CLIT_OPT        ;
+[POSS=SG1]:%>ni  N_BACK_CLIT_OPT        ;
+[POSS=SG2]:%>si  N_BACK_CLIT_OPT        ;
+[POSS=SG3]:%>nsa N_BACK_CLIT_OPT        ;
+[POSS=PL1]:%>mme N_BACK_CLIT_OPT        ;
+[POSS=PL2]:%>nne N_BACK_CLIT_OPT        ;
+[POSS=PL3]:%>nsa N_BACK_CLIT_OPT        ;
 
 LEXICON N_FRONT_POSS
-
-
-
-
-
-+PxSg1:%>ni  N_FRONT_CLIT_OPT        ;
-+PxSg2:%>si  N_FRONT_CLIT_OPT        ;
-+PxSg3:%>nsä N_FRONT_CLIT_OPT        ;
-+PxPl1:%>mme N_FRONT_CLIT_OPT        ;
-+PxPl2:%>nne N_FRONT_CLIT_OPT        ;
-+PxPl3:%>nsä N_FRONT_CLIT_OPT        ;
-
-
-
+[POSS=SG1]:%>ni  N_FRONT_CLIT_OPT        ;
+[POSS=SG2]:%>si  N_FRONT_CLIT_OPT        ;
+[POSS=SG3]:%>nsä N_FRONT_CLIT_OPT        ;
+[POSS=PL1]:%>mme N_FRONT_CLIT_OPT        ;
+[POSS=PL2]:%>nne N_FRONT_CLIT_OPT        ;
+[POSS=PL3]:%>nsä N_FRONT_CLIT_OPT        ;
 
 LEXICON N_BACK_POSS_AN
-
-+PxSg3:%>an    N_BACK_CLIT_OPT     ;
-+PxPl3:%>an    N_BACK_CLIT_OPT     ;
+[POSS=SG3]:%>an    N_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>an    N_BACK_CLIT_OPT     ;
 
 LEXICON N_BACK_POSS_EN
-
-+PxSg3:%>en    N_BACK_CLIT_OPT     ;
-+PxPl3:%>en    N_BACK_CLIT_OPT     ;
+[POSS=SG3]:%>en    N_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>en    N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_EN
-
-+PxSg3:%>en    N_FRONT_CLIT_OPT     ;
-+PxPl3:%>en    N_FRONT_CLIT_OPT     ;
+[POSS=SG3]:%>en    N_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>en    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_ÄN
-
-+PxSg3:%>än    N_FRONT_CLIT_OPT     ;
-+PxPl3:%>än    N_FRONT_CLIT_OPT     ;
-
-
-
-
-
+[POSS=SG3]:%>än    N_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>än    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_BACK_CLIT
-
-
-+Foc/han:%>han   #        ;
-+Foc/han+Foc/kaan:%>hankaan  #        ;
-+Foc/han+Qst:%>hanko #        ;
-+Foc/han+Foc/pa:%>hanpa #        ;
-+Qst:%>ko #        ;
-+Qst+Foc/han:%>kohan #        ;
-+Qst+Foc/kaan:%>kokaan    #        ;
-+Qst+Foc/kin:%>kokin    #        ;
-+Qst+Foc/pa:%>kopa   #        ;
-+Qst+Foc/s:%>kos    #        ;
-+Foc/pa:%>pa #        ;
-+Foc/pa+Foc/han:%>pahan #        ;
-+Foc/pa+Foc/kaan:%>pakaan    #        ;
-+Foc/pa+Foc/kin:%>pakin    #        ;
-+Foc/pa+Qst:%>pako   #        ;
-+Foc/pa+Foc/s:%>pas    #        ;
-+Foc/kin:%>kin  #        ;
-+Foc/kin+Foc/han:%>kinhan  #        ;
-+Foc/kin+Foc/kaan:%>kinkaan #        ;
-+Foc/kin+Qst:%>kinko    #        ;
-+Foc/kin+Foc/pa:%>kinpa    #        ;
-+Foc/kaan:%>kaan  #        ;
-+Foc/kaan+Foc/han:%>kaanhan  #        ;
-+Foc/kaan+Foc/kin:%>kaankin #        ;
-+Foc/kaan+Qst:%>kaanko    #        ;
-+Foc/kaan+Foc/pa:%>kaanpa    #        ;
+[CLIT=HAN]:%>han   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hankaan  #        ;
+[CLIT=HAN][CLIT=KO]:%>hanko #        ;
+[CLIT=HAN][CLIT=PA]:%>hanpa #        ;
+[CLIT=KO]:%>ko #        ;
+[CLIT=KO][CLIT=HAN]:%>kohan #        ;
+[CLIT=KO][CLIT=KAAN]:%>kokaan    #        ;
+[CLIT=KO][CLIT=KIN]:%>kokin    #        ;
+[CLIT=KO][CLIT=PA]:%>kopa   #        ;
+[CLIT=KO][CLIT=S]:%>kos    #        ;
+[CLIT=PA]:%>pa #        ;
+[CLIT=PA][CLIT=HAN]:%>pahan #        ;
+[CLIT=PA][CLIT=KAAN]:%>pakaan    #        ;
+[CLIT=PA][CLIT=KIN]:%>pakin    #        ;
+[CLIT=PA][CLIT=KO]:%>pako   #        ;
+[CLIT=PA][CLIT=S]:%>pas    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhan  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkaan #        ;
+[CLIT=KIN][CLIT=KO]:%>kinko    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpa    #        ;
+[CLIT=KAAN]:%>kaan  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>kaanhan  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>kaankin #        ;
+[CLIT=KAAN][CLIT=KO]:%>kaanko    #        ;
+[CLIT=KAAN][CLIT=PA]:%>kaanpa    #        ;
 
 LEXICON N_FRONT_CLIT
-
-+Foc/han:%>hän   #        ;
-+Foc/han+Foc/kaan:%>hänkään  #        ;
-+Foc/han+Qst:%>hänkö #        ;
-+Foc/han+Foc/pa:%>hänpä #        ;
-+Qst:%>kö #        ;
-+Qst+Foc/han:%>köhän #        ;
-+Qst+Foc/kaan:%>kökään    #        ;
-+Qst+Foc/kin:%>kökin    #        ;
-+Qst+Foc/pa:%>köpä   #        ;
-+Qst+Foc/s:%>kös    #        ;
-+Foc/pa:%>pä #        ;
-+Foc/pa+Foc/han:%>pähän #        ;
-+Foc/pa+Foc/kaan:%>päkään    #        ;
-+Foc/pa+Foc/kin:%>päkin    #        ;
-+Foc/pa+Qst:%>päkö   #        ;
-+Foc/pa+Foc/s:%>päs    #        ;
-+Foc/kin:%>kin  #        ;
-+Foc/kin+Foc/han:%>kinhän  #        ;
-+Foc/kin+Foc/kaan:%>kinkään #        ;
-+Foc/kin+Qst:%>kinkö    #        ;
-+Foc/kin+Foc/pa:%>kinpä    #        ;
-+Foc/kaan:%>kään  #        ;
-+Foc/kaan+Foc/han:%>käänhän  #        ;
-+Foc/kaan+Foc/kin:%>käänkin #        ;
-+Foc/kaan+Qst:%>käänkö    #        ;
-+Foc/kaan+Foc/pa:%>käänpä    #        ;
-
-
-
+[CLIT=HAN]:%>hän   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hänkään  #        ;
+[CLIT=HAN][CLIT=KO]:%>hänkö #        ;
+[CLIT=HAN][CLIT=PA]:%>hänpä #        ;
+[CLIT=KO]:%>kö #        ;
+[CLIT=KO][CLIT=HAN]:%>köhän #        ;
+[CLIT=KO][CLIT=KAAN]:%>kökään    #        ;
+[CLIT=KO][CLIT=KIN]:%>kökin    #        ;
+[CLIT=KO][CLIT=PA]:%>köpä   #        ;
+[CLIT=KO][CLIT=S]:%>kös    #        ;
+[CLIT=PA]:%>pä #        ;
+[CLIT=PA][CLIT=HAN]:%>pähän #        ;
+[CLIT=PA][CLIT=KAAN]:%>päkään    #        ;
+[CLIT=PA][CLIT=KIN]:%>päkin    #        ;
+[CLIT=PA][CLIT=KO]:%>päkö   #        ;
+[CLIT=PA][CLIT=S]:%>päs    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhän  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkään #        ;
+[CLIT=KIN][CLIT=KO]:%>kinkö    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpä    #        ;
+[CLIT=KAAN]:%>kään  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>käänhän  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>käänkin #        ;
+[CLIT=KAAN][CLIT=KO]:%>käänkö    #        ;
+[CLIT=KAAN][CLIT=PA]:%>käänpä    #        ;
 
 LEXICON N_BACK_CLIT_OPT
 0    #   ;
@@ -677,86 +430,32 @@ LEXICON N_FRONT_POSS_EN_OBL
 0   N_FRONT_POSS  ;
 0   N_FRONT_POSS_EN   ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 LEXICON N_COMPOUND_0
-
-
-+Sg+Nom:0   N_COMPOUND  ;
+[NUM=SG][CASE=NOM]:0   N_COMPOUND  ;
 
 LEXICON N_COMPOUND_N
-
-+Sg+Gen:%>n               N_COMPOUND    ;
+[NUM=SG][CASE=GEN]:%>n               N_COMPOUND    ;
 
 LEXICON N_COMPOUND_IEN
-
-+Pl+Gen:%>i%>en                 N_COMPOUND  ;
+[NUM=PL][CASE=GEN]:%>i%>en                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IDEN
-
-+Pl+Gen:%>i%>den                 N_COMPOUND  ;
+[NUM=PL][CASE=GEN]:%>i%>den                 N_COMPOUND  ;
 
 LEXICON N_COMPOUND_IN
-
-+Pl+Gen:%>i%>n                 N_COMPOUND     ;
+[NUM=PL][CASE=GEN]:%>i%>n                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_ITTEN
-
-+Pl+Gen:%>i%>tten               N_COMPOUND     ;
+[NUM=PL][CASE=GEN]:%>i%>tten               N_COMPOUND     ;
 
 LEXICON N_COMPOUND_JEN
-
-+Pl+Gen:%>j%>en                 N_COMPOUND     ;
+[NUM=PL][CASE=GEN]:%>j%>en                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_TEN
-
-+Pl+Gen:%>ten                 N_COMPOUND     ;
-
+[NUM=PL][CASE=GEN]:%>ten                 N_COMPOUND     ;
 
 LEXICON N_COMPOUND_S
-
-+Der/s:»s                   N_COMPOUND  ;
+[DRV=S]:»s                   N_COMPOUND  ;
 
 LEXICON N_COMPOUND
-
-+Use/Circ#:0#     NOMINAL   ;
-
-
+#:0#     NOMINAL   ;

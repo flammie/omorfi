@@ -1,88 +1,91 @@
+
 LEXICON ADP_FRONT_POSS
-+PxSg1:%>ni  ADP_FRONT_CLIT_OPT        ;
-+PxSg2:%>si  ADP_FRONT_CLIT_OPT        ;
-+PxSg3:%>nsä ADP_FRONT_CLIT_OPT        ;
-+PxPl1:%>mme ADP_FRONT_CLIT_OPT        ;
-+PxPl2:%>nne ADP_FRONT_CLIT_OPT        ;
-+PxPl3:%>nsä ADP_FRONT_CLIT_OPT        ;
+[POSS=SG1]:%>ni  ADP_FRONT_CLIT_OPT        ;
+[POSS=SG2]:%>si  ADP_FRONT_CLIT_OPT        ;
+[POSS=SG3]:%>nsä ADP_FRONT_CLIT_OPT        ;
+[POSS=PL1]:%>mme ADP_FRONT_CLIT_OPT        ;
+[POSS=PL2]:%>nne ADP_FRONT_CLIT_OPT        ;
+[POSS=PL3]:%>nsä ADP_FRONT_CLIT_OPT        ;
 
 LEXICON ADP_BACK_POSS
-+PxSg1:%>ni  ADP_BACK_CLIT_OPT        ;
-+PxSg2:%>si  ADP_BACK_CLIT_OPT        ;
-+PxSg3:%>nsa ADP_BACK_CLIT_OPT        ;
-+PxPl1:%>mme ADP_BACK_CLIT_OPT        ;
-+PxPl2:%>nne ADP_BACK_CLIT_OPT        ;
-+PxPl3:%>nsa ADP_BACK_CLIT_OPT        ;
+[POSS=SG1]:%>ni  ADP_BACK_CLIT_OPT        ;
+[POSS=SG2]:%>si  ADP_BACK_CLIT_OPT        ;
+[POSS=SG3]:%>nsa ADP_BACK_CLIT_OPT        ;
+[POSS=PL1]:%>mme ADP_BACK_CLIT_OPT        ;
+[POSS=PL2]:%>nne ADP_BACK_CLIT_OPT        ;
+[POSS=PL3]:%>nsa ADP_BACK_CLIT_OPT        ;
+
+LEXICON ADP_BACK_POSS_AN
+[POSS=SG3]:%>an    ADV_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>an    ADV_BACK_CLIT_OPT     ;
 
 LEXICON ADP_BACK_POSS_EN
-+PxSg3:%>en    ADP_BACK_CLIT_OPT     ;
-+PxPl3:%>en    ADP_BACK_CLIT_OPT     ;
+[POSS=SG3]:%>en    ADP_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>en    ADP_BACK_CLIT_OPT     ;
 
 LEXICON ADP_FRONT_POSS_EN
-+PxSg3:%>en    ADP_FRONT_CLIT_OPT     ;
-+PxPl3:%>en    ADP_FRONT_CLIT_OPT     ;
+[POSS=SG3]:%>en    ADP_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>en    ADP_FRONT_CLIT_OPT     ;
 
 LEXICON ADP_FRONT_POSS_ÄN
-+PxSg3:%>än    ADP_FRONT_CLIT_OPT     ;
-+PxPl3:%>än    ADP_FRONT_CLIT_OPT     ;
+[POSS=SG3]:%>än    ADP_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>än    ADP_FRONT_CLIT_OPT     ;
 
 LEXICON ADP_BACK_CLIT
-+Foc/han:%>han   #        ;
-+Foc/han+Foc/kaan:%>hankaan  #        ;
-+Foc/han+Qst:%>hanko #        ;
-+Foc/han+Foc/pa:%>hanpa #        ;
-+Qst:%>ko #        ;
-+Qst+Foc/han:%>kohan #        ;
-+Qst+Foc/kaan:%>kokaan    #        ;
-+Qst+Foc/kin:%>kokin    #        ;
-+Qst+Foc/pa:%>kopa   #        ;
-+Qst+Foc/s:%>kos    #        ;
-+Foc/pa:%>pa #        ;
-+Foc/pa+Foc/han:%>pahan #        ;
-+Foc/pa+Foc/kaan:%>pakaan    #        ;
-+Foc/pa+Foc/kin:%>pakin    #        ;
-+Foc/pa+Qst:%>pako   #        ;
-+Foc/pa+Foc/s:%>pas    #        ;
-+Foc/kin:%>kin  #        ;
-+Foc/kin+Foc/han:%>kinhan  #        ;
-+Foc/kin+Foc/kaan:%>kinkaan #        ;
-+Foc/kin+Qst:%>kinko    #        ;
-+Foc/kin+Foc/pa:%>kinpa    #        ;
-+Foc/kaan:%>kaan  #        ;
-+Foc/kaan+Foc/han:%>kaanhan  #        ;
-+Foc/kaan+Foc/kin:%>kaankin #        ;
-+Foc/kaan+Qst:%>kaanko    #        ;
-+Foc/kaan+Foc/pa:%>kaanpa    #        ;
+[CLIT=HAN]:%>han   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hankaan  #        ;
+[CLIT=HAN][CLIT=KO]:%>hanko #        ;
+[CLIT=HAN][CLIT=PA]:%>hanpa #        ;
+[CLIT=KO]:%>ko #        ;
+[CLIT=KO][CLIT=HAN]:%>kohan #        ;
+[CLIT=KO][CLIT=KAAN]:%>kokaan    #        ;
+[CLIT=KO][CLIT=KIN]:%>kokin    #        ;
+[CLIT=KO][CLIT=PA]:%>kopa   #        ;
+[CLIT=KO][CLIT=S]:%>kos    #        ;
+[CLIT=PA]:%>pa #        ;
+[CLIT=PA][CLIT=HAN]:%>pahan #        ;
+[CLIT=PA][CLIT=KAAN]:%>pakaan    #        ;
+[CLIT=PA][CLIT=KIN]:%>pakin    #        ;
+[CLIT=PA][CLIT=KO]:%>pako   #        ;
+[CLIT=PA][CLIT=S]:%>pas    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhan  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkaan #        ;
+[CLIT=KIN][CLIT=KO]:%>kinko    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpa    #        ;
+[CLIT=KAAN]:%>kaan  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>kaanhan  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>kaankin #        ;
+[CLIT=KAAN][CLIT=KO]:%>kaanko    #        ;
+[CLIT=KAAN][CLIT=PA]:%>kaanpa    #        ;
 
 LEXICON ADP_FRONT_CLIT
-+Foc/han:%>hän   #        ;
-+Foc/han+Foc/kaan:%>hänkään  #        ;
-+Foc/han+Qst:%>hänkö #        ;
-+Foc/han+Foc/pa:%>hänpä #        ;
-+Qst:%>kö #        ;
-+Qst+Foc/han:%>köhän #        ;
-+Qst+Foc/kaan:%>kökään    #        ;
-+Qst+Foc/kin:%>kökin    #        ;
-+Qst+Foc/pa:%>köpä   #        ;
-+Qst+Foc/s:%>kös    #        ;
-+Foc/pa:%>pä #        ;
-+Foc/pa+Foc/han:%>pähän #        ;
-+Foc/pa+Foc/kaan:%>päkään    #        ;
-+Foc/pa+Foc/kin:%>päkin    #        ;
-+Foc/pa+Qst:%>päkö   #        ;
-+Foc/pa+Foc/s:%>päs    #        ;
-+Foc/kin:%>kin  #        ;
-+Foc/kin+Foc/han:%>kinhän  #        ;
-+Foc/kin+Foc/kaan:%>kinkään #        ;
-+Foc/kin+Qst:%>kinkö    #        ;
-+Foc/kin+Foc/pa:%>kinpä    #        ;
-+Foc/kaan:%>kään  #        ;
-+Foc/kaan+Foc/han:%>käänhän  #        ;
-+Foc/kaan+Foc/kin:%>käänkin #        ;
-+Foc/kaan+Qst:%>käänkö    #        ;
-+Foc/kaan+Foc/pa:%>käänpä    #        ;
-
-
+[CLIT=HAN]:%>hän   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hänkään  #        ;
+[CLIT=HAN][CLIT=KO]:%>hänkö #        ;
+[CLIT=HAN][CLIT=PA]:%>hänpä #        ;
+[CLIT=KO]:%>kö #        ;
+[CLIT=KO][CLIT=HAN]:%>köhän #        ;
+[CLIT=KO][CLIT=KAAN]:%>kökään    #        ;
+[CLIT=KO][CLIT=KIN]:%>kökin    #        ;
+[CLIT=KO][CLIT=PA]:%>köpä   #        ;
+[CLIT=KO][CLIT=S]:%>kös    #        ;
+[CLIT=PA]:%>pä #        ;
+[CLIT=PA][CLIT=HAN]:%>pähän #        ;
+[CLIT=PA][CLIT=KAAN]:%>päkään    #        ;
+[CLIT=PA][CLIT=KIN]:%>päkin    #        ;
+[CLIT=PA][CLIT=KO]:%>päkö   #        ;
+[CLIT=PA][CLIT=S]:%>päs    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhän  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkään #        ;
+[CLIT=KIN][CLIT=KO]:%>kinkö    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpä    #        ;
+[CLIT=KAAN]:%>kään  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>käänhän  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>käänkin #        ;
+[CLIT=KAAN][CLIT=KO]:%>käänkö    #        ;
+[CLIT=KAAN][CLIT=PA]:%>käänpä    #        ;
 ! shorthands
 
 LEXICON ADP_BACK_CLIT_OPT
@@ -125,4 +128,3 @@ LEXICON ADP_BACK_POSS_OPT
 LEXICON ADP_FRONT_POSS_OPT
 0   ADP_FRONT_POSS  ;
 0   ADP_FRONT_CLIT  ;
-
