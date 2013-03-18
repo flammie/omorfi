@@ -9,12 +9,13 @@ def stub_all(wordmap):
     this cuts every morphologically varying character.
     '''
     tn = int(wordmap['kotus_tn'])
-    if not wordmap['kotus_av'] or tn in [28, 1007]:
+    if not wordmap['kotus_av'] or tn in [28, 60, 1007, 1009, 1010]:
         if tn in range(1, 5) or tn in [8, 21, 22, 32, 48]:
             wordmap['stub'] = wordmap['stub']
         elif tn in [5, 6]:
-            if wordmap['extra_i']:
-                wordmap['stub'] = wordmap['stub'][:-1]
+            if wordmap['stub'].endswith('i'):
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                        ['i'])
             else:
                 wordmap['stub'] = wordmap['stub']
         elif tn in [7, 16] or tn in range(33, 38) or tn in range(39, 47):
@@ -22,7 +23,8 @@ def stub_all(wordmap):
         elif tn in range(9, 16):
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in [16, 23, 24, 26]:
-            wordmap['stub'] = wordmap['stub'].rstrip('i')
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                    ['i'])
         elif tn in range(17, 19) or tn == 20:
             wordmap['stub'] = wordmap['stub'][:-1] 
         elif tn == 19:
@@ -43,27 +45,15 @@ def stub_all(wordmap):
         elif tn in [53, 56, 77]:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn == 54:
-            if wordmap['kotus_av']:
-                wordmap['stub'] = wordmap['stub'][:-7]
-            else:
-                wordmap['stub'] = wordmap['stub'][:-3]
+            wordmap['stub'] = wordmap['stub'][:-3]
         elif tn in [55, 57, 76]:
-            if wordmap['kotus_av']:
-                wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
-            else:
-                wordmap['stub'] = wordmap['stub'][:-3]
+            wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 58:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn == 59:
-            if wordmap['kotus_av']:
-                wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
-            else:
-                wordmap['stub'] = wordmap['stub'][:-3]
+            wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 60:
-            if wordmap['kotus_av']:
-                wordmap['stub'] = wordmap['stub'][:-8] # 4 + gradation mark
-            else:
-                wordmap['stub'] = wordmap['stub'][:-4]
+            wordmap['stub'] = wordmap['stub'][:-4]
         elif tn == 61:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn in [62, 68]:
@@ -72,19 +62,21 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 64:
             wordmap['stub'] = wordmap['stub'][:-4]
-        elif tn in [66, 67, 1067, 69, 72, 73, 74, 75, 77]:
+        elif tn in [66, 67, 69, 72, 73, 74, 75, 77]:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn in [70, 71, 71]:
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 1007:
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in [1010, 1009]:
-            if wordmap['kotus_av']:
-                wordmap['stub'] = wordmap['stub'][:-7] # 3 + gradation mark
-            else:
-                wordmap['stub'] = wordmap['stub'][:-3]
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+                    ['ika', 'tkä'])
         elif tn in [1024, 1026]:
             wordmap['stub'] = wordmap['stub'][:-1]
+        elif tn == 1067:
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['olla'])
+        elif tn == 1099:
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ei'])
     elif wordmap['grade_dir'] == 'weaken':
         if wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:
             lastk = wordmap['stub'].rfind('k')
@@ -119,6 +111,8 @@ def stub_all(wordmap):
                         file=stderr)
         elif wordmap['kotus_av'] == 'C': 
             lastt = wordmap['stub'].rfind('t')
+            if wordmap['kotus_tn'] == 73:
+                lastt = wordmap['stub'].rfind('t', 0, lastt)
             wordmap['stub'] = wordmap['stub'][:lastt + 1]
             if lastt == -1:
                 print("Unguessable stub; gradating -T not found in", wordmap,
