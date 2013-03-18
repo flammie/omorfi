@@ -17,7 +17,9 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 %{#%}:%~1
 %-:%-
 %{##%}:0
-
+%{%-%}:%~1
+%{% %}:% 
+%{%_%}:%~1
 ;
 
 Sets
@@ -26,7 +28,7 @@ Vowels = a e i o u y ä ö A E I O U Y Ä Ö ;
 Consonants = b c d f g h j k l m n p q r s š t v w x z ž B C D F G H J K L M N P Q R S Š T V W X Z Ž ;
 
 Definitions
-WordBoundary = [#: | %{#%}: | %{##%}: ] ;
+WordBoundary = [#: | %{#%}: | %{##%}: | %{%_%}: | %{%-%}: | %  | %- ] ;
 
 Rules
 ! Hyphenation in order of priority

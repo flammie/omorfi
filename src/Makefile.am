@@ -48,12 +48,19 @@ temporary.phon.hfst: morphology/omorfi.lexc.hfst phonology/omorfi.twolc.hfst
 temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
 	cat temporary.phon.hfst |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/hyphenations.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/uppercase-$(UPPERCASING).hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=NONE]' -t '[CASECHANGE=NONE]:@_EPSILON_SYMBOL_@' |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=UPALL]' -t '[CASECHANGE=UPALL]:@_EPSILON_SYMBOL_@' |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=UPFIRST]' -t '[CASECHANGE=UPFIRST]:@_EPSILON_SYMBOL_@' |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f š -T orthography/sh.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f ž -T orthography/zh.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/orthographic-variations.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
@@ -83,30 +90,55 @@ temporary.tagweighted.hfst: temporary.tagweights-only.hfst temporary.tag-backoff
 else
 temporary.tagweighted.hfst: temporary.unbounded.hfst
 	$(HREW) $(HFST_FLAGS) -S '[GUESS=COMPOUND]' -a 16 < $< |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[GUESS=DERIVE]' -a 16 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=INS]' -a 32 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ABE]' -a 8 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=NOM]' -a 1 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=GEN]' -a 1 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=PAR]' -a 1 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=INE]' -a 2 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ELA]' -a 2 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ILL]' -a 2 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ADE]' -a 2 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ABL]' -a 2 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ALL]' -a 2 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ESS]' -a 4 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=TRA]' -a 4 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=CMT]' -a 8 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=INDV]' -a 1 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=COND]' -a 4 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=POTN]' -a 8 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=IMPV]' -a 4 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=OPTV]' -a 32 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=EVNV]' -a 32 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=NONSTANDARD]' -a 32 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=RARE]' -a 32 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=DIALECTAL]' -a 32 |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=ARCHAIC]' -a 32 > $@
 endif
 
@@ -119,6 +151,7 @@ temporary.tokenweights-only.hfst: temporary.tagweighted.hfst weights/weights.$(T
 # also include the tokens not in corpus, somehow
 temporary.token-backoff.hfst: temporary.tagweighted.hfst weights/surface-sigma-star.hfst
 	$(HREW) -e -a 5.267 weights/surface-sigma-star.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HCOMP) $(HFST_FLAGS) -1 temporary.tagweighted.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 

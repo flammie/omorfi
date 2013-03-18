@@ -1,11 +1,9 @@
 Alphabet
 
-0:%[CASECHANGE%=NONE%]
 %{##%}
 
 ;
 
 Rules
 "Mark no case changes"
-0:%[CASECHANGE%=NONE%] <=> %{##%}: _ # ;
-
+%{##%} => _ ;

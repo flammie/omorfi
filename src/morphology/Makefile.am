@@ -3,8 +3,8 @@
 # lexc data
 LEXC_MAIN=definitions.lexc
 MORPHOLOGY_SRCS=\
-				pos.lexc \
 				compounding/compounding.lexc \
+				stemparts/acronyms.lexc \
 				stemparts/adjectives.lexc \
 				stemparts/digits.lexc \
 				stemparts/nouns.lexc \
@@ -12,9 +12,12 @@ MORPHOLOGY_SRCS=\
 				stemparts/verbs.lexc \
 				inflection/acronyms.lexc \
 				inflection/adjectives.lexc \
-				inflection/commons.lexc \
+				inflection/adpositions.lexc \
+				inflection/adverbs.lexc \
 				inflection/digits.lexc \
 				inflection/nouns.lexc \
+				inflection/numerals.lexc \
+				inflection/pronouns.lexc \
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
 			roots/abbreviations.lexc \
@@ -28,10 +31,8 @@ LEXICAL_SRCS=\
 			roots/particles.lexc \
 			roots/prefixes.lexc \
 			roots/suffixes.lexc \
-			roots/proper-nouns.lexc \
 			roots/verbs.lexc
 NOTGENERATED_SRCS=\
-			roots/exceptions.lexc \
 			roots/digits.lexc \
 			roots/numerals.lexc \
 			roots/pronouns.lexc \
