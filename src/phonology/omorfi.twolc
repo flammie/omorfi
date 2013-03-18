@@ -89,7 +89,7 @@ Gradations = GradeMarks Grades %{#%} %{##%} ;
 
 Definitions
 
-WordBoundary = [ %{##%}: | %{#%}: | %-: | :%- | % ] ;
+WordBoundary = [ %{##%}: | %{#%}: | %{%-%}: | %{%_%}: | %-: | :%- | % ] ;
 NoHarmony = [ ? - [ Harmony: | WordBoundary ] ]* ;
 NoLengthening = [ ? - [ BasicVowels: | GhostVowels: | %{aeiouyäö%}: | %{BVL%}: | :BasicVowels | %{##%}: ] ]* ;
 NoGradeMarkers = [ ? - [ Grades: | WordBoundary ] ]* ;
