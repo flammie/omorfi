@@ -4237,7 +4237,7 @@ def guess_new_verb(wordmap):
                         ['hapan'])
         elif wordmap['kotus_av'] == 'H':
             if wordmap['lemma'].endswith('mmata'):
-                wordmap['new_para'] = 'V_MORKATA'
+                wordmap['new_para'] = 'V_TEMMATA'
             else:
                 fail_guess_because(wordmap, ['V', 73, 'H'],
                         ['hapan'])
@@ -4487,6 +4487,13 @@ def guess_new_verb(wordmap):
             else:
                 fail_guess_because(wordmap, ['V', 10, 'D', 'OLLA'],
                         ['olla'], 'must be olla')
+    elif tn == 1099:
+        if not wordmap['kotus_av']:
+            if wordmap['lemma'].endswith('ei'):
+                wordmap['new_para'] = 'V_EI'
+            else:
+                fail_guess_because(wordmap, ['V', 99, 'D', 'EI'],
+                        ['ei'], 'must be ei')
     else:
         fail_guess_because(wordmap, ['V'],
             ['52-78', '99', '1067'])
