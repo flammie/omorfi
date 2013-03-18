@@ -1,13 +1,2 @@
 
-LEXICON Nominal
-	Nouns	;
-	Adjectives	;
-
-LEXICON Nouns
-    NOUN    ;
-    51  ;
-
-LEXICON Adjectives
-    ADJECTIVE   ;
-
 
