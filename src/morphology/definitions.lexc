@@ -380,88 +380,15 @@ Multichar_Symbols
 ! The word and morpheme boundaries are used to limit the effective range of
 ! far-reaching rules, such as vowel harmony. The boundaries are marked by
 ! curly bracketed hashes or underscores.
-{##} {#} {-} {_}
-
-! Flag diacritics for long-distance morphotactics (FIXME: document these)
-! Simple compounding control
-@P.NEED.NOMINAL@ @U.NEED.NOMINAL@ @N.NEED.NOMINAL@
-@P.NEED.NUMERAL@ @U.NEED.NUMERAL@ @N.NEED.NUMERAL@ @R.NEED.NUMERAL@
-@P.NEED.REST@ @D.NEED@
-@D.NEED.REST@
-@R.NEED.NOMINAL@
-
-! (Mostly numeral) Compound agreement
-@U.AGREE.SGfNOM@ @U.AGREE.SGfPAR@ @U.AGREE.SGfGENACC@
-@U.AGREE.SGfINE@ @U.AGREE.SGfELA@ @U.AGREE.SGfILL@
-@U.AGREE.SGfADE@ @U.AGREE.SGfABL@ @U.AGREE.SGfALL@
-@U.AGREE.SGfESS@ @U.AGREE.SGfABE@ @U.AGREE.CMT@
-@U.AGREE.SGfTRA@
-@U.AGREE.PLfNOMACC@ @U.AGREE.PLfPAR@ @U.AGREE.PLfGEN@
-@U.AGREE.PLfINE@ @U.AGREE.PLfELA@ @U.AGREE.PLfILL@
-@U.AGREE.PLfADE@ @U.AGREE.PLfABL@ @U.AGREE.PLfALL@
-@U.AGREE.PLfESS@ @U.AGREE.PLfABE@ @U.AGREE.PLfINS@
-@U.AGREE.PLfTRA@
-@P.AGREE.SGfPAR@
-@R.AGREE.SGfNOM@ @D.AGREE.SGfNOM@
-@C.AGREE@
-
-! Multiplier multiplicant chain
-@P.MULTIPLIER.TRUE@ @P.MULTIPLIER.YKSI@
-@R.MULTIPLIER@ @D.MULTIPLIER@ @R.MULTIPLIER.TRUE@ @D.MULTIPLIER.YKSI@
-@C.MULTIPLIER@
-
-! Nominative multiplier partitive multiplicant chain
-@P.ALLOW.SGfNOM@ @P.ALLOW.SGfPAR@
-@R.ALLOW.SGfNOM@ @R.ALLOW.SGfPAR@
-@D.ALLOW.SGfPAR@
-@C.ALLOW@
-
-! Numeral compound genus agreement
-@U.NUMGEN.CARD@ @U.NUMGEN.ORD@
-
-! Plurale tantum requirement
-@U.PLURALE.TANTUM@ @P.PLURALE.TANTUM@ @D.PLURALE.TANTUM@
-@C.PLURALE@
-
-! lowercase proper nouns when derived
-@P.LOWERCASED.TURE@ @C.LOWERCASED@ @D.LOWERCASED@
-
-! control some derivatin stuff through shallow semantics
-@P.SEMANTIC.LOC@ @R.SEMANTIC.LOC@
-
-! long analyses for some specific tagging schemes
-@P.LONGxANALYSIS.TURE@ @D.LONGxANALYSIS@ @C.LONGxANALYSIS@
+{##} {#} {_}
 
 ! The root lexicon is unique entry point of this morphological description.
 ! This lexicon must not be used elsewhere; it contains only the markers for
 ! absolute start of the transducer.
 LEXICON Root
-0:{##}	Main	;
-
-! Foo
-LEXICON Main
 0    Compounding/Initial ;
 0    Compounding/Free    ;
 0    Compounding/None   ;
-[COMPOUND_FORM=OMIT]:{-}   Compounding/Final   ;
-[COMPOUND_FORM=OMIT]:{-}   Compounding/Free   ;
-@D.NEED@@P.NEED.REST@[COMPOUND_FORM=OMIT]:@D.NEED@@P.NEED.REST@-	SUFFIX	; ! sole suffixes in broken compounds
-
-
-! The end lexicon, named Ennd due to a bug in certain implementations of lexc,
-! is unique end point in this morphological description. This lexicon must be
-! used as only end point; it contains the markers for absolute end of the
-! transducer, but also the flag value set validation.
-LEXICON Ennd
-0@D.LOWERCASED@:{##}@D.LOWERCASED@	#	;
-
-
-LEXICON Interjection+Ennd
-0    Ennd    ;
-
-LEXICON Conjunction+Ennd
-0    Ennd    ;
-
-LEXICON Abbreviation+Ennd
-0    Ennd    ;
-
+[COMPOUND_FORM=OMIT]:{-}    Compounding/Final   ;
+[COMPOUND_FORM=OMIT]:{-}    Compounding/Free   ;
+[COMPOUND_FORM=OMIT]:-      SUFFIX  ; ! sole suffixes in broken compounds
