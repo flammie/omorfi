@@ -28,14 +28,14 @@ LEXICON VerbStem/Present
 [GUESS=DERIVE][DRV=JA][POS=NOUN]:{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
 [GUESS=DERIVE][VOICE=ACT][PCP=VA][DRV=VS][POS=NOUN]:{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
 ! ugly long analyses
-@P.LONGxANALYSIS.TURE@@U.NEED.NOMINAL@{AV+}mi	kotus_38_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@@P.NEED.REST@{AV+}v{aä}i	kotus_38_ADJECTIVE/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{uy}t{t~~}{C}	kotus_53_VERB/stemfiller		;
-@P.LONGxANALYSIS.TURE@{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
-@P.LONGxANALYSIS.TURE@{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
-
+0:@P.LONGxANALYSIS.TURE@@U.NEED.NOMINAL@{AV+}mi	kotus_38_NOUN/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@@D.NEED@@P.NEED.REST@{AV+}v{aä}i	kotus_38_ADJECTIVE/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@@D.NEED@{present}{AV-}t{aä}t{uy}t{t~~}{C}	kotus_53_VERB/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@{←e~i}{AV+}j	kotus_12_NOUN/stemfiller	;
+0:@P.LONGxANALYSIS.TURE@{AV+}v{uy}{uy}  kotus_40_NOUN/stemfiller    ;
+0:
 LEXICON VerbStem/AInfinitive
 @D.NEED@@P.NEED.REST@[VOICE=ACT][INF=A][NUM=SG][CASE=LAT]:@D.NEED@@P.NEED.REST@{AV+}{aä}		Clitic/Optional		;
 @D.NEED@@P.NEED.REST@[VOICE=ACT][INF=A][NUM=SG][CASE=TRA]:@D.NEED@@P.NEED.REST@{AV+}{aä}kse	Possessive/Obligatory+Vn		;
@@ -119,24 +119,24 @@ LEXICON VerbAllomorph/NUTPassiveParticiple
 @U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	kotus_1_ADJECTIVE/stemfiller		;
 @U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
 [GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}	kotus_40_NOUN/stemfiller		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple/C
 @U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{C}	kotus_1_ADJECTIVE/stemfiller		;
 @U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
 [GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{C}	kotus_40_NOUN/stemfiller		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple/F
 @U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{F}	kotus_1_ADJECTIVE/stemfiller		;
 @U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
 [GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{F}	kotus_40_NOUN/stemfiller		;
 
 LEXICON VerbAllomorph/NUTPassiveParticiple/I
 @U.NEED.NOMINAL@[VOICE=PSS][PCP=NUT]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}{I}	kotus_1_ADJECTIVE/stemfiller		;
 @U.NEED.NOMINAL@[VOICE=PSS][MOOD=INDV][TENSE=PAST][NEG=CON]:@U.NEED.NOMINAL@{AV-}{t~~}{uy}	Clitic/Optional		;
 [GUESS=DERIVE][VOICE=PSS][PCP=NUT][DRV=VS][POS=NOUN]:{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
+0:@P.LONGxANALYSIS.TURE@{AV-}{t~~}{uy}{uy}{I}	kotus_40_NOUN/stemfiller		;
 
 
