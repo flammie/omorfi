@@ -13,8 +13,8 @@ def fail_guess_because(wordmap, matches, failures, moar=None):
         print("\033[92mExplanation\033[0m:", moar, file=stderr)
     # This can be used to automate classifying plurales etc.
     #if wordmap['lemma'].endswith('t'):
-    if wordmap['is_proper']:
-        print(wordmap['lemma'], wordmap['kotus_tn'], wordmap['kotus_av'])
+    #if wordmap['is_proper']:
+    #    print(wordmap['lemma'], wordmap['kotus_tn'], wordmap['kotus_av'])
 
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):
@@ -31,7 +31,9 @@ def remove_suffixes_or_die(s, suffixes):
         nu =  remove_suffix(s, suffix)
         if nu != s:
             return nu
-    print("Could not remove", suffixes, "from", s, file=stderr)
+    print("\033[91mUnstubbable!\033[0m Trying to rstrip ", ", ".join(suffixes),
+        "from", s)
+    return s
 
 # misc functions
 def replace_rightmost(s, needle, repl):
