@@ -54,7 +54,7 @@ LEXICON N_BACK_WEAK_PLURALS
 [NUM=PL][CASE=ABE]:%>i%>tta   N_BACK_POSS_AN_OPT      ;
 [NUM=PL][CASE=ABL]:%>i%>lta   N_BACK_POSS_AN_OPT      ;
 [NUM=PL][CASE=ADE]:%>i%>lla   N_BACK_POSS_AN_OPT      ;
-[NUM=PL][CASE=ALL]:%>i%>lle  N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ALL]:%>i%>lle   N_BACK_POSS_EN_OPT      ;
 [NUM=PL][CASE=ELA]:%>i%>sta   N_BACK_POSS_AN_OPT      ;
 [NUM=PL][CASE=INE]:%>i%>ssa   N_BACK_POSS_AN_OPT      ;
 [NUM=PL][CASE=INS]:%>i%>n    N_BACK_CLIT_OPT     ;
@@ -65,7 +65,7 @@ LEXICON N_FRONT_WEAK_PLURALS
 [NUM=PL][CASE=ABE]:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
 [NUM=PL][CASE=ABL]:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
 [NUM=PL][CASE=ADE]:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
-[NUM=PL][CASE=ALL]:%>i%>lle  N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ALL]:%>i%>lle   N_FRONT_POSS_EN_OPT      ;
 [NUM=PL][CASE=ELA]:%>i%>stä   N_FRONT_POSS_ÄN_OPT      ;
 [NUM=PL][CASE=INE]:%>i%>ssä   N_FRONT_POSS_ÄN_OPT      ;
 [NUM=PL][CASE=INS]:%>i%>n    N_FRONT_CLIT_OPT     ;
