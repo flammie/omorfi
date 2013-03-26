@@ -90,55 +90,30 @@ temporary.tagweighted.hfst: temporary.tagweights-only.hfst temporary.tag-backoff
 else
 temporary.tagweighted.hfst: temporary.unbounded.hfst
 	$(HREW) $(HFST_FLAGS) -S '[GUESS=COMPOUND]' -a 16 < $< |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[GUESS=DERIVE]' -a 16 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=INS]' -a 32 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ABE]' -a 8 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=NOM]' -a 1 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=GEN]' -a 1 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=PAR]' -a 1 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=INE]' -a 2 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ELA]' -a 2 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ILL]' -a 2 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ADE]' -a 2 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ABL]' -a 2 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ALL]' -a 2 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=ESS]' -a 4 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=TRA]' -a 4 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[CASE=CMT]' -a 8 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=INDV]' -a 1 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=COND]' -a 4 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=POTN]' -a 8 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=IMPV]' -a 4 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=OPTV]' -a 32 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[MOOD=EVNV]' -a 32 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=NONSTANDARD]' -a 32 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=RARE]' -a 32 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=DIALECTAL]' -a 32 |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=ARCHAIC]' -a 32 > $@
 endif
 
