@@ -17,6 +17,7 @@ MORPHOLOGY_SRCS=\
 				inflection/digits.lexc \
 				inflection/nouns.lexc \
 				inflection/numerals.lexc \
+				inflection/prefixes.lexc \
 				inflection/pronouns.lexc \
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
