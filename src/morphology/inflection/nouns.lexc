@@ -458,4 +458,4 @@ LEXICON N_COMPOUND_S
 [DRV=S]:»s                   N_COMPOUND  ;
 
 LEXICON N_COMPOUND
-#:0#     NOMINAL   ;
+[GUESS=COMPOUND]:0{#}     NOMINAL   ;
