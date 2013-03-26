@@ -12,9 +12,9 @@ def format_analysis_omor(wordmap, format, use_prop_subclasses):
     '''
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%(lemma)s]" %(wordmap)
-    if wordmap['is_suffix'] == 'Suffixes':
+    if wordmap['is_suffix']:
         wordmap['analysis'] += "[POS=%(pos)s][SUBCAT=SUFFIX]" %(wordmap)
-    elif wordmap['is_prefix'] == 'Prefixes':
+    elif wordmap['is_prefix']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=PREFIX]" %(wordmap)
     elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)

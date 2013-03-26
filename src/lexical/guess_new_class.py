@@ -10,7 +10,9 @@ def guess_new_class(wordmap):
     if not wordmap['pos']:
         wordmap['pos'] = 'PARTICLE'
         wordmap['new_para'] = '#'
-    if wordmap['pos'] in ['PROPER', 'NOUN']:
+    if wordmap['is_prefix']:
+        wordmap['new_para'] = 'PREFIX_COMPOUND'
+    elif wordmap['pos'] in ['PROPER', 'NOUN']:
         wordmap = guess_new_noun(wordmap)
     elif wordmap['pos'] == 'ADJECTIVE':
         wordmap = guess_new_adjective(wordmap)
