@@ -103,14 +103,16 @@ def main():
                 continue
             join_parts = []
             join_on = ''
-            if join_line.count('","') >= 3:
-                join_parts = join_line.strip('"').split('","')
-                join_on = '"' + '","'.join(join_parts[0:4]) + '"'
-            elif join_line.count('\t') >= 3:
+            if join_line.count('","') >= 4:
+                join_parts = join_line.split('","')
+                join_on = '","'.join(join_parts[0:4]) + '"'
+            elif join_line.count('\t') >= 4:
                 join_parts = join_line.split('\t')
                 join_on = '\t'.join(join_parts[0:4])
             else:
-                print("Must have at least 3 commas or tabs on each non-comment non-empty line of dictionary data; Skipping:", file=stderr)
+                print("Must have at least 4 commas or tabs on each",
+                    "non-comment non-empty line of dictionary data; Skipping:",
+                    file=stderr)
                 print(join_line, file=stderr)
                 join_line = join_file.readline()
                 continue
@@ -123,7 +125,7 @@ def main():
                 "line", linecount, "from any of", args.input, file=stderr)
             else:
                 this_entry = words[join_on]
-                this_entry += [join_parts[4]]
+                this_entry += [join_parts[4].strip('"')]
                 words[join_on] = this_entry
             join_line = join_file.readline()
     if args.verbose:

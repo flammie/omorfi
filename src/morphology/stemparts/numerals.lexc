@@ -1,131 +1,415 @@
-LEXICON kotus_5_NUMERAL/stemfiller
-	NounStem/Nominative	;
-0:i	NounAllomorph/PartitiveA	;
-0:i	NounAllomorph/IllativeVN	;
-0:i	NounStem/Singular	;
-0:e	NounAllomorph/PartitiveJA	;
-0:e	NounAllomorph/IllativeIHIN	;
-0:e	NounStem/Plural	;
-	NounAllomorph/GenitiveIEN	;
-
-LEXICON kotus_5i_NUMERAL/stemfiller
-0:i	NounStem/Nominative	;
-0:i	NounAllomorph/PartitiveA	;
-0:i	NounAllomorph/IllativeVN	;
-0:i	NounStem/Singular	;
-0:e	NounAllomorph/PartitiveJA	;
-0:e	NounAllomorph/IllativeIHIN	;
-0:e	NounStem/Plural	;
-	NounAllomorph/GenitiveIEN	;
-
-LEXICON kotus_8_NUMERAL/stemfiller
-	NounStem/Nominative	;
-	NounAllomorph/IllativeVN	;
-	NounAllomorph/PartitiveA	;
-	NounStem/Singular	;
-	NounAllomorph/PartitiveJA	;
-	NounAllomorph/GenitiveJEN	;
-	NounAllomorph/GenitiveIN	;
-	NounAllomorph/IllativeIHIN	;
-	NounStem/Plural	;
-
-LEXICON kotus_9_NUMERAL/stemfiller
-0:{aä}	NounStem/Nominative	;
-0:{aä}	NounAllomorph/PartitiveA	;
-0:{aä}	NounAllomorph/IllativeVN	;
-0:{aä}	NounAllomorph/GenitiveIN	;
-0:{aä}	NounStem/Singular	;
-0:{oö}	NounAllomorph/PartitiveJA	;
-0:{oö}	NounAllomorph/GenitiveJEN	;
-0:{oö}	NounAllomorph/IllativeIHIN	;
-0:{oö}	NounStem/Plural	;
-
-LEXICON kotus_10_NUMERAL/stemfiller
-0:{aä}	NounStem/Nominative	;
-0:{aä}	NounAllomorph/PartitiveA	;
-0:{aä}	NounAllomorph/IllativeVN	;
-0:{aä}	NounAllomorph/GenitiveIN	;
-0:{aä}	NounStem/Singular	;
-	NounAllomorph/PartitiveIA	;
-	NounAllomorph/GenitiveIEN	;
-	NounAllomorph/IllativeIIN	;
-	NounStem/Plural	;
-
-LEXICON kotus_10n_NUMERAL/stemfiller
-0:{aä}n	NounStem/Nominative	;
-0:{aä}	NounAllomorph/PartitiveA	;
-0:{aä}	NounAllomorph/IllativeVN	;
-0:{aä}	NounAllomorph/GenitiveIN	;
-0:{aä}	NounStem/Singular	;
-	NounAllomorph/PartitiveIA	;
-	NounAllomorph/GenitiveIEN	;
-	NounAllomorph/IllativeIIN	;
-	NounStem/Plural	;
-
-LEXICON kotus_27_NUMERAL/stemfiller
-0:si	NounStem/Nominative	;
-0:{t~~}e{F}	NounAllomorph/IllativeVN	;
-0:{t~~}e{F}	NounStem/Singular	;
-0:t	NounAllomorph/PartitiveTA	;
-0:t	NounAllomorph/GenitiveTEN	;
-0:s	NounAllomorph/PartitiveIA	;
-0:s	NounAllomorph/GenitiveIEN	;
-0:s	NounAllomorph/IllativeIIN	;
-0:s	NounStem/Plural	;
-
-LEXICON kotus_31_NUMERAL/stemfiller
-0:ksi	NounStem/Nominative	;
-0:h{t~~}e{F}	NounAllomorph/IllativeVN	;
-0:h{t~~}e{F}	NounStem/Singular	;
-0:h	NounAllomorph/PartitiveTA	;
-0:ks	NounAllomorph/PartitiveIA	;
-0:ks	NounAllomorph/GenitiveIEN	;
-0:ks	NounAllomorph/IllativeIIN	;
-0:ks	NounStem/Plural	;
-
-LEXICON kotus_32_NUMERAL/stemfiller
-0:{AV-}en	NounStem/Nominative	;
-0:{AV+}e	NounAllomorph/IllativeVN	;
-0:{AV+}e	NounStem/Singular	;
-0:{AV-}	NounAllomorph/PartitiveTA	;
-0:{AV-}	NounAllomorph/GenitiveTEN	;
-0:{AV+}	NounAllomorph/PartitiveIA	;
-0:{AV+}	NounAllomorph/GenitiveIEN	;
-0:{AV+}	NounAllomorph/IllativeIIN	;
-0:{AV+}	NounStem/Plural	;
+!! !!Numeral stem variation
+!! Numerals follow the same stem variation patterns as nouns, some of these
+!! being very rare to extinct for nouns. 
+LEXICON NUM_YKSI
 
 
-LEXICON kotus_38_NUMERAL/stemfiller
-0:nen	NounStem/Nominative	;
-0:se	NounAllomorph/IllativeVN	;
-0:se	NounStem/Singular	;
-0:s	NounAllomorph/PartitiveTA	;
-0:s	NounAllomorph/GenitiveTEN	;
-0:s	NounAllomorph/PartitiveIA	;
-0:s	NounAllomorph/GenitiveIEN	;
-0:s	NounAllomorph/IllativeIIN	;
-0:s	NounStem/Plural	;
-[COMPOUND_FORM=S]:s	Compounding		;
 
-LEXICON kotus_45_NUMERAL/stemfiller
-0:s	NounStem/Nominative	;
-0:n{t~~}e{J}	NounAllomorph/IllativeVN	;
-0:n{t~~}e{J}	NounStem/Singular	;
-0:t	NounAllomorph/PartitiveTA	;
-0:ns	NounAllomorph/PartitiveIA	;
-0:ns	NounAllomorph/GenitiveIEN	;
-0:ns	NounAllomorph/IllativeIIN	;
-0:ns	NounStem/Plural	;
 
-LEXICON kotus_46_NUMERAL/stemfiller
-0:t	NounStem/Nominative	;
-0:n{t~~}e{J}	NounAllomorph/IllativeVN	;
-0:n{t~~}e{J}	NounStem/Singular	;
-0:t	NounAllomorph/PartitiveTA	;
-0:n	NounAllomorph/GenitiveTEN	;
-0:ns	NounAllomorph/PartitiveIA	;
-0:ns	NounAllomorph/GenitiveIEN	;
-0:ns	NounAllomorph/IllativeIIN	;
-0:ns	NounStem/Plural	;
+
+
+
+
+
+
+
+0:ksi   NUM_FRONT_NOMINATIVE ;
+0:hte   NUM_FRONT_ILLATIVE_EN    ;
+0:hte   NUM_FRONT_STRONG_SINGULARS   ;
+0:hde   NUM_FRONT_WEAK_SINGULARS   ;
+0:h     NUM_FRONT_PARTITIVE_TÄ   ;
+0:ks    NUM_FRONT_PARTITIVE_IÄ   ;
+0:ks    NUM_FRONT_GENITIVE_IEN   ;
+0:ks    NUM_FRONT_ILLATIVE_IIN   ;
+0:ks    NUM_FRONT_PLURALS ;
+
+LEXICON NUM_KAKSI
+
+
+
+
+
+
+
+
+
+
+0:ksi   NUM_BACK_NOMINATIVE ;
+0:hte   NUM_BACK_ILLATIVE_EN    ;
+0:hte   NUM_BACK_STRONG_SINGULARS   ;
+0:hde   NUM_BACK_WEAK_SINGULARS   ;
+0:h     NUM_BACK_PARTITIVE_TA   ;
+0:ks    NUM_BACK_PARTITIVE_IA   ;
+0:ks    NUM_BACK_GENITIVE_IEN   ;
+0:ks    NUM_BACK_ILLATIVE_IIN   ;
+0:ks    NUM_BACK_PLURALS ;
+
+LEXICON NUM_KOLME
+
+
+
+
+
+
+
+
+
+
+
+0:e     NUM_BACK_NOMINATIVE  ;
+0:e     NUM_BACK_ILLATIVE_EN    ;
+0:e     NUM_BACK_SINGULARS  ;
+0:e     NUM_BACK_PARTITIVE_A_AN ;
+0       NUM_BACK_PARTITIVE_IA ;
+0       NUM_BACK_GENITIVE_IEN ;
+0       NUM_BACK_ILLATIVE_IIN ;
+0       NUM_BACK_PLURALS ; 
+
+LEXICON NUM_NELJÄ
+
+
+
+
+
+
+
+
+
+
+
+
+0:ä  NUM_FRONT_NOMINATIVE ;
+0:ä  NUM_FRONT_PARTITIVE_Ä    ;
+0:ä  NUM_FRONT_ILLATIVE_ÄN    ;
+0:ä  NUM_FRONT_GENITIVE_IN    ;
+0:ä  NUM_FRONT_SINGULARS   ;
+0    NUM_FRONT_PARTITIVE_IÄ   ;
+0    NUM_FRONT_GENITIVE_IEN   ;
+0    NUM_FRONT_ILLATIVE_IIN   ;
+0    NUM_FRONT_PLURALS ;
+
+LEXICON NUM_VIISI
+
+
+
+
+
+
+
+
+
+
+
+
+0:si    NUM_FRONT_NOMINATIVE ;
+0:te    NUM_FRONT_ILLATIVE_EN    ;
+0:te    NUM_FRONT_STRONG_SINGULARS   ;
+0:de    NUM_FRONT_WEAK_SINGULARS   ;
+0:s     NUM_FRONT_PLURALS ;
+0:t     NUM_FRONT_PARTITIVE_TÄ   ;
+0:t     NUM_FRONT_GENITIVE_TEN   ;
+0:s     NUM_FRONT_PARTITIVE_IÄ   ;
+0:s     NUM_FRONT_GENITIVE_IEN   ;
+0:s     NUM_FRONT_ILLATIVE_IIN   ;
+
+LEXICON NUM_KUUSI
+
+
+
+
+
+
+
+
+
+
+0:si    NUM_BACK_NOMINATIVE ;
+0:te    NUM_BACK_ILLATIVE_EN    ;
+0:te    NUM_BACK_STRONG_SINGULARS   ;
+0:de    NUM_BACK_WEAK_SINGULARS   ;
+0:s     NUM_BACK_PLURALS ;
+0:t     NUM_BACK_PARTITIVE_TA   ;
+0:t     NUM_BACK_GENITIVE_TEN   ;
+0:s     NUM_BACK_PARTITIVE_IA   ;
+0:s     NUM_BACK_GENITIVE_IEN   ;
+0:s     NUM_BACK_ILLATIVE_IIN   ;
+
+
+LEXICON NUM_KAHDEKSAN
+
+
+
+
+
+
+
+
+
+
+
+
+0:an    NUM_BACK_NOMINATIVE  ;
+0:a     NUM_BACK_PARTITIVE_A    ;
+0:a     NUM_BACK_ILLATIVE_AN    ;
+0:a     NUM_BACK_GENITIVE_IN    ;
+0:a     NUM_BACK_SINGULARS   ;
+0       NUM_BACK_PARTITIVE_IA   ;
+0       NUM_BACK_GENITIVE_IEN   ;
+0       NUM_BACK_ILLATIVE_IIN   ;
+0       NUM_BACK_PLURALS ;
+
+LEXICON NUM_YHDEKSÄN
+
+
+
+
+
+
+
+
+
+
+0:än    NUM_FRONT_NOMINATIVE  ;
+0:ä     NUM_FRONT_PARTITIVE_Ä    ;
+0:ä     NUM_FRONT_ILLATIVE_ÄN    ;
+0:ä     NUM_FRONT_GENITIVE_IN    ;
+0:ä     NUM_FRONT_SINGULARS   ;
+0       NUM_FRONT_PARTITIVE_IÄ   ;
+0       NUM_FRONT_GENITIVE_IEN   ;
+0       NUM_FRONT_ILLATIVE_IIN   ;
+0       NUM_FRONT_PLURALS ;
+
+LEXICON NUM_KYMMENEN
+
+
+
+
+
+
+
+
+
+
+
+0:en    NUM_FRONT_NOMINATIVE ;
+0:e     NUM_FRONT_ILLATIVE_EN    ;
+0:e     NUM_FRONT_SINGULARS   ;
+0       NUM_FRONT_PARTITIVE_TÄ   ;
+0       NUM_FRONT_GENITIVE_TEN   ;
+0       NUM_FRONT_PARTITIVE_IÄ   ;
+0       NUM_FRONT_GENITIVE_IEN   ;
+0       NUM_FRONT_ILLATIVE_IIN   ;
+0       NUM_FRONT_PLURALS ;
+
+LEXICON NUM_SATA
+
+
+
+
+
+
+
+
+
+
+0:ta    NUM_BACK_NOMINATIVE ;
+0:da    NUM_BACK_WEAK_SINGULARS ;
+0:ta    NUM_BACK_STRONG_SINGULARS   ;
+0:do    NUM_BACK_WEAK_PLURALS   ;
+0:to    NUM_BACK_STRONG_PLURALS ;
+0:ta    NUM_BACK_ILLATIVE_AN    ;
+0:ta    NUM_BACK_PARTITIVE_A    ;
+0:to    NUM_BACK_PARTITIVE_JA   ;
+0:to    NUM_BACK_GENITIVE_JEN   ;
+0:ta    NUM_BACK_GENITIVE_IN    ;
+0:to    NUM_BACK_ILLATIVE_IHIN  ;
+
+LEXICON NUM_TUHAT
+
+
+
+
+
+
+
+
+
+
+
+
+0:t     NUM_BACK_NOMINATIVE ;
+0:nte   NUM_BACK_ILLATIVE_EN    ;
+0:nte   NUM_BACK_STRONG_SINGULARS   ;
+0:nne   NUM_BACK_WEAK_SINGULARS   ;
+0:n     NUM_BACK_GENITIVE_TEN   ;
+0:t     NUM_BACK_PARTITIVE_TA   ;
+0:ns    NUM_BACK_PARTITIVE_IA   ;
+0:ns    NUM_BACK_GENITIVE_IEN   ;
+0:ns    NUM_BACK_ILLATIVE_IIN   ;
+0:ns    NUM_BACK_PLURALS ;
+
+LEXICON NUM_MILJOONA
+
+
+
+
+
+
+
+
+
+
+
+0:a     NUM_BACK_NOMINATIVE    ;
+0:a     NUM_BACK_SINGULARS    ;
+0       NUM_BACK_PLURALS  ;
+0:a     NUM_BACK_PARTITIVE_A      ;
+0:a     NUM_BACK_ILLATIVE_AN     ;
+0       NUM_BACK_PARTITIVE_IA    ;
+0       NUM_BACK_GENITIVE_IEN    ;
+0:a     NUM_BACK_GENITIVE_IN    ;
+0       NUM_BACK_ILLATIVE_IIN   ;
+
+
+LEXICON NUM_MILJARDI
+
+
+
+
+
+
+
+
+
+
+
+0:i NUM_BACK_NOMINATIVE ;
+0:i NUM_BACK_SINGULARS   ;
+0:e NUM_BACK_PLURALS ;
+0:i NUM_BACK_PARTITIVE_A    ;
+0:i NUM_BACK_ILLATIVE_IN    ;
+0:e NUM_BACK_PARTITIVE_JA   ;
+0:e NUM_BACK_ILLATIVE_IHIN  ;
+0   NUM_BACK_GENITIVE_IEN   ;
+
+
+LEXICON NUM_GOOGOL
+
+0   NUM_BACK_NOMINATIVE ;
+0:i NUM_BACK_SINGULARS   ;
+0:e NUM_BACK_PLURALS ;
+0:i NUM_BACK_PARTITIVE_A    ;
+0:i NUM_BACK_ILLATIVE_IN    ;
+0:e NUM_BACK_PARTITIVE_JA   ;
+0:e NUM_BACK_ILLATIVE_IHIN  ;
+0   NUM_BACK_GENITIVE_IEN   ;
+
+LEXICON NUM_PARI
+
+
+
+
+
+
+
+
+
+
+0:i     NUM_BACK_NOMINATIVE    ;
+0:i     NUM_BACK_SINGULARS    ;
+0:e     NUM_BACK_PLURALS   ;
+0:i     NUM_BACK_PARTITIVE_A_AN  ;
+0:i     NUM_BACK_ILLATIVE_IN ;
+0:e     NUM_BACK_PARTITIVE_JA    ;
+0       NUM_BACK_GENITIVE_IEN    ;
+0:e     NUM_BACK_ILLATIVE_IHIN   ;
+
+
+LEXICON NUM_ENSIMMÄINEN
+
+
+
+
+
+
+
+
+
+
+0:nen   NUM_FRONT_NOMINATIVE ;
+0:se    NUM_FRONT_ILLATIVE_EN    ;
+0:se    NUM_FRONT_SINGULARS   ;
+0:s     NUM_FRONT_PARTITIVE_TÄ   ;
+0:s     NUM_FRONT_GENITIVE_TEN   ;
+0:s     NUM_FRONT_PARTITIVE_IÄ   ;
+0:s     NUM_FRONT_GENITIVE_IEN   ;
+0:s     NUM_FRONT_ILLATIVE_IIN   ;
+0:s     NUM_FRONT_PLURALS ;
++Der/s:s    N_COMPOUND     ;
+
+LEXICON NUM_TOINEN
+
+
+
+
+
+
+
+
+
+
+
+0:nen   NUM_BACK_NOMINATIVE ;
+0:se    NUM_BACK_ILLATIVE_EN    ;
+0:se    NUM_BACK_SINGULARS   ;
+0:s     NUM_BACK_PARTITIVE_TA   ;
+0:s     NUM_BACK_GENITIVE_TEN   ;
+0:s     NUM_BACK_PARTITIVE_IA   ;
+0:s     NUM_BACK_GENITIVE_IEN   ;
+0:s     NUM_BACK_ILLATIVE_IIN   ;
+0:s     NUM_BACK_PLURALS ;
++Der/s:s    N_COMPOUND     ;
+
+LEXICON NUM_KOLMAS
+
+
+
+
+
+
+
+
+
+
+0:s     NUM_BACK_NOMINATIVE ;
+0:nte   NUM_BACK_ILLATIVE_EN    ;
+0:nte   NUM_BACK_STRONG_SINGULARS   ;
+0:nne   NUM_BACK_WEAK_SINGULARS   ;
+0:t     NUM_BACK_PARTITIVE_TA   ;
+0:ns    NUM_BACK_PARTITIVE_IA   ;
+0:ns    NUM_BACK_GENITIVE_IEN   ;
+0:ns    NUM_BACK_ILLATIVE_IIN   ;
+0:ns    NUM_BACK_PLURALS ;
+
+LEXICON NUM_NELJÄS
+
+
+
+
+
+
+
+
+
+
+0:s     NUM_FRONT_NOMINATIVE ;
+0:nte   NUM_FRONT_ILLATIVE_EN    ;
+0:nte   NUM_FRONT_STRONG_SINGULARS   ;
+0:nne   NUM_FRONT_WEAK_SINGULARS   ;
+0:t     NUM_FRONT_PARTITIVE_TÄ   ;
+0:ns    NUM_FRONT_PARTITIVE_IÄ   ;
+0:ns    NUM_FRONT_GENITIVE_IEN   ;
+0:ns    NUM_FRONT_ILLATIVE_IIN   ;
+0:ns    NUM_FRONT_PLURALS ;
 
 

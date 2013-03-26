@@ -1,321 +1,150 @@
-! Digit strings inflect with colons
 
-LEXICON DigitStem5i
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:j{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
 
-LEXICON DigitStem7
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:een	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_FRONT_POSS
+[POSS=SG1]:%>ni  DIGITS_FRONT_CLIT_OPT        ;
+[POSS=SG2]:%>si  DIGITS_FRONT_CLIT_OPT        ;
+[POSS=SG3]:%>nsä DIGITS_FRONT_CLIT_OPT        ;
+[POSS=PL1]:%>mme DIGITS_FRONT_CLIT_OPT        ;
+[POSS=PL2]:%>nne DIGITS_FRONT_CLIT_OPT        ;
+[POSS=PL3]:%>nsä DIGITS_FRONT_CLIT_OPT        ;
 
-LEXICON DigitStem9
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:{aä}{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:{aä}{aä}n	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:j{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_BACK_POSS
+[POSS=SG1]:%>ni  DIGITS_BACK_CLIT_OPT        ;
+[POSS=SG2]:%>si  DIGITS_BACK_CLIT_OPT        ;
+[POSS=SG3]:%>nsa DIGITS_BACK_CLIT_OPT        ;
+[POSS=PL1]:%>mme DIGITS_BACK_CLIT_OPT        ;
+[POSS=PL2]:%>nne DIGITS_BACK_CLIT_OPT        ;
+[POSS=PL3]:%>nsa DIGITS_BACK_CLIT_OPT        ;
 
-LEXICON DigitStem10
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:{aä}{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:{aä}{aä}n	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_BACK_POSS_AN
+[POSS=SG3]:%>an    DIGITS_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>an    DIGITS_BACK_CLIT_OPT     ;
 
-LEXICON DigitStem27
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:t{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:een	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_BACK_POSS_EN
+[POSS=SG3]:%>en    DIGITS_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>en    DIGITS_BACK_CLIT_OPT     ;
 
-LEXICON DigitStem31
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:t{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:teen	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_FRONT_POSS_EN
+[POSS=SG3]:%>en    DIGITS_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>en    DIGITS_FRONT_CLIT_OPT     ;
 
-LEXICON DigitStem32
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:t{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:een	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_FRONT_POSS_ÄN
+[POSS=SG3]:%>än    DIGITS_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>än    DIGITS_FRONT_CLIT_OPT     ;
 
-LEXICON DigitStem34
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:t{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:ään	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_BACK_CLIT
+[CLIT=HAN]:%>han   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hankaan  #        ;
+[CLIT=HAN][CLIT=KO]:%>hanko #        ;
+[CLIT=HAN][CLIT=PA]:%>hanpa #        ;
+[CLIT=KO]:%>ko #        ;
+[CLIT=KO][CLIT=HAN]:%>kohan #        ;
+[CLIT=KO][CLIT=KAAN]:%>kokaan    #        ;
+[CLIT=KO][CLIT=KIN]:%>kokin    #        ;
+[CLIT=KO][CLIT=PA]:%>kopa   #        ;
+[CLIT=KO][CLIT=S]:%>kos    #        ;
+[CLIT=PA]:%>pa #        ;
+[CLIT=PA][CLIT=HAN]:%>pahan #        ;
+[CLIT=PA][CLIT=KAAN]:%>pakaan    #        ;
+[CLIT=PA][CLIT=KIN]:%>pakin    #        ;
+[CLIT=PA][CLIT=KO]:%>pako   #        ;
+[CLIT=PA][CLIT=S]:%>pas    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhan  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkaan #        ;
+[CLIT=KIN][CLIT=KO]:%>kinko    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpa    #        ;
+[CLIT=KAAN]:%>kaan  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>kaanhan  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>kaankin #        ;
+[CLIT=KAAN][CLIT=KO]:%>kaanko    #        ;
+[CLIT=KAAN][CLIT=PA]:%>kaanpa    #        ;
 
-LEXICON DigitStem38
-[NUM=SG][CASE=NOM]:%:nen	Clitic/Optional	;
-[NUM=PL][CASE=NOM]:%:set	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:sen	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:seen	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:sett{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:selt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:sell{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:selle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:sest{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:sen{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:sess{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:seksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:sekse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:si{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:siin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:sitt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:silt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:sill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:sille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:sin{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:sine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:sist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:siss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:sin	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:siksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:sikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_FRONT_CLIT
+[CLIT=HAN]:%>hän   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hänkään  #        ;
+[CLIT=HAN][CLIT=KO]:%>hänkö #        ;
+[CLIT=HAN][CLIT=PA]:%>hänpä #        ;
+[CLIT=KO]:%>kö #        ;
+[CLIT=KO][CLIT=HAN]:%>köhän #        ;
+[CLIT=KO][CLIT=KAAN]:%>kökään    #        ;
+[CLIT=KO][CLIT=KIN]:%>kökin    #        ;
+[CLIT=KO][CLIT=PA]:%>köpä   #        ;
+[CLIT=KO][CLIT=S]:%>kös    #        ;
+[CLIT=PA]:%>pä #        ;
+[CLIT=PA][CLIT=HAN]:%>pähän #        ;
+[CLIT=PA][CLIT=KAAN]:%>päkään    #        ;
+[CLIT=PA][CLIT=KIN]:%>päkin    #        ;
+[CLIT=PA][CLIT=KO]:%>päkö   #        ;
+[CLIT=PA][CLIT=S]:%>päs    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhän  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkään #        ;
+[CLIT=KIN][CLIT=KO]:%>kinkö    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpä    #        ;
+[CLIT=KAAN]:%>kään  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>käänhän  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>käänkin #        ;
+[CLIT=KAAN][CLIT=KO]:%>käänkö    #        ;
+[CLIT=KAAN][CLIT=PA]:%>käänpä    #        ;
 
-LEXICON DigitStem45
-[NUM=SG][CASE=NOM]:%:s	Clitic/Optional	;
-[NUM=PL][CASE=NOM]:%:nnet	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:nnen	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:nteen	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:nnett{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:nnelt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:nnell{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:nnelle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:nnest{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nten{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:nness{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:nneksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:nnekse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:nsi{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:nsiin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:nsitt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:nsilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:nsill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:nsille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:nsin{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:nsine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:nsist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:nsiss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:nsin	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:nsiksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:nsikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_BACK_CLIT_OPT
+0    #   ;
+0   DIGITS_BACK_CLIT    ;
 
-LEXICON DigitStem46
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:t{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:een	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:i{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
+LEXICON DIGITS_FRONT_CLIT_OPT
+0    #   ;
+0   DIGITS_FRONT_CLIT    ;
 
+LEXICON DIGITS_BACK_POSS_AN_OPT
+0    DIGITS_BACK_POSS   ;
+0    DIGITS_BACK_POSS_AN ;
+0    DIGITS_BACK_CLIT ;
+0    #    ;
+
+LEXICON DIGITS_FRONT_POSS_ÄN_OPT
+0    DIGITS_FRONT_POSS   ;
+0    DIGITS_FRONT_POSS_ÄN  ;
+0    DIGITS_FRONT_CLIT ;
+0    #    ;
+
+LEXICON DIGITS_BACK_POSS_EN_OPT
+0    DIGITS_BACK_POSS   ;
+0    DIGITS_BACK_POSS_EN ;
+0    DIGITS_BACK_CLIT ;
+0    #    ;
+
+LEXICON DIGITS_FRONT_POSS_EN_OPT
+0    DIGITS_FRONT_POSS   ;
+0    DIGITS_FRONT_POSS_EN  ;
+0    DIGITS_FRONT_CLIT ;
+0    #    ;
+
+LEXICON DIGITS_BACK_POSS_OPT
+0    DIGITS_BACK_POSS   ;
+0    DIGITS_BACK_CLIT ;
+0    #    ;
+
+LEXICON DIGITS_FRONT_POSS_OPT
+0    DIGITS_FRONT_POSS   ;
+0    DIGITS_FRONT_CLIT ;
+0    #    ;
+
+LEXICON DIGITS_BACK_POSS_AN_OBL
+0   DIGITS_BACK_POSS  ;
+0   DIGITS_BACK_POSS_AN   ;
+
+LEXICON DIGITS_BACK_POSS_EN_OBL
+0   DIGITS_BACK_POSS  ;
+0   DIGITS_BACK_POSS_EN   ;
+
+LEXICON DIGITS_FRONT_POSS_EN_OBL
+0   DIGITS_FRONT_POSS  ;
+0   DIGITS_FRONT_POSS_EN   ;
+
+LEXICON DIGITS_FRONT_POSS_ÄN_OBL
+0   DIGITS_FRONT_POSS  ;
+0   DIGITS_FRONT_POSS_ÄN   ;
+
+LEXICON DIGITS_COMPOUND
+-:0-     NOMINAL   ;

@@ -1,200 +1,2620 @@
-LEXICON kotus_1_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_1_NOUN/stemfiller	;
-	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
 
-LEXICON kotus_2_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_2_NOUN/stemfiller	;
-	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_3_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_3_NOUN/stemfiller	;
-	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_4_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_4_NOUN/stemfiller	;
-	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_5i_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_5i_NOUN/stemfiller	;
-0:i	AdjectiveStem/Comparative	;
-0:e	AdjectiveStem/Superlative	;
-	NounAllomorph/GenitiveIEN	;
-
-! LEXICON kotus_6_ADJECTIVE/stemfiller
-! [CMP=POS]:0	kotus_6_NOUN/stemfiller	;
-! 0:i	AdjectiveStem/Comparative	;
-! 0:e	AdjectiveStem/Superlative	;
-
-LEXICON kotus_6i_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_6i_NOUN/stemfiller	;
-0:i	AdjectiveStem/Comparative	;
-0:e	AdjectiveStem/Superlative	;
-
-! LEXICON kotus_7_ADJECTIVE/stemfiller
-! [CMP=POS]:0	kotus_7_NOUN/stemfiller	;
-! 0:i	AdjectiveStem/Comparative	;
-! 0:e	AdjectiveStem/Superlative	;
-
-LEXICON kotus_8_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_8_NOUN/stemfiller	;
-	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_9_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_9_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-0:e	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_10_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_10_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-0:e AdjectiveStem/Comparative   ;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_11_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_11_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_12_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_12_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_13_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_13_NOUN/stemfiller	;
-0:e	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_14_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_14_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-0:e	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_15_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_15_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_16_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_16_NOUN/stemfiller	;
-0:{aä}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_17_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_17_NOUN/stemfiller	;
-0:{aeiouyäö}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_18_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_18_NOUN/stemfiller	;
-0:{aeiouyäö}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-!LEXICON kotus_20_ADJECTIVE/stemfiller
-![CMP=POS]:0	kotus_20_NOUN/stemfiller	;
-!0:{aeiouyäö}	AdjectiveStem/Comparative	;
-!	AdjectiveStem/Superlative	;
-
-LEXICON kotus_21_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_21_NOUN/stemfiller	;
-0:{aeiouyäö}	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_26_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_26_NOUN/stemfiller	;
-0:e	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
-
-LEXICON kotus_27_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_27_NOUN/stemfiller	;
-0:{t~~}e{F}	AdjectiveStem/Comparative	;
-0:s	AdjectiveStem/Superlative	;
-
-LEXICON kotus_32_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_32_NOUN/stemfiller	;
-0:{AV+}e	AdjectiveStem/Comparative	;
-0:{AV+}	AdjectiveStem/Superlative	;
-
-LEXICON kotus_33_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_33_NOUN/stemfiller	;
-0:{AV+}me	AdjectiveStem/Comparative	;
-0:{AV+}m	AdjectiveStem/Superlative	;
-
-LEXICON kotus_34_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_34_NOUN/stemfiller	;
-0:{AV+}m{aä}	AdjectiveStem/Comparative	;
-0:{AV+}m	AdjectiveStem/Superlative	;
-
-LEXICON kotus_35_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_35_NOUN/stemfiller	;
-0:{AV+}m{aä}	AdjectiveStem/Comparative	;
-0:{AV+}m	AdjectiveStem/Superlative	;
-
-LEXICON kotus_36_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_36_NOUN/stemfiller	;
-0:m{p~~}{aä}{H}	AdjectiveStem/Comparative	;
-0:m{p~~}{H}	AdjectiveStem/Superlative	;
-
-LEXICON kotus_37_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_37_NOUN/stemfiller	;
-0:m{p~~}{aä}{H}	AdjectiveStem/Comparative	;
-0:m{p~~}{H}	AdjectiveStem/Superlative	;
-
-LEXICON kotus_38_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_38_NOUN/stemfiller	;
-0:se	AdjectiveStem/Comparative	;
-0:s	AdjectiveStem/Superlative	;
+LEXICON A_TUMMAHKO
 
 
-LEXICON kotus_39_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_39_NOUN/stemfiller	;
-0:kse	AdjectiveStem/Comparative	;
-0:ks	AdjectiveStem/Superlative	;
 
-LEXICON kotus_40_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_40_NOUN/stemfiller	;
-0:{t~~}e{F} AdjectiveStem/Comparative	;
-0:ks	AdjectiveStem/Superlative	;
 
-LEXICON kotus_41_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_41_NOUN/stemfiller	;
-0:{AV+}{aeiouyäö}	AdjectiveStem/Comparative	;
-0:{AV+}	AdjectiveStem/Superlative	;
 
-LEXICON kotus_42_ADJECTIVE/stemfiller
-[CMP=POS]:0 kotus_42_NOUN/stemfiller    ;
-0:he    AdjectiveStem/Comparative   ;
-0:h     AdjectiveStem/Superlative   ;
 
-LEXICON kotus_43_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_43_NOUN/stemfiller	;
-0:e	AdjectiveStem/Comparative	;
-	AdjectiveStem/Superlative	;
 
-LEXICON kotus_44_ADJECTIVE/stemfiller
-[CMP=POS]:0 kotus_44_NOUN/stemfiller    ;
-0:{aeiouyäö}    AdjectiveStem/Comparative   ;
-0   AdjectiveStem/Superlative   ;
 
-LEXICON kotus_47_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_47_NOUN/stemfiller	;
-0:ee	AdjectiveStem/Comparative	;
-0:e	AdjectiveStem/Superlative	;
 
-LEXICON kotus_48_ADJECTIVE/stemfiller
-[CMP=POS]:0	kotus_48_NOUN/stemfiller	;
-0:{AV+}{aeiouyäö}	AdjectiveStem/Comparative	;
-0:{AV+}	AdjectiveStem/Superlative	;
 
-LEXICON exceptional_10_ADJECTIVE/stemfiller
-[CMP=POS]:tk	kotus_10_NOUN/stemfiller	;
-0:de	AdjectiveStem/Comparative	;
-0:te	AdjectiveStem/Comparative	;
-0:s	AdjectiveStem/Superlative	;
+
+
+
+
+
+
+0  A_BACK_NOMINATIVE    ;
+0  A_BACK_SINGULARS    ;
+0  A_BACK_PLURALS ;
+0  A_BACK_PARTITIVE_A_AN ;
+0  A_BACK_ILLATIVE_ON    ;
+0  A_BACK_PARTITIVE_JA    ;
+0  A_BACK_GENITIVE_JEN    ;
+0  A_BACK_ILLATIVE_IHIN   ;
+0  A_BACK_COMPARATIVE   ;
+0  A_BACK_SUPERLATIVE    ;
+
+LEXICON A_VALKAISTU
+
+
+
+
+
+
+
+
+
+
+
+
+
+0  A_BACK_NOMINATIVE    ;
+0  A_BACK_SINGULARS    ;
+0  A_BACK_PLURALS ;
+0  A_BACK_PARTITIVE_A_AN ;
+0  A_BACK_ILLATIVE_UN    ;
+0  A_BACK_PARTITIVE_JA    ;
+0  A_BACK_GENITIVE_JEN    ;
+0  A_BACK_ILLATIVE_IHIN   ;
+0  A_BACK_COMPARATIVE   ;
+0  A_BACK_SUPERLATIVE   ;
+
+LEXICON A_HÄPÄISTY
+
+
+
+
+
+
+
+
+
+
+
+
+
+0  A_FRONT_NOMINATIVE    ;
+0  A_FRONT_SINGULARS    ;
+0  A_FRONT_PLURALS ;
+0  A_FRONT_PARTITIVE_Ä_ÄN ;
+0  A_FRONT_ILLATIVE_YN    ;
+0  A_FRONT_PARTITIVE_JÄ    ;
+0  A_FRONT_GENITIVE_JEN    ;
+0  A_FRONT_ILLATIVE_IHIN   ;
+0  A_FRONT_COMPARATIVE   ;
+0  A_FRONT_SUPERLATIVE   ;
+
+LEXICON A_HÖLÖ
+
+
+
+
+
+
+
+
+
+
+
+
+0  A_FRONT_NOMINATIVE    ;
+0  A_FRONT_SINGULARS    ;
+0  A_FRONT_PLURALS ;
+0  A_FRONT_PARTITIVE_Ä_ÄN ;
+0  A_FRONT_ILLATIVE_ÖN    ;
+0  A_FRONT_PARTITIVE_JÄ    ;
+0  A_FRONT_GENITIVE_JEN    ;
+0  A_FRONT_ILLATIVE_IHIN   ;
+0  A_FRONT_COMPARATIVE   ;
+0  A_FRONT_SUPERLATIVE   ;
+
+LEXICON A_TOOPE
+
+
+
+
+
+
+
+
+
+
+
+0  A_BACK_NOMINATIVE    ;
+0  A_BACK_SINGULARS    ;
+0  A_BACK_PLURALS ;
+0  A_BACK_PARTITIVE_A_AN ;
+0  A_BACK_ILLATIVE_EN    ;
+0  A_BACK_PARTITIVE_JA    ;
+0  A_BACK_GENITIVE_JEN    ;
+0  A_BACK_GENITIVE_IN    ;
+0  A_BACK_ILLATIVE_IHIN   ;
+
+
+LEXICON A_BEIGE
+
+
+0    A_FRONT_NOMINATIVE    ;
+0    A_FRONT_SINGULARS    ;
+0    A_FRONT_PLURALS ;
+0    A_FRONT_PARTITIVE_Ä_ÄN ;
+0    A_FRONT_ILLATIVE_EN    ;
+0    A_FRONT_PARTITIVE_JÄ    ;
+0    A_FRONT_GENITIVE_JEN    ;
+0    A_FRONT_GENITIVE_IN    ;
+0    A_FRONT_ILLATIVE_IHIN   ;
+0    A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+
+LEXICON A_KOHELO
+
+
+
+
+
+
+
+
+0  A_BACK_NOMINATIVE    ;
+0  A_BACK_SINGULARS    ;
+0  A_BACK_PLURALS ;
+0  A_BACK_PARTITIVE_A_AN ;
+0  A_BACK_ILLATIVE_ON    ;
+0  A_BACK_PARTITIVE_JA    ;
+0  A_BACK_PARTITIVE_ITA    ;
+0  A_BACK_GENITIVE_JEN    ;
+0  A_BACK_GENITIVE_IDEN ;
+0  A_BACK_GENITIVE_ITTEN ;
+0  A_BACK_ILLATIVE_IHIN   ;
+0  A_BACK_COMPARATIVE   ;
+0  A_BACK_SUPERLATIVE    ;
+
+LEXICON A_LÖPERÖ
+
+
+
+
+
+0  A_FRONT_NOMINATIVE    ;
+0  A_FRONT_SINGULARS    ;
+0  A_FRONT_PLURALS ;
+0  A_FRONT_PARTITIVE_Ä_ÄN ;
+0  A_FRONT_ILLATIVE_ÖN    ;
+0  A_FRONT_PARTITIVE_ITÄ  ;
+0  A_FRONT_PARTITIVE_JÄ    ;
+0  A_FRONT_GENITIVE_JEN    ;
+0  A_FRONT_GENITIVE_IDEN ;
+0  A_FRONT_GENITIVE_ITTEN ;
+0  A_FRONT_ILLATIVE_IHIN   ;
+0  A_FRONT_COMPARATIVE   ;
+0  A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_AUTIO
+
+
+
+
+
+
+
+
+0  A_BACK_NOMINATIVE    ;
+0  A_BACK_SINGULARS    ;
+0  A_BACK_PLURALS ;
+0  A_BACK_PARTITIVE_TA ;
+0  A_BACK_ILLATIVE_ON    ;
+0  A_BACK_PARTITIVE_ITA    ;
+0  A_BACK_GENITIVE_IDEN ;
+0  A_BACK_GENITIVE_ITTEN ;
+0  A_BACK_ILLATIVE_IHIN   ;
+0  A_BACK_COMPARATIVE   ;
+0  A_BACK_SUPERLATIVE    ;
+
+LEXICON A_RIIVIÖ
+
+
+
+
+
+0  A_BACK_NOMINATIVE    ;
+0  A_FRONT_SINGULARS    ;
+0  A_FRONT_PLURALS ;
+0  A_FRONT_PARTITIVE_TÄ ;
+0  A_FRONT_ILLATIVE_ÖN    ;
+0  A_FRONT_PARTITIVE_ITÄ    ;
+0  A_FRONT_GENITIVE_IDEN ;
+0  A_FRONT_GENITIVE_ITTEN ;
+0  A_FRONT_ILLATIVE_IHIN   ;
+0  A_FRONT_COMPARATIVE   ;
+0  A_FRONT_SUPERLATIVE    ;
+
+
+
+
+
+
+LEXICON A_KOLKKO
+
+
+
+
+
+
+0:ko    A_BACK_NOMINATIVE    ;
+0:ko    A_BACK_STRONG_SINGULARS    ;
+0:o    A_BACK_WEAK_SINGULARS    ;
+0:ko    A_BACK_STRONG_PLURALS ;
+0:o    A_BACK_WEAK_PLURALS    ;
+0:ko    A_BACK_PARTITIVE_A_AN ;
+0:ko    A_BACK_ILLATIVE_ON    ;
+0:ko    A_BACK_PARTITIVE_JA    ;
+0:ko    A_BACK_GENITIVE_JEN    ;
+0:ko    A_BACK_ILLATIVE_IHIN   ;
+0:o    A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE   ;
+
+
+LEXICON A_VIRKKU
+
+
+
+
+
+0:ku        A_BACK_NOMINATIVE ;
+0:ku        A_BACK_STRONG_SINGULARS ;
+0:u        A_BACK_WEAK_SINGULARS ;
+0:ku        A_BACK_STRONG_PLURALS ;
+0:u        A_BACK_WEAK_PLURALS ;
+0:ku        A_BACK_PARTITIVE_A_AN ;
+0:ku        A_BACK_ILLATIVE_UN ;
+0:ku        A_BACK_PARTITIVE_JA ;
+0:ku        A_BACK_GENITIVE_JEN ;
+0:ku        A_BACK_ILLATIVE_IHIN ;
+0:u        A_BACK_COMPARATIVE ;
+0:u        A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_SÄIKKY
+
+
+
+
+
+0:ky        A_FRONT_NOMINATIVE ;
+0:ky        A_FRONT_STRONG_SINGULARS ;
+0:y        A_FRONT_WEAK_SINGULARS ;
+0:ky        A_FRONT_STRONG_PLURALS ;
+0:y        A_FRONT_WEAK_PLURALS ;
+0:ky        A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ky        A_FRONT_ILLATIVE_YN ;
+0:ky        A_FRONT_PARTITIVE_JÄ ;
+0:ky        A_FRONT_GENITIVE_JEN ;
+0:ky        A_FRONT_ILLATIVE_IHIN ;
+0:y        A_FRONT_COMPARATIVE ;
+0:y        A_FRONT_SUPERLATIVE ;
+
+LEXICON A_KÖKKÖ
+
+
+
+
+
+0:kö        A_FRONT_NOMINATIVE ;
+0:kö        A_FRONT_STRONG_SINGULARS ;
+0:ö        A_FRONT_WEAK_SINGULARS ;
+0:kö        A_FRONT_STRONG_PLURALS ;
+0:ö        A_FRONT_WEAK_PLURALS ;
+0:kö        A_FRONT_PARTITIVE_Ä_ÄN ;
+0:kö        A_FRONT_ILLATIVE_ÖN ;
+0:kö        A_FRONT_PARTITIVE_JÄ ;
+0:kö        A_FRONT_GENITIVE_JEN ;
+0:kö        A_FRONT_ILLATIVE_IHIN ;
+0:ö        A_FRONT_COMPARATIVE ;
+0:ö        A_FRONT_SUPERLATIVE ;
+
+
+
+LEXICON A_SUIPPO
+
+
+
+
+
+0:po        A_BACK_NOMINATIVE ;
+0:po        A_BACK_STRONG_SINGULARS ;
+0:o        A_BACK_WEAK_SINGULARS ;
+0:po        A_BACK_STRONG_PLURALS ;
+0:o        A_BACK_WEAK_PLURALS ;
+0:po        A_BACK_PARTITIVE_A_AN ;
+0:po        A_BACK_ILLATIVE_ON ;
+0:po        A_BACK_PARTITIVE_JA ;
+0:po        A_BACK_GENITIVE_JEN ;
+0:po        A_BACK_ILLATIVE_IHIN ;
+0:o        A_BACK_COMPARATIVE ;
+0:o        A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_IKÄLOPPU
+
+
+
+
+
+
+0:pu        A_BACK_NOMINATIVE ;
+0:pu        A_BACK_STRONG_SINGULARS ;
+0:u        A_BACK_WEAK_SINGULARS ;
+0:pu        A_BACK_STRONG_PLURALS ;
+0:u        A_BACK_WEAK_PLURALS ;
+0:pu        A_BACK_PARTITIVE_A_AN ;
+0:pu        A_BACK_ILLATIVE_UN ;
+0:pu        A_BACK_PARTITIVE_JA ;
+0:pu        A_BACK_GENITIVE_JEN ;
+0:pu        A_BACK_ILLATIVE_IHIN ;
+0:u        A_BACK_COMPARATIVE ;
+0:u        A_BACK_SUPERLATIVE ;
+
+
+
+
+LEXICON A_LÖRPPÖ
+
+
+
+
+
+0:pö        A_FRONT_NOMINATIVE ;
+0:pö        A_FRONT_STRONG_SINGULARS ;
+0:ö        A_FRONT_WEAK_SINGULARS ;
+0:pö        A_FRONT_STRONG_PLURALS ;
+0:ö        A_FRONT_WEAK_PLURALS ;
+0:pö        A_FRONT_PARTITIVE_Ä_ÄN ;
+0:pö        A_FRONT_ILLATIVE_ÖN ;
+0:pö        A_FRONT_PARTITIVE_JÄ ;
+0:pö        A_FRONT_GENITIVE_JEN ;
+0:pö        A_FRONT_ILLATIVE_IHIN ;
+0:ö        A_FRONT_COMPARATIVE ;
+0:ö        A_FRONT_SUPERLATIVE ;
+
+
+
+LEXICON A_VELTTO
+
+
+
+
+
+0:to        A_BACK_NOMINATIVE ;
+0:to        A_BACK_STRONG_SINGULARS ;
+0:o        A_BACK_WEAK_SINGULARS ;
+0:to        A_BACK_STRONG_PLURALS ;
+0:o        A_BACK_WEAK_PLURALS ;
+0:to        A_BACK_PARTITIVE_A_AN ;
+0:to        A_BACK_ILLATIVE_ON ;
+0:to        A_BACK_PARTITIVE_JA ;
+0:to        A_BACK_GENITIVE_JEN ;
+0:to        A_BACK_ILLATIVE_IHIN ;
+0:o        A_BACK_COMPARATIVE ;
+0:o        A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_VIMMATTU
+
+
+
+
+
+
+
+0:tu        A_BACK_NOMINATIVE ;
+0:tu        A_BACK_STRONG_SINGULARS ;
+0:u        A_BACK_WEAK_SINGULARS ;
+0:tu        A_BACK_STRONG_PLURALS ;
+0:u        A_BACK_WEAK_PLURALS ;
+0:tu        A_BACK_PARTITIVE_A_AN ;
+0:tu        A_BACK_ILLATIVE_UN ;
+0:tu        A_BACK_PARTITIVE_JA ;
+0:tu        A_BACK_GENITIVE_JEN ;
+0:tu        A_BACK_ILLATIVE_IHIN ;
+0:u        A_BACK_COMPARATIVE ;
+0:u        A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_YLENNETTY
+
+
+
+
+
+0:ty        A_FRONT_NOMINATIVE ;
+0:ty        A_FRONT_STRONG_SINGULARS ;
+0:y        A_FRONT_WEAK_SINGULARS ;
+0:ty        A_FRONT_STRONG_PLURALS ;
+0:y        A_FRONT_WEAK_PLURALS ;
+0:ty        A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty        A_FRONT_ILLATIVE_YN ;
+0:ty        A_FRONT_PARTITIVE_JÄ ;
+0:ty        A_FRONT_GENITIVE_JEN ;
+0:ty        A_FRONT_ILLATIVE_IHIN ;
+0:y        A_FRONT_COMPARATIVE ;
+0:y        A_FRONT_SUPERLATIVE ;
+
+LEXICON A_KYYTTÖ
+
+
+
+
+
+0:tö       A_FRONT_NOMINATIVE ;
+0:tö       A_FRONT_STRONG_SINGULARS ;
+0:ö        A_FRONT_WEAK_SINGULARS ;
+0:tö       A_FRONT_STRONG_PLURALS ;
+0:ö        A_FRONT_WEAK_PLURALS ;
+0:tö       A_FRONT_PARTITIVE_Ä_ÄN ;
+0:tö       A_FRONT_ILLATIVE_ÖN ;
+0:tö       A_FRONT_PARTITIVE_JÄ ;
+0:tö       A_FRONT_GENITIVE_JEN ;
+0:tö       A_FRONT_ILLATIVE_IHIN ;
+0:ö        A_FRONT_COMPARATIVE ;
+0:ö        A_FRONT_SUPERLATIVE ;
+
+
+LEXICON A_LAKO
+
+
+
+
+
+0:ko       A_BACK_NOMINATIVE ;
+0:ko       A_BACK_STRONG_SINGULARS ;
+0:o        A_BACK_WEAK_SINGULARS ;
+0:’o       A_BACK_WEAK_SINGULARS ;
+0:ko       A_BACK_STRONG_PLURALS ;
+0:o        A_BACK_WEAK_PLURALS ;
+0:’o       A_BACK_WEAK_PLURALS ;
+0:ko       A_BACK_PARTITIVE_A_AN ;
+0:ko       A_BACK_ILLATIVE_ON ;
+0:ko       A_BACK_PARTITIVE_JA ;
+0:ko       A_BACK_GENITIVE_JEN ;
+0:ko       A_BACK_ILLATIVE_IHIN ;
+0:o        A_BACK_COMPARATIVE ;
+0:o        A_BACK_SUPERLATIVE ;
+
+
+
+
+
+
+
+LEXICON A_KELPO
+
+
+
+
+
+0:po        A_BACK_NOMINATIVE ;
+0:po        A_BACK_STRONG_SINGULARS ;
+0:vo       A_BACK_WEAK_SINGULARS ;
+0:po        A_BACK_STRONG_PLURALS ;
+0:vo       A_BACK_WEAK_PLURALS ;
+0:po        A_BACK_PARTITIVE_A_AN ;
+0:po        A_BACK_ILLATIVE_ON ;
+0:po        A_BACK_PARTITIVE_JA ;
+0:po        A_BACK_GENITIVE_JEN ;
+0:po        A_BACK_ILLATIVE_IHIN ;
+0:vo       A_BACK_COMPARATIVE ;
+0:vo       A_BACK_SUPERLATIVE ;
+
+
+
+
+
+
+LEXICON A_MIETO
+
+
+
+
+
+0:to        A_BACK_NOMINATIVE ;
+0:to        A_BACK_STRONG_SINGULARS ;
+0:do       A_BACK_WEAK_SINGULARS ;
+0:to        A_BACK_STRONG_PLURALS ;
+0:do       A_BACK_WEAK_PLURALS ;
+0:to        A_BACK_PARTITIVE_A_AN ;
+0:to        A_BACK_ILLATIVE_ON ;
+0:to        A_BACK_PARTITIVE_JA ;
+0:to        A_BACK_GENITIVE_JEN ;
+0:to        A_BACK_ILLATIVE_IHIN ;
+0:do       A_BACK_COMPARATIVE ;
+0:do       A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_VIIPALOITU
+
+
+
+
+
+
+
+0:tu        A_BACK_NOMINATIVE ;
+0:tu        A_BACK_STRONG_SINGULARS ;
+0:du       A_BACK_WEAK_SINGULARS ;
+0:tu        A_BACK_STRONG_PLURALS ;
+0:du       A_BACK_WEAK_PLURALS ;
+0:tu        A_BACK_PARTITIVE_A_AN ;
+0:tu        A_BACK_ILLATIVE_UN ;
+0:tu        A_BACK_PARTITIVE_JA ;
+0:tu        A_BACK_GENITIVE_JEN ;
+0:tu        A_BACK_ILLATIVE_IHIN ;
+0:du       A_BACK_COMPARATIVE ;
+0:du       A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_YKSILÖITY
+
+
+
+
+
+0:ty        A_FRONT_NOMINATIVE ;
+0:ty        A_FRONT_STRONG_SINGULARS ;
+0:dy       A_FRONT_WEAK_SINGULARS ;
+0:ty        A_FRONT_STRONG_PLURALS ;
+0:dy       A_FRONT_WEAK_PLURALS ;
+0:ty        A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty        A_FRONT_ILLATIVE_YN ;
+0:ty        A_FRONT_PARTITIVE_JÄ ;
+0:ty        A_FRONT_GENITIVE_JEN ;
+0:ty        A_FRONT_ILLATIVE_IHIN ;
+0:dy       A_FRONT_COMPARATIVE ;
+0:dy       A_FRONT_SUPERLATIVE ;
+
+
+
+LEXICON A_LENKO
+
+
+
+
+
+0:ko        A_BACK_NOMINATIVE ;
+0:ko        A_BACK_STRONG_SINGULARS ;
+0:go       A_BACK_WEAK_SINGULARS ;
+0:ko        A_BACK_STRONG_PLURALS ;
+0:go       A_BACK_WEAK_PLURALS ;
+0:ko        A_BACK_PARTITIVE_A_AN ;
+0:ko        A_BACK_ILLATIVE_ON ;
+0:ko        A_BACK_PARTITIVE_JA ;
+0:ko        A_FRONT_GENITIVE_JEN ;
+0:ko        A_FRONT_ILLATIVE_IHIN ;
+0:go       A_BACK_COMPARATIVE ;
+0:go       A_BACK_SUPERLATIVE ;
+
+
+
+
+
+
+
+LEXICON A_MELTO
+
+
+
+
+
+0:to       A_BACK_NOMINATIVE ;
+0:to       A_BACK_STRONG_SINGULARS ;
+0:lo       A_BACK_WEAK_SINGULARS ;
+0:to       A_BACK_STRONG_PLURALS ;
+0:lo       A_BACK_WEAK_PLURALS ;
+0:to       A_BACK_PARTITIVE_A_AN ;
+0:to       A_BACK_ILLATIVE_ON ;
+0:to       A_BACK_PARTITIVE_JA ;
+0:to       A_BACK_GENITIVE_JEN ;
+0:to       A_BACK_ILLATIVE_IHIN ;
+0:lo       A_BACK_COMPARATIVE ;
+0:lo       A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_PARANNELTU
+
+
+
+
+
+0:tu       A_BACK_NOMINATIVE ;
+0:tu       A_BACK_STRONG_SINGULARS ;
+0:lu       A_BACK_WEAK_SINGULARS ;
+0:tu       A_BACK_STRONG_PLURALS ;
+0:lu       A_BACK_WEAK_PLURALS ;
+0:tu       A_BACK_PARTITIVE_A_AN ;
+0:tu       A_BACK_ILLATIVE_UN ;
+0:tu       A_BACK_PARTITIVE_JA ;
+0:tu       A_BACK_GENITIVE_JEN ;
+0:tu       A_BACK_ILLATIVE_IHIN ;
+0:lu       A_BACK_COMPARATIVE ;
+0:lu       A_BACK_SUPERLATIVE ;
+
+
+LEXICON A_VÄHÄTELTY
+
+
+
+
+
+0:ty       A_FRONT_NOMINATIVE ;
+0:ty       A_FRONT_STRONG_SINGULARS ;
+0:ly       A_FRONT_WEAK_SINGULARS ;
+0:ty       A_FRONT_STRONG_PLURALS ;
+0:ly       A_FRONT_WEAK_PLURALS ;
+0:ty       A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty       A_FRONT_ILLATIVE_YN ;
+0:ty       A_FRONT_PARTITIVE_JÄ ;
+0:ty       A_FRONT_GENITIVE_JEN ;
+0:ty       A_FRONT_ILLATIVE_IHIN ;
+0:ly       A_FRONT_COMPARATIVE ;
+0:ly       A_FRONT_SUPERLATIVE ;
+
+
+
+LEXICON A_VENTO
+
+
+
+
+
+0:to       A_BACK_NOMINATIVE ;
+0:to       A_BACK_STRONG_SINGULARS ;
+0:no       A_BACK_WEAK_SINGULARS ;
+0:to       A_BACK_STRONG_PLURALS ;
+0:no       A_BACK_WEAK_PLURALS ;
+0:to       A_BACK_PARTITIVE_A_AN ;
+0:to       A_BACK_ILLATIVE_ON ;
+0:to       A_BACK_PARTITIVE_JA ;
+0:to       A_BACK_GENITIVE_JEN ;
+0:to       A_BACK_ILLATIVE_IHIN ;
+0:no       A_BACK_COMPARATIVE ;
+0:no       A_BACK_SUPERLATIVE ;
+
+LEXICON A_PANTU
+
+
+
+
+
+0:tu       A_BACK_NOMINATIVE ;
+0:tu       A_BACK_STRONG_SINGULARS ;
+0:nu       A_BACK_WEAK_SINGULARS ;
+0:tu       A_BACK_STRONG_PLURALS ;
+0:nu       A_BACK_WEAK_PLURALS ;
+0:tu       A_BACK_PARTITIVE_A_AN ;
+0:tu       A_BACK_ILLATIVE_UN ;
+0:tu       A_BACK_PARTITIVE_JA ;
+0:tu       A_BACK_GENITIVE_JEN ;
+0:tu       A_BACK_ILLATIVE_IHIN ;
+0:nu       A_BACK_COMPARATIVE ;
+0:nu       A_BACK_SUPERLATIVE ;
+
+LEXICON A_MENTY
+
+
+
+
+
+0:ty       A_FRONT_NOMINATIVE ;
+0:ty       A_FRONT_STRONG_SINGULARS ;
+0:ny       A_FRONT_WEAK_SINGULARS ;
+0:ty       A_FRONT_STRONG_PLURALS ;
+0:ny       A_FRONT_WEAK_PLURALS ;
+0:ty       A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty       A_FRONT_ILLATIVE_YN ;
+0:ty       A_FRONT_PARTITIVE_JÄ ;
+0:ty       A_FRONT_GENITIVE_JEN ;
+0:ty       A_FRONT_ILLATIVE_IHIN ;
+0:ny       A_FRONT_COMPARATIVE ;
+0:ny       A_FRONT_SUPERLATIVE ;
+
+
+
+LEXICON A_MARTO
+
+
+
+
+
+0:to    A_BACK_NOMINATIVE    ;
+0:to    A_BACK_STRONG_SINGULARS    ;
+0:ro       A_BACK_WEAK_SINGULARS    ;
+0:to    A_BACK_STRONG_PLURALS ;
+0:ro       A_BACK_WEAK_PLURALS    ;
+0:to    A_BACK_PARTITIVE_A_AN ;
+0:to    A_BACK_ILLATIVE_ON    ;
+0:to    A_BACK_PARTITIVE_JA    ;
+0:to    A_BACK_GENITIVE_JEN    ;
+0:to    A_BACK_ILLATIVE_IHIN   ;
+0:ro   A_BACK_COMPARATIVE   ;
+0:ro   A_BACK_SUPERLATIVE   ;
+
+
+LEXICON A_PURTU
+
+
+
+
+
+0:tu       A_BACK_NOMINATIVE ;
+0:tu       A_BACK_STRONG_SINGULARS ;
+0:ru       A_BACK_WEAK_SINGULARS ;
+0:tu       A_BACK_STRONG_PLURALS ;
+0:ru       A_BACK_WEAK_PLURALS ;
+0:tu       A_BACK_PARTITIVE_A_AN ;
+0:tu       A_BACK_ILLATIVE_UN ;
+0:tu       A_BACK_PARTITIVE_JA ;
+0:tu       A_BACK_GENITIVE_JEN ;
+0:tu       A_BACK_ILLATIVE_IHIN ;
+0:ru       A_BACK_COMPARATIVE ;
+0:ru       A_BACK_SUPERLATIVE ;
+
+LEXICON A_PIERTY
+
+
+
+
+
+0:ty       A_FRONT_NOMINATIVE ;
+0:ty       A_FRONT_STRONG_SINGULARS ;
+0:ry       A_FRONT_WEAK_SINGULARS ;
+0:ty       A_FRONT_STRONG_PLURALS ;
+0:ry       A_FRONT_WEAK_PLURALS ;
+0:ty       A_FRONT_PARTITIVE_Ä_ÄN ;
+0:ty       A_FRONT_ILLATIVE_YN ;
+0:ty       A_FRONT_PARTITIVE_JÄ ;
+0:ty       A_FRONT_GENITIVE_JEN ;
+0:ty       A_FRONT_ILLATIVE_IHIN ;
+0:ry       A_FRONT_COMPARATIVE ;
+0:ry       A_FRONT_SUPERLATIVE ;
+
+
+
+
+
+
+LEXICON A_HUPAKKO
+
+
+
+
+
+0:ko    A_BACK_NOMINATIVE    ;
+0:ko    A_BACK_STRONG_SINGULARS    ;
+0:o    A_BACK_WEAK_SINGULARS    ;
+0:ko    A_BACK_STRONG_PLURALS ;
+0:o    A_BACK_WEAK_PLURALS    ;
+0:ko    A_BACK_PARTITIVE_A_AN ;
+0:ko    A_BACK_ILLATIVE_ON    ;
+0:ko    A_BACK_PARTITIVE_JA    ;
+0:o    A_BACK_PARTITIVE_ITA ;
+0:ko    A_BACK_GENITIVE_JEN    ;
+0:o    A_BACK_GENITIVE_IDEN   ;
+0:o    A_BACK_GENITIVE_ITTEN  ;
+0:ko    A_BACK_ILLATIVE_IHIN   ;
+0:o    A_BACK_ILLATIVE_IHIN   ;
+0:o    A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_ABNORMI
+
+
+
+
+
+0:i        A_BACK_NOMINATIVE ;
+0:i        A_BACK_SINGULARS ;
+0:e        A_BACK_PLURALS ;
+0:i        A_BACK_PARTITIVE_A_AN ;
+0:i        A_BACK_ILLATIVE_IN ;
+0:e        A_BACK_PARTITIVE_JA ;
+0          A_BACK_GENITIVE_IEN ;
+0:e        A_BACK_ILLATIVE_IHIN ;
+0:i        A_BACK_COMPARATIVE ;
+0:e        A_BACK_SUPERLATIVE ;
+
+LEXICON A_STYDI
+
+
+
+
+0:i        A_FRONT_NOMINATIVE ;
+0:i        A_FRONT_SINGULARS ;
+0:e        A_FRONT_PLURALS ;
+0:i        A_FRONT_PARTITIVE_Ä_ÄN ;
+0:i        A_FRONT_ILLATIVE_IN ;
+0:e        A_FRONT_PARTITIVE_JÄ ;
+0          A_FRONT_GENITIVE_IEN ;
+0:e        A_FRONT_ILLATIVE_IHIN ;
+0:i        A_FRONT_COMPARATIVE ;
+0:e        A_FRONT_SUPERLATIVE ;
+
+LEXICON A_OPAAKKI
+
+
+
+
+
+
+
+0:ki     A_BACK_NOMINATIVE    ;
+0:ki     A_BACK_STRONG_SINGULARS    ;
+0:i     A_BACK_WEAK_SINGULARS    ;
+0:ke    A_BACK_STRONG_PLURALS   ;
+0:e     A_BACK_WEAK_PLURALS   ;
+0:ki     A_BACK_PARTITIVE_A_AN  ;
+0:ki     A_BACK_ILLATIVE_IN ;
+0:ke     A_BACK_PARTITIVE_JA    ;
+0:k     A_BACK_GENITIVE_IEN    ;
+0:ke     A_BACK_ILLATIVE_IHIN   ;
+0:i  A_BACK_COMPARATIVE   ;
+0:ke   A_BACK_SUPERLATIVE    ;
+
+LEXICON A_PINKKI
+
+
+
+
+
+
+0:ki     A_FRONT_NOMINATIVE    ;
+0:ki     A_FRONT_STRONG_SINGULARS    ;
+0:i     A_FRONT_WEAK_SINGULARS    ;
+0:ke    A_FRONT_STRONG_PLURALS   ;
+0:e     A_FRONT_WEAK_PLURALS   ;
+0:ki     A_FRONT_PARTITIVE_Ä_ÄN  ;
+0:ki     A_FRONT_ILLATIVE_IN ;
+0:ke     A_FRONT_PARTITIVE_JÄ    ;
+0:k     A_FRONT_GENITIVE_IEN    ;
+0:ke     A_FRONT_ILLATIVE_IHIN   ;
+0:i  A_FRONT_COMPARATIVE   ;
+0:ke   A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_SIPPI
+
+
+
+
+
+0:pi     A_FRONT_NOMINATIVE    ;
+0:pi     A_FRONT_STRONG_SINGULARS    ;
+0:i     A_FRONT_WEAK_SINGULARS    ;
+0:pe    A_FRONT_STRONG_PLURALS   ;
+0:e     A_FRONT_WEAK_PLURALS   ;
+0:pi     A_FRONT_PARTITIVE_Ä_ÄN  ;
+0:pi     A_FRONT_ILLATIVE_IN ;
+0:pe    A_FRONT_PARTITIVE_JÄ    ;
+0:p     A_FRONT_GENITIVE_IEN    ;
+0:pe    A_FRONT_ILLATIVE_IHIN   ;
+0:i  A_FRONT_COMPARATIVE   ;
+0:pe   A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_HURTTI
+
+
+
+
+
+0:ti     A_BACK_NOMINATIVE    ;
+0:ti     A_BACK_STRONG_SINGULARS    ;
+0:i     A_BACK_WEAK_SINGULARS    ;
+0:te    A_BACK_STRONG_PLURALS   ;
+0:e     A_BACK_WEAK_PLURALS   ;
+0:ti     A_BACK_PARTITIVE_A_AN  ;
+0:ti     A_BACK_ILLATIVE_IN ;
+0:te    A_BACK_PARTITIVE_JA    ;
+0:t     A_BACK_GENITIVE_IEN    ;
+0:te    A_BACK_ILLATIVE_IHIN   ;
+0:i  A_BACK_COMPARATIVE   ;
+0:te   A_BACK_SUPERLATIVE    ;
+
+LEXICON A_VÄÄRTTI
+
+
+
+
+
+0:ti       A_FRONT_NOMINATIVE    ;
+0:ti       A_FRONT_STRONG_SINGULARS    ;
+0:i       A_FRONT_WEAK_SINGULARS    ;
+0:te     A_FRONT_STRONG_PLURALS   ;
+0:e     A_FRONT_WEAK_PLURALS   ;
+0:ti       A_FRONT_PARTITIVE_Ä_ÄN  ;
+0:ti       A_FRONT_ILLATIVE_IN ;
+0:te     A_FRONT_PARTITIVE_JÄ    ;
+0:t     A_FRONT_GENITIVE_IEN    ;
+0:te     A_FRONT_ILLATIVE_IHIN   ;
+0:i  A_FRONT_COMPARATIVE   ;
+0:te   A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_TUHTI
+
+
+
+
+
+0:ti     A_BACK_NOMINATIVE    ;
+0:ti     A_BACK_STRONG_SINGULARS    ;
+0:di     A_BACK_WEAK_SINGULARS    ;
+0:te    A_BACK_STRONG_PLURALS   ;
+0:de     A_BACK_WEAK_PLURALS   ;
+0:ti     A_BACK_PARTITIVE_A_AN  ;
+0:ti     A_BACK_ILLATIVE_IN ;
+0:te    A_BACK_PARTITIVE_JA    ;
+0:t     A_BACK_GENITIVE_IEN    ;
+0:te    A_BACK_ILLATIVE_IHIN   ;
+0:di  A_BACK_COMPARATIVE   ;
+0:te   A_BACK_SUPERLATIVE    ;
+
+LEXICON A_REHTI
+
+
+
+
+
+0:ti     A_FRONT_NOMINATIVE    ;
+0:ti     A_FRONT_STRONG_SINGULARS    ;
+0:di     A_FRONT_WEAK_SINGULARS    ;
+0:te    A_FRONT_STRONG_PLURALS   ;
+0:de     A_FRONT_WEAK_PLURALS   ;
+0:ti     A_FRONT_PARTITIVE_Ä_ÄN  ;
+0:ti     A_FRONT_ILLATIVE_IN ;
+0:te    A_FRONT_PARTITIVE_JÄ    ;
+0:t     A_FRONT_GENITIVE_IEN    ;
+0:te    A_FRONT_ILLATIVE_IHIN   ;
+0:di  A_FRONT_COMPARATIVE   ;
+0:te   A_FRONT_SUPERLATIVE    ;
+
+
+
+
+
+LEXICON A_ABNORMAALI
+
+
+
+
+
+0:i     A_BACK_NOMINATIVE    ;
+0:i     A_BACK_SINGULARS    ;
+0:e     A_BACK_PLURALS   ;
+0:i     A_BACK_PARTITIVE_A_AN  ;
+0:i     A_BACK_ILLATIVE_IN ;
+0:e     A_BACK_PARTITIVE_JA    ;
+0:e     A_BACK_PARTITIVE_ITA   ;
+0:e     A_BACK_GENITIVE_IDEN  ;
+0:e     A_BACK_GENITIVE_ITTEN ;
+0       A_BACK_GENITIVE_IEN    ;
+0:e     A_BACK_ILLATIVE_IHIN   ;
+0:i     A_BACK_COMPARATIVE   ;
+0:e     A_BACK_SUPERLATIVE    ;
+
+LEXICON A_ÖYKKÄRI
+
+
+
+
+0:i       A_FRONT_NOMINATIVE    ;
+0       A_FRONT_SINGULARS    ;
+0:e     A_FRONT_PLURALS   ;
+0       A_FRONT_PARTITIVE_Ä_ÄN  ;
+0       A_FRONT_ILLATIVE_IN ;
+0:e     A_FRONT_PARTITIVE_ITÄ    ;
+0:e     A_FRONT_PARTITIVE_JÄ    ;
+0:e     A_FRONT_GENITIVE_IDEN   ;
+0:e     A_FRONT_GENITIVE_ITTEN   ;
+0       A_FRONT_GENITIVE_IEN    ;
+0:e     A_FRONT_ILLATIVE_IHIN   ;
+
+
+
+
+
+
+
+
+
+
+LEXICON A_AAVA
+
+
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0:o   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A_AN      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0:o   A_BACK_PARTITIVE_JA    ;
+0:o   A_BACK_GENITIVE_JEN    ;
+0:a A_BACK_GENITIVE_IN     ;
+0:o   A_BACK_ILLATIVE_IHIN   ;
+0:e    A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_HOIKKA
+
+
+
+
+
+
+
+0:ka A_BACK_NOMINATIVE    ;
+0:ka A_BACK_STRONG_SINGULARS    ;
+0:a   A_BACK_WEAK_SINGULARS   ;
+0:ko A_BACK_STRONG_PLURALS  ;
+0:o    A_BACK_WEAK_PLURALS    ;
+0:ka A_BACK_PARTITIVE_A      ;
+0:ka A_BACK_ILLATIVE_AN     ;
+0:ko   A_BACK_PARTITIVE_JA    ;
+0:ko   A_BACK_GENITIVE_JEN    ;
+0:ka A_BACK_GENITIVE_IN     ;
+0:ko   A_BACK_ILLATIVE_IHIN   ;
+0:e    A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_MATTA
+
+
+
+
+
+
+
+0:ta A_BACK_NOMINATIVE    ;
+0:ta A_BACK_STRONG_SINGULARS    ;
+0:a   A_BACK_WEAK_SINGULARS   ;
+0:to A_BACK_STRONG_PLURALS  ;
+0:o    A_BACK_WEAK_PLURALS    ;
+0:ta A_BACK_PARTITIVE_A      ;
+0:ta A_BACK_ILLATIVE_AN     ;
+0:to  A_BACK_PARTITIVE_JA    ;
+0:to  A_BACK_GENITIVE_JEN    ;
+0:ta A_BACK_GENITIVE_IN    ;
+0:to  A_BACK_ILLATIVE_IHIN   ;
+0:e    A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+
+LEXICON A_HALPA
+
+
+
+
+
+
+
+0:pa A_BACK_NOMINATIVE    ;
+0:pa A_BACK_STRONG_SINGULARS    ;
+0:va  A_BACK_WEAK_SINGULARS   ;
+0:po A_BACK_STRONG_PLURALS  ;
+0:vo   A_BACK_WEAK_PLURALS    ;
+0:pa A_BACK_PARTITIVE_A      ;
+0:pa A_BACK_ILLATIVE_AN     ;
+0:po  A_BACK_PARTITIVE_JA    ;
+0:po  A_BACK_GENITIVE_JEN    ;
+0:pa A_BACK_GENITIVE_IN    ;
+0:po  A_BACK_ILLATIVE_IHIN   ;
+0:ve    A_BACK_COMPARATIVE   ;
+0:vo    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_EHTA
+
+
+
+
+
+
+
+0:ta A_BACK_NOMINATIVE    ;
+0:ta A_BACK_STRONG_SINGULARS    ;
+0:da  A_BACK_WEAK_SINGULARS   ;
+0:to A_BACK_STRONG_PLURALS  ;
+0:do   A_BACK_WEAK_PLURALS    ;
+0:ta A_BACK_PARTITIVE_A      ;
+0:ta A_BACK_ILLATIVE_AN     ;
+0:to  A_BACK_PARTITIVE_JA    ;
+0:to  A_BACK_GENITIVE_JEN    ;
+0:ta A_BACK_GENITIVE_IN    ;
+0:to  A_BACK_ILLATIVE_IHIN   ;
+0:da    A_BACK_COMPARATIVE   ;
+0:do    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_RAMPA
+
+
+
+
+
+
+
+0:pa A_BACK_NOMINATIVE    ;
+0:pa A_BACK_STRONG_SINGULARS    ;
+0:ma  A_BACK_WEAK_SINGULARS   ;
+0:po A_BACK_STRONG_PLURALS  ;
+0:mo   A_BACK_WEAK_PLURALS    ;
+0:pa A_BACK_PARTITIVE_A      ;
+0:pa A_BACK_ILLATIVE_AN     ;
+0:po  A_BACK_PARTITIVE_JA    ;
+0:po  A_BACK_GENITIVE_JEN    ;
+0:pa A_BACK_GENITIVE_IN    ;
+0:po  A_BACK_ILLATIVE_IHIN   ;
+0:ma    A_BACK_COMPARATIVE   ;
+0:mo    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_VIHANTA
+
+
+
+
+
+
+
+0:ta A_BACK_NOMINATIVE    ;
+0:ta A_BACK_STRONG_SINGULARS    ;
+0:na  A_BACK_WEAK_SINGULARS   ;
+0:to A_BACK_STRONG_PLURALS  ;
+0:no   A_BACK_WEAK_PLURALS    ;
+0:ta A_BACK_PARTITIVE_A      ;
+0:ta A_BACK_ILLATIVE_AN     ;
+0:to  A_BACK_PARTITIVE_JA    ;
+0:to  A_BACK_GENITIVE_JEN    ;
+0:ta A_BACK_GENITIVE_IN    ;
+0:to  A_BACK_ILLATIVE_IHIN   ;
+0:ne    A_BACK_COMPARATIVE   ;
+0:no    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_AALTOILEVA
+
+
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0   A_BACK_PARTITIVE_IA    ;
+0   A_BACK_GENITIVE_IEN    ;
+0:a A_BACK_GENITIVE_IN    ;
+0   A_BACK_ILLATIVE_IIN   ;
+0:a  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_TYÖLLISTETTÄVÄ
+
+
+
+
+
+
+
+0:ä A_FRONT_NOMINATIVE    ;
+0:ä A_FRONT_SINGULARS    ;
+0   A_FRONT_PLURALS  ;
+0:ä A_FRONT_PARTITIVE_Ä      ;
+0:ä A_FRONT_ILLATIVE_ÄN     ;
+0   A_FRONT_PARTITIVE_IÄ    ;
+0   A_FRONT_GENITIVE_IEN    ;
+0:ä A_FRONT_GENITIVE_IN    ;
+0   A_FRONT_ILLATIVE_IIN   ;
+0:e  A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_RUMA
+
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0   A_BACK_PARTITIVE_IA    ;
+0   A_BACK_GENITIVE_IEN    ;
+0:a A_BACK_GENITIVE_IN    ;
+0   A_BACK_ILLATIVE_IIN   ;
+0:e  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_TYHMÄ
+
+
+
+
+
+
+
+0:ä A_FRONT_NOMINATIVE    ;
+0:ä A_FRONT_SINGULARS    ;
+0   A_FRONT_PLURALS  ;
+0:ä A_FRONT_PARTITIVE_Ä      ;
+0:ä A_FRONT_ILLATIVE_ÄN     ;
+0   A_FRONT_PARTITIVE_IÄ    ;
+0   A_FRONT_GENITIVE_IEN    ;
+0:ä A_FRONT_GENITIVE_IN    ;
+0   A_FRONT_ILLATIVE_IIN   ;
+0:e  A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+
+LEXICON A_HOIKKA
+
+
+
+
+
+
+
+0:ka A_BACK_NOMINATIVE    ;
+0:ka A_BACK_STRONG_SINGULARS    ;
+0:a    A_BACK_WEAK_SINGULARS   ;
+0:k   A_BACK_STRONG_PLURALS  ;
+0    A_BACK_WEAK_PLURALS    ;
+0:ka A_BACK_PARTITIVE_A      ;
+0:ka A_BACK_ILLATIVE_AN     ;
+0:k   A_BACK_PARTITIVE_IA    ;
+0:k   A_BACK_GENITIVE_IEN    ;
+0:ka A_BACK_GENITIVE_IN    ;
+0:k   A_BACK_ILLATIVE_IIN   ;
+0:e A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_MYKKÄ
+
+
+
+
+
+
+
+0:kä A_FRONT_NOMINATIVE    ;
+0:kä A_FRONT_STRONG_SINGULARS    ;
+0:ä    A_FRONT_WEAK_SINGULARS   ;
+0:k   A_FRONT_STRONG_PLURALS  ;
+0    A_FRONT_WEAK_PLURALS    ;
+0:kä A_FRONT_PARTITIVE_Ä      ;
+0:kä A_FRONT_ILLATIVE_ÄN     ;
+0:k   A_FRONT_PARTITIVE_IÄ    ;
+0:k   A_FRONT_GENITIVE_IEN    ;
+0:kä A_FRONT_GENITIVE_IN    ;
+0:k   A_FRONT_ILLATIVE_IIN   ;
+0:e A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_POPPA
+
+
+
+
+
+
+
+0:pa A_BACK_NOMINATIVE    ;
+0:pa A_BACK_STRONG_SINGULARS    ;
+0:a    A_BACK_WEAK_SINGULARS   ;
+0:p   A_BACK_STRONG_PLURALS  ;
+0    A_BACK_WEAK_PLURALS    ;
+0:pa A_BACK_PARTITIVE_A      ;
+0:pa A_BACK_ILLATIVE_AN     ;
+0:p   A_BACK_PARTITIVE_IA    ;
+0:p   A_BACK_GENITIVE_IEN    ;
+0:pa A_BACK_GENITIVE_IN    ;
+0:p   A_BACK_ILLATIVE_IIN   ;
+0:e A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_HÖMPPÄ
+
+
+
+
+
+
+
+0:pä A_FRONT_NOMINATIVE    ;
+0:pä A_FRONT_STRONG_SINGULARS    ;
+0:ä    A_FRONT_WEAK_SINGULARS   ;
+0:p   A_FRONT_STRONG_PLURALS  ;
+0    A_FRONT_WEAK_PLURALS    ;
+0:pä A_FRONT_PARTITIVE_Ä      ;
+0:pä A_FRONT_ILLATIVE_ÄN     ;
+0:p   A_FRONT_PARTITIVE_IÄ    ;
+0:p   A_FRONT_GENITIVE_IEN    ;
+0:pä A_FRONT_GENITIVE_IN    ;
+0:p   A_FRONT_ILLATIVE_IIN   ;
+0:e A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+
+
+
+LEXICON A_VOIPA
+
+
+
+
+
+
+
+0:pa A_BACK_NOMINATIVE    ;
+0:pa A_BACK_STRONG_SINGULARS    ;
+0:va    A_BACK_WEAK_SINGULARS   ;
+0:p   A_BACK_STRONG_PLURALS  ;
+0:v    A_BACK_WEAK_PLURALS    ;
+0:pa A_BACK_PARTITIVE_A      ;
+0:pa A_BACK_ILLATIVE_AN     ;
+0:p   A_BACK_PARTITIVE_IA    ;
+0:p   A_BACK_GENITIVE_IEN    ;
+0:pa A_BACK_GENITIVE_IN    ;
+0:p   A_BACK_ILLATIVE_IIN   ;
+0:ve A_BACK_COMPARATIVE   ;
+0:v    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_KÄYPÄ
+
+
+
+
+
+
+
+0:pä A_FRONT_NOMINATIVE    ;
+0:pä A_FRONT_STRONG_SINGULARS    ;
+0:vä    A_FRONT_WEAK_SINGULARS   ;
+0:p   A_FRONT_STRONG_PLURALS  ;
+0:v    A_FRONT_WEAK_PLURALS    ;
+0:pä A_FRONT_PARTITIVE_Ä      ;
+0:pä A_FRONT_ILLATIVE_ÄN     ;
+0:p   A_FRONT_PARTITIVE_IÄ    ;
+0:p   A_FRONT_GENITIVE_IEN    ;
+0:pä A_FRONT_GENITIVE_IN    ;
+0:p   A_FRONT_ILLATIVE_IIN   ;
+0:ve A_FRONT_COMPARATIVE   ;
+0:v    A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_MÄTÄ
+
+
+
+
+
+
+
+0:tä A_FRONT_NOMINATIVE    ;
+0:tä A_FRONT_STRONG_SINGULARS    ;
+0:dä    A_FRONT_WEAK_SINGULARS   ;
+0:t   A_FRONT_STRONG_PLURALS  ;
+0:d    A_FRONT_WEAK_PLURALS    ;
+0:tä A_FRONT_PARTITIVE_Ä      ;
+0:tä A_FRONT_ILLATIVE_ÄN     ;
+0:t   A_FRONT_PARTITIVE_IÄ    ;
+0:t   A_FRONT_GENITIVE_IEN    ;
+0:tä A_FRONT_GENITIVE_IN    ;
+0:t   A_FRONT_ILLATIVE_IIN   ;
+0:de A_FRONT_COMPARATIVE   ;
+0:d    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_SANKA
+
+
+
+
+
+
+
+0:ka   A_BACK_NOMINATIVE    ;
+0:ka   A_BACK_STRONG_SINGULARS    ;
+0:ga    A_BACK_WEAK_SINGULARS   ;
+0:k   A_BACK_STRONG_PLURALS  ;
+0:g    A_BACK_WEAK_PLURALS    ;
+0:ka   A_BACK_PARTITIVE_A      ;
+0:ka   A_BACK_ILLATIVE_AN     ;
+0:k   A_BACK_PARTITIVE_IA    ;
+0:k   A_BACK_GENITIVE_IEN    ;
+0:ka   A_BACK_GENITIVE_IN    ;
+0:k   A_BACK_ILLATIVE_IIN   ;
+
+LEXICON A_VÄNKÄ
+
+
+
+
+
+
+0:kä A_FRONT_NOMINATIVE    ;
+0:kä A_FRONT_STRONG_SINGULARS    ;
+0:gä    A_FRONT_WEAK_SINGULARS   ;
+0:k   A_FRONT_STRONG_PLURALS  ;
+0:g    A_FRONT_WEAK_PLURALS    ;
+0:kä A_FRONT_PARTITIVE_Ä      ;
+0:kä A_FRONT_ILLATIVE_ÄN     ;
+0:k   A_FRONT_PARTITIVE_IÄ    ;
+0:k   A_FRONT_GENITIVE_IEN    ;
+0:kä A_FRONT_GENITIVE_IN    ;
+0:k   A_FRONT_ILLATIVE_IIN   ;
+0:gä A_FRONT_COMPARATIVE   ;
+0:g    A_FRONT_SUPERLATIVE    ;
+
+
+
+
+LEXICON A_KULTA
+
+
+
+
+
+
+
+0:ta A_BACK_NOMINATIVE    ;
+0:ta A_BACK_STRONG_SINGULARS    ;
+0:la    A_BACK_WEAK_SINGULARS   ;
+0:t   A_BACK_STRONG_PLURALS  ;
+0:l    A_BACK_WEAK_PLURALS    ;
+0:ta A_BACK_PARTITIVE_A      ;
+0:ta A_BACK_ILLATIVE_AN     ;
+0:t   A_BACK_PARTITIVE_IA    ;
+0:t   A_BACK_GENITIVE_IEN    ;
+0:ta A_BACK_GENITIVE_IN    ;
+0:t   A_BACK_ILLATIVE_IIN   ;
+0:la A_BACK_COMPARATIVE   ;
+0:l    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_LÄNTÄ
+
+
+
+
+
+
+
+0:tä A_FRONT_NOMINATIVE    ;
+0:tä A_FRONT_STRONG_SINGULARS    ;
+0:nä    A_FRONT_WEAK_SINGULARS   ;
+0:t   A_FRONT_STRONG_PLURALS  ;
+0:n    A_FRONT_WEAK_PLURALS    ;
+0:tä A_FRONT_PARTITIVE_Ä      ;
+0:tä A_FRONT_ILLATIVE_ÄN     ;
+0:t   A_FRONT_PARTITIVE_IÄ    ;
+0:t   A_FRONT_GENITIVE_IEN    ;
+0:tä A_FRONT_GENITIVE_IN    ;
+0:t   A_FRONT_ILLATIVE_IIN   ;
+0:nä A_FRONT_COMPARATIVE   ;
+0:n    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_TURTA
+
+
+
+
+
+
+
+0:ta A_BACK_NOMINATIVE    ;
+0:ta A_BACK_STRONG_SINGULARS    ;
+0:ra    A_BACK_WEAK_SINGULARS   ;
+0:t   A_BACK_STRONG_PLURALS  ;
+0:r    A_BACK_WEAK_PLURALS    ;
+0:ta A_BACK_PARTITIVE_A      ;
+0:ta A_BACK_ILLATIVE_AN     ;
+0:t   A_BACK_PARTITIVE_IA    ;
+0:t   A_BACK_GENITIVE_IEN    ;
+0:ta A_BACK_GENITIVE_IN    ;
+0:t   A_BACK_ILLATIVE_IIN   ;
+0:ra A_BACK_COMPARATIVE   ;
+0:ra   A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_SÄKKÄRÄ
+
+
+
+
+
+
+
+
+
+
+
+0:a A_FRONT_NOMINATIVE    ;
+0:a A_FRONT_SINGULARS    ;
+0:o   A_FRONT_PLURALS  ;
+0   A_FRONT_PLURALS  ;
+0:a A_FRONT_PARTITIVE_Ä      ;
+0:a A_FRONT_ILLATIVE_ÄN     ;
+0   A_FRONT_PARTITIVE_IÄ    ;
+0:o   A_FRONT_PARTITIVE_ITÄ ;
+0   A_FRONT_GENITIVE_IEN    ;
+0:o     A_FRONT_GENITIVE_IDEN   ;
+0:o     A_FRONT_GENITIVE_ITTEN  ;
+0:a A_FRONT_GENITIVE_IN     ;
+0   A_FRONT_ILLATIVE_IIN   ;
+0:o   A_FRONT_ILLATIVE_IHIN    ;
+0:a  A_FRONT_COMPARATIVE   ;
+0:o    A_FRONT_SUPERLATIVE    ;
++Use/Rare:o   A_FRONT_PARTITIVE_JÄ ;
++Use/Rare:o     A_FRONT_GENITIVE_JEN    ;
+
+LEXICON A_HAPERA
+
+
+
+
+
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0:o   A_BACK_PLURALS  ;
+0   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0   A_BACK_PARTITIVE_IA    ;
+0:o   A_BACK_PARTITIVE_ITA ;
+0   A_BACK_GENITIVE_IEN    ;
+0:o     A_BACK_GENITIVE_IDEN   ;
+0:o     A_BACK_GENITIVE_ITTEN  ;
+0:a A_BACK_GENITIVE_IN     ;
+0   A_BACK_ILLATIVE_IIN   ;
+0:o   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
++Use/Rare:o   A_BACK_PARTITIVE_JA ;
++Use/Rare:o     A_BACK_GENITIVE_JEN    ;
+
+LEXICON A_HÖPPÄNÄ
+
+
+
+
+
+
+
+0:ä A_FRONT_NOMINATIVE    ;
+0:ä A_FRONT_SINGULARS    ;
+0   A_FRONT_PLURALS  ;
+0:ö   A_FRONT_PLURALS  ;
+0:ä A_FRONT_PARTITIVE_Ä      ;
+0:ä A_FRONT_ILLATIVE_ÄN     ;
+0   A_FRONT_PARTITIVE_IÄ    ;
+0:ö   A_FRONT_PARTITIVE_ITÄ ;
+0:ö     A_FRONT_PARTITIVE_JÄ ;
+0   A_FRONT_GENITIVE_IEN    ;
+0:ö     A_FRONT_GENITIVE_IDEN ;
+0:ö     A_FRONT_GENITIVE_ITTEN  ;
+0:ö     A_FRONT_GENITIVE_JEN    ;
+0:ä A_FRONT_GENITIVE_IN    ;
+0   A_FRONT_ILLATIVE_IIN   ;
+0:ö     A_FRONT_ILLATIVE_IHIN   ;
+0:ä  A_FRONT_COMPARATIVE   ;
+0:ö    A_FRONT_SUPERLATIVE    ;
+
+
+LEXICON A_HARMAJA
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0:o   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0:o   A_BACK_PARTITIVE_ITA ;
+0:o     A_BACK_GENITIVE_IDEN   ;
+0:o     A_BACK_GENITIVE_ITTEN  ;
+0:a A_BACK_GENITIVE_IN     ;
+0:o   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_LATUSKA
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0:o   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0:o   A_BACK_PARTITIVE_ITA ;
+0:o   A_BACK_PARTITIVE_JA ;
+0:o     A_BACK_GENITIVE_IDEN   ;
+0:o     A_BACK_GENITIVE_ITTEN  ;
+0:o     A_BACK_GENITIVE_JEN    ;
+0:a A_BACK_GENITIVE_IN     ;
+0:o   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_HAILAKKA
+
+
+
+
+
+
+0:ka A_BACK_NOMINATIVE    ;
+0:ka A_BACK_STRONG_SINGULARS    ;
+0:a   A_BACK_WEAK_SINGULARS    ;
+0:ko   A_BACK_STRONG_PLURALS  ;
+0:o   A_BACK_WEAK_PLURALS  ;
+0:ka A_BACK_PARTITIVE_A      ;
+0:ka A_BACK_ILLATIVE_AN     ;
+0:o   A_BACK_PARTITIVE_ITA ;
+0:ko   A_BACK_PARTITIVE_JA ;
+0:o     A_BACK_GENITIVE_IDEN   ;
+0:o     A_BACK_GENITIVE_ITTEN  ;
+0:ko     A_BACK_GENITIVE_JEN    ;
+0:ka A_BACK_GENITIVE_IN     ;
+0:o   A_BACK_ILLATIVE_IHIN    ;
+0:ko   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_RÄVÄKKÄ
+
+
+0:kä A_FRONT_NOMINATIVE    ;
+0:kä A_FRONT_STRONG_SINGULARS    ;
+0:ä   A_FRONT_WEAK_SINGULARS    ;
+0:kö   A_FRONT_STRONG_PLURALS  ;
+0:ö   A_FRONT_WEAK_PLURALS  ;
+0:kä A_FRONT_PARTITIVE_Ä      ;
+0:kä A_FRONT_ILLATIVE_ÄN     ;
+0:ö   A_FRONT_PARTITIVE_ITÄ ;
+0:kö     A_FRONT_PARTITIVE_JÄ ;
+0:ö     A_FRONT_GENITIVE_IDEN ;
+0:ö     A_FRONT_GENITIVE_ITTEN  ;
+0:kö     A_FRONT_GENITIVE_JEN    ;
+0:kä A_FRONT_GENITIVE_IN    ;
+0:ö     A_FRONT_ILLATIVE_IHIN   ;
+0:kö     A_FRONT_ILLATIVE_IHIN   ;
+0:ä  A_FRONT_COMPARATIVE   ;
+0:ö    A_FRONT_SUPERLATIVE    ;
+
+
+LEXICON A_POHATTA
+
+
+
+
+0:ta A_BACK_NOMINATIVE    ;
+0:ta A_BACK_STRONG_SINGULARS    ;
+0:a   A_BACK_WEAK_SINGULARS    ;
+0:to   A_BACK_STRONG_PLURALS  ;
+0:o   A_BACK_WEAK_PLURALS  ;
+0:ta A_BACK_PARTITIVE_A      ;
+0:ta A_BACK_ILLATIVE_AN     ;
+0:to   A_BACK_PARTITIVE_ITA ;
+0:to   A_BACK_PARTITIVE_JA ;
+0:to     A_BACK_GENITIVE_IDEN   ;
+0:to     A_BACK_GENITIVE_ITTEN  ;
+0:to     A_BACK_GENITIVE_JEN    ;
+0:ta A_BACK_GENITIVE_IN     ;
+0:o   A_BACK_ILLATIVE_IHIN    ;
+0:to   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0:o    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_AINOA
+
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0   A_BACK_PARTITIVE_ITA ;
+0     A_BACK_GENITIVE_IDEN   ;
+0     A_BACK_GENITIVE_ITTEN  ;
+0:a A_BACK_GENITIVE_IN     ;
+0     A_BACK_ILLATIVE_ISIIN ;
+0   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_OIKEE
+
+
+
+
+
+0:e A_BACK_NOMINATIVE    ;
+0:e A_BACK_SINGULARS    ;
+0   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0   A_BACK_PARTITIVE_ITA ;
+0     A_BACK_GENITIVE_IDEN   ;
+0     A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_GENITIVE_IN     ;
+0     A_BACK_ILLATIVE_ISIIN ;
+0   A_BACK_ILLATIVE_IHIN    ;
+0:e  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_KORKEA
+
+
+
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0   A_BACK_PLURALS  ;
+0:a A_BACK_PARTITIVE_A      ;
+0:a A_BACK_ILLATIVE_AN     ;
+0   A_BACK_PARTITIVE_ITA ;
+0     A_BACK_GENITIVE_IDEN   ;
+0     A_BACK_GENITIVE_ITTEN  ;
+0:a A_BACK_GENITIVE_IN     ;
+0     A_BACK_ILLATIVE_ISIIN ;
+0   A_BACK_ILLATIVE_IHIN    ;
+0:a  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+[STYLE=ARCHAIC]:a   A_BACK_PARTITIVE_TA ;
+
+LEXICON A_JÄREÄ
+
+
+
+
+
+0:ä A_FRONT_NOMINATIVE    ;
+0:ä A_FRONT_SINGULARS    ;
+0   A_FRONT_PLURALS  ;
+0:ä A_FRONT_PARTITIVE_Ä      ;
+0:ä A_FRONT_ILLATIVE_ÄN     ;
+0   A_FRONT_PARTITIVE_ITÄ ;
+0     A_FRONT_GENITIVE_IDEN   ;
+0     A_FRONT_GENITIVE_ITTEN  ;
+0:ä A_FRONT_GENITIVE_IN    ;
+0     A_FRONT_ILLATIVE_ISIIN ;
+0   A_FRONT_ILLATIVE_IHIN    ;
+0:ä  A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+[STYLE=ARCHAIC]:ä   A_FRONT_PARTITIVE_TÄ    ;
+
+
+
+
+
+LEXICON A_AIEMPI
+
+
+
+
+
+
+0:pi A_BACK_NOMINATIVE    ;
+0:pa  A_BACK_STRONG_SINGULARS    ;
+0:ma  A_BACK_WEAK_SINGULARS    ;
+0:p   A_BACK_STRONG_PLURALS ;
+0:m    A_BACK_WEAK_PLURALS    ;
+0:ia    A_BACK_PARTITIVE_IA ;
+0:pa   A_BACK_ILLATIVE_AN ;
+0:p    A_BACK_PARTITIVE_IA    ;
+0:p    A_BACK_GENITIVE_IEN    ;
+0:pa   A_BACK_GENITIVE_IN    ;
+0:p    A_BACK_ILLATIVE_IIN    ;
+0:ma    A_BACK_COMPARATIVE   ;
+0:m    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_LÄHEMPI
+
+
+
+
+
+0:pi   A_FRONT_NOMINATIVE    ;
+0:pä  A_FRONT_STRONG_SINGULARS    ;
+0:mä  A_FRONT_WEAK_SINGULARS    ;
+0:p   A_FRONT_STRONG_PLURALS ;
+0:m    A_FRONT_WEAK_PLURALS    ;
+0:p     A_FRONT_PARTITIVE_IÄ ;
+0:pä  A_FRONT_ILLATIVE_ÄN ;
+0:p    A_FRONT_PARTITIVE_IÄ    ;
+0:p    A_FRONT_GENITIVE_IEN    ;
+0:pä   A_FRONT_GENITIVE_IN    ;
+0:p    A_FRONT_ILLATIVE_IIN    ;
+0:mä    A_FRONT_COMPARATIVE   ;
+0:m   A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_VAPAA
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS ;
+0   A_BACK_PLURALS    ;
+0:a A_BACK_PARTITIVE_TA    ;
+0:a A_BACK_ILLATIVE_SEEN   ;
+0   A_BACK_PARTITIVE_ITA   ;
+0   A_BACK_GENITIVE_IDEN   ;
+0   A_BACK_GENITIVE_ITTEN  ;
+0   A_BACK_ILLATIVE_ISIIN  ;
+0   A_BACK_ILLATIVE_IHIN   ;
+0:a  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_PEEAA
+
+
+0:a A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:a A_BACK_PARTITIVE_TA ;
+0:a A_BACK_ILLATIVE_HAN    ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+0:a  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_MUU
+
+0:u A_BACK_NOMINATIVE    ;
+0:u A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:u A_BACK_PARTITIVE_TA ;
+0:u A_BACK_ILLATIVE_HUN    ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+0:u  A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_SYYPÄÄ
+
+0:ä A_FRONT_NOMINATIVE    ;
+0:ä A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS    ;
+0:ä A_FRONT_PARTITIVE_TÄ ;
+0:ä A_FRONT_ILLATIVE_HÄN    ;
+0 A_FRONT_PARTITIVE_ITÄ   ;
+0 A_FRONT_GENITIVE_IDEN   ;
+0 A_FRONT_GENITIVE_ITTEN  ;
+0 A_FRONT_ILLATIVE_IHIN   ;
+0:ä  A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+
+
+
+LEXICON A_GAY
+
+
+
+
+0   A_BACK_NOMINATIVE    ;
+0   A_FRONT_NOMINATIVE    ;
+0   A_BACK_SINGULARS    ;
+0   A_FRONT_SINGULARS    ;
+0   A_BACK_PLURALS    ;
+0   A_FRONT_PLURALS    ;
+0   A_FRONT_PARTITIVE_TÄ    ;
+0   A_FRONT_ILLATIVE_HYN    ;
+0   A_FRONT_ILLATIVE_HIN    ;
+0   A_BACK_PARTITIVE_ITA   ;
+0   A_FRONT_PARTITIVE_ITÄ   ;
+0   A_FRONT_GENITIVE_JEN   ;
+0   A_FRONT_GENITIVE_IDEN   ;
+0   A_FRONT_GENITIVE_ITTEN  ;
+0   A_FRONT_ILLATIVE_IHIN   ;
+
+
+
+
+
+
+
+ 
+LEXICON A_SUURI
+
+
+0:i A_BACK_NOMINATIVE    ;
+0:e A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0 A_BACK_PARTITIVE_TA    ;
+0:e A_BACK_ILLATIVE_EN ;
+0 A_BACK_PARTITIVE_IA    ;
+0 A_BACK_GENITIVE_IEN   ;
+0 A_BACK_GENITIVE_TEN   ;
+0 A_BACK_ILLATIVE_IIN    ;
+0:e A_BACK_COMPARATIVE  ;
+0   A_BACK_SUPERLATIVE  ;
+
+LEXICON A_PIENI
+
+0:i A_FRONT_NOMINATIVE    ;
+0:e A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS    ;
+0 A_FRONT_PARTITIVE_TÄ    ;
+0:e A_FRONT_ILLATIVE_EN ;
+0 A_FRONT_PARTITIVE_IÄ    ;
+0 A_FRONT_GENITIVE_IEN   ;
+0 A_FRONT_GENITIVE_TEN   ;
+0 A_FRONT_ILLATIVE_IIN    ;
+0:e A_FRONT_COMPARATIVE  ;
+0   A_FRONT_SUPERLATIVE  ;
+
+LEXICON A_UUSI
+
+
+0:si A_BACK_NOMINATIVE    ;
+0:te A_BACK_STRONG_SINGULARS    ;
+0:de A_BACK_WEAK_SINGULARS    ;
+0:s A_BACK_PLURALS    ;
+0:t A_BACK_PARTITIVE_TA    ;
+0:te A_BACK_ILLATIVE_EN ;
+0:s A_BACK_PARTITIVE_IA    ;
+0:s A_BACK_GENITIVE_IEN   ;
+0:t A_BACK_GENITIVE_TEN   ;
+0:s A_BACK_ILLATIVE_IIN    ;
+0:de    A_BACK_COMPARATIVE   ;
+0:s    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_TÄYSI
+
+0:si A_FRONT_NOMINATIVE    ;
+0:te A_FRONT_STRONG_SINGULARS    ;
+0:de A_FRONT_WEAK_SINGULARS    ;
+0:s A_FRONT_PLURALS    ;
+0:t A_FRONT_PARTITIVE_TÄ    ;
+0:te A_FRONT_ILLATIVE_EN ;
+0:s A_FRONT_PARTITIVE_IÄ    ;
+0:s A_FRONT_GENITIVE_IEN   ;
+0:t A_FRONT_GENITIVE_TEN   ;
+0:s A_FRONT_ILLATIVE_IIN    ;
+0:de    A_FRONT_COMPARATIVE   ;
+0:s    A_FRONT_SUPERLATIVE    ;
+
+
+
+
+
+
+
+
+
+
+
+LEXICON A_TYVEN
+
+
+0 A_FRONT_NOMINATIVE    ;
+0:e A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS  ;
+0 A_FRONT_PARTITIVE_TÄ    ;
+0:e A_FRONT_ILLATIVE_EN ;
+0 A_FRONT_PARTITIVE_IÄ    ;
+0 A_FRONT_GENITIVE_IEN    ;
+0 A_FRONT_GENITIVE_TEN    ;
+0 A_FRONT_ILLATIVE_IIN    ;
+0:e    A_FRONT_COMPARATIVE   ;
+0  A_FRONT_SUPERLATIVE    ;
+
+
+
+
+
+LEXICON A_AVOIN
+
+
+0:n A_BACK_NOMINATIVE    ;
+0:me    A_BACK_SINGULARS    ;
+0:m     A_BACK_PLURALS    ;
+0:n A_BACK_PARTITIVE_TA    ;
+0:me    A_BACK_ILLATIVE_EN ;
+0:m A_BACK_PARTITIVE_IA    ;
+0:m A_BACK_GENITIVE_IEN    ;
+0:n A_BACK_GENITIVE_TEN    ;
+0:m A_BACK_ILLATIVE_IIN    ;
+0:me    A_BACK_COMPARATIVE   ;
+0:m    A_BACK_SUPERLATIVE    ;
+
+
+
+
+
+
+
+
+LEXICON A_ALASTON
+
+
+0:n A_BACK_NOMINATIVE    ;
+0:ma    A_BACK_SINGULARS    ;
+0:m     A_BACK_PLURALS    ;
+0:n   A_BACK_PARTITIVE_TA    ;
+0:ma    A_BACK_ILLATIVE_AN ;
+0:m     A_BACK_PARTITIVE_IA    ;
+0:m     A_BACK_GENITIVE_IEN    ;
+0:ma    A_BACK_GENITIVE_IN ;
+0:n   A_BACK_GENITIVE_TEN    ;
+0:m A_BACK_ILLATIVE_IIN    ;
+0:ma    A_BACK_COMPARATIVE   ;
+0:m    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_VIATON
+
+0:on A_BACK_NOMINATIVE    ;
+0:toma    A_BACK_SINGULARS    ;
+0:tom     A_BACK_PLURALS    ;
+0:on   A_BACK_PARTITIVE_TA    ;
+0:toma    A_BACK_ILLATIVE_AN ;
+0:tom     A_BACK_PARTITIVE_IA    ;
+0:tom     A_BACK_GENITIVE_IEN    ;
+0:toma    A_BACK_GENITIVE_IN ;
+0:on   A_BACK_GENITIVE_TEN    ;
+0:tom A_BACK_ILLATIVE_IIN    ;
+0:oma    A_BACK_COMPARATIVE   ;
+0:om    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_KYVYTÖN
+
+0:ön A_FRONT_NOMINATIVE    ;
+0:tömä    A_FRONT_SINGULARS    ;
+0:töm     A_FRONT_PLURALS    ;
+0:ön   A_FRONT_PARTITIVE_TÄ    ;
+0:tömä    A_FRONT_ILLATIVE_ÄN ;
+0:töm     A_FRONT_PARTITIVE_IÄ    ;
+0:töm     A_FRONT_GENITIVE_IEN    ;
+0:tömä    A_FRONT_GENITIVE_IN ;
+0:ön   A_FRONT_GENITIVE_TEN    ;
+0:töm A_FRONT_ILLATIVE_IIN    ;
+0:tömä    A_FRONT_COMPARATIVE   ;
+0:töm    A_FRONT_SUPERLATIVE    ;
+
+
+
+
+LEXICON A_HAPAN
+
+0:an  A_BACK_NOMINATIVE    ;
+0:pama    A_BACK_SINGULARS    ;
+0:pam     A_BACK_PLURALS    ;
+0:an     A_BACK_PARTITIVE_TA    ;
+0:pama    A_BACK_ILLATIVE_AN ;
+0:pam     A_BACK_PARTITIVE_IA    ;
+0:pam     A_BACK_GENITIVE_IEN    ;
+0:an     A_BACK_GENITIVE_TEN    ;
+0:pam A_FRONT_ILLATIVE_IIN    ;
+
+LEXICON A_LÄMMIN
+
+0:min A_FRONT_NOMINATIVE    ;
+0:pimä   A_FRONT_SINGULARS    ;
+0:pim    A_FRONT_PLURALS ;
+0:min A_FRONT_PARTITIVE_TÄ    ;
+0:pimä   A_FRONT_ILLATIVE_ÄN ;
+0:pim    A_FRONT_PARTITIVE_IÄ    ;
+0:pim    A_FRONT_GENITIVE_IEN    ;
+0:min A_FRONT_GENITIVE_TEN    ;
+0:pimä   A_FRONT_GENITIVE_IN ;
+0:pim    A_FRONT_ILLATIVE_IIN    ;
+0:pimä    A_FRONT_COMPARATIVE   ;
+0:pim    A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_PAHIN
+
+
+0:n A_BACK_NOMINATIVE    ;
+0:mpa   A_BACK_STRONG_SINGULARS    ;
+0:mma   A_BACK_WEAK_SINGULARS   ;
+0:mp    A_BACK_STRONG_PLURALS ;
+0:mm    A_BACK_WEAK_PLURALS    ;
+0:n A_BACK_PARTITIVE_TA    ;
+0:mpa   A_BACK_ILLATIVE_AN ;
+0:mp    A_BACK_PARTITIVE_IA    ;
+0:mp    A_BACK_GENITIVE_IEN    ;
+0:n A_BACK_GENITIVE_TEN    ;
+0:mpa   A_BACK_GENITIVE_IN ;
+0:mp    A_BACK_ILLATIVE_IIN    ;
+0:mma    A_BACK_COMPARATIVE   ;
+0:mm    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_SISIN
+
+0:n A_FRONT_NOMINATIVE    ;
+0:mpä   A_FRONT_STRONG_SINGULARS    ;
+0:mmä   A_FRONT_WEAK_SINGULARS   ;
+0:mp    A_FRONT_STRONG_PLURALS ;
+0:mm    A_FRONT_WEAK_PLURALS    ;
+0:n A_FRONT_PARTITIVE_TÄ    ;
+0:mpä   A_FRONT_ILLATIVE_ÄN ;
+0:mp    A_FRONT_PARTITIVE_IÄ    ;
+0:mp    A_FRONT_GENITIVE_IEN    ;
+0:n A_FRONT_GENITIVE_TEN    ;
+0:mpä   A_FRONT_GENITIVE_IN ;
+0:mp    A_FRONT_ILLATIVE_IIN    ;
+0:mmä    A_FRONT_COMPARATIVE   ;
+0:mp    A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_VASEN
+
+
+0:n A_BACK_NOMINATIVE    ;
+0:mpa   A_BACK_STRONG_SINGULARS    ;
+0:mma   A_BACK_WEAK_SINGULARS   ;
+0:mp    A_BACK_STRONG_PLURALS ;
+0:mm    A_BACK_WEAK_PLURALS    ;
+0:n A_BACK_PARTITIVE_TA    ;
+mpa A_BACK_PARTITIVE_A ;
+0:mpa   A_BACK_ILLATIVE_AN ;
+0:mp    A_BACK_PARTITIVE_IA    ;
+0:mp    A_BACK_GENITIVE_IEN    ;
+0:n A_BACK_GENITIVE_TEN    ;
+0:mpa   A_BACK_GENITIVE_IN ;
+0:mp    A_BACK_ILLATIVE_IIN    ;
+0:mma    A_BACK_COMPARATIVE   ;
+0:mm    A_BACK_SUPERLATIVE    ;
+
+
+
+
+LEXICON A_AAKKOSELLINEN
+
+
+0:nen A_BACK_NOMINATIVE    ;
+0:se  A_BACK_SINGULARS    ;
+0:s   A_BACK_PLURALS  ;
+0:s   A_BACK_PARTITIVE_TA    ;
+0:se  A_BACK_ILLATIVE_EN ;
+0:s   A_BACK_PARTITIVE_IA    ;
+0:s   A_BACK_GENITIVE_IEN    ;
+0:s   A_BACK_GENITIVE_TEN    ;
+0:s   A_BACK_ILLATIVE_IIN    ;
+0:se  A_BACK_COMPARATIVE   ;
+0:s   A_BACK_SUPERLATIVE    ;
+
+LEXICON A_KYLMÄJÄRKINEN
+
+0:nen A_FRONT_NOMINATIVE    ;
+0:se  A_FRONT_SINGULARS    ;
+0:s   A_FRONT_PLURALS  ;
+0:s   A_FRONT_PARTITIVE_TÄ    ;
+0:se  A_FRONT_ILLATIVE_EN ;
+0:s   A_FRONT_PARTITIVE_IÄ    ;
+0:s   A_FRONT_GENITIVE_IEN    ;
+0:s   A_FRONT_GENITIVE_TEN    ;
+0:s   A_FRONT_ILLATIVE_IIN    ;
+0:se    A_FRONT_COMPARATIVE   ;
+0:s    A_FRONT_SUPERLATIVE    ;
+
+
+
+
+
+LEXICON A_SYMPPIS
+
+
+0:s A_FRONT_NOMINATIVE    ;
+0:kse   A_FRONT_SINGULARS    ;
+0:ks    A_FRONT_PLURALS    ;
+0:s A_FRONT_PARTITIVE_TÄ    ;
+0:kse   A_FRONT_ILLATIVE_EN ;
+0:ks    A_FRONT_PARTITIVE_IÄ    ;
+0:ks    A_FRONT_GENITIVE_IEN    ;
+0:s     A_FRONT_GENITIVE_TEN    ;
+0:ks    A_FRONT_ILLATIVE_IIN    ;
+0:kse    A_FRONT_COMPARATIVE   ;
+0:ks    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_LÄHTEISYYS
+
+
+0:s A_FRONT_NOMINATIVE    ;
+0:te   A_FRONT_STRONG_SINGULARS    ;
+0:de   A_FRONT_WEAK_SINGULARS    ;
+0:ks    A_FRONT_PLURALS    ;
+0:t   A_FRONT_PARTITIVE_TÄ    ;
+0:te   A_FRONT_ILLATIVE_EN ;
+0:ks    A_FRONT_PARTITIVE_IÄ    ;
+0:ks    A_FRONT_GENITIVE_IEN    ;
+0:ks    A_FRONT_ILLATIVE_IIN    ;
+0:de    A_FRONT_COMPARATIVE   ;
+0:ks    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_AUTUAS
+
+
+0:s A_BACK_NOMINATIVE    ;
+0:a A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:s A_BACK_PARTITIVE_TA    ;
+0:a A_BACK_ILLATIVE_SEEN   ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_ISIIN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+0:a    A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_VALMIS
+
+0:s A_BACK_NOMINATIVE    ;
+0:i A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:s A_BACK_PARTITIVE_TA    ;
+0:i A_BACK_ILLATIVE_SEEN   ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_ISIIN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+0:i    A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_TIIVIS
+
+0:s A_FRONT_NOMINATIVE    ;
+0:i A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS    ;
+0:s A_FRONT_PARTITIVE_TÄ    ;
+0:i A_FRONT_ILLATIVE_SEEN   ;
+0 A_FRONT_PARTITIVE_ITÄ   ;
+0 A_FRONT_GENITIVE_IDEN   ;
+0 A_FRONT_GENITIVE_ITTEN  ;
+0 A_FRONT_ILLATIVE_ISIIN  ;
+0 A_FRONT_ILLATIVE_IHIN   ;
+0:i    A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_TYÖLÄS
+
+0:s A_FRONT_NOMINATIVE    ;
+0:ä A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS    ;
+0:s A_FRONT_PARTITIVE_TÄ    ;
+0:ä A_FRONT_ILLATIVE_SEEN   ;
+0 A_FRONT_PARTITIVE_ITÄ   ;
+0 A_FRONT_GENITIVE_IDEN   ;
+0 A_FRONT_GENITIVE_ITTEN  ;
+0 A_FRONT_ILLATIVE_ISIIN  ;
+0 A_FRONT_ILLATIVE_IHIN   ;
+0:ä    A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_VOIMAKAS
+
+0:as A_BACK_NOMINATIVE    ;
+0:kaa A_BACK_SINGULARS    ;
+0:ka A_BACK_PLURALS    ;
+0:as A_BACK_PARTITIVE_TA    ;
+0:kaa A_BACK_ILLATIVE_SEEN   ;
+0:ka A_BACK_PARTITIVE_ITA   ;
+0:ka A_BACK_GENITIVE_IDEN   ;
+0:ka A_BACK_GENITIVE_ITTEN  ;
+0:ka A_BACK_ILLATIVE_ISIIN  ;
+0:ka A_BACK_ILLATIVE_IHIN   ;
+0:kaa    A_BACK_COMPARATIVE   ;
+0:ka    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_TYYLIKÄS
+
+0:äs A_BACK_NOMINATIVE    ;
+0:kää A_FRONT_SINGULARS    ;
+0:kä A_FRONT_PLURALS    ;
+0:äs A_FRONT_PARTITIVE_TÄ    ;
+0:kää A_FRONT_ILLATIVE_SEEN   ;
+0:kä A_FRONT_PARTITIVE_ITÄ   ;
+0:kä A_FRONT_GENITIVE_IDEN   ;
+0:kä A_FRONT_GENITIVE_ITTEN  ;
+0:kä A_FRONT_ILLATIVE_ISIIN  ;
+0:kä A_FRONT_ILLATIVE_IHIN   ;
+0:kää    A_FRONT_COMPARATIVE   ;
+0:kä    A_FRONT_SUPERLATIVE    ;
+
+LEXICON A_REIPAS
+
+0:as A_BACK_NOMINATIVE    ;
+0:paa A_BACK_SINGULARS    ;
+0:pa A_BACK_PLURALS    ;
+0:as A_BACK_PARTITIVE_TA    ;
+0:paa A_BACK_ILLATIVE_SEEN   ;
+0:pa A_BACK_PARTITIVE_ITA   ;
+0:pa A_BACK_GENITIVE_IDEN   ;
+0:pa A_BACK_GENITIVE_ITTEN  ;
+0:pa A_BACK_ILLATIVE_ISIIN  ;
+0:pa A_BACK_ILLATIVE_IHIN   ;
+0:paa    A_BACK_COMPARATIVE   ;
+0:pa    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_RIETAS
+
+0:as A_BACK_NOMINATIVE    ;
+0:taa A_BACK_SINGULARS    ;
+0:ta A_BACK_PLURALS    ;
+0:as A_BACK_PARTITIVE_TA    ;
+0:taa A_BACK_ILLATIVE_SEEN   ;
+0:ta A_BACK_PARTITIVE_ITA   ;
+0:ta A_BACK_GENITIVE_IDEN   ;
+0:ta A_BACK_GENITIVE_ITTEN  ;
+0:ta A_BACK_ILLATIVE_ISIIN  ;
+0:ta A_BACK_ILLATIVE_IHIN   ;
+0:taa    A_BACK_COMPARATIVE   ;
+0:ta    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_RAITIS
+
+0:is A_BACK_NOMINATIVE    ;
+0:tii A_BACK_SINGULARS    ;
+0:ti A_BACK_PLURALS    ;
+0:is A_BACK_PARTITIVE_TA    ;
+0:tii A_BACK_ILLATIVE_SEEN   ;
+0:ti A_BACK_PARTITIVE_ITA   ;
+0:ti A_BACK_GENITIVE_IDEN   ;
+0:ti A_BACK_GENITIVE_ITTEN  ;
+0:ti A_BACK_ILLATIVE_ISIIN  ;
+0:ti A_BACK_ILLATIVE_IHIN   ;
+0:tii    A_BACK_COMPARATIVE   ;
+0:te    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_HIDAS
+
+0:das A_BACK_NOMINATIVE    ;
+0:taa A_BACK_SINGULARS    ;
+0:ta A_BACK_PLURALS    ;
+0:das A_BACK_PARTITIVE_TA    ;
+0:taa A_BACK_ILLATIVE_SEEN   ;
+0:ta A_BACK_PARTITIVE_ITA   ;
+0:ta A_BACK_GENITIVE_IDEN   ;
+0:ta A_BACK_GENITIVE_ITTEN  ;
+0:ta A_BACK_ILLATIVE_ISIIN  ;
+0:ta A_BACK_ILLATIVE_IHIN   ;
+0:taa    A_BACK_COMPARATIVE   ;
+0:ta    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_HARRAS
+
+0:ras A_BACK_NOMINATIVE    ;
+0:taa A_BACK_SINGULARS    ;
+0:ta A_BACK_PLURALS    ;
+0:ras A_BACK_PARTITIVE_TA    ;
+0:taa A_BACK_ILLATIVE_SEEN   ;
+0:ta A_BACK_PARTITIVE_ITA   ;
+0:ta A_BACK_GENITIVE_IDEN   ;
+0:ta A_BACK_GENITIVE_ITTEN  ;
+0:ta A_BACK_ILLATIVE_ISIIN  ;
+0:ta A_BACK_ILLATIVE_IHIN   ;
+0:taa    A_BACK_COMPARATIVE   ;
+0:ta    A_BACK_SUPERLATIVE    ;
+
+
+
+LEXICON A_OHUT
+
+
+0:t A_BACK_NOMINATIVE    ;
+0:e A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:t A_BACK_PARTITIVE_TA    ;
+0:e A_BACK_ILLATIVE_EN ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_ISIIN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+0:e    A_BACK_COMPARATIVE   ;
+0    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_EHYT
+
+0:t A_FRONT_NOMINATIVE    ;
+0:e A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS    ;
+0:t A_FRONT_PARTITIVE_TÄ    ;
+0:e A_FRONT_ILLATIVE_EN ;
+0 A_FRONT_PARTITIVE_ITÄ   ;
+0 A_FRONT_GENITIVE_IDEN   ;
+0 A_FRONT_GENITIVE_ITTEN  ;
+0 A_FRONT_ILLATIVE_ISIIN  ;
+0 A_FRONT_ILLATIVE_IHIN   ;
+0:e    A_FRONT_COMPARATIVE   ;
+0    A_FRONT_SUPERLATIVE    ;
+
+
+LEXICON A_AINUT
+
+
+
+0:t   A_BACK_NOMINATIVE    ;
+0:u A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:t   A_BACK_PARTITIVE_TA    ;
+0:u A_BACK_ILLATIVE_SEEN ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_ISIIN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+
+
+
+
+LEXICON A_KULUNUT
+
+
+0:ut     A_BACK_NOMINATIVE    ;
+0:ee   A_BACK_SINGULARS    ;
+0:e    A_BACK_PLURALS    ;
+0:ut    A_BACK_PARTITIVE_TA    ;
+0:ee   A_BACK_ILLATIVE_SEEN    ;
+0:e    A_BACK_PARTITIVE_ITA   ;
+0:e    A_BACK_GENITIVE_IDEN   ;
+0:e    A_BACK_GENITIVE_ITTEN  ;
+0:e    A_BACK_ILLATIVE_ISIIN  ;
+0:e    A_BACK_ILLATIVE_IHIN   ;
+0:ee    A_BACK_COMPARATIVE   ;
+0:e    A_BACK_SUPERLATIVE    ;
+
+LEXICON A_ÄLLISTYNYT
+
+0:yt A_FRONT_NOMINATIVE    ;
+0:ee   A_FRONT_SINGULARS    ;
+0:e    A_FRONT_PLURALS    ;
+0:yt    A_FRONT_PARTITIVE_TÄ    ;
+0:ee   A_FRONT_ILLATIVE_SEEN    ;
+0:e    A_FRONT_PARTITIVE_ITÄ   ;
+0:e    A_FRONT_GENITIVE_IDEN   ;
+0:e    A_FRONT_GENITIVE_ITTEN  ;
+0:e    A_FRONT_ILLATIVE_ISIIN  ;
+0:e    A_FRONT_ILLATIVE_IHIN   ;
+0:ee    A_FRONT_COMPARATIVE   ;
+0:e    A_FRONT_SUPERLATIVE    ;
+
+
+
+LEXICON A_AHNE
+
+
+0 A_BACK_NOMINATIVE    ;
+0:e A_BACK_SINGULARS    ;
+0 A_BACK_PLURALS    ;
+0:t A_BACK_PARTITIVE_TA    ;
+0:e A_BACK_ILLATIVE_SEEN   ;
+0 A_BACK_PARTITIVE_ITA   ;
+0 A_BACK_GENITIVE_IDEN   ;
+0 A_BACK_GENITIVE_ITTEN  ;
+0 A_BACK_ILLATIVE_ISIIN  ;
+0 A_BACK_ILLATIVE_IHIN   ;
+0:e    A_BACK_COMPARATIVE   ;
+0  A_BACK_SUPERLATIVE    ;
+
+LEXICON A_TERVE
+
+0 A_FRONT_NOMINATIVE    ;
+0:e A_FRONT_SINGULARS    ;
+0 A_FRONT_PLURALS    ;
+0:t A_FRONT_PARTITIVE_TÄ    ;
+0:e A_FRONT_ILLATIVE_SEEN   ;
+0 A_FRONT_PARTITIVE_ITÄ   ;
+0 A_FRONT_GENITIVE_IDEN   ;
+0 A_FRONT_GENITIVE_ITTEN  ;
+0 A_FRONT_ILLATIVE_ISIIN  ;
+0 A_FRONT_ILLATIVE_IHIN   ;
+0:e    A_FRONT_COMPARATIVE   ;
+0  A_FRONT_SUPERLATIVE    ;
+
+
+LEXICON A_KADE
+
+0:de       A_BACK_NOMINATIVE    ;
+0:tee   A_BACK_SINGULARS    ;
+0:te    A_BACK_PLURALS    ;
+0:det   A_BACK_PARTITIVE_TA    ;
+0:tee   A_BACK_ILLATIVE_SEEN   ;
+0:te   A_BACK_PARTITIVE_ITA   ;
+0:te   A_BACK_GENITIVE_IDEN   ;
+0:te   A_BACK_GENITIVE_ITTEN  ;
+0:de   A_BACK_ILLATIVE_ISIIN  ;
+0:te   A_BACK_ILLATIVE_IHIN   ;
+
+LEXICON A_HELLE
+
+0:le       A_BACK_NOMINATIVE    ;
+0:tee   A_BACK_SINGULARS    ;
+0:te    A_BACK_PLURALS    ;
+0:let   A_BACK_PARTITIVE_TA    ;
+0:tee   A_BACK_ILLATIVE_SEEN   ;
+0:te   A_BACK_PARTITIVE_ITA   ;
+0:te   A_BACK_GENITIVE_IDEN   ;
+0:te   A_BACK_GENITIVE_ITTEN  ;
+0:te   A_BACK_ILLATIVE_ISIIN  ;
+0:te   A_BACK_ILLATIVE_IHIN   ;
+
+
+
+
+
+
+
+LEXICON A_PITKÄ
+
+
+0:tkä   A_FRONT_NOMINATIVE    ;
+0:tkä   A_FRONT_STRONG_SINGULARS    ;
+0:tkä   A_FRONT_WEAK_SINGULARS   ;
+0:tk    A_FRONT_STRONG_PLURALS  ;
+0:tk    A_FRONT_WEAK_PLURALS    ;
+0:tkä   A_FRONT_PARTITIVE_Ä      ;
+0:tkä   A_FRONT_ILLATIVE_ÄN     ;
+0:tk    A_FRONT_PARTITIVE_IÄ    ;
+0:tk    A_FRONT_GENITIVE_IEN    ;
+0:tkä   A_FRONT_GENITIVE_IN    ;
+0:tk    A_FRONT_ILLATIVE_IIN   ;
+0:te    A_FRONT_COMPARATIVE   ;
+0:de    A_FRONT_COMPARATIVE   ;
+0:s     A_FRONT_SUPERLATIVE    ;
+

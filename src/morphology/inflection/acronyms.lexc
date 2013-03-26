@@ -1,566 +1,141 @@
-! Acronyms are inflected using a colon, followed by the inflectional endings,
-! which depend on either last letter of the word or inflection class of the
-! last word of the abbreviation. The exception to the inflection scheme is the
-! singular nominative, which appears without colon.
-!
-! Pronouncable abbreviations such as aids, hiv, kela, alko etc. are actually
-! counted as regular words with regular inflection patterns.
-!
-! |VISK 169|
-
-LEXICON AcronymStem/Common
-[NUM=SG][CASE=NOM]:	Ennd	;
-	Compounding/Dashed	;
-
-LEXICON AcronymStem/2
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:{aeiouyäö}{aeiouyäö}n	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lt{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:ll{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:st{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:n{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ss{aä}	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:j{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilt{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:ill{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:in{aä}	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ist{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:iss{aä}	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/a
-	AcronymStem/A	;
-
-LEXICON AcronymStem/A
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:ta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:han	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:ita	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/b
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/B
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/c
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/C
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/d
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/D
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/e
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/E
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/g
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/G
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/p
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/P
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/v
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/V
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/w
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/W
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/t
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/T
-	AcronymStem/ee	;
-
-LEXICON AcronymStem/ee
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hen	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/i
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/I
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/j
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/J
-	AcronymStem/ii	;
-
-LEXICON AcronymStem/ii
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hin	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/h
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/H
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/k
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/K
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/o
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/O
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/å
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/Å
-	AcronymStem/oo	;
-
-LEXICON AcronymStem/oo
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:ta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hon	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:ita	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/q
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/Q
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/u
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/U
-	AcronymStem/uu	;
-
-LEXICON AcronymStem/uu
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:ta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hun	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:ita	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/f
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/F
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/l
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/L
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/m
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/M
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/n
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/N
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/r
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/R
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/s
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/S
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/š
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/Š
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/x
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/X
-	AcronymStem/äX	;
-
-LEXICON AcronymStem/äX
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:ää	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:ään	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:iä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:iin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/y
-	AcronymStem/Y	;
-
-LEXICON AcronymStem/Y
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hin	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/ž
-    AcronymStem/Z   ;
-
-LEXICON AcronymStem/Ž
-    AcronymStem/Z   ;
-
-LEXICON AcronymStem/z
-    AcronymStem/Z   ;
-
-LEXICON AcronymStem/Z
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:aa	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:aan	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:tta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:lta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:lla	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:sta	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:na	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssa	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:ja	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:itta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:ilta	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:ina	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:ista	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issa	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/ä
-	AcronymStem/Ä	;
-
-LEXICON AcronymStem/Ä
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hän	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymStem/ö
-	AcronymStem/Ö	;
-
-LEXICON AcronymStem/Ö
-	AcronymStem/Common	;
-[NUM=SG][CASE=NOM]:%:	Possessive/Obligatory+Vn	;
-[NUM=SG][CASE=NOM]:%:	Clitic/Obligatory	;
-[NUM=PL][CASE=NOM]:%:t	Clitic/Optional	;
-[NUM=SG][CASE=NOM]:%:n	Clitic/Optional	;
-[NUM=SG][CASE=PAR]:%:tä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ILL]:%:hön	Possessive/Optional	;
-[NUM=SG][CASE=ABE]:%:ttä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ABL]:%:ltä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ADE]:%:llä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ALL]:%:lle	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ELA]:%:stä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=ESS]:%:nä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=INE]:%:ssä	Possessive/Optional+Vn	;
-[NUM=SG][CASE=TRA]:%:ksi	Clitic/Optional	;
-[NUM=SG][CASE=TRA]:%:kse	Possessive/Obligatory+Vn	;
-[NUM=PL][CASE=PAR]:%:itä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ILL]:%:ihin	Possessive/Optional	;
-[NUM=PL][CASE=ABE]:%:ittä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ABL]:%:iltä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ADE]:%:illä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ALL]:%:ille	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ESS]:%:inä	Possessive/Optional+Vn	;
-[CASE=CMT]:%:ine	Possessive/Optional+Vn	;
-[NUM=PL][CASE=ELA]:%:istä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INE]:%:issä	Possessive/Optional+Vn	;
-[NUM=PL][CASE=INS]:%:in	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:iksi	Clitic/Optional	;
-[NUM=PL][CASE=TRA]:%:ikse	Possessive/Obligatory+Vn	;
-
-LEXICON AcronymDigitStem/0
-	AcronymStem/Common	;
-0:{^a}	DigitStem10	;
-
-LEXICON AcronymDigitStem/1
-	AcronymStem/Common	;
-0:{^y}{^i}	DigitStem31	;
-
-LEXICON AcronymDigitStem/2
-	AcronymStem/Common	;
-0:{^a}{^i}	DigitStem31	;
-
-LEXICON AcronymDigitStem/3
-	AcronymStem/Common	;
-0:{^o}{^e}	DigitStem7	;
-
-LEXICON AcronymDigitStem/4
-	AcronymStem/Common	;
-0:{^ä}	DigitStem10	;
-
-LEXICON AcronymDigitStem/5
-	AcronymStem/Common	;
-0:{^i}	DigitStem27	;
-
-LEXICON AcronymDigitStem/6
-	AcronymStem/Common	;
-0:{^u}{^i}	DigitStem27	;
-
-LEXICON AcronymDigitStem/7
-	AcronymStem/Common	;
-0:{^ä}	DigitStem10	;
-
-LEXICON AcronymDigitStem/8
-	AcronymStem/Common	;
-0:{^a}	DigitStem10	;
-
-LEXICON AcronymDigitStem/9
-	AcronymStem/Common	;
-0:{^ä}	DigitStem10	;
-
+LEXICON ACRO_FRONT_POSS
+[POSS=SG1]:%>ni  ACRO_FRONT_CLIT_OPT        ;
+[POSS=SG2]:%>si  ACRO_FRONT_CLIT_OPT        ;
+[POSS=SG3]:%>nsä ACRO_FRONT_CLIT_OPT        ;
+[POSS=PL1]:%>mme ACRO_FRONT_CLIT_OPT        ;
+[POSS=PL2]:%>nne ACRO_FRONT_CLIT_OPT        ;
+[POSS=PL3]:%>nsä ACRO_FRONT_CLIT_OPT        ;
+
+LEXICON ACRO_BACK_POSS
+[POSS=SG1]:%>ni  ACRO_BACK_CLIT_OPT        ;
+[POSS=SG2]:%>si  ACRO_BACK_CLIT_OPT        ;
+[POSS=SG3]:%>nsa ACRO_BACK_CLIT_OPT        ;
+[POSS=PL1]:%>mme ACRO_BACK_CLIT_OPT        ;
+[POSS=PL2]:%>nne ACRO_BACK_CLIT_OPT        ;
+[POSS=PL3]:%>nsa ACRO_BACK_CLIT_OPT        ;
+
+LEXICON ACRO_BACK_POSS_AN
+[POSS=SG3]:%>an    ACRO_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>an    ACRO_BACK_CLIT_OPT     ;
+
+LEXICON ACRO_BACK_POSS_EN
+[POSS=SG3]:%>en    ACRO_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>en    ACRO_BACK_CLIT_OPT     ;
+
+LEXICON ACRO_FRONT_POSS_EN
+[POSS=SG3]:%>en    ACRO_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>en    ACRO_FRONT_CLIT_OPT     ;
+
+LEXICON ACRO_FRONT_POSS_ÄN
+[POSS=SG3]:%>än    ACRO_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>än    ACRO_FRONT_CLIT_OPT     ;
+
+LEXICON ACRO_BACK_CLIT
+[CLIT=HAN]:%>han   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hankaan  #        ;
+[CLIT=HAN][CLIT=KO]:%>hanko #        ;
+[CLIT=HAN][CLIT=PA]:%>hanpa #        ;
+[CLIT=KO]:%>ko #        ;
+[CLIT=KO][CLIT=HAN]:%>kohan #        ;
+[CLIT=KO][CLIT=KAAN]:%>kokaan    #        ;
+[CLIT=KO][CLIT=KIN]:%>kokin    #        ;
+[CLIT=KO][CLIT=PA]:%>kopa   #        ;
+[CLIT=KO][CLIT=S]:%>kos    #        ;
+[CLIT=PA]:%>pa #        ;
+[CLIT=PA][CLIT=HAN]:%>pahan #        ;
+[CLIT=PA][CLIT=KAAN]:%>pakaan    #        ;
+[CLIT=PA][CLIT=KIN]:%>pakin    #        ;
+[CLIT=PA][CLIT=KO]:%>pako   #        ;
+[CLIT=PA][CLIT=S]:%>pas    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhan  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkaan #        ;
+[CLIT=KIN][CLIT=KO]:%>kinko    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpa    #        ;
+[CLIT=KAAN]:%>kaan  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>kaanhan  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>kaankin #        ;
+[CLIT=KAAN][CLIT=KO]:%>kaanko    #        ;
+[CLIT=KAAN][CLIT=PA]:%>kaanpa    #        ;
+
+LEXICON ACRO_FRONT_CLIT
+[CLIT=HAN]:%>hän   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hänkään  #        ;
+[CLIT=HAN][CLIT=KO]:%>hänkö #        ;
+[CLIT=HAN][CLIT=PA]:%>hänpä #        ;
+[CLIT=KO]:%>kö #        ;
+[CLIT=KO][CLIT=HAN]:%>köhän #        ;
+[CLIT=KO][CLIT=KAAN]:%>kökään    #        ;
+[CLIT=KO][CLIT=KIN]:%>kökin    #        ;
+[CLIT=KO][CLIT=PA]:%>köpä   #        ;
+[CLIT=KO][CLIT=S]:%>kös    #        ;
+[CLIT=PA]:%>pä #        ;
+[CLIT=PA][CLIT=HAN]:%>pähän #        ;
+[CLIT=PA][CLIT=KAAN]:%>päkään    #        ;
+[CLIT=PA][CLIT=KIN]:%>päkin    #        ;
+[CLIT=PA][CLIT=KO]:%>päkö   #        ;
+[CLIT=PA][CLIT=S]:%>päs    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhän  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkään #        ;
+[CLIT=KIN][CLIT=KO]:%>kinkö    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpä    #        ;
+[CLIT=KAAN]:%>kään  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>käänhän  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>käänkin #        ;
+[CLIT=KAAN][CLIT=KO]:%>käänkö    #        ;
+[CLIT=KAAN][CLIT=PA]:%>käänpä    #        ;
+
+
+LEXICON ACRO_BACK_CLIT_OPT
+0    #   ;
+0   ACRO_BACK_CLIT    ;
+
+LEXICON ACRO_FRONT_CLIT_OPT
+0    #   ;
+0   ACRO_FRONT_CLIT    ;
+
+LEXICON ACRO_BACK_POSS_AN_OPT
+0    ACRO_BACK_POSS   ;
+0    ACRO_BACK_POSS_AN ;
+0    ACRO_BACK_CLIT ;
+0    #    ;
+
+LEXICON ACRO_FRONT_POSS_ÄN_OPT
+0    ACRO_FRONT_POSS   ;
+0    ACRO_FRONT_POSS_ÄN  ;
+0    ACRO_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ACRO_BACK_POSS_EN_OPT
+0    ACRO_BACK_POSS   ;
+0    ACRO_BACK_POSS_EN ;
+0    ACRO_BACK_CLIT ;
+0    #    ;
+
+LEXICON ACRO_FRONT_POSS_EN_OPT
+0    ACRO_FRONT_POSS   ;
+0    ACRO_FRONT_POSS_EN  ;
+0    ACRO_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ACRO_BACK_POSS_CLIT_OPT
+0    ACRO_BACK_POSS   ;
+0    ACRO_BACK_CLIT ;
+0    #    ;
+
+LEXICON ACRO_FRONT_POSS_CLIT_OPT
+0    ACRO_FRONT_POSS   ;
+0    ACRO_FRONT_CLIT ;
+0    #    ;
+
+LEXICON ACRO_BACK_POSS_EN_OBL
+0   ACRO_BACK_POSS  ;
+0   ACRO_BACK_POSS_EN   ;
+
+LEXICON ACRO_FRONT_POSS_EN_OBL
+0   ACRO_FRONT_POSS  ;
+0   ACRO_FRONT_POSS_EN   ;
+
+LEXICON ACRO_COMPOUND
+-:0-     NOMINAL   ;

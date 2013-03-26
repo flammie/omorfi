@@ -48,12 +48,19 @@ temporary.phon.hfst: morphology/omorfi.lexc.hfst phonology/omorfi.twolc.hfst
 temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
 	cat temporary.phon.hfst |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/hyphenations.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/uppercase-$(UPPERCASING).hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=NONE]' -t '[CASECHANGE=NONE]:@_EPSILON_SYMBOL_@' |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=UPALL]' -t '[CASECHANGE=UPALL]:@_EPSILON_SYMBOL_@' |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=UPFIRST]' -t '[CASECHANGE=UPFIRST]:@_EPSILON_SYMBOL_@' |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f š -T orthography/sh.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f ž -T orthography/zh.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/orthographic-variations.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
@@ -119,6 +126,7 @@ temporary.tokenweights-only.hfst: temporary.tagweighted.hfst weights/weights.$(T
 # also include the tokens not in corpus, somehow
 temporary.token-backoff.hfst: temporary.tagweighted.hfst weights/surface-sigma-star.hfst
 	$(HREW) -e -a 5.267 weights/surface-sigma-star.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
 		$(HCOMP) $(HFST_FLAGS) -1 temporary.tagweighted.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 

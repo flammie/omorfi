@@ -9,6 +9,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     # first field is lemma
     wordmap['lemma'] = csv_parts[0].strip('"')
     wordmap['stub'] = wordmap['lemma']
+    wordmap['gradestem'] = wordmap['lemma']
     # second field is KOTUS paradigm class
     try:
         wordmap['kotus_tn'] = int(csv_parts[1].strip('"'))
@@ -39,50 +40,28 @@ def parse_defaults_from_csv(wordmap, csv_parts):
         wordmap['pos'] = 'VERB'
     elif wordmap['pos'] == 'P':
         wordmap['pos'] = 'PARTICLE'
-        wordmap['lexicon'] = 'Particles'
-        wordmap['continuation'] = 'Particle+Clitic/Optional'
     elif wordmap['pos'] == 'Prop':
         wordmap['pos'] = 'NOUN'
         wordmap['is_proper'] = True
     elif wordmap['pos'] == 'Adv':
         wordmap['pos'] = 'ADVERB'
-        wordmap['lexicon'] = 'Adverbs'
-        wordmap['continuation'] = 'Adverb+Clitic/Optional'
     elif wordmap['pos'] == 'Adp':
         wordmap['pos'] = 'ADPOSITION'
-        wordmap['lexicon'] = 'Adpositions'
-        wordmap['continuation'] = 'Adposition+Clitic/Optional'
     elif wordmap['pos'] == 'Intj':
         wordmap['pos'] = 'INTERJECTION'
-        wordmap['lexicon'] = 'Interjections'
-        wordmap['continuation'] = 'Interjection+Ennd'
     elif wordmap['pos'] == 'Conj':
         wordmap['pos'] = 'CONJUNCTION'
-        wordmap['lexicon'] = 'Conjunctions'
-        wordmap['continuation'] = 'Conjunction+Ennd'
     elif wordmap['pos'] == 'Pre':
-        wordmap['pos'] = 'PREFIX'
-        wordmap['lexicon'] = 'Prefixes'
-        wordmap['continuation'] = 'Prefix+Compounding'
+        wordmap['pos'] = 'NOUN'
+        wordmap['is_prefix'] = True
     elif wordmap['pos'] == 'Abbr':
         wordmap['pos'] = 'ABBREVIATION'
-        wordmap['lexicon'] = 'Abbreviations'
-        wordmap['continuation'] = 'Abbreviation+Ennd'
     elif wordmap['pos'] == 'Acro':
         wordmap['pos'] = 'ACRONYM'
-        wordmap['lexicon'] = 'Acronyms'
-        if wordmap['stub'][-1] in '0123456789':
-            wordmap['continuation'] = 'AcronymDigitStem'
-        else:
-            wordmap['continuation'] = 'AcronymStem'
     elif wordmap['pos'] == 'Num':
         wordmap['pos'] = 'NUMERAL'
-        wordmap['lexicon'] = 'Numerals'
-        wordmap['continuation'] = 'Numeral+Ennd'
     elif wordmap['pos'] == 'Pron':
         wordmap['pos'] = 'PRONOUN'
-        wordmap['lexicon'] = 'Pronouns'
-        wordmap['continuation'] = 'Pronoun+Ennd'
     else:
         print("Unrecognised POS", csv_parts[3], "in", csv_parts)
 
@@ -107,10 +86,11 @@ def parse_defaults_from_csv(wordmap, csv_parts):
 def parse_extras_from_csv(wordmap, csv_parts):
     if len(csv_parts) >= 5:
         for csv_extra in csv_parts[4:]:
-            extra_fields = csv_extra.strip('"').split("=")
+            extra_fields = csv_extra.split("=")
             if extra_fields[0] == 'plt':
                 wordmap['plurale_tantum'] = extra_fields[1]
             elif extra_fields[0] == 'prop':
+                wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                 if wordmap['is_proper'] or wordmap['pos'] == 'ACRONYM':
                     wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                     wordmap['is_proper'] = True
@@ -120,17 +100,10 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['possessive'] = extra_fields[1]
             elif extra_fields[0] == 'stem-vowel':
                 wordmap['stem_vowel'] = extra_fields[1]
-            elif extra_fields[0] == 'original-ktn':
-                wordmap['analysis_tn'] = int(extra_fields[1])
             elif extra_fields[0] == 'style':
                 wordmap['style'] = extra_fields[1]
-            elif extra_fields[0] == 'stub':
-                wordmap['explicit_stub'] = extra_fields[1]
-            elif extra_fields[0] == 'stem':
-                wordmap['explicit_stem'] = extra_fields[1]
             elif extra_fields[0] == 'boundaries':
-                wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}").replace(" ", " {#}")
-                wordmap['lemma'] = extra_fields[1].replace("|", "'|'").replace("_", "'_'")
+                wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}")
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     return wordmap
@@ -187,19 +160,46 @@ def finetune_conts(wordmap):
 
 def add_extras(wordmap):
     if wordmap['stem_vowel']:
-        wordmap['stub'] += '{^' + wordmap['stem_vowel'] + '}'
+        wordmap['gradestem'] += '{^' + wordmap['stem_vowel'] + '}'
     if wordmap['harmony']:
-        wordmap['stub'] += '{^' + wordmap['harmony'] + '}'
+        wordmap['gradestem'] += '{^' + wordmap['harmony'] + '}'
     if wordmap['kotus_av']:
-        wordmap['stub'] += '{' + wordmap['kotus_av'] + '}'
+        wordmap['gradestem'] += '{' + wordmap['kotus_av'] + '}'
     if wordmap['plurale_tantum'] == 'obligatory':
-        wordmap['stub'] += '@U.PLURALE.TANTUM@'
+        wordmap['gradestem'] += '@U.PLURALE.TANTUM@'
     elif wordmap['plurale_tantum'] == 'common':
-        wordmap['stub'] += '{PLT?}'
-    if wordmap['pos'] == 'PREFIX':
+        wordmap['gradestem'] += '{PLT?}'
+    if wordmap['is_prefix']:
         wordmap['stub'] = replace_rightmost(wordmap['stub'], '-', '')
-    elif wordmap['pos'] == 'SUFFIX':
+    elif wordmap['is_suffix']:
         wordmap['stub'] = wordmap['stub'][1:]
     return wordmap
 
+def parse_from_tsv(wordmap, fields):
+    wordmap['lemma'] = fields[0]
+    wordmap['new_para'] = fields[1]
+    wordmap['pos'] = fields[2]
+    wordmap['kotus_tn'] = fields[3]
+    wordmap['kotus_av'] = fields[4]
+    wordmap['plurale_tantum'] = fields[5]
+    wordmap['possessive'] = fields[6]
+    wordmap['clitics'] = fields[7]
+    wordmap['is_proper'] = fields[8]
+    wordmap['proper_noun_class'] = fields[9]
+    wordmap['style'] = fields[10]
+    wordmap['stub'] = fields[11]
+    wordmap['gradestem'] = fields[12]
+    wordmap['twolstem'] = fields[13]
+    wordmap['grade_dir'] = fields[14]
+    wordmap['harmony'] = fields[15]
+    wordmap['is_suffix'] = fields[16]
+    wordmap['is_prefix'] = fields[17]
+    wordmap['stem_vowel'] = fields[18]
+    wordmap['stem_diphthong'] = fields[19]
+    for k,v in wordmap.items():
+        if v == 'False':
+            wordmap[k] = False
+        if v == 'None':
+            wordmap[k] = None
+    return wordmap
 

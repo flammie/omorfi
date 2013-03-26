@@ -1,175 +1,461 @@
-! Nominal inflection and derivation
-
-LEXICON NounStem/Nominative
-@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@[NUM=SG][CASE=NOM]:@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@{AV+}	Clitic/Optional		;
-@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@[NUM=SG][CASE=NOM]:@U.AGREE.SGfNOM@@D.ALLOW.SGfPAR@{AV+}	Compounding		;
-! derivation
-[GUESS=DERIVE][DRV=INEN][POS=ADJECTIVE]:{←i~}{AV+}i	kotus_38_ADJECTIVE/stemfiller		;
-@C.LOWERCASED@[GUESS=DERIVE][DRV=LAINEN][POS=ADJECTIVE]:@C.LOWERCASED@l{aä}i	kotus_38_ADJECTIVE/stemfiller		;
-@P.LONGxANALYSIS.TURE@{←i~}{AV+}i	kotus_38_ADJECTIVE/stemfiller		;
-@C.LOWERCASED@@P.LONGxANALYSIS.TURE@l{aä}i	kotus_38_ADJECTIVE/stemfiller		;
-
-LEXICON NounStem/Singular
-@D.PLURALE.TANTUM@	NounStem/Singular/Strong	;
-@D.PLURALE.TANTUM@	NounStem/Singular/Weak	;
-	NounStem/Singular/Weak/Plural	;
-
-LEXICON NounStem/Plural
-	NounStem/Plural/Strong	;
-	NounStem/Plural/Weak	;
-
-LEXICON NounStem/Singular/Weak/Plural
-@U.AGREE.PLfNOMACC@[NUM=PL][CASE=NOM]:@U.AGREE.PLfNOMACC@{AV-}t	Clitic/Optional		;
-
-LEXICON NounStem/Singular/Weak
-	NounStem/Singular/Weak/Plural	;
-@U.AGREE.SGfABE@[NUM=SG][CASE=ABE]:@U.AGREE.SGfABE@t{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfABE@[NUM=SG][CASE=ABE]:@U.NEED.NUMERAL@@U.AGREE.SGfABE@t{AV-}t{aä}	Compounding		;
-@U.AGREE.SGfABL@[NUM=SG][CASE=ABL]:@U.AGREE.SGfABL@l{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfABL@[NUM=SG][CASE=ABL]:@U.NEED.NUMERAL@@U.AGREE.SGfABL@l{AV-}t{aä}	Compounding		;
-@U.AGREE.SGfADE@[NUM=SG][CASE=ADE]:@U.AGREE.SGfADE@l{AV-}l{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfADE@[NUM=SG][CASE=ADE]:@U.NEED.NUMERAL@@U.AGREE.SGfADE@l{AV-}l{aä}	Compounding		;
-@U.AGREE.SGfALL@[NUM=SG][CASE=ALL]:@U.AGREE.SGfALL@l{AV-}le	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfALL@[NUM=SG][CASE=ALL]:@U.NEED.NUMERAL@@U.AGREE.SGfALL@l{AV-}le	Compounding		;
-@U.AGREE.SGfELA@[NUM=SG][CASE=ELA]:@U.AGREE.SGfELA@s{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfELA@[NUM=SG][CASE=ELA]:@U.NEED.NUMERAL@@U.AGREE.SGfELA@s{AV-}t{aä}	Compounding		;
-@U.AGREE.SGfGENACC@[NUM=SG][CASE=GEN]:@U.AGREE.SGfGENACC@n{AV-}	Clitic/Optional		;
-@U.AGREE.SGfGENACC@[NUM=SG][CASE=GEN]:@U.AGREE.SGfGENACC@n{AV-}	Compounding		;
-@U.AGREE.SGfINE@[NUM=SG][CASE=INE]:@U.AGREE.SGfINE@s{AV-}s{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfINE@[NUM=SG][CASE=INE]:@U.NEED.NUMERAL@@U.AGREE.SGfINE@s{AV-}s{aä}	Compounding		;
-@U.AGREE.SGfTRA@[NUM=SG][CASE=TRA]:@U.AGREE.SGfTRA@k{AV-}se	Possessive/Obligatory+Vn		;
-@U.AGREE.SGfTRA@[NUM=SG][CASE=TRA]:@U.AGREE.SGfTRA@k{AV-}si	Clitic/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfTRA@[NUM=SG][CASE=TRA]:@U.NEED.NUMERAL@@U.AGREE.SGfTRA@k{AV-}si	Clitic/Optional		;
-! derivations
-[GUESS=DERIVE][NUM=SG][DRV=TSE][POS=ADVERB][CASE=PRL]:{AV-}tse	Clitic/Optional	 ;
-[GUESS=DERIVE][DRV=LLINEN][POS=ADJECTIVE]:{AV-}lli	kotus_38_NOUN/stemfiller		;
-[GUESS=DERIVE][DRV=LLINEN][DRV=VS][POS=NOUN]:{AV-}llis{uy}{uy}	kotus_40_NOUN/stemfiller		;
-[GUESS=DERIVE][DRV=STI][POS=ADVERB]:{AV-}sti	Clitic/Optional		;
-[GUESS=DERIVE][DRV=TAR][POS=NOUN]:{AV-}t{t~~}{aä}r{C}	kotus_32_NOUN/stemfiller		;
-[GUESS=DERIVE][DRV=TON][POS=ADJECTIVE]:{AV-}t{t~~}{oö}{C}	kotus_34_NOUN/stemfiller		;
-[GUESS=DERIVE][DRV=TON][DRV=UUS][POS=NOUN]:{AV-}tt{oö}m{uy}{uy}   kotus_40_NOUN/stemfiller    ;
-@P.LONGxANALYSIS.TURE@{AV-}tse	Clitic/Optional	 ;
-@P.LONGxANALYSIS.TURE@{AV-}lli	kotus_38_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}llis{uy}{uy}	kotus_40_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}sti	Clitic/Optional		;
-@P.LONGxANALYSIS.TURE@{AV-}t{t~~}{aä}r{C}	kotus_32_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}t{t~~}{oö}{C}	kotus_34_NOUN/stemfiller		;
-@P.LONGxANALYSIS.TURE@{AV-}tt{oö}m{uy}{uy}   kotus_40_NOUN/stemfiller    ;
-
-LEXICON NounStem/Singular/Strong
-@U.AGREE.SGfESS@[NUM=SG][CASE=ESS]:@U.AGREE.SGfESS@{AV+}n{aä}	Possessive/Optional+Vn		;
-@R.NEED.NUMERAL@@U.AGREE.SGfESS@[NUM=SG][CASE=ESS]:@R.NEED.NUMERAL@@U.AGREE.SGfESS@{AV+}n{aä}	Compounding		;
-[NUM=SG][CASE=NOM]:{AV+}	Possessive/Obligatory 	;
-[NUM=SG][CASE=GEN]:{AV+}	Possessive/Obligatory 	;
-[NUM=PL][CASE=NOM]:{AV+}	Possessive/Obligatory 	;
-
-LEXICON NounStem/Plural/Weak
-@U.AGREE.PLfABE@[NUM=PL][CASE=ABE]:@U.AGREE.PLfABE@it{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfABE@[NUM=PL][CASE=ABE]:@U.NEED.NUMERAL@@U.AGREE.PLfABE@it{AV-}t{aä}	Compounding		;
-@U.AGREE.PLfABL@[NUM=PL][CASE=ABL]:@U.AGREE.PLfABL@il{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfABL@[NUM=PL][CASE=ABL]:@U.NEED.NUMERAL@@U.AGREE.PLfABL@il{AV-}t{aä}	Compounding		;
-@U.AGREE.PLfADE@[NUM=PL][CASE=ADE]:@U.AGREE.PLfADE@il{AV-}l{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfADE@[NUM=PL][CASE=ADE]:@U.NEED.NUMERAL@@U.AGREE.PLfADE@il{AV-}l{aä}	Compounding		;
-@U.AGREE.PLfALL@[NUM=PL][CASE=ALL]:@U.AGREE.PLfALL@il{AV-}le	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfALL@[NUM=PL][CASE=ALL]:@U.NEED.NUMERAL@@U.AGREE.PLfALL@il{AV-}le	Compounding		;
-@U.AGREE.PLfELA@[NUM=PL][CASE=ELA]:@U.AGREE.PLfELA@is{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfELA@[NUM=PL][CASE=ELA]:@U.NEED.NUMERAL@@U.AGREE.PLfELA@is{AV-}t{aä}	Compounding		;
-@U.AGREE.PLfINE@[NUM=PL][CASE=INE]:@U.AGREE.PLfINE@is{AV-}s{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfINE@[NUM=PL][CASE=INE]:@U.NEED.NUMERAL@@U.AGREE.PLfINE@is{AV-}s{aä}	Compounding		;
-@U.AGREE.PLfINS@[NUM=PL][CASE=INS]:@U.AGREE.PLfINS@in{AV-}	Clitic/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfINS@[NUM=PL][CASE=INS]:@U.NEED.NUMERAL@@U.AGREE.PLfINS@in{AV-}	Compounding		;
-@U.AGREE.PLfTRA@[NUM=PL][CASE=TRA]:@U.AGREE.PLfTRA@ik{AV-}se	Possessive/Obligatory+Vn		;
-@U.AGREE.PLfTRA@[NUM=PL][CASE=TRA]:@U.AGREE.PLfTRA@ik{AV-}si	Clitic/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfTRA@[NUM=PL][CASE=TRA]:@U.NEED.NUMERAL@@U.AGREE.PLfTRA@ik{AV-}si	Compounding		;
-! derivations
-[GUESS=DERIVE][NUM=PL][DRV=TSE][POS=ADVERB][CASE=PRL]:{AV-}itse	Clitic/Optional		;
-[GUESS=DERIVE][NUM=PL][DRV=TTAIN][POS=ADVERB][CASE=DIS]:{AV-}itt{aä}in	Clitic/Optional		;
-@P.LONGxANALYSIS.TURE@{AV-}itse	Clitic/Optional		;
-@P.LONGxANALYSIS.TURE@{AV-}itt{aä}in	Clitic/Optional		;
-
-LEXICON NounStem/Plural/Strong
-@U.AGREE.PLfESS@[NUM=PL][CASE=ESS]:@U.AGREE.PLfESS@{AV+}in{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfESS@[NUM=PL][CASE=ESS]:@U.NEED.NUMERAL@@U.AGREE.PLfESS@{AV+}in{aä}	Compounding		;
-@U.AGREE.CMT@[CASE=CMT]:@U.AGREE.CMT@i{AV+}ne	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.CMT@[CASE=CMT]:@U.NEED.NUMERAL@@U.AGREE.CMT@i{AV+}ne	Compounding		;
-
-LEXICON NounAllomorph/PartitiveA+Vn
-@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.AGREE.SGfPAR@{aä}{AV+}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{aä}{AV+}	Compounding		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Compounding		;
-
-LEXICON NounAllomorph/PartitiveA
-@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.AGREE.SGfPAR@{aä}{AV+}	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{aä}{AV+}	Compounding		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=A]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{aä}{AV+}	Compounding		;
-
-LEXICON NounAllomorph/PartitiveTA
-@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.AGREE.SGfPAR@{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.NEED.NUMERAL@@U.AGREE.SGfPAR@{AV-}t{aä}	Compounding		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@[NUM=SG][CASE=PAR][ALLO=TA]:@U.NEED.NUMERAL@@U.AGREE.SGfNOM@@R.ALLOW.SGfPAR@{AV-}t{aä}	Compounding		;
-
-LEXICON NounAllomorph/IllativeHVN
-@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=HVN]:@U.AGREE.SGfILL@{AV+}h{aeiouyäö}n	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=HVN]:@U.NEED.NUMERAL@@U.AGREE.SGfILL@{AV+}h{aeiouyäö}n	Compounding		;
-
-LEXICON NounAllomorph/PartitiveIA
-@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=IA]:@U.AGREE.PLfPAR@i{aä}{AV+}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=IA]:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@i{aä}{AV+}	Compounding		;
-
-LEXICON NounAllomorph/GenitiveIDEN
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IDEN]:@U.AGREE.PLfGEN@i{AV-}den	Possessive/Optional		;
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IDEN]:@U.AGREE.PLfGEN@i{AV-}den	Compounding		;
-
-LEXICON NounAllomorph/GenitiveIEN
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IEN]:@U.AGREE.PLfGEN@i{AV+}en	Possessive/Optional		;
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IEN]:@U.AGREE.PLfGEN@i{AV+}en	Compounding		;
-
-LEXICON NounAllomorph/IllativeIHIN
-@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IHIN]:@U.AGREE.PLfILL@i{AV+}hin	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IHIN]:@U.NEED.NUMERAL@@U.AGREE.PLfILL@i{AV+}hin	Compounding		;
-
-LEXICON NounAllomorph/IllativeIIN
-@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IIN]:@U.AGREE.PLfILL@iin{AV+}	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=IIN]:@U.NEED.NUMERAL@@U.AGREE.PLfILL@iin{AV+}	Compounding		;
-
-LEXICON NounAllomorph/GenitiveIN
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IN]:@U.AGREE.PLfGEN@in{AV+}	Possessive/Optional		;
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=IN]:@U.AGREE.PLfGEN@in{AV+}	Compounding		;
-
-LEXICON NounAllomorph/IllativeISIIN
-@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=ISIIN]:@U.AGREE.PLfILL@i{AV+}siin	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.PLfILL@[NUM=PL][CASE=ILL][ALLO=ISIIN]:@U.NEED.NUMERAL@@U.AGREE.PLfILL@i{AV+}siin	Compounding		;
-
-LEXICON NounAllomorph/PartitiveITA
-@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=ITA]:@U.AGREE.PLfPAR@i{AV-}t{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=ITA]:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@i{AV-}t{aä}	Compounding		;
 
 
-LEXICON NounAllomorph/GenitiveITTEN
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=ITTEN]:@U.AGREE.PLfGEN@it{AV-}ten	Possessive/Optional		;
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=ITTEN]:@U.AGREE.PLfGEN@it{AV-}ten	Compounding		;
+LEXICON N_BACK_NOMINATIVE
+[NUM=SG][CASE=NOM]:0   N_BACK_CLIT_OPT  ;
 
-LEXICON NounAllomorph/PartitiveJA
-@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=JA]:@U.AGREE.PLfPAR@{AV+}j{aä}	Possessive/Optional+Vn		;
-@U.NEED.NUMERAL@@U.AGREE.PLfPAR@[NUM=PL][CASE=PAR][ALLO=JA]:@U.NEED.NUMERAL@@U.AGREE.PLfPAR@{AV+}j{aä}	Compounding		;
+LEXICON N_FRONT_NOMINATIVE
+[NUM=SG][CASE=NOM]:0   N_FRONT_CLIT_OPT  ;
 
-LEXICON NounAllomorph/GenitiveJEN
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=JEN]:@U.AGREE.PLfGEN@{AV+}jen	Possessive/Optional		;
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=JEN]:@U.AGREE.PLfGEN@{AV+}jen	Compounding		;
+LEXICON N_BACK_PLNOM_CLIT
+[NUM=PL][CASE=NOM]:%>t     N_BACK_CLIT_OPT  ;
 
-LEXICON NounAllomorph/IllativeSEEN
-@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=SEEN]:@U.AGREE.SGfILL@seen	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=SEEN]:@U.NEED.NUMERAL@@U.AGREE.SGfILL@seen	Compounding		;
+LEXICON N_FRONT_PLNOM_CLIT
+[NUM=PL][CASE=NOM]:%>t     N_FRONT_CLIT_OPT  ;
 
-LEXICON NounAllomorph/GenitiveTEN
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=TEN]:@U.AGREE.PLfGEN@{AV-}ten	Possessive/Optional		;
-@U.AGREE.PLfGEN@[NUM=PL][CASE=GEN][ALLO=TEN]:@U.AGREE.PLfGEN@{AV-}ten	Compounding		;
+LEXICON N_BACK_WEAK_SINGULARS
+0    N_BACK_PLNOM_CLIT   ;
+[NUM=SG][CASE=GEN]:%>n     N_BACK_CLIT_OPT   ;
+[NUM=SG][CASE=ABE]:%>tta   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=ABL]:%>lta   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=ADE]:%>lla   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=ALL]:%>lle   N_BACK_POSS_EN_OPT      ;
+[NUM=SG][CASE=ELA]:%>sta   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=INE]:%>ssa   N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=TRA]:%>kse   N_BACK_POSS_EN_OBL       ;
+[NUM=SG][CASE=TRA]:%>ksi   N_BACK_CLIT_OPT     ;
+[NUM=SG][CASE=TRA]:%>ksi   N_BACK_CLIT_OPT     ;
 
-LEXICON NounAllomorph/IllativeVN
-@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=VN]:@U.AGREE.SGfILL@{AV+}{aeiouyäö}n	Possessive/Optional		;
-@U.NEED.NUMERAL@@U.AGREE.SGfILL@[NUM=SG][CASE=ILL][ALLO=VN]:@U.NEED.NUMERAL@@U.AGREE.SGfILL@{AV+}{aeiouyäö}n	Compounding		;
+LEXICON N_FRONT_WEAK_SINGULARS
+0    N_FRONT_PLNOM_CLIT   ;
+[NUM=SG][CASE=GEN]:%>n     N_FRONT_CLIT_OPT   ;
+[NUM=SG][CASE=ABE]:%>ttä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=ABL]:%>ltä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=ADE]:%>llä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=ALL]:%>lle   N_FRONT_POSS_EN_OPT      ;
+[NUM=SG][CASE=ELA]:%>stä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=INE]:%>ssä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=TRA]:%>kse   N_FRONT_POSS_EN_OBL       ;
+[NUM=SG][CASE=TRA]:%>ksi   N_FRONT_CLIT_OPT     ;
+[NUM=SG][CASE=TRA]:%>ksi   N_FRONT_CLIT_OPT     ;
 
+LEXICON N_BACK_STRONG_SINGULARS
+[NUM=SG][CASE=ESS]:%>na N_BACK_POSS_AN_OPT      ;
+[NUM=SG][CASE=NOM]:0  N_BACK_POSS   ;
+[NUM=SG][CASE=GEN]:0  N_BACK_POSS   ;
+[NUM=PL][CASE=NOM]:0  N_BACK_POSS   ;
 
+LEXICON N_FRONT_STRONG_SINGULARS
+[NUM=SG][CASE=ESS]:%>nä N_FRONT_POSS_ÄN_OPT      ;
+[NUM=SG][CASE=NOM]:0  N_FRONT_POSS   ;
+[NUM=SG][CASE=GEN]:0  N_FRONT_POSS   ;
+[NUM=PL][CASE=NOM]:0  N_FRONT_POSS   ;
+
+LEXICON N_BACK_WEAK_PLURALS
+[NUM=PL][CASE=ABE]:%>i%>tta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ABL]:%>i%>lta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ADE]:%>i%>lla   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=ALL]:%>i%>lle   N_BACK_POSS_EN_OPT      ;
+[NUM=PL][CASE=ELA]:%>i%>sta   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=INE]:%>i%>ssa   N_BACK_POSS_AN_OPT      ;
+[NUM=PL][CASE=INS]:%>i%>n    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=TRA]:%>i%>kse  N_BACK_POSS_EN_OBL        ;
+[NUM=PL][CASE=TRA]:%>i%>ksi  N_BACK_CLIT_OPT     ;
+
+LEXICON N_FRONT_WEAK_PLURALS
+[NUM=PL][CASE=ABE]:%>i%>ttä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ABL]:%>i%>ltä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ADE]:%>i%>llä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=ALL]:%>i%>lle   N_FRONT_POSS_EN_OPT      ;
+[NUM=PL][CASE=ELA]:%>i%>stä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=INE]:%>i%>ssä   N_FRONT_POSS_ÄN_OPT      ;
+[NUM=PL][CASE=INS]:%>i%>n    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=TRA]:%>i%>kse  N_FRONT_POSS_EN_OBL        ;
+[NUM=PL][CASE=TRA]:%>i%>ksi  N_FRONT_CLIT_OPT     ;
+
+LEXICON N_BACK_STRONG_PLURALS
+[NUM=PL][CASE=ESS]:%>i%>na   N_BACK_POSS_AN_OPT      ;
+[CASE=CMT]:%>i%>ne        N_BACK_POSS_EN_OPT      ;
+
+LEXICON N_FRONT_STRONG_PLURALS
+[NUM=PL][CASE=ESS]:%>i%>nä   N_FRONT_POSS_ÄN_OPT      ;
+[CASE=CMT]:%>i%>ne        N_FRONT_POSS_EN_OPT      ;
+
+LEXICON N_BACK_PARTITIVE_A
+[NUM=SG][CASE=PAR]:%>a      N_BACK_POSS_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_Ä
+[NUM=SG][CASE=PAR]:%>ä      N_FRONT_POSS_OPT      ;
+
+LEXICON N_BACK_PARTITIVE_A_AN
+[NUM=SG][CASE=PAR]:%>a      N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_Ä_ÄN
+0[NUM=SG][CASE=PAR]:%>ä     N_FRONT_POSS_ÄN_OPT     ;
+
+LEXICON N_BACK_PARTITIVE_TA
+[NUM=SG][CASE=PAR]:%>ta     N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_TÄ
+[NUM=SG][CASE=PAR]:%>tä     N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_ILLATIVE_HAN
+[NUM=SG][CASE=ILL]:%>han    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ha     N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HEN
+[NUM=SG][CASE=ILL]:%>hen    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>he     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HEN
+[NUM=SG][CASE=ILL]:%>hen    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>he     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HIN
+[NUM=SG][CASE=ILL]:%>hin    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hi     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HIN
+[NUM=SG][CASE=ILL]:%>hin    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hi     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HON
+[NUM=SG][CASE=ILL]:%>hon    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ho     N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_HUN
+[NUM=SG][CASE=ILL]:%>hun    N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hu     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HYN
+[NUM=SG][CASE=ILL]:%>hyn    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hy     N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HÄN
+[NUM=SG][CASE=ILL]:%>hän    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hä     N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_HÖN
+[NUM=SG][CASE=ILL]:%>hön    N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>hö     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_AN
+[NUM=SG][CASE=ILL]:%>an     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>a      N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_EN
+[NUM=SG][CASE=ILL]:%>en     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>e      N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_EN
+[NUM=SG][CASE=ILL]:%>en     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>e      N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_IN
+[NUM=SG][CASE=ILL]:%>in     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>i      N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IN
+[NUM=SG][CASE=ILL]:%>in     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>i      N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_ON
+[NUM=SG][CASE=ILL]:%>on     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>o      N_BACK_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_UN
+[NUM=SG][CASE=ILL]:%>un     N_BACK_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>u      N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_YN
+[NUM=SG][CASE=ILL]:%>yn     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>y      N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ÄN
+[NUM=SG][CASE=ILL]:%>än     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ä      N_FRONT_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ÖN
+[NUM=SG][CASE=ILL]:%>ön     N_FRONT_CLIT_OPT         ;
+[NUM=SG][CASE=ILL]:%>ö      N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_SEEN
+[NUM=SG][CASE=ILL]:%>seen      N_BACK_CLIT_OPT     ;
+[NUM=SG][CASE=ILL]:%>see       N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_SEEN
+[NUM=SG][CASE=ILL]:%>seen      N_FRONT_CLIT_OPT     ;
+[NUM=SG][CASE=ILL]:%>see       N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_IDEN
+[NUM=PL][CASE=GEN]:%>i%>den    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>de     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IDEN
+[NUM=PL][CASE=GEN]:%>i%>den    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>de     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_ITTEN
+[NUM=PL][CASE=GEN]:%>i%>tten     N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>tte      N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_ITTEN
+[NUM=PL][CASE=GEN]:%>i%>tten     N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>tte      N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_IEN
+[NUM=PL][CASE=GEN]:%>i%>en   N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>e    N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IEN
+[NUM=PL][CASE=GEN]:%>i%>en   N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>i%>e    N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_JEN
+[NUM=PL][CASE=GEN]:%>j%>en    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>j%>e     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_JEN
+[NUM=PL][CASE=GEN]:%>j%>en    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>j%>e     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_TEN
+[NUM=PL][CASE=GEN]:%>ten    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>te     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_TEN
+[NUM=PL][CASE=GEN]:%>ten    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN]:%>te     N_FRONT_POSS     ;
+
+LEXICON N_BACK_GENITIVE_IN
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i%>n    N_BACK_CLIT_OPT     ;
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i     N_BACK_POSS     ;
+
+LEXICON N_FRONT_GENITIVE_IN
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i%>n    N_FRONT_CLIT_OPT     ;
+[NUM=PL][CASE=GEN][STYLE=ARCHAIC]:%>i     N_FRONT_POSS     ;
+
+LEXICON N_BACK_PARTITIVE_IA
+[NUM=PL][CASE=PAR]:%>i%>a    N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_IÄ
+[NUM=PL][CASE=PAR]:%>i%>ä    N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_PARTITIVE_ITA
+[NUM=PL][CASE=PAR]:%>i%>ta   N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_ITÄ
+[NUM=PL][CASE=PAR]:%>i%>tä   N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_PARTITIVE_JA
+[NUM=PL][CASE=PAR]:%>j%>a     N_BACK_POSS_AN_OPT      ;
+
+LEXICON N_FRONT_PARTITIVE_JÄ
+[NUM=PL][CASE=PAR]:%>j%>ä     N_FRONT_POSS_ÄN_OPT      ;
+
+LEXICON N_BACK_ILLATIVE_IHIN
+[NUM=PL][CASE=ILL]:%>i%>hin   #    ;
+[NUM=PL][CASE=ILL]:%>i%>hi    N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IHIN
+[NUM=PL][CASE=ILL]:%>i%>hin   #    ;
+[NUM=PL][CASE=ILL]:%>i%>hi    N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_IIN
+[NUM=PL][CASE=ILL]:%>i%>in    #     ;
+[NUM=PL][CASE=ILL]:%>i%>i     N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_IIN
+[NUM=PL][CASE=ILL]:%>i%>in    #     ;
+[NUM=PL][CASE=ILL]:%>i%>i     N_FRONT_POSS     ;
+
+LEXICON N_BACK_ILLATIVE_ISIIN
+[NUM=PL][CASE=ILL]:%>i%>siin  #     ;
+[NUM=PL][CASE=ILL]:%>i%>sii   N_BACK_POSS     ;
+
+LEXICON N_FRONT_ILLATIVE_ISIIN
+[NUM=PL][CASE=ILL]:%>i%>siin  #     ;
+[NUM=PL][CASE=ILL]:%>i%>sii   N_FRONT_POSS     ;
+
+LEXICON N_BACK_POSS
+[POSS=SG1]:%>ni  N_BACK_CLIT_OPT        ;
+[POSS=SG2]:%>si  N_BACK_CLIT_OPT        ;
+[POSS=SG3]:%>nsa N_BACK_CLIT_OPT        ;
+[POSS=PL1]:%>mme N_BACK_CLIT_OPT        ;
+[POSS=PL2]:%>nne N_BACK_CLIT_OPT        ;
+[POSS=PL3]:%>nsa N_BACK_CLIT_OPT        ;
+
+LEXICON N_FRONT_POSS
+[POSS=SG1]:%>ni  N_FRONT_CLIT_OPT        ;
+[POSS=SG2]:%>si  N_FRONT_CLIT_OPT        ;
+[POSS=SG3]:%>nsä N_FRONT_CLIT_OPT        ;
+[POSS=PL1]:%>mme N_FRONT_CLIT_OPT        ;
+[POSS=PL2]:%>nne N_FRONT_CLIT_OPT        ;
+[POSS=PL3]:%>nsä N_FRONT_CLIT_OPT        ;
+
+LEXICON N_BACK_POSS_AN
+[POSS=SG3]:%>an    N_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>an    N_BACK_CLIT_OPT     ;
+
+LEXICON N_BACK_POSS_EN
+[POSS=SG3]:%>en    N_BACK_CLIT_OPT     ;
+[POSS=PL3]:%>en    N_BACK_CLIT_OPT     ;
+
+LEXICON N_FRONT_POSS_EN
+[POSS=SG3]:%>en    N_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>en    N_FRONT_CLIT_OPT     ;
+
+LEXICON N_FRONT_POSS_ÄN
+[POSS=SG3]:%>än    N_FRONT_CLIT_OPT     ;
+[POSS=PL3]:%>än    N_FRONT_CLIT_OPT     ;
+
+LEXICON N_BACK_CLIT
+[CLIT=HAN]:%>han   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hankaan  #        ;
+[CLIT=HAN][CLIT=KO]:%>hanko #        ;
+[CLIT=HAN][CLIT=PA]:%>hanpa #        ;
+[CLIT=KO]:%>ko #        ;
+[CLIT=KO][CLIT=HAN]:%>kohan #        ;
+[CLIT=KO][CLIT=KAAN]:%>kokaan    #        ;
+[CLIT=KO][CLIT=KIN]:%>kokin    #        ;
+[CLIT=KO][CLIT=PA]:%>kopa   #        ;
+[CLIT=KO][CLIT=S]:%>kos    #        ;
+[CLIT=PA]:%>pa #        ;
+[CLIT=PA][CLIT=HAN]:%>pahan #        ;
+[CLIT=PA][CLIT=KAAN]:%>pakaan    #        ;
+[CLIT=PA][CLIT=KIN]:%>pakin    #        ;
+[CLIT=PA][CLIT=KO]:%>pako   #        ;
+[CLIT=PA][CLIT=S]:%>pas    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhan  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkaan #        ;
+[CLIT=KIN][CLIT=KO]:%>kinko    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpa    #        ;
+[CLIT=KAAN]:%>kaan  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>kaanhan  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>kaankin #        ;
+[CLIT=KAAN][CLIT=KO]:%>kaanko    #        ;
+[CLIT=KAAN][CLIT=PA]:%>kaanpa    #        ;
+
+LEXICON N_FRONT_CLIT
+[CLIT=HAN]:%>hän   #        ;
+[CLIT=HAN][CLIT=KAAN]:%>hänkään  #        ;
+[CLIT=HAN][CLIT=KO]:%>hänkö #        ;
+[CLIT=HAN][CLIT=PA]:%>hänpä #        ;
+[CLIT=KO]:%>kö #        ;
+[CLIT=KO][CLIT=HAN]:%>köhän #        ;
+[CLIT=KO][CLIT=KAAN]:%>kökään    #        ;
+[CLIT=KO][CLIT=KIN]:%>kökin    #        ;
+[CLIT=KO][CLIT=PA]:%>köpä   #        ;
+[CLIT=KO][CLIT=S]:%>kös    #        ;
+[CLIT=PA]:%>pä #        ;
+[CLIT=PA][CLIT=HAN]:%>pähän #        ;
+[CLIT=PA][CLIT=KAAN]:%>päkään    #        ;
+[CLIT=PA][CLIT=KIN]:%>päkin    #        ;
+[CLIT=PA][CLIT=KO]:%>päkö   #        ;
+[CLIT=PA][CLIT=S]:%>päs    #        ;
+[CLIT=KIN]:%>kin  #        ;
+[CLIT=KIN][CLIT=HAN]:%>kinhän  #        ;
+[CLIT=KIN][CLIT=KAAN]:%>kinkään #        ;
+[CLIT=KIN][CLIT=KO]:%>kinkö    #        ;
+[CLIT=KIN][CLIT=PA]:%>kinpä    #        ;
+[CLIT=KAAN]:%>kään  #        ;
+[CLIT=KAAN][CLIT=HAN]:%>käänhän  #        ;
+[CLIT=KAAN][CLIT=KIN]:%>käänkin #        ;
+[CLIT=KAAN][CLIT=KO]:%>käänkö    #        ;
+[CLIT=KAAN][CLIT=PA]:%>käänpä    #        ;
+
+LEXICON N_BACK_CLIT_OPT
+0    #   ;
+0   N_BACK_CLIT    ;
+
+LEXICON N_FRONT_CLIT_OPT
+0    #   ;
+0   N_FRONT_CLIT    ;
+
+LEXICON N_BACK_SINGULARS
+0    N_BACK_STRONG_SINGULARS ;
+0    N_BACK_WEAK_SINGULARS   ;
+
+LEXICON N_FRONT_SINGULARS
+0    N_FRONT_STRONG_SINGULARS ;
+0    N_FRONT_WEAK_SINGULARS   ;
+
+LEXICON N_FRONT_PLURALS
+0   N_FRONT_STRONG_PLURALS ;
+0   N_FRONT_WEAK_PLURALS ;
+
+LEXICON N_BACK_PLURALS
+0   N_BACK_STRONG_PLURALS ;
+0   N_BACK_WEAK_PLURALS ;
+
+LEXICON N_BACK_POSS_AN_OPT
+0    N_BACK_POSS   ;
+0    N_BACK_POSS_AN ;
+0    N_BACK_CLIT ;
+0    #    ;
+
+LEXICON N_FRONT_POSS_ÄN_OPT
+0    N_FRONT_POSS   ;
+0    N_FRONT_POSS_ÄN  ;
+0    N_FRONT_CLIT ;
+0    #    ;
+
+LEXICON N_BACK_POSS_EN_OPT
+0    N_BACK_POSS   ;
+0    N_BACK_POSS_EN ;
+0    N_BACK_CLIT ;
+0    #    ;
+
+LEXICON N_FRONT_POSS_EN_OPT
+0    N_FRONT_POSS   ;
+0    N_FRONT_POSS_EN  ;
+0    N_FRONT_CLIT ;
+0    #    ;
+
+LEXICON N_BACK_POSS_OPT
+0    N_BACK_POSS   ;
+0    N_BACK_CLIT ;
+0    #    ;
+
+LEXICON N_FRONT_POSS_OPT
+0    N_FRONT_POSS   ;
+0    N_FRONT_CLIT ;
+0    #    ;
+
+LEXICON N_BACK_POSS_EN_OBL
+0   N_BACK_POSS  ;
+0   N_BACK_POSS_EN   ;
+
+LEXICON N_FRONT_POSS_EN_OBL
+0   N_FRONT_POSS  ;
+0   N_FRONT_POSS_EN   ;
+
+LEXICON N_COMPOUND_0
+[NUM=SG][CASE=NOM]:0   N_COMPOUND  ;
+
+LEXICON N_COMPOUND_N
+[NUM=SG][CASE=GEN]:%>n               N_COMPOUND    ;
+
+LEXICON N_COMPOUND_IEN
+[NUM=PL][CASE=GEN]:%>i%>en                 N_COMPOUND  ;
+
+LEXICON N_COMPOUND_IDEN
+[NUM=PL][CASE=GEN]:%>i%>den                 N_COMPOUND  ;
+
+LEXICON N_COMPOUND_IN
+[NUM=PL][CASE=GEN]:%>i%>n                 N_COMPOUND     ;
+
+LEXICON N_COMPOUND_ITTEN
+[NUM=PL][CASE=GEN]:%>i%>tten               N_COMPOUND     ;
+
+LEXICON N_COMPOUND_JEN
+[NUM=PL][CASE=GEN]:%>j%>en                 N_COMPOUND     ;
+
+LEXICON N_COMPOUND_TEN
+[NUM=PL][CASE=GEN]:%>ten                 N_COMPOUND     ;
+
+LEXICON N_COMPOUND_S
+[DRV=S]:»s                   N_COMPOUND  ;
+
+LEXICON N_COMPOUND
+[GUESS=COMPOUND]:0{#}     NOMINAL   ;

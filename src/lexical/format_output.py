@@ -10,11 +10,11 @@ def format_analysis_omor(wordmap, format, use_prop_subclasses):
     format analysis (lexc LHS) string for canonical omor format for 
     morphological analysis
     '''
-    tn = int(wordmap['analysis_tn'])
+    tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%(lemma)s]" %(wordmap)
-    if wordmap['lexicon'] == 'Suffixes':
+    if wordmap['is_suffix']:
         wordmap['analysis'] += "[POS=%(pos)s][SUBCAT=SUFFIX]" %(wordmap)
-    elif wordmap['lexicon'] == 'Prefixes':
+    elif wordmap['is_prefix']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=PREFIX]" %(wordmap)
     elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)
@@ -31,10 +31,11 @@ def format_analysis_omor(wordmap, format, use_prop_subclasses):
             ','.join(wordmap['proper_noun_class']) + ']')
 
     if format == 'ktnkav' and tn < 99:
-        wordmap['analysis'] += "[KTN=%(analysis_tn)s]" %(wordmap)
+        wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
         if wordmap['kotus_av']:
             wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
-
+    elif format == 'newparas':
+        wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
     return wordmap
 
 def format_surface_omor(wordmap):
@@ -42,5 +43,5 @@ def format_surface_omor(wordmap):
 
 def format_lexc_omor(wordmap):
     return ("%s:%s\t%s\t;" % (lexc_escape(wordmap['analysis']), 
-        lexc_escape(wordmap['stub']), wordmap['continuation']))
+        lexc_escape(wordmap['stub']), wordmap['new_para']))
 
