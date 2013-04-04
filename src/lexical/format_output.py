@@ -5,13 +5,12 @@
 from sys import stderr
 from lexc_string_utils import lexc_escape
 
-def format_analysis_omor(wordmap, format, use_prop_subclasses):
+def format_lexc_omor(wordmap, format, use_prop_subclasses):
     '''
-    format analysis (lexc LHS) string for canonical omor format for 
-    morphological analysis
+    format string for canonical omor format for morphological analysis
     '''
     tn = int(wordmap['kotus_tn'])
-    wordmap['analysis'] = "[WORD_ID=%(lemma)s]" %(wordmap)
+    wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     if wordmap['is_suffix']:
         wordmap['analysis'] += "[POS=%(pos)s][SUBCAT=SUFFIX]" %(wordmap)
     elif wordmap['is_prefix']:
@@ -36,14 +35,8 @@ def format_analysis_omor(wordmap, format, use_prop_subclasses):
             wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
     elif format == 'newparas':
         wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
-    return wordmap
-
-def format_surface_omor(wordmap):
-    return wordmap
-
-def format_lexc_omor(wordmap):
-    return ("%s:%s\t%s\t;" % (lexc_escape(wordmap['analysis']), 
-        lexc_escape(wordmap['stub']), wordmap['new_para']))
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
+    return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
 
 def format_xml_kotus_sanalista(wordmap):
     if wordmap['kotus_av']:

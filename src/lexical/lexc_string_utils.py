@@ -30,6 +30,7 @@ def lexc_escape(s):
     s = s.replace("<", "%<")
     s = s.replace("0", "%0")
     s = s.replace("!", "%!")
+    s = s.replace(":", "%:")
     s = s.replace("__PERCENT__", "%%")
     return s
 

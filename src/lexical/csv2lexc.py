@@ -31,7 +31,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_analysis_omor, format_surface_omor, format_lexc_omor
+from format_output import format_lexc_omor
 from parse_csv_data import parse_from_tsv
 
 # standard UI stuff
@@ -151,10 +151,8 @@ def main():
                     csv_line = csv_file.readline()
                     continue
             # format output
-            wordmap = format_analysis_omor(wordmap, args.format,
-                    args.proper_subclasses)
-            wordmap = format_surface_omor(wordmap)
-            print(format_lexc_omor(wordmap), file=outfiles[wordmap['pos']])
+            print(format_lexc_omor(wordmap, args.format, args.proper_subclasses),
+                    file=outfiles[wordmap['pos']])
             csv_line = csv_file.readline()
     exit()
 
