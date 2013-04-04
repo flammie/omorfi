@@ -45,3 +45,8 @@ def format_lexc_omor(wordmap):
     return ("%s:%s\t%s\t;" % (lexc_escape(wordmap['analysis']), 
         lexc_escape(wordmap['stub']), wordmap['new_para']))
 
+def format_xml_kotus_sanalista(wordmap):
+    if wordmap['kotus_av']:
+        return ("<st><s>%(lemma)s</s><t><tn>%(kotus_tn)s</tn><av>%(kotus_av)s</av></t></st>" %(wordmap))
+    else:
+        return ("<st><s>%(lemma)s</s><t><tn>%(kotus_tn)s</tn></t></st>" %(wordmap))
