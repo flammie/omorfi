@@ -108,6 +108,7 @@ def main():
             # format output
             print(format_xml_kotus_sanalista(wordmap), file=args.output)
             csv_line = csv_file.readline()
+    print('</kotus-sanalista>', file=args.output)
     exit()
 
 
