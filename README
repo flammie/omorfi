@@ -1,7 +1,7 @@
 #summary copy of README from the source tree
 = Omorfi–Open source Morphology for Finnish language =
 
-This package contains free and open source implementation of morphological analysis for Finnish language. It uses GPL licenced HFST tools as implementation of morphological description. This package is licenced under GNU GPL version 3, but not necessarily later. Licence can be found from ``COPYING`` file in root of the distribution package. Other licences are possible from authors named in the `AUTHORS`.
+This package contains free and open source implementation of morphological analysis for Finnish language. It uses GPL licenced HFST tools as implementation of morphological description. This package is licenced under GNU GPL version 3, but not necessarily later. Licence can be found from `COPYING` file in root of the distribution package. Other licences are possible from authors named in the `AUTHORS`.
 
 The dictionaries used in omorfi are [http://kaino.kotus.fi Nykysuomen sanalista] (LGPL),  [http://joukahainen.lokalisointi.org Joukahainen] (GPL) and [http://www.ling.helsinki.fi/research/finnwordnet FinnWordNet] (Princeton Wordnet licence / GPL; relicenced with kind permission from University of Helsinki). Some words have also been collected by omorfi developers and contributors and are GPLv3 like the rest of the package.
 
@@ -13,11 +13,9 @@ Omorfi can be fetched from [http://code.google.com/p/omorfi/ Google code service
 
 Compilation of automata requires [http://hfst.sf.net HFST] tools or compatible installed:
 
-* hfst-3.0.2 or greater is required for omorfi versions >20121226
-
-  * hfst-3.4 or newer is highly recommended
-
-* python-3 is needed to rebuild lexc lexicons from CSV data
+  *  hfst-3.0.2 or greater is required for omorfi versions >20121226
+    * hfst-3.4 or newer is highly recommended
+  * python-3 is needed to rebuild lexc lexicons from CSV data
 
 The final transducers can be used with HFST tools or HFST runtime tools. The spell-checking automata package can be used with any common spell-checking interface through voikko spell-checking library.
 
@@ -49,7 +47,7 @@ Omorfi installs experimental scripts that are meant for easy command line based 
 {{{
   omorfi-analyse.sh [FILENAME]
 }}}
-So for basic analysis of a text file named `kalevala.txt` is::
+So for basic analysis of a text file named `kalevala.txt` is:
 {{{
   omorfi-analyse.sh kalevala.txt
 }}}
@@ -77,7 +75,7 @@ On some systems, characters with potential diacritics, such as ä and ö, may be
 
 == Contributing ==
 
-Omorfi code and data are free and libre open source, modifiable and redistributable by anyone. To contribute code or data, use one of the contact channels listed in <http://code.google.com/p/omorfi/>. IRC channel [irc://Freenode/#omorfi #omorfi on Freenode networks] is especially good for immediate discussion about contributions. Any data or code contributed must be compatible with our licencing policy, i.e. GNU compatible free licence.
+Omorfi code and data are free and libre open source, modifiable and redistributable by anyone. To contribute code or data, use one of the contact channels listed in [http://code.google.com/p/omorfi/]. IRC channel [irc://Freenode/#omorfi #omorfi on Freenode networks] is especially good for immediate discussion about contributions. Any data or code contributed must be compatible with our licencing policy, i.e. GNU compatible free licence.
 
 <wiki:comment>
 vim: set ft=googlecodewiki:
