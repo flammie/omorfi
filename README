@@ -1,3 +1,4 @@
+#summary copy of README from the source tree
 = Omorfi–Open source Morphology for Finnish language =
 
 This package contains free and open source implementation of morphological analysis for Finnish language. It uses GPL licenced HFST tools as implementation of morphological description. This package is licenced under GNU GPL version 3, but not necessarily later. Licence can be found from ``COPYING`` file in root of the distribution package. Other licences are possible from authors named in the `AUTHORS`.
