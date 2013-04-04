@@ -12,3 +12,6 @@ speller.zhfst
 *.timestamp
 omorfi-*.xz
 omorfi-*.gz
+*.pyc
+*.pyo
+
