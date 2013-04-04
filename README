@@ -1,135 +1,83 @@
-====================================================
- Omorfi–Open source Morphology for Finnish language
-====================================================
+= Omorfi–Open source Morphology for Finnish language =
 
-This package contains free and open source implementation of morphological
-analysis for Finnish language. It uses GPL licenced HFST tools as
-implementation of morphological description. This package is licenced under GNU
-GPL version 3, but not necessarily later. Licence can be found from ``COPYING``
-file in root of the distribution package. Other licences are possible from
-authors named in the ``AUTHORS``.
+This package contains free and open source implementation of morphological analysis for Finnish language. It uses GPL licenced HFST tools as implementation of morphological description. This package is licenced under GNU GPL version 3, but not necessarily later. Licence can be found from ``COPYING`` file in root of the distribution package. Other licences are possible from authors named in the `AUTHORS`.
 
-The dictionaries used in omorfi are `Nykysuomen sanalista
-<http://kaino.kotus.fi>`_ (LGPL),  `Joukahainen
-<http://joukahainen.lokalisointi.org>`_ (GPL) and `Finnwordnet
-<http://www.ling.helsinki.fi/research/finnwordnet>`_ (Princeton Wordnet licence
-/ GPL; relicenced with kind permission from University of Helsinki). Some words
-have also been collected by omorfi developers and contributors and are
-GPLv3 like the rest of the package.
+The dictionaries used in omorfi are [http://kaino.kotus.fi Nykysuomen sanalista] (LGPL),  [http://joukahainen.lokalisointi.org Joukahainen] (GPL) and [http://www.ling.helsinki.fi/research/finnwordnet FinnWordNet] (Princeton Wordnet licence / GPL; relicenced with kind permission from University of Helsinki). Some words have also been collected by omorfi developers and contributors and are GPLv3 like the rest of the package.
 
-Downloading
------------
+== Downloading ==
 
-Omorfi can be fetched from `omorfi page on google code service 
-<http://code.google.com/p/omorfi/>`_. 
+Omorfi can be fetched from [http://code.google.com/p/omorfi/ Google code service].
 
-Dependencies
-------------
+== Dependencies ==
 
-Compilation of automata requires HFST tools or compatible installed:
+Compilation of automata requires [http://hfst.sf.net HFST] tools or compatible installed:
 
-* hfst-3.0.2 or greater is required for omorfi version 20121226
+* hfst-3.0.2 or greater is required for omorfi versions >20121226
 
   * hfst-3.4 or newer is highly recommended
 
 * python-3 is needed to rebuild lexc lexicons from CSV data
 
-It is not usually necessary or advisable to reprocess the original source data:
+The final transducers can be used with HFST tools or HFST runtime tools. The spell-checking automata package can be used with any common spell-checking interface through voikko spell-checking library.
 
-- XSLT processor supporting XSLT 2.0 is needed to extract CSV data from
-  XML-based lexical sources
+== Installation ==
 
-The final transducers can be used with HFST tools, HFST runtime tools, SFST
-tools or OpenFST tools (the last two are untested but should work). The
-automata can also be used by other software projects, such as Voikko
-spell checking library and apertium machine translation system.
-
-Installation
-------------
-
-Installation uses standard autotools system::
-
+Installation uses standard autotools system:
+{{{
   ./configure && make && make install
+}}}
+The compiling may take forever or more depending on the hardware and the settingsyou are using. The stable release versions should be compilable on average end-user systems.
 
-The compiling may take forever or more depending on the hardware you are using.
-The stable versions should be compilable on average end-user laptops, such as
-my Acer Aspire one.
-
-If configure cannot find HFST tools, you must tell it where to find them::
-
+If configure cannot find HFST tools, you must tell it where to find them:
+{{{
   ./configure --with-hfst=${HFSTPATH}
-
-Autotools system supports installation to e.g. home directory::
-
+}}}
+Autotools system supports installation to e.g. home directory:
+{{{
   ./configure --prefix=${HOME}
-
-In CVS or SVN version you must create necessary autotools files in host system::
-
+}}}
+With git version you must create necessary autotools files in the host system once, after initial checkout:
+{{{
   ./autogen.sh
+}}}
+For further instructions, see `INSTALL`, the GNU standard install instructions for autotools systems.
 
-For further instructions, see ``INSTALL``, the GNU standard install instructions
-for autotools systems.
+== Usage ==
 
-Usage
------
-
-Omorfi installs experimental scripts that are meant for easy command line
-based use of omorfi automata: ``omorfi-analyse.sh`` is a simple shell script
-invoking ``hfst-proc`` tokenising analyser, which uses the morphological
-analyser to break the input into words and then analyses them. The basic
-usage::
-
+Omorfi installs experimental scripts that are meant for easy command line based use of omorfi automata: `omorfi-analyse.sh` is a simple shell script invoking `hfst-proc` the tokenising analyser, which uses the morphological analyser to break the input into words and then analyses them. The basic usage:
+{{{
   omorfi-analyse.sh [FILENAME]
-
-So for basic analysis of a text file named ``kalevala.txt`` is::
-
+}}}
+So for basic analysis of a text file named `kalevala.txt` is::
+{{{
   omorfi-analyse.sh kalevala.txt
-
-or::
-
+}}}
+or:
+{{{
   omorfi-analyse.sh < kalevala.txt
+}}}
+The script `omorfi-interactive.sh` can be used to analyse pre-tokenised text or input one word form at a time from the shell (N.B. the input is read raw from command line, so special keys, such as arrows will not work).
 
-The script ``omorfi-interactive.sh`` can be used to analyse pre-tokenised text
-or input one word form at a time from the shell (N.B. the input is read raw
-from command line, so special keys, such as arrows will not work).
+For more information of these tools, invoke `--help`, or view their man pages:
+{{{
+  omorfi-analyse --help
+  man omorfi-analyse
+}}}
 
-The other functions of omorfi are also accesible through scripts:
-``omorfi-spell.sh`` performs spelling correction, ``omorfi-hyphenate.sh`` can
-hyphenate isolated word forms and ``omorfi-generate.sh`` may be used to turn
-analysis strings into word forms.  These scripts are experimental and may not
-work in current version.
+For more advanced usage, see `${prefix}/share/hfst/fi/` directory, which contains all the omorfi automata in HFST binary format. These can be manipulated by standard HFST tools.
 
-For more advanced usage, you may see ``${prefix}/share/hfst/fi/`` directory,
-which contains all the omorfi automata. These can be manipulated by standard
-HFST tools.
+== Note about character codings ==
 
-On character codings
---------------------
+This implementation of morphology uses UTF-8 encoded Unicode, and all relevant tools typically only process UTF-8 encoded format. This may cause some problems. Firstly there are some characters which have less ambiguous Unicode variants than their ASCII versions, namely the `U+2019 RIGHT SINGLE QUOTATION MARK` and `U+2010 HYPHEN`. The analysis should work with both them and their legacy versions `0x27 APOSTROPHE` and `0x2D HYPHEN-MINUS`, but this variation may cause problems.
 
-The implementation of morphology uses UTF-8 encoded Unicode, and all relevant
-tools typically only process UTF-8 encoded format. This may cause
-some problems. Firstly there are some characters which have less ambiguous
-Unicode variants than their ASCII versions, namely the U+2019 RIGHT SINGLE
-QUOTATION MARK and U+2010 HYPHEN. The analysis should work with both them and
-the legacy 0x27 APOSTROPHE and 0x2D HYPHEN-MINUS, but this variation may cause
-problems.
+Basic versions of omorfi do not support other, sub-standard variants of these characters, nor automatic case folding, but some relevant HFST tools may perform some automatic guessing.
 
-On some systems, characters with potential diacritics, such as ä and ö,
-may be encoded differently; the implemented version uses the form of unicode
-where diacritics are precomposed to characters, also known as unicode
-normal form C (NFC). Systems using decomposed form (NFD) may experience
-problems.
+On some systems, characters with potential diacritics, such as ä and ö, may be encoded differently; the implemented version uses a form of unicode where diacritics are precomposed to characters, also known as unicode normal form C (NFC). Systems using decomposed form (NFD) may experience problems.
 
-Programming and project management
-----------------------------------
+== Contributing ==
 
-Omorfi rulesets and codes are free and libre open source, modifiable and
-redistributable by anyone. For participation in project it is recommended to
-follow rules common in majority of free and open source projects, such as `GNU
-project style guide <http://www.gnu.org/prep/standards/standards.html>`_, and
-`autobook book <http://sources.redhat.com/autobook/>`_ (esp. § 9.1.1) and
-instructions in project’s HACKING_ file. Bugs should be reported through
-`omorfi’s google code bug tracker
-<https://code.google.com/p/omorfi/issues/list>`_ system.
+Omorfi code and data are free and libre open source, modifiable and redistributable by anyone. To contribute code or data, use one of the contact channels listed in <http://code.google.com/p/omorfi/>. IRC channel [irc://Freenode/#omorfi #omorfi on Freenode networks] is especially good for immediate discussion about contributions. Any data or code contributed must be compatible with our licencing policy, i.e. GNU compatible free licence.
 
-.. vim: set ft=rst:
+<wiki:comment>
+vim: set ft=googlecodewiki:
+</wiki:comment>
