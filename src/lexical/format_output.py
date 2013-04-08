@@ -25,9 +25,8 @@ def format_lexc_omor(wordmap, format, use_prop_subclasses):
     if wordmap['is_proper']:
         wordmap['analysis'] += "[SUBCAT=PROPER]" %(wordmap)
         if use_prop_subclasses and wordmap['proper_noun_class']:
-            wordmap['proper_noun_class'].sort()
-            wordmap['analysis'] = wordmap['analysis'].replace('[SUBCAT=PROPER]', '[SUBCAT=PROPER][PROP=' +
-            ','.join(wordmap['proper_noun_class']) + ']')
+            wordmap['analysis'] = wordmap['analysis'].replace('[SUBCAT=PROPER]', 
+                  '[SUBCAT=PROPER][PROP=' + wordmap['proper_noun_class'] + ']')
 
     if format == 'ktnkav' and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
