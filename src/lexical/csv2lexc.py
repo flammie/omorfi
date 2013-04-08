@@ -75,10 +75,7 @@ def main():
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
             choices=["omor", "ktnkav"])
-    ap.add_argument("--proper-subclasses", "-P", choices=["yes","no"], default="no",
-            help="include subclasses of proper names in analyses")
     args = ap.parse_args()
-    args.proper_subclasses = (args.proper_subclasses == "yes")
     # check args
     lemmas = []
     if args.include_lemmas:
@@ -151,7 +148,7 @@ def main():
                     csv_line = csv_file.readline()
                     continue
             # format output
-            print(format_lexc_omor(wordmap, args.format, args.proper_subclasses),
+            print(format_lexc_omor(wordmap, args.format),
                     file=outfiles[wordmap['pos']])
             csv_line = csv_file.readline()
     exit()
