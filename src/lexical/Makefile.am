@@ -23,7 +23,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC)
 noinst_DATA=omor.timestamp
 
 if WANT_PROPER_SUBCLASSES
-MAYBE_PROPER_CLASSES='-j $(srcdir)/attributes/proper-classes.csv'
+MAYBE_PROPER_CLASSES = -j $(srcdir)/attributes/proper-classes.csv
 endif
 
 kotus-style.csv: $(LEXEMES)
