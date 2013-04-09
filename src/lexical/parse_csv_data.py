@@ -90,7 +90,6 @@ def parse_extras_from_csv(wordmap, csv_parts):
             if extra_fields[0] == 'plt':
                 wordmap['plurale_tantum'] = extra_fields[1]
             elif extra_fields[0] == 'prop':
-                wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                 if wordmap['is_proper'] or wordmap['pos'] == 'ACRONYM':
                     wordmap['proper_noun_class'].append( extra_fields[1].upper() )
                     wordmap['is_proper'] = True
@@ -106,6 +105,8 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}")
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
+    wordmap['proper_noun_class'].sort()
+    wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class']) or False
     return wordmap
 
 def parse_conts(wordmap):

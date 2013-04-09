@@ -22,6 +22,10 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC)
 
 noinst_DATA=omor.timestamp
 
+if WANT_PROPER_SUBCLASSES
+MAYBE_PROPER_CLASSES='-j $(srcdir)/attributes/proper-classes.csv'
+endif
+
 kotus-style.csv: $(LEXEMES)
 	echo "# This file has been generated automatically from lexemes/" > $@
 	echo "# Updates to this file will be deleted on next make" >> $@
@@ -33,7 +37,7 @@ joint.tsv: kotus-style.csv $(JOINS)
 		-j $(srcdir)/attributes/plurale-tantum.csv \
 		-j $(srcdir)/attributes/possessives.csv \
 		-j $(srcdir)/attributes/pronunciation.csv \
-		-j $(srcdir)/attributes/proper-classes.csv \
+		$(MAYBE_PROPER_CLASSES) \
 		-j $(srcdir)/attributes/usage.csv -o $@
 
 master.tsv: joint.tsv
@@ -44,7 +48,7 @@ omor.timestamp: master.tsv
 		mkdir -p $(top_builddir)/src/morphology/roots ; \
 	fi
 	$(PYTHON) $(srcdir)/csv2lexc.py -v -i $< -o $(top_builddir)/src/morphology/roots \
-              -f=$(TAG_FORMAT) -P=$(PROPER_SUBCLASSES) -x NUMERAL -x PRONOUN
+              -f=$(TAG_FORMAT) -x NUMERAL -x PRONOUN
 	touch $@
 
 clean-local:
