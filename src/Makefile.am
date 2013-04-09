@@ -168,8 +168,7 @@ dictionary.default.hfst: temporary.omor.hfst
 	$(HPR) $(HFST_FLAGS) --project=upper -i $< -o $@
 
 # create basic corpus tokeniser
-# ( (WORD 0:TOKEN (INCONDITIONAL 0:TOKEN)) | 
-# ((INCONDITIONAL 0:TOKEN) WORD 0:TOKEN) )*
+# Should split at even-odd boundaries of word punct* word punct*
 tokeniser.default.hfst: dictionary.default.hfst orthography/inconditionals.hfst\
 						orthography/token.hfst
 	$(HCAT) $(HFST_FLAGS) orthography/inconditionals.hfst \
