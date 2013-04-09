@@ -63,7 +63,7 @@ For more information of these tools, invoke `--help`, or view their man pages:
   man omorfi-analyse
 }}}
 
-For more advanced usage, see `${prefix}/share/hfst/fi/` directory, which contains all the omorfi automata in HFST binary format. These can be manipulated by standard HFST tools.
+Other automata, such as tokeniser, segmentation, hyphenation or whatever, may be available in the build directories. These should be installed into `${prefix}/share/hfst/fi/` directory, which contains all the omorfi automata in HFST binary format. These can be manipulated by standard HFST tools.
 
 == Note about character codings ==
 
