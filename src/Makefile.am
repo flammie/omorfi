@@ -17,7 +17,8 @@ if WANT_GENERATION
 MAYBE_GENERATION=generation.omor.hfst
 endif
 if WANT_DICTIONARY
-MAYBE_DICTIONARY=dictionary.default.hfst
+MAYBE_DICTIONARY=dictionary.default.hfst \
+				 tokeniser.default.hfst
 endif
 if WANT_HYPHENATION
 MAYBE_HYPHENATION=hyphenation.dict.hfst
@@ -165,6 +166,19 @@ lemmatize.default.hfst: temporary.omor.hfst lemmatize.relabel
 # create one tape spell checker
 dictionary.default.hfst: temporary.omor.hfst
 	$(HPR) $(HFST_FLAGS) --project=upper -i $< -o $@
+
+# create basic corpus tokeniser
+# ( (WORD 0:TOKEN (INCONDITIONAL 0:TOKEN)) | 
+# ((INCONDITIONAL 0:TOKEN) WORD 0:TOKEN) )*
+tokeniser.default.hfst: dictionary.default.hfst orthography/inconditionals.hfst\
+						orthography/token.hfst
+	$(HCAT) $(HFST_FLAGS) orthography/inconditionals.hfst \
+		orthography/token.hfst |\
+		$(HREP) $(HFST_FLAGS) -f 1 -o temporary.inconditional-tokens.hfst
+	$(HCAT) $(HFST_FLAGS) dictionary.default.hfst orthography/token.hfst \
+		-o temporary.word-tokens.hfst
+	$(HCAT) temporary.word-tokens.hfst temporary.inconditional-tokens.hfst |\
+		$(HREP) -f 1 -o $@
 
 # hyphenation dictionary
 hyphenation.dict.hfst: temporary.orth.hfst eliminate-boundaries.relabel hyphenation/hyphenation.rule.hfst
