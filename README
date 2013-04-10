@@ -71,7 +71,7 @@ This implementation of morphology uses UTF-8 encoded Unicode, and all relevant t
 
 Basic versions of omorfi do not support other, sub-standard variants of these characters, nor automatic case folding, but some relevant HFST tools may perform some automatic guessing.
 
-On some systems, characters with potential diacritics, such as ä and ö, may be encoded differently; the implemented version uses a form of unicode where diacritics are precomposed to characters, also known as unicode normal form C (NFC). Systems using decomposed form (NFD) may experience problems.
+On some systems, characters with potential diacritics, such as ä and ö, may be encoded differently; the implemented version uses a form of unicode where diacritics are precomposed to characters, also known as unicode normal form C (NFC). Systems using decomposed form (NFD), such as certain tools of Mac OS X, may experience problems.
 
 == Contributing ==
 
