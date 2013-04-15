@@ -7640,15 +7640,15 @@ LEXICON N_VELI
 
 0:i       N_FRONT_NOMINATIVE    ;
 0:je       N_FRONT_SINGULARS    ;
-0     N_FRONT_PLURALS   ;
+0:j     N_FRONT_PLURALS   ;
 0:je       N_FRONT_PARTITIVE_Ä_ÄN  ;
 0:je       N_FRONT_ILLATIVE_EN ;
-0     N_FRONT_PARTITIVE_IÄ    ;
-0     N_FRONT_GENITIVE_IEN    ;
-0     N_FRONT_ILLATIVE_IIN   ;
+0:j     N_FRONT_PARTITIVE_IÄ    ;
+0:j     N_FRONT_GENITIVE_IEN    ;
+0:j     N_FRONT_ILLATIVE_IIN   ;
 0:i       N_COMPOUND_0   ;
-0:i       N_COMPOUND_N   ;
-0       N_COMPOUND_IEN ;
+0:je       N_COMPOUND_N   ;
+0:j       N_COMPOUND_IEN ;
 
 
 
