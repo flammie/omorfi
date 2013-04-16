@@ -7522,13 +7522,13 @@ LEXICON N_PIENNAR
 0:tare    N_BACK_ILLATIVE_ISIIN  ;
 0:tare    N_BACK_ILLATIVE_IHIN   ;
 0:nar       N_COMPOUND_0   ;
-0:tere    N_COMPOUND_0   ;
-0:tere      N_COMPOUND_N   ;
-0:teree     N_COMPOUND_N   ;
-0:ner       N_COMPOUND_TEN ;
-0:ter       N_COMPOUND_IEN ;
-0:tere      N_COMPOUND_IDEN    ;
-0:tere      N_COMPOUND_ITTEN   ;
+0:tare    N_COMPOUND_0   ;
+0:tare      N_COMPOUND_N   ;
+0:taree     N_COMPOUND_N   ;
+0:nar       N_COMPOUND_TEN ;
+0:tar       N_COMPOUND_IEN ;
+0:tare      N_COMPOUND_IDEN    ;
+0:tare      N_COMPOUND_ITTEN   ;
 
 LEXICON N_AUER
 
@@ -8798,16 +8798,17 @@ LEXICON N_KUNNAT
 
 
 0:na  N_BACK_PLNOM_CLIT   ;
-0:to N_BACK_STRONG_PLURALS  ;
-0:no   N_BACK_WEAK_PLURALS    ;
-0:to  N_BACK_PARTITIVE_JA    ;
-0:to  N_BACK_GENITIVE_JEN    ;
+0:t  N_BACK_STRONG_PLURALS  ;
+0:n    N_BACK_WEAK_PLURALS    ;
+0:t   N_BACK_PARTITIVE_IA    ;
+0:t   N_BACK_GENITIVE_IEN    ;
 0:ta   N_BACK_GENITIVE_IN    ;
-0:to  N_BACK_ILLATIVE_IHIN   ;
+0:t   N_BACK_ILLATIVE_IIN   ;
 0:ta   N_COMPOUND_0   ;
 0:na  N_COMPOUND_N   ;
-0:to   N_COMPOUND_JEN ;
+0:t    N_COMPOUND_IEN ;
 0:ta   N_COMPOUND_IN  ;
+
 
 LEXICON N_HÄNNÄT
 
