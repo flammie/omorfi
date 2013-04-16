@@ -35,6 +35,8 @@ def format_lexc_omor(wordmap, format):
     elif format == 'newparas':
         wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
     wordmap['stub'] = lexc_escape(wordmap['stub'])
+    # match WORD_ID= with epsilon, then stub and lemma might match
+    wordmap['stub'] = '0' + wordmap['stub'] 
     return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
 
 def format_xml_kotus_sanalista(wordmap):
