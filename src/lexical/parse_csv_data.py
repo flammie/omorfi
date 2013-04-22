@@ -80,6 +80,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['stem_diphtong'] = False
     wordmap['extra_i'] = False
     wordmap['extra_e'] = False
+    wordmap['subcat'] = False
     return wordmap
 
 
@@ -103,6 +104,8 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['style'] = extra_fields[1]
             elif extra_fields[0] == 'boundaries':
                 wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}")
+            elif extra_fields[0] == 'subcat':
+                wordmap['subcat'] = extra_fields[1].upper()
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     wordmap['proper_noun_class'].sort()
@@ -197,6 +200,7 @@ def parse_from_tsv(wordmap, fields):
     wordmap['is_prefix'] = fields[17]
     wordmap['stem_vowel'] = fields[18]
     wordmap['stem_diphthong'] = fields[19]
+    wordmap['subcat'] = fields[20]
     for k,v in wordmap.items():
         if v == 'False':
             wordmap[k] = False

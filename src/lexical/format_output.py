@@ -22,11 +22,13 @@ def format_lexc_omor(wordmap, format):
     else:
         wordmap['analysis'] += "[POS=%(pos)s]" %(wordmap)
 
+    if wordmap['subcat']:
+        wordmap['analysis'] += "[SUBCAT=%(subcat)s]" %(wordmap)
+
     if wordmap['is_proper']:
-        wordmap['analysis'] += "[SUBCAT=PROPER]" %(wordmap)
+        wordmap['analysis'] += "[SUBCAT=PROPER]"
         if wordmap['proper_noun_class']:
-            wordmap['analysis'] = wordmap['analysis'].replace('[SUBCAT=PROPER]', 
-                  '[SUBCAT=PROPER][PROP=' + wordmap['proper_noun_class'] + ']')
+            wordmap['analysis'] += '[PROP=%(proper_noun_class)s]' %(wordmap)
 
     if format == 'ktnkav' and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
