@@ -4542,6 +4542,10 @@ def guess_new_acro(wordmap):
         wordmap['new_para'] = 'ACRO_ÄÄ'
     elif wordmap['lemma'][-1] in ['ö', 'Ö']:
         wordmap['new_para'] = 'ACRO_ÖÖ'
+    elif wordmap['lemma'][-1] in ['ö', 'Ö']:
+        wordmap['new_para'] = 'ACRO_ÖÖ'
+    elif wordmap['lemma'][-1] == 'Ω':
+        wordmap['new_para'] = 'ACRO_OHMI'
     return wordmap
 
 def guess_new_pronoun(wordmap):
