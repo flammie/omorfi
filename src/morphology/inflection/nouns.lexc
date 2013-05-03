@@ -279,34 +279,28 @@ LEXICON N_FRONT_ILLATIVE_ISIIN
 LEXICON N_BACK_POSS
 [POSS=SG1]:%>ni  N_BACK_CLIT_OPT        ;
 [POSS=SG2]:%>si  N_BACK_CLIT_OPT        ;
-[POSS=SG3]:%>nsa N_BACK_CLIT_OPT        ;
+[POSS=SG3][POSS=PL3]:%>nsa N_BACK_CLIT_OPT        ;
 [POSS=PL1]:%>mme N_BACK_CLIT_OPT        ;
 [POSS=PL2]:%>nne N_BACK_CLIT_OPT        ;
-[POSS=PL3]:%>nsa N_BACK_CLIT_OPT        ;
 
 LEXICON N_FRONT_POSS
 [POSS=SG1]:%>ni  N_FRONT_CLIT_OPT        ;
 [POSS=SG2]:%>si  N_FRONT_CLIT_OPT        ;
-[POSS=SG3]:%>nsä N_FRONT_CLIT_OPT        ;
+[POSS=SG3][POSS=PL3]:%>nsä N_FRONT_CLIT_OPT        ;
 [POSS=PL1]:%>mme N_FRONT_CLIT_OPT        ;
 [POSS=PL2]:%>nne N_FRONT_CLIT_OPT        ;
-[POSS=PL3]:%>nsä N_FRONT_CLIT_OPT        ;
 
 LEXICON N_BACK_POSS_AN
-[POSS=SG3]:%>an    N_BACK_CLIT_OPT     ;
-[POSS=PL3]:%>an    N_BACK_CLIT_OPT     ;
+[POSS=SG3][POSS=PL3]:%>an    N_BACK_CLIT_OPT     ;
 
 LEXICON N_BACK_POSS_EN
-[POSS=SG3]:%>en    N_BACK_CLIT_OPT     ;
-[POSS=PL3]:%>en    N_BACK_CLIT_OPT     ;
+[POSS=SG3][POSS=PL3]:%>en    N_BACK_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_EN
-[POSS=SG3]:%>en    N_FRONT_CLIT_OPT     ;
-[POSS=PL3]:%>en    N_FRONT_CLIT_OPT     ;
+[POSS=SG3][POSS=PL3]:%>en    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_FRONT_POSS_ÄN
-[POSS=SG3]:%>än    N_FRONT_CLIT_OPT     ;
-[POSS=PL3]:%>än    N_FRONT_CLIT_OPT     ;
+[POSS=SG3][POSS=PL3]:%>än    N_FRONT_CLIT_OPT     ;
 
 LEXICON N_BACK_CLIT
 [CLIT=HAN]:%>han   #        ;
