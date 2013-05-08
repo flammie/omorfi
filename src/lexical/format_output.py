@@ -28,7 +28,7 @@ def format_lexc_omor(wordmap, format):
     if wordmap['is_proper']:
         wordmap['analysis'] += "[SUBCAT=PROPER]"
         if wordmap['proper_noun_class']:
-            for prop in wordmap['proper_noun_class'].split(',')
+            for prop in wordmap['proper_noun_class'].split(','):
                 wordmap['analysis'] += '[PROP=%s]' %(prop)
 
     if format == 'ktnkav' and tn < 99:

@@ -3785,7 +3785,6 @@ LEXICON V_TIETÄÄ
 
 LEXICON V_HALAJAA
 
-
 0:a   V_BACK_AINF    ;
 0     V_BACK_STRONG_PRESENT    ;
 0     V_BACK_3SG_A  ;
@@ -3794,7 +3793,6 @@ LEXICON V_HALAJAA
 0     V_BACK_DERIV_PCPS ;
 
 LEXICON V_VIPAJAA
-
 
 0:a   V_BACK_AINF    ;
 0:a     V_BACK_STRONG_PRESENT    ;
@@ -3814,7 +3812,6 @@ LEXICON V_HELÄJÄÄ
 
 LEXICON V_RAIKAA
 
-
 0     V_BACK_AINF    ;
 0     V_BACK_STRONG_PRESENT    ;
 0     V_BACK_3SG_A  ;
@@ -3831,7 +3828,6 @@ LEXICON V_ÄHKÄÄ
 
 LEXICON V_TUIKKAA
 
-
 0:ka     V_BACK_AINF    ;
 0:ka     V_BACK_STRONG_PRESENT    ;
 0:ka     V_BACK_3SG_A  ;
@@ -3839,21 +3835,13 @@ LEXICON V_TUIKKAA
 0:ka     V_BACK_DERIV_PCPS ;
 
 
-
-
 LEXICON V_OLLA
-
-
-
-
-
-
 
 0:oll    V_BACK_AINF    ;
 0:oll    V_BACK_EINF    ;
 0:ole    V_BACK_WEAK_PRESENT    ;
-[VOICE=ACT][MOOD=INDV][PRS=SG3]:on V_BACK_CLIT_OPT ;
-[VOICE=ACT][MOOD=INDV][PRS=PL3]:ovat V_BACK_CLIT_OPT ;
+[VOICE=ACT][MOOD=INDV][TENSE=PRESENT][PRS=SG3]:on V_BACK_CLIT_OPT ;
+[VOICE=ACT][MOOD=INDV][TENSE=PRESENT][PRS=PL3]:ovat V_BACK_CLIT_OPT ;
 0:ol    V_BACK_WEAK_PAST   ;
 0:ol    V_BACK_STRONG_PAST ;
 0:ol    V_BACK_CONDITIONAL  ;
@@ -3885,16 +3873,18 @@ LEXICON V_OLLA
 [DRV=MINEN]:olemi                          N_AAKKOSTAMINEN ;
 [DRV=JA]:olij                              N_SOITTAJA ;
 [VOICE=ACT][PCP=NUT]:oll                           A_KULUNUT ;
-[VOICE=ACT][MOOD=POTN][PRS=SG1:lienen                       V_FRONT_CLIT_OPT ;
-[VOICE=ACT][MOOD=POTN][PRS=SG2:lienet                       V_FRONT_CLIT_OPT ;
-[VOICE=ACT][MOOD=POTN][PRS=SG3:lienee                       V_FRONT_CLIT_OPT ;
-[VOICE=ACT][MOOD=POTN][PRS=PL1:lienemme                     V_FRONT_CLIT_OPT ;
-[VOICE=ACT][MOOD=POTN][PRS=PL2:lienette                     V_FRONT_CLIT_OPT ;
-[VOICE=ACT][MOOD=POTN][PRS=PL3:lienevät                     V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=SG1]:lienen                       V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=SG2]:lienet                       V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=SG3]:lienee                       V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=SG3]:lie                       V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=PL1]:lienemme                     V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=PL2]:lienette                     V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][PRS=PL3]:lienevät                     V_FRONT_CLIT_OPT ;
 [VOICE=ACT][MOOD=POTN][NEG=CON]:liene                     V_FRONT_CLIT_OPT ;
-[VOICE=ACT][MOOD=POTN][NEG=COM]:lie                       V_FRONT_CLIT_OPT ;
+[VOICE=ACT][MOOD=POTN][NEG=CON]:lie                       V_FRONT_CLIT_OPT ;
 
 LEXICON V_EI
+
 [SUBCAT=NEG][VOICE=ACT][PRS=SG1]:en             V_FRONT_CLIT_OPT    ;
 [SUBCAT=NEG][VOICE=ACT][PRS=SG1][CLIT=KA]:enkä  V_FRONT_CLIT_OPT    ;
 [SUBCAT=NEG][VOICE=ACT][PRS=SG2]:et             V_FRONT_CLIT_OPT    ;
