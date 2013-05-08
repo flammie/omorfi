@@ -28,7 +28,8 @@ def format_lexc_omor(wordmap, format):
     if wordmap['is_proper']:
         wordmap['analysis'] += "[SUBCAT=PROPER]"
         if wordmap['proper_noun_class']:
-            wordmap['analysis'] += '[PROP=%(proper_noun_class)s]' %(wordmap)
+            for prop in wordmap['proper_noun_class'].split(',')
+                wordmap['analysis'] += '[PROP=%s]' %(prop)
 
     if format == 'ktnkav' and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
