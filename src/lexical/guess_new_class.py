@@ -1735,7 +1735,7 @@ def guess_new_noun(wordmap):
             wordmap['new_para'] = '#'
         elif tn == 1007:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('veli'):
+                if wordmap['lemma'].endswith('veli') or wordmap['lemma'].endswith('Veli'):
                     wordmap['new_para'] = 'N_VELI'
                 else:
                     fail_guess_because(wordmap, ['N', 7, False, 'VELI'],
@@ -1745,13 +1745,13 @@ def guess_new_noun(wordmap):
                         [False], 'Cannot gradate')
         elif tn == 1009:
             if wordmap['kotus_av'] == 'D':
-                if wordmap['lemma'].endswith('aika'):
+                if wordmap['lemma'].endswith('aika') or wordmap['lemma'].endswith('Aika'):
                     wordmap['new_para'] = 'N_AIKA'
                 else:
                     fail_guess_because(wordmap, ['N', 9, 'D', 'AIKA'],
                             ['aika'], 'must be aika')
             elif not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('aika'):
+                if wordmap['lemma'].endswith('aika') or wordmap['lemma'].endswith('Aika'):
                     print("N_AIKA is k:0 gradation + i:j variation!",
                             "in", wordmap['lemma'],
                             file=stderr)
@@ -1802,7 +1802,7 @@ def guess_new_noun(wordmap):
                         [False], 'must be 0')
         elif tn == 1026:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('veri'):
+                if wordmap['lemma'].endswith('veri') or wordmap['lemma'].endswith('Veri'):
                     wordmap['new_para'] = 'N_VERI'
                 else:
                     fail_guess_because(wordmap, ['N', 24, 'False', 'VERI'],
@@ -2716,29 +2716,29 @@ def guess_new_noun(wordmap):
                         [False])
         elif tn == 1007:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('veljet'):
+                if wordmap['lemma'].endswith('veljet') or wordmap['lemma'].endswith('Veljet'):
                     wordmap['new_para'] = 'N_VELJET'
                 else:
                     fail_guess_because(wordmap, ['N', 7, False, 'PLT'],
-                            ['pojat'])
+                            ['veljet'])
             elif wordmap['kotus_av'] in ['D', 'L']:
-                if wordmap['lemma'].endswith('veljet'):
+                if wordmap['lemma'].endswith('veljet') or wordmap['lemma'].endswith('Veljet'):
                     wordmap['new_para'] = 'N_VELJET'
                 else:
                     fail_guess_because(wordmap, ['N', 7, False, 'PLT'],
-                            ['pojat'])
+                            ['veljet'])
             else:
                 fail_guess_because(wordmap, ['N', 7, 'PLT'],
                         [False, 'D', 'L'])
         elif tn == 1010:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('pojat'):
+                if wordmap['lemma'].endswith('pojat') or wordmap['lemma'].endswith('Pojat'):
                     wordmap['new_para'] = 'N_POJAT'
                 else:
                     fail_guess_because(wordmap, ['N', 10, False, 'PLT'],
                             ['pojat'])
             elif wordmap['kotus_av'] in ['D', 'L']:
-                if wordmap['lemma'].endswith('pojat'):
+                if wordmap['lemma'].endswith('pojat') or wordmap['lemma'].endswith('Pojat'):
                     wordmap['new_para'] = 'N_POJAT'
                 else:
                     fail_guess_because(wordmap, ['N', 10, False, 'PLT'],
