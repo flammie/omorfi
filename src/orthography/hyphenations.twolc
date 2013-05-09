@@ -1,6 +1,8 @@
 Alphabet
 
 a e i o u y ä ö
+b c d f g h j k l m n p q r s t v w x z
+A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 
 %{%-%}:%- %{%#%}:0 %{%#%#%}:0
 %-
@@ -11,10 +13,13 @@ a e i o u y ä ö
 Sets
 Vowels = a e i o u y ä ö ;
 Consonants = b c d f g h j k l m n p q r s t v w x z ;
+Upper = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö ;
 
 Rules
 
 "Dissallow no hyphen on vowel boundaries"
 %{%#%}:0 /<= Vv :0*  _ :0* Vv ; where Vv in Vowels ;
 
-
+"Require hyphen on some caps"
+%{%#%}:%- <= Upper [? - %{%#%}:]* _ ;
+            _ :0* Upper ;
