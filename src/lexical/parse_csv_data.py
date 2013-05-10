@@ -81,6 +81,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['extra_i'] = False
     wordmap['extra_e'] = False
     wordmap['subcat'] = False
+    wordmap['sem'] = []
     return wordmap
 
 
@@ -106,10 +107,16 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['stub'] = extra_fields[1].replace("|", "{#}").replace("_", "{_}")
             elif extra_fields[0] == 'subcat':
                 wordmap['subcat'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'sem':
+                wordmap['sem'].append( extra_fields[1].upper() )
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
+    
     wordmap['proper_noun_class'].sort()
     wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class']) or False
+    wordmap['sem'].sort()
+    wordmap['sem'] = ','.join(wordmap['sem']) or False
+    
     return wordmap
 
 def parse_conts(wordmap):
@@ -201,6 +208,7 @@ def parse_from_tsv(wordmap, fields):
     wordmap['stem_vowel'] = fields[18]
     wordmap['stem_diphthong'] = fields[19]
     wordmap['subcat'] = fields[20]
+    wordmap['sem'] = fields[21]
     for k,v in wordmap.items():
         if v == 'False':
             wordmap[k] = False

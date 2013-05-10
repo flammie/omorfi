@@ -106,6 +106,13 @@ AC_ARG_ENABLE([proper_subclasses],
                               [enable_proper_subclasses=no])
 AM_CONDITIONAL([WANT_PROPER_SUBCLASSES], [test "x$enable_proper_subclasses" != xno])
 AC_SUBST([PROPER_SUBCLASSES], [$enable_proper_subclasses])
+AC_ARG_ENABLE([semantics],
+              [AS_HELP_STRING([--enable-semantics],
+                              [include some semantic classifications in analyses @<:@default=no@:>@])],
+                              [enable_semantics=$enableval],
+                              [enable_semantics=no])
+AM_CONDITIONAL([WANT_SEMANTICS], [test "x$enable_semantics" != xno])
+AC_SUBST([SEMANTICS], [$enable_semantics])
 AC_ARG_ENABLE([kotus_tags],
               [AS_HELP_STRING([--enable-kotus-tags],
                               [include Kotus inflection class tags KTN=, KAV= in analyses @<:@default=no@:>@])],
@@ -263,5 +270,6 @@ Configured $PACKAGE_STRING:
     * Hyphenation: $enable_hyphenation
     * Voikko support: $enable_voikko
     * Proper subclasses: $enable_proper_subclasses
+    * Semantic tags: $enable_semantics
     * Tag format: $tag_format
 EOF

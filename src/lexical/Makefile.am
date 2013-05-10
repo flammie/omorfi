@@ -7,7 +7,7 @@ LEXEMES=lexemes/fiwn.csv lexemes/joukahainen.csv lexemes/nss.csv \
 JOINS=attributes/boundaries.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
-	  attributes/subcategories.csv attributes/usage.csv
+	  attributes/semantic.csv attributes/subcategories.csv attributes/usage.csv
 SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
 FINNISC=\
 		format_output.py \
@@ -25,6 +25,9 @@ noinst_DATA=omor.timestamp
 if WANT_PROPER_SUBCLASSES
 MAYBE_PROPER_CLASSES = -j $(srcdir)/attributes/proper-classes.csv
 endif
+if WANT_SEMANTICS
+MAYBE_SEMANTICS = -j $(srcdir)/attributes/semantic.csv
+endif
 
 kotus-style.csv: $(LEXEMES)
 	echo "# This file has been generated automatically from lexemes/" > $@
@@ -38,6 +41,7 @@ joint.tsv: kotus-style.csv $(JOINS)
 		-j $(srcdir)/attributes/possessives.csv \
 		-j $(srcdir)/attributes/pronunciation.csv \
 		$(MAYBE_PROPER_CLASSES) \
+		$(MAYBE_SEMANTICS) \
 		-j $(srcdir)/attributes/subcategories.csv \
 		-j $(srcdir)/attributes/usage.csv -o $@
 

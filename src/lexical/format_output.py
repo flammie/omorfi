@@ -31,6 +31,10 @@ def format_lexc_omor(wordmap, format):
             for prop in wordmap['proper_noun_class'].split(','):
                 wordmap['analysis'] += '[PROP=%s]' %(prop)
 
+    if wordmap['sem']:
+        for sem in wordmap['sem'].split(','):
+            wordmap['analysis'] += '[SEM=%s]' %(sem)
+
     if format == 'ktnkav' and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
         if wordmap['kotus_av']:
