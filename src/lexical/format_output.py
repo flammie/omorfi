@@ -15,9 +15,9 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += "[POS=%(pos)s][SUBCAT=SUFFIX]" %(wordmap)
     elif wordmap['is_prefix']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=PREFIX]" %(wordmap)
-    elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
+    elif wordmap['pos'] == 'ACRONYM':
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)
-    elif wordmap['pos'] in ['CONJUNCTION', 'INTERJECTION']:
+    elif wordmap['pos'] in ['CONJUNCTION', 'INTERJECTION', 'ABBREVIATION']:
         wordmap['analysis'] += "[POS=PARTICLE][SUBCAT=%(pos)s]" %(wordmap)
     else:
         wordmap['analysis'] += "[POS=%(pos)s]" %(wordmap)
