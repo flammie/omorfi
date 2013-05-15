@@ -1,7 +1,7 @@
 # This file contains definitions of miscellaneous subcategories
 "LEMMA","KOTUS NUMBER","KOTUS GRADATION LETTER","PART-OF-SPEECH","SUBCATEGORY"#,<-HEADERS
 "dnro","2","0","N","subcat=abbreviation"
-"Hki","5","G","Prop","subcat=abbreviation"
+"Hki","5","0","Prop","subcat=abbreviation"
 "hlö","2","0","N","subcat=abbreviation"
 "hra","9","0","N","subcat=abbreviation"
 "hsto","1","0","N","subcat=abbreviation"
