@@ -1,5 +1,12 @@
 ## Process this file with automake to produce Makefile.in
 
+if WANT_FTB3
+MAYBE_FTB3_HACKS = roots/ftb3-hacks.lexc
+COMPOUNDING = compounding/compounding-ftb3.lexc
+else
+COMPOUNDING = compounding/compounding.lexc
+endif
+
 # lexc data
 LEXC_MAIN=definitions.lexc
 MORPHOLOGY_SRCS=\
@@ -21,6 +28,7 @@ MORPHOLOGY_SRCS=\
 				inflection/pronouns.lexc \
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
+			$(MAYBE_FTB3_HACKS) \
 			roots/abbreviations.lexc \
 			roots/acronyms.lexc \
 			roots/adjectives.lexc \

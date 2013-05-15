@@ -119,6 +119,13 @@ AC_ARG_ENABLE([kotus_tags],
                               [tag_format=ktnkav],
                               [tag_format=omor])
 AC_SUBST([TAG_FORMAT], [$tag_format])
+AC_ARG_ENABLE([ftb3],
+              [AS_HELP_STRING([--enable-ftb3],
+                              [include FinnTreeBank 3 specific readings @<:@default=no@:>@])],
+                              [enable_ftb3=$enableval],
+                              [enable_ftb3=no])
+AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" != xno])
+AC_SUBST([FTB3], [$enable_ftb3])
 
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
@@ -272,4 +279,5 @@ Configured $PACKAGE_STRING:
     * Proper subclasses: $enable_proper_subclasses
     * Semantic tags: $enable_semantics
     * Tag format: $tag_format
+    * FTB3 readings: $enable_ftb3
 EOF
