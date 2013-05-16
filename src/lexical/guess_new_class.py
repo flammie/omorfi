@@ -2963,7 +2963,7 @@ def guess_new_adjective(wordmap):
                         ['a'])
         elif wordmap['kotus_av'] == 'A':
             if wordmap['lemma'].endswith('ka'):
-                wordmap['new_para'] = 'A_HOIKKA'
+                wordmap['new_para'] = 'A_TARKKA'
             else:
                 fail_guess_because(wordmap, ['A', 9, 'A'],
                         ['kka'])
@@ -2975,7 +2975,7 @@ def guess_new_adjective(wordmap):
                         ['tta'])
         elif wordmap['kotus_av'] == 'D':
             if wordmap['lemma'].endswith('ka'):
-                wordmap['new_para'] = 'A_HOIKKA'
+                wordmap['new_para'] = 'A_TARKKA'
             else:
                 fail_guess_because(wordmap, ['A', 9, 'D'],
                         ['ka'])
