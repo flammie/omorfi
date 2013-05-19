@@ -1,0 +1,53 @@
+
+LEXICON NOMINALS
+0    NOMINAL ;
+
+LEXICON NOMINAL
+0    NOUN    ;
+0    51  ;
+0    ADJECTIVE   ;
+
+
+LEXICON Compounding
+0    Compounding/Undashed    ;
+0    Compounding/Dashed      ;
+0    Compounding/Omission    ;
+
+LEXICON Compounding/Undashed
+[BOUNDARY=COMPOUND][GUESS=COMPOUND]:{#} Compounding/Middle      ;
+
+LEXICON Compounding/Dashed
+[BOUNDARY=COMPOUNDDASH][GUESS=COMPOUND]:{-} Compounding/Middle      ;
+
+LEXICON Compounding/Omission
+[COMPOUND_FORM=OMIT]:-  #    ;
+
+LEXICON Compounding/Middle
+0    Compounding/Free    ;
+0    Compounding/Final   ;
+
+LEXICON Compounding/Initial
+0    DIGITS  ;
+0    ACRONYM ;
+0    PREFIX  ;
+
+LEXICON Compounding/None
+0   ABBREVIATION    ;
+0   PRON ;
+0   ADPOSITION  ;
+0   ADVERB  ;
+0   CONJUNCTION ;
+0   INTERJECTION    ;
+0   NUM ;
+0   PARTICLE    ;
+0   PUNCTUATION ;
+0   VERB    ;
+0   FTB3_HACKS    ;
+
+LEXICON Compounding/Free
+0   NOMINAL ;
+
+
+LEXICON Compounding/Final
+0  SUFFIX  ;
+

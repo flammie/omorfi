@@ -21,9 +21,9 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += "[POS=%(pos)s][SUBCAT=SUFFIX]" %(wordmap)
     elif wordmap['is_prefix']:
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=PREFIX]" %(wordmap)
-    elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
+    elif wordmap['pos'] == 'ACRONYM':
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)
-    elif wordmap['pos'] in ['CONJUNCTION', 'INTERJECTION']:
+    elif wordmap['pos'] in ['CONJUNCTION', 'INTERJECTION', 'ABBREVIATION']:
         wordmap['analysis'] += "[POS=PARTICLE][SUBCAT=%(pos)s]" %(wordmap)
     else:
         wordmap['analysis'] += "[POS=%(pos)s]" %(wordmap)
@@ -36,6 +36,10 @@ def format_lexc_omor(wordmap, format):
         if wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
                 wordmap['analysis'] += '[PROP=%s]' %(prop)
+
+    if wordmap['sem']:
+        for sem in wordmap['sem'].split(','):
+            wordmap['analysis'] += '[SEM=%s]' %(sem)
 
     if format == 'ktnkav' and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)

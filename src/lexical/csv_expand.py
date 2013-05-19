@@ -62,7 +62,7 @@ def main():
         "stub", "twolstem", "possessive", "clitics", "is_proper",
         "proper_noun_class", "style", "stub", "gradestem", "twolstem",
         "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
-        "stem_diphthong", "subcat", "#", "<- HEADERS", sep="\t", file=args.output)
+        "stem_diphthong", "subcat", "sem", "#", "<- HEADERS", sep="\t", file=args.output)
     linecount = 0
     for csv_line in args.input:
         linecount += 1
@@ -120,7 +120,7 @@ def main():
                 wordmap['gradestem'], wordmap['twolstem'], wordmap['grade_dir'],
                 wordmap['harmony'], wordmap['is_suffix'], wordmap['is_prefix'],
                 wordmap['stem_vowel'], wordmap['stem_diphthong'], wordmap['subcat'], 
-                sep='\t', file=args.output)
+                wordmap['sem'], sep='\t', file=args.output)
     exit()
 
 
