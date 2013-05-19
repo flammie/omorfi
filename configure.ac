@@ -111,11 +111,15 @@ AC_ARG_ENABLE([kotus_tags],
                               [include Kotus inflection class tags KTN=, KAV= in analyses @<:@default=no@:>@])],
                               [tag_format=ktnkav],
                               [tag_format=omor])
+AC_ARG_ENABLE([multichar_format],
+              [AS_HELP_STRING([--enable-multichar-format],
+                              [use other formats for multichar symbols @<:@default=omor@>:@])],
+                             [tag_format=$enableval])
 AC_SUBST([TAG_FORMAT], [$tag_format])
 
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
-AC_MSG_RESULT([no])
+AC_MSG_RESULT([getting there])
 
 # Checks for programs
 AC_PROG_LN_S

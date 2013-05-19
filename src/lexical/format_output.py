@@ -5,6 +5,12 @@
 from sys import stderr
 from lexc_string_utils import lexc_escape
 
+def format_lexc(wordmap, format):
+    if format in ["omor", "ktnkav"]:
+        return format_lexc_omor(wordmap, format)
+    elif format == "apertium":
+        return format_lexc_apertium(wordmap)
+
 def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
@@ -41,6 +47,42 @@ def format_lexc_omor(wordmap, format):
     # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = '0' + wordmap['stub'] 
     return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
+
+def format_lexc_apertium(wordmap):
+    wordmap['analysis'] = lexc_escape(wordmap['lemma'])
+    if wordmap['is_suffix']:
+        wordmap['analysis'] = "#" + wordmap['analysis']
+    elif wordmap['is_prefix']:
+        wordmap['analysis'] += "#"
+    if wordmap['pos'] == 'NOUN':
+        if wordmap['is_proper']:
+            wordmap['analysis'] += '%<np%>'
+        else:
+            wordmap['analysis'] += '%<n%>'
+    elif wordmap['pos'] == 'VERB':
+        wordmap['analysis'] += '%<vblex%>'
+    elif wordmap['pos'] == 'ADJECTIVE':
+        wordmap['analysis'] += '%<adj%>'
+    elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
+        wordmap['analysis'] += "%<abbr%>"
+    elif wordmap['pos'] == 'CONJUNCTION':
+        wordmap['analysis'] += "%<cnjcoo%>"
+    elif wordmap['pos'] == 'INTERJECTION':
+        wordmap['analysis'] += "%<interj%>"
+    elif wordmap['pos'] == 'ADVERB':
+        wordmap['analysis'] += "%<adv%>"
+    elif wordmap['pos'] == 'ADPOSITION':
+        wordmap['analysis'] += "%<pp%>"
+    elif wordmap['pos'] == 'PARTICLE':
+        wordmap['analysis'] += "%<adv%>"
+    else:
+        print("Missed this pose: %s(pos)" %(wordmap))
+        wordmap['analysis'] += "%<errpos%>"
+
+
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
+    return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
+
 
 def format_xml_kotus_sanalista(wordmap):
     if wordmap['kotus_av']:

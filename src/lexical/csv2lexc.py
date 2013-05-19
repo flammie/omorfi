@@ -31,7 +31,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_lexc_omor
+from format_output import format_lexc
 from parse_csv_data import parse_from_tsv
 
 # standard UI stuff
@@ -74,7 +74,7 @@ def main():
             metavar="ODIR", help="write roots to ODIR")
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            choices=["omor", "ktnkav"])
+            choices=["omor", "ktnkav", "apertium", "giellatekno"])
     args = ap.parse_args()
     # check args
     lemmas = []
@@ -148,8 +148,8 @@ def main():
                     csv_line = csv_file.readline()
                     continue
             # format output
-            print(format_lexc_omor(wordmap, args.format),
-                    file=outfiles[wordmap['pos']])
+            print(format_lexc(wordmap, args.format), 
+                  file=outfiles[wordmap['pos']])
             csv_line = csv_file.readline()
     exit()
 
