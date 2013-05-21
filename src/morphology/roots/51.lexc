@@ -2309,3 +2309,4 @@ LEXICON 51
 [WORD_ID=vierasmies][POS=NOUN][NUM=SG][CASE=PAR]:vierasta#miestä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUM=SG][CASE=TRA]:vieraaksi#miehekse N_BACK_POSS_EN_OBL ;
 [WORD_ID=vierasmies][POS=NOUN][NUM=SG][CASE=TRA]:vieraaksi#mieheksi N_BACK_CLIT_OPT ;
+[WORD_ID=vuosi][POS=NOUN][NUM=SG][CASE=ESS]:0vuonna N_BACK_POSS_AN_OPT      ;
