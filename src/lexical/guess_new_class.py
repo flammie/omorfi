@@ -4521,7 +4521,7 @@ def guess_new_acro(wordmap):
     elif wordmap['lemma'][-1] == '9':
         wordmap['new_para'] = 'ACRO_YHDEKSÄN'
     elif wordmap['lemma'][-1] == '0':
-        wordmap['new_para'] = 'ACRO_KAKSI'
+        wordmap['new_para'] = 'ACRO_NOLLA'
     elif wordmap['lemma'][-1] in ['a', 'A']:
         wordmap['new_para'] = 'ACRO_AA'
     elif wordmap['lemma'][-1] in ['b', 'B', 'C', 'c', 'd', 'D', 'e', 'E', 'g', 'G', 'p', 'P', 't', 'T', 'v', 'V', 'w', 'W']:
@@ -4542,10 +4542,16 @@ def guess_new_acro(wordmap):
         wordmap['new_para'] = 'ACRO_ÄÄ'
     elif wordmap['lemma'][-1] in ['ö', 'Ö']:
         wordmap['new_para'] = 'ACRO_ÖÖ'
-    elif wordmap['lemma'][-1] in ['ö', 'Ö']:
-        wordmap['new_para'] = 'ACRO_ÖÖ'
     elif wordmap['lemma'][-1] == 'Ω':
         wordmap['new_para'] = 'ACRO_OHMI'
+    elif wordmap['lemma'][-1] == '€':
+        wordmap['new_para'] = 'ACRO_EURO'
+    elif wordmap['lemma'][-1] == '$':
+        wordmap['new_para'] = 'ACRO_DOLLARI'
+    elif wordmap['lemma'][-1] in ['£', '₤']:
+        wordmap['new_para'] = 'ACRO_PUNTA'
+    elif wordmap['lemma'][-1] == '¢':
+        wordmap['new_para'] = 'ACRO_SENTTI'
     return wordmap
 
 def guess_new_pronoun(wordmap):
