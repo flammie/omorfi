@@ -121,8 +121,9 @@ def main():
                 join_line = join_file.readline()
                 continue
             if not join_on in words.keys():
-                print("Could not find the key", join_on, "of", join_file.name,
-                "line", linecount, "from any of", args.input, file=stderr)
+                print("\033[93mMissing!\033[0mCould not find the key",
+                        join_on, "from", join_file.name,
+                "line", linecount, "in any of", args.input, file=stderr)
             else:
                 this_entry = words[join_on]
                 this_entry += [join_parts[4].strip('"')]
