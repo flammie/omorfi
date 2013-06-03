@@ -13,13 +13,11 @@ cat $lexcdir/definitions.lexc $lexcdir/pos.lexc \
     $lexcdir/roots/adverbs.lexc \
     $lexcdir/roots/conjunctions.lexc \
     $lexcdir/roots/digits.lexc \
-    $lexcdir/roots/ftb3-hacks.lexc \
     $lexcdir/roots/interjections.lexc \
     $lexcdir/roots/nouns.lexc \
     $lexcdir/roots/numerals.lexc \
     $lexcdir/roots/particles.lexc \
     $lexcdir/roots/prefixes.lexc \
-    $lexcdir/roots/pron.lexc \
     $lexcdir/roots/pronouns.lexc \
     $lexcdir/roots/proper-nouns.lexc \
     $lexcdir/roots/punctuation.lexc \
@@ -41,4 +39,5 @@ cat $lexcdir/definitions.lexc $lexcdir/pos.lexc \
     $lexcdir/inflection/prefixes.lexc \
     $lexcdir/inflection/pronouns.lexc \
     $lexcdir/inflection/verbs.lexc \
-    | sed -f $(dirname $0)/omor2apertium.sed
+    | sed -f $(dirname $0)/omor2apertium.sed \
+    | fgrep -v '%<del%>'
