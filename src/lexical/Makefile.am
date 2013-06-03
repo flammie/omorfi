@@ -7,6 +7,7 @@ LEXEMES=lexemes/fiwn.csv lexemes/joukahainen.csv lexemes/nss.csv \
 JOINS=attributes/boundaries.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
+	  attributes/particle-classes.csv \
 	  attributes/semantic.csv attributes/subcategories.csv attributes/usage.csv
 SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
 FINNISC=\
@@ -40,6 +41,7 @@ joint.tsv: kotus-style.csv $(JOINS)
 		-j $(srcdir)/attributes/plurale-tantum.csv \
 		-j $(srcdir)/attributes/possessives.csv \
 		-j $(srcdir)/attributes/pronunciation.csv \
+		-j $(srcdir)/attributes/particle-classes.csv \
 		$(MAYBE_PROPER_CLASSES) \
 		$(MAYBE_SEMANTICS) \
 		-j $(srcdir)/attributes/subcategories.csv \

@@ -82,6 +82,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['extra_e'] = False
     wordmap['subcat'] = False
     wordmap['sem'] = []
+    wordmap['particle'] = False
     return wordmap
 
 
@@ -108,7 +109,9 @@ def parse_extras_from_csv(wordmap, csv_parts):
             elif extra_fields[0] == 'subcat':
                 wordmap['subcat'] = extra_fields[1].upper()
             elif extra_fields[0] == 'sem':
-                wordmap['sem'].append( extra_fields[1].upper() )
+                wordmap['sem'].append(extra_fields[1].upper())
+            elif extra_fields[0] == 'particle':
+                wordmap['particle'] = extra_fields[1].upper()
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     
@@ -209,6 +212,7 @@ def parse_from_tsv(wordmap, fields):
     wordmap['stem_diphthong'] = fields[19]
     wordmap['subcat'] = fields[20]
     wordmap['sem'] = fields[21]
+    wordmap['particle'] = fields[22]
     for k,v in wordmap.items():
         if v == 'False':
             wordmap[k] = False

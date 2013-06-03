@@ -23,13 +23,16 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=PREFIX]" %(wordmap)
     elif wordmap['pos'] == 'ACRONYM':
         wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)
-    elif wordmap['pos'] in ['CONJUNCTION', 'INTERJECTION', 'ABBREVIATION']:
-        wordmap['analysis'] += "[POS=PARTICLE][SUBCAT=%(pos)s]" %(wordmap)
     else:
         wordmap['analysis'] += "[POS=%(pos)s]" %(wordmap)
 
     if wordmap['subcat']:
         wordmap['analysis'] += "[SUBCAT=%(subcat)s]" %(wordmap)
+    
+    if wordmap['particle']:
+        pclasses = wordmap['particle'].split('|')
+        for pclass in pclasses:
+            wordmap['analysis'] += "[SUBCAT=%s]" %(pclass)
 
     if wordmap['is_proper']:
         wordmap['analysis'] += "[SUBCAT=PROPER]"
@@ -54,10 +57,11 @@ def format_lexc_omor(wordmap, format):
 
 def format_lexc_apertium(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
+    wordmap['analysis'] = wordmap['analysis'].replace('#', '+')
     if wordmap['is_suffix']:
-        wordmap['analysis'] = "#" + wordmap['analysis']
+        wordmap['analysis'] = "+" + wordmap['analysis']
     elif wordmap['is_prefix']:
-        wordmap['analysis'] += "#"
+        wordmap['analysis'] += "+"
     if wordmap['pos'] == 'NOUN':
         if wordmap['is_proper']:
             wordmap['analysis'] += '%<np%>'
