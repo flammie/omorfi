@@ -6,5 +6,6 @@ def init_wordmap():
                "is_proper": None, "proper_noun_class": None, "style": None,
                "stub": None, "gradestem": None, "twolstem": None, 
                "grade_dir": None, "harmony": None, "is_suffix": None,
-               "is_prefix": None, "stem_vowel": None, "stem_diphthong": None}
+               "is_prefix": None, "stem_vowel": None, "stem_diphthong": None,
+               "sem": None, "particle": None}
     return wordmap
