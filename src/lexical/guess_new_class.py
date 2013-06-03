@@ -24,12 +24,8 @@ def guess_new_class(wordmap):
         wordmap = guess_new_acro(wordmap)
     elif wordmap['pos'] == 'NUMERAL':
         wordmap = guess_new_numeral(wordmap)
-    elif wordmap['pos'] == 'ADVERB':
-        wordmap = guess_new_adverb(wordmap)
-    elif wordmap['pos'] == 'ADPOSITION':
-        wordmap = guess_new_adposition(wordmap)
-    elif wordmap['pos'] in ['PARTICLE', 'INTERJECTION', 'CONJUNCTION', 'ABBREVIATION']:
-        wordmap['new_para'] = '#'
+    elif wordmap['pos'] == 'PARTICLE':
+        wordmap = guess_new_particle(wordmap)
     else:
         fail_guess_because(wordmap, ["POS"], ['!POS', 'PARTICLE', 'N', 'PROP', 'A', 'V', 'ACRO', 'NUM', 'INTJ', 'CONJ', 'ABBR'])
     if not wordmap['new_para']:
@@ -4566,6 +4562,44 @@ def guess_new_numeral(wordmap):
     wordmap['new_para'] = '#'
     return wordmap
 
+def guess_new_particle(wordmap):
+    if not wordmap['particle']:
+        wordmap['new_para'] = '#'
+    elif wordmap['particle'] == 'ADVERB':
+        wordmap = guess_new_adverb(wordmap)
+    elif wordmap['particle'] == 'ADPOSITION':
+        wordmap = guess_new_adposition(wordmap)
+    else:
+        if wordmap['possessive']:
+            if wordmap['harmony'] == 'front':
+                if wordmap['lemma'].endswith('e'):
+                    wordmap['new_para'] = 'PCLE_FRONT_POSS_EN_OPT'
+                elif wordmap['lemma'].endswith('ä'):
+                    wordmap['new_para'] = 'PCLE_FRONT_POSS_ÄN_OPT'
+                else:
+                    wordmap['new_para'] = 'PCLE_FRONT_POSS_OPT'
+            elif wordmap['harmony'] == 'back':
+                if wordmap['lemma'].endswith('a'):
+                    wordmap['new_para'] = 'PCLE_BACK_POSS_AN_OPT'
+                elif wordmap['lemma'].endswith('e'):
+                    wordmap['new_para'] = 'PCLE_BACK_POSS_EN_OPT'
+                else:
+                    wordmap['new_para'] = 'PCLE_BACK_POSS_OPT'
+            else:
+                fail_guess_because(wordmap, ["PCLE", "POSS"],
+                        ["front", "back"])
+        elif wordmap['clitics']:
+            if wordmap['harmony'] == 'front':
+                wordmap['new_para'] = 'PCLE_FRONT_CLIT_OPT'
+            elif wordmap['harmony'] == 'back':
+                wordmap['new_para'] = 'PCLE_BACK_CLIT_OPT'
+            else:
+                fail_guess_because(wordmap, ["PCLE", "CLIT"],
+                        ["front", "back"])
+        else:
+            wordmap['new_para'] = '#'
+    return wordmap
+
 def guess_new_adverb(wordmap):
     if wordmap['possessive']:
         if wordmap['harmony'] == 'front':
@@ -4619,7 +4653,7 @@ def guess_new_adposition(wordmap):
         elif wordmap['harmony'] == 'back':
             wordmap['new_para'] = 'ADP_BACK_CLIT_OPT'
         else:
-            fail_guess_because(wordmap, ["ADP", "POSS"], ["front", "back"])
+            fail_guess_because(wordmap, ["ADP", "CLIT"], ["front", "back"])
     else:
         wordmap['new_para'] = '#'
     return wordmap
