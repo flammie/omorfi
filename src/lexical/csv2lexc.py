@@ -31,7 +31,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_lexc
+from format_output import format_lexc, format_multichars_lexc, format_root_lexicon
 from parse_csv_data import parse_from_tsv
 
 # standard UI stuff
@@ -72,6 +72,9 @@ def main():
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True, type=str,
             metavar="ODIR", help="write roots to ODIR")
+    ap.add_argument("--root", "-R", type=argparse.FileType("w"),
+            metavar="ROOTFILE",
+            help="write multichars and roto lexicon to ROOTFILE")
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
             choices=["omor", "ktnkav", "apertium", "giellatekno"])
@@ -151,6 +154,8 @@ def main():
             print(format_lexc(wordmap, args.format), 
                   file=outfiles[wordmap['pos']])
             csv_line = csv_file.readline()
+    print(format_multichars_lexc(args.format), file=args.root)
+    print(format_root_lexicon(args.format), file=args.root)
     exit()
 
 
