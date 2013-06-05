@@ -58,7 +58,7 @@ def main():
             "to", args.output, file=args.output)
     print("# DO NOT MODIFY manually since it will be OVERWRITTEN anyways",
             file=args.output)
-    print("lemma", "new_para", "pos", "kotus_tn", "kotus_av", "plurale_tantum", 
+    print("lemma", "new_paras", "pos", "kotus_tn", "kotus_av", "plurale_tantum", 
         "stub", "twolstem", "possessive", "clitics", "is_proper",
         "proper_noun_class", "style", "stub", "gradestem", "twolstem",
         "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
@@ -112,7 +112,7 @@ def main():
         # ...
         wordmap = add_extras(wordmap)
         # print result
-        print(wordmap['lemma'], wordmap['new_para'], wordmap['pos'],
+        print(wordmap['lemma'], wordmap['new_paras'], wordmap['pos'],
                 wordmap['kotus_tn'], wordmap['kotus_av'],
                 wordmap['plurale_tantum'],
                 wordmap['possessive'], wordmap['clitics'], wordmap['is_proper'],

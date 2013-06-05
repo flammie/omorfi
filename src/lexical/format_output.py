@@ -53,7 +53,11 @@ def format_lexc_omor(wordmap, format):
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = '0' + wordmap['stub'] 
-    return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
+    retvals = []
+    for new_para in wordmap['new_paras']:
+        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
+                new_para)]
+    return "\n".join(retvals)
 
 def format_lexc_apertium(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
