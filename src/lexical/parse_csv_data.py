@@ -191,7 +191,7 @@ def add_extras(wordmap):
 
 def parse_from_tsv(wordmap, fields):
     wordmap['lemma'] = fields[0]
-    wordmap['new_para'] = fields[1]
+    wordmap['new_paras'] = fields[1]
     wordmap['pos'] = fields[2]
     wordmap['kotus_tn'] = fields[3]
     wordmap['kotus_av'] = fields[4]
@@ -216,7 +216,9 @@ def parse_from_tsv(wordmap, fields):
     for k,v in wordmap.items():
         if v == 'False':
             wordmap[k] = False
-        if v == 'None':
+        elif v == 'None':
             wordmap[k] = None
+        elif v.startswith('[') and v.endswith(']'):
+            wordmap[k] = v.lstrip("['").rstrip("']").split("','")
     return wordmap
 
