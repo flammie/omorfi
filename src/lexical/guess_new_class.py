@@ -4550,10 +4550,23 @@ def guess_new_acro(wordmap):
         wordmap['new_paras'] = ['ACRO_DOLLARI']
     elif wordmap['lemma'][-1] in ['£', '₤']:
         wordmap['new_paras'] = ['ACRO_PUNTA']
-    if wordmap['kotus_tn'] == 99:
+    if wordmap['kotus_tn'] == 1:
+        if wordmap['stem_vowel'] == 'o':
+            wordmap['new_paras'] += 'ACRO_TALO'
+        else:
+            fail_guess_because(wordmap, ['ACRO', '1'], ['o'])
+    elif wordmap['kotus_tn'] == 6:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += 'ACRO_DOLLARI'
+        else:
+            fail_guess_because(wordmap, ['ACRO', '6'], ['back'])
+    elif wordmap['kotus_tn'] == 99:
         fail_guess_because(wordmap, ['ACRO'], ['!99'],
                 'ACROnyms should be classified according to last inflecting '
                 'word')
+    else:
+        fail_guess_because(wordmap, ['ACRO'], ['1'],
+                'Not implemented acro classes yet')
     return wordmap
 
 def guess_new_pronoun(wordmap):
