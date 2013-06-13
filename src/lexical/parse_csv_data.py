@@ -219,6 +219,6 @@ def parse_from_tsv(wordmap, fields):
         elif v == 'None':
             wordmap[k] = None
         elif v.startswith('[') and v.endswith(']'):
-            wordmap[k] = v.lstrip("['").rstrip("']").split("','")
+            wordmap[k] = v.lstrip("['").rstrip("']").split("', '")
     return wordmap
 

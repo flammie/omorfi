@@ -4557,63 +4557,63 @@ def guess_new_acro(wordmap):
                 "Last character of lemma fail")
     if wordmap['kotus_tn'] == 1:
         if wordmap['stem_vowel'] == 'o':
-            wordmap['new_paras'] += 'ACRO_TALO'
+            wordmap['new_paras'] += ['ACRO_TALO']
         else:
             fail_guess_because(wordmap, ['ACRO', '1'], ['o'])
     elif wordmap['kotus_tn'] == 3:
         if wordmap['harmony'] == 'front':
-            wordmap['new_paras'] += 'ACRO_GRAY'
+            wordmap['new_paras'] += ['ACRO_GRAY']
         else:
             fail_guess_because(wordmap, ['ACRO', '3'], ['f'])
     elif wordmap['kotus_tn'] == 5:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_OHMI'
+            wordmap['new_paras'] += ['ACRO_OHMI']
         elif wordmap['harmony'] == 'front':
-            wordmap['new_paras'] += 'ACRO_METRI'
+            wordmap['new_paras'] += ['ACRO_METRI']
         else:
             fail_guess_because(wordmap, ['ACRO', '6'], ['harmony?'])
     elif wordmap['kotus_tn'] == 6:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_DOLLARI'
+            wordmap['new_paras'] += ['ACRO_DOLLARI']
         elif wordmap['harmony'] == 'front':
-            wordmap['new_paras'] += 'ACRO_SIEVERT'
+            wordmap['new_paras'] += ['ACRO_SIEVERT']
         else:
             fail_guess_because(wordmap, ['ACRO', '6'], ['harmony?'])
     elif wordmap['kotus_tn'] == 8:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_JOULE'
+            wordmap['new_paras'] += ['ACRO_JOULE']
         else:
             fail_guess_because(wordmap, ['ACRO', '8'], ['b'])
     elif wordmap['kotus_tn'] == 9:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_GRAMMA'
+            wordmap['new_paras'] += ['ACRO_GRAMMA']
         else:
             fail_guess_because(wordmap, ['ACRO', '9'], ['b'])
     elif wordmap['kotus_tn'] == 10:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_PUNTA'
+            wordmap['new_paras'] += ['ACRO_PUNTA']
         else:
             fail_guess_because(wordmap, ['ACRO', '10'], ['b'])
     elif wordmap['kotus_tn'] == 12:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_KANDELA'
+            wordmap['new_paras'] += ['ACRO_KANDELA']
         else:
             fail_guess_because(wordmap, ['ACRO', '12'], ['b'])
     elif wordmap['kotus_tn'] == 15:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_OK'
+            wordmap['new_paras'] += ['ACRO_OK']
         else:
             fail_guess_because(wordmap, ['ACRO', '15'], ['b'])
     elif wordmap['kotus_tn'] == 39:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_CELSIUS'
+            wordmap['new_paras'] += ['ACRO_CELSIUS']
         elif wordmap['harmony'] == 'front':
-            wordmap['new_paras'] += 'ACRO_YHDISTYS'
+            wordmap['new_paras'] += ['ACRO_YHDISTYS']
         else:
             fail_guess_because(wordmap, ['ACRO', '39'], ['harmony?'])
     elif wordmap['kotus_tn'] == 48:
         if wordmap['harmony'] == 'back':
-            wordmap['new_paras'] += 'ACRO_TUOTE'
+            wordmap['new_paras'] += ['ACRO_TUOTE']
         else:
             fail_guess_because(wordmap, ['ACRO', '48'], ['b'])
     elif wordmap['kotus_tn'] == 99:
