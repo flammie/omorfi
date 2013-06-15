@@ -1,52 +1,39 @@
 ## Process this file with automake to produce Makefile.in
 
 if WANT_FTB3
-MAYBE_FTB3_HACKS = roots/ftb3-hacks.lexc
-COMPOUNDING = compounding/compounding-ftb3.lexc
-else
-COMPOUNDING = compounding/compounding.lexc
+MAYBE_FTB3_HACKS=hacks/ftb3-hacks.lexc \
+				 compounding/compounding-ftb3.lexc
 endif
 
 # lexc data
 LEXC_MAIN=definitions.lexc
 MORPHOLOGY_SRCS=\
-				compounding/compounding.lexc \
-				stemparts/acronyms.lexc \
-				stemparts/adjectives.lexc \
-				stemparts/digits.lexc \
-				stemparts/nouns.lexc \
-				stemparts/numerals.lexc \
-				stemparts/verbs.lexc \
+				stems/acronyms.lexc \
+				stems/adjectives.lexc \
+				stems/nouns.lexc \
+				stems/numerals.lexc \
+				stems/pronouns.lexc \
+				stems/verbs.lexc \
 				inflection/acronyms.lexc \
 				inflection/adjectives.lexc \
-				inflection/adpositions.lexc \
-				inflection/adverbs.lexc \
-				inflection/digits.lexc \
 				inflection/nouns.lexc \
 				inflection/numerals.lexc \
-				inflection/prefixes.lexc \
+				inflection/particles.lexc \
 				inflection/pronouns.lexc \
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
 			$(MAYBE_FTB3_HACKS) \
-			roots/abbreviations.lexc \
 			roots/acronyms.lexc \
 			roots/adjectives.lexc \
-			roots/adpositions.lexc \
-			roots/adverbs.lexc \
-			roots/conjunctions.lexc \
-			roots/interjections.lexc \
 			roots/nouns.lexc \
+			roots/numerals.lexc \
 			roots/particles.lexc \
-			roots/prefixes.lexc \
-			roots/suffixes.lexc \
+			roots/pronouns.lexc \
 			roots/verbs.lexc
 NOTGENERATED_SRCS=\
-			roots/digits.lexc \
-			roots/numerals.lexc \
-			roots/pronouns.lexc \
-			roots/punctuation.lexc \
-			roots/51.lexc
+			hacks/digits.lexc \
+			hacks/punctuation.lexc \
+			hacks/51.lexc
 
 LEXC_SRCS=$(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
 EXTRA_DIST=$(LEXC_MAIN) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)

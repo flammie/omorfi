@@ -11,7 +11,7 @@ def guess_grade_dir(wordmap):
         wordmap['grade_dir'] = 'strengthen'
     elif tn == 99 or tn == 101:
         wordmap['grade_dir'] = False
-    elif tn in [1007, 1009, 1010, 1024, 1026, 1067]:
+    elif tn in [1007, 1009, 1010, 1024, 1026, 1067, 1099]:
         wordmap['grade_dir'] = 'weaken'
     else:
         print("Unguessable gradation direction in", wordmap, file=stderr)
@@ -79,12 +79,14 @@ def guess_harmony(wordmap):
             wordmap['harmony'] = 'front'
         elif wordmap['lemma'].endswith('a'):
             wordmap['harmony'] = 'back'
+        elif wordmap['lemma'] == 'ei':
+            wordmap['harmony'] = 'front'
         else:
             print("Unguessable harmony in verb; must end in {a, ä}, in", 
                     wordmap, file=stderr)
     else:
         lastbound = -1
-        for bound in ['#', ' ', '-']:
+        for bound in ['|', '_', '#', ' ', '-']:
             b = wordmap['stub'].rfind(bound)
             if b > lastbound:
                 lastbound = b

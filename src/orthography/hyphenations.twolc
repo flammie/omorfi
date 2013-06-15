@@ -4,10 +4,10 @@ a e i o u y ä ö
 b c d f g h j k l m n p q r s t v w x z
 A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 
-%{%-%}:%- %{%#%}:0 %{%#%#%}:0
+%-%0:0 %-%0:%-
 %-
-%{%_%}:0
 
+%>:0
 ;
 
 Sets

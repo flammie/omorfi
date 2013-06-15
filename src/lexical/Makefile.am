@@ -4,6 +4,21 @@ XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 LEXEMES=lexemes/fiwn.csv lexemes/joukahainen.csv lexemes/nss.csv \
 		lexemes/omorfi.csv lexemes/visk.csv lexemes/chemistry.csv \
 		lexemes/propers-unihu-proj.csv lexemes/fiwikt.csv
+STEMPARTS=continuations/acronym-stems.tsv \
+		  continuations/adjective-stems.tsv \
+		  continuations/digit-stems.tsv \
+		  continuations/noun-stems.tsv \
+		  continuations/numeral-stems.tsv \
+		  continuations/pronoun-stems.tsv \
+		  continuations/verb-stems.tsv
+INFLECTIONS=continuations/acro-inflections.tsv \
+			continuations/adjective-inflections.tsv \
+			continuations/digit-inflections.tsv \
+			continuations/noun-inflections.tsv \
+			continuations/numeral-inflections.tsv \
+			continuations/particle-inflections.tsv \
+			continuations/pronoun-inflections.tsv \
+			continuations/verb-inflections.tsv
 JOINS=attributes/boundaries.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
@@ -20,6 +35,7 @@ FINNISC=\
 		guess_feats.py guess_new_class.py wordmap.py \
 		omor_strings_io.py
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC)
+TESTS=format_output.py
 
 noinst_DATA=omor.timestamp
 
@@ -50,16 +66,31 @@ joint.tsv: kotus-style.csv $(JOINS)
 master.tsv: joint.tsv
 	$(PYTHON) $(srcdir)/csv_expand.py -i $< -o $@
 
-omor.timestamp: master.tsv
+stemparts.tsv: $(STEMPARTS)
+	cat $^ | grep -v '^#' | sort > $@
+
+inflections.tsv: $(INFLECTIONS)
+	cat $^ | grep -v '^#' | sort> $@
+
+omor.timestamp: master.tsv stemparts.tsv inflections.tsv
 	if test ! -d $(top_builddir)/src/morphology/roots ; then \
 		mkdir -p $(top_builddir)/src/morphology/roots ; \
 	fi
-	$(PYTHON) $(srcdir)/csv2lexc.py -v -i $< \
-		-o $(top_builddir)/src/morphology/roots \
+	if test ! -d $(top_builddir)/src/morphology/stems ; then \
+		mkdir -p $(top_builddir)/src/morphology/stems ; \
+	fi
+	if test ! -d $(top_builddir)/src/morphology/inflection ; then \
+		mkdir -p $(top_builddir)/src/morphology/inflection ; \
+	fi
+	$(PYTHON) $(srcdir)/csv2lexc.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv \
+		-s $(top_builddir)/src/morphology/roots \
+		-S $(top_builddir)/src/morphology/stems \
+		-X $(top_builddir)/src/morphology/inflection \
 		-R $(top_builddir)/src/morphology/definitions.lexc \
-		-f=$(TAG_FORMAT) -x NUMERAL -x PRONOUN
+		-f=$(TAG_FORMAT)
 	touch $@
 
 clean-local:
-	-rm -f omor.timestamp master.tsv joint.tsv kotus-style.csv
+	-rm -f omor.timestamp master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
 

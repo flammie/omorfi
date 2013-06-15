@@ -77,6 +77,68 @@ def stub_all(wordmap):
             wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['olla'])
         elif tn == 1099:
             wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ei'])
+        elif wordmap['kotus_tn'] == 101:
+            if wordmap['lemma'] in ['minä', 'sinä']:
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['nä'])
+            elif wordmap['lemma'] == 'hän':
+                pass
+            elif wordmap['lemma'] in ['me', 'te', 'he']:
+                pass
+            elif wordmap['lemma'] == 'tämä':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['mä'])
+            elif wordmap['lemma'] == 'tuo':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['uo'])
+            elif wordmap['lemma'] == 'se':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+            elif wordmap['lemma'] == 'nämä':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['mä'])
+            elif wordmap['lemma'] == 'nuo':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['uo'])
+            elif wordmap['lemma'] == 'ne':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+            elif wordmap['lemma'] == 'joku':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ku'])
+            elif wordmap['lemma'] == 'joka':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ka'])
+            elif wordmap['lemma'] == 'jokin':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kin'])
+            elif wordmap['lemma'] == 'kuka':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['uka'])
+            elif wordmap['lemma'] == 'kukaan':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ukaan'])
+            elif wordmap['lemma'].endswith('kukin'):
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ukin'])
+            elif wordmap['lemma'] == 'mikin':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kin'])
+            elif wordmap['lemma'] == 'mikä':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kä'])
+            elif wordmap['lemma'] == 'mikään':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kään'])
+            elif wordmap['lemma'] == 'missä':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ssä'])
+            elif wordmap['lemma'] == 'missäkään':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ssäkään'])
+            elif wordmap['lemma'] == 'missään':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ssään'])
+            elif wordmap['lemma'] == 'muuan':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['n'])
+            elif wordmap['lemma'] in ['mä', 'sä']:
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ä'])
+            elif wordmap['lemma'] in ['mie', 'sie']:
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+            elif wordmap['lemma'] == 'toi':
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['i'])
+            elif wordmap['lemma'].endswith('ainoa'):
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['a'])
+            elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
+                    'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
+                    'koko']:
+                pass
+        elif wordmap['kotus_tn'] == 99:
+            pass
+        else:
+            fail_guess_because(wordmap, ['!av'], ['1-71', 1007, 1010,1009,
+                1024, 1026, 1067, 1099])
     elif wordmap['grade_dir'] == 'weaken':
         if wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:
             lastk = wordmap['stub'].rfind('k')
@@ -96,6 +158,8 @@ def stub_all(wordmap):
             if lastt == -1:
                 print("Unguessable stub; gradating T not found in", wordmap,
                         file=stderr)
+        else:
+            fail_guess_because(wordmap, ['av+'], ['A-T'])
     elif wordmap['grade_dir'] == 'strengthen':
         if wordmap['kotus_av'] == 'A': 
             lastk = wordmap['stub'].rfind('k')
@@ -233,7 +297,7 @@ def stub_all(wordmap):
                 print("Unguessable stub; gradating -auer not found in", wordmap,
                         file=stderr)
         else:
-            print("Unguessable strengthen in", wordmap, file=stderr)
+            fail_guess_because(wordmap, ['av-'], ['A-T'])
         return wordmap
     return wordmap
 
