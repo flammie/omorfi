@@ -4874,12 +4874,7 @@ def guess_new_pronoun(wordmap):
 
 def guess_new_numeral(wordmap):
     tn = wordmap['kotus_tn']
-    if wordmap['kotus_tn'] == 8:
-        if wordmap['lemma'].endswith('kolme'):
-            wordmap['new_paras'] = ['NUM_KOLME']
-        else:
-            fail_guess_because(wordmap, ['NUM', 8], ['kolme'])
-    elif tn == 6:
+    if tn == 6:
         if wordmap['lemma'].endswith('jardi'):
             wordmap['new_paras'] = ['NUM_MILJARDI']
         else:
@@ -4951,9 +4946,14 @@ def guess_new_numeral(wordmap):
                     ['tuhat'])
     elif wordmap['kotus_tn'] == 99:
         wordmap['new_paras'] = ['NUM_KYMMENTÄ']
+    elif wordmap['kotus_tn'] == 1008:
+        if wordmap['lemma'].endswith('kolme'):
+            wordmap['new_paras'] = ['NUM_KOLME']
+        else:
+            fail_guess_because(wordmap, ['NUM', 1008], ['kolme'])
     else:
-        fail_guess_because(wordmap, ['NUM'], [3, 6, 9, 10, 27, 31, 32, 45, 46],
-                "Not a NUM class?")
+        fail_guess_because(wordmap, ['NUM'], [3, 6, 9, 10, 27, 31, 32, 45, 46, 
+            1008], "Not a NUM class?")
         wordmap['new_paras'] = ['#']
     return wordmap
 
