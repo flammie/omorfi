@@ -4823,8 +4823,6 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_NUO']
         elif wordmap['lemma'] == 'ne':
             wordmap['new_paras'] = ['PRON_NE']
-        elif wordmap['lemma'] == 'joku':
-            wordmap['new_paras'] = ['PRON_HÄN']
         elif wordmap['lemma'] == 'joka':
             wordmap['new_paras'] = ['PRON_JOKA']
         elif wordmap['lemma'] == 'jokin':
