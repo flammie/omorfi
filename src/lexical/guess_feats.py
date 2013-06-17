@@ -83,7 +83,7 @@ def guess_harmony(wordmap):
             wordmap['harmony'] = 'front'
         elif wordmap['lemma'].endswith('a'):
             wordmap['harmony'] = 'back'
-        elif wordmap['lemma'] == 'ei':
+        elif wordmap['lemma'].endswith('ei') and wordmap['kotus_tn'] == 1099:
             wordmap['harmony'] = 'front'
         else:
             print("Unguessable harmony in verb; must end in {a, ä}, in", 
