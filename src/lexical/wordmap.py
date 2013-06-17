@@ -7,5 +7,5 @@ def init_wordmap():
                "stub": None, "gradestem": None, "twolstem": None, 
                "grade_dir": None, "harmony": None, "is_suffix": None,
                "is_prefix": None, "stem_vowel": None, "stem_diphthong": None,
-               "sem": None, "particle": None}
+               "sem": None, "particle": None, "pronunciation": None}
     return wordmap

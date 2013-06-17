@@ -31,7 +31,7 @@ from gradation import gradation_make_morphophonemes
 from parse_csv_data import parse_defaults_from_csv, parse_extras_from_csv, parse_conts, finetune_conts, add_extras
 from plurale_tantum import plurale_tantum_get_singular_stem
 from stub import stub_all
-from guess_feats import guess_grade_dir, guess_harmony
+from guess_feats import guess_grade_dir, guess_harmony, guess_stem_features_ktn, guess_pronunciation
 from guess_new_class import guess_new_class
 
 # standard UI stuff
@@ -62,7 +62,7 @@ def main():
         "stub", "twolstem", "possessive", "clitics", "is_proper",
         "proper_noun_class", "style", "stub", "gradestem", "twolstem",
         "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
-        "stem_diphthong", "subcat", "sem", "particle", "#", "<- HEADERS", sep="\t", file=args.output)
+        "stem_diphthong", "subcat", "sem", "particle", "pronunciation", "#", "<- HEADERS", sep="\t", file=args.output)
     linecount = 0
     for csv_line in args.input:
         linecount += 1
@@ -93,6 +93,8 @@ def main():
         wordmap = parse_defaults_from_csv(wordmap, csv_parts)
         wordmap = parse_extras_from_csv(wordmap, csv_parts)
         # Guess works in order
+        wordmap = guess_stem_features_ktn(wordmap)
+        wordmap = guess_pronunciation(wordmap)
         wordmap = guess_grade_dir(wordmap)
         wordmap = guess_harmony(wordmap)
         wordmap = guess_new_class(wordmap)

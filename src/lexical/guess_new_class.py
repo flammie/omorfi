@@ -1729,8 +1729,6 @@ def guess_new_noun(wordmap):
             else:
                 fail_guess_because(wordmap, ['N', 49],
                     [False, 'D-H', 'J', 'T'])
-        elif tn == 99:
-            wordmap['new_paras'] = ['#']
         elif tn == 1007:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('veli') or wordmap['lemma'].endswith('Veli'):
@@ -1808,14 +1806,19 @@ def guess_new_noun(wordmap):
             else:
                 fail_guess_because(wordmap, ['N', 26, 'VERI'],
                         [False], 'must be 0')
+        elif tn == 99 and not wordmap['is_proper']:
+            fail_guess_because(wordmap, ['N', 99], [99], 
+                    "Illegal class for N, 99 can only apply to P (and PropN)")
+            wordmap['new_paras'] = ['#']
+        elif tn == 99 and wordmap['is_proper']:
+            wordmap['new_paras'] = ['#']
         else:
             fail_guess_because(wordmap, ['N'],
                 ['1-49', '99', '1009-1010'])
     else:
         if not wordmap['lemma'].endswith('t'):
-            #fail_guess_because(wordmap, ['N', 'PLT'],
-            #        ['t'], 'not a plt lemma')
-            pass
+            fail_guess_because(wordmap, ['N', 'PLT'],
+                    ['-t'], 'not a plt lemma')
         elif tn == 1:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('ot'):
@@ -3437,6 +3440,8 @@ def guess_new_adjective(wordmap):
             fail_guess_because(wordmap, ['A', 48],
                     [False, 'F', 'I'])
     elif tn == 99:
+        fail_guess_because(wordmap, ['A', 99], [99], 
+                "Illegal class for A, 99 can only apply to P")
         wordmap['new_paras'] = ['#']
     elif tn == 1010:
         if not wordmap['kotus_av']:
@@ -4479,6 +4484,8 @@ def guess_new_verb(wordmap):
             fail_guess_because(wordmap, ['V', 78],
                 [False, 'A'])
     elif tn == 99:
+        fail_guess_because(wordmap, ['V', 99], [99], 
+                    "Illegal class for V, 99 can only apply to P")
         wordmap['new_paras'] = ['#']
     elif tn == 1067:
         if not wordmap['kotus_av']:
@@ -4559,12 +4566,24 @@ def guess_new_acro(wordmap):
         if wordmap['stem_vowel'] == 'o':
             wordmap['new_paras'] += ['ACRO_TALO']
         else:
-            fail_guess_because(wordmap, ['ACRO', '1'], ['o'])
+            wordmap['new_paras'] += ['ACRO_TALO']
+##            fail_guess_because(wordmap, ['ACRO', '1'], ['o'])
+    elif wordmap['kotus_tn'] == 2:
+        if wordmap['stem_vowel'] == 'o':
+            wordmap['new_paras'] += ['ACRO_OPISTO']
+        if wordmap['stem_vowel'] == 'ö':
+            wordmap['new_paras'] += ['ACRO_JÄRJESTÖ']
+        elif wordmap['stem_vowel'] == 'y':
+            wordmap['new_paras'] += ['ACRO_KÄSITTELY']
+        else:
+            wordmap['new_paras'] += ['ACRO_JÄRJESTÖ']
+##            fail_guess_because(wordmap, ['ACRO', '1'], ['o'])
     elif wordmap['kotus_tn'] == 3:
         if wordmap['harmony'] == 'front':
             wordmap['new_paras'] += ['ACRO_GRAY']
         else:
-            fail_guess_because(wordmap, ['ACRO', '3'], ['f'])
+            wordmap['new_paras'] += ['ACRO_GRAY']
+##            fail_guess_because(wordmap, ['ACRO', '3'], ['f'])
     elif wordmap['kotus_tn'] == 5:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_OHMI']
@@ -4579,31 +4598,61 @@ def guess_new_acro(wordmap):
             wordmap['new_paras'] += ['ACRO_SIEVERT']
         else:
             fail_guess_because(wordmap, ['ACRO', '6'], ['harmony?'])
+    elif wordmap['kotus_tn'] == 7:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_LEHTI']
+        elif wordmap['harmony'] == 'front':
+            wordmap['new_paras'] += ['ACRO_LEHTI']
+        else:
+            fail_guess_because(wordmap, ['ACRO', '6'], ['harmony?'])
     elif wordmap['kotus_tn'] == 8:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_JOULE']
         else:
-            fail_guess_because(wordmap, ['ACRO', '8'], ['b'])
+            wordmap['new_paras'] += ['ACRO_JOULE']
+##            fail_guess_because(wordmap, ['ACRO', '8'], ['b'])
     elif wordmap['kotus_tn'] == 9:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_GRAMMA']
         else:
-            fail_guess_because(wordmap, ['ACRO', '9'], ['b'])
+            wordmap['new_paras'] += ['ACRO_GRAMMA']
+##            fail_guess_because(wordmap, ['ACRO', '9'], ['b'])
     elif wordmap['kotus_tn'] == 10:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_PUNTA']
         else:
-            fail_guess_because(wordmap, ['ACRO', '10'], ['b'])
+            wordmap['new_paras'] += ['ACRO_PUNTA']
+##            fail_guess_because(wordmap, ['ACRO', '10'], ['b'])
     elif wordmap['kotus_tn'] == 12:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_KANDELA']
         else:
-            fail_guess_because(wordmap, ['ACRO', '12'], ['b'])
-    elif wordmap['kotus_tn'] == 15:
+            wordmap['new_paras'] += ['ACRO_KANDELA']
+##            fail_guess_because(wordmap, ['ACRO', '12'], ['b'])
+    elif wordmap['kotus_tn'] == 13:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_SAIRAALA']
+        else:
+            wordmap['new_paras'] += ['ACRO_SAIRAALA']
+##            fail_guess_because(wordmap, ['ACRO', '12'], ['b'])
+    elif wordmap['kotus_tn'] == 14:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_LUSIKKA']
+        else:
+            wordmap['new_paras'] += ['ACRO_LUSIKKA']
+##            fail_guess_because(wordmap, ['ACRO', '12'], ['b'])
+    elif wordmap['kotus_tn'] == 18:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_OK']
         else:
-            fail_guess_because(wordmap, ['ACRO', '15'], ['b'])
+            wordmap['new_paras'] += ['ACRO_OK']
+##            fail_guess_because(wordmap, ['ACRO', '15'], ['b'])
+    elif wordmap['kotus_tn'] == 27:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_VUOSI']
+        else:
+            wordmap['new_paras'] += ['ACRO_VUOSI']
+##            fail_guess_because(wordmap, ['ACRO', '12'], ['b'])
     elif wordmap['kotus_tn'] == 39:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_CELSIUS']
@@ -4611,16 +4660,40 @@ def guess_new_acro(wordmap):
             wordmap['new_paras'] += ['ACRO_YHDISTYS']
         else:
             fail_guess_because(wordmap, ['ACRO', '39'], ['harmony?'])
+    elif wordmap['kotus_tn'] == 40:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_OIKEUS']
+        elif wordmap['harmony'] == 'front':
+            wordmap['new_paras'] += ['ACRO_OIKEYS']
+        else:
+            fail_guess_because(wordmap, ['ACRO', '40'], ['harmony?'])
+    elif wordmap['kotus_tn'] == 41:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_OPPILAS']
+        elif wordmap['harmony'] == 'front':
+            wordmap['new_paras'] += ['ACRO_OPPILAS']
+        else:
+            fail_guess_because(wordmap, ['ACRO', '40'], ['harmony?'])
+    elif wordmap['kotus_tn'] == 45:
+        if wordmap['harmony'] == 'back':
+            wordmap['new_paras'] += ['ACRO_KOLMAS']
+        elif wordmap['harmony'] == 'front':
+            wordmap['new_paras'] += ['ACRO_NELJÄS']
+        else:
+            fail_guess_because(wordmap, ['ACRO', '45'], ['harmony?'])
     elif wordmap['kotus_tn'] == 48:
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_TUOTE']
         else:
-            fail_guess_because(wordmap, ['ACRO', '48'], ['b'])
-    elif wordmap['kotus_tn'] == 99:
+            wordmap['new_paras'] += ['ACRO_TUOTE']
+##            fail_guess_because(wordmap, ['ACRO', '48'], ['b'])
+    elif wordmap['kotus_tn'] == 0:
+        # suppressing word inflection with 0
         pass
-#        fail_guess_because(wordmap, ['ACRO'], ['!99'],
-#                'ACROnyms should be classified according to last inflecting '
-#                'word')
+    elif wordmap['kotus_tn'] == 99:
+        fail_guess_because(wordmap, ['ACRO'], ['!99'],
+                'ACROnyms should be classified according to last inflecting '
+                'word. If inflection against word is unthinkabe, use 0')
     else:
         fail_guess_because(wordmap, ['ACRO'], ['1', '3', '5', '6', '8-10',
             '12', '15', '39', '49', '99'],
@@ -4773,7 +4846,7 @@ def guess_new_numeral(wordmap):
         else:
             fail_guess_because(wordmap, ['NUM', 8], ['kolme'])
     elif tn == 6:
-        if not wordmap['lemma'].endswith('jardi'):
+        if wordmap['lemma'].endswith('jardi'):
             wordmap['new_paras'] = ['NUM_MILJARDI']
         else:
             fail_guess_because(wordmap, ['NUM', 6],

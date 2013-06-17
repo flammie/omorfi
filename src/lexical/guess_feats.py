@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from sys import stderr
+from omor_strings_io import fail_guess_because
 
 def guess_grade_dir(wordmap):
     '''Record gradation direction based on kotus class or stem syllable.'''
@@ -9,12 +10,13 @@ def guess_grade_dir(wordmap):
         wordmap['grade_dir'] = 'weaken'
     elif tn in range(32, 50) or tn in range(62, 76):
         wordmap['grade_dir'] = 'strengthen'
-    elif tn == 99 or tn == 101:
+    elif tn in [0, 99, 101]:
         wordmap['grade_dir'] = False
     elif tn in [1007, 1009, 1010, 1024, 1026, 1067, 1099]:
         wordmap['grade_dir'] = 'weaken'
     else:
-        print("Unguessable gradation direction in", wordmap, file=stderr)
+        fail_guess_because(wordmap, [], ["0-78", 99, 101, 1007, 1009, 1010, 
+            1024, 1026, 1067, 1099])
     return wordmap
 
 def guess_stem_features_ktn(wordmap):
@@ -73,6 +75,8 @@ def guess_harmony(wordmap):
     '''Guess word's harmony based on lemma, using trivial last harmony vowel
     or front algorithm.
     '''
+    if wordmap['harmony']:
+        return wordmap
     tn = int(wordmap['kotus_tn'])
     if tn in range(52, 79) or wordmap['pos'] == 'VERB':
         if wordmap['lemma'].endswith('ä'):
@@ -87,17 +91,17 @@ def guess_harmony(wordmap):
     else:
         lastbound = -1
         for bound in ['|', '_', '#', ' ', '-']:
-            b = wordmap['stub'].rfind(bound)
+            b = wordmap['pronunciation'].rfind(bound)
             if b > lastbound:
                 lastbound = b
         lastback = lastbound
         for back in ['a', 'o', 'u', 'A', 'O', 'U', 'á', 'à', 'ą', 'ô', 'û']:
-            b = wordmap['stub'].rfind(back)
+            b = wordmap['pronunciation'].rfind(back)
             if b > lastback:
                 lastback = b
         lastfront = lastbound
         for front in ['ä', 'ö', 'y', 'Ä', 'Ö', 'Y', 'ü']:
-            f = wordmap['stub'].rfind(front)
+            f = wordmap['pronunciation'].rfind(front)
             if f > lastfront:
                 lastfront = f
         if lastfront == lastbound and lastback == lastbound:
@@ -106,4 +110,14 @@ def guess_harmony(wordmap):
             wordmap['harmony'] = 'front'
         elif lastback > lastfront:
             wordmap['harmony'] = 'back'
+    return wordmap
+
+def guess_pronunciation(wordmap):
+    if wordmap['pronunciation']:
+        return wordmap
+    wordmap['pronunciation'] = wordmap['stub']
+    if wordmap['stem_vowel']:
+        wordmap['pronunciation'] += wordmap['stem_vowel']
+    elif wordmap['stem_diphthong']:
+        wordmap['pronunciation'] += wordmap['stem_diphthong']
     return wordmap

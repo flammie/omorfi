@@ -17,7 +17,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
         print("Confusing paradigm on", csv_parts, "Retarding to 99", file=stderr)
         wordmap['kotus_tn'] = 99
     wordmap['analysis_tn'] = int(wordmap['kotus_tn'])
-    if wordmap['kotus_tn'] < 1 or (wordmap['kotus_tn'] > 78 and wordmap['kotus_tn'] < 99):
+    if wordmap['kotus_tn'] < 0 or (wordmap['kotus_tn'] > 78 and wordmap['kotus_tn'] < 99):
         print("Bad paradigm", csv_parts[1], "in", csv_parts, file=stderr)
     # third field is KOTUS gradation class
     grad = csv_parts[2].strip('"')
@@ -83,6 +83,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['subcat'] = False
     wordmap['sem'] = []
     wordmap['particle'] = False
+    wordmap['pronunciation'] = False
     return wordmap
 
 
@@ -112,6 +113,8 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['sem'].append(extra_fields[1].upper())
             elif extra_fields[0] == 'particle':
                 wordmap['particle'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'pronunciation':
+                wordmap['pronunciation'] = extra_fields[1]
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     

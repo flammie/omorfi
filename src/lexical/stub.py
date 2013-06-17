@@ -134,10 +134,10 @@ def stub_all(wordmap):
                     'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:
                 pass
-        elif wordmap['kotus_tn'] == 99:
+        elif wordmap['kotus_tn'] in [0, 99]:
             pass
         else:
-            fail_guess_because(wordmap, ['!av'], ['1-71', 1007, 1010,1009,
+            fail_guess_because(wordmap, ['!av'], ['0-71', 1007, 1010,1009,
                 1024, 1026, 1067, 1099])
     elif wordmap['grade_dir'] == 'weaken':
         if wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:
