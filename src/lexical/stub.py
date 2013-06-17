@@ -8,6 +8,8 @@ def stub_all(wordmap):
     '''Generate unmodifiable stub for inflectional processes.
     this cuts every morphologically varying character.
     '''
+    if wordmap['pos'] == 'ACRONYM':
+        return wordmap
     tn = int(wordmap['kotus_tn'])
     if not wordmap['kotus_av'] or tn in [28, 60, 1007, 1009, 1010]:
         if tn in range(1, 5) or tn in [8, 21, 22, 32, 48]:
@@ -68,6 +70,8 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 1007:
             wordmap['stub'] = wordmap['stub'][:-1]
+        elif tn == 1008:
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
         elif tn in [1010, 1009]:
             wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
                     ['ika', 'tkä'])
