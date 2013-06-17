@@ -12,7 +12,7 @@ def stub_all(wordmap):
         return wordmap
     tn = int(wordmap['kotus_tn'])
     if not wordmap['kotus_av'] or tn in [28, 60, 1007, 1009, 1010]:
-        if tn in range(1, 5) or tn in [8, 21, 22, 32, 48]:
+        if tn in range(1, 5) or tn in [8, 21, 22, 48]:
             wordmap['stub'] = wordmap['stub']
         elif tn in [5, 6]:
             if wordmap['stub'].endswith('i'):
@@ -20,6 +20,13 @@ def stub_all(wordmap):
                         ['i'])
             else:
                 wordmap['stub'] = wordmap['stub']
+        elif tn == 10:
+            if wordmap['stub'].endswith('n'):
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                        ['an', 'än'])
+            else:
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                        ['a', 'ä'])
         elif tn in [7, 16] or tn in range(33, 38) or tn in range(39, 47):
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in range(9, 16):
@@ -37,6 +44,12 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn in [29, 30, 31, 38]:
             wordmap['stub'] = wordmap['stub'][:-3]
+        elif tn == 32:
+            if wordmap['stub'].endswith('kymmenen'):
+                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                        ['en'])
+            else:
+                pass
         elif tn == 47:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn == 49:
