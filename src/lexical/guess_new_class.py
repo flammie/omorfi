@@ -4771,6 +4771,8 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_KUMPIKIN']
         elif wordmap['lemma'] in ['molempi', 'molemmat']:
             wordmap['new_paras'] = ['PRON_MOLEMMAT']
+        elif wordmap['lemma'] in ['useampi', 'useimmat']:
+            wordmap['new_paras'] = ['PRON_USEAMPI']
         else:
             fail_guess_because(wordmap, ['PRON', 16], ['jompi', 'kumpi', '...'])
     elif wordmap['kotus_tn'] == 18:
@@ -4783,6 +4785,11 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_MONI']
         else:
             fail_guess_because(wordmap, ['PRON', 23], ['moni'])
+    elif wordmap['kotus_tn'] == 36:
+        if wordmap['lemma'] in ['usein', 'useimmat']:
+            wordmap['new_paras'] = ['PRON_USEIMMAT']
+        else:
+            fail_guess_because(wordmap, ['PRON', 36], ['usein', 'useimmat'])
     elif wordmap['kotus_tn'] == 38:
         if wordmap['lemma'].endswith('lainen'):
             wordmap['new_paras'] = ['PRON_LAINEN']
