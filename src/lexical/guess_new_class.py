@@ -4969,6 +4969,8 @@ def guess_new_particle(wordmap):
                 wordmap['new_paras'] = ['PCLE_FRONT_POSS_EN_OPT']
             elif wordmap['lemma'].endswith('ä'):
                 wordmap['new_paras'] = ['PCLE_FRONT_POSS_ÄN_OPT']
+            elif wordmap['lemma'].endswith('n'):
+                wordmap['new_paras'] = ['PCLE_FRONT_N_POSS_OPT']
             else:
                 wordmap['new_paras'] = ['PCLE_FRONT_POSS_OPT']
         elif wordmap['harmony'] == 'back':
@@ -4976,6 +4978,8 @@ def guess_new_particle(wordmap):
                 wordmap['new_paras'] = ['PCLE_BACK_POSS_AN_OPT']
             elif wordmap['lemma'].endswith('e'):
                 wordmap['new_paras'] = ['PCLE_BACK_POSS_EN_OPT']
+            elif wordmap['lemma'].endswith('n'):
+                wordmap['new_paras'] = ['PCLE_BACK_N_POSS_OPT']
             else:
                 wordmap['new_paras'] = ['PCLE_BACK_POSS_OPT']
         else:

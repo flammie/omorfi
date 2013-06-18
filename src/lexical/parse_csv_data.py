@@ -101,6 +101,8 @@ def parse_extras_from_csv(wordmap, csv_parts):
                     print("Warning: Ignoring attribute", csv_extra, "for", wordmap['lemma'], file=stderr)
             elif extra_fields[0] == 'poss':
                 wordmap['possessive'] = extra_fields[1]
+            elif extra_fields[0] == 'clit':
+                wordmap['possessive'] = extra_fields[1]
             elif extra_fields[0] == 'stem-vowel':
                 wordmap['stem_vowel'] = extra_fields[1]
             elif extra_fields[0] == 'style':

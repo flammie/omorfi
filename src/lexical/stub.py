@@ -151,6 +151,9 @@ def stub_all(wordmap):
                     'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:
                 pass
+        elif wordmap['kotus_tn'] == 99 and wordmap['possessive'] \
+                and wordmap['stub'].endswith('n'):
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['n'])
         elif wordmap['kotus_tn'] in [0, 99]:
             pass
         else:
