@@ -3,6 +3,10 @@
 if WANT_FTB3
 MAYBE_FTB3_HACKS=hacks/ftb3-hacks.lexc \
 				 compounding/compounding-ftb3.lexc
+else
+MAYBE_OMOR_HACKS=hacks/digits.lexc \
+				 hacks/punctuation.lexc \
+				 hacks/51.lexc
 endif
 
 # lexc data
@@ -23,6 +27,7 @@ MORPHOLOGY_SRCS=\
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
 			$(MAYBE_FTB3_HACKS) \
+			$(MAYBE_OMOR_HACKS) \
 			roots/acronyms.lexc \
 			roots/adjectives.lexc \
 			roots/nouns.lexc \
@@ -33,7 +38,9 @@ LEXICAL_SRCS=\
 NOTGENERATED_SRCS=\
 			hacks/digits.lexc \
 			hacks/punctuation.lexc \
-			hacks/51.lexc
+			hacks/51.lexc \
+			hacks/ftb3-hacks.lexc \
+			compounding/compounding-ftb3.lexc
 
 LEXC_SRCS=$(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
 EXTRA_DIST=$(LEXC_MAIN) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)

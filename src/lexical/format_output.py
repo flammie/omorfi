@@ -5,55 +5,107 @@
 from sys import stderr
 from lexc_string_utils import lexc_escape
 
-omor_multichars_common = {
+ftb3_multichars= {
+        '% A', '% V', '% N',
+        '% Abbr', '% Pron', '% Num', '% Prop',
+        '% Interj', '% Dem', '% Interr',
+        '% Rel', '% Qnt', '% Refl',
+        '% >>>',
+        '% CS', '% CC', '% Adv',
+        '% Adp', '% Po', '% Pr',
+        '% Punct',
+        '% Quote',
+        '% Par', '% Gen', '% Ine', '% Ela',
+        '% Ill', '% Ade', '% Abl', '% All', '% Ess',
+        '% Ins', '% Abe', '% Tra', '% Com' , '% Lat',
+        '% Acc', '% Sg', '% Pl', '% PxSg1', '% PxSg2',
+        '% PxPl1', '% PxPl2', '% PxPl3',
+        '% Px3',
+        'TrunCo', 
+        '% Prt',
+        '% Pst', '% Cond', '% Pot',
+        '% Impv',
+        '% Sg1', '% Sg2',
+        '% Sg3', '% Pl1', '% Pl2', '% Pl3', '% Pe4',
+        '% ConNeg' , '% Neg', 
+        '% Act', '% Pass',
+        '% Inf1', '% Inf2', '% Inf3', '% Inf5',
+        '% PrsPrc', '% AgPrc',
+        '% Pos', '% Comp','% Superl',
+        '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
+        '% Foc_pA'}
+omor_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[POS=PRONOUN]', '[POS=NUMERAL]', '[SUBCAT=PROPER]',
-        '[SUBCAT=DEMONSTR]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROG]',
-        '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEX]',
-        '[SUBCAT=RECIPROC]', '[SUBCAT=INDEF]', '[SUBCAT=CARD]', '[SUBCAT=ORD]',
-        '[SUBCAT=CONJUNCTION]', '[SUBCAT=COORD]', '[SUBCAT=ADVERBIAL]',
+        '[SUBCAT=DEMONSTRATIVE]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROGATIVE]',
+        '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEXIVE]',
+        '[SUBCAT=RECIPROCAL]', '[SUBCAT=INDEFINITE]',
+        '[SUBCAT=CARDINAL]', '[SUBCAT=ORDINAL]',
+        '[SUBCAT=CONJUNCTION]', '[SUBCAT=COORDINATING]', '[SUBCAT=ADVERBIAL]',
         '[SUBCAT=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
         '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
         '[SUBCAT=ACRONYM]', '[SUBCAT=PUNCTUATION]', '[SUBCAT=SYMBOL]',
         '[SUBCAT=SPACE]', '[SUBCAT=QUOTATION]', '[SUBCAT=BRACKET]',
         '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
         '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
-        '[SUBCAT=FINAL]', '[PROP=FIRST]', '[PROP=GEO]', '[PROP=LAST]',
-        '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
-        '[PROP=MEDIA]', '[PROP=BAND]', '[PROP=ARTWORK]', '[SEM=TITLE]',
-        '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
-        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[CASE=NOM]',
-        '[CASE=PAR]', '[CASE=GEN]', '[CASE=INE]', '[CASE=ELA]',
-        '[CASE=ILL]', '[CASE=ADE]', '[CASE=ABL]', '[CASE=ALL]', '[CASE=ESS]',
-        '[CASE=INS]', '[CASE=ABE]', '[CASE=TRA]', '[CASE=COM]' , '[CASE=LAT]',
-        '[CASE=ACC]', '[NUM=SG]', '[NUM=PL]', '[POSS=SG1]', '[POSS=SG2]',
-        '[POSS=SG3]', '[POSS=PL1]', '[POSS=PL2]', '[POSS=PL3]',
-        '[POSS=3]',
+        '[SUBCAT=FINAL]',
+        '[CASE=NOMINATIVE]',
+        '[CASE=PARTITIVE]', '[CASE=GENITIVE]', '[CASE=INESSIVE]',
+        '[CASE=ELATIVE]',
+        '[CASE=ILLATIVE]',
+        '[CASE=ADESSIVE]', '[CASE=ABLATIVE]', '[CASE=ALLATIVE]',
+        '[CASE=ESSIVE]',
+        '[CASE=INSTRUCTIVE]',
+        '[CASE=ABESSIVE]',
+        '[CASE=TRANSLATIVE]',
+        '[CASE=COMITATIVE]',
+        '[CASE=LATIVE]',
+        '[CASE=ACCUSATIVE]',
+        '[NUMBER=SINGULAR]', '[NUMBER=PLURAL]',
+        '[POSSESSIVE=1STSINGULAR]', '[POSSESSIVE=2NDSINGULAR]',
+        '[POSSESSIVE=3RDSINGULAR]', '[POSSESSIVE=1STPLURAL]',
+        '[POSSESSIVE=2NDPLURAL]', '[POSSESSIVE=3RDPLURAL]',
+        '[POSSESSIVE=3RDAMBIGUOUS]',
         '[BOUNDARY=COMPOUND]', '[COMPOUND_FORM=S]', '[COMPOUND_FORM=OMIT]', 
-        '[TENSE=PRESENT]',
-        '[TENSE=PAST]', '[MOOD=INDV]', '[MOOD=COND]', '[MOOD=POTN]',
-        '[MOOD=IMPV]', '[MOOD=OPTATIVE]', '[MOOD=EVNV]',
-        '[PRS=SG1]', '[PRS=SG2]',
-        '[PRS=SG3]', '[PRS=PL1]', '[PRS=PL2]', '[PRS=PL3]', '[PRS=PE4]',
-        '[NEG=CON]' , '[SUBCAT=NEG]', '[VOICE=ACT]', '[VOICE=PSS]',
-        '[INF=A]', '[INF=E]', '[INF=MA]', '[DRV=MINEN]', '[DRV=MAISILLA]',
-        '[PCP=NUT]', '[PCP=AGENT]', '[PCP=VA]', '[PCP=NEG]',
-        '[DRV=NUT]', '[DRV=TU]', '[DRV=MA]', '[DRV=VA]', '[DRV=MATON]',
-        '[CMP=POS]', '[CMP=CMP]','[CMP=SUP]',
-        '[DRV=MPI]', '[DRV=IN]', 
-        '[CLIT=HAN]', '[CLIT=KAAN]', '[CLIT=KIN]', '[CLIT=KO]',
-        '[CLIT=PA]', '[CLIT=S]', '[CLIT=KA]', '[DRV=STI]', '[DRV=JA]',
-        '[DRV=INEN]', '[DRV=LAINEN]', '[DRV=TAR]', '[DRV=LLINEN]', '[DRV=TON]',
-        '[DRV=TSE]', '[DRV=OI]', '[DRV=VS]', '[DRV=U]', '[DRV=TTAIN]',
-        '[DRV=TTAA]', '[DRV=TATTAA]', '[DRV=TATUTTAA]', '[DRV=UUS]',
-        '[DRV=S]', '[DRV=NUT]',
+        '[TENSEMOOD=PRESENTINDICATIVE]',
+        '[TENSEMOOD=PASTINDICATIVE]',
+        '[TENSEMOOD=CONDITIONAL]',
+        '[TENSEMOOD=POTENTIAL]',
+        '[TENSEMOOD=IMPERATIVE]',
+        '[TENSEMOOD=OPTATIVE]',
+        '[TENSEMOOD=EVENTIVE]',
+        '[PERSON=1STSINGULAR]', '[PERSON=2NDSINGULAR]',
+        '[PERSON=3RDSINGULAR]', '[PERSON=1STPLURAL]',
+        '[PERSON=2NDPLURAL]', '[PERSON=3RDPLURAL]',
+        '[PERSON=IMPERSONAL]',
+        '[NEGATION=CON]' , '[SUBCAT=NEGATIONVERB]',
+        '[VOICE=ACTIVE]', '[VOICE=PASSIVE]',
+        '[INFINITIVE=A]', '[INFINITIVE=E]', '[INFINITIVE=MA]',
+        '[DERIVATION=MINEN]', '[DERIVATION=MAISILLA]',
+        '[PARTICIPLE=NUT]', '[PARTICIPLE=AGENT]', '[PARTICIPLE=VA]',
+        '[PARTICIPLE=NEGATION]',
+        '[DERIVATION=NUT]', '[DERIVATION=TU]', '[DERIVATION=MA]',
+        '[DERIVATION=VA]', '[DERIVATION=MATON]',
+        '[COMPARISON=POSITIVE]', '[COMPARISON=COMPARATIVE]',
+        '[COMPARISON=SUPERLATIVE]',
+        '[DERIVATION=MPI]', '[DERIVATION=IN]', 
+        '[CLITIC=HAN]', '[CLITIC=KAAN]', '[CLITIC=KIN]', '[CLITIC=KO]',
+        '[CLITIC=PA]', '[CLITIC=S]', '[CLITIC=KA]', '[DERIVATION=STI]', 
+        '[DERIVATION=JA]',
+        '[DERIVATION=INEN]', '[DERIVATION=LAINEN]', '[DERIVATION=TAR]',
+        '[DERIVATION=LLINEN]', '[DERIVATION=TON]',
+        '[DERIVATION=TSE]', '[DERIVATION=OI]', '[DERIVATION=VS]',
+        '[DERIVATION=U]', '[DERIVATION=TTAIN]',
+        '[DERIVATION=TTAA]', '[DERIVATION=TATTAA]', '[DERIVATION=TATUTTAA]',
+        '[DERIVATION=UUS]',
+        '[DERIVATION=S]', '[DERIVATION=NUT]',
         '[STYLE=NONSTANDARD]', '[STYLE=RARE]', '[STYLE=DIALECTAL]',
         '[STYLE=ARCHAIC]', '[GUESS=COMPOUND]', '[GUESS=DERIVE]', '[ALLO=A]',
         '[ALLO=TA]', '[ALLO=HVN]', '[ALLO=IA]', '[ALLO=IDEN]', '[ALLO=ITA]',
         '[ALLO=ITTEN]', '[ALLO=IEN]', '[ALLO=IHIN]', '[ALLO=IIN]', '[ALLO=IN]',
         '[ALLO=ISIIN]', '[ALLO=IDEN]', '[ALLO=JA]', '[ALLO=JEN]', '[ALLO=SEEN]',
         '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]'}
-omor_multichars_ktnkav = {
+ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
         '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
         '[KTN=11]', '[KTN=12]', '[KTN=13]', '[KTN=14]', '[KTN=15]',
@@ -74,46 +126,169 @@ omor_multichars_ktnkav = {
         '[KAV=F]', '[KAV=G]', '[KAV=H]', '[KAV=I]', '[KAV=J]',
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
         '[KAV=N]', '[KAV=O]', '[KAV=P]', '[KAV=T]'}
-stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]", "B-": "[COMPOUND_FORM=OMIT]",
-        "Ccmp": "[CMP=CMP]", "Cma": "[PCP=AGENT]",
-        "Cmaton": "[PCP=NEG]", "Cnut": "[PCP=NUT]", 
-        "Cpos": "[CMP=POS]", "Csup": "[CMP=SUP]", "Cva": "[PCP=VA]",
-        "Dinen": "[DRV=INEN]", 'Dja': '[DRV=JA]',
-        "Dmaisilla": "[DRV=MAISILLA]", "Dminen": "[DRV=MINEN]",
-        "Dtu": "[DRV=TU]", "Dva": "[DRV=TU]", "Dnut": "[DRV=NUT]",
-        "Dma": "[DRV=MA]", "Dmaton": "[DRV=MATON]", 
-        "Ds": "[DRV=S]", "Dttaa": "[DRV=TTAA]", "Dtattaa": "[DRV=TATTAA]",
-        "Dtatuttaa": "[DRV=TATUTTAA]", "Duus": "[DRV=UUS]",
-        "Dmpi": "[DRV=MPI]", "Din": "[DRV=IN]",
-        "Ia": "[INF=A]", "Ie": "[INF=E]", "Ima": "[INF=MA]",
-        "Ncon": "[NEG=CON]",
-        "Nneg": "[SUBCAT=NEG]", "Npl": "[NUM=PL]", 
-        "Nsg": "[NUM=SG]", 
-        "Osg1": "[POSS=SG1]", "Osg2": "[POSS=SG2]", "O3": "[POSS=3]",
-        "Opl1": "[POSS=PL1]", "Opl2": "[POSS=PL2]",
-        "Ppl1": "[PRS=PL1]", "Ppl2": "[PRS=PL2]",
-        "Ppl3": "[PRS=PL3]", "Psg1": "[PRS=SG1]", "Psg2": "[PRS=SG2]",
-        "Psg3": "[PRS=SG3]", "Ppe4": "[PRS=PE4]", 
-        "Qka": "[CLIT=KA]", "Qs": "[CLIT=S]",
-        "Qpa": "[CLIT=PA]", "Qko": "[CLIT=KO]",
-        "Qkin": "[CLIT=KIN]",
-        "Qkaan": "[CLIT=KAAN]", "Qhan": "[CLIT=HAN]",
-        "Tcond": "[MOOD=COND]", "Timp": "[MOOD=IMPV]", 
-        "Tpast": "[TENSE=PAST]", "Tpot": "[MOOD=POTN]", "Topt": "[MOOD=OPTATIVE]",
-        "Tpres": "[TENSE=PRESENT]", "Uarch": "[STYLE=ARCHAIC]",
-        "Udial": "[STYLE=DIALECTAL]", "Urare": "[STYLE=RARE]",
-        "Vact": "[VOICE=ACT]", "Vpss": "[VOICE=PSS]",
-        "Xabe": "[CASE=ABE]", "Xabl": "[CASE=ABL]",
-        "Xade": "[CASE=ADE]", "Xall": "[CASE=ALL]",
-        "Xcom": "[CASE=COM]", "Xela": "[CASE=ELA]",
-        "Xess": "[CASE=ESS]", "Xgen": "[CASE=GEN]",
-        "Xill": "[CASE=ILL]", "Xine": "[CASE=INE]",
-        "Xins": "[CASE=INS]", "Xnom": "[CASE=NOM]",
-        "Xpar": "[CASE=PAR]", "Xtra": "[CASE=TRA]", "Xlat": "[CASE=LAT]"}
+stuff2ftb3 = {"Bc": "#",
+        "B-": "TrunCo",
+        "Cma": "% AgPrc",
+        "Cnut": "% PrfPrc",
+        "Cva": "% PrsPrc",
+        "Cmaton": "",
+        "Cpos": "% Pos",
+        "Ccmp": "% Comp",
+        "Csup": "% Superl",
+        "Dmaisilla": "% Inf5",
+        "Dminen": "% N",
+        "Dnut": "", "Dtu": "", "Duus": "", "Dva": "", "Dmaton": "",
+        "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
+        "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
+        "Din": "", "Ds": "",
+        "Ia": "% Inf1",
+        "Ie": "% Inf2",
+        "Ima": "% Inf3",
+        "Ncon": "% ConNeg",
+        "Nneg": "% Neg", 
+        "Npl": "% Pl", 
+        "Nsg": "% Sg", 
+        "Osg1": "% PxSg1",
+        "Osg2": "% PxSg2",
+        "O3": "% Px3",
+        "Opl1": "% PxPl1",
+        "Opl2": "% PxPl2",
+        "Ppl1": "% Pl1", 
+        "Ppl2": "% Pl2",
+        "Ppl3": "% Pl3",
+        "Psg1": "% Sg1", 
+        "Psg2": "% Sg2",
+        "Psg3": "% Sg3",
+        "Ppe4": "% Pe4", 
+        "Qka": "% Foc_kA",
+        "Qs": "% Foc_s",
+        "Qpa": "% Foc_pA",
+        "Qko": "% Foc_kO",
+        "Qkin": "% Foc_kin",
+        "Qkaan": "% Foc_kAAn",
+        "Qhan": "% Foc_hAn",
+        "Tcond": "% Cond",
+        "Timp": "% Impv", 
+        "Tpast": "% Pst",
+        "Tpot": "% Pot", 
+        "Tpres": "% Prt",
+        "Topt": "",
+        "Uarch": "", "Udial": "", "Urare": "",
+        "Vact": "% Act",
+        "Vpss": "% Pass",
+        "Xabe": "% Abe",
+        "Xabl": "% Abl",
+        "Xade": "% Ade",
+        "Xall": "% All",
+        "Xcom": "% Com",
+        "Xela": "% Ela",
+        "Xess": "% Ess", 
+        "Xgen": "% Gen",
+        "Xill": "% Ill", 
+        "Xine": "% Ine",
+        "Xins": "% Ins",
+        "Xnom": "% Nom",
+        "Xpar": "% Par", 
+        "Xtra": "% Tra", 
+        "Xlat": "% Lat",
+        "Xacc": "% Acc",
+        "NOUN": "% N",
+        "ADJECTIVE": "% A", "QUALIFIER": "% A",
+        "VERB": "% V",
+        "ADVERB": "% Adv",
+        "INTERJECTION": "% Interj",
+        "PRONOUN": "% Pron",
+        "NUMERAL": "% Num",
+        "ADPOSITION": "% Adp",
+        "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
+        "COMPARATIVE": "CS",
+        "ABBREVIATION": "% Abbr"}
+        
+
+stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
+        "B-": "[COMPOUND_FORM=OMIT]",
+        "Cma": "[PARTICIPLE=AGENT]",
+        "Cmaton": "[PARTICIPLE=NEGATION]",
+        "Cnut": "[PARTICIPLE=NUT]",
+        "Cva": "[PARTICIPLE=VA]",
+        "Cpos": "[COMPARISON=POSITIVE]",
+        "Ccmp": "[COMPARISON=COMPARATIVE]",
+        "Csup": "[COMPARISON=SUPERLATIVE]",
+        "Dinen": "[DERIVATION=INEN]",
+        'Dja': '[DERIVATION=JA]',
+        "Dmaisilla": "[DERIVATION=MAISILLA]",
+        "Dminen": "[DERIVATION=MINEN]",
+        "Dtu": "[DERIVATION=TU]",
+        "Dva": "[DERIVATION=TU]",
+        "Dnut": "[DERIVATION=NUT]",
+        "Dma": "[DERIVATION=MA]",
+        "Dmaton": "[DERIVATION=MATON]", 
+        "Ds": "[DERIVATION=S]",
+        "Dttaa": "[DERIVATION=TTAA]",
+        "Dtattaa": "[DERIVATION=TATTAA]",
+        "Dtatuttaa": "[DERIVATION=TATUTTAA]",
+        "Duus": "[DERIVATION=UUS]",
+        "Dmpi": "[DERIVATION=MPI]",
+        "Din": "[DERIVATION=IN]",
+        "Ia": "[INFINITIVE=A]",
+        "Ie": "[INFINITIVE=E]",
+        "Ima": "[INFINITIVE=MA]",
+        "Ncon": "[NEGATION=CON]",
+        "Nneg": "[SUBCAT=NEGATIONVERB]", 
+        "Npl": "[NUMBER=PLURAL]", 
+        "Nsg": "[NUMBER=SINGULAR]", 
+        "Osg1": "[POSSESSIVE=1STSINGULAR]",
+        "Osg2": "[POSSESSIVE=2NDSINGULAR]",
+        "O3": "[POSSESSIVE=3RDAMBIGUOUS]",
+        "Opl1": "[POSSESSIVE=1STPLURAL]",
+        "Opl2": "[POSSESSIVE=2NDPLURAL]",
+        "Ppl1": "[PERSON=1STPLURAL]", 
+        "Ppl2": "[PERSON=2NDPLURAL]",
+        "Ppl3": "[PERSON=3RDPLURAL]",
+        "Psg1": "[PERSON=1STSINGULAR]", 
+        "Psg2": "[PERSON=2NDSINGULAR]",
+        "Psg3": "[PERSON=3RDSINGULAR]",
+        "Ppe4": "[PERSON=IMPERSONAL]", 
+        "Qka": "[CLITIC=KA]",
+        "Qs": "[CLITIC=S]",
+        "Qpa": "[CLITIC=PA]",
+        "Qko": "[CLITIC=KO]",
+        "Qkin": "[CLITIC=KIN]",
+        "Qkaan": "[CLITIC=KAAN]",
+        "Qhan": "[CLITIC=HAN]",
+        "Tcond": "[TENSEMOOD=CONDITIONAL]",
+        "Timp": "[TENSEMOOD=IMPERATIVE]", 
+        "Tpast": "[TENSEMOOD=PASTINDICATIVE]",
+        "Tpot": "[TENSEMOOD=POTENTIAL]", 
+        "Topt": "[TENSEMOOD=OPTATIVE]",
+        "Tpres": "[TENSEMOOD=PRESENTINDICATIVE]",
+        "Uarch": "[STYLE=ARCHAIC]",
+        "Udial": "[STYLE=DIALECTAL]",
+        "Urare": "[STYLE=RARE]",
+        "Vact": "[VOICE=ACTIVE]",
+        "Vpss": "[VOICE=PASSIVE]",
+        "Xabe": "[CASE=ABESSIVE]",
+        "Xabl": "[CASE=ABLATIVE]",
+        "Xade": "[CASE=ADESSIVE]",
+        "Xall": "[CASE=ALLATIVE]",
+        "Xcom": "[CASE=COMITATIVE]",
+        "Xela": "[CASE=ELATIVE]",
+        "Xess": "[CASE=ESSIVE]", 
+        "Xgen": "[CASE=GENITIVE]",
+        "Xill": "[CASE=ILLATIVE]", 
+        "Xine": "[CASE=INESSIVE]",
+        "Xins": "[CASE=INSTRUCTIVE]",
+        "Xnom": "[CASE=NOMINATIVE]",
+        "Xpar": "[CASE=PARTITIVE]", 
+        "Xtra": "[CASE=TRANSLATIVE]", 
+        "Xlat": "[CASE=LATIVE]",
+        "Xacc": "[CASE=ACCUSATIVE]"}
 
 def format_lexc(wordmap, format):
     if format in ["omor", "ktnkav"]:
         return format_lexc_omor(wordmap, format)
+    elif format.startswith("ftb3"):
+        return format_lexc_ftb3(wordmap, format)
     elif format == "apertium":
         return format_lexc_apertium(wordmap)
 
@@ -122,17 +297,38 @@ def format_continuation_lexc(fields, format):
     for cont in fields[3:]:
         if format in ["omor", "ktnkav"]:
             stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont)
+        elif format.startswith('ftb3'):
+            stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
+
+def format_tag_omor(stuff):
+    if stuff == '0':
+        return "0"
+    elif stuff in stuff2omor:
+        return stuff2omor[stuff]
+    else:
+        print("Missing from omor mapping: ", stuff, file=stderr)
+        return ""
+
+def format_tag_ftb3(stuff):
+    if stuff == '0':
+        return "0"
+    elif stuff in stuff2ftb3:
+        return stuff2ftb3[stuff]
+    else:
+        print("Missing from ftb3 mapping: ", stuff, file=stderr)
+        return ""
+
+def format_continuation_lexc_ftb3(anals, surf, cont):
+    ftbstring = ""
+    for anal in anals.split('|'):
+        ftbstring += format_tag_ftb3(anal)
+    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_continuation_lexc_omor(anals, surf, cont):
     omorstring = ""
     for anal in anals.split('|'):
-        if anal == "0":
-            omorstring += "0"
-        elif anal in stuff2omor:
-            omorstring += stuff2omor[anal]
-        else:
-            print("Missing stuff: ", anal, "in", anals, surf, cont, file=stderr)
+        omorstring += format_tag_omor(anal)
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
 def format_lexc_omor(wordmap, format):
@@ -141,33 +337,31 @@ def format_lexc_omor(wordmap, format):
     '''
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
+    wordmap['analysis'] += format_tag_omor(wordmap['pos'])
     if wordmap['is_suffix']:
-        wordmap['analysis'] += "[POS=%(pos)s][SUBCAT=SUFFIX]" %(wordmap)
+        wordmap['analysis'] += format_tag_omor('SUFFIX')
     elif wordmap['is_prefix']:
-        wordmap['analysis'] += "[POS=NOUN][SUBCAT=PREFIX]" %(wordmap)
-    elif wordmap['pos'] == 'ACRONYM':
-        wordmap['analysis'] += "[POS=NOUN][SUBCAT=%(pos)s]" %(wordmap)
-    else:
-        wordmap['analysis'] += "[POS=%(pos)s]" %(wordmap)
+        wordmap['analysis'] += format_tag_omor('PREFIX')
 
     if wordmap['subcat']:
-        wordmap['analysis'] += "[SUBCAT=%(subcat)s]" %(wordmap)
+        wordmap['analysis'] += format_tag_omor(wordmap['subcat'])
     
     if wordmap['particle']:
         pclasses = wordmap['particle'].split('|')
         for pclass in pclasses:
-            wordmap['analysis'] += "[SUBCAT=%s]" %(pclass)
+            wordmap['analysis'] += format_tag_omor(pclass)
 
     if wordmap['is_proper']:
-        wordmap['analysis'] += "[SUBCAT=PROPER]"
+        wordmap['analysis'] += format_tag_omor('PROPER')
         if wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += '[PROP=%s]' %(prop)
+                wordmap['analysis'] += format_tag_omor(prop)
 
     if wordmap['sem']:
         for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += '[SEM=%s]' %(sem)
+            wordmap['analysis'] += format_tag_omor(sem)
 
+    # XXX: use stuff2omor to ensure multichars but laziness
     if format == 'ktnkav' and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
         if wordmap['kotus_av']:
@@ -177,6 +371,31 @@ def format_lexc_omor(wordmap, format):
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = '0' + wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
+    retvals = []
+    for new_para in wordmap['new_paras']:
+        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
+                new_para)]
+    return "\n".join(retvals)
+
+def format_lexc_ftb3(wordmap, format):
+    '''
+    format string for canonical ftb3 format for morphological analysis
+    '''
+    tn = int(wordmap['kotus_tn'])
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['lemma']))
+    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL']:
+        wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
+    elif wordmap['particle']:
+        pclasses = wordmap['particle'].split('|')
+        for pclass in pclasses:
+            wordmap['analysis'] += format_tag_ftb3(pclass)
+    if wordmap['subcat']:
+        wordmap['analysis'] += format_tag_ftb3(wordmap['subcat'])
+    if wordmap['is_proper']:
+        wordmap['analysis'] += "[SUBCAT=PROPER]"
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
+    # match WORD_ID= with epsilon, then stub and lemma might match
+    wordmap['stub'] = wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
@@ -263,7 +482,7 @@ def format_xml_kotus_sanalista(wordmap):
 # self test
 if __name__ == '__main__':
     for stuff, omor in stuff2omor.items():
-        if not omor in omor_multichars_common:
+        if not omor in omor_multichars:
             print("There are conflicting formattings in here!", omor, 
                     "is not a valid defined multichar_symbol!")
             exit(1)

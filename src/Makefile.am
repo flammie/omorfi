@@ -10,11 +10,11 @@ SUBDIRS=lexical \
 HFST_FLAGS=--verbose
 
 if WANT_MORPHOLOGY
-MAYBE_MORPHOLOGY=morphology.omor.hfst \
+MAYBE_MORPHOLOGY=morphology.$(TAG_FORMAT).hfst \
 				 lemmatize.default.hfst
 endif
 if WANT_GENERATION
-MAYBE_GENERATION=generation.omor.hfst
+MAYBE_GENERATION=generation.$(TAG_FORMAT).hfst
 endif
 if WANT_DICTIONARY
 MAYBE_DICTIONARY=dictionary.default.hfst \
@@ -36,8 +36,7 @@ hfstfidata_DATA=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
 				$(MAYBE_HYPHENATION)
 
 EXTRA_DIST=\
-		eliminate-boundaries.relabel \
-		lemmatize.relabel \
+		emmatize.relabel \
 		voikko-fi_FI.pro index.xml
 
 # combine lexical data with phonology
@@ -66,9 +65,8 @@ temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hf
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # remove word boundaries at this point
-temporary.unbounded.hfst: temporary.orth.hfst eliminate-boundaries.relabel
+temporary.unbounded.hfst: temporary.orth.hfst
 	cat $< |\
-		$(HSUB) $(HFST_FLAGS) -F $(srcdir)/eliminate-boundaries.relabel |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # note here: tag weights are made with regexps containing flags, 
@@ -147,24 +145,24 @@ temporary.weighted.hfst: temporary.tokenweighted.hfst
 	cp -v $< $@
 
 # create morphological analyzer
-temporary.omor.hfst: temporary.weighted.hfst
+temporary.$(TAG_FORMAT).hfst: temporary.weighted.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
-morphology.omor.hfst: temporary.omor.hfst
+morphology.$(TAG_FORMAT).hfst: temporary.$(TAG_FORMAT).hfst
 	$(HF2F) -f olw -o $@ -i $<
 
 # create generator from analyzer
-generation.omor.hfst: temporary.unbounded.hfst
+generation.$(TAG_FORMAT).hfst: temporary.unbounded.hfst
 	$(HMIN) $(HFST_FLAGS) $< |\
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # lemmatization is a special case of tagset variant
-lemmatize.default.hfst: temporary.omor.hfst lemmatize.relabel
+lemmatize.default.hfst: temporary.$(TAG_FORMAT).hfst lemmatize.relabel
 	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/lemmatize.relabel -i $< -o $@
 
 # create one tape spell checker
-dictionary.default.hfst: temporary.omor.hfst
+dictionary.default.hfst: temporary.$(TAG_FORMAT).hfst
 	$(HPR) $(HFST_FLAGS) --project=upper -i $< -o $@
 
 # create basic corpus tokeniser
@@ -180,11 +178,10 @@ tokeniser.default.hfst: dictionary.default.hfst orthography/inconditionals.hfst\
 		$(HREP) -f 1 -o $@
 
 # hyphenation dictionary
-hyphenation.dict.hfst: temporary.orth.hfst eliminate-boundaries.relabel hyphenation/hyphenation.rule.hfst
+hyphenation.dict.hfst: temporary.orth.hfst hyphenation/hyphenation.rule.hfst
 	cat temporary.orth.hfst |\
 		$(HPR) $(HFST_FLAGS) --project=lower |\
-		$(HIC) $(HFST_FLAGS) -2 hyphenation/hyphenation.rule.hfst |\
-		$(HSUB) $(HFST_FLAGS) -F $(srcdir)/eliminate-boundaries.relabel > $@
+		$(HIC) $(HFST_FLAGS) -2 hyphenation/hyphenation.rule.hfst > $@
 
 # voikko speller HFST beta targets
 speller.zhfst: dictionary.default.hfst spell-checking/error.edit-distance-2.hfst index.xml

@@ -84,7 +84,8 @@ def main():
             metavar="ONEFILE")
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            choices=["omor", "ktnkav", "apertium", "giellatekno"])
+            choices=["omor", "ktnkav", "apertium", "giellatekno", "ftb3",
+                "ftb3+semantics", "ftb3+propers"])
     args = ap.parse_args()
     # check args
     lemmas = []

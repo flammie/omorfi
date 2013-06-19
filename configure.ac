@@ -52,23 +52,11 @@ AC_ARG_ENABLE([filter],
                               [enable_filter=no])
 AC_SUBST([FILTER], [$enable_filter])
 AM_CONDITIONAL([WANT_FILTERS], [test "x$enable_filter" != xno])
-AC_ARG_ENABLE([tagset],
-              [AS_HELP_STRING([--enable-tagset=TAGSET],
-                              [precompile TAGSET versions @<:@default=omor@:>@])],
-                              [enable_tagset=$enableval],
-                              [enable_tagset=omor])
-AC_SUBST([TAGSET], [$enable_tagset])
 AC_ARG_ENABLE([doc],
               [AS_HELP_STRING([--enable-doc],
                               [enable building of documentation using docutils @<:@default=yes@<:@])],
               [enable_doc=$enableval],
               [enable_doc=yes])
-AC_ARG_ENABLE([optimisations],
-              [AS_HELP_STRING([--enable-optimisations],
-                              [precompile optimised automata @<:@default=yes@:>@])],
-                              [enable_optimisations=$enableval],
-                              [enable_optimisations=yes])
-AM_CONDITIONAL([WANT_OPTIMISATIONS], [test "x$enable_optimisations" != xno])
 AC_ARG_ENABLE([morphology],
               [AS_HELP_STRING([--enable-morphology],
                               [compile morphological analyser @<:@default=yes@:>@])],
@@ -99,36 +87,28 @@ AC_ARG_ENABLE([voikko],
                               [enable_voikko=$enableval],
                               [enable_voikko=yes])
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
+
+# legacy a bit
 AC_ARG_ENABLE([proper_subclasses],
               [AS_HELP_STRING([--enable-proper-subclasses],
                               [include subclasses of proper names in analyses @<:@default=no@:>@])],
                               [enable_proper_subclasses=$enableval],
                               [enable_proper_subclasses=no])
-AM_CONDITIONAL([WANT_PROPER_SUBCLASSES], [test "x$enable_proper_subclasses" != xno])
-AC_SUBST([PROPER_SUBCLASSES], [$enable_proper_subclasses])
+AS_IF([test x$enabel_proper_subclasses != xno], [tag_format=ftb3+propers])
 AC_ARG_ENABLE([semantics],
               [AS_HELP_STRING([--enable-semantics],
                               [include some semantic classifications in analyses @<:@default=no@:>@])],
                               [enable_semantics=$enableval],
                               [enable_semantics=no])
-AM_CONDITIONAL([WANT_SEMANTICS], [test "x$enable_semantics" != xno])
-AC_SUBST([SEMANTICS], [$enable_semantics])
-AC_ARG_ENABLE([kotus_tags],
-              [AS_HELP_STRING([--enable-kotus-tags],
-                              [include Kotus inflection class tags KTN=, KAV= in analyses @<:@default=no@:>@])],
-                              [tag_format=ktnkav],
-                              [tag_format=omor])
+AS_IF([test x$enabel_semantics != xno], [tag_format=ftb3+semantics])
+# generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([multichar_format],
               [AS_HELP_STRING([--enable-multichar-format],
-                              [use other formats for multichar symbols @<:@default=omor@>:@])],
-                             [tag_format=$enableval])
+                              [use other formats for multichar symbols @<:@default=ftb3@>:@])],
+                             [tag_format=$enableval],
+                             [tag_format=ftb3])
 AC_SUBST([TAG_FORMAT], [$tag_format])
-AC_ARG_ENABLE([ftb3],
-              [AS_HELP_STRING([--enable-ftb3],
-                              [include FinnTreeBank 3 specific readings @<:@default=no@:>@])],
-                              [enable_ftb3=$enableval],
-                              [enable_ftb3=no])
-AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" != xno])
+AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" != xftb3])
 AC_SUBST([FTB3], [$enable_ftb3])
 
 # hum dee dum
@@ -264,7 +244,7 @@ AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
                  src/scripts/omorfi-spell.sh
                  src/scripts/omorfi-interactive.sh
                  man/Makefile], 
-                 [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-suggest.sh src/scripts/omorfi-interactive.sh])
+                 [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-interactive.sh])
 AC_OUTPUT
 
 cat <<EOF
