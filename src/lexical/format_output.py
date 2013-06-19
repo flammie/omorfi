@@ -202,7 +202,8 @@ stuff2ftb3 = {"Bc": "#",
         "ADPOSITION": "% Adp",
         "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
         "COMPARATIVE": "CS",
-        "ABBREVIATION": "% Abbr"}
+        "ABBREVIATION": "% Abbr",
+        "PROPER": "% Prop"}
         
 
 stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
@@ -321,7 +322,15 @@ def format_tag_ftb3(stuff):
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
-    for anal in anals.split('|'):
+    parts = anals.split('|')
+    reordered = []
+    for part in parts:
+        if part.startswith('X'):
+            reordered.append(part)
+    parts = [x for x in parts if  not x.startswith('X')]
+    for part in parts:
+        reordered.append(part)
+    for anal in reordered:
         ftbstring += format_tag_ftb3(anal)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
@@ -392,7 +401,7 @@ def format_lexc_ftb3(wordmap, format):
     if wordmap['subcat']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['subcat'])
     if wordmap['is_proper']:
-        wordmap['analysis'] += "[SUBCAT=PROPER]"
+        wordmap['analysis'] += format_tag_ftb3('PROPER')
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
@@ -484,6 +493,11 @@ if __name__ == '__main__':
     for stuff, omor in stuff2omor.items():
         if not omor in omor_multichars:
             print("There are conflicting formattings in here!", omor, 
+                    "is not a valid defined multichar_symbol!")
+            exit(1)
+    for stuff, ftb3 in stuff2ftb3.items():
+        if not ftb3 in ftb3_multichars:
+            print("There are conflicting formattings in here!", ftb3, 
                     "is not a valid defined multichar_symbol!")
             exit(1)
 
