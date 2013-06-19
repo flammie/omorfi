@@ -26,8 +26,6 @@ MORPHOLOGY_SRCS=\
 				inflection/pronouns.lexc \
 				inflection/verbs.lexc
 LEXICAL_SRCS=\
-			$(MAYBE_FTB3_HACKS) \
-			$(MAYBE_OMOR_HACKS) \
 			roots/acronyms.lexc \
 			roots/adjectives.lexc \
 			roots/nouns.lexc \
@@ -42,8 +40,13 @@ NOTGENERATED_SRCS=\
 			hacks/ftb3-hacks.lexc \
 			compounding/compounding-ftb3.lexc
 
-LEXC_SRCS=$(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
-EXTRA_DIST=$(LEXC_MAIN) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
+LEXC_SRCS=$(LEXC_MAIN) \
+		  $(LEXICAL_SRCS) \
+		  $(MORPHOLOGY_SRCS) \
+		  $(MAYBE_OMOR_HACKS) \
+		  $(MAYBE_FTB3_HACKS) \
+		  $(NOTGENERATED_SRCS)
+EXTRA_DIST=$(LEXC_MAIN) $(NOTGENERATED_SRCS)
 
 LEXICAL_TARGETS=omorfi.lexc.hfst #guess-universal.lexc.hfst
 
