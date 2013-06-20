@@ -108,7 +108,7 @@ AC_ARG_ENABLE([multichar_format],
                              [tag_format=$enableval],
                              [tag_format=ftb3])
 AC_SUBST([TAG_FORMAT], [$tag_format])
-AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" != xftb3])
+AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
 AC_SUBST([FTB3], [$enable_ftb3])
 
 # hum dee dum
