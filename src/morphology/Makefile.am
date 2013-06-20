@@ -1,9 +1,11 @@
 ## Process this file with automake to produce Makefile.in
 
 if WANT_FTB3
+MAYBE_FTB3_HACKS=hacks/punctuation-ftb3.lexc \
+				 hacks/digits-ftb3.lexc
+else
 MAYBE_FTB3_HACKS=hacks/ftb3-hacks.lexc \
 				 compounding/compounding-ftb3.lexc
-else
 MAYBE_OMOR_HACKS=hacks/digits.lexc \
 				 hacks/punctuation.lexc \
 				 hacks/51.lexc
@@ -53,12 +55,14 @@ LEXICAL_TARGETS=omorfi.lexc.hfst #guess-universal.lexc.hfst
 noinst_DATA=omorfi.lexc.hfst #guess-universal.lexc.hfst
 
 # lexical transducer
-omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
+omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) \
+				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS)
 	$(HLEXC) -f foma -o $@.foma $^
 	$(HF2F) -f openfst -o $@ $@.foma
 	rm $@.foma
 
-omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) $(NOTGENERATED_SRCS)
+omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) \
+				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS)
 	cat $^ > combined.lexc
 	printf "read lexc combined.lexc\nsave stack $@" | foma
 
