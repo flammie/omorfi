@@ -171,7 +171,7 @@ stuff2ftb3 = {"Bc": "#",
         "Timp": "% Impv", 
         "Tpast": "% Pst",
         "Tpot": "% Pot", 
-        "Tpres": "% Prt",
+        "Tpres": "% Prs",
         "Topt": "",
         "Uarch": "", "Udial": "", "Urare": "",
         "Vact": "% Act",
@@ -326,8 +326,12 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     reordered = []
     for part in parts:
         if part.startswith('X'):
+            # Case X before Number N
             reordered.append(part)
-    parts = [x for x in parts if  not x.startswith('X')]
+        elif part.startswith('T'):
+            # Tense T before Voice V
+            reordered.append(part)
+    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T')]
     for part in parts:
         reordered.append(part)
     for anal in reordered:
