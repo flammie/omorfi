@@ -15,14 +15,14 @@ ftb3_multichars= {
         '% Adp', '% Po', '% Pr',
         '% Punct',
         '% Quote',
-        '% Par', '% Gen', '% Ine', '% Ela',
+        '% Nom', '% Par', '% Gen', '% Ine', '% Ela',
         '% Ill', '% Ade', '% Abl', '% All', '% Ess',
         '% Ins', '% Abe', '% Tra', '% Com' , '% Lat',
         '% Acc', '% Sg', '% Pl', '% PxSg1', '% PxSg2',
         '% PxPl1', '% PxPl2', '% PxPl3',
         '% Px3',
         'TrunCo', 
-        '% Prt',
+        '% Prt', '% Prs',
         '% Pst', '% Cond', '% Pot',
         '% Impv',
         '% Sg1', '% Sg2',
@@ -30,13 +30,15 @@ ftb3_multichars= {
         '% ConNeg' , '% Neg', 
         '% Act', '% Pass',
         '% Inf1', '% Inf2', '% Inf3', '% Inf5',
-        '% PrsPrc', '% AgPrc',
+        '% PrsPrc', '% PrfPrc', '% AgPrc',
         '% Pos', '% Comp','% Superl',
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
-        '% Foc_pA'}
+        '% Foc_pA', '% Foc_s', '% Foc_kA'}
 omor_multichars = {
-        '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
-        '[POS=PARTICLE]', '[POS=PRONOUN]', '[POS=NUMERAL]', '[SUBCAT=PROPER]',
+        '[WORD_ID=', '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
+        '[POS=PARTICLE]', '[SUBCAT=PRONOUN]', '[SUBCAT=NUMERAL]',
+        '[SUBCAT=PROPER]', '[SUBCAT=ADVERB]', '[SUBCAT=ADPOSITION]',
+        '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTRATIVE]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROGATIVE]',
         '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEXIVE]',
         '[SUBCAT=RECIPROCAL]', '[SUBCAT=INDEFINITE]',
@@ -201,7 +203,7 @@ stuff2ftb3 = {"Bc": "#",
         "NUMERAL": "% Num",
         "ADPOSITION": "% Adp",
         "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
-        "COMPARATIVE": "CS",
+        "COMPARATIVE": "% CS",
         "ABBREVIATION": "% Abbr",
         "PROPER": "% Prop"}
         
@@ -283,7 +285,25 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "Xpar": "[CASE=PARTITIVE]", 
         "Xtra": "[CASE=TRANSLATIVE]", 
         "Xlat": "[CASE=LATIVE]",
-        "Xacc": "[CASE=ACCUSATIVE]"}
+        "Xacc": "[CASE=ACCUSATIVE]",
+        "NOUN": "[POS=NOUN]", "PARTICLE": "[POS=PARTICLE]", 
+        "VERB": "[POS=VERB]",
+        "ADVERB": "[SUBCAT=ADVERB]",
+        "ADJECTIVE": "[SUBCAT=ADJECTIVE]",
+        "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
+        "COORDINATING": "[SUBCAT=COORDINATING]",
+        "COMPARATIVE": "[SUBCAT=COMPARATIVE]",
+        "PRONOUN": "[SUBCAT=PRONOUN]",
+        "ADVERBIAL": "[SUBCAT=ADVERBIAL]",
+        "NUMERAL": "[SUBCAT=NUMERAL]",
+        "QUALIFIER": "[SUBCAT=QUALIFIER]",
+        "ACRONYM": "[SUBCAT=ACRONYM]", "ABBREVIATION": "[SUBCAT=ABBREVIATION]",
+        "SUFFIX": "[SUBCAT=SUFFIX]", "PREFIX": "[SUBCAT=PREFIX]",
+        "INTERJECTION": "[SUBCAT=INTERJECTION]",
+        "ADPOSITION": "[SUBCAT=ADPOSITION]",
+        "TITLE": "", "TIME": "", "BAND": "", "PRODUCT": "", "CURRENCY": "",
+        "MEDIA": "", "POLIT": "", "ARTWORK": "", "MEASURE": "", "EVENT": "",
+        "PROPER": "", "GEO": "", "FIRST": "", "LAST": "", "ORG": "", "MISC": ""}
 
 def format_lexc(wordmap, format):
     if format in ["omor", "ktnkav"]:
@@ -455,7 +475,7 @@ def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
     if format in ['ktnkav', 'omor']:
         multichars += "!! OMOR set:\n"
-        for mcs in omor_multichars_common:
+        for mcs in omor_multichars:
             multichars += mcs + "\n"
     if format == 'ktnkav':
         multichars += "!! KTNKAV set:\n"
@@ -495,12 +515,16 @@ def format_xml_kotus_sanalista(wordmap):
 # self test
 if __name__ == '__main__':
     for stuff, omor in stuff2omor.items():
-        if not omor in omor_multichars:
+        if len(omor) < 2:
+            continue
+        elif not omor in omor_multichars:
             print("There are conflicting formattings in here!", omor, 
                     "is not a valid defined multichar_symbol!")
             exit(1)
     for stuff, ftb3 in stuff2ftb3.items():
-        if not ftb3 in ftb3_multichars:
+        if len(ftb3) < 2:
+            continue
+        elif not ftb3 in ftb3_multichars:
             print("There are conflicting formattings in here!", ftb3, 
                     "is not a valid defined multichar_symbol!")
             exit(1)
