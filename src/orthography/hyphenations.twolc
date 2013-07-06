@@ -19,8 +19,8 @@ Upper = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö ;
 Rules
 
 "Dissallow no hyphen on vowel boundaries"
-%{%#%}:0 /<= Vv :0*  _ :0* Vv ; where Vv in Vowels ;
+%-%0:0 /<= Vv :0*  _ :0* Vv ; where Vv in Vowels ;
 
 "Require hyphen on some caps"
-%{%#%}:%- <= Upper [? - %{%#%}:]* _ ;
+%-%0:%- <= Upper [? - %-%0:]* _ ;
             _ :0* Upper ;
