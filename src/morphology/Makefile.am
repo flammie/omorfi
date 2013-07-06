@@ -4,8 +4,6 @@ if WANT_FTB3
 MAYBE_FTB3_HACKS=hacks/punctuation-ftb3.lexc \
 				 hacks/digits-ftb3.lexc
 else
-MAYBE_FTB3_HACKS=hacks/ftb3-hacks.lexc \
-				 compounding/compounding-ftb3.lexc
 MAYBE_OMOR_HACKS=hacks/digits.lexc \
 				 hacks/punctuation.lexc \
 				 hacks/51.lexc
