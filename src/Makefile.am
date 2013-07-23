@@ -24,9 +24,9 @@ if WANT_HYPHENATION
 MAYBE_HYPHENATION=hyphenation.dict.hfst
 endif
 if WANT_VOIKKO
-MAYBE_VOIKKO=speller.zhfst
-voikkosharedir=$(libdir)/voikko/2/mor-hfst-fi/
-voikkoshare_DATA=$(MAYBE_VOIKKO) voikko-fi_FI.pro
+MAYBE_VOIKKO=speller-omorfi.zhfst
+voikkosharedir=$(libdir)/voikko/3/
+voikkoshare_DATA=$(MAYBE_VOIKKO)
 endif
 
 TARGETS=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
@@ -36,7 +36,7 @@ hfstfidata_DATA=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
 				$(MAYBE_HYPHENATION)
 
 EXTRA_DIST=\
-		emmatize.relabel \
+		lemmatize.relabel \
 		voikko-fi_FI.pro index.xml
 
 # combine lexical data with phonology
@@ -184,9 +184,9 @@ hyphenation.dict.hfst: temporary.orth.hfst hyphenation/hyphenation.rule.hfst
 		$(HIC) $(HFST_FLAGS) -2 hyphenation/hyphenation.rule.hfst > $@
 
 # voikko speller HFST beta targets
-speller.zhfst: dictionary.default.hfst spell-checking/error.edit-distance-2.hfst index.xml
-	cp -f dictionary.default.hfst acceptor.default.hfst
-	cp -f spell-checking/error.edit-distance-2.hfst errmodel.default.hfst
+speller-omorfi.zhfst: dictionary.default.hfst spell-checking/error.edit-distance-2.hfst index.xml
+	$(HF2F) -f olw < dictionary.default.hfst > acceptor.default.hfst
+	$(HF2F) -f olw < spell-checking/error.edit-distance-2.hfst > errmodel.default.hfst
 	$(ZIP) -v -9 $@ index.xml acceptor.default.hfst errmodel.default.hfst
 	-rm -f acceptor.default.hfst errmodel.default.hfst
 
