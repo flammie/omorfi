@@ -104,7 +104,7 @@ AS_IF([test x$enabel_semantics != xno], [tag_format=ftb3+semantics])
 # generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([multichar_format],
               [AS_HELP_STRING([--enable-multichar-format],
-                              [use other formats for multichar symbols @<:@default=ftb3@>:@])],
+                              [use other formats for multichar symbols @<:@default=ftb3@:>@])],
                              [tag_format=$enableval],
                              [tag_format=ftb3])
 AC_SUBST([TAG_FORMAT], [$tag_format])
