@@ -106,7 +106,7 @@ def parse_extras_from_csv(wordmap, csv_parts):
             elif extra_fields[0] == 'stem-vowel':
                 wordmap['stem_vowel'] = extra_fields[1]
             elif extra_fields[0] == 'style':
-                wordmap['style'] = extra_fields[1]
+                wordmap['style'] = extra_fields[1].upper()
             elif extra_fields[0] == 'boundaries':
                 wordmap['stub'] = extra_fields[1]
             elif extra_fields[0] == 'subcat':

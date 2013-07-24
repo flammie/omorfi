@@ -302,6 +302,10 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "SUFFIX": "[SUBCAT=SUFFIX]", "PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[SUBCAT=ADPOSITION]",
+        "ARCHAIC": "[STYLE=ARCHAIC]",
+        "DIALECTAL": "[STYLE=DIALECTAL]",
+        "NONSTANDARD": "[STYLE=NONSTANDARD]",
+        "RARE": "[STYLE=RARE]",
         "TITLE": "", "TIME": "", "BAND": "", "PRODUCT": "", "CURRENCY": "",
         "MEDIA": "", "POLIT": "", "ARTWORK": "", "MEASURE": "", "EVENT": "",
         "PROPER": "", "GEO": "", "FIRST": "", "LAST": "", "ORG": "", "MISC": ""}
@@ -402,6 +406,10 @@ def format_lexc_omor(wordmap, format):
             wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
     elif format == 'newparas':
         wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
+
+    if wordmap['style']:
+        wordmap['analysis'] += format_tag_omor(wordmap['style'])
+    
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = '0' + wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
