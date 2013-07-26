@@ -27,6 +27,8 @@ def stub_all(wordmap):
             else:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
                         ['a', 'ä'])
+        elif tn == 41 and wordmap['stub'].endswith('is') and wordmap['pos'] == 'ADJECTIVE':
+            wordmap['stub'] = wordmap['stub'][:-2] 
         elif tn in [7, 16] or tn in range(33, 38) or tn in range(39, 47):
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in range(9, 16):
