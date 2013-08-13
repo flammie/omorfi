@@ -3370,7 +3370,9 @@ def guess_new_adjective(wordmap):
                 [False], "cannot have gradation")
     elif wordmap['kotus_tn'] == 41:
         if not wordmap['kotus_av']:
-            if wordmap['lemma'].endswith('as'):
+            if wordmap['lemma'].endswith('paras'):
+                wordmap['new_paras'] = ['A_PARAS']
+            elif wordmap['lemma'].endswith('as'):
                 wordmap['new_paras'] = ['A_AUTUAS']
             elif wordmap['lemma'].endswith('is') and wordmap['harmony'] == 'back':
                 wordmap['new_paras'] = ['A_VALMIS']
