@@ -2,7 +2,7 @@
 
 # Parallel unsafe: lexical -> others -> . ($CWD)
 SUBDIRS=lexical \
-		morphology phonology orthography\
+		morphology phonology orthography taghacks \
 		probabilistics hyphenation spell-checking \
 		. \
 		scripts
@@ -58,8 +58,16 @@ temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hf
 		$(HIC) $(HFST_FLAGS) -2 orthography/orthographic-variations.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
+# make tag adjustments to orthographical version
+temporary.tagged.hfst: temporary.orth.hfst
+	cat $< |\
+		$(HINV) $(HFST_FLAGS) |\
+		$(HIC) $(HFST_FLAGS) -2 taghacks/rewrite-$(TAG_FORMAT).hfst |\
+		$(HINV) $(HFST_FLAGS) |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
 # remove word boundaries at this point
-temporary.unbounded.hfst: temporary.orth.hfst
+temporary.unbounded.hfst: temporary.tagged.hfst
 	cat $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
