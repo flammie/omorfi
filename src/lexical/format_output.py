@@ -32,6 +32,7 @@ ftb3_multichars= {
         '% Inf1', '% Inf2', '% Inf3', '% Inf5',
         '% PrsPrc', '% PrfPrc', '% AgPrc',
         '% Pos', '% Comp','% Superl',
+        "% Dem", "% Qnt", "% Pers", "% Indef", "% Interr", "% Refl", "% Rel",
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
         '% Foc_pA', '% Foc_s', '% Foc_kA'}
 omor_multichars = {
@@ -205,7 +206,10 @@ stuff2ftb3 = {"Bc": "#",
         "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
         "COMPARATIVE": "% CS",
         "ABBREVIATION": "% Abbr",
-        "PROPER": "% Prop"}
+        "PROPER": "% Prop",
+        "DEMONSTRATIVE": "% Dem", "QUANTOR": "% Qnt", "PERSONAL": "% Pers",
+        "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
+        "REFLEXIVE": "% Refl", "RELATIVE": "% Rel"}
         
 
 stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
@@ -382,7 +386,9 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_tag_omor('PREFIX')
 
     if wordmap['subcat']:
-        wordmap['analysis'] += format_tag_omor(wordmap['subcat'])
+        subcats = wordmap['subcat'].split('|')
+        for subcat in subcats:
+            wordmap['analysis'] += format_tag_omor(subcat)
     
     if wordmap['particle']:
         pclasses = wordmap['particle'].split('|')
@@ -432,7 +438,9 @@ def format_lexc_ftb3(wordmap, format):
         for pclass in pclasses:
             wordmap['analysis'] += format_tag_ftb3(pclass)
     if wordmap['subcat']:
-        wordmap['analysis'] += format_tag_ftb3(wordmap['subcat'])
+        subcats = wordmap['subcat'].split('|')
+        for subcat in subcats:
+            wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
     wordmap['stub'] = lexc_escape(wordmap['stub'])
