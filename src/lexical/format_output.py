@@ -10,7 +10,7 @@ ftb3_multichars= {
         '% Abbr', '% Pron', '% Num', '% Prop',
         '% Interj', '% Dem', '% Interr',
         '% Rel', '% Qnt', '% Refl',
-        '% >>>',
+        '% %>%>%>',
         '% CS', '% CC', '% Adv',
         '% Adp', '% Po', '% Pr',
         '% Punct',
@@ -485,6 +485,10 @@ def format_multichars_lexc(format):
     if format in ['ktnkav', 'omor']:
         multichars += "!! OMOR set:\n"
         for mcs in omor_multichars:
+            multichars += mcs + "\n"
+    elif format.startswith("ftb3"):
+        multichars += "!! FTB 3 set:\n"
+        for mcs in ftb3_multichars:
             multichars += mcs + "\n"
     if format == 'ktnkav':
         multichars += "!! KTNKAV set:\n"
