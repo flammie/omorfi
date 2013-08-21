@@ -51,12 +51,6 @@ temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hf
 		$(HMIN) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/uppercase-$(UPPERCASING).hfst |\
 		$(HMIN) $(HFST_FLAGS) |\
-		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=NONE]' -t '[CASECHANGE=NONE]:@_EPSILON_SYMBOL_@' |\
-		$(HMIN) $(HFST_FLAGS) |\
-		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=UPALL]' -t '[CASECHANGE=UPALL]:@_EPSILON_SYMBOL_@' |\
-		$(HMIN) $(HFST_FLAGS) |\
-		$(HSUB) $(HFST_FLAGS) -f '@_EPSILON_SYMBOL_@:[CASECHANGE=UPFIRST]' -t '[CASECHANGE=UPFIRST]:@_EPSILON_SYMBOL_@' |\
-		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f š -T orthography/sh.hfst |\
 		$(HMIN) $(HFST_FLAGS) |\
 		$(HSUB) $(HFST_FLAGS) -f ž -T orthography/zh.hfst |\
