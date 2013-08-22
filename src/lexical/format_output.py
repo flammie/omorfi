@@ -438,7 +438,10 @@ def format_lexc_ftb3(wordmap, format):
     format string for canonical ftb3 format for morphological analysis
     '''
     tn = int(wordmap['kotus_tn'])
-    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['lemma']))
+    if wordmap['boundaries']:
+        wordmap['analysis'] = wordmap['boundaries'].replace('|', '#', 32).replace('_', '', 32)
+    else:
+        wordmap['analysis'] = "%s" %(lexc_escape(wordmap['lemma']))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:

@@ -84,6 +84,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     wordmap['sem'] = []
     wordmap['particle'] = False
     wordmap['pronunciation'] = False
+    wordmap['boundaries'] = False
     return wordmap
 
 
@@ -109,6 +110,7 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['style'] = extra_fields[1].upper()
             elif extra_fields[0] == 'boundaries':
                 wordmap['stub'] = extra_fields[1]
+                wordmap['boundaries'] = extra_fields[1]
             elif extra_fields[0] == 'subcat':
                 wordmap['subcat'] = extra_fields[1].upper()
             elif extra_fields[0] == 'sem':
@@ -218,6 +220,7 @@ def parse_from_tsv(wordmap, fields):
     wordmap['subcat'] = fields[20]
     wordmap['sem'] = fields[21]
     wordmap['particle'] = fields[22]
+    wordmap['boundaries'] = fields[23]
     for k,v in wordmap.items():
         if v == 'False':
             wordmap[k] = False
