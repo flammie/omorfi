@@ -22,7 +22,7 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 JOINS=attributes/boundaries.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
-	  attributes/particle-classes.csv \
+	  attributes/particle-classes.csv attributes/pronoun-classes.csv \
 	  attributes/semantic.csv attributes/subcategories.csv attributes/usage.csv
 SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
 FINNISC=\
@@ -53,6 +53,7 @@ joint.tsv: kotus-style.csv $(JOINS)
 		-j $(srcdir)/attributes/pronunciation.csv \
 		-j $(srcdir)/attributes/particle-classes.csv \
 		-j $(srcdir)/attributes/proper-classes.csv \
+		-j $(srcdir)/attributes/pronoun-classes.csv \
 		-j $(srcdir)/attributes/semantic.csv \
 		-j $(srcdir)/attributes/subcategories.csv \
 		-j $(srcdir)/attributes/usage.csv -o $@

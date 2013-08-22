@@ -10,7 +10,7 @@ ftb3_multichars= {
         '% Abbr', '% Pron', '% Num', '% Prop',
         '% Interj', '% Dem', '% Interr',
         '% Rel', '% Qnt', '% Refl',
-        '% >>>',
+        '% %>%>%>',
         '% CS', '% CC', '% Adv',
         '% Adp', '% Po', '% Pr',
         '% Punct',
@@ -32,6 +32,7 @@ ftb3_multichars= {
         '% Inf1', '% Inf2', '% Inf3', '% Inf5',
         '% PrsPrc', '% PrfPrc', '% AgPrc',
         '% Pos', '% Comp','% Superl',
+        "% Dem", "% Qnt", "% Pers", "% Indef", "% Interr", "% Refl", "% Rel",
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
         '% Foc_pA', '% Foc_s', '% Foc_kA'}
 omor_multichars = {
@@ -205,7 +206,10 @@ stuff2ftb3 = {"Bc": "#",
         "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
         "COMPARATIVE": "% CS",
         "ABBREVIATION": "% Abbr",
-        "PROPER": "% Prop"}
+        "PROPER": "% Prop",
+        "DEMONSTRATIVE": "% Dem", "QUANTOR": "% Qnt", "PERSONAL": "% Pers",
+        "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
+        "REFLEXIVE": "% Refl", "RELATIVE": "% Rel"}
         
 
 stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
@@ -327,18 +331,26 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
-def format_tag_omor(stuff):
+def format_tag_omor(stuff, format = 'omor'):
     if stuff == '0':
         return "0"
+    elif '+propers' in format and False:
+        pass
+    elif '+sem' in format and False:
+        pass
     elif stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
         print("Missing from omor mapping: ", stuff, file=stderr)
         return ""
 
-def format_tag_ftb3(stuff):
+def format_tag_ftb3(stuff, format = 'ftb3'):
     if stuff == '0':
         return "0"
+    elif '+propers' in format and False:
+        pass
+    elif '+sem' in format and False:
+        pass
     elif stuff in stuff2ftb3:
         return stuff2ftb3[stuff]
     else:
@@ -382,7 +394,9 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_tag_omor('PREFIX')
 
     if wordmap['subcat']:
-        wordmap['analysis'] += format_tag_omor(wordmap['subcat'])
+        subcats = wordmap['subcat'].split('|')
+        for subcat in subcats:
+            wordmap['analysis'] += format_tag_omor(subcat)
     
     if wordmap['particle']:
         pclasses = wordmap['particle'].split('|')
@@ -393,11 +407,11 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_tag_omor('PROPER')
         if wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_omor(prop)
+                wordmap['analysis'] += format_tag_omor(prop, format)
 
     if wordmap['sem']:
         for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += format_tag_omor(sem)
+            wordmap['analysis'] += format_tag_omor(sem, format)
 
     # XXX: use stuff2omor to ensure multichars but laziness
     if format == 'ktnkav' and tn < 99:
@@ -432,11 +446,12 @@ def format_lexc_ftb3(wordmap, format):
         for pclass in pclasses:
             wordmap['analysis'] += format_tag_ftb3(pclass)
     if wordmap['subcat']:
-        wordmap['analysis'] += format_tag_ftb3(wordmap['subcat'])
+        subcats = wordmap['subcat'].split('|')
+        for subcat in subcats:
+            wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
     wordmap['stub'] = lexc_escape(wordmap['stub'])
-    # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
     retvals = []
     for new_para in wordmap['new_paras']:
@@ -485,6 +500,10 @@ def format_multichars_lexc(format):
     if format in ['ktnkav', 'omor']:
         multichars += "!! OMOR set:\n"
         for mcs in omor_multichars:
+            multichars += mcs + "\n"
+    elif format.startswith("ftb3"):
+        multichars += "!! FTB 3 set:\n"
+        for mcs in ftb3_multichars:
             multichars += mcs + "\n"
     if format == 'ktnkav':
         multichars += "!! KTNKAV set:\n"

@@ -237,7 +237,7 @@ AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
                  src/morphology/Makefile src/lexical/Makefile 
                  src/hyphenation/Makefile src/orthography/Makefile
                  src/phonology/Makefile src/spell-checking/Makefile
-                 src/probabilistics/Makefile 
+                 src/probabilistics/Makefile src/taghacks/Makefile
                  doc/Makefile test/Makefile 
                  src/scripts/Makefile src/scripts/omorfi-analyse.sh
                  src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh
