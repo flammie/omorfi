@@ -368,7 +368,10 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         elif part.startswith('T'):
             # Tense T before Voice V
             reordered.append(part)
-    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T')]
+        elif part.startswith('C'):
+            # Participle C before voice V
+            reordered.append(part)
+    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C')]
     for part in parts:
         reordered.append(part)
     for anal in reordered:
