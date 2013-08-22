@@ -207,7 +207,7 @@ stuff2ftb3 = {"Bc": "#",
         "ADPOSITION": "% Adp",
         "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
         "COMPARATIVE": "% CS",
-        "ABBREVIATION": "% Abbr",
+        "ABBREVIATION": "% Abbr", "ACRONYM": "% Abbr",
         "PROPER": "% Prop",
         "DEMONSTRATIVE": "% Dem", "QUANTOR": "% Qnt", "PERSONAL": "% Pers",
         "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
@@ -447,7 +447,7 @@ def format_lexc_ftb3(wordmap, format):
         wordmap['analysis'] = wordmap['boundaries'].replace('|', '#', 32).replace('_', '', 32)
     else:
         wordmap['analysis'] = "%s" %(lexc_escape(wordmap['lemma']))
-    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL']:
+    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:
         pclasses = wordmap['particle'].split('|')
