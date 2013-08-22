@@ -310,12 +310,14 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "DIALECTAL": "[STYLE=DIALECTAL]",
         "NONSTANDARD": "[STYLE=NONSTANDARD]",
         "RARE": "[STYLE=RARE]",
-        "TITLE": "", "TIME": "", "BAND": "", "PRODUCT": "", "CURRENCY": "",
-        "MEDIA": "", "POLIT": "", "ARTWORK": "", "MEASURE": "", "EVENT": "",
-        "PROPER": "", "GEO": "", "FIRST": "", "LAST": "", "ORG": "", "MISC": ""}
+        "TITLE": "[SEM=TITLE]", "TIME": "[SEM=TIME]", "CURRENCY": "[SEM=CURRENCY]",
+		"MEDIA": "[SEM=MEDIA]", "POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
+		"PROPER": "[SUBCAT=PROPER]", "CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
+        "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", "GEO": "[PROP=GEO]", 
+        "FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", "ORG": "[PROP=ORG]", "MISC": "[PROP=MISC]"}
 
 def format_lexc(wordmap, format):
-    if format in ["omor", "ktnkav"]:
+    if format.startswith("omor") or format.startswith("ktnkav"):
         return format_lexc_omor(wordmap, format)
     elif format.startswith("ftb3"):
         return format_lexc_ftb3(wordmap, format)
@@ -331,26 +333,18 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
-def format_tag_omor(stuff, format = 'omor'):
+def format_tag_omor(stuff):
     if stuff == '0':
         return "0"
-    elif '+propers' in format and False:
-        pass
-    elif '+sem' in format and False:
-        pass
     elif stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
         print("Missing from omor mapping: ", stuff, file=stderr)
         return ""
 
-def format_tag_ftb3(stuff, format = 'ftb3'):
+def format_tag_ftb3(stuff):
     if stuff == '0':
         return "0"
-    elif '+propers' in format and False:
-        pass
-    elif '+sem' in format and False:
-        pass
     elif stuff in stuff2ftb3:
         return stuff2ftb3[stuff]
     else:
@@ -405,13 +399,13 @@ def format_lexc_omor(wordmap, format):
 
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_omor('PROPER')
-        if wordmap['proper_noun_class']:
+        if '+propers' in format and wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_omor(prop, format)
+                wordmap['analysis'] += format_tag_omor(prop)
 
-    if wordmap['sem']:
+    if '+semantics' in format and wordmap['sem']:
         for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += format_tag_omor(sem, format)
+            wordmap['analysis'] += format_tag_omor(sem)
 
     # XXX: use stuff2omor to ensure multichars but laziness
     if format == 'ktnkav' and tn < 99:
