@@ -83,7 +83,7 @@ omor.timestamp: master.tsv stemparts.tsv inflections.tsv
 		-S $(top_builddir)/src/morphology/stems \
 		-X $(top_builddir)/src/morphology/inflection \
 		-R $(top_builddir)/src/morphology/definitions.lexc \
-		-f=$(TAG_FORMAT)
+		-f=$(TAG_FORMAT_PRECISE)
 	touch $@
 
 clean-local:

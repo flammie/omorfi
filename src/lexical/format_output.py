@@ -108,7 +108,7 @@ omor_multichars = {
         '[ALLO=ITTEN]', '[ALLO=IEN]', '[ALLO=IHIN]', '[ALLO=IIN]', '[ALLO=IN]',
         '[ALLO=ISIIN]', '[ALLO=IDEN]', '[ALLO=JA]', '[ALLO=JEN]', '[ALLO=SEEN]',
         '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]'}
-ktnkav_multichars = {
+omor_multichars_ktnkav = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
         '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
         '[KTN=11]', '[KTN=12]', '[KTN=13]', '[KTN=14]', '[KTN=15]',
@@ -325,15 +325,15 @@ def format_lexc(wordmap, format):
         return format_lexc_omor(wordmap, format)
     elif format.startswith("ftb3"):
         return format_lexc_ftb3(wordmap, format)
-    elif format == "apertium":
+    elif format.startswith("apertium"):
         return format_lexc_apertium(wordmap)
 
 def format_continuation_lexc(fields, format):
     stuffs = ""
     for cont in fields[3:]:
-        if format in ["omor", "ktnkav"]:
+        if format.startswith("omor") or format.startswith("ktnkav"):
             stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont)
-        elif format.startswith('ftb3'):
+        elif format.startswith("ftb3"):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
@@ -412,11 +412,11 @@ def format_lexc_omor(wordmap, format):
             wordmap['analysis'] += format_tag_omor(sem)
 
     # XXX: use stuff2omor to ensure multichars but laziness
-    if format == 'ktnkav' and tn < 99:
+    if format.startswith("ktnkav") and tn < 99:
         wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
         if wordmap['kotus_av']:
             wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
-    elif format == 'newparas':
+    elif format.startswith("newparas"):
         wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
 
     if wordmap['style']:
@@ -495,7 +495,7 @@ def format_lexc_apertium(wordmap):
 
 def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
-    if format in ['ktnkav', 'omor']:
+    if format.startswith("omor") or format.startswith("ktnkav"):
         multichars += "!! OMOR set:\n"
         for mcs in omor_multichars:
             multichars += mcs + "\n"
@@ -503,11 +503,11 @@ def format_multichars_lexc(format):
         multichars += "!! FTB 3 set:\n"
         for mcs in ftb3_multichars:
             multichars += mcs + "\n"
-    if format == 'ktnkav':
+    if format.startswith("ktnkav"):
         multichars += "!! KTNKAV set:\n"
         for mcs in omor_multichars_ktnkav:
             multichars += mcs + "\n"
-    if format == 'newparas':
+    if format.startswith("newparas"):
         multichars += """!! NEWPARA set:
 [NEWPARA=
         """

@@ -94,22 +94,23 @@ AC_ARG_ENABLE([proper_subclasses],
                               [include subclasses of proper names in analyses @<:@default=no@:>@])],
                               [enable_proper_subclasses=$enableval],
                               [enable_proper_subclasses=no])
-AS_IF([test x$enabel_proper_subclasses != xno], [tag_format=ftb3+propers])
+AS_IF([test x$enable_proper_subclasses != xno], [tag_format=ftb3+propers])
 AC_ARG_ENABLE([semantics],
               [AS_HELP_STRING([--enable-semantics],
                               [include some semantic classifications in analyses @<:@default=no@:>@])],
                               [enable_semantics=$enableval],
                               [enable_semantics=no])
-AS_IF([test x$enabel_semantics != xno], [tag_format=ftb3+semantics])
+AS_IF([test x$enable_semantics != xno], [tag_format=ftb3+semantics])
 # generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([multichar_format],
               [AS_HELP_STRING([--enable-multichar-format],
                               [use other formats for multichar symbols @<:@default=ftb3@:>@])],
                              [tag_format=$enableval],
                              [tag_format=ftb3])
-AC_SUBST([TAG_FORMAT], [$tag_format])
 AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
 AC_SUBST([FTB3], [$enable_ftb3])
+AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
+AC_SUBST([TAG_FORMAT], [${tag_format%%+*}])
 
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
