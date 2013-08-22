@@ -331,18 +331,26 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
-def format_tag_omor(stuff):
+def format_tag_omor(stuff, format = 'omor'):
     if stuff == '0':
         return "0"
+    elif '+propers' in format and False:
+        pass
+    elif '+sem' in format and False:
+        pass
     elif stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
         print("Missing from omor mapping: ", stuff, file=stderr)
         return ""
 
-def format_tag_ftb3(stuff):
+def format_tag_ftb3(stuff, format = 'ftb3'):
     if stuff == '0':
         return "0"
+    elif '+propers' in format and False:
+        pass
+    elif '+sem' in format and False:
+        pass
     elif stuff in stuff2ftb3:
         return stuff2ftb3[stuff]
     else:
@@ -399,11 +407,11 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_tag_omor('PROPER')
         if wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_omor(prop)
+                wordmap['analysis'] += format_tag_omor(prop, format)
 
     if wordmap['sem']:
         for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += format_tag_omor(sem)
+            wordmap['analysis'] += format_tag_omor(sem, format)
 
     # XXX: use stuff2omor to ensure multichars but laziness
     if format == 'ktnkav' and tn < 99:
@@ -444,7 +452,6 @@ def format_lexc_ftb3(wordmap, format):
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
     wordmap['stub'] = lexc_escape(wordmap['stub'])
-    # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
     retvals = []
     for new_para in wordmap['new_paras']:
