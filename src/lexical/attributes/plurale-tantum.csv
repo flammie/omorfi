@@ -12024,7 +12024,7 @@
 "Vanhanpuolenkummut","1","H","Prop","plt=obligatory"
 "Vanhanrannankalliot","3","0","Prop","plt=obligatory"
 "Vanhantorpansuot","19","0","Prop","plt=obligatory"
-"vanhempi","16","H","A","plt=common"
+"vanhempi","16","H","N","plt=common"
 "Vanhuhdanlukot","1","A","Prop","plt=obligatory"
 "vanhuudenpäivät","10","0","N","plt=obligatory"
 "vankkurit","6","0","N","plt=obligatory"
