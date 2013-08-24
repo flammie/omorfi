@@ -143,7 +143,7 @@ stuff2ftb3 = {"Bc": "#",
         "Dnut": "", "Dtu": "", "Duus": "", "Dva": "", "Dmaton": "",
         "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
         "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
-        "Din": "", "Ds": "",
+        "Din": "", "Ds": "", "Du": "",
         "Ia": "% Inf1",
         "Ie": "% Inf2",
         "Ima": "% Inf3",
@@ -359,6 +359,10 @@ def format_tag_ftb3(stuff):
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
+    if anals == 'Nneg|Vact|Psg3':
+        anals = 'Nneg|Psg3'
+    elif anals == 'Nneg|Vact|Ppl3':
+        anals = 'Nneg|Ppl3'
     parts = anals.split('|')
     reordered = []
     for part in parts:
