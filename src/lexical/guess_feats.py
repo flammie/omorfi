@@ -12,11 +12,11 @@ def guess_grade_dir(wordmap):
         wordmap['grade_dir'] = 'strengthen'
     elif tn in [0, 99, 101]:
         wordmap['grade_dir'] = False
-    elif tn in [1007, 1008, 1009, 1010, 1024, 1026, 1067, 1099]:
+    elif tn in [1007, 1008, 1009, 1010, 1024, 1026, 1067, 1099, 1101]:
         wordmap['grade_dir'] = 'weaken'
     else:
         fail_guess_because(wordmap, [], ["0-78", 99, 101, 1007, 1008, 1009, 1010, 
-            1024, 1026, 1067, 1099])
+            1024, 1026, 1067, 1099, 1101])
     return wordmap
 
 def guess_stem_features_ktn(wordmap):
