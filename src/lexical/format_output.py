@@ -36,6 +36,7 @@ ftb3_multichars= {
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
         '% Foc_pA', '% Foc_s', '% Foc_kA', 
         '% Man'}
+
 omor_multichars = {
         '[WORD_ID=', '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[SUBCAT=PRONOUN]', '[SUBCAT=NUMERAL]',
@@ -108,8 +109,69 @@ omor_multichars = {
         '[ALLO=TA]', '[ALLO=HVN]', '[ALLO=IA]', '[ALLO=IDEN]', '[ALLO=ITA]',
         '[ALLO=ITTEN]', '[ALLO=IEN]', '[ALLO=IHIN]', '[ALLO=IIN]', '[ALLO=IN]',
         '[ALLO=ISIIN]', '[ALLO=IDEN]', '[ALLO=JA]', '[ALLO=JEN]', '[ALLO=SEEN]',
-        '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]'}
-omor_multichars_ktnkav = {
+        '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]',
+		'[PROP=FIRST]', '[PROP=GEO]', '[PROP=LAST]',
+        '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
+        '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
+        '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
+        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]'}
+
+omor_short_multichars = {
+        '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
+        '[POS=PARTICLE]', '[POS=PRONOUN]', '[POS=NUMERAL]',
+        '[SUBCAT=PROPER]', '[SUBCAT=ADVERB]', '[SUBCAT=ADPOSITION]',
+        '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
+        '[SUBCAT=DEMONSTR]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROG]',
+        '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEX]',
+        '[SUBCAT=RECIPROC]', '[SUBCAT=INDEF]', 
+		'[SUBCAT=CARD]', '[SUBCAT=ORD]',
+        '[SUBCAT=CONJUNCTION]', '[SUBCAT=COORD]', '[SUBCAT=ADVERBIAL]',
+        '[SUBCAT=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
+        '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
+        '[SUBCAT=ACRONYM]', '[SUBCAT=PUNCTUATION]', '[SUBCAT=SYMBOL]',
+        '[SUBCAT=SPACE]', '[SUBCAT=QUOTATION]', '[SUBCAT=BRACKET]',
+        '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
+        '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
+        '[SUBCAT=FINAL]', 
+        '[CASE=NOM]','[CASE=PAR]', '[CASE=GEN]', '[CASE=INE]', '[CASE=ELA]',
+        '[CASE=ILL]', '[CASE=ADE]', '[CASE=ABL]', '[CASE=ALL]', '[CASE=ESS]',
+        '[CASE=INS]', '[CASE=ABE]', '[CASE=TRA]', '[CASE=COM]' , '[CASE=LAT]',
+        '[CASE=ACC]', '[NUM=SG]', '[NUM=PL]', '[POSS=SG1]', '[POSS=SG2]',
+        '[POSS=SG3]', '[POSS=PL1]', '[POSS=PL2]', '[POSS=PL3]',
+        '[POSS=3]',
+        '[BOUNDARY=COMPOUND]', '[COMPOUND_FORM=S]', '[COMPOUND_FORM=OMIT]',
+        '[TENSE=PRESENT]',
+        '[TENSE=PAST]', '[MOOD=INDV]', '[MOOD=COND]', '[MOOD=POTN]',
+        '[MOOD=IMPV]', '[MOOD=OPTATIVE]', '[MOOD=EVNV]',
+        '[PRS=SG1]', '[PRS=SG2]', '[PRS=SG3]', 
+		'[PRS=PL1]', '[PRS=PL2]', '[PRS=PL3]', '[PRS=PE4]',
+        '[NEG=CON]' , '[SUBCAT=NEG]', '[VOICE=ACT]', '[VOICE=PSS]',
+        '[INF=A]', '[INF=E]', '[INF=MA]', 
+		'[DRV=MINEN]', '[DRV=MAISILLA]',
+        '[PCP=NUT]', '[PCP=AGENT]', '[PCP=VA]', '[PCP=NEG]',
+        '[DRV=NUT]', '[DRV=TU]', '[DRV=MA]', '[DRV=VA]', '[DRV=MATON]',
+        '[CMP=POS]', '[CMP=CMP]','[CMP=SUP]',
+        '[DRV=MPI]', '[DRV=IN]',
+        '[CLIT=HAN]', '[CLIT=KAAN]', '[CLIT=KIN]', '[CLIT=KO]',
+        '[CLIT=PA]', '[CLIT=S]', '[CLIT=KA]', '[DRV=STI]', '[DRV=JA]',
+        '[DRV=INEN]', '[DRV=LAINEN]', '[DRV=TAR]', '[DRV=LLINEN]', '[DRV=TON]',
+        '[DRV=TSE]', '[DRV=OI]', '[DRV=VS]', '[DRV=U]', '[DRV=TTAIN]',
+        '[DRV=TTAA]', '[DRV=TATTAA]', '[DRV=TATUTTAA]', '[DRV=UUS]',
+        '[DRV=S]', '[DRV=NUT]',
+        '[STYLE=NONSTANDARD]', '[STYLE=RARE]', '[STYLE=DIALECTAL]',
+        '[STYLE=ARCHAIC]', 
+		'[GUESS=COMPOUND]', '[GUESS=DERIVE]', '[ALLO=A]',
+        '[ALLO=TA]', '[ALLO=HVN]', '[ALLO=IA]', '[ALLO=IDEN]', '[ALLO=ITA]',
+        '[ALLO=ITTEN]', '[ALLO=IEN]', '[ALLO=IHIN]', '[ALLO=IIN]', '[ALLO=IN]',
+        '[ALLO=ISIIN]', '[ALLO=IDEN]', '[ALLO=JA]', '[ALLO=JEN]', '[ALLO=SEEN]',
+        '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]',
+		'[PROP=FIRST]', '[PROP=GEO]', '[PROP=LAST]',
+        '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
+        '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
+        '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
+        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]'}
+
+ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
         '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
         '[KTN=11]', '[KTN=12]', '[KTN=13]', '[KTN=14]', '[KTN=15]',
@@ -130,6 +192,7 @@ omor_multichars_ktnkav = {
         '[KAV=F]', '[KAV=G]', '[KAV=H]', '[KAV=I]', '[KAV=J]',
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
         '[KAV=N]', '[KAV=O]', '[KAV=P]', '[KAV=T]'}
+
 stuff2ftb3 = {"Bc": "#",
         "B-": "% TrunCo",
         "Cma": "% AgPrc",
@@ -214,7 +277,6 @@ stuff2ftb3 = {"Bc": "#",
         "DEMONSTRATIVE": "% Dem", "QUANTOR": "% Qnt", "PERSONAL": "% Pers",
         "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel"}
-        
 
 stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "B-": "[COMPOUND_FORM=OMIT]",
@@ -248,6 +310,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "Nneg": "[SUBCAT=NEGATIONVERB]", 
         "Npl": "[NUMBER=PLURAL]", 
         "Nsg": "[NUMBER=SINGULAR]", 
+        "N??": "",
         "Osg1": "[POSSESSIVE=1STSINGULAR]",
         "Osg2": "[POSSESSIVE=2NDSINGULAR]",
         "O3": "[POSSESSIVE=3RDAMBIGUOUS]",
@@ -295,7 +358,9 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "Xtra": "[CASE=TRANSLATIVE]", 
         "Xlat": "[CASE=LATIVE]",
         "Xacc": "[CASE=ACCUSATIVE]",
-        "NOUN": "[POS=NOUN]", "PARTICLE": "[POS=PARTICLE]", 
+        "X???": "",
+        "NOUN": "[POS=NOUN]", 
+		"PARTICLE": "[POS=PARTICLE]", 
         "VERB": "[POS=VERB]",
         "ADVERB": "[SUBCAT=ADVERB]",
         "ADJECTIVE": "[SUBCAT=ADJECTIVE]",
@@ -306,23 +371,137 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "ADVERBIAL": "[SUBCAT=ADVERBIAL]",
         "NUMERAL": "[SUBCAT=NUMERAL]",
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
-        "ACRONYM": "[SUBCAT=ACRONYM]", "ABBREVIATION": "[SUBCAT=ABBREVIATION]",
-        "SUFFIX": "[SUBCAT=SUFFIX]", "PREFIX": "[SUBCAT=PREFIX]",
+        "ACRONYM": "[SUBCAT=ACRONYM]", 
+		"ABBREVIATION": "[SUBCAT=ABBREVIATION]",
+        "SUFFIX": "[SUBCAT=SUFFIX]", 
+		"PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[SUBCAT=ADPOSITION]",
-        "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", "QUANTOR": "[SUBCAT=QUANTOR]", 
+        "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", 
+		"QUANTOR": "[SUBCAT=QUANTOR]", 
         "PERSONAL": "[SUBCAT=PERSONAL]",
-        "INDEFINITE": "[SUBCAT=INDEFINITE]", "INTERROGATIVE": "[SUBCAT=INTERROGATIVE]",
-        "REFLEXIVE": "[SUBCAT=REFLEXIVE]", "RELATIVE": "[SUBCAT=RELATIVE]",
+        "INDEFINITE": "[SUBCAT=INDEFINITE]", 
+		"INTERROGATIVE": "[SUBCAT=INTERROGATIVE]",
+        "REFLEXIVE": "[SUBCAT=REFLEXIVE]", 
+		"RELATIVE": "[SUBCAT=RELATIVE]",
+		"RECIPROCAL": "[SUBCAT=RECIPROCAL]",
         "ARCHAIC": "[STYLE=ARCHAIC]",
         "DIALECTAL": "[STYLE=DIALECTAL]",
         "NONSTANDARD": "[STYLE=NONSTANDARD]",
         "RARE": "[STYLE=RARE]",
-        "TITLE": "[SEM=TITLE]", "TIME": "[SEM=TIME]", "CURRENCY": "[SEM=CURRENCY]",
-		"MEDIA": "[SEM=MEDIA]", "POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
-		"PROPER": "[SUBCAT=PROPER]", "CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
-        "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", "GEO": "[PROP=GEO]", 
-        "FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", "ORG": "[PROP=ORG]", "MISC": "[PROP=MISC]"}
+        "TITLE": "[SEM=TITLE]", "TIME": "[SEM=TIME]", 
+		"CURRENCY": "[SEM=CURRENCY]", "MEDIA": "[SEM=MEDIA]", 
+		"POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
+		"PROPER": "[SUBCAT=PROPER]", 
+		"CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
+        "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
+		"FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", 
+		"GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
+		"MISC": "[PROP=MISC]"}
+
+stuff2omor_short = {
+        "Bc": "[BOUNDARY=COMPOUND]", 
+		"B-": "[COMPOUND_FORM=OMIT]",
+		"Cma": "[PCP=AGENT]",
+        "Cmaton": "[PCP=NEG]", 
+		"Cva": "[PCP=VA]",
+		"Cnut": "[PCP=NUT]",
+        "Cpos": "[CMP=POS]", 
+        "Ccmp": "[CMP=CMP]", 
+		"Csup": "[CMP=SUP]", 
+        "Dinen": "[DRV=INEN]", 
+		'Dja': '[DRV=JA]',
+        "Dmaisilla": "[DRV=MAISILLA]", 
+		"Dminen": "[DRV=MINEN]",
+        "Dtu": "[DRV=TU]", 
+		"Dva": "[DRV=TU]", 
+		"Dnut": "[DRV=NUT]",
+        "Dma": "[DRV=MA]", 
+		"Dmaton": "[DRV=MATON]",
+        "Ds": "[DRV=S]", 
+		"Dttaa": "[DRV=TTAA]", 
+		"Dtattaa": "[DRV=TATTAA]",
+        "Dtatuttaa": "[DRV=TATUTTAA]", 
+		"Duus": "[DRV=UUS]",
+        "Dmpi": "[DRV=MPI]", 
+		"Din": "[DRV=IN]",
+        "Ia": "[INF=A]", 
+		"Ie": "[INF=E]", 
+		"Ima": "[INF=MA]",
+        "Ncon": "[NEG=CON]",
+        "Nneg": "[SUBCAT=NEG]", 
+		"Npl": "[NUM=PL]",
+        "Nsg": "[NUM=SG]",
+        "N??": "",
+        "Osg1": "[POSS=SG1]", "Osg2": "[POSS=SG2]", "O3": "[POSS=3]",
+        "Opl1": "[POSS=PL1]", "Opl2": "[POSS=PL2]",
+        "Ppl1": "[PRS=PL1]", "Ppl2": "[PRS=PL2]",
+        "Ppl3": "[PRS=PL3]", "Psg1": "[PRS=SG1]", "Psg2": "[PRS=SG2]",
+        "Psg3": "[PRS=SG3]", "Ppe4": "[PRS=PE4]",
+        "Qka": "[CLIT=KA]", "Qs": "[CLIT=S]",
+        "Qpa": "[CLIT=PA]", "Qko": "[CLIT=KO]",
+        "Qkin": "[CLIT=KIN]",
+        "Qkaan": "[CLIT=KAAN]", 
+		"Qhan": "[CLIT=HAN]",
+        "Tcond": "[MOOD=COND]", 
+		"Timp": "[MOOD=IMPV]",
+        "Tpast": "[TENSE=PAST]", 
+		"Tpot": "[MOOD=POTN]", 
+		"Topt": "[MOOD=OPTATIVE]",
+        "Tpres": "[TENSE=PRESENT]", 
+		"Uarch": "[STYLE=ARCHAIC]",
+        "Udial": "[STYLE=DIALECTAL]", 
+        "Unonstd": "[STYLE=NONSTANDARD]",
+		"Urare": "[STYLE=RARE]",
+        "Vact": "[VOICE=ACT]", "Vpss": "[VOICE=PSS]",
+        "Xabe": "[CASE=ABE]", "Xabl": "[CASE=ABL]",
+        "Xade": "[CASE=ADE]", "Xall": "[CASE=ALL]",
+        "Xcom": "[CASE=COM]", "Xela": "[CASE=ELA]",
+        "Xess": "[CASE=ESS]", "Xgen": "[CASE=GEN]",
+        "Xill": "[CASE=ILL]", "Xine": "[CASE=INE]",
+        "Xins": "[CASE=INS]", "Xnom": "[CASE=NOM]",
+        "Xpar": "[CASE=PAR]", "Xtra": "[CASE=TRA]", 
+		"Xlat": "[CASE=LAT]", "Xacc": "[CASE=ACC]",
+        "X???": "",
+        "NOUN": "[POS=NOUN]", 
+		"PARTICLE": "[POS=PARTICLE]", 
+        "VERB": "[POS=VERB]",
+        "ADVERB": "[SUBCAT=ADVERB]",
+        "ADJECTIVE": "[SUBCAT=ADJECTIVE]",
+        "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
+        "COORDINATING": "[SUBCAT=COORD]",
+        "COMPARATIVE": "[SUBCAT=COMPARATIVE]",
+        "PRONOUN": "[SUBCAT=PRONOUN]",
+        "ADVERBIAL": "[SUBCAT=ADVERBIAL]",
+        "NUMERAL": "[SUBCAT=NUMERAL]",
+        "QUALIFIER": "[SUBCAT=QUALIFIER]",
+        "ACRONYM": "[SUBCAT=ACRONYM]", 
+		"ABBREVIATION": "[SUBCAT=ABBREVIATION]",
+        "SUFFIX": "[SUBCAT=SUFFIX]", 
+		"PREFIX": "[SUBCAT=PREFIX]",
+        "INTERJECTION": "[SUBCAT=INTERJECTION]",
+        "ADPOSITION": "[SUBCAT=ADPOSITION]",
+        "DEMONSTRATIVE": "[SUBCAT=DEMONSTR]", 
+		"QUANTOR": "[SUBCAT=QUANTOR]", 
+        "PERSONAL": "[SUBCAT=PERSONAL]",
+        "INDEFINITE": "[SUBCAT=INDEF]", 
+		"INTERROGATIVE": "[SUBCAT=INTERROG]",
+        "REFLEXIVE": "[SUBCAT=REFLEX]", 
+		"RELATIVE": "[SUBCAT=RELATIVE]",
+		"RECIPROCAL": "[SUBCAT=RECIPROC]",
+        "ARCHAIC": "[STYLE=ARCHAIC]",
+        "DIALECTAL": "[STYLE=DIALECTAL]",
+        "NONSTANDARD": "[STYLE=NONSTANDARD]",
+        "RARE": "[STYLE=RARE]",
+        "TITLE": "[SEM=TITLE]", "TIME": "[SEM=TIME]", 
+		"CURRENCY": "[SEM=CURRENCY]", "MEDIA": "[SEM=MEDIA]", 
+		"POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
+		"PROPER": "[SUBCAT=PROPER]", 
+		"CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
+        "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
+		"FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", 
+		"GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
+		"MISC": "[PROP=MISC]"}
 
 def format_lexc(wordmap, format):
     if format.startswith("omor") or format.startswith("ktnkav"):
@@ -336,14 +515,16 @@ def format_continuation_lexc(fields, format):
     stuffs = ""
     for cont in fields[3:]:
         if format.startswith("omor") or format.startswith("ktnkav"):
-            stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont)
+            stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont, format)
         elif format.startswith("ftb3"):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
-def format_tag_omor(stuff):
+def format_tag_omor(stuff, format):
     if stuff == '0':
         return "0"
+    elif format == 'omor-short' and stuff in stuff2omor_short:
+        return stuff2omor_short[stuff]
     elif stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
@@ -393,10 +574,10 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         ftbstring += format_tag_ftb3(anal)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
-def format_continuation_lexc_omor(anals, surf, cont):
+def format_continuation_lexc_omor(anals, surf, cont, format):
     omorstring = ""
     for anal in anals.split('|'):
-        omorstring += format_tag_omor(anal)
+        omorstring += format_tag_omor(anal, format)
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
 def format_lexc_omor(wordmap, format):
@@ -405,31 +586,31 @@ def format_lexc_omor(wordmap, format):
     '''
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
-    wordmap['analysis'] += format_tag_omor(wordmap['pos'])
+    wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
     if wordmap['is_suffix']:
-        wordmap['analysis'] += format_tag_omor('SUFFIX')
+        wordmap['analysis'] += format_tag_omor('SUFFIX', format)
     elif wordmap['is_prefix']:
-        wordmap['analysis'] += format_tag_omor('PREFIX')
+        wordmap['analysis'] += format_tag_omor('PREFIX', format)
 
     if wordmap['subcat']:
         subcats = wordmap['subcat'].split('|')
         for subcat in subcats:
-            wordmap['analysis'] += format_tag_omor(subcat)
+            wordmap['analysis'] += format_tag_omor(subcat, format)
     
     if wordmap['particle']:
         pclasses = wordmap['particle'].split('|')
         for pclass in pclasses:
-            wordmap['analysis'] += format_tag_omor(pclass)
+            wordmap['analysis'] += format_tag_omor(pclass, format)
 
     if wordmap['is_proper']:
-        wordmap['analysis'] += format_tag_omor('PROPER')
+        wordmap['analysis'] += format_tag_omor('PROPER', format)
         if '+propers' in format and wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_omor(prop)
+                wordmap['analysis'] += format_tag_omor(prop, format)
 
     if '+semantics' in format and wordmap['sem']:
         for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += format_tag_omor(sem)
+            wordmap['analysis'] += format_tag_omor(sem, format)
 
     # XXX: use stuff2omor to ensure multichars but laziness
     if format.startswith("ktnkav") and tn < 99:
@@ -440,7 +621,7 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
 
     if wordmap['style']:
-        wordmap['analysis'] += format_tag_omor(wordmap['style'])
+        wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
     
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
@@ -518,7 +699,11 @@ def format_lexc_apertium(wordmap):
 
 def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
-    if format.startswith("omor") or format.startswith("ktnkav"):
+    if format.startswith("omor-short") or format.startswith("ktnkav"):
+        multichars += "!! OMOR (short) set:\n"
+        for mcs in omor_short_multichars:
+            multichars += mcs + "\n"
+    elif format.startswith("omor"):
         multichars += "!! OMOR set:\n"
         for mcs in omor_multichars:
             multichars += mcs + "\n"
@@ -528,7 +713,7 @@ def format_multichars_lexc(format):
             multichars += mcs + "\n"
     if format.startswith("ktnkav"):
         multichars += "!! KTNKAV set:\n"
-        for mcs in omor_multichars_ktnkav:
+        for mcs in ktnkav_multichars:
             multichars += mcs + "\n"
     if format.startswith("newparas"):
         multichars += """!! NEWPARA set:
@@ -567,6 +752,13 @@ if __name__ == '__main__':
         if len(omor) < 2:
             continue
         elif not omor in omor_multichars:
+            print("There are conflicting formattings in here!", omor, 
+                    "is not a valid defined multichar_symbol!")
+            exit(1)
+    for stuff, omor in stuff2omor_short.items():
+        if len(omor) < 2:
+            continue
+        elif not omor in omor_short_multichars:
             print("There are conflicting formattings in here!", omor, 
                     "is not a valid defined multichar_symbol!")
             exit(1)

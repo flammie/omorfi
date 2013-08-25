@@ -110,7 +110,7 @@ AC_ARG_ENABLE([multichar_format],
 AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
 AC_SUBST([FTB3], [$enable_ftb3])
 AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
-AC_SUBST([TAG_FORMAT], [${tag_format%%+*}])
+AC_SUBST([TAG_FORMAT], [${tag_format%%[[+-]]*}])
 
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])

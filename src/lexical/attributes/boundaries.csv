@@ -49559,7 +49559,6 @@
 "sukukunta","10","J","N","boundaries=suku|kunta"
 "sukukypsyys","40","0","N","boundaries=suku|kypsyys"
 "sukukypsä","10","0","N","boundaries=suku|kypsä"
-"sukulainen","38","0","A","boundaries=suku|lainen"
 "sukulaisavioliitto","1","C","N","boundaries=sukulais|avio|liitto"
 "sukulaiskansa","9","0","N","boundaries=sukulais|kansa"
 "sukulaiskieli","26","0","N","boundaries=sukulais|kieli"

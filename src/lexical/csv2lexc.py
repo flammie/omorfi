@@ -82,11 +82,19 @@ def main():
             help="write multichars and roto lexicon to ROOTFILE")
     ap.add_argument("--one-file", "-1", type=argparse.FileType("w"),
             metavar="ONEFILE")
+    def FormatArgType(v):
+        baseformats = ["omor", "omor-short", "ktnkav", "apertium", "giellatekno", "ftb3"]
+        extras = ["propers", "semantics"]
+        parts = v.split('+')
+        if parts[0] not in baseformats:
+            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
+        for ex in parts[1:]:
+            if ex not in extras:
+                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
+        return v
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            choices=["omor", "ktnkav", "apertium", "giellatekno", 
-                "omor+propers", "omor+semantics", "omor+propers+semantics",
-                "ftb3", "ftb3+propers", "ftb3+semantics"])
+            type=FormatArgType)
     args = ap.parse_args()
     # check args
     lemmas = []
