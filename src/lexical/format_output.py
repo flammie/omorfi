@@ -12,7 +12,7 @@ ftb3_multichars= {
         '% Rel', '% Qnt', '% Refl',
         '% %>%>%>',
         '% CS', '% CC', '% Adv',
-        '% Adp', '% Po', '% Pr',
+        '% Adp', '% Po', '% Pr', '% Adp% Po'
         '% Punct',
         '% Quote',
         '% Nom', '% Par', '% Gen', '% Ine', '% Ela',
@@ -21,7 +21,7 @@ ftb3_multichars= {
         '% Acc', '% Sg', '% Pl', '% PxSg1', '% PxSg2',
         '% PxPl1', '% PxPl2', '% PxPl3',
         '% Px3',
-        'TrunCo', 
+        '% TrunCo', 
         '% Prt', '% Prs',
         '% Pst', '% Cond', '% Pot',
         '% Impv',
@@ -34,7 +34,8 @@ ftb3_multichars= {
         '% Pos', '% Comp','% Superl',
         "% Dem", "% Qnt", "% Pers", "% Indef", "% Interr", "% Refl", "% Rel",
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
-        '% Foc_pA', '% Foc_s', '% Foc_kA'}
+        '% Foc_pA', '% Foc_s', '% Foc_kA', 
+        '% Man'}
 omor_multichars = {
         '[WORD_ID=', '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[SUBCAT=PRONOUN]', '[SUBCAT=NUMERAL]',
@@ -130,7 +131,7 @@ omor_multichars_ktnkav = {
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
         '[KAV=N]', '[KAV=O]', '[KAV=P]', '[KAV=T]'}
 stuff2ftb3 = {"Bc": "#",
-        "B-": "TrunCo",
+        "B-": "% TrunCo",
         "Cma": "% AgPrc",
         "Cnut": "% PrfPrc",
         "Cva": "% PrsPrc",
@@ -144,6 +145,7 @@ stuff2ftb3 = {"Bc": "#",
         "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
         "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
         "Din": "", "Ds": "", "Du": "",
+        "FTB3man": "% Man",
         "Ia": "% Inf1",
         "Ie": "% Inf2",
         "Ima": "% Inf3",
@@ -177,7 +179,7 @@ stuff2ftb3 = {"Bc": "#",
         "Tpot": "% Pot", 
         "Tpres": "% Prs",
         "Topt": "",
-        "Uarch": "", "Udial": "", "Urare": "",
+        "Uarch": "", "Udial": "", "Urare": "", "Unonstd": "",
         "Vact": "% Act",
         "Vpss": "% Pass",
         "Xabe": "% Abe",
@@ -204,7 +206,7 @@ stuff2ftb3 = {"Bc": "#",
         "INTERJECTION": "% Interj",
         "PRONOUN": "% Pron",
         "NUMERAL": "% Num",
-        "ADPOSITION": "% Adp",
+        "ADPOSITION": "% Adp% Po",
         "CONJUNCTION": "", "COORDINATING": "% CC", "ADVERBIAL": "% CS",
         "COMPARATIVE": "% CS",
         "ABBREVIATION": "% Abbr", "ACRONYM": "% Abbr",
@@ -361,11 +363,20 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
     if anals == 'Nneg|Vact|Psg3':
         anals = 'Nneg|Psg3'
+    elif anals == 'Nneg|Vact|Ppl1':
+        anals = 'Nneg|Ppl1'
     elif anals == 'Nneg|Vact|Ppl3':
         anals = 'Nneg|Ppl3'
+    elif anals == 'Vact|Ia|Nsg|Xlat':
+        anals = 'Ia|Xlat'
+    elif anals == 'Vact|Ima|Xins':
+        anals = 'Ima|FTB3man'
     parts = anals.split('|')
     reordered = []
     for part in parts:
+        if part.startswith('I'):
+            # Infinitive I before case X
+            reordered.append(part)
         if part.startswith('X'):
             # Case X before Number N
             reordered.append(part)
@@ -375,7 +386,7 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         elif part.startswith('C'):
             # Participle C before voice V
             reordered.append(part)
-    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C')]
+    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C') and not x.startswith('I')]
     for part in parts:
         reordered.append(part)
     for anal in reordered:
