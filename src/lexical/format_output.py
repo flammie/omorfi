@@ -465,13 +465,13 @@ stuff2omor_short = {
 		"PARTICLE": "[POS=PARTICLE]", 
         "VERB": "[POS=VERB]",
         "ADVERB": "[SUBCAT=ADVERB]",
-        "ADJECTIVE": "[SUBCAT=ADJECTIVE]",
+        "ADJECTIVE": "[POS=ADJECTIVE]",
         "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
         "COORDINATING": "[SUBCAT=COORD]",
         "COMPARATIVE": "[SUBCAT=COMPARATIVE]",
-        "PRONOUN": "[SUBCAT=PRONOUN]",
+        "PRONOUN": "[POS=PRONOUN]",
         "ADVERBIAL": "[SUBCAT=ADVERBIAL]",
-        "NUMERAL": "[SUBCAT=NUMERAL]",
+        "NUMERAL": "[POS=NUMERAL]",
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
         "ACRONYM": "[SUBCAT=ACRONYM]", 
 		"ABBREVIATION": "[SUBCAT=ABBREVIATION]",
@@ -521,8 +521,12 @@ def format_continuation_lexc(fields, format):
 def format_tag_omor(stuff, format):
     if stuff == '0':
         return "0"
-    elif format == 'omor-short' and stuff in stuff2omor_short:
-        return stuff2omor_short[stuff]
+    elif format.startswith("omor-short") or format.startswith("ktnkav"):
+        if stuff in stuff2omor_short:
+            return stuff2omor_short[stuff]
+        else:
+            print("Missing from omor-short mapping: ", stuff, file=stderr)
+            return ""
     elif stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
@@ -733,25 +737,28 @@ def format_xml_kotus_sanalista(wordmap):
 
 # self test
 if __name__ == '__main__':
+    fail = False
     for stuff, omor in stuff2omor.items():
         if len(omor) < 2:
             continue
         elif not omor in omor_multichars:
             print("There are conflicting formattings in here!", omor, 
-                    "is not a valid defined multichar_symbol!")
-            exit(1)
+                    "is not a valid defined omor multichar_symbol!")
+            fail = True
     for stuff, omor in stuff2omor_short.items():
         if len(omor) < 2:
             continue
         elif not omor in omor_short_multichars:
             print("There are conflicting formattings in here!", omor, 
-                    "is not a valid defined multichar_symbol!")
-            exit(1)
+                    "is not a valid defined omor-short multichar_symbol!")
+            fail = True
     for stuff, ftb3 in stuff2ftb3.items():
         if len(ftb3) < 2:
             continue
         elif not ftb3 in ftb3_multichars:
             print("There are conflicting formattings in here!", ftb3, 
-                    "is not a valid defined multichar_symbol!")
-            exit(1)
+                    "is not a valid defined ftb3 multichar_symbol!")
+            fail = True
+    if fail:
+        exit(1)
 
