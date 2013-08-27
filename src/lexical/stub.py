@@ -158,6 +158,8 @@ def stub_all(wordmap):
             wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['n'])
         elif wordmap['kotus_tn'] in [0, 99]:
             pass
+        elif wordmap['kotus_tn'] == 1101:
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ka'])
         else:
             fail_guess_because(wordmap, ['!av'], ['0-71', 1007, 1010,1009,
                 1024, 1026, 1067, 1099])

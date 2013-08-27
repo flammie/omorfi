@@ -4787,6 +4787,11 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_MONI']
         else:
             fail_guess_because(wordmap, ['PRON', 23], ['moni'])
+    elif wordmap['kotus_tn'] == 31:
+        if wordmap['lemma'] == 'yksi':
+            wordmap['new_paras'] = ['PRON_YKSI']
+        else:
+            fail_guess_because(wordmap, ['PRON', 31], ['yksi'])
     elif wordmap['kotus_tn'] == 36:
         if wordmap['lemma'] in ['usein', 'useimmat']:
             wordmap['new_paras'] = ['PRON_USEIMMAT']
@@ -4868,15 +4873,21 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_AINOA']
         elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
                 'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
-                'koko']:
+                'koko', 'yks', 'yksikään']:
             wordmap['new_paras'] = ['#']
         else:
             fail_guess_because(wordmap, ['PRON', 101], ['minä', 'sinä', 'hän',
                 'me', 'te', 'he', '...'])
+    elif wordmap['kotus_tn'] == 1101:
+        # temporary hacks for multiclassing
+        if wordmap['lemma'] == 'joka':
+            wordmap['new_paras'] = ['PRON_JOKA']
+        else:
+            fail_guess_because(wordmap, ['PRON', 1101], ['joka'])
     else:
-        fail_guess_because(wordmap, ['PRON'], [7, 8, 9, 10, 15, 16, 23, 38,
+        fail_guess_because(wordmap, ['PRON'], [7, 8, 9, 10, 15, 16, 23, 31, 38,
                                                41, 45, 101],
-                'Not implemented acro classes yet')
+                'Not implemented pron classes yet')
     return wordmap
 
 def guess_new_numeral(wordmap):
