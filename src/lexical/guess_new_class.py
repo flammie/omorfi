@@ -768,9 +768,9 @@ def guess_new_noun(wordmap):
         elif tn == 15:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('oa'):
-                    wordmap['new_paras'] = ['N_AINOA']
+                    wordmap['new_paras'] = ['N_PIIROA']
                 elif wordmap['lemma'].endswith('ôa'):
-                    wordmap['new_paras'] = ['N_AINOA']
+                    wordmap['new_paras'] = ['N_PIIROA']
                 elif wordmap['lemma'].endswith('ea'):
                     wordmap['new_paras'] = ['N_SOKEA']
                 elif wordmap['lemma'].endswith('eä'):
@@ -2383,7 +2383,7 @@ def guess_new_noun(wordmap):
                     wordmap['new_paras'] = ['N_LIVVADIEVÁT']
                 else:
                     fail_guess_because(wordmap, ['N', 21, False, 'PLT'],
-                            ['má'])
+                            ['át'])
             else:
                 fail_guess_because(wordmap, ['N', 21, 'PLT'],
                         [False])
