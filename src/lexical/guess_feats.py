@@ -10,7 +10,7 @@ def guess_grade_dir(wordmap):
         wordmap['grade_dir'] = 'weaken'
     elif tn in range(32, 50) or tn in range(62, 76):
         wordmap['grade_dir'] = 'strengthen'
-    elif tn in [0, 99, 101]:
+    elif tn in [0, 99, 101, 999]:
         wordmap['grade_dir'] = False
     elif tn in [1007, 1008, 1009, 1010, 1024, 1026, 1067, 1099, 1101]:
         wordmap['grade_dir'] = 'weaken'

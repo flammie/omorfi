@@ -598,7 +598,7 @@ def guess_new_noun(wordmap):
                 elif wordmap['lemma'].endswith('ą'):
                     wordmap['new_paras'] = ['N_SOITTAJA']
                 elif wordmap['lemma'].endswith('ă'):
-                    wordmap['new_paras'] = ['N_SOITTAJA']
+                    wordmap['new_paras'] = ['N_VODĂ']
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_paras'] = ['N_HÖPÖTTÄJÄ']
                 elif wordmap['lemma'].endswith('an'):
@@ -4882,8 +4882,10 @@ def guess_new_pronoun(wordmap):
         # temporary hacks for multiclassing
         if wordmap['lemma'] == 'joka':
             wordmap['new_paras'] = ['PRON_JOKA']
+        elif wordmap['lemma'] == 'mikä':
+            wordmap['new_paras'] = ['PRON_MIKÄ']
         else:
-            fail_guess_because(wordmap, ['PRON', 1101], ['joka'])
+            fail_guess_because(wordmap, ['PRON', 1101], ['joka', 'mikä'])
     else:
         fail_guess_because(wordmap, ['PRON'], [7, 8, 9, 10, 15, 16, 23, 31, 38,
                                                41, 45, 101],

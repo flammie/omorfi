@@ -1,11 +1,13 @@
-
+! These are some single letters found in ftb3
 LEXICON PUNCTUATION
+=% Abbr% Nom% Sg:=  #   ;
+°% Abbr% Nom% Sg:°  #    ;
 §% Abbr% Nom% Sg:§  #   ;
+%%% Abbr% Nom% Sg:%%    #    ;
 ´% Punct:´ # ;
 `% Punct:` # ;
 ×% Punct:×  #    ;
 |% Punct:|  #    ;
-°% Punct:°  #    ;
 _% Punct:_  #    ;
 ,% Punct:,  #   ;
 ¡% Punct:¡ # ;
@@ -51,7 +53,6 @@ $% Punct:$  #    ;
 %!% Punct:%!      #        ;
 %#% Punct:%#    #    ;
 %#% Punct:%#    #    ;
-%%% Punct:%%    #    ;
 +% Punct:+  #   ;
 ±% Punct:±  #    ;
 ‰% Punct:‰      #    ;
@@ -84,4 +85,3 @@ $% Punct:$  #    ;
 %#% Unkwn:%#    #    ;
 ±% Unkwn:±  #    ;
  % Punct:     #    ; ! NBSP
-

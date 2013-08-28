@@ -1,6 +1,5 @@
-# Remove analyses before hash signs
-# (list from Multichars. sorted)
-% A -> 0,
+# Remove these analyses before hash signs
+[  % A -> 0,
 % Gen -> 0,
 % N -> 0,
 % Nom -> 0,
@@ -8,4 +7,10 @@
 % Pl -> 0,
 % Prop -> 0,
 % Sg -> 0,
-% V -> 0 || _ ?* %# ;
+% V -> 0 || _ ?* %# ]
+.o.
+# Remove V before Prc
+[ % V -> 0 || _ [ % PrsPrc | % PrfPrc | % NegPrc | % AgPrc ] ] 
+.o.
+# Pr? Po? Let the context decide!
+[ % Po (->) % Pr ] ;

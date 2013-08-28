@@ -26,7 +26,7 @@ def stub_all(wordmap):
                         ['an', 'än'])
             else:
                 wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
-                        ['a', 'ä'])
+                        ['a', 'ä', 'ă'])
         elif tn == 41 and wordmap['pos'] == 'ADJECTIVE' and (wordmap['stub'].endswith('is') or wordmap['stub'].endswith('paras')):
             wordmap['stub'] = wordmap['stub'][:-2] 
         elif tn in [7, 16] or tn in range(33, 38) or tn in range(39, 47):
@@ -153,15 +153,15 @@ def stub_all(wordmap):
                     'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:
                 pass
-        elif wordmap['kotus_tn'] == 99 and wordmap['possessive'] \
+        elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] \
                 and wordmap['stub'].endswith('n'):
             wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['n'])
-        elif wordmap['kotus_tn'] in [0, 99]:
+        elif wordmap['kotus_tn'] in [0, 99, 999]:
             pass
         elif wordmap['kotus_tn'] == 1101:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ka'])
+            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ka', 'kä'])
         else:
-            fail_guess_because(wordmap, ['!av'], ['0-71', 1007, 1010,1009,
+            fail_guess_because(wordmap, ['!av'], ['0-71', 999, 1007, 1010,1009,
                 1024, 1026, 1067, 1099])
     elif wordmap['grade_dir'] == 'weaken':
         if wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:

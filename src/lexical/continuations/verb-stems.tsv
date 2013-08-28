@@ -502,7 +502,7 @@ V_POLKEA	0	jet	V_BACK_PASSIVE	V_BACK_TUPCP_0
 V_POLKEA	0	je	V_BACK_WEAK_PRESENT	V_BACK_PASSIVE_T
 V_POLKEA	0	ke	V_BACK_AINF	V_BACK_STRONG_PRESENT	V_BACK_3SG_E	V_BACK_IMPERATIVE	V_BACK_POTENTIAL_N	V_BACK_DERIV_PCPS
 V_EI	Nneg|Vact|Psg3	ei	V_FRONT_CLIT_OPT
-V_EI	Nneg|Vact|Timp|Psg2	älä	V_FRONT_CLIT_OPT/Neg
+V_EI	Nneg|Vact|Timp|Psg2	älä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl3	älkööt	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl1|Qka	älkäämmekä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Ppl1	emme	V_FRONT_CLIT_OPT
@@ -586,7 +586,9 @@ V_OLLA	Vact|Tcond|Psg2|Udial	oisit	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tpot|Ncon	liene	V_FRONT_CLIT_OPT
 V_OLLA	Vact|Tcond|Psg1|Udial	oisin	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tpot|Ppl2	lienette	V_FRONT_CLIT_OPT
-V_OLLA	Vact|Cnut	oll	A_KULUNUT
+V_OLLA	Vact|Cnut|Dnut	oll	A_KULUNUT
+V_OLLA	Vact|Tpast|Ncon|Nsg	ollut	V_BACK_CLIT_OPT
+V_OLLA	Vact|Tpast|Ncon|Npl	olleet	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tpres|Ppl3	ovat	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tpot|Psg3	lienee	V_FRONT_CLIT_OPT
 V_OLLA	Vact|Tcond|Ppl3|Udial	oisivat	V_BACK_CLIT_OPT

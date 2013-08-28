@@ -122,7 +122,7 @@ def main():
                 continue
             if not join_on in words.keys():
                 print("\033[93mMissing!\033[0mCould not find the key",
-                        join_on, "from", join_file.name,
+                        join_on, "used by", join_file.name,
                 "line", linecount, "in any of", args.input, file=stderr)
             else:
                 this_entry = words[join_on]

@@ -30,9 +30,10 @@ ftb3_multichars= {
         '% ConNeg' , '% Neg', 
         '% Act', '% Pass',
         '% Inf1', '% Inf2', '% Inf3', '% Inf5',
-        '% PrsPrc', '% PrfPrc', '% AgPrc',
+        '% PrsPrc', '% PrfPrc', '% AgPrc', '% NegPrc',
         '% Pos', '% Comp','% Superl',
         "% Dem", "% Qnt", "% Pers", "% Indef", "% Interr", "% Refl", "% Rel",
+        '% Ord',
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
         '% Foc_pA', '% Foc_s', '% Foc_kA', 
         '% Man'}
@@ -198,7 +199,7 @@ stuff2ftb3 = {"Bc": "#",
         "Cma": "% AgPrc",
         "Cnut": "% PrfPrc",
         "Cva": "% PrsPrc",
-        "Cmaton": "",
+        "Cmaton": "% NegPrc",
         "Cpos": "% Pos",
         "Ccmp": "% Comp",
         "Csup": "% Superl",
@@ -274,6 +275,7 @@ stuff2ftb3 = {"Bc": "#",
         "COMPARATIVE": "% CS",
         "ABBREVIATION": "% Abbr", "ACRONYM": "% Abbr",
         "PROPER": "% Prop",
+        "CARDINAL": "", "ORDINAL": "% Ord",
         "DEMONSTRATIVE": "% Dem", "QUANTOR": "% Qnt", "PERSONAL": "% Pers",
         "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel"}
@@ -542,32 +544,55 @@ def format_tag_ftb3(stuff):
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
-    if anals == 'Nneg|Vact|Psg3':
-        anals = 'Nneg|Psg3'
-    elif anals == 'Nneg|Vact|Ppl1':
-        anals = 'Nneg|Ppl1'
-    elif anals == 'Nneg|Vact|Ppl3':
-        anals = 'Nneg|Ppl3'
+    if 'Nneg|Vact' in anals:
+        anals = anals.replace('|Vact', '')
     elif anals == 'Vact|Ia|Nsg|Xlat':
         anals = 'Ia|Xlat'
     elif anals == 'Vact|Ima|Xins':
         anals = 'Ima|FTB3man'
+    elif 'Vact|Ima' in anals:
+        anals = anals.replace('Vact|', '')
+    elif anals == 'Vact|Ie|Nsg|Xins':
+        anals = 'Ie|Vact|Xins'
+    elif anals == 'Vact|Tpres|Ppe4|Ncon':
+        anals = 'Vact|Tpres|Ncon'
+    elif anals == 'Vpss|Tpres|Ppe4|Ncon':
+        anals = 'Vpss|Tpres|Ncon'
     parts = anals.split('|')
+    # Here is a bit of puzzle
+    # I < X
+    # V < X
+    # T < V
+    # C < V
+    # X < S
+    # -----
+    # I < T,C < V < X < N
     reordered = []
+    # append I first
     for part in parts:
         if part.startswith('I'):
             # Infinitive I before case X
             reordered.append(part)
-        if part.startswith('X'):
-            # Case X before Number N
-            reordered.append(part)
-        elif part.startswith('T'):
+    # then T or C
+    for part in parts:
+        if part.startswith('T'):
             # Tense T before Voice V
             reordered.append(part)
         elif part.startswith('C'):
             # Participle C before voice V
             reordered.append(part)
-    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C') and not x.startswith('I')]
+    # then V
+    for part in parts:
+        if part.startswith('V'):
+            # Voice V before Case X
+            reordered.append(part)
+    # then X
+    for part in parts:
+        if part.startswith('X'):
+            # Case X before Number N
+            reordered.append(part)
+    # then rest in their natural order
+    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C') and not x.startswith('I') and not x.startswith('V')]
     for part in parts:
         reordered.append(part)
     for anal in reordered:

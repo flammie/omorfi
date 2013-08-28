@@ -37135,6 +37135,8 @@
 "perustamiskokous","39","0","N","boundaries=perustamis|kokous"
 "perustamistyö","19","0","N","boundaries=perustamis|työ"
 "perustamisvuosi","27","0","N","boundaries=perustamis|vuosi"
+"perustamishanke","48","A","N","boundaries=perustamis|hanke"
+"perustamissopimus","39","0","N","boundaries=perustamis|sopimus"
 "perustarve","48","E","N","boundaries=perus|tarve"
 "perustase","48","0","N","boundaries=perus|tase"
 "perustaso","1","0","N","boundaries=perus|taso"
