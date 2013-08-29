@@ -12,7 +12,7 @@ ftb3_multichars= {
         '% Rel', '% Qnt', '% Refl',
         '% %>%>%>',
         '% CS', '% CC', '% Adv',
-        '% Adp', '% Po', '% Pr', '% Adp% Po'
+        '% Adp', '% Po', '% Pr', '% Adp% Po',
         '% Punct',
         '% Quote',
         '% Nom', '% Par', '% Gen', '% Ine', '% Ela',

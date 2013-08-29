@@ -13,4 +13,6 @@
 [ % V -> 0 || _ [ % PrsPrc | % PrfPrc | % NegPrc | % AgPrc ] ] 
 .o.
 # Pr? Po? Let the context decide!
-[ % Po (->) % Pr ] ;
+[ % Po (->) % Pr ]
+.o.
+[ % Adp% Po (->) % Adp % Pr ]  ;
