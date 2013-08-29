@@ -5,6 +5,26 @@
 This file lists noteworthy changes between releases, for full list of changes, 
 see git log and then ``ChangeLog.old``.
 
+Significant changes in 20130829
+-------------------------------
+
+* Default tag format is now FTB3.1. Recall is 90 % and the format is stable and
+  easy to read by humans, which is now the main target for computational
+  morphologies.
+* The omor tagsets are now permanently unstable and subject to change any day.
+  To use them, python scripts have been provided.
+* Lots of proper nouns and semantics from Uni Hel projects
+* speller build support for new voikko versions
+* New regression tests for stuffs
+* Most of legacy lexc sources removed; they are now generated from TSV
+  "databases".
+* The morphological classes now follow 3 main classes with some subclasses that
+  are less morphological
+* Twol rules and flag diacritics have been eliminated
+* Lots of support scripts to verify and extend classifications
+* Lots of new word-forms, inflections and changes to derivations
+* Some python support scripts for omor formats
+
 Significant changes in 20121226
 -------------------------------
 
