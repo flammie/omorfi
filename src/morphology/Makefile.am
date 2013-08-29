@@ -35,11 +35,8 @@ LEXICAL_SRCS=\
 			roots/pronouns.lexc \
 			roots/verbs.lexc
 NOTGENERATED_SRCS=\
-			hacks/digits.lexc \
-			hacks/punctuation.lexc \
-			hacks/51.lexc \
-			hacks/ftb3-hacks.lexc \
-			compounding/compounding-ftb3.lexc
+				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) \
+				  compounding/compounding-ftb3.lexc
 
 LEXC_SRCS=$(LEXC_MAIN) \
 		  $(LEXICAL_SRCS) \
@@ -47,7 +44,7 @@ LEXC_SRCS=$(LEXC_MAIN) \
 		  $(MAYBE_OMOR_HACKS) \
 		  $(MAYBE_FTB3_HACKS) \
 		  $(NOTGENERATED_SRCS)
-EXTRA_DIST=$(LEXC_MAIN) $(NOTGENERATED_SRCS)
+EXTRA_DIST=$(NOTGENERATED_SRCS)
 
 LEXICAL_TARGETS=omorfi.lexc.hfst #guess-universal.lexc.hfst
 

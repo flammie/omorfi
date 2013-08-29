@@ -34,7 +34,7 @@ FINNISC=\
 		stub.py \
 		guess_feats.py guess_new_class.py wordmap.py \
 		omor_strings_io.py
-EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC)
+EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
 noinst_DATA=omor.timestamp
