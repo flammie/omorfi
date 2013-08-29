@@ -2,7 +2,8 @@
 
 if WANT_FTB3
 MAYBE_FTB3_HACKS=hacks/punctuation-ftb3.lexc \
-				 hacks/digits-ftb3.lexc
+				 hacks/digits-ftb3.lexc \
+				 hacks/51-ftb3.lexc
 else
 MAYBE_OMOR_HACKS=hacks/digits.lexc \
 				 hacks/punctuation.lexc \
