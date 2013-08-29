@@ -1,6 +1,13 @@
 #!/bin/bash
 # requires an installation of <>.
 # analyse and rank the common open source corpora
+fsa='-'
+for tf in apertium omor ftb3 ; do
+    if test -r ../src/morphology.$tf.hfst ; then
+        fsa="../src/morphology.$tf.hfst"
+    fi
+done
+
 if ! test -f "fi-gutenberg.text" ; then
     echo "Fetching and unpacking gutenberg corpus, this may take a while..."
     fetch-gutenberg.bash "fi"
@@ -19,7 +26,7 @@ fi
 for f in "fi-gutenberg.text" "fi-europarl.text" fiwiki.text ; do
     echo Testing $f
     apertium-destxt $f |\
-        hfst-proc --xerox ../src/morphology.omor.hfst > ${f%text}anals
+        hfst-proc --xerox $fsa > ${f%text}anals
     fgrep '+?' ${f%text}anals | sort | uniq -c | sort -nr > ${f%text}misses
 done
 
