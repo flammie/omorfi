@@ -146,7 +146,7 @@ def main():
             sep="\t", file=options.statfile)
     if (full_matches / lines * 100 < threshold):
         print("needs to have", threshold, "% matches to pass regress test\n",
-                "please examine", options.outfile, "for regressions",
+                "please examine", options.outfile.name, "for regressions",
                 file=stderr)
         exit(1)
     else:
