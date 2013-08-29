@@ -1,9 +1,10 @@
 ## Process this file with automake to produce Makefile.in
 
-TESTS=rough-tests.sh scripts-runnable.sh
+TESTS=rough-tests.sh scripts-runnable.sh ftb-test.sh
 XFAIL_TESTS=scripts-runnable.sh
 
-EXTRA_DIST=rough-tests.sh scripts-runnable.sh wordforms.list
+EXTRA_DIST=rough-tests.sh scripts-runnable.sh ftb-test.sh \
+		   wordforms.list ftb-test.py
 
 clean-local:
 	-rm -f wordforms.anals
