@@ -505,6 +505,120 @@ stuff2omor_short = {
 		"GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
 		"MISC": "[PROP=MISC]"}
 
+monodix_sdefs= {
+        'adj', 'vblex', 'n',
+        'abbr', 'prn', 'num', 'pn',
+        'ij', 'dem', 'itg',
+        'rel', 'reflex',
+        'rec',
+        'ind', 'card', 'ord',
+        'cnjcoo', 'cnjsub', 'post', 'pr',
+        'infa', 'infma', 'infe',
+        'nom', 'par', 'gen', 'ine', 'ela',
+        'ill', 'ade', 'abl', 'all', 'ess',
+        'ins', 'abe', 'tra', 'com' , 'lat',
+        'acc', 'sg', 'pl', 'pxsg1', 'pxsg2',
+        'pxpl1', 'pxpl2', 'pxsp3',
+        'pres', 'past',
+        'indv', 'cond', 'pot',
+        'imp',
+        'p1', 'p2', 'p3', 'impers',
+        'conneg' , 'neg', 
+        'actv', 'pasv',
+        'pp', 'pprs', 'agent', 'pneg',
+        'pos', 'comp','sup',
+        'qst',
+        'enc',
+        'cmp',
+        'ND'}
+
+stuff2monodix =  {"Bc": "+",
+        "B-": "-",
+        "Cma": "agent",
+        "Cnut": "pp",
+        "Cva": "pprs",
+        "Cmaton": "pneg",
+        "Cpos": "pos",
+        "Ccmp": "com",
+        "Csup": "sup",
+        "Dmaisilla": "",
+        "Dminen": "n",
+        "Dnut": "", "Dtu": "", "Duus": "", "Dva": "", "Dmaton": "",
+        "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
+        "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
+        "Din": "", "Ds": "", "Du": "",
+        "Ia": "infa",
+        "Ie": "infe",
+        "Ima": "infma",
+        "Ncon": "conneg",
+        "Nneg": "neg", 
+        "Npl": "pl", 
+        "Nsg": "sg", 
+        "N??": "ND",
+        "Osg1": "pxsg1",
+        "Osg2": "pxsg2",
+        "O3": "pxsp3",
+        "Opl1": "pxpl1",
+        "Opl2": "pxpl2",
+        "Ppl1": "p1><pl", 
+        "Ppl2": "p2><pl",
+        "Ppl3": "p3><pl",
+        "Psg1": "p1><sg", 
+        "Psg2": "p2><sg",
+        "Psg3": "p3><sg",
+        "Ppe4": "impers", 
+        "Qka": "enc",
+        "Qs": "enc",
+        "Qpa": "enc",
+        "Qko": "qst",
+        "Qkin": "enc",
+        "Qkaan": "enc",
+        "Qhan": "enc",
+        "Tcond": "cond",
+        "Timp": "imp", 
+        "Tpast": "past",
+        "Tpot": "pot", 
+        "Tpres": "pres",
+        "Topt": "",
+        "Uarch": "", "Udial": "", "Urare": "", "Unonstd": "",
+        "Vact": "actv",
+        "Vpss": "pasv",
+        "Xabe": "abe",
+        "Xabl": "abl",
+        "Xade": "ade",
+        "Xall": "all",
+        "Xcom": "com",
+        "Xela": "ela",
+        "Xess": "ess", 
+        "Xgen": "gen",
+        "Xill": "ill", 
+        "Xine": "ine",
+        "Xins": "ins",
+        "Xnom": "nom",
+        "Xpar": "par", 
+        "Xtra": "tra", 
+        "Xlat": "lat",
+        "Xacc": "acc",
+        "X???": "",
+        "NOUN": "n",
+        "ADJECTIVE": "a", "QUALIFIER": "a",
+        "VERB": "v",
+        "ADVERB": "adv",
+        "INTERJECTION": "ij",
+        "PRONOUN": "prn",
+        "NUMERAL": "num",
+        "ADPOSITION": "post",
+        "CONJUNCTION": "", "COORDINATING": "cnjcoo", "ADVERBIAL": "cnjsub",
+        "COMPARATIVE": "cnjsub",
+        "ABBREVIATION": "abbr", "ACRONYM": "abbr",
+        "PROPER": "pn",
+        "CARDINAL": "card", "ORDINAL": "ord",
+        "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
+        "INDEFINITE": "ind", "INTERROGATIVE": "itg",
+        "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec"}
+
+
+
 def format_lexc(wordmap, format):
     if format.startswith("omor") or format.startswith("ktnkav"):
         return format_lexc_omor(wordmap, format)
@@ -774,6 +888,77 @@ def format_xml_kotus_sanalista(wordmap):
         return ("<st><s>%(lemma)s</s><t><tn>%(kotus_tn)s</tn><av>%(kotus_av)s</av></t></st>" %(wordmap))
     else:
         return ("<st><s>%(lemma)s</s><t><tn>%(kotus_tn)s</tn></t></st>" %(wordmap))
+
+def format_monodix_alphabet():
+    """Finnish alphabet as in CLDR 24"""
+    return ("<alphabet>abcdefghijklmnopqrsštuvwxyzžåäö"
+            "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽ"
+            "áàâãčçđéèêëǧǥȟíîïǩńñŋôõœřßŧúùûÿüʒǯæø"
+            "ÁÀÂÃČÇÐÉÈÊËǦÍÎÏĸŃÑŊÔÕŘÚÙÛŸÜƷǮÆØ"
+            "</alphabet>")
+
+def format_monodix_sdefs():
+    sdefs = '  <sdefs>\n'
+    for sdef in monodix_sdefs:
+        sdefs += '    <sdef n="' + sdef + '"/>\n'
+    sdefs += '  </sdefs>\n'
+    return sdefs
+
+def format_monodix_l(s):
+    if s != '0':
+        return s.replace(' ', '<b/>', 32).replace('%>', '').replace('%', '')
+    else:
+        return ''
+
+def format_monodix_r(anals):
+    r = ''
+    if anals != '0':
+        for anal in anals.split('|'):
+            r += format_monodix_s(anal)
+    return r
+
+def format_monodix_s(stuff):
+    s = ''
+    if stuff in stuff2monodix:
+        s += '<s n="' + stuff2monodix[stuff] + '"/>'
+    else:
+        print("Missing", stuff, "from monodix map",
+                file=stderr)
+    if '><' in s:
+        s = s.replace('><', '"/><s n="')
+    elif '"+"' in s:
+        s = '+'
+    elif '""' in s:
+        s = ''
+    elif '"-"' in s:
+        s = '-'
+    return s
+
+def format_monodix_par(cont):
+    return '<par n="'+  cont.lower().replace('_', '__') + '"/>'
+
+def format_monodix_pardef(fields):
+    pardef = ''
+    for cont in fields[3:]:
+        pardef += '      <e>'
+        if fields[1] == fields[2]:
+            pardef += '<i>' + format_monodix_l(fields[2]) + '</i>'
+        else:
+            pardef += '<p><l>' + format_monodix_l(fields[2]) + '</l>'
+            pardef += '<r>' + format_monodix_r(fields[1]) + '</r></p>'
+        if cont != '#':
+            pardef += format_monodix_par(cont)
+        pardef += '</e>\n'
+    return pardef
+
+def format_monodix_entry(wordmap):
+    for cont in wordmap['new_paras']:
+        e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
+        e += '<p><l>' + wordmap['stub'].replace('|', '').replace('&', '&amp;')  +  '</l>'
+        e += '<r>' + wordmap['lemma'].replace('&', '&amp;') + '</r></p>'
+        e += format_monodix_par(cont)
+        e += '</e>'
+    return e
 
 # self test
 if __name__ == '__main__':
