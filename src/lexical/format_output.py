@@ -662,7 +662,10 @@ def format_tag_ftb3(stuff):
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
-    if 'Nneg|Vact' in anals:
+    if 'COMPOUND' in cont:
+        ftbstring = '' + surf.replace('%>', '')
+        anals = ''
+    elif 'Nneg|Vact' in anals:
         anals = anals.replace('|Vact', '')
     elif anals == 'Vact|Ia|Nsg|Xlat':
         anals = 'Ia|Xlat'
