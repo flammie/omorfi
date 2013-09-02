@@ -18,7 +18,10 @@
 [ % Adp% Po (->) % Adp % Pr ] 
 .o.
 # "neat" way to mangle compound analyses
-[ %<Del%>→ [? - [ ←%<Del%> | %#] ]*  ←%<Del%>  -> 0 || _ [? - %#]* %# ] ;
+[ %<Del%>→ 
+[ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s
+| t | u | v | w | x | y | z | å | ä | ö ]*
+  ←%<Del%>  -> 0 || _ [? - %#]* %# ]
 .o.
 [ %<Del%>→ -> 0, ←%<Del%> -> 0 ] ;
 
