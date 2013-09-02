@@ -92,26 +92,6 @@ else
 temporary.tagweighted.hfst: temporary.unbounded.hfst
 	$(HREW) $(HFST_FLAGS) -S '[GUESS=COMPOUND]' -a 16 < $< |\
 		$(HREW) $(HFST_FLAGS) -S '[GUESS=DERIVE]' -a 16 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=INS]' -a 32 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ABE]' -a 8 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=NOM]' -a 1 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=GEN]' -a 1 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=PAR]' -a 1 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=INE]' -a 2 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ELA]' -a 2 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ILL]' -a 2 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ADE]' -a 2 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ABL]' -a 2 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ALL]' -a 2 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=ESS]' -a 4 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=TRA]' -a 4 |\
-		$(HREW) $(HFST_FLAGS) -S '[CASE=CMT]' -a 8 |\
-		$(HREW) $(HFST_FLAGS) -S '[MOOD=INDV]' -a 1 |\
-		$(HREW) $(HFST_FLAGS) -S '[MOOD=COND]' -a 4 |\
-		$(HREW) $(HFST_FLAGS) -S '[MOOD=POTN]' -a 8 |\
-		$(HREW) $(HFST_FLAGS) -S '[MOOD=IMPV]' -a 4 |\
-		$(HREW) $(HFST_FLAGS) -S '[MOOD=OPTV]' -a 32 |\
-		$(HREW) $(HFST_FLAGS) -S '[MOOD=EVNV]' -a 32 |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=NONSTANDARD]' -a 32 |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=RARE]' -a 32 |\
 		$(HREW) $(HFST_FLAGS) -S '[STYLE=DIALECTAL]' -a 32 |\
@@ -142,7 +122,6 @@ temporary.tokenweighted.hfst: temporary.tagweighted.hfst
 	cp -v $< $@
 endif
 
-# add unlikelihood to guesses by 1/65536
 temporary.weighted.hfst: temporary.tokenweighted.hfst
 	cp -v $< $@
 
@@ -160,8 +139,8 @@ generation.$(TAG_FORMAT).hfst: temporary.unbounded.hfst
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # lemmatization is a special case of tagset variant
-lemmatize.default.hfst: temporary.$(TAG_FORMAT).hfst lemmatize.relabel
-	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/lemmatize.relabel -i $< -o $@
+lemmatize.default.hfst: temporary.$(TAG_FORMAT).hfst taghacks/lemmatize-$(TAG_FORMAT).relabel
+	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/taghacks/lemmatize-$(TAG_FORMAT).relabel -i $< -o $@
 
 # create one tape spell checker
 dictionary.default.hfst: temporary.$(TAG_FORMAT).hfst
