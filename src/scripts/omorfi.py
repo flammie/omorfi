@@ -10,186 +10,208 @@ from argparse import ArgumentParser
 
 from sys import stderr, stdin
 from os import getenv, access, F_OK
+from glob import glob
 
-def load_omorfi(path=None):
-    """Load omorfi automata from given or known locations.
+from convert_tag_format import convert_omor_tag
 
-    If path is given it should point to the automaton, otherwise standard
-    installation paths are tried, currently standard linux install paths are
-    tried in order:
-
-    /usr/local/share/hfst/fi/morphology.omor.hfst
-    /usr/share/hfst/fi/morphology.omor.hfst
-    /usr/local/share/omorfi/morphology.omor.hfst
-    /usr/share/omorfi/morphology.hfst
-    getenv('HOME') + /.hfst/fi/morphology.omor.hfst
-    getenv('HOME') + /.omorfi/morphology.omor.hfst
-
-    Last two paths require getenv('HOME'). Returned value is a handle to the
-    analyser, currently a swig object pointing to HFST automaton.
+class Omorfi:
     """
-    stdpaths = ['/usr/local/share/hfst/fi/morphology.omor.hfst',
-            '/usr/share/hfst/fi/morphology.omor.hfst',
-            '/usr/local/share/omorfi/morphology.omor.hfst',
-            '/usr/share/omorfi/morphology.hfst']
-    if getenv('HOME'):
-        home = getenv('HOME')
-        stdpaths += [home + '/.hfst/fi/morphology.omor.hfst',
-                home + '/.omorfi/morphology.omor.hfst' ]
-    if path:
+    An object holding omorfi automata for all the functions of omorfi.
+    """
+    analysers = dict()
+    tokenisers = dict()
+    generators = dict()
+    lemmatizers = dict()
+    hyphenators = dict()
+    segmenters = dict()
+    can_lowercase = True
+    can_titlecase = True
+    can_uppercase = False
+    _verbosity = False
+
+    _stdpaths = ['/usr/local/share/hfst/fi/',
+            '/usr/share/hfst/fi/',
+            '/usr/local/share/omorfi/',
+            '/usr/share/omorfi/']
+
+    def __init__(this, verbosity = False):
+        this._verbosity = verbosity
+
+    def load_filename(this, path):
+        """Load omorfi automaton from filename and guess its use.
+
+        The current version uses filename to guess the use of automaton,
+        future versions should use HFST header for that.
+        """
+        trans = None
+        if this._verbosity:
+            print('Loading file', path)
         if access(path, F_OK):
-            res = libhfst.HfstTransducer(libhfst.HfstInputStream(path))
-    else:
-        for sp in stdpaths:
-            if access(sp, F_OK):
-                res = libhfst.HfstTransducer(libhfst.HfstInputStream(sp))
-    return res
-
-def omorfi_lookup(omorfi, token, can_titlecase=True, can_uppercase=True):
-    """Perform a simple morphological analysis lookup.
-
-    The lookup uses previously loaded automaton handle omorfi, and inputs a
-    token to it. If can_titlecase does not evaluate to False, and the token
-    cannot be analysed, the analysis will be retried with first letter's
-    case variants. If can_uppercase evaluates to not False and the token
-    cannot be analysed, the words casing will be swapped and retried. The
-    analyses with case mangling will have an additional element to them
-    identifying the casing.
-    """
-    titlecased = False
-    uppercased = False
-    res = libhfst.detokenize_paths(omorfi.lookup_fd(token))
-    if len(res) == 0 and can_titlecase:
-        res = libhfst.detokenize_paths(omorfi.lookup_fd(token[0].lower() + token[1:]))
-        titlecased = True
-        if len(res) == 0 and can_uppercase:
-            res = libhfst.detokenize_paths(omorfi.lookup_fd(token.lower()))
-            uppercased = True
-    if uppercased:
-        for r in res:
-            r.output = r.output + '[CASECHANGE=LOWERED]'
-    elif titlecased:
-        for r in res:
-            r.output = r.output + '[CASECHANGE=DOWNFIRST]'
-    return res
-
-def omor2ftc(omorstring):
-    """
-    Convert omorfi's data to something that is comparable to FTC data. 
-
-    This removes a lot of useful data from the analyses. Avoid using this
-    function and Finnish Text Collection altogether, because of its low quality
-    and confusingly un-free licencing policy. Example:
-
-    >>> s = '[WORD_ID=talo][NUM=SG][CASE=INE]'
-    >>> omor2ftc(s)
-    ... 'talo In SG'
-
-    """
-    anals = dict()
-    ftc = ''
-    omors = omorstring.split("][")
-    for omor in omors:
-        kv = omor.split("=")
-        k = kv[0].lstrip("[")
-        v = kv[1].rstrip("]")
-        if k in anals:
-            anals[k] = anals[k] + [v]
+            trans = libhfst.HfstTransducer(libhfst.HfstInputStream(path))
         else:
-            anals[k] = [v]
-    # WORD ID comes first as lemma
-    for w in anals['WORD_ID']:
-        ftc += w
-    # word Case NUM P POSS
-    if 'CASE' in anals:
-        casesfrom = [["Par", "Part"], ["Ine", "In"], ["Ela", "El"]]
-        case = anals['CASE'][-1].title()
-        for c in casesfrom:
-            case = case.replace(c[0], c[1])
-        ftc += ' ' + case
-    if 'NUM' in anals:
-        ftc += ' ' + anals['NUM'][-1].upper()
-    # Verb is Tense Genus Mood P PERS
-    if 'TENSE' in anals:
-        tensef = [['PRESENT', 'Pr'], ['PAST', 'Imp']]
-        tense = anals['TENSE'][-1]
-        for c in tensef:
-            tense = tense.replace(c[0], c[1])
-        ftc += ' ' + tense
-    if 'VOICE' in anals:
-        voice = anals['VOICE'][-1].title()
-        ftc += ' ' + voice
-    if 'MOOD' in anals:
-        moodf = [['INDV', 'Ind'], ['COND', 'Cond'], ['POTN', 'Pot'], ['IMPV', 'Imper']]
-        mood = anals['MOOD'][-1]
-        for c in moodf:
-            mood = mood.replace(c[0], c[1])
-        ftc += ' ' + mood
-    if 'PRS' in anals:
-        possfrom = [["SG1", "S 1P"], ["SG2", "S 2P"], ["SG3", "S 3P"], ["PL1", "P 1P"], ["PL2", "P 2P"], ["PL3", "P 3P"], ['PE4', '']]
-        poss = anals['PRS'][-1].upper()
-        for c in possfrom:
-            poss = poss.replace(c[0], c[1])
-        if poss:
-            ftc += ' ' + poss
-    if 'POSS' in anals:
-        possfrom = [["SG1", "S 1P"], ["SG2", "S 2P"], ["SG3", "3P"], ["PL1", "P 1P"], ["PL2", "P 2P"], ["PL3", "3P"]]
-        poss = anals['POSS'][-1].upper()
-        for c in possfrom:
-            poss = poss.replace(c[0], c[1])
-        ftc += ' ' + poss
-    if ftc == ':':
-        ftc = '_COLON'
-    elif ftc == ',':
-        ftc = '_COMMA'
-    elif ftc == '.':
-        ftc = '_PERIOD'
-    elif ftc == '(':
-        ftc = '_LEFTPARENTH'
-    elif ftc == '-':
-        ftc = '_HYPHEN'
-    elif ftc == ')':
-        ftc = '_RIGHTPARENTH'
-    elif ftc == '?':
-        ftc = '_QUESTION'
-    elif ftc == '+':
-        ftc = '_PLUS'
-    elif ftc == '/':
-        ftc = '_SLASH'
-    elif ftc == '!':
-        ftc = '_EXCLAMATION'
-    elif ftc == '*':
-        ftc = '_ASTERISK'
-    elif ftc == ';':
-        ftc = '_SEMICOLON'
-    elif ftc == '%':
-        ftc = '_RIGHTP'
-    elif ftc == '...':
-        ftc = '_THREEPOINTS'
-    return ftc
+            # FIXME: should fail
+            if this._verbosity:
+                print('No access')
+            pass
+        parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
+        if this._verbosity:
+            print('loaded', parts[0], "type", parts[1], 'identifying...')
+        if parts[0] == 'morphology':
+            this.analysers[parts[1]] = trans
+        elif parts[0] == 'generate':
+            this.generators[parts[1]] = trans
+        elif parts[0] == 'dictionary':
+            pass
+        elif parts[0] == 'tokeniser':
+            this.tokenisers[parts[1]] = trans
+        elif parts[0] == 'lemmatize':
+            this.lemmatizers[parts[1]] = trans
+        elif parts[0] == 'hyphenate':
+            this.hyphenators[parts[1]] = trans
 
+    def load_from_dir(this, path=None):
+        """Load omorfi automata from given or known locations.
+        
+        If path is given it should point to directory of automata,
+        otherwise standard installation paths are tried. Currently standard
+        linux install paths are all globbed in following order:
 
+        /usr/local/share/hfst/fi/*.hfst
+        /usr/share/hfst/fi/*.hfst
+        /usr/local/share/omorfi/*.hfst
+        /usr/share/omorfi/*.hfst
+        getenv('HOME') + /.hfst/fi/*.hfst
+        getenv('HOME') + /.omorfi/*.hfst
+
+        Last two paths require getenv('HOME'). All automata matching
+        glob *.hfst are loaded and stored in part of omorfi class appropriate
+        for their usage.
+        """
+        homepaths = []
+        res = None
+        if getenv('HOME'):
+            home = getenv('HOME')
+            homepaths = [home + '/.hfst/fi/',
+                          home + '/.omorfi/' ]
+        loadable = []
+        if path:
+            if this._verbosity:
+                print('adding', path + '/*.hfst')
+            loadable = glob(path + '/*.hfst')
+        else:
+            for sp in this._stdpaths + homepaths:
+                if this._verbosity:
+                    print('adding', sp + '/*.hfst')
+                loadable += glob(sp + '/*.hfst')
+        for filename in loadable:
+            this.load_filename(filename)
+
+    def _tokenise(this, line, automaton):
+        return None
+
+    def tokenise(this, line):
+        """Perform tokenisation with loaded tokeniser if any, or split.
+
+        If tokeniser is available, it is applied to input line and if
+        result is achieved, it is split to tokens according to tokenisation
+        strategy and returned as a list.
+
+        If no tokeniser are present, or none give results, the line will be
+        tokenised using python's basic string functions.
+        """
+        tokens = None
+        if 'default' in this.tokenisers:
+            tokens = this._tokenise(line, 'default')
+        if not tokens:
+            tokens = line.replace('.', ' .').split()
+        return tokens
+
+    def _analyse(this, token, automaton):
+        res = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token))
+        if len(token) > 2 and token[0].islower() and not token[1:].islower() and this.can_titlecase:
+            tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token[0].lower() + token[1:].lower()))
+            for r in tcres:
+                r.output = r.output + convert_omor_tag('[CASECHANGE=TITLECASED]',
+                        automaton)
+            res = res + tcres
+        if not token.isupper() and this.can_uppercase:
+            upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.upper()))
+            for r in tupes:
+                r.output = r.output + convert_omor_tag('[CASECHANGE=UPPERCASED]'.
+                        automaton)
+            res = res + tcres
+        if not token.islower() and this.can_lowercase:
+            lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
+            for r in lowres:
+                r.output = r.output + convert_omor_tag('[CASECHANGE=LOWERCASED]',
+                        automaton)
+            res += lowres
+        for r in res:
+            r.output = r.output + convert_omor_tag('[WEIGHT=%f]' %(r.weight),
+                    automaton)
+        return res
+
+    def analyse(this, token):
+        """Perform a simple morphological analysis lookup.
+
+        If can_titlecase does not evaluate to False,
+        the analysis will also be performed with first letter
+        uppercased and rest lowercased.
+        If can_uppercase evaluates to not False,
+        the analysis will also be performed on all uppercase variant.
+        If can_lowercase evaluates to not False,
+        the analysis will also be performed on all lowercase variant.
+        
+        The analyses with case mangling will have an additional element to them
+        identifying the casing, assuming the analyser variant has opening for
+        one.
+        """
+        anals = None
+        if 'default' in this.analysers:
+            anals = this._analyse(token, 'default')
+        if not anals and 'omor' in this.analysers:
+            anals = this._analyse(token, 'omor')
+        if not anals and 'ftb3' in this.analysers:
+            anals = this._analyse(token, 'ftb3')
+        if not anals:
+            class FakeAnal():
+                pass
+            anal = FakeAnal()
+            anal.output = '[GUESS=UNKNOWN]'
+            anal.weight = float('inf')
+            anals = [anal]
+        return anals
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAFILE',
-            help="HFST's optimised lookup binary data for the transducer to be applied")
+    a.add_argument('-f', '--fsa', metavar='FSAPATH',
+            help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
             dest="infile", help="source of analysis data")
+    a.add_argument('-v', '--verbose', action='store_true',
+            help="print verbosely while processing")
     options = a.parse_args()
-    omorfi = load_omorfi(options.fsa)
+    omorfi = Omorfi(options.verbose)
+    if options.fsa:
+        omorfi.load_from_dir(options.fsa)
+    else:
+        omorfi.load_from_dir()
     if not options.infile:
         options.infile = stdin
+    if options.verbose:
+        print("reading from", options.infile.name)
     for line in options.infile:
-        surf = line.strip()
-        if not surf or surf == '':
+        line = line.strip()
+        if not line or line == '':
             continue
-        anals = omorfi_lookup(omorfi, surf)
-        print(surf, end='')
-        for anal in anals:
-            print("\t", anal.output, '[WEIGHT=', anal.weight, ']', sep='', end='')
-        print('\n')
+        surfs = omorfi.tokenise(line)
+        for surf in surfs:
+            anals = omorfi.analyse(surf)
+            print(surf, end='')
+            for anal in anals:
+                print("\t", anal.output, sep='', end='')
+            print()
     exit(0)
 
 if __name__ == "__main__":
