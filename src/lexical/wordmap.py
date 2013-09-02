@@ -8,5 +8,5 @@ def init_wordmap():
                "grade_dir": None, "harmony": None, "is_suffix": None,
                "is_prefix": None, "stem_vowel": None, "stem_diphthong": None,
                "sem": None, "particle": None, "pronunciation": None,
-               "boundaries": None}
+               "boundaries": None, "bracketstub": None}
     return wordmap

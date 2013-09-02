@@ -15,4 +15,9 @@
 # Pr? Po? Let the context decide!
 [ % Po (->) % Pr ]
 .o.
-[ % Adp% Po (->) % Adp % Pr ]  ;
+[ % Adp% Po (->) % Adp % Pr ]  
+.o.
+# "neat" way to mangle compound analyses
+[ ? @-> 0 || %<Del%>→: \%#* _ \%#* ←%<Del%>: \%#* %# ]
+.o.
+[ %<Del%>→ -> 0, ←%<Del%> -> 0 ] ;

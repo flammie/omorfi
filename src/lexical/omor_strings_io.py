@@ -35,6 +35,27 @@ def remove_suffixes_or_die(s, suffixes):
         "from", s)
     return s
 
+def replace_suffix(s, suffix, repl):
+    if s.endswith(suffix):
+        return s[:s.rfind(suffix)] + repl + s[s.rfind(suffix):]
+    else:
+        return s
+
+def replace_suffixes_or_die(s, suffixes, repl):
+    for suffix in suffixes:
+        nu = replace_suffix(s, suffix, repl)
+        if nu != s:
+            return nu
+    print("\033[91mSuffix fail!\033[0m Trying to rstrip ", ", ".join(suffixes),
+        "from", s)
+    return s
+
+def mangle_suffixes_or_die(wordmap, suffixes):
+    wordmap['bracketstub'] = replace_suffixes_or_die(wordmap['stub'], suffixes,
+            '<Del>→')
+    wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], suffixes)
+    return wordmap
+
 # misc functions
 def replace_rightmost(s, needle, repl):
     '''Replace one occurrence of rightmost match.'''
@@ -61,6 +82,7 @@ def lexc_escape(s):
     s = s.replace("%", "__PERCENT__")
     s = s.replace(" ", "% ")
     s = s.replace("<", "%<")
+    s = s.replace(">", "%>")
     s = s.replace("0", "%0")
     s = s.replace("!", "%!")
     s = s.replace("__PERCENT__", "%%")

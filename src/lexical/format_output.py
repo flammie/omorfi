@@ -3,7 +3,7 @@
 # utils to format lexc strings from omor's lexical data sources.
 
 from sys import stderr
-from lexc_string_utils import lexc_escape
+from omor_strings_io import lexc_escape
 
 ftb3_multichars= {
         '% A', '% V', '% N',
@@ -36,7 +36,7 @@ ftb3_multichars= {
         '% Ord',
         '% Foc_hAn', '% Foc_kAAn', '% Foc_kin', '% Foc_kO',
         '% Foc_pA', '% Foc_s', '% Foc_kA', 
-        '% Man'}
+        '% Man', '%<Del%>→', '←%<Del%>'}
 
 omor_multichars = {
         '[WORD_ID=', '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
@@ -663,8 +663,8 @@ def format_tag_ftb3(stuff):
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
     if 'COMPOUND' in cont:
-        ftbstring = '' + surf.replace('%>', '')
-        anals = ''
+        ftbstring =  surf.replace('%>', '')
+        anals = '0'
     elif 'Nneg|Vact' in anals:
         anals = anals.replace('|Vact', '')
     elif anals == 'Vact|Ia|Nsg|Xlat':
@@ -783,10 +783,7 @@ def format_lexc_ftb3(wordmap, format):
     format string for canonical ftb3 format for morphological analysis
     '''
     tn = int(wordmap['kotus_tn'])
-    if wordmap['boundaries']:
-        wordmap['analysis'] = wordmap['boundaries'].replace('|', '#', 32).replace('_', '', 32)
-    else:
-        wordmap['analysis'] = "%s" %(lexc_escape(wordmap['lemma']))
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'] + '←<Del>'))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:

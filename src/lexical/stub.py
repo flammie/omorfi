@@ -2,7 +2,7 @@
 
 from sys import stderr
 
-from omor_strings_io import remove_suffixes_or_die, fail_guess_because
+from omor_strings_io import mangle_suffixes_or_die, fail_guess_because
 
 def stub_all(wordmap):
     '''Generate unmodifiable stub for inflectional processes.
@@ -16,16 +16,16 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub']
         elif tn in [5, 6]:
             if wordmap['stub'].endswith('i'):
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                wordmap = mangle_suffixes_or_die(wordmap,
                         ['i'])
             else:
                 wordmap['stub'] = wordmap['stub']
         elif tn == 10:
             if wordmap['stub'].endswith('n'):
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                wordmap = mangle_suffixes_or_die(wordmap,
                         ['an', 'än'])
             else:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                wordmap = mangle_suffixes_or_die(wordmap,
                         ['a', 'ä', 'ă'])
         elif tn == 41 and wordmap['pos'] == 'ADJECTIVE' and (wordmap['stub'].endswith('is') or wordmap['stub'].endswith('paras')):
             wordmap['stub'] = wordmap['stub'][:-2] 
@@ -34,7 +34,7 @@ def stub_all(wordmap):
         elif tn in range(9, 16):
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in [16, 23, 24, 26]:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+            wordmap = mangle_suffixes_or_die(wordmap,
                     ['i'])
         elif tn in range(17, 19) or tn == 20:
             wordmap['stub'] = wordmap['stub'][:-1] 
@@ -48,7 +48,7 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 32:
             if wordmap['stub'].endswith('kymmenen'):
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                wordmap = mangle_suffixes_or_die(wordmap,
                         ['en'])
             else:
                 pass
@@ -86,80 +86,80 @@ def stub_all(wordmap):
         elif tn == 1007:
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn == 1008:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['e'])
         elif tn in [1010, 1009]:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+            wordmap = mangle_suffixes_or_die(wordmap, 
                     ['ika', 'tkä'])
         elif tn in [1024, 1026]:
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn == 1067:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['olla'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['olla'])
         elif tn == 1099:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ei'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['ei'])
         elif wordmap['kotus_tn'] == 101:
             if wordmap['lemma'] in ['minä', 'sinä']:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['nä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['nä'])
             elif wordmap['lemma'] == 'hän':
                 pass
             elif wordmap['lemma'] in ['me', 'te', 'he']:
                 pass
             elif wordmap['lemma'] == 'tämä':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['mä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['mä'])
             elif wordmap['lemma'] == 'tuo':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['uo'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['uo'])
             elif wordmap['lemma'] == 'se':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
             elif wordmap['lemma'] == 'nämä':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['mä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['mä'])
             elif wordmap['lemma'] == 'nuo':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['uo'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['uo'])
             elif wordmap['lemma'] == 'ne':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
             elif wordmap['lemma'] == 'joku':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ku'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ku'])
             elif wordmap['lemma'] == 'joka':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ka'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ka'])
             elif wordmap['lemma'] == 'jokin':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kin'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['kin'])
             elif wordmap['lemma'] == 'kuka':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['uka'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['uka'])
             elif wordmap['lemma'] == 'kukaan':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ukaan'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ukaan'])
             elif wordmap['lemma'].endswith('kukin'):
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ukin'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ukin'])
             elif wordmap['lemma'] == 'mikin':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kin'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['kin'])
             elif wordmap['lemma'] == 'mikä':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['kä'])
             elif wordmap['lemma'] == 'mikään':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['kään'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['kään'])
             elif wordmap['lemma'] == 'missä':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ssä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ssä'])
             elif wordmap['lemma'] == 'missäkään':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ssäkään'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ssäkään'])
             elif wordmap['lemma'] == 'missään':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ssään'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ssään'])
             elif wordmap['lemma'] == 'muuan':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['n'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['n'])
             elif wordmap['lemma'] in ['mä', 'sä']:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['ä'])
             elif wordmap['lemma'] in ['mie', 'sie']:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
             elif wordmap['lemma'] == 'toi':
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['i'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['i'])
             elif wordmap['lemma'].endswith('ainoa'):
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['a'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['a'])
             elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
                     'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:
                 pass
         elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] \
                 and wordmap['stub'].endswith('n'):
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['n'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['n'])
         elif wordmap['kotus_tn'] in [0, 99, 999]:
             pass
         elif wordmap['kotus_tn'] == 1101:
-            wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['ka', 'kä'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['ka', 'kä'])
         else:
             fail_guess_because(wordmap, ['!av'], ['0-71', 999, 1007, 1010,1009,
                 1024, 1026, 1067, 1099])
@@ -208,32 +208,32 @@ def stub_all(wordmap):
         elif wordmap['kotus_av'] == 'D':
             # DANGER TERROR HORROR !!!!!!
             if wordmap['kotus_tn'] == 32:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['en'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['en'])
             elif wordmap['kotus_tn'] == 33:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['in'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['in'])
             elif wordmap['kotus_tn'] == 41:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'],
+                wordmap = mangle_suffixes_or_die(wordmap,
                         ['as', 'es', 'is', 'äs'])
             elif wordmap['kotus_tn'] == 44:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['et'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['et'])
             elif wordmap['kotus_tn'] == 48:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['e'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
             elif wordmap['kotus_tn'] == 49:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], ['en'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['en'])
             elif wordmap['kotus_tn'] == 67:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+                wordmap = mangle_suffixes_or_die(wordmap, 
                         ['ella', 'illa'])
             elif wordmap['kotus_tn'] == 72:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+                wordmap = mangle_suffixes_or_die(wordmap, 
                         ['ata', 'eta', 'etä', 'ota'])
             elif wordmap['kotus_tn'] == 73:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+                wordmap = mangle_suffixes_or_die(wordmap, 
                         ['ata', 'ätä'])
             elif wordmap['kotus_tn'] == 74:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+                wordmap = mangle_suffixes_or_die(wordmap, 
                         ['ota', 'eta', 'ötä', 'etä'])
             elif wordmap['kotus_tn'] == 75:
-                wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], 
+                wordmap = mangle_suffixes_or_die(wordmap, 
                         ['ita', 'itä'])
             elif wordmap['kotus_tn'] == 99:
                 pass

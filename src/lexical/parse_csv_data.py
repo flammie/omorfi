@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from lexc_string_utils import replace_rightmost
+from omor_strings_io import replace_rightmost
 from sys import stderr
 
 def parse_defaults_from_csv(wordmap, csv_parts):
@@ -9,6 +9,7 @@ def parse_defaults_from_csv(wordmap, csv_parts):
     # first field is lemma
     wordmap['lemma'] = csv_parts[0].strip('"')
     wordmap['stub'] = wordmap['lemma']
+    wordmap['bracketstub'] = wordmap['lemma']
     wordmap['gradestem'] = wordmap['lemma']
     # second field is KOTUS paradigm class
     try:
@@ -221,6 +222,7 @@ def parse_from_tsv(wordmap, fields):
     wordmap['sem'] = fields[21]
     wordmap['particle'] = fields[22]
     wordmap['boundaries'] = fields[23]
+    wordmap['bracketstub'] = fields[24]
     for k,v in wordmap.items():
         if v == 'False':
             wordmap[k] = False

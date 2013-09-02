@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from lexc_string_utils import replace_rightmost, replace_rightmosts
+from omor_strings_io import replace_rightmost, replace_rightmosts
 from sys import stderr
 
 def gradation_make_morphophonemes(wordmap):
