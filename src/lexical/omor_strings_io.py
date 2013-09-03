@@ -62,17 +62,18 @@ def replace_rightmost(s, needle, repl):
     return replace_rightmosts(s, [needle], [repl])
 
 def replace_rightmosts(s, needles, repls):
-    '''Perform replacements of rightmost matching substrings.
-    Performs match on first matching rightmost substring in the list.
+    '''Perform replacement on the rightmost matching substring from the list.
     '''
-    unfound = True
+    rm = -1
+    rmi = -1
     for i in range(len(needles)):
-        rm = s.rfind(needles[i])
-        if rm != -1:
-            s = s[:rm] + repls[i] + s[rm+len(needles[i]):]
-            unfound = False
-            break
-    if unfound:
+        pos = s.rfind(needles[i])
+        if pos > rm:
+            rm = pos
+            rmi = i
+    if rm != -1:
+        s = s[:rm] + repls[rmi] + s[rm+len(needles[rmi]):]
+    else:
         print("Suspicious replacement attempts!", file=stderr)
         print("tried to ", needles, " => ", repls, " in ", s, file=stderr)
     return s
