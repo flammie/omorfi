@@ -42,8 +42,8 @@ def guess_stem_features_ktn(wordmap):
             wordmap['stem_vowel'] = 'i'
         elif wordmap['lemma'].endswith('o'):
             wordmap['stem_vowel'] = 'o'
-        elif wordmap['lemma'].endswith(''):
-            wordmap['stem_vowel'] = ''
+        elif wordmap['lemma'].endswith('u'):
+            wordmap['stem_vowel'] = 'u'
         elif wordmap['lemma'].endswith('y'):
             wordmap['stem_vowel'] = 'y'
         elif wordmap['lemma'].endswith('ä'):
