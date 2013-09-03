@@ -663,7 +663,7 @@ def format_tag_ftb3(stuff):
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
     if 'COMPOUND' in cont:
-        ftbstring =  surf.replace('%>', '')
+        ftbstring =  surf.replace('%>', '').replace('»', '')
         anals = '0'
     elif 'Nneg|Vact' in anals:
         anals = anals.replace('|Vact', '')
@@ -783,7 +783,7 @@ def format_lexc_ftb3(wordmap, format):
     format string for canonical ftb3 format for morphological analysis
     '''
     tn = int(wordmap['kotus_tn'])
-    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'] + '←<Del>'))
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:
