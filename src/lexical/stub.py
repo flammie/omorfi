@@ -12,48 +12,60 @@ def stub_all(wordmap):
         return wordmap
     tn = int(wordmap['kotus_tn'])
     if not wordmap['kotus_av'] or tn in [28, 60, 1007, 1009, 1010]:
-        if tn in range(1, 5) or tn in [8, 21, 22, 48]:
-            wordmap['stub'] = wordmap['stub']
+        if tn in [1, 2, 3, 4, 8, 21, 22, 48]:
+            pass
         elif tn in [5, 6]:
             if wordmap['stub'].endswith('i'):
                 wordmap = mangle_suffixes_or_die(wordmap,
                         ['i'])
             else:
-                wordmap['stub'] = wordmap['stub']
+                pass
         elif tn == 10:
             if wordmap['stub'].endswith('n'):
-                wordmap = mangle_suffixes_or_die(wordmap,
-                        ['an', 'än'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['an', 'än'])
             else:
-                wordmap = mangle_suffixes_or_die(wordmap,
-                        ['a', 'ä', 'ă'])
-        elif tn == 41 and wordmap['pos'] == 'ADJECTIVE' and (wordmap['stub'].endswith('is') or wordmap['stub'].endswith('paras')):
-            wordmap['stub'] = wordmap['stub'][:-2] 
-        elif tn in [7, 16] or tn in range(33, 38) or tn in range(39, 47):
-            wordmap['stub'] = wordmap['stub'][:-1]
+                wordmap = mangle_suffixes_or_die(wordmap, ['a', 'ä', 'ă'])
+        elif tn == 41 and wordmap['pos'] == 'ADJECTIVE'  \
+                and (wordmap['stub'].endswith('is') or wordmap['stub'].endswith('paras')):
+            wordmap = mangle_suffixes_or_die(wordmap, ['is', 'as'])
+        elif tn == 7:
+            wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn in range(9, 16):
-            wordmap['stub'] = wordmap['stub'][:-1]
+            wordmap = mangle_suffixes_or_die(wordmap, ['a', 'ä'])
         elif tn in [16, 23, 24, 26]:
-            wordmap = mangle_suffixes_or_die(wordmap,
-                    ['i'])
-        elif tn in range(17, 19) or tn == 20:
-            wordmap['stub'] = wordmap['stub'][:-1] 
+            wordmap = mangle_suffixes_or_die(wordmap, ['i'])
+        elif tn in [17, 18, 20]:
+            wordmap = mangle_suffixes_or_die(wordmap, ['a', 'e', 'i', 'o',
+                'u', 'y', 'ä', 'ö'])
         elif tn == 19:
-            wordmap['stub'] = wordmap['stub'][:-2] 
-        elif tn in [25, 27]:
-            wordmap['stub'] = wordmap['stub'][:-2]
-        elif tn == 28:
-            wordmap['stub'] = wordmap['stub'][:-2]
-        elif tn in [29, 30, 31, 38]:
-            wordmap['stub'] = wordmap['stub'][:-3]
+            wordmap = mangle_suffixes_or_die(wordmap, ['uo', 'yö', 'ie'])
+        elif tn == 25:
+            wordmap = mangle_suffixes_or_die(wordmap, ['mi'])
+        elif tn in [27, 28]:
+            wordmap = mangle_suffixes_or_die(wordmap, ['si'])
+        elif tn == 29:
+            wordmap = mangle_suffixes_or_die(wordmap, ['psi', 'ksi'])
+        elif tn == 30:
+            wordmap = mangle_suffixes_or_die(wordmap, ['tsi'])
+        elif tn == 31:
+            wordmap = mangle_suffixes_or_die(wordmap, ['ksi'])
         elif tn == 32:
             if wordmap['stub'].endswith('kymmenen'):
-                wordmap = mangle_suffixes_or_die(wordmap,
-                        ['en'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['en'])
             else:
                 pass
+        elif tn in range(33, 38):
+            wordmap = mangle_suffixes_or_die(wordmap, ['n'])
+        elif tn == 38:
+            wordmap = mangle_suffixes_or_die(wordmap, ['nen'])
+        elif tn in range(39, 43):
+            wordmap = mangle_suffixes_or_die(wordmap, ['s'])
+        elif tn in [43, 44, 46]:
+            wordmap = mangle_suffixes_or_die(wordmap, ['t'])
+        elif tn == 45:
+            wordmap = mangle_suffixes_or_die(wordmap, ['s'])
         elif tn == 47:
-            wordmap['stub'] = wordmap['stub'][:-2]
+            wordmap = mangle_suffixes_or_die(wordmap, ['ut', 'yt'])
         elif tn == 49:
             if wordmap['stub'].endswith('e'):
                 wordmap['extra_e'] = True
@@ -84,14 +96,13 @@ def stub_all(wordmap):
         elif tn in [70, 71, 71]:
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 1007:
-            wordmap['stub'] = wordmap['stub'][:-1]
+            wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn == 1008:
             wordmap = mangle_suffixes_or_die(wordmap, ['e'])
         elif tn in [1010, 1009]:
-            wordmap = mangle_suffixes_or_die(wordmap, 
-                    ['ika', 'tkä'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['ika', 'tkä'])
         elif tn in [1024, 1026]:
-            wordmap['stub'] = wordmap['stub'][:-1]
+            wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn == 1067:
             wordmap = mangle_suffixes_or_die(wordmap, ['olla'])
         elif tn == 1099:
@@ -165,46 +176,102 @@ def stub_all(wordmap):
                 1024, 1026, 1067, 1099])
     elif wordmap['grade_dir'] == 'weaken':
         if wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:
-            lastk = wordmap['stub'].rfind('k')
-            wordmap['stub'] = wordmap['stub'][:lastk]
-            if lastk == -1:
-                print("Unguessable stub; gradating K not found in", wordmap,
-                        file=stderr)
+            if tn in [1, 2, 3, 4]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ko', 'ku',
+                    'ky', 'kö'])
+            elif tn in [5, 6, 7]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ki'])
+            elif tn in [8]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ke'])
+            elif tn in [9, 10, 11, 12, 13, 14]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ka', 'kä'])
+            elif tn in range(52, 79):
+                lastk = wordmap['stub'].rfind('k')
+                wordmap['stub'] = wordmap['stub'][:lastk]
+            else:
+                fail_guess_because(wordmap, ['av-', 'A', 'D', 'G', 'L', 'M'],
+                        ['1-14'])
         elif wordmap['kotus_av'] in ['B', 'E', 'H']:
-            lastp = wordmap['stub'].rfind('p')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating P not found in", wordmap,
-                        file=stderr)
+            if tn in [1, 2, 3, 4]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['po', 'pu',
+                    'py', 'pö'])
+            elif tn in [5, 6, 7, 16]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['pi'])
+            elif tn in [8]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['pe'])
+            elif tn in [9, 10, 11, 12, 13, 14]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['pa', 'pä'])
+            elif tn in range(52, 79):
+                lastp = wordmap['stub'].rfind('p')
+                wordmap['stub'] = wordmap['stub'][:lastp]
+            else:
+                fail_guess_because(wordmap, ['av-', 'B', 'E', 'H'],
+                        ['1-14'])
         elif wordmap['kotus_av'] in ['C', 'F', 'I', 'J', 'K']:
-            lastt = wordmap['stub'].rfind('t')
-            wordmap['stub'] = wordmap['stub'][:lastt]
-            if lastt == -1:
-                print("Unguessable stub; gradating T not found in", wordmap,
-                        file=stderr)
+            if tn in [1, 2, 3, 4]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['to', 'tu',
+                    'ty', 'tö'])
+            elif tn in [5, 6, 7]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ti'])
+            elif tn in [8]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['te'])
+            elif tn in [9, 10, 11, 12, 13, 14]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ta', 'tä'])
+            elif tn in range(52, 79):
+                lastt = wordmap['stub'].rfind('t')
+                wordmap['stub'] = wordmap['stub'][:lastt]
+            else:
+                fail_guess_because(wordmap, ['av-', 'C', 'F', 'I', 'J', 'K'],
+                        ['1-14'])
         else:
             fail_guess_because(wordmap, ['av+'], ['A-T'])
     elif wordmap['grade_dir'] == 'strengthen':
         if wordmap['kotus_av'] == 'A': 
-            lastk = wordmap['stub'].rfind('k')
-            wordmap['stub'] = wordmap['stub'][:lastk + 1]
-            if lastk == -1:
-                print("Unguessable stub; gradating -K not found in", wordmap,
-                        file=stderr)
-        elif wordmap['kotus_av'] == 'B': 
-            lastp = wordmap['stub'].rfind('p')
-            wordmap['stub'] = wordmap['stub'][:lastp + 1]
-            if lastp == -1:
-                print("Unguessable stub; gradating -P not found in", wordmap,
-                        file=stderr)
+            if tn in [33]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['in'])
+            elif tn in [41]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['as', 'äs'])
+            elif tn in [48]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
+            elif tn in range(52, 79):
+                lastk = wordmap['stub'].rfind('k')
+                wordmap['stub'] = wordmap['stub'][:lastk + 1]
+            else:
+                fail_guess_because(wordmap, ['av+', 'A'], [33, 41, 48])
+        elif wordmap['kotus_av'] == 'B':
+            if tn in [33, 34]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['an'])
+            elif tn in [41]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['as', 'äs', 'es'])
+            elif tn in [48]:
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
+            elif tn in range(52, 79):
+                lastp = wordmap['stub'].rfind('p')
+                wordmap['stub'] = wordmap['stub'][:lastp + 1]
+            else:
+                fail_guess_because(wordmap, ['av+', 'B'], [33, 41, 48])
         elif wordmap['kotus_av'] == 'C': 
-            lastt = wordmap['stub'].rfind('t')
-            if wordmap['kotus_tn'] == 73:
-                lastt = wordmap['stub'].rfind('t', 0, lastt)
-            wordmap['stub'] = wordmap['stub'][:lastt + 1]
-            if lastt == -1:
-                print("Unguessable stub; gradating -T not found in", wordmap,
-                        file=stderr)
+            if tn == 32:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ar', 'är'])
+            elif tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['in'])
+            elif tn == 34:
+                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['as', 'us', 'is',
+                    'es', 'äs'])
+            elif tn == 44:
+                wordmap = mangle_suffixes_or_die(wordmap, ['et'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['e'])
+            elif tn in range(52, 79):
+                lastt = wordmap['stub'].rfind('t')
+                if wordmap['kotus_tn'] == 73:
+                    lastt = wordmap['stub'].rfind('t', 0, lastt)
+                wordmap['stub'] = wordmap['stub'][:lastt + 1]
+            else:
+                fail_guess_because(wordmap, ['av+', 'C'], [32, 33, 34,
+                    41, 44, 48])
         elif wordmap['kotus_av'] == 'D':
             # DANGER TERROR HORROR !!!!!!
             if wordmap['kotus_tn'] == 32:
@@ -240,62 +307,124 @@ def stub_all(wordmap):
             else:
                 fail_guess_because(wordmap, ['N', 'V', 'D'], [32, 33, 44, 48,
                     49, 67, 72, 73, 74, 75], "missing inverse 0:k gradation")
-        elif wordmap['kotus_av'] == 'E': 
-            lastp = wordmap['stub'].rfind('v')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating -V not found in", wordmap,
-                        file=stderr)
+        elif wordmap['kotus_av'] == 'E':
+            if tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['vin'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['vas', 'väs'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ve'])
+            elif wordmap['kotus_tn'] == 49:
+                wordmap = mangle_suffixes_or_die(wordmap, ['val'])
+            elif tn in range(52, 79):
+                lastp = wordmap['stub'].rfind('v')
+                wordmap['stub'] = wordmap['stub'][:lastp]
+            else:
+                fail_guess_because(wordmap, ['av+', 'E'], [33, 41, 48, 49])
         elif wordmap['kotus_av'] == 'F': 
-            lastt = wordmap['stub'].rfind('d')
-            wordmap['stub'] = wordmap['stub'][:lastt]
-            if lastt == -1:
-                print("Unguessable stub; gradating -D not found in", wordmap,
-                        file=stderr)
+            if tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['don', 'dun', 'din'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['das', 'däs', 'des'])
+            elif tn == 44:
+                wordmap = mangle_suffixes_or_die(wordmap, ['det'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['de'])
+            elif wordmap['kotus_tn'] == 49:
+                wordmap = mangle_suffixes_or_die(wordmap, ['dar'])
+            elif tn in range(52, 79):
+                lastt = wordmap['stub'].rfind('d')
+                wordmap['stub'] = wordmap['stub'][:lastt]
+            else:
+                fail_guess_because(wordmap, ['av+', 'F'], [33, 41, 44, 48, 49])
         elif wordmap['kotus_av'] == 'G': 
-            lastk = wordmap['stub'].rfind('g')
-            wordmap['stub'] = wordmap['stub'][:lastk]
-            if lastk == -1:
-                print("Unguessable stub; gradating -G not found in", wordmap,
-                        file=stderr)
+            if tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['gas', 'gäs'])
+            elif tn == 44:
+                wordmap = mangle_suffixes_or_die(wordmap, ['get'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ge'])
+            elif wordmap['kotus_tn'] == 49:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ger'])
+            elif tn in range(52, 79):
+                lastk = wordmap['stub'].rfind('g')
+                wordmap['stub'] = wordmap['stub'][:lastk]
+            else:
+                fail_guess_because(wordmap, ['av+', 'G'], [41, 44, 48])
         elif wordmap['kotus_av'] == 'H': 
-            lastp = wordmap['stub'].rfind('m')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating -M not found in", wordmap,
-                        file=stderr)
+            if tn == 35:
+                wordmap = mangle_suffixes_or_die(wordmap, ['min'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['mas', 'mäs'])
+            elif tn == 43:
+                wordmap = mangle_suffixes_or_die(wordmap, ['myt'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['me'])
+            elif wordmap['kotus_tn'] == 49:
+                wordmap = mangle_suffixes_or_die(wordmap, ['mel', 'mol'])
+            elif tn in range(52, 79):
+                lastp = wordmap['stub'].rfind('m')
+                wordmap['stub'] = wordmap['stub'][:lastp]
+            else:
+                fail_guess_because(wordmap, ['av+', 'H'], [35, 41, 43, 48, 49])
         elif wordmap['kotus_av'] == 'I': 
-            lastp = -1
-            if wordmap['kotus_tn'] == 67:
-                lastp = wordmap['stub'].rfind('lell')
+            if tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['lin'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['las', 'läs'])
+            elif tn == 44:
+                wordmap = mangle_suffixes_or_die(wordmap, ['let'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['le'])
+            elif tn in range(52, 79):
+                lastp = -1
+                if wordmap['kotus_tn'] == 67:
+                    lastp = wordmap['stub'].rfind('lell')
+                else:
+                    lastp = wordmap['stub'].rfind('l')
+                wordmap['stub'] = wordmap['stub'][:lastp]
             else:
-                lastp = wordmap['stub'].rfind('l')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating -V not found in", wordmap,
-                        file=stderr)
+                fail_guess_because(wordmap, ['av+', 'I'], [33, 41, 44, 48])
         elif wordmap['kotus_av'] == 'J': 
-            lastp = -1
-            if wordmap['kotus_tn'] == 33:
-                lastp = wordmap['stub'].rfind('nin')
-            else:
+            if tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['nin'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['nas', 'näs'])
+            elif tn == 44:
+                wordmap = mangle_suffixes_or_die(wordmap, ['net'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ne'])
+            elif wordmap['kotus_tn'] == 49:
+                wordmap = mangle_suffixes_or_die(wordmap, ['nar', 'ner', 'nel'])
+            elif tn in range(52, 79):
                 lastp = wordmap['stub'].rfind('n')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating -N not found in", wordmap,
-                        file=stderr)
+                wordmap['stub'] = wordmap['stub'][:lastp]
+            else:
+                fail_guess_because(wordmap, ['av+', 'J'], [33, 41, 44, 48])
         elif wordmap['kotus_av'] == 'K': 
-            lastp = wordmap['stub'].rfind('r')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating -R not found in", wordmap,
-                        file=stderr)
+            if tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['rin', 'roin'])
+            elif tn == 41:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ras', 'räs'])
+            elif tn == 44:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ret'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['re'])
+            elif tn in range(52, 79):
+                lastp = wordmap['stub'].rfind('r')
+                wordmap['stub'] = wordmap['stub'][:lastp]
+            else:
+                fail_guess_because(wordmap, ['av+', 'K'], [33, 41, 44, 48])
         elif wordmap['kotus_av'] == 'L': 
-            lastp = wordmap['stub'].rfind('j')
-            wordmap['stub'] = wordmap['stub'][:lastp]
-            if lastp == -1:
-                print("Unguessable stub; gradating -J not found in", wordmap,
-                        file=stderr)
+            if tn == 33:
+                wordmap = mangle_suffixes_or_die(wordmap, ['jin'])
+            elif tn == 48:
+                wordmap = mangle_suffixes_or_die(wordmap, ['je'])
+            elif tn in range(52, 79):
+                lastp = wordmap['stub'].rfind('j')
+                wordmap['stub'] = wordmap['stub'][:lastp]
+            else:
+                fail_guess_because(wordmap, ['av+', 'K'], [33, 48])
         elif wordmap['kotus_av'] == 'N': 
             lastp = wordmap['stub'].rfind('d')
             wordmap['stub'] = wordmap['stub'][:lastp + 1]
