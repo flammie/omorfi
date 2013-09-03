@@ -65,7 +65,7 @@ def stub_all(wordmap):
         elif tn == 45:
             wordmap = mangle_suffixes_or_die(wordmap, ['s'])
         elif tn == 47:
-            wordmap = mangle_suffixes_or_die(wordmap, ['ut', 'yt'])
+            wordmap = mangle_suffixes_or_die(wordmap, ['ut', 'yt', '{uy}t'])
         elif tn == 49:
             if wordmap['stub'].endswith('e'):
                 wordmap['extra_e'] = True
@@ -256,7 +256,7 @@ def stub_all(wordmap):
             elif tn == 33:
                 wordmap = mangle_suffixes_or_die(wordmap, ['in'])
             elif tn == 34:
-                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön', '{oö}n'])
             elif tn == 41:
                 wordmap = mangle_suffixes_or_die(wordmap, ['as', 'us', 'is',
                     'es', 'äs'])

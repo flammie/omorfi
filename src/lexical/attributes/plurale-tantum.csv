@@ -7,7 +7,6 @@
 # manifested in existing corpora. For these forms the dictionary form is the
 # singular nominative as usual, and the extra field is ``plt=common``.
 "LEMMA","KOTUS NUMBER","KOTUS GRADATION LETTER","PART-OF-SPEECH","PLURALE TANTUM"#,<-HEADERS
-
 "Aakarit","5","0","Prop","plt=obligatory"
 "aakkonen","38","0","N","plt=common"
 "Aalinkalliot","3","0","Prop","plt=obligatory"
@@ -738,7 +737,6 @@
 "Haaskakummut","1","H","Prop","plt=obligatory"
 "Haavistonkorvet","7","E","Prop","plt=obligatory"
 "Haavistonpellot","1","I","Prop","plt=obligatory"
-"haavoittuneet","47","0","N","plt=obligatory"
 "Hahdenkarit","5","0","Prop","plt=obligatory"
 "Hahtikummut","1","H","Prop","plt=obligatory"
 "Haihkamenluodot","1","F","Prop","plt=obligatory"
@@ -10585,6 +10583,7 @@
 "sosiaalimenot","1","0","N","plt=obligatory"
 "sosiaalitieteet","48","F","N","plt=obligatory"
 "sosiaalitilat","9","0","N","plt=obligatory"
+"sosialidemokraatit","6","C","N","plt=obligatory"
 "Sotakoskenlouhikot","4","A","Prop","plt=obligatory"
 "Sotamieskalliot","3","0","Prop","plt=obligatory"
 "Sotamiessarat","9","D","Prop","plt=obligatory"
