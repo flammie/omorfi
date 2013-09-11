@@ -6,12 +6,12 @@ FTB test
 
 
 from omorfi import Omorfi
-from convert_tag_formats import convert_omor_string
+from convert_tag_format import convert_omor_string
 from argparse import ArgumentParser, FileType
 
 from sys import stderr, stdin, stdout
 
-from re import re
+import re
 
 def main():
     print("""Please note that the licence of FTC does not allow you to do much
@@ -38,7 +38,7 @@ def main():
             dest="statfile", help="statistics")
     options = a.parse_args()
     omorfi = Omorfi()
-    omorfi.loadlibhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
+    omorfi.load_from_dir(options.fsa)
     if not options.statfile:
         options.statfile = stdout
     # basic statistics
@@ -62,7 +62,8 @@ def main():
     for line in options.infile:
         if not '<w lemma' in line or not 'msd=' in line:
             continue
-        matches = re.search('<w.*lemma="(.*).*msd="(.*)".*>(.*)</w>', line)
+        matches = re.search('<w.*lemma="([^"]*).*msd="([^"]*)".*>([^<]*)</w>',
+                line)
         if not matches:
             print("ERROR: Skipping line", line, file=stderr)
             continue
@@ -75,31 +76,31 @@ def main():
         omors = omorfi.analyse(ftcsurf)
         anals = []
         for omor in omors:
-            anals.append(convert_omor_string(omor, 'ftc'))
+            anals.append(convert_omor_string(omor.output, 'ftc'))
         found_anals = False
         found_lemma = False
         print_in = True
         for anal in anals:
-            if ftcanals in anal.output:
+            if ftcanals in anal:
                 found_anals = True
-            if ftclemma in anal.output:
+            if ftclemma in anal:
                 found_lemma = True
         if len(anals) == 0:
             print_in = False
             no_results += 1
-            print("NORESULTS:", ftbsurf, ftblemma, ftbanals, sep="\t",
+            print("NORESULTS:", ftcsurf, ftclemma, ftcanals, sep="\t",
                     file=options.outfile)
         elif not found_anals and not found_lemma:
             no_matches += 1
-            print("NOMATCH:", ftbsurf, ftblemma, ftbanals, sep="\t", end="\t",
+            print("NOMATCH:", ftcsurf, ftclemma, ftcanals, sep="\t", end="\t",
                     file=options.outfile)
         elif not found_anals:
             lemma_matches += 1
-            print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
+            print("NOANALMATCH:", ftcsurf, ftcanals, sep="\t", end="\t",
                     file=options.outfile)
         elif not found_lemma:
             anal_matches += 1
-            print("NOLEMMAMATCH:", ftbsurf, ftblemma, sep="\t", end="\t",
+            print("NOLEMMAMATCH:", ftcsurf, ftclemma, sep="\t", end="\t",
                     file=options.outfile)
         else:
             full_matches += 1
@@ -107,7 +108,7 @@ def main():
         if print_in:
             print(":IN:", end="\t", file=options.outfile)
             for anal in anals:
-                print(anal.output, end='\t', file=options.outfile)
+                print(anal, end='\t', file=options.outfile)
             print(file=options.outfile)
     print("Lines", "Matches", "Lemma", "Anals", "Mismatch", "No results", sep="\t",
             file=options.statfile)
