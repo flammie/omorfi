@@ -1,7 +1,26 @@
 #!/bin/bash
+
+usage() {
+    echo "Usage: $0 [--help|LEXCDIR]"
+    echo "Convert some lexcies into some apertiums"
+    echo
+    echo "  -h, --help   print this help"
+    echo
+    echo "If LEXCDIR is omitted it defaults to src/morphology"
+}
+
+version() {
+    echo "omor2apertium 0.0"
+}
+
 lexcdir=src/morphology
 if test $# -ge 1 ; then
-    lexcdir=$1
+    case $1 in
+        --help|-h) usage; exit 0;;
+        --version|-v) version; exit 0;;
+        -*) echo "Bad argument $1"; usage; exit 1;;
+        *) lexcdir=$1;;
+    esac
 fi
 cat $lexcdir/definitions.lexc $lexcdir/pos.lexc \
     $lexcdir/compounding/compounding.lexc \
