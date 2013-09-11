@@ -507,10 +507,10 @@ def guess_new_noun(wordmap):
                         "New loan words do not simply walk into quantitative gradation")
         elif tn == 9:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
+                if wordmap['lemma'].endswith('a'):
                     wordmap['new_paras'] = ['N_KIRJA']
-                elif wordmap['lemma'].endswith('ą'):
-                    wordmap['new_paras'] = ['N_KIRJA']
+                elif wordmap['lemma'].endswith('A'):
+                    wordmap['new_paras'] = ['N_FIFA']
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_paras'] = ['N_YMPÄRYSTÄ']
                 else:
@@ -593,21 +593,21 @@ def guess_new_noun(wordmap):
                         [False, 'A-K'])
         elif tn == 10:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
+                if wordmap['lemma'].endswith('a'):
                     wordmap['new_paras'] = ['N_SOITTAJA']
-                elif wordmap['lemma'].endswith('ą'):
-                    wordmap['new_paras'] = ['N_SOITTAJA']
+                elif wordmap['lemma'].endswith('A'):
+                    wordmap['new_paras'] = ['N_FIFA']
                 elif wordmap['lemma'].endswith('ă'):
                     wordmap['new_paras'] = ['N_VODĂ']
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_paras'] = ['N_HÖPÖTTÄJÄ']
                 elif wordmap['lemma'].endswith('an'):
                     wordmap['new_paras'] = ['N_AAMUKAHDEKSAN']
-                elif wordmap['lemma'].endswith('ä'):
+                elif wordmap['lemma'].endswith('än'):
                     wordmap['new_paras'] = ['N_AAMUYHDEKSÄN']
                 else:
                     fail_guess_because(wordmap, ['N', 10, False],
-                            ['a ą ă', 'ä'])
+                            ['a ă', 'ä'])
             elif wordmap['kotus_av'] == 'A':
                 if wordmap['lemma'].endswith('ka'):
                     wordmap['new_paras'] = ['N_LUOKKA']
@@ -707,8 +707,6 @@ def guess_new_noun(wordmap):
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('a'):
                     wordmap['new_paras'] = ['N_PROBLEEMA']
-                elif wordmap['lemma'].endswith('ă'):
-                    wordmap['new_paras'] = ['N_PROBLEEMA']
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_paras'] = ['N_KÄPÄLÄ']
                 else:
@@ -719,10 +717,12 @@ def guess_new_noun(wordmap):
                         [False])
         elif tn == 12:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
+                if wordmap['lemma'].endswith('a'):
                     wordmap['new_paras'] = ['N_MAKKARA']
                 elif wordmap['lemma'].endswith('ä'):
                     wordmap['new_paras'] = ['N_HÄKKYRÄ']
+                elif wordmap['lemma'].endswith('A'):
+                    wordmap['new_paras'] = ['N_FIFA']
                 else:
                     fail_guess_because(wordmap, ['N', 12, False],
                             ['a', 'ä'])
@@ -887,54 +887,114 @@ def guess_new_noun(wordmap):
                         [False])
         elif tn == 21:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('gay'):
-                    wordmap['new_paras'] = ['N_GAY']
-                elif wordmap['lemma'].endswith('ie') and wordmap['harmony'] == 'back':
-                    wordmap['new_paras'] = ['N_BRASSERIE']
-                elif wordmap['lemma'].endswith('è') and wordmap['harmony'] == 'back':
-                    wordmap['new_paras'] = ['N_ROSÉ']
-                elif wordmap['lemma'].endswith('é') and wordmap['harmony'] == 'back':
-                    wordmap['new_paras'] = ['N_ROSÉ']
-                elif wordmap['lemma'].endswith('e') and wordmap['harmony'] == 'back':
-                    wordmap['new_paras'] = ['N_ROSÉ']
-                elif wordmap['lemma'].endswith('é') and wordmap['harmony'] == 'front':
-                    wordmap['new_paras'] = ['N_BÉBÉ']
-                elif wordmap['lemma'].endswith('ci'):
-                    wordmap['new_paras'] = ['N_GAY']
-                elif wordmap['lemma'].endswith('oí'):
-                    wordmap['new_paras'] = ['N_GAY']
-                elif wordmap['lemma'].endswith('fu'):
-                    wordmap['new_paras'] = ['N_KUNGFU']
-                elif wordmap['lemma'].endswith('au'):
-                    wordmap['new_paras'] = ['N_KUNGFU']
-                elif wordmap['lemma'].endswith('ou'):
-                    wordmap['new_paras'] = ['N_KUNGFU']
-                elif wordmap['lemma'].endswith('ao'):
-                    wordmap['new_paras'] = ['N_KUNGFU']
-                elif wordmap['lemma'].endswith('ho'):
-                    wordmap['new_paras'] = ['N_KUNGFU']
-                else:
-                    #fail_guess_because(wordmap, ['N', 21, False],
-                    #        ['gay', 'eéè'], "guessing 21 is not possible"
-                    #        "Using #")
+                if not wordmap['stem_vowel']:
+                    # No pre-defined pronunciation, use guessing
+                    if wordmap['lemma'].endswith('ay'):
+                        wordmap['new_paras'] = ['N_GAY']
+                    elif wordmap['lemma'].endswith('ey'):
+                        wordmap['new_paras'] = ['N_JOCKEY']
+                    elif wordmap['lemma'].endswith('ae'):
+                        wordmap['new_paras'] = ['N_REGGAE']
+                    elif wordmap['lemma'].endswith('ie') and wordmap['harmony'] == 'back':
+                        wordmap['new_paras'] = ['N_BRASSERIE']
+                    elif wordmap['lemma'].endswith('ie') and wordmap['harmony'] == 'front':
+                        wordmap['new_paras'] = ['N_BRIE']
+                    elif wordmap['lemma'].endswith('ci'):
+                        wordmap['new_paras'] = ['N_GAY']
+                    elif wordmap['lemma'].endswith('oy'):
+                        wordmap['new_paras'] = ['N_COWBOY']
+                    else:
+                        wordmap['stem_vowel'] = wordmap['lemma'][-1]
+                if wordmap['stem_vowel']:
+                    # Pre-defined pronunciation or last ortographic vowel if not handled above
+                    if wordmap['stem_vowel'] in 'aAáàâãăąā':
+                        wordmap['new_paras'] = ['N_CHACHACHA']
+                    elif wordmap['stem_vowel'] in 'eEéèêėěęē' and wordmap['harmony'] == 'back':
+                        wordmap['new_paras'] = ['N_ROSÉ']
+                    elif wordmap['stem_vowel'] in 'eEéèêëėěęē' and wordmap['harmony'] == 'front':
+                        wordmap['new_paras'] = ['N_BÉBÉ']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-2] == 'a':
+                        wordmap['new_paras'] = ['N_GAY']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-2] == 'e':
+                        wordmap['new_paras'] = ['N_JOCKEY']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-2] == 'o':
+                        wordmap['new_paras'] = ['N_COWBOY']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-1] == 'y':
+                        wordmap['new_paras'] = ['N_KENTUCKY']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['harmony'] == 'back':
+                        wordmap['new_paras'] = ['N_BRASSERIE']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['harmony'] == 'front':
+                        wordmap['new_paras'] = ['N_BRIE']
+                    elif wordmap['stem_vowel'] in 'oOóòôõōå':
+                        wordmap['new_paras'] = ['N_ESQUIMAU']
+                    elif wordmap['stem_vowel'] in 'uUúùûū':
+                        wordmap['new_paras'] = ['N_KUNGFU']
+                    elif wordmap['stem_vowel'] in 'yYýÿüű':
+                        wordmap['new_paras'] = ['N_FONDUE']
+                    elif wordmap['stem_vowel'] in 'öÖøő':
+                        wordmap['new_paras'] = ['N_MALMÖ']
+                if not wordmap['new_paras']:
+                    fail_guess_because(wordmap, ['N', 21, False],
+                            ['gay', 'eéè', "etc."], "unhandled stem type for 21 - using #")
                     wordmap['new_paras'] = ['#']
             else:
                 fail_guess_because(wordmap, ['N', 21],
                         [False])
         elif tn == 22:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('ait'):
+                # Known pronunciations
+                if wordmap['stem_vowel'] == 'a':
+                    wordmap['new_paras'] = ['N_NOUGAT']
+                elif wordmap['stem_vowel'] == 'e' and wordmap['harmony'] == 'back':
                     wordmap['new_paras'] = ['N_PARFAIT']
+                elif wordmap['stem_vowel'] == 'e' and wordmap['harmony'] == 'front':
+                    wordmap['new_paras'] = ['N_BEIGNET']
+                elif wordmap['stem_vowel'] == 'i' and wordmap['harmony'] == 'back':
+                    wordmap['new_paras'] = ['N_VERSAILLES']
+                elif wordmap['stem_vowel'] == 'i' and wordmap['harmony'] == 'front':
+                    wordmap['new_paras'] = ['N_BEIGNET']  #!
+                elif wordmap['stem_vowel'] == 'o':
+                    wordmap['new_paras'] = ['N_BORDEAUX']
+                elif wordmap['stem_vowel'] == 'u':
+                    wordmap['new_paras'] = ['N_SHOW']
+                elif wordmap['stem_vowel'] == 'y':
+                    wordmap['new_paras'] = ['N_CAMUS']
+                elif wordmap['stem_vowel'] == 'ö':
+                    wordmap['new_paras'] = ['N_MONSIEUR']
+                # Guessed pronunciations
+                elif wordmap['lemma'].endswith('j'):
+                    wordmap['new_paras'] = ['N_SERGEJ']
+                elif wordmap['lemma'].endswith('ah'):
+                    wordmap['new_paras'] = ['N_NOUGAT']
+                elif wordmap['lemma'].endswith('at'):
+                    wordmap['new_paras'] = ['N_NOUGAT']
+                elif wordmap['lemma'].endswith('ait'):
+                    wordmap['new_paras'] = ['N_PARFAIT']
+                elif wordmap['lemma'].endswith('et'):
+                    wordmap['new_paras'] = ['N_BEIGNET']
+                elif wordmap['lemma'].endswith('ot'):
+                    wordmap['new_paras'] = ['N_BORDEAUX']
+                elif wordmap['lemma'].endswith('os'):
+                    wordmap['new_paras'] = ['N_BORDEAUX']
+                elif wordmap['lemma'].endswith('us'):
+                    wordmap['new_paras'] = ['N_CAMUS']
+                elif wordmap['lemma'].endswith('ois'):
+                    wordmap['new_paras'] = ['N_NOUGAT']
+                elif wordmap['lemma'].endswith('ew'):
+                    wordmap['new_paras'] = ['N_SHOW']
                 elif wordmap['lemma'].endswith('ow'):
                     wordmap['new_paras'] = ['N_SHOW']
                 elif wordmap['lemma'].endswith('ough'):
                     wordmap['new_paras'] = ['N_SHOW']
-                elif wordmap['lemma'].endswith('et'):
-                    wordmap['new_paras'] = ['N_BEIGNET']
+                elif wordmap['lemma'].endswith('oux'):
+                    wordmap['new_paras'] = ['N_SHOW']
+                elif wordmap['lemma'].endswith('aux'):
+                    wordmap['new_paras'] = ['N_BORDEAUX']
+                elif wordmap['lemma'].endswith('eux'):
+                    wordmap['new_paras'] = ['N_MONSIEUR']
                 else:
-                    #fail_guess_because(wordmap, ['N', 22, False],
-                    #        ['ait', 'ow'], "guessing 22 is not possible"
-                    #        "Using #")
+                    fail_guess_because(wordmap, ['N', 22, False],
+                            ['ait', 'ow', "etc."], "unhandled stem type for 22 - using #")
                     wordmap['new_paras'] = ['#']
             else:
                 fail_guess_because(wordmap, ['N', 22],
@@ -987,11 +1047,11 @@ def guess_new_noun(wordmap):
                     else:
                         fail_guess_because(wordmap, ['N', 27, False, 'si'],
                                 ['back', 'front'])
-                elif wordmap['lemma'].endswith('viis'):
+                elif wordmap['lemma'].endswith('s'):
                     if wordmap['harmony'] == 'front':
                         wordmap['new_paras'] = ['N_VIIS']
                     else:
-                        fail_guess_because(wordmap, ['N', 27, False, 'viis'],
+                        fail_guess_because(wordmap, ['N', 27, False, 's'],
                                 ['front'])
                 else:
                     fail_guess_because(wordmap, ['N', 27, False],
@@ -1111,9 +1171,11 @@ def guess_new_noun(wordmap):
                 if wordmap['lemma'].endswith('ksi'):
                     if wordmap['harmony'] == 'back':
                         wordmap['new_paras'] = ['N_HAAKSI']
+                    elif wordmap['harmony'] == 'front':
+                        wordmap['new_paras'] = ['N_AAMUYKSI']
                     else:
                         fail_guess_because(wordmap, ['N', 31, False, 'ksi'],
-                            ['back'])
+                            ['back', 'front'])
                 else:
                     fail_guess_because(wordmap, ['N', 31, False],
                             ['ksi'])

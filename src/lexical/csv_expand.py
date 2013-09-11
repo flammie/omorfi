@@ -59,7 +59,7 @@ def main():
     print("# DO NOT MODIFY manually since it will be OVERWRITTEN anyways",
             file=args.output)
     print("lemma", "new_paras", "pos", "kotus_tn", "kotus_av", "plurale_tantum", 
-        "stub", "twolstem", "possessive", "clitics", "is_proper",
+        "possessive", "clitics", "is_proper",
         "proper_noun_class", "style", "stub", "gradestem", "twolstem",
         "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
         "stem_diphthong", "subcat", "sem", "particle", "pronunciation", 
