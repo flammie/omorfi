@@ -546,7 +546,7 @@ def guess_new_noun(wordmap):
                             ['ka'])
             elif wordmap['kotus_av'] == 'E':
                 if wordmap['lemma'].endswith('pa'):
-                    wordmap['new_paras'] = ['N_HALPA']
+                    wordmap['new_paras'] = ['N_SALPA']
                 else:
                     fail_guess_because(wordmap, ['N', 9, 'E'],
                             ['pa'])
