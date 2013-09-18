@@ -1400,7 +1400,7 @@ def guess_new_noun(wordmap):
                 elif wordmap['lemma'].endswith('is') and wordmap['harmony'] == 'back':
                     wordmap['new_paras'] = ['N_RUUMIS']
                 elif wordmap['lemma'].endswith('is') and wordmap['harmony'] == 'front':
-                    wordmap['new_paras'] = ['N_TIIVIS']
+                    wordmap['new_paras'] = ['N_DIMITRIS']
                 elif wordmap['lemma'].endswith('os'):
                     wordmap['new_paras'] = ['N_UROS']
                 elif wordmap['lemma'].endswith('äs'):
