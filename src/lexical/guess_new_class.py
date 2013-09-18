@@ -4835,7 +4835,7 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_KUMPIKIN']
         elif wordmap['lemma'] in ['molempi', 'molemmat']:
             wordmap['new_paras'] = ['PRON_MOLEMMAT']
-        elif wordmap['lemma'] in ['useampi', 'useimmat']:
+        elif wordmap['lemma'] in ['useampi']:
             wordmap['new_paras'] = ['PRON_USEAMPI']
         else:
             fail_guess_because(wordmap, ['PRON', 16], ['jompi', 'kumpi', '...'])
