@@ -507,7 +507,9 @@ def guess_new_noun(wordmap):
                         "New loan words do not simply walk into quantitative gradation")
         elif tn == 9:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a'):
+                if wordmap['lemma'] in ["Kangasala", "Koskenala"]:
+                    wordmap['new_paras'] = ['N_KANGASALA']
+                elif wordmap['lemma'].endswith('a'):
                     wordmap['new_paras'] = ['N_KIRJA']
                 elif wordmap['lemma'].endswith('A'):
                     wordmap['new_paras'] = ['N_FIFA']
