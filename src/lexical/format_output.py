@@ -886,7 +886,9 @@ def format_root_lexicon(format):
 0   PARTICLE    ;
 0   PUNCTUATION ;
 0   51 ;
-    """
+"""
+    if '+taggerhacks' in format:
+        root += "0   TAGGER_HACKS    ;\n"
     return root
 
 def format_xml_kotus_sanalista(wordmap):
