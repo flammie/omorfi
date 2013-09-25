@@ -1,4 +1,8 @@
-LEXICON FTB3_HACKS
+! A bunch of analysis strings needed for an OMOR-tagged FTB3-corpus based tagger.
+! The lemmas are mostly defective and it's probably not worth correcting them for
+! this (temporary?) support hack...
+
+LEXICON TAGGER_HACKS
 [WORD_ID=1%0%0%0%0-litraisiin][POS=ADJECTIVE][NUM=PL][CASE=ILL]:01%0%0%0%0-litraisiin	#	;
 [WORD_ID=1%0%0%0-kertaiseksi][POS=ADJECTIVE][NUM=SG][CASE=TRA]:01%0%0%0-kertaiseksi	#	;
 [WORD_ID=1%0%0%0-paikkaisen][POS=ADJECTIVE][NUM=SG][CASE=GEN]:01%0%0%0-paikkaisen	#	;

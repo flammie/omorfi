@@ -507,7 +507,9 @@ def guess_new_noun(wordmap):
                         "New loan words do not simply walk into quantitative gradation")
         elif tn == 9:
             if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('a'):
+                if wordmap['lemma'] in ["Kangasala", "Koskenala"]:
+                    wordmap['new_paras'] = ['N_KANGASALA']
+                elif wordmap['lemma'].endswith('a'):
                     wordmap['new_paras'] = ['N_KIRJA']
                 elif wordmap['lemma'].endswith('A'):
                     wordmap['new_paras'] = ['N_FIFA']
@@ -546,7 +548,7 @@ def guess_new_noun(wordmap):
                             ['ka'])
             elif wordmap['kotus_av'] == 'E':
                 if wordmap['lemma'].endswith('pa'):
-                    wordmap['new_paras'] = ['N_HALPA']
+                    wordmap['new_paras'] = ['N_SALPA']
                 else:
                     fail_guess_because(wordmap, ['N', 9, 'E'],
                             ['pa'])
@@ -1400,7 +1402,7 @@ def guess_new_noun(wordmap):
                 elif wordmap['lemma'].endswith('is') and wordmap['harmony'] == 'back':
                     wordmap['new_paras'] = ['N_RUUMIS']
                 elif wordmap['lemma'].endswith('is') and wordmap['harmony'] == 'front':
-                    wordmap['new_paras'] = ['N_TIIVIS']
+                    wordmap['new_paras'] = ['N_DIMITRIS']
                 elif wordmap['lemma'].endswith('os'):
                     wordmap['new_paras'] = ['N_UROS']
                 elif wordmap['lemma'].endswith('äs'):
@@ -4835,7 +4837,7 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_KUMPIKIN']
         elif wordmap['lemma'] in ['molempi', 'molemmat']:
             wordmap['new_paras'] = ['PRON_MOLEMMAT']
-        elif wordmap['lemma'] in ['useampi', 'useimmat']:
+        elif wordmap['lemma'] in ['useampi']:
             wordmap['new_paras'] = ['PRON_USEAMPI']
         else:
             fail_guess_because(wordmap, ['PRON', 16], ['jompi', 'kumpi', '...'])

@@ -88,19 +88,6 @@ AC_ARG_ENABLE([voikko],
                               [enable_voikko=yes])
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
-# legacy a bit
-AC_ARG_ENABLE([proper_subclasses],
-              [AS_HELP_STRING([--enable-proper-subclasses],
-                              [include subclasses of proper names in analyses @<:@default=no@:>@])],
-                              [enable_proper_subclasses=$enableval],
-                              [enable_proper_subclasses=no])
-AS_IF([test x$enable_proper_subclasses != xno], [tag_format=ftb3+propers])
-AC_ARG_ENABLE([semantics],
-              [AS_HELP_STRING([--enable-semantics],
-                              [include some semantic classifications in analyses @<:@default=no@:>@])],
-                              [enable_semantics=$enableval],
-                              [enable_semantics=no])
-AS_IF([test x$enable_semantics != xno], [tag_format=ftb3+semantics])
 # generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([multichar_format],
               [AS_HELP_STRING([--enable-multichar-format],
@@ -109,6 +96,7 @@ AC_ARG_ENABLE([multichar_format],
                              [tag_format=ftb3])
 AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
 AC_SUBST([FTB3], [$enable_ftb3])
+AM_CONDITIONAL([WANT_TAGGER_HACKS], [test "$tag_format" != ${tag_format/+taggerhacks/}])
 AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
 AC_SUBST([TAG_FORMAT], [${tag_format%%[[+-]]*}])
 
@@ -261,8 +249,5 @@ Configured $PACKAGE_STRING:
     * Dictionaries: $enable_dictionary
     * Hyphenation: $enable_hyphenation
     * Voikko support: $enable_voikko
-    * Proper subclasses: $enable_proper_subclasses
-    * Semantic tags: $enable_semantics
     * Tag format: $tag_format
-    * FTB3 readings: $enable_ftb3
 EOF
