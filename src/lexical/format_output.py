@@ -115,7 +115,7 @@ omor_multichars = {
         '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
         '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
-        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]'}
+        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
 
 omor_short_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
@@ -170,7 +170,7 @@ omor_short_multichars = {
         '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
         '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
-        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]'}
+        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
 
 ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
@@ -397,6 +397,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "TITLE": "[SEM=TITLE]", "TIME": "[SEM=TIME]", 
 		"CURRENCY": "[SEM=CURRENCY]", "MEDIA": "[SEM=MEDIA]", 
 		"POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
+        "MALE": "[SEM=MALE]", "FEMALE": "[SEM=FEMALE]", 
 		"PROPER": "[SUBCAT=PROPER]", 
 		"CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
         "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
@@ -504,6 +505,7 @@ stuff2omor_short = {
         "TITLE": "[SEM=TITLE]", "TIME": "[SEM=TIME]", 
 		"CURRENCY": "[SEM=CURRENCY]", "MEDIA": "[SEM=MEDIA]", 
 		"POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
+        "MALE": "[SEM=MALE]", "FEMALE": "[SEM=FEMALE]", 
 		"PROPER": "[SUBCAT=PROPER]", 
 		"CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
         "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
