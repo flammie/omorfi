@@ -1,5 +1,5 @@
 #!/usr/bin/env -O python3
-from omorfi import load_omorfi, omorfi_lookup
+from omorfi import Omorfi
 from glob  import glob
 from sys import stdout, argv
 import re
@@ -10,7 +10,8 @@ sent = list()
 max_window_size = 256
 
 adposition_complements = dict()
-adposition_complement_cases = ['CASE=GENITIVE', 'CASE=PARTITIVE']
+adposition_complement_cases = ['CASE=GENITIVE', 'CASE=PARTITIVE', \
+        'CASE=ELATIVE', 'CASE=ILLATIVE', 'CASE=ALLATIVE', 'CASE=ABLATIVE']
 
 def add_to_sent(analyses, surf):
     global sent
@@ -29,7 +30,7 @@ def add_to_sent(analyses, surf):
         gc.collect()
     elif len(sent) >= max_window_size:
         print("ERROR! Too long sentence chopped:", end='')
-        for coh in sent[:50]:
+        for coh in sent[:20]:
             for tag in coh:
                 if tag.startswith("SURF="):
                     print(tag[len("SURF="):], end=' ')
@@ -80,8 +81,8 @@ def context_adposition_complement(word_pos):
                     else:
                         adposition_complements[word]['right'][case] += 1
                     comp_found = True
-        if 'POSS=1STSINGULAR' in sent[word_pos] or 'POSS=2NDSINGULAR' in sent[word_pos] or 'POSS=3RDAMBIGUOUS' in sent[word_pos] or 'POSS=2NDPLURAL' in sent[word_pos] or 'POSS=1STPLURAL' in sent[word_pos]:
-            if not 'poss' in apdposition_complements[word]:
+        if 'POSSESSIVE=1STSINGULAR' in sent[word_pos] or 'POSSESSIVE=2NDSINGULAR' in sent[word_pos] or 'POSSESSIVE=3RDAMBIGUOUS' in sent[word_pos] or 'POSSESSIVE=2NDPLURAL' in sent[word_pos] or 'POSSESSIVE=1STPLURAL' in sent[word_pos]:
+            if not 'poss' in adposition_complements[word]:
                 adposition_complements[word]['poss'] = 1
             else:
                 adposition_complements[word]['poss'] += 1
@@ -118,31 +119,66 @@ def test_adposition_complements(logfile):
                 print("ERROR! mostly no comps for", lemma, file=logfile)
 
 def print_adposition_stats(logfile):
+    print("surcface", "left", "poss", "right", "none", "total", sep='\t',
+            file=logfile)
     for lemma, comps in adposition_complements.items():
-        totals = 0
-        lefts = 0
-        rights = 0
+        totals = {'all': 0}
+        lefts = {'all': 0}
+        poss = 0
+        rights = {'all': 0}
         nones = 0
+        for case in adposition_complement_cases:
+            totals[case] = 0
+            lefts[case] = 0
+            rights[case] = 0
         if 'left' in comps:
             for case in adposition_complements[lemma]['left']:
-                lefts += adposition_complements[lemma]['left'][case]
+                lefts['all'] += adposition_complements[lemma]['left'][case]
+                totals[case] += adposition_complements[lemma]['left'][case]
+                lefts[case] = adposition_complements[lemma]['left'][case]
         if 'right' in comps:
             for case in adposition_complements[lemma]['right']:
-                rights += adposition_complements[lemma]['right'][case]
+                rights['all'] += adposition_complements[lemma]['right'][case]
+                totals[case] += adposition_complements[lemma]['right'][case]
+                rights[case] = adposition_complements[lemma]['right'][case]
+        if 'poss' in comps:
+            poss += adposition_complements[lemma]['poss']
         if 'none' in comps:
             nones += adposition_complements[lemma]['none']
-        totals = lefts + rights + nones
-        print(lemma, lefts/totals, nones/totals, rights/totals, totals,
+        totals['all'] = lefts['all'] + poss + rights['all'] + nones
+        print(lemma,
+                lefts['all'], poss, rights['all'], nones, totals['all'],
                 file=logfile, sep='\t')
+        print(lemma, 
+                "%.2f %%" % (lefts['all'] / totals['all'] * 100), 
+                "%.2f %%" % (poss / totals['all'] * 100), 
+                "%.2f %%" % (rights['all'] / totals['all'] * 100),
+                "%.2f %%" % (nones / totals['all'] * 100), 
+                "%.2f %%" % (totals['all'] / totals['all'] * 100),
+                file=logfile, sep='\t')
+        for case in adposition_complement_cases:
+            if totals[case] > 0:
+                print("%s %s" %(lemma, case),
+                        lefts[case], "–", rights[case], "–", totals[case],
+                        file=logfile, sep='\t')
+                print("%s %s %%" %(lemma, case), 
+                        "%.2f %%" % (lefts[case] / totals[case] * 100), 
+                        "–", 
+                        "%.2f %%" % (rights[case] / totals[case] * 100),
+                        "–", 
+                        "%.2f %%" % (totals[case] / totals[case] * 100),
+                        file=logfile, sep='\t')
+
 
 def main():
-    if len(argv) > 1 and argv[1] == 'debug':
-        test_corpora_files = ["fast_test.notatext"]
+    if len(argv) > 1:
+        test_corpora_files = argv[1:]
     else:
         test_corpora_files = glob("*.text")
     adposition_log = open('adposition_complements.log', 'w')
     adposition_stats = open('adposition_complements_full.log', 'w')
-    omorfi = load_omorfi('../src/morphology.omor.hfst')
+    omorfi = Omorfi()
+    omorfi.load_filename('../src/morphology.omor.hfst')
     test_corpora = list()
     for test_corpus_file in test_corpora_files:
         try:
@@ -154,20 +190,23 @@ def main():
         linen = 0
         for line in test_corpus:
             linen += 1
+            if (linen % 1000000) == 0:
+                print(linen, "...! Time to reload everything because memory is leaking very badly indeed!")
+                previous = list()
+                sent = list()
+                omorfi = None
+                omorfi = Omorfi()
+                omorfi.load_filename('../src/morphology.omor.hfst')
+                gc.collect()
+
             if (linen % 10000) == 0:
                 print(linen, "...")
             for punct in ".,:;?!()":
                 line = line.replace(punct, " " + punct)
             for token in line.split():
                 #print(token)
-                analyses = omorfi_lookup(omorfi, token)
+                analyses = omorfi.analyse(token)
                 add_to_sent(analyses, token)
-        print("Flushing! because this is too memory intensive")
-        previous = list()
-        sent = list()
-        omorfi = None
-        omorfi = load_omorfi('../src/morphology.omor.hfst')
-        gc.collect()
     test_adposition_complements(adposition_log)
     print_adposition_stats(adposition_stats)
     exit(0)
