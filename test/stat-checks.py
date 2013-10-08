@@ -1,9 +1,10 @@
 #!/usr/bin/env -O python3
-from omorfi import load_omorfi, omorfi_lookup
+from omorfi import Omorfi
 from glob  import glob
 from sys import stdout, argv
 import re
 
+from argparse import ArgumentParser, FileType
 
 whitelist_props = True
 lemma_freqs = dict()
@@ -107,15 +108,25 @@ def print_case_stats(statfile):
         print(case, freq, sep='\t', file=statfile)
 
 def main():
-    if len(argv) > 1 and argv[1] == 'debug':
-        test_corpora_files = ["fast_test.notatext"]
+    a = ArgumentParser()
+    a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
+            help="HFST's optimised lookup binary data for the transducer to be applied")
+    a.add_argument('-i', '--input', metavar="INFILE", type=str, required=True,
+            dest="infile", help="source of analysis data")
+    a.add_argument('-m', '--master', metavar="TSVFILE", type=str, required=True,
+            dest="tsvfile", help="source of existing lexical data")
+    opts = a.parse_args()
+    if opts.infile:
+        test_corpora_files = [opts.infile]
     else:
         test_corpora_files = glob("*.text")
+    
     lemma_log = open('missing_word_ids.log', 'w')
     case_log = open('missing_nominal_cases.log', 'w')
     comp_log = open('missing_comparatives.log', 'w')
-    omorfi = load_omorfi('../src/morphology.omor.hfst')
-    gather_lemmas(open('../src/lexical/master.tsv'))
+    omorfi = Omorfi()
+    omorfi.load_filename(opts.fsa)
+    gather_lemmas(open(opts.tsvfile))
     test_corpora = list()
     for test_corpus_file in test_corpora_files:
         try:
@@ -129,8 +140,10 @@ def main():
             linen += 1
             if (linen % 10000) == 0:
                 print(linen, "...")
+            for punct in ".,:;?!()":
+                line = line.replace(punct, " " + punct)
             for token in line.split():
-                analyses = omorfi_lookup(omorfi, token)
+                analyses = omorfi.analyse(token)
                 stat_word_ids(token, analyses)
                 stat_nominal_cases(token, analyses, case_log)
                 stat_adjective_comps(token, analyses, comp_log)

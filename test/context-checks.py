@@ -5,10 +5,13 @@ from sys import stdout, argv
 import re
 import gc
 
+from argparse import ArgumentParser, FileType
+
 previous = list()
 sent = list()
 max_window_size = 256
 
+adjective_agreements = dict()
 adposition_complements = dict()
 adposition_complement_cases = ['CASE=GENITIVE', 'CASE=PARTITIVE', \
         'CASE=ELATIVE', 'CASE=ILLATIVE', 'CASE=ALLATIVE', 'CASE=ABLATIVE']
@@ -29,7 +32,7 @@ def add_to_sent(analyses, surf):
         sent = list()
         gc.collect()
     elif len(sent) >= max_window_size:
-        print("ERROR! Too long sentence chopped:", end='')
+        print("ERROR! Too long sentence chopped:")
         for coh in sent[:20]:
             for tag in coh:
                 if tag.startswith("SURF="):
@@ -47,9 +50,32 @@ def extract_word_ids(word_pos):
     return word_ids
 
 def extract_surf(word_pos):
-    for tag in sent[word_pos]:
-        if tag.startswith("SURF"):
-            return tag[len("SURF="):]
+    return extract_tag(word_pos, 'SURF=')[len('SURF='):]
+
+def extract_tag(word_pos, tagstart):
+    for s in sent[word_pos]:
+        if s.startswith(tagstart):
+            return s
+
+def context_adjective_agreement(word_pos):
+    word = extract_surf(word_pos)
+    if not word in adjective_agreements:
+        adjective_agreements[word] = dict()
+    case = extract_tag(word_pos, 'CASE=')
+    comp_found = False
+    if 'SUBCAT=ADJECTIVE' in sent[word_pos]:
+        if word_pos < len(sent) - 1:
+            #right_word = extract_word_ids(word_pos + 1)
+            if 'POS=NOUN' in sent[word_pos + 1] and case in sent[word_pos + 1]:
+                if not 'right' in adjective_agreements[word]:
+                    adjective_agreements[word]['right'] = 1
+                else:
+                    adjective_agreements[word]['right'] += 1
+            else:
+                if not 'none' in adjective_agreements[word]:
+                    adjective_agreements[word]['none'] = 1
+                else:
+                    adjective_agreements[word]['none'] += 1
 
 def context_adposition_complement(word_pos):
     word = extract_surf(word_pos)
@@ -97,11 +123,13 @@ def parse_sentence():
     for word_pos in range(len(sent)):
         if 'SUBCAT=ADPOSITION' in sent[word_pos]:
             context_adposition_complement(word_pos)
+        elif 'SUBCAT=ADJECTIVE' in sent[word_pos]:
+            context_adjective_agreement(word_pos)
 
 def test_adposition_complements(logfile):
     for lemma, comps in adposition_complements.items():
         if not 'left' in comps and not 'right' in comps:
-            print("ERROR! no comps for", lemma, file=logfile)
+            print(lemma, "0 complements", file=logfile)
         biggest = 0
         if 'left' in comps:
             lefts = 0
@@ -116,7 +144,18 @@ def test_adposition_complements(logfile):
                 biggest = rights
         if 'none' in comps and ('right' in comps or 'left' in comps):
             if adposition_complements[lemma]['none'] > biggest:
-                print("ERROR! mostly no comps for", lemma, file=logfile)
+                print(lemma, biggest, "with complements", adposition_complements[lemma]['none'], "without", file=logfile)
+
+def test_adjective_agreements(logfile):
+    for lemma, comps in adjective_agreements.items():
+        if not 'right' in comps:
+            print(lemma, "without agreeing NPs", file=logfile)
+        elif 'none' in comps and 'right' in comps:
+            if adjective_agreements[lemma]['right'] < adjective_agreements[lemma]['none']:
+                print(lemma, adjective_agreements[lemma]['right'], "agreements",
+                        adjective_agreeements[lemma]['none'], 'without',
+                        file=logfile)
+
 
 def print_adposition_stats(logfile):
     print("surcface", "left", "poss", "right", "none", "total", sep='\t',
@@ -171,14 +210,21 @@ def print_adposition_stats(logfile):
 
 
 def main():
-    if len(argv) > 1:
-        test_corpora_files = argv[1:]
+    a = ArgumentParser()
+    a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
+            help="HFST's optimised lookup binary data for the transducer to be applied")
+    a.add_argument('-i', '--input', metavar="INFILE", type=str, required=True,
+            dest="infile", help="source of analysis data")
+    opts = a.parse_args()
+    if opts.infile:
+        test_corpora_files = [opts.infile]
     else:
         test_corpora_files = glob("*.text")
     adposition_log = open('adposition_complements.log', 'w')
     adposition_stats = open('adposition_complements_full.log', 'w')
+    adjective_log = open('adjective_agreements.log', 'w')
     omorfi = Omorfi()
-    omorfi.load_filename('../src/morphology.omor.hfst')
+    omorfi.load_filename(opts.fsa)
     test_corpora = list()
     for test_corpus_file in test_corpora_files:
         try:
@@ -196,7 +242,7 @@ def main():
                 sent = list()
                 omorfi = None
                 omorfi = Omorfi()
-                omorfi.load_filename('../src/morphology.omor.hfst')
+                omorfi.load_filename(opts.fsa)
                 gc.collect()
 
             if (linen % 10000) == 0:
@@ -204,11 +250,11 @@ def main():
             for punct in ".,:;?!()":
                 line = line.replace(punct, " " + punct)
             for token in line.split():
-                #print(token)
                 analyses = omorfi.analyse(token)
                 add_to_sent(analyses, token)
     test_adposition_complements(adposition_log)
     print_adposition_stats(adposition_stats)
+    test_adjective_agreements(adjective_log)
     exit(0)
 
 if __name__ == '__main__':
