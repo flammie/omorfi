@@ -268,7 +268,7 @@ def test_adjective_agreements(logfile):
         elif 'none' in comps and 'right' in comps:
             if adjective_agreements[lemma]['right'] < adjective_agreements[lemma]['none']:
                 print(lemma, adjective_agreements[lemma]['right'], "agreements",
-                        adjective_agreeements[lemma]['none'], 'without',
+                        adjective_agreements[lemma]['none'], 'without',
                         file=logfile)
 
 # long logs
