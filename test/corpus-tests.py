@@ -58,7 +58,6 @@ def add_to_sent(analyses, surf):
         parse_sentence()
         previous = sent
         sent = list()
-        gc.collect()
     elif len(sent) >= max_window_size:
         print("ERROR! Too long sentence skipped from start:")
         for coh in sent[:20]:
@@ -71,7 +70,6 @@ def add_to_sent(analyses, surf):
                 print(tag[len("SURF="):])
         sent = list()
         previous = list()
-        gc.collect()
 
 # analysis mangling
 
@@ -371,7 +369,7 @@ def main():
         linen = 0
         for line in test_corpus:
             linen += 1
-            if (linen % 1000000) == 0:
+            if (linen % 500000) == 0:
                 print(linen, "...! Time to reload everything because memory is leaking very badly indeed!")
                 previous = list()
                 sent = list()
@@ -380,8 +378,8 @@ def main():
                 omorfi.load_filename(opts.fsa)
                 gc.collect()
 
-            if (linen % 10000) == 0:
-                print(linen, "...")
+            if (linen % 1000) == 0:
+                print(linen, "...", end='\r')
             for punct in ".,:;?!()":
                 line = line.replace(punct, " " + punct + " ")
             for token in line.split():
@@ -390,13 +388,15 @@ def main():
                 stat_word_ids(token, analyses)
                 stat_nominal_cases(token, analyses, case_log)
                 stat_adjective_comps(token, analyses, comp_log)
+    print("Testing statistics")
     test_zero_lemmas(lemma_log) 
     test_zero_cases(case_log)
     test_zero_comps(comp_log)
     #test_case_deviations()
     test_adposition_complements(adposition_log)
-    print_adposition_stats(adposition_stats)
     test_adjective_agreements(adjective_log)
+    print("Writing accurate statistics")
+    print_adposition_stats(adposition_stats)
     print_lemma_stats(open('../src/probabilistics/lemmas.freqs', 'w'))
     print_case_stats(open('../src/probabilistics/cases.freqs', 'w'))
     exit(0)
