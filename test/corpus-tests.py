@@ -28,6 +28,19 @@ nominal_case_freqs_per_lemma = dict()
 
 adjective_comps_per_lemma = dict()
 
+# output formatting
+
+def print_error_word_miss_feature(lemma, feature, logfile=stdout, extras=None):
+    print("*", lemma, "without", feature, extras, file=logfile, sep='\t')
+
+def print_error_word_miss_context(lemma, context, logfile=stdout, extras=None):
+    print("*", lemma, "no matches for", context, extras, file=logfile, sep='\t')
+
+def print_suspicion_word_context(lemma, context, biggest, none, total,
+        logfile=stdout, extras=None):
+    print("?", lemma, "at most", biggest, "matches for", context, "but", none,
+            none, "without matches", extras, file=logfile, sep='\t')
+
 # background information
 
 def gather_lemmas(master_tsv):
@@ -216,48 +229,61 @@ def parse_sentence():
 
 def test_zero_lemmas(logfile):
     for lemma in lemmas - lemma_freqs.keys():
-        print("WARNING! word not in:", lemma, file=logfile)
+        print_error_word_miss_feature(lemma, "WORD_ID", logfile)
 
 def test_zero_cases(logfile):
     cases = nominal_case_freqs.keys()
     for lemma in nominal_case_freqs_per_lemma:
         for case in cases - nominal_case_freqs_per_lemma[lemma].keys():
-            print("WARNING!", lemma, "without", case, file=logfile)
+            print_error_word_miss_feature(lemma, "CASE", logfile, case)
         if len(nominal_case_freqs_per_lemma[lemma].keys()) == 1 and \
                 'NOMINATIVE' in nominal_case_freqs_per_lemma[lemma]:
-            print("ERROR!", lemma, "without inflectional cases, consider PARTICLE", file=logfile)
+            print_error_word_miss_feature(lemma, "CASE", logfile, 
+                    "ALL BUT NOMINATIVE (consider moving to PARTICLE)")
 
 def test_zero_comps(logfile):
     for lemma in adjective_comps_per_lemma.keys():
         if not '[COMPARISON=COMPARATIVE]' in adjective_comps_per_lemma[lemma]:
-            print("WARNING!", lemma, "missing comparative forms", file=logfile)
+            print_error_word_miss_feature(lemma, "COMPARISON", logfile,
+                    "COMPARATIVE")
         if not '[COMPARISON=SUPERLATIVE]' in adjective_comps_per_lemma[lemma]:
-            print("WARNING!", lemma, "missing superlative", file=logfile)
+            print_error_word_miss_feature(lemma, "COMPARISON", logfile,
+                    "SUPERLATIVE")
         if not '[COMPARISON=COMPARATIVE]' in adjective_comps_per_lemma[lemma] \
                 and not '[COMPARISON=SUPERLATIVE]' in adjective_comps_per_lemma[lemma]:
-            print("ERROR!", lemma, "has no comparison, consider NOUN", file=logfile)
-
+            print_error_word_miss_feature(lemma, "COMPARISON", logfile,
+                    "BOTH (consider moving to NOUN or PARTICLE)")
 
 
 def test_adposition_complements(logfile):
     for lemma, comps in adposition_complements.items():
-        if not 'left' in comps and not 'right' in comps:
-            print(lemma, "0 complements", file=logfile)
+        if not 'left' in comps and not 'right' in comps and not 'poss' in comps:
+            print_error_word_miss_context(lemma, "-1 / +1 COMP or 0 POSS",
+                    logfile)
         biggest = 0
+        total = 0
         if 'left' in comps:
             lefts = 0
             for case in adposition_complements[lemma]['left']:
                 lefts += adposition_complements[lemma]['left'][case]
+                total += adposition_complements[lemma]['left'][case]
             biggest = lefts
         if 'right' in comps:
             rights = 0
             for case in adposition_complements[lemma]['right']:
-                lefts += adposition_complements[lemma]['right'][case]
+                rights += adposition_complements[lemma]['right'][case]
+                total += adposition_complements[lemma]['right'][case]
             if rights > biggest:
                 biggest = rights
+        if 'poss' in comps:
+            total += adposition_complements[lemma]['poss']
+            if adposition_complements[lemma]['poss'] > biggest:
+                biggest = adposition_complements[lemma]['poss']
         if 'none' in comps and ('right' in comps or 'left' in comps):
             if adposition_complements[lemma]['none'] > biggest:
-                print(lemma, biggest, "with complements", adposition_complements[lemma]['none'], "without", file=logfile)
+                print_suspicion_word_context(lemma, "-1 / +1 COMP or 0 POSS",
+                        biggest, adposition_complements[lemma]['none'], total,
+                        logfile)
 
 def test_adjective_agreements(logfile):
     for lemma, comps in adjective_agreements.items():
