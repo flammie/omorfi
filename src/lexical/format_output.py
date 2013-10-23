@@ -730,7 +730,7 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
-    morphs = surf.split('>')
+    morphs = surf.split('%>')
     tags = anals.split('|')
     omorstring = ''
     if len(morphs) == len(tags):
@@ -741,7 +741,6 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     else:
         for morph in morphs:
             if morph != '' and morph != '0':
-                print("Segment: ", morph, "!", sep='"')
                 omorstring += '[SEGMENT=' + morph + ']'
         for tag in tags:
             omorstring += format_tag_omor(tag, format)
