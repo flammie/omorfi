@@ -1050,14 +1050,16 @@ def guess_new_noun(wordmap):
                         fail_guess_because(wordmap, ['N', 27, False, 'si'],
                                 ['back', 'front'])
                 elif wordmap['lemma'].endswith('s'):
-                    if wordmap['harmony'] == 'front':
+                    if wordmap['harmony'] == 'back':
+                        wordmap['new_paras'] = ['N_KUUS']
+                    elif wordmap['harmony'] == 'front':
                         wordmap['new_paras'] = ['N_VIIS']
                     else:
                         fail_guess_because(wordmap, ['N', 27, False, 's'],
-                                ['front'])
+                                ['back', 'front'])
                 else:
                     fail_guess_because(wordmap, ['N', 27, False],
-                            ['si', 'viis'])
+                            ['si', 's'])
             elif wordmap['kotus_av'] == 'F':
                 if wordmap['lemma'].endswith('si'):
                     if wordmap['harmony'] == 'back':
