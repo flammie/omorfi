@@ -3,6 +3,11 @@ if test ! -r $srcdir/ftb3.1.conllx ; then
     echo Missing $srcdir/ftb3.1.conllx
     exit 77
 fi
+if test ! -r ../src/morphology.ftb3.hfst ; then
+    echo Missing ../src/morphology.ftb3.hfst
+    echo this test only applies to FTB3 version of morphology
+    exit 77
+fi
 PYTHON=python3
 if type python3 ; then
     PYTHON=python3

@@ -185,7 +185,9 @@ omor2ftb3 = {
 def convert_omor_tag(tag, fmt):
     """Convert single omor style tag in to target format
     """
-    if fmt == 'ftc':
+    if fmt == 'omor':
+        return tag
+    elif fmt == 'ftc':
         return _omor2ftc(tag)
     elif fmt == 'ftb3':
         if tag in omor2ftb3:

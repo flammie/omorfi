@@ -39,7 +39,8 @@ ftb3_multichars= {
         '% Man', '%<Del%>→', '←%<Del%>'}
 
 omor_multichars = {
-        '[WORD_ID=', '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
+        '[WORD_ID=', '[SEGMENT=',
+        '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[SUBCAT=PRONOUN]', '[SUBCAT=NUMERAL]',
         '[SUBCAT=PROPER]', '[SUBCAT=ADVERB]', '[SUBCAT=ADPOSITION]',
         '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
@@ -729,15 +730,30 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
-    omorstring = ""
-    for anal in anals.split('|'):
-        omorstring += format_tag_omor(anal, format)
+    morphs = surf.split('>')
+    tags = anals.split('|')
+    omorstring = ''
+    if len(morphs) == len(tags):
+        for i in range(len(tags)):
+            if morphs[i] != '' and morphs[i] != '0':
+                omorstring += "[SEGMENT=" + morphs[i] + "]"
+            omorstring += format_tag_omor(tags[i], format)
+    else:
+        for morph in morphs:
+            if morph != '' and morph != '0':
+                print("Segment: ", morph, "!", sep='"')
+                omorstring += '[SEGMENT=' + morph + ']'
+        for tag in tags:
+            omorstring += format_tag_omor(tag, format)
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
 def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
+    # XXX: this is so bad exception that I do not want to think of it
+    if wordmap['stub'] == 'eikä':
+        return "[WORD_ID=ja][POS=PARTICLE][SUBCAT=CONJUNCTION][SUBCAT=COORDINATING][BOUNDARY=???][WORD_ID=ei][POS=VERB][SUBCAT=NEGATION][PERSON=3RDSINGULAR]:eikä  # ;\n"
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
@@ -745,6 +761,8 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_tag_omor('SUFFIX', format)
     elif wordmap['is_prefix']:
         wordmap['analysis'] += format_tag_omor('PREFIX', format)
+        if wordmap['pos'] == 'ADJECTIVE':
+            wordmap['analysis'] += format_tag_omor('Cpos', format)
 
     if wordmap['subcat']:
         subcats = wordmap['subcat'].split('|')
@@ -772,11 +790,12 @@ def format_lexc_omor(wordmap, format):
         if wordmap['kotus_av']:
             wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
     elif format.startswith("newparas"):
-        wordmap['analysis'] += "[PARA=%(new_para)s]" %(wordmap)
+        wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
 
     if wordmap['style']:
         wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
     
+    wordmap['analysis'] += '[SEGMENT=' + lexc_escape(wordmap['stub']) + ']'
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
     wordmap['stub'] = '0' + wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
@@ -790,6 +809,9 @@ def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
+    # XXX: this is so bad exception that I do not want to think of it
+    if wordmap['stub'] == 'eikä':
+        return "ei% CC% Neg% Sg3% Foc_kA:eikä  # ;\n"
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
