@@ -1,4 +1,4 @@
-#!/usr/bin/env -O python3
+#!/usr/bin/env python3
 from omorfi import Omorfi
 from glob  import glob
 from sys import stdout, argv
@@ -16,11 +16,18 @@ adjective_agreements = dict()
 adposition_complements = dict()
 adposition_complement_cases = ['CASE=GENITIVE', 'CASE=PARTITIVE', \
         'CASE=ELATIVE', 'CASE=ILLATIVE', 'CASE=ALLATIVE', 'CASE=ABLATIVE']
+proper_left_cont_lemmas = dict()
+proper_right_cont_lemmas = dict()
+proper_left_cont_surfs = dict()
+proper_right_cont_surfs = dict()
 
 # contextless
 whitelist_props = True
 lemma_freqs = dict()
 lemmas = set()
+prop_lemmas = set()
+prop_lemmas_seen = set()
+prop_subcat_lemmas = dict()
 tsv_borked = True # while is_proper fails?
 
 nominal_case_freqs = dict()
@@ -48,8 +55,12 @@ def gather_lemmas(master_tsv):
         fields = line.split('\t')
         if len(fields) < 16:
             continue
-        if whitelist_props and fields[10] == 'True':
-            continue
+        if fields[8] == 'True':
+            prop_lemmas.add(fields[0])
+            for cat in fields[9].split(','):
+                if cat not in prop_subcat_lemmas:
+                    prop_subcat_lemmas[cat] = set()
+                prop_subcat_lemmas[cat].add(fields[0])
         elif whitelist_props and fields[0][0].isupper() and tsv_borked:
             continue
         else:
@@ -95,7 +106,14 @@ def extract_word_ids(word_pos):
     for tag in sent[word_pos]:
         if tag.startswith('WORD_ID'):
             word_ids += tag[len('WORD_ID='):] + '/'
-    return word_ids
+    return word_ids[:-1]
+
+# Get word_id corresponding to tag at tag_pos
+# (would work if sent[x] were lists instead of sets...)
+#def extract_word_id(word_pos, tag_pos):
+#    for i in range(tag_pos, 0, -1):
+#        if sent[word_pos][i].startswith('WORD_ID'):
+#            return tag[len('WORD_ID='):]
 
 def extract_surf(word_pos):
     return extract_tag(word_pos, 'SURF=')[len('SURF='):]
@@ -217,13 +235,61 @@ def context_adposition_complement(word_pos):
             else:
                 adposition_complements[word]['none'] += 1
 
+def context_proper_noun(word_pos):
+    if not 'SUBCAT=PROPER' in sent[word_pos]:
+        return
+    for word in extract_word_ids(word_pos).split('/'):
+        if not word[0].isupper():
+            continue
+        prop_lemmas_seen.add(word)
+        if not word in proper_left_cont_lemmas:
+            proper_left_cont_lemmas[word] = dict()
+            proper_right_cont_lemmas[word] = dict()
+            proper_left_cont_surfs[word] = dict()
+            proper_right_cont_surfs[word] = dict()
+        case = extract_tag(word_pos, 'CASE=')
+        
+        if word_pos > 0:
+            left_word = extract_word_ids(word_pos - 1)
+        else:
+            left_word = '#'
+        
+        if not left_word in proper_left_cont_lemmas[word]:
+            proper_left_cont_lemmas[word][left_word] = 1
+        else:
+            proper_left_cont_lemmas[word][left_word] += 1
+
+        left_surf = extract_surf(word_pos - 1)
+        if not left_surf in proper_left_cont_surfs[word]:
+            proper_left_cont_surfs[word][left_surf] = 1
+        else:
+            proper_left_cont_surfs[word][left_surf] += 1
+
+        if word_pos < len(sent) - 1:
+            right_word = extract_word_ids(word_pos + 1)
+        else:
+            right_word = '#'
+        
+        if not right_word in proper_right_cont_lemmas[word]:
+            proper_right_cont_lemmas[word][right_word] = 1
+        else:
+            proper_right_cont_lemmas[word][right_word] += 1
+
+        right_surf = extract_surf(word_pos + 1)
+        if not right_surf in proper_right_cont_surfs[word]:
+            proper_right_cont_surfs[word][right_surf] = 1
+        else:
+            proper_right_cont_surfs[word][right_surf] += 1
+
 # all context tests per word
 def parse_sentence():
     for word_pos in range(len(sent)):
-        if 'SUBCAT=ADPOSITION' in sent[word_pos]:
-            context_adposition_complement(word_pos)
-        elif 'SUBCAT=ADJECTIVE' in sent[word_pos]:
-            context_adjective_agreement(word_pos)
+        if 'SUBCAT=PROPER' in sent[word_pos]:
+            context_proper_noun(word_pos)
+        #if 'SUBCAT=ADPOSITION' in sent[word_pos]:
+        #    context_adposition_complement(word_pos)
+        #elif 'SUBCAT=ADJECTIVE' in sent[word_pos]:
+        #    context_adjective_agreement(word_pos)
 
 # post-processing statistic mangling (short logs, simple)
 
@@ -348,6 +414,56 @@ def print_adposition_stats(logfile):
                         "%.2f %%" % (totals[case] / totals[case] * 100),
                         file=logfile, sep='\t')
 
+def print_proper_stats(logfile):
+    for cat in prop_subcat_lemmas.keys():
+        print("\n*** PROP=%s statistics ***" %(cat), file=logfile)
+        lemmas = prop_lemmas_seen & prop_subcat_lemmas[cat]
+        
+        print("\n* Left context lemmas\n", file=logfile)
+        freqs = dict()
+        for word in lemmas:
+            for context, count in proper_left_cont_lemmas[word].items():
+                if context not in freqs:
+                    freqs[context] = 1
+                else:
+                    freqs[context] += 1
+        for context in sorted(freqs, key=freqs.get, reverse=True):
+            print(context, freqs[context], sep='\t', file=logfile)
+
+        print("\n* Right context lemmas\n\n", file=logfile)
+        freqs = dict()
+        for word in lemmas:
+            for context, count in proper_right_cont_lemmas[word].items():
+                if context not in freqs:
+                    freqs[context] = 1
+                else:
+                    freqs[context] += 1
+        for context in sorted(freqs, key=freqs.get, reverse=True):
+            print(context, freqs[context], sep='\t', file=logfile)
+
+        print("\n* Left context surface forms\n\n", file=logfile)
+        freqs = dict()
+        for word in lemmas:
+            for context, count in proper_left_cont_surfs[word].items():
+                if context not in freqs:
+                    freqs[context] = 1
+                else:
+                    freqs[context] += 1
+        for context in sorted(freqs, key=freqs.get, reverse=True):
+            print(context, freqs[context], sep='\t', file=logfile)
+
+        print("\n* Right context surface forms\n\n", file=logfile)
+        freqs = dict()
+        for word in lemmas:
+            for context, count in proper_right_cont_surfs[word].items():
+                if context not in freqs:
+                    freqs[context] = 1
+                else:
+                    freqs[context] += 1
+        for context in sorted(freqs, key=freqs.get, reverse=True):
+            print(context, freqs[context], sep='\t', file=logfile)
+
+
 # statistiscs for use in analysers etc.
 
 def print_lemma_stats(statfile):
@@ -375,12 +491,13 @@ def main():
     else:
         test_corpora_files = glob("*.text")
     # hard-coded logs for now
-    lemma_log = open('missing_word_ids.log', 'w')
-    case_log = open('missing_nominal_cases.log', 'w')
-    comp_log = open('missing_comparatives.log', 'w')
-    adposition_log = open('adposition_complements.log', 'w')
-    adposition_stats = open('adposition_complements_full.log', 'w')
-    adjective_log = open('adjective_agreements.log', 'w')
+    #lemma_log = open('missing_word_ids.log', 'w')
+    #case_log = open('missing_nominal_cases.log', 'w')
+    #comp_log = open('missing_comparatives.log', 'w')
+    #adposition_log = open('adposition_complements.log', 'w')
+    #adposition_stats = open('adposition_complements_full.log', 'w')
+    #adjective_log = open('adjective_agreements.log', 'w')
+    proper_stats = open('proper_contexts_full.log', 'w')
     omorfi = Omorfi()
     omorfi.load_filename(opts.fsa)
     gather_lemmas(open(opts.tsvfile))
@@ -412,17 +529,18 @@ def main():
                 analyses = omorfi.analyse(token)
                 add_to_sent(analyses, token)
                 stat_word_ids(token, analyses)
-                stat_nominal_cases(token, analyses, case_log)
-                stat_adjective_comps(token, analyses, comp_log)
+                #stat_nominal_cases(token, analyses, case_log)
+                #stat_adjective_comps(token, analyses, comp_log)
     print("Testing statistics")
-    test_zero_lemmas(lemma_log) 
-    test_zero_cases(case_log)
-    test_zero_comps(comp_log)
+    #test_zero_lemmas(lemma_log) 
+    #test_zero_cases(case_log)
+    #test_zero_comps(comp_log)
     #test_case_deviations()
-    test_adposition_complements(adposition_log)
-    test_adjective_agreements(adjective_log)
+    #test_adposition_complements(adposition_log)
+    #test_adjective_agreements(adjective_log)
     print("Writing accurate statistics")
-    print_adposition_stats(adposition_stats)
+    #print_adposition_stats(adposition_stats)
+    print_proper_stats(proper_stats)
     print_lemma_stats(open('../src/probabilistics/lemmas.freqs', 'w'))
     print_case_stats(open('../src/probabilistics/cases.freqs', 'w'))
     exit(0)
