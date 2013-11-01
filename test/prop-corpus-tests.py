@@ -20,6 +20,7 @@ proper_left_cont_lemmas = dict()
 proper_right_cont_lemmas = dict()
 proper_left_cont_surfs = dict()
 proper_right_cont_surfs = dict()
+only_unambiguous_propers = True   # count only propers with a single possible subtype
 
 # contextless
 whitelist_props = True
@@ -56,11 +57,21 @@ def gather_lemmas(master_tsv):
         if len(fields) < 16:
             continue
         if fields[8] == 'True':
-            prop_lemmas.add(fields[0])
-            for cat in fields[9].split(','):
-                if cat not in prop_subcat_lemmas:
-                    prop_subcat_lemmas[cat] = set()
-                prop_subcat_lemmas[cat].add(fields[0])
+			if fields[9] == 'False':
+				fields[9] = 'UNKNOWN'
+            if only_unambiguous_propers:
+                cat = fields[9]
+                if ',' not in cat:
+                    if cat not in prop_subcat_lemmas:
+                        prop_subcat_lemmas[cat] = set()
+                    prop_subcat_lemmas[cat].add(fields[0])
+                    prop_lemmas.add(fields[0])
+            else:
+                for cat in fields[9].split(','):
+                    if cat not in prop_subcat_lemmas:
+                        prop_subcat_lemmas[cat] = set()
+                    prop_subcat_lemmas[cat].add(fields[0])
+                prop_lemmas.add(fields[0])
         elif whitelist_props and fields[0][0].isupper() and tsv_borked:
             continue
         else:
@@ -239,7 +250,7 @@ def context_proper_noun(word_pos):
     if not 'SUBCAT=PROPER' in sent[word_pos]:
         return
     for word in extract_word_ids(word_pos).split('/'):
-        if not word[0].isupper():
+        if not word[0].isupper() or word not in prop_lemmas:
             continue
         prop_lemmas_seen.add(word)
         if not word in proper_left_cont_lemmas:
@@ -487,7 +498,7 @@ def main():
             dest="tsvfile", help="source of existing lexical data")
     opts = a.parse_args()
     if opts.infile:
-        test_corpora_files = [opts.infile]
+        test_corpora_files = glob(opts.infile)
     else:
         test_corpora_files = glob("*.text")
     # hard-coded logs for now
@@ -498,6 +509,8 @@ def main():
     #adposition_stats = open('adposition_complements_full.log', 'w')
     #adjective_log = open('adjective_agreements.log', 'w')
     proper_stats = open('proper_contexts_full.log', 'w')
+    lemma_stats = open('lemmas.freqs', 'w')  #open('../src/probabilistics/lemmas.freqs', 'w')
+    #case_stats = open('../src/probabilistics/cases.freqs', 'w')
     omorfi = Omorfi()
     omorfi.load_filename(opts.fsa)
     gather_lemmas(open(opts.tsvfile))
@@ -541,8 +554,8 @@ def main():
     print("Writing accurate statistics")
     #print_adposition_stats(adposition_stats)
     print_proper_stats(proper_stats)
-    print_lemma_stats(open('../src/probabilistics/lemmas.freqs', 'w'))
-    print_case_stats(open('../src/probabilistics/cases.freqs', 'w'))
+    print_lemma_stats(lemma_stats)
+    #print_case_stats(case_stats)
     exit(0)
 
 if __name__ == '__main__':
