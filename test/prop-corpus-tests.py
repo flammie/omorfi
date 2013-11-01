@@ -4,6 +4,7 @@ from glob  import glob
 from sys import stdout, argv
 import re
 import gc
+from collections import defaultdict
 
 from argparse import ArgumentParser, FileType
 
@@ -57,8 +58,8 @@ def gather_lemmas(master_tsv):
         if len(fields) < 16:
             continue
         if fields[8] == 'True':
-			if fields[9] == 'False':
-				fields[9] = 'UNKNOWN'
+            if fields[9] == 'False':
+                fields[9] = 'UNKNOWN'
             if only_unambiguous_propers:
                 cat = fields[9]
                 if ',' not in cat:
@@ -254,43 +255,28 @@ def context_proper_noun(word_pos):
             continue
         prop_lemmas_seen.add(word)
         if not word in proper_left_cont_lemmas:
-            proper_left_cont_lemmas[word] = dict()
-            proper_right_cont_lemmas[word] = dict()
-            proper_left_cont_surfs[word] = dict()
-            proper_right_cont_surfs[word] = dict()
-        case = extract_tag(word_pos, 'CASE=')
+            proper_left_cont_lemmas[word] = defaultdict(lambda: 0)
+            proper_right_cont_lemmas[word] = defaultdict(lambda: 0)
+            proper_left_cont_surfs[word] = defaultdict(lambda: 0)
+            proper_right_cont_surfs[word] = defaultdict(lambda: 0)
         
         if word_pos > 0:
             left_word = extract_word_ids(word_pos - 1)
         else:
             left_word = '#'
-        
-        if not left_word in proper_left_cont_lemmas[word]:
-            proper_left_cont_lemmas[word][left_word] = 1
-        else:
-            proper_left_cont_lemmas[word][left_word] += 1
+        proper_left_cont_lemmas[word][left_word] += 1
 
         left_surf = extract_surf(word_pos - 1)
-        if not left_surf in proper_left_cont_surfs[word]:
-            proper_left_cont_surfs[word][left_surf] = 1
-        else:
-            proper_left_cont_surfs[word][left_surf] += 1
+        proper_left_cont_surfs[word][left_surf] += 1
 
         if word_pos < len(sent) - 1:
             right_word = extract_word_ids(word_pos + 1)
         else:
             right_word = '#'
-        
-        if not right_word in proper_right_cont_lemmas[word]:
-            proper_right_cont_lemmas[word][right_word] = 1
-        else:
-            proper_right_cont_lemmas[word][right_word] += 1
+        proper_right_cont_lemmas[word][right_word] += 1
 
         right_surf = extract_surf(word_pos + 1)
-        if not right_surf in proper_right_cont_surfs[word]:
-            proper_right_cont_surfs[word][right_surf] = 1
-        else:
-            proper_right_cont_surfs[word][right_surf] += 1
+        proper_right_cont_surfs[word][right_surf] += 1
 
 # all context tests per word
 def parse_sentence():
@@ -426,53 +412,79 @@ def print_adposition_stats(logfile):
                         file=logfile, sep='\t')
 
 def print_proper_stats(logfile):
-    for cat in prop_subcat_lemmas.keys():
+    lc_lemma_freqs = dict()
+    rc_lemma_freqs = dict()
+    lc_surf_freqs = dict()
+    rc_surf_freqs = dict()
+    
+    cats = sorted(prop_subcat_lemmas.keys())
+    for cat in cats:
         print("\n*** PROP=%s statistics ***" %(cat), file=logfile)
         lemmas = prop_lemmas_seen & prop_subcat_lemmas[cat]
         
         print("\n* Left context lemmas\n", file=logfile)
-        freqs = dict()
+        freqs = defaultdict(lambda: 0)
         for word in lemmas:
             for context, count in proper_left_cont_lemmas[word].items():
-                if context not in freqs:
-                    freqs[context] = 1
-                else:
-                    freqs[context] += 1
+                freqs[context] += count
         for context in sorted(freqs, key=freqs.get, reverse=True):
             print(context, freqs[context], sep='\t', file=logfile)
+        
+        lc_lemma_freqs[cat] = freqs
 
         print("\n* Right context lemmas\n\n", file=logfile)
-        freqs = dict()
+        freqs = defaultdict(lambda: 0)
         for word in lemmas:
             for context, count in proper_right_cont_lemmas[word].items():
-                if context not in freqs:
-                    freqs[context] = 1
-                else:
-                    freqs[context] += 1
+                freqs[context] += count
         for context in sorted(freqs, key=freqs.get, reverse=True):
             print(context, freqs[context], sep='\t', file=logfile)
+
+        rc_lemma_freqs[cat] = freqs
 
         print("\n* Left context surface forms\n\n", file=logfile)
-        freqs = dict()
+        freqs = defaultdict(lambda: 0)
         for word in lemmas:
             for context, count in proper_left_cont_surfs[word].items():
-                if context not in freqs:
-                    freqs[context] = 1
-                else:
-                    freqs[context] += 1
+                freqs[context] += count
         for context in sorted(freqs, key=freqs.get, reverse=True):
             print(context, freqs[context], sep='\t', file=logfile)
 
+        lc_surf_freqs[cat] = freqs
+
         print("\n* Right context surface forms\n\n", file=logfile)
-        freqs = dict()
+        freqs = defaultdict(lambda: 0)
         for word in lemmas:
             for context, count in proper_right_cont_surfs[word].items():
-                if context not in freqs:
-                    freqs[context] = 1
-                else:
-                    freqs[context] += 1
+                freqs[context] += count
         for context in sorted(freqs, key=freqs.get, reverse=True):
             print(context, freqs[context], sep='\t', file=logfile)
+
+        rc_surf_freqs[cat] = freqs
+
+    print("\n*** Most distinguishing contexts (by variation ratio) ***", file=logfile)
+        
+    print("\n* Left context lemmas\n", file=logfile)
+    cwords = set()
+    varrat = dict()
+    for cat in cats:
+        cwords.update( set(lc_lemma_freqs[cat].keys()) )
+    for cword in cwords:
+        fsum = 0
+        maxf = 0
+        for cat in cats:
+            if cword in lc_lemma_freqs[cat]:
+                f = lc_lemma_freqs[cat][cword]
+                fsum += f
+                if f > maxf:
+                    maxf = f
+                    mode = cat
+        varrat[cword] = 1 - (lc_lemma_freqs[mode][cword] / fsum)
+    
+    print("var.rat", "context", '\t'.join( [c for c in cats] ), sep='\t', file=logfile)
+    for cword in sorted(varrat, key=varrat.get)[:100]:
+        print("%.2f" %(varrat[cword]), cword, '\t'.join( [str(lc_lemma_freqs[c][cword]) for c in cats] ),
+              sep='\t', file=logfile)
 
 
 # statistiscs for use in analysers etc.
