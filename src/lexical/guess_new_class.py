@@ -859,7 +859,7 @@ def guess_new_noun(wordmap):
                     fail_guess_because(wordmap, ['N', 19, False],
                             ['ie', 'uo', 'yö'])
             else:
-                fail_guess_because(wordmap, ['N', 18],
+                fail_guess_because(wordmap, ['N', 19],
                         [False])
         elif tn == 20:
             if not wordmap['kotus_av']:
