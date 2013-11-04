@@ -4,6 +4,7 @@ from glob  import glob
 from sys import stdout, argv
 import re
 import gc
+from math import log
 from collections import defaultdict
 
 from argparse import ArgumentParser, FileType
@@ -31,6 +32,7 @@ prop_lemmas = set()
 prop_lemmas_seen = set()
 prop_subcat_lemmas = dict()
 tsv_borked = True # while is_proper fails?
+total_token_count = 0
 
 nominal_case_freqs = dict()
 nominal_case_freqs_per_lemma = dict()
@@ -462,7 +464,7 @@ def print_proper_stats(logfile):
 
         rc_surf_freqs[cat] = freqs
 
-    print("\n*** Most distinguishing contexts (by variation ratio) ***", file=logfile)
+    print("\n*** Most distinguishing contexts (by frequency scaled variation ratio) ***", file=logfile)
         
     print("\n* Left context lemmas\n", file=logfile)
     cwords = set()
@@ -479,10 +481,13 @@ def print_proper_stats(logfile):
                 if f > maxf:
                     maxf = f
                     mode = cat
-        varrat[cword] = 1 - (lc_lemma_freqs[mode][cword] / fsum)
+        #varrat[cword] = 1 - (maxf / fsum)
+        #varrat[cword] = (maxf / fsum) * log(fsum / total_token_count)
+        #varrat[cword] = sum([maxf - lc_lemma_freqs[cat][cword] for cat in cats])  # variance around mode(?)
+        varrat[cword] = (1 - (maxf / fsum)) * len(cats) / (len(cats) - 1)  # ModVR, variation around mode
     
     print("var.rat", "context", '\t'.join( [c for c in cats] ), sep='\t', file=logfile)
-    for cword in sorted(varrat, key=varrat.get)[:100]:
+    for cword in sorted(varrat, key=varrat.get, reverse=False)[:200]:
         print("%.2f" %(varrat[cword]), cword, '\t'.join( [str(lc_lemma_freqs[c][cword]) for c in cats] ),
               sep='\t', file=logfile)
 
@@ -501,6 +506,7 @@ def print_case_stats(statfile):
 # main loop
 
 def main():
+    global total_token_count
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
             help="HFST's optimised lookup binary data for the transducer to be applied")
@@ -551,6 +557,7 @@ def main():
             for punct in ".,:;?!()":
                 line = line.replace(punct, " " + punct + " ")
             for token in line.split():
+                total_token_count += 1
                 analyses = omorfi.analyse(token)
                 add_to_sent(analyses, token)
                 stat_word_ids(token, analyses)
