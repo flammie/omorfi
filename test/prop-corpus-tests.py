@@ -4,7 +4,7 @@ from glob  import glob
 from sys import stdout, argv
 import re
 import gc
-from math import log
+from math import sqrt
 from collections import defaultdict
 
 from argparse import ArgumentParser, FileType
@@ -418,11 +418,13 @@ def print_proper_stats(logfile):
     rc_lemma_freqs = dict()
     lc_surf_freqs = dict()
     rc_surf_freqs = dict()
+    lemma_count = dict()
     
     cats = sorted(prop_subcat_lemmas.keys())
     for cat in cats:
         print("\n*** PROP=%s statistics ***" %(cat), file=logfile)
         lemmas = prop_lemmas_seen & prop_subcat_lemmas[cat]
+        lemma_count[cat] = len(lemmas)
         
         print("\n* Left context lemmas\n", file=logfile)
         freqs = defaultdict(lambda: 0)
@@ -467,29 +469,50 @@ def print_proper_stats(logfile):
     print("\n*** Most distinguishing contexts (by frequency scaled variation ratio) ***", file=logfile)
         
     print("\n* Left context lemmas\n", file=logfile)
+    print_proper_context_variations(logfile, lc_lemma_freqs, cats, lemma_count)
+    
+    print("\n* Right context lemmas\n", file=logfile)
+    print_proper_context_variations(logfile, rc_lemma_freqs, cats, lemma_count)
+    
+    print("\n* Left context surface forms\n", file=logfile)
+    print_proper_context_variations(logfile, lc_surf_freqs, cats, lemma_count)
+    
+    print("\n* Right context surface forms\n", file=logfile)
+    print_proper_context_variations(logfile, rc_surf_freqs, cats, lemma_count)
+    
+def print_proper_context_variations(logfile, freqs, cats, lemma_count):
     cwords = set()
-    varrat = dict()
+    #varrat = dict()
+    varrat_c = dict()
     for cat in cats:
-        cwords.update( set(lc_lemma_freqs[cat].keys()) )
+        varrat_c[cat] = dict()
+        cwords.update( set(freqs[cat].keys()) )
     for cword in cwords:
         fsum = 0
         maxf = 0
         for cat in cats:
-            if cword in lc_lemma_freqs[cat]:
-                f = lc_lemma_freqs[cat][cword]
+            if cword in freqs[cat]:
+                f = freqs[cat][cword] / lemma_count[cat]  # added: in prop. to lemma_count[cat]
                 fsum += f
                 if f > maxf:
                     maxf = f
                     mode = cat
         #varrat[cword] = 1 - (maxf / fsum)
-        #varrat[cword] = (maxf / fsum) * log(fsum / total_token_count)
-        #varrat[cword] = sum([maxf - lc_lemma_freqs[cat][cword] for cat in cats])  # variance around mode(?)
-        varrat[cword] = (1 - (maxf / fsum)) * len(cats) / (len(cats) - 1)  # ModVR, variation around mode
+        #varrat[cword] = (1 - (maxf / fsum)) * len(cats) / (len(cats) - 1)  # ModVR, variation around mode
+        #varrat[cword] = (maxf / fsum) * sqrt(fsum)
+        varrat_c[mode][cword] = (maxf / fsum) * sqrt(fsum)
     
-    print("var.rat", "context", '\t'.join( [c for c in cats] ), sep='\t', file=logfile)
-    for cword in sorted(varrat, key=varrat.get, reverse=False)[:200]:
-        print("%.2f" %(varrat[cword]), cword, '\t'.join( [str(lc_lemma_freqs[c][cword]) for c in cats] ),
-              sep='\t', file=logfile)
+#    print("var.rat", "context", '\t'.join(cats), sep='\t', file=logfile)
+#    for cword in sorted(varrat, key=varrat.get, reverse=True)[:200]:
+#        print("%.2f" %(varrat[cword]), cword, '\t'.join( [str(freqs[c][cword]) for c in cats] ),
+#              sep='\t', file=logfile)
+
+    for cat in cats:
+        print("\n%s:" %(cat), file=logfile)
+        print("index", "%-20s" %("context"), '\t'.join(cats), sep='\t', file=logfile)
+        for cword in sorted(varrat_c[cat], key=varrat_c[cat].get, reverse=True)[:100]:
+            print("%.2f\t%-20s" %(varrat_c[cat][cword], cword), '\t'.join( [str(freqs[c][cword]) for c in cats] ),
+                  sep='\t', file=logfile)
 
 
 # statistiscs for use in analysers etc.
