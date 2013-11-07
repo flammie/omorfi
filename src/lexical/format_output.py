@@ -754,9 +754,6 @@ def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
-    # XXX: this is so bad exception that I do not want to think of it
-    if wordmap['stub'] == 'eikä':
-        return "[WORD_ID=ja][POS=PARTICLE][SUBCAT=CONJUNCTION][SUBCAT=COORDINATING][BOUNDARY=???][WORD_ID=ei][POS=VERB][SUBCAT=NEGATION][PERSON=3RDSINGULAR]:eikä  # ;\n"
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
@@ -813,9 +810,6 @@ def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
-    # XXX: this is so bad exception that I do not want to think of it
-    if wordmap['stub'] == 'eikä':
-        return "ei% CC% Neg% Sg3% Foc_kA:eikä  # ;\n"
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
