@@ -63,7 +63,7 @@ def main():
         "proper_noun_class", "style", "stub", "gradestem", "twolstem",
         "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
         "stem_diphthong", "subcat", "sem", "particle", "pronunciation", 
-        "boundaries", "bracketstub", "#", "<- HEADERS",
+        "boundaries", "bracketstub", "origin", "#", "<- HEADERS",
         sep="\t", file=args.output)
     linecount = 0
     for csv_line in args.input:
@@ -126,6 +126,7 @@ def main():
                 wordmap['stem_vowel'], wordmap['stem_diphthong'],
                 wordmap['subcat'], wordmap['sem'], wordmap['particle'],
                 wordmap['boundaries'], wordmap['bracketstub'],
+                wordmap['origin'],
                 sep='\t', file=args.output)
     exit()
 

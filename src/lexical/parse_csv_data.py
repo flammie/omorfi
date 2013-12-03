@@ -120,6 +120,8 @@ def parse_extras_from_csv(wordmap, csv_parts):
                 wordmap['particle'] = extra_fields[1].upper()
             elif extra_fields[0] == 'pronunciation':
                 wordmap['pronunciation'] = extra_fields[1]
+            elif extra_fields[0] == 'origin':
+                wordmap['origin'] = extra_fields[1]
             else:
                 print("Unrecognised extra field", csv_extra, "in CSV", file=stderr)
     
