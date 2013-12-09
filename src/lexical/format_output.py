@@ -763,9 +763,9 @@ def format_lexc_omor(wordmap, format):
     tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
-    if wordmap['is_suffix']:
-        wordmap['analysis'] += format_tag_omor('SUFFIX', format)
-    elif wordmap['is_prefix']:
+    #if wordmap['is_suffix']:
+    #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
+    if wordmap['is_prefix']:
         wordmap['analysis'] += format_tag_omor('PREFIX', format)
         if wordmap['pos'] == 'ADJECTIVE':
             wordmap['analysis'] += format_tag_omor('Cpos', format)
