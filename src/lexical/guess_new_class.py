@@ -4941,7 +4941,7 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_AINOA']
         elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
                 'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
-                'koko', 'yks', 'yksikään']:
+                'koko', 'yks', 'yksikään', 'mää', 'sää', 'hää']:
             wordmap['new_paras'] = ['#']
         else:
             fail_guess_because(wordmap, ['PRON', 101], ['minä', 'sinä', 'hän',
