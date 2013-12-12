@@ -5052,27 +5052,49 @@ def guess_new_particle(wordmap):
         wordmap['clitics'] = 'opt'
     
     if wordmap['possessive']:
-        if wordmap['harmony'] == 'front':
-            if wordmap['lemma'].endswith('e'):
-                wordmap['new_paras'] = ['PCLE_FRONT_POSS_EN_OPT']
-            elif wordmap['lemma'].endswith('ä'):
-                wordmap['new_paras'] = ['PCLE_FRONT_POSS_ÄN_OPT']
-            elif wordmap['lemma'].endswith('n'):
-                wordmap['new_paras'] = ['PCLE_FRONT_N_POSS_OPT']
+        if wordmap['possessive'] == 'opt':
+            if wordmap['harmony'] == 'front':
+                if wordmap['lemma'].endswith('e'):
+                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_EN_OPT']
+                elif wordmap['lemma'].endswith('ä'):
+                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_ÄN_OPT']
+                elif wordmap['lemma'].endswith('n'):
+                    wordmap['new_paras'] = ['PCLE_FRONT_N_POSS_OPT']
+                else:
+                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_OPT']
+            elif wordmap['harmony'] == 'back':
+                if wordmap['lemma'].endswith('a'):
+                    wordmap['new_paras'] = ['PCLE_BACK_POSS_AN_OPT']
+                elif wordmap['lemma'].endswith('e'):
+                    wordmap['new_paras'] = ['PCLE_BACK_POSS_EN_OPT']
+                elif wordmap['lemma'].endswith('n'):
+                    wordmap['new_paras'] = ['PCLE_BACK_N_POSS_OPT']
+                else:
+                    wordmap['new_paras'] = ['PCLE_BACK_POSS_OPT']
             else:
-                wordmap['new_paras'] = ['PCLE_FRONT_POSS_OPT']
-        elif wordmap['harmony'] == 'back':
-            if wordmap['lemma'].endswith('a'):
-                wordmap['new_paras'] = ['PCLE_BACK_POSS_AN_OPT']
-            elif wordmap['lemma'].endswith('e'):
-                wordmap['new_paras'] = ['PCLE_BACK_POSS_EN_OPT']
-            elif wordmap['lemma'].endswith('n'):
-                wordmap['new_paras'] = ['PCLE_BACK_N_POSS_OPT']
+                fail_guess_because(wordmap, ["PCLE", "POSS"],
+                        ["front", "back"])
+        elif wordmap['possessive'] == 'obl':
+            if wordmap['harmony'] == 'front':
+                if wordmap['lemma'].endswith('e'):
+                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_EN_OBL']
+                elif wordmap['lemma'].endswith('ä'):
+                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_ÄN_OBL']
+                else:
+                    wordmap['new_paras'] = ['PCLE_FRONT_POSS']
+            elif wordmap['harmony'] == 'back':
+                if wordmap['lemma'].endswith('a'):
+                    wordmap['new_paras'] = ['PCLE_BACK_POSS_AN_OBL']
+                elif wordmap['lemma'].endswith('e'):
+                    wordmap['new_paras'] = ['PCLE_BACK_POSS_EN_OBL']
+                else:
+                    wordmap['new_paras'] = ['PCLE_BACK_POSS']
             else:
-                wordmap['new_paras'] = ['PCLE_BACK_POSS_OPT']
+                fail_guess_because(wordmap, ["PCLE", "POSS"],
+                        ["front", "back"])
         else:
             fail_guess_because(wordmap, ["PCLE", "POSS"],
-                    ["front", "back"])
+                    ["opt", "obl"])
     elif wordmap['clitics']:
         if wordmap['harmony'] == 'front':
             wordmap['new_paras'] = ['PCLE_FRONT_CLIT_OPT']
