@@ -104,7 +104,7 @@ def parse_extras_from_csv(wordmap, csv_parts):
             elif extra_fields[0] == 'poss':
                 wordmap['possessive'] = extra_fields[1]
             elif extra_fields[0] == 'clit':
-                wordmap['possessive'] = extra_fields[1]
+                wordmap['clitics'] = extra_fields[1]
             elif extra_fields[0] == 'stem-vowel':
                 wordmap['stem_vowel'] = extra_fields[1]
             elif extra_fields[0] == 'style':
