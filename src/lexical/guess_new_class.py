@@ -5046,6 +5046,11 @@ def guess_new_numeral(wordmap):
     return wordmap
 
 def guess_new_particle(wordmap):
+    if wordmap['clitics'] == 'none':
+        wordmap['clitics'] = None
+    elif wordmap['particle'] and wordmap['particle'] == 'ADVERB':
+        wordmap['clitics'] = 'opt'
+    
     if wordmap['possessive']:
         if wordmap['harmony'] == 'front':
             if wordmap['lemma'].endswith('e'):
