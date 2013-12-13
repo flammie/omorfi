@@ -19,12 +19,12 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/particle-inflections.tsv \
 			continuations/pronoun-inflections.tsv \
 			continuations/verb-inflections.tsv
-JOINS=attributes/boundaries.csv \
-	  attributes/origin.csv \
-	  attributes/plurale-tantum.csv attributes/possessives.csv \
-	  attributes/pronunciation.csv attributes/proper-classes.csv \
-	  attributes/particle-classes.csv attributes/pronoun-classes.csv \
-	  attributes/semantic.csv attributes/subcategories.csv attributes/usage.csv
+JOINS=attributes/boundaries.tsv \
+	  attributes/origin.tsv \
+	  attributes/plurale-tantum.tsv attributes/possessives.tsv \
+	  attributes/pronunciation.tsv attributes/proper-classes.tsv \
+	  attributes/particle-classes.tsv attributes/pronoun-classes.tsv \
+	  attributes/semantic.tsv attributes/subcategories.tsv attributes/usage.tsv
 SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
 FINNISC=\
 		format_output.py \
@@ -46,19 +46,19 @@ kotus-style.csv: $(LEXEMES)
 	echo "# Updates to this file will be deleted on next make" >> $@
 	cat $^ | sort | uniq >> $@
 
-joint.tsv: kotus-style.csv $(JOINS)
-	$(PYTHON) $(srcdir)/csvjoin.py -v -i $< \
-		-j $(srcdir)/attributes/boundaries.csv \
-		-j $(srcdir)/attributes/origin.csv \
-		-j $(srcdir)/attributes/plurale-tantum.csv \
-		-j $(srcdir)/attributes/possessives.csv \
-		-j $(srcdir)/attributes/pronunciation.csv \
-		-j $(srcdir)/attributes/particle-classes.csv \
-		-j $(srcdir)/attributes/proper-classes.csv \
-		-j $(srcdir)/attributes/pronoun-classes.csv \
-		-j $(srcdir)/attributes/semantic.csv \
-		-j $(srcdir)/attributes/subcategories.csv \
-		-j $(srcdir)/attributes/usage.csv -o $@
+joint.tsv: lexemes/lexemes.tsv $(JOINS)
+	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
+		-j $(srcdir)/attributes/boundaries.tsv \
+		-j $(srcdir)/attributes/origin.tsv \
+		-j $(srcdir)/attributes/plurale-tantum.tsv \
+		-j $(srcdir)/attributes/possessives.tsv \
+		-j $(srcdir)/attributes/pronunciation.tsv \
+		-j $(srcdir)/attributes/particle-classes.tsv \
+		-j $(srcdir)/attributes/proper-classes.tsv \
+		-j $(srcdir)/attributes/pronoun-classes.tsv \
+		-j $(srcdir)/attributes/semantic.tsv \
+		-j $(srcdir)/attributes/subcategories.tsv \
+		-j $(srcdir)/attributes/usage.tsv -o $@
 
 master.tsv: joint.tsv
 	$(PYTHON) $(srcdir)/csv_expand.py -i $< -o $@
