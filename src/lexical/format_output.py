@@ -116,7 +116,7 @@ omor_multichars = {
         '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
         '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]', 
-		'[SEM=COUNTRY]', '[SEM=INHABITANT]',
+		'[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
 
 omor_short_multichars = {
@@ -172,7 +172,7 @@ omor_short_multichars = {
         '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
         '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
-		'[SEM=COUNTRY]', '[SEM=INHABITANT]',
+		'[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
 
 ktnkav_multichars = {
@@ -408,6 +408,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
 		"COUNTRY": "[SEM=COUNTRY]",
 		"INHABITANT": "[SEM=INHABITANT]",
+		"LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROP=MISC]"}
 
 stuff2omor_short = {
@@ -518,6 +519,7 @@ stuff2omor_short = {
         "GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
 		"COUNTRY": "[SEM=COUNTRY]",
 		"INHABITANT": "[SEM=INHABITANT]",
+		"LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROP=MISC]"}
 
 monodix_sdefs= {
