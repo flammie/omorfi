@@ -93,6 +93,8 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 64:
             wordmap['stub'] = wordmap['stub'][:-4]
+        elif tn == 67 and wordmap['stub'] in ['mennä', 'panna', 'tulla']:
+            wordmap['stub'] = wordmap['stub'][:-3]
         elif tn in [66, 67, 69, 72, 73, 74, 75, 77]:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn in [70, 71, 71]:

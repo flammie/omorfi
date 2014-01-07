@@ -4071,6 +4071,8 @@ def guess_new_verb(wordmap):
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('rra'):
                 wordmap['new_paras'] = ['V_SURRA']
+            elif wordmap['lemma'].endswith('tulla'):
+                wordmap['new_paras'] = ['V_TULLA']
             elif wordmap['lemma'].endswith('lla'):
                 wordmap['new_paras'] = ['V_VASTAILLA']
             elif wordmap['lemma'].endswith('llä'):
