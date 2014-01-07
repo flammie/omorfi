@@ -4937,6 +4937,8 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_MIE']
         elif wordmap['lemma'] == 'toi':
             wordmap['new_paras'] = ['PRON_TOI']
+        elif wordmap['lemma'] == 'noi':
+            wordmap['new_paras'] = ['PRON_NOI']
         elif wordmap['lemma'].endswith('ainoa'):
             wordmap['new_paras'] = ['PRON_AINOA']
         elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
