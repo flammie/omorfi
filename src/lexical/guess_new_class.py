@@ -1299,15 +1299,7 @@ def guess_new_noun(wordmap):
                 fail_guess_because(wordmap, ['N', 33],
                     [False, 'A', 'C-F', 'J-L'])
         elif wordmap['kotus_tn'] == 34:
-            if not wordmap['kotus_av']:
-                if wordmap['lemma'].endswith('toin'):
-                    wordmap['new_paras'] = ['N_KALATOIN']
-                elif wordmap['lemma'].endswith('töin'):
-                    wordmap['new_paras'] = ['N_NIMETÖIN']
-                else:
-                    fail_guess_because(wordmap, ['N', 34, False],
-                            ['toin', 'töin'])
-            elif wordmap['kotus_av'] == 'B':
+            if wordmap['kotus_av'] == 'B':
                 if wordmap['lemma'].endswith('pan'):
                     wordmap['new_paras'] = ['N_HAPAN']
                 else:
@@ -1318,9 +1310,13 @@ def guess_new_noun(wordmap):
                     wordmap['new_paras'] = ['N_OSATON']
                 elif wordmap['lemma'].endswith('tön'):
                     wordmap['new_paras'] = ['N_NIMETÖN']
+                elif wordmap['lemma'].endswith('toin'):
+                    wordmap['new_paras'] = ['N_KALATOIN']
+                elif wordmap['lemma'].endswith('töin'):
+                    wordmap['new_paras'] = ['N_NIMETÖIN']
                 else:
                     fail_guess_because(wordmap, ['N', 34, 'C'],
-                            ['ton', 'tön'])
+                            ['ton', 'tön', 'toin', 'töin'])
             else:
                 fail_guess_because(wordmap, ['N', 34], [False, 'C'])
         elif wordmap['kotus_tn'] == 35:
