@@ -258,7 +258,7 @@ def stub_all(wordmap):
             elif tn == 33:
                 wordmap = mangle_suffixes_or_die(wordmap, ['in'])
             elif tn == 34:
-                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön', '{oö}n'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön', 'oin', 'öin', '{oö}n'])
             elif tn == 41:
                 wordmap = mangle_suffixes_or_die(wordmap, ['as', 'us', 'is',
                     'es', 'äs'])
