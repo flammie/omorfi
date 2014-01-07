@@ -1379,7 +1379,9 @@ def guess_new_noun(wordmap):
                     [False], "cannot have gradation")
         elif wordmap['kotus_tn'] == 40:
             if not wordmap['kotus_av']:
-                if wordmap['harmony'] == 'back':
+                if wordmap['lemma'].endswith('at'):
+                    wordmap['new_paras'] = ['N_TOULAT']
+                elif wordmap['harmony'] == 'back':
                     wordmap['new_paras'] = ['N_AAKKOSELLISUUS']
                 elif wordmap['harmony'] == 'front':
                     wordmap['new_paras'] = ['N_KÖYHYYS']

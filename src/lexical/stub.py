@@ -58,8 +58,10 @@ def stub_all(wordmap):
             wordmap = mangle_suffixes_or_die(wordmap, ['n'])
         elif tn == 38:
             wordmap = mangle_suffixes_or_die(wordmap, ['nen'])
-        elif tn in range(39, 43):
+        elif tn in [39, 41, 42]:
             wordmap = mangle_suffixes_or_die(wordmap, ['s'])
+        elif tn == 40:
+            wordmap = mangle_suffixes_or_die(wordmap, ['s', 't'])
         elif tn in [43, 44, 46]:
             wordmap = mangle_suffixes_or_die(wordmap, ['t'])
         elif tn == 45:
