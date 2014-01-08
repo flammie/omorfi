@@ -171,15 +171,23 @@ class Omorfi:
             anals = this._analyse(token, 'default')
         if not anals and 'omor' in this.analysers:
             anals = this._analyse(token, 'omor')
+            if not anals:
+                class FakeAnal():
+                    pass
+                anal = FakeAnal()
+                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN]' % (token)
+                anal.weight = float('inf')
+                anals = [anal]
         if not anals and 'ftb3' in this.analysers:
             anals = this._analyse(token, 'ftb3')
-        if not anals:
-            class FakeAnal():
-                pass
-            anal = FakeAnal()
-            anal.output = '[GUESS=UNKNOWN]'
-            anal.weight = float('inf')
-            anals = [anal]
+            if not anals:
+                class FakeAnal():
+                    pass
+                anal = FakeAnal()
+                anal.output = convert_omor_tag('[WORD_ID=%s]' % (token), 
+                        'ftb3') + convert_omor_tag('[GUESS=UNKNOWN]', 'ftb3')
+                anal.weight = float('inf')
+                anals = [anal]
         return anals
 
 def main():
