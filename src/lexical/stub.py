@@ -71,7 +71,7 @@ def stub_all(wordmap):
         elif tn == 49:
             if wordmap['stub'].endswith('e'):
                 wordmap['extra_e'] = True
-        elif tn in [52, 78]:
+        elif tn == 52:
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in [53, 56, 77]:
             wordmap['stub'] = wordmap['stub'][:-2]
@@ -95,10 +95,12 @@ def stub_all(wordmap):
             wordmap['stub'] = wordmap['stub'][:-4]
         elif tn == 67 and wordmap['stub'] in ['mennä', 'panna', 'tulla']:
             wordmap['stub'] = wordmap['stub'][:-3]
-        elif tn in [66, 67, 69, 72, 73, 74, 75, 77]:
+        elif tn in [66, 67, 69, 72, 73, 74, 75]:
             wordmap['stub'] = wordmap['stub'][:-2]
-        elif tn in [70, 71, 71]:
+        elif tn in [70, 71]:
             wordmap['stub'] = wordmap['stub'][:-3]
+        elif tn == 78:
+            wordmap = mangle_suffixes_or_die(wordmap, ['ta', 'tä', 'a', 'ä'])
         elif tn == 1007:
             wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn == 1008:
