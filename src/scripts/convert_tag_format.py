@@ -375,6 +375,7 @@ def convert_omor_tag(tag, fmt):
             return tag[len('[WORD_ID='):-1]
         elif tag.startswith('[WEIGHT='):
             return '\t' + tag[len('[WEIGHT='):-1]
+        return _omor2ftc(tag)
     elif fmt == 'ftb3':
         if tag in omor2ftb3:
             return omor2ftb3[tag]

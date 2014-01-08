@@ -20,6 +20,7 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/pronoun-inflections.tsv \
 			continuations/verb-inflections.tsv
 JOINS=attributes/boundaries.csv \
+	  attributes/origin.csv \
 	  attributes/plurale-tantum.csv attributes/possessives.csv \
 	  attributes/pronunciation.csv attributes/proper-classes.csv \
 	  attributes/particle-classes.csv attributes/pronoun-classes.csv \
@@ -48,6 +49,7 @@ kotus-style.csv: $(LEXEMES)
 joint.tsv: kotus-style.csv $(JOINS)
 	$(PYTHON) $(srcdir)/csvjoin.py -v -i $< \
 		-j $(srcdir)/attributes/boundaries.csv \
+		-j $(srcdir)/attributes/origin.csv \
 		-j $(srcdir)/attributes/plurale-tantum.csv \
 		-j $(srcdir)/attributes/possessives.csv \
 		-j $(srcdir)/attributes/pronunciation.csv \
