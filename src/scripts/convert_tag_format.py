@@ -182,11 +182,199 @@ omor2ftb3 = {
         '[SEM=CURRENCY]': '',
         '[SEM=TIME]': ''}
 
+omor2ftc = {
+        '[WORD_ID=': '',
+        '[SUBCAT=ADJECTIVE]': ' Adjective',
+        '[POS=VERB]': ' Verb',
+        '[POS=NOUN]': ' Noun',
+        '[POS=PARTICLE]': '',
+        '[SUBCAT=PRONOUN]': ' Pronoun',
+        '[SUBCAT=NUMERAL]': ' Numeral',
+        '[SUBCAT=PROPER]': ' Proper',
+        '[SUBCAT=ADVERB]': ' Adverb',
+        '[SUBCAT=ADPOSITION]': ' Preposition',
+        '[SUBCAT=QUALIFIER]': ' Adjective',
+        '[SUBCAT=INTERJECTION]': ' Interjection',
+        '[SUBCAT=DEMONSTRATIVE]': ' Dem',
+        '[SUBCAT=PERSONAL]': ' Pers',
+        '[SUBCAT=INTERROGATIVE]': ' Interr',
+        '[SUBCAT=RELATIVE]': ' Rel',
+        '[SUBCAT=QUANTOR]': ' Qu',
+        '[SUBCAT=REFLEXIVE]': ' Reflex',
+        '[SUBCAT=RECIPROCAL]': ' Rec',
+        '[SUBCAT=INDEFINITE]': ' Ind',
+        '[SUBCAT=CARDINAL]': '',
+        '[SUBCAT=ORDINAL]': ' Ord',
+        '[SUBCAT=CONJUNCTION]': ' Conjunction',
+        '[SUBCAT=COORDINATING]': ' CC',
+        '[SUBCAT=ADVERBIAL]': ' CS',
+        '[SUBCAT=COMPARATIVE]': ' Comp',
+        '[SUBCAT=POSTPOSITION]': ' Po',
+        '[SUBCAT=PREPOSITION]': ' Pr',
+        '[SUBCAT=PREFIX]': '',
+        '[SUBCAT=SUFFIX]': '',
+        '[SUBCAT=ABBREVIATION]': ' Abbrev',
+        '[SUBCAT=ACRONYM]': ' Abbrev',
+        '[SUBCAT=PUNCTUATION]': ' Delimiter',
+        '[SUBCAT=SYMBOL]': '',
+        '[SUBCAT=SPACE]': '',
+        '[SUBCAT=QUOTATION]': '',
+        '[SUBCAT=BRACKET]': '',
+        '[SUBCAT=DASH]': '',
+        '[SUBCAT=CURRENCY]': '',
+        '[SUBCAT=MATH]': '',
+        '[SUBCAT=OPERATION]': '',
+        '[SUBCAT=RELATION]': '',
+        '[SUBCAT=INITIAL]': '',
+        '[SUBCAT=FINAL]': '',
+        '[CASE=NOMINATIVE]': ' Nom',
+        '[CASE=PARTITIVE]': ' Part',
+        '[CASE=GENITIVE]': ' Gen',
+        '[CASE=INESSIVE]': ' In',
+        '[CASE=ELATIVE]': ' El',
+        '[CASE=ILLATIVE]': ' Ill',
+        '[CASE=ADESSIVE]': ' Ad',
+        '[CASE=ABLATIVE]': ' Abl',
+        '[CASE=ALLATIVE]': ' All',
+        '[CASE=ESSIVE]': ' Ess',
+        '[CASE=INSTRUCTIVE]': ' Instr',
+        '[CASE=ABESSIVE]': ' Ab',
+        '[CASE=TRANSLATIVE]': ' Transl',
+        '[CASE=COMITATIVE]': ' Com',
+        '[CASE=LATIVE]': ' Lat',
+        '[CASE=ACCUSATIVE]': ' Acc',
+        '[NUMBER=SINGULAR]': ' SG',
+        '[NUMBER=PLURAL]': ' PL',
+        '[POSSESSIVE=1STSINGULAR]': ' S 1P',
+        '[POSSESSIVE=2NDSINGULAR]': ' S 2P',
+        '[POSSESSIVE=3RDSINGULAR]': ' 3P',
+        '[POSSESSIVE=1STPLURAL]': ' P 1P',
+        '[POSSESSIVE=2NDPLURAL]': ' P 2P',
+        '[POSSESSIVE=3RDPLURAL]': ' 3P',
+        '[POSSESSIVE=3RDAMBIGUOUS]': ' 3P',
+        '[BOUNDARY=COMPOUND]': '',
+        '[COMPOUND_FORM=S]': '',
+        '[COMPOUND_FORM=OMIT]': '', 
+        '[TENSEMOOD=PRESENTINDICATIVE]': ' Ind',
+        '[TENSEMOOD=PASTINDICATIVE]': ' Ind',
+        '[TENSEMOOD=CONDITIONAL]': ' Cond',
+        '[TENSEMOOD=POTENTIAL]': ' Pot',
+        '[TENSEMOOD=IMPERATIVE]': ' Imper',
+        '[TENSEMOOD=OPTATIVE]': '',
+        '[TENSEMOOD=EVENTIVE]': '',
+        '[PERSON=1STSINGULAR]': ' S 1P',
+        '[PERSON=2NDSINGULAR]': ' S 2P',
+        '[PERSON=3RDSINGULAR]': ' S 3P',
+        '[PERSON=1STPLURAL]': ' P 1P',
+        '[PERSON=2NDPLURAL]': ' P 2P',
+        '[PERSON=3RDPLURAL]': ' P 3P',
+        '[PERSON=IMPERSONAL]': '',
+        '[NEGATION=CON]': '',
+        '[SUBCAT=NEGATIONVERB]': '',
+        '[VOICE=ACTIVE]': ' Act',
+        '[VOICE=PASSIVE]': ' Pass',
+        '[INFINITIVE=A]': ' Iinf',
+        '[INFINITIVE=E]': ' IIinf',
+        '[INFINITIVE=MA]': ' IIIinf',
+        '[DERIVATION=MINEN]': ' Inf4',
+        '[DERIVATION=MAISILLA]': ' Inf5',
+        '[PARTICIPLE=NUT]': ' IIpartic',
+        '[PARTICIPLE=AGENT]': '',
+        '[PARTICIPLE=VA]': ' Ipartic',
+        '[PARTICIPLE=NEGATION]': '',
+        '[DERIVATION=NUT]': '',
+        '[DERIVATION=TU]': '',
+        '[DERIVATION=MA]': '',
+        '[DERIVATION=VA]': '',
+        '[DERIVATION=MATON]': '',
+        '[COMPARISON=POSITIVE]': '',
+        '[COMPARISON=COMPARATIVE]': ' Comp',
+        '[COMPARISON=SUPERLATIVE]': ' Sup',
+        '[DERIVATION=MPI]': '',
+        '[DERIVATION=IN]': '', 
+        '[CLITIC=HAN]': '',
+        '[CLITIC=KAAN]': '',
+        '[CLITIC=KIN]': '',
+        '[CLITIC=KO]':  '',
+        '[CLITIC=PA]': '',
+        '[CLITIC=S]': '',
+        '[CLITIC=KA]': '',
+        '[DERIVATION=STI]': '', 
+        '[DERIVATION=JA]': '',
+        '[DERIVATION=INEN]': '', 
+        '[DERIVATION=LAINEN]': '',
+        '[DERIVATION=TAR]': '',
+        '[DERIVATION=LLINEN]': '',
+        '[DERIVATION=TON]': '',
+        '[DERIVATION=TSE]': '',
+        '[DERIVATION=OI]':'',
+        '[DERIVATION=VS]': '',
+        '[DERIVATION=U]': '',
+        '[DERIVATION=TTAIN]': '',
+        '[DERIVATION=TTAA]': '',
+        '[DERIVATION=TATTAA]': '',
+        '[DERIVATION=TATUTTAA]': '',
+        '[DERIVATION=UUS]': '',
+        '[DERIVATION=S]': '',
+        '[DERIVATION=NUT]': '',
+        '[STYLE=NONSTANDARD]': '',
+        '[STYLE=RARE]': '',
+        '[STYLE=DIALECTAL]': '',
+        '[STYLE=ARCHAIC]': '',
+        '[GUESS=COMPOUND]': '',
+        '[GUESS=DERIVE]': '',
+        '[ALLO=A]': '',
+        '[ALLO=TA]': '',
+        '[ALLO=HVN]': '',
+        '[ALLO=IA]': '',
+        '[ALLO=IDEN]': '',
+        '[ALLO=ITA]': '',
+        '[ALLO=ITTEN]': '',
+        '[ALLO=IEN]': '',
+        '[ALLO=IHIN]': '',
+        '[ALLO=IIN]': '',
+        '[ALLO=IN]': '',
+        '[ALLO=ISIIN]': '',
+        '[ALLO=IDEN]': '',
+        '[ALLO=JA]': '',
+        '[ALLO=JEN]': '',
+        '[ALLO=SEEN]': '',
+        '[ALLO=TEN]': '',
+        '[ALLO=VN]': '',
+        '[FILTER=NO_PROC]': '',
+        '[PROP=FIRST]': '',
+        '[PROP=GEO]': '',
+        '[PROP=LAST]': '',
+        '[PROP=MISC]': '',
+        '[PROP=ORG]': '',
+        '[PROP=PRODUCT]': '',
+        '[PROP=EVENT]': '',
+        '[PROP=MEDIA]': '',
+        '[PROP=CULTGRP]': '',
+        '[PROP=ARTWORK]': '',
+        '[SEM=TITLE]': '',
+        '[SEM=ORG]': '',
+        '[SEM=EVENT]': '',
+        '[SEM=POLIT]': '',
+        '[SEM=MEDIA]': '',
+        '[SEM=GEO]': '',
+        '[SEM=MEASURE]': '',
+        '[SEM=CURRENCY]': '',
+        '[SEM=TIME]': ''}
+
+
 def convert_omor_tag(tag, fmt):
     """Convert single omor style tag in to target format
     """
-    if fmt == 'ftc':
-        return _omor2ftc(tag)
+    if fmt == 'omor':
+        return tag
+    elif fmt == 'ftc':
+        if tag in omor2ftc:
+            return omor2ftc[tag]
+        elif tag.startswith('[WORD_ID='):
+            return tag[len('[WORD_ID='):-1]
+        elif tag.startswith('[WEIGHT='):
+            return '\t' + tag[len('[WEIGHT='):-1]
     elif fmt == 'ftb3':
         if tag in omor2ftb3:
             return omor2ftb3[tag]
@@ -201,6 +389,10 @@ def convert_omor_tag(tag, fmt):
 
 def convert_omor_string(omorstring, fmt):
     """Convert from full omor analysis string to analysis string of other system
+
+    This function uses convert_omor_tag(tag, fmt) repeatedly for each bracketed
+    omor field, and additionally reorganises and combines results until it can
+    be matched to the target analysis style.
     """
     if fmt == 'ftc':
         return _omor2ftc(omorstring)
@@ -221,7 +413,7 @@ def _omor2ftc(omorstring):
     
     Example:
 
-    >>> s = '[WORD_ID=talo][NUM=SG][CASE=INE]'
+    >>> s = '[WORD_ID=talo][NUMBER=SINGULAR][CASE=INESSIVE]'
     >>> omor2ftc(s)
     ... 'talo In SG'
 
@@ -242,36 +434,22 @@ def _omor2ftc(omorstring):
         ftc += w
     # word Case NUM P POSS
     if 'CASE' in anals:
-        casesfrom = [["Par", "Part"], ["Ine", "In"], ["Ela", "El"]]
-        case = anals['CASE'][-1].title()
-        for c in casesfrom:
-            case = case.replace(c[0], c[1])
-        ftc += ' ' + case
-    if 'NUM' in anals:
-        ftc += ' ' + anals['NUM'][-1].upper()
+        ftc += convert_omor_tag(anals['CASE'][-1], 'ftc')
+    if 'NUMBER' in anals:
+        ftc += convert_omor_tag(anals['NUM'][-1], 'ftc')
     # Verb is Tense Genus Mood P PERS
-    if 'TENSE' in anals:
-        tensef = [['PRESENT', 'Pr'], ['PAST', 'Imp']]
-        tense = anals['TENSE'][-1]
-        for c in tensef:
-            tense = tense.replace(c[0], c[1])
-        ftc += ' ' + tense
+    # Note always Tense
+    if 'TENSEMOOD' in anals:
+        if anals['TENSEMOOD'][-1] == 'PASTINDICATIVE':
+            ftc += ' Imp'
+        else:
+            ftc += ' Pr'
     if 'VOICE' in anals:
-        voice = anals['VOICE'][-1].title()
-        ftc += ' ' + voice
-    if 'MOOD' in anals:
-        moodf = [['INDV', 'Ind'], ['COND', 'Cond'], ['POTN', 'Pot'], ['IMPV', 'Imper']]
-        mood = anals['MOOD'][-1]
-        for c in moodf:
-            mood = mood.replace(c[0], c[1])
-        ftc += ' ' + mood
-    if 'PRS' in anals:
-        possfrom = [["SG1", "S 1P"], ["SG2", "S 2P"], ["SG3", "S 3P"], ["PL1", "P 1P"], ["PL2", "P 2P"], ["PL3", "P 3P"], ['PE4', '']]
-        poss = anals['PRS'][-1].upper()
-        for c in possfrom:
-            poss = poss.replace(c[0], c[1])
-        if poss:
-            ftc += ' ' + poss
+        ftc += convert_omor_tag(anals['VOICE'][-1], 'ftc')
+    if 'TENSEMOOD' in anals:
+        ftc += convert_omor_tag(anals['TENSEMOOD'][-1], 'ftc')
+    if 'PERSON' in anals:
+        ftc += convert_omor_tag(anals['PERSON'][-1])
     if 'POSS' in anals:
         possfrom = [["SG1", "S 1P"], ["SG2", "S 2P"], ["SG3", "3P"], ["PL1", "P 1P"], ["PL2", "P 2P"], ["PL3", "3P"]]
         poss = anals['POSS'][-1].upper()
