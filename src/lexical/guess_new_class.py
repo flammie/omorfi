@@ -3232,8 +3232,6 @@ def guess_new_adjective(wordmap):
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('oa'):
                 wordmap['new_paras'] = ['A_AINOA']
-            elif wordmap['lemma'].endswith('ee') and wordmap['harmony'] == 'back':
-                wordmap['new_paras'] = ['A_OIKEE']
             elif wordmap['lemma'].endswith('ea'):
                 wordmap['new_paras'] = ['A_KORKEA']
             elif wordmap['lemma'].endswith('eä'):
