@@ -3258,9 +3258,11 @@ def guess_new_adjective(wordmap):
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('aa'):
                 wordmap['new_paras'] = ['A_VAPAA']
+            elif wordmap['lemma'].endswith('ee'):
+                wordmap['new_paras'] = ['A_OIKEE']
             else:
                 fail_guess_because(wordmap, ['A', 17, False],
-                        ['aa', 'ee', 'oo', 'uu', 'yy', 'ää', 'öö'])
+                        ['aa', 'ee'])  # , 'oo', 'uu', 'yy', 'ää', 'öö'])
         else:
             fail_guess_because(wordmap, ['A', 17],
                     [False])
