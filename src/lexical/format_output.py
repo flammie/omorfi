@@ -762,9 +762,6 @@ def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
-    if not wordmap['kotus_tn']:
-        return 'DANGER:TERROR "HORROR" ;'
-    tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
     #if wordmap['is_suffix']:
@@ -820,9 +817,6 @@ def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
-    if not wordmap['kotus_tn']:
-        return 'DANGER:TERROR "HORROR" ;'
-    tn = int(wordmap['kotus_tn'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
