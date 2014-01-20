@@ -132,7 +132,6 @@ def main():
               "\n! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
               "\n! params: ", ' '.join(argv), file=args.output)
         curr_lexicon = ""
-        print("LEXICON WORDS", file=args.output)
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
@@ -148,6 +147,8 @@ def main():
                     continue
                 # read data from database
                 wordmap = tsv_parts
+                wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
+
                 # exclusions
                 if args.exclude_pos:
                     if wordmap['pos'] in args.exclude_pos:
@@ -157,6 +158,10 @@ def main():
                     if wordmap['lemma'] not in lemmas:
                         tsv_line = tsv_file.readline()
                         continue
+                if curr_lexicon != tsv_parts['pos']:
+                    print("\nLEXICON", tsv_parts['pos'], end="\n\n",
+                            file=args.output)
+                    curr_lexicon = tsv_parts['pos']
                 # format output
                 print(format_lexc(wordmap, args.format), 
                       file=args.output)
@@ -212,7 +217,7 @@ def main():
                 if curr_lexicon != tsv_parts[0]:
                     print("\nLEXICON", tsv_parts[0], end="\n\n",
                             file=args.output)
-                    curr_lexicon[pos] = tsv_parts[0]
+                    curr_lexicon = tsv_parts[0]
                 print(format_continuation_lexc(tsv_parts, args.format), 
                       file=args.output)
     # print inflections
