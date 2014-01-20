@@ -4697,7 +4697,7 @@ def guess_new_acro(wordmap):
         if wordmap['harmony'] == 'back':
             wordmap['new_paras'] += ['ACRO_DOLLARI']
         elif wordmap['harmony'] == 'front':
-            wordmap['new_paras'] += ['ACRO_SIEVERT']
+            wordmap['new_paras'] += ['ACRO_WEBER']
         else:
             fail_guess_because(wordmap, ['ACRO', '6'], ['harmony?'])
     elif wordmap['kotus_tn'] == 7:
