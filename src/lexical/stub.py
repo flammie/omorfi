@@ -4,10 +4,12 @@ from sys import stderr
 
 from omor_strings_io import mangle_suffixes_or_die, fail_guess_because
 
-def stub_all(wordmap):
+def stub_all_ktn(wordmap):
     '''Generate unmodifiable stub for inflectional processes.
     this cuts every morphologically varying character.
     '''
+    if not wordmap['kotus_tn']:
+        return wordmap
     if wordmap['pos'] == 'ACRONYM':
         return wordmap
     tn = int(wordmap['kotus_tn'])

@@ -6,12 +6,12 @@ from sys import stderr
 def parse_defaults_from_tsv(wordmap, tsv_parts):
     '''Parse default data from 2+ field tsv with new para and lemma.'''
     # first field is lemma; start all deep, shallow and surface forms from that
-    wordmap['lemma'] = csv_parts[0]
+    wordmap['lemma'] = tsv_parts[0]
     wordmap['stub'] = wordmap['lemma']
     wordmap['bracketstub'] = wordmap['lemma']
     wordmap['gradestem'] = wordmap['lemma']
-    # second field is OMORFI paradigm class
-    wordmap['new_para'] = tsv_parts[1]
+    # second field is new paradigm class set
+    wordmap['new_paras'] = tsv_parts[1].strip('[').strip(']').split(',')
     return wordmap
 
 
@@ -48,11 +48,12 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['origin'] = extra_fields[1]
             else:
                 print("Unrecognised extra field", tsv_extra, "in CSV", file=stderr)
-    
-    wordmap['proper_noun_class'].sort()
-    wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class']) or False
-    wordmap['sem'].sort()
-    wordmap['sem'] = ','.join(wordmap['sem']) or False
+    if wordmap['proper_noun_class']: 
+        wordmap['proper_noun_class'].sort()
+        wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class'])
+    if wordmap['sem']:
+        wordmap['sem'].sort()
+        wordmap['sem'] = ','.join(wordmap['sem'])
     
     return wordmap
 

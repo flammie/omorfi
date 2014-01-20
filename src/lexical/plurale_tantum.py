@@ -7,6 +7,8 @@ from sys import stderr
 def plurale_tantum_get_singular_stem(wordmap):
     '''Guess inflectional singulars for words whose dictionary form is plural.
     '''
+    if not wordmap['kotus_tn']:
+        return wordmap
     tn = wordmap['kotus_tn']
     av = wordmap['kotus_av']
     if not wordmap['plurale_tantum'] == 'obligatory':

@@ -5,6 +5,8 @@ from sys import stderr
 
 def gradation_make_morphophonemes(wordmap):
     '''mark up gradating stop for morphophonological handling'''
+    if not wordmap['kotus_tn']:
+        return wordmap
     tn = wordmap['kotus_tn']
     av = wordmap['kotus_av']
     if not wordmap['kotus_av']:

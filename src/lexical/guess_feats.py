@@ -11,6 +11,10 @@ def guess_pos_from_newpara(wordmap):
 
 def guess_grade_dir_from_ktn(wordmap):
     '''Record gradation direction based on kotus class or stem syllable.'''
+    if not wordmap['kotus_tn']:
+        return wordmap
+    if wordmap['grade_dir']:
+        return wordmap
     tn = int(wordmap['kotus_tn'])
     if tn in range(1, 32) or tn in range(52, 62) or tn in range(76, 79):
         wordmap['grade_dir'] = 'weaken'
@@ -30,6 +34,8 @@ def guess_stem_features_ktn(wordmap):
     variants, harmony etc. This is especially for those features kotus
     classification has collapsed that are hard for us.
     '''
+    if not wordmap['kotus_tn']:
+        return wordmap
     tn = int(wordmap['kotus_tn'])
     if tn in [5, 6]:
         if wordmap['lemma'].endswith('i'):
@@ -81,6 +87,8 @@ def guess_harmony(wordmap):
     '''Guess word's harmony based on lemma, using trivial last harmony vowel
     or front algorithm.
     '''
+    if not wordmap['kotus_tn']:
+        return wordmap
     if wordmap['harmony']:
         return wordmap
     tn = int(wordmap['kotus_tn'])
