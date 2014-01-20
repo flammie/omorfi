@@ -10,3 +10,11 @@ def init_wordmap():
                "sem": None, "particle": None, "pronunciation": None,
                "boundaries": None, "bracketstub": None, "origin": None}
     return wordmap
+
+def get_wordmap_fieldnames():
+    return ["lemma", "new_paras", "pos", "kotus_tn", "kotus_av",
+            "plurale_tantum", "possessive", "clitics", "is_proper",
+            "proper_noun_class", "style", "stub", "gradestem", "twolstem",
+            "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
+            "stem_diphthong", "subcat", "sem", "particle", "pronunciation", 
+            "boundaries", "bracketstub", "origin"]

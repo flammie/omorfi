@@ -3,7 +3,13 @@
 from sys import stderr
 from omor_strings_io import fail_guess_because
 
-def guess_grade_dir(wordmap):
+def guess_pos_from_newpara(wordmap):
+    if wordmap['pos']:
+        return wordmap
+    wordmap['pos'] = wordmap['new_para'][:wordmap['new_para'].find('_')]
+
+
+def guess_grade_dir_from_ktn(wordmap):
     '''Record gradation direction based on kotus class or stem syllable.'''
     tn = int(wordmap['kotus_tn'])
     if tn in range(1, 32) or tn in range(52, 62) or tn in range(76, 79):
@@ -121,3 +127,24 @@ def guess_pronunciation(wordmap):
     elif wordmap['stem_diphthong']:
         wordmap['pronunciation'] += wordmap['stem_diphthong']
     return wordmap
+
+def guess_gradestem(wordmap):
+    if wordmap['stem_vowel']:
+        wordmap['gradestem'] += '{^' + wordmap['stem_vowel'] + '}'
+    if wordmap['harmony']:
+        wordmap['gradestem'] += '{^' + wordmap['harmony'] + '}'
+    if wordmap['kotus_av']:
+        wordmap['gradestem'] += '{' + wordmap['kotus_av'] + '}'
+    if wordmap['plurale_tantum'] == 'obligatory':
+        wordmap['gradestem'] += '@U.PLURALE.TANTUM@'
+    elif wordmap['plurale_tantum'] == 'common':
+        wordmap['gradestem'] += '{PLT?}'
+    return wordmap
+
+def guess_bound_morphs(wordmap):
+    if wordmap['is_prefix']:
+        wordmap['stub'] = replace_rightmost(wordmap['stub'], '-', '')
+    elif wordmap['is_suffix']:
+        wordmap['stub'] = wordmap['stub'][1:]
+    return wordmap
+

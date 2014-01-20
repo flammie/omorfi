@@ -25,7 +25,7 @@ JOINS=attributes/boundaries.tsv \
 	  attributes/pronunciation.tsv attributes/proper-classes.tsv \
 	  attributes/particle-classes.tsv attributes/pronoun-classes.tsv \
 	  attributes/semantic.tsv attributes/subcategories.tsv attributes/usage.tsv
-SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
+SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py
 FINNISC=\
 		format_output.py \
 		gradation.py \
@@ -38,7 +38,7 @@ FINNISC=\
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
-noinst_DATA=omor.timestamp
+noinst_DATA=omor.lexc
 
 
 kotus-style.csv: $(LEXEMES)
@@ -61,7 +61,7 @@ joint.tsv: lexemes/lexemes.tsv $(JOINS)
 		-j $(srcdir)/attributes/usage.tsv -o $@
 
 master.tsv: joint.tsv
-	$(PYTHON) $(srcdir)/csv_expand.py -i $< -o $@
+	$(PYTHON) $(srcdir)/tsv_expand.py -v -i $< -o $@
 
 stemparts.tsv: $(STEMPARTS)
 	cat $^ | grep -v '^#' | sort > $@
@@ -69,25 +69,10 @@ stemparts.tsv: $(STEMPARTS)
 inflections.tsv: $(INFLECTIONS)
 	cat $^ | grep -v '^#' | sort> $@
 
-omor.timestamp: master.tsv stemparts.tsv inflections.tsv
-	if test ! -d $(top_builddir)/src/morphology/roots ; then \
-		mkdir -p $(top_builddir)/src/morphology/roots ; \
-	fi
-	if test ! -d $(top_builddir)/src/morphology/stems ; then \
-		mkdir -p $(top_builddir)/src/morphology/stems ; \
-	fi
-	if test ! -d $(top_builddir)/src/morphology/inflection ; then \
-		mkdir -p $(top_builddir)/src/morphology/inflection ; \
-	fi
-	$(PYTHON) $(srcdir)/csv2lexc.py -v -m master.tsv -p stemparts.tsv \
-		-i inflections.tsv \
-		-s $(top_builddir)/src/morphology/roots \
-		-S $(top_builddir)/src/morphology/stems \
-		-X $(top_builddir)/src/morphology/inflection \
-		-R $(top_builddir)/src/morphology/definitions.lexc \
-		-f=$(TAG_FORMAT_PRECISE)
-	touch $@
+omor.lexc: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv -o $@ -f=$(TAG_FORMAT_PRECISE)
 
 clean-local:
-	-rm -f omor.timestamp master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
+	-rm -f omor.lexc master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
 
