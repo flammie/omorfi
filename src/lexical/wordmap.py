@@ -8,7 +8,8 @@ def init_wordmap():
                "grade_dir": None, "harmony": None, "is_suffix": None,
                "is_prefix": None, "stem_vowel": None, "stem_diphthong": None,
                "sem": list(), "particle": None, "pronunciation": None,
-               "boundaries": None, "bracketstub": None, "origin": None}
+               "boundaries": None, "bracketstub": None, "origin": None,
+               "extra_i": False, "extra_e": False}
     return wordmap
 
 def get_wordmap_fieldnames():
@@ -17,4 +18,4 @@ def get_wordmap_fieldnames():
             "proper_noun_class", "style", "stub", "gradestem", "twolstem",
             "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
             "stem_diphthong", "subcat", "sem", "particle", "pronunciation", 
-            "boundaries", "bracketstub", "origin"]
+            "boundaries", "bracketstub", "origin", "extra_i", "extra_e"]

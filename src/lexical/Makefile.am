@@ -61,7 +61,8 @@ joint.tsv: lexemes/lexemes.tsv $(JOINS)
 		-j $(srcdir)/attributes/usage.tsv -o $@
 
 master.tsv: joint.tsv
-	$(PYTHON) $(srcdir)/tsv_expand.py -v -i $< -o $@
+	$(PYTHON) $(srcdir)/tsv_expand.py \
+		-j $(srcdir)/attributes/paradigm-data.tsv -v -i $< -o $@
 
 stemparts.tsv: $(STEMPARTS)
 	cat $^ | grep -v '^#' | sort > $@

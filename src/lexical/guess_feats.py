@@ -64,11 +64,11 @@ def guess_stem_features_ktn(wordmap):
             wordmap['stem_vowel'] = 'ö'
     elif tn == 19:
         if wordmap['lemma'].endswith('uo'):
-            wordmap['stem_diphtong'] = 'uo'
+            wordmap['stem_diphthong'] = 'uo'
         elif wordmap['lemma'].endswith('yö'):
-            wordmap['stem_diphtong'] = 'yö'
+            wordmap['stem_diphthong'] = 'yö'
         elif wordmap['lemma'].endswith('ie'):
-            wordmap['stem_diphtong'] = 'ie'
+            wordmap['stem_diphthong'] = 'ie'
     elif tn == 47:
         if wordmap['lemma'].endswith('ut'):
             wordmap['stem_vowel'] = 'u'
@@ -76,11 +76,11 @@ def guess_stem_features_ktn(wordmap):
             wordmap['stem_vowel'] = 'y'
     elif tn == 64:
         if wordmap['lemma'].endswith('uoda'):
-            wordmap['stem_diphtong'] = 'uo'
+            wordmap['stem_diphthong'] = 'uo'
         elif wordmap['lemma'].endswith('yödä'):
-            wordmap['stem_diphtong'] = 'yö'
+            wordmap['stem_diphthong'] = 'yö'
         elif wordmap['lemma'].endswith('iedä'):
-            wordmap['stem_diphtong'] = 'ie'
+            wordmap['stem_diphthong'] = 'ie'
     return wordmap
 
 def guess_harmony(wordmap):

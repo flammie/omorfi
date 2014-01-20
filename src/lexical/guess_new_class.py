@@ -6,6 +6,8 @@ from omor_strings_io import fail_guess_because
 def guess_new_class(wordmap):
     '''Guess more exact classification now
     '''
+    if len(wordmap['new_paras']) > 0:
+        return wordmap
     if not wordmap['kotus_tn']:
         return wordmap
     tn = int(wordmap['kotus_tn'])
