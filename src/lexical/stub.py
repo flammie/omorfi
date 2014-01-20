@@ -60,8 +60,10 @@ def stub_all_ktn(wordmap):
             wordmap = mangle_suffixes_or_die(wordmap, ['n'])
         elif tn == 38:
             wordmap = mangle_suffixes_or_die(wordmap, ['nen'])
-        elif tn in range(39, 43):
+        elif tn in [39, 41, 42]:
             wordmap = mangle_suffixes_or_die(wordmap, ['s'])
+        elif tn == 40:
+            wordmap = mangle_suffixes_or_die(wordmap, ['s', 't'])
         elif tn in [43, 44, 46]:
             wordmap = mangle_suffixes_or_die(wordmap, ['t'])
         elif tn == 45:
@@ -71,7 +73,7 @@ def stub_all_ktn(wordmap):
         elif tn == 49:
             if wordmap['stub'].endswith('e'):
                 wordmap['extra_e'] = True
-        elif tn in [52, 78]:
+        elif tn == 52:
             wordmap['stub'] = wordmap['stub'][:-1]
         elif tn in [53, 56, 77]:
             wordmap['stub'] = wordmap['stub'][:-2]
@@ -93,10 +95,14 @@ def stub_all_ktn(wordmap):
             wordmap['stub'] = wordmap['stub'][:-3]
         elif tn == 64:
             wordmap['stub'] = wordmap['stub'][:-4]
-        elif tn in [66, 67, 69, 72, 73, 74, 75, 77]:
-            wordmap['stub'] = wordmap['stub'][:-2]
-        elif tn in [70, 71, 71]:
+        elif tn == 67 and wordmap['stub'] in ['mennä', 'panna', 'tulla']:
             wordmap['stub'] = wordmap['stub'][:-3]
+        elif tn in [66, 67, 69, 72, 73, 74, 75]:
+            wordmap['stub'] = wordmap['stub'][:-2]
+        elif tn in [70, 71]:
+            wordmap['stub'] = wordmap['stub'][:-3]
+        elif tn == 78:
+            wordmap = mangle_suffixes_or_die(wordmap, ['ta', 'tä', 'a', 'ä'])
         elif tn == 1007:
             wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn == 1008:
@@ -258,7 +264,7 @@ def stub_all_ktn(wordmap):
             elif tn == 33:
                 wordmap = mangle_suffixes_or_die(wordmap, ['in'])
             elif tn == 34:
-                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön', '{oö}n'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['on', 'ön', 'oin', 'öin', '{oö}n'])
             elif tn == 41:
                 wordmap = mangle_suffixes_or_die(wordmap, ['as', 'us', 'is',
                     'es', 'äs'])
