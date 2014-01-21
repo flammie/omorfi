@@ -119,7 +119,10 @@ def main():
                           "Could not find the key",
                           join_on, "used by", join_file.name,
                           "line", linecount, "in any of", 
-                          args.infilenames, file=stderr)
+                          " ".join(args.infilenames), file=stderr)
+                    print("you must fix database integrity or hack the scripts",
+                            "before continuing")
+                    exit(1)
                 else:
                     this_entry = words[join_on]
                     this_entry += [join_parts[args.fields]]
@@ -132,11 +135,6 @@ def main():
         if args.verbose:
             print("Writing master database to", args.outfilename)
             print("Sorting")
-        print("# This file was automatically generated from", 
-                args.infilenames,
-                "\n# and",
-                args.joinfilenames,
-                "\n# using tsvjoin.py\n", file=output)
         linecount = 0
         tsv_writer = csv.writer(output, delimiter=args.separator,
                 quoting=quoting, strict=True)

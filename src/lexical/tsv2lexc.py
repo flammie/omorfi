@@ -152,11 +152,9 @@ def main():
                 # exclusions
                 if args.exclude_pos:
                     if wordmap['pos'] in args.exclude_pos:
-                        tsv_line = tsv_file.readline()
                         continue
                 if args.include_lemmas:
                     if wordmap['lemma'] not in lemmas:
-                        tsv_line = tsv_file.readline()
                         continue
                 if curr_lexicon != tsv_parts['pos']:
                     print("\nLEXICON", tsv_parts['pos'], end="\n\n",
@@ -181,15 +179,11 @@ def main():
                     strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
-                tsv_parts = []
                 if len(tsv_parts) < 3:
-                    print("Too few tabs on line", linecount, 
-                        "skipping following line completely:", file=stderr)
-                    print(tsv_parts, file=stderr)
-                    continue
-                if tsv_parts[-1] == '#<- HEADERS':
-                    # skip header line
-                    tsv_line = tsv_file.readline()
+                    print(tsv_filename, linecount, 
+                            "Too few tabs on line",
+                            "skipping following fields:",
+                            tsv_parts, file=stderr)
                     continue
                 if tsv_parts[0].startswith('A_'):
                     pos = 'ADJECTIVE'
@@ -209,9 +203,8 @@ def main():
                     pos = 'PRONOUN'
                 else:
                     print("Cannot deduce pos from incoming cont:", tsv_parts[0])
-                    pos = 'PARTICLE'
+                    continue
                 if pos in args.exclude_pos:
-                    tsv_line = tsv_file.readline()
                     continue
                 # format output
                 if curr_lexicon != tsv_parts[0]:
@@ -236,14 +229,10 @@ def main():
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 3:
-                    print("Too few tabs on line", linecount, 
-                        "skipping following line completely:", file=stderr)
-                    print(tsv_line, file=stderr)
-                    tsv_line = tsv_file.readline()
-                    continue
-                if tsv_parts[-1] == '#<- HEADERS':
-                    # skip header line
-                    tsv_line = tsv_file.readline()
+                    print(tsv_filename, linecount,
+                            "Too few tabs on line", 
+                            "skipping following fields:", tsv_parts,
+                            file=stderr)
                     continue
                 if tsv_parts[0].startswith('A_'):
                     pos = 'ADJECTIVE'
@@ -267,9 +256,8 @@ def main():
                     pos = 'PRONOUN'
                 else:
                     print("Cannot deduce pos from incoming cont:", tsv_parts[0])
-                    pos = 'PARTICLE'
+                    continue
                 if pos in args.exclude_pos:
-                    tsv_line = tsv_file.readline()
                     continue
                 # format output
                 if curr_lexicon != tsv_parts[0]:
@@ -278,7 +266,6 @@ def main():
                     curr_lexicon = tsv_parts[0]
                 print(format_continuation_lexc(tsv_parts, args.format), 
                       file=args.output)
-                tsv_line = tsv_file.readline()
     exit(0)
 
 
