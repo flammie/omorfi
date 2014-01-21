@@ -18,7 +18,7 @@ def parse_defaults_from_tsv(wordmap, tsv_parts):
 def parse_extras_from_tsv(wordmap, tsv_parts):
     '''Parse extra fields form >3 fields of 2+ field tsv.'''
     if len(tsv_parts) >= 3:
-        for tsv_extra in tsv_parts[4:]:
+        for tsv_extra in tsv_parts[2:]:
             extra_fields = tsv_extra.split("=")
             if extra_fields[0] == 'plt':
                 wordmap['plurale_tantum'] = extra_fields[1]
