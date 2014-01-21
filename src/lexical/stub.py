@@ -33,7 +33,7 @@ def stub_all_ktn(wordmap):
             wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn in range(9, 16):
             if not wordmap['stub'].endswith('A'):
-                wordmap = mangle_suffixes_or_die(wordmap, ['a', 'ä'])
+                wordmap = mangle_suffixes_or_die(wordmap, ['a', 'ä', 'e'])
         elif tn in [16, 23, 24, 26]:
             wordmap = mangle_suffixes_or_die(wordmap, ['i'])
         elif tn in [17, 18, 20]:
