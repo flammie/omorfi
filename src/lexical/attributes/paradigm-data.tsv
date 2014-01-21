@@ -379,6 +379,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_HÖLKKÄ']	NOUN	10	A	False	weaken	front	ä	None
 ['N_HÖPÖTTÄJÄ']	NOUN	10	False	False	weaken	front	ä	None
 ['N_HÖYHENET']	NOUN	32	False	obligatory	strengthen	front	False	None
+['N_IEN']	NOUN	32	D	obligatory	strengthen	front	False	None
 ['N_IES']	NOUN	41	D	False	strengthen	front	False	None
 ['N_IKENET']	NOUN	32	D	obligatory	strengthen	front	False	None
 ['N_IMMYT']	NOUN	43	H	False	strengthen	front	False	None
@@ -634,6 +635,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_PORTAAT']	NOUN	41	K	obligatory	strengthen	back	False	None
 ['N_PROBLEEMA']	NOUN	11	False	False	weaken	back	a	None
 ['N_PUHELIN']	NOUN	33	False	False	strengthen	back	False	None
+['N_PUIN']	NOUN	33	D	False	strengthen	back	False	None
 ['N_PUKIMET']	NOUN	33	D	obligatory	strengthen	back	False	None
 ['N_PUNK']	NOUN	5	False	False	weaken	back	False	None
 ['N_PUU']	NOUN	18	False	False	weaken	back	u	None
@@ -696,6 +698,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_RUUHI']	NOUN	26	False	False	weaken	back	False	None
 ['N_RUUMIS']	NOUN	41	False	False	strengthen	back	False	None
 ['N_RUUVI']	NOUN	5	False	False	weaken	back	False	None
+['N_RYNNÄS']	NOUN	41	J	False	strengthen	front	False	None
 ['N_RYNTTYYT']	NOUN	41	C	obligatory	strengthen	front	False	None
 ['N_RYNTÄÄT']	NOUN	41	J	obligatory	strengthen	front	False	None
 ['N_RYPÄS']	NOUN	41	B	False	strengthen	front	False	None
@@ -798,6 +801,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_TÖLPÄKÖT']	NOUN	4	A	obligatory	weaken	front	False	None
 ['N_TÖLPÄT']	NOUN	10	B	obligatory	weaken	front	False	None
 ['N_TÖRPPÖ']	NOUN	1	B	False	weaken	front	False	None
+['N_UDAR']	NOUN	49	F	False	strengthen	back	False	None
 ['N_UKKO']	NOUN	1	A	False	weaken	back	False	None
 ['N_UKSI']	NOUN	29	False	False	weaken	back	False	None
 ['N_ULAPPA']	NOUN	14	B	False	weaken	back	a	None
@@ -881,6 +885,18 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_ZEN']	NOUN	5	False	False	weaken	front	False	None
 ['N_ZOMBIE']	NOUN	3	False	False	weaken	back	False	None
 ['N_ÄYRÄS']	NOUN	41	False	False	strengthen	front	False	None
+['PCLE_ALLE']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_FRONT_POSS_O
+['PCLE_IKINÄ']	PARTICLE	99	False	False	False	front	False	None
+['PCLE_KOTONA']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_LIKI']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_LISÄKSI']	PARTICLE	99	False	False	False	front	False	None
+['PCLE_NOPEASTI']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_NÄKYVIIN']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_TYHMÄSTI']	PARTICLE	99	False	False	False	front	False	None
+['PCLE_VALTAAN']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_VUOKSI']	PARTICLE	99	False	False	False	back	False	None
+['PCLE_YLLE']	PARTICLE	99	False	False	False	front	False	None
 ['PRON_AINOA']	PRONOUN	101	False	False	False	back	False	None
 ['PRON_ERÄS']	PRONOUN	41	False	False	strengthen	front	False	None
 ['PRON_HÄN']	PRONOUN	101	False	False	False	front	False	None
@@ -921,8 +937,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_NOI']	PRONOUN	101	False	False	False	back	False	None
 ['PRON_NUO']	PRONOUN	101	False	False	False	back	False	None
 ['PRON_NÄMÄ']	PRONOUN	101	False	False	False	front	False	None
-['#']	PRONOUN	101	False	False	False	back	False	None
-['#']	PRONOUN	101	False	False	False	front	False	None
 ['PRON_SAMA']	PRONOUN	9	False	False	weaken	back	a	None
 ['PRON_SE']	PRONOUN	101	False	False	False	front	False	None
 ['PRON_TOINEN']	PRONOUN	38	False	False	strengthen	back	False	None
