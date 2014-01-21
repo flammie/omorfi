@@ -135,8 +135,7 @@ morphology.$(TAG_FORMAT).hfst: temporary.$(TAG_FORMAT).hfst
 
 # create generator from analyzer
 generation.$(TAG_FORMAT).hfst: temporary.unbounded.hfst
-	$(HMIN) $(HFST_FLAGS) $< |\
-		$(HF2F) $(HFST_FLAGS) -f olw -o $@
+	$(HF2F) $(HFST_FLAGS) -f olw -i $< -o $@
 
 # lemmatization is a special case of tagset variant
 lemmatize.default.hfst: temporary.$(TAG_FORMAT).hfst taghacks/lemmatize-$(TAG_FORMAT).relabel
