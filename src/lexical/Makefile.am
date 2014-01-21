@@ -38,13 +38,8 @@ FINNISC=\
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
-noinst_DATA=omor.lexc
+noinst_DATA=omorfi.lexc # omorfi.dix omorfi-sanalista.xml
 
-
-kotus-style.csv: $(LEXEMES)
-	echo "# This file has been generated automatically from lexemes/" > $@
-	echo "# Updates to this file will be deleted on next make" >> $@
-	cat $^ | sort | uniq >> $@
 
 joint.tsv: lexemes/lexemes.tsv $(JOINS)
 	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
@@ -62,18 +57,29 @@ joint.tsv: lexemes/lexemes.tsv $(JOINS)
 
 master.tsv: joint.tsv
 	$(PYTHON) $(srcdir)/tsv_expand.py \
-		-j $(srcdir)/attributes/paradigm-data.tsv -v -i $< -o $@
+		-j $(srcdir)/attributes/paradigm-data.tsv -v -i $< -o $@.unsrt
+	head -n 1 < $@.unsrt > $@
+	tail -n +2 < $@.unsrt | sort >> $@
+
+#-rm -f $@.unsrt
 
 stemparts.tsv: $(STEMPARTS)
-	cat $^ | grep -v '^#' | sort > $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
 
 inflections.tsv: $(INFLECTIONS)
-	cat $^ | grep -v '^#' | sort> $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
 
-omor.lexc: master.tsv stemparts.tsv inflections.tsv
+omorfi.lexc: master.tsv stemparts.tsv inflections.tsv
 	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=$(TAG_FORMAT_PRECISE)
 
+omorfi.dix: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv -o $@
+
+omorfi-sanalista.xml: master.tsv
+	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
+
 clean-local:
-	-rm -f omor.lexc master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
+	-rm -f master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
 
