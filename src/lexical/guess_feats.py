@@ -102,7 +102,7 @@ def guess_harmony(wordmap):
         else:
             print("Unguessable harmony in verb; must end in {a, ä}, in", 
                     wordmap, file=stderr)
-    else:
+    elif wordmap['pronunciation']:
         lastbound = -1
         for bound in ['|', '_', '#', ' ', '-']:
             b = wordmap['pronunciation'].rfind(bound)
@@ -124,6 +124,9 @@ def guess_harmony(wordmap):
             wordmap['harmony'] = 'front'
         elif lastback > lastfront:
             wordmap['harmony'] = 'back'
+    else:
+        print("Unguessable harmony; needs pronunciation", 
+                wordmap, file=stderr)
     return wordmap
 
 def guess_pronunciation(wordmap):

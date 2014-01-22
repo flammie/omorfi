@@ -9,7 +9,7 @@ def plurale_tantum_get_singular_stem(wordmap):
     '''
     if not wordmap['kotus_tn']:
         return wordmap
-    tn = wordmap['kotus_tn']
+    tn = int(wordmap['kotus_tn'])
     av = wordmap['kotus_av']
     if not wordmap['plurale_tantum'] == 'obligatory':
         return wordmap
