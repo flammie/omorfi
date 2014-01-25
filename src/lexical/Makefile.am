@@ -60,8 +60,7 @@ master.tsv: joint.tsv
 		-j $(srcdir)/attributes/paradigm-data.tsv -v -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | sort >> $@
-
-#-rm -f $@.unsrt
+	-rm -f $@.unsrt
 
 stemparts.tsv: $(STEMPARTS)
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
@@ -81,5 +80,5 @@ omorfi-sanalista.xml: master.tsv
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
 
 clean-local:
-	-rm -f master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
+	-rm -f master.tsv joint.tsv stemparts.tsv inflections.tsv
 
