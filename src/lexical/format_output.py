@@ -5,7 +5,7 @@
 from sys import stderr
 from omor_strings_io import lexc_escape
 
-version_id_easter_egg='OMORFI_VERSION_≥_2014_©_GNU_GPL_V3'
+version_id_easter_egg='OMORFI_VERSION_≥_14_©_GNU_GPL_V3'
 
 ftb3_multichars= {
         '% A', '% V', '% N',
@@ -899,9 +899,9 @@ def format_multichars_lexc(format):
 [NEWPARA=
         """
     multichars += """!! Following specials exist in all versions of omorfi
-    %-%0
+    %-%0 {»} {%>}
     """
-    multichars += version_id_easteregg + '\n'
+    multichars += version_id_easter_egg + '\n'
     return multichars
 
 def format_root_lexicon(format):
@@ -918,7 +918,7 @@ def format_root_lexicon(format):
 0   PUNCTUATION ;
 0   51 ;
 """
-    root += version_id_easteregg + ':0 # ;\n'
+    root += version_id_easter_egg + ':0 # ;\n'
     if '+taggerhacks' in format:
         root += "0   TAGGER_HACKS    ;\n"
     return root

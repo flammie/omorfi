@@ -4,14 +4,14 @@ Alphabet
 a b c d e f g h i j k l m n o p q r s š t u v w x y z ž å ä ö
 A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 ‐ – %- 
-’ ' %" ” »
+’ ' %" ” » %>
 
 ! Absolute boundary (retained for further processing)
-%{##%} %{#%} %{%_%} %{%-%}
+%{##%} %{#%} %{%_%} %{%-%} %{»%} %{%>%}
 
 ;
 
 Rules
-"Dummy kill"
-%{BVL%}:0 <=> _ ;
+"Nothing"
+a <= _ ;
 ! vim:set ft=xfst-twol:
