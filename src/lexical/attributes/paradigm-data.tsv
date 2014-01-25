@@ -379,7 +379,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_HÖLKKÄ']	NOUN	10	A	False	weaken	front	ä	None
 ['N_HÖPÖTTÄJÄ']	NOUN	10	False	False	weaken	front	ä	None
 ['N_HÖYHENET']	NOUN	32	False	obligatory	strengthen	front	False	None
-['N_IEN']	NOUN	32	D	obligatory	strengthen	front	False	None
+['N_IEN']	NOUN	32	D	False	strengthen	front	False	None
 ['N_IES']	NOUN	41	D	False	strengthen	front	False	None
 ['N_IKENET']	NOUN	32	D	obligatory	strengthen	front	False	None
 ['N_IMMYT']	NOUN	43	H	False	strengthen	front	False	None
