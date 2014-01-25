@@ -117,8 +117,8 @@ def main():
                 if not join_on in words.keys():
                     print("\033[93mMissing!\033[0m "
                           "Could not find the key",
-                          join_on, "used by", join_file.name,
-                          "line", linecount, "in any of", 
+                          join_on, "used by\033[91m", join_file.name,
+                          "\033[0mline\033[91m", linecount, "\033[0min any of",
                           " ".join(args.infilenames), file=stderr)
                     print("you must fix database integrity or hack the scripts",
                             "before continuing")

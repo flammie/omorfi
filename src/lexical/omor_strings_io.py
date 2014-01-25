@@ -81,6 +81,7 @@ def replace_rightmosts(s, needles, repls):
     else:
         print("Suspicious replacement attempts!", file=stderr)
         print("tried to ", needles, " => ", repls, " in ", s, file=stderr)
+        exit(1)
     return s
 
 def lexc_escape(s):

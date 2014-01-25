@@ -210,7 +210,7 @@ stuff2ftb3 = {"Bc": "#",
         "Csup": "% Superl",
         "Dmaisilla": "% Inf5",
         "Dminen": "% N",
-        "Dnut": "", "Dtu": "", "Duus": "", "Dva": "", "Dmaton": "",
+        "Dnut": "% A", "Dtu": "% A", "Duus": "", "Dva": "% A", "Dmaton": "% N",
         "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
         "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
         "Din": "", "Ds": "", "Du": "",
@@ -218,6 +218,7 @@ stuff2ftb3 = {"Bc": "#",
         "Ia": "% Inf1",
         "Ie": "% Inf2",
         "Ima": "% Inf3",
+        "Iminen": "% N",
         "Ncon": "% ConNeg",
         "Nneg": "% Neg", 
         "Npl": "% Pl", 
@@ -663,7 +664,7 @@ def format_tag_omor(stuff, format):
             return stuff2omor_short[stuff]
         else:
             print("Missing from omor-short mapping: ", stuff, file=stderr)
-            return ""
+            exit(1)
     elif stuff in stuff2omor:
         return stuff2omor[stuff]
     else:

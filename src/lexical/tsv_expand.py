@@ -128,6 +128,7 @@ def main():
                                 wordmap[k] = v
                 else:
                     print("new para not in join data:", joinkey)
+                    exit(1)
 
                 # Guess works in order
                 wordmap = guess_stem_features_ktn(wordmap)

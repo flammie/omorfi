@@ -48,6 +48,7 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['origin'] = extra_fields[1]
             else:
                 print("Unrecognised extra field", tsv_extra, "in CSV", file=stderr)
+                exit(1)
     if wordmap['proper_noun_class']: 
         wordmap['proper_noun_class'].sort()
         wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class'])
