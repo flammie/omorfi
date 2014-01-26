@@ -1,1182 +1,1181 @@
-new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem_diphthong
-['A_AAKKOSELLINEN']	ADJECTIVE	38	False	False	strengthen	back	False	None
-['A_AAVA']	ADJECTIVE	9	False	False	weaken	back	a	None
-['A_ABNORMAALI']	ADJECTIVE	6	False	False	weaken	back	False	None
-['A_ABNORMI']	ADJECTIVE	5	False	False	weaken	back	False	None
-['A_AHNE']	ADJECTIVE	48	False	False	strengthen	back	False	None
-['A_AIEMPI']	ADJECTIVE	16	H	False	weaken	back	False	None
-['A_AINOA']	ADJECTIVE	15	False	False	weaken	back	a	None
-['A_AINUT']	ADJECTIVE	44	False	False	strengthen	back	False	None
-['A_ALASTON']	ADJECTIVE	34	False	False	strengthen	back	False	None
-['A_AUTIO']	ADJECTIVE	3	False	False	weaken	back	False	None
-['A_AUTUAS']	ADJECTIVE	41	False	False	strengthen	back	False	None
-['A_AVOIN']	ADJECTIVE	33	False	False	strengthen	back	False	None
-['A_BEIGE']	ADJECTIVE	8	False	False	weaken	front	False	None
-['ACRO_AA', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_AA', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None
-['ACRO_AA', 'ACRO_KANDELA']	ACRONYM	12	False	False	weaken	back	False	None
-['ACRO_AA']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_AA', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_AA', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None
-['ACRO_AA', 'ACRO_SAIRAALA']	ACRONYM	13	False	False	weaken	back	False	None
-['ACRO_AA', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None
-['ACRO_DOLLARI', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_DOLLARI', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_CELSIUS']	ACRONYM	39	False	False	strengthen	back	False	None
-['ACRO_EE', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_EE', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None
-['ACRO_EE', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None
-['ACRO_EE', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_KANDELA']	ACRONYM	12	False	False	weaken	back	False	None
-['ACRO_EE', 'ACRO_KANDELA']	ACRONYM	12	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_EE']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_EE']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_EE', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_EE', 'ACRO_OIKEYS']	ACRONYM	40	False	False	strengthen	front	False	None
-['ACRO_EE', 'ACRO_OK']	ACRONYM	18	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None
-['ACRO_EE', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_TUOTE']	ACRONYM	48	False	False	strengthen	front	False	None
-['ACRO_EE', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None
-['ACRO_EE', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None
-['ACRO_EURO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None
-['ACRO_II', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_II', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None
-['ACRO_II', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	back	False	None
-['ACRO_II', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	front	False	None
-['ACRO_II', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None
-['ACRO_II', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_II', 'ACRO_NELJÄS']	ACRONYM	45	False	False	strengthen	front	False	None
-['ACRO_II']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_II']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_II', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_II', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None
-['ACRO_II', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_KAHDEKSAN']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_KAKSI']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_KAKSI']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_KOLME']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_KOLME']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_KUUSI']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_NELJÄ']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_NOLLA']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_NOLLA']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_OHMI', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_OHMI', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_CELSIUS']	ACRONYM	39	False	False	strengthen	back	False	None
-['ACRO_OO', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None
-['ACRO_OO', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None
-['ACRO_OO', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_OO']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_OO']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_OO', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_OIKEUS']	ACRONYM	40	False	False	strengthen	back	False	None
-['ACRO_OO', 'ACRO_OK']	ACRONYM	18	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_OPPILAS']	ACRONYM	41	False	False	strengthen	back	False	None
-['ACRO_OO', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None
-['ACRO_OO', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_OO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None
-['ACRO_OO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None
-['ACRO_OO', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None
-['ACRO_OO', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None
-['ACRO_PUNTA', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None
-['ACRO_PUNTA', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None
-['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_SENTTI', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_UU', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_UU', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_UU']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_UU']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_UU', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_UU', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_VIISI']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_VIISI']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_YHDEKSÄN']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_YKSI']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_YKSI']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_YY', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None
-['ACRO_YY', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None
-['ACRO_YY']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_YY']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_YY', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None
-['ACRO_ZET', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_ZET']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_ZET']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_ZET', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_ZET', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None
-['ACRO_ÄKS', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None
-['ACRO_ÄKS', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_LEHTI']	ACRONYM	7	False	False	weaken	back	False	None
-['ACRO_ÄKS', 'ACRO_LEHTI']	ACRONYM	7	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_ÄKS']	ACRONYM	0	False	False	False	back	False	None
-['ACRO_ÄKS']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_ÄKS', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None
-['ACRO_ÄKS', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None
-['ACRO_ÄKS', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_SAIRAALA']	ACRONYM	13	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None
-['ACRO_ÄKS', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None
-['ACRO_ÄKS', 'ACRO_TUOTE']	ACRONYM	48	False	False	strengthen	front	False	None
-['ACRO_ÄKS', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None
-['ACRO_ÄÄ', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None
-['ACRO_ÄÄ']	ACRONYM	0	False	False	False	front	False	None
-['ACRO_ÖÖ']	ACRONYM	0	False	False	False	front	False	None
-['A_EHTA']	ADJECTIVE	9	F	False	weaken	back	a	None
-['A_EHYT']	ADJECTIVE	43	False	False	strengthen	front	False	None
-['A_GAY']	ADJECTIVE	21	False	False	weaken	front	False	None
-['A_HAILAKKA']	ADJECTIVE	14	A	False	weaken	back	a	None
-['A_HALPA']	ADJECTIVE	9	E	False	weaken	back	a	None
-['A_HAPAN']	ADJECTIVE	33	B	False	strengthen	back	False	None
-['A_HAPERA']	ADJECTIVE	11	False	False	weaken	back	a	None
-['A_HARMAJA']	ADJECTIVE	12	False	False	weaken	back	a	None
-['A_HARRAS']	ADJECTIVE	41	K	False	strengthen	back	False	None
-['A_HELLE']	ADJECTIVE	48	I	False	strengthen	front	False	None
-['A_HIDAS']	ADJECTIVE	41	F	False	strengthen	back	False	None
-['A_HOIKKA']	ADJECTIVE	10	A	False	weaken	back	a	None
-['A_HUPAKKO']	ADJECTIVE	4	A	False	weaken	back	False	None
-['A_HURTTI']	ADJECTIVE	5	C	False	weaken	back	False	None
-['A_HÄPÄISTY']	ADJECTIVE	1	False	False	weaken	front	False	None
-['A_HÖLÖ']	ADJECTIVE	1	False	False	weaken	front	False	None
-['A_HÖMPPÄ']	ADJECTIVE	10	B	False	weaken	front	ä	None
-['A_HÖPPÄNÄ']	ADJECTIVE	12	False	False	weaken	front	ä	None
-['A_IKÄLOPPU']	ADJECTIVE	1	B	False	weaken	back	False	None
-['A_JÄREÄ']	ADJECTIVE	15	False	False	weaken	front	ä	None
-['A_KADE']	ADJECTIVE	48	F	False	strengthen	back	False	None
-['A_KELPO']	ADJECTIVE	1	E	False	weaken	back	False	None
-['A_KOHELO']	ADJECTIVE	2	False	False	weaken	back	False	None
-['A_KOLKKO']	ADJECTIVE	1	A	False	weaken	back	False	None
-['A_KORKEA']	ADJECTIVE	15	False	False	weaken	back	a	None
-['A_KULTA']	ADJECTIVE	10	I	False	weaken	back	a	None
-['A_KULUNUT']	ADJECTIVE	47	False	False	strengthen	back	u	None
-['A_KYLMÄJÄRKINEN']	ADJECTIVE	38	False	False	strengthen	front	False	None
-['A_KYVYTÖN']	ADJECTIVE	34	C	False	strengthen	front	False	None
-['A_KYYTTÖ']	ADJECTIVE	1	C	False	weaken	front	False	None
-['A_KÄYPÄ']	ADJECTIVE	10	E	False	weaken	front	ä	None
-['A_KÖKKÖ']	ADJECTIVE	1	A	False	weaken	front	False	None
-['A_LAKO']	ADJECTIVE	1	D	False	weaken	back	False	None
-['A_LATUSKA']	ADJECTIVE	13	False	False	weaken	back	a	None
-['A_LENKO']	ADJECTIVE	1	G	False	weaken	back	False	None
-['A_LÄHEMPI']	ADJECTIVE	16	H	False	weaken	front	False	None
-['A_LÄHTEISYYS']	ADJECTIVE	40	False	False	strengthen	front	False	None
-['A_LÄMMIN']	ADJECTIVE	35	H	False	strengthen	front	False	None
-['A_LÄNTÄ']	ADJECTIVE	10	J	False	weaken	front	ä	None
-['A_LÖPERÖ']	ADJECTIVE	2	False	False	weaken	front	False	None
-['A_LÖRPPÖ']	ADJECTIVE	1	B	False	weaken	front	False	None
-['A_MARTO']	ADJECTIVE	1	K	False	weaken	back	False	None
-['A_MATTA']	ADJECTIVE	9	C	False	weaken	back	a	None
-['A_MELTO']	ADJECTIVE	1	I	False	weaken	back	False	None
-['A_MIETO']	ADJECTIVE	1	F	False	weaken	back	False	None
-['A_MUU']	ADJECTIVE	18	False	False	weaken	back	u	None
-['A_MYKKÄ']	ADJECTIVE	10	A	False	weaken	front	ä	None
-['A_MYKKÄ']	ADJECTIVE	10	D	False	weaken	front	ä	None
-['A_MÄTÄ']	ADJECTIVE	10	F	False	weaken	front	ä	None
-['A_OHUT']	ADJECTIVE	43	False	False	strengthen	back	False	None
-['A_OIKEE']	ADJECTIVE	15	False	False	weaken	back	False	None
-['A_OPAAKKI']	ADJECTIVE	5	A	False	weaken	back	False	None
-['A_PAHIN']	ADJECTIVE	36	False	False	strengthen	back	False	None
-['A_PARANNELTU']	ADJECTIVE	1	I	False	weaken	back	False	None
-['A_PARAS']	ADJECTIVE	41	False	False	strengthen	back	False	None
-['A_PEEAA']	ADJECTIVE	18	False	False	weaken	back	a	None
-['A_PIENI']	ADJECTIVE	26	False	False	weaken	front	False	None
-['A_PINKKI']	ADJECTIVE	5	A	False	weaken	front	False	None
-['A_PITKÄ']	ADJECTIVE	1010	False	False	weaken	front	ä	None
-['A_POHATTA']	ADJECTIVE	14	C	False	weaken	back	a	None
-['A_POPPA']	ADJECTIVE	10	B	False	weaken	back	a	None
-['A_RAITIS']	ADJECTIVE	41	C	False	strengthen	back	False	None
-['A_RAMPA']	ADJECTIVE	9	H	False	weaken	back	a	None
-['A_REHTI']	ADJECTIVE	5	F	False	weaken	front	False	None
-['A_REIPAS']	ADJECTIVE	41	B	False	strengthen	back	False	None
-['A_RIETAS']	ADJECTIVE	41	C	False	strengthen	back	False	None
-['A_RIIVIÖ']	ADJECTIVE	3	False	False	weaken	front	False	None
-['A_RUMA']	ADJECTIVE	10	False	False	weaken	back	a	None
-['A_RÄVÄKKÄ']	ADJECTIVE	14	A	False	weaken	front	ä	None
-['A_SANKA']	ADJECTIVE	9	G	False	weaken	back	a	None
-['A_SIPPI']	ADJECTIVE	5	B	False	weaken	front	False	None
-['A_SISIN']	ADJECTIVE	36	False	False	strengthen	front	False	None
-['A_STYDI']	ADJECTIVE	5	False	False	weaken	front	False	None
-['A_SUIPPO']	ADJECTIVE	1	B	False	weaken	back	False	None
-['A_SUURI']	ADJECTIVE	24	False	False	weaken	back	False	None
-['A_SUURI']	ADJECTIVE	26	False	False	weaken	back	False	None
-['A_SYMPPIS']	ADJECTIVE	39	False	False	strengthen	front	False	None
-['A_SYYPÄÄ']	ADJECTIVE	18	False	False	weaken	front	ä	None
-['A_SÄIKKY']	ADJECTIVE	1	A	False	weaken	front	False	None
-['A_SÄKKÄRÄ']	ADJECTIVE	11	False	False	weaken	front	ä	None
-['A_TARKKA']	ADJECTIVE	9	A	False	weaken	back	a	None
-['A_TARKKA']	ADJECTIVE	9	D	False	weaken	back	a	None
-['A_TERVE']	ADJECTIVE	48	False	False	strengthen	front	False	None
-['A_TIIVIS']	ADJECTIVE	41	False	False	strengthen	front	False	None
-['A_TOOPE']	ADJECTIVE	8	False	False	weaken	back	False	None
-['A_TUHTI']	ADJECTIVE	5	F	False	weaken	back	False	None
-['A_TUMMAHKO']	ADJECTIVE	1	False	False	weaken	back	False	None
-['A_TURTA']	ADJECTIVE	10	K	False	weaken	back	a	None
-['A_TYHMÄ']	ADJECTIVE	10	False	False	weaken	front	ä	None
-['A_TYVEN']	ADJECTIVE	32	False	False	strengthen	front	False	None
-['A_TYYLIKÄS']	ADJECTIVE	41	A	False	strengthen	front	False	None
-['A_TYÖLÄS']	ADJECTIVE	41	False	False	strengthen	front	False	None
-['A_TÄYSI']	ADJECTIVE	27	False	False	weaken	front	False	None
-['A_UUSI']	ADJECTIVE	27	False	False	weaken	back	False	None
-['A_VALKAISTU']	ADJECTIVE	1	False	False	weaken	back	False	None
-['A_VALMIS']	ADJECTIVE	41	False	False	strengthen	back	False	None
-['A_VAPAA']	ADJECTIVE	17	False	False	weaken	back	a	None
-['A_VASEN']	ADJECTIVE	37	False	False	strengthen	back	False	None
-['A_VELTTO']	ADJECTIVE	1	C	False	weaken	back	False	None
-['A_VENTO']	ADJECTIVE	1	J	False	weaken	back	False	None
-['A_VIATON']	ADJECTIVE	34	C	False	strengthen	back	False	None
-['A_VIHANTA']	ADJECTIVE	9	J	False	weaken	back	a	None
-['A_VIIPALOITU']	ADJECTIVE	1	F	False	weaken	back	False	None
-['A_VIMMATTU']	ADJECTIVE	1	C	False	weaken	back	False	None
-['A_VIRKKU']	ADJECTIVE	1	A	False	weaken	back	False	None
-['A_VOIMAKAS']	ADJECTIVE	41	A	False	strengthen	back	False	None
-['A_VOIPA']	ADJECTIVE	10	E	False	weaken	back	a	None
-['A_VÄHÄTELTY']	ADJECTIVE	1	I	False	weaken	front	False	None
-['A_VÄNKÄ']	ADJECTIVE	10	G	False	weaken	front	ä	None
-['A_VÄÄRTTI']	ADJECTIVE	5	C	False	weaken	front	False	None
-['A_YKSILÖITY']	ADJECTIVE	1	F	False	weaken	front	False	None
-['A_YLENNETTY']	ADJECTIVE	1	C	False	weaken	front	False	None
-['A_ÄLLISTYNYT']	ADJECTIVE	47	False	False	strengthen	front	y	None
-['A_ÖYKKÄRI']	ADJECTIVE	6	False	False	weaken	front	False	None
-['N_AAKKOSELLISUUS']	NOUN	40	False	False	strengthen	back	False	None
-['N_AAKKOSTAMINEN']	NOUN	38	False	False	strengthen	back	False	None
-['N_AALLOT']	NOUN	1	I	obligatory	weaken	back	False	None
-['N_AAMUKAHDEKSAN']	NOUN	10	False	False	weaken	back	False	None
-['N_AAMUKOLME']	NOUN	3	False	False	weaken	back	False	None
-['N_AAMUKYMMENEN']	NOUN	8	False	False	weaken	front	False	None
-['N_AAMUYHDEKSÄN']	NOUN	8	False	False	weaken	front	False	None
-['N_AAMUYKSI']	NOUN	31	False	False	weaken	front	False	None
-['N_AARRE']	NOUN	48	K	False	strengthen	back	False	None
-['N_AHDET']	NOUN	44	F	False	strengthen	back	False	None
-['N_AIKA']	NOUN	1009	D	False	weaken	back	a	None
-['N_AIVOKUOLLUT']	NOUN	47	False	False	strengthen	back	u	None
-['N_AIVOT']	NOUN	1	False	obligatory	weaken	back	False	None
-['N_AJATAR']	NOUN	32	C	False	strengthen	back	False	None
-['N_ALKEET']	NOUN	48	L	obligatory	strengthen	back	False	None
-['N_ALLAS']	NOUN	41	I	False	strengthen	back	False	None
-['N_ALTIS']	NOUN	41	C	False	strengthen	back	False	None
-['N_ANTIMET']	NOUN	33	J	obligatory	strengthen	back	False	None
-['N_APE']	NOUN	48	B	False	strengthen	back	False	None
-['N_APU']	NOUN	1	E	False	weaken	back	False	None
-['N_ARISTOTELES']	NOUN	41	False	False	strengthen	back	False	None
-['N_ARKI']	NOUN	7	L	False	weaken	back	False	None
-['N_ASKAR']	NOUN	49	False	False	strengthen	back	False	None
-['N_ASKELLIN']	NOUN	33	I	False	strengthen	back	False	None
-['N_ASTE']	NOUN	48	False	False	strengthen	back	False	None
-['N_ASTE']	NOUN	49	False	False	strengthen	back	False	None
-['N_ASUKAS']	NOUN	41	A	False	strengthen	back	False	None
-['N_ASU']	NOUN	1	False	False	weaken	back	False	None
-['N_ASU']	NOUN	1	False	False	weaken	back	u	None
-['N_ATERIMET']	NOUN	33	False	obligatory	strengthen	back	False	None
-['N_AUER']	NOUN	49	T	False	strengthen	back	False	None
-['N_BÉBÉ']	NOUN	21	False	False	weaken	front	e	None
-['N_BÉBÉ']	NOUN	21	False	False	weaken	front	é	None
-['N_BEIGNET']	NOUN	22	False	False	weaken	back	False	None
-['N_BEIGNET']	NOUN	22	False	False	weaken	front	e	None
-['N_BEIGNET']	NOUN	22	False	False	weaken	front	False	None
-['N_BEIGNET']	NOUN	22	False	False	weaken	front	i	None
-['N_BERNIE']	NOUN	3	False	False	weaken	front	False	None
-['N_BESSERWISSER']	NOUN	6	False	False	weaken	front	False	None
-['N_BIDEE']	NOUN	20	False	False	weaken	front	e	None
-['N_BIKINIT']	NOUN	6	False	obligatory	weaken	front	False	None
-['N_BORDEAUX']	NOUN	22	False	False	weaken	back	False	None
-['N_BORDEAUX']	NOUN	22	False	False	weaken	back	o	None
-['N_BRASSERIE']	NOUN	21	False	False	weaken	back	False	None
-['N_BRASSERIE']	NOUN	21	False	False	weaken	back	i	None
-['N_BRASSERIE']	NOUN	21	False	False	weaken	back	I	None
-['N_BRASSERIE']	NOUN	21	False	False	weaken	back	í	None
-['N_BRIE']	NOUN	21	False	False	weaken	front	False	None
-['N_BRIE']	NOUN	21	False	False	weaken	front	i	None
-['N_BÄNET']	NOUN	8	False	obligatory	weaken	front	False	None
-['N_CAMUS']	NOUN	22	False	False	weaken	back	False	None
-['N_CHACHACHA']	NOUN	21	False	False	weaken	back	a	None
-['N_CHACHACHA']	NOUN	21	False	False	weaken	back	á	None
-['N_CHACHACHA']	NOUN	21	False	False	weaken	back	ą	None
-['N_COMPOUND']	NOUN	99	False	False	False	front	False	None
-['N_COWBOY']	NOUN	21	False	False	weaken	back	i	None
-['N_COWBOY']	NOUN	21	False	False	weaken	front	False	None
-['N_COWBOY']	NOUN	21	False	False	weaken	front	i	None
-['N_DIMITRIS']	NOUN	41	False	False	strengthen	front	False	None
-['N_EKKE']	NOUN	8	A	False	weaken	front	False	None
-['N_ELIN']	NOUN	33	False	False	strengthen	front	False	None
-['N_EMÄNTÄ']	NOUN	10	J	False	weaken	front	ä	None
-['N_EPÄILTY']	NOUN	1	I	False	weaken	front	False	None
-['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	o	None
-['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	O	None
-['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	ó	None
-['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	å	None
-['N_ESQUIMAU']	NOUN	21	False	False	weaken	front	ó	None
-['N_EUGENE']	NOUN	2	False	False	weaken	back	False	None
-['N_FARKUT']	NOUN	1	A	obligatory	weaken	back	False	None
-['N_FARKUT']	NOUN	1	D	obligatory	weaken	back	False	None
-['N_FARMARIT']	NOUN	6	False	obligatory	weaken	back	False	None
-['N_FIFA']	NOUN	10	False	False	weaken	back	False	None
-['N_FIFA']	NOUN	12	False	False	weaken	back	False	None
-['N_FIFA']	NOUN	9	False	False	weaken	back	False	None
-['N_FONDUE']	NOUN	21	False	False	weaken	front	y	None
-['N_FONDUE']	NOUN	21	False	False	weaken	front	Y	None
-['N_FONDYY']	NOUN	20	False	False	weaken	front	y	None
-['N_FÄNRIKIT']	NOUN	5	A	obligatory	weaken	front	False	None
-['N_GAY']	NOUN	21	False	False	weaken	back	False	None
-['N_GAY']	NOUN	21	False	False	weaken	back	i	None
-['N_GAY']	NOUN	21	False	False	weaken	front	False	None
-['N_GAY']	NOUN	21	False	False	weaken	front	i	None
-['N_HAAKSI']	NOUN	31	False	False	weaken	back	False	None
-['N_HAI']	NOUN	18	False	False	weaken	back	i	None
-['N_HAIT']	NOUN	18	False	obligatory	weaken	back	False	None
-['N_HAMMAS']	NOUN	41	H	False	strengthen	back	False	None
-['N_HAPAN']	NOUN	34	B	False	strengthen	back	False	None
-['N_HAPPI']	NOUN	7	B	False	weaken	back	False	None
-['N_HAPPO']	NOUN	1	B	False	weaken	back	False	None
-['N_HARMAAT']	NOUN	17	False	obligatory	weaken	back	False	None
-['N_HEITIN']	NOUN	33	C	False	strengthen	front	False	None
-['N_HENKI']	NOUN	7	G	False	weaken	front	False	None
-['N_HEPO']	NOUN	1	E	False	weaken	back	False	None
-['N_HIIRI']	NOUN	24	False	False	weaken	front	False	None
-['N_HIIRI']	NOUN	26	False	False	weaken	front	False	None
-['N_HIPAT']	NOUN	9	B	obligatory	weaken	back	False	None
-['N_HIRTTO']	NOUN	1	C	False	weaken	back	False	None
-['N_HIUTALEET']	NOUN	48	False	obligatory	strengthen	back	False	None
-['N_HOKSOTTIMET']	NOUN	33	C	obligatory	strengthen	back	False	None
-['N_HONKA']	NOUN	10	G	False	weaken	back	a	None
-['N_HOPEAT']	NOUN	15	False	obligatory	weaken	back	False	None
-['N_HORTA']	NOUN	10	K	False	weaken	back	a	None
-['N_HOUSUT']	NOUN	1	False	obligatory	weaken	back	False	None
-['N_HUOLITELTU']	NOUN	1	I	False	weaken	back	False	None
-['N_HUPI']	NOUN	5	E	False	weaken	back	False	None
-['N_HYLJE']	NOUN	48	L	False	strengthen	front	False	None
-['N_HYNTTEET']	NOUN	48	C	obligatory	strengthen	front	False	None
-['N_HYNTTYYT']	NOUN	17	False	obligatory	weaken	front	False	None
-['N_HYVINKÄÄ']	NOUN	17	False	False	weaken	front	ä	None
-['N_HYÖTYY']	NOUN	17	False	False	weaken	front	y	None
-['N_HÄIRIÖ']	NOUN	3	False	False	weaken	front	False	None
-['N_HÄKKI']	NOUN	5	A	False	weaken	front	False	None
-['N_HÄKKI']	NOUN	5	D	False	weaken	front	False	None
-['N_HÄKKYRÄ']	NOUN	12	False	False	weaken	front	ä	None
-['N_HÄMET']	NOUN	44	False	False	strengthen	front	False	None
-['N_HÄMMINKI']	NOUN	5	G	False	weaken	front	False	None
-['N_HÄNNÄT']	NOUN	10	J	obligatory	weaken	front	False	None
-['N_HÄRKIN']	NOUN	33	A	False	strengthen	front	False	None
-['N_HÄVINNEET']	NOUN	47	False	obligatory	strengthen	front	False	None
-['N_HÄÄT']	NOUN	18	False	obligatory	weaken	front	False	None
-['N_HÄÄTÖ']	NOUN	1	F	False	weaken	front	False	None
-['N_HÖLKKÄ']	NOUN	10	A	False	weaken	front	ä	None
-['N_HÖPÖTTÄJÄ']	NOUN	10	False	False	weaken	front	ä	None
-['N_HÖYHENET']	NOUN	32	False	obligatory	strengthen	front	False	None
-['N_IEN']	NOUN	32	D	False	strengthen	front	False	None
-['N_IES']	NOUN	41	D	False	strengthen	front	False	None
-['N_IKENET']	NOUN	32	D	obligatory	strengthen	front	False	None
-['N_IMMYT']	NOUN	43	H	False	strengthen	front	False	None
-['N_INGET']	NOUN	44	G	False	strengthen	front	False	None
-['N_ITÄMAAT']	NOUN	18	False	obligatory	weaken	back	False	None
-['N_JEPPE']	NOUN	8	B	False	weaken	front	False	None
-['N_JOCKEY']	NOUN	21	False	False	weaken	back	i	None
-['N_JOCKEY']	NOUN	21	False	False	weaken	front	False	None
-['N_JOCKEY']	NOUN	21	False	False	weaken	front	i	None
-['N_JOUKOT']	NOUN	1	A	obligatory	weaken	back	False	None
-['N_JOUKOT']	NOUN	1	D	obligatory	weaken	back	False	None
-['N_JOUTSEN']	NOUN	32	False	False	strengthen	back	False	None
-['N_JUHLAT']	NOUN	10	False	obligatory	weaken	back	False	None
-['N_JUOVAT']	NOUN	10	E	obligatory	weaken	back	False	None
-['N_JYLKYT']	NOUN	1	A	obligatory	weaken	front	False	None
-['N_JÄLSI']	NOUN	28	I	False	weaken	front	False	None
-['N_JÄRJESTÖT']	NOUN	2	False	obligatory	weaken	front	False	None
-['N_JÄRKI']	NOUN	7	L	False	weaken	front	False	None
-['N_JÄRVITAHDON']	NOUN	33	F	False	strengthen	back	False	None
-['N_JÄÄTELÖ']	NOUN	2	False	False	weaken	front	False	None
-['N_KAARET']	NOUN	44	False	False	strengthen	back	False	None
-['N_KAARRET']	NOUN	44	K	False	strengthen	back	False	None
-['N_KAARROT']	NOUN	1	K	obligatory	weaken	back	False	None
-['N_KALATOIN']	NOUN	34	C	False	strengthen	back	False	None
-['N_KAMPPEET']	NOUN	48	B	obligatory	strengthen	back	False	None
-['N_KANAALI']	NOUN	6	False	False	weaken	back	False	None
-['N_KANGASALA']	NOUN	9	False	False	weaken	back	a	None
-['N_KANGAS']	NOUN	41	G	False	strengthen	back	False	None
-['N_KANKAHAT']	NOUN	41	G	obligatory	strengthen	back	False	None
-['N_KANNEL']	NOUN	49	J	False	strengthen	back	False	None
-['N_KANNET']	NOUN	28	False	obligatory	weaken	back	False	None
-['N_KARRAT']	NOUN	9	K	obligatory	weaken	back	False	None
-['N_KASTANJETIT']	NOUN	5	C	obligatory	weaken	back	False	None
-['N_KASTIKE']	NOUN	48	A	False	strengthen	back	False	None
-['N_KASTILJAT']	NOUN	13	False	obligatory	weaken	back	False	None
-['N_KAUSI']	NOUN	27	False	False	weaken	back	False	None
-['N_KEHVELI']	NOUN	6	False	False	weaken	front	False	None
-['N_KELTIS']	NOUN	41	C	False	strengthen	front	False	None
-['N_KENGÄT']	NOUN	10	G	obligatory	weaken	front	False	None
-['N_KENKÄ']	NOUN	10	G	False	weaken	front	ä	None
-['N_KENTTÄ']	NOUN	10	C	False	weaken	front	ä	None
-['N_KENTUCKY']	NOUN	21	False	False	weaken	front	i	None
-['N_KENTÄT']	NOUN	10	C	obligatory	weaken	front	False	None
-['N_KERITSIMET']	NOUN	33	False	obligatory	strengthen	front	False	None
-['N_KERROIN']	NOUN	33	K	False	strengthen	back	False	None
-['N_KERTA']	NOUN	9	K	False	weaken	back	a	None
-['N_KEVÄT']	NOUN	44	False	False	strengthen	front	False	None
-['N_KIDE']	NOUN	48	F	False	strengthen	front	False	None
-['N_KIELTO']	NOUN	1	I	False	weaken	back	False	None
-['N_KIERRE']	NOUN	48	K	False	strengthen	front	False	None
-['N_KIERRIN']	NOUN	33	K	False	strengthen	front	False	None
-['N_KIHARAT']	NOUN	11	False	obligatory	weaken	back	False	None
-['N_KIHARRIN']	NOUN	33	K	False	strengthen	back	False	None
-['N_KIINNE']	NOUN	48	J	False	strengthen	front	False	None
-['N_KILPIKKÄÄT']	NOUN	41	A	obligatory	strengthen	front	False	None
-['N_KILPI']	NOUN	7	E	False	weaken	front	False	None
-['N_KINNAS']	NOUN	41	J	False	strengthen	back	False	None
-['N_KINNER']	NOUN	49	J	False	strengthen	front	False	None
-['N_KIRITTÄRET']	NOUN	32	C	obligatory	strengthen	front	False	None
-['N_KIRJA']	NOUN	9	False	False	weaken	back	a	None
-['N_KIRVES']	NOUN	41	False	False	strengthen	front	False	None
-['N_KITARA']	NOUN	13	False	False	weaken	back	a	None
-['N_KIVI']	NOUN	7	False	False	weaken	front	False	None
-['N_KLUMPIT']	NOUN	5	B	obligatory	weaken	back	False	None
-['N_KOE']	NOUN	48	D	False	strengthen	back	False	None
-['N_KOMPA']	NOUN	10	H	False	weaken	back	a	None
-['N_KORPI']	NOUN	7	E	False	weaken	back	False	None
-['N_KORTES']	NOUN	41	C	False	strengthen	back	False	None
-['N_KORTET']	NOUN	44	C	False	strengthen	back	False	None
-['N_KORTTI']	NOUN	5	C	False	weaken	back	False	None
-['N_KORVET']	NOUN	7	E	obligatory	weaken	back	False	None
-['N_KOUVOT']	NOUN	1	E	obligatory	weaken	back	False	None
-['N_KUITU']	NOUN	1	F	False	weaken	back	False	None
-['N_KUMMUT']	NOUN	1	H	obligatory	weaken	back	False	None
-['N_KUNGFU']	NOUN	21	False	False	weaken	back	u	None
-['N_KUNGFU']	NOUN	21	False	False	weaken	back	U	None
-['N_KUNNAT']	NOUN	10	J	obligatory	weaken	back	False	None
-['N_KUNTA']	NOUN	10	J	False	weaken	back	a	None
-['N_KUOPAT']	NOUN	10	B	obligatory	weaken	back	False	None
-['N_KUOPPA']	NOUN	10	B	False	weaken	back	a	None
-['N_KUPPI']	NOUN	5	B	False	weaken	back	False	None
-['N_KUTSUNTA']	NOUN	9	J	False	weaken	back	a	None
-['N_KUULOKKEET']	NOUN	48	A	obligatory	strengthen	back	False	None
-['N_KUULOKKEET']	NOUN	48	D	obligatory	strengthen	back	False	None
-['N_KUUS']	NOUN	27	False	False	weaken	back	False	None
-['N_KYDÖT']	NOUN	1	F	obligatory	weaken	front	False	None
-['N_KYKY']	NOUN	1	M	False	weaken	front	False	None
-['N_KYLKIÄINEN']	NOUN	38	False	False	strengthen	front	False	None
-['N_KYLÄNVANHIN']	NOUN	36	False	False	strengthen	back	False	None
-['N_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None
-['N_KYNNET']	NOUN	28	False	obligatory	weaken	front	False	None
-['N_KYNNÄÄT']	NOUN	41	False	obligatory	strengthen	front	False	None
-['N_KYSYNTÄ']	NOUN	9	J	False	weaken	front	ä	None
-['N_KYYNEL']	NOUN	49	False	False	strengthen	front	False	None
-['N_KÄKI']	NOUN	7	D	False	weaken	front	False	None
-['N_KÄMMEKKÄ']	NOUN	14	A	False	weaken	front	ä	None
-['N_KÄPY']	NOUN	1	E	False	weaken	front	False	None
-['N_KÄPÄLÄ']	NOUN	11	False	False	weaken	front	ä	None
-['N_KÄRJET']	NOUN	7	L	obligatory	weaken	front	False	None
-['N_KÄRRY']	NOUN	1	False	False	weaken	front	False	None
-['N_KÄRSÄKÄS']	NOUN	41	A	False	strengthen	front	False	None
-['N_KÄRÄJÄT']	NOUN	10	False	obligatory	weaken	front	False	None
-['N_KÄSITE']	NOUN	48	C	False	strengthen	front	False	None
-['N_KÄÄDYT']	NOUN	1	F	obligatory	weaken	front	False	None
-['N_KÄÄNNIN']	NOUN	33	J	False	strengthen	front	False	None
-['N_KÄÄNTÖ']	NOUN	1	J	False	weaken	front	False	None
-['N_KÖNGÄS']	NOUN	41	G	False	strengthen	front	False	None
-['N_KÖYHYYS']	NOUN	40	False	False	strengthen	front	False	None
-['N_KÖYSI']	NOUN	27	False	False	weaken	front	False	None
-['N_KÖÖ']	NOUN	18	False	False	weaken	front	ö	None
-['N_LAET']	NOUN	7	D	obligatory	weaken	back	False	None
-['N_LAHDET']	NOUN	7	F	obligatory	weaken	back	False	None
-['N_LAHTI']	NOUN	7	F	False	weaken	back	False	None
-['N_LAIDUN']	NOUN	33	F	False	strengthen	back	False	None
-['N_LAKI']	NOUN	5	D	False	weaken	back	False	None
-['N_LAMMET']	NOUN	7	H	obligatory	weaken	back	False	None
-['N_LAMMI']	NOUN	5	H	False	weaken	back	False	None
-['N_LAMMIT']	NOUN	5	H	obligatory	weaken	back	False	None
-['N_LANKA']	NOUN	9	G	False	weaken	back	a	None
-['N_LANNET']	NOUN	44	J	False	strengthen	back	False	None
-['N_LAPSI']	NOUN	29	False	False	weaken	back	False	None
-['N_LASIT']	NOUN	5	False	obligatory	weaken	back	False	None
-['N_LEHDET']	NOUN	7	F	obligatory	weaken	front	False	None
-['N_LEHTI']	NOUN	7	F	False	weaken	front	False	None
-['N_LEIKKUU']	NOUN	17	False	False	weaken	back	u	None
-['N_LEIPÄ']	NOUN	10	E	False	weaken	front	ä	None
-['N_LENTTEE']	NOUN	17	False	False	weaken	front	e	None
-['N_LEPAKKO']	NOUN	4	A	False	weaken	back	False	None
-['N_LIEMI']	NOUN	25	False	False	weaken	front	False	None
-['N_LIITTOUTUNEET']	NOUN	47	False	obligatory	strengthen	back	False	None
-['N_LIIVIT']	NOUN	5	False	obligatory	weaken	front	False	None
-['N_LINGOT']	NOUN	1	G	obligatory	weaken	back	False	None
-['N_LINTU']	NOUN	1	J	False	weaken	back	False	None
-['N_LIPEÄ']	NOUN	15	False	False	weaken	front	ä	None
-['N_LIPOTTARET']	NOUN	32	C	obligatory	strengthen	back	False	None
-['N_LIPPU']	NOUN	1	B	False	weaken	back	False	None
-['N_LIUKU']	NOUN	1	D	False	weaken	back	False	None
-['N_LIVVADIEVÁT']	NOUN	21	False	obligatory	weaken	back	a	None
-['N_LOKKI']	NOUN	5	A	False	weaken	back	False	None
-['N_LOMMOL']	NOUN	49	H	False	strengthen	back	False	None
-['N_LOTTE']	NOUN	8	C	False	weaken	back	False	None
-['N_LOUET']	NOUN	44	D	False	strengthen	back	False	None
-['N_LUHDAT']	NOUN	10	F	obligatory	weaken	back	False	None
-['N_LUKU']	NOUN	1	M	False	weaken	back	False	None
-['N_LUMME']	NOUN	48	H	False	strengthen	back	False	None
-['N_LUODE']	NOUN	48	F	False	strengthen	back	False	None
-['N_LUODES']	NOUN	41	F	False	strengthen	back	False	None
-['N_LUOKKA']	NOUN	10	A	False	weaken	back	a	None
-['N_LUOLIKOT']	NOUN	4	A	obligatory	weaken	back	False	None
-['N_LUPA']	NOUN	10	E	False	weaken	back	a	None
-['N_LUSIKKA']	NOUN	14	A	False	weaken	back	a	None
-['N_LÄHDES']	NOUN	41	F	False	strengthen	front	False	None
-['N_LÄHDET']	NOUN	44	F	False	strengthen	front	False	None
-['N_LÄHIN']	NOUN	36	False	False	strengthen	front	False	None
-['N_LÄMPÖ']	NOUN	1	H	False	weaken	front	False	None
-['N_LÄNGET']	NOUN	7	G	obligatory	weaken	front	False	None
-['N_LÄNSI']	NOUN	28	False	False	weaken	front	False	None
-['N_LÄNSI']	NOUN	28	J	False	weaken	front	False	None
-['N_LÄÄKE']	NOUN	48	A	False	strengthen	front	False	None
-['N_LÖPÖ']	NOUN	1	E	False	weaken	front	False	None
-['N_MAA']	NOUN	18	False	False	weaken	back	a	None
-['N_MAKKARA']	NOUN	12	False	False	weaken	back	a	None
-['N_MAKU']	NOUN	1	D	False	weaken	back	False	None
-['N_MALMÖ']	NOUN	21	False	False	weaken	front	ö	None
-['N_MALMÖ']	NOUN	21	False	False	weaken	front	Ö	None
-['N_MALTAAT']	NOUN	41	I	obligatory	strengthen	back	False	None
-['N_MANNER']	NOUN	49	J	False	strengthen	back	False	None
-['N_MARKKINAT']	NOUN	12	False	obligatory	weaken	back	False	None
-['N_MATEE']	NOUN	18	False	False	weaken	back	e	None
-['N_MATKUET']	NOUN	43	False	obligatory	strengthen	back	False	None
-['N_MERI']	NOUN	1024	False	False	weaken	back	False	None
-['N_MERI']	NOUN	1024	False	False	weaken	front	False	None
-['N_MERTU']	NOUN	1	K	False	weaken	back	False	None
-['N_METTE']	NOUN	8	C	False	weaken	front	False	None
-['N_MIEHET']	NOUN	42	False	obligatory	strengthen	back	False	None
-['N_MIEHET']	NOUN	42	False	obligatory	strengthen	front	False	None
-['N_MIELENGE']	NOUN	48	G	False	strengthen	front	False	None
-['N_MIELLE']	NOUN	48	I	False	strengthen	front	False	None
-['N_MIES']	NOUN	42	False	False	strengthen	back	False	None
-['N_MIES']	NOUN	42	False	False	strengthen	front	False	None
-['N_MILJÖÖ']	NOUN	20	False	False	weaken	front	ö	None
-['N_MILJÖÖT']	NOUN	20	False	obligatory	weaken	front	False	None
-['N_MITTA']	NOUN	9	C	False	weaken	back	a	None
-['N_MONSIEUR']	NOUN	22	False	False	weaken	back	False	None
-['N_MONSIEUR']	NOUN	22	False	False	weaken	front	ö	None
-['N_MULTA']	NOUN	10	I	False	weaken	back	a	None
-['N_MURTEET']	NOUN	48	K	obligatory	strengthen	back	False	None
-['N_MUUNNIN']	NOUN	33	J	False	strengthen	back	False	None
-['N_MYRKKY']	NOUN	1	A	False	weaken	front	False	None
-['N_MÄET']	NOUN	7	D	obligatory	weaken	front	False	None
-['N_MÄNNYT']	NOUN	1	J	obligatory	weaken	front	False	None
-['N_MÄNTY']	NOUN	1	J	False	weaken	front	False	None
-['N_MÄTTÄÄT']	NOUN	41	C	obligatory	strengthen	front	False	None
-['N_MÄTÄS']	NOUN	41	C	False	strengthen	front	False	None
-['N_MÖMMÖ']	NOUN	1	False	False	weaken	front	False	None
-['N_NALLE']	NOUN	8	False	False	weaken	back	False	None
-['N_NEITSYT']	NOUN	43	False	False	strengthen	front	False	None
-['N_NEUVOTTELUT']	NOUN	2	False	obligatory	weaken	back	False	None
-['N_NIEMET']	NOUN	25	False	obligatory	weaken	front	False	None
-['N_NIHTI']	NOUN	5	F	False	weaken	front	False	None
-['N_NIITUT']	NOUN	1	C	obligatory	weaken	back	False	None
-['N_NIITYT']	NOUN	1	C	obligatory	weaken	front	False	None
-['N_NIMETÖIN']	NOUN	34	C	False	strengthen	front	False	None
-['N_NIMETÖN']	NOUN	34	C	False	strengthen	front	False	None
-['N_NISSE']	NOUN	8	False	False	weaken	front	False	None
-['N_NOKI']	NOUN	7	D	False	weaken	back	False	None
-['N_NOUGAT']	NOUN	22	False	False	weaken	back	a	None
-['N_NOUGAT']	NOUN	22	False	False	weaken	back	False	None
-['N_NUGAA']	NOUN	20	False	False	weaken	back	a	None
-['N_NUKKE']	NOUN	8	A	False	weaken	back	False	None
-['N_NÄKY']	NOUN	1	D	False	weaken	front	False	None
-['N_NÄKÖ']	NOUN	1	D	False	weaken	front	False	None
-['N_OIKEUDET']	NOUN	40	False	obligatory	strengthen	back	False	None
-['N_OLKA']	NOUN	10	L	False	weaken	back	a	None
-['N_OLUT']	NOUN	43	False	False	strengthen	back	False	None
-['N_OMMEL']	NOUN	49	H	False	strengthen	back	False	None
-['N_ONKI']	NOUN	7	G	False	weaken	back	False	None
-['N_ONNET']	NOUN	7	J	obligatory	weaken	back	False	None
-['N_ONNI']	NOUN	7	False	False	weaken	back	False	None
-['N_OOKOO']	NOUN	18	False	False	weaken	back	o	None
-['N_OPINNOT']	NOUN	1	J	obligatory	weaken	back	False	None
-['N_OSATON']	NOUN	34	C	False	strengthen	back	False	None
-['N_OSOITE']	NOUN	48	C	False	strengthen	back	False	None
-['N_PAIKAT']	NOUN	9	A	obligatory	weaken	back	False	None
-['N_PAIKAT']	NOUN	9	D	obligatory	weaken	back	False	None
-['N_PANKIT']	NOUN	5	A	obligatory	weaken	back	False	None
-['N_PARFAIT']	NOUN	22	False	False	weaken	back	e	None
-['N_PATA']	NOUN	9	F	False	weaken	back	a	None
-['N_PATEE']	NOUN	20	False	False	weaken	back	e	None
-['N_PATSAS']	NOUN	41	False	False	strengthen	back	False	None
-['N_PEIPOT']	NOUN	1	B	obligatory	weaken	back	False	None
-['N_PELTI']	NOUN	5	I	False	weaken	front	False	None
-['N_PENGER']	NOUN	49	G	False	strengthen	front	False	None
-['N_PERKEET']	NOUN	48	L	obligatory	strengthen	front	False	None
-['N_PIDOT']	NOUN	1	F	obligatory	weaken	back	False	None
-['N_PIENNAR']	NOUN	49	J	False	strengthen	back	False	None
-['N_PIHDIT']	NOUN	5	F	obligatory	weaken	front	False	None
-['N_PII']	NOUN	18	False	False	weaken	front	i	None
-['N_PIIROA']	NOUN	15	False	False	weaken	back	a	None
-['N_PINSETIT']	NOUN	5	C	obligatory	weaken	front	False	None
-['N_PIPPALOT']	NOUN	2	False	obligatory	weaken	back	False	None
-['N_PISTE']	NOUN	48	False	False	strengthen	front	False	None
-['N_PISTE']	NOUN	49	False	False	strengthen	front	False	None
-['N_POHATTA']	NOUN	14	C	False	weaken	back	a	None
-['N_POHJE']	NOUN	48	L	False	strengthen	back	False	None
-['N_POIKA']	NOUN	1010	D	False	weaken	back	a	None
-['N_POJAT']	NOUN	1010	D	obligatory	weaken	back	False	None
-['N_POLITIIKKA']	NOUN	9	A	False	weaken	back	a	None
-['N_POLJIN']	NOUN	33	L	False	strengthen	back	False	None
-['N_PONSI']	NOUN	28	False	False	weaken	back	False	None
-['N_PONSI']	NOUN	28	J	False	weaken	back	False	None
-['N_PORRAS']	NOUN	41	K	False	strengthen	back	False	None
-['N_PORTAAT']	NOUN	41	K	obligatory	strengthen	back	False	None
-['N_PROBLEEMA']	NOUN	11	False	False	weaken	back	a	None
-['N_PUHELIN']	NOUN	33	False	False	strengthen	back	False	None
-['N_PUIN']	NOUN	33	D	False	strengthen	back	False	None
-['N_PUKIMET']	NOUN	33	D	obligatory	strengthen	back	False	None
-['N_PUNK']	NOUN	5	False	False	weaken	back	False	None
-['N_PUU']	NOUN	18	False	False	weaken	back	u	None
-['N_PUUT']	NOUN	18	False	obligatory	weaken	back	False	None
-['N_PYTTY']	NOUN	1	C	False	weaken	front	False	None
-['N_PYYHE']	NOUN	48	D	False	strengthen	front	False	None
-['N_PYYHIN']	NOUN	33	D	False	strengthen	front	False	None
-['N_PYY']	NOUN	18	False	False	weaken	front	y	None
-['N_PYYT']	NOUN	18	False	obligatory	weaken	front	False	None
-['N_PÄÄ']	NOUN	18	False	False	weaken	front	ä	None
-['N_PÖKSYT']	NOUN	1	False	obligatory	weaken	front	False	None
-['N_PÖLHÄÄT']	NOUN	17	False	obligatory	weaken	front	False	None
-['N_PÖLLÖT']	NOUN	1	False	obligatory	weaken	front	False	None
-['N_PÖNTTÖ']	NOUN	1	C	False	weaken	front	False	None
-['N_PÖYTÄ']	NOUN	10	F	False	weaken	front	ä	None
-['N_RAAVIN']	NOUN	33	E	False	strengthen	back	False	None
-['N_RAGUU']	NOUN	20	False	False	weaken	back	u	None
-['N_RAKENNE']	NOUN	48	J	False	strengthen	back	False	None
-['N_RAMPA']	NOUN	9	H	False	weaken	back	a	None
-['N_RANGAT']	NOUN	9	G	obligatory	weaken	back	False	None
-['N_RANNAT']	NOUN	9	J	obligatory	weaken	back	False	None
-['N_RAPPE']	NOUN	8	B	False	weaken	back	False	None
-['N_RAPPUSET']	NOUN	38	False	obligatory	strengthen	back	False	None
-['N_RAPUT']	NOUN	1	B	obligatory	weaken	back	False	None
-['N_RATAS']	NOUN	41	C	False	strengthen	back	False	None
-['N_RATTAAT']	NOUN	41	C	obligatory	strengthen	back	False	None
-['N_RAUDAT']	NOUN	9	F	obligatory	weaken	back	False	None
-['N_RAUNIOT']	NOUN	3	False	obligatory	weaken	back	False	None
-['N_RAVET']	NOUN	8	False	obligatory	weaken	back	False	None
-['N_RAVUT']	NOUN	1	E	obligatory	weaken	back	False	None
-['N_REGGAE']	NOUN	21	False	False	weaken	back	False	None
-['N_REIKÄ']	NOUN	10	D	False	weaken	front	ä	None
-['N_REIÄT']	NOUN	10	D	obligatory	weaken	front	False	None
-['N_RENKAAT']	NOUN	41	G	obligatory	strengthen	back	False	None
-['N_RIIPI']	NOUN	5	E	False	weaken	front	False	None
-['N_RIIVET']	NOUN	7	E	obligatory	weaken	front	False	None
-['N_RIMMI']	NOUN	5	H	False	weaken	front	False	None
-['N_RIMMIT']	NOUN	5	H	obligatory	weaken	front	False	None
-['N_RIMPI']	NOUN	7	H	False	weaken	front	False	None
-['N_RINNET']	NOUN	44	J	False	strengthen	front	False	None
-['N_RINTEET']	NOUN	48	J	obligatory	strengthen	front	False	None
-['N_RIPE']	NOUN	48	B	False	strengthen	front	False	None
-['N_RIPSET']	NOUN	7	False	obligatory	weaken	front	False	None
-['N_RIUTAT']	NOUN	9	C	obligatory	weaken	back	False	None
-['N_ROHTIMET']	NOUN	33	F	obligatory	strengthen	back	False	None
-['N_ROITOT']	NOUN	1	C	obligatory	weaken	back	False	None
-['N_ROMPAAT']	NOUN	41	H	obligatory	strengthen	back	False	None
-['N_ROSÉ']	NOUN	21	False	False	weaken	back	e	None
-['N_ROSÉ']	NOUN	21	False	False	weaken	back	E	None
-['N_ROSÉ']	NOUN	21	False	False	weaken	back	é	None
-['N_ROTAT']	NOUN	10	C	obligatory	weaken	back	False	None
-['N_ROTTA']	NOUN	10	C	False	weaken	back	a	None
-['N_RUIPELO']	NOUN	2	False	False	weaken	back	False	None
-['N_RUIS']	NOUN	41	D	False	strengthen	back	False	None
-['N_RUMPU']	NOUN	1	H	False	weaken	back	False	None
-['N_RUNKO']	NOUN	1	G	False	weaken	back	False	None
-['N_RUOKO']	NOUN	1	D	False	weaken	back	False	None
-['N_RUOPPAAT']	NOUN	41	B	obligatory	strengthen	back	False	None
-['N_RUUHI']	NOUN	24	False	False	weaken	back	False	None
-['N_RUUHI']	NOUN	26	False	False	weaken	back	False	None
-['N_RUUMIS']	NOUN	41	False	False	strengthen	back	False	None
-['N_RUUVI']	NOUN	5	False	False	weaken	back	False	None
-['N_RYNNÄS']	NOUN	41	J	False	strengthen	front	False	None
-['N_RYNTTYYT']	NOUN	41	C	obligatory	strengthen	front	False	None
-['N_RYNTÄÄT']	NOUN	41	J	obligatory	strengthen	front	False	None
-['N_RYPÄS']	NOUN	41	B	False	strengthen	front	False	None
-['N_RYYPPY']	NOUN	1	B	False	weaken	front	False	None
-['N_RÄJÄYTYS']	NOUN	39	False	False	strengthen	front	False	None
-['N_RÄMEET']	NOUN	48	False	obligatory	strengthen	front	False	None
-['N_RÄMEÄT']	NOUN	15	False	obligatory	weaken	front	False	None
-['N_RÄMIÄT']	NOUN	12	False	obligatory	weaken	front	False	None
-['N_SAAPAS']	NOUN	41	B	False	strengthen	back	False	None
-['N_SAARET']	NOUN	24	False	obligatory	weaken	back	False	None
-['N_SAARET']	NOUN	26	False	obligatory	weaken	back	False	None
-['N_SAKSET']	NOUN	7	False	obligatory	weaken	back	False	None
-['N_SALONTEET']	NOUN	48	J	obligatory	strengthen	back	False	None
-['N_SALPA']	NOUN	9	E	False	weaken	back	a	None
-['N_SAMMALET']	NOUN	49	False	obligatory	strengthen	back	False	None
-['N_SAMPI']	NOUN	7	H	False	weaken	back	False	None
-['N_SAMPO']	NOUN	1	H	False	weaken	back	False	None
-['N_SEIKKAILU']	NOUN	2	False	False	weaken	back	False	None
-['N_SEIVÄS']	NOUN	41	E	False	strengthen	front	False	None
-['N_SELENE']	NOUN	2	False	False	weaken	front	False	None
-['N_SELJÄT']	NOUN	10	L	obligatory	weaken	front	False	None
-['N_SELKÄ']	NOUN	10	L	False	weaken	front	ä	None
-['N_SEPPÄ']	NOUN	10	B	False	weaken	front	ä	None
-['N_SERGEJ']	NOUN	22	False	False	weaken	back	False	None
-['N_SERGEJ']	NOUN	22	False	False	weaken	front	False	None
-['N_SERKUKSET']	NOUN	39	False	obligatory	strengthen	back	False	None
-['N_SHOW']	NOUN	22	False	False	weaken	back	False	None
-['N_SHOW']	NOUN	22	False	False	weaken	back	u	None
-['N_SIEMEN']	NOUN	32	False	False	strengthen	front	False	None
-['N_SIIRTO']	NOUN	1	K	False	weaken	back	False	None
-['N_SIIVILÄ']	NOUN	13	False	False	weaken	front	ä	None
-['N_SILAKAT']	NOUN	14	A	obligatory	weaken	back	False	None
-['N_SILMÄKKEET']	NOUN	48	A	obligatory	strengthen	front	False	None
-['N_SISÄLTÖ']	NOUN	1	I	False	weaken	front	False	None
-['N_SIUNAAMATTOMAT']	NOUN	34	C	obligatory	strengthen	back	False	None
-['N_SIVELLIN']	NOUN	33	I	False	strengthen	front	False	None
-['N_SIVISTYNYT']	NOUN	47	False	False	strengthen	front	y	None
-['N_SKEITTI']	NOUN	5	C	False	weaken	front	False	None
-['N_SOINTI']	NOUN	5	J	False	weaken	back	False	None
-['N_SOITTAJA']	NOUN	10	False	False	weaken	back	a	None
-['N_SOKEA']	NOUN	15	False	False	weaken	back	a	None
-['N_SOTA']	NOUN	10	F	False	weaken	back	a	None
-['N_STADION']	NOUN	6	False	False	weaken	back	False	None
-['N_SUHTEET']	NOUN	48	F	obligatory	strengthen	back	False	None
-['N_SUKAT']	NOUN	10	A	obligatory	weaken	back	False	None
-['N_SUODATIN']	NOUN	33	C	False	strengthen	back	False	None
-['N_SUOT']	NOUN	19	False	obligatory	weaken	back	False	None
-['N_SYLI']	NOUN	23	False	False	weaken	front	False	None
-['N_SYLTÄ']	NOUN	10	I	False	weaken	front	ä	None
-['N_SYNNYTTIMET']	NOUN	33	C	obligatory	strengthen	front	False	None
-['N_SYÖMINGIT']	NOUN	5	G	obligatory	weaken	front	False	None
-['N_SÄEN']	NOUN	49	D	False	strengthen	front	False	None
-['N_SÄNKY']	NOUN	1	G	False	weaken	front	False	None
-['N_SÄRKÄT']	NOUN	10	A	obligatory	weaken	front	False	None
-['N_SÄRVIN']	NOUN	33	E	False	strengthen	front	False	None
-['N_SÄÄDIN']	NOUN	33	F	False	strengthen	front	False	None
-['N_SÄÄNNÖT']	NOUN	1	J	obligatory	weaken	front	False	None
-['N_SÄÄRET']	NOUN	26	False	obligatory	weaken	front	False	None
-['N_TAIMI']	NOUN	25	False	False	weaken	back	False	None
-['N_TAIVAL']	NOUN	49	E	False	strengthen	back	False	None
-['N_TALKOOT']	NOUN	17	False	obligatory	weaken	back	False	None
-['N_TALO']	NOUN	1	False	False	weaken	back	False	None
-['N_TANHUA']	NOUN	15	False	False	weaken	back	a	None
-['N_TARPEET']	NOUN	48	E	obligatory	strengthen	back	False	None
-['N_TARVE']	NOUN	48	E	False	strengthen	back	False	None
-['N_TAUDIT']	NOUN	5	F	obligatory	weaken	back	False	None
-['N_TAUTI']	NOUN	5	F	False	weaken	back	False	None
-['N_TAVAT']	NOUN	9	E	obligatory	weaken	back	False	None
-['N_TEE']	NOUN	18	False	False	weaken	front	e	None
-['N_TEHDAS']	NOUN	41	F	False	strengthen	back	False	None
-['N_TEHTAAT']	NOUN	41	F	obligatory	strengthen	back	False	None
-['N_TEKO']	NOUN	1	D	False	weaken	back	False	None
-['N_TIENOO']	NOUN	17	False	False	weaken	back	o	None
-['N_TIE']	NOUN	19	False	False	weaken	front	False	None
-['N_TIETEET']	NOUN	48	F	obligatory	strengthen	front	False	None
-['N_TIET']	NOUN	19	False	obligatory	weaken	front	False	None
-['N_TIKKAAT']	NOUN	41	A	obligatory	strengthen	back	False	None
-['N_TIKKAAT']	NOUN	41	D	obligatory	strengthen	back	False	None
-['N_TIKKU']	NOUN	1	A	False	weaken	back	False	None
-['N_TIPPA']	NOUN	9	B	False	weaken	back	a	None
-['N_TOIMET']	NOUN	25	False	obligatory	weaken	back	False	None
-['N_TOKEE']	NOUN	17	False	False	weaken	back	e	None
-['N_TONGIT']	NOUN	5	G	obligatory	weaken	back	False	None
-['N_TORTTU']	NOUN	1	C	False	weaken	back	False	None
-['N_TOULAT']	NOUN	40	False	False	strengthen	back	False	None
-['N_TRIKOO']	NOUN	20	False	False	weaken	back	o	None
-['N_TUHANNES']	NOUN	45	False	False	strengthen	back	False	None
-['N_TULI']	NOUN	23	False	False	weaken	back	False	None
-['N_TUNNIT']	NOUN	5	J	obligatory	weaken	back	False	None
-['N_TUNTO']	NOUN	1	J	False	weaken	back	False	None
-['N_TUOMIO']	NOUN	3	False	False	weaken	back	False	None
-['N_TYPPI']	NOUN	7	B	False	weaken	front	False	None
-['N_TYTÄR']	NOUN	32	C	False	strengthen	front	False	None
-['N_TYTÖT']	NOUN	1	C	obligatory	weaken	front	False	None
-['N_TYYLI']	NOUN	5	False	False	weaken	front	False	None
-['N_TYYPPI']	NOUN	5	B	False	weaken	front	False	None
-['N_TYÖ']	NOUN	19	False	False	weaken	front	False	None
-['N_TYÖT']	NOUN	19	False	obligatory	weaken	front	False	None
-['N_TYÖTTÖMÄT']	NOUN	34	C	obligatory	strengthen	front	False	None
-['N_TÖLPÄKÖT']	NOUN	4	A	obligatory	weaken	front	False	None
-['N_TÖLPÄT']	NOUN	10	B	obligatory	weaken	front	False	None
-['N_TÖRPPÖ']	NOUN	1	B	False	weaken	front	False	None
-['N_UDAR']	NOUN	49	F	False	strengthen	back	False	None
-['N_UKKO']	NOUN	1	A	False	weaken	back	False	None
-['N_UKSI']	NOUN	29	False	False	weaken	back	False	None
-['N_ULAPPA']	NOUN	14	B	False	weaken	back	a	None
-['NUM_ENSIMMÄINEN']	NUMERAL	38	False	False	strengthen	front	False	None
-['NUM_KAHDEKSAN']	NUMERAL	10	False	False	weaken	back	False	None
-['NUM_KAKSI']	NUMERAL	31	False	False	weaken	back	False	None
-['NUM_KOLMAS']	NUMERAL	45	False	False	strengthen	back	False	None
-['NUM_KOLME']	NUMERAL	1008	False	False	weaken	back	False	None
-['NUM_KUUSI']	NUMERAL	27	False	False	weaken	back	False	None
-['NUM_KYMMENEN']	NUMERAL	32	False	False	strengthen	front	False	None
-['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	back	False	None
-['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	front	False	None
-['NUM_MILJARDI']	NUMERAL	6	False	False	weaken	back	False	None
-['NUM_MILJOONA']	NUMERAL	10	False	False	weaken	back	a	None
-['NUM_NELJÄ']	NUMERAL	10	False	False	weaken	front	ä	None
-['NUM_NELJÄS']	NUMERAL	45	False	False	strengthen	front	False	None
-['NUM_SATA']	NUMERAL	9	F	False	weaken	back	a	None
-['NUM_TOINEN']	NUMERAL	38	False	False	strengthen	back	False	None
-['NUM_TUHAT']	NUMERAL	46	False	False	strengthen	back	False	None
-['NUM_VIISI']	NUMERAL	27	False	False	weaken	front	False	None
-['NUM_YHDEKSÄN']	NUMERAL	10	False	False	weaken	front	False	None
-['NUM_YKSI']	NUMERAL	31	False	False	weaken	front	False	None
-['N_UROS']	NOUN	41	False	False	strengthen	back	False	None
-['N_VAADIN']	NOUN	33	F	False	strengthen	back	False	None
-['N_VAAKA']	NOUN	9	D	False	weaken	back	a	None
-['N_VAATTEET']	NOUN	48	C	obligatory	strengthen	back	False	None
-['N_VAINAA']	NOUN	17	False	False	weaken	back	a	None
-['N_VAKUUTUS']	NOUN	39	False	False	strengthen	back	False	None
-['N_VALJAAT']	NOUN	41	False	obligatory	strengthen	back	False	None
-['N_VALLAT']	NOUN	9	I	obligatory	weaken	back	False	None
-['N_VALTA']	NOUN	9	I	False	weaken	back	a	None
-['N_VANHEMMAT']	NOUN	16	H	obligatory	weaken	back	False	None
-['N_VANHEMPI']	NOUN	16	H	False	weaken	back	False	None
-['N_VANKI']	NOUN	5	G	False	weaken	back	False	None
-['N_VANTUS']	NOUN	41	C	False	strengthen	back	False	None
-['N_VARAS']	NOUN	41	D	False	strengthen	back	False	None
-['N_VARAT']	NOUN	9	False	obligatory	weaken	back	False	None
-['N_VARPAAT']	NOUN	41	E	obligatory	strengthen	back	False	None
-['N_VARSI']	NOUN	28	False	False	weaken	back	False	None
-['N_VARSI']	NOUN	28	K	False	weaken	back	False	None
-['N_VARVAS']	NOUN	41	E	False	strengthen	back	False	None
-['N_VASEN']	NOUN	37	False	False	strengthen	back	False	None
-['N_VEHKEILY']	NOUN	2	False	False	weaken	front	False	None
-['N_VEITSI']	NOUN	30	False	False	weaken	front	False	None
-['N_VELI']	NOUN	1007	False	False	weaken	front	False	None
-['N_VELJET']	NOUN	1007	L	obligatory	weaken	back	False	None
-['N_VELJET']	NOUN	1007	L	obligatory	weaken	front	False	None
-['N_VEMMEL']	NOUN	49	H	False	strengthen	front	False	None
-['N_VERI']	NOUN	1026	False	False	weaken	front	False	None
-['N_VERSAILLES']	NOUN	22	False	False	weaken	back	i	None
-['N_VETIMET']	NOUN	33	F	obligatory	strengthen	front	False	None
-['N_VETO']	NOUN	1	F	False	weaken	back	False	None
-['N_VETY']	NOUN	1	F	False	weaken	front	False	None
-['N_VIENTI']	NOUN	5	J	False	weaken	front	False	None
-['N_VIHKIÄISET']	NOUN	38	False	obligatory	strengthen	front	False	None
-['N_VIIRRET']	NOUN	44	K	False	strengthen	front	False	None
-['N_VIIS']	NOUN	27	False	False	weaken	front	False	None
-['N_VIIVE']	NOUN	48	E	False	strengthen	front	False	None
-['N_VIKA']	NOUN	9	D	False	weaken	back	a	None
-['N_VINKU']	NOUN	1	G	False	weaken	back	False	None
-['N_VIRRET']	NOUN	28	False	obligatory	weaken	front	False	None
-['N_VIRSI']	NOUN	28	False	False	weaken	front	False	None
-['N_VIRSI']	NOUN	28	K	False	weaken	front	False	None
-['N_VODĂ']	NOUN	10	False	False	weaken	back	False	None
-['N_VODĂ']	NOUN	10	False	False	weaken	front	False	None
-['N_VUODET']	NOUN	27	False	obligatory	weaken	back	False	None
-['N_VUOKA']	NOUN	10	D	False	weaken	back	a	None
-['N_VUOLLE']	NOUN	48	I	False	strengthen	back	False	None
-['N_VUOLLET']	NOUN	44	I	False	strengthen	back	False	None
-['N_VUO']	NOUN	19	False	False	weaken	back	False	None
-['N_VUOSITUHAT']	NOUN	46	False	False	strengthen	back	False	None
-['N_VÄRTÖ']	NOUN	1	K	False	weaken	front	False	None
-['N_YHTIÖT']	NOUN	3	False	obligatory	weaken	front	False	None
-['N_YKSIKKÖ']	NOUN	4	A	False	weaken	front	False	None
-['N_YLÄNKÖ']	NOUN	1	G	False	weaken	front	False	None
-['N_YLÖÖ']	NOUN	17	False	False	weaken	front	ö	None
-['N_YMPÄRYSTÄ']	NOUN	9	False	False	weaken	front	ä	None
-['N_YRITTÄ']	NOUN	9	C	False	weaken	front	ä	None
-['N_YSTÄVYKSET']	NOUN	39	False	obligatory	strengthen	front	False	None
-['N_YÖKKÖ']	NOUN	1	A	False	weaken	front	False	None
-['N_ZEN']	NOUN	5	False	False	weaken	front	False	None
-['N_ZOMBIE']	NOUN	3	False	False	weaken	back	False	None
-['N_ÄYRÄS']	NOUN	41	False	False	strengthen	front	False	None
-['PCLE_ALLE']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_FRONT_POSS_O
-['PCLE_IKINÄ']	PARTICLE	99	False	False	False	front	False	None
-['PCLE_KOTONA']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_LIKI']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_LISÄKSI']	PARTICLE	99	False	False	False	front	False	None
-['PCLE_NOPEASTI']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_NÄKYVIIN']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_TYHMÄSTI']	PARTICLE	99	False	False	False	front	False	None
-['PCLE_VALTAAN']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_VUOKSI']	PARTICLE	99	False	False	False	back	False	None
-['PCLE_YLLE']	PARTICLE	99	False	False	False	front	False	None
-['PRON_AINOA']	PRONOUN	101	False	False	False	back	False	None
-['PRON_ERÄS']	PRONOUN	41	False	False	strengthen	front	False	None
-['PRON_HÄN']	PRONOUN	101	False	False	False	front	False	None
-['PRON_IKINEN']	PRONOUN	38	False	False	strengthen	front	False	None
-['PRON_ITSE']	PRONOUN	8	False	False	weaken	front	False	None
-['PRON_JOKAINEN']	PRONOUN	38	False	False	strengthen	back	False	None
-['PRON_JOKA']	PRONOUN	101	False	False	False	back	False	None
-['PRON_JOKA']	PRONOUN	1101	False	False	weaken	back	False	None
-['PRON_JOKIN']	PRONOUN	101	False	False	False	back	False	None
-['PRON_JOKU']	PRONOUN	101	False	False	False	back	False	None
-['PRON_JOMPIKUMPI']	PRONOUN	16	H	False	weaken	back	False	None
-['PRON_KAIKKI']	PRONOUN	7	A	False	weaken	back	False	None
-['PRON_KUKAAN']	PRONOUN	101	False	False	False	back	False	None
-['PRON_KUKA']	PRONOUN	101	False	False	False	back	False	None
-['PRON_KUKIN']	PRONOUN	101	False	False	False	back	False	None
-['PRON_KUMPIKAAN']	PRONOUN	16	False	False	weaken	back	False	None
-['PRON_KUMPIKIN']	PRONOUN	16	False	False	weaken	back	False	None
-['PRON_KUMPI']	PRONOUN	16	H	False	weaken	back	False	None
-['PRON_LAINEN']	PRONOUN	38	False	False	strengthen	back	False	None
-['PRON_ME']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MIE']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MIKIN']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MIKÄ']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MIKÄ']	PRONOUN	1101	False	False	weaken	front	False	None
-['PRON_MIKÄÄN']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MINÄ']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MISSÄ']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MISSÄÄN']	PRONOUN	101	False	False	False	front	False	None
-['PRON_MOLEMMAT']	PRONOUN	16	H	obligatory	weaken	back	False	None
-['PRON_MONES']	PRONOUN	45	False	False	strengthen	back	False	None
-['PRON_MONIAS']	PRONOUN	41	False	False	strengthen	back	False	None
-['PRON_MONI']	PRONOUN	23	False	False	weaken	back	False	None
-['PRON_MUUAN']	PRONOUN	101	False	False	False	back	False	None
-['PRON_MUU']	PRONOUN	18	False	False	weaken	back	u	None
-['PRON_MUUTAMA']	PRONOUN	10	False	False	weaken	back	a	None
-['PRON_MÄ']	PRONOUN	101	False	False	False	front	False	None
-['PRON_NE']	PRONOUN	101	False	False	False	front	False	None
-['PRON_NOI']	PRONOUN	101	False	False	False	back	False	None
-['PRON_NUO']	PRONOUN	101	False	False	False	back	False	None
-['PRON_NÄMÄ']	PRONOUN	101	False	False	False	front	False	None
-['PRON_SAMA']	PRONOUN	9	False	False	weaken	back	a	None
-['PRON_SE']	PRONOUN	101	False	False	False	front	False	None
-['PRON_TOINEN']	PRONOUN	38	False	False	strengthen	back	False	None
-['PRON_TOI']	PRONOUN	101	False	False	False	back	False	None
-['PRON_TUO']	PRONOUN	101	False	False	False	back	False	None
-['PRON_TÄMÄ']	PRONOUN	101	False	False	False	front	False	None
-['PRON_USEAMPI']	PRONOUN	16	H	False	weaken	back	False	None
-['PRON_USEA']	PRONOUN	15	False	False	weaken	back	a	None
-['PRON_USEIMMAT']	PRONOUN	36	False	False	strengthen	back	False	None
-['PRON_YKSI']	PRONOUN	31	False	False	weaken	front	False	None
-['V_AALLOTA']	VERB	75	I	False	strengthen	back	False	None
-['V_AHNEHTIA']	VERB	61	F	False	weaken	back	False	None
-['V_AMPUA']	VERB	52	H	False	weaken	back	False	None
-['V_ARVATA']	VERB	73	False	False	strengthen	back	False	None
-['V_AUTTAA']	VERB	56	C	False	weaken	back	False	None
-['V_DIGATA']	VERB	73	O	False	strengthen	back	False	None
-['V_EHTIÄ']	VERB	61	F	False	weaken	front	False	None
-['V_EI']	VERB	1099	False	False	weaken	front	False	None
-['V_ENTÄÄ']	VERB	55	J	False	weaken	front	False	None
-['V_ERATA']	VERB	72	D	False	strengthen	back	False	None
-['V_HALAJAA']	VERB	78	False	False	weaken	back	False	None
-['V_HALJETA']	VERB	74	L	False	strengthen	back	False	None
-['V_HAPATA']	VERB	72	B	False	strengthen	back	False	None
-['V_HARPPOA']	VERB	52	B	False	weaken	back	False	None
-['V_HAUKKOA']	VERB	52	A	False	weaken	back	False	None
-['V_HELLITÄ']	VERB	75	I	False	strengthen	front	False	None
-['V_HELPOTA']	VERB	72	B	False	strengthen	back	False	None
-['V_HELÄJÄÄ']	VERB	77	False	False	weaken	front	False	None
-['V_HERMOTTUA']	VERB	52	C	False	weaken	back	False	None
-['V_HERÄTELLÄ']	VERB	67	C	False	strengthen	front	False	None
-['V_HIIPUA']	VERB	52	E	False	weaken	back	False	None
-['V_HIVENTÄÄ']	VERB	54	J	False	weaken	front	False	None
-['V_HUMALTUA']	VERB	52	I	False	weaken	back	False	None
-['V_HUONONTAA']	VERB	54	J	False	weaken	back	False	None
-['V_HUUTAA']	VERB	54	F	False	weaken	back	False	None
-['V_HYLJÄTÄ']	VERB	73	L	False	strengthen	front	False	None
-['V_HYLKIÄ']	VERB	61	L	False	weaken	front	False	None
-['V_HYPELLÄ']	VERB	67	B	False	strengthen	front	False	None
-['V_HYPPIÄ']	VERB	61	B	False	weaken	front	False	None
-['V_HÄVÄISTÄ']	VERB	66	E	False	strengthen	front	False	None
-['V_ILJETÄ']	VERB	72	L	False	strengthen	front	False	None
-['V_ILJETÄ']	VERB	74	L	False	strengthen	front	False	None
-['V_INNOTA']	VERB	74	J	False	strengthen	back	False	None
-['V_IRROTA']	VERB	74	K	False	strengthen	back	False	None
-['V_ISÄNNÖIDÄ']	VERB	68	False	False	strengthen	front	False	None
-['V_JAHDATA']	VERB	73	F	False	strengthen	back	False	None
-['V_JOUTAA']	VERB	55	F	False	weaken	back	False	None
-['V_JULJETA']	VERB	72	L	False	strengthen	back	False	None
-['V_JUOSTA']	VERB	70	False	False	strengthen	back	False	None
-['V_JYRKETÄ']	VERB	72	A	False	strengthen	front	False	None
-['V_JYRKETÄ']	VERB	72	D	False	strengthen	front	False	None
-['V_JÄÄDÄ']	VERB	63	False	False	strengthen	front	False	None
-['V_KAATAA']	VERB	57	F	False	weaken	back	False	None
-['V_KAIKOTA']	VERB	74	A	False	strengthen	back	False	None
-['V_KAIKOTA']	VERB	74	D	False	strengthen	back	False	None
-['V_KAIVATA']	VERB	73	E	False	strengthen	back	False	None
-['V_KALPPIA']	VERB	61	B	False	weaken	back	False	None
-['V_KAMMETA']	VERB	74	H	False	strengthen	back	False	None
-['V_KANTAA']	VERB	56	J	False	weaken	back	False	None
-['V_KARHETA']	VERB	72	False	False	strengthen	back	False	None
-['V_KARHUTA']	VERB	74	False	False	strengthen	back	False	None
-['V_KASVAA']	VERB	56	False	False	weaken	back	False	None
-['V_KAUNISTUA']	VERB	52	False	False	weaken	back	False	None
-['V_KAVETA']	VERB	72	E	False	strengthen	back	False	None
-['V_KERETÄ']	VERB	74	D	False	strengthen	front	False	None
-['V_KERITÄ']	VERB	75	D	False	strengthen	front	False	None
-['V_KIERTYÄ']	VERB	52	K	False	weaken	front	False	None
-['V_KIETOA']	VERB	52	F	False	weaken	back	False	None
-['V_KIHERRELLÄ']	VERB	67	K	False	strengthen	front	False	None
-['V_KIILLELLÄ']	VERB	67	I	False	strengthen	front	False	None
-['V_KIINNETÄ']	VERB	72	J	False	strengthen	front	False	None
-['V_KIITÄÄ']	VERB	55	F	False	weaken	front	False	None
-['V_KIRVOTA']	VERB	74	E	False	strengthen	back	False	None
-['V_KIVETTYÄ']	VERB	52	C	False	weaken	front	False	None
-['V_KIVISTÄÄ']	VERB	53	False	False	weaken	front	False	None
-['V_KIVUTA']	VERB	74	E	False	strengthen	back	False	None
-['V_KOMENNELLA']	VERB	67	J	False	strengthen	back	False	None
-['V_KONTIA']	VERB	61	J	False	weaken	back	False	None
-['V_KOPIOIDA']	VERB	62	False	False	strengthen	back	False	None
-['V_KORVETA']	VERB	74	E	False	strengthen	back	False	None
-['V_KOSIA']	VERB	61	False	False	weaken	back	False	None
-['V_KOUKUTA']	VERB	74	A	False	strengthen	back	False	None
-['V_KUHERTAA']	VERB	54	K	False	weaken	back	False	None
-['V_KUKKIA']	VERB	61	A	False	weaken	back	False	None
-['V_KUKKIA']	VERB	61	D	False	weaken	back	False	None
-['V_KUMMUTA']	VERB	74	H	False	strengthen	back	False	None
-['V_KUTEA']	VERB	58	F	False	weaken	back	False	None
-['V_KYNTÄÄ']	VERB	53	J	False	weaken	front	False	None
-['V_KYTKEÄ']	VERB	58	False	False	weaken	front	False	None
-['V_KÄRKKYÄ']	VERB	52	A	False	weaken	front	False	None
-['V_KÄYDÄ']	VERB	65	False	False	strengthen	front	False	None
-['V_KÄÄNNELLÄ']	VERB	67	J	False	strengthen	front	False	None
-['V_LASSOTA']	VERB	75	False	False	strengthen	back	False	None
-['V_LEIKELLÄ']	VERB	67	A	False	strengthen	front	False	None
-['V_LEPPYÄ']	VERB	52	B	False	weaken	front	False	None
-['V_LEUDOTA']	VERB	72	F	False	strengthen	back	False	None
-['V_LEVÄTÄ']	VERB	73	E	False	strengthen	front	False	None
-['V_LIIDUTA']	VERB	74	F	False	strengthen	back	False	None
-['V_LOBATA']	VERB	73	P	False	strengthen	back	False	None
-['V_LOITOTA']	VERB	72	C	False	strengthen	back	False	None
-['V_LOPPUA']	VERB	52	B	False	weaken	back	False	None
-['V_LOTOTA']	VERB	74	C	False	strengthen	back	False	None
-['V_LUNTATA']	VERB	73	C	False	strengthen	back	False	None
-['V_LUUTUTA']	VERB	74	C	False	strengthen	back	False	None
-['V_LÄHTEÄ']	VERB	60	F	False	weaken	front	False	None
-['V_LÄMMETÄ']	VERB	72	H	False	strengthen	front	False	None
-['V_LÄMMITÄ']	VERB	75	H	False	strengthen	front	False	None
-['V_LÄNTÄTÄ']	VERB	73	C	False	strengthen	front	False	None
-['V_MARISTA']	VERB	66	False	False	strengthen	back	False	None
-['V_MAUKUA']	VERB	52	D	False	weaken	back	False	None
-['V_MELLAKOIDA']	VERB	68	False	False	strengthen	back	False	None
-['V_MENNÄ']	VERB	67	False	False	strengthen	front	False	None
-['V_MERKITÄ']	VERB	69	False	False	strengthen	front	False	None
-['V_MIELTYÄ']	VERB	52	I	False	weaken	front	False	None
-['V_MIETTIÄ']	VERB	61	C	False	weaken	front	False	None
-['V_MOITTIA']	VERB	61	C	False	weaken	back	False	None
-['V_MOJAHTAA']	VERB	53	F	False	weaken	back	False	None
-['V_MORKATA']	VERB	73	A	False	strengthen	back	False	None
-['V_MORKATA']	VERB	73	D	False	strengthen	back	False	None
-['V_MULLATA']	VERB	73	I	False	strengthen	back	False	None
-['V_MUODOTA']	VERB	75	F	False	strengthen	back	False	None
-['V_MUTRISTAA']	VERB	53	False	False	weaken	back	False	None
-['V_MYYDÄ']	VERB	63	False	False	strengthen	front	False	None
-['V_MÄDÄTÄ']	VERB	72	F	False	strengthen	front	False	None
-['V_MÄIKYÄ']	VERB	52	D	False	weaken	front	False	None
-['V_MÖNKIÄ']	VERB	61	G	False	weaken	front	False	None
-['V_NAKELLA']	VERB	67	A	False	strengthen	back	False	None
-['V_NAKELLA']	VERB	67	D	False	strengthen	back	False	None
-['V_NAKERRELLA']	VERB	67	K	False	strengthen	back	False	None
-['V_NIUKETA']	VERB	72	A	False	strengthen	back	False	None
-['V_NIUKETA']	VERB	72	D	False	strengthen	back	False	None
-['V_NUOKKUA']	VERB	52	A	False	weaken	back	False	None
-['V_NUOKKUA']	VERB	52	D	False	weaken	back	False	None
-['V_NÄHDÄ']	VERB	71	False	False	strengthen	front	False	None
-['V_NÄPERTÄÄ']	VERB	54	K	False	weaken	front	False	None
-['V_OLLA']	VERB	1067	False	False	weaken	back	False	None
-['V_OMMELLA']	VERB	67	H	False	strengthen	back	False	None
-['V_ONKIA']	VERB	61	G	False	weaken	back	False	None
-['V_PALKITA']	VERB	69	False	False	strengthen	back	False	None
-['V_PANNA']	VERB	67	False	False	strengthen	back	False	None
-['V_PEITOTA']	VERB	75	C	False	strengthen	back	False	None
-['V_PENKOA']	VERB	52	G	False	weaken	back	False	None
-['V_PIDETÄ']	VERB	72	F	False	strengthen	front	False	None
-['V_PIERRÄ']	VERB	67	False	False	strengthen	front	False	None
-['V_PIESTÄ']	VERB	70	False	False	strengthen	front	False	None
-['V_PINGOTA']	VERB	74	G	False	strengthen	back	False	None
-['V_POIKETA']	VERB	74	A	False	strengthen	back	False	None
-['V_POIKETA']	VERB	74	D	False	strengthen	back	False	None
-['V_POLKEA']	VERB	58	L	False	weaken	back	False	None
-['V_PUKEA']	VERB	58	D	False	weaken	back	False	None
-['V_PULPUTA']	VERB	74	B	False	strengthen	back	False	None
-['V_PUNOA']	VERB	52	False	False	weaken	back	False	None
-['V_PURKAA']	VERB	53	D	False	weaken	back	False	None
-['V_PUSERTUA']	VERB	52	K	False	weaken	back	False	None
-['V_PYYTÄÄ']	VERB	54	F	False	weaken	front	False	None
-['V_PÄTEÄ']	VERB	58	F	False	weaken	front	False	None
-['V_RAAPIA']	VERB	61	E	False	weaken	back	False	None
-['V_RAIKAA']	VERB	78	False	False	weaken	back	False	None
-['V_RANGAISTA']	VERB	66	G	False	strengthen	back	False	None
-['V_REVETÄ']	VERB	74	E	False	strengthen	front	False	None
-['V_RIIPIÄ']	VERB	61	E	False	weaken	front	False	None
-['V_ROHTUA']	VERB	52	F	False	weaken	back	False	None
-['V_RYNNÄTÄ']	VERB	73	J	False	strengthen	front	False	None
-['V_RYPEÄ']	VERB	58	E	False	weaken	front	False	None
-['V_RYSKIÄ']	VERB	61	False	False	weaken	front	False	None
-['V_RYÖPYTÄ']	VERB	75	B	False	strengthen	front	False	None
-['V_RÄPSYTTÄÄ']	VERB	53	C	False	weaken	front	False	None
-['V_SAADA']	VERB	63	False	False	strengthen	back	False	None
-['V_SAARTAA']	VERB	57	K	False	weaken	back	False	None
-['V_SAMMOTA']	VERB	74	H	False	strengthen	back	False	None
-['V_SATAA']	VERB	56	F	False	weaken	back	False	None
-['V_SELVITÄ']	VERB	75	False	False	strengthen	front	False	None
-['V_SIEPATA']	VERB	73	B	False	strengthen	back	False	None
-['V_SILIYTYÄ']	VERB	52	F	False	weaken	front	False	None
-['V_SILPOA']	VERB	52	E	False	weaken	back	False	None
-['V_SIVALTAA']	VERB	54	I	False	weaken	back	False	None
-['V_SORTAA']	VERB	53	K	False	weaken	back	False	None
-['V_SOTKEA']	VERB	58	False	False	weaken	back	False	None
-['V_SULATELLA']	VERB	67	C	False	strengthen	back	False	None
-['V_SUPETA']	VERB	72	B	False	strengthen	back	False	None
-['V_SURRA']	VERB	67	False	False	strengthen	back	False	None
-['V_SUUNNATA']	VERB	73	J	False	strengthen	back	False	None
-['V_SYÖDÄ']	VERB	64	False	False	strengthen	front	False	None
-['V_SYÖPYÄ']	VERB	52	E	False	weaken	front	False	None
-['V_SÄILÖÄ']	VERB	52	False	False	weaken	front	False	None
-['V_SÄPSÄHDELLÄ']	VERB	67	F	False	strengthen	front	False	None
-['V_SÄRKEÄ']	VERB	58	L	False	weaken	front	False	None
-['V_SÖRKKIÄ']	VERB	61	A	False	weaken	front	False	None
-['V_SÖRKKIÄ']	VERB	61	D	False	weaken	front	False	None
-['V_TAITAA']	VERB	76	F	False	weaken	back	False	None
-['V_TAKOA']	VERB	52	D	False	weaken	back	False	None
-['V_TAPELLA']	VERB	67	B	False	strengthen	back	False	None
-['V_TAPPAA']	VERB	56	B	False	weaken	back	False	None
-['V_TEMMATA']	VERB	73	H	False	strengthen	back	False	None
-['V_TEMPOA']	VERB	52	H	False	weaken	back	False	None
-['V_TIETÄÄ']	VERB	76	F	False	weaken	front	False	None
-['V_TIPAHDELLA']	VERB	67	F	False	strengthen	back	False	None
-['V_TODETA']	VERB	74	F	False	strengthen	back	False	None
-['V_TUIKKAA']	VERB	78	A	False	weaken	back	False	None
-['V_TULLA']	VERB	67	False	False	strengthen	back	False	None
-['V_TUNGETA']	VERB	74	G	False	strengthen	back	False	None
-['V_TUNKEA']	VERB	58	G	False	weaken	back	False	None
-['V_TUNTEA']	VERB	59	J	False	weaken	back	False	None
-['V_TUODA']	VERB	64	False	False	strengthen	back	False	None
-['V_TYHJENTYÄ']	VERB	52	J	False	weaken	front	False	None
-['V_TYLPETÄ']	VERB	72	B	False	strengthen	front	False	None
-['V_TYMPIÄ']	VERB	61	H	False	weaken	front	False	None
-['V_TÄHDÄTÄ']	VERB	73	F	False	strengthen	front	False	None
-['V_TÄHYTÄ']	VERB	74	False	False	strengthen	front	False	None
-['V_ULOTA']	VERB	72	A	False	strengthen	back	False	None
-['V_ULOTA']	VERB	72	D	False	strengthen	back	False	None
-['V_UPOTA']	VERB	74	B	False	strengthen	back	False	None
-['V_VAAHDOTA']	VERB	74	F	False	strengthen	back	False	None
-['V_VAELLELLA']	VERB	67	I	False	strengthen	back	False	None
-['V_VAKAANTUA']	VERB	52	J	False	weaken	back	False	None
-['V_VARTOA']	VERB	52	K	False	weaken	back	False	None
-['V_VASTAILLA']	VERB	67	False	False	strengthen	back	False	None
-['V_VAVISTA']	VERB	66	E	False	strengthen	back	False	None
-['V_VERRATA']	VERB	73	K	False	strengthen	back	False	None
-['V_VIEDÄ']	VERB	64	False	False	strengthen	front	False	None
-['V_VIEROITTAA']	VERB	53	C	False	weaken	back	False	None
-['V_VIHELTÄÄ']	VERB	54	I	False	weaken	front	False	None
-['V_VIITTOA']	VERB	52	C	False	weaken	back	False	None
-['V_VINKUA']	VERB	52	G	False	weaken	back	False	None
-['V_VIPAJAA']	VERB	77	False	False	weaken	back	False	None
-['V_VIRKKAA']	VERB	56	A	False	weaken	back	False	None
-['V_VIRKKAA']	VERB	56	D	False	weaken	back	False	None
-['V_VONGATA']	VERB	73	G	False	strengthen	back	False	None
-['V_VYYHDETÄ']	VERB	74	F	False	strengthen	front	False	None
-['V_VÄHETÄ']	VERB	72	False	False	strengthen	front	False	None
-['V_VÄLPÄTÄ']	VERB	73	B	False	strengthen	front	False	None
-['V_VÄNGÄTÄ']	VERB	73	G	False	strengthen	front	False	None
-['V_YLTÄÄ']	VERB	55	I	False	weaken	front	False	None
-['V_YNNÄTÄ']	VERB	73	False	False	strengthen	front	False	None
-['V_YSKÄHTÄÄ']	VERB	53	F	False	weaken	front	False	None
-['V_YÖKÄTÄ']	VERB	73	A	False	strengthen	front	False	None
-['V_YÖKÄTÄ']	VERB	73	D	False	strengthen	front	False	None
-['V_ÄHKÄÄ']	VERB	78	False	False	weaken	front	False	None
-['V_ÄKSYILLÄ']	VERB	67	False	False	strengthen	front	False	None
-['V_ÄLLISTYÄ']	VERB	52	False	False	weaken	front	False	None
-['V_ÄNGETÄ']	VERB	74	G	False	strengthen	front	False	None
-['V_ÄRISTÄ']	VERB	66	False	False	strengthen	front	False	None
-['V_ÖYKKÄRÖIDÄ']	VERB	62	False	False	strengthen	front	False	None
+new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem_diphthong	possessive	clitics
+['A_AAKKOSELLINEN']	ADJECTIVE	38	False	False	strengthen	back	False	None	False	False
+['A_AAVA']	ADJECTIVE	9	False	False	weaken	back	a	None	False	False
+['A_ABNORMAALI']	ADJECTIVE	6	False	False	weaken	back	False	None	False	False
+['A_ABNORMI']	ADJECTIVE	5	False	False	weaken	back	False	None	False	False
+['A_AHNE']	ADJECTIVE	48	False	False	strengthen	back	False	None	False	False
+['A_AIEMPI']	ADJECTIVE	16	H	False	weaken	back	False	None	False	False
+['A_AINOA']	ADJECTIVE	15	False	False	weaken	back	a	None	False	False
+['A_AINUT']	ADJECTIVE	44	False	False	strengthen	back	False	None	False	False
+['A_ALASTON']	ADJECTIVE	34	False	False	strengthen	back	False	None	False	False
+['A_AUTIO']	ADJECTIVE	3	False	False	weaken	back	False	None	False	False
+['A_AUTUAS']	ADJECTIVE	41	False	False	strengthen	back	False	None	False	False
+['A_AVOIN']	ADJECTIVE	33	False	False	strengthen	back	False	None	False	False
+['A_BEIGE']	ADJECTIVE	8	False	False	weaken	front	False	None	False	False
+['ACRO_AA', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_AA', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None	False	False
+['ACRO_AA', 'ACRO_KANDELA']	ACRONYM	12	False	False	weaken	back	False	None	False	False
+['ACRO_AA']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_AA', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_AA', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None	False	False
+['ACRO_AA', 'ACRO_SAIRAALA']	ACRONYM	13	False	False	weaken	back	False	None	False	False
+['ACRO_AA', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
+['ACRO_DOLLARI', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_DOLLARI', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_CELSIUS']	ACRONYM	39	False	False	strengthen	back	False	None	False	False
+['ACRO_EE', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_EE', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None	False	False
+['ACRO_EE', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None	False	False
+['ACRO_EE', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_KANDELA']	ACRONYM	12	False	False	weaken	back	False	None	False	False
+['ACRO_EE', 'ACRO_KANDELA']	ACRONYM	12	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_EE']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_EE']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_EE', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_EE', 'ACRO_OIKEYS']	ACRONYM	40	False	False	strengthen	front	False	None	False	False
+['ACRO_EE', 'ACRO_OK']	ACRONYM	18	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
+['ACRO_EE', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_TUOTE']	ACRONYM	48	False	False	strengthen	front	False	None	False	False
+['ACRO_EE', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
+['ACRO_EURO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
+['ACRO_II', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_II', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None	False	False
+['ACRO_II', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	back	False	None	False	False
+['ACRO_II', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	front	False	None	False	False
+['ACRO_II', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None	False	False
+['ACRO_II', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_II', 'ACRO_NELJÄS']	ACRONYM	45	False	False	strengthen	front	False	None	False	False
+['ACRO_II']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_II']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_II', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_II', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
+['ACRO_II', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_KAHDEKSAN']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_KAKSI']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_KAKSI']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_KOLME']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_KOLME']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_KUUSI']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_NELJÄ']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_NOLLA']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_NOLLA']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_OHMI', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_OHMI', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_CELSIUS']	ACRONYM	39	False	False	strengthen	back	False	None	False	False
+['ACRO_OO', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_OO']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_OO']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_OO', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_OIKEUS']	ACRONYM	40	False	False	strengthen	back	False	None	False	False
+['ACRO_OO', 'ACRO_OK']	ACRONYM	18	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_OPPILAS']	ACRONYM	41	False	False	strengthen	back	False	None	False	False
+['ACRO_OO', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
+['ACRO_PUNTA', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
+['ACRO_PUNTA', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
+['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_SENTTI', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_UU', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_UU', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_UU']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_UU']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_UU', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_UU', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_VIISI']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_VIISI']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_YHDEKSÄN']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_YKSI']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_YKSI']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_YY', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None	False	False
+['ACRO_YY', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None	False	False
+['ACRO_YY']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_YY']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_YY', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
+['ACRO_ZET', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_ZET']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_ZET']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_ZET', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_ZET', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
+['ACRO_ÄKS', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None	False	False
+['ACRO_ÄKS', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_JOULE']	ACRONYM	8	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_LEHTI']	ACRONYM	7	False	False	weaken	back	False	None	False	False
+['ACRO_ÄKS', 'ACRO_LEHTI']	ACRONYM	7	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS']	ACRONYM	0	False	False	False	back	False	None	False	False
+['ACRO_ÄKS']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
+['ACRO_ÄKS', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None	False	False
+['ACRO_ÄKS', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_SAIRAALA']	ACRONYM	13	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_SIEVERT']	ACRONYM	6	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
+['ACRO_ÄKS', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_TUOTE']	ACRONYM	48	False	False	strengthen	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
+['ACRO_ÄÄ', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_ÄÄ']	ACRONYM	0	False	False	False	front	False	None	False	False
+['ACRO_ÖÖ']	ACRONYM	0	False	False	False	front	False	None	False	False
+['A_EHTA']	ADJECTIVE	9	F	False	weaken	back	a	None	False	False
+['A_EHYT']	ADJECTIVE	43	False	False	strengthen	front	False	None	False	False
+['A_GAY']	ADJECTIVE	21	False	False	weaken	front	False	None	False	False
+['A_HAILAKKA']	ADJECTIVE	14	A	False	weaken	back	a	None	False	False
+['A_HALPA']	ADJECTIVE	9	E	False	weaken	back	a	None	False	False
+['A_HAPAN']	ADJECTIVE	33	B	False	strengthen	back	False	None	False	False
+['A_HAPERA']	ADJECTIVE	11	False	False	weaken	back	a	None	False	False
+['A_HARMAJA']	ADJECTIVE	12	False	False	weaken	back	a	None	False	False
+['A_HARRAS']	ADJECTIVE	41	K	False	strengthen	back	False	None	False	False
+['A_HELLE']	ADJECTIVE	48	I	False	strengthen	front	False	None	False	False
+['A_HIDAS']	ADJECTIVE	41	F	False	strengthen	back	False	None	False	False
+['A_HOIKKA']	ADJECTIVE	10	A	False	weaken	back	a	None	False	False
+['A_HUPAKKO']	ADJECTIVE	4	A	False	weaken	back	False	None	False	False
+['A_HURTTI']	ADJECTIVE	5	C	False	weaken	back	False	None	False	False
+['A_HÄPÄISTY']	ADJECTIVE	1	False	False	weaken	front	False	None	False	False
+['A_HÖLÖ']	ADJECTIVE	1	False	False	weaken	front	False	None	False	False
+['A_HÖMPPÄ']	ADJECTIVE	10	B	False	weaken	front	ä	None	False	False
+['A_HÖPPÄNÄ']	ADJECTIVE	12	False	False	weaken	front	ä	None	False	False
+['A_IKÄLOPPU']	ADJECTIVE	1	B	False	weaken	back	False	None	False	False
+['A_JÄREÄ']	ADJECTIVE	15	False	False	weaken	front	ä	None	False	False
+['A_KADE']	ADJECTIVE	48	F	False	strengthen	back	False	None	False	False
+['A_KELPO']	ADJECTIVE	1	E	False	weaken	back	False	None	False	False
+['A_KOHELO']	ADJECTIVE	2	False	False	weaken	back	False	None	False	False
+['A_KOLKKO']	ADJECTIVE	1	A	False	weaken	back	False	None	False	False
+['A_KORKEA']	ADJECTIVE	15	False	False	weaken	back	a	None	False	False
+['A_KULTA']	ADJECTIVE	10	I	False	weaken	back	a	None	False	False
+['A_KULUNUT']	ADJECTIVE	47	False	False	strengthen	back	u	None	False	False
+['A_KYLMÄJÄRKINEN']	ADJECTIVE	38	False	False	strengthen	front	False	None	False	False
+['A_KYVYTÖN']	ADJECTIVE	34	C	False	strengthen	front	False	None	False	False
+['A_KYYTTÖ']	ADJECTIVE	1	C	False	weaken	front	False	None	False	False
+['A_KÄYPÄ']	ADJECTIVE	10	E	False	weaken	front	ä	None	False	False
+['A_KÖKKÖ']	ADJECTIVE	1	A	False	weaken	front	False	None	False	False
+['A_LAKO']	ADJECTIVE	1	D	False	weaken	back	False	None	False	False
+['A_LATUSKA']	ADJECTIVE	13	False	False	weaken	back	a	None	False	False
+['A_LENKO']	ADJECTIVE	1	G	False	weaken	back	False	None	False	False
+['A_LÄHEMPI']	ADJECTIVE	16	H	False	weaken	front	False	None	False	False
+['A_LÄHTEISYYS']	ADJECTIVE	40	False	False	strengthen	front	False	None	False	False
+['A_LÄMMIN']	ADJECTIVE	35	H	False	strengthen	front	False	None	False	False
+['A_LÄNTÄ']	ADJECTIVE	10	J	False	weaken	front	ä	None	False	False
+['A_LÖPERÖ']	ADJECTIVE	2	False	False	weaken	front	False	None	False	False
+['A_LÖRPPÖ']	ADJECTIVE	1	B	False	weaken	front	False	None	False	False
+['A_MARTO']	ADJECTIVE	1	K	False	weaken	back	False	None	False	False
+['A_MATTA']	ADJECTIVE	9	C	False	weaken	back	a	None	False	False
+['A_MELTO']	ADJECTIVE	1	I	False	weaken	back	False	None	False	False
+['A_MIETO']	ADJECTIVE	1	F	False	weaken	back	False	None	False	False
+['A_MUU']	ADJECTIVE	18	False	False	weaken	back	u	None	False	False
+['A_MYKKÄ']	ADJECTIVE	10	A	False	weaken	front	ä	None	False	False
+['A_MYKKÄ']	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False
+['A_MÄTÄ']	ADJECTIVE	10	F	False	weaken	front	ä	None	False	False
+['A_OHUT']	ADJECTIVE	43	False	False	strengthen	back	False	None	False	False
+['A_OIKEE']	ADJECTIVE	15	False	False	weaken	back	False	None	False	False
+['A_OPAAKKI']	ADJECTIVE	5	A	False	weaken	back	False	None	False	False
+['A_PAHIN']	ADJECTIVE	36	False	False	strengthen	back	False	None	False	False
+['A_PARANNELTU']	ADJECTIVE	1	I	False	weaken	back	False	None	False	False
+['A_PARAS']	ADJECTIVE	41	False	False	strengthen	back	False	None	False	False
+['A_PEEAA']	ADJECTIVE	18	False	False	weaken	back	a	None	False	False
+['A_PIENI']	ADJECTIVE	26	False	False	weaken	front	False	None	False	False
+['A_PINKKI']	ADJECTIVE	5	A	False	weaken	front	False	None	False	False
+['A_PITKÄ']	ADJECTIVE	1010	False	False	weaken	front	ä	None	False	False
+['A_POHATTA']	ADJECTIVE	14	C	False	weaken	back	a	None	False	False
+['A_POPPA']	ADJECTIVE	10	B	False	weaken	back	a	None	False	False
+['A_RAITIS']	ADJECTIVE	41	C	False	strengthen	back	False	None	False	False
+['A_RAMPA']	ADJECTIVE	9	H	False	weaken	back	a	None	False	False
+['A_REHTI']	ADJECTIVE	5	F	False	weaken	front	False	None	False	False
+['A_REIPAS']	ADJECTIVE	41	B	False	strengthen	back	False	None	False	False
+['A_RIETAS']	ADJECTIVE	41	C	False	strengthen	back	False	None	False	False
+['A_RIIVIÖ']	ADJECTIVE	3	False	False	weaken	front	False	None	False	False
+['A_RUMA']	ADJECTIVE	10	False	False	weaken	back	a	None	False	False
+['A_RÄVÄKKÄ']	ADJECTIVE	14	A	False	weaken	front	ä	None	False	False
+['A_SANKA']	ADJECTIVE	9	G	False	weaken	back	a	None	False	False
+['A_SIPPI']	ADJECTIVE	5	B	False	weaken	front	False	None	False	False
+['A_SISIN']	ADJECTIVE	36	False	False	strengthen	front	False	None	False	False
+['A_STYDI']	ADJECTIVE	5	False	False	weaken	front	False	None	False	False
+['A_SUIPPO']	ADJECTIVE	1	B	False	weaken	back	False	None	False	False
+['A_SUURI']	ADJECTIVE	24	False	False	weaken	back	False	None	False	False
+['A_SUURI']	ADJECTIVE	26	False	False	weaken	back	False	None	False	False
+['A_SYMPPIS']	ADJECTIVE	39	False	False	strengthen	front	False	None	False	False
+['A_SYYPÄÄ']	ADJECTIVE	18	False	False	weaken	front	ä	None	False	False
+['A_SÄIKKY']	ADJECTIVE	1	A	False	weaken	front	False	None	False	False
+['A_SÄKKÄRÄ']	ADJECTIVE	11	False	False	weaken	front	ä	None	False	False
+['A_TARKKA']	ADJECTIVE	9	A	False	weaken	back	a	None	False	False
+['A_TARKKA']	ADJECTIVE	9	D	False	weaken	back	a	None	False	False
+['A_TERVE']	ADJECTIVE	48	False	False	strengthen	front	False	None	False	False
+['A_TIIVIS']	ADJECTIVE	41	False	False	strengthen	front	False	None	False	False
+['A_TOOPE']	ADJECTIVE	8	False	False	weaken	back	False	None	False	False
+['A_TUHTI']	ADJECTIVE	5	F	False	weaken	back	False	None	False	False
+['A_TUMMAHKO']	ADJECTIVE	1	False	False	weaken	back	False	None	False	False
+['A_TURTA']	ADJECTIVE	10	K	False	weaken	back	a	None	False	False
+['A_TYHMÄ']	ADJECTIVE	10	False	False	weaken	front	ä	None	False	False
+['A_TYVEN']	ADJECTIVE	32	False	False	strengthen	front	False	None	False	False
+['A_TYYLIKÄS']	ADJECTIVE	41	A	False	strengthen	front	False	None	False	False
+['A_TYÖLÄS']	ADJECTIVE	41	False	False	strengthen	front	False	None	False	False
+['A_TÄYSI']	ADJECTIVE	27	False	False	weaken	front	False	None	False	False
+['A_UUSI']	ADJECTIVE	27	False	False	weaken	back	False	None	False	False
+['A_VALKAISTU']	ADJECTIVE	1	False	False	weaken	back	False	None	False	False
+['A_VALMIS']	ADJECTIVE	41	False	False	strengthen	back	False	None	False	False
+['A_VAPAA']	ADJECTIVE	17	False	False	weaken	back	a	None	False	False
+['A_VASEN']	ADJECTIVE	37	False	False	strengthen	back	False	None	False	False
+['A_VELTTO']	ADJECTIVE	1	C	False	weaken	back	False	None	False	False
+['A_VENTO']	ADJECTIVE	1	J	False	weaken	back	False	None	False	False
+['A_VIATON']	ADJECTIVE	34	C	False	strengthen	back	False	None	False	False
+['A_VIHANTA']	ADJECTIVE	9	J	False	weaken	back	a	None	False	False
+['A_VIIPALOITU']	ADJECTIVE	1	F	False	weaken	back	False	None	False	False
+['A_VIMMATTU']	ADJECTIVE	1	C	False	weaken	back	False	None	False	False
+['A_VIRKKU']	ADJECTIVE	1	A	False	weaken	back	False	None	False	False
+['A_VOIMAKAS']	ADJECTIVE	41	A	False	strengthen	back	False	None	False	False
+['A_VOIPA']	ADJECTIVE	10	E	False	weaken	back	a	None	False	False
+['A_VÄHÄTELTY']	ADJECTIVE	1	I	False	weaken	front	False	None	False	False
+['A_VÄNKÄ']	ADJECTIVE	10	G	False	weaken	front	ä	None	False	False
+['A_VÄÄRTTI']	ADJECTIVE	5	C	False	weaken	front	False	None	False	False
+['A_YKSILÖITY']	ADJECTIVE	1	F	False	weaken	front	False	None	False	False
+['A_YLENNETTY']	ADJECTIVE	1	C	False	weaken	front	False	None	False	False
+['A_ÄLLISTYNYT']	ADJECTIVE	47	False	False	strengthen	front	y	None	False	False
+['A_ÖYKKÄRI']	ADJECTIVE	6	False	False	weaken	front	False	None	False	False
+['N_AAKKOSELLISUUS']	NOUN	40	False	False	strengthen	back	False	None	False	False
+['N_AAKKOSTAMINEN']	NOUN	38	False	False	strengthen	back	False	None	False	False
+['N_AALLOT']	NOUN	1	I	obligatory	weaken	back	False	None	False	False
+['N_AAMUKAHDEKSAN']	NOUN	10	False	False	weaken	back	False	None	False	False
+['N_AAMUKOLME']	NOUN	3	False	False	weaken	back	False	None	False	False
+['N_AAMUKYMMENEN']	NOUN	8	False	False	weaken	front	False	None	False	False
+['N_AAMUYHDEKSÄN']	NOUN	8	False	False	weaken	front	False	None	False	False
+['N_AAMUYKSI']	NOUN	31	False	False	weaken	front	False	None	False	False
+['N_AARRE']	NOUN	48	K	False	strengthen	back	False	None	False	False
+['N_AHDET']	NOUN	44	F	False	strengthen	back	False	None	False	False
+['N_AIKA']	NOUN	1009	D	False	weaken	back	a	None	False	False
+['N_AIVOKUOLLUT']	NOUN	47	False	False	strengthen	back	u	None	False	False
+['N_AIVOT']	NOUN	1	False	obligatory	weaken	back	False	None	False	False
+['N_AJATAR']	NOUN	32	C	False	strengthen	back	False	None	False	False
+['N_ALKEET']	NOUN	48	L	obligatory	strengthen	back	False	None	False	False
+['N_ALLAS']	NOUN	41	I	False	strengthen	back	False	None	False	False
+['N_ALTIS']	NOUN	41	C	False	strengthen	back	False	None	False	False
+['N_ANTIMET']	NOUN	33	J	obligatory	strengthen	back	False	None	False	False
+['N_APE']	NOUN	48	B	False	strengthen	back	False	None	False	False
+['N_APU']	NOUN	1	E	False	weaken	back	False	None	False	False
+['N_ARISTOTELES']	NOUN	41	False	False	strengthen	back	False	None	False	False
+['N_ARKI']	NOUN	7	L	False	weaken	back	False	None	False	False
+['N_ASKAR']	NOUN	49	False	False	strengthen	back	False	None	False	False
+['N_ASKELLIN']	NOUN	33	I	False	strengthen	back	False	None	False	False
+['N_ASTE']	NOUN	48	False	False	strengthen	back	False	None	False	False
+['N_ASTE']	NOUN	49	False	False	strengthen	back	False	None	False	False
+['N_ASUKAS']	NOUN	41	A	False	strengthen	back	False	None	False	False
+['N_ASU']	NOUN	1	False	False	weaken	back	False	None	False	False
+['N_ASU']	NOUN	1	False	False	weaken	back	u	None	False	False
+['N_ATERIMET']	NOUN	33	False	obligatory	strengthen	back	False	None	False	False
+['N_AUER']	NOUN	49	T	False	strengthen	back	False	None	False	False
+['N_BÉBÉ']	NOUN	21	False	False	weaken	front	e	None	False	False
+['N_BÉBÉ']	NOUN	21	False	False	weaken	front	é	None	False	False
+['N_BEIGNET']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_BEIGNET']	NOUN	22	False	False	weaken	front	e	None	False	False
+['N_BEIGNET']	NOUN	22	False	False	weaken	front	False	None	False	False
+['N_BEIGNET']	NOUN	22	False	False	weaken	front	i	None	False	False
+['N_BERNIE']	NOUN	3	False	False	weaken	front	False	None	False	False
+['N_BESSERWISSER']	NOUN	6	False	False	weaken	front	False	None	False	False
+['N_BIDEE']	NOUN	20	False	False	weaken	front	e	None	False	False
+['N_BIKINIT']	NOUN	6	False	obligatory	weaken	front	False	None	False	False
+['N_BORDEAUX']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_BORDEAUX']	NOUN	22	False	False	weaken	back	o	None	False	False
+['N_BRASSERIE']	NOUN	21	False	False	weaken	back	False	None	False	False
+['N_BRASSERIE']	NOUN	21	False	False	weaken	back	i	None	False	False
+['N_BRASSERIE']	NOUN	21	False	False	weaken	back	I	None	False	False
+['N_BRASSERIE']	NOUN	21	False	False	weaken	back	í	None	False	False
+['N_BRIE']	NOUN	21	False	False	weaken	front	False	None	False	False
+['N_BRIE']	NOUN	21	False	False	weaken	front	i	None	False	False
+['N_BÄNET']	NOUN	8	False	obligatory	weaken	front	False	None	False	False
+['N_CAMUS']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_CHACHACHA']	NOUN	21	False	False	weaken	back	a	None	False	False
+['N_CHACHACHA']	NOUN	21	False	False	weaken	back	á	None	False	False
+['N_CHACHACHA']	NOUN	21	False	False	weaken	back	ą	None	False	False
+['N_COMPOUND']	NOUN	99	False	False	False	front	False	None	False	False
+['N_COWBOY']	NOUN	21	False	False	weaken	back	i	None	False	False
+['N_COWBOY']	NOUN	21	False	False	weaken	front	False	None	False	False
+['N_COWBOY']	NOUN	21	False	False	weaken	front	i	None	False	False
+['N_DIMITRIS']	NOUN	41	False	False	strengthen	front	False	None	False	False
+['N_EKKE']	NOUN	8	A	False	weaken	front	False	None	False	False
+['N_ELIN']	NOUN	33	False	False	strengthen	front	False	None	False	False
+['N_EMÄNTÄ']	NOUN	10	J	False	weaken	front	ä	None	False	False
+['N_EPÄILTY']	NOUN	1	I	False	weaken	front	False	None	False	False
+['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	o	None	False	False
+['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	O	None	False	False
+['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	ó	None	False	False
+['N_ESQUIMAU']	NOUN	21	False	False	weaken	back	å	None	False	False
+['N_ESQUIMAU']	NOUN	21	False	False	weaken	front	ó	None	False	False
+['N_EUGENE']	NOUN	2	False	False	weaken	back	False	None	False	False
+['N_FARKUT']	NOUN	1	A	obligatory	weaken	back	False	None	False	False
+['N_FARKUT']	NOUN	1	D	obligatory	weaken	back	False	None	False	False
+['N_FARMARIT']	NOUN	6	False	obligatory	weaken	back	False	None	False	False
+['N_FIFA']	NOUN	10	False	False	weaken	back	False	None	False	False
+['N_FIFA']	NOUN	12	False	False	weaken	back	False	None	False	False
+['N_FIFA']	NOUN	9	False	False	weaken	back	False	None	False	False
+['N_FONDUE']	NOUN	21	False	False	weaken	front	y	None	False	False
+['N_FONDUE']	NOUN	21	False	False	weaken	front	Y	None	False	False
+['N_FONDYY']	NOUN	20	False	False	weaken	front	y	None	False	False
+['N_FÄNRIKIT']	NOUN	5	A	obligatory	weaken	front	False	None	False	False
+['N_GAY']	NOUN	21	False	False	weaken	back	False	None	False	False
+['N_GAY']	NOUN	21	False	False	weaken	back	i	None	False	False
+['N_GAY']	NOUN	21	False	False	weaken	front	False	None	False	False
+['N_GAY']	NOUN	21	False	False	weaken	front	i	None	False	False
+['N_HAAKSI']	NOUN	31	False	False	weaken	back	False	None	False	False
+['N_HAI']	NOUN	18	False	False	weaken	back	i	None	False	False
+['N_HAIT']	NOUN	18	False	obligatory	weaken	back	False	None	False	False
+['N_HAMMAS']	NOUN	41	H	False	strengthen	back	False	None	False	False
+['N_HAPAN']	NOUN	34	B	False	strengthen	back	False	None	False	False
+['N_HAPPI']	NOUN	7	B	False	weaken	back	False	None	False	False
+['N_HAPPO']	NOUN	1	B	False	weaken	back	False	None	False	False
+['N_HARMAAT']	NOUN	17	False	obligatory	weaken	back	False	None	False	False
+['N_HEITIN']	NOUN	33	C	False	strengthen	front	False	None	False	False
+['N_HENKI']	NOUN	7	G	False	weaken	front	False	None	False	False
+['N_HEPO']	NOUN	1	E	False	weaken	back	False	None	False	False
+['N_HIIRI']	NOUN	24	False	False	weaken	front	False	None	False	False
+['N_HIIRI']	NOUN	26	False	False	weaken	front	False	None	False	False
+['N_HIPAT']	NOUN	9	B	obligatory	weaken	back	False	None	False	False
+['N_HIRTTO']	NOUN	1	C	False	weaken	back	False	None	False	False
+['N_HIUTALEET']	NOUN	48	False	obligatory	strengthen	back	False	None	False	False
+['N_HOKSOTTIMET']	NOUN	33	C	obligatory	strengthen	back	False	None	False	False
+['N_HONKA']	NOUN	10	G	False	weaken	back	a	None	False	False
+['N_HOPEAT']	NOUN	15	False	obligatory	weaken	back	False	None	False	False
+['N_HORTA']	NOUN	10	K	False	weaken	back	a	None	False	False
+['N_HOUSUT']	NOUN	1	False	obligatory	weaken	back	False	None	False	False
+['N_HUOLITELTU']	NOUN	1	I	False	weaken	back	False	None	False	False
+['N_HUPI']	NOUN	5	E	False	weaken	back	False	None	False	False
+['N_HYLJE']	NOUN	48	L	False	strengthen	front	False	None	False	False
+['N_HYNTTEET']	NOUN	48	C	obligatory	strengthen	front	False	None	False	False
+['N_HYNTTYYT']	NOUN	17	False	obligatory	weaken	front	False	None	False	False
+['N_HYVINKÄÄ']	NOUN	17	False	False	weaken	front	ä	None	False	False
+['N_HYÖTYY']	NOUN	17	False	False	weaken	front	y	None	False	False
+['N_HÄIRIÖ']	NOUN	3	False	False	weaken	front	False	None	False	False
+['N_HÄKKI']	NOUN	5	A	False	weaken	front	False	None	False	False
+['N_HÄKKI']	NOUN	5	D	False	weaken	front	False	None	False	False
+['N_HÄKKYRÄ']	NOUN	12	False	False	weaken	front	ä	None	False	False
+['N_HÄMET']	NOUN	44	False	False	strengthen	front	False	None	False	False
+['N_HÄMMINKI']	NOUN	5	G	False	weaken	front	False	None	False	False
+['N_HÄNNÄT']	NOUN	10	J	obligatory	weaken	front	False	None	False	False
+['N_HÄRKIN']	NOUN	33	A	False	strengthen	front	False	None	False	False
+['N_HÄVINNEET']	NOUN	47	False	obligatory	strengthen	front	False	None	False	False
+['N_HÄÄT']	NOUN	18	False	obligatory	weaken	front	False	None	False	False
+['N_HÄÄTÖ']	NOUN	1	F	False	weaken	front	False	None	False	False
+['N_HÖLKKÄ']	NOUN	10	A	False	weaken	front	ä	None	False	False
+['N_HÖPÖTTÄJÄ']	NOUN	10	False	False	weaken	front	ä	None	False	False
+['N_HÖYHENET']	NOUN	32	False	obligatory	strengthen	front	False	None	False	False
+['N_IEN']	NOUN	32	D	False	strengthen	front	False	None	False	False
+['N_IES']	NOUN	41	D	False	strengthen	front	False	None	False	False
+['N_IKENET']	NOUN	32	D	obligatory	strengthen	front	False	None	False	False
+['N_IMMYT']	NOUN	43	H	False	strengthen	front	False	None	False	False
+['N_INGET']	NOUN	44	G	False	strengthen	front	False	None	False	False
+['N_ITÄMAAT']	NOUN	18	False	obligatory	weaken	back	False	None	False	False
+['N_JEPPE']	NOUN	8	B	False	weaken	front	False	None	False	False
+['N_JOCKEY']	NOUN	21	False	False	weaken	back	i	None	False	False
+['N_JOCKEY']	NOUN	21	False	False	weaken	front	False	None	False	False
+['N_JOCKEY']	NOUN	21	False	False	weaken	front	i	None	False	False
+['N_JOUKOT']	NOUN	1	A	obligatory	weaken	back	False	None	False	False
+['N_JOUKOT']	NOUN	1	D	obligatory	weaken	back	False	None	False	False
+['N_JOUTSEN']	NOUN	32	False	False	strengthen	back	False	None	False	False
+['N_JUHLAT']	NOUN	10	False	obligatory	weaken	back	False	None	False	False
+['N_JUOVAT']	NOUN	10	E	obligatory	weaken	back	False	None	False	False
+['N_JYLKYT']	NOUN	1	A	obligatory	weaken	front	False	None	False	False
+['N_JÄLSI']	NOUN	28	I	False	weaken	front	False	None	False	False
+['N_JÄRJESTÖT']	NOUN	2	False	obligatory	weaken	front	False	None	False	False
+['N_JÄRKI']	NOUN	7	L	False	weaken	front	False	None	False	False
+['N_JÄRVITAHDON']	NOUN	33	F	False	strengthen	back	False	None	False	False
+['N_JÄÄTELÖ']	NOUN	2	False	False	weaken	front	False	None	False	False
+['N_KAARET']	NOUN	44	False	False	strengthen	back	False	None	False	False
+['N_KAARRET']	NOUN	44	K	False	strengthen	back	False	None	False	False
+['N_KAARROT']	NOUN	1	K	obligatory	weaken	back	False	None	False	False
+['N_KALATOIN']	NOUN	34	C	False	strengthen	back	False	None	False	False
+['N_KAMPPEET']	NOUN	48	B	obligatory	strengthen	back	False	None	False	False
+['N_KANAALI']	NOUN	6	False	False	weaken	back	False	None	False	False
+['N_KANGASALA']	NOUN	9	False	False	weaken	back	a	None	False	False
+['N_KANGAS']	NOUN	41	G	False	strengthen	back	False	None	False	False
+['N_KANKAHAT']	NOUN	41	G	obligatory	strengthen	back	False	None	False	False
+['N_KANNEL']	NOUN	49	J	False	strengthen	back	False	None	False	False
+['N_KANNET']	NOUN	28	False	obligatory	weaken	back	False	None	False	False
+['N_KARRAT']	NOUN	9	K	obligatory	weaken	back	False	None	False	False
+['N_KASTANJETIT']	NOUN	5	C	obligatory	weaken	back	False	None	False	False
+['N_KASTIKE']	NOUN	48	A	False	strengthen	back	False	None	False	False
+['N_KASTILJAT']	NOUN	13	False	obligatory	weaken	back	False	None	False	False
+['N_KAUSI']	NOUN	27	False	False	weaken	back	False	None	False	False
+['N_KEHVELI']	NOUN	6	False	False	weaken	front	False	None	False	False
+['N_KELTIS']	NOUN	41	C	False	strengthen	front	False	None	False	False
+['N_KENGÄT']	NOUN	10	G	obligatory	weaken	front	False	None	False	False
+['N_KENKÄ']	NOUN	10	G	False	weaken	front	ä	None	False	False
+['N_KENTTÄ']	NOUN	10	C	False	weaken	front	ä	None	False	False
+['N_KENTUCKY']	NOUN	21	False	False	weaken	front	i	None	False	False
+['N_KENTÄT']	NOUN	10	C	obligatory	weaken	front	False	None	False	False
+['N_KERITSIMET']	NOUN	33	False	obligatory	strengthen	front	False	None	False	False
+['N_KERROIN']	NOUN	33	K	False	strengthen	back	False	None	False	False
+['N_KERTA']	NOUN	9	K	False	weaken	back	a	None	False	False
+['N_KEVÄT']	NOUN	44	False	False	strengthen	front	False	None	False	False
+['N_KIDE']	NOUN	48	F	False	strengthen	front	False	None	False	False
+['N_KIELTO']	NOUN	1	I	False	weaken	back	False	None	False	False
+['N_KIERRE']	NOUN	48	K	False	strengthen	front	False	None	False	False
+['N_KIERRIN']	NOUN	33	K	False	strengthen	front	False	None	False	False
+['N_KIHARAT']	NOUN	11	False	obligatory	weaken	back	False	None	False	False
+['N_KIHARRIN']	NOUN	33	K	False	strengthen	back	False	None	False	False
+['N_KIINNE']	NOUN	48	J	False	strengthen	front	False	None	False	False
+['N_KILPIKKÄÄT']	NOUN	41	A	obligatory	strengthen	front	False	None	False	False
+['N_KILPI']	NOUN	7	E	False	weaken	front	False	None	False	False
+['N_KINNAS']	NOUN	41	J	False	strengthen	back	False	None	False	False
+['N_KINNER']	NOUN	49	J	False	strengthen	front	False	None	False	False
+['N_KIRITTÄRET']	NOUN	32	C	obligatory	strengthen	front	False	None	False	False
+['N_KIRJA']	NOUN	9	False	False	weaken	back	a	None	False	False
+['N_KIRVES']	NOUN	41	False	False	strengthen	front	False	None	False	False
+['N_KITARA']	NOUN	13	False	False	weaken	back	a	None	False	False
+['N_KIVI']	NOUN	7	False	False	weaken	front	False	None	False	False
+['N_KLUMPIT']	NOUN	5	B	obligatory	weaken	back	False	None	False	False
+['N_KOE']	NOUN	48	D	False	strengthen	back	False	None	False	False
+['N_KOMPA']	NOUN	10	H	False	weaken	back	a	None	False	False
+['N_KORPI']	NOUN	7	E	False	weaken	back	False	None	False	False
+['N_KORTES']	NOUN	41	C	False	strengthen	back	False	None	False	False
+['N_KORTET']	NOUN	44	C	False	strengthen	back	False	None	False	False
+['N_KORTTI']	NOUN	5	C	False	weaken	back	False	None	False	False
+['N_KORVET']	NOUN	7	E	obligatory	weaken	back	False	None	False	False
+['N_KOUVOT']	NOUN	1	E	obligatory	weaken	back	False	None	False	False
+['N_KUITU']	NOUN	1	F	False	weaken	back	False	None	False	False
+['N_KUMMUT']	NOUN	1	H	obligatory	weaken	back	False	None	False	False
+['N_KUNGFU']	NOUN	21	False	False	weaken	back	u	None	False	False
+['N_KUNGFU']	NOUN	21	False	False	weaken	back	U	None	False	False
+['N_KUNNAT']	NOUN	10	J	obligatory	weaken	back	False	None	False	False
+['N_KUNTA']	NOUN	10	J	False	weaken	back	a	None	False	False
+['N_KUOPAT']	NOUN	10	B	obligatory	weaken	back	False	None	False	False
+['N_KUOPPA']	NOUN	10	B	False	weaken	back	a	None	False	False
+['N_KUPPI']	NOUN	5	B	False	weaken	back	False	None	False	False
+['N_KUTSUNTA']	NOUN	9	J	False	weaken	back	a	None	False	False
+['N_KUULOKKEET']	NOUN	48	A	obligatory	strengthen	back	False	None	False	False
+['N_KUULOKKEET']	NOUN	48	D	obligatory	strengthen	back	False	None	False	False
+['N_KUUS']	NOUN	27	False	False	weaken	back	False	None	False	False
+['N_KYDÖT']	NOUN	1	F	obligatory	weaken	front	False	None	False	False
+['N_KYKY']	NOUN	1	M	False	weaken	front	False	None	False	False
+['N_KYLKIÄINEN']	NOUN	38	False	False	strengthen	front	False	None	False	False
+['N_KYLÄNVANHIN']	NOUN	36	False	False	strengthen	back	False	None	False	False
+['N_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
+['N_KYNNET']	NOUN	28	False	obligatory	weaken	front	False	None	False	False
+['N_KYNNÄÄT']	NOUN	41	False	obligatory	strengthen	front	False	None	False	False
+['N_KYSYNTÄ']	NOUN	9	J	False	weaken	front	ä	None	False	False
+['N_KYYNEL']	NOUN	49	False	False	strengthen	front	False	None	False	False
+['N_KÄKI']	NOUN	7	D	False	weaken	front	False	None	False	False
+['N_KÄMMEKKÄ']	NOUN	14	A	False	weaken	front	ä	None	False	False
+['N_KÄPY']	NOUN	1	E	False	weaken	front	False	None	False	False
+['N_KÄPÄLÄ']	NOUN	11	False	False	weaken	front	ä	None	False	False
+['N_KÄRJET']	NOUN	7	L	obligatory	weaken	front	False	None	False	False
+['N_KÄRRY']	NOUN	1	False	False	weaken	front	False	None	False	False
+['N_KÄRSÄKÄS']	NOUN	41	A	False	strengthen	front	False	None	False	False
+['N_KÄRÄJÄT']	NOUN	10	False	obligatory	weaken	front	False	None	False	False
+['N_KÄSITE']	NOUN	48	C	False	strengthen	front	False	None	False	False
+['N_KÄÄDYT']	NOUN	1	F	obligatory	weaken	front	False	None	False	False
+['N_KÄÄNNIN']	NOUN	33	J	False	strengthen	front	False	None	False	False
+['N_KÄÄNTÖ']	NOUN	1	J	False	weaken	front	False	None	False	False
+['N_KÖNGÄS']	NOUN	41	G	False	strengthen	front	False	None	False	False
+['N_KÖYHYYS']	NOUN	40	False	False	strengthen	front	False	None	False	False
+['N_KÖYSI']	NOUN	27	False	False	weaken	front	False	None	False	False
+['N_KÖÖ']	NOUN	18	False	False	weaken	front	ö	None	False	False
+['N_LAET']	NOUN	7	D	obligatory	weaken	back	False	None	False	False
+['N_LAHDET']	NOUN	7	F	obligatory	weaken	back	False	None	False	False
+['N_LAHTI']	NOUN	7	F	False	weaken	back	False	None	False	False
+['N_LAIDUN']	NOUN	33	F	False	strengthen	back	False	None	False	False
+['N_LAKI']	NOUN	5	D	False	weaken	back	False	None	False	False
+['N_LAMMET']	NOUN	7	H	obligatory	weaken	back	False	None	False	False
+['N_LAMMI']	NOUN	5	H	False	weaken	back	False	None	False	False
+['N_LAMMIT']	NOUN	5	H	obligatory	weaken	back	False	None	False	False
+['N_LANKA']	NOUN	9	G	False	weaken	back	a	None	False	False
+['N_LANNET']	NOUN	44	J	False	strengthen	back	False	None	False	False
+['N_LAPSI']	NOUN	29	False	False	weaken	back	False	None	False	False
+['N_LASIT']	NOUN	5	False	obligatory	weaken	back	False	None	False	False
+['N_LEHDET']	NOUN	7	F	obligatory	weaken	front	False	None	False	False
+['N_LEHTI']	NOUN	7	F	False	weaken	front	False	None	False	False
+['N_LEIKKUU']	NOUN	17	False	False	weaken	back	u	None	False	False
+['N_LEIPÄ']	NOUN	10	E	False	weaken	front	ä	None	False	False
+['N_LENTTEE']	NOUN	17	False	False	weaken	front	e	None	False	False
+['N_LEPAKKO']	NOUN	4	A	False	weaken	back	False	None	False	False
+['N_LIEMI']	NOUN	25	False	False	weaken	front	False	None	False	False
+['N_LIITTOUTUNEET']	NOUN	47	False	obligatory	strengthen	back	False	None	False	False
+['N_LIIVIT']	NOUN	5	False	obligatory	weaken	front	False	None	False	False
+['N_LINGOT']	NOUN	1	G	obligatory	weaken	back	False	None	False	False
+['N_LINTU']	NOUN	1	J	False	weaken	back	False	None	False	False
+['N_LIPEÄ']	NOUN	15	False	False	weaken	front	ä	None	False	False
+['N_LIPOTTARET']	NOUN	32	C	obligatory	strengthen	back	False	None	False	False
+['N_LIPPU']	NOUN	1	B	False	weaken	back	False	None	False	False
+['N_LIUKU']	NOUN	1	D	False	weaken	back	False	None	False	False
+['N_LIVVADIEVÁT']	NOUN	21	False	obligatory	weaken	back	a	None	False	False
+['N_LOKKI']	NOUN	5	A	False	weaken	back	False	None	False	False
+['N_LOMMOL']	NOUN	49	H	False	strengthen	back	False	None	False	False
+['N_LOTTE']	NOUN	8	C	False	weaken	back	False	None	False	False
+['N_LOUET']	NOUN	44	D	False	strengthen	back	False	None	False	False
+['N_LUHDAT']	NOUN	10	F	obligatory	weaken	back	False	None	False	False
+['N_LUKU']	NOUN	1	M	False	weaken	back	False	None	False	False
+['N_LUMME']	NOUN	48	H	False	strengthen	back	False	None	False	False
+['N_LUODE']	NOUN	48	F	False	strengthen	back	False	None	False	False
+['N_LUODES']	NOUN	41	F	False	strengthen	back	False	None	False	False
+['N_LUOKKA']	NOUN	10	A	False	weaken	back	a	None	False	False
+['N_LUOLIKOT']	NOUN	4	A	obligatory	weaken	back	False	None	False	False
+['N_LUPA']	NOUN	10	E	False	weaken	back	a	None	False	False
+['N_LUSIKKA']	NOUN	14	A	False	weaken	back	a	None	False	False
+['N_LÄHDES']	NOUN	41	F	False	strengthen	front	False	None	False	False
+['N_LÄHDET']	NOUN	44	F	False	strengthen	front	False	None	False	False
+['N_LÄHIN']	NOUN	36	False	False	strengthen	front	False	None	False	False
+['N_LÄMPÖ']	NOUN	1	H	False	weaken	front	False	None	False	False
+['N_LÄNGET']	NOUN	7	G	obligatory	weaken	front	False	None	False	False
+['N_LÄNSI']	NOUN	28	False	False	weaken	front	False	None	False	False
+['N_LÄNSI']	NOUN	28	J	False	weaken	front	False	None	False	False
+['N_LÄÄKE']	NOUN	48	A	False	strengthen	front	False	None	False	False
+['N_LÖPÖ']	NOUN	1	E	False	weaken	front	False	None	False	False
+['N_MAA']	NOUN	18	False	False	weaken	back	a	None	False	False
+['N_MAKKARA']	NOUN	12	False	False	weaken	back	a	None	False	False
+['N_MAKU']	NOUN	1	D	False	weaken	back	False	None	False	False
+['N_MALMÖ']	NOUN	21	False	False	weaken	front	ö	None	False	False
+['N_MALMÖ']	NOUN	21	False	False	weaken	front	Ö	None	False	False
+['N_MALTAAT']	NOUN	41	I	obligatory	strengthen	back	False	None	False	False
+['N_MANNER']	NOUN	49	J	False	strengthen	back	False	None	False	False
+['N_MARKKINAT']	NOUN	12	False	obligatory	weaken	back	False	None	False	False
+['N_MATEE']	NOUN	18	False	False	weaken	back	e	None	False	False
+['N_MATKUET']	NOUN	43	False	obligatory	strengthen	back	False	None	False	False
+['N_MERI']	NOUN	1024	False	False	weaken	back	False	None	False	False
+['N_MERI']	NOUN	1024	False	False	weaken	front	False	None	False	False
+['N_MERTU']	NOUN	1	K	False	weaken	back	False	None	False	False
+['N_METTE']	NOUN	8	C	False	weaken	front	False	None	False	False
+['N_MIEHET']	NOUN	42	False	obligatory	strengthen	back	False	None	False	False
+['N_MIEHET']	NOUN	42	False	obligatory	strengthen	front	False	None	False	False
+['N_MIELENGE']	NOUN	48	G	False	strengthen	front	False	None	False	False
+['N_MIELLE']	NOUN	48	I	False	strengthen	front	False	None	False	False
+['N_MIES']	NOUN	42	False	False	strengthen	back	False	None	False	False
+['N_MIES']	NOUN	42	False	False	strengthen	front	False	None	False	False
+['N_MILJÖÖ']	NOUN	20	False	False	weaken	front	ö	None	False	False
+['N_MILJÖÖT']	NOUN	20	False	obligatory	weaken	front	False	None	False	False
+['N_MITTA']	NOUN	9	C	False	weaken	back	a	None	False	False
+['N_MONSIEUR']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_MONSIEUR']	NOUN	22	False	False	weaken	front	ö	None	False	False
+['N_MULTA']	NOUN	10	I	False	weaken	back	a	None	False	False
+['N_MURTEET']	NOUN	48	K	obligatory	strengthen	back	False	None	False	False
+['N_MUUNNIN']	NOUN	33	J	False	strengthen	back	False	None	False	False
+['N_MYRKKY']	NOUN	1	A	False	weaken	front	False	None	False	False
+['N_MÄET']	NOUN	7	D	obligatory	weaken	front	False	None	False	False
+['N_MÄNNYT']	NOUN	1	J	obligatory	weaken	front	False	None	False	False
+['N_MÄNTY']	NOUN	1	J	False	weaken	front	False	None	False	False
+['N_MÄTTÄÄT']	NOUN	41	C	obligatory	strengthen	front	False	None	False	False
+['N_MÄTÄS']	NOUN	41	C	False	strengthen	front	False	None	False	False
+['N_MÖMMÖ']	NOUN	1	False	False	weaken	front	False	None	False	False
+['N_NALLE']	NOUN	8	False	False	weaken	back	False	None	False	False
+['N_NEITSYT']	NOUN	43	False	False	strengthen	front	False	None	False	False
+['N_NEUVOTTELUT']	NOUN	2	False	obligatory	weaken	back	False	None	False	False
+['N_NIEMET']	NOUN	25	False	obligatory	weaken	front	False	None	False	False
+['N_NIHTI']	NOUN	5	F	False	weaken	front	False	None	False	False
+['N_NIITUT']	NOUN	1	C	obligatory	weaken	back	False	None	False	False
+['N_NIITYT']	NOUN	1	C	obligatory	weaken	front	False	None	False	False
+['N_NIMETÖIN']	NOUN	34	C	False	strengthen	front	False	None	False	False
+['N_NIMETÖN']	NOUN	34	C	False	strengthen	front	False	None	False	False
+['N_NISSE']	NOUN	8	False	False	weaken	front	False	None	False	False
+['N_NOKI']	NOUN	7	D	False	weaken	back	False	None	False	False
+['N_NOUGAT']	NOUN	22	False	False	weaken	back	a	None	False	False
+['N_NOUGAT']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_NUGAA']	NOUN	20	False	False	weaken	back	a	None	False	False
+['N_NUKKE']	NOUN	8	A	False	weaken	back	False	None	False	False
+['N_NÄKY']	NOUN	1	D	False	weaken	front	False	None	False	False
+['N_NÄKÖ']	NOUN	1	D	False	weaken	front	False	None	False	False
+['N_OIKEUDET']	NOUN	40	False	obligatory	strengthen	back	False	None	False	False
+['N_OLKA']	NOUN	10	L	False	weaken	back	a	None	False	False
+['N_OLUT']	NOUN	43	False	False	strengthen	back	False	None	False	False
+['N_OMMEL']	NOUN	49	H	False	strengthen	back	False	None	False	False
+['N_ONKI']	NOUN	7	G	False	weaken	back	False	None	False	False
+['N_ONNET']	NOUN	7	J	obligatory	weaken	back	False	None	False	False
+['N_ONNI']	NOUN	7	False	False	weaken	back	False	None	False	False
+['N_OOKOO']	NOUN	18	False	False	weaken	back	o	None	False	False
+['N_OPINNOT']	NOUN	1	J	obligatory	weaken	back	False	None	False	False
+['N_OSATON']	NOUN	34	C	False	strengthen	back	False	None	False	False
+['N_OSOITE']	NOUN	48	C	False	strengthen	back	False	None	False	False
+['N_PAIKAT']	NOUN	9	A	obligatory	weaken	back	False	None	False	False
+['N_PAIKAT']	NOUN	9	D	obligatory	weaken	back	False	None	False	False
+['N_PANKIT']	NOUN	5	A	obligatory	weaken	back	False	None	False	False
+['N_PARFAIT']	NOUN	22	False	False	weaken	back	e	None	False	False
+['N_PATA']	NOUN	9	F	False	weaken	back	a	None	False	False
+['N_PATEE']	NOUN	20	False	False	weaken	back	e	None	False	False
+['N_PATSAS']	NOUN	41	False	False	strengthen	back	False	None	False	False
+['N_PEIPOT']	NOUN	1	B	obligatory	weaken	back	False	None	False	False
+['N_PELTI']	NOUN	5	I	False	weaken	front	False	None	False	False
+['N_PENGER']	NOUN	49	G	False	strengthen	front	False	None	False	False
+['N_PERKEET']	NOUN	48	L	obligatory	strengthen	front	False	None	False	False
+['N_PIDOT']	NOUN	1	F	obligatory	weaken	back	False	None	False	False
+['N_PIENNAR']	NOUN	49	J	False	strengthen	back	False	None	False	False
+['N_PIHDIT']	NOUN	5	F	obligatory	weaken	front	False	None	False	False
+['N_PII']	NOUN	18	False	False	weaken	front	i	None	False	False
+['N_PIIROA']	NOUN	15	False	False	weaken	back	a	None	False	False
+['N_PINSETIT']	NOUN	5	C	obligatory	weaken	front	False	None	False	False
+['N_PIPPALOT']	NOUN	2	False	obligatory	weaken	back	False	None	False	False
+['N_PISTE']	NOUN	48	False	False	strengthen	front	False	None	False	False
+['N_PISTE']	NOUN	49	False	False	strengthen	front	False	None	False	False
+['N_POHATTA']	NOUN	14	C	False	weaken	back	a	None	False	False
+['N_POHJE']	NOUN	48	L	False	strengthen	back	False	None	False	False
+['N_POIKA']	NOUN	1010	D	False	weaken	back	a	None	False	False
+['N_POJAT']	NOUN	1010	D	obligatory	weaken	back	False	None	False	False
+['N_POLITIIKKA']	NOUN	9	A	False	weaken	back	a	None	False	False
+['N_POLJIN']	NOUN	33	L	False	strengthen	back	False	None	False	False
+['N_PONSI']	NOUN	28	False	False	weaken	back	False	None	False	False
+['N_PONSI']	NOUN	28	J	False	weaken	back	False	None	False	False
+['N_PORRAS']	NOUN	41	K	False	strengthen	back	False	None	False	False
+['N_PORTAAT']	NOUN	41	K	obligatory	strengthen	back	False	None	False	False
+['N_PROBLEEMA']	NOUN	11	False	False	weaken	back	a	None	False	False
+['N_PUHELIN']	NOUN	33	False	False	strengthen	back	False	None	False	False
+['N_PUIN']	NOUN	33	D	False	strengthen	back	False	None	False	False
+['N_PUKIMET']	NOUN	33	D	obligatory	strengthen	back	False	None	False	False
+['N_PUNK']	NOUN	5	False	False	weaken	back	False	None	False	False
+['N_PUU']	NOUN	18	False	False	weaken	back	u	None	False	False
+['N_PUUT']	NOUN	18	False	obligatory	weaken	back	False	None	False	False
+['N_PYTTY']	NOUN	1	C	False	weaken	front	False	None	False	False
+['N_PYYHE']	NOUN	48	D	False	strengthen	front	False	None	False	False
+['N_PYYHIN']	NOUN	33	D	False	strengthen	front	False	None	False	False
+['N_PYY']	NOUN	18	False	False	weaken	front	y	None	False	False
+['N_PYYT']	NOUN	18	False	obligatory	weaken	front	False	None	False	False
+['N_PÄÄ']	NOUN	18	False	False	weaken	front	ä	None	False	False
+['N_PÖKSYT']	NOUN	1	False	obligatory	weaken	front	False	None	False	False
+['N_PÖLHÄÄT']	NOUN	17	False	obligatory	weaken	front	False	None	False	False
+['N_PÖLLÖT']	NOUN	1	False	obligatory	weaken	front	False	None	False	False
+['N_PÖNTTÖ']	NOUN	1	C	False	weaken	front	False	None	False	False
+['N_PÖYTÄ']	NOUN	10	F	False	weaken	front	ä	None	False	False
+['N_RAAVIN']	NOUN	33	E	False	strengthen	back	False	None	False	False
+['N_RAGUU']	NOUN	20	False	False	weaken	back	u	None	False	False
+['N_RAKENNE']	NOUN	48	J	False	strengthen	back	False	None	False	False
+['N_RAMPA']	NOUN	9	H	False	weaken	back	a	None	False	False
+['N_RANGAT']	NOUN	9	G	obligatory	weaken	back	False	None	False	False
+['N_RANNAT']	NOUN	9	J	obligatory	weaken	back	False	None	False	False
+['N_RAPPE']	NOUN	8	B	False	weaken	back	False	None	False	False
+['N_RAPPUSET']	NOUN	38	False	obligatory	strengthen	back	False	None	False	False
+['N_RAPUT']	NOUN	1	B	obligatory	weaken	back	False	None	False	False
+['N_RATAS']	NOUN	41	C	False	strengthen	back	False	None	False	False
+['N_RATTAAT']	NOUN	41	C	obligatory	strengthen	back	False	None	False	False
+['N_RAUDAT']	NOUN	9	F	obligatory	weaken	back	False	None	False	False
+['N_RAUNIOT']	NOUN	3	False	obligatory	weaken	back	False	None	False	False
+['N_RAVET']	NOUN	8	False	obligatory	weaken	back	False	None	False	False
+['N_RAVUT']	NOUN	1	E	obligatory	weaken	back	False	None	False	False
+['N_REGGAE']	NOUN	21	False	False	weaken	back	False	None	False	False
+['N_REIKÄ']	NOUN	10	D	False	weaken	front	ä	None	False	False
+['N_REIÄT']	NOUN	10	D	obligatory	weaken	front	False	None	False	False
+['N_RENKAAT']	NOUN	41	G	obligatory	strengthen	back	False	None	False	False
+['N_RIIPI']	NOUN	5	E	False	weaken	front	False	None	False	False
+['N_RIIVET']	NOUN	7	E	obligatory	weaken	front	False	None	False	False
+['N_RIMMI']	NOUN	5	H	False	weaken	front	False	None	False	False
+['N_RIMMIT']	NOUN	5	H	obligatory	weaken	front	False	None	False	False
+['N_RIMPI']	NOUN	7	H	False	weaken	front	False	None	False	False
+['N_RINNET']	NOUN	44	J	False	strengthen	front	False	None	False	False
+['N_RINTEET']	NOUN	48	J	obligatory	strengthen	front	False	None	False	False
+['N_RIPE']	NOUN	48	B	False	strengthen	front	False	None	False	False
+['N_RIPSET']	NOUN	7	False	obligatory	weaken	front	False	None	False	False
+['N_RIUTAT']	NOUN	9	C	obligatory	weaken	back	False	None	False	False
+['N_ROHTIMET']	NOUN	33	F	obligatory	strengthen	back	False	None	False	False
+['N_ROITOT']	NOUN	1	C	obligatory	weaken	back	False	None	False	False
+['N_ROMPAAT']	NOUN	41	H	obligatory	strengthen	back	False	None	False	False
+['N_ROSÉ']	NOUN	21	False	False	weaken	back	e	None	False	False
+['N_ROSÉ']	NOUN	21	False	False	weaken	back	E	None	False	False
+['N_ROSÉ']	NOUN	21	False	False	weaken	back	é	None	False	False
+['N_ROTAT']	NOUN	10	C	obligatory	weaken	back	False	None	False	False
+['N_ROTTA']	NOUN	10	C	False	weaken	back	a	None	False	False
+['N_RUIPELO']	NOUN	2	False	False	weaken	back	False	None	False	False
+['N_RUIS']	NOUN	41	D	False	strengthen	back	False	None	False	False
+['N_RUMPU']	NOUN	1	H	False	weaken	back	False	None	False	False
+['N_RUNKO']	NOUN	1	G	False	weaken	back	False	None	False	False
+['N_RUOKO']	NOUN	1	D	False	weaken	back	False	None	False	False
+['N_RUOPPAAT']	NOUN	41	B	obligatory	strengthen	back	False	None	False	False
+['N_RUUHI']	NOUN	24	False	False	weaken	back	False	None	False	False
+['N_RUUHI']	NOUN	26	False	False	weaken	back	False	None	False	False
+['N_RUUMIS']	NOUN	41	False	False	strengthen	back	False	None	False	False
+['N_RUUVI']	NOUN	5	False	False	weaken	back	False	None	False	False
+['N_RYNNÄS']	NOUN	41	J	False	strengthen	front	False	None	False	False
+['N_RYNTTYYT']	NOUN	41	C	obligatory	strengthen	front	False	None	False	False
+['N_RYNTÄÄT']	NOUN	41	J	obligatory	strengthen	front	False	None	False	False
+['N_RYPÄS']	NOUN	41	B	False	strengthen	front	False	None	False	False
+['N_RYYPPY']	NOUN	1	B	False	weaken	front	False	None	False	False
+['N_RÄJÄYTYS']	NOUN	39	False	False	strengthen	front	False	None	False	False
+['N_RÄMEET']	NOUN	48	False	obligatory	strengthen	front	False	None	False	False
+['N_RÄMEÄT']	NOUN	15	False	obligatory	weaken	front	False	None	False	False
+['N_RÄMIÄT']	NOUN	12	False	obligatory	weaken	front	False	None	False	False
+['N_SAAPAS']	NOUN	41	B	False	strengthen	back	False	None	False	False
+['N_SAARET']	NOUN	24	False	obligatory	weaken	back	False	None	False	False
+['N_SAARET']	NOUN	26	False	obligatory	weaken	back	False	None	False	False
+['N_SAKSET']	NOUN	7	False	obligatory	weaken	back	False	None	False	False
+['N_SALONTEET']	NOUN	48	J	obligatory	strengthen	back	False	None	False	False
+['N_SALPA']	NOUN	9	E	False	weaken	back	a	None	False	False
+['N_SAMMALET']	NOUN	49	False	obligatory	strengthen	back	False	None	False	False
+['N_SAMPI']	NOUN	7	H	False	weaken	back	False	None	False	False
+['N_SAMPO']	NOUN	1	H	False	weaken	back	False	None	False	False
+['N_SEIKKAILU']	NOUN	2	False	False	weaken	back	False	None	False	False
+['N_SEIVÄS']	NOUN	41	E	False	strengthen	front	False	None	False	False
+['N_SELENE']	NOUN	2	False	False	weaken	front	False	None	False	False
+['N_SELJÄT']	NOUN	10	L	obligatory	weaken	front	False	None	False	False
+['N_SELKÄ']	NOUN	10	L	False	weaken	front	ä	None	False	False
+['N_SEPPÄ']	NOUN	10	B	False	weaken	front	ä	None	False	False
+['N_SERGEJ']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_SERGEJ']	NOUN	22	False	False	weaken	front	False	None	False	False
+['N_SERKUKSET']	NOUN	39	False	obligatory	strengthen	back	False	None	False	False
+['N_SHOW']	NOUN	22	False	False	weaken	back	False	None	False	False
+['N_SHOW']	NOUN	22	False	False	weaken	back	u	None	False	False
+['N_SIEMEN']	NOUN	32	False	False	strengthen	front	False	None	False	False
+['N_SIIRTO']	NOUN	1	K	False	weaken	back	False	None	False	False
+['N_SIIVILÄ']	NOUN	13	False	False	weaken	front	ä	None	False	False
+['N_SILAKAT']	NOUN	14	A	obligatory	weaken	back	False	None	False	False
+['N_SILMÄKKEET']	NOUN	48	A	obligatory	strengthen	front	False	None	False	False
+['N_SISÄLTÖ']	NOUN	1	I	False	weaken	front	False	None	False	False
+['N_SIUNAAMATTOMAT']	NOUN	34	C	obligatory	strengthen	back	False	None	False	False
+['N_SIVELLIN']	NOUN	33	I	False	strengthen	front	False	None	False	False
+['N_SIVISTYNYT']	NOUN	47	False	False	strengthen	front	y	None	False	False
+['N_SKEITTI']	NOUN	5	C	False	weaken	front	False	None	False	False
+['N_SOINTI']	NOUN	5	J	False	weaken	back	False	None	False	False
+['N_SOITTAJA']	NOUN	10	False	False	weaken	back	a	None	False	False
+['N_SOKEA']	NOUN	15	False	False	weaken	back	a	None	False	False
+['N_SOTA']	NOUN	10	F	False	weaken	back	a	None	False	False
+['N_STADION']	NOUN	6	False	False	weaken	back	False	None	False	False
+['N_SUHTEET']	NOUN	48	F	obligatory	strengthen	back	False	None	False	False
+['N_SUKAT']	NOUN	10	A	obligatory	weaken	back	False	None	False	False
+['N_SUODATIN']	NOUN	33	C	False	strengthen	back	False	None	False	False
+['N_SUOT']	NOUN	19	False	obligatory	weaken	back	False	None	False	False
+['N_SYLI']	NOUN	23	False	False	weaken	front	False	None	False	False
+['N_SYLTÄ']	NOUN	10	I	False	weaken	front	ä	None	False	False
+['N_SYNNYTTIMET']	NOUN	33	C	obligatory	strengthen	front	False	None	False	False
+['N_SYÖMINGIT']	NOUN	5	G	obligatory	weaken	front	False	None	False	False
+['N_SÄEN']	NOUN	49	D	False	strengthen	front	False	None	False	False
+['N_SÄNKY']	NOUN	1	G	False	weaken	front	False	None	False	False
+['N_SÄRKÄT']	NOUN	10	A	obligatory	weaken	front	False	None	False	False
+['N_SÄRVIN']	NOUN	33	E	False	strengthen	front	False	None	False	False
+['N_SÄÄDIN']	NOUN	33	F	False	strengthen	front	False	None	False	False
+['N_SÄÄNNÖT']	NOUN	1	J	obligatory	weaken	front	False	None	False	False
+['N_SÄÄRET']	NOUN	26	False	obligatory	weaken	front	False	None	False	False
+['N_TAIMI']	NOUN	25	False	False	weaken	back	False	None	False	False
+['N_TAIVAL']	NOUN	49	E	False	strengthen	back	False	None	False	False
+['N_TALKOOT']	NOUN	17	False	obligatory	weaken	back	False	None	False	False
+['N_TALO']	NOUN	1	False	False	weaken	back	False	None	False	False
+['N_TANHUA']	NOUN	15	False	False	weaken	back	a	None	False	False
+['N_TARPEET']	NOUN	48	E	obligatory	strengthen	back	False	None	False	False
+['N_TARVE']	NOUN	48	E	False	strengthen	back	False	None	False	False
+['N_TAUDIT']	NOUN	5	F	obligatory	weaken	back	False	None	False	False
+['N_TAUTI']	NOUN	5	F	False	weaken	back	False	None	False	False
+['N_TAVAT']	NOUN	9	E	obligatory	weaken	back	False	None	False	False
+['N_TEE']	NOUN	18	False	False	weaken	front	e	None	False	False
+['N_TEHDAS']	NOUN	41	F	False	strengthen	back	False	None	False	False
+['N_TEHTAAT']	NOUN	41	F	obligatory	strengthen	back	False	None	False	False
+['N_TEKO']	NOUN	1	D	False	weaken	back	False	None	False	False
+['N_TIENOO']	NOUN	17	False	False	weaken	back	o	None	False	False
+['N_TIE']	NOUN	19	False	False	weaken	front	False	None	False	False
+['N_TIETEET']	NOUN	48	F	obligatory	strengthen	front	False	None	False	False
+['N_TIET']	NOUN	19	False	obligatory	weaken	front	False	None	False	False
+['N_TIKKAAT']	NOUN	41	A	obligatory	strengthen	back	False	None	False	False
+['N_TIKKAAT']	NOUN	41	D	obligatory	strengthen	back	False	None	False	False
+['N_TIKKU']	NOUN	1	A	False	weaken	back	False	None	False	False
+['N_TIPPA']	NOUN	9	B	False	weaken	back	a	None	False	False
+['N_TOIMET']	NOUN	25	False	obligatory	weaken	back	False	None	False	False
+['N_TOKEE']	NOUN	17	False	False	weaken	back	e	None	False	False
+['N_TONGIT']	NOUN	5	G	obligatory	weaken	back	False	None	False	False
+['N_TORTTU']	NOUN	1	C	False	weaken	back	False	None	False	False
+['N_TOULAT']	NOUN	40	False	False	strengthen	back	False	None	False	False
+['N_TRIKOO']	NOUN	20	False	False	weaken	back	o	None	False	False
+['N_TUHANNES']	NOUN	45	False	False	strengthen	back	False	None	False	False
+['N_TULI']	NOUN	23	False	False	weaken	back	False	None	False	False
+['N_TUNNIT']	NOUN	5	J	obligatory	weaken	back	False	None	False	False
+['N_TUNTO']	NOUN	1	J	False	weaken	back	False	None	False	False
+['N_TUOMIO']	NOUN	3	False	False	weaken	back	False	None	False	False
+['N_TYPPI']	NOUN	7	B	False	weaken	front	False	None	False	False
+['N_TYTÄR']	NOUN	32	C	False	strengthen	front	False	None	False	False
+['N_TYTÖT']	NOUN	1	C	obligatory	weaken	front	False	None	False	False
+['N_TYYLI']	NOUN	5	False	False	weaken	front	False	None	False	False
+['N_TYYPPI']	NOUN	5	B	False	weaken	front	False	None	False	False
+['N_TYÖ']	NOUN	19	False	False	weaken	front	False	None	False	False
+['N_TYÖT']	NOUN	19	False	obligatory	weaken	front	False	None	False	False
+['N_TYÖTTÖMÄT']	NOUN	34	C	obligatory	strengthen	front	False	None	False	False
+['N_TÖLPÄKÖT']	NOUN	4	A	obligatory	weaken	front	False	None	False	False
+['N_TÖLPÄT']	NOUN	10	B	obligatory	weaken	front	False	None	False	False
+['N_TÖRPPÖ']	NOUN	1	B	False	weaken	front	False	None	False	False
+['N_UDAR']	NOUN	49	F	False	strengthen	back	False	None	False	False
+['N_UKKO']	NOUN	1	A	False	weaken	back	False	None	False	False
+['N_UKSI']	NOUN	29	False	False	weaken	back	False	None	False	False
+['N_ULAPPA']	NOUN	14	B	False	weaken	back	a	None	False	False
+['NUM_ENSIMMÄINEN']	NUMERAL	38	False	False	strengthen	front	False	None	False	False
+['NUM_KAHDEKSAN']	NUMERAL	10	False	False	weaken	back	False	None	False	False
+['NUM_KAKSI']	NUMERAL	31	False	False	weaken	back	False	None	False	False
+['NUM_KOLMAS']	NUMERAL	45	False	False	strengthen	back	False	None	False	False
+['NUM_KOLME']	NUMERAL	1008	False	False	weaken	back	False	None	False	False
+['NUM_KUUSI']	NUMERAL	27	False	False	weaken	back	False	None	False	False
+['NUM_KYMMENEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
+['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	back	False	None	False	False
+['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	front	False	None	False	False
+['NUM_MILJARDI']	NUMERAL	6	False	False	weaken	back	False	None	False	False
+['NUM_MILJOONA']	NUMERAL	10	False	False	weaken	back	a	None	False	False
+['NUM_NELJÄ']	NUMERAL	10	False	False	weaken	front	ä	None	False	False
+['NUM_NELJÄS']	NUMERAL	45	False	False	strengthen	front	False	None	False	False
+['NUM_SATA']	NUMERAL	9	F	False	weaken	back	a	None	False	False
+['NUM_TOINEN']	NUMERAL	38	False	False	strengthen	back	False	None	False	False
+['NUM_TUHAT']	NUMERAL	46	False	False	strengthen	back	False	None	False	False
+['NUM_VIISI']	NUMERAL	27	False	False	weaken	front	False	None	False	False
+['NUM_YHDEKSÄN']	NUMERAL	10	False	False	weaken	front	False	None	False	False
+['NUM_YKSI']	NUMERAL	31	False	False	weaken	front	False	None	False	False
+['N_UROS']	NOUN	41	False	False	strengthen	back	False	None	False	False
+['N_VAADIN']	NOUN	33	F	False	strengthen	back	False	None	False	False
+['N_VAAKA']	NOUN	9	D	False	weaken	back	a	None	False	False
+['N_VAATTEET']	NOUN	48	C	obligatory	strengthen	back	False	None	False	False
+['N_VAINAA']	NOUN	17	False	False	weaken	back	a	None	False	False
+['N_VAKUUTUS']	NOUN	39	False	False	strengthen	back	False	None	False	False
+['N_VALJAAT']	NOUN	41	False	obligatory	strengthen	back	False	None	False	False
+['N_VALLAT']	NOUN	9	I	obligatory	weaken	back	False	None	False	False
+['N_VALTA']	NOUN	9	I	False	weaken	back	a	None	False	False
+['N_VANHEMMAT']	NOUN	16	H	obligatory	weaken	back	False	None	False	False
+['N_VANHEMPI']	NOUN	16	H	False	weaken	back	False	None	False	False
+['N_VANKI']	NOUN	5	G	False	weaken	back	False	None	False	False
+['N_VANTUS']	NOUN	41	C	False	strengthen	back	False	None	False	False
+['N_VARAS']	NOUN	41	D	False	strengthen	back	False	None	False	False
+['N_VARAT']	NOUN	9	False	obligatory	weaken	back	False	None	False	False
+['N_VARPAAT']	NOUN	41	E	obligatory	strengthen	back	False	None	False	False
+['N_VARSI']	NOUN	28	False	False	weaken	back	False	None	False	False
+['N_VARSI']	NOUN	28	K	False	weaken	back	False	None	False	False
+['N_VARVAS']	NOUN	41	E	False	strengthen	back	False	None	False	False
+['N_VASEN']	NOUN	37	False	False	strengthen	back	False	None	False	False
+['N_VEHKEILY']	NOUN	2	False	False	weaken	front	False	None	False	False
+['N_VEITSI']	NOUN	30	False	False	weaken	front	False	None	False	False
+['N_VELI']	NOUN	1007	False	False	weaken	front	False	None	False	False
+['N_VELJET']	NOUN	1007	L	obligatory	weaken	back	False	None	False	False
+['N_VELJET']	NOUN	1007	L	obligatory	weaken	front	False	None	False	False
+['N_VEMMEL']	NOUN	49	H	False	strengthen	front	False	None	False	False
+['N_VERI']	NOUN	1026	False	False	weaken	front	False	None	False	False
+['N_VERSAILLES']	NOUN	22	False	False	weaken	back	i	None	False	False
+['N_VETIMET']	NOUN	33	F	obligatory	strengthen	front	False	None	False	False
+['N_VETO']	NOUN	1	F	False	weaken	back	False	None	False	False
+['N_VETY']	NOUN	1	F	False	weaken	front	False	None	False	False
+['N_VIENTI']	NOUN	5	J	False	weaken	front	False	None	False	False
+['N_VIHKIÄISET']	NOUN	38	False	obligatory	strengthen	front	False	None	False	False
+['N_VIIRRET']	NOUN	44	K	False	strengthen	front	False	None	False	False
+['N_VIIS']	NOUN	27	False	False	weaken	front	False	None	False	False
+['N_VIIVE']	NOUN	48	E	False	strengthen	front	False	None	False	False
+['N_VIKA']	NOUN	9	D	False	weaken	back	a	None	False	False
+['N_VINKU']	NOUN	1	G	False	weaken	back	False	None	False	False
+['N_VIRRET']	NOUN	28	False	obligatory	weaken	front	False	None	False	False
+['N_VIRSI']	NOUN	28	False	False	weaken	front	False	None	False	False
+['N_VIRSI']	NOUN	28	K	False	weaken	front	False	None	False	False
+['N_VODĂ']	NOUN	10	False	False	weaken	back	False	None	False	False
+['N_VODĂ']	NOUN	10	False	False	weaken	front	False	None	False	False
+['N_VUODET']	NOUN	27	False	obligatory	weaken	back	False	None	False	False
+['N_VUOKA']	NOUN	10	D	False	weaken	back	a	None	False	False
+['N_VUOLLE']	NOUN	48	I	False	strengthen	back	False	None	False	False
+['N_VUOLLET']	NOUN	44	I	False	strengthen	back	False	None	False	False
+['N_VUO']	NOUN	19	False	False	weaken	back	False	None	False	False
+['N_VUOSITUHAT']	NOUN	46	False	False	strengthen	back	False	None	False	False
+['N_VÄRTÖ']	NOUN	1	K	False	weaken	front	False	None	False	False
+['N_YHTIÖT']	NOUN	3	False	obligatory	weaken	front	False	None	False	False
+['N_YKSIKKÖ']	NOUN	4	A	False	weaken	front	False	None	False	False
+['N_YLÄNKÖ']	NOUN	1	G	False	weaken	front	False	None	False	False
+['N_YLÖÖ']	NOUN	17	False	False	weaken	front	ö	None	False	False
+['N_YMPÄRYSTÄ']	NOUN	9	False	False	weaken	front	ä	None	False	False
+['N_YRITTÄ']	NOUN	9	C	False	weaken	front	ä	None	False	False
+['N_YSTÄVYKSET']	NOUN	39	False	obligatory	strengthen	front	False	None	False	False
+['N_YÖKKÖ']	NOUN	1	A	False	weaken	front	False	None	False	False
+['N_ZEN']	NOUN	5	False	False	weaken	front	False	None	False	False
+['N_ZOMBIE']	NOUN	3	False	False	weaken	back	False	None	False	False
+['N_ÄYRÄS']	NOUN	41	False	False	strengthen	front	False	None	False	False
+['PCLE_ALLE']	PARTICLE	99	False	False	False	back	False	None	True	True
+['PCLE_IKINÄ']	PARTICLE	99	False	False	False	front	False	None	False	True
+['PCLE_KOTONA']	PARTICLE	99	False	False	False	back	False	None	True	True
+['PCLE_LIKI']	PARTICLE	99	False	False	False	back	False	None	False	False
+['PCLE_LISÄKSI']	PARTICLE	99	False	False	False	front	False	None	True	True
+['PCLE_NOPEASTI']	PARTICLE	99	False	False	False	back	False	None	False	True
+['PCLE_NÄKYVIIN']	PARTICLE	99	False	False	False	back	False	None	True	True
+['PCLE_TYHMÄSTI']	PARTICLE	99	False	False	False	front	False	None	False	True
+['PCLE_VALTAAN']	PARTICLE	99	False	False	False	back	False	None	True	True
+['PCLE_VUOKSI']	PARTICLE	99	False	False	False	back	False	None	True	True
+['PCLE_YLLE']	PARTICLE	99	False	False	False	front	False	None	True	True
+['PRON_AINOA']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_ERÄS']	PRONOUN	41	False	False	strengthen	front	False	None	False	False
+['PRON_HÄN']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_IKINEN']	PRONOUN	38	False	False	strengthen	front	False	None	False	False
+['PRON_ITSE']	PRONOUN	8	False	False	weaken	front	False	None	False	False
+['PRON_JOKAINEN']	PRONOUN	38	False	False	strengthen	back	False	None	False	False
+['PRON_JOKA']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_JOKA']	PRONOUN	1101	False	False	weaken	back	False	None	False	False
+['PRON_JOKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_JOKU']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_JOMPIKUMPI']	PRONOUN	16	H	False	weaken	back	False	None	False	False
+['PRON_KAIKKI']	PRONOUN	7	A	False	weaken	back	False	None	False	False
+['PRON_KUKAAN']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_KUKA']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_KUKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_KUMPIKAAN']	PRONOUN	16	False	False	weaken	back	False	None	False	False
+['PRON_KUMPIKIN']	PRONOUN	16	False	False	weaken	back	False	None	False	False
+['PRON_KUMPI']	PRONOUN	16	H	False	weaken	back	False	None	False	False
+['PRON_LAINEN']	PRONOUN	38	False	False	strengthen	back	False	None	False	False
+['PRON_ME']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MIE']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MIKIN']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MIKÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MIKÄ']	PRONOUN	1101	False	False	weaken	front	False	None	False	False
+['PRON_MIKÄÄN']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MINÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MISSÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MISSÄÄN']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MOLEMMAT']	PRONOUN	16	H	obligatory	weaken	back	False	None	False	False
+['PRON_MONES']	PRONOUN	45	False	False	strengthen	back	False	None	False	False
+['PRON_MONIAS']	PRONOUN	41	False	False	strengthen	back	False	None	False	False
+['PRON_MONI']	PRONOUN	23	False	False	weaken	back	False	None	False	False
+['PRON_MUUAN']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_MUU']	PRONOUN	18	False	False	weaken	back	u	None	False	False
+['PRON_MUUTAMA']	PRONOUN	10	False	False	weaken	back	a	None	False	False
+['PRON_MÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_NE']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_NOI']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_NUO']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_NÄMÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_SAMA']	PRONOUN	9	False	False	weaken	back	a	None	False	False
+['PRON_SE']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_TOINEN']	PRONOUN	38	False	False	strengthen	back	False	None	False	False
+['PRON_TOI']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_TUO']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_TÄMÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_USEAMPI']	PRONOUN	16	H	False	weaken	back	False	None	False	False
+['PRON_USEA']	PRONOUN	15	False	False	weaken	back	a	None	False	False
+['PRON_USEIMMAT']	PRONOUN	36	False	False	strengthen	back	False	None	False	False
+['PRON_YKSI']	PRONOUN	31	False	False	weaken	front	False	None	False	False
+['V_AALLOTA']	VERB	75	I	False	strengthen	back	False	None	False	False
+['V_AHNEHTIA']	VERB	61	F	False	weaken	back	False	None	False	False
+['V_AMPUA']	VERB	52	H	False	weaken	back	False	None	False	False
+['V_ARVATA']	VERB	73	False	False	strengthen	back	False	None	False	False
+['V_AUTTAA']	VERB	56	C	False	weaken	back	False	None	False	False
+['V_DIGATA']	VERB	73	O	False	strengthen	back	False	None	False	False
+['V_EHTIÄ']	VERB	61	F	False	weaken	front	False	None	False	False
+['V_EI']	VERB	1099	False	False	weaken	front	False	None	False	False
+['V_ENTÄÄ']	VERB	55	J	False	weaken	front	False	None	False	False
+['V_ERATA']	VERB	72	D	False	strengthen	back	False	None	False	False
+['V_HALAJAA']	VERB	78	False	False	weaken	back	False	None	False	False
+['V_HALJETA']	VERB	74	L	False	strengthen	back	False	None	False	False
+['V_HAPATA']	VERB	72	B	False	strengthen	back	False	None	False	False
+['V_HARPPOA']	VERB	52	B	False	weaken	back	False	None	False	False
+['V_HAUKKOA']	VERB	52	A	False	weaken	back	False	None	False	False
+['V_HELLITÄ']	VERB	75	I	False	strengthen	front	False	None	False	False
+['V_HELPOTA']	VERB	72	B	False	strengthen	back	False	None	False	False
+['V_HELÄJÄÄ']	VERB	77	False	False	weaken	front	False	None	False	False
+['V_HERMOTTUA']	VERB	52	C	False	weaken	back	False	None	False	False
+['V_HERÄTELLÄ']	VERB	67	C	False	strengthen	front	False	None	False	False
+['V_HIIPUA']	VERB	52	E	False	weaken	back	False	None	False	False
+['V_HIVENTÄÄ']	VERB	54	J	False	weaken	front	False	None	False	False
+['V_HUMALTUA']	VERB	52	I	False	weaken	back	False	None	False	False
+['V_HUONONTAA']	VERB	54	J	False	weaken	back	False	None	False	False
+['V_HUUTAA']	VERB	54	F	False	weaken	back	False	None	False	False
+['V_HYLJÄTÄ']	VERB	73	L	False	strengthen	front	False	None	False	False
+['V_HYLKIÄ']	VERB	61	L	False	weaken	front	False	None	False	False
+['V_HYPELLÄ']	VERB	67	B	False	strengthen	front	False	None	False	False
+['V_HYPPIÄ']	VERB	61	B	False	weaken	front	False	None	False	False
+['V_HÄVÄISTÄ']	VERB	66	E	False	strengthen	front	False	None	False	False
+['V_ILJETÄ']	VERB	72	L	False	strengthen	front	False	None	False	False
+['V_ILJETÄ']	VERB	74	L	False	strengthen	front	False	None	False	False
+['V_INNOTA']	VERB	74	J	False	strengthen	back	False	None	False	False
+['V_IRROTA']	VERB	74	K	False	strengthen	back	False	None	False	False
+['V_ISÄNNÖIDÄ']	VERB	68	False	False	strengthen	front	False	None	False	False
+['V_JAHDATA']	VERB	73	F	False	strengthen	back	False	None	False	False
+['V_JOUTAA']	VERB	55	F	False	weaken	back	False	None	False	False
+['V_JULJETA']	VERB	72	L	False	strengthen	back	False	None	False	False
+['V_JUOSTA']	VERB	70	False	False	strengthen	back	False	None	False	False
+['V_JYRKETÄ']	VERB	72	A	False	strengthen	front	False	None	False	False
+['V_JYRKETÄ']	VERB	72	D	False	strengthen	front	False	None	False	False
+['V_JÄÄDÄ']	VERB	63	False	False	strengthen	front	False	None	False	False
+['V_KAATAA']	VERB	57	F	False	weaken	back	False	None	False	False
+['V_KAIKOTA']	VERB	74	A	False	strengthen	back	False	None	False	False
+['V_KAIKOTA']	VERB	74	D	False	strengthen	back	False	None	False	False
+['V_KAIVATA']	VERB	73	E	False	strengthen	back	False	None	False	False
+['V_KALPPIA']	VERB	61	B	False	weaken	back	False	None	False	False
+['V_KAMMETA']	VERB	74	H	False	strengthen	back	False	None	False	False
+['V_KANTAA']	VERB	56	J	False	weaken	back	False	None	False	False
+['V_KARHETA']	VERB	72	False	False	strengthen	back	False	None	False	False
+['V_KARHUTA']	VERB	74	False	False	strengthen	back	False	None	False	False
+['V_KASVAA']	VERB	56	False	False	weaken	back	False	None	False	False
+['V_KAUNISTUA']	VERB	52	False	False	weaken	back	False	None	False	False
+['V_KAVETA']	VERB	72	E	False	strengthen	back	False	None	False	False
+['V_KERETÄ']	VERB	74	D	False	strengthen	front	False	None	False	False
+['V_KERITÄ']	VERB	75	D	False	strengthen	front	False	None	False	False
+['V_KIERTYÄ']	VERB	52	K	False	weaken	front	False	None	False	False
+['V_KIETOA']	VERB	52	F	False	weaken	back	False	None	False	False
+['V_KIHERRELLÄ']	VERB	67	K	False	strengthen	front	False	None	False	False
+['V_KIILLELLÄ']	VERB	67	I	False	strengthen	front	False	None	False	False
+['V_KIINNETÄ']	VERB	72	J	False	strengthen	front	False	None	False	False
+['V_KIITÄÄ']	VERB	55	F	False	weaken	front	False	None	False	False
+['V_KIRVOTA']	VERB	74	E	False	strengthen	back	False	None	False	False
+['V_KIVETTYÄ']	VERB	52	C	False	weaken	front	False	None	False	False
+['V_KIVISTÄÄ']	VERB	53	False	False	weaken	front	False	None	False	False
+['V_KIVUTA']	VERB	74	E	False	strengthen	back	False	None	False	False
+['V_KOMENNELLA']	VERB	67	J	False	strengthen	back	False	None	False	False
+['V_KONTIA']	VERB	61	J	False	weaken	back	False	None	False	False
+['V_KOPIOIDA']	VERB	62	False	False	strengthen	back	False	None	False	False
+['V_KORVETA']	VERB	74	E	False	strengthen	back	False	None	False	False
+['V_KOSIA']	VERB	61	False	False	weaken	back	False	None	False	False
+['V_KOUKUTA']	VERB	74	A	False	strengthen	back	False	None	False	False
+['V_KUHERTAA']	VERB	54	K	False	weaken	back	False	None	False	False
+['V_KUKKIA']	VERB	61	A	False	weaken	back	False	None	False	False
+['V_KUKKIA']	VERB	61	D	False	weaken	back	False	None	False	False
+['V_KUMMUTA']	VERB	74	H	False	strengthen	back	False	None	False	False
+['V_KUTEA']	VERB	58	F	False	weaken	back	False	None	False	False
+['V_KYNTÄÄ']	VERB	53	J	False	weaken	front	False	None	False	False
+['V_KYTKEÄ']	VERB	58	False	False	weaken	front	False	None	False	False
+['V_KÄRKKYÄ']	VERB	52	A	False	weaken	front	False	None	False	False
+['V_KÄYDÄ']	VERB	65	False	False	strengthen	front	False	None	False	False
+['V_KÄÄNNELLÄ']	VERB	67	J	False	strengthen	front	False	None	False	False
+['V_LASSOTA']	VERB	75	False	False	strengthen	back	False	None	False	False
+['V_LEIKELLÄ']	VERB	67	A	False	strengthen	front	False	None	False	False
+['V_LEPPYÄ']	VERB	52	B	False	weaken	front	False	None	False	False
+['V_LEUDOTA']	VERB	72	F	False	strengthen	back	False	None	False	False
+['V_LEVÄTÄ']	VERB	73	E	False	strengthen	front	False	None	False	False
+['V_LIIDUTA']	VERB	74	F	False	strengthen	back	False	None	False	False
+['V_LOBATA']	VERB	73	P	False	strengthen	back	False	None	False	False
+['V_LOITOTA']	VERB	72	C	False	strengthen	back	False	None	False	False
+['V_LOPPUA']	VERB	52	B	False	weaken	back	False	None	False	False
+['V_LOTOTA']	VERB	74	C	False	strengthen	back	False	None	False	False
+['V_LUNTATA']	VERB	73	C	False	strengthen	back	False	None	False	False
+['V_LUUTUTA']	VERB	74	C	False	strengthen	back	False	None	False	False
+['V_LÄHTEÄ']	VERB	60	F	False	weaken	front	False	None	False	False
+['V_LÄMMETÄ']	VERB	72	H	False	strengthen	front	False	None	False	False
+['V_LÄMMITÄ']	VERB	75	H	False	strengthen	front	False	None	False	False
+['V_LÄNTÄTÄ']	VERB	73	C	False	strengthen	front	False	None	False	False
+['V_MARISTA']	VERB	66	False	False	strengthen	back	False	None	False	False
+['V_MAUKUA']	VERB	52	D	False	weaken	back	False	None	False	False
+['V_MELLAKOIDA']	VERB	68	False	False	strengthen	back	False	None	False	False
+['V_MENNÄ']	VERB	67	False	False	strengthen	front	False	None	False	False
+['V_MERKITÄ']	VERB	69	False	False	strengthen	front	False	None	False	False
+['V_MIELTYÄ']	VERB	52	I	False	weaken	front	False	None	False	False
+['V_MIETTIÄ']	VERB	61	C	False	weaken	front	False	None	False	False
+['V_MOITTIA']	VERB	61	C	False	weaken	back	False	None	False	False
+['V_MOJAHTAA']	VERB	53	F	False	weaken	back	False	None	False	False
+['V_MORKATA']	VERB	73	A	False	strengthen	back	False	None	False	False
+['V_MORKATA']	VERB	73	D	False	strengthen	back	False	None	False	False
+['V_MULLATA']	VERB	73	I	False	strengthen	back	False	None	False	False
+['V_MUODOTA']	VERB	75	F	False	strengthen	back	False	None	False	False
+['V_MUTRISTAA']	VERB	53	False	False	weaken	back	False	None	False	False
+['V_MYYDÄ']	VERB	63	False	False	strengthen	front	False	None	False	False
+['V_MÄDÄTÄ']	VERB	72	F	False	strengthen	front	False	None	False	False
+['V_MÄIKYÄ']	VERB	52	D	False	weaken	front	False	None	False	False
+['V_MÖNKIÄ']	VERB	61	G	False	weaken	front	False	None	False	False
+['V_NAKELLA']	VERB	67	A	False	strengthen	back	False	None	False	False
+['V_NAKELLA']	VERB	67	D	False	strengthen	back	False	None	False	False
+['V_NAKERRELLA']	VERB	67	K	False	strengthen	back	False	None	False	False
+['V_NIUKETA']	VERB	72	A	False	strengthen	back	False	None	False	False
+['V_NIUKETA']	VERB	72	D	False	strengthen	back	False	None	False	False
+['V_NUOKKUA']	VERB	52	A	False	weaken	back	False	None	False	False
+['V_NUOKKUA']	VERB	52	D	False	weaken	back	False	None	False	False
+['V_NÄHDÄ']	VERB	71	False	False	strengthen	front	False	None	False	False
+['V_NÄPERTÄÄ']	VERB	54	K	False	weaken	front	False	None	False	False
+['V_OLLA']	VERB	1067	False	False	weaken	back	False	None	False	False
+['V_OMMELLA']	VERB	67	H	False	strengthen	back	False	None	False	False
+['V_ONKIA']	VERB	61	G	False	weaken	back	False	None	False	False
+['V_PALKITA']	VERB	69	False	False	strengthen	back	False	None	False	False
+['V_PANNA']	VERB	67	False	False	strengthen	back	False	None	False	False
+['V_PEITOTA']	VERB	75	C	False	strengthen	back	False	None	False	False
+['V_PENKOA']	VERB	52	G	False	weaken	back	False	None	False	False
+['V_PIDETÄ']	VERB	72	F	False	strengthen	front	False	None	False	False
+['V_PIERRÄ']	VERB	67	False	False	strengthen	front	False	None	False	False
+['V_PIESTÄ']	VERB	70	False	False	strengthen	front	False	None	False	False
+['V_PINGOTA']	VERB	74	G	False	strengthen	back	False	None	False	False
+['V_POIKETA']	VERB	74	A	False	strengthen	back	False	None	False	False
+['V_POIKETA']	VERB	74	D	False	strengthen	back	False	None	False	False
+['V_POLKEA']	VERB	58	L	False	weaken	back	False	None	False	False
+['V_PUKEA']	VERB	58	D	False	weaken	back	False	None	False	False
+['V_PULPUTA']	VERB	74	B	False	strengthen	back	False	None	False	False
+['V_PUNOA']	VERB	52	False	False	weaken	back	False	None	False	False
+['V_PURKAA']	VERB	53	D	False	weaken	back	False	None	False	False
+['V_PUSERTUA']	VERB	52	K	False	weaken	back	False	None	False	False
+['V_PYYTÄÄ']	VERB	54	F	False	weaken	front	False	None	False	False
+['V_PÄTEÄ']	VERB	58	F	False	weaken	front	False	None	False	False
+['V_RAAPIA']	VERB	61	E	False	weaken	back	False	None	False	False
+['V_RAIKAA']	VERB	78	False	False	weaken	back	False	None	False	False
+['V_RANGAISTA']	VERB	66	G	False	strengthen	back	False	None	False	False
+['V_REVETÄ']	VERB	74	E	False	strengthen	front	False	None	False	False
+['V_RIIPIÄ']	VERB	61	E	False	weaken	front	False	None	False	False
+['V_ROHTUA']	VERB	52	F	False	weaken	back	False	None	False	False
+['V_RYNNÄTÄ']	VERB	73	J	False	strengthen	front	False	None	False	False
+['V_RYPEÄ']	VERB	58	E	False	weaken	front	False	None	False	False
+['V_RYSKIÄ']	VERB	61	False	False	weaken	front	False	None	False	False
+['V_RYÖPYTÄ']	VERB	75	B	False	strengthen	front	False	None	False	False
+['V_RÄPSYTTÄÄ']	VERB	53	C	False	weaken	front	False	None	False	False
+['V_SAADA']	VERB	63	False	False	strengthen	back	False	None	False	False
+['V_SAARTAA']	VERB	57	K	False	weaken	back	False	None	False	False
+['V_SAMMOTA']	VERB	74	H	False	strengthen	back	False	None	False	False
+['V_SATAA']	VERB	56	F	False	weaken	back	False	None	False	False
+['V_SELVITÄ']	VERB	75	False	False	strengthen	front	False	None	False	False
+['V_SIEPATA']	VERB	73	B	False	strengthen	back	False	None	False	False
+['V_SILIYTYÄ']	VERB	52	F	False	weaken	front	False	None	False	False
+['V_SILPOA']	VERB	52	E	False	weaken	back	False	None	False	False
+['V_SIVALTAA']	VERB	54	I	False	weaken	back	False	None	False	False
+['V_SORTAA']	VERB	53	K	False	weaken	back	False	None	False	False
+['V_SOTKEA']	VERB	58	False	False	weaken	back	False	None	False	False
+['V_SULATELLA']	VERB	67	C	False	strengthen	back	False	None	False	False
+['V_SUPETA']	VERB	72	B	False	strengthen	back	False	None	False	False
+['V_SURRA']	VERB	67	False	False	strengthen	back	False	None	False	False
+['V_SUUNNATA']	VERB	73	J	False	strengthen	back	False	None	False	False
+['V_SYÖDÄ']	VERB	64	False	False	strengthen	front	False	None	False	False
+['V_SYÖPYÄ']	VERB	52	E	False	weaken	front	False	None	False	False
+['V_SÄILÖÄ']	VERB	52	False	False	weaken	front	False	None	False	False
+['V_SÄPSÄHDELLÄ']	VERB	67	F	False	strengthen	front	False	None	False	False
+['V_SÄRKEÄ']	VERB	58	L	False	weaken	front	False	None	False	False
+['V_SÖRKKIÄ']	VERB	61	A	False	weaken	front	False	None	False	False
+['V_SÖRKKIÄ']	VERB	61	D	False	weaken	front	False	None	False	False
+['V_TAITAA']	VERB	76	F	False	weaken	back	False	None	False	False
+['V_TAKOA']	VERB	52	D	False	weaken	back	False	None	False	False
+['V_TAPELLA']	VERB	67	B	False	strengthen	back	False	None	False	False
+['V_TAPPAA']	VERB	56	B	False	weaken	back	False	None	False	False
+['V_TEMMATA']	VERB	73	H	False	strengthen	back	False	None	False	False
+['V_TEMPOA']	VERB	52	H	False	weaken	back	False	None	False	False
+['V_TIETÄÄ']	VERB	76	F	False	weaken	front	False	None	False	False
+['V_TIPAHDELLA']	VERB	67	F	False	strengthen	back	False	None	False	False
+['V_TODETA']	VERB	74	F	False	strengthen	back	False	None	False	False
+['V_TUIKKAA']	VERB	78	A	False	weaken	back	False	None	False	False
+['V_TULLA']	VERB	67	False	False	strengthen	back	False	None	False	False
+['V_TUNGETA']	VERB	74	G	False	strengthen	back	False	None	False	False
+['V_TUNKEA']	VERB	58	G	False	weaken	back	False	None	False	False
+['V_TUNTEA']	VERB	59	J	False	weaken	back	False	None	False	False
+['V_TUODA']	VERB	64	False	False	strengthen	back	False	None	False	False
+['V_TYHJENTYÄ']	VERB	52	J	False	weaken	front	False	None	False	False
+['V_TYLPETÄ']	VERB	72	B	False	strengthen	front	False	None	False	False
+['V_TYMPIÄ']	VERB	61	H	False	weaken	front	False	None	False	False
+['V_TÄHDÄTÄ']	VERB	73	F	False	strengthen	front	False	None	False	False
+['V_TÄHYTÄ']	VERB	74	False	False	strengthen	front	False	None	False	False
+['V_ULOTA']	VERB	72	A	False	strengthen	back	False	None	False	False
+['V_ULOTA']	VERB	72	D	False	strengthen	back	False	None	False	False
+['V_UPOTA']	VERB	74	B	False	strengthen	back	False	None	False	False
+['V_VAAHDOTA']	VERB	74	F	False	strengthen	back	False	None	False	False
+['V_VAELLELLA']	VERB	67	I	False	strengthen	back	False	None	False	False
+['V_VAKAANTUA']	VERB	52	J	False	weaken	back	False	None	False	False
+['V_VARTOA']	VERB	52	K	False	weaken	back	False	None	False	False
+['V_VASTAILLA']	VERB	67	False	False	strengthen	back	False	None	False	False
+['V_VAVISTA']	VERB	66	E	False	strengthen	back	False	None	False	False
+['V_VERRATA']	VERB	73	K	False	strengthen	back	False	None	False	False
+['V_VIEDÄ']	VERB	64	False	False	strengthen	front	False	None	False	False
+['V_VIEROITTAA']	VERB	53	C	False	weaken	back	False	None	False	False
+['V_VIHELTÄÄ']	VERB	54	I	False	weaken	front	False	None	False	False
+['V_VIITTOA']	VERB	52	C	False	weaken	back	False	None	False	False
+['V_VINKUA']	VERB	52	G	False	weaken	back	False	None	False	False
+['V_VIPAJAA']	VERB	77	False	False	weaken	back	False	None	False	False
+['V_VIRKKAA']	VERB	56	A	False	weaken	back	False	None	False	False
+['V_VIRKKAA']	VERB	56	D	False	weaken	back	False	None	False	False
+['V_VONGATA']	VERB	73	G	False	strengthen	back	False	None	False	False
+['V_VYYHDETÄ']	VERB	74	F	False	strengthen	front	False	None	False	False
+['V_VÄHETÄ']	VERB	72	False	False	strengthen	front	False	None	False	False
+['V_VÄLPÄTÄ']	VERB	73	B	False	strengthen	front	False	None	False	False
+['V_VÄNGÄTÄ']	VERB	73	G	False	strengthen	front	False	None	False	False
+['V_YLTÄÄ']	VERB	55	I	False	weaken	front	False	None	False	False
+['V_YNNÄTÄ']	VERB	73	False	False	strengthen	front	False	None	False	False
+['V_YSKÄHTÄÄ']	VERB	53	F	False	weaken	front	False	None	False	False
+['V_YÖKÄTÄ']	VERB	73	A	False	strengthen	front	False	None	False	False
+['V_YÖKÄTÄ']	VERB	73	D	False	strengthen	front	False	None	False	False
+['V_ÄHKÄÄ']	VERB	78	False	False	weaken	front	False	None	False	False
+['V_ÄKSYILLÄ']	VERB	67	False	False	strengthen	front	False	None	False	False
+['V_ÄLLISTYÄ']	VERB	52	False	False	weaken	front	False	None	False	False
+['V_ÄNGETÄ']	VERB	74	G	False	strengthen	front	False	None	False	False
+['V_ÄRISTÄ']	VERB	66	False	False	strengthen	front	False	None	False	False
+['V_ÖYKKÄRÖIDÄ']	VERB	62	False	False	strengthen	front	False	None	False	False
