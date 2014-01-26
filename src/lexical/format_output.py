@@ -531,7 +531,7 @@ monodix_sdefs= {
         'abbr', 'prn', 'num', 'pn',
         'ij', 'dem', 'itg',
         'rel', 'reflex',
-        'rec',
+        'rec', 'part',
         'ind', 'card', 'ord',
         'cnjcoo', 'cnjsub', 'post', 'pr',
         'infa', 'infma', 'infe',
@@ -623,9 +623,10 @@ stuff2monodix =  {"Bc": "+",
         "X???": "",
         "NOUN": "n",
         "ADJECTIVE": "a", "QUALIFIER": "a",
-        "VERB": "v",
+        "VERB": "vblex",
         "ADVERB": "adv",
         "INTERJECTION": "ij",
+        "PARTICLE": "part",
         "PRONOUN": "prn",
         "NUMERAL": "num",
         "ADPOSITION": "post",
@@ -993,11 +994,15 @@ def format_monodix_pardef(fields):
         pardef += '</e>\n'
     return pardef
 
+
 def format_monodix_entry(wordmap):
     for cont in wordmap['new_paras']:
         e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
         e += '<p><l>' + wordmap['stub'].replace('|', '').replace('&', '&amp;')  +  '</l>'
-        e += '<r>' + wordmap['lemma'].replace('&', '&amp;') + '</r></p>'
+        e += '<r>'
+        e += wordmap['lemma'].replace('&', '&amp;')
+        e += format_monodix_s(wordmap['pos'])
+        e += '</r></p>'
         e += format_monodix_par(cont)
         e += '</e>'
     return e

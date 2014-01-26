@@ -38,7 +38,7 @@ FINNISC=\
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
-noinst_DATA=omorfi.lexc # omorfi.dix omorfi-sanalista.xml
+noinst_DATA=omorfi.lexc omorfi.dix omorfi-sanalista.xml
 
 
 joint.tsv: lexemes/lexemes.tsv $(JOINS)
