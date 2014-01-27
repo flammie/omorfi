@@ -50,15 +50,25 @@ V_EI	Nneg|Vact|Psg2|Qko|Udial	eks	#
 V_EI	Nneg|Vact|Psg3	ei	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Psg3|Qka	eikä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Psg3|Qko|Udial	eks	#
+V_EI	Nneg|Vact|Timp|Ppl1|Qka|Udial	elkäämmekä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl1|Qka	älkäämmekä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Ppl1|Udial	elkäämme	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl1	älkäämme	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Ppl2|Qka|Udial	elkääkä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl2|Qka	älkääkä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Ppl2|Udial	elkää	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl2	älkää	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Ppl3|Qka|Udial	elköötkä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl3|Qka	älköötkä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Ppl3|Udial	elkööt	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl3	älkööt	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Psg2|Qka|Udial	eläkä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg2|Qka	äläkä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Psg2|Udial	elä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg2	älä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Psg3|Qka|Udial	elköönkä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg3|Qka	älköönkä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Psg3|Udial	elköön	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg3	älköön	V_FRONT_CLIT_OPT
 V_ENTÄÄ	0	net	V_FRONT_PASSIVE	V_FRONT_TUPCP_0
 V_ENTÄÄ	0	ne	V_FRONT_PASSIVE_T
