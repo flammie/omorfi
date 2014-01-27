@@ -301,8 +301,9 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "Dmaisilla": "[DERIVATION=MAISILLA]",
         "Dminen": "[DERIVATION=MINEN]",
         "Dtu": "[DERIVATION=TU]",
-        "Dva": "[DERIVATION=TU]",
         "Dnut": "[DERIVATION=NUT]",
+        "Dva": "[DERIVATION=VA]",
+        "Dtava": "[DERIVATION=TAVA]",
         "Dma": "[DERIVATION=MA]",
         "Dmaton": "[DERIVATION=MATON]", 
         "Ds": "[DERIVATION=S]",
@@ -431,8 +432,9 @@ stuff2omor_short = {
         "Dmaisilla": "[DRV=MAISILLA]", 
         "Dminen": "[DRV=MINEN]",
         "Dtu": "[DRV=TU]", 
-        "Dva": "[DRV=TU]", 
         "Dnut": "[DRV=NUT]",
+        "Dva": "[DRV=VA]",
+        "Dtava": "[DRV=TAVA]",
         "Dma": "[DRV=MA]", 
         "Dmaton": "[DRV=MATON]",
         "Ds": "[DRV=S]", 
@@ -1032,6 +1034,17 @@ if __name__ == '__main__':
         elif not ftb3 in ftb3_multichars:
             print("There are conflicting formattings in here!", ftb3, 
                     "is not a valid defined ftb3 multichar_symbol!")
+            fail = True
+    for stuff, ftb3 in stuff2ftb3.items():
+        if len(ftb3) < 2:
+            continue
+        if not stuff in stuff2omor:
+            print("There are conflicting formattings in here!", stuff, 
+                    "has no mapping in omor!")
+            fail = True
+        if not stuff in stuff2omor_short:
+            print("There are conflicting formattings in here!", stuff, 
+                    "has no mapping in omor_short!")
             fail = True
     if fail:
         exit(1)
