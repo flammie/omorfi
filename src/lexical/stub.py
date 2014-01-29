@@ -168,6 +168,10 @@ def stub_all_ktn(wordmap):
                 wordmap = mangle_suffixes_or_die(wordmap, ['i'])
             elif wordmap['lemma'].endswith('ainoa'):
                 wordmap = mangle_suffixes_or_die(wordmap, ['a'])
+            elif wordmap['lemma'] == 'kumpikaan':
+                wordmap = mangle_suffixes_or_die(wordmap, ['pikaan'])
+            elif wordmap['lemma'].endswith('kumpikin'):
+                wordmap = mangle_suffixes_or_die(wordmap, ['pikin'])
             elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
                     'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:

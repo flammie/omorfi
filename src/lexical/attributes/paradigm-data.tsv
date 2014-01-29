@@ -911,8 +911,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_KUKAAN']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUKA']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
-['PRON_KUMPIKAAN']	PRONOUN	16	False	False	weaken	back	False	None	False	False
-['PRON_KUMPIKIN']	PRONOUN	16	False	False	weaken	back	False	None	False	False
+['PRON_KUMPIKAAN']	PRONOUN	101	False	False	weaken	back	False	None	False	False
+['PRON_KUMPIKIN']	PRONOUN	101	False	False	weaken	back	False	None	False	False
 ['PRON_KUMPI']	PRONOUN	16	H	False	weaken	back	False	None	False	False
 ['PRON_LAINEN']	PRONOUN	38	False	False	strengthen	back	False	None	False	False
 ['PRON_ME']	PRONOUN	101	False	False	False	front	False	None	False	False
