@@ -91,6 +91,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_OO', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
 ['ACRO_PUNTA', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
+['ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
 ['ACRO_PUNTA', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
 ['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	back	False	None	False	False
 ['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	front	False	None	False	False
@@ -827,6 +828,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_UROS']	NOUN	41	False	False	strengthen	back	False	None	False	False
 ['N_VAADIN']	NOUN	33	F	False	strengthen	back	False	None	False	False
 ['N_VAAKA']	NOUN	9	D	False	weaken	back	a	None	False	False
+['N_VAASAN']	NOUN	99	False	False	False	back	False	None	False	False
 ['N_VAATTEET']	NOUN	48	C	obligatory	strengthen	back	False	None	False	False
 ['N_VAINAA']	NOUN	17	False	False	weaken	back	a	None	False	False
 ['N_VAKUUTUS']	NOUN	39	False	False	strengthen	back	False	None	False	False
