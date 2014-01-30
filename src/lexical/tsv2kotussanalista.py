@@ -63,7 +63,6 @@ def main():
     ap.add_argument("--strip", action="store",
             metavar="STRIP", help="strip STRIP from fields before using")
 
-    
     args = ap.parse_args()
     # write header to XML file
     print('<?xml version="1.0" encoding="utf-8"?>', file=args.output)
