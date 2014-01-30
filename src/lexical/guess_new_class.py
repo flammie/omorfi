@@ -4661,7 +4661,7 @@ def guess_new_acro(wordmap):
         wordmap['new_paras'] = ['ACRO_SENTTI']
     elif wordmap['lemma'][-1] == '$':
         wordmap['new_paras'] = ['ACRO_DOLLARI']
-    elif wordmap['lemma'][-1] in ['£', '₤']:
+    elif wordmap['lemma'][-1] in ['£', '₤', '+']:
         wordmap['new_paras'] = ['ACRO_PUNTA']
     elif wordmap['lemma'][-1] in ['²', '³'] and wordmap['lemma'][-2] == 'm':
         wordmap['new_paras'] = ['ACRO_ÄKS']

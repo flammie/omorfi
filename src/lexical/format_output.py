@@ -89,7 +89,7 @@ omor_multichars = {
         '[PERSON=IMPERSONAL]',
         '[NEGATION=CON]' , '[SUBCAT=NEGATIONVERB]',
         '[VOICE=ACTIVE]', '[VOICE=PASSIVE]',
-        '[INFINITIVE=A]', '[INFINITIVE=E]', '[INFINITIVE=MA]',
+        '[INFINITIVE=A]', '[INFINITIVE=E]', '[INFINITIVE=MA]', '[INFINITIVE=MINEN]',
         '[DERIVATION=MINEN]', '[DERIVATION=MAISILLA]',
         '[PARTICIPLE=NUT]', '[PARTICIPLE=AGENT]', '[PARTICIPLE=VA]',
         '[PARTICIPLE=NEGATION]',
@@ -151,7 +151,7 @@ omor_short_multichars = {
         '[PRS=SG1]', '[PRS=SG2]', '[PRS=SG3]', 
         '[PRS=PL1]', '[PRS=PL2]', '[PRS=PL3]', '[PRS=PE4]',
         '[NEG=CON]' , '[SUBCAT=NEG]', '[VOICE=ACT]', '[VOICE=PSS]',
-        '[INF=A]', '[INF=E]', '[INF=MA]', 
+        '[INF=A]', '[INF=E]', '[INF=MA]', '[INF=MINEN]',
         '[DRV=MINEN]', '[DRV=MAISILLA]',
         '[PCP=NUT]', '[PCP=AGENT]', '[PCP=VA]', '[PCP=NEG]',
         '[DRV=NUT]', '[DRV=TU]', '[DRV=MA]', '[DRV=VA]', '[DRV=MATON]',
@@ -301,8 +301,9 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "Dmaisilla": "[DERIVATION=MAISILLA]",
         "Dminen": "[DERIVATION=MINEN]",
         "Dtu": "[DERIVATION=TU]",
-        "Dva": "[DERIVATION=TU]",
         "Dnut": "[DERIVATION=NUT]",
+        "Dva": "[DERIVATION=VA]",
+        "Dtava": "[DERIVATION=TAVA]",
         "Dma": "[DERIVATION=MA]",
         "Dmaton": "[DERIVATION=MATON]", 
         "Ds": "[DERIVATION=S]",
@@ -316,6 +317,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "Ia": "[INFINITIVE=A]",
         "Ie": "[INFINITIVE=E]",
         "Ima": "[INFINITIVE=MA]",
+        "Iminen": "[INFINITIVE=MINEN]",
         "Ncon": "[NEGATION=CON]",
         "Nneg": "[SUBCAT=NEGATIONVERB]", 
         "Npl": "[NUMBER=PLURAL]", 
@@ -430,8 +432,9 @@ stuff2omor_short = {
         "Dmaisilla": "[DRV=MAISILLA]", 
         "Dminen": "[DRV=MINEN]",
         "Dtu": "[DRV=TU]", 
-        "Dva": "[DRV=TU]", 
         "Dnut": "[DRV=NUT]",
+        "Dva": "[DRV=VA]",
+        "Dtava": "[DRV=TAVA]",
         "Dma": "[DRV=MA]", 
         "Dmaton": "[DRV=MATON]",
         "Ds": "[DRV=S]", 
@@ -445,6 +448,7 @@ stuff2omor_short = {
         "Ia": "[INF=A]", 
         "Ie": "[INF=E]", 
         "Ima": "[INF=MA]",
+        "Iminen": "[INF=MINEN]",
         "Ncon": "[NEG=CON]",
         "Nneg": "[SUBCAT=NEG]", 
         "Npl": "[NUM=PL]",
@@ -1034,6 +1038,17 @@ if __name__ == '__main__':
         elif not ftb3 in ftb3_multichars:
             print("There are conflicting formattings in here!", ftb3, 
                     "is not a valid defined ftb3 multichar_symbol!")
+            fail = True
+    for stuff, ftb3 in stuff2ftb3.items():
+        if len(ftb3) < 2:
+            continue
+        if not stuff in stuff2omor:
+            print("There are conflicting formattings in here!", stuff, 
+                    "has no mapping in omor!")
+            fail = True
+        if not stuff in stuff2omor_short:
+            print("There are conflicting formattings in here!", stuff, 
+                    "has no mapping in omor_short!")
             fail = True
     if fail:
         exit(1)
