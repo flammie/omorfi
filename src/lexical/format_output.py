@@ -927,10 +927,14 @@ def format_root_lexicon(format):
     return root
 
 def format_xml_kotus_sanalista(wordmap):
-    if wordmap['kotus_av']:
-        return ("<st><s>%(lemma)s</s><t><tn>%(kotus_tn)s</tn><av>%(kotus_av)s</av></t></st>" %(wordmap))
-    else:
-        return ("<st><s>%(lemma)s</s><t><tn>%(kotus_tn)s</tn></t></st>" %(wordmap))
+    kotus_xml = '    <st><s>' + wordmap['lemma'] + '</s>'
+    kotus_xml += '<t>'
+    if wordmap['kotus_tn'] != '0':
+        kotus_xml += '<tn>' + wordmap['kotus_tn'] + '</tn>'
+    if wordmap['kotus_av'] and wordmap['kotus_av'] != 'False':
+        kotus_xml += '<av>' + wordmap['kotus_av']) + '</av>'
+    kotus_xml += '</t></st>'
+    return kotus_xml
 
 def format_monodix_alphabet():
     """Finnish alphabet as in CLDR 24"""
