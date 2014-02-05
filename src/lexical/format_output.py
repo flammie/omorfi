@@ -662,6 +662,14 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
+def format_tag(stuff, format):
+    if format.startswith('omor') or format.startswith('ktnkav'):
+        return format_tag_omor(stuff, format)
+    elif format.startswith('ftb3'):
+        return format_tag_ftb3(stuff)
+    else:
+        print("Wrong format for generic tag formatting:", format, file=stderr)
+
 def format_tag_omor(stuff, format):
     if stuff == '0':
         return "0"
@@ -936,7 +944,7 @@ def format_xml_kotus_sanalista(wordmap):
     if wordmap['kotus_tn'] != '0':
         kotus_xml += '<tn>' + wordmap['kotus_tn'] + '</tn>'
     if wordmap['kotus_av'] and wordmap['kotus_av'] != 'False':
-        kotus_xml += '<av>' + wordmap['kotus_av']) + '</av>'
+        kotus_xml += '<av>' + wordmap['kotus_av'] + '</av>'
     kotus_xml += '</t></st>'
     return kotus_xml
 

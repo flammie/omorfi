@@ -38,8 +38,13 @@ FINNISC=\
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
-noinst_DATA=omorfi.lexc omorfi.dix omorfi-sanalista.xml
+noinst_DATA=omorfi.lexc omorfi.dix omorfi-sanalista.xml \
+			omorfi.reweight
 
+
+omorfi.reweight: serialise-reweighter.py format_output.py
+	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=$(TAG_FORMAT_PRECISE)\
+		-o $@
 
 joint.tsv: lexemes/lexemes.tsv $(JOINS)
 	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
