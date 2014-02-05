@@ -73,6 +73,10 @@ def main():
             word['kotus_av'] = False
         if args.verbose:
             print(word['kotus_av'])
+    if args.newpara:
+        word['new_paras'].append(args.newpara)
+        if args.verbose:
+            print(word['new_paras'])
     
     # this we can guess
     if args.verbose:
@@ -85,23 +89,24 @@ def main():
     if args.verbose:
         print("Resolved to", word['harmony'])
     if not word['pos']:
-        if args.verbose:
-            print("Guessing pos from ktn...")
-        if int(args.ktn) < 52:
-            word['pos'] = 'NOUN'
-        elif int(args.ktn) < 79:
-            word['pos'] = 'VERB'
+        if word['kotus_tn']:
+            if args.verbose:
+                print("Guessing pos from ktn...")
+            if word['kotus_tn'] < 52:
+                word['pos'] = 'NOUN'
+            elif word['kotus_tn'] < 79:
+                word['pos'] = 'VERB'
+            else:
+                word['pos'] = 'PARTICLE'
         else:
-            word['pos'] = 'PARTICLE'
-    else:
-        if args.verbose:
-            print("Guessing pos from lemma...")
-        if word['lemma'].endswith('aa') or word['lemma'].endswith('ää'):
-            word['pos'] = 'VERB'
-        elif word['lemma'].endswith('sti'):
-            word['pos'] = 'PARTICLE'
-        else:
-            word['pos'] = 'NOUN'
+            if args.verbose:
+                print("Guessing pos from lemma...")
+            if word['lemma'].endswith('aa') or word['lemma'].endswith('ää'):
+                word['pos'] = 'VERB'
+            elif word['lemma'].endswith('sti'):
+                word['pos'] = 'PARTICLE'
+            else:
+                word['pos'] = 'NOUN'
     if not word['new_paras']:
         if args.verbose:
             print("Guessing new para from ktn...")

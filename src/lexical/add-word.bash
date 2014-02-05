@@ -10,9 +10,9 @@ fi
 cp -v ${LEXFILE} ${LEXFILE}~
 
 case $2 in
-    [0-9]*-[A-Z]) python guess_missing.py --lemma=$1 --ktn=${2%-*} --kav=${2#*-} --output=${LEXFILE} --verbose;;
-    [0-9]*) python guess_missing.py --lemma=$1 --ktn=$2 --output=${LEXFILE} --verbose;;
-    [A-Z]*_*) python guess_missing.py --lemma=$1 --newpara=$2 --output=${LEXFILE} --verbose;;
+    [0-9]*-[A-Z]) python3 guess_missing.py --lemma=$1 --ktn=${2%-*} --kav=${2#*-} --output=${LEXFILE} --verbose;;
+    [0-9]*) python3 guess_missing.py --lemma=$1 --ktn=$2 --output=${LEXFILE} --verbose;;
+    [A-Z]*_*) python3 guess_missing.py --lemma=$1 --newpara=$2 --output=${LEXFILE} --verbose;;
 esac
 
 sort ${LEXFILE} | uniq > ${LEXFILE}~~

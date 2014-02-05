@@ -44376,6 +44376,7 @@ romaanitrilogia	['N_MAKKARA']	boundaries=romaani|trilogia
 romaanituotanto	['N_TUNTO']	boundaries=romaani|tuotanto
 romadurjuusto	['N_TALO']	boundaries=romadur|juusto
 romanian kieli	['N_HIIRI']	boundaries=romanian kieli
+romanikieli	['N_HIIRI']	boundaries=romani|kieli
 romanikulttuuri	['N_KANAALI']	boundaries=romani|kulttuuri
 romanimies	['N_MIES']	boundaries=romani|mies
 romaninainen	['N_AAKKOSTAMINEN']	boundaries=romani|nainen

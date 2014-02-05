@@ -5317,6 +5317,7 @@ romanialainen	['N_AAKKOSTAMINEN']	sem=country
 romanialainen	['N_AAKKOSTAMINEN']	sem=inhabitant
 Romania	['N_MAKKARA']	sem=country
 romania	['N_MAKKARA']	sem=language
+romanikieli	['N_HIIRI']	sem=language
 romani	['N_RUUVI']	sem=language
 rombo	['N_TALO']	sem=language
 RON	['ACRO_ÄKS']	sem=currency
