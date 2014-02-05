@@ -823,7 +823,7 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += '[SEGMENT=' + lexc_escape(wordmap['stub']) + ']'
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     # match WORD_ID= with epsilon, then stub and lemma might match
-    wordmap['stub'] = '0' + wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
+    wordmap['stub'] = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
@@ -848,7 +848,7 @@ def format_lexc_ftb3(wordmap, format):
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
     wordmap['stub'] = lexc_escape(wordmap['stub'])
-    wordmap['stub'] = wordmap['stub'].replace('|', '%-%0', 32).replace('_', '', 32)
+    wordmap['stub'] = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
@@ -857,7 +857,7 @@ def format_lexc_ftb3(wordmap, format):
 
 def format_lexc_apertium(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-    wordmap['analysis'] = wordmap['analysis'].replace('|', '+', 32).replace('_', '', 32)
+    wordmap['analysis'] = wordmap['analysis'].replace('|', '+').replace('_', '')
     if wordmap['is_suffix']:
         wordmap['analysis'] = "+" + wordmap['analysis']
     elif wordmap['is_prefix']:
@@ -914,7 +914,7 @@ def format_multichars_lexc(format):
 [NEWPARA=
         """
     multichars += """!! Following specials exist in all versions of omorfi
-    %-%0 {»} {%>}
+    {hyph?} {»} {%>}
     """
     multichars += version_id_easter_egg + '\n'
     return multichars
@@ -965,7 +965,7 @@ def format_monodix_sdefs():
 
 def format_monodix_l(s):
     if s != '0':
-        return s.replace(' ', '<b/>', 32).replace('%>', '').replace('%', '')
+        return s.replace(' ', '<b/>').replace('%>', '').replace('%', '')
     else:
         return ''
 
