@@ -75,6 +75,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_OO', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	back	False	None	False	False
 ['ACRO_OO', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	back	False	None	False	False
+['ACRO_OO', 'ACRO_LEHTI']	ACRONYM	7	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_LUSIKKA']	ACRONYM	14	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
 ['ACRO_OO']	ACRONYM	0	False	False	False	back	False	None	False	False
