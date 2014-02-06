@@ -8,7 +8,7 @@ def guess_new_class(wordmap):
     '''
     if len(wordmap['new_paras']) > 0:
         return wordmap
-    if not wordmap['kotus_tn']:
+    if wordmap['kotus_tn'] is None or wordmap['kotus_tn'] == '':
         return wordmap
     tn = int(wordmap['kotus_tn'])
     if not wordmap['pos']:

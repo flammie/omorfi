@@ -133,10 +133,12 @@ def main():
         wordmap = guess_new_class(wordmap)
         
         wordmap['extras'] = '\t'.join(fields[4:])
+        if wordmap['extras']:
+            wordmap['extras'] = '\t' + wordmap['extras']
         
         if args.verbose:
             print("Guessed new para: %(new_paras)r" %(wordmap))
-        print("%(lemma)s\t%(new_paras)r\t%(extras)s" %(wordmap), file=output)
+        print("%(lemma)s\t%(new_paras)r%(extras)s" %(wordmap), file=output)
 
     input.close()
     output.close()
