@@ -74,6 +74,7 @@ def main():
         quoting = csv.QUOTE_NONE
         quotechar = None
 
+    errors = False
     joinmap = dict()
     # read joins from file if any
     with open(args.join, 'r', newline='') as joins:
@@ -127,8 +128,10 @@ def main():
                             else:
                                 wordmap[k] = v
                 else:
-                    print("new para not in join data:", joinkey)
-                    exit(1)
+                    print("\033[93mMissing!\033[0m",
+                          "new para not in join data:", joinkey)
+                    errors = True
+                    continue
 
                 # Guess works in order
                 wordmap = guess_stem_features_ktn(wordmap)
@@ -144,6 +147,11 @@ def main():
                 wordmap = guess_bound_morphs(wordmap)
                 # print result
                 tsv_writer.writerow(wordmap)
+    if errors:
+        print("you must fix database integrity or hack the scripts",
+              "before continuing")
+        exit(1)
+
     exit()
 
 

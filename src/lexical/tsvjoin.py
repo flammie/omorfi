@@ -91,6 +91,7 @@ def main():
         if args.verbose:
             print("\n", entry_count, "entries in database")
     # join all join files (slow but more workable)
+    errors = False
     for join_filename in args.joinfilenames:
         if args.verbose:
             print("Reading joins from", join_filename)
@@ -120,9 +121,7 @@ def main():
                           join_on, "used by\033[91m", join_file.name,
                           "\033[0mline\033[91m", linecount, "\033[0min any of",
                           " ".join(args.infilenames), file=stderr)
-                    print("you must fix database integrity or hack the scripts",
-                            "before continuing")
-                    exit(1)
+                    errors = True
                 else:
                     this_entry = words[join_on]
                     this_entry += [join_parts[args.fields]]
@@ -130,7 +129,13 @@ def main():
                     joincount += 1
                 join_line = join_file.readline()
         if args.verbose:
-            print("\n", joincount, "joins in that table")
+            print(joincount, "joins in that table\n")
+
+    if errors:
+        print("you must fix database integrity or hack the scripts",
+              "before continuing")
+        exit(1)
+
     with open(args.outfilename, "w", newline='') as output:
         if args.verbose:
             print("Writing master database to", args.outfilename)
