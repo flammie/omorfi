@@ -108,7 +108,8 @@ def main():
                 join_on = ''
                 if len(join_parts) < args.fields:
                     print("Must have at least N separtors on each",
-                        "non-comment non-empty line of join; Skipping:", join_line,
+                        "non-comment non-empty line of join; Skipping:\n", 
+						args.separator.join(join_parts),
                         file=stderr)
                     continue
                 join_on = args.separator.join(join_parts[0:args.fields])
@@ -127,7 +128,6 @@ def main():
                     this_entry += [join_parts[args.fields]]
                     words[join_on] = this_entry
                     joincount += 1
-                join_line = join_file.readline()
         if args.verbose:
             print(joincount, "joins in that table\n")
 
