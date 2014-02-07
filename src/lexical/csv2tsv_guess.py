@@ -71,7 +71,7 @@ def expand_pos(wordmap):
 def main():
     ap = argparse.ArgumentParser(description=
             "Converts Omorfi's lexical data from old kotus-csv format to newpara-tsv "
-			"with possible attribute fields")
+            "with possible attribute fields")
 
     ap.add_argument("--input", "-i", metavar="INFILE",
             help="read data from INFILE")
@@ -107,9 +107,11 @@ def main():
         output = stdout
     
     for line in input:
+        if line.startswith('#') or line.find('<-HEADERS') >= 0:
+            continue
         fields = line.strip('"\n').split('","')
         if len(fields) < 4:
-            if len(fields > 0):
+            if len(fields) > 0:
                 if args.verbose:
                     print("Skipping too short line:", line, file=stderr)
             continue
