@@ -176,9 +176,14 @@ def stub_all_ktn(wordmap):
                     'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:
                 pass
-        elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] \
-                and wordmap['stub'].endswith('n'):
-            wordmap = mangle_suffixes_or_die(wordmap, ['n'])
+        elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] == 'optional':
+            if wordmap['stub'].endswith('n'):
+                wordmap = mangle_suffixes_or_die(wordmap, ['n'])  # näkyvii|n -mme
+            elif wordmap['stub'].endswith('i'):
+                wordmap = mangle_suffixes_or_die(wordmap, ['i'])  # vuoks|i -e-mme
+        elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] == 'obligatory':
+            if wordmap['stub'].endswith('n'):
+                wordmap['stub'] = wordmap['stub'][:-2]   # hyvillä|än -mme
         elif wordmap['kotus_tn'] in [0, 99, 999]:
             pass
         elif wordmap['kotus_tn'] == 1101:
