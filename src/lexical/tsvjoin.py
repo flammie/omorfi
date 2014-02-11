@@ -56,6 +56,8 @@ def main():
                 "do not have SEPs")
     ap.add_argument("--strip", "-S", action="store",
             metavar="STRIP", help="strip STRIP from fields before using")
+    ap.add_argument("--ignore-errors", "-I", action="store_true", default=False,
+            help="silently ignore references to missing entries in master file")
     args = ap.parse_args()
 
     if args.strip == '"' or args.strip == "'":
@@ -109,7 +111,7 @@ def main():
                 if len(join_parts) < args.fields:
                     print("Must have at least N separtors on each",
                         "non-comment non-empty line of join; Skipping:\n", 
-						args.separator.join(join_parts),
+                        args.separator.join(join_parts),
                         file=stderr)
                     continue
                 join_on = args.separator.join(join_parts[0:args.fields])
@@ -117,12 +119,13 @@ def main():
                     # skip header line
                     continue
                 if not join_on in words.keys():
-                    print("\033[93mMissing!\033[0m "
-                          "Could not find the key",
-                          join_on, "used by\033[91m", join_file.name,
-                          "\033[0mline\033[91m", linecount, "\033[0min any of",
-                          " ".join(args.infilenames), file=stderr)
-                    errors = True
+                    if not args.ignore_errors:
+                        print("\033[93mMissing!\033[0m "
+                              "Could not find the key",
+                              join_on, "used by\033[91m", join_file.name,
+                              "\033[0mline\033[91m", linecount, "\033[0min any of",
+                              " ".join(args.infilenames), file=stderr)
+                        errors = True
                 else:
                     this_entry = words[join_on]
                     this_entry += [join_parts[args.fields]]
