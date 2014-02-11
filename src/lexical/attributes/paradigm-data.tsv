@@ -895,7 +895,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PCLE_ISTUALLEEN']	PARTICLE	99	False	False	False	back	False	None	obligatory	True
 ['PCLE_KOTONA']	PARTICLE	99	False	False	False	back	False	None	optional	True
 ['PCLE_LEVÄLLEEN']	PARTICLE	99	False	False	False	front	False	None	obligatory	True
-['PCLE_LIKI']	PARTICLE	99	False	False	False	back	False	None	False	False
+['PCLE_VAAN']	PARTICLE	99	False	False	False	back	False	None	False	False
 ['PCLE_LISÄKSI']	PARTICLE	99	False	False	False	front	False	None	optional	True
 ['PCLE_NOPEASTI']	PARTICLE	99	False	False	False	back	False	None	False	True
 ['PCLE_NÄKYVIIN']	PARTICLE	99	False	False	False	back	False	None	optional	True
