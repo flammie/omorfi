@@ -44,7 +44,7 @@ omor_multichars = {
         '[WORD_ID=', '[SEGMENT=',
         '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[SUBCAT=PRONOUN]', '[SUBCAT=NUMERAL]',
-        '[SUBCAT=PROPER]', '[SUBCAT=ADVERB]', '[SUBCAT=ADPOSITION]',
+        '[SUBCAT=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
         '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTRATIVE]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROGATIVE]',
         '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEXIVE]',
@@ -125,7 +125,7 @@ omor_multichars = {
 omor_short_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[POS=PRONOUN]', '[POS=NUMERAL]',
-        '[SUBCAT=PROPER]', '[SUBCAT=ADVERB]', '[SUBCAT=ADPOSITION]',
+        '[SUBCAT=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
         '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTR]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROG]',
         '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEX]',
@@ -376,7 +376,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "NOUN": "[POS=NOUN]", 
         "PARTICLE": "[POS=PARTICLE]", 
         "VERB": "[POS=VERB]",
-        "ADVERB": "[SUBCAT=ADVERB]",
+        "ADVERB": "[POS=ADVERB]",
         "ADJECTIVE": "[SUBCAT=ADJECTIVE]",
         "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
         "COORDINATING": "[SUBCAT=COORDINATING]",
@@ -392,7 +392,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "SUFFIX": "[SUBCAT=SUFFIX]", 
         "PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
-        "ADPOSITION": "[SUBCAT=ADPOSITION]",
+        "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", 
         "QUANTOR": "[SUBCAT=QUANTOR]", 
         "PERSONAL": "[SUBCAT=PERSONAL]",
@@ -489,7 +489,7 @@ stuff2omor_short = {
         "NOUN": "[POS=NOUN]", 
         "PARTICLE": "[POS=PARTICLE]", 
         "VERB": "[POS=VERB]",
-        "ADVERB": "[SUBCAT=ADVERB]",
+        "ADVERB": "[POS=ADVERB]",
         "ADJECTIVE": "[POS=ADJECTIVE]",
         "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
         "COORDINATING": "[SUBCAT=COORD]",
@@ -505,7 +505,7 @@ stuff2omor_short = {
         "SUFFIX": "[SUBCAT=SUFFIX]", 
         "PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
-        "ADPOSITION": "[SUBCAT=ADPOSITION]",
+        "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", 
         "QUANTOR": "[SUBCAT=QUANTOR]", 
         "PERSONAL": "[SUBCAT=PERSONAL]",
@@ -782,7 +782,8 @@ def format_lexc_omor(wordmap, format):
     format string for canonical omor format for morphological analysis
     '''
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
-    wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
+    if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
+        wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
     #if wordmap['is_suffix']:
     #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
     if wordmap['is_prefix']:
@@ -790,16 +791,16 @@ def format_lexc_omor(wordmap, format):
         if wordmap['pos'] == 'ADJECTIVE':
             wordmap['analysis'] += format_tag_omor('Cpos', format)
 
-    if wordmap['subcat']:
-        subcats = wordmap['subcat'].split('|')
-        for subcat in subcats:
-            wordmap['analysis'] += format_tag_omor(subcat, format)
-    
     if wordmap['particle']:
         pclasses = wordmap['particle'].split('|')
         for pclass in pclasses:
             wordmap['analysis'] += format_tag_omor(pclass, format)
 
+    if wordmap['subcat']:
+        subcats = wordmap['subcat'].split('|')
+        for subcat in subcats:
+            wordmap['analysis'] += format_tag_omor(subcat, format)
+    
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_omor('PROPER', format)
         if '+propers' in format and wordmap['proper_noun_class']:
