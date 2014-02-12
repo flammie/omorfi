@@ -54,7 +54,7 @@ omor_multichars = {
         '[SUBCAT=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
         '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
         '[SUBCAT=ACRONYM]', 
-		'[POS=PUNCTUATION]', '[POS=SYMBOL]',
+        '[POS=PUNCTUATION]', '[POS=SYMBOL]',
         '[SUBCAT=SPACE]', '[SUBCAT=QUOTATION]', '[SUBCAT=BRACKET]',
         '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
         '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
@@ -119,7 +119,7 @@ omor_multichars = {
         '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
         '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]', 
-		'[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
+        '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
 
 omor_short_multichars = {
@@ -135,7 +135,7 @@ omor_short_multichars = {
         '[SUBCAT=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
         '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
         '[SUBCAT=ACRONYM]', 
-		'[POS=PUNCTUATION]', '[POS=SYMBOL]',
+        '[POS=PUNCTUATION]', '[POS=SYMBOL]',
         '[SUBCAT=SPACE]', '[SUBCAT=QUOTATION]', '[SUBCAT=BRACKET]',
         '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
         '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
@@ -176,7 +176,7 @@ omor_short_multichars = {
         '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
         '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
-		'[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
+        '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
 
 ktnkav_multichars = {
@@ -380,10 +380,10 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "ADVERB": "[POS=ADVERB]",
         "ADJECTIVE": "[SUBCAT=ADJECTIVE]",
         "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
-        "COORDINATING": "[SUBCAT=COORDINATING]",
+        "COORDINATING": "[CONJ=COORDINATING]",
         "COMPARATIVE": "[SUBCAT=COMPARATIVE]",
         "PRONOUN": "[SUBCAT=PRONOUN]",
-        "ADVERBIAL": "[SUBCAT=ADVERBIAL]",
+        "ADVERBIAL": "[CONJ=ADVERBIAL]",
         "NUMERAL": "[SUBCAT=NUMERAL]",
         "CARDINAL": "[SUBCAT=CARDINAL]", 
         "ORDINAL": "[SUBCAT=ORDINAL]",
@@ -415,9 +415,9 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
         "FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", 
         "GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
-		"COUNTRY": "[SEM=COUNTRY]",
-		"INHABITANT": "[SEM=INHABITANT]",
-		"LANGUAGE": "[SEM=LANGUAGE]",
+        "COUNTRY": "[SEM=COUNTRY]",
+        "INHABITANT": "[SEM=INHABITANT]",
+        "LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROP=MISC]"}
 
 stuff2omor_short = {
@@ -494,10 +494,10 @@ stuff2omor_short = {
         "ADVERB": "[POS=ADVERB]",
         "ADJECTIVE": "[POS=ADJECTIVE]",
         "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
-        "COORDINATING": "[SUBCAT=COORD]",
+        "COORDINATING": "[CONJ=COORD]",
         "COMPARATIVE": "[SUBCAT=COMPARATIVE]",
         "PRONOUN": "[POS=PRONOUN]",
-        "ADVERBIAL": "[SUBCAT=ADVERBIAL]",
+        "ADVERBIAL": "[CONJ=ADVERBIAL]",
         "NUMERAL": "[POS=NUMERAL]",
         "CARDINAL": "[SUBCAT=CARD]", 
         "ORDINAL": "[SUBCAT=ORD]",
@@ -529,9 +529,9 @@ stuff2omor_short = {
         "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
         "FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", 
         "GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
-		"COUNTRY": "[SEM=COUNTRY]",
-		"INHABITANT": "[SEM=INHABITANT]",
-		"LANGUAGE": "[SEM=LANGUAGE]",
+        "COUNTRY": "[SEM=COUNTRY]",
+        "INHABITANT": "[SEM=INHABITANT]",
+        "LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROP=MISC]"}
 
 monodix_sdefs= {
@@ -783,81 +783,81 @@ def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
-    wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
-    if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
-        wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
-    #if wordmap['is_suffix']:
-    #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
-    if wordmap['is_prefix']:
-        wordmap['analysis'] += format_tag_omor('PREFIX', format)
-        if wordmap['pos'] == 'ADJECTIVE':
-            wordmap['analysis'] += format_tag_omor('Cpos', format)
-
-    if wordmap['particle']:
-        pclasses = wordmap['particle'].split('|')
-        for pclass in pclasses:
-            wordmap['analysis'] += format_tag_omor(pclass, format)
-
-    if wordmap['subcat']:
-        subcats = wordmap['subcat'].split('|')
-        for subcat in subcats:
-            wordmap['analysis'] += format_tag_omor(subcat, format)
-    
-    if wordmap['is_proper']:
-        wordmap['analysis'] += format_tag_omor('PROPER', format)
-        if '+propers' in format and wordmap['proper_noun_class']:
-            for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_omor(prop, format)
-
-    if '+semantics' in format and wordmap['sem']:
-        for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += format_tag_omor(sem, format)
-
-    # XXX: use stuff2omor to ensure multichars but laziness
-    if format.startswith("ktnkav") and tn < 99:
-        wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
-        if wordmap['kotus_av']:
-            wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
-    elif format.startswith("newparas"):
-        wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
-
-    if wordmap['style']:
-        wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
-    
-    if not 'no-segments' in format:
-        wordmap['analysis'] += '[SEGMENT=' + lexc_escape(wordmap['stub']) + ']'
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
-    # match WORD_ID= with epsilon, then stub and lemma might match
-    wordmap['stub'] = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
     retvals = []
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
-                new_para)]
-    return "\n".join(retvals)
+    for subcats in (wordmap['subcat'] or ['']):
+        wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
+        if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
+            wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
+        #if wordmap['is_suffix']:
+        #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
+        if wordmap['is_prefix']:
+            wordmap['analysis'] += format_tag_omor('PREFIX', format)
+            if wordmap['pos'] == 'ADJECTIVE':
+                wordmap['analysis'] += format_tag_omor('Cpos', format)
 
+        if wordmap['particle']:
+            pclasses = wordmap['particle'].split('|')
+            for pclass in pclasses:
+                wordmap['analysis'] += format_tag_omor(pclass, format)
+
+        if subcats:
+            for subcat in subcats.split('|'):
+                wordmap['analysis'] += format_tag_omor(subcat, format)
+        
+        if wordmap['is_proper']:
+            wordmap['analysis'] += format_tag_omor('PROPER', format)
+            if '+propers' in format and wordmap['proper_noun_class']:
+                for prop in wordmap['proper_noun_class'].split(','):
+                    wordmap['analysis'] += format_tag_omor(prop, format)
+
+        if '+semantics' in format and wordmap['sem']:
+            for sem in wordmap['sem'].split(','):
+                wordmap['analysis'] += format_tag_omor(sem, format)
+
+        # XXX: use stuff2omor to ensure multichars but laziness
+        if format.startswith("ktnkav") and tn < 99:
+            wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
+            if wordmap['kotus_av']:
+                wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
+        elif format.startswith("newparas"):
+            wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
+
+        if wordmap['style']:
+            wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
+        
+        if not 'no-segments' in format:
+            wordmap['analysis'] += '[SEGMENT=' + lexc_escape(wordmap['stub']) + ']'
+        wordmap['stub'] = lexc_escape(wordmap['stub'])
+        # match WORD_ID= with epsilon, then stub and lemma might match
+        wordmap['stub'] = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
+        for new_para in wordmap['new_paras']:
+            retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
+                    new_para)]
+    return "\n".join(retvals)
+    
 def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
-    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
-    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
-        wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
-    elif wordmap['particle']:
-        pclasses = wordmap['particle'].split('|')
-        for pclass in pclasses:
-            wordmap['analysis'] += format_tag_ftb3(pclass)
-    if wordmap['subcat']:
-        subcats = wordmap['subcat'].split('|')
-        for subcat in subcats:
-            wordmap['analysis'] += format_tag_ftb3(subcat)
-    if wordmap['is_proper']:
-        wordmap['analysis'] += format_tag_ftb3('PROPER')
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
-    wordmap['stub'] = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
     retvals = []
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
-                new_para)]
+    for subcats in (wordmap['subcat'] or ['']):
+        wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
+        if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
+            wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
+        elif wordmap['particle']:
+            pclasses = wordmap['particle'].split('|')
+            for pclass in pclasses:
+                wordmap['analysis'] += format_tag_ftb3(pclass)
+        if subcats:
+            for subcat in subcats.split('|'):
+                wordmap['analysis'] += format_tag_ftb3(subcat)
+        if wordmap['is_proper']:
+            wordmap['analysis'] += format_tag_ftb3('PROPER')
+        wordmap['stub'] = lexc_escape(wordmap['stub'])
+        wordmap['stub'] = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
+        for new_para in wordmap['new_paras']:
+            retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
+                    new_para)]
     return "\n".join(retvals)
 
 def format_lexc_apertium(wordmap):

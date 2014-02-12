@@ -37,7 +37,7 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['stub'] = extra_fields[1]
                 wordmap['boundaries'] = extra_fields[1]
             elif extra_fields[0] == 'subcat':
-                wordmap['subcat'] = extra_fields[1].upper()
+                wordmap['subcat'].append(extra_fields[1].upper())
             elif extra_fields[0] == 'sem':
                 wordmap['sem'].append(extra_fields[1].upper())
             elif extra_fields[0] == 'particle':
