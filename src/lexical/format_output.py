@@ -783,6 +783,7 @@ def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
     retvals = []
     for subcats in (wordmap['subcat'] or ['']):
         wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
@@ -826,8 +827,7 @@ def format_lexc_omor(wordmap, format):
             wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
         
         if not 'no-segments' in format:
-            wordmap['analysis'] += '[SEGMENT=' + lexc_escape(wordmap['stub']) + ']'
-        wordmap['stub'] = lexc_escape(wordmap['stub'])
+            wordmap['analysis'] += '[SEGMENT=' + wordmap['stub'] + ']'
         # match WORD_ID= with epsilon, then stub and lemma might match
         wordmap['stub'] = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
         for new_para in wordmap['new_paras']:
@@ -839,6 +839,7 @@ def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
     retvals = []
     for subcats in (wordmap['subcat'] or ['']):
         wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
@@ -853,7 +854,6 @@ def format_lexc_ftb3(wordmap, format):
                 wordmap['analysis'] += format_tag_ftb3(subcat)
         if wordmap['is_proper']:
             wordmap['analysis'] += format_tag_ftb3('PROPER')
-        wordmap['stub'] = lexc_escape(wordmap['stub'])
         wordmap['stub'] = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
         for new_para in wordmap['new_paras']:
             retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], wordmap['stub'], 
