@@ -2176,7 +2176,6 @@ asemarakennus	['N_VAKUUTUS']	boundaries=asema|rakennus
 asemaravintola	['N_MAKKARA']	boundaries=asema|ravintola
 asemasota	['N_SOTA']	boundaries=asema|sota
 asemataso	['N_TALO']	boundaries=asema|taso
-asemesta	['PCLE_NOPEASTI']	boundaries=ase|mesta
 asemestari	['N_KANAALI']	boundaries=ase|mestari
 asemetalli	['N_RUUVI']	boundaries=ase|metalli
 asemosana	['N_KIRJA']	boundaries=asemo|sana
