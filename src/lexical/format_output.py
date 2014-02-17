@@ -44,7 +44,7 @@ omor_multichars = {
         '[WORD_ID=', '[SEGMENT=',
         '[SUBCAT=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[SUBCAT=PRONOUN]', '[SUBCAT=NUMERAL]',
-        '[SUBCAT=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
+        '[PROPER=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
         '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTRATIVE]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROGATIVE]',
         '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEXIVE]',
@@ -115,9 +115,9 @@ omor_multichars = {
         '[ALLO=ITTEN]', '[ALLO=IEN]', '[ALLO=IHIN]', '[ALLO=IIN]', '[ALLO=IN]',
         '[ALLO=ISIIN]', '[ALLO=IDEN]', '[ALLO=JA]', '[ALLO=JEN]', '[ALLO=SEEN]',
         '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]',
-        '[PROP=FIRST]', '[PROP=GEO]', '[PROP=LAST]',
-        '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
-        '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
+        '[PROPER=FIRST]', '[PROPER=GEO]', '[PROPER=LAST]',
+        '[PROPER=MISC]', '[PROPER=ORG]', '[PROPER=PRODUCT]', '[PROPER=EVENT]',
+        '[PROPER=MEDIA]', '[PROPER=CULTGRP]', '[PROPER=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]', 
         '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
@@ -125,7 +125,7 @@ omor_multichars = {
 omor_short_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[POS=PRONOUN]', '[POS=NUMERAL]',
-        '[SUBCAT=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
+        '[PROPER=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
         '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTR]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROG]',
         '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEX]',
@@ -172,9 +172,9 @@ omor_short_multichars = {
         '[ALLO=ITTEN]', '[ALLO=IEN]', '[ALLO=IHIN]', '[ALLO=IIN]', '[ALLO=IN]',
         '[ALLO=ISIIN]', '[ALLO=IDEN]', '[ALLO=JA]', '[ALLO=JEN]', '[ALLO=SEEN]',
         '[ALLO=TEN]', '[ALLO=VN]', '[FILTER=NO_PROC]',
-        '[PROP=FIRST]', '[PROP=GEO]', '[PROP=LAST]',
-        '[PROP=MISC]', '[PROP=ORG]', '[PROP=PRODUCT]', '[PROP=EVENT]',
-        '[PROP=MEDIA]', '[PROP=CULTGRP]', '[PROP=ARTWORK]', '[SEM=TITLE]',
+        '[PROPER=FIRST]', '[PROPER=GEO]', '[PROPER=LAST]',
+        '[PROPER=MISC]', '[PROPER=ORG]', '[PROPER=PRODUCT]', '[PROPER=EVENT]',
+        '[PROPER=MEDIA]', '[PROPER=CULTGRP]', '[PROPER=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
         '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
@@ -410,15 +410,15 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "CURRENCY": "[SEM=CURRENCY]", "MEDIA": "[SEM=MEDIA]", 
         "POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
         "MALE": "[SEM=MALE]", "FEMALE": "[SEM=FEMALE]", 
-        "PROPER": "[SUBCAT=PROPER]", 
-        "CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
-        "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
-        "FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", 
-        "GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
+        "PROPER": "[PROPER=PROPER]", 
+        "CULTGRP": "[PROPER=CULTGRP]", "PRODUCT": "[PROPER=PRODUCT]",
+        "ARTWORK": "[PROPER=ARTWORK]", "EVENT": "[PROPER=EVENT]", 
+        "FIRST": "[PROPER=FIRST]", "LAST": "[PROPER=LAST]", 
+        "GEO": "[PROPER=GEO]", "ORG": "[PROPER=ORG]", 
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
-        "MISC": "[PROP=MISC]"}
+        "MISC": "[PROPER=MISC]"}
 
 stuff2omor_short = {
         "Bc": "[BOUNDARY=COMPOUND]", 
@@ -524,15 +524,15 @@ stuff2omor_short = {
         "CURRENCY": "[SEM=CURRENCY]", "MEDIA": "[SEM=MEDIA]", 
         "POLIT": "[SEM=POLIT]", "MEASURE": "[SEM=MEASURE]", 
         "MALE": "[SEM=MALE]", "FEMALE": "[SEM=FEMALE]", 
-        "PROPER": "[SUBCAT=PROPER]", 
-        "CULTGRP": "[PROP=CULTGRP]", "PRODUCT": "[PROP=PRODUCT]",
-        "ARTWORK": "[PROP=ARTWORK]", "EVENT": "[PROP=EVENT]", 
-        "FIRST": "[PROP=FIRST]", "LAST": "[PROP=LAST]", 
-        "GEO": "[PROP=GEO]", "ORG": "[PROP=ORG]", 
+        "PROPER": "[PROPER=PROPER]", 
+        "CULTGRP": "[PROPER=CULTGRP]", "PRODUCT": "[PROPER=PRODUCT]",
+        "ARTWORK": "[PROPER=ARTWORK]", "EVENT": "[PROPER=EVENT]", 
+        "FIRST": "[PROPER=FIRST]", "LAST": "[PROPER=LAST]", 
+        "GEO": "[PROPER=GEO]", "ORG": "[PROPER=ORG]", 
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
-        "MISC": "[PROP=MISC]"}
+        "MISC": "[PROPER=MISC]"}
 
 monodix_sdefs= {
         'adj', 'vblex', 'n',
@@ -806,10 +806,11 @@ def format_lexc_omor(wordmap, format):
                 wordmap['analysis'] += format_tag_omor(subcat, format)
         
         if wordmap['is_proper']:
-            wordmap['analysis'] += format_tag_omor('PROPER', format)
             if '+propers' in format and wordmap['proper_noun_class']:
                 for prop in wordmap['proper_noun_class'].split(','):
                     wordmap['analysis'] += format_tag_omor(prop, format)
+            else:
+                wordmap['analysis'] += format_tag_omor('PROPER', format)
 
         if '+semantics' in format and wordmap['sem']:
             for sem in wordmap['sem'].split(','):
