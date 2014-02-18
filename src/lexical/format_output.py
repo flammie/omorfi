@@ -784,56 +784,54 @@ def format_lexc_omor(wordmap, format):
     format string for canonical omor format for morphological analysis
     '''
     wordmap['stub'] = lexc_escape(wordmap['stub'])
+    wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
+    if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
+        wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
+    #if wordmap['is_suffix']:
+    #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
+    if wordmap['is_prefix']:
+        wordmap['analysis'] += format_tag_omor('PREFIX', format)
+        if wordmap['pos'] == 'ADJECTIVE':
+            wordmap['analysis'] += format_tag_omor('Cpos', format)
+
+    if wordmap['particle']:
+        for pclass in wordmap['particle'].split('|'):
+            wordmap['analysis'] += format_tag_omor(pclass, format)
+
+    if wordmap['subcat']:
+        for subcat in wordmap['subcat'].split('|'):
+            wordmap['analysis'] += format_tag_omor(subcat, format)
+    
+    if wordmap['is_proper']:
+        if '+propers' in format and wordmap['proper_noun_class']:
+            for prop in wordmap['proper_noun_class'].split(','):
+                wordmap['analysis'] += format_tag_omor(prop, format)
+        else:
+            wordmap['analysis'] += format_tag_omor('PROPER', format)
+
+    if '+semantics' in format and wordmap['sem']:
+        for sem in wordmap['sem'].split(','):
+            wordmap['analysis'] += format_tag_omor(sem, format)
+
+    # XXX: use stuff2omor to ensure multichars but laziness
+    if format.startswith("ktnkav") and tn < 99:
+        wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
+        if wordmap['kotus_av']:
+            wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
+    elif format.startswith("newparas"):
+        wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
+
+    if wordmap['style']:
+        wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
+    
+    if not 'no-segments' in format:
+        wordmap['analysis'] += '[SEGMENT=' + wordmap['stub'] + ']'
+    # match WORD_ID= with epsilon, then stub and lemma might match
+    lex_stub = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
     retvals = []
-    for subcats in (wordmap['subcat'] or ['']):
-        wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
-        if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
-            wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
-        #if wordmap['is_suffix']:
-        #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
-        if wordmap['is_prefix']:
-            wordmap['analysis'] += format_tag_omor('PREFIX', format)
-            if wordmap['pos'] == 'ADJECTIVE':
-                wordmap['analysis'] += format_tag_omor('Cpos', format)
-
-        if wordmap['particle']:
-            pclasses = wordmap['particle'].split('|')
-            for pclass in pclasses:
-                wordmap['analysis'] += format_tag_omor(pclass, format)
-
-        if subcats:
-            for subcat in subcats.split('|'):
-                wordmap['analysis'] += format_tag_omor(subcat, format)
-        
-        if wordmap['is_proper']:
-            if '+propers' in format and wordmap['proper_noun_class']:
-                for prop in wordmap['proper_noun_class'].split(','):
-                    wordmap['analysis'] += format_tag_omor(prop, format)
-            else:
-                wordmap['analysis'] += format_tag_omor('PROPER', format)
-
-        if '+semantics' in format and wordmap['sem']:
-            for sem in wordmap['sem'].split(','):
-                wordmap['analysis'] += format_tag_omor(sem, format)
-
-        # XXX: use stuff2omor to ensure multichars but laziness
-        if format.startswith("ktnkav") and tn < 99:
-            wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
-            if wordmap['kotus_av']:
-                wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
-        elif format.startswith("newparas"):
-            wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
-
-        if wordmap['style']:
-            wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
-        
-        if not 'no-segments' in format:
-            wordmap['analysis'] += '[SEGMENT=' + wordmap['stub'] + ']'
-        # match WORD_ID= with epsilon, then stub and lemma might match
-        lex_stub = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
-        for new_para in wordmap['new_paras']:
-            retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                    new_para)]
+    for new_para in wordmap['new_paras']:
+        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
+                new_para)]
     return "\n".join(retvals)
     
 def format_lexc_ftb3(wordmap, format):
@@ -841,24 +839,22 @@ def format_lexc_ftb3(wordmap, format):
     format string for canonical ftb3 format for morphological analysis
     '''
     wordmap['stub'] = lexc_escape(wordmap['stub'])
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
+    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
+        wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
+    elif wordmap['particle']:
+        for pclass in wordmap['particle'].split('|'):
+            wordmap['analysis'] += format_tag_ftb3(pclass)
+    if wordmap['subcat']:
+        for subcat in wordmap['subcat'].split('|'):
+            wordmap['analysis'] += format_tag_ftb3(subcat)
+    if wordmap['is_proper']:
+        wordmap['analysis'] += format_tag_ftb3('PROPER')
+    lex_stub = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
     retvals = []
-    for subcats in (wordmap['subcat'] or ['']):
-        wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
-        if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
-            wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
-        elif wordmap['particle']:
-            pclasses = wordmap['particle'].split('|')
-            for pclass in pclasses:
-                wordmap['analysis'] += format_tag_ftb3(pclass)
-        if subcats:
-            for subcat in subcats.split('|'):
-                wordmap['analysis'] += format_tag_ftb3(subcat)
-        if wordmap['is_proper']:
-            wordmap['analysis'] += format_tag_ftb3('PROPER')
-        lex_stub = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
-        for new_para in wordmap['new_paras']:
-            retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                    new_para)]
+    for new_para in wordmap['new_paras']:
+        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
+                new_para)]
     return "\n".join(retvals)
 
 def format_lexc_apertium(wordmap):

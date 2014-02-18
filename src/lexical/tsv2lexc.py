@@ -148,7 +148,6 @@ def main():
                 # read data from database
                 wordmap = tsv_parts
                 wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
-                wordmap['subcat'] = [x.strip('[]"\' ') for x in wordmap['subcat'].split(',')]
 
                 # exclusions
                 if args.exclude_pos:
