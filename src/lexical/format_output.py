@@ -702,10 +702,7 @@ def format_tag_ftb3(stuff):
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = ""
-    if 'COMPOUND' in cont:
-        ftbstring =  surf.replace('%>', '').replace('»', '')
-        anals = '0'
-    elif 'Nneg|Vact' in anals:
+    if 'Nneg|Vact' in anals:
         anals = anals.replace('|Vact', '')
     elif anals == 'Vact|Ia|Nsg|Xlat':
         anals = 'Ia|Xlat'
@@ -758,6 +755,8 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         reordered.append(part)
     for anal in reordered:
         ftbstring += format_tag_ftb3(anal)
+    if 'COMPOUND' in cont:
+        ftbstring +=  surf.replace('%>', '').replace('»', '')
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_continuation_lexc_omor(anals, surf, cont, format):

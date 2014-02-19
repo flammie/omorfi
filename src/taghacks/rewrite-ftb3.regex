@@ -7,7 +7,7 @@
 % Pl -> 0,
 % Prop -> 0,
 % Sg -> 0,
-% V -> 0 || _ ?* %# ]
+% V -> 0 || _ ?* %#  ]
 .o.
 # Remove V before Prc
 [ % V -> 0 || _ [ % PrsPrc | % PrfPrc | % NegPrc | % AgPrc ] ] 
@@ -23,5 +23,8 @@
 | t | u | v | w | x | y | z | å | ä | ö ]*
   ←%<Del%>  -> 0 || _ [? - %#]* %# ]
 .o.
-[ %<Del%>→ -> 0, ←%<Del%> -> 0 ] ;
-
+[ %<Del%>→ -> 0, ←%<Del%> -> 0 ]
+.o.
+[ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s
+| t | u | v | w | x | y | z | å | ä | ö ]* -> 0 ||
+[% N | % Num ]+ _  [ % Gen | % Nom |% Sg | % Pl ]+ % TruncSuffix  ;
