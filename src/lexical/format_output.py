@@ -23,7 +23,7 @@ ftb3_multichars= {
         '% Acc', '% Sg', '% Pl', '% PxSg1', '% PxSg2',
         '% PxPl1', '% PxPl2', '% PxPl3',
         '% Px3',
-        '% TrunCo', 
+        '% TrunCo', 'TruncPrefix% ', '% TruncSuffix',
         '% Prt', '% Prs',
         '% Pst', '% Cond', '% Pot',
         '% Impv',
@@ -203,6 +203,8 @@ ktnkav_multichars = {
 
 stuff2ftb3 = {"Bc": "#",
         "B-": "% TrunCo",
+        "B→": "TruncPrefix% ",
+        "B←": "% TruncSuffix",
         "Cma": "% AgPrc",
         "Cnut": "% PrfPrc",
         "Cva": "% PrsPrc",
@@ -935,6 +937,7 @@ def format_root_lexicon(format):
 0   PUNCTUATION ;
 0   51 ;
 """
+    root += format_tag('B→', format) + ':-   NOUN ;\n'
     root += version_id_easter_egg + ':0 # ;\n'
     if '+taggerhacks' in format:
         root += "0   TAGGER_HACKS    ;\n"
