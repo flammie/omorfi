@@ -471,7 +471,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_KYKY']	NOUN	1	M	False	weaken	front	False	None	False	False
 ['N_KYLKIÄINEN']	NOUN	38	False	False	strengthen	front	False	None	False	False
 ['N_KYLÄNVANHIN']	NOUN	36	False	False	strengthen	back	False	None	False	False
-['N_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['N_KYNNET']	NOUN	28	False	obligatory	weaken	front	False	None	False	False
 ['N_KYNNÄÄT']	NOUN	41	False	obligatory	strengthen	front	False	None	False	False
 ['N_KYSYNTÄ']	NOUN	9	J	False	weaken	front	ä	None	False	False
@@ -813,6 +812,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['NUM_KOLMAS']	NUMERAL	45	False	False	strengthen	back	False	None	False	False
 ['NUM_KOLME']	NUMERAL	1008	False	False	weaken	back	False	None	False	False
 ['NUM_KUUSI']	NUMERAL	27	False	False	weaken	back	False	None	False	False
+['NUM_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['NUM_KYMMENEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	back	False	None	False	False
 ['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	front	False	None	False	False
