@@ -51,6 +51,7 @@ sinä	['PRON_MINÄ']	subcat=personal|sg2
 sä	['PRON_MÄ']	subcat=personal|sg2
 sää	['PRON_MÄÄ']	subcat=personal|sg2
 te	['PRON_ME']	subcat=personal|pl2
+toinen	['PRON_JOKAINEN']	subcat=quantor
 toinen	['PRON_JOKAINEN']	subcat=reciprocal
 toi	['PRON_TOI']	subcat=demonstrative
 tuo	['PRON_TUO']	subcat=demonstrative
