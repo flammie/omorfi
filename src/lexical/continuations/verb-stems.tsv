@@ -601,11 +601,8 @@ V_OLLA	0	ol	V_BACK_WEAK_PAST	V_BACK_STRONG_PAST	V_BACK_CONDITIONAL	V_BACK_IMPERA
 V_OLLA	Dja	olij	N_SOITTAJA
 V_OLLA	Dminen	olemi	N_AAKKOSTAMINEN
 V_OLLA	Udial	oo	V_BACK_WEAK_PRESENT
-V_OLLA	Vact|Cma	olem	A_AALTOILEVA
-V_OLLA	Vact|Cmaton	olemat	A_VIATON
-V_OLLA	Vact|Cnut|Dnut	oll	A_KULUNUT
-V_OLLA	Vact|Cva|Dinen	olevai	A_AAKKOSELLINEN
-V_OLLA	Vact|Cva	olev	A_AALTOILEVA
+V_OLLA	Vact|Cnut	ollut	#
+V_OLLA	Dnut	oll	A_KULUNUT
 V_OLLA	Vact|Dmaisilla	olemaisilla	V_BACK_POSS_AN
 V_OLLA	Vact|Ima|Xabe	olematta	V_BACK_POSS_AN_OPT
 V_OLLA	Vact|Ima|Xade	olemalla	V_BACK_POSS_AN_OPT
