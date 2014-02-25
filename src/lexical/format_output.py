@@ -12,6 +12,7 @@ ftb3_multichars= {
         '% Abbr', '% Pron', '% Num', '% Prop',
         '% Interj', '% Dem', '% Interr',
         '% Rel', '% Qnt', '% Refl',
+        '% N% Abbr',
         '% %>%>%>',
         '% CS', '% CC', '% Adv',
         '% Adp', '% Po', '% Pr', '% Adp% Po',
@@ -50,7 +51,7 @@ omor_multichars = {
         '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEXIVE]',
         '[SUBCAT=RECIPROCAL]', '[SUBCAT=INDEFINITE]',
         '[SUBCAT=CARDINAL]', '[SUBCAT=ORDINAL]',
-        '[SUBCAT=CONJUNCTION]', '[SUBCAT=COORDINATING]', '[SUBCAT=ADVERBIAL]',
+        '[SUBCAT=CONJUNCTION]', '[CONJ=COORDINATING]', '[CONJ=ADVERBIAL]',
         '[SUBCAT=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
         '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
         '[SUBCAT=ACRONYM]', 
@@ -96,6 +97,7 @@ omor_multichars = {
         '[PARTICIPLE=NEGATION]',
         '[DERIVATION=NUT]', '[DERIVATION=TU]', '[DERIVATION=MA]',
         '[DERIVATION=VA]', '[DERIVATION=MATON]',
+        '[DERIVATION=TAVA]',
         '[COMPARISON=POSITIVE]', '[COMPARISON=COMPARATIVE]',
         '[COMPARISON=SUPERLATIVE]',
         '[DERIVATION=MPI]', '[DERIVATION=IN]', 
@@ -120,7 +122,9 @@ omor_multichars = {
         '[PROPER=MEDIA]', '[PROPER=CULTGRP]', '[PROPER=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]', 
         '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
-        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
+        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]',
+        '[POS=NOUN][SUBCAT=ABBREVIATION]', 
+        '[POSITION=PREFIX]', '[POSITION=SUFFIX]'}
 
 omor_short_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
@@ -128,10 +132,11 @@ omor_short_multichars = {
         '[PROPER=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
         '[SUBCAT=QUALIFIER]', '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTR]', '[SUBCAT=PERSONAL]', '[SUBCAT=INTERROG]',
-        '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEX]',
-        '[SUBCAT=RECIPROC]', '[SUBCAT=INDEF]', 
+        '[SUBCAT=RELATIVE]', '[SUBCAT=QUANTOR]', '[SUBCAT=REFLEXIVE]',
+        '[SUBCAT=RECIPROC]', '[SUBCAT=INDEF]', '[SUBCAT=DEMONSTRATIVE]',
+        '[SUBCAT=INTERROGATIVE]',
         '[SUBCAT=CARD]', '[SUBCAT=ORD]',
-        '[SUBCAT=CONJUNCTION]', '[SUBCAT=COORD]', '[SUBCAT=ADVERBIAL]',
+        '[SUBCAT=CONJUNCTION]', '[CONJ=COORD]', '[CONJ=ADVERBIAL]',
         '[SUBCAT=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
         '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
         '[SUBCAT=ACRONYM]', 
@@ -139,7 +144,7 @@ omor_short_multichars = {
         '[SUBCAT=SPACE]', '[SUBCAT=QUOTATION]', '[SUBCAT=BRACKET]',
         '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
         '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
-        '[SUBCAT=FINAL]', 
+        '[SUBCAT=FINAL]', '[SUBCAT=REFLEXIVE]',
         '[CASE=NOM]','[CASE=PAR]', '[CASE=GEN]', '[CASE=INE]', '[CASE=ELA]',
         '[CASE=ILL]', '[CASE=ADE]', '[CASE=ABL]', '[CASE=ALL]', '[CASE=ESS]',
         '[CASE=INS]', '[CASE=ABE]', '[CASE=TRA]', '[CASE=COM]' , '[CASE=LAT]',
@@ -150,8 +155,8 @@ omor_short_multichars = {
         '[TENSE=PRESENT]',
         '[TENSE=PAST]', '[MOOD=INDV]', '[MOOD=COND]', '[MOOD=POTN]',
         '[MOOD=IMPV]', '[MOOD=OPT]', '[MOOD=EVNV]',
-        '[PRS=SG1]', '[PRS=SG2]', '[PRS=SG3]', 
-        '[PRS=PL1]', '[PRS=PL2]', '[PRS=PL3]', '[PRS=PE4]',
+        '[PERS=SG1]', '[PERS=SG2]', '[PERS=SG3]', 
+        '[PERS=PL1]', '[PERS=PL2]', '[PERS=PL3]', '[PERS=PE4]',
         '[NEG=CON]' , '[SUBCAT=NEG]', '[VOICE=ACT]', '[VOICE=PSS]',
         '[INF=A]', '[INF=E]', '[INF=MA]', '[INF=MINEN]',
         '[DRV=MINEN]', '[DRV=MAISILLA]',
@@ -164,7 +169,7 @@ omor_short_multichars = {
         '[DRV=INEN]', '[DRV=LAINEN]', '[DRV=TAR]', '[DRV=LLINEN]', '[DRV=TON]',
         '[DRV=TSE]', '[DRV=OI]', '[DRV=VS]', '[DRV=U]', '[DRV=TTAIN]',
         '[DRV=TTAA]', '[DRV=TATTAA]', '[DRV=TATUTTAA]', '[DRV=UUS]',
-        '[DRV=S]', '[DRV=NUT]',
+        '[DRV=S]', '[DRV=NUT]', '[DRV=TAVA]',
         '[STYLE=NONSTANDARD]', '[STYLE=RARE]', '[STYLE=DIALECTAL]',
         '[STYLE=ARCHAIC]', 
         '[GUESS=COMPOUND]', '[GUESS=DERIVE]', '[ALLO=A]',
@@ -177,7 +182,11 @@ omor_short_multichars = {
         '[PROPER=MEDIA]', '[PROPER=CULTGRP]', '[PROPER=ARTWORK]', '[SEM=TITLE]',
         '[SEM=ORG]', '[SEM=EVENT]', '[SEM=POLIT]', '[SEM=MEDIA]', '[SEM=GEO]',
         '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
-        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]'}
+        '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]',
+        '[POSITION=PREFIX]', '[POSITION=SUFFIX]',
+        '[POS=NOUN][SUBCAT=ABBREVIATION]', 
+        '[MOOD=INDV][TENSE=PRESENT]',
+        '[MOOD=INDV][TENSE=PAST]'}
 
 ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
@@ -203,8 +212,8 @@ ktnkav_multichars = {
 
 stuff2ftb3 = {"Bc": "#",
         "B-": "% TrunCo",
-        "B→": "TruncCo% ",
-        "B←": "% TruncCo",
+        "B→": "TrunCo% ",
+        "B←": "% TrunCo",
         "Cma": "% AgPrc",
         "Cnut": "% PrfPrc",
         "Cva": "% PrsPrc",
@@ -438,7 +447,8 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
-        "MISC": "[PROPER=MISC]"}
+        "MISC": "[PROPER=MISC]",
+        "FTB3man": ""}
 
 stuff2omor_short = {
         "Bc": "[BOUNDARY=COMPOUND]", 
@@ -558,7 +568,8 @@ stuff2omor_short = {
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
-        "MISC": "[PROPER=MISC]"}
+        "MISC": "[PROPER=MISC]",
+        "FTB3man": ""}
 
 monodix_sdefs= {
         'adj', 'vblex', 'n',
@@ -692,6 +703,14 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
     return stuffs
 
+def format_analysis_lexc(analyses, format):
+    stuffs = ''
+    if format.startswith("omor") or format.startswith("ktnkav"):
+        stuffs += format_analysis_lexc_omor(analyses)
+    elif format.startswith("ftb3"):
+        stuffs += format_analysis_lexc_ftb3(analyses)
+    return stuffs
+
 def format_tag(stuff, format):
     if format.startswith('omor') or format.startswith('ktnkav'):
         return format_tag_omor(stuff, format)
@@ -724,7 +743,7 @@ def format_tag_ftb3(stuff):
         print("Missing from ftb3 mapping: ", stuff, file=stderr)
         return ""
 
-def format_continuation_lexc_ftb3(anals, surf, cont):
+def format_analysis_lexc_ftb3(anals):
     ftbstring = ""
     if 'Nneg|Vact' in anals:
         anals = anals.replace('|Vact', '')
@@ -779,9 +798,19 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         reordered.append(part)
     for anal in reordered:
         ftbstring += format_tag_ftb3(anal)
+    return ftbstring
+
+def format_continuation_lexc_ftb3(anals, surf, cont):
+    ftbstring = format_analysis_lexc_ftb3(anals)
     if 'COMPOUND' in cont:
         ftbstring +=  surf.replace('%>', '').replace('»', '')
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
+
+def format_analysis_lexc_omor(anals, format):
+    omorstring = ''
+    for i in anals.split('|'):
+        omorstring += format_tag_omor(tags[i], format)
+    return omortstring
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
     morphs = surf.split('>')

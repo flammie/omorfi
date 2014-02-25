@@ -1,0 +1,5 @@
+# Preprocess this file with autoconf and make to create yaml tests
+Config:
+    hfst:
+        Gen: @top_builddir@/src/generation.@TAG_FORMAT@.hfst
+        Morph: @top_builddir@/src/morphology.@TAG_FORMAT@.hfst
