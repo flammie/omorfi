@@ -813,6 +813,14 @@ def format_analysis_lexc_omor(anals, format):
     return omortstring
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
+    # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
+    if anals == 'Dnut':
+        anals = 'Vact|Cnut'
+    elif anals == 'Dtu':
+        anals = 'Vpss|Cnut'
+    elif 'Cnut' in anals or 'Cva' in anals and anals.endswith('Npl') or anals.endswith('Nsg'):
+        anals = anals + '|Xnom'
+    
     morphs = surf.split('>')
     tags = anals.split('|')
     omorstring = ''
