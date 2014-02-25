@@ -39,10 +39,8 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(
 TESTS=format_output.py
 
 noinst_DATA=omorfi.lexc omorfi.dix omorfi-sanalista.xml \
-			omorfi.reweight gtd-tests.yaml
+			omorfi.reweight
 
-gtd-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=$(TAG_FORMAT) -v
 
 omorfi.reweight: serialise-reweighter.py format_output.py
 	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=$(TAG_FORMAT_PRECISE)\

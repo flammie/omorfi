@@ -140,6 +140,8 @@ def stub_all_ktn(wordmap):
                 wordmap = mangle_suffixes_or_die(wordmap, ['ka'])
             elif wordmap['lemma'] == 'jokin':
                 wordmap = mangle_suffixes_or_die(wordmap, ['kin'])
+            elif wordmap['lemma'] == 'jompikumpi':
+                wordmap = mangle_suffixes_or_die(wordmap, ['pikumpi'])
             elif wordmap['lemma'] == 'kuka':
                 wordmap = mangle_suffixes_or_die(wordmap, ['uka'])
             elif wordmap['lemma'] == 'kukaan':

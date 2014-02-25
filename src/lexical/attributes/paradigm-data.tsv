@@ -914,7 +914,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_JOKA']	PRONOUN	1101	False	False	weaken	back	False	None	False	False
 ['PRON_JOKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_JOKU']	PRONOUN	101	False	False	False	back	False	None	False	False
-['PRON_JOMPIKUMPI']	PRONOUN	16	H	False	weaken	back	False	None	False	False
+['PRON_JOMPIKUMPI']	PRONOUN	101	False	False	weaken	back	False	None	False	False
 ['PRON_KAIKKI']	PRONOUN	7	A	False	weaken	back	False	None	False	False
 ['PRON_KOKO']	PRONOUN	99	False	False	False	back	False	None	False	False
 ['PRON_KUKAAN']	PRONOUN	101	False	False	False	back	False	None	False	False
