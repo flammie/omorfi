@@ -706,7 +706,7 @@ def format_continuation_lexc(fields, format):
 def format_analysis_lexc(analyses, format):
     stuffs = ''
     if format.startswith("omor") or format.startswith("ktnkav"):
-        stuffs += format_analysis_lexc_omor(analyses)
+        stuffs += format_analysis_lexc_omor(analyses, format)
     elif format.startswith("ftb3"):
         stuffs += format_analysis_lexc_ftb3(analyses)
     return stuffs
