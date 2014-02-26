@@ -305,7 +305,8 @@ stuff2ftb3 = {"Bc": "#",
         "SG1": "% Sg1", 
         "SG2": "% Sg2",
         "SG3": "% Sg3",
-        "PE4": "% Pe4" 
+        "PE4": "% Pe4",
+        "UNSPECIFIED": ""
         }
 
 stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
@@ -448,6 +449,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROPER=MISC]",
+        "UNSPECIFIED": "",
         "FTB3man": ""}
 
 stuff2omor_short = {
@@ -569,6 +571,7 @@ stuff2omor_short = {
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROPER=MISC]",
+        "UNSPECIFIED": "",
         "FTB3man": ""}
 
 monodix_sdefs= {
@@ -682,7 +685,8 @@ stuff2monodix =  {"Bc": "+",
         "CARDINAL": "card", "ORDINAL": "ord",
         "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
         "INDEFINITE": "ind", "INTERROGATIVE": "itg",
-        "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec"}
+        "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
+        "UNSPECIFIED": ""}
 
 
 
