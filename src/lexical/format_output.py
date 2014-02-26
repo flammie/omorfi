@@ -706,7 +706,7 @@ def format_continuation_lexc(fields, format):
 def format_analysis_lexc(analyses, format):
     stuffs = ''
     if format.startswith("omor") or format.startswith("ktnkav"):
-        stuffs += format_analysis_lexc_omor(analyses)
+        stuffs += format_analysis_lexc_omor(analyses, format)
     elif format.startswith("ftb3"):
         stuffs += format_analysis_lexc_ftb3(analyses)
     return stuffs
@@ -813,6 +813,14 @@ def format_analysis_lexc_omor(anals, format):
     return omortstring
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
+    # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
+    if anals == 'Dnut':
+        anals = 'Vact|Cnut'
+    elif anals == 'Dtu':
+        anals = 'Vpss|Cnut'
+    elif 'Cnut' in anals or 'Cva' in anals and anals.endswith('Npl') or anals.endswith('Nsg'):
+        anals = anals + '|Xnom'
+    
     morphs = surf.split('>')
     tags = anals.split('|')
     omorstring = ''
