@@ -851,6 +851,7 @@ def format_lexc_omor(wordmap, format):
     '''
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
+    wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJECTIVE')
     if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
         wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
     #if wordmap['is_suffix']:
