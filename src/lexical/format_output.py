@@ -603,6 +603,8 @@ monodix_sdefs= {
 
 stuff2monodix =  {"Bc": "+",
         "B-": "-",
+        "B→": "-",
+        "B←": "-",
         "Cma": "agent",
         "Cnut": "pp",
         "Cva": "pprs",

@@ -136,7 +136,7 @@ def main():
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
-                    print(linecount, "...", sep='')
+                    print(linecount, "...", sep='', end='\r')
                 if len(tsv_parts) < 18:
                     print("Too few tabs on line", linecount, 
                         "skipping following line completely:", file=stderr)
