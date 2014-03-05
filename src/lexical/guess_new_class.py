@@ -4933,6 +4933,8 @@ def guess_new_pronoun(wordmap):
             wordmap['new_paras'] = ['PRON_MISSÄKÄÄN']
         elif wordmap['lemma'] == 'missään':
             wordmap['new_paras'] = ['PRON_MISSÄÄN']
+        elif wordmap['lemma'] == 'monta':
+            wordmap['new_paras'] = ['PRON_MONTA']
         elif wordmap['lemma'] == 'muuan':
             wordmap['new_paras'] = ['PRON_MUUAN']
         elif wordmap['lemma'] in ['mä', 'sä']:
@@ -4946,7 +4948,7 @@ def guess_new_pronoun(wordmap):
         elif wordmap['lemma'].endswith('ainoa'):
             wordmap['new_paras'] = ['PRON_AINOA']
         elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
-                'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
+                'missäkin', 'mikäkin', 'sa', 'tää', 'ken',
                 'koko', 'yks', 'yksikään', 'mää', 'sää', 'hää']:
             wordmap['new_paras'] = ['#']
         else:
