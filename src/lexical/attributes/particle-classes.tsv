@@ -1987,6 +1987,7 @@ kiistattomasti	['PCLE_NOPEASTI']	particle=Adverb
 kiistämättä	['PCLE_TYHMÄSTI']	particle=Adverb
 kiistämättömästi	['PCLE_TYHMÄSTI']	particle=Adverb
 kiitettävästi	['PCLE_TYHMÄSTI']	particle=Adverb
+kiitos	['PCLE_VAAN']	particle=Interjection
 kiittämättömästi	['PCLE_TYHMÄSTI']	particle=Adverb
 kiivaasti	['PCLE_NOPEASTI']	particle=Adverb
 kilin	['PCLE_VAAN']	particle=Interjection
