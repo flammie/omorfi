@@ -896,7 +896,8 @@ def format_lexc_omor(wordmap, format):
     if not 'no-segments' in format:
         wordmap['analysis'] += '[SEGMENT=' + wordmap['stub'] + ']'
     # match WORD_ID= with epsilon, then stub and lemma might match
-    lex_stub = '0' + wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
+    lex_stub = '0' + wordmap['stub'][:1] + \
+               wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
@@ -919,7 +920,7 @@ def format_lexc_ftb3(wordmap, format):
             wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
-    lex_stub = wordmap['stub'].replace('|', '{hyph?}').replace('_', '')
+    lex_stub = wordmap['stub'][:1] + wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 

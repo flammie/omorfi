@@ -101,6 +101,12 @@ def main():
             type=FormatArgType)
     args = ap.parse_args()
     # check args
+    if args.strip == '"' or args.strip == "'":
+        quoting = csv.QUOTE_ALL
+        quotechar = args.strip
+    else:
+        quoting = csv.QUOTE_NONE
+        quotechar = None
     lemmas = []
     if args.include_lemmas:
         for lemma_file in args.include_lemmas:
@@ -134,8 +140,8 @@ def main():
         curr_lexicon = ""
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
-            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                    strict=True)
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator, 
+                    quoting=quoting, escapechar='%', quotechar=quotechar, strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
