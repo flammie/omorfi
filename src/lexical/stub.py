@@ -179,7 +179,9 @@ def stub_all_ktn(wordmap):
                     'koko']:
                 pass
         elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] == 'optional':
-            if wordmap['stub'].endswith('n'):
+            if wordmap['stub'] == 'nähden':
+                wordmap = mangle_suffixes_or_die(wordmap, ['den'])  # näh|te| -mme
+            elif wordmap['stub'].endswith('n'):
                 wordmap = mangle_suffixes_or_die(wordmap, ['n'])  # näkyvii|n -mme
             elif wordmap['stub'].endswith('i'):
                 wordmap = mangle_suffixes_or_die(wordmap, ['i'])  # vuoks|i -e-mme
