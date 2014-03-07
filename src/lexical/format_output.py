@@ -828,7 +828,13 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
         anals = 'Vact|Cnut'
     elif anals == 'Dtu':
         anals = 'Vpss|Cnut'
-    elif 'Cnut' in anals or 'Cva' in anals and anals.endswith('Npl') or anals.endswith('Nsg'):
+    # Collapse DRV=VA/TAVA and PCP=VA to PCP=VA with full inflection
+    elif anals == 'Dva':
+        anals = 'Vact|Cva'
+    elif anals == 'Dtava':
+        anals = 'Vpss|Cva'
+    elif ('Cnut' in anals or 'Cva' in anals) and \
+         (anals.endswith('Npl') or anals.endswith('Nsg')):
         anals = anals + '|Xnom'
     
     morphs = surf.split('>')
