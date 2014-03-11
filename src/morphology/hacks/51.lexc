@@ -10,6 +10,7 @@ LEXICON 51
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=GENITIVE]:Isojen-Britannioiden  N_BACK_POSS_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=GENITIVE]:Isojen-Britannioitten  N_BACK_POSS_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=GENITIVE]:Isojen-Britanniojen  N_BACK_POSS_OPT ;
+[WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ILLATIVE]:Isoihin-Britannioihin N_BACK_POSS_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=INESSIVE]:Isoissa-Britannioissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=NOMINATIVE]:Isot-Britanniat  N_BACK_POSS ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=PARTITIVE]:Isoja-Britannioita  N_BACK_POSS_OPT ;
@@ -22,8 +23,8 @@ LEXICON 51
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ELATIVE]:Isosta-Britanniasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ESSIVE]:Isona-Britanniana N_BACK_POSS_AN_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=GENITIVE]:Ison-Britannian  N_BACK_POSS_OPT ;
+[WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ILLATIVE]:Isoon-Britanniaan N_BACK_POSS_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=INESSIVE]:Isossa-Britanniassa N_BACK_POSS_AN_OPT ;
-[WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=NOMINATIVE]:Iso-Britannia N_BACK_POSS ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=NOMINATIVE]:Iso-Britannia  N_BACK_POSS_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=PARTITIVE]:Isoa-Britanniaa  N_BACK_POSS_OPT ;
 [WORD_ID=Iso-Britannia][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=TRANSLATIVE]:Isoksi-Britanniakse N_BACK_POSS_EN_OBL ;
@@ -36,6 +37,7 @@ LEXICON 51
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ELATIVE]:Uusistakaupungeista N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ESSIVE]:Uusinakaupunkeina N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=GENITIVE]:Uusienkaupunkien  N_BACK_POSS_OPT ;
+[WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ILLATIVE]:Uusiinkaupunkeihin N_BACK_POSS_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=INESSIVE]:Uusissakaupungeissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=NOMINATIVE]:Uudetkaupungit  N_BACK_POSS ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=PARTITIVE]:Uusiakaupunkeja  N_BACK_POSS_OPT ;
@@ -48,6 +50,7 @@ LEXICON 51
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ELATIVE]:Uudestakaupungista N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ESSIVE]:Uutenakaupunkina N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=GENITIVE]:Uudenkaupungin  N_BACK_POSS_OPT ;
+[WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ILLATIVE]:Uuteenkaupunkiin N_BACK_POSS_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=INESSIVE]:Uudessakaupungissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=NOMINATIVE]:Uusikaupunki  N_BACK_POSS_OPT ;
 [WORD_ID=Uusikaupunki][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=PARTITIVE]:Uuttakaupunkia  N_BACK_POSS_OPT ;
@@ -61,6 +64,7 @@ LEXICON 51
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ELATIVE]:Uusistamaista N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ESSIVE]:Uusinamaina N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=GENITIVE]:Uusienmaiden  N_BACK_POSS_OPT ;
+[WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ILLATIVE]:Uusiinmaihin  N_BACK_POSS_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=INESSIVE]:Uusissamaissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=NOMINATIVE]:Uudetmaat  N_BACK_POSS ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=PARTITIVE]:Uusiamaita  N_BACK_POSS_OPT ;
@@ -73,6 +77,7 @@ LEXICON 51
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ELATIVE]:Uudestamaasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ESSIVE]:Uutenamaana N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=GENITIVE]:Uudenmaan  N_BACK_POSS_OPT ;
+[WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ILLATIVE]:Uuteenmaahan  N_BACK_POSS_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=INESSIVE]:Uudessamaassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=NOMINATIVE]:Uusimaa  N_BACK_POSS_OPT ;
 [WORD_ID=Uusimaa][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=PARTITIVE]:Uuttamaata  N_BACK_POSS_OPT ;
@@ -86,6 +91,7 @@ LEXICON 51
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ELATIVE]:Uusista-Seelanneista N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ESSIVE]:Uusina-Seelanteina N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=GENITIVE]:Uusien-Seelantien  N_BACK_POSS_OPT ;
+[WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=ILLATIVE]:Uusiin-Seelanteihin  N_BACK_POSS_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=INESSIVE]:Uusissa-Seelanneissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=NOMINATIVE]:Uudet-Seelannit  N_BACK_POSS ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=PL][CASE=PARTITIVE]:Uusia-Seelanteja  N_BACK_POSS_OPT ;
@@ -98,6 +104,7 @@ LEXICON 51
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ELATIVE]:Uudesta-Seelannista N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ESSIVE]:Uutena-Seelantina N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=GENITIVE]:Uuden-Seelannin  N_BACK_POSS_OPT ;
+[WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=ILLATIVE]:Uuteen-Seelantiin  N_BACK_POSS_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=INESSIVE]:Uudessa-Seelannissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=NOMINATIVE]:Uusi-Seelanti  N_BACK_POSS_OPT ;
 [WORD_ID=Uusi-Seelanti][POS=NOUN][SUBCAT=PROPER][NUMBER=SG][CASE=PARTITIVE]:Uutta-Seelantia  N_BACK_POSS_OPT ;
@@ -162,6 +169,7 @@ LEXICON 51
 [WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:isoista{hyph?}jaoista N_BACK_POSS_AN_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:isoina{hyph?}jakoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:isojen{hyph?}jakojen N_BACK_CLIT_OPT ;
+[WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:isoihin{hyph?}jakoihin N_BACK_CLIT_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:isoissa{hyph?}jaoissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:isot{hyph?}jaot N_BACK_CLIT_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:isoja{hyph?}jakoja N_BACK_POSS_OPT ;
@@ -174,6 +182,7 @@ LEXICON 51
 [WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:isosta{hyph?}jaosta N_BACK_POSS_AN_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:isona{hyph?}jakona N_BACK_POSS_AN_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:ison{hyph?}jaon N_BACK_CLIT_OPT ;
+[WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:isoon{hyph?}jakoon N_BACK_CLIT_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:isossa{hyph?}jaossa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:iso{hyph?}jako N_BACK_CLIT_OPT ;
 [WORD_ID=isojako][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:isoa{hyph?}jakoa N_BACK_POSS_OPT ;
@@ -478,6 +487,7 @@ LEXICON 51
 [WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:isoista{hyph?}siskoista N_BACK_POSS_AN_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:isoina{hyph?}siskoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:isojen{hyph?}siskojen N_BACK_CLIT_OPT ;
+[WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:isoihin{hyph?}siskoihin N_BACK_CLIT_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:isoissa{hyph?}siskoissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:isot{hyph?}siskot N_BACK_CLIT_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:isoja{hyph?}siskoja N_BACK_POSS_OPT ;
@@ -490,6 +500,7 @@ LEXICON 51
 [WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:isosta{hyph?}siskosta N_BACK_POSS_AN_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:isona{hyph?}siskona N_BACK_POSS_AN_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:ison{hyph?}siskon N_BACK_CLIT_OPT ;
+[WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:isoon{hyph?}siskoon N_BACK_CLIT_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:isossa{hyph?}siskossa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:iso{hyph?}sisko N_BACK_CLIT_OPT ;
 [WORD_ID=isosisko][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:isoa{hyph?}siskoa N_BACK_POSS_OPT ;
@@ -503,6 +514,7 @@ LEXICON 51
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:isoista{hyph?}varpaista N_BACK_POSS_AN_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:isoina{hyph?}varpaina N_BACK_POSS_AN_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:isojen{hyph?}varvasten N_BACK_CLIT_OPT ;
+[WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:isohin{hyph?}varpaisiin N_BACK_CLIT_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:isoissa{hyph?}varpaissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:isot{hyph?}varpaat N_BACK_CLIT_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:isoja{hyph?}varpaita N_BACK_POSS_OPT ;
@@ -515,6 +527,7 @@ LEXICON 51
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:isosta{hyph?}varpaasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:isona{hyph?}varpaana N_BACK_POSS_AN_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:ison{hyph?}varpaan N_BACK_CLIT_OPT ;
+[WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:isoon{hyph?}varpaaseen N_BACK_CLIT_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:isossa{hyph?}varpaassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:iso{hyph?}varvas N_BACK_CLIT_OPT ;
 [WORD_ID=isovarvas][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:isoa{hyph?}varvasta N_BACK_POSS_OPT ;
@@ -527,6 +540,7 @@ LEXICON 51
 [WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:isoista{hyph?}veljistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:isoina{hyph?}veljinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:isojen{hyph?}veljien N_BACK_CLIT_OPT ;
+[WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:isoihin{hyph?}veljiin N_BACK_CLIT_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:isoissa{hyph?}veljissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:isot{hyph?}veljet N_BACK_CLIT_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:isoja{hyph?}veljiä N_BACK_POSS_OPT ;
@@ -539,6 +553,7 @@ LEXICON 51
 [WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:isosta{hyph?}veljestä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:isona{hyph?}veljenä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:ison{hyph?}veljen N_BACK_CLIT_OPT ;
+[WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:isoon{hyph?}veljeen N_BACK_CLIT_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:isossa{hyph?}veljessä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:iso{hyph?}veli N_BACK_CLIT_OPT ;
 [WORD_ID=isoveli][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:isoa{hyph?}veljeä N_BACK_POSS_OPT ;
@@ -551,6 +566,7 @@ LEXICON 51
 [WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:isoista{hyph?}vihoista N_BACK_POSS_AN_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:isoina{hyph?}vihoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:isojen{hyph?}vihojen N_BACK_CLIT_OPT ;
+[WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:isoihin{hyph?}vihoihin N_BACK_CLIT_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:isoissa{hyph?}vihoissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:isot{hyph?}vihot N_BACK_CLIT_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:isoja{hyph?}vihoja N_BACK_POSS_OPT ;
@@ -563,6 +579,7 @@ LEXICON 51
 [WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:isosta{hyph?}vihasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:isona{hyph?}vihana N_BACK_POSS_AN_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:ison{hyph?}vihan N_BACK_CLIT_OPT ;
+[WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:isoon{hyph?}vihaan N_BACK_CLIT_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:isossa{hyph?}vihassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:iso{hyph?}viha N_BACK_CLIT_OPT ;
 [WORD_ID=isoviha][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:isoa{hyph?}vihaa N_BACK_POSS_OPT ;
@@ -794,6 +811,7 @@ LEXICON 51
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:kultaisista{hyph?}noutajista N_BACK_POSS_AN_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:kultaisina{hyph?}noutajina N_BACK_POSS_AN_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:kultaisten{hyph?}noutajien N_BACK_CLIT_OPT ;
+[WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:kultaisiin{hyph?}noutajiin N_BACK_CLIT_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:kultaisissa{hyph?}noutajissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:kultaiset{hyph?}noutajat N_BACK_CLIT_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:kultaisia{hyph?}noutajia N_BACK_POSS_OPT ;
@@ -806,6 +824,7 @@ LEXICON 51
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:kultaisesta{hyph?}noutajasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:kultaisena{hyph?}noutajana N_BACK_POSS_AN_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:kultaisen{hyph?}noutajan N_BACK_CLIT_OPT ;
+[WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:kultaiseen{hyph?}noutajaan N_BACK_CLIT_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:kultaisessa{hyph?}noutajassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:kultainen{hyph?}noutaja N_BACK_CLIT_OPT ;
 [WORD_ID=kultainennoutaja][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:kultaista{hyph?}noutajaa N_BACK_POSS_OPT ;
@@ -818,6 +837,7 @@ LEXICON 51
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:laiskoista{hyph?}koirista N_BACK_POSS_AN_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:laiskoina{hyph?}koirina N_BACK_POSS_AN_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:laiskojen{hyph?}koirien N_BACK_CLIT_OPT ;
+[WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:laiskoihin{hyph?}koiriin N_BACK_CLIT_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:laiskoissa{hyph?}koirissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:laiskat{hyph?}koirat N_BACK_CLIT_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:laiskoja{hyph?}koiria N_BACK_POSS_OPT ;
@@ -830,6 +850,7 @@ LEXICON 51
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:laiskasta{hyph?}koirasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:laiskana{hyph?}koirana N_BACK_POSS_AN_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:laiskan{hyph?}koiran N_BACK_CLIT_OPT ;
+[WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:laiskaan{hyph?}koiraan N_BACK_CLIT_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:laiskassa{hyph?}koirassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:laiska{hyph?}koira N_BACK_CLIT_OPT ;
 [WORD_ID=laiskakoira][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:laiska{hyph?}koira N_BACK_POSS_OPT ;
@@ -1058,6 +1079,7 @@ LEXICON 51
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:mustista{hyph?}maijoista N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:mustina{hyph?}maijoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:mustien{hyph?}maijojen N_BACK_CLIT_OPT ;
+[WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:mustiin{hyph?}maijoihin N_BACK_CLIT_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:mustissa{hyph?}maijoissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:mustat{hyph?}maijat N_BACK_CLIT_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:mustia{hyph?}maijoja N_BACK_POSS_OPT ;
@@ -1070,6 +1092,7 @@ LEXICON 51
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:mustasta{hyph?}maijasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:mustana{hyph?}maijana N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:mustan{hyph?}maijan N_BACK_CLIT_OPT ;
+[WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:mustaan{hyph?}maijaan N_BACK_CLIT_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:mustassa{hyph?}maijassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:musta{hyph?}maija N_BACK_CLIT_OPT ;
 [WORD_ID=mustamaija][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:musta{hyph?}maija N_BACK_POSS_OPT ;
@@ -1083,6 +1106,7 @@ LEXICON 51
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:mustista{hyph?}makkaroista N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:mustina{hyph?}makkaroina N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:mustien{hyph?}makkarojen N_BACK_CLIT_OPT ;
+[WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:mustiin{hyph?}makkaroihin N_BACK_CLIT_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:mustissa{hyph?}makkaroissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:mustat{hyph?}makkarat N_BACK_CLIT_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:mustia{hyph?}makkaroita N_BACK_POSS_OPT ;
@@ -1095,6 +1119,7 @@ LEXICON 51
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:mustasta{hyph?}makkarasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:mustana{hyph?}makkarana N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:mustan{hyph?}makkaran N_BACK_CLIT_OPT ;
+[WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:mustaan{hyph?}makkaraan N_BACK_CLIT_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:mustassa{hyph?}makkarassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:musta{hyph?}makkara N_BACK_CLIT_OPT ;
 [WORD_ID=mustamakkara][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:musta{hyph?}makkara N_BACK_POSS_OPT ;
@@ -1388,6 +1413,7 @@ LEXICON 51
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:nuorina{hyph?}miehinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:nuorien{hyph?}miehien N_BACK_CLIT_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:nuorten{hyph?}miehien N_BACK_CLIT_OPT ;
+[WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:nuoriin{hyph?}miehiin N_BACK_CLIT_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:nuorissa{hyph?}miehissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:nuoret{hyph?}miehet N_BACK_CLIT_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:nuoria{hyph?}miehiä N_BACK_POSS_OPT ;
@@ -1400,6 +1426,7 @@ LEXICON 51
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:nuoresta{hyph?}miehestä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:nuorena{hyph?}miehenä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:nuoren{hyph?}miehen N_BACK_CLIT_OPT ;
+[WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:nuoreen{hyph?}mieheen N_BACK_CLIT_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:nuoressa{hyph?}miehessä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:nuori{hyph?}mies N_BACK_CLIT_OPT ;
 [WORD_ID=nuorimies][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:nuori{hyph?}mies N_BACK_POSS_OPT ;
@@ -1414,6 +1441,7 @@ LEXICON 51
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:nuorina{hyph?}pareina N_BACK_POSS_AN_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:nuorien{hyph?}parien N_BACK_CLIT_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:nuorten{hyph?}parien N_BACK_CLIT_OPT ;
+[WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:nuoriin{hyph?}pareihin N_BACK_CLIT_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:nuorissa{hyph?}pareissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:nuoret{hyph?}parit   N_BACK_CLIT_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:nuoria{hyph?}pareja N_BACK_POSS_OPT ;
@@ -1426,6 +1454,7 @@ LEXICON 51
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:nuoresta{hyph?}parista N_BACK_POSS_AN_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:nuorena{hyph?}parina N_BACK_POSS_AN_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:nuoren{hyph?}parin N_BACK_CLIT_OPT ;
+[WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:nuoreen{hyph?}pariin N_BACK_CLIT_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:nuoressa{hyph?}parissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:nuori{hyph?}pari N_BACK_CLIT_OPT ;
 [WORD_ID=nuoripari][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:nuori{hyph?}pari N_BACK_POSS_OPT ;
@@ -1439,6 +1468,7 @@ LEXICON 51
 [WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:omista{hyph?}kuvista N_BACK_POSS_AN_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:omina{hyph?}kuvina N_BACK_POSS_AN_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:omien{hyph?}kuvien N_BACK_CLIT_OPT ;
+[WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:omiin{hyph?}kuviin N_BACK_CLIT_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:omissa{hyph?}kuvissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:omat{hyph?}kuvat N_BACK_CLIT_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:omia{hyph?}kuvia N_BACK_POSS_OPT ;
@@ -1451,6 +1481,7 @@ LEXICON 51
 [WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:omasta{hyph?}kuvasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:omana{hyph?}kuvana N_BACK_POSS_AN_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:oman{hyph?}kuvan N_BACK_CLIT_OPT ;
+[WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:omaan{hyph?}kuvaan N_BACK_CLIT_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:omassa{hyph?}kuvassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:oma{hyph?}kuva N_BACK_CLIT_OPT ;
 [WORD_ID=omakuva][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:oma{hyph?}kuva N_BACK_POSS_OPT ;
@@ -1464,6 +1495,7 @@ LEXICON 51
 [WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:omista{hyph?}tunnoista N_BACK_POSS_AN_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:omina{hyph?}tuntoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:omien{hyph?}tuntojen N_BACK_CLIT_OPT ;
+[WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:omiin{hyph?}tuntoihin N_BACK_CLIT_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:omissa{hyph?}tunnoissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:omat{hyph?}tunnot N_BACK_CLIT_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:omia{hyph?}tuntoja N_BACK_POSS_OPT ;
@@ -1476,6 +1508,7 @@ LEXICON 51
 [WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:omasta{hyph?}tunnosta N_BACK_POSS_AN_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:omana{hyph?}tuntona N_BACK_POSS_AN_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:oman{hyph?}tunnon N_BACK_CLIT_OPT ;
+[WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:omaan{hyph?}tuntoon N_BACK_CLIT_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:omassa{hyph?}tunnossa N_BACK_POSS_AN_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:oma{hyph?}tunto N_BACK_CLIT_OPT ;
 [WORD_ID=omatunto][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:omaa{hyph?}tuntoa N_BACK_POSS_OPT ;
@@ -1488,9 +1521,10 @@ LEXICON 51
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:pahoista{hyph?}hengistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:pahoina{hyph?}henkinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:pahojen{hyph?}henkien N_BACK_CLIT_OPT ;
+[WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:pahoihin{hyph?}henkiin N_BACK_CLIT_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:pahoissa{hyph?}hengissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:pahat{hyph?}henget N_BACK_CLIT_OPT ;
-[WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:pahoia{hyph?}henkiä N_BACK_POSS_OPT ;
+[WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:pahoja{hyph?}henkiä N_BACK_POSS_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=TRANSLATIVE]:pahoiksi{hyph?}hengikse N_BACK_POSS ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=PL][CASE=TRANSLATIVE]:pahoiksi{hyph?}hengiksi N_BACK_CLIT_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=ABESSIVE]:pahatta{hyph?}hengettä N_FRONT_POSS_ÄN_OPT ;
@@ -1500,6 +1534,7 @@ LEXICON 51
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:pahasta{hyph?}hengestä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:pahana{hyph?}henkenä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:pahan{hyph?}hengen N_BACK_CLIT_OPT ;
+[WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:pahaan{hyph?}henkeen N_BACK_CLIT_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:pahassa{hyph?}hengessä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:paha{hyph?}henki N_BACK_CLIT_OPT ;
 [WORD_ID=pahahenki][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:paha{hyph?}henki N_BACK_POSS_OPT ;
@@ -1514,6 +1549,7 @@ LEXICON 51
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:palavista{hyph?}kivistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:palavina{hyph?}kivinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:palavien{hyph?}kivien N_BACK_CLIT_OPT ;
+[WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:palaviin{hyph?}kiviin N_BACK_CLIT_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:palavissa{hyph?}kivissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:palavat{hyph?}kivet N_BACK_CLIT_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:palavia{hyph?}kiviä N_BACK_POSS_OPT ;
@@ -1526,6 +1562,7 @@ LEXICON 51
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:palavasta{hyph?}kivestä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:palavana{hyph?}kivenä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:palavan{hyph?}kiven N_BACK_CLIT_OPT ;
+[WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:palavaan{hyph?}kiveen N_BACK_CLIT_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:palavassa{hyph?}kivessä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:palava{hyph?}kivi N_BACK_CLIT_OPT ;
 [WORD_ID=palavakivi][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:palava{hyph?}kivi N_BACK_POSS_OPT ;
@@ -1589,6 +1626,7 @@ LEXICON 51
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:pitkistä{hyph?}housuista N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:pitkinä{hyph?}housuina N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:pitkien{hyph?}housujen N_BACK_CLIT_OPT ;
+[WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:pitkiin{hyph?}housuihin N_BACK_CLIT_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:pitkissä{hyph?}housuissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:pitkät{hyph?}housut N_BACK_CLIT_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:pitkiä{hyph?}housuja  N_BACK_POSS_OPT ;
@@ -1601,6 +1639,7 @@ LEXICON 51
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:pitkästä{hyph?}housusta N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:pitkänä{hyph?}housuna N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:pitkän{hyph?}housun N_BACK_CLIT_OPT ;
+[WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:pitkään{hyph?}housuun N_BACK_CLIT_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:pitkässä{hyph?}housussa N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}housu N_BACK_CLIT_OPT ;
 [WORD_ID=pitkähousu][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}housu N_BACK_POSS_OPT ;
@@ -1629,7 +1668,6 @@ LEXICON 51
 [WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:pitkässä{hyph?}kirkossa N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}kirkko N_BACK_CLIT_OPT ;
 [WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}kirkko N_BACK_POSS_OPT ;
-[WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}kirkko N_BACK_POSS_OPT ;
 [WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:pitkää{hyph?}kirkkoa   N_BACK_POSS_OPT ;
 [WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:pitkäksi{hyph?}kirkokse N_BACK_POSS ;
 [WORD_ID=pitkäkirkko][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:pitkäksi{hyph?}kirkoksi N_BACK_CLIT_OPT ;
@@ -1640,6 +1678,7 @@ LEXICON 51
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:pitkistä{hyph?}perjantaista N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:pitkinä{hyph?}perjantaina N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:pitkien{hyph?}perjantaiden N_BACK_CLIT_OPT ;
+[WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:pitkiin{hyph?}perjantaihin N_BACK_CLIT_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:pitkissä{hyph?}perjantaissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:pitkät{hyph?}perjantait N_BACK_CLIT_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:pitkiä{hyph?}perjantaita N_BACK_POSS_OPT ;
@@ -1652,11 +1691,9 @@ LEXICON 51
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:pitkästä{hyph?}perjantaista N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:pitkänä{hyph?}perjantaina N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:pitkän{hyph?}perjantain N_BACK_CLIT_OPT ;
+[WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:pitkään{hyph?}perjantaihin N_BACK_CLIT_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:pitkässä{hyph?}perjantaissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}perjantai N_BACK_CLIT_OPT ;
-[WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}perjantai N_BACK_POSS_OPT ;
-[WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}perjantai N_BACK_POSS_OPT ;
-[WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}perjantai N_BACK_POSS_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:pitkä{hyph?}perjantai N_BACK_POSS_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:pitkää{hyph?}perjantaia   N_BACK_POSS_OPT ;
 [WORD_ID=pitkäperjantai][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:pitkäksi{hyph?}perjantaikse N_BACK_POSS ;
@@ -1750,6 +1787,7 @@ LEXICON 51
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:puolina{hyph?}kuina N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolien{hyph?}kuiden   N_BACK_CLIT_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolten{hyph?}kuiden   N_BACK_CLIT_OPT ;
+[WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:puoliin{hyph?}kuihin   N_BACK_CLIT_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:puolissa{hyph?}kuissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:puolit{hyph?}kuut N_BACK_CLIT_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:puolia{hyph?}kuita    N_BACK_POSS_OPT ;
@@ -1762,6 +1800,7 @@ LEXICON 51
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:puolesta{hyph?}kuusta N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:puolena{hyph?}kuuna N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:puolen{hyph?}kuun N_BACK_CLIT_OPT ;
+[WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:puoleen{hyph?}kuuhun   N_BACK_CLIT_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:puolessa{hyph?}kuussa N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}kuu N_BACK_CLIT_OPT ;
 [WORD_ID=puolikuu][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:puolta{hyph?}kuuta  N_BACK_POSS_OPT ;
@@ -1775,6 +1814,7 @@ LEXICON 51
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:puolina{hyph?}matkoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolien{hyph?}matkojen   N_BACK_CLIT_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolten{hyph?}matkojen   N_BACK_CLIT_OPT ;
+[WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:puoliin{hyph?}matkoihin   N_BACK_CLIT_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:puolissa{hyph?}matkoissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:puolet{hyph?}matkat N_BACK_CLIT_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:puolia{hyph?}matkoja     N_BACK_POSS_OPT ;
@@ -1787,6 +1827,7 @@ LEXICON 51
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:puolesta{hyph?}matkasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:puolena{hyph?}matkana N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:puolen{hyph?}matkan N_BACK_CLIT_OPT ;
+[WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:puoleen{hyph?}matkaan   N_BACK_CLIT_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:puolessa{hyph?}matkassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}matka N_BACK_CLIT_OPT ;
 [WORD_ID=puolimatka][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}matka N_BACK_POSS_OPT ;
@@ -1801,6 +1842,7 @@ LEXICON 51
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:puolina{hyph?}päivinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolien{hyph?}päivien   N_BACK_CLIT_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolten{hyph?}päivien   N_BACK_CLIT_OPT ;
+[WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:puoliin{hyph?}päiviin   N_BACK_CLIT_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:puolissa{hyph?}päivissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:puolet{hyph?}päivät N_BACK_CLIT_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:puolia{hyph?}päiviä     N_BACK_POSS_OPT ;
@@ -1813,6 +1855,7 @@ LEXICON 51
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:puolesta{hyph?}päivästä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:puolena{hyph?}päivänä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:puolen{hyph?}päivän N_BACK_CLIT_OPT ;
+[WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:puoleen{hyph?}päivään   N_BACK_CLIT_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:puolessa{hyph?}päivässä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}päivä N_BACK_CLIT_OPT ;
 [WORD_ID=puolipäivä][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}päivä N_BACK_POSS_OPT ;
@@ -1827,6 +1870,7 @@ LEXICON 51
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:puolina{hyph?}väleinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolien{hyph?}välien   N_BACK_CLIT_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolten{hyph?}välien   N_BACK_CLIT_OPT ;
+[WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:puoliin{hyph?}väleihin   N_BACK_CLIT_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:puolissa{hyph?}väleissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:puolet{hyph?}välit N_BACK_CLIT_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:puolia{hyph?}välejä    N_BACK_POSS_OPT ;
@@ -1839,9 +1883,10 @@ LEXICON 51
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:puolesta{hyph?}välistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:puolena{hyph?}välinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:puolen{hyph?}välin N_BACK_CLIT_OPT ;
+[WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:puoleen{hyph?}väliin   N_BACK_CLIT_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:puolessa{hyph?}välissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}väli N_BACK_CLIT_OPT ;
-[WORD_ID=puoli'|väli][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}väli N_BACK_POSS_OPT ;
+[WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}väli N_BACK_POSS_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:puolta{hyph?}väliä   N_BACK_POSS_OPT ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:puoliksi{hyph?}välikse N_BACK_POSS ;
 [WORD_ID=puoliväli][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:puoliksi{hyph?}väliksi N_BACK_CLIT_OPT ;
@@ -1853,6 +1898,7 @@ LEXICON 51
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:puolina{hyph?}öinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolien{hyph?}öiden   N_BACK_CLIT_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:puolten{hyph?}öiden   N_BACK_CLIT_OPT ;
+[WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:puoliin{hyph?}öihin   N_BACK_CLIT_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:puolissa{hyph?}öissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:puolet{hyph?}yöt N_BACK_CLIT_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:puolia{hyph?}öitä    N_BACK_POSS_OPT ;
@@ -1865,6 +1911,7 @@ LEXICON 51
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:puolesta{hyph?}yöstä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:puolena{hyph?}yönä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:puolen{hyph?}yön N_BACK_CLIT_OPT ;
+[WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:puoleen{hyph?}yöhön   N_BACK_CLIT_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:puolessa{hyph?}yössä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}yö N_BACK_CLIT_OPT ;
 [WORD_ID=puoliyö][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:puoli{hyph?}yö N_BACK_POSS_OPT ;
@@ -2001,6 +2048,7 @@ LEXICON 51
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:suorista{hyph?}kulmista N_BACK_POSS_AN_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:suorina{hyph?}kulmina N_BACK_POSS_AN_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:suorien{hyph?}kulmien   N_BACK_CLIT_OPT ;
+[WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:suoriin{hyph?}kulmiin   N_BACK_CLIT_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:suorissa{hyph?}kulmissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:suorat{hyph?}kulmat N_BACK_CLIT_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:suoria{hyph?}kulmia     N_BACK_POSS_OPT ;
@@ -2013,6 +2061,7 @@ LEXICON 51
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:suorasta{hyph?}kulmasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:suorana{hyph?}kulmana N_BACK_POSS_AN_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:suoran{hyph?}kulman N_BACK_CLIT_OPT ;
+[WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:suoraan{hyph?}kulmaan   N_BACK_CLIT_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:suorassa{hyph?}kulmassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:suora{hyph?}kulma N_BACK_CLIT_OPT ;
 [WORD_ID=suorakulma][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:suora{hyph?}kulma N_BACK_POSS_OPT ;
@@ -2132,6 +2181,7 @@ LEXICON 51
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:täysistä{hyph?}kuista N_BACK_POSS_AN_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:täysinä{hyph?}kuina N_BACK_POSS_AN_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:täysien{hyph?}kuiden  N_BACK_CLIT_OPT ;
+[WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:täysiin{hyph?}kuihin  N_BACK_CLIT_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:täysissä{hyph?}kuissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:täydet{hyph?}kuut N_BACK_CLIT_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:täysiä{hyph?}kuita    N_BACK_POSS_OPT ;
@@ -2144,6 +2194,7 @@ LEXICON 51
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:täydestä{hyph?}kuusta N_BACK_POSS_AN_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:täytenä{hyph?}kuuna N_BACK_POSS_AN_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:täyden{hyph?}kuun N_BACK_CLIT_OPT ;
+[WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:täyteen{hyph?}kuuhun  N_BACK_CLIT_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:täydessä{hyph?}kuussa N_BACK_POSS_AN_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:täysi{hyph?}kuu N_BACK_CLIT_OPT ;
 [WORD_ID=täysikuu][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:täysi{hyph?}kuu N_BACK_POSS_OPT ;
@@ -2159,6 +2210,7 @@ LEXICON 51
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:uusista{hyph?}kuista N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:uusina{hyph?}kuina N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:uusien{hyph?}kuiden  N_BACK_CLIT_OPT ;
+[WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:uusiin{hyph?}kuihin  N_BACK_CLIT_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:uusissa{hyph?}kuissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:uudet{hyph?}kuut N_BACK_CLIT_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:uusia{hyph?}kuita    N_BACK_POSS_OPT ;
@@ -2171,6 +2223,7 @@ LEXICON 51
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:uudestä{hyph?}kuusta N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:uutena{hyph?}kuuna N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:uuden{hyph?}kuun N_BACK_CLIT_OPT ;
+[WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:uuteen{hyph?}kuuhun  N_BACK_CLIT_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:uudessa{hyph?}kuussa N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:uusi{hyph?}kuu N_BACK_CLIT_OPT ;
 [WORD_ID=uusikuu][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:uutta{hyph?}kuuta  N_BACK_POSS_OPT ;
@@ -2183,6 +2236,7 @@ LEXICON 51
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:uusista{hyph?}vuosista N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:uusina{hyph?}vuosina N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:uusien{hyph?}vuosien  N_BACK_CLIT_OPT ;
+[WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:uusiin{hyph?}vuosiin  N_BACK_CLIT_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:uusissa{hyph?}vuosissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:uudet{hyph?}vuodet N_BACK_CLIT_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:uusia{hyph?}vuosia    N_BACK_POSS_OPT ;
@@ -2195,6 +2249,7 @@ LEXICON 51
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:uudestä{hyph?}vuodesta N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:uutena{hyph?}vuotena N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:uuden{hyph?}vuoden N_BACK_CLIT_OPT ;
+[WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:uuteen{hyph?}vuoteen  N_BACK_CLIT_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:uudessa{hyph?}vuodessa N_BACK_POSS_AN_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:uusi{hyph?}vuosi N_BACK_CLIT_OPT ;
 [WORD_ID=uusivuosi][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:uutta{hyph?}vuotta  N_BACK_POSS_OPT ;
@@ -2208,6 +2263,7 @@ LEXICON 51
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:vanhoista{hyph?}emännistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vanhoina{hyph?}emäntinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vanhojen{hyph?}emäntien N_BACK_CLIT_OPT ;
+[WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:vanhoihin{hyph?}emäntiin N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:vanhoissa{hyph?}emännissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:vanhat{hyph?}emännät N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vanhoja{hyph?}emäntiä N_FRONT_POSS_ÄN_OPT ;
@@ -2220,6 +2276,7 @@ LEXICON 51
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:vanhasta{hyph?}emännästä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:vanhana{hyph?}emäntänä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:vanhan{hyph?}emännän N_BACK_CLIT_OPT ;
+[WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:vanhaan{hyph?}emäntään N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:vanhassa{hyph?}emännässä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}emäntä N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaemäntä][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}emäntä N_BACK_POSS_OPT ;
@@ -2234,6 +2291,7 @@ LEXICON 51
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:vanhoista{hyph?}isännistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vanhoina{hyph?}isäntinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vanhojen{hyph?}isäntien N_BACK_CLIT_OPT ;
+[WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:vanhoihin{hyph?}isäntiin N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:vanhoissa{hyph?}isännissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:vanhat{hyph?}isännät N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vanhoja{hyph?}isäntiä N_FRONT_POSS_ÄN_OPT ;
@@ -2246,6 +2304,7 @@ LEXICON 51
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:vanhasta{hyph?}isännästä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:vanhana{hyph?}isäntänä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:vanhan{hyph?}isännän N_BACK_CLIT_OPT ;
+[WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:vanhaan{hyph?}isäntään N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:vanhassa{hyph?}isännässä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}isäntä N_BACK_CLIT_OPT ;
 [WORD_ID=vanhaisäntä][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}isäntä N_BACK_POSS_OPT ;
@@ -2259,11 +2318,12 @@ LEXICON 51
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=ADESSIVE]:vanhoilla{hyph?}kaupungilla N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=ALLATIVE]:vanhoille{hyph?}kaupungille N_BACK_POSS_EN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:vanhoista{hyph?}kaupungista N_BACK_POSS_AN_OPT ;
-[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vanhoina{hyph?}kaunpunkina N_BACK_POSS_AN_OPT ;
-[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vanhojen{hyph?}kaunpunkien N_BACK_CLIT_OPT ;
+[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vanhoina{hyph?}kaupunkina N_BACK_POSS_AN_OPT ;
+[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vanhojen{hyph?}kaupunkien N_BACK_CLIT_OPT ;
+[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:vanhoihin{hyph?}kaupunkeihin N_BACK_CLIT_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:vanhoissa{hyph?}kaupungissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:vanhat{hyph?}kaupungit N_BACK_CLIT_OPT ;
-[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vanhoja{hyph?}kaunpunkia N_BACK_POSS_AN_OPT ;
+[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vanhoja{hyph?}kaupunkia N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=TRANSLATIVE]:vanhoiksi{hyph?}kaupungikse N_BACK_POSS_EN_OBL ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=PL][CASE=TRANSLATIVE]:vanhoiksi{hyph?}kaupungiksi N_BACK_CLIT_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=ABESSIVE]:vanhatta{hyph?}kaupungitta N_BACK_POSS_AN_OPT ;
@@ -2273,9 +2333,9 @@ LEXICON 51
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:vanhasta{hyph?}kaupungista N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:vanhana{hyph?}kaupunkina N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:vanhan{hyph?}kaupungin N_BACK_CLIT_OPT ;
+[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:vanhaan{hyph?}kaupunkiin N_BACK_CLIT_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:vanhassa{hyph?}kaupungissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}kaupunki N_BACK_CLIT_OPT ;
-[WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}kaupunki N_BACK_POSS_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}kaupunki N_BACK_POSS_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:vanhaa{hyph?}kaupunkia N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhakaupunki][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:vanhaksi{hyph?}kaupungikse N_BACK_POSS_EN_OBL ;
@@ -2288,9 +2348,9 @@ LEXICON 51
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:vanhoista{hyph?}piioista N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vanhoina{hyph?}piikoina N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vanhojen{hyph?}piikojen N_BACK_CLIT_OPT ;
-[WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL]+Ill:vanhoihin{hyph?}piikoihin N_BACK_POSS_OPT ;
+[WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:vanhoihin{hyph?}piikoihin N_BACK_POSS_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:vanhoissa{hyph?}piioissa N_BACK_POSS_AN_OPT ;
-[WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL]+Ins:vanhoin{hyph?}piioin N_BACK_POSS_OPT ;
+[WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=INSTRUCTIVE]:vanhoin{hyph?}piioin N_BACK_POSS_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:vanhat{hyph?}piiat N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vanhoja{hyph?}piikoja N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=PL][CASE=TRANSLATIVE]:vanhoiksi{hyph?}piioikse N_BACK_POSS_EN_OBL ;
@@ -2303,7 +2363,7 @@ LEXICON 51
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:vanhana{hyph?}piikana N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:vanhan{hyph?}piian N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:vanhassa{hyph?}piiassa N_BACK_POSS_AN_OPT ;
-[WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG]+Ill:vanhaan{hyph?}piikaan N_BACK_POSS_OPT ;
+[WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:vanhaan{hyph?}piikaan N_BACK_POSS_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}piika N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:vanhaa{hyph?}piikaa N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapiika][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:vanhaksi{hyph?}piiakse N_BACK_POSS_EN_OBL ;
@@ -2316,6 +2376,7 @@ LEXICON 51
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:vanhoista{hyph?}pojista N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vanhoina{hyph?}poikina N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vanhojen{hyph?}poikien N_BACK_CLIT_OPT ;
+[WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:vanhoihin{hyph?}poikiin N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:vanhoissa{hyph?}pojissa N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:vanhat{hyph?}pojat N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vanhoja{hyph?}poikia N_BACK_POSS_AN_OPT ;
@@ -2328,12 +2389,13 @@ LEXICON 51
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:vanhasta{hyph?}pojasta N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:vanhana{hyph?}poikana N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:vanhan{hyph?}pojan N_BACK_CLIT_OPT ;
+[WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:vanhaan{hyph?}poikaan N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:vanhassa{hyph?}pojassa N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vanha{hyph?}poika N_BACK_CLIT_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=PARTITIVE]:vanhaa{hyph?}poikaa N_BACK_POSS_AN_OPT ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:vanhaksi{hyph?}pojakse N_BACK_POSS_EN_OBL ;
 [WORD_ID=vanhapoika][POS=NOUN][NUMBER=SG][CASE=TRANSLATIVE]:vanhaksi{hyph?}pojaksi N_BACK_CLIT_OPT ;
-[WORD_ID=vierasmies][POS=NOUN][CASE=COMITATIVE]:vieraine{hyph?}meihine N_BACK_POSS_EN_OPT ;
+[WORD_ID=vierasmies][POS=NOUN][CASE=COMITATIVE]:vieraine{hyph?}miehine N_BACK_POSS_EN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=ABESSIVE]:vieraitta{hyph?}miehittä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=ABLATIVE]:vierailta{hyph?}miehiltä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=ADESSIVE]:vierailla{hyph?}miehillä N_FRONT_POSS_ÄN_OPT ;
@@ -2341,6 +2403,7 @@ LEXICON 51
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=ELATIVE]:vieraista{hyph?}miehistä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=ESSIVE]:vieraina{hyph?}miehinä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=GENITIVE]:vieraiden{hyph?}miesten N_BACK_CLIT_OPT ;
+[WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=ILLATIVE]:vieraisiin{hyph?}miehiin N_BACK_CLIT_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=INESSIVE]:vieraissa{hyph?}miehissä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=NOMINATIVE]:vieraat{hyph?}miehet N_BACK_CLIT_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=PL][CASE=PARTITIVE]:vieraita{hyph?}miehiä N_FRONT_POSS_ÄN_OPT ;
@@ -2353,6 +2416,7 @@ LEXICON 51
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=ELATIVE]:vieraasta{hyph?}miehestä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=ESSIVE]:vieraana{hyph?}miehenä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=GENITIVE]:vieraan{hyph?}miehen N_BACK_CLIT_OPT ;
+[WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=ILLATIVE]:vieraaseen{hyph?}mieheen N_BACK_CLIT_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=INESSIVE]:vieraassa{hyph?}miehessä N_FRONT_POSS_ÄN_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vieras{hyph?}mies N_BACK_CLIT_OPT ;
 [WORD_ID=vierasmies][POS=NOUN][NUMBER=SG][CASE=NOMINATIVE]:vieras{hyph?}mies N_BACK_POSS_OPT ;
