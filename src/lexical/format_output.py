@@ -1026,6 +1026,7 @@ def format_root_lexicon(format):
 0   51 ;
 """
     root += format_tag('B→', format) + ':-   NOUN ;\n'
+    root += format_tag('B→', format) + ':-   ADJECTIVE ;\n'
     root += version_id_easter_egg + ':0 # ;\n'
     if '+taggerhacks' in format:
         root += "0   TAGGER_HACKS    ;\n"
