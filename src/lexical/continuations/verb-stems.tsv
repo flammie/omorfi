@@ -58,6 +58,7 @@ V_EI	Nneg|Vact|Timp|Ppl1|Udial	elkäämme	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl1	älkäämme	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl2|Qka|Udial	elkääkä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl2|Qka	älkääkä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Ppl2|Qs	älkääs	#
 V_EI	Nneg|Vact|Timp|Ppl2|Udial	elkää	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl2	älkää	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl3|Qka|Udial	elköötkä	V_FRONT_CLIT_OPT
@@ -66,6 +67,7 @@ V_EI	Nneg|Vact|Timp|Ppl3|Udial	elkööt	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Ppl3	älkööt	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg2|Qka|Udial	eläkä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg2|Qka	äläkä	V_FRONT_CLIT_OPT
+V_EI	Nneg|Vact|Timp|Psg2|Qs	äläs	#
 V_EI	Nneg|Vact|Timp|Psg2|Udial	elä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg2	älä	V_FRONT_CLIT_OPT
 V_EI	Nneg|Vact|Timp|Psg3|Qka|Udial	elköönkä	V_FRONT_CLIT_OPT
