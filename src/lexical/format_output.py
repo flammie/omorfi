@@ -414,8 +414,10 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
         "ACRONYM": "[POS=NOUN][SUBCAT=ABBREVIATION]", 
         "ABBREVIATION": "[SUBCAT=ABBREVIATION]",
-        "SUFFIX": "[SUBCAT=SUFFIX]", 
-        "PREFIX": "[SUBCAT=PREFIX]",
+        "SUFFIX": "", 
+        #"SUFFIX": "[SUBCAT=SUFFIX]", 
+        "PREFIX": "",
+        #"PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", 
@@ -542,8 +544,10 @@ stuff2omor_short = {
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
         "ACRONYM": "[POS=NOUN][SUBCAT=ABBREVIATION]", 
         "ABBREVIATION": "[SUBCAT=ABBREVIATION]",
-        "SUFFIX": "[SUBCAT=SUFFIX]", 
-        "PREFIX": "[SUBCAT=PREFIX]",
+        "SUFFIX": "", 
+        #"SUFFIX": "[SUBCAT=SUFFIX]", 
+        "PREFIX": "",
+        #"PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", 
@@ -872,8 +876,8 @@ def format_lexc_omor(wordmap, format):
     wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJECTIVE')
     if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
         wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
-    #if wordmap['is_suffix']:
-    #    wordmap['analysis'] += format_tag_omor('SUFFIX', format)
+    if wordmap['is_suffix']:
+        wordmap['analysis'] += format_tag_omor('SUFFIX', format)
     if wordmap['is_prefix']:
         wordmap['analysis'] += format_tag_omor('PREFIX', format)
         if wordmap['pos'] == 'ADJECTIVE':
