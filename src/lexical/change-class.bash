@@ -15,13 +15,13 @@ if ! egrep "^${1}	\['${2}'\]" $LEXFILE ; then
 fi
 
 cp -v ${LEXFILE} ${LEXFILE}~
-sed -e "s/^${1}	\['${2}'\]/$1	['$3']/" ${LEXFILE} > ${LEXFILE}~~
+sed -r -e "s/^(${1})	\['${2}'\]/\1	['${3}']/" ${LEXFILE} > ${LEXFILE}~~
 diff -u ${LEXFILE}~ ${LEXFILE}~~
 cp ${LEXFILE}~~ ${LEXFILE}
 
 for f in ${ATTRIBUTES} ; do
     cp -v ${f} ${f}~
-    sed -e "s/^${1}	\['${2}'\]/$1	['$3']/" ${f} > ${f}~~
+    sed -r -e "s/^(${1})	\['${2}'\]/\1	['${3}']/" ${f} > ${f}~~
     diff -u ${f}~ ${f}~~
     cp ${f}~~ ${f}
 done
