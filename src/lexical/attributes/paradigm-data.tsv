@@ -204,6 +204,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['A_OIKEE']	ADJECTIVE	15	False	False	weaken	back	False	None	False	False
 ['A_OPAAKKI']	ADJECTIVE	5	A	False	weaken	back	False	None	False	False
 ['A_PAHIN']	ADJECTIVE	36	False	False	strengthen	back	False	None	False	False
+['A_PANTU']	ADJECTIVE	1	J	False	weaken	back	False	None	False	False
 ['A_PARANNELTU']	ADJECTIVE	1	I	False	weaken	back	False	None	False	False
 ['A_PARAS']	ADJECTIVE	41	False	False	strengthen	back	False	None	False	False
 ['A_PEEAA']	ADJECTIVE	18	False	False	weaken	back	a	None	False	False
@@ -212,6 +213,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['A_PITKÄ']	ADJECTIVE	1010	False	False	weaken	front	ä	None	False	False
 ['A_POHATTA']	ADJECTIVE	14	C	False	weaken	back	a	None	False	False
 ['A_POPPA']	ADJECTIVE	10	B	False	weaken	back	a	None	False	False
+['A_RAAKA']	ADJECTIVE	9	D	False	weaken	back	a	None	False	False
 ['A_RAITIS']	ADJECTIVE	41	C	False	strengthen	back	False	None	False	False
 ['A_RAMPA']	ADJECTIVE	9	H	False	weaken	back	a	None	False	False
 ['A_REHTI']	ADJECTIVE	5	F	False	weaken	front	False	None	False	False
