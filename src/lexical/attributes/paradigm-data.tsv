@@ -826,6 +826,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['NUM_KUUTISEN']	NUMERAL	99	False	False	False	back	False	None	False	False
 ['NUM_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['NUM_KYMMENEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
+['NUM_KYMMENKUNTA']	NUMERAL	10	J	False	weaken	back	a	None	False	False
 ['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	back	False	None	False	False
 ['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	front	False	None	False	False
 ['NUM_MILJARDI']	NUMERAL	6	False	False	weaken	back	False	None	False	False
