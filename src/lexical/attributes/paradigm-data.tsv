@@ -546,6 +546,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_LÄHDES']	NOUN	41	F	False	strengthen	front	False	None	False	False
 ['N_LÄHDET']	NOUN	44	F	False	strengthen	front	False	None	False	False
 ['N_LÄHIN']	NOUN	36	False	False	strengthen	front	False	None	False	False
+['N_LÄMMIN']	NOUN	35	H	False	strengthen	front	False	None	False	False
 ['N_LÄMPÖ']	NOUN	1	H	False	weaken	front	False	None	False	False
 ['N_LÄNGET']	NOUN	7	G	obligatory	weaken	front	False	None	False	False
 ['N_LÄNSI']	NOUN	28	False	False	weaken	front	False	None	False	False

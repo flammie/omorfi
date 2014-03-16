@@ -1324,17 +1324,15 @@ def guess_new_noun(wordmap):
             else:
                 fail_guess_because(wordmap, ['N', 34], [False, 'C'])
         elif wordmap['kotus_tn'] == 35:
-            if not wordmap['kotus_av']:
-                if wordmap['harmony'] == 'back':
-                    wordmap['new_paras'] = ['N_AAMUKAKSI']
-                elif wordmap['harmony'] == 'front':
-                    wordmap['new_paras'] = ['N_AAMUYKSI']
+            if wordmap['kotus_av'] == 'H':
+                if wordmap['harmony'] == 'front':
+                    wordmap['new_paras'] = ['N_LÄMMIN']
                 else:
                     fail_guess_because(wordmap, ['N', 35, False],
                         ['back', 'front'])
             else:
                 fail_guess_because(wordmap, ['N', 35],
-                    [False, 'C-F', 'J-L'])
+                    ['H' ])
         elif wordmap['kotus_tn'] == 36:
             if not wordmap['kotus_av']:
                 if wordmap['harmony'] == 'back':
