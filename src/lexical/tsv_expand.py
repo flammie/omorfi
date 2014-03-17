@@ -145,7 +145,8 @@ def main():
                 wordmap = stub_all_ktn(wordmap)
                 # suffixes can be id'd by the - in beginning
                 wordmap = guess_bound_morphs(wordmap)
-                if wordmap['is_suffix'] and wordmap['pos'] in ['PARTICLE', 'VERB']:
+                if wordmap['is_suffix']:
+                    wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'SUFFIX'
                 # split multiple particle or subcat definitions to distinct lexemes
                 wordmaps = [wordmap]

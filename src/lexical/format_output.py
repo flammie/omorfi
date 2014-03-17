@@ -1120,7 +1120,7 @@ def format_monodix_entry(wordmap):
         e += '<p><l>' + wordmap['stub'].replace('|', '').replace('&', '&amp;')  +  '</l>'
         e += '<r>'
         e += wordmap['lemma'].replace('&', '&amp;')
-        e += format_monodix_s(wordmap['pos'])
+        e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
         e += '</r></p>'
         e += format_monodix_par(cont)
         e += '</e>'
