@@ -1,4 +1,6 @@
 eräs	['PRON_ERÄS']	subcat=quantor|indefinite
+harva	['PRON_SAMA']	subcat=quantor
+harvempi	['PRON_USEAMPI']	subcat=quantor|comp
 he	['PRON_ME']	subcat=personal|pl3
 hän	['PRON_HÄN']	subcat=personal|sg3
 hää	['PRON_MÄÄ']	subcat=personal|sg3
@@ -61,6 +63,8 @@ tuo	['PRON_TUO']	subcat=demonstrative
 tämä	['PRON_TÄMÄ']	subcat=demonstrative
 tää	['PRON_MÄÄ']	subcat=demonstrative
 usea	['PRON_USEA']	subcat=quantor
+usein	['PRON_USEIMMAT']	subcat=quantor|superl
+useampi	['PRON_USEAMPI']	subcat=quantor|comp
 yks	['PRON_MÄÄ']	subcat=quantor
 yksikään	['PRON_KOKO']	subcat=quantor
 yksi	['PRON_YKSI']	subcat=quantor
