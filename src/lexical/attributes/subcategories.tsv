@@ -55,6 +55,7 @@ snro	['N_RUIPELO']	subcat=abbreviation
 srnro	['N_RUIPELO']	subcat=abbreviation
 Tku	['N_ASU']	subcat=abbreviation
 toinen	['NUM_TOINEN']	subcat=ordinal
+tommonen	['A_AAKKOSELLINEN']	subcat=Demonstrative
 Tre	['N_PISTE']	subcat=abbreviation
 tri	['N_TYYLI']	subcat=abbreviation
 tsto	['N_TALO']	subcat=abbreviation
