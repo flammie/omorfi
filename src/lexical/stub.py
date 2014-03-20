@@ -188,6 +188,8 @@ def stub_all_ktn(wordmap):
         elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] == 'obligatory':
             if wordmap['stub'].endswith('n'):
                 wordmap['stub'] = wordmap['stub'][:-2]   # hyvillä|än -mme
+            elif wordmap['stub'].endswith('nsa') or wordmap['stub'].endswith('nsä'):
+                wordmap['stub'] = wordmap['stub'][:-3]   # aika|nsa -mme
         elif wordmap['kotus_tn'] in [0, 99, 999]:
             pass
         elif wordmap['kotus_tn'] == 1101:
