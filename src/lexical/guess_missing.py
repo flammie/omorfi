@@ -44,6 +44,8 @@ def main():
             help="Use KAV as hint for guessing")
     ap.add_argument('--newpara', '-n', metavar='NEWPARA',
             help="Use NEWPARA as hint for guessing")
+    ap.add_argument("--plt", "-t", action="store_true",
+            help="Plurale tantum (plt) word")
     ap.add_argument('--input', '-i', metavar="INFILE",
             help="Read (multiple) lemma and paradigm values from INFILE (space separated: LEMMA (NEWPARA | KTN(-KAV)) )")
     ap.add_argument('--output', '-o', metavar="OUTFILE",
@@ -101,7 +103,6 @@ def do_guessing(args):
         word['pos'] = args.pos
         if args.verbose:
             print(word['pos'], file=stderr)
-    
     if args.ktn:
         word['kotus_tn'] = int(args.ktn)
         if args.verbose:
@@ -118,6 +119,10 @@ def do_guessing(args):
         word['new_paras'].append(args.newpara)
         if args.verbose:
             print(word['new_paras'], file=stderr)
+    if args.plt:
+        word['plurale_tantum'] = True
+        if args.verbose:
+            print('plurale_tantum = True', file=stderr)
     
     # this we can guess
     if args.verbose:
