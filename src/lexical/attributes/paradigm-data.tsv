@@ -837,6 +837,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['NUM_NELJÄ']	NUMERAL	10	False	False	weaken	front	ä	None	False	False
 ['NUM_NELJÄS']	NUMERAL	45	False	False	strengthen	front	False	None	False	False
 ['NUM_PARI']	NUMERAL	7	False	False	False	back	False	None	False	False
+['NUM_PUOLI']	NUMERAL	24	False	False	False	back	False	None	False	False
 ['NUM_SATA']	NUMERAL	9	F	False	weaken	back	a	None	False	False
 ['NUM_TOINEN']	NUMERAL	38	False	False	strengthen	back	False	None	False	False
 ['NUM_TUHAT']	NUMERAL	46	False	False	strengthen	back	False	None	False	False
