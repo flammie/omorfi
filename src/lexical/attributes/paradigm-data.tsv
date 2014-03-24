@@ -447,6 +447,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_KIHARAT']	NOUN	11	False	obligatory	weaken	back	False	None	False	False
 ['N_KIHARRIN']	NOUN	33	K	False	strengthen	back	False	None	False	False
 ['N_KIINNE']	NOUN	48	J	False	strengthen	front	False	None	False	False
+['N_KIIRU']	NOUN	48	False	False	strengthen	back	u	None	False	False
 ['N_KILPIKKÄÄT']	NOUN	41	A	obligatory	strengthen	front	False	None	False	False
 ['N_KILPI']	NOUN	7	E	False	weaken	front	False	None	False	False
 ['N_KINNAS']	NOUN	41	J	False	strengthen	back	False	None	False	False
@@ -614,6 +615,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_ONNI']	NOUN	7	False	False	weaken	back	False	None	False	False
 ['N_OOKOO']	NOUN	18	False	False	weaken	back	o	None	False	False
 ['N_OPINNOT']	NOUN	1	J	obligatory	weaken	back	False	None	False	False
+['N_ORI']	NOUN	48	False	False	strengthen	back	i	None	False	False
 ['N_OSATON']	NOUN	34	C	False	strengthen	back	False	None	False	False
 ['N_OSOITE']	NOUN	48	C	False	strengthen	back	False	None	False	False
 ['N_PAIKAT']	NOUN	9	A	obligatory	weaken	back	False	None	False	False
