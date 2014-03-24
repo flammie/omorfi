@@ -824,6 +824,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['NUM_KAHDEKSAN']	NUMERAL	10	False	False	weaken	back	False	None	False	False
 ['NUM_KAKSI']	NUMERAL	31	False	False	weaken	back	False	None	False	False
 ['NUM_KOLMAS']	NUMERAL	45	False	False	strengthen	back	False	None	False	False
+['NUM_KOLMASOSA']	NUMERAL	10	False	False	False	back	a	None	False	False
 ['NUM_KOLME']	NUMERAL	1008	False	False	weaken	back	False	None	False	False
 ['NUM_KUUSI']	NUMERAL	27	False	False	weaken	back	False	None	False	False
 ['NUM_KUUTISEN']	NUMERAL	99	False	False	False	back	False	None	False	False
