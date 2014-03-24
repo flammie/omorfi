@@ -618,8 +618,8 @@ V_OLLA	Vact|Tcond|Ppl3|Udial	oisivat	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tcond|Psg1|Udial	oisin	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tcond|Psg2|Udial	oisit	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tcond|Psg3|Udial	ois	V_BACK_CLIT_OPT
-V_OLLA	Vact|Tpast|Ncon|Npl	olleet	V_BACK_CLIT_OPT
-V_OLLA	Vact|Tpast|Ncon|Nsg	ollut	V_BACK_CLIT_OPT
+V_OLLA	Vact|Tpast|Npl|Ncon	olleet	V_BACK_CLIT_OPT
+V_OLLA	Vact|Tpast|Nsg|Ncon	ollut	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tpot|Ncon	liene	V_FRONT_CLIT_OPT
 V_OLLA	Vact|Tpot|Ncon	lie	V_FRONT_CLIT_OPT
 V_OLLA	Vact|Tpot|Ppl1	lienemme	V_FRONT_CLIT_OPT
