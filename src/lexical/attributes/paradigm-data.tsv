@@ -945,6 +945,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_KOKO']	PRONOUN	99	False	False	False	back	False	None	False	False
 ['PRON_KUKAAN']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUKA']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_KUKAKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUMPIKAAN']	PRONOUN	101	False	False	weaken	back	False	None	False	False
 ['PRON_KUMPIKIN']	PRONOUN	101	False	False	weaken	back	False	None	False	False
@@ -955,6 +956,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_MIKIN']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKÄ']	PRONOUN	1101	False	False	weaken	front	False	None	False	False
+['PRON_MIKÄKIN']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKÄÄN']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MINÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MOLEMMAT']	PRONOUN	16	H	obligatory	weaken	back	False	None	False	False

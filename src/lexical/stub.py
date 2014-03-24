@@ -146,12 +146,16 @@ def stub_all_ktn(wordmap):
                 wordmap = mangle_suffixes_or_die(wordmap, ['uka'])
             elif wordmap['lemma'] == 'kukaan':
                 wordmap = mangle_suffixes_or_die(wordmap, ['ukaan'])
+            elif wordmap['lemma'] == 'kukakin':
+                wordmap = mangle_suffixes_or_die(wordmap, ['ukakin'])
             elif wordmap['lemma'].endswith('kukin'):
                 wordmap = mangle_suffixes_or_die(wordmap, ['ukin'])
             elif wordmap['lemma'] == 'mikin':
                 wordmap = mangle_suffixes_or_die(wordmap, ['kin'])
             elif wordmap['lemma'] == 'mikä':
                 wordmap = mangle_suffixes_or_die(wordmap, ['kä'])
+            elif wordmap['lemma'] == 'mikäkin':
+                wordmap = mangle_suffixes_or_die(wordmap, ['käkin'])
             elif wordmap['lemma'] == 'mikään':
                 wordmap = mangle_suffixes_or_die(wordmap, ['kään'])
             elif wordmap['lemma'] == 'missä':
@@ -175,7 +179,7 @@ def stub_all_ktn(wordmap):
             elif wordmap['lemma'].endswith('kumpikin'):
                 wordmap = mangle_suffixes_or_die(wordmap, ['pikin'])
             elif wordmap['lemma'] in ['jota', 'kenkään', 'kuta', 'ma', 'mi',
-                    'missäkin', 'mikäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
+                    'missäkin', 'monta', 'montaa', 'sa', 'tää', 'ken',
                     'koko']:
                 pass
         elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] == 'optional':
