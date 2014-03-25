@@ -199,6 +199,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['A_MUU']	ADJECTIVE	18	False	False	weaken	back	u	None	False	False
 ['A_MYKKÄ']	ADJECTIVE	10	A	False	weaken	front	ä	None	False	False
 ['A_MYKKÄ']	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False
+['A_MÄRKÄ']	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False
 ['A_MÄTÄ']	ADJECTIVE	10	F	False	weaken	front	ä	None	False	False
 ['A_OHUT']	ADJECTIVE	43	False	False	strengthen	back	False	None	False	False
 ['A_OIKEE']	ADJECTIVE	15	False	False	weaken	back	False	None	False	False
@@ -738,7 +739,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_SEIVÄS']	NOUN	41	E	False	strengthen	front	False	None	False	False
 ['N_SELENE']	NOUN	2	False	False	weaken	front	False	None	False	False
 ['N_SELJÄT']	NOUN	10	L	obligatory	weaken	front	False	None	False	False
-['N_SELKÄ']	NOUN	10	L	False	weaken	front	ä	None	False	False
 ['N_SEPPÄ']	NOUN	10	B	False	weaken	front	ä	None	False	False
 ['N_SERGEJ']	NOUN	22	False	False	weaken	back	False	None	False	False
 ['N_SERGEJ']	NOUN	22	False	False	weaken	front	False	None	False	False
@@ -902,6 +902,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_VÄRTÖ']	NOUN	1	K	False	weaken	front	False	None	False	False
 ['N_YHTIÖT']	NOUN	3	False	obligatory	weaken	front	False	None	False	False
 ['N_YKSIKKÖ']	NOUN	4	A	False	weaken	front	False	None	False	False
+['N_YLKÄ']	NOUN	10	L	False	weaken	front	ä	None	False	False
 ['N_YLÄNKÖ']	NOUN	1	G	False	weaken	front	False	None	False	False
 ['N_YLÖÖ']	NOUN	17	False	False	weaken	front	ö	None	False	False
 ['N_YMPÄRYSTÄ']	NOUN	9	False	False	weaken	front	ä	None	False	False
