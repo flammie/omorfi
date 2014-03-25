@@ -202,7 +202,9 @@ def stub_all_ktn(wordmap):
             fail_guess_because(wordmap, ['!av'], ['0-71', 999, 1007, 1010,1009,
                 1024, 1026, 1067, 1099])
     elif wordmap['grade_dir'] == 'weaken':
-        if wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:
+        if wordmap['kotus_av'] == 'D' and wordmap['lemma'].endswith('uoka'):
+            wordmap = mangle_suffixes_or_die(wordmap, ['oka'])
+        elif wordmap['kotus_av'] in ['A', 'D', 'G', 'L', 'M']:
             if tn in [1, 2, 3, 4]:
                 wordmap = mangle_suffixes_or_die(wordmap, ['ko', 'ku',
                     'ky', 'kö'])

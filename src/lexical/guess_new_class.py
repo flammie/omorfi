@@ -639,8 +639,14 @@ def guess_new_noun(wordmap):
                     fail_guess_because(wordmap, ['N', 10, 'C'],
                             ['tta', 'ttä'])
             elif wordmap['kotus_av'] == 'D':
-                if wordmap['lemma'].endswith('ka'):
-                    wordmap['new_paras'] = ['N_VUOKA']
+                if wordmap['lemma'].endswith('lka'):
+                    wordmap['new_paras'] = ['N_SULKA']
+                elif wordmap['lemma'].endswith('lkä'):
+                    wordmap['new_paras'] = ['N_NÄLKÄ']
+                elif wordmap['lemma'].endswith('uoka'):
+                    wordmap['new_paras'] = ['N_RUOKA']
+                elif wordmap['lemma'].endswith('ka'):
+                    wordmap['new_paras'] = ['N_LOKA']
                 elif wordmap['lemma'].endswith('kä'):
                     wordmap['new_paras'] = ['N_REIKÄ']
                 else:

@@ -531,6 +531,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_LIPPU']	NOUN	1	B	False	weaken	back	False	None	False	False
 ['N_LIUKU']	NOUN	1	D	False	weaken	back	False	None	False	False
 ['N_LIVVADIEVÁT']	NOUN	21	False	obligatory	weaken	back	a	None	False	False
+['N_LOKA']	NOUN	10	D	False	weaken	back	a	None	False	False
 ['N_LOKKI']	NOUN	5	A	False	weaken	back	False	None	False	False
 ['N_LOMMOL']	NOUN	49	H	False	strengthen	back	False	None	False	False
 ['N_LOTTE']	NOUN	8	C	False	weaken	back	False	None	False	False
@@ -606,6 +607,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_NUKKE']	NOUN	8	A	False	weaken	back	False	None	False	False
 ['N_NÄKY']	NOUN	1	D	False	weaken	front	False	None	False	False
 ['N_NÄKÖ']	NOUN	1	D	False	weaken	front	False	None	False	False
+['N_NÄLKÄ']	NOUN	10	D	False	weaken	front	ä	None	False	False
 ['N_OIKEUDET']	NOUN	40	False	obligatory	strengthen	back	False	None	False	False
 ['N_OLKA']	NOUN	10	L	False	weaken	back	a	None	False	False
 ['N_OLUT']	NOUN	43	False	False	strengthen	back	False	None	False	False
@@ -707,6 +709,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_RUIS']	NOUN	41	D	False	strengthen	back	False	None	False	False
 ['N_RUMPU']	NOUN	1	H	False	weaken	back	False	None	False	False
 ['N_RUNKO']	NOUN	1	G	False	weaken	back	False	None	False	False
+['N_RUOKA']	NOUN	10	D	False	weaken	back	a	None	False	False
 ['N_RUOKO']	NOUN	1	D	False	weaken	back	False	None	False	False
 ['N_RUOPPAAT']	NOUN	41	B	obligatory	strengthen	back	False	None	False	False
 ['N_RUUHI']	NOUN	24	False	False	weaken	back	False	None	False	False
@@ -760,6 +763,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_SUHTEET']	NOUN	48	F	obligatory	strengthen	back	False	None	False	False
 ['N_SUKAT']	NOUN	10	A	obligatory	weaken	back	False	None	False	False
 ['N_SUODATIN']	NOUN	33	C	False	strengthen	back	False	None	False	False
+['N_SULKA']	NOUN	10	D	False	weaken	back	a	None	False	False
 ['N_SUOT']	NOUN	19	False	obligatory	weaken	back	False	None	False	False
 ['N_SYLI']	NOUN	23	False	False	weaken	front	False	None	False	False
 ['N_SYLTÄ']	NOUN	10	I	False	weaken	front	ä	None	False	False
@@ -891,7 +895,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_VODĂ']	NOUN	10	False	False	weaken	back	False	None	False	False
 ['N_VODĂ']	NOUN	10	False	False	weaken	front	False	None	False	False
 ['N_VUODET']	NOUN	27	False	obligatory	weaken	back	False	None	False	False
-['N_VUOKA']	NOUN	10	D	False	weaken	back	a	None	False	False
 ['N_VUOLLE']	NOUN	48	I	False	strengthen	back	False	None	False	False
 ['N_VUOLLET']	NOUN	44	I	False	strengthen	back	False	None	False	False
 ['N_VUO']	NOUN	19	False	False	weaken	back	False	None	False	False
