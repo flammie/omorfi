@@ -2469,6 +2469,7 @@ asutustilallinen	['N_AAKKOSTAMINEN']	boundaries=asutus|tilallinen
 asutustila	['N_KIRJA']	boundaries=asutus|tila
 asutustoiminta	['N_KUTSUNTA']	boundaries=asutus|toiminta
 asuurinsininen	['A_KYLMÄJÄRKINEN']	boundaries=asuurin|sininen
+asvalttitie	['N_TIE']	boundaries=asvaltti|tie
 asyylihalidi	['N_RUUVI']	boundaries=asyyli|halidi
 asyyliryhmä	['N_HÖPÖTTÄJÄ']	boundaries=asyyli|ryhmä
 atariyksikkö	['N_YKSIKKÖ']	boundaries=atari|yksikkö
