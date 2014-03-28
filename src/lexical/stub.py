@@ -183,7 +183,7 @@ def stub_all_ktn(wordmap):
                     'koko']:
                 pass
         elif wordmap['kotus_tn'] in [99, 999] and wordmap['possessive'] == 'optional':
-            if wordmap['stub'] == 'nähden':
+            if wordmap['stub'] == 'den':
                 wordmap = mangle_suffixes_or_die(wordmap, ['den'])  # näh|te| -mme
             elif wordmap['stub'].endswith('n'):
                 wordmap = mangle_suffixes_or_die(wordmap, ['n'])  # näkyvii|n -mme
@@ -310,6 +310,8 @@ def stub_all_ktn(wordmap):
             elif wordmap['kotus_tn'] == 41:
                 wordmap = mangle_suffixes_or_die(wordmap,
                         ['as', 'es', 'is', 'äs'])
+            elif wordmap['kotus_tn'] == 43:
+                wordmap = mangle_suffixes_or_die(wordmap, ['ut', 'yt'])
             elif wordmap['kotus_tn'] == 44:
                 wordmap = mangle_suffixes_or_die(wordmap, ['et'])
             elif wordmap['kotus_tn'] == 48:

@@ -1534,6 +1534,12 @@ def guess_new_noun(wordmap):
                 else:
                     fail_guess_because(wordmap, ['N', 43, False],
                         ['ut', 'yt'])
+            elif wordmap['kotus_av'] == 'D':
+                if wordmap['lemma'].endswith('ut'):
+                    wordmap['new_paras'] = ['N_POIUT']
+                else:
+                    fail_guess_because(wordmap, ['N', 43, 'D'],
+                        ['ut'])
             elif wordmap['kotus_av'] == 'H':
                 if wordmap['lemma'].endswith('mmyt'):
                     wordmap['new_paras'] = ['N_IMMYT']

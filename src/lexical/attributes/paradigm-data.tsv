@@ -644,6 +644,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_POHATTA']	NOUN	14	C	False	weaken	back	a	None	False	False
 ['N_POHJE']	NOUN	48	L	False	strengthen	back	False	None	False	False
 ['N_POIKA']	NOUN	1010	D	False	weaken	back	a	None	False	False
+['N_POIUT']	NOUN	43	D	False	strengthen	back	False	None	False	False
 ['N_POJAT']	NOUN	1010	D	obligatory	weaken	back	False	None	False	False
 ['N_POLITIIKKA']	NOUN	9	A	False	weaken	back	a	None	False	False
 ['N_POLJIN']	NOUN	33	L	False	strengthen	back	False	None	False	False
