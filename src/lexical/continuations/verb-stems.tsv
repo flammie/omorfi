@@ -607,10 +607,10 @@ V_OLLA	Vact|Cnut	ollut	#
 V_OLLA	Dnut	oll	A_KULUNUT
 V_OLLA	Vact|Dmaisilla	olemaisilla	V_BACK_POSS_AN
 V_OLLA	Vact|Ima|Xabe	olematta	V_BACK_POSS_AN_OPT
-V_OLLA	Vact|Ima|Xade	olemalla	V_BACK_POSS_AN_OPT
-V_OLLA	Vact|Ima|Xela	olemasta	V_BACK_POSS_AN_OPT
-V_OLLA	Vact|Ima|Xill	olemaan	V_BACK_POSS_OPT
-V_OLLA	Vact|Ima|Xine	olemassa	V_BACK_POSS_OPT
+V_OLLA	Vact|Ima|Xade	olemalla	V_BACK_CLIT_OPT
+V_OLLA	Vact|Ima|Xela	olemasta	V_BACK_CLIT_OPT
+V_OLLA	Vact|Ima|Xill	olemaan	V_BACK_CLIT_OPT
+V_OLLA	Vact|Ima|Xine	olemassa	V_BACK_CLIT_OPT
 V_OLLA	Vact|Ima|Xins	oleman	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tcond|Ppl1|Udial	oisimme	V_BACK_CLIT_OPT
 V_OLLA	Vact|Tcond|Ppl2|Udial	oisitte	V_BACK_CLIT_OPT
