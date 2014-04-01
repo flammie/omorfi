@@ -1,3 +1,4 @@
+eri	['PRON_KOKO']	subcat=quantor
 eräs	['PRON_ERÄS']	subcat=quantor|indefinite
 harva	['PRON_SAMA']	subcat=quantor
 harvempi	['PRON_USEAMPI']	subcat=quantor|comp
