@@ -37,11 +37,11 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['stub'] = extra_fields[1]
                 wordmap['boundaries'] = extra_fields[1]
             elif extra_fields[0] == 'subcat':
-                wordmap['subcat'] = extra_fields[1].upper()
+                wordmap['subcat'].append(extra_fields[1].upper())
             elif extra_fields[0] == 'sem':
                 wordmap['sem'].append(extra_fields[1].upper())
             elif extra_fields[0] == 'particle':
-                wordmap['particle'] = extra_fields[1].upper()
+                wordmap['particle'].append(extra_fields[1].upper())
             elif extra_fields[0] == 'pronunciation':
                 wordmap['pronunciation'] = extra_fields[1]
             elif extra_fields[0] == 'origin':
@@ -49,12 +49,10 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
             else:
                 print("Unrecognised extra field", tsv_extra, "in CSV", file=stderr)
                 exit(1)
-    if wordmap['proper_noun_class']: 
-        wordmap['proper_noun_class'].sort()
-        wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class'])
-    if wordmap['sem']:
-        wordmap['sem'].sort()
-        wordmap['sem'] = ','.join(wordmap['sem'])
+    wordmap['proper_noun_class'].sort()
+    wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class'])
+    wordmap['sem'].sort()
+    wordmap['sem'] = ','.join(wordmap['sem'])
     
     return wordmap
 

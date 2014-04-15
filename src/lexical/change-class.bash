@@ -9,19 +9,19 @@ if test $# -lt 3 ; then
 fi
 
 echo "Following lexemes are affected:"
-if ! egrep "^${1}	\['${2}'\]" $LEXFILE ; then
+if ! egrep "^(${1})	\['(${2})'\]" $LEXFILE ; then
     echo "None found, folding"
     exit 1
 fi
 
 cp -v ${LEXFILE} ${LEXFILE}~
-sed -e "s/^${1}	\['${2}'\]/$1	['$3']/" ${LEXFILE} > ${LEXFILE}~~
+sed -r -e "s/^(${1})	\['(${2})'\]/\1	['${3}']/" ${LEXFILE} > ${LEXFILE}~~
 diff -u ${LEXFILE}~ ${LEXFILE}~~
 cp ${LEXFILE}~~ ${LEXFILE}
 
 for f in ${ATTRIBUTES} ; do
     cp -v ${f} ${f}~
-    sed -e "s/^${1}	\['${2}'\]/$1	['$3']/" ${f} > ${f}~~
+    sed -r -e "s/^(${1})	\['(${2})'\]/\1	['${3}']/" ${f} > ${f}~~
     diff -u ${f}~ ${f}~~
     cp ${f}~~ ${f}
 done

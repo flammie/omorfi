@@ -5,7 +5,7 @@ b c d f g h j k l m n p q r s t v w x z
 A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 
 ’:%' %':’ ’ %'
-%-%0:0 %-%0:%-
+%{hyph%?%}:0 %{hyph%?%}:%-
 %-
 
 %>:0
@@ -16,13 +16,13 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 Sets
 Vowels = a e i o u y ä ö ;
 Consonants = b c d f g h j k l m n p q r s t v w x z ;
-Upper = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö ;
+UpperOrSyms = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö  %0 1 2 3 4 5 6 7 8 9 %- ;
 
 Rules
 
 "Disallow no hyphen on vowel boundaries"
-%-%0:0 /<= Vv :0*  _ :0* Vv ; where Vv in Vowels ;
+%{hyph%?%}:0 /<= Vv :0*  _ :0* Vv ; where Vv in Vowels ;
 
 "Require hyphen on some caps"
-%-%0:%- <= Upper [? - :%- ]* _ ;
-            _ :0* Upper ;
+%{hyph%?%}:%- <= UpperOrSyms [? - :%- ]* _ ;
+            _ :0* UpperOrSyms ;

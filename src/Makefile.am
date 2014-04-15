@@ -71,8 +71,8 @@ temporary.unbounded.hfst: temporary.tagged.hfst
 	cat $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
-# note here: tag weights are made with regexps containing flags, 
 if WANT_TAGWEIGHTS
+# corpus trained weights
 temporary.tagweights-only.hfst: temporary.unbounded.hfst weights/weights.$(TAGWEIGHTS).hfst
 	$(HCOMP) $(HFST_FLAGS) weights/weights.$(TAGWEIGHTS).hfst temporary.unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
@@ -87,15 +87,11 @@ temporary.tag-backoff.hfst: temporary.unbounded.hfst weights/analysis-sigma-star
 temporary.tagweighted.hfst: temporary.tagweights-only.hfst temporary.tag-backoff.hfst
 	$(HUN) $(HFST_FLAGS) temporary.tagweights-only.hfst temporary.tag-backoff.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
-
 else
-temporary.tagweighted.hfst: temporary.unbounded.hfst
-	$(HREW) $(HFST_FLAGS) -S '[GUESS=COMPOUND]' -a 16 < $< |\
-		$(HREW) $(HFST_FLAGS) -S '[GUESS=DERIVE]' -a 16 |\
-		$(HREW) $(HFST_FLAGS) -S '[STYLE=NONSTANDARD]' -a 32 |\
-		$(HREW) $(HFST_FLAGS) -S '[STYLE=RARE]' -a 32 |\
-		$(HREW) $(HFST_FLAGS) -S '[STYLE=DIALECTAL]' -a 32 |\
-		$(HREW) $(HFST_FLAGS) -S '[STYLE=ARCHAIC]' -a 32 > $@
+# hand-written weights
+temporary.tagweighted.hfst: temporary.unbounded.hfst lexical/omorfi.reweight
+	$(HREW) $(HFST_FLAGS) -T lexical/omorfi.reweight temporary.unbounded.hfst |\
+		$(HMIN) $(HFST_FLAGS) > $@
 endif
 
 # the token weights from corpus without flags

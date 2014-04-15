@@ -153,9 +153,11 @@ def guess_gradestem(wordmap):
     return wordmap
 
 def guess_bound_morphs(wordmap):
-    if wordmap['is_prefix']:
-        wordmap['stub'] = replace_rightmost(wordmap['stub'], '-', '')
-    elif wordmap['is_suffix']:
+    if wordmap['stub'].endswith('-'):
+        wordmap['is_prefix'] = True
+        wordmap['stub'] = wordmap['stub'][:-1]
+    elif wordmap['stub'].startswith('-'):
+        wordmap['is_suffix'] = True
         wordmap['stub'] = wordmap['stub'][1:]
     return wordmap
 

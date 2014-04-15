@@ -27,7 +27,7 @@ from time import strftime
 import argparse
 import csv
 
-from wordmap import init_wordmap, get_wordmap_fieldnames
+from wordmap import init_wordmap, get_wordmap_fieldnames, split_wordmap_by_field
 from gradation import gradation_make_morphophonemes
 from parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
 from plurale_tantum import plurale_tantum_get_singular_stem
@@ -74,6 +74,7 @@ def main():
         quoting = csv.QUOTE_NONE
         quotechar = None
 
+    errors = False
     joinmap = dict()
     # read joins from file if any
     with open(args.join, 'r', newline='') as joins:
@@ -127,8 +128,10 @@ def main():
                             else:
                                 wordmap[k] = v
                 else:
-                    print("new para not in join data:", joinkey)
-                    exit(1)
+                    print("\033[93mMissing!\033[0m",
+                          "new para not in join data:", joinkey)
+                    errors = True
+                    continue
 
                 # Guess works in order
                 wordmap = guess_stem_features_ktn(wordmap)
@@ -142,8 +145,23 @@ def main():
                 wordmap = stub_all_ktn(wordmap)
                 # suffixes can be id'd by the - in beginning
                 wordmap = guess_bound_morphs(wordmap)
+                if wordmap['is_suffix']:
+                    wordmap['real_pos'] = wordmap['pos']
+                    wordmap['pos'] = 'SUFFIX'
+                # split multiple particle or subcat definitions to distinct lexemes
+                wordmaps = [wordmap]
+                wordmaps = [ m for wm in wordmaps 
+                                for m in split_wordmap_by_field(wm, 'particle')]
+                wordmaps = [ m for wm in wordmaps 
+                                for m in split_wordmap_by_field(wm, 'subcat')]
                 # print result
-                tsv_writer.writerow(wordmap)
+                for wordmap in wordmaps:
+                    tsv_writer.writerow(wordmap)
+    if errors:
+        print("you must fix database integrity or hack the scripts",
+              "before continuing")
+        exit(1)
+
     exit()
 
 

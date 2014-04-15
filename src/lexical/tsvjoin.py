@@ -47,7 +47,7 @@ def main():
             dest='outfilename',
             metavar="OFILE",
             help="write resulting data to OFILE")
-    ap.add_argument("--fields", "-f", action="store", default=2,
+    ap.add_argument("--fields", "-f", action="store", type=int, default=2,
             metavar="N", help="read N fields from master")
     ap.add_argument("--separator", "-s", action="store", default="\t",
             metavar="SEP", help="use SEP as separator")
@@ -56,6 +56,8 @@ def main():
                 "do not have SEPs")
     ap.add_argument("--strip", "-S", action="store",
             metavar="STRIP", help="strip STRIP from fields before using")
+    ap.add_argument("--ignore-errors", "-I", action="store_true", default=False,
+            help="silently ignore references to entries missing from master file")
     args = ap.parse_args()
 
     if args.strip == '"' or args.strip == "'":
@@ -91,6 +93,7 @@ def main():
         if args.verbose:
             print("\n", entry_count, "entries in database")
     # join all join files (slow but more workable)
+    errors = False
     for join_filename in args.joinfilenames:
         if args.verbose:
             print("Reading joins from", join_filename)
@@ -107,7 +110,8 @@ def main():
                 join_on = ''
                 if len(join_parts) < args.fields:
                     print("Must have at least N separtors on each",
-                        "non-comment non-empty line of join; Skipping:", join_line,
+                        "non-comment non-empty line of join; Skipping:\n", 
+                        args.separator.join(join_parts),
                         file=stderr)
                     continue
                 join_on = args.separator.join(join_parts[0:args.fields])
@@ -115,22 +119,26 @@ def main():
                     # skip header line
                     continue
                 if not join_on in words.keys():
-                    print("\033[93mMissing!\033[0m "
-                          "Could not find the key",
-                          join_on, "used by\033[91m", join_file.name,
-                          "\033[0mline\033[91m", linecount, "\033[0min any of",
-                          " ".join(args.infilenames), file=stderr)
-                    print("you must fix database integrity or hack the scripts",
-                            "before continuing")
-                    exit(1)
+                    if not args.ignore_errors:
+                        print("\033[93mMissing!\033[0m "
+                              "Could not find the key",
+                              join_on, "used by\033[91m", join_file.name,
+                              "\033[0mline\033[91m", linecount, "\033[0min any of",
+                              " ".join(args.infilenames), file=stderr)
+                        errors = True
                 else:
                     this_entry = words[join_on]
                     this_entry += [join_parts[args.fields]]
                     words[join_on] = this_entry
                     joincount += 1
-                join_line = join_file.readline()
         if args.verbose:
-            print("\n", joincount, "joins in that table")
+            print(joincount, "joins in that table\n")
+
+    if errors:
+        print("you must fix database integrity or hack the scripts",
+              "before continuing")
+        exit(1)
+
     with open(args.outfilename, "w", newline='') as output:
         if args.verbose:
             print("Writing master database to", args.outfilename)
