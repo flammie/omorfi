@@ -29,8 +29,6 @@ q:Q r:R s:S š:Š t:T u:U v:V w:W x:X y:Y z:Z ž:Ž å:Å ä:Ä ö:Ö
 %{#%} %{##%}
 
 ! Uppercasing analyses
-0:%[CASECHANGE%=UPFIRST%] 0:%[CASECHANGE%=UPALL%]
-0:%[CASECHANGE%=NONE%]
 ;
 
 Sets
@@ -49,10 +47,4 @@ Lc:Uc => %{##%}: _ ;
 
 "Disallow retained lowercase after word medial uppercase"
 Lc /<= Lower:Upper Lower:Upper [Lower:Upper | ?]* _ ; where Lc in Lower ;
-
-"Mark no case changes"
-0:%[CASECHANGE%=NONE%] <=> %{##%}: [Lower | Upper] [? - [Lower:Upper | %{##%}: | 0:CaseChange]]+ %{##%}: _ # ;
-
-"Mark uppercasing first"
-0:%[CASECHANGE%=UPFIRST%] <=> %{##%}: Lower:Upper :Lower [? - [Lower:Upper | %{##%}: | 0:CaseChange]]+ %{##%}: _ # ;
 

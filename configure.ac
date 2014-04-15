@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi],[20131332],[flammie@iki.fi], [http://code.google.com/p/omorfi/])
+AC_INIT([omorfi],[20141332],[flammie@iki.fi], [http://code.google.com/p/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.11 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
@@ -21,9 +21,9 @@ AS_IF([test "x$with_hfst" = "xno"],
 AC_SUBST([UPPERCASING], [$enable_uppercasing])
 AC_ARG_ENABLE([uppercasing],
               [AS_HELP_STRING([--enable-uppercasing=STYLE],
-                              [uppercase surface strings with STYLE @<:@default=no@:>@])],
+                              [uppercase surface strings with STYLE @<:@default=any@:>@])],
               [enable_uppercasing=$enableval],
-              [enable_uppercasing=no])
+              [enable_uppercasing=any])
 AC_SUBST([UPPERCASING], [$enable_uppercasing])
 AC_ARG_ENABLE([tokenweights],
               [AS_HELP_STRING([--enable-tokenweights=WEIGHTS],
