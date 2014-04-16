@@ -870,7 +870,6 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     else:
         for morph in morphs:
             if morph != '' and morph != '0':
-                print("Segment: ", morph, "!", sep='"')
                 omorstring += '[SEGMENT=' + morph + ']'
         for tag in tags:
             omorstring += format_tag_omor(tag, format)
