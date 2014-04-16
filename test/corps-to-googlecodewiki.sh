@@ -16,7 +16,8 @@ for f in *.text; do
     echo "|| *Frequency* || *Word form* ||"
     head -n 100 ${f%text}misses |\
         sed -e 's/^ *//' -e 's/^[[:digit:]]*/ \0 || /' \
-            -e 's/^/||/' -e 's/$/||/' -e 's/[[:space:]]*+?/ /'
+            -e 's/[^[:space:]]*+?.*$/ /' \
+            -e 's/^/||/' -e 's/$/||/' 
     echo
 done
 
