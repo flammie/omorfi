@@ -15,29 +15,7 @@ MAYBE_TAGGER_HACKS=hacks/tagger-hacks.lexc
 endif
 
 # lexc data
-LEXC_MAIN=definitions.lexc
-MORPHOLOGY_SRCS=\
-				stems/acronyms.lexc \
-				stems/adjectives.lexc \
-				stems/nouns.lexc \
-				stems/numerals.lexc \
-				stems/pronouns.lexc \
-				stems/verbs.lexc \
-				inflection/acronyms.lexc \
-				inflection/adjectives.lexc \
-				inflection/nouns.lexc \
-				inflection/numerals.lexc \
-				inflection/particles.lexc \
-				inflection/pronouns.lexc \
-				inflection/verbs.lexc
-LEXICAL_SRCS=\
-			roots/acronyms.lexc \
-			roots/adjectives.lexc \
-			roots/nouns.lexc \
-			roots/numerals.lexc \
-			roots/particles.lexc \
-			roots/pronouns.lexc \
-			roots/verbs.lexc
+LEXC_MAIN=omorfi.lexc
 NOTGENERATED_SRCS=\
 				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) \
 				  $(MAYBE_TAGGER_HACKS)
@@ -50,18 +28,21 @@ LEXC_SRCS=$(LEXC_MAIN) \
 		  $(NOTGENERATED_SRCS)
 EXTRA_DIST=$(NOTGENERATED_SRCS)
 
-LEXICAL_TARGETS=omorfi.lexc.hfst #guess-universal.lexc.hfst
+LEXICAL_TARGETS=omorfi.lexc.hfst
 
-noinst_DATA=omorfi.lexc.hfst #guess-universal.lexc.hfst
+noinst_DATA=omorfi.lexc.hfst
 
 # lexical transducer
-omorfi.lexc.hfst: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) \
-				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) $(MAYBE_TAGGER_HACKS)
-	$(HLEXC) -f foma -o $@.foma $^
-	$(HF2F) -f openfst -o $@ $@.foma
-	rm $@.foma
+omorfi.lexc: $(top_builddir)/src/lexical/omorfi.lexc
+	-cp -v $< $@
 
-omorfi.lexc.foma: $(LEXC_MAIN) $(LEXICAL_SRCS) $(MORPHOLOGY_SRCS) \
+omorfi.lexc.hfst: $(LEXC_MAIN) \
+				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) $(MAYBE_TAGGER_HACKS)
+	$(HLEXC) -v -f foma -o $@.foma $^
+	$(HF2F) -v -f openfst -o $@ $@.foma
+	rm -v $@.foma
+
+omorfi.lexc.foma: $(LEXC_MAIN) \
 				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) $(MAYBE_TAGGER_HACKS)
 	cat $^ > combined.lexc
 	printf "read lexc combined.lexc\nsave stack $@" | foma

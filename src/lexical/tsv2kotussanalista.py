@@ -30,9 +30,10 @@ store additional data. The additional data needs to be in name=value format.
 from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
+import csv
 
 from format_output import format_xml_kotus_sanalista
-from parse_csv_data import parse_from_tsv
+from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
 
@@ -46,12 +47,22 @@ def main():
             help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
             help="print each step to stdout while processing")
-    ap.add_argument("--input", "-i", action="append", required=True, type=open,
+    ap.add_argument("--master", "-m", action="append", required=True,
             metavar="IFILE", help="read data from IFILEs")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True, 
             type=argparse.FileType('w'),
             metavar="OFILE", help="write roots to OFILE")
+    ap.add_argument("--fields", "-F", action="store", default=2,
+            metavar="N", help="read N fields from master")
+    ap.add_argument("--separator", action="store", default="\t",
+            metavar="SEP", help="use SEP as separator")
+    ap.add_argument("--comment", "-C", action="append", default=["#"],
+            metavar="COMMENT", help="skip lines starting with COMMENT that"
+                "do not have SEPs")
+    ap.add_argument("--strip", action="store",
+            metavar="STRIP", help="strip STRIP from fields before using")
+
     args = ap.parse_args()
     # write header to XML file
     print('<?xml version="1.0" encoding="utf-8"?>', file=args.output)
@@ -59,7 +70,7 @@ def main():
             file=args.output)
     print('<!--\nCopyright © Kotimaisten kielten tutkimuskeskus 2006',
             file=args.output)
-    print('© Joukahainen, Wiktionary, Finnwordnet, omorfi contributors 2013',
+    print('© Joukahainen, Wiktionary, Finnwordnet, omorfi contributors 2014',
             file=args.output)
     print('Omorfiin koostettu laajennettu nykysuomen sanalista', 
             file=args.output)
@@ -72,42 +83,27 @@ def main():
     print(file=args.output)
     print('<kotus-sanalista>', file=args.output)
     # read from csv files
-    for csv_file in args.input:
+    for tsv_filename in args.master:
         if args.verbose:
-            print("Reading from", csv_file.name)
-        csv_line = csv_file.readline()
+            print("Reading from", tsv_filename)
         linecount = 0
         lexicon_count = 0
         entry_count = 0
         # for each line
-        while csv_line:
-            linecount += 1
-            csv_line = csv_line.strip()
-            if csv_line.startswith("#") or csv_line.startswith("!") or csv_line == "":
-                # comment line
-                csv_line = csv_file.readline()
-                continue
-            csv_parts = []
-            if csv_line.count('\t') >= 18:
-                csv_parts = csv_line.split("\t")
-            else:
-                print("Too few tabs on line", linecount, 
-                    "skipping following line completely:", file=stderr)
-                print(csv_line, file=stderr)
-                csv_line = csv_file.readline()
-                continue
-            if csv_parts[-1] == '<- HEADERS':
-                # skip header line
-                csv_line = csv_file.readline()
-                continue
-            # here starts the guessworks
-            # the aim is to fill dict wordmap with data necessary to
-            # generate a lexc line
-            wordmap = dict()
-            wordmap = parse_from_tsv(wordmap, csv_parts)
-            # format output
-            print(format_xml_kotus_sanalista(wordmap), file=args.output)
-            csv_line = csv_file.readline()
+        with open(tsv_filename, 'r', newline='') as tsv_file:
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
+                    strict=True)
+            for tsv_parts in tsv_reader:
+                linecount += 1
+                if len(tsv_parts) < 18:
+                    print("Too few tabs on line", linecount, 
+                        "skipping following line completely:", file=stderr)
+                    print(tsv_parts, file=stderr)
+                    continue
+                wordmap = tsv_parts
+                wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
+                # format output
+                print(format_xml_kotus_sanalista(wordmap), file=args.output)
     print('</kotus-sanalista>', file=args.output)
     exit()
 

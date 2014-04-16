@@ -24,9 +24,10 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
+import csv
 
 from format_output import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry
-from parse_csv_data import parse_from_tsv
+from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
 
@@ -40,16 +41,26 @@ def main():
             help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
             help="print each step to stdout while processing")
-    ap.add_argument("--master", "-m", action="append", required=True, type=open,
+    ap.add_argument("--master", "-m", action="append", required=True,
             metavar="MFILE", help="read lexical roots from MFILEs")
-    ap.add_argument("--stemparts", "-p", action="append", required=True, type=open,
+    ap.add_argument("--stemparts", "-p", action="append", required=True,
             metavar="SPFILE", help="read lexical roots from SPFILEs")
-    ap.add_argument("--inflection", "-i", action="append", required=True, type=open,
+    ap.add_argument("--inflection", "-i", action="append", required=True,
             metavar="INFFILE", help="read inflection from INFFILEs")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True, 
             type=argparse.FileType('w'),
             metavar="OFILE", help="write roots to OFILE")
+    ap.add_argument("--fields", "-F", action="store", default=2,
+            metavar="N", help="read N fields from master")
+    ap.add_argument("--separator", action="store", default="\t",
+            metavar="SEP", help="use SEP as separator")
+    ap.add_argument("--comment", "-C", action="append", default=["#"],
+            metavar="COMMENT", help="skip lines starting with COMMENT that"
+                "do not have SEPs")
+    ap.add_argument("--strip", action="store",
+            metavar="STRIP", help="strip STRIP from fields before using")
+
     args = ap.parse_args()
     # write header to XML file
     print('<?xml version="1.0" encoding="utf-8"?>', file=args.output)
@@ -58,117 +69,84 @@ def main():
     print(format_monodix_sdefs(), file=args.output)
     # read from csv files
     print('  <pardefs>', file=args.output)
-    for tsv_file in args.inflection:
+    for tsv_filename in args.inflection:
         if args.verbose:
-            print("Reading from", tsv_file.name)
-        tsv_line = tsv_file.readline()
+            print("Reading from", tsv_filename)
         linecount = 0
         curr_pardef = ''
         # for each line
-        while tsv_line:
-            linecount += 1
-            tsv_line = tsv_line.strip()
-            if tsv_line.startswith("#") or tsv_line.startswith("!") or tsv_line == "":
-                # comment line
-                tsv_line = tsv_file.readline()
-                continue
-            tsv_parts = []
-            if tsv_line.count('\t') >= 3:
-                tsv_parts = tsv_line.split("\t")
-            else:
-                print("Too few tabs on line", linecount, 
-                    "skipping following line completely:", file=stderr)
-                print(tsv_line, file=stderr)
-                tsv_line = tsv_file.readline()
-                continue
-            if tsv_parts[-1] == '#<- HEADERS':
-                # skip header line
-                tsv_line = tsv_file.readline()
-                continue
-            # format output
-            if curr_pardef != tsv_parts[0]:
-                if curr_pardef != '':
-                    print('  </pardef>', file=args.output)
-                print('  <pardef n="' + 
-                        tsv_parts[0].lower().replace('_', '__') +
-                        '">', file=args.output)
-                curr_pardef = tsv_parts[0]
-            print(format_monodix_pardef(tsv_parts), file=args.output)
-            tsv_line = tsv_file.readline()
+        with open(tsv_filename, "r", newline='') as tsv_file:
+            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
+                    strict=True)
+            for tsv_parts in tsv_reader:
+                linecount += 1
+                if len(tsv_parts) < 3:
+                    print("Too few tabs on line", linecount, 
+                        "skipping following line completely:", file=stderr)
+                    print(tsv_line, file=stderr)
+                    tsv_line = tsv_file.readline()
+                    continue
+                # format output
+                if curr_pardef != tsv_parts[0]:
+                    if curr_pardef != '':
+                        print('  </pardef>', file=args.output)
+                    print('  <pardef n="' + 
+                            tsv_parts[0].lower().replace('_', '__') +
+                            '">', file=args.output)
+                    curr_pardef = tsv_parts[0]
+                print(format_monodix_pardef(tsv_parts), file=args.output)
     print('  </pardef>', file=args.output)
-    for tsv_file in args.stemparts:
+    for tsv_filename in args.stemparts:
         if args.verbose:
-            print("Reading from", tsv_file.name)
-        tsv_line = tsv_file.readline()
+            print("Reading from", tsv_filename)
         linecount = 0
         curr_pardef = ''
         # for each line
-        while tsv_line:
-            linecount += 1
-            tsv_line = tsv_line.strip()
-            if tsv_line.startswith("#") or tsv_line.startswith("!") or tsv_line == "":
-                # comment line
+        with open(tsv_filename, 'r', newline='') as tsv_file:
+            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
+                    strict=True)
+            for tsv_parts in tsv_reader:
+                linecount += 1
+                if len(tsv_parts) < 3:
+                    print("Too few tabs on line", linecount, 
+                        "skipping following line completely:", file=stderr)
+                    print(tsv_line, file=stderr)
+                    tsv_line = tsv_file.readline()
+                    continue
+                # format output
+                if curr_pardef != tsv_parts[0]:
+                    if curr_pardef != '':
+                        print('  </pardef>', file=args.output)
+                    print('  <pardef n="' + 
+                            tsv_parts[0].lower().replace('_', '__') +
+                            '">', file=args.output)
+                    curr_pardef = tsv_parts[0]
+                print(format_monodix_pardef(tsv_parts), file=args.output)
                 tsv_line = tsv_file.readline()
-                continue
-            tsv_parts = []
-            if tsv_line.count('\t') >= 3:
-                tsv_parts = tsv_line.split("\t")
-            else:
-                print("Too few tabs on line", linecount, 
-                    "skipping following line completely:", file=stderr)
-                print(tsv_line, file=stderr)
-                tsv_line = tsv_file.readline()
-                continue
-            if tsv_parts[-1] == '#<- HEADERS':
-                # skip header line
-                tsv_line = tsv_file.readline()
-                continue
-            # format output
-            if curr_pardef != tsv_parts[0]:
-                if curr_pardef != '':
-                    print('  </pardef>', file=args.output)
-                print('  <pardef n="' + 
-                        tsv_parts[0].lower().replace('_', '__') +
-                        '">', file=args.output)
-                curr_pardef = tsv_parts[0]
-            print(format_monodix_pardef(tsv_parts), file=args.output)
-            tsv_line = tsv_file.readline()
     print('  </pardef>', file=args.output)
     print('  </pardefs>', file=args.output)
     print('  <section id="main" type="standard">', file=args.output)
-    for tsv_file in args.master:
+    for tsv_filename in args.master:
         if args.verbose:
-            print("Reading from", tsv_file.name)
-        tsv_line = tsv_file.readline()
+            print("Reading from", tsv_filename)
         linecount = 0
-        while tsv_line:
-            linecount += 1
-            if args.verbose and (linecount % 10000 == 0):
-                print(linecount, "...", sep='')
-            tsv_line = tsv_line.strip()
-            if tsv_line.startswith("#") or tsv_line.startswith("!") or tsv_line == "":
-                # comment line
-                tsv_line = tsv_file.readline()
-                continue
-            tsv_parts = []
-            if tsv_line.count('\t') >= 18:
-                tsv_parts = tsv_line.split("\t")
-            else:
-                print("Too few tabs on line", linecount, 
-                    "skipping following line completely:", file=stderr)
-                print(tsv_line, file=stderr)
-                tsv_line = tsv_file.readline()
-                continue
-            if tsv_parts[-1] == '<- HEADERS':
-                # skip header line
-                tsv_line = tsv_file.readline()
-                continue
-           # read data from database
-            wordmap = dict()
-            wordmap = parse_from_tsv(wordmap, tsv_parts)
-            # format output
-            print(format_monodix_entry(wordmap), file=args.output)
-            tsv_line = tsv_file.readline()
+        with open(tsv_filename, 'r', newline='') as tsv_file:
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
+                    strict=True)
+            for tsv_parts in tsv_reader:
+                linecount += 1
+                if args.verbose and (linecount % 10000 == 0):
+                    print(linecount, "...", sep='', end='\r')
+                if len(tsv_parts) < 18:
+                    print("Too few tabs on line", linecount, 
+                        "skipping following line completely:", file=stderr)
+                    print(tsv_line, file=stderr)
+                    tsv_line = tsv_file.readline()
+                    continue
+                wordmap = tsv_parts
+                wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
+                # format output
+                print(format_monodix_entry(wordmap), file=args.output)
     print('  </section>', file=args.output)
     print('</dictionary>', file=args.output)
     exit()

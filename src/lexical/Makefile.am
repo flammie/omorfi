@@ -19,12 +19,13 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/particle-inflections.tsv \
 			continuations/pronoun-inflections.tsv \
 			continuations/verb-inflections.tsv
-JOINS=attributes/boundaries.csv \
-	  attributes/plurale-tantum.csv attributes/possessives.csv \
-	  attributes/pronunciation.csv attributes/proper-classes.csv \
-	  attributes/particle-classes.csv attributes/pronoun-classes.csv \
-	  attributes/semantic.csv attributes/subcategories.csv attributes/usage.csv
-SCIRPTS=csv2lexc.py csvjoin.py csv_expand.py
+JOINS=attributes/boundaries.tsv \
+	  attributes/origin.tsv \
+	  attributes/plurale-tantum.tsv attributes/possessives.tsv \
+	  attributes/pronunciation.tsv attributes/proper-classes.tsv \
+	  attributes/particle-classes.tsv attributes/pronoun-classes.tsv \
+	  attributes/semantic.tsv attributes/subcategories.tsv attributes/usage.tsv
+SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py
 FINNISC=\
 		format_output.py \
 		gradation.py \
@@ -37,55 +38,54 @@ FINNISC=\
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
-noinst_DATA=omor.timestamp
+noinst_DATA=omorfi.lexc omorfi.dix omorfi-sanalista.xml \
+			omorfi.reweight gtd-tests.yaml
 
+gtd-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
+	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=$(TAG_FORMAT) -v
 
-kotus-style.csv: $(LEXEMES)
-	echo "# This file has been generated automatically from lexemes/" > $@
-	echo "# Updates to this file will be deleted on next make" >> $@
-	cat $^ | sort | uniq >> $@
+omorfi.reweight: serialise-reweighter.py format_output.py
+	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=$(TAG_FORMAT_PRECISE)\
+		-o $@
 
-joint.tsv: kotus-style.csv $(JOINS)
-	$(PYTHON) $(srcdir)/csvjoin.py -v -i $< \
-		-j $(srcdir)/attributes/boundaries.csv \
-		-j $(srcdir)/attributes/plurale-tantum.csv \
-		-j $(srcdir)/attributes/possessives.csv \
-		-j $(srcdir)/attributes/pronunciation.csv \
-		-j $(srcdir)/attributes/particle-classes.csv \
-		-j $(srcdir)/attributes/proper-classes.csv \
-		-j $(srcdir)/attributes/pronoun-classes.csv \
-		-j $(srcdir)/attributes/semantic.csv \
-		-j $(srcdir)/attributes/subcategories.csv \
-		-j $(srcdir)/attributes/usage.csv -o $@
+joint.tsv: lexemes/lexemes.tsv $(JOINS)
+	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
+		-j $(srcdir)/attributes/boundaries.tsv \
+		-j $(srcdir)/attributes/origin.tsv \
+		-j $(srcdir)/attributes/plurale-tantum.tsv \
+		-j $(srcdir)/attributes/possessives.tsv \
+		-j $(srcdir)/attributes/pronunciation.tsv \
+		-j $(srcdir)/attributes/particle-classes.tsv \
+		-j $(srcdir)/attributes/proper-classes.tsv \
+		-j $(srcdir)/attributes/pronoun-classes.tsv \
+		-j $(srcdir)/attributes/semantic.tsv \
+		-j $(srcdir)/attributes/subcategories.tsv \
+		-j $(srcdir)/attributes/usage.tsv -o $@
 
 master.tsv: joint.tsv
-	$(PYTHON) $(srcdir)/csv_expand.py -i $< -o $@
+	$(PYTHON) $(srcdir)/tsv_expand.py \
+		-j $(srcdir)/attributes/paradigm-data.tsv -v -i $< -o $@.unsrt
+	head -n 1 < $@.unsrt > $@
+	tail -n +2 < $@.unsrt | sort >> $@
+	-rm -f $@.unsrt
 
 stemparts.tsv: $(STEMPARTS)
-	cat $^ | grep -v '^#' | sort > $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
 
 inflections.tsv: $(INFLECTIONS)
-	cat $^ | grep -v '^#' | sort> $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
 
-omor.timestamp: master.tsv stemparts.tsv inflections.tsv
-	if test ! -d $(top_builddir)/src/morphology/roots ; then \
-		mkdir -p $(top_builddir)/src/morphology/roots ; \
-	fi
-	if test ! -d $(top_builddir)/src/morphology/stems ; then \
-		mkdir -p $(top_builddir)/src/morphology/stems ; \
-	fi
-	if test ! -d $(top_builddir)/src/morphology/inflection ; then \
-		mkdir -p $(top_builddir)/src/morphology/inflection ; \
-	fi
-	$(PYTHON) $(srcdir)/csv2lexc.py -v -m master.tsv -p stemparts.tsv \
-		-i inflections.tsv \
-		-s $(top_builddir)/src/morphology/roots \
-		-S $(top_builddir)/src/morphology/stems \
-		-X $(top_builddir)/src/morphology/inflection \
-		-R $(top_builddir)/src/morphology/definitions.lexc \
-		-f=$(TAG_FORMAT_PRECISE)
-	touch $@
+omorfi.lexc: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv -o $@ -f=$(TAG_FORMAT_PRECISE)
+
+omorfi.dix: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv -o $@
+
+omorfi-sanalista.xml: master.tsv
+	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
 
 clean-local:
-	-rm -f omor.timestamp master.tsv joint.tsv kotus-style.csv stemparts.tsv inflections.tsv
+	-rm -f master.tsv joint.tsv stemparts.tsv inflections.tsv
 

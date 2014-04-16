@@ -33,7 +33,7 @@ def remove_suffixes_or_die(s, suffixes):
             return nu
     print("\033[91mUnstubbable!\033[0m Trying to rstrip ", ", ".join(suffixes),
         "from", s)
-    return s
+    return None
 
 def replace_suffix(s, suffix, repl):
     if s.endswith(suffix):
@@ -54,6 +54,11 @@ def mangle_suffixes_or_die(wordmap, suffixes):
     wordmap['bracketstub'] = replace_suffixes_or_die(wordmap['stub'], suffixes,
             '<Del>→')
     wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], suffixes)
+    if wordmap['stub'] == None:
+        print("Word has been misclassified or suffix stripping is insufficient."
+                "Fix the database or stripping rules to continue.",
+                "Relevant word entry:\n", wordmap, file=stderr)
+        exit(1)
     return wordmap
 
 # misc functions

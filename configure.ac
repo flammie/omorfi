@@ -214,6 +214,7 @@ AC_PATH_PROGS([RST2TEX], [rst2tex.py rst2tex], [false])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
 AM_CONDITIONAL([CAN_RST], [test "x$RST" != xfalse -o \( "x$RST2HTML" != xfalse -a "x$RST2PDF" != xfalse \) ])
 AM_CONDITIONAL([WANT_DOC], [test "x$enable_doc" != xfalse])
+AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
 
 # we are not using any traditional programming so as to need these standard
 # sections:
@@ -227,7 +228,7 @@ AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
                  src/hyphenation/Makefile src/orthography/Makefile
                  src/phonology/Makefile src/spell-checking/Makefile
                  src/probabilistics/Makefile src/taghacks/Makefile
-                 doc/Makefile test/Makefile 
+                 doc/Makefile test/Makefile test/test-header.yaml
                  src/scripts/Makefile src/scripts/omorfi-analyse.sh
                  src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh
                  src/scripts/omorfi-spell.sh

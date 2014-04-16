@@ -3,8 +3,18 @@
 from sys import stderr
 from omor_strings_io import fail_guess_because
 
-def guess_grade_dir(wordmap):
+def guess_pos_from_newpara(wordmap):
+    if wordmap['pos']:
+        return wordmap
+    wordmap['pos'] = wordmap['new_para'][:wordmap['new_para'].find('_')]
+
+
+def guess_grade_dir_from_ktn(wordmap):
     '''Record gradation direction based on kotus class or stem syllable.'''
+    if not wordmap['kotus_tn']:
+        return wordmap
+    if wordmap['grade_dir']:
+        return wordmap
     tn = int(wordmap['kotus_tn'])
     if tn in range(1, 32) or tn in range(52, 62) or tn in range(76, 79):
         wordmap['grade_dir'] = 'weaken'
@@ -24,6 +34,8 @@ def guess_stem_features_ktn(wordmap):
     variants, harmony etc. This is especially for those features kotus
     classification has collapsed that are hard for us.
     '''
+    if not wordmap['kotus_tn']:
+        return wordmap
     tn = int(wordmap['kotus_tn'])
     if tn in [5, 6]:
         if wordmap['lemma'].endswith('i'):
@@ -52,11 +64,11 @@ def guess_stem_features_ktn(wordmap):
             wordmap['stem_vowel'] = 'ö'
     elif tn == 19:
         if wordmap['lemma'].endswith('uo'):
-            wordmap['stem_diphtong'] = 'uo'
+            wordmap['stem_diphthong'] = 'uo'
         elif wordmap['lemma'].endswith('yö'):
-            wordmap['stem_diphtong'] = 'yö'
+            wordmap['stem_diphthong'] = 'yö'
         elif wordmap['lemma'].endswith('ie'):
-            wordmap['stem_diphtong'] = 'ie'
+            wordmap['stem_diphthong'] = 'ie'
     elif tn == 47:
         if wordmap['lemma'].endswith('ut'):
             wordmap['stem_vowel'] = 'u'
@@ -64,17 +76,19 @@ def guess_stem_features_ktn(wordmap):
             wordmap['stem_vowel'] = 'y'
     elif tn == 64:
         if wordmap['lemma'].endswith('uoda'):
-            wordmap['stem_diphtong'] = 'uo'
+            wordmap['stem_diphthong'] = 'uo'
         elif wordmap['lemma'].endswith('yödä'):
-            wordmap['stem_diphtong'] = 'yö'
+            wordmap['stem_diphthong'] = 'yö'
         elif wordmap['lemma'].endswith('iedä'):
-            wordmap['stem_diphtong'] = 'ie'
+            wordmap['stem_diphthong'] = 'ie'
     return wordmap
 
 def guess_harmony(wordmap):
     '''Guess word's harmony based on lemma, using trivial last harmony vowel
     or front algorithm.
     '''
+    if not wordmap['kotus_tn']:
+        return wordmap
     if wordmap['harmony']:
         return wordmap
     tn = int(wordmap['kotus_tn'])
@@ -88,7 +102,7 @@ def guess_harmony(wordmap):
         else:
             print("Unguessable harmony in verb; must end in {a, ä}, in", 
                     wordmap, file=stderr)
-    else:
+    elif wordmap['pronunciation']:
         lastbound = -1
         for bound in ['|', '_', '#', ' ', '-']:
             b = wordmap['pronunciation'].rfind(bound)
@@ -110,6 +124,9 @@ def guess_harmony(wordmap):
             wordmap['harmony'] = 'front'
         elif lastback > lastfront:
             wordmap['harmony'] = 'back'
+    else:
+        print("Unguessable harmony; needs pronunciation", 
+                wordmap, file=stderr)
     return wordmap
 
 def guess_pronunciation(wordmap):
@@ -121,3 +138,26 @@ def guess_pronunciation(wordmap):
     elif wordmap['stem_diphthong']:
         wordmap['pronunciation'] += wordmap['stem_diphthong']
     return wordmap
+
+def guess_gradestem(wordmap):
+    if wordmap['stem_vowel']:
+        wordmap['gradestem'] += '{^' + wordmap['stem_vowel'] + '}'
+    if wordmap['harmony']:
+        wordmap['gradestem'] += '{^' + wordmap['harmony'] + '}'
+    if wordmap['kotus_av']:
+        wordmap['gradestem'] += '{' + wordmap['kotus_av'] + '}'
+    if wordmap['plurale_tantum'] == 'obligatory':
+        wordmap['gradestem'] += '@U.PLURALE.TANTUM@'
+    elif wordmap['plurale_tantum'] == 'common':
+        wordmap['gradestem'] += '{PLT?}'
+    return wordmap
+
+def guess_bound_morphs(wordmap):
+    if wordmap['stub'].endswith('-'):
+        wordmap['is_prefix'] = True
+        wordmap['stub'] = wordmap['stub'][:-1]
+    elif wordmap['stub'].startswith('-'):
+        wordmap['is_suffix'] = True
+        wordmap['stub'] = wordmap['stub'][1:]
+    return wordmap
+

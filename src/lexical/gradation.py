@@ -5,6 +5,8 @@ from sys import stderr
 
 def gradation_make_morphophonemes(wordmap):
     '''mark up gradating stop for morphophonological handling'''
+    if not wordmap['kotus_tn']:
+        return wordmap
     tn = wordmap['kotus_tn']
     av = wordmap['kotus_av']
     if not wordmap['kotus_av']:
@@ -72,6 +74,8 @@ def gradation_make_morphophonemes(wordmap):
                 wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'i', '{k~~}i')
             elif tn == 41:
                 wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['as', 'es', 'is', '{aä}s'], ['{k~~}as', '{k~0}es', '{k~0}is', '{k~~}{aä}s'])
+            elif tn == 43:
+                wordmap['gradestem'] = replace_rightmosts(wordmap['gradestem'], ['ut', 'yt'], ['{k~~}ut', '{k~~}yt'])
             elif tn == 44:
                 wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'e', '{k~~}e')
             elif tn == 48:
