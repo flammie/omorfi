@@ -59,7 +59,7 @@ temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hf
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # make tag adjustments to orthographical version
-temporary.tagged.hfst: temporary.orth.hfst
+temporary.tagged.hfst: temporary.orth.hfst taghacks/rewrite-$(TAG_FORMAT).hfst
 	cat $< |\
 		$(HINV) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 taghacks/rewrite-$(TAG_FORMAT).hfst |\

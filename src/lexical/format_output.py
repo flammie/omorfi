@@ -716,6 +716,10 @@ def format_lexc(wordmap, format):
         return format_lexc_ftb3(wordmap, format)
     elif format.startswith("apertium"):
         return format_lexc_apertium(wordmap)
+    elif format.startswith("segment"):
+        return format_lexc_segments(wordmap)
+    else:
+        print("missing format", format, file=stderr)
 
 def format_continuation_lexc(fields, format):
     stuffs = ""
@@ -724,6 +728,10 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont, format)
         elif format.startswith("ftb3"):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
+        elif format.startswith("segment"):
+            stuffs += format_continuation_lexc_segments(fields[1], fields[2], cont)
+        else:
+            print("missing format", format, file=stderr)
     return stuffs
 
 def format_analysis_lexc(analyses, format):
@@ -732,6 +740,10 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_omor(analyses, format)
     elif format.startswith("ftb3"):
         stuffs += format_analysis_lexc_ftb3(analyses)
+    elif format.startswith("segment"):
+        stuffs += format_analysis_lexc_segments(analyses)
+    else:
+        print("missing format", format, file=stderr)
     return stuffs
 
 def format_tag(stuff, format):
@@ -739,6 +751,8 @@ def format_tag(stuff, format):
         return format_tag_omor(stuff, format)
     elif format.startswith('ftb3'):
         return format_tag_ftb3(stuff)
+    elif format.startswith('segment'):
+        return ''
     else:
         print("Wrong format for generic tag formatting:", format, file=stderr)
 
@@ -835,6 +849,9 @@ def format_analysis_lexc_omor(anals, format):
         omorstring += format_tag_omor(tags[i], format)
     return omortstring
 
+def format_analysis_segments(anals):
+    return ''
+
 def format_continuation_lexc_omor(anals, surf, cont, format):
     # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
     if anals == 'Dnut':
@@ -859,21 +876,12 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     morphs = surf.split('>')
     tags = anals.split('|')
     omorstring = ''
-    if 'no-segments' in format:
-        for tag in tags:
-            omorstring += format_tag_omor(tag, format)
-    elif len(morphs) == len(tags):
-        for i in range(len(tags)):
-            if morphs[i] != '' and morphs[i] != '0':
-                omorstring += "[SEGMENT=" + morphs[i] + "]"
-            omorstring += format_tag_omor(tags[i], format)
-    else:
-        for morph in morphs:
-            if morph != '' and morph != '0':
-                omorstring += '[SEGMENT=' + morph + ']'
-        for tag in tags:
-            omorstring += format_tag_omor(tag, format)
+    for tag in tags:
+        omorstring += format_tag_omor(tag, format)
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
+
+def format_continuation_lexc_segments(anals, surf, cont):
+    return "%s:%s\t%s ; \n" %(surf.replace('{hyph?}', '|'), surf, cont)
 
 def format_lexc_omor(wordmap, format):
     '''
@@ -921,8 +929,6 @@ def format_lexc_omor(wordmap, format):
     if wordmap['style']:
         wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
     
-    if not 'no-segments' in format:
-        wordmap['analysis'] += '[SEGMENT=' + wordmap['stub'] + ']'
     # match WORD_ID= with epsilon, then stub and lemma might match
     lex_stub = '0' + wordmap['stub'][:1] + \
                wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
@@ -931,7 +937,7 @@ def format_lexc_omor(wordmap, format):
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
                 new_para)]
     return "\n".join(retvals)
-    
+
 def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
@@ -953,6 +959,14 @@ def format_lexc_ftb3(wordmap, format):
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
                 new_para)]
+    return "\n".join(retvals)
+
+def format_lexc_segments(wordmap):
+    wordmap['analysis'] = lexc_escape(wordmap['stub']) + '≥'
+    retvals = []
+    lex_stub = lexc_escape(wordmap['stub'][:1] + wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', ''))
+    for new_para in wordmap['new_paras']:
+        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, new_para)]
     return "\n".join(retvals)
 
 def format_lexc_apertium(wordmap):
@@ -1005,6 +1019,8 @@ def format_multichars_lexc(format):
         multichars += "!! FTB 3 set:\n"
         for mcs in ftb3_multichars:
             multichars += mcs + "\n"
+    else:
+        print("missing format", format, file=stderr)
     if format.startswith("ktnkav"):
         multichars += "!! KTNKAV set:\n"
         for mcs in ktnkav_multichars:

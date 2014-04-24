@@ -87,8 +87,9 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
 
     def FormatArgType(v):
-        baseformats = ["omor", "omor-short", "ktnkav", "apertium", "giellatekno", "ftb3"]
-        extras = ["propers", "semantics", "taggerhacks", "no-segments"]
+        baseformats = ["omor", "omor-short", "ktnkav", "apertium",
+                "giellatekno", "ftb3", "segments"]
+        extras = ["propers", "semantics", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:
             raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
