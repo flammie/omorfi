@@ -40,7 +40,7 @@ omorfi.lexc.hfst: $(LEXC_MAIN) \
 				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) $(MAYBE_TAGGER_HACKS)
 	$(HLEXC) -v -f foma -o $@.foma $^
 	$(HF2F) -v -f openfst -o $@ $@.foma
-	rm -v $@.foma
+	-rm -v $@.foma
 
 omorfi.lexc.foma: $(LEXC_MAIN) \
 				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) $(MAYBE_TAGGER_HACKS)
@@ -48,4 +48,4 @@ omorfi.lexc.foma: $(LEXC_MAIN) \
 	printf "read lexc combined.lexc\nsave stack $@" | foma
 
 clean-local:
-	-rm -f *.hfst *.ol $(LEXICAL_SRCS)
+	-rm -f *.hfst *.ol $(LEXICAL_SRCS) $(LEXC_MAIN)

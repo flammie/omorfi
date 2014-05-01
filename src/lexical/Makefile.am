@@ -87,5 +87,6 @@ omorfi-sanalista.xml: master.tsv
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
 
 clean-local:
-	-rm -f master.tsv joint.tsv stemparts.tsv inflections.tsv
+	-rm -f master.tsv joint.tsv stemparts.tsv inflections.tsv \
+		omorfi.lexc omorfi.dix omorfi-sanalista.xml
 
