@@ -707,6 +707,113 @@ stuff2monodix =  {"Bc": "+",
         "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
         "UNSPECIFIED": ""}
 
+google_multichars = {"% NOUN", "% ADJ", "% VERB", "% ADV", "% X", "% PRON",
+        '%<Del%>→', '←%<Del%>',
+        "% NUM", "% ADP", "% CONJ", "% PRT"}
+
+stuff2google = {"Bc": "#",
+        "B-": "",
+        "B→": "",
+        "B←": "",
+        "Cma": "",
+        "Cnut": "",
+        "Cva": "",
+        "Cmaton": "",
+        "Cpos": "",
+        "Ccmp": "",
+        "Csup": "",
+        "Dmaisilla": "% ADV",
+        "Dminen": "% NOUN",
+        "Dnut": "% ADJ", "Dtu": "% ADJ", "Dva": "% ADJ", "Dtava": "% ADJ",
+        "Dmaton": "% NOUN",
+        "Duus": "% NOUN", "Dttaa": "% VERB", "Dtattaa": "% VERB",
+        "Dtatuttaa": "% VERB",
+        "Dma": "% NOUN", "Dinen": "% ADJ", "Dja": "% NOUN", "Dmpi": "% ADJ",
+        "Din": "% ADJ", "Ds": "", "Du": "% NOUN",
+        "FTB3man": "",
+        "Ia": "",
+        "Ie": "",
+        "Ima": "",
+        "Iminen": "",
+        "Ncon": "",
+        "Nneg": "", 
+        "Npl": "", 
+        "Nsg": "", 
+        "N??": "",
+        "Osg1": "",
+        "Osg2": "",
+        "O3": "",
+        "Opl1": "",
+        "Opl2": "",
+        "Ppl1": "", 
+        "Ppl2": "",
+        "Ppl3": "",
+        "Psg1": "", 
+        "Psg2": "",
+        "Psg3": "",
+        "Ppe4": "", 
+        "Qka": "% CONJ",
+        "Qs": "",
+        "Qpa": "",
+        "Qko": "",
+        "Qkin": "",
+        "Qkaan": "",
+        "Qhan": "",
+        "Tcond": "",
+        "Timp": "", 
+        "Tpast": "",
+        "Tpot": "", 
+        "Tpres": "",
+        "Topt": "",
+        "Uarch": "", "Udial": "", "Urare": "", "Unonstd": "",
+        "Vact": "",
+        "Vpss": "",
+        "Xabe": "",
+        "Xabl": "",
+        "Xade": "",
+        "Xall": "",
+        "Xcom": "",
+        "Xela": "",
+        "Xess": "", 
+        "Xgen": "",
+        "Xill": "", 
+        "Xine": "",
+        "Xins": "",
+        "Xnom": "",
+        "Xpar": "", 
+        "Xtra": "", 
+        "Xlat": "",
+        "Xacc": "",
+        "X???": "",
+        "NOUN": "% NOUN",
+        "ADJECTIVE": "% ADJ", "QUALIFIER": "% ADJ",
+        "VERB": "% VERB",
+        "ADVERB": "% ADV",
+        "INTERJECTION": "% X",
+        "PRONOUN": "% PRON",
+        "PARTICLE": "% PRT",
+        "NUMERAL": "% NUM",
+        "ADPOSITION": "% ADP",
+        "CONJUNCTION": "% CONJ", "COORDINATING": "", "ADVERBIAL": "",
+        "COMPARATIVE": "",
+        "ABBREVIATION": "% PRT", "ACRONYM": "% NOUN",
+        "PROPER": "",
+        "CARDINAL": "", "ORDINAL": "",
+        "DEMONSTRATIVE": "", "QUANTOR": "", "PERSONAL": "",
+        "INDEFINITE": "", "INTERROGATIVE": "",
+        "REFLEXIVE": "", "RELATIVE": "",
+        "RECIPROCAL": "",
+        "PL1": "", 
+        "PL2": "",
+        "PL3": "",
+        "SG1": "", 
+        "SG2": "",
+        "SG3": "",
+        "PE4": "",
+        "COMP": "",
+        "SUPERL": "",
+        "UNSPECIFIED": "% X"
+        }
 
 
 def format_lexc(wordmap, format):
@@ -716,6 +823,8 @@ def format_lexc(wordmap, format):
         return format_lexc_ftb3(wordmap, format)
     elif format.startswith("apertium"):
         return format_lexc_apertium(wordmap)
+    elif format.startswith("google"):
+        return format_lexc_google(wordmap)
     elif format.startswith("segment"):
         return format_lexc_segments(wordmap)
     else:
@@ -728,6 +837,8 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont, format)
         elif format.startswith("ftb3"):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
+        elif format.startswith("google"):
+            stuffs += format_continuation_lexc_google(fields[1], fields[2], cont)
         elif format.startswith("segment"):
             stuffs += format_continuation_lexc_segments(fields[1], fields[2], cont)
         else:
@@ -740,6 +851,8 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_omor(analyses, format)
     elif format.startswith("ftb3"):
         stuffs += format_analysis_lexc_ftb3(analyses)
+    elif format.startswith("google"):
+        stuffs += format_analysis_lexc_google(analyses)
     elif format.startswith("segment"):
         stuffs += format_analysis_lexc_segments(analyses)
     else:
@@ -751,6 +864,8 @@ def format_tag(stuff, format):
         return format_tag_omor(stuff, format)
     elif format.startswith('ftb3'):
         return format_tag_ftb3(stuff)
+    elif format.startswith('google'):
+        return format_tag_google(stuff)
     elif format.startswith('segment'):
         return ''
     else:
@@ -778,6 +893,15 @@ def format_tag_ftb3(stuff):
         return stuff2ftb3[stuff]
     else:
         print("Missing from ftb3 mapping: ", stuff, file=stderr)
+        return ""
+
+def format_tag_google(stuff):
+    if stuff == '0':
+        return "0"
+    elif stuff in stuff2google:
+        return stuff2google[stuff]
+    else:
+        print("Missing from google mapping: ", stuff, file=stderr)
         return ""
 
 def format_analysis_lexc_ftb3(anals):
@@ -843,11 +967,23 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         ftbstring +=  surf.replace('%>', '').replace('»', '')
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
+def format_continuation_lexc_google(anals, surf, cont):
+    ftbstring = format_analysis_lexc_google(anals)
+    if 'COMPOUND' in cont:
+        ftbstring +=  surf.replace('%>', '').replace('»', '')
+    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
+
 def format_analysis_lexc_omor(anals, format):
     omorstring = ''
     for i in anals.split('|'):
         omorstring += format_tag_omor(tags[i], format)
     return omortstring
+
+def format_analysis_lexc_google(anals):
+    googstring = ''
+    for i in anals.split('|'):
+        googstring += format_tag_google(i)
+    return googstring
 
 def format_analysis_segments(anals):
     return ''
@@ -961,6 +1097,64 @@ def format_lexc_ftb3(wordmap, format):
                 new_para)]
     return "\n".join(retvals)
 
+def format_lexc_google(wordmap):
+    '''
+    format string for canonical google universal pos format for morphological analysis
+    '''
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
+    wordmap['analysis'] += format_tag_google(wordmap['pos'])
+    if wordmap['particle']:
+        for pclass in wordmap['particle'].split('|'):
+            wordmap['analysis'] += format_tag_google(pclass)
+    if wordmap['subcat']:
+        for subcat in wordmap['subcat'].split('|'):
+            wordmap['analysis'] += format_tag_google(subcat)
+    if wordmap['is_proper']:
+        wordmap['analysis'] += format_tag_google('PROPER')
+    lex_stub = wordmap['stub'][:1] + wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
+    retvals = []
+    for new_para in wordmap['new_paras']:
+        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
+                new_para)]
+    return "\n".join(retvals)
+
+def format_lexc_apertium(wordmap):
+    wordmap['analysis'] = lexc_escape(wordmap['lemma'])
+    wordmap['analysis'] = wordmap['analysis'].replace('|', '+').replace('_', '')
+    if wordmap['is_suffix']:
+        wordmap['analysis'] = "+" + wordmap['analysis']
+    elif wordmap['is_prefix']:
+        wordmap['analysis'] += "+"
+    if wordmap['pos'] == 'NOUN':
+        if wordmap['is_proper']:
+            wordmap['analysis'] += '%<np%>'
+        else:
+            wordmap['analysis'] += '%<n%>'
+    elif wordmap['pos'] == 'VERB':
+        wordmap['analysis'] += '%<vblex%>'
+    elif wordmap['pos'] == 'ADJECTIVE':
+        wordmap['analysis'] += '%<adj%>'
+    elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
+        wordmap['analysis'] += "%<abbr%>"
+    elif wordmap['pos'] == 'CONJUNCTION':
+        wordmap['analysis'] += "%<cnjcoo%>"
+    elif wordmap['pos'] == 'INTERJECTION':
+        wordmap['analysis'] += "%<interj%>"
+    elif wordmap['pos'] == 'ADVERB':
+        wordmap['analysis'] += "%<adv%>"
+    elif wordmap['pos'] == 'ADPOSITION':
+        wordmap['analysis'] += "%<pp%>"
+    elif wordmap['pos'] == 'PARTICLE':
+        wordmap['analysis'] += "%<adv%>"
+    else:
+        print("Missed this pose: %s(pos)" %(wordmap))
+        wordmap['analysis'] += "%<errpos%>"
+
+
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
+    return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
+
 def format_lexc_segments(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['stub']) + '≥'
     retvals = []
@@ -1019,8 +1213,13 @@ def format_multichars_lexc(format):
         multichars += "!! FTB 3 set:\n"
         for mcs in ftb3_multichars:
             multichars += mcs + "\n"
+    elif format.startswith("google"):
+        multichars += "!! Google universal pos set:\n"
+        for mcs in google_multichars:
+            multichars += mcs + "\n"
     else:
         print("missing format", format, file=stderr)
+        exit(1)
     if format.startswith("ktnkav"):
         multichars += "!! KTNKAV set:\n"
         for mcs in ktnkav_multichars:
