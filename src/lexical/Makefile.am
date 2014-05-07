@@ -1,15 +1,14 @@
 ## Process this file with automake to produce Makefile.in
 
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
-LEXEMES=lexemes/fiwn.csv lexemes/joukahainen.csv lexemes/nss.csv \
-		lexemes/omorfi.csv lexemes/visk.csv lexemes/chemistry.csv \
-		lexemes/propers-unihu-proj.csv lexemes/fiwikt.csv
+LEXEMES=lexemes/lexemes.tsv
 STEMPARTS=continuations/acronym-stems.tsv \
 		  continuations/adjective-stems.tsv \
 		  continuations/digit-stems.tsv \
 		  continuations/noun-stems.tsv \
 		  continuations/numeral-stems.tsv \
 		  continuations/pronoun-stems.tsv \
+		  continuations/symbol-stems.tsv \
 		  continuations/verb-stems.tsv
 INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/adjective-inflections.tsv \
@@ -18,13 +17,15 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/numeral-inflections.tsv \
 			continuations/particle-inflections.tsv \
 			continuations/pronoun-inflections.tsv \
+			continuations/symbol-inflections.tsv \
 			continuations/verb-inflections.tsv
 JOINS=attributes/boundaries.tsv \
 	  attributes/origin.tsv \
 	  attributes/plurale-tantum.tsv attributes/possessives.tsv \
 	  attributes/pronunciation.tsv attributes/proper-classes.tsv \
 	  attributes/particle-classes.tsv attributes/pronoun-classes.tsv \
-	  attributes/semantic.tsv attributes/subcategories.tsv attributes/usage.tsv
+	  attributes/symbol-classes.tsv \
+	  attributes/semantic.tsv attributes/subcategories.tsv attributes/usage.tsv 
 SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py
 FINNISC=\
 		format_output.py \
@@ -60,6 +61,7 @@ joint.tsv: lexemes/lexemes.tsv $(JOINS)
 		-j $(srcdir)/attributes/pronoun-classes.tsv \
 		-j $(srcdir)/attributes/semantic.tsv \
 		-j $(srcdir)/attributes/subcategories.tsv \
+		-j $(srcdir)/attributes/symbol-classes.tsv \
 		-j $(srcdir)/attributes/usage.tsv -o $@
 
 master.tsv: joint.tsv

@@ -41,11 +41,11 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_EE', 'ACRO_OIKEYS']	ACRONYM	40	False	False	strengthen	front	False	None	False	False
 ['ACRO_EE', 'ACRO_OK']	ACRONYM	18	False	False	weaken	front	False	None	False	False
 ['ACRO_EE', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
-['ACRO_EE', 'ACRO_WEBER']	ACRONYM	6	False	False	weaken	front	False	None	False	False
 ['ACRO_EE', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
 ['ACRO_EE', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
 ['ACRO_EE', 'ACRO_TUOTE']	ACRONYM	48	False	False	strengthen	front	False	None	False	False
 ['ACRO_EE', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None	False	False
+['ACRO_EE', 'ACRO_WEBER']	ACRONYM	6	False	False	weaken	front	False	None	False	False
 ['ACRO_EE', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
 ['ACRO_EURO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
 ['ACRO_GRAMMA']	ACRONYM	0	False	False	weaken	back	False	None	False	False
@@ -72,8 +72,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_NELJÄ']	ACRONYM	0	False	False	False	back	False	None	False	False
 ['ACRO_NOLLA']	ACRONYM	0	False	False	False	back	False	None	False	False
 ['ACRO_NOLLA']	ACRONYM	0	False	False	False	front	False	None	False	False
-['ACRO_OHMI']	ACRONYM	0	False	False	weaken	back	False	None	False	False
 ['ACRO_OHMI', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_OHMI']	ACRONYM	0	False	False	weaken	back	False	None	False	False
 ['ACRO_OHMI', 'ACRO_OHMI']	ACRONYM	5	False	False	weaken	back	False	None	False	False
 ['ACRO_OO', 'ACRO_CELSIUS']	ACRONYM	39	False	False	strengthen	back	False	None	False	False
 ['ACRO_OO', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
@@ -91,10 +91,10 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_OO', 'ACRO_OPPILAS']	ACRONYM	41	False	False	strengthen	back	False	None	False	False
 ['ACRO_OO', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None	False	False
 ['ACRO_OO', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
-['ACRO_OO', 'ACRO_WEBER']	ACRONYM	6	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
 ['ACRO_OO', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_VUOSI']	ACRONYM	27	False	False	weaken	front	False	None	False	False
+['ACRO_OO', 'ACRO_WEBER']	ACRONYM	6	False	False	weaken	front	False	None	False	False
 ['ACRO_OO', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
 ['ACRO_PUNTA', 'ACRO_GRAMMA']	ACRONYM	9	False	False	weaken	front	False	None	False	False
 ['ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
@@ -102,8 +102,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_PYKÄLÄ']	ACRONYM	0	False	False	False	back	False	None	False	False
 ['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	back	False	None	False	False
 ['ACRO_SEITSEMÄN']	ACRONYM	0	False	False	False	front	False	None	False	False
-['ACRO_SENTTI']	ACRONYM	0	False	False	weaken	front	False	None	False	False
 ['ACRO_SENTTI', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
+['ACRO_SENTTI']	ACRONYM	0	False	False	weaken	front	False	None	False	False
 ['ACRO_TUOTE']	ACRONYM	0	False	False	strengthen	back	False	None	False	False
 ['ACRO_UU', 'ACRO_DOLLARI']	ACRONYM	6	False	False	weaken	back	False	None	False	False
 ['ACRO_UU', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
@@ -143,10 +143,10 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_ÄKS', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	back	False	None	False	False
 ['ACRO_ÄKS', 'ACRO_PUNTA']	ACRONYM	10	False	False	weaken	front	False	None	False	False
 ['ACRO_ÄKS', 'ACRO_SAIRAALA']	ACRONYM	13	False	False	weaken	front	False	None	False	False
-['ACRO_ÄKS', 'ACRO_WEBER']	ACRONYM	6	False	False	weaken	front	False	None	False	False
 ['ACRO_ÄKS', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	back	False	None	False	False
 ['ACRO_ÄKS', 'ACRO_TALO']	ACRONYM	1	False	False	weaken	front	False	None	False	False
 ['ACRO_ÄKS', 'ACRO_TUOTE']	ACRONYM	48	False	False	strengthen	front	False	None	False	False
+['ACRO_ÄKS', 'ACRO_WEBER']	ACRONYM	6	False	False	weaken	front	False	None	False	False
 ['ACRO_ÄKS', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
 ['ACRO_ÄÄ', 'ACRO_METRI']	ACRONYM	5	False	False	weaken	front	False	None	False	False
 ['ACRO_ÄÄ']	ACRONYM	0	False	False	False	front	False	None	False	False
@@ -763,8 +763,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_STADION']	NOUN	6	False	False	weaken	back	False	None	False	False
 ['N_SUHTEET']	NOUN	48	F	obligatory	strengthen	back	False	None	False	False
 ['N_SUKAT']	NOUN	10	A	obligatory	weaken	back	False	None	False	False
-['N_SUODATIN']	NOUN	33	C	False	strengthen	back	False	None	False	False
 ['N_SULKA']	NOUN	10	D	False	weaken	back	a	None	False	False
+['N_SUODATIN']	NOUN	33	C	False	strengthen	back	False	None	False	False
 ['N_SUOT']	NOUN	19	False	obligatory	weaken	back	False	None	False	False
 ['N_SYLI']	NOUN	23	False	False	weaken	front	False	None	False	False
 ['N_SYLTÄ']	NOUN	10	I	False	weaken	front	ä	None	False	False
@@ -833,9 +833,9 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['NUM_KOLME']	NUMERAL	1008	False	False	weaken	back	False	None	False	False
 ['NUM_KUUSI']	NUMERAL	27	False	False	weaken	back	False	None	False	False
 ['NUM_KUUTISEN']	NUMERAL	99	False	False	False	back	False	None	False	False
-['NUM_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['NUM_KYMMENEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['NUM_KYMMENKUNTA']	NUMERAL	10	J	False	weaken	back	a	None	False	False
+['NUM_KYMMEN']	NUMERAL	32	False	False	strengthen	front	False	None	False	False
 ['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	back	False	None	False	False
 ['NUM_KYMMENTÄ']	NUMERAL	99	False	False	False	front	False	None	False	False
 ['NUM_MILJARDI']	NUMERAL	6	False	False	weaken	back	False	None	False	False
@@ -919,8 +919,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PCLE_IKINÄ']	PARTICLE	99	False	False	False	front	False	None	optional	False
 ['PCLE_ILKOSILLAAN']	PARTICLE	99	False	False	False	back	False	None	obligatory	True
 ['PCLE_ISTUALLEEN']	PARTICLE	99	False	False	False	back	False	None	obligatory	True
-['PCLE_JO']	PARTICLE	99	False	False	False	back	False	None	False	False
 ['PCLE_JONNE']	PARTICLE	99	False	False	False	back	False	None	False	False
+['PCLE_JO']	PARTICLE	99	False	False	False	back	False	None	False	False
 ['PCLE_KOTONA']	PARTICLE	99	False	False	False	back	False	None	optional	True
 ['PCLE_KUHUN']	PARTICLE	99	False	False	False	back	False	None	False	True
 ['PCLE_LEVÄLLEEN']	PARTICLE	99	False	False	False	front	False	None	obligatory	True
@@ -950,8 +950,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_KAIKKI']	PRONOUN	7	A	False	weaken	back	False	None	False	False
 ['PRON_KOKO']	PRONOUN	99	False	False	False	back	False	None	False	False
 ['PRON_KUKAAN']	PRONOUN	101	False	False	False	back	False	None	False	False
-['PRON_KUKA']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUKAKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
+['PRON_KUKA']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUKIN']	PRONOUN	101	False	False	False	back	False	None	False	False
 ['PRON_KUMPIKAAN']	PRONOUN	101	False	False	weaken	back	False	None	False	False
 ['PRON_KUMPIKIN']	PRONOUN	101	False	False	weaken	back	False	None	False	False
@@ -960,9 +960,9 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_ME']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIE']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKIN']	PRONOUN	101	False	False	False	front	False	None	False	False
+['PRON_MIKÄKIN']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKÄ']	PRONOUN	1101	False	False	weaken	front	False	None	False	False
-['PRON_MIKÄKIN']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MIKÄÄN']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MINÄ']	PRONOUN	101	False	False	False	front	False	None	False	False
 ['PRON_MOLEMMAT']	PRONOUN	16	H	obligatory	weaken	back	False	None	False	False
@@ -989,6 +989,8 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_USEA']	PRONOUN	15	False	False	weaken	back	a	None	False	False
 ['PRON_USEIMMAT']	PRONOUN	36	False	False	strengthen	back	False	None	False	False
 ['PRON_YKSI']	PRONOUN	31	False	False	weaken	front	False	None	False	False
+['SYMBOL_PISTE','PUNCT_NONSTD_EXCL_LOOP']	PUNCTUATION	99	False	False	None	front	False	None	True	True
+['SYMBOL_PISTE']	PUNCTUATION	99	False	False	None	front	False	None	True	True
 ['V_AALLOTA']	VERB	75	I	False	strengthen	back	False	None	False	False
 ['V_AHNEHTIA']	VERB	61	F	False	weaken	back	False	None	False	False
 ['V_AMPUA']	VERB	52	H	False	weaken	back	False	None	False	False
