@@ -300,6 +300,7 @@ stuff2ftb3 = {"Bc": "#",
         "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel",
         "RECIPROCAL": "",
+        "PUNCTUATION": "% Punct",
         "PL1": "% Pl1", 
         "PL2": "% Pl2",
         "PL3": "% Pl3",
@@ -459,6 +460,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROPER=MISC]",
+        "PUNCTUATION": "[POS=PUNCTUATION]",
         "UNSPECIFIED": "",
         "FTB3man": ""}
 
@@ -587,6 +589,7 @@ stuff2omor_short = {
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
+        "PUNCTUATION": "[POS=PUNCTUATION]",
         "MISC": "[PROPER=MISC]",
         "UNSPECIFIED": "",
         "FTB3man": ""}
@@ -599,7 +602,7 @@ monodix_sdefs= {
         'rec', 'part',
         'ind', 'card', 'ord',
         'cnjcoo', 'cnjsub', 'post', 'pr',
-        'infa', 'infma', 'infe',
+        'infa', 'infma', 'infe', 'infminen',
         'nom', 'par', 'gen', 'ine', 'ela',
         'ill', 'ade', 'abl', 'all', 'ess',
         'ins', 'abe', 'tra', 'com' , 'lat',
@@ -634,10 +637,11 @@ stuff2monodix =  {"Bc": "+",
         "Dnut": "", "Dtu": "", "Duus": "", "Dva": "", "Dmaton": "",
         "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
         "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
-        "Din": "", "Ds": "", "Du": "",
+        "Din": "", "Ds": "", "Du": "", "Dtava": "",
         "Ia": "infa",
         "Ie": "infe",
         "Ima": "infma",
+        "Iminen": "infminen",
         "Ncon": "conneg",
         "Nneg": "neg", 
         "Npl": "pl", 
@@ -705,11 +709,12 @@ stuff2monodix =  {"Bc": "+",
         "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
         "INDEFINITE": "ind", "INTERROGATIVE": "itg",
         "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
-        "UNSPECIFIED": ""}
+        "UNSPECIFIED": "",
+        "PUNCTUATION": ""}
 
 google_multichars = {"% NOUN", "% ADJ", "% VERB", "% ADV", "% X", "% PRON",
         '%<Del%>→', '←%<Del%>',
-        "% NUM", "% ADP", "% CONJ", "% PRT"}
+        "% NUM", "% ADP", "% CONJ", "% PRT", "% ."}
 
 stuff2google = {"Bc": "#",
         "B-": "",
@@ -812,7 +817,8 @@ stuff2google = {"Bc": "#",
         "PE4": "",
         "COMP": "",
         "SUPERL": "",
-        "UNSPECIFIED": "% X"
+        "UNSPECIFIED": "% X",
+        "PUNCTUATION": "% ."
         }
 
 
@@ -963,15 +969,18 @@ def format_analysis_lexc_ftb3(anals):
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = format_analysis_lexc_ftb3(anals)
+    if surf == '0':
+        surf = ''
     if 'COMPOUND' in cont:
-        ftbstring +=  surf.replace('%>', '').replace('»', '')
-    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
+        # XXX: there was += before
+        ftbstring =  surf.replace('>', '').replace('»', '')
+    return "%s:%s\t%s ;\n" %(ftbstring, lexc_escape(surf), cont)
 
 def format_continuation_lexc_google(anals, surf, cont):
     ftbstring = format_analysis_lexc_google(anals)
     if 'COMPOUND' in cont:
-        ftbstring +=  surf.replace('%>', '').replace('»', '')
-    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
+        ftbstring =  surf.replace('>', '').replace('»', '')
+    return "%s:%s\t%s ;\n" %(ftbstring, lexc_escape(surf), cont)
 
 def format_analysis_lexc_omor(anals, format):
     omorstring = ''
@@ -1023,6 +1032,9 @@ def format_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
+    if wordmap['stub'] == ' ':
+        # do not include normal white space for now
+        return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJECTIVE')
@@ -1078,9 +1090,12 @@ def format_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
+    if wordmap['stub'] == ' ':
+        # do not include normal white space for now
+        return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
-    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM']:
+    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
@@ -1101,6 +1116,9 @@ def format_lexc_google(wordmap):
     '''
     format string for canonical google universal pos format for morphological analysis
     '''
+    if wordmap['stub'] == ' ':
+        # do not include normal white space for now
+        return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
     wordmap['analysis'] += format_tag_google(wordmap['pos'])

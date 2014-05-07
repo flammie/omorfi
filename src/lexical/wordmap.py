@@ -9,7 +9,8 @@ def init_wordmap():
                "is_prefix": None, "stem_vowel": None, "stem_diphthong": None,
                "subcat": list(), "sem": list(), "particle": list(), "pronunciation": None,
                "boundaries": None, "bracketstub": None, "origin": None,
-               "extra_i": False, "extra_e": False, "real_pos": None}
+               "extra_i": False, "extra_e": False, "real_pos": None,
+               "symbol": None}
     return wordmap
 
 def get_wordmap_fieldnames():
@@ -18,7 +19,7 @@ def get_wordmap_fieldnames():
             "proper_noun_class", "style", "stub", "gradestem", "twolstem",
             "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
             "stem_diphthong", "subcat", "sem", "particle", "pronunciation", 
-            "boundaries", "bracketstub", "origin", "extra_i", "extra_e", "real_pos"]
+            "boundaries", "bracketstub", "origin", "extra_i", "extra_e", "real_pos", "symbol"]
 
 # Split a wordmap into a list of wordmaps each having a different item of original
 # <field> list in their respective <field>, or only '' if <field> list was empty.

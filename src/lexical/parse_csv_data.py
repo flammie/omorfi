@@ -46,8 +46,10 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['pronunciation'] = extra_fields[1]
             elif extra_fields[0] == 'origin':
                 wordmap['origin'] = extra_fields[1]
+            elif extra_fields[0] == 'symbol':
+                wordmap['symbol'] = extra_fields[1]
             else:
-                print("Unrecognised extra field", tsv_extra, "in CSV", file=stderr)
+                print("Unrecognised extra field", tsv_extra, "in TSV", file=stderr)
                 exit(1)
     wordmap['proper_noun_class'].sort()
     wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class'])

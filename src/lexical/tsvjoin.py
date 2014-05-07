@@ -145,7 +145,7 @@ def main():
             print("Sorting")
         linecount = 0
         tsv_writer = csv.writer(output, delimiter=args.separator,
-                quoting=quoting, strict=True)
+                quoting=quoting, escapechar='\\', strict=True)
         for (line,fields) in sorted(words.items()):
             linecount += 1
             if args.verbose and ((linecount % 10000) == 0 or linecount == 1):

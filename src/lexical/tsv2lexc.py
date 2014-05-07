@@ -212,6 +212,8 @@ def main():
                     pos = 'PARTICLE'
                 elif tsv_parts[0].startswith('PRON_'):
                     pos = 'PRONOUN'
+                elif tsv_parts[0].startswith('SYMBOL_'):
+                    pos = 'PUNCTUATION'
                 else:
                     print("Cannot deduce pos from incoming cont:", tsv_parts[0])
                     continue
@@ -265,6 +267,9 @@ def main():
                     pos = 'PARTICLE'
                 elif tsv_parts[0].startswith('PRON_'):
                     pos = 'PRONOUN'
+                elif tsv_parts[0].startswith('SYMBOL_') or \
+                        tsv_parts[0].startswith('PUNCT_'):
+                    pos = 'PUNCTUATION'
                 else:
                     print("Cannot deduce pos from incoming cont:", tsv_parts[0])
                     continue
