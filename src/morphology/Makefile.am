@@ -4,7 +4,7 @@ if WANT_FTB3
 MAYBE_FTB3_HACKS=hacks/digits-ftb3.lexc \
 				 hacks/51-ftb3.lexc
 else
-MAYBE_OMOR_HACKS=hacks/punctuation.lexc \
+MAYBE_OMOR_HACKS=hacks/digits.lexc \
 				 hacks/51.lexc
 endif
 
