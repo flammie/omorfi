@@ -124,7 +124,14 @@ omor_multichars = {
         '[SEM=COUNTRY]', '[SEM=INHABITANT]', '[SEM=LANGUAGE]',
         '[SEM=MEASURE]', '[SEM=CURRENCY]', '[SEM=TIME]', '[SEM=MALE]', '[SEM=FEMALE]',
         '[POS=NOUN][SUBCAT=ABBREVIATION]', 
-        '[POSITION=PREFIX]', '[POSITION=SUFFIX]'}
+        '[POSITION=PREFIX]', '[POSITION=SUFFIX]',
+        "[SUBCAT=DASH]", "[SUBCAT=SPACE]",
+        "[BOUNDARY=CLAUSE]", "[BOUNDARY=SENTENCE]",
+        "[SUBCAT=QUOTATION][POSITION=INITIAL]",
+        "[SUBCAT=QUOTATION][POSITION=FINAL]",
+        "[SUBCAT=BRACKET][POSITION=INITIAL]",
+        "[SUBCAT=BRACKET][POSITION=FINAL]"
+        }
 
 omor_short_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
@@ -186,7 +193,14 @@ omor_short_multichars = {
         '[POSITION=PREFIX]', '[POSITION=SUFFIX]',
         '[POS=NOUN][SUBCAT=ABBREVIATION]', 
         '[MOOD=INDV][TENSE=PRESENT]',
-        '[MOOD=INDV][TENSE=PAST]'}
+        '[MOOD=INDV][TENSE=PAST]'
+        "[SUBCAT=DASH]", "[SUBCAT=SPACE]",
+        "[BOUNDARY=CLAUSE]", "[BOUNDARY=SENTENCE]",
+        "[SUBCAT=QUOTATION][POSITION=INITIAL]",
+        "[SUBCAT=QUOTATION][POSITION=FINAL]",
+        "[SUBCAT=BRACKET][POSITION=INITIAL]",
+        "[SUBCAT=BRACKET][POSITION=FINAL]"
+        }
 
 ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
@@ -302,6 +316,14 @@ stuff2ftb3 = {"Bc": "#",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel",
         "RECIPROCAL": "",
         "PUNCTUATION": "% Punct",
+        "DASH": "",
+        "SPACE": "",
+        "CLAUSE-BOUNDARY": "",
+        "SENTENCE-BOUNDARY": "",
+        "INITIAL-QUOTE": "",
+        "FINAL-QUOTE": "",
+        "INITIAL-BRACKET": "",
+        "FINAL-BRACKET": "",
         "PL1": "% Pl1", 
         "PL2": "% Pl2",
         "PL3": "% Pl3",
@@ -314,7 +336,7 @@ stuff2ftb3 = {"Bc": "#",
         "UNSPECIFIED": ""
         }
 
-stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
+stuff2omor = {"Bc": "",
         ".sent": "[BOUNDARY=SENTENCE]",
         "B-": "[COMPOUND_FORM=OMIT]",
         "B→": "[POSITION=SUFFIX]",
@@ -463,6 +485,14 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "LANGUAGE": "[SEM=LANGUAGE]",
         "MISC": "[PROPER=MISC]",
         "PUNCTUATION": "[POS=PUNCTUATION]",
+        "DASH": "[SUBCAT=DASH]",
+        "SPACE": "[SUBCAT=SPACE]",
+        "CLAUSE-BOUNDARY": "[BOUNDARY=CLAUSE]",
+        "SENTENCE-BOUNDARY": "[BOUNDARY=SENTENCE]",
+        "INITIAL-QUOTE": "[SUBCAT=QUOTATION][POSITION=INITIAL]",
+        "FINAL-QUOTE": "[SUBCAT=QUOTATION][POSITION=FINAL]",
+        "INITIAL-BRACKET": "[SUBCAT=BRACKET][POSITION=INITIAL]",
+        "FINAL-BRACKET": "[SUBCAT=BRACKET][POSITION=FINAL]",
         "UNSPECIFIED": "",
         "FTB3man": ""}
 
@@ -589,11 +619,19 @@ stuff2omor_short = {
         "ARTWORK": "[PROPER=ARTWORK]", "EVENT": "[PROPER=EVENT]", 
         "FIRST": "[PROPER=FIRST]", "LAST": "[PROPER=LAST]", 
         "GEO": "[PROPER=GEO]", "ORG": "[PROPER=ORG]", 
+        "MISC": "[PROPER=MISC]",
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
         "LANGUAGE": "[SEM=LANGUAGE]",
         "PUNCTUATION": "[POS=PUNCTUATION]",
-        "MISC": "[PROPER=MISC]",
+        "DASH": "[SUBCAT=DASH]",
+        "SPACE": "[SUBCAT=SPACE]",
+        "CLAUSE-BOUNDARY": "[BOUNDARY=CLAUSE]",
+        "SENTENCE-BOUNDARY": "[BOUNDARY=SENTENCE]",
+        "INITIAL-QUOTE": "[SUBCAT=QUOTATION][POSITION=INITIAL]",
+        "FINAL-QUOTE": "[SUBCAT=QUOTATION][POSITION=FINAL]",
+        "INITIAL-BRACKET": "[SUBCAT=BRACKET][POSITION=INITIAL]",
+        "FINAL-BRACKET": "[SUBCAT=BRACKET][POSITION=FINAL]",
         "UNSPECIFIED": "",
         "FTB3man": ""}
 
@@ -714,8 +752,17 @@ stuff2monodix =  {
         "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
         "INDEFINITE": "ind", "INTERROGATIVE": "itg",
         "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
-        "UNSPECIFIED": "",
-        "PUNCTUATION": ""}
+        "PUNCTUATION": "",
+        "DASH": "",
+        "SPACE": "",
+        "CLAUSE-BOUNDARY": "",
+        "SENTENCE-BOUNDARY": "",
+        "INITIAL-QUOTE": "",
+        "FINAL-QUOTE": "",
+        "INITIAL-BRACKET": "",
+        "FINAL-BRACKET": "",
+        "UNSPECIFIED": ""
+        }
 
 google_multichars = {"% NOUN", "% ADJ", "% VERB", "% ADV", "% X", "% PRON",
         '%<Del%>→', '←%<Del%>',
@@ -825,7 +872,15 @@ stuff2google = {
         "COMP": "",
         "SUPERL": "",
         "UNSPECIFIED": "% X",
-        "PUNCTUATION": "% ."
+        "PUNCTUATION": "% .",
+        "DASH": "",
+        "SPACE": "",
+        "CLAUSE-BOUNDARY": "",
+        "SENTENCE-BOUNDARY": "",
+        "INITIAL-QUOTE": "",
+        "FINAL-QUOTE": "",
+        "INITIAL-BRACKET": "",
+        "FINAL-BRACKET": ""
         }
 
 
@@ -1058,6 +1113,10 @@ def format_lexc_omor(wordmap, format):
         for pclass in wordmap['particle'].split('|'):
             wordmap['analysis'] += format_tag_omor(pclass, format)
 
+    if wordmap['symbol']:
+        for subcat in wordmap['symbol'].split('|'):
+            wordmap['analysis'] += format_tag_omor(subcat, format)
+    
     if wordmap['subcat']:
         for subcat in wordmap['subcat'].split('|'):
             wordmap['analysis'] += format_tag_omor(subcat, format)
