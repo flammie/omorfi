@@ -211,6 +211,7 @@ ktnkav_multichars = {
         '[KAV=N]', '[KAV=O]', '[KAV=P]', '[KAV=T]'}
 
 stuff2ftb3 = {"Bc": "#",
+        ".sent": "",
         "B-": "% TrunCo",
         "B→": "TrunCo% ",
         "B←": "% TrunCo",
@@ -314,6 +315,7 @@ stuff2ftb3 = {"Bc": "#",
         }
 
 stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
+        ".sent": "[BOUNDARY=SENTENCE]",
         "B-": "[COMPOUND_FORM=OMIT]",
         "B→": "[POSITION=SUFFIX]",
         "B←": "[POSITION=PREFIX]",
@@ -465,6 +467,7 @@ stuff2omor = {"Bc": "[BOUNDARY=COMPOUND]",
         "FTB3man": ""}
 
 stuff2omor_short = {
+        ".sent": "[BOUNDARY=SENTENCE]",
         "Bc": "[BOUNDARY=COMPOUND]", 
         "B-": "[COMPOUND_FORM=OMIT]",
         "B→": "[POSITION=SUFFIX]",
@@ -621,7 +624,9 @@ monodix_sdefs= {
         'cmp',
         'ND'}
 
-stuff2monodix =  {"Bc": "+",
+stuff2monodix =  {
+        ".sent": "",
+        "Bc": "+",
         "B-": "-",
         "B→": "-",
         "B←": "-",
@@ -716,7 +721,9 @@ google_multichars = {"% NOUN", "% ADJ", "% VERB", "% ADV", "% X", "% PRON",
         '%<Del%>→', '←%<Del%>',
         "% NUM", "% ADP", "% CONJ", "% PRT", "% ."}
 
-stuff2google = {"Bc": "#",
+stuff2google = {
+        ".sent": "",
+        "Bc": "#",
         "B-": "",
         "B→": "",
         "B←": "",
