@@ -64,6 +64,14 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
 
     args = ap.parse_args()
+
+    if args.strip == '"' or args.strip == "'":
+        quoting = csv.QUOTE_ALL
+        quotechar = args.strip
+    else:
+        quoting = csv.QUOTE_NONE
+        quotechar = None
+
     # write header to XML file
     print('<?xml version="1.0" encoding="utf-8"?>', file=args.output)
     print('<!DOCTYPE kotus-sanalista SYSTEM "kotus-sanalista.dtd">', 
@@ -92,7 +100,7 @@ def main():
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                    strict=True)
+                    quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 18:
