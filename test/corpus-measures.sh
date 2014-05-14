@@ -38,9 +38,10 @@ if test -z $TEXTS ; then
 fi
 
 function _preproc() {
-    cat $@ | sed -e 's/[[:punct:]][[:space:]]/ \0/g' \
-        -e 's/[[:punct:]]$/ \0/' -e 's/^[[:punct:]]/\0 /' \
-        -e 's/[[:space:]][[:punct:]]/\0 /g' | tr -s ' ' '\n'
+    cat $@ | sed -e 's/[[:punct:]][[:space:][:punct:]]/ \0/g' \
+        -e 's/[[:punct:]]\r\?$/ \0/' -e 's/^[[:punct:]]/\0 /' \
+        -e 's/[[:space:]][[:punct:]]/\0 /g' -e 's/[[:space:]]/ /g' |\
+        tr -s ' ' '\n'
 }
 preprocess=_preproc
 if ! test -f "fi-gutenberg.text" ; then
@@ -71,9 +72,8 @@ fi
 for f in $TEXTS ; do
     echo Testing $f
     $preprocess $f | hfst-lookup -q $fsa > ${f%text}anals
-    fgrep '+?' ${f%text}anals | sort | uniq -c | sort -nr > ${f%text}misses
 done
 for f in $CONLLXS ; do
+    echo Testing $f
     tail -n +2 < $f | egrep -v '^</?s' | cut -f 2 | hfst-lookup -q $fsa > ${f%conllx}anals
-    fgrep '+?' ${f%conllx}anals | sort | uniq -c | sort -nr > ${f%conllx}misses
 done
