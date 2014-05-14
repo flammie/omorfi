@@ -840,7 +840,10 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
 def format_continuation_lexc_segments(anals, surf, cont):
-    return "%s:%s\t%s ; \n" %(surf.replace('{hyph?}', '|'), surf, cont)
+    if surf == '0':
+        surf = ''
+    return "%s:%s\t%s ; \n" %(lexc_escape(surf.replace('{hyph?}', '|')),
+            lexc_escape(surf), cont)
 
 def format_lexc_omor(wordmap, format):
     '''
