@@ -154,6 +154,8 @@ def main():
                                 for m in split_wordmap_by_field(wm, 'particle')]
                 wordmaps = [ m for wm in wordmaps 
                                 for m in split_wordmap_by_field(wm, 'subcat')]
+                wordmaps = [ m for wm in wordmaps 
+                                for m in split_wordmap_by_field(wm, 'symbol')]
                 # print result
                 for wordmap in wordmaps:
                     tsv_writer.writerow(wordmap)

@@ -10,7 +10,7 @@ def init_wordmap():
                "subcat": list(), "sem": list(), "particle": list(), "pronunciation": None,
                "boundaries": None, "bracketstub": None, "origin": None,
                "extra_i": False, "extra_e": False, "real_pos": None,
-               "symbol": None}
+               "symbol": list() }
     return wordmap
 
 def get_wordmap_fieldnames():
