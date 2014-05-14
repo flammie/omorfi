@@ -79,7 +79,7 @@ def main():
     # read joins from file if any
     with open(args.join, 'r', newline='') as joins:
         join_reader = csv.DictReader(joins, delimiter=args.separator, 
-                quoting=quoting, strict=True)
+                quoting=quoting, escapechar='\\', strict=True)
         for join_parts in join_reader:
             if len(join_parts) < 3:
                 print("Must have at leas N separators in joins; skipping",
@@ -97,7 +97,7 @@ def main():
         tsv_writer.writeheader()
         with open(args.input, 'r', newline='') as infile:
             tsv_reader = csv.reader(infile, delimiter=args.separator,
-                    quoting=quoting, strict=True)
+                    quoting=quoting, escapechar='\\', strict=True)
             linecount = 0
             for tsv_parts in tsv_reader:
                 linecount += 1

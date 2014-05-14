@@ -62,6 +62,9 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
 
     args = ap.parse_args()
+
+    quoting = csv.QUOTE_NONE
+    quotechar = None
     # write header to XML file
     print('<?xml version="1.0" encoding="utf-8"?>', file=args.output)
     print('<dictionary>', file=args.output)
@@ -132,7 +135,7 @@ def main():
         linecount = 0
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                    strict=True)
+                    quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):

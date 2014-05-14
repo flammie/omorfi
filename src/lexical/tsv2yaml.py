@@ -68,6 +68,8 @@ def main():
             help="use specific output format for lexc data",
             type=FormatArgType)
     args = ap.parse_args()
+    quoting = csv.QUOTE_NONE
+    quotechar = None
     # setup files
     if args.verbose: 
         print("Writing yaml to", args.output.name)
@@ -84,7 +86,7 @@ def main():
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
-                    strict=True)
+                    quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 3:
