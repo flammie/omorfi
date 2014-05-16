@@ -86,8 +86,7 @@ def main():
                 if len(tsv_parts) < 3:
                     print("Too few tabs on line", linecount, 
                         "skipping following line completely:", file=stderr)
-                    print(tsv_line, file=stderr)
-                    tsv_line = tsv_file.readline()
+                    print(tsv_parts, file=stderr)
                     continue
                 # format output
                 if curr_pardef != tsv_parts[0]:
