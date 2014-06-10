@@ -159,5 +159,13 @@ def plurale_tantum_get_singular_stem(wordmap):
         else:
             print("Unhandled plurale tantum in", wordmap, file=stderr)
             return None
+    
+    if wordmap['harmony'] == 'front':
+        wordmap['stub'] = wordmap['stub'].replace('{uy}', 'y')
+        wordmap['stub'] = wordmap['stub'].replace('{oö}', 'ö')
+    elif wordmap['harmony'] == 'back':
+        wordmap['stub'] = wordmap['stub'].replace('{uy}', 'u')
+        wordmap['stub'] = wordmap['stub'].replace('{oö}', 'o')
+    
     wordmap['gradestem'] = wordmap['stub']
     return wordmap

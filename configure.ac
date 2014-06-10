@@ -7,7 +7,7 @@ AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.11 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20131332
+VERSION=20141332
 
 # Options
 AC_ARG_WITH([hfst],
@@ -89,13 +89,12 @@ AC_ARG_ENABLE([voikko],
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
 # generic tagset switch to override (for lexc serialisation)
-AC_ARG_ENABLE([multichar_format],
-              [AS_HELP_STRING([--enable-multichar-format],
-                              [use other formats for multichar symbols @<:@default=ftb3@:>@])],
+AC_ARG_ENABLE([tagset],
+              [AS_HELP_STRING([--enable-tagset],
+                              [tagset to use @<:@default=ftb3@:>@])],
                              [tag_format=$enableval],
                              [tag_format=ftb3])
 AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
-AC_SUBST([FTB3], [$enable_ftb3])
 AM_CONDITIONAL([WANT_TAGGER_HACKS], [test "$tag_format" != ${tag_format/+taggerhacks/}])
 AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
 AC_SUBST([TAG_FORMAT], [${tag_format%%[[+-]]*}])
@@ -243,7 +242,6 @@ Configured $PACKAGE_STRING:
     * Weighting method: $enable_tagweights + $enable_tokenweights
     * Default error model: $enable_error_model
     * Filter analyses: $enable_filter
-    * Default tagset: $enable_tagset
     * Create optimised lookup format: $enable_optimisations
     * Morphological analyser: $enable_morphology
     * Morphological generator: $enable_generation
