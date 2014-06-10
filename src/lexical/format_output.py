@@ -637,7 +637,7 @@ stuff2google = {
 
 
 def format_lexc(wordmap, format):
-    if format.startswith("omor") or format.startswith("ktnkav"):
+    if format.startswith("omor"):
         return format_lexc_omor(wordmap, format)
     elif format.startswith("ftb3"):
         return format_lexc_ftb3(wordmap, format)
@@ -653,7 +653,7 @@ def format_lexc(wordmap, format):
 def format_continuation_lexc(fields, format):
     stuffs = ""
     for cont in fields[3:]:
-        if format.startswith("omor") or format.startswith("ktnkav"):
+        if format.startswith("omor"):
             stuffs += format_continuation_lexc_omor(fields[1], fields[2], cont, format)
         elif format.startswith("ftb3"):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
@@ -667,7 +667,7 @@ def format_continuation_lexc(fields, format):
 
 def format_analysis_lexc(analyses, format):
     stuffs = ''
-    if format.startswith("omor") or format.startswith("ktnkav"):
+    if format.startswith("omor"):
         stuffs += format_analysis_lexc_omor(analyses, format)
     elif format.startswith("ftb3"):
         stuffs += format_analysis_lexc_ftb3(analyses)
@@ -680,7 +680,7 @@ def format_analysis_lexc(analyses, format):
     return stuffs
 
 def format_tag(stuff, format):
-    if format.startswith('omor') or format.startswith('ktnkav'):
+    if format.startswith('omor'):
         return format_tag_omor(stuff, format)
     elif format.startswith('ftb3'):
         return format_tag_ftb3(stuff)
@@ -694,13 +694,7 @@ def format_tag(stuff, format):
 def format_tag_omor(stuff, format):
     if stuff == '0':
         return "0"
-    elif format.startswith("omor-short") or format.startswith("ktnkav"):
-        if stuff in stuff2omor_short:
-            return stuff2omor_short[stuff]
-        else:
-            print("Missing from omor-short mapping: ", stuff, file=stderr)
-            exit(1)
-    elif stuff in stuff2omor:
+    if stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
         print("Missing from omor mapping: ", stuff, file=stderr)
@@ -891,17 +885,18 @@ def format_lexc_omor(wordmap, format):
         for sem in wordmap['sem'].split(','):
             wordmap['analysis'] += format_tag_omor(sem, format)
 
-    # XXX: use stuff2omor to ensure multichars but laziness
-    if format.startswith("ktnkav") and tn < 99:
-        wordmap['analysis'] += "[KTN=%(kotus_tn)s]" %(wordmap)
-        if wordmap['kotus_av']:
-            wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
-    elif format.startswith("newparas"):
-        wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
-
     if wordmap['style']:
         wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
     
+    if '+ktnkav' in format:
+        tag = "[KTN=%(kotus_tn)s]" %(wordmap)
+        if tag in ktnkav_multichars:
+            wordmap['analysis'] += tag
+            if wordmap['kotus_av']:
+                wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
+    elif '+newparas' in format:
+        wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
+
     # match WORD_ID= with epsilon, then stub and lemma might match
     lex_stub = '0' + wordmap['stub'][:1] + \
                wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')

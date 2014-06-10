@@ -87,9 +87,9 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
 
     def FormatArgType(v):
-        baseformats = ["omor", "omor-short", "ktnkav", "apertium",
+        baseformats = ["omor", "omor-short", "apertium",
                 "giellatekno", "ftb3", "segments", "google"]
-        extras = ["propers", "semantics", "taggerhacks"]
+        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:
             raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
@@ -113,7 +113,8 @@ def main():
         for lemma_file in args.include_lemmas:
             if args.verbose:
                 print("including only lemmas from", lemma_file.name);
-            lemmas += lemma_file.readlines()
+            for line in lemma_file:
+                lemmas.append(line.rstrip('\n'))
             lemma_file.close()
     if not args.exclude_pos:
         args.exclude_pos = []
