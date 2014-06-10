@@ -781,21 +781,6 @@ def format_analysis_lexc_ftb3(anals):
         ftbstring += format_tag_ftb3(anal)
     return ftbstring
 
-def format_continuation_lexc_ftb3(anals, surf, cont):
-    ftbstring = format_analysis_lexc_ftb3(anals)
-    if surf == '0':
-        surf = ''
-    if 'COMPOUND' in cont:
-        # XXX: there was += before
-        ftbstring =  surf.replace('>', '').replace('»', '')
-    return "%s:%s\t%s ;\n" %(ftbstring, lexc_escape(surf), cont)
-
-def format_continuation_lexc_google(anals, surf, cont):
-    ftbstring = format_analysis_lexc_google(anals)
-    if 'COMPOUND' in cont:
-        ftbstring =  surf.replace('>', '').replace('»', '')
-    return "%s:%s\t%s ;\n" %(ftbstring, lexc_escape(surf), cont)
-
 def format_analysis_lexc_omor(anals, format):
     omorstring = ''
     for i in anals.split('|'):
@@ -810,6 +795,23 @@ def format_analysis_lexc_google(anals):
 
 def format_analysis_segments(anals):
     return ''
+
+def format_continuation_lexc_ftb3(anals, surf, cont):
+    ftbstring = format_analysis_lexc_ftb3(anals)
+    if 'COMPOUND' in cont:
+        # XXX: there was += before
+        ftbstring =  surf.replace('>', '').replace('»', '')
+    if surf != '0':
+        surf = lexc_escape(surf)
+    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
+
+def format_continuation_lexc_google(anals, surf, cont):
+    ftbstring = format_analysis_lexc_google(anals)
+    if 'COMPOUND' in cont:
+        ftbstring =  surf.replace('>', '').replace('»', '')
+    if surf != '0':
+        surf = lexc_escape(surf)
+    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
     # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
@@ -837,13 +839,15 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     omorstring = ''
     for tag in tags:
         omorstring += format_tag_omor(tag, format)
+    if surf != '0':
+        surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
 def format_continuation_lexc_segments(anals, surf, cont):
-    if surf == '0':
-        surf = ''
-    return "%s:%s\t%s ; \n" %(lexc_escape(surf.replace('{hyph?}', '|')),
-            lexc_escape(surf), cont)
+    if surf != '0':
+        surf = lexc_escape(surf)
+    return "%s:%s\t%s ; \n" %(surf.replace('{hyph?}', '|'),
+            surf, cont)
 
 def format_lexc_omor(wordmap, format):
     '''
