@@ -119,6 +119,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['ACRO_YKSI']	ACRONYM	0	False	False	False	front	False	None	False	False
 ['ACRO_YY', 'ACRO_GRAY']	ACRONYM	3	False	False	weaken	front	False	None	False	False
 ['ACRO_YY', 'ACRO_JÄRJESTÖ']	ACRONYM	2	False	False	weaken	front	False	None	False	False
+['ACRO_YY', 'ACRO_OPISTO']	ACRONYM	2	False	False	weaken	back	False	None	False	False
 ['ACRO_YY']	ACRONYM	0	False	False	False	back	False	None	False	False
 ['ACRO_YY']	ACRONYM	0	False	False	False	front	False	None	False	False
 ['ACRO_YY', 'ACRO_YHDISTYS']	ACRONYM	39	False	False	strengthen	front	False	None	False	False
