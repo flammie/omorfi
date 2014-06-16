@@ -45,5 +45,13 @@ omorfi.lexc.foma: $(LEXC_MAIN) \
 	cat $^ > combined.lexc
 	printf "read lexc combined.lexc\nsave stack $@" | foma
 
+if WANT_FTB3
+hacks/51-ftb3.lexc: hacks/51.lexc
+	$(top_builddir)/src/scripts/convert_tag_format.py -t ftb3 -r '^(\[[^]]+\])+' -i $< -o $@.tmp
+	echo "!!! AUTOMATICALLY GENERATED FROM $< - CHANGES WILL BE LOST AT NEXT COMPILATION!" > $@
+	cat $@.tmp >> $@
+	-rm -v $@.tmp
+endif
+
 clean-local:
 	-rm -f *.hfst *.ol $(LEXICAL_SRCS) $(LEXC_MAIN)
