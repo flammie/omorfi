@@ -1,8 +1,23 @@
 # Remove these analyses before hash signs
 [  % A -> 0,
-% Gen -> 0,
-% N -> 0,
+% Abbr -> 0,
 % Nom -> 0,
+% Par -> 0,
+% Gen -> 0,
+% Ine -> 0,
+% Ela -> 0,
+% Ill -> 0,
+% Ade -> 0,
+% Abl -> 0,
+% All -> 0,
+% Ess -> 0,
+% Ins -> 0,
+% Abe -> 0,
+% Tra -> 0,
+% Com -> 0,
+% Digit -> 0,
+% Ord -> 0,
+% N -> 0,
 % Num -> 0,
 % Pl -> 0,
 % Prop -> 0,
@@ -27,4 +42,4 @@
 .o.
 [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s
 | t | u | v | w | x | y | z | å | ä | ö ]* -> 0 ||
-[% N | % Num ]+ _  [ % Gen | % Nom |% Sg | % Pl ]+ % TruncPrefix  ;
+[% N | % Num ]+ _  [ % Gen | % Nom | % Sg | % Pl ]+ % TrunCo  ;
