@@ -795,6 +795,8 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     if 'COMPOUND' in cont:
         # XXX: there was += before
         ftbstring =  surf.replace('>', '').replace('»', '')
+    elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
+        ftbstring +=  surf.replace('>', '').replace('»', '')
     if surf != '0':
         surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
