@@ -207,7 +207,7 @@ def main():
                     pos = 'ACRONYM'
                 elif tsv_parts[0].startswith('NUM_'):
                     pos = 'NUMERAL'
-                elif tsv_parts[0].startswith('DIGITS_'):
+                elif tsv_parts[0].startswith('DIGITS'):
                     pos = 'NUMERAL'
                 elif tsv_parts[0].startswith('ADV_'):
                     pos = 'PARTICLE'

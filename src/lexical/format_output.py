@@ -18,6 +18,7 @@ ftb3_multichars= {
         '% Adp', '% Po', '% Pr', '% Adp% Po',
         '% Punct',
         '% Quote',
+        '% Digit',
         '% Nom', '% Par', '% Gen', '% Ine', '% Ela',
         '% Ill', '% Ade', '% Abl', '% All', '% Ess',
         '% Ins', '% Abe', '% Tra', '% Com' , '% Lat',
@@ -55,11 +56,12 @@ omor_short_multichars = {
         '[CONJ=COMPARATIVE]', '[SUBCAT=POSTPOSITION]', '[SUBCAT=PREPOSITION]',
         '[SUBCAT=PREFIX]', '[SUBCAT=SUFFIX]', '[SUBCAT=ABBREVIATION]',
         '[SUBCAT=ACRONYM]', 
-        '[POS=PUNCTUATION]', '[POS=SYMBOL]',
+        '[POS=PUNCTUATION]', '[POS=SYMBOL]', 
         '[SUBCAT=SPACE]', '[SUBCAT=QUOTATION]', '[SUBCAT=BRACKET]',
         '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
         '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
-        '[SUBCAT=FINAL]', '[SUBCAT=REFLEXIVE]',
+        '[SUBCAT=FINAL]', '[SUBCAT=REFLEXIVE]', '[SUBCAT=DIGIT]',
+        '[SUBCAT=ROMAN]',
         '[CASE=NOM]','[CASE=PAR]', '[CASE=GEN]', '[CASE=INE]', '[CASE=ELA]',
         '[CASE=ILL]', '[CASE=ADE]', '[CASE=ABL]', '[CASE=ALL]', '[CASE=ESS]',
         '[CASE=INS]', '[CASE=ABE]', '[CASE=TRA]', '[CASE=COM]' , '[CASE=LAT]',
@@ -228,12 +230,15 @@ stuff2ftb3 = {"Bc": "#",
         "PUNCTUATION": "% Punct",
         "DASH": "",
         "SPACE": "",
+        "DECIMAL": "",
         "CLAUSE-BOUNDARY": "",
         "SENTENCE-BOUNDARY": "",
         "INITIAL-QUOTE": "",
         "FINAL-QUOTE": "",
         "INITIAL-BRACKET": "",
         "FINAL-BRACKET": "",
+        "DIGIT": "% Digit",
+        "ROMAN": "",
         "PL1": "% Pl1", 
         "PL2": "% Pl2",
         "PL3": "% Pl3",
@@ -507,6 +512,9 @@ stuff2monodix =  {
         "PUNCTUATION": "",
         "DASH": "",
         "SPACE": "",
+        "DIGIT": "num",
+        "DECIMAL": "",
+        "ROMAN": "",
         "CLAUSE-BOUNDARY": "",
         "SENTENCE-BOUNDARY": "",
         "INITIAL-QUOTE": "",
@@ -797,8 +805,9 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         ftbstring =  surf.replace('>', '').replace('»', '')
     elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
         ftbstring +=  surf.replace('>', '').replace('»', '')
-    if surf != '0':
-        surf = lexc_escape(surf)
+    elif 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
+        ftbstring = lexc_escape(surf) + ftbstring
+    surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_continuation_lexc_google(anals, surf, cont):

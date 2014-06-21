@@ -4,6 +4,7 @@ XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 LEXEMES=lexemes/lexemes.tsv
 STEMPARTS=continuations/acronym-stems.tsv \
 		  continuations/adjective-stems.tsv \
+		  continuations/digit-stubs.tsv \
 		  continuations/digit-stems.tsv \
 		  continuations/noun-stems.tsv \
 		  continuations/numeral-stems.tsv \
