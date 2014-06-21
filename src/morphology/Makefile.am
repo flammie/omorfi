@@ -13,7 +13,7 @@ MAYBE_TAGGER_HACKS=hacks/tagger-hacks.lexc
 endif
 
 # lexc data
-LEXC_MAIN=omorfi.lexc
+LEXC_MAIN=omorfi-$(TAG_FORMAT).lexc
 NOTGENERATED_SRCS=\
 				  $(MAYBE_FTB3_HACKS) $(MAYBE_OMOR_HACKS) \
 				  $(MAYBE_TAGGER_HACKS)
@@ -31,7 +31,7 @@ LEXICAL_TARGETS=omorfi.lexc.hfst
 noinst_DATA=omorfi.lexc.hfst
 
 # lexical transducer
-omorfi.lexc: $(top_builddir)/src/lexical/omorfi.lexc
+$(LEXC_MAIN): $(top_builddir)/src/lexical/omorfi-$(TAG_FORMAT).lexc
 	-cp -v $< $@
 
 omorfi.lexc.hfst: $(LEXC_MAIN) \
@@ -55,3 +55,4 @@ endif
 
 clean-local:
 	-rm -f *.hfst *.ol $(LEXICAL_SRCS) $(LEXC_MAIN)
+

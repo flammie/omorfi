@@ -39,7 +39,7 @@ FINNISC=\
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py
 
-noinst_DATA=omorfi.lexc omorfi.dix omorfi-sanalista.xml \
+noinst_DATA=omorfi-$(TAG_FORMAT).lexc omorfi.dix omorfi-sanalista.xml \
 			omorfi.reweight gtd-tests.yaml
 
 gtd-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
@@ -77,7 +77,7 @@ stemparts.tsv: $(STEMPARTS)
 inflections.tsv: $(INFLECTIONS)
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
 
-omorfi.lexc: master.tsv stemparts.tsv inflections.tsv
+omorfi-$(TAG_FORMAT).lexc: master.tsv stemparts.tsv inflections.tsv
 	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=$(TAG_FORMAT_PRECISE)
 
