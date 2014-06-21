@@ -248,7 +248,8 @@ stuff2ftb3 = {"Bc": "#",
         "PE4": "% Pe4",
         "COMP": "% Comp",
         "SUPERL": "% Superl",
-        "UNSPECIFIED": ""
+        "UNSPECIFIED": "",
+        "": ""
         }
 
 stuff2omor_short = {
@@ -388,7 +389,8 @@ stuff2omor_short = {
         "INITIAL-BRACKET": "[SUBCAT=BRACKET][POSITION=INITIAL]",
         "FINAL-BRACKET": "[SUBCAT=BRACKET][POSITION=FINAL]",
         "UNSPECIFIED": "",
-        "FTB3man": ""}
+        "FTB3man": "",
+        "": ""}
 
 stuff2omor = stuff2omor_short
 
@@ -521,7 +523,8 @@ stuff2monodix =  {
         "FINAL-QUOTE": "",
         "INITIAL-BRACKET": "",
         "FINAL-BRACKET": "",
-        "UNSPECIFIED": ""
+        "UNSPECIFIED": "",
+        "": ""
         }
 
 google_multichars = {"% NOUN", "% ADJ", "% VERB", "% ADV", "% X", "% PRON",
@@ -640,7 +643,8 @@ stuff2google = {
         "INITIAL-QUOTE": "",
         "FINAL-QUOTE": "",
         "INITIAL-BRACKET": "",
-        "FINAL-BRACKET": ""
+        "FINAL-BRACKET": "",
+        "": ""
         }
 
 
