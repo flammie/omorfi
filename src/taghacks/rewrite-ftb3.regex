@@ -1,5 +1,6 @@
 # Remove these analyses before hash signs
 [  % A -> 0,
+% N% Abbr -> 0,
 % Abbr -> 0,
 % Nom -> 0,
 % Par -> 0,
