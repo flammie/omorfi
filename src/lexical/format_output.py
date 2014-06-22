@@ -72,10 +72,11 @@ omor_short_multichars = {
         '[TENSE=PRESENT]',
         '[TENSE=PAST]', '[MOOD=INDV]', '[MOOD=COND]', '[MOOD=POTN]',
         '[MOOD=IMPV]', '[MOOD=OPT]', '[MOOD=EVNV]',
+        '[MOOD=INDV][TENSE=PAST]',
         '[PERS=SG1]', '[PERS=SG2]', '[PERS=SG3]', 
         '[PERS=PL1]', '[PERS=PL2]', '[PERS=PL3]', '[PERS=PE4]',
         '[NEG=CON]' , '[SUBCAT=NEG]', '[VOICE=ACT]', '[VOICE=PSS]',
-        '[INF=A]', '[INF=E]', '[INF=MA]', '[INF=MINEN]',
+        '[INF=A]', '[INF=E]', '[INF=MA]', '[INF=MINEN]', '[INF=MAISILLA]',
         '[DRV=MINEN]', '[DRV=MAISILLA]',
         '[PCP=NUT]', '[PCP=AGENT]', '[PCP=VA]', '[PCP=NEG]',
         '[DRV=NUT]', '[DRV=TU]', '[DRV=MA]', '[DRV=VA]', '[DRV=MATON]',
@@ -390,6 +391,7 @@ stuff2omor_short = {
         "FINAL-BRACKET": "[SUBCAT=BRACKET][POSITION=FINAL]",
         "UNSPECIFIED": "",
         "FTB3man": "",
+        "DIGIT": "",
         "": ""}
 
 stuff2omor = stuff2omor_short
