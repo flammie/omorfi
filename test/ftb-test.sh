@@ -1,4 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+if test -z $srcdir ; then
+    echo Use make check or define srcdir
+    exit 1
+fi
 if test ! -r $srcdir/ftb3.1.conllx ; then
     echo Missing $srcdir/ftb3.1.conllx
     exit 77
@@ -17,5 +21,15 @@ else
     echo Missing python3
     exit 77
 fi
-$PYTHON $srcdir/ftb-test.py -f ../src/morphology.ftb3.hfst -i $srcdir/ftb3.1.conllx -o ftb3.1.log
-exit $?
+split -n l/100 $srcdir/ftb3.1.conllx ftb3.1.parts.
+fail=0
+for f in ftb3.1.parts.* ; do
+    echo ${f}...
+    if $PYTHON $srcdir/ftb-test.py -f ../src/morphology.ftb3.hfst -i $f -o ${f/parts/logs} ; then
+        echo $f failed
+        fail=1
+    fi
+done
+cat ftb3.1.logs.* > ftb3.1.log
+rm ftb3.1.parts* ftb3.1.logs*
+exit $fail
