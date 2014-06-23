@@ -80,7 +80,7 @@ omor_short_multichars = {
         '[SUBCAT=DASH]', '[SUBCAT=CURRENCY]', '[SUBCAT=MATH]',
         '[SUBCAT=OPERATION]', '[SUBCAT=RELATION]', '[SUBCAT=INITIAL]',
         '[SUBCAT=FINAL]', '[SUBCAT=REFLEXIVE]', '[SUBCAT=DIGIT]',
-        '[SUBCAT=ROMAN]',
+        '[SUBCAT=ROMAN]', '[SUBCAT=DECIMAL]',
         '[CASE=NOM]','[CASE=PAR]', '[CASE=GEN]', '[CASE=INE]', '[CASE=ELA]',
         '[CASE=ILL]', '[CASE=ADE]', '[CASE=ABL]', '[CASE=ALL]', '[CASE=ESS]',
         '[CASE=INS]', '[CASE=ABE]', '[CASE=TRA]', '[CASE=COM]' , '[CASE=LAT]',
@@ -359,6 +359,10 @@ stuff2omor_short = {
         "NUMERAL": "[POS=NUMERAL]",
         "CARDINAL": "[SUBCAT=CARD]", 
         "ORDINAL": "[SUBCAT=ORD]",
+		# No [SUBCAT=DIGIT]: avoid multiple SUBCATs in one tagstring & comply with FTB1
+        "DIGIT": "",
+        "DECIMAL": "[SUBCAT=DECIMAL]",
+        "ROMAN": "[SUBCAT=ROMAN]",
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
         "ACRONYM": "[POS=NOUN][SUBCAT=ABBREVIATION]", 
         "ABBREVIATION": "[SUBCAT=ABBREVIATION]",
@@ -410,7 +414,6 @@ stuff2omor_short = {
         "FINAL-BRACKET": "[SUBCAT=BRACKET][POSITION=FINAL]",
         "UNSPECIFIED": "",
         "FTB3man": "",
-        "DIGIT": "",
         "": ""}
 
 stuff2omor = stuff2omor_short
@@ -985,7 +988,7 @@ def format_lexc_google(wordmap):
             wordmap['analysis'] += format_tag_google(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_google('PROPER')
-    lex_stub = wordmap
+    lex_stub = wordmap['stub']
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
