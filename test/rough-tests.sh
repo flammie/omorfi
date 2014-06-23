@@ -9,7 +9,7 @@ for tf in apertium omor ftb3 ; do
         fsa="../src/morphology.$tf.hfst"
     fi
 done
-hfst-lookup $fsa < $srcdir/wordforms.list > wordforms.anals
+hfst-lookup -q $fsa < $srcdir/wordforms.list > wordforms.anals
 if grep '+?' wordforms.anals -m 1 > /dev/null ; then
     echo "following known wordforms were missing from $fsa"
     grep '+?' wordforms.anals

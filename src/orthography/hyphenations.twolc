@@ -8,17 +8,11 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 %{hyph%?%}:0 %{hyph%?%}:%-
 %-
 
-%>:0 %> 
-»:0 »
-≥:0 ≥
-%|:0  %|
-%_:0 %_:0
-
-%{%>%}:%> %{%»%}:»
+! boundaries
+%{WB%}:0 %{MB%}:0 %{XB%}:0 %{DB%}:0 %{STUB%}:0
 ;
 
 Sets
-Markers = %> %_ %| » ≥ ;
 Vowels = a e i o u y ä ö ;
 Consonants = b c d f g h j k l m n p q r s t v w x z ;
 UpperOrSyms = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö  %0 1 2 3 4 5 6 7 8 9 %- ;
@@ -31,7 +25,4 @@ Rules
 "Require hyphen on some caps"
 %{hyph%?%}:%- <= UpperOrSyms [? - :%- ]* _ ;
             _ :0* UpperOrSyms ;
-
-"Don't remove markers that are not boundaries"
-Markers <=> .#. ?:0* _ ?:0* .#. ;
 

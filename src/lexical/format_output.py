@@ -6,7 +6,26 @@ from sys import stderr
 from omor_strings_io import lexc_escape
 from cgi import escape as xml_escape
 
+# these extra symbols appear always
+
 version_id_easter_egg='OMORFI_VERSION_≥_14_©_GNU_GPL_V3'
+word_boundary="{WB}"
+weak_boundary="{XB}"
+deriv_boundary="{DB}"
+morph_boundary="{MB}"
+stub_boundary="{STUB}"
+optional_hyphen="{hyph?}"
+
+
+common_multichars={
+        version_id_easter_egg,
+        word_boundary,
+        weak_boundary,
+        deriv_boundary,
+        morph_boundary,
+        stub_boundary,
+        optional_hyphen
+        }
 
 ftb3_multichars= {
         '% A', '% V', '% N',
@@ -73,10 +92,11 @@ omor_short_multichars = {
         '[TENSE=PRESENT]',
         '[TENSE=PAST]', '[MOOD=INDV]', '[MOOD=COND]', '[MOOD=POTN]',
         '[MOOD=IMPV]', '[MOOD=OPT]', '[MOOD=EVNV]',
+        '[MOOD=INDV][TENSE=PAST]',
         '[PERS=SG1]', '[PERS=SG2]', '[PERS=SG3]', 
         '[PERS=PL1]', '[PERS=PL2]', '[PERS=PL3]', '[PERS=PE4]',
         '[NEG=CON]' , '[SUBCAT=NEG]', '[VOICE=ACT]', '[VOICE=PSS]',
-        '[INF=A]', '[INF=E]', '[INF=MA]', '[INF=MINEN]',
+        '[INF=A]', '[INF=E]', '[INF=MA]', '[INF=MINEN]', '[INF=MAISILLA]',
         '[DRV=MINEN]', '[DRV=MAISILLA]',
         '[PCP=NUT]', '[PCP=AGENT]', '[PCP=VA]', '[PCP=NEG]',
         '[DRV=NUT]', '[DRV=TU]', '[DRV=MA]', '[DRV=VA]', '[DRV=MATON]',
@@ -391,6 +411,7 @@ stuff2omor_short = {
         "FINAL-BRACKET": "[SUBCAT=BRACKET][POSITION=FINAL]",
         "UNSPECIFIED": "",
         "FTB3man": "",
+        "DIGIT": "",
         "": ""}
 
 stuff2omor = stuff2omor_short
@@ -807,9 +828,9 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = format_analysis_lexc_ftb3(anals)
     if 'COMPOUND' in cont:
         # XXX: there was += before
-        ftbstring =  surf.replace('>', '').replace('»', '')
+        ftbstring =  surf.replace(morph_boundary, '').replace(deriv_boundary, '')
     elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
-        ftbstring +=  surf.replace('>', '').replace('»', '')
+        ftbstring +=  surf.replace(morph_boundary, '').replace(deriv_boundary, '')
     elif 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
         ftbstring = lexc_escape(surf) + ftbstring
     surf = lexc_escape(surf)
@@ -818,7 +839,7 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
 def format_continuation_lexc_google(anals, surf, cont):
     ftbstring = format_analysis_lexc_google(anals)
     if 'COMPOUND' in cont:
-        ftbstring =  surf.replace('>', '').replace('»', '')
+        ftbstring =  surf.replace(morph_boundary, '').replace(deriv_boundary, '')
     if surf != '0':
         surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
@@ -856,7 +877,7 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
 def format_continuation_lexc_segments(anals, surf, cont):
     if surf != '0':
         surf = lexc_escape(surf)
-    return "%s:%s\t%s ; \n" %(surf.replace('{hyph?}', '|'),
+    return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, '|').replace(word_boundary, '|'),
             surf, cont)
 
 def format_lexc_omor(wordmap, format):
@@ -914,8 +935,7 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
 
     # match WORD_ID= with epsilon, then stub and lemma might match
-    lex_stub = '0' + wordmap['stub'][:1] + \
-               wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
+    lex_stub = '0' + wordmap['stub']
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
@@ -930,7 +950,7 @@ def format_lexc_ftb3(wordmap, format):
         # do not include normal white space for now
         return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
-    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
     if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:
@@ -941,7 +961,7 @@ def format_lexc_ftb3(wordmap, format):
             wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
-    lex_stub = wordmap['stub'][:1] + wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
+    lex_stub = wordmap['stub']
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
@@ -956,7 +976,7 @@ def format_lexc_google(wordmap):
         # do not include normal white space for now
         return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
-    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace('|', '#')  + '←<Del>'))
+    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
     wordmap['analysis'] += format_tag_google(wordmap['pos'])
     if wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
@@ -966,7 +986,7 @@ def format_lexc_google(wordmap):
             wordmap['analysis'] += format_tag_google(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_google('PROPER')
-    lex_stub = wordmap['stub'][:1] + wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', '')
+    lex_stub = wordmap
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
@@ -975,7 +995,7 @@ def format_lexc_google(wordmap):
 
 def format_lexc_apertium(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-    wordmap['analysis'] = wordmap['analysis'].replace('|', '+').replace('_', '')
+    wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
     if wordmap['is_suffix']:
         wordmap['analysis'] = "+" + wordmap['analysis']
     elif wordmap['is_prefix']:
@@ -1010,16 +1030,16 @@ def format_lexc_apertium(wordmap):
     return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
 
 def format_lexc_segments(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['stub']) + '≥'
+    wordmap['analysis'] = lexc_escape(wordmap['stub']) + '{STUB}'
     retvals = []
-    lex_stub = lexc_escape(wordmap['stub'][:1] + wordmap['stub'][1:].replace('|', '{hyph?}').replace('_', ''))
+    lex_stub = lexc_escape(wordmap['stub'])
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, new_para)]
     return "\n".join(retvals)
 
 def format_lexc_apertium(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-    wordmap['analysis'] = wordmap['analysis'].replace('|', '+').replace('_', '')
+    wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
     if wordmap['is_suffix']:
         wordmap['analysis'] = "+" + wordmap['analysis']
     elif wordmap['is_prefix']:
@@ -1084,10 +1104,9 @@ def format_multichars_lexc(format):
         multichars += """!! NEWPARA set:
 [NEWPARA=
         """
-    multichars += """!! Following specials exist in all versions of omorfi
-    {hyph?} {»} {%>}
-    """
-    multichars += version_id_easter_egg + '\n'
+    multichars += "!! Following specials exist in all versions of omorfi\n"
+    for mcs in common_multichars:
+        multichars += mcs + "\n"
     return multichars
 
 def format_root_lexicon(format):
@@ -1139,7 +1158,7 @@ def format_monodix_sdefs():
 
 def format_monodix_l(s):
     if s != '0':
-        return s.replace(' ', '<b/>').replace('%>', '').replace('%', '')
+        return s.replace(' ', '<b/>').replace(word_boundary, '')
     else:
         return ''
 
@@ -1188,7 +1207,7 @@ def format_monodix_pardef(fields):
 def format_monodix_entry(wordmap):
     for cont in wordmap['new_paras']:
         e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
-        e += '<p><l>' + wordmap['stub'].replace('|', '').replace('&', '&amp;')  +  '</l>'
+        e += '<p><l>' + wordmap['stub'].replace(word_boundary, '').replace('&', '&amp;')  +  '</l>'
         e += '<r>'
         e += wordmap['lemma'].replace('&', '&amp;')
         e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
