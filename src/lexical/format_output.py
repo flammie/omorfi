@@ -38,6 +38,8 @@ ftb3_multichars= {
         '% Punct',
         '% Quote',
         '% Dash',
+        '% Digit',
+        '% Roman',
         '% Nom', '% Par', '% Gen', '% Ine', '% Ela',
         '% Ill', '% Ade', '% Abl', '% All', '% Ess',
         '% Ins', '% Abe', '% Tra', '% Com' , '% Lat',
@@ -258,7 +260,7 @@ stuff2ftb3 = {"Bc": "#",
         "INITIAL-BRACKET": "",
         "FINAL-BRACKET": "",
         "DIGIT": "% Digit",
-        "ROMAN": "",
+        "ROMAN": "% Roman",
         "PL1": "% Pl1", 
         "PL2": "% Pl2",
         "PL3": "% Pl3",
@@ -960,16 +962,23 @@ def format_lexc_ftb3(wordmap, format):
         return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
-    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
+    if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
+        wordmap['analysis'] += format_tag_ftb3('PUNCTUATION')
+    elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(pclass)
+    else:
+        print("not in FTB3 known poses or particle!\n", wordmap)
     if wordmap['subcat']:
         for subcat in wordmap['subcat'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
+    if wordmap['symbol']:
+        for subcat in wordmap['symbol'].split('|'):
+            wordmap['analysis'] += format_tag_ftb3(subcat)
     lex_stub = wordmap['stub']
     retvals = []
     for new_para in wordmap['new_paras']:
