@@ -4,6 +4,7 @@
 --	['SYMBOL_PISTE']	symbol=dash
 -	['SYMBOL_PISTE']	symbol=dash
 –	['SYMBOL_PISTE']	symbol=dash
+—	['SYMBOL_PISTE']	symbol=dash
 >	['SYMBOL_PISTE']	symbol=final-bracket
 )	['SYMBOL_PISTE']	symbol=final-bracket
 ]	['SYMBOL_PISTE']	symbol=final-bracket
