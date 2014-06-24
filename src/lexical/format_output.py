@@ -37,7 +37,7 @@ ftb3_multichars= {
         '% Adp', '% Po', '% Pr', '% Adp% Po',
         '% Punct',
         '% Quote',
-        '% Digit',
+        '% Dash',
         '% Nom', '% Par', '% Gen', '% Ine', '% Ela',
         '% Ill', '% Ade', '% Abl', '% All', '% Ess',
         '% Ins', '% Abe', '% Tra', '% Com' , '% Lat',
@@ -248,13 +248,13 @@ stuff2ftb3 = {"Bc": "#",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel",
         "RECIPROCAL": "",
         "PUNCTUATION": "% Punct",
-        "DASH": "",
+        "DASH": "% Dash",
         "SPACE": "",
         "DECIMAL": "",
         "CLAUSE-BOUNDARY": "",
         "SENTENCE-BOUNDARY": "",
-        "INITIAL-QUOTE": "",
-        "FINAL-QUOTE": "",
+        "INITIAL-QUOTE": "% Quote",
+        "FINAL-QUOTE": "% Quote",
         "INITIAL-BRACKET": "",
         "FINAL-BRACKET": "",
         "DIGIT": "% Digit",
@@ -855,7 +855,7 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
         omorstring = lexc_escape(surf)
         if anals and anals != 'LEMMA-START':
-            omorstring += '][POS=NUMERAL]'
+            omorstring += ']'
     
     # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
     if anals == 'Dnut':
