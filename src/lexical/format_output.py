@@ -1223,15 +1223,19 @@ def format_multichars_lexc_xml():
     multichars = "  <Multichar_Symbols>\n"
     for key, value in stuff2ftb3.items():
         key = make_xmlid(key)
-        if value != '':
-            multichars += "    <mcs id='" + key + "'>" + xml_escape(value) + "</mcs>\n"
+        if key != '':
+            if value != '':
+                multichars += "    <mcs id='" + key + "'>" + xml_escape(value) + "</mcs>\n"
+            else:
+                multichars += "    <mcs id='" + key + "'>" + key + "</mcs>\n"
         else:
-            multichars += "    <mcs id='" + key + "'>" + key + "</mcs>\n"
+            pass
 
     multichars += """<!-- Following specials exist in all versions of omorfi -->
     <mcs id="hyph">{hyph?}</mcs> 
     <mcs id="deriv">»</mcs>
     <mcs id="infl">&gt;</mcs>
+    <mcs id="wb">|</mcs>
     """
     multichars += "    <mcs id='VERSION'>" + version_id_easter_egg + '</mcs>\n'
     multichars += "  </Multichar_Symbols>"
