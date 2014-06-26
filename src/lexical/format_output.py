@@ -4,6 +4,7 @@
 
 from sys import stderr
 from omor_strings_io import lexc_escape
+from cgi import escape as xml_escape
 
 # these extra symbols appear always
 
@@ -37,7 +38,9 @@ ftb3_multichars= {
         '% Adp', '% Po', '% Pr', '% Adp% Po',
         '% Punct',
         '% Quote',
+        '% Dash',
         '% Digit',
+        '% Roman',
         '% Nom', '% Par', '% Gen', '% Ine', '% Ela',
         '% Ill', '% Ade', '% Abl', '% All', '% Ess',
         '% Ins', '% Abe', '% Tra', '% Com' , '% Lat',
@@ -248,17 +251,17 @@ stuff2ftb3 = {"Bc": "#",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel",
         "RECIPROCAL": "",
         "PUNCTUATION": "% Punct",
-        "DASH": "",
+        "DASH": "% Dash",
         "SPACE": "",
         "DECIMAL": "",
         "CLAUSE-BOUNDARY": "",
         "SENTENCE-BOUNDARY": "",
-        "INITIAL-QUOTE": "",
-        "FINAL-QUOTE": "",
+        "INITIAL-QUOTE": "% Quote",
+        "FINAL-QUOTE": "% Quote",
         "INITIAL-BRACKET": "",
         "FINAL-BRACKET": "",
         "DIGIT": "% Digit",
-        "ROMAN": "",
+        "ROMAN": "% Roman",
         "PL1": "% Pl1", 
         "PL2": "% Pl2",
         "PL3": "% Pl3",
@@ -268,7 +271,7 @@ stuff2ftb3 = {"Bc": "#",
         "PE4": "% Pe4",
         "COMP": "% Comp",
         "SUPERL": "% Superl",
-        "UNSPECIFIED": "",
+        "UNSPECIFIED": "% Adv",
         "LEMMA-START": "",
         "": ""
         }
@@ -855,7 +858,7 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
         omorstring = lexc_escape(surf)
         if anals and anals != 'LEMMA-START':
-            omorstring += '][POS=NUMERAL]'
+            omorstring += ']'
     
     # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
     if anals == 'Dnut':
@@ -960,16 +963,23 @@ def format_lexc_ftb3(wordmap, format):
         return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
-    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
+    if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
+        wordmap['analysis'] += format_tag_ftb3('PUNCTUATION')
+    elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(pclass)
+    else:
+        print("not in FTB3 known poses or particle!\n", wordmap)
     if wordmap['subcat']:
         for subcat in wordmap['subcat'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_tag_ftb3('PROPER')
+    if wordmap['symbol']:
+        for subcat in wordmap['symbol'].split('|'):
+            wordmap['analysis'] += format_tag_ftb3(subcat)
     lex_stub = wordmap['stub']
     retvals = []
     for new_para in wordmap['new_paras']:
@@ -1224,6 +1234,73 @@ def format_monodix_entry(wordmap):
         e += format_monodix_par(cont)
         e += '</e>'
     return e
+
+def make_xmlid(s):
+    return s.replace("?", "_UNK").replace("→", "_right").replace("←", "left").replace(".", "_")
+
+def format_multichars_lexc_xml():
+    multichars = "  <Multichar_Symbols>\n"
+    for key, value in stuff2ftb3.items():
+        key = make_xmlid(key)
+        if key != '':
+            if value != '':
+                multichars += "    <mcs id='" + key + "'>" + xml_escape(value) + "</mcs>\n"
+            else:
+                multichars += "    <mcs id='" + key + "'>" + key + "</mcs>\n"
+        else:
+            pass
+
+    multichars += """<!-- Following specials exist in all versions of omorfi -->
+    <mcs id="hyph">{hyph?}</mcs> 
+    <mcs id="deriv">»</mcs>
+    <mcs id="infl">&gt;</mcs>
+    <mcs id="wb">|</mcs>
+    """
+    multichars += "    <mcs id='VERSION'>" + version_id_easter_egg + '</mcs>\n'
+    multichars += "  </Multichar_Symbols>"
+    return multichars
+
+def format_root_lexicon_xml():
+    root = '  <LEXICON id="Root">\n'
+    root += """<!-- ... -->
+    <e><a/><i/><cont lexica="NOUNS ADJECTIVES VERBS NUMERALS DIGITSS ACRONYMS PRONOUNS PARTICLES PUNCTUATIONS FIFTYONE"/></e>
+"""
+    root += '    <e><a><s mcs="B_right"/></a><i>-</i><cont lexica="NOUN ADJECTIVE SUFFIX"/></e>\n'
+    root += '    <e><a><s mcs="VERSION"/></a><i/><cont lexica="_end"/></e>\n'
+    root += '  </LEXICON>\n'
+    return root
+
+def format_lexc_xml(wordmap):
+    analysis = xml_escape(wordmap['lemma'])
+    analysis = analysis.replace('|', '<s mcs="wb"/>').replace('_', '<s mcs="mb"/>')
+    analysis += '<s mcs="' + wordmap['pos'] + '"/>'
+    if wordmap['is_proper']:
+        analysis += '<s mcs="proper"/>'
+    if wordmap['is_suffix']:
+        analysis = "<s mcs='suffix'/>" + analysis
+    if wordmap['is_prefix']:
+        analysis += "<s mcs='prefix'/>"
+    stub = xml_escape(wordmap['stub'])
+    stub = stub.replace('|', '<s mcs="wb"/>').replace('_', '<s mcs="mb"/>')
+    return ('    <e><a>%s</a><i>%s</i><cont lexica="%s"/></e>' % 
+            (analysis, stub, " ".join(wordmap['new_paras'])))
+
+def format_continuation_lexicon_xml(tsvparts):
+    xmlstring = '    <e>'
+    if tsvparts[1] != '':
+        xmlstring += '<a>'
+        for anal in tsvparts[1].split('|'):
+            if anal in stuff2ftb3:
+                anal = make_xmlid(anal)
+                xmlstring += '<s mcs="' + anal + '"/>'
+            else:
+                xmlstring += xml_escape(anal)
+        xmlstring += '</a>'
+    else:
+        xmlstring += '<a/>'
+    xmlstring += "<i>" + xml_escape(tsvparts[2]) + "</i>"
+    xmlstring += '<cont lexica="' + " ".join(tsvparts[3:]).replace("#", "_END") + '"/></e>\n'
+    return xmlstring
 
 # self test
 if __name__ == '__main__':

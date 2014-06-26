@@ -73,10 +73,10 @@ master.tsv: joint.tsv
 	-rm -f $@.unsrt
 
 stemparts.tsv: $(STEMPARTS)
-	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 inflections.tsv: $(INFLECTIONS)
-	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort > $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 omorfi-$(TAG_FORMAT).lexc: master.tsv stemparts.tsv inflections.tsv
 	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \

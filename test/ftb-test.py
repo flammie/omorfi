@@ -52,9 +52,6 @@ def main():
                 print("ERROR: Skipping line", line, file=stderr)
             continue
         lines += 1
-        if lines % 100000 == 0:
-            print(lines, "(maybe", lines / 76303349 * 100, "%)...",
-                    file=stderr)
         ftbsurf = conllxes[1]
         ftblemma = conllxes[2]
         ftbanals = conllxes[5]
