@@ -330,7 +330,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_DIMITRIS']	NOUN	41	None	False	strengthen	front	None	None	False	False
 ['N_EKKE']	NOUN	8	A	False	weaken	front	None	None	False	False
 ['N_ELIN']	NOUN	33	None	False	strengthen	front	None	None	False	False
-['N_EMÄNTÄ']	NOUN	10	J	False	weaken	front	ä	None	False	False
+['N_HÄNTÄ']	NOUN	10	J	False	weaken	front	ä	None	False	False
 ['N_EPÄILTY']	NOUN	1	I	False	weaken	front	None	None	False	False
 ['N_ESQUIMAU']	NOUN	21	None	False	weaken	back	o	None	False	False
 ['N_ESQUIMAU']	NOUN	21	None	False	weaken	back	O	None	False	False

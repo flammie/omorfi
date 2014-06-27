@@ -694,7 +694,7 @@ def guess_new_noun(wordmap):
                 if wordmap['lemma'].endswith('nta'):
                     wordmap['new_paras'] = ['N_KUNTA']
                 elif wordmap['lemma'].endswith('ntä'):
-                    wordmap['new_paras'] = ['N_EMÄNTÄ']
+                    wordmap['new_paras'] = ['N_HÄNTÄ']
                 else:
                     fail_guess_because(wordmap, ['N', 10, 'J'],
                             ['nta', 'ntä'])
