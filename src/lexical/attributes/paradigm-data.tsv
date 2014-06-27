@@ -194,6 +194,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['A_LÖPERÖ']	ADJECTIVE	2	None	False	weaken	front	None	None	False	False
 ['A_LÖRPPÖ']	ADJECTIVE	1	B	False	weaken	front	None	None	False	False
 ['A_MARTO']	ADJECTIVE	1	K	False	weaken	back	None	None	False	False
+['A_MATALA']	ADJECTIVE	10	None	False	weaken	back	a	None	False	False
 ['A_MATTA']	ADJECTIVE	9	C	False	weaken	back	a	None	False	False
 ['A_MELTO']	ADJECTIVE	1	I	False	weaken	back	None	None	False	False
 ['A_MIETO']	ADJECTIVE	1	F	False	weaken	back	None	None	False	False
@@ -238,6 +239,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['A_TARKKA']	ADJECTIVE	9	A	False	weaken	back	a	None	False	False
 ['A_TARKKA']	ADJECTIVE	9	D	False	weaken	back	a	None	False	False
 ['A_TERVE']	ADJECTIVE	48	None	False	strengthen	front	None	None	False	False
+['A_TERÄVÄ']	ADJECTIVE	10	None	False	weaken	front	ä	None	False	False
 ['A_TIIVIS']	ADJECTIVE	41	None	False	strengthen	front	None	None	False	False
 ['A_TOOPE']	ADJECTIVE	8	None	False	weaken	back	None	None	False	False
 ['A_TUHTI']	ADJECTIVE	5	F	False	weaken	back	None	None	False	False
@@ -291,6 +293,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_APU']	NOUN	1	E	False	weaken	back	None	None	False	False
 ['N_ARISTOTELES']	NOUN	41	None	False	strengthen	back	None	None	False	False
 ['N_ARKI']	NOUN	7	L	False	weaken	back	None	None	False	False
+['N_ASEMA']	NOUN	10	None	False	weaken	back	a	None	False	False
 ['N_ASKAR']	NOUN	49	None	False	strengthen	back	None	None	False	False
 ['N_ASKELLIN']	NOUN	33	I	False	strengthen	back	None	None	False	False
 ['N_ASTE']	NOUN	48	None	False	strengthen	back	None	None	False	False
@@ -330,7 +333,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_DIMITRIS']	NOUN	41	None	False	strengthen	front	None	None	False	False
 ['N_EKKE']	NOUN	8	A	False	weaken	front	None	None	False	False
 ['N_ELIN']	NOUN	33	None	False	strengthen	front	None	None	False	False
-['N_HÄNTÄ']	NOUN	10	J	False	weaken	front	ä	None	False	False
+['N_ELÄMÄ']	NOUN	10	None	False	weaken	front	ä	None	False	False
 ['N_EPÄILTY']	NOUN	1	I	False	weaken	front	None	None	False	False
 ['N_ESQUIMAU']	NOUN	21	None	False	weaken	back	o	None	False	False
 ['N_ESQUIMAU']	NOUN	21	None	False	weaken	back	O	None	False	False
@@ -387,6 +390,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_HÄMET']	NOUN	44	None	False	strengthen	front	None	None	False	False
 ['N_HÄMMINKI']	NOUN	5	G	False	weaken	front	None	None	False	False
 ['N_HÄNNÄT']	NOUN	10	J	obligatory	weaken	front	None	None	False	False
+['N_HÄNTÄ']	NOUN	10	J	False	weaken	front	ä	None	False	False
 ['N_HÄRKIN']	NOUN	33	A	False	strengthen	front	None	None	False	False
 ['N_HÄVINNEET']	NOUN	47	None	obligatory	strengthen	front	None	None	False	False
 ['N_HÄÄT']	NOUN	18	None	obligatory	weaken	front	None	None	False	False
@@ -758,7 +762,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_SIVISTYNYT']	NOUN	47	None	False	strengthen	front	y	None	False	False
 ['N_SKEITTI']	NOUN	5	C	False	weaken	front	None	None	False	False
 ['N_SOINTI']	NOUN	5	J	False	weaken	back	None	None	False	False
-['N_VOIMA']	NOUN	10	None	False	weaken	back	a	None	False	False
 ['N_SOKEA']	NOUN	15	None	False	weaken	back	a	None	False	False
 ['N_SOTA']	NOUN	10	F	False	weaken	back	a	None	False	False
 ['N_STADION']	NOUN	6	None	False	weaken	back	None	None	False	False
@@ -896,6 +899,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_VIRSI']	NOUN	28	K	False	weaken	front	None	None	False	False
 ['N_VODĂ']	NOUN	10	None	False	weaken	back	None	None	False	False
 ['N_VODĂ']	NOUN	10	None	False	weaken	front	None	None	False	False
+['N_VOIMA']	NOUN	10	None	False	weaken	back	a	None	False	False
 ['N_VUODET']	NOUN	27	None	obligatory	weaken	back	None	None	False	False
 ['N_VUOLLE']	NOUN	48	I	False	strengthen	back	None	None	False	False
 ['N_VUOLLET']	NOUN	44	I	False	strengthen	back	None	None	False	False

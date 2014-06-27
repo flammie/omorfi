@@ -33,7 +33,7 @@ from guess_new_class import guess_new_class
 from guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation
 
 # Supersets of paradigm classes
-# (the list might be lacking something, e.g. verbs)
+# (the list might be lacking something, e.g. adjectives & verbs)
 superpara = defaultdict(lambda:"", { 
               "['N_TALO']": "['N_RUIPELO']",   # KTN 1: 2
               "['N_ASU']": "['N_SEIKKAILU']",
@@ -51,7 +51,7 @@ superpara = defaultdict(lambda:"", {
               "['N_YMPÄRYSTÄ']": "['N_HÄKKYRÄ']",
               "['N_MAKKARA']": "['N_KITARA']",   # KTN 12: 13
               "['N_SIIVILÄ']": "['N_HÄKKYRÄ']",
-              "['N_SOITTAJA']": "['N_PROBLEEMA']",   # KTN 10: 11
+              "['N_VOIMA']": "['N_PROBLEEMA']",   # KTN 10: 11
               "['N_HÖPÖTTÄJÄ']": "['N_KÄPÄLÄ']",
             #  "['N_MAKKARA']": "['N_PROBLEEMA']",   # KTN 12: 11
             #  "['N_SIIVILÄ']": "['N_KÄPÄLÄ']",
