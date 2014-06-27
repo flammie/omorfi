@@ -758,7 +758,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_SIVISTYNYT']	NOUN	47	None	False	strengthen	front	y	None	False	False
 ['N_SKEITTI']	NOUN	5	C	False	weaken	front	None	None	False	False
 ['N_SOINTI']	NOUN	5	J	False	weaken	back	None	None	False	False
-['N_SOITTAJA']	NOUN	10	None	False	weaken	back	a	None	False	False
+['N_VOIMA']	NOUN	10	None	False	weaken	back	a	None	False	False
 ['N_SOKEA']	NOUN	15	None	False	weaken	back	a	None	False	False
 ['N_SOTA']	NOUN	10	F	False	weaken	back	a	None	False	False
 ['N_STADION']	NOUN	6	None	False	weaken	back	None	None	False	False

@@ -600,7 +600,7 @@ def guess_new_noun(wordmap):
         elif tn == 10:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('a'):
-                    wordmap['new_paras'] = ['N_SOITTAJA']
+                    wordmap['new_paras'] = ['N_VOIMA']
                 elif wordmap['lemma'].endswith('A'):
                     wordmap['new_paras'] = ['N_FIFA']
                 elif wordmap['lemma'].endswith('ă'):
