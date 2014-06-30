@@ -611,6 +611,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_NOUGAT']	NOUN	22	None	False	weaken	back	None	None	False	False
 ['N_NUGAA']	NOUN	20	None	False	weaken	back	a	None	False	False
 ['N_NUKKE']	NOUN	8	A	False	weaken	back	None	None	False	False
+['N_NYLJIN']	NOUN	33	L	False	strengthen	front	None	None	False	False
 ['N_NÄKY']	NOUN	1	D	False	weaken	front	None	None	False	False
 ['N_NÄKÖ']	NOUN	1	D	False	weaken	front	None	None	False	False
 ['N_NÄLKÄ']	NOUN	10	D	False	weaken	front	ä	None	False	False

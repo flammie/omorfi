@@ -1302,12 +1302,14 @@ def guess_new_noun(wordmap):
             elif wordmap['kotus_av'] == 'L':
                 if wordmap['lemma'].endswith('jin') and wordmap['harmony'] == 'back':
                     wordmap['new_paras'] = ['N_POLJIN']
+                elif wordmap['lemma'].endswith('jin') and wordmap['harmony'] == 'front':
+                    wordmap['new_paras'] = ['N_NYLJIN']
                 else:
                     fail_guess_because(wordmap, ['N', 33, 'J'],
-                        ['jin', 'back'])
+                        ['jin', 'back', 'front'])
             else:
                 fail_guess_because(wordmap, ['N', 33],
-                    [False, 'A', 'C-F', 'J-L'])
+                    [False, 'A', 'C-F', 'I-L'])
         elif wordmap['kotus_tn'] == 34:
             if wordmap['kotus_av'] == 'B':
                 if wordmap['lemma'].endswith('pan'):
