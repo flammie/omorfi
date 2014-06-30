@@ -32,6 +32,7 @@ miks	['PCLE_TYHMÄSTI']	style=dialectal
 mitvit	['PCLE_VAAN']	style=nonstandard
 mix	['PCLE_TYHMÄSTI']	style=nonstandard
 moduli	['N_RUUVI']	style=nonstandard
+muudan	['PRON_MUUAN']	style=archaic
 mä	['PRON_MÄ']	style=dialectal
 mää	['PRON_MÄÄ']	style=dialectal
 niinkuin	['PCLE_VAAN']	style=nonstandard
