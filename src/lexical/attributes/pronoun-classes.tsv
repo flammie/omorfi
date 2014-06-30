@@ -47,6 +47,7 @@ mones	['PRON_MONES']	subcat=quantor
 moni	['PRON_MONI']	subcat=quantor
 monta	['PRON_MONTA']	subcat=quantor
 muuan	['PRON_MUUAN']	subcat=quantor|indefinite
+muudan	['PRON_MUUAN']	subcat=quantor|indefinite
 muu	['PRON_MUU']	subcat=quantor
 muutama	['PRON_MUUTAMA']	subcat=quantor
 mä	['PRON_MÄ']	subcat=personal|sg1

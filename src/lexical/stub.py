@@ -164,7 +164,7 @@ def stub_all_ktn(wordmap):
                 wordmap = mangle_suffixes_or_die(wordmap, ['ssäkään'])
             elif wordmap['lemma'] == 'missään':
                 wordmap = mangle_suffixes_or_die(wordmap, ['ssään'])
-            elif wordmap['lemma'] == 'muuan':
+            elif wordmap['lemma'] in ['muuan', 'muudan']:
                 wordmap = mangle_suffixes_or_die(wordmap, ['n'])
             elif wordmap['lemma'] in ['mä', 'sä']:
                 wordmap = mangle_suffixes_or_die(wordmap, ['ä'])
