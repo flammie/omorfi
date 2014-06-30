@@ -232,6 +232,7 @@ AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
                  src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh
                  src/scripts/omorfi-spell.sh
                  src/scripts/omorfi-interactive.sh
+                 omorfi.pc
                  man/Makefile], 
                  [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-interactive.sh])
 AC_OUTPUT
