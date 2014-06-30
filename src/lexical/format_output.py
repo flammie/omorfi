@@ -889,7 +889,7 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
 def format_continuation_lexc_segments(anals, surf, cont):
     if surf != '0':
         surf = lexc_escape(surf)
-    return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, '|').replace(word_boundary, '|'),
+    return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, word_boundary),
             surf, cont)
 
 def format_lexc_omor(wordmap, format):
