@@ -191,6 +191,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['A_LÄHTEISYYS']	ADJECTIVE	40	None	False	strengthen	front	None	None	False	False
 ['A_LÄMMIN']	ADJECTIVE	35	H	False	strengthen	front	None	None	False	False
 ['A_LÄNTÄ']	ADJECTIVE	10	J	False	weaken	front	ä	None	False	False
+['A_LÄTYSKÄ']	ADJECTIVE	13	None	False	weaken	front	ä	None	False	False
 ['A_LÖPERÖ']	ADJECTIVE	2	None	False	weaken	front	None	None	False	False
 ['A_LÖRPPÖ']	ADJECTIVE	1	B	False	weaken	front	None	None	False	False
 ['A_MARTO']	ADJECTIVE	1	K	False	weaken	back	None	None	False	False
