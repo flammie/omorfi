@@ -413,6 +413,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_JOUKOT']	NOUN	1	D	obligatory	weaken	back	None	None	False	False
 ['N_JOUTSEN']	NOUN	32	None	False	strengthen	back	None	None	False	False
 ['N_JUHLAT']	NOUN	10	None	obligatory	weaken	back	None	None	False	False
+['N_JUMALA']	NOUN	10	None	False	weaken	back	a	None	False	False
 ['N_JUOVAT']	NOUN	10	E	obligatory	weaken	back	None	None	False	False
 ['N_JYLKYT']	NOUN	1	A	obligatory	weaken	front	None	None	False	False
 ['N_JÄLSI']	NOUN	28	I	False	weaken	front	None	None	False	False
@@ -743,6 +744,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_SAMMALET']	NOUN	49	None	obligatory	strengthen	back	None	None	False	False
 ['N_SAMPI']	NOUN	7	H	False	weaken	back	None	None	False	False
 ['N_SAMPO']	NOUN	1	H	False	weaken	back	None	None	False	False
+['N_SANKARI']	NOUN	6	None	False	weaken	back	None	None	False	False
 ['N_SEIKKAILU']	NOUN	2	None	False	weaken	back	None	None	False	False
 ['N_SEIVÄS']	NOUN	41	E	False	strengthen	front	None	None	False	False
 ['N_SELENE']	NOUN	2	None	False	weaken	front	None	None	False	False
