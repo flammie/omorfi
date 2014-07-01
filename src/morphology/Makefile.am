@@ -1,11 +1,5 @@
 ## Process this file with automake to produce Makefile.in
 
-if WANT_FTB3
-MAYBE_FTB3_HACKS=hacks/51-ftb3.lexc
-else
-MAYBE_OMOR_HACKS=hacks/51.lexc
-endif
-
 if WANT_TAGGER_HACKS
 MAYBE_TAGGER_HACKS=hacks/tagger-hacks.lexc
 endif
