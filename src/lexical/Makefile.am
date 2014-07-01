@@ -10,6 +10,7 @@ STEMPARTS=continuations/acronym-stems.tsv \
 		  continuations/numeral-stems.tsv \
 		  continuations/pronoun-stems.tsv \
 		  continuations/symbol-stems.tsv \
+		  continuations/51-stems.tsv \
 		  continuations/verb-stems.tsv
 INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/adjective-inflections.tsv \

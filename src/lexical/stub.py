@@ -198,6 +198,8 @@ def stub_all_ktn(wordmap):
             pass
         elif wordmap['kotus_tn'] == 1101:
             wordmap = mangle_suffixes_or_die(wordmap, ['ka', 'kä'])
+        elif wordmap['kotus_tn'] == 51:
+            wordmap['stub'] = ''
         else:
             fail_guess_because(wordmap, ['!av'], ['0-71', 999, 1007, 1010,1009,
                 1024, 1026, 1067, 1099])

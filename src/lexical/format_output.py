@@ -887,8 +887,7 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
 def format_continuation_lexc_segments(anals, surf, cont):
-    if surf != '0':
-        surf = lexc_escape(surf)
+    surf = lexc_escape(surf)
     return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, word_boundary),
             surf, cont)
 
@@ -1141,6 +1140,7 @@ def format_root_lexicon(format):
 0   PARTICLE    ;
 0   PUNCTUATION ;
 0   51 ;
+0   CONJUNCTIONVERB ;
 """
     root += format_tag('B→', format) + ':-   NOUN ;\n'
     root += format_tag('B→', format) + ':-   ADJECTIVE ;\n'
