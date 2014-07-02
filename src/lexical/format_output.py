@@ -765,7 +765,7 @@ def format_analysis_lexc_ftb3(anals):
     ftbstring = ""
     if 'Nneg|Vact' in anals:
         anals = anals.replace('|Vact', '')
-    elif anals == 'Vact|Ia|Nsg|Xlat':
+    elif anals == 'Vact|Ia|Xlat':
         anals = 'Ia|Xlat'
     elif anals == 'Vact|Ima|Xins':
         anals = 'Ima|FTB3man'
@@ -966,12 +966,23 @@ def format_lexc_ftb3(wordmap, format):
         wordmap['analysis'] += format_tag_ftb3('PUNCTUATION')
     elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
         wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
+    elif wordmap['pos'] == 'CONJUNCTIONVERB':
+        if wordmap['lemma'] == 'eikä':
+            wordmap['lemma'] = 'ei'
+            wordmap['analysis'] = format_tag_ftb3('COORDINATING') + \
+                    format_tag_ftb3('Nneg')
+        else:
+            wordmap['analysis'] = format_tag_ftb3('SUBORDINATING') + \
+                    format_tag_ftb3('Nneg')
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(pclass)
     else:
         print("not in FTB3 known poses or particle!\n", wordmap)
+        exit(1)
     if wordmap['subcat']:
+        if 'PERSONAL' in wordmap['subcat']:
+            wordmap['subcat'] = 'PERSONAL'
         for subcat in wordmap['subcat'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(subcat)
     if wordmap['is_proper']:
@@ -979,11 +990,19 @@ def format_lexc_ftb3(wordmap, format):
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_tag_ftb3(subcat)
+        if wordmap['lemma'] == '–':
+            wordmap['analysis'].replace('Dash', 'EnDash')
+        if wordmap['lemma'] == '—':
+            wordmap['analysis'].replace('Dash', 'EmDash')
     lex_stub = wordmap['stub']
     retvals = []
     for new_para in wordmap['new_paras']:
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
                 new_para)]
+    if wordmap['lemma'] in ['-', '–', '—', '(']:
+        retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" %(wordmap['analysis'], lex_stub,
+            new_para)]
+
     return "\n".join(retvals)
 
 def format_lexc_google(wordmap):
