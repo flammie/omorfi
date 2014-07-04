@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: omorfi
+Description: Finnish lexical and morphological database and some parsers
+Version: @VERSION@
+Libs: 
+Cflags:
