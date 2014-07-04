@@ -419,6 +419,7 @@ stuff2omor_short = {
         "UNSPECIFIED": "",
         "FTB3man": "",
         "LEMMA-START": "[WORD_ID=",
+        "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]", 
         "": ""}
 
 stuff2omor = stuff2omor_short
