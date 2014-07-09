@@ -973,7 +973,7 @@ def format_lexc_ftb3(wordmap, format):
             wordmap['analysis'] = format_tag_ftb3('COORDINATING') + \
                     format_tag_ftb3('Nneg')
         else:
-            wordmap['analysis'] = format_tag_ftb3('SUBORDINATING') + \
+            wordmap['analysis'] = format_tag_ftb3('ADVERBIAL') + \
                     format_tag_ftb3('Nneg')
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
