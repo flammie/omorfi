@@ -926,6 +926,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_ÄYRÄS']	NOUN	41	None	False	strengthen	front	None	None	False	False
 ['PCLE_AIKANSA']	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ['PCLE_ALLE']	PARTICLE	99	None	False	False	back	None	None	optional	True
+['PCLE_HAH']	PARTICLE	99	None	False	False	back	None	None	False	False
 ['PCLE_HYVILLÄÄN']	PARTICLE	99	None	False	False	front	None	None	obligatory	True
 ['PCLE_IKINÄ']	PARTICLE	99	None	False	False	front	None	None	optional	False
 ['PCLE_ILKOSILLAAN']	PARTICLE	99	None	False	False	back	None	None	obligatory	True

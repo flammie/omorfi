@@ -211,6 +211,8 @@ def main():
                     pos = 'NUMERAL'
                 elif tsv_parts[0].startswith('ADV_'):
                     pos = 'PARTICLE'
+                elif tsv_parts[0].startswith('PCLE_'):
+                    pos = 'PARTICLE'
                 elif tsv_parts[0].startswith('PRON_'):
                     pos = 'PRONOUN'
                 elif tsv_parts[0].startswith('SYMBOL_'):
