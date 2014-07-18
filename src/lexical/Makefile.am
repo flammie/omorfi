@@ -8,6 +8,7 @@ STEMPARTS=continuations/acronym-stems.tsv \
 		  continuations/digit-stems.tsv \
 		  continuations/noun-stems.tsv \
 		  continuations/numeral-stems.tsv \
+		  continuations/particle-stems.tsv \
 		  continuations/pronoun-stems.tsv \
 		  continuations/symbol-stems.tsv \
 		  continuations/51-stems.tsv \
