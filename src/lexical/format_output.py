@@ -1158,6 +1158,7 @@ def format_root_lexicon(format):
 0   ACRONYM ;
 0   PRONOUN    ;
 0   PARTICLE    ;
+0   INTERJECTION ;
 0   PUNCTUATION ;
 0   CONJUNCTIONVERB ;
 """

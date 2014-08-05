@@ -85,7 +85,7 @@ def main():
                 print("Must have at leas N separators in joins; skipping",
                         join_parts)
                 continue
-            key = join_parts['new_paras'].strip('[').strip(']')
+            key = join_parts['new_paras'].strip('[]')
             joinmap[key] = join_parts
 
     # read from csv files
@@ -143,11 +143,15 @@ def main():
                 wordmap = plurale_tantum_get_singular_stem(wordmap)
                 wordmap = gradation_make_morphophonemes(wordmap)
                 wordmap = stub_all_ktn(wordmap)
-                # suffixes can be id'd by the - in beginning
+                # suffixes can be id'd by the - in beginning. They need an own lexicon
                 wordmap = guess_bound_morphs(wordmap)
                 if wordmap['is_suffix']:
                     wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'SUFFIX'
+                # put interjections in separate lexicon to allow chaining them
+                if "'PCLE_HAH'" in wordmap['new_paras']:
+                    wordmap['real_pos'] = wordmap['pos']
+                    wordmap['pos'] = 'INTERJECTION'
                 # split multiple particle or subcat definitions to distinct lexemes
                 wordmaps = [wordmap]
                 wordmaps = [ m for wm in wordmaps 
