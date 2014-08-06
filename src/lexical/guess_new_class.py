@@ -4315,7 +4315,7 @@ def guess_new_verb(wordmap):
                     ['nnetä'])
         elif wordmap['kotus_av'] == 'L':
             if wordmap['lemma'].endswith('jeta'):
-                wordmap['new_paras'] = ['V_JULJETA']
+                wordmap['new_paras'] = ['V_ROHJETA']
             elif wordmap['lemma'].endswith('jetä'):
                 wordmap['new_paras'] = ['V_ILJETÄ']
             else:
