@@ -87,7 +87,7 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
 
     def FormatArgType(v):
-        baseformats = ["omor", "omor-short", "apertium",
+        baseformats = ["omor", "apertium",
                 "giellatekno", "ftb3", "segments", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')

@@ -64,7 +64,7 @@ ftb3_multichars= {
         '% Foc_pA', '% Foc_s', '% Foc_kA', 
         '% Man', '%<Del%>→', '←%<Del%>'}
 
-omor_short_multichars = {
+omor_multichars = {
         '[WORD_ID=', '[POS=ADJECTIVE]', '[POS=VERB]', '[POS=NOUN]',
         '[POS=PARTICLE]', '[POS=PRONOUN]', '[POS=NUMERAL]',
         '[PROPER=PROPER]', '[POS=ADVERB]', '[POS=ADPOSITION]',
@@ -134,8 +134,6 @@ omor_short_multichars = {
         "[SUBCAT=BRACKET][POSITION=INITIAL]",
         "[SUBCAT=BRACKET][POSITION=FINAL]"
         }
-
-omor_multichars=omor_short_multichars
 
 ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
@@ -276,7 +274,7 @@ stuff2ftb3 = {"Bc": "#",
         "": ""
         }
 
-stuff2omor_short = {
+stuff2omor = {
         ".sent": "[BOUNDARY=SENTENCE]",
         "Bc": "[BOUNDARY=COMPOUND]", 
         "B-": "[COMPOUND_FORM=OMIT]",
@@ -421,8 +419,6 @@ stuff2omor_short = {
         "LEMMA-START": "[WORD_ID=",
         "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]", 
         "": ""}
-
-stuff2omor = stuff2omor_short
 
 monodix_sdefs= {
         'adj', 'vblex', 'n',
@@ -1113,11 +1109,7 @@ def format_lexc_apertium(wordmap):
 
 def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
-    if format.startswith("omor-short") or format.startswith("ktnkav"):
-        multichars += "!! OMOR (short) set:\n"
-        for mcs in omor_short_multichars:
-            multichars += mcs + "\n"
-    elif format.startswith("omor"):
+    if format.startswith("omor"):
         multichars += "!! OMOR set:\n"
         for mcs in omor_multichars:
             multichars += mcs + "\n"
@@ -1134,11 +1126,11 @@ def format_multichars_lexc(format):
     else:
         print("missing format", format, file=stderr)
         exit(1)
-    if format.startswith("ktnkav"):
+    if "+ktnkav" in format:
         multichars += "!! KTNKAV set:\n"
         for mcs in ktnkav_multichars:
             multichars += mcs + "\n"
-    if format.startswith("newparas"):
+    if "+newparas" in format:
         multichars += """!! NEWPARA set:
 [NEWPARA=
         """
@@ -1332,13 +1324,6 @@ if __name__ == '__main__':
             print("There are conflicting formattings in here!", omor, 
                     "is not a valid defined omor multichar_symbol!")
             fail = True
-    for stuff, omor in stuff2omor_short.items():
-        if len(omor) < 2:
-            continue
-        elif not omor in omor_short_multichars:
-            print("There are conflicting formattings in here!", omor, 
-                    "is not a valid defined omor-short multichar_symbol!")
-            fail = True
     for stuff, ftb3 in stuff2ftb3.items():
         if len(ftb3) < 2:
             continue
@@ -1352,10 +1337,6 @@ if __name__ == '__main__':
         if not stuff in stuff2omor:
             print("There are conflicting formattings in here!", stuff, 
                     "has no mapping in omor!")
-            fail = True
-        if not stuff in stuff2omor_short:
-            print("There are conflicting formattings in here!", stuff, 
-                    "has no mapping in omor_short!")
             fail = True
     if fail:
         exit(1)
