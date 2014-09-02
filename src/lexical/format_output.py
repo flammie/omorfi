@@ -137,22 +137,22 @@ omor_multichars = {
 
 ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
-        '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
+        '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=1%0]',
         '[KTN=11]', '[KTN=12]', '[KTN=13]', '[KTN=14]', '[KTN=15]',
-        '[KTN=16]', '[KTN=17]', '[KTN=18]', '[KTN=19]', '[KTN=20]',
+        '[KTN=16]', '[KTN=17]', '[KTN=18]', '[KTN=19]', '[KTN=2%0]',
         '[KTN=21]', '[KTN=22]', '[KTN=23]', '[KTN=24]', '[KTN=25]',
-        '[KTN=26]', '[KTN=27]', '[KTN=28]', '[KTN=29]', '[KTN=30]',
+        '[KTN=26]', '[KTN=27]', '[KTN=28]', '[KTN=29]', '[KTN=3%0]',
         '[KTN=31]', '[KTN=32]', '[KTN=33]', '[KTN=34]', '[KTN=35]',
-        '[KTN=36]', '[KTN=37]', '[KTN=38]', '[KTN=39]', '[KTN=40]',
+        '[KTN=36]', '[KTN=37]', '[KTN=38]', '[KTN=39]', '[KTN=4%0]',
         '[KTN=41]', '[KTN=42]', '[KTN=43]', '[KTN=44]', '[KTN=45]',
-        '[KTN=46]', '[KTN=47]', '[KTN=48]', '[KTN=49]', '[KTN=50]',
+        '[KTN=46]', '[KTN=47]', '[KTN=48]', '[KTN=49]', '[KTN=5%0]',
         '[KTN=51]', '[KTN=52]', '[KTN=53]', '[KTN=54]', '[KTN=55]',
-        '[KTN=56]', '[KTN=57]', '[KTN=58]', '[KTN=59]', '[KTN=60]',
+        '[KTN=56]', '[KTN=57]', '[KTN=58]', '[KTN=59]', '[KTN=6%0]',
         '[KTN=61]', '[KTN=62]', '[KTN=63]', '[KTN=64]', '[KTN=65]',
-        '[KTN=66]', '[KTN=67]', '[KTN=68]', '[KTN=69]', '[KTN=70]',
+        '[KTN=66]', '[KTN=67]', '[KTN=68]', '[KTN=69]', '[KTN=7%0]',
         '[KTN=71]', '[KTN=72]', '[KTN=73]', '[KTN=74]', '[KTN=75]',
         '[KTN=76]', '[KTN=77]', '[KTN=78]',
-        '[KTN=1007]', '[KTN=1009]', '[KTN=1010]', '[KTN=1024]', '[KTN=1026]',
+        '[KTN=1%0%07]', '[KTN=1%0%09]', '[KTN=1%01%0]', '[KTN=1%024]', '[KTN=1%026]',
         '[KAV=A]', '[KAV=B]', '[KAV=C]', '[KAV=D]', '[KAV=E]',
         '[KAV=F]', '[KAV=G]', '[KAV=H]', '[KAV=I]', '[KAV=J]',
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
@@ -935,7 +935,7 @@ def format_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
     
     if '+ktnkav' in format:
-        tag = "[KTN=%(kotus_tn)s]" %(wordmap)
+        tag = "[KTN=%s]" %(lexc_escape(wordmap['kotus_tn']))
         if tag in ktnkav_multichars:
             wordmap['analysis'] += tag
             if wordmap['kotus_av']:
