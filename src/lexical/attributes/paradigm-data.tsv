@@ -287,6 +287,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_AIVOT']	NOUN	1	None	obligatory	weaken	back	None	None	False	False
 ['N_AJATAR']	NOUN	32	C	False	strengthen	back	None	None	False	False
 ['N_ALKEET']	NOUN	48	L	obligatory	strengthen	back	None	None	False	False
+['N_ALKU']	NOUN	1	D	False	weaken	back	None	None	False	False
 ['N_ALLAS']	NOUN	41	I	False	strengthen	back	None	None	False	False
 ['N_ALTIS']	NOUN	41	C	False	strengthen	back	None	None	False	False
 ['N_ANTIMET']	NOUN	33	J	obligatory	strengthen	back	None	None	False	False
@@ -381,6 +382,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_HUOLITELTU']	NOUN	1	I	False	weaken	back	None	None	False	False
 ['N_HUPI']	NOUN	5	E	False	weaken	back	None	None	False	False
 ['N_HYLJE']	NOUN	48	L	False	strengthen	front	None	None	False	False
+['N_HYLKY']	NOUN	1	D	False	weaken	front	None	None	False	False
 ['N_HYNTTEET']	NOUN	48	C	obligatory	strengthen	front	None	None	False	False
 ['N_HYNTTYYT']	NOUN	17	None	obligatory	weaken	front	None	None	False	False
 ['N_HYVINKÄÄ']	NOUN	17	None	False	weaken	front	ä	None	False	False
@@ -601,6 +603,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_MÄTTÄÄT']	NOUN	41	C	obligatory	strengthen	front	None	None	False	False
 ['N_MÄTÄS']	NOUN	41	C	False	strengthen	front	None	None	False	False
 ['N_MÖMMÖ']	NOUN	1	None	False	weaken	front	None	None	False	False
+['N_MÖRKÖ']	NOUN	1	D	False	weaken	front	None	None	False	False
 ['N_NALLE']	NOUN	8	None	False	weaken	back	None	None	False	False
 ['N_NEITSYT']	NOUN	43	None	False	strengthen	front	None	None	False	False
 ['N_NEUVOTTELUT']	NOUN	2	None	obligatory	weaken	back	None	None	False	False
@@ -640,6 +643,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_PATEE']	NOUN	20	None	False	weaken	back	e	None	False	False
 ['N_PATSAS']	NOUN	41	None	False	strengthen	back	None	None	False	False
 ['N_PEIPOT']	NOUN	1	B	obligatory	weaken	back	None	None	False	False
+['N_PELKO']	NOUN	1	D	False	weaken	back	None	None	False	False
 ['N_PELTI']	NOUN	5	I	False	weaken	front	None	None	False	False
 ['N_PENGER']	NOUN	49	G	False	strengthen	front	None	None	False	False
 ['N_PERKEET']	NOUN	48	L	obligatory	strengthen	front	None	None	False	False

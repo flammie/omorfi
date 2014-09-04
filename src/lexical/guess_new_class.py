@@ -103,6 +103,22 @@ def guess_new_noun(wordmap):
                     wordmap['new_paras'] = ['N_LIUKU']
                 elif wordmap['lemma'].endswith('oko'):
                     wordmap['new_paras'] = ['N_KOKO']
+                elif wordmap['lemma'].endswith('hko') or \
+                     wordmap['lemma'].endswith('lko') or \
+                     wordmap['lemma'].endswith('rko'):
+                    wordmap['new_paras'] = ['N_PELKO']
+                elif wordmap['lemma'].endswith('hku') or \
+                     wordmap['lemma'].endswith('lku') or \
+                     wordmap['lemma'].endswith('rku'):
+                    wordmap['new_paras'] = ['N_ALKU']
+                elif wordmap['lemma'].endswith('hky') or \
+                     wordmap['lemma'].endswith('lky') or \
+                     wordmap['lemma'].endswith('rky'):
+                    wordmap['new_paras'] = ['N_HYLKY']
+                elif wordmap['lemma'].endswith('hkö') or \
+                     wordmap['lemma'].endswith('lkö') or \
+                     wordmap['lemma'].endswith('rkö'):
+                    wordmap['new_paras'] = ['N_MÖRKÖ']
                 elif wordmap['lemma'].endswith('ko'):
                     wordmap['new_paras'] = ['N_TEKO']
                 elif wordmap['lemma'].endswith('ku'):
