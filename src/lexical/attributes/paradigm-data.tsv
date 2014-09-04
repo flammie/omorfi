@@ -567,6 +567,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_MAA']	NOUN	18	None	False	weaken	back	a	None	False	False
 ['N_MAKKARA']	NOUN	12	None	False	weaken	back	a	None	False	False
 ['N_MAKU']	NOUN	1	D	False	weaken	back	None	None	False	False
+['N_MALKO']	NOUN	1	M	False	weaken	back	None	None	False	False
 ['N_MALMÖ']	NOUN	21	None	False	weaken	front	ö	None	False	False
 ['N_MALMÖ']	NOUN	21	None	False	weaken	front	Ö	None	False	False
 ['N_MALTAAT']	NOUN	41	I	obligatory	strengthen	back	None	None	False	False

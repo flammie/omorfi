@@ -193,13 +193,15 @@ def guess_new_noun(wordmap):
                     fail_guess_because(wordmap, ['N', 1, 'K'],
                             ['rto'])
             elif wordmap['kotus_av'] == 'M':
-                if wordmap['lemma'].endswith('uku'):
+                if wordmap['lemma'].endswith('ko'):
+                    wordmap['new_paras'] = ['N_MALKO']
+                elif wordmap['lemma'].endswith('ku'):
                     wordmap['new_paras'] = ['N_LUKU']
-                elif wordmap['lemma'].endswith('yky'):
+                elif wordmap['lemma'].endswith('ky'):
                     wordmap['new_paras'] = ['N_KYKY']
                 else:
                     fail_guess_because(wordmap, ['N', 1, 'M'],
-                            ['uku', 'yky'])
+                            ['ko', 'ku', 'ky'])
             else:
                 fail_guess_because(wordmap, ['N', 1], ['A–K', 'M'])
         elif tn == 2:
