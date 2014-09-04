@@ -468,6 +468,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_KIVI']	NOUN	7	None	False	weaken	front	None	None	False	False
 ['N_KLUMPIT']	NOUN	5	B	obligatory	weaken	back	None	None	False	False
 ['N_KOE']	NOUN	48	D	False	strengthen	back	None	None	False	False
+['N_KOKO']	NOUN	1	D	False	weaken	back	None	None	False	False
 ['N_KOMPA']	NOUN	10	H	False	weaken	back	a	None	False	False
 ['N_KORPI']	NOUN	7	E	False	weaken	back	None	None	False	False
 ['N_KORTES']	NOUN	41	C	False	strengthen	back	None	None	False	False
