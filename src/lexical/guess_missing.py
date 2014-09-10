@@ -150,9 +150,15 @@ def do_guessing(args):
             if word['lemma'].endswith('aa') or word['lemma'].endswith('ää'):
                 word['pos'] = 'VERB'
             elif word['lemma'].endswith('sti'):
-                word['pos'] = 'PARTICLE'
+                word['pos'] = 'ADVERB'
             else:
                 word['pos'] = 'NOUN'
+    if word['pos'] in ('ADVERB', 'ADPOSITION', 'CONJUNCTION', 'INTERJECTION'):
+        word['particle'] = word['pos']
+        word['pos'] = 'PARTICLE'
+    if word['pos'] == 'PARTICLE':
+        word['kotus_tn']  = 99
+    
     if not word['new_paras']:
         if args.verbose:
             print("Guessing new para from ktn...", file=stderr)

@@ -87,17 +87,18 @@ def guess_harmony(wordmap):
     '''Guess word's harmony based on lemma, using trivial last harmony vowel
     or front algorithm.
     '''
-    if not wordmap['kotus_tn']:
-        return wordmap
     if wordmap['harmony']:
         return wordmap
-    tn = int(wordmap['kotus_tn'])
+    if not wordmap['kotus_tn']:
+        tn = 0
+    else:
+        tn = int(wordmap['kotus_tn'])
     if tn in range(52, 79) or wordmap['pos'] == 'VERB':
         if wordmap['lemma'].endswith('ä'):
             wordmap['harmony'] = 'front'
         elif wordmap['lemma'].endswith('a'):
             wordmap['harmony'] = 'back'
-        elif wordmap['lemma'].endswith('ei') and wordmap['kotus_tn'] == 1099:
+        elif wordmap['lemma'].endswith('ei') and tn == 1099:
             wordmap['harmony'] = 'front'
         else:
             print("Unguessable harmony in verb; must end in {a, ä}, in", 

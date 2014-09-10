@@ -1049,6 +1049,8 @@ def guess_new_noun(wordmap):
                     wordmap['new_paras'] = ['N_RUUHI']
                 elif wordmap['harmony'] == 'front' and wordmap['lemma'].endswith('meri'):
                     wordmap['new_paras'] = ['N_MERI']
+                elif wordmap['harmony'] == 'front' and wordmap['lemma'].endswith('veri'):
+                    wordmap['new_paras'] = ['N_VERI']
                 elif wordmap['harmony'] == 'front':
                     wordmap['new_paras'] = ['N_HIIRI']
                 else:
@@ -1948,7 +1950,7 @@ def guess_new_noun(wordmap):
             wordmap['new_paras'] = ['N_VAASAN']
         else:
             fail_guess_because(wordmap, ['N'],
-                ['1-49', '99', '1009-1010'])
+                ['1-49', '99', '1007-1026'])
     else:
         if not wordmap['lemma'].endswith('t'):
             fail_guess_because(wordmap, ['N', 'PLT'],
@@ -2483,7 +2485,7 @@ def guess_new_noun(wordmap):
                     wordmap['new_paras'] = ['N_TYÖT']
                 else:
                     fail_guess_because(wordmap, ['N', 19, False, 'PLT'],
-                            ['iet', 'yöt'])
+                            ['iet', 'uot', 'yöt'])
             else:
                 fail_guess_because(wordmap, ['N', 19, 'PLT'],
                         [False])
@@ -5117,56 +5119,74 @@ def guess_new_particle(wordmap):
     if wordmap['possessive']:
         if wordmap['possessive'] == 'opt':
             if wordmap['harmony'] == 'front':
-                if wordmap['lemma'].endswith('e'):
-                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_EN_OPT']
-                elif wordmap['lemma'].endswith('ä'):
-                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_ÄN_OPT']
+                if wordmap['lemma'].endswith('ä'):
+                    wordmap['new_paras'] = ['PCLE_IKINÄ']
+                elif wordmap['lemma'].endswith('e'):
+                    wordmap['new_paras'] = ['PCLE_YLLE']
+                elif wordmap['lemma'].endswith('i'):
+                    wordmap['new_paras'] = ['PCLE_LISÄKSI']
+                elif wordmap['lemma'].endswith('den'):
+                    wordmap['new_paras'] = ['PCLE_NÄHDEN']
                 elif wordmap['lemma'].endswith('n'):
-                    wordmap['new_paras'] = ['PCLE_FRONT_N_POSS_OPT']
+                    wordmap['new_paras'] = ['PCLE_NÄKYVIIN']
                 else:
-                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_OPT']
+                    fail_guess_because(wordmap, ['PCLE', 'POSS=OPT'],
+                            ['ä', 'e', 'i', 'n', 'front'])
             elif wordmap['harmony'] == 'back':
                 if wordmap['lemma'].endswith('a'):
-                    wordmap['new_paras'] = ['PCLE_BACK_POSS_AN_OPT']
+                    wordmap['new_paras'] = ['PCLE_KOTONA']
                 elif wordmap['lemma'].endswith('e'):
-                    wordmap['new_paras'] = ['PCLE_BACK_POSS_EN_OPT']
+                    wordmap['new_paras'] = ['PCLE_ALLE']
+                elif wordmap['lemma'].endswith('i'):
+                    wordmap['new_paras'] = ['PCLE_VUOKSI']
                 elif wordmap['lemma'].endswith('n'):
-                    wordmap['new_paras'] = ['PCLE_BACK_N_POSS_OPT']
+                    wordmap['new_paras'] = ['PCLE_VALTAAN']
                 else:
-                    wordmap['new_paras'] = ['PCLE_BACK_POSS_OPT']
+                    fail_guess_because(wordmap, ['PCLE', 'POSS=OPT'],
+                            ['a', 'e', 'i', 'n', 'back'])
             else:
                 fail_guess_because(wordmap, ["PCLE", "POSS"],
                         ["front", "back"])
         elif wordmap['possessive'] == 'obl':
             if wordmap['harmony'] == 'front':
-                if wordmap['lemma'].endswith('e'):
-                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_EN_OBL']
-                elif wordmap['lemma'].endswith('ä'):
-                    wordmap['new_paras'] = ['PCLE_FRONT_POSS_ÄN_OBL']
+                if wordmap['lemma'].endswith('än'):
+                    wordmap['new_paras'] = ['PCLE_HYVILLÄÄN']
+                elif wordmap['lemma'].endswith('en'):
+                    wordmap['new_paras'] = ['PCLE_LEVÄLLEEN']
+                elif wordmap['lemma'].endswith('nsä'):
+                    wordmap['new_paras'] = ['PCLE_YLIPÄÄNSÄ']
                 else:
-                    wordmap['new_paras'] = ['PCLE_FRONT_POSS']
+                    fail_guess_because(wordmap, ['PCLE', 'POSS=OBL'],
+                            ['än', 'en', 'nsä', 'front'])
             elif wordmap['harmony'] == 'back':
-                if wordmap['lemma'].endswith('a'):
-                    wordmap['new_paras'] = ['PCLE_BACK_POSS_AN_OBL']
-                elif wordmap['lemma'].endswith('e'):
-                    wordmap['new_paras'] = ['PCLE_BACK_POSS_EN_OBL']
+                if wordmap['lemma'].endswith('an'):
+                    wordmap['new_paras'] = ['PCLE_ILKOSILLAAN']
+                elif wordmap['lemma'].endswith('en'):
+                    wordmap['new_paras'] = ['PCLE_ISTUALLEEN']
+                elif wordmap['lemma'].endswith('nsä'):
+                    wordmap['new_paras'] = ['PCLE_AIKANSA']
                 else:
-                    wordmap['new_paras'] = ['PCLE_BACK_POSS']
+                    fail_guess_because(wordmap, ['PCLE', 'POSS=OBL'],
+                            ['an', 'en', 'nsa', 'back'])
             else:
                 fail_guess_because(wordmap, ["PCLE", "POSS"],
                         ["front", "back"])
         else:
             fail_guess_because(wordmap, ["PCLE", "POSS"],
                     ["opt", "obl"])
+    # Clitics +kA (+s) only manually (PCLE_JONNE, PCLE_KUHUN, PCLE_MITEN)
     elif wordmap['clitics']:
         if wordmap['harmony'] == 'front':
-            wordmap['new_paras'] = ['PCLE_FRONT_CLIT_OPT']
+            wordmap['new_paras'] = ['PCLE_TYHMÄSTI']
         elif wordmap['harmony'] == 'back':
-            wordmap['new_paras'] = ['PCLE_BACK_CLIT_OPT']
+            wordmap['new_paras'] = ['PCLE_NOPEASTI']
         else:
             fail_guess_because(wordmap, ["PCLE", "CLIT"],
                     ["front", "back"])
+    elif wordmap['particle'] and wordmap['particle'] == 'INTERJECTION':
+        # (Is it a good idea to classify new interjectons as chainable by default?)
+        wordmap['new_paras'] = ['PCLE_HAH']
     else:
-        wordmap['new_paras'] = ['#']
+        wordmap['new_paras'] = ['PCLE_VAAN']
     return wordmap
 
