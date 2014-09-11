@@ -5,10 +5,12 @@ HTWOLC_FLAGS=$(HFST_FLAGS) --resolve
 HREGEX_FLAGS=$(HFST_FLAGS) -S
 
 EXTRA_DIST=rewrite-ftb3.regex rewrite-omor.twolc rewrite-ktnkav.twolc \
-		   rewrite-segments.twolc rewrite-google.regex
+		   rewrite-segments.twolc rewrite-google.regex \
+		   rewrite-apertium.regex
 
 noinst_DATA=rewrite-ftb3.hfst rewrite-omor.hfst rewrite-ktnkav.hfst \
-			rewrite-segments.hfst rewrite-google.hfst
+			rewrite-segments.hfst rewrite-google.hfst \
+			rewrite-apertium.hfst
 
 %.hfst: %.twolc
 	$(HTWOLC) $(HTWOLC_FLAGS) -o $@ -i $<
