@@ -868,10 +868,10 @@ def format_tag_omor(stuff, format):
         return ""
 
 def format_tag_apertium(stuff):
-    if stuff == '0':
+    if stuff == '':
         return "0"
     if stuff in stuff2monodix:
-        return '%<' + stuff2monodix[stuff] + '%>'
+        return '%<' + lexc_escape(stuff2monodix[stuff]) + '%>'
     else:
         print("Missing from apertium mapping: ", stuff, file=stderr)
         return ""
@@ -1215,6 +1215,7 @@ def format_lexc_apertium(wordmap):
         wordmap['analysis'] += "%<errpos%>"
 
     retvals = ""
+    wordmap['stub'] = lexc_escape(wordmap['stub'])
     for new_para in wordmap['new_paras']:
         retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], new_para)
     return retvals
@@ -1238,7 +1239,7 @@ def format_multichars_lexc(format):
     elif format.startswith("apertium"):
         multichars += "!! Apertium standard tags:\n"
         for mcs in monodix_multichars:
-            multichars += '%<' + mcs + "%>\n"
+            multichars += '%<' + lexc_escape(mcs) + "%>\n"
     else:
         print("missing format", format, file=stderr)
         exit(1)
