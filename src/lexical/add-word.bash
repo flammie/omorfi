@@ -15,7 +15,7 @@ case $2 in
     [A-Z]*_*) python3 guess_missing.py --lemma=$1 --newpara=$2 --output=${LEXFILE} --verbose;;
 esac
 
-sort -k1,1 ${LEXFILE} | uniq > ${LEXFILE}~~
+sort -k1,1 ${LEXFILE} | LC_ALL=C uniq > ${LEXFILE}~~
 diff -u ${LEXFILE}~ ${LEXFILE}~~
 cp ${LEXFILE}~~ ${LEXFILE}
 echo Abovementioned addition was made, old version is still in ${LEXFILE}~
