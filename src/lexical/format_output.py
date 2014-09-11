@@ -448,6 +448,112 @@ monodix_sdefs= {
         'cmp',
         'ND'}
 
+monodix_multichars =  {
+ "",
+ "+",
+ "-",
+ "-",
+ "-",
+ "agent",
+ "pp",
+ "pprs",
+ "pneg",
+ "pos",
+ "com",
+ "sup",
+ "",
+ "n",
+ "",
+ "",
+ "",
+ "",
+ "infa",
+ "infe",
+ "infma",
+ "infminen",
+ "conneg",
+ "neg", 
+ "pl", 
+ "sg", 
+ "ND",
+ "pxsg1",
+ "pxsg2",
+ "pxsp3",
+ "pxpl1",
+ "pxpl2",
+ "p1><pl", 
+ "p2><pl",
+ "p3><pl",
+ "p1><sg", 
+ "p2><sg",
+ "p3><sg",
+ "impers", 
+ "enc",
+ "enc",
+ "enc",
+ "qst",
+ "enc",
+ "enc",
+ "enc",
+ "cond",
+ "imp", 
+ "past",
+ "pot", 
+ "pres",
+ "",
+ "",
+ "actv",
+ "pasv",
+ "abe",
+ "abl",
+ "ade",
+ "all",
+ "com",
+ "ela",
+ "ess", 
+ "gen",
+ "ill", 
+ "ine",
+ "ins",
+ "nom",
+ "par", 
+ "tra", 
+ "lat",
+ "acc",
+ "",
+ "n",
+ "a",
+ "vblex",
+ "adv",
+ "ij",
+ "part",
+ "prn",
+ "num",
+ "post",
+ "cnjsub",
+ "cnjsub",
+ "abbr",
+ "pn",
+ "ord",
+ "pers",
+ "itg",
+ "rec",
+ "",
+ "",
+ "",
+ "num",
+ "",
+ "",
+ "",
+ "",
+ "",
+ "",
+ "",
+ "",
+ "",
+ "",
+ ""
+        }
 stuff2monodix =  {
         ".sent": "",
         "Bc": "+",
@@ -528,6 +634,20 @@ stuff2monodix =  {
         "INTERJECTION": "ij",
         "PARTICLE": "part",
         "PRONOUN": "prn",
+        "NUMERAL": "num",
+        "ADPOSITION": "post",
+        "CONJUNCTION": "", "COORDINATING": "cnjcoo", "ADVERBIAL": "cnjsub",
+        "COMPARATIVE": "cnjsub",
+        "ABBREVIATION": "abbr", "ACRONYM": "abbr",
+        "PROPER": "pn",
+        "CARDINAL": "card", "ORDINAL": "ord",
+        "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
+        "INDEFINITE": "ind", "INTERROGATIVE": "itg",
+        "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
+        "PUNCTUATION": "",
+        "DASH": "",
+        "SPACE": "",
+        "DIGIT": "num",
         "NUMERAL": "num",
         "ADPOSITION": "post",
         "CONJUNCTION": "", "COORDINATING": "cnjcoo", "ADVERBIAL": "cnjsub",
@@ -702,6 +822,8 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_google(fields[1], fields[2], cont)
         elif format.startswith("segment"):
             stuffs += format_continuation_lexc_segments(fields[1], fields[2], cont)
+        elif format.startswith("apertium"):
+            stuffs += format_continuation_lexc_apertium(fields[1], fields[2], cont)
         else:
             print("missing format", format, file=stderr)
     return stuffs
@@ -714,6 +836,8 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_ftb3(analyses)
     elif format.startswith("google"):
         stuffs += format_analysis_lexc_google(analyses)
+    elif format.startswith("apertumi"):
+        stuffs += format_analysis_lexc_apertium(analyses)
     elif format.startswith("segment"):
         stuffs += format_analysis_lexc_segments(analyses)
     else:
@@ -729,6 +853,8 @@ def format_tag(stuff, format):
         return format_tag_google(stuff)
     elif format.startswith('segment'):
         return ''
+    elif format.startswith('apertium'):
+        return format_tag_ftb3(stuff)
     else:
         print("Wrong format for generic tag formatting:", format, file=stderr)
 
@@ -739,6 +865,15 @@ def format_tag_omor(stuff, format):
         return stuff2omor[stuff]
     else:
         print("Missing from omor mapping: ", stuff, file=stderr)
+        return ""
+
+def format_tag_apertium(stuff):
+    if stuff == '0':
+        return "0"
+    if stuff in stuff2monodix:
+        return '%<' + stuff2monodix[stuff] + '%>'
+    else:
+        print("Missing from apertium mapping: ", stuff, file=stderr)
         return ""
 
 def format_tag_ftb3(stuff):
@@ -831,6 +966,12 @@ def format_analysis_lexc_google(anals):
 def format_analysis_segments(anals):
     return ''
 
+def format_analysis_lexc_apertium(anals):
+    apestring = ''
+    for i in anals.split('|'):
+        apestring += format_tag_apertium(i)
+    return apestring
+
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = format_analysis_lexc_ftb3(anals)
     if 'COMPOUND' in cont:
@@ -842,6 +983,11 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
         ftbstring = lexc_escape(surf) + ftbstring
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
+
+def format_continuation_lexc_apertium(anals, surf, cont):
+    analstring = format_analysis_lexc_apertium(anals)
+    surf = lexc_escape(surf)
+    return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
 def format_continuation_lexc_google(anals, surf, cont):
     ftbstring = format_analysis_lexc_google(anals)
@@ -1028,42 +1174,6 @@ def format_lexc_google(wordmap):
                 new_para)]
     return "\n".join(retvals)
 
-def format_lexc_apertium(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-    wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
-    if wordmap['is_suffix']:
-        wordmap['analysis'] = "+" + wordmap['analysis']
-    elif wordmap['is_prefix']:
-        wordmap['analysis'] += "+"
-    if wordmap['pos'] == 'NOUN':
-        if wordmap['is_proper']:
-            wordmap['analysis'] += '%<np%>'
-        else:
-            wordmap['analysis'] += '%<n%>'
-    elif wordmap['pos'] == 'VERB':
-        wordmap['analysis'] += '%<vblex%>'
-    elif wordmap['pos'] == 'ADJECTIVE':
-        wordmap['analysis'] += '%<adj%>'
-    elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
-        wordmap['analysis'] += "%<abbr%>"
-    elif wordmap['pos'] == 'CONJUNCTION':
-        wordmap['analysis'] += "%<cnjcoo%>"
-    elif wordmap['pos'] == 'INTERJECTION':
-        wordmap['analysis'] += "%<interj%>"
-    elif wordmap['pos'] == 'ADVERB':
-        wordmap['analysis'] += "%<adv%>"
-    elif wordmap['pos'] == 'ADPOSITION':
-        wordmap['analysis'] += "%<pp%>"
-    elif wordmap['pos'] == 'PARTICLE':
-        wordmap['analysis'] += "%<adv%>"
-    else:
-        print("Missed this pose: %s(pos)" %(wordmap))
-        wordmap['analysis'] += "%<errpos%>"
-
-
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
-    return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
-
 def format_lexc_segments(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['stub']) + '{STUB}'
     retvals = []
@@ -1104,9 +1214,10 @@ def format_lexc_apertium(wordmap):
         print("Missed this pose: %s(pos)" %(wordmap))
         wordmap['analysis'] += "%<errpos%>"
 
-
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
-    return ("%(analysis)s:%(stub)s\t%(new_para)s\t;" % (wordmap))
+    retvals = ""
+    for new_para in wordmap['new_paras']:
+        retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], new_para)
+    return retvals
 
 def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
@@ -1124,6 +1235,10 @@ def format_multichars_lexc(format):
             multichars += mcs + "\n"
     elif format.startswith("segments"):
         pass
+    elif format.startswith("apertium"):
+        multichars += "!! Apertium standard tags:\n"
+        for mcs in monodix_multichars:
+            multichars += '%<' + mcs + "%>\n"
     else:
         print("missing format", format, file=stderr)
         exit(1)
