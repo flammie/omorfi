@@ -605,7 +605,7 @@ stuff2monodix =  {
         "Timp": "imp", 
         "Tpast": "past",
         "Tpot": "pot", 
-        "Tpres": "pres",
+        "Tpres": "pri",
         "Topt": "",
         "Uarch": "", "Udial": "", "Urare": "", "Unonstd": "",
         "Vact": "actv",
