@@ -1080,7 +1080,7 @@ def format_lexc_omor(wordmap, format):
     if wordmap['style']:
         wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
     
-    if '+ktnkav' in format:
+    if '+ktnkav' in format and wordmap['pos'] != 'ACRONYM':
         tag = "[KTN=%s]" %(lexc_escape(wordmap['kotus_tn']))
         if tag in ktnkav_multichars:
             wordmap['analysis'] += tag
