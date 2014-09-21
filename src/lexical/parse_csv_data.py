@@ -48,6 +48,8 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['origin'] = extra_fields[1]
             elif extra_fields[0] == 'symbol':
                 wordmap['symbol'].append(extra_fields[1].upper())
+            elif extra_fields[0] == 'argument':
+                wordmap['argument'] = extra_fields[1]
             else:
                 print("Unrecognised extra field", tsv_extra, "in TSV", file=stderr)
                 exit(1)
