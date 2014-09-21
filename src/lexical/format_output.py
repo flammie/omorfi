@@ -811,7 +811,7 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_ftb3(analyses)
     elif format.startswith("google"):
         stuffs += format_analysis_lexc_google(analyses)
-    elif format.startswith("apertumi"):
+    elif format.startswith("apertium"):
         stuffs += format_analysis_lexc_apertium(analyses)
     elif format.startswith("segment"):
         stuffs += format_analysis_lexc_segments(analyses)
@@ -829,7 +829,7 @@ def format_tag(stuff, format):
     elif format.startswith('segment'):
         return ''
     elif format.startswith('apertium'):
-        return format_tag_ftb3(stuff)
+        return format_tag_apertium(stuff)
     else:
         print("Wrong format for generic tag formatting:", format, file=stderr)
 
@@ -961,6 +961,8 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
 
 def format_continuation_lexc_apertium(anals, surf, cont):
     analstring = format_analysis_lexc_apertium(anals)
+    if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
+        analstring = lexc_escape(surf) + analstring
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
