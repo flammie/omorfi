@@ -449,169 +449,191 @@ monodix_sdefs= {
         'ND'}
 
 monodix_multichars =  {
+ "-",
  "",
  "+",
- "-",
- "-",
- "-",
+ "a",
+ "abbr",
+ "abe",
+ "abl",
+ "acc",
+ "actv",
+ "ade",
+ "adv",
  "agent",
- "pp",
- "pprs",
- "pneg",
- "pos",
+ "all",
+ "cnjcoo",
+ "cnjsub",
+ "cnjadv",
  "com",
- "sup",
- "",
- "n",
- "",
- "",
- "",
- "",
+ "cond",
+ "conneg",
+ "ela",
+ "enc",
+ "ess", 
+ "gen",
+ "ij",
+ "ill", 
+ "imp", 
+ "impers", 
+ "ine",
  "infa",
  "infe",
  "infma",
  "infminen",
- "conneg",
- "neg", 
- "pl", 
- "sg", 
+ "ins",
+ "itg",
+ "lat",
+ "n",
  "ND",
+ "neg", 
+ "nom",
+ "num",
+ "ord",
+ "p1><pl", 
+ "p1><sg", 
+ "p2><pl",
+ "p2><sg",
+ "p3><pl",
+ "p3><sg",
+ "par", 
+ "part",
+ "past",
+ "pasv",
+ "pers",
+ "pl", 
+ "pn",
+ "pneg",
+ "pos",
+ "post",
+ "pot", 
+ "pp",
+ "pprs",
+ "pri",
+ "prn",
+ "pxpl1",
+ "pxpl2",
  "pxsg1",
  "pxsg2",
  "pxsp3",
- "pxpl1",
- "pxpl2",
- "p1><pl", 
- "p2><pl",
- "p3><pl",
- "p1><sg", 
- "p2><sg",
- "p3><sg",
- "impers", 
- "enc",
- "enc",
- "enc",
  "qst",
- "enc",
- "enc",
- "enc",
- "cond",
- "imp", 
- "past",
- "pot", 
- "pres",
- "",
- "",
- "actv",
- "pasv",
- "abe",
- "abl",
- "ade",
- "all",
- "com",
- "ela",
- "ess", 
- "gen",
- "ill", 
- "ine",
- "ins",
- "nom",
- "par", 
- "tra", 
- "lat",
- "acc",
- "",
- "n",
- "a",
- "vblex",
- "adv",
- "ij",
- "part",
- "prn",
- "num",
- "post",
- "cnjsub",
- "cnjsub",
- "abbr",
- "pn",
- "ord",
- "pers",
- "itg",
+ "qu",
  "rec",
- "",
- "",
- "",
- "num",
- "",
- "",
- "",
- "",
- "",
- "",
- "",
- "",
- "",
- "",
- ""
+ "rel",
+ "sg", 
+ "sup",
+ "tra", 
+ "vblex",
+ "v→a",
+ "v→adv",
+ "v→n"
         }
 stuff2monodix =  {
-        ".sent": "",
-        "Bc": "+",
-        "B-": "-",
-        "B→": "-",
-        "B←": "-",
-        "Cma": "agent",
-        "Cnut": "pp",
-        "Cva": "pprs",
-        "Cmaton": "pneg",
-        "Cpos": "pos",
+        "ABBREVIATION": "abbr",
+        "ACRONYM": "abbr",
+        "ADJECTIVE": "adj",
+        "ADPOSITION": "post",
+        "ADVERB": "adv",
+        "ADVERBIAL": "cnjadv",
+        "B-": ">-<",
+        "B←": ">-<",
+        "B→": ">-<",
+        "Bc": ">+<",
+        "CARDINAL": "card",
         "Ccmp": "com",
+        "CLAUSE-BOUNDARY": "",
+        "Cma": "agent",
+        "Cmaton": "pneg",
+        "Cnut": "pp",
+        "COMPARATIVE": "cnjsub",
+        "COMP": "com",
+        "CONJUNCTION": "",
+        "COORDINATING": "cnjcoo",
+        "Cpos": "pos",
         "Csup": "sup",
-        "Dmaisilla": "",
-        "Dminen": "n",
-        "Dnut": "", "Dtu": "", "Duus": "", "Dva": "", "Dmaton": "",
+        "Cva": "pprs",
+        "DASH": "guio",
+        "DECIMAL": "",
+        "DEMONSTRATIVE": "dem",
+        "DIGIT": "",
+        "Din": "v→n", "Ds": "", "Du": "", "Dtava": "v→a",
+        "Dma": "v→a", "Dinen": "", "Dja": "v→n", "Dmpi": "",
+        "Dmaisilla": "v→adv",
+        "Dminen": "v→n",
+        "Dnut": "v→a", "Dtu": "v→a", "Duus": "", "Dva": "v→a", "Dmaton": "v→a",
         "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
-        "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
-        "Din": "", "Ds": "", "Du": "", "Dtava": "",
+        "FINAL-BRACKET": "rpar",
+        "FINAL-QUOTE": "rquot",
         "Ia": "infa",
         "Ie": "infe",
         "Ima": "infma",
         "Iminen": "infminen",
+        "INDEFINITE": "ind",
+        "INITIAL-BRACKET": "lpar",
+        "INITIAL-QUOTE": "lquot",
+        "INTERJECTION": "ij",
+        "INTERROGATIVE": "itg",
+        "LEMMA-START": "",
         "Ncon": "conneg",
+        "N??": "ND",
         "Nneg": "neg", 
+        "NOUN": "n",
         "Npl": "pl", 
         "Nsg": "sg", 
-        "N??": "ND",
-        "Osg1": "pxsg1",
-        "Osg2": "pxsg2",
+        "NUMERAL": "num",
         "O3": "pxsp3",
         "Opl1": "pxpl1",
         "Opl2": "pxpl2",
+        "ORDINAL": "ord",
+        "Osg1": "pxsg1",
+        "Osg2": "pxsg2",
+        "PARTICLE": "part",
+        "PERSONAL": "pers",
+        "Ppe4": "impers", 
         "Ppl1": "p1><pl", 
         "Ppl2": "p2><pl",
         "Ppl3": "p3><pl",
+        "PRONOUN": "prn",
+        "PROPER": "np",
         "Psg1": "p1><sg", 
         "Psg2": "p2><sg",
         "Psg3": "p3><sg",
-        "Ppe4": "impers", 
-        "Qka": "enc",
-        "Qs": "enc",
-        "Qpa": "enc",
-        "Qko": "qst",
-        "Qkin": "enc",
-        "Qkaan": "enc",
-        "Qhan": "enc",
+        "PUNCTUATION": "",
+        "Qhan": ">+han<enc",
+        "Qkaan": ">+kaan<enc",
+        "Qka": ">+ka<enc",
+        "Qkin": ">+kin<enc",
+        "Qko": ">+ko<qst",
+        "Qpa": ">+pa<enc",
+        "Qs": ">+s<enc",
+        "QUALIFIER": "adj",
+        "QUANTOR": "qu",
+        "RECIPROCAL": "rec",
+        "REFLEXIVE": "reflex",
+        "RELATIVE": "rel",
+        "ROMAN": "",
+        ".sent": "",
+        "SENTENCE-BOUNDARY": "sent",
+        "SPACE": "><",
+        "SUPERL": "sup",
         "Tcond": "cond",
         "Timp": "imp", 
+        "Topt": "",
         "Tpast": "past",
         "Tpot": "pot", 
         "Tpres": "pri",
-        "Topt": "",
-        "Uarch": "", "Udial": "", "Urare": "", "Unonstd": "",
+        "Uarch": "",
+        "Udial": "",
+        "Unonstd": "",
+        "UNSPECIFIED": "pcle",
+        "Urare": "",
         "Vact": "actv",
+        "VERB": "vblex",
         "Vpss": "pasv",
+        "X???": "",
         "Xabe": "abe",
         "Xabl": "abl",
+        "Xacc": "acc",
         "Xade": "ade",
         "Xall": "all",
         "Xcom": "com",
@@ -621,57 +643,10 @@ stuff2monodix =  {
         "Xill": "ill", 
         "Xine": "ine",
         "Xins": "ins",
+        "Xlat": "lat",
         "Xnom": "nom",
         "Xpar": "par", 
         "Xtra": "tra", 
-        "Xlat": "lat",
-        "Xacc": "acc",
-        "X???": "",
-        "NOUN": "n",
-        "ADJECTIVE": "a", "QUALIFIER": "a",
-        "VERB": "vblex",
-        "ADVERB": "adv",
-        "INTERJECTION": "ij",
-        "PARTICLE": "part",
-        "PRONOUN": "prn",
-        "NUMERAL": "num",
-        "ADPOSITION": "post",
-        "CONJUNCTION": "", "COORDINATING": "cnjcoo", "ADVERBIAL": "cnjsub",
-        "COMPARATIVE": "cnjsub",
-        "ABBREVIATION": "abbr", "ACRONYM": "abbr",
-        "PROPER": "pn",
-        "CARDINAL": "card", "ORDINAL": "ord",
-        "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
-        "INDEFINITE": "ind", "INTERROGATIVE": "itg",
-        "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
-        "PUNCTUATION": "",
-        "DASH": "",
-        "SPACE": "",
-        "DIGIT": "num",
-        "NUMERAL": "num",
-        "ADPOSITION": "post",
-        "CONJUNCTION": "", "COORDINATING": "cnjcoo", "ADVERBIAL": "cnjsub",
-        "COMPARATIVE": "cnjsub",
-        "ABBREVIATION": "abbr", "ACRONYM": "abbr",
-        "PROPER": "pn",
-        "CARDINAL": "card", "ORDINAL": "ord",
-        "DEMONSTRATIVE": "dem", "QUANTOR": "", "PERSONAL": "pers",
-        "INDEFINITE": "ind", "INTERROGATIVE": "itg",
-        "REFLEXIVE": "reflex", "RELATIVE": "rel", "RECIPROCAL": "rec",
-        "PUNCTUATION": "",
-        "DASH": "",
-        "SPACE": "",
-        "DIGIT": "num",
-        "DECIMAL": "",
-        "ROMAN": "",
-        "CLAUSE-BOUNDARY": "",
-        "SENTENCE-BOUNDARY": "",
-        "INITIAL-QUOTE": "",
-        "FINAL-QUOTE": "",
-        "INITIAL-BRACKET": "",
-        "FINAL-BRACKET": "",
-        "UNSPECIFIED": "",
-        "LEMMA-START": "",
         "": ""
         }
 
@@ -836,7 +811,7 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_ftb3(analyses)
     elif format.startswith("google"):
         stuffs += format_analysis_lexc_google(analyses)
-    elif format.startswith("apertumi"):
+    elif format.startswith("apertium"):
         stuffs += format_analysis_lexc_apertium(analyses)
     elif format.startswith("segment"):
         stuffs += format_analysis_lexc_segments(analyses)
@@ -854,7 +829,7 @@ def format_tag(stuff, format):
     elif format.startswith('segment'):
         return ''
     elif format.startswith('apertium'):
-        return format_tag_ftb3(stuff)
+        return format_tag_apertium(stuff)
     else:
         print("Wrong format for generic tag formatting:", format, file=stderr)
 
@@ -870,8 +845,8 @@ def format_tag_omor(stuff, format):
 def format_tag_apertium(stuff):
     if stuff == '':
         return "0"
-    if stuff in stuff2monodix:
-        return '%<' + lexc_escape(stuff2monodix[stuff]) + '%>'
+    elif stuff in stuff2monodix:
+        return ('%<' + lexc_escape(stuff2monodix[stuff]) + '%>').replace('%<%>', '')
     else:
         print("Missing from apertium mapping: ", stuff, file=stderr)
         return ""
@@ -986,6 +961,8 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
 
 def format_continuation_lexc_apertium(anals, surf, cont):
     analstring = format_analysis_lexc_apertium(anals)
+    if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
+        analstring = lexc_escape(surf) + analstring
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
@@ -1189,31 +1166,36 @@ def format_lexc_apertium(wordmap):
         wordmap['analysis'] = "+" + wordmap['analysis']
     elif wordmap['is_prefix']:
         wordmap['analysis'] += "+"
+     
     if wordmap['pos'] == 'NOUN':
         if wordmap['is_proper']:
             wordmap['analysis'] += '%<np%>'
         else:
             wordmap['analysis'] += '%<n%>'
-    elif wordmap['pos'] == 'VERB':
-        wordmap['analysis'] += '%<vblex%>'
-    elif wordmap['pos'] == 'ADJECTIVE':
-        wordmap['analysis'] += '%<adj%>'
-    elif wordmap['pos'] in ['ACRONYM', 'ABBREVIATION']:
-        wordmap['analysis'] += "%<abbr%>"
-    elif wordmap['pos'] == 'CONJUNCTION':
-        wordmap['analysis'] += "%<cnjcoo%>"
-    elif wordmap['pos'] == 'INTERJECTION':
-        wordmap['analysis'] += "%<interj%>"
-    elif wordmap['pos'] == 'ADVERB':
-        wordmap['analysis'] += "%<adv%>"
-    elif wordmap['pos'] == 'ADPOSITION':
-        wordmap['analysis'] += "%<pp%>"
-    elif wordmap['pos'] == 'PARTICLE':
-        wordmap['analysis'] += "%<adv%>"
+    elif wordmap['pos'] == 'CONJUNCTIONVERB':
+        if wordmap['lemma'] == 'eikä':
+            wordmap['lemma'] = 'ei'
+            wordmap['analysis'] = 'ja' + \
+                    format_tag_apertium('COORDINATING') + \
+                    '+ei' + \
+                    format_tag_apertium('Nneg')
+        else:
+            wordmap['analysis'] = wordmap['lemma'][:-2] +\
+                    format_tag_apertium('ADVERBIAL') + \
+                    '+' + wordmap['lemma'][-2:] + \
+                    format_tag_apertium('Nneg')
+    elif wordmap['particle']:
+        for pclass in wordmap['particle'].split('|'):
+            wordmap['analysis'] += format_tag_apertium(pclass)
     else:
-        print("Missed this pose: %s(pos)" %(wordmap))
-        wordmap['analysis'] += "%<errpos%>"
+        wordmap['analysis'] += format_tag_apertium(wordmap['pos'])
 
+    if wordmap['subcat']:
+        for subcat in wordmap['subcat'].split('|'):
+            wordmap['analysis'] += format_tag_apertium(subcat)
+    if wordmap['symbol']:
+        for subcat in wordmap['symbol'].split('|'):
+            wordmap['analysis'] += format_tag_apertium(subcat)
     retvals = ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     for new_para in wordmap['new_paras']:
