@@ -445,7 +445,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_KENGÄT']	NOUN	10	G	obligatory	weaken	front	None	None	False	False
 ['N_KENKÄ']	NOUN	10	G	False	weaken	front	ä	None	False	False
 ['N_KENTTÄ']	NOUN	10	C	False	weaken	front	ä	None	False	False
-['N_KENTUCKY']	NOUN	21	None	False	weaken	front	i	None	False	False
 ['N_KENTÄT']	NOUN	10	C	obligatory	weaken	front	None	None	False	False
 ['N_KERITSIMET']	NOUN	33	None	obligatory	strengthen	front	None	None	False	False
 ['N_KERROIN']	NOUN	33	K	False	strengthen	back	None	None	False	False
@@ -478,6 +477,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_KORTTI']	NOUN	5	C	False	weaken	back	None	None	False	False
 ['N_KORVET']	NOUN	7	E	obligatory	weaken	back	None	None	False	False
 ['N_KOUVOT']	NOUN	1	E	obligatory	weaken	back	None	None	False	False
+['N_KREUS']	NOUN	39	None	False	strengthen	back	None	None	False	False
 ['N_KUITU']	NOUN	1	F	False	weaken	back	None	None	False	False
 ['N_KUMMUT']	NOUN	1	H	obligatory	weaken	back	None	None	False	False
 ['N_KUNGFU']	NOUN	21	None	False	weaken	back	u	None	False	False
@@ -775,6 +775,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_SOINTI']	NOUN	5	J	False	weaken	back	None	None	False	False
 ['N_SOKEA']	NOUN	15	None	False	weaken	back	a	None	False	False
 ['N_SOTA']	NOUN	10	F	False	weaken	back	a	None	False	False
+['N_SPOTIFY']	NOUN	21	None	False	weaken	front	i	None	False	False
 ['N_STADION']	NOUN	6	None	False	weaken	back	None	None	False	False
 ['N_SUHTEET']	NOUN	48	F	obligatory	strengthen	back	None	None	False	False
 ['N_SUKAT']	NOUN	10	A	obligatory	weaken	back	None	None	False	False

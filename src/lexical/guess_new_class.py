@@ -921,20 +921,23 @@ def guess_new_noun(wordmap):
             if not wordmap['kotus_av']:
                 if not wordmap['stem_vowel']:
                     # No pre-defined pronunciation, use guessing
-                    if wordmap['lemma'].endswith('ay'):
-                        wordmap['new_paras'] = ['N_GAY']
-                    elif wordmap['lemma'].endswith('ey'):
-                        wordmap['new_paras'] = ['N_JOCKEY']
-                    elif wordmap['lemma'].endswith('ae'):
+                    if wordmap['lemma'].endswith('ae'):
                         wordmap['new_paras'] = ['N_REGGAE']
                     elif wordmap['lemma'].endswith('ie') and wordmap['harmony'] == 'back':
                         wordmap['new_paras'] = ['N_BRASSERIE']
                     elif wordmap['lemma'].endswith('ie') and wordmap['harmony'] == 'front':
                         wordmap['new_paras'] = ['N_BRIE']
                     elif wordmap['lemma'].endswith('ci'):
-                        wordmap['new_paras'] = ['N_GAY']
-                    elif wordmap['lemma'].endswith('oy'):
+                        wordmap['new_paras'] = ['N_JOCKEY']
+                    elif wordmap['lemma'].endswith('ay') or wordmap['lemma'].endswith('ey'):
+                        if len(wordmap['lemma']) < 5:
+                            wordmap['new_paras'] = ['N_GAY']
+                        else:
+                            wordmap['new_paras'] = ['N_JOCKEY']
+                    elif wordmap['lemma'].endswith('oy') or wordmap['lemma'].endswith('uy'):
                         wordmap['new_paras'] = ['N_COWBOY']
+                    elif wordmap['lemma'].endswith('y'):
+                        wordmap['new_paras'] = ['N_SPOTIFY']
                     else:
                         wordmap['stem_vowel'] = wordmap['lemma'][-1]
                 if wordmap['stem_vowel']:
@@ -945,14 +948,17 @@ def guess_new_noun(wordmap):
                         wordmap['new_paras'] = ['N_ROSÉ']
                     elif wordmap['stem_vowel'] in 'eEéèêëėěęē' and wordmap['harmony'] == 'front':
                         wordmap['new_paras'] = ['N_BÉBÉ']
-                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-2] == 'a':
-                        wordmap['new_paras'] = ['N_GAY']
-                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-2] == 'e':
-                        wordmap['new_paras'] = ['N_JOCKEY']
-                    elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-2] == 'o':
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and (wordmap['lemma'][-2] == 'a' or \
+                                                                 wordmap['lemma'][-2] == 'e'):
+                        if len(wordmap['lemma']) < 5:
+                            wordmap['new_paras'] = ['N_GAY']
+                        else:
+                            wordmap['new_paras'] = ['N_JOCKEY']
+                    elif wordmap['stem_vowel'] in 'iIíìîïī' and (wordmap['lemma'][-2] == 'o' or \
+                                                                 wordmap['lemma'][-2] == 'u'):
                         wordmap['new_paras'] = ['N_COWBOY']
                     elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['lemma'][-1] == 'y':
-                        wordmap['new_paras'] = ['N_KENTUCKY']
+                        wordmap['new_paras'] = ['N_SPOTIFY']
                     elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['harmony'] == 'back':
                         wordmap['new_paras'] = ['N_BRASSERIE']
                     elif wordmap['stem_vowel'] in 'iIíìîïī' and wordmap['harmony'] == 'front':
