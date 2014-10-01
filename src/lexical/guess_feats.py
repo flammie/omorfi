@@ -6,7 +6,8 @@ from omor_strings_io import fail_guess_because
 def guess_pos_from_newpara(wordmap):
     if wordmap['pos']:
         return wordmap
-    wordmap['pos'] = wordmap['new_para'][:wordmap['new_para'].find('_')]
+    new_para = wordmap['new_paras'][0]
+    wordmap['pos'] = new_para[:new_para.find('_')]
 
 
 def guess_grade_dir_from_ktn(wordmap):
