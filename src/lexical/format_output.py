@@ -1064,7 +1064,8 @@ def format_lexc_omor(wordmap, format):
             if wordmap['kotus_av']:
                 wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
     elif '+newparas' in format:
-        wordmap['analysis'] += "[NEWPARA=%(new_para)s]" %(wordmap)
+        for new_para in wordmap['new_paras']:
+            wordmap['analysis'] += "[NEWPARA=%s]" %(new_para)
 
     # match WORD_ID= with epsilon, then stub and lemma might match
     lex_stub = '0' + wordmap['stub']
