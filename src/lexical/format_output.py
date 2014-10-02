@@ -3,18 +3,15 @@
 # utils to format lexc strings from omor's lexical data sources.
 
 from sys import stderr
-from omor_strings_io import lexc_escape
+from omor_strings_io import lexc_escape, version_id_easter_egg, \
+        word_boundary, deriv_boundary, morph_boundary, stub_boundary,\
+        weak_boundary, optional_hyphen
 from cgi import escape as xml_escape
+from apertium_formatter import format_tag_apertium, \
+        format_analysis_lexc_apertium, format_continuation_lexc_apertium, \
+        format_lexc_apertium, format_multichars_lexc_apertium
 
 # these extra symbols appear always
-
-version_id_easter_egg='OMORFI_VERSION_≥_14_©_GNU_GPL_V3'
-word_boundary="{WB}"
-weak_boundary="{XB}"
-deriv_boundary="{DB}"
-morph_boundary="{MB}"
-stub_boundary="{STUB}"
-optional_hyphen="{hyph?}"
 
 
 common_multichars={
@@ -421,234 +418,6 @@ stuff2omor = {
         "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]", 
         "": ""}
 
-monodix_sdefs= {
-        'adj', 'vblex', 'n',
-        'abbr', 'prn', 'num', 'pn',
-        'ij', 'dem', 'itg',
-        'rel', 'reflex',
-        'rec', 'part',
-        'ind', 'card', 'ord',
-        'cnjcoo', 'cnjsub', 'post', 'pr',
-        'infa', 'infma', 'infe', 'infminen',
-        'nom', 'par', 'gen', 'ine', 'ela',
-        'ill', 'ade', 'abl', 'all', 'ess',
-        'ins', 'abe', 'tra', 'com' , 'lat',
-        'acc', 'sg', 'pl', 'pxsg1', 'pxsg2',
-        'pxpl1', 'pxpl2', 'pxsp3',
-        'pres', 'past',
-        'indv', 'cond', 'pot',
-        'imp',
-        'p1', 'p2', 'p3', 'impers',
-        'conneg' , 'neg', 
-        'actv', 'pasv',
-        'pp', 'pprs', 'agent', 'pneg',
-        'pos', 'comp','sup',
-        'qst',
-        'enc',
-        'cmp',
-        'ND'}
-
-monodix_multichars =  {
- "-",
- "",
- "+",
- "a",
- "abbr",
- "abe",
- "abl",
- "acc",
- "actv",
- "ade",
- "adv",
- "agent",
- "all",
- "cnjcoo",
- "cnjsub",
- "cnjadv",
- "com",
- "cond",
- "conneg",
- "ela",
- "enc",
- "ess", 
- "gen",
- "ij",
- "ill", 
- "imp", 
- "impers", 
- "ine",
- "infa",
- "infe",
- "infma",
- "infminen",
- "ins",
- "itg",
- "lat",
- "n",
- "ND",
- "neg", 
- "nom",
- "num",
- "ord",
- "p1><pl", 
- "p1><sg", 
- "p2><pl",
- "p2><sg",
- "p3><pl",
- "p3><sg",
- "par", 
- "part",
- "past",
- "pasv",
- "pers",
- "pl", 
- "pn",
- "pneg",
- "pos",
- "post",
- "pot", 
- "pp",
- "pprs",
- "pri",
- "prn",
- "pxpl1",
- "pxpl2",
- "pxsg1",
- "pxsg2",
- "pxsp3",
- "qst",
- "qu",
- "rec",
- "rel",
- "sg", 
- "sup",
- "tra", 
- "vblex",
- "v→a",
- "v→adv",
- "v→n"
-        }
-stuff2monodix =  {
-        "ABBREVIATION": "abbr",
-        "ACRONYM": "abbr",
-        "ADJECTIVE": "adj",
-        "ADPOSITION": "post",
-        "ADVERB": "adv",
-        "ADVERBIAL": "cnjadv",
-        "B-": ">-<",
-        "B←": ">-<",
-        "B→": ">-<",
-        "Bc": ">+<",
-        "CARDINAL": "card",
-        "Ccmp": "com",
-        "CLAUSE-BOUNDARY": "",
-        "Cma": "agent",
-        "Cmaton": "pneg",
-        "Cnut": "pp",
-        "COMPARATIVE": "cnjsub",
-        "COMP": "com",
-        "CONJUNCTION": "",
-        "COORDINATING": "cnjcoo",
-        "Cpos": "pos",
-        "Csup": "sup",
-        "Cva": "pprs",
-        "DASH": "guio",
-        "DECIMAL": "",
-        "DEMONSTRATIVE": "dem",
-        "DIGIT": "",
-        "Din": "v→n", "Ds": "", "Du": "", "Dtava": "v→a",
-        "Dma": "v→a", "Dinen": "", "Dja": "v→n", "Dmpi": "",
-        "Dmaisilla": "v→adv",
-        "Dminen": "v→n",
-        "Dnut": "v→a", "Dtu": "v→a", "Duus": "", "Dva": "v→a", "Dmaton": "v→a",
-        "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "",
-        "FINAL-BRACKET": "rpar",
-        "FINAL-QUOTE": "rquot",
-        "Ia": "infa",
-        "Ie": "infe",
-        "Ima": "infma",
-        "Iminen": "infminen",
-        "INDEFINITE": "ind",
-        "INITIAL-BRACKET": "lpar",
-        "INITIAL-QUOTE": "lquot",
-        "INTERJECTION": "ij",
-        "INTERROGATIVE": "itg",
-        "LEMMA-START": "",
-        "Ncon": "conneg",
-        "N??": "ND",
-        "Nneg": "neg", 
-        "NOUN": "n",
-        "Npl": "pl", 
-        "Nsg": "sg", 
-        "NUMERAL": "num",
-        "O3": "pxsp3",
-        "Opl1": "pxpl1",
-        "Opl2": "pxpl2",
-        "ORDINAL": "ord",
-        "Osg1": "pxsg1",
-        "Osg2": "pxsg2",
-        "PARTICLE": "part",
-        "PERSONAL": "pers",
-        "Ppe4": "impers", 
-        "Ppl1": "p1><pl", 
-        "Ppl2": "p2><pl",
-        "Ppl3": "p3><pl",
-        "PRONOUN": "prn",
-        "PROPER": "np",
-        "Psg1": "p1><sg", 
-        "Psg2": "p2><sg",
-        "Psg3": "p3><sg",
-        "PUNCTUATION": "",
-        "Qhan": ">+han<enc",
-        "Qkaan": ">+kaan<enc",
-        "Qka": ">+ka<enc",
-        "Qkin": ">+kin<enc",
-        "Qko": ">+ko<qst",
-        "Qpa": ">+pa<enc",
-        "Qs": ">+s<enc",
-        "QUALIFIER": "adj",
-        "QUANTOR": "qu",
-        "RECIPROCAL": "rec",
-        "REFLEXIVE": "reflex",
-        "RELATIVE": "rel",
-        "ROMAN": "",
-        ".sent": "",
-        "SENTENCE-BOUNDARY": "sent",
-        "SPACE": "><",
-        "SUPERL": "sup",
-        "Tcond": "cond",
-        "Timp": "imp", 
-        "Topt": "",
-        "Tpast": "past",
-        "Tpot": "pot", 
-        "Tpres": "pri",
-        "Uarch": "",
-        "Udial": "",
-        "Unonstd": "",
-        "UNSPECIFIED": "pcle",
-        "Urare": "",
-        "Vact": "actv",
-        "VERB": "vblex",
-        "Vpss": "pasv",
-        "X???": "",
-        "Xabe": "abe",
-        "Xabl": "abl",
-        "Xacc": "acc",
-        "Xade": "ade",
-        "Xall": "all",
-        "Xcom": "com",
-        "Xela": "ela",
-        "Xess": "ess", 
-        "Xgen": "gen",
-        "Xill": "ill", 
-        "Xine": "ine",
-        "Xins": "ins",
-        "Xlat": "lat",
-        "Xnom": "nom",
-        "Xpar": "par", 
-        "Xtra": "tra", 
-        "": ""
-        }
 
 google_multichars = {"% NOUN", "% ADJ", "% VERB", "% ADV", "% X", "% PRON",
         '%<Del%>→', '←%<Del%>',
@@ -842,14 +611,6 @@ def format_tag_omor(stuff, format):
         print("Missing from omor mapping: ", stuff, file=stderr)
         return ""
 
-def format_tag_apertium(stuff):
-    if stuff == '':
-        return "0"
-    elif stuff in stuff2monodix:
-        return ('%<' + lexc_escape(stuff2monodix[stuff]) + '%>').replace('%<%>', '')
-    else:
-        print("Missing from apertium mapping: ", stuff, file=stderr)
-        return ""
 
 def format_tag_ftb3(stuff):
     if stuff == '0':
@@ -941,11 +702,6 @@ def format_analysis_lexc_google(anals):
 def format_analysis_segments(anals):
     return ''
 
-def format_analysis_lexc_apertium(anals):
-    apestring = ''
-    for i in anals.split('|'):
-        apestring += format_tag_apertium(i)
-    return apestring
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
     ftbstring = format_analysis_lexc_ftb3(anals)
@@ -959,12 +715,6 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
-def format_continuation_lexc_apertium(anals, surf, cont):
-    analstring = format_analysis_lexc_apertium(anals)
-    if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
-        analstring = lexc_escape(surf) + analstring
-    surf = lexc_escape(surf)
-    return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
 def format_continuation_lexc_google(anals, surf, cont):
     ftbstring = format_analysis_lexc_google(anals)
@@ -1160,48 +910,6 @@ def format_lexc_segments(wordmap):
         retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, new_para)]
     return "\n".join(retvals)
 
-def format_lexc_apertium(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-    wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
-    if wordmap['is_suffix']:
-        wordmap['analysis'] = "+" + wordmap['analysis']
-    elif wordmap['is_prefix']:
-        wordmap['analysis'] += "+"
-     
-    if wordmap['pos'] == 'NOUN':
-        if wordmap['is_proper']:
-            wordmap['analysis'] += '%<np%>'
-        else:
-            wordmap['analysis'] += '%<n%>'
-    elif wordmap['pos'] == 'CONJUNCTIONVERB':
-        if wordmap['lemma'] == 'eikä':
-            wordmap['lemma'] = 'ei'
-            wordmap['analysis'] = 'ja' + \
-                    format_tag_apertium('COORDINATING') + \
-                    '+ei' + \
-                    format_tag_apertium('Nneg')
-        else:
-            wordmap['analysis'] = wordmap['lemma'][:-2] +\
-                    format_tag_apertium('ADVERBIAL') + \
-                    '+' + wordmap['lemma'][-2:] + \
-                    format_tag_apertium('Nneg')
-    elif wordmap['particle']:
-        for pclass in wordmap['particle'].split('|'):
-            wordmap['analysis'] += format_tag_apertium(pclass)
-    else:
-        wordmap['analysis'] += format_tag_apertium(wordmap['pos'])
-
-    if wordmap['subcat']:
-        for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_tag_apertium(subcat)
-    if wordmap['symbol']:
-        for subcat in wordmap['symbol'].split('|'):
-            wordmap['analysis'] += format_tag_apertium(subcat)
-    retvals = ""
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
-    for new_para in wordmap['new_paras']:
-        retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], new_para)
-    return retvals
 
 def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
@@ -1220,9 +928,7 @@ def format_multichars_lexc(format):
     elif format.startswith("segments"):
         pass
     elif format.startswith("apertium"):
-        multichars += "!! Apertium standard tags:\n"
-        for mcs in monodix_multichars:
-            multichars += '%<' + lexc_escape(mcs) + "%>\n"
+        multichars += format_multichars_lexc_apertium()
     else:
         print("missing format", format, file=stderr)
         exit(1)
@@ -1271,81 +977,6 @@ def format_xml_kotus_sanalista(wordmap):
         kotus_xml += '<av>' + wordmap['kotus_av'] + '</av>'
     kotus_xml += '</t></st>'
     return kotus_xml
-
-def format_monodix_alphabet():
-    """Finnish alphabet as in CLDR 24"""
-    return ("<alphabet>abcdefghijklmnopqrsštuvwxyzžåäö"
-            "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽ"
-            "áàâãčçđéèêëǧǥȟíîïǩńñŋôõœřßŧúùûÿüʒǯæø"
-            "ÁÀÂÃČÇÐÉÈÊËǦÍÎÏĸŃÑŊÔÕŘÚÙÛŸÜƷǮÆØ"
-            "</alphabet>")
-
-def format_monodix_sdefs():
-    sdefs = '  <sdefs>\n'
-    for sdef in monodix_sdefs:
-        sdefs += '    <sdef n="' + sdef + '"/>\n'
-    sdefs += '  </sdefs>\n'
-    return sdefs
-
-def format_monodix_l(s):
-    if s != '0':
-        return s.replace(' ', '<b/>').replace(word_boundary, '')
-    else:
-        return ''
-
-def format_monodix_r(anals):
-    r = ''
-    if anals != '0':
-        for anal in anals.split('|'):
-            r += format_monodix_s(anal)
-    return r
-
-def format_monodix_s(stuff):
-    s = ''
-    if stuff in stuff2monodix:
-        s += '<s n="' + stuff2monodix[stuff] + '"/>'
-    else:
-        print("Missing", stuff, "from monodix map",
-                file=stderr)
-    if '><' in s:
-        s = s.replace('><', '"/><s n="')
-    elif '"+"' in s:
-        s = '+'
-    elif '""' in s:
-        s = ''
-    elif '"-"' in s:
-        s = '-'
-    return s
-
-def format_monodix_par(cont):
-    return '<par n="'+  cont.lower().replace('_', '__') + '"/>'
-
-def format_monodix_pardef(fields):
-    pardef = ''
-    for cont in fields[3:]:
-        pardef += '      <e>'
-        if fields[1] == fields[2]:
-            pardef += '<i>' + format_monodix_l(fields[2]) + '</i>'
-        else:
-            pardef += '<p><l>' + format_monodix_l(fields[2]) + '</l>'
-            pardef += '<r>' + format_monodix_r(fields[1]) + '</r></p>'
-        if cont != '#':
-            pardef += format_monodix_par(cont)
-        pardef += '</e>\n'
-    return pardef
-
-
-def format_monodix_entry(wordmap):
-    for cont in wordmap['new_paras']:
-        e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
-        e += '<p><l>' + wordmap['stub'].replace(word_boundary, '').replace('&', '&amp;')  +  '</l>'
-        e += '<r>'
-        e += wordmap['lemma'].replace('&', '&amp;')
-        e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
-        e += '</r></p>'
-        e += format_monodix_par(cont)
-        e += '</e>'
-    return e
 
 def make_xmlid(s):
     return s.replace("?", "_UNK").replace("→", "_right").replace("←", "left").replace(".", "_")

@@ -38,9 +38,10 @@ FINNISC=\
 		plurale_tantum.py \
 		stub.py \
 		guess_feats.py guess_new_class.py wordmap.py \
-		omor_strings_io.py
+		omor_strings_io.py \
+		apertium_formatter.py
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
-TESTS=format_output.py
+TESTS=format_output.py apertium_formatter.py
 
 noinst_DATA=omorfi-$(TAG_FORMAT).lexc omorfi.dix omorfi-sanalista.xml \
 			omorfi.reweight gtd-tests.yaml
