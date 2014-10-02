@@ -97,6 +97,8 @@ def stub_all_ktn(wordmap):
             wordmap['stub'] = wordmap['stub'][:-4]
         elif tn == 67 and wordmap['stub'] in ['mennä', 'panna', 'tulla']:
             wordmap['stub'] = wordmap['stub'][:-3]
+        elif tn == 67 and wordmap['stub'][-5:] in ['ailla', 'äillä', 'oilla', 'öillä']:
+            wordmap['stub'] = wordmap['stub'][:-4]
         elif tn in [66, 67, 69, 72, 73, 74, 75]:
             wordmap['stub'] = wordmap['stub'][:-2]
         elif tn in [70, 71]:

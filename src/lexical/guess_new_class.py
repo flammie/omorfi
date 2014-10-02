@@ -4136,18 +4136,24 @@ def guess_new_verb(wordmap):
                     [False])
     elif tn == 67:
         if not wordmap['kotus_av']:
-            if wordmap['lemma'].endswith('rra'):
-                wordmap['new_paras'] = ['V_SURRA']
-            elif wordmap['lemma'].endswith('tulla'):
+            if wordmap['lemma'].endswith('tulla'):
                 wordmap['new_paras'] = ['V_TULLA']
+            elif wordmap['lemma'].endswith('ailla') or \
+                 wordmap['lemma'].endswith('oilla'):
+                wordmap['new_paras'] = ['V_ARVAILLA']
+            elif wordmap['lemma'].endswith('äillä') or \
+                 wordmap['lemma'].endswith('öilla'):
+                wordmap['new_paras'] = ['V_LEPÄILLÄ']
             elif wordmap['lemma'].endswith('lla'):
-                wordmap['new_paras'] = ['V_VASTAILLA']
+                wordmap['new_paras'] = ['V_ETUILLA']
             elif wordmap['lemma'].endswith('llä'):
                 wordmap['new_paras'] = ['V_ÄKSYILLÄ']
             elif wordmap['lemma'].endswith('nna'):
                 wordmap['new_paras'] = ['V_PANNA']
             elif wordmap['lemma'].endswith('nnä'):
                 wordmap['new_paras'] = ['V_MENNÄ']
+            elif wordmap['lemma'].endswith('rra'):
+                wordmap['new_paras'] = ['V_SURRA']
             elif wordmap['lemma'].endswith('rrä'):
                 wordmap['new_paras'] = ['V_PIERRÄ']
             else:
