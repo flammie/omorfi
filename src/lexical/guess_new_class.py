@@ -4322,6 +4322,8 @@ def guess_new_verb(wordmap):
         elif wordmap['kotus_av'] == 'E':
             if wordmap['lemma'].endswith('veta'):
                 wordmap['new_paras'] = ['V_KAVETA']
+            elif wordmap['lemma'].endswith('vetä'):
+                wordmap['new_paras'] = ['V_KIVETÄ']
             else:
                 fail_guess_because(wordmap, ['V', 72, 'E'],
                     ['back', 'front'])
@@ -4344,9 +4346,11 @@ def guess_new_verb(wordmap):
         elif wordmap['kotus_av'] == 'J':
             if wordmap['lemma'].endswith('nnetä'):
                 wordmap['new_paras'] = ['V_KIINNETÄ']
+            elif wordmap['lemma'].endswith('nnota'):
+                wordmap['new_paras'] = ['V_RENNOTA']
             else:
-                fail_guess_because(wordmap, ['V', 72, 'I'],
-                    ['nnetä'])
+                fail_guess_because(wordmap, ['V', 72, 'J'],
+                    ['nnetä', 'nnota'])
         elif wordmap['kotus_av'] == 'L':
             if wordmap['lemma'].endswith('jeta'):
                 wordmap['new_paras'] = ['V_ROHJETA']

@@ -1075,6 +1075,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['V_KIITÄÄ']	VERB	55	F	False	weaken	front	None	None	False	False
 ['V_KIRVOTA']	VERB	74	E	False	strengthen	back	None	None	False	False
 ['V_KIVETTYÄ']	VERB	52	C	False	weaken	front	None	None	False	False
+['V_KIVETÄ']	VERB	72	E	False	strengthen	front	None	None	False	False
 ['V_KIVISTÄÄ']	VERB	53	None	False	weaken	front	None	None	False	False
 ['V_KIVUTA']	VERB	74	E	False	strengthen	back	None	None	False	False
 ['V_KOMENNELLA']	VERB	67	J	False	strengthen	back	None	None	False	False
@@ -1161,6 +1162,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['V_RAAPIA']	VERB	61	E	False	weaken	back	None	None	False	False
 ['V_RAIKAA']	VERB	78	None	False	weaken	back	None	None	False	False
 ['V_RANGAISTA']	VERB	66	G	False	strengthen	back	None	None	False	False
+['V_RENNOTA']	VERB	72	J	False	strengthen	back	None	None	False	False
 ['V_REVETÄ']	VERB	74	E	False	strengthen	front	None	None	False	False
 ['V_RIIPIÄ']	VERB	61	E	False	weaken	front	None	None	False	False
 ['V_ROHJETA']	VERB	72	L	False	strengthen	back	None	None	False	False
