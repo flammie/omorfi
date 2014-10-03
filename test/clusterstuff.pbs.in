@@ -1,0 +1,18 @@
+#! /bin/sh
+
+# Common PBS variables
+#PBS -l nodes=1:ppn=12:cores12:min48GB
+#PBS -M @PBS_EMAIL@
+#PBS -m eba
+#PBS -N @PACKAGE_NAME@-tests
+#PBS -r n
+#PBS -l walltime=16:00:00
+
+source ${HOME}/.bashrc
+
+WORK="@abs_top_builddir@/test/"
+
+cd ${WORK}/
+
+make -j 8 large-tests
+

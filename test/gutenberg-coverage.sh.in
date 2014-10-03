@@ -1,0 +1,31 @@
+#!/bin/bash
+# coverage for fiwiki-latest
+fsa="@top_builddir@/src/morphology.@TAGSET@.hfst"
+if ! test -r @top_builddir@/src/morphology.@TAGSET@.hfst ; then
+    echo Unable to find built fsa for tests: $fsa
+fi
+
+function _preproc() {
+    cat $@ | sed -e 's/[[:punct:]][[:space:][:punct:]]/ \0/g' \
+        -e 's/[[:punct:]]\r\?$/ \0/' -e 's/^[[:punct:]]/\0 /' \
+        -e 's/[[:space:]][[:punct:]]/\0 /g' -e 's/[[:space:]]/ /g' |\
+        tr -s ' ' '\n'
+}
+preprocess=_preproc
+if ! test -f "gutenberg-fi.tokens" ; then
+    fetch-gutenberg.bash "fi" txt
+    unpack-gutenbergs.bash  > gutenbergs-fi.text
+    $preprocess < gutenbergs-fi.text > jrc-fi.tokens
+fi
+hfst-lookup -q $fsa < gutenbergs-fi.tokens > jrc-fi.anals
+tokens=$(wc -l < gutenbergs-fi.tokens)
+misses=$(fgrep -c '+?' < gutenbergs-fi.anals)
+coverage=$(echo 100 * $misses/$tokens | bc )
+
+if test $coverage -lt 95 ; then
+    echo Gutenberg coverage should be more than 95, see:
+    fgrep '+?' < gutenbergs-fi.anals | sort | uniq -c | sort -nr | head -n 1000
+    exit 1
+fi
+
+

@@ -1,0 +1,26 @@
+#!/bin/bash
+# coverage for FTB 3.1
+fsa="@top_builddir@/src/morphology.@TAGSET@.hfst"
+if ! test -r @top_builddir@/src/morphology.@TAGSET@.hfst ; then
+    echo Unable to find built fsa for tests: $fsa
+fi
+
+if ! test -f ftb3.1.conllx ; then
+    echo "Fetching and unpacking ftb3.1, this may take a while..."
+    wget "http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/ftb3.1.conllx.gz"
+    gunzip ftb3.1.conllx.gz
+fi
+tail -n +2 < ftb3.1.conllx |\
+    egrep -v '^<' |\
+    cut -f 2 |\
+    hfst-lookup -q $fsa > ftb3.1.anals
+tokens=$(wc -l < ftb3.1.conllx)
+misses=$(fgrep -c '+?' < ftb3.1.anals)
+coverage=$(echo 100 * $misses/$tokens | bc )
+
+if test $coverage -lt 95 ; then
+    echo ftb3.1 coverage should be more than 95, see:
+    fgrep '+?' < ftb3.1.anals | sort | uniq -c | sort -nr | head -n 1000
+    exit 1
+fi
+

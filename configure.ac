@@ -98,10 +98,21 @@ AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
 AM_CONDITIONAL([WANT_TAGGER_HACKS], [test "$tag_format" != ${tag_format/+taggerhacks/}])
 AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
 AC_SUBST([TAG_FORMAT], [${tag_format%%[[+-]]*}])
+AC_ARG_WITH([pbs-mail],
+            [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
+            [with_pbs_mail=$withval],
+            [with_pbs_mail=no])
+AC_SUBST([PBS_EMAIL], [$with_pbs_mail])
+AC_ARG_ENABLE([big-tests],
+              [AS_HELP_STRING([--enable-big-tests],
+                              [whether to run large corpus tests @<:@default=no@:>@])],
+                             [big_tests=$enableval],
+                             [big_tests=no])
+AM_CONDITIONAL([WANT_BIG_TESTS], [test "x$big_tests" != xno])
 
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
-AC_MSG_RESULT([getting there])
+AC_MSG_RESULT([40 seconds to mars])
 
 # Checks for programs
 AC_PROG_LN_S
@@ -215,6 +226,18 @@ AM_CONDITIONAL([CAN_RST], [test "x$RST" != xfalse -o \( "x$RST2HTML" != xfalse -
 AM_CONDITIONAL([WANT_DOC], [test "x$enable_doc" != xfalse])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
 
+# separated my scripts for corpora fetching, some preprocessing
+AC_PATH_PROG([FETCH_EUROPARL], [fetch-europarl.bash], [false])
+AC_PATH_PROG([FETCH_WIKIMEDIA], [fetch-wikimedia.bash], [false])
+AC_PATH_PROG([FETCH_GUTENBERG], [fetch-gutenberg.bash], [false])
+AC_PATH_PROG([FETCH_JRC_ACQUIS], [fetch-jrc-acquis.bash], [false])
+AC_PATH_PROG([CLEAN_EUROPARL], [unpack-europarl.bash], [false])
+AC_PATH_PROG([CLEAN_WIKIMEDIA], [unpack-wikimedia.bash], [false])
+AC_PATH_PROG([CLEAN_GUTENBERG], [unpack-gutenberg.bash], [false])
+AC_PATH_PROG([CLEAN_JRC_ACQUIS], [unpack-jrc-acquis.bash], [false])
+AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
+
+
 # we are not using any traditional programming so as to need these standard
 # sections:
 # Checks for libraries
@@ -235,6 +258,9 @@ AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
                  omorfi.pc
                  man/Makefile], 
                  [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-interactive.sh])
+AS_IF([test x$with_pbs_mail != xno],
+      [AC_CONFIG_FILES([test/clusterstuff.pbs])])
+
 AC_OUTPUT
 
 cat <<EOF
