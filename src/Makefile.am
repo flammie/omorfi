@@ -40,13 +40,13 @@ EXTRA_DIST=\
 		voikko-fi_FI.pro index.xml
 
 # combine lexical data with phonology
-temporary.phon.hfst: morphology/omorfi.lexc.hfst phonology/omorfi.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 morphology/omorfi.lexc.hfst \
+temporary-$(TAG_FORMAT).phon.hfst: morphology/omorfi-$(TAG_FORMAT).lexc.hfst phonology/omorfi.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 morphology/omorfi-$(TAG_FORMAT).lexc.hfst \
 		-2 phonology/omorfi.twolc.hfst > $@
 
 # make orthographical adjustments to phonemic version
-temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
-	cat temporary.phon.hfst |\
+temporary-$(TAG_FORMAT).orth.hfst: temporary-$(TAG_FORMAT).phon.hfst orthography/uppercase-$(UPPERCASING).hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
+	cat temporary-$(TAG_FORMAT).phon.hfst |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/hyphenations.hfst |\
 		$(HMIN) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/uppercase-$(UPPERCASING).hfst |\
@@ -59,7 +59,7 @@ temporary.orth.hfst: temporary.phon.hfst orthography/uppercase-$(UPPERCASING).hf
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # make tag adjustments to orthographical version
-temporary.tagged.hfst: temporary.orth.hfst taghacks/rewrite-$(TAG_FORMAT).hfst
+temporary-$(TAG_FORMAT).tagged.hfst: temporary-$(TAG_FORMAT).orth.hfst taghacks/rewrite-$(TAG_FORMAT).hfst
 	cat $< |\
 		$(HINV) $(HFST_FLAGS) |\
 		$(HIC) $(HFST_FLAGS) -2 taghacks/rewrite-$(TAG_FORMAT).hfst |\
@@ -67,62 +67,62 @@ temporary.tagged.hfst: temporary.orth.hfst taghacks/rewrite-$(TAG_FORMAT).hfst
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # remove word boundaries at this point
-temporary.unbounded.hfst: temporary.tagged.hfst
+temporary-$(TAG_FORMAT).unbounded.hfst: temporary-$(TAG_FORMAT).tagged.hfst
 	cat $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 if WANT_TAGWEIGHTS
 # corpus trained weights
-temporary.tagweights-only.hfst: temporary.unbounded.hfst weights/weights.$(TAGWEIGHTS).hfst
-	$(HCOMP) $(HFST_FLAGS) weights/weights.$(TAGWEIGHTS).hfst temporary.unbounded.hfst |\
+temporary-$(TAG_FORMAT).tagweights-only.hfst: temporary-$(TAG_FORMAT).unbounded.hfst weights/weights-$(TAG_FORMAT).$(TAGWEIGHTS).hfst
+	$(HCOMP) $(HFST_FLAGS) weights/weights-$(TAG_FORMAT).$(TAGWEIGHTS).hfst temporary-$(TAG_FORMAT).unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
-temporary.tag-backoff.hfst: temporary.unbounded.hfst weights/analysis-sigma-star.hfst
+temporary-$(TAG_FORMAT).tag-backoff.hfst: temporary-$(TAG_FORMAT).unbounded.hfst weights/analysis-sigma-star.hfst
 	$(HREW) -e -a 7.9 weights/analysis-sigma-star.hfst |\
-		$(HCOMP) $(HFST_FLAGS) -1 temporary.unbounded.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -1 temporary-$(TAG_FORMAT).unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # weight by combining trained and backoff model
 # TODO: it includes lots of duplicate paths?
-temporary.tagweighted.hfst: temporary.tagweights-only.hfst temporary.tag-backoff.hfst
-	$(HUN) $(HFST_FLAGS) temporary.tagweights-only.hfst temporary.tag-backoff.hfst |\
+temporary-$(TAG_FORMAT).tagweighted.hfst: temporary-$(TAG_FORMAT).tagweights-only.hfst temporary-$(TAG_FORMAT).tag-backoff.hfst
+	$(HUN) $(HFST_FLAGS) temporary-$(TAG_FORMAT).tagweights-only.hfst temporary-$(TAG_FORMAT).tag-backoff.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 else
 # hand-written weights
-temporary.tagweighted.hfst: temporary.unbounded.hfst lexical/omorfi.reweight
-	$(HREW) $(HFST_FLAGS) -T lexical/omorfi.reweight temporary.unbounded.hfst |\
+temporary-$(TAG_FORMAT).tagweighted.hfst: temporary-$(TAG_FORMAT).unbounded.hfst lexical/omorfi.reweight
+	$(HREW) $(HFST_FLAGS) -T lexical/omorfi-$(TAG_FORMAT).reweight temporary-$(TAG_FORMAT).unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 endif
 
 # the token weights from corpus without flags
 if WANT_TOKENWEIGHTS
-temporary.tokenweights-only.hfst: temporary.tagweighted.hfst weights/weights.$(TOKENWEIGHTS).hfst
-	$(HCOMP) -F $(HFST_FLAGS) temporary.tagweighted.hfst weights/weights.$(TOKENWEIGHTS).hfst |\
+temporary-$(TAG_FORMAT).tokenweights-only.hfst: temporary-$(TAG_FORMAT).tagweighted.hfst weights/weights.$(TOKENWEIGHTS).hfst
+	$(HCOMP) -F $(HFST_FLAGS) temporary-$(TAG_FORMAT).tagweighted.hfst weights/weights-$(TAG_FORMAT).$(TOKENWEIGHTS).hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # also include the tokens not in corpus, somehow
-temporary.token-backoff.hfst: temporary.tagweighted.hfst weights/surface-sigma-star.hfst
+temporary-$(TAG_FORMAT).token-backoff.hfst: temporary-$(TAG_FORMAT).tagweighted.hfst weights/surface-sigma-star.hfst
 	$(HREW) -e -a 5.267 weights/surface-sigma-star.hfst |\
 		$(HMIN) $(HFST_FLAGS) |\
-		$(HCOMP) $(HFST_FLAGS) -1 temporary.tagweighted.hfst  |\
+		$(HCOMP) $(HFST_FLAGS) -1 temporary-$(TAG_FORMAT).tagweighted.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # weight by combining trained and backoff model
 # TODO: it includes lots of duplicate paths?
-temporary.tokenweighted.hfst: temporary.tokenweights-only.hfst temporary.token-backoff.hfst
-	$(HUN) $(HFST_FLAGS) temporary.tokenweights-only.hfst temporary.token-backoff.hfst |\
+temporary-$(TAG_FORMAT).tokenweighted.hfst: temporary-$(TAG_FORMAT).tokenweights-only.hfst temporary-$(TAG_FORMAT).token-backoff.hfst
+	$(HUN) $(HFST_FLAGS) temporary-$(TAG_FORMAT).tokenweights-only.hfst temporary-$(TAG_FORMAT).token-backoff.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 else
-temporary.tokenweighted.hfst: temporary.tagweighted.hfst
+temporary-$(TAG_FORMAT).tokenweighted.hfst: temporary-$(TAG_FORMAT).tagweighted.hfst
 	cp -v $< $@
 endif
 
-temporary.weighted.hfst: temporary.tokenweighted.hfst
+temporary-$(TAG_FORMAT).weighted.hfst: temporary-$(TAG_FORMAT).tokenweighted.hfst
 	cp -v $< $@
 
 # create morphological analyzer
-temporary.$(TAG_FORMAT).hfst: temporary.weighted.hfst
+temporary.$(TAG_FORMAT).hfst: temporary-$(TAG_FORMAT).weighted.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
@@ -130,7 +130,7 @@ morphology.$(TAG_FORMAT).hfst: temporary.$(TAG_FORMAT).hfst
 	$(HF2F) -f olw -o $@ -i $<
 
 # create generator from analyzer
-generation.$(TAG_FORMAT).hfst: temporary.unbounded.hfst
+generation.$(TAG_FORMAT).hfst: temporary-$(TAG_FORMAT).unbounded.hfst
 	$(HF2F) $(HFST_FLAGS) -f olw -i $< -o $@
 
 # lemmatization is a special case of tagset variant
@@ -147,15 +147,15 @@ tokeniser.default.hfst: dictionary.default.hfst orthography/inconditionals.hfst\
 						orthography/token.hfst
 	$(HCAT) $(HFST_FLAGS) orthography/inconditionals.hfst \
 		orthography/token.hfst |\
-		$(HREP) $(HFST_FLAGS) -f 1 -o temporary.inconditional-tokens.hfst
+		$(HREP) $(HFST_FLAGS) -f 1 -o temporary-$(TAG_FORMAT).inconditional-tokens.hfst
 	$(HCAT) $(HFST_FLAGS) dictionary.default.hfst orthography/token.hfst \
-		-o temporary.word-tokens.hfst
-	$(HCAT) temporary.word-tokens.hfst temporary.inconditional-tokens.hfst |\
+		-o temporary-$(TAG_FORMAT).word-tokens.hfst
+	$(HCAT) temporary-$(TAG_FORMAT).word-tokens.hfst temporary-$(TAG_FORMAT).inconditional-tokens.hfst |\
 		$(HREP) -f 1 -o $@
 
 # hyphenation dictionary
-hyphenation.dict.hfst: temporary.orth.hfst hyphenation/hyphenation.rule.hfst
-	cat temporary.orth.hfst |\
+hyphenation.dict.hfst: temporary-$(TAG_FORMAT).orth.hfst hyphenation/hyphenation.rule.hfst
+	cat temporary-$(TAG_FORMAT).orth.hfst |\
 		$(HPR) $(HFST_FLAGS) --project=lower |\
 		$(HIC) $(HFST_FLAGS) -2 hyphenation/hyphenation.rule.hfst > $@
 
@@ -168,4 +168,4 @@ speller-omorfi.zhfst: dictionary.default.hfst spell-checking/error.edit-distance
 
 
 clean-local:
-	-rm -f $(TARGETS) temporary.*.hfst
+	-rm -f $(TARGETS) temporary-$(TAG_FORMAT).*.hfst

@@ -47,13 +47,13 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(
 TESTS=format_output.py apertium_formatter.py
 
 noinst_DATA=omorfi-$(TAG_FORMAT).lexc omorfi.dix omorfi-sanalista.xml \
-			omorfi.reweight gtd-tests.yaml
+			omorfi-$(TAG_FORMAT).reweight gtd-tests-$(TAG_FORMAT).yaml
 
 if CAN_PYTHON
-gtd-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
+gtd-tests-$(TAG_FORMAT).yaml: $(top_srcdir)/test/gtd-tests.tsv
 	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=$(TAG_FORMAT) -v
 
-omorfi.reweight: serialise-reweighter.py format_output.py
+omorfi-$(TAG_FORMAT).reweight: serialise-reweighter.py format_output.py
 	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=$(TAG_FORMAT_PRECISE)\
 		-o $@
 
@@ -97,11 +97,11 @@ omorfi.dix: master.tsv stemparts.tsv inflections.tsv
 omorfi-sanalista.xml: master.tsv
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
 else
-gtd-tests.yaml:
+gtd-tests-$(TAG_FORMAT).yaml:
 	echo "Lexical data preprocessing requires python3"
 	false
 
-omorfi.reweight: 
+omorfi-$(TAG_FORMAT).reweight:
 	echo "Lexical data preprocessing requires python3"
 	false
 	false
