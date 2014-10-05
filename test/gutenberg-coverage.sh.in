@@ -14,17 +14,17 @@ function _preproc() {
 preprocess=_preproc
 if ! test -f "gutenberg-fi.tokens" ; then
     fetch-gutenberg.bash "fi" txt
-    unpack-gutenbergs.bash  > gutenbergs-fi.text
-    $preprocess < gutenbergs-fi.text > gutenberg-fi.tokens
+    unpack-gutenbergs.bash  > gutenberg-fi.text
+    $preprocess < gutenberg-fi.text > gutenberg-fi.tokens
 fi
-hfst-lookup -q $fsa < gutenbergs-fi.tokens > gutenberg-fi.anals
-tokens=$(wc -l < gutenbergs-fi.tokens)
-misses=$(fgrep -c '+?' < gutenbergs-fi.anals)
+hfst-lookup -q $fsa < gutenberg-fi.tokens > gutenberg-fi.anals
+tokens=$(wc -l < gutenberg-fi.tokens)
+misses=$(fgrep -c '+?' < gutenberg-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
 if test $coverage -lt 95 ; then
     echo Gutenberg coverage should be more than 95, see:
-    fgrep '+?' < gutenbergs-fi.anals | sort | uniq -c | sort -nr | head -n 1000
+    fgrep '+?' < gutenberg-fi.anals | sort | uniq -c | sort -nr | head -n 1000
     exit 1
 fi
 
