@@ -16,7 +16,7 @@ tail -n +2 < ftb3.1.conllx |\
     hfst-lookup -q $fsa > ftb3.1.anals
 tokens=$(wc -l < ftb3.1.conllx)
 misses=$(fgrep -c '+?' < ftb3.1.anals)
-coverage=$(echo 100 * $misses/$tokens | bc )
+coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
 if test $coverage -lt 95 ; then
     echo ftb3.1 coverage should be more than 95, see:

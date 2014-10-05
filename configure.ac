@@ -233,7 +233,7 @@ AC_PATH_PROG([FETCH_GUTENBERG], [fetch-gutenberg.bash], [false])
 AC_PATH_PROG([FETCH_JRC_ACQUIS], [fetch-jrc-acquis.bash], [false])
 AC_PATH_PROG([CLEAN_EUROPARL], [unpack-europarl.bash], [false])
 AC_PATH_PROG([CLEAN_WIKIMEDIA], [unpack-wikimedia.bash], [false])
-AC_PATH_PROG([CLEAN_GUTENBERG], [unpack-gutenberg.bash], [false])
+AC_PATH_PROG([CLEAN_GUTENBERG], [unpack-gutenbergs.bash], [false])
 AC_PATH_PROG([CLEAN_JRC_ACQUIS], [unpack-jrc-acquis.bash], [false])
 AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 

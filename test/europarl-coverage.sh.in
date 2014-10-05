@@ -23,7 +23,7 @@ fi
 hfst-lookup -q $fsa < europarl-v7.fi-en.fi.tokens > europarl-v7.fi-en.fi.anals
 tokens=$(wc -l < europarl-v7.fi-en.fi.tokens)
 misses=$(fgrep -c '+?' < europarl-v7.fi-en.fi.anals)
-coverage=$(echo 100 * $misses/$tokens | bc )
+coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
 if test $coverage -lt 95 ; then
     echo europarl coverage should be more than 95, see:

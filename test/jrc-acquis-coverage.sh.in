@@ -22,7 +22,7 @@ fi
 hfst-lookup -q $fsa < jrc-fi.tokens > jrc-fi.anals
 tokens=$(wc -l < jrc-fi.tokens)
 misses=$(fgrep -c '+?' < jrc-fi.anals)
-coverage=$(echo 100 * $misses/$tokens | bc )
+coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
 if test $coverage -lt 95 ; then
     echo JRC acquis coverage should be more than 95, see:
