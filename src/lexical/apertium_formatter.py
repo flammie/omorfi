@@ -3,7 +3,7 @@
 # utils to format apertium style data from omorfi database values
 
 from omor_strings_io import lexc_escape, word_boundary, weak_boundary, \
-        fail_formatting_missing_for
+        optional_hyphen, fail_formatting_missing_for
 
 monodix_sdefs= {
         'abbr',
@@ -90,7 +90,7 @@ apertium_multichars =  {
  "-",
  "",
  "+",
- "a",
+ "adj",
  "abbr",
  "abe",
  "abl",
@@ -101,21 +101,27 @@ apertium_multichars =  {
  "agent",
  "all",
  "ant",
+ "card",
  "cnjcoo",
+ "cnjcoo><vblex",
  "cnjsub",
  "cnjadv",
  "com",
  "cond",
  "conneg",
+ "def",
+ "dem",
  "ela",
  "enc",
  "ess",
  "f",
  "gen",
+ "guio",
  "ij",
  "ill", 
  "imp", 
  "impers", 
+ "ind",
  "ine",
  "infa",
  "infe",
@@ -124,14 +130,20 @@ apertium_multichars =  {
  "ins",
  "itg",
  "lat",
+ "lpar",
+ "lquot",
  "m",
  "mf",
  "n",
  "ND",
  "neg", 
  "nom",
+ "np",
  "num",
  "ord",
+ "p1", 
+ "p2",
+ "p3",
  "p1><pl", 
  "p1><sg", 
  "p2><pl",
@@ -144,7 +156,6 @@ apertium_multichars =  {
  "pasv",
  "pers",
  "pl", 
- "pn",
  "pneg",
  "pos",
  "post",
@@ -161,11 +172,16 @@ apertium_multichars =  {
  "qst",
  "qu",
  "rec",
+ "reflex",
  "rel",
+ "rpar",
+ "rquot",
+ "sent",
  "sg", 
  "sup",
  "top",
  "tra", 
+ "vaux",
  "vblex",
  "v→a",
  "v→adv",
@@ -178,11 +194,12 @@ stuff2monodix =  {
         "ADPOSITION": "post",
         "ADVERB": "adv",
         "ADVERBIAL": "cnjadv",
+        "AINF_arg": "vaux",
         "ARTWORK": "",
-        "B-": ">-<",
-        "B←": ">-<",
-        "B→": ">-<",
-        "Bc": ">+<",
+        "B-": "-",
+        "B←": "-",
+        "B→": "-",
+        "Bc": "+",
         "CARDINAL": "card",
         "Ccmp": "com",
         "CLAUSE-BOUNDARY": "",
@@ -192,6 +209,7 @@ stuff2monodix =  {
         "COMPARATIVE": "cnjsub",
         "COMP": "com",
         "CONJUNCTION": "",
+        "CONJUNCTIONVERB": "cnjcoo><vblex",
         "COORDINATING": "cnjcoo",
         "Cpos": "pos",
         "Csup": "sup",
@@ -219,10 +237,12 @@ stuff2monodix =  {
         "INDEFINITE": "ind",
         "INITIAL-BRACKET": "lpar",
         "INITIAL-QUOTE": "lquot",
+        "INTRANSITIVE_arg": "vblex",
         "INTERJECTION": "ij",
         "INTERROGATIVE": "itg",
         "LAST": "ant",
         "LEMMA-START": "",
+        "MAINF_arg": "vaux",
         "MEDIA": "",
         "MISC": "",
         "Ncon": "conneg",
@@ -241,6 +261,9 @@ stuff2monodix =  {
         "Osg2": "pxsg2",
         "PARTICLE": "part",
         "PERSONAL": "pers",
+        "PL1": "p1", 
+        "PL2": "p2",
+        "PL3": "p3",
         "Ppe4": "impers", 
         "Ppl1": "p1><pl", 
         "Ppl2": "p2><pl",
@@ -252,13 +275,13 @@ stuff2monodix =  {
         "Psg2": "p2><sg",
         "Psg3": "p3><sg",
         "PUNCTUATION": "",
-        "Qhan": ">+han<enc",
-        "Qkaan": ">+kaan<enc",
-        "Qka": ">+ka<enc",
-        "Qkin": ">+kin<enc",
-        "Qko": ">+ko<qst",
-        "Qpa": ">+pa<enc",
-        "Qs": ">+s<enc",
+        "Qhan": "+han<enc",
+        "Qkaan": "+kaan<enc",
+        "Qka": "+ka<enc",
+        "Qkin": "+kin<enc",
+        "Qko": "+ko<qst",
+        "Qpa": "+pa<enc",
+        "Qs": "+s<enc",
         "QUALIFIER": "adj",
         "QUANTOR": "qu",
         "RECIPROCAL": "rec",
@@ -266,8 +289,11 @@ stuff2monodix =  {
         "RELATIVE": "rel",
         "ROMAN": "",
         ".sent": "",
+        "SG1": "p1", 
+        "SG2": "p2",
+        "SG3": "p3",
         "SENTENCE-BOUNDARY": "sent",
-        "SPACE": "><",
+        "SPACE": "",
         "SUPERL": "sup",
         "Tcond": "cond",
         "Timp": "imp", 
@@ -278,7 +304,7 @@ stuff2monodix =  {
         "Uarch": "",
         "Udial": "",
         "Unonstd": "",
-        "UNSPECIFIED": "pcle",
+        "UNSPECIFIED": "part",
         "Urare": "",
         "Vact": "actv",
         "VERB": "vblex",
@@ -302,12 +328,18 @@ stuff2monodix =  {
         "Xtra": "tra", 
         "": ""
         }
+stuff2apertium = stuff2monodix
 
 def format_tag_apertium(stuff):
-    if stuff == '':
-        return "0"
+    if len(stuff) == 0:
+        return ""
     elif stuff in stuff2monodix:
-        return ('%<' + lexc_escape(stuff2monodix[stuff]) + '%>').replace('%<%>', '')
+        if stuff2monodix[stuff] in ['+', '-', '#', '0', '']:
+            return stuff2monodix[stuff]
+        elif stuff2monodix[stuff].startswith('+'):
+            return (lexc_escape(stuff2monodix[stuff]) + '%>')
+        else:
+            return ('%<' + lexc_escape(stuff2monodix[stuff]) + '%>')
     else:
         fail_formatting_missing_for(stuff, "apertium")
         return ""
@@ -342,7 +374,7 @@ def format_lexc_apertium(wordmap):
             wordmap['analysis'] += '%<n%>'
     elif wordmap['pos'] == 'VERB':
         if wordmap['argument']:
-            wordmap['analysis'] += format_tag_apertium(wordmap['argument'])
+            wordmap['analysis'] += format_tag_apertium(wordmap['argument'] + '_arg')
         else:
             wordmap['analysis'] += format_tag_apertium(wordmap['pos'])
     elif wordmap['pos'] == 'CONJUNCTIONVERB':
@@ -370,6 +402,7 @@ def format_lexc_apertium(wordmap):
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_tag_apertium(subcat)
     retvals = ""
+    wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     for new_para in wordmap['new_paras']:
         retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], new_para)
@@ -378,7 +411,8 @@ def format_lexc_apertium(wordmap):
 def format_multichars_lexc_apertium():
     multichars = "!! Apertium standard tags:\n"
     for mcs in apertium_multichars:
-        multichars += '%<' + lexc_escape(mcs) + "%>\n"
+        if not '><' in mcs and not mcs in ['', '+', '-', '#', '0']:
+            multichars += '%<' + lexc_escape(mcs) + "%>\n"
     return multichars
 
 def format_monodix_alphabet():
@@ -461,6 +495,12 @@ if __name__ == '__main__':
     for stuff, ape in stuff2apertium.items():
         if len(ape) < 2:
             continue
+        elif ape.startswith('+'):
+            if not ape[ape.find('+'):]:
+                print("There are conflicting formattings in here!", 
+                        ape[ape.find('+'):],
+                        "is not a valid apertium multichar_symbol!")
+                fail = True
         elif not ape in apertium_multichars:
             print("There are conflicting formattings in here!", ape, 
                     "is not a valid apertium multichar_symbol!")

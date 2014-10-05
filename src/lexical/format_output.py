@@ -129,7 +129,8 @@ omor_multichars = {
         "[SUBCAT=QUOTATION][POSITION=INITIAL]",
         "[SUBCAT=QUOTATION][POSITION=FINAL]",
         "[SUBCAT=BRACKET][POSITION=INITIAL]",
-        "[SUBCAT=BRACKET][POSITION=FINAL]"
+        "[SUBCAT=BRACKET][POSITION=FINAL]",
+        "[POS=VERB][SUBCAT=NEG]"
         }
 
 ktnkav_multichars = {
