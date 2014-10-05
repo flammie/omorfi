@@ -214,7 +214,7 @@ AS_IF([test "x$enable_voikko" = "xyes"],
        AS_IF([test "x$ZIP" = "xfalse"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
 # require python for stuff
-AM_PATH_PYTHON([3.2], [:])
+AM_PATH_PYTHON([3.2],, [:])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
 # test RST scripts without python since python tests do not work in all platforms
 AC_PATH_PROG([RST], [rst], [false])
