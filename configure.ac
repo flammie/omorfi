@@ -251,13 +251,27 @@ AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
                  src/phonology/Makefile src/spell-checking/Makefile
                  src/probabilistics/Makefile src/taghacks/Makefile
                  doc/Makefile test/Makefile test/test-header.yaml
-                 src/scripts/Makefile src/scripts/omorfi-analyse.sh
-                 src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh
-                 src/scripts/omorfi-spell.sh
-                 src/scripts/omorfi-interactive.sh
-                 omorfi.pc
-                 man/Makefile], 
-                 [chmod +x src/scripts/omorfi-analyse.sh src/scripts/omorfi-generate.sh src/scripts/omorfi-hyphenate.sh src/scripts/omorfi-spell.sh src/scripts/omorfi-interactive.sh])
+                 src/scripts/Makefile omorfi.pc man/Makefile])
+AC_CONFIG_FILES([src/scripts/omorfi-analyse.sh],
+                [chmod +x src/scripts/omorfi-analyse.sh])
+AC_CONFIG_FILES([src/scripts/omorfi-generate.sh],
+                [chmod +x src/scripts/omorfi-generate.sh])
+AC_CONFIG_FILES([src/scripts/omorfi-hyphenate.sh],
+                [chmod +x src/scripts/omorfi-hyphenate.sh])
+AC_CONFIG_FILES([src/scripts/omorfi-spell.sh],
+                [chmod +x src/scripts/omorfi-spell.sh])
+AC_CONFIG_FILES([src/scripts/omorfi-interactive.sh],
+                [chmod +x src/scripts/omorfi-interactive.sh])
+AC_CONFIG_FILES([test/europarl-coverage.sh],
+                [chmod +x test/europarl-coverage.sh])
+AC_CONFIG_FILES([test/fiwiki-coverage.sh],
+                [chmod +x test/fiwiki-coverage.sh])
+AC_CONFIG_FILES([test/gutenberg-coverage.sh],
+                [chmod +x test/gutenberg-coverage.sh])
+AC_CONFIG_FILES([test/jrc-acquis-coverage.sh],
+                [chmod +x test/jrc-acquis-coverage.sh])
+AC_CONFIG_FILES([test/ftb31-coverage.sh],
+                [chmod +x test/ftb31-coverage.sh])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 
