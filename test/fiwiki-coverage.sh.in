@@ -19,14 +19,15 @@ if ! test -f "fiwiki-latest-pages-articles.tokens" ; then
     unpack-wikimedia.bash fiwiki > fiwiki-latest-pages-articles.text
     $preprocess < fiwiki-latest-pages-articles.text > fiwiki-latest-pages-articles.tokens
 fi
-hfst-lookup -q $fsa < fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.anals
+echo Looking up fiwiki-latest-pages-articles.tokens
+/usr/bin/time -o fiwiki-latest-pages-articles.times -a hfst-lookup -q $fsa < fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.anals
 tokens=$(wc -l < fiwiki-latest-pages-articles.tokens)
 misses=$(fgrep -c '+?' < fiwiki-latest-pages-articles.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
 if test $coverage -lt 95 ; then
     echo fiwiki coverage should be more than 95, see:
-    fgrep '+?' < fiwiki-latest-pages-articles.anals | sort | uniq -c | sort -nr | head -n 1000
+    fgrep '+?' < fiwiki-latest-pages-articles.anals | sort | uniq -c | sort -nr  | head
     exit 1
 fi
 
