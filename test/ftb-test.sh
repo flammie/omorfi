@@ -16,7 +16,12 @@ PYTHON=python3
 if type python3 ; then
     PYTHON=python3
 elif type python ; then
-    PYTHON=python
+    if python -V | fgrep 3. ; then
+        PYTHON=python
+    else
+        echo $(which python) not python3
+        exit 77
+    fi
 else
     echo Missing python3
     exit 77

@@ -28,7 +28,10 @@ JOINS=attributes/boundaries.tsv \
 	  attributes/pronunciation.tsv attributes/proper-classes.tsv \
 	  attributes/particle-classes.tsv attributes/pronoun-classes.tsv \
 	  attributes/symbol-classes.tsv \
-	  attributes/semantic.tsv attributes/subcategories.tsv attributes/usage.tsv 
+	  attributes/semantic.tsv \
+	  attributes/subcategories.tsv \
+	  attributes/usage.tsv \
+	  attributes/verb-arguments.tsv
 SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py
 FINNISC=\
 		format_output.py \
@@ -46,6 +49,7 @@ TESTS=format_output.py apertium_formatter.py
 noinst_DATA=omorfi-$(TAG_FORMAT).lexc omorfi.dix omorfi-sanalista.xml \
 			omorfi.reweight gtd-tests.yaml
 
+if CAN_PYTHON
 gtd-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=$(TAG_FORMAT) -v
 
@@ -66,7 +70,8 @@ joint.tsv: lexemes/lexemes.tsv $(JOINS)
 		-j $(srcdir)/attributes/semantic.tsv \
 		-j $(srcdir)/attributes/subcategories.tsv \
 		-j $(srcdir)/attributes/symbol-classes.tsv \
-		-j $(srcdir)/attributes/usage.tsv -o $@
+		-j $(srcdir)/attributes/usage.tsv \
+		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
 
 master.tsv: joint.tsv
 	$(PYTHON) $(srcdir)/tsv_expand.py \
@@ -91,6 +96,44 @@ omorfi.dix: master.tsv stemparts.tsv inflections.tsv
 
 omorfi-sanalista.xml: master.tsv
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
+else
+gtd-tests.yaml:
+	echo "Lexical data preprocessing requires python3"
+	false
+
+omorfi.reweight: 
+	echo "Lexical data preprocessing requires python3"
+	false
+	false
+
+joint.tsv: 
+	echo "Lexical data preprocessing requires python3"
+	false
+
+master.tsv: 
+	echo "Lexical data preprocessing requires python3"
+	false
+
+stemparts.tsv: 
+	echo "Lexical data preprocessing requires python3"
+	false
+
+inflections.tsv: 
+	echo "Lexical data preprocessing requires python3"
+	false
+
+omorfi-$(TAG_FORMAT).lexc:
+	echo "Lexical data preprocessing requires python3"
+	false
+
+omorfi.dix: 
+	echo "Lexical data preprocessing requires python3"
+	false
+
+omorfi-sanalista.xml: 
+	echo "Lexical data preprocessing requires python3"
+	false
+endif
 
 clean-local:
 	-rm -f master.tsv joint.tsv stemparts.tsv inflections.tsv \
