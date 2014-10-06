@@ -21,7 +21,7 @@ if ! test -f "europarl-v7.fi-en.fi.tokens" ; then
     $preprocess < europarl-v7.fi-en.fi > europarl-v7.fi-en.fi.tokens
 fi
 echo Looking up europarl-v7.fi-en.fi.tokens
-/usr/bin/time -o europarl-v7.fi-en.fi.times -a hfst-lookup -q $fsa < europarl-v7.fi-en.fi.tokens > europarl-v7.fi-en.fi.anals
+/usr/bin/time -o europarl-v7.fi-en.fi.times -a hfst-optimised-lookup -q $fsa < europarl-v7.fi-en.fi.tokens > europarl-v7.fi-en.fi.anals
 tokens=$(wc -l < europarl-v7.fi-en.fi.tokens)
 misses=$(fgrep -c '+?' < europarl-v7.fi-en.fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )

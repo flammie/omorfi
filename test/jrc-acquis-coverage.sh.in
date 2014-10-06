@@ -20,7 +20,7 @@ if ! test -f "jrc-fi.tokens" ; then
     $preprocess < "jrc-fi.text" > "jrc-fi.tokens"
 fi
 echo Looking up jrc-fi.tokens
-/usr/bin/time -o "jrc-fi.times" -a hfst-lookup -q $fsa < "jrc-fi.tokens" > "jrc-fi.anals"
+/usr/bin/time -o "jrc-fi.times" -a hfst-optimised-lookup -q $fsa < "jrc-fi.tokens" > "jrc-fi.anals"
 tokens=$(wc -l < jrc-fi.tokens)
 misses=$(fgrep -c '+?' < jrc-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )

@@ -20,7 +20,7 @@ if ! test -f "fiwiki-latest-pages-articles.tokens" ; then
     $preprocess < fiwiki-latest-pages-articles.text > fiwiki-latest-pages-articles.tokens
 fi
 echo Looking up fiwiki-latest-pages-articles.tokens
-/usr/bin/time -o fiwiki-latest-pages-articles.times -a hfst-lookup -q $fsa < fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.anals
+/usr/bin/time -o fiwiki-latest-pages-articles.times -a hfst-optimised-lookup -q $fsa < fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.anals
 tokens=$(wc -l < fiwiki-latest-pages-articles.tokens)
 misses=$(fgrep -c '+?' < fiwiki-latest-pages-articles.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )

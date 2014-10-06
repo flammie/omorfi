@@ -18,7 +18,7 @@ if ! test -f "gutenberg-fi.tokens" ; then
     $preprocess < "gutenberg-fi.text" > "gutenberg-fi.tokens"
 fi
 echo Looking up gutenberg-fi.tokens
-/usr/bin/time -o "gutenberg-fi.times" -a hfst-lookup -q $fsa < "gutenberg-fi.tokens" > "gutenberg-fi.anals"
+/usr/bin/time -o "gutenberg-fi.times" -a hfst-optimised-lookup -q $fsa < "gutenberg-fi.tokens" > "gutenberg-fi.anals"
 tokens=$(wc -l < gutenberg-fi.tokens)
 misses=$(fgrep -c '+?' < gutenberg-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
