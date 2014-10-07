@@ -26,7 +26,7 @@ from time import strftime
 import argparse
 import csv
 
-from apertium_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry
+from apertium_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
 from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
@@ -67,6 +67,7 @@ def main():
     quotechar = None
     # write header to XML file
     print('<?xml version="1.0" encoding="utf-8"?>', file=args.output)
+    print(format_monodix_licence(), file=args.output)
     print('<dictionary>', file=args.output)
     print(format_monodix_alphabet(), file=args.output)
     print(format_monodix_sdefs(), file=args.output)

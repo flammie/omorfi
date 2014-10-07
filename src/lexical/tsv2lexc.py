@@ -11,7 +11,7 @@ lemma or classification if needed.
 """
 
 
-# Author: Tommi A Pirinen <tommi.pirinen@helsinki.fi> 2009, 2011
+# Author: Omorfi contributors, 2014 
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ import argparse
 import csv
 
 from format_output import format_lexc, format_multichars_lexc, \
-        format_root_lexicon, format_continuation_lexc
+        format_root_lexicon, format_continuation_lexc, format_copyright_lexc
 from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
@@ -139,6 +139,7 @@ def main():
         print("! Omorfi stubs generated from", tsv_filename,
               "\n! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
               "\n! params: ", ' '.join(argv), file=args.output)
+        print(format_copyright_lexc(), file=args.output)
         curr_lexicon = ""
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
@@ -185,6 +186,7 @@ def main():
         print("! Omorfi stemparts generated from", tsv_file.name,
                       "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
                       "! params: ", ' '.join(argv), file=args.output)
+        print(format_copyright_lexc(), file=args.output)
         curr_lexicon = ""
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
@@ -239,6 +241,7 @@ def main():
         print("! Omorfi inflects generated from", tsv_file.name,
                       "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
                       "! params: ", ' '.join(argv), file=args.output)
+        print(format_copyright_lexc(), file=args.output)
         curr_lexicon = ""
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
