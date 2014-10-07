@@ -13,7 +13,7 @@ function _preproc() {
 }
 preprocess=_preproc
 if ! test -f "fiwiki-latest-pages-articles.tokens" ; then
-    if ! test -f "fiwiki-pages-articles.xml.bz2" ; then
+    if ! test -f "fiwiki-latest-pages-articles.xml.bz2" ; then
         fetch-wikimedia.bash fiwiki
     fi
     unpack-wikimedia.bash fiwiki > fiwiki-latest-pages-articles.text
