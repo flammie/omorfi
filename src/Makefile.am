@@ -89,7 +89,7 @@ temporary-$(TAG_FORMAT).tagweighted.hfst: temporary-$(TAG_FORMAT).tagweights-onl
 		$(HMIN) $(HFST_FLAGS) > $@
 else
 # hand-written weights
-temporary-$(TAG_FORMAT).tagweighted.hfst: temporary-$(TAG_FORMAT).unbounded.hfst lexical/omorfi.reweight
+temporary-$(TAG_FORMAT).tagweighted.hfst: temporary-$(TAG_FORMAT).unbounded.hfst lexical/omorfi-$(TAG_FORMAT).reweight
 	$(HREW) $(HFST_FLAGS) -T lexical/omorfi-$(TAG_FORMAT).reweight temporary-$(TAG_FORMAT).unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 endif
