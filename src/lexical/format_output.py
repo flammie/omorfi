@@ -707,14 +707,14 @@ def format_analysis_lexc_ftb3(anals):
 
 def format_analysis_lexc_omor(anals, format):
     omorstring = ''
-    for i in anals.split('|'):
-        omorstring += format_tag_omor(tags[i], format)
+    for tag in anals.split('|'):
+        omorstring += format_tag_omor(tag, format)
     return omortstring
 
 def format_analysis_lexc_google(anals):
     googstring = ''
-    for i in anals.split('|'):
-        googstring += format_tag_google(i)
+    for tag in anals.split('|'):
+        googstring += format_tag_google(tag)
     return googstring
 
 def format_analysis_segments(anals):

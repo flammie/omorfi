@@ -385,7 +385,6 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_HYLKY']	NOUN	1	D	False	weaken	front	None	None	False	False
 ['N_HYNTTEET']	NOUN	48	C	obligatory	strengthen	front	None	None	False	False
 ['N_HYNTTYYT']	NOUN	17	None	obligatory	weaken	front	None	None	False	False
-['N_HYVINKÄÄ']	NOUN	17	None	False	weaken	front	ä	None	False	False
 ['N_HYÖTYY']	NOUN	17	None	False	weaken	front	y	None	False	False
 ['N_HÄIRIÖ']	NOUN	3	None	False	weaken	front	None	None	False	False
 ['N_HÄKKI']	NOUN	5	A	False	weaken	front	None	None	False	False
@@ -674,6 +673,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_PUNK']	NOUN	5	None	False	weaken	back	None	None	False	False
 ['N_PUU']	NOUN	18	None	False	weaken	back	u	None	False	False
 ['N_PUUT']	NOUN	18	None	obligatory	weaken	back	None	None	False	False
+['N_PYHTÄÄ']	NOUN	17	None	False	weaken	front	ä	None	False	False
 ['N_PYTTY']	NOUN	1	C	False	weaken	front	None	None	False	False
 ['N_PYYHE']	NOUN	48	D	False	strengthen	front	None	None	False	False
 ['N_PYYHIN']	NOUN	33	D	False	strengthen	front	None	None	False	False
@@ -812,6 +812,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_TIE']	NOUN	19	None	False	weaken	front	None	None	False	False
 ['N_TIETEET']	NOUN	48	F	obligatory	strengthen	front	None	None	False	False
 ['N_TIET']	NOUN	19	None	obligatory	weaken	front	None	None	False	False
+['N_TIHVII']	NOUN	17	None	False	weaken	front	i	None	False	False
 ['N_TIKKAAT']	NOUN	41	A	obligatory	strengthen	back	None	None	False	False
 ['N_TIKKAAT']	NOUN	41	D	obligatory	strengthen	back	None	None	False	False
 ['N_TIKKU']	NOUN	1	A	False	weaken	back	None	None	False	False
@@ -871,6 +872,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['N_UROS']	NOUN	41	None	False	strengthen	back	None	None	False	False
 ['N_VAADIN']	NOUN	33	F	False	strengthen	back	None	None	False	False
 ['N_VAAKA']	NOUN	9	D	False	weaken	back	a	None	False	False
+['N_VAANII']	NOUN	17	None	False	weaken	back	i	None	False	False
 ['N_VAASAN']	NOUN	99	None	False	False	back	None	None	False	False
 ['N_VAATTEET']	NOUN	48	C	obligatory	strengthen	back	None	None	False	False
 ['N_VAINAA']	NOUN	17	None	False	weaken	back	a	None	False	False

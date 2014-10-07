@@ -833,6 +833,10 @@ def guess_new_noun(wordmap):
                     wordmap['new_paras'] = ['N_TOKEE']
                 elif wordmap['lemma'].endswith('ee') and wordmap['harmony'] == 'front':
                     wordmap['new_paras'] = ['N_LENTTEE']
+                elif wordmap['lemma'].endswith('ii') and wordmap['harmony'] == 'back':
+                    wordmap['new_paras'] = ['N_VAANII']
+                elif wordmap['lemma'].endswith('ii') and wordmap['harmony'] == 'front':
+                    wordmap['new_paras'] = ['N_TIHVII']
                 elif wordmap['lemma'].endswith('oo'):
                     wordmap['new_paras'] = ['N_TIENOO']
                 elif wordmap['lemma'].endswith('uu'):
@@ -840,7 +844,7 @@ def guess_new_noun(wordmap):
                 elif wordmap['lemma'].endswith('yy'):
                     wordmap['new_paras'] = ['N_HYÖTYY']
                 elif wordmap['lemma'].endswith('ää'):
-                    wordmap['new_paras'] = ['N_HYVINKÄÄ']
+                    wordmap['new_paras'] = ['N_PYHTÄÄ']
                 elif wordmap['lemma'].endswith('öö'):
                     wordmap['new_paras'] = ['N_YLÖÖ']
                 else:
