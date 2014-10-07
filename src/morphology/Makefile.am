@@ -24,9 +24,7 @@ $(LEXC_MAIN): $(top_builddir)/src/lexical/omorfi-$(TAG_FORMAT).lexc
 	-cp -v $< $@
 
 omorfi-$(TAG_FORMAT).lexc.hfst: $(LEXC_MAIN) $(MAYBE_TAGGER_HACKS)
-	$(HLEXC) -v -f foma -o $@.foma $^
-	$(HF2F) -v -f openfst -o $@ $@.foma
-	-rm -v $@.foma
+	$(HLEXC) -v --Werror -o $@ $^
 
 omorfi-$(TAG_FORMAT).lexc.foma: $(LEXC_MAIN) $(MAYBE_TAGGER_HACKS)
 	cat $^ > combined.lexc
