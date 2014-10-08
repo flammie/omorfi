@@ -6,7 +6,7 @@
 >	['SYMBOL_PISTE']	symbol=final-bracket
 -	['SYMBOL_PISTE']	symbol=dash
 --	['SYMBOL_PISTE']	symbol=dash
-,	['SYMBOL_PISTE']	symbol=clause-boundary
+,	['SYMBOL_PILKKU']	symbol=clause-boundary
 ;	['SYMBOL_PISTE']	symbol=clause-boundary
 :	['SYMBOL_PISTE']	symbol=clause-boundary
 !	['SYMBOL_PISTE','PUNCT_NONSTD_EXCL_LOOP']	symbol=sentence-boundary
