@@ -35,5 +35,7 @@
 —	['SYMBOL_PISTE']	symbol=dash
 ›	['SYMBOL_PISTE']	symbol=final-bracket
 ‹	['SYMBOL_PISTE']	symbol=initial-bracket
+‥	['SYMBOL_PISTE']	symbol=sentence-boundary
+…	['SYMBOL_PISTE']	symbol=sentence-boundary
  	['SYMBOL_PISTE']	symbol=space
  	['SYMBOL_PISTE']	symbol=space
