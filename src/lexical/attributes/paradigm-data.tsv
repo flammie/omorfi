@@ -1010,6 +1010,7 @@ new_paras	pos	kotus_tn	kotus_av	plurale_tantum	grade_dir	harmony	stem_vowel	stem
 ['PRON_USEA']	PRONOUN	15	None	False	weaken	back	a	None	False	False
 ['PRON_USEIMMAT']	PRONOUN	36	None	False	strengthen	back	None	None	False	False
 ['PRON_YKSI']	PRONOUN	31	None	False	weaken	front	None	None	False	False
+['SYMBOL_PILKKU']	PUNCTUATION	99	None	False	None	back	None	None	True	True
 ['SYMBOL_PISTE','PUNCT_NONSTD_EXCL_LOOP']	PUNCTUATION	99	None	False	None	front	None	None	True	True
 ['SYMBOL_PISTE']	PUNCTUATION	99	None	False	None	front	None	None	True	True
 ['V_AALLOTA']	VERB	75	I	False	strengthen	back	None	None	False	False
