@@ -1,0 +1,22 @@
+#!/bin/bash
+# coverage for FTB 3.1
+fsa="@top_builddir@/src/morphology.@TAG_FORMAT@.hfst"
+if ! test -r @top_builddir@/src/morphology.@TAG_FORMAT@.hfst ; then
+    echo Unable to find built fsa for tests: $fsa
+fi
+
+if ! test -f ftb3.1.conllx ; then
+    echo "Fetching and unpacking ftb3.1, this may take a while..."
+    wget "http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/ftb3.1.conllx.gz"
+    gunzip ftb3.1.conllx.gz
+fi
+echo Timing up ftb3.1 head -n 100
+echo -e "Real\tUser\tSystem\tWait" > 100.times
+for i in 1 2 3 4 5 ; do
+	tail -n +2 < ftb3.1.conllx |\
+		egrep -v '^<' |\
+		cut -f 2 |\
+		/usr/bin/time -f "%E\t%U\t%S\t%w\n" -o 100.times -a \
+			hfst-lookup -q $fsa > ftb3.1.anals
+done
+

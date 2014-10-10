@@ -14,5 +14,5 @@ WORK="@abs_top_builddir@/test/"
 
 cd ${WORK}/
 
-make -j 8 large-tests
+make -j 8 check 
 

@@ -272,6 +272,8 @@ AC_CONFIG_FILES([test/jrc-acquis-coverage.sh],
                 [chmod +x test/jrc-acquis-coverage.sh])
 AC_CONFIG_FILES([test/ftb31-coverage.sh],
                 [chmod +x test/ftb31-coverage.sh])
+AC_CONFIG_FILES([test/speed-test.sh],
+                [chmod +x test/speed-test.sh])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 
