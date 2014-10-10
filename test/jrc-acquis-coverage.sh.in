@@ -27,7 +27,7 @@ coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
 if test $coverage -lt 95 ; then
     echo JRC acquis coverage should be more than 95, see:
-    fgrep '+?' < "jrc-fi.anals" | sort | uniq -c | sort -nr
+    fgrep '+?' < "jrc-fi.anals" | sort | uniq -c | sort -nr | head 
     exit 1
 fi
 
