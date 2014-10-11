@@ -23,8 +23,8 @@ tokens=$(wc -l < gutenberg-fi.tokens)
 misses=$(fgrep -c '+?' < gutenberg-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
-if test $coverage -lt 95 ; then
-    echo Gutenberg coverage should be more than 95, see:
+if test $coverage -lt 96 ; then
+    echo Gutenberg coverage should be more than 96, see:
     fgrep '+?' < "gutenberg-fi.anals" | sort | uniq -c | sort -nr | head 
     exit 1
 fi
