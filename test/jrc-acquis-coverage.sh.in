@@ -1,5 +1,5 @@
 #!/bin/bash
-# coverage for fiwiki-latest
+# coverage for jrc acquis
 fsa="@top_builddir@/src/morphology.@TAG_FORMAT@.hfst"
 if ! test -r @top_builddir@/src/morphology.@TAG_FORMAT@.hfst ; then
     echo Unable to find built fsa for tests: $fsa
@@ -25,9 +25,9 @@ tokens=$(wc -l < jrc-fi.tokens)
 misses=$(fgrep -c '+?' < jrc-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
-if test $coverage -lt 95 ; then
-    echo JRC acquis coverage should be more than 95, see:
-    fgrep '+?' < "jrc-fi.anals" | sort | uniq -c | sort -nr
+if test $coverage -lt 93 ; then
+    echo JRC acquis coverage should be more than 93, see:
+    fgrep '+?' < "jrc-fi.anals" | sort | uniq -c | sort -nr | head 
     exit 1
 fi
 

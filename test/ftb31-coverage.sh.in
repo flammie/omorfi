@@ -19,7 +19,7 @@ tokens=$(wc -l < ftb3.1.conllx)
 misses=$(fgrep -c '+?' < ftb3.1.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
-if test $coverage -lt 95 ; then
+if test $coverage -lt 97 ; then
     echo ftb3.1 coverage should be more than 95, see:
     fgrep '+?' < ftb3.1.anals | sort | uniq -c | sort -nr | head
     exit 1
