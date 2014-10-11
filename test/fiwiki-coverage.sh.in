@@ -25,8 +25,8 @@ tokens=$(wc -l < fiwiki-latest-pages-articles.tokens)
 misses=$(fgrep -c '+?' < fiwiki-latest-pages-articles.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
-if test $coverage -lt 95 ; then
-    echo fiwiki coverage should be more than 95, see:
+if test $coverage -lt 90 ; then
+    echo fiwiki coverage should be more than 90, see:
     fgrep '+?' < fiwiki-latest-pages-articles.anals | sort | uniq -c | sort -nr  | head
     exit 1
 fi
