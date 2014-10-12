@@ -45,4 +45,8 @@
 | t | u | v | w | x | y | z | å | ä | ö ]* -> 0 ||
 [% N | % Num ]+ [? - %#]* _ [? - %#]*  
 .o.
-[ % Nom % Sg] -> 0 || % Punct _ ;
+# Puncts are like that
+[ % Nom % Sg] -> 0 || % Punct _
+.o.
+# 
+% Punct (->) % Abbr % Nom % Sg || _ ;
