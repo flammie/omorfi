@@ -38,6 +38,7 @@ def main():
     deduct_advposman = 0
     deduct_oliprt = 0
     deduct_abbr_prop = 0
+    deduct_unkwn = 0
     # known bugs by statistic to deduct
     deduct_lemma = 0
     deduct_anal = 0
@@ -115,6 +116,10 @@ def main():
                 else:
                     print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
                         file=options.outfile)
+            elif 'Unkwn' in ftbanals:
+                deduct_unkwn += 1
+                deduct_lemma += 1
+                print_in = False
             else:
                 print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
                     file=options.outfile)
@@ -144,8 +149,9 @@ def main():
             "\nAdv Pos Man:", deduct_advposman,
             "\noli V Prt Act:", deduct_oliprt,
             "\nAbbr Prop:", deduct_abbr_prop,
+            "\nUnkwn:", deduct_unkwn,
             file=options.statfile)
-    lines = lines - deduct_forgn - deduct_advposman - deduct_oliprt - deduct_abbr_prop
+    lines = lines - deduct_forgn - deduct_advposman - deduct_oliprt - deduct_abbr_prop - deduct_unkwn
     no_results -= deduct_results
     no_matches -= deduct_matches
     lemma_matches -= deduct_lemma
