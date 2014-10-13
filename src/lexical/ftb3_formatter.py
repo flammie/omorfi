@@ -87,10 +87,10 @@ ftb3_multichars= {
         '% Inf5',
         '% PrsPrc',
         '% PrsPrc% Act',
-        '% PrsPrc% Pss',
+        '% PrsPrc% Pass',
         '% PrfPrc',
         '% PrfPrc% Act',
-        '% PrfPrc% Pss',
+        '% PrfPrc% Pass',
         '% AgPrc',
         '% NegPrc',
         '% Pos',
@@ -271,14 +271,6 @@ def format_analysis_lexc_ftb3(anals):
         anals = 'Vact|Tpres|Ncon'
     elif anals == 'Vpss|Tpres|Ppe4|Ncon':
         anals = 'Vpss|Tpres|Ncon'
-    elif 'Dnut' in anals:
-        anals = anals.replace('Dnut', 'Cnut')
-    elif 'Dtu' in anals:
-        anals = anals.replace('Dtu', 'Cnut')
-    elif  'Dva' in anals:
-        anals = anals.replace('Dva', 'Cva')
-    elif 'Dtava' in anals:
-        anals = anals.replace('Dtava', 'Cva')
     elif 'Dmaton' in anals:
         anals = anals.replace('Dmaton', 'Cmaton')
     elif 'Dma' in anals:
