@@ -26,7 +26,7 @@
 % V -> 0 || _ ?* %#  ]
 .o.
 # Remove V before Prc
-[ % V -> 0 || _ [ % PrsPrc | % PrfPrc | % NegPrc | % AgPrc ] ] 
+[ % V -> 0 || _ [ % PrsPrc | % PrfPrc | % NegPrc | % AgPrc | % PrsPrc% Act | % PrfPrc% Act | % PrsPrc% Pass | % PrfPrc% Pass ] ] 
 .o.
 # Pr? Po? Let the context decide!
 [ % Po (->) % Pr ]
