@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20141014], [https://code.google.com/p/omorfi/issues/list], [http://code.google.com/p/omorfi/])
+AC_INIT([omorfi], [20151331], [https://code.google.com/p/omorfi/issues/list], [http://code.google.com/p/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20141014
+VERSION=20151331
 
 # Options
 AC_ARG_WITH([hfst],
@@ -248,12 +248,8 @@ AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 # Checks for library functions
 
 AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
-                 src/morphology/Makefile src/lexical/Makefile 
-                 src/hyphenation/Makefile src/orthography/Makefile
-                 src/phonology/Makefile src/spell-checking/Makefile
-                 src/probabilistics/Makefile src/taghacks/Makefile
                  doc/Makefile test/Makefile test/test-header.yaml
-                 src/scripts/Makefile omorfi.pc man/Makefile])
+                 omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/scripts/omorfi-analyse.sh],
                 [chmod +x src/scripts/omorfi-analyse.sh])
 AC_CONFIG_FILES([src/scripts/omorfi-generate.sh],
