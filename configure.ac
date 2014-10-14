@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi],[20141332],[flammie@iki.fi], [http://code.google.com/p/omorfi/])
+AC_INIT([omorfi], [20141014], [https://code.google.com/p/omorfi/issues/list], [http://code.google.com/p/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
-AM_INIT_AUTOMAKE([1.11 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
+AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20141332
+VERSION=20141014
 
 # Options
 AC_ARG_WITH([hfst],
@@ -213,6 +213,8 @@ AS_IF([test "x$enable_voikko" = "xyes"],
       [AC_PATH_PROG([ZIP], [zip], [false])
        AS_IF([test "x$ZIP" = "xfalse"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
+AC_PATH_PROG([THEREARENOEASTEREGGS], [cowsay], [echo])
+
 # require python for stuff
 AM_PATH_PYTHON([3.2],, [:])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
@@ -294,3 +296,4 @@ Configured $PACKAGE_STRING:
     * Tag format: $tag_format
 EOF
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
+$THEREARENOEASTEREGGS say make, make check and make install to proceed

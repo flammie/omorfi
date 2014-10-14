@@ -1,12 +1,25 @@
-======
- NEWS
-======
+# NEWS
 
-This file lists noteworthy changes between releases, for full list of changes, 
-see git log and then ``ChangeLog.old``.
+This file lists noteworthy changes between releases, for full list of changes,
+see git log and then `ChangeLog.old`.
 
-Significant changes in 20130829
--------------------------------
+## Significant changes in 201410XX
+
+* The regressions are also set on coverage over popular corpora:
+  Europarl (98 %), FTB 3.1 (97 %), gutenberg (96 %), JRC Acquis (93 %) and
+  fiwiki (90 %)
+* sti derivation tentatively added
+* number of new paradigms and paradigm moves, esp. in old and archaic styles
+* some new words manually added
+* apertium formats updated totally
+* interjection chaining
+* rest of hand-written lexc removed: everything in db and python code now
+* more strict building and testing altogether (no more dangling references or
+  missing tags allowed)
+* morphological segmentation should be usable now
+* lots of other classifications and attributes added
+
+## Significant changes in 20130829
 
 * Default tag format is now FTB3.1. Recall is 90 % and the format is stable and
   easy to read by humans, which is now the main target for computational
@@ -25,8 +38,7 @@ Significant changes in 20130829
 * Lots of new word-forms, inflections and changes to derivations
 * Some python support scripts for omor formats
 
-Significant changes in 20121226
--------------------------------
+## Significant changes in 20121226
 
 * Added fi.wiktionary.org as lexical source (much thanks to students of my unix
   tools course for scripting)
@@ -35,18 +47,15 @@ Significant changes in 20121226
     * requiring python3
 * Minor bug fixes to man pages, special boundaries (e.g. in arkki_tehti)
 
-Significant changes in 20120401
--------------------------------
+## Significant changes in 20120401
 
 * Fixed some twol rules w.r.t. new features that blocked compiling
-* Removed lots of dead code
 * Autogenerate lexicons from csv data all the time
 * Moved to git and googlecode -> chopped most of the documentation and such
 * Fixed scripts a bit, added man pages
 * Made very crude tests to have at least something back in.
 
-Significant changes in 20110505
--------------------------------
+## Significant changes in 20110505
 
 * whole new finntreebank tagset for forthcoming finntreebank work
 * uppercasing is noted in the analysis level
@@ -60,8 +69,7 @@ Significant changes in 20110505
   analyses
 
 
-Significant changes since 20100401
-----------------------------------
+## Significant changes since 20100401
 
 * Include deverbal nouns in compounding system
 
@@ -83,8 +91,7 @@ Significant changes since 20100401
 
 * Demote SUFFIX from POS reading to SUBCAT
 
-Significant changes since 20100111
-----------------------------------
+## Significant changes since 20100111
 
 * Added marginal enclitics kA, kAs
 
@@ -94,8 +101,7 @@ Significant changes since 20100111
 
 * Added tagging schemes, weighting schemes and suggestion algorithms
 
-Significant changes since 0.5
------------------------------
+## Significant changes since 0.5
 
 * completely new morphology built on traditional lexc-twolc model
 
@@ -121,4 +127,4 @@ Significant changes since 0.5
 
 * towards full-scale automatic test suite
 
-.. vim: set ft=rst:
+<!-- set ft=markdown: -->

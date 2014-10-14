@@ -2,16 +2,11 @@
  TODO: Known bugs and future development
 =========================================
 
-* style classification of dialectal, nonstandard etc. forms (e.g. in
-  kotus-sanalista)
-
-* Adjectives should rarely take possessives
+See wiki page ToDo for up-to-date list.
 
 * Nouns should rarely compare
 
 * Thorough derivational system
-
-* Lots and lots of proper nouns
 
 * Test suites, *test suites*, testing, *testing*, **testing**
 
@@ -21,11 +16,7 @@
 
 * Foreign words may use either visual or pronunciation based harmony
 
-* The verb inflection stem patterns are too complex
-
 * Some verbs should have defective paradigms: *tuulla : ?tuulen*
-
-* some 28 class gradating bugs (jälsi, orsi)
 
 * Also implement morphology against joukahainen inflection classes and
   gradations

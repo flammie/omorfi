@@ -1,21 +1,21 @@
 #summary copy of README from the source tree
 = Omorfi–Open source Morphology for Finnish language =
 
-This package contains free and open source implementation of morphological analysis for Finnish language. It uses GPL licenced HFST tools as implementation of morphological description. This package is licenced under GNU GPL version 3, but not necessarily later. Licence can be found from `COPYING` file in root of the distribution package. Other licences are possible from authors named in the `AUTHORS`.
+This package contains free and open source morphological lexical database for the Finnish language. This package is licenced under GNU GPL version 3, but not necessarily later. Licence can be found from `COPYING` file in root of the distribution package. Other licences are possible from authors named in the `AUTHORS`.
 
-The dictionaries used in omorfi are [http://kaino.kotus.fi Nykysuomen sanalista] (LGPL),  [http://joukahainen.lokalisointi.org Joukahainen] (GPL) and [http://www.ling.helsinki.fi/research/finnwordnet FinnWordNet] (Princeton Wordnet licence / GPL; relicenced with kind permission from University of Helsinki). Some words have also been collected by omorfi developers and contributors and are GPLv3 like the rest of the package.
+The dictionaries used in omorfi are [http://kaino.kotus.fi Nykysuomen sanalista] (LGPL),  [http://joukahainen.lokalisointi.org Joukahainen] (GPL) and [http://www.ling.helsinki.fi/research/finnwordnet FinnWordNet] (Princeton Wordnet licence / GPL; relicenced with kind permission from University of Helsinki), and [http://fi.Wiktionary.org Wiktionary] (Creative Commons Attribution–ShareAlike). Some words have also been collected by omorfi developers and contributors and are GPLv3 like the rest of the package.
 
 == Downloading ==
 
-Omorfi can be fetched from [http://code.google.com/p/omorfi/ Google code service].
+Omorfi can be fetched from [http://code.google.com/p/omorfi/ Google code service]. You need to use the git source code repository since *Google has discontinued downloads*.
 
 == Dependencies ==
 
-Compilation of automata requires [http://hfst.sf.net HFST] tools or compatible installed:
+Compilation of the morphological analyser, generation, lemmatisation or spell-checking requires [http://hfst.sf.net HFST] tools or compatible installed:
 
-  *  hfst-3.0.2 or greater is required for omorfi versions >20121226
-    * hfst-3.4 or newer is highly recommended
-  * python-3 is needed to rebuild lexc lexicons from CSV data
+  * hfst-3.8 or greater is required for omorfi versions >2014
+  * python-3 is needed to handle TSV database data
+    * There's also simple python interface to the morphological analyser
 
 The final transducers can be used with HFST tools or HFST runtime tools. The spell-checking automata package can be used with any common spell-checking interface through voikko spell-checking library.
 
@@ -25,7 +25,7 @@ Installation uses standard autotools system:
 {{{
   ./configure && make && make install
 }}}
-The compiling may take forever or more depending on the hardware and the settingsyou are using. The stable release versions should be compilable on average end-user systems.
+The compiling may take forever or more depending on the hardware and settings. The stable release versions should be compilable on average end-user systems.
 
 If configure cannot find HFST tools, you must tell it where to find them:
 {{{
@@ -67,11 +67,7 @@ Other automata, such as tokeniser, segmentation, hyphenation or whatever, may be
 
 == Note about character codings ==
 
-This implementation of morphology uses UTF-8 encoded Unicode, and all relevant tools typically only process UTF-8 encoded format. This may cause some problems. Firstly there are some characters which have less ambiguous Unicode variants than their ASCII versions, namely the `U+2019 RIGHT SINGLE QUOTATION MARK` and `U+2010 HYPHEN`. The analysis should work with both them and their legacy versions `0x27 APOSTROPHE` and `0x2D HYPHEN-MINUS`, but this variation may cause problems.
-
-Basic versions of omorfi do not support other, sub-standard variants of these characters, nor automatic case folding, but some relevant HFST tools may perform some automatic guessing.
-
-On some systems, characters with potential diacritics, such as ä and ö, may be encoded differently; the implemented version uses a form of unicode where diacritics are precomposed to characters, also known as unicode normal form C (NFC). Systems using decomposed form (NFD), such as certain tools of Mac OS X, may experience problems.
+This implementation of morphology uses UTF-8 encoded Unicode, and all relevant tools typically only process UTF-8 encoded format. On some systems, characters with potential diacritics, such as ä and ö, may be encoded differently; the implemented version uses a form of unicode where diacritics are precomposed to characters, also known as unicode normal form C (NFC). Systems using decomposed form (NFD), such as certain tools of Mac OS X, may experience problems.
 
 == Contributing ==
 
