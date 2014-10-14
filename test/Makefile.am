@@ -6,14 +6,13 @@ BIG_TESTS=europarl-coverage.sh gutenberg-coverage.sh jrc-acquis-coverage.sh \
 		  ftb31-coverage.sh fiwiki-coverage.sh \
 		  ftb-test.sh
 EXTRA_DIST=rough-tests.sh scripts-runnable.sh \
-		   wordforms.list ftb-test.py yaml-tests.sh \
+		   wordforms.list ftb-test.py \
 		   $(BIG_TESTS)
 
 if CAN_YAML_TEST
-yaml-tests.yaml: test-header.yaml $(top_builddir)/src/lexical/gtd-tests.yaml
-	cat test-header.yaml gtd-tests.yaml > $@
+#yaml-tests.yaml: test-header.yaml $(top_builddir)/src/lexical/gtd-tests.yaml
+#	cat test-header.yaml gtd-tests.yaml > $@
 
-TESTS+=yaml-tests.sh
 endif
 
 if WANT_BIG_TESTS

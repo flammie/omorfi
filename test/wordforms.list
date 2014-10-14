@@ -87,22 +87,6 @@ asti
 asuinpaikkansa
 asunnon
 auer
-aupakseenkinkohan
-aupassanikos
-aupattakaanko
-aupoittansakinko
-auppaammekinko
-auppaasikohan
-auppammepahan
-auppanikaan
-auppanikin
-auppansahan
-auppoinasi
-auppoinenikos
-auppojammepa
-auppojasiko
-auppojenikaanko
-auppojennekin
 auringon
 aurinko
 auteren
@@ -428,7 +412,6 @@ kaupaksemmekaan
 kaupaksemmekaanko
 kaupaksemmekin
 kaupaksemmekinko
-kaupaksemmekinkohan
 kaupaksemmeko
 kaupaksemmekohan
 kaupaksemmekos
@@ -441,7 +424,6 @@ kaupaksenikaan
 kaupaksenikaanko
 kaupaksenikin
 kaupaksenikinko
-kaupaksenikinkohan
 kaupakseniko
 kaupaksenikohan
 kaupaksenikos
@@ -454,7 +436,6 @@ kaupaksennekaan
 kaupaksennekaanko
 kaupaksennekin
 kaupaksennekinko
-kaupaksennekinkohan
 kaupaksenneko
 kaupaksennekohan
 kaupaksennekos
@@ -467,7 +448,6 @@ kaupaksensakaan
 kaupaksensakaanko
 kaupaksensakin
 kaupaksensakinko
-kaupaksensakinkohan
 kaupaksensako
 kaupaksensakohan
 kaupaksensakos
@@ -480,7 +460,6 @@ kaupaksesikaan
 kaupaksesikaanko
 kaupaksesikin
 kaupaksesikinko
-kaupaksesikinkohan
 kaupaksesiko
 kaupaksesikohan
 kaupaksesikos
@@ -493,7 +472,6 @@ kaupaksikaan
 kaupaksikaanko
 kaupaksikin
 kaupaksikinko
-kaupaksikinkohan
 kaupaksiko
 kaupaksikohan
 kaupaksikos
@@ -507,7 +485,6 @@ kaupallaankaan
 kaupallaankaanko
 kaupallaankin
 kaupallaankinko
-kaupallaankinkohan
 kaupallaanko
 kaupallaankohan
 kaupallaankos
@@ -519,7 +496,6 @@ kaupallakaan
 kaupallakaanko
 kaupallakin
 kaupallakinko
-kaupallakinkohan
 kaupallako
 kaupallakohan
 kaupallakos
@@ -529,7 +505,6 @@ kaupallammekaan
 kaupallammekaanko
 kaupallammekin
 kaupallammekinko
-kaupallammekinkohan
 kaupallammeko
 kaupallammekohan
 kaupallammekos
@@ -542,7 +517,6 @@ kaupallanikaan
 kaupallanikaanko
 kaupallanikin
 kaupallanikinko
-kaupallanikinkohan
 kaupallaniko
 kaupallanikohan
 kaupallanikos
@@ -555,7 +529,6 @@ kaupallannekaan
 kaupallannekaanko
 kaupallannekin
 kaupallannekinko
-kaupallannekinkohan
 kaupallanneko
 kaupallannekohan
 kaupallannekos
@@ -568,7 +541,6 @@ kaupallansakaan
 kaupallansakaanko
 kaupallansakin
 kaupallansakinko
-kaupallansakinkohan
 kaupallansako
 kaupallansakohan
 kaupallansakos
@@ -584,7 +556,6 @@ kaupallasikaan
 kaupallasikaanko
 kaupallasikin
 kaupallasikinko
-kaupallasikinkohan
 kaupallasiko
 kaupallasikohan
 kaupallasikos
@@ -598,7 +569,6 @@ kaupalleenkaan
 kaupalleenkaanko
 kaupalleenkin
 kaupalleenkinko
-kaupalleenkinkohan
 kaupalleenko
 kaupalleenkohan
 kaupalleenkos
@@ -610,7 +580,6 @@ kaupallekaan
 kaupallekaanko
 kaupallekin
 kaupallekinko
-kaupallekinkohan
 kaupalleko
 kaupallekohan
 kaupallekos
@@ -620,7 +589,6 @@ kaupallemmekaan
 kaupallemmekaanko
 kaupallemmekin
 kaupallemmekinko
-kaupallemmekinkohan
 kaupallemmeko
 kaupallemmekohan
 kaupallemmekos
@@ -633,7 +601,6 @@ kaupallenikaan
 kaupallenikaanko
 kaupallenikin
 kaupallenikinko
-kaupallenikinkohan
 kaupalleniko
 kaupallenikohan
 kaupallenikos
@@ -646,7 +613,6 @@ kaupallennekaan
 kaupallennekaanko
 kaupallennekin
 kaupallennekinko
-kaupallennekinkohan
 kaupallenneko
 kaupallennekohan
 kaupallennekos
@@ -659,7 +625,6 @@ kaupallensakaan
 kaupallensakaanko
 kaupallensakin
 kaupallensakinko
-kaupallensakinkohan
 kaupallensako
 kaupallensakohan
 kaupallensakos
@@ -675,7 +640,6 @@ kaupallesikaan
 kaupallesikaanko
 kaupallesikin
 kaupallesikinko
-kaupallesikinkohan
 kaupallesiko
 kaupallesikohan
 kaupallesikos
@@ -689,7 +653,6 @@ kaupaltaankaan
 kaupaltaankaanko
 kaupaltaankin
 kaupaltaankinko
-kaupaltaankinkohan
 kaupaltaanko
 kaupaltaankohan
 kaupaltaankos
@@ -701,7 +664,6 @@ kaupaltakaan
 kaupaltakaanko
 kaupaltakin
 kaupaltakinko
-kaupaltakinkohan
 kaupaltako
 kaupaltakohan
 kaupaltakos
@@ -711,7 +673,6 @@ kaupaltammekaan
 kaupaltammekaanko
 kaupaltammekin
 kaupaltammekinko
-kaupaltammekinkohan
 kaupaltammeko
 kaupaltammekohan
 kaupaltammekos
@@ -724,7 +685,6 @@ kaupaltanikaan
 kaupaltanikaanko
 kaupaltanikin
 kaupaltanikinko
-kaupaltanikinkohan
 kaupaltaniko
 kaupaltanikohan
 kaupaltanikos
@@ -737,7 +697,6 @@ kaupaltannekaan
 kaupaltannekaanko
 kaupaltannekin
 kaupaltannekinko
-kaupaltannekinkohan
 kaupaltanneko
 kaupaltannekohan
 kaupaltannekos
@@ -750,7 +709,6 @@ kaupaltansakaan
 kaupaltansakaanko
 kaupaltansakin
 kaupaltansakinko
-kaupaltansakinkohan
 kaupaltansako
 kaupaltansakohan
 kaupaltansakos
@@ -766,7 +724,6 @@ kaupaltasikaan
 kaupaltasikaanko
 kaupaltasikin
 kaupaltasikinko
-kaupaltasikinkohan
 kaupaltasiko
 kaupaltasikohan
 kaupaltasikos
@@ -779,7 +736,6 @@ kaupankaan
 kaupankaanko
 kaupankin
 kaupankinko
-kaupankinkohan
 kaupanko
 kaupankohan
 kaupankos
@@ -793,7 +749,6 @@ kaupassaankaan
 kaupassaankaanko
 kaupassaankin
 kaupassaankinko
-kaupassaankinkohan
 kaupassaanko
 kaupassaankohan
 kaupassaankos
@@ -805,7 +760,6 @@ kaupassakaan
 kaupassakaanko
 kaupassakin
 kaupassakinko
-kaupassakinkohan
 kaupassako
 kaupassakohan
 kaupassakos
@@ -815,7 +769,6 @@ kaupassammekaan
 kaupassammekaanko
 kaupassammekin
 kaupassammekinko
-kaupassammekinkohan
 kaupassammeko
 kaupassammekohan
 kaupassammekos
@@ -828,7 +781,6 @@ kaupassanikaan
 kaupassanikaanko
 kaupassanikin
 kaupassanikinko
-kaupassanikinkohan
 kaupassaniko
 kaupassanikohan
 kaupassanipa
@@ -840,7 +792,6 @@ kaupassannekaan
 kaupassannekaanko
 kaupassannekin
 kaupassannekinko
-kaupassannekinkohan
 kaupassanneko
 kaupassannekohan
 kaupassannekos
@@ -853,7 +804,6 @@ kaupassansakaan
 kaupassansakaanko
 kaupassansakin
 kaupassansakinko
-kaupassansakinkohan
 kaupassansako
 kaupassansakohan
 kaupassansakos
@@ -869,7 +819,6 @@ kaupassasikaan
 kaupassasikaanko
 kaupassasikin
 kaupassasikinko
-kaupassasikinkohan
 kaupassasiko
 kaupassasikohan
 kaupassasikos
@@ -883,7 +832,6 @@ kaupastaankaan
 kaupastaankaanko
 kaupastaankin
 kaupastaankinko
-kaupastaankinkohan
 kaupastaanko
 kaupastaankohan
 kaupastaankos
@@ -895,7 +843,6 @@ kaupastakaan
 kaupastakaanko
 kaupastakin
 kaupastakinko
-kaupastakinkohan
 kaupastako
 kaupastakohan
 kaupastakos
@@ -905,7 +852,6 @@ kaupastammekaan
 kaupastammekaanko
 kaupastammekin
 kaupastammekinko
-kaupastammekinkohan
 kaupastammeko
 kaupastammekohan
 kaupastammekos
@@ -918,7 +864,6 @@ kaupastanikaan
 kaupastanikaanko
 kaupastanikin
 kaupastanikinko
-kaupastanikinkohan
 kaupastaniko
 kaupastanikohan
 kaupastanikos
@@ -931,7 +876,6 @@ kaupastannekaan
 kaupastannekaanko
 kaupastannekin
 kaupastannekinko
-kaupastannekinkohan
 kaupastanneko
 kaupastannekohan
 kaupastannekos
@@ -944,7 +888,6 @@ kaupastansakaan
 kaupastansakaanko
 kaupastansakin
 kaupastansakinko
-kaupastansakinkohan
 kaupastansako
 kaupastansakohan
 kaupastansakos
@@ -960,7 +903,6 @@ kaupastasikaan
 kaupastasikaanko
 kaupastasikin
 kaupastasikinko
-kaupastasikinkohan
 kaupastasiko
 kaupastasikohan
 kaupastasikos
@@ -973,7 +915,6 @@ kaupatkaan
 kaupatkaanko
 kaupatkin
 kaupatkinko
-kaupatkinkohan
 kaupatko
 kaupatkohan
 kaupatkos
@@ -987,7 +928,6 @@ kaupattaankaan
 kaupattaankaanko
 kaupattaankin
 kaupattaankinko
-kaupattaankinkohan
 kaupattaanko
 kaupattaankohan
 kaupattaankos
@@ -998,7 +938,6 @@ kaupattahan
 kaupattakaan
 kaupattakin
 kaupattakinko
-kaupattakinkohan
 kaupattako
 kaupattakohan
 kaupattakos
@@ -1008,7 +947,6 @@ kaupattammekaan
 kaupattammekaanko
 kaupattammekin
 kaupattammekinko
-kaupattammekinkohan
 kaupattammeko
 kaupattammekohan
 kaupattammekos
@@ -1021,7 +959,6 @@ kaupattanikaan
 kaupattanikaanko
 kaupattanikin
 kaupattanikinko
-kaupattanikinkohan
 kaupattaniko
 kaupattanikohan
 kaupattanikos
@@ -1034,7 +971,6 @@ kaupattannekaan
 kaupattannekaanko
 kaupattannekin
 kaupattannekinko
-kaupattannekinkohan
 kaupattanneko
 kaupattannekohan
 kaupattannekos
@@ -1047,7 +983,6 @@ kaupattansakaan
 kaupattansakaanko
 kaupattansakin
 kaupattansakinko
-kaupattansakinkohan
 kaupattansako
 kaupattansakohan
 kaupattansakos
@@ -1063,7 +998,6 @@ kaupattasikaan
 kaupattasikaanko
 kaupattasikin
 kaupattasikinko
-kaupattasikinkohan
 kaupattasiko
 kaupattasikohan
 kaupattasikos
@@ -1076,7 +1010,6 @@ kaupoikseenkaan
 kaupoikseenkaanko
 kaupoikseenkin
 kaupoikseenkinko
-kaupoikseenkinkohan
 kaupoikseenko
 kaupoikseenkohan
 kaupoikseenkos
@@ -1089,7 +1022,6 @@ kaupoiksemmekaan
 kaupoiksemmekaanko
 kaupoiksemmekin
 kaupoiksemmekinko
-kaupoiksemmekinkohan
 kaupoiksemmeko
 kaupoiksemmekohan
 kaupoiksemmekos
@@ -1102,7 +1034,6 @@ kaupoiksenikaan
 kaupoiksenikaanko
 kaupoiksenikin
 kaupoiksenikinko
-kaupoiksenikinkohan
 kaupoikseniko
 kaupoiksenikohan
 kaupoiksenikos
@@ -1115,7 +1046,6 @@ kaupoiksennekaan
 kaupoiksennekaanko
 kaupoiksennekin
 kaupoiksennekinko
-kaupoiksennekinkohan
 kaupoiksenneko
 kaupoiksennekohan
 kaupoiksennekos
@@ -1128,7 +1058,6 @@ kaupoiksensakaan
 kaupoiksensakaanko
 kaupoiksensakin
 kaupoiksensakinko
-kaupoiksensakinkohan
 kaupoiksensako
 kaupoiksensakohan
 kaupoiksensakos
@@ -1141,7 +1070,6 @@ kaupoiksesikaan
 kaupoiksesikaanko
 kaupoiksesikin
 kaupoiksesikinko
-kaupoiksesikinkohan
 kaupoiksesiko
 kaupoiksesikohan
 kaupoiksesikos
@@ -1154,7 +1082,6 @@ kaupoiksikaan
 kaupoiksikaanko
 kaupoiksikin
 kaupoiksikinko
-kaupoiksikinkohan
 kaupoiksiko
 kaupoiksikohan
 kaupoiksikos
@@ -1168,7 +1095,6 @@ kaupoillaankaan
 kaupoillaankaanko
 kaupoillaankin
 kaupoillaankinko
-kaupoillaankinkohan
 kaupoillaanko
 kaupoillaankohan
 kaupoillaankos
@@ -1180,7 +1106,6 @@ kaupoillakaan
 kaupoillakaanko
 kaupoillakin
 kaupoillakinko
-kaupoillakinkohan
 kaupoillako
 kaupoillakohan
 kaupoillakos
@@ -1190,7 +1115,6 @@ kaupoillammekaan
 kaupoillammekaanko
 kaupoillammekin
 kaupoillammekinko
-kaupoillammekinkohan
 kaupoillammeko
 kaupoillammekohan
 kaupoillammekos
@@ -1203,7 +1127,6 @@ kaupoillanikaan
 kaupoillanikaanko
 kaupoillanikin
 kaupoillanikinko
-kaupoillanikinkohan
 kaupoillaniko
 kaupoillanikohan
 kaupoillanikos
@@ -1216,7 +1139,6 @@ kaupoillannekaan
 kaupoillannekaanko
 kaupoillannekin
 kaupoillannekinko
-kaupoillannekinkohan
 kaupoillanneko
 kaupoillannekohan
 kaupoillannekos
@@ -1229,7 +1151,6 @@ kaupoillansakaan
 kaupoillansakaanko
 kaupoillansakin
 kaupoillansakinko
-kaupoillansakinkohan
 kaupoillansako
 kaupoillansakohan
 kaupoillansakos
@@ -1245,7 +1166,6 @@ kaupoillasikaan
 kaupoillasikaanko
 kaupoillasikin
 kaupoillasikinko
-kaupoillasikinkohan
 kaupoillasiko
 kaupoillasikohan
 kaupoillasikos
@@ -1259,7 +1179,6 @@ kaupoilleenkaan
 kaupoilleenkaanko
 kaupoilleenkin
 kaupoilleenkinko
-kaupoilleenkinkohan
 kaupoilleenko
 kaupoilleenkohan
 kaupoilleenkos
@@ -1271,7 +1190,6 @@ kaupoillekaan
 kaupoillekaanko
 kaupoillekin
 kaupoillekinko
-kaupoillekinkohan
 kaupoilleko
 kaupoillekohan
 kaupoillekos
@@ -1281,7 +1199,6 @@ kaupoillemmekaan
 kaupoillemmekaanko
 kaupoillemmekin
 kaupoillemmekinko
-kaupoillemmekinkohan
 kaupoillemmeko
 kaupoillemmekohan
 kaupoillemmekos
@@ -1294,7 +1211,6 @@ kaupoillenikaan
 kaupoillenikaanko
 kaupoillenikin
 kaupoillenikinko
-kaupoillenikinkohan
 kaupoilleniko
 kaupoillenikohan
 kaupoillenikos
@@ -1307,7 +1223,6 @@ kaupoillennekaan
 kaupoillennekaanko
 kaupoillennekin
 kaupoillennekinko
-kaupoillennekinkohan
 kaupoillenneko
 kaupoillennekohan
 kaupoillennekos
@@ -1320,7 +1235,6 @@ kaupoillensakaan
 kaupoillensakaanko
 kaupoillensakin
 kaupoillensakinko
-kaupoillensakinkohan
 kaupoillensako
 kaupoillensakohan
 kaupoillensakos
@@ -1336,7 +1250,6 @@ kaupoillesikaan
 kaupoillesikaanko
 kaupoillesikin
 kaupoillesikinko
-kaupoillesikinkohan
 kaupoillesiko
 kaupoillesikohan
 kaupoillesikos
@@ -1350,7 +1263,6 @@ kaupoiltaankaan
 kaupoiltaankaanko
 kaupoiltaankin
 kaupoiltaankinko
-kaupoiltaankinkohan
 kaupoiltaanko
 kaupoiltaankohan
 kaupoiltaankos
@@ -1362,7 +1274,6 @@ kaupoiltakaan
 kaupoiltakaanko
 kaupoiltakin
 kaupoiltakinko
-kaupoiltakinkohan
 kaupoiltako
 kaupoiltakohan
 kaupoiltakos
@@ -1372,7 +1283,6 @@ kaupoiltammekaan
 kaupoiltammekaanko
 kaupoiltammekin
 kaupoiltammekinko
-kaupoiltammekinkohan
 kaupoiltammeko
 kaupoiltammekohan
 kaupoiltammekos
@@ -1385,7 +1295,6 @@ kaupoiltanikaan
 kaupoiltanikaanko
 kaupoiltanikin
 kaupoiltanikinko
-kaupoiltanikinkohan
 kaupoiltaniko
 kaupoiltanikohan
 kaupoiltanikos
@@ -1398,7 +1307,6 @@ kaupoiltannekaan
 kaupoiltannekaanko
 kaupoiltannekin
 kaupoiltannekinko
-kaupoiltannekinkohan
 kaupoiltanneko
 kaupoiltannekohan
 kaupoiltannekos
@@ -1411,7 +1319,6 @@ kaupoiltansakaan
 kaupoiltansakaanko
 kaupoiltansakin
 kaupoiltansakinko
-kaupoiltansakinkohan
 kaupoiltansako
 kaupoiltansakohan
 kaupoiltansakos
@@ -1427,7 +1334,6 @@ kaupoiltasikaan
 kaupoiltasikaanko
 kaupoiltasikin
 kaupoiltasikinko
-kaupoiltasikinkohan
 kaupoiltasiko
 kaupoiltasikohan
 kaupoiltasikos
@@ -1441,7 +1347,6 @@ kaupoissaankaan
 kaupoissaankaanko
 kaupoissaankin
 kaupoissaankinko
-kaupoissaankinkohan
 kaupoissaanko
 kaupoissaankohan
 kaupoissaankos
@@ -1453,7 +1358,6 @@ kaupoissakaan
 kaupoissakaanko
 kaupoissakin
 kaupoissakinko
-kaupoissakinkohan
 kaupoissako
 kaupoissakohan
 kaupoissakos
@@ -1463,7 +1367,6 @@ kaupoissammekaan
 kaupoissammekaanko
 kaupoissammekin
 kaupoissammekinko
-kaupoissammekinkohan
 kaupoissammeko
 kaupoissammekohan
 kaupoissammekos
@@ -1476,7 +1379,6 @@ kaupoissanikaan
 kaupoissanikaanko
 kaupoissanikin
 kaupoissanikinko
-kaupoissanikinkohan
 kaupoissaniko
 kaupoissanikohan
 kaupoissanikos
@@ -1489,7 +1391,6 @@ kaupoissannekaan
 kaupoissannekaanko
 kaupoissannekin
 kaupoissannekinko
-kaupoissannekinkohan
 kaupoissanneko
 kaupoissannekohan
 kaupoissannekos
@@ -1502,7 +1403,6 @@ kaupoissansakaan
 kaupoissansakaanko
 kaupoissansakin
 kaupoissansakinko
-kaupoissansakinkohan
 kaupoissansako
 kaupoissansakohan
 kaupoissansakos
@@ -1518,7 +1418,6 @@ kaupoissasikaan
 kaupoissasikaanko
 kaupoissasikin
 kaupoissasikinko
-kaupoissasikinkohan
 kaupoissasiko
 kaupoissasikohan
 kaupoissasikos
@@ -1532,7 +1431,6 @@ kaupoistaankaan
 kaupoistaankaanko
 kaupoistaankin
 kaupoistaankinko
-kaupoistaankinkohan
 kaupoistaanko
 kaupoistaankohan
 kaupoistaankos
@@ -1544,7 +1442,6 @@ kaupoistakaan
 kaupoistakaanko
 kaupoistakin
 kaupoistakinko
-kaupoistakinkohan
 kaupoistako
 kaupoistakohan
 kaupoistakos
@@ -1554,7 +1451,6 @@ kaupoistammekaan
 kaupoistammekaanko
 kaupoistammekin
 kaupoistammekinko
-kaupoistammekinkohan
 kaupoistammeko
 kaupoistammekohan
 kaupoistammekos
@@ -1567,7 +1463,6 @@ kaupoistanikaan
 kaupoistanikaanko
 kaupoistanikin
 kaupoistanikinko
-kaupoistanikinkohan
 kaupoistaniko
 kaupoistanikohan
 kaupoistanikos
@@ -1580,7 +1475,6 @@ kaupoistannekaan
 kaupoistannekaanko
 kaupoistannekin
 kaupoistannekinko
-kaupoistannekinkohan
 kaupoistanneko
 kaupoistannekohan
 kaupoistannekos
@@ -1593,7 +1487,6 @@ kaupoistansakaan
 kaupoistansakaanko
 kaupoistansakin
 kaupoistansakinko
-kaupoistansakinkohan
 kaupoistansako
 kaupoistansakohan
 kaupoistansakos
@@ -1609,7 +1502,6 @@ kaupoistasikaan
 kaupoistasikaanko
 kaupoistasikin
 kaupoistasikinko
-kaupoistasikinkohan
 kaupoistasiko
 kaupoistasikohan
 kaupoistasikos
@@ -1623,7 +1515,6 @@ kaupoittaankaan
 kaupoittaankaanko
 kaupoittaankin
 kaupoittaankinko
-kaupoittaankinkohan
 kaupoittaanko
 kaupoittaankohan
 kaupoittaankos
@@ -1635,7 +1526,6 @@ kaupoittakaan
 kaupoittakaanko
 kaupoittakin
 kaupoittakinko
-kaupoittakinkohan
 kaupoittako
 kaupoittakohan
 kaupoittakos
@@ -1645,7 +1535,6 @@ kaupoittammekaan
 kaupoittammekaanko
 kaupoittammekin
 kaupoittammekinko
-kaupoittammekinkohan
 kaupoittammeko
 kaupoittammekohan
 kaupoittammekos
@@ -1658,7 +1547,6 @@ kaupoittanikaan
 kaupoittanikaanko
 kaupoittanikin
 kaupoittanikinko
-kaupoittanikinkohan
 kaupoittaniko
 kaupoittanikohan
 kaupoittanikos
@@ -1671,7 +1559,6 @@ kaupoittannekaan
 kaupoittannekaanko
 kaupoittannekin
 kaupoittannekinko
-kaupoittannekinkohan
 kaupoittanneko
 kaupoittannekohan
 kaupoittannekos
@@ -1683,7 +1570,6 @@ kaupoittansahan
 kaupoittansakaan
 kaupoittansakaanko
 kaupoittansakin
-kaupoittansakinkohan
 kaupoittansako
 kaupoittansakohan
 kaupoittansakos
@@ -1699,7 +1585,6 @@ kaupoittasikaan
 kaupoittasikaanko
 kaupoittasikin
 kaupoittasikinko
-kaupoittasikinkohan
 kaupoittasiko
 kaupoittasikohan
 kaupoittasikos
@@ -1713,7 +1598,6 @@ kauppaakaan
 kauppaakaanko
 kauppaakin
 kauppaakinko
-kauppaakinkohan
 kauppaako
 kauppaakohan
 kauppaakos
@@ -1723,7 +1607,6 @@ kauppaammekaan
 kauppaammekaanko
 kauppaammekin
 kauppaammekinko
-kauppaammekinkohan
 kauppaammeko
 kauppaammekohan
 kauppaammekos
@@ -1738,7 +1621,6 @@ kauppaanikaan
 kauppaanikaanko
 kauppaanikin
 kauppaanikinko
-kauppaanikinkohan
 kauppaaniko
 kauppaanikohan
 kauppaanikos
@@ -1749,7 +1631,6 @@ kauppaankaan
 kauppaankaanko
 kauppaankin
 kauppaankinko
-kauppaankinkohan
 kauppaanko
 kauppaankohan
 kauppaankos
@@ -1759,7 +1640,6 @@ kauppaannekaan
 kauppaannekaanko
 kauppaannekin
 kauppaannekinko
-kauppaannekinkohan
 kauppaanneko
 kauppaannekohan
 kauppaannekos
@@ -1775,7 +1655,6 @@ kauppaansakaan
 kauppaansakaanko
 kauppaansakin
 kauppaansakinko
-kauppaansakinkohan
 kauppaansako
 kauppaansakohan
 kauppaansakos
@@ -1791,7 +1670,6 @@ kauppaasikaan
 kauppaasikaanko
 kauppaasikin
 kauppaasikinko
-kauppaasikinkohan
 kauppaasiko
 kauppaasikohan
 kauppaasikos
@@ -1799,13 +1677,10 @@ kauppaasipa
 kauppaasipahan
 kauppaasipas
 kauppahan
-kauppaineenpa
-kauppaineniko
 kauppakaan
 kauppakaanko
 kauppakin
 kauppakinko
-kauppakinkohan
 kauppako
 kauppakohan
 kauppakos
@@ -1815,7 +1690,6 @@ kauppammekaan
 kauppammekaanko
 kauppammekin
 kauppammekinko
-kauppammekinkohan
 kauppammeko
 kauppammekohan
 kauppammekos
@@ -1829,7 +1703,6 @@ kauppanaankaan
 kauppanaankaanko
 kauppanaankin
 kauppanaankinko
-kauppanaankinkohan
 kauppanaanko
 kauppanaankohan
 kauppanaankos
@@ -1841,7 +1714,6 @@ kauppanakaan
 kauppanakaanko
 kauppanakin
 kauppanakinko
-kauppanakinkohan
 kauppanako
 kauppanakohan
 kauppanakos
@@ -1851,7 +1723,6 @@ kauppanammekaan
 kauppanammekaanko
 kauppanammekin
 kauppanammekinko
-kauppanammekinkohan
 kauppanammeko
 kauppanammekohan
 kauppanammekos
@@ -1864,7 +1735,6 @@ kauppananikaan
 kauppananikaanko
 kauppananikin
 kauppananikinko
-kauppananikinkohan
 kauppananiko
 kauppananikohan
 kauppananikos
@@ -1877,7 +1747,6 @@ kauppanannekaan
 kauppanannekaanko
 kauppanannekin
 kauppanannekinko
-kauppanannekinkohan
 kauppananneko
 kauppanannekohan
 kauppanannekos
@@ -1890,7 +1759,6 @@ kauppanansakaan
 kauppanansakaanko
 kauppanansakin
 kauppanansakinko
-kauppanansakinkohan
 kauppanansako
 kauppanansakohan
 kauppanansakos
@@ -1906,7 +1774,6 @@ kauppanasikaan
 kauppanasikaanko
 kauppanasikin
 kauppanasikinko
-kauppanasikinkohan
 kauppanasiko
 kauppanasikohan
 kauppanasikos
@@ -1919,7 +1786,6 @@ kauppanikaan
 kauppanikaanko
 kauppanikin
 kauppanikinko
-kauppanikinkohan
 kauppaniko
 kauppanikohan
 kauppanikos
@@ -1932,7 +1798,6 @@ kauppannekaan
 kauppannekaanko
 kauppannekin
 kauppannekinko
-kauppannekinkohan
 kauppanneko
 kauppannekohan
 kauppannekos
@@ -1945,7 +1810,6 @@ kauppansakaan
 kauppansakaanko
 kauppansakin
 kauppansakinko
-kauppansakinkohan
 kauppansako
 kauppansakohan
 kauppansakos
@@ -1961,7 +1825,6 @@ kauppasikaan
 kauppasikaanko
 kauppasikin
 kauppasikinko
-kauppasikinkohan
 kauppasiko
 kauppasikohan
 kauppasikos
@@ -1974,7 +1837,6 @@ kauppoihimmekaan
 kauppoihimmekaanko
 kauppoihimmekin
 kauppoihimmekinko
-kauppoihimmekinkohan
 kauppoihimmeko
 kauppoihimmekohan
 kauppoihimmekos
@@ -1989,7 +1851,6 @@ kauppoihinikaan
 kauppoihinikaanko
 kauppoihinikin
 kauppoihinikinko
-kauppoihinikinkohan
 kauppoihiniko
 kauppoihinikohan
 kauppoihinikos
@@ -2000,7 +1861,6 @@ kauppoihinkaan
 kauppoihinkaanko
 kauppoihinkin
 kauppoihinkinko
-kauppoihinkinkohan
 kauppoihinko
 kauppoihinkohan
 kauppoihinkos
@@ -2010,7 +1870,6 @@ kauppoihinnekaan
 kauppoihinnekaanko
 kauppoihinnekin
 kauppoihinnekinko
-kauppoihinnekinkohan
 kauppoihinneko
 kauppoihinnekohan
 kauppoihinnekos
@@ -2026,7 +1885,6 @@ kauppoihinsakaan
 kauppoihinsakaanko
 kauppoihinsakin
 kauppoihinsakinko
-kauppoihinsakinkohan
 kauppoihinsako
 kauppoihinsakohan
 kauppoihinsakos
@@ -2039,7 +1897,6 @@ kauppoihisikaan
 kauppoihisikaanko
 kauppoihisikin
 kauppoihisikinko
-kauppoihisikinkohan
 kauppoihisiko
 kauppoihisikohan
 kauppoihisikos
@@ -2053,7 +1910,6 @@ kauppoinaankaan
 kauppoinaankaanko
 kauppoinaankin
 kauppoinaankinko
-kauppoinaankinkohan
 kauppoinaanko
 kauppoinaankohan
 kauppoinaankos
@@ -2065,7 +1921,6 @@ kauppoinakaan
 kauppoinakaanko
 kauppoinakin
 kauppoinakinko
-kauppoinakinkohan
 kauppoinako
 kauppoinakohan
 kauppoinakos
@@ -2075,7 +1930,6 @@ kauppoinammekaan
 kauppoinammekaanko
 kauppoinammekin
 kauppoinammekinko
-kauppoinammekinkohan
 kauppoinammeko
 kauppoinammekohan
 kauppoinammekos
@@ -2088,7 +1942,6 @@ kauppoinanikaan
 kauppoinanikaanko
 kauppoinanikin
 kauppoinanikinko
-kauppoinanikinkohan
 kauppoinaniko
 kauppoinanikohan
 kauppoinanikos
@@ -2101,7 +1954,6 @@ kauppoinannekaan
 kauppoinannekaanko
 kauppoinannekin
 kauppoinannekinko
-kauppoinannekinkohan
 kauppoinanneko
 kauppoinannekohan
 kauppoinannekos
@@ -2114,7 +1966,6 @@ kauppoinansakaan
 kauppoinansakaanko
 kauppoinansakin
 kauppoinansakinko
-kauppoinansakinkohan
 kauppoinansako
 kauppoinansakohan
 kauppoinansakos
@@ -2129,7 +1980,6 @@ kauppoinasikaan
 kauppoinasikaanko
 kauppoinasikin
 kauppoinasikinko
-kauppoinasikinkohan
 kauppoinasiko
 kauppoinasikohan
 kauppoinasikos
@@ -2142,7 +1992,6 @@ kauppoineenkaan
 kauppoineenkaanko
 kauppoineenkin
 kauppoineenkinko
-kauppoineenkinkohan
 kauppoineenko
 kauppoineenkohan
 kauppoineenkos
@@ -2155,7 +2004,6 @@ kauppoinemmekaan
 kauppoinemmekaanko
 kauppoinemmekin
 kauppoinemmekinko
-kauppoinemmekinkohan
 kauppoinemmeko
 kauppoinemmekohan
 kauppoinemmekos
@@ -2168,7 +2016,6 @@ kauppoinenikaan
 kauppoinenikaanko
 kauppoinenikin
 kauppoinenikinko
-kauppoinenikinkohan
 kauppoineniko
 kauppoinenikohan
 kauppoinenikos
@@ -2181,7 +2028,6 @@ kauppoinennekaan
 kauppoinennekaanko
 kauppoinennekin
 kauppoinennekinko
-kauppoinennekinkohan
 kauppoinenneko
 kauppoinennekohan
 kauppoinennekos
@@ -2194,7 +2040,6 @@ kauppoinensakaan
 kauppoinensakaanko
 kauppoinensakin
 kauppoinensakinko
-kauppoinensakinkohan
 kauppoinensako
 kauppoinensakohan
 kauppoinensakos
@@ -2207,7 +2052,6 @@ kauppoinesikaan
 kauppoinesikaanko
 kauppoinesikin
 kauppoinesikinko
-kauppoinesikinkohan
 kauppoinesiko
 kauppoinesikohan
 kauppoinesikos
@@ -2221,7 +2065,6 @@ kauppojaankaan
 kauppojaankaanko
 kauppojaankin
 kauppojaankinko
-kauppojaankinkohan
 kauppojaanko
 kauppojaankohan
 kauppojaankos
@@ -2233,7 +2076,6 @@ kauppojakaan
 kauppojakaanko
 kauppojakin
 kauppojakinko
-kauppojakinkohan
 kauppojako
 kauppojakohan
 kauppojakos
@@ -2243,7 +2085,6 @@ kauppojammekaan
 kauppojammekaanko
 kauppojammekin
 kauppojammekinko
-kauppojammekinkohan
 kauppojammeko
 kauppojammekohan
 kauppojammekos
@@ -2255,7 +2096,6 @@ kauppojanikaan
 kauppojanikaanko
 kauppojanikin
 kauppojanikinko
-kauppojanikinkohan
 kauppojaniko
 kauppojanikohan
 kauppojanikos
@@ -2268,7 +2108,6 @@ kauppojannekaan
 kauppojannekaanko
 kauppojannekin
 kauppojannekinko
-kauppojannekinkohan
 kauppojanneko
 kauppojannekohan
 kauppojannekos
@@ -2281,7 +2120,6 @@ kauppojansakaan
 kauppojansakaanko
 kauppojansakin
 kauppojansakinko
-kauppojansakinkohan
 kauppojansako
 kauppojansakohan
 kauppojansakos
@@ -2297,7 +2135,6 @@ kauppojasikaan
 kauppojasikaanko
 kauppojasikin
 kauppojasikinko
-kauppojasikinkohan
 kauppojasikohan
 kauppojasikos
 kauppojasipa
@@ -2309,7 +2146,6 @@ kauppojemmekaan
 kauppojemmekaanko
 kauppojemmekin
 kauppojemmekinko
-kauppojemmekinkohan
 kauppojemmeko
 kauppojemmekohan
 kauppojemmekos
@@ -2323,7 +2159,6 @@ kauppojenihan
 kauppojenikaan
 kauppojenikin
 kauppojenikinko
-kauppojenikinkohan
 kauppojeniko
 kauppojenikohan
 kauppojenikos
@@ -2334,7 +2169,6 @@ kauppojenkaan
 kauppojenkaanko
 kauppojenkin
 kauppojenkinko
-kauppojenkinkohan
 kauppojenko
 kauppojenkohan
 kauppojenkos
@@ -2343,7 +2177,6 @@ kauppojennehan
 kauppojennekaan
 kauppojennekaanko
 kauppojennekinko
-kauppojennekinkohan
 kauppojenneko
 kauppojennekohan
 kauppojennekos
@@ -2359,7 +2192,6 @@ kauppojensakaan
 kauppojensakaanko
 kauppojensakin
 kauppojensakinko
-kauppojensakinkohan
 kauppojensako
 kauppojensakohan
 kauppojensakos
@@ -2372,7 +2204,6 @@ kauppojesikaan
 kauppojesikaanko
 kauppojesikin
 kauppojesikinko
-kauppojesikinkohan
 kauppojesiko
 kauppojesikohan
 kauppojesikos
