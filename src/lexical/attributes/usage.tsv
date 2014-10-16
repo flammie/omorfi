@@ -26,6 +26,7 @@ jokseen	['PCLE_VAAN']	style=nonstandard
 jompi	['PRON_KUMPI']	style=nonstandard
 jos/kun	['PCLE_VAAN']	style=nonstandard
 jäde	['N_NISSE']	style=dialectal
+katos	['PCLE_VAAN']	style=dialectal
 kauvan	['PCLE_NOPEASTI']	style=nonstandard
 kehoittaa	['V_VIEROITTAA']	style=nonstandard
 kentiesi	['PCLE_VAAN']	style=archaic
