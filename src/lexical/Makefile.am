@@ -24,34 +24,40 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 			continuations/verb-inflections.tsv
 JOINS=attributes/boundaries.tsv \
 	  attributes/origin.tsv \
-	  attributes/plurale-tantum.tsv attributes/possessives.tsv \
-	  attributes/pronunciation.tsv attributes/proper-classes.tsv \
-	  attributes/particle-classes.tsv attributes/pronoun-classes.tsv \
+	  attributes/plurale-tantum.tsv \
+	  attributes/possessives.tsv \
+	  attributes/pronunciation.tsv \
+	  attributes/proper-classes.tsv \
+	  attributes/paradigm-data.tsv \
+	  attributes/particle-classes.tsv \
+	  attributes/pronoun-classes.tsv \
 	  attributes/symbol-classes.tsv \
 	  attributes/semantic.tsv \
 	  attributes/subcategories.tsv \
 	  attributes/usage.tsv \
 	  attributes/verb-arguments.tsv
-SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py
+SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py tsv2monodix.py \
+		tsv2kotussanalista.py tsv2yaml.py \
+		serialise-reweighter.py
 FINNISC=\
 		format_output.py \
 		gradation.py \
-		lexc_string_utils.py \
 		parse_csv_data.py \
 		plurale_tantum.py \
 		stub.py \
 		guess_feats.py guess_new_class.py wordmap.py \
 		omor_strings_io.py \
-		apertium_formatter.py
+		apertium_formatter.py \
+		ftb3_formatter.py
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) $(STEMPARTS) $(INFLECTIONS)
 TESTS=format_output.py apertium_formatter.py
 
 noinst_DATA=omorfi-$(TAG_FORMAT).lexc omorfi.dix omorfi-sanalista.xml \
-			omorfi-$(TAG_FORMAT).reweight gtd-tests-$(TAG_FORMAT).yaml
+			omorfi-$(TAG_FORMAT).reweight #gtd-tests-$(TAG_FORMAT).yaml
 
 if CAN_PYTHON
-gtd-tests-$(TAG_FORMAT).yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=$(TAG_FORMAT) -v
+#gtd-tests-$(TAG_FORMAT).yaml: $(top_srcdir)/test/gtd-tests.tsv
+#	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=$(TAG_FORMAT) -v
 
 omorfi-$(TAG_FORMAT).reweight: serialise-reweighter.py format_output.py
 	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=$(TAG_FORMAT_PRECISE)\

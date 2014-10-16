@@ -30,7 +30,7 @@ split -n l/100 $srcdir/ftb3.1.conllx ftb3.1.parts.
 fail=0
 for f in ftb3.1.parts.* ; do
     echo ${f}...
-    if $PYTHON $srcdir/ftb-test.py -f ../src/morphology.ftb3.hfst -i $f -o ${f/parts/logs} ; then
+    if ! $PYTHON $srcdir/ftb-test.py -f ../src/morphology.ftb3.hfst -i $f -o ${f/parts/logs} ; then
         echo $f failed
         fail=1
     fi

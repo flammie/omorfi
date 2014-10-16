@@ -36,7 +36,6 @@ hfstfidata_DATA=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
 				$(MAYBE_HYPHENATION)
 
 EXTRA_DIST=\
-		lemmatize.relabel \
 		voikko-fi_FI.pro index.xml
 
 # combine lexical data with phonology
