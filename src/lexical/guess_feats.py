@@ -106,7 +106,7 @@ def guess_harmony(wordmap):
                     wordmap, file=stderr)
     elif wordmap['pronunciation']:
         lastbound = -1
-        for bound in ['|', '_', '#', ' ', '-']:
+        for bound in ['{WB}', '{XB}', '_', '#', ' ', '-']:
             b = wordmap['pronunciation'].rfind(bound)
             if b > lastbound:
                 lastbound = b

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf8 -*-
 """
-Converts Omorfi's attribute file data from old kotus-csv format to newpara-tsv.
+Converts Omorfi's lexeme & attribute file data from old kotus-csv format to newpara-tsv.
 New paradigms are simply guessed here; possible checks against existing
 lexical data should be done separately.
 """
@@ -127,7 +127,12 @@ def main():
         wordmap = expand_pos(wordmap)
         if plt_info:
             wordmap['plurale_tantum'] = plt_info['"'+'","'.join(fields[0:4])+'"']
-        
+        for i in range(4, len(fields)):
+            if fields[i].startswith('plt='):
+                wordmap['plurale_tantum'] = fields[i]
+            elif fields[i].startswith('boundaries='):
+                fields[i] = fields[i].replace('|', '{WB}')
+                wordmap['stub'] = wordmap['boundaries'] = fields[i]
         wordmap = guess_stem_features_ktn(wordmap)
         wordmap = guess_pronunciation(wordmap)
         wordmap = guess_grade_dir_from_ktn(wordmap)

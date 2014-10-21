@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from sys import stderr
-from omor_strings_io import fail_guess_because
+from omor_strings_io import fail_guess_because, three_syllable
 
 def guess_new_class(wordmap):
     '''Guess more exact classification now
@@ -528,7 +528,7 @@ def guess_new_noun(wordmap):
             else:
                 fail_guess_because(wordmap, ['N', 8],
                         [False, 'A', 'B', 'C'],
-                        "New loan words do not simply walk into quantitative gradation")
+                        "New loan words do not simply walk into qualitative gradation")
         elif tn == 9:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'] in ["Kangasala", "Koskenala"]:
@@ -620,13 +620,19 @@ def guess_new_noun(wordmap):
         elif tn == 10:
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('a'):
-                    wordmap['new_paras'] = ['N_VOIMA']
+                    if three_syllable(wordmap['stub']):
+                        wordmap['new_paras'] = ['N_ASEMA']
+                    else:
+                        wordmap['new_paras'] = ['N_VOIMA']
                 elif wordmap['lemma'].endswith('A'):
                     wordmap['new_paras'] = ['N_FIFA']
                 elif wordmap['lemma'].endswith('ă'):
                     wordmap['new_paras'] = ['N_VODĂ']
                 elif wordmap['lemma'].endswith('ä'):
-                    wordmap['new_paras'] = ['N_HÖPÖTTÄJÄ']
+                    if three_syllable(wordmap['stub']):
+                        wordmap['new_paras'] = ['N_ELÄMÄ']
+                    else:
+                        wordmap['new_paras'] = ['N_HÖPÖTTÄJÄ']
                 elif wordmap['lemma'].endswith('an'):
                     wordmap['new_paras'] = ['N_AAMUKAHDEKSAN']
                 elif wordmap['lemma'].endswith('än'):
@@ -3179,9 +3185,15 @@ def guess_new_adjective(wordmap):
     elif tn == 10:
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
-                wordmap['new_paras'] = ['A_RUMA']
+                if three_syllable(wordmap['stub']):
+                    wordmap['new_paras'] = ['A_MATALA']
+                else:
+                    wordmap['new_paras'] = ['A_RUMA']
             elif wordmap['lemma'].endswith('ä'):
-                wordmap['new_paras'] = ['A_TYHMÄ']
+                if three_syllable(wordmap['stub']):
+                    wordmap['new_paras'] = ['A_TERÄVÄ']
+                else:
+                    wordmap['new_paras'] = ['A_TYHMÄ']
             else:
                 fail_guess_because(wordmap, ['A', 10, False],
                         ['a', 'ä'])

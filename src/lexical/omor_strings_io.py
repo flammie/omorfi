@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 from sys import stderr
+import re
+import unicodedata
 
 # common symbols for all
 
@@ -113,3 +115,16 @@ def lexc_escape(s):
     s = s.replace("__PERCENT__", "%%")
     return s
 
+def strip_diacritics(s):
+   '''Convert Unicode characters with diacritics to their plain variants.'''
+   return ''.join(c for c in unicodedata.normalize('NFD', s)
+                  if unicodedata.category(c) != 'Mn')
+
+r_consonant = r'[kptgbdsfhvjlrmnczwxq]'
+r_syllable = strip_diacritics(r_consonant + '*' +r'([aeiouyäö]|aa|ee|ii|oo|uu|yy|ää|öö|ai|ei|oi|ui|yi|äi|öi|au|eu|iu|ou|ey|iy|äy|öy|ie|uo|yö)' + r_consonant + '*')
+re_two_syllable = re.compile(r'\b(' + r_syllable + r'){2}$')
+re_three_syllable = re.compile(r'\b(' + r_syllable + r'){3}$')
+def three_syllable(s):
+    '''Return True if given word, or its last compound part, has unambiguously three syllables.'''
+    s = strip_diacritics(s.lower())
+    return(re_three_syllable.search(s) and not re_two_syllable.search(s))
