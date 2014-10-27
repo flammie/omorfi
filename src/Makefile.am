@@ -2,26 +2,26 @@
 
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 LEXEMES=lexemes/lexemes.tsv
-STEMPARTS=stub-stem-inflections/acronym-stems.tsv \
-		  stub-stem-inflections/adjective-stems.tsv \
-		  stub-stem-inflections/digit-stubs.tsv \
-		  stub-stem-inflections/digit-stems.tsv \
-		  stub-stem-inflections/noun-stems.tsv \
-		  stub-stem-inflections/numeral-stems.tsv \
-		  stub-stem-inflections/particle-stems.tsv \
-		  stub-stem-inflections/pronoun-stems.tsv \
-		  stub-stem-inflections/symbol-stems.tsv \
-		  stub-stem-inflections/51-stems.tsv \
-		  stub-stem-inflections/verb-stems.tsv
-INFLECTIONS=stub-stem-inflections/acro-inflections.tsv \
-			stub-stem-inflections/adjective-inflections.tsv \
-			stub-stem-inflections/digit-inflections.tsv \
-			stub-stem-inflections/noun-inflections.tsv \
-			stub-stem-inflections/numeral-inflections.tsv \
-			stub-stem-inflections/particle-inflections.tsv \
-			stub-stem-inflections/pronoun-inflections.tsv \
-			stub-stem-inflections/symbol-inflections.tsv \
-			stub-stem-inflections/verb-inflections.tsv
+STEMPARTS=stub-stem-inflection/acronym-stems.tsv \
+		  stub-stem-inflection/adjective-stems.tsv \
+		  stub-stem-inflection/digit-stubs.tsv \
+		  stub-stem-inflection/digit-stems.tsv \
+		  stub-stem-inflection/noun-stems.tsv \
+		  stub-stem-inflection/numeral-stems.tsv \
+		  stub-stem-inflection/particle-stems.tsv \
+		  stub-stem-inflection/pronoun-stems.tsv \
+		  stub-stem-inflection/symbol-stems.tsv \
+		  stub-stem-inflection/51-stems.tsv \
+		  stub-stem-inflection/verb-stems.tsv
+INFLECTIONS=stub-stem-inflection/acro-inflections.tsv \
+			stub-stem-inflection/adjective-inflections.tsv \
+			stub-stem-inflection/digit-inflections.tsv \
+			stub-stem-inflection/noun-inflections.tsv \
+			stub-stem-inflection/numeral-inflections.tsv \
+			stub-stem-inflection/particle-inflections.tsv \
+			stub-stem-inflection/pronoun-inflections.tsv \
+			stub-stem-inflection/symbol-inflections.tsv \
+			stub-stem-inflection/verb-inflections.tsv
 JOINS=attributes/boundaries.tsv \
 	  attributes/origin.tsv \
 	  attributes/plurale-tantum.tsv \
@@ -36,19 +36,21 @@ JOINS=attributes/boundaries.tsv \
 	  attributes/subcategories.tsv \
 	  attributes/usage.tsv \
 	  attributes/verb-arguments.tsv
-SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py tsv2monodix.py \
-		tsv2kotussanalista.py tsv2yaml.py \
-		serialise-reweighter.py
-FINNISC=\
-		format_output.py \
-		gradation.py \
-		parse_csv_data.py \
-		plurale_tantum.py \
-		stub.py \
-		guess_feats.py guess_new_class.py wordmap.py \
-		omor_strings_io.py \
-		apertium_formatter.py \
-		ftb3_formatter.py
+FORMAT_SCIRPTS=tagset_formatter.py \
+			   apertium_formatter.py \
+			   ftb3_formatter.py
+CONVERSION_SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py tsv2monodix.py \
+				   tsv2kotussanalista.py tsv2yaml.py \
+				   serialise-reweighter.py
+FIN_SCIRPTS=gradation.py \
+			parse_csv_data.py \
+			plurale_tantum.py \
+			stub.py \
+			guess_feats.py \
+			guess_new_class.py \
+			wordmap.py \
+			omor_strings_io.py
+SCIRPTS=$(FORMAT_SCIRPTS) $(CONVERSION_SCIRPTS) $(FIN_SCIRPTS)
 HFST_FLAGS=--verbose
 
 if WANT_MORPHOLOGY
@@ -88,10 +90,10 @@ noinst_DATA=omorfi-ftb3.lexc omorfi.dix omorfi-sanalista.xml \
 			omorfi-ftb3.reweight #gtd-tests-ftb3.yaml
 
 if CAN_PYTHON
-gtd-tests-ftb3.yaml: $(top_srcdir)/test/gtd-tests.tsv
+gtd-tests-ftb3.yaml: $(top_srcdir)/test/gtd-tests.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=ftb3 -v
 
-omorfi-ftb3.reweight: serialise-reweighter.py format_output.py
+omorfi-ftb3.reweight: serialise-reweighter.py tagset_formatter.py $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=ftb3 -o $@
 
 joint.tsv: lexemes/lexemes.tsv $(JOINS)
@@ -123,15 +125,15 @@ stemparts.tsv: $(STEMPARTS)
 inflections.tsv: $(INFLECTIONS)
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
-omorfi-ftb3.lexc: master.tsv stemparts.tsv inflections.tsv
+omorfi-ftb3.lexc: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=ftb3
 
-omorfi.dix: master.tsv stemparts.tsv inflections.tsv
+omorfi.dix: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@
 
-omorfi-sanalista.xml: master.tsv
+omorfi-sanalista.xml: master.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
 else
 gtd-tests-ftb3.yaml:
@@ -171,10 +173,6 @@ omorfi-sanalista.xml:
 	echo "Lexical data preprocessing requires python3"
 	false
 endif
-
-clean-local:
-	-rm -f master.tsv joint.tsv stemparts.tsv inflections.tsv \
-		omorfi.lexc omorfi.dix omorfi-sanalista.xml
 
 
 
@@ -307,4 +305,7 @@ speller-omorfi.zhfst: dictionary.default.hfst spell-checking/error.edit-distance
 
 
 clean-local:
-	-rm -f $(TARGETS) temporary-ftb3.*.hfst
+	-rm -f temporary-ftb3.*.hfst \
+		master.tsv joint.tsv stemparts.tsv inflections.tsv \
+		omorfi-ftb3.lexc omorfi.dix omorfi-sanalista.xml
+

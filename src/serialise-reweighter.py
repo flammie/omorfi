@@ -24,7 +24,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from format_output import format_tag
+from tagset_formatter import format_tag
 
 # standard UI stuff
 

@@ -32,7 +32,7 @@ from time import strftime
 import argparse
 import csv
 
-from format_output import format_lexc, format_multichars_lexc, \
+from tagset_formatter import format_lexc, format_multichars_lexc, \
         format_root_lexicon, format_continuation_lexc, format_copyright_lexc
 from parse_csv_data import parse_defaults_from_tsv
 

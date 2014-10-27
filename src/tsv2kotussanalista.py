@@ -32,7 +32,7 @@ from time import strftime
 import argparse
 import csv
 
-from format_output import format_xml_kotus_sanalista
+from tagset_formatter import format_xml_kotus_sanalista
 from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
