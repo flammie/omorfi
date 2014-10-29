@@ -53,38 +53,23 @@ FIN_SCIRPTS=gradation.py \
 SCIRPTS=$(FORMAT_SCIRPTS) $(CONVERSION_SCIRPTS) $(FIN_SCIRPTS)
 HFST_FLAGS=--verbose
 
-if WANT_MORPHOLOGY
-MAYBE_MORPHOLOGY=morphology.ftb3.hfst \
-				 lemmatize.default.hfst
-endif
-if WANT_GENERATION
-MAYBE_GENERATION=generation.ftb3.hfst
-endif
-if WANT_DICTIONARY
-MAYBE_DICTIONARY=dictionary.default.hfst \
-				 tokeniser.default.hfst
-endif
-if WANT_HYPHENATION
-MAYBE_HYPHENATION=hyphenation.dict.hfst
-endif
-if WANT_VOIKKO
-MAYBE_VOIKKO=speller-omorfi.zhfst
-voikkosharedir=$(libdir)/voikko/3/
-voikkoshare_DATA=$(MAYBE_VOIKKO)
-endif
-
-TARGETS=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
-		$(MAYBE_HYPHENATION) $(MAYBE_VOIKKO)
 hfstfidatadir=$(datadir)/hfst/fi/
-hfstfidata_DATA=$(MAYBE_MORPHOLOGY) $(MAYBE_GENERATION) $(MAYBE_DICTIONARY) \
-				$(MAYBE_HYPHENATION)
+voikkosharedir=$(libdir)/voikko/3/
+
+hfstfidata_DATA=morphology.ftb3.hfst \
+				lemmatize.default.hfst \
+				generation.ftb3.hfst \
+				dictionary.default.hfst \
+				tokeniser.default.hfst \
+				hyphenation.dict.hfst 
+voikkoshare_DATA=speller-omorfi.zhfst
 
 EXTRA_DIST=\
-		   $(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) $(FINNISC) \
+		   $(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
 		   voikko-fi_FI.pro index.xml
 
-TESTS=format_output.py apertium_formatter.py
+TESTS=tagset_formatter.py apertium_formatter.py
 
 noinst_DATA=omorfi-ftb3.lexc omorfi.dix omorfi-sanalista.xml \
 			omorfi-ftb3.reweight #gtd-tests-ftb3.yaml
