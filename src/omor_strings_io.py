@@ -113,3 +113,11 @@ def lexc_escape(s):
     s = s.replace("__PERCENT__", "%%")
     return s
 
+def twolc_escape(s):
+    '''Escape symbols that have special meaning in twolc.'''
+    s = s.replace("%", "__PERCENT__")
+    for c in ' <>0!:";%_^{}-[]/?+|&':
+        s = s.replace(c, "%" + c)
+    s = s.replace("__PERCENT__", "%%")
+    return s
+

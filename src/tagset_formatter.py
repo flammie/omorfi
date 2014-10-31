@@ -3,7 +3,7 @@
 # utils to format lexc strings from omor's lexical data sources.
 
 from sys import stderr
-from omor_strings_io import lexc_escape, version_id_easter_egg, \
+from omor_strings_io import lexc_escape, twolc_escape, version_id_easter_egg, \
         word_boundary, deriv_boundary, morph_boundary, stub_boundary,\
         weak_boundary, optional_hyphen
 from cgi import escape as xml_escape
@@ -781,6 +781,23 @@ def format_continuation_lexicon_xml(tsvparts):
     xmlstring += "<i>" + xml_escape(tsvparts[2]) + "</i>"
     xmlstring += '<cont lexica="' + " ".join(tsvparts[3:]).replace("#", "_END") + '"/></e>\n'
     return xmlstring
+
+def format_alphabet_twolc(format, ruleset):
+    twolcstring = 'Alphabet\n'
+    for mcs in common_multichars:
+        if ruleset == 'orthography' and mcs == optional_hyphen:
+            twolcstring += twolc_escape(mcs) + ':0  ! boundary can be zero\n'
+            twolcstring += twolc_escape(mcs) + ':%- ! or (ASCII) hyphen\n'
+        else:
+            twolcstring += twolc_escape(mcs) + ':' + twolc_escape(mcs) + '\n'
+    twolcstring += ';\n'
+    return twolcstring
+
+def format_rules_twolc(format, ruleset):
+    twolcstring = "Rules\n"
+    if ruleset == 'stub-phon':
+        twolcstring += '"Dummy rule"\na <= _ ;\n'
+    return twolcstring
 
 # self test
 if __name__ == '__main__':
