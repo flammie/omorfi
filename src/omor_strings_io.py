@@ -11,6 +11,13 @@ deriv_boundary="{DB}"
 morph_boundary="{MB}"
 stub_boundary="{STUB}"
 optional_hyphen="{hyph?}"
+# It's not fully symmetric so two sets
+fin_lowercase = "abcdefghijklmnopqrsštuvwxyzžåäö" + \
+    "áàâãāăąçćĉċčđðďéèêëēĕęėěƒĝğġģȟħíìîïĩīĭįıĳĵķĸĺļľŀłñńņňŉŋ" + \
+    "óòôōŏŕŗřśŝşſţťŧßþúùûüũūŭůųŵýŷÿűźżʒæøœőə"
+fin_uppercase = "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽÅÄÖ" \
+    "ÁÀÂÃĀĂĄÇĆĈĊČÐĎÉÈÊËĒĔĘĖĚĜĞĠĢȞĦÍÌÎÏĨĪĬĮİĲĴĶĹĻĽĿŁÑŃŅŇŊ" + \
+    "ÓÒÔŌŎŔŖŘŚŜŞŢŤŦÞÚÙÛÜŨŪŬŮŲŴÝŶŰŹŻƷÆØŒŐƏ"
 
 def fail_formatting_missing_for(stuff, format, moar=None):
     print("\033[93mMissing tag!\033[0m Trying to format:", stuff, "for tagset:",

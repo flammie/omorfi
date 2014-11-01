@@ -5,7 +5,7 @@
 from sys import stderr
 from omor_strings_io import lexc_escape, twolc_escape, version_id_easter_egg, \
         word_boundary, deriv_boundary, morph_boundary, stub_boundary,\
-        weak_boundary, optional_hyphen
+        weak_boundary, optional_hyphen, fin_uppercase, fin_lowercase
 from cgi import escape as xml_escape
 from apertium_formatter import format_tag_apertium, \
         format_analysis_lexc_apertium, format_continuation_lexc_apertium, \
@@ -784,12 +784,31 @@ def format_continuation_lexicon_xml(tsvparts):
 
 def format_alphabet_twolc(format, ruleset):
     twolcstring = 'Alphabet\n'
+    if ruleset.startswith('uppercase'):
+        twolcstring += '! Set of Finnish alphabets generated from python:\n'
+        
+        for c in fin_lowercase:
+            twolcstring += c + '! allow lowercase as is\n'
+            twolcstring += c + ':' + c.upper() + '! allow uppercasing\n'
+        for c in fin_uppercase:
+            twolcstring += c + '! allow uppercase as is\n'
+            twolcstring += c + ':' + c.lower() + '! allow lowercasing\n'
     for mcs in common_multichars:
         if ruleset == 'orthography' and mcs == optional_hyphen:
             twolcstring += twolc_escape(mcs) + ':0  ! boundary can be zero\n'
             twolcstring += twolc_escape(mcs) + ':%- ! or (ASCII) hyphen\n'
         else:
-            twolcstring += twolc_escape(mcs) + ':' + twolc_escape(mcs) + '\n'
+            twolcstring += twolc_escape(mcs) + '\n'
+    twolcstring += ';\n'
+    return twolcstring
+
+def format_sets_twolc(format, ruleset):
+    twolcstring = 'Sets\n'
+    if ruleset.startswith('uppercase'):
+        twolcstring += 'Lower = ' + ' '.join(fin_lowercase) + ';' + \
+                '! Lowercase alphabets\n'
+        twolcstring += 'Upper = ' + ' '.join(fin_uppercase) + ';' + \
+                '! Uppercase alphavets\n'
     twolcstring += ';\n'
     return twolcstring
 
@@ -797,6 +816,9 @@ def format_rules_twolc(format, ruleset):
     twolcstring = "Rules\n"
     if ruleset == 'stub-phon':
         twolcstring += '"Dummy rule"\na <= _ ;\n'
+    elif ruleset == 'uppercase-any':
+        twolcstring += '"Uppercase anywhere dummy rule"\n'
+        twolcstring += twolc_escape(optional_hyphen) + " <= _ ;\n"
     return twolcstring
 
 # self test

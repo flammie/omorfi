@@ -114,6 +114,13 @@ omorfi-ftb3.lexc: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=ftb3
 
+omorfi-ftb3-phon.twolc:
+	$(PYTHON) $(srcdir)/generate-twolcs.py -f=ftb3 -r stub-phon -o $@
+
+omorfi-ftb3-uppercase-any.twolc:
+	$(PYTHON) $(srcdir)/generate-twolcs.py -f=ftb3 -r uppercase-any -o $@
+
+
 omorfi.dix: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@
@@ -159,15 +166,22 @@ omorfi-sanalista.xml:
 	false
 endif
 
+# compile lexc
+%.lexc.hfst: %.lexc
+	$(HLEXC) --Werror -o $@ $<
 
+# compile twolc
+%.twolc.hfst: %.twolc
+	$(HTWOLC) -o $@ $<
 
 # combine lexical data with phonology
-temporary-ftb3.phon.hfst: morphology/omorfi-ftb3.lexc.hfst phonology/omorfi.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 morphology/omorfi-ftb3.lexc.hfst \
-		-2 phonology/omorfi.twolc.hfst > $@
+temporary-ftb3.phon.hfst: omorfi-ftb3.lexc.hfst omorfi-ftb3-phon.twolc.hfst
+	$(HINV) $(HFST_FLAGS) omorfi-ftb3.lexc.hfst |\
+		$(HIC) $(HFST_FLAGS) -1 - -2 omorfi-ftb3-phon.twolc.hfst > $@
 
 # make orthographical adjustments to phonemic version
-temporary-ftb3.orth.hfst: temporary-ftb3.phon.hfst orthography/uppercase-$(UPPERCASING).hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
+temporary-ftb3.orth.hfst: temporary-ftb3.phon.hfst \
+	omorfi-ftb3-uppercase-any.hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
 	cat temporary-ftb3.phon.hfst |\
 		$(HIC) $(HFST_FLAGS) -2 orthography/hyphenations.hfst |\
 		$(HMIN) $(HFST_FLAGS) |\
