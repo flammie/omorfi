@@ -5,7 +5,8 @@
 from sys import stderr
 from omor_strings_io import lexc_escape, twolc_escape, version_id_easter_egg, \
         word_boundary, deriv_boundary, morph_boundary, stub_boundary,\
-        weak_boundary, optional_hyphen, fin_uppercase, fin_lowercase
+        weak_boundary, optional_hyphen, fin_uppercase, fin_lowercase,\
+        fin_vowels, fin_symbols, fin_orth_pairs
 from cgi import escape as xml_escape
 from apertium_formatter import format_tag_apertium, \
         format_analysis_lexc_apertium, format_continuation_lexc_apertium, \
@@ -794,7 +795,7 @@ def format_alphabet_twolc(format, ruleset):
             twolcstring += c + '! allow uppercase as is\n'
             twolcstring += c + ':' + c.lower() + '! allow lowercasing\n'
     for mcs in common_multichars:
-        if ruleset == 'orthography' and mcs == optional_hyphen:
+        if ruleset == 'hyphens' and mcs == optional_hyphen:
             twolcstring += twolc_escape(mcs) + ':0  ! boundary can be zero\n'
             twolcstring += twolc_escape(mcs) + ':%- ! or (ASCII) hyphen\n'
         else:
@@ -805,10 +806,16 @@ def format_alphabet_twolc(format, ruleset):
 def format_sets_twolc(format, ruleset):
     twolcstring = 'Sets\n'
     if ruleset.startswith('uppercase'):
-        twolcstring += 'Lower = ' + ' '.join(fin_lowercase) + ';' + \
+        twolcstring += 'Lower = ' + ' '.join(fin_lowercase) + ' ;' + \
                 '! Lowercase alphabets\n'
-        twolcstring += 'Upper = ' + ' '.join(fin_uppercase) + ';' + \
+        twolcstring += 'Upper = ' + ' '.join(fin_uppercase) + ' ;' + \
                 '! Uppercase alphavets\n'
+    if ruleset == 'hyphens':
+        twolcstring += 'Vowels = ' + ' '.join(fin_vowels) + ' ;' + \
+                '! Vowels\n'
+        twolcstring += 'UpperOrSyms = ' + ' '.join(fin_uppercase) + \
+                ' ' + ' '.join([twolc_escape(s) for s in fin_symbols]) +\
+                '; ' + '! Symbols for likely hyphenated words\n'
     twolcstring += ';\n'
     return twolcstring
 
@@ -819,7 +826,74 @@ def format_rules_twolc(format, ruleset):
     elif ruleset == 'uppercase-any':
         twolcstring += '"Uppercase anywhere dummy rule"\n'
         twolcstring += twolc_escape(optional_hyphen) + " <= _ ;\n"
+    elif ruleset == 'hyphens':
+        twolcstring += '"Disallow no hyphen between equal vowels"\n'
+        twolcstring += twolc_escape(optional_hyphen) + ':0 /<= ' + \
+                "VOWEL :0* _ :0* VOWEL ; where VOWEL in Vowels matched ;\n"
     return twolcstring
+
+def format_rules_regex(format, ruleset):
+    regexstring = ''
+    if ruleset == 'orthographic-variations':
+        regexstring += '[ '
+        for p in fin_orth_pairs:
+            regexstring += twolc_escape(p[0]) + ':' + twolc_escape(p[1]) + \
+                    ' | '
+        regexstring += '? ]* ;'
+    elif ruleset == 'zh':
+        regexstring += '[ ž | ž:z 0:h | ž:z::1 ] ;'
+    elif ruleset == 'sh':
+        regexstring += '[ š | š:s 0:h | š:s::1 ] ;'
+    elif ruleset == 'rewrite-tags':
+        if format == 'ftb3':
+            regexstring += '# Remove before compounds:\n'
+            regexstring += '[ '
+            regexstring += ' -> 0, '.join([format_tag(tag, format) for tag in \
+                    ['ADJECTIVE', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUMERAL', 'PROPER', 'DIGIT', 'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl']])
+            regexstring += '-> 0 || _ ?* %# ]\n'
+            regexstring += '.o.\n'
+            regexstring += '# Remove V before Prc\n'
+            regexstring += '[ ' + format_tag('VERB', format) + ' -> 0 || _  [ '
+            regexstring += ' | '.join([format_tag(tag, format) for tag in \
+                    ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma','Dnut', 'Dtu', 'Dtava']])
+            regexstring += '] ]\n'
+            regexstring += '.o.\n'
+            regexstring += '# ftb3.1 all pr are optional po\n'
+            regexstring += '[ ' + format_tag('ADPOSITION', format) + ' (->) ' +\
+                            format_tag('PREPOSITION', format) \
+                            + ']\n'
+            regexstring += '.o.\n'
+            regexstring += '# stem mangling rules:\n'
+            regexstring += '[ %<Del%>→ [ ' + ' | '.join(fin_lowercase) + \
+                    ' ]* ←%<Del%> -> 0 || _ [ ? - %#]* %# ]\n'
+            regexstring += '.o.\n'
+            regexstring += '[ ←%<Del%> -> 0, %<Del%>→ -> 0 ]\n'
+            regexstring += '.o.\n'
+            regexstring += '[ ' + ' | '.join(fin_lowercase) + ']* -> 0 || ' +\
+                    '[ ' + format_tag('NOUN', format) + \
+                    format_tag('NUMERAL', format) + \
+                    ']+ [? - %#]* _ [? - %#]*\n'
+            regexstring += '.o.\n'
+            regexstring += '# Puncts without nom case\n'
+            regexstring += '[ ' + format_tag('Xnom', format) +\
+                    ' ' + format_tag('Nsg', format) + ' ] -> 0 || ' +\
+                    format_tag('PUNCTUATION', format) + ' _ \n'
+            regexstring += '.o.\n'
+            regexstring += '# random puncts are abbr\n'
+            regexstring += format_tag('PUNCTUATION', format) +\
+                    ' (->) ' + format_tag('ABBREVIATION', format) +\
+                    ' ' + format_tag('Xnom', format) +\
+                    ' ' + format_tag('Nsg', format) +\
+                    '|| _ '
+            regexstring += ';\n'
+    elif ruleset == 'remove-boundaries':
+        regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \
+                    [word_boundary, deriv_boundary, morph_boundary,\
+                    stub_boundary, weak_boundary]]) + '-> 0 || _ ;'
+    else:
+        print("Unknown ruleset", ruleset)
+        return None
+    return regexstring
 
 # self test
 if __name__ == '__main__':

@@ -18,6 +18,16 @@ fin_lowercase = "abcdefghijklmnopqrsštuvwxyzžåäö" + \
 fin_uppercase = "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽÅÄÖ" \
     "ÁÀÂÃĀĂĄÇĆĈĊČÐĎÉÈÊËĒĔĘĖĚĜĞĠĢȞĦÍÌÎÏĨĪĬĮİĲĴĶĹĻĽĿŁÑŃŅŇŊ" + \
     "ÓÒÔŌŎŔŖŘŚŜŞŢŤŦÞÚÙÛÜŨŪŬŮŲŴÝŶŰŹŻƷÆØŒŐƏ"
+fin_lower_vowels = "aeiouyåäö" + \
+    "áàâãāăąéèêëēĕęėěíìîïĩīĭįıóòôōŏúùûüũūŭůųýŷÿűæøœőə"
+fin_upper_vowels = "AEIOUYÅÄÖ" \
+    "ÁÀÂÃĀĂĄÉÈÊËĒĔĘĖĚÍÌÎÏĨĪĬĮİÓÒÔŌŎÚÙÛÜŨŪŬŮŲÝŶŰÆØŒŐƏ"
+fin_vowels = fin_lower_vowels + fin_upper_vowels
+# the words containing symbols are likely weird / props etc.
+fin_symbols = "1234567890§!\"#¤%&/()=?½@£$‚{[]}<>*"
+# known variants and old orthographies 1:1
+# (a conservative listing for sure)
+fin_orth_pairs = [("’", "'"), ("’", "´"), ("’", "′"), ("-", "‐"), ("-", "‑"), ("-", "‑")]
 
 def fail_formatting_missing_for(stuff, format, moar=None):
     print("\033[93mMissing tag!\033[0m Trying to format:", stuff, "for tagset:",

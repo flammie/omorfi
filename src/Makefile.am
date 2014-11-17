@@ -41,7 +41,8 @@ FORMAT_SCIRPTS=tagset_formatter.py \
 			   ftb3_formatter.py
 CONVERSION_SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py tsv2monodix.py \
 				   tsv2kotussanalista.py tsv2yaml.py \
-				   serialise-reweighter.py
+				   serialise-reweighter.py \
+				   generate-twolcs.py generate-regexes.py
 FIN_SCIRPTS=gradation.py \
 			parse_csv_data.py \
 			plurale_tantum.py \
@@ -59,10 +60,10 @@ voikkosharedir=$(libdir)/voikko/3/
 hfstfidata_DATA=morphology.ftb3.hfst \
 				lemmatize.default.hfst \
 				generation.ftb3.hfst \
-				dictionary.default.hfst \
-				tokeniser.default.hfst \
-				hyphenation.dict.hfst 
-voikkoshare_DATA=speller-omorfi.zhfst
+				dictionary.default.hfst
+#				tokeniser.default.hfst \
+#				hyphenation.dict.hfst 
+#voikkoshare_DATA=speller-omorfi.zhfst
 
 EXTRA_DIST=\
 		   $(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) \
@@ -120,6 +121,28 @@ omorfi-ftb3-phon.twolc:
 omorfi-ftb3-uppercase-any.twolc:
 	$(PYTHON) $(srcdir)/generate-twolcs.py -f=ftb3 -r uppercase-any -o $@
 
+omorfi-ftb3-hyphens.twolc:
+	$(PYTHON) $(srcdir)/generate-twolcs.py -f=ftb3 -r hyphens -o $@
+
+omorfi-ftb3-orthographic-variations.regex:
+	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+		-r orthographic-variations -o $@
+
+omorfi-ftb3-zh.regex:
+	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+		-r zh -o $@
+
+omorfi-ftb3-sh.regex:
+	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+		-r sh -o $@
+
+omorfi-ftb3-rewrite-tags.regex:
+	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+		-r rewrite-tags -o $@
+
+omorfi-ftb3-remove-boundaries.regex:
+	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+		-r remove-boundaries -o $@
 
 omorfi.dix: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
@@ -127,43 +150,6 @@ omorfi.dix: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
 
 omorfi-sanalista.xml: master.tsv $(FORMAT_SCIRPTS)
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
-else
-gtd-tests-ftb3.yaml:
-	echo "Lexical data preprocessing requires python3"
-	false
-
-omorfi-ftb3.reweight:
-	echo "Lexical data preprocessing requires python3"
-	false
-	false
-
-joint.tsv: 
-	echo "Lexical data preprocessing requires python3"
-	false
-
-master.tsv: 
-	echo "Lexical data preprocessing requires python3"
-	false
-
-stemparts.tsv: 
-	echo "Lexical data preprocessing requires python3"
-	false
-
-inflections.tsv: 
-	echo "Lexical data preprocessing requires python3"
-	false
-
-omorfi-ftb3.lexc:
-	echo "Lexical data preprocessing requires python3"
-	false
-
-omorfi.dix: 
-	echo "Lexical data preprocessing requires python3"
-	false
-
-omorfi-sanalista.xml: 
-	echo "Lexical data preprocessing requires python3"
-	false
 endif
 
 # compile lexc
@@ -172,39 +158,50 @@ endif
 
 # compile twolc
 %.twolc.hfst: %.twolc
-	$(HTWOLC) -o $@ $<
+	$(HTWOLC) $(HFST_FLAGS) --resolve -o $@ $<
+
+%.regex.hfst: %.regex
+	$(HREGEX) $(HFST_FLAGS) --semicolon -j -i $< |\
+		$(HMIN) $(HFST_FLAGS) -o $@
 
 # combine lexical data with phonology
 temporary-ftb3.phon.hfst: omorfi-ftb3.lexc.hfst omorfi-ftb3-phon.twolc.hfst
-	$(HINV) $(HFST_FLAGS) omorfi-ftb3.lexc.hfst |\
-		$(HIC) $(HFST_FLAGS) -1 - -2 omorfi-ftb3-phon.twolc.hfst > $@
-
-# make orthographical adjustments to phonemic version
-temporary-ftb3.orth.hfst: temporary-ftb3.phon.hfst \
-	omorfi-ftb3-uppercase-any.hfst orthography/sh.hfst orthography/zh.hfst orthography/orthographic-variations.hfst orthography/hyphenations.hfst
-	cat temporary-ftb3.phon.hfst |\
-		$(HIC) $(HFST_FLAGS) -2 orthography/hyphenations.hfst |\
-		$(HMIN) $(HFST_FLAGS) |\
-		$(HIC) $(HFST_FLAGS) -2 orthography/uppercase-$(UPPERCASING).hfst |\
-		$(HMIN) $(HFST_FLAGS) |\
-		$(HSUB) $(HFST_FLAGS) -f š -T orthography/sh.hfst |\
-		$(HMIN) $(HFST_FLAGS) |\
-		$(HSUB) $(HFST_FLAGS) -f ž -T orthography/zh.hfst |\
-		$(HMIN) $(HFST_FLAGS) |\
-		$(HIC) $(HFST_FLAGS) -2 orthography/orthographic-variations.hfst |\
+	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-ftb3-phon.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
+# make orthographical adjustments to phonemic version
+temporary-ftb3.hyphenated.hfst: temporary-ftb3.phon.hfst \
+	omorfi-ftb3-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-ftb3-hyphens.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+temporary-ftb3.relaxed.hfst: temporary-ftb3.hyphenated.hfst \
+	omorfi-ftb3-sh.regex.hfst \
+	omorfi-ftb3-zh.regex.hfst \
+	omorfi-ftb3-orthographic-variations.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-ftb3-orthographic-variations.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
+		$(HSUB) $(HFST_FLAGS) -f š -T omorfi-ftb3-sh.regex.hfst |\
+		$(HSUB) $(HFST_FLAGS) -f ž -T omorfi-ftb3-zh.regex.hfst -o $@
+
+temporary-ftb3.orth.hfst: temporary-ftb3.relaxed.hfst \
+	omorfi-ftb3-uppercase-any.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-ftb3-uppercase-any.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
 # make tag adjustments to orthographical version
-temporary-ftb3.tagged.hfst: temporary-ftb3.orth.hfst taghacks/rewrite-ftb3.hfst
+temporary-ftb3.tagged.hfst: temporary-ftb3.orth.hfst \
+	omorfi-ftb3-rewrite-tags.regex.hfst
 	cat $< |\
 		$(HINV) $(HFST_FLAGS) |\
-		$(HIC) $(HFST_FLAGS) -2 taghacks/rewrite-ftb3.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 omorfi-ftb3-rewrite-tags.regex.hfst |\
 		$(HINV) $(HFST_FLAGS) |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # remove word boundaries at this point
-temporary-ftb3.unbounded.hfst: temporary-ftb3.tagged.hfst
-	cat $< |\
+temporary-ftb3.unbounded.hfst: temporary-ftb3.tagged.hfst |\
+	omorfi-ftb3-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-ftb3-remove-boundaries.regex.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 if WANT_TAGWEIGHTS
@@ -225,8 +222,8 @@ temporary-ftb3.tagweighted.hfst: temporary-ftb3.tagweights-only.hfst temporary-f
 		$(HMIN) $(HFST_FLAGS) > $@
 else
 # hand-written weights
-temporary-ftb3.tagweighted.hfst: temporary-ftb3.unbounded.hfst lexical/omorfi-ftb3.reweight
-	$(HREW) $(HFST_FLAGS) -T lexical/omorfi-ftb3.reweight temporary-ftb3.unbounded.hfst |\
+temporary-ftb3.tagweighted.hfst: temporary-ftb3.unbounded.hfst omorfi-ftb3.reweight
+	$(HREW) $(HFST_FLAGS) -T omorfi-ftb3.reweight temporary-ftb3.unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 endif
 
