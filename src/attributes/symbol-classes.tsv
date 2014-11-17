@@ -15,8 +15,8 @@
 ..	['SYMBOL_PISTE']	symbol=sentence-boundary
 ...	['SYMBOL_PISTE']	symbol=sentence-boundary
 ....	['SYMBOL_PISTE']	symbol=sentence-boundary
-'	['SYMBOL_PISTE']	symbol=final-quote
-'	['SYMBOL_PISTE']	symbol=initial-quote
+’	['SYMBOL_PISTE']	symbol=final-quote
+’	['SYMBOL_PISTE']	symbol=initial-quote
 ’	['SYMBOL_PISTE']	symbol=final-quote
 ’	['SYMBOL_PISTE']	symbol=initial-quote
 "	['SYMBOL_PISTE']	symbol=final-quote
