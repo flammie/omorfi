@@ -26,7 +26,7 @@ from time import strftime
 import argparse
 
 from tagset_formatter import format_tag, format_alphabet_twolc, \
-        format_sets_twolc, format_rules_twolc
+        format_sets_twolc, format_definitions_twolc, format_rules_twolc
 
 # standard UI stuff
 
@@ -69,6 +69,9 @@ def main():
     if args.verbose:
         print("Creating Sets")
     print(format_sets_twolc(args.format, args.ruleset), file=args.output)
+    if args.verbose:
+        print("Creating Definitions")
+    print(format_definitions_twolc(args.format, args.ruleset), file=args.output)
     if args.verbose:
         print("Creating Rules")
     print(format_rules_twolc(args.format, args.ruleset), file=args.output)

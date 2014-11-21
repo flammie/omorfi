@@ -6,7 +6,7 @@ from sys import stderr
 from omor_strings_io import lexc_escape, twolc_escape, version_id_easter_egg, \
         word_boundary, deriv_boundary, morph_boundary, stub_boundary,\
         weak_boundary, optional_hyphen, fin_uppercase, fin_lowercase,\
-        fin_vowels, fin_symbols, fin_orth_pairs
+        fin_vowels, fin_consonants, fin_symbols, fin_orth_pairs
 from cgi import escape as xml_escape
 from apertium_formatter import format_tag_apertium, \
         format_analysis_lexc_apertium, format_continuation_lexc_apertium, \
@@ -794,10 +794,15 @@ def format_alphabet_twolc(format, ruleset):
         for c in fin_uppercase:
             twolcstring += c + '! allow uppercase as is\n'
             twolcstring += c + ':' + c.lower() + '! allow lowercasing\n'
+    elif ruleset == 'hyphenate':
+        twolcstring += ' '.join(fin_lowercase) + '! lower'
+        twolcstring += ' '.join(fin_uppercase) + '! upper'
     for mcs in common_multichars:
         if ruleset == 'hyphens' and mcs == optional_hyphen:
             twolcstring += twolc_escape(mcs) + ':0  ! boundary can be zero\n'
             twolcstring += twolc_escape(mcs) + ':%- ! or (ASCII) hyphen\n'
+        elif ruleset == 'hyphenate':
+            twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
         else:
             twolcstring += twolc_escape(mcs) + '\n'
     twolcstring += ';\n'
@@ -810,13 +815,26 @@ def format_sets_twolc(format, ruleset):
                 '! Lowercase alphabets\n'
         twolcstring += 'Upper = ' + ' '.join(fin_uppercase) + ' ;' + \
                 '! Uppercase alphavets\n'
-    if ruleset == 'hyphens':
+    elif ruleset == 'hyphens':
         twolcstring += 'Vowels = ' + ' '.join(fin_vowels) + ' ;' + \
                 '! Vowels\n'
         twolcstring += 'UpperOrSyms = ' + ' '.join(fin_uppercase) + \
                 ' ' + ' '.join([twolc_escape(s) for s in fin_symbols]) +\
                 '; ' + '! Symbols for likely hyphenated words\n'
-    twolcstring += ';\n'
+    elif ruleset == 'hyphenate':
+        twolcstring += 'Vowels = ' + ' '.join(fin_vowels) + ' ;' + \
+                '! Vowels\n'
+        twolcstring += 'Consonants = ' + ' '.join(fin_consonants) + ' ;' + \
+                '! Consonants\n'
+    twolcstring += 'DUMMYSETCANBEUSEDTOTESTBUGS = a b c ;\n'
+    return twolcstring
+
+def format_definitions_twolc(format, ruleset):
+    twolcstring += 'Definitions\n'
+    if ruleset == 'hyphenate':
+        twolcstring += 'WordBoundary = [ %- | 0:%- |' \
+                + word_boundary + ':0 ] ;\n'
+    twolcstring += 'DUMMYDEFINITIONCANBEUSEDTOTESTBUGS = a | b | c ;\n'
     return twolcstring
 
 def format_rules_twolc(format, ruleset):
@@ -830,6 +848,17 @@ def format_rules_twolc(format, ruleset):
         twolcstring += '"Disallow no hyphen between equal vowels"\n'
         twolcstring += twolc_escape(optional_hyphen) + ':0 /<= ' + \
                 "VOWEL :0* _ :0* VOWEL ; where VOWEL in Vowels matched ;\n"
+    elif ruleset == 'hyphenate':
+        twolcstring += '"Hyphenate Before consonant clusters"\n'
+        twolcstring += "0:%- <=> Vowels Consonants* _ Consonants Vowels ;\n"
+        twolcstring += '"Hyphenate between non-diphtongs"\n'
+        twolcstring += "0:%- <=> Vx _ Vy ;\n"
+        twolcstring += "\twhere Vx in (a a a a a e e e e i i i i o o o o o u u u u u y y y y y ä ä ä ä ä ö ö ö ö)\n"
+        twolcstring += "\t\tVy in (e o y ä ö a o ä ö a o ä ö a e y ä ö a e y ä ö e ä a o u e ö a o u ä a o u) matched ;\n"
+        twolcstring += '"Hyphenate diphtongs in latter syllables"\n'
+        twolcstring += "0:%- <=> WordBoundary Consonants* [Vowels+ Consonants+]+ Vx _ Vy ;\n"
+        twolcstring += "\twhere Vx in (a e o u y ä ö a e i o ä ö u y i e i)\n"
+        twolcstring += "\t\tVy in (i i i i i i i u u u u y y o ö y y e) matched ;\n"
     return twolcstring
 
 def format_rules_regex(format, ruleset):
@@ -890,6 +919,13 @@ def format_rules_regex(format, ruleset):
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \
                     [word_boundary, deriv_boundary, morph_boundary,\
                     stub_boundary, weak_boundary]]) + '-> 0 || _ ;'
+    elif ruleset == 'token':
+        regexstring += '[ [' + '|'.join(fin_lowercase) + '|' +\
+                '|'.join(fin_uppercase) + \
+                '| ’ | %\' | %- | %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]*'\
+                ' | ? ] ;'
+    elif ruleset == 'between-tokens':
+        regexstring += '[ %. | %, | %: | %; | %? | %! | %- | %  ] ;'
     else:
         print("Unknown ruleset", ruleset)
         return None

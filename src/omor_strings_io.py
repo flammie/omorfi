@@ -23,6 +23,11 @@ fin_lower_vowels = "aeiouyåäö" + \
 fin_upper_vowels = "AEIOUYÅÄÖ" \
     "ÁÀÂÃĀĂĄÉÈÊËĒĔĘĖĚÍÌÎÏĨĪĬĮİÓÒÔŌŎÚÙÛÜŨŪŬŮŲÝŶŰÆØŒŐƏ"
 fin_vowels = fin_lower_vowels + fin_upper_vowels
+fin_lower_consonants = "bcdfghjklmnpqrsštvwxzž" + \
+    "çćĉċčđðďƒĝğġģȟħĵķĸĺļľŀłñńņňŉŋŕŗřśŝşſţťŧßþŵźżʒ"
+fin_upper_consonants = "BCDFGHJKLMNPQRSŠTVWXZŽ" \
+    "ÇĆĈĊČÐĎĜĞĠĢȞĦĴĶĹĻĽĿŁÑŃŅŇŊŔŖŘŚŜŞŢŤŦÞŴŹŻƷ"
+fin_consonants = fin_lower_consonants + fin_upper_consonants
 # the words containing symbols are likely weird / props etc.
 fin_symbols = "1234567890§!\"#¤%&/()=?½@£$‚{[]}<>*"
 # known variants and old orthographies 1:1
