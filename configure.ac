@@ -15,72 +15,7 @@ AC_ARG_WITH([hfst],
             [define HFST binary path if not in PATH @<:@default=PATH@:>@])],
             [],
             [with_hfst=yes])
-AS_IF([test "x$with_hfst" = "xno"], 
-      [AC_MSG_ERROR([--without-hfst not supported!])])
-
-AC_SUBST([UPPERCASING], [$enable_uppercasing])
-AC_ARG_ENABLE([uppercasing],
-              [AS_HELP_STRING([--enable-uppercasing=STYLE],
-                              [uppercase surface strings with STYLE @<:@default=any@:>@])],
-              [enable_uppercasing=$enableval],
-              [enable_uppercasing=any])
-AC_SUBST([UPPERCASING], [$enable_uppercasing])
-AC_ARG_ENABLE([tokenweights],
-              [AS_HELP_STRING([--enable-tokenweights=WEIGHTS],
-                              [use word form frequencies from WEIGHTS @<:@default=no@:>@])],
-              [enable_tokenweights=$enableval],
-              [enable_tokenweights=no])
-AM_CONDITIONAL([WANT_TOKENWEIGHTS], [test "x$enable_tokenweights" != xno])
-AC_ARG_ENABLE([tagweights],
-              [AS_HELP_STRING([--enable-tagweights=WEIGHTS],
-                              [use tag likelihoods from WEIGTS @<:@default=no@:>@])],
-                              [enable_tagweights=$enableval],
-                              [enable_tagweights=no])
-AM_CONDITIONAL([WANT_TAGWEIGHTS], [test "x$enable_tagweights" != xno])
-AC_SUBST([TOKENWEIGHTS], [$enable_tokenweights])
-AC_SUBST([TAGWEIGHTS], [$enable_tagweights])
-AC_ARG_ENABLE([error_model],
-              [AS_HELP_STRING([--enable-error-model=ERROR],
-                              [create suggestion transducer from ERROR model @<:@default=edit-distance-2@:>@])],
-                              [enable_error_model=$enableval],
-                              [enable_error_model=edit-distance-2])
-AC_SUBST([ERROR_MODEL], [$enable_error_model])
-AC_ARG_ENABLE([filter],
-              [AS_HELP_STRING([--enable-filter=FILTER],
-                              [filter morphology with FILTER rule @<:@default=no@:>@])],
-                              [enable_filter=$enableval],
-                              [enable_filter=no])
-AC_SUBST([FILTER], [$enable_filter])
-AM_CONDITIONAL([WANT_FILTERS], [test "x$enable_filter" != xno])
-AC_ARG_ENABLE([doc],
-              [AS_HELP_STRING([--enable-doc],
-                              [enable building of documentation using docutils @<:@default=yes@<:@])],
-              [enable_doc=$enableval],
-              [enable_doc=yes])
-AC_ARG_ENABLE([morphology],
-              [AS_HELP_STRING([--enable-morphology],
-                              [compile morphological analyser @<:@default=yes@:>@])],
-                              [enable_morphology=$enableval],
-                              [enable_morphology=yes])
-AM_CONDITIONAL([WANT_MORPHOLOGY], [test "x$enable_morphology" != xno])
-AC_ARG_ENABLE([generation],
-              [AS_HELP_STRING([--enable-generation],
-                              [compile morphological generation @<:@default=yes@:>@])],
-                              [enable_generation=$enableval],
-                              [enable_generation=yes])
-AM_CONDITIONAL([WANT_GENERATION], [test "x$enable_generation" != xno])
-AC_ARG_ENABLE([dictionary],
-              [AS_HELP_STRING([--enable-dictionary],
-                              [compile dicitonaries @<:@default=yes@:>@])],
-                              [enable_dictionary=$enableval],
-                              [enable_dictionary=yes])
-AM_CONDITIONAL([WANT_DICTIONARY], [test "x$enable_dictionary" != xno])
-AC_ARG_ENABLE([hyphenation],
-              [AS_HELP_STRING([--enable-hyphenation],
-                              [compile hyphenators @<:@default=no@:>@])],
-                              [enable_hyphenation=$enableval],
-                              [enable_hyphenation=no])
-AM_CONDITIONAL([WANT_HYPHENATION], [test "x$enable_hyphenation" != xno])
+AM_CONDITIONAL([WANT_HFST], [test "x$with_hfst" != "xno"])
 AC_ARG_ENABLE([voikko],
               [AS_HELP_STRING([--enable-voikko],
                               [compile voikko support @<:@default=yes@:>@])],
@@ -89,15 +24,13 @@ AC_ARG_ENABLE([voikko],
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
 # generic tagset switch to override (for lexc serialisation)
-AC_ARG_ENABLE([tagset],
-              [AS_HELP_STRING([--enable-tagset],
-                              [tagset to use @<:@default=ftb3@:>@])],
-                             [tag_format=$enableval],
-                             [tag_format=ftb3])
-AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
-AM_CONDITIONAL([WANT_TAGGER_HACKS], [test "$tag_format" != ${tag_format/+taggerhacks/}])
-AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
-AC_SUBST([TAG_FORMAT], [${tag_format%%[[+-]]*}])
+AC_ARG_ENABLE([ftb3],
+              [AS_HELP_STRING([--enable-ftb3],
+                              [tagset to use @<:@default=enable@:>@])],
+                             [enable_ftb3=$enableval],
+                             [enable_ftb3=yes])
+AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
+
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
             [with_pbs_mail=$withval],
@@ -279,17 +212,6 @@ AC_OUTPUT
 
 cat <<EOF
 Configured $PACKAGE_STRING:
-    * Uppercasing ruleset: $enable_uppercasing
-    * Weighting method: $enable_tagweights + $enable_tokenweights
-    * Default error model: $enable_error_model
-    * Filter analyses: $enable_filter
-    * Create optimised lookup format: $enable_optimisations
-    * Morphological analyser: $enable_morphology
-    * Morphological generator: $enable_generation
-    * Dictionaries: $enable_dictionary
-    * Hyphenation: $enable_hyphenation
-    * Voikko support: $enable_voikko
-    * Tag format: $tag_format
 EOF
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
 $THEREARENOEASTEREGGS say make, make check and make install to proceed
