@@ -67,7 +67,8 @@ if WANT_HFST
 GENERIC_AUTOMATA=omorfi.accept.hfst \
 				 omorfi.lemmatise.hfst \
 				 omorfi.tokenise.hfst \
-				 omorfi.hyphenate.hfst
+				 omorfi.hyphenate.hfst \
+				 omorfi.segment.hfst
 GENERIC_GENERATED=omorfi-uppercase-any.twolc \
 				  omorfi-phon.twolc \
 				  omorfi-zh.regex omorfi-sh.regex \
@@ -146,6 +147,10 @@ inflections.tsv: $(INFLECTIONS)
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 # database to generic
+omorfi.lexc: master.tsv stemparts.tsv inflections.tsv tsv2lexc.py
+	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv -o $@ -f=generic
+
 omorfi-phon.twolc:
 	$(PYTHON) $(srcdir)/generate-twolcs.py -r recase-any -o $@
 
@@ -226,7 +231,7 @@ omorfi-sanalista.xml: master.tsv $(FORMAT_SCIRPTS)
 endif
 # }}}
 #
-# {{{GENERIC COMPILATION
+# {{{ COMPILATION RECIPES
 # compile lexc
 %.lexc.hfst: %.lexc
 	$(HLEXC) --Werror -o $@ $<
@@ -244,6 +249,92 @@ endif
 
 # }}}
 #
+# {{{ GENERIC tagsetless stuff
+temporary.phon.hfst: omorfi.lexc.hfst omorfi-phon.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-phon.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+# word-boundary huphens
+temporary.hyphenated.hfst: temporary.phon.hfst \
+	omorfi-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-hyphens.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+# spelling variations
+temporary.relaxed.hfst: temporary.hyphenated.hfst \
+	omorfi-sh.regex.hfst \
+	omorfi-zh.regex.hfst \
+	omorfi-orthographic-variations.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-orthographic-variations.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
+		$(HSUB) $(HFST_FLAGS) -f š -T omorfi-sh.regex.hfst |\
+		$(HSUB) $(HFST_FLAGS) -f ž -T omorfi-zh.regex.hfst -o $@
+
+# case variations
+temporary.orth.hfst: temporary.relaxed.hfst \
+	omorfi-uppercase-first.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-uppercase-first.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+# make tag adjustments
+temporary.tagged.hfst: temporary.orth.hfst
+	cp -vf $< $@
+
+# remove remaining morph boundaries at this point
+temporary.unbounded.hfst: temporary.tagged.hfst |\
+	omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-remove-boundaries.regex.hfst  |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+# no tag weights
+temporary.tagweighted.hfst: temporary.unbounded.hfst
+	cp -v $< $@
+
+# no token weights
+temporary.tokenweighted.hfst: temporary.tagweighted.hfst
+	cp -v $< $@
+
+# no other weight combinations
+temporary.weighted.hfst: temporary.tokenweighted.hfst
+	cp -v $< $@
+
+# lemmatisation is now built by messing with ftb3
+omorfi.lemmatise.hfst: temporary.ftb3.hfst taghacks/lemmatize-ftb3.relabel
+	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/taghacks/lemmatize-ftb3.relabel -i $< -o $@
+
+# 
+omorfi.segment.hfst: temporary.weighted.hfst
+	$(HINV) $< -o $@
+
+# create one tape spell checker
+omorfi.accept.hfst: temporary.ftb3.hfst
+	$(HPR) $(HFST_FLAGS) --project=upper -i $< -o $@
+
+# create basic corpus tokeniser
+# Should split at even-odd boundaries of word punct* word punct*
+omorfi.token-separator.hfst:
+	echo '0:"\n" ;' | $(HREGEX) -o omorfi.token-separator.hfst
+
+omorfi.tokenise.hfst: omorfi.accept.hfst \
+					  omorfi-between-tokens.regex.hfst \
+					  omorfi-token.regex.hfst \
+					  omorfi.token-separator.hfst
+	$(HCAT) $(HFST_FLAGS) omorfi-token.regex.hfst \
+		omorfi.token-separator.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o omorfi.nondict-token.hfst
+	$(HCAT) $(HFST_FLAGS) omorfi-between-tokens.regex.hfst \
+		omorfi.token-separator.hfst -o omorfi-token-joiner.hfst
+	$(HCAT) $(HFST_FLAGS) omorfi.nondict-token.hfst \
+		omorfi-token-joiner.hfst |\
+		$(HREP) $(HFST_FLAGS) -f 1 -o $@
+
+# hyphenation dictionary
+omorfi.hyphenate.hfst: temporary-ftb3.orth.hfst \
+						omorfi-ftb3-hyphenate.twolc.hfst
+	cat temporary-ftb3.orth.hfst |\
+		$(HIC) $(HFST_FLAGS) -2 omorfi-ftb3-hyphenate.twolc.hfst > $@
+
+# }}}
 # {{{FTB3 compilation
 # combine lexical data with phonology
 temporary-ftb3.phon.hfst: omorfi-ftb3.lexc.hfst omorfi-phon.twolc.hfst
@@ -386,41 +477,6 @@ omorfi-omor.generate.hfst: temporary-omor.unbounded.hfst
 
 # }}}
 #
-# {{{ GENERICs
-
-# lemmatisation is now built by messing with ftb3
-omorfi.lemmatise.hfst: temporary.ftb3.hfst taghacks/lemmatize-ftb3.relabel
-	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/taghacks/lemmatize-ftb3.relabel -i $< -o $@
-
-# create one tape spell checker
-omorfi.accept.hfst: temporary.ftb3.hfst
-	$(HPR) $(HFST_FLAGS) --project=upper -i $< -o $@
-
-# create basic corpus tokeniser
-# Should split at even-odd boundaries of word punct* word punct*
-omorfi.token-separator.hfst:
-	echo '0:"\n" ;' | $(HREGEX) -o omorfi.token-separator.hfst
-
-omorfi.tokenise.hfst: omorfi.accept.hfst \
-					  omorfi-between-tokens.regex.hfst \
-					  omorfi-token.regex.hfst \
-					  omorfi.token-separator.hfst
-	$(HCAT) $(HFST_FLAGS) omorfi-token.regex.hfst \
-		omorfi.token-separator.hfst |\
-		$(HMIN) $(HFST_FLAGS) -o omorfi.nondict-token.hfst
-	$(HCAT) $(HFST_FLAGS) omorfi-between-tokens.regex.hfst \
-		omorfi.token-separator.hfst -o omorfi-token-joiner.hfst
-	$(HCAT) $(HFST_FLAGS) omorfi.nondict-token.hfst \
-		omorfi-token-joiner.hfst |\
-		$(HREP) $(HFST_FLAGS) -f 1 -o $@
-
-# hyphenation dictionary
-omorfi.hyphenate.hfst: temporary-ftb3.orth.hfst \
-						omorfi-ftb3-hyphenate.twolc.hfst
-	cat temporary-ftb3.orth.hfst |\
-		$(HIC) $(HFST_FLAGS) -2 omorfi-ftb3-hyphenate.twolc.hfst > $@
-
-# }}}
 #
 # {{{SPELL-CHECKING
 # voikko speller HFST beta targets'

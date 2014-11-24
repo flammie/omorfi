@@ -40,13 +40,6 @@ from parse_csv_data import parse_defaults_from_tsv
 
 def main():
     # defaults
-    pos_files = {"ADJECTIVE": 'adjectives.lexc', 
-            "NOUN": 'nouns.lexc',
-            "VERB": 'verbs.lexc',
-            "PARTICLE": 'particles.lexc',
-            "ACRONYM": 'acronyms.lexc',
-            "PRONOUN": 'pronouns.lexc',
-            "NUMERAL": 'numerals.lexc'}
     stubfiles = dict()
     stempartfiles = dict()
     inflectfiles = dict()
@@ -88,7 +81,7 @@ def main():
 
     def FormatArgType(v):
         baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google"]
+                "giellatekno", "ftb3", "generic", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:

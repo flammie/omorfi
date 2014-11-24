@@ -182,8 +182,8 @@ def format_lexc(wordmap, format):
         return format_lexc_apertium(wordmap)
     elif format.startswith("google"):
         return format_lexc_google(wordmap)
-    elif format.startswith("segment"):
-        return format_lexc_segments(wordmap)
+    elif format.startswith("generic"):
+        return format_lexc_generic(wordmap)
     else:
         print("missing format", format, file=stderr)
 
@@ -196,8 +196,8 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_ftb3(fields[1], fields[2], cont)
         elif format.startswith("google"):
             stuffs += format_continuation_lexc_google(fields[1], fields[2], cont)
-        elif format.startswith("segment"):
-            stuffs += format_continuation_lexc_segments(fields[1], fields[2], cont)
+        elif format.startswith("generic"):
+            stuffs += format_continuation_lexc_generic(fields[1], fields[2], cont)
         elif format.startswith("apertium"):
             stuffs += format_continuation_lexc_apertium(fields[1], fields[2], cont)
         else:
@@ -214,10 +214,11 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_google(analyses)
     elif format.startswith("apertium"):
         stuffs += format_analysis_lexc_apertium(analyses)
-    elif format.startswith("segment"):
-        stuffs += format_analysis_lexc_segments(analyses)
+    elif format.startswith("generic"):
+        stuffs += format_analysis_lexc_generic(analyses)
     else:
         print("missing format", format, file=stderr)
+        exit(1)
     return stuffs
 
 def format_tag(stuff, format):
@@ -227,13 +228,13 @@ def format_tag(stuff, format):
         return format_tag_ftb3(stuff)
     elif format.startswith('google'):
         return format_tag_google(stuff)
-    elif format.startswith('segment'):
+    elif format.startswith('generic'):
         return ''
     elif format.startswith('apertium'):
         return format_tag_apertium(stuff)
     else:
         print("Wrong format for generic tag formatting:", format, file=stderr)
-
+        exit(1)
 
 
 def format_tag_google(stuff):
@@ -251,7 +252,7 @@ def format_analysis_lexc_google(anals):
         googstring += format_tag_google(tag)
     return googstring
 
-def format_analysis_segments(anals):
+def format_analysis_generic(anals):
     return ''
 
 
@@ -264,7 +265,7 @@ def format_continuation_lexc_google(anals, surf, cont):
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 
-def format_continuation_lexc_segments(anals, surf, cont):
+def format_continuation_lexc_generic(anals, surf, cont):
     surf = lexc_escape(surf)
     return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, word_boundary),
             surf, cont)
@@ -295,7 +296,7 @@ def format_lexc_google(wordmap):
                 new_para)]
     return "\n".join(retvals)
 
-def format_lexc_segments(wordmap):
+def format_lexc_generic(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['stub']) + '{STUB}'
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
@@ -315,7 +316,7 @@ def format_multichars_lexc(format):
         multichars += "!! Google universal pos set:\n"
         for mcs in google_multichars:
             multichars += mcs + "\n"
-    elif format.startswith("segments"):
+    elif format.startswith("generic"):
         pass
     elif format.startswith("apertium"):
         multichars += format_multichars_lexc_apertium()
@@ -350,9 +351,10 @@ def format_root_lexicon(format):
 0   PUNCTUATION ;
 0   CONJUNCTIONVERB ;
 """
-    root += format_tag('B→', format) + ':-   NOUN ;\n'
-    root += format_tag('B→', format) + ':-   ADJECTIVE ;\n'
-    root += format_tag('B→', format) + ':-   SUFFIX ;\n'
+    if format != 'generic':
+        root += format_tag('B→', format) + ':-   NOUN ;\n'
+        root += format_tag('B→', format) + ':-   ADJECTIVE ;\n'
+        root += format_tag('B→', format) + ':-   SUFFIX ;\n'
     root += version_id_easter_egg + ':0 # ;\n'
     if '+taggerhacks' in format:
         root += "0   TAGGER_HACKS    ;\n"
