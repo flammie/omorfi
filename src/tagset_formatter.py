@@ -541,7 +541,7 @@ def format_rules_regex(format, ruleset):
         if format == 'ftb3':
             regexstring += '# Remove before compounds:\n'
             regexstring += '[ '
-            regexstring += ' -> 0, '.join([format_tag(tag, format) for tag in \
+            regexstring += ' -> 0,\n '.join([format_tag(tag, format) for tag in \
                     ['ADJECTIVE', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUMERAL', 'PROPER', 'DIGIT', 'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl']])
             regexstring += '-> 0 || _ ?* %# ]\n'
             regexstring += '.o.\n'
@@ -579,6 +579,20 @@ def format_rules_regex(format, ruleset):
                     ' ' + format_tag('Nsg', format) +\
                     '|| _ '
             regexstring += ';\n'
+    elif ruleset == 'lemmatise':
+        if format == 'ftb3':
+            regexstring += '# Remove everything:\n'
+            regexstring += '[ '
+            regexstring += ' -> 0,\n'.join([format_tag(tag, format) for tag in \
+                    ['ADJECTIVE', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUMERAL', 'PROPER', 'DIGIT', 'COORDINATING', 'ADVERBIAL', 'ORDINAL', 'DEMONSTRATIVE', 'PERSONAL', 'INDEFINITE', 'QUANTOR', 'INTERROGATIVE', 'REFLEXIVE', 'RELATIVE', 'PUNCTUATION', 'DASH', 'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1', 'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL', 'UNSPECIFIED', 'PRONOUN', 'INTERJECTION',
+                        'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl',
+                        'Osg1', 'Osg2', 'O3', 'Opl1', 'Opl2',
+                        'Qka', 'Qs', 'Qpa', 'Qko', 'Qkin', 'Qkaan', 'Qhan',
+                        'Vact', 'Vpss',
+                        'Ncon', 'Nneg', 'Dnut', 'Dtu', 'Dva', 'Dtava',
+                        'Ia', 'Ie', 'Ima',
+                        'Tcond', 'Timp', 'Tpast', 'Tpot', 'Tpres', 'Topt']])
+            regexstring += '-> 0 || _ ] ;\n'
     elif ruleset == 'remove-boundaries':
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \
                     [word_boundary, deriv_boundary, morph_boundary,\

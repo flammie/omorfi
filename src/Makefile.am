@@ -220,13 +220,17 @@ omorfi-ftb3-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
 		-r rewrite-tags -o $@
 
+omorfi-ftb3-lemmatise.regex:
+	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+		-r lemmatise -o $@
+
 # database to apertium
-omorfi.dix: master.tsv stemparts.tsv inflections.tsv $(FORMAT_SCIRPTS)
+omorfi.dix: master.tsv stemparts.tsv inflections.tsv
 	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@
 
 # database (back) to kotus
-omorfi-sanalista.xml: master.tsv $(FORMAT_SCIRPTS)
+omorfi-sanalista.xml: master.tsv
 	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
 endif
 # }}}
@@ -299,8 +303,8 @@ temporary.weighted.hfst: temporary.tokenweighted.hfst
 	cp -v $< $@
 
 # lemmatisation is now built by messing with ftb3
-omorfi.lemmatise.hfst: temporary.ftb3.hfst taghacks/lemmatize-ftb3.relabel
-	$(HSUB) $(HFST_FLAGS) -F $(srcdir)/taghacks/lemmatize-ftb3.relabel -i $< -o $@
+omorfi.lemmatise.hfst: temporary.ftb3.hfst omorfi-ftb3-lemmatise.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) $< omorfi-ftb3-lemmatise.regex.hfst -o $@
 
 # 
 omorfi.segment.hfst: temporary.weighted.hfst
