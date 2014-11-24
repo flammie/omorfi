@@ -13,11 +13,11 @@ stub_boundary="{STUB}"
 optional_hyphen="{hyph?}"
 # It's not fully symmetric so two sets
 fin_lowercase = "abcdefghijklmnopqrsštuvwxyzžåäö" + \
-    "áàâãāăąçćĉċčđðďéèêëēĕęėěƒĝğġģȟħíìîïĩīĭįıĳĵķĸĺļľŀłñńņňŉŋ" + \
+    "áàâãāăąçćĉċčđðďéèêëēĕęėěƒĝğġģȟħíìîïĩīĭįıĳĵķĸĺļľŀłñńņňŋ" + \
     "óòôōŏŕŗřśŝşſţťŧßþúùûüũūŭůųŵýŷÿűźżʒæøœőə"
 fin_uppercase = "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽÅÄÖ" \
-    "ÁÀÂÃĀĂĄÇĆĈĊČÐĎÉÈÊËĒĔĘĖĚĜĞĠĢȞĦÍÌÎÏĨĪĬĮİĲĴĶĹĻĽĿŁÑŃŅŇŊ" + \
-    "ÓÒÔŌŎŔŖŘŚŜŞŢŤŦÞÚÙÛÜŨŪŬŮŲŴÝŶŰŹŻƷÆØŒŐƏ"
+    "ÁÀÂÃĀĂĄÇĆĈĊČÐÐĎÉÈÊËĒĔĘĖĚƑĜĞĠĢȞĦÍÌÎÏĨĪĬĮİĲĴĶĸĹĻĽĿŁÑŃŅŇŊ" + \
+    "ÓÒÔŌŎŔŖŘŚŜŞSŢŤŦßÞÚÙÛÜŨŪŬŮŲŴÝŶŸŰŹŻƷÆØŒŐƏ"
 fin_lower_vowels = "aeiouyåäö" + \
     "áàâãāăąéèêëēĕęėěíìîïĩīĭįıóòôōŏúùûüũūŭůųýŷÿűæøœőə"
 fin_upper_vowels = "AEIOUYÅÄÖ" \
@@ -138,8 +138,8 @@ def lexc_escape(s):
 def twolc_escape(s):
     '''Escape symbols that have special meaning in twolc.'''
     s = s.replace("%", "__PERCENT__")
-    for c in ' <>0!:";%_^{}-[]/?+|&':
+    for c in ' @<>0!:";_^(){}-[]/?+|&*=$,':
         s = s.replace(c, "%" + c)
-    s = s.replace("__PERCENT__", "%%")
+    s = s.replace("%_%_PERCENT%_%_", "%%")
     return s
 
