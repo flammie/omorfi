@@ -14,6 +14,10 @@ from apertium_formatter import format_tag_apertium, \
 from ftb3_formatter import format_tag_ftb3, \
         format_analysis_lexc_ftb3, format_continuation_lexc_ftb3, \
         format_lexc_ftb3, format_multichars_lexc_ftb3
+from omor_formatter import format_tag_omor, \
+        format_analysis_lexc_omor, format_continuation_lexc_omor, \
+        format_lexc_omor, format_multichars_lexc_omor
+
 
 # these extra symbols appear always
 
@@ -304,8 +308,7 @@ def format_multichars_lexc(format):
     multichars = "Multichar_Symbols\n"
     if format.startswith("omor"):
         multichars += "!! OMOR set:\n"
-        for mcs in omor_multichars:
-            multichars += mcs + "\n"
+        multichars += format_multichars_lexc_omor()
     elif format.startswith("ftb3"):
         multichars += format_multichars_lexc_ftb3()
     elif format.startswith("google"):
@@ -465,7 +468,7 @@ def format_alphabet_twolc(format, ruleset):
 
 def format_sets_twolc(format, ruleset):
     twolcstring = 'Sets\n'
-    if ruleset.startswith('uppercase') or ruleset-startswith('recase'):
+    if ruleset.startswith('uppercase') or ruleset.startswith('recase'):
         twolcstring += 'Lower = ' + ' '.join(fin_lowercase) + ' ;' + \
                 '! Lowercase alphabets\n'
         twolcstring += 'Upper = ' + ' '.join(fin_uppercase) + ' ;' + \
@@ -589,17 +592,4 @@ def format_rules_regex(format, ruleset):
         print("Unknown ruleset", ruleset)
         return None
     return regexstring
-
-# self test
-if __name__ == '__main__':
-    fail = False
-    for stuff, omor in stuff2omor.items():
-        if len(omor) < 2:
-            continue
-        elif not omor in omor_multichars:
-            print("There are conflicting formattings in here!", omor, 
-                    "is not a valid defined omor multichar_symbol!")
-            fail = True
-    if fail:
-        exit(1)
 

@@ -361,3 +361,23 @@ def format_lexc_omor(wordmap, format):
                 new_para)]
     return "\n".join(retvals)
 
+def format_multichars_lexc_omor():
+    multichars = ''
+    for mcs in omor_multichars:
+        multichars += mcs + "\n"
+    return multichars
+
+
+# self test
+if __name__ == '__main__':
+    fail = False
+    for stuff, omor in stuff2omor.items():
+        if len(omor) < 2:
+            continue
+        elif not omor in omor_multichars:
+            print("There are conflicting formattings in here!", omor, 
+                    "is not a valid defined omor multichar_symbol!")
+            fail = True
+    if fail:
+        exit(1)
+

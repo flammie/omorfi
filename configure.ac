@@ -30,6 +30,12 @@ AC_ARG_ENABLE([ftb3],
                              [enable_ftb3=$enableval],
                              [enable_ftb3=yes])
 AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
+AC_ARG_ENABLE([omor],
+              [AS_HELP_STRING([--enable-omor],
+                              [tagset to use @<:@default=enable@:>@])],
+                             [enable_omor=$enableval],
+                             [enable_omor=yes])
+AM_CONDITIONAL([WANT_FTB3], [test "x$enable_omor" = xyes])
 
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
