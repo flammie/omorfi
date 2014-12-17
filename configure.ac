@@ -103,6 +103,11 @@ AC_ARG_WITH([pbs-mail],
             [with_pbs_mail=$withval],
             [with_pbs_mail=no])
 AC_SUBST([PBS_EMAIL], [$with_pbs_mail])
+AC_ARG_WITH([slurm-mail],
+            [AS_HELP_STRING([set email for slurm job @<:@default=disable pbs@:>@])],
+            [with_slurm_mail=$withval],
+            [with_slurm_mail=no])
+AC_SUBST([SLURM_EMAIL], [$with_slurm_mail])
 AC_ARG_ENABLE([big-tests],
               [AS_HELP_STRING([--enable-big-tests],
                               [whether to run large corpus tests @<:@default=no@:>@])],
@@ -239,6 +244,9 @@ AC_PATH_PROG([CLEAN_GUTENBERG], [unpack-gutenbergs.bash], [false])
 AC_PATH_PROG([CLEAN_JRC_ACQUIS], [unpack-jrc-acquis.bash], [false])
 AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 
+# big cluster stuff
+AC_PATH_PROG([QSUB], [qsub], [false])
+AC_PATH_PROG([SBATCH], [sbatch], [false])
 
 # we are not using any traditional programming so as to need these standard
 # sections:
@@ -278,6 +286,8 @@ AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
+AS_IF([test x$with_slurm_mail != xno],
+      [AC_CONFIG_FILES([test/clusterstuff.slurm])])
 
 AC_OUTPUT
 
@@ -294,6 +304,8 @@ Configured $PACKAGE_STRING:
     * Hyphenation: $enable_hyphenation
     * Voikko support: $enable_voikko
     * Tag format: $tag_format
+    * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
+    * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail
 EOF
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
 $THEREARENOEASTEREGGS say make, make check and make install to proceed
