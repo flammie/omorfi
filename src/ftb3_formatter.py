@@ -2,9 +2,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from omor_strings_io import lexc_escape, word_boundary, weak_boundary, \
-        morph_boundary, deriv_boundary, optional_hyphen, \
-        fail_formatting_missing_for
+from lexc_formatter import lexc_escape
+from omorfi_settings import word_boundary, weak_boundary, \
+        morph_boundary, deriv_boundary, optional_hyphen
+from omor_strings_io import fail_formatting_missing_for
 
 
 ftb3_multichars= {
@@ -248,7 +249,7 @@ stuff2ftb3 = {"Bc": "#",
         "": ""
         }
 
-def format_tag_ftb3(stuff):
+def format_stuff_ftb3(stuff):
     if stuff == '0':
         return "0"
     elif stuff in stuff2ftb3:
@@ -315,7 +316,7 @@ def format_analysis_lexc_ftb3(anals):
     for part in parts:
         reordered.append(part)
     for anal in reordered:
-        ftbstring += format_tag_ftb3(anal)
+        ftbstring += format_stuff_ftb3(anal)
     return ftbstring
 
 def format_continuation_lexc_ftb3(anals, surf, cont):
@@ -330,7 +331,7 @@ def format_continuation_lexc_ftb3(anals, surf, cont):
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
-def format_lexc_ftb3(wordmap, format):
+def format_wordmap_lexc_ftb3(wordmap, format):
     '''
     format string for canonical ftb3 format for morphological analysis
     '''
@@ -340,20 +341,20 @@ def format_lexc_ftb3(wordmap, format):
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
     if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
-        wordmap['analysis'] += format_tag_ftb3('PUNCTUATION')
+        wordmap['analysis'] += format_stuff_ftb3('PUNCTUATION')
     elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
-        wordmap['analysis'] += format_tag_ftb3(wordmap['pos'])
+        wordmap['analysis'] += format_stuff_ftb3(wordmap['pos'])
     elif wordmap['pos'] == 'CONJUNCTIONVERB':
         if wordmap['lemma'] == 'eikä':
             wordmap['lemma'] = 'ei'
-            wordmap['analysis'] = format_tag_ftb3('COORDINATING') + \
-                    format_tag_ftb3('Nneg')
+            wordmap['analysis'] = format_stuff_ftb3('COORDINATING') + \
+                    format_stuff_ftb3('Nneg')
         else:
-            wordmap['analysis'] = format_tag_ftb3('ADVERBIAL') + \
-                    format_tag_ftb3('Nneg')
+            wordmap['analysis'] = format_stuff_ftb3('ADVERBIAL') + \
+                    format_stuff_ftb3('Nneg')
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
-            wordmap['analysis'] += format_tag_ftb3(pclass)
+            wordmap['analysis'] += format_stuff_ftb3(pclass)
     else:
         print("not in FTB3 known poses or particle!\n", wordmap)
         exit(1)
@@ -361,12 +362,12 @@ def format_lexc_ftb3(wordmap, format):
         if 'PERSONAL' in wordmap['subcat']:
             wordmap['subcat'] = 'PERSONAL'
         for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_tag_ftb3(subcat)
+            wordmap['analysis'] += format_stuff_ftb3(subcat)
     if wordmap['is_proper']:
-        wordmap['analysis'] += format_tag_ftb3('PROPER')
+        wordmap['analysis'] += format_stuff_ftb3('PROPER')
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
-            wordmap['analysis'] += format_tag_ftb3(subcat)
+            wordmap['analysis'] += format_stuff_ftb3(subcat)
         if wordmap['lemma'] == '–':
             wordmap['analysis'].replace('Dash', 'EnDash')
         if wordmap['lemma'] == '—':

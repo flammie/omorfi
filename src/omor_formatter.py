@@ -2,9 +2,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from omor_strings_io import lexc_escape, word_boundary, weak_boundary, \
-        morph_boundary, deriv_boundary, optional_hyphen, \
-        fail_formatting_missing_for
+from lexc_formatter import lexc_escape
+from omorfi_settings import word_boundary, weak_boundary, \
+        morph_boundary, deriv_boundary, optional_hyphen
+from omor_strings_io import fail_formatting_missing_for
 
 
 omor_multichars = {
@@ -249,7 +250,7 @@ stuff2omor = {
         "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]", 
         "": ""}
 
-def format_tag_omor(stuff, format):
+def format_stuff_omor(stuff, format):
     if stuff == '0':
         return "0"
     if stuff in stuff2omor:
@@ -262,7 +263,7 @@ def format_tag_omor(stuff, format):
 def format_analysis_lexc_omor(anals, format):
     omorstring = ''
     for tag in anals.split('|'):
-        omorstring += format_tag_omor(tag, format)
+        omorstring += format_stuff_omor(tag, format)
     return omortstring
 
 def format_continuation_lexc_omor(anals, surf, cont, format):
@@ -294,11 +295,11 @@ def format_continuation_lexc_omor(anals, surf, cont, format):
     
     tags = anals.split('|')
     for tag in tags:
-        omorstring += format_tag_omor(tag, format)
+        omorstring += format_stuff_omor(tag, format)
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
 
-def format_lexc_omor(wordmap, format):
+def format_wordmap_lexc_omor(wordmap, format):
     '''
     format string for canonical omor format for morphological analysis
     '''
@@ -309,39 +310,39 @@ def format_lexc_omor(wordmap, format):
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
     wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJECTIVE')
     if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
-        wordmap['analysis'] += format_tag_omor(wordmap['pos'], format)
+        wordmap['analysis'] += format_stuff_omor(wordmap['pos'], format)
     if wordmap['is_suffix']:
-        wordmap['analysis'] += format_tag_omor('SUFFIX', format)
+        wordmap['analysis'] += format_stuff_omor('SUFFIX', format)
     if wordmap['is_prefix']:
-        wordmap['analysis'] += format_tag_omor('PREFIX', format)
+        wordmap['analysis'] += format_stuff_omor('PREFIX', format)
         if wordmap['pos'] == 'ADJECTIVE':
-            wordmap['analysis'] += format_tag_omor('Cpos', format)
+            wordmap['analysis'] += format_stuff_omor('Cpos', format)
 
     if wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
-            wordmap['analysis'] += format_tag_omor(pclass, format)
+            wordmap['analysis'] += format_stuff_omor(pclass, format)
 
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
-            wordmap['analysis'] += format_tag_omor(subcat, format)
+            wordmap['analysis'] += format_stuff_omor(subcat, format)
     
     if wordmap['subcat']:
         for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_tag_omor(subcat, format)
+            wordmap['analysis'] += format_stuff_omor(subcat, format)
     
     if wordmap['is_proper']:
         if '+propers' in format and wordmap['proper_noun_class']:
             for prop in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_omor(prop, format)
+                wordmap['analysis'] += format_stuff_omor(prop, format)
         else:
-            wordmap['analysis'] += format_tag_omor('PROPER', format)
+            wordmap['analysis'] += format_stuff_omor('PROPER', format)
 
     if '+semantics' in format and wordmap['sem']:
         for sem in wordmap['sem'].split(','):
-            wordmap['analysis'] += format_tag_omor(sem, format)
+            wordmap['analysis'] += format_stuff_omor(sem, format)
 
     if wordmap['style']:
-        wordmap['analysis'] += format_tag_omor(wordmap['style'], format)
+        wordmap['analysis'] += format_stuff_omor(wordmap['style'], format)
     
     if '+ktnkav' in format and wordmap['pos'] != 'ACRONYM':
         tag = "[KTN=%s]" %(lexc_escape(wordmap['kotus_tn']))

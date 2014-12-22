@@ -2,8 +2,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from omor_strings_io import lexc_escape, word_boundary, weak_boundary, \
-        optional_hyphen, fail_formatting_missing_for
+from lexc_formatter import lexc_escape
+from omorfi_settings import word_boundary, weak_boundary, \
+        optional_hyphen
+from omor_strings_io import fail_formatting_missing_for
 
 monodix_sdefs= {
         'abbr',
@@ -348,7 +350,7 @@ def format_monodix_licence():
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->"""
 
-def format_tag_apertium(stuff):
+def format_stuff_apertium(stuff):
     if len(stuff) == 0:
         return ""
     elif stuff in stuff2monodix:
@@ -365,7 +367,7 @@ def format_tag_apertium(stuff):
 def format_analysis_lexc_apertium(anals):
     apestring = ''
     for i in anals.split('|'):
-        apestring += format_tag_apertium(i)
+        apestring += format_stuff_apertium(i)
     return apestring
 
 def format_continuation_lexc_apertium(anals, surf, cont):
@@ -375,7 +377,7 @@ def format_continuation_lexc_apertium(anals, surf, cont):
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
-def format_lexc_apertium(wordmap):
+def format_wordmap_lexc_apertium(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
     wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
     if wordmap['is_suffix']:
@@ -387,38 +389,38 @@ def format_lexc_apertium(wordmap):
         if wordmap['is_proper']:
             wordmap['analysis'] += '%<np%>'
             for pc in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_tag_apertium(pc)
+                wordmap['analysis'] += format_stuff_apertium(pc)
         else:
             wordmap['analysis'] += '%<n%>'
     elif wordmap['pos'] == 'VERB':
         if wordmap['argument']:
-            wordmap['analysis'] += format_tag_apertium(wordmap['argument'] + '_arg')
+            wordmap['analysis'] += format_stuff_apertium(wordmap['argument'] + '_arg')
         else:
-            wordmap['analysis'] += format_tag_apertium(wordmap['pos'])
+            wordmap['analysis'] += format_stuff_apertium(wordmap['pos'])
     elif wordmap['pos'] == 'CONJUNCTIONVERB':
         if wordmap['lemma'] == 'eikä':
             wordmap['lemma'] = 'ei'
             wordmap['analysis'] = 'ja' + \
-                    format_tag_apertium('COORDINATING') + \
+                    format_stuff_apertium('COORDINATING') + \
                     '+ei' + \
-                    format_tag_apertium('Nneg')
+                    format_stuff_apertium('Nneg')
         else:
             wordmap['analysis'] = wordmap['lemma'][:-2] +\
-                    format_tag_apertium('ADVERBIAL') + \
+                    format_stuff_apertium('ADVERBIAL') + \
                     '+' + wordmap['lemma'][-2:] + \
-                    format_tag_apertium('Nneg')
+                    format_stuff_apertium('Nneg')
     elif wordmap['particle']:
         for pclass in wordmap['particle'].split('|'):
-            wordmap['analysis'] += format_tag_apertium(pclass)
+            wordmap['analysis'] += format_stuff_apertium(pclass)
     else:
-        wordmap['analysis'] += format_tag_apertium(wordmap['pos'])
+        wordmap['analysis'] += format_stuff_apertium(wordmap['pos'])
 
     if wordmap['subcat']:
         for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_tag_apertium(subcat)
+            wordmap['analysis'] += format_stuff_apertium(subcat)
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
-            wordmap['analysis'] += format_tag_apertium(subcat)
+            wordmap['analysis'] += format_stuff_apertium(subcat)
     retvals = ""
     wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
     wordmap['stub'] = lexc_escape(wordmap['stub'])
