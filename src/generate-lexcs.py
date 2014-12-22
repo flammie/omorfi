@@ -32,8 +32,9 @@ from time import strftime
 import argparse
 import csv
 
-from tagset_formatter import format_lexc, format_multichars_lexc, \
-        format_root_lexicon, format_continuation_lexc, format_copyright_lexc
+from lexc_formatter import format_wordmap_lexc, format_multichars_lexc, \
+        format_root_lexicon_lexc, format_continuation_lexc, \
+        format_copyright_lexc
 from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
@@ -121,7 +122,7 @@ def main():
     if args.verbose:
         print("Creating Multichar_Symbols and Root")
     print(format_multichars_lexc(args.format), file=args.output)
-    print(format_root_lexicon(args.format), file=args.output)
+    print(format_root_lexicon_lexc(args.format), file=args.output)
     # read from csv files
     for tsv_filename in args.masterfilenames:
         if args.verbose:
@@ -167,7 +168,7 @@ def main():
                 if wordmap['real_pos']:
                     wordmap['pos'] = wordmap['real_pos']
                 # format output
-                print(format_lexc(wordmap, args.format), 
+                print(format_wordmap_lexc(wordmap, args.format), 
                       file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")

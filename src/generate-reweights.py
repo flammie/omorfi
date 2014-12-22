@@ -24,7 +24,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from tagset_formatter import format_tag
+from lexc_formatter import format_stuff
 
 # standard UI stuff
 
@@ -74,8 +74,8 @@ def main():
             'Udial': '+4.004', 'Urare': '+4.004', 'Unonstd': '+4.004',
             'Xabe': '+0.1', 'Xcom': '+1.001', 'Xins': '+2.002'}
     for tag, weight in tagweights.items():
-        if format_tag(tag, args.format) and format_tag(tag, args.format) != '0':
-            print(format_tag(tag, args.format), weight, sep='\t', file=args.output)
+        if format_stuff(tag, args.format) and format_stuff(tag, args.format) != '0':
+            print(format_stuff(tag, args.format), weight, sep='\t', file=args.output)
     exit(0)
 
 

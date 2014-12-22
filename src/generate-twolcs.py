@@ -25,7 +25,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from tagset_formatter import format_tag, format_alphabet_twolc, \
+from twolc_formatter import format_alphabet_twolc, \
         format_sets_twolc, format_definitions_twolc, format_rules_twolc
 
 # standard UI stuff

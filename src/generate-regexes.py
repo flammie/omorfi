@@ -25,7 +25,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from tagset_formatter import format_tag, format_rules_regex
+from regex_formatter import format_rules_regex
 
 # standard UI stuff
 
