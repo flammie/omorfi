@@ -2,37 +2,6 @@
 
 from sys import stderr
 
-# common symbols for all
-
-version_id_easter_egg='OMORFI_VERSION_≥_14_©_GNU_GPL_V3'
-word_boundary="{WB}"
-weak_boundary="{XB}"
-deriv_boundary="{DB}"
-morph_boundary="{MB}"
-stub_boundary="{STUB}"
-optional_hyphen="{hyph?}"
-# It's not fully symmetric so two sets
-fin_lowercase = "abcdefghijklmnopqrsštuvwxyzžåäö" + \
-    "áàâãāăąçćĉċčđðďéèêëēĕęėěƒĝğġģȟħíìîïĩīĭįıĳĵķĸĺļľŀłñńņňŋ" + \
-    "óòôōŏŕŗřśŝşſţťŧßþúùûüũūŭůųŵýŷÿűźżʒæøœőə"
-fin_uppercase = "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽÅÄÖ" \
-    "ÁÀÂÃĀĂĄÇĆĈĊČÐÐĎÉÈÊËĒĔĘĖĚƑĜĞĠĢȞĦÍÌÎÏĨĪĬĮİĲĴĶĸĹĻĽĿŁÑŃŅŇŊ" + \
-    "ÓÒÔŌŎŔŖŘŚŜŞSŢŤŦßÞÚÙÛÜŨŪŬŮŲŴÝŶŸŰŹŻƷÆØŒŐƏ"
-fin_lower_vowels = "aeiouyåäö" + \
-    "áàâãāăąéèêëēĕęėěíìîïĩīĭįıóòôōŏúùûüũūŭůųýŷÿűæøœőə"
-fin_upper_vowels = "AEIOUYÅÄÖ" \
-    "ÁÀÂÃĀĂĄÉÈÊËĒĔĘĖĚÍÌÎÏĨĪĬĮİÓÒÔŌŎÚÙÛÜŨŪŬŮŲÝŶŰÆØŒŐƏ"
-fin_vowels = fin_lower_vowels + fin_upper_vowels
-fin_lower_consonants = "bcdfghjklmnpqrsštvwxzž" + \
-    "çćĉċčđðďƒĝğġģȟħĵķĸĺļľŀłñńņňŉŋŕŗřśŝşſţťŧßþŵźżʒ"
-fin_upper_consonants = "BCDFGHJKLMNPQRSŠTVWXZŽ" \
-    "ÇĆĈĊČÐĎĜĞĠĢȞĦĴĶĹĻĽĿŁÑŃŅŇŊŔŖŘŚŜŞŢŤŦÞŴŹŻƷ"
-fin_consonants = fin_lower_consonants + fin_upper_consonants
-# the words containing symbols are likely weird / props etc.
-fin_symbols = "1234567890§!\"#¤%&/()=?½@£$‚{[]}<>*"
-# known variants and old orthographies 1:1
-# (a conservative listing for sure)
-fin_orth_pairs = [("’", "'"), ("’", "´"), ("’", "′"), ("-", "‐"), ("-", "‑"), ("-", "‑")]
 
 def fail_formatting_missing_for(stuff, format, moar=None):
     print("\033[93mMissing tag!\033[0m Trying to format:", stuff, "for tagset:",
@@ -121,25 +90,4 @@ def replace_rightmosts(s, needles, repls):
         print("tried to ", needles, " => ", repls, " in ", s, file=stderr)
     return s
 
-def lexc_escape(s):
-    '''Escape symbols that have special meaning in lexc.'''
-    s = s.replace("%", "__PERCENT__")
-    s = s.replace(" ", "% ")
-    s = s.replace("<", "%<")
-    s = s.replace(">", "%>")
-    s = s.replace("0", "%0")
-    s = s.replace("!", "%!")
-    s = s.replace(":", "%:")
-    s = s.replace('"', '%"')
-    s = s.replace(";", "%;")
-    s = s.replace("__PERCENT__", "%%")
-    return s
-
-def twolc_escape(s):
-    '''Escape symbols that have special meaning in twolc.'''
-    s = s.replace("%", "__PERCENT__")
-    for c in ' @<>0!:";_^(){}-[]/?+|&*=$,':
-        s = s.replace(c, "%" + c)
-    s = s.replace("%_%_PERCENT%_%_", "%%")
-    return s
 
