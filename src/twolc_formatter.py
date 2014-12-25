@@ -4,6 +4,25 @@ from omorfi_settings import common_multichars, \
         fin_lowercase, fin_uppercase, fin_vowels, fin_consonants, \
         optional_hyphen
 
+def format_copyright_twolc():
+    return """
+! This automatically generated twolc data is originated from 
+! omorfi database.
+! Copyright (c) 2014 Omorfi contributors
+
+! This program is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, version 3 of the License
+
+! This program is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+
+! You should have received a copy of the GNU General Public License
+! along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
 def twolc_escape(s):
     '''Escape symbols that have special meaning in twolc.'''
     s = s.replace("%", "__PERCENT__")

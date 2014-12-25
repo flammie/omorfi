@@ -62,6 +62,7 @@ def main():
     # setup files
     if args.verbose: 
         print("Writing everything to", args.output.name)
+    print(format_copyright_twolc(), file=args.output)
     # print definitions to rootfile
     if args.verbose:
         print("Creating Alphabet")
