@@ -6,29 +6,12 @@ hfstfidatadir=$(datadir)/hfst/fi/
 voikkosharedir=$(libdir)/voikko/3/
 
 # {{{ Files
-# Database
+# Origins
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
+# Lexicography
+# 
 LEXEMES=lexemes/lexemes.tsv
-STEMPARTS=stub-stem-inflection/acronym-stems.tsv \
-		  stub-stem-inflection/adjective-stems.tsv \
-		  stub-stem-inflection/digit-stubs.tsv \
-		  stub-stem-inflection/digit-stems.tsv \
-		  stub-stem-inflection/noun-stems.tsv \
-		  stub-stem-inflection/numeral-stems.tsv \
-		  stub-stem-inflection/particle-stems.tsv \
-		  stub-stem-inflection/pronoun-stems.tsv \
-		  stub-stem-inflection/symbol-stems.tsv \
-		  stub-stem-inflection/51-stems.tsv \
-		  stub-stem-inflection/verb-stems.tsv
-INFLECTIONS=stub-stem-inflection/acro-inflections.tsv \
-			stub-stem-inflection/adjective-inflections.tsv \
-			stub-stem-inflection/digit-inflections.tsv \
-			stub-stem-inflection/noun-inflections.tsv \
-			stub-stem-inflection/numeral-inflections.tsv \
-			stub-stem-inflection/particle-inflections.tsv \
-			stub-stem-inflection/pronoun-inflections.tsv \
-			stub-stem-inflection/symbol-inflections.tsv \
-			stub-stem-inflection/verb-inflections.tsv
+# lexical features
 JOINS=attributes/boundaries.tsv \
 	  attributes/origin.tsv \
 	  attributes/plurale-tantum.tsv \
@@ -44,14 +27,50 @@ JOINS=attributes/boundaries.tsv \
 	  attributes/usage.tsv \
 	  attributes/verb-arguments.tsv
 
-# Scripts
-FORMAT_SCIRPTS=tagset_formatter.py \
-			   apertium_formatter.py \
-			   ftb3_formatter.py
-CONVERSION_SCIRPTS=tsv2lexc.py tsvjoin.py tsv_expand.py tsv2monodix.py \
-				   tsv2kotussanalista.py tsv2yaml.py \
-				   serialise-reweighter.py \
-				   generate-twolcs.py generate-regexes.py
+# Morphology
+# stem variants by deletion and concatenations
+STEMPARTS=stub-stem-inflection/acronym-stems.tsv \
+		  stub-stem-inflection/adjective-stems.tsv \
+		  stub-stem-inflection/digit-stubs.tsv \
+		  stub-stem-inflection/digit-stems.tsv \
+		  stub-stem-inflection/noun-stems.tsv \
+		  stub-stem-inflection/numeral-stems.tsv \
+		  stub-stem-inflection/particle-stems.tsv \
+		  stub-stem-inflection/pronoun-stems.tsv \
+		  stub-stem-inflection/symbol-stems.tsv \
+		  stub-stem-inflection/51-stems.tsv \
+		  stub-stem-inflection/verb-stems.tsv
+# suffixes by concatenations
+INFLECTIONS=stub-stem-inflection/acro-inflections.tsv \
+			stub-stem-inflection/adjective-inflections.tsv \
+			stub-stem-inflection/digit-inflections.tsv \
+			stub-stem-inflection/noun-inflections.tsv \
+			stub-stem-inflection/numeral-inflections.tsv \
+			stub-stem-inflection/particle-inflections.tsv \
+			stub-stem-inflection/pronoun-inflections.tsv \
+			stub-stem-inflection/symbol-inflections.tsv \
+			stub-stem-inflection/verb-inflections.tsv
+
+# }}}
+#
+# {{{Scripts (variable name = SCIRPTS cause automagic _SCRIPTS)
+# tag formats
+FORMAT_SCIRPTS=apertium_formatter.py \
+			   ftb3_formatter.py \
+			   omor_formatter.py \
+			   tdt_formatter.py
+# file formats
+GENERATOR_SCIRPTS=generate-lexcs.py \
+				  generate-twolcs.py \
+				  generate-regexes.py \
+				  generate-reweights.py \
+				  generate-edit-distance.py \
+				  generate-monodix.py \
+				  generate-yaml.py \
+				  generate-kotus-sanalista.py
+# Raw-ish database handling
+DATABASE_SCIRPTS=tsvjoin.py tsv_expand.py
+# Finnish specific lot
 FIN_SCIRPTS=gradation.py \
 			parse_csv_data.py \
 			plurale_tantum.py \
@@ -60,9 +79,11 @@ FIN_SCIRPTS=gradation.py \
 			guess_new_class.py \
 			wordmap.py \
 			omor_strings_io.py
-SCIRPTS=$(FORMAT_SCIRPTS) $(CONVERSION_SCIRPTS) $(FIN_SCIRPTS)
-
-# Generated files
+SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
+		$(FIN_SCIRPTS)
+# }}}
+#
+# {{{Generated files
 if WANT_HFST
 GENERIC_AUTOMATA=omorfi.accept.hfst \
 				 omorfi.lemmatise.hfst \
@@ -94,12 +115,14 @@ OMOR_GENERATED=omorfi-omor.lexc omorfi-omor.reweight omorfi-omor-tests.yaml \
 
 endif
 endif
-
-# Autotools install these (settings at the top)
+# }}}
+# {{{Autotools install
+# destnations directories for this stuff at the top of the file
 hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA)
 voikkoshare_DATA=speller-omorfi.zhfst
 
 # These go into dist tarballs... which we no longer make
+# N.B. for distcheck anyways
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
 		   voikko-fi_FI.pro index.xml
@@ -147,8 +170,8 @@ inflections.tsv: $(INFLECTIONS)
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 # database to generic
-omorfi.lexc: master.tsv stemparts.tsv inflections.tsv tsv2lexc.py
-	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
+omorfi.lexc: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=generic
 
 omorfi-phon.twolc:
@@ -192,13 +215,13 @@ omorfi-hyphenate.twolc:
 
 # database to omor 
 omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=omor -v
+	$(PYTHON) $(srcdir)/generate-yamls.py -i $< -o $@ -f=omor -v
 
-omorfi-omor.reweight: serialise-reweighter.py
-	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=omor -o $@
+omorfi-omor.reweight: generate-reweights.py
+	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=omor -o $@
 
-omorfi-omor.lexc: master.tsv stemparts.tsv inflections.tsv tsv2lexc.py
-	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
+omorfi-omor.lexc: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=omor
 
 omorfi-omor-rewrite-tags.regex:
@@ -207,13 +230,13 @@ omorfi-omor-rewrite-tags.regex:
 
 # database to ftb3 
 omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/tsv2yaml.py -i $< -o $@ -f=ftb3 -v
+	$(PYTHON) $(srcdir)/generate-yamls.py -i $< -o $@ -f=ftb3 -v
 
-omorfi-ftb3.reweight: serialise-reweighter.py
-	$(PYTHON) $(srcdir)/serialise-reweighter.py -v -f=ftb3 -o $@
+omorfi-ftb3.reweight: generate-reweights.py
+	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=ftb3 -o $@
 
-omorfi-ftb3.lexc: master.tsv stemparts.tsv inflections.tsv tsv2lexc.py
-	$(PYTHON) $(srcdir)/tsv2lexc.py -v -m master.tsv -p stemparts.tsv \
+omorfi-ftb3.lexc: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@ -f=ftb3
 
 omorfi-ftb3-rewrite-tags.regex:
@@ -226,12 +249,12 @@ omorfi-ftb3-lemmatise.regex:
 
 # database to apertium
 omorfi.dix: master.tsv stemparts.tsv inflections.tsv
-	$(PYTHON) $(srcdir)/tsv2monodix.py -v -m master.tsv -p stemparts.tsv \
+	$(PYTHON) $(srcdir)/generate-monodix.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@
 
 # database (back) to kotus
 omorfi-sanalista.xml: master.tsv
-	$(PYTHON) $(srcdir)/tsv2kotussanalista.py -v -m master.tsv -o $@
+	$(PYTHON) $(srcdir)/generate-kotus-sanalista.py -v -m master.tsv -o $@
 endif
 # }}}
 #
@@ -506,4 +529,4 @@ speller-omorfi.zhfst: omorfi.accept.hfst \
 	-rm -f acceptor.default.hfst errmodel.default.hfst
 
 # }}}
-# vim: set foldmethod=marker
+# vim: set foldmethod=marker:
