@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf8 -*-
 """
-This script converts Finnish TSV-formatted lexicon to lexc format, given that
-they contain at least following information for each word (i.e. at least two
-fields per line):
+This script generates Finnish omorfi database to lexc format, given that
+they contain at least following information for each word:
     * the word lemma or the dictionary form
     * the word inflection classification in one of the known format.
 Additional data may be available in the database and can be deduced from the
-lemma or classification if needed.
+lemma or classification as needed. The current database reader is based
+on the python's csv module, but may change in the future.
 """
 
 
@@ -119,6 +119,7 @@ def main():
             print("Not writing closed parts-of-speech data in", 
                     ",".join(args.exclude_pos))
     # print definitions to rootfile
+    print(format_copyright_lexc(), file=args.output)
     if args.verbose:
         print("Creating Multichar_Symbols and Root")
     print(format_multichars_lexc(args.format), file=args.output)
