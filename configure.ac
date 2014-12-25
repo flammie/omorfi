@@ -26,16 +26,22 @@ AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 # generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([ftb3],
               [AS_HELP_STRING([--enable-ftb3],
-                              [tagset to use @<:@default=enable@:>@])],
+                              [generate ftb3 automata @<:@default=enable@:>@])],
                              [enable_ftb3=$enableval],
                              [enable_ftb3=yes])
 AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
 AC_ARG_ENABLE([omor],
               [AS_HELP_STRING([--enable-omor],
-                              [tagset to use @<:@default=enable@:>@])],
+                              [generate omor automata @<:@default=enable@:>@])],
                              [enable_omor=$enableval],
                              [enable_omor=yes])
-AM_CONDITIONAL([WANT_FTB3], [test "x$enable_omor" = xyes])
+AM_CONDITIONAL([WANT_OMOR], [test "x$enable_omor" = xyes])
+AC_ARG_ENABLE([apertium],
+              [AS_HELP_STRING([--enable-apertium],
+                              [generate apertium automata @<:@default=enable@:>@])],
+                             [enable_apertium=$enableval],
+                             [enable_apertium=yes])
+AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" = xyes])
 
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
@@ -122,8 +128,8 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([ADT], [apertium-destxt], [cat])
        AS_IF([test x$ADT = xcat],
           [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
-    [
-    AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
+    [AS_IF([test x$with_hfst != xno], 
+           [AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
     AC_SUBST([HLEXC], $with_hfst/hfst-lexc)
     AC_SUBST([HTWOLC], $with_hfst/hfst-twolc)
     AC_SUBST([HIC], $with_hfst/hfst-compose-intersect)
@@ -145,7 +151,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HUN], $with_hfst/hfst-disjunct)
     AC_SUBST([HS2F], $with_hfst/hfst-strings2fst)
     AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
-    AC_SUBST([HREW], $with_hfst/hfst-reweight)
+    AC_SUBST([HREW], $with_hfst/hfst-reweight)])
 ])
 
 AS_IF([test "x$enable_voikko" = "xyes"], 
@@ -218,6 +224,12 @@ AC_OUTPUT
 
 cat <<EOF
 Configured $PACKAGE_STRING:
+* Analysers: $with_hfst
+    * OMOR $enable_omor
+    * FTB3.1 $enable_ftb3
+    * apertium $enable_apertium
+* Voikko speller: $enable_voikko
+* 
 EOF
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
 $THEREARENOEASTEREGGS say make, make check and make install to proceed

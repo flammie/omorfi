@@ -22,6 +22,8 @@ def format_alphabet_twolc(format, ruleset):
         for c in fin_uppercase:
             twolcstring += c + '! allow uppercase as is\n'
             twolcstring += c + ':' + c.lower() + '! allow lowercasing\n'
+        for mcs in common_multichars:
+            twolcstring += twolc_escape(mcs) + '\n'
     elif ruleset.startswith('uppercase'):
         twolcstring += '! Set of Finnish alphabets generated from python:\n'
         for c in fin_lowercase:
@@ -29,17 +31,22 @@ def format_alphabet_twolc(format, ruleset):
             twolcstring += c + ':' + c.upper() + '! allow uppercasing\n'
         for c in fin_uppercase:
             twolcstring += c + '! allow uppercase as is\n'
+        for mcs in common_multichars:
+            twolcstring += twolc_escape(mcs) + '\n'
     elif ruleset == 'hyphenate':
         twolcstring += ' '.join(fin_lowercase) + '! lower'
         twolcstring += ' '.join(fin_uppercase) + '! upper'
-    for mcs in common_multichars:
-        if ruleset == 'hyphens' and mcs == optional_hyphen:
-            twolcstring += twolc_escape(mcs) + ':0  ! boundary can be zero\n'
-            twolcstring += twolc_escape(mcs) + ':%- ! or (ASCII) hyphen\n'
-        elif ruleset == 'hyphenate':
+        for mcs in common_multichars:
             twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
-        else:
-            twolcstring += twolc_escape(mcs) + '\n'
+    if ruleset == 'hyphens':
+        twolcstring += twolc_escape(optional_hyphen) + ':0  ! boundary can be zero\n'
+        twolcstring += twolc_escape(optional_hyphen) + ':%- ! or (ASCII) hyphen\n'
+    elif ruleset == 'apertium':
+        for mcs in common_multichars:
+            twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
+    else:
+        print("Unknown ruleset", ruleset, file=stderr)
+        exit(1)
     twolcstring += ';\n'
     return twolcstring
 
@@ -61,6 +68,11 @@ def format_sets_twolc(format, ruleset):
                 '! Vowels\n'
         twolcstring += 'Consonants = ' + ' '.join(fin_consonants) + ' ;' + \
                 '! Consonants\n'
+    elif ruleset == 'apertium':
+        pass
+    else:
+        print("missing ruleset", ruleset)
+        exit(1)
     twolcstring += 'DUMMYSETCANBEUSEDTOTESTBUGS = a b c ;\n'
     return twolcstring
 
@@ -98,4 +110,10 @@ def format_rules_twolc(format, ruleset):
         twolcstring += "0:%- <=> WordBoundary Consonants* [Vowels+ Consonants+]+ Vx _ Vy ;\n"
         twolcstring += "\twhere Vx in (a e o u y ä ö a e i o ä ö u y i e i)\n"
         twolcstring += "\t\tVy in (i i i i i i i u u u u y y o ö y y e) matched ;\n"
+    elif ruleset == 'apertium':
+        twolcstring += '"Remove stuffs"\n'
+        twolcstring += "a <= _ ; ! remove everywhere\n"
+    else:
+        print("Unknown ruleset", ruleset, file=stderr)
+        exit(1)
     return twolcstring

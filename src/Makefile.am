@@ -105,7 +105,7 @@ FTB3_GENERATED=omorfi-ftb3.lexc omorfi-ftb3.reweight omorfi-ftb3-tests.yaml \
 			   omorfi-ftb3-rewrite-tags.regex
 
 endif
-if WANT_FTB3
+if WANT_OMOR
 OMOR_AUTOMATA=omorfi-omor.analyse.hfst \
 			  omorfi-omor.generate.hfst
 OMOR_GENERATED=omorfi-omor.lexc omorfi-omor.reweight omorfi-omor-tests.yaml \
@@ -114,11 +114,18 @@ OMOR_GENERATED=omorfi-omor.lexc omorfi-omor.reweight omorfi-omor-tests.yaml \
 			   omorfi-omor-token.regex.hfst
 
 endif
+if WANT_APERTIUM
+APE_AUTOMATA=fin-automorf.hfst
+APE_GENERATED=apertium-fin.fin.lexc \
+			  apertium-fin.fin.twolc
 endif
+
+endif # HFST
 # }}}
 # {{{Autotools install
 # destnations directories for this stuff at the top of the file
-hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA)
+hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
+				$(APE_AUTOMATA)
 voikkoshare_DATA=speller-omorfi.zhfst
 
 # These go into dist tarballs... which we no longer make
@@ -175,7 +182,7 @@ omorfi.lexc: master.tsv stemparts.tsv inflections.tsv
 		-i inflections.tsv -o $@ -f=generic
 
 omorfi-phon.twolc:
-	$(PYTHON) $(srcdir)/generate-twolcs.py -r recase-any -o $@
+	$(PYTHON) $(srcdir)/generate-twolcs.py -r phon -o $@
 
 omorfi-recase-any.twolc:
 	$(PYTHON) $(srcdir)/generate-twolcs.py -r recase-any -o $@
@@ -248,6 +255,13 @@ omorfi-ftb3-lemmatise.regex:
 		-r lemmatise -o $@
 
 # database to apertium
+apertium-fin.fin.lexc: master.tsv stemparts.tsv inflections.tsv
+	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m master.tsv -p stemparts.tsv \
+		-i inflections.tsv -o $@ -f=apertium
+
+apertium-fin.fin.twolc:
+	$(PYTHON) $(srcdir)/generate-twolcs.py -v -f=apertium -r apertium -o $@
+
 omorfi.dix: master.tsv stemparts.tsv inflections.tsv
 	$(PYTHON) $(srcdir)/generate-monodix.py -v -m master.tsv -p stemparts.tsv \
 		-i inflections.tsv -o $@
@@ -277,12 +291,8 @@ endif
 # }}}
 #
 # {{{ GENERIC tagsetless stuff
-temporary.phon.hfst: omorfi.lexc.hfst omorfi-phon.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-phon.twolc.hfst |\
-		$(HMIN) $(HFST_FLAGS) > $@
-
 # word-boundary huphens
-temporary.hyphenated.hfst: temporary.phon.hfst \
+temporary.hyphenated.hfst: omorfi.lexc.hfst \
 	omorfi-hyphens.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
@@ -363,13 +373,9 @@ omorfi.hyphenate.hfst: temporary-ftb3.orth.hfst \
 
 # }}}
 # {{{FTB3 compilation
-# combine lexical data with phonology
-temporary-ftb3.phon.hfst: omorfi-ftb3.lexc.hfst omorfi-phon.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-phon.twolc.hfst |\
-		$(HMIN) $(HFST_FLAGS) > $@
 
 # word-boundary huphens
-temporary-ftb3.hyphenated.hfst: temporary-ftb3.phon.hfst \
+temporary-ftb3.hyphenated.hfst: omorfi-ftb3.lexc.hfst \
 	omorfi-hyphens.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
@@ -410,16 +416,8 @@ temporary-ftb3.tagweighted.hfst: temporary-ftb3.unbounded.hfst omorfi-ftb3.rewei
 	$(HREW) $(HFST_FLAGS) -T omorfi-ftb3.reweight temporary-ftb3.unbounded.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
-# no token weights
-temporary-ftb3.tokenweighted.hfst: temporary-ftb3.tagweighted.hfst
-	cp -v $< $@
-
-# no other weight combinations
-temporary-ftb3.weighted.hfst: temporary-ftb3.tokenweighted.hfst
-	cp -v $< $@
-
 # create morphological analyzer
-temporary.ftb3.hfst: temporary-ftb3.weighted.hfst
+temporary.ftb3.hfst: temporary-ftb3.tagweighted.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
@@ -434,13 +432,8 @@ omorfi-ftb3.generate.hfst: temporary-ftb3.unbounded.hfst
 # }}}
 #
 # {{{OMOR compilation
-# combine lexical data with phonology
-temporary-omor.phon.hfst: omorfi-omor.lexc.hfst omorfi-phon.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-phon.twolc.hfst |\
-		$(HMIN) $(HFST_FLAGS) > $@
-
 # word-boundary huphens
-temporary-omor.hyphenated.hfst: temporary-omor.phon.hfst \
+temporary-omor.hyphenated.hfst: omorfi-omor.lexc.hfst \
 	omorfi-hyphens.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
@@ -461,17 +454,8 @@ temporary-omor.orth.hfst: temporary-omor.relaxed.hfst \
 	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-recase-any.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
 
-# make tag adjustments
-temporary-omor.tagged.hfst: temporary-omor.orth.hfst \
-	omorfi-omor-rewrite-tags.regex.hfst
-	cat $< |\
-		$(HINV) $(HFST_FLAGS) |\
-		$(HCOMP) $(HFST_FLAGS) -2 omorfi-omor-rewrite-tags.regex.hfst |\
-		$(HINV) $(HFST_FLAGS) |\
-		$(HMIN) $(HFST_FLAGS) > $@
-
 # remove remaining morph boundaries at this point
-temporary-omor.unbounded.hfst: temporary-omor.tagged.hfst |\
+temporary-omor.unbounded.hfst: temporary-omor.orth.hfst |\
 	omorfi-remove-boundaries.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-remove-boundaries.regex.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
@@ -504,6 +488,10 @@ omorfi-omor.generate.hfst: temporary-omor.unbounded.hfst
 
 # }}}
 #
+# {{{APE compilation
+fin-automorf.hfst: apertium-fin.fin.lexc.hfst apertium-fin.fin.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 apertium-fin.fin.twolc.hfst -o $@
+# }}}
 #
 # {{{SPELL-CHECKING
 # voikko speller HFST beta targets'
