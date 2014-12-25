@@ -25,7 +25,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from omor_strings_io import fin_lowercase, fin_uppercase, fin_symbols
+from omorfi_settings import fin_lowercase, fin_uppercase, fin_symbols
 
 # standard UI stuff
 

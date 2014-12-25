@@ -26,7 +26,8 @@ from time import strftime
 import argparse
 
 from twolc_formatter import format_alphabet_twolc, \
-        format_sets_twolc, format_definitions_twolc, format_rules_twolc
+        format_sets_twolc, format_definitions_twolc, format_rules_twolc, \
+        format_copyright_twolc
 
 # standard UI stuff
 
