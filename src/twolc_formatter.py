@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
+from sys import stderr, exit
 from omorfi_settings import common_multichars, \
         fin_lowercase, fin_uppercase, fin_vowels, fin_consonants, \
-        optional_hyphen
+        fin_symbols, optional_hyphen, word_boundary
 
 def format_copyright_twolc():
     return """
@@ -57,9 +58,11 @@ def format_alphabet_twolc(format, ruleset):
         twolcstring += ' '.join(fin_uppercase) + '! upper'
         for mcs in common_multichars:
             twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
-    if ruleset == 'hyphens':
+    elif ruleset == 'hyphens':
         twolcstring += twolc_escape(optional_hyphen) + ':0  ! boundary can be zero\n'
         twolcstring += twolc_escape(optional_hyphen) + ':%- ! or (ASCII) hyphen\n'
+        for mcs in common_multichars:
+            twolcstring += twolc_escape(mcs) + '\n'
     elif ruleset == 'apertium':
         for mcs in common_multichars:
             twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
