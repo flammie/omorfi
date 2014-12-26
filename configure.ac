@@ -192,7 +192,7 @@ AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 # Checks for typedefs, structures and compiler characteristics
 # Checks for library functions
 
-AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
+AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/scripts/omorfi-analyse.sh],

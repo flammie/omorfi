@@ -85,11 +85,11 @@ SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
 #
 # {{{Generated files
 if WANT_HFST
-GENERIC_AUTOMATA=omorfi.accept.hfst \
-				 omorfi.lemmatise.hfst \
-				 omorfi.tokenise.hfst \
-				 omorfi.hyphenate.hfst \
-				 omorfi.segment.hfst
+GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
+				 generated/omorfi.lemmatise.hfst \
+				 generated/omorfi.tokenise.hfst \
+				 generated/omorfi.hyphenate.hfst \
+				 generated/omorfi.segment.hfst
 GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-phon.twolc \
 				  generated/omorfi-zh.regex \
@@ -100,8 +100,8 @@ GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-between-tokens.regex.hfst \
 				  generated/omorfi-token.regex.hfst
 if WANT_FTB3
-FTB3_AUTOMATA=omorfi-ftb3.analyse.hfst \
-			  omorfi-ftb3.generate.hfst
+FTB3_AUTOMATA=generated/omorfi-ftb3.analyse.hfst \
+			  generated/omorfi-ftb3.generate.hfst
 FTB3_GENERATED=generated/omorfi-ftb3.lexc \
 			   generated/omorfi-ftb3.reweight \
 			   generated/omorfi-ftb3-tests.yaml \
@@ -109,8 +109,8 @@ FTB3_GENERATED=generated/omorfi-ftb3.lexc \
 
 endif
 if WANT_OMOR
-OMOR_AUTOMATA=omorfi-omor.analyse.hfst \
-			  omorfi-omor.generate.hfst
+OMOR_AUTOMATA=generated/omorfi-omor.analyse.hfst \
+			  generated/omorfi-omor.generate.hfst
 OMOR_GENERATED=generated/omorfi-omor.lexc \
 			   generated/omorfi-omor.reweight \
 			   generated/omorfi-omor-tests.yaml \
@@ -120,7 +120,7 @@ OMOR_GENERATED=generated/omorfi-omor.lexc \
 
 endif
 if WANT_APERTIUM
-APE_AUTOMATA=fin-automorf.hfst
+APE_AUTOMATA=generated/fin-automorf.hfst
 APE_GENERATED=generated/apertium-fin.fin.lexc \
 			  generated/apertium-fin.fin.twolc
 endif
@@ -131,7 +131,7 @@ endif # HFST
 # destnations directories for this stuff at the top of the file
 hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA)
-voikkoshare_DATA=speller-omorfi.zhfst
+voikkoshare_DATA=voikko/speller-omorfi.zhfst
 
 # These go into dist tarballs... which we no longer make
 # N.B. for distcheck anyways
@@ -309,25 +309,25 @@ endif
 #
 # {{{ GENERIC tagsetless stuff
 # word-boundary huphens
-generated/temporary.hyphenated.hfst: omorfi.lexc.hfst \
-	omorfi-hyphens.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-hyphens.twolc.hfst |\
+generated/temporary.hyphenated.hfst: generated/omorfi.lexc.hfst \
+	generated/omorfi-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
 
 # spelling variations
 generated/temporary.relaxed.hfst: generated/temporary.hyphenated.hfst \
-	omorfi-sh.regex.hfst \
-	omorfi-zh.regex.hfst \
-	omorfi-orthographic-variations.regex.hfst
-	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-orthographic-variations.regex.hfst |\
+	generated/omorfi-sh.regex.hfst \
+	generated/omorfi-zh.regex.hfst \
+	generated/omorfi-orthographic-variations.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-orthographic-variations.regex.hfst |\
 		$(HMIN) $(HFST_FLAGS) |\
-		$(HSUB) $(HFST_FLAGS) -f š -T omorfi-sh.regex.hfst |\
-		$(HSUB) $(HFST_FLAGS) -f ž -T omorfi-zh.regex.hfst -o $@
+		$(HSUB) $(HFST_FLAGS) -f š -T generated/omorfi-sh.regex.hfst |\
+		$(HSUB) $(HFST_FLAGS) -f ž -T generated/omorfi-zh.regex.hfst -o $@
 
 # case variations
 generated/temporary.orth.hfst: generated/temporary.relaxed.hfst \
-	omorfi-uppercase-first.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 $< -2 omorfi-uppercase-first.twolc.hfst |\
+	generated/omorfi-uppercase-first.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-uppercase-first.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
 
 # make tag adjustments
@@ -336,8 +336,8 @@ generated/temporary.tagged.hfst: generated/temporary.orth.hfst
 
 # remove remaining morph boundaries at this point
 generated/temporary.unbounded.hfst: generated/temporary.tagged.hfst |\
-	omorfi-remove-boundaries.regex.hfst
-	$(HCOMP) $(HFST_FLAGS) -1 $< -2 omorfi-remove-boundaries.regex.hfst  |\
+	generated/omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # no tag weights
@@ -384,9 +384,9 @@ generated/omorfi.tokenise.hfst: generated/omorfi.accept.hfst \
 
 # hyphenation dictionary
 generated/omorfi.hyphenate.hfst: generated/temporary-ftb3.orth.hfst \
-						generated/omorfi-ftb3-hyphenate.twolc.hfst
+						generated/omorfi-hyphenate.twolc.hfst
 	cat generated/temporary-ftb3.orth.hfst |\
-		$(HIC) $(HFST_FLAGS) -2 generated/omorfi-ftb3-hyphenate.twolc.hfst > $@
+		$(HIC) $(HFST_FLAGS) -2 generated/omorfi-hyphenate.twolc.hfst > $@
 
 # }}}
 # {{{FTB3 compilation
@@ -506,7 +506,7 @@ generated/omorfi-omor.generate.hfst: generated/temporary-omor.unbounded.hfst
 # }}}
 #
 # {{{APE compilation
-fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
+generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
 	generated/apertium-fin.fin.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/apertium-fin.fin.twolc.hfst -o $@
 # }}}
@@ -516,23 +516,22 @@ fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
 generated/errmodel.edit-distance.txt: generate-edit-distance.py
 	$(PYTHON) $< -o $@
 
-errmodel.edit-distance-1.hfst: generated/errmodel.edit-distance.hfst
+generated/errmodel.edit-distance-1.hfst: generated/errmodel.edit-distance.hfst
 	$(HMIN) $< -o $@
 
-errmodel.edit-distance-2.hfst: generated/errmodel.edit-distance.hfst
+generated/errmodel.edit-distance-2.hfst: generated/errmodel.edit-distance.hfst
 	$(HMIN) $< |\
 		$(HREP) -f 1 -t 2 -o $@
 
-errmodel.edit-distance-3.hfst: generated/errmodel.edit-distance.hfst
+generated/errmodel.edit-distance-3.hfst: generated/errmodel.edit-distance.hfst
 	$(HMIN) $< |\
 		$(HREP) -f 1 -t 3 -o $@
 
-speller-omorfi.zhfst: omorfi.accept.hfst \
-					errmodel.edit-distance-2.hfst index.xml
-	$(HF2F) -f olw < omorfi.accept.hfst > acceptor.default.hfst
-	$(HF2F) -f olw < errmodel.edit-distance-2.hfst > errmodel.default.hfst
-	$(ZIP) -v -9 $@ index.xml acceptor.default.hfst errmodel.default.hfst
-	-rm -f acceptor.default.hfst errmodel.default.hfst
+voikko/speller-omorfi.zhfst: generated/omorfi.accept.hfst \
+					generated/errmodel.edit-distance-2.hfst voikko/index.xml
+	$(HF2F) -f olw < generated/omorfi.accept.hfst > voikko/acceptor.default.hfst
+	$(HF2F) -f olw < generated/errmodel.edit-distance-2.hfst > voikko/errmodel.default.hfst
+	$(ZIP) -j -v -9 $@ voikko/*
 
 # }}}
 # vim: set foldmethod=marker:
