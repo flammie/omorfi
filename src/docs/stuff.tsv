@@ -1,9 +1,4 @@
-# This file contains bits and pieces of omorfi doc converted into tsv
-# data-structures for automatic generation and verification.
-# Key is "stuff" value is documentation can be weaved into a real doc
-# again.
-# "Stuff" is a largely ad-hoc value used as keys in omorfi databases
-# These are short descriptions used in tables, generated source code etc.
+stuff	doc
 NOUN	Noun
 ADJECTIVE	Adjective (comparable)
 QUALIFIER	Qualifier (not comparable)
