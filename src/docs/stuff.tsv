@@ -1,0 +1,149 @@
+# This file contains bits and pieces of omorfi doc converted into tsv
+# data-structures for automatic generation and verification.
+# Key is "stuff" value is documentation can be weaved into a real doc
+# again.
+# "Stuff" is a largely ad-hoc value used as keys in omorfi databases
+# These are short descriptions used in tables, generated source code etc.
+NOUN	Noun
+ADJECTIVE	Adjective (comparable)
+QUALIFIER	Qualifier (not comparable)
+VERB	Verb
+ADVERB	Adverb
+INTERJECTION	Interjection
+PRONOUN	Pronoun
+NUMERAL	Numeral
+ADPOSITION	Adposition
+PREPOSITION	Preposition
+POSTPOSITION	Postposition
+CONJUNCTION	Conjunction
+COORDINATING	Coordinating conjunction
+ADVERBIAL	Adverbial conjunction
+COMPARATIVE	Comparative conjunction
+ABBREVIATION	Abbreviation (non-inflecting, may end in full stop)
+ACRONYM	Acronym (inflects with colon)
+PROPER	Proper noun
+CARDINAL	Cardinal
+ORDINAL	Ordinal
+DEMONSTRATIVE	Demonstrative
+QUANTOR	Quantifier (pronoun)
+PERSONAL	Personal (pronoun)
+INDEFINITE	Indefinite (pronoun)
+INTERROGATIVE	Interrogative
+REFLEXIVE	Reflexive (pronoun)
+RELATIVE	Relative
+RECIPROCAL	Reciprocal
+PUNCTUATION	Punctuation
+DASH	Dash
+SPACE	Space
+DECIMAL	Decimal digits
+CLAUSE-BOUNDARY	Clause final
+SENTENCE-BOUNDARY	Sentence final
+INITIAL-QUOTE	Left quotation mark
+FINAL-QUOTE	Right quotation mark
+INITIAL-BRACKET	Left bracket
+FINAL-BRACKET	Right bracket
+DIGIT	Digits
+ROMAN	Roman numerals
+PL1	First plural" 
+PL2	Secod plural
+PL3	Third plural
+SG1	First singular" 
+SG2	Second singular
+SG3	Third singular
+PE4	Passive
+COMP	Comparative
+SUPERL	Superlative
+UNSPECIFIED	Unclassified particle
+LEMMA-START	Left marker for lemma
+Bc	Compound boundary for generated compounds
+.sent	Sentence ?
+B-	Marker for co-ordinated compound hyphen
+B→	Marker for left co-ordinated compound hyphen
+B←	Marker for right co-ordinated compound hyphen
+Cma	Agent participle
+Cmaisilla	Fifth infinitive
+Cnut	Nut participle
+Cva	Va participle
+Cmaton	Negation participle
+Cpos	Positive comparison
+Ccmp	Comparative comparison
+Csup	Superlative comparison
+Dmaisilla	Deverbal -mAisillA
+Dminen	Deverbal -minen
+Dnut	Deverbal -nUt
+Dtu	Deverbal -tU
+Dva	Deverbal -vA
+Dtava	Deverbal -tAvA
+Dmaton	Deverbal mAtOn
+Duus	Derivation -UUs
+Dttaa	Derivation -ttAA
+Dtattaa	Derivation -tAttAA
+Dtatuttaa	Derivation -tAtUttAA
+Dma	Derivation -mA
+Dinen	Derivation -inen
+Dja	Derivation -jA
+Dmpi	Derivation -mpi
+Din	Derivation -in
+Ds	Derivaiton -s
+Du	Derivation -u
+Dsti	Derivation -sti
+FTB3man	Manner adverbial (analysis for legacy support)
+Ia	A infinitive
+Ie	E infinitive
+Ima	mA infinitive
+Iminen	Fourth infinitive
+Ncon	Conneg verb form (in negative constructions)
+Nneg	Negation verb
+Npl	Plural" 
+Nsg	Singular" 
+N??	Number to be determined
+Osg1	First person singular possessive
+Osg2	Second person singular possessive
+Osg3	Third person singular possessive
+O3	Third person ambiguous possessive
+Opl1	First person plural possessive
+Opl2	Second person plural possessive
+Opl3	Third person plural possessive
+Ppl1	First person plural actor
+Ppl2	Second person plural actor
+Ppl3	Third person plural actor
+Psg1	First person singular actor" 
+Psg2	Second person singular actor
+Psg3	Third person singular actor
+Ppe4	Passive" 
+Qka	Focus clitic particle -kA
+Qs	Focus clitic particle -s
+Qpa	Focus clitic particle -pA
+Qko	Focus clitic particle -kO (question)
+Qkin	Focus clitic particle -kin
+Qkaan	Focus clitic particle -kAAn
+Qhan	Focus clitic particle -hAn
+Tcond	Conditional
+Timp	Impertative" 
+Tpast	Indicative past
+Tpot	Potential" 
+Tpres	Indicative Present
+Topt	Optative
+Uarch	Archaic
+Udial	Dialect general
+Urare	Rare
+Unonstd	Non-standard
+Vact	Active
+Vpss	Passive
+Xabe	Abessive
+Xabl	Ablative
+Xade	Adessive
+Xall	Allative
+Xcom	Comitative
+Xela	Elative
+Xess	Essive
+Xgen	Genitive
+Xill	Illative" 
+Xine	Inessive
+Xins	Instructive
+Xnom	Nominative
+Xpar	Partitive" 
+Xtra	Transtlative" 
+Xlat	Lative
+Xacc	Accusative
+X???	Case to be determined
