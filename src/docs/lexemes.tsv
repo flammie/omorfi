@@ -1,5 +1,6 @@
 # documentations for specific lexemes that is not covered otherwise
-# can go here.
+# can go here. Keeping it short, it's pushed in the source file at
+# the end of the line and compact listing in wiki
 ADSL	Asymmetric Digital Subscriber Line
 API	Application Programming Interface
 atk	automaattinen tekstinkäsittely
