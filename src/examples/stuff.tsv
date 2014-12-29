@@ -1,0 +1,143 @@
+NOUN	talo	talo|NOUN|Nsg|Xnom	house
+ADJECTIVE	aakkostettu	aakkostettu|ADJECTIVE|Nsg|Xnom	alphabetised
+QUALIFIER	pikku	pikku|QUALIFIER|Nsg|Xnom	little
+VERB	kutoo	kutoa|VERB|Vact|Tpres|Psg3	knits
+ADVERB	aakkosellisesti	aakkosellisesti|PARTICLE|ADVERB	alphabetically
+INTERJECTION	aah|INTERJECTION	oh
+PRONOUN	minä|PRONOUN|PERSONAL|Nsg|Xnom	me
+NUMERAL	yksi	yksi|NUMERAL|CARDINAL|Nsg|Xnom	one
+ADPOSITION	alta	alta|PARTICLE|ADPOSITION|POSTPOSITION	under
+PREPOSITION	irti	irti|PARTICLE|ADPOSITION|PREPOSITION	off
+POSTPOSITION	alta	alta|PARTICLE|ADPOSITION|POSTPOSITION	under
+CONJUNCTION	ja	ja|CONJUNCTION|COORDINATING	and
+COORDINATING	ja	ja|CONJUNCTION|COORDINATING	and
+ADVERBIAL	koska	koska|CONJUNCTION|ADVERBIAL	because
+COMPARATIVE	kuin	kuin|CONJUNCTION|COMPARATIVE	as(–)as, (-er) than
+ABBREVIATION	esim.	esim.|ABBREVIATION
+ACRONYM	OY	OY|ACRONYM|Nsg|Nom	
+PROPER	Kalle	Kalle|NOUN|PROPER|Nsg|Xnom	Kalle
+CARDINAL	yksi	yksi|NUMERAL|CARDINAL|Nsg|Xnom	one
+ORDINAL	ensimmäinen	ensimmäinen|NUMERARL|ORDINAL|Nsg|Xnom	first
+DEMONSTRATIVE	tämä	tämä|PRONOUN|DEMONTSTRATIVE|Nsg|Xnom	this
+QUANTOR		kaikki	kaikki|PRONOUN|QUANTOR|Nsg|Xnom	all
+PERSONAL	minä	minä|PRONOUN|PERSONAL|Nsg|Xnom	me
+INDEFINITE	joku	joku|PRONOUN|QUANTOR|INDEFINITE|Nsg|Xnom	some
+INTERROGATIVE	mikä	mikä|PRONOUN|INTERROGATIVE|Nsg|Xnom	what
+REFLEXIVE	itse	itse|PRONOUN|REFLEXIVE|Nsg|Xnom	self
+RELATIVE	kuka	kuka|PRONOUN|RELATIVE|Nsg|Xnom	who
+RECIPROCAL	toisiamme	toinen|PRONOUN|RECIPROCAL|Npl|Xpar|Opl1	each other
+PUNCTUATION	.	.|PUNCTUATION	full stop
+DASH	-	-|PUNCTUATION|DASH	dash
+SPACE	 	 |PUNCTUATION|SPACE	space
+DECIMAL	3,14	3,14|NUMERAL|DECIMAL	
+CLAUSE-BOUNDARY	
+SENTENCE-BOUNDARY	
+INITIAL-QUOTE	”	”|PUNCTUATION|INITIAL-QUOTE	curly quotation mark
+FINAL-QUOTE	”	”|PUNCTUATION|FINAL-QUOTE	curly quotation mark
+INITIAL-BRACKET	(	(|PUNCTUATION|INITIAL-BRACKET	round bracket
+FINAL-BRACKET	)	)|PUNCTUATION|FINAL-BRACKET	round bracket
+DIGIT	1	1|NUMERAL|DIGIT	one
+ROMAN	I	I|NUMERAL|ROMAN	first
+PL1	
+PL2	
+PL3	
+SG1	
+SG2	
+SG3	
+PE4	
+COMP	
+SUPERL	
+UNSPECIFIED	
+LEMMA-START	
+Bc	kissakoira	kissa|NOUN|Nsg|Xnom|Bc|koira|NOUN|Nsg|Xnom	dog-cat
+.sent	
+B-	
+B→	-talo	B→|talo|Nsg|Xnom	(stuffthing) and -house
+B←	talo-	talo|NOUN|Nsg|Xnom|←	house- (and stuffthing)
+Cma	kutoma	kutoa|VERB|Vact|Cma|Nsg	knitted by
+Cmaisilla	kutomaisillani	kutoa|VERB|Cmaisilla|Osg1	am about to knit
+Cnut	kutonut	kutoa|VERB|Vact|Cnut|Nsg	knitted
+Cva	kutova	kutoa|VERB|Vact|Cva|Nsg	knitting
+Cmaton	kutomaton	kutoa|VERB|Cmaton|Nsg|Xnom	unknitted
+Cpos	ruma	ruma|ADJECTIVE|Cpos|Nsg|Xnom	ugly
+Ccmp	rumempi	ruma|ADJECTIVE|Ccmp|Nsg|Xnom	uglier
+Csup	rumin	ruma|ADJECTIVE|Csup|Nsg|Xnom	ugliest
+Dmaisilla	kutomaisillani	kutoa|VERB|Dmaisilla|Osg1	am about to knit
+Dminen	kutominen	kutoa|VERB|Dminen|Nsg|Xnom	knitting
+Dnut	kutoneella	kutoa|VERB|Dnut|Nsg|Xade	on past knitter
+Dtu	kudotulla	kutoa|VERB|Dtu|Nsg|Xade	on past knittee
+Dva	kutovalla	kutoa|VERB|Dva|Nsg|Xade	on knitter
+Dtava	kudottavalla	kutoa|VERB|Dva|Nsg|Xade	on knittee
+Dmaton	kutomattomalla	kutoa|VERB|Dmaton|Nsg|Xade	on unknitted
+Duus	kudottuus	kutoa|VERB|Dtu|Duus|Nsg|Xnom	knittedness
+Dttaa	kudottaa	kutoa|VERB|Dttaa	make knit
+Dtattaa	jätättää	jättää|VERB|Dtattaa	
+Dtatuttaa	kudotatuttaa	kutoa|VERB|Dtatuttaa	nonsense
+Dma	kutomalta	kutoa|VERB|Dma|Nsg|Xabl	from knitting
+Dinen	taloinen	talo|NOUN|Dinen|Nsg|Xnom	houseful
+Dja	kutoja	kutoa|VERB|Dja|Nsg|Xnom	knitter
+Dmpi	rumempi	ruma|VERB|Dmpi|Nsg|Xnom	uglier
+Din		rumin	ruma|VERB|Din|Nsg|Xnom	ugliest
+Ds	nais-	nainen|NOUN|Ds|B→	female –
+Du	ajattelu	ajatella|VERB|Du|Nsg|Xnom	thinking
+Dsti	rumasti	ruma|ADJECTIVE|Dsti	uglily
+FTB3man	
+Ia	kutoa	kutoa|VERB|Ia|Xlat	to knit
+Ie	kutoessa	kutoa|VERB|Ie|Xine	while knitting
+Ima	kutomatta	kutoa|VERB|Ima|Xabe	without knitting
+Iminen	kutominen	kutoa|VERB|Iminen|Ncon	knitting
+Ncon	kudo	kutoa|VERB|Vact|Ncon	
+Nneg	en	ei|VERB|Nneg|Tpres|Psg1	I don't
+Npl	talot	talo|NOUN|Npl|Xnom	houses
+Nsg	talo	talo|NOUN|Nsg|Xnom	house
+N??	
+Osg1	talossani	talo|NOUN|Nsg|Xine|Osg1	in my house
+Osg2	talossasi	talo|NOUN|Nsg|Xine|Osg2	in your house
+Osg3	talossansa	talo|NOUN|Nsg|Xine|Osg3	in his house
+O3	talossansa	talo|NOUN|Nsg|Xine|O3	in his / their house
+Opl1	talossamme	talo|NOUN|Nsg|Xine|Opl1	in our house
+Opl2	talossanne	talo|NOUN|Nsg|Xine|Opl2	in your (pl.) house
+Opl3	talossansa	talo|NOUN|Nsg|Xine|Opl3	in their house
+Ppl1	kudomme	kutoa|VERB|Vact|Ppl1	I knit
+Ppl2	kudotte	kutoa|VERB|Vact|Ppl2	you knit
+Ppl3	kutovat	kutoa|VERB|Vact|Ppl3	they knit
+Psg1	kudon	kutoa|VERB|Vact|Psg1
+Psg2	kudot	kutoa|VERB|Vact|Psg2
+Psg3	kutoo	kutoa|VERB|Vact|Psg3
+Ppe4	kudotaan	kutoa|VERB|Vpss|Ppe4
+Qka	eikä	ei|VERB|Nneg|Psg3|ka
+Qs	kudos	kutoa|VERB|Timp|Psg2|Qs
+Qpa	talopa	talo|NOUN|Nsg|Xnom|Qpa
+Qko	taloko	talo|NOUN|Nsg|Xnom|Qko
+Qkin	talokin	talo|NOUN|Nsg|Xnom|Qkin
+Qkaan	talokaan	talo|NOUN|Nsg|Xnom|Qkaan
+Qhan	talohan	talo|NOUN|Nsg|Xnom|Qhan
+Tcond	kutoisin	kutoa|VERB|Vact|T
+Timp	kutokaa	kutoa|VERB|Vact|Timp
+Tpast	kudoin	kutoa|VERB|Vact|Tpast
+Tpot	kutonen	kutoa|VERB|Vact|Tpot
+Tpres	kudon	kutoa|VERB|Vact|Tpres
+Topt	tullos	tulla|VERB|Vact|Uarch|Topt|Psg2
+Uarch	nallein	nalle|NOUN|Npl|Xgen|Uarch
+Udial	mie	mie|PRONOUN|PERSONAL|Udial|Nsg|Xnom
+Urare	
+Unonstd	onks	on|VERB|Vact|Tpres|Psg3|Qko|Unonstd
+Vact	kudon	kutoa|VERB|Vact|Tpres|Psg1
+Vpss	kudotaan	kutoa|VERB|Vpss|Tpres|Ppe4
+Xabe	talotta	talo|NOUN|Nsg|Xabe
+Xabl	talolta	talo|NOUN|Nsg|Xabl
+Xade	talolla	talo|NOUN|Nsg|Xade
+Xall	talolta	talo|NOUN|Nsg|Xall
+Xcom	taloine	talo|NOUN|N??|Xcom
+Xela	talosta	talo|NOUN|Nsg|Xela
+Xess	talona	talo|NOUN|Nsg|Xess
+Xgen	talon	talo|NOUN|Nsg|Xgen
+Xill	taloon	talo|NOUN|Nsg|Xill
+Xine	talossa	talo|NOUN|Nsg|Xine
+Xins	talon	talo|NOUN|Nsg|Xins
+Xnom	talo	talo|NOUN|Nsg|Xnom
+Xpar	taloa	talo|NOUN|Nsg|Xpar
+Xtra	taloksi	talo|NOUN|Nsg|Xtra
+Xlat	kutoa	kutoa|VERB|Ia|Xlat
+Xacc	minut	minä|PRONOUN|Nsg|Xacc
+X???	
