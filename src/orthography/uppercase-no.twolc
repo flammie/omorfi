@@ -1,9 +1,0 @@
-Alphabet
-
-%{##%}
-
-;
-
-Rules
-"Mark no case changes"
-%{##%} => _ ;

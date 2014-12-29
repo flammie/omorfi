@@ -2,91 +2,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from lexc_formatter import lexc_escape
 from omorfi_settings import word_boundary, weak_boundary, \
         optional_hyphen
+from lexc_formatter import lexc_escape
 from omor_strings_io import fail_formatting_missing_for
-
-monodix_sdefs= {
-        'abbr',
-        'abe',
-        'abl',
-        'acc',
-        'actv',
-        'ade',
-        'adj',
-        'agent',
-        'all',
-        'ant',
-        'card',
-        'cmp',
-        'cnjcoo',
-        'cnjsub',
-        'com' ,
-        'comp',
-        'cond',
-        'conneg' ,
-        'dem',
-        'ela',
-        'enc',
-        'ess',
-        'f',
-        'gen',
-        'ij',
-        'ill',
-        'imp',
-        'impers',
-        'ind',
-        'indv',
-        'ine',
-        'infa',
-        'infe',
-        'infma',
-        'infminen',
-        'ins',
-        'itg',
-        'lat',
-        'm',
-        'mf',
-        'n',
-        'neg',
-        'nom',
-        'np',
-        'nt',
-        'num',
-        'ord',
-        'p1',
-        'p2',
-        'p3',
-        'par',
-        'part',
-        'past',
-        'pasv',
-        'pl',
-        'pneg',
-        'pos',
-        'post',
-        'pot',
-        'pp',
-        'pprs',
-        'pr',
-        'pres',
-        'prn',
-        'pxpl1',
-        'pxpl2',
-        'pxsg1',
-        'pxsg2',
-        'pxsp3',
-        'qst',
-        'rec',
-        'reflex',
-        'rel',
-        'sg',
-        'sup',
-        'top',
-        'tra',
-        'vblex',
-        'ND'}
 
 apertium_multichars =  {
  "-",
@@ -190,7 +109,7 @@ apertium_multichars =  {
  "v→adv",
  "v→n"
         }
-stuff2monodix =  {
+stuff2apertium =  {
         "ABBREVIATION": "abbr",
         "ACRONYM": "abbr",
         "ADJECTIVE": "adj",
@@ -331,24 +250,6 @@ stuff2monodix =  {
         "Xtra": "tra", 
         "": ""
         }
-stuff2apertium = stuff2monodix
-
-def format_monodix_licence():
-    return """<!--
-  Copyright (c) 2014 Omorfi contributors
-
-  This program is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation, version 3 of the License
-
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->"""
 
 def format_stuff_apertium(stuff):
     if len(stuff) == 0:
@@ -434,80 +335,6 @@ def format_multichars_lexc_apertium():
         if not '><' in mcs and not mcs in ['', '+', '-', '#', '0']:
             multichars += '%<' + lexc_escape(mcs) + "%>\n"
     return multichars
-
-def format_monodix_alphabet():
-    """Finnish alphabet as in CLDR 24"""
-    return ("<alphabet>abcdefghijklmnopqrsštuvwxyzžåäö"
-            "ABCDEFGHIJKLMNOPQRSŠTUVWXYZŽ"
-            "áàâãčçđéèêëǧǥȟíîïǩńñŋôõœřßŧúùûÿüʒǯæø"
-            "ÁÀÂÃČÇÐÉÈÊËǦÍÎÏĸŃÑŊÔÕŘÚÙÛŸÜƷǮÆØ"
-            "</alphabet>")
-
-def format_monodix_sdefs():
-    sdefs = '  <sdefs>\n'
-    for sdef in monodix_sdefs:
-        sdefs += '    <sdef n="' + sdef + '"/>\n'
-    sdefs += '  </sdefs>\n'
-    return sdefs
-
-def format_monodix_l(s):
-    if s != '0':
-        return s.replace(' ', '<b/>').replace(word_boundary, '')
-    else:
-        return ''
-
-def format_monodix_r(anals):
-    r = ''
-    if anals != '0':
-        for anal in anals.split('|'):
-            r += format_monodix_s(anal)
-    return r
-
-def format_monodix_s(stuff):
-    s = ''
-    if stuff in stuff2monodix:
-        s += '<s n="' + stuff2monodix[stuff] + '"/>'
-    else:
-        fail_formatting_missing_for(stuff, "monodix")
-    if '><' in s:
-        s = s.replace('><', '"/><s n="')
-    elif '"+"' in s:
-        s = '+'
-    elif '""' in s:
-        s = ''
-    elif '"-"' in s:
-        s = '-'
-    return s
-
-def format_monodix_par(cont):
-    return '<par n="'+  cont.lower().replace('_', '__') + '"/>'
-
-def format_monodix_pardef(fields):
-    pardef = ''
-    for cont in fields[3:]:
-        pardef += '      <e>'
-        if fields[1] == fields[2]:
-            pardef += '<i>' + format_monodix_l(fields[2]) + '</i>'
-        else:
-            pardef += '<p><l>' + format_monodix_l(fields[2]) + '</l>'
-            pardef += '<r>' + format_monodix_r(fields[1]) + '</r></p>'
-        if cont != '#':
-            pardef += format_monodix_par(cont)
-        pardef += '</e>\n'
-    return pardef
-
-
-def format_monodix_entry(wordmap):
-    for cont in wordmap['new_paras']:
-        e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
-        e += '<p><l>' + wordmap['stub'].replace(word_boundary, '').replace('&', '&amp;')  +  '</l>'
-        e += '<r>'
-        e += wordmap['lemma'].replace('&', '&amp;')
-        e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
-        e += '</r></p>'
-        e += format_monodix_par(cont)
-        e += '</e>'
-    return e
 
 # self test
 if __name__ == '__main__':

@@ -12,20 +12,21 @@ XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 # 
 LEXEMES=lexemes/lexemes.tsv
 # lexical features
-JOINS=attributes/boundaries.tsv \
-	  attributes/origin.tsv \
-	  attributes/plurale-tantum.tsv \
-	  attributes/possessives.tsv \
-	  attributes/pronunciation.tsv \
-	  attributes/proper-classes.tsv \
-	  attributes/paradigm-data.tsv \
-	  attributes/particle-classes.tsv \
-	  attributes/pronoun-classes.tsv \
-	  attributes/symbol-classes.tsv \
-	  attributes/semantic.tsv \
-	  attributes/subcategories.tsv \
-	  attributes/usage.tsv \
-	  attributes/verb-arguments.tsv
+LEMMA_JOINS=lexemes/boundaries.tsv \
+	  lexemes/origin.tsv \
+	  lexemes/plurale-tantum.tsv \
+	  lexemes/possessives.tsv \
+	  lexemes/pronunciation.tsv \
+	  lexemes/proper-classes.tsv \
+	  lexemes/particle-classes.tsv \
+	  lexemes/pronoun-classes.tsv \
+	  lexemes/symbol-classes.tsv \
+	  lexemes/semantic.tsv \
+	  lexemes/subcategories.tsv \
+	  lexemes/usage.tsv \
+	  lexemes/verb-arguments.tsv
+# paradigm features
+PARADIGM_JOINS=paradigms/morphophonology.tsv
 
 # Morphology
 # stem variants by deletion and concatenations
@@ -120,7 +121,7 @@ OMOR_GENERATED=generated/omorfi-omor.lexc \
 
 endif
 if WANT_APERTIUM
-APE_AUTOMATA=generated/fin-automorf.hfst
+APE_AUTOMATA=generated/fin-automorf.hfst generated/fin-autogen.hfst
 APE_GENERATED=generated/apertium-fin.fin.lexc \
 			  generated/apertium-fin.fin.twolc
 endif
@@ -135,15 +136,15 @@ voikkoshare_DATA=voikko/speller-omorfi.zhfst
 
 # These go into dist tarballs... which we no longer make
 # N.B. for distcheck anyways
-EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(JOINS) $(SCIRPTS) \
+EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(SCIRPTS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
-		   voikko-fi_FI.pro index.xml
+		   voikko/voikko-fi_FI.pro voikko/index.xml
 
 # These are ran with make check. All modules should have stuff
 TESTS=tagset_formatter.py apertium_formatter.py
 
 # These aren't installed but generated
-noinst_DATA=omorfi.dix omorfi-sanalista.xml
+noinst_DATA=generated/omorfi.dix generated/omorfi-sanalista.xml
 
 # Things that make clean isn't smart enought to wipe
 CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED)
@@ -156,25 +157,25 @@ generated/timestamp:
 	touch $@
 
 # database to database
-generated/joint.tsv: lexemes/lexemes.tsv $(JOINS) generated/timestamp
+generated/joint.tsv: lexemes/lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
-		-j $(srcdir)/attributes/boundaries.tsv \
-		-j $(srcdir)/attributes/origin.tsv \
-		-j $(srcdir)/attributes/plurale-tantum.tsv \
-		-j $(srcdir)/attributes/possessives.tsv \
-		-j $(srcdir)/attributes/pronunciation.tsv \
-		-j $(srcdir)/attributes/particle-classes.tsv \
-		-j $(srcdir)/attributes/proper-classes.tsv \
-		-j $(srcdir)/attributes/pronoun-classes.tsv \
-		-j $(srcdir)/attributes/semantic.tsv \
-		-j $(srcdir)/attributes/subcategories.tsv \
-		-j $(srcdir)/attributes/symbol-classes.tsv \
-		-j $(srcdir)/attributes/usage.tsv \
-		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
+		-j $(srcdir)/lexemes/boundaries.tsv \
+		-j $(srcdir)/lexemes/origin.tsv \
+		-j $(srcdir)/lexemes/plurale-tantum.tsv \
+		-j $(srcdir)/lexemes/possessives.tsv \
+		-j $(srcdir)/lexemes/pronunciation.tsv \
+		-j $(srcdir)/lexemes/particle-classes.tsv \
+		-j $(srcdir)/lexemes/proper-classes.tsv \
+		-j $(srcdir)/lexemes/pronoun-classes.tsv \
+		-j $(srcdir)/lexemes/semantic.tsv \
+		-j $(srcdir)/lexemes/subcategories.tsv \
+		-j $(srcdir)/lexemes/symbol-classes.tsv \
+		-j $(srcdir)/lexemes/usage.tsv \
+		-j $(srcdir)/lexemes/verb-arguments.tsv -o $@
 
 generated/master.tsv: generated/joint.tsv
 	$(PYTHON) $(srcdir)/tsv_expand.py \
-		-j $(srcdir)/attributes/paradigm-data.tsv -v -i $< -o $@.unsrt
+		-j $(srcdir)/paradigms/morphophonology.tsv -v -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | sort >> $@
 	-rm -f $@.unsrt
@@ -188,8 +189,8 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 # database to generic
 generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m master.tsv -p stemparts.tsv \
-		-i inflections.tsv -o $@ -f=generic
+	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		-i generated/inflections.tsv -o $@ -f=generic
 
 generated/omorfi-phon.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/generate-twolcs.py -r phon -o $@
@@ -254,7 +255,7 @@ generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 generated/omorfi-ftb3.reweight: generate-reweights.py
 	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=ftb3 -o $@
 
-generated/omorfi-ftb3.lexc: generated/master.tsv stemparts.tsv inflections.tsv
+generated/omorfi-ftb3.lexc: generated/master.tsv generated/stemparts.tsv generated/inflections.tsv
 	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=ftb3
@@ -506,9 +507,14 @@ generated/omorfi-omor.generate.hfst: generated/temporary-omor.unbounded.hfst
 # }}}
 #
 # {{{APE compilation
-generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
+generated/fin-autogen.hfst: generated/apertium-fin.fin.lexc.hfst \
 	generated/apertium-fin.fin.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/apertium-fin.fin.twolc.hfst -o $@
+
+generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
+	generated/apertium-fin.fin.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/apertium-fin.fin.twolc.hfst |\
+		$(HINV) $(HFST_FLAGS) -o $@
 # }}}
 #
 # {{{SPELL-CHECKING

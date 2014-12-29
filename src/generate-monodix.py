@@ -26,7 +26,7 @@ from time import strftime
 import argparse
 import csv
 
-from apertium_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
+from monodix_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
 from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff

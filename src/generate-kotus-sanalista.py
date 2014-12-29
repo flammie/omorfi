@@ -32,7 +32,7 @@ from time import strftime
 import argparse
 import csv
 
-from tagset_formatter import format_xml_kotus_sanalista
+from kotus_sanalista_formatter import format_wordmap_kotus_sanalista
 from parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
@@ -111,7 +111,7 @@ def main():
                 wordmap = tsv_parts
                 wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
                 # format output
-                print(format_xml_kotus_sanalista(wordmap), file=args.output)
+                print(format_wordmap_kotus_sanalista(wordmap), file=args.output)
     print('</kotus-sanalista>', file=args.output)
     exit()
 
