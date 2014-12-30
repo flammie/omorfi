@@ -1,6 +1,6 @@
 #!/bin/bash
 omorfidir="@prefix@/share/hfst/fi/"
-omorfifile="$omorfidir/generation.@TAG_FORMAT@.hfst"
+omorfifile="$omorfidir/omorfi-omor.generate.hfst"
 args=$@
 
 function print_version() {
@@ -25,9 +25,6 @@ function print_help() {
     echo
     echo "If no FILENAMEs are given, input is read from standard input."
     echo
-    echo "Examples:"
-    echo "  omorfi-analyse.sh < text | cut -f 2 | omorfi-generate.sh"
-    echo "    Regenerate word-forms from analysed text"
 }
 
 
@@ -38,6 +35,7 @@ function check_omorfi() {
     fi
     if test ! -r "$omorfifile" ; then
         echo generator not found in $omorfifile
+        echo maybe generation was not configured or installation is incomplete?
         exit 1
     fi
     if test x$1 == xverbose ; then

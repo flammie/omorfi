@@ -1,11 +1,11 @@
 #!/bin/bash
-omorfidir="@prefix@/lib/voikko/2/mor-hfst-fi/"
-omorfifile="$omorfidir/speller-omorfi.zhfst"
+omorfidir="@prefix@/share/hfst/fi/"
+omorfifile="$omorfidir/omorfi.segment.hfst"
 args=$@
 
 function print_version() {
-    echo "omorfi-spell 0.1"
-    echo "Copyright (c) 2012 Tommi A Pirinen"
+    echo "omorfi-segment 0.1"
+    echo "Copyright (c) 2014 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
@@ -17,13 +17,14 @@ function print_usage() {
 }
 
 function print_help() {
-    echo "Analyse separate word-forms or word-form lists"
+    echo "Analyses running text using omorfi automata and hfst tools"
     echo
     echo "  -h, --help      Print this help dialog"
     echo "  -V, --version   Print version info"
     echo "  -v, --verbose   Print verbosely while processing"
     echo
     echo "If no FILENAMEs are given, input is read from standard input."
+    echo "This program uses hfst-lookup"
 }
 
 
@@ -34,6 +35,7 @@ function check_omorfi() {
     fi
     if test ! -r "$omorfifile" ; then
         echo analyser not found in $omorfifile
+        echo maybe you have disabled segmentation or installation was incomplete?
         exit 1
     fi
     if test x$1 == xverbose ; then
@@ -41,8 +43,8 @@ function check_omorfi() {
     fi
 }
 
-function spell() {
-    cat $@ | hfst-ospell "$omorfifile"
+function analyse() {
+    cat $@ | hfst-lookup "$omorfifile"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -61,4 +63,6 @@ elif test ! -r $1 ; then
     exit 1
 fi
 check_omorfi $verbose
-spell $@
+check_cleaner $verbose
+analyse $@
+

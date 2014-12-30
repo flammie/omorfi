@@ -1,11 +1,11 @@
 #!/bin/bash
 omorfidir="@prefix@/share/hfst/fi/"
-omorfifile="$omorfidir/morphology.@TAG_FORMAT@.hfst"
+omorfifile="$omorfidir/omorfi-ftb3.analyse.hfst"
 args=$@
 
 function print_version() {
     echo "omorfi-interactive 0.1"
-    echo "Copyright (c) 2012 Tommi A Pirinen"
+    echo "Copyright (c) 2014 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
