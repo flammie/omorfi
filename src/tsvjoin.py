@@ -75,6 +75,7 @@ def main():
             csv_reader = csv.reader(csv_file, 
                     delimiter=args.separator, quoting=quoting,
                     strict=True)
+            headers = next(csv_reader)
             for csv_parts in csv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000) == 0:
@@ -103,6 +104,9 @@ def main():
             join_reader = csv.reader(join_file, 
                     delimiter=args.separator, quoting=quoting,
                     strict=True)
+            headers = next(join_reader)
+            if args.verbose:
+                print("Join should go to", headers[args.fields])
             for join_parts in join_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000) == 0:
@@ -128,11 +132,12 @@ def main():
                         errors = True
                 else:
                     this_entry = words[join_on]
-                    this_entry += [join_parts[args.fields]]
+                    this_entry += [headers[args.fields] + '=' + join_parts[args.fields]]
                     words[join_on] = this_entry
                     joincount += 1
         if args.verbose:
-            print(joincount, "joins in that table\n")
+            print(joincount, "lexical joins for", headers[args.fields],
+                  "in the table\n")
 
     if errors:
         print("you must fix database integrity or hack the scripts",
