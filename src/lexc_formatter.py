@@ -3,7 +3,7 @@
 # functions for formatting the database data to lexc
 
 from omorfi_settings import common_multichars, version_id_easter_egg, \
-        optional_hyphen, word_boundary
+        optional_hyphen, word_boundary, stub_boundary, newword_boundary
 
 def lexc_escape(s):
     '''Escape symbols that have special meaning in lexc.'''
@@ -168,7 +168,7 @@ def format_root_lexicon_lexc(format):
         root += format_stuff('B→', format) + ':-   NOUN ;\n'
         root += format_stuff('B→', format) + ':-   ADJECTIVE ;\n'
         root += format_stuff('B→', format) + ':-   SUFFIX ;\n'
-    root += version_id_easter_egg + ':0 # ;\n'
+    root += version_id_easter_egg + ':__omorfi # ;\n'
     if '+taggerhacks' in format:
         root += "0   TAGGER_HACKS    ;\n"
     return root
@@ -176,12 +176,12 @@ def format_root_lexicon_lexc(format):
 # generics
 def format_continuation_lexc_generic(anals, surf, cont):
     surf = lexc_escape(surf)
-    return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, word_boundary),
+    return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, newword_boundary),
             surf, cont)
 
 
 def format_wordmap_lexc_generic(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['stub']) + '{STUB}'
+    wordmap['analysis'] = lexc_escape(wordmap['stub']) + stub_boundary
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
     retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
