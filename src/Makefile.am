@@ -142,6 +142,7 @@ bin_SCRIPTS=scripts/omorfi-analyse-text.sh \
 			scripts/omorfi-generate.sh \
 			scripts/omorfi-hyphenate.sh \
 			scripts/omorfi-spell.sh \
+			scripts/omorfi-segment.sh \
 			scripts/omorfi-interactive.sh
 
 python_PYTHON=scripts/omorfi.py scripts/convert_tag_format.py
@@ -376,7 +377,7 @@ generated/omorfi.lemmatise.hfst: generated/temporary.ftb3.hfst generated/omorfi-
 
 # 
 generated/omorfi.segment.hfst: generated/temporary.weighted.hfst
-	$(HINV) $< -o $@
+	$(HINV) $< | $(HF2F) -f olw -o $@
 
 # create one tape spell checker
 generated/omorfi.accept.hfst: generated/temporary.ftb3.hfst

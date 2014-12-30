@@ -1,11 +1,11 @@
 #!/bin/bash
-omorfidir="@prefix@/lib/voikko/2/mor-hfst-fi/"
+omorfidir="@prefix@/lib/voikko/3/"
 omorfifile="$omorfidir/speller-omorfi.zhfst"
 args=$@
 
 function print_version() {
     echo "omorfi-spell 0.1"
-    echo "Copyright (c) 2012 Tommi A Pirinen"
+    echo "Copyright (c) 2014 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."

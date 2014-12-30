@@ -44,7 +44,8 @@ function check_omorfi() {
 }
 
 function analyse() {
-    cat $@ | hfst-lookup "$omorfifile"
+    cat $@ | hfst-lookup "$omorfifile" |\
+        sed -e 's/{[wWXMD]B}/ /g' -e 's/{STUB}//g'
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -63,6 +64,5 @@ elif test ! -r $1 ; then
     exit 1
 fi
 check_omorfi $verbose
-check_cleaner $verbose
 analyse $@
 
