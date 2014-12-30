@@ -462,8 +462,10 @@ generated/omorfi-ftb3.analyse.hfst: generated/temporary.ftb3.hfst
 	$(HF2F) -f olw -o $@ -i $<
 
 # create generator from analyzer
-generated/omorfi-ftb3.generate.hfst: generated/temporary-ftb3.unbounded.hfst
-	$(HF2F) $(HFST_FLAGS) -f olw -i $< -o $@
+generated/omorfi-ftb3.generate.hfst: generated/temporary-ftb3.hyphenated.hfst \
+	generated/omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HF2F) $(HFST_FLAGS) -f olw  -o $@
 
 # }}}
 #
@@ -519,8 +521,9 @@ generated/omorfi-omor.analyse.hfst: generated/temporary.omor.hfst
 	$(HF2F) -f olw -o $@ -i $<
 
 # create generator from analyzer
-generated/omorfi-omor.generate.hfst: generated/temporary-omor.unbounded.hfst
-	$(HF2F) $(HFST_FLAGS) -f olw -i $< -o $@
+generated/omorfi-omor.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # }}}
 #
