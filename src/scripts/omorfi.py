@@ -12,8 +12,6 @@ from sys import stderr, stdin
 from os import getenv, access, F_OK
 from glob import glob
 
-from convert_tag_format import convert_omor_tag
-
 class Omorfi:
     """
     An object holding omorfi automata for all the functions of omorfi.
@@ -24,6 +22,7 @@ class Omorfi:
     lemmatizers = dict()
     hyphenators = dict()
     segmenters = dict()
+    acceptors = dict()
     can_lowercase = True
     can_titlecase = True
     can_uppercase = False
@@ -54,20 +53,24 @@ class Omorfi:
                 print('No access')
             pass
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
-        if this._verbosity:
-            print('loaded', parts[0], "type", parts[1], 'identifying...')
-        if parts[0] == 'morphology':
-            this.analysers[parts[1]] = trans
-        elif parts[0] == 'generate':
-            this.generators[parts[1]] = trans
-        elif parts[0] == 'dictionary':
+        if len(parts) < 2:
             pass
-        elif parts[0] == 'tokeniser':
-            this.tokenisers[parts[1]] = trans
-        elif parts[0] == 'lemmatize':
-            this.lemmatizers[parts[1]] = trans
-        elif parts[0] == 'hyphenate':
-            this.hyphenators[parts[1]] = trans
+        elif this._verbosity:
+            print('loaded', parts[0], "type", parts[1], 'identifying...')
+        elif parts[1] == 'analyse':
+            this.analysers[parts[0]] = trans
+        elif parts[1] == 'generate':
+            this.generators[parts[0]] = trans
+        elif parts[1] == 'accept':
+            this.acceptors[parts[0]] = trans
+        elif parts[1] == 'tokenise':
+            this.tokenisers[parts[0]] = trans
+        elif parts[1] == 'lemmatize':
+            this.lemmatizers[parts[0]] = trans
+        elif parts[1] == 'hyphenate':
+            this.hyphenators[parts[0]] = trans
+        elif parts[1] == 'segment':
+            this.segmenters[parts[0]] = trans
 
     def load_from_dir(this, path=None):
         """Load omorfi automata from given or known locations.
@@ -120,8 +123,8 @@ class Omorfi:
         tokenised using python's basic string functions.
         """
         tokens = None
-        if 'default' in this.tokenisers:
-            tokens = this._tokenise(line, 'default')
+        if 'omorfi' in this.tokenisers:
+            tokens = this._tokenise(line, 'omorfi')
         if not tokens:
             tokens = line.replace('.', ' .').split()
         return tokens
@@ -131,24 +134,20 @@ class Omorfi:
         if len(token) > 2 and token[0].islower() and not token[1:].islower() and this.can_titlecase:
             tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token[0].lower() + token[1:].lower()))
             for r in tcres:
-                r.output = r.output + convert_omor_tag('[CASECHANGE=TITLECASED]',
-                        automaton)
+                r.output = r.output + '[CASECHANGE=TITLECASED]'
             res = res + tcres
         if not token.isupper() and this.can_uppercase:
             upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.upper()))
             for r in tupes:
-                r.output = r.output + convert_omor_tag('[CASECHANGE=UPPERCASED]'.
-                        automaton)
+                r.output = r.output + '[CASECHANGE=UPPERCASED]'
             res = res + tcres
         if not token.islower() and this.can_lowercase:
             lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
             for r in lowres:
-                r.output = r.output + convert_omor_tag('[CASECHANGE=LOWERCASED]',
-                        automaton)
+                r.output = r.output + '[CASECHANGE=LOWERCASED]'
             res += lowres
         for r in res:
-            r.output = r.output + convert_omor_tag('[WEIGHT=%f]' %(r.weight),
-                    automaton)
+            r.output = r.output + '[WEIGHT=%f]' %(r.weight)
         return res
 
     def analyse(this, token):
@@ -169,8 +168,8 @@ class Omorfi:
         anals = None
         if 'default' in this.analysers:
             anals = this._analyse(token, 'default')
-        if not anals and 'omor' in this.analysers:
-            anals = this._analyse(token, 'omor')
+        if not anals and 'omorfi-omor' in this.analysers:
+            anals = this._analyse(token, 'omorfi-omor')
             if not anals:
                 class FakeAnal():
                     pass
@@ -178,14 +177,13 @@ class Omorfi:
                 anal.output = '[WORD_ID=%s][GUESS=UNKNOWN]' % (token)
                 anal.weight = float('inf')
                 anals = [anal]
-        if not anals and 'ftb3' in this.analysers:
-            anals = this._analyse(token, 'ftb3')
+        if not anals and len(this.analysers):
+            anals = this._analyse(token, this.analysers.keys[0])
             if not anals:
                 class FakeAnal():
                     pass
                 anal = FakeAnal()
-                anal.output = convert_omor_tag('[WORD_ID=%s]' % (token), 
-                        'ftb3') + convert_omor_tag('[GUESS=UNKNOWN]', 'ftb3')
+                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN]'
                 anal.weight = float('inf')
                 anals = [anal]
         return anals
