@@ -144,7 +144,8 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(SCIRPTS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml
 
 # These are ran with make check. All modules should have stuff
-TESTS=tagset_formatter.py apertium_formatter.py
+TESTS=$(FORMAT_SCIRPTS) $(FIN_SCIRPTS)
+XFAIL_TESTS=tdt_formatter.py
 
 # These aren't installed but generated
 noinst_DATA=generated/omorfi.dix generated/omorfi-sanalista.xml
