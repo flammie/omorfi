@@ -27,6 +27,7 @@ on the python's csv module, but may change in the future.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+from ast import literal_eval
 from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
@@ -151,8 +152,6 @@ def main():
                     continue
                 # read data from database
                 wordmap = tsv_parts
-                wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
-
                 # exclusions
                 if args.exclude_pos:
                     if wordmap['pos'] in args.exclude_pos:

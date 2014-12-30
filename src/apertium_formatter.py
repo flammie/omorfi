@@ -254,13 +254,13 @@ stuff2apertium =  {
 def format_stuff_apertium(stuff):
     if len(stuff) == 0:
         return ""
-    elif stuff in stuff2monodix:
-        if stuff2monodix[stuff] in ['+', '-', '#', '0', '']:
-            return stuff2monodix[stuff]
-        elif stuff2monodix[stuff].startswith('+'):
-            return (lexc_escape(stuff2monodix[stuff]) + '%>')
+    elif stuff in stuff2apertium:
+        if stuff2apertium[stuff] in ['+', '-', '#', '0', '']:
+            return stuff2apertium[stuff]
+        elif stuff2apertium[stuff].startswith('+'):
+            return (lexc_escape(stuff2apertium[stuff]) + '%>')
         else:
-            return ('%<' + lexc_escape(stuff2monodix[stuff]) + '%>')
+            return ('%<' + lexc_escape(stuff2apertium[stuff]) + '%>')
     else:
         fail_formatting_missing_for(stuff, "apertium")
         return ""
@@ -316,17 +316,26 @@ def format_wordmap_lexc_apertium(wordmap):
     else:
         wordmap['analysis'] += format_stuff_apertium(wordmap['pos'])
 
-    if wordmap['subcat']:
-        for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_stuff_apertium(subcat)
+    if wordmap['pronoun']:
+        for stuff in wordmap['pronoun'].split("|"):
+            wordmap['analysis'] += format_stuff_apertium(stuff)
+    if wordmap['adjective_class']:
+        for stuff in wordmap['adjective_class'].split("|"):
+            wordmap['analysis'] += format_stuff_apertium(stuff)
+    if wordmap['noun_class']:
+        for stuff in wordmap['noun_class'].split("|"):
+            wordmap['analysis'] += format_stuff_apertium(stuff)
+    if wordmap['numeral_class']:
+        for stuff in wordmap['numeral_class'].split("|"):
+            wordmap['analysis'] += format_stuff_apertium(stuff)
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_apertium(subcat)
     retvals = ""
     wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
     wordmap['stub'] = lexc_escape(wordmap['stub'])
-    for new_para in wordmap['new_paras']:
-        retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], new_para)
+    retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], 
+            wordmap['new_para'])
     return retvals
 
 def format_multichars_lexc_apertium():

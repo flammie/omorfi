@@ -2,6 +2,7 @@
 #
 # utils to format apertium style data from omorfi database values
 
+from sys import stderr, exit
 from lexc_formatter import lexc_escape
 from omorfi_settings import word_boundary, weak_boundary, \
         morph_boundary, deriv_boundary, optional_hyphen
@@ -326,9 +327,18 @@ def format_wordmap_lexc_omor(wordmap, format):
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_omor(subcat, format)
     
-    if wordmap['subcat']:
-        for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_stuff_omor(subcat, format)
+    if wordmap['pronoun']:
+        for stuff in wordmap['pronoun'].split("|"):
+            wordmap['analysis'] += format_stuff_omor(stuff, format)
+    if wordmap['adjective_class']:
+        for stuff in wordmap['adjective_class'].split("|"):
+            wordmap['analysis'] += format_stuff_omor(stuff, format)
+    if wordmap['noun_class']:
+        for stuff in wordmap['noun_class'].split("|"):
+            wordmap['analysis'] += format_stuff_omor(stuff, format)
+    if wordmap['numeral_class']:
+        for stuff in wordmap['numeral_class'].split("|"):
+            wordmap['analysis'] += format_stuff_omor(stuff, format)
     
     if wordmap['is_proper']:
         if '+propers' in format and wordmap['proper_noun_class']:
@@ -357,9 +367,8 @@ def format_wordmap_lexc_omor(wordmap, format):
     # match WORD_ID= with epsilon, then stub and lemma might match
     lex_stub = '0' + wordmap['stub']
     retvals = []
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                new_para)]
+    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
+        wordmap['new_para'])]
     return "\n".join(retvals)
 
 def format_multichars_lexc_omor():

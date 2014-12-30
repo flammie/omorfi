@@ -109,7 +109,6 @@ def main():
                     print(tsv_parts, file=stderr)
                     continue
                 wordmap = tsv_parts
-                wordmap['new_paras'] = [x.strip('[]"\' ') for x in wordmap['new_paras'].split(',')]
                 # format output
                 print(format_wordmap_kotus_sanalista(wordmap), file=args.output)
     print('</kotus-sanalista>', file=args.output)

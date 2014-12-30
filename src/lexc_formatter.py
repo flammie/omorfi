@@ -184,7 +184,6 @@ def format_wordmap_lexc_generic(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['stub']) + '{STUB}'
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, new_para)]
+    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
     return "\n".join(retvals)
 

@@ -85,7 +85,7 @@ def main():
                 print("Must have at leas N separators in joins; skipping",
                         join_parts)
                 continue
-            key = join_parts['new_paras'].strip('[]')
+            key = join_parts['new_para']
             joinmap[key] = join_parts
 
     # read from csv files
@@ -115,10 +115,10 @@ def main():
                 wordmap = parse_defaults_from_tsv(wordmap, tsv_parts)
                 wordmap = parse_extras_from_tsv(wordmap, tsv_parts)
                 # Extend from known new paras
-                joinkey = ",".join(wordmap['new_paras'])
+                joinkey = wordmap['new_para']
                 if joinkey in joinmap:
                     for k,v in joinmap[joinkey].items():
-                        if k != 'new_paras':
+                        if k != 'new_para':
                             if v == "False":
                                 wordmap[k] = False
                             elif v == "None":
@@ -149,17 +149,15 @@ def main():
                     wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'SUFFIX'
                 # put interjections in separate lexicon to allow chaining them
-                if "'PCLE_HAH'" in wordmap['new_paras']:
+                if "PCLE_HAH" == wordmap['new_para']:
                     wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'INTERJECTION'
                 # split multiple particle or subcat definitions to distinct lexemes
                 wordmaps = [wordmap]
-                wordmaps = [ m for wm in wordmaps 
-                                for m in split_wordmap_by_field(wm, 'particle')]
-                wordmaps = [ m for wm in wordmaps 
-                                for m in split_wordmap_by_field(wm, 'subcat')]
-                wordmaps = [ m for wm in wordmaps 
-                                for m in split_wordmap_by_field(wm, 'symbol')]
+                #wordmaps = [ m for wm in wordmaps 
+                #                for m in split_wordmap_by_field(wm, 'particle')]
+                #wordmaps = [ m for wm in wordmaps 
+                #                for m in split_wordmap_by_field(wm, 'symbol')]
                 # print result
                 for wordmap in wordmaps:
                     tsv_writer.writerow(wordmap)

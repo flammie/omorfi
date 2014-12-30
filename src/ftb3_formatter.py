@@ -358,11 +358,20 @@ def format_wordmap_lexc_ftb3(wordmap, format):
     else:
         print("not in FTB3 known poses or particle!\n", wordmap)
         exit(1)
-    if wordmap['subcat']:
-        if 'PERSONAL' in wordmap['subcat']:
-            wordmap['subcat'] = 'PERSONAL'
-        for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_stuff_ftb3(subcat)
+    if wordmap['pronoun']:
+        if 'PERSONAL' in wordmap['pronoun']:
+            wordmap['pronoun'] = 'PERSONAL'
+        for stuff in wordmap['pronoun'].split("|"):
+            wordmap['analysis'] += format_stuff_ftb3(stuff)
+    if wordmap['adjective_class']:
+        for stuff in wordmap['adjective_class'].split("|"):
+            wordmap['analysis'] += format_stuff_ftb3(stuff)
+    if wordmap['noun_class']:
+        for stuff in wordmap['noun_class'].split("|"):
+            wordmap['analysis'] += format_stuff_ftb3(stuff)
+    if wordmap['numeral_class']:
+        for stuff in wordmap['numeral_class'].split("|"):
+            wordmap['analysis'] += format_stuff_ftb3(stuff)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_stuff_ftb3('PROPER')
     if wordmap['symbol']:
@@ -374,12 +383,11 @@ def format_wordmap_lexc_ftb3(wordmap, format):
             wordmap['analysis'].replace('Dash', 'EmDash')
     lex_stub = wordmap['stub']
     retvals = []
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                new_para)]
+    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
+                wordmap['new_para'])]
     if wordmap['lemma'] in ['-', '–', '—', '(']:
         retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" %(wordmap['analysis'], lex_stub,
-            new_para)]
+            wordmap['new_para'])]
     return "\n".join(retvals)
 
 def format_multichars_lexc_ftb3():
