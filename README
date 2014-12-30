@@ -13,11 +13,11 @@ Omorfi can be fetched from [http://code.google.com/p/omorfi/ Google code service
 
 Compilation of the morphological analyser, generation, lemmatisation or spell-checking requires [http://hfst.sf.net HFST] tools or compatible installed:
 
-  * hfst-3.8 or greater is required for omorfi versions >2014
-  * python-3 is needed to handle TSV database data
-    * There's also simple python interface to the morphological analyser
+  * hfst-3.8 or greater
+  * python-3.2 or greater
+  * hfst-ospell-0.2.0 or greater can be used for spell-checking automata
+  * apertium can be used to pre-process text corpora
 
-The final transducers can be used with HFST tools or HFST runtime tools. The spell-checking automata package can be used with any common spell-checking interface through voikko spell-checking library.
 
 == Installation ==
 
@@ -43,31 +43,167 @@ For further instructions, see `INSTALL`, the GNU standard install instructions f
 
 == Usage ==
 
-Omorfi installs experimental scripts that are meant for easy command line based use of omorfi automata: `omorfi-analyse.sh` is a simple shell script invoking `hfst-proc` the tokenising analyser, which uses the morphological analyser to break the input into words and then analyses them. The basic usage:
-{{{
-  omorfi-analyse.sh [FILENAME]
-}}}
-So for basic analysis of a text file named `kalevala.txt` is:
-{{{
-  omorfi-analyse.sh kalevala.txt
-}}}
-or:
-{{{
-  omorfi-analyse.sh < kalevala.txt
-}}}
-The script `omorfi-interactive.sh` can be used to analyse pre-tokenised text or input one word form at a time from the shell (N.B. the input is read raw from command line, so special keys, such as arrows will not work).
+For basic, beginner end-user usage, omorfi provides helper scripts:
 
-For more information of these tools, invoke `--help`, or view their man pages:
+- `omorfi-analyse-text.sh`: analyse plain text into ambiguous word-form lists
+- `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line
+- `omorfi-generate.sh`: generate word-forms from omor descriptions
+- `omorfi-segment.sh`: morphologically segment word-forms one per line
+- `omorfi-spell.sh`: spell-check and correct word-forms one per line
+
+Most commonly you will probably want to turn text files into FTB3.1 lists in
+xerox format:
+
 {{{
-  omorfi-analyse --help
-  man omorfi-analyse
+$ omorfi-analyse-text.sh kalevala.txt
+!! Warning: Transducer contains one or more multi-character symbols made up of
+ASCII characters which are also available as single-character symbols. The
+input stream will always be tokenised using the longest symbols available.
+Use the -t option to view the tokenisation. The problematic symbol(s):
+SS
+Ensimmäinen	
+Ensimmäinen	Ensimmäinen N Nom Sg
+Ensimmäinen	Ensimmäinen Num Ord Nom Sg
+
+runo	
+runo	runo N Nom Sg
+
+Mieleni	
+Mieleni	Miele N Prop Gen Sg PxSg1
+Mieleni	Miele N Prop Nom Pl PxSg1
+Mieleni	Miele N Prop Nom Sg PxSg1
+Mieleni	Mieli N Gen Sg PxSg1
+Mieleni	Mieli N Nom Pl PxSg1
+Mieleni	Mieli N Nom Sg PxSg1
+
+minun	
+minun	minä Pron Pers Gen Sg
+
+tekevi	
+tekevi	tehdä V Prs Act Sg3
+
+...
 }}}
 
-Other automata, such as tokeniser, segmentation, hyphenation or whatever, may be available in the build directories. These should be installed into `${prefix}/share/hfst/fi/` directory, which contains all the omorfi automata in HFST binary format. These can be manipulated by standard HFST tools.
+If your text is already split into word-forms (one word-form per line), it
+can be analysed like this:
 
-== Note about character codings ==
+{{{
+$ omorfi-analyse-tokenised.sh test/wordforms.list 
+> 1	1 Num Digit Nom Sg	0,000000
 
-This implementation of morphology uses UTF-8 encoded Unicode, and all relevant tools typically only process UTF-8 encoded format. On some systems, characters with potential diacritics, such as ä and ö, may be encoded differently; the implemented version uses a form of unicode where diacritics are precomposed to characters, also known as unicode normal form C (NFC). Systems using decomposed form (NFD), such as certain tools of Mac OS X, may experience problems.
+> 10	10 Num Digit Nom Sg	0,000000
+
+> 11	11 Num Digit Nom Sg	0,000000
+
+> 12	12 Num Digit Nom Sg	0,000000
+
+> 13	13 Num Digit Nom Sg	0,000000
+
+> 14	14 Num Digit Nom Sg	0,000000
+
+> 15	15 Num Digit Nom Sg	0,000000
+
+> 16	16 Num Digit Nom Sg	0,000000
+
+> 17	17 Num Digit Nom Sg	0,000000
+
+> 18	18 Num Digit Nom Sg	0,000000
+
+> 19	19 Num Digit Nom Sg	0,000000
+
+> 2	2 Num Digit Nom Sg	0,000000
+}}}
+
+The morphological segmentation can be done like this:
+
+{{{
+$ omorfi-segment.sh kalevala.wordlist | head -n 100
+
+Ensimmäinen	ensimmäinen	0,000000
+
+runo	runo	0,000000
+
+Mieleni	Miele ni	0,000000
+Mieleni	miele ni	0,000000
+
+minun	minu n	0,000000
+
+tekevi	teke vi	0,000000
+
+aivoni	aivo ni	0,000000
+
+ajattelevi	ajattele vi	0,000000
+}}}
+
+
+Spelling correction may be done if hfst-ospell is installed:
+
+{{{
+omorfi-spell.sh kalevala.wordlist
+}}}
+
+Generating word-forms can be done using:
+
+{{{
+omorfi-generate.sh
+$ omorfi-generate.sh 
+> [WORD_ID=talo][POS=NOUN][NUM=SG][CASE=INE]
+[WORD_ID=talo][POS=NOUN][NUM=SG][CASE=INE]	talossa	0,000000
+}}}
+
+=== Advanced usage ===
+
+Python interface (check wiki for details):
+
+{{{
+$ python
+Python 3.4.1 (default, Oct 16 2014, 03:32:31) 
+[GCC 4.7.3] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from omorfi import Omorfi
+>>> omorfi = Omorfi()
+>>> omorfi.load_from_dir()
+>>> omorfi.analyse("koira")
+(<libhfst.HfstPath; proxy of <Swig Object of type 'HfstPath *' at 0x7f640b7c0420> >, <libhfst.HfstPath; proxy of <Swig Object of type 'HfstPath *' at 0x7f640b7c0750> >)
+>>> analyses = omorfi.analyse("koira")
+>>> for analysis in analyses:
+...     print(analysis.output, analysis.weight)
+... 
+[WORD_ID=Koira][POS=NOUN][PROPER=PROPER][NUM=SG][CASE=NOM][WEIGHT=0.000000] 0.0
+[WORD_ID=koira][POS=NOUN][NUM=SG][CASE=NOM][WEIGHT=0.000000] 0.0
+
+}}}
+
+Hfst command-line (for further information check HFST wiki):
+
+{{{
+$ ls /usr/local/share/hfst/fi/
+omorfi.accept.hfst       omorfi-omor.generate.hfst
+fin-autogen.hfst         omorfi-ftb3.analyse.hfst   omorfi.segment.hfst
+fin-automorf.hfst        omorfi-ftb3.generate.hfst  omorfi.tokenise.hfst
+omorfi.hyphenate.hfst    omorfi.lemmatise.hfst      omorfi-omor.analyse.hfst
+$ hfst-lookup /usr/local/share/hfst/fi/omorfi.segment.hfst 
+> talossani
+talossani	talo{STUB}{MB}ssa{MB}ni	0,000000
+
+> on
+on	{STUB}on	0,000000
+
+> hirveä
+hirveä	hirve{STUB}ä	0,000000
+hirveä	hirv{STUB}e{MB}ä	0,000000
+
+> kissakoira-apina
+kissakoira-apina	kiss{STUB}a{wB}koir{STUB}a{wB}apin{STUB}a	0,000000
+
+> 
+}}}
+
+== Troubleshooting ==
+
+Mac OS X may cause problems with Unicode encoding, or with its non-GNU
+command-line tools.
 
 == Contributing ==
 
