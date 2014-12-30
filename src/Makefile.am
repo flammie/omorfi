@@ -137,6 +137,16 @@ hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 
+bin_SCRIPTS=scripts/omorfi-analyse-text.sh \
+			scripts/omorfi-analyse-tokenised.sh \
+			scripts/omorfi-generate.sh \
+			scripts/omorfi-hyphenate.sh \
+			scripts/omorfi-spell.sh \
+			scripts/omorfi-interactive.sh
+
+python_PYTHON=scripts/omorfi.py scripts/convert_tag_format.py
+
+
 # These go into dist tarballs... which we no longer make
 # N.B. for distcheck anyways
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(SCIRPTS) \
