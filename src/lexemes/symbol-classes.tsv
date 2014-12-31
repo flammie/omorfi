@@ -10,8 +10,10 @@ lemma	new_para	symbol
 ,	SYMBOL_PILKKU	clause-boundary
 ;	SYMBOL_PISTE	clause-boundary
 :	SYMBOL_PISTE	clause-boundary
-!	SYMBOL_PISTE	','	PUNCT_NONSTD	_EXCL_LOOPsentence-boundary
-?	SYMBOL_PISTE	','	PUNCT_NONSTD	_EXCL_LOOPsentence-boundary
+!	SYMBOL_PISTE	sentence-boundary
+?	SYMBOL_PISTE	sentence-boundary
+!	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+?	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
 .	SYMBOL_PISTE	sentence-boundary
 ..	SYMBOL_PISTE	sentence-boundary
 ...	SYMBOL_PISTE	sentence-boundary

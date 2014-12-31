@@ -1,9 +1,9 @@
 lemma	new_para	sem
-aA	ACRO_AA	', 'ACRO_DOLLARImeasure
-AA	ACRO_AA	', 'ACRO_OHMIorg
+aA	ACRO_AA	measure
+AA	ACRO_AA	org
 Aabraham	N_PUNK	male
-$A	ACRO_AA	', 'ACRO_DOLLARIcurrency
-a	ACRO_AA	', 'ACRO_OHMItime
+$A	ACRO_AA	currency
+a	ACRO_AA	time
 Aada	N_KIRJA	female
 Aadolf	N_PUNK	male
 Aake	N_NALLE	male
@@ -29,23 +29,23 @@ Aatos	N_VAKUUTUS	male
 Aatto	N_HIRTTO	male
 Aatu	N_ASU	male
 Aava	N_KIRJA	female
-ab	ACRO_EE	', 'ACRO_DOLLARIorg
+ab	ACRO_EE	org
 Abel	N_STADION	male
 abhaasi	N_RUUVI	language
 Abiel	N_PUNK	male
 abp	ACRO_EE	org
 ab	PCLE_VAAN	org
-aBq	ACRO_UU	', 'ACRO_OHMImeasure
+aBq	ACRO_UU	measure
 Abraham	N_PUNK	male
-a°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-aC	ACRO_EE	', 'ACRO_OHMImeasure
-acd	ACRO_EE	', 'ACRO_KANDELAmeasure
-$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-€	ACRO_EURO	', 'ACRO_TALOcurrency
-£	ACRO_PUNTA	', 'ACRO_PUNTAcurrency
-₤	ACRO_PUNTA	', 'ACRO_PUNTAcurrency
-¥	ACRO_SENTTI	', 'ACRO_METRIcurrency
-ad	ACRO_EE	', 'ACRO_OHMItitle
+a°C	ACRO_EE	measure
+aC	ACRO_EE	measure
+acd	ACRO_EE	measure
+$	ACRO_DOLLARI	currency
+€	ACRO_EURO	currency
+£	ACRO_PUNTA	currency
+₤	ACRO_PUNTA	currency
+¥	ACRO_SENTTI	currency
+ad	ACRO_EE	title
 Adam	N_STADION	male
 adangme	N_NALLE	language
 Ada	N_KIRJA	female
@@ -59,7 +59,7 @@ ADT	ACRO_EE	org
 adyge	N_NISSE	language
 AED	ACRO_EE	currency
 AFA	ACRO_AA	currency
-aF	ACRO_ÄKS	', 'ACRO_OHMImeasure
+aF	ACRO_ÄKS	measure
 Af	ACRO_ÄKS	currency
 afar	N_PUNK	language
 afganistanilainen	A_AAKKOSELLINEN	country
@@ -70,8 +70,8 @@ Afganistan	N_PUNK	country
 AFN	ACRO_ÄKS	currency
 afrihili	N_RUUVI	language
 afrikaans	N_PUNK	language
-ag	ACRO_EE	', 'ACRO_GRAMMAmeasure
-ag	ACRO_EE	', 'ACRO_GRAMMAorg
+ag	ACRO_EE	measure
+ag	ACRO_EE	org
 Agata	N_KIRJA	female
 Agda	N_KIRJA	female
 aghem	N_PUNK	language
@@ -82,7 +82,7 @@ agrologi	N_RUUVI	title
 agrol.	PCLE_VAAN	title
 agronomi	N_RUUVI	title
 agron.	PCLE_VAAN	title
-aH	ACRO_OO	', 'ACRO_OHMImeasure
+aH	ACRO_OO	measure
 Ah	ACRO_OO	measure
 ahlaislainen	A_AAKKOSELLINEN	inhabitant
 ahlaislainen	N_AAKKOSTAMINEN	inhabitant
@@ -91,7 +91,7 @@ Ahti	N_TAUTI	male
 Ahto	N_TALO	male
 Ahto	N_VETO	male
 Ahvo	N_TALO	male
-aHz	ACRO_ZET	', 'ACRO_OHMImeasure
+aHz	ACRO_ZET	measure
 Aija	N_KIRJA	female
 Aila	N_KIRJA	female
 Ailiina	N_KITARA	female
@@ -110,12 +110,12 @@ Aira	N_KIRJA	female
 Airi	N_RUUVI	female
 aitolahtelainen	A_AAKKOSELLINEN	inhabitant
 aitolahtelainen	N_AAKKOSTAMINEN	inhabitant
-aJ	ACRO_II	', 'ACRO_JOULEmeasure
+aJ	ACRO_II	measure
 akaalainen	A_AAKKOSELLINEN	inhabitant
 akaalainen	N_AAKKOSTAMINEN	inhabitant
-aK	ACRO_OO	', 'ACRO_OHMImeasure
+aK	ACRO_OO	measure
 akan	N_PUNK	language
-akat	ACRO_EE	', 'ACRO_OHMImeasure
+akat	ACRO_EE	measure
 Aki	N_RUUVI	male
 akkadi	N_RUUVI	language
 Akseli	N_KANAALI	male
@@ -199,7 +199,7 @@ ALK	ACRO_OO	currency
 ALL	ACRO_ÄKS	currency
 Allan	N_PUNK	male
 Alli	N_RUUVI	female
-alm	ACRO_ÄKS	', 'ACRO_OHMImeasure
+alm	ACRO_ÄKS	measure
 Alma	N_KIRJA	female
 Alpi	N_RUUVI	male
 Alpo	N_TALO	male
@@ -212,11 +212,11 @@ Alveri	N_KANAALI	male
 Alvina	N_KITARA	female
 Alvin	N_PUNK	male
 Alvi	N_RUUVI	male
-alx	ACRO_ÄKS	', 'ACRO_OHMImeasure
-am	ACRO_ÄKS	', 'ACRO_OHMImeasure
+alx	ACRO_ÄKS	measure
+am	ACRO_ÄKS	measure
 Amalia	N_MAKKARA	female
 Amanda	N_KIRJA	female
-AMD	ACRO_EE	', 'ACRO_DOLLARIcurrency
+AMD	ACRO_EE	currency
 AMD	ACRO_EE	currency
 Amelia	N_MAKKARA	female
 Amelie	N_ZOMBIE	female
@@ -236,10 +236,10 @@ Amilda	N_KIRJA	female
 amiraali	N_RUUVI	title
 Amira	N_KITARA	female
 amir.	PCLE_VAAN	title
-amk	ACRO_OO	', 'ACRO_TALOorg
-amol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+amk	ACRO_OO	org
+amol	ACRO_ÄKS	measure
 a.m.	PCLE_VAAN	time
-aN	ACRO_ÄKS	', 'ACRO_OHMImeasure
+aN	ACRO_ÄKS	measure
 Anastasia	N_MAKKARA	female
 Anatolius	N_VAKUUTUS	male
 Anders	N_PUNK	male
@@ -346,8 +346,8 @@ AOA	ACRO_AA	currency
 AOA	ACRO_AA	title
 AOK	ACRO_OO	currency
 AON	ACRO_ÄKS	currency
-AOR	ACRO_ÄKS	', 'ACRO_OHMIcurrency
-aPa	ACRO_AA	', 'ACRO_OHMImeasure
+AOR	ACRO_ÄKS	currency
+aPa	ACRO_AA	measure
 apaššikieli	N_HIIRI	language
 apassi	N_RUUVI	language
 ap.	PCLE_VAAN	time
@@ -365,14 +365,14 @@ arabiemiirikuntalainen	A_AAKKOSELLINEN	inhabitant
 arabiemiirikuntalainen	N_AAKKOSTAMINEN	country
 arabiemiirikuntalainen	N_AAKKOSTAMINEN	inhabitant
 Arabiemiraatit	N_KASTANJETIT	country
-arad	ACRO_EE	', 'ACRO_DOLLARImeasure
+arad	ACRO_EE	measure
 aragonia	N_MAKKARA	language
 aramea	N_MAKKARA	language
 ARA	N_FIFA	currency
 arapaho	N_TALO	language
 arawak	N_PUNK	language
 Arbetarbladet	N_PUNK	media
-Arg$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
+Arg$	ACRO_DOLLARI	currency
 argentiinalainen	A_AAKKOSELLINEN	country
 argentiinalainen	A_AAKKOSELLINEN	inhabitant
 argentiinalainen	N_AAKKOSTAMINEN	country
@@ -432,8 +432,8 @@ arvoisa	A_MATALA	title
 Arvo	N_TALO	male
 arv.	PCLE_VAAN	title
 ASA	ACRO_AA	org
-as	ACRO_ÄKS	', 'ACRO_OHMImeasure
-aS	ACRO_ÄKS	', 'ACRO_OHMImeasure
+as	ACRO_ÄKS	measure
+aS	ACRO_ÄKS	measure
 A/S	ACRO_ÄKS	org
 AS	ACRO_ÄKS	org
 asentaja	N_VOIMA	title
@@ -454,9 +454,9 @@ Asko	N_TALO	male
 Aslak	N_PUNK	male
 Aslög	N_ZEN	female
 Asmo	N_TALO	male
-as.oy	ACRO_YY	', 'ACRO_GRAYorg
+as.oy	ACRO_YY	org
 as.oy.	PCLE_VAAN	org
-asr	ACRO_ÄKS	', 'ACRO_DOLLARImeasure
+asr	ACRO_ÄKS	measure
 assami	N_RUUVI	language
 Asser	N_STADION	male
 Assi	N_RUUVI	female
@@ -467,7 +467,7 @@ Asta	N_KIRJA	female
 Astrid	N_PUNK	female
 asturia	N_MAKKARA	language
 asu	N_ASU	language
-aT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+aT	ACRO_EE	measure
 ateso	N_RUIPELO	language
 athabascakieli	N_HIIRI	language
 Atle	N_NALLE	male
@@ -480,14 +480,14 @@ atšeh	N_PUNK	language
 atšoli	N_RUUVI	language
 Atso	N_TALO	male
 Atte	N_LOTTE	male
-AU$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
+AU$	ACRO_DOLLARI	currency
 AU	ACRO_UU	measure
-AUD	ACRO_EE	', 'ACRO_DOLLARIcurrency
+AUD	ACRO_EE	currency
 Augusta	N_KIRJA	female
 Augusti	N_RUUVI	male
 Augustinus	N_VAKUUTUS	male
 August	N_PUNK	male
-AUK	ACRO_OO	', 'ACRO_OHMIorg
+AUK	ACRO_OO	org
 Aukusti	N_RUUVI	male
 Aulikki	N_LOKKI	female
 Auli	N_RUUVI	female
@@ -518,16 +518,16 @@ autonasentaja	N_VOIMA	title
 autonkuljettaja	N_VOIMA	title
 Auvo	N_TALO	male
 avaari	N_RUUVI	language
-aV	ACRO_EE	', 'ACRO_OHMImeasure
+aV	ACRO_EE	measure
 avesta	N_KIRJA	language
 AVI	ACRO_II	org
 avi	N_RUUVI	org
-aW	ACRO_EE	', 'ACRO_OHMImeasure
+aW	ACRO_EE	measure
 awadhi	N_RUUVI	language
-aWb	ACRO_EE	', 'ACRO_WEBERmeasure
+aWb	ACRO_EE	measure
 AWG	ACRO_EE	currency
 Axel	N_STADION	male
-ay	ACRO_YY	', 'ACRO_YHDISTYSorg
+ay	ACRO_YY	org
 ay.	PCLE_VAAN	org
 azerbaidžanilainen	A_AAKKOSELLINEN	country
 azerbaidžanilainen	A_AAKKOSELLINEN	inhabitant
@@ -537,9 +537,9 @@ Azerbaidžan	N_STADION	country
 azeri	N_RUUVI	language
 AZM	ACRO_ÄKS	currency
 AZN	ACRO_ÄKS	currency
-aΩ	ACRO_OHMI	', 'ACRO_OHMImeasure
+aΩ	ACRO_OHMI	measure
 BA	ACRO_AA	title
-B	ACRO_EE	', 'ACRO_METRImeasure
+B	ACRO_EE	measure
 BAD	ACRO_EE	currency
 bafia	N_MAKKARA	language
 bahamalainen	A_AAKKOSELLINEN	country
@@ -582,8 +582,8 @@ baškiiri	N_RUUVI	language
 baski	N_RUUVI	language
 batakkieli	N_HIIRI	language
 BBD	ACRO_EE	currency
-BD	ACRO_EE	', 'ACRO_METRIcurrency
-BDS$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+BD	ACRO_EE	currency
+BDS$	ACRO_DOLLARI	currency
 BDT	ACRO_EE	currency
 Be	ACRO_EE	currency
 Beata	N_KIRJA	female
@@ -623,7 +623,7 @@ Benjamin	N_PUNK	male
 Benjam	N_STADION	male
 Benny	N_KÄRRY	male
 Ben	N_ZEN	male
-Ber$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+Ber$	ACRO_DOLLARI	currency
 berberikieli	N_HIIRI	language
 Berit	N_ZEN	female
 bermudalainen	A_AAKKOSELLINEN	country
@@ -699,7 +699,7 @@ bouvet’nsaarelainen	N_AAKKOSTAMINEN	country
 bouvet’nsaarelainen	N_AAKKOSTAMINEN	inhabitant
 Bouvet’nsaari	N_RUUHI	country
 BOV	ACRO_EE	currency
-Bq	ACRO_UU	', 'ACRO_WEBERmeasure
+Bq	ACRO_UU	measure
 Br	ACRO_ÄKS	currency
 bradž	N_PUNK	language
 brasilialainen	A_AAKKOSELLINEN	country
@@ -750,7 +750,7 @@ BRZ	ACRO_ZET	currency
 brändöläinen	A_KYLMÄJÄRKINEN	inhabitant
 brändöläinen	N_KYLKIÄINEN	inhabitant
 Bs	ACRO_ÄKS	currency
-BSc	ACRO_EE	', 'ACRO_METRItitle
+BSc	ACRO_EE	title
 B.Sc.	PCLE_VAAN	title
 BSD	ACRO_EE	currency
 B.S.	PCLE_VAAN	title
@@ -786,21 +786,21 @@ Burundi	N_RUUVI	country
 BWP	ACRO_EE	currency
 BYB	ACRO_EE	currency
 BYR	ACRO_ÄKS	currency
-BZ$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+BZ$	ACRO_DOLLARI	currency
 BZD	ACRO_EE	currency
 Börje	N_NISSE	male
-cA	ACRO_AA	', 'ACRO_DOLLARImeasure
-CA$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
-c	ACRO_EE	', 'ACRO_METRIcurrency
-C	ACRO_EE	', 'ACRO_METRIcurrency
-C	ACRO_EE	', 'ACRO_METRImeasure
-£C	ACRO_EE	', 'ACRO_PUNTAcurrency
+cA	ACRO_AA	measure
+CA$	ACRO_DOLLARI	currency
+c	ACRO_EE	currency
+C	ACRO_EE	currency
+C	ACRO_EE	measure
+£C	ACRO_EE	currency
 CAD	ACRO_EE	currency
 caddo	N_TALO	language
 Caj	N_SERGEJ	male
-cal	ACRO_ÄKS	', 'ACRO_DOLLARImeasure
+cal	ACRO_ÄKS	measure
 Camilla	N_KIRJA	female
-Can$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
+Can$	ACRO_DOLLARI	currency
 cantus	N_VAKUUTUS	title
 Caramia	N_MAKKARA	female
 Cara	N_KIRJA	female
@@ -819,22 +819,22 @@ caymansaarelainen	N_AAKKOSTAMINEN	country
 caymansaarelainen	N_AAKKOSTAMINEN	inhabitant
 Caymansaaret	N_SAARET	country
 cayuga	N_PROBLEEMA	language
-cBq	ACRO_UU	', 'ACRO_METRImeasure
-cc	ACRO_EE	', 'ACRO_GRAMMAmeasure
-cC	ACRO_EE	', 'ACRO_METRImeasure
-c°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-ccd	ACRO_EE	', 'ACRO_KANDELAmeasure
+cBq	ACRO_UU	measure
+cc	ACRO_EE	measure
+cC	ACRO_EE	measure
+c°C	ACRO_EE	measure
+ccd	ACRO_EE	measure
 CDF	ACRO_ÄKS	currency
 cebuano	N_TALO	language
 Cecilia	N_KITARA	female
 Celeste	N_NISSE	female
 Celina	N_KITARA	female
-cF	ACRO_ÄKS	', 'ACRO_METRImeasure
+cF	ACRO_ÄKS	measure
 CF	ACRO_ÄKS	currency
 CFPF	ACRO_ÄKS	currency
-cg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-Ch$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-cH	ACRO_OO	', 'ACRO_METRImeasure
+cg	ACRO_EE	measure
+Ch$	ACRO_DOLLARI	currency
+cH	ACRO_OO	measure
 Charlotta	N_ROTTA	female
 CHE	ACRO_EE	currency
 cherokee	N_PATEE	language
@@ -858,24 +858,24 @@ Christoff	N_PUNK	male
 Christopher	N_STADION	male
 chuuk	N_PUNK	language
 CHW	ACRO_EE	currency
-cHz	ACRO_ZET	', 'ACRO_METRImeasure
-cJ	ACRO_II	', 'ACRO_JOULEmeasure
-cK	ACRO_OO	', 'ACRO_METRImeasure
-ckat	ACRO_EE	', 'ACRO_OHMImeasure
-cl	ACRO_ÄKS	', 'ACRO_GRAMMAmeasure
+cHz	ACRO_ZET	measure
+cJ	ACRO_II	measure
+cK	ACRO_OO	measure
+ckat	ACRO_EE	measure
+cl	ACRO_ÄKS	measure
 Clara	N_KIRJA	female
 CLE	ACRO_EE	currency
 CLF	ACRO_ÄKS	currency
-clm	ACRO_ÄKS	', 'ACRO_METRImeasure
+clm	ACRO_ÄKS	measure
 CLP	ACRO_EE	currency
-clx	ACRO_ÄKS	', 'ACRO_METRImeasure
-cm	ACRO_ÄKS	', 'ACRO_METRImeasure
-cmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-cN	ACRO_ÄKS	', 'ACRO_METRImeasure
+clx	ACRO_ÄKS	measure
+cm	ACRO_ÄKS	measure
+cmol	ACRO_ÄKS	measure
+cN	ACRO_ÄKS	measure
 CNX	ACRO_ÄKS	currency
 CNY	ACRO_YY	currency
-Co	ACRO_OO	', 'ACRO_DOLLARIorg
-Col$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
+Co	ACRO_OO	org
+Col$	ACRO_DOLLARI	currency
 Conny	N_KÄRRY	male
 cookinsaarelainen	A_AAKKOSELLINEN	country
 cookinsaarelainen	A_AAKKOSELLINEN	inhabitant
@@ -885,7 +885,7 @@ Cookinsaaret	N_SAARET	country
 COP	ACRO_EE	currency
 Co.	PCLE_VAAN	org
 Cornelia	N_MAKKARA	female
-Corp	ACRO_EE	', 'ACRO_DOLLARIorg
+Corp	ACRO_EE	org
 Corp.	PCLE_VAAN	org
 costaricalainen	A_AAKKOSELLINEN	country
 costaricalainen	A_AAKKOSELLINEN	inhabitant
@@ -893,19 +893,19 @@ costaricalainen	N_AAKKOSTAMINEN	country
 costaricalainen	N_AAKKOSTAMINEN	inhabitant
 Costa Rica	N_KIRJA	country
 COU	ACRO_UU	currency
-cPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+cPa	ACRO_AA	measure
 CR	ACRO_ÄKS	currency
-crad	ACRO_EE	', 'ACRO_DOLLARImeasure
-CRC	ACRO_EE	', 'ACRO_METRIcurrency
+crad	ACRO_EE	measure
+CRC	ACRO_EE	currency
 creek	N_ZEN	language
 cree	N_TEE	language
 Crista	N_KIRJA	female
-cs	ACRO_ÄKS	', 'ACRO_METRImeasure
-cS	ACRO_ÄKS	', 'ACRO_METRImeasure
+cs	ACRO_ÄKS	measure
+cS	ACRO_ÄKS	measure
 CSD	ACRO_EE	currency
 CSK	ACRO_OO	currency
-csr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-cT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+csr	ACRO_ÄKS	measure
+cT	ACRO_EE	measure
 CUC	ACRO_EE	currency
 CUP	ACRO_EE	currency
 curaçaolainen	A_AAKKOSELLINEN	country
@@ -913,78 +913,78 @@ curaçaolainen	A_AAKKOSELLINEN	inhabitant
 curaçaolainen	N_AAKKOSTAMINEN	country
 curaçaolainen	N_AAKKOSTAMINEN	inhabitant
 Curaçao	N_TALO	country
-cV	ACRO_EE	', 'ACRO_OHMImeasure
+cV	ACRO_EE	measure
 CVE	ACRO_EE	currency
 CVEsc	ACRO_EE	currency
-cW	ACRO_EE	', 'ACRO_OHMImeasure
-cWb	ACRO_EE	', 'ACRO_WEBERmeasure
+cW	ACRO_EE	measure
+cWb	ACRO_EE	measure
 CYP	ACRO_EE	currency
 CZK	ACRO_OO	currency
-cΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-daA	ACRO_AA	', 'ACRO_DOLLARImeasure
-DA	ACRO_AA	', 'ACRO_DOLLARIcurrency
-dA	ACRO_AA	', 'ACRO_DOLLARImeasure
+cΩ	ACRO_OHMI	measure
+daA	ACRO_AA	measure
+DA	ACRO_AA	currency
+dA	ACRO_AA	measure
 Daavid	N_PUNK	male
-daBq	ACRO_UU	', 'ACRO_OHMImeasure
-da°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-daC	ACRO_EE	', 'ACRO_OHMImeasure
-dacd	ACRO_EE	', 'ACRO_KANDELAmeasure
+daBq	ACRO_UU	measure
+da°C	ACRO_EE	measure
+daC	ACRO_EE	measure
+dacd	ACRO_EE	measure
 d	ACRO_EE	measure
 d	ACRO_EE	time
-daF	ACRO_ÄKS	', 'ACRO_OHMImeasure
-dag	ACRO_EE	', 'ACRO_GRAMMAmeasure
+daF	ACRO_ÄKS	measure
+dag	ACRO_EE	measure
 Daga	N_KIRJA	female
 Dagmar	N_STADION	female
 Dag	N_PUNK	male
 Dagny	N_KÄRRY	female
-daH	ACRO_OO	', 'ACRO_OHMImeasure
-daHz	ACRO_ZET	', 'ACRO_OHMImeasure
-daJ	ACRO_II	', 'ACRO_JOULEmeasure
-daK	ACRO_OO	', 'ACRO_OHMImeasure
-dakat	ACRO_EE	', 'ACRO_OHMImeasure
+daH	ACRO_OO	measure
+daHz	ACRO_ZET	measure
+daJ	ACRO_II	measure
+daK	ACRO_OO	measure
+dakat	ACRO_EE	measure
 dakota	N_KITARA	language
-dalm	ACRO_ÄKS	', 'ACRO_OHMImeasure
-dalx	ACRO_ÄKS	', 'ACRO_OHMImeasure
-dam	ACRO_ÄKS	', 'ACRO_OHMImeasure
-damol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-daN	ACRO_ÄKS	', 'ACRO_OHMImeasure
+dalm	ACRO_ÄKS	measure
+dalx	ACRO_ÄKS	measure
+dam	ACRO_ÄKS	measure
+damol	ACRO_ÄKS	measure
+daN	ACRO_ÄKS	measure
 Daniela	N_KIRJA	female
 Daniel	N_STADION	male
 Dani	N_RUUVI	male
 Dan	N_PUNK	male
-daPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-darad	ACRO_EE	', 'ACRO_DOLLARImeasure
+daPa	ACRO_AA	measure
+darad	ACRO_EE	measure
 dargi	N_RUUVI	language
-das	ACRO_ÄKS	', 'ACRO_OHMImeasure
-daS	ACRO_ÄKS	', 'ACRO_OHMImeasure
-dasr	ACRO_ÄKS	', 'ACRO_DOLLARImeasure
-daT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-daV	ACRO_EE	', 'ACRO_OHMImeasure
+das	ACRO_ÄKS	measure
+daS	ACRO_ÄKS	measure
+dasr	ACRO_ÄKS	measure
+daT	ACRO_EE	measure
+daV	ACRO_EE	measure
 David	N_PUNK	male
-daW	ACRO_EE	', 'ACRO_OHMImeasure
-daWb	ACRO_EE	', 'ACRO_WEBERmeasure
+daW	ACRO_EE	measure
+daWb	ACRO_EE	measure
 dazaga	N_KIRJA	language
-daΩ	ACRO_OHMI	', 'ACRO_OHMImeasure
-Db	ACRO_EE	', 'ACRO_METRIcurrency
-dB	ACRO_EE	', 'ACRO_METRImeasure
-dBq	ACRO_UU	', 'ACRO_METRImeasure
-dC	ACRO_EE	', 'ACRO_METRImeasure
-d°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-dcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+daΩ	ACRO_OHMI	measure
+Db	ACRO_EE	currency
+dB	ACRO_EE	measure
+dBq	ACRO_UU	measure
+dC	ACRO_EE	measure
+d°C	ACRO_EE	measure
+dcd	ACRO_EE	measure
 DDM	ACRO_ÄKS	currency
 DE	ACRO_EE	title
 Debora	N_PROBLEEMA	female
 delaware	N_NALLE	language
 DEM	ACRO_ÄKS	currency
-den	ACRO_ÄKS	', 'ACRO_WEBERmeasure
+den	ACRO_ÄKS	measure
 Deniz	N_ZEN	male
 Dennis	N_ZEN	male
-dF	ACRO_ÄKS	', 'ACRO_METRImeasure
+dF	ACRO_ÄKS	measure
 DF	ACRO_ÄKS	currency
-dg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-dH	ACRO_OO	', 'ACRO_METRImeasure
-dHz	ACRO_ZET	', 'ACRO_METRImeasure
-DI	ACRO_II	', 'ACRO_METRItitle
+dg	ACRO_EE	measure
+dH	ACRO_OO	measure
+dHz	ACRO_ZET	measure
+DI	ACRO_II	title
 Diana	N_KITARA	female
 Dick	N_ZEN	male
 Dimitri	N_TYYLI	male
@@ -1011,7 +1011,7 @@ dir. mus.	PCLE_VAAN	title
 Disa	N_KIRJA	female
 divehi	N_TYYLI	language
 div.	PCLE_VAAN	org
-dJ	ACRO_II	', 'ACRO_JOULEmeasure
+dJ	ACRO_II	measure
 dj	ACRO_II	title
 djerma	N_KIRJA	language
 DJF	ACRO_ÄKS	currency
@@ -1021,19 +1021,19 @@ djiboutilainen	N_AAKKOSTAMINEN	country
 djiboutilainen	N_AAKKOSTAMINEN	inhabitant
 Djibouti	N_RUUVI	country
 djula	N_VOIMA	language
-dK	ACRO_OO	', 'ACRO_METRImeasure
-dkat	ACRO_EE	', 'ACRO_OHMImeasure
+dK	ACRO_OO	measure
+dkat	ACRO_EE	measure
 DKK	ACRO_OO	currency
 DKK	ACRO_OO	title
 DKr	ACRO_ÄKS	currency
-dl	ACRO_ÄKS	', 'ACRO_GRAMMAmeasure
-dlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-dlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-dm	ACRO_ÄKS	', 'ACRO_METRImeasure
-dmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-DNA	ACRO_AA	', 'ACRO_OHMImedia
+dl	ACRO_ÄKS	measure
+dlm	ACRO_ÄKS	measure
+dlx	ACRO_ÄKS	measure
+dm	ACRO_ÄKS	measure
+dmol	ACRO_ÄKS	measure
 DNA	ACRO_AA	media
-dN	ACRO_ÄKS	', 'ACRO_METRImeasure
+DNA	ACRO_AA	media
+dN	ACRO_ÄKS	measure
 dogrib	N_PUNK	language
 dogri	N_RUUVI	language
 dollari	N_KANAALI	currency
@@ -1054,41 +1054,41 @@ Dorotea	N_KITARA	female
 Dorrit	N_PUNK	female
 dosentti	N_KORTTI	title
 dos.	PCLE_VAAN	title
-dPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+dPa	ACRO_AA	measure
 DPA	ACRO_AA	media
 DPA	ACRO_AA	org
-drad	ACRO_EE	', 'ACRO_DOLLARImeasure
+drad	ACRO_EE	measure
 dragsfjärdiläinen	A_KYLMÄJÄRKINEN	inhabitant
 dragsfjärdiläinen	N_KYLKIÄINEN	inhabitant
 drakma	N_KIRJA	currency
 dravidakieli	N_HIIRI	language
 Dr.	PCLE_VAAN	title
-ds	ACRO_ÄKS	', 'ACRO_METRImeasure
-dS	ACRO_ÄKS	', 'ACRO_METRImeasure
-dsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-dT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+ds	ACRO_ÄKS	measure
+dS	ACRO_ÄKS	measure
+dsr	ACRO_ÄKS	measure
+dT	ACRO_EE	measure
 DU	ACRO_UU	title
 duala	N_KITARA	language
-dV	ACRO_EE	', 'ACRO_OHMImeasure
-dW	ACRO_EE	', 'ACRO_OHMImeasure
-dWb	ACRO_EE	', 'ACRO_WEBERmeasure
+dV	ACRO_EE	measure
+dW	ACRO_EE	measure
+dWb	ACRO_EE	measure
 DZD	ACRO_EE	currency
 dzongkha	N_VOIMA	language
-dΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-EA	ACRO_AA	', 'ACRO_DOLLARImeasure
+dΩ	ACRO_OHMI	measure
+EA	ACRO_AA	measure
 EA	ACRO_AA	measure
 eaa.	PCLE_VAAN	time
 eaa	PCLE_VAAN	time
-E	ACRO_EE	', 'ACRO_PUNTAcurrency
+E	ACRO_EE	currency
 e	ACRO_EE	currency
 Ea	N_KIRJA	female
 Ebba	N_KIRJA	female
 Ebbe	N_NISSE	male
-EBq	ACRO_UU	', 'ACRO_METRImeasure
-EC$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-EC	ACRO_EE	', 'ACRO_METRImeasure
-E°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-Ecd	ACRO_EE	', 'ACRO_KANDELAmeasure
+EBq	ACRO_UU	measure
+EC$	ACRO_DOLLARI	currency
+EC	ACRO_EE	measure
+E°C	ACRO_EE	measure
+Ecd	ACRO_EE	measure
 eckeröläinen	A_KYLMÄJÄRKINEN	inhabitant
 eckeröläinen	N_KYLKIÄINEN	inhabitant
 ECS	ACRO_ÄKS	currency
@@ -1125,9 +1125,9 @@ Eevastiina	N_KIRJA	female
 Eevert	N_ZEN	male
 Eevertti	N_SKEITTI	male
 Eevi	N_TYYLI	female
-EF	ACRO_ÄKS	', 'ACRO_METRImeasure
+EF	ACRO_ÄKS	measure
 efik	N_ZEN	language
-Eg	ACRO_EE	', 'ACRO_GRAMMAmeasure
+Eg	ACRO_EE	measure
 Egil	N_ZEN	male
 EGP	ACRO_EE	currency
 egyptiläinen	A_KYLMÄJÄRKINEN	country
@@ -1135,8 +1135,8 @@ egyptiläinen	A_KYLMÄJÄRKINEN	inhabitant
 egyptiläinen	N_KYLKIÄINEN	country
 egyptiläinen	N_KYLKIÄINEN	inhabitant
 Egypti	N_TYYLI	country
-EH	ACRO_OO	', 'ACRO_METRImeasure
-EHz	ACRO_ZET	', 'ACRO_METRImeasure
+EH	ACRO_OO	measure
+EHz	ACRO_ZET	measure
 Eija	N_KIRJA	female
 Eijariina	N_KIRJA	female
 Eikka	N_POLITIIKKA	male
@@ -1149,12 +1149,12 @@ Eino	N_TALO	male
 Eira	N_KIRJA	female
 Eirik	N_ZEN	male
 Eivor	N_STADION	female
-EJ	ACRO_II	', 'ACRO_JOULEmeasure
+EJ	ACRO_II	measure
 Ejvind	N_ZEN	male
-EK	ACRO_OO	', 'ACRO_METRImeasure
+EK	ACRO_OO	measure
 EK	ACRO_OO	measure
 ekajuk	N_PUNK	language
-Ekat	ACRO_EE	', 'ACRO_OHMImeasure
+Ekat	ACRO_EE	measure
 Ekku	N_TIKKU	male
 ekonomi	N_RUUVI	title
 ekon.	PCLE_VAAN	title
@@ -1189,8 +1189,8 @@ Elizabeth	N_PUNK	female
 Elja	N_KIRJA	male
 Eljas	N_PATSAS	male
 Eljas	N_VAKUUTUS	male
-ELK	ACRO_OO	', 'ACRO_OHMItitle
-ELL	ACRO_ÄKS	', 'ACRO_OHMItitle
+ELK	ACRO_OO	title
+ELL	ACRO_ÄKS	title
 Ella-Maria	N_MAKKARA	female
 Ella	N_KIRJA	female
 Ellen	N_BESSERWISSER	female
@@ -1201,7 +1201,7 @@ Ellinor	N_PUNK	female
 Elli	N_TYYLI	female
 Elliot	N_PUNK	male
 el.lääk.	PCLE_VAAN	title
-Elm	ACRO_ÄKS	', 'ACRO_METRImeasure
+Elm	ACRO_ÄKS	measure
 Elma	N_KIRJA	female
 Elmeri	N_KEHVELI	male
 Elmer	N_BESSERWISSER	male
@@ -1225,7 +1225,7 @@ Elviina	N_KITARA	female
 Elviira	N_KITARA	female
 Elvi	N_TYYLI	female
 Elvira	N_KITARA	female
-Elx	ACRO_ÄKS	', 'ACRO_METRImeasure
+Elx	ACRO_ÄKS	measure
 ely-keskus	N_VAKUUTUS	org
 eläinl.	PCLE_VAAN	title
 eläinlääket.	PCLE_VAAN	title
@@ -1234,7 +1234,7 @@ eläinlääkintöneuvos	N_VAKUUTUS	title
 eläinlääkäri	N_KEHVELI	title
 eläkeläinen	N_KYLKIÄINEN	title
 eläk.	PCLE_VAAN	title
-Em	ACRO_ÄKS	', 'ACRO_METRImeasure
+Em	ACRO_ÄKS	measure
 Emanuel	N_PUNK	male
 embu	N_ASU	language
 Emelie	N_BERNIE	female
@@ -1251,8 +1251,8 @@ Emma	N_KIRJA	female
 Emmanuel	N_PUNK	male
 Emmi-Julia	N_MAKKARA	female
 Emmi	N_TYYLI	female
-Emol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-EN	ACRO_ÄKS	', 'ACRO_METRImeasure
+Emol	ACRO_ÄKS	measure
+EN	ACRO_ÄKS	measure
 Enar	N_STADION	male
 energianeuvos	N_VAKUUTUS	title
 Engelbert	N_ZEN	male
@@ -1271,8 +1271,8 @@ enontekiöläinen	N_KYLKIÄINEN	inhabitant
 Ensio	N_TUOMIO	male
 EOA	ACRO_AA	org
 EOAK	ACRO_OO	org
-EPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-Erad	ACRO_EE	', 'ACRO_DOLLARImeasure
+EPa	ACRO_AA	measure
+Erad	ACRO_EE	measure
 Erica	N_KITARA	female
 Eric	N_ZEN	male
 Eriika	N_KITARA	female
@@ -1310,7 +1310,7 @@ eräjärveläinen	A_KYLMÄJÄRKINEN	inhabitant
 eräjärveläinen	N_KYLKIÄINEN	inhabitant
 eräneuvos	N_VAKUUTUS	title
 ESA	ACRO_AA	currency
-Es	ACRO_ÄKS	', 'ACRO_METRImeasure
+Es	ACRO_ÄKS	measure
 Esaias	N_PATSAS	male
 Esaias	N_VAKUUTUS	male
 ESA	N_FIFA	currency
@@ -1333,13 +1333,13 @@ espanja	N_MAKKARA	language
 esperanto	N_TALO	language
 espoolainen	A_AAKKOSELLINEN	inhabitant
 espoolainen	N_AAKKOSTAMINEN	inhabitant
-Esr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
+Esr	ACRO_ÄKS	measure
 Essi	N_TYYLI	female
 Esteri	N_KEHVELI	female
 Ester	N_BESSERWISSER	female
 Esther	N_BESSERWISSER	female
 Estrid	N_ZEN	female
-ET	ACRO_EE	', 'ACRO_GRAMMAmeasure
+ET	ACRO_EE	measure
 ETB	ACRO_EE	currency
 Etel	N_BESSERWISSER	female
 eteläafrikkalainen	A_AAKKOSELLINEN	country
@@ -1368,15 +1368,15 @@ etiopialainen	A_AAKKOSELLINEN	inhabitant
 etiopialainen	N_AAKKOSTAMINEN	country
 etiopialainen	N_AAKKOSTAMINEN	inhabitant
 Etiopia	N_MAKKARA	country
-ETK	ACRO_OO	', 'ACRO_OHMItitle
-ETL	ACRO_ÄKS	', 'ACRO_OHMItitle
-ETM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
+ETK	ACRO_OO	title
+ETL	ACRO_ÄKS	title
+ETM	ACRO_ÄKS	title
 et.	PCLE_VAAN	geo
 Etta	N_MITTA	female
 Eugenia	N_MAKKARA	female
 Eugen	N_STADION	male
-EUR	ACRO_ÄKS	', 'ACRO_TALOcurrency
-EUR	ACRO_ÄKS	', 'ACRO_TALOtime
+EUR	ACRO_ÄKS	currency
+EUR	ACRO_ÄKS	time
 eurajokelainen	A_AAKKOSELLINEN	inhabitant
 eurajokelainen	N_AAKKOSTAMINEN	inhabitant
 euralainen	A_AAKKOSELLINEN	inhabitant
@@ -1385,8 +1385,8 @@ EUR	N_PUNK	currency
 EUR	N_PUNK	time
 euro	N_TALO	currency
 eurosentti	N_KORTTI	currency
-eV	ACRO_EE	', 'ACRO_OHMImeasure
-EV	ACRO_EE	', 'ACRO_OHMImeasure
+eV	ACRO_EE	measure
+EV	ACRO_EE	measure
 Evald	N_PUNK	male
 Evamaria	N_MAKKARA	female
 Eva	N_KIRJA	female
@@ -1403,24 +1403,24 @@ Evilda	N_KIRJA	female
 ev.luutn.	PCLE_VAAN	title
 ev.	PCLE_VAAN	title
 evp.	PCLE_VAAN	title
-EW	ACRO_EE	', 'ACRO_OHMImeasure
-EWb	ACRO_EE	', 'ACRO_WEBERmeasure
+EW	ACRO_EE	measure
+EWb	ACRO_EE	measure
 ewe	N_NISSE	language
 ewondo	N_TALO	language
-EΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-fA	ACRO_AA	', 'ACRO_DOLLARImeasure
+EΩ	ACRO_OHMI	measure
+fA	ACRO_AA	measure
 Fabian	N_PUNK	male
-F$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-F	ACRO_ÄKS	', 'ACRO_METRImeasure
-FaK	ACRO_OO	', 'ACRO_OHMItitle
-FaL	ACRO_ÄKS	', 'ACRO_OHMItitle
+F$	ACRO_DOLLARI	currency
+F	ACRO_ÄKS	measure
+FaK	ACRO_OO	title
+FaL	ACRO_ÄKS	title
 falklandinsaarelainen	A_AAKKOSELLINEN	country
 falklandinsaarelainen	A_AAKKOSELLINEN	inhabitant
 falklandinsaarelainen	N_AAKKOSTAMINEN	country
 falklandinsaarelainen	N_AAKKOSTAMINEN	inhabitant
 Falklandinsaaret	N_SAARET	country
 Falklandsaaret	N_SAARET	country
-FaM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
+FaM	ACRO_ÄKS	title
 fang	N_PUNK	language
 Faní	N_BRASSERIE	female
 Fanni	N_RUUVI	female
@@ -1431,19 +1431,19 @@ farmaseutti	N_KORTTI	title
 farmas.	PCLE_VAAN	title
 farm.	PCLE_VAAN	title
 farsi	N_RUUVI	language
-FaT	ACRO_EE	', 'ACRO_DOLLARItitle
-fBq	ACRO_UU	', 'ACRO_METRImeasure
+FaT	ACRO_EE	title
+fBq	ACRO_UU	measure
 Fbu	ACRO_UU	currency
-fC	ACRO_EE	', 'ACRO_METRImeasure
-f°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-fcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+fC	ACRO_EE	measure
+f°C	ACRO_EE	measure
+fcd	ACRO_EE	measure
 Felicia	N_MAKKARA	female
 Felix	N_ZEN	male
 Ferdinand	N_PUNK	male
-fF	ACRO_ÄKS	', 'ACRO_METRImeasure
-fg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-fH	ACRO_OO	', 'ACRO_METRImeasure
-fHz	ACRO_ZET	', 'ACRO_METRImeasure
+fF	ACRO_ÄKS	measure
+fg	ACRO_EE	measure
+fH	ACRO_OO	measure
+fHz	ACRO_ZET	measure
 Fidelma	N_ASEMA	female
 fidžiläinen	A_KYLMÄJÄRKINEN	country
 fidžiläinen	A_KYLMÄJÄRKINEN	inhabitant
@@ -1468,34 +1468,34 @@ Finn	N_ZEN	male
 finströmiläinen	A_KYLMÄJÄRKINEN	inhabitant
 finströmiläinen	N_KYLKIÄINEN	inhabitant
 Fiona	N_PROBLEEMA	female
-fJ	ACRO_II	', 'ACRO_JOULEmeasure
+fJ	ACRO_II	measure
 Fjalar	N_STADION	male
 FJD	ACRO_EE	currency
-fK	ACRO_OO	', 'ACRO_METRImeasure
-FK	ACRO_OO	', 'ACRO_OHMItitle
-fkat	ACRO_EE	', 'ACRO_OHMImeasure
+fK	ACRO_OO	measure
+FK	ACRO_OO	title
+fkat	ACRO_EE	measure
 FKP	ACRO_EE	currency
 flaami	N_RUUVI	language
-fl	ACRO_ÄKS	', 'ACRO_GRAMMAcurrency
-FL	ACRO_ÄKS	', 'ACRO_OHMItitle
-flm	ACRO_ÄKS	', 'ACRO_METRImeasure
+fl	ACRO_ÄKS	currency
+FL	ACRO_ÄKS	title
+flm	ACRO_ÄKS	measure
 Floora	N_VOIMA	female
 Flora	N_VOIMA	female
-flx	ACRO_ÄKS	', 'ACRO_METRImeasure
-FM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-fm	ACRO_ÄKS	', 'ACRO_METRImeasure
-fmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-fN	ACRO_ÄKS	', 'ACRO_METRImeasure
+flx	ACRO_ÄKS	measure
+FM	ACRO_ÄKS	title
+fm	ACRO_ÄKS	measure
+fmol	ACRO_ÄKS	measure
+fN	ACRO_ÄKS	measure
 foinikia	N_MAKKARA	language
 Folke	N_NALLE	male
 fon	N_PUNK	language
 forintti	N_KORTTI	currency
 forssalainen	A_AAKKOSELLINEN	inhabitant
 forssalainen	N_AAKKOSTAMINEN	inhabitant
-fPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+fPa	ACRO_AA	measure
 f.	PCLE_VAAN	currency
 fr	ACRO_ÄKS	currency
-frad	ACRO_EE	', 'ACRO_DOLLARImeasure
+frad	ACRO_EE	measure
 frangi	N_RUUVI	currency
 Frank	N_PUNK	male
 Fransiska	N_KITARA	female
@@ -1513,18 +1513,18 @@ friisi	N_TYYLI	language
 Fritiof	N_PUNK	male
 Fritjof	N_PUNK	male
 friuli	N_RUUVI	language
-fs	ACRO_ÄKS	', 'ACRO_METRImeasure
-fS	ACRO_ÄKS	', 'ACRO_METRImeasure
-fsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-fT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-FT	ACRO_EE	', 'ACRO_WEBERtitle
+fs	ACRO_ÄKS	measure
+fS	ACRO_ÄKS	measure
+fsr	ACRO_ÄKS	measure
+fT	ACRO_EE	measure
+FT	ACRO_EE	title
 Ft	ACRO_EE	currency
 ft.	PCLE_VAAN	measure
 fulani	N_RUUVI	language
 fut	N_PUNK	language
-fV	ACRO_EE	', 'ACRO_OHMImeasure
-fW	ACRO_EE	', 'ACRO_OHMImeasure
-fWb	ACRO_EE	', 'ACRO_WEBERmeasure
+fV	ACRO_EE	measure
+fW	ACRO_EE	measure
+fWb	ACRO_EE	measure
 färsaarelainen	A_AAKKOSELLINEN	country
 färsaarelainen	A_AAKKOSELLINEN	inhabitant
 färsaarelainen	N_AAKKOSTAMINEN	country
@@ -1533,20 +1533,20 @@ Färsaaret	N_SAARET	country
 fääri	N_TYYLI	language
 föglöläinen	A_KYLMÄJÄRKINEN	inhabitant
 föglöläinen	N_KYLKIÄINEN	inhabitant
-fΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-GA	ACRO_AA	', 'ACRO_DOLLARImeasure
+fΩ	ACRO_OHMI	measure
+GA	ACRO_AA	measure
 gabonilainen	A_AAKKOSELLINEN	country
 gabonilainen	A_AAKKOSELLINEN	inhabitant
 gabonilainen	N_AAKKOSTAMINEN	country
 gabonilainen	N_AAKKOSTAMINEN	inhabitant
 Gabon	N_PUNK	country
 Gabriel	N_STADION	male
-G$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-g	ACRO_EE	', 'ACRO_GRAMMAmeasure
+G$	ACRO_DOLLARI	currency
+g	ACRO_EE	measure
 G	ACRO_EE	currency
 gaeli	N_RUUVI	language
 gajo	N_TALO	language
-gal	ACRO_ÄKS	', 'ACRO_PUNTAmeasure
+gal	ACRO_ÄKS	measure
 galicia	N_MAKKARA	language
 gambialainen	A_AAKKOSELLINEN	country
 gambialainen	A_AAKKOSELLINEN	inhabitant
@@ -1557,10 +1557,10 @@ ga	N_CHACHACHA	language
 ganda	N_KIRJA	language
 gbaja	N_KIRJA	language
 GBP	ACRO_EE	currency
-GBq	ACRO_UU	', 'ACRO_METRImeasure
-GC	ACRO_EE	', 'ACRO_METRImeasure
-G°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-Gcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+GBq	ACRO_UU	measure
+GC	ACRO_EE	measure
+G°C	ACRO_EE	measure
+Gcd	ACRO_EE	measure
 ge’ez	N_ZEN	language
 Geir	N_ZEN	male
 GEK	ACRO_OO	currency
@@ -1577,10 +1577,10 @@ Germund	N_PUNK	male
 Gert	N_ZEN	male
 getalainen	A_AAKKOSELLINEN	inhabitant
 getalainen	N_AAKKOSTAMINEN	inhabitant
-GF	ACRO_ÄKS	', 'ACRO_METRIcurrency
-GF	ACRO_ÄKS	', 'ACRO_METRImeasure
-Gg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-GH	ACRO_OO	', 'ACRO_METRImeasure
+GF	ACRO_ÄKS	currency
+GF	ACRO_ÄKS	measure
+Gg	ACRO_EE	measure
+GH	ACRO_OO	measure
 ghanalainen	A_AAKKOSELLINEN	country
 ghanalainen	A_AAKKOSELLINEN	inhabitant
 ghanalainen	N_AAKKOSTAMINEN	country
@@ -1589,25 +1589,25 @@ Ghana	N_KIRJA	country
 GHC	ACRO_EE	currency
 ghomala	N_KITARA	language
 GHS	ACRO_ÄKS	currency
-GHz	ACRO_ZET	', 'ACRO_METRImeasure
+GHz	ACRO_ZET	measure
 gibraltarilainen	A_AAKKOSELLINEN	country
 gibraltarilainen	A_AAKKOSELLINEN	inhabitant
 gibraltarilainen	N_AAKKOSTAMINEN	country
 gibraltarilainen	N_AAKKOSTAMINEN	inhabitant
 Gibraltar	N_PUNK	country
 GIP	ACRO_EE	currency
-GJ	ACRO_II	', 'ACRO_JOULEmeasure
-GK	ACRO_OO	', 'ACRO_METRImeasure
-Gkat	ACRO_EE	', 'ACRO_OHMImeasure
+GJ	ACRO_II	measure
+GK	ACRO_OO	measure
+Gkat	ACRO_EE	measure
 Glenn	N_ZEN	male
-Glm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Glx	ACRO_ÄKS	', 'ACRO_METRImeasure
-Gm	ACRO_ÄKS	', 'ACRO_METRImeasure
+Glm	ACRO_ÄKS	measure
+Glx	ACRO_ÄKS	measure
+Gm	ACRO_ÄKS	measure
 Gmbh	ACRO_OO	org
 GmbH	ACRO_OO	org
 GMD	ACRO_EE	currency
-Gmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-GN	ACRO_ÄKS	', 'ACRO_METRImeasure
+Gmol	ACRO_ÄKS	measure
+GN	ACRO_ÄKS	measure
 GNF	ACRO_ÄKS	currency
 GNS	ACRO_ÄKS	currency
 gon	ACRO_ÄKS	measure
@@ -1615,9 +1615,9 @@ gondi	N_RUUVI	language
 gootti	N_KORTTI	language
 gorontalo	N_TALO	language
 Gottfrid	N_PUNK	male
-GPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+GPa	ACRO_AA	measure
 GQE	ACRO_EE	currency
-Grad	ACRO_EE	', 'ACRO_DOLLARImeasure
+Grad	ACRO_EE	measure
 GRD	ACRO_EE	currency
 grebo	N_TALO	language
 Greger	N_BESSERWISSER	male
@@ -1640,10 +1640,10 @@ grönlantilainen	N_AAKKOSTAMINEN	country
 grönlantilainen	N_AAKKOSTAMINEN	inhabitant
 Grönlanti	N_SOINTI	country
 grönlanti	N_SOINTI	language
-Gs	ACRO_ÄKS	', 'ACRO_METRImeasure
-GS	ACRO_ÄKS	', 'ACRO_METRImeasure
-Gsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-GT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+Gs	ACRO_ÄKS	measure
+GS	ACRO_ÄKS	measure
+Gsr	ACRO_ÄKS	measure
+GT	ACRO_EE	measure
 GTQ	ACRO_UU	currency
 guadeloupelainen	A_AAKKOSELLINEN	country
 guadeloupelainen	A_AAKKOSELLINEN	inhabitant
@@ -1684,20 +1684,20 @@ guyanalainen	N_AAKKOSTAMINEN	country
 guyanalainen	N_AAKKOSTAMINEN	inhabitant
 Guyana	N_KIRJA	country
 Guy	N_FONDUE	male
-GV	ACRO_EE	', 'ACRO_OHMImeasure
-GW	ACRO_EE	', 'ACRO_OHMImeasure
-GWb	ACRO_EE	', 'ACRO_WEBERmeasure
+GV	ACRO_EE	measure
+GW	ACRO_EE	measure
+GWb	ACRO_EE	measure
 GWE	ACRO_EE	currency
 gwitšin	N_ZEN	language
 GWP	ACRO_EE	currency
-Gy	ACRO_YY	', 'ACRO_GRAYmeasure
+Gy	ACRO_YY	measure
 GYD	ACRO_EE	currency
 Göran	N_STADION	male
 Gösta	N_KIRJA	male
 Gösta	N_VOIMA	male
 Göte	N_NISSE	male
-GΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-hA	ACRO_AA	', 'ACRO_DOLLARImeasure
+GΩ	ACRO_OHMI	measure
+hA	ACRO_AA	measure
 ha	ACRO_AA	measure
 HA	ACRO_AA	title
 haapajärveläinen	A_KYLMÄJÄRKINEN	inhabitant
@@ -1712,7 +1712,7 @@ haapaveteläinen	A_KYLMÄJÄRKINEN	inhabitant
 haapaveteläinen	N_KYLKIÄINEN	inhabitant
 haapavetinen	A_AAKKOSELLINEN	inhabitant
 haapavetinen	N_AAKKOSTAMINEN	inhabitant
-h	ACRO_OO	', 'ACRO_METRItime
+h	ACRO_OO	time
 Hagar	N_STADION	female
 haida	N_KIRJA	language
 hailuotolainen	A_AAKKOSELLINEN	inhabitant
@@ -1789,10 +1789,10 @@ hausjärveläinen	N_KYLKIÄINEN	inhabitant
 hausjärvinen	A_KYLMÄJÄRKINEN	inhabitant
 hausjärvinen	N_KYLKIÄINEN	inhabitant
 havaiji	N_RUUVI	language
-hBq	ACRO_UU	', 'ACRO_METRImeasure
-hC	ACRO_EE	', 'ACRO_METRImeasure
-h°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-hcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+hBq	ACRO_UU	measure
+hC	ACRO_EE	measure
+h°C	ACRO_EE	measure
+hcd	ACRO_EE	measure
 h.c.	PCLE_VAAN	title
 Heard and McDonaldinsaaret	N_SAARET	country
 Hedda	N_KIRJA	female
@@ -1872,10 +1872,10 @@ Heta-Johanna	N_KIRJA	female
 Heta-Liisa	N_KIRJA	female
 Heta	N_KIRJA	female
 Hevosurheilu	N_SEIKKAILU	media
-hF	ACRO_ÄKS	', 'ACRO_METRImeasure
-hg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-hH	ACRO_OO	', 'ACRO_METRImeasure
-hHz	ACRO_ZET	', 'ACRO_METRImeasure
+hF	ACRO_ÄKS	measure
+hg	ACRO_EE	measure
+hH	ACRO_OO	measure
+hHz	ACRO_ZET	measure
 hiittisläinen	A_KYLMÄJÄRKINEN	inhabitant
 hiittisläinen	N_KYLKIÄINEN	inhabitant
 Hilda	N_KIRJA	female
@@ -1902,34 +1902,34 @@ hinnerjokinen	N_AAKKOSTAMINEN	inhabitant
 hiri-motu	N_ASU	language
 hirvensalmelainen	A_AAKKOSELLINEN	inhabitant
 hirvensalmelainen	N_AAKKOSTAMINEN	inhabitant
-hJ	ACRO_II	', 'ACRO_JOULEmeasure
+hJ	ACRO_II	measure
 Hjalmar	N_STADION	male
 Hjördis	N_RÄJÄYTYS	female
-HK$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-hK	ACRO_OO	', 'ACRO_METRImeasure
-HK	ACRO_OO	', 'ACRO_OHMItitle
-hkat	ACRO_EE	', 'ACRO_OHMImeasure
+HK$	ACRO_DOLLARI	currency
+hK	ACRO_OO	measure
+HK	ACRO_OO	title
+hkat	ACRO_EE	measure
 HKD	ACRO_EE	currency
-hl	ACRO_ÄKS	', 'ACRO_GRAMMAmeasure
-HL	ACRO_ÄKS	', 'ACRO_OHMItitle
-HL	ACRO_ÄKS	', 'ACRO_PUNTAtitle
-HLK	ACRO_OO	', 'ACRO_OHMItitle
-HLL	ACRO_ÄKS	', 'ACRO_OHMItitle
-hlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-HLT	ACRO_EE	', 'ACRO_DOLLARItitle
-hlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-HM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-hm	ACRO_ÄKS	', 'ACRO_METRImeasure
-hmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+hl	ACRO_ÄKS	measure
+HL	ACRO_ÄKS	title
+HL	ACRO_ÄKS	title
+HLK	ACRO_OO	title
+HLL	ACRO_ÄKS	title
+hlm	ACRO_ÄKS	measure
+HLT	ACRO_EE	title
+hlx	ACRO_ÄKS	measure
+HM	ACRO_ÄKS	title
+hm	ACRO_ÄKS	measure
+hmol	ACRO_ÄKS	measure
 hmong	N_PUNK	language
 hm	PCLE_HAH	measure
-hN	ACRO_ÄKS	', 'ACRO_METRImeasure
-HN	ACRO_ÄKS	', 'ACRO_METRItitle
+hN	ACRO_ÄKS	measure
+HN	ACRO_ÄKS	title
 HNL	ACRO_ÄKS	currency
-HO	ACRO_OO	', 'ACRO_OIKEUSorg
+HO	ACRO_OO	org
 HO	ACRO_OO	org
 hoitaja	N_ASEMA	title
-HOK	ACRO_OO	', 'ACRO_PUNTAtitle
+HOK	ACRO_OO	title
 Holger	N_STADION	male
 hollantilainen	A_AAKKOSELLINEN	country
 hollantilainen	A_AAKKOSELLINEN	inhabitant
@@ -1961,23 +1961,23 @@ houtskarilainen	A_AAKKOSELLINEN	inhabitant
 houtskarilainen	N_AAKKOSTAMINEN	inhabitant
 hovimestari	N_KANAALI	title
 hovioik.	PCLE_VAAN	title
-hPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-hrad	ACRO_EE	', 'ACRO_DOLLARImeasure
+hPa	ACRO_AA	measure
+hrad	ACRO_EE	measure
 hra	N_KIRJA	title
 HRD	ACRO_EE	currency
 HRK	ACRO_OO	currency
 hryvnia	N_MAKKARA	currency
-hs	ACRO_ÄKS	', 'ACRO_METRImeasure
-hS	ACRO_ÄKS	', 'ACRO_METRImeasure
-hsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-hT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+hs	ACRO_ÄKS	measure
+hS	ACRO_ÄKS	measure
+hsr	ACRO_ÄKS	measure
+hT	ACRO_EE	measure
 HT	ACRO_EE	title
 HTG	ACRO_EE	currency
-HTK	ACRO_OO	', 'ACRO_OHMItitle
+HTK	ACRO_OO	title
 htkk	ACRO_OO	measure
-HTL	ACRO_ÄKS	', 'ACRO_OHMItitle
-HTM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-HTT	ACRO_EE	', 'ACRO_DOLLARItitle
+HTL	ACRO_ÄKS	title
+HTM	ACRO_ÄKS	title
+HTT	ACRO_EE	title
 htv	ACRO_EE	measure
 HUF	ACRO_ÄKS	currency
 Hufvudstadsbladet	N_PUNK	media
@@ -1986,7 +1986,7 @@ Huippuvuoret ja Jan Mayen	N_BESSERWISSER	country
 Huippuvuoret	N_SAARET	country
 huittislainen	A_AAKKOSELLINEN	inhabitant
 huittislainen	N_AAKKOSTAMINEN	inhabitant
-HuK	ACRO_OO	', 'ACRO_OHMItitle
+HuK	ACRO_OO	title
 Hulda	N_KIRJA	female
 Hulda	N_VOIMA	female
 humppilainen	A_AAKKOSELLINEN	inhabitant
@@ -1994,17 +1994,17 @@ humppilainen	N_AAKKOSTAMINEN	inhabitant
 humppilalainen	A_AAKKOSELLINEN	inhabitant
 humppilalainen	N_AAKKOSTAMINEN	inhabitant
 hupa	N_VOIMA	language
-hv	ACRO_EE	', 'ACRO_GRAMMAmeasure
-hV	ACRO_EE	', 'ACRO_OHMImeasure
-hW	ACRO_EE	', 'ACRO_OHMImeasure
-hWb	ACRO_EE	', 'ACRO_WEBERmeasure
+hv	ACRO_EE	measure
+hV	ACRO_EE	measure
+hW	ACRO_EE	measure
+hWb	ACRO_EE	measure
 hyrynsalmelainen	A_AAKKOSELLINEN	inhabitant
 hyrynsalmelainen	N_AAKKOSTAMINEN	inhabitant
 hyvinkääläinen	A_KYLMÄJÄRKINEN	inhabitant
 hyvinkääläinen	N_KYLKIÄINEN	inhabitant
-Hz	ACRO_ZET	', 'ACRO_METRImeasure
+Hz	ACRO_ZET	measure
 Håkan	N_STADION	male
-hΩ	ACRO_OHMI	', 'ACRO_METRImeasure
+hΩ	ACRO_OHMI	measure
 iban	N_PUNK	language
 ibibio	N_TALO	language
 ID	ACRO_EE	currency
@@ -2135,7 +2135,7 @@ inuktitut	N_PUNK	language
 inupiaq	N_PUNK	language
 ip.	PCLE_VAAN	time
 IQD	ACRO_EE	currency
-IR£	ACRO_PUNTA	', 'ACRO_GRAMMAcurrency
+IR£	ACRO_PUNTA	currency
 irakilainen	A_AAKKOSELLINEN	country
 irakilainen	A_AAKKOSELLINEN	inhabitant
 irakilainen	N_AAKKOSTAMINEN	country
@@ -2231,8 +2231,8 @@ Jaana	N_KIRJA	female
 jaa.	PCLE_VAAN	time
 jaa	PCLE_HAH	time
 jaava	N_KIRJA	language
-J$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-J	ACRO_II	', 'ACRO_JOULEmeasure
+J$	ACRO_DOLLARI	currency
+J	ACRO_II	measure
 Jade-Maria	N_MAKKARA	female
 Jade	N_NALLE	female
 Jadessa	N_KIRJA	female
@@ -2502,8 +2502,8 @@ jääkäri	N_KEHVELI	title
 Jöran	N_STADION	male
 Jörgen	N_BESSERWISSER	male
 Jörn	N_ZEN	male
-kA	ACRO_AA	', 'ACRO_DOLLARImeasure
-ka	ACRO_AA	', 'ACRO_TALOmeasure
+kA	ACRO_AA	measure
+ka	ACRO_AA	measure
 kaakkois-	N_COMPOUND	geo
 Kaakonkulma	N_VOIMA	media
 Kaapo	N_TALO	male
@@ -2521,7 +2521,7 @@ kaavilainen	A_AAKKOSELLINEN	inhabitant
 kaavilainen	N_AAKKOSTAMINEN	inhabitant
 kabardi	N_RUUVI	language
 kabyyli	N_TYYLI	language
-K	ACRO_OO	', 'ACRO_METRImeasure
+K	ACRO_OO	measure
 kadetti	N_KORTTI	title
 kad.	PCLE_VAAN	title
 Kaija	N_KIRJA	female
@@ -2734,14 +2734,14 @@ kazakstanilainen	A_AAKKOSELLINEN	inhabitant
 kazakstanilainen	N_AAKKOSTAMINEN	country
 kazakstanilainen	N_AAKKOSTAMINEN	inhabitant
 Kazakstan	N_PUNK	country
-kb	ACRO_EE	', 'ACRO_METRImeasure
-kB	ACRO_EE	', 'ACRO_TALOmeasure
-kBq	ACRO_UU	', 'ACRO_METRImeasure
-kC	ACRO_EE	', 'ACRO_METRImeasure
-k°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-kcal	ACRO_ÄKS	', 'ACRO_DOLLARImeasure
+kb	ACRO_EE	measure
+kB	ACRO_EE	measure
+kBq	ACRO_UU	measure
+kC	ACRO_EE	measure
+k°C	ACRO_EE	measure
+kcal	ACRO_ÄKS	measure
 kcal	PCLE_VAAN	measure
-kcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+kcd	ACRO_EE	measure
 KD	ACRO_EE	currency
 KD	ACRO_EE	polit
 kd.	PCLE_VAAN	polit
@@ -2823,10 +2823,10 @@ keuruslainen	N_AAKKOSTAMINEN	inhabitant
 keuruulainen	A_AAKKOSELLINEN	inhabitant
 keuruulainen	N_AAKKOSTAMINEN	inhabitant
 Kevin	N_ZEN	male
-kF	ACRO_ÄKS	', 'ACRO_METRImeasure
-kg	ACRO_EE	', 'ACRO_GRAMMAmeasure
+kF	ACRO_ÄKS	measure
+kg	ACRO_EE	measure
 KGS	ACRO_ÄKS	currency
-kH	ACRO_OO	', 'ACRO_METRImeasure
+kH	ACRO_OO	measure
 kh	ACRO_OO	org
 khasi	N_RUUVI	language
 KHK	ACRO_OO	title
@@ -2837,7 +2837,7 @@ khotani	N_RUUVI	language
 KHR	ACRO_ÄKS	currency
 khra	N_KIRJA	title
 KHT	ACRO_EE	title
-kHz	ACRO_ZET	', 'ACRO_METRImeasure
+kHz	ACRO_ZET	measure
 Kiamilla	N_KIRJA	female
 Kia	N_KIRJA	female
 kielenkääntäjä	N_HÖPÖTTÄJÄ	title
@@ -2866,7 +2866,7 @@ Kiina	N_KIRJA	country
 kiina	N_KIRJA	language
 kiinteistöneuvos	N_VAKUUTUS	title
 kiinteistönvälittäjä	N_HÖPÖTTÄJÄ	title
-kiint.oy	ACRO_YY	', 'ACRO_GRAYorg
+kiint.oy	ACRO_YY	org
 kiint.oy.	PCLE_VAAN	org
 Kiira-Johanna	N_KIRJA	female
 Kiira	N_KIRJA	female
@@ -2937,33 +2937,33 @@ kivijärveläinen	A_KYLMÄJÄRKINEN	inhabitant
 kivijärveläinen	N_KYLKIÄINEN	inhabitant
 kivijärvinen	A_KYLMÄJÄRKINEN	inhabitant
 kivijärvinen	N_KYLKIÄINEN	inhabitant
-kJ	ACRO_II	', 'ACRO_JOULEmeasure
+kJ	ACRO_II	measure
 Kjell	N_ZEN	male
-kK	ACRO_OO	', 'ACRO_METRImeasure
-KK	ACRO_OO	', 'ACRO_OHMItitle
-kk	ACRO_OO	', 'ACRO_VUOSItime
-kkat	ACRO_EE	', 'ACRO_OHMImeasure
-KKO	ACRO_OO	', 'ACRO_OIKEUSorg
+kK	ACRO_OO	measure
+KK	ACRO_OO	title
+kk	ACRO_OO	time
+kkat	ACRO_EE	measure
+KKO	ACRO_OO	org
 kkp	ACRO_EE	measure
 Klaara	N_KIRJA	female
-KL	ACRO_ÄKS	', 'ACRO_OHMItitle
+KL	ACRO_ÄKS	title
 Klara	N_KIRJA	female
 Klas	N_PUNK	male
 Klaus	N_PUNK	male
 Klaus	N_KREUS	male
 klingon	N_PUNK	language
-klm	ACRO_ÄKS	', 'ACRO_METRImeasure
+klm	ACRO_ÄKS	measure
 klo	N_TALO	time
 kl.	PCLE_VAAN	time
-klx	ACRO_ÄKS	', 'ACRO_METRImeasure
-k-m²	ACRO_ÄKS	', 'ACRO_METRImeasure
-k-m³	ACRO_ÄKS	', 'ACRO_METRImeasure
-km	ACRO_ÄKS	', 'ACRO_METRImeasure
+klx	ACRO_ÄKS	measure
+k-m²	ACRO_ÄKS	measure
+k-m³	ACRO_ÄKS	measure
+km	ACRO_ÄKS	measure
 KM	ACRO_ÄKS	currency
 KM	ACRO_ÄKS	title
 KMF	ACRO_ÄKS	currency
-kmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-kN	ACRO_ÄKS	', 'ACRO_METRImeasure
+kmol	ACRO_ÄKS	measure
+kN	ACRO_ÄKS	measure
 Knut	N_PUNK	male
 KO	ACRO_OO	org
 kodisjokelainen	A_AAKKOSELLINEN	inhabitant
@@ -3097,15 +3097,15 @@ kouvolainen	A_AAKKOSELLINEN	inhabitant
 kouvolainen	N_AAKKOSTAMINEN	inhabitant
 kouvolalainen	A_AAKKOSELLINEN	inhabitant
 kouvolalainen	N_AAKKOSTAMINEN	inhabitant
-KOY	ACRO_YY	', 'ACRO_GRAYorg
-kPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+KOY	ACRO_YY	org
+kPa	ACRO_AA	measure
 kp	ACRO_EE	measure
 kpelle	N_NISSE	language
-kpl	ACRO_ÄKS	', 'ACRO_TUOTEmeasure
+kpl	ACRO_ÄKS	measure
 kpm	ACRO_ÄKS	measure
 KPW	ACRO_EE	currency
 kr	ACRO_ÄKS	currency
-krad	ACRO_EE	', 'ACRO_DOLLARImeasure
+krad	ACRO_EE	measure
 kreikkalainen	A_AAKKOSELLINEN	country
 kreikkalainen	A_AAKKOSELLINEN	inhabitant
 kreikkalainen	N_AAKKOSTAMINEN	country
@@ -3141,19 +3141,19 @@ kruunu	N_ASU	currency
 kruunupyyläinen	A_KYLMÄJÄRKINEN	inhabitant
 kruunupyyläinen	N_KYLKIÄINEN	inhabitant
 KRW	ACRO_EE	currency
-ks	ACRO_ÄKS	', 'ACRO_METRImeasure
-kS	ACRO_ÄKS	', 'ACRO_METRImeasure
+ks	ACRO_ÄKS	measure
+kS	ACRO_ÄKS	measure
 K Sh	ACRO_OO	currency
-ksr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-kT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-kt	ACRO_EE	', 'ACRO_TALOmeasure
-KT	ACRO_EE	', 'ACRO_WEBERtitle
+ksr	ACRO_ÄKS	measure
+kT	ACRO_EE	measure
+kt	ACRO_EE	measure
+KT	ACRO_EE	title
 KtaO	ACRO_OO	title
 KteO	ACRO_OO	title
-KTK	ACRO_OO	', 'ACRO_OHMItitle
-KTL	ACRO_ÄKS	', 'ACRO_OHMItitle
-KTM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-KTT	ACRO_EE	', 'ACRO_WEBERtitle
+KTK	ACRO_OO	title
+KTL	ACRO_ÄKS	title
+KTM	ACRO_ÄKS	title
+KTT	ACRO_EE	title
 KtyO	ACRO_OO	title
 KUA	ACRO_AA	org
 kuanjama	N_KIRJA	language
@@ -3225,13 +3225,13 @@ kuwaitilainen	A_AAKKOSELLINEN	inhabitant
 kuwaitilainen	N_AAKKOSTAMINEN	country
 kuwaitilainen	N_AAKKOSTAMINEN	inhabitant
 Kuwait	N_PUNK	country
-kV	ACRO_EE	', 'ACRO_OHMImeasure
-kW	ACRO_EE	', 'ACRO_OHMImeasure
+kV	ACRO_EE	measure
+kW	ACRO_EE	measure
 kwasio	N_RUIPELO	language
-kWb	ACRO_EE	', 'ACRO_WEBERmeasure
+kWb	ACRO_EE	measure
 KWD	ACRO_EE	currency
-kWh	ACRO_OO	', 'ACRO_METRImeasure
-ky	ACRO_YY	', 'ACRO_JÄRJESTÖorg
+kWh	ACRO_OO	measure
+ky	ACRO_YY	org
 KYD	ACRO_EE	currency
 Kyllikki	N_HÄKKI	female
 Kylli	N_TYYLI	female
@@ -3262,12 +3262,12 @@ kökarilainen	N_AAKKOSTAMINEN	inhabitant
 kölsch	N_ZEN	language
 köyliöläinen	A_KYLMÄJÄRKINEN	inhabitant
 köyliöläinen	N_KYLKIÄINEN	inhabitant
-kΩ	ACRO_OHMI	', 'ACRO_METRImeasure
+kΩ	ACRO_OHMI	measure
 la	ACRO_AA	time
 laamanni	N_RUUVI	title
 laboratorioinsinööri	N_TYYLI	title
-L	ACRO_ÄKS	', 'ACRO_GRAMMAcurrency
-l	ACRO_ÄKS	', 'ACRO_GRAMMAmeasure
+L	ACRO_ÄKS	currency
+l	ACRO_ÄKS	measure
 ladino	N_RUIPELO	language
 Lahja	N_KIRJA	female
 lahnda	N_KIRJA	language
@@ -3282,10 +3282,10 @@ laitilainen	N_AAKKOSTAMINEN	inhabitant
 laitilalainen	A_AAKKOSELLINEN	inhabitant
 laitilalainen	N_AAKKOSTAMINEN	inhabitant
 laivahuoltaja	N_VOIMA	title
-LaK	ACRO_OO	', 'ACRO_OHMItitle
+LaK	ACRO_OO	title
 LAK	ACRO_OO	currency
 lakit.	PCLE_VAAN	title
-LaL	ACRO_ÄKS	', 'ACRO_OHMItitle
+LaL	ACRO_ÄKS	title
 lamba	N_KIRJA	language
 lammilainen	A_AAKKOSELLINEN	inhabitant
 lammilainen	N_AAKKOSTAMINEN	inhabitant
@@ -3331,7 +3331,7 @@ Lassi-Jussi	N_RUUVI	male
 Lassi	N_RUUVI	male
 lastentarhanopettaja	N_VOIMA	title
 lastent.op.	PCLE_VAAN	title
-LaT	ACRO_EE	', 'ACRO_DOLLARItitle
+LaT	ACRO_EE	title
 latina	N_MAKKARA	language
 lati	N_RUUVI	currency
 latvialainen	A_AAKKOSELLINEN	country
@@ -3460,7 +3460,7 @@ Liina	N_KIRJA	female
 liira	N_KIRJA	currency
 Liisa	N_KIRJA	female
 Liisi	N_TYYLI	female
-LiK	ACRO_OO	', 'ACRO_OHMItitle
+LiK	ACRO_OO	title
 Lila	N_KIRJA	female
 Lilian	N_PUNK	female
 Lilja	N_KIRJA	female
@@ -3489,13 +3489,13 @@ Lisen	N_ZEN	female
 lisensiaatti	N_KORTTI	title
 lis.	PCLE_VAAN	title
 liti	N_TYYLI	currency
-LitK	ACRO_OO	', 'ACRO_OHMItitle
-LitL	ACRO_ÄKS	', 'ACRO_OHMItitle
-LitM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-LitT	ACRO_EE	', 'ACRO_WEBERtitle
+LitK	ACRO_OO	title
+LitL	ACRO_ÄKS	title
+LitM	ACRO_ÄKS	title
+LitT	ACRO_EE	title
 Livia	N_KITARA	female
 Liv	N_ZEN	media
-LK	ACRO_OO	', 'ACRO_OHMItitle
+LK	ACRO_OO	title
 LKH	ACRO_OO	org
 LKR	ACRO_ÄKS	currency
 LKT	ACRO_EE	title
@@ -3505,11 +3505,11 @@ LKV	ACRO_EE	title
 lkv.	PCLE_VAAN	time
 lky	ACRO_YY	org
 lky.	PCLE_VAAN	org
-LL	ACRO_ÄKS	', 'ACRO_OHMItitle
+LL	ACRO_ÄKS	title
 LL	ACRO_ÄKS	currency
 ll	ACRO_ÄKS	org
 ll.	PCLE_VAAN	org
-lm	ACRO_ÄKS	', 'ACRO_METRImeasure
+lm	ACRO_ÄKS	measure
 Lm	ACRO_ÄKS	currency
 lohjalainen	A_AAKKOSELLINEN	inhabitant
 lohjalainen	N_AAKKOSTAMINEN	inhabitant
@@ -3520,7 +3520,7 @@ lohtolainen	N_AAKKOSTAMINEN	inhabitant
 loimaalainen	A_AAKKOSELLINEN	inhabitant
 loimaalainen	N_AAKKOSTAMINEN	inhabitant
 lojban	N_PUNK	language
-LOK	ACRO_OO	', 'ACRO_OHMItitle
+LOK	ACRO_OO	title
 lokalahtelainen	A_AAKKOSELLINEN	inhabitant
 lokalahtelainen	N_AAKKOSTAMINEN	inhabitant
 loppelainen	A_AAKKOSELLINEN	inhabitant
@@ -3562,7 +3562,7 @@ luhankalainen	A_AAKKOSELLINEN	inhabitant
 luhankalainen	N_AAKKOSTAMINEN	inhabitant
 luhya	N_KIRJA	language
 luiseño	N_TALO	language
-LuK	ACRO_OO	', 'ACRO_OHMItitle
+LuK	ACRO_OO	title
 Luka	N_VOIMA	male
 Lukas	N_PUNK	male
 Lukas	N_VAKUUTUS	male
@@ -3613,7 +3613,7 @@ LVL	ACRO_ÄKS	currency
 LVM	ACRO_ÄKS	org
 lv.	PCLE_VAAN	time
 LVR	ACRO_ÄKS	currency
-lx	ACRO_ÄKS	', 'ACRO_METRImeasure
+lx	ACRO_ÄKS	measure
 ly	ACRO_YY	measure
 LYD	ACRO_EE	currency
 Lydia	N_KITARA	female
@@ -3641,11 +3641,11 @@ lääket.	PCLE_VAAN	title
 lääkintöneuvos	N_VAKUUTUS	title
 lääk.	PCLE_VAAN	title
 lääkäri	N_KEHVELI	title
-m²	ACRO_ÄKS	', 'ACRO_METRImeasure
-m³	ACRO_ÄKS	', 'ACRO_METRImeasure
-mA	ACRO_AA	', 'ACRO_DOLLARImeasure
-MA	ACRO_AA	', 'ACRO_DOLLARImeasure
-MA	ACRO_AA	', 'ACRO_DOLLARItitle
+m²	ACRO_ÄKS	measure
+m³	ACRO_ÄKS	measure
+mA	ACRO_AA	measure
+MA	ACRO_AA	measure
+MA	ACRO_AA	title
 ma	ACRO_AA	time
 ma	PCLE_VAAN	time
 maakuntaneuvos	N_VAKUUTUS	title
@@ -3677,10 +3677,10 @@ macaolainen	N_AAKKOSTAMINEN	country
 macaolainen	N_AAKKOSTAMINEN	inhabitant
 Macao	N_TUOMIO	country
 machame	N_NALLE	language
-m€	ACRO_EURO	', 'ACRO_TALOcurrency
-M€	ACRO_EURO	', 'ACRO_TALOcurrency
-µm	ACRO_ÄKS	', 'ACRO_METRImeasure
-m	ACRO_ÄKS	', 'ACRO_METRImeasure
+m€	ACRO_EURO	currency
+M€	ACRO_EURO	currency
+µm	ACRO_ÄKS	measure
+m	ACRO_ÄKS	measure
 M	ACRO_ÄKS	currency
 MAD	ACRO_EE	currency
 madagaskarilainen	A_AAKKOSELLINEN	country
@@ -3901,18 +3901,18 @@ mayottelainen	N_AAKKOSTAMINEN	inhabitant
 Mayotte	N_NALLE	country
 M.B.A	ACRO_AA	title
 MBA	ACRO_AA	title
-Mb	ACRO_EE	', 'ACRO_METRImeasure
-MB	ACRO_EE	', 'ACRO_TALOmeasure
+Mb	ACRO_EE	measure
+MB	ACRO_EE	measure
 MBA.	PCLE_VAAN	title
-mBq	ACRO_UU	', 'ACRO_METRImeasure
-MBq	ACRO_UU	', 'ACRO_METRImeasure
+mBq	ACRO_UU	measure
+MBq	ACRO_UU	measure
 mbundu	N_ASU	language
-mC	ACRO_EE	', 'ACRO_METRImeasure
-MC	ACRO_EE	', 'ACRO_METRImeasure
-m°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-M°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-mcd	ACRO_EE	', 'ACRO_KANDELAmeasure
-Mcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+mC	ACRO_EE	measure
+MC	ACRO_EE	measure
+m°C	ACRO_EE	measure
+M°C	ACRO_EE	measure
+mcd	ACRO_EE	measure
+Mcd	ACRO_EE	measure
 MCF	ACRO_ÄKS	currency
 MDC	ACRO_EE	currency
 MDen	ACRO_ÄKS	currency
@@ -3978,20 +3978,20 @@ metsätalousneuvos	N_VAKUUTUS	title
 metsät.	PCLE_VAAN	title
 Mette	N_METTE	female
 MEUR	ACRO_ÄKS	currency
-MEX$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-mF	ACRO_ÄKS	', 'ACRO_METRImeasure
-MF	ACRO_ÄKS	', 'ACRO_METRImeasure
+MEX$	ACRO_DOLLARI	currency
+mF	ACRO_ÄKS	measure
+MF	ACRO_ÄKS	measure
 MGA	ACRO_AA	currency
-mg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-Mg	ACRO_EE	', 'ACRO_GRAMMAmeasure
+mg	ACRO_EE	measure
+Mg	ACRO_EE	measure
 MGF	ACRO_ÄKS	currency
 mgo	N_ESQUIMAU	language
-mH	ACRO_OO	', 'ACRO_METRImeasure
-MH	ACRO_OO	', 'ACRO_METRImeasure
-MH	ACRO_OO	', 'ACRO_METRItitle
+mH	ACRO_OO	measure
+MH	ACRO_OO	measure
+MH	ACRO_OO	title
 mhy.	PCLE_VAAN	org
-mHz	ACRO_ZET	', 'ACRO_METRImeasure
-MHz	ACRO_ZET	', 'ACRO_METRImeasure
+mHz	ACRO_ZET	measure
+MHz	ACRO_ZET	measure
 MI	ACRO_II	title
 Mia	N_KIRJA	female
 Micaela	N_KITARA	female
@@ -4086,47 +4086,47 @@ mister	N_ZEN	title
 mistress	N_ZEN	title
 Mitja	N_KIRJA	male
 Mitro	N_TALO	male
-mJ	ACRO_II	', 'ACRO_JOULEmeasure
-MJ	ACRO_II	', 'ACRO_JOULEmeasure
-mk	ACRO_OO	', 'ACRO_GRAMMAcurrency
-MK	ACRO_OO	', 'ACRO_METRIcurrency
-mK	ACRO_OO	', 'ACRO_METRImeasure
-MK	ACRO_OO	', 'ACRO_METRImeasure
-mkat	ACRO_EE	', 'ACRO_OHMImeasure
-Mkat	ACRO_EE	', 'ACRO_OHMImeasure
+mJ	ACRO_II	measure
+MJ	ACRO_II	measure
+mk	ACRO_OO	currency
+MK	ACRO_OO	currency
+mK	ACRO_OO	measure
+MK	ACRO_OO	measure
+mkat	ACRO_EE	measure
+Mkat	ACRO_EE	measure
 MKD	ACRO_EE	currency
 MKN	ACRO_ÄKS	currency
-ml	ACRO_ÄKS	', 'ACRO_GRAMMAmeasure
+ml	ACRO_ÄKS	measure
 MLF	ACRO_ÄKS	currency
 mlk.	PCLE_VAAN	geo
 Mlle	PCLE_VAAN	title
-mlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Mlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-mlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-Mlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-mm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Mm	ACRO_ÄKS	', 'ACRO_METRImeasure
+mlm	ACRO_ÄKS	measure
+Mlm	ACRO_ÄKS	measure
+mlx	ACRO_ÄKS	measure
+Mlx	ACRO_ÄKS	measure
+mm	ACRO_ÄKS	measure
+Mm	ACRO_ÄKS	measure
 Mme	PCLE_VAAN	title
-mmHg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-Mmk	ACRO_OO	', 'ACRO_GRAMMAcurrency
-MMK	ACRO_OO	', 'ACRO_GRAMMAcurrency
-MMK	ACRO_OO	', 'ACRO_OHMItitle
-MML	ACRO_ÄKS	', 'ACRO_OHMItitle
-MMM	ACRO_ÄKS	', 'ACRO_DOLLARIorg
-MMM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-mmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-Mmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+mmHg	ACRO_EE	measure
+Mmk	ACRO_OO	currency
+MMK	ACRO_OO	currency
+MMK	ACRO_OO	title
+MML	ACRO_ÄKS	title
+MMM	ACRO_ÄKS	org
+MMM	ACRO_ÄKS	title
+mmol	ACRO_ÄKS	measure
+Mmol	ACRO_ÄKS	measure
 mm	PCLE_VAAN	measure
-MMT	ACRO_EE	', 'ACRO_DOLLARItitle
-mN	ACRO_ÄKS	', 'ACRO_METRImeasure
-MN	ACRO_ÄKS	', 'ACRO_METRImeasure
+MMT	ACRO_EE	title
+mN	ACRO_ÄKS	measure
+MN	ACRO_ÄKS	measure
 MNT	ACRO_EE	currency
 MO	ACRO_OO	org
 MO	ACRO_OO	title
 Moa	N_VOIMA	female
 mohawk	N_PUNK	language
 mokša	N_VOIMA	language
-mol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+mol	ACRO_ÄKS	measure
 moldovalainen	A_AAKKOSELLINEN	country
 moldovalainen	A_AAKKOSELLINEN	inhabitant
 moldovalainen	N_AAKKOSTAMINEN	country
@@ -4175,31 +4175,31 @@ Mosambik	N_PUNK	country
 mossi	N_RUUVI	language
 mouhijärveläinen	A_KYLMÄJÄRKINEN	inhabitant
 mouhijärveläinen	N_KYLKIÄINEN	inhabitant
-mPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-MPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+mPa	ACRO_AA	measure
+MPa	ACRO_AA	measure
 M.	PCLE_VAAN	title
 mpk	ACRO_OO	measure
 Mpx	ACRO_ÄKS	measure
-mrad	ACRO_EE	', 'ACRO_DOLLARImeasure
-Mrad	ACRO_EE	', 'ACRO_DOLLARImeasure
+mrad	ACRO_EE	measure
+Mrad	ACRO_EE	measure
 MRO	ACRO_OO	currency
 Mr.	PCLE_VAAN	title
 Mr	PCLE_VAAN	title
 Mrs	PCLE_VAAN	title
-ms	ACRO_ÄKS	', 'ACRO_METRImeasure
-mS	ACRO_ÄKS	', 'ACRO_METRImeasure
-Ms	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-Ms	ACRO_ÄKS	', 'ACRO_WEBERtitle
+ms	ACRO_ÄKS	measure
+mS	ACRO_ÄKS	measure
+Ms	ACRO_ÄKS	measure
+Ms	ACRO_ÄKS	title
 MS	ACRO_ÄKS	measure
 MSc	ACRO_EE	title
 M.Sc.	PCLE_VAAN	title
 Ms	PCLE_VAAN	measure
 Ms	PCLE_VAAN	title
-msr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-Msr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-mT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-MT	ACRO_EE	', 'ACRO_GRAMMAorg
-Mt	ACRO_EE	', 'ACRO_TALOmeasure
+msr	ACRO_ÄKS	measure
+Msr	ACRO_ÄKS	measure
+mT	ACRO_EE	measure
+MT	ACRO_EE	org
+Mt	ACRO_EE	measure
 MTI	ACRO_II	title
 MTL	ACRO_ÄKS	currency
 MTP	ACRO_EE	currency
@@ -4218,13 +4218,13 @@ muinaisprovensaali	N_RUUVI	language
 muinaisranska	N_KIRJA	language
 muinaissyyria	N_MAKKARA	language
 muinaisyläsaksa	N_KIRJA	language
-MuK	ACRO_OO	', 'ACRO_OHMItitle
-MuL	ACRO_ÄKS	', 'ACRO_OHMItitle
+MuK	ACRO_OO	title
+MuL	ACRO_ÄKS	title
 multiainen	A_AAKKOSELLINEN	inhabitant
 multiainen	N_AAKKOSTAMINEN	inhabitant
 multialainen	A_AAKKOSELLINEN	inhabitant
 multialainen	N_AAKKOSTAMINEN	inhabitant
-MuM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
+MuM	ACRO_ÄKS	title
 mundakieli	N_HIIRI	language
 mundang	N_PUNK	language
 munsalalainen	A_AAKKOSELLINEN	inhabitant
@@ -4241,7 +4241,7 @@ mus.op.	PCLE_VAAN	title
 mus.	PCLE_VAAN	title
 mustasaarelainen	A_AAKKOSELLINEN	inhabitant
 mustasaarelainen	N_AAKKOSTAMINEN	inhabitant
-MuT	ACRO_EE	', 'ACRO_DOLLARItitle
+MuT	ACRO_EE	title
 muuramelainen	A_AAKKOSELLINEN	inhabitant
 muuramelainen	N_AAKKOSTAMINEN	inhabitant
 muurari	N_KANAALI	misc
@@ -4252,16 +4252,16 @@ muuruveteläinen	N_KYLKIÄINEN	inhabitant
 muuruvetinen	A_AAKKOSELLINEN	inhabitant
 muuruvetinen	N_AAKKOSTAMINEN	inhabitant
 muusikko	N_LEPAKKO	title
-mV	ACRO_EE	', 'ACRO_OHMImeasure
-MV	ACRO_EE	', 'ACRO_OHMImeasure
+mV	ACRO_EE	measure
+MV	ACRO_EE	measure
 mv.	PCLE_VAAN	title
 MVR	ACRO_ÄKS	currency
 mvs.	PCLE_VAAN	org
-mW	ACRO_EE	', 'ACRO_OHMImeasure
-MW	ACRO_EE	', 'ACRO_OHMImeasure
-mWb	ACRO_EE	', 'ACRO_WEBERmeasure
-MWb	ACRO_EE	', 'ACRO_WEBERmeasure
-MWh	ACRO_OO	', 'ACRO_METRImeasure
+mW	ACRO_EE	measure
+MW	ACRO_EE	measure
+mWb	ACRO_EE	measure
+MWb	ACRO_EE	measure
+MWh	ACRO_OO	measure
 MWK	ACRO_OO	currency
 MXN	ACRO_ÄKS	currency
 MXP	ACRO_EE	currency
@@ -4299,15 +4299,15 @@ mäntyharjulainen	A_AAKKOSELLINEN	inhabitant
 mäntyharjulainen	N_AAKKOSTAMINEN	inhabitant
 Märit	N_ZEN	female
 Märta	N_KIRJA	female
-mΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-MΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-nA	ACRO_AA	', 'ACRO_DOLLARImeasure
+mΩ	ACRO_OHMI	measure
+MΩ	ACRO_OHMI	measure
+nA	ACRO_AA	measure
 naantalilainen	A_AAKKOSELLINEN	inhabitant
 naantalilainen	N_AAKKOSTAMINEN	inhabitant
-N$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-N	ACRO_ÄKS	', 'ACRO_METRIcurrency
-N	ACRO_ÄKS	', 'ACRO_METRImeasure
-N	ACRO_ÄKS	', 'ACRO_METRItitle
+N$	ACRO_DOLLARI	currency
+N	ACRO_ÄKS	currency
+N	ACRO_ÄKS	measure
+N	ACRO_ÄKS	title
 NAD	ACRO_EE	currency
 Nadja-Mari	N_RUUVI	female
 NA f.	PCLE_VAAN	currency
@@ -4344,10 +4344,10 @@ nauru	N_ASU	language
 nauvolainen	A_AAKKOSELLINEN	inhabitant
 nauvolainen	N_AAKKOSTAMINEN	inhabitant
 navajo	N_RUIPELO	language
-nBq	ACRO_UU	', 'ACRO_METRImeasure
-nC	ACRO_EE	', 'ACRO_METRImeasure
-n°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-ncd	ACRO_EE	', 'ACRO_KANDELAmeasure
+nBq	ACRO_UU	measure
+nC	ACRO_EE	measure
+n°C	ACRO_EE	measure
+ncd	ACRO_EE	measure
 ndonga	N_VOIMA	language
 Nea-Natalia	N_MAKKARA	female
 Nea	N_KIRJA	female
@@ -4371,13 +4371,13 @@ Nestor	N_STADION	male
 Netta	N_MITTA	female
 neuvos	N_VAKUUTUS	title
 newari	N_RUUVI	language
-nF	ACRO_ÄKS	', 'ACRO_METRImeasure
-ng	ACRO_EE	', 'ACRO_GRAMMAmeasure
+nF	ACRO_ÄKS	measure
+ng	ACRO_EE	measure
 ngambay	N_GAY	language
 ngiemboon	N_PUNK	language
 NGN	ACRO_ÄKS	currency
-nH	ACRO_OO	', 'ACRO_METRImeasure
-nHz	ACRO_ZET	', 'ACRO_METRImeasure
+nH	ACRO_OO	measure
+nHz	ACRO_ZET	measure
 Nia	N_KIRJA	female
 nias	N_PUNK	language
 NIC	ACRO_EE	currency
@@ -4439,21 +4439,21 @@ nivalainen	A_AAKKOSELLINEN	inhabitant
 nivalainen	N_AAKKOSTAMINEN	inhabitant
 nivalalainen	A_AAKKOSELLINEN	inhabitant
 nivalalainen	N_AAKKOSTAMINEN	inhabitant
-nJ	ACRO_II	', 'ACRO_JOULEmeasure
+nJ	ACRO_II	measure
 njandža	N_KIRJA	language
-nK	ACRO_OO	', 'ACRO_METRImeasure
-nkat	ACRO_EE	', 'ACRO_OHMImeasure
+nK	ACRO_OO	measure
+nkat	ACRO_EE	measure
 n’ko	N_ESQUIMAU	language
 NKP	ACRO_EE	polit
 Nkr	ACRO_ÄKS	currency
 NKr	ACRO_ÄKS	currency
 NLG	ACRO_EE	currency
-nlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-nlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-nm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Nm	ACRO_ÄKS	', 'ACRO_METRImeasure
-nmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-nN	ACRO_ÄKS	', 'ACRO_METRImeasure
+nlm	ACRO_ÄKS	measure
+nlx	ACRO_ÄKS	measure
+nm	ACRO_ÄKS	measure
+Nm	ACRO_ÄKS	measure
+nmol	ACRO_ÄKS	measure
+nN	ACRO_ÄKS	measure
 Noah	N_PUNK	male
 Noeli	N_KANAALI	male
 Noel	N_STADION	male
@@ -4488,17 +4488,17 @@ norsunluurannikonkoro	N_TALO	language
 notaari	N_KANAALI	title
 nousiaislainen	A_AAKKOSELLINEN	inhabitant
 nousiaislainen	N_AAKKOSTAMINEN	inhabitant
-nPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+nPa	ACRO_AA	measure
 NPR	ACRO_ÄKS	currency
-nrad	ACRO_EE	', 'ACRO_DOLLARImeasure
+nrad	ACRO_EE	measure
 Nrs	ACRO_ÄKS	currency
 nrt	ACRO_EE	measure
-ns	ACRO_ÄKS	', 'ACRO_METRImeasure
-nS	ACRO_ÄKS	', 'ACRO_METRImeasure
+ns	ACRO_ÄKS	measure
+nS	ACRO_ÄKS	measure
 ns	PCLE_VAAN	measure
-nsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-NT$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-nT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+nsr	ACRO_ÄKS	measure
+NT$	ACRO_DOLLARI	currency
+nT	ACRO_EE	measure
 nti	PCLE_VAAN	title
 Nu	ACRO_UU	currency
 nuer	N_PUNK	language
@@ -4525,22 +4525,22 @@ nurmijärvinen	N_KYLKIÄINEN	inhabitant
 nurmolainen	A_AAKKOSELLINEN	inhabitant
 nurmolainen	N_AAKKOSTAMINEN	inhabitant
 Nuutti	N_KORTTI	male
-nV	ACRO_EE	', 'ACRO_OHMImeasure
+nV	ACRO_EE	measure
 NV	ACRO_EE	org
-nW	ACRO_EE	', 'ACRO_OHMImeasure
-nWb	ACRO_EE	', 'ACRO_WEBERmeasure
+nW	ACRO_EE	measure
+nWb	ACRO_EE	measure
 nyamwezi	N_RUUVI	language
 nyankole	N_NALLE	language
 Nykypäivä	N_HÖPÖTTÄJÄ	media
 nyoro	N_TALO	language
 Nyyrikki	N_HÄKKI	male
-NZ$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-$NZ	ACRO_ZET	', 'ACRO_WEBERcurrency
+NZ$	ACRO_DOLLARI	currency
+$NZ	ACRO_ZET	currency
 NZD	ACRO_EE	currency
 nzima	N_KIRJA	language
 närpiöläinen	A_KYLMÄJÄRKINEN	inhabitant
 närpiöläinen	N_KYLKIÄINEN	inhabitant
-nΩ	ACRO_OHMI	', 'ACRO_METRImeasure
+nΩ	ACRO_OHMI	measure
 oa.	PCLE_VAAN	title
 Odin	N_STADION	male
 odžibwa	N_KIRJA	language
@@ -4620,11 +4620,11 @@ osseetti	N_KORTTI	language
 Ossian	N_PUNK	male
 Ossi	N_RUUVI	male
 Osvald	N_PUNK	male
-OTK	ACRO_OO	', 'ACRO_OHMItitle
-OTL	ACRO_ÄKS	', 'ACRO_OHMItitle
+OTK	ACRO_OO	title
+OTL	ACRO_ÄKS	title
 otomikieli	N_HIIRI	language
 Otso	N_TALO	male
-OTT	ACRO_EE	', 'ACRO_DOLLARItitle
+OTT	ACRO_EE	title
 Otteljaana	N_KIRJA	female
 Otto	N_HIRTTO	male
 oulaislainen	A_AAKKOSELLINEN	inhabitant
@@ -4645,14 +4645,14 @@ outokumpulainen	A_AAKKOSELLINEN	inhabitant
 outokumpulainen	N_AAKKOSTAMINEN	inhabitant
 ov	ACRO_EE	measure
 Ove	N_NALLE	male
-oy	ACRO_YY	', 'ACRO_JÄRJESTÖorg
+oy	ACRO_YY	org
 OÜ	ACRO_YY	org
-oyj	ACRO_II	', 'ACRO_JÄRJESTÖorg
+oyj	ACRO_II	org
 oyj.	PCLE_VAAN	org
 oy.	PCLE_VAAN	org
 oz.	PCLE_VAAN	measure
-pA	ACRO_AA	', 'ACRO_DOLLARImeasure
-Pa	ACRO_AA	', 'ACRO_DOLLARImeasure
+pA	ACRO_AA	measure
+Pa	ACRO_AA	measure
 PA	ACRO_AA	measure
 paali	N_RUUVI	language
 paattislainen	A_AAKKOSELLINEN	inhabitant
@@ -4752,15 +4752,15 @@ Paulina	N_KITARA	female
 Pauli	N_RUUVI	male
 Paul	N_PUNK	male
 Paulus	N_VAKUUTUS	male
-pBq	ACRO_UU	', 'ACRO_METRImeasure
-PBq	ACRO_UU	', 'ACRO_METRImeasure
-pC	ACRO_EE	', 'ACRO_METRImeasure
-PC	ACRO_EE	', 'ACRO_METRImeasure
-p°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-P°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
+pBq	ACRO_UU	measure
+PBq	ACRO_UU	measure
+pC	ACRO_EE	measure
+PC	ACRO_EE	measure
+p°C	ACRO_EE	measure
+P°C	ACRO_EE	measure
 pc	ACRO_EE	measure
-pcd	ACRO_EE	', 'ACRO_KANDELAmeasure
-Pcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+pcd	ACRO_EE	measure
+Pcd	ACRO_EE	measure
 pe	ACRO_EE	time
 pe	PCLE_VAAN	time
 pedersöreläinen	A_KYLMÄJÄRKINEN	inhabitant
@@ -4830,17 +4830,17 @@ petäjäveteläinen	A_KYLMÄJÄRKINEN	inhabitant
 petäjäveteläinen	N_KYLKIÄINEN	inhabitant
 petäjävetinen	A_KYLMÄJÄRKINEN	inhabitant
 petäjävetinen	N_KYLKIÄINEN	inhabitant
-pF	ACRO_ÄKS	', 'ACRO_METRImeasure
-PF	ACRO_ÄKS	', 'ACRO_METRImeasure
-pg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-Pg	ACRO_EE	', 'ACRO_GRAMMAmeasure
+pF	ACRO_ÄKS	measure
+PF	ACRO_ÄKS	measure
+pg	ACRO_EE	measure
+Pg	ACRO_EE	measure
 PGK	ACRO_OO	currency
-PH	ACRO_OO	', 'ACRO_METRImeasure
+PH	ACRO_OO	measure
 pH	ACRO_OO	measure
 Ph.D.	PCLE_VAAN	title
 PHP	ACRO_EE	currency
-pHz	ACRO_ZET	', 'ACRO_METRImeasure
-PHz	ACRO_ZET	', 'ACRO_METRImeasure
+pHz	ACRO_ZET	measure
+PHz	ACRO_ZET	measure
 Pia	N_KIRJA	female
 pidgin	N_ZEN	language
 pieksämäkeläinen	A_KYLMÄJÄRKINEN	inhabitant
@@ -4898,35 +4898,35 @@ pit.	PCLE_VAAN	geo
 Pitäjäläinen	N_KYLKIÄINEN	media
 pitäjänneuvos	N_VAKUUTUS	title
 Pitäjänuutiset	N_RAPPUSET	media
-pJ	ACRO_II	', 'ACRO_JOULEmeasure
-PJ	ACRO_II	', 'ACRO_JOULEmeasure
-pj	ACRO_II	', 'ACRO_PUNTAtitle
+pJ	ACRO_II	measure
+PJ	ACRO_II	measure
+pj	ACRO_II	title
 pj.	PCLE_VAAN	title
-pK	ACRO_OO	', 'ACRO_METRImeasure
-PK	ACRO_OO	', 'ACRO_METRImeasure
-pkat	ACRO_EE	', 'ACRO_OHMImeasure
-Pkat	ACRO_EE	', 'ACRO_OHMImeasure
+pK	ACRO_OO	measure
+PK	ACRO_OO	measure
+pkat	ACRO_EE	measure
+Pkat	ACRO_EE	measure
 PkO	ACRO_OO	title
 PKR	ACRO_ÄKS	currency
 pk-seutu	N_KUITU	geo
-pkt	ACRO_EE	', 'ACRO_WEBERmeasure
+pkt	ACRO_EE	measure
 pl	ACRO_ÄKS	measure
 plc	ACRO_EE	org
-plm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Plm	ACRO_ÄKS	', 'ACRO_METRImeasure
+plm	ACRO_ÄKS	measure
+Plm	ACRO_ÄKS	measure
 PLM	ACRO_ÄKS	org
 PLN	ACRO_ÄKS	currency
-plx	ACRO_ÄKS	', 'ACRO_METRImeasure
-Plx	ACRO_ÄKS	', 'ACRO_METRImeasure
+plx	ACRO_ÄKS	measure
+Plx	ACRO_ÄKS	measure
 PLZ	ACRO_ZET	currency
-pm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Pm	ACRO_ÄKS	', 'ACRO_METRImeasure
+pm	ACRO_ÄKS	measure
+Pm	ACRO_ÄKS	measure
 pmm	ACRO_ÄKS	measure
-pmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-Pmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+pmol	ACRO_ÄKS	measure
+Pmol	ACRO_ÄKS	measure
 p.m.	PCLE_VAAN	time
-pN	ACRO_ÄKS	', 'ACRO_METRImeasure
-PN	ACRO_ÄKS	', 'ACRO_METRImeasure
+pN	ACRO_ÄKS	measure
+PN	ACRO_ÄKS	measure
 pnk	ACRO_OO	measure
 pnä	PCLE_VAAN	time
 pohjalainen	A_AAKKOSELLINEN	inhabitant
@@ -4986,18 +4986,18 @@ posiolainen	A_AAKKOSELLINEN	inhabitant
 posiolainen	N_AAKKOSTAMINEN	inhabitant
 Postimees	N_PUNK	media
 postimestari	N_KANAALI	title
-pPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-PPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-ppm	ACRO_ÄKS	', 'ACRO_TALOmeasure
+pPa	ACRO_AA	measure
+PPa	ACRO_AA	measure
+ppm	ACRO_ÄKS	measure
 Pra	ACRO_AA	currency
-prad	ACRO_EE	', 'ACRO_DOLLARImeasure
-Prad	ACRO_EE	', 'ACRO_DOLLARImeasure
+prad	ACRO_EE	measure
+Prad	ACRO_EE	measure
 prakritkieli	N_HIIRI	language
 Pravda	N_KIRJA	media
 presidentti	N_SKEITTI	title
 Priitta	N_MITTA	female
 Príncipe	N_NISSE	country
-prk	ACRO_OO	', 'ACRO_YHDISTYSmeasure
+prk	ACRO_OO	measure
 professori	N_KANAALI	title
 prof.	PCLE_VAAN	title
 prok.	PCLE_VAAN	title
@@ -5005,21 +5005,21 @@ prokuristi	N_RUUVI	title
 provensaali	N_RUUVI	language
 proviisori	N_KANAALI	title
 prov.	PCLE_VAAN	title
-ps	ACRO_ÄKS	', 'ACRO_METRImeasure
-pS	ACRO_ÄKS	', 'ACRO_METRImeasure
-Ps	ACRO_ÄKS	', 'ACRO_METRImeasure
-PS	ACRO_ÄKS	', 'ACRO_METRIpolit
-PsK	ACRO_OO	', 'ACRO_OHMItitle
-PsL	ACRO_ÄKS	', 'ACRO_OHMItitle
-PsM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
+ps	ACRO_ÄKS	measure
+pS	ACRO_ÄKS	measure
+Ps	ACRO_ÄKS	measure
+PS	ACRO_ÄKS	polit
+PsK	ACRO_OO	title
+PsL	ACRO_ÄKS	title
+PsM	ACRO_ÄKS	title
 ps.	PCLE_VAAN	polit
-psr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-Psr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-PsT	ACRO_EE	', 'ACRO_DOLLARItitle
+psr	ACRO_ÄKS	measure
+Psr	ACRO_ÄKS	measure
+PsT	ACRO_EE	title
 psykologi	N_RUUVI	title
 psykol.	PCLE_VAAN	title
-pT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-PT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+pT	ACRO_EE	measure
+PT	ACRO_EE	measure
 PT	ACRO_EE	measure
 PTE	ACRO_EE	currency
 PTO	ACRO_OO	title
@@ -5070,15 +5070,15 @@ puutarhaneuvos	N_VAKUUTUS	title
 puutarhaopettaja	N_VOIMA	title
 puutarhaop.	PCLE_VAAN	title
 puutarhuri	N_KANAALI	title
-pV	ACRO_EE	', 'ACRO_OHMImeasure
-PV	ACRO_EE	', 'ACRO_OHMImeasure
+pV	ACRO_EE	measure
+PV	ACRO_EE	measure
 pv	ACRO_EE	measure
 pv	ACRO_EE	time
 pv.	PCLE_VAAN	title
-pW	ACRO_EE	', 'ACRO_OHMImeasure
-PW	ACRO_EE	', 'ACRO_OHMImeasure
-pWb	ACRO_EE	', 'ACRO_WEBERmeasure
-PWb	ACRO_EE	', 'ACRO_WEBERmeasure
+pW	ACRO_EE	measure
+PW	ACRO_EE	measure
+pWb	ACRO_EE	measure
+PWb	ACRO_EE	measure
 PYG	ACRO_EE	currency
 pyhtääläinen	A_KYLMÄJÄRKINEN	inhabitant
 pyhtääläinen	N_KYLKIÄINEN	inhabitant
@@ -5120,8 +5120,8 @@ pääkonsuli	N_KANAALI	title
 päällikkö	N_YKSIKKÖ	title
 pääll.	PCLE_VAAN	title
 pääministeri	N_KEHVELI	title
-pΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-PΩ	ACRO_OHMI	', 'ACRO_METRImeasure
+pΩ	ACRO_OHMI	measure
+PΩ	ACRO_OHMI	measure
 Q	ACRO_UU	currency
 QAR	ACRO_ÄKS	currency
 qatarilainen	A_AAKKOSELLINEN	country
@@ -5137,11 +5137,11 @@ Raakel	N_STADION	female
 raaseporilainen	A_AAKKOSELLINEN	inhabitant
 raaseporilainen	N_AAKKOSTAMINEN	inhabitant
 Rabbe	N_NALLE	male
-R$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+R$	ACRO_DOLLARI	currency
 R	ACRO_ÄKS	currency
 r	ACRO_ÄKS	measure
 R	ACRO_ÄKS	measure
-rad	ACRO_EE	', 'ACRO_DOLLARImeasure
+rad	ACRO_EE	measure
 radiotoimittaja	N_VOIMA	title
 rad	N_PUNK	measure
 radžastani	N_RUUVI	language
@@ -5225,7 +5225,7 @@ rautiolainen	N_AAKKOSTAMINEN	inhabitant
 rautjärveläinen	A_KYLMÄJÄRKINEN	inhabitant
 rautjärveläinen	N_KYLKIÄINEN	inhabitant
 Rbl	ACRO_ÄKS	currency
-RD$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+RD$	ACRO_DOLLARI	currency
 real	N_PUNK	currency
 Rea	N_KIRJA	female
 Rebecca	N_KIRJA	female
@@ -5247,7 +5247,7 @@ reisjärveläinen	N_KYLKIÄINEN	inhabitant
 reisjärvinen	A_KYLMÄJÄRKINEN	inhabitant
 reisjärvinen	N_KYLKIÄINEN	inhabitant
 Reko	N_TALO	male
-rek.tn	ACRO_ÄKS	', 'ACRO_METRImeasure
+rek.tn	ACRO_ÄKS	measure
 Rene	N_NISSE	male
 renkolainen	A_AAKKOSELLINEN	inhabitant
 renkolainen	N_AAKKOSTAMINEN	inhabitant
@@ -5302,9 +5302,9 @@ Rita	N_KIRJA	female
 Rita	N_PATA	female
 Ritva-Liisa	N_KIRJA	female
 Ritva	N_KIRJA	female
-rkl	ACRO_ÄKS	', 'ACRO_LUSIKKAmeasure
+rkl	ACRO_ÄKS	measure
 rkm.	PCLE_VAAN	title
-RKP	ACRO_EE	', 'ACRO_TUOTEpolit
+RKP	ACRO_EE	polit
 Rkr	ACRO_ÄKS	currency
 rl	ACRO_ÄKS	measure
 RM	ACRO_ÄKS	currency
@@ -5349,8 +5349,8 @@ r.	PCLE_VAAN	polit
 rpl	ACRO_ÄKS	currency
 rp.	PCLE_VAAN	org
 rp.	PCLE_VAAN	polit
-r/s	ACRO_ÄKS	', 'ACRO_METRImeasure
-rs	ACRO_ÄKS	', 'ACRO_METRImeasure
+r/s	ACRO_ÄKS	measure
+rs	ACRO_ÄKS	measure
 RSD	ACRO_EE	currency
 rsi	ACRO_II	measure
 Rs.	PCLE_VAAN	currency
@@ -5410,7 +5410,7 @@ rääkkyläinen	A_KYLMÄJÄRKINEN	inhabitant
 rääkkyläinen	N_KYLKIÄINEN	inhabitant
 rääkkyläläinen	A_KYLMÄJÄRKINEN	inhabitant
 rääkkyläläinen	N_KYLKIÄINEN	inhabitant
-SA	ACRO_AA	', 'ACRO_PUNTAorg
+SA	ACRO_AA	org
 Saaga	N_KIRJA	female
 saamelaiskieli	N_HIIRI	language
 saame	N_NALLE	language
@@ -5425,9 +5425,9 @@ saarijärvinen	A_KYLMÄJÄRKINEN	inhabitant
 saarijärvinen	N_KYLKIÄINEN	inhabitant
 Sabina	N_KITARA	female
 sacr. min. kand.	PCLE_VAAN	title
-S$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-S	ACRO_ÄKS	', 'ACRO_METRImeasure
-s	ACRO_ÄKS	', 'ACRO_METRItime
+S$	ACRO_DOLLARI	currency
+S	ACRO_ÄKS	measure
+s	ACRO_ÄKS	time
 š	ACRO_ÄKS	currency
 Sade	N_LUODE	female
 Saga	N_KIRJA	female
@@ -5606,8 +5606,8 @@ SBD	ACRO_EE	currency
 SCR	ACRO_ÄKS	currency
 SDD	ACRO_EE	currency
 SDG	ACRO_EE	currency
-Sdp	ACRO_EE	', 'ACRO_TUOTEpolit
-SDP	ACRO_EE	', 'ACRO_TUOTEpolit
+Sdp	ACRO_EE	polit
+SDP	ACRO_EE	polit
 sd.	PCLE_VAAN	polit
 SE	ACRO_EE	org
 Sebastian	N_PUNK	male
@@ -5671,7 +5671,7 @@ shillinki	N_HÄMMINKI	currency
 SHO	ACRO_OO	title
 SHP	ACRO_EE	currency
 sia	ACRO_AA	org
-SI$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+SI$	ACRO_DOLLARI	currency
 sichuanin-yi	N_PII	language
 sidamo	N_RUIPELO	language
 sierraleonelainen	A_AAKKOSELLINEN	country
@@ -5771,18 +5771,18 @@ siuntiolainen	N_AAKKOSTAMINEN	inhabitant
 Sivi	N_TYYLI	female
 Siv	N_ZEN	female
 Sixten	N_ZEN	male
-SK	ACRO_OO	', 'ACRO_OHMItitle
+SK	ACRO_OO	title
 Sk	ACRO_OO	currency
 SKDL	ACRO_ÄKS	polit
 SKK	ACRO_OO	currency
 SKL	ACRO_ÄKS	polit
 skotlanninenglanti	N_SOINTI	language
 skotti	N_KORTTI	language
-SKP	ACRO_EE	', 'ACRO_TUOTEpolit
+SKP	ACRO_EE	polit
 SKP	ACRO_EE	polit
 SKr	ACRO_ÄKS	currency
 slevi	N_TYYLI	language
-SLL	ACRO_ÄKS	', 'ACRO_JÄRJESTÖcurrency
+SLL	ACRO_ÄKS	currency
 slovakialainen	A_AAKKOSELLINEN	country
 slovakialainen	A_AAKKOSELLINEN	inhabitant
 slovakialainen	N_AAKKOSTAMINEN	country
@@ -5797,9 +5797,9 @@ slovenialainen	N_AAKKOSTAMINEN	inhabitant
 Slovenia	N_MAKKARA	country
 sl.	PCLE_VAAN	time
 SL Re	ACRO_EE	currency
-SMP	ACRO_EE	', 'ACRO_TUOTEpolit
 SMP	ACRO_EE	polit
-snt	ACRO_EE	', 'ACRO_METRIcurrency
+SMP	ACRO_EE	polit
+snt	ACRO_EE	currency
 SNT	ACRO_EE	geo
 sodankyläläinen	A_KYLMÄJÄRKINEN	inhabitant
 sodankyläläinen	N_KYLKIÄINEN	inhabitant
@@ -5858,7 +5858,7 @@ sotkamolainen	A_AAKKOSELLINEN	inhabitant
 sotkamolainen	N_AAKKOSTAMINEN	inhabitant
 sottungalainen	A_AAKKOSELLINEN	inhabitant
 sottungalainen	N_AAKKOSTAMINEN	inhabitant
-sr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
+sr	ACRO_ÄKS	measure
 SR	ACRO_ÄKS	currency
 sranan	N_PUNK	language
 SRD	ACRO_EE	currency
@@ -5868,7 +5868,7 @@ srilankalainen	A_AAKKOSELLINEN	inhabitant
 srilankalainen	N_AAKKOSTAMINEN	country
 srilankalainen	N_AAKKOSTAMINEN	inhabitant
 Sri Lanka	N_KIRJA	country
-srk	ACRO_OO	', 'ACRO_GRAMMAorg
+srk	ACRO_OO	org
 srk.	PCLE_VAAN	org
 SRl	ACRO_ÄKS	currency
 sr.	PCLE_VAAN	title
@@ -5885,7 +5885,7 @@ Stina	N_KIRJA	female
 STM	ACRO_ÄKS	org
 stm.	PCLE_VAAN	title
 st.	PCLE_VAAN	title
-STT	ACRO_EE	', 'ACRO_JÄRJESTÖmedia
+STT	ACRO_EE	media
 Sture	N_NALLE	male
 Styrbjörn	N_ZEN	male
 Sub	N_PUNK	media
@@ -5941,7 +5941,7 @@ suonenjokinen	N_AAKKOSTAMINEN	inhabitant
 suoniemeläinen	A_KYLMÄJÄRKINEN	inhabitant
 suoniemeläinen	N_KYLKIÄINEN	inhabitant
 su	PCLE_VAAN	time
-SUPO	ACRO_OO	', 'ACRO_DOLLARIorg
+SUPO	ACRO_OO	org
 supo	N_TALO	org
 SUR	ACRO_ÄKS	currency
 surinamelainen	A_AAKKOSELLINEN	country
@@ -5957,7 +5957,7 @@ Suur-Keuruu	N_LEIKKUU	media
 Suvi-Maria	N_MAKKARA	female
 Suvi	N_RUUVI	female
 Suvi-Tuulikki	N_LOKKI	female
-Sv	ACRO_EE	', 'ACRO_METRImeasure
+Sv	ACRO_EE	measure
 Svalbard ja Jan Mayen	N_BESSERWISSER	country
 svalbardjanmayenilainen	A_AAKKOSELLINEN	country
 svalbardjanmayenilainen	A_AAKKOSELLINEN	inhabitant
@@ -6019,8 +6019,8 @@ taaleri	N_KANAALI	currency
 Taani	N_RUUVI	male
 Taavetti	N_KORTTI	male
 Taavi	N_RUUVI	male
-T$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-T	ACRO_EE	', 'ACRO_GRAMMAcurrency
+T$	ACRO_DOLLARI	currency
+T	ACRO_EE	currency
 t	ACRO_EE	measure
 t	ACRO_EE	time
 tadžikistanilainen	A_AAKKOSELLINEN	country
@@ -6063,8 +6063,8 @@ taiwanilainen	A_AAKKOSELLINEN	inhabitant
 taiwanilainen	N_AAKKOSTAMINEN	country
 taiwanilainen	N_AAKKOSTAMINEN	inhabitant
 Taiwan	N_STADION	country
-TaK	ACRO_OO	', 'ACRO_OHMItitle
-TaL	ACRO_ÄKS	', 'ACRO_OHMItitle
+TaK	ACRO_OO	title
+TaL	ACRO_ÄKS	title
 tal.hoit.	PCLE_VAAN	title
 TALK	ACRO_OO	org
 taloudenhoitaja	N_VOIMA	title
@@ -6074,7 +6074,7 @@ taloussuunnittelija	N_MAKKARA	title
 taloustirehtööri	N_TYYLI	title
 taloust.	PCLE_VAAN	title
 Talvikki	N_LOKKI	female
-TaM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
+TaM	ACRO_ÄKS	title
 Tamara	N_KITARA	female
 tamašek	N_PUNK	language
 tamazight	N_PUNK	language
@@ -6121,13 +6121,13 @@ Tarvo	N_TALO	male
 tasawaq	N_PUNK	language
 tašelhit	N_PUNK	language
 tataari	N_RUUVI	language
-TaT	ACRO_EE	', 'ACRO_DOLLARItitle
+TaT	ACRO_EE	title
 Tatu	N_ASU	male
 Tauno	N_TALO	male
-TBq	ACRO_UU	', 'ACRO_METRImeasure
-T°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
+TBq	ACRO_UU	measure
+T°C	ACRO_EE	measure
 TC	ACRO_EE	measure
-Tcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+Tcd	ACRO_EE	measure
 TE	ACRO_EE	org
 Tea	N_KIRJA	female
 teatterineuvos	N_VAKUUTUS	title
@@ -6145,17 +6145,17 @@ Teisko-Aitolahti	N_LAHTI	media
 teiskolainen	A_AAKKOSELLINEN	inhabitant
 teiskolainen	N_AAKKOSTAMINEN	inhabitant
 Tejuka	N_ASEMA	media
-TeK	ACRO_OO	', 'ACRO_WEBERtitle
+TeK	ACRO_OO	title
 Tekla	N_KIRJA	female
 teknikko	N_LEPAKKO	title
 tekn.	PCLE_VAAN	title
-TeL	ACRO_ÄKS	', 'ACRO_WEBERtitle
+TeL	ACRO_ÄKS	title
 televisiotoimittaja	N_VOIMA	title
 Telia-Sonera	N_KITARA	media
 TeliaSonera	N_KITARA	media
 Tellervo	N_RUIPELO	female
 telugu	N_SEIKKAILU	language
-TeM	ACRO_ÄKS	', 'ACRO_METRItitle
+TeM	ACRO_ÄKS	title
 temmekseläinen	A_KYLMÄJÄRKINEN	inhabitant
 temmekseläinen	N_KYLKIÄINEN	inhabitant
 temmesläinen	A_KYLMÄJÄRKINEN	inhabitant
@@ -6187,15 +6187,15 @@ tervolainen	N_AAKKOSTAMINEN	inhabitant
 tervolalainen	A_AAKKOSELLINEN	inhabitant
 tervolalainen	N_AAKKOSTAMINEN	inhabitant
 Tessa	N_KIRJA	female
-TeT	ACRO_EE	', 'ACRO_WEBERtitle
+TeT	ACRO_EE	title
 tetum	N_PUNK	language
 teuvalainen	A_AAKKOSELLINEN	inhabitant
 teuvalainen	N_AAKKOSTAMINEN	inhabitant
 Teuvo	N_TALO	male
-TF	ACRO_ÄKS	', 'ACRO_METRImeasure
 TF	ACRO_ÄKS	measure
-Tg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-TH	ACRO_OO	', 'ACRO_METRImeasure
+TF	ACRO_ÄKS	measure
+Tg	ACRO_EE	measure
+TH	ACRO_OO	measure
 thaikieli	N_HIIRI	language
 thaimaalainen	A_AAKKOSELLINEN	country
 thaimaalainen	A_AAKKOSELLINEN	inhabitant
@@ -6206,7 +6206,7 @@ thai	N_HAI	language
 THB	ACRO_EE	currency
 Theodor	N_STADION	male
 Theo	N_TALO	male
-THz	ACRO_ZET	', 'ACRO_METRImeasure
+THz	ACRO_ZET	measure
 ti	ACRO_II	time
 Tia	N_KIRJA	female
 Tianna	N_KIRJA	female
@@ -6243,37 +6243,37 @@ Titta	N_MITTA	female
 tiukkalainen	A_AAKKOSELLINEN	inhabitant
 tiukkalainen	N_AAKKOSTAMINEN	inhabitant
 tiv	N_ZEN	language
-TJ	ACRO_II	', 'ACRO_JOULEmeasure
+TJ	ACRO_II	measure
 tj.	PCLE_VAAN	title
 TJR	ACRO_ÄKS	currency
 TJS	ACRO_ÄKS	currency
-TK	ACRO_OO	', 'ACRO_METRImeasure
+TK	ACRO_OO	measure
 Tk	ACRO_OO	currency
-Tkat	ACRO_EE	', 'ACRO_OHMImeasure
-TkK	ACRO_OO	', 'ACRO_OHMItitle
-TkL	ACRO_ÄKS	', 'ACRO_OHMItitle
+Tkat	ACRO_EE	measure
+TkK	ACRO_OO	title
+TkL	ACRO_ÄKS	title
 tk.	PCLE_VAAN	time
 Tkr	ACRO_ÄKS	currency
-TkT	ACRO_EE	', 'ACRO_DOLLARItitle
+TkT	ACRO_EE	title
 TKT	ACRO_EE	org
-TL	ACRO_ÄKS	', 'ACRO_OHMItitle
+TL	ACRO_ÄKS	title
 TL	ACRO_ÄKS	currency
 tl	ACRO_ÄKS	measure
 TL	ACRO_ÄKS	org
 tlingit	N_ZEN	language
-tlk	ACRO_OO	', 'ACRO_LUSIKKAmeasure
-Tlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Tlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-TM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-Tm	ACRO_ÄKS	', 'ACRO_METRImeasure
-TM	ACRO_ÄKS	', 'ACRO_SAIRAALAorg
+tlk	ACRO_OO	measure
+Tlm	ACRO_ÄKS	measure
+Tlx	ACRO_ÄKS	measure
+TM	ACRO_ÄKS	title
+Tm	ACRO_ÄKS	measure
+TM	ACRO_ÄKS	org
 tmi	PCLE_VAAN	org
 tmk	ACRO_OO	time
 TMM	ACRO_ÄKS	currency
-Tmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+Tmol	ACRO_ÄKS	measure
 TMT	ACRO_EE	currency
-TN	ACRO_ÄKS	', 'ACRO_METRImeasure
-TN	ACRO_ÄKS	', 'ACRO_METRIorg
+TN	ACRO_ÄKS	measure
+TN	ACRO_ÄKS	org
 tn	ACRO_ÄKS	measure
 TND	ACRO_EE	currency
 Tobago	N_TALO	country
@@ -6357,10 +6357,10 @@ tottijärveläinen	N_KYLKIÄINEN	inhabitant
 Touko	N_TALO	male
 Touko	N_TEKO	male
 Tove	N_NALLE	female
-TPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+TPa	ACRO_AA	measure
 TPE	ACRO_EE	currency
 TPK	ACRO_OO	org
-Trad	ACRO_EE	', 'ACRO_DOLLARImeasure
+Trad	ACRO_EE	measure
 Trine	N_NISSE	female
 Trinidad ja Tobago	N_TALO	country
 Trinidad	N_PUNK	country
@@ -6373,7 +6373,7 @@ TRL	ACRO_ÄKS	currency
 Trude	N_NALLE	female
 TRY	ACRO_YY	currency
 Tryggve	N_NISSE	male
-Ts	ACRO_ÄKS	', 'ACRO_METRImeasure
+Ts	ACRO_ÄKS	measure
 tšadilainen	A_AAKKOSELLINEN	country
 tšadilainen	A_AAKKOSELLINEN	inhabitant
 tšadilainen	N_AAKKOSTAMINEN	country
@@ -6399,20 +6399,20 @@ T Sh	ACRO_OO	currency
 tšibtša	N_KIRJA	language
 tsimši	N_TYYLI	language
 tsonga	N_VOIMA	language
-Tsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
+Tsr	ACRO_ÄKS	measure
 tšuvassi	N_RUUVI	language
 tswana	N_KIRJA	language
-TT$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
-TT	ACRO_EE	', 'ACRO_GRAMMAtitle
+TT$	ACRO_DOLLARI	currency
+TT	ACRO_EE	title
 TTD	ACRO_EE	currency
-TtK	ACRO_OO	', 'ACRO_OHMItitle
-TTK	ACRO_OO	', 'ACRO_OHMItitle
-TtL	ACRO_ÄKS	', 'ACRO_OHMItitle
-TTL	ACRO_ÄKS	', 'ACRO_OHMItitle
-TtM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-TTM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-TTT	ACRO_EE	', 'ACRO_DOLLARItitle
-TtT	ACRO_EE	', 'ACRO_WEBERtitle
+TtK	ACRO_OO	title
+TTK	ACRO_OO	title
+TtL	ACRO_ÄKS	title
+TTL	ACRO_ÄKS	title
+TtM	ACRO_ÄKS	title
+TTM	ACRO_ÄKS	title
+TTT	ACRO_EE	title
+TtT	ACRO_EE	title
 Tua	N_VOIMA	female
 Tug	ACRO_EE	currency
 Tuija	N_KIRJA	female
@@ -6485,9 +6485,9 @@ tuvalu	N_SEIKKAILU	language
 tuva	N_VOIMA	language
 TV1	ACRO_YKSI	media
 TV2	ACRO_KAKSI	media
-TV	ACRO_EE	', 'ACRO_OHMImeasure
-TW	ACRO_EE	', 'ACRO_OHMImeasure
-TWb	ACRO_EE	', 'ACRO_WEBERmeasure
+TV	ACRO_EE	measure
+TW	ACRO_EE	measure
+TWb	ACRO_EE	measure
 TWD	ACRO_EE	currency
 twi	N_PII	language
 ty	ACRO_YY	measure
@@ -6512,7 +6512,7 @@ TZS	ACRO_ÄKS	currency
 tähtitieteilijä	N_HÄKKYRÄ	title
 töysäläinen	A_KYLMÄJÄRKINEN	inhabitant
 töysäläinen	N_KYLKIÄINEN	inhabitant
-TΩ	ACRO_OHMI	', 'ACRO_METRImeasure
+TΩ	ACRO_OHMI	measure
 u	ACRO_UU	measure
 UAH	ACRO_OO	currency
 UAK	ACRO_OO	currency
@@ -6568,7 +6568,7 @@ Uoti	N_RUUVI	male
 Uoti	N_TAUTI	male
 upseeri	N_KANAALI	title
 ups.	PCLE_VAAN	title
-Ur$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
+Ur$	ACRO_DOLLARI	currency
 Urban	N_PUNK	male
 Urda	N_KIRJA	female
 urdu	N_ASU	language
@@ -6590,8 +6590,8 @@ uruguaylainen	A_AAKKOSELLINEN	inhabitant
 uruguaylainen	N_AAKKOSTAMINEN	country
 uruguaylainen	N_AAKKOSTAMINEN	inhabitant
 Uruguay	N_GAY	country
-US$	ACRO_DOLLARI	', 'ACRO_DOLLARIcurrency
-USD	ACRO_EE	', 'ACRO_GRAMMAcurrency
+US$	ACRO_DOLLARI	currency
+USD	ACRO_EE	currency
 U Sh	ACRO_OO	currency
 uskelainen	A_AAKKOSELLINEN	inhabitant
 uskelainen	N_AAKKOSTAMINEN	inhabitant
@@ -6643,8 +6643,8 @@ vaalalainen	A_AAKKOSELLINEN	inhabitant
 vaalalainen	N_AAKKOSTAMINEN	inhabitant
 vaasalainen	A_AAKKOSELLINEN	inhabitant
 vaasalainen	N_AAKKOSTAMINEN	inhabitant
-V	ACRO_EE	', 'ACRO_OHMImeasure
-v	ACRO_EE	', 'ACRO_VUOSItime
+V	ACRO_EE	measure
+v	ACRO_EE	time
 VAHO	ACRO_OO	org
 VAHO	N_TALO	org
 vahtolainen	A_AAKKOSELLINEN	inhabitant
@@ -6883,8 +6883,8 @@ Viveka	N_KITARA	female
 Viviana	N_KIRJA	female
 Vivian	N_PUNK	female
 Vivi	N_TYYLI	female
-vk	ACRO_OO	', 'ACRO_TALOtime
-vkl	ACRO_ÄKS	', 'ACRO_TALOtime
+vk	ACRO_OO	time
+vkl	ACRO_ÄKS	time
 vk.	PCLE_VAAN	time
 VKS	ACRO_ÄKS	org
 VKS	ACRO_ÄKS	title
@@ -6902,19 +6902,19 @@ volapük	N_ZEN	language
 Volmar	N_STADION	male
 Volter	N_STADION	male
 v.	PCLE_VAAN	time
-vpj	ACRO_II	', 'ACRO_PUNTAtitle
+vpj	ACRO_II	title
 vpj.	PCLE_VAAN	title
-vpk	ACRO_OO	', 'ACRO_PUNTAorg
-vrk	ACRO_OO	', 'ACRO_VUOSItime
+vpk	ACRO_OO	org
+vrk	ACRO_OO	time
 vs.	PCLE_VAAN	title
 VT	ACRO_EE	currency
 vt	ACRO_EE	measure
 VT	ACRO_EE	title
-VTK	ACRO_OO	', 'ACRO_OHMItitle
-VTL	ACRO_ÄKS	', 'ACRO_OHMItitle
-VTM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
+VTK	ACRO_OO	title
+VTL	ACRO_ÄKS	title
+VTM	ACRO_ÄKS	title
 vt.	PCLE_VAAN	title
-VTT	ACRO_EE	', 'ACRO_DOLLARItitle
+VTT	ACRO_EE	title
 vunjo	N_TALO	language
 Vuokko	N_UKKO	female
 vuolijokelainen	A_AAKKOSELLINEN	inhabitant
@@ -6936,7 +6936,7 @@ vääpeli	N_KEHVELI	title
 vääp.	PCLE_VAAN	title
 vöyriläinen	A_KYLMÄJÄRKINEN	inhabitant
 vöyriläinen	N_KYLKIÄINEN	inhabitant
-W	ACRO_EE	', 'ACRO_OHMImeasure
+W	ACRO_EE	measure
 Wagner	N_STADION	male
 wakashkieli	N_HIIRI	language
 Waldemar	N_PUNK	male
@@ -6949,7 +6949,7 @@ walser	N_PUNK	language
 Waltteri	N_KANAALI	male
 waray	N_GAY	language
 washo	N_TALO	language
-Wb	ACRO_EE	', 'ACRO_WEBERmeasure
+Wb	ACRO_EE	measure
 Werneri	N_KEHVELI	male
 Wh	ACRO_OO	measure
 Wilhelmiina	N_KIRJA	female
@@ -6986,29 +6986,29 @@ XRE	ACRO_EE	currency
 XTS	ACRO_ÄKS	currency
 XXX	ACRO_ÄKS	currency
 Y2K	ACRO_OO	time
-yA	ACRO_AA	', 'ACRO_DOLLARImeasure
-YA	ACRO_AA	', 'ACRO_DOLLARImeasure
+yA	ACRO_AA	measure
+YA	ACRO_AA	measure
 Y	ACRO_YY	currency
 yangben	N_PUNK	language
 Yanna	N_KIRJA	female
-yBq	ACRO_UU	', 'ACRO_METRImeasure
-YBq	ACRO_UU	', 'ACRO_METRImeasure
-yC	ACRO_EE	', 'ACRO_METRImeasure
-YC	ACRO_EE	', 'ACRO_METRImeasure
-y°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-Y°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-ycd	ACRO_EE	', 'ACRO_KANDELAmeasure
-Ycd	ACRO_EE	', 'ACRO_KANDELAmeasure
+yBq	ACRO_UU	measure
+YBq	ACRO_UU	measure
+yC	ACRO_EE	measure
+YC	ACRO_EE	measure
+y°C	ACRO_EE	measure
+Y°C	ACRO_EE	measure
+ycd	ACRO_EE	measure
+Ycd	ACRO_EE	measure
 YDD	ACRO_EE	currency
 yemba	N_KIRJA	language
 YER	ACRO_ÄKS	currency
 ye.ups.	PCLE_VAAN	title
-yF	ACRO_ÄKS	', 'ACRO_METRImeasure
-YF	ACRO_ÄKS	', 'ACRO_METRImeasure
-yg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-Yg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-yH	ACRO_OO	', 'ACRO_METRImeasure
-YH	ACRO_OO	', 'ACRO_METRImeasure
+yF	ACRO_ÄKS	measure
+YF	ACRO_ÄKS	measure
+yg	ACRO_EE	measure
+Yg	ACRO_EE	measure
+yH	ACRO_OO	measure
+YH	ACRO_OO	measure
 Yhdistyneet arabiemiirikunnat	N_KUNNAT	country
 Yhdistynyt kuningaskunta	N_KUNTA	country
 yhd.	PCLE_VAAN	org
@@ -7020,13 +7020,13 @@ yhdysvaltalainen	A_AAKKOSELLINEN	inhabitant
 yhdysvaltalainen	N_AAKKOSTAMINEN	country
 yhdysvaltalainen	N_AAKKOSTAMINEN	inhabitant
 yhteiskuntat.	PCLE_VAAN	title
-yHz	ACRO_ZET	', 'ACRO_METRImeasure
-YHz	ACRO_ZET	', 'ACRO_METRImeasure
-yJ	ACRO_II	', 'ACRO_JOULEmeasure
-YJ	ACRO_II	', 'ACRO_JOULEmeasure
-yK	ACRO_OO	', 'ACRO_METRImeasure
-ykat	ACRO_EE	', 'ACRO_OHMImeasure
-Ykat	ACRO_EE	', 'ACRO_OHMImeasure
+yHz	ACRO_ZET	measure
+YHz	ACRO_ZET	measure
+yJ	ACRO_II	measure
+YJ	ACRO_II	measure
+yK	ACRO_OO	measure
+ykat	ACRO_EE	measure
+Ykat	ACRO_EE	measure
 Ykkössanomat	N_JUHLAT	media
 YLE	ACRO_EE	media
 yleisesikuntaupseeri	N_KANAALI	title
@@ -7073,12 +7073,12 @@ ylivieskalainen	A_AAKKOSELLINEN	inhabitant
 ylivieskalainen	N_AAKKOSTAMINEN	inhabitant
 yliv.	PCLE_VAAN	title
 ylivääpeli	N_KEHVELI	title
-ylm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Ylm	ACRO_ÄKS	', 'ACRO_METRImeasure
+ylm	ACRO_ÄKS	measure
+Ylm	ACRO_ÄKS	measure
 Ylva	N_KIRJA	female
 Ylva	N_VOIMA	female
-ylx	ACRO_ÄKS	', 'ACRO_METRImeasure
-Ylx	ACRO_ÄKS	', 'ACRO_METRImeasure
+ylx	ACRO_ÄKS	measure
+Ylx	ACRO_ÄKS	measure
 Ylä-Kainuu	N_LEIKKUU	media
 Ylä-Karjala	N_MAKKARA	media
 ylämaalainen	A_AAKKOSELLINEN	inhabitant
@@ -7089,25 +7089,25 @@ Ylä-Satakunta	N_KUNTA	media
 yläsorbi	N_RUUVI	language
 ylöjärveläinen	A_KYLMÄJÄRKINEN	inhabitant
 ylöjärveläinen	N_KYLKIÄINEN	inhabitant
-ym	ACRO_ÄKS	', 'ACRO_METRImeasure
-Ym	ACRO_ÄKS	', 'ACRO_METRImeasure
+ym	ACRO_ÄKS	measure
+Ym	ACRO_ÄKS	measure
 YM	ACRO_ÄKS	org
-ymol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-Ymol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+ymol	ACRO_ÄKS	measure
+Ymol	ACRO_ÄKS	measure
 ym	PCLE_VAAN	measure
-yN	ACRO_ÄKS	', 'ACRO_METRImeasure
-YN	ACRO_ÄKS	', 'ACRO_METRImeasure
+yN	ACRO_ÄKS	measure
+YN	ACRO_ÄKS	measure
 Yngvar	N_STADION	male
 Yngve	N_NISSE	male
-yo	ACRO_OO	', 'ACRO_OPPILAStitle
+yo	ACRO_OO	title
 yo.merk.	PCLE_VAAN	title
 yo.	PCLE_VAAN	title
-yPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-YPa	ACRO_AA	', 'ACRO_DOLLARImeasure
+yPa	ACRO_AA	measure
+YPa	ACRO_AA	measure
 ypäjäläinen	A_KYLMÄJÄRKINEN	inhabitant
 ypäjäläinen	N_KYLKIÄINEN	inhabitant
-yrad	ACRO_EE	', 'ACRO_DOLLARImeasure
-Yrad	ACRO_EE	', 'ACRO_DOLLARImeasure
+yrad	ACRO_EE	measure
+Yrad	ACRO_EE	measure
 yrittäjäneuvos	N_VAKUUTUS	title
 yrittäjä	N_HÖPÖTTÄJÄ	title
 Yrjänä	N_HÄKKYRÄ	male
@@ -7115,38 +7115,38 @@ Yrjö	N_MÖMMÖ	male
 YRl	ACRO_ÄKS	currency
 Yrsa	N_KIRJA	female
 Yrsa	N_VOIMA	female
-ys	ACRO_ÄKS	', 'ACRO_METRImeasure
-yS	ACRO_ÄKS	', 'ACRO_METRImeasure
-Ys	ACRO_ÄKS	', 'ACRO_METRImeasure
-YS	ACRO_ÄKS	', 'ACRO_METRImeasure
-ysr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-Ysr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-yT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-YT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-YT	ACRO_EE	', 'ACRO_OKmeasure
-YTK	ACRO_OO	', 'ACRO_OHMItitle
-YTL	ACRO_ÄKS	', 'ACRO_OHMItitle
-YTL	ACRO_ÄKS	', 'ACRO_PUNTAorg
-YTM	ACRO_ÄKS	', 'ACRO_DOLLARItitle
-YTT	ACRO_EE	', 'ACRO_DOLLARItitle
+ys	ACRO_ÄKS	measure
+yS	ACRO_ÄKS	measure
+Ys	ACRO_ÄKS	measure
+YS	ACRO_ÄKS	measure
+ysr	ACRO_ÄKS	measure
+Ysr	ACRO_ÄKS	measure
+yT	ACRO_EE	measure
+YT	ACRO_EE	measure
+YT	ACRO_EE	measure
+YTK	ACRO_OO	title
+YTL	ACRO_ÄKS	title
+YTL	ACRO_ÄKS	org
+YTM	ACRO_ÄKS	title
+YTT	ACRO_EE	title
 YUD	ACRO_EE	currency
 YUM	ACRO_ÄKS	currency
 YUN	ACRO_ÄKS	currency
 YUR	ACRO_ÄKS	currency
-yV	ACRO_EE	', 'ACRO_OHMImeasure
-YV	ACRO_EE	', 'ACRO_OHMImeasure
+yV	ACRO_EE	measure
+YV	ACRO_EE	measure
 Yvonne	N_NALLE	female
-yW	ACRO_EE	', 'ACRO_OHMImeasure
-YW	ACRO_EE	', 'ACRO_OHMImeasure
-yWb	ACRO_EE	', 'ACRO_WEBERmeasure
-YWb	ACRO_EE	', 'ACRO_WEBERmeasure
-yΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-YΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-zA	ACRO_AA	', 'ACRO_DOLLARImeasure
-ZA	ACRO_AA	', 'ACRO_DOLLARImeasure
+yW	ACRO_EE	measure
+YW	ACRO_EE	measure
+yWb	ACRO_EE	measure
+YWb	ACRO_EE	measure
+yΩ	ACRO_OHMI	measure
+YΩ	ACRO_OHMI	measure
+zA	ACRO_AA	measure
+ZA	ACRO_AA	measure
 Zacharias	N_PATSAS	male
 Zacharias	N_VAKUUTUS	male
-Z$	ACRO_DOLLARI	', 'ACRO_WEBERcurrency
+Z$	ACRO_DOLLARI	currency
 Zaire	N_NALLE	country
 ZAL	ACRO_ÄKS	currency
 zambialainen	A_AAKKOSELLINEN	country
@@ -7158,77 +7158,77 @@ zandekieli	N_HIIRI	language
 zapoteekki	N_LOKKI	language
 ZAR	ACRO_ÄKS	currency
 zaza	N_KIRJA	language
-zBq	ACRO_UU	', 'ACRO_METRImeasure
-ZBq	ACRO_UU	', 'ACRO_METRImeasure
-zC	ACRO_EE	', 'ACRO_METRImeasure
-ZC	ACRO_EE	', 'ACRO_METRImeasure
-z°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-Z°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-zcd	ACRO_EE	', 'ACRO_KANDELAmeasure
-Zcd	ACRO_EE	', 'ACRO_KANDELAmeasure
+zBq	ACRO_UU	measure
+ZBq	ACRO_UU	measure
+zC	ACRO_EE	measure
+ZC	ACRO_EE	measure
+z°C	ACRO_EE	measure
+Z°C	ACRO_EE	measure
+zcd	ACRO_EE	measure
+Zcd	ACRO_EE	measure
 zenaga	N_KIRJA	language
-zF	ACRO_ÄKS	', 'ACRO_METRImeasure
-ZF	ACRO_ÄKS	', 'ACRO_METRImeasure
-zg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-Zg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-zH	ACRO_OO	', 'ACRO_METRImeasure
-ZH	ACRO_OO	', 'ACRO_METRImeasure
+zF	ACRO_ÄKS	measure
+ZF	ACRO_ÄKS	measure
+zg	ACRO_EE	measure
+Zg	ACRO_EE	measure
+zH	ACRO_OO	measure
+ZH	ACRO_OO	measure
 zhuang	N_PUNK	language
-zHz	ACRO_ZET	', 'ACRO_METRImeasure
-ZHz	ACRO_ZET	', 'ACRO_METRImeasure
+zHz	ACRO_ZET	measure
+ZHz	ACRO_ZET	measure
 zimbabwelainen	A_AAKKOSELLINEN	country
 zimbabwelainen	A_AAKKOSELLINEN	inhabitant
 zimbabwelainen	N_AAKKOSTAMINEN	country
 zimbabwelainen	N_AAKKOSTAMINEN	inhabitant
 Zimbabwe	N_NALLE	country
-zJ	ACRO_II	', 'ACRO_JOULEmeasure
-ZJ	ACRO_II	', 'ACRO_JOULEmeasure
-zK	ACRO_OO	', 'ACRO_METRImeasure
-ZK	ACRO_OO	', 'ACRO_METRImeasure
-zkat	ACRO_EE	', 'ACRO_OHMImeasure
-Zkat	ACRO_EE	', 'ACRO_OHMImeasure
+zJ	ACRO_II	measure
+ZJ	ACRO_II	measure
+zK	ACRO_OO	measure
+ZK	ACRO_OO	measure
+zkat	ACRO_EE	measure
+Zkat	ACRO_EE	measure
 Zl	ACRO_ÄKS	currency
-zlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Zlm	ACRO_ÄKS	', 'ACRO_METRImeasure
+zlm	ACRO_ÄKS	measure
+Zlm	ACRO_ÄKS	measure
 zloty	N_KÄRRY	currency
-zlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-Zlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-zm	ACRO_ÄKS	', 'ACRO_METRImeasure
-Zm	ACRO_ÄKS	', 'ACRO_METRImeasure
+zlx	ACRO_ÄKS	measure
+Zlx	ACRO_ÄKS	measure
+zm	ACRO_ÄKS	measure
+Zm	ACRO_ÄKS	measure
 ZMK	ACRO_OO	currency
-zmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-Zmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
+zmol	ACRO_ÄKS	measure
+Zmol	ACRO_ÄKS	measure
 ZMW	ACRO_EE	currency
-zN	ACRO_ÄKS	', 'ACRO_METRImeasure
-ZN	ACRO_ÄKS	', 'ACRO_METRImeasure
-zPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-ZPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-zrad	ACRO_EE	', 'ACRO_DOLLARImeasure
-Zrad	ACRO_EE	', 'ACRO_DOLLARImeasure
+zN	ACRO_ÄKS	measure
+ZN	ACRO_ÄKS	measure
+zPa	ACRO_AA	measure
+ZPa	ACRO_AA	measure
+zrad	ACRO_EE	measure
+Zrad	ACRO_EE	measure
 ZRN	ACRO_ÄKS	currency
 ZRZ	ACRO_ZET	currency
-zs	ACRO_ÄKS	', 'ACRO_METRImeasure
-zS	ACRO_ÄKS	', 'ACRO_METRImeasure
-Zs	ACRO_ÄKS	', 'ACRO_METRImeasure
-ZS	ACRO_ÄKS	', 'ACRO_METRImeasure
-zsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-Zsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-zT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-ZT	ACRO_EE	', 'ACRO_GRAMMAmeasure
+zs	ACRO_ÄKS	measure
+zS	ACRO_ÄKS	measure
+Zs	ACRO_ÄKS	measure
+ZS	ACRO_ÄKS	measure
+zsr	ACRO_ÄKS	measure
+Zsr	ACRO_ÄKS	measure
+zT	ACRO_EE	measure
+ZT	ACRO_EE	measure
 zulu	N_ASU	language
 zuni	N_RUUVI	language
-zV	ACRO_EE	', 'ACRO_OHMImeasure
-ZV	ACRO_EE	', 'ACRO_OHMImeasure
-zW	ACRO_EE	', 'ACRO_OHMImeasure
-ZW	ACRO_EE	', 'ACRO_OHMImeasure
-zWb	ACRO_EE	', 'ACRO_WEBERmeasure
-ZWb	ACRO_EE	', 'ACRO_WEBERmeasure
+zV	ACRO_EE	measure
+ZV	ACRO_EE	measure
+zW	ACRO_EE	measure
+ZW	ACRO_EE	measure
+zWb	ACRO_EE	measure
+ZWb	ACRO_EE	measure
 ZWD	ACRO_EE	currency
 ZWL	ACRO_ÄKS	currency
 ZWR	ACRO_ÄKS	currency
-zΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-ZΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-Å	ACRO_OO	', 'ACRO_WEBERmeasure
+zΩ	ACRO_OHMI	measure
+ZΩ	ACRO_OHMI	measure
+Å	ACRO_OO	measure
 Ågot	N_PUNK	female
 Åke	N_NISSE	male
 Åland	N_PUNK	media
@@ -7237,31 +7237,31 @@ ZΩ	ACRO_OHMI	', 'ACRO_METRImeasure
 Öjvind	N_ZEN	male
 Örjan	N_PUNK	male
 Östen	N_BESSERWISSER	male
-μA	ACRO_AA	', 'ACRO_DOLLARImeasure
-μBq	ACRO_UU	', 'ACRO_METRImeasure
-μC	ACRO_EE	', 'ACRO_METRImeasure
-μ°C	ACRO_EE	', 'ACRO_CELSIUSmeasure
-μcd	ACRO_EE	', 'ACRO_KANDELAmeasure
-μF	ACRO_ÄKS	', 'ACRO_METRImeasure
-μg	ACRO_EE	', 'ACRO_GRAMMAmeasure
-μH	ACRO_OO	', 'ACRO_METRImeasure
-μHz	ACRO_ZET	', 'ACRO_METRImeasure
-μJ	ACRO_II	', 'ACRO_JOULEmeasure
-μK	ACRO_OO	', 'ACRO_METRImeasure
-μkat	ACRO_EE	', 'ACRO_OHMImeasure
-μlm	ACRO_ÄKS	', 'ACRO_METRImeasure
-μlx	ACRO_ÄKS	', 'ACRO_METRImeasure
-μm	ACRO_ÄKS	', 'ACRO_METRImeasure
-μmol	ACRO_ÄKS	', 'ACRO_OHMImeasure
-μN	ACRO_ÄKS	', 'ACRO_METRImeasure
-μPa	ACRO_AA	', 'ACRO_DOLLARImeasure
-μrad	ACRO_EE	', 'ACRO_DOLLARImeasure
-μs	ACRO_ÄKS	', 'ACRO_METRImeasure
-μS	ACRO_ÄKS	', 'ACRO_METRImeasure
-μsr	ACRO_ÄKS	', 'ACRO_WEBERmeasure
-μT	ACRO_EE	', 'ACRO_GRAMMAmeasure
-μV	ACRO_EE	', 'ACRO_OHMImeasure
-μW	ACRO_EE	', 'ACRO_OHMImeasure
-μWb	ACRO_EE	', 'ACRO_WEBERmeasure
-μΩ	ACRO_OHMI	', 'ACRO_METRImeasure
-Ω	ACRO_OHMI	', 'ACRO_METRImeasure
+μA	ACRO_AA	measure
+μBq	ACRO_UU	measure
+μC	ACRO_EE	measure
+μ°C	ACRO_EE	measure
+μcd	ACRO_EE	measure
+μF	ACRO_ÄKS	measure
+μg	ACRO_EE	measure
+μH	ACRO_OO	measure
+μHz	ACRO_ZET	measure
+μJ	ACRO_II	measure
+μK	ACRO_OO	measure
+μkat	ACRO_EE	measure
+μlm	ACRO_ÄKS	measure
+μlx	ACRO_ÄKS	measure
+μm	ACRO_ÄKS	measure
+μmol	ACRO_ÄKS	measure
+μN	ACRO_ÄKS	measure
+μPa	ACRO_AA	measure
+μrad	ACRO_EE	measure
+μs	ACRO_ÄKS	measure
+μS	ACRO_ÄKS	measure
+μsr	ACRO_ÄKS	measure
+μT	ACRO_EE	measure
+μV	ACRO_EE	measure
+μW	ACRO_EE	measure
+μWb	ACRO_EE	measure
+μΩ	ACRO_OHMI	measure
+Ω	ACRO_OHMI	measure
