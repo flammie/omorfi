@@ -25,6 +25,7 @@ from time import strftime
 import argparse
 
 from lexc_formatter import format_stuff
+from omorfi_settings import stuff_weights, boundary_weights
 
 # standard UI stuff
 
@@ -52,7 +53,7 @@ def main():
 
     def FormatArgType(v):
         baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google"]
+                "giellatekno", "ftb3", "segments", "google", "boundary"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:
@@ -68,14 +69,14 @@ def main():
     # setup files
     if args.verbose: 
         print("Writing some weights to", args.output.name)
-    tagweights = {'Bc': '+1.001', 'Duus': '+1.001', 'Dttaa': '+1.001',
-            'Dtattaa': '+2.002', 'Dtatuttaa': '+3.003', 'Dinen': '+1.001',
-            'Dja': '+1.001', 'Du': '+1.001', 'Uarch': '+4.004',
-            'Udial': '+4.004', 'Urare': '+4.004', 'Unonstd': '+4.004',
-            'Xabe': '+0.1', 'Xcom': '+1.001', 'Xins': '+2.002'}
-    for tag, weight in tagweights.items():
-        if format_stuff(tag, args.format) and format_stuff(tag, args.format) != '0':
-            print(format_stuff(tag, args.format), weight, sep='\t', file=args.output)
+    if args.format == 'boundary':
+        for tag, weight in boundary_weights.items():
+            print(tag, weight, sep='\t', file=args.output)
+    else:
+        for stuff, weight in stuff_weights.items():
+            if format_stuff(stuff, args.format) and format_stuff(stuff, args.format) != '0':
+                print(format_stuff(stuff, args.format), weight,
+                        sep='\t', file=args.output)
     exit(0)
 
 

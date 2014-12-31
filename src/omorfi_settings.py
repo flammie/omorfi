@@ -45,6 +45,15 @@ fin_symbols = "1234567890§!\"#¤%&/()=?½@£$‚{[]}<>*"
 # (a conservative listing for sure)
 fin_orth_pairs = [("’", "'"), ("’", "´"), ("’", "′"), ("-", "‐"),
         ("-", "‑"), ("-", "‑")]
+# weights by rules
+stuff_weights = {'Bc': '+1.0', 'Duus': '+16.0', 'Dttaa': '+16.0',
+            'Dtattaa': '+16.0', 'Dtatuttaa': '+32.0', 'Dinen': '+1.0',
+            'Dja': '+2.0', 'Du': '+16.0', 'Uarch': '+16.0',
+            'Udial': '+2.0', 'Urare': '+4.0', 'Unonstd': '+4.0',
+            'Xabe': '+0.1', 'Xcom': '+1.0', 'Xins': '+2.0'}
+boundary_weights = {word_boundary: '+0.1', morph_boundary: '+0.1', 
+            newword_boundary: '+1.0', deriv_boundary: '+2.0',
+            weak_boundary: '+0.1', stub_boundary: '+0.1'}
 
 # stuff is the tag format in database or lexical data, a lot of things
 stuffs = {

@@ -249,6 +249,9 @@ generated/omorfi-token.regex:
 generated/omorfi-hyphenate.twolc:
 	$(PYTHON) $(srcdir)/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
 
+generated/omorfi-boundary.reweight: generate-reweights.py
+	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=boundary -o $@
+
 # database to omor 
 generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 	$(PYTHON) $(srcdir)/generate-yamls.py -i $< -o $@ -f=omor -v
@@ -333,8 +336,12 @@ generated/temporary.hyphenated.hfst: generated/omorfi.lexc.hfst \
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
 
+generated/temporary.boundary-weights.hfst: generated/temporary.hyphenated.hfst \
+		generated/omorfi-boundary.reweight
+	$(HREW) -T generated/omorfi-boundary.reweight $< -o $@ 
+
 # spelling variations
-generated/temporary.relaxed.hfst: generated/temporary.hyphenated.hfst \
+generated/temporary.relaxed.hfst: generated/temporary.boundary-weights.hfst \
 	generated/omorfi-sh.regex.hfst \
 	generated/omorfi-zh.regex.hfst \
 	generated/omorfi-orthographic-variations.regex.hfst
@@ -349,34 +356,19 @@ generated/temporary.orth.hfst: generated/temporary.relaxed.hfst \
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-uppercase-first.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
 
-# make tag adjustments
-generated/temporary.tagged.hfst: generated/temporary.orth.hfst
-	cp -vf $< $@
-
 # remove remaining morph boundaries at this point
-generated/temporary.unbounded.hfst: generated/temporary.tagged.hfst |\
+generated/temporary.unbounded.hfst: generated/temporary.orth.hfst |\
 	generated/omorfi-remove-boundaries.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
-# no tag weights
-generated/temporary.tagweighted.hfst: generated/temporary.unbounded.hfst
-	cp -v $< $@
-
-# no token weights
-generated/temporary.tokenweighted.hfst: generated/temporary.tagweighted.hfst
-	cp -v $< $@
-
-# no other weight combinations
-generated/temporary.weighted.hfst: generated/temporary.tokenweighted.hfst
-	cp -v $< $@
 
 # lemmatisation is now built by messing with ftb3
 generated/omorfi.lemmatise.hfst: generated/temporary.ftb3.hfst generated/omorfi-ftb3-lemmatise.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) $< generated/omorfi-ftb3-lemmatise.regex.hfst -o $@
 
 # 
-generated/omorfi.segment.hfst: generated/temporary.weighted.hfst
+generated/omorfi.segment.hfst: generated/temporary.unbounded.hfst
 	$(HINV) $< | $(HF2F) -f olw -o $@
 
 # create one tape spell checker
