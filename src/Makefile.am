@@ -14,10 +14,8 @@ LEXEMES=lexemes/lexemes.tsv
 # lexical features
 LEMMA_JOINS=lexemes/adjective-classes.tsv \
 			lexemes/boundaries.tsv \
-			lexemes/homonyms.tsv \
 			lexemes/noun-classes.tsv \
 			lexemes/numeral-classes.tsv \
-			lexemes/origin.tsv \
 			lexemes/plurale-tantum.tsv \
 			lexemes/possessives.tsv \
 			lexemes/pronunciation.tsv \
@@ -176,8 +174,6 @@ generated/joint.tsv: lexemes/lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
 		-j $(srcdir)/lexemes/adjective-classes.tsv \
 		-j $(srcdir)/lexemes/boundaries.tsv \
-		-j $(srcdir)/lexemes/origin.tsv \
-		-j $(srcdir)/lexemes/homonyms.tsv \
 		-j $(srcdir)/lexemes/noun-classes.tsv \
 		-j $(srcdir)/lexemes/numeral-classes.tsv \
 		-j $(srcdir)/lexemes/plurale-tantum.tsv \

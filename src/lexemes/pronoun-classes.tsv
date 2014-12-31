@@ -1,133 +1,133 @@
-lemma	new_para	pronoun
-aiempi	A_AIEMPI	comp
-alempi	A_AIEMPI	comp
-alin	A_PAHIN	Superl
-dnro	N_RUIPELO	abbreviation
-ei-kukaan	PRON_KUKAAN	quantor
-ei-mikään	PRON_MIKÄÄN	quantor
-eri	PRON_KOKO	quantor
-eräs	PRON_ERÄS	quantor|indefinite
-harva	PRON_SAMA	quantor
-harvempi	PRON_USEAMPI	quantor|comp
-he	PRON_ME	personal|pl3
-Hki	N_TYYLI	abbreviation
-hlö	N_JÄÄTELÖ	abbreviation
-hra	N_KIRJA	abbreviation
-hsto	N_TALO	abbreviation
-hän	PRON_HÄN	personal|sg3
-hää	PRON_MÄÄ	personal|sg3
-itse	PRON_ITSE	reflexive
-jokainen	PRON_JOKAINEN	quantor
-joka	PRON_JOKA	relative
-joka	PRON_KOKO	quantor|indefinite
-jokin	PRON_JOKIN	quantor|indefinite
-jokunen	PRON_JOKAINEN	quantor
-joku	PRON_JOKU	quantor|indefinite
-jollainen	A_AAKKOSELLINEN	relative
-jompikumpi	PRON_JOMPIKUMPI	quantor|indefinite
-jompi	PRON_KUMPI	quantor
-jonkinlainen	A_AAKKOSELLINEN	quantor
-kaikki	PRON_KAIKKI	quantor
-kenkään	PRON_MÄÄ	interrogative
-ken	PRON_MÄÄ	interrogative
-khra	N_KIRJA	abbreviation
-klo	N_TALO	abbreviation
-kni	N_TYYLI	abbreviation
-koko	PRON_KOKO	quantor
-krnro	N_RUIPELO	abbreviation
-kukaan	PRON_KUKAAN	quantor
-kukakin	PRON_KUKAKIN	quantor
-kuka	PRON_KUKA	interrogative
-kuka	PRON_KUKA	quantor
-kuka	PRON_KUKA	relative
-kukin	PRON_KUKIN	quantor
-kumpainenkin	PRON_KOKO	adjective
-kumpikaan	PRON_KUMPIKAAN	quantor
-kumpikin	PRON_KUMPIKIN	quantor
-kumpi	PRON_KUMPI	interrogative
-kumpi	PRON_KUMPI	quantor
-lähempi	A_LÄHEMPI	comp
-lähin	A_SISIN	Superl
-ma	PRON_MA	personal|sg1
-me	PRON_ME	personal|pl1
-mie	PRON_MIE	personal|sg1
-mikin	PRON_MIKIN	quantor
-mikäkin	PRON_MIKÄKIN	quantor
-mikä	PRON_MIKÄ	interrogative
-mikä	PRON_MIKÄ	quantor
-mikä	PRON_MIKÄ	relative
-mikään	PRON_MIKÄÄN	quantor
-millainen	A_AAKKOSELLINEN	interrogative
-millainen	A_AAKKOSELLINEN	quantor
-mimmoinen	A_AAKKOSELLINEN	interrogative
-minkälainen	A_AAKKOSELLINEN	interrogative
-minkäslainen	A_AAKKOSELLINEN	interrogative
-minkäänlainen	A_AAKKOSELLINEN	interrogative
-minä	PRON_MINÄ	personal|sg1
-mi	PRON_KOKO	interrogative
-molemmat	PRON_MOLEMMAT	quantor
-mones	PRON_MONES	quantor
-moni	PRON_MONI	quantor
-monta	PRON_MONTA	quantor
-muuan	PRON_MUUAN	quantor|indefinite
-muudan	PRON_MUUAN	quantor|indefinite
-muu	PRON_MUU	quantor
-muutama	PRON_MUUTAMA	quantor
-mä	PRON_MÄ	personal|sg1
-mää	PRON_MÄÄ	personal|sg1
-ne	PRON_NE	demonstrative
-noi	PRON_NOI	demonstrative
-n:o	N_RUIPELO	abbreviation
-nro	N_RUIPELO	abbreviation
-nro	PCLE_VAAN	abbreviation
-nuo	PRON_NUO	demonstrative
-nämä	PRON_NÄMÄ	demonstrative
-paras	A_PARAS	Superl
-parempi	A_AIEMPI	comp
-parhain	A_PAHIN	Superl
-pjsto	N_TALO	abbreviation
-psto	N_TALO	abbreviation
-ptri	N_KEHVELI	abbreviation
-RN:o	N_RUIPELO	abbreviation
-rva	N_VOIMA	abbreviation
-samanlainen	A_AAKKOSELLINEN	quantor
-sama	PRON_SAMA	quantor
-sa	PRON_MA	personal|sg2
-sellainen	A_AAKKOSELLINEN	demonstrative
-semmoinen	A_AAKKOSELLINEN	demonstrative
-semmonen	A_AAKKOSELLINEN	demonstrative
-se	PRON_SE	demonstrative
-sie	PRON_MIE	personal|sg2
-sinä	PRON_MINÄ	personal|sg2
-snro	N_RUIPELO	abbreviation
-srnro	N_RUIPELO	abbreviation
-sä	PRON_MÄ	personal|sg2
-sää	PRON_MÄÄ	personal|sg2
-te	PRON_ME	personal|pl2
-Tku	N_ASU	abbreviation
-toinen	PRON_TOINEN	quantor
-toinen	PRON_TOINEN	reciprocal
-toi	PRON_TOI	demonstrative
-tommonen	A_AAKKOSELLINEN	demonstrative
-Tre	N_PISTE	abbreviation
-tri	N_TYYLI	abbreviation
-tsto	N_TALO	abbreviation
-tuollainen	A_AAKKOSELLINEN	demonstrative
-tuolloinen	A_AAKKOSELLINEN	demonstrative
-tuommoinen	A_AAKKOSELLINEN	demonstrative
-tuo	PRON_TUO	demonstrative
-tällainen	A_AAKKOSELLINEN	demonstrative
-tämmöinen	A_KYLMÄJÄRKINEN	demonstrative
-tämä	PRON_TÄMÄ	demonstrative
-tää	PRON_MÄÄ	demonstrative
-uloin	A_PAHIN	Superl
-ulompi	A_AIEMPI	comp
-useampi	PRON_USEAMPI	quantor|comp
-usea	PRON_USEA	quantor
-usein	PRON_USEIMMAT	quantor|superl
-yksikään	PRON_KOKO	quantor
-yksi	PRON_YKSI	quantor
-yks	PRON_MÄÄ	quantor
-ylempi	A_LÄHEMPI	comp
-ylin	A_SISIN	Superl
-yrnro	N_RUIPELO	abbreviation
+lemma	homonym	new_para	pronoun
+aiempi	1	A_AIEMPI	comp
+alempi	1	A_AIEMPI	comp
+alin	1	A_PAHIN	Superl
+dnro	1	N_RUIPELO	abbreviation
+ei-kukaan	1	PRON_KUKAAN	quantor
+ei-mikään	1	PRON_MIKÄÄN	quantor
+eri	1	PRON_KOKO	quantor
+eräs	1	PRON_ERÄS	quantor|indefinite
+harva	1	PRON_SAMA	quantor
+harvempi	1	PRON_USEAMPI	quantor|comp
+he	1	PRON_ME	personal|pl3
+Hki	1	N_TYYLI	abbreviation
+hlö	1	N_JÄÄTELÖ	abbreviation
+hra	1	N_KIRJA	abbreviation
+hsto	1	N_TALO	abbreviation
+hän	1	PRON_HÄN	personal|sg3
+hää	1	PRON_MÄÄ	personal|sg3
+itse	1	PRON_ITSE	reflexive
+jokainen	1	PRON_JOKAINEN	quantor
+joka	1	PRON_JOKA	relative
+joka	1	PRON_KOKO	quantor|indefinite
+jokin	1	PRON_JOKIN	quantor|indefinite
+jokunen	1	PRON_JOKAINEN	quantor
+joku	1	PRON_JOKU	quantor|indefinite
+jollainen	1	A_AAKKOSELLINEN	relative
+jompikumpi	1	PRON_JOMPIKUMPI	quantor|indefinite
+jompi	1	PRON_KUMPI	quantor
+jonkinlainen	1	A_AAKKOSELLINEN	quantor
+kaikki	1	PRON_KAIKKI	quantor
+kenkään	1	PRON_MÄÄ	interrogative
+ken	1	PRON_MÄÄ	interrogative
+khra	1	N_KIRJA	abbreviation
+klo	1	N_TALO	abbreviation
+kni	1	N_TYYLI	abbreviation
+koko	1	PRON_KOKO	quantor
+krnro	1	N_RUIPELO	abbreviation
+kukaan	1	PRON_KUKAAN	quantor
+kukakin	1	PRON_KUKAKIN	quantor
+kuka	1	PRON_KUKA	interrogative
+kuka	1	PRON_KUKA	quantor
+kuka	1	PRON_KUKA	relative
+kukin	1	PRON_KUKIN	quantor
+kumpainenkin	1	PRON_KOKO	adjective
+kumpikaan	1	PRON_KUMPIKAAN	quantor
+kumpikin	1	PRON_KUMPIKIN	quantor
+kumpi	1	PRON_KUMPI	interrogative
+kumpi	1	PRON_KUMPI	quantor
+lähempi	1	A_LÄHEMPI	comp
+lähin	1	A_SISIN	Superl
+ma	1	PRON_MA	personal|sg1
+me	1	PRON_ME	personal|pl1
+mie	1	PRON_MIE	personal|sg1
+mikin	1	PRON_MIKIN	quantor
+mikäkin	1	PRON_MIKÄKIN	quantor
+mikä	1	PRON_MIKÄ	interrogative
+mikä	1	PRON_MIKÄ	quantor
+mikä	1	PRON_MIKÄ	relative
+mikään	1	PRON_MIKÄÄN	quantor
+millainen	1	A_AAKKOSELLINEN	interrogative
+millainen	1	A_AAKKOSELLINEN	quantor
+mimmoinen	1	A_AAKKOSELLINEN	interrogative
+minkälainen	1	A_AAKKOSELLINEN	interrogative
+minkäslainen	1	A_AAKKOSELLINEN	interrogative
+minkäänlainen	1	A_AAKKOSELLINEN	interrogative
+minä	1	PRON_MINÄ	personal|sg1
+mi	1	PRON_KOKO	interrogative
+molemmat	1	PRON_MOLEMMAT	quantor
+mones	1	PRON_MONES	quantor
+moni	1	PRON_MONI	quantor
+monta	1	PRON_MONTA	quantor
+muuan	1	PRON_MUUAN	quantor|indefinite
+muudan	1	PRON_MUUAN	quantor|indefinite
+muu	1	PRON_MUU	quantor
+muutama	1	PRON_MUUTAMA	quantor
+mä	1	PRON_MÄ	personal|sg1
+mää	1	PRON_MÄÄ	personal|sg1
+ne	1	PRON_NE	demonstrative
+noi	1	PRON_NOI	demonstrative
+n:o	1	N_RUIPELO	abbreviation
+nro	1	N_RUIPELO	abbreviation
+nro	1	PCLE_VAAN	abbreviation
+nuo	1	PRON_NUO	demonstrative
+nämä	1	PRON_NÄMÄ	demonstrative
+paras	1	A_PARAS	Superl
+parempi	1	A_AIEMPI	comp
+parhain	1	A_PAHIN	Superl
+pjsto	1	N_TALO	abbreviation
+psto	1	N_TALO	abbreviation
+ptri	1	N_KEHVELI	abbreviation
+RN:o	1	N_RUIPELO	abbreviation
+rva	1	N_VOIMA	abbreviation
+samanlainen	1	A_AAKKOSELLINEN	quantor
+sama	1	PRON_SAMA	quantor
+sa	1	PRON_MA	personal|sg2
+sellainen	1	A_AAKKOSELLINEN	demonstrative
+semmoinen	1	A_AAKKOSELLINEN	demonstrative
+semmonen	1	A_AAKKOSELLINEN	demonstrative
+se	1	PRON_SE	demonstrative
+sie	1	PRON_MIE	personal|sg2
+sinä	1	PRON_MINÄ	personal|sg2
+snro	1	N_RUIPELO	abbreviation
+srnro	1	N_RUIPELO	abbreviation
+sä	1	PRON_MÄ	personal|sg2
+sää	1	PRON_MÄÄ	personal|sg2
+te	1	PRON_ME	personal|pl2
+Tku	1	N_ASU	abbreviation
+toinen	1	PRON_TOINEN	quantor
+toinen	1	PRON_TOINEN	reciprocal
+toi	1	PRON_TOI	demonstrative
+tommonen	1	A_AAKKOSELLINEN	demonstrative
+Tre	1	N_PISTE	abbreviation
+tri	1	N_TYYLI	abbreviation
+tsto	1	N_TALO	abbreviation
+tuollainen	1	A_AAKKOSELLINEN	demonstrative
+tuolloinen	1	A_AAKKOSELLINEN	demonstrative
+tuommoinen	1	A_AAKKOSELLINEN	demonstrative
+tuo	1	PRON_TUO	demonstrative
+tällainen	1	A_AAKKOSELLINEN	demonstrative
+tämmöinen	1	A_KYLMÄJÄRKINEN	demonstrative
+tämä	1	PRON_TÄMÄ	demonstrative
+tää	1	PRON_MÄÄ	demonstrative
+uloin	1	A_PAHIN	Superl
+ulompi	1	A_AIEMPI	comp
+useampi	1	PRON_USEAMPI	quantor|comp
+usea	1	PRON_USEA	quantor
+usein	1	PRON_USEIMMAT	quantor|superl
+yksikään	1	PRON_KOKO	quantor
+yksi	1	PRON_YKSI	quantor
+yks	1	PRON_MÄÄ	quantor
+ylempi	1	A_LÄHEMPI	comp
+ylin	1	A_SISIN	Superl
+yrnro	1	N_RUIPELO	abbreviation

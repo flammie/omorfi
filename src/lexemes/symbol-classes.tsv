@@ -1,44 +1,44 @@
-lemma	new_para	symbol
-´	SYMBOL_PISTE	final-quote
-´	SYMBOL_PISTE	initial-quote
-`	SYMBOL_PISTE	final-quote
-`	SYMBOL_PISTE	initial-quote
-<	SYMBOL_PISTE	initial-bracket
->	SYMBOL_PISTE	final-bracket
--	SYMBOL_PISTE	dash
---	SYMBOL_PISTE	dash
-,	SYMBOL_PILKKU	clause-boundary
-;	SYMBOL_PISTE	clause-boundary
-:	SYMBOL_PISTE	clause-boundary
-!	SYMBOL_PISTE	sentence-boundary
-?	SYMBOL_PISTE	sentence-boundary
-!	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
-?	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
-.	SYMBOL_PISTE	sentence-boundary
-..	SYMBOL_PISTE	sentence-boundary
-...	SYMBOL_PISTE	sentence-boundary
-....	SYMBOL_PISTE	sentence-boundary
-’	SYMBOL_PISTE	final-quote
-’	SYMBOL_PISTE	initial-quote
-’	SYMBOL_PISTE	final-quote
-’	SYMBOL_PISTE	initial-quote
-"	SYMBOL_PISTE	final-quote
-"	SYMBOL_PISTE	initial-quote
-”	SYMBOL_PISTE	final-quote
-”	SYMBOL_PISTE	initial-quote
-»	SYMBOL_PISTE	final-quote
-»	SYMBOL_PISTE	initial-quote
-(	SYMBOL_PISTE	initial-bracket
-)	SYMBOL_PISTE	final-bracket
-[	SYMBOL_PISTE	initial-bracket
-]	SYMBOL_PISTE	final-bracket
-{	SYMBOL_PISTE	initial-bracket
-}	SYMBOL_PISTE	final-bracket
-–	SYMBOL_PISTE	dash
-—	SYMBOL_PISTE	dash
-›	SYMBOL_PISTE	final-bracket
-‹	SYMBOL_PISTE	initial-bracket
-‥	SYMBOL_PISTE	sentence-boundary
-…	SYMBOL_PISTE	sentence-boundary
- 	SYMBOL_PISTE	space
- 	SYMBOL_PISTE	space
+lemma	homonym	new_para	symbol
+´	1	SYMBOL_PISTE	final-quote
+´	1	SYMBOL_PISTE	initial-quote
+`	1	SYMBOL_PISTE	final-quote
+`	1	SYMBOL_PISTE	initial-quote
+<	1	SYMBOL_PISTE	initial-bracket
+>	1	SYMBOL_PISTE	final-bracket
+-	1	SYMBOL_PISTE	dash
+--	1	SYMBOL_PISTE	dash
+,	1	SYMBOL_PILKKU	clause-boundary
+;	1	SYMBOL_PISTE	clause-boundary
+:	1	SYMBOL_PISTE	clause-boundary
+!	1	SYMBOL_PISTE	sentence-boundary
+?	1	SYMBOL_PISTE	sentence-boundary
+!	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+?	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+.	1	SYMBOL_PISTE	sentence-boundary
+..	1	SYMBOL_PISTE	sentence-boundary
+...	1	SYMBOL_PISTE	sentence-boundary
+....	1	SYMBOL_PISTE	sentence-boundary
+’	1	SYMBOL_PISTE	final-quote
+’	1	SYMBOL_PISTE	initial-quote
+’	1	SYMBOL_PISTE	final-quote
+’	1	SYMBOL_PISTE	initial-quote
+"	1	SYMBOL_PISTE	final-quote
+"	1	SYMBOL_PISTE	initial-quote
+”	1	SYMBOL_PISTE	final-quote
+”	1	SYMBOL_PISTE	initial-quote
+»	1	SYMBOL_PISTE	final-quote
+»	1	SYMBOL_PISTE	initial-quote
+(	1	SYMBOL_PISTE	initial-bracket
+)	1	SYMBOL_PISTE	final-bracket
+[	1	SYMBOL_PISTE	initial-bracket
+]	1	SYMBOL_PISTE	final-bracket
+{	1	SYMBOL_PISTE	initial-bracket
+}	1	SYMBOL_PISTE	final-bracket
+–	1	SYMBOL_PISTE	dash
+—	1	SYMBOL_PISTE	dash
+›	1	SYMBOL_PISTE	final-bracket
+‹	1	SYMBOL_PISTE	initial-bracket
+‥	1	SYMBOL_PISTE	sentence-boundary
+…	1	SYMBOL_PISTE	sentence-boundary
+ 	1	SYMBOL_PISTE	space
+ 	1	SYMBOL_PISTE	space

@@ -1,750 +1,750 @@
-lemma	new_para	original-ktn
-aavameri	N_MERI	51
-ahkeraliisa	N_KIRJA	50
-ahtaus	N_AAKKOSELLISUUS	40
-ahtaus	N_VAKUUTUS	40
-aika	PCLE_VAAN	9
-aika	N_AIKA	9
-aitoamaryllis	N_RÄJÄYTYS	50
-aito	A_MIETO	99
-aitosuomalainen	N_AAKKOSTAMINEN	50
-aitosuomalaisuus	N_AAKKOSELLISUUS	50
-aitosyöpä	N_LEIPÄ	50
-aitotumallinen	A_AAKKOSELLINEN	50
-aitotumallinen	A_AAKKOSELLINEN	50
-aitotumallinen	N_AAKKOSTAMINEN	50
-aitotumallinen	N_AAKKOSTAMINEN	50
-aneurysma	N_KIRJA	10
-bed and breakfast	N_PUNK	99
-bileet	N_RÄMEET	20
-eukkonen	N_AAKKOSTAMINEN	99
-forte	PCLE_VAAN	8
-fortissimo	PCLE_VAAN	2
-hapanimelä	A_TYHMÄ	50
-hapanimeläkastike	N_KASTIKE	50
-hapanjuuri	N_RUUHI	50
-hapankaali	N_RUUVI	50
-hapankerma	N_KIRJA	50
-hapankorppu	N_LIPPU	50
-hapanleipä	N_LEIPÄ	50
-hapannaama	N_KIRJA	50
-hapantaikina	N_KITARA	50
-happy hour	N_PUNK	99
-harmaa-asteikko	N_LEPAKKO	50
-harmaahaikara	N_KITARA	50
-harmaahapsi	N_LAPSI	50
-harmaahapsi	N_LAPSI	50
-harmaahapsi	N_ONNI	50
-harmaahapsi	N_ONNI	50
-harmaahome	N_ASTE	50
-harmaahylje	N_HYLJE	50
-harmaakaihi	N_ONNI	50
-harmaakaihi	N_RUUVI	50
-harmaakarhu	N_ASU	50
-harmaakiilto	N_KIELTO	50
-harmaakivi	N_KIVI	50
-harmaaleppä	N_SEPPÄ	50
-harmaalokki	N_LOKKI	50
-harmaanieriä	N_HÄKKYRÄ	50
-harmaaparta	N_KERTA	50
-harmaapää	N_PÄÄ	50
-harmaasieppo	N_HAPPO	50
-harmaatuonti	N_SOINTI	50
-harmaavarpunen	N_AAKKOSTAMINEN	50
-helppoheikki	N_LOKKI	50
-herkkäilmeinen	A_KYLMÄJÄRKINEN	18
-hidaskatu	N_KUITU	50
-hienohelma	N_KIRJA	50
-hienomekaanikko	N_LEPAKKO	50
-hienomekaniikka	N_POLITIIKKA	50
-hienomotoriikka	N_POLITIIKKA	50
-hienopaperi	N_KANAALI	50
-hienopesu	N_ASU	50
-hienorakenne	N_RAKENNE	50
-hienosahaus	N_VAKUUTUS	50
-hienosaippua	N_MAKKARA	50
-hienosokeri	N_KANAALI	51
-hienosäädin	N_SÄÄDIN	50
-hienosäätö	N_HÄÄTÖ	50
-hohtojalokivi	N_ONNI	50
-hoosianna	PCLE_VAAN	9
-hoosianna	N_KIRJA	9
-huimapää	N_PÄÄ	50
-hullujussi	N_RUUVI	50
-hullukaali	N_RUUVI	50
-hulluruoho	N_TALO	50
-humala	N_PROBLEEMA	10
-hurjapää	N_PÄÄ	50
-hämäräkytkin	N_ELIN	50
-hämärämies	N_MIES	50
-hämäränäkö	N_NÄKÖ	50
-hämäräsokea	A_KORKEA	50
-hämäräsokea	N_SOKEA	50
-hämäräsokeus	N_AAKKOSELLISUUS	50
-hämärätila	N_KIRJA	50
-höykänen	N_KYLKIÄINEN	99
-ilmoinen	N_AAKKOSTAMINEN	99
-imelälimppu	N_LIPPU	50
-imukärhivilliviini	N_HIIRI	50
-isohirvenjäkälä	N_HÖPÖTTÄJÄ	50
-isoisoisä	N_HÖPÖTTÄJÄ	50
-isoisovanhemmat	N_VANHEMMAT	50
-isoisoäiti	N_NIHTI	50
-isoisä	N_HÖPÖTTÄJÄ	50
-isojako	N_TEKO	50
-isojako	N_TEKO	51
-isokuovi	N_RUUVI	50
-isokuovi	N_RUUVI	51
-isokäpylintu	N_LINTU	50
-isokäpylintu	N_LINTU	51
-isolepinkäinen	N_KYLKIÄINEN	50
-isolepinkäinen	N_KYLKIÄINEN	51
-isolokki	N_LOKKI	50
-isolokki	N_LOKKI	51
-isomaksaruoho	N_TALO	50
-isomaksaruoho	N_TALO	51
-isomasto	N_TALO	50
-isomasto	N_TALO	51
-isopanda	N_KIRJA	50
-isopanda	N_KIRJA	51
-isopurje	N_ASTE	50
-isopurje	N_ASTE	51
-isorokko	N_UKKO	50
-isorokko	N_UKKO	51
-isorumpu	N_RUMPU	50
-isorumpu	N_RUMPU	51
-isosetä	N_PÖYTÄ	50
-isosisar	N_JOUTSEN	50
-isosisar	N_JOUTSEN	51
-isosisko	N_TALO	50
-isosisko	N_TALO	51
-isotaivot	N_AIVOT	51
-isotäti	N_NIHTI	50
-isovanhemmat	N_VANHEMMAT	50
-isovarvas	N_VARVAS	50
-isovarvas	N_VARVAS	51
-isoveli	N_VELI	50
-isoveli	N_VELI	51
-isoviha	N_KIRJA	50
-isoviha	N_KIRJA	51
-isoympyrä	N_HÄKKYRÄ	50
-isoäiti	N_NIHTI	50
-itse kukinPRO	N_KUKIN	99
-jaloangervo	N_RUIPELO	50
-jalofasaani	N_KANAALI	50
-jalohaukka	N_POLITIIKKA	50
-jalokaasu	N_ASU	50
-jalokivi	N_KIVI	50
-jalokoralli	N_KANAALI	50
-jalokuoriainen	N_AAKKOSTAMINEN	50
-jalokuusi	N_RUUHI	50
-jalometalli	N_RUUVI	50
-jalopeura	N_KIRJA	50
-jalopuu	N_PUU	50
-jalopähkinä	N_SIIVILÄ	50
-jaloruusu	N_ASU	50
-jaloteräs	N_RÄJÄYTYS	50
-japaninjaloangervo	N_RUIPELO	50
-jokaPRO	N_KOKO	99
-jokaPRO	N_JOKA	99
-jota	PCLE_VAAN	99
-kadesilmä	N_HÖPÖTTÄJÄ	50
-kaljupää	N_PÄÄ	50
-kalpeanaama	N_KIRJA	50
-karkearehu	N_ASU	50
-karkearehu	N_ASU	51
-karkeasäädin	N_SÄÄDIN	50
-karkeasäätö	N_HÄÄTÖ	50
-karvasaine	N_ASTE	50
-kesyhanhi	N_ONNI	50
-kesykyyhky	N_KÄRRY	50
-kevytbetoni	N_KANAALI	50
-kevytjogurtti	N_KORTTI	50
-kevytjogurtti	N_RUUVI	50
-kevytjukurtti	N_RUUVI	50
-kevytkerma	N_KIRJA	50
-kevytlevite	N_KÄSITE	50
-kevytmaito	N_VETO	50
-kevytmargariini	N_RUUVI	50
-kevytmetalli	N_KANAALI	50
-kevytmoottoripyörä	N_HÖPÖTTÄJÄ	50
-kevytmuovi	N_RUUVI	50
-kevytolut	N_OLUT	50
-kevytpiimä	N_YMPÄRYSTÄ	50
-kevytsarja	N_KIRJA	51
-kevytsinko	N_TALO	50
-kevytsora	N_VOIMA	50
-kevytsukellus	N_VAKUUTUS	50
-kevytsukeltaja	N_VOIMA	50
-kevyttiili	N_SYLI	50
-kevytvene	N_PISTE	50
-kevytviili	N_TYYLI	50
-kierosilmä	N_HÖPÖTTÄJÄ	50
-kiharapää	N_PÄÄ	50
-kiharatukka	N_LUOKKA	50
-kikkara	A_HAPERA	12
-kikkara	A_HARMAJA	12
-kippurahäntä	N_HÄNTÄ	50
-kireäilmeinen	A_KYLMÄJÄRKINEN	18
-kirjavapillike	N_LÄÄKE	50
-kirjavapillike	N_LÄÄKE	51
-klanipää	N_PÄÄ	50
-kohta	PCLE_VAAN	10
-kohta	N_SOTA	10
+lemma	homonym	new_para	original-ktn
+aavameri	1	N_MERI	51
+ahkeraliisa	1	N_KIRJA	50
+ahtaus	1	N_AAKKOSELLISUUS	40
+ahtaus	1	N_VAKUUTUS	40
+aika	1	PCLE_VAAN	9
+aika	1	N_AIKA	9
+aitoamaryllis	1	N_RÄJÄYTYS	50
+aito	1	A_MIETO	99
+aitosuomalainen	1	N_AAKKOSTAMINEN	50
+aitosuomalaisuus	1	N_AAKKOSELLISUUS	50
+aitosyöpä	1	N_LEIPÄ	50
+aitotumallinen	1	A_AAKKOSELLINEN	50
+aitotumallinen	1	A_AAKKOSELLINEN	50
+aitotumallinen	1	N_AAKKOSTAMINEN	50
+aitotumallinen	1	N_AAKKOSTAMINEN	50
+aneurysma	1	N_KIRJA	10
+bed and breakfast	1	N_PUNK	99
+bileet	1	N_RÄMEET	20
+eukkonen	1	N_AAKKOSTAMINEN	99
+forte	1	PCLE_VAAN	8
+fortissimo	1	PCLE_VAAN	2
+hapanimelä	1	A_TYHMÄ	50
+hapanimeläkastike	1	N_KASTIKE	50
+hapanjuuri	1	N_RUUHI	50
+hapankaali	1	N_RUUVI	50
+hapankerma	1	N_KIRJA	50
+hapankorppu	1	N_LIPPU	50
+hapanleipä	1	N_LEIPÄ	50
+hapannaama	1	N_KIRJA	50
+hapantaikina	1	N_KITARA	50
+happy hour	1	N_PUNK	99
+harmaa-asteikko	1	N_LEPAKKO	50
+harmaahaikara	1	N_KITARA	50
+harmaahapsi	1	N_LAPSI	50
+harmaahapsi	1	N_LAPSI	50
+harmaahapsi	1	N_ONNI	50
+harmaahapsi	1	N_ONNI	50
+harmaahome	1	N_ASTE	50
+harmaahylje	1	N_HYLJE	50
+harmaakaihi	1	N_ONNI	50
+harmaakaihi	1	N_RUUVI	50
+harmaakarhu	1	N_ASU	50
+harmaakiilto	1	N_KIELTO	50
+harmaakivi	1	N_KIVI	50
+harmaaleppä	1	N_SEPPÄ	50
+harmaalokki	1	N_LOKKI	50
+harmaanieriä	1	N_HÄKKYRÄ	50
+harmaaparta	1	N_KERTA	50
+harmaapää	1	N_PÄÄ	50
+harmaasieppo	1	N_HAPPO	50
+harmaatuonti	1	N_SOINTI	50
+harmaavarpunen	1	N_AAKKOSTAMINEN	50
+helppoheikki	1	N_LOKKI	50
+herkkäilmeinen	1	A_KYLMÄJÄRKINEN	18
+hidaskatu	1	N_KUITU	50
+hienohelma	1	N_KIRJA	50
+hienomekaanikko	1	N_LEPAKKO	50
+hienomekaniikka	1	N_POLITIIKKA	50
+hienomotoriikka	1	N_POLITIIKKA	50
+hienopaperi	1	N_KANAALI	50
+hienopesu	1	N_ASU	50
+hienorakenne	1	N_RAKENNE	50
+hienosahaus	1	N_VAKUUTUS	50
+hienosaippua	1	N_MAKKARA	50
+hienosokeri	1	N_KANAALI	51
+hienosäädin	1	N_SÄÄDIN	50
+hienosäätö	1	N_HÄÄTÖ	50
+hohtojalokivi	1	N_ONNI	50
+hoosianna	1	PCLE_VAAN	9
+hoosianna	1	N_KIRJA	9
+huimapää	1	N_PÄÄ	50
+hullujussi	1	N_RUUVI	50
+hullukaali	1	N_RUUVI	50
+hulluruoho	1	N_TALO	50
+humala	1	N_PROBLEEMA	10
+hurjapää	1	N_PÄÄ	50
+hämäräkytkin	1	N_ELIN	50
+hämärämies	1	N_MIES	50
+hämäränäkö	1	N_NÄKÖ	50
+hämäräsokea	1	A_KORKEA	50
+hämäräsokea	1	N_SOKEA	50
+hämäräsokeus	1	N_AAKKOSELLISUUS	50
+hämärätila	1	N_KIRJA	50
+höykänen	1	N_KYLKIÄINEN	99
+ilmoinen	1	N_AAKKOSTAMINEN	99
+imelälimppu	1	N_LIPPU	50
+imukärhivilliviini	1	N_HIIRI	50
+isohirvenjäkälä	1	N_HÖPÖTTÄJÄ	50
+isoisoisä	1	N_HÖPÖTTÄJÄ	50
+isoisovanhemmat	1	N_VANHEMMAT	50
+isoisoäiti	1	N_NIHTI	50
+isoisä	1	N_HÖPÖTTÄJÄ	50
+isojako	1	N_TEKO	50
+isojako	1	N_TEKO	51
+isokuovi	1	N_RUUVI	50
+isokuovi	1	N_RUUVI	51
+isokäpylintu	1	N_LINTU	50
+isokäpylintu	1	N_LINTU	51
+isolepinkäinen	1	N_KYLKIÄINEN	50
+isolepinkäinen	1	N_KYLKIÄINEN	51
+isolokki	1	N_LOKKI	50
+isolokki	1	N_LOKKI	51
+isomaksaruoho	1	N_TALO	50
+isomaksaruoho	1	N_TALO	51
+isomasto	1	N_TALO	50
+isomasto	1	N_TALO	51
+isopanda	1	N_KIRJA	50
+isopanda	1	N_KIRJA	51
+isopurje	1	N_ASTE	50
+isopurje	1	N_ASTE	51
+isorokko	1	N_UKKO	50
+isorokko	1	N_UKKO	51
+isorumpu	1	N_RUMPU	50
+isorumpu	1	N_RUMPU	51
+isosetä	1	N_PÖYTÄ	50
+isosisar	1	N_JOUTSEN	50
+isosisar	1	N_JOUTSEN	51
+isosisko	1	N_TALO	50
+isosisko	1	N_TALO	51
+isotaivot	1	N_AIVOT	51
+isotäti	1	N_NIHTI	50
+isovanhemmat	1	N_VANHEMMAT	50
+isovarvas	1	N_VARVAS	50
+isovarvas	1	N_VARVAS	51
+isoveli	1	N_VELI	50
+isoveli	1	N_VELI	51
+isoviha	1	N_KIRJA	50
+isoviha	1	N_KIRJA	51
+isoympyrä	1	N_HÄKKYRÄ	50
+isoäiti	1	N_NIHTI	50
+itse kukinPRO	1	N_KUKIN	99
+jaloangervo	1	N_RUIPELO	50
+jalofasaani	1	N_KANAALI	50
+jalohaukka	1	N_POLITIIKKA	50
+jalokaasu	1	N_ASU	50
+jalokivi	1	N_KIVI	50
+jalokoralli	1	N_KANAALI	50
+jalokuoriainen	1	N_AAKKOSTAMINEN	50
+jalokuusi	1	N_RUUHI	50
+jalometalli	1	N_RUUVI	50
+jalopeura	1	N_KIRJA	50
+jalopuu	1	N_PUU	50
+jalopähkinä	1	N_SIIVILÄ	50
+jaloruusu	1	N_ASU	50
+jaloteräs	1	N_RÄJÄYTYS	50
+japaninjaloangervo	1	N_RUIPELO	50
+jokaPRO	1	N_KOKO	99
+jokaPRO	1	N_JOKA	99
+jota	1	PCLE_VAAN	99
+kadesilmä	1	N_HÖPÖTTÄJÄ	50
+kaljupää	1	N_PÄÄ	50
+kalpeanaama	1	N_KIRJA	50
+karkearehu	1	N_ASU	50
+karkearehu	1	N_ASU	51
+karkeasäädin	1	N_SÄÄDIN	50
+karkeasäätö	1	N_HÄÄTÖ	50
+karvasaine	1	N_ASTE	50
+kesyhanhi	1	N_ONNI	50
+kesykyyhky	1	N_KÄRRY	50
+kevytbetoni	1	N_KANAALI	50
+kevytjogurtti	1	N_KORTTI	50
+kevytjogurtti	1	N_RUUVI	50
+kevytjukurtti	1	N_RUUVI	50
+kevytkerma	1	N_KIRJA	50
+kevytlevite	1	N_KÄSITE	50
+kevytmaito	1	N_VETO	50
+kevytmargariini	1	N_RUUVI	50
+kevytmetalli	1	N_KANAALI	50
+kevytmoottoripyörä	1	N_HÖPÖTTÄJÄ	50
+kevytmuovi	1	N_RUUVI	50
+kevytolut	1	N_OLUT	50
+kevytpiimä	1	N_YMPÄRYSTÄ	50
+kevytsarja	1	N_KIRJA	51
+kevytsinko	1	N_TALO	50
+kevytsora	1	N_VOIMA	50
+kevytsukellus	1	N_VAKUUTUS	50
+kevytsukeltaja	1	N_VOIMA	50
+kevyttiili	1	N_SYLI	50
+kevytvene	1	N_PISTE	50
+kevytviili	1	N_TYYLI	50
+kierosilmä	1	N_HÖPÖTTÄJÄ	50
+kiharapää	1	N_PÄÄ	50
+kiharatukka	1	N_LUOKKA	50
+kikkara	1	A_HAPERA	12
+kikkara	1	A_HARMAJA	12
+kippurahäntä	1	N_HÄNTÄ	50
+kireäilmeinen	1	A_KYLMÄJÄRKINEN	18
+kirjavapillike	1	N_LÄÄKE	50
+kirjavapillike	1	N_LÄÄKE	51
+klanipää	1	N_PÄÄ	50
+kohta	1	PCLE_VAAN	10
+kohta	1	N_SOTA	10
 kolmeNUM_KOLME7
-konepestävä	N_HÖPÖTTÄJÄ	50
-korkea-aste	N_ASTE	50
-korkeajännite	N_PISTE	50
-korkeakoulu	N_ASU	50
-korkeakulttuuri	N_KANAALI	50
-korkeapaine	N_ASTE	50
-korkeasuhdanne	N_RAKENNE	50
-korkeavarasto	N_TALO	50
-kovakalvo	N_TALO	50
-kovakumi	N_RUUVI	50
-kovakuoriainen	N_AAKKOSTAMINEN	50
-kovalevy	N_KÄRRY	50
-kovametalli	N_KANAALI	50
-kovanaama	N_KIRJA	50
-kraavikala	N_KIRJA	50
-kraavilohi	N_RUUHI	50
-kuiva-aine	N_ASTE	50
-kuivaelementti	N_SKEITTI	50
-kuivaeste	N_PISTE	50
-kuivaharjaus	N_VAKUUTUS	50
-kuivaharjoittelu	N_ASU	50
-kuivaheinä	N_HÖPÖTTÄJÄ	50
-kuivahiiva	N_KIRJA	50
-kuivajää	N_PÄÄ	50
-kuivakakku	N_TIKKU	50
-kuivakakku	N_TIKKU	51
-kuivakukka	N_LUOKKA	50
-kuivakukka	N_LUOKKA	51
-kuivakäymälä	N_SIIVILÄ	50
-kuivamaito	N_TALO	50
-kuivamuona	N_VOIMA	50
-kuivamuona	N_VOIMA	51
-kuivapaino	N_TALO	50
-kuivapaino	N_TALO	51
-kuivapari	N_RUUVI	50
-kuivapari	N_RUUVI	51
-kuivaparisto	N_TALO	50
-kuivapesu	N_ASU	50
-kuivarehu	N_ASU	50
-kuivarehu	N_ASU	51
-kuivasampoo	N_TRIKOO	50
-kuivasprii	N_PII	50
-kuivatelakka	N_LUSIKKA	50
-kuivatislaus	N_VAKUUTUS	50
-kultainennoutaja	N_VOIMA	51
-kultanen	N_AAKKOSTAMINEN	99
-kuori	N_RUUHI	26
-kuori	N_RUUVI	26
-kusta	PCLE_VAAN	99
-kusta	V_MARISTA	99
-kuta	PCLE_VAAN	99
-kuumahauras	N_PATSAS	50
-kuumahauraus	N_AAKKOSELLISUUS	50
-kuumailmapallo	N_TALO	50
-kuumailmapuhallin	N_ASKELLIN	50
-kuumakalle	N_NALLE	50
-kuumakäsittely	N_KÄRRY	50
-kuumaliima	N_KIRJA	50
-kuumaliimaus	N_VAKUUTUS	50
-kuumamankeli	N_KANAALI	50
-kuumamankelointi	N_SOINTI	50
-kuumamuokkaus	N_VAKUUTUS	50
-kuumaniittaus	N_VAKUUTUS	50
-kuumasaumaus	N_VAKUUTUS	50
-kuumasavustus	N_VAKUUTUS	50
-kuumasinkitys	N_RÄJÄYTYS	50
-kuumataonta	N_KUTSUNTA	50
-kuumatyöstö	N_MÖMMÖ	50
-kuumavalssaus	N_VAKUUTUS	50
-kuuromykkä	A_MYKKÄ	50
-kuuromykkä	A_MYKKÄ	50
-kuuromykkä	N_HÖLKKÄ	50
-kuuromykkä	N_HÖLKKÄ	50
-kuurosokea	A_KORKEA	50
-kuurosokea	N_SOKEA	50
-kuusi	N_RUUHI	24
+konepestävä	1	N_HÖPÖTTÄJÄ	50
+korkea-aste	1	N_ASTE	50
+korkeajännite	1	N_PISTE	50
+korkeakoulu	1	N_ASU	50
+korkeakulttuuri	1	N_KANAALI	50
+korkeapaine	1	N_ASTE	50
+korkeasuhdanne	1	N_RAKENNE	50
+korkeavarasto	1	N_TALO	50
+kovakalvo	1	N_TALO	50
+kovakumi	1	N_RUUVI	50
+kovakuoriainen	1	N_AAKKOSTAMINEN	50
+kovalevy	1	N_KÄRRY	50
+kovametalli	1	N_KANAALI	50
+kovanaama	1	N_KIRJA	50
+kraavikala	1	N_KIRJA	50
+kraavilohi	1	N_RUUHI	50
+kuiva-aine	1	N_ASTE	50
+kuivaelementti	1	N_SKEITTI	50
+kuivaeste	1	N_PISTE	50
+kuivaharjaus	1	N_VAKUUTUS	50
+kuivaharjoittelu	1	N_ASU	50
+kuivaheinä	1	N_HÖPÖTTÄJÄ	50
+kuivahiiva	1	N_KIRJA	50
+kuivajää	1	N_PÄÄ	50
+kuivakakku	1	N_TIKKU	50
+kuivakakku	1	N_TIKKU	51
+kuivakukka	1	N_LUOKKA	50
+kuivakukka	1	N_LUOKKA	51
+kuivakäymälä	1	N_SIIVILÄ	50
+kuivamaito	1	N_TALO	50
+kuivamuona	1	N_VOIMA	50
+kuivamuona	1	N_VOIMA	51
+kuivapaino	1	N_TALO	50
+kuivapaino	1	N_TALO	51
+kuivapari	1	N_RUUVI	50
+kuivapari	1	N_RUUVI	51
+kuivaparisto	1	N_TALO	50
+kuivapesu	1	N_ASU	50
+kuivarehu	1	N_ASU	50
+kuivarehu	1	N_ASU	51
+kuivasampoo	1	N_TRIKOO	50
+kuivasprii	1	N_PII	50
+kuivatelakka	1	N_LUSIKKA	50
+kuivatislaus	1	N_VAKUUTUS	50
+kultainennoutaja	1	N_VOIMA	51
+kultanen	1	N_AAKKOSTAMINEN	99
+kuori	1	N_RUUHI	26
+kuori	1	N_RUUVI	26
+kusta	1	PCLE_VAAN	99
+kusta	1	V_MARISTA	99
+kuta	1	PCLE_VAAN	99
+kuumahauras	1	N_PATSAS	50
+kuumahauraus	1	N_AAKKOSELLISUUS	50
+kuumailmapallo	1	N_TALO	50
+kuumailmapuhallin	1	N_ASKELLIN	50
+kuumakalle	1	N_NALLE	50
+kuumakäsittely	1	N_KÄRRY	50
+kuumaliima	1	N_KIRJA	50
+kuumaliimaus	1	N_VAKUUTUS	50
+kuumamankeli	1	N_KANAALI	50
+kuumamankelointi	1	N_SOINTI	50
+kuumamuokkaus	1	N_VAKUUTUS	50
+kuumaniittaus	1	N_VAKUUTUS	50
+kuumasaumaus	1	N_VAKUUTUS	50
+kuumasavustus	1	N_VAKUUTUS	50
+kuumasinkitys	1	N_RÄJÄYTYS	50
+kuumataonta	1	N_KUTSUNTA	50
+kuumatyöstö	1	N_MÖMMÖ	50
+kuumavalssaus	1	N_VAKUUTUS	50
+kuuromykkä	1	A_MYKKÄ	50
+kuuromykkä	1	A_MYKKÄ	50
+kuuromykkä	1	N_HÖLKKÄ	50
+kuuromykkä	1	N_HÖLKKÄ	50
+kuurosokea	1	A_KORKEA	50
+kuurosokea	1	N_SOKEA	50
+kuusi	1	N_RUUHI	24
 kuusiNUM_KUUSI24
-kylmäallas	N_ALLAS	50
-kylmäfuusio	N_RUIPELO	50
-kylmäfysiikka	N_LUSIKKA	50
-kylmähauras	N_PATSAS	50
-kylmähauraus	N_AAKKOSELLISUUS	50
-kylmähitsaus	N_VAKUUTUS	50
-kylmähuone	N_ASTE	50
-kylmäkaappi	N_KUPPI	50
-kylmäkalle	N_ASTE	50
-kylmäkaluste	N_ASTE	50
-kylmäkassi	N_RUUVI	50
-kylmäketju	N_ASU	50
-kylmäkomero	N_RUIPELO	50
-kylmäkoneisto	N_TALO	50
-kylmäkone	N_ASTE	50
-kylmäkuivaus	N_VAKUUTUS	50
-kylmäkuljetus	N_VAKUUTUS	50
-kylmäkäsittely	N_KÄRRY	50
-kylmäkäynnistys	N_RÄJÄYTYS	50
-kylmälaite	N_OSOITE	50
-kylmälaukku	N_TIKKU	50
-kylmälava	N_KIRJA	50
-kylmämuokkaus	N_VAKUUTUS	50
-kylmäniittaus	N_VAKUUTUS	50
-kylmäpihatto	N_HIRTTO	50
-kylmäpiste	N_PISTE	50
-kylmäpuristus	N_VAKUUTUS	50
-kylmäpöytä	N_PÖYTÄ	50
-kylmäsavustus	N_VAKUUTUS	50
-kylmäseos	N_VAKUUTUS	50
-kylmäsilta	N_VALTA	50
-kylmäsäiliö	N_HÄIRIÖ	50
-kylmäsäilytys	N_RÄJÄYTYS	50
-kylmätaonta	N_KUTSUNTA	50
-kylmätekniikka	N_LUSIKKA	50
-kylmätila	N_KIRJA	50
-kylmätiski	N_TYYLI	50
-kylmätyöstö	N_MÖMMÖ	50
-kylmävalssaus	N_VAKUUTUS	50
-kylmävaraaja	N_VOIMA	50
-kylmävarasto	N_TALO	50
-kymi	N_KIVI	75
-kymmenes	N_RÄJÄYTYS	45
+kylmäallas	1	N_ALLAS	50
+kylmäfuusio	1	N_RUIPELO	50
+kylmäfysiikka	1	N_LUSIKKA	50
+kylmähauras	1	N_PATSAS	50
+kylmähauraus	1	N_AAKKOSELLISUUS	50
+kylmähitsaus	1	N_VAKUUTUS	50
+kylmähuone	1	N_ASTE	50
+kylmäkaappi	1	N_KUPPI	50
+kylmäkalle	1	N_ASTE	50
+kylmäkaluste	1	N_ASTE	50
+kylmäkassi	1	N_RUUVI	50
+kylmäketju	1	N_ASU	50
+kylmäkomero	1	N_RUIPELO	50
+kylmäkoneisto	1	N_TALO	50
+kylmäkone	1	N_ASTE	50
+kylmäkuivaus	1	N_VAKUUTUS	50
+kylmäkuljetus	1	N_VAKUUTUS	50
+kylmäkäsittely	1	N_KÄRRY	50
+kylmäkäynnistys	1	N_RÄJÄYTYS	50
+kylmälaite	1	N_OSOITE	50
+kylmälaukku	1	N_TIKKU	50
+kylmälava	1	N_KIRJA	50
+kylmämuokkaus	1	N_VAKUUTUS	50
+kylmäniittaus	1	N_VAKUUTUS	50
+kylmäpihatto	1	N_HIRTTO	50
+kylmäpiste	1	N_PISTE	50
+kylmäpuristus	1	N_VAKUUTUS	50
+kylmäpöytä	1	N_PÖYTÄ	50
+kylmäsavustus	1	N_VAKUUTUS	50
+kylmäseos	1	N_VAKUUTUS	50
+kylmäsilta	1	N_VALTA	50
+kylmäsäiliö	1	N_HÄIRIÖ	50
+kylmäsäilytys	1	N_RÄJÄYTYS	50
+kylmätaonta	1	N_KUTSUNTA	50
+kylmätekniikka	1	N_LUSIKKA	50
+kylmätila	1	N_KIRJA	50
+kylmätiski	1	N_TYYLI	50
+kylmätyöstö	1	N_MÖMMÖ	50
+kylmävalssaus	1	N_VAKUUTUS	50
+kylmävaraaja	1	N_VOIMA	50
+kylmävarasto	1	N_TALO	50
+kymi	1	N_KIVI	75
+kymmenes	1	N_RÄJÄYTYS	45
 kymmenesNUM_NELJÄS45
-kyömynenä	N_HÖPÖTTÄJÄ	50
-kähäräendiivi	N_TYYLI	50
-kähäräpää	N_PÄÄ	50
-käkkyrämänty	N_MÄNTY	50
-käkkärämänty	N_MÄNTY	50
-käsikynkkä	N_HÖLKKÄ	99
-käyrätorvi	N_ONNI	50
-kääpiöjaloangervo	N_RUIPELO	50
-kääpiövillikissa	N_KIRJA	50
-köyryniska	N_KIRJA	50
-köyryselkä	N_HÖPÖTTÄJÄ	50
-laajakulma	N_VOIMA	50
-laiskajaakko	N_UKKO	50
-laiskakoira	N_VOIMA	51
-laiskamato	N_VETO	50
-lentävätkoirat	N_JUHLAT	51
-liberaaliteologia	N_MAKKARA	50
-liejupahaputki	N_ONNI	50
-liika	PCLE_VAAN	9
-liika	N_VIKA	9
-live	PCLE_VAAN	48
-live	N_VIIVE	48
-lyhytelokuva	N_VOIMA	50
-lyhytfilmi	N_TYYLI	50
-lyhytkirurgia	N_MAKKARA	50
-lyhytnumero	N_STADION	50
-lyhytohjelma	N_VOIMA	50
-lyhytproosa	N_VOIMA	50
-lyhyttavara	N_MAKKARA	50
-lyhytterapia	N_MAKKARA	50
-lypsää	V_KIVISTÄÄ	54
-lämminruoka	N_RUOKA	51
-lämminvarasto	N_TALO	50
-lämminvarasto	N_TALO	51
-lämminvaunu	N_ASU	50
-lämminvaunu	N_ASU	51
-maPRO	N_MA	99
-matalajännite	N_KÄSITE	50
-matalakirkollisuus	N_AAKKOSELLISUUS	50
-matalalento	N_TUNTO	50
-matalameri	N_MERI	51
-matalameri	N_MERI	51
-matalamielisyys	N_KÖYHYYS	50
-matalapaine	N_ASTE	50
-matalasuhdanne	N_RAKENNE	50
-matalatorjunta	N_KUTSUNTA	50
-meltorauta	N_KIRJA	50
-meri	N_MERI	24
-miPRO	N_KOKO	99
-mikäkinPRO	N_MIKÄKIN	99
-miss	PCLE_VAAN	99
-miss	N_ZEN	99
-moni-ilmeinen	A_KYLMÄJÄRKINEN	18
-montaPRO	N_MONTA	99
-muorinen	N_AAKKOSTAMINEN	99
-mustaherukka	N_LUSIKKA	50
-mustaherukka	N_LUSIKKA	51
-mustajalopähkinä	N_HÄKKYRÄ	50
-mustajuuri	N_RUUHI	50
-mustaleipä	N_LEIPÄ	51
-mustaleski	N_KIVI	51
-mustalintu	N_LINTU	50
-mustalintu	N_LINTU	51
-mustamaalaus	N_VAKUUTUS	50
-mustamaija	N_KIRJA	51
-mustamakkara	N_KITARA	50
-mustamakkara	N_KITARA	51
-mustamies	N_MIES	51
-mustamulta	N_VOIMA	51
-mustapaita	N_KIRJA	50
-mustapekka	N_POLITIIKKA	51
-mustapippuri	N_KANAALI	50
-mustapippuri	N_KANAALI	51
-mustarastas	N_PATSAS	50
-mustarousku	N_ASU	50
-mustaruuti	N_TAUTI	50
-mustasilmä	N_HÖPÖTTÄJÄ	50
-mustatorvisieni	N_KIVI	51
-mustavaris	N_VAKUUTUS	50
-mustaviinimarja	N_KIRJA	51
-mykkäelokuva	N_VOIMA	50
-mykkäfilmi	N_TYYLI	50
-mykkäkoulu	N_ASU	50
-märkähionta	N_KUTSUNTA	50
-märkäluja	A_RUMA	50
-märkälujuus	N_AAKKOSELLISUUS	50
-märkäpesu	N_ASU	50
-märkäpuku	N_LUKU	50
-märkätila	N_KIRJA	50
-mätämuna	N_VOIMA	50
-normaalijakauma	N_VOIMA	50
-normaalijakautuma	N_VOIMA	50
-normaalikoko	N_KOKO	50
-normaalikoulu	N_ASU	50
-normaalilyseo	N_TUOMIO	50
-normaalilämpö	N_LÄMPÖ	50
-normaalimäki	N_KÄKI	50
-normaaliobjektiivi	N_RUUVI	50
-normaaliolot	N_AIVOT	50
-normaalipaino	N_TALO	50
-normaalipituus	N_AAKKOSELLISUUS	50
-normaalisävel	N_SIEMEN	50
-normaalitapaus	N_VAKUUTUS	50
-normaalivahvuus	N_AAKKOSELLISUUS	50
-normaalivauhti	N_TAUTI	50
-nuoriemäntä	N_HÄNTÄ	51
-nuoriherra	N_KIRJA	51
-nuori-isäntä	N_HÄNTÄ	51
-nuorikarja	N_KIRJA	51
-nuorimies	N_MIES	51
-nuoripari	N_RUUVI	51
-nuoskakeli	N_TYYLI	50
-nuoskalumi	N_TAIMI	50
-nuoskasää	N_PÄÄ	50
-ohutkalvo	N_TALO	50
-ohutsuoli	N_RUUHI	50
-olla	V_OLLA	67
-omaelämäkerta	N_KERTA	50
-omahoitaja	N_VOIMA	50
-omahoito	N_VETO	50
-omailmeinen	A_KYLMÄJÄRKINEN	18
-omakehu	N_ASU	50
-omakustanne	N_RAKENNE	50
-omakustannukset	N_SERKUKSET	50
-omakuva	N_VOIMA	50
-omakuva	N_VOIMA	51
-omalääkäri	N_TYYLI	50
-omapaino	N_TALO	50
-omarahoitus	N_VAKUUTUS	50
-omatunto	N_TUNTO	51
-omavastuu	N_LEIKKUU	50
-pahahenki	N_HENKI	51
-pahaputki	N_ONNI	50
-pahaputki	N_ONNI	51
-pai	PCLE_HAH	18
-pai	N_HAI	18
-paksulehti	N_LEHTI	50
-paksusuoli	N_RUUHI	50
-palavakivi	N_KIVI	51
-palavapensas	N_PATSAS	51
-palavarakkaus	N_AAKKOSELLISUUS	51
-palavatpensaat	N_VALJAAT	51
-palsamijalokuusi	N_RUUHI	50
-pehmytkudos	N_VAKUUTUS	50
-pieksää	V_KIVISTÄÄ	54
-pitkä	A_PITKÄ	10
-pitkähöylä	N_HÖPÖTTÄJÄ	50
-pitkäkirkko	N_UKKO	50
-pitkäkirkko	N_UKKO	51
-pitkäpalko	N_PELKO	50
-pitkäperjantai	N_HAI	50
-pitkäperjantai	N_HAI	51
-pitkäpiimä	N_YMPÄRYSTÄ	51
-pitkäsiima	N_KIRJA	51
-pitkätakki	N_LOKKI	51
-pitkäthousut	N_HOUSUT	51
-pitkätukka	N_LUOKKA	50
-poika	N_POIKA	10
-puhdastila	N_KIRJA	50
-puhdasviljelmä	N_HÖPÖTTÄJÄ	50
-puhdasviljely	N_VEHKEILY	50
-puola	N_KIRJA	10
-puola	N_VOIMA	10
-puoli	PCLE_VAAN	26
-puolihoito	N_TALO	50
-puolikuu	N_PUU	50
-puolikuu	N_PUU	51
+kyömynenä	1	N_HÖPÖTTÄJÄ	50
+kähäräendiivi	1	N_TYYLI	50
+kähäräpää	1	N_PÄÄ	50
+käkkyrämänty	1	N_MÄNTY	50
+käkkärämänty	1	N_MÄNTY	50
+käsikynkkä	1	N_HÖLKKÄ	99
+käyrätorvi	1	N_ONNI	50
+kääpiöjaloangervo	1	N_RUIPELO	50
+kääpiövillikissa	1	N_KIRJA	50
+köyryniska	1	N_KIRJA	50
+köyryselkä	1	N_HÖPÖTTÄJÄ	50
+laajakulma	1	N_VOIMA	50
+laiskajaakko	1	N_UKKO	50
+laiskakoira	1	N_VOIMA	51
+laiskamato	1	N_VETO	50
+lentävätkoirat	1	N_JUHLAT	51
+liberaaliteologia	1	N_MAKKARA	50
+liejupahaputki	1	N_ONNI	50
+liika	1	PCLE_VAAN	9
+liika	1	N_VIKA	9
+live	1	PCLE_VAAN	48
+live	1	N_VIIVE	48
+lyhytelokuva	1	N_VOIMA	50
+lyhytfilmi	1	N_TYYLI	50
+lyhytkirurgia	1	N_MAKKARA	50
+lyhytnumero	1	N_STADION	50
+lyhytohjelma	1	N_VOIMA	50
+lyhytproosa	1	N_VOIMA	50
+lyhyttavara	1	N_MAKKARA	50
+lyhytterapia	1	N_MAKKARA	50
+lypsää	1	V_KIVISTÄÄ	54
+lämminruoka	1	N_RUOKA	51
+lämminvarasto	1	N_TALO	50
+lämminvarasto	1	N_TALO	51
+lämminvaunu	1	N_ASU	50
+lämminvaunu	1	N_ASU	51
+maPRO	1	N_MA	99
+matalajännite	1	N_KÄSITE	50
+matalakirkollisuus	1	N_AAKKOSELLISUUS	50
+matalalento	1	N_TUNTO	50
+matalameri	1	N_MERI	51
+matalameri	1	N_MERI	51
+matalamielisyys	1	N_KÖYHYYS	50
+matalapaine	1	N_ASTE	50
+matalasuhdanne	1	N_RAKENNE	50
+matalatorjunta	1	N_KUTSUNTA	50
+meltorauta	1	N_KIRJA	50
+meri	1	N_MERI	24
+miPRO	1	N_KOKO	99
+mikäkinPRO	1	N_MIKÄKIN	99
+miss	1	PCLE_VAAN	99
+miss	1	N_ZEN	99
+moni-ilmeinen	1	A_KYLMÄJÄRKINEN	18
+montaPRO	1	N_MONTA	99
+muorinen	1	N_AAKKOSTAMINEN	99
+mustaherukka	1	N_LUSIKKA	50
+mustaherukka	1	N_LUSIKKA	51
+mustajalopähkinä	1	N_HÄKKYRÄ	50
+mustajuuri	1	N_RUUHI	50
+mustaleipä	1	N_LEIPÄ	51
+mustaleski	1	N_KIVI	51
+mustalintu	1	N_LINTU	50
+mustalintu	1	N_LINTU	51
+mustamaalaus	1	N_VAKUUTUS	50
+mustamaija	1	N_KIRJA	51
+mustamakkara	1	N_KITARA	50
+mustamakkara	1	N_KITARA	51
+mustamies	1	N_MIES	51
+mustamulta	1	N_VOIMA	51
+mustapaita	1	N_KIRJA	50
+mustapekka	1	N_POLITIIKKA	51
+mustapippuri	1	N_KANAALI	50
+mustapippuri	1	N_KANAALI	51
+mustarastas	1	N_PATSAS	50
+mustarousku	1	N_ASU	50
+mustaruuti	1	N_TAUTI	50
+mustasilmä	1	N_HÖPÖTTÄJÄ	50
+mustatorvisieni	1	N_KIVI	51
+mustavaris	1	N_VAKUUTUS	50
+mustaviinimarja	1	N_KIRJA	51
+mykkäelokuva	1	N_VOIMA	50
+mykkäfilmi	1	N_TYYLI	50
+mykkäkoulu	1	N_ASU	50
+märkähionta	1	N_KUTSUNTA	50
+märkäluja	1	A_RUMA	50
+märkälujuus	1	N_AAKKOSELLISUUS	50
+märkäpesu	1	N_ASU	50
+märkäpuku	1	N_LUKU	50
+märkätila	1	N_KIRJA	50
+mätämuna	1	N_VOIMA	50
+normaalijakauma	1	N_VOIMA	50
+normaalijakautuma	1	N_VOIMA	50
+normaalikoko	1	N_KOKO	50
+normaalikoulu	1	N_ASU	50
+normaalilyseo	1	N_TUOMIO	50
+normaalilämpö	1	N_LÄMPÖ	50
+normaalimäki	1	N_KÄKI	50
+normaaliobjektiivi	1	N_RUUVI	50
+normaaliolot	1	N_AIVOT	50
+normaalipaino	1	N_TALO	50
+normaalipituus	1	N_AAKKOSELLISUUS	50
+normaalisävel	1	N_SIEMEN	50
+normaalitapaus	1	N_VAKUUTUS	50
+normaalivahvuus	1	N_AAKKOSELLISUUS	50
+normaalivauhti	1	N_TAUTI	50
+nuoriemäntä	1	N_HÄNTÄ	51
+nuoriherra	1	N_KIRJA	51
+nuori-isäntä	1	N_HÄNTÄ	51
+nuorikarja	1	N_KIRJA	51
+nuorimies	1	N_MIES	51
+nuoripari	1	N_RUUVI	51
+nuoskakeli	1	N_TYYLI	50
+nuoskalumi	1	N_TAIMI	50
+nuoskasää	1	N_PÄÄ	50
+ohutkalvo	1	N_TALO	50
+ohutsuoli	1	N_RUUHI	50
+olla	1	V_OLLA	67
+omaelämäkerta	1	N_KERTA	50
+omahoitaja	1	N_VOIMA	50
+omahoito	1	N_VETO	50
+omailmeinen	1	A_KYLMÄJÄRKINEN	18
+omakehu	1	N_ASU	50
+omakustanne	1	N_RAKENNE	50
+omakustannukset	1	N_SERKUKSET	50
+omakuva	1	N_VOIMA	50
+omakuva	1	N_VOIMA	51
+omalääkäri	1	N_TYYLI	50
+omapaino	1	N_TALO	50
+omarahoitus	1	N_VAKUUTUS	50
+omatunto	1	N_TUNTO	51
+omavastuu	1	N_LEIKKUU	50
+pahahenki	1	N_HENKI	51
+pahaputki	1	N_ONNI	50
+pahaputki	1	N_ONNI	51
+pai	1	PCLE_HAH	18
+pai	1	N_HAI	18
+paksulehti	1	N_LEHTI	50
+paksusuoli	1	N_RUUHI	50
+palavakivi	1	N_KIVI	51
+palavapensas	1	N_PATSAS	51
+palavarakkaus	1	N_AAKKOSELLISUUS	51
+palavatpensaat	1	N_VALJAAT	51
+palsamijalokuusi	1	N_RUUHI	50
+pehmytkudos	1	N_VAKUUTUS	50
+pieksää	1	V_KIVISTÄÄ	54
+pitkä	1	A_PITKÄ	10
+pitkähöylä	1	N_HÖPÖTTÄJÄ	50
+pitkäkirkko	1	N_UKKO	50
+pitkäkirkko	1	N_UKKO	51
+pitkäpalko	1	N_PELKO	50
+pitkäperjantai	1	N_HAI	50
+pitkäperjantai	1	N_HAI	51
+pitkäpiimä	1	N_YMPÄRYSTÄ	51
+pitkäsiima	1	N_KIRJA	51
+pitkätakki	1	N_LOKKI	51
+pitkäthousut	1	N_HOUSUT	51
+pitkätukka	1	N_LUOKKA	50
+poika	1	N_POIKA	10
+puhdastila	1	N_KIRJA	50
+puhdasviljelmä	1	N_HÖPÖTTÄJÄ	50
+puhdasviljely	1	N_VEHKEILY	50
+puola	1	N_KIRJA	10
+puola	1	N_VOIMA	10
+puoli	1	PCLE_VAAN	26
+puolihoito	1	N_TALO	50
+puolikuu	1	N_PUU	50
+puolikuu	1	N_PUU	51
 puolikymmentäNUM_KYMMENTÄ51
-puolimatka	N_KIRJA	50
-puolimatka	N_KIRJA	51
-puoli	N_RUUHI	26
-puolipäivä	N_HÖPÖTTÄJÄ	50
-puolipäivä	N_HÖPÖTTÄJÄ	51
+puolimatka	1	N_KIRJA	50
+puolimatka	1	N_KIRJA	51
+puoli	1	N_RUUHI	26
+puolipäivä	1	N_HÖPÖTTÄJÄ	50
+puolipäivä	1	N_HÖPÖTTÄJÄ	51
 puolisataaNUM_KYMMENTÄ51
-puolivapaapäivä	N_HÖPÖTTÄJÄ	50
-puoliväli	N_TYYLI	50
-puoliväli	N_TYYLI	51
-raaka-aine	N_ASTE	50
-raakakahvi	N_RUUVI	50
-raakakakku	N_TIKKU	50
-raakakivi	N_KIVI	50
-raakakopio	N_TUOMIO	50
-raakakuitu	N_KUITU	50
-raakakumi	N_RUUVI	50
-raakakupari	N_RUUVI	50
-raakakypsytys	N_RÄJÄYTYS	50
-raakakäännös	N_RÄJÄYTYS	50
-raakalauta	N_PATA	50
-raakamaa	N_MAA	50
-raakamakkara	N_KITARA	50
-raakamalmi	N_RUUVI	50
-raakametalli	N_KANAALI	50
-raakanahka	N_KIRJA	50
-raakanahka	N_KIRJA	50
-raakanahka	N_VIKA	50
-raakanahka	N_VIKA	50
-raakapakaste	N_ASTE	50
-raakapihvi	N_TYYLI	50
-raakapuu	N_PUU	50
-raakapuuro	N_TALO	50
-raakaraaste	N_ASTE	50
-raakarauta	N_KIRJA	50
-raakaravinto	N_TUNTO	50
-raakasilkki	N_HÄKKI	50
-raakasokeri	N_KANAALI	50
-raakasose	N_ASTE	50
-raakatislaus	N_VAKUUTUS	50
-raakavedos	N_VAKUUTUS	50
-raakavesi	N_KÖYSI	50
-raakaöljy	N_KÄRRY	50
-raatihuonevilliviini	N_TYYLI	50
-radikaalileikkaus	N_VAKUUTUS	50
-raitisilma	N_KIRJA	50
-raitisilma	N_KIRJA	51
-rajuilma	N_KIRJA	50
-rankkasade	N_LUODE	50
-raskasmetalli	N_KANAALI	50
-raskassarja	N_KIRJA	51
-raskasvesi	N_KÖYSI	50
-raskasvesi	N_KÖYSI	51
-raskasvety	N_VETY	50
-raskasvety	N_VETY	51
-rikasilmeinen	A_KYLMÄJÄRKINEN	18
-ruotsinpitkäpalko	N_PELKO	50
-ruskeakieli	N_HIIRI	50
-saPRO	N_MA	99
-saksanjalokuusi	N_RUUHI	50
-samperi	PCLE_VAAN	6
-samperi	N_KANAALI	6
-selväkieli	N_HIIRI	50
-selvänäkijä	N_HÄKKYRÄ	50
-selvänäkö	N_NÄKÖ	50
-sepiväpeippi	N_TYYPPI	50
-sepiväpeippi	N_TYYPPI	51
-sokeapainatus	N_VAKUUTUS	50
-soopa	N_LUPA	99
-sotakorkeakoulu	N_ASU	50
-suippokaari	N_RUUHI	50
-suippolakki	N_LOKKI	50
-suippotorni	N_RUUVI	50
-sulahitsaus	N_VAKUUTUS	50
-sulavesi	N_KÖYSI	50
-suora-ammunta	N_KUTSUNTA	50
-suorakaide	N_LUODE	50
-suorakauppa	N_TIPPA	50
-suorakorvaus	N_VAKUUTUS	50
-suorakulmain	N_PUHELIN	50
-suorakulma	N_VOIMA	50
-suorakulma	N_VOIMA	51
-suorakulmio	N_TUOMIO	50
-suorakäyttö	N_PÖNTTÖ	50
-suoramainonta	N_KUTSUNTA	50
-suoramainos	N_VAKUUTUS	50
-suoramarkkinointi	N_SOINTI	50
-suoramyynti	N_VIENTI	50
-suoraommel	N_OMMEL	50
-suoraommel	N_OMMEL	51
-suorasuihkutus	N_VAKUUTUS	50
-suorasuu	N_PUU	50
-suorasuuntaus	N_VAKUUTUS	50
-suoraveloitus	N_VAKUUTUS	50
-suuriruhtinas	N_PATSAS	50
-suuriruhtinatar	N_AJATAR	50
-syväasfaltti	N_KORTTI	50
-syväauraus	N_VAKUUTUS	50
-syvähaastattelu	N_ASU	50
-syvähengitys	N_RÄJÄYTYS	50
-syväkairaus	N_VAKUUTUS	50
-syväkivilaji	N_RUUVI	50
-syväluotaus	N_VAKUUTUS	50
-syvämeri	N_MERI	51
-syvämeri	N_MERI	51
-syvämuokkaus	N_VAKUUTUS	50
-syväonginta	N_KUTSUNTA	50
-syväonki	N_ONKI	50
-syväpainanta	N_KUTSUNTA	50
-syväpaino	N_TALO	50
-syvärakenne	N_RAKENNE	50
-syväsatama	N_VOIMA	50
-syvätarkkuus	N_AAKKOSELLISUUS	50
-syväväylä	N_HÖPÖTTÄJÄ	50
-särkyneetsydämet	N_KERITSIMET	51
-särkynytsydän	N_SYDÄN	51
-taajahylly	N_KÄRRY	50
-tarkka-ampuja	N_VOIMA	50
-tarkkavaaitus	N_VAKUUTUS	50
-tekojalokivi	N_ONNI	50
-tenä	N_HÖPÖTTÄJÄ	99
-tiukkailmeinen	A_KYLMÄJÄRKINEN	18
-tiukkapipo	N_TALO	50
-toka	N_VOIMA	99
-totaalikieltäytyjä	N_HÖPÖTTÄJÄ	50
-tummasilmä	N_HÖPÖTTÄJÄ	50
-tummatukka	N_LUOKKA	50
-tuore-elintarvike	N_KASTIKE	50
-tuorejuusto	N_TALO	50
-tuoremehu	N_ASU	50
-tuorepaino	N_TALO	50
-tuorepasta	N_KIRJA	50
-tuorepuuro	N_TALO	50
-tuoreravinto	N_TUNTO	50
-tuorerehu	N_ASU	50
-tuoreruokinta	N_KUTSUNTA	50
-tuoresose	N_ASTE	50
-tuoresuolaus	N_VAKUUTUS	50
-tuoretavara	N_KITARA	50
-tuoretuote	N_OSOITE	50
-tuoreveri	N_VERI	50
-tyhjäkäynti	N_VIENTI	50
-tyhjäpaino	N_TALO	51
-tyhjäsuoli	N_RUUHI	50
-tyhjätasku	N_ASU	50
-täysihoito	N_TALO	50
-täysikuu	N_PUU	50
-täysikuu	N_PUU	51
-uniikkikappale	N_ASTE	50
-universaalitiede	N_KIDE	50
-uusikuu	N_PUU	51
-uusivuosi	N_KAUSI	51
-vajaakäyttö	N_PÖNTTÖ	50
-vajaaravitsemus	N_VAKUUTUS	50
-vajaatoiminta	N_KUTSUNTA	50
-vajaatyöllisyys	N_KÖYHYYS	50
-vakavailmeinen	A_KYLMÄJÄRKINEN	18
-valmisateria	N_MAKKARA	50
-valmisbetoni	N_KANAALI	50
-valmismatka	N_KIRJA	50
-valmisosa	N_VOIMA	50
-valmispuku	N_LUKU	50
-valmisruoka	N_RUOKA	50
-valmistalo	N_TALO	50
-valmisvaate	N_ASTE	50
-vanhaemäntä	N_HÄNTÄ	51
-vanhaisäntä	N_HÄNTÄ	51
-vanhakaupunki	N_VANKI	51
-vanhapiika	N_VIKA	51
-vanhapoika	N_POIKA	51
-vanhasuomalainen	N_AAKKOSTAMINEN	50
-vapaa-aika	N_AIKA	50
-vapaa-ajattelija	N_MAKKARA	50
-vapaa-ajattelu	N_ASU	50
-vapaaheitto	N_HIRTTO	50
-vapaaherra	N_KIRJA	50
-vapaaherratar	N_AJATAR	50
-vapaahetki	N_KIVI	50
-vapaailta	N_VALTA	50
-vapaakappale	N_ASTE	50
-vapaakauppa	N_TIPPA	50
-vapaakaupunki	N_VANKI	50
-vapaakiipeily	N_VEHKEILY	50
-vapaakirkko	N_UKKO	50
-vapaakivääri	N_KEHVELI	50
-vapaakunta	N_KUNTA	50
-vapaakytkin	N_ELIN	50
-vapaakyyti	N_NIHTI	50
-vapaalippu	N_LIPPU	50
-vapaaluistelu	N_SEIKKAILU	50
-vapaalyönti	N_VIENTI	50
-vapaamatkustaja	N_MAKKARA	50
-vapaamuurari	N_KANAALI	50
-vapaaohjelma	N_VOIMA	50
-vapaaopisto	N_RUIPELO	50
-vapaaoppilas	N_PATSAS	50
-vapaaosake	N_KASTIKE	50
-vapaapaini	N_RUUVI	50
-vapaapalokunta	N_KUNTA	50
-vapaapistooli	N_KANAALI	50
-vapaapotku	N_ASU	15
-vapaapäivä	N_HÖPÖTTÄJÄ	50
-vapaasatama	N_VOIMA	50
-vapaataival	N_TAIVAL	50
-vapaatanssi	N_RUUVI	50
-vapaatunti	N_SOINTI	50
-vapaauinti	N_SOINTI	50
-vapaavarasto	N_RUIPELO	50
-vapaavarsi	N_VARSI	50
-vapaavuoro	N_TALO	50
-vapaavuosi	N_KAUSI	50
-velinen	N_KYLKIÄINEN	99
-veli	N_VELI	7
-veri	N_VERI	26
-vierasaine	N_ASTE	50
-vierasesine	N_PISTE	50
-vieraskenttä	N_KENTTÄ	50
-vierasmies	N_MIES	50
-vierasmies	N_MIES	51
-vierassana	N_KIRJA	50
-vierastyöläinen	N_KYLKIÄINEN	50
-vierastyövoima	N_VOIMA	50
-vihantalannoitus	N_VAKUUTUS	50
-vihantarehu	N_ASU	50
-viileäkaappi	N_KUPPI	50
-viistolasku	N_ASU	50
-viistoperä	N_HÖPÖTTÄJÄ	50
-viistopinta	N_KUTSUNTA	50
-viistorivi	N_TYYLI	50
-viistosauma	N_KIRJA	50
-villieläin	N_ELIN	50
-villihanhi	N_ONNI	50
-villihevonen	N_AAKKOSTAMINEN	50
-villi-ihminen	N_KYLKIÄINEN	50
-villikaali	N_RUUVI	50
-villikarju	N_ASU	50
-villikissa	N_KIRJA	50
-villilapsi	N_LAPSI	50
-villimehiläinen	N_KYLKIÄINEN	50
-villiminkki	N_HÄKKI	50
-villiomena	N_PROBLEEMA	50
-villipeto	N_VETO	50
-villipeura	N_KIRJA	50
-villiruusu	N_ASU	50
-villisika	N_VIKA	50
-villisilkki	N_HÄKKI	50
-villivarsa	N_KIRJA	50
-villivihannes	N_VAKUUTUS	50
-villiviini	N_TYYLI	50
-vinokaitale	N_ASTE	50
-vinokatto	N_HIRTTO	50
-vinoköysisilta	N_VALTA	50
-vinolaudoitus	N_VAKUUTUS	50
-vinolehti	N_LEHTI	50
-vinonauha	N_KIRJA	50
-vinoneliö	N_HÄIRIÖ	50
-vinopaikoitus	N_VAKUUTUS	50
-vinopysäköinti	N_VIENTI	50
-vinoristi	N_TYYLI	50
-vinoruutu	N_KUITU	50
-vinosilmä	N_HÖPÖTTÄJÄ	50
-vinosuuntaus	N_VAKUUTUS	50
-vinotuki	N_NOKI	50
-vinoviiva	N_KIRJA	50
-vinoviivoitus	N_VAKUUTUS	50
-vähäilmeinen	A_KYLMÄJÄRKINEN	18
-vääräsääri	N_HIIRI	50
-yksi-ilmeinen	A_KYLMÄJÄRKINEN	18
+puolivapaapäivä	1	N_HÖPÖTTÄJÄ	50
+puoliväli	1	N_TYYLI	50
+puoliväli	1	N_TYYLI	51
+raaka-aine	1	N_ASTE	50
+raakakahvi	1	N_RUUVI	50
+raakakakku	1	N_TIKKU	50
+raakakivi	1	N_KIVI	50
+raakakopio	1	N_TUOMIO	50
+raakakuitu	1	N_KUITU	50
+raakakumi	1	N_RUUVI	50
+raakakupari	1	N_RUUVI	50
+raakakypsytys	1	N_RÄJÄYTYS	50
+raakakäännös	1	N_RÄJÄYTYS	50
+raakalauta	1	N_PATA	50
+raakamaa	1	N_MAA	50
+raakamakkara	1	N_KITARA	50
+raakamalmi	1	N_RUUVI	50
+raakametalli	1	N_KANAALI	50
+raakanahka	1	N_KIRJA	50
+raakanahka	1	N_KIRJA	50
+raakanahka	1	N_VIKA	50
+raakanahka	1	N_VIKA	50
+raakapakaste	1	N_ASTE	50
+raakapihvi	1	N_TYYLI	50
+raakapuu	1	N_PUU	50
+raakapuuro	1	N_TALO	50
+raakaraaste	1	N_ASTE	50
+raakarauta	1	N_KIRJA	50
+raakaravinto	1	N_TUNTO	50
+raakasilkki	1	N_HÄKKI	50
+raakasokeri	1	N_KANAALI	50
+raakasose	1	N_ASTE	50
+raakatislaus	1	N_VAKUUTUS	50
+raakavedos	1	N_VAKUUTUS	50
+raakavesi	1	N_KÖYSI	50
+raakaöljy	1	N_KÄRRY	50
+raatihuonevilliviini	1	N_TYYLI	50
+radikaalileikkaus	1	N_VAKUUTUS	50
+raitisilma	1	N_KIRJA	50
+raitisilma	1	N_KIRJA	51
+rajuilma	1	N_KIRJA	50
+rankkasade	1	N_LUODE	50
+raskasmetalli	1	N_KANAALI	50
+raskassarja	1	N_KIRJA	51
+raskasvesi	1	N_KÖYSI	50
+raskasvesi	1	N_KÖYSI	51
+raskasvety	1	N_VETY	50
+raskasvety	1	N_VETY	51
+rikasilmeinen	1	A_KYLMÄJÄRKINEN	18
+ruotsinpitkäpalko	1	N_PELKO	50
+ruskeakieli	1	N_HIIRI	50
+saPRO	1	N_MA	99
+saksanjalokuusi	1	N_RUUHI	50
+samperi	1	PCLE_VAAN	6
+samperi	1	N_KANAALI	6
+selväkieli	1	N_HIIRI	50
+selvänäkijä	1	N_HÄKKYRÄ	50
+selvänäkö	1	N_NÄKÖ	50
+sepiväpeippi	1	N_TYYPPI	50
+sepiväpeippi	1	N_TYYPPI	51
+sokeapainatus	1	N_VAKUUTUS	50
+soopa	1	N_LUPA	99
+sotakorkeakoulu	1	N_ASU	50
+suippokaari	1	N_RUUHI	50
+suippolakki	1	N_LOKKI	50
+suippotorni	1	N_RUUVI	50
+sulahitsaus	1	N_VAKUUTUS	50
+sulavesi	1	N_KÖYSI	50
+suora-ammunta	1	N_KUTSUNTA	50
+suorakaide	1	N_LUODE	50
+suorakauppa	1	N_TIPPA	50
+suorakorvaus	1	N_VAKUUTUS	50
+suorakulmain	1	N_PUHELIN	50
+suorakulma	1	N_VOIMA	50
+suorakulma	1	N_VOIMA	51
+suorakulmio	1	N_TUOMIO	50
+suorakäyttö	1	N_PÖNTTÖ	50
+suoramainonta	1	N_KUTSUNTA	50
+suoramainos	1	N_VAKUUTUS	50
+suoramarkkinointi	1	N_SOINTI	50
+suoramyynti	1	N_VIENTI	50
+suoraommel	1	N_OMMEL	50
+suoraommel	1	N_OMMEL	51
+suorasuihkutus	1	N_VAKUUTUS	50
+suorasuu	1	N_PUU	50
+suorasuuntaus	1	N_VAKUUTUS	50
+suoraveloitus	1	N_VAKUUTUS	50
+suuriruhtinas	1	N_PATSAS	50
+suuriruhtinatar	1	N_AJATAR	50
+syväasfaltti	1	N_KORTTI	50
+syväauraus	1	N_VAKUUTUS	50
+syvähaastattelu	1	N_ASU	50
+syvähengitys	1	N_RÄJÄYTYS	50
+syväkairaus	1	N_VAKUUTUS	50
+syväkivilaji	1	N_RUUVI	50
+syväluotaus	1	N_VAKUUTUS	50
+syvämeri	1	N_MERI	51
+syvämeri	1	N_MERI	51
+syvämuokkaus	1	N_VAKUUTUS	50
+syväonginta	1	N_KUTSUNTA	50
+syväonki	1	N_ONKI	50
+syväpainanta	1	N_KUTSUNTA	50
+syväpaino	1	N_TALO	50
+syvärakenne	1	N_RAKENNE	50
+syväsatama	1	N_VOIMA	50
+syvätarkkuus	1	N_AAKKOSELLISUUS	50
+syväväylä	1	N_HÖPÖTTÄJÄ	50
+särkyneetsydämet	1	N_KERITSIMET	51
+särkynytsydän	1	N_SYDÄN	51
+taajahylly	1	N_KÄRRY	50
+tarkka-ampuja	1	N_VOIMA	50
+tarkkavaaitus	1	N_VAKUUTUS	50
+tekojalokivi	1	N_ONNI	50
+tenä	1	N_HÖPÖTTÄJÄ	99
+tiukkailmeinen	1	A_KYLMÄJÄRKINEN	18
+tiukkapipo	1	N_TALO	50
+toka	1	N_VOIMA	99
+totaalikieltäytyjä	1	N_HÖPÖTTÄJÄ	50
+tummasilmä	1	N_HÖPÖTTÄJÄ	50
+tummatukka	1	N_LUOKKA	50
+tuore-elintarvike	1	N_KASTIKE	50
+tuorejuusto	1	N_TALO	50
+tuoremehu	1	N_ASU	50
+tuorepaino	1	N_TALO	50
+tuorepasta	1	N_KIRJA	50
+tuorepuuro	1	N_TALO	50
+tuoreravinto	1	N_TUNTO	50
+tuorerehu	1	N_ASU	50
+tuoreruokinta	1	N_KUTSUNTA	50
+tuoresose	1	N_ASTE	50
+tuoresuolaus	1	N_VAKUUTUS	50
+tuoretavara	1	N_KITARA	50
+tuoretuote	1	N_OSOITE	50
+tuoreveri	1	N_VERI	50
+tyhjäkäynti	1	N_VIENTI	50
+tyhjäpaino	1	N_TALO	51
+tyhjäsuoli	1	N_RUUHI	50
+tyhjätasku	1	N_ASU	50
+täysihoito	1	N_TALO	50
+täysikuu	1	N_PUU	50
+täysikuu	1	N_PUU	51
+uniikkikappale	1	N_ASTE	50
+universaalitiede	1	N_KIDE	50
+uusikuu	1	N_PUU	51
+uusivuosi	1	N_KAUSI	51
+vajaakäyttö	1	N_PÖNTTÖ	50
+vajaaravitsemus	1	N_VAKUUTUS	50
+vajaatoiminta	1	N_KUTSUNTA	50
+vajaatyöllisyys	1	N_KÖYHYYS	50
+vakavailmeinen	1	A_KYLMÄJÄRKINEN	18
+valmisateria	1	N_MAKKARA	50
+valmisbetoni	1	N_KANAALI	50
+valmismatka	1	N_KIRJA	50
+valmisosa	1	N_VOIMA	50
+valmispuku	1	N_LUKU	50
+valmisruoka	1	N_RUOKA	50
+valmistalo	1	N_TALO	50
+valmisvaate	1	N_ASTE	50
+vanhaemäntä	1	N_HÄNTÄ	51
+vanhaisäntä	1	N_HÄNTÄ	51
+vanhakaupunki	1	N_VANKI	51
+vanhapiika	1	N_VIKA	51
+vanhapoika	1	N_POIKA	51
+vanhasuomalainen	1	N_AAKKOSTAMINEN	50
+vapaa-aika	1	N_AIKA	50
+vapaa-ajattelija	1	N_MAKKARA	50
+vapaa-ajattelu	1	N_ASU	50
+vapaaheitto	1	N_HIRTTO	50
+vapaaherra	1	N_KIRJA	50
+vapaaherratar	1	N_AJATAR	50
+vapaahetki	1	N_KIVI	50
+vapaailta	1	N_VALTA	50
+vapaakappale	1	N_ASTE	50
+vapaakauppa	1	N_TIPPA	50
+vapaakaupunki	1	N_VANKI	50
+vapaakiipeily	1	N_VEHKEILY	50
+vapaakirkko	1	N_UKKO	50
+vapaakivääri	1	N_KEHVELI	50
+vapaakunta	1	N_KUNTA	50
+vapaakytkin	1	N_ELIN	50
+vapaakyyti	1	N_NIHTI	50
+vapaalippu	1	N_LIPPU	50
+vapaaluistelu	1	N_SEIKKAILU	50
+vapaalyönti	1	N_VIENTI	50
+vapaamatkustaja	1	N_MAKKARA	50
+vapaamuurari	1	N_KANAALI	50
+vapaaohjelma	1	N_VOIMA	50
+vapaaopisto	1	N_RUIPELO	50
+vapaaoppilas	1	N_PATSAS	50
+vapaaosake	1	N_KASTIKE	50
+vapaapaini	1	N_RUUVI	50
+vapaapalokunta	1	N_KUNTA	50
+vapaapistooli	1	N_KANAALI	50
+vapaapotku	1	N_ASU	15
+vapaapäivä	1	N_HÖPÖTTÄJÄ	50
+vapaasatama	1	N_VOIMA	50
+vapaataival	1	N_TAIVAL	50
+vapaatanssi	1	N_RUUVI	50
+vapaatunti	1	N_SOINTI	50
+vapaauinti	1	N_SOINTI	50
+vapaavarasto	1	N_RUIPELO	50
+vapaavarsi	1	N_VARSI	50
+vapaavuoro	1	N_TALO	50
+vapaavuosi	1	N_KAUSI	50
+velinen	1	N_KYLKIÄINEN	99
+veli	1	N_VELI	7
+veri	1	N_VERI	26
+vierasaine	1	N_ASTE	50
+vierasesine	1	N_PISTE	50
+vieraskenttä	1	N_KENTTÄ	50
+vierasmies	1	N_MIES	50
+vierasmies	1	N_MIES	51
+vierassana	1	N_KIRJA	50
+vierastyöläinen	1	N_KYLKIÄINEN	50
+vierastyövoima	1	N_VOIMA	50
+vihantalannoitus	1	N_VAKUUTUS	50
+vihantarehu	1	N_ASU	50
+viileäkaappi	1	N_KUPPI	50
+viistolasku	1	N_ASU	50
+viistoperä	1	N_HÖPÖTTÄJÄ	50
+viistopinta	1	N_KUTSUNTA	50
+viistorivi	1	N_TYYLI	50
+viistosauma	1	N_KIRJA	50
+villieläin	1	N_ELIN	50
+villihanhi	1	N_ONNI	50
+villihevonen	1	N_AAKKOSTAMINEN	50
+villi-ihminen	1	N_KYLKIÄINEN	50
+villikaali	1	N_RUUVI	50
+villikarju	1	N_ASU	50
+villikissa	1	N_KIRJA	50
+villilapsi	1	N_LAPSI	50
+villimehiläinen	1	N_KYLKIÄINEN	50
+villiminkki	1	N_HÄKKI	50
+villiomena	1	N_PROBLEEMA	50
+villipeto	1	N_VETO	50
+villipeura	1	N_KIRJA	50
+villiruusu	1	N_ASU	50
+villisika	1	N_VIKA	50
+villisilkki	1	N_HÄKKI	50
+villivarsa	1	N_KIRJA	50
+villivihannes	1	N_VAKUUTUS	50
+villiviini	1	N_TYYLI	50
+vinokaitale	1	N_ASTE	50
+vinokatto	1	N_HIRTTO	50
+vinoköysisilta	1	N_VALTA	50
+vinolaudoitus	1	N_VAKUUTUS	50
+vinolehti	1	N_LEHTI	50
+vinonauha	1	N_KIRJA	50
+vinoneliö	1	N_HÄIRIÖ	50
+vinopaikoitus	1	N_VAKUUTUS	50
+vinopysäköinti	1	N_VIENTI	50
+vinoristi	1	N_TYYLI	50
+vinoruutu	1	N_KUITU	50
+vinosilmä	1	N_HÖPÖTTÄJÄ	50
+vinosuuntaus	1	N_VAKUUTUS	50
+vinotuki	1	N_NOKI	50
+vinoviiva	1	N_KIRJA	50
+vinoviivoitus	1	N_VAKUUTUS	50
+vähäilmeinen	1	A_KYLMÄJÄRKINEN	18
+vääräsääri	1	N_HIIRI	50
+yksi-ilmeinen	1	A_KYLMÄJÄRKINEN	18

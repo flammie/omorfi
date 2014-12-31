@@ -106,7 +106,7 @@ def main():
                     strict=True)
             headers = next(join_reader)
             if args.verbose:
-                print("Join should go to", headers[args.fields])
+                print("Join should go to", headers[3])
             for join_parts in join_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000) == 0:
@@ -132,11 +132,11 @@ def main():
                         errors = True
                 else:
                     this_entry = words[join_on]
-                    this_entry += [headers[args.fields] + '=' + join_parts[args.fields]]
+                    this_entry += [headers[3] + '=' + join_parts[3]]
                     words[join_on] = this_entry
                     joincount += 1
         if args.verbose:
-            print(joincount, "lexical joins for", headers[args.fields],
+            print(joincount, "lexical joins for", headers[3],
                   "in the table\n")
 
     if errors:

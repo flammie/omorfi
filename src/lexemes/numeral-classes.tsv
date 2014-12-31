@@ -1,196 +1,196 @@
-lemma	new_para	numeral_class
-biljardi	NUM_MILJARDI	cardinal
-biljoona	NUM_MILJOONA	cardinal
-biljoonasosa	NUM_KOLMASOSA	cardinal
-kahdeksankymmentä	NUM_KYMMENTÄ	cardinal
-kahdeksan	NUM_KAHDEKSAN	cardinal
-kahdeksansataa	NUM_KYMMENTÄ	cardinal
-kahdeksantoista	NUM_KYMMENTÄ	cardinal
-kahdeksantoistasataa	NUM_KYMMENTÄ	cardinal
-kahdeksantuhatta	NUM_KYMMENTÄ	cardinal
-kahdeksasosa	NUM_KOLMASOSA	cardinal
-kahdeksisenkymmentä	NUM_KYMMENTÄ	cardinal
-kahdeksisen	NUM_KUUTISEN	cardinal
-kahdeksisensataa	NUM_KYMMENTÄ	cardinal
-kahdeksisentoista	NUM_KYMMENTÄ	cardinal
-kahdeksisentuhatta	NUM_KYMMENTÄ	cardinal
-kahdesosa	NUM_KOLMASOSA	cardinal
-kahta	NUM_KYMMENTÄ	cardinal
-kahtisentoista	NUM_KYMMENTÄ	cardinal
-kaksikymmentä	NUM_KYMMENTÄ	cardinal
-kaksikymmentäyksi	NUM_YKSI	cardinal
-kaksi	NUM_KAKSI	cardinal
-kaksisataa	NUM_KYMMENTÄ	cardinal
-kaksisentoista	NUM_KYMMENTÄ	cardinal
-kaksitoista	NUM_KYMMENTÄ	cardinal
-kaksituhatta	NUM_KYMMENTÄ	cardinal
-kaks	NUM_KYMMENTÄ	cardinal
-kiljoona	NUM_MILJOONA	cardinal
-kolmasosa	NUM_KOLMASOSA	cardinal
-kolmekymmentä	NUM_KYMMENTÄ	cardinal
-kolme	NUM_KOLME	cardinal
-kolmesataa	NUM_KYMMENTÄ	cardinal
-kolmetoista	NUM_KYMMENTÄ	cardinal
-kolmetuhatta	NUM_KYMMENTÄ	cardinal
-kolmisenkymmentä	NUM_KYMMENTÄ	cardinal
-kolmisen	NUM_KUUTISEN	cardinal
-kolmisensataa	NUM_KYMMENTÄ	cardinal
-kolmisentoista	NUM_KYMMENTÄ	cardinal
-kolmisentuhatta	NUM_KYMMENTÄ	cardinal
-kuudesosa	NUM_KOLMASOSA	cardinal
-kuusikymmentä	NUM_KYMMENTÄ	cardinal
-kuusi	NUM_KUUSI	cardinal
-kuusisataa	NUM_KYMMENTÄ	cardinal
-kuusitoista	NUM_KYMMENTÄ	cardinal
-kuutisenkymmentä	NUM_KYMMENTÄ	cardinal
-kuutisen	NUM_KUUTISEN	cardinal
-kuutisensataa	NUM_KYMMENTÄ	cardinal
-kuutisentoista	NUM_KYMMENTÄ	cardinal
-kuutisentuhatta	NUM_KYMMENTÄ	cardinal
-kvadriljoona	NUM_MILJOONA	cardinal
-kvintiljoona	NUM_MILJOONA	cardinal
-kymmenen	NUM_KYMMENEN	cardinal
-kymmenentuhatta	NUM_KYMMENTÄ	cardinal
-kymmenesosa	NUM_KOLMASOSA	cardinal
-kymmenestuhannesosa	NUM_KOLMASOSA	cardinal
-kymmenisen	NUM_VIITISEN	cardinal
-kymmenisentuhatta	NUM_KYMMENTÄ	cardinal
-kymmenkunta	NUM_KYMMENKUNTA	cardinal
-kymmen	NUM_KYMMEN	cardinal
-miljardi	NUM_MILJARDI	cardinal
-miljardisosa	NUM_KOLMASOSA	cardinal
-miljoona	NUM_MILJOONA	cardinal
-miljoonasosa	NUM_KOLMASOSA	cardinal
-nelisenkymmentä	NUM_KYMMENTÄ	cardinal
-nelisen	NUM_VIITISEN	cardinal
-nelisensataa	NUM_KYMMENTÄ	cardinal
-nelisentoista	NUM_KYMMENTÄ	cardinal
-nelisentuhatta	NUM_KYMMENTÄ	cardinal
-neljäkymmentä	NUM_KYMMENTÄ	cardinal
-neljä	NUM_NELJÄ	cardinal
-neljäsataa	NUM_KYMMENTÄ	cardinal
-neljäsosa	NUM_KOLMASOSA	cardinal
-neljätoista	NUM_KYMMENTÄ	cardinal
-neljätuhatta	NUM_KYMMENTÄ	cardinal
-nolla	NUM_MILJOONA	cardinal
-parikymmentä	NUM_KYMMENTÄ	cardinal
-pari	NUM_PARI	cardinal
-parisataa	NUM_KYMMENTÄ	cardinal
-parisenkymmentä	NUM_KYMMENTÄ	cardinal
-parisen	NUM_KUUTISEN	cardinal
-parisensataa	NUM_KYMMENTÄ	cardinal
-parituhatta	NUM_KYMMENTÄ	cardinal
-puolenkymmentä	NUM_KYMMENTÄ	cardinal
-puolensataa	NUM_KYMMENTÄ	cardinal
-puolentuhatta	NUM_KYMMENTÄ	cardinal
-puolikymmentä	NUM_KYMMENTÄ	cardinal
-puoli	NUM_PUOLI	cardinal
-puolisataa	NUM_KYMMENTÄ	cardinal
-puolisenkymmentä	NUM_KYMMENTÄ	cardinal
-puolisen	NUM_KUUTISEN	cardinal
-puolisensataa	NUM_KYMMENTÄ	cardinal
-puolisentoista	NUM_KYMMENTÄ	cardinal
-puolisentoistasataa	NUM_KYMMENTÄ	cardinal
-puolitoistakymmentä	NUM_KYMMENTÄ	cardinal
-puolitoista	NUM_KYMMENTÄ	cardinal
-puolitoistasataa	NUM_KYMMENTÄ	cardinal
-puolituhatta	NUM_KYMMENTÄ	cardinal
-sadasosa	NUM_KOLMASOSA	cardinal
-sadastuhannesosa	NUM_KOLMASOSA	cardinal
-satakunta	NUM_KYMMENKUNTA	cardinal
-sata	NUM_SATA	cardinal
-satatuhatta	NUM_KYMMENTÄ	cardinal
-seitsemisenkymmentä	NUM_KYMMENTÄ	cardinal
-seitsemisen	NUM_VIITISEN	cardinal
-seitsemisensataa	NUM_KYMMENTÄ	cardinal
-seitsemisentoista	NUM_KYMMENTÄ	cardinal
-seitsemisentuhatta	NUM_KYMMENTÄ	cardinal
-seitsemänkymmentä	NUM_KYMMENTÄ	cardinal
-seitsemän	NUM_YHDEKSÄN	cardinal
-seitsemänsataa	NUM_KYMMENTÄ	cardinal
-seitsemäntoista	NUM_KYMMENTÄ	cardinal
-seitsemäntuhatta	NUM_KYMMENTÄ	cardinal
-seitsemäsosa	NUM_KOLMASOSA	cardinal
-toistakymmentä	NUM_KYMMENTÄ	cardinal
-toistakymmentätuhatta	NUM_KYMMENTÄ	cardinal
-toistasataa	NUM_KYMMENTÄ	cardinal
-toistatuhatta	NUM_KYMMENTÄ	cardinal
-triljoona	NUM_MILJOONA	cardinal
-triljoonasosa	NUM_KOLMASOSA	cardinal
-tuhannesosa	NUM_KOLMASOSA	cardinal
-tuhantisen	NUM_KUUTISEN	cardinal
-tuhatkunta	NUM_KYMMENKUNTA	cardinal
-tuhat	NUM_TUHAT	cardinal
-viidesosa	NUM_KOLMASOSA	cardinal
-viisikymmentä	NUM_KYMMENTÄ	cardinal
-viisi	NUM_VIISI	cardinal
-viisisataa	NUM_KYMMENTÄ	cardinal
-viisitoista	NUM_KYMMENTÄ	cardinal
-viisituhatta	NUM_KYMMENTÄ	cardinal
-viitisenkymmentä	NUM_KYMMENTÄ	cardinal
-viitisen	NUM_VIITISEN	cardinal
-viitisensataa	NUM_KYMMENTÄ	cardinal
-viitisentoista	NUM_KYMMENTÄ	cardinal
-viitisentuhatta	NUM_KYMMENTÄ	cardinal
-yhdeksisenkymmentä	NUM_KYMMENTÄ	cardinal
-yhdeksisen	NUM_VIITISEN	cardinal
-yhdeksisensataa	NUM_KYMMENTÄ	cardinal
-yhdeksisentoista	NUM_KYMMENTÄ	cardinal
-yhdeksisentuhatta	NUM_KYMMENTÄ	cardinal
-yhdeksänkymmentä	NUM_KYMMENTÄ	cardinal
-yhdeksän	NUM_YHDEKSÄN	cardinal
-yhdeksänsataa	NUM_KYMMENTÄ	cardinal
-yhdeksäntoista	NUM_KYMMENTÄ	cardinal
-yhdeksäntoistasataa	NUM_KYMMENTÄ	cardinal
-yhdeksäntuhatta	NUM_KYMMENTÄ	cardinal
-yhdeksäsosa	NUM_KOLMASOSA	cardinal
-yhtisentoista	NUM_KYMMENTÄ	cardinal
-yhtä	NUM_KYMMENTÄ	cardinal
-yksi	NUM_YKSI	cardinal
-yksisentoista	NUM_KYMMENTÄ	cardinal
-yksitoista	NUM_KYMMENTÄ	cardinal
-yks	NUM_KYMMENTÄ	cardinal
-ensimmäinen	NUM_ENSIMMÄINEN	ordinal
-kahdeksaskymmenes	NUM_NELJÄS	ordinal
-kahdeksas	NUM_KOLMAS	ordinal
-kahdeksassadas	NUM_KOLMAS	ordinal
-kahdeksastoista	NUM_KYMMENTÄ	ordinal
-kahdeskymmenesensimmäinen	NUM_ENSIMMÄINEN	ordinal
-kahdeskymmeneskahdes	NUM_KOLMAS	ordinal
-kahdeskymmenes	NUM_NELJÄS	ordinal
-kahdeskymmenestoinen	NUM_TOINEN	ordinal
-kahdeskymmenesyhdes	NUM_NELJÄS	ordinal
-kahdes	NUM_KOLMAS	ordinal
-kahdessadas	NUM_KOLMAS	ordinal
-kahdestoista	NUM_KYMMENTÄ	ordinal
-kolmaskymmenes	NUM_NELJÄS	ordinal
-kolmas	NUM_KOLMAS	ordinal
-kolmassadas	NUM_KOLMAS	ordinal
-kolmastoista	NUM_KYMMENTÄ	ordinal
-kuudeskymmenes	NUM_NELJÄS	ordinal
-kuudes	NUM_KOLMAS	ordinal
-kuudessadas	NUM_KOLMAS	ordinal
-kuudestoista	NUM_KYMMENTÄ	ordinal
-kymmenes	NUM_NELJÄS	ordinal
-neljäskymmenes	NUM_NELJÄS	ordinal
-neljäs	NUM_NELJÄS	ordinal
-neljässadas	NUM_KOLMAS	ordinal
-neljästoista	NUM_KYMMENTÄ	ordinal
-nollas	NUM_KOLMAS	ordinal
-sadas	NUM_KOLMAS	ordinal
-seitsemäskymmenes	NUM_NELJÄS	ordinal
-seitsemäs	NUM_NELJÄS	ordinal
-seitsemässadas	NUM_KOLMAS	ordinal
-seitsemästoista	NUM_KYMMENTÄ	ordinal
-toinen	NUM_TOINEN	ordinal
-tuhannes	NUM_KOLMAS	ordinal
-viideskymmenes	NUM_NELJÄS	ordinal
-viides	NUM_NELJÄS	ordinal
-viidessadas	NUM_KOLMAS	ordinal
-viidestoista	NUM_KYMMENTÄ	ordinal
-yhdeksäskymmenes	NUM_NELJÄS	ordinal
-yhdeksäs	NUM_NELJÄS	ordinal
-yhdeksässadas	NUM_KOLMAS	ordinal
-yhdeksästoista	NUM_KYMMENTÄ	ordinal
-yhdes	NUM_NELJÄS	ordinal
-yhdestoista	NUM_KYMMENTÄ	ordinal
+lemma	homonym	new_para	numeral_class
+biljardi	1	NUM_MILJARDI	cardinal
+biljoona	1	NUM_MILJOONA	cardinal
+biljoonasosa	1	NUM_KOLMASOSA	cardinal
+kahdeksankymmentä	1	NUM_KYMMENTÄ	cardinal
+kahdeksan	1	NUM_KAHDEKSAN	cardinal
+kahdeksansataa	1	NUM_KYMMENTÄ	cardinal
+kahdeksantoista	1	NUM_KYMMENTÄ	cardinal
+kahdeksantoistasataa	1	NUM_KYMMENTÄ	cardinal
+kahdeksantuhatta	1	NUM_KYMMENTÄ	cardinal
+kahdeksasosa	1	NUM_KOLMASOSA	cardinal
+kahdeksisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+kahdeksisen	1	NUM_KUUTISEN	cardinal
+kahdeksisensataa	1	NUM_KYMMENTÄ	cardinal
+kahdeksisentoista	1	NUM_KYMMENTÄ	cardinal
+kahdeksisentuhatta	1	NUM_KYMMENTÄ	cardinal
+kahdesosa	1	NUM_KOLMASOSA	cardinal
+kahta	1	NUM_KYMMENTÄ	cardinal
+kahtisentoista	1	NUM_KYMMENTÄ	cardinal
+kaksikymmentä	1	NUM_KYMMENTÄ	cardinal
+kaksikymmentäyksi	1	NUM_YKSI	cardinal
+kaksi	1	NUM_KAKSI	cardinal
+kaksisataa	1	NUM_KYMMENTÄ	cardinal
+kaksisentoista	1	NUM_KYMMENTÄ	cardinal
+kaksitoista	1	NUM_KYMMENTÄ	cardinal
+kaksituhatta	1	NUM_KYMMENTÄ	cardinal
+kaks	1	NUM_KYMMENTÄ	cardinal
+kiljoona	1	NUM_MILJOONA	cardinal
+kolmasosa	1	NUM_KOLMASOSA	cardinal
+kolmekymmentä	1	NUM_KYMMENTÄ	cardinal
+kolme	1	NUM_KOLME	cardinal
+kolmesataa	1	NUM_KYMMENTÄ	cardinal
+kolmetoista	1	NUM_KYMMENTÄ	cardinal
+kolmetuhatta	1	NUM_KYMMENTÄ	cardinal
+kolmisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+kolmisen	1	NUM_KUUTISEN	cardinal
+kolmisensataa	1	NUM_KYMMENTÄ	cardinal
+kolmisentoista	1	NUM_KYMMENTÄ	cardinal
+kolmisentuhatta	1	NUM_KYMMENTÄ	cardinal
+kuudesosa	1	NUM_KOLMASOSA	cardinal
+kuusikymmentä	1	NUM_KYMMENTÄ	cardinal
+kuusi	1	NUM_KUUSI	cardinal
+kuusisataa	1	NUM_KYMMENTÄ	cardinal
+kuusitoista	1	NUM_KYMMENTÄ	cardinal
+kuutisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+kuutisen	1	NUM_KUUTISEN	cardinal
+kuutisensataa	1	NUM_KYMMENTÄ	cardinal
+kuutisentoista	1	NUM_KYMMENTÄ	cardinal
+kuutisentuhatta	1	NUM_KYMMENTÄ	cardinal
+kvadriljoona	1	NUM_MILJOONA	cardinal
+kvintiljoona	1	NUM_MILJOONA	cardinal
+kymmenen	1	NUM_KYMMENEN	cardinal
+kymmenentuhatta	1	NUM_KYMMENTÄ	cardinal
+kymmenesosa	1	NUM_KOLMASOSA	cardinal
+kymmenestuhannesosa	1	NUM_KOLMASOSA	cardinal
+kymmenisen	1	NUM_VIITISEN	cardinal
+kymmenisentuhatta	1	NUM_KYMMENTÄ	cardinal
+kymmenkunta	1	NUM_KYMMENKUNTA	cardinal
+kymmen	1	NUM_KYMMEN	cardinal
+miljardi	1	NUM_MILJARDI	cardinal
+miljardisosa	1	NUM_KOLMASOSA	cardinal
+miljoona	1	NUM_MILJOONA	cardinal
+miljoonasosa	1	NUM_KOLMASOSA	cardinal
+nelisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+nelisen	1	NUM_VIITISEN	cardinal
+nelisensataa	1	NUM_KYMMENTÄ	cardinal
+nelisentoista	1	NUM_KYMMENTÄ	cardinal
+nelisentuhatta	1	NUM_KYMMENTÄ	cardinal
+neljäkymmentä	1	NUM_KYMMENTÄ	cardinal
+neljä	1	NUM_NELJÄ	cardinal
+neljäsataa	1	NUM_KYMMENTÄ	cardinal
+neljäsosa	1	NUM_KOLMASOSA	cardinal
+neljätoista	1	NUM_KYMMENTÄ	cardinal
+neljätuhatta	1	NUM_KYMMENTÄ	cardinal
+nolla	1	NUM_MILJOONA	cardinal
+parikymmentä	1	NUM_KYMMENTÄ	cardinal
+pari	1	NUM_PARI	cardinal
+parisataa	1	NUM_KYMMENTÄ	cardinal
+parisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+parisen	1	NUM_KUUTISEN	cardinal
+parisensataa	1	NUM_KYMMENTÄ	cardinal
+parituhatta	1	NUM_KYMMENTÄ	cardinal
+puolenkymmentä	1	NUM_KYMMENTÄ	cardinal
+puolensataa	1	NUM_KYMMENTÄ	cardinal
+puolentuhatta	1	NUM_KYMMENTÄ	cardinal
+puolikymmentä	1	NUM_KYMMENTÄ	cardinal
+puoli	1	NUM_PUOLI	cardinal
+puolisataa	1	NUM_KYMMENTÄ	cardinal
+puolisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+puolisen	1	NUM_KUUTISEN	cardinal
+puolisensataa	1	NUM_KYMMENTÄ	cardinal
+puolisentoista	1	NUM_KYMMENTÄ	cardinal
+puolisentoistasataa	1	NUM_KYMMENTÄ	cardinal
+puolitoistakymmentä	1	NUM_KYMMENTÄ	cardinal
+puolitoista	1	NUM_KYMMENTÄ	cardinal
+puolitoistasataa	1	NUM_KYMMENTÄ	cardinal
+puolituhatta	1	NUM_KYMMENTÄ	cardinal
+sadasosa	1	NUM_KOLMASOSA	cardinal
+sadastuhannesosa	1	NUM_KOLMASOSA	cardinal
+satakunta	1	NUM_KYMMENKUNTA	cardinal
+sata	1	NUM_SATA	cardinal
+satatuhatta	1	NUM_KYMMENTÄ	cardinal
+seitsemisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+seitsemisen	1	NUM_VIITISEN	cardinal
+seitsemisensataa	1	NUM_KYMMENTÄ	cardinal
+seitsemisentoista	1	NUM_KYMMENTÄ	cardinal
+seitsemisentuhatta	1	NUM_KYMMENTÄ	cardinal
+seitsemänkymmentä	1	NUM_KYMMENTÄ	cardinal
+seitsemän	1	NUM_YHDEKSÄN	cardinal
+seitsemänsataa	1	NUM_KYMMENTÄ	cardinal
+seitsemäntoista	1	NUM_KYMMENTÄ	cardinal
+seitsemäntuhatta	1	NUM_KYMMENTÄ	cardinal
+seitsemäsosa	1	NUM_KOLMASOSA	cardinal
+toistakymmentä	1	NUM_KYMMENTÄ	cardinal
+toistakymmentätuhatta	1	NUM_KYMMENTÄ	cardinal
+toistasataa	1	NUM_KYMMENTÄ	cardinal
+toistatuhatta	1	NUM_KYMMENTÄ	cardinal
+triljoona	1	NUM_MILJOONA	cardinal
+triljoonasosa	1	NUM_KOLMASOSA	cardinal
+tuhannesosa	1	NUM_KOLMASOSA	cardinal
+tuhantisen	1	NUM_KUUTISEN	cardinal
+tuhatkunta	1	NUM_KYMMENKUNTA	cardinal
+tuhat	1	NUM_TUHAT	cardinal
+viidesosa	1	NUM_KOLMASOSA	cardinal
+viisikymmentä	1	NUM_KYMMENTÄ	cardinal
+viisi	1	NUM_VIISI	cardinal
+viisisataa	1	NUM_KYMMENTÄ	cardinal
+viisitoista	1	NUM_KYMMENTÄ	cardinal
+viisituhatta	1	NUM_KYMMENTÄ	cardinal
+viitisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+viitisen	1	NUM_VIITISEN	cardinal
+viitisensataa	1	NUM_KYMMENTÄ	cardinal
+viitisentoista	1	NUM_KYMMENTÄ	cardinal
+viitisentuhatta	1	NUM_KYMMENTÄ	cardinal
+yhdeksisenkymmentä	1	NUM_KYMMENTÄ	cardinal
+yhdeksisen	1	NUM_VIITISEN	cardinal
+yhdeksisensataa	1	NUM_KYMMENTÄ	cardinal
+yhdeksisentoista	1	NUM_KYMMENTÄ	cardinal
+yhdeksisentuhatta	1	NUM_KYMMENTÄ	cardinal
+yhdeksänkymmentä	1	NUM_KYMMENTÄ	cardinal
+yhdeksän	1	NUM_YHDEKSÄN	cardinal
+yhdeksänsataa	1	NUM_KYMMENTÄ	cardinal
+yhdeksäntoista	1	NUM_KYMMENTÄ	cardinal
+yhdeksäntoistasataa	1	NUM_KYMMENTÄ	cardinal
+yhdeksäntuhatta	1	NUM_KYMMENTÄ	cardinal
+yhdeksäsosa	1	NUM_KOLMASOSA	cardinal
+yhtisentoista	1	NUM_KYMMENTÄ	cardinal
+yhtä	1	NUM_KYMMENTÄ	cardinal
+yksi	1	NUM_YKSI	cardinal
+yksisentoista	1	NUM_KYMMENTÄ	cardinal
+yksitoista	1	NUM_KYMMENTÄ	cardinal
+yks	1	NUM_KYMMENTÄ	cardinal
+ensimmäinen	1	NUM_ENSIMMÄINEN	ordinal
+kahdeksaskymmenes	1	NUM_NELJÄS	ordinal
+kahdeksas	1	NUM_KOLMAS	ordinal
+kahdeksassadas	1	NUM_KOLMAS	ordinal
+kahdeksastoista	1	NUM_KYMMENTÄ	ordinal
+kahdeskymmenesensimmäinen	1	NUM_ENSIMMÄINEN	ordinal
+kahdeskymmeneskahdes	1	NUM_KOLMAS	ordinal
+kahdeskymmenes	1	NUM_NELJÄS	ordinal
+kahdeskymmenestoinen	1	NUM_TOINEN	ordinal
+kahdeskymmenesyhdes	1	NUM_NELJÄS	ordinal
+kahdes	1	NUM_KOLMAS	ordinal
+kahdessadas	1	NUM_KOLMAS	ordinal
+kahdestoista	1	NUM_KYMMENTÄ	ordinal
+kolmaskymmenes	1	NUM_NELJÄS	ordinal
+kolmas	1	NUM_KOLMAS	ordinal
+kolmassadas	1	NUM_KOLMAS	ordinal
+kolmastoista	1	NUM_KYMMENTÄ	ordinal
+kuudeskymmenes	1	NUM_NELJÄS	ordinal
+kuudes	1	NUM_KOLMAS	ordinal
+kuudessadas	1	NUM_KOLMAS	ordinal
+kuudestoista	1	NUM_KYMMENTÄ	ordinal
+kymmenes	1	NUM_NELJÄS	ordinal
+neljäskymmenes	1	NUM_NELJÄS	ordinal
+neljäs	1	NUM_NELJÄS	ordinal
+neljässadas	1	NUM_KOLMAS	ordinal
+neljästoista	1	NUM_KYMMENTÄ	ordinal
+nollas	1	NUM_KOLMAS	ordinal
+sadas	1	NUM_KOLMAS	ordinal
+seitsemäskymmenes	1	NUM_NELJÄS	ordinal
+seitsemäs	1	NUM_NELJÄS	ordinal
+seitsemässadas	1	NUM_KOLMAS	ordinal
+seitsemästoista	1	NUM_KYMMENTÄ	ordinal
+toinen	1	NUM_TOINEN	ordinal
+tuhannes	1	NUM_KOLMAS	ordinal
+viideskymmenes	1	NUM_NELJÄS	ordinal
+viides	1	NUM_NELJÄS	ordinal
+viidessadas	1	NUM_KOLMAS	ordinal
+viidestoista	1	NUM_KYMMENTÄ	ordinal
+yhdeksäskymmenes	1	NUM_NELJÄS	ordinal
+yhdeksäs	1	NUM_NELJÄS	ordinal
+yhdeksässadas	1	NUM_KOLMAS	ordinal
+yhdeksästoista	1	NUM_KYMMENTÄ	ordinal
+yhdes	1	NUM_NELJÄS	ordinal
+yhdestoista	1	NUM_KYMMENTÄ	ordinal

@@ -12,14 +12,16 @@ def parse_defaults_from_tsv(wordmap, tsv_parts):
     wordmap['bracketstub'] = wordmap['lemma']
     wordmap['gradestem'] = wordmap['lemma']
     # second field is new paradigm class set
-    wordmap['new_para'] = tsv_parts[1]
+    wordmap['new_para'] = tsv_parts[2]
+    wordmap['homonym'] = tsv_parts[1]
+    wordmap['origin'] = tsv_parts[3]
     return wordmap
 
 
 def parse_extras_from_tsv(wordmap, tsv_parts):
     '''Parse extra fields form >3 fields of 2+ field tsv.'''
-    if len(tsv_parts) >= 3:
-        for tsv_extra in tsv_parts[2:]:
+    if len(tsv_parts) >= 5:
+        for tsv_extra in tsv_parts[4:]:
             extra_fields = tsv_extra.split("=")
             if extra_fields[0] == 'plurale_tantum':
                 wordmap['plurale_tantum'] = extra_fields[1]
