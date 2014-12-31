@@ -14,7 +14,7 @@ def format_rules_regex(format, ruleset):
         regexstring += '[ '
         for p in fin_orth_pairs:
             regexstring += twolc_escape(p[0]) + ':' + twolc_escape(p[1]) + \
-                    ' | '
+                    ' | ' + twolc_escape(p[0]) + ' | '
         regexstring += '? ]* ;'
     elif ruleset == 'zh':
         regexstring += '[ ž | ž:z 0:h | ž:z::1 ] ;'
