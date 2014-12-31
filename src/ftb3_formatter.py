@@ -338,7 +338,7 @@ def format_wordmap_lexc_ftb3(wordmap, format):
     if wordmap['stub'] == ' ':
         # do not include normal white space for now
         return ""
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
+    wordmap['stub'] = lexc_escape(wordmap['stub'].replace(word_boundary, optional_hyphen))
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
     if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
         wordmap['analysis'] += format_stuff_ftb3('PUNCTUATION')
