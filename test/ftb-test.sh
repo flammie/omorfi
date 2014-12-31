@@ -7,8 +7,8 @@ if test ! -r $srcdir/ftb3.1.conllx ; then
     echo Missing $srcdir/ftb3.1.conllx
     exit 77
 fi
-if test ! -r ../src/morphology.ftb3.hfst ; then
-    echo Missing ../src/morphology.ftb3.hfst
+if test ! -r ../src/generated/omorfi-ftb3.analyse.hfst ; then
+    echo Missing ../src/geerated/omorfi-ftb3.analyse.hfst
     echo this test only applies to FTB3 version of morphology
     exit 77
 fi
@@ -30,7 +30,7 @@ split -n l/100 $srcdir/ftb3.1.conllx ftb3.1.parts.
 fail=0
 for f in ftb3.1.parts.* ; do
     echo ${f}...
-    if ! $PYTHON $srcdir/ftb-test.py -f ../src/morphology.ftb3.hfst -i $f -o ${f/parts/logs} ; then
+    if ! $PYTHON $srcdir/ftb-test.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i $f -o ${f/parts/logs} ; then
         echo $f failed
         fail=1
     fi

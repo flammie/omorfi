@@ -61,6 +61,7 @@ AC_MSG_RESULT([40 seconds to mars])
 
 # Checks for programs
 AC_PROG_LN_S
+AC_PATH_PROG([TIME], [time], [false])
 AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HLEXC], [hfst-lexc], [no])
        AS_IF([test "x$HLEXC" = "xno"],
@@ -233,5 +234,6 @@ Configured $PACKAGE_STRING:
 * Voikko speller: $enable_voikko
 * 
 EOF
+AS_IF([test x$TIME = xfalse], [AC_MSG_WARN([GNU time is missing, tests will fail])])
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
 $THEREARENOEASTEREGGS say make, make check and make install to proceed

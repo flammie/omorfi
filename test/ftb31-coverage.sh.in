@@ -1,7 +1,7 @@
 #!/bin/bash
 # coverage for FTB 3.1
-fsa="@top_builddir@/src/morphology.@TAG_FORMAT@.hfst"
-if ! test -r @top_builddir@/src/morphology.@TAG_FORMAT@.hfst ; then
+fsa="@top_builddir@/src/generated/omorfi-ftb3.analyse.hfst"
+if ! test -r  $fsa ; then
     echo Unable to find built fsa for tests: $fsa
 fi
 
@@ -14,7 +14,7 @@ echo Looking up ftb3.1.conllx
 tail -n +2 < ftb3.1.conllx |\
     egrep -v '^<' |\
     cut -f 2 |\
-    /usr/bin/time -o ftb3.1.times -a hfst-optimised-lookup -q $fsa > ftb3.1.anals
+    @TIME@ -o ftb3.1.times -a hfst-optimised-lookup -q $fsa > ftb3.1.anals
 tokens=$(wc -l < ftb3.1.conllx)
 misses=$(fgrep -c '+?' < ftb3.1.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )

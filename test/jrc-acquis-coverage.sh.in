@@ -1,7 +1,7 @@
 #!/bin/bash
 # coverage for jrc acquis
-fsa="@top_builddir@/src/morphology.@TAG_FORMAT@.hfst"
-if ! test -r @top_builddir@/src/morphology.@TAG_FORMAT@.hfst ; then
+fsa="@top_builddir@/src/generated/omorfi-omor.analyse.hfst"
+if ! test -r $fsa ; then
     echo Unable to find built fsa for tests: $fsa
 fi
 
@@ -20,7 +20,7 @@ if ! test -f "jrc-fi.tokens" ; then
     $preprocess < "jrc-fi.text" > "jrc-fi.tokens"
 fi
 echo Looking up jrc-fi.tokens
-/usr/bin/time -o "jrc-fi.times" -a hfst-optimised-lookup -q $fsa < "jrc-fi.tokens" > "jrc-fi.anals"
+@TIME@ -o "jrc-fi.times" -a hfst-optimised-lookup -q $fsa < "jrc-fi.tokens" > "jrc-fi.anals"
 tokens=$(wc -l < jrc-fi.tokens)
 misses=$(fgrep -c '+?' < jrc-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )

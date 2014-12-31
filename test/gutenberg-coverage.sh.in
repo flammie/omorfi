@@ -1,7 +1,7 @@
 #!/bin/bash
 # coverage for fiwiki-latest
-fsa="@top_builddir@/src/morphology.@TAG_FORMAT@.hfst"
-if ! test -r @top_builddir@/src/morphology.@TAG_FORMAT@.hfst ; then
+fsa="@top_builddir@/src/generated/omorfi-omor.analyse.hfst"
+if ! test -r $fsa ; then
     echo Unable to find built fsa for tests: $fsa
 fi
 
@@ -18,7 +18,7 @@ if ! test -f "gutenberg-fi.tokens" ; then
     $preprocess < "gutenberg-fi.text" > "gutenberg-fi.tokens"
 fi
 echo Looking up gutenberg-fi.tokens
-/usr/bin/time -o "gutenberg-fi.times" -a hfst-optimised-lookup -q $fsa < "gutenberg-fi.tokens" > "gutenberg-fi.anals"
+@TIME@ -o "gutenberg-fi.times" -a hfst-optimised-lookup -q $fsa < "gutenberg-fi.tokens" > "gutenberg-fi.anals"
 tokens=$(wc -l < gutenberg-fi.tokens)
 misses=$(fgrep -c '+?' < gutenberg-fi.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )

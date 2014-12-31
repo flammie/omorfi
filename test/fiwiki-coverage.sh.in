@@ -1,7 +1,7 @@
 #!/bin/bash
 # coverage for fiwiki-latest
-fsa="@top_builddir@/src/morphology.@TAG_FORMAT@.hfst"
-if ! test -r @top_builddir@/src/morphology.@TAG_FORMAT@.hfst ; then
+fsa="@top_builddir@/src/generated/omorfi-omor.analyse.hfst"
+if ! test -r $fsa ; then
     echo Unable to find built fsa for tests: $fsa
 fi
 
@@ -20,7 +20,7 @@ if ! test -f "fiwiki-latest-pages-articles.tokens" ; then
     $preprocess < fiwiki-latest-pages-articles.text > fiwiki-latest-pages-articles.tokens
 fi
 echo Looking up fiwiki-latest-pages-articles.tokens
-/usr/bin/time -o fiwiki-latest-pages-articles.times -a hfst-optimised-lookup -q $fsa < fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.anals
+@TIME@ -o fiwiki-latest-pages-articles.times -a hfst-optimised-lookup -q $fsa < fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.anals
 tokens=$(wc -l < fiwiki-latest-pages-articles.tokens)
 misses=$(fgrep -c '+?' < fiwiki-latest-pages-articles.anals)
 coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
