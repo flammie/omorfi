@@ -3,13 +3,13 @@
 LEXFILE=lexemes/lexemes.tsv
 
 if test $# -lt 4 ; then
-    echo "Usage: $0 LEMMA CLASS ATTRIBUTE=VALUE CATEGORY"
+    echo "Usage: $0 LEMMA HOMONYM VALUE CATEGORY"
     exit 1
 fi
 
 ATTRIBUTEFILE=attributes/$4.tsv
 if ! test -f ${ATTRIBUTEFILE} ; then
-    echo "cannot find attribute category db for $2 in ${ATTRIBUTEFILE}"
+    echo "cannot find attribute category db for $4 in ${ATTRIBUTEFILE}"
     exit 2
 fi
 

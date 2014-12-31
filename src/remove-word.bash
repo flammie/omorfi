@@ -1,10 +1,10 @@
 #!/bin/bash
 
 LEXFILE=lexemes/lexemes.tsv
-ATTRIBUTES=attributes/*.tsv
+ATTRIBUTES=lexemes/*.tsv
 
 if test $# -lt 2 ; then
-    echo "Usage: $0 LEMMA CLASS"
+    echo "Usage: $0 LEMMA HOMONYM"
     exit 1
 fi
 
@@ -13,11 +13,6 @@ if ! egrep "^(${1})	\['(${2})'\]" $LEXFILE ; then
     echo "None found, folding"
     exit 1
 fi
-
-cp -v ${LEXFILE} ${LEXFILE}~
-sed -r -e "/^(${1})	\['(${2})'\]/d" ${LEXFILE} > ${LEXFILE}~~
-diff -u ${LEXFILE}~ ${LEXFILE}~~
-cp ${LEXFILE}~~ ${LEXFILE}
 
 for f in ${ATTRIBUTES} ; do
     cp -v ${f} ${f}~
