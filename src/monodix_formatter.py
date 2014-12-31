@@ -309,15 +309,14 @@ def format_monodix_pardef(fields):
 
 
 def format_monodix_entry(wordmap):
-    for cont in wordmap['new_paras']:
-        e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
-        e += '<p><l>' + wordmap['stub'].replace(word_boundary, '').replace('&', '&amp;')  +  '</l>'
-        e += '<r>'
-        e += wordmap['lemma'].replace('&', '&amp;')
-        e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
-        e += '</r></p>'
-        e += format_monodix_par(cont)
-        e += '</e>'
+    e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
+    e += '<p><l>' + wordmap['stub'].replace(word_boundary, '').replace('&', '&amp;')  +  '</l>'
+    e += '<r>'
+    e += wordmap['lemma'].replace('&', '&amp;')
+    e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
+    e += '</r></p>'
+    e += format_monodix_par(wordmap['new_para'])
+    e += '</e>'
     return e
 
 # self test
