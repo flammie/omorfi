@@ -136,13 +136,13 @@ hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 
-bin_SCRIPTS=scripts/omorfi-analyse-text.sh \
-			scripts/omorfi-analyse-tokenised.sh \
-			scripts/omorfi-generate.sh \
-			scripts/omorfi-hyphenate.sh \
-			scripts/omorfi-spell.sh \
-			scripts/omorfi-segment.sh \
-			scripts/omorfi-interactive.sh
+bin_SCRIPTS=bash/omorfi-analyse-text.sh \
+			bash/omorfi-analyse-tokenised.sh \
+			bash/omorfi-generate.sh \
+			bash/omorfi-hyphenate.sh \
+			bash/omorfi-spell.sh \
+			bash/omorfi-segment.sh \
+			bash/omorfi-interactive.sh
 
 python_PYTHON=python/omorfi.py
 
