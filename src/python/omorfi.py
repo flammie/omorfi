@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+
 """
-Simple python interface for omorfi using libhfst-python.
+Simple python interface for omorfi using libhfst-python. Consider this
+class as a standard python interface to omorfi and standard reference for
+scientific studies, as far as python use goes. For other interfaces, see
+the standard shell scripts or java interface.
 """
 
 
@@ -15,6 +20,31 @@ from glob import glob
 class Omorfi:
     """
     An object holding omorfi automata for all the functions of omorfi.
+    
+    Each of the automata are accessible by their function and identifier.
+    Some combinations of functionalities may be available that access more
+    than one automaton in non-trivial ways. Currently supported automata
+    functuions are:
+    * analysis
+    * tokenisation
+    * generation
+    * lemmatisation
+    * segmentation
+    * lookup
+
+    These are followed by corresponding automaton sets as attributes:
+        analysers: key is 'omorfi-' + tagset
+        tokenisers: key is 'omorfi'
+        generators: key is 'omorfi-' + tagset
+        lemmatizers: key is 'omorfi'
+        hyphenators: key is 'omorfi'
+        segmenters: key is 'omorfi'
+
+    The python code can perform minimal string munging controlled by bool
+    attributes:
+        can_lowercase: to use `str.lower()`
+        can_titlecase: to use `str[0].upper() + str[1:]`
+        can_uppercase: to use `str.upper()`
     """
     analysers = dict()
     tokenisers = dict()
@@ -34,13 +64,17 @@ class Omorfi:
             '/usr/share/omorfi/']
 
     def __init__(this, verbosity = False):
+        """Construct Omorfi with given verbosity for printouts."""
         this._verbosity = verbosity
 
     def load_filename(this, path):
         """Load omorfi automaton from filename and guess its use.
 
-        The current version uses filename to guess the use of automaton,
-        future versions should use HFST header for that.
+        A file name should consist of three parts separated by full stop.
+        The second part must be a keyword describing the use of the
+        automaton, first part is parsed as an identifier typically starting
+        with the word omorfi, followed by any extras, such as the tagset for
+        analysis or generation.
         """
         trans = None
         if this._verbosity:
@@ -50,13 +84,11 @@ class Omorfi:
         else:
             # FIXME: should fail
             if this._verbosity:
-                print('No access')
+                print('No access to ', path, file=stderr)
             pass
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
         if len(parts) < 2:
             pass
-        elif this._verbosity:
-            print('loaded', parts[0], "type", parts[1], 'identifying...')
         elif parts[1] == 'analyse':
             this.analysers[parts[0]] = trans
         elif parts[1] == 'generate':
@@ -71,6 +103,8 @@ class Omorfi:
             this.hyphenators[parts[0]] = trans
         elif parts[1] == 'segment':
             this.segmenters[parts[0]] = trans
+        if this._verbosity:
+            print('loaded', parts[0], "type", parts[1])
 
     def load_from_dir(this, path=None):
         """Load omorfi automata from given or known locations.
@@ -162,8 +196,7 @@ class Omorfi:
         the analysis will also be performed on all lowercase variant.
         
         The analyses with case mangling will have an additional element to them
-        identifying the casing, assuming the analyser variant has opening for
-        one.
+        identifying the casing.
         """
         anals = None
         if 'default' in this.analysers:

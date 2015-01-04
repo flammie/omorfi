@@ -1,5 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
+SUBDIRS=python
 # Settings
 HFST_FLAGS=--verbose
 hfstfidatadir=$(datadir)/hfst/fi/
@@ -143,7 +144,7 @@ bin_SCRIPTS=scripts/omorfi-analyse-text.sh \
 			scripts/omorfi-segment.sh \
 			scripts/omorfi-interactive.sh
 
-python_PYTHON=scripts/omorfi.py scripts/convert_tag_format.py
+python_PYTHON=python/omorfi.py
 
 
 # These go into dist tarballs... which we no longer make
