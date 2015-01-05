@@ -196,18 +196,18 @@ AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
-AC_CONFIG_FILES([src/scripts/omorfi-analyse-text.sh],
-                [chmod +x src/scripts/omorfi-analyse-text.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-segment.sh],
-                [chmod +x src/scripts/omorfi-segment.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-generate.sh],
-                [chmod +x src/scripts/omorfi-generate.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-hyphenate.sh],
-                [chmod +x src/scripts/omorfi-hyphenate.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-spell.sh],
-                [chmod +x src/scripts/omorfi-spell.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-analyse-tokenised.sh],
-                [chmod +x src/scripts/omorfi-analyse-tokenised.sh])
+AC_CONFIG_FILES([src/bash/omorfi-analyse-text.sh],
+                [chmod +x src/bash/omorfi-analyse-text.sh])
+AC_CONFIG_FILES([src/bash/omorfi-segment.sh],
+                [chmod +x src/bash/omorfi-segment.sh])
+AC_CONFIG_FILES([src/bash/omorfi-generate.sh],
+                [chmod +x src/bash/omorfi-generate.sh])
+AC_CONFIG_FILES([src/bash/omorfi-hyphenate.sh],
+                [chmod +x src/bash/omorfi-hyphenate.sh])
+AC_CONFIG_FILES([src/bash/omorfi-spell.sh],
+                [chmod +x src/bash/omorfi-spell.sh])
+AC_CONFIG_FILES([src/bash/omorfi-analyse-tokenised.sh],
+                [chmod +x src/bash/omorfi-analyse-tokenised.sh])
 AC_CONFIG_FILES([test/europarl-coverage.sh],
                 [chmod +x test/europarl-coverage.sh])
 AC_CONFIG_FILES([test/fiwiki-coverage.sh],

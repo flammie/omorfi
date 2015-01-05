@@ -144,7 +144,8 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-interactive.sh
 
-python_PYTHON=python/omorfi.py
+pkgpython_PYTHON=python/omorfi/__init__.py \
+				 python/omorfi/omorfi.py
 
 
 # These go into dist tarballs... which we no longer make
