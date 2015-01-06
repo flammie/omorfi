@@ -164,14 +164,9 @@ AC_PATH_PROG([THEREARENOEASTEREGGS], [cowsay], [echo])
 # require python for stuff
 AM_PATH_PYTHON([3.2],, [:])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
-# test RST scripts without python since python tests do not work in all platforms
-AC_PATH_PROG([RST], [rst], [false])
-AC_PATH_PROGS([RST2HTML], [rst2html.py rst2html], [false])
-AC_PATH_PROGS([RST2PDF], [rst2pdf.py rst2pdf], [false])
-AC_PATH_PROGS([RST2TEX], [rst2tex.py rst2tex], [false])
+AC_PATH_PROG([DOXYGEN], [doxygen], [false])
+AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
-AM_CONDITIONAL([CAN_RST], [test "x$RST" != xfalse -o \( "x$RST2HTML" != xfalse -a "x$RST2PDF" != xfalse \) ])
-AM_CONDITIONAL([WANT_DOC], [test "x$enable_doc" != xfalse])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
 
 # separated my scripts for corpora fetching, some preprocessing
