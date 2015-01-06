@@ -1,6 +1,5 @@
 ## Process this file with automake to produce Makefile.in
 
-SUBDIRS=python
 # Settings
 HFST_FLAGS=--verbose
 hfstfidatadir=$(datadir)/hfst/fi/
