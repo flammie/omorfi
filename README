@@ -51,8 +51,12 @@ For basic, beginner end-user usage, omorfi provides helper scripts:
 - `omorfi-segment.sh`: morphologically segment word-forms one per line
 - `omorfi-spell.sh`: spell-check and correct word-forms one per line
 
-Most commonly you will probably want to turn text files into FTB3.1 lists in
-xerox format:
+These scripts are enough for basic usage including scientific use for
+re-production of published results, but lack many additional features like
+more fine-grained control of tokenisation, case-folding.
+
+Most commonly you will probably want to turn text files into FTB3.1 lists 
+into xerox format analyses:
 
 {{{
 $ omorfi-analyse-text.sh kalevala.txt
@@ -154,14 +158,14 @@ $ omorfi-generate.sh
 
 === Advanced usage ===
 
-Python interface (check wiki for details):
+Python interface (check wiki page OmorfiPy and api documentation for details):
 
 {{{
 $ python
 Python 3.4.1 (default, Oct 16 2014, 03:32:31) 
 [GCC 4.7.3] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> from omorfi import Omorfi
+>>> from omorfi.omorfi import Omorfi
 >>> omorfi = Omorfi()
 >>> omorfi.load_from_dir()
 >>> omorfi.analyse("koira")
@@ -173,6 +177,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 [WORD_ID=Koira][POS=NOUN][PROPER=PROPER][NUM=SG][CASE=NOM][WEIGHT=0.000000] 0.0
 [WORD_ID=koira][POS=NOUN][NUM=SG][CASE=NOM][WEIGHT=0.000000] 0.0
 
+}}}
+
+Java class (check wiki page OmorfiJava and api documentation for details):
+
+{{{
+java com.googlecode.omorfi.Omorfi
 }}}
 
 Hfst command-line (for further information check HFST wiki):
