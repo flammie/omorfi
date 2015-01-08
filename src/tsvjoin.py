@@ -100,6 +100,7 @@ def main():
             print("Reading joins from", join_filename)
         linecount = 0
         joincount = 0
+        dedupe = set()
         with open(join_filename, 'r', newline='') as join_file:
             join_reader = csv.reader(join_file, 
                     delimiter=args.separator, quoting=quoting,
@@ -126,11 +127,20 @@ def main():
                     if not args.ignore_errors:
                         print("\033[93mMissing!\033[0m "
                               "Could not find the key",
-                              join_on, "used by\033[91m", join_file.name,
+                              join_on, "used in\033[91m", join_file.name,
                               "\033[0mline\033[91m", linecount, "\033[0min any of",
                               " ".join(args.infilenames), file=stderr)
                         errors = True
+                elif join_on in dedupe:
+                    if not args.ignore_errors:
+                        print("\033[93mDuplicated!\033[0m "
+                              "This key will be overwritten",
+                              join_on, "used in\033[91m", join_file.name,
+                              "\033[0mline\033[91m", linecount, "\033[0m",
+                              file=stderr)
+                        errors = True
                 else:
+                    dedupe.add(join_on)
                     this_entry = words[join_on]
                     this_entry += [headers[3] + '=' + join_parts[3]]
                     words[join_on] = this_entry
