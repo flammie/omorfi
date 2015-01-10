@@ -113,7 +113,7 @@ def main():
                 if args.verbose and (linecount % 10000) == 0:
                     print(linecount, "...", end='\r')
                 join_on = ''
-                if len(join_parts) < args.fields:
+                if len(join_parts) < 4:
                     print("Must have at least N separtors on each",
                         "non-comment non-empty line of join; Skipping:\n", 
                         args.separator.join(join_parts),
