@@ -36,7 +36,7 @@ class Omorfi:
         analysers: key is 'omorfi-' + tagset
         tokenisers: key is 'omorfi'
         generators: key is 'omorfi-' + tagset
-        lemmatizers: key is 'omorfi'
+        lemmatisers: key is 'omorfi'
         hyphenators: key is 'omorfi'
         segmenters: key is 'omorfi'
 
@@ -49,7 +49,7 @@ class Omorfi:
     analysers = dict()
     tokenisers = dict()
     generators = dict()
-    lemmatizers = dict()
+    lemmatisers = dict()
     hyphenators = dict()
     segmenters = dict()
     acceptors = dict()
@@ -88,23 +88,38 @@ class Omorfi:
             pass
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
         if len(parts) < 2:
-            pass
+            if this._verbosity:
+                print('not loaded', path)
         elif parts[1] == 'analyse':
+            if this._verbosity:
+                print('analyser', parts[0])
             this.analysers[parts[0]] = trans
         elif parts[1] == 'generate':
+            if this._verbosity:
+                print('generator', parts[0])
             this.generators[parts[0]] = trans
         elif parts[1] == 'accept':
+            if this._verbosity:
+                print('acceptor', parts[0])
             this.acceptors[parts[0]] = trans
         elif parts[1] == 'tokenise':
+            if this._verbosity:
+                print('tokeniser', parts[0])
             this.tokenisers[parts[0]] = trans
-        elif parts[1] == 'lemmatize':
-            this.lemmatizers[parts[0]] = trans
+        elif parts[1] == 'lemmatise':
+            if this._verbosity:
+                print('lemmatiser', parts[0])
+            this.lemmatisers[parts[0]] = trans
         elif parts[1] == 'hyphenate':
+            if this._verbosity:
+                print('hyphenator', parts[0])
             this.hyphenators[parts[0]] = trans
         elif parts[1] == 'segment':
+            if this._verbosity:
+                print('segmenter', parts[0])
             this.segmenters[parts[0]] = trans
-        if this._verbosity:
-            print('loaded', parts[0], "type", parts[1])
+        elif this._verbosity:
+            print('skipped', parts)
 
     def load_from_dir(this, path=None):
         """Load omorfi automata from given or known locations.
@@ -220,6 +235,44 @@ class Omorfi:
                 anal.weight = float('inf')
                 anals = [anal]
         return anals
+
+    def _lemmatise(this, token, automaton):
+        res = libhfst.detokenize_paths(this.lemmatisers[automaton].lookup_fd(token))
+        return res
+
+    def lemmatise(this, token):
+        lemmas = None
+        if 'default' in this.lemmatisers:
+            lemmas = this._lemmatise(token, 'default')
+        if not lemmas and 'omorfi' in this.lemmatisers:
+            lemmas = this._lemmatise(token, 'omorfi')
+            if not lemmas:
+                class FakeLemma():
+                    pass
+                lemma = FakeLemma()
+                lemma.output = token
+                lemma.weight = float('inf')
+                lemmas = [lemma]
+        return lemmas
+
+    def _segment(this, token, automaton):
+        res = libhfst.detokenize_paths(this.segmenters[automaton].lookup_fd(token))
+        return res
+
+    def segment(this, token):
+        segments = None
+        if 'default' in this.segmenters:
+            segments = this._segment(token, 'default')
+        if not segments and 'omorfi' in this.segmenters:
+            segments = this._segment(token, 'omorfi')
+            if not segments:
+                class FakeSegment():
+                    pass
+                segment = FakeSegment()
+                segment.output = token
+                segment.weight = float('inf')
+                segments = [segment]
+        return segments
 
 def main():
     """Invoke a simple CLI analyser."""
