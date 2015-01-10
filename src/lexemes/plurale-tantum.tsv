@@ -25,8 +25,8 @@ ABC-asemat	1	N_JUHLAT	obligatory
 Adoptioperheet	1	N_HIUTALEET	obligatory
 Agronomivirkamiehet ja toimihenkilöt	1	N_JÄRJESTÖT	obligatory
 ahdassuusammakko	1	N_LEPAKKO	common
-ahdinmalluainen	1	N_AAKKOSTAMINEN	common
 ahdin	1	N_VAADIN	common
+ahdinmalluainen	1	N_AAKKOSTAMINEN	common
 Ahkiosaaret	1	N_SAARET	obligatory
 Ahmajärvet	1	N_RIPSET	obligatory
 Ahmakalliot	1	N_RAUNIOT	obligatory
@@ -40,11 +40,11 @@ Ahoinvuoret	1	N_SAARET	obligatory
 Ahokoskentievat	1	N_VARAT	obligatory
 Aholammit	1	N_LAMMIT	obligatory
 Aholankalliot	1	N_RAUNIOT	obligatory
+Ahon Matin saaret	1	N_SAARET	obligatory
 Ahonalaset	1	N_RAPPUSET	obligatory
 Ahoniitunkalliot	1	N_RAUNIOT	obligatory
 Ahoniitut	1	N_NIITUT	obligatory
 Ahonkalliot	1	N_RAUNIOT	obligatory
-Ahon Matin saaret	1	N_SAARET	obligatory
 Ahonpellot	1	N_AALLOT	obligatory
 Ahonpäänkalliot	1	N_RAUNIOT	obligatory
 Ahonpäänlammit	1	N_LAMMIT	obligatory
@@ -106,13 +106,13 @@ Airosaaret	1	N_SAARET	obligatory
 Airossaaret	1	N_SAARET	obligatory
 Aisalammit	1	N_LAMMIT	obligatory
 Aisanevankalliot	1	N_RAUNIOT	obligatory
+aita	1	N_PATA	common
 Aitajärvet	1	N_RIPSET	obligatory
 Aitalammet	1	N_LAMMET	obligatory
 Aitalamminsärkät	1	N_SÄRKÄT	obligatory
 Aitalammit	1	N_LAMMIT	obligatory
 Aitamaanlantot	1	N_ROITOT	obligatory
 Aitamaantievat	1	N_VARAT	obligatory
-aita	1	N_PATA	common
 Aitasuonlammit	1	N_LAMMIT	obligatory
 aitobakteeri	1	N_KANAALI	common
 aitohevosmuurahainen	1	N_AAKKOSTAMINEN	common
@@ -147,8 +147,8 @@ Aitto-ojanniityt	1	N_NIITYT	obligatory
 Aittosaaret	1	N_SAARET	obligatory
 Aittostenmäet	1	N_MÄET	obligatory
 aivina	1	N_KITARA	common
-aivokalvolaskimo	1	N_RUIPELO	common
 aivo	1	N_TALO	common
+aivokalvolaskimo	1	N_RUIPELO	common
 aivot	1	N_AIVOT	obligatory
 Ajakkalammit	1	N_LAMMIT	obligatory
 ajannäyttäjäkukka	1	N_LUOKKA	common
@@ -304,6 +304,7 @@ Anterustievat	1	N_VARAT	obligatory
 Antikaisahot	1	N_AIVOT	obligatory
 Antillit	1	N_LASIT	obligatory
 antimet	1	N_ANTIMET	obligatory
+Antin Pyytämäjärvet	1	N_RIPSET	obligatory
 Antinjängänkummut	1	N_KUMMUT	obligatory
 Antinjärventievat	1	N_VARAT	obligatory
 Antinkalliot	1	N_RAUNIOT	obligatory
@@ -313,7 +314,6 @@ Antinlammit	1	N_LAMMIT	obligatory
 Antinluodot	1	N_PIDOT	obligatory
 Antinnevansaaret	1	N_SAARET	obligatory
 Antinnivat	1	N_VARAT	obligatory
-Antin Pyytämäjärvet	1	N_RIPSET	obligatory
 Antinsaaret	1	N_SAARET	obligatory
 Antosuot	1	N_SUOT	obligatory
 Anttikarvot	1	N_AIVOT	obligatory
@@ -522,8 +522,8 @@ Eksymäkukkulat	1	N_MARKKINAT	obligatory
 Eksymälammit	1	N_LAMMIT	obligatory
 Eksyttäjänkalliot	1	N_RAUNIOT	obligatory
 elamilainen	1	N_AAKKOSTAMINEN	common
-Elektroniikan tukkukauppiaat	1	N_VALJAAT	obligatory
 ele	1	N_PISTE	common
+Elektroniikan tukkukauppiaat	1	N_VALJAAT	obligatory
 Eliaksensalmenluolikot	1	N_LUOLIKOT	obligatory
 Elianlamminahot	1	N_AIVOT	obligatory
 Elianlammit	1	N_LAMMIT	obligatory
@@ -602,12 +602,12 @@ Eteläviidat	1	N_RAUDAT	obligatory
 Etolansaaret	1	N_SAARET	obligatory
 Etseojanpalot	1	N_AIVOT	obligatory
 Ettisseljänhieriköt	1	N_TÖLPÄKÖT	obligatory
+etu	1	N_KUITU	common
 etuaivot	1	N_AIVOT	obligatory
 Etuhaankalliot	1	N_RAUNIOT	obligatory
 Etuhiekat	1	N_PAIKAT	obligatory
 Etukalliot	1	N_RAUNIOT	obligatory
 Etuniemet	1	N_TOIMET	obligatory
-etu	1	N_KUITU	common
 euromarkkinat	1	N_MARKKINAT	obligatory
 Eurooppanuoret	1	N_SAARET	obligatory
 Eurosinkut	1	N_FARKUT	obligatory
@@ -615,8 +615,8 @@ eurovaalit	1	N_LASIT	obligatory
 Eussaaret	1	N_SAARET	obligatory
 Evankeliset opiskelijat	1	N_MARKKINAT	obligatory
 Evankeliset ystävät	1	N_KÄRÄJÄT	obligatory
-Evijärvenkankaat	1	N_RENKAAT	obligatory
 Evijärven Urheilijat	1	N_MARKKINAT	obligatory
+Evijärvenkankaat	1	N_RENKAAT	obligatory
 Evilahdenkalliot	1	N_RAUNIOT	obligatory
 eväjalkalisko	1	N_TALO	common
 Faarinalat	1	N_PAIKAT	obligatory
@@ -794,6 +794,7 @@ Halimaankalliot	1	N_RAUNIOT	obligatory
 Halisenromput	1	N_RAPUT	obligatory
 Halkikivet	1	N_SAKSET	obligatory
 Halkiskivet	1	N_SAKSET	obligatory
+halko	1	N_PELKO	common
 Halkokarin Ulkomatalat	1	N_KIHARAT	obligatory
 Halkokarit	1	N_LASIT	obligatory
 Halkokivet	1	N_SAKSET	obligatory
@@ -803,7 +804,6 @@ Halkolaksonkalliot	1	N_RAUNIOT	obligatory
 Halkolammit	1	N_LAMMIT	obligatory
 Halkoluodot	1	N_PIDOT	obligatory
 Halkoniitut	1	N_NIITUT	obligatory
-halko	1	N_PELKO	common
 Halkosaarenluodot	1	N_PIDOT	obligatory
 Halkosaaret	1	N_SAARET	obligatory
 Halla-ahonlammit	1	N_LAMMIT	obligatory
@@ -834,8 +834,8 @@ Haminaharjut	1	N_HOUSUT	obligatory
 Haminakarit	1	N_LASIT	obligatory
 Haminalammit	1	N_LAMMIT	obligatory
 Haminaluodot	1	N_PIDOT	obligatory
-Haminanharjut	1	N_HOUSUT	obligatory
 Haminan Palloilijat	1	N_MARKKINAT	obligatory
+Haminanharjut	1	N_HOUSUT	obligatory
 Haminapuljut	1	N_HOUSUT	obligatory
 hammasjuuri	1	N_RUUHI	common
 hammaskarppi	1	N_KUPPI	common
@@ -844,10 +844,10 @@ hammaspihdit	1	N_PIHDIT	obligatory
 hammasraudat	1	N_RAUDAT	obligatory
 Hamperinkalliot	1	N_RAUNIOT	obligatory
 Hampjärvenmäet	1	N_MÄET	obligatory
+hamppu	1	N_LIPPU	common
 Hamppukaltiot	1	N_RAUNIOT	obligatory
 hamppukasvi	1	N_RUUVI	common
 Hamppulammit	1	N_LAMMIT	obligatory
-hamppu	1	N_LIPPU	common
 Hamskerinriutat	1	N_RIUTAT	obligatory
 Hangasaavankummut	1	N_KUMMUT	obligatory
 Hangasharjut	1	N_HOUSUT	obligatory
@@ -923,8 +923,8 @@ harjakaiset	1	N_RAPPUSET	obligatory
 Harjakalliot	1	N_RAUNIOT	obligatory
 Harjalliset	1	N_RAPPUSET	obligatory
 harjannostajaiset	1	N_RAPPUSET	obligatory
-Harjasniityt	1	N_NIITYT	obligatory
 harjas	1	N_VAKUUTUS	common
+Harjasniityt	1	N_NIITYT	obligatory
 harjasvehnä	1	N_HÖPÖTTÄJÄ	common
 Harjujärvenharjut	1	N_HOUSUT	obligatory
 Harjujärvet	1	N_RIPSET	obligatory
@@ -1706,10 +1706,10 @@ Hylkkarrat	1	N_KARRAT	obligatory
 Hylängänkivet	1	N_RIPSET	obligatory
 hyntteet	1	N_RÄMEET	obligatory
 hynttyyt	1	N_HYNTTYYT	obligatory
+hyppy	1	N_RYYPPY	common
 hyppyantilooppi	1	N_KUPPI	common
 hyppyhäntäiset	1	N_VIHKIÄISET	obligatory
 hyppylisko	1	N_TALO	common
-hyppy	1	N_RYYPPY	common
 hyppyset	1	N_VIHKIÄISET	obligatory
 Hyppärit	1	N_BIKINIT	obligatory
 Hypönluodot	1	N_PIDOT	obligatory
@@ -1821,8 +1821,8 @@ Hörskönvuoret	1	N_SAARET	obligatory
 Hörtsänlammit	1	N_LAMMIT	obligatory
 Höskönluodot	1	N_PIDOT	obligatory
 höyhen	1	N_SIEMEN	common
-Höyhensaaret	1	N_SAARET	obligatory
 höyhensaaret	1	N_SAKSET	obligatory
+Höyhensaaret	1	N_SAARET	obligatory
 Höykynlammit	1	N_LAMMIT	obligatory
 Höykynvuoret	1	N_SAARET	obligatory
 Höyläniemenkydöt	1	N_KYDÖT	obligatory
@@ -1848,10 +1848,10 @@ Iilinjärvenkalliot	1	N_RAUNIOT	obligatory
 Iilivuoret	1	N_SAARET	obligatory
 Iiljärvenpellot	1	N_AALLOT	obligatory
 Iin Urheilijat	1	N_MARKKINAT	obligatory
+Iisakin Tupajärvet	1	N_RIPSET	obligatory
 Iisakinlammit	1	N_LAMMIT	obligatory
 Iisakinputaat	1	N_TEHTAAT	obligatory
 Iisakinrimmit	1	N_LAMMIT	obligatory
-Iisakin Tupajärvet	1	N_RIPSET	obligatory
 Iisakkilammit	1	N_LAMMIT	obligatory
 Iisakkilansuot	1	N_SUOT	obligatory
 Iitinmäet	1	N_MÄET	obligatory
@@ -1945,8 +1945,8 @@ Iskumiehet	1	N_MIEHET	obligatory
 Ismonlammit	1	N_LAMMIT	obligatory
 isoinen	1	N_AAKKOSTAMINEN	common
 isoisovanhemmat	1	N_VANHEMMAT	obligatory
-isojalkakana	1	N_KIRJA	common
 isojalka	1	N_VIKA	common
+isojalkakana	1	N_KIRJA	common
 isokarve	1	N_TARVE	common
 isokihu	1	N_ASU	common
 Isokorvenkalliot	1	N_RAUNIOT	obligatory
@@ -2075,8 +2075,8 @@ Jatkonlammit	1	N_LAMMIT	obligatory
 jatko-opinnot	1	N_OPINNOT	obligatory
 Jatkoslammit	1	N_LAMMIT	obligatory
 Jatkosodan siviiliveteraanit	1	N_LASIT	obligatory
-jatkotikas	1	N_ASUKAS	common
 Jatkot	1	N_AIVOT	obligatory
+jatkotikas	1	N_ASUKAS	common
 Jatuninselät	1	N_REIÄT	obligatory
 Jauhekalliot	1	N_RAUNIOT	obligatory
 Jauhiaisenkankaat	1	N_RENKAAT	obligatory
@@ -2099,11 +2099,11 @@ Joenmäet	1	N_MÄET	obligatory
 Joenniityt	1	N_NIITYT	obligatory
 Joenniskankalliot	1	N_RAUNIOT	obligatory
 Joensivunpellot	1	N_AALLOT	obligatory
+Joensuun Prihat	1	N_VARAT	obligatory
 Joensuunkalliot	1	N_RAUNIOT	obligatory
 Joensuunmetsät	1	N_KÄRÄJÄT	obligatory
 Joensuunniitut	1	N_NIITUT	obligatory
 Joensuunniityt	1	N_NIITYT	obligatory
-Joensuun Prihat	1	N_VARAT	obligatory
 Joensuunsaaret	1	N_SAARET	obligatory
 Joentakustankalliot	1	N_RAUNIOT	obligatory
 Joentaustankalliot	1	N_RAUNIOT	obligatory
@@ -2243,7 +2243,7 @@ Juottomäenkalliot	1	N_RAUNIOT	obligatory
 Juovajärvenlompolat	1	N_MARKKINAT	obligatory
 juovapingviini	1	N_KEHVELI	common
 Juovat	1	N_JUHLAT	obligatory
-Juovat	1	N_JUOVAT	obligatory
+Juovat	2	N_JUOVAT	obligatory
 Jupelankankaat	1	N_RENKAAT	obligatory
 Juponkalliot	1	N_RAUNIOT	obligatory
 Juponlammit	1	N_LAMMIT	obligatory
@@ -2459,8 +2459,8 @@ Kaatronlammit	1	N_LAMMIT	obligatory
 Kaavitsalammit	1	N_LAMMIT	obligatory
 Kadonneenlähteet	1	N_TIETEET	obligatory
 kadotetut	1	N_NIITUT	obligatory
-Kahdenhaaraset	1	N_RAPPUSET	obligatory
 Kahden Uulan Haukkumalammet	1	N_LAMMET	obligatory
+Kahdenhaaraset	1	N_RAPPUSET	obligatory
 Kahelammit	1	N_LAMMIT	obligatory
 Kahilatievat	1	N_VARAT	obligatory
 Kahinmäet	1	N_MÄET	obligatory
@@ -2655,9 +2655,9 @@ Kalatienkalliot	1	N_RAUNIOT	obligatory
 Kalatiensaaret	1	N_SAARET	obligatory
 Kalattomanlammit	1	N_LAMMIT	obligatory
 Kalattomanmäet	1	N_MÄET	obligatory
+Kalattomat	1	N_SIUNAAMATTOMAT	obligatory
 Kalattomatjärvet	1	N_RIPSET	obligatory
 Kalattomatlammit	1	N_LAMMIT	obligatory
-Kalattomat	1	N_SIUNAAMATTOMAT	obligatory
 Kalavaaranniityt	1	N_NIITYT	obligatory
 Kalavaiset	1	N_RAPPUSET	obligatory
 kale	1	N_ASTE	common
@@ -2760,8 +2760,8 @@ Kampalammet	1	N_LAMMET	obligatory
 kampasaniainen	1	N_AAKKOSTAMINEN	common
 kampasaniaiskasvi	1	N_RUUVI	common
 kampasauramo	1	N_RUIPELO	common
-Kampelat	1	N_KASTILJAT	obligatory
 kampe	1	N_APE	common
+Kampelat	1	N_KASTILJAT	obligatory
 Kampinsaaret	1	N_SAARET	obligatory
 kamppeet	1	N_KAMPPEET	obligatory
 kamppiaiset	1	N_RAPPUSET	obligatory
@@ -2818,8 +2818,8 @@ Kannaksensaaret	1	N_SAARET	obligatory
 Kannanlammit	1	N_LAMMIT	obligatory
 Kannaslammit	1	N_LAMMIT	obligatory
 Kannassaaret	1	N_SAARET	obligatory
-Kanninkalliot	1	N_RAUNIOT	obligatory
 kannin	1	N_MUUNNIN	common
+Kanninkalliot	1	N_RAUNIOT	obligatory
 Kannistonpellot	1	N_AALLOT	obligatory
 Kannonsaaret	1	N_SAARET	obligatory
 kannukasvi	1	N_RUUVI	common
@@ -2829,8 +2829,8 @@ Kannusojanvitikot	1	N_LUOLIKOT	obligatory
 Kannussaaret	1	N_SAARET	obligatory
 Kannusvuoret	1	N_SAARET	obligatory
 Kansakoulunmäet	1	N_MÄET	obligatory
-kansalaisillalliset	1	N_RAPPUSET	obligatory
 Kansalais- ja Työväenopistojen Rehtorit	1	N_FARMARIT	obligatory
+kansalaisillalliset	1	N_RAPPUSET	obligatory
 kansalaispäivälliset	1	N_VIHKIÄISET	obligatory
 Kansallinen koululaisliitto – Minit	1	N_LIIVIT	obligatory
 kansankäräjät	1	N_KÄRÄJÄT	obligatory
@@ -2910,6 +2910,7 @@ Karhulan Katajaiset	1	N_RAPPUSET	obligatory
 Karhulan Lamposaaret	1	N_SAARET	obligatory
 Karhulan Urheilijat	1	N_MARKKINAT	obligatory
 Karhulan Veikot	1	N_JOUKOT	obligatory
+Karhun Pojat	1	N_JUHLAT	obligatory
 Karhunkivet	1	N_SAKSET	obligatory
 Karhunkukkulat	1	N_MARKKINAT	obligatory
 Karhunkämmenet	1	N_HÖYHENET	obligatory
@@ -2917,7 +2918,6 @@ karhunpeijaiset	1	N_RAPPUSET	obligatory
 Karhunpesäkummut	1	N_KUMMUT	obligatory
 Karhunpesäsaaret	1	N_SAARET	obligatory
 Karhunpesät	1	N_KÄRÄJÄT	obligatory
-Karhun Pojat	1	N_JUHLAT	obligatory
 Karhunpääsaaret	1	N_SAARET	obligatory
 Karhunsaarennot	1	N_OPINNOT	obligatory
 Karhunsaaret	1	N_SAARET	obligatory
@@ -3138,8 +3138,8 @@ Keelingsaaret	1	N_SAARET	obligatory
 Kehitysmaatutkimuksen opiskelijat	1	N_MARKKINAT	obligatory
 Kehitysmaayhdistys Pääskyt	1	N_PÖKSYT	obligatory
 Kehrookalliot	1	N_RAUNIOT	obligatory
-kehruukset	1	N_SERKUKSET	obligatory
 kehruu	1	N_LEIKKUU	common
+kehruukset	1	N_SERKUKSET	obligatory
 kehys	1	N_RÄJÄYTYS	common
 Keihäsharjut	1	N_HOUSUT	obligatory
 keihäskäärme	1	N_PISTE	common
@@ -3183,9 +3183,9 @@ Kellaritievat	1	N_VARAT	obligatory
 Kellojoensärkät	1	N_SÄRKÄT	obligatory
 Kellokaarronkankaat	1	N_RENKAAT	obligatory
 Kellolammit	1	N_LAMMIT	obligatory
+Kellon Työväen Urheilijat	1	N_MARKKINAT	obligatory
 Kellonivat	1	N_VARAT	obligatory
 kellonperät	1	N_KÄRÄJÄT	obligatory
-Kellon Työväen Urheilijat	1	N_MARKKINAT	obligatory
 kellonvitjat	1	N_VARAT	obligatory
 Kellosaarenkydöt	1	N_KYDÖT	obligatory
 Kellosaaret	1	N_SAARET	obligatory
@@ -3270,8 +3270,8 @@ Keskuksenkankaat	1	N_RENKAAT	obligatory
 keskusvaltio	1	N_TUOMIO	common
 Kesselkankaansärkät	1	N_SÄRKÄT	obligatory
 kessu	1	N_ASU	common
-Kestikkilammit	1	N_LAMMIT	obligatory
 kesti	1	N_TYYLI	common
+Kestikkilammit	1	N_LAMMIT	obligatory
 Kesäahonarot	1	N_AIVOT	obligatory
 Kesäkalliot	1	N_RAUNIOT	obligatory
 kesäkisat	1	N_VARAT	obligatory
@@ -3338,8 +3338,8 @@ Ketunpesät	1	N_KÄRÄJÄT	obligatory
 ketunraudat	1	N_RAUDAT	obligatory
 Ketveleenluodot	1	N_PIDOT	obligatory
 Ketveleet	1	N_RÄMEET	obligatory
-keuhkokala	1	N_KIRJA	common
 keuhko	1	N_TALO	common
+keuhkokala	1	N_KIRJA	common
 Keukosenkalliot	1	N_RAUNIOT	obligatory
 keulankärki	1	N_JÄRKI	common
 Keurunlammit	1	N_LAMMIT	obligatory
@@ -3392,8 +3392,8 @@ Kietsimäkuolpunat	1	N_MARKKINAT	obligatory
 Kietsimävaarat	1	N_VARAT	obligatory
 Kieverrysjärvet	1	N_RIPSET	obligatory
 kihara	1	A_HAPERA	common
+kihara	2	N_PROBLEEMA	common
 kiharahokot	1	N_JOUKOT	obligatory
-kihara	1	N_PROBLEEMA	common
 kihlajaiset	1	N_RAPPUSET	obligatory
 kihlakunnankäräjät	1	N_KÄRÄJÄT	obligatory
 kihlat	1	N_VARAT	obligatory
@@ -3508,8 +3508,8 @@ kirjamessut	1	N_HOUSUT	obligatory
 kirjamyyjäiset	1	N_VIHKIÄISET	obligatory
 kirjanpitotieto	1	N_VETO	common
 kirjava	1	N_ASEMA	common
-Kirjavatkivet	1	N_SAKSET	obligatory
 Kirjavat	1	N_JUHLAT	obligatory
+Kirjavatkivet	1	N_SAKSET	obligatory
 kirjohanhi	1	N_ONNI	common
 kirjokerttuli	1	N_KANAALI	common
 kirjokoisa	1	N_VOIMA	common
@@ -3542,9 +3542,9 @@ Kirkkosärkät	1	N_SÄRKÄT	obligatory
 Kirkkotievat	1	N_VARAT	obligatory
 Kirkkovuoret	1	N_SAARET	obligatory
 kirkollisvaalit	1	N_LASIT	obligatory
+Kirkon Nuorisotyöntekijät	1	N_RÄMIÄT	obligatory
 Kirkonkarit	1	N_LASIT	obligatory
 kirkonkymmenykset	1	N_YSTÄVYKSET	obligatory
-Kirkon Nuorisotyöntekijät	1	N_RÄMIÄT	obligatory
 kirkupöllöt	1	N_PÖLLÖT	obligatory
 Kirmajärvet	1	N_RIPSET	obligatory
 Kirnukalliot	1	N_RAUNIOT	obligatory
@@ -3988,7 +3988,7 @@ konnasammakko	1	N_LEPAKKO	common
 Konneveden Urheilijat	1	N_MARKKINAT	obligatory
 Konnikonpellot	1	N_AALLOT	obligatory
 Konnot	1	N_AIVOT	obligatory
-Konnot	1	N_OPINNOT	obligatory
+Konnot	2	N_OPINNOT	obligatory
 Konnunlammit	1	N_LAMMIT	obligatory
 Konnunsaaret	1	N_SAARET	obligatory
 konodontit	1	N_KASTANJETIT	obligatory
@@ -4200,8 +4200,8 @@ Koskelankalliot	1	N_RAUNIOT	obligatory
 Koskelankydöt	1	N_KYDÖT	obligatory
 Koskelolammit	1	N_LAMMIT	obligatory
 Koskelosaaret	1	N_SAARET	obligatory
-Koskenalussaaret	1	N_SAARET	obligatory
 Kosken Hautamaat	1	N_ITÄMAAT	obligatory
+Koskenalussaaret	1	N_SAARET	obligatory
 Koskenkorvan Urheilijat	1	N_MARKKINAT	obligatory
 Koskenmäet	1	N_MÄET	obligatory
 Koskenniityt	1	N_NIITYT	obligatory
@@ -4245,12 +4245,12 @@ Kotiseutu-uutiset	1	N_RAPPUSET	obligatory
 Kotitalouden Kandidaatit	1	N_KASTANJETIT	obligatory
 Kotitalouspedagogiopiskelijat	1	N_MARKKINAT	obligatory
 Kotkalammit	1	N_LAMMIT	obligatory
+Kotkan Työväen Palloilijat	1	N_MARKKINAT	obligatory
 Kotkankalliot	1	N_RAUNIOT	obligatory
 Kotkanlammit	1	N_LAMMIT	obligatory
 Kotkanluodot	1	N_PIDOT	obligatory
 Kotkanpellot	1	N_AALLOT	obligatory
 Kotkansaaret	1	N_SAARET	obligatory
-Kotkan Työväen Palloilijat	1	N_MARKKINAT	obligatory
 kotkarausku	1	N_ASU	common
 Kotkasaaret	1	N_SAARET	obligatory
 Kotkatsaaret	1	N_SAARET	obligatory
@@ -4574,9 +4574,9 @@ Kuonansaaret	1	N_SAARET	obligatory
 kuonovalas	1	N_PATSAS	common
 Kuopinpellot	1	N_AALLOT	obligatory
 Kuopion laskuvarjourheilijat	1	N_MARKKINAT	obligatory
-Kuopionlukot	1	N_JOUKOT	obligatory
 Kuopion Sisu-Veikot	1	N_JOUKOT	obligatory
 Kuopion urheilusukeltajat	1	N_JUHLAT	obligatory
+Kuopionlukot	1	N_JOUKOT	obligatory
 Kuoppajärventievat	1	N_VARAT	obligatory
 Kuoppalammit	1	N_LAMMIT	obligatory
 Kuoppalanmänniköt	1	N_TÖLPÄKÖT	obligatory
@@ -4654,10 +4654,10 @@ Kursunsaaret	1	N_SAARET	obligatory
 Kurtinsaaret	1	N_SAARET	obligatory
 Kurttareiänpalot	1	N_AIVOT	obligatory
 Kurttionkummut	1	N_KUMMUT	obligatory
+kuru	1	N_ASU	common
 Kurujärvenpellot	1	N_AALLOT	obligatory
 Kurukalliot	1	N_RAUNIOT	obligatory
 Kurulammit	1	N_LAMMIT	obligatory
-kuru	1	N_ASU	common
 Kurunkalliot	1	N_RAUNIOT	obligatory
 Kurunlammit	1	N_LAMMIT	obligatory
 Kurunperänkalliot	1	N_RAUNIOT	obligatory
@@ -4725,8 +4725,8 @@ Kuusisaajot	1	N_AIVOT	obligatory
 Kuusisaaret	1	N_SAARET	obligatory
 Kuusiseljänojat	1	N_JUHLAT	obligatory
 Kuusisenkarit	1	N_LASIT	obligatory
-Kuusistonkalliot	1	N_RAUNIOT	obligatory
 Kuusiston linnanrauniot	1	N_RAUNIOT	obligatory
+Kuusistonkalliot	1	N_RAUNIOT	obligatory
 Kuusistonniitut	1	N_NIITUT	obligatory
 Kuusistonpellot	1	N_AALLOT	obligatory
 Kuusistonsaaret	1	N_SAARET	obligatory
@@ -4794,10 +4794,10 @@ Kylänvuomansaariot	1	N_RAUNIOT	obligatory
 Kyläsaaret	1	N_SAARET	obligatory
 Kyläsavut	1	N_RAVUT	obligatory
 Kymen yrittäjät	1	N_KÄRÄJÄT	obligatory
-Kyminkalliot	1	N_RAUNIOT	obligatory
-Kyminkankaat	1	N_RENKAAT	obligatory
 Kymin Koskenpojat	1	N_JUHLAT	obligatory
 Kymin Suunnistajat	1	N_JUHLAT	obligatory
+Kyminkalliot	1	N_RAUNIOT	obligatory
+Kyminkankaat	1	N_RENKAAT	obligatory
 Kymmenvuotiset	1	N_RAPPUSET	obligatory
 kymmenys	1	N_RÄJÄYTYS	common
 Kynkäänsaaret	1	N_SAARET	obligatory
@@ -4893,13 +4893,13 @@ Kärppäpäät	1	N_HÄÄT	obligatory
 Kärppäsaaret	1	N_SAARET	obligatory
 Kärpänkalliot	1	N_RAUNIOT	obligatory
 Kärpänkivet	1	N_RIPSET	obligatory
+kärri	1	N_TYYLI	common
 Kärriluodot	1	N_PIDOT	obligatory
 Kärrinkalliot	1	N_RAUNIOT	obligatory
 Kärrinmäet	1	N_MÄET	obligatory
-kärri	1	N_TYYLI	common
+kärry	1	N_KÄRRY	common
 Kärrykaarat	1	N_VARAT	obligatory
 Kärrykallionkydöt	1	N_KYDÖT	obligatory
-kärry	1	N_KÄRRY	common
 Kärrynsaaret	1	N_SAARET	obligatory
 kärsimyskukkakasvi	1	N_RUUVI	common
 Kärsäkalliot	1	N_RAUNIOT	obligatory
@@ -5020,9 +5020,9 @@ Laavitsanlammit	1	N_LAMMIT	obligatory
 Laavulammit	1	N_LAMMIT	obligatory
 Laavurenkaanlammet	1	N_LAMMET	obligatory
 Laesuonkalliot	1	N_RAUNIOT	obligatory
+Lahden Laatuneliöt	1	N_YHTIÖT	obligatory
 Lahdenkalliot	1	N_RAUNIOT	obligatory
 Lahdenkarit	1	N_LASIT	obligatory
-Lahden Laatuneliöt	1	N_YHTIÖT	obligatory
 Lahdenniitut	1	N_NIITUT	obligatory
 Lahdenniityt	1	N_NIITYT	obligatory
 Lahdenpellot	1	N_AALLOT	obligatory
@@ -5071,8 +5071,8 @@ Laitakalliot	1	N_RAUNIOT	obligatory
 Laitakivet	1	N_SAKSET	obligatory
 Laitalammit	1	N_LAMMIT	obligatory
 Laitaluodonputit	1	N_KASTANJETIT	obligatory
-Laitamaat	1	N_ITÄMAAT	obligatory
 laitama	1	N_ASEMA	common
+Laitamaat	1	N_ITÄMAAT	obligatory
 Laitasaaret	1	N_SAARET	obligatory
 Laitiaissaaret	1	N_SAARET	obligatory
 Laitisensaaret	1	N_SAARET	obligatory
@@ -5184,6 +5184,7 @@ Lanttusaaret	1	N_SAARET	obligatory
 Lapalammit	1	N_LAMMIT	obligatory
 lapasampi	1	N_SAMPI	common
 lapetikkaat	1	N_TIKKAAT	obligatory
+Lapin Lomamatkat	1	N_VARAT	obligatory
 Lapinahot	1	N_AIVOT	obligatory
 Lapinharjunkankaat	1	N_RENKAAT	obligatory
 Lapinhaudat	1	N_RAUDAT	obligatory
@@ -5194,7 +5195,6 @@ Lapinkankaat	1	N_RENKAAT	obligatory
 Lapinkivet	1	N_SAKSET	obligatory
 Lapinkotanenät	1	N_KÄRÄJÄT	obligatory
 Lapinlammit	1	N_LAMMIT	obligatory
-Lapin Lomamatkat	1	N_VARAT	obligatory
 Lapinlähteenpellot	1	N_AALLOT	obligatory
 Lapinlähteet	1	N_TIETEET	obligatory
 Lapinniitut	1	N_NIITUT	obligatory
@@ -5651,8 +5651,8 @@ Lintutöyryt	1	N_PÖKSYT	obligatory
 Lipakkolammit	1	N_LAMMIT	obligatory
 Lipakot	1	N_LUOLIKOT	obligatory
 Lipansaaret	1	N_SAARET	obligatory
-Liperinkankaat	1	N_RENKAAT	obligatory
 liperi	1	N_KEHVELI	common
+Liperinkankaat	1	N_RENKAAT	obligatory
 liperit	1	N_BIKINIT	obligatory
 Lipinkalliot	1	N_RAUNIOT	obligatory
 Lipinsaaret	1	N_SAARET	obligatory
@@ -5812,8 +5812,8 @@ Luhtasensaaret	1	N_SAARET	obligatory
 Luhtatiikit	1	N_PANKIT	obligatory
 Luhtiisniemensaaret	1	N_SAARET	obligatory
 Luhtilaksot	1	N_AIVOT	obligatory
-Luikonlammit	1	N_LAMMIT	obligatory
 Luikon Välikankaat	1	N_RENKAAT	obligatory
+Luikonlammit	1	N_LAMMIT	obligatory
 Luiskinkarit	1	N_LASIT	obligatory
 luistin	1	N_PUHELIN	common
 Lujesaaret	1	N_SAARET	obligatory
@@ -5843,9 +5843,9 @@ Lumperoisenlammit	1	N_LAMMIT	obligatory
 lumppu	1	N_LIPPU	common
 Lunkinsaaret	1	N_SAARET	obligatory
 lunnaat	1	N_VALJAAT	obligatory
+luode	1	N_LUODE	common
 Luodekalliot	1	N_RAUNIOT	obligatory
 Luodelahdenpellot	1	N_AALLOT	obligatory
-luode	1	N_LUODE	common
 Luodonkalliot	1	N_RAUNIOT	obligatory
 Luodonklopit	1	N_KLUMPIT	obligatory
 Luodonmäet	1	N_MÄET	obligatory
@@ -5970,11 +5970,11 @@ Länkimäenkalliot	1	N_RAUNIOT	obligatory
 Länkisaaret	1	N_SAARET	obligatory
 länkisääri	1	N_HIIRI	common
 Länkivaarat	1	N_VARAT	obligatory
+Lännen Tehtaat	1	N_TEHTAAT	obligatory
 Lännenkarit	1	N_LASIT	obligatory
 Lännenkivet	1	N_RIPSET	obligatory
 Lännenluhdat	1	N_LUHDAT	obligatory
 lännensuhteet	1	N_SUHTEET	obligatory
-Lännen Tehtaat	1	N_TEHTAAT	obligatory
 länsiliittoutuneet	1	N_LIITTOUTUNEET	obligatory
 Länsilinjat	1	N_VARAT	obligatory
 Länsiluodot	1	N_PIDOT	obligatory
@@ -6039,6 +6039,8 @@ Maalatkarit	1	N_LASIT	obligatory
 Maaliskuulaiset	1	N_RAPPUSET	obligatory
 maalisvaalit	1	N_LASIT	obligatory
 Maamasuonniitut	1	N_NIITUT	obligatory
+Maan ystävät	1	N_KÄRÄJÄT	obligatory
+Maan Ystävät	1	N_KÄRÄJÄT	obligatory
 Maaninkasaaret	1	N_SAARET	obligatory
 Maankaulamaat	1	N_ITÄMAAT	obligatory
 Maannenänniityt	1	N_NIITYT	obligatory
@@ -6051,8 +6053,6 @@ Maantiekalliot	1	N_RAUNIOT	obligatory
 Maantiekummut	1	N_KUMMUT	obligatory
 Maantielammit	1	N_LAMMIT	obligatory
 Maantieteen Opiskelijat	1	N_MARKKINAT	obligatory
-Maan ystävät	1	N_KÄRÄJÄT	obligatory
-Maan Ystävät	1	N_KÄRÄJÄT	obligatory
 maaorava	1	N_VOIMA	common
 maapäivät	1	N_KÄRÄJÄT	obligatory
 maapäivävaalit	1	N_LASIT	obligatory
@@ -6201,8 +6201,8 @@ Marjostensaaret	1	N_SAARET	obligatory
 Marjosärkät	1	N_SÄRKÄT	obligatory
 Marketanpellot	1	N_AALLOT	obligatory
 Markkasensaaret	1	N_SAARET	obligatory
-Markkinakummut	1	N_KUMMUT	obligatory
 markkina	1	N_MAKKARA	common
+Markkinakummut	1	N_KUMMUT	obligatory
 markkinat	1	N_MARKKINAT	obligatory
 markkinavoimat	1	N_JUHLAT	obligatory
 Markkosaaret	1	N_SAARET	obligatory
@@ -6215,11 +6215,11 @@ marskiheinä	1	N_HÖPÖTTÄJÄ	common
 Marskinkarit	1	N_LASIT	obligatory
 Marssimalammit	1	N_LAMMIT	obligatory
 Marstavinpellot	1	N_AALLOT	obligatory
+Martin Kotajärvet	1	N_RIPSET	obligatory
 Martinkalliot	1	N_RAUNIOT	obligatory
 Martinkankaat	1	N_RENKAAT	obligatory
 Martinkarit	1	N_LASIT	obligatory
 Martinkorvenniityt	1	N_NIITYT	obligatory
-Martin Kotajärvet	1	N_RIPSET	obligatory
 Martinlaassat	1	N_VARAT	obligatory
 Martinnevat	1	N_VARAT	obligatory
 Martinniityt	1	N_NIITYT	obligatory
@@ -6232,9 +6232,9 @@ Mastolamminkummut	1	N_KUMMUT	obligatory
 Mastonkalliot	1	N_RAUNIOT	obligatory
 Matalajärvenkankaat	1	N_RENKAAT	obligatory
 Matalanvaaranlammit	1	N_LAMMIT	obligatory
+Matalat	1	N_KIHARAT	obligatory
 Matalatkarit	1	N_LASIT	obligatory
 Matalatlammit	1	N_LAMMIT	obligatory
-Matalat	1	N_KIHARAT	obligatory
 Matalatsaaret	1	N_SAARET	obligatory
 Matara-ahonlammit	1	N_LAMMIT	obligatory
 matarakasvi	1	N_RUUVI	common
@@ -6358,8 +6358,8 @@ Mertasalmet	1	N_SAKSET	obligatory
 mesiheinä	1	N_HÖPÖTTÄJÄ	common
 Mesiönlammit	1	N_LAMMIT	obligatory
 Meskensaaret	1	N_SAARET	obligatory
-Messukylän Toverit	1	N_FARMARIT	obligatory
 messu	1	N_ASU	common
+Messukylän Toverit	1	N_FARMARIT	obligatory
 Messusaaret	1	N_SAARET	obligatory
 messut	1	N_HOUSUT	obligatory
 Mestarinikkarit	1	N_FARMARIT	obligatory
@@ -6422,9 +6422,9 @@ mikaniat	1	N_MARKKINAT	obligatory
 Mikenti-Yhtiöt	1	N_YHTIÖT	obligatory
 Mikinsaaret	1	N_SAARET	obligatory
 Mikkelin Hiihtäjät	1	N_KÄRÄJÄT	obligatory
-Mikkelinkarit	1	N_LASIT	obligatory
 Mikkelin Kilpa-Veikot	1	N_JOUKOT	obligatory
 Mikkelin Passarit	1	N_FARMARIT	obligatory
+Mikkelinkarit	1	N_LASIT	obligatory
 Mikkelinsaaret	1	N_SAARET	obligatory
 Mikkelinsuot	1	N_SUOT	obligatory
 Mikkellammit	1	N_LAMMIT	obligatory
@@ -6635,9 +6635,9 @@ Mustapaidat	1	N_RAUDAT	obligatory
 Mustasaaret	1	N_SAARET	obligatory
 Mustaseljät	1	N_SELJÄT	obligatory
 Mustasensaaret	1	N_SAARET	obligatory
+Mustat	1	N_JUHLAT	obligatory
 Mustatkivet	1	N_SAKSET	obligatory
 Mustatlammit	1	N_LAMMIT	obligatory
-Mustat	1	N_JUHLAT	obligatory
 Mustatsaaret	1	N_SAARET	obligatory
 Mustatvuoret	1	N_SAARET	obligatory
 Mustavaaranjärvet	1	N_RIPSET	obligatory
@@ -6941,8 +6941,8 @@ nenälasi	1	N_RUUVI	common
 Nenälasit	1	N_LASIT	obligatory
 Nenänpellot	1	N_AALLOT	obligatory
 Nenäsaaret	1	N_SAARET	obligatory
-nenätipat	1	N_HIPAT	obligatory
 Nenät	1	N_KÄRÄJÄT	obligatory
+nenätipat	1	N_HIPAT	obligatory
 neritakotilot	1	N_PIPPALOT	obligatory
 Netouvenlammit	1	N_LAMMIT	obligatory
 nettisivu	1	N_ASU	common
@@ -7048,10 +7048,10 @@ Nilottupetäjäjärvet	1	N_RIPSET	obligatory
 Nilsiän Pallo-Haukat	1	N_PAIKAT	obligatory
 Nimettömänlammit	1	N_LAMMIT	obligatory
 Nimettömänsuonlammit	1	N_LAMMIT	obligatory
+Nimettömät	1	N_TYÖTTÖMÄT	obligatory
 Nimettömätkosket	1	N_SAKSET	obligatory
 Nimettömätlammet	1	N_LAMMET	obligatory
 Nimettömätlammit	1	N_LAMMIT	obligatory
-Nimettömät	1	N_TYÖTTÖMÄT	obligatory
 Nimettömätsuot	1	N_SUOT	obligatory
 nimikirjaimet	1	N_ATERIMET	obligatory
 Nimilammit	1	N_LAMMIT	obligatory
@@ -7147,9 +7147,9 @@ Nuolivaaran Pohjassuot	1	N_SUOT	obligatory
 Nuoluskankaat	1	N_RENKAAT	obligatory
 Nuoluslammit	1	N_LAMMIT	obligatory
 Nuolusrovat	1	N_JUHLAT	obligatory
-Nuoretahot	1	N_AIVOT	obligatory
 Nuoret Kotkat	1	N_JUHLAT	obligatory
 Nuoret Lakimiehet	1	N_MIEHET	obligatory
+Nuoretahot	1	N_AIVOT	obligatory
 Nuorgaminnivat	1	N_VARAT	obligatory
 Nuorikonlammit	1	N_LAMMIT	obligatory
 Nuorikonojanrämeet	1	N_RÄMEET	obligatory
@@ -7630,9 +7630,9 @@ Palosaraksenahot	1	N_AIVOT	obligatory
 Palosuonkaistot	1	N_AIVOT	obligatory
 Palosuonpetäiköt	1	N_TÖLPÄKÖT	obligatory
 Palosärkät	1	N_SÄRKÄT	obligatory
+Palot	1	N_AIVOT	obligatory
 Palotievat	1	N_VARAT	obligatory
 palotikkaat	1	N_TIKKAAT	obligatory
-Palot	1	N_AIVOT	obligatory
 paloturvallisuussäännös	1	N_RÄJÄYTYS	common
 Palovaaranjärvet	1	N_RIPSET	obligatory
 Palovaarankalliot	1	N_RAUNIOT	obligatory
@@ -7961,12 +7961,12 @@ pestimarkkinat	1	N_MARKKINAT	obligatory
 pestuumarkkinat	1	N_MARKKINAT	obligatory
 Pesuankalliot	1	N_RAUNIOT	obligatory
 pesutarvike	1	N_KASTIKE	common
+Pesä Ysit	1	N_LIIVIT	obligatory
 Pesäkivet	1	N_RIPSET	obligatory
 Pesälamminaavat	1	N_TAVAT	obligatory
 Pesälammit	1	N_LAMMIT	obligatory
 Pesäluodot	1	N_PIDOT	obligatory
 Pesäsaaret	1	N_SAARET	obligatory
-Pesä Ysit	1	N_LIIVIT	obligatory
 petivaatteet	1	N_VAATTEET	obligatory
 Petkeljärvenharjut	1	N_HOUSUT	obligatory
 petodinosaurus	1	N_VAKUUTUS	common
@@ -8062,8 +8062,8 @@ Pihlajaojanpellot	1	N_AALLOT	obligatory
 Pihlajasaaret	1	N_SAARET	obligatory
 Pihlavakarit	1	N_LASIT	obligatory
 Pihtarkalliot	1	N_RAUNIOT	obligatory
-pihtihäntäiset	1	N_VIHKIÄISET	obligatory
 pihtihäntä	1	N_HÄNTÄ	common
+pihtihäntäiset	1	N_VIHKIÄISET	obligatory
 Pihtilälammit	1	N_LAMMIT	obligatory
 Pihtinevansaaret	1	N_SAARET	obligatory
 Piianhaarankivet	1	N_SAKSET	obligatory
@@ -8310,6 +8310,7 @@ Pitkänsuonlammit	1	N_LAMMIT	obligatory
 Pitkänsuonvuoret	1	N_SAARET	obligatory
 Pitkäperänvuoret	1	N_SAARET	obligatory
 Pitkäsaaret	1	N_SAARET	obligatory
+Pitkät	1	N_KÄRÄJÄT	obligatory
 Pitkätahot	1	N_AIVOT	obligatory
 Pitkätarot	1	N_AIVOT	obligatory
 Pitkäthiekat	1	N_PAIKAT	obligatory
@@ -8322,7 +8323,6 @@ Pitkätlehdot	1	N_PIDOT	obligatory
 Pitkätluhdat	1	N_LUHDAT	obligatory
 Pitkätluodot	1	N_PIDOT	obligatory
 Pitkätmäet	1	N_MÄET	obligatory
-Pitkät	1	N_KÄRÄJÄT	obligatory
 Pitkätpalot	1	N_AIVOT	obligatory
 Pitkätportaat	1	N_PORTAAT	obligatory
 Pitkäträmäkät	1	N_SÄRKÄT	obligatory
@@ -8361,8 +8361,8 @@ Pohjasaaret	1	N_SAARET	obligatory
 Pohjassalonkalliot	1	N_RAUNIOT	obligatory
 Pohjastenpellot	1	N_AALLOT	obligatory
 Pohjasuonnurmet	1	N_SAKSET	obligatory
-pohjatiedot	1	N_PIDOT	obligatory
 Pohjat	1	N_JUHLAT	obligatory
+pohjatiedot	1	N_PIDOT	obligatory
 Pohjattomanlammit	1	N_LAMMIT	obligatory
 Pohjoisenniityt	1	N_NIITYT	obligatory
 Pohjoiset Sporadit	1	N_LASIT	obligatory
@@ -8454,10 +8454,10 @@ Poropellonsaaret	1	N_SAARET	obligatory
 Poropeskansaaret	1	N_SAARET	obligatory
 Porosaarennokkasaaret	1	N_SAARET	obligatory
 Porossalmenmäet	1	N_MÄET	obligatory
+porras	1	N_PORRAS	common
 Porraskalliot	1	N_RAUNIOT	obligatory
 Porraslammit	1	N_LAMMIT	obligatory
 Porrasmutkansuot	1	N_SUOT	obligatory
-porras	1	N_PORRAS	common
 Porrasojanniityt	1	N_NIITYT	obligatory
 Porrassaaret	1	N_SAARET	obligatory
 Porrassuot	1	N_SUOT	obligatory
@@ -8705,6 +8705,7 @@ putkivihma	1	N_KIRJA	common
 Putluikkarinvuoret	1	N_SAARET	obligatory
 Puttoinniityt	1	N_NIITYT	obligatory
 Puttosenkalliot	1	N_RAUNIOT	obligatory
+puu	1	N_PUU	common
 Puuhakalliot	1	N_RAUNIOT	obligatory
 Puukarit	1	N_LASIT	obligatory
 Puukaulaojankummut	1	N_KUMMUT	obligatory
@@ -8716,7 +8717,6 @@ Puukkolammit	1	N_LAMMIT	obligatory
 Puuluodot	1	N_PIDOT	obligatory
 puumuurat	1	N_JUHLAT	obligatory
 Puuniemensaaret	1	N_SAARET	obligatory
-puu	1	N_PUU	common
 puuosa	1	N_VOIMA	common
 puupiikkisika	1	N_VIKA	common
 puupäästäinen	1	N_KYLKIÄINEN	common
@@ -8812,11 +8812,11 @@ päitset	1	N_RIPSET	obligatory
 Päivilänkummut	1	N_KUMMUT	obligatory
 Päiväkarit	1	N_LASIT	obligatory
 Päiväkarrat	1	N_KARRAT	obligatory
+Päivän Nuoret	1	N_SAARET	obligatory
 Päiväniemenkarit	1	N_LASIT	obligatory
 päivänkorento	1	N_TUNTO	common
 päivänliljakasvi	1	N_RUUVI	common
 päivännoutokasvi	1	N_RUUVI	common
-Päivän Nuoret	1	N_SAARET	obligatory
 päiväpetolintu	1	N_LINTU	common
 päivätanssit	1	N_LASIT	obligatory
 Päivättömänmäet	1	N_MÄET	obligatory
@@ -8941,8 +8941,8 @@ raakavihannes	1	N_VAKUUTUS	common
 Raakejärvenharjut	1	N_HOUSUT	obligatory
 Raakelantot	1	N_ROITOT	obligatory
 Raakunlammit	1	N_LAMMIT	obligatory
-Raaminkalliot	1	N_RAUNIOT	obligatory
 raami	1	N_RUUVI	common
+Raaminkalliot	1	N_RAUNIOT	obligatory
 Raantisenluodot	1	N_PIDOT	obligatory
 Raanurääsikönmatkuet	1	N_MATKUET	obligatory
 Raanurääsiköt	1	N_TÖLPÄKÖT	obligatory
@@ -9115,9 +9115,9 @@ Rapinaluolat	1	N_JUHLAT	obligatory
 Rapinanevat	1	N_VARAT	obligatory
 Rapionluodot	1	N_PIDOT	obligatory
 Raposaaret	1	N_SAARET	obligatory
+rappu	1	N_LIPPU	common
 Rappukalliot	1	N_RAUNIOT	obligatory
 rappunen	1	N_AAKKOSTAMINEN	common
-rappu	1	N_LIPPU	common
 Rapsukanpellot	1	N_AALLOT	obligatory
 rapujuhlat	1	N_JUHLAT	obligatory
 rapukestit	1	N_PINSETIT	obligatory
@@ -9170,8 +9170,8 @@ rauhanturvajoukot	1	N_JOUKOT	obligatory
 Rauhasaaret	1	N_SAARET	obligatory
 Rauhastonsaaret	1	N_SAARET	obligatory
 Rauhionniityt	1	N_NIITYT	obligatory
-Raumankalliot	1	N_RAUNIOT	obligatory
 Rauman Työväen Urheilijat	1	N_MARKKINAT	obligatory
+Raumankalliot	1	N_RAUNIOT	obligatory
 Rauniosaaret	1	N_SAARET	obligatory
 Rauniovedenluodot	1	N_PIDOT	obligatory
 Rauniovedensaaret	1	N_SAARET	obligatory
@@ -9241,9 +9241,9 @@ Renssinkankaat	1	N_RENKAAT	obligatory
 Rentalesaaret	1	N_SAARET	obligatory
 Renttelmäkummut	1	N_KUMMUT	obligatory
 repale	1	A_AHNE	common
+repale	2	N_ASTE	common
 Repaleet	1	N_HIUTALEET	obligatory
 Repalejärvet	1	N_RIPSET	obligatory
-repale	1	N_ASTE	common
 Repalepahtaat	1	N_TEHTAAT	obligatory
 Repalesaaret	1	N_SAARET	obligatory
 Repohaudat	1	N_RAUDAT	obligatory
@@ -9382,14 +9382,14 @@ Rinteenlammit	1	N_LAMMIT	obligatory
 rintsikat	1	N_SILAKAT	obligatory
 Riomäenkalliot	1	N_RAUNIOT	obligatory
 Ripakankarit	1	N_LASIT	obligatory
-Ripekesaaret	1	N_SAARET	obligatory
 ripe	1	N_RIPE	common
+Ripekesaaret	1	N_SAARET	obligatory
 Ripovuoret	1	N_SAARET	obligatory
 rippisanat	1	N_VARAT	obligatory
 Rippuvuononsaaret	1	N_SAARET	obligatory
 ripsi	1	N_KIVI	common
-ripsulisko	1	N_TALO	common
 ripsu	1	N_ASU	common
+ripsulisko	1	N_TALO	common
 risa	1	N_KIRJA	common
 Riskinsaaret	1	N_SAARET	obligatory
 Riskonkarrat	1	N_KARRAT	obligatory
@@ -9410,8 +9410,8 @@ Ristikalliot	1	N_RAUNIOT	obligatory
 Ristikivenpellot	1	N_AALLOT	obligatory
 Ristikurunnotkonkalliot	1	N_RAUNIOT	obligatory
 Ristikurunrämeet	1	N_RÄMEET	obligatory
-Ristilamminahot	1	N_AIVOT	obligatory
 Ristilammin Harjut	1	N_HOUSUT	obligatory
+Ristilamminahot	1	N_AIVOT	obligatory
 Ristilammit	1	N_LAMMIT	obligatory
 Ristiluodot	1	N_PIDOT	obligatory
 Ristimellanjärvet	1	N_RIPSET	obligatory
@@ -9708,8 +9708,8 @@ Rysmäkivet	1	N_RIPSET	obligatory
 Ryssäinhaudat	1	N_RAUDAT	obligatory
 Ryssänlammit	1	N_LAMMIT	obligatory
 Ryssäntorninkalliot	1	N_RAUNIOT	obligatory
-rystynen	1	N_KYLKIÄINEN	common
 rysty	1	N_KÄRRY	common
+rystynen	1	N_KYLKIÄINEN	common
 Rysälahdensaaret	1	N_SAARET	obligatory
 Rysä-Pihlavaiset	1	N_RAPPUSET	obligatory
 Rytijängänlehdot	1	N_PIDOT	obligatory
@@ -9898,8 +9898,8 @@ sailiot	1	N_RAUNIOT	obligatory
 Saimaanlammit	1	N_LAMMIT	obligatory
 Saimonlammit	1	N_LAMMIT	obligatory
 Sainsaarenrämeet	1	N_RÄMEET	obligatory
-Saintienkaarrot	1	N_KAARROT	obligatory
 Saint Vincent ja Grenadiinit	1	N_LASIT	obligatory
+Saintienkaarrot	1	N_KAARROT	obligatory
 saippuahiutale	1	N_ASTE	common
 saippuamarjakasvi	1	N_RUUVI	common
 Sairaalanmäet	1	N_MÄET	obligatory
@@ -9927,13 +9927,13 @@ sakset	1	N_SAKSET	obligatory
 Sakshuhdanpellot	1	N_AALLOT	obligatory
 saksinokka	1	N_LUOKKA	common
 Saksinvuoret	1	N_SAARET	obligatory
+sala	1	N_KIRJA	common
 salaattiaines	1	N_VAKUUTUS	common
 salaismenot	1	N_AIVOT	obligatory
 Salakarit	1	N_LASIT	obligatory
 Salakivet	1	N_SAKSET	obligatory
 Salakkasaaret	1	N_SAARET	obligatory
 salamenot	1	N_AIVOT	obligatory
-sala	1	N_KIRJA	common
 Salapuronkalliot	1	N_RAUNIOT	obligatory
 Salaruukinmäet	1	N_MÄET	obligatory
 Salastinsaaret	1	N_SAARET	obligatory
@@ -9972,8 +9972,8 @@ Salmilamminharjut	1	N_HOUSUT	obligatory
 Salmilamminkalliot	1	N_RAUNIOT	obligatory
 Salmilamminkankaat	1	N_RENKAAT	obligatory
 Salmilammit	1	N_LAMMIT	obligatory
-Salminkalliot	1	N_RAUNIOT	obligatory
 Salmin Laatit	1	N_LASIT	obligatory
+Salminkalliot	1	N_RAUNIOT	obligatory
 Salmisaaret	1	N_SAARET	obligatory
 Salmisenlammit	1	N_LAMMIT	obligatory
 Salmisensuot	1	N_SUOT	obligatory
@@ -9985,16 +9985,16 @@ Salmunniityt	1	N_NIITYT	obligatory
 Salohaat	1	N_PAIKAT	obligatory
 Salolammit	1	N_LAMMIT	obligatory
 Salomonsaaret	1	N_SAARET	obligatory
+Salon Palloilijat	1	N_MARKKINAT	obligatory
+Salon Seudun Sanomat	1	N_JUHLAT	obligatory
 Salonahonniityt	1	N_NIITYT	obligatory
 Salonkalliot	1	N_RAUNIOT	obligatory
 Salonkankaat	1	N_RENKAAT	obligatory
 Salonniitut	1	N_NIITUT	obligatory
 Salonniityt	1	N_NIITYT	obligatory
-Salon Palloilijat	1	N_MARKKINAT	obligatory
 Salonpalstanniitut	1	N_NIITUT	obligatory
 Salonpellot	1	N_AALLOT	obligatory
 Salonpäänsaaret	1	N_SAARET	obligatory
-Salon Seudun Sanomat	1	N_JUHLAT	obligatory
 Salonteet	1	N_SALONTEET	obligatory
 Salosenkalliot	1	N_RAUNIOT	obligatory
 Salot	1	N_AIVOT	obligatory
@@ -10046,6 +10046,7 @@ Sankarit	1	N_FARMARIT	obligatory
 Sannonkarrat	1	N_KARRAT	obligatory
 sanomakellot	1	N_AIVOT	obligatory
 sanomat	1	N_JUHLAT	obligatory
+Sant Henrikin vuoret	1	N_SAARET	obligatory
 Santakarit	1	N_LASIT	obligatory
 Santalan peräniityt	1	N_NIITYT	obligatory
 Santamättäät	1	N_MÄTTÄÄT	obligatory
@@ -10054,7 +10055,6 @@ Santapakat	1	N_PAIKAT	obligatory
 Santavuoret	1	N_SAARET	obligatory
 santelikasvi	1	N_RUUVI	common
 Santerinpellot	1	N_AALLOT	obligatory
-Sant Henrikin vuoret	1	N_SAARET	obligatory
 Santoinvuoret	1	N_SAARET	obligatory
 saolat	1	N_MARKKINAT	obligatory
 Saparonkummut	1	N_KUMMUT	obligatory
@@ -10190,10 +10190,10 @@ Savitievat	1	N_VARAT	obligatory
 Savojärvet	1	N_RIPSET	obligatory
 Savolaisensaaret	1	N_SAARET	obligatory
 Savolanahonnevat	1	N_VARAT	obligatory
-Savonmäenniityt	1	N_NIITYT	obligatory
-Savonsaaret	1	N_SAARET	obligatory
 Savon Sanomat	1	N_JUHLAT	obligatory
 Savon Yrittäjät	1	N_KÄRÄJÄT	obligatory
+Savonmäenniityt	1	N_NIITYT	obligatory
+Savonsaaret	1	N_SAARET	obligatory
 Savottasaaret	1	N_SAARET	obligatory
 Savurämeet	1	N_RÄMEET	obligatory
 Savuslammet	1	N_LAMMET	obligatory
@@ -10273,8 +10273,8 @@ Serkkupojat	1	N_POJAT	obligatory
 Sermakkalompolot	1	N_PIPPALOT	obligatory
 Sestjoenjärvet	1	N_RIPSET	obligatory
 Setinkalliot	1	N_RAUNIOT	obligatory
-seurakuntavaalit	1	N_LASIT	obligatory
 seura	1	N_KIRJA	common
+seurakuntavaalit	1	N_LASIT	obligatory
 Seuruskummut	1	N_KUMMUT	obligatory
 Seychellit	1	N_LIIVIT	obligatory
 Shetlandinsaaret	1	N_SAARET	obligatory
@@ -10368,8 +10368,8 @@ Sileänsuonlammit	1	N_LAMMIT	obligatory
 Sileätkankaat	1	N_RENKAAT	obligatory
 Sileätlammit	1	N_LAMMIT	obligatory
 Siliätsaaret	1	N_SAARET	obligatory
-Siljatkalliot	1	N_RAUNIOT	obligatory
 Siljat	1	N_VARAT	obligatory
+Siljatkalliot	1	N_RAUNIOT	obligatory
 Silkkikarit	1	N_LASIT	obligatory
 silkkipensaskasvi	1	N_RUUVI	common
 Silkkisuot	1	N_SUOT	obligatory
@@ -10496,9 +10496,9 @@ Sivistystyönantajat	1	N_JUHLAT	obligatory
 sivuelin	1	N_ELIN	common
 Sivulammit	1	N_LAMMIT	obligatory
 Sivulankalliot	1	N_RAUNIOT	obligatory
+SK Ravintolat	1	N_MARKKINAT	obligatory
 skinkit	1	N_FÄNRIKIT	obligatory
 skorpionikorento	1	N_TUNTO	common
-SK Ravintolat	1	N_MARKKINAT	obligatory
 SKS-nuoret	1	N_SAARET	obligatory
 Soasojankummut	1	N_KUMMUT	obligatory
 Soffakalliot	1	N_RAUNIOT	obligatory
@@ -10544,12 +10544,12 @@ sokkojuoksiainen	1	N_AAKKOSTAMINEN	common
 Sokkosaaret	1	N_SAARET	obligatory
 sokkotreffit	1	N_LIIVIT	obligatory
 Sokolmalammit	1	N_LAMMIT	obligatory
+SOL Palvelut	1	N_NEUVOTTELUT	obligatory
 Solaisvuoret	1	N_SAARET	obligatory
 Soljastenkankaat	1	N_RENKAAT	obligatory
 Solleronsaaret	1	N_SAARET	obligatory
 Solmunsaaret	1	N_SAARET	obligatory
 Solotkoinnurmet	1	N_SAKSET	obligatory
-SOL Palvelut	1	N_NEUVOTTELUT	obligatory
 Solttilanvuoret	1	N_SAARET	obligatory
 Solttusaaret	1	N_SAARET	obligatory
 Solukot	1	N_LUOLIKOT	obligatory
@@ -10608,8 +10608,8 @@ Sortankalliot	1	N_RAUNIOT	obligatory
 Sortojärvet	1	N_RIPSET	obligatory
 Sortolammit	1	N_LAMMIT	obligatory
 Sortopuljut	1	N_HOUSUT	obligatory
-Sortoseljänlammit	1	N_LAMMIT	obligatory
 Sortoseljän Pikkulammit	1	N_LAMMIT	obligatory
+Sortoseljänlammit	1	N_LAMMIT	obligatory
 sortovuodet	1	N_VUODET	obligatory
 sortsit	1	N_LASIT	obligatory
 Sorttilantot	1	N_ROITOT	obligatory
@@ -10802,13 +10802,11 @@ Suomen lautamiehet	1	N_MIEHET	obligatory
 Suomen maajoukkueen kannattajat	1	N_JUHLAT	obligatory
 Suomen Messut	1	N_HOUSUT	obligatory
 Suomen musiikkikustantajat	1	N_JUHLAT	obligatory
-Suomenniemenkankaat	1	N_RENKAAT	obligatory
 Suomen Palveluasunnot	1	N_OPINNOT	obligatory
 Suomen Partiolaiset	1	N_RAPPUSET	obligatory
 Suomen pienkustantajat	1	N_JUHLAT	obligatory
 Suomen Pienyrittäjät	1	N_KÄRÄJÄT	obligatory
 Suomen Rauhanpuolustajat	1	N_JUHLAT	obligatory
-Suomenruotsalaiset kansankäräjät	1	N_KÄRÄJÄT	obligatory
 Suomen Russ-ponien Ystävät	1	N_KÄRÄJÄT	obligatory
 Suomen Säveltäjät	1	N_KÄRÄJÄT	obligatory
 Suomen Taidegraafikot	1	N_LUOLIKOT	obligatory
@@ -10822,6 +10820,8 @@ Suomen urheilutietäjät	1	N_KÄRÄJÄT	obligatory
 Suomen Yhteiskunta-alan Ylioppilaat	1	N_VALJAAT	obligatory
 Suomen Yksinelävät	1	N_KÄRÄJÄT	obligatory
 Suomen Yrittäjät	1	N_KÄRÄJÄT	obligatory
+Suomenniemenkankaat	1	N_RENKAAT	obligatory
+Suomenruotsalaiset kansankäräjät	1	N_KÄRÄJÄT	obligatory
 Suominen Kuitukankaat	1	N_RENKAAT	obligatory
 Suomujärvet	1	N_RIPSET	obligatory
 Suomunniemivaarat	1	N_VARAT	obligatory
@@ -10981,10 +10981,10 @@ Syrjälänsaaret	1	N_SAARET	obligatory
 Syrjänkalliot	1	N_RAUNIOT	obligatory
 Syrjänsaaret	1	N_SAARET	obligatory
 Syrjänsupat	1	N_KUOPAT	obligatory
+sysi	1	N_KÖYSI	common
 Sysikalliot	1	N_RAUNIOT	obligatory
 Sysilammensaaret	1	N_SAARET	obligatory
 Sysiluodot	1	N_PIDOT	obligatory
-sysi	1	N_KÖYSI	common
 Sysmänjoennurmet	1	N_SAKSET	obligatory
 Sysmänkankaat	1	N_RENKAAT	obligatory
 Syvähaudanharjut	1	N_HOUSUT	obligatory
@@ -11191,8 +11191,8 @@ Taljakummut	1	N_KUMMUT	obligatory
 Talkkunalammit	1	N_LAMMIT	obligatory
 talkoo	1	N_TIENOO	common
 Talkoosaaret	1	N_SAARET	obligatory
-talkootanssit	1	N_LASIT	obligatory
 talkoot	1	N_TALKOOT	obligatory
+talkootanssit	1	N_LASIT	obligatory
 Talkoovuoret	1	N_SAARET	obligatory
 Tallinjalankalliot	1	N_RAUNIOT	obligatory
 Tallinsalvankosket	1	N_SAKSET	obligatory
@@ -11250,9 +11250,9 @@ Tanjasaaret	1	N_SAARET	obligatory
 Tankarit	1	N_FARMARIT	obligatory
 tankiot	1	N_RAUNIOT	obligatory
 tanrekit	1	N_PANKIT	obligatory
+tanssi	1	N_RUUVI	common
 tanssiaiset	1	N_RAPPUSET	obligatory
 tanssihäät	1	N_HÄÄT	obligatory
-tanssi	1	N_RUUVI	common
 Tanssisaaret	1	N_SAARET	obligatory
 Tanteereenviidat	1	N_RAUDAT	obligatory
 Tantereet	1	N_HIUTALEET	obligatory
@@ -11291,8 +11291,8 @@ Taulukarit	1	N_LASIT	obligatory
 Taurassaaret	1	N_SAARET	obligatory
 Tauriaissaaret	1	N_SAARET	obligatory
 Tautiahot	1	N_AIVOT	obligatory
-tavara-arpajaiset	1	N_RAPPUSET	obligatory
 tavara	1	N_MAKKARA	common
+tavara-arpajaiset	1	N_RAPPUSET	obligatory
 Tavastinrämeet	1	N_RÄMEET	obligatory
 Taviahot	1	N_AIVOT	obligatory
 Tavikankaat	1	N_RENKAAT	obligatory
@@ -11386,10 +11386,10 @@ Tervalentäjät	1	N_KÄRÄJÄT	obligatory
 Tervaluodot	1	N_PIDOT	obligatory
 Tervanevanniityt	1	N_NIITYT	obligatory
 Tervaniemensaaret	1	N_SAARET	obligatory
+tervas	1	N_VAKUUTUS	common
 Tervasaaret	1	N_SAARET	obligatory
 Tervaskorvenkydöt	1	N_KYDÖT	obligatory
 Tervasmäen Saukkolammit	1	N_LAMMIT	obligatory
-tervas	1	N_VAKUUTUS	common
 Tervasseljänrämeet	1	N_RÄMEET	obligatory
 Tervastulisaaret	1	N_SAARET	obligatory
 Tervasuot	1	N_SUOT	obligatory
@@ -11521,8 +11521,8 @@ Toivakkaanniitut	1	N_NIITUT	obligatory
 Toivalan Urheilijat	1	N_MARKKINAT	obligatory
 Toivarinpellot	1	N_AALLOT	obligatory
 toive	1	N_ASTE	common
-Tokonkivet	1	N_SAKSET	obligatory
 TOK Ravintolat	1	N_MARKKINAT	obligatory
+Tokonkivet	1	N_SAKSET	obligatory
 Toljamonkummut	1	N_KUMMUT	obligatory
 Tollankalliot	1	N_RAUNIOT	obligatory
 Tollanmäet	1	N_MÄET	obligatory
@@ -11561,9 +11561,9 @@ Tornikalliot	1	N_RAUNIOT	obligatory
 Torninkalliot	1	N_RAUNIOT	obligatory
 Tornionkalliot	1	N_RAUNIOT	obligatory
 Torolehdontyvet	1	N_RIPSET	obligatory
+Torpan Pojat	1	N_JUHLAT	obligatory
 Torpanniitut	1	N_NIITUT	obligatory
 Torpanpellot	1	N_AALLOT	obligatory
-Torpan Pojat	1	N_JUHLAT	obligatory
 Torpanvuoret	1	N_SAARET	obligatory
 torut	1	N_HOUSUT	obligatory
 Torvensaaret	1	N_SAARET	obligatory
@@ -11882,6 +11882,7 @@ ukkohousut	1	N_HOUSUT	obligatory
 Ukkolankalliot	1	N_RAUNIOT	obligatory
 Ukkosaaret	1	N_SAARET	obligatory
 Ukkosenniityt	1	N_NIITYT	obligatory
+Ukon Salmiset	1	N_RAPPUSET	obligatory
 Ukonharjut	1	N_HOUSUT	obligatory
 Ukonhaudat	1	N_RAUDAT	obligatory
 Ukonhautoinniitut	1	N_NIITUT	obligatory
@@ -11902,7 +11903,6 @@ Ukonniityt	1	N_NIITYT	obligatory
 Ukonojanlatvat	1	N_VARAT	obligatory
 Ukonpalonkosket	1	N_SAKSET	obligatory
 Ukonsaaret	1	N_SAARET	obligatory
-Ukon Salmiset	1	N_RAPPUSET	obligatory
 Ukonvirrat	1	N_KARRAT	obligatory
 Ukonvuoret	1	N_SAARET	obligatory
 Uksemaharjut	1	N_HOUSUT	obligatory
@@ -12042,8 +12042,8 @@ Vaaranmäet	1	N_MÄET	obligatory
 Vaaranpellot	1	N_AALLOT	obligatory
 Vaaranperät	1	N_KÄRÄJÄT	obligatory
 Vaaranpäällyssuot	1	N_SUOT	obligatory
-Vaaranpäänlammit	1	N_LAMMIT	obligatory
 Vaaranpään Pikkulammit	1	N_LAMMIT	obligatory
+Vaaranpäänlammit	1	N_LAMMIT	obligatory
 Vaaransaaret	1	N_SAARET	obligatory
 Vaarantakasenlammit	1	N_LAMMIT	obligatory
 Vaarantauslammit	1	N_LAMMIT	obligatory
@@ -12266,8 +12266,8 @@ Vasikkolammit	1	N_LAMMIT	obligatory
 vastaanottajaiset	1	N_VIHKIÄISET	obligatory
 vastaanottojuhlallisuudet	1	N_OIKEUDET	obligatory
 vastarintajoukot	1	N_JOUKOT	obligatory
-Vastaslammit	1	N_LAMMIT	obligatory
 vastas	1	N_VAKUUTUS	common
+Vastaslammit	1	N_LAMMIT	obligatory
 vastattavat	1	N_JUHLAT	obligatory
 Vastuusaaret	1	N_SAARET	obligatory
 Vasusaaret	1	N_SAARET	obligatory
@@ -12287,8 +12287,8 @@ Vattusaaret	1	N_SAARET	obligatory
 Vatvuoret	1	N_SAARET	obligatory
 Vauhkosenahot	1	N_AIVOT	obligatory
 Vaulonkankaat	1	N_RENKAAT	obligatory
-Vaunulammit	1	N_LAMMIT	obligatory
 vaunu	1	N_ASU	common
+Vaunulammit	1	N_LAMMIT	obligatory
 vauvakutsut	1	N_HOUSUT	obligatory
 vauvanvaunut	1	N_HOUSUT	obligatory
 Vavekarit	1	N_LASIT	obligatory
@@ -12395,10 +12395,10 @@ Vesaluodot	1	N_PIDOT	obligatory
 Vesanenänpellot	1	N_AALLOT	obligatory
 Vesankarit	1	N_LASIT	obligatory
 Vesanniityt	1	N_NIITYT	obligatory
+Vesi- ja Kalatalousmiehet	1	N_MIEHET	obligatory
 Vesiaronkankaat	1	N_RENKAAT	obligatory
 Vesihaudankankaat	1	N_RENKAAT	obligatory
 vesihome	1	N_ASTE	common
-Vesi- ja Kalatalousmiehet	1	N_MIEHET	obligatory
 Vesijuoksunpellot	1	N_AALLOT	obligatory
 Vesikaarrot	1	N_KAARROT	obligatory
 vesikalvolliset	1	N_RAPPUSET	obligatory
@@ -12628,8 +12628,8 @@ Vittikkoselänkummut	1	N_KUMMUT	obligatory
 Vittikkotöyryt	1	N_PÖKSYT	obligatory
 Vittulammit	1	N_LAMMIT	obligatory
 viuhkaheinä	1	N_HÖPÖTTÄJÄ	common
-viuhkalehtikasvi	1	N_RUUVI	common
 viuhkalehti	1	N_LEHTI	common
+viuhkalehtikasvi	1	N_RUUVI	common
 viuhkasiipi	1	N_KILPI	common
 Viukarinsaaret	1	N_SAARET	obligatory
 Viululammit	1	N_LAMMIT	obligatory
@@ -12727,12 +12727,12 @@ Vähäheidinkalliot	1	N_RAUNIOT	obligatory
 Vähäjärvenkalliot	1	N_RAUNIOT	obligatory
 Vähäjärvenniitut	1	N_NIITUT	obligatory
 Vähä-Maatian kalliot	1	N_RAUNIOT	obligatory
+Vähän Maisaaren karit	1	N_LASIT	obligatory
+Vähän Sumuojan palot	1	N_AIVOT	obligatory
 Vähänjärvensaajot	1	N_AIVOT	obligatory
 Vähänkoskensaaret	1	N_SAARET	obligatory
 Vähänkuruntievat	1	N_VARAT	obligatory
-Vähän Maisaaren karit	1	N_LASIT	obligatory
 Vähänniitynvuoret	1	N_SAARET	obligatory
-Vähän Sumuojan palot	1	N_AIVOT	obligatory
 Vähänvuorenpellot	1	N_AALLOT	obligatory
 Vähän-Väikin mäet	1	N_MÄET	obligatory
 Vähäojanmetsät	1	N_KÄRÄJÄT	obligatory
@@ -12834,8 +12834,8 @@ yhtäläissiipiäiset	1	N_VIHKIÄISET	obligatory
 Ykköshuoneistot	1	N_PIPPALOT	obligatory
 Ykkössanomat	1	N_JUHLAT	obligatory
 yksityisolot	1	N_AIVOT	obligatory
-Ykspuisetluodot	1	N_PIDOT	obligatory
 Ykspuiset	1	N_RAPPUSET	obligatory
+Ykspuisetluodot	1	N_PIDOT	obligatory
 yleiskulu	1	N_ASU	common
 yleisopinnot	1	N_OPINNOT	obligatory
 Ylemmät Toimihenkilöt	1	N_JÄRJESTÖT	obligatory
@@ -12850,8 +12850,8 @@ Ylikrunninmatalat	1	N_KIHARAT	obligatory
 Ylilamminkummut	1	N_KUMMUT	obligatory
 Ylilammit	1	N_LAMMIT	obligatory
 Yli-Lismanpuljut	1	N_HOUSUT	obligatory
-Ylimmäisenkankaat	1	N_RENKAAT	obligatory
 Ylimmäisen Suolammit	1	N_LAMMIT	obligatory
+Ylimmäisenkankaat	1	N_RENKAAT	obligatory
 Ylimmäisensuonsaarekkeet	1	N_KUULOKKEET	obligatory
 Ylimmäisetlompolat	1	N_MARKKINAT	obligatory
 Yli-Naarman lammit	1	N_LAMMIT	obligatory
@@ -12863,8 +12863,8 @@ yliopisto-opinnot	1	N_OPINNOT	obligatory
 ylioppilaskirjoitukset	1	N_SERKUKSET	obligatory
 Ylirakat	1	N_PAIKAT	obligatory
 Ylisen Paulasuon vuoret	1	N_SAARET	obligatory
-Ylisetalat	1	N_KASTILJAT	obligatory
 yliset	1	N_VIHKIÄISET	obligatory
+Ylisetalat	1	N_KASTILJAT	obligatory
 Ylistaron Kilpa-Veljet	1	N_KÄRJET	obligatory
 Ylistenniityt	1	N_NIITYT	obligatory
 Ylisuvannonkankaat	1	N_RENKAAT	obligatory
@@ -12928,10 +12928,10 @@ Yösaaret	1	N_SAARET	obligatory
 Äijäkallaanharjut	1	N_HOUSUT	obligatory
 äijäkemut	1	N_HOUSUT	obligatory
 Äijälahdenniitut	1	N_NIITUT	obligatory
+Äijän Tulisijajärvet	1	N_RIPSET	obligatory
 Äijänjänkät	1	N_SÄRKÄT	obligatory
 Äijänpuljut	1	N_HOUSUT	obligatory
 Äijänsalonkalliot	1	N_RAUNIOT	obligatory
-Äijän Tulisijajärvet	1	N_RIPSET	obligatory
 Äijäsaaret	1	N_SAARET	obligatory
 Äimääkummut	1	N_KUMMUT	obligatory
 äitiysliivit	1	N_LIIVIT	obligatory
