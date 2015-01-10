@@ -12,6 +12,7 @@ ftb3_multichars= {
         '% A',
         '% V',
         '% N',
+        '% Part',
         '% Abbr',
         '% Pron',
         '% Num',
@@ -222,6 +223,7 @@ stuff2ftb3 = {"Bc": "#",
         "DEMONSTRATIVE": "% Dem", "QUANTOR": "% Qnt", "PERSONAL": "% Pers",
         "INDEFINITE": "% Indef", "INTERROGATIVE": "% Interr",
         "REFLEXIVE": "% Refl", "RELATIVE": "% Rel",
+        "PARTICLE": "% Part",
         "RECIPROCAL": "",
         "PUNCTUATION": "% Punct",
         "DASH": "% Dash",
@@ -352,9 +354,12 @@ def format_wordmap_lexc_ftb3(wordmap, format):
         else:
             wordmap['analysis'] = format_stuff_ftb3('ADVERBIAL') + \
                     format_stuff_ftb3('Nneg')
-    elif wordmap['particle']:
-        for pclass in wordmap['particle'].split('|'):
-            wordmap['analysis'] += format_stuff_ftb3(pclass)
+    elif wordmap['pos'] == 'PARTICLE':
+        if wordmap['particle']:
+            for pclass in wordmap['particle'].split('|'):
+                wordmap['analysis'] += format_stuff_ftb3(pclass)
+        else:
+            wordmap['analysis'] += format_stuff_ftb3('PARTICLE')
     else:
         print("not in FTB3 known poses or particle!\n", wordmap)
         exit(1)
