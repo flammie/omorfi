@@ -62,7 +62,11 @@ def main():
                         pass
                     else:
                         mrds += [mm.group(2)]
-                morphs = segments[0].output[segments[0].output.rfind("{STUB}"):].replace("{STUB}", "").replace("{MB}", ".")
+                stemfixes = segments[0].output[segments[0].output.rfind("{STUB}"):].replace("{STUB}", "")
+                if '{' in stemfixes:
+                    morphs = stemfixes[stemfixes.find("{"):].replace("{MB}", ".")
+                else:
+                    morphs = '0'
                 print(surf, '+'.join(lemmas), pos, '.'.join(mrds),
                         morphs, sep='|', end=' ', file=outfile)
             print(file=outfile)
