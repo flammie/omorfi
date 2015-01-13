@@ -47,8 +47,8 @@ def format_rules_regex(format, ruleset):
             regexstring += '.o.\n'
             regexstring += '[ ' + ' | '.join(fin_lowercase) + ']* -> 0 || ' +\
                     '[ ' + format_stuff('NOUN', format) + \
-                    format_stuff('NUMERAL', format) + \
-                    ']+ [? - %#]* _ [? - %#]*\n'
+                    ' | ' + format_stuff('NUMERAL', format) + \
+                    ']+ [? - %#]* _ [? - %#]* .#. \n'
             regexstring += '.o.\n'
             regexstring += '# Puncts without nom case\n'
             regexstring += '[ ' + format_stuff('Xnom', format) +\
@@ -60,7 +60,7 @@ def format_rules_regex(format, ruleset):
                     ' (->) ' + format_stuff('ABBREVIATION', format) +\
                     ' ' + format_stuff('Xnom', format) +\
                     ' ' + format_stuff('Nsg', format) +\
-                    '|| _ '
+                    ' || _ '
             regexstring += ';\n'
     elif ruleset == 'lemmatise':
         if format == 'ftb3':

@@ -366,7 +366,8 @@ generated/temporary.unbounded.hfst: generated/temporary.orth.hfst |\
 
 # lemmatisation is now built by messing with ftb3
 generated/omorfi.lemmatise.hfst: generated/temporary.ftb3.hfst generated/omorfi-ftb3-lemmatise.regex.hfst
-	$(HCOMP) $(HFST_FLAGS) $< generated/omorfi-ftb3-lemmatise.regex.hfst -o $@
+	$(HCOMP) $(HFST_FLAGS) $< generated/omorfi-ftb3-lemmatise.regex.hfst |\
+		$(HF2F) -f olw -o $@
 
 # 
 generated/omorfi.segment.hfst: generated/temporary.unbounded.hfst
