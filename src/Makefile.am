@@ -93,6 +93,8 @@ GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
 				 generated/omorfi.hyphenate.hfst \
 				 generated/omorfi.segment.hfst
 GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
+				  generated/omorfi-uppercase-first.twolc \
+				  generated/omorfi-recase-any.twolc \
 				  generated/omorfi-phon.twolc \
 				  generated/omorfi-zh.regex \
 				  generated/omorfi-sh.regex \
@@ -211,6 +213,9 @@ generated/omorfi-phon.twolc: generated/timestamp
 
 generated/omorfi-recase-any.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/generate-twolcs.py -r recase-any -o $@
+
+generated/omorfi-uppercase-any.twolc: generated/timestamp
+	$(PYTHON) $(srcdir)/generate-twolcs.py -r uppercase-any -o $@
 
 generated/omorfi-uppercase-first.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/generate-twolcs.py -r uppercase-first -o $@
@@ -474,14 +479,8 @@ generated/temporary-omor.relaxed.hfst: generated/temporary-omor.hyphenated.hfst 
 		$(HSUB) $(HFST_FLAGS) -f š -T generated/omorfi-sh.regex.hfst |\
 		$(HSUB) $(HFST_FLAGS) -f ž -T generated/omorfi-zh.regex.hfst -o $@
 
-# case variations
-generated/temporary-omor.orth.hfst: generated/temporary-omor.relaxed.hfst \
-	generated/omorfi-recase-any.twolc.hfst
-	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-recase-any.twolc.hfst |\
-		$(HMIN) $(HFST_FLAGS) -o $@
-
 # remove remaining morph boundaries at this point
-generated/temporary-omor.unbounded.hfst: generated/temporary-omor.orth.hfst |\
+generated/temporary-omor.unbounded.hfst: generated/temporary-omor.relaxed.hfst |\
 	generated/omorfi-remove-boundaries.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
