@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --nodes=1
+#SBATCH -p longrun
+#SBATCH --mem-per-cpu=4096
+#SBATCH -o @PACKAGE_NAME@-tests.o%j
+#SBATCH -e @PACKAGE_NAME@-tests.e%J
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=@SLURM_EMAIL@
+#SBATCH -J @PACKAGE_NAME@-tests
+#SBATCH -t 36:00:00
+
+WORK="@abs_top_builddir@/test/"
+
+cd ${WORK}/
+
+make -j 8 check 
+
