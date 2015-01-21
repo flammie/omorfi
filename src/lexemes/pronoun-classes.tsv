@@ -71,7 +71,7 @@ moni	1	PRON_MONI	quantor
 monta	1	PRON_MONTA	quantor
 muuan	1	PRON_MUUAN	quantor|indefinite
 muudan	1	PRON_MUUAN	quantor|indefinite
-muu	1	PRON_MUU	quantor
+muu	3	PRON_MUU	quantor
 muutama	1	PRON_MUUTAMA	quantor
 mä	1	PRON_MÄ	personal|sg1
 mää	1	PRON_MÄÄ	personal|sg1
@@ -126,7 +126,7 @@ useampi	1	PRON_USEAMPI	quantor|comp
 usea	1	PRON_USEA	quantor
 usein	1	PRON_USEIMMAT	quantor|superl
 yksikään	1	PRON_KOKO	quantor
-yksi	1	PRON_YKSI	quantor
+yksi	2	PRON_YKSI	quantor
 yks	1	PRON_MÄÄ	quantor
 ylempi	1	A_LÄHEMPI	comp
 ylin	1	A_SISIN	Superl
