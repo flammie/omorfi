@@ -114,6 +114,7 @@ FTB3_GENERATED=generated/omorfi-ftb3.lexc \
 endif
 if WANT_OMOR
 OMOR_AUTOMATA=generated/omorfi-omor.analyse.hfst \
+			  generated/omorfi-omor_recased.analyse.hfst \
 			  generated/omorfi-omor.generate.hfst
 OMOR_GENERATED=generated/omorfi-omor.lexc \
 			   generated/omorfi-omor.reweight \
@@ -506,7 +507,13 @@ generated/temporary.omor.hfst: generated/temporary-omor.weighted.hfst
 
 # finalising
 generated/omorfi-omor.analyse.hfst: generated/temporary.omor.hfst
-	$(HF2F) -f olw -o $@ -i $<
+	$(HF2F) $(HFST_FLAGS) -f olw -o $@ -i $<
+
+generated/omorfi-omor_recased.analyse.hfst: generated/temporary.omor.hfst generated/omorfi-recase-any.twolc.hfst
+	$(HINV) $(HFST_FLAGS) $< |\
+		$(HIC) $(HFST_FLAGS) - generated/omorfi-recase-any.twolc.hfst |\
+		$(HINV) $(HFST_FLAGS) |\
+		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
 # create generator from analyzer
 generated/omorfi-omor.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
