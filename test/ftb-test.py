@@ -78,6 +78,10 @@ def main():
                 deduct_forgn += 1
                 deduct_results += 1
                 print_in = False
+            elif 'Unkwn' in ftbanals:
+                deduct_unkwn += 1
+                deduct_results += 1
+                print_in = False
             else:
                 print("NORESULTS:", ftbsurf, ftblemma, ftbanals, sep="\t",
                     file=options.outfile)
