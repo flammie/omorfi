@@ -19,6 +19,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.HashMap;
 
 import net.sf.hfst.Transducer;
 import net.sf.hfst.TransducerHeader;
@@ -61,6 +62,13 @@ public class Omorfi
         lowercase = true;
         uppercase = true;
         titlecase = true;
+        analysers = new HashMap<String, Transducer>();
+        tokenisers = new HashMap<String, Transducer>();
+        lemmatisers = new HashMap<String, Transducer>();
+        generators = new HashMap<String, Transducer>();
+        hyphenators = new HashMap<String, Transducer>();
+        acceptors = new HashMap<String, Transducer>();
+        segmenters = new HashMap<String, Transducer>();
     }
 
     /**
@@ -72,8 +80,25 @@ public class Omorfi
      * with the word omorfi, followed by any extras, such as the tagset for
      * analysis or generation.
      */
-    public void load(String path) throws java.io.FileNotFoundException, java.io.IOException
+    public void load(String path) throws java.io.FileNotFoundException,
+           java.io.IOException, net.sf.hfst.FormatException
     {
+        String filename = path.substring(path.lastIndexOf("/") + 1);
+        System.out.println(filename);
+        String id = filename.substring(0, filename.indexOf(".") + 1);
+        if (filename.indexOf(".") == filename.lastIndexOf("."))
+        {
+            return;
+        }
+        String type = filename.substring(filename.indexOf(".") + 1, 
+                filename.lastIndexOf("."));
+        if ((!type.equals("analyse")) && (!type.equals("generate")) &&
+                (!type.equals("accept")) && (!type.equals("tokenise")) &&
+                (!type.equals("lemmatise")) && (!type.equals("segment")))
+        {
+            System.out.println(filename + ": Unrecognised type " + type);
+            return;
+        }
         FileInputStream transducerfile = new FileInputStream(path);
         TransducerHeader h = new TransducerHeader(transducerfile);
         DataInputStream charstream = new DataInputStream(transducerfile);
@@ -90,37 +115,38 @@ public class Omorfi
             t = new UnweightedTransducer(transducerfile,
                     h, a);
         }
-        String filename = path.substring(path.lastIndexOf("/"));
-        String id = filename.substring(0, filename.indexOf("."));
-        String type = filename.substring(filename.indexOf("."), 
-                filename.lastIndexOf("."));
-        if (type == "analyse")
+        if (type.equals("analyse"))
         {
+            System.out.println(filename + " = " + type + " : " + id);
             analysers.put(id, t);
         }
-        else if (type == "generate")
+        else if (type.equals("generate"))
         {
             generators.put(id, t);
         }
-        else if (type == "accept")
+        else if (type.equals("accept"))
         {
             acceptors.put(id, t);
         }
-        else if (type == "tokenise")
+        else if (type.equals("tokenise"))
         {
             tokenisers.put(id, t);
         }
-        else if (type == "lemmatize")
+        else if (type.equals("lemmatise"))
         {
             lemmatisers.put(id, t);
         }
-        else if (type == "hyphenate")
+        else if (type.equals("hyphenate"))
         {
             hyphenators.put(id, t);
         }
-        else if (type == "segment")
+        else if (type.equals("segment"))
         {
             segmenters.put(id, t);
+        }
+        else
+        {
+            System.out.println(filename + ": Unrecognised type " + type);
         }
     }
 
@@ -131,12 +157,24 @@ public class Omorfi
            java.io.IOException
     {
         File dir = new File(path);
+        if (!dir.exists())
+        {
+            throw new java.io.FileNotFoundException();
+        }
         File[] files = dir.listFiles();
         for (File file : files)
         {
             if (file.toString().matches(".*\\.hfst$"))
             {
-                load(file.toString());
+                try
+                {
+                    load(file.toString());
+                }
+                catch (net.sf.hfst.FormatException fe)
+                {
+                    // pass
+                    System.out.println(file + ":" + fe);
+                }
             }
         }
     }
@@ -159,7 +197,13 @@ public class Omorfi
         }
         for (String path : stdpaths)
         {
-            loadAll(path);
+            try {
+                loadAll(path);
+            }
+            catch (java.io.FileNotFoundException fnfe)
+            {
+                // pass
+            }
         }
     }
 
@@ -213,13 +257,27 @@ public class Omorfi
     public Collection<String> analyse(String wf) throws net.sf.hfst.NoTokenizationException
     {
         Collection<String> anals = new ArrayList<String>();
-        if (analysers.containsKey("default"))
+        try
         {
-            anals = analyse(wf, "default");
+            if (analysers.containsKey("default"))
+            {
+                anals = analyse(wf, "default");
+            }
         }
-        if ((anals.size() == 0) && (analysers.containsKey("omorfi-omor")))
+        catch (NullPointerException npe)
         {
-            anals = analyse(wf, "omorfi-omor");
+            // pass
+        }
+        try
+        {
+            if ((anals.size() == 0) && (analysers.containsKey("omorfi-omor")))
+            {
+                anals = analyse(wf, "omorfi-omor");
+            }
+        }
+        catch (NullPointerException npe)
+        {
+            // pass
         }
         if (anals.size() == 0)
         {
@@ -250,9 +308,16 @@ public class Omorfi
     public Collection<String> tokenise(String line)
     {
         Collection<String> tokens = new ArrayList<String>();
-        if (tokenisers.containsKey("omorfi"))
+        try
         {
-            tokens = tokenise(line, "omorfi");
+            if (tokenisers.containsKey("omorfi"))
+            {
+                tokens = tokenise(line, "omorfi");
+            }
+        }
+        catch (NullPointerException npe)
+        {
+            // pass
         }
         if (tokens.size() == 0)
         {
@@ -295,7 +360,9 @@ public class Omorfi
         Omorfi omorfi = new Omorfi();
         try
         {
+            System.out.println("Reading all in system locations");
             omorfi.loadAll();
+            System.out.println("Read all.");
         }
         catch (java.io.FileNotFoundException fnfe)
         {
@@ -310,6 +377,8 @@ public class Omorfi
         String line;
         try
         {
+            System.out.print("> ");
+            System.out.flush();
             while ((line = br.readLine()) != null) 
             {
                 Collection<String> tokens = omorfi.tokenise(line);
@@ -321,6 +390,7 @@ public class Omorfi
                         System.out.println(anal);
                     }
                 }
+                System.out.print("> ");
             }
         }
         catch (java.io.IOException ioe)

@@ -150,7 +150,7 @@ yksi	1	NUM_YKSI	cardinal
 yksisentoista	1	NUM_KYMMENTÄ	cardinal
 yksitoista	1	NUM_KYMMENTÄ	cardinal
 yks	1	NUM_KYMMENTÄ	cardinal
-ensimmäinen	1	NUM_ENSIMMÄINEN	ordinal
+ensimmäinen	2	NUM_ENSIMMÄINEN	ordinal
 kahdeksaskymmenes	1	NUM_NELJÄS	ordinal
 kahdeksas	1	NUM_KOLMAS	ordinal
 kahdeksassadas	1	NUM_KOLMAS	ordinal

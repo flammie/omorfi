@@ -158,6 +158,10 @@ $ omorfi-generate.sh
 
 === Advanced usage ===
 
+For serious business, the convenience shell-scripts are not usually sufficient. We offer bindings to several popular programming languages as well as low-level access to the automata either via command-line or the external programming libraries from the toolkit generating the automata.
+
+==== Python ====
+
 Python interface (check wiki page OmorfiPy and api documentation for details):
 
 {{{
@@ -179,13 +183,19 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 }}}
 
+==== Java ====
+
 Java class (check wiki page OmorfiJava and api documentation for details):
 
 {{{
-java com.googlecode.omorfi.Omorfi
+java -Xmx1024m com.googlecode.omorfi.Omorfi
 }}}
 
-Hfst command-line (for further information check HFST wiki):
+Especially loading all automata from system paths requires more memory than java typically gives you, so use `-Xmx` switch.
+
+==== Raw automata ====
+
+The installed files are in `$prefix/hfst/fi`:
 
 {{{
 $ ls /usr/local/share/hfst/fi/
@@ -193,6 +203,15 @@ omorfi.accept.hfst       omorfi-omor.generate.hfst
 fin-autogen.hfst         omorfi-ftb3.analyse.hfst   omorfi.segment.hfst
 fin-automorf.hfst        omorfi-ftb3.generate.hfst  omorfi.tokenise.hfst
 omorfi.hyphenate.hfst    omorfi.lemmatise.hfst      omorfi-omor.analyse.hfst
+}}}
+
+
+==== HFST tools ====
+
+You can directly access specific automata with HFST tools (detailed in their
+man pages and [wiki https://kitwiki.csc.fi/]):
+
+{{{
 $ hfst-lookup /usr/local/share/hfst/fi/omorfi.segment.hfst 
 > talossani
 talossani	talo{STUB}{MB}ssa{MB}ni	0,000000
