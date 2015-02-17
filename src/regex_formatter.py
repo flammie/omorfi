@@ -48,7 +48,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '[ ' + ' | '.join(fin_lowercase) + ']* -> 0 || ' +\
                     '[ ' + format_stuff('NOUN', format) + \
                     ' | ' + format_stuff('NUMERAL', format) + \
-                    ']+ [? - %#]* _ [? - %#]* .#. \n'
+                    '] [? - %#]* _ [? - %#]* .#. \n'
             regexstring += '.o.\n'
             regexstring += '# Puncts without nom case\n'
             regexstring += '[ ' + format_stuff('Xnom', format) +\
@@ -58,9 +58,22 @@ def format_rules_regex(format, ruleset):
             regexstring += '# random puncts are abbr\n'
             regexstring += format_stuff('PUNCTUATION', format) +\
                     ' (->) ' + format_stuff('ABBREVIATION', format) +\
+                    ' || _ '
+            regexstring += '.o.\n'
+            regexstring += '# abbrs are nom sg’s too\n' 
+            regexstring += format_stuff('ABBREVIATION', format) +\
+                    ' (->) ' + format_stuff('ABBREVIATION', format) +\
                     ' ' + format_stuff('Xnom', format) +\
                     ' ' + format_stuff('Nsg', format) +\
                     ' || _ '
+            regexstring += '.o.\n'
+            regexstring += '# suffixes unmarked why of course\n'
+            regexstring += '%# %- -> %# || _ \n'
+            regexstring += '.o.\n'
+            regexstring += '# FTB is a bit silly with dashes\n'
+            regexstring += '% Dash -> % EmDash || — ?* _ \n'
+            regexstring += '.o.\n'
+            regexstring += '% Dash -> % EnDash || – ?* _ \n'
             regexstring += ';\n'
     elif ruleset == 'lemmatise':
         if format == 'ftb3':
