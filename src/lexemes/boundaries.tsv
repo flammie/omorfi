@@ -62373,7 +62373,8 @@ voimapolitiikka	1	N_POLITIIKKA	voima{WB}politiikka
 voimapyörä	1	N_HÖPÖTTÄJÄ	voima{WB}pyörä
 voimasakset	1	N_SAKSET	voima{WB}sakset
 voimasana	1	N_KIRJA	voima{WB}sana
-voimassaoloaika	1	N_AIKA	voimassaolo{WB}aika
+voimassaolo	1	N_TALO	voimassa{WB}olo
+voimassaoloaika	1	N_AIKA	voimassa{WB}olo{WB}aika
 voimasuhde	1	N_LUODE	voima{WB}suhde
 voimatalous	1	N_AAKKOSELLISUUS	voima{WB}talous
 voimatasapaino	1	N_TALO	voima{WB}tasa{WB}paino
