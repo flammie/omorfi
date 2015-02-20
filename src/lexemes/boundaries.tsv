@@ -10669,7 +10669,7 @@ isoköynnöskrassi	1	N_RUUVI	isoköynnös{WB}krassi
 isolehtikuonolepakko	1	N_LEPAKKO	isolehtikuono{WB}lepakko
 isolehtinen	1	A_KYLMÄJÄRKINEN	iso{WB}lehtinen
 isoleikko	1	N_UKKO	iso{WB}leikko
-isolepinkäinen	1	N_KYLKIÄINEN	iso{WB}lepinkäinen
+isolepinkäinen	2	N_KYLKIÄINEN	iso{WB}lepinkäinen
 isoleukainen	1	A_AAKKOSELLINEN	iso{WB}leukainen
 isolimaska	1	N_KITARA	iso{WB}limaska
 isolinnunruoho	1	N_TALO	iso{WB}linnunruoho
@@ -15020,7 +15020,6 @@ katselijajoukko	1	N_UKKO	katselija{WB}joukko
 katselukirja	1	N_KIRJA	katselu{WB}kirja
 katselulaite	1	N_OSOITE	katselu{WB}laite
 katseyhteys	1	N_KÖYHYYS	katse{WB}yhteys
-katsojaiset	1	N_VIHKIÄISET	katsojais{WB}et
 katsojajoukko	1	N_UKKO	katsoja{WB}joukko
 katsojakunta	1	N_KUNTA	katsoja{WB}kunta
 katsomapaikka	1	N_POLITIIKKA	katsoma{WB}paikka
@@ -20386,7 +20385,7 @@ kuivajää	1	N_PÄÄ	kuiva{WB}jää
 kuivakakku	2	N_TIKKU	kuiva{WB}kakku
 kuivakiskoinen	1	A_AAKKOSELLINEN	kuiva{WB}kiskoinen
 kuivakiskoisesti	1	PCLE_NOPEASTI	kuiva{WB}kiskoisesti
-kuivakukka	1	N_LUOKKA	kuiva{WB}kukka
+kuivakukka	2	N_LUOKKA	kuiva{WB}kukka
 kuivakuolio	1	N_TUOMIO	kuiva{WB}kuolio
 kuivakylki	1	N_JÄRKI	kuiva{WB}kylki
 kuivakäymälä	1	N_SIIVILÄ	kuiva{WB}käymälä
@@ -35081,7 +35080,7 @@ pahantuulinen	1	A_AAKKOSELLINEN	pahan{WB}tuulinen
 pahantuulisesti	1	PCLE_NOPEASTI	pahan{WB}tuulisesti
 pahantuulisuus	1	N_AAKKOSELLISUUS	pahan{WB}tuulisuus
 pahapuolukka	1	N_LUSIKKA	paha{WB}puolukka
-pahaputki	1	N_ONNI	paha{WB}putki
+pahaputki	2	N_ONNI	paha{WB}putki
 pahasuinen	1	A_AAKKOSELLINEN	paha{WB}suinen
 pahatapainen	1	A_AAKKOSELLINEN	paha{WB}tapainen
 pahaääninen	1	A_KYLMÄJÄRKINEN	paha{WB}ääninen
@@ -35599,7 +35598,7 @@ palautuspullo	1	N_TALO	palautus{WB}pullo
 palautuspyyntö	1	N_KÄÄNTÖ	palautus{WB}pyyntö
 palavahenkinen	1	A_KYLMÄJÄRKINEN	palava{WB}henkinen
 palavakivi	2	N_KIVI	palava{WB}kivi
-palavapensas	1	N_PATSAS	palava{WB}pensas
+palavapensas	2	N_PATSAS	palava{WB}pensas
 palavarakkaus	2	N_AAKKOSELLISUUS	palava{WB}rakkaus
 palavasieluinen	1	A_AAKKOSELLINEN	palava{WB}sieluinen
 palavatpensaat	1	N_VALJAAT	palava{WB}tpensaat
@@ -42130,7 +42129,6 @@ päättelykyky	1	N_KYKY	päättely{WB}kyky
 päättelykykyinen	1	A_KYLMÄJÄRKINEN	päättely{WB}kykyinen
 päättymisaika	1	N_AIKA	päättymis{WB}aika
 päättymispäivä	1	N_HÖPÖTTÄJÄ	päättymis{WB}päivä
-päättäjäiset	1	N_VIHKIÄISET	päättäjäis{WB}et
 päättäjäisillallinen	1	A_AAKKOSELLINEN	päättäjäis{WB}illallinen
 päättäjäisillallinen	2	N_AAKKOSTAMINEN	päättäjäis{WB}illallinen
 päättäjäisillanvietto	1	N_HIRTTO	päättäjäis{WB}illanvietto
@@ -60090,7 +60088,6 @@ vasta-aine	1	N_ASTE	vasta-aine
 vastaajapalvelu	1	N_SEIKKAILU	vastaaja{WB}palvelu
 vastaajapuoli	1	N_RUUHI	vastaaja{WB}puoli
 vasta-alkaja	1	N_VOIMA	vasta-alkaja
-vastaanottajaiset	1	N_VIHKIÄISET	vastaanottajais{WB}et
 vastaanottoapulainen	1	N_AAKKOSTAMINEN	vastaanotto{WB}apulainen
 vastaanottoavustaja	1	N_VOIMA	vastaanotto{WB}avustaja
 vastaanottohuone	1	N_ASTE	vastaanotto{WB}huone
