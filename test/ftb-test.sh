@@ -26,15 +26,12 @@ else
     echo Missing python3
     exit 77
 fi
-split -n l/100 $srcdir/ftb3.1.conllx ftb3.1.parts.
-fail=0
-for f in ftb3.1.parts.* ; do
-    echo ${f}...
-    if ! $PYTHON $srcdir/ftb-test.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i $f -o ${f/parts/logs} ; then
-        echo $f failed
-        fail=1
-    fi
-done
-cat ftb3.1.logs.* > ftb3.1.log
-rm ftb3.1.parts* ftb3.1.logs*
-exit $fail
+if test ! -r ftb3.1.conllx.cutted.freqs ; then
+    echo counting freqs for ftb3.1
+    egrep -v '^<' < $srcdir/ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb3.1.conllx.cutted.freqs
+fi
+if ! $PYTHON $srcdir/ftb-test-short.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i ftb3.1.conllx.cutted.freqs -o ftb3.1.log ; then
+    echo We missed the target of 90 % faithfulness
+    exit 1
+fi
+exit 0

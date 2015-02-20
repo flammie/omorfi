@@ -31,7 +31,7 @@ from wordmap import init_wordmap, get_wordmap_fieldnames, split_wordmap_by_field
 from gradation import gradation_make_morphophonemes
 from parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
 from plurale_tantum import plurale_tantum_get_singular_stem
-from stub import stub_all_ktn
+from stub import stub_all_ktn, stub_all_new_para
 from guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation, guess_bound_morphs
 from guess_new_class import guess_new_class
 
@@ -58,6 +58,8 @@ def main():
             metavar="N", help="read N fields from master")
     ap.add_argument("--join", "-j", action="store", required=True,
             metavar="JFILE", help="read join fields from JFILE")
+    ap.add_argument("--stub", "-c", action="store", required=True,
+            metavar="SFILE", help="read stub expressions from SFILE")
     ap.add_argument("--separator", "-s", action="store", default="\t",
             metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
@@ -87,6 +89,17 @@ def main():
                 continue
             key = join_parts['new_para']
             joinmap[key] = join_parts
+    stubmap = dict()
+    with open(args.stub, 'r', newline='') as stubs:
+        stub_reader = csv.DictReader(stubs, delimiter=args.separator,
+                quoting=quoting, escapechar='\\', strict=True)
+        for stub_parts in stub_reader:
+            if len(stub_parts) < 2:
+                print("Must have at least N separators in stubbings; skipping",
+                        stub_parts)
+                continue
+            key = stub_parts['new_para']
+            stubmap[key] = stub_parts['deletion']
 
     # read from csv files
     with open(args.output, 'w', newline='') as output:
@@ -133,16 +146,17 @@ def main():
                     errors = True
                     continue
 
-                # Guess works in order
+                # Guess-works in order
                 wordmap = guess_stem_features_ktn(wordmap)
                 wordmap = guess_pronunciation(wordmap)
                 wordmap = guess_grade_dir_from_ktn(wordmap)
                 wordmap = guess_harmony(wordmap)
                 wordmap = guess_new_class(wordmap)
                 # here is actual python code doing the pre-processing
-                wordmap = plurale_tantum_get_singular_stem(wordmap)
-                wordmap = gradation_make_morphophonemes(wordmap)
-                wordmap = stub_all_ktn(wordmap)
+                #wordmap = plurale_tantum_get_singular_stem(wordmap)
+                #wordmap = gradation_make_morphophonemes(wordmap)
+                #wordmap = stub_all_ktn(wordmap)
+                wordmap = stub_all_new_para(wordmap, stubmap)
                 # suffixes can be id'd by the - in beginning. They need an own lexicon
                 wordmap = guess_bound_morphs(wordmap)
                 if wordmap['is_suffix']:

@@ -31,27 +31,27 @@ PARADIGM_JOINS=paradigms/morphophonology.tsv
 
 # Morphology
 # stem variants by deletion and concatenations
-STEMPARTS=stub-stem-inflection/acronym-stems.tsv \
-		  stub-stem-inflection/adjective-stems.tsv \
-		  stub-stem-inflection/digit-stubs.tsv \
-		  stub-stem-inflection/digit-stems.tsv \
-		  stub-stem-inflection/noun-stems.tsv \
-		  stub-stem-inflection/numeral-stems.tsv \
-		  stub-stem-inflection/particle-stems.tsv \
-		  stub-stem-inflection/pronoun-stems.tsv \
-		  stub-stem-inflection/symbol-stems.tsv \
-		  stub-stem-inflection/51-stems.tsv \
-		  stub-stem-inflection/verb-stems.tsv
+STEMPARTS=continuations/acronym-stems.tsv \
+		  continuations/adjective-stems.tsv \
+		  continuations/digit-stubs.tsv \
+		  continuations/digit-stems.tsv \
+		  continuations/noun-stems.tsv \
+		  continuations/numeral-stems.tsv \
+		  continuations/particle-stems.tsv \
+		  continuations/pronoun-stems.tsv \
+		  continuations/symbol-stems.tsv \
+		  continuations/51-stems.tsv \
+		  continuations/verb-stems.tsv
 # suffixes by concatenations
-INFLECTIONS=stub-stem-inflection/acro-inflections.tsv \
-			stub-stem-inflection/adjective-inflections.tsv \
-			stub-stem-inflection/digit-inflections.tsv \
-			stub-stem-inflection/noun-inflections.tsv \
-			stub-stem-inflection/numeral-inflections.tsv \
-			stub-stem-inflection/particle-inflections.tsv \
-			stub-stem-inflection/pronoun-inflections.tsv \
-			stub-stem-inflection/symbol-inflections.tsv \
-			stub-stem-inflection/verb-inflections.tsv
+INFLECTIONS=continuations/acro-inflections.tsv \
+			continuations/adjective-inflections.tsv \
+			continuations/digit-inflections.tsv \
+			continuations/noun-inflections.tsv \
+			continuations/numeral-inflections.tsv \
+			continuations/particle-inflections.tsv \
+			continuations/pronoun-inflections.tsv \
+			continuations/symbol-inflections.tsv \
+			continuations/verb-inflections.tsv
 
 # }}}
 #
@@ -192,7 +192,8 @@ generated/joint.tsv: lexemes/lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 
 generated/master.tsv: generated/joint.tsv
 	$(PYTHON) $(srcdir)/tsv_expand.py \
-		-j $(srcdir)/paradigms/morphophonology.tsv -v -i $< -o $@.unsrt
+		-j $(srcdir)/paradigms/morphophonology.tsv \
+		-c $(srcdir)/paradigms/stub-deletions.tsv -v -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | sort >> $@
 	-rm -f $@.unsrt
