@@ -1,4 +1,8 @@
 #!/bin/sh
+if test -z $srcdir ; then
+    echo run from make check or set srcdir=.
+    exit 1
+fi
 if test ! -r $srcdir/wordforms.list ; then
     echo Missing word list $srcdir/wordforms.list
     exit 73
