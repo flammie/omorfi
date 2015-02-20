@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-FTB test
+Test sort | uniq -c | sort -nr'd FTB data against omorfi's FTB automaton
 """
 
 
@@ -22,6 +22,10 @@ def main():
     a.add_argument('-X', '--statistics', metavar="STATFILE",
             type=FileType('w'),
             dest="statfile", help="statistics")
+    a.add_argument('-c', '--count', metavar="FREQ", default=0,
+            help="test only word-forms with frequency higher than FREQ")
+    a.add_argument('-v', '--verbose', action="store_true", default=False,
+            help="test only word-forms with frequency higher than FREQ")
     options = a.parse_args()
     omorfi = libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
     if not options.statfile:
@@ -47,15 +51,19 @@ def main():
     # for make check target
     threshold = 90
     for line in options.infile:
-        conllxes = line.split('\t')
-        if len(conllxes) < 10:
-            if not line.startswith("<"):
-                print("ERROR: Skipping line", line, file=stderr)
+        fields = line.strip().replace(' ', '\t', 1).split('\t')
+        if len(fields) < 4:
+            print("ERROR: Skipping line", fields, file=stderr)
             continue
-        lines += 1
-        ftbsurf = conllxes[1]
-        ftblemma = conllxes[2]
-        ftbanals = conllxes[5]
+        freq = int(fields[0])
+        if freq < int(options.count):
+            break
+        ftbsurf = fields[1]
+        ftblemma = fields[2]
+        ftbanals = fields[3]
+        lines += freq
+        if options.verbose:
+            print(freq, '...', end='\r')
         anals = libhfst.detokenize_paths(omorfi.lookup_fd(ftbsurf))
         if ftbsurf[0].isupper():
             anals += libhfst.detokenize_paths(omorfi.lookup_fd(ftbsurf[0].lower() + ftbsurf[1:]))
@@ -73,40 +81,40 @@ def main():
                 found_lemma = True
         if len(anals) == 0:
             print_in = False
-            no_results += 1
+            no_results += freq
             if 'Forgn' in ftbanals:
-                deduct_forgn += 1
-                deduct_results += 1
+                deduct_forgn += freq
+                deduct_results += freq
                 print_in = False
             elif 'Unkwn' in ftbanals:
-                deduct_unkwn += 1
-                deduct_results += 1
+                deduct_unkwn += freq
+                deduct_results += freq
                 print_in = False
             else:
-                print("NORESULTS:", ftbsurf, ftblemma, ftbanals, sep="\t",
+                print("NORESULTS:", freq, ftbsurf, ftblemma, ftbanals, sep="\t",
                     file=options.outfile)
         elif not found_anals and not found_lemma:
-            no_matches += 1
+            no_matches += freq
             if 'Adv Pos Man' in ftbanals:
-                deduct_advposman += 1
-                deduct_matches += 1
+                deduct_advposman += freq
+                deduct_matches += freq
                 print_in = False
             else:
-                print("NOMATCH:", ftbsurf, ftblemma, ftbanals, sep="\t", end="\t",
+                print("NOMATCH:", freq, ftbsurf, ftblemma, ftbanals, sep="\t", end="\t",
                     file=options.outfile)
         elif not found_anals:
-            lemma_matches += 1
+            lemma_matches += freq
             if 'Adv Pos Man' in ftbanals:
-                deduct_advposman += 1
-                deduct_lemma += 1
+                deduct_advposman += freq
+                deduct_lemma += freq
                 print_in = False
             elif 'V Prt Act' in ftbanals and ftbsurf.startswith('oli'):
-                deduct_oliprt += 1
-                deduct_lemma += 1
+                deduct_oliprt += freq
+                deduct_lemma += freq
                 print_in = False
             elif 'Forgn' in ftbanals:
-                deduct_forgn += 1
-                deduct_lemma += 1
+                deduct_forgn += freq
+                deduct_lemma += freq
                 print_in = False
             elif 'Abbr' in ftbanals:
                 propfail = False
@@ -114,25 +122,25 @@ def main():
                     if 'Abbr Prop' in anal.output:
                         propfail = True
                 if propfail:
-                    deduct_abbr_prop += 1
-                    deduct_lemma += 1
+                    deduct_abbr_prop += freq
+                    deduct_lemma += freq
                     print_in = False
                 else:
-                    print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
+                    print("NOANALMATCH:", freq, ftbsurf, ftbanals, sep="\t", end="\t",
                         file=options.outfile)
             elif 'Unkwn' in ftbanals:
-                deduct_unkwn += 1
-                deduct_lemma += 1
+                deduct_unkwn += freq
+                deduct_lemma += freq
                 print_in = False
             else:
-                print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
+                print("NOANALMATCH:", freq, ftbsurf, ftbanals, sep="\t", end="\t",
                     file=options.outfile)
         elif not found_lemma:
-            anal_matches += 1
-            print("NOLEMMAMATCH:", ftbsurf, ftblemma, sep="\t", end="\t",
+            anal_matches += freq
+            print("NOLEMMAMATCH:", freq, ftbsurf, ftblemma, sep="\t", end="\t",
                     file=options.outfile)
         else:
-            full_matches += 1
+            full_matches += freq
             print_in = False
         if print_in:
             print(":IN:", end="\t", file=options.outfile)
