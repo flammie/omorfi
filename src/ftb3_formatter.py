@@ -271,7 +271,7 @@ def format_analysis_lexc_ftb3(anals):
     elif 'Vact|Ima' in anals:
         anals = anals.replace('Vact|', '')
     elif anals == 'Vact|Ie|Nsg|Xins':
-        anals = 'Ie|Vact|Xins'
+        anals = 'Ie|Vact|FTB3man'
     elif anals == 'Vact|Tpres|Ppe4|Ncon':
         anals = 'Vact|Tpres|Ncon'
     elif anals == 'Vpss|Tpres|Ppe4|Ncon':
