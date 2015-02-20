@@ -192,7 +192,8 @@ generated/joint.tsv: lexemes/lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 
 generated/master.tsv: generated/joint.tsv
 	$(PYTHON) $(srcdir)/tsv_expand.py \
-		-j $(srcdir)/paradigms/morphophonology.tsv -v -i $< -o $@.unsrt
+		-j $(srcdir)/paradigms/morphophonology.tsv \
+		-c $(srcdir)/paradigms/stub-deletions.tsv -v -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | sort >> $@
 	-rm -f $@.unsrt

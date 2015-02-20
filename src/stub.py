@@ -4,6 +4,19 @@ from sys import stderr
 
 from omor_strings_io import mangle_suffixes_or_die, fail_guess_because
 
+def stub_all_new_para(wordmap, stubmap):
+    if not wordmap['new_para']:
+        return wordmap
+    if not wordmap['new_para'] in stubmap:
+        print("Missing stub paradigm", wordmap['new_para'],
+                ": Update stub-deletions.tsv and carry on")
+        exit(1)
+    elif not stubmap[wordmap['new_para']] or \
+            stubmap[wordmap['new_para']] == '':
+        return wordmap
+    wordmap = mangle_suffixes_or_die(wordmap, [stubmap[wordmap['new_para']]])
+    return wordmap
+
 def stub_all_ktn(wordmap):
     '''Generate unmodifiable stub for inflectional processes.
     this cuts every morphologically varying character.
