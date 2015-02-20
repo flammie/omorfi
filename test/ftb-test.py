@@ -22,6 +22,8 @@ def main():
     a.add_argument('-X', '--statistics', metavar="STATFILE",
             type=FileType('w'),
             dest="statfile", help="statistics")
+    a.add_argument('-v', '--verbose', action="store_true", default=False,
+            help="Print verbosely while processing")
     options = a.parse_args()
     omorfi = libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
     if not options.statfile:
@@ -85,15 +87,23 @@ def main():
             else:
                 print("NORESULTS:", ftbsurf, ftblemma, ftbanals, sep="\t",
                     file=options.outfile)
+                if options.verbose:
+                    print("?", end='', file=stderr)
         elif not found_anals and not found_lemma:
             no_matches += 1
             if 'Adv Pos Man' in ftbanals:
                 deduct_advposman += 1
                 deduct_matches += 1
                 print_in = False
+            elif 'Unkwn' in ftbanals:
+                deduct_unkwn += 1
+                deduct_matches += 1
+                print_in = False
             else:
                 print("NOMATCH:", ftbsurf, ftblemma, ftbanals, sep="\t", end="\t",
                     file=options.outfile)
+                if options.verbose:
+                    print("!", end='', file=stderr)
         elif not found_anals:
             lemma_matches += 1
             if 'Adv Pos Man' in ftbanals:
@@ -120,19 +130,27 @@ def main():
                 else:
                     print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
                         file=options.outfile)
+                if options.verbose:
+                    print("@", end='', file=stderr)
             elif 'Unkwn' in ftbanals:
                 deduct_unkwn += 1
                 deduct_lemma += 1
                 print_in = False
             else:
                 print("NOANALMATCH:", ftbsurf, ftbanals, sep="\t", end="\t",
-                    file=options.outfile)
+                        file=options.outfile)
+                if options.verbose:
+                    print("@", end='', file=stderr)
         elif not found_lemma:
             anal_matches += 1
             print("NOLEMMAMATCH:", ftbsurf, ftblemma, sep="\t", end="\t",
                     file=options.outfile)
+            if options.verbose:
+                print("#", end='', file=stderr)
         else:
             full_matches += 1
+            if options.verbose:
+                print(".", end='', file=stderr)
             print_in = False
         if print_in:
             print(":IN:", end="\t", file=options.outfile)
