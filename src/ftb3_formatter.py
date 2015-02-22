@@ -246,6 +246,8 @@ stuff2ftb3 = {"Bc": "#",
         "PE4": "% Pe4",
         "COMP": "% Comp",
         "SUPERL": "% Superl",
+        "DERSTI": "",
+        "DERTTAIN": "",
         "UNSPECIFIED": "% Adv",
         "LEMMA-START": "",
         "": ""
