@@ -22,9 +22,9 @@ def main():
     a.add_argument('-X', '--statistics', metavar="STATFILE",
             type=FileType('w'),
             dest="statfile", help="statistics")
-    a.add_argument('-c', '--count', metavar="FREQ", default=0,
-            help="test only word-forms with frequency higher than FREQ")
     a.add_argument('-v', '--verbose', action="store_true", default=False,
+            help="Print verbosely while processing")
+    a.add_argument('-c', '--count', metavar="FREQ", default=0,
             help="test only word-forms with frequency higher than FREQ")
     options = a.parse_args()
     omorfi = libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
@@ -93,15 +93,23 @@ def main():
             else:
                 print("NORESULTS:", freq, ftbsurf, ftblemma, ftbanals, sep="\t",
                     file=options.outfile)
+                if options.verbose:
+                    print("?", end='', file=stderr)
         elif not found_anals and not found_lemma:
             no_matches += freq
             if 'Adv Pos Man' in ftbanals:
                 deduct_advposman += freq
                 deduct_matches += freq
                 print_in = False
+            elif 'Unkwn' in ftbanals:
+                deduct_unkwn += 1
+                deduct_matches += 1
+                print_in = False
             else:
                 print("NOMATCH:", freq, ftbsurf, ftblemma, ftbanals, sep="\t", end="\t",
                     file=options.outfile)
+                if options.verbose:
+                    print("!", end='', file=stderr)
         elif not found_anals:
             lemma_matches += freq
             if 'Adv Pos Man' in ftbanals:
@@ -128,18 +136,26 @@ def main():
                 else:
                     print("NOANALMATCH:", freq, ftbsurf, ftbanals, sep="\t", end="\t",
                         file=options.outfile)
+                if options.verbose:
+                    print("@", end='', file=stderr)
             elif 'Unkwn' in ftbanals:
                 deduct_unkwn += freq
                 deduct_lemma += freq
                 print_in = False
             else:
+                if options.verbose:
+                    print("@", end='', file=stderr)
                 print("NOANALMATCH:", freq, ftbsurf, ftbanals, sep="\t", end="\t",
                     file=options.outfile)
         elif not found_lemma:
             anal_matches += freq
             print("NOLEMMAMATCH:", freq, ftbsurf, ftblemma, sep="\t", end="\t",
                     file=options.outfile)
+            if options.verbose:
+                print("#", end='', file=stderr)
         else:
+            if options.verbose:
+                print(".", end='', file=stderr)
             full_matches += freq
             print_in = False
         if print_in:
