@@ -1,6 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
-TESTS=rough-tests.sh scripts-runnable.sh ftb-3.1-faithfulness-quick.sh
+TESTS=rough-tests.sh scripts-runnable.sh \
+	  ftb-3.1-faithfulness-quick.sh coverages-all-quick.sh
 #XFAIL_TESTS=
 BIG_TESTS=europarl-coverage.sh gutenberg-coverage.sh jrc-acquis-coverage.sh \
 		  ftb31-coverage.sh fiwiki-coverage.sh \
