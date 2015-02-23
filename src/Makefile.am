@@ -129,6 +129,7 @@ APE_AUTOMATA=generated/fin-automorf.hfst generated/fin-autogen.hfst
 APE_GENERATED=generated/apertium-fin.fin.lexc \
 			  generated/apertium-fin.fin.twolc
 endif
+DB_GENERATED=generated/master.tsv generated/joint.tsv
 
 endif # HFST
 # }}}
@@ -137,6 +138,7 @@ endif # HFST
 hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
+pkgdata_DATA=generated/master.tsv
 
 bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-analyse-tokenised.sh \
@@ -163,7 +165,7 @@ XFAIL_TESTS=tdt_formatter.py
 noinst_DATA=generated/omorfi.dix generated/omorfi-sanalista.xml
 
 # Things that make clean isn't smart enought to wipe
-CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED)
+CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED) $(DB_GENERATED)
 # }}}
 #
 # {{{GENERATING
