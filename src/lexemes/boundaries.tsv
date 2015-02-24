@@ -7339,7 +7339,7 @@ henkisavut	1	N_HOUSUT	henki{WB}savut
 henkisyys	1	N_KÖYHYYS	henki{WB}syys
 henkitanssi	1	N_RUUVI	henki{WB}tanssi
 henkitiede	1	N_KIDE	henki{WB}tiede
-henkitoreihin	1	PCLE_VALTAAN	poss=opt
+henkitoreihin	1	PCLE_VALTAAN	henki{WB}toreihin
 henkitoreihinsa	1	PCLE_NOPEASTI	henki{WB}toreihinsa
 henkitoreisiin	1	PCLE_NOPEASTI	henki{WB}toreisiin
 henkitoreissa	1	PCLE_NOPEASTI	henki{WB}toreissa
