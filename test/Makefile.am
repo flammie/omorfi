@@ -7,7 +7,8 @@ BIG_TESTS=europarl-coverage.sh gutenberg-coverage.sh jrc-acquis-coverage.sh \
 		  ftb31-coverage.sh fiwiki-coverage.sh \
 		  ftb-test.sh
 EXTRA_DIST=rough-tests.sh scripts-runnable.sh \
-		   wordforms.list ftb-test.py \
+		   wordforms.list \
+		   coverage.py faithfulness.py \
 		   $(BIG_TESTS)
 
 if CAN_YAML_TEST
