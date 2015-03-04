@@ -9,6 +9,7 @@ import libhfst
 from argparse import ArgumentParser, FileType
 
 from sys import stderr, stdin, stdout
+from time import perf_counter, process_time
 
 def main():
     a = ArgumentParser()

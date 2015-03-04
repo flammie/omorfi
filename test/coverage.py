@@ -25,6 +25,8 @@ def main():
             help="Print verbosely while processing")
     a.add_argument('-c', '--count', metavar="FREQ", default=0,
             help="test only word-forms with frequency higher than FREQ")
+    a.add_argument('-t', '--threshold', metavar='THOLD', default=99, type=int,
+            help="require THOLD % coverage or exit 1 (for testing)")
     options = a.parse_args()
     omorfi = libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
     # statistics
@@ -35,7 +37,6 @@ def main():
     missed_tokens = 0
     missed_uniqs = 0
     # for make check target
-    threshold = 99
     realstart = perf_counter()
     cpustart = process_time()
     for line in options.infile:
@@ -77,8 +78,9 @@ def main():
     print("Uniqs", "Matches", "Misses", "%", sep="\t")
     print(uniqs, found_uniqs, missed_uniqs, found_uniqs / uniqs * 100,
             sep="\t")
-    if (found_tokens / tokens * 100 < threshold):
-        print("needs to have", threshold, "% matches to pass regress test\n",
+    if (found_tokens / tokens * 100 < options.threshold):
+        print("needs to have", options.threshold,
+                "% non-unique matches to pass regress test\n",
                 file=stderr)
         exit(1)
     else:
