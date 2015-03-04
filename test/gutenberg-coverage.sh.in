@@ -12,20 +12,17 @@ function _preproc() {
         tr -s ' ' '\n'
 }
 preprocess=_preproc
-if ! test -f "gutenberg-fi.tokens" ; then
-    fetch-gutenberg.bash "fi" txt
-    unpack-gutenbergs.bash  > "gutenberg-fi.text"
-    $preprocess < "gutenberg-fi.text" > "gutenberg-fi.tokens"
+if ! test -f "gutenberg-fi.uniq.freqs" ; then
+    if ! test -f "gutenberg-fi.tokens" ; then
+        fetch-gutenberg.bash "fi" txt
+        unpack-gutenbergs.bash  > "gutenberg-fi.text"
+        $preprocess < "gutenberg-fi.text" > "gutenberg-fi.tokens"
+    fi
+    sort < gutenberg-fi.tokens | uniq -c | sort -nr > gutenberg-fi.uniq.freqs
 fi
 echo Looking up gutenberg-fi.tokens
-@TIME@ -o "gutenberg-fi.times" -a hfst-optimised-lookup -q $fsa < "gutenberg-fi.tokens" > "gutenberg-fi.anals"
-tokens=$(wc -l < gutenberg-fi.tokens)
-misses=$(fgrep -c '+?' < gutenberg-fi.anals)
-coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
 
-if test $coverage -lt 96 ; then
-    echo Gutenberg coverage should be more than 96, see:
-    fgrep '+?' < "gutenberg-fi.anals" | sort | uniq -c | sort -nr | head 
+if ! @PYTHON@ coverage.py -f $fsa -i gutenberg-fi.uniq.freqs -c 2 -o gutenberg-fi.log -t 96 ; then
     exit 1
 fi
 

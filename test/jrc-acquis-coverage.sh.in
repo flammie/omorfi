@@ -12,22 +12,18 @@ function _preproc() {
         tr -s ' ' '\n'
 }
 preprocess=_preproc
-if ! test -f "jrc-fi.tokens" ; then
-    if ! test -f "jrc-fi.tgz" ; then
-        fetch-jrc-acquis.bash "fi"
+if ! test -f "jrc-fi.uniq.freqs" ; then
+    if ! test -f "jrc-fi.tokens" ; then
+        if ! test -f "jrc-fi.tgz" ; then
+            fetch-jrc-acquis.bash "fi"
+        fi
+        unpack-jrc-acquis.bash "fi" > "jrc-fi.text"
+        $preprocess < "jrc-fi.text" > "jrc-fi.tokens"
     fi
-    unpack-jrc-acquis.bash "fi" > "jrc-fi.text"
-    $preprocess < "jrc-fi.text" > "jrc-fi.tokens"
+    sort < jrc-fi.tokens | uniq -c | sort -nr > jrc-fi.uniq.freqs
 fi
 echo Looking up jrc-fi.tokens
-@TIME@ -o "jrc-fi.times" -a hfst-optimised-lookup -q $fsa < "jrc-fi.tokens" > "jrc-fi.anals"
-tokens=$(wc -l < jrc-fi.tokens)
-misses=$(fgrep -c '+?' < jrc-fi.anals)
-coverage=$(echo "100 - 100 * $misses/$tokens" | bc )
-
-if test $coverage -lt 93 ; then
-    echo JRC acquis coverage should be more than 93, see:
-    fgrep '+?' < "jrc-fi.anals" | sort | uniq -c | sort -nr | head 
+if ! @PYTHON@ $srcdir/coverage.py -f $fsa -i jrc-fi.uniq.freqs -c 2 -o jrc-fi.log -t 93 ; then
     exit 1
 fi
 

@@ -30,7 +30,7 @@ if test ! -r ftb3.1.conllx.cutted.freqs ; then
     echo counting freqs for ftb3.1
     egrep -v '^<' < $srcdir/ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb3.1.conllx.cutted.freqs
 fi
-if ! $PYTHON $srcdir/ftb-test-short.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i ftb3.1.conllx.cutted.freqs -o ftb3.1.log ; then
+if ! $PYTHON $srcdir/faithfulness.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i ftb3.1.conllx.cutted.freqs -o ftb3.1.log ; then
     echo We missed the target of 90 % faithfulness
     exit 1
 fi
