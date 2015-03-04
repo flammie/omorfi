@@ -10,6 +10,8 @@ from argparse import ArgumentParser, FileType
 
 from sys import stderr, stdin, stdout
 
+from time import perf_counter, process_time
+
 def main():
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
@@ -34,6 +36,8 @@ def main():
     missed_uniqs = 0
     # for make check target
     threshold = 99
+    realstart = perf_counter()
+    cpustart = process_time()
     for line in options.infile:
         fields = line.strip().replace(' ', '\t', 1).split('\t')
         if len(fields) < 2:
@@ -46,7 +50,7 @@ def main():
         tokens += freq
         uniqs += 1
         if options.verbose:
-            print(freq, '...', end='\r')
+            print(tokens, "(", freq, ')...', end='\r')
         anals = libhfst.detokenize_paths(omorfi.lookup_fd(surf))
         if surf[0].isupper():
             anals += libhfst.detokenize_paths(omorfi.lookup_fd(surf[0].lower() + surf[1:]))
@@ -61,6 +65,12 @@ def main():
             missed_tokens += freq
             missed_uniqs += 1
             print(freq, surf, "? (missed)", sep="\t", file=options.outfile)
+    if options.verbose:
+        print()
+    cpuend = process_time()
+    realend = perf_counter()
+    print("cpu time: ", cpuend - cpustart,
+            "real time:", realend - realstart)
     print("Tokens", "Matches", "Misses", "%", sep="\t")
     print(tokens, found_tokens, missed_tokens, found_tokens / tokens * 100,
             sep="\t")

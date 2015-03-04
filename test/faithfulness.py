@@ -55,6 +55,8 @@ def main():
     deduct_results = 0
     # for make check target
     threshold = 90
+    realstart = perf_counter()
+    cpustart = process_time()
     for line in options.infile:
         fields = line.strip().replace(' ', '\t', 1).split('\t')
         if len(fields) < 4:
@@ -192,6 +194,9 @@ def main():
             for anal in anals:
                 print(anal.output, end='\t', file=options.outfile)
             print(file=options.outfile)
+    realend = perf_counter()
+    cpuend = process_time()
+    print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
     print("Lines", "Matches", "Lemma", "Anals", "Mismatch", "No results", sep="\t",
             file=options.statfile)
     print(lines, full_matches, lemma_matches, anal_matches, no_matches,
