@@ -3,12 +3,17 @@
 TESTS=rough-tests.sh scripts-runnable.sh \
 	  ftb-3.1-faithfulness-quick.sh coverages-all-quick.sh
 #XFAIL_TESTS=
-BIG_TESTS=europarl-coverage.sh gutenberg-coverage.sh jrc-acquis-coverage.sh \
-		  ftb31-coverage.sh fiwiki-coverage.sh \
+BIG_TESTS=coverage-europarl.sh \
+		  coverage-gutenberg.sh \
+		  coverage-jrc-acquis.sh \
+		  coverage-ftb.3.1.sh \
+		  coverage-fiwiki.sh \
 		  ftb-3.1.faithfulness.sh
-EXTRA_DIST=rough-tests.sh scripts-runnable.sh \
+EXTRA_DIST=rough-tests.sh \
+		   scripts-runnable.sh \
 		   wordforms.list \
-		   coverage.py faithfulness.py \
+		   coverage.py \
+		   faithfulness.py \
 		   $(BIG_TESTS)
 
 if CAN_YAML_TEST
@@ -21,5 +26,3 @@ if WANT_BIG_TESTS
 TESTS+=$(BIG_TESTS)
 endif
 
-clean-local:
-	-rm -f wordforms.anals

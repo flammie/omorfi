@@ -203,16 +203,16 @@ AC_CONFIG_FILES([src/bash/omorfi-spell.sh],
                 [chmod +x src/bash/omorfi-spell.sh])
 AC_CONFIG_FILES([src/bash/omorfi-analyse-tokenised.sh],
                 [chmod +x src/bash/omorfi-analyse-tokenised.sh])
-AC_CONFIG_FILES([test/europarl-coverage.sh],
-                [chmod +x test/europarl-coverage.sh])
-AC_CONFIG_FILES([test/fiwiki-coverage.sh],
-                [chmod +x test/fiwiki-coverage.sh])
-AC_CONFIG_FILES([test/gutenberg-coverage.sh],
-                [chmod +x test/gutenberg-coverage.sh])
-AC_CONFIG_FILES([test/jrc-acquis-coverage.sh],
-                [chmod +x test/jrc-acquis-coverage.sh])
-AC_CONFIG_FILES([test/ftb31-coverage.sh],
-                [chmod +x test/ftb31-coverage.sh])
+AC_CONFIG_FILES([test/coverage-europarl.sh],
+                [chmod +x test/coverage-europarl.sh])
+AC_CONFIG_FILES([test/coverage-fiwiki.sh],
+                [chmod +x test/coverage-fiwiki.sh])
+AC_CONFIG_FILES([test/coverage-gutenberg.sh],
+                [chmod +x test/coverage-gutenberg.sh])
+AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
+                [chmod +x test/coverage-jrc-acquis.sh])
+AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
+                [chmod +x test/coverage-ftb-3.1.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AS_IF([test x$with_pbs_mail != xno],
