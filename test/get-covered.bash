@@ -18,19 +18,19 @@ if ! test -f "europarl-v7.fi-en.fi.uniq.freqs" ; then
     if ! test -f "europarl-v7.fi-en.fi.tokens" ; then
         if ! test -f "fi-en.tgz" ; then
             echo fetch
-            fetch-europarl.bash
+            fetch-europarl.bash "fi" en
         fi
         echo unpack
-        unpack-europarl.bash > europarl-v7.fi-en.fi.text
+        unpack-europarl.bash "fi" "fi" en> europarl-v7.fi-en.fi.text
         echo tokenise
-        preprocess europarl-v7.fi-en.fi > europarl-v7.fi-en.fi.tokens
+        preprocess europarl-v7.fi-en.fi.text > europarl-v7.fi-en.fi.tokens
     fi
     echo count
     frequency_list europarl-v7.fi-en.fi.tokens > europarl-v7.fi-en.fi.uniq.freqs
 fi
 # fiwiki
 echo fiwiki... corpus 2/$nc
-if ! test -f "fiwiki-pages-latest-articles.uniq.freqs" ; then
+if ! test -f "fiwiki-latest-pages-articles.uniq.freqs" ; then
     if ! test -f "fiwiki-latest-pages-articles.tokens" ; then
         if ! test -f "fiwiki-latest-pages-articles.xml.bz2" ; then
             echo fetch
@@ -39,7 +39,7 @@ if ! test -f "fiwiki-pages-latest-articles.uniq.freqs" ; then
         echo unpack
         unpack-wikimedia.bash fiwiki > fiwiki-latest-pages-articles.text
         echo tokenise
-        preprocess fiwiki-latest-pages-articles.text > fiwiki-latest-pages-art
+        preprocess fiwiki-latest-pages-articles.text > fiwiki-latest-pages-articles.tokens
     fi
     echo count
     frequency_list fiwiki-latest-pages-articles.tokens > fiwiki-latest-pages-articles.uniq.freqs

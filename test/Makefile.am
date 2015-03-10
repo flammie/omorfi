@@ -6,7 +6,7 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 BIG_TESTS=coverage-europarl.sh \
 		  coverage-gutenberg.sh \
 		  coverage-jrc-acquis.sh \
-		  coverage-ftb.3.1.sh \
+		  coverage-ftb-3.1.sh \
 		  coverage-fiwiki.sh \
 		  ftb-3.1.faithfulness.sh
 EXTRA_DIST=rough-tests.sh \
