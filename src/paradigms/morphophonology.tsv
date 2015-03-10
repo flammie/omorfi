@@ -879,6 +879,7 @@ PCLE_YLLE	PARTICLE	99	None	False	False	front	None	None	optional	True
 PRON_AINOA	PRONOUN	101	None	False	False	back	None	None	False	False
 PRON_ERÄS	PRONOUN	41	None	False	strengthen	front	None	None	False	False
 PRON_HÄN	PRONOUN	101	None	False	False	front	None	None	False	False
+PRON_HÄÄ	PRONOUN	101	None	False	False	front	None	None	False	False
 PRON_IKINEN	PRONOUN	38	None	False	strengthen	front	None	None	False	False
 PRON_ITSE	PRONOUN	8	None	False	weaken	front	None	None	False	False
 PRON_JOKAINEN	PRONOUN	38	None	False	strengthen	back	None	None	False	False
