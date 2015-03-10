@@ -215,6 +215,8 @@ AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
                 [chmod +x test/coverage-ftb-3.1.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
+AC_CONFIG_FILES([test/coverages-all-quick.sh],
+                [chmod +x test/coverages-all-quick.sh])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 
