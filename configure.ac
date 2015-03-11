@@ -213,6 +213,8 @@ AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
                 [chmod +x test/coverage-jrc-acquis.sh])
 AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
                 [chmod +x test/coverage-ftb-3.1.sh])
+AC_CONFIG_FILES([test/ftb-3.1.faithfulness.sh],
+                [chmod +x test/ftb-3.1.faithfulness.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.sh],

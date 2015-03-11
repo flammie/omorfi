@@ -59,6 +59,10 @@ if ! test -f ftb3.1.uniq.freqs ; then
     echo count
     frequency_list ftb3.1.tokens > ftb3.1.uniq.freqs
 fi
+if ! test -f ftb3.1.cutted.freqs ; then
+    egrep -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort > ftb3.1.cutted.freqs
+fi
+
 # gutenberg
 echo gutenberg... corpus 4/$nc
 if ! test -f "gutenberg-fi.uniq.freqs" ; then
