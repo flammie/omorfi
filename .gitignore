@@ -1,3 +1,5 @@
+*.coveragelog
+*.trs
 *.hfst
 *.pyc
 *.pyo
