@@ -27,7 +27,7 @@ def main():
             print("Searching for automata everywhere...")
         omorfi.load_from_dir()
     if options.infile:
-        infile = open(options.infile)
+        infile = options.infile
     else:
         infile = stdin
     if options.output:
