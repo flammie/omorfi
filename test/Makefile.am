@@ -1,7 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
 TESTS=rough-tests.sh scripts-runnable.sh \
-	  ftb-3.1-faithfulness-quick.sh coverages-all-quick.sh
+	  faithfulness-ftb-3.1-quick.sh coverages-all-quick.sh
 #XFAIL_TESTS=
 BIG_TESTS=coverage-europarl.sh \
 		  coverage-gutenberg.sh \
