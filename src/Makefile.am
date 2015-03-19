@@ -10,22 +10,22 @@ voikkosharedir=$(libdir)/voikko/3/
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 # Lexicography
 # 
-LEXEMES=lexemes/lexemes.tsv
+LEXEMES=lexemes.tsv
 # lexical features
-LEMMA_JOINS=lexemes/adjective-classes.tsv \
-			lexemes/boundaries.tsv \
-			lexemes/noun-classes.tsv \
-			lexemes/numeral-classes.tsv \
-			lexemes/plurale-tantum.tsv \
-			lexemes/possessives.tsv \
-			lexemes/pronunciation.tsv \
-			lexemes/proper-classes.tsv \
-			lexemes/particle-classes.tsv \
-			lexemes/pronoun-classes.tsv \
-			lexemes/symbol-classes.tsv \
-			lexemes/semantic.tsv \
-			lexemes/usage.tsv \
-			lexemes/verb-arguments.tsv
+LEMMA_JOINS=attributes/adjective-classes.tsv \
+			attributes/boundaries.tsv \
+			attributes/noun-classes.tsv \
+			attributes/numeral-classes.tsv \
+			attributes/plurale-tantum.tsv \
+			attributes/possessives.tsv \
+			attributes/pronunciation.tsv \
+			attributes/proper-classes.tsv \
+			attributes/particle-classes.tsv \
+			attributes/pronoun-classes.tsv \
+			attributes/symbol-classes.tsv \
+			attributes/semantic.tsv \
+			attributes/usage.tsv \
+			attributes/verb-arguments.tsv
 # paradigm features
 PARADIGM_JOINS=paradigms/morphophonology.tsv
 
@@ -175,22 +175,22 @@ generated/timestamp:
 	touch $@
 
 # database to database
-generated/joint.tsv: lexemes/lexemes.tsv $(LEMMA_JOINS) generated/timestamp
+generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
-		-j $(srcdir)/lexemes/adjective-classes.tsv \
-		-j $(srcdir)/lexemes/boundaries.tsv \
-		-j $(srcdir)/lexemes/noun-classes.tsv \
-		-j $(srcdir)/lexemes/numeral-classes.tsv \
-		-j $(srcdir)/lexemes/plurale-tantum.tsv \
-		-j $(srcdir)/lexemes/possessives.tsv \
-		-j $(srcdir)/lexemes/pronunciation.tsv \
-		-j $(srcdir)/lexemes/particle-classes.tsv \
-		-j $(srcdir)/lexemes/proper-classes.tsv \
-		-j $(srcdir)/lexemes/pronoun-classes.tsv \
-		-j $(srcdir)/lexemes/semantic.tsv \
-		-j $(srcdir)/lexemes/symbol-classes.tsv \
-		-j $(srcdir)/lexemes/usage.tsv \
-		-j $(srcdir)/lexemes/verb-arguments.tsv -o $@
+		-j $(srcdir)/attributes/adjective-classes.tsv \
+		-j $(srcdir)/attributes/boundaries.tsv \
+		-j $(srcdir)/attributes/noun-classes.tsv \
+		-j $(srcdir)/attributes/numeral-classes.tsv \
+		-j $(srcdir)/attributes/plurale-tantum.tsv \
+		-j $(srcdir)/attributes/possessives.tsv \
+		-j $(srcdir)/attributes/pronunciation.tsv \
+		-j $(srcdir)/attributes/particle-classes.tsv \
+		-j $(srcdir)/attributes/proper-classes.tsv \
+		-j $(srcdir)/attributes/pronoun-classes.tsv \
+		-j $(srcdir)/attributes/semantic.tsv \
+		-j $(srcdir)/attributes/symbol-classes.tsv \
+		-j $(srcdir)/attributes/usage.tsv \
+		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
 
 generated/master.tsv: generated/joint.tsv
 	$(PYTHON) $(srcdir)/tsv_expand.py \

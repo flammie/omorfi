@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LEXFILE=lexemes/lexemes.tsv
-ATTRIBUTES=lexemes/*.tsv
+LEXFILE=lexemes.tsv
+ATTRIBUTES=attributes/*.tsv
 
 if test $# -lt 3 ; then
     echo "Usage: $0 LEMMA HOMONYM NEW_HOMONYM"
