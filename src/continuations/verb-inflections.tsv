@@ -130,6 +130,7 @@ V_BACK_PASSIVE_T	Vpss|Tpres|Ppe4	{MB}taan	V_BACK_CLIT_S_OPT
 V_BACK_PASSIVE_T	Vpss|Tpres|Ppe4|Uarch	{MB}tahan	V_BACK_CLIT_S_OPT
 V_BACK_PASSIVE	Vpss|Cva|Npl	{MB}ta{MB}va{MB}t	#
 V_BACK_PASSIVE	Vpss|Cva|Nsg	{MB}ta{MB}va	#
+V_BACK_PASSIVE	Vpss|Cva|Dsti	{MB}ta{MB}va{DB}sti	#
 V_BACK_PASSIVE	Vpss|Ie|Xine	{MB}ta{MB}e{MB}ssa	V_BACK_CLIT_OPT
 V_BACK_PASSIVE	Vpss|Ie|Xins	{MB}ta{MB}e{MB}n	V_BACK_CLIT_OPT
 V_BACK_PASSIVE	Vpss|Ima|Xins	{MB}ta{MB}man	V_BACK_CLIT_OPT
@@ -396,6 +397,7 @@ V_FRONT_PASSIVE_T	Vpss|Tpres|Ppe4	{MB}tään	V_FRONT_CLIT_S_OPT
 V_FRONT_PASSIVE_T	Vpss|Tpres|Ppe4|Uarch	{MB}tähän	V_FRONT_CLIT_S_OPT
 V_FRONT_PASSIVE	Vpss|Cva|Npl	{MB}tä{MB}vä{MB}t	#
 V_FRONT_PASSIVE	Vpss|Cva|Nsg	{MB}tä{MB}vä	#
+V_FRONT_PASSIVE	Vpss|Cva|Dsti	{MB}tä{MB}vä{DB}sti	#
 V_FRONT_PASSIVE	Vpss|Ie|Xine	{MB}tä{MB}e{MB}ssä	V_FRONT_CLIT_OPT
 V_FRONT_PASSIVE	Vpss|Ie|Xins	{MB}tä{MB}e{MB}n	V_FRONT_CLIT_OPT
 V_FRONT_PASSIVE	Vpss|Ima|Xins	{MB}tä{MB}mä{MB}n	V_FRONT_CLIT_OPT
