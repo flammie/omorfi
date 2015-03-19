@@ -200,10 +200,10 @@ alkuun	1	PCLE_NOPEASTI	adverb
 alkuunkaan	1	PCLE_NOPEASTI	adverb
 alkuvaiheessa	1	PCLE_KOTONA	adposition
 alla	1	PCLE_KOTONA	adposition
-alla	2	PCLE_KOTONA	adverb
+alla	2	PCLE_KOTONA	adverb|adessive
 allapäin	1	PCLE_TYHMÄSTI	adverb
 alle	1	PCLE_ALLE	adposition
-alle	2	PCLE_ALLE	adverb
+alle	2	PCLE_ALLE	adverb|allative
 allegorisesti	1	PCLE_NOPEASTI	adverb|dersti
 allekkain	1	PCLE_NOPEASTI	adverb
 alletusten	1	PCLE_NOPEASTI	adverb
@@ -475,8 +475,8 @@ e.	1	PCLE_VAAN	abbreviation
 eaa	1	PCLE_VAAN	abbreviation
 eaa.	1	PCLE_VAAN	abbreviation
 ed.	1	PCLE_VAAN	abbreviation
-edelle	1	PCLE_YLLE	adposition
-edelle	2	PCLE_YLLE	adverb
+edelle	1	PCLE_YLLE	adposition|allative
+edelle	2	PCLE_YLLE	adverb|allative
 edelleen	1	PCLE_TYHMÄSTI	adverb
 edellä	1	PCLE_IKINÄ	adposition|adessive
 edellä	2	PCLE_IKINÄ	adverb|adessive
@@ -808,10 +808,10 @@ eroon	1	PCLE_NOPEASTI	adverb
 eroottisesti	1	PCLE_NOPEASTI	adverb|dersti
 erossa	1	PCLE_NOPEASTI	adverb
 erottamattomasti	1	PCLE_NOPEASTI	adverb|dersti
-esiin	1	PCLE_TYHMÄSTI	adverb
+esiin	1	PCLE_TYHMÄSTI	adverb|illative
 esik.	1	PCLE_VAAN	abbreviation
 esikuvallisesti	1	PCLE_NOPEASTI	adverb|dersti
-esille	1	PCLE_TYHMÄSTI	adverb
+esille	1	PCLE_TYHMÄSTI	adverb|allative
 esillä	1	PCLE_TYHMÄSTI	adverb
 esim	1	PCLE_VAAN	abbreviation
 esim.	1	PCLE_VAAN	abbreviation
@@ -1807,11 +1807,11 @@ jäitse	1	PCLE_TYHMÄSTI	adverb
 jälj.	1	PCLE_VAAN	abbreviation
 jäljekkäin	1	PCLE_TYHMÄSTI	adverb
 jäljelle	1	PCLE_TYHMÄSTI	adverb
-jäljellä	1	PCLE_TYHMÄSTI	adverb
+jäljellä	1	PCLE_TYHMÄSTI	adverb|adessive
 jäljemmä	1	PCLE_TYHMÄSTI	adverb|Comp
 jäljemmäksi	1	PCLE_TYHMÄSTI	adverb|Comp
 jäljemmäs	1	PCLE_TYHMÄSTI	adverb|Comp
-jäljempänä	1	PCLE_TYHMÄSTI	adverb|Comp
+jäljempänä	1	PCLE_TYHMÄSTI	adverb|Comp|locative
 jäljempää	1	PCLE_TYHMÄSTI	adverb|Comp
 jäljessä	1	PCLE_IKINÄ	adposition
 jäljessä	2	PCLE_IKINÄ	adverb
@@ -1897,7 +1897,7 @@ kaikista	1	PCLE_VAAN	unspecified
 kaikitenkin	1	PCLE_VAAN	unspecified
 kaikkein	1	PCLE_VAAN	unspecified
 kaikkiaan	1	PCLE_VAAN	unspecified
-kaikkialla	1	PCLE_NOPEASTI	adverb|Quantor
+kaikkialla	1	PCLE_NOPEASTI	adverb|Quantor|adessive
 kaikkialle	1	PCLE_NOPEASTI	adverb|Quantor
 kaikkialta	1	PCLE_NOPEASTI	adverb|Quantor
 kaikkianne	1	PCLE_NOPEASTI	adverb|Quantor
@@ -3110,7 +3110,7 @@ lähekkäin	1	PCLE_TYHMÄSTI	adverb
 lähelle	1	PCLE_YLLE	adposition
 lähelle	2	PCLE_YLLE	adverb
 lähellä	1	PCLE_IKINÄ	adposition
-lähellä	2	PCLE_IKINÄ	adverb
+lähellä	2	PCLE_IKINÄ	adverb|adessive
 läheltä	1	PCLE_IKINÄ	adposition
 läheltä	2	PCLE_IKINÄ	adverb
 lähemmin	1	PCLE_TYHMÄSTI	adverb|Comp
@@ -3919,7 +3919,7 @@ oikeasti	1	PCLE_NOPEASTI	adverb|dersti
 oikeen	1	PCLE_NOPEASTI	adverb
 oikeestaan	1	PCLE_VALTAAN	unspecified
 oikeesti	1	PCLE_NOPEASTI	adverb|dersti
-oikein	1	PCLE_VALTAAN	adverb
+oikein	1	PCLE_VALTAAN	adverb|FTB3man
 oikein päin	1	PCLE_VAAN	unspecified
 oikeudellisesti	1	PCLE_NOPEASTI	adverb|dersti
 oikeudenmukaisesti	1	PCLE_NOPEASTI	adverb|dersti
@@ -4143,7 +4143,7 @@ parantumattomasti	1	PCLE_NOPEASTI	adverb|dersti
 parastaikaa	1	PCLE_NOPEASTI	adverb
 paratkoon	1	PCLE_VAAN	unspecified
 pareittain	1	PCLE_NOPEASTI	adverb|derttain
-paremmin	1	PCLE_NOPEASTI	adverb|Comp
+paremmin	1	PCLE_NOPEASTI	adverb|Comp|FTB3man
 paremminkin	1	PCLE_VAAN	adverb|Comp
 parhaastaan	1	PCLE_ILKOSILLAAN	adverb
 parhaiksi	1	PCLE_NOPEASTI	adverb
@@ -6190,12 +6190,12 @@ toim.joht.	1	PCLE_VAAN	abbreviation
 toim.siht.	1	PCLE_VAAN	abbreviation
 toisaalla	1	PCLE_NOPEASTI	adverb|Quantor
 toisaalle	1	PCLE_NOPEASTI	adverb|Quantor
-toisaalta	1	PCLE_NOPEASTI	adverb|Quantor
+toisaalta	1	PCLE_NOPEASTI	adverb|Quantor|ablative
 toisaalta	2	PCLE_NOPEASTI	unspecified
 toisaanne	1	PCLE_NOPEASTI	adverb|Quantor
 toisekseen	1	PCLE_VAAN	unspecified
 toiseksi	1	PCLE_NOPEASTI	adverb
-toisin	1	PCLE_NOPEASTI	adverb
+toisin	1	PCLE_NOPEASTI	adverb|FTB3man
 toisinaan	1	PCLE_NOPEASTI	adverb|Quantor
 toisinpäin	1	PCLE_TYHMÄSTI	adverb
 toisinsanoen	1	PCLE_VALTAAN	unspecified
@@ -6516,7 +6516,7 @@ täyspäiväisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 täyteen	1	PCLE_TYHMÄSTI	adverb
 täyteläisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 täytäntöön	1	PCLE_TYHMÄSTI	adverb
-täällä	1	PCLE_TYHMÄSTI	adverb|Demonstrative
+täällä	1	PCLE_TYHMÄSTI	adverb|Demonstrative|adessive
 täälläpäin	1	PCLE_TYHMÄSTI	adverb|Demonstrative
 täälpäi	1	PCLE_VAAN	unspecified
 täältä	1	PCLE_TYHMÄSTI	adverb|Demonstrative
@@ -6673,7 +6673,8 @@ v.	1	PCLE_VAAN	abbreviation
 va.	1	PCLE_VAAN	abbreviation
 vaa	1	PCLE_VAAN	unspecified
 vaan	1	PCLE_VAAN	conjunction|Coordinating
-vaan	2	PCLE_VAAN	unspecified
+vaan	2	PCLE_VAAN	conjunction|Adverbial
+vaan	3	PCLE_VAAN	unspecified
 vaarallisesti	1	PCLE_NOPEASTI	adverb|dersti
 vaari	2	PCLE_VAAN	unspecified
 vaarin	1	PCLE_VAAN	adverb
@@ -6874,7 +6875,7 @@ vast.	1	PCLE_VAAN	abbreviation
 vasta	1	PCLE_NOPEASTI	adverb
 vasta	2	PCLE_NOPEASTI	unspecified
 vastaan	1	PCLE_VALTAAN	adposition
-vastaan	2	PCLE_VALTAAN	adverb
+vastaan	2	PCLE_VALTAAN	adverb|illative
 vastaanottavaisesti	1	PCLE_NOPEASTI	adverb|dersti
 vastaanottavasti	1	PCLE_NOPEASTI	adverb|dersti
 vastaansanomattomasti	1	PCLE_NOPEASTI	adverb|dersti
@@ -7247,14 +7248,14 @@ vääjäämättömästi	1	PCLE_TYHMÄSTI	adverb|dersti
 väännyksiin	1	PCLE_TYHMÄSTI	adverb
 väännyksissä	1	PCLE_TYHMÄSTI	adverb
 vääp.	1	PCLE_VAAN	abbreviation
-väärin	1	PCLE_TYHMÄSTI	adverb
+väärin	1	PCLE_TYHMÄSTI	adverb|FTB3man
 väärin päin	1	PCLE_VAAN	unspecified
 väärämielisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 väärässä	1	PCLE_TYHMÄSTI	adverb
 ye.ups.	1	PCLE_VAAN	abbreviation
 yhd.	1	PCLE_VAAN	abbreviation
 yhdenmukaisesti	1	PCLE_NOPEASTI	adverb|dersti
-yhdessä	1	PCLE_TYHMÄSTI	adverb
+yhdessä	1	PCLE_TYHMÄSTI	adverb|inessive
 yhdesti	1	PCLE_TYHMÄSTI	adverb|dersti
 yht.	1	PCLE_VAAN	abbreviation
 yhtaikaa	1	PCLE_NOPEASTI	adverb

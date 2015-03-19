@@ -281,7 +281,6 @@ ahtisaarna	1	N_KIRJA	ahti{WB}saarna
 ahtoilma	1	N_KIRJA	ahto{WB}ilma
 ahtojää	1	N_PÄÄ	ahto{WB}jää
 ahtopaine	1	N_ASTE	ahto{WB}paine
-ahtoutua	1	V_ROHTUA	ahto{WB}utua
 ahvenheinä	1	N_HÖPÖTTÄJÄ	ahven{WB}heinä
 ahvenkala	1	N_KIRJA	ahven{WB}kala
 ahvenruoho	1	N_TALO	ahven{WB}ruoho
@@ -297,7 +296,6 @@ aiheenmukainen	1	A_AAKKOSELLINEN	aiheen{WB}mukainen
 aiheenvalinta	1	N_KUTSUNTA	aiheen{WB}valinta
 aihepiiri	1	N_TYYLI	aihe{WB}piiri
 aihetodiste	1	N_ASTE	aihe{WB}todiste
-aiheutua	1	V_ROHTUA	aihe{WB}utua
 aika-ajo	1	N_TALO	aika-ajo
 aika-arvo	1	N_TALO	aika-arvo
 aikaero	1	N_TALO	aika{WB}ero
@@ -315,7 +313,6 @@ aikakirja	1	N_KIRJA	aika{WB}kirja
 aikakone	1	N_ASTE	aika{WB}kone
 aikakysymys	1	N_RÄJÄYTYS	aika{WB}kysymys
 aikakytkin	1	N_ELIN	aika{WB}kytkin
-aikalainen	1	A_AAKKOSELLINEN	aika{WB}lainen
 aikalaukaisin	1	N_PUHELIN	aika{WB}laukaisin
 aikalisä	1	N_HÖPÖTTÄJÄ	aika{WB}lisä
 aikalukko	1	N_UKKO	aika{WB}lukko
@@ -1045,7 +1042,6 @@ alkeisvaraus	1	N_VAKUUTUS	alkeis{WB}varaus
 alkeisvarsi	1	N_VARSI	alkeis{WB}varsi
 alkiohuokonen	1	N_AAKKOSTAMINEN	alkio{WB}huokonen
 alkiokalvo	1	N_TALO	alkio{WB}kalvo
-alkiolainen	1	N_AAKKOSTAMINEN	alkio{WB}lainen
 alkionsiirto	1	N_SIIRTO	alkion{WB}siirto
 alkioplasma	1	N_KIRJA	alkio{WB}plasma
 alkiorakkula	1	N_MAKKARA	alkio{WB}rakkula
@@ -1073,7 +1069,6 @@ alkoholiradikaali	1	N_RUUVI	alkoholi{WB}radikaali
 alkoholiriippuvainen	1	A_AAKKOSELLINEN	alkoholi{WB}riippuvainen
 alkoholiriippuvuus	1	N_AAKKOSELLISUUS	alkoholi{WB}riippuvuus
 alkoholiryhmä	1	N_HÖPÖTTÄJÄ	alkoholi{WB}ryhmä
-alkoholisoitua	1	V_ROHTUA	alkoholi{WB}soitua
 alkoholistihuolto	1	N_KIELTO	alkoholisti{WB}huolto
 alkuaika	1	N_AIKA	alku{WB}aika
 alkuaine	1	N_ASTE	alku{WB}aine
@@ -1470,8 +1465,6 @@ ammattikuntalaitos	1	N_VAKUUTUS	ammatti{WB}kunta{WB}laitos
 ammattikurssi	1	N_RUUVI	ammatti{WB}kurssi
 ammattikurssikeskus	1	N_VAKUUTUS	ammatti{WB}kurssi{WB}keskus
 ammattikuva	1	N_VOIMA	ammatti{WB}kuva
-ammattilainen	1	A_AAKKOSELLINEN	ammatti{WB}lainen
-ammattilainen	2	N_AAKKOSTAMINEN	ammatti{WB}lainen
 ammattilaisgolffari	1	N_KANAALI	ammattilais{WB}golffari
 ammattilaisjalkapalloilija	1	N_MAKKARA	ammattilais{WB}jalkapalloilija
 ammattilaisjoukkue	1	N_ASTE	ammattilais{WB}joukkue
@@ -1799,7 +1792,6 @@ apajapaikka	1	N_POLITIIKKA	apaja{WB}paikka
 apartheidinvastainen	1	A_AAKKOSELLINEN	apartheidin{WB}vastainen
 apartheidpolitiikka	1	N_POLITIIKKA	apartheid{WB}politiikka
 apassitanssi	1	N_RUUVI	apassi{WB}tanssi
-apeutua	1	V_ROHTUA	ape{WB}utua
 apilaheinä	1	N_HÖPÖTTÄJÄ	apila{WB}heinä
 apilaniitty	1	N_PYTTY	apila{WB}niitty
 apilankukka	1	N_LUOKKA	apilan{WB}kukka
@@ -2917,8 +2909,6 @@ avustustapaus	1	N_VAKUUTUS	avustus{WB}tapaus
 avustustili	1	N_TYYLI	avustus{WB}tili
 avustustyöntekijä	1	N_HÄKKYRÄ	avustus{WB}työntekijä
 avuttomuuslisä	1	N_HÖPÖTTÄJÄ	avuttomuus{WB}lisä
-azerbaidžanilainen	1	A_AAKKOSELLINEN	azerbaidžani{WB}lainen
-azerbaidžanilainen	2	N_AAKKOSTAMINEN	azerbaidžani{WB}lainen
 azerbaidžanin kieli	1	N_HIIRI	azerbaidžanin kieli
 azerin kieli	1	N_HIIRI	azerin kieli
 baariapulainen	1	N_AAKKOSTAMINEN	baari{WB}apulainen
@@ -3639,7 +3629,6 @@ ehkäisytoimi	1	N_TAIMI	ehkäisy{WB}toimi
 ehkäisytulli	1	N_RUUVI	ehkäisy{WB}tulli
 ehkäisyvaahto	1	N_VETO	ehkäisy{WB}vaahto
 ehkäisyväline	1	N_PISTE	ehkäisy{WB}väline
-ehtolainen	1	N_AAKKOSTAMINEN	ehto{WB}lainen
 ehtolaiskurssi	1	N_RUUVI	ehtolais{WB}kurssi
 ehtolaiskuulustelu	1	N_SEIKKAILU	ehtolais{WB}kuulustelu
 ehtolause	1	N_ASTE	ehto{WB}lause
@@ -4157,7 +4146,6 @@ englanninsetteri	1	N_KEHVELI	englannin{WB}setteri
 englanninsinililja	1	N_KIRJA	englannin{WB}sinililja
 englannintorvi	1	N_ONNI	englannin{WB}torvi
 englanninvinttikoira	1	N_VOIMA	englannin{WB}vintti{WB}koira
-englantilainen	1	A_AAKKOSELLINEN	englanti{WB}lainen
 englantilaisvihaaja	1	N_VOIMA	englantilais{WB}vihaaja
 englantilaisystävällinen	1	N_KYLKIÄINEN	englantilais{WB}ystävällinen
 enimmäisaika	1	N_AIKA	enimmäis{WB}aika
@@ -5128,6 +5116,8 @@ etananvauhti	1	N_TAUTI	etanan{WB}vauhti
 etanavoi	1	N_HAI	etana{WB}voi
 etappiajo	1	N_TALO	etappi{WB}ajo
 eteeniglykoli	1	N_KANAALI	eteeni{WB}glykoli
+eteenpäin	1	PCLE_TYHMÄSTI	eteen{WB}päin
+eteenpäin	2	PCLE_TYHMÄSTI	eteen{WB}päin
 eteisaula	1	N_KIRJA	eteis{WB}aula
 eteishalli	1	N_RUUVI	eteis{WB}halli
 eteiskammiosolmuke	1	N_KASTIKE	eteiskammio{WB}solmuke
@@ -5556,7 +5546,6 @@ fissiokelpoinen	1	A_AAKKOSELLINEN	fissio{WB}kelpoinen
 fissiopommi	1	N_RUUVI	fissio{WB}pommi
 fissioreaktio	1	N_TUOMIO	fissio{WB}reaktio
 fissioreaktori	1	N_KANAALI	fissio{WB}reaktori
-flaamilainen	1	A_AAKKOSELLINEN	flaami{WB}lainen
 flaamin kieli	1	N_HIIRI	flaamin kieli
 flaaminkielinen	1	A_KYLMÄJÄRKINEN	flaamin{WB}kielinen
 flamingokukka	1	N_LUOKKA	flamingo{WB}kukka
@@ -5804,7 +5793,6 @@ gynogeneesi	1	N_TYYLI	gyno{XB}geneesi
 haahkanuntuva	1	N_VOIMA	haahkan{WB}untuva
 haaksirikko	1	N_UKKO	haaksi{WB}rikko
 haaksirikkoinen	1	N_AAKKOSTAMINEN	haaksi{WB}rikkoinen
-haaksirikkoutua	1	V_ROHTUA	haaksi{WB}rikkoutua
 haamuasiakas	1	N_ASUKAS	haamu{WB}asiakas
 haamukirjoittaja	1	N_VOIMA	haamu{WB}kirjoittaja
 haamukuva	1	N_VOIMA	haamu{WB}kuva
@@ -5953,7 +5941,6 @@ hajataittoinen	1	A_AAKKOSELLINEN	haja{WB}taittoinen
 hajataittoisuus	1	N_AAKKOSELLISUUS	haja{WB}taittoisuus
 hajatapaus	1	N_VAKUUTUS	haja{WB}tapaus
 hajatieto	1	N_VETO	haja{WB}tieto
-hajautua	1	V_ROHTUA	haja{WB}utua
 hajautumismyrkky	1	N_MYRKKY	hajautumis{WB}myrkky
 hajavalo	1	N_TALO	haja{WB}valo
 hajaääni	1	N_HIIRI	haja{WB}ääni
@@ -6482,7 +6469,6 @@ harhateillä	1	PCLE_TYHMÄSTI	harha{WB}teillä
 harhateiltä	1	PCLE_TYHMÄSTI	harha{WB}teiltä
 harhatuntemus	1	N_VAKUUTUS	harha{WB}tuntemus
 harhauskoinen	1	N_AAKKOSTAMINEN	harha{WB}uskoinen
-harhautua	1	V_ROHTUA	harha{WB}utua
 harhautusliike	1	N_LÄÄKE	harhautus{WB}liike
 harhautusmaihinnousu	1	N_ASU	harhautus{WB}maihinnousu
 haritusrauta	1	N_PATA	haritus{WB}rauta
@@ -6949,7 +6935,6 @@ heimoaate	1	N_ASTE	heimo{WB}aate
 heimohenki	1	N_HENKI	heimo{WB}henki
 heimojenvälinen	1	A_KYLMÄJÄRKINEN	heimojen{WB}välinen
 heimojuhla	1	N_VOIMA	heimo{WB}juhla
-heimolainen	1	N_AAKKOSTAMINEN	heimo{WB}lainen
 heimopäällikkö	1	N_YKSIKKÖ	heimo{WB}päällikkö
 heimoside	1	N_KIDE	heimo{WB}side
 heimosota	1	N_SOTA	heimo{WB}sota
@@ -7364,7 +7349,6 @@ hentorakenteinen	1	A_AAKKOSELLINEN	hento{WB}rakenteinen
 hentosudenkorento	1	N_TUNTO	hento{WB}sudenkorento
 hepoasteet	1	N_HIUTALEET	hepo{WB}asteet
 hepokatti	1	N_KORTTI	hepo{WB}katti
-heprealainen	1	A_AAKKOSELLINEN	heprea{WB}lainen
 heprealaiskirje	1	N_PISTE	heprealais{WB}kirje
 heprean kieli	1	N_HIIRI	heprean kieli
 hepreankielinen	1	A_KYLMÄJÄRKINEN	heprean{WB}kielinen
@@ -7725,7 +7709,6 @@ hienosäkeinen	1	A_KYLMÄJÄRKINEN	hieno{WB}säkeinen
 hienosäädin	1	N_SÄÄDIN	hieno{WB}säädin
 hienosäätää	1	V_YSKÄHTÄÄ	hieno{WB}säätää
 hienosäätö	1	N_HÄÄTÖ	hieno{WB}säätö
-hienota	1	V_KARHETA	hien{WB}ota
 hienotekoinen	1	A_AAKKOSELLINEN	hieno{WB}tekoinen
 hienotunteinen	1	A_AAKKOSELLINEN	hieno{WB}tunteinen
 hienotunteisesti	1	PCLE_NOPEASTI	hieno{WB}tunteisesti
@@ -7989,7 +7972,6 @@ hinausvaijeri	1	N_KANAALI	hinaus{WB}vaijeri
 hindin kieli	1	N_HIIRI	hindin kieli
 hindujumala	1	N_VOIMA	hindu{WB}jumala
 hindukalenteri	1	N_KANAALI	hindu{WB}kalenteri
-hindulainen	1	A_AAKKOSELLINEN	hindu{WB}lainen
 Hinkanvesi	1	N_KÖYSI	Hinkan{WB}vesi
 hinkuyskä	1	N_HÖPÖTTÄJÄ	hinku{WB}yskä
 hinnanalennus	1	N_VAKUUTUS	hinnan{WB}alennus
@@ -8319,8 +8301,6 @@ holkkihiha	1	N_KIRJA	holkki{WB}hiha
 holkkinasta	1	N_KIRJA	holkki{WB}nasta
 hollannin kieli	1	N_HIIRI	hollannin kieli
 hollanninkastike	1	N_KASTIKE	hollannin{WB}kastike
-hollantilainen	1	A_AAKKOSELLINEN	hollanti{WB}lainen
-hollantilainen	2	N_AAKKOSTAMINEN	hollanti{WB}lainen
 hollitupa	1	N_LUPA	holli{WB}tupa
 Hollolantie	1	N_TIE	Hollolan{WB}tie
 holvikaari	1	N_RUUHI	holvi{WB}kaari
@@ -8349,7 +8329,6 @@ hometahra	1	N_KIRJA	home{WB}tahra
 hometalo	1	N_TALO	home{WB}talo
 homevaurio	1	N_TUOMIO	home{WB}vaurio
 hommamies	1	N_MIES	homma{WB}mies
-hommautua	1	V_ROHTUA	homma{WB}utua
 homoeroottinen	1	A_AAKKOSELLINEN	homo{WB}eroottinen
 homoeroottisuus	1	N_AAKKOSELLISUUS	homo{WB}eroottisuus
 homofobia	1	N_MAKKARA	homo{WB}fobia
@@ -8538,6 +8517,7 @@ hovirunoilija	1	N_MAKKARA	hovi{WB}runoilija
 hovitavat	1	N_TAVAT	hovi{WB}tavat
 hoviväki	1	N_KÄKI	hovi{WB}väki
 huhtasieni	1	N_HIIRI	huhta{WB}sieni
+huhtikuu	1	N_PUU	kotus	huhti{WB}kuu
 huhukampanja	1	N_MAKKARA	huhu{WB}kampanja
 huhumylly	1	N_KÄRRY	huhu{WB}mylly
 huhupuhe	1	N_ASTE	huhu{WB}puhe
@@ -8639,7 +8619,6 @@ hukkareissu	1	N_ASU	hukka{WB}reissu
 hukkateille	1	PCLE_TYHMÄSTI	hukka{WB}teille
 hukkateillä	1	PCLE_TYHMÄSTI	hukka{WB}teillä
 hukkatila	1	N_KIRJA	hukka{WB}tila
-hukkautua	1	V_ROHTUA	hukka{WB}utua
 hukkaääni	1	N_HIIRI	hukka{WB}ääni
 hukkumiskuolema	1	N_VOIMA	hukkumis{WB}kuolema
 hukkumisonnettomuus	1	N_AAKKOSELLISUUS	hukkumis{WB}onnettomuus
@@ -8956,7 +8935,6 @@ huutokauppakorko	1	N_PELKO	huuto{WB}kauppa{WB}korko
 huutokauppatilaisuus	1	N_AAKKOSELLISUUS	huuto{WB}kauppa{WB}tilaisuus
 huutokauppayhtiö	1	N_HÄIRIÖ	huutokauppa{WB}yhtiö
 huutokuoro	1	N_TALO	huuto{WB}kuoro
-huutolainen	1	N_AAKKOSTAMINEN	huuto{WB}lainen
 huutolaispoika	1	N_POIKA	huutolais{WB}poika
 huutomatka	1	N_KIRJA	huuto{WB}matka
 huutomeri	1	N_MERI	huuto{WB}meri
@@ -9372,7 +9350,6 @@ härmesalvia	1	N_MAKKARA	härme{WB}salvia
 härmämalikka	1	N_LUSIKKA	härmä{WB}malikka
 härmäsieni	1	N_HIIRI	härmä{WB}sieni
 härmätauti	1	N_TAUTI	härmä{WB}tauti
-härskiytyä	1	V_SILIYTYÄ	härski{WB}ytyä
 häränfilee	1	N_BIDEE	härän{WB}filee
 häränhäntä	1	N_HÄNTÄ	härän{WB}häntä
 häränhäntäkeitto	1	N_HIRTTO	härän{WB}häntä{WB}keitto
@@ -10621,8 +10598,6 @@ islannin kieli	1	N_HIIRI	islannin kieli
 islanninjäkälä	1	N_HÖPÖTTÄJÄ	islannin{WB}jäkälä
 islanninsälpä	1	N_LEIPÄ	islannin{WB}sälpä
 islannintelkkä	1	N_HÖLKKÄ	islannin{WB}telkkä
-islantilainen	1	A_AAKKOSELLINEN	islanti{WB}lainen
-islantilainen	2	N_AAKKOSTAMINEN	islanti{WB}lainen
 ismailiittiliike	1	N_LÄÄKE	ismailiitti{WB}liike
 isoagglutinogeeni	1	N_TYYLI	isoagglutino{XB}geeni
 isoaivokuori	1	N_RUUHI	isoaivo{WB}kuori
@@ -11216,8 +11191,6 @@ jankkoaura	1	N_KIRJA	jankko{WB}aura
 janojuoma	1	N_VOIMA	jano{WB}juoma
 janontunne	1	N_RAKENNE	janon{WB}tunne
 jaostopäällikkö	1	N_YKSIKKÖ	jaosto{WB}päällikkö
-japanilainen	1	A_AAKKOSELLINEN	japani{WB}lainen
-japanilainen	2	N_AAKKOSTAMINEN	japani{WB}lainen
 japanin kieli	1	N_HIIRI	japanin kieli
 japaninaprikoosi	1	N_RUUVI	japanin{WB}aprikoosi
 japaninhappomarja	1	N_KIRJA	japanin{WB}happomarja
@@ -13841,7 +13814,6 @@ kansakoululaitos	1	N_VAKUUTUS	kansa{WB}koulu{WB}laitos
 kansakoulunopettaja	1	N_VOIMA	kansa{WB}koulun{WB}opettaja
 kansakunnallinen	1	A_AAKKOSELLINEN	kansa{WB}kunnallinen
 kansakunta	1	N_KUNTA	kansa{WB}kunta
-kansalainen	1	N_AAKKOSTAMINEN	kansa{WB}lainen
 kansalaisadressi	1	N_RUUVI	kansalais{WB}adressi
 kansalaishenki	1	N_HENKI	kansalais{WB}henki
 kansalaisillalliset	1	N_RAPPUSET	kansalais{WB}illalliset
@@ -16107,7 +16079,6 @@ Kerenskintie	1	N_TIE	Kerenskin{WB}tie
 kerettiläisvaino	1	N_TALO	kerettiläis{WB}vaino
 kerettiläisyydenvastainen	1	A_AAKKOSELLINEN	kerettiläisyyden{WB}vastainen
 kerhohuone	1	N_ASTE	kerho{WB}huone
-kerholainen	1	N_AAKKOSTAMINEN	kerho{WB}lainen
 kerhonohjaaja	1	N_VOIMA	kerhon{WB}ohjaaja
 kerhotalo	1	N_TALO	kerho{WB}talo
 kerhotoiminta	1	N_KUTSUNTA	kerho{WB}toiminta
@@ -17102,7 +17073,6 @@ kiertovesipumppu	1	N_LIPPU	kierto{WB}vesi{WB}pumppu
 kiertoviive	1	N_PISTE	kierto{WB}viive
 kiertoviljely	1	N_VEHKEILY	kierto{WB}viljely
 kiertovärve	1	N_PISTE	kierto{WB}värve
-kiertuelainen	1	N_AAKKOSTAMINEN	kiertue{WB}lainen
 kiertuemuusikko	1	N_LEPAKKO	kiertue{WB}muusikko
 kiertueteatteri	1	N_KANAALI	kiertue{WB}teatteri
 kiertymiskulma	1	N_VOIMA	kiertymis{WB}kulma
@@ -17143,7 +17113,6 @@ kihlapari	1	N_RUUVI	kihla{WB}pari
 kihlasormus	1	N_VAKUUTUS	kihla{WB}sormus
 kihlausaika	1	N_AIKA	kihlaus{WB}aika
 kihlausilmoitus	1	N_VAKUUTUS	kihlaus{WB}ilmoitus
-kihlautua	1	V_ROHTUA	kihla{WB}utua
 kihohaili	1	N_RUUVI	kiho{WB}haili
 kihokkikasvi	1	N_RUUVI	kihokki{WB}kasvi
 kihomato	1	N_VETO	kiho{WB}mato
@@ -17234,8 +17203,6 @@ Kiimakallion metsätie	1	N_TIE	Kiima{WB}kallion metsä{WB}tie
 kiina-alkaloidi	1	N_RUUVI	kiina-alkaloidi
 kiinailmiö	1	N_HÄIRIÖ	kiina{WB}ilmiö
 kiinakuori	1	N_RUUHI	kiina{WB}kuori
-kiinalainen	1	A_AAKKOSELLINEN	kiina{WB}lainen
-kiinalainen	2	N_AAKKOSTAMINEN	kiina{WB}lainen
 kiinalaiskaulus	1	N_VAKUUTUS	kiinalais{WB}kaulus
 kiinalaiskortteli	1	N_KANAALI	kiinalais{WB}kortteli
 kiinan kieli	1	N_HIIRI	kiinan kieli
@@ -17538,7 +17505,6 @@ kilpiteollisuus	1	N_AAKKOSELLISUUS	kilpi{WB}teollisuus
 kilpiviiva	1	N_KIRJA	kilpi{WB}viiva
 kilpukkakasvi	1	N_RUUVI	kilpukka{WB}kasvi
 kilsepensaskasvi	1	N_RUUVI	kilsepensas{WB}kasvi
-kiltalainen	1	N_AAKKOSTAMINEN	kilta{WB}lainen
 kiltalaitos	1	N_VAKUUTUS	kilta{WB}laitos
 kiltasosialismi	1	N_RUUVI	kilta{WB}sosialismi
 kiltatalo	1	N_TALO	kilta{WB}talo
@@ -17794,7 +17760,6 @@ kirjavapillike	2	N_LÄÄKE	kirjava{WB}pillike
 kirjavarasto	1	N_RUIPELO	kirja{WB}varasto
 kirjaviisas	1	N_PATSAS	kirja{WB}viisas
 kirjaviisaus	1	N_AAKKOSELLISUUS	kirja{WB}viisaus
-kirjavoitua	1	V_ROHTUA	kirja{WB}voitua
 kirjeenavaaja	1	N_VOIMA	kirjeen{WB}avaaja
 kirjeenkantaja	1	N_VOIMA	kirjeen{WB}kantaja
 kirjeensuljin	1	N_POLJIN	kirjeen{WB}suljin
@@ -18353,7 +18318,6 @@ klanipäinen	1	A_KYLMÄJÄRKINEN	klani{WB}päinen
 klanipää	1	N_PÄÄ	klani{WB}pää
 klarinetinpuhaltaja	1	N_VOIMA	klarinetin{WB}puhaltaja
 klarinettisektio	1	N_TUOMIO	klarinetti{WB}sektio
-klikkiytyä	1	V_SILIYTYÄ	klikki{WB}ytyä
 klimppisoppa	1	N_KUOPPA	klimppi{WB}soppa
 Klingsporintie	1	N_TIE	Klingsporin{WB}tie
 klinikkaluokka	1	N_LUOKKA	klinikka{WB}luokka
@@ -18505,7 +18469,6 @@ kohotusaine	1	N_ASTE	kohotus{WB}aine
 kohotyö	1	N_TYÖ	koho{WB}työ
 kohoventtiili	1	N_KEHVELI	koho{WB}venttiili
 kohtaamispaikka	1	N_POLITIIKKA	kohtaamis{WB}paikka
-kohtalainen	1	A_AAKKOSELLINEN	kohta{WB}lainen
 kohtalaisesti	1	PCLE_NOPEASTI	kohta{WB}laisesti
 kohtalonhetki	1	N_KIVI	kohtalon{WB}hetki
 kohtalonkukka	1	N_LUOKKA	kohtalon{WB}kukka
@@ -18787,7 +18750,6 @@ kokovartalopuudutus	1	N_VAKUUTUS	koko{WB}vartalo{WB}puudutus
 kokoveri	1	N_VERI	koko{WB}veri
 kokovuotinen	1	A_AAKKOSELLINEN	koko{WB}vuotinen
 kokoöinen	1	A_KYLMÄJÄRKINEN	koko{WB}öinen
-koksiutua	1	V_ROHTUA	koksi{WB}utua
 koksiuuni	1	N_RUUVI	koksi{WB}uuni
 kolajuoma	1	N_VOIMA	kola{WB}juoma
 kolapuu	1	N_PUU	kola{WB}puu
@@ -19292,7 +19254,6 @@ koppelokääpä	1	N_LEIPÄ	koppelo{WB}kääpä
 koppilyönti	1	N_VIENTI	koppi{WB}lyönti
 koppisiemeninen	1	A_KYLMÄJÄRKINEN	koppi{WB}siemeninen
 kopraöljy	1	N_KÄRRY	kopra{WB}öljy
-koptilainen	1	A_AAKKOSELLINEN	kopti{WB}lainen
 koptinkielinen	1	A_KYLMÄJÄRKINEN	koptin{WB}kielinen
 koputuslevy	1	N_KÄRRY	koputus{WB}levy
 koputusvasara	1	N_MAKKARA	koputus{WB}vasara
@@ -19932,7 +19893,6 @@ kotitila	1	N_KIRJA	koti{WB}tila
 kotitonttu	1	N_TORTTU	koti{WB}tonttu
 kotityranni	1	N_RUUVI	koti{WB}tyranni
 kotityö	1	N_TYÖ	koti{WB}työ
-kotiutua	1	V_ROHTUA	koti{WB}utua
 kotivakuutus	1	N_VAKUUTUS	koti{WB}vakuutus
 kotivalmisteinen	1	A_AAKKOSELLINEN	koti{WB}valmisteinen
 kotivalmistus	1	N_VAKUUTUS	koti{WB}valmistus
@@ -20786,7 +20746,6 @@ kultavaranto	1	N_TUNTO	kulta{WB}varanto
 kultavihma	1	N_KIRJA	kulta{WB}vihma
 kultaväri	1	N_TYYLI	kulta{WB}väri
 kultayhdiste	1	N_PISTE	kulta{WB}yhdiste
-kultivoitua	1	V_ROHTUA	kulti{WB}voitua
 kulttielokuva	1	N_VOIMA	kultti{WB}elo{WB}kuva
 kulttikirja	1	N_KIRJA	kultti{WB}kirja
 kulttuureidenvälinen	1	A_KYLMÄJÄRKINEN	kulttuureiden{WB}välinen
@@ -20960,7 +20919,6 @@ kummunrakentaja	1	N_VOIMA	kummun{WB}rakentaja
 kumoushanke	1	N_KASTIKE	kumous{WB}hanke
 kumousliike	1	N_LÄÄKE	kumous{WB}liike
 kumouspuolue	1	N_ASTE	kumous{WB}puolue
-kumoutua	1	V_ROHTUA	kumo{WB}utua
 kumparelasku	1	N_ASU	kumpare{WB}lasku
 kumpuhauta	1	N_PATA	kumpu{WB}hauta
 kumpupilvi	1	N_KIVI	kumpu{WB}pilvi
@@ -21133,7 +21091,6 @@ kuntosali	1	N_RUUVI	kunto{WB}sali
 kuntotesti	1	N_TYYLI	kunto{WB}testi
 kuntourheilija	1	N_MAKKARA	kunto{WB}urheilija
 kuntourheilu	1	N_SEIKKAILU	kunto{WB}urheilu
-kuntoutua	1	V_ROHTUA	kunto{WB}utua
 kuntoutusallas	1	N_ALLAS	kuntoutus{WB}allas
 kuntoutuskeskus	1	N_VAKUUTUS	kuntoutus{WB}keskus
 kuntoutuslaitos	1	N_VAKUUTUS	kuntoutus{WB}laitos
@@ -21247,7 +21204,6 @@ kuoriperuna	1	N_MAKKARA	kuori{WB}peruna
 kuoripoika	1	N_POIKA	kuori{WB}poika
 kuoririutta	1	N_MITTA	kuori{WB}riutta
 kuorisora	1	N_VOIMA	kuori{WB}sora
-kuoriutua	1	V_ROHTUA	kuori{WB}utua
 kuoriäyriäinen	1	N_KYLKIÄINEN	kuori{WB}äyriäinen
 kuorma-auto	1	N_TALO	kuorma-auto
 kuorma-autoliikenne	1	N_KIINNE	kuorma-auto{WB}liikenne
@@ -21265,7 +21221,6 @@ kuormituslasti	1	N_RUUVI	kuormitus{WB}lasti
 kuormitusvastus	1	N_VAKUUTUS	kuormitus{WB}vastus
 kuoroesitys	1	N_RÄJÄYTYS	kuoro{WB}esitys
 kuorokohtaus	1	N_VAKUUTUS	kuoro{WB}kohtaus
-kuorolainen	1	N_AAKKOSTAMINEN	kuoro{WB}lainen
 kuorolaulaja	1	N_VOIMA	kuoro{WB}laulaja
 kuorolaulu	1	N_ASU	kuoro{WB}laulu
 kuorolausunta	1	N_KUTSUNTA	kuoro{WB}lausunta
@@ -21970,7 +21925,6 @@ kvanttikenttäteoria	1	N_MAKKARA	kvanttikenttä{WB}teoria
 kvanttimekaniikka	1	N_POLITIIKKA	kvantti{WB}mekaniikka
 kvanttisähködynamiikka	1	N_POLITIIKKA	kvantti{WB}sähködynamiikka
 kvanttiteoria	1	N_MAKKARA	kvantti{WB}teoria
-kvanttiutua	1	V_ROHTUA	kvantti{WB}utua
 kvartettilaulu	1	N_ASU	kvartetti{WB}laulu
 kvartsihiekka	1	N_POLITIIKKA	kvartsi{WB}hiekka
 kvartsikello	1	N_TALO	kvartsi{WB}kello
@@ -22202,7 +22156,6 @@ kymmenvuotisjuhla	1	N_VOIMA	kymmenvuotis{WB}juhla
 kymmenvuotiskausi	1	N_KAUSI	kymmenvuotis{WB}kausi
 kymmenyspilkku	1	N_TIKKU	kymmenys{WB}pilkku
 kymmenysvaaka	1	N_VAAKA	kymmenys{WB}vaaka
-kymnaasilainen	1	N_AAKKOSTAMINEN	kymnaasi{WB}lainen
 kymppiluokka	1	N_LUOKKA	kymppi{WB}luokka
 kymppiluokkalainen	1	A_AAKKOSELLINEN	kymppi{WB}luokkalainen
 kymppiluokkalainen	2	N_AAKKOSTAMINEN	kymppi{WB}luokkalainen
@@ -23289,7 +23242,6 @@ lahjomisyritys	1	N_RÄJÄYTYS	lahjomis{WB}yritys
 lahjuksenantaja	1	N_VOIMA	lahjuksen{WB}antaja
 lahjusrahasto	1	N_RUIPELO	lahjus{WB}rahasto
 lahjusskandaali	1	N_KANAALI	lahjus{WB}skandaali
-lahkolainen	1	N_AAKKOSTAMINEN	lahko{WB}lainen
 lahkolaisryhmä	1	N_HÖPÖTTÄJÄ	lahkolais{WB}ryhmä
 lahnankutu	1	N_KUITU	lahnan{WB}kutu
 lahnanruoho	1	N_TALO	lahnan{WB}ruoho
@@ -23377,7 +23329,6 @@ lainausaika	1	N_AIKA	lainaus{WB}aika
 lainauskortti	1	N_KORTTI	lainaus{WB}kortti
 lainausmerkki	1	N_HÄKKI	lainaus{WB}merkki
 lainaustilasto	1	N_RUIPELO	lainaus{WB}tilasto
-lainautua	1	V_ROHTUA	laina{WB}utua
 lainavarat	1	N_VARAT	laina{WB}varat
 lainekreppi	1	N_TYYPPI	laine{WB}kreppi
 lainelauta	1	N_PATA	laine{WB}lauta
@@ -23529,7 +23480,6 @@ lakkokassa	1	N_KIRJA	lakko{WB}kassa
 lakkokenraali	1	N_KANAALI	lakko{WB}kenraali
 lakkoklausuuli	1	N_RUUVI	lakko{WB}klausuuli
 lakkokokous	1	N_VAKUUTUS	lakko{WB}kokous
-lakkolainen	1	N_AAKKOSTAMINEN	lakko{WB}lainen
 lakkolupa	1	N_LUPA	lakko{WB}lupa
 lakko-oikeus	1	N_AAKKOSELLISUUS	lakko-oikeus
 lakkorahasto	1	N_RUIPELO	lakko{WB}rahasto
@@ -24500,7 +24450,6 @@ leimasintyyny	1	N_KÄRRY	leimasin{WB}tyyny
 leimasinväri	1	N_TYYLI	leimasin{WB}väri
 leimausmuste	1	N_ASTE	leimaus{WB}muste
 leimauspalkkio	1	N_TUOMIO	leimaus{WB}palkkio
-leimautua	1	V_ROHTUA	leima{WB}utua
 leimavero	1	N_TALO	leima{WB}vero
 leimaveroasetus	1	N_VAKUUTUS	leimavero{WB}asetus
 leimuhitsaus	1	N_VAKUUTUS	leimu{WB}hitsaus
@@ -24562,7 +24511,6 @@ leiritapahtuma	1	N_VOIMA	leiri{WB}tapahtuma
 leiritoveri	1	N_KANAALI	leiri{WB}toveri
 leirituli	1	N_TULI	leiri{WB}tuli
 leirituoli	1	N_RUUVI	leiri{WB}tuoli
-leiriytyä	1	V_SILIYTYÄ	leiri{WB}ytyä
 leivonnainen	1	N_AAKKOSTAMINEN	leivon{WB}nainen
 leivontasuklaa	1	N_VAINAA	leivonta{WB}suklaa
 Leivonvesi	1	N_KÖYSI	Leivon{WB}vesi
@@ -25515,7 +25463,6 @@ limarauhanen	1	N_AAKKOSTAMINEN	lima{WB}rauhanen
 limasieni	1	N_HIIRI	lima{WB}sieni
 limaskakasvi	1	N_RUUVI	limaska{WB}kasvi
 limaskasaniainen	1	N_AAKKOSTAMINEN	limaska{WB}saniainen
-limautua	1	V_ROHTUA	lima{WB}utua
 limemehu	1	N_ASU	lime{WB}mehu
 limerikki	1	N_HÄKKI	lime{WB}rikki
 limettipuu	1	N_PUU	limetti{WB}puu
@@ -25783,7 +25730,6 @@ lisäveloitus	1	N_VAKUUTUS	lisä{WB}veloitus
 lisävero	1	N_TALO	lisä{WB}vero
 lisävoima	1	N_VOIMA	lisä{WB}voima
 lisäväri	1	N_TYYLI	lisä{WB}väri
-lisäytyä	1	V_SILIYTYÄ	lisä{WB}ytyä
 lisääntymisalue	1	N_ASTE	lisääntymis{WB}alue
 lisääntymiselin	1	N_ELIN	lisääntymis{WB}elin
 lisääntymiskyky	1	N_KYKY	lisääntymis{WB}kyky
@@ -26006,7 +25952,6 @@ loka-auto	1	N_TALO	loka-auto
 lokakuinen	1	A_AAKKOSELLINEN	loka{WB}kuinen
 lokakuu	1	N_PUU	loka{WB}kuu
 lokasuoja	1	N_VOIMA	loka{WB}suoja
-lokeroitua	1	V_ROHTUA	lokero{WB}itua
 lokeroveriviemäri	1	N_KEHVELI	lokero{WB}veriviemäri
 lokikirja	1	N_KIRJA	loki{WB}kirja
 lokinuora	1	N_VOIMA	loki{WB}nuora
@@ -26454,7 +26399,6 @@ lumivuohi	1	N_TULI	lumi{WB}vuohi
 lumivyöry	1	N_KÄRRY	lumi{WB}vyöry
 lummekasvi	1	N_RUUVI	lumme{WB}kasvi
 lumokvarkki	1	N_LOKKI	lumo{WB}kvarkki
-lumoutua	1	V_ROHTUA	lumo{WB}utua
 lumpeenkukka	1	N_LUOKKA	lumpeen{WB}kukka
 lumpeenlehti	1	N_LEHTI	lumpeen{WB}lehti
 lumppukuitu	1	N_KUITU	lumppu{WB}kuitu
@@ -26911,7 +26855,6 @@ luupää	1	N_PÄÄ	luu{WB}pää
 luurangonlaiha	1	A_AAVA	luurangon{WB}laiha
 luuranko	1	N_RUNKO	luu{WB}ranko
 luurasva	1	N_KIRJA	luu{WB}rasva
-luurata	1	V_ARVATA	luu{WB}rata
 luusolu	1	N_ASU	luu{WB}solu
 luusolukko	1	N_LEPAKKO	luu{WB}solukko
 luustolihas	1	N_VAKUUTUS	luusto{WB}lihas
@@ -27909,7 +27852,6 @@ maalajite	1	N_OSOITE	maa{WB}lajite
 maalari	1	N_KANAALI	maa{WB}lari
 maalarinkelkka	1	N_POLITIIKKA	maalarin{WB}kelkka
 maalarinteippi	1	N_TYYPPI	maalarin{WB}teippi
-maalata	1	V_ARVATA	maa{WB}lata
 maalausjalusta	1	N_KITARA	maalaus{WB}jalusta
 maalauskelpoinen	1	A_AAKKOSELLINEN	maalaus{WB}kelpoinen
 maalausliike	1	N_LÄÄKE	maalaus{WB}liike
@@ -27923,7 +27865,6 @@ maalaustela	1	N_KIRJA	maalaus{WB}tela
 maalausteline	1	N_PISTE	maalaus{WB}teline
 maalaustyyli	1	N_TYYLI	maalaus{WB}tyyli
 maalaustyö	1	N_TYÖ	maalaus{WB}työ
-maalauttaa	1	V_VIEROITTAA	maa{WB}lauttaa
 maaleikkaus	1	N_VAKUUTUS	maa{WB}leikkaus
 maalevintäinen	1	A_KYLMÄJÄRKINEN	maa{WB}levintäinen
 maaliahne	1	N_ASTE	maali{WB}ahne
@@ -28193,7 +28134,6 @@ maarakennusmekaniikka	1	N_POLITIIKKA	maa{WB}rakennus{WB}mekaniikka
 maarakennustekstiili	1	N_KEHVELI	maa{WB}rakennus{WB}tekstiili
 maarakennustyö	1	N_TYÖ	maa{WB}rakennus{WB}työ
 maarata	1	N_PATA	maa{WB}rata
-maarata	2	V_ARVATA	maa{WB}rata
 maareformi	1	N_RUUVI	maa{WB}reformi
 maarekisteri	1	N_KEHVELI	maa{WB}rekisteri
 maarekisterinote	1	N_OSOITE	maa{WB}rekisterin{WB}ote
@@ -29309,7 +29249,6 @@ matkakustannus	1	N_VAKUUTUS	matka{WB}kustannus
 matkakuume	1	N_ASTE	matka{WB}kuume
 matkakuva	1	N_VOIMA	matka{WB}kuva
 matkakuvaus	1	N_VAKUUTUS	matka{WB}kuvaus
-matkalainen	1	A_AAKKOSELLINEN	matka{WB}lainen
 matkalasku	1	N_ASU	matka{WB}lasku
 matkalaukku	1	N_TIKKU	matka{WB}laukku
 matkalaukkuelämä	1	N_HÖPÖTTÄJÄ	matka{WB}laukku{WB}elämä
@@ -30109,7 +30048,7 @@ metsäisyys	1	N_KÖYHYYS	metsä{WB}isyys
 metsäjasmiini	1	N_RUUVI	metsä{WB}jasmiini
 metsäjänis	1	N_RÄJÄYTYS	metsä{WB}jänis
 metsäkaarti	1	N_RUUVI	metsä{WB}kaarti
-metsäkaartilainen	1	N_AAKKOSTAMINEN	metsä{WB}kaarti{WB}lainen
+metsäkaartilainen	1	N_AAKKOSTAMINEN	metsä{WB}kaartilainen
 metsäkalkkarokäärme	1	N_PISTE	metsä{WB}kalkkarokäärme
 metsäkana	1	N_KIRJA	metsä{WB}kana
 metsäkananaaras	1	N_PATSAS	metsäkana{WB}naaras
@@ -30853,7 +30792,7 @@ momenttiavain	1	N_PUHELIN	momentti{WB}avain
 momenttimagnitudi	1	N_RUUVI	momentti{WB}magnitudi
 moneusoppi	1	N_KUPPI	moneus{WB}oppi
 mongolianjirdi	1	N_TYYLI	mongolian{WB}jirdi
-mongolilainen	1	A_AAKKOSELLINEN	mongoli{WB}lainen
+mongolilainen	1	A_AAKKOSELLINEN	mongolilainen
 mongolin kieli	1	N_HIIRI	mongolin kieli
 mongolinkielinen	1	A_KYLMÄJÄRKINEN	mongolin{WB}kielinen
 mongolinpoimu	1	N_ASU	mongolin{WB}poimu
@@ -30961,8 +30900,6 @@ moraalikäsitys	1	N_RÄJÄYTYS	moraali{WB}käsitys
 moraalinvartija	1	N_MAKKARA	moraalin{WB}vartija
 moraalisaarna	1	N_KIRJA	moraali{WB}saarna
 moraalisääntö	1	N_KÄÄNTÖ	moraali{WB}sääntö
-mordvalainen	1	A_AAKKOSELLINEN	mordva{WB}lainen
-mordvan kieli	1	N_HIIRI	mordvan kieli
 moreenikerros	1	N_VAKUUTUS	moreeni{WB}kerros
 moreenikerrostuma	1	N_VOIMA	moreeni{WB}kerrostuma
 moreenimaa	1	N_MAA	moreeni{WB}maa
@@ -31321,7 +31258,6 @@ muotosuku	1	N_LUKU	muoto{WB}suku
 muototaju	1	N_ASU	muoto{WB}taju
 muototeräs	1	N_RÄJÄYTYS	muoto{WB}teräs
 muototiili	1	N_SYLI	muoto{WB}tiili
-muotoutua	1	V_ROHTUA	muoto{WB}utua
 muotovaahto	1	N_VETO	muoto{WB}vaahto
 muotovalio	1	N_TUOMIO	muoto{WB}valio
 muotovirhe	1	N_PISTE	muoto{WB}virhe
@@ -31469,7 +31405,6 @@ murukoloinen	1	A_AAKKOSELLINEN	muru{WB}koloinen
 mururakenteinen	1	A_AAKKOSELLINEN	muru{WB}rakenteinen
 museoarvo	1	N_TALO	museo{WB}arvo
 museoesine	1	N_PISTE	museo{WB}esine
-museoitua	1	V_ROHTUA	museo{WB}itua
 museojuna	1	N_VOIMA	museo{WB}juna
 museokokoelma	1	N_VOIMA	museo{WB}kokoelma
 museoneuvos	1	N_VAKUUTUS	museo{WB}neuvos
@@ -33234,7 +33169,6 @@ nojatuoli	1	N_RUUVI	noja{WB}tuoli
 nojatuoliliberaali	1	N_RUUVI	nojatuoli{WB}liberaali
 nojatuolimatka	1	N_KIRJA	nojatuoli{WB}matka
 nojatuolimatka	2	N_KIRJA	noja{WB}tuoli{WB}matka
-nojautua	1	V_ROHTUA	noja{WB}utua
 nokihärmä	1	N_HÖPÖTTÄJÄ	noki{WB}härmä
 nokikana	1	N_KIRJA	noki{WB}kana
 nokikanaparvi	1	N_ONNI	noki{WB}kanaparvi
@@ -33486,7 +33420,6 @@ nukkapintainen	1	A_AAKKOSELLINEN	nukka{WB}pintainen
 nukkasammal	1	N_ASKAR	nukka{WB}sammal
 nukkasihti	1	N_NIHTI	nukka{WB}sihti
 nukkasolmu	1	N_ASU	nukka{WB}solmu
-nukkautua	1	V_ROHTUA	nukka{WB}utua
 nukkavieru	1	A_VALKAISTU	nukka{WB}vieru
 nukkeanimaatio	1	N_TUOMIO	nukke{WB}animaatio
 nukkeasteri	1	N_KANAALI	nukke{WB}asteri
@@ -34223,7 +34156,6 @@ oikeinkirjoitussääntö	1	N_KÄÄNTÖ	oikein{WB}kirjoitus{WB}sääntö
 oikeistodiktatuuri	1	N_RUUVI	oikeisto{WB}diktatuuri
 oikeistoenemmistö	1	N_MÖMMÖ	oikeisto{WB}enemmistö
 oikeistohallitus	1	N_VAKUUTUS	oikeisto{WB}hallitus
-oikeistolainen	1	A_AAKKOSELLINEN	oikeisto{WB}lainen
 oikeistolehdistö	1	N_MÖMMÖ	oikeisto{WB}lehdistö
 oikeistolehti	1	N_LEHTI	oikeisto{WB}lehti
 oikeistopiiri	1	N_TYYLI	oikeisto{WB}piiri
@@ -35586,7 +35518,6 @@ palapeli	1	N_TYYLI	pala{WB}peli
 palasaippua	1	N_MAKKARA	pala{WB}saippua
 palasokeri	1	N_KANAALI	pala{WB}sokeri
 palatsivallankumous	1	N_VAKUUTUS	palatsi{WB}vallan{WB}kumous
-palautua	1	V_ROHTUA	pala{WB}utua
 palautusjäähdytin	1	N_HEITIN	palautus{WB}jäähdytin
 palautuslyönti	1	N_VIENTI	palautus{WB}lyönti
 palautusmaksu	1	N_ASU	palautus{WB}maksu
@@ -36442,7 +36373,6 @@ partioalus	1	N_VAKUUTUS	partio{WB}alus
 partioauto	1	N_TALO	partio{WB}auto
 partiojohtaja	1	N_VOIMA	partio{WB}johtaja
 partiojärjestö	1	N_JÄÄTELÖ	partio{WB}järjestö
-partiolainen	1	N_AAKKOSTAMINEN	partio{WB}lainen
 partiolaisosasto	1	N_RUIPELO	partiolais{WB}osasto
 partiolaisryhmä	1	N_HÖPÖTTÄJÄ	partiolais{WB}ryhmä
 partioleiri	1	N_TYYLI	partio{WB}leiri
@@ -36496,7 +36426,6 @@ passionäytelmä	1	N_HÖPÖTTÄJÄ	passio{WB}näytelmä
 passipeli	1	N_TYYLI	passi{WB}peli
 passipoliisi	1	N_KANAALI	passi{WB}poliisi
 passivapaus	1	N_AAKKOSELLISUUS	passi{WB}vapaus
-passivoitua	1	V_ROHTUA	passi{WB}voitua
 pastakastike	1	N_KASTIKE	pasta{WB}kastike
 pastakone	1	N_ASTE	pasta{WB}kone
 pastaruoka	1	N_RUOKA	pasta{WB}ruoka
@@ -36558,7 +36487,6 @@ patoaukko	1	N_UKKO	pato{WB}aukko
 patogeneesi	1	N_TYYLI	pato{XB}geneesi
 patoluukku	1	N_TIKKU	pato{WB}luukku
 patopainemoottori	1	N_KANAALI	patopaine{WB}moottori
-patoutua	1	V_ROHTUA	pato{WB}utua
 Patovesi	1	N_KÖYSI	Pato{WB}vesi
 patruunalipas	1	N_SAAPAS	patruuna{WB}lipas
 patruunapesä	1	N_HÖPÖTTÄJÄ	patruuna{WB}pesä
@@ -37825,7 +37753,6 @@ piikkivartinen	1	A_AAKKOSELLINEN	piikki{WB}vartinen
 piikkiäes	1	N_IES	piikki{WB}äes
 piikkohirvi	1	N_KIVI	piikko{WB}hirvi
 piilasi	1	N_RUUVI	pii{WB}lasi
-piileskellä	1	V_ÄKSYILLÄ	pii{WB}leskellä
 piilevämaa	1	N_MAA	piilevä{WB}maa
 piilipuu	1	N_PUU	piili{WB}puu
 piilofarmari	1	N_KANAALI	piilo{WB}farmari
@@ -38316,7 +38243,6 @@ pilkkionginta	1	N_KUTSUNTA	pilkki{WB}onginta
 pilkkionki	1	N_ONKI	pilkki{WB}onki
 pilkkopimeys	1	N_KÖYHYYS	pilkko{WB}pimeys
 pilkkopimeä	1	A_JÄREÄ	pilkko{WB}pimeä
-pilkkoutua	1	V_ROHTUA	pilkko{WB}utua
 pilkkukuume	1	N_ASTE	pilkku{WB}kuume
 pilkkukuviointi	1	N_SOINTI	pilkku{WB}kuviointi
 pilkkupiikkimonni	1	N_RUUVI	pilkkupiikki{WB}monni
@@ -39611,7 +39537,6 @@ pressikeskus	1	N_VAKUUTUS	pressi{WB}keskus
 pressikortti	1	N_KORTTI	pressi{WB}kortti
 pretoriaanikaarti	1	N_RUUVI	pretoriaani{WB}kaarti
 pretoriaanikaartilainen	1	N_AAKKOSTAMINEN	pretoriaani{WB}kaartilainen
-preussilainen	1	A_AAKKOSELLINEN	preussi{WB}lainen
 preussinsininen	1	A_KYLMÄJÄRKINEN	preussin{WB}sininen
 preussinsininen	2	N_AAKKOSTAMINEN	preussin{WB}sininen
 priimakunto	1	N_TUNTO	priima{WB}kunto
@@ -41344,7 +41269,7 @@ pyhäinkuva	1	N_VOIMA	pyhäin{WB}kuva
 pyhäinmiestenpäivä	1	N_HÖPÖTTÄJÄ	pyhäin{WB}miesten{WB}päivä
 pyhäinpäivä	1	N_HÖPÖTTÄJÄ	pyhäin{WB}päivä
 pyhäkoulu	1	N_ASU	pyhä{WB}koulu
-pyhäkoululainen	1	N_AAKKOSTAMINEN	pyhä{WB}koulu{WB}lainen
+pyhäkoululainen	1	N_AAKKOSTAMINEN	pyhä{WB}koululainen
 pyhäkoululapsi	1	N_LAPSI	pyhä{WB}koulu{WB}lapsi
 pyhäkoulunopettaja	1	N_VOIMA	pyhä{WB}koulun{WB}opettaja
 pyhäkuteet	1	N_SUHTEET	pyhä{WB}kuteet
@@ -42434,7 +42359,6 @@ raatelunokka	1	N_LUOKKA	raatelu{WB}nokka
 raatihuone	1	N_ASTE	raati{WB}huone
 raatihuoneviini	1	N_TYYLI	raatihuone{WB}viini
 raatihuonevilliviini	1	N_TYYLI	raatihuone{WB}villiviini
-raatilainen	1	N_AAKKOSTAMINEN	raati{WB}lainen
 raatokukka	1	N_LUOKKA	raato{WB}kukka
 raatokuoriainen	1	N_AAKKOSTAMINEN	raato{WB}kuoriainen
 raatokärpänen	1	N_KYLKIÄINEN	raato{WB}kärpänen
@@ -42743,7 +42667,6 @@ raipanisku	1	N_ASU	raipan{WB}isku
 raipparangaistus	1	N_VAKUUTUS	raippa{WB}rangaistus
 raiskausepäilty	1	N_EPÄILTY	raiskaus{WB}epäilty
 raiskaustuomio	1	N_TUOMIO	raiskaus{WB}tuomio
-raiskautua	1	V_ROHTUA	raiska{WB}utua
 Raiskeentie	1	N_TIE	Raiskeen{WB}tie
 raitakastike	1	N_KASTIKE	raita{WB}kastike
 raitakehrääjä	1	N_HÖPÖTTÄJÄ	raita{WB}kehrääjä
@@ -43122,8 +43045,6 @@ rannikkovesi	1	N_KÖYSI	rannikko{WB}vesi
 rannikkoväestö	1	N_JÄÄTELÖ	rannikko{WB}väestö
 rannikkoväylä	1	N_HÖPÖTTÄJÄ	rannikko{WB}väylä
 rannikonlaukkaneilikka	1	N_LUSIKKA	rannikon{WB}laukkaneilikka
-ranskalainen	1	A_AAKKOSELLINEN	ranska{WB}lainen
-ranskalainen	2	N_AAKKOSTAMINEN	ranska{WB}lainen
 ranskalaisamerikkalainen	1	N_AAKKOSTAMINEN	ranskalais{WB}amerikkalainen
 ranskan kieli	1	N_HIIRI	ranskan kieli
 ranskanbulldoggi	1	N_RUUVI	ranskan{WB}bulldoggi
@@ -43240,7 +43161,6 @@ rappeutumiskuolio	1	N_TUOMIO	rappeutumis{WB}kuolio
 rappeutumisoppi	1	N_KUPPI	rappeutumis{WB}oppi
 rappeutumissairaus	1	N_AAKKOSELLISUUS	rappeutumis{WB}sairaus
 rappioalkoholisti	1	N_RUUVI	rappio{WB}alkoholisti
-rappioitua	1	V_ROHTUA	rappio{WB}itua
 rappiotila	1	N_KIRJA	rappio{WB}tila
 rappukäytävä	1	N_HÖPÖTTÄJÄ	rappu{WB}käytävä
 rapsikakku	1	N_TIKKU	rapsi{WB}kakku
@@ -43375,7 +43295,6 @@ Ratatie	1	N_TIE	Rata{WB}tie
 ratatuomari	1	N_KANAALI	rata{WB}tuomari
 ratatyöläinen	1	N_KYLKIÄINEN	rata{WB}työläinen
 ratatyömies	1	N_MIES	rata{WB}työmies
-ratautua	1	V_ROHTUA	rata{WB}utua
 ratifioimisasiakirja	1	N_KIRJA	ratifioimis{WB}asia{WB}kirja
 ratifioimiskirja	1	N_KIRJA	ratifioimis{WB}kirja
 rationaaliluku	1	N_LUKU	rationaali{WB}luku
@@ -43954,7 +43873,6 @@ riitapukari	1	N_KANAALI	riita{WB}pukari
 riitapuoli	1	N_RUUHI	riita{WB}puoli
 riitasointu	1	N_LINTU	riita{WB}sointu
 riitasointuinen	1	A_AAKKOSELLINEN	riita{WB}sointuinen
-riitautua	1	V_ROHTUA	riita{WB}utua
 riittämättömyydentunne	1	N_RAKENNE	riittämättömyyden{WB}tunne
 riivatunmoinen	1	A_AAKKOSELLINEN	riivatun{WB}moinen
 rikasilmeinen	1	A_KYLMÄJÄRKINEN	rikas{WB}ilmeinen
@@ -44175,7 +44093,6 @@ rintavarustus	1	N_VAKUUTUS	rinta{WB}varustus
 rintaääni	1	N_HIIRI	rinta{WB}ääni
 Ripakanvesi	1	N_KÖYSI	Ripakan{WB}vesi
 ripakinttu	1	N_TORTTU	ripa{WB}kinttu
-ripeytyä	1	V_SILIYTYÄ	ripe{WB}ytyä
 ripeäliikkeinen	1	A_KYLMÄJÄRKINEN	ripeä{WB}liikkeinen
 ripeäotteinen	1	A_AAKKOSELLINEN	ripeä{WB}otteinen
 rippi-isä	1	N_HÖPÖTTÄJÄ	rippi-isä
@@ -44693,7 +44610,6 @@ ruhtinassuku	1	N_LUKU	ruhtinas{WB}suku
 ruishiutale	1	N_ASTE	ruis{WB}hiutale
 ruisjauho	1	N_TALO	ruis{WB}jauho
 ruisjyvä	1	N_HÖPÖTTÄJÄ	ruis{WB}jyvä
-ruiskaista	1	V_MARISTA	ruis{WB}kaista
 ruiskattara	1	N_MAKKARA	ruis{WB}kattara
 ruiskaunokki	1	N_LOKKI	ruis{WB}kaunokki
 ruiskeliuos	1	N_VAKUUTUS	ruiske{WB}liuos
@@ -46231,8 +46147,8 @@ satakertaisesti	1	PCLE_NOPEASTI	sata{WB}kertaisesti
 satakieli	1	N_HIIRI	sata{WB}kieli
 satakiloinen	1	A_AAKKOSELLINEN	sata{WB}kiloinen
 satakunta	1	NUM_KYMMENKUNTA	sata{WB}kunta
-satakuntalainen	1	A_AAKKOSELLINEN	sata{WB}kunta{WB}lainen
-satakuntalainen	2	N_AAKKOSTAMINEN	sata{WB}kunta{WB}lainen
+satakuntalainen	1	A_AAKKOSELLINEN	sata{WB}kuntalainen
+satakuntalainen	2	N_AAKKOSTAMINEN	sata{WB}kuntalainen
 satalappunen	1	N_AAKKOSTAMINEN	sata{WB}lappunen
 sataluku	1	N_LUKU	sata{WB}luku
 satalukuinen	1	A_AAKKOSELLINEN	sata{WB}lukuinen
@@ -46476,7 +46392,6 @@ savituote	1	N_OSOITE	savi{WB}tuote
 saviveistos	1	N_VAKUUTUS	savi{WB}veistos
 savivelli	1	N_TYYLI	savi{WB}velli
 Savivesi	1	N_KÖYSI	Savi{WB}vesi
-savolainen	1	A_AAKKOSELLINEN	savo{WB}lainen
 savolaiskiila	1	N_KIRJA	savolais{WB}kiila
 savolaismallinen	1	A_AAKKOSELLINEN	savolais{WB}mallinen
 savolaismurre	1	N_AARRE	savolais{WB}murre
@@ -46715,7 +46630,6 @@ sekakoosteinen	1	A_AAKKOSELLINEN	seka{WB}koosteinen
 sekakulttuuri	1	N_KANAALI	seka{WB}kulttuuri
 sekakuoro	1	N_TALO	seka{WB}kuoro
 sekakäyttäjä	1	N_HÖPÖTTÄJÄ	seka{WB}käyttäjä
-sekalainen	1	A_AAKKOSELLINEN	seka{WB}lainen
 sekaleipä	1	N_LEIPÄ	seka{WB}leipä
 sekaluku	1	N_LUKU	seka{WB}luku
 sekaluokka	1	N_LUOKKA	seka{WB}luokka
@@ -48073,7 +47987,6 @@ sinooperinpunainen	1	A_AAKKOSELLINEN	sinooperin{WB}punainen
 sinooperipuna	1	N_VOIMA	sinooperi{WB}puna
 sinooperipunainen	1	A_AAKKOSELLINEN	sinooperi{WB}punainen
 sinsillaturkis	1	N_VAKUUTUS	sinsilla{WB}turkis
-šintolainen	1	A_AAKKOSELLINEN	šinto{WB}lainen
 sipulihakkuri	1	N_KANAALI	sipuli{WB}hakkuri
 sipulihiutaleet	1	N_HIUTALEET	sipuli{WB}hiutaleet
 sipulijauhe	1	N_ASTE	sipuli{WB}jauhe
@@ -48771,7 +48684,6 @@ sokeriruoko	1	N_RUOKO	sokeri{WB}ruoko
 sokeriruokojäte	1	N_KÄSITE	sokeriruoko{WB}jäte
 sokeriruokoviljelmä	1	N_HÖPÖTTÄJÄ	sokeri{WB}ruoko{WB}viljelmä
 sokerisirotin	1	N_SUODATIN	sokeri{WB}sirotin
-sokerisuolata	1	V_ARVATA	sokeri{WB}suo{WB}lata
 sokerisuolaus	1	N_VAKUUTUS	sokeri{WB}suolaus
 sokeritasapaino	1	N_TALO	sokeri{WB}tasapaino
 sokeritauti	1	N_TAUTI	sokeri{WB}tauti
@@ -48989,7 +48901,6 @@ sorapäällyste	1	N_PISTE	sora{WB}päällyste
 sorapäällysteinen	1	A_KYLMÄJÄRKINEN	sora{WB}päällysteinen
 soratie	1	N_TIE	sora{WB}tie
 Soratie	1	N_TIE	Sora{WB}tie
-sorautua	1	V_ROHTUA	sora{WB}utua
 soraääni	1	N_HIIRI	sora{WB}ääni
 soraääninen	1	A_KYLMÄJÄRKINEN	sora{WB}ääninen
 soreavartaloinen	1	A_AAKKOSELLINEN	sorea{WB}vartaloinen
@@ -49994,7 +49905,6 @@ sulttaanikunta	1	N_KUNTA	sulttaani{WB}kunta
 sulttaanirusina	1	N_MAKKARA	sulttaani{WB}rusina
 sulunvartija	1	N_MAKKARA	sulun{WB}vartija
 sumeasilmäinen	1	A_KYLMÄJÄRKINEN	sumea{WB}silmäinen
-sumerilainen	1	A_AAKKOSELLINEN	sumeri{WB}lainen
 sumerin kieli	1	N_HIIRI	sumerin kieli
 sumopaini	1	N_RUUVI	sumo{WB}paini
 sumopainija	1	N_MAKKARA	sumo{WB}painija
@@ -50259,7 +50169,6 @@ suolinukka	1	N_LUOKKA	suoli{WB}nukka
 suolirauhanen	1	N_AAKKOSTAMINEN	suoli{WB}rauhanen
 suolisaivartaja	1	N_VOIMA	suoli{WB}saivartaja
 suolisolmu	1	N_ASU	suoli{WB}solmu
-suolistaa	1	V_MUTRISTAA	suo{WB}listaa
 suolistobakteeri	1	N_KANAALI	suolisto{WB}bakteeri
 suolistoloinen	1	N_AAKKOSTAMINEN	suolisto{WB}loinen
 suolistomyrkky	1	N_MYRKKY	suolisto{WB}myrkky
@@ -51293,7 +51202,7 @@ syöksysynnytys	1	N_RÄJÄYTYS	syöksy{WB}synnytys
 syöksytorvi	1	N_ONNI	syöksy{WB}torvi
 syöksyvene	1	N_PISTE	syöksy{WB}vene
 syömishäiriö	1	N_HÄIRIÖ	syömis{WB}häiriö
-syömälakkolainen	1	N_AAKKOSTAMINEN	syömälakko{WB}lainen
+syömälakkolainen	1	N_AAKKOSTAMINEN	syömä{WB}lakkolainen
 syönnösvahinko	1	N_RUNKO	syönnös{WB}vahinko
 syöntiaika	1	N_AIKA	syönti{WB}aika
 syöntikelpoinen	1	A_AAKKOSELLINEN	syönti{WB}kelpoinen
@@ -54429,7 +54338,6 @@ tiimalasi	1	N_RUUVI	tiima{WB}lasi
 tiimityö	1	N_TYÖ	tiimi{WB}työ
 tiineysaika	1	N_AIKA	tiineys{WB}aika
 tiipii	1	N_PII	tii{WB}pii
-tiirata	1	V_ARVATA	tii{WB}rata
 tiirikka	1	N_LUSIKKA	tii{WB}rikka
 tiiviskantinen	1	A_AAKKOSELLINEN	tiivis{WB}kantinen
 tiiviskorkkinen	1	A_AAKKOSELLINEN	tiivis{WB}korkkinen
@@ -55273,7 +55181,6 @@ tuhoalue	1	N_ASTE	tuho{WB}alue
 tuhoamisleiri	1	N_TYYLI	tuhoamis{WB}leiri
 tuhoeläin	1	N_ELIN	tuho{WB}eläin
 tuhohyönteinen	1	N_KYLKIÄINEN	tuho{WB}hyönteinen
-tuholainen	1	N_AAKKOSTAMINEN	tuho{WB}lainen
 tuholaismyrkky	1	N_MYRKKY	tuholais{WB}myrkky
 tuholaistentorjuja	1	N_VOIMA	tuholaisten{WB}torjuja
 tuholaistoiminta	1	N_KUTSUNTA	tuholais{WB}toiminta
@@ -56097,7 +56004,6 @@ tupasvilla	1	N_KIRJA	tupas{WB}villa
 tupasvillakuitu	1	N_KUITU	tupas{WB}villa{WB}kuitu
 tupatarkastus	1	N_VAKUUTUS	tupa{WB}tarkastus
 tupeepäinen	1	A_KYLMÄJÄRKINEN	tupee{WB}päinen
-tupeerata	1	V_ARVATA	tupee{WB}rata
 tupenrapina	1	N_MAKKARA	tupen{WB}rapina
 tupla-annos	1	N_VAKUUTUS	tupla-annos
 tuplabogey	1	N_JOCKEY	tupla{WB}bogey
@@ -56191,8 +56097,6 @@ turkistarhaus	1	N_VAKUUTUS	turkis{WB}tarhaus
 turkistarhuri	1	N_KANAALI	turkis{WB}tarhuri
 turkistuote	1	N_OSOITE	turkis{WB}tuote
 turkistuottaja	1	N_VOIMA	turkis{WB}tuottaja
-turkkilainen	1	A_AAKKOSELLINEN	turkki{WB}lainen
-turkkilainen	2	N_AAKKOSTAMINEN	turkki{WB}lainen
 turkkiliivi	1	N_TYYLI	turkki{WB}liivi
 turkkurinliike	1	N_LÄÄKE	turkkurin{WB}liike
 turkoosinsininen	1	A_KYLMÄJÄRKINEN	turkoosin{WB}sininen
@@ -56282,7 +56186,6 @@ turvatarkastus	1	N_VAKUUTUS	turva{WB}tarkastus
 turvatekniikka	1	N_LUSIKKA	turva{WB}tekniikka
 turvatoimi	1	N_TAIMI	turva{WB}toimi
 turvatyyny	1	N_KÄRRY	turva{WB}tyyny
-turvautua	1	V_ROHTUA	turva{WB}utua
 turvavaljaat	1	N_VALJAAT	turva{WB}valjaat
 turvavarasto	1	N_RUIPELO	turva{WB}varasto
 turvaverkko	1	N_UKKO	turva{WB}verkko
@@ -57098,10 +57001,11 @@ täyttömäki	1	N_KÄKI	täyttö{WB}mäki
 täyttömäärä	1	N_HÖPÖTTÄJÄ	täyttö{WB}määrä
 täyttöpullo	1	N_TALO	täyttö{WB}pullo
 täyttöventtiili	1	N_KEHVELI	täyttö{WB}venttiili
-täytäntöönpanokelpoinen	1	A_AAKKOSELLINEN	täytäntöönpano{WB}kelpoinen
-täytäntöönpanomääräys	1	N_RÄJÄYTYS	täytäntöönpano{WB}määräys
-täytäntöönpanosäännös	1	N_RÄJÄYTYS	täytäntöönpano{WB}säännös
-täytäntöönpanovalta	1	N_VALTA	täytäntöönpano{WB}valta
+täytäntöön{WB}pano	1	N_TALO	täytäntöönpano{WB}kelpoinen
+täytäntöön{WB}panokelpoinen	1	A_AAKKOSELLINEN	täytäntöönpano{WB}kelpoinen
+täytäntöön{WB}panomääräys	1	N_RÄJÄYTYS	täytäntöönpano{WB}määräys
+täytäntöön{WB}panosäännös	1	N_RÄJÄYTYS	täytäntöönpano{WB}säännös
+täytäntöön{WB}panovalta	1	N_VALTA	täytäntöönpano{WB}valta
 täytäntöönpanoviranomainen	1	N_AAKKOSTAMINEN	täytäntöönpano{WB}viran{WB}omainen
 tölkinaukaisin	1	N_PUHELIN	tölkin{WB}aukaisin
 tölkinavaaja	1	N_VOIMA	tölkin{WB}avaaja
@@ -57725,7 +57629,6 @@ uraputki	1	N_ONNI	ura{WB}putki
 uraruuvi	1	N_RUUVI	ura{WB}ruuvi
 urasiili	1	N_TYYLI	ura{WB}siili
 urasuunnittelu	1	N_SEIKKAILU	ura{WB}suunnittelu
-urautua	1	V_ROHTUA	ura{WB}utua
 urbaanilegenda	1	N_KIRJA	urbaani{WB}legenda
 urheilijansydän	1	N_SYDÄN	urheilijan{WB}sydän
 urheiluammunta	1	N_KUTSUNTA	urheilu{WB}ammunta
@@ -57870,7 +57773,6 @@ uskonvaino	1	N_TALO	uskon{WB}vaino
 uskonvapaus	1	N_AAKKOSELLISUUS	uskon{WB}vapaus
 uskonvarmuus	1	N_AAKKOSELLISUUS	uskon{WB}varmuus
 uskonveli	1	N_VELI	uskon{WB}veli
-uskoutua	1	V_ROHTUA	usko{WB}utua
 uskovaisuus	1	N_AAKKOSELLISUUS	usko{WB}vaisuus
 utareliivi	1	N_TYYLI	utare{WB}liivi
 utaretulehdus	1	N_VAKUUTUS	utare{WB}tulehdus
@@ -58114,7 +58016,6 @@ vaahtopäinen	1	A_KYLMÄJÄRKINEN	vaahto{WB}päinen
 vaahtopää	1	N_PÄÄ	vaahto{WB}pää
 vaahtosammutin	1	N_SUODATIN	vaahto{WB}sammutin
 vaahtosammutus	1	N_VAKUUTUS	vaahto{WB}sammutus
-vaahtoutua	1	V_ROHTUA	vaahto{WB}utua
 vaaituskoje	1	N_ASTE	vaaitus{WB}koje
 vaaka-akseli	1	N_KANAALI	vaaka-akseli
 vaaka-asento	1	N_TUNTO	vaaka-asento
@@ -58534,7 +58435,6 @@ vaivaisukko	1	N_UKKO	vaivais{WB}ukko
 vaivaisäijä	1	N_HÖPÖTTÄJÄ	vaivais{WB}äijä
 vaivannäkö	1	N_NÄKÖ	vaivan{WB}näkö
 vaivanpalkka	1	N_POLITIIKKA	vaivan{WB}palkka
-vaivautua	1	V_ROHTUA	vaiva{WB}utua
 vajaahampainen	1	A_AAKKOSELLINEN	vajaa{WB}hampainen
 vajaahampainen	2	N_AAKKOSTAMINEN	vajaa{WB}hampainen
 vajaakuntoinen	1	A_AAKKOSELLINEN	vajaa{WB}kuntoinen
@@ -59425,7 +59325,6 @@ valuvika	1	N_VIKA	valu{WB}vika
 valveillaoloaika	1	N_AIKA	valveillaolo{WB}aika
 valvetila	1	N_KIRJA	valve{WB}tila
 valveuni	1	N_RUUHI	valve{WB}uni
-valveutua	1	V_ROHTUA	valve{WB}utua
 valvontaelin	1	N_ELIN	valvonta{WB}elin
 valvontajoukko	1	N_UKKO	valvonta{WB}joukko
 valvontajärjestelmä	1	N_HÖPÖTTÄJÄ	valvonta{WB}järjestelmä
@@ -59621,7 +59520,7 @@ vapaapainiote	1	N_OSOITE	vapaapaini{WB}ote
 vapaapainiottelu	1	N_SEIKKAILU	vapaa{WB}painiottelu
 vapaapainirinki	1	N_HÄMMINKI	vapaapaini{WB}rinki
 vapaapalokunta	1	N_KUNTA	vapaa{WB}palo{WB}kunta
-vapaapalokuntalainen	1	N_AAKKOSTAMINEN	vapaa{WB}palo{WB}kunta{WB}lainen
+vapaapalokuntalainen	1	N_AAKKOSTAMINEN	vapaa{WB}palo{WB}kuntalainen
 vapaapistooli	1	N_KANAALI	vapaa{WB}pistooli
 vapaapistooliammunta	1	N_KUTSUNTA	vapaa{WB}pistooli{WB}ammunta
 vapaapotku	1	N_ASU	vapaa{WB}potku
@@ -60848,7 +60747,6 @@ verkkoallas	1	N_ALLAS	verkko{WB}allas
 verkkoallaskasvatus	1	N_VAKUUTUS	verkko{WB}allas{WB}kasvatus
 verkkoarmeija	1	N_MAKKARA	verkko{WB}armeija
 verkkohäkki	1	N_HÄKKI	verkko{WB}häkki
-verkkojata	1	V_ARVATA	verkko{WB}jata
 verkkojuttelupalvelin	1	N_PUHELIN	verkkojuttelu{WB}palvelin
 verkkojännite	1	N_KÄSITE	verkko{WB}jännite
 verkkokaava	1	N_KIRJA	verkko{WB}kaava
@@ -61683,7 +61581,6 @@ vikapisto	1	N_TALO	vika{WB}pisto
 vikapää	1	N_PÄÄ	vika{WB}pää
 vikasoitto	1	N_HIRTTO	vika{WB}soitto
 vikatikki	1	N_HÄKKI	vika{WB}tikki
-vikautua	1	V_ROHTUA	vika{WB}utua
 vilja-aitta	1	N_MITTA	vilja-aitta
 viljakaskas	1	N_PATSAS	vilja{WB}kaskas
 viljakasvi	1	N_RUUVI	vilja{WB}kasvi
@@ -61964,7 +61861,6 @@ virastomestari	1	N_KANAALI	virasto{WB}mestari
 virastorakennus	1	N_VAKUUTUS	virasto{WB}rakennus
 virastotalo	1	N_TALO	virasto{WB}talo
 vireystila	1	N_KIRJA	vireys{WB}tila
-vireytyä	1	V_SILIYTYÄ	vire{WB}ytyä
 virhearvio	1	N_TUOMIO	virhe{WB}arvio
 virhearviointi	1	N_SOINTI	virhe{WB}arviointi
 virheasento	1	N_TUNTO	virhe{WB}asento
@@ -62566,7 +62462,6 @@ vuokraisäntä	1	N_HÄNTÄ	vuokra{WB}isäntä
 vuokrakasarmi	1	N_RUUVI	vuokra{WB}kasarmi
 vuokrakohde	1	N_LUODE	vuokra{WB}kohde
 vuokrakokoelma	1	N_VOIMA	vuokra{WB}kokoelma
-vuokralainen	1	N_AAKKOSTAMINEN	vuokra{WB}lainen
 vuokralista	1	N_KIRJA	vuokra{WB}lista
 vuokramaa	1	N_MAA	vuokra{WB}maa
 vuokramies	1	N_MIES	vuokra{WB}mies
@@ -63752,6 +63647,7 @@ yksinhuoltajaperhe	1	N_PISTE	yksinhuoltaja{WB}perhe
 yksinhuoltajaäiti	1	N_NIHTI	yksinhuoltaja{WB}äiti
 yksinmyyjä	1	N_HÖPÖTTÄJÄ	yksin{WB}myyjä
 yksinmyyntioikeus	1	N_AAKKOSELLISUUS	yksinmyynti{WB}oikeus
+yksinomaan	1	PCLE_VAAN	yksin{WB}omaan
 yksinpalvelija	1	N_MAKKARA	yksin{WB}palvelija
 yksinpuhelu	1	N_SEIKKAILU	yksin{WB}puhelu
 yksinpurjehtija	1	N_MAKKARA	yksin{WB}purjehtija
@@ -64019,7 +63915,6 @@ ylihuominen	1	N_AAKKOSTAMINEN	yli{WB}huominen
 yli-ihminen	1	N_KYLKIÄINEN	yli-ihminen
 yli-ihmisoppi	1	N_KUPPI	yli-ihmis{WB}oppi
 yli-ikäinen	1	A_KYLMÄJÄRKINEN	yli-ikäinen
-yli-ikäistyä	1	V_ÄLLISTYÄ	yli-ikäistyä
 yli-ikäisyys	1	N_KÖYHYYS	yli-ikäisyys
 yli-inhimillinen	1	A_KYLMÄJÄRKINEN	yli-inhimillinen
 yli-inhimillisesti	1	PCLE_TYHMÄSTI	yli-inhimillisesti
