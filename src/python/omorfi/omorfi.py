@@ -187,9 +187,9 @@ class Omorfi:
             res = res + tcres
         if not token.isupper() and this.can_uppercase:
             upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.upper()))
-            for r in tupes:
+            for r in upres:
                 r.output = r.output + '[CASECHANGE=UPPERCASED]'
-            res = res + tcres
+            res = res + upres
         if not token.islower() and this.can_lowercase:
             lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
             for r in lowres:
