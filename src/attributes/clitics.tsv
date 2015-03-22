@@ -31,7 +31,7 @@ ahtaasti	1	PCLE_NOPEASTI	opt
 aidosti	1	PCLE_NOPEASTI	opt
 aiheellisesti	1	PCLE_NOPEASTI	opt
 aiheettomasti	1	PCLE_NOPEASTI	opt
-aikaan	1	PCLE_VALTAAN	opt
+aikaan	2	PCLE_VALTAAN	opt
 aina	1	PCLE_KOTONA	opt
 aistikkaasti	1	PCLE_NOPEASTI	opt
 aistillisesti	1	PCLE_NOPEASTI	opt
@@ -579,7 +579,7 @@ hyväksyttävästi	1	PCLE_TYHMÄSTI	opt
 hyvänsuovasti	1	PCLE_NOPEASTI	opt
 hyväntahtoisesti	1	PCLE_NOPEASTI	opt
 hyväntuulisesti	1	PCLE_NOPEASTI	opt
-hyvästi	1	PCLE_TYHMÄSTI	opt
+hyvästi	2	PCLE_TYHMÄSTI	opt
 hyväsydämisesti	1	PCLE_TYHMÄSTI	opt
 hyväuskoisesti	1	PCLE_NOPEASTI	opt
 hyödyllisesti	1	PCLE_TYHMÄSTI	opt
@@ -1250,7 +1250,7 @@ mikroskooppisesti	1	PCLE_NOPEASTI	opt
 miljoonittain	1	PCLE_NOPEASTI	opt
 minuuteittain	1	PCLE_NOPEASTI	opt
 mittaamattomasti	1	PCLE_NOPEASTI	opt
-modernisti	1	PCLE_NOPEASTI	opt
+modernisti	2	PCLE_NOPEASTI	opt
 moitittavasti	1	PCLE_NOPEASTI	opt
 moitteettomasti	1	PCLE_NOPEASTI	opt
 moittivasti	1	PCLE_NOPEASTI	opt
@@ -1292,7 +1292,7 @@ mutkattomasti	1	PCLE_NOPEASTI	opt
 mutkikkaasti	1	PCLE_NOPEASTI	opt
 mutta	1	PCLE_KOTONA	opt
 muukalaisittain	1	PCLE_NOPEASTI	opt
-muuten	1	PCLE_VALTAAN	opt
+muuten	1	PCLE_NOPEASTI	opt
 muutoin	1	PCLE_VALTAAN	opt
 myrkyllisesti	1	PCLE_TYHMÄSTI	opt
 myrskyisästi	1	PCLE_TYHMÄSTI	opt
@@ -1466,7 +1466,7 @@ painavasti	1	PCLE_NOPEASTI	opt
 -painoisesti	1	PCLE_NOPEASTI	opt
 painokkaasti	1	PCLE_NOPEASTI	opt
 -painotteisesti	1	PCLE_NOPEASTI	opt
-paitsi	1	PCLE_VUOKSI	opt
+paitsi	1	PCLE_VAAN	opt
 pakanasti	1	PCLE_NOPEASTI	opt
 pakottomasti	1	PCLE_NOPEASTI	opt
 paksusti	1	PCLE_NOPEASTI	opt
@@ -2537,7 +2537,7 @@ vuokseni	1	PCLE_NOPEASTI	opt
 vuoksenne	1	PCLE_NOPEASTI	opt
 vuoksensa	1	PCLE_NOPEASTI	opt
 vuoksesi	1	PCLE_NOPEASTI	opt
-vuoksi	1	PCLE_VUOKSI	opt
+vuoksi	2	PCLE_VUOKSI	opt
 vuolaasti	1	PCLE_NOPEASTI	opt
 vuolassanaisesti	1	PCLE_NOPEASTI	opt
 vuorenvarmasti	1	PCLE_NOPEASTI	opt

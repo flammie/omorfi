@@ -911,7 +911,7 @@ hajottua	1	V_HERMOTTUA	intransitive
 hajustaa	1	V_MUTRISTAA	intransitive
 hakata	1	V_MORKATA	intransitive
 hakautua	1	V_ROHTUA	intransitive
-hakea	1	V_PUKEA	intransitive
+hakea	2	V_PUKEA	intransitive
 hakettaa	1	V_VIEROITTAA	intransitive
 hakeutua	1	V_ROHTUA	intransitive
 hakkaantua	1	V_VAKAANTUA	intransitive
@@ -2417,7 +2417,7 @@ kainostella	1	V_ETUILLA	intransitive
 kainostuttaa	1	V_VIEROITTAA	intransitive
 kaipailla	1	V_ARVAILLA	intransitive
 kairata	1	V_ARVATA	intransitive
-kaita	1	V_PALKITA	intransitive
+kaita	3	V_PALKITA	intransitive
 kaitafilmata	1	V_ARVATA	intransitive
 kaitsea	1	V_SOTKEA	intransitive
 kaiutella	1	V_SULATELLA	intransitive
@@ -3165,7 +3165,7 @@ kivertää	1	V_NÄPERTÄÄ	intransitive
 kivestää	1	V_KIVISTÄÄ	intransitive
 kivettyä	1	V_KIVETTYÄ	intransitive
 kivettää	1	V_RÄPSYTTÄÄ	intransitive
-kivetä	1	V_TÄHYTÄ	intransitive
+kivetä	2	V_TÄHYTÄ	intransitive
 kivipestä	1	V_ÄRISTÄ	intransitive
 kivistää	1	V_KIVISTÄÄ	intransitive
 kivittää	1	V_RÄPSYTTÄÄ	intransitive
@@ -3705,7 +3705,7 @@ kuseskella	1	V_ETUILLA	intransitive
 kusettaa	1	V_VIEROITTAA	intransitive
 kuskailla	1	V_ARVAILLA	intransitive
 kuskata	1	V_ARVATA	intransitive
-kusta	1	V_MARISTA	intransitive
+kusta	2	V_MARISTA	intransitive
 kustantaa	1	V_HUONONTAA	intransitive
 kustomoida	1	V_KOPIOIDA	intransitive
 kutea	1	V_KUTEA	intransitive
@@ -4841,7 +4841,7 @@ maallistua	1	V_KAUNISTUA	intransitive
 maanitella	1	V_SULATELLA	intransitive
 maannostua	1	V_KAUNISTUA	intransitive
 maantaa	1	V_HUONONTAA	intransitive
-maarata	1	V_ARVATA	intransitive
+maarata	2	V_ARVATA	intransitive
 maastouttaa	1	V_VIEROITTAA	intransitive
 maastoutua	1	V_ROHTUA	intransitive
 maata	1	V_MORKATA	intransitive
@@ -6965,7 +6965,7 @@ pääomavaltaistua	1	V_KAUNISTUA	intransitive
 pääomittaa	1	V_VIEROITTAA	intransitive
 päärmätä	1	V_YNNÄTÄ	intransitive
 päästellä	1	V_ÄKSYILLÄ	intransitive
-päästä	1	V_ÄRISTÄ	intransitive
+päästä	2	V_ÄRISTÄ	intransitive
 päästää	1	V_KIVISTÄÄ	intransitive
 päätellä	1	V_HERÄTELLÄ	intransitive
 päättyä	1	V_KIVETTYÄ	intransitive
@@ -7535,7 +7535,7 @@ rullalautailla	1	V_ARVAILLA	intransitive
 rullaluistella	1	V_ETUILLA	intransitive
 rullata	1	V_ARVATA	intransitive
 rullautua	1	V_ROHTUA	intransitive
-rumbata	1	V_ARVATA	intransitive
+rumbata	2	V_ARVATA	intransitive
 rumentaa	1	V_HUONONTAA	intransitive
 rumentua	1	V_VAKAANTUA	intransitive
 rumeta	1	V_KARHETA	intransitive
@@ -7560,7 +7560,7 @@ ruoskia	1	V_KOSIA	intransitive
 ruoskittaa	1	V_VIEROITTAA	intransitive
 ruostua	1	V_KAUNISTUA	intransitive
 ruostuttaa	1	V_VIEROITTAA	intransitive
-ruota	1	V_KAIKOTA	intransitive
+ruota	2	V_KAIKOTA	intransitive
 ruoteittaa	1	V_VIEROITTAA	intransitive
 ruotia	1	V_AHNEHTIA	intransitive
 ruotsalaistaa	1	V_MUTRISTAA	intransitive
@@ -8082,7 +8082,7 @@ siistata	1	V_ARVATA	intransitive
 siistiytyä	1	V_SILIYTYÄ	intransitive
 siistiä	1	V_RYSKIÄ	intransitive
 siittää	1	V_RÄPSYTTÄÄ	intransitive
-siitä	1	V_KERITÄ	intransitive
+siitä	2	V_KERITÄ	intransitive
 siivilöidä	1	V_ÖYKKÄRÖIDÄ	intransitive
 siivilöityä	1	V_SILIYTYÄ	intransitive
 siivittyä	1	V_KIVETTYÄ	intransitive
@@ -8815,7 +8815,7 @@ taantua	1	V_VAKAANTUA	intransitive
 taaperrella	1	V_NAKERRELLA	intransitive
 taapertaa	1	V_KUHERTAA	intransitive
 taaplata	1	V_ARVATA	intransitive
-taata	1	V_MORKATA	intransitive
+taata	2	V_MORKATA	intransitive
 tabuloida	1	V_KOPIOIDA	intransitive
 taeta	1	V_NIUKETA	intransitive
 tahdistaa	1	V_MUTRISTAA	intransitive
@@ -9169,8 +9169,8 @@ tiskata	1	V_ARVATA	intransitive
 tislaantua	1	V_VAKAANTUA	intransitive
 tislata	1	V_ARVATA	intransitive
 tislautua	1	V_ROHTUA	intransitive
-tissutella	1	V_SULATELLA	intransitive
-tissutella	2	V_ETUILLA	intransitive
+tissutella	1	V_ETUILLA	intransitive
+tissutella	2	V_SULATELLA	intransitive
 tissuttaa	1	V_VIEROITTAA	intransitive
 titrata	1	V_ARVATA	intransitive
 tituleerata	1	V_ARVATA	intransitive

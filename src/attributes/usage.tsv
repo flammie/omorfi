@@ -25,7 +25,7 @@ hajoittaa	1	V_VIEROITTAA	nonstandard
 Herzegovina	1	N_KITARA	nonstandard
 hox	1	PCLE_HAH	dialectal
 häkä	1	N_HÖPÖTTÄJÄ	nonstandard
-hää	1	PRON_MÄÄ	dialectal
+hää	2	PRON_HÄÄ	dialectal
 ikäänkuin	1	PCLE_VAAN	nonstandard
 irroittaa	1	V_VIEROITTAA	nonstandard
 jaksottainen	1	A_AAKKOSELLINEN	nonstandard
@@ -57,7 +57,7 @@ moduli	1	N_RUUVI	nonstandard
 muudan	1	PRON_MUUAN	archaic
 myödä	1	V_SYÖDÄ	dialectal
 mä	1	PRON_MÄ	dialectal
-mää	1	PRON_MÄÄ	dialectal
+mää	2	PRON_MÄÄ	dialectal
 niinkuin	1	PCLE_VAAN	nonstandard
 niinq	1	PCLE_VAAN	nonstandard
 niinqu	1	PCLE_VAAN	nonstandard
@@ -84,7 +84,7 @@ sikaari	1	N_KANAALI	archaic
 sillai	1	PCLE_NOPEASTI	dialectal
 sitte	1	PCLE_TYHMÄSTI	nonstandard
 sä	1	PRON_MÄ	dialectal
-sää	1	PRON_MÄÄ	dialectal
+sää	2	PRON_MÄÄ	dialectal
 Tadzikistan	1	N_PUNK	nonstandard
 Tanzania	1	N_MAKKARA	nonstandard
 tietsikka	1	N_LUSIKKA	dialectal
@@ -98,4 +98,4 @@ viikottainen	1	A_AAKKOSELLINEN	nonstandard
 vuottaa	1	V_VIEROITTAA	dialectal
 yhtäsuuri	1	A_SUURI	nonstandard
 ympäritse	1	PCLE_YLLE	archaic
-äiti	1	N_TYYLI	dialectal
+äiti	2	N_TYYLI	dialectal

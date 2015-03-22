@@ -10,10 +10,10 @@ lemma	homonym	new_para	symbol
 ,	1	SYMBOL_PILKKU	clause-boundary
 ;	1	SYMBOL_PISTE	clause-boundary
 :	1	SYMBOL_PISTE	clause-boundary
-!	1	SYMBOL_PISTE	sentence-boundary
-!	2	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
-?	1	SYMBOL_PISTE	sentence-boundary
-?	2	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+!	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+!	2	SYMBOL_PISTE	sentence-boundary
+?	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+?	2	SYMBOL_PISTE	sentence-boundary
 .	1	SYMBOL_PISTE	sentence-boundary
 ..	1	SYMBOL_PISTE	sentence-boundary
 ...	1	SYMBOL_PISTE	sentence-boundary

@@ -1,7 +1,7 @@
 lemma	homonym	new_para	particle
 /	1	PCLE_VAAN	abbreviation
 &	1	PCLE_VAAN	abbreviation
-+	1	PCLE_VAAN	abbreviation
++	2	PCLE_VAAN	abbreviation
 a priori	1	PCLE_VAAN	unspecified
 à la	1	PCLE_VAAN	unspecified
 aa	1	PCLE_HAH	interjection
@@ -18,7 +18,7 @@ aamuvarhain	1	PCLE_NOPEASTI	adverb
 aasimaisesti	1	PCLE_NOPEASTI	adverb|dersti
 aatteellisesti	1	PCLE_NOPEASTI	adverb|dersti
 aavemaisesti	1	PCLE_NOPEASTI	adverb|dersti
-ab	2	PCLE_VAAN	abbreviation
+ab	3	PCLE_VAAN	abbreviation
 Ab	1	PCLE_VAAN	abbreviation
 absoluuttisesti	1	PCLE_NOPEASTI	adverb|dersti
 abstraktisesti	1	PCLE_NOPEASTI	adverb|dersti
@@ -228,8 +228,8 @@ alun perin	1	PCLE_VAAN	adverb
 alun pitäen	1	PCLE_VAAN	adverb
 alunperin	1	PCLE_NOPEASTI	adverb
 alussa	1	PCLE_KOTONA	adposition
-alusta	1	PCLE_NOPEASTI	adposition
-alusta	2	PCLE_NOPEASTI	adverb
+alusta	2	PCLE_NOPEASTI	adposition
+alusta	3	PCLE_NOPEASTI	adverb
 alustavasti	1	PCLE_NOPEASTI	adverb|dersti
 alusvaatteisillaan	1	PCLE_ILKOSILLAAN	adverb
 alusvaatteisilleen	1	PCLE_ISTUALLEEN	adverb
@@ -1618,8 +1618,8 @@ iänikuisesti	1	PCLE_NOPEASTI	adverb|dersti
 iäti	1	PCLE_TYHMÄSTI	adverb
 ja	1	PCLE_VAAN	conjunction|Coordinating
 ja	2	PCLE_VAAN	unspecified
-jaa	1	PCLE_VAAN	abbreviation
-jaa	2	PCLE_HAH	interjection
+jaa	1	PCLE_HAH	interjection
+jaa	2	PCLE_VAAN	abbreviation
 jaa.	1	PCLE_VAAN	abbreviation
 jaa-a	1	PCLE_HAH	interjection
 jaah	1	PCLE_HAH	interjection
@@ -1788,7 +1788,7 @@ juu	1	PCLE_HAH	interjection
 juurella	1	PCLE_KOTONA	adposition
 juurelle	1	PCLE_ALLE	adposition
 juuressa	1	PCLE_KOTONA	adposition
-juuri	1	PCLE_NOPEASTI	adverb
+juuri	2	PCLE_NOPEASTI	adverb
 juuri	3	PCLE_NOPEASTI	adverb
 juurijajuuri	1	PCLE_VUOKSI	unspecified
 juuritse	1	PCLE_NOPEASTI	adverb
@@ -1949,7 +1949,7 @@ kansanomaisesti	1	PCLE_NOPEASTI	adverb|dersti
 kansantajuisesti	1	PCLE_NOPEASTI	adverb|dersti
 kansanvaltaisesti	1	PCLE_NOPEASTI	adverb|dersti
 kanssa	1	PCLE_KOTONA	adposition
-kanssa	2	PCLE_KOTONA	adverb
+kanssa	2	PCLE_VAAN	adverb
 kantaan	1	PCLE_NOPEASTI	adverb
 kantamuksittain	1	PCLE_NOPEASTI	adverb|derttain
 kantt.	1	PCLE_VAAN	abbreviation
@@ -2447,7 +2447,7 @@ korville	1	PCLE_NOPEASTI	adposition
 korvissa	1	PCLE_NOPEASTI	adposition
 korvissa	2	PCLE_NOPEASTI	adverb
 koska	1	PCLE_KUHUN	adverb|Interrogative
-koska	2	PCLE_KUHUN	adverb|Quantor
+koska	2	PCLE_VAAN	adverb|Quantor
 koska	3	PCLE_VAAN	conjunction|Adverbial
 koskaan	1	PCLE_NOPEASTI	adverb
 koskapa	1	PCLE_VAAN	conjunction|Adverbial
@@ -2913,8 +2913,7 @@ likemmäksi	1	PCLE_TYHMÄSTI	adverb|Comp
 likemmäs	1	PCLE_TYHMÄSTI	adverb|Comp
 likempänä	1	PCLE_TYHMÄSTI	adverb|Comp
 likempää	1	PCLE_TYHMÄSTI	adverb|Comp
-liki	1	PCLE_TYHMÄSTI	adposition
-liki	2	PCLE_TYHMÄSTI	unspecified
+liki	2	PCLE_TYHMÄSTI	adposition
 likikään	1	PCLE_TYHMÄSTI	adverb
 likimailla	1	PCLE_NOPEASTI	adverb
 likimaille	1	PCLE_NOPEASTI	adverb
@@ -3039,8 +3038,8 @@ lukuun ottamatta	1	PCLE_KOTONA	adposition
 lumisotasilla	1	PCLE_NOPEASTI	adverb
 lumpsis	1	PCLE_HAH	interjection
 lunkisti	1	PCLE_NOPEASTI	adverb|dersti
-luo	1	PCLE_NOPEASTI	adposition
-luo	3	PCLE_NOPEASTI	adverb
+luo	3	PCLE_NOPEASTI	adposition
+luo	4	PCLE_NOPEASTI	adverb
 luokse	1	PCLE_ALLE	adposition
 luokse	2	PCLE_ALLE	adverb
 luona	1	PCLE_KOTONA	adposition
@@ -3457,7 +3456,7 @@ mix	1	PCLE_TYHMÄSTI	adverb
 ml.	1	PCLE_VAAN	abbreviation
 mlk.	1	PCLE_VAAN	abbreviation
 Mlle	1	PCLE_VAAN	abbreviation
-mm	2	PCLE_VAAN	abbreviation
+mm	3	PCLE_VAAN	abbreviation
 mm.	1	PCLE_VAAN	abbreviation
 Mme	1	PCLE_VAAN	abbreviation
 mmm	1	PCLE_HAH	interjection
@@ -3580,8 +3579,8 @@ muuanne	1	PCLE_NOPEASTI	adverb|Quantor
 muukalaisittain	1	PCLE_NOPEASTI	adverb|derttain
 muulloin	1	PCLE_NOPEASTI	adverb|Quantor
 muun muassa	1	PCLE_NOPEASTI	adverb
-muuten	1	PCLE_VALTAAN	adverb|Quantor
-muuten	2	PCLE_VALTAAN	unspecified
+muuten	1	PCLE_NOPEASTI	adverb|Quantor
+muuten	2	PCLE_VAAN	unspecified
 muutoin	1	PCLE_VALTAAN	adverb|Quantor
 mv.	1	PCLE_VAAN	abbreviation
 mvs.	1	PCLE_VAAN	abbreviation
@@ -3768,7 +3767,7 @@ nostalgisesti	1	PCLE_NOPEASTI	adverb|dersti
 notkeasti	1	PCLE_NOPEASTI	adverb|dersti
 nousukasmaisesti	1	PCLE_NOPEASTI	adverb|dersti
 nro	2	PCLE_VAAN	abbreviation
-ns	2	PCLE_VAAN	abbreviation
+ns	3	PCLE_VAAN	abbreviation
 ns.	1	PCLE_VAAN	abbreviation
 nti	1	PCLE_VAAN	abbreviation
 nuhteettomasti	1	PCLE_NOPEASTI	adverb|dersti
@@ -4091,8 +4090,8 @@ paitahihasillaan	1	PCLE_ILKOSILLAAN	adverb
 paitahihasilleen	1	PCLE_ISTUALLEEN	adverb
 paitasillaan	1	PCLE_ILKOSILLAAN	adverb
 paitasilleen	1	PCLE_ISTUALLEEN	adverb
-paitsi	1	PCLE_VUOKSI	adposition
-paitsi	2	PCLE_VUOKSI	adverb
+paitsi	1	PCLE_VAAN	adposition
+paitsi	2	PCLE_VAAN	adverb
 pakahduksiin	1	PCLE_VALTAAN	adverb
 pakahduksissa	1	PCLE_KOTONA	adverb
 pakahduksissaan	1	PCLE_ILKOSILLAAN	adverb
@@ -4697,7 +4696,7 @@ päihdyksissä	1	PCLE_TYHMÄSTI	adverb
 päikkäin	1	PCLE_TYHMÄSTI	adverb
 päikseen	1	PCLE_TYHMÄSTI	adverb
 päin	1	PCLE_NÄKYVIIN	adposition
-päin	2	PCLE_NÄKYVIIN	adverb
+päin	2	PCLE_VAAN	adverb
 päinsä	1	PCLE_TYHMÄSTI	adverb
 päinvastoin	1	PCLE_VAAN	adverb
 päissään	1	PCLE_HYVILLÄÄN	adverb
@@ -6237,8 +6236,8 @@ torjuvasti	1	PCLE_NOPEASTI	adverb|dersti
 torkuksissa	1	PCLE_KOTONA	adverb
 torst.	1	PCLE_VAAN	abbreviation
 torstaisin	1	PCLE_NOPEASTI	adverb
-tosi	1	PCLE_VAAN	adverb
-tosi	2	PCLE_VAAN	qualifier
+tosi	2	PCLE_VAAN	adverb
+tosi	3	PCLE_VAAN	qualifier
 tosiaan	1	PCLE_NOPEASTI	unspecified
 tosiasiallisesti	1	PCLE_NOPEASTI	adverb|dersti
 tosikkomaisesti	1	PCLE_NOPEASTI	adverb|dersti
@@ -6872,8 +6871,7 @@ vasenkätisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 vasiten	1	PCLE_NOPEASTI	adverb
 vasituisesti	1	PCLE_NOPEASTI	adverb|dersti
 vast.	1	PCLE_VAAN	abbreviation
-vasta	1	PCLE_NOPEASTI	adverb
-vasta	2	PCLE_NOPEASTI	unspecified
+vasta	2	PCLE_NOPEASTI	adverb
 vastaan	1	PCLE_VALTAAN	adposition
 vastaan	2	PCLE_VALTAAN	adverb|illative
 vastaanottavaisesti	1	PCLE_NOPEASTI	adverb|dersti
@@ -7431,7 +7429,7 @@ ylös	1	PCLE_TYHMÄSTI	adverb
 ylösalaisin	1	PCLE_NOPEASTI	adverb
 ylöspäin	1	PCLE_TYHMÄSTI	adverb
 ylössuin	1	PCLE_NOPEASTI	adverb
-ym	2	PCLE_VAAN	abbreviation
+ym	3	PCLE_VAAN	abbreviation
 ym.	1	PCLE_VAAN	abbreviation
 ymmälle	1	PCLE_YLLE	adverb
 ymmälleen	1	PCLE_LEVÄLLEEN	adverb

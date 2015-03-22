@@ -93,7 +93,7 @@ kupeella	1	PCLE_KOTONA	opt
 kupeelle	1	PCLE_ALLE	opt
 kupeelta	1	PCLE_KOTONA	opt
 kustannuksella	1	PCLE_KOTONA	opt
-kuti	1	PCLE_VUOKSI	obl
+kuti	2	PCLE_VUOKSI	obl
 kylliksi	1	PCLE_LISÄKSI	opt
 kynsissä	1	PCLE_IKINÄ	opt
 kynsistä	1	PCLE_IKINÄ	opt

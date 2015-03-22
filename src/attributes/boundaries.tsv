@@ -30554,7 +30554,7 @@ mikrovalokuva	1	N_VOIMA	mikro{WB}valo{WB}kuva
 mikrovalokuvaus	1	N_VAKUUTUS	mikro{WB}valo{WB}kuvaus
 mikrovoltti	1	N_KORTTI	mikro{WB}voltti
 miliisijärjestelmä	1	N_HÖPÖTTÄJÄ	miliisi{WB}järjestelmä
-miljardisosa	1	N_VOIMA	miljardis{WB}osa
+miljardisosa	2	N_VOIMA	miljardis{WB}osa
 miljoonakala	1	N_KIRJA	miljoona{WB}kala
 miljoonakauppa	1	N_TIPPA	miljoona{WB}kauppa
 miljoonakaupunki	1	N_VANKI	miljoona{WB}kaupunki
@@ -33197,7 +33197,7 @@ nokkapokka	1	N_LUOKKA	nokka{WB}pokka
 nokkapyörä	1	N_HÖPÖTTÄJÄ	nokka{WB}pyörä
 nokkasaukko	1	N_UKKO	nokka{WB}saukko
 nokkasiili	1	N_TYYLI	nokka{WB}siili
-nokkaunet	1	N_FARMARIT	nokka{WB}unet
+nokkaunet	1	N_ONNET	nokka{WB}unet
 nokkavarpunen	1	N_AAKKOSTAMINEN	nokka{WB}varpunen
 nokkimisjärjestys	1	N_RÄJÄYTYS	nokkimis{WB}järjestys
 nokkosihottuma	1	N_VOIMA	nokkos{WB}ihottuma
@@ -57001,12 +57001,12 @@ täyttömäki	1	N_KÄKI	täyttö{WB}mäki
 täyttömäärä	1	N_HÖPÖTTÄJÄ	täyttö{WB}määrä
 täyttöpullo	1	N_TALO	täyttö{WB}pullo
 täyttöventtiili	1	N_KEHVELI	täyttö{WB}venttiili
-täytäntöönpano	1	N_TALO	täytäntöönpano{WB}kelpoinen
-täytäntöönpanokelpoinen	1	A_AAKKOSELLINEN	täytäntöönpano{WB}kelpoinen
-täytäntöönpanomääräys	1	N_RÄJÄYTYS	täytäntöönpano{WB}määräys
-täytäntöönpanosäännös	1	N_RÄJÄYTYS	täytäntöönpano{WB}säännös
-täytäntöönpanovalta	1	N_VALTA	täytäntöönpano{WB}valta
-täytäntöönpanoviranomainen	1	N_AAKKOSTAMINEN	täytäntöönpano{WB}viran{WB}omainen
+täytäntöönpano	1	N_TALO	täytäntöön{WB}pano
+täytäntöönpanokelpoinen	1	A_AAKKOSELLINEN	täytäntöön{WB}pano{WB}kelpoinen
+täytäntöönpanomääräys	1	N_RÄJÄYTYS	täytäntöön{WB}pano{WB}määräys
+täytäntöönpanosäännös	1	N_RÄJÄYTYS	täytäntöön{WB}pano{WB}säännös
+täytäntöönpanovalta	1	N_VALTA	täytäntöön{WB}pano{WB}valta
+täytäntöönpanoviranomainen	1	N_AAKKOSTAMINEN	täytäntöön{WB}pano{WB}viran{WB}omainen
 tölkinaukaisin	1	N_PUHELIN	tölkin{WB}aukaisin
 tölkinavaaja	1	N_VOIMA	tölkin{WB}avaaja
 tölkkiolut	1	N_OLUT	tölkki{WB}olut

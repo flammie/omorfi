@@ -19,7 +19,7 @@ Alès	1	N_PARFAIT	e
 Alykí	1	N_BRIE	i
 Amlamé	1	N_ROSÉ	e
 Anjō	1	N_ESQUIMAU	o
-Annecy	1	N_SPOTIFY	i
+Annecy	2	N_SPOTIFY	i
 Antipaxoí	1	N_COWBOY	i
 Antsirabé	1	N_ROSÉ	e
 Apolakkiá	1	N_CHACHACHA	a
@@ -68,7 +68,7 @@ Bissorã	1	N_CHACHACHA	a
 Bjerringbro	1	N_KUNGFU	u
 Blatná	1	N_CHACHACHA	a
 Blois	1	N_NOUGAT	a
-Bobigny	1	N_SPOTIFY	i
+Bobigny	2	N_SPOTIFY	i
 Bodo	1	N_MALMÖ	ö
 Bodø	1	N_MALMÖ	ö
 Bogotá	1	N_CHACHACHA	a
@@ -115,12 +115,12 @@ Carey	1	N_JOCKEY	i
 Carlow	1	N_SHOW	u
 Catió	1	N_ESQUIMAU	o
 Cativá	1	N_CHACHACHA	a
-Cergy	1	N_SPOTIFY	i
+Cergy	2	N_SPOTIFY	i
 Certify	1	N_SPOTIFY	i
 Česká Třebová	1	N_CHACHACHA	a
 Chalkidikí	1	N_BRASSERIE	i
-Chambery	1	N_SPOTIFY	i
-Chambéry	1	N_SPOTIFY	i
+Chambery	2	N_SPOTIFY	i
+Chambéry	2	N_SPOTIFY	i
 Chamilí	1	N_BRASSERIE	i
 Chaniá	1	N_CHACHACHA	a
 Charavgí	1	N_BRASSERIE	i
@@ -128,10 +128,10 @@ Charlotte Amalie	1	N_BRASSERIE	i
 Charopó	1	N_ESQUIMAU	o
 Chateauguay	1	N_BÉBÉ	e
 Châteauguay	1	N_BÉBÉ	e
-Chateauroux	1	N_SHOW	u
-Châteauroux	1	N_SHOW	u
-Chateau-Thierry	1	N_SPOTIFY	i
-Château-Thierry	1	N_SPOTIFY	i
+Chateauroux	2	N_SHOW	u
+Châteauroux	2	N_SHOW	u
+Chateau-Thierry	2	N_SPOTIFY	i
+Château-Thierry	2	N_SPOTIFY	i
 Chelsea	1	N_JOCKEY	i
 Chigoré	1	N_ROSÉ	e
 Chiryū	1	N_KUNGFU	u
@@ -144,7 +144,7 @@ Chrysó	1	N_ESQUIMAU	o
 Chūō	1	N_ESQUIMAU	o
 Chuy	1	N_COWBOY	i
 CIBE Participação	1	N_KUNGFU	u
-Cluny	1	N_SPOTIFY	i
+Cluny	2	N_SPOTIFY	i
 Concepcion del Uruguay	1	N_GAY	i
 Concepción del Uruguay	1	N_GAY	i
 Cool Blue	1	N_KUNGFU	u
@@ -163,7 +163,7 @@ Danlí	1	N_BRASSERIE	i
 Dassa-Zoumé	1	N_ROSÉ	e
 Dej	1	N_BEIGNET	i
 Delfoí	1	N_COWBOY	i
-Dennery	1	N_SPOTIFY	i
+Dennery	2	N_SPOTIFY	i
 Development Assistance Committee	1	N_JOCKEY	i
 Dickenson Bay	1	N_BEIGNET	i
 Discovery Bay	1	N_BEIGNET	i
@@ -171,7 +171,7 @@ Divalá	1	N_CHACHACHA	a
 Djenné	1	N_BÉBÉ	e
 Doboj	1	N_VERSAILLES	i
 Dobšiná	1	N_CHACHACHA	a
-Douai	1	N_ROSÉ	e
+Douai	2	N_ROSÉ	e
 drag show	1	N_SHOW	u
 Dreux	1	N_MONSIEUR	ö
 Dubá	1	N_CHACHACHA	a
@@ -184,21 +184,21 @@ EBay	1	N_GAY	i
 El Copé	1	N_ROSÉ	e
 El Espavé	1	N_ROSÉ	e
 Erateiní	1	N_BRASSERIE	i
-Erie	1	N_BRIE	i
+Erie	2	N_BRIE	i
 Estelí	1	N_BRIE	i
 Evreux	1	N_MONSIEUR	ö
 Évreux	1	N_MONSIEUR	ö
-Evry	1	N_SPOTIFY	i
-Évry	1	N_SPOTIFY	i
+Evry	2	N_SPOTIFY	i
+Évry	2	N_SPOTIFY	i
 Exochí	1	N_BRASSERIE	i
 Falsterbo	1	N_KUNGFU	u
 Fatboy	1	N_COWBOY	i
 Felsővisó	1	N_ESQUIMAU	o
-Fernie	1	N_BRIE	i
+Fernie	2	N_BRIE	i
 Fernley	1	N_JOCKEY	i
-Firminy	1	N_SPOTIFY	i
-First Fellow	1	N_SHOW	u
-Five Below	1	N_SHOW	u
+Firminy	2	N_SPOTIFY	i
+First Fellow	2	N_SHOW	u
+Five Below	2	N_SHOW	u
 floor show	1	N_SHOW	u
 Floro	1	N_MALMÖ	ö
 Florø	1	N_MALMÖ	ö
@@ -237,7 +237,7 @@ Gualeguay	1	N_GAY	i
 Guararé	1	N_ROSÉ	e
 Guarujá	1	N_CHACHACHA	a
 Gyalí	1	N_BRASSERIE	i
-Gympie	1	N_BRIE	i
+Gympie	2	N_BRIE	i
 Gyurgyevó	1	N_ESQUIMAU	o
 Gyömrő	1	N_MALMÖ	ö
 Gödöllő	1	N_MALMÖ	ö
@@ -285,7 +285,7 @@ Jastrzębie-Zdrój	1	N_BEIGNET	i
 Jastrzebie-Zdroj	1	N_VERSAILLES	i
 Jedlina-Zdrój	1	N_BEIGNET	i
 Jedlina-Zdroj	1	N_VERSAILLES	i
-Jeremie	1	N_BRIE	i
+Jeremie	2	N_BRIE	i
 JetBlue	1	N_KUNGFU	u
 Jílové	1	N_ROSÉ	e
 Josō	1	N_ESQUIMAU	o
@@ -312,7 +312,7 @@ Káto Vrontoú	1	N_KUNGFU	u
 Kattaviá	1	N_CHACHACHA	a
 Kékkő	1	N_MALMÖ	ö
 Kelmė	1	N_BÉBÉ	e
-Kemira GrowHow	1	N_SHOW	u
+Kemira GrowHow	2	N_SHOW	u
 Khoy	1	N_COWBOY	i
 Killarney	1	N_JOCKEY	i
 Kimberley	1	N_JOCKEY	i
@@ -367,7 +367,7 @@ L’Épiphanie	1	N_BRASSERIE	i
 Leptokaryá	1	N_CHACHACHA	a
 Le Puy-en-Velay	1	N_GAY	i
 Léré	1	N_BÉBÉ	e
-Let’s Powwow	1	N_SHOW	u
+Let’s Powwow	2	N_SHOW	u
 LG Display	1	N_GAY	i
 L’Ile-Cadieux	1	N_MONSIEUR	ö
 L’Île-Cadieux	1	N_MONSIEUR	ö
@@ -450,7 +450,7 @@ Måløy	1	N_GAY	i
 Nagaokakyō	1	N_ESQUIMAU	o
 Nagykálló	1	N_ESQUIMAU	o
 Námesztó	1	N_ESQUIMAU	o
-Nancy	1	N_SPOTIFY	i
+Nancy	2	N_SPOTIFY	i
 Naujoji Akmenė	1	N_ROSÉ	e
 Néa Moudaniá	1	N_CHACHACHA	a
 Nemenčinė	1	N_BÉBÉ	e
@@ -462,7 +462,7 @@ Nexø	1	N_MALMÖ	ö
 Ngaoundéré	1	N_ROSÉ	e
 Niamey	1	N_JOCKEY	i
 Niccolò	1	N_ESQUIMAU	o
-Nieuw Nickerie	1	N_BRIE	i
+Nieuw Nickerie	2	N_BRIE	i
 Nikkō	1	N_ESQUIMAU	o
 Nishitōkyō	1	N_ESQUIMAU	o
 Nivå	1	N_ESQUIMAU	o
@@ -515,7 +515,7 @@ Percé	1	N_BÉBÉ	e
 Perigueux	1	N_MONSIEUR	ö
 Périgueux	1	N_MONSIEUR	ö
 Pesé	1	N_BÉBÉ	e
-Peterborough	1	N_SHOW	u
+Peterborough	2	N_SHOW	u
 Picardie	1	N_BRASSERIE	i
 Piper Jaffray	1	N_GAY	i
 Pirate Bay	1	N_GAY	i
@@ -536,7 +536,7 @@ Portage la Prairie	1	N_BRASSERIE	i
 Portimao	1	N_KUNGFU	u
 Portimão	1	N_KUNGFU	u
 Port Macquarie	1	N_BRASSERIE	i
-Port Pirie	1	N_BRIE	i
+Port Pirie	2	N_BRIE	i
 port salut	1	N_SHOW	u
 Potamoí	1	N_COWBOY	i
 Potosí	1	N_BRASSERIE	i
@@ -584,7 +584,7 @@ Sainte-Anne-de-Beaupré	1	N_ROSÉ	e
 Sainte-Julie	1	N_BRASSERIE	i
 Sainte-Marie	1	N_BRASSERIE	i
 Saint-Lô	1	N_ESQUIMAU	o
-Saint-Pie	1	N_BRIE	i
+Saint-Pie	2	N_BRIE	i
 Saint-Tropez	1	N_PARFAIT	e
 Sakété	1	N_ROSÉ	e
 Salè	1	N_ROSÉ	e
@@ -612,7 +612,7 @@ Shutterfly	1	N_SPOTIFY	i
 Šilalė	1	N_ROSÉ	e
 Silay	1	N_GAY	i
 Šilutė	1	N_ROSÉ	e
-sioux	1	N_SHOW	u
+sioux	2	N_SHOW	u
 Sipalay	1	N_GAY	i
 Skála Eresoú	1	N_KUNGFU	u
 Skála Oropoú	1	N_KUNGFU	u
@@ -671,7 +671,7 @@ televisioshow	1	N_SHOW	u
 Télimélé	1	N_BÉBÉ	e
 Teplá	1	N_CHACHACHA	a
 Teplice nad Metují	1	N_BRASSERIE	i
-Teshie	1	N_BRIE	i
+Teshie	2	N_BRIE	i
 The Pirate Bay	1	N_GAY	i
 Thunder Bay	1	N_GAY	i
 Thymianá	1	N_CHACHACHA	a
@@ -707,7 +707,7 @@ Vászló	1	N_ESQUIMAU	o
 Vathý	1	N_FONDUE	y
 Velké Meziříčí	1	N_BRIE	i
 Verbó	1	N_ESQUIMAU	o
-Versailles	1	N_VERSAILLES	i
+Versailles	2	N_VERSAILLES	i
 Veselí nad Lužnicí	1	N_BRASSERIE	i
 Viagogo	1	N_KUNGFU	u
 Viamao	1	N_KUNGFU	u
