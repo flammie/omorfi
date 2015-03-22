@@ -1,7 +1,24 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to guess gradation from partial lexical data."""
 
-from omor_strings_io import replace_rightmost, replace_rightmosts
-from sys import stderr
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from .omorfi.string_mangling import replace_rightmost, replace_rightmosts
+from .omorfi.error_logging import fail_guess_because
 
 def gradation_make_morphophonemes(wordmap):
     '''mark up gradating stop for morphophonological handling'''
@@ -46,8 +63,9 @@ def gradation_make_morphophonemes(wordmap):
         elif av == 'N':
             wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'd', '{d~~}')
         else:
-            print("unhandled gradation in", wordmap, file=stderr)
-            return None
+            fail_guess_because(wordmap, ["1-27", "29-32", "52-66", "76"],
+                    ["A-P"])
+            exit(1)
         return wordmap
     elif tn == 28:
         # gah gradation in stemparts
@@ -95,7 +113,8 @@ def gradation_make_morphophonemes(wordmap):
             elif tn == 99:
                 pass
             else:
-                print("Unhandled D weak", wordmap['gradestem'], tn, file=stderr)
+                fail_guess_because(wordmap, ["1-99"], ["A-C", "E-P"])
+                exit(1)
         elif av == 'E':
             wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'v', '{p~~}')
         elif av == 'F':
@@ -125,8 +144,8 @@ def gradation_make_morphophonemes(wordmap):
         elif av == 'T' and tn == 49:
             wordmap['gradestem'] = replace_rightmost(wordmap['gradestem'], 'e', '{t~~}e')
         else:
-            print("unhandled gradation in", wordmap, file=stderr)
-            return None
+            fail_guess_because(wordmap, [""], ["1-99", "A-P"])
+            exit(1)
         return wordmap
     return None
 

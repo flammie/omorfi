@@ -1,11 +1,28 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to format giellatekno style analyses from omorfi data."""
+
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # utils to format apertium style data from omorfi database values
 
-from lexc_formatter import lexc_escape
-from omorfi_settings import word_boundary, weak_boundary, \
+from .omorfi.lexc_formatter import lexc_escape
+from .omorfi.settings import word_boundary, weak_boundary, \
         morph_boundary, deriv_boundary, optional_hyphen
-from omor_strings_io import fail_formatting_missing_for
+from .omorfi.error_logging import fail_formatting_missing_for
 
 
 giella_multichars= {

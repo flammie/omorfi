@@ -1,8 +1,23 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to parse omorfi intermediate lexical databases."""
 
-from omor_strings_io import replace_rightmost
-from sys import stderr
-from ast import literal_eval
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from sys import stderr, exit
 
 def parse_defaults_from_tsv(wordmap, tsv_parts):
     '''Parse default data from 2+ field tsv with new para and lemma.'''
@@ -20,8 +35,12 @@ def parse_defaults_from_tsv(wordmap, tsv_parts):
 
 def parse_extras_from_tsv(wordmap, tsv_parts):
     '''Parse extra fields form >3 fields of 2+ field tsv.'''
-    if len(tsv_parts) >= 5:
-        for tsv_extra in tsv_parts[4:]:
+    if len(tsv_parts) == 4:
+        # no extras
+        pass
+    elif len(tsv_parts) >= 5:
+        tsv_extras = tsv_parts[4:]
+        for tsv_extra in tsv_extras:
             extra_fields = tsv_extra.split("=")
             if extra_fields[0] == 'plurale_tantum':
                 wordmap['plurale_tantum'] = extra_fields[1]
@@ -66,10 +85,5 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
             else:
                 print("Unrecognised extra field", tsv_extra, "in TSV", file=stderr)
                 exit(1)
-    wordmap['proper_noun_class'].sort()
-    wordmap['proper_noun_class'] = ','.join(wordmap['proper_noun_class'])
-    wordmap['sem'].sort()
-    wordmap['sem'] = ','.join(wordmap['sem'])
-    
     return wordmap
 

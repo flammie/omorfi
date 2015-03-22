@@ -1,27 +1,26 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Additional string handling functions for omorfi processing.
+
+Includes some neat error logging for debugs and stuff."""
+
+# Author: Tommi A Pirinen <flammie@iki.fi> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
 
 from sys import stderr
-
-
-def fail_formatting_missing_for(stuff, format, moar=None):
-    print("\033[93mMissing tag!\033[0m Trying to format:", stuff, "for tagset:",
-            format, file=stderr)
-    if moar:
-        print("\033[92mExplanation\033[0m:", moar, file=stderr)
-
-def fail_guess_because(wordmap, matches, failures, moar=None):
-    print("\033[93mUnguessable!\033[0m Following has been seen:", matches,
-            "\nfollowing was tested and failed:", failures,
-            "\nwhen trying: (", 
-            wordmap['lemma'], wordmap['pos'], 
-            wordmap['kotus_tn'], wordmap['kotus_av'],
-            wordmap['harmony'], ")", file=stderr)
-    if moar:
-        print("\033[92mExplanation\033[0m:", moar, file=stderr)
-    # This can be used to automate classifying plurales etc.
-    #if wordmap['lemma'].endswith('t'):
-    #if wordmap['is_proper']:
-    #    print(wordmap['lemma'], wordmap['kotus_tn'], wordmap['kotus_av'])
 
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):
@@ -39,7 +38,7 @@ def remove_suffixes_or_die(s, suffixes):
         if nu != s:
             return nu
     print("\033[91mUnstubbable!\033[0m Trying to rstrip ", ", ".join(suffixes),
-        "from", s)
+        "from", s, file=stderr)
     return None
 
 def replace_suffix(s, suffix, repl):
@@ -54,7 +53,7 @@ def replace_suffixes_or_die(s, suffixes, repl):
         if nu != s:
             return nu
     print("\033[91mSuffix fail!\033[0m Trying to rstrip ", ", ".join(suffixes),
-        "from", s)
+        "from", s, file=stderr)
     return s
 
 def mangle_suffixes_or_die(wordmap, suffixes):
@@ -68,7 +67,6 @@ def mangle_suffixes_or_die(wordmap, suffixes):
         exit(1)
     return wordmap
 
-# misc functions
 def replace_rightmost(s, needle, repl):
     '''Replace one occurrence of rightmost match.'''
     return replace_rightmosts(s, [needle], [repl])
@@ -89,5 +87,6 @@ def replace_rightmosts(s, needles, repls):
         print("Suspicious replacement attempts!", file=stderr)
         print("tried to ", needles, " => ", repls, " in ", s, file=stderr)
     return s
+
 
 

@@ -55,32 +55,34 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 
 # }}}
 #
-# {{{Scripts (variable name = SCIRPTS cause automagic _SCRIPTS)
+# {{{Scripts 
+# NB: (variable name = SCIRPTS cause automagic _SCRIPTS)
 # tag formats
-FORMAT_SCIRPTS=apertium_formatter.py \
-			   ftb3_formatter.py \
-			   omor_formatter.py \
-			   tdt_formatter.py
+FORMAT_SCIRPTS=python/apertium_formatter.py \
+			   python/ftb3_formatter.py \
+			   python/omor_formatter.py \
+			   python/tdt_formatter.py
 # file formats
-GENERATOR_SCIRPTS=generate-lexcs.py \
-				  generate-twolcs.py \
-				  generate-regexes.py \
-				  generate-reweights.py \
-				  generate-edit-distance.py \
-				  generate-monodix.py \
-				  generate-yaml.py \
-				  generate-kotus-sanalista.py
+GENERATOR_SCIRPTS=python/generate-lexcs.py \
+				  python/generate-twolcs.py \
+				  python/generate-regexes.py \
+				  python/generate-reweights.py \
+				  python/generate-edit-distance.py \
+				  python/generate-monodix.py \
+				  python/generate-yaml.py \
+				  python/generate-kotus-sanalista.py
 # Raw-ish database handling
-DATABASE_SCIRPTS=tsvjoin.py tsv_expand.py
+DATABASE_SCIRPTS=python/tsvjoin.py \
+				 python/tsv_expand.py
 # Finnish specific lot
-FIN_SCIRPTS=gradation.py \
-			parse_csv_data.py \
-			plurale_tantum.py \
-			stub.py \
-			guess_feats.py \
-			guess_new_class.py \
-			wordmap.py \
-			omor_strings_io.py
+FIN_SCIRPTS=python/omorfi/gradation.py \
+			python/omorfi/parse_csv_data.py \
+			python/omorfi/plurale_tantum.py \
+			python/omorfi/stub.py \
+			python/omorfi/guess_feats.py \
+			python/omorfi/guess_new_class.py \
+			python/omorfi/wordmap.py \
+			python/omorfi/omor_strings_io.py
 SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
 		$(FIN_SCIRPTS)
 # }}}
@@ -176,7 +178,7 @@ generated/timestamp:
 
 # database to database
 generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
-	$(PYTHON) $(srcdir)/tsvjoin.py -v -i $< \
+	$(PYTHON) $(srcdir)/python/tsvjoin.py -v -i $< \
 		-j $(srcdir)/attributes/adjective-classes.tsv \
 		-j $(srcdir)/attributes/boundaries.tsv \
 		-j $(srcdir)/attributes/noun-classes.tsv \
@@ -193,7 +195,7 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
 
 generated/master.tsv: generated/joint.tsv
-	$(PYTHON) $(srcdir)/tsv_expand.py \
+	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms/morphophonology.tsv \
 		-c $(srcdir)/paradigms/stub-deletions.tsv -v -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
@@ -209,110 +211,110 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 # database to generic
 generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=generic
 
 generated/omorfi-phon.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-twolcs.py -r phon -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r phon -o $@
 
 generated/omorfi-recase-any.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-twolcs.py -r recase-any -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r recase-any -o $@
 
 generated/omorfi-uppercase-any.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-twolcs.py -r uppercase-any -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-any -o $@
 
 generated/omorfi-uppercase-first.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-twolcs.py -r uppercase-first -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-first -o $@
 
 generated/omorfi-hyphens.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-twolcs.py -r hyphens -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r hyphens -o $@
 
 generated/omorfi-orthographic-variations.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-regexes.py \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r orthographic-variations -o $@
 
 generated/omorfi-zh.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-regexes.py \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r zh -o $@
 
 generated/omorfi-sh.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-regexes.py \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r sh -o $@
 
 generated/omorfi-remove-boundaries.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/generate-regexes.py \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r remove-boundaries -o $@
 
 generated/omorfi-between-tokens.regex:
-	$(PYTHON) $(srcdir)/generate-regexes.py \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r between-tokens -o $@
 
 generated/omorfi-token.regex:
-	$(PYTHON) $(srcdir)/generate-regexes.py \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r token -o $@
 
 generated/omorfi-hyphenate.twolc:
-	$(PYTHON) $(srcdir)/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
 
-generated/omorfi-boundary.reweight: generate-reweights.py
-	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=boundary -o $@
+generated/omorfi-boundary.reweight: 
+	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=boundary -o $@
 
 # database to omor 
 generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/generate-yamls.py -i $< -o $@ -f=omor -v
+	$(PYTHON) $(srcdir)/python/generate-yamls.py -i $< -o $@ -f=omor -v
 
-generated/omorfi-omor.reweight: generate-reweights.py
-	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=omor -o $@
+generated/omorfi-omor.reweight: 
+	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=omor -o $@
 
 generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=omor
 
 generated/omorfi-omor-rewrite-tags.regex:
-	$(PYTHON) $(srcdir)/generate-regexes.py -f=omor \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
 		-r rewrite-tags -o $@
 
 # database to ftb3 
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/generate-yamls.py -i $< -o $@ -f=ftb3 -v
+	$(PYTHON) $(srcdir)/python/generate-yamls.py -i $< -o $@ -f=ftb3 -v
 
-generated/omorfi-ftb3.reweight: generate-reweights.py
-	$(PYTHON) $(srcdir)/generate-reweights.py -v -f=ftb3 -o $@
+generated/omorfi-ftb3.reweight:
+	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=ftb3 -o $@
 
 generated/omorfi-ftb3.lexc: generated/master.tsv generated/stemparts.tsv generated/inflections.tsv
-	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=ftb3
 
 generated/omorfi-ftb3-rewrite-tags.regex:
-	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
 		-r rewrite-tags -o $@
 
 generated/omorfi-ftb3-lemmatise.regex:
-	$(PYTHON) $(srcdir)/generate-regexes.py -f=ftb3 \
+	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
 		-r lemmatise -o $@
 
 # database to apertium
 generated/apertium-fin.fin.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/generate-lexcs.py -v -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:
-	$(PYTHON) $(srcdir)/generate-twolcs.py -v -f=apertium -r apertium -o $@
+	$(PYTHON) $(srcdir)/python/generate-twolcs.py -v -f=apertium -r apertium -o $@
 
 generated/omorfi.dix: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/generate-monodix.py -v -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/python/generate-monodix.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@
 
 # database (back) to kotus
 generated/omorfi-sanalista.xml: generated/master.tsv
-	$(PYTHON) $(srcdir)/generate-kotus-sanalista.py -v -m generated/master.tsv -o $@
+	$(PYTHON) $(srcdir)/python/generate-kotus-sanalista.py -v -m generated/master.tsv -o $@
 endif
 # }}}
 #
@@ -538,7 +540,7 @@ generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
 #
 # {{{SPELL-CHECKING
 # voikko speller HFST beta targets'
-generated/errmodel.edit-distance.txt: generate-edit-distance.py
+generated/errmodel.edit-distance.txt: python/generate-edit-distance.py
 	$(PYTHON) $< -o $@
 
 generated/errmodel.edit-distance-1.hfst: generated/errmodel.edit-distance.hfst

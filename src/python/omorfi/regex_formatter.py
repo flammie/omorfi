@@ -1,12 +1,29 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to format Xerox style regexes from omorfi data."""
+
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # utils to format xerox regexes from omor's lexical data sources.
 
-from omorfi_settings import fin_orth_pairs, fin_lowercase, fin_uppercase, \
+from .settings import fin_orth_pairs, fin_lowercase, fin_uppercase, \
         word_boundary, deriv_boundary, morph_boundary, newword_boundary, \
         deriv_boundary, stub_boundary, weak_boundary, optional_hyphen
-from twolc_formatter import twolc_escape
-from lexc_formatter import format_stuff
+from .twolc_formatter import twolc_escape
+from .lexc_formatter import format_stuff
 
 def format_rules_regex(format, ruleset):
     regexstring = ''

@@ -1,12 +1,28 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to format omor style analyses from omorfi data."""
+
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # utils to format apertium style data from omorfi database values
 
-from sys import stderr, exit
-from lexc_formatter import lexc_escape
-from omorfi_settings import word_boundary, weak_boundary, \
+from .lexc_formatter import lexc_escape
+from .settings import word_boundary, weak_boundary, \
         morph_boundary, deriv_boundary, optional_hyphen
-from omor_strings_io import fail_formatting_missing_for
+from .error_logging import fail_formatting_missing_for
 
 
 omor_multichars = {
@@ -257,7 +273,7 @@ def format_stuff_omor(stuff, format):
     if stuff in stuff2omor:
         return stuff2omor[stuff]
     else:
-        print("Missing from omor mapping: ", stuff, file=stderr)
+        fail_formatting_missing_for(stuff, format)
         return ""
 
 
@@ -380,6 +396,7 @@ def format_multichars_lexc_omor():
 
 # self test
 if __name__ == '__main__':
+    from sys import exit
     fail = False
     for stuff, omor in stuff2omor.items():
         if len(omor) < 2:

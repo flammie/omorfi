@@ -27,13 +27,12 @@ from time import strftime
 import argparse
 import csv
 
-from wordmap import init_wordmap, get_wordmap_fieldnames, split_wordmap_by_field
-from gradation import gradation_make_morphophonemes
-from parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
-from plurale_tantum import plurale_tantum_get_singular_stem
-from stub import stub_all_ktn, stub_all_new_para
-from guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation, guess_bound_morphs
-from guess_new_class import guess_new_class
+from omorfi.wordmap import init_wordmap, get_wordmap_fieldnames, split_wordmap_by_field
+from omorfi.parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
+from omorfi.stub import stub_all_ktn, stub_all_new_para
+#from guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation,
+from omorfi.guess_feats import guess_bound_morphs
+#from guess_new_class import guess_new_class
 
 
 
@@ -147,32 +146,21 @@ def main():
                     continue
 
                 # Guess-works in order
-                wordmap = guess_stem_features_ktn(wordmap)
-                wordmap = guess_pronunciation(wordmap)
-                wordmap = guess_grade_dir_from_ktn(wordmap)
-                wordmap = guess_harmony(wordmap)
-                wordmap = guess_new_class(wordmap)
-                # here is actual python code doing the pre-processing
-                #wordmap = plurale_tantum_get_singular_stem(wordmap)
-                #wordmap = gradation_make_morphophonemes(wordmap)
-                #wordmap = stub_all_ktn(wordmap)
+                #wordmap = guess_stem_features_ktn(wordmap)
+                #wordmap = guess_pronunciation(wordmap)
+                #wordmap = guess_grade_dir_from_ktn(wordmap)
+                #wordmap = guess_harmony(wordmap)
+                #wordmap = guess_new_class(wordmap)
                 wordmap = stub_all_new_para(wordmap, stubmap)
                 # suffixes can be id'd by the - in beginning. They need an own lexicon
                 wordmap = guess_bound_morphs(wordmap)
                 if wordmap['is_suffix']:
                     wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'SUFFIX'
-                # put interjections in separate lexicon to allow chaining them
                 if "PCLE_HAH" == wordmap['new_para']:
                     wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'INTERJECTION'
-                # split multiple particle or subcat definitions to distinct lexemes
                 wordmaps = [wordmap]
-                #wordmaps = [ m for wm in wordmaps 
-                #                for m in split_wordmap_by_field(wm, 'particle')]
-                #wordmaps = [ m for wm in wordmaps 
-                #                for m in split_wordmap_by_field(wm, 'symbol')]
-                # print result
                 for wordmap in wordmaps:
                     tsv_writer.writerow(wordmap)
     if errors:

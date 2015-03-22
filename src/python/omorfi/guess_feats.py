@@ -1,7 +1,23 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to guess omorfi features from partial lexical data."""
 
-from sys import stderr
-from omor_strings_io import fail_guess_because
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from .error_logging import fail_guess_because
 
 def guess_pos_from_newpara(wordmap):
     if wordmap['pos']:
@@ -102,8 +118,8 @@ def guess_harmony(wordmap):
         elif wordmap['lemma'].endswith('ei') and tn == 1099:
             wordmap['harmony'] = 'front'
         else:
-            print("Unguessable harmony in verb; must end in {a, ä}, in", 
-                    wordmap, file=stderr)
+            fail_guess_because(wordmap, ["VERB"], ["a", "ä", "ei"])
+            exit(1)
     elif wordmap['pronunciation']:
         lastbound = -1
         for bound in ['|', '_', '#', ' ', '-']:
@@ -127,8 +143,8 @@ def guess_harmony(wordmap):
         elif lastback > lastfront:
             wordmap['harmony'] = 'back'
     else:
-        print("Unguessable harmony; needs pronunciation", 
-                wordmap, file=stderr)
+        fail_guess_because(wordmap, [""], ["pronunciation"])
+        exit(1)
     return wordmap
 
 def guess_pronunciation(wordmap):

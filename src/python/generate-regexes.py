@@ -25,9 +25,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from twolc_formatter import format_alphabet_twolc, \
-        format_sets_twolc, format_definitions_twolc, format_rules_twolc, \
-        format_copyright_twolc
+from omorfi.regex_formatter import format_rules_regex
 
 # standard UI stuff
 
@@ -63,20 +61,10 @@ def main():
     # setup files
     if args.verbose: 
         print("Writing everything to", args.output.name)
-    print(format_copyright_twolc(), file=args.output)
     # print definitions to rootfile
     if args.verbose:
-        print("Creating Alphabet")
-    print(format_alphabet_twolc(args.format, args.ruleset), file=args.output)
-    if args.verbose:
-        print("Creating Sets")
-    print(format_sets_twolc(args.format, args.ruleset), file=args.output)
-    if args.verbose:
-        print("Creating Definitions")
-    print(format_definitions_twolc(args.format, args.ruleset), file=args.output)
-    if args.verbose:
         print("Creating Rules")
-    print(format_rules_twolc(args.format, args.ruleset), file=args.output)
+    print(format_rules_regex(args.format, args.ruleset), file=args.output)
     exit(0)
 
 

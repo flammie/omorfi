@@ -2,10 +2,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from lexc_formatter import lexc_escape
-from omorfi_settings import word_boundary, weak_boundary, \
+from .omorfi.lexc_formatter import lexc_escape
+from .omorfi.settings import word_boundary, weak_boundary, \
         morph_boundary, deriv_boundary, optional_hyphen
-from omor_strings_io import fail_formatting_missing_for
+from .omorfi.error_logging import fail_formatting_missing_for
 
 
 tdt_multichars= {

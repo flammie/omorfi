@@ -11,7 +11,7 @@ store additional data. The additional data needs to be in name=value format.
 """
 
 
-# Author: Tommi A Pirinen <tommi.pirinen@helsinki.fi> 2009, 2011
+# Author: Tommi A Pirinen <flammie@iki.fi> 2009, 2011
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -32,8 +32,8 @@ from time import strftime
 import argparse
 import csv
 
-from kotus_sanalista_formatter import format_wordmap_kotus_sanalista
-from parse_csv_data import parse_defaults_from_tsv
+from omorfi.kotus_sanalista_formatter import format_wordmap_kotus_sanalista
+from omorfi.parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
 

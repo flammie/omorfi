@@ -1,7 +1,23 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to guess omorfi paradigm from other omorfi data."""
 
-from sys import stderr
-from omor_strings_io import fail_guess_because
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from .error_logging import fail_guess_because
 
 def guess_new_class(wordmap):
     '''Guess more exact classification now
@@ -1894,9 +1910,8 @@ def guess_new_noun(wordmap):
                             ['aika'], 'must be aika')
             elif not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('aika') or wordmap['lemma'].endswith('Aika'):
-                    print("N_AIKA is k:0 gradation + i:j variation!",
-                            "in", wordmap['lemma'],
-                            file=stderr)
+                    fail_guess_because(wordmap, ["aika"], ["D"])
+                    exit(1)
                     wordmap['new_para'] = 'N_AIKA'
                 else:
                     fail_guess_because(wordmap, ['N', 9, 'D', 'AIKA'],
@@ -1904,9 +1919,8 @@ def guess_new_noun(wordmap):
             elif wordmap['kotus_av'] == 'L':
                 if wordmap['lemma'].endswith('aika'):
                     wordmap['new_para'] = 'N_AIKA'
-                    print("N_AIKA is k:0 gradation + i:j variation, not k:j!",
-                            "in", wordmap['lemma'],
-                            file=stderr)
+                    fail_guess_because(wordmap, ["aika"], ["D"])
+                    exit(1)
                 else:
                     fail_guess_because(wordmap, ['N', 9, 'D', 'AIKA'],
                             ['aika'], 'must be aika')
@@ -1922,10 +1936,8 @@ def guess_new_noun(wordmap):
                             ['poika'], 'must be poika')
             elif not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('poika'):
-                    print("N_POIKA is k:0 gradation + i:j variation!",
-                            "in", wordmap['lemma'],
-                            file=stderr)
-                    wordmap['new_para'] = 'N_POIKA'
+                    fail_guess_because(wordmap, ["poika"], ["D"])
+                    exit(1)
                 else:
                     fail_guess_because(wordmap, ['N', 10, 'D', 'POIKA'],
                             ['poika'], 'must be poika')

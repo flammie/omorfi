@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
-from sys import stderr
-
-from omor_strings_io import mangle_suffixes_or_die, fail_guess_because
+from .string_manglers import mangle_suffixes_or_die
+from .error_logging import fail_guess_because
 
 def stub_all_new_para(wordmap, stubmap):
     if not wordmap['new_para']:
@@ -477,26 +476,22 @@ def stub_all_ktn(wordmap):
             lastp = wordmap['stub'].rfind('d')
             wordmap['stub'] = wordmap['stub'][:lastp + 1]
             if lastp == -1:
-                print("Unguessable stub; gradating -D not found in", wordmap,
-                        file=stderr)
+                fail_guess_because(wordmap, ['av+', 'N'], ['d'])
         elif wordmap['kotus_av'] == 'P': 
             lastp = wordmap['stub'].rfind('b')
             wordmap['stub'] = wordmap['stub'][:lastp + 1]
             if lastp == -1:
-                print("Unguessable stub; gradating -B not found in", wordmap,
-                        file=stderr)
+                fail_guess_because(wordmap, ['av+', 'P'], ['b'])
         elif wordmap['kotus_av'] == 'O': 
             lastp = wordmap['stub'].rfind('g')
             wordmap['stub'] = wordmap['stub'][:lastp + 1]
             if lastp == -1:
-                print("Unguessable stub; gradating -G not found in", wordmap,
-                        file=stderr)
+                fail_guess_because(wordmap, ['av+', 'O'], ['g'])
         elif wordmap['kotus_av'] == 'T': 
             lastp = wordmap['stub'].rfind('e')
             wordmap['stub'] = wordmap['stub'][:lastp]
             if lastp == -1:
-                print("Unguessable stub; gradating -auer not found in", wordmap,
-                        file=stderr)
+                fail_guess_because(wordmap, ['av+', 'T'], ['auer'])
         else:
             fail_guess_because(wordmap, ['av-'], ['A-T'])
         return wordmap

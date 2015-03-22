@@ -5,7 +5,7 @@ This script converts TSV formatted tests to yaml formatted tests
 """
 
 
-# Author: Tommi A Pirinen <tommi.pirinen@helsinki.fi> 2014
+# Author: Tommi A Pirinen <flammie@iki.fi> 2014
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by

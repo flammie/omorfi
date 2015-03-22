@@ -1,8 +1,25 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to format lexc from omorfi data."""
+
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # functions for formatting the database data to lexc
 
-from omorfi_settings import common_multichars, version_id_easter_egg, \
+from .settings import common_multichars, version_id_easter_egg, \
         optional_hyphen, word_boundary, stub_boundary, newword_boundary
 
 def lexc_escape(s):
@@ -41,13 +58,13 @@ def format_copyright_lexc():
 
 
 
-from apertium_formatter import format_stuff_apertium, \
+from .apertium_formatter import format_stuff_apertium, \
         format_analysis_lexc_apertium, format_continuation_lexc_apertium, \
         format_wordmap_lexc_apertium, format_multichars_lexc_apertium
-from ftb3_formatter import format_stuff_ftb3, \
+from .ftb3_formatter import format_stuff_ftb3, \
         format_analysis_lexc_ftb3, format_continuation_lexc_ftb3, \
         format_wordmap_lexc_ftb3, format_multichars_lexc_ftb3
-from omor_formatter import format_stuff_omor, \
+from .omor_formatter import format_stuff_omor, \
         format_analysis_lexc_omor, format_continuation_lexc_omor, \
         format_wordmap_lexc_omor, format_multichars_lexc_omor
 

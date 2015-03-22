@@ -5,7 +5,7 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 """
 
 
-# Author: Tommi A Pirinen <tommi.pirinen@helsinki.fi> 2009, 2011
+# Author: Tommi A Pirinen <flammie@iki.fi> 2009, 2011
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -26,8 +26,8 @@ from time import strftime
 import argparse
 import csv
 
-from monodix_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
-from parse_csv_data import parse_defaults_from_tsv
+from omorfi.monodix_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
+from omorfi.parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
 

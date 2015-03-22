@@ -33,10 +33,10 @@ from time import strftime
 import argparse
 import csv
 
-from lexc_formatter import format_wordmap_lexc, format_multichars_lexc, \
+from omorfi.lexc_formatter import format_wordmap_lexc, format_multichars_lexc, \
         format_root_lexicon_lexc, format_continuation_lexc, \
         format_copyright_lexc
-from parse_csv_data import parse_defaults_from_tsv
+from omorfi.parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
 

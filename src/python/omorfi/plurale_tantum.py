@@ -1,6 +1,23 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Functions to guess plurale tantum features from partial lexical data."""
 
-from omor_strings_io import replace_rightmost, replace_rightmosts
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from .omorfi.string_manglers import replace_rightmost, replace_rightmosts
 from sys import stderr
 
 # 
@@ -112,8 +129,8 @@ def plurale_tantum_get_singular_stem(wordmap):
         elif tn == 48 and wordmap['kotus_av'] == 'L':
             wordmap['stub'] = wordmap['stub'][:-4] + 'je'
         else:
-            print("Unhandled plt in ", wordmap, file=stderr)
-            return None
+            fail_guess_because(wordmap, ["av", "!27,28,34"], ["1-48"])
+            exit(1)
     else:
         if tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 't', '')
@@ -157,8 +174,8 @@ def plurale_tantum_get_singular_stem(wordmap):
         elif tn == 49:
             wordmap['stub'] = wordmap['stub'][:-3]
         else:
-            print("Unhandled plurale tantum in", wordmap, file=stderr)
-            return None
+            fail_guess_because(wordmap, ["!av"], ["1-49"])
+            exit(1)
     
     if wordmap['harmony'] == 'front':
         wordmap['stub'] = wordmap['stub'].replace('{uy}', 'y')

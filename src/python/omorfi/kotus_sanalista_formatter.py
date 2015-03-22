@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Omorfi API for python."""
+"""Functions to format kotus sanalista XML from omorfi data."""
 
-# Author: Tommi A Pirinen <flammie@iki.fi> 2015
+# Author: Omorfi contributors <omorfi-devel@groups.google.com> 2015
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -16,16 +16,19 @@
 #
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
+
+def format_wordmap_kotus_sanalista(wordmap):
+    kotus_xml = '    <st><s>' + wordmap['lemma'] + '</s>'
+    if wordmap['homonym'] != '0':
+        kotus_xml += '<hn>' + wordmap['homonym'] + '<hn>'
+    kotus_xml += '<t>'
+    if wordmap['kotus_tn'] != '0':
+        kotus_xml += '<tn>' + wordmap['kotus_tn'] + '</tn>'
+    else:
+        kotus_xml += '<tn>99</tn>'
+    if wordmap['kotus_av'] and wordmap['kotus_av'] != 'False':
+        kotus_xml += '<av>' + wordmap['kotus_av'] + '</av>'
+    kotus_xml += '</t></st>'
+    return kotus_xml
 
 
-__all__ = ['Omorfi']
-
-__version__ = "2015"
-__author__ = "Omorfi contributors"
-__author_email__ = "omorfi-development@googlegroups.com"
-
-if __name__ == "__main__":
-    pass
-
-from .omorfi import Omorfi

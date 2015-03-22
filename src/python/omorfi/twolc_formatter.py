@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from sys import stderr, exit
-from omorfi_settings import common_multichars, \
+from .settings import common_multichars, \
         fin_lowercase, fin_uppercase, fin_vowels, fin_consonants, \
         fin_symbols, optional_hyphen, word_boundary
 
