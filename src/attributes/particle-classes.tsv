@@ -2079,6 +2079,7 @@ kenr.	1	PCLE_VAAN	abbreviation
 kenr.luutn.	1	PCLE_VAAN	abbreviation
 kenr.maj.	1	PCLE_VAAN	abbreviation
 kenties	1	PCLE_VAAN	unspecified
+kentiesi	1	PCLE_VAAN	unspecified
 kepeästi	1	PCLE_TYHMÄSTI	adverb|dersti
 kepulisti	1	PCLE_NOPEASTI	adverb|dersti
 kera	2	PCLE_NOPEASTI	adposition
@@ -2627,6 +2628,7 @@ kuulemiin	1	PCLE_NOPEASTI	adverb
 kuulemma	1	PCLE_VAAN	unspecified
 kuules	1	PCLE_VAAN	unspecified
 kuuliaisesti	1	PCLE_NOPEASTI	adverb|dersti
+kuullen	1	PCLE_VALTAAN	adposition
 kuultavasti	1	PCLE_NOPEASTI	adverb|dersti
 kuulten	1	PCLE_VALTAAN	adposition
 kuulumattomasti	1	PCLE_NOPEASTI	adverb|dersti
@@ -2734,6 +2736,7 @@ käsikaulaa	1	PCLE_NOPEASTI	adverb
 käsikkäin	1	PCLE_TYHMÄSTI	adverb
 käsikopelolla	1	PCLE_NOPEASTI	adverb
 käsikopelolta	1	PCLE_NOPEASTI	adverb
+käsikynkkää	1	PCLE_TYHMÄSTI	adverb
 käsiksi	1	PCLE_TYHMÄSTI	adverb
 käsille	1	PCLE_TYHMÄSTI	adverb
 käsillä	1	PCLE_TYHMÄSTI	adverb
@@ -2993,7 +2996,7 @@ lommollaan	1	PCLE_ILKOSILLAAN	adverb
 lonks	1	PCLE_HAH	interjection
 loogisesti	1	PCLE_NOPEASTI	adverb|dersti
 lopen	1	PCLE_VAAN	unspecified
-loppu	3	PCLE_NOPEASTI	adposition
+loppu	3	PCLE_NOPEASTI	adverb
 loppujenlopuksi	1	PCLE_NOPEASTI	adverb
 loppumattomasti	1	PCLE_NOPEASTI	adverb|dersti
 loppupuolella	1	PCLE_KOTONA	adposition
@@ -3947,6 +3950,7 @@ ok.	1	PCLE_VAAN	abbreviation
 okei	1	PCLE_HAH	interjection
 olakkain	1	PCLE_NOPEASTI	adverb
 olalaa	1	PCLE_HAH	interjection
+olemassa	1	PCLE_NOPEASTI	adverb
 olennaisesti	1	PCLE_NOPEASTI	adverb|dersti
 oletettavasti	1	PCLE_NOPEASTI	adverb|dersti
 olevinaan	1	PCLE_NOPEASTI	adverb
@@ -6398,6 +6402,8 @@ tuskaisesti	1	PCLE_NOPEASTI	adverb|dersti
 tuskallisesti	1	PCLE_NOPEASTI	adverb|dersti
 tuskattomasti	1	PCLE_NOPEASTI	adverb|dersti
 tuskin	1	PCLE_VAAN	unspecified
+tuskinhan	1	PCLE_VAAN	unspecified
+tuskinpa	1	PCLE_VAAN	unspecified
 tutkivasti	1	PCLE_NOPEASTI	adverb|dersti
 tuttavallisesti	1	PCLE_NOPEASTI	adverb|dersti
 tutunomaisesti	1	PCLE_NOPEASTI	adverb|dersti
@@ -6685,6 +6691,7 @@ vahingoniloisesti	1	PCLE_NOPEASTI	adverb|dersti
 vahingossa	1	PCLE_NOPEASTI	adverb
 vahvalti	1	PCLE_NOPEASTI	adverb
 vahvasti	1	PCLE_NOPEASTI	adverb|dersti
+vahvoilla	1	PCLE_NOPEASTI	adverb
 vai	2	PCLE_VAAN	conjunction|Coordinating
 vaiheilla	1	PCLE_KOTONA	adposition
 vaiheittain	1	PCLE_NOPEASTI	adverb|derttain
@@ -6931,6 +6938,7 @@ verekseltään	1	PCLE_HYVILLÄÄN	adverb
 verenhimoisesti	1	PCLE_NOPEASTI	adverb|dersti
 vereslihalla	1	PCLE_NOPEASTI	adverb
 vereslihalle	1	PCLE_NOPEASTI	adverb
+verille	1	PCLE_TYHMÄSTI	adverb
 verisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 verissään	1	PCLE_HYVILLÄÄN	adverb
 veriteitse	1	PCLE_TYHMÄSTI	adverb
@@ -7550,4 +7558,3 @@ yöpukusilleen	1	PCLE_ISTUALLEEN	adverb
 öykkärimäisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 öö	1	PCLE_HAH	interjection
 ööh	1	PCLE_HAH	interjection
-kentiesi	1	PCLE_VAAN	unspecified
