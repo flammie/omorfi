@@ -1,0 +1,1351 @@
+new_para	doc
+Root	The start of the dictionary
+ACRONYM	Acronyms are shortenings that inflect.
+ADJECTIVE	Adjectives are words that are inflected like nouns plus comparisons.
+A_TUMMAHKO	The words in this class ending in o belong here, the old dictionaries use class ¹. This class includes back vowel moderative derivations. N.B. the comparative derivation of moderatives is semantically awkward, but morphologically plausible.
+A_VALKAISTU	The stems ending in u are in class described here, and in old dictionaries the class is ¹. Common part of this class is formed by nut participle passive’s _back_ vowel versions after s stem verbs
+A_HÄPÄISTY	The stems ending in y are in class described here, and in old dictionaries the class is ¹. Common part of this class is formed by nut participle passive’s _front_ vowel versions after s stem verbs
+A_HÖLÖ	The words in this class ending in ö belong to described here, the old dictionaries use class ¹. This class includes front vowel moderative derivations.
+A_TOOPE	The new words with e stem have same allomorph selection as old short unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation. The classification for the back vowel variant of this class is described here, and old dictionaries used the class ⁸. They also have slightly greater probability for archaic form of plural genitive
+A_BEIGE	The front variation of unchanging e stems is class described here, and in old dictionaries ⁸.
+A_KOHELO	The o final trisyllabic stems are in class described here, and the old dictionaries used ². 
+A_LÖPERÖ	And the trisyllabic ö stem is classified described here.
+A_AUTIO	The class for o final long vowel stems is described here, and old old dictionaries used ³. 
+A_RIIVIÖ	The front voweled stems with ö after vowels go to class described here, and used the old dictionary class ³.
+A_KOLKKO	The quantitative k gradations with o bisyllabic o stem use class described here, and old dictionaries use classes ¹⁻A and ¹⁻D.
+A_VIRKKU	The quantitative k gradations with u bisyllabic o stem use class described here, and old dictionaries use classes ¹⁻A and ¹⁻D.
+A_SÄIKKY	The quantitative k gradations with y bisyllabic o stem use class described here, and old dictionaries use classes ¹⁻A and ¹⁻D.
+A_KÖKKÖ	The quantitative k gradations with o bisyllabic ö stem use class described here, and old dictionaries use classes ¹⁻A and ¹⁻D.
+A_SUIPPO	The quantitative gradation of p before o is in class described here and old dictionaries would use ¹⁻B.
+A_IKÄLOPPU	The quantitative gradation of p before u is in class described here and old dictionaries would use ¹⁻B. It is only a nominal compound based adjective that ends in u and has p ~ 0 gradation here:
+A_LÖRPPÖ	The quantitative gradation of p before ö is in class described here and old dictionaries would use ¹⁻B.
+A_VELTTO	The quantitative gradation of t before o is in class described here, which was ¹⁻C in the dictionary.
+A_VIMMATTU	The quantitative gradation of t before u is in class described here, which was ¹⁻C in the dictionary. The u stems with quantitative t gradation are commonest with nut participle passive derivation’s back form (-ttu).
+A_YLENNETTY	The quantitative gradation of t before y is in class described here, which was ¹⁻C in the dictionary. The u stems with quantitative t gradation are commonest with nut participle passive derivation’s front (-tty).
+A_KYYTTÖ	The quantitative gradation of t before y is in class described here, which was ¹⁻C in the dictionary. 
+A_LAKO	The class for o final bisyllabic stems with optional ’ is described here, this is a subset of dictionary class ¹⁻D. 
+A_KELPO	The qualitative gradation of p between vowels in o stems goes to v, the class for this is described here, the dictionary class for this is ¹⁻E.
+A_MIETO	The gradation of t ~ d after o is in class described here, the dictionary class for this is ¹⁻F.
+A_VIIPALOITU	The gradation of t ~ d after u is in class described here, the dictionary class for this is ¹⁻F. The commonest t ~ d variation in u stems comes from nut participle’s passive’s back form (-tu).
+A_YKSILÖITY	The gradation of t ~ d after u is in class described here, the dictionary class for this is ¹⁻F. The commonest t ~ d variation in u stems comes from nut participle’s passive’s front form (-ty).
+A_LENKO	The adjectives with -nko stem belong to class described here, and the dictionary class was ¹⁻G.
+A_MELTO	The quantitative gradation of t after l in o stems is in class described here, which corresponds to dictionary class ¹⁻I.
+A_PARANNELTU	The quantitative gradation of t after l in o stems is in class described here, which corresponds to dictionary class ¹⁻I. The common u stem after l is in nut participles passive (-tu):
+A_VÄHÄTELTY	The quantitative gradation of t after l in o stems is in class described here, which corresponds to dictionary class ¹⁻I. As with y and t:
+A_VENTO	The quantitative gradation of t after n in o stems is in class described here, which corresponds to dictionary class ¹⁻J.
+A_PANTU	The quantitative gradation of t after n in u stems is in class described here, which corresponds to dictionary class ¹⁻I. The common u stem after n is in nut participle’s passive’s back form (-tu):
+A_MENTY	The quantitative gradation of t after n in y stems is in class described here, which corresponds to dictionary class ¹⁻I. The common u stem after n is in nut participle’s passive’s front form (-ty)
+A_MARTO	The quantitative gradation of t after r in o stems is in class described here, which corresponds to dictionary class ¹⁻J.
+A_PURTU	The quantitative gradation of t after r in u stems is in class described here, which corresponds to dictionary class ¹⁻J. The common u stem after r is in nut participle’s passive’s back form (-tu):
+A_PIERTY	The quantitative gradation of t after r in y stems is in class described here, which corresponds to dictionary class ¹⁻J. The common u stem after r is in nut participle’s passive’s front fomr (-ty)
+A_HUPAKKO	The class for trisyllabic -kko stems is described here, the corresponding dictionary class is ⁴⁻D. 
+A_ABNORMI	The i finals with back vowel harmony go to class described here, where old dictionary classification was ⁵.
+A_STYDI	The i finals with front vowel harmony go to class described here, where old dictionary classification was ⁵.
+A_OPAAKKI	Stems with quantitative k gradation, i final and back harmony are in class described here and dictionary class ⁵⁻A or ⁵⁻D.
+A_PINKKI	Stems with quantitative k gradation, i final and front harmony are in class described here and dictionary class ⁵⁻A or ⁵⁻D. There's no back vowel version of the bisyllabic gradating -ppi form.
+A_SIPPI	Stems with quantitative p gradation, i final and front harmony are in class described here and dictionary class ⁵⁻B.
+A_HURTTI	Stems with quantitative t gradation, i final and back harmony are in class described here and dictionary class ⁵⁻C.
+A_VÄÄRTTI	Stems with quantitative t gradation, i final and front harmony are in class described here and dictionary class ⁵⁻C. There are no bisyllabic adjectives ending in vowel and gradating -pi.
+A_TUHTI	Stems with t ~ d gradation, i final and back harmony are in class described here and dictionary class ⁵⁻F.
+A_REHTI	Stems with t ~ d gradation, i final and front harmony are in class described here and dictionary class ⁵⁻F. There are no adjectives with i stems with other gradations.
+A_ABNORMAALI	The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶.
+A_ÖYKKÄRI	The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶. There are no adjectives acting like nouns where i-final nominatives have singular e stems.
+A_AAVA	Bisyllabic a stems with e comparative and j plurals are in class described here, and dictionary class ⁹.
+A_TARKKA	The ka stem with e comparative and j plurals is described here, and the dictionary class is ⁹-A or ⁹⁻D.
+A_MATTA	The ta stem with j plurals is described here, and the dictionary class is ⁹-C.
+A_HALPA	The pa : va stem with e comparative and j plurals is described here, and the dictionary class is ⁹⁻E.
+A_EHTA	The ta : da stem with a comparative and j plurals is described here, and the dictionary class is ⁹⁻F. None with k:g gradation.
+A_RAMPA	The pa : ma stem with e comparative and j plurals is described here, and the dictionary class is ⁹⁻H.
+A_VIHANTA	The ta : na stem with a comparative and j plurals is described here, and the dictionary class is ⁹⁻J.
+A_AALTOILEVA	The a : 0 stem is in class described here and the old dictionary used ¹⁰ as the paradigm class.
+A_TYÖLLISTETTÄVÄ	The ä : 0 stem is in class described here and the old dictionary used ¹⁰ as the paradigm class.
+A_RUMA	For a:e comparatives in a:0 class use described here. No dictionary classification or ~¹⁰, 
+A_TYHMÄ	For ä:e comparatives in a:0 class use described here. No dictionary classification or ~¹⁰, 
+A_HOIKKA	
+A_MYKKÄ	
+A_POPPA	
+A_HÖMPPÄ	The quantitative k and t gradations are not found for adjectives with this a stem.
+A_VOIPA	
+A_KÄYPÄ	
+A_MÄTÄ	
+A_SANKA	
+A_VÄNKÄ	
+A_KULTA	
+A_LÄNTÄ	
+A_TURTA	
+A_HAPERA	Certain trisyllabic or longer a stems allow a lot of allomorphs and both a : o : 0 variations:
+A_HÖPPÄNÄ	
+A_HARMAJA	
+A_LATUSKA	Certain trisyllabic or longer a stems allow a lot of allomorphs and both a : o : 0 variations:
+A_HAILAKKA	The a : o stem variation combines with trisyllabic class of special illatives
+A_RÄVÄKKÄ	
+A_POHATTA	A-final words with long vowels and syllable boundary
+A_AINOA	
+A_KORKEA	
+A_JÄREÄ	
+A_AIEMPI	
+A_LÄHEMPI	
+A_VAPAA	There are no other bisyllabic long vowel stems in adjectives
+A_PEEAA	
+A_MUU	
+A_SYYPÄÄ	
+A_GAY	Some loan words inflect irregularly, either more along the written form or the pronunciation. There are not many direct adjective loans in general.
+A_SUURI	Dictionary class 24~26 back
+A_PIENI	Dictionary class 24~26 front
+A_UUSI	Dictionary class 27 back
+A_TÄYSI	Dictionary class 27 front
+A_TYVEN	Dictionary class 32
+A_AVOIN	Dictionary class 33
+A_ALASTON	Dictionary class 34 back
+A_VIATON	Dictionary class 34 0~t back
+A_KYVYTÖN	Dictionary class 34 0~t front
+A_HAPAN	This one word, hapan, also takes the same variation as normative variant. The expected e variant is not normative, but used. Dictionary class 34 0~p back
+A_LÄMMIN	Dictionary class 34 m~p front
+A_PAHIN	Dictionary class 35 back
+A_SISIN	Dictionary class 35 front
+A_VASEN	Dictionary class 36
+A_AAKKOSELLINEN	Dictionary class 38 back
+A_KYLMÄJÄRKINEN	Dictionary class 38 front
+A_SYMPPIS	Dictionary class 39
+A_LÄHTEISYYS	Dictionary class 40
+A_AUTUAS	Dictionary class 41 as
+A_VALMIS	Dictionary class 41 is
+A_TYÖLÄS	Dictionary class 41 äs
+A_VOIMAKAS	Dictionary class 41 kas
+A_TYYLIKÄS	Dictionary class 41 käs
+A_REIPAS	Dictionary class 41 pas
+A_RIETAS	Dictionary class 41 tas
+A_RAITIS	Dictionary class 41 tis
+A_HIDAS	Dictionary class 41 das
+A_HARRAS	Dictionary class 41 ras
+A_OHUT	Dictionary class 43 back
+A_EHYT	Dictionary class 43 front
+A_KULUNUT	Dictionary class 47 back
+A_ÄLLISTYNYT	Dictionary class 47 front
+A_AHNE	Dictionary class 48 back
+A_TERVE	Dictionary class 48 front
+A_KADE	Dictionary class 48 d~t back
+A_HELLE	Dictionary class 48 l~t back
+A_PITKÄ	Adjective pitkä
+A_LEUATTOMAT	Adjectives aren't typically plural words, but there are some in the dictionaries.
+DIGITS	Digits are constructed as several cyclic structures: integers, decimals or roman numerals. Zero alone works quite differently
+DIGITS_INT_LOOP	Integers can be constructed from any number of digits, ending in 1-9, followed by any number of 0's. Initial 0's are rare, but not totally unexpected
+DIGITS_ILLIARD_LOOP	The digit strings that end in 10 to 12 + 6n 0's are inflected alike
+DIGITS_ILLION_LOOP	The digit strings that end in 6 to 9 + 6n 0's are inflected alike
+DIGITS_DECIMAL_LOOP	Decimal digit strings start with any number of digits 0 to 9, followed by decimal separator comma. The decimal dot may be allowed as substandard variant.
+DIGITS_DECIMAL_LOOP_FINAL	The decimal digit strings end in any number of digits 0 to 9, inflected along the last part.
+DIGITS_DECIMAL_LOOP_FINAL_SUB	The decimal digit strings with dot may be allowed as sub-standard option with respective analysis.
+DIGITS_ROMANS	Roman numerals are composed the symbols M, D, C, L, X, V, I in ascending scale and some combinations, they denote ordinal numbers and inflect like ones.
+DIGITS_ROMANS_THOUSANDS	Thousands can be followed by any of other parts
+DIGITS_ROMANS_HUNDREDS	Hundreds can be followed by anything but thousands:
+DIGITS_ROMANS_TENS	Tens can be followed by ones:
+DIGITS_ROMANS_ONES	Ones come alone
+INTERJECTION	Interjections are mainly parts of spoken language that are minimal turns in dialogue, curses, onomatopoeia and such.
+NOUN	Noun is the part-of-speech for words which require declination in number and case.
+N_TALO	The most basic noun stem does not have any stem internal variation and uses few commonest allomorphs. The words in this class are either bisyllabic or have one of common derivational suffixes: sto, .... The nouns in this class end in o, u, y or ö, which determines their illative suffix and therefore exact classification:
+N_ASU	The stems ending in u are also without variationm and the bisyllabic ones have the same simple allomorph pattern: Dictionary class 1u
+N_KÄRRY	Dictionary class 1y
+N_MÖMMÖ	Dictionary class 1ö
+N_UKKO	Dictionary class 1ko
+N_TIKKU	Dictionary class 1ku
+N_MYRKKY	Dictionary class 1ky
+N_YÖKKÖ	Dictionary class 1kö
+N_HAPPO	Dictionary class 1po
+N_LIPPU	Dictionary class 1pu
+N_RYYPPY	Dictionary class 1py
+N_TÖRPPÖ	Dictionary class 1pö
+N_HIRTTO	Dictionary class 1to
+N_TORTTU	Dictionary class 1tu
+N_PYTTY	Dictionary class 1ty
+N_PÖNTTÖ	Dictionary class 1tö
+N_TEKO	Between two vowels, the weak grade of k is optionally an apostrophe instead. For k that is not optionally ’, for example when it is after a consonant other than s, the variation is k ~ 0 instead (e.g. N_UKKO). Dictionary class 1ko
+N_MAKU	Dictionary class 1ku
+N_NÄKY	Dictionary class 1ky
+N_NÄKÖ	Dictionary class 1kö
+N_RUOKO	Between three vowels where k is surrounded by same vowels the k becomes obligatorily ’. When the vowels are different, it becomes optionally ’ (as in N_TEKO), and after consonant other than s it is k ~ 0 (as in N_UKKO). Dictionary class 1ko
+N_LIUKU	Dictionary class 1ko Other gradations can be more easily caught from the preceding context.
+N_HEPO	Dictionary class 1po
+N_APU	Dictionary class 1pu
+N_KÄPY	Dictionary class 1py
+N_LÖPÖ	Dictionary class 1pö
+N_VETO	Dictionary class 1to
+N_KUITU	Dictionary class 1to
+N_VETY	Dictionary class 1ty
+N_HÄÄTÖ	Dictionary class 1tö
+N_RUNKO	Dictionary class 1nko
+N_VINKU	Dictionary class 1nku
+N_SÄNKY	Dictionary class 1nky
+N_YLÄNKÖ	Dictionary class 1nkö
+N_SAMPO	Dictionary class 1mpo
+N_RUMPU	Dictionary class 1mpu
+N_LÄMPÖ	Dictionary class 1mpö
+N_KIELTO	Dictionary class 1lto
+N_HUOLITELTU	Dictionary class 1ltu
+N_EPÄILTY	Dictionary class 1lty
+N_SISÄLTÖ	Dictionary class 1ltö
+N_TUNTO	Dictionary class 1nto
+N_LINTU	Dictionary class 1ntu
+N_MÄNTY	Dictionary class 1nty
+N_KÄÄNTÖ	Dictionary class 1ntö
+N_SIIRTO	Dictionary class 1rto
+N_LUKU	Dictionary class 1cuku
+N_KYKY	Dictionary class 1cyky
+N_RUIPELO	Dictionary class 2o
+N_SEIKKAILU	Dictionary class 2u
+N_VEHKEILY	Dictionary class 2y
+N_JÄÄTELÖ	Dictionary class 2ö
+N_TUOMIO	The words with stem vowel o, u, y, ö preceded by vowels still have no more stem variation than other cases, but give yet another pattern of allomorphs for plural partitives and genitives Dictionary class 3o There's plenty of imaginable non-standard allomorph forms after long vowels
+N_HÄIRIÖ	Dictionary class 3ö
+N_ZOMBIE	Similar inflection exists in limited amounts in new loan words that are written as pronounced (thus taking no stem variation but still ending with long vowels with a syllable boundary) Dictionary class 3eta
+N_BERNIE	This class includes a set of new proper nouns that get nativised a bit Dictionary class 3etä
+N_LEPAKKO	Dictionary class 4 kko
+N_YKSIKKÖ	Dictionary class 4 kkö
+N_RUUVI	Dictionary class 5 back
+N_TYYLI	Dictionary class 5 front
+N_LOKKI	Dictionary class 5 back k~0
+N_HÄKKI	Dictionary class 5 front k~0
+N_KUPPI	Dictionary class 5 back p~0
+N_TYYPPI	Dictionary class 5 front p~0
+N_PORTTI	Dictionary class 5 back t~0
+N_SKEITTI	Dictionary class 5 front t~0
+N_LAKI	Dictionary class 5 back k~’~0
+N_HUPI	Dictionary class 5 back p~v There is a gap in i final words for p:v variation and front harmony
+N_TAUTI	Dictionary class 5 back t~d
+N_NIHTI	Dictionary class 5 front t~d
+N_VANKI	Dictionary class 5 back k~g
+N_HÄMMINKI	Dictionary class 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
+N_PELTI	Dictionary class 5 front t~l
+N_SOINTI	Dictionary class 5 back t~n
+N_VIENTI	Dictionary class 5 front t~n
+N_PUNK	New loan words ending in consonant may be inflected as i stem words Dictionary class 5 back no i
+N_ZEN	Dictionary class 5 front no i
+N_TANKKERI	Dictionary class 6 back
+N_KEHVELI	Dictionary class 6 front
+N_STADION	Dictionary class 6 back no i
+N_BESSERWISSER	Dictionary class 6 front no i
+N_ONNI	Dictionary class 7 back
+N_KIVI	Dictionary class 7 front
+N_HAPPI	Dictionary class 7 back p~0
+N_TYPPI	Dictionary class 7 front p~0
+N_NOKI	Dictionary class 7 back k~0
+N_KÄKI	Dictionary class 7 front k~0
+N_KORPI	Dictionary class 7 back p~v
+N_KILPI	Dictionary class 7 front p~v
+N_LAHTI	Dictionary class 7 back t~d
+N_LEHTI	Dictionary class 7 front t~d
+N_ONKI	Dictionary class 7 back k~g
+N_HENKI	Dictionary class 7 front k~g
+N_SAMPI	Dictionary class 7 back p~m
+N_RIMPI	Dictionary class 7 front p~m
+N_ARKI	Dictionary class 7 back k~j
+N_JÄRKI	Dictionary class 7 front k~j
+N_NALLE	Dictionary class 8 back
+N_NISSE	Dictionary class 8 front
+N_NUKKE	Dictionary class 8 k~0 back
+N_JEPPE	Dictionary class 8 p~0 front
+N_LOTTE	Dictionary class 8 t~0 back
+N_KIRJA	Dictionary class 9 Notably, the basic a:o paradigm does not support many ä:ö cases.
+N_POLITIIKKA	Dictionary class 9 k~0
+N_TIPPA	Dictionary class 9 p~0
+N_MITTA	Dictionary class 9 t~0
+N_VIKA	Dictionary class 9 k~’~0
+N_VAAKA	Dictionary class 9 k~’
+N_SALPA	Dictionary class 9 p~v
+N_PATA	Dictionary class 9 t~d
+N_LANKA	Dictionary class 9 k~g
+N_RAMPA	Dictionary class 9 p~m
+N_VALTA	Dictionary class 9 t~l
+N_KUTSUNTA	Dictionary class 9 t~n
+N_KYSYNTÄ	Dictionary class 9 t~n front
+N_KERTA	Dictionary class 9 t~r
+N_SOITTAJA	Dictionary class 10 back
+N_HÖPÖTTÄJÄ	Dictionary class 10 front
+N_LUOKKA	Dictionary class 10 back k̃~0
+N_HÖLKKÄ	Dictionary class 10 front k̃~0
+N_KUOPPA	Dictionary class 10 back p~0
+N_SEPPÄ	Dictionary class 10 front p~0
+N_ROTTA	Dictionary class 10 back t~0
+N_KENTTÄ	Dictionary class 10 front t~0
+N_VUOKA	Dictionary class 10 back k~’~0
+N_IKÄ	Dictionary class 10 front k~’~0
+N_REIKÄ	Dictionary class 10 back k~’~0
+N_LUPA	Dictionary class 10 back p~v
+N_LEIPÄ	Dictionary class 10 front p~v
+N_SOTA	Dictionary class 10 back t~d
+N_PÖYTÄ	Dictionary class 10 front t~d
+N_HONKA	Dictionary class 10 back k~g
+N_KENKÄ	Dictionary class 10 frot k~g
+N_KOMPA	Dictionary class 10 back p~m
+N_MULTA	Dictionary class 10 back t~l
+N_SYLTÄ	Dictionary class 10 front t~l
+N_KUNTA	Dictionary class 10 back t~n
+N_EMÄNTÄ	Dictionary class 10 front t~n
+N_SELKÄ	Dictionary class 10 front k~j
+N_PROBLEEMA	Dictionary class 11 back
+N_KÄPÄLÄ	Dictionary class 11 front Some a stems with a:o variation have slightly different set of allomorphs
+N_MAKKARA	Dictionary class 12 back
+N_HÄKKYRÄ	Dictionary class 12 front There is a possible class for further variation of a:o in the old dictionary dictionary that is worth re-evaluating. There’s one more allomorph pattern.
+N_SIIVILÄ	Dictionary class 12++ front
+N_LUSIKKA	Dictionary class 14 back
+N_KÄMMEKKÄ	Dictionary class 14 front
+N_ULAPPA	Dictionary class 14 back p̃0
+N_POHATTA	Dictionary class 14 back t0
+N_SOKEA	The a-final words ending in long vowels with syllable boundary have a:0 variation and more allomorphs for plyral genitive or illative. Dictionary class 15 ea
+N_LIPEÄ	Dictionary class 15 eä
+N_VANHEMPI	Dictionary class 16
+N_VAINAA	Dictionary class 17 a
+N_TIENOO	Dictionary class 17 o
+N_LEIKKUU	Dictionary class 17 u Monosyllabic long vowel stems have illative suffixes of form -hVn.
+N_MAA	Dictionary class 18 a
+N_TEE	Dictionary class 18 e
+N_HAI	Dictionary class 18 i back
+N_PII	Dictionary class 18 i
+N_OOKOO	Dictionary class 18 o
+N_PUU	Dictionary class 18 u
+N_PYY	Dictionary class 18 y
+N_PÄÄ	Dictionary class 18 ä
+N_KÖÖ	Dictionary class 18 ö
+N_TIE	Dictionary class 19 ie
+N_VUO	Dictionary class 19 uo
+N_YÖ	Dictionary class 19 yö
+N_NUGAA	Dictionary class 20 a
+N_PATEE	Dictionary class 20 e
+N_BIDEE	Dictionary class 20 e front There’s a gap in -ii final loan stems.
+N_TRIKOO	Dictionary class 20 o
+N_RAGUU	Dictionary class 20 u
+N_FONDYY	Dictionary class 20 y
+N_HYVINKÄÄ	Dictionary class 20 ä
+N_MILJÖÖ	Dictionary class 20 ö
+N_ROSÉ	Dictionary class 21 e back
+N_BÉBÉ	Dictionary class 21 e front
+N_BRASSERIE	Dictionary class 21 i back
+N_BRIE	Dictionary class 21 i front
+N_FONDUE	Dictionary class 21 ye
+N_JOCKEY	Dictionary class 21 yi
+N_COWBOY	Dictionary class 21 iy
+N_KUNGFU	Dictionary class 21 u back
+N_GAY	Dictionary class 21 yi
+N_KENTUCKY	Dictionary class 21 yi
+N_CHACHACHA	Dictionary class 21 a The loan words that end in consonant when written but vowel when pronounced are inflected with an apostrophe ’. With half-vowels the rule is a bit shaky, but officially apostrophe is the only way.
+N_NOUGAT	Dictionary class 22 a
+N_PARFAIT	Dictionary class 22 e
+N_BEIGNET	Dictionary class 22 e front
+N_VERSAILLES	Dictionary class 22 i back
+N_SERGEJ	Dictionary class 22 i front
+N_BORDEAUX	Dictionary class 22 o
+N_SHOW	Dictionary class 22 u
+N_CAMUS	Dictionary class 22 y
+N_MONSIEUR	Dictionary class 22 ö
+N_TULI	Dictionary class 23
+N_VUOHI	Dictionary class 23++
+N_RUUHI	Dictionary class 24 back
+N_HIIRI	Dictionary class 24 front It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
+N_KAARI	Dictionary class 26 back
+N_MIELI	Dictionary class 24 front The -mi stems will rarely undego m:n variation for consonant stem forms.
+N_TAIMI	Dictionary class 25 back
+N_LIEMI	Dictionary class 25 front The -si words that originate from old -te stems have the consonant gradation patterns left in their stems. The si is only in nominative stem and this class mainly concerns stems that are old enough to have undergone ti>si transformation. 
+N_KAUSI	Dictionary class 27 back
+N_KÖYSI	Dictionary class 27 front
+N_PONSI	Dictionary class 27 back t~n
+N_LÄNSI	Dictionary class 27 front t~n
+N_VARSI	Dictionary class 27 back t~r
+N_VIRSI	Dictionary class 27 front t~r
+N_JÄLSI	Dictionary class 27 front t~l A few -psi, -ksi, -tsi stems have consonant simplification for consonant stems. Other variation with these stems is the selection of plural genitive allomorphs.
+N_LAPSI	Dictionary class 27 psi
+N_UKSI	Dictionary class 27 ksi
+N_PEITSI	Dictionary class 27 tsi back
+N_VEITSI	Dictionary class 27 tsi front The -ksi stem in haaksi includes k:h variation.
+N_HAAKSI	Dictionary class 27 ksi
+N_AHVEN	Dictionary class 32 back
+N_JOUTSEN	Dictionary class 32 back
+N_SIEMEN	Dictionary class 32 front
+N_AJATAR	Dictionary class 32 tar
+N_TYTÄR	Dictionary class 32 tär
+N_IEN	Dictionary class 32 ien Some of the n-final stems have n:m variation.
+N_PUHELIN	Dictionary class 33 back
+N_ELIN	Dictionary class 33 front
+N_SUODATIN	Dictionary class 33 back tin
+N_HEITIN	Dictionary class 33 front tin
+N_PUIN	Dictionary class 33 back k~in
+N_PYYHIN	Dictionary class 33 front k~in
+N_KAAVIN	Dictionary class 33 back vin
+N_SÄRVIN	Dictionary class 33 front vin
+N_VAADIN	Dictionary class 33 back din
+N_LAIDUN	Dictionary class 33 back dun
+N_SÄÄDIN	Dictionary class 33 fron din
+N_ASKELLIN	Dictionary class 33 back lin
+N_SIVELLIN	Dictionary class 33 frontlin
+N_KÄÄNNIN	Dictionary class 33 frpnt nin
+N_MUUNNIN	Dictionary class 33 back nin
+N_KIHARRIN	Dictionary class 33 back rin
+N_KERROIN	Dictionary class 33 back roin
+N_KIERRIN	Dictionary class 33 fron rin
+N_POLJIN	Dictionary class 33 back jin
+N_OSATON	Dictionary class 34 ton
+N_NIMETÖN	Dictionary class 34 tän
+N_VANHIN	Dictionary class 35 back
+N_LÄHIN	Dictionary class 35 front
+N_VASEN	Dictionary class 35
+N_AAKKOSTAMINEN	Dictionary class 38 back
+N_KYLKIÄINEN	Dictionary class 38 front
+N_VAKUUTUS	Dictionary class 39 back
+N_RÄJÄYTYS	Dictionary class 39 front Some of the s final stems have additional s:t:d variation in singular stems. Most notably, the UUs derivations are in this class.
+N_AAKKOSELLISUUS	Dictionary class 40 back
+N_KÖYHYYS	Dictionary class 40 front Some s final words have special lengthening inflection.
+N_PATSAS	Dictionary class 41 as
+N_RUUMIS	Dictionary class 41 is
+N_ILMATIIVIS	Dictionary class 41 is front
+N_ARISTOTELES	Dictionary class 41 es back
+N_KIRVES	Dictionary class 41 es front
+N_ÄYRÄS	Dictionary class 41 äs
+N_ASUKAS	Dictionary class 41 kas
+N_KÄRSÄKÄS	Dictionary class 41 käs
+N_SAAPAS	Dictionary class 41 pas
+N_RYPÄS	Dictionary class 41 päs
+N_RATAS	Dictionary class 41 tas
+N_MÄTÄS	Dictionary class 41 täs
+N_KELTIS	Dictionary class 41 tis
+N_IES	Dictionary class 41 ies
+N_VARAS	Dictionary class 41 as
+N_RUIS	Dictionary class 41 is
+N_VARVAS	Dictionary class 41 vas
+N_SEIVÄS	Dictionary class 41 väs
+N_TEHDAS	Dictionary class 41 das
+N_KANGAS	Dictionary class 41 gas
+N_KÖNGÄS	Dictionary class 41 gäs
+N_HAMMAS	Dictionary class 41 mas
+N_ALLAS	Dictionary class 41 las
+N_KINNAS	Dictionary class 41 nas
+N_RYNNÄS	Dictionary class 41 näs
+N_PORRAS	Dictionary class 41 ras The word mies has special s:h variation pattern.
+N_MIES	Dictionary class 42
+N_OLUT	Dictionary class 43 back
+N_NEITSYT	Dictionary class 43 front
+N_IMMYT	Dictionary class 43 myt Few t-final words have lengthening in singular stems
+N_KEVÄT	Dictionary class 44 Nominalised nut participles have special inflection just as well.
+N_AIVOKUOLLUT	Dictionary class 47 back
+N_SIVISTYNYT	Dictionary class 47 front
+N_ASTE	Dictionary class 48 back
+N_PISTE	Dictionary class 48 Front
+N_KASTIKE	Dictionary class 48 back ke
+N_LÄÄKE	Dictionary class 48 front ke
+N_APE	Dictionary class 48 back pe
+N_RIPE	Dictionary class 48 front pe
+N_LAITE	Dictionary class 48 back te
+N_KÄSITE	Dictionary class 48 front te
+N_KOE	Dictionary class 48 back 0k
+N_PYYHE	Dictionary class 48 front 0k
+N_TARVE	Dictionary class 48 back ve
+N_VIIVE	Dictionary class 48 front ve
+N_KIDE	Dictionary class 48 front de
+N_JOHDE	Dictionary class 48 back de
+N_LUMME	Dictionary class 48 back me
+N_MIELLE	Dictionary class 48 front le
+N_VUOLLE	Dictionary class 48 back le
+N_RAKENNE	Dictionary class 48 back ne
+N_KIINNE	Dictionary class 48 front ne
+N_AARRE	Dictionary class 48 back re
+N_KIERRE	Dictionary class 48 fron re
+N_HYLJE	Dictionary class 48 front je
+N_POHJE	Dictionary class 48 back je
+N_ASKAR	Dictionary class 49 ar
+N_KYYNEL	Dictionary class 49 el
+N_SÄEN	Dictionary class 49 en
+N_TAIVAL	Dictionary class 49 val
+N_UDAR	Dictionary class 49 dar
+N_PENGER	Dictionary class 49 ger
+N_OMMEL	Dictionary class 49 mel
+N_VEMMEL	Dictionary class 49 mel
+N_KINNER	Dictionary class 49 ner
+N_KANNEL	Dictionary class 49 nel
+N_MANNER	Dictionary class 49 ner
+N_PIENNAR	Dictionary class 49 nar
+N_AUER	Dictionary class 49 auer
+N_VERI	Non-Dictionary class veri
+N_MERI	Non-Dictionary class meri
+N_UROS	Non-Dictionary class uros
+N_VELI	Non-dictionary class veli
+N_AIKA	Non-dictionary class aika
+N_POIKA	Non-dictionary class poika
+N_AAMUYKSI	Non-dictionary class for numeral compounds ending yksi
+N_AAMUKOLME	Non-dictionary class for numeral compounds ending kolme
+N_AAMUKAHDEKSAN	Non-dictionary class for numeral compounds ending 8
+N_AAMUYHDEKSÄN	Non-dictionary class for numeral compounds ending 9
+N_AAMUKYMMENEN	Non-dictionary class for numeral compounds ending 10
+N_VUOSITUHAT	Non-dictionary class for numeral compounds ending 1000
+N_AIVOT	Dictionary class 1o plurale tantum
+N_PÖKSYT	Dictionary class 1y plurale tantum
+N_HOUSUT	Dictionary class 1u plurale tantum
+N_JOUKOT	Dictionary class 1ko plurale tantum
+N_FARKUT	Dictionary class 1ku plurale tantum
+N_TIEDOT	Dictionary class 1dot plurale tantum
+N_TYTÖT	Dictionary class 1töt plurale tantum
+N_PIDOT	Dictionary class 1ot plurale tantum
+N_RAVUT	Dictionary class 1vut plurale tantum
+N_URUT	Dictionary class 1ut plurale tantum
+N_RAPUT	Dictionary class 1put plurale tantum
+N_KÄÄDYT	Dictionary class 1dyt plurale tantum
+N_AALLOT	Dictionary class 1lot plurale tantum
+N_OPINNOT	Dictionary class 1not plurale tantum
+N_RAUNIOT	Dictionary class 2iot plurale tantum
+N_PIPPALOT	Dictionary class 3iot plurale tantum
+N_NEUVOTTELUT	Dictionary class 3lut plurale tantum
+N_SÄÄNNÖT	Dictionary class 1nöt plurale tantum
+N_LEHDET	Dictionary class 7 front t~d plurale tantum
+N_TUNNIT	Dictionary class 7 back t~n plurale tantum
+N_SUKAT	Dictionary class xxx a front k0 plurale tantum
+N_KENGÄT	Dictionary class xxx a front kg plurale tantum
+N_RAVET	Dictionary class 8 plurale tantum
+N_BÄNET	Dictionary class 8 front plurale tantum
+N_MARKKINAT	Dictionary class xxx a front plurale tantum
+N_HIPAT	Dictionary class xxx a front pp plurale tantum
+N_KUOPAT	Dictionary class xxx a back p plurale tantum
+N_RAUDAT	Dictionary class xxx dat plurale tantum
+N_TAVAT	Dictionary class xxx vat plurale tantum
+N_VALLAT	Dictionary class xxx lat plurale tantum
+N_VARAT	Dictionary class xxx rrt plurale tantum
+N_JUHLAT	Dictionary class xxx t plurale tantum
+N_KIHARAT	Dictionary class xxxihi t plurale tantum
+N_KÄRÄJÄT	
+N_PAIKAT	Dictionary class xxx kAt plurale tantum
+N_SILAKAT	Dictionary class 14 kat plurale tantum
+N_RINTSIKAT	Dictionary class 14 kat2 plurale tantum
+N_TIETEET	Dictionary class xxx teet plurale tantum
+N_FARMARIT	Dictionary class xxx it plurale tantum
+N_KASTANJETIT	Dictionary class xxx tit plurale tantum
+N_TAUDIT	Dictionary class xxx dit plurale tantum
+N_PIHDIT	Dictionary class xxx dit front plurale tantum
+N_TONGIT	Dictionary class xxx git plurale tantum
+N_SYÖMINGIT	Dictionary class xxx git fornt plurale tantum
+N_LÄNGET	Dictionary class xxx get plurale tantum
+N_LASIT	Dictionary class xxx sit plurale tantum
+N_BIKINIT	Dictionary class xxx nit plurale tantum
+N_LIIVIT	Dictionary class xxx iiiit plurale tantum
+N_HOPEAT	Dictionary class xxx eat plurale tantum
+N_TIET	Dictionary class 15 tiet plurale tantum
+N_TYÖT	Dictionary class xxx työt plurale tantum
+N_VANHEMMAT	Dictionary class xxx matt plurale tantum
+N_ITÄMAAT	Dictionary class xxx maat plurale tantum
+N_PUUT	Dictionary class xx puu t plurale tantum
+N_HÄÄT	Dictionary class xxx äät plurale tantum
+N_TALKOOT	Dictionary class xxx kooot plurale tantum
+N_SAKSET	Dictionary class xxx sakset plurale tantum
+N_RIPSET	Dictionary class xxx ripset plurale tantum
+N_KANNET	Dictionary class xxx nnet plurale tantum
+N_VUODET	Dictionary class 27 det plurale tantum
+N_TOIMET	Dictionary class 25 t plurale tantum
+N_HÖYHENET	Dictionary class 32 t plurale tantum
+N_ATERIMET	Dictionary class 31 t plurale tantum
+N_KERITSIMET	Dictionary class 31 t fr plurale tantum
+N_ANTIMET	Dictionary class 31 nnin plurale tantum
+N_HOKSOTTIMET	Dictionary class 31 tin plurale tantum
+N_SYNNYTTIMET	Dictionary class 31 tin front plurale tantum
+N_PUKIMET	Dictionary class 31 puin plurale tantum
+N_IKENET	Dictionary class 31 ien plurale tantum
+N_LIITTOUTUNEET	Dictionary class nut plurale tantum
+N_RAPPUSET	Dictionary class 38 nen plurale tantum
+N_VIHKIÄISET	Dictionary class 38 nen fornt plurale tantum
+N_VALJAAT	Dictionary class jaat plurale tantum
+N_TIKKAAT	Dictionary class kaat plurale tantum
+N_RATTAAT	Dictionary class taat plurale tantum
+N_RENKAAT	Dictionary class gaat plurale tantum
+N_RYNTÄÄT	Dictionary class ntääaat plurale tantum
+N_HYNTTYYT	Dictionary class ntyyaat plurale tantum
+N_RYNTTYYT	Dictionary class ntyyt plurale tantum
+N_MALTAAT	Dictionary class ltaat plurale tantum
+N_PORTAAT	Dictionary class rtaat plurale tantum
+N_SERKUKSET	Dictionary class kset plurale tantum
+N_YSTÄVYKSET	Dictionary class kset fr plurale tantum
+N_OIKEUDET	Dictionary class sdet plurale tantum
+N_KAMPPEET	Dictionary class mppt plurale tantum
+N_HYNTTEET	Dictionary class ntteet plurale tantum
+N_PUKEET	Dictionary class ukeet plurale tantum
+N_KUULOKKEET	Dictionary class kkkeeet plurale tantum
+N_VAATTEET	Dictionary class teeeeet plurale tantum
+N_PEITTEET	Dictionary class taateee plurale tantum
+N_SUHTEET	Dictionary class taad plurale tantum
+N_LAUTEET	Dictionary class daat plurale tantum
+N_SÄTEET	Dictionary class daat plurale tantum
+N_SITEET	Dictionary class trate plurale tantum
+N_TARPEET	Dictionary class veat plurale tantum
+N_HIUTALEET	Dictionary class leat plurale tantum
+N_ALKEET	Dictionary class jeet plurale tantum
+N_PERKEET	Dictionary class jeat plurale tantum
+N_POJAT	Dictionary class pojat plurale tantum
+N_KYNNET	
+N_VARPAAT	
+N_INGET	
+N_JUOVAT	
+N_JYLKYT	
+N_KAARRET	
+N_KIRITTÄRET	
+N_HAIT	
+N_KORTET	
+N_KENTÄT	
+N_ROMPAAT	
+N_LANNET	
+N_LIPOTTARET	
+None	
+N_LOUET	
+N_LUODES	
+N_LÄHDES	
+N_LÄHDET	
+N_MURTEET	
+N_MERTU	
+N_NIMETÖIN	
+N_HÄRKIN	
+N_MATEE	
+N_KYLÄNVANHIN	
+N_YMPÄRYSTÄ	
+N_PÖLHÄÄT	
+N_MATKUET	
+N_ALTIS	
+N_RINNET	
+N_MÄNNYT	
+N_RUOPPAAT	
+N_KAARET	
+N_HÄMET	
+N_PÖLLÖT	
+N_HYÖTYY	
+N_KANKAHAT	
+N_SAMMALET	
+N_PEIPOT	
+N_MÄTTÄÄT	
+N_LAET	
+N_RANGAT	
+N_KYNNÄÄT	
+N_EKKE	
+N_SILMÄKKEET	
+N_SIUNAAMATTOMAT	
+N_METTE	
+N_LINGOT	
+N_VELJET	
+N_SÄÄRET	
+N_PANKIT	
+N_LUHDAT	
+N_RIIPI	
+N_SELENE	
+N_FÄNRIKIT	
+N_KLUMPIT	
+N_TYÖTTÖMÄT	
+N_RÄMIÄT	
+N_TÖLPÄT	
+N_LAHDET	
+N_SYLI	
+N_RÄMEET	
+N_AINOA	
+N_ONNET	
+N_KALATOIN	
+N_HÄNNÄT	
+N_KORVET	
+N_RAPPE	
+N_LAMMET	
+N_KOUVOT	
+N_MIEHET	
+N_KAARROT	
+N_RÄMEÄT	
+N_VIIRRET	
+N_RIMMIT	
+N_TEHTAAT	
+N_EUGENE	
+N_SELJÄT	
+N_AHDET	
+N_HALPA	
+N_JÄRJESTÖT	
+N_JÄRVITAHDON	
+N_KANAALI	
+N_KARRAT	
+N_KASTILJAT	
+N_KITARA	
+N_KORTES	
+N_KORTTI	
+N_KUMMUT	
+N_KUNNAT	
+N_KYDÖT	
+N_KÄRJET	
+N_LAMMI	
+N_LAMMIT	
+N_LENTTEE	
+N_LOMMOL	
+N_LUODE	
+N_LUOLIKOT	
+N_MÄET	
+N_NIEMET	
+N_NIITUT	
+N_NIITYT	
+N_OSOITE	
+N_RANNAT	
+N_REIÄT	
+N_RIIVET	
+N_RIMMI	
+N_RINTEET	
+N_RIUTAT	
+N_ROITOT	
+N_SAARET	
+N_SALONTEET	
+N_SUOT	
+N_SÄRKÄT	
+N_TÖLPÄKÖT	
+N_VUOLLET	
+N_YHTIÖT	
+NUMERAL	Numerals are morphologically nominals, only exception to noun inflection is that they form compounds with special agreeing patterns. Syntactically and semantically numerals are clearly separate subset of nominals. Some of the numerals stem variation patterns are rare to non-existent for other nominal types. 
+NUM_YKSI	Dictionary class31
+NUM_KAKSI	Dictionary class31 back§
+NUM_KOLME	Dictionary class8~5
+NUM_NELJÄ	Dictionary class10
+NUM_VIISI	Dictionary class27 front
+NUM_KUUSI	Dictionary class27 back
+NUM_KAHDEKSAN	Dictionary class10n
+NUM_YHDEKSÄN	Dictionary class10n front
+NUM_KYMMENEN	Dictionary class32
+NUM_SATA	Dictionary class9
+NUM_TUHAT	Dictionary class46
+NUM_MILJOONA	Dictionary class10
+NUM_MILJARDI	Dictionary class5
+NUM_GOOGOL	Dictionary class5 more
+NUM_PARI	Dictionary class5 moremore
+NUM_ENSIMMÄINEN	Dictionary class38
+NUM_TOINEN	Dictionary class38 back
+NUM_KOLMAS	Dictionary class45
+NUM_NELJÄS	Dictionary class45 fron
+PARTICLE	The particles are all words that do not inflect at all.
+PRONOUN	Pronouns are a closed special sub class of nouns.
+PUNCTUATION	Punctuation characters are any symbols in text.
+VERB	Verbs are the words that inflect in tense, mood, personal suffixes, and clitics, but verbs also have s.c. infinite inflection pattern which is basically nominal derivations.
+V_KAUNISTUA	The u stems have no stem variation: Dictionary class52u
+V_PUNOA	The o stems have no stem variation: Dictionary class52o
+V_SÄILÖÄ	The ö stems have no stem variation: Dictionary class52ö
+V_ÄLLISTYÄ	The y stems have no stem variation: Dictionary class52y
+V_HAUKKOA	Dictionary class52 k~0 o
+V_NUOKKUA	Dictionary class52 k~0 u
+V_KÄRKKYÄ	Dictionary class52 k~0 y
+V_HARPPOA	Dictionary class52 p~0 o
+V_LOPPUA	Dictionary class52 p~0 u
+V_LEPPYÄ	Dictionary class52 p~0 y
+V_KIVETTYÄ	Dictionary class52 t~0 y
+V_VIITTOA	Dictionary class52 t~0 o
+V_HERMOTTUA	Dictionary class52 t~0 u
+V_MÄIKYÄ	Dictionary class52 k~0’ y
+V_TAKOA	Dictionary class52 k~0’ o
+V_MAUKUA	Dictionary class52 k~0’ u
+V_ELPYÄ	Dictionary class52 p~v y
+V_HIIPUA	Dictionary class52 p~v u
+V_SILPOA	Dictionary class52 p~v o
+V_KIETOA	Dictionary class52 t~d o
+V_SILIYTYÄ	Dictionary class52 t~d y
+V_ROHTUA	Dictionary class52 t~d u
+V_VINKUA	Dictionary class52 k~g u
+V_PENKOA	Dictionary class52 k~g o
+V_TEMPOA	Dictionary class52 p~m o
+V_AMPUA	Dictionary class52 p~m u
+V_MIELTYÄ	Dictionary class52 t~l y
+V_HUMALTUA	Dictionary class52 t~l u
+V_VAKAANTUA	Dictionary class52 t~n u
+V_TYHJENTYÄ	Dictionary class52 t~n y
+V_PYÖRTYÄ	Dictionary class52 t~r y
+V_VARTOA	Dictionary class52 t~r o
+V_PUSERTUA	Dictionary class52 t~r u
+V_MUTRISTAA	Dictionary class53 back
+V_KIVISTÄÄ	Dictionary class53 front
+V_RÄPSYTTÄÄ	Dictionary class53 front t~0
+V_VIEROITTAA	Dictionary class53 back t~0
+V_PURKAA	Dictionary class53 back k~0
+V_YSKÄHTÄÄ	Dictionary class53 front t~d
+V_MOJAHTAA	Dictionary class53 back t~d
+V_KYNTÄÄ	Dictionary class53 front t~n
+V_SORTAA	Dictionary class53 back t~r
+V_HUUTAA	Dictionary class54 back
+V_PYYTÄÄ	Dictionary class54 front
+V_SIVALTAA	Dictionary class54 back t~l
+V_VIHELTÄÄ	Dictionary class54 front t~l
+V_HIVENTÄÄ	Dictionary class54 front t~n
+V_HUONONTAA	Dictionary class54 back t~n
+V_KUHERTAA	Dictionary class54 back t~r
+V_NÄPERTÄÄ	Dictionary class54 front t~r
+V_KIITÄÄ	Dictionary class55 front
+V_JOUTAA	Dictionary class55 back
+V_YLTÄÄ	Dictionary class55 front t~l
+V_ENTÄÄ	Dictionary class55 front t~n
+V_KASVAA	Dictionary class56 back
+V_VIRKKAA	Dictionary class56 back k~0
+V_TAPPAA	Dictionary class56 back p~0
+V_AUTTAA	Dictionary class56 back t~0
+V_SATAA	Dictionary class56 back t~d
+V_KANTAA	Dictionary class56 back t~n
+V_KAATAA	Dictionary class57 back
+V_SAARTAA	Dictionary class57 back t~r
+V_KYTKEÄ	Dictionary class58 front
+V_SOTKEA	Dictionary class58 back
+V_PUKEA	Dictionary class58 back k~0
+V_RYPEÄ	Dictionary class58 front p~v
+V_PÄTEÄ	Dictionary class58 front t~d
+V_KUTEA	Dictionary class58 back t~d
+V_TUNKEA	Dictionary class58 back k~g
+V_POLKEA	Dictionary class58 back k~j
+V_SÄRKEÄ	Dictionary class58 front k~j
+V_TUNTEA	Dictionary class59
+V_LÄHTEÄ	Dictionary class60
+V_KOSIA	Dictionary class61 back
+V_RYSKIÄ	Dictionary class61 front
+V_KUKKIA	Dictionary class61 back k~0
+V_SÖRKKIÄ	Dictionary class61 front k~0
+V_KALPPIA	Dictionary class61 back p~0
+V_HYPPIÄ	Dictionary class61 front p~0
+V_MOITTIA	Dictionary class61 back t~0
+V_MIETTIÄ	Dictionary class61 front t~0
+V_RIIPIÄ	Dictionary class61 front p~v
+V_RAAPIA	Dictionary class61 back p~v
+V_AHNEHTIA	Dictionary class61 back t~d
+V_EHTIÄ	Dictionary class61 front t~d
+V_MÖNKIÄ	Dictionary class61 front k~g
+V_ONKIA	Dictionary class61 back k~g
+V_TYMPIÄ	Dictionary class61 frontp~m
+V_KONTIA	Dictionary class61 back t~n
+V_HYLKIÄ	Dictionary class61 back k~j
+V_KOPIOIDA	Dictionary class62 back
+V_ÖYKKÄRÖIDÄ	Dictionary class62 front
+V_SAADA	Dictionary class63 a
+V_MYYDÄ	Dictionary class63 y
+V_JÄÄDÄ	Dictionary class63 ä
+V_VIEDÄ	Dictionary class64 ie
+V_TUODA	Dictionary class64 uo
+V_SYÖDÄ	Dictionary class64 yö In past and conditional forms of käydä, the glide before suffix is marked even in normative orthography.
+V_KÄYDÄ	Dictionary class65
+V_MARISTA	Dictionary class66 back
+V_ÄRISTÄ	Dictionary class66 front
+V_HÄVÄISTÄ	Dictionary class66 front v p
+V_VAVISTA	Dictionary class66 back v~p
+V_RANGAISTA	Dictionary class66 back k~g
+V_SURRA	Dictionary class67 back r
+V_PIERRÄ	Dictionary class67 front r
+V_PANNA	Dictionary class67 back n
+V_MENNÄ	Dictionary class67 front n
+V_VASTAILLA	Dictionary class67 back l
+V_ÄKSYILLÄ	Dictionary class67 frot l
+V_LEIKELLÄ	Dictionary class67 front l 0k
+V_NAKELLA	Dictionary class67 back l 0k
+V_TAPELLA	Dictionary class67 back l 0p
+V_HYPELLÄ	Dictionary class67 front l 0p
+V_SULATELLA	Dictionary class67 back l 0t
+V_HERÄTELLÄ	Dictionary class67 front l 0t
+V_TIPAHDELLA	Dictionary class67 back l d~t
+V_SÄPSÄHDELLÄ	Dictionary class67 front l d~t
+V_OMMELLA	Dictionary class67 back l m~p
+V_VAELLELLA	Dictionary class67 back l l~t
+V_KIILLELLÄ	Dictionary class67 frpnt l l~t
+V_KOMENNELLA	Dictionary class67 back l n~t
+V_KÄÄNNELLÄ	Dictionary class67 front l n~t
+V_NAKERRELLA	Dictionary class67 back l r~t
+V_KIHERRELLÄ	Dictionary class67 front l r~t
+V_ISÄNNÖIDÄ	Dictionary class68 front
+V_MELLAKOIDA	Dictionary class68 back
+V_PALKITA	Dictionary class69 back
+V_MERKITÄ	Dictionary class69 front
+V_JUOSTA	Dictionary class70 back
+V_PIESTÄ	Dictionary class70 front
+V_NÄHDÄ	Dictionary class71
+V_KARHETA	Dictionary class72 back
+V_VÄHETÄ	Dictionary class72 rfont
+V_NIUKETA	Dictionary class72 back 0~k
+V_JYRKETÄ	Dictionary class72 front 0~k
+V_HAPATA	Dictionary class72 back 0~p
+V_SUPETA	Dictionary class72 front 0~p
+V_TYLPETÄ	Dictionary class72 front 0~p
+V_HELPOTA	Dictionary class72 back 0~p o
+V_LOITOTA	Dictionary class72 back 0~t
+V_ULOTA	Dictionary class72 back 0~k o
+V_KAVETA	Dictionary class72 back v~p
+V_MÄDÄTÄ	Dictionary class72 front d~t
+V_LEUDOTA	Dictionary class72 back d~t
+V_PIDETÄ	Dictionary class72 front d~t e
+V_LÄMMETÄ	Dictionary class72 front m~p 
+V_KIINNETÄ	Dictionary class72 front n~t
+V_JULJETA	Dictionary class72 back j~k
+V_ARVATA	Dictionary class73 back
+V_YNNÄTÄ	Dictionary class73 front
+V_MORKATA	Dictionary class73 back 0~k
+V_YÖKÄTÄ	Dictionary class73 front 0~k
+V_SIEPATA	Dictionary class73 back 0~p
+V_VÄLPÄTÄ	Dictionary class73 frot 0~p
+V_LUNTATA	Dictionary class73 back 0~t
+V_LÄNTÄTÄ	Dictionary class73 front 0~t
+V_KAIVATA	Dictionary class73 back v~p
+V_LEVÄTÄ	Dictionary class73 front v~p
+V_JAHDATA	Dictionary class73 back d~r
+V_TÄHDÄTÄ	Dictionary class73 front d~t
+V_VONGATA	Dictionary class73 back g~k
+V_VÄNGÄTÄ	Dictionary class73 front g~k
+V_TEMMATA	Dictionary class73 back m~p
+V_MULLATA	Dictionary class73 back l~t
+V_SUUNNATA	Dictionary class73 back n~t
+V_RYNNÄTÄ	Dictionary class73 front n~t
+V_VIRRATA	Dictionary class73 back r~t
+V_HYLJÄTÄ	Dictionary class73 front j~k
+V_DIGATA	Dictionary class73 back 0~g
+V_LOBATA	Dictionary class73 back 0~b
+V_KARHUTA	Dictionary class74 back 
+V_TÄHYTÄ	Dictionary class74 front 
+V_KAIKOTA	Dictionary class74 back 0~k 
+V_POIKETA	Dictionary class74 back 0~k e 
+V_KERETÄ	Dictionary class74 front 0~k e 
+V_KOUKUTA	Dictionary class74 front 0~k u 
+V_PULPUTA	Dictionary class74 back 0~p 
+V_UPOTA	Dictionary class74 back 0~p o 
+V_LOTOTA	Dictionary class74 back 0~to
+V_LUUTUTA	Dictionary class74 back 0~tu
+V_KIVUTA	Dictionary class74 back v~p 
+V_KORVETA	Dictionary class74 back v~pe
+V_REVETÄ	Dictionary class74 front v~pe
+V_KIRVOTA	Dictionary class74 back v~po
+V_KADOTA	Dictionary class74 back d~t 
+V_TODETA	Dictionary class74 back t~de
+V_VYYHDETÄ	Dictionary class74 front t~de
+V_LIIDUTA	Dictionary class74 back d~tu
+V_TUNGETA	Dictionary class74 back g~ke
+V_PINGOTA	Dictionary class74 back g~ko
+V_ÄNGETÄ	Dictionary class74 front g~ke 
+V_KUMMUTA	Dictionary class74 back m~p 
+V_KAMMETA	Dictionary class74 back p~mu
+V_SAMMOTA	Dictionary class74 back p~mu
+V_INNOTA	Dictionary class74 back t~no
+V_IRROTA	Dictionary class74 back t~to
+V_HALJETA	Dictionary class74 back j~ke
+V_ILJETÄ	Dictionary class74 front j~k 
+V_MYRSKYTÄ	Dictionary class75 front
+V_LASSOTA	Dictionary class75 back
+V_SELVITÄ	Dictionary class75 itä
+V_RYÖPYTÄ	Dictionary class75 pytä
+V_PEITOTA	Dictionary class75 tota
+V_KERITÄ	Dictionary class75 itä
+V_MUODOTA	Dictionary class75 dota
+V_LÄMMITÄ	Dictionary class75 mitä
+V_AALLOTA	Dictionary class75 lota
+V_HELLITÄ	Dictionary class75 litä
+V_TAITAA	Dictionary class76 back
+V_TIETÄÄ	Dictionary class76 front
+V_VIPAJAA	Dictionary class77 back 
+V_HELÄJÄÄ	Dictionary class77 front
+V_RAIKAA	Dictionary class78 back
+V_ÄHKÄÄ	Dictionary class78 front
+V_OLLA	The verb olla has very peculiar and heteroclitic inflection with lot of common short forms in standard spoken Finnish
+ACRONYM	Acronyms are shortenings inflected using a colon, followed by the inflectional endings.
+ACRO_YKSI	
+ACRO_KAKSI	
+ACRO_KOLME	The acronyms ending in digit 3 pronounced as number
+ACRO_NELJÄ	
+ACRO_VIISI	The acronyms ending in digit 5 pronounced as number
+ACRO_KUUSI	
+ACRO_SEITSEMÄN	
+ACRO_KAHDEKSAN	
+ACRO_YHDEKSÄN	
+ACRO_AA	acronyms ending in 'a' pronounced as a letter
+ACRO_EE	acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced as a letter
+ACRO_II	Acronyms that end in 'j' or 'i' pronoynced as letter
+ACRO_OO	Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter
+ACRO_UU	Acronyms that end in 'q', or 'u' pronounced as a letter
+ACRO_ÄKS	Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as a letter
+ACRO_YY	Acronym that ends in 'y' pronounced as letter
+ACRO_ZET	Acronyms that end in 'z' pronounced as letter
+ACRO_ÄÄ	Acronyms that end in 'ä' pronounced as letter
+ACRO_ÖÖ	Acronyms that end in 'ö' pronounced as letter
+ACRO_FRONT_POSS	
+ACRO_BACK_POSS	
+ACRO_BACK_POSS_AN	
+ACRO_BACK_POSS_EN	
+ACRO_FRONT_POSS_EN	
+ACRO_FRONT_POSS_ÄN	
+ACRO_BACK_CLIT	
+ACRO_FRONT_CLIT	
+ACRO_BACK_CLIT_OPT	
+ACRO_FRONT_CLIT_OPT	
+ACRO_BACK_POSS_AN_OPT	
+ACRO_FRONT_POSS_ÄN_OPT	
+ACRO_BACK_POSS_EN_OPT	
+ACRO_FRONT_POSS_EN_OPT	
+ACRO_BACK_POSS_CLIT_OPT	
+ACRO_FRONT_POSS_CLIT_OPT	
+ACRO_BACK_POSS_EN_OBL	
+ACRO_FRONT_POSS_EN_OBL	
+ACRO_COMPOUND	
+A_BACK_SUPERLATIVE	The superlative derivation is formed by in suffix, which creates a new adjective baseform. This baseform is handled separately to avoid double superlatives.
+A_FRONT_SUPERLATIVE	
+A_BACK_COMPARATIVE	The comparative derivation is formed by mpi suffix, which creates a new adjective baseform. This adjective is handled separately to avoid double comparative forms.
+A_FRONT_COMPARATIVE	
+A_BACK_COMPARATIVE_STEMS	This inflectional part attached to adjective comparative stems to avoid circularity in comparative derivations
+A_FRONT_COMPARATIVE_STEMS	
+A_BACK_SUPERLATIVE_STEMS	This inflectional part is attached to adjective superlative stems to avoid circularity in superlative derivations
+A_FRONT_SUPERLATIVE_STEMS	
+A_BACK_NOMINATIVE	
+A_FRONT_NOMINATIVE	
+A_BACK_PLNOM_CLIT	
+A_FRONT_PLNOM_CLIT	
+A_BACK_WEAK_SINGULARS	
+A_FRONT_WEAK_SINGULARS	
+A_BACK_STRONG_SINGULARS	
+A_FRONT_STRONG_SINGULARS	
+A_BACK_WEAK_PLURALS	
+A_FRONT_WEAK_PLURALS	
+A_FRONT_STRONG_PLURALS	
+A_BACK_STRONG_PLURALS	
+A_BACK_PARTITIVE_A	
+A_FRONT_PARTITIVE_Ä	
+A_BACK_PARTITIVE_A_AN	
+A_FRONT_PARTITIVE_Ä_ÄN	
+A_BACK_PARTITIVE_TA	
+A_FRONT_PARTITIVE_TÄ	
+A_BACK_ILLATIVE_HAN	
+A_FRONT_ILLATIVE_HIN	
+A_BACK_ILLATIVE_HUN	
+A_FRONT_ILLATIVE_HYN	
+A_FRONT_ILLATIVE_HÄN	
+A_BACK_ILLATIVE_SEEN	
+A_FRONT_ILLATIVE_SEEN	
+A_BACK_ILLATIVE_AN	
+A_BACK_ILLATIVE_EN	
+A_FRONT_ILLATIVE_EN	
+A_BACK_ILLATIVE_IN	
+A_FRONT_ILLATIVE_IN	
+A_BACK_ILLATIVE_ON	
+A_BACK_ILLATIVE_UN	
+A_FRONT_ILLATIVE_YN	
+A_FRONT_ILLATIVE_ÄN	
+A_FRONT_ILLATIVE_ÖN	
+A_BACK_PARTITIVE_IA	
+A_FRONT_PARTITIVE_IÄ	
+A_BACK_PARTITIVE_ITA	
+A_FRONT_PARTITIVE_ITÄ	
+A_BACK_PARTITIVE_JA	
+A_FRONT_PARTITIVE_JÄ	
+A_BACK_GENITIVE_IDEN	
+A_FRONT_GENITIVE_IDEN	
+A_BACK_GENITIVE_IEN	
+A_FRONT_GENITIVE_IEN	
+A_BACK_GENITIVE_ITTEN	
+A_FRONT_GENITIVE_ITTEN	
+A_BACK_GENITIVE_JEN	
+A_FRONT_GENITIVE_JEN	
+A_BACK_GENITIVE_TEN	
+A_FRONT_GENITIVE_TEN	
+A_BACK_GENITIVE_IN	
+A_FRONT_GENITIVE_IN	
+A_BACK_ILLATIVE_IHIN	
+A_FRONT_ILLATIVE_IHIN	
+A_BACK_ILLATIVE_IIN	
+A_FRONT_ILLATIVE_IIN	
+A_BACK_ILLATIVE_ISIIN	
+A_FRONT_ILLATIVE_ISIIN	
+A_FRONT_POSS	
+A_BACK_POSS	
+A_BACK_POSS_AN	
+A_BACK_POSS_EN	
+A_FRONT_POSS_EN	
+A_FRONT_POSS_ÄN	
+A_BACK_CLIT	
+A_FRONT_CLIT	
+A_BACK_CLIT_OPT	
+A_FRONT_CLIT_OPT	
+A_BACK_SINGULARS	
+A_FRONT_SINGULARS	
+A_BACK_PLURALS	
+A_FRONT_PLURALS	
+A_BACK_POSS_AN_CLIT_OPT	
+A_FRONT_POSS_ÄN_CLIT_OPT	
+A_BACK_POSS_EN_CLIT_OPT	
+A_FRONT_POSS_EN_CLIT_OPT	
+A_BACK_POSS_CLIT_OPT	
+A_FRONT_POSS_CLIT_OPT	
+A_BACK_POSS_EN_OBL	
+A_FRONT_POSS_EN_OBL	
+DIGITS	Digit strings inflect with colons, lot like abbreviations.
+DIGITS_YKSI	The digit strings ending in digit 1 pronounced as number
+DIGITS_KAKSI	The digit strings ending in digit 2 pronounced as number
+DIGITS_KOLME	The digit strings ending in digit 3 pronounced as number
+DIGITS_NELJÄ	The digit strings ending in digit 4 pronounced as number
+DIGITS_VIISI	The digit strings ending in digit 5 pronounced as number
+DIGITS_KUUSI	The digit strings ending in digit 6 pronounced as number
+DIGITS_SEITSEMÄN	The digit strings ending in digit 7 pronounced as number
+DIGITS_KAHDEKSAN	The digit strings ending in digit 8 pronounced as number
+DIGITS_YHDEKSÄN	The digit strings ending in digit 9 pronounced as number
+DIGITS_NOLLA	The digit strings ending in digit 0 pronounced as number
+DIGITS_KYMMENEN	The digit string ending in 0 pronounced as tens
+DIGITS_SATA	The digit string ending in 00 pronounced as hundreds
+DIGITS_TUHAT	The digit string ending in 000 pronounced as thousands
+DIGITS_MILJOONA	The digit string ending in 0's pronounced as millions
+DIGITS_MILJARDI	The digit string ending in 0's pronounced as milliards
+DIGITS_ENSIMMÄINEN	The digit string ending in 1. pronounced as first
+DIGITS_TOINEN	The digit string ending in 2. pronounced as second
+DIGITS_KOLMAS	The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
+DIGITS_NELJÄS	The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
+DIGITS_ROMANS_TOINEN	The roman digit string ending in II, III, VI, VIII, C, L or M
+DIGITS_ROMANS_ENSIMMÄINEN	The roman digit string ending in I, IV, V, VII, IX, X or 
+DIGITS_FRONT_POSS	
+DIGITS_BACK_POSS	
+DIGITS_BACK_POSS_AN	
+DIGITS_BACK_POSS_EN	
+DIGITS_FRONT_POSS_EN	
+DIGITS_FRONT_POSS_ÄN	
+DIGITS_BACK_CLIT	
+DIGITS_FRONT_CLIT	
+DIGITS_BACK_CLIT_OPT	
+DIGITS_FRONT_CLIT_OPT	
+DIGITS_BACK_POSS_AN_OPT	
+DIGITS_FRONT_POSS_ÄN_OPT	
+DIGITS_BACK_POSS_EN_OPT	
+DIGITS_FRONT_POSS_EN_OPT	
+DIGITS_BACK_POSS_OPT	
+DIGITS_FRONT_POSS_OPT	
+DIGITS_BACK_POSS_AN_OBL	
+DIGITS_BACK_POSS_EN_OBL	
+DIGITS_FRONT_POSS_EN_OBL	
+DIGITS_FRONT_POSS_ÄN_OBL	
+DIGITS_COMPOUND	
+N_BACK_NOMINATIVE	
+N_FRONT_NOMINATIVE	
+N_BACK_PLNOM_CLIT	The plural nominative attaches to singular stem. For plural words it is also the form that is used for dictionary lookups
+N_FRONT_PLNOM_CLIT	
+N_BACK_WEAK_SINGULARS	
+N_FRONT_WEAK_SINGULARS	
+N_BACK_STRONG_SINGULARS	
+N_FRONT_STRONG_SINGULARS	
+N_BACK_WEAK_PLURALS	
+N_FRONT_WEAK_PLURALS	
+N_BACK_STRONG_PLURALS	
+N_FRONT_STRONG_PLURALS	
+N_BACK_PARTITIVE_A	
+N_FRONT_PARTITIVE_Ä	
+N_BACK_PARTITIVE_A_AN	
+N_FRONT_PARTITIVE_Ä_ÄN	
+N_BACK_PARTITIVE_TA	
+N_FRONT_PARTITIVE_TÄ	
+N_BACK_ILLATIVE_HAN	
+N_BACK_ILLATIVE_HEN	
+N_FRONT_ILLATIVE_HEN	
+N_BACK_ILLATIVE_HIN	
+N_FRONT_ILLATIVE_HIN	
+N_BACK_ILLATIVE_HON	
+N_BACK_ILLATIVE_HUN	
+N_FRONT_ILLATIVE_HYN	
+N_FRONT_ILLATIVE_HÄN	
+N_FRONT_ILLATIVE_HÖN	
+N_BACK_ILLATIVE_AN	
+N_BACK_ILLATIVE_EN	
+N_FRONT_ILLATIVE_EN	
+N_BACK_ILLATIVE_IN	
+N_FRONT_ILLATIVE_IN	
+N_BACK_ILLATIVE_ON	
+N_BACK_ILLATIVE_UN	
+N_FRONT_ILLATIVE_YN	
+N_FRONT_ILLATIVE_ÄN	
+N_FRONT_ILLATIVE_ÖN	
+N_BACK_ILLATIVE_SEEN	
+N_FRONT_ILLATIVE_SEEN	
+N_BACK_GENITIVE_IDEN	
+N_FRONT_GENITIVE_IDEN	
+N_BACK_GENITIVE_ITTEN	
+N_FRONT_GENITIVE_ITTEN	
+N_BACK_GENITIVE_IEN	
+N_FRONT_GENITIVE_IEN	
+N_BACK_GENITIVE_JEN	
+N_FRONT_GENITIVE_JEN	
+N_BACK_GENITIVE_TEN	
+N_FRONT_GENITIVE_TEN	
+N_BACK_GENITIVE_IN	
+N_FRONT_GENITIVE_IN	
+N_BACK_PARTITIVE_IA	
+N_FRONT_PARTITIVE_IÄ	
+N_BACK_PARTITIVE_ITA	
+N_FRONT_PARTITIVE_ITÄ	
+N_BACK_PARTITIVE_JA	
+N_FRONT_PARTITIVE_JÄ	
+N_BACK_ILLATIVE_IHIN	
+N_FRONT_ILLATIVE_IHIN	
+N_BACK_ILLATIVE_IIN	
+N_FRONT_ILLATIVE_IIN	
+N_BACK_ILLATIVE_ISIIN	
+N_FRONT_ILLATIVE_ISIIN	
+N_BACK_POSS	
+N_FRONT_POSS	
+N_BACK_POSS_AN	
+N_BACK_POSS_EN	
+N_FRONT_POSS_EN	
+N_FRONT_POSS_ÄN	
+N_BACK_CLIT	
+N_FRONT_CLIT	
+N_BACK_CLIT_OPT	
+N_FRONT_CLIT_OPT	
+N_BACK_SINGULARS	
+N_FRONT_SINGULARS	
+N_FRONT_PLURALS	
+N_BACK_PLURALS	
+N_BACK_POSS_AN_OPT	
+N_FRONT_POSS_ÄN_OPT	
+N_BACK_POSS_EN_OPT	
+N_FRONT_POSS_EN_OPT	
+N_BACK_POSS_OPT	
+N_FRONT_POSS_OPT	
+N_BACK_POSS_EN_OBL	
+N_FRONT_POSS_EN_OBL	
+N_COMPOUND_0	
+N_COMPOUND_N	
+N_COMPOUND_IEN	
+N_COMPOUND_IDEN	
+N_COMPOUND_IN	
+N_COMPOUND_ITTEN	
+N_COMPOUND_JEN	
+N_COMPOUND_TEN	
+N_COMPOUND_S	
+N_COMPOUND	
+NUM_BACK_NOMINATIVE	
+NUM_FRONT_NOMINATIVE	
+NUM_BACK_PLNOM_CLIT	
+NUM_FRONT_PLNOM_CLIT	
+NUM_BACK_WEAK_SINGULARS	
+NUM_FRONT_WEAK_SINGULARS	
+NUM_BACK_STRONG_SINGULARS	
+NUM_FRONT_STRONG_SINGULARS	
+NUM_BACK_WEAK_PLURALS	
+NUM_FRONT_WEAK_PLURALS	
+NUM_FRONT_STRONG_PLURALS	
+NUM_BACK_STRONG_PLURALS	
+NUM_BACK_PARTITIVE_A	
+NUM_FRONT_PARTITIVE_Ä	
+NUM_BACK_PARTITIVE_A_AN	
+NUM_BACK_PARTITIVE_TA	
+NUM_FRONT_PARTITIVE_TÄ	
+NUM_BACK_ILLATIVE_AN	
+NUM_BACK_ILLATIVE_EN	
+NUM_FRONT_ILLATIVE_EN	
+NUM_BACK_ILLATIVE_IN	
+NUM_FRONT_ILLATIVE_ÄN	
+NUM_BACK_PARTITIVE_IA	
+NUM_FRONT_PARTITIVE_IÄ	
+NUM_BACK_PARTITIVE_JA	
+NUM_BACK_GENITIVE_IEN	
+NUM_FRONT_GENITIVE_IEN	
+NUM_BACK_GENITIVE_JEN	
+NUM_BACK_GENITIVE_TEN	
+NUM_FRONT_GENITIVE_TEN	
+NUM_BACK_GENITIVE_IN	
+NUM_FRONT_GENITIVE_IN	
+NUM_BACK_ILLATIVE_IHIN	
+NUM_BACK_ILLATIVE_IIN	
+NUM_FRONT_ILLATIVE_IIN	
+NUM_BACK_POSS	
+NUM_FRONT_POSS	
+NUM_BACK_POSS_AN	
+NUM_BACK_POSS_EN	
+NUM_FRONT_POSS_EN	
+NUM_FRONT_POSS_ÄN	
+NUM_BACK_CLIT	
+NUM_FRONT_CLIT	
+NUM_BACK_CLIT_OPT	
+NUM_FRONT_CLIT_OPT	
+NUM_BACK_SINGULARS	
+NUM_FRONT_SINGULARS	
+NUM_FRONT_PLURALS	
+NUM_BACK_PLURALS	
+NUM_BACK_POSS_AN_OPT	
+NUM_FRONT_POSS_ÄN_OPT	
+NUM_BACK_POSS_EN_OPT	
+NUM_FRONT_POSS_EN_OPT	
+NUM_BACK_POSS_OPT	
+NUM_FRONT_POSS_OPT	
+NUM_BACK_POSS_EN_OBL	
+NUM_FRONT_POSS_EN_OBL	
+NUM_COMPOUND	
+PRON_FRONT_POSS	
+PRON_BACK_POSS	
+PRON_BACK_POSS_AN	
+PRON_BACK_POSS_EN	
+PRON_FRONT_POSS_EN	
+PRON_FRONT_POSS_ÄN	
+PRON_BACK_CLIT	
+PRON_FRONT_CLIT	
+PRON_BACK_CLIT_OPT	
+PRON_FRONT_CLIT_OPT	
+PRON_BACK_POSS_OPT	
+PRON_FRONT_POSS_OPT	
+PRON_BACK_POSS_AN_OPT	
+PRON_BACK_POSS_EN_OPT	
+PRON_FRONT_POSS_EN_OPT	
+PRON_FRONT_POSS_ÄN_OPT	
+V_BACK_WEAK_PRESENT	
+V_FRONT_WEAK_PRESENT	
+V_BACK_STRONG_PRESENT	
+V_FRONT_STRONG_PRESENT	
+V_BACK_3SG_A	
+V_BACK_3SG_E	
+V_FRONT_3SG_E	
+V_BACK_3SG_I	
+V_FRONT_3SG_I	
+V_BACK_3SG_O	
+V_BACK_3SG_U	
+V_FRONT_3SG_Y	
+V_FRONT_3SG_Ö	
+V_FRONT_3SG_Ä	
+V_BACK_WEAK_PAST	
+V_FRONT_WEAK_PAST	
+V_BACK_STRONG_PAST	
+V_FRONT_STRONG_PAST	
+V_BACK_IMPERATIVE	
+V_FRONT_IMPERATIVE	
+V_BACK_CONDITIONAL	
+V_FRONT_CONDITIONAL	
+V_BACK_POTENTIAL_N	
+V_FRONT_POTENTIAL_N	
+V_BACK_POTENTIAL_S	
+V_FRONT_POTENTIAL_S	
+V_BACK_POTENTIAL_L	
+V_FRONT_POTENTIAL_L	
+V_BACK_POTENTIAL_R	
+V_FRONT_POTENTIAL_R	
+V_BACK_PASSIVE	
+V_FRONT_PASSIVE	
+V_BACK_PASSIVE_T	
+V_FRONT_PASSIVE_T	
+V_BACK_PASSIVE_D	
+V_FRONT_PASSIVE_D	
+V_BACK_PASSIVE_L	
+V_FRONT_PASSIVE_L	
+V_BACK_PASSIVE_R	
+V_FRONT_PASSIVE_R	
+V_BACK_PASSIVE_N	
+V_FRONT_PASSIVE_N	
+V_BACK_AINF	
+V_FRONT_AINF	
+V_BACK_EINF	
+V_FRONT_EINF	
+V_BACK_TUPCP_STRONG	
+V_FRONT_TUPCP_STRONG	
+V_BACK_TUPCP_0	
+V_FRONT_TUPCP_0	
+V_BACK_TUPCP_D	
+V_FRONT_TUPCP_D	
+V_BACK_TUPCP_L	
+V_FRONT_TUPCP_L	
+V_BACK_TUPCP_N	
+V_FRONT_TUPCP_N	
+V_BACK_TUPCP_R	
+V_FRONT_TUPCP_R	
+V_FRONT_POSS	
+V_BACK_POSS	
+V_BACK_POSS_AN	
+V_BACK_POSS_EN	
+V_FRONT_POSS_EN	
+V_FRONT_POSS_AN	
+V_BACK_CLIT	
+V_FRONT_CLIT	
+V_BACK_CLIT_OPT	
+V_FRONT_CLIT_OPT	
+V_BACK_POSS_EN_OBL	
+V_FRONT_POSS_EN_OBL	
+V_BACK_POSS_AN_OBL	
+V_BACK_POSS_OPT	
+V_BACK_POSS_AN_OPT	
+V_FRONT_POSS_AN_OBL	
+V_FRONT_POSS_OPT	
+V_FRONT_POSS_AN_OPT	
+V_BACK_DERIV_MINEN	
+V_FRONT_DERIV_MINEN	
+V_BACK_DERIV_PCPS	
+V_FRONT_DERIV_PCPS	

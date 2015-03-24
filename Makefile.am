@@ -9,17 +9,22 @@ SUBDIRS = src doc test man
 pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
 
-bindist: bindist-xz bindist-gzip
-
-bindist-xz: bindist-dir
-	tar Jcvf omorfi-$(VERSION)-automata.tar.xz omorfi-transducers-$(VERSION)
-
-bindist-gzip: bindist-dir
-	tar zcvf omorfi-$(VERSION)-automata.tar.gz omorfi-transducers-$(VERSION)
-
 bindist-dir: all
-	mkdir -p omorfi-automata-$(VERSION)
-	cp README README.bindist omorfi-automata-$(VERSION)
-	mkdir -p omorfi-automata-$(VERSION)/doc
-	cp doc/*.rst omorfi-automata-$(VERSION)/doc/
-	cp src/morphology.* src/hyphenation.* src/generation.* src/suggestion.* src/dictionary.* omorfi-automata-$(VERSION)
+	if ! test -d $(PACKAGE)-binaries-$(VERSION) ; then \
+		$(MKDIR_P) omorfi-binaries-$(VERSION) ;\
+	fi
+	cp README README.bindist omorfi-binaries-$(VERSION)
+	cp src/*.hfst omorfi-binaries-$(VERSION)
+
+ftb3-distdir: all
+	if ! test -d $(PACKAGE)-ftb3-$(VERSION) ; then \
+		$(MKDIR_P) $(PACKAGE)-ftb3-$(VERSION)  \
+	fi
+	cp -v src/omorfi-ftb3* $(PACKAGE)-ftb3-$(VERSION)/
+	cp -vR src/scripts $(PACKAGE)-ftb3-$(VERSION)/
+
+$(PACKAGE)-binaries-$(VERSION).tar.xz: bindist-dir
+	tar Jcvf $@ $(PACKAGE)-binaries-$(VERSION)
+
+$(PACKAGE)-ftb3-$(VERSION).tar.xz: ftb3-distdir
+	tar Jcvf $@ $(PACKAGE)_ftb3-$(VERSION)

@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20141014], [https://code.google.com/p/omorfi/issues/list], [http://code.google.com/p/omorfi/])
+AC_INIT([omorfi], [2015_alpha], [https://code.google.com/p/omorfi/issues/list], [http://code.google.com/p/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20141014
+VERSION=2015_alpha
 
 # Options
 AC_ARG_WITH([hfst],
@@ -15,72 +15,7 @@ AC_ARG_WITH([hfst],
             [define HFST binary path if not in PATH @<:@default=PATH@:>@])],
             [],
             [with_hfst=yes])
-AS_IF([test "x$with_hfst" = "xno"], 
-      [AC_MSG_ERROR([--without-hfst not supported!])])
-
-AC_SUBST([UPPERCASING], [$enable_uppercasing])
-AC_ARG_ENABLE([uppercasing],
-              [AS_HELP_STRING([--enable-uppercasing=STYLE],
-                              [uppercase surface strings with STYLE @<:@default=any@:>@])],
-              [enable_uppercasing=$enableval],
-              [enable_uppercasing=any])
-AC_SUBST([UPPERCASING], [$enable_uppercasing])
-AC_ARG_ENABLE([tokenweights],
-              [AS_HELP_STRING([--enable-tokenweights=WEIGHTS],
-                              [use word form frequencies from WEIGHTS @<:@default=no@:>@])],
-              [enable_tokenweights=$enableval],
-              [enable_tokenweights=no])
-AM_CONDITIONAL([WANT_TOKENWEIGHTS], [test "x$enable_tokenweights" != xno])
-AC_ARG_ENABLE([tagweights],
-              [AS_HELP_STRING([--enable-tagweights=WEIGHTS],
-                              [use tag likelihoods from WEIGTS @<:@default=no@:>@])],
-                              [enable_tagweights=$enableval],
-                              [enable_tagweights=no])
-AM_CONDITIONAL([WANT_TAGWEIGHTS], [test "x$enable_tagweights" != xno])
-AC_SUBST([TOKENWEIGHTS], [$enable_tokenweights])
-AC_SUBST([TAGWEIGHTS], [$enable_tagweights])
-AC_ARG_ENABLE([error_model],
-              [AS_HELP_STRING([--enable-error-model=ERROR],
-                              [create suggestion transducer from ERROR model @<:@default=edit-distance-2@:>@])],
-                              [enable_error_model=$enableval],
-                              [enable_error_model=edit-distance-2])
-AC_SUBST([ERROR_MODEL], [$enable_error_model])
-AC_ARG_ENABLE([filter],
-              [AS_HELP_STRING([--enable-filter=FILTER],
-                              [filter morphology with FILTER rule @<:@default=no@:>@])],
-                              [enable_filter=$enableval],
-                              [enable_filter=no])
-AC_SUBST([FILTER], [$enable_filter])
-AM_CONDITIONAL([WANT_FILTERS], [test "x$enable_filter" != xno])
-AC_ARG_ENABLE([doc],
-              [AS_HELP_STRING([--enable-doc],
-                              [enable building of documentation using docutils @<:@default=yes@<:@])],
-              [enable_doc=$enableval],
-              [enable_doc=yes])
-AC_ARG_ENABLE([morphology],
-              [AS_HELP_STRING([--enable-morphology],
-                              [compile morphological analyser @<:@default=yes@:>@])],
-                              [enable_morphology=$enableval],
-                              [enable_morphology=yes])
-AM_CONDITIONAL([WANT_MORPHOLOGY], [test "x$enable_morphology" != xno])
-AC_ARG_ENABLE([generation],
-              [AS_HELP_STRING([--enable-generation],
-                              [compile morphological generation @<:@default=yes@:>@])],
-                              [enable_generation=$enableval],
-                              [enable_generation=yes])
-AM_CONDITIONAL([WANT_GENERATION], [test "x$enable_generation" != xno])
-AC_ARG_ENABLE([dictionary],
-              [AS_HELP_STRING([--enable-dictionary],
-                              [compile dicitonaries @<:@default=yes@:>@])],
-                              [enable_dictionary=$enableval],
-                              [enable_dictionary=yes])
-AM_CONDITIONAL([WANT_DICTIONARY], [test "x$enable_dictionary" != xno])
-AC_ARG_ENABLE([hyphenation],
-              [AS_HELP_STRING([--enable-hyphenation],
-                              [compile hyphenators @<:@default=no@:>@])],
-                              [enable_hyphenation=$enableval],
-                              [enable_hyphenation=no])
-AM_CONDITIONAL([WANT_HYPHENATION], [test "x$enable_hyphenation" != xno])
+AM_CONDITIONAL([WANT_HFST], [test "x$with_hfst" != "xno"])
 AC_ARG_ENABLE([voikko],
               [AS_HELP_STRING([--enable-voikko],
                               [compile voikko support @<:@default=yes@:>@])],
@@ -89,15 +24,25 @@ AC_ARG_ENABLE([voikko],
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
 # generic tagset switch to override (for lexc serialisation)
-AC_ARG_ENABLE([tagset],
-              [AS_HELP_STRING([--enable-tagset],
-                              [tagset to use @<:@default=ftb3@:>@])],
-                             [tag_format=$enableval],
-                             [tag_format=ftb3])
-AM_CONDITIONAL([WANT_FTB3], [test "x$tag_format" = xftb3])
-AM_CONDITIONAL([WANT_TAGGER_HACKS], [test "$tag_format" != ${tag_format/+taggerhacks/}])
-AC_SUBST([TAG_FORMAT_PRECISE], [$tag_format])
-AC_SUBST([TAG_FORMAT], [${tag_format%%[[+-]]*}])
+AC_ARG_ENABLE([ftb3],
+              [AS_HELP_STRING([--enable-ftb3],
+                              [generate ftb3 automata @<:@default=enable@:>@])],
+                             [enable_ftb3=$enableval],
+                             [enable_ftb3=yes])
+AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
+AC_ARG_ENABLE([omor],
+              [AS_HELP_STRING([--enable-omor],
+                              [generate omor automata @<:@default=enable@:>@])],
+                             [enable_omor=$enableval],
+                             [enable_omor=yes])
+AM_CONDITIONAL([WANT_OMOR], [test "x$enable_omor" = xyes])
+AC_ARG_ENABLE([apertium],
+              [AS_HELP_STRING([--enable-apertium],
+                              [generate apertium automata @<:@default=enable@:>@])],
+                             [enable_apertium=$enableval],
+                             [enable_apertium=yes])
+AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" = xyes])
+
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
             [with_pbs_mail=$withval],
@@ -121,6 +66,7 @@ AC_MSG_RESULT([40 seconds to mars])
 
 # Checks for programs
 AC_PROG_LN_S
+AC_PATH_PROG([TIME], [time], [false])
 AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HLEXC], [hfst-lexc], [no])
        AS_IF([test "x$HLEXC" = "xno"],
@@ -188,8 +134,8 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([ADT], [apertium-destxt], [cat])
        AS_IF([test x$ADT = xcat],
           [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
-    [
-    AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
+    [AS_IF([test x$with_hfst != xno], 
+           [AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
     AC_SUBST([HLEXC], $with_hfst/hfst-lexc)
     AC_SUBST([HTWOLC], $with_hfst/hfst-twolc)
     AC_SUBST([HIC], $with_hfst/hfst-compose-intersect)
@@ -211,7 +157,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HUN], $with_hfst/hfst-disjunct)
     AC_SUBST([HS2F], $with_hfst/hfst-strings2fst)
     AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
-    AC_SUBST([HREW], $with_hfst/hfst-reweight)
+    AC_SUBST([HREW], $with_hfst/hfst-reweight)])
 ])
 
 AS_IF([test "x$enable_voikko" = "xyes"], 
@@ -223,14 +169,9 @@ AC_PATH_PROG([THEREARENOEASTEREGGS], [cowsay], [echo])
 # require python for stuff
 AM_PATH_PYTHON([3.2],, [:])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
-# test RST scripts without python since python tests do not work in all platforms
-AC_PATH_PROG([RST], [rst], [false])
-AC_PATH_PROGS([RST2HTML], [rst2html.py rst2html], [false])
-AC_PATH_PROGS([RST2PDF], [rst2pdf.py rst2pdf], [false])
-AC_PATH_PROGS([RST2TEX], [rst2tex.py rst2tex], [false])
+AC_PATH_PROG([DOXYGEN], [doxygen], [false])
+AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
-AM_CONDITIONAL([CAN_RST], [test "x$RST" != xfalse -o \( "x$RST2HTML" != xfalse -a "x$RST2PDF" != xfalse \) ])
-AM_CONDITIONAL([WANT_DOC], [test "x$enable_doc" != xfalse])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
 
 # separated my scripts for corpora fetching, some preprocessing
@@ -255,35 +196,39 @@ AC_PATH_PROG([SBATCH], [sbatch], [false])
 # Checks for typedefs, structures and compiler characteristics
 # Checks for library functions
 
-AC_CONFIG_FILES([Makefile src/Makefile src/index.xml
-                 src/morphology/Makefile src/lexical/Makefile 
-                 src/hyphenation/Makefile src/orthography/Makefile
-                 src/phonology/Makefile src/spell-checking/Makefile
-                 src/probabilistics/Makefile src/taghacks/Makefile
+AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
-                 src/scripts/Makefile omorfi.pc man/Makefile])
-AC_CONFIG_FILES([src/scripts/omorfi-analyse.sh],
-                [chmod +x src/scripts/omorfi-analyse.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-generate.sh],
-                [chmod +x src/scripts/omorfi-generate.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-hyphenate.sh],
-                [chmod +x src/scripts/omorfi-hyphenate.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-spell.sh],
-                [chmod +x src/scripts/omorfi-spell.sh])
-AC_CONFIG_FILES([src/scripts/omorfi-interactive.sh],
-                [chmod +x src/scripts/omorfi-interactive.sh])
-AC_CONFIG_FILES([test/europarl-coverage.sh],
-                [chmod +x test/europarl-coverage.sh])
-AC_CONFIG_FILES([test/fiwiki-coverage.sh],
-                [chmod +x test/fiwiki-coverage.sh])
-AC_CONFIG_FILES([test/gutenberg-coverage.sh],
-                [chmod +x test/gutenberg-coverage.sh])
-AC_CONFIG_FILES([test/jrc-acquis-coverage.sh],
-                [chmod +x test/jrc-acquis-coverage.sh])
-AC_CONFIG_FILES([test/ftb31-coverage.sh],
-                [chmod +x test/ftb31-coverage.sh])
+                 omorfi.pc man/Makefile])
+AC_CONFIG_FILES([src/bash/omorfi-analyse-text.sh],
+                [chmod +x src/bash/omorfi-analyse-text.sh])
+AC_CONFIG_FILES([src/bash/omorfi-segment.sh],
+                [chmod +x src/bash/omorfi-segment.sh])
+AC_CONFIG_FILES([src/bash/omorfi-generate.sh],
+                [chmod +x src/bash/omorfi-generate.sh])
+AC_CONFIG_FILES([src/bash/omorfi-hyphenate.sh],
+                [chmod +x src/bash/omorfi-hyphenate.sh])
+AC_CONFIG_FILES([src/bash/omorfi-spell.sh],
+                [chmod +x src/bash/omorfi-spell.sh])
+AC_CONFIG_FILES([src/bash/omorfi-analyse-tokenised.sh],
+                [chmod +x src/bash/omorfi-analyse-tokenised.sh])
+AC_CONFIG_FILES([test/coverage-europarl.sh],
+                [chmod +x test/coverage-europarl.sh])
+AC_CONFIG_FILES([test/coverage-fiwiki.sh],
+                [chmod +x test/coverage-fiwiki.sh])
+AC_CONFIG_FILES([test/coverage-gutenberg.sh],
+                [chmod +x test/coverage-gutenberg.sh])
+AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
+                [chmod +x test/coverage-jrc-acquis.sh])
+AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
+                [chmod +x test/coverage-ftb-3.1.sh])
+AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
+                [chmod +x test/faithfulness-ftb-3.1.sh])
+AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
+                [chmod +x test/faithfulness-ftb-3.1-quick.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
+AC_CONFIG_FILES([test/coverages-all-quick.sh],
+                [chmod +x test/coverages-all-quick.sh])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 AS_IF([test x$with_slurm_mail != xno],
@@ -293,19 +238,16 @@ AC_OUTPUT
 
 cat <<EOF
 Configured $PACKAGE_STRING:
-    * Uppercasing ruleset: $enable_uppercasing
-    * Weighting method: $enable_tagweights + $enable_tokenweights
-    * Default error model: $enable_error_model
-    * Filter analyses: $enable_filter
-    * Create optimised lookup format: $enable_optimisations
-    * Morphological analyser: $enable_morphology
-    * Morphological generator: $enable_generation
-    * Dictionaries: $enable_dictionary
-    * Hyphenation: $enable_hyphenation
-    * Voikko support: $enable_voikko
-    * Tag format: $tag_format
+=======
+* Analysers: $with_hfst
+    * OMOR $enable_omor
+    * FTB3.1 $enable_ftb3
+    * apertium $enable_apertium
+* Voikko speller: $enable_voikko
+* 
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
     * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail
 EOF
+AS_IF([test x$TIME = xfalse], [AC_MSG_WARN([GNU time is missing, tests will fail])])
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
 $THEREARENOEASTEREGGS say make, make check and make install to proceed

@@ -1,0 +1,3434 @@
+new_para	lemma	stuff	gloss
+51	aavameri	aavameri|NOUN|Nsg|Xnom	wide open ocean 
+51	aavanmeren	aavameri|NOUN|Nsg|Xgen	
+51	aavoissamerissä	aavameri|NOUN|Npl|Xine	
+51	Iso-Britannia	Iso-Britannia|NOUN|PROPER|Nsg|Xnom	Great Britain 
+51	Ison-Britannian	Iso-Britannia|NOUN|PROPER|Nsg|Xgen	
+51	Isoissa-Britannioissa	Iso-Britannia|NOUN|PROPER|Npl|Xine	
+ABBR	eaa.	eaa.|N	
+ABBR	esim.	esim.|N	
+ABBR	esim	esim|N	
+ACRO	OY:hyn	OY|NOUN|Nsg|Xill	
+A	aakkostettu	aakkostettu|ADJECTIVE|Nsg|Xnom	
+A	aakkostettuja	aakkostettu|ADJECTIVE|Npl|Xpar	
+A	aakkostetut	aakkostettu|ADJECTIVE|Npl|Xnom	
+A	aakkostetumpi	aakkostettu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A	aakkostetumpina	aakkostettu|ADJECTIVE|Ccmp|Npl|Xess	
+A	aakkostetuin	aakkostettu|ADJECTIVE|Csup|Nsg|Xnom	
+A	aakkostetuimmat	aakkostettu|ADJECTIVE|Csup|Npl|Xnom	
+A_TUMMAHKO	tummahko	tummahko|ADJECTIVE|Nsg|Xnom	darkish 
+A_TUMMAHKO	tummahkona	tummahko|ADJECTIVE|Nsg|Xess	
+A_TUMMAHKO	tummahkossa	tummahko|ADJECTIVE|Nsg|Xine	
+A_TUMMAHKO	tummahkoina	tummahko|ADJECTIVE|Npl|Xess	
+A_TUMMAHKO	tummahkoissa	tummahko|ADJECTIVE|Npl|Xine	
+A_TUMMAHKO	tummahkoa	tummahko|ADJECTIVE|Nsg|Xpar	
+A_TUMMAHKO	tummahkota	tummahko|ADJECTIVE|Nsg|Xpar	
+A_TUMMAHKO	tummahkoon	tummahko|ADJECTIVE|Nsg|Xill	
+A_TUMMAHKO	tummahkohon	tummahko|ADJECTIVE|Nsg|Xill	
+A_TUMMAHKO	tummahkoseen	tummahko|ADJECTIVE|Nsg|Xill	
+A_TUMMAHKO	tummahkoja	tummahko|ADJECTIVE|Npl|Xpar	
+A_TUMMAHKO	tummahkoita	tummahko|ADJECTIVE|Npl|Xpar	
+A_TUMMAHKO	tummahkojen	tummahko|ADJECTIVE|Npl|Xgen	
+A_TUMMAHKO	tummahkoiden	tummahko|ADJECTIVE|Npl|Xgen	
+A_TUMMAHKO	tummahkoitten	tummahko|ADJECTIVE|Npl|Xgen	
+A_TUMMAHKO	tummahkoihin	tummahko|ADJECTIVE|Npl|Xill	
+A_TUMMAHKO	tummahkoisiin	tummahko|ADJECTIVE|Npl|Xill	
+A_TUMMAHKO	tummahkompi	tummahko|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_TUMMAHKO	tummahkoin	tummahko|ADJECTIVE|Csup|Nsg|Xnom	
+A_VALKAISTU	valkaistu	valkaistu|ADJECTIVE|Nsg|Xnom	bleached 
+A_VALKAISTU	valkaistua	valkaistu|ADJECTIVE|Nsg|Xpar	
+A_VALKAISTU	valkaistuun	valkaistu|ADJECTIVE|Nsg|Xill	
+A_VALKAISTU	valkaistuna	valkaistu|ADJECTIVE|Nsg|Xess	
+A_VALKAISTU	valkaistussa	valkaistu|ADJECTIVE|Nsg|Xine	
+A_VALKAISTU	valkaistuja	valkaistu|ADJECTIVE|Npl|Xpar	
+A_VALKAISTU	valkaistujen	valkaistu|ADJECTIVE|Npl|Xgen	
+A_VALKAISTU	valkaistuihin	valkaistu|ADJECTIVE|Npl|Xill	
+A_VALKAISTU	valkaistuina	valkaistu|ADJECTIVE|Npl|Xess	
+A_VALKAISTU	valkaistuissa	valkaistu|ADJECTIVE|Npl|Xine	
+A_VALKAISTU	valkaistumpi	valkaistu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VALKAISTU	valkaistuin	valkaistu|ADJECTIVE|Csup|Nsg|Xnom	
+A_HÄPÄISTY	häpäisty	häpäisty|ADJECTIVE|Nsg|Xnom	defiled 
+A_HÄPÄISTY	häpäistyä	häpäisty|ADJECTIVE|Nsg|Xpar	
+A_HÄPÄISTY	häpäistyyn	häpäisty|ADJECTIVE|Nsg|Xill	
+A_HÄPÄISTY	häpäistynä	häpäisty|ADJECTIVE|Nsg|Xess	
+A_HÄPÄISTY	häpäistyssä	häpäisty|ADJECTIVE|Nsg|Xine	
+A_HÄPÄISTY	häpäistyjä	häpäisty|ADJECTIVE|Npl|Xpar	
+A_HÄPÄISTY	häpäistyjen	häpäisty|ADJECTIVE|Npl|Xgen	
+A_HÄPÄISTY	häpäistyihin	häpäisty|ADJECTIVE|Npl|Xill	
+A_HÄPÄISTY	häpäistyinä	häpäisty|ADJECTIVE|Npl|Xess	
+A_HÄPÄISTY	häpäistyissä	häpäisty|ADJECTIVE|Npl|Xine	
+A_HÄPÄISTY	häpäistympi	häpäisty|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_HÄPÄISTY	häpäistyin	häpäisty|ADJECTIVE|Csup|Nsg|Xnom	
+A_HÖLÖ	hölö	hölö|ADJECTIVE|Nsg|Xnom	blabbermouth 
+A_HÖLÖ	hölöä	hölö|ADJECTIVE|Nsg|Xpar	
+A_HÖLÖ	hölöön	hölö|ADJECTIVE|Nsg|Xill	
+A_HÖLÖ	hölönä	hölö|ADJECTIVE|Nsg|Xess	
+A_HÖLÖ	hölössä	hölö|ADJECTIVE|Nsg|Xine	
+A_HÖLÖ	hölöjä	hölö|ADJECTIVE|Npl|Xpar	
+A_HÖLÖ	hölöjen	hölö|ADJECTIVE|Npl|Xgen	
+A_HÖLÖ	hölöihin	hölö|ADJECTIVE|Npl|Xill	
+A_HÖLÖ	hölöinä	hölö|ADJECTIVE|Npl|Xess	
+A_HÖLÖ	hölöissä	hölö|ADJECTIVE|Npl|Xine	
+A_HÖLÖ	hölömpi	hölö|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_HÖLÖ	hölöin	hölö|ADJECTIVE|Csup|Nsg|Xnom	
+A_TOOPE	toope	toope|ADJECTIVE|Nsg|Xnom	doofus 
+A_TOOPE	toopea	toope|ADJECTIVE|Nsg|Xpar	
+A_TOOPE	toopeen	toope|ADJECTIVE|Nsg|Xill	
+A_TOOPE	toopeja	toope|ADJECTIVE|Npl|Xpar	
+A_TOOPE	toopejen	toope|ADJECTIVE|Npl|Xgen	
+A_TOOPE	toopeihin	toope|ADJECTIVE|Npl|Xill	
+A_TOOPE	toopempi	toope|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_TOOPE	toopein	toope|ADJECTIVE|Csup|Nsg|Xnom	
+A_TOOPE	toopein	toope|ADJECTIVE|Npl|Xgen|Urare	
+A_BEIGE	beige	beige|ADJECTIVE|Nsg|Xnom	beige 
+A_BEIGE	beigeä	beige|ADJECTIVE|Nsg|Xpar	
+A_BEIGE	beigeen	beige|ADJECTIVE|Nsg|Xill	
+A_BEIGE	beigejä	beige|ADJECTIVE|Npl|Xpar	
+A_BEIGE	beigejen	beige|ADJECTIVE|Npl|Xgen	
+A_BEIGE	beigeihin	beige|ADJECTIVE|Npl|Xill	
+A_BEIGE	beigempi	beige|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_BEIGE	beigein	beige|ADJECTIVE|Csup|Nsg|Xnom	
+A_KOHELO	tohelo	tohelo|ADJECTIVE|Nsg|Xnom	clumsy 
+A_KOHELO	toheloita	tohelo|ADJECTIVE|Npl|Xpar	
+A_KOHELO	toheloja	tohelo|ADJECTIVE|Npl|Xpar	
+A_KOHELO	tohelojen	tohelo|ADJECTIVE|Npl|Xgen	
+A_KOHELO	toheloiden	tohelo|ADJECTIVE|Npl|Xgen	
+A_KOHELO	toheloitten	tohelo|ADJECTIVE|Npl|Xgen	
+A_KOHELO	tohelompi	tohelo|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_KOHELO	toheloin	tohelo|ADJECTIVE|Csup|Nsg|Xnom	
+A_LÖPERÖ	löperö	löperö|ADJECTIVE|Nsg|Xnom	sloppy 
+A_LÖPERÖ	löperöjen	löperö|ADJECTIVE|Npl|Xgen	
+A_LÖPERÖ	löperöiden	löperö|ADJECTIVE|Npl|Xgen	
+A_LÖPERÖ	löperöitten	löperö|ADJECTIVE|Npl|Xgen	
+A_LÖPERÖ	löperömpi	löperö|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_LÖPERÖ	löperöin	löperö|ADJECTIVE|Csup|Nsg|Xnom	
+A_AUTIO	autio	autio|ADJECTIVE|Nsg|Xnom	deserted 
+A_AUTIO	autiota	autio|ADJECTIVE|Nsg|Xpar	
+A_AUTIO	autioa	autio|ADJECTIVE|Nsg|Xpar	
+A_AUTIO	autioita	autio|ADJECTIVE|Npl|Xpar	
+A_AUTIO	autioiden	autio|ADJECTIVE|Npl|Xgen	
+A_AUTIO	autioitten	autio|ADJECTIVE|Npl|Xgen	
+A_AUTIO	autiompi	autio|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_AUTIO	autioin	autio|ADJECTIVE|Csup|Nsg|Xnom	
+A_RIIVIÖ	riiviö	riiviö|ADJECTIVE|Nsg|Xnom	nasty 
+A_RIIVIÖ	riiviötä	riiviö|ADJECTIVE|Nsg|Xpar	
+A_RIIVIÖ	riiviöiden	riiviö|ADJECTIVE|Npl|Xgen	
+A_RIIVIÖ	riiviöitten	riiviö|ADJECTIVE|Npl|Xgen	
+A_RIIVIÖ	riiviömpi	riiviö|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_RIIVIÖ	riiviöin	riiviö|ADJECTIVE|Csup|Nsg|Xnom	
+A_KOLKKO	kolkko	kolkko|ADJECTIVE|Nsg|Xnom	gloomy 
+A_KOLKKO	kolkossa	kolkko|ADJECTIVE|Nsg|Xine	
+A_KOLKKO	kolkoista	kolkko|ADJECTIVE|Npl|Xela	
+A_KOLKKO	kolkkoihin	kolkko|ADJECTIVE|Npl|Xill	
+A_KOLKKO	kolkompi	kolkko|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_KOLKKO	kolkoin	kolkko|ADJECTIVE|Csup|Nsg|Xnom	
+A_VIRKKU	virkku	virkku|ADJECTIVE|Nsg|Xnom	??? 
+A_VIRKKU	virkussa	virkku|ADJECTIVE|Nsg|Xine	
+A_VIRKKU	virkuista	virkku|ADJECTIVE|Npl|Xela	
+A_VIRKKU	virkkuihin	virkku|ADJECTIVE|Npl|Xill	
+A_VIRKKU	virkumpi	virkku|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VIRKKU	virkuin	virkku|ADJECTIVE|Csup|Nsg|Xnom	
+A_SÄIKKY	säikky	säikky|ADJECTIVE|Nsg|Xnom	??? 
+A_SÄIKKY	säikyssä	säikky|ADJECTIVE|Nsg|Xine	
+A_SÄIKKY	säikyistä	säikky|ADJECTIVE|Npl|Xela	
+A_SÄIKKY	säikkyihin	säikky|ADJECTIVE|Npl|Xill	
+A_SÄIKKY	säikympi	säikky|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_SÄIKKY	säikyin	säikky|ADJECTIVE|Csup|Nsg|Xnom	
+A_KÖKKÖ	kökkö	kökkö|ADJECTIVE|Nsg|Xnom	??? 
+A_KÖKKÖ	kökössä	kökkö|ADJECTIVE|Nsg|Xine	
+A_KÖKKÖ	kököistä	kökkö|ADJECTIVE|Npl|Xela	
+A_KÖKKÖ	kökköihin	kökkö|ADJECTIVE|Npl|Xill	
+A_KÖKKÖ	kökömpi	kökkö|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_KÖKKÖ	kököin	kökkö|ADJECTIVE|Csup|Nsg|Xnom	
+A_SUIPPO	suippo	suippo|ADJECTIVE|Nsg|Xnom	? 
+A_SUIPPO	suipossa	suippo|ADJECTIVE|Nsg|Xine	
+A_SUIPPO	suipoista	suippo|ADJECTIVE|Npl|Xela	
+A_SUIPPO	suippoihin	suippo|ADJECTIVE|Npl|Xill	
+A_SUIPPO	suipompi	suippo|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_SUIPPO	suipoin	suippo|ADJECTIVE|Csup|Nsg|Xnom	
+A_IKÄLOPPU	ikäloppu	ikäloppu|ADJECTIVE|Nsg|Xnom	age-old 
+A_IKÄLOPPU	ikälopussa	ikäloppu|ADJECTIVE|Nsg|Xine	
+A_IKÄLOPPU	ikälopuista	ikäloppu|ADJECTIVE|Npl|Xela	
+A_IKÄLOPPU	ikäloppuihin	ikäloppu|ADJECTIVE|Npl|Xill	
+A_IKÄLOPPU	ikälopumpi	ikäloppu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_IKÄLOPPU	ikälopuin	ikäloppu|ADJECTIVE|Csup|Nsg|Xnom	
+A_LÖRPPÖ	lörppö	lörppö|ADJECTIVE|Nsg|Xnom	blabbermouth 
+A_LÖRPPÖ	lörpössä	lörppö|ADJECTIVE|Nsg|Xine	
+A_LÖRPPÖ	lörpöistä	lörppö|ADJECTIVE|Npl|Xela	
+A_LÖRPPÖ	lörppöihin	lörppö|ADJECTIVE|Npl|Xill	
+A_LÖRPPÖ	lörpömpi	lörppö|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_LÖRPPÖ	lörpöin	lörppö|ADJECTIVE|Csup|Nsg|Xnom	
+A_VELTTO	veltto	veltto|ADJECTIVE|Nsg|Xnom	lazy 
+A_VELTTO	veltossa	veltto|ADJECTIVE|Nsg|Xine	
+A_VELTTO	veltoista	veltto|ADJECTIVE|Npl|Xela	
+A_VELTTO	velttoihin	veltto|ADJECTIVE|Npl|Xill	
+A_VELTTO	veltompi	veltto|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VELTTO	veltoin	veltto|ADJECTIVE|Csup|Nsg|Xnom	
+A_VIMMATTU	vimmattu	vimmattu|ADJECTIVE|Nsg|Xnom	wicked 
+A_VIMMATTU	vimmatussa	vimmattu|ADJECTIVE|Nsg|Xine	
+A_VIMMATTU	vimmatuista	vimmattu|ADJECTIVE|Npl|Xela	
+A_VIMMATTU	vimmattuihin	vimmattu|ADJECTIVE|Npl|Xill	
+A_VIMMATTU	vimmatumpi	vimmattu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VIMMATTU	vimmatuin	vimmattu|ADJECTIVE|Csup|Nsg|Xnom	
+A_YLENNETTY	ylennetty	ylennetty|ADJECTIVE|Nsg|Xnom	promoted 
+A_YLENNETTY	ylennetyssä	ylennetty|ADJECTIVE|Nsg|Xine	
+A_YLENNETTY	ylennetyistä	ylennetty|ADJECTIVE|Npl|Xela	
+A_YLENNETTY	ylennettyihin	ylennetty|ADJECTIVE|Npl|Xill	
+A_YLENNETTY	ylennetympi	ylennetty|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_YLENNETTY	ylennetyin	ylennetty|ADJECTIVE|Csup|Nsg|Xnom	
+A_KYYTTÖ	kyyttö	kyyttö|ADJECTIVE|Nsg|Xnom	????? 
+A_KYYTTÖ	kyytössä	kyyttö|ADJECTIVE|Nsg|Xine	
+A_KYYTTÖ	kyytöistä	kyyttö|ADJECTIVE|Npl|Xela	
+A_KYYTTÖ	kyyttöihin	kyyttö|ADJECTIVE|Npl|Xill	
+A_KYYTTÖ	kyytömpi	kyyttö|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_KYYTTÖ	kyytöin	kyyttö|ADJECTIVE|Csup|Nsg|Xnom	
+A_LAKO	lako	lako|ADJECTIVE|Nsg|Xnom	
+A_LAKO	laossa	lako|ADJECTIVE|Nsg|Xine	
+A_LAKO	la’ossa	lako|ADJECTIVE|Nsg|Xine	
+A_LAKO	laompi	lako|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_LAKO	laoin	lako|ADJECTIVE|Csup|Nsg|Xnom	
+A_KELPO	kelpo	kelpo|ADJECTIVE|Nsg|Xnom	proper 
+A_KELPO	kelvossa	kelpo|ADJECTIVE|Nsg|Xine	
+A_KELPO	kelpoina	kelpo|ADJECTIVE|Npl|Xess	
+A_KELPO	kelvoista	kelpo|ADJECTIVE|Npl|Xela	
+A_KELPO	kelvompi	kelpo|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_KELPO	kelvoin	kelpo|ADJECTIVE|Csup|Nsg|Xnom	
+A_MIETO	mieto	mieto|ADJECTIVE|Nsg|Xnom	mild 
+A_MIETO	miedossa	mieto|ADJECTIVE|Nsg|Xine	
+A_MIETO	mietoihin	mieto|ADJECTIVE|Npl|Xill	
+A_MIETO	miedoista	mieto|ADJECTIVE|Npl|Xela	
+A_MIETO	miedompi	mieto|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_MIETO	miedoin	mieto|ADJECTIVE|Csup|Nsg|Xnom	
+A_VIIPALOITU	viipaloitu	viipaloitu|ADJECTIVE|Nsg|Xnom	sliced 
+A_VIIPALOITU	viipaloidussa	viipaloitu|ADJECTIVE|Nsg|Xine	
+A_VIIPALOITU	viipaloituihin	viipaloitu|ADJECTIVE|Npl|Xill	
+A_VIIPALOITU	viipaloiduista	viipaloitu|ADJECTIVE|Npl|Xela	
+A_VIIPALOITU	viipaloidumpi	viipaloitu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VIIPALOITU	viipaloiduin	viipaloitu|ADJECTIVE|Csup|Nsg|Xnom	
+A_YKSILÖITY	yksilöity	yksilöity|ADJECTIVE|Nsg|Xnom	singled 
+A_YKSILÖITY	yksilöidyssä	yksilöity|ADJECTIVE|Nsg|Xine	
+A_YKSILÖITY	yksilöityihin	yksilöity|ADJECTIVE|Npl|Xill	
+A_YKSILÖITY	yksilöidyistä	yksilöity|ADJECTIVE|Npl|Xela	
+A_YKSILÖITY	yksilöidympi	yksilöity|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_YKSILÖITY	yksilöidyin	yksilöity|ADJECTIVE|Csup|Nsg|Xnom	
+A_LENKO	lenko	lenko|ADJECTIVE|Nsg|Xnom	crooked 
+A_LENKO	lengossa	lenko|ADJECTIVE|Nsg|Xine	
+A_LENKO	lengoista	lenko|ADJECTIVE|Npl|Xela	
+A_LENKO	lenkoihin	lenko|ADJECTIVE|Npl|Xill	
+A_LENKO	lengompi	lenko|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_LENKO	lengoin	lenko|ADJECTIVE|Csup|Nsg|Xnom	
+A_MELTO	melto	melto|ADJECTIVE|Nsg|Xnom	????? 
+A_MELTO	mellossa	melto|ADJECTIVE|Nsg|Xine	
+A_MELTO	meltoihin	melto|ADJECTIVE|Npl|Xill	
+A_MELTO	melloista	melto|ADJECTIVE|Npl|Xela	
+A_MELTO	mellompi	melto|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_MELTO	melloin	melto|ADJECTIVE|Csup|Nsg|Xnom	
+A_PARANNELTU	paranneltu	paranneltu|ADJECTIVE|Nsg|Xnom	embettered 
+A_PARANNELTU	parannellussa	paranneltu|ADJECTIVE|Nsg|Xine	
+A_PARANNELTU	paranneltuihin	paranneltu|ADJECTIVE|Npl|Xill	
+A_PARANNELTU	parannelluista	paranneltu|ADJECTIVE|Npl|Xela	
+A_PARANNELTU	parannellumpi	paranneltu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_PARANNELTU	parannelluin	paranneltu|ADJECTIVE|Csup|Nsg|Xnom	
+A_VÄHÄTELTY	vähätelty	vähätelty|ADJECTIVE|Nsg|Xnom	belittled 
+A_VÄHÄTELTY	vähätellyssä	vähätelty|ADJECTIVE|Nsg|Xine	
+A_VÄHÄTELTY	vähäteltyihin	vähätelty|ADJECTIVE|Npl|Xill	
+A_VÄHÄTELTY	vähätellyistä	vähätelty|ADJECTIVE|Npl|Xela	
+A_VÄHÄTELTY	vähätellympi	vähätelty|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VÄHÄTELTY	vähätellyin	vähätelty|ADJECTIVE|Csup|Nsg|Xnom	
+A_VENTO	vento	vento|ADJECTIVE|Nsg|Xnom	? 
+A_VENTO	vennossa	vento|ADJECTIVE|Nsg|Xine	
+A_VENTO	ventoihin	vento|ADJECTIVE|Npl|Xill	
+A_VENTO	vennoista	vento|ADJECTIVE|Npl|Xela	
+A_VENTO	vennompi	vento|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VENTO	vennoin	vento|ADJECTIVE|Csup|Nsg|Xnom	
+A_PANTU	pantu	pantu|ADJECTIVE|Nsg|Xnom	brewed 
+A_PANTU	pannussa	pantu|ADJECTIVE|Nsg|Xine	
+A_PANTU	pantuihin	pantu|ADJECTIVE|Npl|Xill	
+A_PANTU	pannuista	pantu|ADJECTIVE|Npl|Xela	
+A_PANTU	pannumpi	pantu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_PANTU	pannuin	pantu|ADJECTIVE|Csup|Nsg|Xnom	
+A_MENTY	menty	menty|ADJECTIVE|Nsg|Xnom	belittled 
+A_MENTY	mennyssä	menty|ADJECTIVE|Nsg|Xine	
+A_MENTY	mentyihin	menty|ADJECTIVE|Npl|Xill	
+A_MENTY	mennyistä	menty|ADJECTIVE|Npl|Xela	
+A_MENTY	mennympi	menty|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_MENTY	mennyin	menty|ADJECTIVE|Csup|Nsg|Xnom	
+A_MARTO	marto	marto|ADJECTIVE|Nsg|Xnom	??? 
+A_MARTO	marrossa	marto|ADJECTIVE|Nsg|Xine	
+A_MARTO	martoihin	marto|ADJECTIVE|Npl|Xill	
+A_MARTO	marroista	marto|ADJECTIVE|Npl|Xela	
+A_MARTO	marrompi	marto|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_MARTO	marroin	marto|ADJECTIVE|Csup|Nsg|Xnom	
+A_PURTU	purtu	purtu|ADJECTIVE|Nsg|Xnom	bitten 
+A_PURTU	purrussa	purtu|ADJECTIVE|Nsg|Xine	
+A_PURTU	purtuihin	purtu|ADJECTIVE|Npl|Xill	
+A_PURTU	purruista	purtu|ADJECTIVE|Npl|Xela	
+A_PURTU	purrumpi	purtu|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_PURTU	purruin	purtu|ADJECTIVE|Csup|Nsg|Xnom	
+A_PIERTY	pierty	pierty|ADJECTIVE|Nsg|Xnom	befarted 
+A_PIERTY	pierryssä	pierty|ADJECTIVE|Nsg|Xine	
+A_PIERTY	piertyihin	pierty|ADJECTIVE|Npl|Xill	
+A_PIERTY	pierryistä	pierty|ADJECTIVE|Npl|Xela	
+A_PIERTY	pierrympi	pierty|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_PIERTY	pierryin	pierty|ADJECTIVE|Csup|Nsg|Xnom	
+A_HUPAKKO	hupakko	hupakko|ADJECTIVE|Nsg|Xnom	silly girl 
+A_HUPAKKO	hupakoihin	hupakko|ADJECTIVE|Npl|Xill	
+A_HUPAKKO	hupakkoihin	hupakko|ADJECTIVE|Npl|Xill	
+A_HUPAKKO	hupakompi	hupakko|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_HUPAKKO	hupakoin	hupakko|ADJECTIVE|Csup|Nsg|Xnom	
+A_ABNORMI	abnormi	abnormi|ADJECTIVE|Nsg|Xnom	abnorm 
+A_ABNORMI	abnormeina	abnormi|ADJECTIVE|Npl|Xess	
+A_ABNORMI	abnormien	abnormi|ADJECTIVE|Npl|Xgen	
+A_ABNORMI	abnormimpi	abnormi|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_ABNORMI	abnormein	abnormi|ADJECTIVE|Csup|Nsg|Xnom	
+A_STYDI	stydi	stydi|ADJECTIVE|Nsg|Xnom	stiff 
+A_STYDI	stydeinä	stydi|ADJECTIVE|Npl|Xess	
+A_STYDI	stydien	stydi|ADJECTIVE|Npl|Xgen	
+A_STYDI	stydimpi	stydi|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_STYDI	stydein	stydi|ADJECTIVE|Csup|Nsg|Xnom	
+A_OPAAKKI	opaakki	opaakki|ADJECTIVE|Nsg|Xnom	opaque 
+A_OPAAKKI	opaakissa	opaakki|ADJECTIVE|Nsg|Xine	
+A_OPAAKKI	opaakkeina	opaakki|ADJECTIVE|Npl|Xess	
+A_OPAAKKI	opaakeista	opaakki|ADJECTIVE|Npl|Xela	
+A_OPAAKKI	opaakkien	opaakki|ADJECTIVE|Npl|Xgen	
+A_OPAAKKI	opaakimpi	opaakki|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_OPAAKKI	opaakein	opaakki|ADJECTIVE|Csup|Nsg|Xnom	
+A_PINKKI	pinkki	pinkki|ADJECTIVE|Nsg|Xnom	pink 
+A_PINKKI	pinkissä	pinkki|ADJECTIVE|Nsg|Xine	
+A_PINKKI	pinkkeinä	pinkki|ADJECTIVE|Npl|Xess	
+A_PINKKI	pinkeistä	pinkki|ADJECTIVE|Npl|Xela	
+A_PINKKI	pinkkien	pinkki|ADJECTIVE|Npl|Xgen	
+A_PINKKI	pinkimpi	pinkki|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_PINKKI	pinkein	pinkki|ADJECTIVE|Csup|Nsg|Xnom	
+A_SIPPI	sippi	sippi|ADJECTIVE|Nsg|Xnom	bust 
+A_SIPPI	sipissä	sippi|ADJECTIVE|Nsg|Xine	
+A_SIPPI	sippeinä	sippi|ADJECTIVE|Npl|Xess	
+A_SIPPI	sipeistä	sippi|ADJECTIVE|Npl|Xela	
+A_SIPPI	sippien	sippi|ADJECTIVE|Npl|Xgen	
+A_SIPPI	sipimpi	sippi|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_SIPPI	sipein	sippi|ADJECTIVE|Csup|Nsg|Xnom	
+A_HURTTI	hurtti	hurtti|ADJECTIVE|Nsg|Xnom	grunchy 
+A_HURTTI	hurtissa	hurtti|ADJECTIVE|Nsg|Xine	
+A_HURTTI	hurtteina	hurtti|ADJECTIVE|Npl|Xess	
+A_HURTTI	hurteista	hurtti|ADJECTIVE|Npl|Xela	
+A_HURTTI	hurttien	hurtti|ADJECTIVE|Npl|Xgen	
+A_HURTTI	hurtimpi	hurtti|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_HURTTI	hurtein	hurtti|ADJECTIVE|Csup|Nsg|Xnom	
+A_VÄÄRTTI	väärtti	väärtti|ADJECTIVE|Nsg|Xnom	worthy 
+A_VÄÄRTTI	väärtissä	väärtti|ADJECTIVE|Nsg|Xine	
+A_VÄÄRTTI	väärtteinä	väärtti|ADJECTIVE|Npl|Xess	
+A_VÄÄRTTI	väärteistä	väärtti|ADJECTIVE|Npl|Xela	
+A_VÄÄRTTI	väärttien	väärtti|ADJECTIVE|Npl|Xgen	
+A_VÄÄRTTI	väärtimpi	väärtti|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VÄÄRTTI	väärtein	väärtti|ADJECTIVE|Csup|Nsg|Xnom	
+A_TUHTI	tuhti	tuhti|ADJECTIVE|Nsg|Xnom	stocky 
+A_TUHTI	tuhdissa	tuhti|ADJECTIVE|Nsg|Xine	
+A_TUHTI	tuhteina	tuhti|ADJECTIVE|Npl|Xess	
+A_TUHTI	tuhdeista	tuhti|ADJECTIVE|Npl|Xela	
+A_TUHTI	tuhtien	tuhti|ADJECTIVE|Npl|Xgen	
+A_TUHTI	tuhdimpi	tuhti|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_TUHTI	tuhdein	tuhti|ADJECTIVE|Csup|Nsg|Xnom	
+A_REHTI	rehti	rehti|ADJECTIVE|Nsg|Xnom	
+A_REHTI	rehdissä	rehti|ADJECTIVE|Nsg|Xine	
+A_REHTI	rehteinä	rehti|ADJECTIVE|Npl|Xess	
+A_REHTI	rehdeistä	rehti|ADJECTIVE|Npl|Xela	
+A_REHTI	rehtien	rehti|ADJECTIVE|Npl|Xgen	
+A_REHTI	rehdimpi	rehti|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_REHTI	rehdein	rehti|ADJECTIVE|Csup|Nsg|Xnom	
+A_ABNORMAALI	abnormaali	abnormaali|ADJECTIVE|Nsg|Xnom	abnormal 
+A_ABNORMAALI	abnormaaleja	abnormaali|ADJECTIVE|Npl|Xpar	
+A_ABNORMAALI	abnormaaleiden	abnormaali|ADJECTIVE|Npl|Xgen	
+A_ABNORMAALI	abnormaalimpi	abnormaali|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_ABNORMAALI	abnormaalein	abnormaali|ADJECTIVE|Csup|Nsg|Xnom	
+A_ÖYKKÄRI	öykkäri	öykkäri|ADJECTIVE|Nsg|Xnom	chav 
+A_ÖYKKÄRI	öykkärejä	öykkäri|ADJECTIVE|Npl|Xpar	
+A_ÖYKKÄRI	öykkäreiden	öykkäri|ADJECTIVE|Npl|Xgen	
+A_ÖYKKÄRI	öykkärimpi	öykkäri|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_ÖYKKÄRI	öykkärein	öykkkäri|ADJECTIVE|Csup|Nsg|Xnom	
+A_AAVA	aava	aava|ADJECTIVE|Nsg|Xnom	open (of fields, plains) 
+A_AAVA	aavaa	aava|ADJECTIVE|Nsg|Xpar	
+A_AAVA	aavana	aava|ADJECTIVE|Nsg|Xess	
+A_AAVA	aavassa	aava|ADJECTIVE|Nsg|Xine	
+A_AAVA	aavoina	aava|ADJECTIVE|Npl|Xess	
+A_AAVA	aavojen	aava|ADJECTIVE|Npl|Xgen	
+A_AAVA	aavoihin	aava|ADJECTIVE|Npl|Xill	
+A_AAVA	aavempi	aava|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_AAVA	aavoin	aava|ADJECTIVE|Csup|Nsg|Xnom	
+A_TARKKA	tarkka	tarkka|ADJECTIVE|Nsg|Xnom	pedantic 
+A_TARKKA	tarkkaa	tarkka|ADJECTIVE|Nsg|Xpar	
+A_TARKKA	tarkkana	tarkka|ADJECTIVE|Nsg|Xess	
+A_TARKKA	tarkassa	tarkka|ADJECTIVE|Nsg|Xine	
+A_TARKKA	tarkkoina	tarkka|ADJECTIVE|Npl|Xess	
+A_TARKKA	tarkkojen	tarkka|ADJECTIVE|Npl|Xgen	
+A_TARKKA	tarkkoihin	tarkka|ADJECTIVE|Npl|Xill	
+A_TARKKA	tarkempi	tarkka|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_TARKKA	tarkoin	tarkka|Csup|Nsg|Xnom	
+A_MATTA	matta	matta|ADJECTIVE|Nsg|Xnom	matta 
+A_MATTA	mattaa	matta|ADJECTIVE|Nsg|Xpar	
+A_MATTA	mattana	matta|ADJECTIVE|Nsg|Xess	
+A_MATTA	matassa	matta|ADJECTIVE|Nsg|Xine	
+A_MATTA	mattoina	matta|ADJECTIVE|Npl|Xess	
+A_MATTA	mattojen	matta|ADJECTIVE|Npl|Xgen	
+A_MATTA	mattoihin	matta|ADJECTIVE|Npl|Xill	
+A_MATTA	matempi	matta|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_MATTA	matoin	matta|ADJECTIVE|Csup|Nsg|Xnom	
+A_HALPA	halpa	halpa|ADJECTIVE|Nsg|Xnom	cheap 
+A_HALPA	halpaa	halpa|ADJECTIVE|Nsg|Xpar	
+A_HALPA	halpana	halpa|ADJECTIVE|Nsg|Xess	
+A_HALPA	halvassa	halpa|ADJECTIVE|Nsg|Xine	
+A_HALPA	halpoina	halpa|ADJECTIVE|Npl|Xess	
+A_HALPA	halpojen	halpa|ADJECTIVE|Npl|Xgen	
+A_HALPA	halpoihin	halpa|ADJECTIVE|Npl|Xill	
+A_HALPA	halvempi	halpa|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_HALPA	halvoin	halpa|ADJECTIVE|Csup|Nsg|Xnom	
+A_EHTA	ehta	ehta|ADJECTIVE|Nsg|Xnom	legit 
+A_EHTA	ehtaa	ehta|ADJECTIVE|Nsg|Xpar	
+A_EHTA	ehtana	ehta|ADJECTIVE|Nsg|Xess	
+A_EHTA	ehdassa	ehta|ADJECTIVE|Nsg|Xine	
+A_EHTA	ehtoina	ehta|ADJECTIVE|Npl|Xess	
+A_EHTA	ehtojen	ehta|ADJECTIVE|Npl|Xgen	
+A_EHTA	ehtoihin	ehta|ADJECTIVE|Npl|Xill	
+A_EHTA	ehdampi	ehta|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_EHTA	ehdoin	ehta|ADJECTIVE|Csup|Nsg|Xnom	
+A_RAMPA	rampa	rampa|ADJECTIVE|Nsg|Xnom	crippled 
+A_RAMPA	rampaa	rampa|ADJECTIVE|Nsg|Xpar	
+A_RAMPA	rampana	rampa|ADJECTIVE|Nsg|Xess	
+A_RAMPA	rammassa	rampa|ADJECTIVE|Nsg|Xine	
+A_RAMPA	rampoina	rampa|ADJECTIVE|Npl|Xess	
+A_RAMPA	rampojen	rampa|ADJECTIVE|Npl|Xgen	
+A_RAMPA	rampoihin	rampa|ADJECTIVE|Npl|Xill	
+A_RAMPA	rammempi	rampa|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_RAMPA	rammoin	rampa|ADJECTIVE|Csup|Nsg|Xnom	
+A_VIHANTA	vihanta	vihanta|ADJECTIVE|Nsg|Xnom	blooming 
+A_VIHANTA	vihantaa	vihanta|ADJECTIVE|Nsg|Xpar	
+A_VIHANTA	vihantana	vihanta|ADJECTIVE|Nsg|Xess	
+A_VIHANTA	vihannassa	vihanta|ADJECTIVE|Nsg|Xine	
+A_VIHANTA	vihantoina	vihanta|ADJECTIVE|Npl|Xess	
+A_VIHANTA	vihantojen	vihanta|ADJECTIVE|Npl|Xgen	
+A_VIHANTA	vihantoihin	vihanta|ADJECTIVE|Npl|Xill	
+A_VIHANTA	vihannampi	vihanta|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_VIHANTA	vihannoin	vihanta|ADJECTIVE|Csup|Nsg|Xnom	
+A_AALTOILEVA	aaltoileva	aaltoileva|ADJECTIVE|Nsg|Xnom	wavy 
+A_AALTOILEVA	aaltoilevaa	aaltoileva|ADJECTIVE|Nsg|Xpar	
+A_AALTOILEVA	aaltoilevana	aaltoileva|ADJECTIVE|Nsg|Xess	
+A_AALTOILEVA	aaltoilevassa	aaltoileva|ADJECTIVE|Nsg|Xine	
+A_AALTOILEVA	aaltoilevina	aaltoileva|ADJECTIVE|Npl|Xess	
+A_AALTOILEVA	aaltoilevien	aaltoileva|ADJECTIVE|Npl|Xgen	
+A_AALTOILEVA	aaltoileviin	aaltoileva|ADJECTIVE|Npl|Xill	
+A_AALTOILEVA	aaltoilevampi	aaltoileva|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_AALTOILEVA	aaltoilevin	aaltoileva|ADJECTIVE|Csup|Nsg|Xnom	
+A_TYÖLLISTETTÄVÄ	työllistettävä	työllistettävä|ADJECTIVE|Nsg|Xnom	employable 
+A_TYÖLLISTETTÄVÄ	työllistettävää	työllistettävä|ADJECTIVE|Nsg|Xpar	
+A_TYÖLLISTETTÄVÄ	työllistettävänä	työllistettävä|ADJECTIVE|Nsg|Xess	
+A_TYÖLLISTETTÄVÄ	työllistettävässä	työllistettävä|ADJECTIVE|Nsg|Xine	
+A_TYÖLLISTETTÄVÄ	työllistettävinä	työllistettävä|ADJECTIVE|Npl|Xess	
+A_TYÖLLISTETTÄVÄ	työllistettävien	työllistettävä|ADJECTIVE|Npl|Xgen	
+A_TYÖLLISTETTÄVÄ	työllistettäviin	työllistettävä|ADJECTIVE|Npl|Xill	
+A_TYÖLLISTETTÄVÄ	työllistettävämpi	työllistettävä|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_TYÖLLISTETTÄVÄ	työllistettävin	työllistettävä|ADJECTIVE|Csup|Nsg|Xnom	
+A_RUMA	ruma	ruma|ADJECTIVE|Nsg|Xnom	ugly 
+A_RUMA	rumaa	ruma|ADJECTIVE|Nsg|Xpar	
+A_RUMA	rumana	ruma|ADJECTIVE|Nsg|Xess	
+A_RUMA	rumassa	ruma|ADJECTIVE|Nsg|Xine	
+A_RUMA	rumina	ruma|ADJECTIVE|Npl|Xess	
+A_RUMA	rumien	ruma|ADJECTIVE|Npl|Xgen	
+A_RUMA	rumiin	ruma|ADJECTIVE|Npl|Xill	
+A_RUMA	rumempi	ruma|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_RUMA	rumin	ruma|ADJECTIVE|Csup|Nsg|Xnom	
+A_TYHMÄ	tyhmä	tyhmä|ADJECTIVE|Nsg|Xnom	stupid 
+A_TYHMÄ	tyhmää	tyhmä|ADJECTIVE|Nsg|Xpar	
+A_TYHMÄ	tyhmänä	tyhmä|ADJECTIVE|Nsg|Xess	
+A_TYHMÄ	tyhmässä	tyhmä|ADJECTIVE|Nsg|Xine	
+A_TYHMÄ	tyhminä	tyhmä|ADJECTIVE|Npl|Xess	
+A_TYHMÄ	tyhmien	tyhmä|ADJECTIVE|Npl|Xgen	
+A_TYHMÄ	tyhmiin	tyhmä|ADJECTIVE|Npl|Xill	
+A_TYHMÄ	tyhmempi	tyhmä|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_TYHMÄ	tyhmin	tyhmä|ADJECTIVE|Csup|Nsg|Xnom	
+A_HOIKKA	hoikka	hoikka|ADJECTIVE|Nsg|Xnom	slim 
+A_HOIKKA	hoikkaa	hoikka|ADJECTIVE|Nsg|Xpar	
+A_HOIKKA	hoikkana	hoikka|ADJECTIVE|Nsg|Xess	
+A_HOIKKA	hoikassa	hoikka|ADJECTIVE|Nsg|Xine	
+A_HOIKKA	hoikkina	hoikka|ADJECTIVE|Npl|Xess	
+A_HOIKKA	hoikissa	hoikka|ADJECTIVE|Npl|Xine	
+A_HOIKKA	hoikkien	hoikka|ADJECTIVE|Npl|Xgen	
+A_MYKKÄ	mykkä	mykkä|ADJECTIVE|Nsg|Xnom	mute 
+A_MYKKÄ	mykkää	mykkä|ADJECTIVE|Nsg|Xpar	
+A_MYKKÄ	mykkänä	mykkä|ADJECTIVE|Nsg|Xess	
+A_MYKKÄ	mykässä	mykkä|ADJECTIVE|Nsg|Xine	
+A_MYKKÄ	mykkinä	mykkä|ADJECTIVE|Npl|Xess	
+A_MYKKÄ	mykissä	mykkä|ADJECTIVE|Npl|Xine	
+A_MYKKÄ	mykkien	mykkä|ADJECTIVE|Npl|Xgen	
+A_POPPA	poppa	poppa|ADJECTIVE|Nsg|Xnom	hocus-pocus 
+A_POPPA	poppaa	poppa|ADJECTIVE|Nsg|Xpar	
+A_POPPA	poppana	poppa|ADJECTIVE|Nsg|Xess	
+A_POPPA	popassa	poppa|ADJECTIVE|Nsg|Xine	
+A_POPPA	poppina	poppa|ADJECTIVE|Npl|Xess	
+A_POPPA	popissa	poppa|ADJECTIVE|Npl|Xine	
+A_POPPA	poppien	poppa|ADJECTIVE|Npl|Xgen	
+A_HÖMPPÄ	hömppä	hömppä|ADJECTIVE|Nsg|Xnom	bogus 
+A_HÖMPPÄ	hömppää	hömppä|ADJECTIVE|Nsg|Xpar	
+A_HÖMPPÄ	hömppänä	hömppä|ADJECTIVE|Nsg|Xess	
+A_HÖMPPÄ	hömpässä	hömppä|ADJECTIVE|Nsg|Xine	
+A_HÖMPPÄ	hömppinä	hömppä|ADJECTIVE|Npl|Xess	
+A_HÖMPPÄ	hömpissä	hömppä|ADJECTIVE|Npl|Xine	
+A_HÖMPPÄ	hömppien	hömppä|ADJECTIVE|Npl|Xgen	
+A_VOIPA	voipa	voipa|ADJECTIVE|Nsg|Xnom	capable 
+A_VOIPA	voipaa	voipa|ADJECTIVE|Nsg|Xpar	
+A_VOIPA	voipana	voipa|ADJECTIVE|Nsg|Xess	
+A_VOIPA	voivassa	voipa|ADJECTIVE|Nsg|Xine	
+A_VOIPA	voipina	voipa|ADJECTIVE|Npl|Xess	
+A_VOIPA	voivissa	voipa|ADJECTIVE|Npl|Xine	
+A_VOIPA	voipien	voipa|ADJECTIVE|Npl|Xgen	
+A_KÄYPÄ	käypä	käypä|ADJECTIVE|Nsg|Xnom	"good enough" 
+A_KÄYPÄ	käypää	käypä|ADJECTIVE|Nsg|Xpar	
+A_KÄYPÄ	käypänä	käypä|ADJECTIVE|Nsg|Xess	
+A_KÄYPÄ	käyvässä	käypä|ADJECTIVE|Nsg|Xine	
+A_KÄYPÄ	käypinä	käypä|ADJECTIVE|Npl|Xess	
+A_KÄYPÄ	käyvissä	käypä|ADJECTIVE|Npl|Xine	
+A_KÄYPÄ	käypien	käypä|ADJECTIVE|Npl|Xgen	
+A_MÄTÄ	mätä	mätä|ADJECTIVE|Nsg|Xnom	rotten 
+A_MÄTÄ	mätää	mätä|ADJECTIVE|Nsg|Xpar	
+A_MÄTÄ	mätänä	mätä|ADJECTIVE|Nsg|Xess	
+A_MÄTÄ	mädässä	mätä|ADJECTIVE|Nsg|Xine	
+A_MÄTÄ	mätinä	mätä|ADJECTIVE|Npl|Xess	
+A_MÄTÄ	mädissä	mätä|ADJECTIVE|Npl|Xine	
+A_MÄTÄ	mätien	mätä|ADJECTIVE|Npl|Xgen	
+A_SANKA	sanka	sanka|ADJECTIVE|Nsg|Xnom	??? 
+A_SANKA	sankaa	sanka|ADJECTIVE|Nsg|Xpar	
+A_SANKA	sankana	sanka|ADJECTIVE|Nsg|Xess	
+A_SANKA	sangassa	sanka|ADJECTIVE|Nsg|Xine	
+A_SANKA	sankina	sanka|ADJECTIVE|Npl|Xess	
+A_SANKA	sangissa	sanka|ADJECTIVE|Npl|Xine	
+A_SANKA	sankien	sanka|ADJECTIVE|Npl|Xgen	
+A_VÄNKÄ	vänkä	vänkä|ADJECTIVE|Nsg|Xnom	goofy 
+A_VÄNKÄ	vänkää	vänkä|ADJECTIVE|Nsg|Xpar	
+A_VÄNKÄ	vänkänä	vänkä|ADJECTIVE|Nsg|Xess	
+A_VÄNKÄ	vängässä	vänkä|ADJECTIVE|Nsg|Xine	
+A_VÄNKÄ	vängissä	vänkä|ADJECTIVE|Npl|Xine	
+A_VÄNKÄ	vänkiin	vänkä|ADJECTIVE|Npl|Xill	
+A_KULTA	kulta	kulta|ADJECTIVE|Nsg|Xnom	dear 
+A_KULTA	kultaa	kulta|ADJECTIVE|Nsg|Xpar	
+A_KULTA	kultana	kulta|ADJECTIVE|Nsg|Xess	
+A_KULTA	kullassa	kulta|ADJECTIVE|Nsg|Xine	
+A_KULTA	kultina	kulta|ADJECTIVE|Npl|Xess	
+A_KULTA	kullissa	kulta|ADJECTIVE|Npl|Xine	
+A_KULTA	kultien	kulta|ADJECTIVE|Npl|Xgen	
+A_LÄNTÄ	lyhyenläntä	lyhyenläntä|ADJECTIVE|Nsg|Xnom	shorty 
+A_LÄNTÄ	lyhyenläntää	lyhyenläntä|ADJECTIVE|Nsg|Xpar	
+A_LÄNTÄ	lyhyenläntänä	lyhyenläntä|ADJECTIVE|Nsg|Xess	
+A_LÄNTÄ	lyhyenlännässä	lyhyenläntä|ADJECTIVE|Nsg|Xine	
+A_LÄNTÄ	lyhyenläntinä	lyhyenläntä|ADJECTIVE|Npl|Xess	
+A_LÄNTÄ	lyhyenlännissä	lyhyenläntä|ADJECTIVE|Npl|Xine	
+A_LÄNTÄ	lyhyenläntien	lyhyenläntä|ADJECTIVE|Npl|Xgen	
+A_TURTA	turta	turta|ADJECTIVE|Nsg|Xnom	numb 
+A_TURTA	turtaa	turta|ADJECTIVE|Nsg|Xpar	
+A_TURTA	turtana	turta|ADJECTIVE|Nsg|Xess	
+A_TURTA	turrassa	turta|ADJECTIVE|Nsg|Xine	
+A_TURTA	turtina	turta|ADJECTIVE|Npl|Xess	
+A_TURTA	turrissa	turta|ADJECTIVE|Npl|Xine	
+A_TURTA	turtien	turta|ADJECTIVE|Npl|Xgen	
+A_HAPERA	hapera	hapera|ADJECTIVE|Nsg|Xnom	brittle 
+A_HAPERA	haperia	hapera|ADJECTIVE|Npl|Xpar	
+A_HAPERA	haperoita	hapera|ADJECTIVE|Npl|Xpar	
+A_HAPERA	haperien	hapera|ADJECTIVE|Npl|Xgen	
+A_HAPERA	haperoiden	hapera|ADJECTIVE|Npl|Xgen	
+A_HAPERA	haperoitten	hapera|ADJECTIVE|Npl|Xgen	
+A_HAPERA	haperiin	hapera|ADJECTIVE|Npl|Xill	
+A_HAPERA	haperoihin	hapera|ADJECTIVE|Npl|Xill	
+A_HAPERA	haperojen	hapera|ADJECTIVEUrare|Npl|Xgen	
+A_HAPERA	haperoja	hapera|ADJECTIVEUrare|Npl|Xpar	
+A_HAPERA	haperain	hapera|ADJECTIVE|Npl|Xgen|Urare	
+A_HÖPPÄNÄ	höppänä	höppänä|ADJECTIVE|Nsg|Xnom	senile 
+A_HÖPPÄNÄ	höppänää	höppänä|ADJECTIVE|Nsg|Xpar	
+A_HÖPPÄNÄ	höppänänä	höppänä|ADJECTIVE|Nsg|Xess	
+A_HÖPPÄNÄ	höppänässä	höppänä|ADJECTIVE|Nsg|Xine	
+A_HÖPPÄNÄ	höppäninä	höppänä|ADJECTIVE|Npl|Xess	
+A_HÖPPÄNÄ	höppänien	höppänä|ADJECTIVE|Npl|Xgen	
+A_HÖPPÄNÄ	höppäniin	höppänä|ADJECTIVE|Npl|Xill	
+A_HARMAJA	harmaja	harmaja|ADJECTIVE|Nsg|Xnom	? 
+A_HARMAJA	harmajaa	harmaja|ADJECTIVE|Nsg|Xpar	
+A_HARMAJA	harmajana	harmaja|ADJECTIVE|Nsg|Xess	
+A_HARMAJA	harmajoina	harmaja|ADJECTIVE|Npl|Xess	
+A_HARMAJA	harmajoita	harmaja|ADJECTIVE|Npl|Xpar	
+A_LATUSKA	latuska	latuska|ADJECTIVE|Nsg|Xnom	flat 
+A_LATUSKA	latuskoita	latuska|ADJECTIVE|Npl|Xpar	
+A_LATUSKA	latuskoja	latuska|ADJECTIVE|Npl|Xpar	
+A_LATUSKA	latuskoiden	latuska|ADJECTIVE|Npl|Xgen	
+A_LATUSKA	latuskoitten	latuska|ADJECTIVE|Npl|Xgen	
+A_LATUSKA	latuskojen	latuska|ADJECTIVE|Npl|Xgen	
+A_LATUSKA	latuskoihin	latuska|ADJECTIVE|Npl|Xill	
+A_HAILAKKA	hailakka	hailakka|ADJECTIVE|Nsg|Xnom	pale 
+A_HAILAKKA	hailakkoina	hailakka|ADJECTIVE|Npl|Xess	
+A_HAILAKKA	hailakoissa	hailakka|ADJECTIVE|Npl|Xine	
+A_HAILAKKA	hailakkoihin	hailakka|ADJECTIVE|Npl|Xill	
+A_HAILAKKA	hailakoihin	hailakka|ADJECTIVE|Npl|Xill	
+A_RÄVÄKKÄ	räväkkä	räväkkä|ADJECTIVE|Nsg|Xnom	flamboyant 
+A_RÄVÄKKÄ	räväköihin	räväkkä|ADJECTIVE|Npl|Xill	
+A_RÄVÄKKÄ	räväkköihin	räväkkä|ADJECTIVE|Npl|Xill	
+A_POHATTA	pohatta	pohatta|ADJECTIVE|Nsg|Xnom	fat-cat 
+A_POHATTA	pohattoina	pohatta|ADJECTIVE|Npl|Xess	
+A_POHATTA	pohatoissa	pohatta|ADJECTIVE|Npl|Xine	
+A_POHATTA	pohattoihin	pohatta|ADJECTIVE|Npl|Xill	
+A_POHATTA	pohatoihin	pohatta|ADJECTIVE|Npl|Xill	
+A_AINOA	ainoa	ainoa|ADJECTIVE|Nsg|Xnom	singleton 
+A_AINOA	ainoana	ainoa|ADJECTIVE|Nsg|Xess	
+A_AINOA	ainoina	ainoa|ADJECTIVE|Npl|Xess	
+A_AINOA	ainoissa	ainoa|ADJECTIVE|Npl|Xine	
+A_AINOA	ainoihin	ainoa|ADJECTIVE|Npl|Xill	
+A_AINOA	ainoisiin	ainoa|ADJECTIVE|Npl|Xill	
+A_KORKEA	korkea	korkea|ADJECTIVE|Nsg|Xnom	high 
+A_KORKEA	korkeana	korkea|ADJECTIVE|Nsg|Xess	
+A_KORKEA	korkeina	korkea|ADJECTIVE|Npl|Xess	
+A_KORKEA	korkeissa	korkea|ADJECTIVE|Npl|Xine	
+A_KORKEA	korkeihin	korkea|ADJECTIVE|Npl|Xill	
+A_KORKEA	korkeisiin	korkea|ADJECTIVE|Npl|Xill	
+A_JÄREÄ	järeä	järeä|ADJECTIVE|Nsg|Xnom	rough 
+A_JÄREÄ	järeänä	järeä|ADJECTIVE|Nsg|Xess	
+A_JÄREÄ	järeinä	järeä|ADJECTIVE|Npl|Xess	
+A_JÄREÄ	järeissä	järeä|ADJECTIVE|Npl|Xine	
+A_JÄREÄ	järeihin	järeä|ADJECTIVE|Npl|Xill	
+A_JÄREÄ	järeisiin	järeä|ADJECTIVE|Npl|Xill	
+A_AIEMPI	aiempi	aiempi|ADJECTIVE|Nsg|Xnom	earlier 
+A_AIEMPI	aiempana	aiempi|ADJECTIVE|Nsg|Xess	
+A_AIEMPI	aiemmassa	aiempi|ADJECTIVE|Nsg|Xine	
+A_AIEMPI	aiempina	aiempi|ADJECTIVE|Npl|Xess	
+A_AIEMPI	aiemmista	aiempi|ADJECTIVE|Npl|Xela	
+A_LÄHEMPI	lähempi	lähempi|ADJECTIVE|Nsg|Xnom	closer 
+A_LÄHEMPI	lähempänä	lähempi|ADJECTIVE|Nsg|Xess	
+A_LÄHEMPI	lähemmässä	lähempi|ADJECTIVE|Nsg|Xine	
+A_LÄHEMPI	lähempinä	lähempi|ADJECTIVE|Npl|Xess	
+A_LÄHEMPI	lähemmistä	lähempi|ADJECTIVE|Npl|Xela	
+A_VAPAA	vapaa	vapaa|ADJECTIVE|Nsg|Xnom	free 
+A_PEEAA	peeaa	peeaa|ADJECTIVE|Nsg|Xnom	bust 
+A_MUU	muu	muu|ADJECTIVE|Nsg|Xnom	other 
+A_SYYPÄÄ	syypää	syypää|ADJECTIVE|Nsg|Xnom	guilty 
+A_GAY	gay	gay|ADJECTIVE|Nsg|Xnom	gay 
+A_SUURI	suuri	suuri|ADJECTIVE|Nsg|Xnom	big 
+A_PIENI	pieni	pieni|ADJECTIVE|Nsg|Xnom	small 
+A_UUSI	uusi	uusi|ADJECTIVE|Nsg|Xnom	new 
+A_TÄYSI	täysi	täysi|ADJECTIVE|Nsg|Xnom	full 
+A_TYVEN	tyven	tyven|ADJECTIVE|Nsg|Xnom	calm (of bodies of water) 
+A_AVOIN	avoin	avoin|ADJECTIVE|Nsg|Xnom	open 
+A_ALASTON	alaston	alaston|ADJECTIVE|Nsg|Xnom	naked 
+A_VIATON	viaton	viaton|ADJECTIVE|Nsg|Xnom	innocent 
+A_KYVYTÖN	kyvytön	kyvytön|ADJECTIVE|Nsg|Xnom	unskilled 
+A_HAPAN	hapan	hapan|ADJECTIVE|Nsg|Xnom	sour 
+A_LÄMMIN	lämmin	lämmin|ADJECTIVE|Nsg|Xnom	warm 
+A_PAHIN	uloin	uloin|ADJECTIVE|Nsg|Xnom	outermost 
+A_SISIN	sisin	sisin|ADJECTIVE|Nsg|Xnom	innermost 
+A_VASEN	vasen	vasen|ADJECTIVE|Nsg|Xnom	left 
+A_AAKKOSELLINEN	aakkosellinen	aakkosellinen|ADJECTIVE|Nsg|Xnom	alphabetic 
+A_KYLMÄJÄRKINEN	kylmäjärkinen	kylmäjärkinen|ADJECTIVE|Nsg|Xnom	levelminded 
+A_SYMPPIS	symppis	symppis|ADJECTIVE|Nsg|Xnom	sympathetic 
+A_LÄHTEISYYS	lähteisyys	lähteisyys|ADJECTIVE|Nsg|Xnom	sourceful 
+A_AUTUAS	autuas	autuas|ADJECTIVE|Nsg|Xnom	ignorant 
+A_VALMIS	valmis	valmis|ADJECTIVE|Nsg|Xnom	ready 
+A_TYÖLÄS	työläs	työläs|ADJECTIVE|Nsg|Xnom	studious 
+A_VOIMAKAS	voimakas	voimakas|ADJECTIVE|Nsg|Xnom	powerfui 
+A_TYYLIKÄS	tyylikäs	tyylikäs|ADJECTIVE|Nsg|Xnom	stylish 
+A_REIPAS	reipas	reipas|ADJECTIVE|Nsg|Xnom	
+A_RIETAS	rietas	rietas|ADJECTIVE|Nsg|Xnom	lewd 
+A_RAITIS	raitis	raitis|ADJECTIVE|Nsg|Xnom	sober 
+A_HIDAS	hidas	hidas|ADJECTIVE|Nsg|Xnom	slow 
+A_HARRAS	harras	harras|ADJECTIVE|Nsg|Xnom	humble 
+A_OHUT	ohut	ohut|ADJECTIVE|Nsg|Xnom	thin 
+A_EHYT	ehyt	ehyt|ADJECTIVE|Nsg|Xnom	unbroken 
+A_KULUNUT	kulunut	kulunut|ADJECTIVE|Nsg|Xnom	used 
+A_ÄLLISTYNYT	ällistynyt	ällistynyt|ADJECTIVE|Nsg|Xnom	amazed 
+A_AHNE	ahne	ahne|ADJECTIVE|Nsg|Xnom	greedy 
+A_TERVE	terve	terve|ADJECTIVE|Nsg|Xnom	healthy 
+A_KADE	kade	kade|ADJECTIVE|Nsg|Xnom	jealous 
+A_HELLE	helle	helle|ADJECTIVE|Nsg|Xnom	warm weather 
+A_PITKÄ	pitkä	pitkä|ADJECTIVE|Nsg|Xnom	
+A_PITKÄ	pidempi	pitkä|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_PITKÄ	pisin	pitkä|ADJECTIVE|Csup|Nsg|Xnom	
+A_LEUATTOMAT	leuattomat	leuattomat|ADJECTIVE|Npl|Xnom	? 
+ADV	aakkosellisesti	aakkosellisesti|Adv	
+ADV	aakkosellisestikin	aakkosellisesti|PARTICLE|ADVERB|Foc/kin	
+ADV	mukaani	mukaan|PARTICLE|ADVERB|Osg1	
+ADV	mukaamme	mukaan|PARTICLE|ADVERB|Opl1
+ADV	ajassa	ajassa|Adv	
+ADV	ajassako	ajassa|PARTICLE|ADVERB|Qko	
+CC	eikä	eikä|CC	
+CC	ja	ja|CC	
+CS	että	että|CS	
+CS	jotta	jotta|CS	
+CS	koska	koska|CS	
+CS	kun	kun|CS	
+CS	jos	jos|CS	
+CS	vaikka	vaikka|CS	
+DIGITS	0	0|NUMERAL|Nsg|Xnom	
+DIGITS_INT_LOOP	13	13|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_INT_LOOP	100	100|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_INT_LOOP	0000005550000000	0000005550000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_ILLIARD_LOOP	1000000000	1000000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_ILLIARD_LOOP	300000000000	300000000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_ILLIARD_LOOP	123456000000000000000000	123456000000000000000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_ILLION_LOOP	1000000	1000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_ILLION_LOOP	300000000	300000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_ILLION_LOOP	123456000000000000000	123456000000000000000|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_DECIMAL_LOOP	1,0	1,0|NUMERAL|Nsg|Xnom	
+DIGITS_DECIMAL_LOOP	314,1	314,1|NUMERAL|Nsg|Xnom	
+DIGITS_DECIMAL_LOOP_FINAL	3,141	3,141|NUMERAL|Nsg|Xnom	
+DIGITS_DECIMAL_LOOP_FINAL	123,345	123,345|NUMERAL|Nsg|Xnom	
+DIGITS_ROMANS	MM	MM|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS	MCXI	MCXI|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS	CMXCIX	CMXCIX|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_THOUSANDS	MII	MII|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_THOUSANDS	MCCCXXII	MCCCXXII|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_HUNDREDS	CXXI	CXXI|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_HUNDREDS	DXXIV	DXXIV|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_TENS	XIX	XIX|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_TENS	XXVII	XXVII|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_ONES	IX	IX|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_ONES	VIII	VIII|NUMERAL|ORDINAL|Nsg|Xnom	
+DIGITS_ROMANS_ONES	II	II|NUMERAL|ORDINAL|Nsg|Xnom	
+EXCEPTIONS	en	ei|VERB|Nneg|Vact|Psg1	
+EXCEPTIONS	älkää	ei|VERB|Nneg|Vact|Timp|Ppl2	
+EXCEPTIONS	älkööt	ei|VERB|Nneg|Vact|Timp|Ppl3	
+EXCEPTIONS	kutiaa		
+EXCEPTIONS	taita		
+EXCEPTIONS	paratkoon		
+EXCEPTIONS	eläköön		
+EXCEPTIONS	ruuassa		
+EXCEPTIONS	ruuilla		
+EXCEPTIONS	parempi		
+EXCEPTIONS	paremmissa		
+EXCEPTIONS	paras		
+EXCEPTIONS	parhaat		
+EXCEPTIONS	vuonna		
+EXCEPTIONS	sydännä		
+EXCEPTIONS	jumalten		
+EXCEPTIONS	sankarten		
+EXCEPTIONS	meen		
+EXCEPTIONS	tuut		
+INTERJ	aah	aah|Interj	
+INTERJ	äh	äh|Interj	
+N	talo	talo|NOUN|Nsg|Xnom	house 
+N	taloa	talo|NOUN|Nsg|Xpar	
+N	taloissa	talo|NOUN|Npl|Xine	
+N	talostani	talo|NOUN|Nsg|Xela|Osg1	
+N	talollako	talo|NOUN|Nsg|Xade|Qko	
+N	taloiltammepa	talo|NOUN|Npl|Xabl|Opl1|Qpa	
+N	taloja	talo|NOUN|Npl|Xpar	
+N	sälöjä	sälö|NOUN|Npl|Xpar	splinter 
+N	valtioita	valtio|NOUN|Npl|Xpar	state 
+N	lepakot	lepakko|NOUN|Npl|Xnom	bat 
+N	padoissa	pato|NOUN|Npl|Xine	dam 
+N_TALO	talo	talo|NOUN|Nsg|Xnom	house 
+N_TALO	talona	talo|NOUN|Nsg|Xess	
+N_TALO	talossa	talo|NOUN|Nsg|Xine	
+N_TALO	taloina	talo|NOUN|Npl|Xess	
+N_TALO	taloista	talo|NOUN|Npl|Xela	
+N_TALO	taloa	talo|NOUN|Nsg|Xpar	
+N_TALO	talota	talo|NOUN|Nsg|Xpar	
+N_TALO	taloon	talo|NOUN|Nsg|Xill	
+N_TALO	taloseen	talo|NOUN|Nsg|Xill	
+N_TALO	taloja	talo|NOUN|Npl|Xpar	
+N_TALO	taloita	talo|NOUN|Npl|Xpar	
+N_TALO	talojen	talo|NOUN|Npl|Xgen	
+N_TALO	taloiden	talo|NOUN|Npl|Xgen	
+N_TALO	taloitten	talo|NOUN|Npl|Xgen	
+N_TALO	taloihin	talo|NOUN|Npl|Xill	
+N_TALO	talojuttu	talo|NOUN|Nsg|Nom|Bc|juttu|NOUN|Nsg|Xnom	house thing 
+N_TALO	talonjuttu	talo|NOUN|Nsg|Gen|Bc|juttu|NOUN|Nsg|Xnom	house’s thing 
+N_TALO	talojenjuttu	talo|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	houses’ thing 
+N_TALO	taloin	talo|NOUNUrare|Npl|Xgen	
+N_TALO	talohon	talo|NOUN|Unon|Nsg|Xill	
+N_ASU	asu	asu|NOUN|Nsg|Xnom	outfit 
+N_ASU	asua	asu|NOUN|Nsg|Xpar	
+N_ASU	asuun	asu|NOUN|Nsg|Xill	
+N_ASU	asuna	asu|NOUN|Nsg|Xess	
+N_ASU	asussa	asu|NOUN|Nsg|Xine	
+N_ASU	asuja	asu|NOUN|Npl|Xpar	
+N_ASU	asujen	asu|NOUN|Npl|Xgen	
+N_ASU	asuihin	asu|NOUN|Npl|Xill	
+N_ASU	asuina	asu|NOUN|Npl|Xess	
+N_ASU	asuissa	asu|NOUN|Npl|Xine	
+N_ASU	asuin	asu|NOUNUrare|Npl|Xgen	
+N_ASU	asuhun	asu|NOUN|Unon|Nsg|Xill	
+N_KÄRRY	kärry	kärry|NOUN|Nsg|Xnom	cart 
+N_KÄRRY	kärryä	kärry|NOUN|Nsg|Xpar	
+N_KÄRRY	kärryyn	kärry|NOUN|Nsg|Xill	
+N_KÄRRY	kärrynä	kärry|NOUN|Nsg|Xess	
+N_KÄRRY	kärryssä	kärry|NOUN|Nsg|Xine	
+N_KÄRRY	kärryjä	kärry|NOUN|Npl|Xpar	
+N_KÄRRY	kärryjen	kärry|NOUN|Npl|Xgen	
+N_KÄRRY	kärryihin	kärry|NOUN|Npl|Xill	
+N_KÄRRY	kärryinä	kärry|NOUN|Npl|Xess	
+N_KÄRRY	kärryissä	kärry|NOUN|Npl|Xine	
+N_KÄRRY	kärryin	kärry|NOUNUrare|Npl|Xgen	
+N_KÄRRY	kärryhyn	kärry|NOUN|Unon|Nsg|Xill	
+N_MÖMMÖ	mömmö	mömmö|NOUN|Nsg|Xnom	gunk 
+N_MÖMMÖ	mömmöä	mömmö|NOUN|Nsg|Xpar	
+N_MÖMMÖ	mömmöön	mömmö|NOUN|Nsg|Xill	
+N_MÖMMÖ	mömmönä	mömmö|NOUN|Nsg|Xess	
+N_MÖMMÖ	mömmössä	mömmö|NOUN|Nsg|Xine	
+N_MÖMMÖ	mömmöjä	mömmö|NOUN|Npl|Xpar	
+N_MÖMMÖ	mömmöjen	mömmö|NOUN|Npl|Xgen	
+N_MÖMMÖ	mömmöihin	mömmö|NOUN|Npl|Xill	
+N_MÖMMÖ	mömmöinä	mömmö|NOUN|Npl|Xess	
+N_MÖMMÖ	mömmöissä	mömmö|NOUN|Npl|Xine	
+N_MÖMMÖ	mömmöin	mömmö|NOUNUrare|Npl|Xgen	
+N_MÖMMÖ	mömmöhön	mömmö|NOUN|Unon|Nsg|Xill	
+N_UKKO	ukko	ukko|NOUN|Nsg|Xnom	geezer 
+N_UKKO	ukossa	ukko|NOUN|Nsg|Xine	
+N_UKKO	ukoista	ukko|NOUN|Npl|Xela	
+N_UKKO	ukkoihin	ukko|NOUN|Npl|Xill	
+N_UKKO	ukkoin	ukko|NOUNUrare|Npl|Xgen	
+N_UKKO	ukkohon	ukko|NOUN|Unon|Nsg|Xill	
+N_TIKKU	tikku	tikku|NOUN|Nsg|Xnom	stick 
+N_TIKKU	tikussa	tikku|NOUN|Nsg|Xine	
+N_TIKKU	tikuista	tikku|NOUN|Npl|Xela	
+N_TIKKU	tikkuihin	tikku|NOUN|Npl|Xill	
+N_TIKKU	tikkuin	tikku|NOUNUrare|Npl|Xgen	
+N_TIKKU	tikkuhun	tikku|NOUN|Unon|Nsg|Xill	
+N_MYRKKY	myrkky	myrkky|NOUN|Nsg|Xnom	poison 
+N_MYRKKY	myrkyssä	myrkky|NOUN|Nsg|Xine	
+N_MYRKKY	myrkyistä	myrkky|NOUN|Npl|Xela	
+N_MYRKKY	myrkkyihin	myrkky|NOUN|Npl|Xill	
+N_MYRKKY	myrkkyin	myrkky|NOUNUrare|Npl|Xgen	
+N_MYRKKY	myrkkyhyn	myrkky|NOUN|Unon|Nsg|Xill	
+N_YÖKKÖ	yökkö	yökkö|NOUN|Nsg|Xnom	nightfly 
+N_YÖKKÖ	yökössä	yökkö|NOUN|Nsg|Xine	
+N_YÖKKÖ	yököistä	yökkö|NOUN|Npl|Xela	
+N_YÖKKÖ	yökköihin	yökkö|NOUN|Npl|Xill	
+N_YÖKKÖ	yökköin	yökkö|NOUNUrare|Npl|Xgen	
+N_YÖKKÖ	yökköhön	yökkö|NOUN|Unon|Nsg|Xill	
+N_HAPPO	happo	happo|NOUN|Nsg|Xnom	acid 
+N_HAPPO	hapossa	happo|NOUN|Nsg|Xine	
+N_HAPPO	hapoista	happo|NOUN|Npl|Xela	
+N_HAPPO	happoihin	happo|NOUN|Npl|Xill	
+N_HAPPO	happoin	happo|NOUNUrare|Npl|Xgen	
+N_HAPPO	happohon	happo|NOUN|Unon|Nsg|Xill	
+N_LIPPU	lippu	lippu|NOUN|Nsg|Xnom	
+N_LIPPU	lipussa	lippu|NOUN|Nsg|Xine	
+N_LIPPU	lipuista	lippu|NOUN|Npl|Xela	
+N_LIPPU	lippuihin	lippu|NOUN|Npl|Xill	
+N_LIPPU	lippuin	lippu|NOUNUrare|Npl|Xgen	
+N_LIPPU	lippuhun	lippu|NOUN|Unon|Nsg|Xill	
+N_RYYPPY	ryyppy	ryyppy|NOUN|Nsg|Xnom	swirl 
+N_RYYPPY	ryypyssä	ryyppy|NOUN|Nsg|Xine	
+N_RYYPPY	ryypyistä	ryyppy|NOUN|Npl|Xela	
+N_RYYPPY	ryyppyihin	ryyppy|NOUN|Npl|Xill	
+N_RYYPPY	ryyppyin	ryyppy|NOUNUrare|Npl|Xgen	
+N_RYYPPY	ryyppyhyn	ryyppy|NOUN|Unon|Nsg|Xill	
+N_TÖRPPÖ	törppö	törppö|NOUN|Nsg|Xnom	bozo 
+N_TÖRPPÖ	törpössä	törppö|NOUN|Nsg|Xine	
+N_TÖRPPÖ	törpöistä	törppö|NOUN|Npl|Xela	
+N_TÖRPPÖ	törppöihin	törppö|NOUN|Npl|Xill	
+N_TÖRPPÖ	törppöin	törppö|NOUNUrare|Npl|Xgen	
+N_TÖRPPÖ	törppöhön	törppö|NOUN|Unon|Nsg|Xill	
+N_HIRTTO	hirtto	hirtto|NOUN|Nsg|Xnom	hanging 
+N_HIRTTO	hirtossa	hirtto|NOUN|Nsg|Xine	
+N_HIRTTO	hirtoista	hirtto|NOUN|Npl|Xela	
+N_HIRTTO	hirttoihin	hirtto|NOUN|Npl|Xill	
+N_HIRTTO	hirttoin	hirtto|NOUNUrare|Npl|Xgen	
+N_HIRTTO	hirttohon	hirtto|NOUN|Unon|Nsg|Xill	
+N_TORTTU	torttu	torttu|NOUN|Nsg|Xnom	tart 
+N_TORTTU	tortussa	torttu|NOUN|Nsg|Xine	
+N_TORTTU	tortuista	torttu|NOUN|Npl|Xela	
+N_TORTTU	torttuihin	torttu|NOUN|Npl|Xill	
+N_TORTTU	torttuin	torttu|NOUNUrare|Npl|Xgen	
+N_TORTTU	torttuhon	torttu|NOUN|Unon|Nsg|Xill	
+N_PYTTY	pytty	pytty|NOUN|Nsg|Xnom	cup 
+N_PYTTY	pytyssä	pytty|NOUN|Nsg|Xine	
+N_PYTTY	pytyistä	pytty|NOUN|Npl|Xela	
+N_PYTTY	pyttyihin	pytty|NOUN|Npl|Xill	
+N_PYTTY	pyttyin	pytty|NOUNUrare|Npl|Xgen	
+N_PYTTY	pyttyhyn	pytty|NOUN|Unon|Nsg|Xill	
+N_PÖNTTÖ	pönttö	pönttö|NOUN|Nsg|Xnom	pot 
+N_PÖNTTÖ	pöntössä	pönttö|NOUN|Nsg|Xine	
+N_PÖNTTÖ	pöntöistä	pönttö|NOUN|Npl|Xela	
+N_PÖNTTÖ	pönttöihin	pönttö|NOUN|Npl|Xill	
+N_PÖNTTÖ	pönttöin	pönttö|NOUNUrare|Npl|Xgen	
+N_PÖNTTÖ	pönttöhön	pönttö|NOUN|Unon|Nsg|Xill	
+N_TEKO	teko	teko|NOUN|Nsg|Xnom	action 
+N_TEKO	teossa	teko|NOUN|Nsg|Xine	
+N_TEKO	te’ossa	teko|NOUN|Nsg|Xine	
+N_TEKO	tekoin	teko|NOUNUrare|Npl|Xgen	
+N_TEKO	tekohon	teko|NOUN|Unon|Nsg|Xill	
+N_MAKU	maku	maku|NOUN|Nsg|Xnom	taste 
+N_MAKU	maussa	maku|NOUN|Nsg|Xine	
+N_MAKU	ma’ussa	maku|NOUN|Nsg|Xine	
+N_MAKU	makuin	maku|NOUNUrare|Npl|Xgen	
+N_MAKU	makuhon	maku|NOUN|Unon|Nsg|Xill	
+N_NÄKY	näky	näky|NOUN|Nsg|Xnom	vision 
+N_NÄKY	näyssä	näky|NOUN|Nsg|Xine	
+N_NÄKY	nä’yssä	näky|NOUN|Nsg|Xine	
+N_NÄKY	näkyin	näky|NOUNUrare|Npl|Xgen	
+N_NÄKY	näkyhyn	näky|NOUN|Unon|Nsg|Xill	
+N_NÄKÖ	näkö	näkö|NOUN|Nsg|Xnom	eyesight 
+N_NÄKÖ	näössä	näkö|NOUN|Nsg|Xine	
+N_NÄKÖ	nä’össä	näkö|NOUN|Nsg|Xine	
+N_NÄKÖ	näköin	näkö|NOUNUrare|Npl|Xgen	
+N_NÄKÖ	näköhön	näkö|NOUN|Unon|Nsg|Xill	
+N_RUOKO	ruoko	ruoko|NOUN|Nsg|Xnom	straw 
+N_RUOKO	ruo’ossa	ruoko|NOUN|Nsg|Xine	
+N_RUOKO	ruokoin	ruoko|NOUNUrare|Npl|Xgen	
+N_RUOKO	ruokohon	ruoko|NOUN|Unon|Nsg|Xill	
+N_LIUKU	liuku	liuku|NOUN|Nsg|Xnom	slide 
+N_LIUKU	liu’ussa	liuku|NOUN|Nsg|Xine	
+N_LIUKU	liukuin	liuku|NOUNUrare|Npl|Xgen	
+N_LIUKU	liukuhun	liuku|NOUN|Unon|Nsg|Xill	
+N_HEPO	hepo	hepo|NOUN|Nsg|Xnom	horse 
+N_HEPO	hevossa	hepo|NOUN|Nsg|Xine	
+N_HEPO	hepoina	hepo|NOUN|Npl|Xess	
+N_HEPO	hevoista	hepo|NOUN|Npl|Xela	
+N_HEPO	hepoin	hepo|NOUNUrare|Npl|Xgen	
+N_HEPO	hepohon	hepo|NOUN|Unon|Nsg|Xill	
+N_APU	apu	apu|NOUN|Nsg|Xnom	help 
+N_APU	avussa	apu|NOUN|Nsg|Xine	
+N_APU	apuihin	apu|NOUN|Npl|Xill	
+N_APU	avuista	apu|NOUN|Npl|Xela	
+N_APU	apuin	apu|NOUNUrare|Npl|Xgen	
+N_APU	apuhun	apu|NOUN|Unon|Nsg|Xill	
+N_KÄPY	käpy	käpy|NOUN|Nsg|Xnom	pinecone 
+N_KÄPY	kävyssä	käpy|NOUN|Nsg|Xine	
+N_KÄPY	käpyihin	käpy|NOUN|Npl|Xill	
+N_KÄPY	kävyistä	käpy|NOUN|Npl|Xela	
+N_KÄPY	käpyin	käpy|NOUNUrare|Npl|Xgen	
+N_KÄPY	käpyhyn	käpy|NOUN|Unon|Nsg|Xill	
+N_LÖPÖ	löpö	löpö|NOUN|Nsg|Xnom	gasoline 
+N_LÖPÖ	lövössä	löpö|NOUN|Nsg|Xine	
+N_LÖPÖ	löpöihin	löpö|NOUN|Npl|Xill	
+N_LÖPÖ	lövöistä	löpö|NOUN|Npl|Xela	
+N_LÖPÖ	löpöin	löpö|NOUNUrare|Npl|Xgen	
+N_LÖPÖ	löpöhyn	löpö|NOUN|Unon|Nsg|Xill	
+N_VETO	veto	veto|NOUN|Nsg|Xnom	draft 
+N_VETO	vedossa	veto|NOUN|Nsg|Xine	
+N_VETO	vetoihin	veto|NOUN|Npl|Xill	
+N_VETO	vedoista	veto|NOUN|Npl|Xela	
+N_VETO	vetoin	veto|NOUNUrare|Npl|Xgen	
+N_VETO	vetohon	veto|NOUN|Unon|Nsg|Xill	
+N_KUITU	kuitu	kuitu|NOUN|Nsg|Xnom	fiber 
+N_KUITU	kuidussa	kuitu|NOUN|Nsg|Xine	
+N_KUITU	kuituihin	kuitu|NOUN|Npl|Xill	
+N_KUITU	kuiduista	kuitu|NOUN|Npl|Xela	
+N_KUITU	kuituin	kuitu|NOUNUrare|Npl|Xgen	
+N_KUITU	kuituhon	kuitu|NOUN|Unon|Nsg|Xill	
+N_VETY	vety	vety|NOUN|Nsg|Xnom	hydrogen 
+N_VETY	vedyssä	vety|NOUN|Nsg|Xine	
+N_VETY	vetyihin	vety|NOUN|Npl|Xill	
+N_VETY	vedyistä	vety|NOUN|Npl|Xela	
+N_VETY	vetyin	vety|NOUNUrare|Npl|Xgen	
+N_VETY	vetyhyn	vety|NOUN|Unon|Nsg|Xill	
+N_HÄÄTÖ	häätö	häätö|NOUN|Nsg|Xnom	evictment 
+N_HÄÄTÖ	häädössä	häätö|NOUN|Nsg|Xine	
+N_HÄÄTÖ	häädöistä	häätö|NOUN|Npl|Xela	
+N_HÄÄTÖ	häätöihin	häätö|NOUN|Npl|Xill	
+N_HÄÄTÖ	häätöin	häätö|NOUNUrare|Npl|Xgen	
+N_HÄÄTÖ	häätöhön	häätö|NOUN|Unon|Nsg|Xill	
+N_RUNKO	runko	runko|NOUN|Nsg|Xnom	body 
+N_RUNKO	rungossa	runko|NOUN|Nsg|Xine	
+N_RUNKO	rungoista	runko|NOUN|Npl|Xela	
+N_RUNKO	runkoihin	runko|NOUN|Npl|Xill	
+N_RUNKO	runkoin	runko|NOUNUrare|Npl|Xgen	
+N_RUNKO	runkohon	runko|NOUN|Unon|Nsg|Xill	
+N_VINKU	vinku	vinku|NOUN|Nsg|Xnom	squeal 
+N_VINKU	vingussa	vinku|NOUN|Nsg|Xine	
+N_VINKU	vinguista	vinku|NOUN|Npl|Xela	
+N_VINKU	vinkuihin	vinku|NOUN|Npl|Xill	
+N_VINKU	vinkuin	vinku|NOUNUrare|Npl|Xgen	
+N_VINKU	vinkuhun	vinku|NOUN|Unon|Nsg|Xill	
+N_SÄNKY	sänky	sänky|NOUN|Nsg|Xnom	bed 
+N_SÄNKY	sängyssä	sänky|NOUN|Nsg|Xine	
+N_SÄNKY	sängyistä	sänky|NOUN|Npl|Xela	
+N_SÄNKY	sänkyihin	sänky|NOUN|Npl|Xill	
+N_SÄNKY	sänkyin	sänky|NOUNUrare|Npl|Xgen	
+N_SÄNKY	sänkyhyn	sänky|NOUN|Unon|Nsg|Xill	
+N_YLÄNKÖ	ylänkö	ylänkö|NOUN|Nsg|Xnom	highlands 
+N_YLÄNKÖ	ylängössä	ylänkö|NOUN|Nsg|Xine	
+N_YLÄNKÖ	ylängöistä	ylänkö|NOUN|Npl|Xela	
+N_YLÄNKÖ	ylänköihin	ylänkö|NOUN|Npl|Xill	
+N_YLÄNKÖ	ylänköin	ylänkö|NOUNUrare|Npl|Xgen	
+N_YLÄNKÖ	ylänköhön	ylänkö|NOUN|Unon|Nsg|Xill	
+N_SAMPO	sampo	sampo|NOUN|Nsg|Xnom	sampo 
+N_SAMPO	sammossa	sampo|NOUN|Nsg|Xine	
+N_SAMPO	sampoina	sampo|NOUN|Npl|Xess	
+N_SAMPO	sammoista	sampo|NOUN|Npl|Xela	
+N_SAMPO	sampoin	sampo|NOUNUrare|Npl|Xgen	
+N_SAMPO	sampohon	sampo|NOUN|Unon|Nsg|Xill	
+N_RUMPU	rumpu	rumpu|NOUN|Nsg|Xnom	drum 
+N_RUMPU	rummussa	rumpu|NOUN|Nsg|Xine	
+N_RUMPU	rumpuihin	rumpu|NOUN|Npl|Xill	
+N_RUMPU	rummuista	rumpu|NOUN|Npl|Xela	
+N_RUMPU	rumpuin	rumpu|NOUNUrare|Npl|Xgen	
+N_RUMPU	rumpuhun	rumpu|NOUN|Unon|Nsg|Xill	
+N_LÄMPÖ	lämpö	lämpö|NOUN|Nsg|Xnom	warmth 
+N_LÄMPÖ	lämmössä	lämpö|NOUN|Nsg|Xine	
+N_LÄMPÖ	lämpöihin	lämpö|NOUN|Npl|Xill	
+N_LÄMPÖ	lämmöistä	lämpö|NOUN|Npl|Xela	
+N_LÄMPÖ	lämpöin	lämpö|NOUNUrare|Npl|Xgen	
+N_LÄMPÖ	lämpöhön	lämpö|NOUN|Unon|Nsg|Xill	
+N_KIELTO	kielto	kielto|NOUN|Nsg|Xnom	denial 
+N_KIELTO	kiellossa	kielto|NOUN|Nsg|Xine	
+N_KIELTO	kieltoihin	kielto|NOUN|Npl|Xill	
+N_KIELTO	kielloista	kielto|NOUN|Npl|Xela	
+N_KIELTO	kieltoin	kielto|NOUNUrare|Npl|Xgen	
+N_KIELTO	kieltohon	kielto|NOUN|Unon|Nsg|Xill	
+N_HUOLITELTU	huoliteltu	huoliteltu|NOUN|Nsg|Xnom	neat 
+N_HUOLITELTU	huolitellussa	huoliteltu|NOUN|Nsg|Xine	
+N_HUOLITELTU	huoliteltuihin	huoliteltu|NOUN|Npl|Xill	
+N_HUOLITELTU	huolitelluista	huoliteltu|NOUN|Npl|Xela	
+N_HUOLITELTU	huoliteltuin	huoliteltu|NOUNUrare|Npl|Xgen	
+N_HUOLITELTU	huoliteltuhun	huoliteltu|NOUN|Unon|Nsg|Xill	
+N_EPÄILTY	epäilty	epäilty|NOUN|Nsg|Xnom	suspect 
+N_EPÄILTY	epäillyssä	epäilty|NOUN|Nsg|Xine	
+N_EPÄILTY	epäiltyihin	epäilty|NOUN|Npl|Xill	
+N_EPÄILTY	epäillyistä	epäilty|NOUN|Npl|Xela	
+N_EPÄILTY	epäiltyin	epäilty|NOUNUrare|Npl|Xgen	
+N_EPÄILTY	epäiltyhyn	epäilty|NOUN|Unon|Nsg|Xill	
+N_SISÄLTÖ	sisältö	sisältö|NOUN|Nsg|Xnom	content 
+N_SISÄLTÖ	sisällössä	sisältö|NOUN|Nsg|Xine	
+N_SISÄLTÖ	sisällöistä	sisältö|NOUN|Npl|Xela	
+N_SISÄLTÖ	sisältöihin	sisältö|NOUN|Npl|Xill	
+N_SISÄLTÖ	sisältöin	sisältö|NOUNUrare|Npl|Xgen	
+N_SISÄLTÖ	sisältöhön	sisältö|NOUN|Unon|Nsg|Xill	
+N_TUNTO	tunto	tunto|NOUN|Nsg|Xnom	sense 
+N_TUNTO	tunnossa	tunto|NOUN|Nsg|Xine	
+N_TUNTO	tuntoihin	tunto|NOUN|Npl|Xill	
+N_TUNTO	tunnoista	tunto|NOUN|Npl|Xela	
+N_TUNTO	tuntoin	tunto|NOUNUrare|Npl|Xgen	
+N_TUNTO	tuntohon	tunto|NOUN|Unon|Nsg|Xill	
+N_LINTU	lintu	lintu|NOUN|Nsg|Xnom	bird 
+N_LINTU	linnussa	lintu|NOUN|Nsg|Xine	
+N_LINTU	lintuihin	lintu|NOUN|Npl|Xill	
+N_LINTU	linnuista	lintu|NOUN|Npl|Xela	
+N_LINTU	lintuin	lintu|NOUNUrare|Npl|Xgen	
+N_LINTU	lintuhon	lintu|NOUN|Unon|Nsg|Xill	
+N_MÄNTY	mänty	mänty|NOUN|Nsg|Xnom	pine tree 
+N_MÄNTY	männyssä	mänty|NOUN|Nsg|Xine	
+N_MÄNTY	mäntyihin	mänty|NOUN|Npl|Xill	
+N_MÄNTY	männyistä	mänty|NOUN|Npl|Xela	
+N_MÄNTY	mäntyin	mänty|NOUNUrare|Npl|Xgen	
+N_MÄNTY	mäntyhyn	mänty|NOUN|Unon|Nsg|Xill	
+N_KÄÄNTÖ	kääntö	kääntö|NOUN|Nsg|Xnom	turn 
+N_KÄÄNTÖ	käännössä	kääntö|NOUN|Nsg|Xine	
+N_KÄÄNTÖ	käännöistä	kääntö|NOUN|Npl|Xela	
+N_KÄÄNTÖ	kääntöihin	kääntö|NOUN|Npl|Xill	
+N_KÄÄNTÖ	kääntöin	kääntö|NOUNUrare|Npl|Xgen	
+N_KÄÄNTÖ	kääntöhön	kääntö|NOUN|Unon|Nsg|Xill	
+N_SIIRTO	siirto	siirto|NOUN|Nsg|Xnom	move 
+N_SIIRTO	siirrossa	siirto|NOUN|Nsg|Xine	
+N_SIIRTO	siirtoihin	siirto|NOUN|Npl|Xill	
+N_SIIRTO	siirroista	siirto|NOUN|Npl|Xela	
+N_SIIRTO	siirtoin	siirto|NOUNUrare|Npl|Xgen	
+N_SIIRTO	siirtohon	siirto|NOUN|Unon|Nsg|Xill	
+N_LUKU	luku	luku|NOUN|Nsg|Xnom	figure 
+N_LUKU	luvussa	luku|NOUN|Nsg|Xine	
+N_LUKU	luvuista	luku|NOUN|Npl|Xela	
+N_LUKU	lukuihin	luku|NOUN|Npl|Xill	
+N_LUKU	lukuin	luku|NOUNUrare|Npl|Xgen	
+N_LUKU	lukuhun	luku|NOUN|Unon|Nsg|Xill	
+N_KYKY	kyky	kyky|NOUN|Nsg|Xnom	skill 
+N_KYKY	kyvyssä	kyky|NOUN|Nsg|Xine	
+N_KYKY	kyvyistä	kyky|NOUN|Npl|Xela	
+N_KYKY	kykyihin	kyky|NOUN|Npl|Xill	
+N_KYKY	kykyin	kyky|NOUNUrare|Npl|Xgen	
+N_KYKY	kykyhyn	kyky|NOUN|Unon|Nsg|Xill	
+N_RUIPELO	ruipelo	ruipelo|NOUN|Nsg|Xnom	squirt 
+N_RUIPELO	ruipeloita	ruipelo|NOUN|Npl|Xpar	
+N_RUIPELO	ruipeloja	ruipelo|NOUN|Npl|Xpar	
+N_RUIPELO	ruipelojen	ruipelo|NOUN|Npl|Xgen	
+N_RUIPELO	ruipeloiden	ruipelo|NOUN|Npl|Xgen	
+N_RUIPELO	ruipeloitten	ruipelo|NOUN|Npl|Xgen	
+N_RUIPELO	ruipeloin	ruipelo|NOUNUrare|Npl|Xgen	
+N_RUIPELO	ruipelohon	ruipelo|NOUN|Unon|Nsg|Xill	
+N_SEIKKAILU	seikkailu	seikkailu|NOUN|Nsg|Xnom	adventure 
+N_SEIKKAILU	seikkailuja	seikkailu|NOUN|Npl|Xpar	
+N_SEIKKAILU	seikkailuita	seikkailu|NOUN|Npl|Xpar	
+N_SEIKKAILU	seikkailujen	seikkailu|NOUN|Npl|Xgen	
+N_SEIKKAILU	seikkailuiden	seikkailu|NOUN|Npl|Xgen	
+N_SEIKKAILU	seikkailuitten	seikkailu|NOUN|Npl|Xgen	
+N_SEIKKAILU	seikkailuin	seikkailu|NOUNUrare|Npl|Xgen	
+N_SEIKKAILU	seikkailuhun	seikkailu|NOUN|Unon|Nsg|Xill	
+N_VEHKEILY	vehkeily	vehkeily|NOUN|Nsg|Xnom	mutiny 
+N_VEHKEILY	vehkeilyjä	vehkeily|NOUN|Npl|Xpar	
+N_VEHKEILY	vehkeilyitä	vehkeily|NOUN|Npl|Xpar	
+N_VEHKEILY	vehkeilyjen	vehkeily|NOUN|Npl|Xgen	
+N_VEHKEILY	vehkeilyitten	vehkeily|NOUN|Npl|Xgen	
+N_VEHKEILY	vehkeilyiden	vehkeily|NOUN|Npl|Xgen	
+N_VEHKEILY	vehkeilyin	vehkeily|NOUNUrare|Npl|Xgen	
+N_VEHKEILY	vehkeilyhyn	vehkeily|NOUN|Unon|Nsg|Xill	
+N_JÄÄTELÖ	jäätelö	jäätelö|NOUN|Nsg|Xnom	iced cream 
+N_JÄÄTELÖ	jäätelöjen	jäätelö|NOUN|Npl|Xgen	
+N_JÄÄTELÖ	jäätelöiden	jäätelö|NOUN|Npl|Xgen	
+N_JÄÄTELÖ	jäätelöitten	jäätelö|NOUN|Npl|Xgen	
+N_JÄÄTELÖ	jäätelöin	jäätelö|NOUNUrare|Npl|Xgen	
+N_JÄÄTELÖ	jäätelöhön	jäätelö|NOUN|Unon|Nsg|Xill	
+N_TUOMIO	tuomio	tuomio|NOUN|Nsg|Xnom	judgment 
+N_TUOMIO	tuomiota	tuomio|NOUN|Nsg|Xpar	
+N_TUOMIO	tuomioa	tuomio|NOUN|Nsg|Xpar	
+N_TUOMIO	tuomioita	tuomio|NOUN|Npl|Xpar	
+N_TUOMIO	tuomioiden	tuomio|NOUN|Npl|Xgen	
+N_TUOMIO	tuomioitten	tuomio|NOUN|Npl|Xgen	
+N_TUOMIO	tuomiojen	tuomio|NOUN|Npl|Xgen	
+N_TUOMIO	tuomioa	tuomio|NOUNUrare|Npl|Xpar	
+N_TUOMIO	tuomioin	tuomio|NOUNUrare|Npl|Xgen	
+N_TUOMIO	tuomiohon	tuomio|NOUN|Unon|Nsg|Xill	
+N_TUOMIO	tuomioja	tuomio|NOUN|Unon|Nsg|Xpar	
+N_TUOMIO	tuomiojen	tuomio|NOUN|Unon|Nsg|Xgen	
+N_HÄIRIÖ	häiriö	häiriö|NOUN|Nsg|Xnom	disruption 
+N_HÄIRIÖ	häiriötä	häiriö|NOUN|Nsg|Xpar	
+N_HÄIRIÖ	häiriöiden	häiriö|NOUN|Npl|Xgen	
+N_HÄIRIÖ	häiriöitten	häiriö|NOUN|Npl|Xgen	
+N_HÄIRIÖ	häiriöä	häiriö|NOUNUrare|Npl|Xpar	
+N_HÄIRIÖ	häiriöin	häiriö|NOUNUrare|Npl|Xgen	
+N_HÄIRIÖ	häiriöhön	häiriö|NOUN|Unon|Nsg|Xill	
+N_HÄIRIÖ	häiriöjä	häiriö|NOUN|Unon|Nsg|Xpar	
+N_HÄIRIÖ	häiriöjen	häiriö|NOUN|Unon|Nsg|Xgen	
+N_ZOMBIE	zombie	zombie|NOUN|Nsg|Xnom	zombie 
+N_ZOMBIE	zombieta	zombie|NOUN|Nsg|Xpar	
+N_ZOMBIE	zombieita	zombie|NOUN|Npl|Xpar	
+N_ZOMBIE	zombieiden	zombie|NOUN|Npl|Xgen	
+N_ZOMBIE	zombieitten	zombie|NOUN|Npl|Xgen	
+N_ZOMBIE	zombiea	zombie|NOUNUrare|Npl|Xpar	
+N_ZOMBIE	zombiein	zombie|NOUNUrare|Npl|Xgen	
+N_ZOMBIE	zombiehen	zombie|NOUN|Unon|Nsg|Xill	
+N_ZOMBIE	zombieja	zombie|NOUN|Unon|Nsg|Xpar	
+N_ZOMBIE	zombiejen	zombie|NOUN|Unon|Nsg|Xgen	
+N_BERNIE	Bernie	Bernie|NOUN|PROPER|Nsg|Xnom	Bernie 
+N_BERNIE	Bernietä	Bernie|NOUN|PROPER|Nsg|Xpar	
+N_BERNIE	Bernieitä	Bernie|NOUN|PROPER|Npl|Xpar	
+N_BERNIE	Bernieiden	Bernie|NOUN|PROPER|Npl|Xgen	
+N_BERNIE	Bernieitten	Bernie|NOUN|PROPER|Npl|Xgen	
+N_BERNIE	Berniea	Bernie|NOUNUrare|Npl|Xpar	
+N_BERNIE	Berniein	Bernie|NOUNUrare|Npl|Xgen	
+N_BERNIE	Berniehen	Bernie|NOUN|Unon|Nsg|Xill	
+N_BERNIE	Bernieja	Bernie|NOUN|Unon|Nsg|Xpar	
+N_BERNIE	Berniejen	Bernie|NOUN|Unon|Nsg|Xgen	
+N_LEPAKKO	lepakko	lepakko|NOUN|Nsg|Xnom	bat 
+N_LEPAKKO	lepakoihin	lepakko|NOUN|Npl|Xill	
+N_LEPAKKO	lepakkoihin	lepakko|NOUN|Npl|Xill	
+N_LEPAKKO	lepakkoin	lepakko|NOUNUrare|Npl|Xgen	
+N_LEPAKKO	lepakkohon	lepakko|NOUN|Unon|Nsg|Xill	
+N_YKSIKKÖ	yksikkö	yksikkö|NOUN|Nsg|Xnom	unit 
+N_YKSIKKÖ	yksiköihin	yksikkö|NOUN|Npl|Xill	
+N_YKSIKKÖ	yksikköihin	yksikkö|NOUN|Npl|Xill	
+N_YKSIKKÖ	yksikköin	yksikkö|NOUNUrare|Npl|Xgen	
+N_YKSIKKÖ	yksikköhön	yksikkö|NOUN|Unon|Nsg|Xill	
+N_RUUVI	ruuvi	ruuvi|NOUN|Nsg|Xnom	screw 
+N_RUUVI	ruuveina	ruuvi|NOUN|Npl|Xess	
+N_RUUVI	ruuvien	ruuvi|NOUN|Npl|Xgen	
+N_RUUVI	ruuvein	ruuvi|NOUNUrare|Npl|Xgen	
+N_RUUVI	ruuvihin	ruuvi|NOUN|Unon|Nsg|Xill	
+N_RUUVI	ruuvejen	ruuvi|NOUN|Unon|Npl|Xgen	
+N_TYYLI	tyyli	tyyli|NOUN|Nsg|Xnom	style 
+N_TYYLI	tyyleinä	tyyli|NOUN|Npl|Xess	
+N_TYYLI	tyylien	tyyli|NOUN|Npl|Xgen	
+N_LOKKI	lokki	lokki|NOUN|Nsg|Xnom	seagull 
+N_LOKKI	lokissa	lokki|NOUN|Nsg|Xine	
+N_LOKKI	lokkeina	lokki|NOUN|Npl|Xess	
+N_LOKKI	lokeista	lokki|NOUN|Npl|Xela	
+N_LOKKI	lokkien	lokki|NOUN|Npl|Xgen	
+N_HÄKKI	häkki	häkki|NOUN|Nsg|Xnom	cage 
+N_HÄKKI	häkissä	häkki|NOUN|Nsg|Xine	
+N_HÄKKI	häkkeinä	häkki|NOUN|Npl|Xess	
+N_HÄKKI	häkeistä	häkki|NOUN|Npl|Xela	
+N_HÄKKI	häkkien	häkki|NOUN|Npl|Xgen	
+N_KUPPI	kuppi	kuppi|NOUN|Nsg|Xnom	cup 
+N_KUPPI	kupissa	kuppi|NOUN|Nsg|Xine	
+N_KUPPI	kuppeina	kuppi|NOUN|Npl|Xess	
+N_KUPPI	kupeista	kuppi|NOUN|Npl|Xela	
+N_KUPPI	kuppien	kuppi|NOUN|Npl|Xgen	
+N_TYYPPI	tyyppi	tyyppi|NOUN|Nsg|Xnom	type 
+N_TYYPPI	tyypissä	tyyppi|NOUN|Nsg|Xine	
+N_TYYPPI	tyyppeinä	tyyppi|NOUN|Npl|Xess	
+N_TYYPPI	tyypeistä	tyyppi|NOUN|Npl|Xela	
+N_TYYPPI	tyyppien	tyyppi|NOUN|Npl|Xgen	
+N_PORTTI	kortti	kortti|NOUN|Nsg|Xnom	card 
+N_PORTTI	kortissa	kortti|NOUN|Nsg|Xine	
+N_PORTTI	kortteina	kortti|NOUN|Npl|Xess	
+N_PORTTI	korteista	kortti|NOUN|Npl|Xela	
+N_PORTTI	korttien	kortti|NOUN|Npl|Xgen	
+N_SKEITTI	skeitti	skeitti|NOUN|Nsg|Xnom	skate 
+N_SKEITTI	skeitissä	skeitti|NOUN|Nsg|Xine	
+N_SKEITTI	skeitteinä	skeitti|NOUN|Npl|Xess	
+N_SKEITTI	skeiteistä	skeitti|NOUN|Npl|Xela	
+N_SKEITTI	skeittien	skeitti|NOUN|Npl|Xgen	
+N_LAKI	laki	laki|NOUN|Nsg|Xnom	law 
+N_LAKI	laissa	laki|NOUN|Nsg|Xine	
+N_LAKI	la’issa	laki|NOUN|Nsg|Xine	
+N_LAKI	lakeina	laki|NOUN|Npl|Xess	
+N_LAKI	laeista	laki|NOUN|Npl|Xela	
+N_LAKI	la’eista	laki|NOUN|Npl|Xela	
+N_LAKI	lakien	laki|NOUN|Npl|Xgen	
+N_HUPI	hupi	hupi|NOUN|Nsg|Xnom	fun 
+N_HUPI	huvissa	hupi|NOUN|Nsg|Xine	
+N_HUPI	hupeina	hupi|NOUN|Npl|Xess	
+N_HUPI	huveista	hupi|NOUN|Npl|Xela	
+N_HUPI	hupien	hupi|NOUN|Npl|Xgen	
+N_TAUTI	tauti	tauti|NOUN|Nsg|Xnom	disease 
+N_TAUTI	taudissa	tauti|NOUN|Nsg|Xine	
+N_TAUTI	tauteina	tauti|NOUN|Npl|Xess	
+N_TAUTI	taudeista	tauti|NOUN|Npl|Xela	
+N_TAUTI	tautien	tauti|NOUN|Npl|Xgen	
+N_NIHTI	nihti	nihti|NOUN|Nsg|Xnom	knight 
+N_NIHTI	nihdissä	nihti|NOUN|Nsg|Xine	
+N_NIHTI	nihteinä	nihti|NOUN|Npl|Xess	
+N_NIHTI	nihdeistä	nihti|NOUN|Npl|Xela	
+N_NIHTI	nihtien	nihti|NOUN|Npl|Xgen	
+N_VANKI	vanki	vanki|NOUN|Nsg|Xnom	prisoner 
+N_VANKI	vangissa	vanki|NOUN|Nsg|Xine	
+N_VANKI	vankeina	vanki|NOUN|Npl|Xess	
+N_VANKI	vangeista	vanki|NOUN|Npl|Xela	
+N_VANKI	vankien	vanki|NOUN|Npl|Xgen	
+N_HÄMMINKI	väylinki	väylinki|NOUN|Nsg|Xnom	??? 
+N_HÄMMINKI	väylingissä	väylinki|NOUN|Nsg|Xine	
+N_HÄMMINKI	väylinkeinä	väylinki|NOUN|Npl|Xess	
+N_HÄMMINKI	väylingeistä	väylinki|NOUN|Npl|Xela	
+N_HÄMMINKI	väylinkien	väylinki|NOUN|Npl|Xgen	
+N_PELTI	pelti	pelti|NOUN|Nsg|Xnom	sheet metal 
+N_PELTI	pellissä	pelti|NOUN|Nsg|Xine	
+N_PELTI	pelteinä	pelti|NOUN|Npl|Xess	
+N_PELTI	pelleistä	pelti|NOUN|Npl|Xela	
+N_PELTI	peltien	pelti|NOUN|Npl|Xgen	
+N_SOINTI	sointi	sointi|NOUN|Nsg|Xnom	sound 
+N_SOINTI	soinnissa	sointi|NOUN|Nsg|Xine	
+N_SOINTI	sointeina	sointi|NOUN|Npl|Xess	
+N_SOINTI	soinneista	sointi|NOUN|Npl|Xela	
+N_SOINTI	sointien	sointi|NOUN|Npl|Xgen	
+N_VIENTI	vienti	vienti|NOUN|Nsg|Xnom	export 
+N_VIENTI	viennissä	vienti|NOUN|Nsg|Xine	
+N_VIENTI	vienteinä	vienti|NOUN|Npl|Xess	
+N_VIENTI	vienneistä	vienti|NOUN|Npl|Xela	
+N_VIENTI	vientien	vienti|NOUN|Npl|Xgen	
+N_PUNK	punk	punk|NOUN|Nsg|Xnom	punk 
+N_PUNK	punkeina	punk|NOUN|Npl|Xess	
+N_PUNK	punkien	punk|NOUN|Npl|Xgen	
+N_ZEN	zen	zen|NOUN|Nsg|Xnom	zen 
+N_ZEN	zeneinä	zen|NOUN|Npl|Xess	
+N_ZEN	zenien	zen|NOUN|Npl|Xgen	
+N_TANKKERI	kanaali	kanaali|NOUN|Nsg|Xnom	canal 
+N_TANKKERI	kanaaleja	kanaali|NOUN|Npl|Xpar	
+N_TANKKERI	kanaaleita	kanaali|NOUN|Npl|Xpar	
+N_TANKKERI	kanaalien	kanaali|NOUN|Npl|Xgen	
+N_TANKKERI	kanaaleiden	kanaali|NOUN|Npl|Xgen	
+N_TANKKERI	kanaaleitten	kanaali|NOUN|Npl|Xgen	
+N_KEHVELI	kehveli	kehveli|NOUN|Nsg|Xnom	hoodlum 
+N_KEHVELI	kehvelejä	kehveli|NOUN|Npl|Xpar	
+N_KEHVELI	kehveleitä	kehveli|NOUN|Npl|Xpar	
+N_KEHVELI	kehvelien	kehveli|NOUN|Npl|Xgen	
+N_KEHVELI	kehveleiden	kehveli|NOUN|Npl|Xgen	
+N_KEHVELI	kehveleitten	kehveli|NOUN|Npl|Xgen	
+N_STADION	stadion	stadion|NOUN|Nsg|Xnom	stadium 
+N_STADION	stadioneja	stadion|NOUN|Npl|Xpar	
+N_STADION	stadioneita	stadion|NOUN|Npl|Xpar	
+N_STADION	stadionien	stadion|NOUN|Npl|Xgen	
+N_STADION	stadioneiden	stadion|NOUN|Npl|Xgen	
+N_STADION	stadioneitten	stadion|NOUN|Npl|Xgen	
+N_BESSERWISSER	besserwisser	besserwisser|NOUN|Nsg|Xnom	besserwisser 
+N_BESSERWISSER	besserwisserejä	besserwisser|NOUN|Npl|Xpar	
+N_BESSERWISSER	besserwissereitä	besserwisser|NOUN|Npl|Xpar	
+N_BESSERWISSER	besserwisserien	besserwisser|NOUN|Npl|Xgen	
+N_BESSERWISSER	besserwissereiden	besserwisser|NOUN|Npl|Xgen	
+N_BESSERWISSER	besserwissereitten	besserwisser|NOUN|Npl|Xgen	
+N_ONNI	onni	onni|NOUN|Nsg|Xnom	happiness 
+N_ONNI	onnena	onni|NOUN|Nsg|Xess	
+N_ONNI	onnessa	onni|NOUN|Nsg|Xine	
+N_ONNI	onnissa	onni|NOUN|Npl|Xine	
+N_ONNI	onnista	onni|NOUN|Npl|Xela	
+N_KIVI	helmi	helmi|NOUN|Nsg|Xnom	pearl 
+N_KIVI	helmenä	helmi|NOUN|Nsg|Xess	
+N_KIVI	helmessä	helmi|NOUN|Nsg|Xine	
+N_KIVI	helmissä	helmi|NOUN|Npl|Xine	
+N_KIVI	helmistä	helmi|NOUN|Npl|Xela	
+N_HAPPI	happi	happi|NOUN|Nsg|Xnom	oxygen 
+N_HAPPI	hapessa	happi|NOUN|Nsg|Xine	
+N_HAPPI	happina	happi|NOUN|Npl|Xess	
+N_HAPPI	hapista	happi|NOUN|Npl|Xela	
+N_HAPPI	happien	happi|NOUN|Npl|Xgen	
+N_TYPPI	typpi	typpi|NOUN|Nsg|Xnom	nitrogen 
+N_TYPPI	typessä	typpi|NOUN|Nsg|Xine	
+N_TYPPI	typpinä	typpi|NOUN|Npl|Xess	
+N_TYPPI	typistä	typpi|NOUN|Npl|Xela	
+N_TYPPI	typpien	typpi|NOUN|Npl|Xgen	
+N_NOKI	noki	noki|NOUN|Nsg|Xnom	coal 
+N_NOKI	noessa	noki|NOUN|Nsg|Xine	
+N_NOKI	nokina	noki|NOUN|Npl|Xess	
+N_NOKI	noista	noki|NOUN|Npl|Xela	
+N_NOKI	nokien	noki|NOUN|Npl|Xgen	
+N_KÄKI	käki	käki|NOUN|Nsg|Xnom	cuccoo 
+N_KÄKI	käessä	käki|NOUN|Nsg|Xine	
+N_KÄKI	käkinä	käki|NOUN|Npl|Xess	
+N_KÄKI	käistä	käki|NOUN|Npl|Xela	
+N_KÄKI	käkien	käki|NOUN|Npl|Xgen	
+N_KORPI	korpi	korpi|NOUN|Nsg|Xnom	wilderness 
+N_KORPI	korvessa	korpi|NOUN|Nsg|Xine	
+N_KORPI	korpina	korpi|NOUN|Npl|Xess	
+N_KORPI	korvista	korpi|NOUN|Npl|Xela	
+N_KORPI	korpien	korpi|NOUN|Npl|Xgen	
+N_KILPI	kilpi	kilpi|NOUN|Nsg|Xnom	shield 
+N_KILPI	kilvessä	kilpi|NOUN|Nsg|Xine	
+N_KILPI	kilpinä	kilpi|NOUN|Npl|Xess	
+N_KILPI	kilvistä	kilpi|NOUN|Npl|Xela	
+N_KILPI	kilpien	kilpi|NOUN|Npl|Xgen	
+N_LAHTI	lahti	lahti|NOUN|Nsg|Xnom	peninsula 
+N_LAHTI	lahdessa	lahti|NOUN|Nsg|Xine	
+N_LAHTI	lahtina	lahti|NOUN|Npl|Xess	
+N_LAHTI	lahdista	lahti|NOUN|Npl|Xela	
+N_LAHTI	lahtien	lahti|NOUN|Npl|Xgen	
+N_LEHTI	lehti	lehti|NOUN|Nsg|Xnom	leaf 
+N_LEHTI	lehdessä	lehti|NOUN|Nsg|Xine	
+N_LEHTI	lehtinä	lehti|NOUN|Npl|Xess	
+N_LEHTI	lehdistä	lehti|NOUN|Npl|Xela	
+N_LEHTI	lehtien	lehti|NOUN|Npl|Xgen	
+N_ONKI	onki	onki|NOUN|Nsg|Xnom	fishing rod 
+N_ONKI	ongessa	onki|NOUN|Nsg|Xine	
+N_ONKI	onkina	onki|NOUN|Npl|Xess	
+N_ONKI	ongista	onki|NOUN|Npl|Xela	
+N_ONKI	onkien	onki|NOUN|Npl|Xgen	
+N_HENKI	henki	henki|NOUN|Nsg|Xnom	person 
+N_HENKI	hengessä	henki|NOUN|Nsg|Xine	
+N_HENKI	henkinä	henki|NOUN|Npl|Xess	
+N_HENKI	hengistä	henki|NOUN|Npl|Xela	
+N_HENKI	henkien	henki|NOUN|Npl|Xgen	
+N_SAMPI	lampi	lampi|NOUN|Nsg|Xnom	pond 
+N_SAMPI	lammessa	lampi|NOUN|Nsg|Xine	
+N_SAMPI	lampina	lampi|NOUN|Npl|Xess	
+N_SAMPI	lammista	lampi|NOUN|Npl|Xela	
+N_SAMPI	lampien	lampi|NOUN|Npl|Xgen	
+N_RIMPI	rimpi	rimpi|NOUN|Nsg|Xnom	??? 
+N_RIMPI	rimmessä	rimpi|NOUN|Nsg|Xine	
+N_RIMPI	rimpinä	rimpi|NOUN|Npl|Xess	
+N_RIMPI	rimmistä	rimpi|NOUN|Npl|Xela	
+N_RIMPI	rimpien	rimpi|NOUN|Npl|Xgen	
+N_ARKI	arki	arki|NOUN|Nsg|Xnom	weekday 
+N_ARKI	arjessa	arki|NOUN|Nsg|Xine	
+N_ARKI	arkina	arki|NOUN|Npl|Xess	
+N_ARKI	arjista	arki|NOUN|Npl|Xela	
+N_ARKI	arkien	arki|NOUN|Npl|Xgen	
+N_JÄRKI	järki	järki|NOUN|Nsg|Xnom	sanity 
+N_JÄRKI	järjessä	järki|NOUN|Nsg|Xine	
+N_JÄRKI	järkinä	järki|NOUN|Npl|Xess	
+N_JÄRKI	järjistä	järki|NOUN|Npl|Xela	
+N_JÄRKI	järkien	järki|NOUN|Npl|Xgen	
+N_NALLE	nalle	nalle|NOUN|Nsg|Xnom	teddy 
+N_NALLE	nallea	nalle|NOUN|Nsg|Xpar	
+N_NALLE	nalleen	nalle|NOUN|Nsg|Xill	
+N_NALLE	nalleja	nalle|NOUN|Npl|Xpar	
+N_NALLE	nallejen	nalle|NOUN|Npl|Xgen	
+N_NALLE	nalleihin	nalle|NOUN|Npl|Xill	
+N_NALLE	nallein	nalle|NOUN|Npl|Xgen|Urare	
+N_NISSE	nisse	nisse|NOUN|Nsg|Xnom	bellhop 
+N_NISSE	nisseä	nisse|NOUN|Nsg|Xpar	
+N_NISSE	nisseen	nisse|NOUN|Nsg|Xill	
+N_NISSE	nissejä	nisse|NOUN|Npl|Xpar	
+N_NISSE	nissejen	nisse|NOUN|Npl|Xgen	
+N_NISSE	nisseihin	nisse|NOUN|Npl|Xill	
+N_NUKKE	nukke	nukke|NOUN|Nsg|Xnom	doll 
+N_NUKKE	nukkea	nukke|NOUN|Nsg|Xpar	
+N_NUKKE	nukkeen	nukke|NOUN|Nsg|Xill	
+N_NUKKE	nukkeja	nukke|NOUN|Npl|Xpar	
+N_NUKKE	nukkejen	nukke|NOUN|Npl|Xgen	
+N_NUKKE	nukkeihin	nukke|NOUN|Npl|Xill	
+N_JEPPE	jeppe	jeppe|NOUN|Nsg|Xnom	chap 
+N_JEPPE	jeppeä	jeppe|NOUN|Nsg|Xpar	
+N_JEPPE	jeppeen	jeppe|NOUN|Nsg|Xill	
+N_JEPPE	jeppejä	jeppe|NOUN|Npl|Xpar	
+N_JEPPE	jeppejen	jeppe|NOUN|Npl|Xgen	
+N_JEPPE	jeppeihin	jeppe|NOUN|Npl|Xill	
+N_LOTTE	Lotte	Lotte|NOUN|PROPER|Nsg|Xnom	Lotte 
+N_LOTTE	Lottea	Lotte|NOUN|PROPER|Nsg|Xpar	
+N_LOTTE	Lotteen	Lotte|NOUN|PROPER|Nsg|Xill	
+N_LOTTE	Lotteja	Lotte|NOUN|PROPER|Npl|Xpar	
+N_LOTTE	Lottejen	Lotte|NOUN|PROPER|Npl|Xgen	
+N_LOTTE	Lotteihin	Lotte|NOUN|PROPER|Npl|Xill	
+N_KIRJA	kirja	kirja|NOUN|Nsg|Xnom	book 
+N_KIRJA	kirjaa	kirja|NOUN|Nsg|Xpar	
+N_KIRJA	kirjana	kirja|NOUN|Nsg|Xess	
+N_KIRJA	kirjassa	kirja|NOUN|Nsg|Xine	
+N_KIRJA	kirjoina	kirja|NOUN|Npl|Xess	
+N_KIRJA	kirjojen	kirja|NOUN|Npl|Xgen	
+N_KIRJA	kirjoihin	kirja|NOUN|Npl|Xill	
+N_POLITIIKKA	politiikka	politiikka|NOUN|Nsg|Xnom	politics 
+N_POLITIIKKA	politiikkaa	politiikka|NOUN|Nsg|Xpar	
+N_POLITIIKKA	politiikkana	politiikka|NOUN|Nsg|Xess	
+N_POLITIIKKA	politiikassa	politiikka|NOUN|Nsg|Xine	
+N_POLITIIKKA	politiikkoina	politiikka|NOUN|Npl|Xess	
+N_POLITIIKKA	politiikkojen	politiikka|NOUN|Npl|Xgen	
+N_POLITIIKKA	politiikkoihin	politiikka|NOUN|Npl|Xill	
+N_TIPPA	tippa	tippa|NOUN|Nsg|Xnom	drop 
+N_TIPPA	tippaa	tippa|NOUN|Nsg|Xpar	
+N_TIPPA	tippana	tippa|NOUN|Nsg|Xess	
+N_TIPPA	tipassa	tippa|NOUN|Nsg|Xine	
+N_TIPPA	tippoina	tippa|NOUN|Npl|Xess	
+N_TIPPA	tippojen	tippa|NOUN|Npl|Xgen	
+N_TIPPA	tippoihin	tippa|NOUN|Npl|Xill	
+N_MITTA	mitta	mitta|NOUN|Nsg|Xnom	measure 
+N_MITTA	mittaa	mitta|NOUN|Nsg|Xpar	
+N_MITTA	mittana	mitta|NOUN|Nsg|Xess	
+N_MITTA	mitassa	mitta|NOUN|Nsg|Xine	
+N_MITTA	mittoina	mitta|NOUN|Npl|Xess	
+N_MITTA	mittojen	mitta|NOUN|Npl|Xgen	
+N_MITTA	mittoihin	mitta|NOUN|Npl|Xill	
+N_VIKA	vika	vika|NOUN|Nsg|Xnom	error 
+N_VIKA	vikana	vika|NOUN|Nsg|Xess	
+N_VIKA	viassa	vika|NOUN|Nsg|Xine	
+N_VIKA	vi’assa	vika|NOUN|Nsg|Xine	
+N_VIKA	vikoina	vika|NOUN|Npl|Xess	
+N_VIKA	vikojen	vika|NOUN|Npl|Xgen	
+N_VIKA	vikoihin	vika|NOUN|Npl|Xill	
+N_VAAKA	vaaka	vaaka|NOUN|Nsg|Xnom	scale 
+N_VAAKA	vaakana	vaaka|NOUN|Nsg|Xess	
+N_VAAKA	vaa’assa	vaaka|NOUN|Nsg|Xine	
+N_VAAKA	vaaoissa	vaaka|NOUN|Npl|Xine	
+N_VAAKA	vaa’oissa	vaaka|NOUN|Npl|Xine	
+N_SALPA	salpa	salpa|NOUN|Nsg|Xnom	bolt 
+N_SALPA	salpaa	salpa|NOUN|Nsg|Xpar	
+N_SALPA	salpana	salpa|NOUN|Nsg|Xess	
+N_SALPA	salvassa	salpa|NOUN|Nsg|Xine	
+N_SALPA	salpoina	salpa|NOUN|Npl|Xess	
+N_SALPA	salpojen	salpa|NOUN|Npl|Xgen	
+N_SALPA	salpoihin	salpa|NOUN|Npl|Xill	
+N_PATA	pata	pata|NOUN|Nsg|Xnom	kettle 
+N_PATA	pataa	pata|NOUN|Nsg|Xpar	
+N_PATA	patana	pata|NOUN|Nsg|Xess	
+N_PATA	padassa	pata|NOUN|Nsg|Xine	
+N_PATA	patoina	pata|NOUN|Npl|Xess	
+N_PATA	patojen	pata|NOUN|Npl|Xgen	
+N_PATA	patoihin	pata|NOUN|Npl|Xill	
+N_LANKA	lanka	lanka|NOUN|Nsg|Xnom	yarn 
+N_LANKA	lankaa	lanka|NOUN|Nsg|Xpar	
+N_LANKA	lankana	lanka|NOUN|Nsg|Xess	
+N_LANKA	langassa	lanka|NOUN|Nsg|Xine	
+N_LANKA	lankoina	lanka|NOUN|Npl|Xess	
+N_LANKA	lankojen	lanka|NOUN|Npl|Xgen	
+N_LANKA	lankoihin	lanka|NOUN|Npl|Xill	
+N_RAMPA	rampa	rampa|NOUN|Nsg|Xnom	cripple 
+N_RAMPA	rampaa	rampa|NOUN|Nsg|Xpar	
+N_RAMPA	rampana	rampa|NOUN|Nsg|Xess	
+N_RAMPA	rammassa	rampa|NOUN|Nsg|Xine	
+N_RAMPA	rampoina	rampa|NOUN|Npl|Xess	
+N_RAMPA	rampojen	rampa|NOUN|Npl|Xgen	
+N_RAMPA	rampoihin	rampa|NOUN|Npl|Xill	
+N_VALTA	valta	valta|NOUN|Nsg|Xnom	power 
+N_VALTA	valtaa	valta|NOUN|Nsg|Xpar	
+N_VALTA	valtana	valta|NOUN|Nsg|Xess	
+N_VALTA	vallassa	valta|NOUN|Nsg|Xine	
+N_VALTA	valtoina	valta|NOUN|Npl|Xess	
+N_VALTA	valtojen	valta|NOUN|Npl|Xgen	
+N_VALTA	valtoihin	valta|NOUN|Npl|Xill	
+N_KUTSUNTA	kutsunta	kutsunta|NOUN|Nsg|Xnom	drafts 
+N_KUTSUNTA	kutsuntaa	kutsunta|NOUN|Nsg|Xpar	
+N_KUTSUNTA	kutsuntana	kutsunta|NOUN|Nsg|Xess	
+N_KUTSUNTA	kutsunnassa	kutsunta|NOUN|Nsg|Xine	
+N_KUTSUNTA	kutsuntoina	kutsunta|NOUN|Npl|Xess	
+N_KUTSUNTA	kutsuntojen	kutsunta|NOUN|Npl|Xgen	
+N_KUTSUNTA	kutsuntoihin	kutsunta|NOUN|Npl|Xill	
+N_KYSYNTÄ	kysyntä	kysyntä|NOUN|Nsg|Xnom	demand 
+N_KYSYNTÄ	kysyntää	kysyntä|NOUN|Nsg|Xpar	
+N_KYSYNTÄ	kysyntänä	kysyntä|NOUN|Nsg|Xess	
+N_KYSYNTÄ	kysynnässä	kysyntä|NOUN|Nsg|Xine	
+N_KYSYNTÄ	kysyntöinä	kysyntä|NOUN|Npl|Xess	
+N_KYSYNTÄ	kysyntöjen	kysyntä|NOUN|Npl|Xgen	
+N_KYSYNTÄ	kysyntöihin	kysyntä|NOUN|Npl|Xill	
+N_KERTA	kerta	kerta|NOUN|Nsg|Xnom	pcs 
+N_KERTA	kertaa	kerta|NOUN|Nsg|Xpar	
+N_KERTA	kertana	kerta|NOUN|Nsg|Xess	
+N_KERTA	kerrassa	kerta|NOUN|Nsg|Xine	
+N_KERTA	kertoina	kerta|NOUN|Npl|Xess	
+N_KERTA	kertojen	kerta|NOUN|Npl|Xgen	
+N_KERTA	kertoihin	kerta|NOUN|Npl|Xill	
+N_SOITTAJA	soittaja	soittaja|NOUN|Nsg|Xnom	player 
+N_SOITTAJA	soittajaa	soittaja|NOUN|Nsg|Xpar	
+N_SOITTAJA	soittajana	soittaja|NOUN|Nsg|Xess	
+N_SOITTAJA	soittajassa	soittaja|NOUN|Nsg|Xine	
+N_SOITTAJA	soittajina	soittaja|NOUN|Npl|Xess	
+N_SOITTAJA	soittajien	soittaja|NOUN|Npl|Xgen	
+N_SOITTAJA	soittajiin	soittaja|NOUN|Npl|Xill	
+N_HÖPÖTTÄJÄ	hiihtäjä	hiihtäjä|NOUN|Nsg|Xnom	skier 
+N_HÖPÖTTÄJÄ	hiihtäjää	hiihtäjä|NOUN|Nsg|Xpar	
+N_HÖPÖTTÄJÄ	hiihtäjänä	hiihtäjä|NOUN|Nsg|Xess	
+N_HÖPÖTTÄJÄ	hiihtäjässä	hiihtäjä|NOUN|Nsg|Xine	
+N_HÖPÖTTÄJÄ	hiihtäjinä	hiihtäjä|NOUN|Npl|Xess	
+N_HÖPÖTTÄJÄ	hiihtäjien	hiihtäjä|NOUN|Npl|Xgen	
+N_HÖPÖTTÄJÄ	hiihtäjiin	hiihtäjä|NOUN|Npl|Xill	
+N_LUOKKA	luokka	luokka|NOUN|Nsg|Xnom	class 
+N_LUOKKA	luokkaa	luokka|NOUN|Nsg|Xpar	
+N_LUOKKA	luokkana	luokka|NOUN|Nsg|Xess	
+N_LUOKKA	luokassa	luokka|NOUN|Nsg|Xine	
+N_LUOKKA	luokkina	luokka|NOUN|Npl|Xess	
+N_LUOKKA	luokissa	luokka|NOUN|Npl|Xine	
+N_LUOKKA	luokkien	luokka|NOUN|Npl|Xgen	
+N_HÖLKKÄ	hölkkä	hölkkä|NOUN|Nsg|Xnom	jog 
+N_HÖLKKÄ	hölkkää	hölkkä|NOUN|Nsg|Xpar	
+N_HÖLKKÄ	hölkkänä	hölkkä|NOUN|Nsg|Xess	
+N_HÖLKKÄ	hölkässä	hölkkä|NOUN|Nsg|Xine	
+N_HÖLKKÄ	hölkkinä	hölkkä|NOUN|Npl|Xess	
+N_HÖLKKÄ	hölkissä	hölkkä|NOUN|Npl|Xine	
+N_HÖLKKÄ	hölkkien	hölkkä|NOUN|Npl|Xgen	
+N_KUOPPA	kuoppa	kuoppa|NOUN|Nsg|Xnom	pothole 
+N_KUOPPA	kuoppaa	kuoppa|NOUN|Nsg|Xpar	
+N_KUOPPA	kuoppana	kuoppa|NOUN|Nsg|Xess	
+N_KUOPPA	kuopassa	kuoppa|NOUN|Nsg|Xine	
+N_KUOPPA	kuoppina	kuoppa|NOUN|Npl|Xess	
+N_KUOPPA	kuopissa	kuoppa|NOUN|Npl|Xine	
+N_KUOPPA	kuoppien	kuoppa|NOUN|Npl|Xgen	
+N_SEPPÄ	seppä	seppä|NOUN|Nsg|Xnom	blacksmith 
+N_SEPPÄ	seppää	seppä|NOUN|Nsg|Xpar	
+N_SEPPÄ	seppänä	seppä|NOUN|Nsg|Xess	
+N_SEPPÄ	sepässä	seppä|NOUN|Nsg|Xine	
+N_SEPPÄ	seppinä	seppä|NOUN|Npl|Xess	
+N_SEPPÄ	sepissä	seppä|NOUN|Npl|Xine	
+N_SEPPÄ	seppien	seppä|NOUN|Npl|Xgen	
+N_ROTTA	rotta	rotta|NOUN|Nsg|Xnom	rat 
+N_ROTTA	rottaa	rotta|NOUN|Nsg|Xpar	
+N_ROTTA	rottana	rotta|NOUN|Nsg|Xess	
+N_ROTTA	rotassa	rotta|NOUN|Nsg|Xine	
+N_ROTTA	rottina	rotta|NOUN|Npl|Xess	
+N_ROTTA	rotissa	rotta|NOUN|Npl|Xine	
+N_ROTTA	rottien	rotta|NOUN|Npl|Xgen	
+N_KENTTÄ	kenttä	kenttä|NOUN|Nsg|Xnom	field 
+N_KENTTÄ	kenttää	kenttä|NOUN|Nsg|Xpar	
+N_KENTTÄ	kenttänä	kenttä|NOUN|Nsg|Xess	
+N_KENTTÄ	kentässä	kenttä|NOUN|Nsg|Xine	
+N_KENTTÄ	kenttinä	kenttä|NOUN|Npl|Xess	
+N_KENTTÄ	kentissä	kenttä|NOUN|Npl|Xine	
+N_KENTTÄ	kenttien	kenttä|NOUN|Npl|Xgen	
+N_VUOKA	vuoka	vuoka|NOUN|Nsg|Xnom	baking tray 
+N_VUOKA	vuokaa	vuoka|NOUN|Nsg|Xpar	
+N_VUOKA	vuokana	vuoka|NOUN|Nsg|Xess	
+N_VUOKA	vuoassa	vuoka|NOUN|Nsg|Xine	
+N_VUOKA	vuo’assa	vuoka|NOUN|Nsg|Xine	
+N_VUOKA	vuokina	vuoka|NOUN|Npl|Xess	
+N_VUOKA	vuoissa	vuoka|NOUN|Npl|Xine	
+N_VUOKA	vuo’issa	vuoka|NOUN|Npl|Xine	
+N_VUOKA	vuokien	vuoka|NOUN|Npl|Xgen	
+N_IKÄ	ikä	ikä|NOUN|Nsg|Xnom	age 
+N_IKÄ	ikää	ikä|NOUN|Nsg|Xpar	
+N_IKÄ	ikänä	ikä|NOUN|Nsg|Xess	
+N_IKÄ	iässä	ikä|NOUN|Nsg|Xine	
+N_IKÄ	i’issä	ikä|NOUN|Npl|Xine	
+N_IKÄ	ikiin	ikä|NOUN|Npl|Xill	
+N_REIKÄ	reikä	reikä|NOUN|Nsg|Xnom	hole 
+N_REIKÄ	reikää	reikä|NOUN|Nsg|Xpar	
+N_REIKÄ	reikänä	reikä|NOUN|Nsg|Xess	
+N_REIKÄ	reiässä	reikä|NOUN|Nsg|Xine	
+N_REIKÄ	rei’issä	reikä|NOUN|Npl|Xine	
+N_REIKÄ	reikiin	reikä|NOUN|Npl|Xill	
+N_LUPA	lupa	lupa|NOUN|Nsg|Xnom	permit 
+N_LUPA	lupaa	lupa|NOUN|Nsg|Xpar	
+N_LUPA	lupana	lupa|NOUN|Nsg|Xess	
+N_LUPA	luvassa	lupa|NOUN|Nsg|Xine	
+N_LUPA	lupina	lupa|NOUN|Npl|Xess	
+N_LUPA	luvissa	lupa|NOUN|Npl|Xine	
+N_LUPA	lupien	lupa|NOUN|Npl|Xgen	
+N_LEIPÄ	leipä	leipä|NOUN|Nsg|Xnom	bread 
+N_LEIPÄ	leipää	leipä|NOUN|Nsg|Xpar	
+N_LEIPÄ	leipänä	leipä|NOUN|Nsg|Xess	
+N_LEIPÄ	leivässä	leipä|NOUN|Nsg|Xine	
+N_LEIPÄ	leipinä	leipä|NOUN|Npl|Xess	
+N_LEIPÄ	leivissä	leipä|NOUN|Npl|Xine	
+N_LEIPÄ	leipien	leipä|NOUN|Npl|Xgen	
+N_SOTA	sota	sota|NOUN|Nsg|Xnom	war 
+N_SOTA	sotaa	sota|NOUN|Nsg|Xpar	
+N_SOTA	sotana	sota|NOUN|Nsg|Xess	
+N_SOTA	sodassa	sota|NOUN|Nsg|Xine	
+N_SOTA	sotina	sota|NOUN|Npl|Xess	
+N_SOTA	sodissa	sota|NOUN|Npl|Xine	
+N_SOTA	sotien	sota|NOUN|Npl|Xgen	
+N_PÖYTÄ	pöytä	pöytä|NOUN|Nsg|Xnom	table 
+N_PÖYTÄ	pöytää	pöytä|NOUN|Nsg|Xpar	
+N_PÖYTÄ	pöytänä	pöytä|NOUN|Nsg|Xess	
+N_PÖYTÄ	pöydässä	pöytä|NOUN|Nsg|Xine	
+N_PÖYTÄ	pöytinä	pöytä|NOUN|Npl|Xess	
+N_PÖYTÄ	pöydissä	pöytä|NOUN|Npl|Xine	
+N_PÖYTÄ	pöytien	pöytä|NOUN|Npl|Xgen	
+N_HONKA	honka	honka|NOUN|Nsg|Xnom	kind of a tree 
+N_HONKA	honkaa	honka|NOUN|Nsg|Xpar	
+N_HONKA	honkana	honka|NOUN|Nsg|Xess	
+N_HONKA	hongassa	honka|NOUN|Nsg|Xine	
+N_HONKA	honkina	honka|NOUN|Npl|Xess	
+N_HONKA	hongissa	honka|NOUN|Npl|Xine	
+N_HONKA	honkien	honka|NOUN|Npl|Xgen	
+N_KENKÄ	kenkä	kenkä|NOUN|Nsg|Xnom	shoe 
+N_KENKÄ	kenkää	kenkä|NOUN|Nsg|Xpar	
+N_KENKÄ	kenkänä	kenkä|NOUN|Nsg|Xess	
+N_KENKÄ	kengässä	kenkä|NOUN|Nsg|Xine	
+N_KENKÄ	kengissä	kenkä|NOUN|Npl|Xine	
+N_KENKÄ	kenkiin	kenkä|NOUN|Npl|Xill	
+N_KOMPA	kompa	kompa|NOUN|Nsg|Xnom	trick question 
+N_KOMPA	kompaa	kompa|NOUN|Nsg|Xpar	
+N_KOMPA	kompana	kompa|NOUN|Nsg|Xess	
+N_KOMPA	kommassa	kompa|NOUN|Nsg|Xine	
+N_KOMPA	kompina	kompa|NOUN|Npl|Xess	
+N_KOMPA	kommissa	kompa|NOUN|Npl|Xine	
+N_KOMPA	kompien	kompa|NOUN|Npl|Xgen	
+N_MULTA	multa	multa|NOUN|Nsg|Xnom	dirt 
+N_MULTA	multaa	multa|NOUN|Nsg|Xpar	
+N_MULTA	multana	multa|NOUN|Nsg|Xess	
+N_MULTA	mullassa	multa|NOUN|Nsg|Xine	
+N_MULTA	multina	multa|NOUN|Npl|Xess	
+N_MULTA	mullissa	multa|NOUN|Npl|Xine	
+N_MULTA	multien	multa|NOUN|Npl|Xgen	
+N_SYLTÄ	syltä	syltä|NOUN|Nsg|Xnom	??? 
+N_SYLTÄ	syltää	syltä|NOUN|Nsg|Xpar	
+N_SYLTÄ	syltänä	syltä|NOUN|Nsg|Xess	
+N_SYLTÄ	syllässä	syltä|NOUN|Nsg|Xine	
+N_SYLTÄ	syltinä	syltä|NOUN|Npl|Xess	
+N_SYLTÄ	syllissä	syltä|NOUN|Npl|Xine	
+N_SYLTÄ	syltien	syltä|NOUN|Npl|Xgen	
+N_KUNTA	kunta	kunta|NOUN|Nsg|Xnom	municipality 
+N_KUNTA	kuntaa	kunta|NOUN|Nsg|Xpar	
+N_KUNTA	kuntana	kunta|NOUN|Nsg|Xess	
+N_KUNTA	kunnassa	kunta|NOUN|Nsg|Xine	
+N_KUNTA	kuntina	kunta|NOUN|Npl|Xess	
+N_KUNTA	kunnissa	kunta|NOUN|Npl|Xine	
+N_KUNTA	kuntien	kunta|NOUN|Npl|Xgen	
+N_EMÄNTÄ	emäntä	emäntä|NOUN|Nsg|Xnom	hostess 
+N_EMÄNTÄ	emäntää	emäntä|NOUN|Nsg|Xpar	
+N_EMÄNTÄ	emäntänä	emäntä|NOUN|Nsg|Xess	
+N_EMÄNTÄ	emännässä	emäntä|NOUN|Nsg|Xine	
+N_EMÄNTÄ	emäntinä	emäntä|NOUN|Npl|Xess	
+N_EMÄNTÄ	emännissä	emäntä|NOUN|Npl|Xine	
+N_EMÄNTÄ	emäntien	emäntä|NOUN|Npl|Xgen	
+N_SELKÄ	selkä	selkä|NOUN|Nsg|Xnom	back 
+N_SELKÄ	selkää	selkä|NOUN|Nsg|Xpar	
+N_SELKÄ	selkänä	selkä|NOUN|Nsg|Xess	
+N_SELKÄ	seljässä	selkä|NOUN|Nsg|Xine	
+N_SELKÄ	seljissä	selkä|NOUN|Npl|Xine	
+N_SELKÄ	selkiin	selkä|NOUN|Npl|Xill	
+N_PROBLEEMA	probleema	probleema|NOUN|Nsg|Xnom	problem 
+N_PROBLEEMA	probleemia	probleema|NOUN|Npl|Xpar	
+N_PROBLEEMA	probleemoita	probleema|NOUN|Npl|Xpar	
+N_PROBLEEMA	probleemien	probleema|NOUN|Npl|Xgen	
+N_PROBLEEMA	probleemoitten	probleema|NOUN|Npl|Xgen	
+N_PROBLEEMA	probleemoiden	probleema|NOUN|Npl|Xgen	
+N_PROBLEEMA	probleemiin	probleema|NOUN|Npl|Xill	
+N_PROBLEEMA	probleemoihin	probleema|NOUN|Npl|Xill	
+N_PROBLEEMA	probleemain	probleema|NOUN|Npl|Xgen|Urare	
+N_PROBLEEMA	probleemojen	probleema|NOUNUrare|Npl|Xgen	
+N_PROBLEEMA	probleemoja	probleema|NOUNUrare|Npl|Xpar	
+N_KÄPÄLÄ	käpälä	käpälä|NOUN|Nsg|Xnom	paw 
+N_KÄPÄLÄ	käpälää	käpälä|NOUN|Nsg|Xpar	
+N_KÄPÄLÄ	käpälänä	käpälä|NOUN|Nsg|Xess	
+N_KÄPÄLÄ	käpälässä	käpälä|NOUN|Nsg|Xine	
+N_KÄPÄLÄ	käpälinä	käpälä|NOUN|Npl|Xess	
+N_KÄPÄLÄ	käpälien	käpälä|NOUN|Npl|Xgen	
+N_KÄPÄLÄ	käpäliin	käpälä|NOUN|Npl|Xill	
+N_MAKKARA	makkara	makkara|NOUN|Nsg|Xnom	sausage 
+N_MAKKARA	makkaraa	makkara|NOUN|Nsg|Xpar	
+N_MAKKARA	makkarana	makkara|NOUN|Nsg|Xess	
+N_MAKKARA	makkaroina	makkara|NOUN|Npl|Xess	
+N_MAKKARA	makkaroita	makkara|NOUN|Npl|Xpar	
+N_HÄKKYRÄ	häkkyrä	häkkyrä|NOUN|Nsg|Xnom	thingie 
+N_HÄKKYRÄ	häkkyrää	häkkyrä|NOUN|Nsg|Xpar	
+N_HÄKKYRÄ	häkkyränä	häkkyrä|NOUN|Nsg|Xess	
+N_HÄKKYRÄ	häkkyröinä	häkkyrä|NOUN|Npl|Xess	
+N_HÄKKYRÄ	häkkyröitä	häkkyrä|NOUN|Npl|Xpar	
+N_SIIVILÄ	mörinä	mörinä|NOUN|Nsg|Xnom	murr 
+N_SIIVILÄ	mörinää	mörinä|NOUN|Nsg|Xpar	
+N_SIIVILÄ	mörinänä	mörinä|NOUN|Nsg|Xess	
+N_SIIVILÄ	mörinässä	mörinä|NOUN|Nsg|Xine	
+N_LUSIKKA	lusikka	lusikka|NOUN|Nsg|Xnom	spoon 
+N_LUSIKKA	lusikkoina	lusikka|NOUN|Npl|Xess	
+N_LUSIKKA	lusikoissa	lusikka|NOUN|Npl|Xine	
+N_LUSIKKA	lusikoihin	lusikka|NOUN|Npl|Xill	
+N_LUSIKKA	lusikkoihin	lusikka|NOUN|Npl|Xill	
+N_KÄMMEKKÄ	kämmekkä	kämmekkä|NOUN|Nsg|Xnom	handy 
+N_KÄMMEKKÄ	kämmeköihin	kämmekkä|NOUN|Npl|Xill	
+N_KÄMMEKKÄ	kämmekköihin	kämmekkä|NOUN|Npl|Xill	
+N_ULAPPA	ulappa	ulappa|NOUN|Nsg|Xnom	horizon 
+N_ULAPPA	ulappoina	ulappa|NOUN|Npl|Xess	
+N_ULAPPA	ulapoissa	ulappa|NOUN|Npl|Xine	
+N_ULAPPA	ulapoihin	ulappa|NOUN|Npl|Xill	
+N_ULAPPA	ulappoihin	ulappa|NOUN|Npl|Xill	
+N_POHATTA	pohatta	pohatta|NOUN|Nsg|Xnom	shark 
+N_POHATTA	pohattoina	pohatta|NOUN|Npl|Xess	
+N_POHATTA	pohatoissa	pohatta|NOUN|Npl|Xine	
+N_POHATTA	pohattoihin	pohatta|NOUN|Npl|Xill	
+N_POHATTA	pohatoihin	pohatta|NOUN|Npl|Xill	
+N_SOKEA	sokea	sokea|NOUN|Nsg|Xnom	blind 
+N_SOKEA	sokeana	sokea|NOUN|Nsg|Xess	
+N_SOKEA	sokeina	sokea|NOUN|Npl|Xess	
+N_SOKEA	sokeissa	sokea|NOUN|Npl|Xine	
+N_SOKEA	sokeihin	sokea|NOUN|Npl|Xill	
+N_SOKEA	sokeisiin	sokea|NOUN|Npl|Xill	
+N_LIPEÄ	lipeä	lipeä|NOUN|Nsg|Xnom	sodium hydroxide 
+N_LIPEÄ	lipeänä	lipeä|NOUN|Nsg|Xess	
+N_LIPEÄ	lipeinä	lipeä|NOUN|Npl|Xess	
+N_LIPEÄ	lipeissä	lipeä|NOUN|Npl|Xine	
+N_LIPEÄ	lipeihin	lipeä|NOUN|Npl|Xill	
+N_LIPEÄ	lipeisiin	lipeä|NOUN|Npl|Xill	
+N_VANHEMPI	vanhempi	vanhempi|NOUN|Nsg|Xnom	parent 
+N_VANHEMPI	vanhempana	vanhempi|NOUN|Nsg|Xess	
+N_VANHEMPI	vanhemmassa	vanhempi|NOUN|Nsg|Xine	
+N_VANHEMPI	vanhempina	vanhempi|NOUN|Npl|Xess	
+N_VANHEMPI	vanhemmista	vanhempi|NOUN|Npl|Xela	
+N_VAINAA	vapaa	vapaa|NOUN|Nsg|Xnom	free 
+N_VAINAA	vapaata	vapaa|NOUN|Nsg|Xpar	
+N_VAINAA	vapaaseen	vapaa|NOUN|Nsg|Xill	
+N_TIENOO	tienoo	tienoo|NOUN|Nsg|Xnom	neighborhood 
+N_TIENOO	tienoota	tienoo|NOUN|Nsg|Xpar	
+N_TIENOO	tienooseen	tienoo|NOUN|Nsg|Xill	
+N_LEIKKUU	kerjuu	kerjuu|NOUN|Nsg|Xnom	begging 
+N_LEIKKUU	kerjuuta	kerjuu|NOUN|Nsg|Xpar	
+N_LEIKKUU	kerjuuseen	kerjuu|NOUN|Nsg|Xill	
+N_MAA	maa	maa|NOUN|Nsg|Xnom	earth 
+N_MAA	maata	maa|NOUN|Nsg|Xpar	
+N_MAA	maahan	maa|NOUN|Nsg|Xill	
+N_TEE	tee	tee|NOUN|Nsg|Xnom	tea 
+N_TEE	teetä	tee|NOUN|Nsg|Xpar	
+N_TEE	teehen	tee|NOUN|Nsg|Xill	
+N_HAI	hai	hai|NOUN|Nsg|Xnom	shark 
+N_HAI	haita	hai|NOUN|Nsg|Xpar	
+N_HAI	haihin	hai|NOUN|Nsg|Xill	
+N_PII	pii	pii|NOUN|Nsg|Xnom	silica 
+N_PII	piitä	pii|NOUN|Nsg|Xpar	
+N_PII	piihin	pii|NOUN|Nsg|Xill	
+N_OOKOO	ookoo	ookoo|NOUN|Nsg|Xnom	OK 
+N_OOKOO	ookoota	ookoo|NOUN|Nsg|Xpar	
+N_OOKOO	ookoohon	ookoo|NOUN|Nsg|Xill	
+N_PUU	puu	puu|NOUN|Nsg|Xnom	tree 
+N_PUU	puuta	puu|NOUN|Nsg|Xpar	
+N_PUU	puuhun	puu|NOUN|Nsg|Xill	
+N_PYY	pyy	pyy|NOUN|Nsg|Xnom	kind of a bird 
+N_PYY	pyytä	pyy|NOUN|Nsg|Xpar	
+N_PYY	pyyhyn	pyy|NOUN|Nsg|Xill	
+N_PÄÄ	pää	pää|NOUN|Nsg|Xnom	head 
+N_PÄÄ	päätä	pää|NOUN|Nsg|Xpar	
+N_PÄÄ	päähän	pää|NOUN|Nsg|Xill	
+N_KÖÖ	köö	köö|NOUN|Nsg|Xnom	pool/billiard stick 
+N_KÖÖ	köötä	köö|NOUN|Nsg|Xpar	
+N_KÖÖ	kööhön	köö|NOUN|Nsg|Xill	
+N_TIE	tie	tie|NOUN|Nsg|Xnom	road 
+N_TIE	tietä	tie|NOUN|Nsg|Xpar	
+N_TIE	teitä	tie|NOUN|Npl|Xpar	
+N_VUO	suo	suo|NOUN|Nsg|Xnom	swamp 
+N_VUO	suota	suo|NOUN|Nsg|Xpar	
+N_VUO	soita	suo|NOUN|Npl|Xpar	
+N_YÖ	työ	työ|NOUN|Nsg|Xnom	work 
+N_YÖ	työtä	työ|NOUN|Nsg|Xpar	
+N_YÖ	töitä	työ|NOUN|Npl|Xpar	
+N_NUGAA	nugaa	nugaa|NOUN|Nsg|Xnom	nougat 
+N_NUGAA	nugaata	nugaa|NOUN|Nsg|Xpar	
+N_NUGAA	nugaana	nugaa|NOUN|Nsg|Xess	
+N_NUGAA	nugaahan	nugaa|NOUN|Nsg|Xill	
+N_NUGAA	nugaaseen	nugaa|NOUN|Nsg|Xill	
+N_NUGAA	nugaissa	nugaa|NOUN|Npl|Xine	
+N_NUGAA	nugaista	nugaa|NOUN|Npl|Xela	
+N_NUGAA	nugaiden	nugaa|NOUN|Npl|Xgen	
+N_NUGAA	nugaitten	nugaa|NOUN|Npl|Xgen	
+N_NUGAA	nugaisiin	nugaa|NOUN|Npl|Xill	
+N_NUGAA	nugaihin	nugaa|NOUN|Npl|Xill	
+N_PATEE	patee	patee|NOUN|Nsg|Xnom	paté 
+N_PATEE	pateeta	patee|NOUN|Nsg|Xpar	
+N_PATEE	pateena	patee|NOUN|Nsg|Xess	
+N_PATEE	pateehen	patee|NOUN|Nsg|Xill	
+N_PATEE	pateeseen	patee|NOUN|Nsg|Xill	
+N_PATEE	pateissa	patee|NOUN|Npl|Xine	
+N_PATEE	pateista	patee|NOUN|Npl|Xela	
+N_PATEE	pateiden	patee|NOUN|Npl|Xgen	
+N_PATEE	pateitten	patee|NOUN|Npl|Xgen	
+N_PATEE	pateisiin	patee|NOUN|Npl|Xill	
+N_PATEE	pateihin	patee|NOUN|Npl|Xill	
+N_BIDEE	bidee	bidee|NOUN|Nsg|Xnom	bidet 
+N_BIDEE	bideetä	bidee|NOUN|Nsg|Xpar	
+N_BIDEE	bideenä	bidee|NOUN|Nsg|Xess	
+N_BIDEE	bideehen	bidee|NOUN|Nsg|Xill	
+N_BIDEE	bideeseen	bidee|NOUN|Nsg|Xill	
+N_BIDEE	bideissä	bidee|NOUN|Npl|Xine	
+N_BIDEE	bideistä	bidee|NOUN|Npl|Xela	
+N_BIDEE	bideiden	bidee|NOUN|Npl|Xgen	
+N_BIDEE	bideitten	bidee|NOUN|Npl|Xgen	
+N_BIDEE	bideisiin	bidee|NOUN|Npl|Xill	
+N_BIDEE	bideihin	bidee|NOUN|Npl|Xill	
+N_TRIKOO	trikoo	trikoo|NOUN|Nsg|Xnom	tights 
+N_TRIKOO	trikoota	trikoo|NOUN|Nsg|Xpar	
+N_TRIKOO	trikoona	trikoo|NOUN|Nsg|Xess	
+N_TRIKOO	trikoissa	trikoo|NOUN|Npl|Xine	
+N_TRIKOO	trikoista	trikoo|NOUN|Npl|Xela	
+N_TRIKOO	trikooseen	trikoo|NOUN|Nsg|Xill	
+N_TRIKOO	trikoiden	trikoo|NOUN|Npl|Xgen	
+N_TRIKOO	trikoitten	trikoo|NOUN|Npl|Xgen	
+N_TRIKOO	trikoihin	trikoo|NOUN|Npl|Xill	
+N_TRIKOO	trikoisiin	trikoo|NOUN|Npl|Xill	
+N_RAGUU	raguu	raguu|NOUN|Nsg|Xnom	ragout 
+N_RAGUU	raguuta	raguu|NOUN|Nsg|Xpar	
+N_RAGUU	raguuna	raguu|NOUN|Nsg|Xess	
+N_RAGUU	raguussa	raguu|NOUN|Nsg|Xine	
+N_RAGUU	raguista	raguu|NOUN|Npl|Xela	
+N_RAGUU	raguuseen	raguu|NOUN|Nsg|Xill	
+N_RAGUU	raguiden	raguu|NOUN|Npl|Xgen	
+N_RAGUU	raguiden	raguu|NOUN|Npl|Xgen	
+N_RAGUU	raguisiin	raguu|NOUN|Npl|Xill	
+N_RAGUU	raguihin	raguu|NOUN|Npl|Xill	
+N_FONDYY	fondyy	fondyy|NOUN|Nsg|Xnom	fondue 
+N_FONDYY	fondyytä	fondyy|NOUN|Nsg|Xpar	
+N_FONDYY	fondyynä	fondyy|NOUN|Nsg|Xess	
+N_FONDYY	fondyyssä	fondyy|NOUN|Nsg|Xine	
+N_FONDYY	fondyistä	fondyy|NOUN|Npl|Xela	
+N_FONDYY	fonduuseen	fondyy|NOUN|Nsg|Xill	
+N_FONDYY	fondyyhyn	fondyy|NOUN|Nsg|Xill	
+N_FONDYY	fondyiden	fondyy|NOUN|Npl|Xgen	
+N_FONDYY	fondyitten	fondyy|NOUN|Npl|Xgen	
+N_HYVINKÄÄ	Hyvinkää	Hyvinkää|NOUN|PROPER|Nsg|Xnom	Hyvinkää 
+N_HYVINKÄÄ	Hyvinkäätä	Hyvinkää|NOUN|PROPER|Nsg|Xpar	
+N_HYVINKÄÄ	Hyvinkäähän	Hyvinkää|NOUN|PROPER|Nsg|Xill	
+N_HYVINKÄÄ	Hyvinkääseen	Hyvinkää|NOUN|PROPER|Nsg|Xill	
+N_MILJÖÖ	miljöö	miljöö|NOUN|Nsg|Xnom	milieu 
+N_MILJÖÖ	miljöötä	miljöö|NOUN|Nsg|Xpar	
+N_MILJÖÖ	miljöönä	miljöö|NOUN|Nsg|Xess	
+N_MILJÖÖ	miljöössä	miljöö|NOUN|Nsg|Xine	
+N_MILJÖÖ	miljöistä	miljöö|NOUN|Npl|Xela	
+N_MILJÖÖ	miljööseen	miljöö|NOUN|Nsg|Xill	
+N_MILJÖÖ	miljöiden	miljöö|NOUN|Npl|Xgen	
+N_MILJÖÖ	miljöitten	miljöö|NOUN|Npl|Xgen	
+N_MILJÖÖ	miljöihin	miljöö|NOUN|Npl|Xill	
+N_MILJÖÖ	miljöisiin	miljöö|NOUN|Npl|Xill	
+N_ROSÉ	rosé	rosé|NOUN|Nsg|Xnom	rosé 
+N_ROSÉ	roséta	rosé|NOUN|Nsg|Xpar	
+N_ROSÉ	roséhen	rosé|NOUN|Nsg|Xill	
+N_ROSÉ	roséseen	rosé|NOUN|Nsg|Xill	
+N_BÉBÉ	bébé	bébé|NOUN|Nsg|Xnom	bébé 
+N_BÉBÉ	bébétä	bébé|NOUN|Nsg|Xpar	
+N_BÉBÉ	bébéhen	bébé|NOUN|Nsg|Xill	
+N_BÉBÉ	bébéseen	bébé|NOUN|Nsg|Xill	
+N_BRASSERIE	brasserie	brasserie|NOUN|Nsg|Xnom	brasserie 
+N_BRASSERIE	brasserieta	brasserie|NOUN|Nsg|Xpar	
+N_BRASSERIE	brasserietä	brasserie|NOUN|Nsg|Xpar	
+N_BRASSERIE	brasseriehen	brasserie|NOUN|Nsg|Xill	
+N_BRASSERIE	brasseriehin	brasserie|NOUN|Nsg|Xill	
+N_BRIE	brie	brie|NOUN|Nsg|Xnom	brie 
+N_BRIE	brietä	brie|NOUN|Nsg|Xpar	
+N_BRIE	briehen	brie|NOUN|Nsg|Xill	
+N_FONDUE	fondue	fondue|NOUN|Nsg|Xnom	fondue 
+N_FONDUE	fondueta	fondue|NOUN|Nsg|Xpar	
+N_FONDUE	fonduetä	fondue|NOUN|Nsg|Xpar	
+N_FONDUE	fonduena	fondue|NOUN|Nsg|Xess	
+N_FONDUE	fonduenä	fondue|NOUN|Nsg|Xess	
+N_FONDUE	fonduessa	fondue|NOUN|Nsg|Xine	
+N_FONDUE	fonduessä	fondue|NOUN|Nsg|Xine	
+N_FONDUE	fondueina	fondue|NOUN|Npl|Xess	
+N_FONDUE	fondueinä	fondue|NOUN|Npl|Xess	
+N_FONDUE	fondueiden	fondue|NOUN|Npl|Xgen	
+N_FONDUE	fondueitten	fondue|NOUN|Npl|Xgen	
+N_JOCKEY	jockey	jockey|NOUN|Nsg|Xnom	jockey 
+N_JOCKEY	jockeyta	jockey|NOUN|Nsg|Xpar	
+N_JOCKEY	jockeytä	jockey|NOUN|Nsg|Xpar	
+N_JOCKEY	jockeya	jockey|NOUN|Nsg|Xpar	
+N_COWBOY	cowboy	cowboy|NOUN|Nsg|Xnom	cowboy 
+N_COWBOY	cowboytä	cowboy|NOUN|Nsg|Xpar	
+N_COWBOY	cowboyta	cowboy|NOUN|Nsg|Xpar	
+N_KUNGFU	kungfu	kungfu|NOUN|Nsg|Xnom	kung-fu 
+N_KUNGFU	kungfuta	kungfu|NOUN|Nsg|Xpar	
+N_GAY	gay	gay|NOUN|Nsg|Xnom	gay 
+N_GAY	gayhin	gay|NOUN|Nsg|Xill	
+N_GAY	gayhyn	gay|NOUN|Nsg|Xill	
+N_KENTUCKY	Kentucky	Kentucky|NOUN|PROPER|Nsg|Xnom	Kentucky 
+N_CHACHACHA	chachacha	chachacha|NOUN|Nsg|Xnom	cha cha cha 
+N_CHACHACHA	chachachata	chachacha|NOUN|Nsg|Xpar	
+N_NOUGAT	nougat	nougat|NOUN|Nsg|Xnom	nougat 
+N_NOUGAT	nougat’ta	nougat|NOUN|Nsg|Xpar	
+N_NOUGAT	nougat’han	nougat|NOUN|Nsg|Xill	
+N_PARFAIT	parfait	parfait|NOUN|Nsg|Xnom	parfait 
+N_PARFAIT	parfait’ta	parfait|NOUN|Nsg|Xpar	
+N_PARFAIT	parfait’hen	parfait|NOUN|Nsg|Xill	
+N_BEIGNET	beignet	beignet|NOUN|Nsg|Xnom	beignet 
+N_BEIGNET	beignet’tä	beignet|NOUN|Nsg|Xpar	
+N_BEIGNET	beignet’hen	beignet|NOUN|Nsg|Xill	
+N_VERSAILLES	Versailles	Versailles|NOUN|PROPER|Nsg|Xnom	Versailles 
+N_VERSAILLES	Versailles’ta	Versailles|NOUN|PROPER|Nsg|Xpar	
+N_VERSAILLES	Versailles’hin	Versailles|NOUN|PROPER|Nsg|Xill	
+N_SERGEJ	Sergej	Sergej|NOUN|PROPER|Nsg|Xnom	Sergej 
+N_SERGEJ	Sergej’tä	Sergej|NOUN|PROPER|Nsg|Xpar	
+N_SERGEJ	Sergej’hin	Sergej|NOUN|PROPER|Nsg|Xill	
+N_BORDEAUX	bordeaux	bordeaux|NOUN|Nsg|Xnom	bordeaux 
+N_BORDEAUX	bordeaux’ta	bordeaux|NOUN|Nsg|Xpar	
+N_BORDEAUX	bordeaux’hon	bordeaux|NOUN|Nsg|Xill	
+N_SHOW	show	show|NOUN|Nsg|Xnom	show 
+N_SHOW	show’ta	show|NOUN|Nsg|Xpar	
+N_SHOW	show’hun	show|NOUN|Nsg|Xill	
+N_CAMUS	Camus	Camus|NOUN|PROPER|Nsg|Xnom	Camus 
+N_CAMUS	Camus’tä	Camus|NOUN|PROPER|Nsg|Xpar	
+N_CAMUS	Camus’hyn	Camus|NOUN|PROPER|Nsg|Xill	
+N_MONSIEUR	monsieur	monsieur|NOUN|Nsg|Xnom	monsieur 
+N_MONSIEUR	monsieur’tä	monsieur|NOUN|Nsg|Xpar	
+N_MONSIEUR	monsieur’hön	monsieur|NOUN|Nsg|Xill	
+N_TULI	tuli	tuli|NOUN|Nsg|Xnom	fire 
+N_TULI	tulessa	tuli|NOUN|Nsg|Xine	
+N_TULI	tulta	tuli|NOUN|Nsg|Xpar	
+N_TULI	tulien	tuli|NOUN|Npl|Xgen	
+N_TULI	tuliin	tuli|NOUN|Npl|Xill	
+N_VUOHI	vuohi	vuohi|NOUN|Nsg|Xnom	goat 
+N_VUOHI	vuohessa	vuohi|NOUN|Nsg|Xine	
+N_VUOHI	vuohea	vuohi|NOUN|Nsg|Xpar	
+N_VUOHI	vuohta	vuohi|NOUN|Nsg|Xpar	
+N_VUOHI	vuohien	vuohi|NOUN|Npl|Xgen	
+N_RUUHI	ruuhi	ruuhi|NOUN|Nsg|Xnom	boat 
+N_RUUHI	ruuhessa	ruuhi|NOUN|Nsg|Xine	
+N_RUUHI	ruuhta	ruuhi|NOUN|Nsg|Xpar	
+N_RUUHI	ruuhien	ruuhi|NOUN|Npl|Xgen	
+N_RUUHI	ruuhten	ruuhi|NOUN|Npl|Xgen	
+N_HIIRI	hiiri	hiiri|NOUN|Nsg|Xnom	mouse 
+N_HIIRI	hiiressä	hiiri|NOUN|Nsg|Xine	
+N_HIIRI	hiirtä	hiiri|NOUN|Nsg|Xpar	
+N_HIIRI	hiirten	hiiri|NOUN|Npl|Xgen	
+N_HIIRI	hiirien	hiiri|NOUN|Npl|Xgen	
+N_KAARI	kaari	kaari|NOUN|Nsg|Xnom	arc 
+N_MIELI	mieli	mieli|NOUN|Nsg|Xnom	mind 
+N_TAIMI	luomi	luomi|NOUN|Nsg|Xnom	mole 
+N_TAIMI	luomea	luomi|NOUN|Nsg|Xpar	
+N_TAIMI	luonta	luomi|NOUN|Nsg|Xpar	
+N_TAIMI	luomien	luomi|NOUN|Npl|Xgen	
+N_TAIMI	luonten	luomi|NOUN|Npl|Xgen	
+N_LIEMI	liemi	liemi|NOUN|Nsg|Xnom	sauce 
+N_LIEMI	liemeä	liemi|NOUN|Nsg|Xpar	
+N_LIEMI	lientä	liemi|NOUN|Nsg|Xpar	
+N_LIEMI	liemien	liemi|NOUN|Npl|Xgen	
+N_LIEMI	lienten	liemi|NOUN|Npl|Xgen	
+N_KAUSI	kausi	kausi|NOUN|Nsg|Xnom	term 
+N_KAUSI	kautena	kausi|NOUN|Nsg|Xess	
+N_KAUSI	kaudessa	kausi|NOUN|Nsg|Xine	
+N_KAUSI	kautta	kausi|NOUN|Nsg|Xpar	
+N_KAUSI	kausina	kausi|NOUN|Npl|Xess	
+N_KÖYSI	köysi	köysi|NOUN|Nsg|Xnom	rope 
+N_KÖYSI	köytenä	köysi|NOUN|Nsg|Xess	
+N_KÖYSI	köydessä	köysi|NOUN|Nsg|Xine	
+N_KÖYSI	köyttä	köysi|NOUN|Nsg|Xpar	
+N_KÖYSI	köysinä	köysi|NOUN|Npl|Xess	
+N_PONSI	ponsi	ponsi|NOUN|Nsg|Xnom	straw 
+N_PONSI	pontena	ponsi|NOUN|Nsg|Xess	
+N_PONSI	ponnessa	ponsi|NOUN|Nsg|Xine	
+N_PONSI	pontta	ponsi|NOUN|Nsg|Xpar	
+N_PONSI	ponsina	ponsi|NOUN|Npl|Xess	
+N_LÄNSI	kynsi	kynsi|NOUN|Nsg|Xnom	nail 
+N_LÄNSI	kyntenä	kynsi|NOUN|Nsg|Xess	
+N_LÄNSI	kynnessä	kynsi|NOUN|Nsg|Xine	
+N_LÄNSI	kynttä	kynsi|NOUN|Nsg|Xpar	
+N_LÄNSI	kynsiin	kynsi|NOUN|Npl|Xill	
+N_VARSI	varsi	varsi|NOUN|Nsg|Xnom	stem 
+N_VARSI	vartena	varsi|NOUN|Nsg|Xess	
+N_VARSI	varressa	varsi|NOUN|Nsg|Xine	
+N_VARSI	vartta	varsi|NOUN|Nsg|Xpar	
+N_VARSI	varsiin	varsi|NOUN|Npl|Xill	
+N_VIRSI	hirsi	hirsi|NOUN|Nsg|Xnom	timber 
+N_VIRSI	hirtenä	hirsi|NOUN|Nsg|Xess	
+N_VIRSI	hirressä	hirsi|NOUN|Nsg|Xine	
+N_VIRSI	hirttä	hirsi|NOUN|Nsg|Xpar	
+N_VIRSI	hirsiin	hirsi|NOUN|Npl|Xill	
+N_JÄLSI	jälsi	jälsi|NOUN|Nsg|Xnom	bark 
+N_JÄLSI	jältenä	jälsi|NOUN|Nsg|Xess	
+N_JÄLSI	jällessä	jälsi|NOUN|Nsg|Xine	
+N_JÄLSI	jälttä	jälsi|NOUN|Nsg|Xpar	
+N_JÄLSI	jälsiin	jälsi|NOUN|Npl|Xill	
+N_LAPSI	lapsi	lapsi|NOUN|Nsg|Xnom	child 
+N_LAPSI	lapsena	lapsi|NOUN|Nsg|Xess	
+N_LAPSI	lasta	lapsi|NOUN|Nsg|Xpar	
+N_UKSI	uksi	uksi|NOUN|Nsg|Xnom	door 
+N_UKSI	uksena	uksi|NOUN|Nsg|Xess	
+N_UKSI	usta	uksi|NOUN|Nsg|Xpar	
+N_PEITSI	peitsi	peitsi|NOUN|Nsg|Xnom	lance 
+N_PEITSI	peistä	peitsi|NOUN|Nsg|Xpar	
+N_VEITSI	veitsi	veitsi|NOUN|Nsg|Xnom	knife 
+N_HAAKSI	haaksi	haaksi|NOUN|Nsg|Xnom	boat 
+N_HAAKSI	haahtena	haaksi|NOUN|Nsg|Xess	
+N_HAAKSI	haahdessa	haaksi|NOUN|Nsg|Xine	
+N_AHVEN	ahven	ahven|NOUN|Nsg|Xnom	berch 
+N_AHVEN	ahvenessa	ahven|NOUN|Nsg|Xine	
+N_AHVEN	ahvenina	ahven|NOUN|Npl|Xess	
+N_JOUTSEN	joutsen	joutsen|NOUN|Nsg|Xnom	swan 
+N_SIEMEN	siemen	siemen|NOUN|Nsg|Xnom	seed 
+N_SIEMEN	siemenenä	siemen|NOUN|Nsg|Xess	
+N_AJATAR	ajatar	ajatar|NOUN|Nsg|Xnom	mythological creature 
+N_AJATAR	ajattarena	ajatar|NOUN|Nsg|Xess	
+N_TYTÄR	tytär	tytär|NOUN|Nsg|Xnom	daughter 
+N_TYTÄR	tyttärenä	tytär|NOUN|Nsg|Xess	
+N_IEN	ien	ien|NOUN|Nsg|Xnom	gum 
+N_IEN	ikenenä	ien|NOUN|Nsg|Xess	
+N_PUHELIN	puhelin	puhelin|NOUN|Nsg|Xnom	
+N_PUHELIN	puhelimena	puhelin|NOUN|Nsg|Xess	
+N_ELIN	elin	elin|NOUN|Nsg|Xnom	
+N_ELIN	elimenä	elin|NOUN|Nsg|Xess	
+N_SUODATIN	suodatin	suodatin|NOUN|Nsg|Xnom	filter 
+N_SUODATIN	suodattimena	suodatin|NOUN|Nsg|Xess	
+N_HEITIN	heitin	heitin|NOUN|Nsg|Xnom	thrower 
+N_HEITIN	heittimenä	heitin|NOUN|Nsg|Xess	
+N_PUIN	puin	puin|NOUN|Nsg|Xnom	cloth 
+N_PUIN	pukimena	puin|NOUN|Nsg|Xess	
+N_PYYHIN	pyyhin	pyyhin|NOUN|Nsg|Xnom	eraser 
+N_PYYHIN	pyyhkimenä	pyyhin|NOUN|Nsg|Xess	
+N_KAAVIN	raavin	raavin|NOUN|Nsg|Xnom	
+N_KAAVIN	raapimena	raavin|NOUN|Nsg|Xess	
+N_SÄRVIN	särvin	särvin|NOUN|Nsg|Xnom	foodstuff 
+N_SÄRVIN	särpimenä	särvin|NOUN|Nsg|Xess	
+N_VAADIN	vaadin	vaadin|NOUN|Nsg|Xnom	female moose 
+N_VAADIN	vaatimena	vaadin|NOUN|Nsg|Xess	
+N_LAIDUN	laidun	laidun|NOUN|Nsg|Xnom	meadows 
+N_LAIDUN	laitumena	laidun|NOUN|Nsg|Xess	
+N_SÄÄDIN	säädin	säädin|NOUN|Nsg|Xnom	controller 
+N_SÄÄDIN	säätimenä	säädin|NOUN|Nsg|Xess	
+N_ASKELLIN	askellin	askellin|NOUN|Nsg|Xnom	stepper 
+N_ASKELLIN	askeltimena	askellin|NOUN|Nsg|Xess	
+N_SIVELLIN	sivellin	sivellin|NOUN|Nsg|Xnom	paint-brush 
+N_SIVELLIN	siveltimenä	sivellin|NOUN|Nsg|Xess	
+N_KÄÄNNIN	käännin	käännin|NOUN|Nsg|Xnom	turner 
+N_KÄÄNNIN	kääntimenä	käännin|NOUN|Nsg|Xess	
+N_MUUNNIN	muunnin	muunnin|NOUN|Nsg|Xnom	adapter 
+N_MUUNNIN	muuntimena	muunnin|NOUN|Nsg|Xess	
+N_KIHARRIN	kiharrin	kiharrin|NOUN|Nsg|Xnom	curler 
+N_KIHARRIN	kihartimena	kiharrin|NOUN|Nsg|Xess	
+N_KERROIN	kerroin	kerroin|NOUN|Nsg|Xnom	multiplier 
+N_KERROIN	kertoimena	kerroin|NOUN|Nsg|Xess	
+N_KIERRIN	kierrin	kierrin|NOUN|Nsg|Xnom	turner 
+N_KIERRIN	kiertimenä	kierrin|NOUN|Nsg|Xess	
+N_POLJIN	poljin	poljin|NOUN|Nsg|Xnom	pedal 
+N_POLJIN	polkimena	poljin|NOUN|Nsg|Xess	
+N_OSATON	viaton	viaton|NOUN|Nsg|Xnom	innocent 
+N_OSATON	viattomana	viaton|NOUN|Nsg|Xess	
+N_NIMETÖN	nimetön	nimetön|NOUN|Nsg|Xnom	unnamed 
+N_NIMETÖN	nimettömänä	nimetön|NOUN|Nsg|Xess	
+N_VANHIN	kylänvanhin	kylänvanhin|NOUN|Nsg|Xnom	elder 
+N_VANHIN	kylänvanhimpana	kylänvanhin|NOUN|Nsg|Xess	
+N_LÄHIN	lähin	lähin|NOUN|Nsg|Xnom	relative 
+N_LÄHIN	lähimpänä	lähin|NOUN|Nsg|Xess	
+N_VASEN	vasen	vasen|NOUN|Nsg|Xnom	left 
+N_VASEN	vasempana	vasen|NOUN|Nsg|Xess	
+N_AAKKOSTAMINEN	aakkostaminen	aakkostaminen|NOUN|Nsg|Xnom	alphabetising 
+N_AAKKOSTAMINEN	aakkostamisena	aakkostaminen|NOUN|Nsg|Xess	
+N_KYLKIÄINEN	kylkiäinen	kylkiäinen|NOUN|Nsg|Xnom	add-on 
+N_KYLKIÄINEN	kylkiäisenä	kylkiäinen|NOUN|Nsg|Xess	
+N_VAKUUTUS	vakuutus	vakuutus|NOUN|Nsg|Xnom	insurance 
+N_VAKUUTUS	vakuutuksena	vakuutus|NOUN|Nsg|Xess	
+N_RÄJÄYTYS	räjäytys	räjäytys|NOUN|Nsg|Xnom	explosion 
+N_RÄJÄYTYS	räjäytyksenä	räjäytys|NOUN|Nsg|Xess	
+N_AAKKOSELLISUUS	aakkosellisuus	aakkosellisuus|NOUN|Nsg|Xnom	alphabetificationness 
+N_AAKKOSELLISUUS	aakkosellisuutena	aakkosellisuus|NOUN|Nsg|Xess	
+N_AAKKOSELLISUUS	aakkosellisuudessa	aakkosellisuus|NOUN|Nsg|Xine	
+N_AAKKOSELLISUUS	aakkosellisuuksina	aakkosellisuus|NOUN|Npl|Xess	
+N_KÖYHYYS	köyhyys	köyhyys|NOUN|Nsg|Xnom	poverty 
+N_KÖYHYYS	köyhyytenä	köyhyys|NOUN|Nsg|Xess	
+N_KÖYHYYS	köyhyydessä	köyhyys|NOUN|Nsg|Xine	
+N_PATSAS	patsas	patsas|NOUN|Nsg|Xnom	statue 
+N_PATSAS	patsaana	patsas|NOUN|Nsg|Xess	
+N_PATSAS	patsaissa	patsas|NOUN|Npl|Xine	
+N_RUUMIS	ruumis	ruumis|NOUN|Nsg|Xnom	body 
+N_RUUMIS	ruumiina	ruumis|NOUN|Nsg|Xess	
+N_RUUMIS	ruumiissa	ruumis|NOUN|Npl|Xine	
+N_ILMATIIVIS	ilmatiivis	ilmatiivis|NOUN|Nsg|Xnom	airtight 
+N_ILMATIIVIS	ilmatiiviinä	ilmatiivis|NOUN|Nsg|Xess	
+N_ARISTOTELES	Aristoteles	Aristoteles|NOUN|PROPER|Nsg|Xnom	Aristotle 
+N_ARISTOTELES	Aristoteleena	Aristoteles|NOUN|PROPER|Nsg|Xess	
+N_KIRVES	kirves	kirves|NOUN|Nsg|Xnom	ax 
+N_KIRVES	kirveenä	kirves|NOUN|Nsg|Xess	
+N_ÄYRÄS	äyräs	äyräs|NOUN|Nsg|Xnom	wavetop 
+N_ÄYRÄS	äyräänä	äyräs|NOUN|Nsg|Xess	
+N_ASUKAS	asukas	asukas|NOUN|Nsg|Xnom	inhabitant 
+N_ASUKAS	asukkaana	asukas|NOUN|Nsg|Xess	
+N_KÄRSÄKÄS	kärsäkäs	kärsäkäs|NOUN|Nsg|Xnom	elephant 
+N_KÄRSÄKÄS	kärsäkkäänä	kärsäkäs|NOUN|Nsg|Xess	
+N_SAAPAS	saapas	saapas|NOUN|Nsg|Xnom	boot 
+N_SAAPAS	saappaana	saapas|NOUN|Nsg|Xess	
+N_RYPÄS	rypäs	rypäs|NOUN|Nsg|Xnom	cluster 
+N_RYPÄS	ryppäänä	rypäs|NOUN|Nsg|Xess	
+N_RATAS	ratas	ratas|NOUN|Nsg|Xnom	cog 
+N_RATAS	rattaana	ratas|NOUN|Nsg|Xess	
+N_MÄTÄS	mätäs	mätäs|NOUN|Nsg|Xnom	mound 
+N_MÄTÄS	mättäänä	mätäs|NOUN|Nsg|Xess	
+N_KELTIS	amerikankeltis	amerikankeltis|NOUN|Nsg|Xnom	kind of a bird 
+N_KELTIS	amerikankelttiinä	amerikankeltis|NOUN|Nsg|Xess	
+N_IES	ies	ies|NOUN|Nsg|Xnom	??? 
+N_IES	ikeenä	ies|NOUN|Nsg|Xess	
+N_VARAS	varas	varas|NOUN|Nsg|Xnom	thief 
+N_VARAS	varkaana	varas|NOUN|Nsg|Xess	
+N_RUIS	ruis	ruis|NOUN|Nsg|Xnom	rye 
+N_RUIS	rukiina	ruis|NOUN|Nsg|Xess	
+N_VARVAS	varvas	varvas|NOUN|Nsg|Xnom	toe 
+N_VARVAS	varpaana	varvas|NOUN|Nsg|Xess	
+N_SEIVÄS	seiväs	seiväs|NOUN|Nsg|Xnom	pole 
+N_SEIVÄS	seipäänä	seiväs|NOUN|Nsg|Xess	
+N_TEHDAS	tehdas	tehdas|NOUN|Nsg|Xnom	factory 
+N_TEHDAS	tehtaana	tehdas|NOUN|Nsg|Xess	
+N_KANGAS	kangas	kangas|NOUN|Nsg|Xnom	fabric 
+N_KANGAS	kankaana	kangas|NOUN|Nsg|Xess	
+N_KÖNGÄS	köngäs	köngäs|NOUN|Nsg|Xnom	moor 
+N_KÖNGÄS	könkäänä	köngäs|NOUN|Nsg|Xess	
+N_HAMMAS	hammas	hammas|NOUN|Nsg|Xnom	tooth 
+N_HAMMAS	hampaana	hammas|NOUN|Nsg|Xess	
+N_ALLAS	allas	allas|NOUN|Nsg|Xnom	pool 
+N_ALLAS	altaana	allas|NOUN|Nsg|Xess	
+N_KINNAS	kinnas	kinnas|NOUN|Nsg|Xnom	mitten 
+N_KINNAS	kintaana	kinnas|NOUN|Nsg|Xess	
+N_RYNNÄS	rynnäs	rynnäs|NOUN|Nsg|Xnom	breast 
+N_RYNNÄS	ryntäänä	rynnäs|NOUN|Nsg|Xess	
+N_PORRAS	porras	porras|NOUN|Nsg|Xnom	step 
+N_PORRAS	portaana	porras|NOUN|Nsg|Xess	
+N_MIES	mies	mies|NOUN|Nsg|Xnom	man 
+N_MIES	miehenä	mies|NOUN|Nsg|Xess	
+N_OLUT	olut	olut|NOUN|Nsg|Xnom	beer 
+N_OLUT	oluena	olut|NOUN|Nsg|Xess	
+N_OLUT	oluen	olut|NOUN|Nsg|Xgen	
+N_OLUT	olueen	olut|NOUN|Nsg|Xill	
+N_NEITSYT	neitsyt	neitsyt|NOUN|Nsg|Xnom	virgin 
+N_NEITSYT	neitsyeen	neitsyt|NOUN|Nsg|Xill	
+N_IMMYT	immyt	immyt|NOUN|Nsg|Xnom	old wife 
+N_IMMYT	impyenä	immyt|NOUN|Nsg|Xess	
+N_IMMYT	impyeen	immyt|NOUN|Nsg|Xill	
+N_KEVÄT	kevät	kevät|NOUN|Nsg|Xnom	spring 
+N_KEVÄT	keväänä	kevät|NOUN|Nsg|Xess	
+N_AIVOKUOLLUT	aivokuollut	aivokuollut|NOUN|Nsg|Xnom	braindead 
+N_AIVOKUOLLUT	aivokuolleena	aivokuollut|NOUN|Nsg|Xess	
+N_SIVISTYNYT	sivistynyt	sivistynyt|NOUN|Nsg|Xnom	civilised 
+N_SIVISTYNYT	sivistyneenä	sivistynyt|NOUN|Nsg|Xess	
+N_ASTE	aste	aste|NOUN|Nsg|Xnom	grade 
+N_ASTE	asteena	aste|NOUN|Nsg|Xess	
+N_PISTE	piste	piste|NOUN|Nsg|Xnom	full stop 
+N_PISTE	pisteenä	piste|NOUN|Nsg|Xess	
+N_KASTIKE	kastike	kastike|NOUN|Nsg|Xnom	sauce 
+N_KASTIKE	kastikkeena	kastike|NOUN|Nsg|Xess	
+N_LÄÄKE	lääke	lääke|NOUN|Nsg|Xnom	medicine 
+N_LÄÄKE	lääkkeenä	lääke|NOUN|Nsg|Xess	
+N_APE	ape	ape|NOUN|Nsg|Xnom	grub 
+N_APE	appeena	ape|NOUN|Nsg|Xess	
+N_RIPE	ripe	ripe|NOUN|Nsg|Xnom	leftovers 
+N_RIPE	rippeenä	ripe|NOUN|Nsg|Xess	
+N_LAITE	laite	laite|NOUN|Nsg|Xnom	machine 
+N_LAITE	laitteena	laite|NOUN|Nsg|Xess	
+N_KÄSITE	käsite	käsite|NOUN|Nsg|Xnom	concept 
+N_KÄSITE	käsitteenä	käsite|NOUN|Nsg|Xess	
+N_KOE	koe	koe|NOUN|Nsg|Xnom	test 
+N_KOE	kokeena	koe|NOUN|Nsg|Xess	
+N_PYYHE	pyyhe	pyyhe|NOUN|Nsg|Xnom	towel 
+N_PYYHE	pyyhkeenä	pyyhe|NOUN|Nsg|Xess	
+N_TARVE	tarve	tarve|NOUN|Nsg|Xnom	need 
+N_TARVE	tarpeena	tarve|NOUN|Nsg|Xess	
+N_VIIVE	lieve	lieve|NOUN|Nsg|Xnom	tux tail 
+N_VIIVE	liepeenä	lieve|NOUN|Nsg|Xess	
+N_KIDE	kide	kide|NOUN|Nsg|Xnom	crystal 
+N_KIDE	kiteenä	kide|NOUN|Nsg|Xess	
+N_JOHDE	johde	johde|NOUN|Nsg|Xnom	electrode 
+N_JOHDE	johteena	johde|NOUN|Nsg|Xess	
+N_LUMME	lumme	lumme|NOUN|Nsg|Xnom	pond leaf 
+N_LUMME	lumpeena	lumme|NOUN|Nsg|Xess	
+N_MIELLE	mielle	mielle|NOUN|Nsg|Xnom	thought 
+N_MIELLE	mielteenä	mielle|NOUN|Nsg|Xess	
+N_VUOLLE	vuolle	vuolle|NOUN|Nsg|Xnom	woodcut 
+N_VUOLLE	vuolteena	vuolle|NOUN|Nsg|Xess	
+N_RAKENNE	rakenne	rakenne|NOUN|Nsg|Xnom	construct 
+N_RAKENNE	rakenteena	rakenne|NOUN|Nsg|Xess	
+N_KIINNE	kiinne	kiinne|NOUN|Nsg|Xnom	hairspray 
+N_KIINNE	kiinteenä	kiinne|NOUN|Nsg|Xess	
+N_AARRE	aarre	aarre|NOUN|Nsg|Xnom	treasure 
+N_AARRE	aarteena	aarre|NOUN|Nsg|Xess	
+N_KIERRE	kierre	kierre|NOUN|Nsg|Xnom	spin 
+N_KIERRE	kierteenä	kierre|NOUN|Nsg|Xess	
+N_HYLJE	hylje	hylje|NOUN|Nsg|Xnom	
+N_HYLJE	hylkeenä	hylje|NOUN|Nsg|Xess	
+N_POHJE	pohje	pohje|NOUN|Nsg|Xnom	thigh 
+N_POHJE	pohkeena	pohje|NOUN|Nsg|Xess	
+N_ASKAR	askar	askar|NOUN|Nsg|Xnom	|Bc| chore 
+N_ASKAR	askare	askar|NOUN|Nsg|Xnom	
+N_ASKAR	askarena	askar|NOUN|Nsg|Xess	
+N_ASKAR	askareena	askar|NOUN|Nsg|Xess	
+N_KYYNEL	kyynel	kyynel|NOUN|Nsg|Xnom	|Bc| tear 
+N_KYYNEL	kyynele	kyynel|NOUN|Nsg|Xnom	
+N_KYYNEL	kyynelenä	kyynel|NOUN|Nsg|Xess	
+N_KYYNEL	kyyneleenä	kyynel|NOUN|Nsg|Xess	
+N_SÄEN	säen	säen|NOUN|Nsg|Xnom	|Bc| spark 
+N_SÄEN	säkene	säen|NOUN|Nsg|Xnom	
+N_SÄEN	säkenenä	säen|NOUN|Nsg|Xess	
+N_SÄEN	säkeneenä	säen|NOUN|Nsg|Xess	
+N_TAIVAL	taival	taival|NOUN|Nsg|Xnom	|Bc| hike 
+N_TAIVAL	taipale	taival|NOUN|Nsg|Xnom	
+N_TAIVAL	taipalena	taival|NOUN|Nsg|Xess	
+N_TAIVAL	taipaleena	taival|NOUN|Nsg|Xess	
+N_UDAR	udar	udar|NOUN|Nsg|Xnom	|Bc| teat 
+N_UDAR	utare	udar|NOUN|Nsg|Xnom	
+N_UDAR	utarena	udar|NOUN|Nsg|Xess	
+N_UDAR	utareena	udar|NOUN|Nsg|Xess	
+N_PENGER	penger	penger|NOUN|Nsg|Xnom	|Bc| bank 
+N_PENGER	penkere	penger|NOUN|Nsg|Xnom	
+N_PENGER	penkerenä	penger|NOUN|Nsg|Xess	
+N_PENGER	penkereenä	penger|NOUN|Nsg|Xess	
+N_OMMEL	ommel	ommel|NOUN|Nsg|Xnom	|Bc| stitch 
+N_OMMEL	ompele	ommel|NOUN|Nsg|Xnom	
+N_OMMEL	ompelena	ommel|NOUN|Nsg|Xess	
+N_OMMEL	ompeleena	ommel|NOUN|Nsg|Xess	
+N_VEMMEL	vemmel	vemmel|NOUN|Nsg|Xnom	
+N_VEMMEL	vempele	vemmel|NOUN|Nsg|Xnom	
+N_VEMMEL	vempelenä	vemmel|NOUN|Nsg|Xess	
+N_VEMMEL	vempeleenä	vemmel|NOUN|Nsg|Xess	
+N_KINNER	kinner	kinner|NOUN|Nsg|Xnom	|Bc| heel 
+N_KINNER	kintere	kinner|NOUN|Nsg|Xnom	
+N_KINNER	kinterenä	kinner|NOUN|Nsg|Xess	
+N_KINNER	kintereenä	kinner|NOUN|Nsg|Xess	
+N_KANNEL	kannel	kannel|NOUN|Nsg|Xnom	|Bc| kantele 
+N_KANNEL	kantele	kannel|NOUN|Nsg|Xnom	
+N_KANNEL	kantelena	kannel|NOUN|Nsg|Xess	
+N_KANNEL	kanteleena	kannel|NOUN|Nsg|Xess	
+N_MANNER	manner	manner|NOUN|Nsg|Xnom	|Bc| continent 
+N_MANNER	mantere	manner|NOUN|Nsg|Xnom	
+N_MANNER	manterena	manner|NOUN|Nsg|Xess	
+N_MANNER	mantereena	manner|NOUN|Nsg|Xess	
+N_PIENNAR	piennar	piennar|NOUN|Nsg|Xnom	|Bc| curb 
+N_PIENNAR	pientare	piennar|NOUN|Nsg|Xnom	
+N_PIENNAR	pientarena	piennar|NOUN|Nsg|Xess	
+N_PIENNAR	pientareena	piennar|NOUN|Nsg|Xess	
+N_AUER	auer	auer|NOUN|Nsg|Xnom	|Bc| morning mist 
+N_AUER	autere	auer|NOUN|Nsg|Xnom	
+N_AUER	auterena	auer|NOUN|Nsg|Xess	
+N_AUER	autereena	auer|NOUN|Nsg|Xess	
+N_VERI	veri	veri|NOUN|Nsg|Xnom	blood 
+N_VERI	verta	veri|NOUN|Nsg|Xpar	
+N_VERI	vertä	veri|NOUN|Nsg|Xpar	
+N_MERI	meri	meri|NOUN|Nsg|Xnom	sea 
+N_MERI	merta	meri|NOUN|Nsg|Xpar	
+N_MERI	mertä	meri|NOUN|Nsg|Xpar	
+N_UROS	uros	uros|NOUN|Nsg|Xnom	male 
+N_UROS	uroksen	uros|NOUN|Nsg|Xgen	
+N_UROS	uroon	uros|NOUN|Nsg|Xgen	
+N_VELI	veli	veli|NOUN|Nsg|Xnom	brother 
+N_VELI	veljeä	veli|NOUN|Nsg|Xpar	
+N_VELI	veljen	veli|NOUN|Nsg|Xgen	
+N_AIKA	aika	aika|NOUN|Nsg|Xnom	time 
+N_AIKA	ajassa	aika|NOUN|Nsg|Xine	
+N_POIKA	poika	poika|NOUN|Nsg|Xnom	boy 
+N_POIKA	pojassa	poika|NOUN|Nsg|Xine	
+N_AAMUYKSI	aamuyksi	aamuyksi|NOUN|Nsg|Xnom	1 a.m. 
+N_AAMUYKSI	aamuyhtä	aamuyksi|NOUN|Nsg|Xpar	
+N_AAMUYKSI	aamuyhtenä	aamuyksi|NOUN|Nsg|Xess	
+N_AAMUKOLME	aamukolme	aamukolme|NOUN|Nsg|Xnom	3 a.m. 
+N_AAMUKOLME	aamukolmea	aamukolme|NOUN|Nsg|Xpar	
+N_AAMUKOLME	aamukolmeen	aamukolme|NOUN|Nsg|Xill	
+N_AAMUKOLME	aamukolmia	aamukolme|NOUN|Npl|Xpar	
+N_AAMUKOLME	aamukolmien	aamukolme|NOUN|Npl|Xgen	
+N_AAMUKOLME	aamukolmiin	aamukolme|NOUN|Npl|Xill	
+N_AAMUKAHDEKSAN	aamukahdeksan	aamukahdeksan|NOUN|Nsg|Xnom	8 a.m. 
+N_AAMUKAHDEKSAN	aamukahdeksaa	aamukahdeksan|NOUN|Nsg|Xpar	
+N_AAMUKAHDEKSAN	aamukahdeksana	aamukahdeksan|NOUN|Nsg|Xess	
+N_AAMUKAHDEKSAN	aamukahdeksassa	aamukahdeksan|NOUN|Nsg|Xine	
+N_AAMUKAHDEKSAN	aamukahdeksina	aamukahdeksan|NOUN|Npl|Xess	
+N_AAMUKAHDEKSAN	aamukahdeksien	aamukahdeksan|NOUN|Npl|Xgen	
+N_AAMUKAHDEKSAN	aamukahdeksiin	aamukahdeksan|NOUN|Npl|Xill	
+N_AAMUYHDEKSÄN	aamuyhdeksän	aamuyhdeksän|NOUN|Nsg|Xnom	9 a.m. 
+N_AAMUYHDEKSÄN	aamuyhdeksää	aamuyhdeksän|NOUN|Nsg|Xpar	
+N_AAMUYHDEKSÄN	aamuyhdeksänä	aamuyhdeksän|NOUN|Nsg|Xess	
+N_AAMUYHDEKSÄN	aamuyhdeksässä	aamuyhdeksän|NOUN|Nsg|Xine	
+N_AAMUYHDEKSÄN	aamuyhdeksinä	aamuyhdeksän|NOUN|Npl|Xess	
+N_AAMUYHDEKSÄN	aamuyhdeksien	aamuyhdeksän|NOUN|Npl|Xgen	
+N_AAMUYHDEKSÄN	aamuyhdeksiin	aamuyhdeksän|NOUN|Npl|Xill	
+N_AAMUKYMMENEN	aamukymmenen	aamukymmenen|NOUN|Nsg|Xnom	10 a.m. 
+N_VUOSITUHAT	vuosituhat	vuosituhat|NOUN|Nsg|Xnom	millennium 
+N_VUOSITUHAT	vuosituhantena	vuosituhat|NOUN|Nsg|Xess	
+N_AIVOT	aivot	aivot|NOUN|Npl|Xnom	brains 
+N_AIVOT	aivo	aivot|NOUN|Nsg|Xnom	
+N_PÖKSYT	pöksyt	pöksyt|NOUN|Npl|Xnom	pants 
+N_PÖKSYT	pöksy	pöksyt|NOUN|Nsg|Xnom	
+N_HOUSUT	housut	housut|NOUN|Npl|Xnom	pants 
+N_HOUSUT	housu	housut|NOUN|Nsg|Xnom	
+N_JOUKOT	huoltojoukot	huolto|Bc|joukot|NOUN|Npl|Xnom	troops 
+N_JOUKOT	huoltojoukko	huolto|Bc|joukot|NOUN|Nsg|Xnom	
+N_FARKUT	farkut	farkut|NOUN|Npl|Xnom	jeans 
+N_FARKUT	farkku	farkut|NOUN|Nsg|Xnom	
+N_TIEDOT	perustiedot	perus|Bc|tiedot|NOUN|Npl|Xnom	knowledge (in school grades) 
+N_TIEDOT	perustieto	perus|Bc|tiedot|NOUN|Nsg|Xnom	
+N_TYTÖT	kaksostytöt	kaksos|Bc|tytöt|NOUN|Npl|Xnom	girls ? 
+N_TYTÖT	kaksostyttö	kaksos|Bc|tytöt|NOUN|Nsg|Xnom	
+N_PIDOT	pidot	pidot|NOUN|Npl|Xnom	bacchanalia 
+N_PIDOT	pito	pidot|NOUN|Nsg|Xnom	
+N_RAVUT	ravut	ravut|NOUN|Npl|Xnom	crabs ?? 
+N_RAVUT	rapu	ravut|NOUN|Nsg|Xnom	
+N_URUT	urut	urut|NOUN|Npl|Xnom	organs 
+N_URUT	urku	urut|NOUN|Nsg|Xnom	
+N_RAPUT	raput	raput|NOUN|Npl|Xnom	stairs 
+N_RAPUT	rappu	raput|NOUN|Nsg|Xnom	
+N_KÄÄDYT	käädyt	käädyt|NOUN|Npl|Xnom	necklace 
+N_KÄÄDYT	kääty	käädyt|NOUN|Nsg|Xnom	
+N_AALLOT	aallot	aallot|NOUN|Npl|Xnom	waves 
+N_AALLOT	aalto	aallot|NOUN|Nsg|Xnom	
+N_OPINNOT	opinnot	opinnot|NOUN|Npl|Xnom	studies 
+N_OPINNOT	opinto	opinnot|NOUN|Nsg|Xnom	
+N_RAUNIOT	rauniot	rauniot|NOUN|Npl|Xnom	ruins 
+N_RAUNIOT	raunio	rauniot|NOUN|Nsg|Xnom	
+N_PIPPALOT	pippalot	pippalot|NOUN|Npl|Xnom	party 
+N_PIPPALOT	pippalo	pippalot|NOUN|Nsg|Xnom	
+N_NEUVOTTELUT	neuvottelut	neuvottelut|NOUN|Npl|Xnom	negotiation 
+N_NEUVOTTELUT	neuvottelu	neuvottelut|NOUN|Nsg|Xnom	
+N_SÄÄNNÖT	säännöt	säännöt|NOUN|Npl|Xnom	rules 
+N_SÄÄNNÖT	sääntö	säännöt|NOUN|Nsg|Xnom	
+N_LEHDET	lehtinä	lehti|NOUN|Npl|Xess	
+N_LEHDET	lehdistä	lehti|NOUN|Npl|Xela	
+N_LEHDET	lehtien	lehti|NOUN|Npl|Xgen	
+N_TUNNIT	tunnit	tunnit|NOUN|Npl|Xnom	classes 
+N_TUNNIT	tunti	tunnit|NOUN|Nsg|Xnom	
+N_SUKAT	sukat	sukat|NOUN|Npl|Xnom	socks 
+N_SUKAT	sukka	sukat|NOUN|Nsg|Xnom	
+N_KENGÄT	kengät	kengät|NOUN|Npl|Xnom	shoes 
+N_KENGÄT	kenkä	kengät|NOUN|Nsg|Xnom	
+N_RAVET	ravet	ravet|NOUN|Npl|Xnom	rave 
+N_RAVET	rave	ravet|NOUN|Nsg|Xnom	
+N_BÄNET	bänet	bänet|NOUN|Npl|Xnom	breakup 
+N_BÄNET	bäne	bänet|NOUN|Nsg|Xnom	
+N_MARKKINAT	markkinat	markkinat|NOUN|Npl|Xnom	market 
+N_MARKKINAT	markkina	markkinat|NOUN|Nsg|Xnom	
+N_HIPAT	hipat	hipat|NOUN|Npl|Xnom	party 
+N_HIPAT	hippa	hipat|NOUN|Nsg|Xnom	
+N_KUOPAT	kuopat	kuopat|NOUN|Npl|Xnom	holes ? 
+N_KUOPAT	kuoppa	kuopat|NOUN|Nsg|Xnom	
+N_RAUDAT	raudat	raudat|NOUN|Npl|Xnom	irons 
+N_RAUDAT	rauta	raudat|Nsg|Xnom	
+N_TAVAT	tavat	tavat|NOUN|Npl|Xnom	manners 
+N_TAVAT	tapa	tavat|NOUN|Nsg|Xnom	
+N_VALLAT	vallat	vallat|NOUN|Npl|Xnom	states 
+N_VALLAT	valta	vallat|NOUN|Nsg|Xnom	
+N_VARAT	varat	varat|NOUN|Npl|Xnom	budget 
+N_VARAT	vara	varat|NOUN|Nsg|Xnom	
+N_JUHLAT	juhlat	juhlat|NOUN|Npl|Xnom	party 
+N_JUHLAT	juhla	juhlat|NOUN|Nsg|Xnom	
+N_KIHARAT	kiharat	kiharat|NOUN|Npl|Xnom	curls 
+N_KIHARAT	kihara	kiharat|NOUN|Nsg|Xnom	
+N_KÄRÄJÄT	käräjät	käräjät|NOUN|Npl|Xnom	court 
+N_KÄRÄJÄT	käräjä	käräjät|NOUN|Nsg|Xnom	
+N_PAIKAT	paikat	paikat|NOUN|Npl|Xnom	body parts 
+N_PAIKAT	paikka	paikat|NOUN|Nsg|Xnom	
+N_SILAKAT	silakat	silakat|NOUN|Npl|Xnom	kinds of a fish 
+N_SILAKAT	silakka	silakat|NOUN|Nsg|Xnom	
+N_RINTSIKAT	rintsikat	rintsikat|NOUN|Npl|Xnom	bra 
+N_RINTSIKAT	rintsikka	rintsikat|NOUN|Nsg|Xnom	
+N_TIETEET	tieteet	tieteet|NOUN|Npl|Xnom	sciences 
+N_TIETEET	tiede	tieteet|NOUN|Nsg|Xnom	
+N_FARMARIT	farmarit	farmarit|NOUN|Npl|Xnom	jeans 
+N_FARMARIT	farmari	farmarit|NOUN|Nsg|Xnom	
+N_KASTANJETIT	kastanjetit	kastanjetit|NOUN|Npl|Xnom	kind of an instrumemt 
+N_KASTANJETIT	kastanjetti	kastanjetit|NOUN|Nsg|Xnom	
+N_TAUDIT	taudit	taudit|NOUN|Npl|Xnom	diseases 
+N_TAUDIT	tauti	taudit|NOUN|Nsg|Xnom	
+N_PIHDIT	pihdit	pihdit|NOUN|Npl|Xnom	jaws 
+N_PIHDIT	pihti	pihdit|NOUN|Nsg|Xnom	
+N_TONGIT	tongit	tongit|NOUN|Npl|Xnom	pliers 
+N_TONGIT	tonki	tongit|NOUN|Nsg|Xnom	
+N_SYÖMINGIT	syömingit	syömingit|NOUN|Npl|Xnom	eating party 
+N_SYÖMINGIT	syöminki	syöminki|NOUN|Nsg|Xnom	
+N_LÄNGET	länget	länget|NOUN|Npl|Xnom	some cowboy accessory thing 
+N_LÄNGET	länki	länget|NOUN|Nsg|Xnom	
+N_LASIT	lasit	lasit|NOUN|Npl|Xnom	glasses 
+N_LASIT	lasi	lasit|NOUN|Nsg|Xnom	
+N_BIKINIT	bikinit	bikinit|NOUN|Npl|Xnom	bikini 
+N_BIKINIT	bikini	bikinit|NOUN|Nsg|Xnom	
+N_LIIVIT	liivit	liivit|NOUN|Npl|Xnom	vest 
+N_LIIVIT	liivi	liivit|NOUN|Nsg|Xnom	
+N_HOPEAT	hopeat	hopeat|NOUN|Npl|Xnom	cutlery (silvers) 
+N_HOPEAT	hopea	hopeat|NOUN|Nsg|Xnom	
+N_TIET	tiet	tiet|NOUN|Npl|Xnom	roads 
+N_TIET	tie	tiet|NOUN|Nsg|Xnom	
+N_TYÖT	työt	työt|NOUN|Npl|Xnom	employment 
+N_TYÖT	työ	työt|NOUN|Nsg|Xnom	
+N_VANHEMMAT	vanhemmat	vanhemmat|NOUN|Npl|Xnom	parents 
+N_VANHEMMAT	vanhempi	vanhemmat|NOUN|Nsg|Xnom	
+N_ITÄMAAT	itämaat	itämaat|NOUN|Npl|Xnom	near east 
+N_ITÄMAAT	itämaa	itämaat|NOUN|Nsg|Xnom	
+N_PUUT	puut	puut|NOUN|Npl|Xnom	trees 
+N_PUUT	puu	puut|NOUN|Nsg|Xnom	
+N_HÄÄT	häät	häät|NOUN|Npl|Xnom	wedding 
+N_HÄÄT	hää	häät|NOUN|Nsg|Xnom	
+N_TALKOOT	talkoot	talkoot|NOUN|Npl|Xnom	house party 
+N_TALKOOT	talkoo	talkoot|NOUN|Nsg|Xnom	
+N_SAKSET	sakset	sakset|NOUN|Npl|Xnom	scissors 
+N_SAKSET	saksi	sakset|NOUN|Nsg|Xnom	
+N_RIPSET	ripset	ripset|NOUN|Npl|Xnom	eyebrows 
+N_RIPSET	ripsi	ripset|NOUN|Nsg|Xnom	
+N_KANNET	kannet	kannet|NOUN|Npl|Xnom	covers 
+N_KANNET	kansi	kannet|NOUN|Nsg|Xnom	
+N_VUODET	vuodet	vuodet|NOUN|Npl|Xnom	years 
+N_VUODET	vuosi	vuodet|NOUN|Nsg|Xnom	
+N_TOIMET	toimet	toimet|NOUN|Npl|Xnom	actions 
+N_TOIMET	toimi	toimet|NOUN|Nsg|Xnom	
+N_HÖYHENET	höyhenet	höyhen|NOUN|Npl|Xnom	feathers 
+N_HÖYHENET	höyhen	höyhenet|NOUN|Nsg|Xnom	
+N_ATERIMET	aterimet	aterimet|NOUN|Npl|Xnom	cutlery 
+N_ATERIMET	aterin	aterimet|NOUN|Nsg|Xnom	
+N_KERITSIMET	keritsimet	keritsimet|NOUN|Npl|Xnom	sheep razor thing 
+N_KERITSIMET	keritsin	keritsimet|NOUN|Nsg|Xnom	
+N_ANTIMET	antimet	antimet|NOUN|Npl|Xnom	offerings 
+N_ANTIMET	annin	antimet|NOUN|Nsg|Xnom	
+N_HOKSOTTIMET	hoksottimet	hoksottimet|NOUN|Npl|Xnom	smarts 
+N_HOKSOTTIMET	hoksotin	hoksottimet|NOUN|Nsg|Xnom	
+N_SYNNYTTIMET	synnyttimet	synnyttimet|NOUN|Npl|Xnom	ovaries 
+N_SYNNYTTIMET	synnytin	synnyttimet|NOUN|Nsg|Xnom	
+N_PUKIMET	pukimet	pukimet|NOUN|Npl|Xnom	clothes 
+N_PUKIMET	puin	pukimet|NOUN|Nsg|Xnom	
+N_IKENET	ikenet	ikenet|NOUN|Npl|Xnom	gums 
+N_IKENET	ien	ikenet|NOUN|Nsg|Xnom	
+N_LIITTOUTUNEET	liittoutuneet	liittoutuneet|NOUN|Npl|Xnom	allied 
+N_LIITTOUTUNEET	liittoutunut	liittoutunut|NOUN|Nsg|Xnom	
+N_RAPPUSET	rappuset	rappuset|NOUN|Npl|Xnom	stairs 
+N_RAPPUSET	rappunen	rappuset|NOUN|Nsg|Xnom	
+N_VIHKIÄISET	vihkiäiset	vihkiäiset|NOUN|Npl|Xnom	engagement 
+N_VIHKIÄISET	vihkiäinen	vihkiäiset|NOUN|Nsg|Xnom	
+N_VALJAAT	valjaat	valjaat|NOUN|Npl|Xnom	strap 
+N_VALJAAT	valjas	valjaat|NOUN|Nsg|Xnom	
+N_TIKKAAT	tikkaat	tikkaat|NOUN|Npl|Xnom	ladders 
+N_TIKKAAT	tikas	tikkaat|NOUN|Nsg|Xnom	
+N_RATTAAT	rattaat	rattaat|NOUN|Npl|Xnom	stroller 
+N_RATTAAT	ratas	rattaat|NOUN|Nsg|Xnom	
+N_RENKAAT	renkaat	renkaat|NOUN|Npl|Xnom	tires 
+N_RENKAAT	rengas	renkaat|NOUN|Nsg|Xnom	
+N_RYNTÄÄT	ryntäät	ryntäät|NOUN|Npl|Xnom	breasts 
+N_RYNTÄÄT	rynnäs	ryntäät|NOUN|Nsg|Xnom	
+N_HYNTTYYT	hynttyyt	hynttyyt|NOUN|Npl|Xnom	clothes 
+N_HYNTTYYT	hyntys	hynttyyt|NOUN|Nsg|Xnom	
+N_RYNTTYYT	rynttyyt	rynttyyt|NOUN|Npl|Xnom	rags 
+N_RYNTTYYT	ryntys	rynttyyt|NOUN|Nsg|Xnom	
+N_MALTAAT	maltaat	maltaat|NOUN|Npl|Xnom	hops 
+N_MALTAAT	mallas	maltaat|NOUN|Nsg|Xnom	
+N_PORTAAT	portaat	portaat|NOUN|Npl|Xnom	stairs 
+N_PORTAAT	porras	portaat|NOUN|Nsg|Xnom	
+N_SERKUKSET	serkukset	serkukset|NOUN|Npl|Xnom	cousins 
+N_SERKUKSET	serkus	serkukset|NOUN|Nsg|Xnom	
+N_YSTÄVYKSET	ystävykset	ystävykset|NOUN|Npl|Xnom	friends 
+N_YSTÄVYKSET	ystävys	ystävykset|NOUN|Nsg|Xnom	
+N_OIKEUDET	oikeudet	oikeudet|NOUN|Npl|Xnom	rights 
+N_OIKEUDET	oikeus	oikeudet|NOUN|Nsg|Xnom	
+N_KAMPPEET	kamppeet	kamppeet|NOUN|Npl|Xnom	equipment 
+N_KAMPPEET	kampe	kamppeet|NOUN|Nsg|Xnom	
+N_HYNTTEET	hyntteet	hyntteet|NOUN|Npl|Xnom	clothes 
+N_HYNTTEET	hynte	hyntteet|NOUN|Nsg|Xnom	
+N_PUKEET	pukeet	pukeet|NOUN|Npl|Xnom	clothes 
+N_PUKEET	pue	pukeet|NOUN|Nsg|Xnom	
+N_KUULOKKEET	kuulokkeet	kuulokkeet|NOUN|Npl|Xnom	earphones 
+N_KUULOKKEET	kuuloke	kuulokkeet|NOUN|Nsg|Xnom	
+N_VAATTEET	vaatteet	vaatteet|NOUN|Npl|Xnom	clothes 
+N_VAATTEET	vaate	vaatteet|NOUN|Nsg|Xnom	
+N_PEITTEET	peitteet	peitteet|NOUN|Npl|Xnom	covers 
+N_PEITTEET	peite	peitteet|NOUN|Nsg|Xnom	
+N_SUHTEET	suhteet	suhteet|NOUN|Npl|Xnom	relations 
+N_SUHTEET	suhde	suhteet|NOUN|Nsg|Xnom	
+N_LAUTEET	lauteet	lauteet|NOUN|Npl|Xnom	sitting bench in sauna 
+N_LAUTEET	laude	lauteet|NOUN|Nsg|Xnom	
+N_SÄTEET	säteet	säteet|NOUN|Npl|Xnom	rays 
+N_SÄTEET	säde	säteet|NOUN|Nsg|Xnom	
+N_SITEET	siteet	siteet|NOUN|Npl|Xnom	restraints 
+N_SITEET	side	siteet|NOUN|Nsg|Xnom	
+N_TARPEET	tarpeet	tarpeet|NOUN|Npl|Xnom	necessities 
+N_TARPEET	tarve	tarpeet|NOUN|Nsg|Xnom	
+N_HIUTALEET	hiutaleet	hiutaleet|NOUN|Npl|Xnom	flakes 
+N_HIUTALEET	hiutale	hiutaleet|NOUN|Nsg|Xnom	
+N_ALKEET	alkeet	alkeet|NOUN|Npl|Xnom	basics 
+N_ALKEET	alje	alkeet|NOUN|Nsg|Xnom	
+N_PERKEET	perkeet	perkeet|NOUN|Npl|Xnom	fish scales and guts 
+N_PERKEET	perje	perkeet|NOUN|Nsg|Xnom	
+N_POJAT	pojat	pojat|NOUN|Npl|Xnom	boys 
+N_POJAT	poika	pojat|NOUN|Nsg|Xnom	
+NUM	kaksikymmentäkolmetuhatta	kaksi|NUMERAL|CARDINAL|Nsg|Nom|Bc|kymmenen|NUMERAL|CARDINAL|Nsg|Xpar|Bc|kolme|NUMERAL|CARDINAL|Nsg|Xnom|Bc|tuhat|NUMERAL|CARDINAL|Nsg|Xpar	23,000 
+NUM	kahdessadasneljäs	kahdes|NUMERAL|ORDINAL|Nsg|Nom|Bc|sadas|NUMERAL|ORDINAL|Nsg|Xnom|Bc|neljäs|NUMERAL|ORDINAL|Nsg|Xnom	204rd 
+NUM	viitisenkymmentä	viitisen|Num|Bc|kymmentä	50-ish 
+NUM_CARD_ALL	yksi	yksi|NUMERAL|CARDINAL|Nsg|Xnom	one 
+NUM_CARD_ALL	viidelle	viisi|NUMERAL|CARDINAL|Nsg|Xall	five 
+NUM_CARD_ALL	tuhatta	tuhat|NUMERAL|CARDINAL|Nsg|Xpar	thousand 
+NUM_CARD_SUFFIX	viisikymmentä	viisi|NUMERAL|CARDINAL|Nsg|Nom|Bc|kymmentä	
+NUM_CARD_SUFFIX	neljäsataatuhatta	neljä|NUMERAL|CARDINAL|Nsg|Nom|Bc|sata|NUMERAL|CARDINAL|Nsg|Xpar|Bc|tuhatta	
+NUM_ORD_ALL	neljäs	neljäs|NUMERAL|ORDINAL|Nsg|Xnom	
+NUM_ORD_ALL	viidennelle	viides|NUMERAL|ORDINAL|Nsg|Xall	
+NUM_ORD_ALL	tuhannetta	tuhannes|NUMERAL|ORDINAL|Nsg|Xpar	
+NUM_ORD_SUFFIX	viideskymmenes	viides|NUMERAL|ORDINAL|Nsg|Nom|Bc|kymmenes	
+NUM_ORD_SUFFIX	neljässadastuhannes	neljäs|NUMERAL|ORDINAL|Nsg|Nom|Bc|sadas|NUMERAL|ORDINAL|Nsg|Xnom|Bc|tuhannes	
+NUM_OTHERS	viitisenkymmentä	viitisen|Num|Bc|kymmentä	
+NUM_OTHERS	puolikymmentä	puolikymmentä|NUMERAL|Nsg|Xnom	
+NUM_YKSI	yksi	yksi|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_YKSI	yhteen	yksi|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_YKSI	yhtenä	yksi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_YKSI	yhdessä	yksi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_YKSI	yhtä	yksi|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_YKSI	yksiä	yksi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_YKSI	yksien	yksi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_YKSI	yksiin	yksi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_YKSI	yksinä	yksi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_YKSI	yksissä	yksi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_KAKSI	kaksi	kaksi|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_KAKSI	kahteen	kaksi|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_KAKSI	kahtena	kaksi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_KAKSI	kahdessa	kaksi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_KAKSI	kahta	kaksi|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_KAKSI	kaksia	kaksi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_KAKSI	kaksien	kaksi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KAKSI	kaksiin	kaksi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_KAKSI	kaksina	kaksi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_KAKSI	kaksissa	kaksi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_KOLME	kolme	kolme|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_KOLME	kolmeen	kolme|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_KOLME	kolmena	kolme|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_KOLME	kolmessa	kolme|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_KOLME	kolmea	kolme|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_KOLME	kolmia	kolme|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_KOLME	kolmien	kolme|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KOLME	kolmiin	kolme|NUMERAL|CARDINAL|Npl|Xill	
+NUM_KOLME	kolmina	kolme|NUMERAL|CARDINAL|Npl|Xess	
+NUM_KOLME	kolmissa	kolme|NUMERAL|CARDINAL|Npl|Xine	
+NUM_NELJÄ	neljä	neljä|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_NELJÄ	neljää	neljä|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_NELJÄ	neljään	neljä|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_NELJÄ	neljänä	neljä|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_NELJÄ	neljässä	neljä|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_NELJÄ	neljiä	neljä|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_NELJÄ	neljien	neljä|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_NELJÄ	neljiin	neljä|NUMERAL|CARDINAL|Npl|Xill	
+NUM_NELJÄ	neljinä	neljä|NUMERAL|CARDINAL|Npl|Xess	
+NUM_NELJÄ	neljissä	neljä|NUMERAL|CARDINAL|Npl|Xine	
+NUM_NELJÄ	neljäin	neljä|NUMERAL|CARDINAL|Npl|Xgen|Urare	
+NUM_VIISI	viisi	viisi|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_VIISI	viiteen	viisi|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_VIISI	viitenä	viisi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_VIISI	viidessä	viisi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_VIISI	viisinä	viisi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_VIISI	viisissä	viisi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_VIISI	viittä	viisi|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_VIISI	viitten	viisi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_VIISI	viisiä	viisi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_VIISI	viisien	viisi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_VIISI	viisiin	viisi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_KUUSI	kuusi	kuusi|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_KUUSI	kuutena	kuusi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_KUUSI	kuudessa	kuusi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_KUUSI	kuusina	kuusi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_KUUSI	kuusissa	kuusi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_KUUSI	kuutta	kuusi|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_KUUSI	kuutten	kuusi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KUUSI	kuusia	kuusi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_KUUSI	kuusien	kuusi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KUUSI	kuusiin	kuusi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_KAHDEKSAN	kahdeksan	kahdeksan|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_KAHDEKSAN	kahdeksaa	kahdeksan|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_KAHDEKSAN	kahdeksaan	kahdeksan|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_KAHDEKSAN	kahdeksassa	kahdeksan|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_KAHDEKSAN	kahdeksana	kahdeksan|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_KAHDEKSAN	kahdeksia	kahdeksan|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_KAHDEKSAN	kahdeksien	kahdeksan|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KAHDEKSAN	kahdeksiin	kahdeksan|NUMERAL|CARDINAL|Npl|Xill	
+NUM_KAHDEKSAN	kahdeksissa	kahdeksan|NUMERAL|CARDINAL|Npl|Xine	
+NUM_KAHDEKSAN	kahdeksina	kahdeksan|NUMERAL|CARDINAL|Npl|Xess	
+NUM_KAHDEKSAN	kahdeksain	kahdeksan|NUMERAL|CARDINAL|Npl|Xgen|Urare	
+NUM_YHDEKSÄN	yhdeksän	yhdeksän|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_YHDEKSÄN	yhdeksää	yhdeksän|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_YHDEKSÄN	yhdeksään	yhdeksän|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_YHDEKSÄN	yhdeksässä	yhdeksän|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_YHDEKSÄN	yhdeksänä	yhdeksän|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_YHDEKSÄN	yhdeksiä	yhdeksän|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_YHDEKSÄN	yhdeksien	yhdeksän|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_YHDEKSÄN	yhdeksissä	yhdeksän|NUMERAL|CARDINAL|Npl|Xine	
+NUM_YHDEKSÄN	yhdeksinä	yhdeksän|NUMERAL|CARDINAL|Npl|Xess	
+NUM_YHDEKSÄN	yhdeksäin	yhdeksän|NUMERAL|CARDINAL|Npl|Xgen|Urare	
+NUM_KYMMENEN	kymmenen	kymmenen|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_KYMMENEN	kymmeneen	kymmenen|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_KYMMENEN	kymmenenä	kymmenen|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_KYMMENEN	kymmenessä	kymmenen|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_KYMMENEN	kymmentä	kymmenen|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_KYMMENEN	kymmenten	kymmenen|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KYMMENEN	kymmenien	kymmenen|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_KYMMENEN	kymmeniin	kymmenen|NUMERAL|CARDINAL|Npl|Xill	
+NUM_KYMMENEN	kymmenissä	kymmenen|NUMERAL|CARDINAL|Npl|Xine	
+NUM_KYMMENEN	kymmeninä	kymmenen|NUMERAL|CARDINAL|Npl|Xess	
+NUM_SATA	sata	sata|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_SATA	satana	sata|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_SATA	sadassa	sata|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_SATA	sataan	sata|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_SATA	sataa	sata|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_SATA	satojen	sata|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_SATA	satoihin	sata|NUMERAL|CARDINAL|Npl|Xill	
+NUM_SATA	sadoissa	sata|NUMERAL|CARDINAL|Npl|Xine	
+NUM_SATA	satoina	sata|NUMERAL|CARDINAL|Npl|Xess	
+NUM_TUHAT	tuhat	tuhat|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_TUHAT	tuhanteen	tuhat|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_TUHAT	tuhantena	tuhat|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_TUHAT	tuhannessa	tuhat|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_TUHAT	tuhansien	tuhat|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_TUHAT	tuhatta	tuhat|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_TUHAT	tuhansia	tuhat|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_TUHAT	tuhansien	tuhat|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_TUHAT	tuhansiin	tuhat|NUMERAL|CARDINAL|Npl|Xill	
+NUM_TUHAT	tuhansina	tuhat|NUMERAL|CARDINAL|Npl|Xess	
+NUM_TUHAT	tuhansissa	tuhat|NUMERAL|CARDINAL|Npl|Xine	
+NUM_MILJOONA	miljoona	miljoona|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_MILJOONA	miljoonana	miljoona|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_MILJOONA	miljoonassa	miljoona|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_MILJOONA	miljoonaa	miljoona|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_MILJOONA	miljoonaan	miljoona|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_MILJOONA	miljoonia	miljoona|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_MILJOONA	miljoonien	miljoona|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_MILJOONA	miljooniin	miljoona|NUMERAL|CARDINAL|Npl|Xill	
+NUM_MILJOONA	miljoonissa	miljoona|NUMERAL|CARDINAL|Npl|Xine	
+NUM_MILJOONA	miljoonina	miljoona|NUMERAL|CARDINAL|Npl|Xess	
+NUM_MILJARDI	miljardi	miljardi|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_MILJARDI	miljardina	miljardi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_MILJARDI	miljardissa	miljardi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_MILJARDI	miljardeina	miljardi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_MILJARDI	miljardeissa	miljardi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_MILJARDI	miljardia	miljardi|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_MILJARDI	miljardiin	miljardi|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_MILJARDI	miljardeja	miljardi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_MILJARDI	miljardien	miljardi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_MILJARDI	miljardeihin	miljardi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_GOOGOL	Googol	Googol|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_PARI	pari	pari|NUMERAL|CARDINAL|Nsg|Xnom	
+NUM_PARI	parina	pari|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_PARI	parissa	pari|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_PARI	pareissa	pari|NUMERAL|CARDINAL|Npl|Xine	
+NUM_PARI	pareina	pari|NUMERAL|CARDINAL|Npl|Xess	
+NUM_PARI	paria	pari|NUMERAL|CARDINAL|Nsg|Xpar	
+NUM_PARI	pareja	pari|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_PARI	parien	pari|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_PARI	pareihin	pari|NUMERAL|CARDINAL|Npl|Xill	
+NUM_PARI	pariin	pari|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_ENSIMMÄINEN	ensimmäinen	ensimmäinen|NUMERAL|ORDINAL|Nsg|Xnom	
+NUM_ENSIMMÄINEN	ensimmäisenä	ensimmäinen|NUMERAL|ORDINAL|Nsg|Xess	
+NUM_ENSIMMÄINEN	ensimmäisessä	ensimmäinen|NUMERAL|ORDINAL|Nsg|Xine	
+NUM_ENSIMMÄINEN	ensimmäistä	ensimmäinen|NUMERAL|ORDINAL|Nsg|Xpar	
+NUM_ENSIMMÄINEN	ensimmäisten	ensimmäinen|NUMERAL|ORDINAL|Npl|Xgen	
+NUM_ENSIMMÄINEN	ensimmäisiä	ensimmäinen|NUMERAL|ORDINAL|Npl|Xpar	
+NUM_ENSIMMÄINEN	ensimmäisiin	ensimmäinen|NUMERAL|ORDINAL|Npl|Xill	
+NUM_ENSIMMÄINEN	ensimmäisinä	ensimmäinen|NUMERAL|ORDINAL|Npl|Xess	
+NUM_ENSIMMÄINEN	ensimmäisissä	ensimmäinen|NUMERAL|ORDINAL|Npl|Xine	
+NUM_TOINEN	toinen	toinen|NUMERAL|ORDINAL|Nsg|Xnom	
+NUM_TOINEN	toiseen	toinen|NUMERAL|ORDINAL|Nsg|Xill	
+NUM_TOINEN	toista	toinen|NUMERAL|ORDINAL|Nsg|Xpar	
+NUM_TOINEN	toisten	toinen|NUMERAL|ORDINAL|Npl|Xgen	
+NUM_TOINEN	toisien	toinen|NUMERAL|ORDINAL|Npl|Xgen	
+NUM_TOINEN	toisia	toinen|NUMERAL|ORDINAL|Npl|Xpar	
+NUM_TOINEN	toisiin	toinen|NUMERAL|ORDINAL|Npl|Xill	
+NUM_TOINEN	toisena	toinen|NUMERAL|ORDINAL|Nsg|Xess	
+NUM_TOINEN	toisessa	toinen|NUMERAL|ORDINAL|Nsg|Xine	
+NUM_TOINEN	toisissa	toinen|NUMERAL|ORDINAL|Npl|Xine	
+NUM_TOINEN	toisina	toinen|NUMERAL|ORDINAL|Npl|Xess	
+NUM_KOLMAS	kolmas	kolmas|NUMERAL|ORDINAL|Nsg|Xnom	
+NUM_KOLMAS	kolmantena	kolmas|NUMERAL|ORDINAL|Nsg|Xess	
+NUM_KOLMAS	kolmannessa	kolmas|NUMERAL|ORDINAL|Nsg|Xine	
+NUM_KOLMAS	kolmanteen	kolmas|NUMERAL|ORDINAL|Nsg|Xill	
+NUM_KOLMAS	kolmatta	kolmas|NUMERAL|ORDINAL|Nsg|Xpar	
+NUM_KOLMAS	kolmansia	kolmas|NUMERAL|ORDINAL|Npl|Xpar	
+NUM_KOLMAS	kolmansien	kolmas|NUMERAL|ORDINAL|Npl|Xgen	
+NUM_KOLMAS	kolmansissa	kolmas|NUMERAL|ORDINAL|Npl|Xine	
+NUM_KOLMAS	kolmansina	kolmas|NUMERAL|ORDINAL|Npl|Xess	
+NUM_NELJÄS	neljäs	neljäs|NUMERAL|ORDINAL|Nsg|Xnom	
+NUM_NELJÄS	neljänteen	neljäs|NUMERAL|ORDINAL|Nsg|Xill	
+NUM_NELJÄS	neljäntenä	neljäs|NUMERAL|ORDINAL|Nsg|Xess	
+NUM_NELJÄS	neljännessä	neljäs|NUMERAL|ORDINAL|Nsg|Xine	
+NUM_NELJÄS	neljättä	neljäs|NUMERAL|ORDINAL|Nsg|Xpar	
+NUM_NELJÄS	neljänsiä	neljäs|NUMERAL|ORDINAL|Npl|Xpar	
+NUM_NELJÄS	neljänsien	neljäs|NUMERAL|ORDINAL|Npl|Xgen	
+NUM_NELJÄS	neljänsiin	neljäs|NUMERAL|ORDINAL|Npl|Xill	
+NUM_NELJÄS	neljänsissä	neljäs|NUMERAL|ORDINAL|Npl|Xine	
+NUM_NELJÄS	neljänsinä	neljäs|NUMERAL|ORDINAL|Npl|Xess	
+PCLE	ahaa	ahaa|PARTICLE	
+PCLE	edes	edes|PARTICLE	
+ADP	alta	alta|PARTICLE|ADPOSITION|POSTPOSITION	
+ADP	alleen	alle|PARTICLE|ADPOSITION|POSTPOSITION|Osg3	
+ADP	irti	irti|PARTICLE|ADPOSITION|PREPOSITION	
+ADP	irtikö	irti|PARTICLE|ADPOSITION|PREPOSITION|Qko	
+PREFIX	alabanaani	ala|NOUN|Pref|Bc|banaani|NOUN|Nsg|Xnom	lower banana 
+PREFIX	erikoistyyppi	erikois|NOUN|Pref|Bc|tyyppi|NOUN|Nsg|Xnom	special guy 
+PRON	minä	minä|PRONOUN|PERSONAL|Nsg|Xnom	me 
+PRON	sinut	sinä|PRONOUN|PERSONAL|Nsg|Xacc	
+PRON	heille	he|PRONOUN|PERSONAL|Npl|Xall	
+PRON	tämä	tämä|PRONOUN|DEMONSTRATIVE|Nsg|Xnom	
+PRON	tuolle	tuo|PRONOUN|DEMONSTRATIVE|Nsg|Xall	
+PRON	kuka	kuka|PRONOUN|INTERROGATIVE|Nsg|Xnom	who 
+PRON	ketä	kuka|PRONOUN|INTERROGATIVE|Nsg|Xpar	
+PRON	kenet	kuka|PRONOUN|INTERROGATIVE|Nsg|Xacc	
+PRON	kuka	kuka|PRONOUN|RELATIVE|Nsg|Xnom	
+PRON	joku	joku|PRONOUN|QUANTOR|INDEFINITE|Nsg|Xnom	
+PRON	jotkut	joku|PRONOUN|QUANTOR|INDEFINITE|Npl|Xnom	
+PRON	itse	itse|PRONOUN|REFLEXIVE|Nsg|Xnom	
+PRON	toisiamme	toinen|PRONOUN|RECIPROCAL|Npl|Xpar|Opl1	
+PRON	jollainen	jollainen|ADJECTIVE|RELATIVE|Nsg|Xnom	
+PRON	missä	missä|PARTICLE|ADVERB|INTERROGATIVE|Xine	
+PROPER	Kalle	Kalle|NOUN|PROPER|Nsg|Xnom	
+PROPER	Joensuu	Joensuu|NOUN|PROPER|Nsg|Xnom	
+PUNCT	.	.|PUNCTUATION	full stop 
+V	kutoo	kutoa|VERB|Vact|Tpres|Psg3	knit 
+V	kudotaan	kutoa|VERB|Vpss|Tpres|Ppe4	
+V	tietää	tietää|VERB|Vact|Tpres|Psg3	know 
+V	tiesit	tietää|VERB|Vact|Tpast|Sg2	
+V	nähnyt	nähdä|VERB|Vact|Cnut|Nsg|Xnom	see 
+V	juossut	juosta|VERB|Vact|Cnut|Nsg|Xnom	run 
+V_KAUNISTUA	kaunistua	kaunistua|VERB|Vact|Ia|Nsg|Xlat	beautify 
+V_KAUNISTUA	kaunistuessa	kaunistua|VERB|Vact|Ie|Nsg|Xine	
+V_KAUNISTUA	kaunistun	kaunistua|VERB|Vact|Tpres|Psg1	
+V_KAUNISTUA	kaunistuu	kaunistua|VERB|Vact|Tpres|Psg3	
+V_KAUNISTUA	kaunistuin	kaunistua|VERB|Vact|Tpast|Psg1	
+V_KAUNISTUA	kaunistui	kaunistua|VERB|Vact|Tpast|Psg3	
+V_KAUNISTUA	kaunistuisi	kaunistua|VERB|Vact|Tcond|Psg3	
+V_KAUNISTUA	kaunistukaa	kaunistua|VERB|Vact|Timp|Ppl2	
+V_KAUNISTUA	kaunistunen	kaunistua|VERB|Vact|Tpot|Psg1	
+V_KAUNISTUA	kaunistutaan	kaunistua|VERB|Vpss|Tpres|Ppe4	
+V_KAUNISTUA	kaunistuttiin	kaunistua|VERB|Vpss|Tpast|Ppe4	
+V_KAUNISTUA	kaunistuttu	kaunistua|VERB|Vpss|Cnut|Nsg|Xnom	
+V_KAUNISTUA	kaunistuminen	kaunistua|VERB|Dminen|Nsg|Xnom	
+V_PUNOA	punoa	punoa|VERB|Vact|Ia|Nsg|Xlat	bundle? 
+V_PUNOA	punoessa	punoa|VERB|Vact|Ie|Nsg|Xine	
+V_PUNOA	punon	punoa|VERB|Vact|Tpres|Psg1	
+V_PUNOA	punoo	punoa|VERB|Vact|Tpres|Psg3	
+V_PUNOA	punoin	punoa|VERB|Vact|Tpast|Psg1	
+V_PUNOA	punoi	punoa|VERB|Vact|Tpast|Psg3	
+V_PUNOA	punoisi	punoa|VERB|Vact|Tcond|Psg3	
+V_PUNOA	punokaa	punoa|VERB|Vact|Timp|Ppl2	
+V_PUNOA	punonen	punoa|VERB|Vact|Tpot|Psg1	
+V_PUNOA	punotaan	punoa|VERB|Vpss|Tpres|Ppe4	
+V_PUNOA	punottiin	punoa|VERB|Vpss|Tpast|Ppe4	
+V_PUNOA	punottu	punoa|VERB|Vpss|Cnut|Nsg|Xnom	
+V_PUNOA	punominen	punoa|VERB|Dminen|Nsg|Xnom	
+V_SÄILÖÄ	säilöä	säilöä|VERB|Vact|Ia|Nsg|Xlat	store 
+V_SÄILÖÄ	säilöessä	säilöä|VERB|Vact|Ie|Nsg|Xine	
+V_SÄILÖÄ	säilön	säilöä|VERB|Vact|Tpres|Psg1	
+V_SÄILÖÄ	säilöö	säilöä|VERB|Vact|Tpres|Psg3	
+V_SÄILÖÄ	säilöin	säilöä|VERB|Vact|Tpast|Psg1	
+V_SÄILÖÄ	säilöi	säilöä|VERB|Vact|Tpast|Psg3	
+V_SÄILÖÄ	säilöisi	säilöä|VERB|Vact|Tcond|Psg3	
+V_SÄILÖÄ	säilökää	säilöä|VERB|Vact|Timp|Ppl2	
+V_SÄILÖÄ	säilönen	säilöä|VERB|Vact|Tpot|Psg1	
+V_SÄILÖÄ	säilötään	säilöä|VERB|Vpss|Tpres|Ppe4	
+V_SÄILÖÄ	säilöttiin	säilöä|VERB|Vpss|Tpast|Ppe4	
+V_SÄILÖÄ	säilötty	säilöä|VERB|Vpss|Cnut|Nsg|Xnom	
+V_SÄILÖÄ	säilöminen	säilöä|VERB|Dminen|Nsg|Xnom	
+V_ÄLLISTYÄ	ällistyä	ällistyä|VERB|Vact|Ia|Nsg|Xlat	amaze 
+V_ÄLLISTYÄ	ällistyessä	ällistyä|VERB|Vact|Ie|Nsg|Xine	
+V_ÄLLISTYÄ	ällistyn	ällistyä|VERB|Vact|Tpres|Psg1	
+V_ÄLLISTYÄ	ällistyy	ällistyä|VERB|Vact|Tpres|Psg3	
+V_ÄLLISTYÄ	ällistyin	ällistyä|VERB|Vact|Tpast|Psg1	
+V_ÄLLISTYÄ	ällistyi	ällistyä|VERB|Vact|Tpast|Psg3	
+V_ÄLLISTYÄ	ällistyisi	ällistyä|VERB|Vact|Tcond|Psg3	
+V_ÄLLISTYÄ	ällistykää	ällistyä|VERB|Vact|Timp|Ppl2	
+V_ÄLLISTYÄ	ällistynen	ällistyä|VERB|Vact|Tpot|Psg1	
+V_ÄLLISTYÄ	ällistytään	ällistyä|VERB|Vpss|Tpres|Ppe4	
+V_ÄLLISTYÄ	ällistyttiin	ällistyä|VERB|Vpss|Tpast|Ppe4	
+V_ÄLLISTYÄ	ällistytty	ällistyä|VERB|Vpss|Cnut|Nsg|Xnom	
+V_HAUKKOA	haukkoa	haukkoa|VERB|Vact|Ia|Nsg|Xlat	gasp 
+V_NUOKKUA	nuokkua	nuokkua|VERB|Vact|Ia|Nsg|Xlat	sleep 
+V_KÄRKKYÄ	kärkkyä	kärkkyä|VERB|Vact|Ia|Nsg|Xlat	steal a base 
+V_HARPPOA	harppoa	harppoa|VERB|Vact|Ia|Nsg|Xlat	walk 
+V_LOPPUA	loppua	loppua|VERB|Vact|Ia|Nsg|Xlat	end 
+V_LEPPYÄ	leppyä	leppyä|VERB|Vact|Ia|Nsg|Xlat	settle 
+V_KIVETTYÄ	kivettyä	kivettyä|VERB|Vact|Ia|Nsg|Xlat	stone 
+V_VIITTOA	viittoa	viittoa|VERB|Vact|Ia|Nsg|Xlat	sign 
+V_HERMOTTUA	hermottua	hermottua|VERB|Vact|Ia|Nsg|Xlat	nerve 
+V_MÄIKYÄ	mäikyä	mäikyä|VERB|Vact|Ia|Nsg|Xlat	bong 
+V_TAKOA	takoa	takoa|VERB|Vact|Ia|Nsg|Xlat	hammer 
+V_MAUKUA	maukua	maukua|VERB|Vact|Ia|Nsg|Xlat	gong 
+V_ELPYÄ	elpyä	elpyä|VERB|Vact|Ia|Nsg|Xlat	rescuscitate 
+V_HIIPUA	hiipua	hiipua|VERB|Vact|Ia|Nsg|Xlat	fizzle 
+V_SILPOA	silpoa	silpoa|VERB|Vact|Ia|Nsg|Xlat	slash 
+V_KIETOA	kietoa	kietoa|VERB|Vact|Ia|Nsg|Xlat	entangle 
+V_SILIYTYÄ	siliytyä	siliytyä|VERB|Vact|Ia|Nsg|Xlat	iron 
+V_ROHTUA	rohtua	rohtua|VERB|Vact|Ia|Nsg|Xlat	scar 
+V_VINKUA	vinkua	vinkua|VERB|Vact|Ia|Nsg|Xlat	squeal 
+V_PENKOA	penkoa	penkoa|VERB|Vact|Ia|Nsg|Xlat	dig 
+V_TEMPOA	tempoa	tempoa|VERB|Vact|Ia|Nsg|Xlat	tuck 
+V_AMPUA	ampua	ampua|VERB|Vact|Ia|Nsg|Xlat	shoot 
+V_MIELTYÄ	mieltyä	mieltyä|VERB|Vact|Ia|Nsg|Xlat	like 
+V_HUMALTUA	humaltua	humaltua|VERB|Vact|Ia|Nsg|Xlat	intoxicate 
+V_VAKAANTUA	vakaantua	vakaantua|VERB|Vact|Ia|Nsg|Xlat	stabilise 
+V_TYHJENTYÄ	tyhjentyä	tyhjentyä|VERB|Vact|Ia|Nsg|Xlat	empty 
+V_PYÖRTYÄ	pyörtyä	pyörtyä|VERB|Vact|Ia|Nsg|Xlat	faint 
+V_VARTOA	vartoa	vartoa|VERB|Vact|Ia|Nsg|Xlat	wait 
+V_PUSERTUA	pusertua	pusertua|VERB|Vact|Ia|Nsg|Xlat	squeeze 
+V_MUTRISTAA	mutristaa	mutristaa|VERB|Vact|Ia|Nsg|Xlat	? 
+V_KIVISTÄÄ	kivistää	kivistää|VERB|Vact|Ia|Nsg|Xlat	hurt 
+V_RÄPSYTTÄÄ	räpsyttää	räpsyttää|VERB|Vact|Ia|Nsg|Xlat	blink 
+V_VIEROITTAA	vieroittaa	vieroittaa|VERB|Vact|Ia|Nsg|Xlat	
+V_PURKAA	purkaa	purkaa|VERB|Vact|Ia|Nsg|Xlat	tear 
+V_YSKÄHTÄÄ	kärähtää	kärähtää|VERB|Vact|Ia|Nsg|Xlat	fry 
+V_MOJAHTAA	mojahtaa	mojahtaa|VERB|Vact|Ia|Nsg|Xlat	smack 
+V_KYNTÄÄ	kyntää	kyntää|VERB|Vact|Ia|Nsg|Xlat	plow 
+V_SORTAA	sortaa	sortaa|VERB|Vact|Ia|Nsg|Xlat	crush 
+V_HUUTAA	huutaa	huutaa|VERB|Vact|Ia|Nsg|Xlat	yell 
+V_PYYTÄÄ	pyytää	pyytää|VERB|Vact|Ia|Nsg|Xlat	aks 
+V_SIVALTAA	sivaltaa	sivaltaa|VERB|Vact|Ia|Nsg|Xlat	slash 
+V_VIHELTÄÄ	viheltää	viheltää|VERB|Vact|Ia|Nsg|Xlat	whistle 
+V_HIVENTÄÄ	hiventää	hiventää|VERB|Vact|Ia|Nsg|Xlat	
+V_HUONONTAA	huonontaa	huonontaa|VERB|Vact|Ia|Nsg|Xlat	worsen 
+V_KUHERTAA	kuhertaa	kuhertaa|VERB|Vact|Ia|Nsg|Xlat	snuggle 
+V_NÄPERTÄÄ	näpertää	näpertää|VERB|Vact|Ia|Nsg|Xlat	twiddle 
+V_KIITÄÄ	kiitää	kiitää|VERB|Vact|Ia|Nsg|Xlat	rush 
+V_JOUTAA	joutaa	joutaa|VERB|Vact|Ia|Nsg|Xlat	
+V_YLTÄÄ	yltää	yltää|VERB|Vact|Ia|Nsg|Xlat	reach 
+V_ENTÄÄ	entää	entää|VERB|Vact|Ia|Nsg|Xlat	
+V_KASVAA	kasvaa	kasvaa|VERB|Vact|Ia|Nsg|Xlat	grow 
+V_VIRKKAA	jakaa	jakaa|VERB|Vact|Ia|Nsg|Xlat	share 
+V_TAPPAA	tappaa	tappaa|VERB|Vact|Ia|Nsg|Xlat	kill 
+V_AUTTAA	auttaa	auttaa|VERB|Vact|Ia|Nsg|Xlat	help 
+V_SATAA	sataa	sataa|VERB|Vact|Ia|Nsg|Xlat	rain 
+V_KANTAA	kantaa	kantaa|VERB|Vact|Ia|Nsg|Xlat	carry 
+V_KAATAA	kaataa	kaataa|VERB|Vact|Ia|Nsg|Xlat	pour 
+V_SAARTAA	saartaa	saartaa|VERB|Vact|Ia|Nsg|Xlat	surround 
+V_KYTKEÄ	kytkeä	kytkeä|VERB|Vact|Ia|Nsg|Xlat	switch 
+V_SOTKEA	sotkea	sotkea|VERB|Vact|Ia|Nsg|Xlat	mess 
+V_PUKEA	pukea	pukea|VERB|Vact|Ia|Nsg|Xlat	dress 
+V_RYPEÄ	rypeä	rypeä|VERB|Vact|Ia|Nsg|Xlat	bathe 
+V_PÄTEÄ	päteä	päteä|VERB|Vact|Ia|Nsg|Xlat	nitpick 
+V_KUTEA	kutea	kutea|VERB|Vact|Ia|Nsg|Xlat	breed 
+V_TUNKEA	tunkea	tunkea|VERB|Vact|Ia|Nsg|Xlat	push 
+V_POLKEA	polkea	polkea|VERB|Vact|Ia|Nsg|Xlat	stomp 
+V_SÄRKEÄ	särkeä	särkeä|VERB|Vact|Ia|Nsg|Xlat	break 
+V_TUNTEA	tuntea	tuntea|VERB|Vact|Ia|Nsg|Xlat	feel 
+V_LÄHTEÄ	lähteä	lähteä|VERB|Vact|Ia|Nsg|Xlat	go 
+V_KOSIA	kosia	kosia|VERB|Vact|Ia|Nsg|Xlat	propose 
+V_RYSKIÄ	ryskiä	ryskiä|VERB|Vact|Ia|Nsg|Xlat	crash 
+V_KUKKIA	kukkia	kukkia|VERB|Vact|Ia|Nsg|Xlat	bloom 
+V_SÖRKKIÄ	sörkkiä	sörkkiä|VERB|Vact|Ia|Nsg|Xlat	meddle 
+V_KALPPIA	kalppia	kalppia|VERB|Vact|Ia|Nsg|Xlat	
+V_HYPPIÄ	hyppiä	hyppiä|VERB|Vact|Ia|Nsg|Xlat	jump 
+V_MOITTIA	moittia	moittia|VERB|Vact|Ia|Nsg|Xlat	
+V_MIETTIÄ	miettiä	miettiä|VERB|Vact|Ia|Nsg|Xlat	ponder 
+V_RIIPIÄ	riipiä	riipiä|VERB|Vact|Ia|Nsg|Xlat	pull 
+V_RAAPIA	raapia	raapia|VERB|Vact|Ia|Nsg|Xlat	scratch 
+V_AHNEHTIA	ahnehtia	ahnehtia|VERB|Vact|Ia|Nsg|Xlat	greed 
+V_EHTIÄ	ehtiä	ehtiä|VERB|Vact|Ia|Nsg|Xlat	
+V_MÖNKIÄ	mönkiä	mönkiä|VERB|Vact|Ia|Nsg|Xlat	crawl 
+V_ONKIA	onkia	onkia|VERB|Vact|Ia|Nsg|Xlat	fish 
+V_TYMPIÄ	tympiä	tympiä|VERB|Vact|Ia|Nsg|Xlat	bore 
+V_KONTIA	kontia	kontia|VERB|Vact|Ia|Nsg|Xlat	mole 
+V_HYLKIÄ	hylkiä	hylkiä|VERB|Vact|Ia|Nsg|Xlat	reject 
+V_KOPIOIDA	kopioida	kopioida|VERB|Vact|Ia|Nsg|Xlat	copy 
+V_ÖYKKÄRÖIDÄ	öykkäröidä	öykkäröidä|VERB|Vact|Ia|Nsg|Xlat	bully 
+V_SAADA	saada	saada|VERB|Vact|Ia|Nsg|Xlat	get 
+V_MYYDÄ	myydä	myydä|VERB|Vact|Ia|Nsg|Xlat	sell 
+V_JÄÄDÄ	jäädä	jäädä|VERB|Vact|Ia|Nsg|Xlat	stay 
+V_VIEDÄ	viedä	viedä|VERB|Vact|Ia|Nsg|Xlat	take 
+V_TUODA	tuoda	tuoda|VERB|Vact|Ia|Nsg|Xlat	bring 
+V_SYÖDÄ	syödä	syödä|VERB|Vact|Ia|Nsg|Xlat	eat 
+V_KÄYDÄ	käydä	käydä|VERB|Vact|Ia|Nsg|Xlat	visit, go for 
+V_MARISTA	marista	marista|VERB|Vact|Ia|Nsg|Xlat	whine 
+V_ÄRISTÄ	äristä	äristä|VERB|Vact|Ia|Nsg|Xlat	arr 
+V_HÄVÄISTÄ	häväistä	häväistä|VERB|Vact|Ia|Nsg|Xlat	sacrilege 
+V_VAVISTA	vavista	vavista|VERB|Vact|Ia|Nsg|Xlat	shake 
+V_RANGAISTA	rangaista	rangaista|VERB|Vact|Ia|Nsg|Xlat	punish 
+V_SURRA	surra	surra|VERB|Vact|Ia|Nsg|Xlat	meh 
+V_PIERRÄ	pierrä	pierrä|VERB|Vact|Ia|Nsg|Xlat	fart 
+V_PANNA	panna	panna|VERB|Vact|Ia|Nsg|Xlat	put 
+V_MENNÄ	mennä	mennä|VERB|Vact|Ia|Nsg|Xlat	go 
+V_VASTAILLA	vastailla	vastailla|VERB|Vact|Ia|Nsg|Xlat	answer 
+V_ÄKSYILLÄ	äksyillä	äksyillä|VERB|Vact|Ia|Nsg|Xlat	
+V_LEIKELLÄ	leikellä	leikellä|VERB|Vact|Ia|Nsg|Xlat	cut 
+V_NAKELLA	nakella	nakella|VERB|Vact|Ia|Nsg|Xlat	throw 
+V_TAPELLA	tapella	tapella|VERB|Vact|Ia|Nsg|Xlat	fight 
+V_HYPELLÄ	hypellä	hypellä|VERB|Vact|Ia|Nsg|Xlat	jump 
+V_SULATELLA	sulatella	sulatella|VERB|Vact|Ia|Nsg|Xlat	melt 
+V_HERÄTELLÄ	herätellä	herätellä|VERB|Vact|Ia|Nsg|Xlat	wake 
+V_TIPAHDELLA	tipahdella	tipahdella|VERB|Vact|Ia|Nsg|Xlat	drop 
+V_SÄPSÄHDELLÄ	säpsähdellä	säpsähdellä|VERB|Vact|Ia|Nsg|Xlat	wake 
+V_OMMELLA	ommella	ommella|VERB|Vact|Ia|Nsg|Xlat	sow 
+V_VAELLELLA	vaellella	vaellella|VERB|Vact|Ia|Nsg|Xlat	wander 
+V_KIILLELLÄ	kiillellä	kiillellä|VERB|Vact|Ia|Nsg|Xlat	sparkle 
+V_KOMENNELLA	komennella	komennella|VERB|Vact|Ia|Nsg|Xlat	boss 
+V_KÄÄNNELLÄ	käännellä	käännellä|VERB|Vact|Ia|Nsg|Xlat	turn 
+V_NAKERRELLA	nakerrella	nakerrella|VERB|Vact|Ia|Nsg|Xlat	bite 
+V_KIHERRELLÄ	kiherrellä	kiherrellä|VERB|Vact|Ia|Nsg|Xlat	giggle 
+V_ISÄNNÖIDÄ	isännöidä	isännöidä|VERB|Vact|Ia|Nsg|Xlat	host 
+V_MELLAKOIDA	mellakoida	mellakoida|VERB|Vact|Ia|Nsg|Xlat	riot 
+V_PALKITA	palkita	palkita|VERB|Vact|Ia|Nsg|Xlat	reward 
+V_MERKITÄ	merkitä	merkitä|VERB|Vact|Ia|Nsg|Xlat	mark 
+V_JUOSTA	juosta	juosta|VERB|Vact|Ia|Nsg|Xlat	run 
+V_PIESTÄ	piestä	piestä|VERB|Vact|Ia|Nsg|Xlat	spank 
+V_NÄHDÄ	nähdä	nähdä|VERB|Vact|Ia|Nsg|Xlat	see 
+V_KARHETA	karheta	karheta|VERB|Vact|Ia|Nsg|Xlat	
+V_VÄHETÄ	vähetä	vähetä|VERB|Vact|Ia|Nsg|Xlat	lessen 
+V_NIUKETA	niuketa	niuketa|VERB|Vact|Ia|Nsg|Xlat	tighten 
+V_JYRKETÄ	jyrketä	jyrketä|VERB|Vact|Ia|Nsg|Xlat	
+V_HAPATA	hapata	hapata|VERB|Vact|Ia|Nsg|Xlat	ensour 
+V_SUPETA	supeta	supeta|VERB|Vact|Ia|Nsg|Xlat	tighten 
+V_TYLPETÄ	tylpetä	tylpetä|VERB|Vact|Ia|Nsg|Xlat	dull 
+V_HELPOTA	helpota	helpota|VERB|Vact|Ia|Nsg|Xlat	ease 
+V_LOITOTA	loitota	loitota|VERB|Vact|Ia|Nsg|Xlat	distance 
+V_ULOTA	ulota	ulota|VERB|Vact|Ia|Nsg|Xlat	outen 
+V_KAVETA	kaveta	kaveta|VERB|Vact|Ia|Nsg|Xlat	tighten 
+V_MÄDÄTÄ	mädätä	mädätä|VERB|Vact|Ia|Nsg|Xlat	rot 
+V_LEUDOTA	leudota	leudota|VERB|Vact|Ia|Nsg|Xlat	
+V_PIDETÄ	pidetä	pidetä|VERB|Vact|Ia|Nsg|Xlat	lengthen 
+V_LÄMMETÄ	lämmetä	lämmetä|VERB|Vact|Ia|Nsg|Xlat	warm 
+V_KIINNETÄ	kiinnetä	kiinnetä|VERB|Vact|Ia|Nsg|Xlat	firm 
+V_JULJETA	juljeta	juljeta|VERB|Vact|Ia|Nsg|Xlat	dare 
+V_ARVATA	arvata	arvata|VERB|Vact|Ia|Nsg|Xlat	guess 
+V_YNNÄTÄ	ynnätä	ynnätä|VERB|Vact|Ia|Nsg|Xlat	add 
+V_MORKATA	morkata	morkata|VERB|Vact|Ia|Nsg|Xlat	blame 
+V_YÖKÄTÄ	yökätä	yökätä|VERB|Vact|Ia|Nsg|Xlat	yuck 
+V_SIEPATA	siepata	siepata|VERB|Vact|Ia|Nsg|Xlat	kidnap 
+V_VÄLPÄTÄ	välpätä	välpätä|VERB|Vact|Ia|Nsg|Xlat	
+V_LUNTATA	luntata	luntata|VERB|Vact|Ia|Nsg|Xlat	cheat 
+V_LÄNTÄTÄ	läntätä	läntätä|VERB|Vact|Ia|Nsg|Xlat	splat 
+V_KAIVATA	kaivata	kaivata|VERB|Vact|Ia|Nsg|Xlat	long 
+V_LEVÄTÄ	levätä	levätä|VERB|Vact|Ia|Nsg|Xlat	rest 
+V_JAHDATA	jahdata	jahdata|VERB|Vact|Ia|Nsg|Xlat	hunt 
+V_TÄHDÄTÄ	tähdätä	tähdätä|VERB|Vact|Ia|Nsg|Xlat	aim 
+V_VONGATA	vongata	vongata|VERB|Vact|Ia|Nsg|Xlat	beg 
+V_VÄNGÄTÄ	vängätä	vängätä|VERB|Vact|Ia|Nsg|Xlat	argue 
+V_TEMMATA	temmata	temmata|VERB|Vact|Ia|Nsg|Xlat	pull 
+V_MULLATA	mullata	mullata|VERB|Vact|Ia|Nsg|Xlat	dirt 
+V_SUUNNATA	suunnata	suunnata|VERB|Vact|Ia|Nsg|Xlat	go 
+V_RYNNÄTÄ	rynnätä	rynnätä|VERB|Vact|Ia|Nsg|Xlat	rush 
+V_VIRRATA	virrata	virrata|VERB|Vact|Ia|Nsg|Xlat	stream 
+V_HYLJÄTÄ	hyljätä	hyljätä|VERB|Vact|Ia|Nsg|Xlat	abandon 
+V_DIGATA	digata	digata|VERB|Vact|Ia|Nsg|Xlat	dig 
+V_LOBATA	lobata	lobata|VERB|Vact|Ia|Nsg|Xlat	lobby 
+V_KARHUTA	karhuta	karhuta|VERB|Vact|Ia|Nsg|Xlat	tax 
+V_TÄHYTÄ	tähytä	tähytä|VERB|Vact|Ia|Nsg|Xlat	periscope 
+V_KAIKOTA	kaikota	kaikota|VERB|Vact|Ia|Nsg|Xlat	disappear 
+V_POIKETA	poiketa	poiketa|VERB|Vact|Ia|Nsg|Xlat	
+V_KERETÄ	keretä	keretä|VERB|Vact|Ia|Nsg|Xlat	
+V_KOUKUTA	koukuta	koukuta|VERB|Vact|Ia|Nsg|Xlat	hook 
+V_PULPUTA	pulputa	pulputa|VERB|Vact|Ia|Nsg|Xlat	pulp 
+V_UPOTA	upota	upota|VERB|Vact|Ia|Nsg|Xlat	sink 
+V_LOTOTA	lotota	lotota|VERB|Vact|Ia|Nsg|Xlat	lotto 
+V_LUUTUTA	luututa	luututa|VERB|Vact|Ia|Nsg|Xlat	mop 
+V_KIVUTA	kivuta	kivuta|VERB|Vact|Ia|Nsg|Xlat	climb 
+V_KORVETA	korveta	korveta|VERB|Vact|Ia|Nsg|Xlat	
+V_REVETÄ	kiivetä	kiivetä|VERB|Vact|Ia|Nsg|Xlat	climb 
+V_KIRVOTA	kirvota	kirvota|VERB|Vact|Ia|Nsg|Xlat	loose 
+V_KADOTA	kadota	kadota|VERB|Vact|Ia|Nsg|Xlat	disappear 
+V_TODETA	todeta	todeta|VERB|Vact|Ia|Nsg|Xlat	note 
+V_VYYHDETÄ	vyyhdetä	vyyhdetä|VERB|Vact|Ia|Nsg|Xlat	entangle 
+V_LIIDUTA	liiduta	liiduta|VERB|Vact|Ia|Nsg|Xlat	chalk 
+V_TUNGETA	tungeta	tungeta|VERB|Vact|Ia|Nsg|Xlat	push 
+V_PINGOTA	pingota	pingota|VERB|Vact|Ia|Nsg|Xlat	ping 
+V_ÄNGETÄ	ängetä	ängetä|VERB|Vact|Ia|Nsg|Xlat	push 
+V_KUMMUTA	kummuta	kummuta|VERB|Vact|Ia|Nsg|Xlat	
+V_KAMMETA	kammeta	kammeta|VERB|Vact|Ia|Nsg|Xlat	lever 
+V_SAMMOTA	sammota	sammota|VERB|Vact|Ia|Nsg|Xlat	
+V_INNOTA	innota	innota|VERB|Vact|Ia|Nsg|Xlat	eager 
+V_IRROTA	irrota	irrota|VERB|Vact|Ia|Nsg|Xlat	tear 
+V_HALJETA	haljeta	haljeta|VERB|Vact|Ia|Nsg|Xlat	split 
+V_ILJETÄ	iljetä	iljetä|VERB|Vact|Ia|Nsg|Xlat	dare 
+V_MYRSKYTÄ	myrskytä	myrskytä|VERB|Vact|Ia|Nsg|Xlat	storm 
+V_LASSOTA	lassota	lassota|VERB|Vact|Ia|Nsg|Xlat	lasso 
+V_SELVITÄ	selvitä	selvitä|VERB|Vact|Ia|Nsg|Xlat	manage 
+V_RYÖPYTÄ	ryöpytä	ryöpytä|VERB|Vact|Ia|Nsg|Xlat	flood 
+V_PEITOTA	peitota	peitota|VERB|Vact|Ia|Nsg|Xlat	beat 
+V_KERITÄ	keritä	keritä|VERB|Vact|Ia|Nsg|Xlat	
+V_MUODOTA	muodota	muodota|VERB|Vact|Ia|Nsg|Xlat	form 
+V_LÄMMITÄ	lämmitä	lämmitä|VERB|Vact|Ia|Nsg|Xlat	heat 
+V_AALLOTA	aallota	aallota|VERB|Vact|Ia|Nsg|Xlat	wave 
+V_HELLITÄ	hellitä	hellitä|VERB|Vact|Ia|Nsg|Xlat	loose 
+V_TAITAA	taitaa	taitaa|VERB|Vact|Ia|Nsg|Xlat	can 
+V_TIETÄÄ	tietää	tietää|VERB|Vact|Ia|Nsg|Xlat	know 
+V_VIPAJAA	vipajaa	vipajaa|VERB|Vact|Ia|Nsg|Xlat	thump 
+V_HELÄJÄÄ	heläjää	heläjää|VERB|Vact|Ia|Nsg|Xlat	chime 
+V_RAIKAA	raikaa	raikaa|VERB|Vact|Ia|Nsg|Xlat	baum 
+V_ÄHKÄÄ	ähkää	ähkää|VERB|Vact|Ia|Nsg|Xlat	meh 
+V_OLLA	olla	olla|VERB|Vact|Ia|Nsg|Xlat	be 
+V_OLLA	lienen	olla|VERB|Vact|Tpot|Psg1	
+V_OLLA	lie	olla|VERB|Vact|Tpot|ConNeg	
+V_OLLA	olija	olla|VERB|Dja|Nsg|Xnom	
+ACRO_KOLME	MP3	MP3|NOUN|Nsg|Xnom	|Bc| mp3 music file 
+ACRO_KOLME	MP3:een	MP3|NOUN|Nsg|Xill	
+ACRO_VIISI	A5	A5|NOUN|Nsg|Xnom	A5 paper 
+ACRO_VIISI	A5:een	A5|NOUN|Nsg|Xill	
+ACRO_AA	A	A|NOUN|Nsg|Xnom	A 
+ACRO_AA	A:t	A|NOUN|Npl|Xnom	
+ACRO_AA	A:ssa	A|NOUN|Nsg|Xine	
+ACRO_EE	BBC	BBC|NOUN|Nsg|Xnom	British Broadcasting Company 
+ACRO_EE	BBC:t	BBC|NOUN|Npl|Xnom	
+ACRO_EE	BBC:ssä	BBC|NOUN|Nsg|Xine	
+ACRO_II	DPI	DPI|NOUN|Nsg|Xnom	
+ACRO_II	DPI:t	DPI|NOUN|Npl|Xnom	
+ACRO_II	DPI:ssä	DPI|NOUN|Nsg|Xine	
+ACRO_OO	HK	HK|NOUN|Nsg|Xnom	
+ACRO_OO	HK:n	HK|NOUN|Nsg|Xgen	
+ACRO_OO	HK:lla	HK|NOUN|Nsg|Xade	
+ACRO_UU	EU	EU|NOUN|Nsg|Xnom	
+ACRO_UU	EU:t	EU|NOUN|Npl|Xnom	
+ACRO_UU	EU:hun	EU|NOUN|Nsg|Xill	
+ACRO_ÄKS	GPRS	GPRS|NOUN|Nsg|Xnom	
+ACRO_ÄKS	GPRS:llä	GPRS|NOUN|Nsg|Xade	
+ACRO_YY	EY	EY|NOUN|Nsg|Xnom	
+ACRO_YY	EY:hyn	EY|NOUN|Nsg|Xill	
+ACRO_ZET	Z	Z|NOUN|Nsg|Xnom	
+ACRO_ZET	Z:t	Z|NOUN|Npl|Xnom	
+ACRO_ÄÄ	Ä	Ä|NOUN|Nsg|Xnom	
+ACRO_ÄÄ	Ä:t	Ä|NOUN|Npl|Xnom	
+ACRO_ÖÖ	Ö	Ö|NOUN|Nsg|Xnom	
+ACRO_ÖÖ	Ö:t	Ö|NOUN|Npl|Xnom	
+A_BACK_SUPERLATIVE	rumin	ruma|ADJECTIVE|Csup|Nsg|Xnom	ugliest 
+A_FRONT_SUPERLATIVE	tyhmin	tyhmä|ADJECTIVE|Csup|Nsg|Xnom	stupidest 
+A_BACK_COMPARATIVE	rumempi	ruma|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_FRONT_COMPARATIVE	tyhmempi	tyhmä|ADJECTIVE|Ccmp|Nsg|Xnom	
+A_BACK_COMPARATIVE_STEMS	nopeampi	nopea|ADJECTIVE|Ccmp|Nsg|Xnom	faster 
+A_BACK_COMPARATIVE_STEMS	nopeammampi	nopea|ADJECTIVE|Ccmp|Ccmp|Nsg|Xnom	
+A_BACK_COMPARATIVE_STEMS	nopeammammampi	nopea|ADJECTIVE|Ccmp|Ccmp|Ccmp|Nsg|Xnom	
+A_FRONT_COMPARATIVE_STEMS	tyhmempänä	tyhmä|ADJECTIVE|Ccmp|Nsg|Xess	
+A_FRONT_COMPARATIVE_STEMS	tyhmemmämpi	tyhmä|ADJECTIVE|Ccmp|Ccmp|Nsg|Xnom	
+A_BACK_SUPERLATIVE_STEMS	nopein	nopea|ADJECTIVE|Csup|Nsg|Xnom	
+A_BACK_SUPERLATIVE_STEMS	nopeimmimpia	nopea|ADJECTIVE|Csup|Csup|Nsg|Xpar	
+A_BACK_SUPERLATIVE_STEMS	nopeimmimmin	nopea|ADJECTIVE|Csup|Csup|Csup|Nsg|Xnom	
+A_FRONT_SUPERLATIVE_STEMS	tyhmin	tyhmä|ADJECTIVE|Csup|Nsg|Xnom	
+A_FRONT_SUPERLATIVE_STEMS	tyhmimmimpiä	tyhmä|ADJECTIVE|Csup|Csup|Nsg|Xpar	
+A_BACK_NOMINATIVE	rumapa	ruma|ADJECTIVE|Nsg|Xnom|Qpa	
+A_FRONT_NOMINATIVE	tyhmäpä	tyhmä|ADJECTIVE|Nsg|Xnom|Qpa	
+A_BACK_PLNOM_CLIT	rumat	ruma|ADJECTIVE|Npl|Xnom	
+A_FRONT_PLNOM_CLIT	tyhmät	tyhmä|ADJECTIVE|Npl|Xnom	
+A_BACK_WEAK_SINGULARS	ruman	ruma|ADJECTIVE|Nsg|Xgen	
+A_BACK_WEAK_SINGULARS	rumatta	ruma|ADJECTIVE|Nsg|Xabe	
+A_FRONT_WEAK_SINGULARS	tyhmän	tyhmä|ADJECTIVE|Nsg|Xgen	
+A_FRONT_WEAK_SINGULARS	tyhmättä	tyhmä|ADJECTIVE|Nsg|Xabe	
+A_BACK_STRONG_SINGULARS	rumana	ruma|ADJECTIVE|Nsg|Xess	
+A_BACK_STRONG_SINGULARS	rumani	ruma|ADJECTIVE|Nsg|Xnom|Osg1	
+A_FRONT_STRONG_SINGULARS	tyhmänä	tyhmä|ADJECTIVE|Nsg|Xess	
+A_FRONT_STRONG_SINGULARS	tyhmäni	tyhmä|ADJECTIVE|Nsg|Xnom|Osg1	
+A_BACK_WEAK_PLURALS	heikoitta	heikko|ADJECTIVE|Npl|Xabe	
+A_BACK_WEAK_PLURALS	heikoilta	heikko|ADJECTIVE|Npl|Xabl	
+A_FRONT_WEAK_PLURALS	jäykittä	jäykkä|ADJECTIVE|Npl|Xabe	
+A_FRONT_WEAK_PLURALS	jäykiltä	jäykkä|ADJECTIVE|Npl|Xabl	
+A_FRONT_STRONG_PLURALS	jäykkinä	jäykkä|ADJECTIVE|Npl|Xess	
+A_FRONT_STRONG_PLURALS	jäykkine	jäykkä|ADJECTIVE|Cmt	
+A_BACK_STRONG_PLURALS	heikkoina	heikko|ADJECTIVE|Npl|Xess	
+A_BACK_STRONG_PLURALS	heikkoine	heikko|ADJECTIVE|Cmt	
+A_BACK_PARTITIVE_A	tarkkaa	tarkka|ADJECTIVE|Nsg|Xpar	
+A_BACK_PARTITIVE_A	tarkkaansa	tarkka|ADJECTIVE|Nsg|Xpar|Osg3	
+A_FRONT_PARTITIVE_Ä	tyhmää	tyhmä|ADJECTIVE|Nsg|Xpar	
+A_FRONT_PARTITIVE_Ä	tyhmäänsä	tyhmä|ADJECTIVE|Nsg|Xpar|Osg3	
+A_BACK_PARTITIVE_A_AN	jaloa	jalo|ADJECTIVE|Nsg|Xpar	
+A_BACK_PARTITIVE_A_AN	jaloaan	jalo|ADJECTIVE|Nsg|Xpar|Osg3	
+A_FRONT_PARTITIVE_Ä_ÄN	hölöä	hölö|ADJECTIVE|Nsg|Xpar	
+A_FRONT_PARTITIVE_Ä_ÄN	hölöään	hölö|ADJECTIVE|Nsg|Xpar|Osg3	
+A_BACK_PARTITIVE_TA	vapaata	vapaa|ADJECTIVE|Nsg|Xpar	
+A_FRONT_PARTITIVE_TÄ	pientä	pieni|ADJECTIVE|Nsg|Xpar	
+A_BACK_ILLATIVE_HAN	peeaahan	peeaa|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_HIN	gayhin	gay|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_HUN	muuhun	muu|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_HYN	gayhynpä	gay|ADJECTIVE|Nsg|Xill|Qpa	
+A_FRONT_ILLATIVE_HÄN	syypäähän	syypää|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_SEEN	vapaaseen	vapaa|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_SEEN	työlääseen	työläs|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_AN	rumaan	ruma|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_EN	suureen	suuri|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_EN	pieneen	pieni|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_IN	tuhtiin	tuhti|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_IN	rehtiin	rehti|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_ON	huonoon	huono|ADJECTIVE|Nsg|Xill	
+A_BACK_ILLATIVE_UN	fiksuun	fiksu|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_YN	häijyyn	häijy|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_ÄN	tyhmään	tyhmä|ADJECTIVE|Nsg|Xill	
+A_FRONT_ILLATIVE_ÖN	hölmöön	hölmö|ADJECTIVE|Nsg|Xill	
+A_BACK_PARTITIVE_IA	rumia	ruma|ADJECTIVE|Npl|Xpar	
+A_FRONT_PARTITIVE_IÄ	tyhmiä	tyhmä|ADJECTIVE|Npl|Xpar	
+A_BACK_PARTITIVE_ITA	korkeita	korkea|ADJECTIVE|Npl|Xpar	
+A_FRONT_PARTITIVE_ITÄ	järeitä	järeä|ADJECTIVE|Npl|Xpar	
+A_BACK_PARTITIVE_JA	vahvoja	vahva|ADJECTIVE|Npl|Xpar	
+A_FRONT_PARTITIVE_JÄ	hölmöjä	hölmö|ADJECTIVE|Npl|Xpar	
+A_BACK_GENITIVE_IDEN	tanakoiden	tanakka|ADJECTIVE|Npl|Xgen	
+A_FRONT_GENITIVE_IDEN	räväköiden	räväkkä|ADJECTIVE|Npl|Xgen	
+A_BACK_GENITIVE_IEN	rumien	ruma|ADJECTIVE|Npl|Xgen	
+A_FRONT_GENITIVE_IEN	tyhmien	tyhmä|ADJECTIVE|Npl|Xgen	
+A_BACK_GENITIVE_ITTEN	nopeitten	nopea|ADJECTIVE|Npl|Xgen	
+A_FRONT_GENITIVE_ITTEN	järeitten	järeä|ADJECTIVE|Npl|Xgen	
+A_BACK_GENITIVE_JEN	vahvojen	vahva|ADJECTIVE|Npl|Xgen	
+A_FRONT_GENITIVE_JEN	hölmöjen	hölmö|ADJECTIVE|Npl|Xgen	
+A_BACK_GENITIVE_TEN	suurten	suuri|ADJECTIVE|Npl|Xgen	
+A_FRONT_GENITIVE_TEN	pienten	pieni|ADJECTIVE|Npl|Xgen	
+A_BACK_GENITIVE_IN	rumain	ruma|ADJECTIVE|Npl|Xgen|Urare	
+A_FRONT_GENITIVE_IN	tyhmäin	tyhmä|ADJECTIVE|Npl|Xgen|Urare	
+A_BACK_ILLATIVE_IHIN	pahoihin	paha|ADJECTIVE|Npl|Xill	
+A_FRONT_ILLATIVE_IHIN	hölmöihin	hölmö|ADJECTIVE|Npl|Xill	
+A_BACK_ILLATIVE_IIN	punaisiin	punainen|ADJECTIVE|Npl|Xill	
+A_FRONT_ILLATIVE_IIN	sinisiin	sininen|ADJECTIVE|Npl|Xill	
+A_BACK_ILLATIVE_ISIIN	korkeisiin	korkea|ADJECTIVE|Npl|Xill	
+A_FRONT_ILLATIVE_ISIIN	järeisiin	järeä|ADJECTIVE|Npl|Xill	
+A_FRONT_POSS	tyhmäni	tyhmä|ADJECTIVE|Nsg|Xnom|Osg1	
+A_BACK_POSS	rumani	ruma|ADJECTIVE|Nsg|Xnom|Osg1	
+A_BACK_POSS_AN	kieroaan	kiero|ADJECTIVE|Nsg|Xpar|Osg3	
+A_BACK_POSS_EN	rumalleen	ruma|ADJECTIVE|Nsg|Xall|Osg3	
+A_FRONT_POSS_EN	tyhmälleen	tyhmä|ADJECTIVE|Nsg|Xall|Osg3	
+A_FRONT_POSS_ÄN	hölmöään	hölmö|ADJECTIVE|Nsg|Xpar|Osg3	
+A_BACK_CLIT	rumahan	ruma|ADJECTIVE|Nsg|Xnom|Qhan	
+A_FRONT_CLIT	tyhmähän	tyhmä|ADJECTIVE|Nsg|Xnom|Qhan	
+ADV_BACK_POSS	takanani	takana|PARTICLE|ADVERB|Osg1behind me 
+ADV_FRONT_POSS	edessäni	edessä|PARTICLE|ADVERB|Osg1in front of me 
+ADV_BACK_POSS_AN	takanaan	takana|PARTICLE|ADVERB|Osg3	
+ADV_BACK_POSS_EN	jalkeilleen	jalkeille|PARTICLE|ADVERB|Osg3he awakened 
+ADV_FRONT_POSS_EN	keskelleen	keskelle|PARTICLE|ADVERB|Opl3amidst them 
+ADV_FRONT_POSS_ÄN	edessään	edessä|PARTICLE|ADVERB|Osg3	
+ADV_BACK_CLIT	nopeastihan	nopeasti|PARTICLE|ADVERB|Qhan	fast 
+ADV_FRONT_CLIT	tyhmästihän	tyhmästi|PARTICLE|ADVERB|Qhan	stupidly 
+DIGITS_YKSI	1	1|NUMERAL|CARDINAL|Nsg|Xnom	
+DIGITS_YKSI	1:t	1|NUMERAL|CARDINAL|Npl|Xnom	
+DIGITS_YKSI	1:ssä	1|NUMERAL|CARDINAL|Nsg|Xine	
+DIGITS_KAKSI	2		
+DIGITS_KAKSI	2:t		
+DIGITS_KAKSI	2:ssa		
+DIGITS_KOLME	3		
+DIGITS_KOLME	3:t		
+DIGITS_KOLME	3:ssa		
+DIGITS_NELJÄ	4		
+DIGITS_NELJÄ	4:t		
+DIGITS_NELJÄ	4:ssä		
+DIGITS_VIISI	5		
+DIGITS_VIISI	5:t		
+DIGITS_VIISI	5:ssä		
+DIGITS_KUUSI	6		
+DIGITS_KUUSI	6:t		
+DIGITS_KUUSI	6:ss		
+DIGITS_SEITSEMÄN	7		
+DIGITS_SEITSEMÄN	7:t		
+DIGITS_SEITSEMÄN	7:ssä		
+DIGITS_KAHDEKSAN	8		
+DIGITS_KAHDEKSAN	8:t		
+DIGITS_KAHDEKSAN	8:ssa		
+DIGITS_YHDEKSÄN	9		
+DIGITS_YHDEKSÄN	9:t		
+DIGITS_YHDEKSÄN	9:ssä		
+DIGITS_NOLLA	0		
+DIGITS_NOLLA	0:t		
+DIGITS_NOLLA	0:aa		
+DIGITS_KYMMENEN	10		
+DIGITS_KYMMENEN	10:t		
+DIGITS_KYMMENEN	10:tä		
+DIGITS_SATA	100		
+DIGITS_SATA	100:t		
+DIGITS_SATA	100:aa		
+DIGITS_TUHAT	1000		
+DIGITS_TUHAT	1000:t		
+DIGITS_TUHAT	1000:ta		
+DIGITS_MILJOONA	1000000		
+DIGITS_MILJOONA	1000000:t		
+DIGITS_MILJOONA	1000000:aa		
+DIGITS_MILJARDI	1000000000		
+DIGITS_MILJARDI	1000000000:t		
+DIGITS_MILJARDI	1000000000:a		
+DIGITS_ENSIMMÄINEN	1.		
+DIGITS_ENSIMMÄINEN	1:nen		
+DIGITS_ENSIMMÄINEN	1:stä		
+DIGITS_TOINEN	2.		
+DIGITS_TOINEN	2:nen		
+DIGITS_TOINEN	2:sta		
+DIGITS_KOLMAS	3.		
+DIGITS_KOLMAS	3:s		
+DIGITS_KOLMAS	3:tta		
+DIGITS_NELJÄS	4.		
+DIGITS_NELJÄS	4:s		
+DIGITS_NELJÄS	4:ttä		
+DIGITS_ROMANS_TOINEN	II		
+DIGITS_ROMANS_TOINEN	II:ta		
+DIGITS_ROMANS_ENSIMMÄINEN	I		
+DIGITS_ROMANS_ENSIMMÄINEN	I:tä		
+DIGITS_FRONT_POSS	1:nsä		
+DIGITS_BACK_POSS	2:nsa		
+DIGITS_BACK_POSS_AN	3:aan		
+DIGITS_BACK_POSS_EN	2:kseen		
+DIGITS_FRONT_POSS_EN	1:kseen		
+DIGITS_FRONT_POSS_ÄN	5:ttään		
+DIGITS_BACK_CLIT	2:han		
+DIGITS_FRONT_CLIT	4:hän		
+N_BACK_NOMINATIVE	talo	talo|NOUN|Nsg|Xnom	a house 
+N_BACK_NOMINATIVE	taloko	talo|NOUN|Nsg|Xnom|Qko	
+N_BACK_NOMINATIVE	talohan	talo|NOUN|Nsg|Xnom|Qhan	
+N_BACK_NOMINATIVE	talohän	talo|NOUN|Nsg|Xnom|Qhan	
+N_FRONT_NOMINATIVE	pöly	pöly|NOUN|Nsg|Xnom	dust 
+N_BACK_PLNOM_CLIT	talot	talo|NOUN|Npl|Xnom	
+N_BACK_PLNOM_CLIT	sakset	sakset|NOUN|Npl|Xnom	scissors 
+N_BACK_PLNOM_CLIT	saksetpa	sakset|NOUN|Npl|Xnom|Qpa	
+N_BACK_PLNOM_CLIT	saksetpä	sakset|NOUN|Npl|Xnom|Qpa	
+N_FRONT_PLNOM_CLIT	pölyt	pöly|NOUN|Npl|Xnom	
+N_FRONT_PLNOM_CLIT	häät	häät|NOUN|Npl|Xnom	wedding 
+N_BACK_WEAK_SINGULARS	pata	pata|NOUN|Nsg|Xnom	pot 
+N_BACK_WEAK_SINGULARS	padan	pata|NOUN|Nsg|Xgen	
+N_BACK_WEAK_SINGULARS	padassa	pata|NOUN|Nsg|Xine	
+N_BACK_WEAK_SINGULARS	padasta	pata|NOUN|Nsg|Xela	
+N_BACK_WEAK_SINGULARS	padalla	pata|NOUN|Nsg|Xade	
+N_BACK_WEAK_SINGULARS	padalta	pata|NOUN|Nsg|Xabl	
+N_BACK_WEAK_SINGULARS	padalle	pata|NOUN|Nsg|Xall	
+N_BACK_WEAK_SINGULARS	padaksi	pata|NOUN|Nsg|Xtra	
+N_BACK_WEAK_SINGULARS	padatta	pata|NOUN|Nsg|Xabe	
+N_FRONT_WEAK_SINGULARS	näky	näky|NOUN|Nsg|Xnom	vision 
+N_FRONT_WEAK_SINGULARS	näyn	näky|NOUN|Nsg|Xgen	
+N_FRONT_WEAK_SINGULARS	näyssä	näky|NOUN|Nsg|Xine	
+N_FRONT_WEAK_SINGULARS	näystä	näky|NOUN|Nsg|Xela	
+N_FRONT_WEAK_SINGULARS	näyllä	näky|NOUN|Nsg|Xade	
+N_FRONT_WEAK_SINGULARS	näyltä	näky|NOUN|Nsg|Xabl	
+N_FRONT_WEAK_SINGULARS	näylle	näky|NOUN|Nsg|Xall	
+N_FRONT_WEAK_SINGULARS	näyksi	näky|NOUN|Nsg|Xtra	
+N_FRONT_WEAK_SINGULARS	näyttä	näky|NOUN|Nsg|Xabe	
+N_BACK_STRONG_SINGULARS	patana	pata|NOUN|Nsg|Xess	
+N_BACK_STRONG_SINGULARS	patani	pata|NOUN|Nsg|Xnom|Osg1	
+N_BACK_STRONG_SINGULARS	patasi	pata|NOUN|Nsg|Xgen|Osg2	
+N_FRONT_STRONG_SINGULARS	näkynä	näky|NOUN|Nsg|Xess	
+N_FRONT_STRONG_SINGULARS	näkyni	näky|NOUN|Nsg|Xnom|Osg1	
+N_FRONT_STRONG_SINGULARS	näkysi	näky|NOUN|Nsg|Xgen|Osg2	
+N_BACK_WEAK_PLURALS	padoilta	pata|NOUN|Npl|Xabl	
+N_BACK_WEAK_PLURALS	padoilla	pata|NOUN|Npl|Xade	
+N_BACK_WEAK_PLURALS	padoille	pata|NOUN|Npl|Xall	
+N_BACK_WEAK_PLURALS	padoista	pata|NOUN|Npl|Xela	
+N_BACK_WEAK_PLURALS	padoissa	pata|NOUN|Npl|Xine	
+N_BACK_WEAK_PLURALS	padoiksi	pata|NOUN|Npl|Xtra	
+N_BACK_WEAK_PLURALS	padoitta	pata|NOUN|Npl|Xabe	
+N_BACK_WEAK_PLURALS	padoin	pata|NOUN|Npl|Ins	
+N_FRONT_WEAK_PLURALS	näyillä	näky|NOUN|Npl|Xade	
+N_FRONT_WEAK_PLURALS	näyiltä	näky|NOUN|Npl|Xabl	
+N_FRONT_WEAK_PLURALS	näyille	näky|NOUN|Npl|Xall	
+N_FRONT_WEAK_PLURALS	näyissä	näky|NOUN|Npl|Xine	
+N_FRONT_WEAK_PLURALS	näyistä	näky|NOUN|Npl|Xela	
+N_FRONT_WEAK_PLURALS	näyiksi	näky|NOUN|Npl|Xtra	
+N_FRONT_WEAK_PLURALS	näyittä	näky|NOUN|Npl|Xabe	
+N_FRONT_WEAK_PLURALS	näyin	näky|NOUN|Npl|Ins	
+N_BACK_STRONG_PLURALS	patoina	pata|NOUN|Npl|Xess	
+N_BACK_STRONG_PLURALS	patoine	pata|NOUN|Xcom	
+N_FRONT_STRONG_PLURALS	näkyinä	näky|NOUN|Npl|Xess	
+N_FRONT_STRONG_PLURALS	näkyine	näky|NOUN|Xcom	
+N_BACK_PARTITIVE_A	politiikka	politiikka|NOUN|Nsg|Xnom	politics 
+N_BACK_PARTITIVE_A	politiikkaa	politiikka|NOUN|Nsg|Xpar	
+N_FRONT_PARTITIVE_Ä	kysyntä	kysyntä|NOUN|Nsg|Xnom	demand 
+N_FRONT_PARTITIVE_Ä	kysyntää	kysyntä|NOUN|Nsg|Xpar	
+N_BACK_PARTITIVE_A_AN	pato	pato|NOUN|Nsg|Xnom	dam 
+N_BACK_PARTITIVE_A_AN	patoa	pato|NOUN|Nsg|Xpar	
+N_BACK_PARTITIVE_A_AN	patoaan	pato|NOUN|Nsg|Xpar|Osg3	
+N_FRONT_PARTITIVE_Ä_ÄN	näkyä	näky|NOUN|Nsg|Xpar	
+N_FRONT_PARTITIVE_Ä_ÄN	näkyään	näky|NOUN|Nsg|Xpar|Osg3	
+N_BACK_PARTITIVE_TA	taimen	taimen|NOUN|Nsg|Xnom	trout 
+N_BACK_PARTITIVE_TA	taimenta	taimen|NOUN|Nsg|Xpar	
+N_FRONT_PARTITIVE_TÄ	tie	tie|NOUN|Nsg|Xnom	road 
+N_FRONT_PARTITIVE_TÄ	tietä	tie|NOUN|Nsg|Xpar	
+N_FRONT_PARTITIVE_TÄ	vene	vene|NOUN|Nsg|Xnom	boat 
+N_FRONT_PARTITIVE_TÄ	venettä	vene|NOUN|Nsg|Xpar	
+N_BACK_ILLATIVE_HAN	maa	maa|NOUN|Nsg|Xnom	earth 
+N_BACK_ILLATIVE_HAN	maahan	maa|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_HAN	maahansa	maa|NOUN|Nsg|Xill|Osg3	
+N_BACK_ILLATIVE_HEN	toffee	toffee|NOUN|Nsg|Xnom	taffy 
+N_BACK_ILLATIVE_HEN	toffeehen	toffee|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_HEN	tiehen	tie|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_HIN	hai	hai|NOUN|Nsg|Xnom	shark 
+N_BACK_ILLATIVE_HIN	haihin	hai|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_HIN	pii	pii|NOUN|Nsg|Xnom	silica 
+N_FRONT_ILLATIVE_HIN	piihin	pii|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_HON	suo	suo|NOUN|Nsg|Xnom	swamp 
+N_BACK_ILLATIVE_HON	suohon	suo|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_HUN	puu	puu|NOUN|Nsg|Xnom	tree 
+N_BACK_ILLATIVE_HUN	puuhun	puu|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_HYN	pyy	pyy|NOUN|Nsg|Xnom	kind of a bird 
+N_FRONT_ILLATIVE_HYN	pyyhyn	pyy|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_HÄN	pää	pää|NOUN|Nsg|Xnom	head 
+N_FRONT_ILLATIVE_HÄN	päähän	pää|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_HÖN	työ	työ|NOUN|Nsg|Xnom	job 
+N_FRONT_ILLATIVE_HÖN	työhön	työ|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_AN	kirja	kirja|NOUN|Nsg|Xnom	book 
+N_BACK_ILLATIVE_AN	kirjaan	kirja|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_EN	tuli	tuli|NOUN|Nsg|Xnom	fire 
+N_BACK_ILLATIVE_EN	tuleen	tuli|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_EN	hiiri	hiiri|NOUN|Nsg|Xnom	mouse 
+N_FRONT_ILLATIVE_EN	hiireen	hiiri|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_IN	ruuvi	ruuvi|NOUN|Nsg|Xnom	screw 
+N_BACK_ILLATIVE_IN	ruuviin	ruuvi|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_IN	tyyli	tyyli|NOUN|Nsg|Xnom	style 
+N_FRONT_ILLATIVE_IN	tyyliin	tyyli|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_ON	taloon	talo|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_UN	nielu	nielu|NOUN|Nsg|Xnom	throat 
+N_BACK_ILLATIVE_UN	nieluun	nielu|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_YN	näkyyn	näky|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_ÄN	räkä	räkä|NOUN|Nsg|Xnom	booger 
+N_FRONT_ILLATIVE_ÄN	räkään	räkä|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_ÖN	tönö	tönö|NOUN|Nsg|Xnom	shack 
+N_FRONT_ILLATIVE_ÖN	tönöön	tönö|NOUN|Nsg|Xill	
+N_BACK_ILLATIVE_SEEN	tienoo	tienoo|NOUN|Nsg|Xnom	neighbourhood 
+N_BACK_ILLATIVE_SEEN	tienooseen	tienoo|NOUN|Nsg|Xill	
+N_FRONT_ILLATIVE_SEEN	miljöö	miljöö|NOUN|Nsg|Xnom	millieu 
+N_FRONT_ILLATIVE_SEEN	miljööseen	miljöö|NOUN|Nsg|Xill	
+N_BACK_GENITIVE_IDEN	aavikko	aavikko|NOUN|Nsg|Xnom	
+N_BACK_GENITIVE_IDEN	aavikoiden	aavikko|NOUN|Npl|Xgen	
+N_FRONT_GENITIVE_IDEN	kännykkä	kännykkä|NOUN|Nsg|Xnom	mobile phone 
+N_FRONT_GENITIVE_IDEN	kännyköiden	kännykkä|NOUN|Npl|Xgen	
+N_BACK_GENITIVE_ITTEN	tienoitten	tienoo|NOUN|Npl|Xgen	
+N_FRONT_GENITIVE_ITTEN	teitten	tie|NOUN|Npl|Xgen	
+N_BACK_GENITIVE_IEN	nainen	nainen|NOUN|Nsg|Xnom	woman 
+N_BACK_GENITIVE_IEN	naisien	nainen|NOUN|Npl|Xgen	
+N_FRONT_GENITIVE_IEN	murha	murha|NOUN|Nsg|Xnom	murder 
+N_FRONT_GENITIVE_IEN	murhien	murha|NOUN|Npl|Xgen	
+N_BACK_GENITIVE_JEN	alivalikkojen	alivalikko|NOUN|Npl|Xgen	
+N_FRONT_GENITIVE_JEN	pyhäkkö	pyhäkkö|NOUN|Nsg|Xnom	sanctum 
+N_FRONT_GENITIVE_JEN	pyhäkköjen	pyhäkkö|NOUN|Npl|Xgen	
+N_BACK_GENITIVE_TEN	sisar	sisar|NOUN|Nsg|Xnom	sister 
+N_BACK_GENITIVE_TEN	sisarten	sisar|NOUN|Npl|Xgen	
+N_FRONT_GENITIVE_TEN	väännin	väännin|NOUN|Nsg|Xnom	turner 
+N_FRONT_GENITIVE_TEN	väänninten	väännin|NOUN|Npl|Xgen	
+N_BACK_GENITIVE_IN	patain	pata|NOUN|Npl|Xgen|Urare	
+N_FRONT_GENITIVE_IN	tyrmä	tyrmä|NOUN|Nsg|Xnom	prison 
+N_FRONT_GENITIVE_IN	tyrmäin	tyrmä|NOUN|Npl|Xgen|Urare	
+N_BACK_PARTITIVE_IA	koiria	koira|NOUN|Npl|Xpar	
+N_FRONT_PARTITIVE_IÄ	kärsä	kärsä|NOUN|Nsg|Xnom	trunk 
+N_FRONT_PARTITIVE_IÄ	kärsiä	kärsä|NOUN|Npl|Xpar	
+N_BACK_PARTITIVE_ITA	tienoita	tienoo|NOUN|Npl|Xpar	
+N_FRONT_PARTITIVE_ITÄ	teitä	tie|NOUN|Npl|Xpar	
+N_BACK_PARTITIVE_JA	lepakkoja	lepakko|NOUN|Npl|Xpar	
+N_FRONT_PARTITIVE_JÄ	pyhäkköjä	pyhäkkö|NOUN|Npl|Xpar	
+N_BACK_ILLATIVE_IHIN	taloihin	talo|NOUN|Npl|Xill	
+N_FRONT_ILLATIVE_IHIN	näkyihin	näky|NOUN|Npl|Xill	
+N_BACK_ILLATIVE_IIN	koiriin	koira|NOUN|Npl|Xill	
+N_FRONT_ILLATIVE_IIN	sieni	sieni|NOUN|Nsg|Xnom	mushroom 
+N_FRONT_ILLATIVE_IIN	sieniin	sieni|NOUN|Npl|Xill	
+N_BACK_ILLATIVE_ISIIN	sokea	sokea|NOUN|Nsg|Xnom	
+N_BACK_ILLATIVE_ISIIN	sokeisiin	sokea|NOUN|Npl|Xill	
+N_FRONT_ILLATIVE_ISIIN	kevät	kevät|NOUN|Nsg|Xnom	spring 
+N_FRONT_ILLATIVE_ISIIN	keväisiin	kevät|NOUN|Npl|Xill	
+N_BACK_POSS	taloni	talo|NOUN|Nsg|Xnom|Osg1	
+N_BACK_POSS	talosi	talo|NOUN|Nsg|Xnom|Osg2	
+N_BACK_POSS	talonsa	talo|NOUN|Nsg|Xnom|Osg3	
+N_BACK_POSS	talomme	talo|NOUN|Nsg|Xnom|Opl1
+N_BACK_POSS	talonne	talo|NOUN|Nsg|Xnom|Opl2	
+N_FRONT_POSS	tönöni	tönö|NOUN|Nsg|Xnom|Osg1	
+N_FRONT_POSS	tönösi	tönö|NOUN|Nsg|Xnom|Osg2	
+N_FRONT_POSS	tönönsä	tönö|NOUN|Nsg|Xnom|Osg3	
+N_FRONT_POSS	tönömme	tönö|NOUN|Nsg|Xnom|Opl1
+N_FRONT_POSS	tönönne	tönö|NOUN|Nsg|Xnom|Opl2	
+N_BACK_POSS_AN	taloaan	talo|NOUN|Nsg|Xpar|Opl3	
+N_BACK_POSS_EN	tienookseen	tienoo|NOUN|Nsg|Xtra|Osg3	
+N_FRONT_POSS_EN	tiekseen	tie|NOUN|Nsg|Xtra|Osg3	
+N_FRONT_POSS_ÄN	tönöään	tönö|NOUN|Nsg|Xpar|Opl3	
+N_BACK_CLIT	talokaan	talo|NOUN|Nsg|Xnom|Foc/kaan	
+N_FRONT_CLIT	tönökään	tönö|NOUN|Nsg|Xnom|Foc/kaan	
+N_COMPOUND_0	talojuttu	talo|NOUN|Nsg|Nom|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_N	talonjuttu	talo|NOUN|Nsg|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_IEN	naisienjuttu	nainen|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_IDEN	lepakoidenjuttu	lepakko|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_IN	vanhempainjuttu	vanhempi|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_ITTEN	lepakoittenjuttu	lepakko|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_JEN	talojenjuttu	talo|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_TEN	miestenjuttu	mies|NOUN|Npl|Gen|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND_S	aakkostamisjuttu	aakkostaminen|NOUN|Ds|Bc|juttu|NOUN|Nsg|Xnom	
+N_COMPOUND	talojuttu	talo|NOUN|Nsg|Nom|Bc|juttu|NOUN|Nsg|Xnom	
+NUM_BACK_NOMINATIVE	kaksi	kaksi|NUMERAL|CARDINAL|Nsg|Xnom	two 
+NUM_FRONT_NOMINATIVE	yksi	yksi|NUMERAL|CARDINAL|Nsg|Xnom	one 
+NUM_BACK_PLNOM_CLIT	kahdet	kaksi|NUMERAL|CARDINAL|Npl|Xnom	
+NUM_FRONT_PLNOM_CLIT	yhdet	yksi|NUMERAL|CARDINAL|Npl|Xnom	
+NUM_BACK_WEAK_SINGULARS	kahden	kaksi|NUMERAL|CARDINAL|Nsg|Xgen	
+NUM_BACK_WEAK_SINGULARS	kahdella	kaksi|NUMERAL|CARDINAL|Nsg|Xade	
+NUM_BACK_WEAK_SINGULARS	kahdelta	kaksi|NUMERAL|CARDINAL|Nsg|Xabl	
+NUM_BACK_WEAK_SINGULARS	kahdelle	kaksi|NUMERAL|CARDINAL|Nsg|Xall	
+NUM_BACK_WEAK_SINGULARS	kahdessa	kaksi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_BACK_WEAK_SINGULARS	kahdesta	kaksi|NUMERAL|CARDINAL|Nsg|Xela	
+NUM_BACK_WEAK_SINGULARS	kahdeksi	kaksi|NUMERAL|CARDINAL|Nsg|Xtra	
+NUM_BACK_WEAK_SINGULARS	kahdetta	kaksi|NUMERAL|CARDINAL|Nsg|Xabe	
+NUM_FRONT_WEAK_SINGULARS	yhden	yksi|NUMERAL|CARDINAL|Nsg|Xgen	
+NUM_FRONT_WEAK_SINGULARS	yhdellä	yksi|NUMERAL|CARDINAL|Nsg|Xade	
+NUM_FRONT_WEAK_SINGULARS	yhdeltä	yksi|NUMERAL|CARDINAL|Nsg|Xabl	
+NUM_FRONT_WEAK_SINGULARS	yhdelle	yksi|NUMERAL|CARDINAL|Nsg|Xall	
+NUM_FRONT_WEAK_SINGULARS	yhdessä	yksi|NUMERAL|CARDINAL|Nsg|Xine	
+NUM_FRONT_WEAK_SINGULARS	yhdestä	yksi|NUMERAL|CARDINAL|Nsg|Xela	
+NUM_FRONT_WEAK_SINGULARS	yhdeksi	yksi|NUMERAL|CARDINAL|Nsg|Xtra	
+NUM_FRONT_WEAK_SINGULARS	yhdettä	yksi|NUMERAL|CARDINAL|Nsg|Xabe	
+NUM_BACK_STRONG_SINGULARS	kahtena	kaksi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_FRONT_STRONG_SINGULARS	yhtenä	yksi|NUMERAL|CARDINAL|Nsg|Xess	
+NUM_BACK_WEAK_PLURALS	kaksilla	kaksi|NUMERAL|CARDINAL|Npl|Xade	
+NUM_BACK_WEAK_PLURALS	kaksilta	kaksi|NUMERAL|CARDINAL|Npl|Xabl	
+NUM_BACK_WEAK_PLURALS	kaksille	kaksi|NUMERAL|CARDINAL|Npl|Xall	
+NUM_BACK_WEAK_PLURALS	kaksissa	kaksi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_BACK_WEAK_PLURALS	kaksista	kaksi|NUMERAL|CARDINAL|Npl|Xela	
+NUM_BACK_WEAK_PLURALS	kaksiksi	kaksi|NUMERAL|CARDINAL|Npl|Xtra	
+NUM_BACK_WEAK_PLURALS	kaksitta	kaksi|NUMERAL|CARDINAL|Npl|Xabe	
+NUM_FRONT_WEAK_PLURALS	yksillä	yksi|NUMERAL|CARDINAL|Npl|Xade	
+NUM_FRONT_WEAK_PLURALS	yksiltä	yksi|NUMERAL|CARDINAL|Npl|Xabl	
+NUM_FRONT_WEAK_PLURALS	yksille	yksi|NUMERAL|CARDINAL|Npl|Xall	
+NUM_FRONT_WEAK_PLURALS	yksissä	yksi|NUMERAL|CARDINAL|Npl|Xine	
+NUM_FRONT_WEAK_PLURALS	yksistä	yksi|NUMERAL|CARDINAL|Npl|Xela	
+NUM_FRONT_WEAK_PLURALS	yksiksi	yksi|NUMERAL|CARDINAL|Npl|Xtra	
+NUM_FRONT_WEAK_PLURALS	yksittä	yksi|NUMERAL|CARDINAL|Npl|Xabe	
+NUM_FRONT_STRONG_PLURALS	kaksina	kaksi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_FRONT_STRONG_PLURALS	kaksine	kaksi|NUMERAL|CARDINAL|Xcom	
+NUM_BACK_STRONG_PLURALS	yksinä	yksi|NUMERAL|CARDINAL|Npl|Xess	
+NUM_BACK_STRONG_PLURALS	yksine	yksi|NUMERAL|CARDINAL|Xcom	
+NUM_BACK_PARTITIVE_A	kahdeksaa	kahdeksan|NUMERAL|CARDINAL|Nsg|Xpar	eight 
+NUM_FRONT_PARTITIVE_Ä	neljää	neljä|NUMERAL|CARDINAL|Nsg|Xpar	four 
+NUM_BACK_PARTITIVE_A_AN	kolmea	kolme|NUMERAL|CARDINAL|Nsg|Xpar	three 
+NUM_BACK_PARTITIVE_TA	kuutta	kuusi|NUMERAL|CARDINAL|Nsg|Xpar	six 
+NUM_FRONT_PARTITIVE_TÄ	viittä	viisi|NUMERAL|CARDINAL|Nsg|Xpar	five 
+NUM_BACK_ILLATIVE_AN	kahdeksaan	kahdeksan|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_BACK_ILLATIVE_EN	kolmeen	kolme|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_FRONT_ILLATIVE_EN	viiteen	viisi|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_BACK_ILLATIVE_IN	miljardiin	miljardi|NUMERAL|CARDINAL|Nsg|Xill	billion 
+NUM_FRONT_ILLATIVE_ÄN	neljään	neljä|NUMERAL|CARDINAL|Nsg|Xill	
+NUM_BACK_PARTITIVE_IA	kaksia	kaksi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_FRONT_PARTITIVE_IÄ	neljiä	neljä|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_BACK_PARTITIVE_JA	miljardeja	miljardi|NUMERAL|CARDINAL|Npl|Xpar	
+NUM_BACK_GENITIVE_IEN	kaksien	kaksi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_FRONT_GENITIVE_IEN	yksien	yksi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_BACK_GENITIVE_JEN	satojen	sata|NUMERAL|CARDINAL|Npl|Xgen	hundred 
+NUM_BACK_GENITIVE_TEN	kuutten	kuusi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_FRONT_GENITIVE_TEN	viitten	viisi|NUMERAL|CARDINAL|Npl|Xgen	
+NUM_BACK_GENITIVE_IN	yhdeksäin	yhdeksän|NUMERAL|CARDINAL|Npl|Xgen|Urare	
+NUM_FRONT_GENITIVE_IN	neljäin	neljä|NUMERAL|CARDINAL|Npl|Xgen|Urare	
+NUM_BACK_ILLATIVE_IHIN	miljardeihin	miljardi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_BACK_ILLATIVE_IIN	kaksiin	kaksi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_FRONT_ILLATIVE_IIN	yksiin	yksi|NUMERAL|CARDINAL|Npl|Xill	
+NUM_BACK_POSS	kahteni	kaksi|NUMERAL|CARDINAL|Nsg|Xnom|Osg1	
+NUM_FRONT_POSS	yhteni	yksi|NUMERAL|CARDINAL|Nsg|Xnom|Osg1	
+NUM_BACK_POSS_AN	kolmeaan	kolme|NUMERAL|CARDINAL|Nsg|Xpar|Osg3	
+NUM_BACK_POSS_EN	kahdekseen	kaksi|NUMERAL|CARDINAL|Nsg|Xtra|Osg3	
+NUM_FRONT_POSS_EN	neljäkseen	neljä|NUMERAL|CARDINAL|Nsg|Xtra|Osg3	
+NUM_FRONT_POSS_ÄN	viittään	viisi|NUMERAL|CARDINAL|Nsg|Xpar|Osg3	
+NUM_BACK_CLIT	kaksihan	kaksi|NUMERAL|CARDINAL|Nsg|Xnom|Qhan	
+NUM_FRONT_CLIT	yksihän	yksi|NUMERAL|CARDINAL|Nsg|Xnom|Qhan	
+V_BACK_WEAK_PRESENT	kutoa	kutoa|VERB|Vact|Ia|Nsg|Xlat	knit 
+V_BACK_WEAK_PRESENT	kudon	kutoa|VERB|Vact|Tpres|Psg1	
+V_FRONT_WEAK_PRESENT	yltää	yltää|VERB|Vact|Ia|Nsg|Xlat	reach 
+V_FRONT_WEAK_PRESENT	yllän	yltää|VERB|Vact|Tpres|Psg1	
+V_BACK_STRONG_PRESENT	kutovat	kutoa|VERB|Vact|Tpres|Ppl3	
+V_BACK_STRONG_PRESENT	kutomatta	kutoa|VERB|Vact|Ima|Nsg|Xabe	
+V_FRONT_STRONG_PRESENT	yltävät	yltää|VERB|Vact|Tpres|Ppl3	
+V_FRONT_STRONG_PRESENT	yltämättä	yltää|VERB|Vact|Ima|Nsg|Xabe	
+V_BACK_3SG_A	rakentaa	rakentaa|VERB|Vact|Tpres|Psg3	builds 
+V_BACK_3SG_E	tulee	tulla|VERB|Vact|Tpres|Psg3	comes 
+V_FRONT_3SG_E	menee	mennä|VERB|Vact|Tpres|Psg3	goes 
+V_BACK_3SG_I	munii	munia|VERB|Vact|Tpres|Psg3	lays eggs 
+V_FRONT_3SG_I	rämpii	rämpiä|VERB|Vact|Tpres|Psg3	hikes 
+V_BACK_3SG_O	kutoo	kutoa|VERB|Vact|Tpres|Psg3	
+V_BACK_3SG_U	viruu	virua|VERB|Vact|Tpres|Psg3	stretches 
+V_FRONT_3SG_Y	kääntyy	kääntyä|VERB|Vact|Tpres|Psg3	turns 
+V_FRONT_3SG_Ö	säilöö	säilöä|VERB|Vact|Tpres|Psg3	conserves 
+V_FRONT_3SG_Ä	vääntää	vääntää|VERB|Vact|Tpres|Psg3	twist 
+V_BACK_WEAK_PAST	kudoin	kutoa|VERB|Vact|Tpast|Psg1	
+V_FRONT_WEAK_PAST	ylsin	yltää|VERB|Vact|Tpast|Psg1	
+V_BACK_STRONG_PAST	kutoivat	kutoa|VERB|Vact|Tpast|Ppl3	
+V_FRONT_STRONG_PAST	ylsivät	yltää|VERB|Vact|Tpast|Ppl3	
+V_BACK_IMPERATIVE	kutokaa	kutoa|VERB|Vact|Timp|Ppl2	
+V_FRONT_IMPERATIVE	yltäkää	yltää|VERB|Vact|Timp|Ppl2	
+V_BACK_CONDITIONAL	kutoisin	kutoa|VERB|Vact|Tcond|Psg1	
+V_FRONT_CONDITIONAL	yltäisin	yltää|VERB|Vact|Tcond|Psg1	
+V_BACK_POTENTIAL_N	kutonen	kutoa|VERB|Vact|Tpot|Psg1	
+V_FRONT_POTENTIAL_N	yltänen	yltää|VERB|Vact|Tpot|Psg1	
+V_BACK_POTENTIAL_S	juossen	juosta|VERB|Vact|Tpot|Psg1	I might run 
+V_FRONT_POTENTIAL_S	päässen	päästä|VERB|Vact|Tpot|Psg1	I might be able to 
+V_BACK_POTENTIAL_L	tullen	tulla|VERB|Vact|Tpot|Psg1	
+V_FRONT_POTENTIAL_L	kävellen	kävellä|VERB|Vact|Tpot|Psg1	I might walk 
+V_BACK_POTENTIAL_R	surren	surra|VERB|Vact|Tpot|Psg1	I might be sad 
+V_FRONT_POTENTIAL_R	pierren	pierrä|VERB|Vact|Tpot|Psg1	I might fart 
+V_BACK_PASSIVE	kudottiin	kutoa|VERB|Vpss|Tpast|Ppe4	
+V_BACK_PASSIVE	juostiin	juosta|VERB|Vpss|Tpast|Ppe4	
+V_FRONT_PASSIVE	nähtiin	nähdä|VERB|Vpss|Tpast|Ppe4	
+V_BACK_PASSIVE_T	juostaan	juosta|VERB|Vpss|Tpres|Ppe4	
+V_FRONT_PASSIVE_T	ylletään	yltää|VERB|Vpss|Tpres|Ppe4	
+V_BACK_PASSIVE_D	kopioidaan	kopioida|VERB|Vpss|Tpres|Ppe4	copy-passive 
+V_FRONT_PASSIVE_D	nähdään	nähdä|VERB|Vpss|Tpres|Ppe4	
+V_BACK_PASSIVE_L	vuollaan	vuolla|VERB|Vpss|Tpres|Ppe4	carve wood-passive 
+V_FRONT_PASSIVE_L	niellään	niellä|VERB|Vpss|Tpres|Ppe4	swallow-passive 
+V_BACK_PASSIVE_R	surraan	surra|VERB|Vpss|Tpres|Ppe4	sorrow-passive 
+V_FRONT_PASSIVE_R	pierrään	pierrä|VERB|Vpss|Tpres|Ppe4	fart-passive 
+V_BACK_PASSIVE_N	pannaan	panna|VERB|Vpss|Tpres|Ppe4	put-passive 
+V_FRONT_PASSIVE_N	mennään	mennä|VERB|Vpss|Tpres|Ppe4	
+V_BACK_AINF	juoda	juoda|VERB|Vact|Ia|Nsg|Xlat	drink 
+V_FRONT_AINF	nähdä	nähdä|VERB|Vact|Ia|Nsg|Xlat	
+V_BACK_EINF	kutoessa	kutoa|VERB|Vact|Ie|Nsg|Xine	
+V_FRONT_EINF	yltäessä	yltää|VERB|Vact|Ie|Nsg|Xine	
+V_BACK_TUPCP_STRONG	valkaistu	valkaista|VERB|Vpss|Cnut|Nsg|Xnom	bleached 
+V_FRONT_TUPCP_STRONG	häpäisty	häpäistä|VERB|Vpss|Cnut|Nsg|Xnom	sacrileged 
+V_BACK_TUPCP_0	huudettu	huutaa|VERB|Vpss|Cnut|Nsg|Xnom	yelled 
+V_FRONT_TUPCP_0	ylennetty	ylentää|VERB|Vpss|Cnut|Nsg|Xnom	promoted 
+V_BACK_TUPCP_D	viipaloitu	viipaloida|VERB|Vpss|Cnut|Nsg|Xnom	sliced 
+V_FRONT_TUPCP_D	yksilöity	yksilöidä|VERB|Vpss|Cnut|Nsg|Xnom	singled out 
+V_BACK_TUPCP_L	paranneltu	parannella|VERB|Vpss|Cnut|Nsg|Xnom	embettered 
+V_FRONT_TUPCP_L	vähätelty	vähätellä|VERB|Vpss|Cnut|Nsg|Xnom	belittled 
+V_BACK_TUPCP_N	pantu	panna|VERB|Vpss|Cnut|Nsg|Xnom	put 
+V_FRONT_TUPCP_N	menty	mennä|VERB|Vpss|Cnut|Nsg|Xnom	went 
+V_BACK_TUPCP_R	purtu	purra|VERB|Vpss|Cnut|Nsg|Xnom	bitten 
+V_FRONT_TUPCP_R	pierty	pierrä|VERB|Vpss|Cnut|Nsg|Xnom	
+V_FRONT_POSS	kutoakseni	kutoa|VERB|Vact|Ia|Nsg|Xtra|Osg1	
+V_FRONT_POSS	kutoessasi	kutoa|VERB|Vact|Ie|Nsg|Xine|Osg2	
+V_BACK_POSS	nähdäkseni	nähdä|VERB|Vact|Ia|Nsg|Xtra|Osg1	
+V_BACK_POSS	nähdessäsi	nähdä|VERB|Vact|Ie|Nsg|Xine|Osg2	
+V_BACK_POSS_AN	kutomattaan	kutoa|VERB|Vact|Ima|Nsg|Xabe|Osg3	
+V_BACK_POSS_EN	kutoakseen	kutoa|VERB|Vact|Ia|Nsg|Xtra|Opl3	
+V_FRONT_POSS_EN	nähdäkseen	nähdä|VERB|Vact|Ia|Nsg|Xtra|Opl3	
+V_FRONT_POSS_AN	näkemättään	nähdä|VERB|Vact|Ima|Nsg|Xabe|Osg3	
+V_BACK_CLIT	kudonhan	kutoa|VERB|Vact|Tpres|Psg1|Qhan	
+V_BACK_CLIT	kudotko	kutoa|VERB|Vact|Tpres|Psg2|Qko	
+V_FRONT_CLIT	näenhän	nähdä|VERB|Vact|Tpres|Psg1|Qhan	
+V_FRONT_CLIT	näetkö	nähdä|VERB|Vact|Tpres|Psg2|Qko	
+V_BACK_DERIV_PCPS	kutomani	kutoa|VERB|Cma|Nsg|Xnom|Osg1	
+V_BACK_DERIV_PCPS	kutomaton	kutoa|VERB|Cmaton|Nsg|Xnom	
+V_BACK_DERIV_PCPS	kutova	kutoa|VERB|Vact|Cva|Nsg|Xnom	
+V_FRONT_DERIV_PCPS	näkemäni	nähdä|VERB|Cma|Nsg|Xnom|Osg1	
+V_FRONT_DERIV_PCPS	näkemätön	nähdä|VERB|Cmaton|Nsg|Xnom	
+V_FRONT_DERIV_PCPS	näkevä	nähdä|VERB|Vact|Cva|Nsg|Xnom	
