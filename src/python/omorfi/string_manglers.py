@@ -2,15 +2,7 @@
 # -*- coding: utf-8 -*-
 """Additional string handling functions for omorfi processing.
 
-<<<<<<< HEAD:src/lexical/omor_strings_io.py
-from sys import stderr
-import re
-import unicodedata
-
-# common symbols for all
-=======
 Includes some neat error logging for debugs and stuff."""
->>>>>>> lexical-as-top:src/python/omorfi/string_manglers.py
 
 # Author: Tommi A Pirinen <flammie@iki.fi> 2015
 
@@ -29,6 +21,8 @@ Includes some neat error logging for debugs and stuff."""
 #
 
 from sys import stderr
+import re
+import unicodedata
 
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):
