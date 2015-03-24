@@ -240,7 +240,7 @@ Aleksinsaaret	1	N_SAARET	obligatory
 alfasäteet	1	N_TIETEET	obligatory
 Alhoinniityt	1	N_NIITYT	obligatory
 Alhonpellot	1	N_AALLOT	obligatory
-alinen	1	N_AAKKOSTAMINEN	common
+alinen	2	N_AAKKOSTAMINEN	common
 Aliojansaaret	1	N_SAARET	obligatory
 alkajaiset	1	N_RAPPUSET	obligatory
 alkeet	1	N_ALKEET	obligatory
@@ -4479,7 +4479,7 @@ Kultosaaret	1	N_SAARET	obligatory
 kulttuurifriikki	1	N_HÄKKI	common
 kulttuurikilpailu	1	N_ASU	common
 kulttuurikilpailut	1	N_HOUSUT	obligatory
-kulu	1	N_ASU	common
+kulu	2	N_ASU	common
 kulunki	1	N_VANKI	common
 Kulusharjut	1	N_HOUSUT	obligatory
 kulutusmenot	1	N_AIVOT	obligatory
@@ -7301,7 +7301,7 @@ oltavat	1	N_JUHLAT	obligatory
 olympiakisat	1	N_VARAT	obligatory
 olympialaiset	1	N_RAPPUSET	obligatory
 olympiarenkaat	1	N_RENKAAT	obligatory
-omainen	1	N_AAKKOSTAMINEN	common
+omainen	2	N_AAKKOSTAMINEN	common
 omakustannukset	1	N_SERKUKSET	obligatory
 omenakärry	1	N_KÄRRY	common
 Omenalammit	1	N_LAMMIT	obligatory
@@ -9390,7 +9390,7 @@ Rippuvuononsaaret	1	N_SAARET	obligatory
 ripsi	1	N_KIVI	common
 ripsu	1	N_ASU	common
 ripsulisko	1	N_TALO	common
-risa	1	N_KIRJA	common
+risa	2	N_KIRJA	common
 Riskinsaaret	1	N_SAARET	obligatory
 Riskonkarrat	1	N_KARRAT	obligatory
 Riskosuonkalliot	1	N_RAUNIOT	obligatory
@@ -12855,7 +12855,7 @@ Ylimmäisenkankaat	1	N_RENKAAT	obligatory
 Ylimmäisensuonsaarekkeet	1	N_KUULOKKEET	obligatory
 Ylimmäisetlompolat	1	N_MARKKINAT	obligatory
 Yli-Naarman lammit	1	N_LAMMIT	obligatory
-ylinen	1	N_KYLKIÄINEN	common
+ylinen	2	N_KYLKIÄINEN	common
 Ylinenät	1	N_KÄRÄJÄT	obligatory
 Ylinevansaaret	1	N_SAARET	obligatory
 Yliniittylammit	1	N_LAMMIT	obligatory

@@ -1862,7 +1862,7 @@ jääräpäisesti	1	PCLE_TYHMÄSTI	adverb|dersti
 jääteitse	1	PCLE_TYHMÄSTI	adverb
 jäätävästi	1	PCLE_TYHMÄSTI	adverb|dersti
 k.	1	PCLE_VAAN	abbreviation
-ka	2	PCLE_VAAN	unspecified
+ka	3	PCLE_VAAN	unspecified
 ka.	1	PCLE_VAAN	abbreviation
 kaa	1	PCLE_NOPEASTI	adposition
 kaameasti	1	PCLE_NOPEASTI	adverb|dersti
@@ -3450,7 +3450,7 @@ mittaamattomasti	1	PCLE_NOPEASTI	adverb|dersti
 mittaan	1	PCLE_NOPEASTI	adposition
 mitvit	1	PCLE_VAAN	unspecified
 mitä	1	PCLE_MITEN	adverb|Interrogative
-mitä	2	PCLE_VAAN	unspecified
+mitä	2	PCLE_VAAN	conjunction|Adverbial
 mitäh	1	PCLE_HAH	interjection
 mix	1	PCLE_TYHMÄSTI	adverb
 ml.	1	PCLE_VAAN	abbreviation

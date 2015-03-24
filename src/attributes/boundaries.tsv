@@ -17840,8 +17840,8 @@ kirjoitustapa	1	N_SALPA	kirjoitus{WB}tapa
 kirjoitustoimeksianto	1	N_TALO	kirjoitus{WB}toimeksianto
 kirjoitustyyli	1	N_TYYLI	kirjoitus{WB}tyyli
 kirjoitustyyppi	1	N_TYYPPI	kirjoitus{WB}tyyppi
-kirjoitusvihko	1	N_TALO	kirjoitus{WB}vihko
-kirjoitusvihko	2	N_PELKO	kirjoitus{WB}vihko
+kirjoitusvihko	1	N_PELKO	kirjoitus{WB}vihko
+kirjoitusvihko	2	N_TALO	kirjoitus{WB}vihko
 kirjoitusvirhe	1	N_PISTE	kirjoitus{WB}virhe
 kirjoitusväline	1	N_PISTE	kirjoitus{WB}väline
 kirjojenkeräilyhimo	1	N_TALO	kirjojenkeräily{WB}himo
@@ -22115,9 +22115,9 @@ kyläyhdyskunta	1	N_KUNTA	kylä{WB}yhdyskunta
 kyläyhteisö	1	N_JÄÄTELÖ	kylä{WB}yhteisö
 kymmenesluokkalainen	1	A_AAKKOSELLINEN	kymmenes{WB}luokkalainen
 kymmenesluokkalainen	2	N_AAKKOSTAMINEN	kymmenes{WB}luokkalainen
-kymmenesosa	1	N_VOIMA	kymmenes{WB}osa
+kymmenesosa	2	N_VOIMA	kymmenes{WB}osa
 kymmenesosasekunti	1	N_SOINTI	kymmenes{WB}osa{WB}sekunti
-kymmenestuhannesosa	1	N_VOIMA	kymmenes{WB}tuhannesosa
+kymmenestuhannesosa	2	N_VOIMA	kymmenes{WB}tuhannesosa
 kymmeneuronen	1	N_AAKKOSTAMINEN	kymmen{WB}euronen
 kymmenhenkinen	1	A_KYLMÄJÄRKINEN	kymmen{WB}henkinen
 kymmenjalkainen	1	A_AAKKOSELLINEN	kymmen{WB}jalkainen
@@ -30563,7 +30563,7 @@ miljoonalahjoitus	1	N_VAKUUTUS	miljoona{WB}lahjoitus
 miljoonaomaisuus	1	N_AAKKOSELLISUUS	miljoona{WB}omaisuus
 miljoonapainos	1	N_VAKUUTUS	miljoona{WB}painos
 miljoonapalo	1	N_RUIPELO	miljoona{WB}palo
-miljoonasosa	1	N_VOIMA	miljoonas{WB}osa
+miljoonasosa	2	N_VOIMA	miljoonas{WB}osa
 miljoonatalo	1	N_TALO	miljoona{WB}talo
 Miljoonatie	1	N_TIE	Miljoona{WB}tie
 miljoonavahinko	1	N_RUNKO	miljoona{WB}vahinko
@@ -45660,7 +45660,7 @@ sadannespiste	1	N_PISTE	sadannes{WB}piste
 sadanpäämies	1	N_MIES	sadan{WB}päämies
 sadanpäämies	2	N_MIES	sadan{WB}pää{WB}mies
 sadasmiljoonasosa	1	N_VOIMA	sadas{WB}miljoonasosa
-sadasosa	1	N_VOIMA	sadas{WB}osa
+sadasosa	2	N_VOIMA	sadas{WB}osa
 sadasosasekunti	1	N_SOINTI	sadasosa{WB}sekunti
 sadasosasekunti	2	N_SOINTI	sadas{WB}osa{WB}sekunti
 sadastuhannesosa	2	N_VOIMA	sadas{WB}tuhannesosa
@@ -55138,7 +55138,7 @@ tuberkuloosibakteeri	1	N_KANAALI	tuberkuloosi{WB}bakteeri
 tuberkuloosiparantola	1	N_MAKKARA	tuberkuloosi{WB}parantola
 tuberkuloosirokotus	1	N_VAKUUTUS	tuberkuloosi{WB}rokotus
 tuberkuloositesti	1	N_TYYLI	tuberkuloosi{WB}testi
-tuhannesosa	1	N_VOIMA	tuhannes{WB}osa
+tuhannesosa	2	N_VOIMA	tuhannes{WB}osa
 tuhannesosamillimetri	1	N_TYYLI	tuhannes{WB}osa{WB}milli{WB}metri
 tuhatjalkainen	1	A_AAKKOSELLINEN	tuhat{WB}jalkainen
 tuhatjalkainen	2	N_AAKKOSTAMINEN	tuhat{WB}jalkainen

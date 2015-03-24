@@ -143,7 +143,7 @@ seitsemäskymmenes	2	NUM_NELJÄS	ordinal
 seitsemäsosa	1	NUM_KOLMASOSA	cardinal
 seitsemässadas	2	NUM_KOLMAS	ordinal
 seitsemästoista	2	NUM_KYMMENTÄ	ordinal
-toinen	1	NUM_TOINEN	ordinal
+toinen	2	NUM_TOINEN	ordinal
 toistakymmentä	1	NUM_KYMMENTÄ	cardinal
 toistakymmentätuhatta	1	NUM_KYMMENTÄ	cardinal
 toistasataa	1	NUM_KYMMENTÄ	cardinal

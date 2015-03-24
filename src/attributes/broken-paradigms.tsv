@@ -10,7 +10,7 @@ aitosuomalainen	1	N_AAKKOSTAMINEN	50
 aitosuomalaisuus	1	N_AAKKOSELLISUUS	50
 aitosyöpä	1	N_LEIPÄ	50
 aitotumallinen	1	A_AAKKOSELLINEN	50
-aitotumallinen	2	A_AAKKOSELLINEN	50
+aitotumallinen	2	N_AAKKOSTAMINEN	50
 aitotumallinen	3	N_AAKKOSTAMINEN	50
 aitotumallinen	4	N_AAKKOSTAMINEN	50
 aneurysma	1	N_KIRJA	10
@@ -32,7 +32,7 @@ happy hour	1	N_PUNK	99
 harmaa-asteikko	1	N_LEPAKKO	50
 harmaahaikara	1	N_KITARA	50
 harmaahapsi	1	N_LAPSI	50
-harmaahapsi	2	N_LAPSI	50
+harmaahapsi	2	N_ONNI	50
 harmaahapsi	3	N_ONNI	50
 harmaahapsi	4	N_ONNI	50
 harmaahome	1	N_ASTE	50
@@ -92,7 +92,6 @@ isoisä	1	N_HÖPÖTTÄJÄ	50
 isojako	2	N_TEKO	50
 isokuovi	2	N_RUUVI	50
 isokäpylintu	2	N_LINTU	50
-isolepinkäinen	1	N_KYLKIÄINEN	50
 isolepinkäinen	2	N_KYLKIÄINEN	50
 isolokki	2	N_LOKKI	50
 isomaksaruoho	2	N_TALO	50
@@ -167,8 +166,7 @@ kippurahäntä	1	N_HÄNTÄ	50
 kireäilmeinen	1	A_KYLMÄJÄRKINEN	18
 kirjavapillike	2	N_LÄÄKE	50
 klanipää	1	N_PÄÄ	50
-kohta	1	PCLE_VAAN	10
-kohta	2	N_SOTA	10
+kohta	1	N_SOTA	10
 konepestävä	1	N_HÖPÖTTÄJÄ	50
 korkea-aste	1	N_ASTE	50
 korkeajännite	1	N_PISTE	50
@@ -230,7 +228,7 @@ kuumataonta	1	N_KUTSUNTA	50
 kuumatyöstö	1	N_MÖMMÖ	50
 kuumavalssaus	1	N_VAKUUTUS	50
 kuuromykkä	1	A_MYKKÄ	50
-kuuromykkä	2	A_MYKKÄ	50
+kuuromykkä	2	N_HÖLKKÄ	50
 kuuromykkä	3	N_HÖLKKÄ	50
 kuuromykkä	4	N_HÖLKKÄ	50
 kuurosokea	1	A_KORKEA	50
@@ -393,7 +391,6 @@ omarahoitus	1	N_VAKUUTUS	50
 omatunto	2	N_TUNTO	50
 omavastuu	1	N_LEIKKUU	50
 pahahenki	2	N_HENKI	50
-pahaputki	1	N_ONNI	50
 pahaputki	2	N_ONNI	50
 paksulehti	1	N_LEHTI	50
 paksusuoli	1	N_RUUHI	50
@@ -443,7 +440,7 @@ raakamakkara	1	N_KITARA	50
 raakamalmi	1	N_RUUVI	50
 raakametalli	1	N_KANAALI	50
 raakanahka	1	N_KIRJA	50
-raakanahka	2	N_KIRJA	50
+raakanahka	2	N_VIKA	50
 raakanahka	3	N_VIKA	50
 raakanahka	4	N_VIKA	50
 raakapakaste	1	N_ASTE	50
