@@ -58,10 +58,10 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 # {{{Scripts 
 # NB: (variable name = SCIRPTS cause automagic _SCRIPTS)
 # tag formats
-FORMAT_SCIRPTS=python/apertium_formatter.py \
-			   python/ftb3_formatter.py \
-			   python/omor_formatter.py \
-			   python/tdt_formatter.py
+FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
+			   python/omorfi/ftb3_formatter.py \
+			   python/omorfi/omor_formatter.py \
+			   python/omorfi/tdt_formatter.py
 # file formats
 GENERATOR_SCIRPTS=python/generate-lexcs.py \
 				  python/generate-twolcs.py \
@@ -160,8 +160,13 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(SCIRPTS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml
 
 # These are ran with make check. All modules should have stuff
-TESTS=$(FORMAT_SCIRPTS) $(FIN_SCIRPTS)
+TESTS=bash/validate-database.bash
 XFAIL_TESTS=tdt_formatter.py
+
+# python is anti-unit tests
+# https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
+AM_PY_LOG_FLAGS=-m omorfi
+PY_LOG_COMPILER=$(PYTHON)
 
 # These aren't installed but generated
 noinst_DATA=generated/omorfi.dix generated/omorfi-sanalista.xml

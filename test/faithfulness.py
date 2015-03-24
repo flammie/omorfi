@@ -127,12 +127,12 @@ def main():
                     deduct_matches += 1
                     print_in = False
                 else:
-                    print("NOMATCH:", freq, surf, lemma, analysis, sep="\t", end="\t",
+                    print("NOMATCH:", freq, surf, lemma + " " + analysis, sep="\t", end="\t",
                         file=options.outfile)
                     if options.verbose:
                         print("!", end='', file=stderr)
             else:
-                print("NOMATCH:", freq, surf, lemma, analysis, sep="\t", end="\t",
+                print("NOMATCH:", freq, surf, lemma + " " +  analysis, sep="\t", end="\t",
                     file=options.outfile)
                 if options.verbose:
                     print("!", end='', file=stderr)
