@@ -307,8 +307,9 @@ def format_wordmap_lexc_apertium(wordmap):
     if wordmap['pos'] == 'NOUN':
         if wordmap['is_proper']:
             wordmap['analysis'] += '%<np%>'
-            for pc in wordmap['proper_noun_class'].split(','):
-                wordmap['analysis'] += format_stuff_apertium(pc)
+            wordmap['analysis'] += format_stuff_apertium(wordmap['proper_noun_class'])
+            if wordmap['sem'] in ['male', 'female']:
+                wordmap['analysis'] += format_stuff_apertium(wordmap['sem'])
         else:
             wordmap['analysis'] += '%<n%>'
     elif wordmap['pos'] == 'VERB':
