@@ -1,33 +1,28 @@
 #!/bin/bash
 
-echo "= $(date --iso) ="
+echo "# $(date --iso) "
 echo
-for f in *.anals; do
-    corpus=${f%.anals}
-    fgrep '+?' < $f > ${corpus}.misses
-    echo "== ${corpus} =="
+for f in *.coveragelog; do
+    corpus=${f%.coveragelog}
+    echo "## ${corpus} coverage"
     echo
-    wfs=$(grep -c '^$' < ${f})
-    misses=$(wc -l < ${corpus}.misses)
-    uniqs=$(cut -f 1 < ${f} | sort | uniq | wc -l)
-    uniqmisses=$(sort < ${corpus}.misses | sort | uniq | wc -l)
-    echo "=== Coverage ==="
+    tokens=$(wc -l < ${corpus}.tokens)
+    types=$(wc -l < ${corpus}.uniq.freqs)
+    tokenmisses=$(awk '{SUM+=$1;} END {print SUM;}' < ${f})
+    typemisses=$(wc -l < ${f})
+    echo "| Feature | Missed | Coverage | All |"
+    echo "|:--------|-------:|---------:|----:|"
+    echo "| Tokens  | $tokenmisses | " \
+        $(echo "scale=4; (1 - $tokenmisses / $tokens) * 100" | bc ) \
+        "% | $tokens |"
+    echo "| Types   | $typemisses |" \
+        $(echo "scale=4; (1 - $typemisses / $types) * 100" | bc ) \
+        "% | $types |"
     echo
-    echo Tokens: $wfs, misses: $misses
-    echo "scale=4; (1 - $misses / $wfs) * 100" | bc |\
-        sed -e 's/^/Token Coverage:/' -e 's/$/ %/'
-    echo Unique tokens: $uniqs, misses: $uniqmisses
-    echo "scale=4; (1 - $uniqmisses / $uniqs) * 100" | bc |\
-        sed -e 's/^/Type Coverage:/' -e 's/$/ %/'
+    echo "### 100 most common missing word-forms "
     echo
-    echo "=== 100 most common missing word forms ==="
-    echo
-    echo "|| *Frequency* || *Word form* ||"
-    sort < ${corpus}.misses | uniq -c | sort -nr |\
-        head -n 100 |\
-        sed -e 's/^ *//' -e 's/^[[:digit:]]*/ \0 || /' \
-            -e 's/[^[:space:]]*+?.*$/ /' \
-            -e 's/^/||/' -e 's/$/||/' 
+    echo "| Frequency | Word-form |"
+    head -n 100 $f |\
+        awk '{printf("| %s | %s |\n", $1, $2);}'
     echo
 done
-
