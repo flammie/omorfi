@@ -386,10 +386,10 @@ def format_wordmap_lexc_ftb3(wordmap, format):
     elif wordmap['pos'] == 'CONJUNCTIONVERB':
         if wordmap['lemma'] == 'eikä':
             wordmap['lemma'] = 'ei'
-            wordmap['analysis'] = format_stuff_ftb3('COORDINATING') + \
+            wordmap['analysis'] += format_stuff_ftb3('COORDINATING') + \
                     format_stuff_ftb3('Nneg')
         else:
-            wordmap['analysis'] = format_stuff_ftb3('ADVERBIAL') + \
+            wordmap['analysis'] += format_stuff_ftb3('ADVERBIAL') + \
                     format_stuff_ftb3('Nneg')
     elif wordmap['pos'] == 'PARTICLE':
         if wordmap['particle']:
