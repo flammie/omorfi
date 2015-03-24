@@ -19,7 +19,7 @@ if test ! -r $cuf ; then
     echo missing $cuf, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ $srcdir/faithfulness.py -f $fsa -i $cuf -o ftb3.1.log -a ftb3.1 ; then
+if ! @PYTHON@ $srcdir/faithfulness.py -f $fsa -i $cuf -o ftb3.1.faithlog -a ftb3.1 ; then
     echo We missed the target of 90 % faithfulness
     exit 1
 fi
