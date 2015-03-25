@@ -92,7 +92,6 @@ if WANT_HFST
 GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
 				 generated/omorfi.lemmatise.hfst \
 				 generated/omorfi.tokenise.hfst \
-				 generated/omorfi.hyphenate.hfst \
 				 generated/omorfi.segment.hfst
 GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-uppercase-first.twolc \
@@ -145,7 +144,6 @@ pkgdata_DATA=generated/master.tsv
 bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-analyse-tokenised.sh \
 			bash/omorfi-generate.sh \
-			bash/omorfi-hyphenate.sh \
 			bash/omorfi-spell.sh \
 			bash/omorfi-segment.sh
 
@@ -410,7 +408,9 @@ generated/omorfi.tokenise.hfst: generated/omorfi.accept.hfst \
 generated/omorfi.hyphenate.hfst: generated/temporary-ftb3.orth.hfst \
 						generated/omorfi-hyphenate.twolc.hfst
 	cat generated/temporary-ftb3.orth.hfst |\
-		$(HIC) $(HFST_FLAGS) -2 generated/omorfi-hyphenate.twolc.hfst > $@
+		$(HPR) -p lower |\
+		$(HIC) $(HFST_FLAGS) -2 generated/omorfi-hyphenate.twolc.hfst |\
+		$(HF2F) $(HFST_FLAGS) -f olw > $@
 
 # }}}
 # {{{FTB3 compilation
