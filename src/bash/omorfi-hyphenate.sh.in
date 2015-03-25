@@ -1,8 +1,8 @@
 #!/bin/bash
 omorfidir="@prefix@/share/hfst/fi/"
-omorfifile="$omorfidir/hyphenate.dict.hfst"
+omorfifile="$omorfidir/omorfi.hyphenate-rules.hfst"
 args=$@
-
+hyphen="-"
 function print_version() {
     echo "omorfi-hyphenate 0.1"
     echo "Copyright (c) 2012 Tommi A Pirinen"
@@ -42,7 +42,9 @@ function check_omorfi() {
 }
 
 function hyphenate() {
-    cat $@ | hfst-lookup -x "$omorfifile"
+    cat $@ | hfst-lookup -x "$omorfifile" |\
+        sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
+            -e "s/-4/$hyphen/g"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
