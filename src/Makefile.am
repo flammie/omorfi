@@ -148,7 +148,8 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-generate.sh \
 			bash/omorfi-spell.sh \
 			bash/omorfi-segment.sh \
-			bash/omorfi-hyphenate.sh
+			bash/omorfi-hyphenate.sh \
+			python/omorfi-factorise.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py

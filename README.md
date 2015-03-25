@@ -182,6 +182,18 @@ $ omorfi-generate.sh
 [WORD_ID=talo][POS=NOUN][NUM=SG][CASE=INE]	talossa	0,000000
 ```
 
+Moses factored analysis format can be generated using python script:
+
+```
+omorfi-factorise.py
+tämä kyllä toimii oikein.
+tämä|tämä|PRONOUN|PRONOUN.DEMONSTRATIVE.SG.NOM|0 kyllä|kyllä|ADVERB|ADVERB|0 toimii|toimia|VERB|VERB.ACT.INDV.PRESENT.SG3|.i oikein.|oikein.|UNK|UNKNOWN|0 
+```
+
+The input should be in format produced by moses's tokenizer.perl (truecase or
+clean-corpus-n not necessary). *In order for python scripts to work you need
+to install them to same prefix or define PYTHONPATH*.
+
 ### Advanced usage
 
 For serious business, the convenience shell-scripts are not usually sufficient.
