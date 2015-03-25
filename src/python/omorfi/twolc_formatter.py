@@ -105,7 +105,7 @@ def format_sets_twolc(format, ruleset):
 def format_definitions_twolc(format, ruleset):
     twolcstring = 'Definitions\n'
     if ruleset == 'hyphenate':
-        twolcstring += 'WordBoundary = [ %- | 0:%- | 0:%-1 | ' \
+        twolcstring += 'WordBoundary = [ %- | :%- | ' \
                 + word_boundary + ':0 | #: | .#. ] ;\n'
     twolcstring += 'DUMMYDEFINITIONCANBEUSEDTOTESTBUGS = a | b | c ;\n'
     return twolcstring

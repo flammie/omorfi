@@ -92,7 +92,9 @@ if WANT_HFST
 GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
 				 generated/omorfi.lemmatise.hfst \
 				 generated/omorfi.tokenise.hfst \
-				 generated/omorfi.segment.hfst
+				 generated/omorfi.segment.hfst \
+				 generated/omorfi.hyphenate-rules.hfst
+# hyphenate-dict is unusable atm
 GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-uppercase-first.twolc \
 				  generated/omorfi-recase-any.twolc \
@@ -145,7 +147,8 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-analyse-tokenised.sh \
 			bash/omorfi-generate.sh \
 			bash/omorfi-spell.sh \
-			bash/omorfi-segment.sh
+			bash/omorfi-segment.sh \
+			bash/omorfi-hyphenate.sh
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py
@@ -405,12 +408,19 @@ generated/omorfi.tokenise.hfst: generated/omorfi.accept.hfst \
 		$(HREP) $(HFST_FLAGS) -f 1 -o $@
 
 # hyphenation dictionary
-generated/omorfi.hyphenate.hfst: generated/temporary-ftb3.orth.hfst \
+generated/omorfi.hyphenate-dict.hfst: generated/temporary-ftb3.orth.hfst \
 						generated/omorfi-hyphenate.twolc.hfst
 	cat generated/temporary-ftb3.orth.hfst |\
 		$(HPR) -p lower |\
 		$(HIC) $(HFST_FLAGS) -2 generated/omorfi-hyphenate.twolc.hfst |\
 		$(HF2F) $(HFST_FLAGS) -f olw > $@
+
+generated/omorfi.hyphenate-rules.hfst: generated/omorfi-hyphenate.twolc.hfst
+	$(HSPL) generated/omorfi-hyphenate.twolc.hfst --prefix generated/omorfi.hyphenate-rules-
+	$(HIX) generated/omorfi.hyphenate-rules-1.hfst generated/omorfi.hyphenate-rules-2.hfst |\
+		$(HIX) - generated/omorfi.hyphenate-rules-3.hfst |\
+		$(HMIN) |\
+		$(HF2F) -f olw > $@
 
 # }}}
 # {{{FTB3 compilation
