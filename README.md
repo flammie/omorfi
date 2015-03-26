@@ -23,16 +23,28 @@ releases tab.
 
 ## Dependencies
 
-Compilation of the morphological analyser, generation, lemmatisation or spell-checking requires [HFST](http://hfst.sf.net) tools or compatible installed:
+Compilation of the morphological analyser, generation, lemmatisation or
+spell-checking requires [HFST](http://hfst.sf.net) tools or compatible
+installed:
 
   * hfst-3.8 or greater
   * python-3.2 or greater
+  * GNU autoconf-2.64 and automake-1.12 (older may work with bit of fiddling,
+    but if you are stuck with so old versions chances are other parts of the
+    build will fail too)
 
 The use of certain automata also requires additional tools:
 
-  * hfst-ospell-0.2.0 or greater can be used for spell-checking automata
+  * hfst-ospell-0.2.0 or greater needed convenient use of the 
+    spell-checking automata
   * apertium can be used to pre-process text corpora
 
+APIs require:
+
+* Python 3.2 for python API
+* Java 7 for Java API
+
+For bash tools, recent GNU coreutils etc. should be more than enough.
 
 ## Installation
 
@@ -247,6 +259,13 @@ fin-automorf.hfst        omorfi-ftb3.generate.hfst  omorfi.tokenise.hfst
 omorfi.hyphenate.hfst    omorfi.lemmatise.hfst      omorfi-omor.analyse.hfst
 ```
 
+The naming *has changed* in 2014–2015 cycle! This was made because people seem
+to distribute automata over the net without attributions, at least the default
+filenames for most automata are now `omorfi*.hfst`. The system is: 
+omorfi.`function`.hfst, or omorfi-`variant`.`function`.hfst. The variants
+other than `omor` are for convenience and interoperability, and have recasing
+built in, but since they encode existing standards, will also be more
+stable between versions.
 
 #### HFST tools
 
