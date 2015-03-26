@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "# $(date --iso) "
+echo "## $(date --iso) coverages"
 echo
 for f in *.coveragelog; do
     corpus=${f%.coveragelog}
-    echo "## ${corpus} coverage"
+    echo "### ${corpus}"
     echo
     tokens=$(wc -l < ${corpus}.tokens)
     types=$(wc -l < ${corpus}.uniq.freqs)
@@ -19,7 +19,7 @@ for f in *.coveragelog; do
         $(echo "scale=4; (1 - $typemisses / $types) * 100" | bc ) \
         "% | $types |"
     echo
-    echo "### 100 most common missing word-forms "
+    echo "#### 100 most common missing word-forms "
     echo
     echo "| Frequency | Word-form |"
     head -n 100 $f |\

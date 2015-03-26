@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "# $(date --iso) "
+echo "## $(date --iso) faithfulness"
 echo
 for f in *.faithlog; do
     corpus=${f%.faithlog}
-    echo "## ${corpus} faithfulness"
+    echo "### ${corpus}"
     echo
     tokens=$(wc -l < ${corpus}.conllx)
     types=$(wc -l < ${corpus}.conllx.cutted.freqs)
@@ -19,7 +19,7 @@ for f in *.faithlog; do
         $(echo "scale=4; (1 - $typemisses / $types) * 100" | bc ) \
         "% | $types |"
     echo
-    echo "### 100 most common mismatches "
+    echo "#### 100 most common mismatches "
     echo
     echo "| Mismatch TYPE | Frequency | Word form | FTB 3.1 | (First reading) |"
     head -n 100 $f |\
