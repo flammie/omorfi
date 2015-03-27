@@ -242,7 +242,8 @@ stuff2monodix =  {
         "Xlat": "lat",
         "Xnom": "nom",
         "Xpar": "par", 
-        "Xtra": "tra", 
+        "Xtra": "tra",
+        ".": "",
         "": ""
         }
 

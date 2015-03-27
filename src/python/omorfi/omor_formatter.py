@@ -279,7 +279,9 @@ stuff2omor = {
         "UNSPECIFIED": "",
         "FTB3man": "",
         "LEMMA-START": "[WORD_ID=",
-        "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]", 
+        "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]",
+        "FTB3MAN": "",
+        ".": "",
         "": ""}
 
 def format_stuff_omor(stuff, format):

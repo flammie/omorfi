@@ -157,14 +157,23 @@ stuff2apertium =  {
         "Cva": "pprs",
         "DASH": "guio",
         "DECIMAL": "",
+        "DERSTI": "",
+        "DERTTAIN": "",
         "DEMONSTRATIVE": "dem",
         "DIGIT": "",
-        "Din": "v→n", "Ds": "", "Du": "", "Dtava": "v→a",
-        "Dma": "v→a", "Dinen": "", "Dja": "v→n", "Dmpi": "",
-        "Dmaisilla": "v→adv",
-        "Dminen": "v→n",
-        "Dnut": "v→a", "Dtu": "v→a", "Duus": "", "Dva": "v→a", "Dmaton": "v→a",
-        "Dttaa": "", "Dtattaa": "", "Dtatuttaa": "", "Dsti": "a→adv",
+        "Din": "", "Ds": "", "Du": "", "Dtava": "",
+        "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
+        "Dmaisilla": "",
+        "Dminen": "",
+        "Dnut": "", 
+        "Dtu": "", 
+        "Duus": "", 
+        "Dva": "", 
+        "Dmaton": "",
+        "Dttaa": "", 
+        "Dtattaa": "", 
+        "Dtatuttaa": "", 
+        "Dsti": "",
         "EVENT": "",
         "FINAL-BRACKET": "rpar",
         "FINAL-QUOTE": "rquot",
@@ -266,6 +275,14 @@ stuff2apertium =  {
         "Xnom": "nom",
         "Xpar": "par", 
         "Xtra": "tra", 
+        "ADESSIVE": "ade",
+        "ABLATIVE": "abl",
+        "ALLATIVE": "all",
+        "INESSIVE": "ine",
+        "ILLATIVE": "ill",
+        "LOCATIVE": "loc",
+        "FTB3MAN": "",
+        ".": "",
         "": ""
         }
 
@@ -307,7 +324,8 @@ def format_wordmap_lexc_apertium(wordmap):
     if wordmap['pos'] == 'NOUN':
         if wordmap['is_proper']:
             wordmap['analysis'] += '%<np%>'
-            wordmap['analysis'] += format_stuff_apertium(wordmap['proper_noun_class'])
+            if wordmap['proper_noun_class']:
+                wordmap['analysis'] += format_stuff_apertium(wordmap['proper_noun_class'])
             if wordmap['sem'] in ['male', 'female']:
                 wordmap['analysis'] += format_stuff_apertium(wordmap['sem'])
         else:
