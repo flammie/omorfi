@@ -30,7 +30,7 @@ installed:
   * hfst-3.8 or greater
   * python-3.2 or greater
   * GNU autoconf-2.64 and automake-1.12 (older may work with bit of fiddling,
-    but if you are stuck with so old versions chances are other parts of the
+    but if you are stuck with so old versions, chances are other parts of the
     build will fail too)
 
 The use of certain automata also requires additional tools:

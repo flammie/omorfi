@@ -3,7 +3,21 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
-## Significant changes in 201410XX
+## Significant changes in 20150326
+
+* speed is up to >20,000 tokens per second from ~500
+* coverages are up to:
+  europarl (99 %) gutenberg (97 %), JRC Acquis (94 %) and fiwiki (93 %)
+* moses factored model format supported
+* segmentation supported
+* Java API
+* Python hacks packaged to API and module
+* Rest of hand-written Xerox legacy data removed; all is script-generated
+* github migration since google code is EOL'd
+* file naming for automata changed to include omorfi prefix for all file
+  names in case they are distributed separately.
+
+## Significant changes in 20141014
 
 * The regressions are also set on coverage over popular corpora:
   Europarl (98 %), FTB 3.1 (97 %), gutenberg (96 %), JRC Acquis (93 %) and
