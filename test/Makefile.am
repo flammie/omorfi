@@ -16,6 +16,8 @@ EXTRA_DIST=rough-tests.sh \
 		   faithfulness.py \
 		   $(BIG_TESTS)
 
+CLEANFILES=wordforms.anals
+
 if CAN_YAML_TEST
 #yaml-tests.yaml: test-header.yaml $(top_builddir)/src/lexical/gtd-tests.yaml
 #	cat test-header.yaml gtd-tests.yaml > $@

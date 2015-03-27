@@ -185,7 +185,8 @@ PY_LOG_COMPILER=$(PYTHON)
 noinst_DATA=generated/omorfi.dix generated/omorfi-sanalista.xml
 
 # Things that make clean isn't smart enought to wipe
-CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED) $(DB_GENERATED)
+CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED) $(DB_GENERATED) \
+		   keys duplicate-keys lc-sort-keys
 # }}}
 #
 # {{{GENERATING
@@ -588,4 +589,8 @@ voikko/speller-omorfi.zhfst: generated/omorfi.accept.hfst \
 	$(ZIP) -j -v -9 $@ voikko/*
 
 # }}}
+
+clean-local:
+	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
+		voikko/*hfst
 # vim: set foldmethod=marker:
