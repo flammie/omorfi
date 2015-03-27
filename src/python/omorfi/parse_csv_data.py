@@ -45,7 +45,7 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
             if extra_fields[0] == 'plurale_tantum':
                 wordmap['plurale_tantum'] = extra_fields[1]
             elif extra_fields[0] == 'proper_noun_class':
-                wordmap['proper_noun_class'].append( extra_fields[1].upper() )
+                wordmap['proper_noun_class'] =  extra_fields[1].upper()
                 wordmap['is_proper'] = True
             elif extra_fields[0] == 'adjective_class':
                 wordmap['adjective_class'] =  extra_fields[1].upper()

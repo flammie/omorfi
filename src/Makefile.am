@@ -27,7 +27,8 @@ LEMMA_JOINS=attributes/adjective-classes.tsv \
 			attributes/usage.tsv \
 			attributes/verb-arguments.tsv
 # paradigm features
-PARADIGM_JOINS=paradigms/morphophonology.tsv
+PARADIGM_JOINS=paradigms/morphophonology.tsv \
+			   paradigms/stub-deletions.tsv
 
 # Morphology
 # stem variants by deletion and concatenations
@@ -61,7 +62,12 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
 			   python/omorfi/ftb3_formatter.py \
 			   python/omorfi/omor_formatter.py \
-			   python/omorfi/tdt_formatter.py
+			   python/omorfi/tdt_formatter.py \
+			   python/omorfi/lexc_formatter.py \
+			   python/omorfi/twolc_formatter.py \
+			   python/omorfi/regex_formatter.py \
+			   python/omorfi/monodix_formatter.py \
+			   python/omorfi/kotus_sanalista_formatter.py
 # file formats
 GENERATOR_SCIRPTS=python/generate-lexcs.py \
 				  python/generate-twolcs.py \
@@ -82,7 +88,9 @@ FIN_SCIRPTS=python/omorfi/gradation.py \
 			python/omorfi/guess_feats.py \
 			python/omorfi/guess_new_class.py \
 			python/omorfi/wordmap.py \
-			python/omorfi/omor_strings_io.py
+			python/omorfi/string_manglers.py \
+			python/omorfi/error_logging.py \
+			python/omorfi/settings.py
 SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
 		$(FIN_SCIRPTS)
 # }}}
@@ -157,9 +165,12 @@ pkgpython_PYTHON=python/omorfi/__init__.py \
 
 # These go into dist tarballs... which we no longer make
 # N.B. for distcheck anyways
-EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(SCIRPTS) \
+EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
+		   $(SCIRPTS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
-		   voikko/voikko-fi_FI.pro voikko/index.xml
+		   voikko/voikko-fi_FI.pro voikko/index.xml \
+		   python/omorfi-factorise.py \
+		   bash/validate-database.bash
 
 # These are ran with make check. All modules should have stuff
 TESTS=bash/validate-database.bash
@@ -174,7 +185,8 @@ PY_LOG_COMPILER=$(PYTHON)
 noinst_DATA=generated/omorfi.dix generated/omorfi-sanalista.xml
 
 # Things that make clean isn't smart enought to wipe
-CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED) $(DB_GENERATED)
+CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED) $(DB_GENERATED) \
+		   keys duplicate-keys lc-sort-keys
 # }}}
 #
 # {{{GENERATING
@@ -577,4 +589,8 @@ voikko/speller-omorfi.zhfst: generated/omorfi.accept.hfst \
 	$(ZIP) -j -v -9 $@ voikko/*
 
 # }}}
+
+clean-local:
+	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
+		voikko/*hfst
 # vim: set foldmethod=marker:
