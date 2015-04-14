@@ -20,7 +20,7 @@ from glob import glob
 class Omorfi:
     """
     An object holding omorfi automata for all the functions of omorfi.
-    
+
     Each of the automata are accessible by their function and identifier.
     Some combinations of functionalities may be available that access more
     than one automaton in non-trivial ways. Currently supported automata
@@ -45,6 +45,9 @@ class Omorfi:
         can_lowercase: to use `str.lower()`
         can_titlecase: to use `str[0].upper() + str[1:]`
         can_uppercase: to use `str.upper()`
+        can_detitlecase: to use `str[0].lower + str[1:]`
+
+    The annotations will be changed if transformation has been applied.
     """
     analysers = dict()
     tokenisers = dict()
@@ -55,6 +58,7 @@ class Omorfi:
     acceptors = dict()
     can_lowercase = True
     can_titlecase = True
+    can_detitlecase = True
     can_uppercase = False
     _verbosity = False
 
@@ -180,21 +184,34 @@ class Omorfi:
 
     def _analyse(this, token, automaton):
         res = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token))
-        if len(token) > 2 and token[0].islower() and not token[1:].islower() and this.can_titlecase:
-            tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token[0].lower() + token[1:].lower()))
-            for r in tcres:
-                r.output = r.output + '[CASECHANGE=TITLECASED]'
-            res = res + tcres
+        if len(token) > 2 and token[0].islower() and this.can_titlecase:
+            tctoken = token[0].upper() + token[1:]
+            if tctoken != token:
+                tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(tctoken))
+                for r in tcres:
+                    r.output = r.output + '[CASECHANGE=TITLECASED]'
+                res = res + tcres
+        if len(token) > 2 and token[0].isupper() and this.can_detitlecase:
+            dttoken = token[0].lower() + token[1:]
+            if dttoken != token:
+                dtres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(dttoken))
+                for r in dtres:
+                    r.output = r.output + '[CASECHANGE=DETITLECASED]'
+                res = res + dtres
         if not token.isupper() and this.can_uppercase:
-            upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.upper()))
-            for r in upres:
-                r.output = r.output + '[CASECHANGE=UPPERCASED]'
-            res = res + upres
+            uptoken = token.upper()
+            if token != uptoken:
+                upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(uptoken))
+                for r in upres:
+                    r.output = r.output + '[CASECHANGE=UPPERCASED]'
+                res = res + upres
         if not token.islower() and this.can_lowercase:
-            lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
-            for r in lowres:
-                r.output = r.output + '[CASECHANGE=LOWERCASED]'
-            res += lowres
+            lowtoken = token.lower()
+            if token !=  lowtoken:
+                lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
+                for r in lowres:
+                    r.output = r.output + '[CASECHANGE=LOWERCASED]'
+                res += lowres
         for r in res:
             r.output = r.output + '[WEIGHT=%f]' %(r.weight)
         return res
