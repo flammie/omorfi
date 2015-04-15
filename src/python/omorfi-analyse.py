@@ -34,7 +34,29 @@ def print_analyses_apertium(surf, anals):
 def print_analyses_vislcg(surf, anals):
     print('"', surf, '"', sep='')
     for anal in anals:
-        print('\t"<', anal.output, '">')
+        pos_matches = re_pos.finditer(anal.output)
+        pos = "UNK"
+        mrds = []
+        lemmas = []
+        for pm in pos_matches:
+            pos = pm.group(1)
+        lemma_matches = re_lemma.finditer(anal.output)
+        for lm in lemma_matches:
+            lemmas += [lm.group(1)]
+        mrd_matches = re_mrd.finditer(anal.output)
+        for mm in mrd_matches:
+            if mm.group(1) == 'WORD_ID':
+                mrds = []
+            elif mm.group(1) == 'CASECHANGE' and mm.group(2) != 'NONE':
+                mrds = ['<*>'] + mrds
+            elif mm.group(1) == 'WEIGHT':
+                mrds += ['<W=' + str(int(float(mm.group(2)) * 100)) + '>']
+            elif mm.group(1) in ['STYLE']:
+                mrds += ['<' + mm.group(2) + '>']
+            else:
+                mrds += [mm.group(2)]
+        print('\t"', ''.join(lemmas).replace('"', '\\"'), '"\t',
+                ' '.join(mrds), sep='', file=outfile)
     print
 
 def print_analyses_conllx(surf, anals):
