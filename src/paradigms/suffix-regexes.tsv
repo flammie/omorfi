@@ -167,7 +167,7 @@ N_ATERIMET	met
 N_AUER	er
 N_BÉBÉ	
 N_BEIGNET	
-N_BERNIE	ie
+N_BERNIE	e
 N_BESSERWISSER	
 N_BIDEE	ee
 N_BIKINIT	it
@@ -220,8 +220,8 @@ N_HYLKY	ky
 N_HYNTTEET	tteet
 N_HYNTTYYT	ttyyt
 N_HYÖTYY	yy
-N_HÄIRIÖ	iö
-N_HÄKKI	kki
+N_HÄIRIÖ	ö
+N_HÄKKI	ki
 N_HÄKKYRÄ	ä
 N_HÄMET	t
 N_HÄMMINKI	nki
@@ -473,7 +473,7 @@ N_PII	i
 N_PIIROA	[ôo]a
 N_PINSETIT	tit
 N_PIPPALOT	ot
-N_PISTE	e
+N_PISTE	
 N_POHATTA	tta
 N_POHJE	je
 N_POIKA	oika
@@ -515,7 +515,7 @@ N_RAPUT	put
 N_RATAS	tas
 N_RATTAAT	ttaat
 N_RAUDAT	dat
-N_RAUNIOT	iot
+N_RAUNIOT	ot
 N_RAVET	et
 N_RAVUT	vut
 N_REGGAE	
@@ -562,7 +562,7 @@ N_SAARET	et
 N_SAKSET	et
 N_SALONTEET	nteet
 N_SALPA	pa
-N_SAMMALET	let
+N_SAMMALET	et
 N_SAMPI	mpi
 N_SAMPO	mpo
 N_SANKARI	i
@@ -827,7 +827,7 @@ V_MYYDÄ	yydä
 V_MÄDÄTÄ	dätä
 V_MÄIKYÄ	kyä
 V_MÖNKIÄ	nkiä
-V_NAKELLA	kella
+V_NAKELLA	ella
 V_NAKERRELLA	rrella
 V_NIUKETA	eta
 V_NUOKKUA	kua
@@ -953,7 +953,7 @@ ACRO_YHDISTYS
 ACRO_YKSI	1
 ACRO_YY	[YÜyü]
 ACRO_ZET	[ZŽzž]
-ACRO_ÄKS	[FLMNRŠSXŽflmnršsxž]
+ACRO_ÄKS	[FLMNRŠSXŽflmnršsxž²³]
 ACRO_ÄÄ	[Ää]
 ACRO_ÖÖ	[Öö]
 PCLE_HYVILLÄÄN	än
@@ -1023,7 +1023,7 @@ PRON_MONI	moni
 PRON_MONIAS	monias
 PRON_MONTA	monta
 PRON_MUU	muu
-PRON_MUUAN	muuan
+PRON_MUUAN	an
 PRON_MUUTAMA	muutama
 PRON_NÄMÄ	nämä
 PRON_NE	ne
