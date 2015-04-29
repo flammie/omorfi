@@ -29,7 +29,6 @@ apertium_multichars =  {
  "-",
  "",
  "+",
- "a→adv",
  "adj",
  "abbr",
  "abe",
@@ -121,6 +120,8 @@ apertium_multichars =  {
  "sup",
  "top",
  "tra", 
+ "use_archaic"
+ "use_nonstd"
  "vaux",
  "vblex",
  "v→a",
@@ -250,9 +251,9 @@ stuff2apertium =  {
         "Tpast": "past",
         "Tpot": "pot", 
         "Tpres": "pri",
-        "Uarch": "",
-        "Udial": "",
-        "Unonstd": "",
+        "Uarch": "use_archaic",
+        "Udial": "use_nonstd",
+        "Unonstd": "use_nonstd",
         "UNSPECIFIED": "part",
         "Urare": "",
         "Vact": "actv",
@@ -308,12 +309,18 @@ def format_analysis_lexc_apertium(anals):
 
 def format_continuation_lexc_apertium(anals, surf, cont):
     analstring = format_analysis_lexc_apertium(anals)
+    # the followings have surface fragments in continuations
     if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
+        analstring = lexc_escape(surf) + analstring
+    elif 'PUNCT_NONSTD_EXCL_LOOP' in cont:
         analstring = lexc_escape(surf) + analstring
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
 def format_wordmap_lexc_apertium(wordmap):
+    if wordmap['lemma'] == ' ':
+        # apertium fails when surf == ' '
+        return ''
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
     wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
     if wordmap['is_suffix']:
