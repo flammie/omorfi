@@ -400,7 +400,9 @@ generated/omorfi.segment.hfst: generated/temporary.unbounded.hfst
 
 # create one tape spell checker
 generated/omorfi.accept.hfst: generated/temporary.ftb3.hfst
-	$(HPR) $(HFST_FLAGS) --project=upper -i $< -o $@
+	$(HPR) $(HFST_FLAGS) --project=upper -i $< |\
+		$(HMIN) $(HFST_FLAGS) --encode-weights |\
+		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # create basic corpus tokeniser
 # Should split at even-odd boundaries of word punct* word punct*
