@@ -93,6 +93,7 @@ class Omorfi:
             include['analyse'] = True
             include['generate'] = True
             include['segment'] = True
+            include['accept'] = True
         for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
                 'hyphenate', 'segment']:
             if not ttype in include:
@@ -181,24 +182,49 @@ class Omorfi:
         for filename in loadable:
             this.load_filename(filename, **include)
 
+    def _find_retokens(this, token):
+        if this.accept(token):
+            return [token]
+        if this.can_lowercase and this.accept(token.lower()):
+            return [token.lower()]
+        if this.can_uppercase and this.accept(token.upper()):
+            return [token.upper()]
+        if token[-1] in "\"'.,?!)]}’”–" and this.accept(token[:-1]):
+            return [token[:-1], token[-1]]
+        if token[0] in "\"'([{’”-–" and this.accept(token[1:]):
+            return [token[0], token[1:]]
+        return [token]
+
+
+
+    def _retokenise(this, tokens):
+        retokens = []
+        print("retokenising", tokens)
+        for token in tokens:
+            for retoken in this._find_retokens(token):
+                retokens.append(retoken)
+        return retokens
+
     def _tokenise(this, line, automaton):
         return None
 
     def tokenise(this, line):
-        """Perform tokenisation with loaded tokeniser if any, or split.
+        """Perform tokenisation with loaded tokeniser if any, or `split()`.
 
         If tokeniser is available, it is applied to input line and if
         result is achieved, it is split to tokens according to tokenisation
         strategy and returned as a list.
 
         If no tokeniser are present, or none give results, the line will be
-        tokenised using python's basic string functions.
+        tokenised using python's basic string functions. If analyser is
+        present, tokeniser will try harder to get some analyses for each
+        token using hard-coded list of extra splits.
         """
         tokens = None
         if 'omorfi' in this.tokenisers:
             tokens = this._tokenise(line, 'omorfi')
         if not tokens:
-            tokens = line.replace('.', ' .').split()
+            tokens = this._retokenise(line.split())
         return tokens
 
     def _analyse(this, token, automaton):
@@ -309,6 +335,21 @@ class Omorfi:
                 segment.weight = float('inf')
                 segments = [segment]
         return segments
+
+    def _accept(this, token, automaton):
+        res = libhfst.detokenize_paths(this.acceptors[automaton].lookup_fd(token))
+        return res
+
+    def accept(this, token):
+        accept = False
+        accepts = None
+        if 'default' in this.acceptors:
+            accepts = this._accept(token, 'default')
+        if not accepts and 'omorfi' in this.acceptors:
+            accepts = this._accept(token, 'omorfi')
+        if accepts:
+            accept = True
+        return accept
 
 def main():
     """Invoke a simple CLI analyser."""

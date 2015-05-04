@@ -93,7 +93,7 @@ def main():
     if options.fsa:
         if options.verbose:
             print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True)
+        omorfi.load_from_dir(options.fsa, analyse=True, accept=True)
     else:
         if options.verbose:
             print("reading language models in default dirs")
