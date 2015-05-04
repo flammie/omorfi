@@ -17,6 +17,8 @@ from sys import stderr, stdin
 from os import getenv, access, F_OK
 from glob import glob
 
+from .settings import fin_punct_leading, fin_punct_trailing
+
 class Omorfi:
     """
     An object holding omorfi automata for all the functions of omorfi.
@@ -189,17 +191,22 @@ class Omorfi:
             return [token.lower()]
         if this.can_uppercase and this.accept(token.upper()):
             return [token.upper()]
-        if token[-1] in "\"'.,?!)]}’”–" and this.accept(token[:-1]):
+        if token[-1] in fin_punct_trailing and this.accept(token[:-1]):
             return [token[:-1], token[-1]]
-        if token[0] in "\"'([{’”-–" and this.accept(token[1:]):
+        if token[0] in fin_punct_leading and this.accept(token[1:]):
             return [token[0], token[1:]]
+        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing and this.accept(token[1:-1]):
+            return [token[0], token[1:-1], token[-1]]
+        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and this.accept(token[:-2]):
+            return [token[:-2], token[-2], token[-1]]
+        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and this.accept(token[:-3]):
+            return [token[:-3], token[-3], token[-2], token[-1]]
         return [token]
 
 
 
     def _retokenise(this, tokens):
         retokens = []
-        print("retokenising", tokens)
         for token in tokens:
             for retoken in this._find_retokens(token):
                 retokens.append(retoken)
