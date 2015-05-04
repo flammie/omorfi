@@ -71,7 +71,7 @@ class Omorfi:
         """Construct Omorfi with given verbosity for printouts."""
         this._verbosity = verbosity
 
-    def load_filename(this, path):
+    def load_filename(this, path, **include):
         """Load omorfi automaton from filename and guess its use.
 
         A file name should consist of three parts separated by full stop.
@@ -79,8 +79,24 @@ class Omorfi:
         automaton, first part is parsed as an identifier typically starting
         with the word omorfi, followed by any extras, such as the tagset for
         analysis or generation.
+
+        The named arguments can include a name of automaton type as name,
+        and truth value as value, for types of automata allowed to load.
+        By default, the names `analyse`, `generate` and `segment` are loaded.
+        Names not included are defaulted to False. E.g., 
+        `omorfi.load_filename(fn, analyse=True)`
+        will only load file named fn if it can be identified as omorfi
+        analyser. This is best used in conjunction with omorfi.load_from_dir.
         """
         trans = None
+        if len(include) == 0:
+            include['analyse'] = True
+            include['generate'] = True
+            include['segment'] = True
+        for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
+                'hyphenate', 'segment']:
+            if not ttype in include:
+                include[ttype] = False
         if this._verbosity:
             print('Loading file', path)
         if access(path, F_OK):
@@ -94,54 +110,57 @@ class Omorfi:
         if len(parts) < 2:
             if this._verbosity:
                 print('not loaded', path)
-        elif parts[1] == 'analyse':
+        elif parts[1] == 'analyse' and include['analyse']:
             if this._verbosity:
                 print('analyser', parts[0])
             this.analysers[parts[0]] = trans
-        elif parts[1] == 'generate':
+        elif parts[1] == 'generate' and include['generate']:
             if this._verbosity:
                 print('generator', parts[0])
             this.generators[parts[0]] = trans
-        elif parts[1] == 'accept':
+        elif parts[1] == 'accept' and include['accept']:
             if this._verbosity:
                 print('acceptor', parts[0])
             this.acceptors[parts[0]] = trans
-        elif parts[1] == 'tokenise':
+        elif parts[1] == 'tokenise' and include['tokenise']:
             if this._verbosity:
                 print('tokeniser', parts[0])
             this.tokenisers[parts[0]] = trans
-        elif parts[1] == 'lemmatise':
+        elif parts[1] == 'lemmatise' and include['lemmatise']:
             if this._verbosity:
                 print('lemmatiser', parts[0])
             this.lemmatisers[parts[0]] = trans
-        elif parts[1] == 'hyphenate':
+        elif parts[1] == 'hyphenate' and include['hyphenate']:
             if this._verbosity:
                 print('hyphenator', parts[0])
             this.hyphenators[parts[0]] = trans
-        elif parts[1] == 'segment':
+        elif parts[1] == 'segment' and include['segment']:
             if this._verbosity:
                 print('segmenter', parts[0])
             this.segmenters[parts[0]] = trans
         elif this._verbosity:
             print('skipped', parts)
 
-    def load_from_dir(this, path=None):
+    def load_from_dir(this, path=None, **include):
         """Load omorfi automata from given or known locations.
         
         If path is given it should point to directory of automata,
         otherwise standard installation paths are tried. Currently standard
         linux install paths are all globbed in following order:
 
-        /usr/local/share/hfst/fi/*.hfst
-        /usr/share/hfst/fi/*.hfst
-        /usr/local/share/omorfi/*.hfst
-        /usr/share/omorfi/*.hfst
-        getenv('HOME') + /.hfst/fi/*.hfst
-        getenv('HOME') + /.omorfi/*.hfst
+        * /usr/local/share/hfst/fi/*.hfst
+        * /usr/share/hfst/fi/*.hfst
+        * /usr/local/share/omorfi/*.hfst
+        * /usr/share/omorfi/*.hfst
+        * getenv('HOME') + /.hfst/fi/*.hfst
+        * getenv('HOME') + /.omorfi/*.hfst
 
         Last two paths require getenv('HOME'). All automata matching
         glob *.hfst are loaded and stored in part of omorfi class appropriate
         for their usage.
+
+        They keyword args can be used to limit loading of automata. The name
+        is analyser type and value is True. 
         """
         homepaths = []
         res = None
@@ -160,7 +179,7 @@ class Omorfi:
                     print('adding', sp + '/*.hfst')
                 loadable += glob(sp + '/*.hfst')
         for filename in loadable:
-            this.load_filename(filename)
+            this.load_filename(filename, **include)
 
     def _tokenise(this, line, automaton):
         return None
@@ -239,7 +258,7 @@ class Omorfi:
                 class FakeAnal():
                     pass
                 anal = FakeAnal()
-                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN]' % (token)
+                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token)
                 anal.weight = float('inf')
                 anals = [anal]
         if not anals and len(this.analysers):
@@ -248,7 +267,7 @@ class Omorfi:
                 class FakeAnal():
                     pass
                 anal = FakeAnal()
-                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN]'
+                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]'
                 anal.weight = float('inf')
                 anals = [anal]
         return anals
