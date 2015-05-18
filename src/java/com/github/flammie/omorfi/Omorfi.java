@@ -7,7 +7,7 @@
  *
  */
 
-package com.googlecode.omorfi;
+package com.github.flammie.omorfi;
 
 import java.io.File;
 import java.io.FileInputStream;
