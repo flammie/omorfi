@@ -230,32 +230,32 @@ public class Omorfi
     public Collection<String> analyse(String wf, String automaton) throws net.sf.hfst.NoTokenizationException
     {
         System.out.println("Analysing " + wf + " with " + automaton);
-        Collection<String> res = analysers.get(automaton).analyze(wf);
+        Collection<String> res = new ArrayList<String>(
+                analysers.get(automaton).analyze(wf));
         if (uppercase)
         {
-            Collection<String> upres =
-                analysers.get(automaton).analyze(wf.toUpperCase());
+            Collection<String> upres = new ArrayList<String>(
+                analysers.get(automaton).analyze(wf.toUpperCase()));
             for (String s : upres)
             {
-                s = s + "[CASECHANGE=UPPERCASED]";
+                res.add(s + "[CASECHANGE=UPPERCASED]");
             }
-            res.addAll(upres);
         }
         if (lowercase)
         {
-            Collection<String> lowres =
-                analysers.get(automaton).analyze(wf.toLowerCase());
+            Collection<String> lowres = new ArrayList<String>(
+                analysers.get(automaton).analyze(wf.toLowerCase()));
             for (String s : lowres)
             {
-                s = s + "[CASECHANGE=LOWERCASED]";
+                res.add(s + "[CASECHANGE=LOWERCASED]");
             }
-            res.addAll(lowres);
         }
+        Collection<String> rv = new ArrayList<String>();
         for (String s : res)
         {
-            s.replace("\t", "[WEIGHT=").replace("$", "]");
-        }
-        return res;
+            rv.add(s.replace("\t", "[WEIGHT=") + "]");
+   }
+        return rv;
     }
 
     /**
