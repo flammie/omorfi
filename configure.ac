@@ -159,6 +159,8 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
     AC_SUBST([HREW], $with_hfst/hfst-reweight)])
 ])
+AC_PATH_PROG([CGCOMP], [cg-comp], [false])
+AM_CONDITIONAL([CAN_VISLCG3], [test x$CGCOMP != xfalse])
 
 AS_IF([test "x$enable_voikko" = "xyes"], 
       [AC_PATH_PROG([ZIP], [zip], [false])

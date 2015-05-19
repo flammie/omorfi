@@ -591,6 +591,11 @@ voikko/speller-omorfi.zhfst: generated/omorfi.accept.hfst \
 	$(ZIP) -j -v -9 $@ voikko/*
 
 # }}}
+#
+# {{{ VISL CG 3
+generated/omorfi.cg3bin: vislcg3/omorfi.cg3
+	$(CGCOMP) $< $@
+# }}}
 
 clean-local:
 	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
