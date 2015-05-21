@@ -7,7 +7,7 @@
  *
  */
 
-package com.googlecode.omorfi;
+package com.github.flammie.omorfi;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -71,6 +71,27 @@ public class Omorfi
         segmenters = new HashMap<String, Transducer>();
     }
 
+    static private Transducer loadTransducer(String path) 
+        throws java.io.FileNotFoundException, java.io.IOException,
+                          net.sf.hfst.FormatException
+    {
+        FileInputStream transducerfile = new FileInputStream(path);
+        TransducerHeader h = new TransducerHeader(transducerfile);
+        DataInputStream charstream = new DataInputStream(transducerfile);
+        TransducerAlphabet a = new TransducerAlphabet(charstream,
+                h.getSymbolCount());
+        if (h.isWeighted())
+        {
+            return new WeightedTransducer(transducerfile,
+                    h, a);
+        }
+        else
+        {
+            return new UnweightedTransducer(transducerfile,
+                    h, a);
+        }
+    }
+
     /**
      * @brief Load omorfi automaton from filename and guess its use.
      *
@@ -85,7 +106,7 @@ public class Omorfi
     {
         String filename = path.substring(path.lastIndexOf("/") + 1);
         System.out.println(filename);
-        String id = filename.substring(0, filename.indexOf(".") + 1);
+        String id = filename.substring(0, filename.indexOf("."));
         if (filename.indexOf(".") == filename.lastIndexOf("."))
         {
             return;
@@ -99,52 +120,36 @@ public class Omorfi
             System.out.println(filename + ": Unrecognised type " + type);
             return;
         }
-        FileInputStream transducerfile = new FileInputStream(path);
-        TransducerHeader h = new TransducerHeader(transducerfile);
-        DataInputStream charstream = new DataInputStream(transducerfile);
-        TransducerAlphabet a = new TransducerAlphabet(charstream,
-                h.getSymbolCount());
-        Transducer t;
-        if (h.isWeighted())
-        {
-            t = new WeightedTransducer(transducerfile,
-                    h, a);
-        }
-        else
-        {
-            t = new UnweightedTransducer(transducerfile,
-                    h, a);
-        }
         if (type.equals("analyse"))
         {
             System.out.println(filename + " = " + type + " : " + id);
-            analysers.put(id, t);
+            analysers.put(id, loadTransducer(path));
         }
-        else if (type.equals("generate"))
+/*        else if (type.equals("generate"))
         {
-            generators.put(id, t);
+            generators.put(id, loadTransducer(path));
         }
         else if (type.equals("accept"))
         {
-            acceptors.put(id, t);
+            acceptors.put(id, loadTransducer(path));
         }
         else if (type.equals("tokenise"))
         {
-            tokenisers.put(id, t);
+            tokenisers.put(id, loadTransducer(path));
         }
         else if (type.equals("lemmatise"))
         {
-            lemmatisers.put(id, t);
+            lemmatisers.put(id, loadTransducer(path));
         }
         else if (type.equals("hyphenate"))
         {
-            hyphenators.put(id, t);
+            hyphenators.put(id, loadTransducer(path));
         }
         else if (type.equals("segment"))
         {
-            segmenters.put(id, t);
+            segmenters.put(id, loadTransducer(path));
         }
-        else
+*/        else
         {
             System.out.println(filename + ": Unrecognised type " + type);
         }
@@ -197,6 +202,7 @@ public class Omorfi
         }
         for (String path : stdpaths)
         {
+            System.out.println("Loading " + path);
             try {
                 loadAll(path);
             }
@@ -223,32 +229,33 @@ public class Omorfi
       */
     public Collection<String> analyse(String wf, String automaton) throws net.sf.hfst.NoTokenizationException
     {
-        Collection<String> res = analysers.get(automaton).analyze(wf);
+        System.out.println("Analysing " + wf + " with " + automaton);
+        Collection<String> res = new ArrayList<String>(
+                analysers.get(automaton).analyze(wf));
         if (uppercase)
         {
-            Collection<String> upres =
-                analysers.get(automaton).analyze(wf.toUpperCase());
+            Collection<String> upres = new ArrayList<String>(
+                analysers.get(automaton).analyze(wf.toUpperCase()));
             for (String s : upres)
             {
-                s = s + "[CASECHANGE=UPPERCASED]";
+                res.add(s + "[CASECHANGE=UPPERCASED]");
             }
-            res.addAll(upres);
         }
         if (lowercase)
         {
-            Collection<String> lowres =
-                analysers.get(automaton).analyze(wf.toLowerCase());
+            Collection<String> lowres = new ArrayList<String>(
+                analysers.get(automaton).analyze(wf.toLowerCase()));
             for (String s : lowres)
             {
-                s = s + "[CASECHANGE=LOWERCASED]";
+                res.add(s + "[CASECHANGE=LOWERCASED]");
             }
-            res.addAll(lowres);
         }
+        Collection<String> rv = new ArrayList<String>();
         for (String s : res)
         {
-            s.replace("\t", "[WEIGHT=").replace("$", "]");
-        }
-        return res;
+            rv.add(s.replace("\t", "[WEIGHT=") + "]");
+   }
+        return rv;
     }
 
     /**
@@ -256,28 +263,16 @@ public class Omorfi
      */
     public Collection<String> analyse(String wf) throws net.sf.hfst.NoTokenizationException
     {
+        System.out.println("Analysing " + wf);
+        System.out.println(analysers);
         Collection<String> anals = new ArrayList<String>();
-        try
+        if (analysers.containsKey("default"))
         {
-            if (analysers.containsKey("default"))
-            {
-                anals = analyse(wf, "default");
-            }
+            anals = analyse(wf, "default");
         }
-        catch (NullPointerException npe)
+        if ((anals.size() == 0) && (analysers.containsKey("omorfi-omor")))
         {
-            // pass
-        }
-        try
-        {
-            if ((anals.size() == 0) && (analysers.containsKey("omorfi-omor")))
-            {
-                anals = analyse(wf, "omorfi-omor");
-            }
-        }
-        catch (NullPointerException npe)
-        {
-            // pass
+            anals = analyse(wf, "omorfi-omor");
         }
         if (anals.size() == 0)
         {

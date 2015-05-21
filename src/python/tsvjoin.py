@@ -6,7 +6,7 @@ database with N fields and joins all matching fields on M files to extra
 fields on right.
 """
 
-# Author: Tommi A. Pirinen <tommi.pirinen@helsinki.fi> 2009, 2011
+# Author: Tommi A. Pirinen <flammie@iki.fi> 2009, 2011
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
