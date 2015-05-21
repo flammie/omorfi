@@ -34,7 +34,7 @@ def print_analyses_apertium(surf, anals, outfile):
     print("$")
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print('"<', surf, '>"', sep='')
+    print('"<', surf, '>"', sep='', file=outfile)
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
     re_pos = re.compile("\[POS=([^]]*)\]")
     re_mrd = re.compile("\[([^=]*)=([^]]*)]")
@@ -62,7 +62,7 @@ def print_analyses_vislcg3(surf, anals, outfile):
                 mrds += ['<' + mm.group(2) + '>']
             else:
                 mrds += [mm.group(2)]
-        print('\t"', ''.join(lemmas).replace('"', '\\"'), '"\t',
+        print('\t"', ''.join(lemmas).replace('"', '\\"'), '" ',
                 ' '.join(mrds), sep='', file=outfile)
     print(file=outfile)
 
