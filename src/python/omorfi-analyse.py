@@ -10,7 +10,7 @@ def print_analyses(surf, anals, format):
         print_analyses_xerox(surf, anals)
     elif format == 'apertium':
         print_analyses_apertium(surf, anals)
-    elif format == 'vislcg':
+    elif format == 'vislcg3':
         print_analyses_vislcg(surf, anals)
     elif format == 'conllx':
         print_analyses_conllx(surf, anals)
