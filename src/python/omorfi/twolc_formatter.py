@@ -66,7 +66,8 @@ def format_alphabet_twolc(format, ruleset):
         twolcstring += twolc_escape(optional_hyphen) + ':%- ! or (ASCII) hyphen\n'
         twolcstring += '%-\n'
         for mcs in common_multichars:
-            twolcstring += twolc_escape(mcs) + '\n'
+            if mcs != optional_hyphen:
+                twolcstring += twolc_escape(mcs) + '\n'
     elif ruleset == 'apertium':
         for mcs in common_multichars:
             twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
