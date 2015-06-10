@@ -2,7 +2,6 @@
 
 # Settings
 HFST_FLAGS=--verbose
-hfstfidatadir=$(datadir)/hfst/fi/
 voikkosharedir=$(libdir)/voikko/3/
 
 # {{{ Files
@@ -147,10 +146,10 @@ VISLCG3_GENERATED=generated/omorfi.cg3bin
 # }}}
 # {{{Autotools install
 # destnations directories for this stuff at the top of the file
-hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
+pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA) $(VISLCG3_GENERATED)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
-pkgdata_DATA=generated/master.tsv
+pkgdata_DATA+=generated/master.tsv
 
 bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-analyse-tokenised.sh \
