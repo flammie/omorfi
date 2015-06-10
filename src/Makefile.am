@@ -143,11 +143,12 @@ endif
 DB_GENERATED=generated/master.tsv generated/joint.tsv
 
 endif # HFST
+VISLCG3_GENERATED=generated/omorfi.cg3bin
 # }}}
 # {{{Autotools install
 # destnations directories for this stuff at the top of the file
 hfstfidata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
-				$(APE_AUTOMATA)
+				$(APE_AUTOMATA) $(VISLCG3_GENERATED)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 pkgdata_DATA=generated/master.tsv
 
