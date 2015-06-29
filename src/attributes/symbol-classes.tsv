@@ -7,13 +7,15 @@ lemma	homonym	new_para	symbol
 >	1	SYMBOL_PISTE	final-bracket
 -	1	SYMBOL_PISTE	dash
 --	1	SYMBOL_PISTE	dash
-,	1	SYMBOL_PILKKU	clause-boundary
+,	1	SYMBOL_PILKKU	clause-boundary|comma
 ;	1	SYMBOL_PISTE	clause-boundary
 :	1	SYMBOL_PISTE	clause-boundary
 !	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
+(!)	1	SYMBOL_PISTE	sentence-boundary
 !	2	SYMBOL_PISTE	sentence-boundary
 ?	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
 ?	2	SYMBOL_PISTE	sentence-boundary
+(?)	1	SYMBOL_PISTE	sentence-boundary
 .	1	SYMBOL_PISTE	sentence-boundary
 ..	1	SYMBOL_PISTE	sentence-boundary
 ...	1	SYMBOL_PISTE	sentence-boundary
@@ -38,6 +40,8 @@ lemma	homonym	new_para	symbol
 }	1	SYMBOL_PISTE	final-bracket
 –	1	SYMBOL_PISTE	dash
 —	1	SYMBOL_PISTE	dash
+˗	1	SYMBOL_PISTE	dash
+→	1	SYMBOL_PISTE	arrow
 ›	1	SYMBOL_PISTE	final-bracket
 ‹	1	SYMBOL_PISTE	initial-bracket
 ‥	1	SYMBOL_PISTE	sentence-boundary
