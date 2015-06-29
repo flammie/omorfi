@@ -23,7 +23,7 @@ from .settings import fin_orth_pairs, fin_lowercase, fin_uppercase, \
         word_boundary, deriv_boundary, morph_boundary, newword_boundary, \
         deriv_boundary, stub_boundary, weak_boundary, optional_hyphen
 from .twolc_formatter import twolc_escape
-from .lexc_formatter import format_stuff
+from .formatters import format_stuff
 
 def format_rules_regex(format, ruleset):
     regexstring = ''
