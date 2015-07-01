@@ -144,6 +144,7 @@ stuff2apertium =  {
         "Cma": "agent",
         "Cmaton": "pneg",
         "Cnut": "pp",
+        "COMMA": "cm",
         "COMPARATIVE": "cnjsub",
         "COMP": "com",
         "CONJUNCTION": "",
@@ -179,6 +180,7 @@ stuff2apertium =  {
         "Dtatuttaa": "+tatuttaa<vblex>", 
         "Dsti": "+sti<adv>",
         "EVENT": "",
+        "FEMALE": "f",
         "FINAL-BRACKET": "rpar",
         "FINAL-QUOTE": "rquot",
         "FIRST": "ant",
@@ -195,6 +197,7 @@ stuff2apertium =  {
         "INTERROGATIVE": "itg",
         "LAST": "ant",
         "LEMMA-START": "",
+        "MALE": "m",
         "MAINF_arg": "vaux",
         "MEDIA": "",
         "MISC": "",
@@ -336,7 +339,7 @@ def format_wordmap_lexc_apertium(wordmap):
             wordmap['analysis'] += '%<np%>'
             if wordmap['proper_noun_class']:
                 wordmap['analysis'] += format_stuff_apertium(wordmap['proper_noun_class'])
-            if wordmap['sem'] in ['male', 'female']:
+            if wordmap['sem'] in ['MALE', 'FEMALE']:
                 wordmap['analysis'] += format_stuff_apertium(wordmap['sem'])
         else:
             wordmap['analysis'] += '%<n%>'
@@ -378,6 +381,11 @@ def format_wordmap_lexc_apertium(wordmap):
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_apertium(subcat)
+        if wordmap['stub'] in ";:":
+            wordmap['analysis'] += format_stuff_apertium("SENTENCE-BOUNDARY")
+    # XXX: for now
+    if wordmap['stub'] in "¹²³½¼=≥µ#/%":
+        wordmap['analysis'] += format_stuff_apertium("NOUN")
     retvals = ""
     wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
     wordmap['stub'] = lexc_escape(wordmap['stub'])
