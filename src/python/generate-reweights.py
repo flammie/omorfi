@@ -24,7 +24,7 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from omorfi.lexc_formatter import format_stuff
+from omorfi.formatters import format_stuff
 from omorfi.settings import stuff_weights, boundary_weights
 
 # standard UI stuff
