@@ -83,7 +83,7 @@ def main():
 
     def FormatArgType(v):
         baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "generic", "google"]
+                "giella", "ftb3", "generic", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:

@@ -33,8 +33,13 @@ from .ftb3_formatter import format_stuff_ftb3, \
 from .omor_formatter import format_stuff_omor, \
         format_analysis_lexc_omor, format_continuation_lexc_omor, \
         format_wordmap_lexc_omor, format_multichars_lexc_omor
+from .giella_formatter import format_stuff_giella, \
+        format_analysis_lexc_giella, format_continuation_lexc_giella, \
+        format_wordmap_lexc_giella, format_multichars_lexc_giella
+
 from .lexc_formatter import format_wordmap_lexc_generic, \
         format_continuation_lexc_generic
+from .error_logging import just_fail
 
 def format_stuff(stuff, format):
     if format.startswith('omor'):
@@ -47,9 +52,10 @@ def format_stuff(stuff, format):
         return ''
     elif format.startswith('apertium'):
         return format_stuff_apertium(stuff)
+    elif format.startswith('giella'):
+        return format_stuff_giella(stuff)
     else:
-        print("Wrong format for generic stuff formatting:", format,
-                file=stderr)
+        just_fail("Wrong format for generic stuff formatting: " + format)
         exit(1)
 
 def format_wordmap_lexc(wordmap, format):
@@ -63,9 +69,10 @@ def format_wordmap_lexc(wordmap, format):
         return format_wordmap_lexc_google(wordmap)
     elif format.startswith("generic"):
         return format_wordmap_lexc_generic(wordmap)
+    elif format.startswith("giella"):
+        return format_wordmap_lexc_giella(wordmap)
     else:
-        print("Wrong format for generic stuff formatting:", format,
-                file=stderr)
+        just_fail("Wrong format for lexc formatting: " + format)
         exit(1)
 
 def format_continuation_lexc(fields, format):
@@ -81,8 +88,11 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_generic(fields[1], fields[2], cont)
         elif format.startswith("apertium"):
             stuffs += format_continuation_lexc_apertium(fields[1], fields[2], cont)
+        elif format.startswith("giella"):
+            stuffs += format_continuation_lexc_giella(fields[1], fields[2], cont)
         else:
-            print("missing format", format, file=stderr)
+            just_fail("missing format in continuation lexc " + format)
+            exit(1)
     return stuffs
 
 def format_analysis_lexc(analyses, format):
@@ -97,8 +107,10 @@ def format_analysis_lexc(analyses, format):
         stuffs += format_analysis_lexc_apertium(analyses)
     elif format.startswith("generic"):
         stuffs += format_analysis_lexc_generic(analyses)
+    elif format.startswith("giella"):
+        stuffs += format_analysis_lexc_giella(analyses)
     else:
-        print("missing format", format, file=stderr)
+        just_fail("missing format in analysis lexc " + format)
         exit(1)
     return stuffs
 
@@ -117,8 +129,10 @@ def format_multichars_lexc(format):
         pass
     elif format.startswith("apertium"):
         multichars += format_multichars_lexc_apertium()
+    elif format.startswith("giella"):
+        multichars += format_multichars_lexc_giella()
     else:
-        print("missing format", format, file=stderr)
+        just_fail("missing format multichars lexc " + format)
         exit(1)
     if "+ktnkav" in format:
         multichars += "!! KTNKAV set:\n"

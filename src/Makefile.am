@@ -137,7 +137,16 @@ endif
 if WANT_APERTIUM
 APE_AUTOMATA=generated/fin-automorf.hfst generated/fin-autogen.hfst
 APE_GENERATED=generated/apertium-fin.fin.lexc \
-			  generated/apertium-fin.fin.twolc
+			  generated/apertium-fin.fin.twolc \
+			  generated/apertium-fin.fin.reweight
+endif
+if WANT_OMOR
+GIELLA_AUTOMATA=generated/omorfi-giella.analyse.hfst \
+				generated/omorfi-giella.generate.hfst
+GIELLA_GENERATED=generated/omorfi-giella.lexc \
+				 generated/omorfi-giella.twolc \
+				 generated/omorfi-giella.reweight
+
 endif
 DB_GENERATED=generated/master.tsv generated/joint.tsv
 
@@ -330,6 +339,15 @@ generated/omorfi.dix: generated/master.tsv generated/stemparts.tsv \
 	$(PYTHON) $(srcdir)/python/generate-monodix.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@
+
+# database to giella
+generated/omorfi-giella.lexc: generated/master.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
+		-p generated/stemparts.tsv \
+		-i generated/inflections.tsv -o $@ -f=giella
+
+
 
 # database (back) to kotus
 generated/omorfi-sanalista.xml: generated/master.tsv
