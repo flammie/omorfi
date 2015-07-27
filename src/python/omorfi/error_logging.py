@@ -41,3 +41,5 @@ def fail_guess_because(wordmap, matches, failures, moar=None):
     #if wordmap['is_proper']:
     #    print(wordmap['lemma'], wordmap['kotus_tn'], wordmap['kotus_av'])
 
+def just_fail(because, file=stderr):
+    print("\033[93mError!\033[0m ", because, file=stderr)
