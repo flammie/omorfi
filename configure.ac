@@ -42,6 +42,12 @@ AC_ARG_ENABLE([apertium],
                              [enable_apertium=$enableval],
                              [enable_apertium=yes])
 AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" = xyes])
+AC_ARG_ENABLE([giella],
+              [AS_HELP_STRING([--enable-giella],
+                              [generate giella automata @<:@default=enable@:>@])],
+                             [enable_giella=$enableval],
+                             [enable_giella=yes])
+AM_CONDITIONAL([WANT_GIELLA], [test "x$enable_giella" = xyes])
 
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
@@ -245,6 +251,7 @@ Configured $PACKAGE_STRING:
     * OMOR $enable_omor
     * FTB3.1 $enable_ftb3
     * apertium $enable_apertium
+    * giella: $enable_giella
 * Voikko speller: $enable_voikko
 * 
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail

@@ -19,10 +19,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .omorfi.lexc_formatter import lexc_escape
-from .omorfi.settings import word_boundary, weak_boundary, \
+from .lexc_formatter import lexc_escape
+from .settings import word_boundary, weak_boundary, \
         morph_boundary, deriv_boundary, optional_hyphen
-from .omorfi.error_logging import fail_formatting_missing_for
+from .error_logging import fail_formatting_missing_for
 
 
 giella_multichars= {
@@ -44,7 +44,6 @@ giella_multichars= {
         '%+Refl',
         '%+Pers',
         '%+N%+Abbr',
-        '%+%>%>%>',
         '%+CS',
         '%+CC',
         '%+Adp',
@@ -152,6 +151,7 @@ giella_multichars= {
         '%+Der%/tatuttaa',
         '%+Der%/uus',
         '%+Der%/nti',
+        "%+Der%/sti",
         '%+Err%/Sub',
         '%+Use%/Marg',
         '%+Use%/Rare',
@@ -168,8 +168,9 @@ giella_multichars= {
         '%+Dial%/North',
         '%+Dial%/Savo',
         '%+Dial%/Southeast',
-        '%<Del%>→',
-        '←%<Del%>'}
+        '%+Sem%/Geo',
+        '%+Sem%/Human',
+        '%+Sem%/Org'}
 
 
 stuff2giella = {"Bc": "#",
@@ -192,18 +193,18 @@ stuff2giella = {"Bc": "#",
         "Dva": "%+PrsPrc%+Act",
         "Dtava": "%+PrsPrc%+Pass",
         "Dmaton": "%+NegPrc",
-        "Duus": "",
-        "Dttaa": "",
-        "Dtattaa": "",
-        "Dtatuttaa": "",
+        "Duus": "%+Der/uus",
+        "Dttaa": "%+Der/ttaa",
+        "Dtattaa": "%+Der/tattaa",
+        "Dtatuttaa": "%+Der/tatuttaa",
         "Dma": "%+AgPrc",
-        "Dinen": "",
-        "Dja": "",
-        "Dmpi": "",
-        "Din": "",
-        "Ds": "",
-        "Du": "",
-        "Dsti": "",
+        "Dinen": "%+Der/inint",
+        "Dja": "%+Der/ja",
+        "Dmpi": "%+Comp",
+        "Din": "%+Superl",
+        "Ds": "%+Cmp",
+        "Du": "%+Der/u",
+        "Dsti": "%+Der/sti",
         "FTB3man": "%+Man",
         "Ia": "%+Inf1",
         "Ie": "%+Inf2",
@@ -239,7 +240,10 @@ stuff2giella = {"Bc": "#",
         "Tpot": "%+Pot", 
         "Tpres": "%+Prs",
         "Topt": "%+Opt",
-        "Uarch": "", "Udial": "", "Urare": "", "Unonstd": "",
+        "Uarch": "",
+        "Udial": "%+Dial", 
+        "Urare": "%+Use/Marg",
+        "Unonstd": "%+Err/Orth",
         "Vact": "%+Act",
         "Vpss": "%+Pass",
         "Xabe": "%+Abe",
@@ -260,7 +264,8 @@ stuff2giella = {"Bc": "#",
         "Xacc": "%+Acc",
         "X???": "%+Nom",
         "NOUN": "%+N",
-        "ADJECTIVE": "%+A", "QUALIFIER": "%+A",
+        "ADJECTIVE": "%+A", 
+        "QUALIFIER": "%+A",
         "VERB": "%+V",
         "ADVERB": "%+Adv",
         "INTERJECTION": "%+Interj",
@@ -268,14 +273,22 @@ stuff2giella = {"Bc": "#",
         "NUMERAL": "%+Num",
         "ADPOSITION": "%+Adp%+Po",
         "PREPOSITION": "%+Adp%+Pr",
-        "CONJUNCTION": "", "COORDINATING": "%+CC", "ADVERBIAL": "%+CS",
+        "CONJUNCTION": "",
+        "COORDINATING": "%+CC",
+        "ADVERBIAL": "%+CS",
         "COMPARATIVE": "%+CS",
-        "ABBREVIATION": "%+Abbr", "ACRONYM": "%+N%+Abbr",
+        "ABBREVIATION": "%+ABBR",
+        "ACRONYM": "%+ACR",
         "PROPER": "%+Prop",
-        "CARDINAL": "", "ORDINAL": "%+Ord",
-        "DEMONSTRATIVE": "%+Dem", "QUANTOR": "%+Qnt", "PERSONAL": "%+Pers",
-        "INDEFINITE": "%+Indef", "INTERROGATIVE": "%+Interr",
-        "REFLEXIVE": "%+Refl", "RELATIVE": "%+Rel",
+        "CARDINAL": "",
+        "ORDINAL": "%+Ord",
+        "DEMONSTRATIVE": "%+Dem",
+        "QUANTOR": "%+Qnt",
+        "PERSONAL": "%+Pers",
+        "INDEFINITE": "%+Indef",
+        "INTERROGATIVE": "%+Interr",
+        "REFLEXIVE": "%+Refl",
+        "RELATIVE": "%+Rel",
         "RECIPROCAL": "",
         "PUNCTUATION": "%+Punct",
         "DASH": "%+Dash",
@@ -287,6 +300,8 @@ stuff2giella = {"Bc": "#",
         "FINAL-QUOTE": "%+Quote",
         "INITIAL-BRACKET": "",
         "FINAL-BRACKET": "",
+        "COMMA": "",
+        "ARROW": "",
         "DIGIT": "%+Digit",
         "ROMAN": "%+Roman",
         "PL1": "%+Pl1", 
@@ -298,8 +313,29 @@ stuff2giella = {"Bc": "#",
         "PE4": "%+Pe4",
         "COMP": "%+Comp",
         "SUPERL": "%+Superl",
-        "UNSPECIFIED": "%+Adv",
+        "UNSPECIFIED": "%+Pcle",
+        "DERSTI": "%+Der%/sti",
+        "DERTTAIN": "%+Der%/ttain",
+        "INESSIVE": "%+Ine",
+        "ILLATIVE": "%+Ill",
+        "ADESSIVE": "%+Ade",
+        "ALLATIVE": "%+All",
+        "ABLATIVE": "%+Abl",
+        "LOCATIVE": "",
+        "FTB3MAN": "%+Ins",
+        "PARTICLE": "%+Pcle",
         "LEMMA-START": "",
+        "GEO": "%+Sem%/Geo",
+        "FIRST": "%+Sem%/Human",
+        "LAST": "%+Sem%/Human",
+        "ORG": "%+Sem%/Org",
+        "CULTGRP": "%+Sem/Human",
+        "PRODUCT": "",
+        "MISC": "",
+        "MEDIA": "",
+        "ARTWORK": "",
+        "EVENT": "",
+        ".":"",
         "": ""
         }
 
@@ -325,18 +361,12 @@ def format_continuation_lexc_giella(anals, surf, cont):
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
-def format_wordmap_lexc_giella(wordmap, format):
+def format_wordmap_lexc_giella(wordmap):
     '''
     format string for canonical giella format for morphological analysis
     '''
-    if wordmap['stub'] == ' ':
-        # do not include normal white space for now
-        return ""
-    wordmap['stub'] = lexc_escape(wordmap['stub'])
-    wordmap['analysis'] = lexc_escape(wordmap['stub'].replace(word_boundary, '#'))
-    if wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
-        wordmap['analysis'] += format_stuff_giella(wordmap['pos'])
-    elif wordmap['pos'] == 'CONJUNCTIONVERB':
+    wordmap['analysis'] = lexc_escape(wordmap['lemma'].replace(word_boundary, '#'))
+    if wordmap['pos'] == 'CONJUNCTIONVERB':
         if wordmap['lemma'] == 'eikä':
             wordmap['lemma'] = 'ei'
             wordmap['analysis'] = format_stuff_giella('COORDINATING') + \
@@ -344,25 +374,22 @@ def format_wordmap_lexc_giella(wordmap, format):
         else:
             wordmap['analysis'] = format_stuff_giella('ADVERBIAL') + \
                     format_stuff_giella('Nneg')
-    elif wordmap['particle']:
-        for pclass in wordmap['particle'].split('|'):
-            wordmap['analysis'] += format_stuff_giella(pclass)
     else:
-        print("not in FTB3 known poses or particle!\n", wordmap)
-        exit(1)
-    if wordmap['subcat']:
-        for subcat in wordmap['subcat'].split('|'):
-            wordmap['analysis'] += format_stuff_giella(subcat)
+        wordmap['analysis'] += format_stuff_giella(wordmap['pos'])
     if wordmap['is_proper']:
         wordmap['analysis'] += format_stuff_giella('PROPER')
+        if wordmap['proper_noun_class']:
+            wordmap['analysis'] += format_stuff_giella(wordmap['proper_noun_class'])
+    if wordmap['particle']:
+        for pclass in wordmap['particle'].split('|'):
+            wordmap['analysis'] += format_stuff_giella(pclass)
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_giella(subcat)
-    lex_stub = wordmap['stub']
+    lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "#").replace(weak_boundary, "").replace(deriv_boundary, "»"))
     retvals = []
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                new_para)]
+    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
+                wordmap['new_para'])]
     return "\n".join(retvals)
 
 def format_multichars_lexc_giella():
