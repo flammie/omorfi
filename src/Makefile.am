@@ -151,7 +151,9 @@ endif
 DB_GENERATED=generated/master.tsv generated/joint.tsv
 
 endif # HFST
+if CAN_VISLCG3
 VISLCG3_GENERATED=generated/omorfi.cg3bin
+endif
 # }}}
 # {{{Autotools install
 # destnations directories for this stuff at the top of the file
@@ -613,8 +615,10 @@ voikko/speller-omorfi.zhfst: generated/omorfi.accept.hfst \
 # }}}
 #
 # {{{ VISL CG 3
+if CAN_VISLCG3
 generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 	$(CGCOMP) $< $@
+endif
 # }}}
 
 clean-local:
