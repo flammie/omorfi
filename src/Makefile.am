@@ -281,6 +281,10 @@ generated/omorfi-token.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r token -o $@
 
+generated/omorfi-token-separator.regex:
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+		-r token-separator -o $@
+
 generated/omorfi-hyphenate.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
 
@@ -424,18 +428,16 @@ generated/omorfi.accept.hfst: generated/temporary.ftb3.hfst
 
 # create basic corpus tokeniser
 # Should split at even-odd boundaries of word punct* word punct*
-generated/omorfi.token-separator.hfst:
-	echo '0:"\n" ;' | $(HREGEX) -o generated/omorfi.token-separator.hfst
 
 generated/omorfi.tokenise.hfst: generated/omorfi.accept.hfst \
 					  generated/omorfi-between-tokens.regex.hfst \
 					  generated/omorfi-token.regex.hfst \
-					  generated/omorfi.token-separator.hfst
+					  generated/omorfi-token-separator.regex.hfst
 	$(HCAT) $(HFST_FLAGS) generated/omorfi-token.regex.hfst \
-		generated/omorfi.token-separator.hfst |\
+		generated/omorfi-token-separator.regex.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o generated/omorfi.nondict-token.hfst
 	$(HCAT) $(HFST_FLAGS) generated/omorfi-between-tokens.regex.hfst \
-		generated/omorfi.token-separator.hfst -o generated/omorfi-token-joiner.hfst
+		generated/omorfi-token-separator.regex.hfst -o generated/omorfi-token-joiner.hfst
 	$(HCAT) $(HFST_FLAGS) generated/omorfi.nondict-token.hfst \
 		generated/omorfi-token-joiner.hfst |\
 		$(HREP) $(HFST_FLAGS) -f 1 -o $@
