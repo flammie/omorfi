@@ -44,7 +44,7 @@ function check_omorfi() {
 }
 
 function analyse() {
-    cat $@ | hfst-lookup "$omorfifile" |\
+    cat $@ | @HLOOKUP@ "$omorfifile" |\
         sed -e 's/{[wWXMD]B}/ /g' -e 's/{STUB}//g'
 }
 

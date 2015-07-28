@@ -1,5 +1,5 @@
 #!/bin/bash
-omorfidir="@prefix@/share/hfst/fi/"
+omorfidir="@prefix@/share/omorfi"
 omorfifile="$omorfidir/omorfi.hyphenate-rules.hfst"
 args=$@
 hyphen="-"
@@ -42,7 +42,7 @@ function check_omorfi() {
 }
 
 function hyphenate() {
-    cat $@ | hfst-lookup -x "$omorfifile" |\
+    cat $@ | @HLOOKUP@ -x "$omorfifile" |\
         sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
             -e "s/-4/$hyphen/g"
 }

@@ -137,6 +137,12 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HREW], [hfst-reweight], [no])
        AS_IF([test "x$HREW" = xno],
              [AC_MSG_ERROR([hfst-reweight is needed for weights])])
+       AC_PATH_PROG([HOSPELL], [hfst-ospell], [no])
+       AS_IF([test "x$HOSPELL" = "xno"],
+             [AC_MSG_WARN([hfst-ospell is needed for spell-checking])])
+       AC_PATH_PROG([HLOOKUP], [hfst-lookup], [no])
+       AS_IF([test "x$HLOOKUP" = "xno"],
+             [AC_MSG_WARN([hfst-lookup is needed for bash scripts])])
        AC_PATH_PROG([ADT], [apertium-destxt], [cat])
        AS_IF([test x$ADT = xcat],
           [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
@@ -163,6 +169,8 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HUN], $with_hfst/hfst-disjunct)
     AC_SUBST([HS2F], $with_hfst/hfst-strings2fst)
     AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
+    AC_SUBST([HOSPELL], $with_hfst/hfst-ospell)
+    AC_SUBST([HLOOKUP], $with_hfst/hfst-lookup)
     AC_SUBST([HREW], $with_hfst/hfst-reweight)])
 ])
 AC_PATH_PROG([CGCOMP], [cg-comp], [false])
