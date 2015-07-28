@@ -48,7 +48,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '# Remove V before Prc\n'
             regexstring += '[ ' + format_stuff('VERB', format) + ' -> 0 || _  [ '
             regexstring += ' | '.join([format_stuff(tag, format) for tag in \
-                    ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma','Dnut', 'Dtu', 'Dtava']])
+                    ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma','Dnut', 'Dtu', 'Dva', 'Dtava']])
             regexstring += '] ]\n'
             regexstring += '.o.\n'
             regexstring += '# ftb3.1 all pr are optional po\n'
