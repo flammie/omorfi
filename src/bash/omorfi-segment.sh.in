@@ -1,5 +1,5 @@
 #!/bin/bash
-omorfidir="@prefix@/share/hfst/fi/"
+omorfidir="@prefix@/share/omorfi"
 omorfifile="$omorfidir/omorfi.segment.hfst"
 args=$@
 
