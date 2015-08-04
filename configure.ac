@@ -174,6 +174,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HREW], $with_hfst/hfst-reweight)])
 ])
 AC_PATH_PROG([CGCOMP], [cg-comp], [false])
+AC_PATH_PROG([CGPROC], [cg-proc], [false])
 AM_CONDITIONAL([CAN_VISLCG3], [test x$CGCOMP != xfalse])
 
 AS_IF([test "x$enable_voikko" = "xyes"], 
@@ -217,6 +218,8 @@ AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi-analyse-text.sh],
                 [chmod +x src/bash/omorfi-analyse-text.sh])
+AC_CONFIG_FILES([src/bash/omorfi-disambiguate-text.sh],
+                [chmod +x src/bash/omorfi-disambiguate-text.sh])
 AC_CONFIG_FILES([src/bash/omorfi-segment.sh],
                 [chmod +x src/bash/omorfi-segment.sh])
 AC_CONFIG_FILES([src/bash/omorfi-generate.sh],

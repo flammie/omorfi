@@ -168,10 +168,13 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-spell.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-hyphenate.sh \
-			python/omorfi-factorise.py
+			bash/omorfi-disambiguate-text.sh \
+			python/omorfi-factorise.py \
+			python/omorfi-analyse.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
-				 python/omorfi/omorfi.py
+				 python/omorfi/omorfi.py \
+				 python/omorfi/settings.py
 
 
 # These go into dist tarballs... which we no longer make
