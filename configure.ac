@@ -24,6 +24,12 @@ AC_ARG_ENABLE([voikko],
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
 # generic tagset switch to override (for lexc serialisation)
+AC_ARG_ENABLE([ftb1],
+              [AS_HELP_STRING([--enable-ftb1],
+                              [generate ftb1 automata @<:@default=disable@:>@])],
+                             [enable_ftb1=$enableval],
+                             [enable_ftb1=no])
+AM_CONDITIONAL([WANT_FTB1], [test "x$enable_ftb1" = xyes])
 AC_ARG_ENABLE([ftb3],
               [AS_HELP_STRING([--enable-ftb3],
                               [generate ftb3 automata @<:@default=enable@:>@])],
