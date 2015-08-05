@@ -122,6 +122,10 @@ FTB3_GENERATED=generated/omorfi-ftb3.lexc \
 			   generated/omorfi-ftb3-rewrite-tags.regex
 
 endif
+if WANT_FTB1
+FTB1_AUTOMATA=generated/omorfi-ftb1.analyse.hfst
+
+endif
 if WANT_OMOR
 OMOR_AUTOMATA=generated/omorfi-omor.analyse.hfst \
 			  generated/omorfi-omor_recased.analyse.hfst \
@@ -158,7 +162,8 @@ endif
 # {{{Autotools install
 # destnations directories for this stuff at the top of the file
 pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
-				$(APE_AUTOMATA) $(VISLCG3_GENERATED)
+				$(APE_AUTOMATA) $(VISLCG3_GENERATED) \
+				$(FTB1_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 pkgdata_DATA+=generated/master.tsv
 
@@ -524,6 +529,481 @@ generated/omorfi-ftb3.generate.hfst: generated/temporary-ftb3.hyphenated.hfst \
 
 # }}}
 #
+# {{{ FTB1 compilation
+# The FTB1 Makefile fragment was written by Miikka Silfverberg, with
+# file naming changed to match omorfi structure a bit by Flammie.
+#
+# This Makefile builds morphology.ftb1.ol which is the lookup
+# optimized FinnTreeBank 1 version of Omorfi.
+#
+# The ftb1-version of Omorfi is built from omorfi-omor.analyse.hfst
+# which can be found in the directory omorfi/src/generated.  You
+# should copy omorfi-omor.analyse.hfst into this directory.
+#
+# This Makefile was tested using Omorfi revision
+# 20141014-213-g12c4345.
+#
+# Differences between regular Omorfi and the ftb1 version: 
+#
+# - Ftb1 uses a different label set than Omorfi.
+#
+# - Compound analyses where some of the parts are proper nouns are
+#   filtered out.
+#
+# - Minen-derivatives are analyzed as nouns with a noun lemma and
+#   Lex_Minen tag.
+#
+# - Sti-derivatives are analyzed as adverbs with an adverb lemma and
+#   Lex_Sti tags.
+#
+# - Only the last part of a compound gets analyzed. The earlier parts
+#   remain unanalyzed but a compound border marker '#' is inserted
+#   between compound parts.
+#
+# Author: Miikka Silfverberg 2015
+
+# Convert omorfi to tropical format via sfst format in order
+# to get rid of weights and add optional upper casing for all
+# words.
+generated/ftb1-morphology.omor.hfst: generated/omorfi-omor.analyse.hfst generated/ftb1-capitalize.regex.hfst
+	hfst-fst2fst -S $< | \
+	hfst-fst2fst -t | \
+	hfst-compose -1 generated/ftb1-capitalize.regex.hfst | \
+	hfst-minimize -o $@
+
+# Add proper noun analyses with [LEX=MINEN] tags for all
+# Minen-derivatives. We need to change the lemma of the
+# analysis as well as the tags. Therefore we first need to
+# extract stems and re-build the analyses using the stems and
+# inflectional suffixes.
+generated/ftb1-morphology.omor.hfst.minen: generated/ftb1-morphology.omor.hfst generated/ftb1-minen_analyzer.hfst
+	hfst-disjunct -1 generated/ftb1-morphology.omor.hfst -2 generated/ftb1-minen_analyzer.hfst |\
+	hfst-minimize > $@
+
+# Get all word forms of the lemma 'miettiminen'.
+generated/ftb1-miettiminen_omorfi.hfst: generated/ftb1-morphology.omor.hfst generated/ftb1-miettiminen.regex.hfst
+	hfst-compose -F -1 $< -2 generated/ftb1-miettiminen.regex.hfst | \
+	hfst-minimize > $@
+
+# Get inflectional suffixes of all front vowel
+# Minen-derivatives.
+generated/ftb1-front_minen_omorfi.hfst: generated/ftb1-miettiminen_omorfi.hfst generated/ftb1-rm_mietti.regex.hfst \
+generated/ftb1-rm_mietti.inv.regex.hfst
+	hfst-compose -1 generated/ftb1-rm_mietti.inv.regex.hfst -2 $< |\
+	hfst-compose -2 generated/ftb1-rm_mietti.regex.hfst |\
+	hfst-minimize > $@
+
+# Get all word forms of the lemma 'avaaminen'.
+generated/ftb1-avaaminen_omorfi.hfst: generated/ftb1-morphology.omor.hfst generated/ftb1-avaaminen.regex.hfst
+	hfst-compose -F -1 $< -2 generated/ftb1-avaaminen.regex.hfst | \
+	hfst-minimize > $@
+
+# Get inflectional suffixes of all back vowel
+# Minen-derivatives.
+generated/ftb1-back_minen_omorfi.hfst: generated/ftb1-avaaminen_omorfi.hfst generated/ftb1-rm_avaa.regex.hfst \
+generated/ftb1-rm_avaa.inv.regex.hfst
+	hfst-compose -1 generated/ftb1-rm_avaa.inv.regex.hfst -2 $< |\
+	hfst-compose -2 generated/ftb1-rm_avaa.regex.hfst |\
+	hfst-minimize > $@
+
+# Get inflectional suffixes of all Minen-derivatives.
+generated/ftb1-minen_omorfi.hfst: generated/ftb1-back_minen_omorfi.hfst generated/ftb1-front_minen_omorfi.hfst
+	hfst-disjunct -1 generated/ftb1-back_minen_omorfi.hfst -2 generated/ftb1-front_minen_omorfi.hfst | \
+	hfst-minimize > $@
+
+# Get all Va-derivatives of verbs.
+generated/ftb1-va_derivatives.hfst: generated/ftb1-morphology.omor.hfst generated/ftb1-va_der.regex.hfst
+	hfst-compose -F -1 $< -2 generated/ftb1-va_der.regex.hfst | \
+	hfst-project -p input | \
+	hfst-minimize > $@
+
+# Get the stems of all Va-derivatives of verbs (these stems
+# are also stems [minus -minen] for Minen-derivatives).
+generated/ftb1-va_stems.hfst: generated/ftb1-va_derivatives.hfst generated/ftb1-rm_va.regex.hfst generated/ftb1-rm_va.regex.inv.hfst
+	hfst-compose -2 generated/ftb1-rm_va.regex.hfst -1 $< | \
+	hfst-compose -1 generated/ftb1-rm_va.regex.inv.hfst | \
+	hfst-minimize > $@
+
+# Form complete analyses for Minen-derivatives by concatenating
+# stems, suffixes and markers.
+generated/ftb1-minen_analyzer.hfst: generated/ftb1-minen_omorfi.hfst generated/ftb1-va_stems.hfst generated/ftb1-minen_marker.regex.hfst \
+generated/ftb1-word_id.regex.hfst
+	hfst-concatenate -1 generated/ftb1-va_stems.hfst -2 generated/ftb1-minen_omorfi.hfst |\
+	hfst-concatenate -2 generated/ftb1-minen_marker.regex.hfst |\
+	hfst-concatenate -1 generated/ftb1-word_id.regex.hfst |\
+	hfst-minimize > $@
+
+# Add proper adverb analyses with [LEX=STI] tags for all
+# Sti-derivatives. We need to change the lemma of the
+# analysis as well as the tags. Therefore we first need to
+# extract stems and re-build the analyses using the stems and
+# inflectional suffixes.
+generated/ftb1-morphology.omor.hfst.minen.sti: generated/ftb1-sti_analyzer.hfst generated/ftb1-morphology.omor.hfst.minen
+	hfst-disjunct -1 generated/ftb1-sti_analyzer.hfst -2 generated/ftb1-morphology.omor.hfst.minen |\
+	hfst-minimize > $@
+
+# Get all word forms of the lemma 'ikuisesti'.
+generated/ftb1-ikuisesti_omorfi.hfst: generated/ftb1-morphology.omor.hfst.minen  generated/ftb1-ikuisesti.regex.hfst
+	hfst-compose -1 $< -2 generated/ftb1-ikuisesti.regex.hfst |\
+	hfst-minimize > $@
+
+# Get all word forms of the lemma 'pimeästi'.
+generated/ftb1-pimeasti_omorfi.hfst: generated/ftb1-morphology.omor.hfst.minen  generated/ftb1-pimeasti.regex.hfst
+	hfst-compose -1 $< -2 generated/ftb1-pimeasti.regex.hfst |\
+	hfst-minimize > $@
+
+# Get inflectional suffixes of all front vowel
+# Sti-derivatives.
+generated/ftb1-front_sti_omorfi.hfst: generated/ftb1-pimeasti_omorfi.hfst generated/ftb1-rm_pimea.regex.hfst \
+generated/ftb1-rm_pimea.inv.regex.hfst
+	hfst-compose -1 generated/ftb1-rm_pimea.inv.regex.hfst -2 $< |\
+	hfst-compose -2 generated/ftb1-rm_pimea.regex.hfst |\
+	hfst-minimize > $@
+
+# Get inflectional suffixes of all back vowel
+# Sti-derivatives.
+generated/ftb1-back_sti_omorfi.hfst: generated/ftb1-ikuisesti_omorfi.hfst generated/ftb1-rm_ikuise.regex.hfst \
+generated/ftb1-rm_ikuise.inv.regex.hfst
+	hfst-compose -1 generated/ftb1-rm_ikuise.inv.regex.hfst -2 $< |\
+	hfst-compose -2 generated/ftb1-rm_ikuise.regex.hfst |\
+	hfst-minimize > $@
+
+# Get inflectional suffixes of all Sti-derivatives.
+generated/ftb1-sti_omorfi.hfst: generated/ftb1-front_sti_omorfi.hfst generated/ftb1-back_sti_omorfi.hfst
+	hfst-disjunct -1 generated/ftb1-front_sti_omorfi.hfst -2 generated/ftb1-back_sti_omorfi.hfst |\
+	hfst-minimize > $@
+
+# Get all sen (singular genitive) forms of adjective.
+generated/ftb1-sen_adjectives.hfst: generated/ftb1-morphology.omor.hfst.minen generated/ftb1-sen_adj.regex.hfst
+	hfst-compose -1 $< -2 generated/ftb1-sen_adj.regex.hfst |\
+	hfst-project -p input |\
+	hfst-minimize > $@
+
+# Get the stems of all singular genitive adjectives (these
+# stems are also stems [minus -sti] for Sti-derivatives).
+generated/ftb1-sen_stems.hfst: generated/ftb1-sen_adjectives.hfst generated/ftb1-rm_n.regex.hfst generated/ftb1-rm_n.inv.regex.hfst
+	hfst-compose -1 $< -2 generated/ftb1-rm_n.regex.hfst |\
+	hfst-compose -1 generated/ftb1-rm_n.inv.regex.hfst |\
+	hfst-minimize > $@
+
+# Form complete analyses for Sti-derivatives by concatenating
+# stems, suffixes and markers.
+generated/ftb1-sti_analyzer.hfst: generated/ftb1-sen_stems.hfst generated/ftb1-sti_omorfi.hfst generated/ftb1-sti_marker.regex.hfst \
+generated/ftb1-word_id.regex.hfst
+	hfst-concatenate -1 generated/ftb1-sen_stems.hfst -2 generated/ftb1-sti_omorfi.hfst |\
+	hfst-concatenate -2 generated/ftb1-sti_marker.regex.hfst |\
+	hfst-concatenate -1 generated/ftb1-word_id.regex.hfst |\
+	hfst-minimize > $@
+
+# 1. Remove compounds where some parts are proper nouns. They are
+# problematic for disambiguation and almost never occur.
+# 2. Replace dash compound markers so that the type of the dash
+# can be identified on the output-level. This is needed for
+# recovering the correct dashes later.
+# 3. Remove [INF=MINEN] analyses that don't occur in ftb1.
+# 4. Remove {hyph?} markers that omorfi contains on the input
+# side (they're a bug and shouldn't be there).
+generated/ftb1-morphology.omor.lex.hfst: generated/ftb1-morphology.omor.hfst.minen.sti \
+generated/ftb1-rm_prop_compound.regex.hfst generated/ftb1-rm_infminen.regex.hfst generated/ftb1-rm_dummy_hyph.regex.hfst \
+generated/ftb1-compound0.relabel
+	hfst-compose -1 $< -2 generated/ftb1-rm_prop_compound.regex.hfst | \
+	hfst-substitute -F generated/ftb1-compound0.relabel |\
+	hfst-compose -2 generated/ftb1-rm_infminen.regex.hfst | \
+	hfst-compose -1 generated/ftb1-rm_dummy_hyph.regex.hfst | \
+	hfst-minimize > $@
+
+# Get prefixes of compounds and subsitute all compound markers
+# so that they can be identified both on the input and output
+# level.
+generated/ftb1-compound_prefixes.hfst: generated/ftb1-morphology.omor.lex.hfst generated/ftb1-input_boundary.regex.hfst \
+generated/ftb1-output_boundary.regex.hfst generated/ftb1-compound1.relabel generated/ftb1-compound2.relabel
+	hfst-substitute -F generated/ftb1-compound1.relabel $< | \
+	hfst-compose -1 generated/ftb1-input_boundary.regex.hfst | \
+	hfst-compose -2 generated/ftb1-output_boundary.regex.hfst | \
+	hfst-minimize | \
+	hfst-substitute -F generated/ftb1-compound2.relabel -o $@
+
+# Get all word forms that arenät compounds.
+generated/ftb1-non_compounds.hfst: generated/ftb1-morphology.omor.lex.hfst generated/ftb1-no_compounds.regex.hfst
+	hfst-compose -1 $< -2 generated/ftb1-no_compounds.regex.hfst |\
+	hfst-minimize > generated/ftb1-non_compounds.hfst
+
+# Compile a transducer where only final parts of compounds are
+# analyzed because that's the way ftb1 does it. The initial
+# parts should be left as they are.
+generated/ftb1-wf_prefix_recovered.hfst: generated/ftb1-compound_prefixes.hfst generated/ftb1-morphology.omor.lex.hfst \
+generated/ftb1-no_uppercase.regex.hfst generated/ftb1-compound_final.regex.hfst generated/ftb1-non_compounds.hfst
+	hfst-invert generated/ftb1-compound_prefixes.hfst | \
+	hfst-concatenate -2 generated/ftb1-compound_final.regex.hfst | \
+	hfst-compose -2 generated/ftb1-no_uppercase.regex.hfst | \
+	hfst-minimize | \
+	hfst-compose -1 generated/ftb1-morphology.omor.lex.hfst | \
+	hfst-disjunct -2 generated/ftb1-non_compounds.hfst | \
+	hfst-minimize > $@
+
+# 1. Remove word id markers and replace all omorfi labels with
+# corresponding ftb1 labels.
+# 2. Remove the duplicate marking of number in pronouns.
+# 3. Change all Pcle analyses to Adverb analyses.
+# 4. Remove duplicate word class markers that result from
+# substituting derivation tags.
+generated/omorfi-ftb1.analyse.hfst: generated/ftb1-wf_prefix_recovered.hfst generated/ftb1-rm_word_id.regex.hfst \
+generated/ftb1-rewrite_pron.regex.hfst generated/ftb1-rewrite_pcle.regex.hfst generated/ftb1-no_double_pos.regex.hfst \
+generated/omor2ftb1.relabel
+	hfst-compose -1 $< -2 generated/ftb1-rm_word_id.regex.hfst | \
+	hfst-substitute -F generated/omor2ftb1.relabel | \
+	hfst-compose -2 generated/ftb1-rewrite_pron.regex.hfst | \
+	hfst-compose -2 generated/ftb1-rewrite_pcle.regex.hfst | \
+	hfst-compose -2 generated/ftb1-no_double_pos.regex.hfst | \
+	hfst-minimize > $@
+
+# Invert the argument fst.
+%.inv.hfst:%.hfst
+	hfst-invert $^ > $@
+
+generated/ftb1-capitalize.regex:
+	echo '[Q:q|W:w|E:e|R:r|T:t|Y:y|U:u|I:i|O:o|P:p|Å:å|A:a|S:s|D:d|F:f|G:g|H:h|J:j|K:k|L:l|Ö:ö|Ä:ä|Z:z|X:x|C:c|V:v|B:b|N:n|M:m|?]*' > $@
+
+generated/ftb1-rm_prop_compound.regex:
+	echo '[\%[BOUNDARY%=COMPOUND%]* %[PROPER%=PROPER%] \%[BOUNDARY%=COMPOUND%]* [%[BOUNDARY%=COMPOUND%] \%[BOUNDARY%=COMPOUND%]* %[POS%=NOUN%] %[PROPER%=PROPER%] \%[BOUNDARY%=COMPOUND%]*]*] | [ \%[PROPER%=PROPER%]* ]' > $@
+
+generated/ftb1-rm_infminen.regex:
+	echo '[? - %[INF%=MINEN%]]*' > $@
+
+generated/ftb1-rm_dummy_hyph.regex:
+	echo '[? - %{hyph%?%} ]*' > $@
+
+generated/ftb1-input_boundary.regex:
+	echo '[[?* [0:%$$COMPOUND%_EPS%$$ | 0:%$$COMPOUND%_DASH1%$$ | 0:%$$COMPOUND%_DASH2%$$ | 0:%$$COMPOUND%_DASH3%$$] [0:? - [0:%$$COMPOUND%_EPS%$$ | 0:%$$COMPOUND%_DASH1%$$ | 0:%$$COMPOUND%_DASH2%$$ | 0:%$$COMPOUND%_DASH3%$$]]*] | [[? - [%$$COMPOUND%_EPS%$$ | %$$COMPOUND%_DASH1%$$ | %$$COMPOUND%_DASH2%$$ | %$$COMPOUND%_DASH3%$$]]*]]' > $@
+
+generated/ftb1-output_boundary.regex:
+	echo '[?* [%[BOUNDARY%=COMPOUND%]:0|%[BOUNDARY%=COMPOUND1%]:0|%[BOUNDARY%=COMPOUND2%]:0|%[BOUNDARY%=COMPOUND3%]:0] [?:0 - [%[BOUNDARY%=COMPOUND%]:0|%[BOUNDARY%=COMPOUND1%]:0|%[BOUNDARY%=COMPOUND2%]:0|%[BOUNDARY%=COMPOUND3%]:0 ]]*] | [? - [%[BOUNDARY%=COMPOUND%]|%[BOUNDARY%=COMPOUND1%]|%[BOUNDARY%=COMPOUND2%]|%[BOUNDARY%=COMPOUND3%] ]]*' > $@
+
+generated/ftb1-no_compounds.regex:
+	echo '\[%[BOUNDARY%=COMPOUND%] | %[BOUNDARY%=COMPOUND1%] | %[BOUNDARY%=COMPOUND2%] | %[BOUNDARY%=COMPOUND3%] ]*' > $@
+
+generated/ftb1-no_uppercase.regex:
+	echo '\[Q|W|E|R|T|Y|U|I|O|P|Å|A|S|D|F|G|H|J|K|L|Ö|Ä|Z|X|C|V|B|N|M|Š|É]*' > $@
+
+generated/ftb1-compound_final.regex:
+	echo '[ %[BOUNDARY%=COMPOUND%] | %[BOUNDARY%=COMPOUND1%]| %[BOUNDARY%=COMPOUND2%]| %[BOUNDARY%=COMPOUND3%] ] [ \[ %[BOUNDARY%=COMPOUND%] | %[BOUNDARY%=COMPOUND1%] | %[BOUNDARY%=COMPOUND2%] | %[BOUNDARY%=COMPOUND3%] ] ]*' > $@
+
+generated/ftb1-rm_word_id.regex:
+	echo '%[WORD%_ID%= -> 0 || _ .o. %] -> 0 || \%] _ ;' > $@
+
+generated/ftb1-rewrite_pron.regex:
+	echo '[% Sg | % Pl] -> 0 || [% Sg3 | % Sg2 | % Sg1 | % Pl3 | % Pl2 | % Pl1 ] _ ;' > $@
+
+generated/ftb1-rewrite_pcle.regex:
+	echo '% Pcle % Abbr -> % Adv % Abbr .o. % Pcle -> 0 || _ ? .o. % Pcle -> % Adv ;' > $@
+
+generated/ftb1-no_double_pos.regex:
+	echo '[ % A|% Adp|% Adv|% N|% Num|% Pcle|% Pron|% Pun|% V|% N Abbr|% V Neg ] -> 0 || _ [% A|% Adp|% Adv|% N|% Num|% Pcle|% Pron|% Pun|% V|% N Abbr|% V Neg] ;' > $@
+
+generated/ftb1-miettiminen.regex:
+	echo '%[WORD%_ID%= m i e t t i m i n e n %] ?*' > $@
+
+generated/ftb1-rm_mietti.regex:
+	echo '%[WORD%_ID%=:0 [m:0|M:0] [i:0|I:0] [e:0|E:0] [t:0|T:0] [t:0|T:0] [i:0|I:0] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-rm_mietti.inv.regex:
+	echo '[0:m|0:M] [0:i|0:I] [0:e|0:E] [0:t|0:T] [0:t|0:T] [0:i|0:I] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-avaaminen.regex:
+	echo '%[WORD%_ID%= a v a a m i n e n %] ?*' > $@
+
+generated/ftb1-rm_avaa.regex:
+	echo '%[WORD%_ID%=:0 [a:0|A:0] [v:0|V:0] [a:0|A:0] [a:0|A:0] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-rm_avaa.inv.regex:
+	echo '[0:a|0:A] [0:v|0:V] [0:a|0:A] [0:a|0:A] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-va_der.regex:
+	echo '\%[BOUNDARY%=COMPOUND%]* %[POS%=VERB%] %[VOICE%=ACT%] %[PCP%=VA%] %[NUM%=SG%] %[CASE%=NOM%]' > $@
+
+generated/ftb1-rm_va.regex:
+	echo '?* [v:0|V:0] [a:0|A:0|ä:0|Ä:0]' > $@
+
+generated/ftb1-minen_marker.regex:
+	echo '0:%[LEX=%MINEN%]' > $@
+
+generated/ftb1-word_id.regex:
+	echo '0:%[WORD%_ID%=' > $@
+
+generated/ftb1-ikuisesti.regex:
+	echo '%[WORD%_ID%= i k u i s e s t i %] ?*' > $@
+
+generated/ftb1-pimeasti.regex:
+	echo '%[WORD%_ID%= p i m e ä s t i %] ?*' > $@
+
+generated/ftb1-rm_ikuise.regex:
+	echo '%[WORD%_ID%=:0 [i:0|I:0] [k:0|K:0] [u:0|U:0] [i:0|I:0] [s:0|S:0] [e:0|E:0] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-rm_ikuise.inv.regex:
+	echo '[0:i|0:I] [0:k|0:K] [0:u|0:U] [0:i|0:I] [0:s|0:S] [0:e|0:E] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-rm_pimea.regex:
+	echo '%[WORD%_ID%=:0 [p:0|P:0] [i:0|I:0] [m:0|M:0] [e:0|E:0] [ä:0|Ä:0] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-rm_pimea.inv.regex:
+	echo '[0:p|0:P] [0:i|0:I] [0:m|0:M] [0:e|0:E] [0:ä|0:Ä] \%[BOUNDARY%=COMPOUND%]*' > $@
+
+generated/ftb1-rm_n.regex:
+	echo '?* [n:0 | N:0]' > $@
+
+generated/ftb1-rm_n.inv.regex:
+	echo '?* [0:n | 0:N]' > $@
+
+generated/ftb1-sen_adj.regex:
+	echo '\%[BOUNDARY%=COMPOUND%]* %[POS%=ADJECTIVE%] %[NUM%=SG%] %[CASE%=GEN%]' > $@
+
+generated/ftb1-sti_marker.regex:
+	echo '0:%[LEX=%STI%]' > $@
+
+generated/ftb1-compound0.relabel:
+	echo '-:[BOUNDARY=COMPOUND]	-:[BOUNDARY=COMPOUND1]' > $@
+	echo '‐:[BOUNDARY=COMPOUND]	‐:[BOUNDARY=COMPOUND2]'	>> $@
+	echo '‑:[BOUNDARY=COMPOUND]	‑:[BOUNDARY=COMPOUND3]' >> $@
+
+generated/ftb1-compound1.relabel:
+	echo '@_EPSILON_SYMBOL_@:[BOUNDARY=COMPOUND]	$$COMPOUND_EPS$$:[BOUNDARY=COMPOUND]' > $@
+	echo '-:[BOUNDARY=COMPOUND1]	$$COMPOUND_DASH1$$:[BOUNDARY=COMPOUND1]' >> $@
+	echo '‐:[BOUNDARY=COMPOUND2]	$$COMPOUND_DASH2$$:[BOUNDARY=COMPOUND2]' >> $@
+	echo '‑:[BOUNDARY=COMPOUND3]	$$COMPOUND_DASH3$$:[BOUNDARY=COMPOUND3]' >> $@
+
+generated/ftb1-compound2.relabel:
+	echo '$$COMPOUND_EPS$$:[BOUNDARY=COMPOUND]	#:[BOUNDARY=COMPOUND]' > $@
+	echo '$$COMPOUND_DASH1$$:[BOUNDARY=COMPOUND1]	-:[BOUNDARY=COMPOUND1]' >> $@
+	echo '$$COMPOUND_DASH2$$:[BOUNDARY=COMPOUND2]	‐:[BOUNDARY=COMPOUND2]' >> $@
+	echo '$$COMPOUND_DASH3$$:[BOUNDARY=COMPOUND3]	‑:[BOUNDARY=COMPOUND3]' >> $@
+
+generated/omor2ftb1.relabel:
+	echo '[CASE=ABE]	 Abe' > $@
+	echo '[CASE=ABL]	 Abl' >> $@
+	echo '[CASE=ACC]	 Acc' >> $@
+	echo '[CASE=ADE]	 Ade' >> $@
+	echo '[CASE=ALL]	 All' >> $@
+	echo '[CASE=COM]	 Com' >> $@
+	echo '[CASE=ELA]	 Ela' >> $@
+	echo '[CASE=ESS]	 Ess' >> $@
+	echo '[CASE=GEN]	 Gen' >> $@
+	echo '[CASE=ILL]	 Ill' >> $@
+	echo '[CASE=INE]	 Ine' >> $@
+	echo '[CASE=INS]	 Ins' >> $@
+	echo '[CASE=LAT]	 Lat' >> $@
+	echo '[CASE=NOM]	 Nom' >> $@
+	echo '[CASE=PAR]	 Par' >> $@
+	echo '[CASE=TRA]	 Tra' >> $@
+	echo '[CLIT=HAN]	 Han' >> $@
+	echo '[CLIT=KAAN]	 Kaan' >> $@
+	echo '[CLIT=KA]	 Ka' >> $@
+	echo '[CLIT=KIN]	 Kin' >> $@
+	echo '[CLIT=KO]	 Ko' >> $@
+	echo '[CLIT=PA]	 Pa' >> $@
+	echo '[CLIT=S]	 S' >> $@
+	echo '[CMP=CMP]	 Cmp' >> $@
+	echo '[CMP=SUP]	 Sup' >> $@
+	echo '[CONJ=ADVERBIAL]	 CS' >> $@
+	echo '[CONJ=COORD]	 CC' >> $@
+	echo '[INF=A]	 InfA' >> $@
+	echo '[INF=E]	 InfE' >> $@
+	echo '[INF=MA]	 InfMa' >> $@
+	echo '[INF=MAISILLA]	 InfMaisilla' >> $@
+	echo '[MOOD=COND]	 Cond' >> $@
+	echo '[MOOD=IMPV]	 Imprt' >> $@
+	echo '[MOOD=INDV]	 Ind' >> $@
+	echo '[MOOD=OPT]	 Opt' >> $@
+	echo '[MOOD=POTN]	 Pot' >> $@
+	echo '[NEG=CON]	 ConNeg' >> $@
+	echo '[NUM=SG]	 Sg' >> $@
+	echo '[NUM=PL]	 Pl' >> $@
+	echo '[PCP=AGENT]	 PcpAg' >> $@
+	echo '[PCP=NEG]	 PcpNeg' >> $@
+	echo '[PCP=NUT]	 PcpNut' >> $@
+	echo '[PCP=VA]	 PcpVa' >> $@
+	echo '[PERS=SG1]	 Sg1' >> $@
+	echo '[PERS=SG2]	 Sg2' >> $@
+	echo '[PERS=SG3]	 Sg3' >> $@
+	echo '[PERS=PL1]	 Pl1' >> $@
+	echo '[PERS=PL2]	 Pl2' >> $@
+	echo '[PERS=PL3]	 Pl3' >> $@
+	echo '[POS=ADJECTIVE]	 A' >> $@
+	echo '[POS=ADPOSITION]	 Adp' >> $@
+	echo '[POS=ADVERB]	 Adv' >> $@
+	echo '[POS=NOUN]	 N' >> $@
+	echo '[POS=NUMERAL]	 Num' >> $@
+	echo '[POS=PARTICLE]	 Pcle' >> $@
+	echo '[POS=PRONOUN]	 Pron' >> $@
+	echo '[POS=PUNCTUATION]	 Pun' >> $@
+	echo '[POS=VERB]	 V' >> $@
+	echo '[POSITION=PREFIX]	 Prefix' >> $@
+	echo '[POSS=PL1]	 PxPl1' >> $@
+	echo '[POSS=PL2]	 PxPl2' >> $@
+	echo '[POSS=SG1]	 PxSg1' >> $@
+	echo '[POSS=SG2]	 PxSg2' >> $@
+	echo '[POSS=3]	 Px3' >> $@
+	echo '[PROPER=PROPER]	 Prop' >> $@
+	echo '[SUBCAT=ABBREVIATION]	 Abbr' >> $@
+	echo '[SUBCAT=CARD]	 Card' >> $@
+	echo '[SUBCAT=DECIMAL]	 Card' >> $@
+	echo '[SUBCAT=DEMONSTRATIVE]	 Dem' >> $@
+	echo '[SUBCAT=INTERJECTION]	 Interj' >> $@
+	echo '[SUBCAT=INTERROGATIVE]	 Interr' >> $@
+	echo '[SUBCAT=NEG]	 Neg' >> $@
+	echo '[SUBCAT=ORD]	 Ord' >> $@
+	echo '[SUBCAT=PERSONAL]	 Pers' >> $@
+	echo '[SUBCAT=RECIPROC]	 Recip' >> $@
+	echo '[SUBCAT=REFLEXIVE]	 Refl' >> $@
+	echo '[SUBCAT=RELATIVE]	 Rel' >> $@
+	echo '[SUBCAT=ROMAN]	 Ord' >> $@
+	echo '[SUBCAT=QUANTOR]	 Qnt' >> $@
+	echo '[TENSE=PRESENT]	 Pres' >> $@
+	echo '[TENSE=PAST]	 Past' >> $@
+	echo '[VOICE=ACT]	 Act' >> $@
+	echo '[VOICE=PSS]	 Pass' >> $@
+	echo '[PERS=PE4]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[SUBCAT=CONJUNCTION]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[BOUNDARY=CLAUSE]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[BOUNDARY=SENTENCE]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[BOUNDARY=COMPOUND]	#' >> $@
+	echo '[BOUNDARY=COMPOUND1]	-' >> $@
+	echo '[BOUNDARY=COMPOUND2]	‐' >> $@
+	echo '[BOUNDARY=COMPOUND3]	‐' >> $@
+	echo '[CONJ=COMPARATIVE]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[DRV=JA]	 N' >> $@
+	echo '[DRV=MATON]	 A' >> $@
+	echo '[DRV=UUS]	 N' >> $@
+	echo '[DRV=MINEN]	 N' >> $@
+	echo '[DRV=S]	 A' >> $@
+	echo '[DRV=STI]	 Adv' >> $@
+	echo '[DRV=U]	 N' >> $@
+	echo '[DRV=VA]	 A' >> $@
+	echo '[DRV=INEN]	 A' >> $@
+	echo '[INF=MINEN]	 InfMinen' >> $@
+	echo '[LEX=MINEN]	 Lex_Minen' >> $@
+	echo '[LEX=STI]	 Lex_Sti' >> $@
+	echo '[POSITION=FINAL]	 Fin' >> $@
+	echo '[POSITION=INITIAL]	 Ini' >> $@
+	echo '[STYLE=ARCHAIC]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[STYLE=DIALECTAL]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[STYLE=NONSTANDARD]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[STYLE=RARE]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[SUBCAT=BRACKET]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[SUBCAT=DASH]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[SUBCAT=QUOTATION]	 Quo' >> $@
+	echo '[MOOD=INDV][TENSE=PAST]	 Ind Past' >> $@
+	echo '[MOOD=INDV][TENSE=PRESENT]	 Ind Pres' >> $@
+	echo '[POSITION=SUFFIX]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[POS=NOUN][SUBCAT=ABBREVIATION]	 N Abbr' >> $@
+	echo '[POS=VERB][SUBCAT=NEG]	 V Neg' >> $@
+	echo '[SUBCAT=BRACKET][POSITION=FINAL]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[SUBCAT=BRACKET][POSITION=INITIAL]	@_EPSILON_SYMBOL_@' >> $@
+	echo '[SUBCAT=QUOTATION][POSITION=FINAL]	 Quo Fin' >> $@
+	echo '[SUBCAT=QUOTATION][POSITION=INITIAL]	 Quo Ini' >> $@
+	echo '[SUBCAT=SPACE]	@_EPSILON_SYMBOL_@' >> $@
+	echo '' >> $@
+# }}}
+#
 # {{{OMOR compilation
 # word-boundary huphens
 generated/temporary-omor.hyphenated.hfst: generated/omorfi-omor.lexc.hfst \
@@ -623,6 +1103,68 @@ generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 	$(CGCOMP) $< $@
 endif
 # }}}
+
+CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
+			 generated/ftb1-avaaminen.regex.hfst \
+			 generated/ftb1-back_minen_omorfi.hfst \
+			 generated/ftb1-back_sti_omorfi.hfst \
+			 generated/ftb1-capitalize.regex.hfst \
+			 generated/ftb1-compound_final.regex.hfst \
+			 generated/ftb1-compound_prefixes.hfst \
+			 generated/ftb1-compound0.relabel \
+			 generated/ftb1-compound_subst1 \
+			 generated/ftb1-compound_subst2 \
+			 generated/ftb1-front_minen_omorfi.hfst \
+			 generated/ftb1-front_sti_omorfi.hfst \
+			 generated/ftb1-ikuisesti_omorfi.hfst \
+			 generated/ftb1-ikuisesti.regex.hfst \
+			 generated/ftb1-input_boundary.regex.hfst \
+			 generated/ftb1-miettiminen_omorfi.hfst \
+			 generated/ftb1-miettiminen.regex.hfst \
+			 generated/ftb1-minen_analyzer.hfst \
+			 generated/ftb1-minen_marker.regex.hfst \
+			 generated/ftb1-minen_omorfi.hfst \
+			 generated/ftb1-morphology.ftb1.ol \
+			 generated/ftb1-morphology.omor.hfst \
+			 generated/ftb1-morphology.omor.hfst.minen \
+			 generated/ftb1-morphology.omor.hfst.minen.sti \
+			 generated/ftb1-morphology.omor.lex.hfst \
+			 generated/ftb1-no_compounds.regex.hfst \
+			 generated/ftb1-no_double_pos.regex.hfst \
+			 generated/ftb1-non_compounds.hfst \
+			 generated/ftb1-no_uppercase.regex.hfst \
+			 generated/ftb1-omor2ftb1_subst \
+			 generated/ftb1-output_boundary.regex.hfst \
+			 generated/ftb1-pimeasti_omorfi.hfst \
+			 generated/ftb1-pimeasti.regex.hfst \
+			 generated/ftb1-rewrite_pcle.regex.hfst \
+			 generated/ftb1-rewrite_pron.regex.hfst \
+			 generated/ftb1-rm_avaa.inv.regex.hfst \
+			 generated/ftb1-rm_avaa.regex.hfst \
+			 generated/ftb1-rm_dummy_hyph.regex.hfst \
+			 generated/ftb1-rm_ikuise.inv.regex.hfst \
+			 generated/ftb1-rm_ikuise.regex.hfst \
+			 generated/ftb1-rm_infminen.regex.hfst \
+			 generated/ftb1-rm_mietti.inv.regex.hfst\
+			 generated/ftb1-rm_mietti.regex.hfst \
+			 generated/ftb1-rm_n.inv.regex.hfst \
+			 generated/ftb1-rm_n.regex.hfst\
+			 generated/ftb1-rm_pimea.inv.regex.hfst \
+			 generated/ftb1-rm_pimea.regex.hfst \
+			 generated/ftb1-rm_prop_compound.regex.hfst\
+			 generated/ftb1-rm_va.regex.hfst \
+			 generated/ftb1-rm_va.regex.inv.hfst \
+			 generated/ftb1-rm_word_id.regex.hfst\
+			 generated/ftb1-sen_adjectives.hfst sen_adj.regex.hfst \
+			 generated/ftb1-sen_stems.hfst\
+			 generated/ftb1-sti_analyzer.hfst\
+			 generated/ftb1-sti_marker.regex.hfst \
+			 generated/ftb1-sti_omorfi.hfst\
+			 generated/ftb1-va_derivatives.hfst\
+			 generated/ftb1-va_der.regex.hfst\
+			 generated/ftb1-va_stems.hfst \
+			 generated/ftb1-wf_prefix_recovered.hfst\
+			 generated/ftb1-word_id.regex.hfst
 
 clean-local:
 	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
