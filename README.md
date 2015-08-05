@@ -1,10 +1,10 @@
 # Omorfi–Open morphology of Finnish
 
-This package contains free and open source morphological lexical database for
-the Finnish language. This package is licenced under GNU GPL version 3, but not
-necessarily later. Licence can be found from `COPYING` file in root of the
-distribution package. Other licences are possible from authors named in the
-`AUTHORS`.
+This package contains free and open source morphology of Finnish: a database,
+tools and APIs. This package is licenced under [GNU GPL version
+3](https://gnu.org/licenses/gpl.html), but not necessarily later. Licence can
+also be found in the `COPYING` file in the root directory of this package. Other
+licences are possible by *all* the authors named in the `AUTHORS` file.
 
 The dictionaries used in omorfi are [Nykysuomen
 sanalista](http://kaino.kotus.fi) (LGPL),
@@ -18,8 +18,8 @@ developers and contributors and are GPLv3 like the rest of the package.
 ## Downloading
 
 Omorfi is available from [Omorfi's github
-pages](https://github.com/flammie/omorfi). The releases will be available from
-releases tab.
+pages](https://github.com/flammie/omorfi). The stable releases will be available
+from releases tab.
 
 ## Dependencies
 
@@ -56,6 +56,7 @@ Installation uses standard autotools system:
 
 The compiling may take forever or more depending on the hardware and settings.
 The stable release versions should be compilable on average end-user systems.
+You should be able to make use of th `-j` switch of make to speed it up.
 
 If configure cannot find HFST tools, you must tell it where to find them:
 
@@ -88,6 +89,7 @@ For basic, beginner end-user usage, omorfi provides helper scripts:
 - `omorfi-generate.sh`: generate word-forms from omor descriptions
 - `omorfi-segment.sh`: morphologically segment word-forms one per line
 - `omorfi-spell.sh`: spell-check and correct word-forms one per line
+- `omorfi-disambiguate-text.sh`: analyse text and disambiguate using VISL CG-3
 
 These scripts are enough for basic usage including scientific use for
 re-production of published results, but lack many additional features like more
@@ -202,9 +204,95 @@ tämä kyllä toimii oikein.
 tämä|tämä|PRONOUN|PRONOUN.DEMONSTRATIVE.SG.NOM|0 kyllä|kyllä|ADVERB|ADVERB|0 toimii|toimia|VERB|VERB.ACT.INDV.PRESENT.SG3|.i oikein.|oikein.|UNK|UNKNOWN|0 
 ```
 
-The input should be in format produced by moses's tokenizer.perl (truecase or
-clean-corpus-n not necessary). *In order for python scripts to work you need
-to install them to same prefix or define PYTHONPATH*.
+The input should be in format produced by moses's `tokenizer.perl` (truecase or
+clean-corpus-n not necessary). 
+
+CG style format can be generated using python based analyser script 
+`omorfi-analyse.py`:
+
+```
+"<Ensimmäinen>"
+        "ensimmäinen" <DETITLECASED> NOUN SG NOM <W=0>
+        "ensimmäinen" <DETITLECASED> NUMERAL ORD SG NOM <W=0>
+        "ensimmäinen" <LOWERCASED> NOUN SG NOM <W=0>
+        "ensimmäinen" <LOWERCASED> NUMERAL ORD SG NOM <W=0>
+
+"<runo>"
+        "runo" NOUN SG NOM <W=0>
+        "Runo" <TITLECASED> NOUN PROPER SG NOM <W=0>
+
+"<Mieleni>"
+        "Miele" NOUN PROPER PL NOM SG1 <W=0>
+        "Miele" NOUN PROPER SG GEN SG1 <W=0>
+        "Miele" NOUN PROPER SG NOM SG1 <W=0>
+        "mieli" <DETITLECASED> NOUN PL NOM SG1 <W=0>
+        "mieli" <DETITLECASED> NOUN SG GEN SG1 <W=0>
+        "mieli" <DETITLECASED> NOUN SG NOM SG1 <W=0>
+        "mieli" <LOWERCASED> NOUN PL NOM SG1 <W=0>
+        "mieli" <LOWERCASED> NOUN SG GEN SG1 <W=0>
+        "mieli" <LOWERCASED> NOUN SG NOM SG1 <W=0>
+
+"<minun>"
+        "minä" PRONOUN PERSONAL SG1 SG GEN <W=0>
+
+"<tekevi>"
+        "tehdä" VERB ACT INDV PRESENT SG3 <ARCHAIC> <W=1600>
+
+"<,>"
+        "," PUNCTUATION CLAUSE <W=0>
+
+"<aivoni>"
+        "aivo" NOUN PL NOM SG1 <W=0>
+        "aivo" NOUN SG GEN SG1 <W=0>
+        "aivo" NOUN SG NOM SG1 <W=0>
+        "aivot" NOUN PL NOM SG1 <W=0>
+
+"<ajattelevi>"
+        "ajatella" VERB ACT INDV PRESENT SG3 <ARCHAIC> <W=1600>
+```
+
+A full pipeline for VISL CG 3 disambiguation is implemented as a convenience
+script that works like text analysis script:
+
+```
+$ omorfi-disambiguate-text.sh kalevala.txt
+"<Ensimmäinen>"
+        "ensimmäinen" <DETITLECASED> NOUN SG NOM <W=0>
+        "ensimmäinen" <DETITLECASED> NUMERAL ORD SG NOM <W=0>
+        "ensimmäinen" <LOWERCASED> NOUN SG NOM <W=0>
+        "ensimmäinen" <LOWERCASED> NUMERAL ORD SG NOM <W=0>
+"<runo>"
+        "runo" NOUN SG NOM <W=0>
+"<Mieleni>"
+        "mieli" <LOWERCASED> NOUN SG NOM SG1 <W=0>
+        "mieli" <DETITLECASED> NOUN SG NOM SG1 <W=0>
+"<minun>"
+        "minä" PRONOUN PERSONAL SG1 SG GEN <W=0>
+"<tekevi>"
+        "tehdä" VERB ACT INDV PRESENT SG3 <ARCHAIC> <W=1600>
+"<,>"
+        "," PUNCTUATION CLAUSE <W=0> CLB
+"<aivoni>"
+        "aivo" NOUN SG NOM SG1 <W=0>
+"<ajattelevi>"
+        "ajatella" VERB ACT INDV PRESENT SG3 <ARCHAIC> <W=1600>
+```
+
+The use of disambiguation requires working omorfi python installation.
+
+*In order for python scripts to work you need to install them to same prefix as
+ python, or define PYTHONPATH*:
+
+```
+$ PYTHONPATH=/usr/local/lib/python3.4/site-packages/ omorfi-disambiguate-text.sh kalevala.txt
+```
+
+You will also want to have *python3* as the system python in case I forget to
+set the whole shebang right. You can work around this by:
+
+```
+python3 $(which omorfi-analyse.py )
+```
 
 ### Advanced usage
 
