@@ -1089,11 +1089,15 @@ generated/errmodel.edit-distance-3.hfst: generated/errmodel.edit-distance.hfst
 	$(HMIN) $< |\
 		$(HREP) -f 1 -t 3 -o $@
 
-voikko/speller-omorfi.zhfst: generated/omorfi.accept.hfst \
-					generated/errmodel.edit-distance-2.hfst voikko/index.xml
-	$(HF2F) -f olw < generated/omorfi.accept.hfst > voikko/acceptor.default.hfst
-	$(HF2F) -f olw < generated/errmodel.edit-distance-2.hfst > voikko/errmodel.default.hfst
-	$(ZIP) -j -v -9 $@ voikko/*
+voikko/acceptor.default.hfst: generated/omorfi.accept.hfst
+	$(HF2F) -f olw < $< > $@
+
+voikko/errmodel.default.hfst: generated/errmodel.edit-distance-2.hfst
+	$(HF2F) -f olw < $< > $@
+
+voikko/speller-omorfi.zhfst: voikko/index.xml \
+	voikko/acceptor.default.hfst voikko/errmodel.default.hfst
+	$(ZIP) -j -v -9 $@  $?
 
 # }}}
 #
