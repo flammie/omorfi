@@ -1,12 +1,24 @@
 # Omorfi–Open morphology of Finnish
 
-This package contains free and open source morphology of Finnish: a database,
-tools and APIs. This package is licenced under [GNU GPL version
-3](https://gnu.org/licenses/gpl.html), but not necessarily later. Licence can
-also be found in the `COPYING` file in the root directory of this package. Other
-licences are possible by *all* the authors named in the `AUTHORS` file.
+This is a free/libre open source morphology of Finnish: a database, tools and
+APIs. This package is licenced under [GNU GPL version
+3](https://gnu.org/licenses/gpl.html), but *not necessarily later*. Licence can
+also be found in the `COPYING` file in the root directory of this package.
+Other licences are possible by *all* the authors named in the `AUTHORS` file.
 
-The dictionaries used in omorfi are [Nykysuomen
+Omorfi has been used for a number of tasks:
+
+* morphological analysis
+* morphological segmentation
+* spell-checking and correction
+* information retrieval
+* ontologies
+* statistical machine translation
+* rule-based machine translation
+* language modeling
+
+The lexical data of omorfi has been acquired from various sources with
+different original licences.  The dictionaries used in omorfi are [Nykysuomen
 sanalista](http://kaino.kotus.fi) (LGPL),
 [Joukahainen](http://joukahainen.lokalisointi.org) (GPL) and
 [FinnWordNet](http://www.ling.helsinki.fi/research/finnwordnet) (Princeton
@@ -15,11 +27,13 @@ Helsinki), and [Finnish Wiktionary](http://fi.Wiktionary.org) (Creative Commons
 Attribution–ShareAlike). Some words have also been collected by omorfi
 developers and contributors and are GPLv3 like the rest of the package.
 
-## Downloading
+## Downloading and further information
 
-Omorfi is available from [Omorfi's github
-pages](https://github.com/flammie/omorfi). The stable releases will be available
-from releases tab.
+Omorfi is currently hosted at github. [Omorfi's github
+pages](https://github.com/flammie/omorfi) contain most of the important
+information about omorfi: wiki for additional documentation, version control
+system for source codes, bug tracker for reporting bugs, and the stable
+releases as convenient packages.
 
 ## Dependencies
 
@@ -382,6 +396,21 @@ kissakoira-apina	kiss{STUB}a{wB}koir{STUB}a{wB}apin{STUB}a	0,000000
 
 Mac OS X may cause problems with its Unicode encoding (NFD), or with its
 non-GNU command-line tools.
+
+### hfst-lexc: Unknown option
+
+This may happen when compiling the system with make:
+
+```
+hfst-lexc --Werror -o generated/omorfi-ftb3.lexc.hfst generated/omorfi-ftb3.lexc
+Try ``/usr/local/bin/hfst-lexc --help'' for more information.
+/usr/local/bin/hfst-lexc: Unknown option
+```
+
+It means your hfst-lexc is too old. You need at least version 3.8 to handle
+`--Werror` switch. You can workaround by removing `--Werror` from
+`src/Makefile.am`, although this is not recommended, as the newer versions of
+HFST have provided this option to ensure the data is not broken.
 
 ## Contributing
 
