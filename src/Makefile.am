@@ -755,7 +755,8 @@ generated/omor2ftb1.relabel
 	hfst-compose -2 generated/ftb1-rewrite_pron.regex.hfst | \
 	hfst-compose -2 generated/ftb1-rewrite_pcle.regex.hfst | \
 	hfst-compose -2 generated/ftb1-no_double_pos.regex.hfst | \
-	hfst-minimize > $@
+	hfst-minimize |\
+	hfst-fst2fst -f olw > $@
 
 # Invert the argument fst.
 %.inv.hfst:%.hfst
