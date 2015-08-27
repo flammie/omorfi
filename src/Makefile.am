@@ -112,6 +112,7 @@ GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-remove-boundaries.regex
 				  generated/omorfi-hyphens.twolc \
 				  generated/omorfi-between-tokens.regex.hfst \
+				  generated/omorfi.yaml \
 				  generated/omorfi-token.regex.hfst
 if WANT_FTB3
 FTB3_AUTOMATA=generated/omorfi-ftb3.analyse.hfst \
@@ -142,7 +143,8 @@ if WANT_APERTIUM
 APE_AUTOMATA=generated/fin-automorf.hfst generated/fin-autogen.hfst
 APE_GENERATED=generated/apertium-fin.fin.lexc \
 			  generated/apertium-fin.fin.twolc \
-			  generated/apertium-fin.fin.reweight
+			  generated/apertium-fin.fin.reweight \
+			  generated/apertium-fin.fin.yaml
 endif
 if WANT_OMOR
 GIELLA_AUTOMATA=generated/omorfi-giella.analyse.hfst \
@@ -303,7 +305,7 @@ generated/omorfi-boundary.reweight:
 
 # database to omor 
 generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yamls.py -i $< -o $@ -f=omor -v
+	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor -v
 
 generated/omorfi-omor.reweight: 
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=omor -o $@
@@ -320,7 +322,7 @@ generated/omorfi-omor-rewrite-tags.regex:
 
 # database to ftb3 
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yamls.py -i $< -o $@ -f=ftb3 -v
+	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=ftb3 -v
 
 generated/omorfi-ftb3.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=ftb3 -o $@
@@ -348,6 +350,10 @@ generated/apertium-fin.fin.lexc: generated/master.tsv generated/stemparts.tsv \
 generated/apertium-fin.fin.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -v -f=apertium -r apertium -o $@
 
+generated/apertium-fin.fin.yaml: $(top_srcdir)/test/gtd-tests.tsv
+	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=apertium -v
+
+# database to monodix
 generated/omorfi.dix: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-monodix.py -v -m generated/master.tsv \
