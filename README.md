@@ -39,24 +39,24 @@ releases as convenient packages.
 
 Compilation of the morphological analyser, generation, lemmatisation or
 spell-checking requires [HFST](http://hfst.sf.net) tools or compatible
-installed:
+installed, including the python bindings and relatively recent python. Of
+course standard GNU build tools are needed as well. You should have versions no
+more than year or two old, the build is not guaranteed to work at all with
+ancient versions of GNU build tools, HFST or python. The versions that should
+work are as follows:
 
-  * hfst-3.8 or greater
-  * python-3.2 or greater
-  * GNU autoconf-2.64 and automake-1.12 (older may work with bit of fiddling,
-    but if you are stuck with so old versions, chances are other parts of the
-    build will fail too)
+  * **hfst-3.8** or greater, with python bindings
+  * **python-3.2** or greater, with hfst python bindings available
+  * GNU **autoconf-2.64** and **automake-1.12**
 
 The use of certain automata also requires additional tools:
 
-  * hfst-ospell-0.2.0 or greater needed convenient use of the 
-    spell-checking automata
-  * apertium can be used to pre-process text corpora
+  * *hfst-ospell-0.2.0* or greater needed for spell-checking
 
 APIs require:
 
-* Python 3.2 for python API
-* Java 7 for Java API
+* *Python 3.2* for python API
+* *Java 7* for Java API
 
 For bash tools, recent GNU coreutils etc. should be more than enough.
 
@@ -343,7 +343,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Java class (check wiki page Java API api for details):
 
 ```
-java -Xmx1024m com.googlecode.omorfi.Omorfi
+java -Xmx1024m com.github.flammie.omorfi.Omorfi
 ```
 
 Especially loading all automata from system paths requires more memory than
