@@ -80,21 +80,21 @@ def main():
         linecount = 0
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
-            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                     strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 2:
-                    if tsv_parts[0][0] not in args.comment:
-                        print("Too few tabs on line", linecount, 
+                    print("Too few tabs on line", linecount, 
                             "skipping following line completely:", file=stderr)
-                        print(tsv_parts, file=stderr)
+                    print(tsv_parts, file=stderr)
                     continue
-                print("### `", tsv_parts[0], "` ", file=args.output)
-                print(tsv_parts[1], file=args.output)
-                print("* omor: ", format_stuff_omor(tsv_parts[1], 'omor'), 
+                print("### `", tsv_parts['stuff'], "` ", file=args.output)
+                print(tsv_parts['doc'], file=args.output)
+                print("* omor: ", format_stuff_omor(tsv_parts['stuff'],
+                                                    'omor'), 
                         file=args.output)
-                print("* ftb3: ", format_stuff_ftb3(tsv_parts[1]),
+                print("* ftb3: ", format_stuff_ftb3(tsv_parts['stuff']),
                         file=args.output)
     print('## Paradigms', file=args.output)
     for tsv_filename in args.paradigm_docs:
@@ -103,19 +103,16 @@ def main():
         linecount = 0
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
-            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                     strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 2:
-                    if tsv_parts[0][0] not in args.comment:
-                        print("Too few tabs on line", linecount, 
-                            "skipping following line completely:", file=stderr)
-                        print(tsv_parts, file=stderr)
                     tsv_line = tsv_file.readline()
                     continue
-                print("### ", tsv_parts[0], file=args.output)
-                print(tsv_parts[1], file=args.output)
+                print("### `", tsv_parts['new_para'], "`", 
+                        file=args.output)
+                print(tsv_parts['doc'], file=args.output)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 
