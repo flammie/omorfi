@@ -343,7 +343,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Java class (check wiki page Java API api for details):
 
 ```
-java -Xmx1024m com.googlecode.omorfi.Omorfi
+java -Xmx1024m com.github.flammie.omorfi.Omorfi
 ```
 
 Especially loading all automata from system paths requires more memory than
