@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf8 -*-
 """
-This script converts Finnish TSV-formatted lexicon to googlecodewiki
+This script converts Finnish TSV-formatted lexicon to github wiki
 """
 
 
@@ -26,13 +26,16 @@ from time import strftime
 import argparse
 import csv
 
+from omorfi.omor_formatter import format_stuff_omor
+from omorfi.ftb3_formatter import format_stuff_ftb3
+
 # standard UI stuff
 
 def main():
     # defaults
     outfile = None
     # initialise argument parser
-    ap = argparse.ArgumentParser(description="Convert Finnish dictionary TSV data into googlecodewiki")
+    ap = argparse.ArgumentParser(description="Convert omorfi database to github pages")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
             default=False,
             help="do not print output to stdout while processing")
@@ -61,14 +64,16 @@ def main():
     quoting = csv.QUOTE_NONE
     quotechar = None
     # write header to XML file
-    print('#Summary Generated documentation of database keys and values', file=args.output)
-    print('= Introduction =', file=args.output)
-    print("This document was automatically generated from the omorfi " + \
-            "database. It describes some of the internal codes used in the " + \
-            "database keys and values \"_stuff_\", and the _paradigms_ that " + \
-            "define inflection patterns", file=args.output)
+    print('# Introduction', file=args.output)
+    print("""This document was automatically generated from the omorfi 
+            database. It describes some of the internal codes used in the
+            database keys and values "_stuff_", and the _paradigms_ that
+            define inflection patterns""", file=args.output)
     # read from csv files
-    print('== Stuff ==', file=args.output)
+    print('## Stuff ', file=args.output)
+    print("""Stuff are internal things, but they appear in database a lot, so
+            you will want to know what they are if you are gonna modify database
+            of affixes""", file=args.output)
     for tsv_filename in args.stuff_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -85,9 +90,13 @@ def main():
                             "skipping following line completely:", file=stderr)
                         print(tsv_parts, file=stderr)
                     continue
-                print("  * `", tsv_parts[0], "`: ", tsv_parts[1], sep='',
+                print("### `", tsv_parts[0], "` ", file=args.output)
+                print(tsv_parts[1], file=args.output)
+                print("* omor: ", format_stuff_omor(tsv_parts[1], 'omor'), 
                         file=args.output)
-    print('== Paradigms ==', file=args.output)
+                print("* ftb3: ", format_stuff_ftb3(tsv_parts[1]),
+                        file=args.output)
+    print('## Paradigms', file=args.output)
     for tsv_filename in args.paradigm_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -105,11 +114,9 @@ def main():
                         print(tsv_parts, file=stderr)
                     tsv_line = tsv_file.readline()
                     continue
-                print("  * `", tsv_parts[0], "`: ", tsv_parts[1], sep='',
-                        file=args.output)
-    print('''<wiki:comment>
-vim: set ft=googlecodewiki:
-</wiki:comment>''', file=args.output)
+                print("### ", tsv_parts[0], file=args.output)
+                print(tsv_parts[1], file=args.output)
+    print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 
 
