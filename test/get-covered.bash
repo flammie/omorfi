@@ -60,7 +60,7 @@ if ! test -f ftb3.1.uniq.freqs ; then
     frequency_list ftb3.1.tokens > ftb3.1.uniq.freqs
 fi
 if ! test -f ftb3.1.cutted.freqs ; then
-    egrep -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort > ftb3.1.cutted.freqs
+    egrep -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb3.1.cutted.freqs
 fi
 
 # gutenberg
@@ -97,7 +97,7 @@ fi
 
 # FTB 1
 echo FTB-1 2014 ... corpus 6/$nc
-if ! test -f "ftb-2014" ; then
+if ! test -f "ftb1-2014.uniq.freqs" ; then
     if ! test -f ftb1-2014.tsv ; then
         echo fetch
         wget "http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/ftb1-2014-beta.zip"
@@ -114,5 +114,5 @@ if ! test -f "ftb-2014" ; then
 fi
 if ! test -f ftb1-2014.cutted.freqs ; then
     egrep -v '^#' < ftb1-2014.tsv | tr -s '\n' |\
-        cut -f 2,3,6 | sort | uniq -c | sort > ftb1-2014.cutted.freqs
+        cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb1-2014.cutted.freqs
 fi

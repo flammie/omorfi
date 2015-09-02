@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     exit 1
 fi
 fsa="@top_builddir@/src/generated/omorfi-ftb3.analyse.hfst"
-cuf="ftb3.1.conllx.cutted.freqs"
+cuf="ftb3.1.cutted.freqs"
 cs="get-covered.bash"
 if test ! -r "$fsa" ; then
     echo Missing ../src/geerated/omorfi-ftb3.analyse.hfst
@@ -19,7 +19,7 @@ if test ! -r $cuf ; then
     echo missing $cuf, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ $srcdir/faithfulness.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i ftb3.1.conllx.cutted.freqs -c 1000 -o ftb3.1-short.log -a ftb3.1 ; then
+if ! @PYTHON@ $srcdir/faithfulness.py -f $fsa -i $cuf -c 1000 -o ftb3.1-short.log -a ftb3.1 ; then
     echo We missed the target of 90 % faithfulness
     exit 1
 fi
