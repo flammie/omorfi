@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from sys import stderr, stdin, stdout
@@ -6,6 +6,14 @@ from argparse import ArgumentParser, FileType
 from omorfi.omorfi import Omorfi
 
 import re
+
+def get_lemmas(anal):
+    re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
+    lemmas = re_lemma.finditer(anal.output)
+    rv = []
+    for lemma in lemmas:
+        rv += [lemma.group(1)]
+    return rv
 
 def print_analyses(surf, anals, format, outfile):
     if format == 'xerox':
@@ -45,9 +53,7 @@ def print_analyses_vislcg3(surf, anals, outfile):
         lemmas = []
         for pm in pos_matches:
             pos = pm.group(1)
-        lemma_matches = re_lemma.finditer(anal.output)
-        for lm in lemma_matches:
-            lemmas += [lm.group(1)]
+        get_lemmas(anal)
         mrd_matches = re_mrd.finditer(anal.output)
         for mm in mrd_matches:
             if mm.group(1) == 'WORD_ID':
@@ -67,11 +73,13 @@ def print_analyses_vislcg3(surf, anals, outfile):
     print(file=outfile)
 
 def print_analyses_conllx(surf, anals, outfile):
-    print(1, surf, surf, anals[0].output[0], anals[0].output[0], anals[0].output,
+    print(1, surf, "#".join(get_lemmas(anals[0])),
+            "-", "-", anals[0].output,
             "-", "-", "-", "-", sep="\t", file=outfile)
 
 def print_analyses_conllu(surf, anals, outfile):
-    print(1, surf, surf, anals[0].output[0], anals[0].output[0], anals[0].output,
+    print(1, surf, "#".join(get_lemmas(anals[0])), 
+            "-", "-", anals[0].output,
             "-", "-", "-", "-", sep="\t", file=outfile)
 
 def main():
