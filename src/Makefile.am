@@ -61,11 +61,13 @@ INFLECTIONS=continuations/acro-inflections.tsv \
 FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
 			   python/omorfi/ftb3_formatter.py \
 			   python/omorfi/omor_formatter.py \
+			   python/omorfi/giella_formatter.py \
 			   python/omorfi/tdt_formatter.py \
 			   python/omorfi/lexc_formatter.py \
 			   python/omorfi/twolc_formatter.py \
 			   python/omorfi/regex_formatter.py \
 			   python/omorfi/monodix_formatter.py \
+			   python/omorfi/formatters.py \
 			   python/omorfi/kotus_sanalista_formatter.py
 # file formats
 GENERATOR_SCIRPTS=python/generate-lexcs.py \
@@ -191,7 +193,9 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
 		   python/omorfi-factorise.py \
-		   bash/validate-database.bash
+		   python/omorfi-analyse.py \
+		   bash/validate-database.bash \
+		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
 TESTS=bash/validate-database.bash
