@@ -3,6 +3,20 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20150904
+
+* allomorphy can be tagged again to distinguish e.g. *-iden* and *-itten* when
+  generating
+* FinnTreeBank-1 format provided by Miikka Silfverberg is available but not
+  built by default since it lacks a test set
+* lexicalised inflections can have separate tag, e.g. *kännissä* can be lexical
+  inessive distinguished from regular inessive
+* preliminary VISL CG-3 support, with original grammar by Fred Karlsson;
+  convenience bash scripts available for disambiguated parsing
+* preliminary support for conllu and conllx analysis formats
+* paradigm categorisation is now verified by regular expressions
+* lots of paradigm fixes and some added words
+
 ## Significant changes in 20150326
 
 * speed is up to >20,000 tokens per second from ~500
@@ -141,4 +155,4 @@ see git log and then `ChangeLog.old`.
 
 * towards full-scale automatic test suite
 
-<!-- set ft=markdown: -->
+<!-- vim: set ft=markdown: -->
