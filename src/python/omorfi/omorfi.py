@@ -17,10 +17,12 @@ from sys import stderr, stdin
 from os import getenv, access, F_OK
 from glob import glob
 
+from .settings import fin_punct_leading, fin_punct_trailing
+
 class Omorfi:
     """
     An object holding omorfi automata for all the functions of omorfi.
-    
+
     Each of the automata are accessible by their function and identifier.
     Some combinations of functionalities may be available that access more
     than one automaton in non-trivial ways. Currently supported automata
@@ -45,6 +47,9 @@ class Omorfi:
         can_lowercase: to use `str.lower()`
         can_titlecase: to use `str[0].upper() + str[1:]`
         can_uppercase: to use `str.upper()`
+        can_detitlecase: to use `str[0].lower + str[1:]`
+
+    The annotations will be changed if transformation has been applied.
     """
     analysers = dict()
     tokenisers = dict()
@@ -55,6 +60,7 @@ class Omorfi:
     acceptors = dict()
     can_lowercase = True
     can_titlecase = True
+    can_detitlecase = True
     can_uppercase = False
     _verbosity = False
 
@@ -67,7 +73,7 @@ class Omorfi:
         """Construct Omorfi with given verbosity for printouts."""
         this._verbosity = verbosity
 
-    def load_filename(this, path):
+    def load_filename(this, path, **include):
         """Load omorfi automaton from filename and guess its use.
 
         A file name should consist of three parts separated by full stop.
@@ -75,8 +81,25 @@ class Omorfi:
         automaton, first part is parsed as an identifier typically starting
         with the word omorfi, followed by any extras, such as the tagset for
         analysis or generation.
+
+        The named arguments can include a name of automaton type as name,
+        and truth value as value, for types of automata allowed to load.
+        By default, the names `analyse`, `generate` and `segment` are loaded.
+        Names not included are defaulted to False. E.g., 
+        `omorfi.load_filename(fn, analyse=True)`
+        will only load file named fn if it can be identified as omorfi
+        analyser. This is best used in conjunction with omorfi.load_from_dir.
         """
         trans = None
+        if len(include) == 0:
+            include['analyse'] = True
+            include['generate'] = True
+            include['segment'] = True
+            include['accept'] = True
+        for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
+                'hyphenate', 'segment']:
+            if not ttype in include:
+                include[ttype] = False
         if this._verbosity:
             print('Loading file', path)
         if access(path, F_OK):
@@ -90,54 +113,57 @@ class Omorfi:
         if len(parts) < 2:
             if this._verbosity:
                 print('not loaded', path)
-        elif parts[1] == 'analyse':
+        elif parts[1] == 'analyse' and include['analyse']:
             if this._verbosity:
                 print('analyser', parts[0])
             this.analysers[parts[0]] = trans
-        elif parts[1] == 'generate':
+        elif parts[1] == 'generate' and include['generate']:
             if this._verbosity:
                 print('generator', parts[0])
             this.generators[parts[0]] = trans
-        elif parts[1] == 'accept':
+        elif parts[1] == 'accept' and include['accept']:
             if this._verbosity:
                 print('acceptor', parts[0])
             this.acceptors[parts[0]] = trans
-        elif parts[1] == 'tokenise':
+        elif parts[1] == 'tokenise' and include['tokenise']:
             if this._verbosity:
                 print('tokeniser', parts[0])
             this.tokenisers[parts[0]] = trans
-        elif parts[1] == 'lemmatise':
+        elif parts[1] == 'lemmatise' and include['lemmatise']:
             if this._verbosity:
                 print('lemmatiser', parts[0])
             this.lemmatisers[parts[0]] = trans
-        elif parts[1] == 'hyphenate':
+        elif parts[1] == 'hyphenate' and include['hyphenate']:
             if this._verbosity:
                 print('hyphenator', parts[0])
             this.hyphenators[parts[0]] = trans
-        elif parts[1] == 'segment':
+        elif parts[1] == 'segment' and include['segment']:
             if this._verbosity:
                 print('segmenter', parts[0])
             this.segmenters[parts[0]] = trans
         elif this._verbosity:
             print('skipped', parts)
 
-    def load_from_dir(this, path=None):
+    def load_from_dir(this, path=None, **include):
         """Load omorfi automata from given or known locations.
         
         If path is given it should point to directory of automata,
         otherwise standard installation paths are tried. Currently standard
         linux install paths are all globbed in following order:
 
-        /usr/local/share/hfst/fi/*.hfst
-        /usr/share/hfst/fi/*.hfst
-        /usr/local/share/omorfi/*.hfst
-        /usr/share/omorfi/*.hfst
-        getenv('HOME') + /.hfst/fi/*.hfst
-        getenv('HOME') + /.omorfi/*.hfst
+        * /usr/local/share/hfst/fi/*.hfst
+        * /usr/share/hfst/fi/*.hfst
+        * /usr/local/share/omorfi/*.hfst
+        * /usr/share/omorfi/*.hfst
+        * getenv('HOME') + /.hfst/fi/*.hfst
+        * getenv('HOME') + /.omorfi/*.hfst
 
         Last two paths require getenv('HOME'). All automata matching
         glob *.hfst are loaded and stored in part of omorfi class appropriate
         for their usage.
+
+        They keyword args can be used to limit loading of automata. The name
+        is analyser type and value is True. 
         """
         homepaths = []
         res = None
@@ -156,45 +182,88 @@ class Omorfi:
                     print('adding', sp + '/*.hfst')
                 loadable += glob(sp + '/*.hfst')
         for filename in loadable:
-            this.load_filename(filename)
+            this.load_filename(filename, **include)
+
+    def _find_retokens(this, token):
+        if this.accept(token):
+            return [token]
+        if this.can_lowercase and this.accept(token.lower()):
+            return [token.lower()]
+        if this.can_uppercase and this.accept(token.upper()):
+            return [token.upper()]
+        if token[-1] in fin_punct_trailing and this.accept(token[:-1]):
+            return [token[:-1], token[-1]]
+        if token[0] in fin_punct_leading and this.accept(token[1:]):
+            return [token[0], token[1:]]
+        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing and this.accept(token[1:-1]):
+            return [token[0], token[1:-1], token[-1]]
+        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and this.accept(token[:-2]):
+            return [token[:-2], token[-2], token[-1]]
+        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and this.accept(token[:-3]):
+            return [token[:-3], token[-3], token[-2], token[-1]]
+        return [token]
+
+
+
+    def _retokenise(this, tokens):
+        retokens = []
+        for token in tokens:
+            for retoken in this._find_retokens(token):
+                retokens.append(retoken)
+        return retokens
 
     def _tokenise(this, line, automaton):
         return None
 
     def tokenise(this, line):
-        """Perform tokenisation with loaded tokeniser if any, or split.
+        """Perform tokenisation with loaded tokeniser if any, or `split()`.
 
         If tokeniser is available, it is applied to input line and if
         result is achieved, it is split to tokens according to tokenisation
         strategy and returned as a list.
 
         If no tokeniser are present, or none give results, the line will be
-        tokenised using python's basic string functions.
+        tokenised using python's basic string functions. If analyser is
+        present, tokeniser will try harder to get some analyses for each
+        token using hard-coded list of extra splits.
         """
         tokens = None
         if 'omorfi' in this.tokenisers:
             tokens = this._tokenise(line, 'omorfi')
         if not tokens:
-            tokens = line.replace('.', ' .').split()
+            tokens = this._retokenise(line.split())
         return tokens
 
     def _analyse(this, token, automaton):
         res = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token))
-        if len(token) > 2 and token[0].islower() and not token[1:].islower() and this.can_titlecase:
-            tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token[0].lower() + token[1:].lower()))
-            for r in tcres:
-                r.output = r.output + '[CASECHANGE=TITLECASED]'
-            res = res + tcres
+        if len(token) > 2 and token[0].islower() and this.can_titlecase:
+            tctoken = token[0].upper() + token[1:]
+            if tctoken != token:
+                tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(tctoken))
+                for r in tcres:
+                    r.output = r.output + '[CASECHANGE=TITLECASED]'
+                res = res + tcres
+        if len(token) > 2 and token[0].isupper() and this.can_detitlecase:
+            dttoken = token[0].lower() + token[1:]
+            if dttoken != token:
+                dtres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(dttoken))
+                for r in dtres:
+                    r.output = r.output + '[CASECHANGE=DETITLECASED]'
+                res = res + dtres
         if not token.isupper() and this.can_uppercase:
-            upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.upper()))
-            for r in upres:
-                r.output = r.output + '[CASECHANGE=UPPERCASED]'
-            res = res + upres
+            uptoken = token.upper()
+            if token != uptoken:
+                upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(uptoken))
+                for r in upres:
+                    r.output = r.output + '[CASECHANGE=UPPERCASED]'
+                res = res + upres
         if not token.islower() and this.can_lowercase:
-            lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
-            for r in lowres:
-                r.output = r.output + '[CASECHANGE=LOWERCASED]'
-            res += lowres
+            lowtoken = token.lower()
+            if token !=  lowtoken:
+                lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
+                for r in lowres:
+                    r.output = r.output + '[CASECHANGE=LOWERCASED]'
+                res += lowres
         for r in res:
             r.output = r.output + '[WEIGHT=%f]' %(r.weight)
         return res
@@ -222,7 +291,7 @@ class Omorfi:
                 class FakeAnal():
                     pass
                 anal = FakeAnal()
-                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN]' % (token)
+                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token)
                 anal.weight = float('inf')
                 anals = [anal]
         if not anals and len(this.analysers):
@@ -231,7 +300,7 @@ class Omorfi:
                 class FakeAnal():
                     pass
                 anal = FakeAnal()
-                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN]'
+                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]'
                 anal.weight = float('inf')
                 anals = [anal]
         return anals
@@ -273,6 +342,21 @@ class Omorfi:
                 segment.weight = float('inf')
                 segments = [segment]
         return segments
+
+    def _accept(this, token, automaton):
+        res = libhfst.detokenize_paths(this.acceptors[automaton].lookup_fd(token))
+        return res
+
+    def accept(this, token):
+        accept = False
+        accepts = None
+        if 'default' in this.acceptors:
+            accepts = this._accept(token, 'default')
+        if not accepts and 'omorfi' in this.acceptors:
+            accepts = this._accept(token, 'omorfi')
+        if accepts:
+            accept = True
+        return accept
 
 def main():
     """Invoke a simple CLI analyser."""

@@ -1,6 +1,8 @@
 #!/bin/bash
 
+toplist=top-100-log
 echo "## $(date --iso) coverages"
+echo "## $(date --iso) " >> ${toplist}
 echo
 for f in *.coveragelog; do
     corpus=${f%.coveragelog}
@@ -19,10 +21,11 @@ for f in *.coveragelog; do
         $(echo "scale=4; (1 - $typemisses / $types) * 100" | bc ) \
         "% | $types |"
     echo
-    echo "#### 100 most common missing word-forms "
-    echo
-    echo "| Frequency | Word-form |"
+    echo "### ${corpus}" >> ${toplist}
+    echo "#### 100 most common missing word-forms " >> ${toplist}
+    echo >> ${toplist}
+    echo "| Frequency | Word-form |" >> ${toplist}
     head -n 100 $f |\
-        awk '{printf("| %s | %s |\n", $1, $2);}'
-    echo
+        awk '{printf("| %s | %s |\n", $1, $2);}' >> ${toplist}
+    echo >> ${toplist}
 done

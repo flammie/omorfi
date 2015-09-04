@@ -1,5 +1,5 @@
 #!/bin/bash
-omorfidir="@prefix@/share/hfst/fi/"
+omorfidir="@prefix@/share/omorfi/"
 omorfifile="$omorfidir/omorfi-ftb3.analyse.hfst"
 args=$@
 
@@ -42,7 +42,7 @@ function check_omorfi() {
 }
 
 function analyse() {
-    cat $@ | hfst-lookup -x "$omorfifile"
+    cat $@ | @HLOOKUP@ -x "$omorfifile"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then

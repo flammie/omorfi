@@ -33,9 +33,9 @@ from time import strftime
 import argparse
 import csv
 
-from omorfi.lexc_formatter import format_wordmap_lexc, format_multichars_lexc, \
-        format_root_lexicon_lexc, format_continuation_lexc, \
-        format_copyright_lexc
+from omorfi.formatters import format_wordmap_lexc, format_multichars_lexc, \
+        format_root_lexicon_lexc, format_continuation_lexc
+from omorfi.lexc_formatter import format_copyright_lexc
 from omorfi.parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
@@ -83,7 +83,7 @@ def main():
 
     def FormatArgType(v):
         baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "generic", "google"]
+                "giella", "ftb3", "generic", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:

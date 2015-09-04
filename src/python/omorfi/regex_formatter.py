@@ -23,7 +23,7 @@ from .settings import fin_orth_pairs, fin_lowercase, fin_uppercase, \
         word_boundary, deriv_boundary, morph_boundary, newword_boundary, \
         deriv_boundary, stub_boundary, weak_boundary, optional_hyphen
 from .twolc_formatter import twolc_escape
-from .lexc_formatter import format_stuff
+from .formatters import format_stuff
 
 def format_rules_regex(format, ruleset):
     regexstring = ''
@@ -48,7 +48,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '# Remove V before Prc\n'
             regexstring += '[ ' + format_stuff('VERB', format) + ' -> 0 || _  [ '
             regexstring += ' | '.join([format_stuff(tag, format) for tag in \
-                    ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma','Dnut', 'Dtu', 'Dtava']])
+                    ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma','Dnut', 'Dtu', 'Dva', 'Dtava']])
             regexstring += '] ]\n'
             regexstring += '.o.\n'
             regexstring += '# ftb3.1 all pr are optional po\n'
@@ -98,7 +98,9 @@ def format_rules_regex(format, ruleset):
             regexstring += '[ '
             regexstring += ' -> 0,\n'.join([format_stuff(tag, format) for tag in \
                     ['ADJECTIVE', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUMERAL', 'PROPER', 'DIGIT', 'COORDINATING', 'ADVERBIAL', 'ORDINAL', 'DEMONSTRATIVE', 'PERSONAL', 'INDEFINITE', 'QUANTOR', 'INTERROGATIVE', 'REFLEXIVE', 'RELATIVE', 'PUNCTUATION', 'DASH', 'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1', 'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL', 'UNSPECIFIED', 'PRONOUN', 'INTERJECTION',
-                        'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl',
+                        'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill',
+                        'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe',
+                        'Xtra', 'Xcom', 'Nsg', 'Npl',
                         'Osg1', 'Osg2', 'O3', 'Opl1', 'Opl2',
                         'Qka', 'Qs', 'Qpa', 'Qko', 'Qkin', 'Qkaan', 'Qhan',
                         'Vact', 'Vpss',
@@ -117,6 +119,8 @@ def format_rules_regex(format, ruleset):
                 ' | ? ] ;'
     elif ruleset == 'between-tokens':
         regexstring += '[ %. | %, | %: | %; | %? | %! | %- | %  ] ;'
+    elif ruleset == 'token-separator':
+        regexstring += '0:"\\n" ;'
     else:
         print("Unknown ruleset", ruleset)
         return None

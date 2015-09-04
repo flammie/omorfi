@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20150326], [https://code.google.com/p/omorfi/issues/list], [http://code.google.com/p/omorfi/])
+AC_INIT([omorfi], [20150904], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20150326
+VERSION=20150904
 
 # Options
 AC_ARG_WITH([hfst],
@@ -24,6 +24,12 @@ AC_ARG_ENABLE([voikko],
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
 # generic tagset switch to override (for lexc serialisation)
+AC_ARG_ENABLE([ftb1],
+              [AS_HELP_STRING([--enable-ftb1],
+                              [generate ftb1 automata @<:@default=disable@:>@])],
+                             [enable_ftb1=$enableval],
+                             [enable_ftb1=no])
+AM_CONDITIONAL([WANT_FTB1], [test "x$enable_ftb1" = xyes])
 AC_ARG_ENABLE([ftb3],
               [AS_HELP_STRING([--enable-ftb3],
                               [generate ftb3 automata @<:@default=enable@:>@])],
@@ -42,6 +48,12 @@ AC_ARG_ENABLE([apertium],
                              [enable_apertium=$enableval],
                              [enable_apertium=yes])
 AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" = xyes])
+AC_ARG_ENABLE([giella],
+              [AS_HELP_STRING([--enable-giella],
+                              [generate giella automata @<:@default=enable@:>@])],
+                             [enable_giella=$enableval],
+                             [enable_giella=yes])
+AM_CONDITIONAL([WANT_GIELLA], [test "x$enable_giella" = xyes])
 
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
@@ -131,6 +143,12 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HREW], [hfst-reweight], [no])
        AS_IF([test "x$HREW" = xno],
              [AC_MSG_ERROR([hfst-reweight is needed for weights])])
+       AC_PATH_PROG([HOSPELL], [hfst-ospell], [no])
+       AS_IF([test "x$HOSPELL" = "xno"],
+             [AC_MSG_WARN([hfst-ospell is needed for spell-checking])])
+       AC_PATH_PROG([HLOOKUP], [hfst-lookup], [no])
+       AS_IF([test "x$HLOOKUP" = "xno"],
+             [AC_MSG_WARN([hfst-lookup is needed for bash scripts])])
        AC_PATH_PROG([ADT], [apertium-destxt], [cat])
        AS_IF([test x$ADT = xcat],
           [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
@@ -157,8 +175,13 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HUN], $with_hfst/hfst-disjunct)
     AC_SUBST([HS2F], $with_hfst/hfst-strings2fst)
     AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
+    AC_SUBST([HOSPELL], $with_hfst/hfst-ospell)
+    AC_SUBST([HLOOKUP], $with_hfst/hfst-lookup)
     AC_SUBST([HREW], $with_hfst/hfst-reweight)])
 ])
+AC_PATH_PROG([CGCOMP], [cg-comp], [false])
+AC_PATH_PROG([CGPROC], [cg-proc], [false])
+AM_CONDITIONAL([CAN_VISLCG3], [test x$CGCOMP != xfalse])
 
 AS_IF([test "x$enable_voikko" = "xyes"], 
       [AC_PATH_PROG([ZIP], [zip], [false])
@@ -201,6 +224,8 @@ AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi-analyse-text.sh],
                 [chmod +x src/bash/omorfi-analyse-text.sh])
+AC_CONFIG_FILES([src/bash/omorfi-disambiguate-text.sh],
+                [chmod +x src/bash/omorfi-disambiguate-text.sh])
 AC_CONFIG_FILES([src/bash/omorfi-segment.sh],
                 [chmod +x src/bash/omorfi-segment.sh])
 AC_CONFIG_FILES([src/bash/omorfi-generate.sh],
@@ -243,6 +268,7 @@ Configured $PACKAGE_STRING:
     * OMOR $enable_omor
     * FTB3.1 $enable_ftb3
     * apertium $enable_apertium
+    * giella: $enable_giella
 * Voikko speller: $enable_voikko
 * 
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail

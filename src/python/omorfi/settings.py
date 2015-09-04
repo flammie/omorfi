@@ -62,16 +62,25 @@ fin_upper_consonants = "BCDFGHJKLMNPQRSŠTVWXZŽ" \
 fin_consonants = fin_lower_consonants + fin_upper_consonants
 # the words containing symbols are likely weird / props etc.
 fin_symbols = "1234567890§!\"#¤%&/()=?½@£$‚{[]}<>*"
+# punctuation characters one may optionally split without space after the word
+fin_punct_trailing = "\"'.,?!)]}’”–:;"
+# punctuations chopped of at the beginning of the word
+fin_punct_leading = "\"'([{’”-–"
 # known variants and old orthographies 1:1
 # (a conservative listing for sure)
 fin_orth_pairs = [("’", "'"), ("’", "´"), ("’", "′"), ("-", "‐"),
         ("-", "‑"), ("-", "‑")]
 # weights by rules
-stuff_weights = {'Bc': '+1.0', 'Duus': '+16.0', 'Dttaa': '+16.0',
+stuff_weights = {'Bc': '+1.0', 
+            'Duus': '+16.0', 'Dttaa': '+16.0',
             'Dtattaa': '+16.0', 'Dtatuttaa': '+32.0', 'Dinen': '+1.0',
-            'Dja': '+2.0', 'Du': '+16.0', 'Uarch': '+16.0',
+            'Dja': '+2.0', 'Du': '+16.0',
+            'Uarch': '+16.0',
             'Udial': '+2.0', 'Urare': '+4.0', 'Unonstd': '+4.0',
-            'Xabe': '+0.1', 'Xcom': '+1.0', 'Xins': '+2.0'}
+            'Xabe': '+0.1', 'Xcom': '+1.0', 'Xins': '+2.0',
+            'Qhan': '+1.0', 'Qpa': '+1.0', 'Qkin': '+1.0',
+            'Qkaan': '+1.0'
+            }
 boundary_weights = {word_boundary: '+0.1', morph_boundary: '+0.1', 
             newword_boundary: '+1.0', deriv_boundary: '+2.0',
             weak_boundary: '+0.1', stub_boundary: '+0.1'}

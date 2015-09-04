@@ -585,7 +585,6 @@ N_KENTÄT
 N_ROMPAAT	
 N_LANNET	
 N_LIPOTTARET	
-None	
 N_LOUET	
 N_LUODES	
 N_LÄHDES	
@@ -633,7 +632,6 @@ N_TÖLPÄT
 N_LAHDET	
 N_SYLI	
 N_RÄMEET	
-N_AINOA	
 N_ONNET	
 N_KALATOIN	
 N_HÄNNÄT	
@@ -650,7 +648,6 @@ N_TEHTAAT
 N_EUGENE	
 N_SELJÄT	
 N_AHDET	
-N_HALPA	
 N_JÄRJESTÖT	
 N_JÄRVITAHDON	
 N_KANAALI	
@@ -948,114 +945,115 @@ ACRO_YY	Acronym that ends in 'y' pronounced as letter
 ACRO_ZET	Acronyms that end in 'z' pronounced as letter
 ACRO_ÄÄ	Acronyms that end in 'ä' pronounced as letter
 ACRO_ÖÖ	Acronyms that end in 'ö' pronounced as letter
-ACRO_FRONT_POSS	
-ACRO_BACK_POSS	
-ACRO_BACK_POSS_AN	
-ACRO_BACK_POSS_EN	
-ACRO_FRONT_POSS_EN	
-ACRO_FRONT_POSS_ÄN	
-ACRO_BACK_CLIT	
-ACRO_FRONT_CLIT	
-ACRO_BACK_CLIT_OPT	
-ACRO_FRONT_CLIT_OPT	
-ACRO_BACK_POSS_AN_OPT	
-ACRO_FRONT_POSS_ÄN_OPT	
-ACRO_BACK_POSS_EN_OPT	
-ACRO_FRONT_POSS_EN_OPT	
-ACRO_BACK_POSS_CLIT_OPT	
-ACRO_FRONT_POSS_CLIT_OPT	
-ACRO_BACK_POSS_EN_OBL	
-ACRO_FRONT_POSS_EN_OBL	
-ACRO_COMPOUND	
+ACRO_FRONT_POSS	acronym's possessives, e.g. ':ni', to optional front clitics
+ACRO_BACK_POSS	acronym's possessives, e.g. ':ni', to optional back clitics
+ACRO_BACK_POSS_AN	acronym's possessives including ':an'
+ACRO_BACK_POSS_EN	acronym's possessives including ':en', to back clitics
+ACRO_FRONT_POSS_EN	acronym's possessives including ':en', to front clitics
+ACRO_FRONT_POSS_ÄN	acronym's possessives including ':än'
+ACRO_BACK_CLIT	acronym's back clitics, e.g. ':ko'
+ACRO_FRONT_CLIT	acronym's back clitics, e.g. ':kö'
+ACRO_BACK_CLIT_OPT	acronym's back clitics optionally
+ACRO_FRONT_CLIT_OPT	acronym's front clitics optionall
+ACRO_BACK_POSS_AN_OPT	acronym's back possessive incl. ':an' optionally
+ACRO_FRONT_POSS_ÄN_OPT	acronym's front possessive incl. 'än' optionally
+ACRO_BACK_POSS_EN_OPT	acronym's back possessive incl. 'en' optionally
+ACRO_FRONT_POSS_EN_OPT	acronym's front possessive incl. 'en' optionally
+ACRO_BACK_POSS_CLIT_OPT	acronym's back possessive or clitic optionally
+ACRO_FRONT_POSS_CLIT_OPT	acronym's front possessive or clitic optionally
+ACRO_BACK_POSS_EN_OBL	acronym's back possessive incl. 'en' obligatorily
+ACRO_FRONT_POSS_EN_OBL	acronym's front possessive incl. 'en' obligatorily
+ACRO_COMPOUND	acronym compounding with hyphen
 A_BACK_SUPERLATIVE	The superlative derivation is formed by in suffix, which creates a new adjective baseform. This baseform is handled separately to avoid double superlatives.
-A_FRONT_SUPERLATIVE	
+A_FRONT_SUPERLATIVE	The superlative derivation is formed by in suffix, which creates a new adjective baseform. This baseform is handled separately to avoid double superlatives.
 A_BACK_COMPARATIVE	The comparative derivation is formed by mpi suffix, which creates a new adjective baseform. This adjective is handled separately to avoid double comparative forms.
-A_FRONT_COMPARATIVE	
+A_FRONT_COMPARATIVE	The comparative derivation is formed by mpi suffix, which creates a new adjective baseform. This adjective is handled separately to avoid double comparative forms.
 A_BACK_COMPARATIVE_STEMS	This inflectional part attached to adjective comparative stems to avoid circularity in comparative derivations
-A_FRONT_COMPARATIVE_STEMS	
+A_FRONT_COMPARATIVE_STEMS	This inflectional part attached to adjective comparative stems to avoid circularity in comparative derivations
 A_BACK_SUPERLATIVE_STEMS	This inflectional part is attached to adjective superlative stems to avoid circularity in superlative derivations
-A_FRONT_SUPERLATIVE_STEMS	
-A_BACK_NOMINATIVE	
-A_FRONT_NOMINATIVE	
-A_BACK_PLNOM_CLIT	
-A_FRONT_PLNOM_CLIT	
-A_BACK_WEAK_SINGULARS	
-A_FRONT_WEAK_SINGULARS	
-A_BACK_STRONG_SINGULARS	
-A_FRONT_STRONG_SINGULARS	
-A_BACK_WEAK_PLURALS	
-A_FRONT_WEAK_PLURALS	
-A_FRONT_STRONG_PLURALS	
-A_BACK_STRONG_PLURALS	
-A_BACK_PARTITIVE_A	
-A_FRONT_PARTITIVE_Ä	
-A_BACK_PARTITIVE_A_AN	
-A_FRONT_PARTITIVE_Ä_ÄN	
-A_BACK_PARTITIVE_TA	
-A_FRONT_PARTITIVE_TÄ	
-A_BACK_ILLATIVE_HAN	
-A_FRONT_ILLATIVE_HIN	
-A_BACK_ILLATIVE_HUN	
-A_FRONT_ILLATIVE_HYN	
-A_FRONT_ILLATIVE_HÄN	
-A_BACK_ILLATIVE_SEEN	
-A_FRONT_ILLATIVE_SEEN	
-A_BACK_ILLATIVE_AN	
-A_BACK_ILLATIVE_EN	
-A_FRONT_ILLATIVE_EN	
-A_BACK_ILLATIVE_IN	
-A_FRONT_ILLATIVE_IN	
-A_BACK_ILLATIVE_ON	
-A_BACK_ILLATIVE_UN	
-A_FRONT_ILLATIVE_YN	
-A_FRONT_ILLATIVE_ÄN	
-A_FRONT_ILLATIVE_ÖN	
-A_BACK_PARTITIVE_IA	
-A_FRONT_PARTITIVE_IÄ	
-A_BACK_PARTITIVE_ITA	
-A_FRONT_PARTITIVE_ITÄ	
-A_BACK_PARTITIVE_JA	
-A_FRONT_PARTITIVE_JÄ	
-A_BACK_GENITIVE_IDEN	
-A_FRONT_GENITIVE_IDEN	
-A_BACK_GENITIVE_IEN	
-A_FRONT_GENITIVE_IEN	
-A_BACK_GENITIVE_ITTEN	
-A_FRONT_GENITIVE_ITTEN	
-A_BACK_GENITIVE_JEN	
-A_FRONT_GENITIVE_JEN	
-A_BACK_GENITIVE_TEN	
-A_FRONT_GENITIVE_TEN	
-A_BACK_GENITIVE_IN	
-A_FRONT_GENITIVE_IN	
-A_BACK_ILLATIVE_IHIN	
-A_FRONT_ILLATIVE_IHIN	
-A_BACK_ILLATIVE_IIN	
-A_FRONT_ILLATIVE_IIN	
-A_BACK_ILLATIVE_ISIIN	
-A_FRONT_ILLATIVE_ISIIN	
-A_FRONT_POSS	
-A_BACK_POSS	
-A_BACK_POSS_AN	
-A_BACK_POSS_EN	
-A_FRONT_POSS_EN	
-A_FRONT_POSS_ÄN	
-A_BACK_CLIT	
-A_FRONT_CLIT	
-A_BACK_CLIT_OPT	
-A_FRONT_CLIT_OPT	
-A_BACK_SINGULARS	
-A_FRONT_SINGULARS	
-A_BACK_PLURALS	
-A_FRONT_PLURALS	
-A_BACK_POSS_AN_CLIT_OPT	
-A_FRONT_POSS_ÄN_CLIT_OPT	
-A_BACK_POSS_EN_CLIT_OPT	
-A_FRONT_POSS_EN_CLIT_OPT	
-A_BACK_POSS_CLIT_OPT	
-A_FRONT_POSS_CLIT_OPT	
-A_BACK_POSS_EN_OBL	
-A_FRONT_POSS_EN_OBL	
+A_FRONT_SUPERLATIVE_STEMS	This inflectional part is attached to adjective superlative stems to avoid circularity in superlative derivations
+
+A_BACK_NOMINATIVE	Adjective back nominative
+A_FRONT_NOMINATIVE	Adjective front nominative
+A_BACK_PLNOM_CLIT	Adjective back plural nominative
+A_FRONT_PLNOM_CLIT	Adjective front plural nominative
+A_BACK_WEAK_SINGULARS	Adjective back weak singular suffixes
+A_FRONT_WEAK_SINGULARS	Adjective front weak singular suffixes
+A_BACK_STRONG_SINGULARS	Adjective back strong singular suffixes
+A_FRONT_STRONG_SINGULARS	Adjective front strong singular suffixes
+A_BACK_WEAK_PLURALS	Adjective back weak plural suffixes
+A_FRONT_WEAK_PLURALS	Adjective front weak plural suffixes
+A_FRONT_STRONG_PLURALS	Adjective front strong plural suffixes
+A_BACK_STRONG_PLURALS	Adjective back strong plural suffixes
+A_BACK_PARTITIVE_A	Adjective partitive suffix a
+A_FRONT_PARTITIVE_Ä	Adjective partitive suffix ä
+A_BACK_PARTITIVE_A_AN	Adjective partitive suffix a w/ possessive aan
+A_FRONT_PARTITIVE_Ä_ÄN	Adjective partitive suffix ä w/ possessive ään
+A_BACK_PARTITIVE_TA	Adjective partitive suffix ta
+A_FRONT_PARTITIVE_TÄ	Adjective partitive suffix tä
+A_BACK_ILLATIVE_HAN	Adjective illative suffix han
+A_FRONT_ILLATIVE_HIN	Adjective illative suffix hin
+A_BACK_ILLATIVE_HUN	Adjective illative suffix hun
+A_FRONT_ILLATIVE_HYN	Adjective illative suffix hyn
+A_FRONT_ILLATIVE_HÄN	Adjective illative suffix hän
+A_BACK_ILLATIVE_SEEN	Adjective illative suffix seen to back clitics
+A_FRONT_ILLATIVE_SEEN	Adjective illative suffix seen to front clitics
+A_BACK_ILLATIVE_AN	Adjective illative suffix an
+A_BACK_ILLATIVE_EN	Adjective illative suffix en to back clitics
+A_FRONT_ILLATIVE_EN	Adjective illative suffix en to front clitics
+A_BACK_ILLATIVE_IN	Adjective illative suffix in to back clitics
+A_FRONT_ILLATIVE_IN	Adjective illative suffix in to front clitics
+A_BACK_ILLATIVE_ON	Adjective illative suffix on
+A_BACK_ILLATIVE_UN	Adjective illative suffix un
+A_FRONT_ILLATIVE_YN	Adjective illative suffix yn
+A_FRONT_ILLATIVE_ÄN	Adjective illative suffix än
+A_FRONT_ILLATIVE_ÖN	Adjective illative suffix ön
+A_BACK_PARTITIVE_IA	Adjective partitive suffix ia
+A_FRONT_PARTITIVE_IÄ	Adjective partitive suffix iä
+A_BACK_PARTITIVE_ITA	Adjective partitive suffix ita
+A_FRONT_PARTITIVE_ITÄ	Adjective partitive suffix itä
+A_BACK_PARTITIVE_JA	Adjective partitive suffix 
+A_FRONT_PARTITIVE_JÄ	Adjective partitive suffix 
+A_BACK_GENITIVE_IDEN	Adjective genitive suffix 
+A_FRONT_GENITIVE_IDEN	Adjective genitive suffix 
+A_BACK_GENITIVE_IEN	Adjective genitive suffix 
+A_FRONT_GENITIVE_IEN	Adjective genitive suffix 
+A_BACK_GENITIVE_ITTEN	Adjective genitive suffix 
+A_FRONT_GENITIVE_ITTEN	Adjective genitive suffix 
+A_BACK_GENITIVE_JEN	Adjective genitive suffix 
+A_FRONT_GENITIVE_JEN	Adjective genitive suffix 
+A_BACK_GENITIVE_TEN	Adjective genitive suffix 
+A_FRONT_GENITIVE_TEN	Adjective genitive suffix 
+A_BACK_GENITIVE_IN	Adjective genitive suffix 
+A_FRONT_GENITIVE_IN	Adjective genitive suffix 
+A_BACK_ILLATIVE_IHIN	Adjective genitive suffix 
+A_FRONT_ILLATIVE_IHIN	Adjective genitive suffix 
+A_BACK_ILLATIVE_IIN	Adjective genitive suffix 
+A_FRONT_ILLATIVE_IIN	Adjective genitive suffix 
+A_BACK_ILLATIVE_ISIIN	Adjective genitive suffix 
+A_FRONT_ILLATIVE_ISIIN	Adjective genitive suffix 
+A_FRONT_POSS	Adjective possessive suffixes 
+A_BACK_POSS	Adjective possessive suffixes 
+A_BACK_POSS_AN	Adjective possessive suffixes 
+A_BACK_POSS_EN	Adjective possessive suffixes 
+A_FRONT_POSS_EN	Adjective possessive suffixes 
+A_FRONT_POSS_ÄN	Adjective possessive suffixes 
+A_BACK_CLIT	Adjective possessive clitics 
+A_FRONT_CLIT	Adjective possessive clitics 
+A_BACK_CLIT_OPT	Adjective possessive clitics optionally 
+A_FRONT_CLIT_OPT	Adjective possessive clitics optionally 
+A_BACK_SINGULARS	Adjective back singulars
+A_FRONT_SINGULARS	Adjective front singulars
+A_BACK_PLURALS	Adjective back plurals
+A_FRONT_PLURALS	Adjective front plurals
+A_BACK_POSS_AN_CLIT_OPT	Adjective possessives with an suffix and clitics optionally
+A_FRONT_POSS_ÄN_CLIT_OPT	Adjective possessives with än suffix and clitics optionally
+A_BACK_POSS_EN_CLIT_OPT	Adjective possessives with en suffix and back clitics optionally
+A_FRONT_POSS_EN_CLIT_OPT	Adjective possessives with en suffix and front clitics optionally
+A_BACK_POSS_CLIT_OPT	Adjective back possessives and clitics optionally
+A_FRONT_POSS_CLIT_OPT	Adjective front possessives and clitics optionally
+A_BACK_POSS_EN_OBL	Adjective possessives with en and back clitics optionally
+A_FRONT_POSS_EN_OBL	Adjective possessives with en and front clitics optionally
 DIGITS	Digit strings inflect with colons, lot like abbreviations.
 DIGITS_YKSI	The digit strings ending in digit 1 pronounced as number
 DIGITS_KAKSI	The digit strings ending in digit 2 pronounced as number
@@ -1078,274 +1076,274 @@ DIGITS_KOLMAS	The digit string ending in 3, 6, 8, 00 or 2 pronounced as ordinal
 DIGITS_NELJÄS	The digit string ending in 4, 5, 7, 9, 0, or 1. pronounced as ordinal
 DIGITS_ROMANS_TOINEN	The roman digit string ending in II, III, VI, VIII, C, L or M
 DIGITS_ROMANS_ENSIMMÄINEN	The roman digit string ending in I, IV, V, VII, IX, X or 
-DIGITS_FRONT_POSS	
-DIGITS_BACK_POSS	
-DIGITS_BACK_POSS_AN	
-DIGITS_BACK_POSS_EN	
-DIGITS_FRONT_POSS_EN	
-DIGITS_FRONT_POSS_ÄN	
-DIGITS_BACK_CLIT	
-DIGITS_FRONT_CLIT	
-DIGITS_BACK_CLIT_OPT	
-DIGITS_FRONT_CLIT_OPT	
-DIGITS_BACK_POSS_AN_OPT	
-DIGITS_FRONT_POSS_ÄN_OPT	
-DIGITS_BACK_POSS_EN_OPT	
-DIGITS_FRONT_POSS_EN_OPT	
-DIGITS_BACK_POSS_OPT	
-DIGITS_FRONT_POSS_OPT	
-DIGITS_BACK_POSS_AN_OBL	
-DIGITS_BACK_POSS_EN_OBL	
-DIGITS_FRONT_POSS_EN_OBL	
-DIGITS_FRONT_POSS_ÄN_OBL	
-DIGITS_COMPOUND	
-N_BACK_NOMINATIVE	
-N_FRONT_NOMINATIVE	
+DIGITS_FRONT_POSS	Digits possessives after :
+DIGITS_BACK_POSS	Digits possessives after :
+DIGITS_BACK_POSS_AN	Digits possessives after : with an
+DIGITS_BACK_POSS_EN	Digits possessives after : with en to back clitics
+DIGITS_FRONT_POSS_EN	Digits possessives after : with en to front clitics
+DIGITS_FRONT_POSS_ÄN	Digits possessives after : with än
+DIGITS_BACK_CLIT	Digits clitics after : or possessive
+DIGITS_FRONT_CLIT	Digits clitics after : or possessive
+DIGITS_BACK_CLIT_OPT	Digits clitics after : or possessive optionally
+DIGITS_FRONT_CLIT_OPT	Digits clitics after : or possessive optionally
+DIGITS_BACK_POSS_AN_OPT	Digits possessives after : optionally
+DIGITS_FRONT_POSS_ÄN_OPT	Digits possessives after : optionally
+DIGITS_BACK_POSS_EN_OPT	Digits possessives after : optionally
+DIGITS_FRONT_POSS_EN_OPT	Digits possessives after : optionally
+DIGITS_BACK_POSS_OPT	Digits possessives after : optionally
+DIGITS_FRONT_POSS_OPT	Digits possessives after : optionally
+DIGITS_BACK_POSS_AN_OBL	Digits possessives after : obligatorily
+DIGITS_BACK_POSS_EN_OBL	Digits possessives after : obligatorily
+DIGITS_FRONT_POSS_EN_OBL	Digits possessives after : obligatorily
+DIGITS_FRONT_POSS_ÄN_OBL	Digits possessives after : obligatorily
+DIGITS_COMPOUND	Digits compounding with hyphen
+N_BACK_NOMINATIVE	Noun singular nominative to back possessives and clitics
+N_FRONT_NOMINATIVE	Noun singular nominative to front possessives and clitis
 N_BACK_PLNOM_CLIT	The plural nominative attaches to singular stem. For plural words it is also the form that is used for dictionary lookups
-N_FRONT_PLNOM_CLIT	
-N_BACK_WEAK_SINGULARS	
-N_FRONT_WEAK_SINGULARS	
-N_BACK_STRONG_SINGULARS	
-N_FRONT_STRONG_SINGULARS	
-N_BACK_WEAK_PLURALS	
-N_FRONT_WEAK_PLURALS	
-N_BACK_STRONG_PLURALS	
-N_FRONT_STRONG_PLURALS	
-N_BACK_PARTITIVE_A	
-N_FRONT_PARTITIVE_Ä	
-N_BACK_PARTITIVE_A_AN	
-N_FRONT_PARTITIVE_Ä_ÄN	
-N_BACK_PARTITIVE_TA	
-N_FRONT_PARTITIVE_TÄ	
-N_BACK_ILLATIVE_HAN	
-N_BACK_ILLATIVE_HEN	
-N_FRONT_ILLATIVE_HEN	
-N_BACK_ILLATIVE_HIN	
-N_FRONT_ILLATIVE_HIN	
-N_BACK_ILLATIVE_HON	
-N_BACK_ILLATIVE_HUN	
-N_FRONT_ILLATIVE_HYN	
-N_FRONT_ILLATIVE_HÄN	
-N_FRONT_ILLATIVE_HÖN	
-N_BACK_ILLATIVE_AN	
-N_BACK_ILLATIVE_EN	
-N_FRONT_ILLATIVE_EN	
-N_BACK_ILLATIVE_IN	
-N_FRONT_ILLATIVE_IN	
-N_BACK_ILLATIVE_ON	
-N_BACK_ILLATIVE_UN	
-N_FRONT_ILLATIVE_YN	
-N_FRONT_ILLATIVE_ÄN	
-N_FRONT_ILLATIVE_ÖN	
-N_BACK_ILLATIVE_SEEN	
-N_FRONT_ILLATIVE_SEEN	
-N_BACK_GENITIVE_IDEN	
-N_FRONT_GENITIVE_IDEN	
-N_BACK_GENITIVE_ITTEN	
-N_FRONT_GENITIVE_ITTEN	
-N_BACK_GENITIVE_IEN	
-N_FRONT_GENITIVE_IEN	
-N_BACK_GENITIVE_JEN	
-N_FRONT_GENITIVE_JEN	
-N_BACK_GENITIVE_TEN	
-N_FRONT_GENITIVE_TEN	
-N_BACK_GENITIVE_IN	
-N_FRONT_GENITIVE_IN	
-N_BACK_PARTITIVE_IA	
-N_FRONT_PARTITIVE_IÄ	
-N_BACK_PARTITIVE_ITA	
-N_FRONT_PARTITIVE_ITÄ	
-N_BACK_PARTITIVE_JA	
-N_FRONT_PARTITIVE_JÄ	
-N_BACK_ILLATIVE_IHIN	
-N_FRONT_ILLATIVE_IHIN	
-N_BACK_ILLATIVE_IIN	
-N_FRONT_ILLATIVE_IIN	
-N_BACK_ILLATIVE_ISIIN	
-N_FRONT_ILLATIVE_ISIIN	
-N_BACK_POSS	
-N_FRONT_POSS	
-N_BACK_POSS_AN	
-N_BACK_POSS_EN	
-N_FRONT_POSS_EN	
-N_FRONT_POSS_ÄN	
-N_BACK_CLIT	
-N_FRONT_CLIT	
-N_BACK_CLIT_OPT	
-N_FRONT_CLIT_OPT	
-N_BACK_SINGULARS	
-N_FRONT_SINGULARS	
-N_FRONT_PLURALS	
-N_BACK_PLURALS	
-N_BACK_POSS_AN_OPT	
-N_FRONT_POSS_ÄN_OPT	
-N_BACK_POSS_EN_OPT	
-N_FRONT_POSS_EN_OPT	
-N_BACK_POSS_OPT	
-N_FRONT_POSS_OPT	
-N_BACK_POSS_EN_OBL	
-N_FRONT_POSS_EN_OBL	
-N_COMPOUND_0	
-N_COMPOUND_N	
-N_COMPOUND_IEN	
-N_COMPOUND_IDEN	
-N_COMPOUND_IN	
-N_COMPOUND_ITTEN	
-N_COMPOUND_JEN	
-N_COMPOUND_TEN	
-N_COMPOUND_S	
-N_COMPOUND	
-NUM_BACK_NOMINATIVE	
-NUM_FRONT_NOMINATIVE	
-NUM_BACK_PLNOM_CLIT	
-NUM_FRONT_PLNOM_CLIT	
-NUM_BACK_WEAK_SINGULARS	
-NUM_FRONT_WEAK_SINGULARS	
-NUM_BACK_STRONG_SINGULARS	
-NUM_FRONT_STRONG_SINGULARS	
-NUM_BACK_WEAK_PLURALS	
-NUM_FRONT_WEAK_PLURALS	
-NUM_FRONT_STRONG_PLURALS	
-NUM_BACK_STRONG_PLURALS	
-NUM_BACK_PARTITIVE_A	
-NUM_FRONT_PARTITIVE_Ä	
-NUM_BACK_PARTITIVE_A_AN	
-NUM_BACK_PARTITIVE_TA	
-NUM_FRONT_PARTITIVE_TÄ	
-NUM_BACK_ILLATIVE_AN	
-NUM_BACK_ILLATIVE_EN	
-NUM_FRONT_ILLATIVE_EN	
-NUM_BACK_ILLATIVE_IN	
-NUM_FRONT_ILLATIVE_ÄN	
-NUM_BACK_PARTITIVE_IA	
-NUM_FRONT_PARTITIVE_IÄ	
-NUM_BACK_PARTITIVE_JA	
-NUM_BACK_GENITIVE_IEN	
-NUM_FRONT_GENITIVE_IEN	
-NUM_BACK_GENITIVE_JEN	
-NUM_BACK_GENITIVE_TEN	
-NUM_FRONT_GENITIVE_TEN	
-NUM_BACK_GENITIVE_IN	
-NUM_FRONT_GENITIVE_IN	
-NUM_BACK_ILLATIVE_IHIN	
-NUM_BACK_ILLATIVE_IIN	
-NUM_FRONT_ILLATIVE_IIN	
-NUM_BACK_POSS	
-NUM_FRONT_POSS	
-NUM_BACK_POSS_AN	
-NUM_BACK_POSS_EN	
-NUM_FRONT_POSS_EN	
-NUM_FRONT_POSS_ÄN	
-NUM_BACK_CLIT	
-NUM_FRONT_CLIT	
-NUM_BACK_CLIT_OPT	
-NUM_FRONT_CLIT_OPT	
-NUM_BACK_SINGULARS	
-NUM_FRONT_SINGULARS	
-NUM_FRONT_PLURALS	
-NUM_BACK_PLURALS	
-NUM_BACK_POSS_AN_OPT	
-NUM_FRONT_POSS_ÄN_OPT	
-NUM_BACK_POSS_EN_OPT	
-NUM_FRONT_POSS_EN_OPT	
-NUM_BACK_POSS_OPT	
-NUM_FRONT_POSS_OPT	
-NUM_BACK_POSS_EN_OBL	
-NUM_FRONT_POSS_EN_OBL	
-NUM_COMPOUND	
-PRON_FRONT_POSS	
-PRON_BACK_POSS	
-PRON_BACK_POSS_AN	
-PRON_BACK_POSS_EN	
-PRON_FRONT_POSS_EN	
-PRON_FRONT_POSS_ÄN	
-PRON_BACK_CLIT	
-PRON_FRONT_CLIT	
-PRON_BACK_CLIT_OPT	
-PRON_FRONT_CLIT_OPT	
-PRON_BACK_POSS_OPT	
-PRON_FRONT_POSS_OPT	
-PRON_BACK_POSS_AN_OPT	
-PRON_BACK_POSS_EN_OPT	
-PRON_FRONT_POSS_EN_OPT	
-PRON_FRONT_POSS_ÄN_OPT	
-V_BACK_WEAK_PRESENT	
-V_FRONT_WEAK_PRESENT	
-V_BACK_STRONG_PRESENT	
-V_FRONT_STRONG_PRESENT	
-V_BACK_3SG_A	
-V_BACK_3SG_E	
-V_FRONT_3SG_E	
-V_BACK_3SG_I	
-V_FRONT_3SG_I	
-V_BACK_3SG_O	
-V_BACK_3SG_U	
-V_FRONT_3SG_Y	
-V_FRONT_3SG_Ö	
-V_FRONT_3SG_Ä	
-V_BACK_WEAK_PAST	
-V_FRONT_WEAK_PAST	
-V_BACK_STRONG_PAST	
-V_FRONT_STRONG_PAST	
-V_BACK_IMPERATIVE	
-V_FRONT_IMPERATIVE	
-V_BACK_CONDITIONAL	
-V_FRONT_CONDITIONAL	
-V_BACK_POTENTIAL_N	
-V_FRONT_POTENTIAL_N	
-V_BACK_POTENTIAL_S	
-V_FRONT_POTENTIAL_S	
-V_BACK_POTENTIAL_L	
-V_FRONT_POTENTIAL_L	
-V_BACK_POTENTIAL_R	
-V_FRONT_POTENTIAL_R	
-V_BACK_PASSIVE	
-V_FRONT_PASSIVE	
-V_BACK_PASSIVE_T	
-V_FRONT_PASSIVE_T	
-V_BACK_PASSIVE_D	
-V_FRONT_PASSIVE_D	
-V_BACK_PASSIVE_L	
-V_FRONT_PASSIVE_L	
-V_BACK_PASSIVE_R	
-V_FRONT_PASSIVE_R	
-V_BACK_PASSIVE_N	
-V_FRONT_PASSIVE_N	
-V_BACK_AINF	
-V_FRONT_AINF	
-V_BACK_EINF	
-V_FRONT_EINF	
-V_BACK_TUPCP_STRONG	
-V_FRONT_TUPCP_STRONG	
-V_BACK_TUPCP_0	
-V_FRONT_TUPCP_0	
-V_BACK_TUPCP_D	
-V_FRONT_TUPCP_D	
-V_BACK_TUPCP_L	
-V_FRONT_TUPCP_L	
-V_BACK_TUPCP_N	
-V_FRONT_TUPCP_N	
-V_BACK_TUPCP_R	
-V_FRONT_TUPCP_R	
-V_FRONT_POSS	
-V_BACK_POSS	
-V_BACK_POSS_AN	
-V_BACK_POSS_EN	
-V_FRONT_POSS_EN	
-V_FRONT_POSS_AN	
-V_BACK_CLIT	
-V_FRONT_CLIT	
-V_BACK_CLIT_OPT	
-V_FRONT_CLIT_OPT	
-V_BACK_POSS_EN_OBL	
-V_FRONT_POSS_EN_OBL	
-V_BACK_POSS_AN_OBL	
-V_BACK_POSS_OPT	
-V_BACK_POSS_AN_OPT	
-V_FRONT_POSS_AN_OBL	
-V_FRONT_POSS_OPT	
-V_FRONT_POSS_AN_OPT	
-V_BACK_DERIV_MINEN	
-V_FRONT_DERIV_MINEN	
-V_BACK_DERIV_PCPS	
-V_FRONT_DERIV_PCPS	
+N_FRONT_PLNOM_CLIT	The plural nominative attaches to singular stem. For plural words it is also the form that is used for dictionary lookups
+N_BACK_WEAK_SINGULARS	Noun back weak singular suffixes
+N_FRONT_WEAK_SINGULARS	Noun front weak singular suffixes
+N_BACK_STRONG_SINGULARS	Noun back strong singular suffixes
+N_FRONT_STRONG_SINGULARS	Noun front strong singular suffixes
+N_BACK_WEAK_PLURALS	Noun back weak pluar suffixes
+N_FRONT_WEAK_PLURALS	Noun front weak plural suffixes
+N_BACK_STRONG_PLURALS	Noun back strong plural suffixes
+N_FRONT_STRONG_PLURALS	Noun front strong plural suffixes
+N_BACK_PARTITIVE_A	Noun partitive a suffix
+N_FRONT_PARTITIVE_Ä	Noun partitive ä suffix
+N_BACK_PARTITIVE_A_AN	Noun partitive a suffix with aan possessive
+N_FRONT_PARTITIVE_Ä_ÄN	Noun partitive ä suffix with ään possessive
+N_BACK_PARTITIVE_TA	Noun partitive ta suffix
+N_FRONT_PARTITIVE_TÄ	Noun partitive tä suffix
+N_BACK_ILLATIVE_HAN	Noun illative han suffix
+N_BACK_ILLATIVE_HEN	Noun illative hen suffix to back possessives
+N_FRONT_ILLATIVE_HEN	Noun illative hen suffix to front possessives
+N_BACK_ILLATIVE_HIN	Noun illative hin suffix to back possessives
+N_FRONT_ILLATIVE_HIN	Noun hin suffix to front possessives
+N_BACK_ILLATIVE_HON	Noun illative hon suffix
+N_BACK_ILLATIVE_HUN	Noun illative hun suffix
+N_FRONT_ILLATIVE_HYN	Noun illative hyn suffix
+N_FRONT_ILLATIVE_HÄN	Noun illative hän suffix
+N_FRONT_ILLATIVE_HÖN	Noun illative hön suffix
+N_BACK_ILLATIVE_AN	Noun illative an suffix
+N_BACK_ILLATIVE_EN	Noun illative en suffix to back possessives
+N_FRONT_ILLATIVE_EN	Noun illative en suffix to front possessives
+N_BACK_ILLATIVE_IN	Noun illative in suffix to back possessives
+N_FRONT_ILLATIVE_IN	Noun illative in suffix to front possessives
+N_BACK_ILLATIVE_ON	Noun illative on suffix to back possessives
+N_BACK_ILLATIVE_UN	Noun illative un suffix
+N_FRONT_ILLATIVE_YN	Noun illative yn suffix
+N_FRONT_ILLATIVE_ÄN	Noun illative än suffix
+N_FRONT_ILLATIVE_ÖN	Noun illative suffix
+N_BACK_ILLATIVE_SEEN	Noun illative seen suffix to back possessives
+N_FRONT_ILLATIVE_SEEN	Noun illative seen suffix to front possessives
+N_BACK_GENITIVE_IDEN	Noun genitive iden suffix to possessives
+N_FRONT_GENITIVE_IDEN	Noun genitive iden suffix to possessives
+N_BACK_GENITIVE_ITTEN	Noun genitive itten suffix to possessives
+N_FRONT_GENITIVE_ITTEN	Noun genitive itten suffix to possessives
+N_BACK_GENITIVE_IEN	Noun genitive ien suffix to possessives
+N_FRONT_GENITIVE_IEN	Noun genitive ien suffix to possessives
+N_BACK_GENITIVE_JEN	Noun genitive jen suffix to possessives
+N_FRONT_GENITIVE_JEN	Noun genitive jen suffix to possessives
+N_BACK_GENITIVE_TEN	Noun genitive ten suffix to back possessives
+N_FRONT_GENITIVE_TEN	Noun genitive ten suffix to front possessives
+N_BACK_GENITIVE_IN	Noun genitive in suffix to back possessives
+N_FRONT_GENITIVE_IN	Noun genitive in suffix to front possessives
+N_BACK_PARTITIVE_IA	Noun partitive ia suffix 
+N_FRONT_PARTITIVE_IÄ	Noun partitive iä suffix
+N_BACK_PARTITIVE_ITA	Noun partitive ita suffix
+N_FRONT_PARTITIVE_ITÄ	Noun partitive itä suffix
+N_BACK_PARTITIVE_JA	Noun partitive ja suffix
+N_FRONT_PARTITIVE_JÄ	Noun partitive jä suffix
+N_BACK_ILLATIVE_IHIN	Noun illative ihin suffix to back possessives
+N_FRONT_ILLATIVE_IHIN	Noun illative ihin suffix to front possessives
+N_BACK_ILLATIVE_IIN	Noun illative iin suffix to back possessives
+N_FRONT_ILLATIVE_IIN	Noun illative iin suffix to front possessives
+N_BACK_ILLATIVE_ISIIN	Noun illative isiin suffix to back possessives
+N_FRONT_ILLATIVE_ISIIN	Noun illative isiin suffix to front possessives
+N_BACK_POSS	Noun possessives
+N_FRONT_POSS	Noun possessives
+N_BACK_POSS_AN	Noun possessives with aan
+N_BACK_POSS_EN	Noun possessives with een to back clitics
+N_FRONT_POSS_EN	Noun possessives with een to front clitics
+N_FRONT_POSS_ÄN	Noun possessives with ään
+N_BACK_CLIT	Noun clitics
+N_FRONT_CLIT	Noun clitics
+N_BACK_CLIT_OPT	Noun clitics optionally
+N_FRONT_CLIT_OPT	Noun clitics optionally
+N_BACK_SINGULARS	Noun back suffixes
+N_FRONT_SINGULARS	Noun front suffixes
+N_FRONT_PLURALS	Noun front suffixes
+N_BACK_PLURALS	Noun back suffixes
+N_BACK_POSS_AN_OPT	Noun possessives with aan optionally
+N_FRONT_POSS_ÄN_OPT	Noun possessives with ään optionally
+N_BACK_POSS_EN_OPT	Noun possessives with een to back clitics optionally
+N_FRONT_POSS_EN_OPT	Noun possessives with een to front clitics optionally
+N_BACK_POSS_OPT	Noun possessives optionally
+N_FRONT_POSS_OPT	Noun possessives optionally
+N_BACK_POSS_EN_OBL	Noun possessives obligatorily
+N_FRONT_POSS_EN_OBL	Noun possessives obligatorily
+N_COMPOUND_0	Noun compounds without linking element
+N_COMPOUND_N	Noun compounds via singular genitive n
+N_COMPOUND_IEN	Noun compounds via plural genitive ien
+N_COMPOUND_IDEN	Noun compounds via plural genitive itten
+N_COMPOUND_IN	Noun compounds via plural genitive in
+N_COMPOUND_ITTEN	Noun compounds via plural genitive itten
+N_COMPOUND_JEN	Noun compounds via plural genitive jen
+N_COMPOUND_TEN	Noun compounds via plural genitive ten
+N_COMPOUND_S	Noun compounds via linking compositive s
+N_COMPOUND	Noun compounding optional hyphen
+NUM_BACK_NOMINATIVE	Numeral singular nominative to back possessives
+NUM_FRONT_NOMINATIVE	Numeral singular nominative to front possessives
+NUM_BACK_PLNOM_CLIT	Numeral plural nominative to back possessives
+NUM_FRONT_PLNOM_CLIT	Numeral plural nominative to front possessives
+NUM_BACK_WEAK_SINGULARS	Numeral weak back singular suffixes
+NUM_FRONT_WEAK_SINGULARS	Numeral weak front singular suffixes
+NUM_BACK_STRONG_SINGULARS	Numeral strong back singular suffixes
+NUM_FRONT_STRONG_SINGULARS	Numeral strong front singular suffixes
+NUM_BACK_WEAK_PLURALS	Numeral weak back plural suffixes
+NUM_FRONT_WEAK_PLURALS	Numeral weak front plural suffixes
+NUM_FRONT_STRONG_PLURALS	Numeral strong front plural suffixes
+NUM_BACK_STRONG_PLURALS	Numeral strong back plural suffixes
+NUM_BACK_PARTITIVE_A	Numeral partitive suffix a
+NUM_FRONT_PARTITIVE_Ä	Numeral partitive suffix ä
+NUM_BACK_PARTITIVE_A_AN	Numeral partitive suffix a with aan possessive
+NUM_BACK_PARTITIVE_TA	Numeral partitive suffix ta
+NUM_FRONT_PARTITIVE_TÄ	Numeral partitive suffix tä
+NUM_BACK_ILLATIVE_AN	Numeral illative suffix an
+NUM_BACK_ILLATIVE_EN	Numeral illative suffix en with back possessives
+NUM_FRONT_ILLATIVE_EN	Numeral illative suffix en with front possessives
+NUM_BACK_ILLATIVE_IN	Numeral illative suffix in with back possessives
+NUM_FRONT_ILLATIVE_ÄN	Numeral illative suffix än
+NUM_BACK_PARTITIVE_IA	Numeral partitive suffix ia
+NUM_FRONT_PARTITIVE_IÄ	Numeral partitive suffix iä
+NUM_BACK_PARTITIVE_JA	Numeral partitive suffix ja
+NUM_BACK_GENITIVE_IEN	Numeral genitive suffix ien with back possessives
+NUM_FRONT_GENITIVE_IEN	Numeral genitive suffix ien with front possessives
+NUM_BACK_GENITIVE_JEN	Numeral genitive suffix jen
+NUM_BACK_GENITIVE_TEN	Numeral genitive suffix ten with back possessives
+NUM_FRONT_GENITIVE_TEN	Numeral genitive suffix ten with front possessives
+NUM_BACK_GENITIVE_IN	Numeral genitive suffix in with back possessives
+NUM_FRONT_GENITIVE_IN	Numeral genitive suffix in with front possessives
+NUM_BACK_ILLATIVE_IHIN	Numeral illative suffix ihin
+NUM_BACK_ILLATIVE_IIN	Numeral illative suffix iin with back possessives
+NUM_FRONT_ILLATIVE_IIN	Numeral illative suffix iin with front possessives
+NUM_BACK_POSS	Numeral back possessives
+NUM_FRONT_POSS	Numeral front possessives
+NUM_BACK_POSS_AN	Numeral back possessives with aan
+NUM_BACK_POSS_EN	Numeral front possessives with een
+NUM_FRONT_POSS_EN	Numeral back possessives with een
+NUM_FRONT_POSS_ÄN	Numeral front possessives with ään
+NUM_BACK_CLIT	Numeral back clitics 
+NUM_FRONT_CLIT	Numeral front clitics
+NUM_BACK_CLIT_OPT	Numeral back clitics
+NUM_FRONT_CLIT_OPT	Numeral front clitics
+NUM_BACK_SINGULARS	Numeral back singular suffixes
+NUM_FRONT_SINGULARS	Numeral front singular suffixes
+NUM_FRONT_PLURALS	Numeral front plural suffixes
+NUM_BACK_PLURALS	Numeral back plural suffixes
+NUM_BACK_POSS_AN_OPT	Numeral possessives with aan optionally
+NUM_FRONT_POSS_ÄN_OPT	Numeral possessives with ään optionally
+NUM_BACK_POSS_EN_OPT	Numeral possessives with een to back clitics optionally
+NUM_FRONT_POSS_EN_OPT	Numeral possessives with een to front clitics optionally
+NUM_BACK_POSS_OPT	Numeral possessives optionally
+NUM_FRONT_POSS_OPT	Numeral possessives optionally
+NUM_BACK_POSS_EN_OBL	Numeral possessives with een to back clitics obligatorily
+NUM_FRONT_POSS_EN_OBL	Numeral possessives with een to front clitics obligatorily
+NUM_COMPOUND	Numeral compounding
+PRON_FRONT_POSS	Pronoun possessives
+PRON_BACK_POSS	Pronoun possessives
+PRON_BACK_POSS_AN	Pronoun possessives with aan
+PRON_BACK_POSS_EN	Pronoun possessives with een to back clitics
+PRON_FRONT_POSS_EN	Pronoun possessives with een to front clitics
+PRON_FRONT_POSS_ÄN	Pronoun possessives with ään
+PRON_BACK_CLIT	Pronoun back clitics
+PRON_FRONT_CLIT	Pronoun front clitics
+PRON_BACK_CLIT_OPT	Pronoun back clitics optionally
+PRON_FRONT_CLIT_OPT	Pronoun front clitics optionally
+PRON_BACK_POSS_OPT	Pronoun back possessives optionally
+PRON_FRONT_POSS_OPT	Pronoun front possessives optionally
+PRON_BACK_POSS_AN_OPT	Pronoun possessives with aan optionally
+PRON_BACK_POSS_EN_OPT	Pronoun possessives with een to back clitics optionally
+PRON_FRONT_POSS_EN_OPT	Pronoun possessives with een to front clitics optionally
+PRON_FRONT_POSS_ÄN_OPT	Pronoun possessives with ään optionally
+V_BACK_WEAK_PRESENT	Verb present suffixes
+V_FRONT_WEAK_PRESENT	Verb present suffixes
+V_BACK_STRONG_PRESENT	Verb present suffixes
+V_FRONT_STRONG_PRESENT	Verb present suffixes
+V_BACK_3SG_A	Verb 3rd singular suffix lengthened
+V_BACK_3SG_E	Verb 3rd singular suffix lengthened
+V_FRONT_3SG_E	Verb 3rd singular suffix lengthened
+V_BACK_3SG_I	Verb 3rd singular suffix lengthened
+V_FRONT_3SG_I	Verb 3rd singular suffix lengthened
+V_BACK_3SG_O	Verb 3rd singular suffix lengthened
+V_BACK_3SG_U	Verb 3rd singular suffix lengthened
+V_FRONT_3SG_Y	Verb 3rd singular suffix lengthened
+V_FRONT_3SG_Ö	Verb 3rd singular suffix lengthened
+V_FRONT_3SG_Ä	Verb 3rd singular suffix lengthened
+V_BACK_WEAK_PAST	Verb past suffixes
+V_FRONT_WEAK_PAST	Verb past suffixes
+V_BACK_STRONG_PAST	Verb past suffixes
+V_FRONT_STRONG_PAST	Verb past suffixes
+V_BACK_IMPERATIVE	Verb imperative suffixes
+V_FRONT_IMPERATIVE	Verb imperative suffixes
+V_BACK_CONDITIONAL	Verb conditional suffixes
+V_FRONT_CONDITIONAL	Verb conditional suffixes
+V_BACK_POTENTIAL_N	Verb potential suffixes assimilated to n
+V_FRONT_POTENTIAL_N	Verb potential suffixes assimilated to n
+V_BACK_POTENTIAL_S	Verb potential suffixes assimilated to s
+V_FRONT_POTENTIAL_S	Verb potential suffixes assimilated to s
+V_BACK_POTENTIAL_L	Verb potential suffixes assimilated to l
+V_FRONT_POTENTIAL_L	Verb potential suffixes assimilated to l
+V_BACK_POTENTIAL_R	Verb potential suffixes assimilated to r
+V_FRONT_POTENTIAL_R	Verb potential suffixes assimilated to r
+V_BACK_PASSIVE	Verb potential passives with t
+V_FRONT_PASSIVE	Verb potential passives with t
+V_BACK_PASSIVE_T	Verb potential passives with t
+V_FRONT_PASSIVE_T	Verb potential passives with t
+V_BACK_PASSIVE_D	Verb potential passives with d
+V_FRONT_PASSIVE_D	Verb potential passives with d
+V_BACK_PASSIVE_L	Verb potential passives with l
+V_FRONT_PASSIVE_L	Verb potential passives with l
+V_BACK_PASSIVE_R	Verb potential passives with r
+V_FRONT_PASSIVE_R	Verb potential passives with r
+V_BACK_PASSIVE_N	Verb potential passives with n
+V_FRONT_PASSIVE_N	Verb potential passives with n
+V_BACK_AINF	Verb A infinitive a
+V_FRONT_AINF	Verb A infinitive ä
+V_BACK_EINF	Verb E infinitive to clitics
+V_FRONT_EINF	Verb E infinitive to clitics
+V_BACK_TUPCP_STRONG	Verb passive participle without gradation
+V_FRONT_TUPCP_STRONG	Verb passive participle without gradation
+V_BACK_TUPCP_0	Verb passive participle with t:0 gradation
+V_FRONT_TUPCP_0	Verb passive participle with t:0 gradation
+V_BACK_TUPCP_D	Verb passive participle with t:d gradation
+V_FRONT_TUPCP_D	Verb passive participle with t:d gradation
+V_BACK_TUPCP_L	Verb passive participle with t:l gradation
+V_FRONT_TUPCP_L	Verb passive participle with t:l gradation
+V_BACK_TUPCP_N	Verb passive participle with t:n gradation
+V_FRONT_TUPCP_N	Verb passive participle with t:n gradation
+V_BACK_TUPCP_R	Verb passive participle with t:r gradation
+V_FRONT_TUPCP_R	Verb passive participle with t:r gradation
+V_FRONT_POSS	Verb possessives
+V_BACK_POSS	Verb possessives
+V_BACK_POSS_AN	Verb possessives with aan
+V_BACK_POSS_EN	Verb possessives with een to back clitics
+V_FRONT_POSS_EN	Verb possessives with een to front clitics
+V_FRONT_POSS_AN	Verb possessives with ään
+V_BACK_CLIT	Verb clitics
+V_FRONT_CLIT	Verb clitics
+V_BACK_CLIT_OPT	Verb clitics optionally
+V_FRONT_CLIT_OPT	Verb clitics optionally
+V_BACK_POSS_EN_OBL	Verb possessives obligatorily
+V_FRONT_POSS_EN_OBL	Verb possessives obligatorily
+V_BACK_POSS_AN_OBL	Verb possessives obligatorily
+V_BACK_POSS_OPT	Verb possessives optionally
+V_BACK_POSS_AN_OPT	Verb possessives optionally
+V_FRONT_POSS_AN_OBL	Verb possessives obligatorily
+V_FRONT_POSS_OPT	Verb possessives optionally
+V_FRONT_POSS_AN_OPT	Verb possessives optionally
+V_BACK_DERIV_MINEN	Verb minen derivation to back nominals
+V_FRONT_DERIV_MINEN	Verb minen derivation to front nominals
+V_BACK_DERIV_PCPS	Verb participle derivations to back adjectives
+V_FRONT_DERIV_PCPS	Verb participle derivations to front adjectives

@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
-## Author: Tommi A Pirinen <tommi.pirinen@helsinki.fi>
+## Author: Tommi A Pirinen <flammie@iki.fi>
 ## Licence: GPL v3 (not newer)
 
 EXTRA_DIST=README.bindist

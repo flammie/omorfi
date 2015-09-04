@@ -28,4 +28,3 @@ __author_email__ = "omorfi-development@googlegroups.com"
 if __name__ == "__main__":
     pass
 
-from .omorfi import Omorfi

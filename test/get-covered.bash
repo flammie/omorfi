@@ -1,6 +1,6 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=5
+nc=6
 function preprocess() {
     cat $@ | sed -e 's/[[:punct:]][[:space:][:punct:]]/ \0/g' \
         -e 's/[[:punct:]]\r\?$/ \0/' -e 's/^[[:punct:]]/\0 /' \
@@ -60,7 +60,7 @@ if ! test -f ftb3.1.uniq.freqs ; then
     frequency_list ftb3.1.tokens > ftb3.1.uniq.freqs
 fi
 if ! test -f ftb3.1.cutted.freqs ; then
-    egrep -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort > ftb3.1.cutted.freqs
+    egrep -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb3.1.cutted.freqs
 fi
 
 # gutenberg
@@ -95,3 +95,24 @@ if ! test -f "jrc-fi.uniq.freqs" ; then
     frequency_list jrc-fi.tokens > jrc-fi.uniq.freqs
 fi
 
+# FTB 1
+echo FTB-1 2014 ... corpus 6/$nc
+if ! test -f "ftb1-2014.uniq.freqs" ; then
+    if ! test -f ftb1-2014.tsv ; then
+        echo fetch
+        wget "http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/ftb1-2014-beta.zip"
+        echo unpack
+        unzip ftb1-2014-beta.zip
+        cp ftb1-2014-beta/ftb1-2014.tsv .
+    fi
+    echo tokenise
+    egrep -v '^#' < ftb1-2014.tsv |\
+        tr -s '\n' |\
+        cut -f 2 > ftb1-2014.tokens
+    echo count
+    frequency_list ftb1-2014.tokens > ftb1-2014.uniq.freqs
+fi
+if ! test -f ftb1-2014.cutted.freqs ; then
+    egrep -v '^#' < ftb1-2014.tsv | tr -s '\n' |\
+        cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb1-2014.cutted.freqs
+fi

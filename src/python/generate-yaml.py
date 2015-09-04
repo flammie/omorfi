@@ -26,7 +26,7 @@ from time import strftime
 import argparse
 import csv
 
-from tagset_formatter import format_analysis_lexc
+from omorfi.formatters import format_analysis_lexc
 
 # standard UI stuff
 

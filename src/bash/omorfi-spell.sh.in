@@ -42,7 +42,7 @@ function check_omorfi() {
 }
 
 function spell() {
-    cat $@ | hfst-ospell "$omorfifile"
+    cat $@ | @HOSPELL@ "$omorfifile"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then

@@ -29,7 +29,6 @@ apertium_multichars =  {
  "-",
  "",
  "+",
- "a→adv",
  "adj",
  "abbr",
  "abe",
@@ -121,13 +120,49 @@ apertium_multichars =  {
  "sup",
  "top",
  "tra", 
+ "use_archaic"
+ "use_nonstd"
  "vaux",
- "vblex",
- "v→a",
- "v→adv",
- "v→n"
+ "vblex"
         }
 stuff2apertium =  {
+        "Aiden": "",
+        "Aien": "",
+        "Aiin": "",
+        "Ain": "",
+        "Ayn": "",
+        "Aän": "",
+        "Aön": "",
+        "Aisiin": "",
+        "Aseen": "",
+        "Aä": "",
+        "Ajä": "",
+        "Atä": "",
+        "Ajen": "",
+        "Aten": "",
+        "Ahin": "",
+        "Ahen": "",
+        "Ahyn": "",
+        "Aihin": "",
+        "Aiä": "",
+        "Ana": "",
+        "Asa": "",
+        "Aitten": "",
+        "Aan": "",
+        "Aen": "",
+        "Ahan": "",
+        "Ahon": "",
+        "Ahun": "",
+        "Aon": "",
+        "Aun": "",
+        "Aa": "",
+        "Aia": "",
+        "Aita": "",
+        "Aja": "",
+        "Ahän": "",
+        "Ahön": "",
+        "Aitä": "",
+        "Ata": "",
         "ABBREVIATION": "abbr",
         "ACRONYM": "abbr",
         "ADJECTIVE": "adj",
@@ -136,6 +171,7 @@ stuff2apertium =  {
         "ADVERBIAL": "cnjadv",
         "AINF_arg": "vaux",
         "ARTWORK": "",
+        "ARROW": "",
         "B-": "-",
         "B←": "-",
         "B→": "-",
@@ -146,6 +182,7 @@ stuff2apertium =  {
         "Cma": "agent",
         "Cmaton": "pneg",
         "Cnut": "pp",
+        "COMMA": "cm",
         "COMPARATIVE": "cnjsub",
         "COMP": "com",
         "CONJUNCTION": "",
@@ -161,20 +198,28 @@ stuff2apertium =  {
         "DERTTAIN": "",
         "DEMONSTRATIVE": "dem",
         "DIGIT": "",
-        "Din": "", "Ds": "", "Du": "", "Dtava": "",
-        "Dma": "", "Dinen": "", "Dja": "", "Dmpi": "",
-        "Dmaisilla": "",
-        "Dminen": "",
-        "Dnut": "", 
-        "Dtu": "", 
-        "Duus": "", 
-        "Dva": "", 
-        "Dmaton": "",
-        "Dttaa": "", 
-        "Dtattaa": "", 
-        "Dtatuttaa": "", 
-        "Dsti": "",
+        "Din": "+in<n>",
+        "Ds": "",
+        "Du": "+u<n>",
+        "Dtava": "+tava<adj>",
+        "Dma": "+ma<n>",
+        "Dinen": "+inen<n>",
+        "Dja": "+ja<n>",
+        "Dmpi": "+mpi<adj>",
+        "Dmaisilla": "+maisilla<adv>",
+        "Dminen": "+minen<n>",
+        "Dnut": "+nut<adj>", 
+        "Dtu": "+tu<adj>", 
+        "Duus": "+uus<adj>", 
+        "Dva": "+va<adj>", 
+        "Dmaton": "+maton<adj>",
+        "Dttain": "+ttain<adv",
+        "Dttaa": "+ttaa<vblex>", 
+        "Dtattaa": "+tattaa<vblex>", 
+        "Dtatuttaa": "+tatuttaa<vblex>", 
+        "Dsti": "+sti<adv>",
         "EVENT": "",
+        "FEMALE": "f",
         "FINAL-BRACKET": "rpar",
         "FINAL-QUOTE": "rquot",
         "FIRST": "ant",
@@ -191,6 +236,7 @@ stuff2apertium =  {
         "INTERROGATIVE": "itg",
         "LAST": "ant",
         "LEMMA-START": "",
+        "MALE": "m",
         "MAINF_arg": "vaux",
         "MEDIA": "",
         "MISC": "",
@@ -250,9 +296,9 @@ stuff2apertium =  {
         "Tpast": "past",
         "Tpot": "pot", 
         "Tpres": "pri",
-        "Uarch": "",
-        "Udial": "",
-        "Unonstd": "",
+        "Uarch": "use_archaic",
+        "Udial": "use_nonstd",
+        "Unonstd": "use_nonstd",
         "UNSPECIFIED": "part",
         "Urare": "",
         "Vact": "actv",
@@ -308,12 +354,18 @@ def format_analysis_lexc_apertium(anals):
 
 def format_continuation_lexc_apertium(anals, surf, cont):
     analstring = format_analysis_lexc_apertium(anals)
+    # the followings have surface fragments in continuations
     if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
+        analstring = lexc_escape(surf) + analstring
+    elif 'PUNCT_NONSTD_EXCL_LOOP' in cont:
         analstring = lexc_escape(surf) + analstring
     surf = lexc_escape(surf)
     return "%s:%s\t%s ;\n" %(analstring, surf, cont)
 
 def format_wordmap_lexc_apertium(wordmap):
+    if wordmap['lemma'] == ' ':
+        # apertium fails when surf == ' '
+        return ''
     wordmap['analysis'] = lexc_escape(wordmap['lemma'])
     wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, '+').replace(weak_boundary, '')
     if wordmap['is_suffix']:
@@ -326,7 +378,7 @@ def format_wordmap_lexc_apertium(wordmap):
             wordmap['analysis'] += '%<np%>'
             if wordmap['proper_noun_class']:
                 wordmap['analysis'] += format_stuff_apertium(wordmap['proper_noun_class'])
-            if wordmap['sem'] in ['male', 'female']:
+            if wordmap['sem'] in ['MALE', 'FEMALE']:
                 wordmap['analysis'] += format_stuff_apertium(wordmap['sem'])
         else:
             wordmap['analysis'] += '%<n%>'
@@ -368,6 +420,11 @@ def format_wordmap_lexc_apertium(wordmap):
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_apertium(subcat)
+        if wordmap['stub'] in ";:":
+            wordmap['analysis'] += format_stuff_apertium("SENTENCE-BOUNDARY")
+    # XXX: for now
+    if wordmap['stub'] in "¹²³½¼=≥µ#/%":
+        wordmap['analysis'] += format_stuff_apertium("NOUN")
     retvals = ""
     wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
     wordmap['stub'] = lexc_escape(wordmap['stub'])
