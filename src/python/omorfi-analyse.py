@@ -60,6 +60,8 @@ def print_analyses_vislcg3(surf, anals, outfile):
                 mrds = []
             elif mm.group(1) == 'CASECHANGE' and mm.group(2) != 'NONE':
                 mrds = ['<' + mm.group(2) + '>'] + mrds
+            elif mm.group(1) == 'ALLO':
+                mrds = ['<' + mm.group(2) + '>'] + mrds
             elif mm.group(1) == 'WEIGHT' and mm.group(2) != 'inf':
                     mrds += ['<W=' + str(int(float(mm.group(2)) * 100)) + '>']
             elif mm.group(1) == 'WEIGHT' and mm.group(2) == 'inf':
