@@ -53,7 +53,7 @@ def print_analyses_vislcg3(surf, anals, outfile):
         lemmas = []
         for pm in pos_matches:
             pos = pm.group(1)
-        get_lemmas(anal)
+        lemmas = get_lemmas(anal)
         mrd_matches = re_mrd.finditer(anal.output)
         for mm in mrd_matches:
             if mm.group(1) == 'WORD_ID':
