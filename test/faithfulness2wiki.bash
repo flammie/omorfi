@@ -7,7 +7,7 @@ for f in *.faithlog; do
     echo "### ${corpus}"
     echo
     tokens=$(wc -l < ${corpus}.conllx)
-    types=$(wc -l < ${corpus}.conllx.cutted.freqs)
+    types=$(wc -l < ${corpus}.cutted.freqs)
     tokenmisses=$(awk '{SUM+=$2;} END {print SUM;}' < ${f})
     typemisses=$(wc -l < ${f})
     echo "| Feature | Missed | Faithfulness | All |"
