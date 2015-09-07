@@ -75,10 +75,12 @@ def main():
             database. Keys and values "_stuff_", and the _paradigms_ that
             define inflection patterns or so.""", file=args.output)
     # read from csv files
+    print(file=args.output)
     print('## Stuff ', file=args.output)
     print("""Stuff are internal things, but they appear in database a lot, so
             you will want to know what they are if you are gonna modify database
             of affixes.""", file=args.output)
+    print(file=args.output)
     print("""The stuff is typically used by the file format and/or analysis
         generators to either define analysis tags or decide whether or not to
         include the affected string into language model. The default renditions
@@ -99,8 +101,11 @@ def main():
                             "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
+                print(file=args.output)
                 print("### `", tsv_parts['stuff'], "` ", file=args.output)
+                print(file=args.output)
                 print(tsv_parts['doc'], file=args.output)
+                print(file=args.output)
                 print("* omor: ", format_stuff_omor(tsv_parts['stuff'],
                                                     'omor'), 
                         file=args.output)
@@ -120,7 +125,8 @@ def main():
             for key in tsv_parts.keys():
                 if key != 'new_para':
                     paradata[tsv_parts['new_para']][key] = tsv_parts[key]
-    print('\n## Paradigms', file=args.output)
+    print(file=args.output)
+    print('## Paradigms', file=args.output)
     for tsv_filename in args.paradigm_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -134,8 +140,10 @@ def main():
                 if len(tsv_parts) < 2:
                     tsv_line = tsv_file.readline()
                     continue
+                print(file=args.output)
                 print("### `", tsv_parts['new_para'], "`", 
                         file=args.output)
+                print(file=args.output)
                 print(tsv_parts['doc'], file=args.output)
                 if tsv_parts['new_para'] in paradata:
                     for key in paradata[tsv_parts['new_para']].keys():
