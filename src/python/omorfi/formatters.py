@@ -151,21 +151,22 @@ def format_root_lexicon_lexc(format):
     root = "LEXICON Root\n"
     root += """!! LEXICONS per class
 0   NOUN ;
-0   ADJECTIVE ;
+0   ADJ ;
 0   VERB    ;
-0   NUMERAL ;
+0   NUM ;
 0   DIGITS ;
-0   ACRONYM ;
-0   PRONOUN    ;
-0   PARTICLE    ;
-0   INTERJECTION ;
-0   PUNCTUATION ;
-0   CONJUNCTIONVERB ;
+0   PRON    ;
+0   ADP    ;
+0   ADV    ;
+0   INTJ ;
+0   PUNCT ;
+0   SYM ;
+0   CONJ|VERB ;
 """
     if format != 'generic':
         root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"
         root += format_stuff('B→', format) + ':-   NOUN ;\n'
-        root += format_stuff('B→', format) + ':-   ADJECTIVE ;\n'
+        root += format_stuff('B→', format) + ':-   ADJ ;\n'
         root += format_stuff('B→', format) + ':-   SUFFIX ;\n'
     root += version_id_easter_egg + ':__omorfi # ;\n'
     if '+taggerhacks' in format:

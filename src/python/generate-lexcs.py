@@ -141,6 +141,7 @@ def main():
         with open(tsv_filename, "r", newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator, 
                     quoting=quoting, escapechar='%', quotechar=quotechar, strict=True)
+            postponed_suffixes = list()
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
@@ -160,16 +161,24 @@ def main():
                     if wordmap['lemma'] not in lemmas:
                         continue
                 # choose correct lexicon
-                if curr_lexicon != tsv_parts['pos']:
-                    print("\nLEXICON", tsv_parts['pos'], end="\n\n",
+                incoming_lexicon = tsv_parts['upos']
+                if tsv_parts['is_suffix']:
+                    postponed_suffixes.append(tsv_parts)
+                if curr_lexicon != incoming_lexicon:
+                    print("\nLEXICON", incoming_lexicon, end="\n\n",
                             file=args.output)
-                    curr_lexicon = tsv_parts['pos']
+                    curr_lexicon = incoming_lexicon
                 # switch back to real POS when possible suffix lexicon has been selected
                 if wordmap['real_pos']:
                     wordmap['pos'] = wordmap['real_pos']
                 # format output
                 print(format_wordmap_lexc(wordmap, args.format), 
                       file=args.output)
+            if len(postponed_suffixes) > 0:
+                print("\nLEXICON SUFFIX\n\n", file=args.output)
+            for suffix in postponed_suffixes:
+                print(format_wordmap_lexc(suffix, args.format),
+                        file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
     # print stem parts
@@ -193,30 +202,12 @@ def main():
                             "skipping following fields:",
                             tsv_parts, file=stderr)
                     continue
-                if tsv_parts[0].startswith('A_'):
-                    pos = 'ADJECTIVE'
-                elif tsv_parts[0].startswith('N_'):
-                    pos = 'NOUN'
-                elif tsv_parts[0].startswith('V_'):
-                    pos = 'VERB'
-                elif tsv_parts[0].startswith('ACRO_'):
-                    pos = 'ACRONYM'
-                elif tsv_parts[0].startswith('NUM_'):
-                    pos = 'NUMERAL'
-                elif tsv_parts[0].startswith('DIGITS'):
-                    pos = 'NUMERAL'
-                elif tsv_parts[0].startswith('ADV_'):
-                    pos = 'PARTICLE'
-                elif tsv_parts[0].startswith('PCLE_'):
-                    pos = 'PARTICLE'
-                elif tsv_parts[0].startswith('PRON_'):
-                    pos = 'PRONOUN'
-                elif tsv_parts[0].startswith('SYMBOL_'):
-                    pos = 'PUNCTUATION'
-                elif tsv_parts[0].startswith('X_'):
-                    pos = 'EXCEPTIONS'
-                else:
-                    print("Cannot deduce pos from incoming cont:", tsv_parts[0])
+                pos = tsv_parts[0].split("_")[0]
+                if not pos in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
+                        "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ", "X",
+                        "DIGITS"]:
+                    print("Cannot deduce pos from incoming cont:", 
+                            tsv_parts[0], "Skipping")
                     continue
                 if pos in args.exclude_pos:
                     continue
@@ -249,33 +240,12 @@ def main():
                             "skipping following fields:", tsv_parts,
                             file=stderr)
                     continue
-                if tsv_parts[0].startswith('A_'):
-                    pos = 'ADJECTIVE'
-                elif tsv_parts[0].startswith('N_'):
-                    pos = 'NOUN'
-                elif tsv_parts[0].startswith('V_'):
-                    pos = 'VERB'
-                elif tsv_parts[0].startswith('ACRO_'):
-                    pos = 'ACRONYM'
-                elif tsv_parts[0].startswith('NUM_'):
-                    pos = 'NUMERAL'
-                elif tsv_parts[0].startswith('DIGITS_'):
-                    pos = 'NUMERAL'
-                elif tsv_parts[0].startswith('ADV_'):
-                    pos = 'PARTICLE'
-                elif tsv_parts[0].startswith('ADP_'):
-                    pos = 'PARTICLE'
-                elif tsv_parts[0].startswith('PCLE_'):
-                    pos = 'PARTICLE'
-                elif tsv_parts[0].startswith('PRON_'):
-                    pos = 'PRONOUN'
-                elif tsv_parts[0].startswith('SYMBOL_') or \
-                        tsv_parts[0].startswith('PUNCT_'):
-                    pos = 'PUNCTUATION'
-                elif tsv_parts[0].startswith('X_'):
-                    pos = 'EXCEPTIONS'
-                else:
-                    print("Cannot deduce pos from incoming cont:", tsv_parts[0])
+                pos = tsv_parts[0].split("_")[0]
+                if not pos in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
+                        "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ",
+                        "X", "DIGITS"]:
+                    print("Cannot deduce pos from incoming cont:", 
+                            tsv_parts[0], "Skipping")
                     continue
                 if pos in args.exclude_pos:
                     continue

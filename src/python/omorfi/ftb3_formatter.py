@@ -268,6 +268,7 @@ stuff2ftb3 = {"Bc": "#",
         "Xacc": "% Acc",
         "X???": "% Nom",
         "NOUN": "% N",
+        "ADJ": "% A", 
         "ADJECTIVE": "% A", 
         "QUALIFIER": "% A",
         "ABESSIVE": "% Abe",
@@ -284,16 +285,17 @@ stuff2ftb3 = {"Bc": "#",
         "SEPARATIVE": "% Par", 
         "LATIVE": "% Lat",
         "VERB": "% V",
-        "ADVERB": "% Adv",
-        "INTERJECTION": "% Interj",
-        "PRONOUN": "% Pron",
-        "NUMERAL": "% Num",
-        "ADPOSITION": "% Adp% Po",
+        "ADV": "% Adv",
+        "INTJ": "% Interj",
+        "PRON": "% Pron",
+        "NUM": "% Num",
+        "ADP": "% Adp% Po",
         "PREPOSITION": "% Adp% Pr",
-        "CONJUNCTION": "",
-        "COORDINATING": "% CC",
-        "ADVERBIAL": "% CS",
-        "COMPARATIVE": "% CS",
+        "CONJ": "% CC",
+        "SCONJ": "% CS",
+        "COORDINATING": "",
+        "ADVERBIAL": "",
+        "COMPARATIVE": "",
         "ABBREVIATION": "% Abbr",
         "ACRONYM": "% N% Abbr",
         "PROPER": "% Prop",
@@ -335,6 +337,7 @@ stuff2ftb3 = {"Bc": "#",
         "COMMA": "",
         "ARROW": "",
         ".": ".",
+        "X": "",
         "": ""
         }
 
@@ -401,7 +404,10 @@ def format_analysis_lexc_ftb3(anals):
             # Case X before Number N
             reordered.append(part)
     # then rest in their natural order
-    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C') and not x.startswith('I') and not x.startswith('V')]
+    parts = [x for x in parts \
+            if not x.startswith('X') and not x.startswith('T') \
+            and not x.startswith('C') and not x.startswith('I') \
+            and not x.startswith('V')]
     for part in parts:
         reordered.append(part)
     for anal in reordered:
@@ -429,7 +435,8 @@ def format_wordmap_lexc_ftb3(wordmap, format):
         return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'].replace(word_boundary, optional_hyphen))
     wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
-    if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
+    if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and \
+            not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
         wordmap['analysis'] += format_stuff_ftb3('PUNCTUATION')
     elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
         wordmap['analysis'] += format_stuff_ftb3(wordmap['pos'])

@@ -21,7 +21,7 @@
 
 
 def init_wordmap():
-    wordmap = {"pos": None, "lemma": None, "new_para": None, "kotus_tn": None,
+    wordmap = {"upos": None, "lemma": None, "new_para": None, "kotus_tn": None,
                "kotus_av": None, "plurale_tantum": None,
                "possessive": None, "clitics": None,
                "is_proper": None, "proper_noun_class": list(), "style": None,
@@ -34,18 +34,19 @@ def init_wordmap():
                "symbol": None, "argument": None , "pronoun": None,
                "noun_class": None, "adjective_class": None,
                "numeral_class": None,
-               "homonym": 0}
+               "homonym": 0,
+               "pos": None, }
     return wordmap
 
 def get_wordmap_fieldnames():
-    return ["pos", "lemma", "new_para", "kotus_tn", "kotus_av",
+    return ["upos", "lemma", "new_para", "kotus_tn", "kotus_av",
             "plurale_tantum", "possessive", "clitics", "is_proper",
             "proper_noun_class", "style", "stub", "gradestem", "twolstem",
             "grade_dir", "harmony", "is_suffix", "is_prefix", "stem_vowel",
             "stem_diphthong", "sem", "particle", "pronunciation", 
             "boundaries", "bracketstub", "origin", "extra_i", "extra_e",
             "real_pos", "symbol", "argument", "pronoun", "noun_class",
-            "adjective_class", "numeral_class", "homonym"]
+            "adjective_class", "numeral_class", "homonym", "pos"]
 
 # Split a wordmap into a list of wordmaps each having a different item of original
 # <field> list in their respective <field>, or only '' if <field> list was empty.

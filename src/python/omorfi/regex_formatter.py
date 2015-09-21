@@ -42,7 +42,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '# Remove before compounds:\n'
             regexstring += '[ '
             regexstring += ' -> 0,\n '.join([format_stuff(tag, format) for tag in \
-                    ['ADJECTIVE', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUMERAL', 'PROPER', 'DIGIT', 'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl']])
+                    ['ADJ', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUM', 'PROPER', 'DIGIT', 'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl']])
             regexstring += '-> 0 || _ ?* %# ]\n'
             regexstring += '.o.\n'
             regexstring += '# Remove V before Prc\n'
@@ -52,7 +52,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '] ]\n'
             regexstring += '.o.\n'
             regexstring += '# ftb3.1 all pr are optional po\n'
-            regexstring += '[ ' + format_stuff('ADPOSITION', format) + ' (->) ' +\
+            regexstring += '[ ' + format_stuff('ADP', format) + ' (->) ' +\
                             format_stuff('PREPOSITION', format) \
                             + ']\n'
             regexstring += '.o.\n'
@@ -64,7 +64,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '.o.\n'
             regexstring += '[ ' + ' | '.join(fin_lowercase) + ']* -> 0 || ' +\
                     '[ ' + format_stuff('NOUN', format) + \
-                    ' | ' + format_stuff('NUMERAL', format) + \
+                    ' | ' + format_stuff('NUM', format) + \
                     '] [? - %#]* _ [? - %#]* .#. \n'
             regexstring += '.o.\n'
             regexstring += '# Puncts without nom case\n'
@@ -97,7 +97,7 @@ def format_rules_regex(format, ruleset):
             regexstring += '# Remove everything:\n'
             regexstring += '[ '
             regexstring += ' -> 0,\n'.join([format_stuff(tag, format) for tag in \
-                    ['ADJECTIVE', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUMERAL', 'PROPER', 'DIGIT', 'COORDINATING', 'ADVERBIAL', 'ORDINAL', 'DEMONSTRATIVE', 'PERSONAL', 'INDEFINITE', 'QUANTOR', 'INTERROGATIVE', 'REFLEXIVE', 'RELATIVE', 'PUNCTUATION', 'DASH', 'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1', 'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL', 'UNSPECIFIED', 'PRONOUN', 'INTERJECTION',
+                    ['ADJ', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUM', 'PROPER', 'DIGIT', 'COORDINATING', 'ADVERBIAL', 'ORDINAL', 'DEMONSTRATIVE', 'PERSONAL', 'INDEFINITE', 'QUANTOR', 'INTERROGATIVE', 'REFLEXIVE', 'RELATIVE', 'PUNCTUATION', 'DASH', 'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1', 'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL', 'UNSPECIFIED', 'PRON', 'INTJ',
                         'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill',
                         'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe',
                         'Xtra', 'Xcom', 'Nsg', 'Npl',
@@ -106,7 +106,7 @@ def format_rules_regex(format, ruleset):
                         'Vact', 'Vpss',
                         'Ncon', 'Nneg', 'Dnut', 'Dtu', 'Dva', 'Dtava',
                         'Ia', 'Ie', 'Ima',
-                        'Tcond', 'Timp', 'Tpast', 'Tpot', 'Tpres', 'Topt']])
+                        'Tcond', 'Timp', 'Tpast', 'Tpot', 'Tpres', 'Topt'] if format_stuff(tag, format)])
             regexstring += '-> 0 || _ ] ;\n'
     elif ruleset == 'remove-boundaries':
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \

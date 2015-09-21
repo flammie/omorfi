@@ -27,15 +27,15 @@ from .error_logging import fail_formatting_missing_for
 
 omor_multichars = {
         '[WORD_ID=',
-        '[POS=ADJECTIVE]',
-        '[POS=VERB]',
-        '[POS=NOUN]',
-        '[POS=PARTICLE]',
-        '[POS=PRONOUN]',
-        '[POS=NUMERAL]',
-        '[POS=ADVERB]',
-        '[POS=ADPOSITION]',
-        '[PROPER=PROPER]',
+        '[UPOS=ADJ]',
+        '[UPOS=VERB]',
+        '[UPOS=NOUN]',
+        '[UPOS=PRON]',
+        '[UPOS=NUM]',
+        '[UPOS=ADV]',
+        '[UPOS=ADP]',
+        '[UPOS=PROPN]',
+        '[UPOS=INTJ]'
         '[SUBCAT=QUALIFIER]',
         '[SUBCAT=INTERJECTION]',
         '[SUBCAT=DEMONSTR]',
@@ -246,22 +246,22 @@ omor_multichars = {
 
 ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
-        '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=1%0]',
+        '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
         '[KTN=11]', '[KTN=12]', '[KTN=13]', '[KTN=14]', '[KTN=15]',
-        '[KTN=16]', '[KTN=17]', '[KTN=18]', '[KTN=19]', '[KTN=2%0]',
+        '[KTN=16]', '[KTN=17]', '[KTN=18]', '[KTN=19]', '[KTN=20]',
         '[KTN=21]', '[KTN=22]', '[KTN=23]', '[KTN=24]', '[KTN=25]',
-        '[KTN=26]', '[KTN=27]', '[KTN=28]', '[KTN=29]', '[KTN=3%0]',
+        '[KTN=26]', '[KTN=27]', '[KTN=28]', '[KTN=29]', '[KTN=30]',
         '[KTN=31]', '[KTN=32]', '[KTN=33]', '[KTN=34]', '[KTN=35]',
-        '[KTN=36]', '[KTN=37]', '[KTN=38]', '[KTN=39]', '[KTN=4%0]',
+        '[KTN=36]', '[KTN=37]', '[KTN=38]', '[KTN=39]', '[KTN=40]',
         '[KTN=41]', '[KTN=42]', '[KTN=43]', '[KTN=44]', '[KTN=45]',
-        '[KTN=46]', '[KTN=47]', '[KTN=48]', '[KTN=49]', '[KTN=5%0]',
+        '[KTN=46]', '[KTN=47]', '[KTN=48]', '[KTN=49]', '[KTN=50]',
         '[KTN=51]', '[KTN=52]', '[KTN=53]', '[KTN=54]', '[KTN=55]',
-        '[KTN=56]', '[KTN=57]', '[KTN=58]', '[KTN=59]', '[KTN=6%0]',
+        '[KTN=56]', '[KTN=57]', '[KTN=58]', '[KTN=59]', '[KTN=60]',
         '[KTN=61]', '[KTN=62]', '[KTN=63]', '[KTN=64]', '[KTN=65]',
-        '[KTN=66]', '[KTN=67]', '[KTN=68]', '[KTN=69]', '[KTN=7%0]',
+        '[KTN=66]', '[KTN=67]', '[KTN=68]', '[KTN=69]', '[KTN=70]',
         '[KTN=71]', '[KTN=72]', '[KTN=73]', '[KTN=74]', '[KTN=75]',
         '[KTN=76]', '[KTN=77]', '[KTN=78]',
-        '[KTN=1%0%07]', '[KTN=1%0%09]', '[KTN=1%01%0]', '[KTN=1%024]', '[KTN=1%026]',
+        '[KTN=1007]', '[KTN=1009]', '[KTN=1010]', '[KTN=1024]', '[KTN=1026]',
         '[KAV=A]', '[KAV=B]', '[KAV=C]', '[KAV=D]', '[KAV=E]',
         '[KAV=F]', '[KAV=G]', '[KAV=H]', '[KAV=I]', '[KAV=J]',
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
@@ -400,11 +400,18 @@ stuff2omor = {
         "Xlat": "[CASE=LAT]",
         "Xacc": "[CASE=ACC]",
         "X???": "",
-        "NOUN": "[POS=NOUN]", 
-        "PARTICLE": "[POS=PARTICLE]", 
-        "VERB": "[POS=VERB]",
-        "ADVERB": "[POS=ADVERB]",
-        "ADJECTIVE": "[POS=ADJECTIVE]",
+        "NOUN": "[UPOS=NOUN]", 
+        "VERB": "[UPOS=VERB]",
+        "ADV": "[UPOS=ADV]",
+        "ADP": "[UPOS=ADV]",
+        "ADJ": "[UPOS=ADJ]",
+        "INTJ": "[UPOS=INTJ]",
+        "CONJ": "[UPOS=CONJ]",
+        "PRON": "[UPOS=PRON]",
+        "SYM": "[UPOS=SYM]",
+        "NUM": "[UPOS=NUM]",
+        "X": "[UPOS=X]",
+        "PUNCT": "[UPOS=PUNCT]",
         "ABESSIVE": "[LEX=ABE]",
         "ABLATIVE": "[LEX=ABL]",
         "ADESSIVE": "[LEX=ADE]",
@@ -420,7 +427,7 @@ stuff2omor = {
         "LATIVE": "[LEX=LAT]",
         "DERSTI": "[LEX=STI]",
         "DERTTAIN": "[LEX=TTAIN]",
-        "CONJUNCTION": "[SUBCAT=CONJUNCTION]",
+        "CONJUNCTION": "[UPOS=CONJ]",
         "COORDINATING": "[CONJ=COORD]",
         "COMPARATIVE": "[CONJ=COMPARATIVE]",
         "PRONOUN": "[POS=PRONOUN]",
@@ -498,7 +505,7 @@ stuff2omor = {
         "UNSPECIFIED": "",
         "FTB3man": "",
         "LEMMA-START": "[WORD_ID=",
-        "CONJUNCTIONVERB": "[POS=VERB][SUBCAT=NEG]",
+        "CONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
         "FTB3MAN": "",
         ".": "",
         "": ""}
@@ -561,9 +568,8 @@ def format_wordmap_lexc_omor(wordmap, format):
         return ""
     wordmap['stub'] = lexc_escape(wordmap['stub'])
     wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
-    wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJECTIVE')
-    if wordmap['pos'] != 'PARTICLE' or not wordmap['particle'].startswith('AD'):
-        wordmap['analysis'] += format_stuff_omor(wordmap['pos'], format)
+    wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJ')
+    wordmap['analysis'] += format_stuff_omor(wordmap['upos'], format)
     if wordmap['is_suffix']:
         wordmap['analysis'] += format_stuff_omor('SUFFIX', format)
     if wordmap['is_prefix']:
