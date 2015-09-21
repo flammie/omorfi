@@ -7,9 +7,10 @@ def stub_all_new_para(wordmap, stubmap):
     if not wordmap['new_para']:
         return wordmap
     if not wordmap['new_para'] in stubmap:
-        print("Missing stub paradigm", wordmap['new_para'],
+        fail_guess_because(wordmap, "", wordmap['new_para'],
+                "Missing stub paradigm" +
                 ": Update stub-deletions.tsv and carry on")
-        exit(1)
+        return None
     elif not stubmap[wordmap['new_para']] or \
             stubmap[wordmap['new_para']] == '':
         return wordmap

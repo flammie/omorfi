@@ -136,7 +136,11 @@ def main():
                             elif v == "None":
                                 wordmap[k] = None
                             elif k == 'kotus_tn':
-                                wordmap[k] = int(v)
+                                try:
+                                    wordmap[k] = int(v)
+                                except:
+                                    print("FAIL", k, v, tsv_parts)
+                                    exit(2)
                             else:
                                 wordmap[k] = v
                 else:
@@ -152,6 +156,9 @@ def main():
                 #wordmap = guess_harmony(wordmap)
                 #wordmap = guess_new_class(wordmap)
                 wordmap = stub_all_new_para(wordmap, stubmap)
+                if not wordmap:
+                    errors = True
+                    continue
                 # suffixes can be id'd by the - in beginning. They need an own lexicon
                 wordmap = guess_bound_morphs(wordmap)
                 if wordmap['is_suffix']:
