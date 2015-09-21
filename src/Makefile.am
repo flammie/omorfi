@@ -31,27 +31,9 @@ PARADIGM_JOINS=paradigms/morphophonology.tsv \
 
 # Morphology
 # stem variants by deletion and concatenations
-STEMPARTS=continuations/acronym-stems.tsv \
-		  continuations/adjective-stems.tsv \
-		  continuations/digit-stubs.tsv \
-		  continuations/digit-stems.tsv \
-		  continuations/noun-stems.tsv \
-		  continuations/numeral-stems.tsv \
-		  continuations/particle-stems.tsv \
-		  continuations/pronoun-stems.tsv \
-		  continuations/symbol-stems.tsv \
-		  continuations/51-stems.tsv \
-		  continuations/verb-stems.tsv
+STEMPARTS=continuations/stems.tsv
 # suffixes by concatenations
-INFLECTIONS=continuations/acro-inflections.tsv \
-			continuations/adjective-inflections.tsv \
-			continuations/digit-inflections.tsv \
-			continuations/noun-inflections.tsv \
-			continuations/numeral-inflections.tsv \
-			continuations/particle-inflections.tsv \
-			continuations/pronoun-inflections.tsv \
-			continuations/symbol-inflections.tsv \
-			continuations/verb-inflections.tsv
+INFLECTIONS=continuations/inflections.tsv
 
 # }}}
 #
