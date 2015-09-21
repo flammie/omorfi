@@ -1,18 +1,20 @@
 #!/bin/bash
 LEXFILE=lexemes.tsv
-echo ${LEXFILE}...
 WORK=$(mktemp -d -t omorfi-validate-database.XXXXXXXXXX)
 if test -f ${WORK}/duplicate-keys ; then
     rm -v duplicate-keys
 fi
-cut -f 1,2 ${LEXFILE} | LC_ALL=C sort > ${WORK}/keys
 
+echo "checking for duplicate unique keys in lexemes (word_id, homonym)"
+echo ${LEXFILE}...
+cut -f 1,2 ${LEXFILE} | LC_ALL=C sort > ${WORK}/keys
 LC_ALL=C uniq -c < ${WORK}/keys |\
     awk '$1 > 1 {print;}' > ${WORK}/duplicate-keys
 if test -s ${WORK}/duplicate-keys ; then
     echo ${LEXFILE} has duplicate keys in ${WORK}/duplicate-keys
     exit 1
 fi
+echo checking for broken joins
 sort < ${WORK}/keys > ${WORK}/lc-sort-keys
 for f in attributes/*.tsv ; do
     echo $f...
@@ -36,4 +38,14 @@ for f in attributes/*.tsv ; do
         exit 1
     fi
 done
-
+echo checking paradigms to stems
+cut -f 3 ${LEXFILE} | sort | uniq > ${WORK}/paradigms
+cut -f 1 continuations/stems.tsv | sort | uniq > ${WORK}/continuations
+if ! diff ${WORK}/paradigms ${WORK}/continuations > /dev/null ; then
+    echo "Missing continuations (to add to continuations/*.tsv?):"
+    comm -23 ${WORK}/paradigms ${WORK}/continuations
+    echo "Missing paradigms (to add to lexemes.tsv?):"
+    comm -13 ${WORK}/paradigms ${WORK}/continuations
+    exit 1
+fi
+rm -rf ${WORK}
