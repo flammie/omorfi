@@ -407,6 +407,7 @@ stuff2omor = {
         "ADJ": "[UPOS=ADJ]",
         "INTJ": "[UPOS=INTJ]",
         "CONJ": "[UPOS=CONJ]",
+        "SCONJ": "[UPOS=SCONJ]",
         "PRON": "[UPOS=PRON]",
         "SYM": "[UPOS=SYM]",
         "NUM": "[UPOS=NUM]",
