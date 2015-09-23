@@ -219,6 +219,7 @@ stuff2monodix =  {
         "NOUN": "n",
         "Npl": "pl", 
         "Nsg": "sg", 
+        "NUM": "num",
         "NUMERAL": "num",
         "O3": "pxsp3",
         "Opl1": "pxpl1",
