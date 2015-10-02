@@ -161,6 +161,8 @@ def format_root_lexicon_lexc(format):
 0   INTJ ;
 0   PUNCT ;
 0   SYM ;
+0   CONJ ;
+0   SCONJ ;
 0   CONJ|VERB ;
 """
     if format != 'generic':
