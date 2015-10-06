@@ -17,7 +17,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sys import stderr, exit
+from .error_logging import just_fail
 
 def parse_defaults_from_tsv(wordmap, tsv_parts):
     '''Parse default data from 2+ field tsv with new para and lemma.'''
@@ -82,8 +82,16 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['pronoun'] = extra_fields[1].upper()
             elif extra_fields[0] == 'homonym':
                 wordmap['homonym'] = int(extra_fields[1])
+            elif extra_fields[0] == 'original-ktn':
+                wordmap['kotus_tn'] = int(extra_fields[1])
+            elif extra_fields[0] == 'prontype':
+                wordmap['prontype'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'abbr':
+                wordmap['abbr'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'lex':
+                wordmap['lex'] = extra_fields[1].upper()
             else:
-                print("Unrecognised extra field", tsv_extra, "in TSV", file=stderr)
-                exit(1)
+                just_fail("Unrecognised extra field" + tsv_extra + " in TSV")
+                return None
     return wordmap
 
