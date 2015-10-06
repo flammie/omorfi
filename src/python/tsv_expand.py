@@ -145,7 +145,9 @@ def main():
                                 wordmap[k] = v
                 else:
                     print("\033[93mMissing!\033[0m",
-                          "new para not in join data:", joinkey)
+                          "new para not in join data:", joinkey,
+                          "\n\033[92mExplanation:\033[0m"
+                          "add paradigm to morphophonology.tsv and carry on")
                     errors = True
                     continue
 
