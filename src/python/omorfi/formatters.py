@@ -164,6 +164,7 @@ def format_root_lexicon_lexc(format):
 0   CONJ ;
 0   SCONJ ;
 0   CONJ|VERB ;
+0   PROPN ;
 """
     if format != 'generic':
         root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"

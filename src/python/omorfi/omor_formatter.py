@@ -42,7 +42,7 @@ omor_multichars = {
         '[SUBCAT=PERSONAL]',
         '[SUBCAT=INTERROG]',
         '[SUBCAT=RELATIVE]',
-        '[SUBCAT=QUANTOR]',
+        '[SUBCAT=QUANTIFIER]',
         '[SUBCAT=REFLEXIVE]',
         '[SUBCAT=RECIPROC]',
         '[SUBCAT=INDEF]',
@@ -411,6 +411,7 @@ stuff2omor = {
         "PRON": "[UPOS=PRON]",
         "SYM": "[UPOS=SYM]",
         "NUM": "[UPOS=NUM]",
+        "PROPN": "[UPOS=PROPN]",
         "X": "[UPOS=X]",
         "PUNCT": "[UPOS=PUNCT]",
         "ABESSIVE": "[LEX=ABE]",
@@ -450,7 +451,8 @@ stuff2omor = {
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[SUBCAT=DEMONSTRATIVE]", 
-        "QUANTOR": "[SUBCAT=QUANTOR]", 
+        "QUANTOR": "[SUBCAT=QUANTIFIER]", 
+        "QUANTIFIER": "[SUBCAT=QUANTIFIER]", 
         "PERSONAL": "[SUBCAT=PERSONAL]",
         "INDEFINITE": "", 
         #"INDEFINITE": "[SUBCAT=INDEF]", 
@@ -575,7 +577,7 @@ def format_wordmap_lexc_omor(wordmap, format):
         wordmap['analysis'] += format_stuff_omor('SUFFIX', format)
     if wordmap['is_prefix']:
         wordmap['analysis'] += format_stuff_omor('PREFIX', format)
-        if wordmap['pos'] == 'ADJECTIVE':
+        if wordmap['upos'] == 'ADJECTIVE':
             wordmap['analysis'] += format_stuff_omor('Cpos', format)
 
     if wordmap['particle']:
@@ -586,17 +588,17 @@ def format_wordmap_lexc_omor(wordmap, format):
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_omor(subcat, format)
     
-    if wordmap['pronoun']:
-        for stuff in wordmap['pronoun'].split("|"):
+    if wordmap['prontype']:
+        for stuff in wordmap['prontype'].split("|"):
             wordmap['analysis'] += format_stuff_omor(stuff, format)
-    if wordmap['adjective_class']:
-        for stuff in wordmap['adjective_class'].split("|"):
+    if wordmap['lex']:
+        for stuff in wordmap['lex'].split("|"):
             wordmap['analysis'] += format_stuff_omor(stuff, format)
-    if wordmap['noun_class']:
-        for stuff in wordmap['noun_class'].split("|"):
+    if wordmap['abbr']:
+        for stuff in wordmap['abbr'].split("|"):
             wordmap['analysis'] += format_stuff_omor(stuff, format)
-    if wordmap['numeral_class']:
-        for stuff in wordmap['numeral_class'].split("|"):
+    if wordmap['numtype']:
+        for stuff in wordmap['numtype'].split("|"):
             wordmap['analysis'] += format_stuff_omor(stuff, format)
     
     if wordmap['is_proper']:
@@ -613,7 +615,7 @@ def format_wordmap_lexc_omor(wordmap, format):
     if wordmap['style']:
         wordmap['analysis'] += format_stuff_omor(wordmap['style'], format)
     
-    if '+ktnkav' in format and wordmap['pos'] != 'ACRONYM':
+    if '+ktnkav' in format and wordmap['upos'] != 'ACRONYM':
         tag = "[KTN=%s]" %(lexc_escape(wordmap['kotus_tn']))
         if tag in ktnkav_multichars:
             wordmap['analysis'] += tag

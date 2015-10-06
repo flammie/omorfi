@@ -456,6 +456,8 @@ def format_wordmap_lexc_ftb3(wordmap, format):
                 wordmap['analysis'] += format_stuff_ftb3(pclass)
         else:
             wordmap['analysis'] += format_stuff_ftb3('PARTICLE')
+    elif wordmap['pos'] == 'PROPN':
+        print("???", wordmap)
     else:
         print("not in FTB3 known poses or particle!\n", wordmap)
         exit(1)
@@ -464,14 +466,14 @@ def format_wordmap_lexc_ftb3(wordmap, format):
             wordmap['pronoun'] = 'PERSONAL'
         for stuff in wordmap['pronoun'].split("|"):
             wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['adjective_class']:
-        for stuff in wordmap['adjective_class'].split("|"):
+    if wordmap['lex']:
+        for stuff in wordmap['lex'].split("|"):
             wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['noun_class']:
-        for stuff in wordmap['noun_class'].split("|"):
+    if wordmap['abbr']:
+        for stuff in wordmap['abbr'].split("|"):
             wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['numeral_class']:
-        for stuff in wordmap['numeral_class'].split("|"):
+    if wordmap['numtype']:
+        for stuff in wordmap['numtype'].split("|"):
             wordmap['analysis'] += format_stuff_ftb3(stuff)
     if wordmap['is_proper']:
         wordmap['analysis'] += format_stuff_ftb3('PROPER')
