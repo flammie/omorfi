@@ -1,4 +1,4 @@
-word_id	homonym	new_para	abbr
+lemma	homonym	new_para	abbr
 /	1	PCLE_VAAN	abbreviation
 &	1	PCLE_VAAN	abbreviation
 +	2	PCLE_VAAN	abbreviation
@@ -206,7 +206,6 @@ la	2	PCLE_VAAN	abbreviation
 lakit.	1	PCLE_VAAN	abbreviation
 lastent.op.	1	PCLE_VAAN	abbreviation
 leht.	1	PCLE_VAAN	abbreviation
-lemma	homonym	new_para	noun_class
 liikuntak.	1	PCLE_VAAN	abbreviation
 liikuntat.	1	PCLE_VAAN	abbreviation
 lis.	1	PCLE_VAAN	abbreviation
@@ -285,7 +284,6 @@ nk.	1	PCLE_VAAN	abbreviation
 N.N.	1	PCLE_VAAN	abbreviation
 n:o	1	N_RUIPELO	abbreviation
 nro	1	N_RUIPELO	abbreviation
-nro	2	PCLE_VAAN	abbreviation
 nro	2	PCLE_VAAN	abbreviation
 ns.	1	PCLE_VAAN	abbreviation
 ns	3	PCLE_VAAN	abbreviation
