@@ -166,8 +166,11 @@ stuff2apertium =  {
         "ABBREVIATION": "abbr",
         "ACRONYM": "abbr",
         "ADJECTIVE": "adj",
+        "ADP": "post",
         "ADPOSITION": "post",
+        "ADV": "adv",
         "ADVERB": "adv",
+        "SCONJ": "cnjsub",
         "ADVERBIAL": "cnjadv",
         "AINF_arg": "vaux",
         "ARTWORK": "",
@@ -187,6 +190,7 @@ stuff2apertium =  {
         "COMP": "com",
         "CONJUNCTION": "",
         "CONJUNCTIONVERB": "cnjcoo><vblex",
+        "CONJ": "cnjcoo",
         "COORDINATING": "cnjcoo",
         "Cpos": "pos",
         "Csup": "sup",
@@ -246,6 +250,7 @@ stuff2apertium =  {
         "NOUN": "n",
         "Npl": "pl", 
         "Nsg": "sg", 
+        "NUM": "num",
         "NUMERAL": "num",
         "O3": "pxsp3",
         "Opl1": "pxpl1",
@@ -265,6 +270,7 @@ stuff2apertium =  {
         "Ppl3": "p3><pl",
         "PRONOUN": "prn",
         "PRODUCT": "",
+        "PROPN": "np",
         "PROPER": "np",
         "Psg1": "p1><sg", 
         "Psg2": "p2><sg",
@@ -408,14 +414,14 @@ def format_wordmap_lexc_apertium(wordmap):
     if wordmap['pronoun']:
         for stuff in wordmap['pronoun'].split("|"):
             wordmap['analysis'] += format_stuff_apertium(stuff)
-    if wordmap['adjective_class']:
-        for stuff in wordmap['adjective_class'].split("|"):
+    if wordmap['lex']:
+        for stuff in wordmap['lex'].split("|"):
             wordmap['analysis'] += format_stuff_apertium(stuff)
-    if wordmap['noun_class']:
-        for stuff in wordmap['noun_class'].split("|"):
+    if wordmap['abbr']:
+        for stuff in wordmap['abbr'].split("|"):
             wordmap['analysis'] += format_stuff_apertium(stuff)
-    if wordmap['numeral_class']:
-        for stuff in wordmap['numeral_class'].split("|"):
+    if wordmap['numtype']:
+        for stuff in wordmap['numtype'].split("|"):
             wordmap['analysis'] += format_stuff_apertium(stuff)
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
