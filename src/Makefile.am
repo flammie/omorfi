@@ -17,7 +17,6 @@ LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/clitics.tsv \
 			attributes/lexicalised-inflection.tsv \
 			attributes/numtype.tsv \
-			attributes/particle-classes.tsv \
 			attributes/plurale-tantum.tsv \
 			attributes/possessives.tsv \
 			attributes/prontype.tsv \
