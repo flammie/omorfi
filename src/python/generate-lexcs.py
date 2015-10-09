@@ -164,6 +164,7 @@ def main():
                 incoming_lexicon = tsv_parts['upos']
                 if tsv_parts['is_suffix']:
                     postponed_suffixes.append(tsv_parts)
+                    continue
                 if curr_lexicon != incoming_lexicon:
                     print("\nLEXICON", incoming_lexicon, end="\n\n",
                             file=args.output)
