@@ -142,6 +142,7 @@ def main():
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator, 
                     quoting=quoting, escapechar='%', quotechar=quotechar, strict=True)
             postponed_suffixes = list()
+            postponed_abbrs = {'ABBREVIATION': list(), 'ACRONYM': list()}
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
@@ -165,6 +166,9 @@ def main():
                 if tsv_parts['is_suffix']:
                     postponed_suffixes.append(tsv_parts)
                     continue
+                elif tsv_parts['abbr']:
+                    postponed_abbrs[tsv_parts['abbr']].append(tsv_parts)
+                    continue
                 if curr_lexicon != incoming_lexicon:
                     print("\nLEXICON", incoming_lexicon, end="\n\n",
                             file=args.output)
@@ -177,9 +181,14 @@ def main():
                       file=args.output)
             if len(postponed_suffixes) > 0:
                 print("\nLEXICON SUFFIX\n\n", file=args.output)
-            for suffix in postponed_suffixes:
-                print(format_wordmap_lexc(suffix, args.format),
-                        file=args.output)
+                for suffix in postponed_suffixes:
+                    print(format_wordmap_lexc(suffix, args.format),
+                            file=args.output)
+            for key, words in postponed_abbrs.items():
+                print("\nLEXICON", key, "\n\n", file=args.output)
+                for word in words:
+                    print(format_wordmap_lexc(word, args.format),
+                            file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
     # print stem parts
