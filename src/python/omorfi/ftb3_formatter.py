@@ -22,7 +22,7 @@
 from .lexc_formatter import lexc_escape
 from .settings import word_boundary, weak_boundary, \
         morph_boundary, deriv_boundary, optional_hyphen
-from .error_logging import fail_formatting_missing_for
+from .error_logging import fail_formatting_missing_for, fail_guess_because
 
 
 ftb3_multichars= {
@@ -440,7 +440,8 @@ def format_wordmap_lexc_ftb3(wordmap, format):
     if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and \
             not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
         wordmap['analysis'] += format_stuff_ftb3('PUNCTUATION')
-    elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
+    elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN',
+            'NUMERAL', 'ACRONYM', 'PUNCTUATION', 'SUFFIX']:
         wordmap['analysis'] += format_stuff_ftb3(wordmap['pos'])
     elif wordmap['pos'] == 'CONJUNCTIONVERB':
         if wordmap['lemma'] == 'eikä':
@@ -459,7 +460,10 @@ def format_wordmap_lexc_ftb3(wordmap, format):
     elif wordmap['pos'] == 'PROPN':
         print("???", wordmap)
     else:
-        print("not in FTB3 known poses or particle!\n", wordmap)
+        fail_guess_because(wordmap, [], ["PARTICLE", "PROPN",
+            'NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL',
+            'ACRONYM', 'PUNCTUATION'],
+            "not in FTB3 known poses or particle!")
         exit(1)
     if wordmap['pronoun']:
         if 'PERSONAL' in wordmap['pronoun']:
