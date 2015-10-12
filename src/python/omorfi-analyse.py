@@ -15,7 +15,15 @@ def get_lemmas(anal):
         rv += [lemma.group(1)]
     return rv
 
-def print_analyses(surf, anals, format, outfile):
+def get_last_feat(feat, anal):
+    re_feat = re.compile("\[" + feat + "=([^]]*)\]")
+    feats = re_feat.finditer(anal.output)
+    rv = ""
+    for feat in feats:
+        rv = feat.group(1)
+    return rv
+
+def print_analyses(wordn, surf, anals, format, outfile):
     if format == 'xerox':
         print_analyses_xerox(surf, anals, outfile)
     elif format == 'apertium':
@@ -23,9 +31,9 @@ def print_analyses(surf, anals, format, outfile):
     elif format == 'vislcg3':
         print_analyses_vislcg3(surf, anals, outfile)
     elif format == 'conllx':
-        print_analyses_conllx(surf, anals, outfile)
+        print_analyses_conllx(wordn, surf, anals, outfile)
     elif format == 'conllu':
-        print_analyses_conllu(surf, anals, outfile)
+        print_analyses_conllu(wordn, surf, anals, outfile)
     else:
         print("format unknown:", format, file=stderr)
         exit(2)
@@ -74,14 +82,14 @@ def print_analyses_vislcg3(surf, anals, outfile):
                 ' '.join(mrds), sep='', file=outfile)
     print(file=outfile)
 
-def print_analyses_conllx(surf, anals, outfile):
-    print(1, surf, "#".join(get_lemmas(anals[0])),
+def print_analyses_conllx(wordn, surf, anals, outfile):
+    print(wordn, surf, "#".join(get_lemmas(anals[0])),
             "-", "-", anals[0].output,
             "-", "-", "-", "-", sep="\t", file=outfile)
 
-def print_analyses_conllu(surf, anals, outfile):
-    print(1, surf, "#".join(get_lemmas(anals[0])), 
-            "-", "-", anals[0].output,
+def print_analyses_conllu(wordn, surf, anals, outfile):
+    print(wordn, surf, "#".join(get_lemmas(anals[0])), 
+            get_last_feat("UPOS", anals[0]), "-", anals[0].output,
             "-", "-", "-", "-", sep="\t", file=outfile)
 
 def main():
@@ -121,9 +129,15 @@ def main():
         if not line or line == '':
             continue
         surfs = omorfi.tokenise(line)
+        i = 0
+        if options.format == 'conllu':
+            print("# sentence-text: ", line.strip(), file=options.outfile)
         for surf in surfs:
+            i += 1
             anals = omorfi.analyse(surf)
-            print_analyses(surf, anals, options.format, options.outfile)
+            print_analyses(i, surf, anals, options.format, options.outfile)
+        if options.format in ['conllx', 'conllu']:
+            print(file=options.outfile)
     exit(0)
 
 if __name__ == "__main__":
