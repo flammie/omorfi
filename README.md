@@ -69,8 +69,9 @@ Installation uses standard autotools system:
 ```
 
 The compiling may take forever or more depending on the hardware and settings.
-The stable release versions should be compilable on average end-user systems.
-You should be able to make use of th `-j` switch of make to speed it up.
+You should be prepared with at least 4 gigs of RAM or such.  The stable release
+versions should be compilable on average end-user systems.  You should be able
+to make use of the `-j` switch of make to speed it up.
 
 If configure cannot find HFST tools, you must tell it where to find them:
 
