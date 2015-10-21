@@ -25,6 +25,7 @@ def main():
     #
     lines = 0
     deplines = 0
+    skiplines = 0
     # count this
     missed_lemmas = 0
     missed_uposes = 0
@@ -41,22 +42,34 @@ def main():
         infields = inline.strip().split('\t')
         reffields = refline.strip().split('\t')
         if len(infields) < 4:
-            print("DEBUG:", inline, refline, sep='\n')
-            while inline != refline:
-                refline = next(options.reffile)
-            continue
+            if 'doc-name' in inline:
+                continue
+            elif 'sentence-text' in inline:
+                while inline != refline:
+                    refline = next(options.reffile)
+                continue
+            elif inline == refline:
+                continue
+            else:
+                print("mismatched unknown non-content! IN:", inline, "REF:", refline,
+                        sep='\n')
+                exit(1)
         if infields[0] != reffields[0]:
+            skiplines += 1
             print("misaligned (index)! IN:", infields[0], "REF:", reffields[0],
                     "\n", inline, refline, "skipping...", file=stderr)
             while inline != "":
+                skiplines += 1
                 inline = next(options.infile).strip()
             while refline != "":
                 refline = next(options.reffile).strip()
             continue
         if infields[1] != reffields[1]:
+            skiplines += 1
             print("misaligned (surface)! IN:", infields[1], "REF:", reffields[1],
                     "\n", inline, "\n", refline, file=stderr)
             while inline != "":
+                skiplines += 1
                 inline = next(options.infile).strip()
             while refline != "":
                 refline = next(options.reffile).strip()
@@ -110,6 +123,7 @@ def main():
             (deplines-missed_deps2) / deplines * 100,
             (deplines-missed_misc) / deplines * 100,
             sep="\t")
+    print("Skipped due to tokenisation etc. (no fuzz):", skiplines)
     exit(0)
 
 if __name__ == "__main__":
