@@ -87,7 +87,7 @@ def format_feats_ud(anal):
             elif value == 'NEG':
                 rvs['Negative'] = 'Yes'
         elif key == 'PCP':
-            rvs['VerbForm'] = 'Inf'
+            rvs['VerbForm'] = 'Part'
             if value == 'VA':
                 rvs['PartForm'] = 'Pres'
             elif value == 'NUT':
@@ -119,6 +119,13 @@ def format_feats_ud(anal):
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
             elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
+                # not annotated in UD feats: 
+                # * punctuation classes
+                continue
+            elif value in ['REFLEXIVE', 'DECIMAL', 'ROMAN']:
+                # not annotated in UD feats:
+                # * reflexive PronType
+                # * decimal, roman NumType
                 continue
             else:
                 print("Unhandled subcat: ", value)
@@ -141,6 +148,8 @@ def format_feats_ud(anal):
                 rvs['Typo'] = 'Yes'
             elif value == 'ARCHAIC':
                 rvs['Style'] = 'Arch'
+            elif value == 'RARE':
+                continue
             else:
                 print("Unknown style", value)
                 print("in", anal[0].output)
@@ -148,6 +157,8 @@ def format_feats_ud(anal):
         elif key in ['DRV', 'LEX']:
             if value in ['MINEN', 'STI']:
                 rvs['Derivation'] = value[0] + value[1:].lower()
+            elif value in ['TTAIN', 'foo']:
+                continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
                 print("in", anal[0].output)
