@@ -87,7 +87,7 @@ def format_feats_ud(anal):
             elif value == 'NEG':
                 rvs['Negative'] = 'Yes'
         elif key == 'PCP':
-            rvs['VerbForm'] == 'Inf'
+            rvs['VerbForm'] = 'Part'
             if value == 'VA':
                 rvs['PartForm'] = 'Pres'
             elif value == 'NUT':
@@ -97,7 +97,7 @@ def format_feats_ud(anal):
             elif value == 'MATON':
                 rvs['PartForm'] = 'Neg'
         elif key == 'INF':
-            rvs['VerbForm'] == 'Inf'
+            rvs['VerbForm'] = 'Inf'
             if value == 'A':
                 rvs['InfForm'] = '1'
             elif value == 'E':
@@ -116,18 +116,76 @@ def format_feats_ud(anal):
         elif key == 'SUBCAT':
             if value == 'NEG':
                 rvs['Negative'] = 'Yes'
+            elif value == 'QUANTIFIER':
+                rvs['PronType'] = 'Ind'
+            elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
+                # not annotated in UD feats: 
+                # * punctuation classes
+                continue
+            elif value in ['REFLEXIVE', 'DECIMAL', 'ROMAN']:
+                # not annotated in UD feats:
+                # * reflexive PronType
+                # * decimal, roman NumType
+                continue
             else:
                 print("Unhandled subcat: ", value)
+                print("in", anal[0].output)
                 exit(1)
-        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'LEX', 'GUESS']:
+        elif key == 'ABBR':
+            rvs['Abbr'] = value[0] + value[1:].lower()
+        elif key == 'NUMTYPE':
+            rvs['NumType'] = value[0] + value[1:].lower()
+        elif key == 'PRONTYPE':
+            rvs['PronType'] = value[0] + value[1:].lower()
+        elif key == 'CLIT':
+            rvs['Clitic'] = value[0] + value[1:].lower()
+        elif key == 'STYLE':
+            if value in ['DIALECTAL', 'COLLOQUIAL']:
+                rvs['Style'] = 'Coll'
+            elif value == 'NONSTANDARD':
+                # XXX: Non-standard spelling is kind of a typo?
+                # e.g. seitsämän -> seitsemän
+                rvs['Typo'] = 'Yes'
+            elif value == 'ARCHAIC':
+                rvs['Style'] = 'Arch'
+            elif value == 'RARE':
+                continue
+            else:
+                print("Unknown style", value)
+                print("in", anal[0].output)
+                exit(1)
+        elif key in ['DRV', 'LEX']:
+            if value in ['MINEN', 'STI']:
+                rvs['Derivation'] = value[0] + value[1:].lower()
+            elif value in ['TTAIN', 'foo']:
+                continue
+            else:
+                print("Unknown non-inflectional affix", key, '=', value)
+                print("in", anal[0].output)
+                exit(1)
+        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE',
+                'GUESS', 'PROPER', 'POSITION']:
+            # Not feats in UD:
+            # * UPOS is another field
+            # * Allomorphy is ignored
+            # * Weight = no probabilities
+            # * No feats for recasing
+            # * FIXME: lexicalised inflection usually not a feat
+            # * Guessering not a feat
+            # * Proper noun classification not a feat
+            # * punct sidedness is not a feat
             continue
         else:
-            print("Unhandled key", key, '=', value)
+            print("Unhandled", key, '=', value)
+            print("in", anal[0].output)
             exit(1)
     rv = ''
     for k,v in rvs.items():
         rv += k + '=' + v + '|'
-    return rv.rstrip('|')
+    if len(rvs) != 0:
+        return rv.rstrip('|')
+    else:
+        return '_'
 
 def format_upos_tdt(upos):
     if upos in ['NOUN', 'PROPN']:
@@ -212,15 +270,15 @@ def print_analyses_vislcg3(surf, anals, outfile):
 
 def print_analyses_conllx(wordn, surf, anals, outfile):
     print(wordn, surf, "#".join(get_lemmas(anals[0])),
-            "-", "-", anals[0].output,
-            "-", "-", "-", "-", sep="\t", file=outfile)
+            "_", "_", anals[0].output,
+            "_", "_", "_", "_", sep="\t", file=outfile)
 
 def print_analyses_conllu(wordn, surf, anals, outfile):
     print(wordn, surf, "#".join(get_lemmas(anals[0])), 
             get_last_feat("UPOS", anals[0]), 
             format_upos_tdt(get_last_feat("UPOS", anals[0])),
             format_feats_ud(anals),
-            "-", "-", "-", "-", sep="\t", file=outfile)
+            "_", "_", "_", "_", sep="\t", file=outfile)
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -261,7 +319,7 @@ def main():
         surfs = omorfi.tokenise(line)
         i = 0
         if options.format == 'conllu':
-            print("# sentence-text: ", line.strip(), file=options.outfile)
+            print("# sentence-text:", line.strip(), file=options.outfile)
         for surf in surfs:
             i += 1
             anals = omorfi.analyse(surf)
