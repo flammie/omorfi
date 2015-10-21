@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# CLI stuff
 from sys import stderr, stdin, stdout
 from argparse import ArgumentParser, FileType
+# omorfi
 from omorfi.omorfi import Omorfi
-
+# statistics
+from time import perf_counter, process_time
+# string munging
 import re
 
 def get_lemmas(anal):
@@ -42,7 +46,11 @@ def format_feats_ud(anal):
         key = f.split("=")[0].lstrip("[")
         value = f.split("=")[1].rstrip("]")
         if key == 'CASE':
-            rvs['Case'] = value[0] + value[1:].lower()
+            if value == 'LAT':
+                # XXX: hack to retain compability
+                rvs['Number'] = 'Sing'
+            else:
+                rvs['Case'] = value[0] + value[1:].lower()
         elif key == 'NUM':
             if value == 'SG':
                 rvs['Number'] = 'Sing'
@@ -54,9 +62,15 @@ def format_feats_ud(anal):
             elif 'PAST' in value:
                 rvs['Tense'] = 'Past'
         elif key == 'MOOD':
-            rvs['Mood'] = value[0] + value[1:].lower()
+            if value == 'INDV':
+                rvs['Mood'] = 'Ind'
+            else:
+                rvs['Mood'] = value[0] + value[1:].lower()
         elif key == 'VOICE':
-            rvs['Voice'] = value[0] + value[1:].lower()
+            if value == 'PSS':
+                rvs['Voice'] = 'Pass'
+            elif value == 'ACT':
+                rvs['Voice'] = 'Act'
         elif key == 'PERS':
             rvs['VerbForm'] = 'Fin'
             if 'SG' in value:
@@ -110,9 +124,11 @@ def format_feats_ud(anal):
                 rvs['InfForm'] = '5'
         elif key == 'CMP':
             if value == 'SUP':
-                rvs['degree'] = 'Sup'
+                rvs['Degree'] = 'Sup'
             elif value == 'CMP':
-                rvs['degree'] = 'Cmp'
+                rvs['Degree'] = 'Cmp'
+            elif value == 'POS':
+                rvs['Degree'] = 'Pos'
         elif key == 'SUBCAT':
             if value == 'NEG':
                 rvs['Negative'] = 'Yes'
@@ -180,7 +196,7 @@ def format_feats_ud(anal):
             print("in", anal[0].output)
             exit(1)
     rv = ''
-    for k,v in rvs.items():
+    for k,v in sorted(rvs.items()):
         rv += k + '=' + v + '|'
     if len(rvs) != 0:
         return rv.rstrip('|')
@@ -206,6 +222,10 @@ def format_upos_tdt(upos):
         return 'Punct'
     elif upos == 'SYM':
         return 'Symb'
+    elif upos == 'INTJ':
+        return 'Interj'
+    elif upos == 'NUM':
+        return 'Num'
     else:
         return 'X'
 
@@ -291,6 +311,8 @@ def main():
             help="print verbosely while processing")
     a.add_argument('-o', '--output', metavar="OUTFILE", dest="outfile",
             help="print output into OUTFILE", type=FileType('w'))
+    a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
+            help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-F', '--format', metavar='FORMAT', required=True,
             help="Output in format compatible with FORMAT",
             choices=['xerox', 'apertium', 'vislcg3', 'conllx', 'conllu'])
@@ -312,6 +334,15 @@ def main():
         options.outfile = stdout
     if options.verbose:
         print("writing to", options.outfile.name)
+    if not options.statfile:
+        options.statfile = stdout
+    # statistics
+    realstart = perf_counter()
+    cpustart = process_time()
+    tokens = 0
+    unknowns = 0
+    if options.format == 'conllu':
+        print('# doc-name:', options.infile.name, file=options.outfile)
     for line in options.infile:
         line = line
         if not line or line == '':
@@ -322,10 +353,23 @@ def main():
             print("# sentence-text:", line.strip(), file=options.outfile)
         for surf in surfs:
             i += 1
+            tokens += 1
             anals = omorfi.analyse(surf)
             print_analyses(i, surf, anals, options.format, options.outfile)
+            if len(anals) == 0 or (len(anals) == 1 and 
+                    'UNKNOWN' in anals[0].output):
+                unknowns += 1
         if options.format in ['conllx', 'conllu']:
             print(file=options.outfile)
+    cpuend = process_time()
+    realend = perf_counter()
+    if options.statfile:
+        print("Tokens:", tokens, "Unknown:", unknowns, unknowns / tokens * 100,
+                "%", file=options.statfile)
+        print("CPU time:", cpuend-cpustart, "Real time:", realend-realstart,
+                file=options.statfile)
+        print("Tokens per timeunit:", tokens/(realend-realstart), 
+                file=options.statfile)
     exit(0)
 
 if __name__ == "__main__":
