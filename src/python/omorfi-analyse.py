@@ -182,7 +182,10 @@ def format_feats_ud(anal):
     rv = ''
     for k,v in rvs.items():
         rv += k + '=' + v + '|'
-    return rv.rstrip('|')
+    if len(rvs) != 0:
+        return rv.rstrip('|')
+    else:
+        return '_'
 
 def format_upos_tdt(upos):
     if upos in ['NOUN', 'PROPN']:
@@ -267,15 +270,15 @@ def print_analyses_vislcg3(surf, anals, outfile):
 
 def print_analyses_conllx(wordn, surf, anals, outfile):
     print(wordn, surf, "#".join(get_lemmas(anals[0])),
-            "-", "-", anals[0].output,
-            "-", "-", "-", "-", sep="\t", file=outfile)
+            "_", "_", anals[0].output,
+            "_", "_", "_", "_", sep="\t", file=outfile)
 
 def print_analyses_conllu(wordn, surf, anals, outfile):
     print(wordn, surf, "#".join(get_lemmas(anals[0])), 
             get_last_feat("UPOS", anals[0]), 
             format_upos_tdt(get_last_feat("UPOS", anals[0])),
             format_feats_ud(anals),
-            "-", "-", "-", "-", sep="\t", file=outfile)
+            "_", "_", "_", "_", sep="\t", file=outfile)
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -316,7 +319,7 @@ def main():
         surfs = omorfi.tokenise(line)
         i = 0
         if options.format == 'conllu':
-            print("# sentence-text: ", line.strip(), file=options.outfile)
+            print("# sentence-text:", line.strip(), file=options.outfile)
         for surf in surfs:
             i += 1
             anals = omorfi.analyse(surf)
