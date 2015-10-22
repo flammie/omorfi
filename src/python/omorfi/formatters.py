@@ -167,6 +167,7 @@ def format_root_lexicon_lexc(format):
 0   PROPN ;
 0   ACRONYM ;
 0   ABBREVIATION    ;
+0   X    ;
 """
     if format != 'generic':
         root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"

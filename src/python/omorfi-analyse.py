@@ -155,6 +155,8 @@ def format_feats_ud(anal):
             rvs['PronType'] = value[0] + value[1:].lower()
         elif key == 'CLIT':
             rvs['Clitic'] = value[0] + value[1:].lower()
+        elif key == 'FOREIGN':
+            rvs['Foreign'] = value[0] + value[1:].lower()
         elif key == 'STYLE':
             if value in ['DIALECTAL', 'COLLOQUIAL']:
                 rvs['Style'] = 'Coll'

@@ -242,7 +242,8 @@ omor_multichars = {
         "[LEX=ADE]",
         "[LEX=ABL]",
         "[LEX=ALL]",
-        "[LEX=TTAIN]"
+        "[LEX=TTAIN]",
+        "[FOREIGN=FOREIGN]"
         }
 
 ktnkav_multichars = {
@@ -510,6 +511,7 @@ stuff2omor = {
         "LEMMA-START": "[WORD_ID=",
         "CONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
         "FTB3MAN": "",
+        "XForeign": "[FOREIGN=FOREIGN]",
         ".": "",
         "": ""}
 

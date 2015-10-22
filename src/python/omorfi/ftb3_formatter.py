@@ -460,6 +460,9 @@ def format_wordmap_lexc_ftb3(wordmap, format):
             wordmap['analysis'] += format_stuff_ftb3('PARTICLE')
     elif wordmap['pos'] == 'PROPN':
         print("???", wordmap)
+    elif wordmap['pos'] == 'X':
+        # FORGN etc.
+        wordmap['analysis'] += format_stuff_ftb3('NOUN')
     else:
         fail_guess_because(wordmap, [], ["PARTICLE", "PROPN",
             'NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL',
