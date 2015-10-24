@@ -232,9 +232,12 @@ def format_upos_tdt(upos):
         return 'X'
 
 def print_analyses_conllu(wordn, surf, anals, outfile):
+    upos = get_last_feat("UPOS", anals[0])
+    if not upos or upos == "":
+        upos = 'X'
     print(wordn, surf, "#".join(get_lemmas(anals[0])), 
-            get_last_feat("UPOS", anals[0]), 
-            format_upos_tdt(get_last_feat("UPOS", anals[0])),
+            upos, 
+            format_upos_tdt(upos),
             format_feats_ud(anals),
             "_", "_", "_", "_", sep="\t", file=outfile)
 
