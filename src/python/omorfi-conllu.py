@@ -30,7 +30,7 @@ def get_last_feat(feat, anal):
 def get_last_feats(anal):
     re_feats = re.compile("\[[^]]*\]")
     rvs = list()
-    feats = re_feats.finditer(anal[0].output)
+    feats = re_feats.finditer(anal.output)
     for feat in feats:
         if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
             rvs = list()
@@ -84,7 +84,6 @@ def format_feats_ud(anal):
             elif '3' in value:
                 rvs['Person'] = '3'
         elif key == 'POSS':
-            rvs['VerbForm'] = 'Fin'
             if 'SG' in value:
                 rvs['Number[psor]'] = 'Sing'
             elif 'PL' in value:
@@ -170,7 +169,7 @@ def format_feats_ud(anal):
                 continue
             else:
                 print("Unknown style", value)
-                print("in", anal[0].output)
+                print("in", anal.output)
                 exit(1)
         elif key in ['DRV', 'LEX']:
             if value in ['MINEN', 'STI']:
@@ -179,7 +178,7 @@ def format_feats_ud(anal):
                 continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
-                print("in", anal[0].output)
+                print("in", anal.output)
                 exit(1)
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE',
                 'GUESS', 'PROPER', 'POSITION']:
@@ -195,7 +194,7 @@ def format_feats_ud(anal):
             continue
         else:
             print("Unhandled", key, '=', value)
-            print("in", anal[0].output)
+            print("in", anal.output)
             exit(1)
     rv = ''
     for k,v in sorted(rvs.items()):
@@ -210,7 +209,7 @@ def format_upos_tdt(upos):
         return 'N'
     elif upos == 'ADJ':
         return 'A'
-    elif upos == 'VERB':
+    elif upos in ['VERB', 'AUX']:
         return 'V'
     elif upos in ['CONJ', 'SCONJ']:
         return 'C'
@@ -231,14 +230,28 @@ def format_upos_tdt(upos):
     else:
         return 'X'
 
-def print_analyses_conllu(wordn, surf, anals, outfile):
-    upos = get_last_feat("UPOS", anals[0])
+def try_analyses_conllu(original, wordn, surf, anals, outfile):
+    for anal in anals:
+        upos = get_last_feat("UPOS", anal)
+        if upos == original[3]:
+            feats = format_feats_ud(anal)
+            if feats == original[5]:
+                return print_analyses_conllu(wordn, surf, anal, outfile)
+    # no exact match found
+    for anal in anals:
+        upos = get_last_feat("UPOS", anal)
+        if upos == original[3]:
+            return print_analyses_conllu(wordn, surf, anal, outfile)
+    return print_analyses_conllu(wordn, surf, anals[0], outfile)
+
+def print_analyses_conllu(wordn, surf, anal, outfile):
+    upos = get_last_feat("UPOS", anal)
     if not upos or upos == "":
         upos = 'X'
-    print(wordn, surf, "#".join(get_lemmas(anals[0])), 
+    print(wordn, surf, "#".join(get_lemmas(anal)), 
             upos, 
             format_upos_tdt(upos),
-            format_feats_ud(anals),
+            format_feats_ud(anal),
             "_", "_", "_", "_", sep="\t", file=outfile)
 
 def main():
@@ -254,6 +267,8 @@ def main():
             help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
             help="print statistics to STATFILE", type=FileType('w'))
+    a.add_argument('-O', '--oracle', action='store_true',
+            help="match to values in input when parsing if possible")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -289,7 +304,10 @@ def main():
             index = int(fields[0])
             surf = fields[1]
             anals = omorfi.analyse(surf)
-            print_analyses_conllu(index, surf, anals, options.outfile)
+            if options.oracle:
+                try_analyses_conllu(fields, index, surf, anals, options.outfile)
+            else:
+                print_analyses_conllu(index, surf, anals[0], options.outfile)
             if len(anals) == 0 or (len(anals) == 1 and 
                     'UNKNOWN' in anals[0].output):
                 unknowns += 1
