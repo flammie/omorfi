@@ -159,15 +159,17 @@ ADV_VAAN
 ADV_YLIPÄÄNSÄ	
 AUX_AIKOA	koa
 AUX_JOUTUA	tua
+AUX_MAHTAA	taa
 AUX_OLLA	olla
 AUX_PITÄÄ	tää
 AUX_SAATTAA	taa
-AUX_MAHTAA	taa
 AUX_TAITAA	taa
 AUX_TARVITA	ta
 AUX_TÄYTYÄ	tyä
 AUX_VOIDA	ida
 CONJ_JA	
+DET_SE	e
+DET_YKSI	ksi
 INTJ_HAH	
 NOUN_51aavameri	ameri
 NOUN_51hienosokeri	sokeri
