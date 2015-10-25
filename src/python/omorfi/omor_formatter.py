@@ -28,6 +28,7 @@ from .error_logging import fail_formatting_missing_for
 omor_multichars = {
         '[WORD_ID=',
         '[UPOS=ADJ]',
+        '[UPOS=AUX]',
         '[UPOS=VERB]',
         '[UPOS=NOUN]',
         '[UPOS=PRON]',
@@ -401,6 +402,7 @@ stuff2omor = {
         "Xlat": "[CASE=LAT]",
         "Xacc": "[CASE=ACC]",
         "X???": "",
+        "AUX": "[UPOS=AUX]", 
         "NOUN": "[UPOS=NOUN]", 
         "VERB": "[UPOS=VERB]",
         "ADV": "[UPOS=ADV]",
