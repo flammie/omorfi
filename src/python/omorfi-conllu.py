@@ -174,7 +174,7 @@ def format_feats_ud(anal):
         elif key in ['DRV', 'LEX']:
             if value in ['MINEN', 'STI']:
                 rvs['Derivation'] = value[0] + value[1:].lower()
-            elif value in ['TTAIN', 'foo']:
+            elif value in ['TTAIN', 'S', 'MAISILLA']:
                 continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
@@ -310,7 +310,14 @@ def main():
         if len(fields) == 10:
             # conllu is 10 field format
             tokens += 1
-            index = int(fields[0])
+            try:
+                index = int(fields[0])
+            except ValueError:
+                if '-' in fields[0]:
+                    continue
+                else:
+                    print("Cannot figure out token index", fields[0], file=stderr)
+                    exit(1)
             surf = fields[1]
             anals = omorfi.analyse(surf)
             if options.oracle:

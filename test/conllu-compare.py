@@ -57,18 +57,22 @@ def main():
                         sep='\n')
                 exit(1)
         if infields[0] != reffields[0]:
-            skiplines += 1
-            print("misaligned (index)! IN:", infields[0], "REF:", reffields[0],
-                    "\n", hypline, refline, "skipping...", file=stderr)
-            if options.realign:
-                while hypline != "":
-                    skiplines += 1
-                    hypline = next(options.hypfile).strip()
-                while refline != "":
-                    refline = next(options.reffile).strip()
-                continue
+            if '-' in reffields[0]:
+                refline = next(options.reffile)
+                reffields = refline.strip().split('\t')
             else:
-                exit(1)
+                skiplines += 1
+                print("misaligned (index)! IN:", infields[0], "REF:", reffields[0],
+                        "\n", hypline, refline, "skipping...", file=stderr)
+                if options.realign:
+                    while hypline != "":
+                        skiplines += 1
+                        hypline = next(options.hypfile).strip()
+                    while refline != "":
+                        refline = next(options.reffile).strip()
+                    continue
+                else:
+                    exit(1)
         if infields[1] != reffields[1]:
             skiplines += 1
             print("misaligned (surface)! IN:", infields[1], "REF:", reffields[1],
