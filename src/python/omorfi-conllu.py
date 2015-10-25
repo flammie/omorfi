@@ -236,8 +236,17 @@ def try_analyses_conllu(original, wordn, surf, anals, outfile):
         if upos == original[3]:
             feats = format_feats_ud(anal)
             if feats == original[5]:
+                lemmas = "#".join(get_lemmas(anal))
+                if lemmas == original[2]:
+                    return print_analyses_conllu(wordn, surf, anal, outfile)
+    # no exact match found (re-try without lemma)
+    for anal in anals:
+        upos = get_last_feat("UPOS", anal)
+        if upos == original[3]:
+            feats = format_feats_ud(anal)
+            if feats == original[5]:
                 return print_analyses_conllu(wordn, surf, anal, outfile)
-    # no exact match found
+    # and re-try without feats
     for anal in anals:
         upos = get_last_feat("UPOS", anal)
         if upos == original[3]:
