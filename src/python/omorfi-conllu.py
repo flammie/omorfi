@@ -320,11 +320,14 @@ def main():
                     exit(1)
             surf = fields[1]
             anals = omorfi.analyse(surf)
-            if options.oracle:
-                try_analyses_conllu(fields, index, surf, anals, options.outfile)
-            else:
-                print_analyses_conllu(index, surf, anals[0], options.outfile)
-            if len(anals) == 0 or (len(anals) == 1 and 
+            if anals and len(anals) > 0:
+                if options.oracle:
+                    try_analyses_conllu(fields, index, surf, anals, 
+                            options.outfile)
+                else:
+                    print_analyses_conllu(index, surf, anals[0], 
+                            options.outfile)
+            if not anals or len(anals) == 0 or (len(anals) == 1 and 
                     'UNKNOWN' in anals[0].output):
                 unknowns += 1
         elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
