@@ -136,7 +136,7 @@ ADP_ALLE	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_HYVILLÄÄN	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True
 ADP_ILKOSILLAAN	ADP	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ADP_ISTUALLEEN	ADP	PARTICLE	99	None	False	False	back	None	None	obligatory	True
-ADP_KOTONA	ADV	PARTICLE	99	None	False	False	back	None	None	optional	True
+ADP_KOTONA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_LISÄKSI	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADP_NÄHDEN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADP_NÄKYVIIN	ADV	PARTICLE	99	None	False	False	front	None	None	optional	True
