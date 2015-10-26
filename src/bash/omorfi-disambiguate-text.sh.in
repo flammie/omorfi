@@ -1,7 +1,7 @@
 #!/bin/bash
 omorfidir="@prefix@/share/omorfi"
 bindir="@prefix@/bin"
-analyser="$bindir/omorfi-analyse.py"
+analyser="$bindir/omorfi-vislcg.py"
 PYTHON="@PYTHON@"
 CGPROC="@CGPROC@"
 args=$@
@@ -48,7 +48,7 @@ function check_omorfi() {
 
 function disambiguate() {
     cat $@ |\
-        "${PYTHON}" "${analyser}" -f "$omorfidir" -F vislcg3 |\
+        "${PYTHON}" "${analyser}" -f "$omorfidir" |\
         ${CGPROC} -f 0 "${omorfidir}"/omorfi.cg3bin
 }
 
