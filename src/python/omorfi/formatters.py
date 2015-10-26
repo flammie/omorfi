@@ -167,6 +167,8 @@ def format_root_lexicon_lexc(format):
 0   PROPN ;
 0   ACRONYM ;
 0   ABBREVIATION    ;
+0   AUX    ;
+0   DET    ;
 0   X    ;
 """
     if format != 'generic':
