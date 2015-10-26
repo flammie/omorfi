@@ -162,7 +162,8 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
 			python/omorfi-factorise.py \
-			python/omorfi-analyse.py
+			python/omorfi-vislcg.py \
+			python/omorfi-conllu.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
