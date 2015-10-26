@@ -62,6 +62,7 @@ def format_feats_ud(anal):
             elif 'PAST' in value:
                 rvs['Tense'] = 'Past'
         elif key == 'MOOD':
+            rvs['VerbForm'] = 'Fin'
             if value == 'INDV':
                 rvs['Mood'] = 'Ind'
             else:
@@ -72,11 +73,10 @@ def format_feats_ud(anal):
             elif value == 'ACT':
                 rvs['Voice'] = 'Act'
         elif key == 'PERS':
-            rvs['VerbForm'] = 'Fin'
             if 'SG' in value:
                 rvs['Number'] = 'Sing'
             elif 'PL' in value:
-                rvs['Number'] = 'Sing'
+                rvs['Number'] = 'Plur'
             if '1' in value:
                 rvs['Person'] = '1'
             elif '2' in value:
@@ -87,7 +87,7 @@ def format_feats_ud(anal):
             if 'SG' in value:
                 rvs['Number[psor]'] = 'Sing'
             elif 'PL' in value:
-                rvs['Number[psor]'] = 'Sing'
+                rvs['Number[psor]'] = 'Plur'
             if '1' in value:
                 rvs['Person[psor]'] = '1'
             elif '2' in value:
