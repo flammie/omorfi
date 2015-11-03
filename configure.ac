@@ -122,9 +122,9 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HIX], [hfst-conjunct], [no])
        AS_IF([test "x$HIX" = "xno"],
              [AC_MSG_ERROR([hfst-conjunct is needed])])
-       AC_PATH_PROG([HPROC], [hfst-proc], [no])
+       AC_PATH_PROG([HPROC], [hfst-proc hfst-apertium-proc], [no])
        AS_IF([test "x$HPROC" = "xno"],
-             [AC_MSG_ERROR([hfst-proc is needed for testing])])
+             [AC_MSG_WARN([hfst-proc is needed for some corpus analysis])])
        AC_PATH_PROG([HREP], [hfst-repeat], [no])
        AS_IF([test "x$HREP" = xno],
              [AC_MSG_ERROR([hfst-repeat is needed for edit distance repetition])])
@@ -170,6 +170,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HIX], $with_hfst/hfst-conjunct)
     AC_SUBST([HSPL], $with_hfst/hfst-split)
     AC_SUBST([HPROC], $with_hfst/hfst-proc)
+    AC_SUBST([HAPROC], $with_hfst/hfst-apertium-proc)
     AC_SUBST([HREP], $with_hfst/hfst-repeat)
     AC_SUBST([HCAT], $with_hfst/hfst-concatenate)
     AC_SUBST([HUN], $with_hfst/hfst-disjunct)
