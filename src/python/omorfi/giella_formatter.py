@@ -240,8 +240,8 @@ stuff2giella = {"Bc": "#",
         "Tpot": "%+Pot", 
         "Tpres": "%+Prs",
         "Topt": "%+Opt",
-        "Uarch": "",
-        "Udial": "%+Dial", 
+        "Uarch": "%+Use/Arch",
+        "Udial": "%+Dial/Finland", 
         "Urare": "%+Use/Marg",
         "Unonstd": "%+Err/Orth",
         "Vact": "%+Act",
@@ -358,7 +358,7 @@ def format_continuation_lexc_giella(anals, surf, cont):
     ftbstring = format_analysis_lexc_giella(anals)
     if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
         ftbstring = lexc_escape(surf) + ftbstring
-    surf = lexc_escape(surf)
+    surf = lexc_escape(surf.replace(morph_boundary, ">").replace(deriv_boundary("»")))
     return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
 
 def format_wordmap_lexc_giella(wordmap):
@@ -386,7 +386,7 @@ def format_wordmap_lexc_giella(wordmap):
     if wordmap['symbol']:
         for subcat in wordmap['symbol'].split('|'):
             wordmap['analysis'] += format_stuff_giella(subcat)
-    lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "#").replace(weak_boundary, "").replace(deriv_boundary, "»"))
+    lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "#").replace(weak_boundary, "").replace(deriv_boundary, "»").replace(morph_boundary(">")))
     retvals = []
     retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
                 wordmap['new_para'])]
