@@ -75,7 +75,8 @@ def format_wordmap_lexc_generic(wordmap):
     return "\n".join(retvals)
 
 def format_wordmap_lexc_labeled_segments(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['stub']) + "[" + wordmap['upos'] + ']'
+    wordmap['analysis'] = lexc_escape(wordmap['stub']) + "[UPOS=" + wordmap['upos'] + ']'
+    wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, "#")
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
     retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
@@ -87,18 +88,19 @@ def format_continuation_lexc_labeled_segments(anals, surf, cont):
     # >i>ssa Pl|Ine -> |i|PL|ssa|INE
     # >i -> |i|ACT|PAST|SG3
     foo = surf
-    foo = foo.replace(morph_boundary, "", 1)
-    foo = foo.replace(deriv_boundary, "")
-    foo = foo.replace(newword_boundary, "##")
-    foo = foo.replace(word_boundary, "#")
+    foo = foo.replace(morph_boundary, "[MB=LEFT]", 1)
+    foo = foo.replace(newword_boundary, "[WB=?]")
+    foo = foo.replace(word_boundary, "[WB=+]")
     restanals = []
     for anal in anals.split('|'):
-        if "{MB}" in foo:
-            foo = foo.replace(morph_boundary, "["  + anal+ "]", 1)
+        if anal.startswith("D") and "{DB]" in foo:
+            foo = foo.replace(deriv_boundary, "[DB=" + anal + "]", 1)
+        elif "{MB}" in foo:
+            foo = foo.replace(morph_boundary, "[MB="  + anal+ "]", 1)
         else:
             restanals.append(anal)
     if len(restanals) > 0:
-        foo += "[" + "][".join(restanals) + "]"
+        foo += "[TRAIL=" + "][TRAIL=".join(restanals) + "]"
 
     return "%s:%s\t%s ; \n" %(foo.replace(optional_hyphen, newword_boundary),
             surf, cont)
