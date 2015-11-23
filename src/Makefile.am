@@ -82,11 +82,17 @@ SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
 # {{{Generated files
 if WANT_HFST
 GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
-				 generated/omorfi.lemmatise.hfst \
-				 generated/omorfi.tokenise.hfst \
-				 generated/omorfi.segment.hfst \
-				 generated/omorfi.hyphenate-rules.hfst
+				 generated/omorfi.tokenise.hfst
+if WANT_LEMMATISE
+GENERIC_AUTOMATA+=generated/omorfi.lemmatise.hfst
+endif
+if WANT_SEGMENTS
+GENERIC_AUTOMATA+=generated/omorfi.segment.hfst
+endif
+if WANT_HYPHENATE
+GENERIC_AUTOMATA+=generated/omorfi.hyphenate-rules.hfst
 # hyphenate-dict is unusable atm
+endif
 GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-uppercase-first.twolc \
 				  generated/omorfi-recase-any.twolc \
