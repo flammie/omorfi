@@ -98,7 +98,7 @@ def format_continuation_lexc_labeled_segments(anals, surf, cont):
         else:
             restanals.append(anal)
     if len(restanals) > 0:
-        foo += "|" + "|".join(restanals)
+        foo += "[" + "][".join(restanals) + "]"
 
     return "%s:%s\t%s ; \n" %(foo.replace(optional_hyphen, newword_boundary),
             surf, cont)
