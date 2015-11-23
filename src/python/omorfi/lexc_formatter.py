@@ -20,7 +20,8 @@
 # functions for formatting the database data to lexc
 
 from .settings import common_multichars, version_id_easter_egg, \
-        optional_hyphen, word_boundary, stub_boundary, newword_boundary
+        optional_hyphen, word_boundary, stub_boundary, newword_boundary, \
+        morph_boundary, deriv_boundary
 
 def lexc_escape(s):
     '''Escape symbols that have special meaning in lexc.'''
@@ -73,14 +74,27 @@ def format_wordmap_lexc_generic(wordmap):
     retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
     return "\n".join(retvals)
 
+def format_wordmap_lexc_labeled_segments(wordmap):
+    wordmap['analysis'] = lexc_escape(wordmap['stub']) + "[" + wordmap['upos'] + ']'
+    retvals = []
+    lex_stub = lexc_escape(wordmap['stub'])
+    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
+    return "\n".join(retvals)
+
 def format_continuation_lexc_labeled_segments(anals, surf, cont):
     surf = lexc_escape(surf)
+    # mostly suffixes: e.g.
+    # >i>ssa Pl|Ine -> |i|PL|ssa|INE
+    # >i -> |i|ACT|PAST|SG3
     foo = surf
-    foo = foo.replace("{MB}", "", 1)
+    foo = foo.replace(morph_boundary, "", 1)
+    foo = foo.replace(deriv_boundary, "")
+    foo = foo.replace(newword_boundary, "##")
+    foo = foo.replace(word_boundary, "#")
     restanals = []
     for anal in anals.split('|'):
         if "{MB}" in foo:
-            foo = foo.replace("{MB}", "|"  + anal+ "|", 1)
+            foo = foo.replace(morph_boundary, "["  + anal+ "]", 1)
         else:
             restanals.append(anal)
     if len(restanals) > 0:

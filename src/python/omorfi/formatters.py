@@ -38,7 +38,7 @@ from .giella_formatter import format_stuff_giella, \
         format_wordmap_lexc_giella, format_multichars_lexc_giella
 
 from .lexc_formatter import format_wordmap_lexc_generic, \
-        format_continuation_lexc_generic, format_continuation_lexc_labeled_segments
+        format_continuation_lexc_generic, format_continuation_lexc_labeled_segments, format_wordmap_lexc_labeled_segments
 from .error_logging import just_fail
 
 def format_stuff(stuff, format):
@@ -67,10 +67,12 @@ def format_wordmap_lexc(wordmap, format):
         return format_wordmap_lexc_apertium(wordmap)
     elif format.startswith("google"):
         return format_wordmap_lexc_google(wordmap)
-    elif format.startswith("generic") or format.startswith('labeled'):
+    elif format.startswith("generic"):
         return format_wordmap_lexc_generic(wordmap)
     elif format.startswith("giella"):
         return format_wordmap_lexc_giella(wordmap)
+    elif format.startswith("labeled"):
+        return format_wordmap_lexc_labeled_segments(wordmap)
     else:
         just_fail("Wrong format for lexc formatting: " + format)
         exit(1)
