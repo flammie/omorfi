@@ -154,7 +154,7 @@ endif
 # destnations directories for this stuff at the top of the file
 pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA) $(VISLCG3_GENERATED) \
-				$(FTB1_AUTOMATA)
+				$(FTB1_AUTOMATA) $(LABELSEGMENT_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 pkgdata_DATA+=generated/master.tsv
 
