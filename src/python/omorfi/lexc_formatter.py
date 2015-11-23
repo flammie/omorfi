@@ -73,3 +73,27 @@ def format_wordmap_lexc_generic(wordmap):
     retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
     return "\n".join(retvals)
 
+def format_continuation_lexc_labeled_segments(anals, surf, cont):
+    surf = lexc_escape(surf)
+    foo = surf
+    foo = foo.replace("{MB}", "", 1)
+    restanals = []
+    for anal in anals.split('|'):
+        if "{MB}" in foo:
+            foo = foo.replace("{MB}", "|"  + anal+ "|", 1)
+        else:
+            restanals.append(anal)
+    if len(restanals) > 0:
+        foo += "|" + "|".join(restanals)
+
+    return "%s:%s\t%s ; \n" %(foo.replace(optional_hyphen, newword_boundary),
+            surf, cont)
+
+
+def format_wordmap_lexc_generic(wordmap):
+    wordmap['analysis'] = lexc_escape(wordmap['stub']) + stub_boundary
+    retvals = []
+    lex_stub = lexc_escape(wordmap['stub'])
+    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
+    return "\n".join(retvals)
+

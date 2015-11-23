@@ -32,9 +32,9 @@ AC_ARG_ENABLE([ftb1],
 AM_CONDITIONAL([WANT_FTB1], [test "x$enable_ftb1" = xyes])
 AC_ARG_ENABLE([ftb3],
               [AS_HELP_STRING([--enable-ftb3],
-                              [generate ftb3 automata @<:@default=enable@:>@])],
+                              [generate ftb3 automata @<:@default=disable@:>@])],
                              [enable_ftb3=$enableval],
-                             [enable_ftb3=yes])
+                             [enable_ftb3=no])
 AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
 AC_ARG_ENABLE([omor],
               [AS_HELP_STRING([--enable-omor],
@@ -46,14 +46,20 @@ AC_ARG_ENABLE([apertium],
               [AS_HELP_STRING([--enable-apertium],
                               [generate apertium automata @<:@default=enable@:>@])],
                              [enable_apertium=$enableval],
-                             [enable_apertium=yes])
+                             [enable_apertium=no])
 AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" = xyes])
 AC_ARG_ENABLE([giella],
               [AS_HELP_STRING([--enable-giella],
-                              [generate giella automata @<:@default=enable@:>@])],
+                              [generate giella automata @<:@default=disable@:>@])],
                              [enable_giella=$enableval],
-                             [enable_giella=yes])
+                             [enable_giella=no])
 AM_CONDITIONAL([WANT_GIELLA], [test "x$enable_giella" = xyes])
+AC_ARG_ENABLE([labeled_segments],
+              [AS_HELP_STRING([--enable-labeled-segments],
+                              [generate labeled segmenter @<:@default=disable@:>@])],
+                             [enable_labeled_segments=$enableval],
+                             [enable_labeled_segments=no])
+AM_CONDITIONAL([WANT_LABELED_SEGMENTS], [test "x$enable_labeled_segments" = xyes])
 
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],

@@ -38,7 +38,7 @@ from .giella_formatter import format_stuff_giella, \
         format_wordmap_lexc_giella, format_multichars_lexc_giella
 
 from .lexc_formatter import format_wordmap_lexc_generic, \
-        format_continuation_lexc_generic
+        format_continuation_lexc_generic, format_continuation_lexc_labeled_segments
 from .error_logging import just_fail
 
 def format_stuff(stuff, format):
@@ -48,7 +48,7 @@ def format_stuff(stuff, format):
         return format_stuff_ftb3(stuff)
     elif format.startswith('google'):
         return format_stuff_google(stuff)
-    elif format.startswith('generic'):
+    elif format.startswith('generic') or format.startswith('labeled'):
         return ''
     elif format.startswith('apertium'):
         return format_stuff_apertium(stuff)
@@ -67,7 +67,7 @@ def format_wordmap_lexc(wordmap, format):
         return format_wordmap_lexc_apertium(wordmap)
     elif format.startswith("google"):
         return format_wordmap_lexc_google(wordmap)
-    elif format.startswith("generic"):
+    elif format.startswith("generic") or format.startswith('labeled'):
         return format_wordmap_lexc_generic(wordmap)
     elif format.startswith("giella"):
         return format_wordmap_lexc_giella(wordmap)
@@ -90,6 +90,8 @@ def format_continuation_lexc(fields, format):
             stuffs += format_continuation_lexc_apertium(fields[1], fields[2], cont)
         elif format.startswith("giella"):
             stuffs += format_continuation_lexc_giella(fields[1], fields[2], cont)
+        elif format.startswith('labeled'):
+            stuffs += format_continuation_lexc_labeled_segments(fields[1], fields[2], cont)
         else:
             just_fail("missing format in continuation lexc " + format)
             exit(1)
@@ -125,7 +127,7 @@ def format_multichars_lexc(format):
         multichars += "!! Google universal pos set:\n"
         for mcs in google_multichars:
             multichars += mcs + "\n"
-    elif format.startswith("generic"):
+    elif format.startswith("generic") or format.startswith('labeled'):
         pass
     elif format.startswith("apertium"):
         multichars += format_multichars_lexc_apertium()
@@ -171,7 +173,7 @@ def format_root_lexicon_lexc(format):
 0   DET    ;
 0   X    ;
 """
-    if format != 'generic':
+    if format != 'generic' or format != 'labeled':
         root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"
         root += format_stuff('B→', format) + ':-   NOUN ;\n'
         root += format_stuff('B→', format) + ':-   ADJ ;\n'
