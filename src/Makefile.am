@@ -146,7 +146,7 @@ GIELLA_GENERATED=generated/omorfi-giella.lexc \
 
 endif
 if WANT_LABELED_SEGMENTS
-LABELSEGMENT_AUTOMATA=generated/omorfi-labelsegments.analyse.hfst
+LABELSEGMENT_AUTOMATA=generated/omorfi.labelsegment.hfst
 LABELSEGMENT_GENERATED=generated/omorfi-labelsegments.lexc
 endif
 
@@ -513,7 +513,7 @@ generated/temporary-labelsegments.unbounded.hfst: generated/temporary-labelsegme
 
 
 # 
-generated/omorfi-labelsegments.analyse.hfst: generated/temporary-labelsegments.unbounded.hfst
+generated/omorfi.labelsegment.hfst: generated/temporary-labelsegments.unbounded.hfst
 	$(HINV) $< | $(HF2F) -f olw -o $@
 
 # }}}
