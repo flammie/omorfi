@@ -144,8 +144,8 @@ class Omorfi:
             this.segmenters[parts[0]] = trans
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if this._verbosity:
-                print('segmenter', parts[0])
-            this.segmenters[parts[0]] = trans
+                print('labelsegmenter', parts[0])
+            this.labelsegmenters[parts[0]] = trans
         elif this._verbosity:
             print('skipped', parts)
 
