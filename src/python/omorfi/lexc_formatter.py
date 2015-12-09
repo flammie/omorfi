@@ -93,14 +93,14 @@ def format_continuation_lexc_labeled_segments(anals, surf, cont):
     foo = foo.replace(word_boundary, "[WB=+]")
     restanals = []
     for anal in anals.split('|'):
-        if anal.startswith("D") and "{DB]" in foo:
+        if anal.startswith("D") and "[DB]" in foo:
             foo = foo.replace(deriv_boundary, "[DB=" + anal + "]", 1)
         elif "{MB}" in foo:
             foo = foo.replace(morph_boundary, "[MB="  + anal+ "]", 1)
         else:
             restanals.append(anal)
-    if len(restanals) > 0:
-        foo += "[TRAIL=" + "][TRAIL=".join(restanals) + "]"
+    if restanals and len(restanals) > 0:
+        foo += "[TRAILS=→" + "][B=".join(restanals) + "]"
 
     return "%s:%s\t%s ; \n" %(foo.replace(optional_hyphen, newword_boundary),
             surf, cont)
