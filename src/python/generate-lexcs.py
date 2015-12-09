@@ -80,6 +80,14 @@ def main():
                 "do not have SEPs")
     ap.add_argument("--strip", action="store",
             metavar="STRIP", help="strip STRIP from fields before using")
+    ap.add_argument("--omor-new-para", action="store_true", default=False,
+            help="include NEW_PARA= in raw analyses")
+    ap.add_argument("--omor-allo", action="store_true", default=False,
+            help="include ALLO= in raw analyses")
+    ap.add_argument("--omor-props", action="store_true", default=False,
+            help="include PROPER= in raw analyses")
+    ap.add_argument("--omor-sem", action="store_true", default=False,
+            help="include SEM= in raw analyses")
 
     def FormatArgType(v):
         baseformats = ["omor", "apertium",

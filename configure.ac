@@ -23,6 +23,42 @@ AC_ARG_ENABLE([voikko],
                               [enable_voikko=yes])
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
+# main tagset switches
+AC_ARG_ENABLE([omor],
+              [AS_HELP_STRING([--enable-omor],
+                              [generate omor automata @<:@default=enable@:>@])],
+                             [enable_omor=$enableval],
+                             [enable_omor=yes])
+AM_CONDITIONAL([WANT_OMOR], [test "x$enable_omor" = xyes])
+AC_ARG_ENABLE([omor_paradigms],
+              [AS_HELP_STRING([--enable-omor-paradigms],
+                              [include new_para feature in omors @<:@default=disable@:>@])],
+                              [enable_omor_paradigms=$enableval],
+                              [enable_omor_paradigms=no])
+AS_IF([test x$enable_omor_paradigms != xno], 
+      [AC_SUBST([OMORPARAFLAG], ["--omor-new-para"])])
+AC_ARG_ENABLE([omor_allomorphs],
+              [AS_HELP_STRING([--enable-omor-allomorphs],
+                              [include allomorph feature in omors @<:@default=disable@:>@])],
+                              [enable_omor_allomorphs=$enableval],
+                              [enable_omor_allomorphs=no])
+AS_IF([test x$enable_omor_allomorphs != xno],
+      [AC_SUBST([OMORALLOFLAG], ["--omor-allo"])])
+AC_ARG_ENABLE([omor_proper_classes],
+              [AS_HELP_STRING([--enable-omor-proper-classes],
+                              [include proper feature in omors @<:@default=enable@:>@])],
+                              [enable_omor_proper_classes=$enableval],
+                              [enable_omor_proper_classes=yes])
+AS_IF([test enable_omor_proper_classes != xno],
+      [AC_SUBST([OMORPROPFLAG], ["--omor-props"])])
+AC_ARG_ENABLE([omor_semantics],
+              [AS_HELP_STRING([--enable-omor-semantics],
+                              [include sem feature in omors @<:@default=enable@:>@])],
+                              [enable_omor_semantics=$enableval],
+                              [enable_omor_semantics=yes])
+AS_IF([test x$enable_omor_semantics != xno],
+      [AC_SUBST([OMORSEMFLAG], ["--omor-sem"])])
+
 # generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([ftb1],
               [AS_HELP_STRING([--enable-ftb1],
@@ -36,12 +72,6 @@ AC_ARG_ENABLE([ftb3],
                              [enable_ftb3=$enableval],
                              [enable_ftb3=no])
 AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
-AC_ARG_ENABLE([omor],
-              [AS_HELP_STRING([--enable-omor],
-                              [generate omor automata @<:@default=enable@:>@])],
-                             [enable_omor=$enableval],
-                             [enable_omor=yes])
-AM_CONDITIONAL([WANT_OMOR], [test "x$enable_omor" = xyes])
 AC_ARG_ENABLE([apertium],
               [AS_HELP_STRING([--enable-apertium],
                               [generate apertium automata @<:@default=enable@:>@])],
@@ -294,7 +324,7 @@ cat <<EOF
 Configured $PACKAGE_STRING:
 =======
 * Analysers: $with_hfst
-    * OMOR $enable_omor
+    * OMOR $enable_omor $OMORPROPFLAG $OMORALLOFLAG $OMORPARAFLAG $OMORSEMFLAG
     * FTB3.1 $enable_ftb3
     * apertium $enable_apertium
     * giella: $enable_giella
