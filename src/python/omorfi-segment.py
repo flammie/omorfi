@@ -5,12 +5,12 @@ from argparse import ArgumentParser
 from omorfi.omorfi import Omorfi
 import re
 
-def print_segments(fmt, segments, labelsegments, surf):
+def print_segments(fmt, segments, labelsegments, surf, outfile):
     if fmt == 'labels-moses-factors':
         if labelsegments:
             # öykkärö[UPOS=VERB]i[TRAILS=→][MB=LEFT]dä[TRAILS=→Vpss][?=Tpres][?=Ppe4][?=Ncon][TRAILS=→] 
-            analysis = labelsegments[0].input
-            analysis = analysis.replace("{STUB}", "")
+            analysis = labelsegments[0].output
+            analysis = analysis.replace("{STUB}", "").replace("{wB}", "")
             # lets do it state-machine way
             intag = False
             stacktag = []
@@ -39,9 +39,9 @@ def print_segments(fmt, segments, labelsegments, surf):
                         outs += '.' + currtag + ' '
                     currtag = ''
                     intag = False
-            print(outs.replace("TRAILS=→", "",).replace("UPOS=", "").replace(" .", ".").replace("?=", "").replace("MB=LEFT", "").replace("..", ".").replace(". ", " "))
+            print(outs.replace("TRAILS=→", "",).replace("UPOS=", "").replace(" .", ".").replace("?=", "").replace("MB=LEFT", "").replace("..", ".").replace(". ", " ").replace("MB=", "").replace("DB=", ""), end=' ', file=outfile)
         else:
-            print(surf, end='|UNK')
+            print(surf, end='|UNK ', file=outfile)
     elif fmt == 'both-lines':
         if segments and labelsegments:
             print(segments[0].input, labelsegments[0].input, end=' ', file=outfile)
@@ -101,7 +101,7 @@ def main():
         for surf in surfs:
             segments = omorfi.segment(surf)
             labelsegments = omorfi.labelsegment(surf)
-            print_segments(options.output_format, segments, labelsegments, surf)
+            print_segments(options.output_format, segments, labelsegments, surf, outfile)
         print(file=outfile)
     exit(0)
 
