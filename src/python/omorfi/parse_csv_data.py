@@ -67,7 +67,7 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
             elif extra_fields[0] == 'subcat':
                 wordmap['subcat'] = extra_fields[1].upper()
             elif extra_fields[0] == 'sem':
-                wordmap['sem'].append(extra_fields[1].upper())
+                wordmap['sem'] = extra_fields[1].upper()
             elif extra_fields[0] == 'particle':
                 wordmap['particle'] = extra_fields[1].upper()
             elif extra_fields[0] == 'pronunciation':

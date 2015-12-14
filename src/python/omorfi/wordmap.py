@@ -24,11 +24,11 @@ def init_wordmap():
     wordmap = {"upos": None, "lemma": None, "homonym": 0, "new_para": None, "kotus_tn": None,
                "kotus_av": None, "plurale_tantum": None,
                "possessive": None, "clitics": None,
-               "is_proper": None, "proper_noun_class": list(), "style": None,
+               "is_proper": None, "proper_noun_class": None, "style": None,
                "stub": None, "gradestem": None, "twolstem": None, 
                "grade_dir": None, "harmony": None, "is_suffix": None,
                "is_prefix": None, "stem_vowel": None, "stem_diphthong": None,
-               "sem": list(), "particle": None, "pronunciation": None,
+               "sem": None, "particle": None, "pronunciation": None,
                "boundaries": None, "bracketstub": None, "origin": None,
                "extra_i": False, "extra_e": False, "real_pos": None,
                "symbol": None, "argument": None , "pronoun": None,
@@ -48,14 +48,3 @@ def get_wordmap_fieldnames():
             "real_pos", "symbol", "argument", "pronoun", "abbr",
             "lex", "numtype", "prontype", "pos"]
 
-# Split a wordmap into a list of wordmaps each having a different item of original
-# <field> list in their respective <field>, or only '' if <field> list was empty.
-def split_wordmap_by_field(wordmap, field):
-    if not wordmap[field]:
-        wordmap[field] = ['']
-    wordmaps = []
-    for value in wordmap[field]:
-        wm_copy = dict(wordmap)
-        wm_copy[field] = value
-        wordmaps.append(wm_copy)
-    return wordmaps

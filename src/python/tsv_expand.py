@@ -27,7 +27,7 @@ from time import strftime
 import argparse
 import csv
 
-from omorfi.wordmap import init_wordmap, get_wordmap_fieldnames, split_wordmap_by_field
+from omorfi.wordmap import init_wordmap, get_wordmap_fieldnames
 from omorfi.parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
 from omorfi.stub import stub_all_ktn, stub_all_new_para
 #from guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation,
