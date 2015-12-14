@@ -33,8 +33,8 @@ from time import strftime
 import argparse
 import csv
 
-from omorfi.formatters import format_wordmap_lexc, format_multichars_lexc, \
-        format_root_lexicon_lexc, format_continuation_lexc
+from omorfi.omor_formatter import OmorFormatter
+
 from omorfi.lexc_formatter import format_copyright_lexc
 from omorfi.parse_csv_data import parse_defaults_from_tsv
 
@@ -80,6 +80,9 @@ def main():
                 "do not have SEPs")
     ap.add_argument("--strip", action="store",
             metavar="STRIP", help="strip STRIP from fields before using")
+    ap.add_argument("--format", "-f", action="store", default="omor",
+            help="use specific output format for lexc data",
+            choices=["omor", "giella", "ftb3", "ftb1", "generic"])
     ap.add_argument("--omor-new-para", action="store_true", default=False,
             help="include NEW_PARA= in raw analyses")
     ap.add_argument("--omor-allo", action="store_true", default=False,
@@ -88,22 +91,15 @@ def main():
             help="include PROPER= in raw analyses")
     ap.add_argument("--omor-sem", action="store_true", default=False,
             help="include SEM= in raw analyses")
-
-    def FormatArgType(v):
-        baseformats = ["omor", "apertium",
-                "giella", "ftb3", "generic", "google", "labeled"]
-        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
-        parts = v.split('+')
-        if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
-        for ex in parts[1:]:
-            if ex not in extras:
-                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
-        return v
-    ap.add_argument("--format", "-f", action="store", default="omor",
-            help="use specific output format for lexc data",
-            type=FormatArgType)
     args = ap.parse_args()
+
+    formatter = None
+    if args.format == 'omor':
+        formatter = OmorFormatter(args.verbose, new_para=args.omor_new_para,
+                allo=args.omor_allo, props=args.omor_props, sem=args.omor_sem)
+    else:
+        print("DIDNT CONVERT FORMATTER YET", args.format)
+        exit(1)
     # check args
     if args.strip == '"' or args.strip == "'":
         quoting = csv.QUOTE_ALL
@@ -128,11 +124,11 @@ def main():
             print("Not writing closed parts-of-speech data in", 
                     ",".join(args.exclude_pos))
     # print definitions to rootfile
-    print(format_copyright_lexc(), file=args.output)
+    print(formatter.copyright_lexc(), file=args.output)
     if args.verbose:
         print("Creating Multichar_Symbols and Root")
-    print(format_multichars_lexc(args.format), file=args.output)
-    print(format_root_lexicon_lexc(args.format), file=args.output)
+    print(formatter.multichars_lexc(), file=args.output)
+    print(formatter.root_lexicon_lexc(), file=args.output)
     # read from csv files
     for tsv_filename in args.masterfilenames:
         if args.verbose:
@@ -143,7 +139,7 @@ def main():
         print("! Omorfi stubs generated from", tsv_filename,
               "\n! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
               "\n! params: ", ' '.join(argv), file=args.output)
-        print(format_copyright_lexc(), file=args.output)
+        print(formatter.copyright_lexc(), file=args.output)
         curr_lexicon = ""
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
@@ -185,17 +181,17 @@ def main():
                 if wordmap['real_pos']:
                     wordmap['pos'] = wordmap['real_pos']
                 # format output
-                print(format_wordmap_lexc(wordmap, args.format), 
+                print(formatter.wordmap2lexc(wordmap), 
                       file=args.output)
             if len(postponed_suffixes) > 0:
                 print("\nLEXICON SUFFIX\n\n", file=args.output)
                 for suffix in postponed_suffixes:
-                    print(format_wordmap_lexc(suffix, args.format),
+                    print(formatter.wordmap2lexc(suffix),
                             file=args.output)
             for key, words in postponed_abbrs.items():
                 print("\nLEXICON", key, "\n\n", file=args.output)
                 for word in words:
-                    print(format_wordmap_lexc(word, args.format),
+                    print(formatter.wordmap2lexc(word),
                             file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
@@ -207,7 +203,7 @@ def main():
         print("! Omorfi stemparts generated from", tsv_file.name,
                       "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
                       "! params: ", ' '.join(argv), file=args.output)
-        print(format_copyright_lexc(), file=args.output)
+        print(formatter.copyright_lexc(), file=args.output)
         curr_lexicon = ""
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
@@ -234,8 +230,10 @@ def main():
                     print("\nLEXICON", tsv_parts[0], end="\n\n",
                             file=args.output)
                     curr_lexicon = tsv_parts[0]
-                print(format_continuation_lexc(tsv_parts, args.format), 
-                      file=args.output)
+                for cont in tsv_parts[3:]:
+                    print(formatter.continuation2lexc(
+                        tsv_parts[1], tsv_parts[2], cont), 
+                        file=args.output)
     # print inflections
     for tsv_filename in args.inffilenames:
         if args.verbose:
@@ -244,7 +242,7 @@ def main():
         print("! Omorfi inflects generated from", tsv_file.name,
                       "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"), 
                       "! params: ", ' '.join(argv), file=args.output)
-        print(format_copyright_lexc(), file=args.output)
+        print(formatter.copyright_lexc(), file=args.output)
         curr_lexicon = ""
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
@@ -272,8 +270,10 @@ def main():
                     print("\nLEXICON", tsv_parts[0], end="\n\n",
                             file=args.output)
                     curr_lexicon = tsv_parts[0]
-                print(format_continuation_lexc(tsv_parts, args.format), 
-                      file=args.output)
+                for cont in tsv_parts[3:]:
+                    print(formatter.continuation2lexc(
+                        tsv_parts[1], tsv_parts[2], cont), 
+                        file=args.output)
     exit(0)
 
 
