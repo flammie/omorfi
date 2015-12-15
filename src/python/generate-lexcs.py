@@ -34,8 +34,8 @@ import argparse
 import csv
 
 from omorfi.omor_formatter import OmorFormatter
+from omorfi.ftb3_formatter import Ftb3Formatter
 
-from omorfi.lexc_formatter import format_copyright_lexc
 from omorfi.parse_csv_data import parse_defaults_from_tsv
 
 # standard UI stuff
@@ -97,6 +97,8 @@ def main():
     if args.format == 'omor':
         formatter = OmorFormatter(args.verbose, new_para=args.omor_new_para,
                 allo=args.omor_allo, props=args.omor_props, sem=args.omor_sem)
+    elif args.format == 'ftb3':
+        formatter = Ftb3Formatter(args.verbose)
     else:
         print("DIDNT CONVERT FORMATTER YET", args.format)
         exit(1)
