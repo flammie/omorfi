@@ -24,7 +24,9 @@ from sys import stderr, stdout, exit, argv
 from time import strftime
 import argparse
 
-from omorfi.formatters import format_stuff
+from omorfi.omor_formatter import OmorFormatter
+from omorfi.ftb3_formatter import Ftb3Formatter
+
 from omorfi.settings import stuff_weights, boundary_weights
 
 # standard UI stuff
@@ -51,32 +53,24 @@ def main():
     ap.add_argument("--strip", action="store",
             metavar="STRIP", help="strip STRIP from fields before using")
 
-    def FormatArgType(v):
-        baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google", "boundary"]
-        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
-        parts = v.split('+')
-        if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
-        for ex in parts[1:]:
-            if ex not in extras:
-                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
-        return v
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            type=FormatArgType)
+            choices=["omor", "ftb3", "giella", "apertium"])
     args = ap.parse_args()
+    if args.format == "omor":
+        formatter = OmorFormatter(True)
+    elif args.format == "ftb3":
+        formatter = Ftb3Formatter(True)
+    else:
+        print("Not implemnetd formatters", args.format)
+        exit(1)
     # setup files
     if args.verbose: 
         print("Writing some weights to", args.output.name)
-    if args.format == 'boundary':
-        for tag, weight in boundary_weights.items():
-            print(tag, weight, sep='\t', file=args.output)
-    else:
-        for stuff, weight in stuff_weights.items():
-            if format_stuff(stuff, args.format) and format_stuff(stuff, args.format) != '0':
-                print(format_stuff(stuff, args.format), weight,
-                        sep='\t', file=args.output)
+    for stuff, weight in stuff_weights.items():
+        if formatter.stuff2lexc(stuff) and formatter.stuff2lexc(stuff) != '0':
+            print(formatter.stuff2lexc(stuff), weight,
+                    sep='\t', file=args.output)
     exit(0)
 
 
