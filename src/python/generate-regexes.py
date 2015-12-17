@@ -26,6 +26,8 @@ from time import strftime
 import argparse
 
 from omorfi.regex_formatter import format_rules_regex
+from omorfi.omor_formatter import OmorFormatter
+from omorfi.ftb3_formatter import Ftb3Formatter
 
 # standard UI stuff
 
@@ -42,29 +44,28 @@ def main():
     ap.add_argument("--ruleset", "-r", required=True, action="store",
             metavar="RULES", help="compile RULES ruleset")
 
-    def FormatArgType(v):
-        baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google"]
-        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
-        parts = v.split('+')
-        if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
-        for ex in parts[1:]:
-            if ex not in extras:
-                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
-        return v
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for twolc data",
-            type=FormatArgType)
+            choices=["omor", "apertium",
+                "giella", "ftb3", "segments", "google"])
+
     args = ap.parse_args()
     # check args
+    formatter = None
+    if args.format == "omor":
+        formatter = OmorFormatter(args.verbose)
+    elif args.format == "ftb3":
+        formatter = Ftb3Formatter(args.verbose)
+    else:
+        print("Not implemented yet format", args.format)
+        exit(1)
     # setup files
     if args.verbose: 
         print("Writing everything to", args.output.name)
     # print definitions to rootfile
     if args.verbose:
         print("Creating Rules")
-    print(format_rules_regex(args.format, args.ruleset), file=args.output)
+    print(format_rules_regex(formatter, args.ruleset), file=args.output)
     exit(0)
 
 

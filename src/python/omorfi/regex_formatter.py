@@ -36,23 +36,22 @@ def format_rules_regex(formatter, ruleset):
         regexstring += '[ ž | ž:z 0:h | ž:z::1 ] ;'
     elif ruleset == 'sh':
         regexstring += '[ š | š:s 0:h | š:s::1 ] ;'
-    elif ruleset == 'rewrite-tags':
-        if format == 'ftb3':
+    elif ruleset == 'rewrite-tags-ftb3':
             regexstring += '# Remove before compounds:\n'
             regexstring += '[ '
-            regexstring += ' -> 0,\n '.join([formatter.stuff2lexc(tag, format) for tag in \
+            regexstring += ' -> 0,\n '.join([formatter.stuff2lexc(tag) for tag in \
                     ['ADJ', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUM', 'PROPER', 'DIGIT', 'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl']])
             regexstring += '-> 0 || _ ?* %# ]\n'
             regexstring += '.o.\n'
             regexstring += '# Remove V before Prc\n'
-            regexstring += '[ ' + formatter.stuff2lexc('VERB', format) + ' -> 0 || _  [ '
-            regexstring += ' | '.join([formatter.stuff2lexc(tag, format) for tag in \
+            regexstring += '[ ' + formatter.stuff2lexc('VERB') + ' -> 0 || _  [ '
+            regexstring += ' | '.join([formatter.stuff2lexc(tag) for tag in \
                     ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma','Dnut', 'Dtu', 'Dva', 'Dtava']])
             regexstring += '] ]\n'
             regexstring += '.o.\n'
             regexstring += '# ftb3.1 all pr are optional po\n'
-            regexstring += '[ ' + formatter.stuff2lexc('ADP', format) + ' (->) ' +\
-                            formatter.stuff2lexc('PREPOSITION', format) \
+            regexstring += '[ ' + formatter.stuff2lexc('ADP') + ' (->) ' +\
+                            formatter.stuff2lexc('PREPOSITION') \
                             + ']\n'
             regexstring += '.o.\n'
             regexstring += '# stem mangling rules:\n'
@@ -62,25 +61,25 @@ def format_rules_regex(formatter, ruleset):
             regexstring += '[ ←%<Del%> -> 0, %<Del%>→ -> 0 ]\n'
             regexstring += '.o.\n'
             regexstring += '[ ' + ' | '.join(fin_lowercase) + ']* -> 0 || ' +\
-                    '[ ' + formatter.stuff2lexc('NOUN', format) + \
-                    ' | ' + formatter.stuff2lexc('NUM', format) + \
+                    '[ ' + formatter.stuff2lexc('NOUN') + \
+                    ' | ' + formatter.stuff2lexc('NUM') + \
                     '] [? - %#]* _ [? - %#]* .#. \n'
             regexstring += '.o.\n'
             regexstring += '# Puncts without nom case\n'
-            regexstring += '[ ' + formatter.stuff2lexc('Xnom', format) +\
-                    ' ' + formatter.stuff2lexc('Nsg', format) + ' ] -> 0 || ' +\
-                    formatter.stuff2lexc('PUNCTUATION', format) + ' _ \n'
+            regexstring += '[ ' + formatter.stuff2lexc('Xnom') +\
+                    ' ' + formatter.stuff2lexc('Nsg') + ' ] -> 0 || ' +\
+                    formatter.stuff2lexc('PUNCTUATION') + ' _ \n'
             regexstring += '.o.\n'
             regexstring += '# random puncts are abbr\n'
-            regexstring += formatter.stuff2lexc('PUNCTUATION', format) +\
-                    ' (->) ' + formatter.stuff2lexc('ABBREVIATION', format) +\
+            regexstring += formatter.stuff2lexc('PUNCTUATION') +\
+                    ' (->) ' + formatter.stuff2lexc('ABBREVIATION') +\
                     ' || _ '
             regexstring += '.o.\n'
             regexstring += '# abbrs are nom sg’s too\n' 
-            regexstring += formatter.stuff2lexc('ABBREVIATION', format) +\
-                    ' (->) ' + formatter.stuff2lexc('ABBREVIATION', format) +\
-                    ' ' + formatter.stuff2lexc('Xnom', format) +\
-                    ' ' + formatter.stuff2lexc('Nsg', format) +\
+            regexstring += formatter.stuff2lexc('ABBREVIATION') +\
+                    ' (->) ' + formatter.stuff2lexc('ABBREVIATION') +\
+                    ' ' + formatter.stuff2lexc('Xnom') +\
+                    ' ' + formatter.stuff2lexc('Nsg') +\
                     ' || _ '
             regexstring += '.o.\n'
             regexstring += '# suffixes unmarked why of course\n'
@@ -92,10 +91,9 @@ def format_rules_regex(formatter, ruleset):
             regexstring += '% Dash -> % EnDash || – ?* _ \n'
             regexstring += ';\n'
     elif ruleset == 'lemmatise':
-        if format == 'ftb3':
             regexstring += '# Remove everything:\n'
             regexstring += '[ '
-            regexstring += ' -> 0,\n'.join([formatter.stuff2lexc(tag, format) for tag in \
+            regexstring += ' -> 0,\n'.join([formatter.stuff2lexc(tag) for tag in \
                     ['ADJ', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUM', 'PROPER', 'DIGIT', 'COORDINATING', 'ADVERBIAL', 'ORDINAL', 'DEMONSTRATIVE', 'PERSONAL', 'INDEFINITE', 'QUANTOR', 'INTERROGATIVE', 'REFLEXIVE', 'RELATIVE', 'PUNCTUATION', 'DASH', 'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1', 'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL', 'UNSPECIFIED', 'PRON', 'INTJ',
                         'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill',
                         'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe',
@@ -105,7 +103,7 @@ def format_rules_regex(formatter, ruleset):
                         'Vact', 'Vpss',
                         'Ncon', 'Nneg', 'Dnut', 'Dtu', 'Dva', 'Dtava',
                         'Ia', 'Ie', 'Ima',
-                        'Tcond', 'Timp', 'Tpast', 'Tpot', 'Tpres', 'Topt'] if formatter.stuff2lexc(tag, format)])
+                        'Tcond', 'Timp', 'Tpast', 'Tpot', 'Tpres', 'Topt'] if formatter.stuff2lexc(tag)])
             regexstring += '-> 0 || _ ] ;\n'
     elif ruleset == 'remove-boundaries':
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \

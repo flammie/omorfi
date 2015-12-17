@@ -322,7 +322,7 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 
 generated/omorfi-omor-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
-		-r rewrite-tags -o $@
+		-r rewrite-tags-omor -o $@
 
 # database to ftb3 
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
@@ -338,7 +338,7 @@ generated/omorfi-ftb3.lexc: generated/master.tsv generated/stemparts.tsv generat
 
 generated/omorfi-ftb3-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
-		-r rewrite-tags -o $@
+		-r rewrite-tags-ftb3 -o $@
 
 generated/omorfi-ftb3-lemmatise.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
