@@ -35,6 +35,7 @@ import csv
 
 from omorfi.omor_formatter import OmorFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
+from omorfi.apertium_formatter import ApertiumFormatter
 
 from omorfi.parse_csv_data import parse_defaults_from_tsv
 
@@ -82,7 +83,7 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            choices=["omor", "giella", "ftb3", "ftb1", "generic"])
+            choices=["omor", "giella", "ftb3", "ftb1", "generic", "apertium"])
     ap.add_argument("--omor-new-para", action="store_true", default=False,
             help="include NEW_PARA= in raw analyses")
     ap.add_argument("--omor-allo", action="store_true", default=False,
@@ -99,6 +100,8 @@ def main():
                 allo=args.omor_allo, props=args.omor_props, sem=args.omor_sem)
     elif args.format == 'ftb3':
         formatter = Ftb3Formatter(args.verbose)
+    elif args.format == 'apertium':
+        formatter = ApertiumFormatter(args.verbose)
     else:
         print("DIDNT CONVERT FORMATTER YET", args.format)
         exit(1)
