@@ -400,7 +400,6 @@ class ApertiumFormatter(Formatter):
             wordmap['analysis'] = "+" + wordmap['analysis']
         elif wordmap['is_prefix']:
             wordmap['analysis'] += "+"
-         
         if wordmap['pos'] == 'NOUN':
             if wordmap['is_proper']:
                 wordmap['analysis'] += '%<np%>'
@@ -432,7 +431,6 @@ class ApertiumFormatter(Formatter):
                 wordmap['analysis'] += this.stuff2lexc(pclass)
         else:
             wordmap['analysis'] += this.stuff2lexc(wordmap['pos'])
-
         if wordmap['pronoun']:
             for stuff in wordmap['pronoun'].split("|"):
                 wordmap['analysis'] += this.stuff2lexc(stuff)
@@ -451,7 +449,7 @@ class ApertiumFormatter(Formatter):
             if wordmap['stub'] in ";:":
                 wordmap['analysis'] += this.stuff2lexc("SENTENCE-BOUNDARY")
         # XXX: for now
-        if wordmap['stub'] in "¹²³½¼=≥µ#/%":
+        if wordmap['lemma'] in "¹²³½¼=≥µ#/%":
             wordmap['analysis'] += this.stuff2lexc("NOUN")
         retvals = ""
         wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
