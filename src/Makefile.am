@@ -248,7 +248,7 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=generic
+		-i generated/inflections.tsv -o $@ -f=none
 
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \

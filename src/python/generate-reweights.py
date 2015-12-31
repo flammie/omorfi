@@ -26,6 +26,7 @@ import argparse
 
 from omorfi.omor_formatter import OmorFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
+from omorfi.no_tags_formatter import NoTagsFormatter
 
 from omorfi.settings import stuff_weights, boundary_weights
 
@@ -55,12 +56,14 @@ def main():
 
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            choices=["omor", "ftb3", "giella", "apertium"])
+            choices=["omor", "ftb3", "giella", "apertium", "boundary"])
     args = ap.parse_args()
     if args.format == "omor":
         formatter = OmorFormatter(True)
     elif args.format == "ftb3":
         formatter = Ftb3Formatter(True)
+    elif args.format == 'boundary':
+        formatter = NoTagsFormatter(True)
     else:
         print("Not implemnetd formatters", args.format)
         exit(1)

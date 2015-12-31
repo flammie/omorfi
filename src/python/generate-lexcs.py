@@ -37,6 +37,7 @@ from omorfi.omor_formatter import OmorFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
 from omorfi.apertium_formatter import ApertiumFormatter
 from omorfi.giella_formatter import GiellaFormatter
+from omorfi.no_tags_formatter import NoTagsFormatter
 
 from omorfi.parse_csv_data import parse_defaults_from_tsv
 
@@ -84,7 +85,7 @@ def main():
             metavar="STRIP", help="strip STRIP from fields before using")
     ap.add_argument("--format", "-f", action="store", default="omor",
             help="use specific output format for lexc data",
-            choices=["omor", "giella", "ftb3", "ftb1", "generic", "apertium"])
+            choices=["omor", "giella", "ftb3", "ftb1", "none", "apertium"])
     ap.add_argument("--omor-new-para", action="store_true", default=False,
             help="include NEW_PARA= in raw analyses")
     ap.add_argument("--omor-allo", action="store_true", default=False,
@@ -105,6 +106,8 @@ def main():
         formatter = ApertiumFormatter(args.verbose)
     elif args.format == 'giella':
         formatter = GiellaFormatter(args.verbose)
+    elif args.format == 'none':
+        formatter = NoTagsFormatter(args.verbose)
     else:
         print("DIDNT CONVERT FORMATTER YET", args.format)
         exit(1)
