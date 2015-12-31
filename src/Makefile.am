@@ -141,7 +141,6 @@ if WANT_OMOR
 GIELLA_AUTOMATA=generated/omorfi-giella.analyse.hfst \
 				generated/omorfi-giella.generate.hfst
 GIELLA_GENERATED=generated/omorfi-giella.lexc \
-				 generated/omorfi-giella.twolc \
 				 generated/omorfi-giella.reweight
 
 endif
@@ -160,7 +159,8 @@ endif
 # destnations directories for this stuff at the top of the file
 pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA) $(VISLCG3_GENERATED) \
-				$(FTB1_AUTOMATA) $(LABELSEGMENT_AUTOMATA)
+				$(FTB1_AUTOMATA) $(LABELSEGMENT_AUTOMATA) \
+				$(GIELLA_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 pkgdata_DATA+=generated/master.tsv
 
@@ -1125,6 +1125,19 @@ generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
 		$(HINV) $(HFST_FLAGS) -o $@
 # }}}
 #
+# {{{Giella comp
+generated/temporary-giella.analyse.hfst: generated/omorfi-giella.lexc.hfst \
+	generated/omorfi-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HINV) $(HFST_FLAGS) -o $@
+
+generated/omorfi-giella.analyse.hfst: generated/temporary-giella.analyse.hfst
+	$(HF2F) $(HFST_FLAGS) -f olw -i $< -o $@
+
+generated/omorfi-giella.generate.hfst: generated/temporary-giella.analyse.hfst
+	$(HINV) $(HFST_FLAGS) -i $< |\
+		$(HF2F) -f olw -o $@
+# }}}
 # {{{SPELL-CHECKING
 # voikko speller HFST beta targets'
 generated/errmodel.edit-distance.txt: python/generate-edit-distance.py

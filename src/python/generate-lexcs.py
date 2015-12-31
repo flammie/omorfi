@@ -36,6 +36,7 @@ import csv
 from omorfi.omor_formatter import OmorFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
 from omorfi.apertium_formatter import ApertiumFormatter
+from omorfi.giella_formatter import GiellaFormatter
 
 from omorfi.parse_csv_data import parse_defaults_from_tsv
 
@@ -102,6 +103,8 @@ def main():
         formatter = Ftb3Formatter(args.verbose)
     elif args.format == 'apertium':
         formatter = ApertiumFormatter(args.verbose)
+    elif args.format == 'giella':
+        formatter = GiellaFormatter(args.verbose)
     else:
         print("DIDNT CONVERT FORMATTER YET", args.format)
         exit(1)
