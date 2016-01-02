@@ -94,6 +94,10 @@ def main():
             help="include PROPER= in raw analyses")
     ap.add_argument("--omor-sem", action="store_true", default=False,
             help="include SEM= in raw analyses")
+    ap.add_argument("--none-lemmas", action="store_true", default=False,
+            help="include lemmas in raw analyses")
+    ap.add_argument("--none-segments", action="store_true", default=False,
+            help="include segments in raw analyses")
     args = ap.parse_args()
 
     formatter = None
@@ -107,7 +111,8 @@ def main():
     elif args.format == 'giella':
         formatter = GiellaFormatter(args.verbose)
     elif args.format == 'none':
-        formatter = NoTagsFormatter(args.verbose)
+        formatter = NoTagsFormatter(args.verbose,
+                lemmatise=args.none_lemmas, segment=args.none_segments)
     else:
         print("DIDNT CONVERT FORMATTER YET", args.format)
         exit(1)

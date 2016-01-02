@@ -245,10 +245,15 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 # database to generic
-generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
+generated/omorfi.segment.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none
+		-i generated/inflections.tsv -o $@ -f=none --none-segments
+
+generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		-i generated/inflections.tsv -o $@ -f=none --none-lemmas
 
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
@@ -431,14 +436,23 @@ generated/temporary.unbounded.hfst: generated/temporary.orth.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 
-# lemmatisation is now built by messing with ftb3
-generated/omorfi.lemmatise.hfst: generated/temporary.ftb3.hfst generated/omorfi-ftb3-lemmatise.regex.hfst
-	$(HCOMP) $(HFST_FLAGS) $< generated/omorfi-ftb3-lemmatise.regex.hfst |\
-		$(HF2F) -f olw -o $@
+# Lemmatiser
+generated/temporary.lemmatise.hfst: generated/omorfi.lemmatise.lexc.hfst generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 generated/omorfi.lemmatise.lexc.hfst -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst -o $@
 
-# 
-generated/omorfi.segment.hfst: generated/temporary.unbounded.hfst
-	$(HINV) $< | $(HF2F) -f olw -o $@
+generated/omorfi.lemmatise.hfst: generated/temporary.lemmatise.hfst
+	$(HINV) $(HFST_FLAGS) $<  |\
+		$(HF2F) $(HFST_FLAGS) -f olw -o $@
+
+# segment
+generated/temporary.segment.hfst: generated/omorfi.segment.lexc.hfst generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 generated/omorfi.segment.lexc.hfst -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst -o $@
+
+generated/omorfi.segment.hfst: generated/temporary.segment.hfst
+	$(HINV) $(HFST_FLAGS) $<  |\
+		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # create one tape spell checker
 generated/omorfi.accept.hfst: generated/temporary.ftb3.hfst

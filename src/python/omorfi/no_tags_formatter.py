@@ -28,11 +28,21 @@ from .error_logging import fail_formatting_missing_for, just_fail
 
 class NoTagsFormatter(Formatter):
 
-    def __init__(this, verbose=True):
+    def __init__(this, verbose=True, **kwargs):
         this.verbose = verbose
+        this.segment = False
+        this.lemmatise = False
+        if 'lemmatise' in kwargs and kwargs['lemmatise']:
+            this.lemmatise = True
+        elif 'segment' in kwargs and kwargs['segment']:
+            this.segment = True
+        assert(this.lemmatise or this.segment)
 
     def stuff2lexc(this, stuff):
-        return ""
+        if 'Bc' == stuff:
+            return word_boundary
+        else:
+            return ""
 
     def analyses2lexc(this, anals):
         apestring = ''
@@ -41,19 +51,25 @@ class NoTagsFormatter(Formatter):
         return apestring
 
     def continuation2lexc(this, anals, surf, cont):
-        analstring = this.analyses2lexc(anals)
+        analstring = this.analyses2lexc(anals) 
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             analstring = lexc_escape(surf) + analstring
         elif 'PUNCT_NONSTD_EXCL_LOOP' in cont:
             analstring = lexc_escape(surf) + analstring
-        surf = lexc_escape(surf)
-        return "%s:%s\t%s ;\n" %(analstring, surf, cont)
+        elif this.segment:
+            analstring = lexc_escape(surf)
+        elif this.lemmatise and 'NOUN' == cont:
+            print(analstring, anals)
+        return "%s:%s\t%s ;\n" %(analstring, lexc_escape(surf), cont)
 
     def wordmap2lexc(this, wordmap):
         if wordmap['lemma'] == ' ':
             return ''
-        wordmap['analysis'] = lexc_escape(wordmap['lemma'])
+        if this.lemmatise:
+            wordmap['analysis'] = lexc_escape(wordmap['lemma'])
+        else:
+            wordmap['analysis'] = lexc_escape(wordmap['stub'])
         retvals = ""
         wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
