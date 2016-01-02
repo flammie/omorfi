@@ -99,13 +99,13 @@ AC_ARG_ENABLE([lemmatiser],
                               [generate lemmatiser @<:@default=disable@:>@])],
                              [enable_lemmatiser=$enableval],
                              [enable_lemmatiser=no])
-AM_CONDITIONAL([WANT_LEMMATISE], [test "x$enable_ftb3" != xno -a x$enable_lemmatiser != xno])
+AM_CONDITIONAL([WANT_LEMMATISE], [test x$enable_lemmatiser != xno])
 AC_ARG_ENABLE([segmenter],
               [AS_HELP_STRING([--enable-segmenter],
                               [generate segmenter @<:@default=disable@:>@])],
                              [enable_segmenter=$enableval],
                              [enable_segmenter=no])
-AM_CONDITIONAL([WANT_SEGMENTS], [test "x$enable_ftb3" != xno -a x$enable_segmenter != xno])
+AM_CONDITIONAL([WANT_SEGMENTS], [test x$enable_segmenter != xno])
 AC_ARG_ENABLE([hyphenator],
               [AS_HELP_STRING([--enable-hyphenator],
                               [generate hyphenator @<:@default=disable@:>@])],
@@ -332,7 +332,7 @@ Configured $PACKAGE_STRING:
 * Applications
     * Voikko speller: $enable_voikko
     * segmenter: $enable_segmenter
-    * lemmatiser: $enable_lemmatise
+    * lemmatiser: $enable_lemmatiser
     * hyphenators: $enable_hyphenator
 * 
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
@@ -340,6 +340,4 @@ Configured $PACKAGE_STRING:
 EOF
 AS_IF([test x$TIME = xfalse], [AC_MSG_WARN([GNU time is missing, tests will fail])])
 AS_IF([test x$PYTHON = x:], [AC_MSG_WARN([python3 is required for lexical database use])])
-AS_IF([test x$enable_segmenter != xno -a x$enable_ftb3 = xno], [AC_MSG_WARN([Dosabled segmenter since disabled FTB3])])
-AS_IF([test x$enable_lemmatiser != xno -a x$enable_ftb3 = xno], [AC_MSG_WARN([Dosabled lemmatiser since disabled FTB3])])
 $THEREARENOEASTEREGGS say make, make check and make install to proceed
