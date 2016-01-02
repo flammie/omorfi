@@ -19,12 +19,6 @@ sort < ${WORK}/keys > ${WORK}/lc-sort-keys
 for f in attributes/*.tsv ; do
     echo $f...
     cut -f 1,2 $f | sort | uniq > ${WORK}/keys.$(basename $f)
-    if test -f ${WORK}/fails.$(basename $f) ; then
-        rm -v ${WORK}/fails.$(basename $f)
-    fi
-    if test -f ${WORK}/missingkeys.$(basename $f) ; then
-        rm -v ${WORK}/missingkeys.$(basename $f)
-    fi
     comm -23 ${WORK}/keys.$(basename $f) ${WORK}/lc-sort-keys > ${WORK}/missing-keys.$(basename $f)
     while read k ; do
         echo MISSING $k is not found in ${LEXFILE} but is in $f >> ${WORK}/fails.$(basename $f)
@@ -38,14 +32,4 @@ for f in attributes/*.tsv ; do
         exit 1
     fi
 done
-echo checking paradigms to stems
-cut -f 3 ${LEXFILE} | sort | uniq > ${WORK}/paradigms
-cut -f 1 continuations/stems.tsv | sort | uniq > ${WORK}/continuations
-if ! diff ${WORK}/paradigms ${WORK}/continuations > /dev/null ; then
-    echo "Missing continuations (to add to continuations/*.tsv?):"
-    comm -23 ${WORK}/paradigms ${WORK}/continuations
-    echo "Missing paradigms (to add to lexemes.tsv?):"
-    comm -13 ${WORK}/paradigms ${WORK}/continuations
-    exit 1
-fi
 rm -rf ${WORK}
