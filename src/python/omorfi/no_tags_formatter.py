@@ -36,7 +36,6 @@ class NoTagsFormatter(Formatter):
             this.lemmatise = True
         elif 'segment' in kwargs and kwargs['segment']:
             this.segment = True
-        assert(this.lemmatise or this.segment)
 
     def stuff2lexc(this, stuff):
         if 'Bc' == stuff:
@@ -59,8 +58,10 @@ class NoTagsFormatter(Formatter):
             analstring = lexc_escape(surf) + analstring
         elif this.segment:
             analstring = lexc_escape(surf)
-        elif this.lemmatise and 'NOUN' == cont:
-            print(analstring, anals)
+        elif this.lemmatise:
+            pass
+        else:
+            analstring = lexc_escape(surf)
         return "%s:%s\t%s ;\n" %(analstring, lexc_escape(surf), cont)
 
     def wordmap2lexc(this, wordmap):
@@ -68,6 +69,8 @@ class NoTagsFormatter(Formatter):
             return ''
         if this.lemmatise:
             wordmap['analysis'] = lexc_escape(wordmap['lemma'])
+        elif this.segment:
+            wordmap['analysis'] = lexc_escape(wordmap['stub'])
         else:
             wordmap['analysis'] = lexc_escape(wordmap['stub'])
         retvals = ""

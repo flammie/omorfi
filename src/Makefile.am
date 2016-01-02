@@ -255,6 +255,12 @@ generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=none --none-lemmas
 
+generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		-i generated/inflections.tsv -o $@ -f=none
+
+
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
@@ -455,10 +461,15 @@ generated/omorfi.segment.hfst: generated/temporary.segment.hfst
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # create one tape spell checker
-generated/omorfi.accept.hfst: generated/temporary.ftb3.hfst
-	$(HPR) $(HFST_FLAGS) --project=upper -i $< |\
-		$(HMIN) $(HFST_FLAGS) --encode-weights |\
-		$(HF2F) $(HFST_FLAGS) -f olw -o $@
+generated/temporary.accept.hfst: generated/omorfi.accept.lexc.hfst generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 generated/omorfi.accept.lexc.hfst -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HINV) $(HFST_FLAGS) |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+generated/omorfi.accept.hfst: generated/temporary.accept.hfst
+	$(HF2F) $(HFST_FLAGS) -f olw $< -o $@
 
 # create basic corpus tokeniser
 # Should split at even-odd boundaries of word punct* word punct*
