@@ -299,6 +299,10 @@ generated/omorfi-remove-boundaries.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r remove-boundaries -o $@
 
+generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+		-r remove-boundaries-giella -o $@
+
 generated/omorfi-between-tokens.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r between-tokens -o $@
@@ -1152,8 +1156,9 @@ generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
 #
 # {{{Giella comp
 generated/temporary-giella.analyse.hfst: generated/omorfi-giella.lexc.hfst \
-	generated/omorfi-hyphens.twolc.hfst
+	generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries-giella.regex.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) generated/omorfi-remove-boundaries-giella.regex.hfst |\
 		$(HINV) $(HFST_FLAGS) -o $@
 
 generated/omorfi-giella.analyse.hfst: generated/temporary-giella.analyse.hfst

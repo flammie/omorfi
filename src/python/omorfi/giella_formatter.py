@@ -23,7 +23,7 @@ from .formatter import Formatter
 
 from .lexc_formatter import lexc_escape
 from .settings import word_boundary, weak_boundary, \
-        morph_boundary, deriv_boundary, optional_hyphen
+        morph_boundary, deriv_boundary, optional_hyphen, stub_boundary
 from .error_logging import fail_formatting_missing_for, just_fail
 
 class GiellaFormatter(Formatter):
@@ -427,7 +427,10 @@ class GiellaFormatter(Formatter):
         giellastring = this.analysis2lexc(anals)
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             giellastring = lexc_escape(surf) + giellastring
-        surf = lexc_escape(surf.replace(morph_boundary, ">").replace(deriv_boundary, "»"))
+        surf = lexc_escape(surf.replace(morph_boundary, ">")
+                .replace(deriv_boundary, "»")
+                .replace(word_boundary, "")
+                .replace(stub_boundary, ""))
         return "%s:%s\t%s ;\n" %(giellastring, surf, cont)
 
     def wordmap2lexc(this, wordmap):
@@ -455,7 +458,7 @@ class GiellaFormatter(Formatter):
         if wordmap['symbol']:
             for subcat in wordmap['symbol'].split('|'):
                 wordmap['analysis'] += this.stuff2lexc(subcat)
-        lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "#")
+        lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "")
                 .replace(weak_boundary,"").replace(deriv_boundary, "»")
                 .replace(morph_boundary, ">"))
         retvals = []

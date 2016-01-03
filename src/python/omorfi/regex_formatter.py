@@ -109,6 +109,9 @@ def format_rules_regex(formatter, ruleset):
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \
                     [word_boundary, deriv_boundary, morph_boundary,\
                     stub_boundary, weak_boundary]]) + '-> 0 || _ ;'
+    elif ruleset == 'remove-boundaries-giella':
+        regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in \
+                    [">", "»"]]) + '-> 0 || _ ;'
     elif ruleset == 'token':
         regexstring += '[ [' + '|'.join(fin_lowercase) + '|' +\
                 '|'.join(fin_uppercase) + \
