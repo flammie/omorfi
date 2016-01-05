@@ -28,7 +28,9 @@ def main():
     a.add_argument('-t', '--threshold', metavar='THOLD', default=99, type=int,
             help="require THOLD % coverage or exit 1 (for testing)")
     options = a.parse_args()
-    omorfi = libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
+    his = libhfst.HfstInputStream(options.fsa)
+    omorfi = his.read()
+    #libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
     # statistics
     tokens = 0
     uniqs = 0
@@ -52,13 +54,13 @@ def main():
         uniqs += 1
         if options.verbose:
             print(tokens, "(", freq, ')...', end='\r')
-        anals = libhfst.detokenize_paths(omorfi.lookup_fd(surf))
+        anals = omorfi.lookup(surf)
         if surf[0].isupper():
-            anals += libhfst.detokenize_paths(omorfi.lookup_fd(surf[0].lower() + surf[1:]))
+            anals += omorfi.lookup(surf[0].lower() + surf[1:])
         if surf.isupper():
-            anals += libhfst.detokenize_paths(omorfi.lookup_fd(surf.lower()))
+            anals += omorfi.lookup(surf.lower())
         if surf.isupper():
-            anals += libhfst.detokenize_paths(omorfi.lookup_fd(surf[0] + surf[1:].lower()))
+            anals += omorfi.lookup(surf[0] + surf[1:].lower())
         if len(anals) > 0:
             found_tokens += freq
             found_uniqs += 1
@@ -73,12 +75,14 @@ def main():
     print("cpu time: ", cpuend - cpustart,
             "real time:", realend - realstart)
     print("Tokens", "Matches", "Misses", "%", sep="\t")
-    print(tokens, found_tokens, missed_tokens, found_tokens / tokens * 100,
+    print(tokens, found_tokens, missed_tokens, 
+            found_tokens / tokens * 100 if tokens != 0 else 0,
             sep="\t")
     print("Uniqs", "Matches", "Misses", "%", sep="\t")
-    print(uniqs, found_uniqs, missed_uniqs, found_uniqs / uniqs * 100,
+    print(uniqs, found_uniqs, missed_uniqs, 
+            found_uniqs / uniqs * 100 if uniqs != 0 else 0,
             sep="\t")
-    if (found_tokens / tokens * 100 < options.threshold):
+    if tokens == 0 or (found_tokens / tokens * 100 < options.threshold):
         print("needs to have", options.threshold,
                 "% non-unique matches to pass regress test\n",
                 file=stderr)
