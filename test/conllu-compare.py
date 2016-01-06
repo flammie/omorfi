@@ -23,6 +23,8 @@ def main():
             help="Allow fuzzy matches if tokenisation differs")
     a.add_argument('-v', '--verbose', action="store_true", default=False,
             help="Print verbosely while processing")
+    a.add_argument('-t', '--thresholds', metavar='THOLDS', default=99, type=int,
+            help="require THOLD % for lemma, UPOS and UFEAT or exit 1 (for testing)")
     options = a.parse_args()
     #
     lines = 0
@@ -139,7 +141,16 @@ def main():
             (deplines-missed_misc) / deplines * 100,
             sep="\t")
     print("Skipped due to tokenisation etc. (no fuzz):", skiplines)
-    exit(0)
+    if deplines == 0 or \
+            ((deplines-missed_lemmas) / deplines * 100 < options.thresholds) or\
+            ((deplines-missed_uposes) / deplines * 100 < options.thresholds) or\
+            ((deplines-missed_feats) / deplines * 100 < options.thresholds):
+        print("needs to have", options.thresholds,
+                "% matches to pass regress test\n",
+                file=stderr)
+        exit(1)
+    else:
+        exit(0)
 
 if __name__ == "__main__":
     main()
