@@ -101,10 +101,11 @@ class Omorfi:
                 'hyphenate', 'segment', 'labelsegment']:
             if not ttype in include:
                 include[ttype] = False
+        his = None
         if this._verbosity:
-            print('Loading file', path)
+            print('Opening file', path)
         if access(path, F_OK):
-            trans = libhfst.HfstTransducer(libhfst.HfstInputStream(path))
+            his = libhfst.HfstInputStream(path)
         else:
             # FIXME: should fail
             if this._verbosity:
@@ -117,35 +118,35 @@ class Omorfi:
         elif parts[1] == 'analyse' and include['analyse']:
             if this._verbosity:
                 print('analyser', parts[0])
-            this.analysers[parts[0]] = trans
+            this.analysers[parts[0]] = his.read()
         elif parts[1] == 'generate' and include['generate']:
             if this._verbosity:
                 print('generator', parts[0])
-            this.generators[parts[0]] = trans
+            this.generators[parts[0]] = his.read()
         elif parts[1] == 'accept' and include['accept']:
             if this._verbosity:
                 print('acceptor', parts[0])
-            this.acceptors[parts[0]] = trans
+            this.acceptors[parts[0]] = his.read()
         elif parts[1] == 'tokenise' and include['tokenise']:
             if this._verbosity:
                 print('tokeniser', parts[0])
-            this.tokenisers[parts[0]] = trans
+            this.tokenisers[parts[0]] = his.read()
         elif parts[1] == 'lemmatise' and include['lemmatise']:
             if this._verbosity:
                 print('lemmatiser', parts[0])
-            this.lemmatisers[parts[0]] = trans
+            this.lemmatisers[parts[0]] = his.read()
         elif parts[1] == 'hyphenate' and include['hyphenate']:
             if this._verbosity:
                 print('hyphenator', parts[0])
-            this.hyphenators[parts[0]] = trans
+            this.hyphenators[parts[0]] = his.read()
         elif parts[1] == 'segment' and include['segment']:
             if this._verbosity:
                 print('segmenter', parts[0])
-            this.segmenters[parts[0]] = trans
+            this.segmenters[parts[0]] = his.read()
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if this._verbosity:
                 print('labelsegmenter', parts[0])
-            this.labelsegmenters[parts[0]] = trans
+            this.labelsegmenters[parts[0]] = his.read()
         elif this._verbosity:
             print('skipped', parts)
 
@@ -240,37 +241,37 @@ class Omorfi:
         return tokens
 
     def _analyse(this, token, automaton):
-        res = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token))
+        res = this.analysers[automaton].lookup(token)
         if len(token) > 2 and token[0].islower() and this.can_titlecase:
             tctoken = token[0].upper() + token[1:]
             if tctoken != token:
-                tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(tctoken))
+                tcres = this.analysers[automaton].lookup(tctoken)
                 for r in tcres:
-                    r.output = r.output + '[CASECHANGE=TITLECASED]'
+                    r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
                 res = res + tcres
         if len(token) > 2 and token[0].isupper() and this.can_detitlecase:
             dttoken = token[0].lower() + token[1:]
             if dttoken != token:
-                dtres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(dttoken))
+                dtres = this.analysers[automaton].lookup(dttoken)
                 for r in dtres:
-                    r.output = r.output + '[CASECHANGE=DETITLECASED]'
+                    r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
                 res = res + dtres
         if not token.isupper() and this.can_uppercase:
             uptoken = token.upper()
             if token != uptoken:
-                upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(uptoken))
+                upres = this.analysers[automaton].lookup(uptoken)
                 for r in upres:
-                    r.output = r.output + '[CASECHANGE=UPPERCASED]'
+                    r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
                 res = res + upres
         if not token.islower() and this.can_lowercase:
             lowtoken = token.lower()
             if token !=  lowtoken:
-                lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
+                lowres = this.analysers[automaton].lookup(token.lower())
                 for r in lowres:
-                    r.output = r.output + '[CASECHANGE=LOWERCASED]'
+                    r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
                 res += lowres
         for r in res:
-            r.output = r.output + '[WEIGHT=%f]' %(r.weight)
+            r = (r[0] + '[WEIGHT=%f]' %(r[1]), r[1])
         return res
 
     def analyse(this, token):
@@ -293,25 +294,19 @@ class Omorfi:
         if not anals and 'omorfi-omor' in this.analysers:
             anals = this._analyse(token, 'omorfi-omor')
             if not anals:
-                class FakeAnal():
-                    pass
-                anal = FakeAnal()
-                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token)
-                anal.weight = float('inf')
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token),
+                        float('inf'))
                 anals = [anal]
         if not anals and len(this.analysers):
             anals = this._analyse(token, this.analysers.keys[0])
             if not anals:
-                class FakeAnal():
-                    pass
-                anal = FakeAnal()
-                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]'
-                anal.weight = float('inf')
+                anal = ('[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]',
+                        float('inf'))
                 anals = [anal]
         return anals
 
     def _lemmatise(this, token, automaton):
-        res = libhfst.detokenize_paths(this.lemmatisers[automaton].lookup_fd(token))
+        res = this.lemmatisers[automaton].lookup(token)
         return res
 
     def lemmatise(this, token):
@@ -324,13 +319,13 @@ class Omorfi:
                 class FakeLemma():
                     pass
                 lemma = FakeLemma()
-                lemma.output = token
-                lemma.weight = float('inf')
+                lemma[0] = token
+                lemma[1] = float('inf')
                 lemmas = [lemma]
         return lemmas
 
     def _segment(this, token, automaton):
-        res = libhfst.detokenize_paths(this.segmenters[automaton].lookup_fd(token))
+        res = this.segmenters[automaton].lookup(token)
         return res
 
     def segment(this, token):
@@ -343,13 +338,13 @@ class Omorfi:
                 class FakeSegment():
                     pass
                 segment = FakeSegment()
-                segment.output = token
-                segment.weight = float('inf')
+                segment[0] = token
+                segment[1] = float('inf')
                 segments = [segment]
         return segments
 
     def _labelsegment(this, token, automaton):
-        res = libhfst.detokenize_paths(this.labelsegmenters[automaton].lookup_fd(token))
+        res = this.labelsegmenters[automaton].lookup(token)
         return res
 
     def labelsegment(this, token):
@@ -362,13 +357,13 @@ class Omorfi:
                 class FakeSegment():
                     pass
                 labelsegment = FakeSegment()
-                labelsegment.output = token
-                labelsegment.weight = float('inf')
+                labelsegment[0] = token
+                labelsegment[1] = float('inf')
                 labelsegments = [labelsegment]
         return labelsegments
 
     def _accept(this, token, automaton):
-        res = libhfst.detokenize_paths(this.acceptors[automaton].lookup_fd(token))
+        res = this.acceptors[automaton].lookup(token)
         return res
 
     def accept(this, token):
@@ -410,7 +405,7 @@ def main():
             anals = omorfi.analyse(surf)
             print(surf, end='')
             for anal in anals:
-                print("\t", anal.output, sep='', end='')
+                print("\t", anal[0], sep='', end='')
             print()
     exit(0)
 
