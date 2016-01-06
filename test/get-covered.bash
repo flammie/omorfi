@@ -1,6 +1,6 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=6
+nc=8
 function preprocess() {
     cat $@ | sed -e 's/[[:punct:]][[:space:][:punct:]]/ \0/g' \
         -e 's/[[:punct:]]\r\?$/ \0/' -e 's/^[[:punct:]]/\0 /' \
@@ -116,3 +116,30 @@ if ! test -f ftb1-2014.cutted.freqs ; then
     egrep -v '^#' < ftb1-2014.tsv | tr -s '\n' |\
         cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb1-2014.cutted.freqs
 fi
+
+# UD-finnish
+echo UD Finnish ... 7/$nc
+if ! test -f "fi-ud-test.uniq.freqs" ; then
+    if ! test -f "fi-ud-test.conllu" ; then
+        git clone git@github.com:UniversalDependencies/UD_Finnish.git
+        ln -s UD_Finnish/"fi-ud-test.conllu" .
+    fi
+    echo tokenise
+    egrep -v '^#' < "fi-ud-test.conllu" | tr -s '\n' |\
+        cut -f 2 > "fi-ud-test.tokens"
+    echo count
+    frequency_list "fi-ud-test.tokens" > "fi-ud-test.uniq.freqs"
+fi
+echo UD Finnish-FTB ... 7/$nc
+if ! test -f "fi_ftb-ud-test.uniq.freqs" ; then
+    if ! test -f "fi_ftb-ud-test.conllu" ; then
+        git clone git@github.com:UniversalDependencies/UD_Finnish-FTB.git
+        ln -s UD_Finnish-FTB/"fi_ftb-ud-test.conllu" .
+    fi
+    echo tokenise
+    egrep -v '^#' < "fi_ftb-ud-test.conllu" | tr -s '\n' |\
+        cut -f 2 > "fi_ftb-ud-test.tokens"
+    echo count
+    frequency_list "fi_ftb-ud-test.tokens" > "fi_ftb-ud-test.uniq.freqs"
+fi
+

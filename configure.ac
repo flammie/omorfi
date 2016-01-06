@@ -305,6 +305,10 @@ AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
                 [chmod +x test/coverage-jrc-acquis.sh])
 AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
                 [chmod +x test/coverage-ftb-3.1.sh])
+AC_CONFIG_FILES([test/coverage-fi-ud.sh],
+                [chmod +x test/coverage-fi-ud.sh])
+AC_CONFIG_FILES([test/coverage-fi-ftb-ud.sh],
+                [chmod +x test/coverage-fi-ftb-ud.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
                 [chmod +x test/faithfulness-ftb-3.1.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
