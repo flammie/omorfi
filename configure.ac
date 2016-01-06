@@ -313,6 +313,10 @@ AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
                 [chmod +x test/faithfulness-ftb-3.1.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
                 [chmod +x test/faithfulness-ftb-3.1-quick.sh])
+AC_CONFIG_FILES([test/conllu-fi-ud-test.sh],
+                [chmod +x test/conllu-fi-ud-test.sh])
+AC_CONFIG_FILES([test/conllu-fi-ftb-ud-test.sh],
+                [chmod +x test/conllu-fi-ftb-ud-test.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.sh],

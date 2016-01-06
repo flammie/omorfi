@@ -10,13 +10,16 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 	  coverage-fiwiki.sh \
 	  coverage-fi-ud.sh \
 	  coverage-fi-ftb-ud.sh \
-	  faithfulness-ftb-3.1.sh
+	  faithfulness-ftb-3.1.sh \
+	  conllu-fi-ud-test.sh \
+	  conllu-fi-ftb-ud-test.sh
 #XFAIL_TESTS=
 EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \
 		   wordforms.list \
 		   coverage.py \
-		   faithfulness.py 
+		   faithfulness.py \
+		   conllu-compare.py
 
 CLEANFILES=wordforms.anals
 
