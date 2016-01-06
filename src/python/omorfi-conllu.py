@@ -13,7 +13,7 @@ import re
 
 def get_lemmas(anal):
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    lemmas = re_lemma.finditer(anal.output)
+    lemmas = re_lemma.finditer(anal[0])
     rv = []
     for lemma in lemmas:
         rv += [lemma.group(1)]
@@ -21,7 +21,7 @@ def get_lemmas(anal):
 
 def get_last_feat(feat, anal):
     re_feat = re.compile("\[" + feat + "=([^]]*)\]")
-    feats = re_feat.finditer(anal.output)
+    feats = re_feat.finditer(anal[0])
     rv = ""
     for feat in feats:
         rv = feat.group(1)
@@ -30,7 +30,7 @@ def get_last_feat(feat, anal):
 def get_last_feats(anal):
     re_feats = re.compile("\[[^]]*\]")
     rvs = list()
-    feats = re_feats.finditer(anal.output)
+    feats = re_feats.finditer(anal[0])
     for feat in feats:
         if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
             rvs = list()
@@ -144,7 +144,7 @@ def format_feats_ud(anal):
                 continue
             else:
                 print("Unhandled subcat: ", value)
-                print("in", anal[0].output)
+                print("in", anal[0][0])
                 exit(1)
         elif key == 'ABBR':
             rvs['Abbr'] = value[0] + value[1:].lower()
@@ -169,19 +169,22 @@ def format_feats_ud(anal):
                 continue
             else:
                 print("Unknown style", value)
-                print("in", anal.output)
+                print("in", anal[0])
                 exit(1)
         elif key in ['DRV', 'LEX']:
-            if value in ['MINEN', 'STI']:
+            if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
+                    'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
+                # values found in UD finnish Derivs
                 rvs['Derivation'] = value[0] + value[1:].lower()
-            elif value in ['TTAIN', 'S', 'MAISILLA']:
+            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS']:
+                # valuse not found in UD finnish Derivs
                 continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
-                print("in", anal.output)
+                print("in", anal[0])
                 exit(1)
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE',
-                'GUESS', 'PROPER', 'POSITION']:
+                'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
             # Not feats in UD:
             # * UPOS is another field
             # * Allomorphy is ignored
@@ -191,10 +194,12 @@ def format_feats_ud(anal):
             # * Guessering not a feat
             # * Proper noun classification not a feat
             # * punct sidedness is not a feat
+            # * XXX: sem has not been used as a feat?
+            # * special CONJ comparative is not used in UD
             continue
         else:
             print("Unhandled", key, '=', value)
-            print("in", anal.output)
+            print("in", anal[0])
             exit(1)
     rv = ''
     for k,v in sorted(rvs.items()):
@@ -328,7 +333,7 @@ def main():
                     print_analyses_conllu(index, surf, anals[0], 
                             options.outfile)
             if not anals or len(anals) == 0 or (len(anals) == 1 and 
-                    'UNKNOWN' in anals[0].output):
+                    'UNKNOWN' in anals[0][0]):
                 unknowns += 1
         elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
             # these comments I know need to be retained as-is
