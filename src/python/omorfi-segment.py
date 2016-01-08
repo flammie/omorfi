@@ -9,46 +9,73 @@ def print_segments(fmt, segments, labelsegments, surf, outfile):
     if fmt == 'labels-moses-factors':
         if labelsegments:
             # öykkärö[UPOS=VERB]i[TRAILS=→][MB=LEFT]dä[TRAILS=→Vpss][?=Tpres][?=Ppe4][?=Ncon][TRAILS=→] 
-            analysis = labelsegments[0].output
-            analysis = analysis.replace("{STUB}", "").replace("{wB}", "")
-            # lets do it state-machine way
-            intag = False
-            stacktag = []
-            currtag = ''
-            currmorph = ''
-            carryovertag = None
-            outs = ''
-            for c in analysis:
-                if not intag and c != '[':
-                    currmorph += c
-                elif not intag and c == '[':
-                    intag = True
-                elif intag and c != ']':
-                    currtag += c
-                elif intag and c == ']':
-                    if currtag.startswith('UPOS'):
-                        carryovertag = currtag
-                    elif currmorph != '' and carryovertag:
-                        outs += currmorph + '|' +  carryovertag + ' '
-                        carryovertag = None
-                        currmorph = ''
-                    elif currmorph != '':
-                        outs += currmorph + '|' +  currtag + ' '
-                        currmorph = ''
-                    elif currmorph == '':
-                        outs += '.' + currtag + ' '
-                    currtag = ''
-                    intag = False
-            print(outs.replace("TRAILS=→", "",).replace("UPOS=", "").replace(" .", ".").replace("?=", "").replace("MB=LEFT", "").replace("..", ".").replace(". ", " ").replace("MB=", "").replace("DB=", ""), end=' ', file=outfile)
+            analysis = labelsegments[0][0]
+            splat = re.split("[]{}[]", analysis)
+            skiptag = None
+            nextsep = '|'
+            moses = ''
+            for split in splat:
+                if split == '':
+                    continue
+                elif split in ['STUB', 'hyph?', 'XB']:
+                    continue
+                elif split in ['SG', 'NOM', 'POS', 'ACTV', 'PRES']:
+                    # we actually skip 0 morphs...?
+                    continue
+                elif split in ['DB', 'MB', 'WB', 'wB']:
+                    if skiptag:
+                        moses += nextsep + skiptag
+                        skiptag = None
+                    moses += ' '
+                    nextsep = '|'
+                elif split in ['NOUN', 'VERB', 'ADJ', 'COMP', 'PROPN', 'SUPER', 'AUX', 'NUM', 'PRON']:
+                    skiptag = split
+                elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
+                        'SCONJ', 'CONJ|VERB', 'INTJ', 'DET']:
+                    moses += nextsep + split
+                elif split in ['PL', 'INS', 'INE', 'ELA',
+                        'ILL', 'ADE', 'ABL', 'ALL', 'ACTV', 'PASV',
+                        'IMPV', 'POTN', 'COND', 'SG1', 'SG2', 'SG3', 'PL1',
+                        'PL2', 'PL3', 'PAST', 'INFA', 'PAR',
+                        'POSSP3', 'POSSG1', 'POSSG2', 'POSPL1', 'POSPL2',
+                        'GEN', 'PCPVA', 'INFE', 'PCPMA', 'PCPNUT', 'INFMA',
+                        'PE4', 'ABE', 'ESS', 'CONNEG', 'ORD', 'TRA', 'COM',
+                        'INFMAISILLA',
+                        'HAN', 'KO', 'PA', 'S', 'KAAN', 'KA', 'KIN']:
+                    if skiptag:
+                        moses += nextsep + skiptag
+                        skiptag = None
+                        nextsep = '.'
+                    moses += nextsep + split
+                    nextsep = '.'
+                elif split.isupper():
+                    print("unhandlend upper string?", split)
+                    exit(1)
+                else:
+                    moses += split
+            if skiptag:
+                moses += nextsep + skiptag
+            # tweaks and hacks
+            if " i " in moses or " j " in moses:
+                moses = re.sub(r" ([ij]) ([a-zä]*)\|PL.", r" \1|PL \2|", moses)
+            moses = re.sub(r" ([a-zåäö]+) ", r" \1|NOUN ", moses)
+            moses = re.sub(r"^([a-zåäö]+) ", r"\1|NOUN ", moses)
+            moses = re.sub(r"([snrl])\|PCPNUTut", r"\1ut|PCPNUT", moses)
+            moses = re.sub(r"([snrl])\|PCPNUTee", r"\1ee|PCPNUT", moses)
+            moses = re.sub(r"m\|PCPMA([aä])", r"m\1|PCPMA", moses)
+            moses = re.sub(r"v\|PCPVA([aä])", r"v\1|PCPVA", moses)
+            moses = re.sub(r"([ei])\|NOUN (n|ssa|ssä)\|INFE.", r"\1|INFE \2|", moses)
+            print(moses)
+
         else:
             print(surf, end='|UNK ', file=outfile)
     elif fmt == 'both-lines':
         if segments and labelsegments:
-            print(segments[0].input, labelsegments[0].input, end=' ', file=outfile)
+            print(segments[0][0], labelsegments[0][0], end=' ', file=outfile)
         if segments:
-            print(segments[0].input, end=' ', file=outfile)
+            print(segments[0][0], end=' ', file=outfile)
         if labelsegments:
-            print(labelsegments[0].input, end=' ', file=outfile)
+            print(labelsegments[0][0], end=' ', file=outfile)
 
 
 def main():
