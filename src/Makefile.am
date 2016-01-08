@@ -265,7 +265,7 @@ generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=labeled
+		-i generated/inflections.tsv -o $@ -f=labelsegments
 
 # 
 generated/omorfi-phon.twolc: generated/timestamp
