@@ -316,11 +316,7 @@ class Omorfi:
         if not lemmas and 'omorfi' in this.lemmatisers:
             lemmas = this._lemmatise(token, 'omorfi')
             if not lemmas:
-                class FakeLemma():
-                    pass
-                lemma = FakeLemma()
-                lemma[0] = token
-                lemma[1] = float('inf')
+                lemma = (token, float('inf'))
                 lemmas = [lemma]
         return lemmas
 
@@ -335,11 +331,7 @@ class Omorfi:
         if not segments and 'omorfi' in this.segmenters:
             segments = this._segment(token, 'omorfi')
             if not segments:
-                class FakeSegment():
-                    pass
-                segment = FakeSegment()
-                segment[0] = token
-                segment[1] = float('inf')
+                segment = (token, float('inf'))
                 segments = [segment]
         return segments
 
@@ -354,11 +346,7 @@ class Omorfi:
         if not labelsegments and 'omorfi' in this.labelsegmenters:
             labelsegments = this._labelsegment(token, 'omorfi')
             if not labelsegments:
-                class FakeSegment():
-                    pass
-                labelsegment = FakeSegment()
-                labelsegment[0] = token
-                labelsegment[1] = float('inf')
+                labelsegment = (token, float('inf'))
                 labelsegments = [labelsegment]
         return labelsegments
 
