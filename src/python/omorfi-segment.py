@@ -7,7 +7,7 @@ import re
 
 def print_segments(fmt, segments, labelsegments, surf, outfile):
     if fmt == 'labels-moses-factors':
-        if labelsegments:
+        if float(labelsegments[0][1]) != float('inf'):
             # öykkärö[UPOS=VERB]i[TRAILS=→][MB=LEFT]dä[TRAILS=→Vpss][?=Tpres][?=Ppe4][?=Ncon][TRAILS=→] 
             analysis = labelsegments[0][0]
             splat = re.split("[]{}[]", analysis)
@@ -31,7 +31,7 @@ def print_segments(fmt, segments, labelsegments, surf, outfile):
                 elif split in ['NOUN', 'VERB', 'ADJ', 'COMP', 'PROPN', 'SUPER', 'AUX', 'NUM', 'PRON']:
                     skiptag = split
                 elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
-                        'SCONJ', 'CONJ|VERB', 'INTJ', 'DET']:
+                        'SCONJ', 'CONJ|VERB', 'INTJ', 'DET', 'SYM']:
                     moses += nextsep + split
                 elif split in ['PL', 'INS', 'INE', 'ELA',
                         'ILL', 'ADE', 'ABL', 'ALL', 'ACTV', 'PASV',
@@ -40,17 +40,22 @@ def print_segments(fmt, segments, labelsegments, surf, outfile):
                         'POSSP3', 'POSSG1', 'POSSG2', 'POSPL1', 'POSPL2',
                         'GEN', 'PCPVA', 'INFE', 'PCPMA', 'PCPNUT', 'INFMA',
                         'PE4', 'ABE', 'ESS', 'CONNEG', 'ORD', 'TRA', 'COM',
-                        'INFMAISILLA',
-                        'HAN', 'KO', 'PA', 'S', 'KAAN', 'KA', 'KIN']:
+                        'INFMAISILLA', 'PCPMATON',
+                        'HAN', 'KO', 'PA', 'S', 'KAAN', 'KA', 'KIN',
+                        'ACC']:
                     if skiptag:
                         moses += nextsep + skiptag
                         skiptag = None
                         nextsep = '.'
                     moses += nextsep + split
                     nextsep = '.'
+                elif split == 'TRUNC':
+                    # FIXME
+                    continue
                 elif split.isupper():
-                    print("unhandlend upper string?", split)
-                    exit(1)
+                    if not splat[0] == split:
+                        print("unhandlend upper string?", split)
+                        exit(1)
                 else:
                     moses += split
             if skiptag:
@@ -65,7 +70,7 @@ def print_segments(fmt, segments, labelsegments, surf, outfile):
             moses = re.sub(r"m\|PCPMA([aä])", r"m\1|PCPMA", moses)
             moses = re.sub(r"v\|PCPVA([aä])", r"v\1|PCPVA", moses)
             moses = re.sub(r"([ei])\|NOUN (n|ssa|ssä)\|INFE.", r"\1|INFE \2|", moses)
-            print(moses)
+            print(moses, end=' ', file=outfile)
 
         else:
             print(surf, end='|UNK ', file=outfile)
