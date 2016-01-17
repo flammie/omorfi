@@ -51,8 +51,8 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['adjective_class'] =  extra_fields[1].upper()
             elif extra_fields[0] == 'noun_class':
                 wordmap['noun_class'] =  extra_fields[1].upper() 
-            elif extra_fields[0] == 'numeral_class':
-                wordmap['numeral_class'] =  extra_fields[1].upper() 
+            elif extra_fields[0] == 'numtype':
+                wordmap['numtype'] =  extra_fields[1].upper() 
             elif extra_fields[0] == 'possessive':
                 wordmap['possessive'] = extra_fields[1]
             elif extra_fields[0] == 'clitics':
