@@ -221,6 +221,7 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/boundaries.tsv \
 		-j $(srcdir)/attributes/broken-paradigms.tsv \
 		-j $(srcdir)/attributes/lexicalised-inflection.tsv \
+		-j $(srcdir)/attributes/numtype.tsv \
 		-j $(srcdir)/attributes/plurale-tantum.tsv \
 		-j $(srcdir)/attributes/prontype.tsv \
 		-j $(srcdir)/attributes/pronunciation.tsv \
