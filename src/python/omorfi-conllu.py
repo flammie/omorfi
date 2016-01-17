@@ -176,7 +176,8 @@ def format_feats_ud(anal):
                     'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
                 # values found in UD finnish Derivs
                 rvs['Derivation'] = value[0] + value[1:].lower()
-            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS']:
+            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 
+                    'ADE', 'INE', 'ELA', 'ILL']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
