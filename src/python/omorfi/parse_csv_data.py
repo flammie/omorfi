@@ -90,8 +90,10 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['abbr'] = extra_fields[1].upper()
             elif extra_fields[0] == 'lex':
                 wordmap['lex'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'adptype':
+                wordmap['adptype'] = extra_fields[1].upper()
             else:
-                just_fail("Unrecognised extra field" + tsv_extra + " in TSV")
+                just_fail("Unrecognised extra field " + tsv_extra + " in TSV")
                 return None
     return wordmap
 
