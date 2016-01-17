@@ -65,6 +65,8 @@ def format_feats_ud(anal):
             rvs['VerbForm'] = 'Fin'
             if value == 'INDV':
                 rvs['Mood'] = 'Ind'
+            elif value == 'COND':
+                rvs['Mood'] = 'Cnd'
             else:
                 rvs['Mood'] = value[0] + value[1:].lower()
         elif key == 'VOICE':
@@ -98,7 +100,8 @@ def format_feats_ud(anal):
             if value == 'CON':
                 rvs['Connegative'] = 'Yes'
             elif value == 'NEG':
-                rvs['Negative'] = 'Yes'
+                rvs['Negative'] = 'Neg'
+                rvs['VerbForm'] = 'Fin'
         elif key == 'PCP':
             rvs['VerbForm'] = 'Part'
             if value == 'VA':
@@ -117,6 +120,8 @@ def format_feats_ud(anal):
                 rvs['InfForm'] = '2'
             elif value == 'MA':
                 rvs['InfForm'] = '3'
+                # XXX
+                rvs['Number'] = 'Sing'
             elif value == 'MINEN':
                 rvs['InfForm'] = '4'
             elif value == 'MAISILLA':
@@ -130,7 +135,8 @@ def format_feats_ud(anal):
                 rvs['Degree'] = 'Pos'
         elif key == 'SUBCAT':
             if value == 'NEG':
-                rvs['Negative'] = 'Yes'
+                rvs['Negative'] = 'Neg'
+                rvs['VerbForm'] = 'Fin'
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
             elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
@@ -259,6 +265,11 @@ def try_analyses_conllu(original, wordn, surf, anals, outfile):
             return print_analyses_conllu(wordn, surf, anal, outfile)
     return print_analyses_conllu(wordn, surf, anals[0], outfile)
 
+def debug_analyses_conllu(original, wordn, surf, anals, outfile):
+    print(original, file=outfile)
+    for anal in anals:
+        print_analyses_conllu(wordn, surf, anal, outfile)
+
 def print_analyses_conllu(wordn, surf, anal, outfile):
     upos = get_last_feat("UPOS", anal)
     if not upos or upos == "":
@@ -284,6 +295,8 @@ def main():
             help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-O', '--oracle', action='store_true',
             help="match to values in input when parsing if possible")
+    a.add_argument('--debug', action='store_true',
+            help="print lots of debug info while processing")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -327,7 +340,9 @@ def main():
             surf = fields[1]
             anals = omorfi.analyse(surf)
             if anals and len(anals) > 0:
-                if options.oracle:
+                if options.debug:
+                    debug_analyses_conllu(fields, index, surf, anals, options.outfile)
+                elif options.oracle:
                     try_analyses_conllu(fields, index, surf, anals, 
                             options.outfile)
                 else:
