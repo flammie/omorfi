@@ -158,6 +158,8 @@ def format_feats_ud(anal):
             rvs['NumType'] = value[0] + value[1:].lower()
         elif key == 'PRONTYPE':
             rvs['PronType'] = value[0] + value[1:].lower()
+        elif key == 'ADPTYPE':
+            rvs['AdpType'] = value[0] + value[1:].lower()
         elif key == 'CLIT':
             rvs['Clitic'] = value[0] + value[1:].lower()
         elif key == 'FOREIGN':
