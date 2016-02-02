@@ -67,6 +67,8 @@ def format_feats_ud(anal):
                 rvs['Mood'] = 'Ind'
             elif value == 'COND':
                 rvs['Mood'] = 'Cnd'
+            elif value == 'IMPV':
+                rvs['Mood'] = 'Imp'
             else:
                 rvs['Mood'] = value[0] + value[1:].lower()
         elif key == 'VOICE':
@@ -99,6 +101,8 @@ def format_feats_ud(anal):
         elif key == 'NEG':
             if value == 'CON':
                 rvs['Connegative'] = 'Yes'
+                # XXX
+                rvs.pop('Voice')
             elif value == 'NEG':
                 rvs['Negative'] = 'Neg'
                 rvs['VerbForm'] = 'Fin'
@@ -118,6 +122,8 @@ def format_feats_ud(anal):
                 rvs['InfForm'] = '1'
             elif value == 'E':
                 rvs['InfForm'] = '2'
+                # XXX
+                rvs['Number'] = 'Sing'
             elif value == 'MA':
                 rvs['InfForm'] = '3'
                 # XXX
@@ -153,7 +159,8 @@ def format_feats_ud(anal):
                 print("in", anal[0][0])
                 exit(1)
         elif key == 'ABBR':
-            rvs['Abbr'] = value[0] + value[1:].lower()
+            # XXX?
+            rvs['Abbr'] = 'Yes'
         elif key == 'NUMTYPE':
             rvs['NumType'] = value[0] + value[1:].lower()
         elif key == 'PRONTYPE':
