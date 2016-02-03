@@ -12,6 +12,7 @@ XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 LEXEMES=lexemes.tsv
 # lexical features
 LEMMA_JOINS=attributes/abbr.tsv \
+			attributes/adptype.tsv \
 			attributes/boundaries.tsv \
 			attributes/broken-paradigms.tsv \
 			attributes/clitics.tsv \
@@ -218,9 +219,11 @@ generated/timestamp:
 generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/python/tsvjoin.py -v -i $< \
 		-j $(srcdir)/attributes/abbr.tsv \
+		-j $(srcdir)/attributes/adptype.tsv \
 		-j $(srcdir)/attributes/boundaries.tsv \
 		-j $(srcdir)/attributes/broken-paradigms.tsv \
 		-j $(srcdir)/attributes/lexicalised-inflection.tsv \
+		-j $(srcdir)/attributes/numtype.tsv \
 		-j $(srcdir)/attributes/plurale-tantum.tsv \
 		-j $(srcdir)/attributes/prontype.tsv \
 		-j $(srcdir)/attributes/pronunciation.tsv \

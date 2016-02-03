@@ -197,7 +197,8 @@ class Ftb3Formatter(Formatter):
             "B-": "% TrunCo",
             "B←": "% TrunCo",
             "B→": "TrunCo% ",
-            "CARDINAL": "", "ORDINAL": "% Ord",
+            "CARDINAL": "", 
+            "ORDINAL": "% Ord",
             "Ccmp": "% Comp",
             "CLAUSE-BOUNDARY": "",
             "Cma": "% AgPrc",
@@ -241,6 +242,7 @@ class Ftb3Formatter(Formatter):
             "ELATIVE": "% Ela",
             "FINAL-BRACKET": "",
             "FINAL-QUOTE": "% Quote",
+            "FRACTION": "",
             "FTB3man": "% Man",
             "FTB3MAN": "% Man",
             "GENITIVE": "% Gen",
@@ -259,6 +261,7 @@ class Ftb3Formatter(Formatter):
             "LATIVE": "% Lat",
             "LEMMA-START": "",
             "LOCATIVE": "% Ess", 
+            "MULTIPLICATIVE": "",
             "Ncon": "% ConNeg",
             "Nneg": "% Neg", 
             "NOUN": "% N",
@@ -299,7 +302,7 @@ class Ftb3Formatter(Formatter):
             "Qpa": "% Foc%_pA",
             "Qs": "% Foc%_s",
             "QUALIFIER": "% A",
-            "QUANTIFIER": "% A",
+            "QUANTIFIER": "% Qnt",
             "QUANTOR": "% Qnt",
             "RECIPROCAL": "",
             "REFLEXIVE": "% Refl",
@@ -468,7 +471,7 @@ class Ftb3Formatter(Formatter):
             wordmap['analysis'] += this.stuff2lexc(wordmap['pos'])
         elif wordmap['pos'] == 'CONJUNCTIONVERB':
             if wordmap['lemma'] == 'eikä':
-                wordmap['analysis'] += this.stuff2lexc('COORDINATING') + \
+                wordmap['analysis'] = wordmap['lemma'] + this.stuff2lexc('CONJ') + \
                         this.stuff2lexc('Nneg')
             else:
                 wordmap['analysis'] += this.stuff2lexc('ADVERBIAL') + \

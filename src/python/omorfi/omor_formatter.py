@@ -130,6 +130,8 @@ class OmorFormatter(Formatter):
         '[NUM=SG]',
         '[NUMTYPE=CARD]',
         '[NUMTYPE=ORD]',
+        '[NUMTYPE=FRAC]',
+        '[NUMTYPE=MULT]',
         '[PCP=AGENT]',
         '[PCP=NEG]',
         '[PCP=NUT]',
@@ -205,9 +207,9 @@ class OmorFormatter(Formatter):
         '[SUBCAT=NEG]',
         "[SUBCAT=NEG]",
         '[SUBCAT=OPERATION]',
-        '[SUBCAT=POSTPOSITION]',
+        '[ADPTYPE=POST]',
         '[SUBCAT=PREFIX]',
-        '[SUBCAT=PREPOSITION]',
+        '[ADPTYPE=PREP]',
         '[SUBCAT=QUALIFIER]',
         '[SUBCAT=QUANTIFIER]',
         '[SUBCAT=QUOTATION]',
@@ -551,6 +553,10 @@ class OmorFormatter(Formatter):
         "SPACE": "[SUBCAT=SPACE]",
         "COMMA": "[SUBCAT=COMMA]",
         "ARROW": "[SUBCAT=ARROW]",
+        "PREPOSITION": "[ADPTYPE=PREP]",
+        "POSTPOSITION": "[ADPTYPE=POST]",
+        "MULTIPLICATIVE": "[NUMTYPE=MULT]",
+        "FRACTION": "[NUMTYPE=FRAC]",
         "CLAUSE-BOUNDARY": "[BOUNDARY=CLAUSE]",
         "SENTENCE-BOUNDARY": "[BOUNDARY=SENTENCE]",
         "INITIAL-QUOTE": "[SUBCAT=QUOTATION][POSITION=INITIAL]",
@@ -702,7 +708,9 @@ class OmorFormatter(Formatter):
         if wordmap['numtype']:
             for stuff in wordmap['numtype'].split("|"):
                 wordmap['analysis'] += this.stuff2lexc(stuff)
-        
+        if wordmap['adptype']:
+            for stuff in wordmap['adptype'].split("|"):
+                wordmap['analysis'] += this.stuff2lexc(stuff)
         if wordmap['is_proper']:
             if this.props and wordmap['proper_noun_class']:
                 for prop in wordmap['proper_noun_class'].split(','):
