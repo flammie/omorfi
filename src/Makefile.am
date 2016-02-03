@@ -174,7 +174,8 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-disambiguate-text.sh \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
-			python/omorfi-conllu.py
+			python/omorfi-conllu.py \
+			python/omorfi-segment.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
