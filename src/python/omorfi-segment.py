@@ -212,6 +212,9 @@ def print_segments(segments, labelsegments, surf, outfile, options):
                     segmented += options.segment_marker
             elif split == 'STUB':
                 pass
+            elif split == 'hyph?':
+                if options.split_words:
+                    segmented += options.segment_marker
             else:
                 segmented += split
         print(segmented, end=' ', file=outfile)
