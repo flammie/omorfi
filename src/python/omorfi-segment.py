@@ -75,6 +75,8 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
             moses = re.sub(r" ([ij]) ([a-zä]*)\|PL.", r" \1|PL \2|", moses)
         # i ne|COM
         moses = re.sub(r"i ne\|COM", "i|PL ne|COM", moses)
+        # |ABEko.KO
+        moses = re.sub(r"\|([A-Z][A-Z][A-Z]?)ko\.KO", r"|\1 ko|KO", moses)
         moses = re.sub(r" ([a-zåäö]+) ", r" \1|NOUN ", moses)
         moses = re.sub(r"^([a-zåäö]+) ", r"\1|NOUN ", moses)
         moses = re.sub(r"([snrl])\|PCPNUTut", r"\1ut|PCPNUT", moses)
@@ -85,13 +87,12 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         # teh|VERB |PCPNUTdy llä|ADE
         moses = re.sub(r"\|PCPNUT([tdrsnl]?[uy])", r"\1|PCPNUT", moses)
         moses = re.sub(r"\|AUX\.PASV\.PCPNUT([tdrsnl]?[uy])", r"\1|AUX.PASV.PCPNUT", moses)
-        moses = re.sub(r"m\|PCPMA([aä])", r"m\1|PCPMA", moses)
-        moses = re.sub(r"v\|PCPVA([aä])", r"v\1|PCPVA", moses)
+        moses = re.sub(r"m\|PCPMA([a-zaä]+)", r"m\1|PCPMA", moses)
+        moses = re.sub(r"v\|PCPVA([a-zaä]+)", r"v\1|PCPVA", moses)
         moses = re.sub(r"v\|VERB\.PCPVA([aä])", r"v\1|VERB.PCPVA", moses)
         moses = re.sub(r"v\|AUX.PCPVA([aä])", r"v\1|AUX.PCPVA", moses)
         #|PCPMATONön
-        moses = re.sub(r"\|PCPMATON([oö]n)", r"\1|PCPMATON", moses)
-        moses = re.sub(r"\|PCPMATON(t[oö]m[aä])", r"\1|PCPMATON", moses)
+        moses = re.sub(r"\|PCPMATON([a-zåäö]+)", r"\1|PCPMATON", moses)
         #puhu|VERB ma|NOUN an|INFMA.ILL
         moses = re.sub(r"(m[aä])\|NOUN ([aä]n)\|INFMA.ILL",
                 r"\1|INFMA \2|ILL", moses)
@@ -152,18 +153,18 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         # kehitys|NOUN yhteis|NOUN työ mis|NOUNnisteri|NOUN nä|ESS
         # ulko|NOUN maalai|NOUN s|NOUN viha mielis|ADJ tä|PAR
         # epä|NOUN tasa-arvo asia|NOUN
-        moses = re.sub(r"([a-zéšäöå-]*)\|NOUN ([a-zšéäöå-]*) ([a-zšéäöå]*)\|NOUN",
+        moses = re.sub(r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|NOUN",
                 r"\1|NOUN \2|NOUN \3|NOUN", moses)
-        moses = re.sub(r"([a-zéšäöå-]*)\|NOUN ([a-zšéäöå-]*) ([a-zšéäöå]*)\|ADJ",
+        moses = re.sub(r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|ADJ",
                 r"\1|NOUN \2|NOUN \3|ADJ", moses)
         # šakki lauda|NOUN
         # pöytä|NOUN rosé viine|NOUN i|PL stä|ELA 
         # linja-auto liikentee|NOUN n|GEN
-        moses = re.sub(r"^([A-Za-z*ÉéÄŠÖÅšäöå-]*) ([a-zäöå-]*)\|NOUN",
+        moses = re.sub(r"^([A-Za-z*ÉéÄŠÖÅšäöå-]+) ([a-zäöå-]+)\|NOUN",
                 r"\1|NOUN \2|NOUN", moses)
-        moses = re.sub(r"^([A-Za-z*ÉéÄŠÖÅšäöå-]*) ([a-zäöå-]*)\|PROPN",
+        moses = re.sub(r"^([A-Za-z*ÉéÄŠÖÅšäöå-]+) ([a-zäöå-]+)\|PROPN",
                 r"\1|PROPN \2|PROPN", moses)
-        moses = re.sub(r"^\|([A-Za-z*ÉéÄŠÖÅšäöå-]*).PROPN",
+        moses = re.sub(r"^\|([A-Za-z*ÉéÄŠÖÅšäöå-]+).PROPN",
                 r"\1|PROPN", moses)
         #  R|NOUN ja|ADV |S.NOUN
         # |S-.NOUN kirjaime|NOUN lla|ADE
@@ -180,11 +181,16 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         # |NOUNsa|INE
         moses = re.sub(r"\|NOUN([st][aä])\|", r"|NOUN \1|", moses)
         # Slovenia... n|GEN- haara
-        moses = re.sub(r"n\|GEN-", r"n|GEN", moses)
+        moses = re.sub(r"n\|([A-Z.]+)-+", r"n|\1", moses)
         # ADP
         moses = re.sub(r"\|ADP([in])", r"\1|ADP", moses)
+        moses = re.sub(r"\|SG3pi", r"pi|SG3", moses)
         # 
         moses = re.sub(r"([uy])\|PCPNUTt", r"\1t|PCPNUT", moses)
+        # |NOUNäiliö|NOUN
+        moses = re.sub(r"\|NOUN([a-zäåö]+)\|NOUN", r"\1|NOUN", moses)
+        # || special case :-/
+        moses = re.sub(r"\|\|SYM", "@pipe;|SYM", moses)
         print(moses, end=' ', file=outfile)
     else:
         print(surf, end='|UNK ', file=outfile)
@@ -237,15 +243,18 @@ def main():
     a.add_argument('-O', '--output-format', metavar="OFORMAT", 
             help="format output suitable for OFORMAT",
             choices=["labels-tsv", "moses-factors", "segments"])
-    a.add_argument('--split-words', action="store_true", default=True,
+    a.add_argument('--no-split-words', action="store_false", default=True,
+            dest="split_words",
             help="split on word boundaries")
-    a.add_argument('--split-new-words', action="store_true", default=True,
+    a.add_argument('--no-split-new-words', action="store_false", default=True,
+            dest="split_new_words",
             help="split on new word boundaries (prev. unattested compounds)")
-    a.add_argument('--split-morphs', action="store_true", default=True,
+    a.add_argument('--no-split-morphs', action="store_false", default=True,
+            dest="split_morphs",
             help="split on morph boundaries")
     a.add_argument('--split-derivs', action="store_true", default=False,
             help="split on derivation boundaries")
-    a.add_argument('--split-nonwords', action="store_true", default=True,
+    a.add_argument('--split-nonwords', action="store_true", default=False,
             help="split on other boundaries")
     a.add_argument('--segment-marker', default=' ', metavar='SEG',
             help="mark segment boundaries with SEG")
