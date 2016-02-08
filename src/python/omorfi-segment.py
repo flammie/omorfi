@@ -289,6 +289,7 @@ def main():
         if options.verbose and linen % 10000 == 0:
             print(linen, '...')
         if not line or line == '':
+            print(file=outfile)
             continue
         surfs = omorfi.tokenise(line)
         for surf in surfs:
