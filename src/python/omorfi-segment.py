@@ -214,7 +214,7 @@ def print_segments(segments, labelsegments, surf, outfile, options):
                 if options.split_derivs:
                     segmented += options.segment_marker
             elif split == 'XB':
-                if options.split_nonmorphs:
+                if options.split_nonwords:
                     segmented += options.segment_marker
             elif split == 'STUB':
                 pass
