@@ -1,103 +1,103 @@
-lemma	homonym	new_para	style
-´	1	SYMBOL_PISTE	nonstandard
-´	2	SYMBOL_PISTE	nonstandard
-`	1	SYMBOL_PISTE	nonstandard
-`	2	SYMBOL_PISTE	nonstandard
-..	1	SYMBOL_PISTE	nonstandard
-....	1	SYMBOL_PISTE	nonstandard
-'	1	SYMBOL_PISTE	nonstandard
-'	2	SYMBOL_PISTE	nonstandard
-«	1	SYMBOL_PISTE	nonstandard
-«	2	SYMBOL_PISTE	nonstandard
-“	1	SYMBOL_PISTE	nonstandard
-agregaatti	1	N_KORTTI	nonstandard
-agressiivinen	1	A_AAKKOSELLINEN	nonstandard
-aivankuin	1	PCLE_VAAN	nonstandard
-aluminium	1	N_PUNK	nonstandard
-alunperin	1	PCLE_NOPEASTI	nonstandard
-Azerbaidzan	1	N_STADION	nonstandard
-edelläkuvattu	1	A_VIMMATTU	nonstandard
-eksä	1	N_HÖPÖTTÄJÄ	dialectal
-ennenkun	1	PCLE_VAAN	nonstandard
-ensimäinen	1	NUM_ENSIMMÄINEN	nonstandard
-enään	1	PCLE_VAAN	nonstandard
-eroittaa	1	V_VIEROITTAA	nonstandard
-hajoittaa	1	V_VIEROITTAA	nonstandard
-Herzegovina	1	N_KITARA	nonstandard
-hox	1	PCLE_HAH	dialectal
-häkä	1	N_HÖPÖTTÄJÄ	nonstandard
-hää	2	PRON_HÄÄ	dialectal
-ikäänkuin	1	PCLE_VAAN	nonstandard
-irroittaa	1	V_VIEROITTAA	nonstandard
-jaksottainen	1	A_AAKKOSELLINEN	nonstandard
-ja/tai	1	PCLE_VAAN	nonstandard
-ja/vai	1	PCLE_VAAN	nonstandard
-jokseen	1	PCLE_VAAN	nonstandard
-jompi	1	PRON_KUMPI	nonstandard
-jos/kun	1	PCLE_VAAN	nonstandard
-jäde	1	N_NISSE	dialectal
-katos	1	PCLE_NOPEASTI	dialectal
-kauvan	1	PCLE_NOPEASTI	nonstandard
-kehoittaa	1	V_VIEROITTAA	nonstandard
-kentiesi	1	PCLE_VAAN	archaic
-keulilla	1	PCLE_NOPEASTI	nonstandard
-keulille	1	PCLE_NOPEASTI	nonstandard
-keulilta	1	PCLE_NOPEASTI	nonstandard
-ko	1	PCLE_VAAN	dialectal
-kuhan	1	PCLE_VAAN	dialectal
-kuni	1	PCLE_VAAN	nonstandard
-levinnäisyys	1	N_KÖYHYYS	nonstandard
-likitse	1	PCLE_YLLE	archaic
-loppujenlopuksi	1	PCLE_NOPEASTI	nonstandard
-melkeen	1	PCLE_TYHMÄSTI	dialectal
-melkeistä	1	PCLE_TYHMÄSTI	dialectal
-mie	1	PRON_MIE	dialectal
-miks	1	PCLE_TYHMÄSTI	dialectal
-mitvit	1	PCLE_VAAN	nonstandard
-mix	1	PCLE_TYHMÄSTI	nonstandard
-moduli	1	N_RUUVI	nonstandard
-muudan	1	PRON_MUUAN	archaic
-myödä	1	V_SYÖDÄ	dialectal
-mä	1	PRON_MÄ	dialectal
-mää	2	PRON_MÄÄ	dialectal
-niinkuin	1	PCLE_VAAN	nonstandard
-niinq	1	PCLE_VAAN	nonstandard
-niinqu	1	PCLE_VAAN	nonstandard
-noi	1	PRON_NOI	dialectal
-noni	1	PCLE_HAH	nonstandard
-noniin	1	PCLE_HAH	nonstandard
-nonni	1	PCLE_HAH	nonstandard
-nyksä	1	N_HÖPÖTTÄJÄ	dialectal
-oikee	1	A_OIKEE	dialectal
-oikeen	1	PCLE_NOPEASTI	dialectal
-oikeesti	1	PCLE_NOPEASTI	dialectal
-oottaa	1	V_VIEROITTAA	dialectal
-poikitse	1	PCLE_ALLE	archaic
-rankaista	1	V_MARISTA	nonstandard
-saikku	1	N_TIKKU	dialectal
-sellai	1	PCLE_NOPEASTI	dialectal
-semma	1	N_KIRJA	dialectal
-semmonen	1	A_AAKKOSELLINEN	dialectal
-sentrifuugi	1	N_RUUVI	nonstandard
-shampanja	1	N_KITARA	nonstandard
-shamppanja	1	N_KITARA	nonstandard
-sie	1	PRON_MIE	dialectal
-sikaari	1	N_KANAALI	archaic
-sillai	1	PCLE_NOPEASTI	dialectal
-sitte	1	PCLE_TYHMÄSTI	nonstandard
-sä	1	PRON_MÄ	dialectal
-sää	2	PRON_MÄÄ	dialectal
-Tadzikistan	1	N_PUNK	nonstandard
-Tanzania	1	N_MAKKARA	nonstandard
-tietsikka	1	N_LUSIKKA	dialectal
-toi	1	PRON_TOI	dialectal
-tommonen	1	A_AAKKOSELLINEN	dialectal
-tonne	1	PCLE_NOPEASTI	dialectal
-Tsekkoslovakia	1	N_MAKKARA	nonstandard
-tunnittainen	1	A_AAKKOSELLINEN	nonstandard
-tää	1	PRON_MÄÄ	dialectal
-viikottainen	1	A_AAKKOSELLINEN	nonstandard
-vuottaa	1	V_VIEROITTAA	dialectal
-yhtäsuuri	1	A_SUURI	nonstandard
-ympäritse	1	PCLE_YLLE	archaic
-äiti	2	N_TYYLI	dialectal
+lemma	homonym	style
+´	1	nonstandard
+´	2	nonstandard
+`	1	nonstandard
+`	2	nonstandard
+..	1	nonstandard
+....	1	nonstandard
+'	1	nonstandard
+'	2	nonstandard
+«	1	nonstandard
+«	2	nonstandard
+“	1	nonstandard
+agregaatti	1	nonstandard
+agressiivinen	1	nonstandard
+aivankuin	1	nonstandard
+aluminium	1	nonstandard
+alunperin	1	nonstandard
+Azerbaidzan	1	nonstandard
+edelläkuvattu	1	nonstandard
+eksä	1	dialectal
+ennenkun	1	nonstandard
+ensimäinen	1	nonstandard
+enään	1	nonstandard
+eroittaa	1	nonstandard
+hajoittaa	1	nonstandard
+Herzegovina	1	nonstandard
+hox	1	dialectal
+häkä	1	nonstandard
+hää	2	dialectal
+ikäänkuin	1	nonstandard
+irroittaa	1	nonstandard
+jaksottainen	1	nonstandard
+ja/tai	1	nonstandard
+ja/vai	1	nonstandard
+jokseen	1	nonstandard
+jompi	1	nonstandard
+jos/kun	1	nonstandard
+jäde	1	dialectal
+katos	1	dialectal
+kauvan	1	nonstandard
+kehoittaa	1	nonstandard
+kentiesi	1	archaic
+keulilla	1	nonstandard
+keulille	1	nonstandard
+keulilta	1	nonstandard
+ko	1	dialectal
+kuhan	1	dialectal
+kuni	1	nonstandard
+levinnäisyys	1	nonstandard
+likitse	1	archaic
+loppujenlopuksi	1	nonstandard
+melkeen	1	dialectal
+melkeistä	1	dialectal
+mie	1	dialectal
+miks	1	dialectal
+mitvit	1	nonstandard
+mix	1	nonstandard
+moduli	1	nonstandard
+muudan	1	archaic
+myödä	1	dialectal
+mä	1	dialectal
+mää	2	dialectal
+niinkuin	1	nonstandard
+niinq	1	nonstandard
+niinqu	1	nonstandard
+noi	1	dialectal
+noni	1	nonstandard
+noniin	1	nonstandard
+nonni	1	nonstandard
+nyksä	1	dialectal
+oikee	1	dialectal
+oikeen	1	dialectal
+oikeesti	1	dialectal
+oottaa	1	dialectal
+poikitse	1	archaic
+rankaista	1	nonstandard
+saikku	1	dialectal
+sellai	1	dialectal
+semma	1	dialectal
+semmonen	1	dialectal
+sentrifuugi	1	nonstandard
+shampanja	1	nonstandard
+shamppanja	1	nonstandard
+sie	1	dialectal
+sikaari	1	archaic
+sillai	1	dialectal
+sitte	1	nonstandard
+sä	1	dialectal
+sää	2	dialectal
+Tadzikistan	1	nonstandard
+Tanzania	1	nonstandard
+tietsikka	1	dialectal
+toi	1	dialectal
+tommonen	1	dialectal
+tonne	1	dialectal
+Tsekkoslovakia	1	nonstandard
+tunnittainen	1	nonstandard
+tää	1	dialectal
+viikottainen	1	nonstandard
+vuottaa	1	dialectal
+yhtäsuuri	1	nonstandard
+ympäritse	1	archaic
+äiti	2	dialectal

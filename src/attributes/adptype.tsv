@@ -1,132 +1,132 @@
-lemma	homonym	new_para	adptype
-alapuolella	1	ADP_KOTONA	postposition
-alapuolella	2	ADP_KOTONA	postposition
-alla	1	ADP_KOTONA	postposition
-alla	2	ADP_KOTONA	postposition
-alle	1	ADP_ALLE	postposition
-alle	2	ADP_ALLE	preposition
-alta	1	ADP_KOTONA	postposition
-alta	2	ADP_KOTONA	preposition
-edelle	1	ADP_YLLE	postposition
-edelle	2	ADP_YLLE	postposition
-ennen	2	ADP_MUKAISESTI	postposition
-ennen	3	ADP_MUKAISESTI	preposition
-eteen	1	ADP_NÄKYVIIN	postposition
-eteen	2	ADP_NÄKYVIIN	postposition
-hallussa	1	ADP_KOTONA	postposition
-hallussa	2	ADP_KOTONA	postposition
-hyväksi	1	ADP_LISÄKSI	postposition
-hyväksi	2	ADP_VUOKSI	postposition
-ilman	2	ADP_MUKAISESTI	postposition
-ilman	3	ADP_MUKAISESTI	preposition
-jälkeen	1	ADP_NÄKYVIIN	postposition
-jälkeen	2	ADP_NÄKYVIIN	preposition
-kanssa	1	ADP_KOTONA	postposition
-kautta	1	ADP_KOTONA	postposition
-kautta	2	ADP_KOTONA	preposition
-keskelle	1	ADP_YLLE	postposition
-keskelle	2	ADP_YLLE	preposition
-keskuudessa	1	ADP_KOTONA	postposition
-keskuudessa	2	ADP_KOTONA	postposition
-kohtaan	1	ADP_VALTAAN	postposition
-kohtaan	2	ADP_VALTAAN	postposition
-kohti	2	ADP_MUKAISESTI	postposition
-kohti	3	ADP_MUKAISESTI	preposition
-käsin	1	ADP_NÄKYVIIN	postposition
-käsin	2	ADP_NÄKYVIIN	postposition
-lisäksi	1	ADP_LISÄKSI	postposition
-lomitse	1	ADP_ALLE	postposition
-loppupuolella	1	ADP_KOTONA	postposition
-loppupuolella	2	ADP_KOTONA	postposition
-lukuunottamatta	1	ADP_KOTONA	postposition
-luokse	1	ADP_ALLE	postposition
-luokse	2	ADP_ALLE	postposition
-luona	1	ADP_KOTONA	postposition
-luona	2	ADP_KOTONA	postposition
-lähelle	1	ADP_YLLE	postposition
-lähelle	2	ADP_YLLE	preposition
-lähtien	1	ADP_NÄKYVIIN	postposition
-länsipuolitse	1	ADP_ALLE	postposition
-länsipuolitse	2	ADP_ALLE	postposition
-lävitse	1	ADP_YLLE	postposition
-lävitse	2	ADP_YLLE	postposition
-mennessä	2	ADP_MUKAISESTI	postposition
-muassa	1	ADP_KOTONA	postposition
-mukaan	1	ADP_MUKAAN	postposition
-mukaan	2	ADP_MUKAAN	preposition
-mukana	1	ADP_KOTONA	postposition
-mukana	2	ADP_KOTONA	preposition
-myöten	1	ADP_NÄKYVIIN	postposition
-nojalla	1	ADP_KOTONA	postposition
-nojalla	2	ADP_KOTONA	postposition
-nähden	1	ADP_NÄHDEN	postposition
-ohella	1	ADP_KOTONA	postposition
-ohitse	1	ADP_ALLE	postposition
-ohitse	2	ADP_ALLE	postposition
-paikallaan	1	ADP_ILKOSILLAAN	preposition
-pariin	1	ADP_VALTAAN	postposition
-pariin	2	ADP_VALTAAN	postposition
-parissa	1	ADP_KOTONA	postposition
-parista	1	ADP_KOTONA	postposition
-perään	1	ADP_NÄKYVIIN	postposition
-perään	2	ADP_NÄKYVIIN	postposition
-puitteissa	1	ADP_KOTONA	postposition
-puoleen	1	ADP_VALTAAN	postposition
-puolesta	1	ADP_KOTONA	postposition
-puolesta	2	ADP_KOTONA	postposition
-päin	1	ADP_NÄKYVIIN	postposition
-päälle	1	ADP_YLLE	postposition
-päälle	2	ADP_YLLE	preposition
-rinnalla	1	ADP_KOTONA	postposition
-rinnalla	2	ADP_KOTONA	postposition
-rinnalle	1	ADP_ALLE	postposition
-rinnalle	2	ADP_ALLE	postposition
-sijaan	1	ADP_VALTAAN	postposition
-sijasta	1	ADP_KOTONA	postposition
-sisälle	1	ADP_YLLE	postposition
-sisälle	2	ADP_YLLE	preposition
-sisään	1	ADP_NÄKYVIIN	postposition
-sisään	2	ADP_NÄKYVIIN	preposition
-sitten	2	ADP_MUKAISESTI	postposition
-sitten	3	ADP_MUKAISESTI	preposition
-taakse	1	ADP_ALLE	postposition
-taakse	2	ADP_ALLE	postposition
-takaa	1	ADP_KOTONA	postposition
-takaa	2	ADP_KOTONA	postposition
-takana	1	ADP_KOTONA	postposition
-takana	2	ADP_KOTONA	postposition
-takia	1	ADP_KOTONA	postposition
-tasalla	1	ADP_KOTONA	postposition
-tasalla	2	ADP_KOTONA	postposition
-tienoilla	1	ADP_KOTONA	postposition
-tilalle	1	ADP_ALLE	postposition
-tilalle	2	ADP_ALLE	postposition
-tähden	1	ADP_NÄHDEN	postposition
-tähden	2	ADP_NÄHDEN	postposition
-ulkopuolella	1	ADP_KOTONA	postposition
-ulkopuolella	2	ADP_KOTONA	postposition
-ulkopuolelle	1	ADP_ALLE	postposition
-ulkopuolelle	2	ADP_ALLE	preposition
-varaan	1	ADP_VALTAAN	postposition
-varassa	1	ADP_KOTONA	postposition
-varten	2	ADP_MUKAISESTI	postposition
-vastaan	1	ADP_VALTAAN	postposition
-viereen	1	ADP_NÄKYVIIN	postposition
-viereen	2	ADP_NÄKYVIIN	postposition
-vuoksi	2	ADP_VUOKSI	postposition
-välille	1	ADP_YLLE	postposition
-välille	2	ADP_YLLE	postposition
-välillä	2	ADP_MUKAISESTI	postposition
-väliltä	2	ADP_MUKAISESTI	postposition
-ylitse	1	ADP_YLLE	postposition
-ylitse	2	ADP_YLLE	postposition
-ylle	1	ADP_YLLE	postposition
-ylle	2	ADP_YLLE	postposition
-yläpuolella	1	ADP_KOTONA	postposition
-yläpuolella	2	ADP_KOTONA	postposition
-yläpuolelle	1	ADP_ALLE	postposition
-yläpuolelle	2	ADP_ALLE	postposition
-ympärille	1	ADP_YLLE	postposition
-ympärille	2	ADP_YLLE	postposition
-ääreen	1	ADP_NÄKYVIIN	postposition
-ääreen	2	ADP_NÄKYVIIN	postposition
+lemma	homonym	adptype
+alapuolella	1	postposition
+alapuolella	2	postposition
+alla	1	postposition
+alla	2	postposition
+alle	1	postposition
+alle	2	preposition
+alta	1	postposition
+alta	2	preposition
+edelle	1	postposition
+edelle	2	postposition
+ennen	2	postposition
+ennen	3	preposition
+eteen	1	postposition
+eteen	2	postposition
+hallussa	1	postposition
+hallussa	2	postposition
+hyväksi	1	postposition
+hyväksi	2	postposition
+ilman	2	postposition
+ilman	3	preposition
+jälkeen	1	postposition
+jälkeen	2	preposition
+kanssa	1	postposition
+kautta	1	postposition
+kautta	2	preposition
+keskelle	1	postposition
+keskelle	2	preposition
+keskuudessa	1	postposition
+keskuudessa	2	postposition
+kohtaan	1	postposition
+kohtaan	2	postposition
+kohti	2	postposition
+kohti	3	preposition
+käsin	1	postposition
+käsin	2	postposition
+lisäksi	1	postposition
+lomitse	1	postposition
+loppupuolella	1	postposition
+loppupuolella	2	postposition
+lukuunottamatta	1	postposition
+luokse	1	postposition
+luokse	2	postposition
+luona	1	postposition
+luona	2	postposition
+lähelle	1	postposition
+lähelle	2	preposition
+lähtien	1	postposition
+länsipuolitse	1	postposition
+länsipuolitse	2	postposition
+lävitse	1	postposition
+lävitse	2	postposition
+mennessä	2	postposition
+muassa	1	postposition
+mukaan	1	postposition
+mukaan	2	preposition
+mukana	1	postposition
+mukana	2	preposition
+myöten	1	postposition
+nojalla	1	postposition
+nojalla	2	postposition
+nähden	1	postposition
+ohella	1	postposition
+ohitse	1	postposition
+ohitse	2	postposition
+paikallaan	1	preposition
+pariin	1	postposition
+pariin	2	postposition
+parissa	1	postposition
+parista	1	postposition
+perään	1	postposition
+perään	2	postposition
+puitteissa	1	postposition
+puoleen	1	postposition
+puolesta	1	postposition
+puolesta	2	postposition
+päin	1	postposition
+päälle	1	postposition
+päälle	2	preposition
+rinnalla	1	postposition
+rinnalla	2	postposition
+rinnalle	1	postposition
+rinnalle	2	postposition
+sijaan	1	postposition
+sijasta	1	postposition
+sisälle	1	postposition
+sisälle	2	preposition
+sisään	1	postposition
+sisään	2	preposition
+sitten	2	postposition
+sitten	3	preposition
+taakse	1	postposition
+taakse	2	postposition
+takaa	1	postposition
+takaa	2	postposition
+takana	1	postposition
+takana	2	postposition
+takia	1	postposition
+tasalla	1	postposition
+tasalla	2	postposition
+tienoilla	1	postposition
+tilalle	1	postposition
+tilalle	2	postposition
+tähden	1	postposition
+tähden	2	postposition
+ulkopuolella	1	postposition
+ulkopuolella	2	postposition
+ulkopuolelle	1	postposition
+ulkopuolelle	2	preposition
+varaan	1	postposition
+varassa	1	postposition
+varten	2	postposition
+vastaan	1	postposition
+viereen	1	postposition
+viereen	2	postposition
+vuoksi	2	postposition
+välille	1	postposition
+välille	2	postposition
+välillä	2	postposition
+väliltä	2	postposition
+ylitse	1	postposition
+ylitse	2	postposition
+ylle	1	postposition
+ylle	2	postposition
+yläpuolella	1	postposition
+yläpuolella	2	postposition
+yläpuolelle	1	postposition
+yläpuolelle	2	postposition
+ympärille	1	postposition
+ympärille	2	postposition
+ääreen	1	postposition
+ääreen	2	postposition

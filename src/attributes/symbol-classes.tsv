@@ -1,50 +1,50 @@
-lemma	homonym	new_para	symbol
-´	1	SYMBOL_PISTE	final-quote
-´	2	SYMBOL_PISTE	initial-quote
-`	1	SYMBOL_PISTE	final-quote
-`	2	SYMBOL_PISTE	initial-quote
-<	1	SYMBOL_PISTE	initial-bracket
->	1	SYMBOL_PISTE	final-bracket
--	1	SYMBOL_PISTE	dash
---	1	SYMBOL_PISTE	dash
-,	1	SYMBOL_PILKKU	clause-boundary|comma
-;	1	SYMBOL_PISTE	clause-boundary
-:	1	SYMBOL_PISTE	clause-boundary
-!	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
-(!)	1	SYMBOL_PISTE	sentence-boundary
-!	2	SYMBOL_PISTE	sentence-boundary
-?	1	PUNCT_NONSTD_EXCL_LOOP	sentence-boundary
-?	2	SYMBOL_PISTE	sentence-boundary
-(?)	1	SYMBOL_PISTE	sentence-boundary
-.	1	SYMBOL_PISTE	sentence-boundary
-..	1	SYMBOL_PISTE	sentence-boundary
-...	1	SYMBOL_PISTE	sentence-boundary
-....	1	SYMBOL_PISTE	sentence-boundary
-'	1	SYMBOL_PISTE	final-quote
-'	2	SYMBOL_PISTE	initial-quote
-’	1	SYMBOL_PISTE	final-quote
-’	2	SYMBOL_PISTE	initial-quote
-"	1	SYMBOL_PISTE	final-quote
-"	2	SYMBOL_PISTE	initial-quote
-”	1	SYMBOL_PISTE	final-quote
-”	2	SYMBOL_PISTE	initial-quote
-«	1	SYMBOL_PISTE	final-quote
-«	2	SYMBOL_PISTE	initial-quote
-»	1	SYMBOL_PISTE	final-quote
-»	2	SYMBOL_PISTE	initial-quote
-(	1	SYMBOL_PISTE	initial-bracket
-)	1	SYMBOL_PISTE	final-bracket
-[	1	SYMBOL_PISTE	initial-bracket
-]	1	SYMBOL_PISTE	final-bracket
-{	1	SYMBOL_PISTE	initial-bracket
-}	1	SYMBOL_PISTE	final-bracket
-–	1	SYMBOL_PISTE	dash
-—	1	SYMBOL_PISTE	dash
-˗	1	SYMBOL_PISTE	dash
-→	1	SYMBOL_PISTE	arrow
-›	1	SYMBOL_PISTE	final-bracket
-‹	1	SYMBOL_PISTE	initial-bracket
-‥	1	SYMBOL_PISTE	sentence-boundary
-…	1	SYMBOL_PISTE	sentence-boundary
- 	1	SYMBOL_PISTE	space
- 	1	SYMBOL_PISTE	space
+lemma	homonym	symbol
+´	1	final-quote
+´	2	initial-quote
+`	1	final-quote
+`	2	initial-quote
+<	1	initial-bracket
+>	1	final-bracket
+-	1	dash
+--	1	dash
+,	1	clause-boundary|comma
+;	1	clause-boundary
+:	1	clause-boundary
+!	1	sentence-boundary
+(!)	1	sentence-boundary
+!	2	sentence-boundary
+?	1	sentence-boundary
+?	2	sentence-boundary
+(?)	1	sentence-boundary
+.	1	sentence-boundary
+..	1	sentence-boundary
+...	1	sentence-boundary
+....	1	sentence-boundary
+'	1	final-quote
+'	2	initial-quote
+’	1	final-quote
+’	2	initial-quote
+"	1	final-quote
+"	2	initial-quote
+”	1	final-quote
+”	2	initial-quote
+«	1	final-quote
+«	2	initial-quote
+»	1	final-quote
+»	2	initial-quote
+(	1	initial-bracket
+)	1	final-bracket
+[	1	initial-bracket
+]	1	final-bracket
+{	1	initial-bracket
+}	1	final-bracket
+–	1	dash
+—	1	dash
+˗	1	dash
+→	1	arrow
+›	1	final-bracket
+‹	1	initial-bracket
+‥	1	sentence-boundary
+…	1	sentence-boundary
+ 	1	space
+ 	1	space

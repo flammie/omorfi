@@ -1,3949 +1,3949 @@
-lemma	homonym	new_para	abbr
-/	1	PCLE_VAAN	abbreviation
-&	1	PCLE_VAAN	abbreviation
-+	2	PCLE_VAAN	abbreviation
-3 Step IT	1	PROPN_ACRO_EE	acronym
-358	1	PROPN_ACRO_KAHDEKSAN	acronym
-4F	1	PROPN_ACRO_ÄKS	acronym
-a	1	NOUN_ACRO_AA	acronym
-A	1	NOUN_ACRO_AA	acronym
-A	2	NOUN_ACRO_DOLLARI	acronym
-$A	1	NOUN_ACRO_AA	acronym
-$A	2	NOUN_ACRO_DOLLARI	acronym
-å	1	NOUN_ACRO_OO	acronym
-å	2	NOUN_ACRO_WEBER	acronym
-Å	1	NOUN_ACRO_OO	acronym
-Å	2	NOUN_ACRO_WEBER	acronym
-ä	1	NOUN_ACRO_ÄÄ	acronym
-Ä	1	NOUN_ACRO_ÄÄ	acronym
-A0	1	NOUN_ACRO_NOLLA	acronym
-A1	1	NOUN_ACRO_YKSI	acronym
-A2	1	NOUN_ACRO_KAKSI	acronym
-A3	1	NOUN_ACRO_KOLME	acronym
-A4	1	NOUN_ACRO_NELJÄ	acronym
-A5	1	NOUN_ACRO_VIISI	acronym
-aA	1	NOUN_ACRO_AA	acronym
-aA	2	NOUN_ACRO_DOLLARI	acronym
-AA	1	NOUN_ACRO_AA	acronym
-AA	2	NOUN_ACRO_Ω	acronym
-ÅA	1	PROPN_ACRO_AA	acronym
-ÅA	2	NOUN_ACRO_DOLLARI	acronym
-AAL	1	PROPN_ACRO_ÄKS	acronym
-AAP	1	PROPN_ACRO_EE	acronym
-AAP	2	PROPN_ACRO_Ω	acronym
-ab	1	NOUN_ACRO_DOLLARI	acronym
-ab	2	NOUN_ACRO_EE	acronym
-ab	3	PCLE_VAAN	abbreviation
-Ab	1	PCLE_VAAN	abbreviation
-ABB	1	PROPN_ACRO_EE	acronym
-ABC	1	PROPN_ACRO_EE	acronym
-ABN AMRO	1	PROPN_ACRO_OO	acronym
-abp	1	NOUN_ACRO_EE	acronym
-aBq	1	NOUN_ACRO_Ω	acronym
-aBq	2	NOUN_ACRO_UU	acronym
-ABS	1	NOUN_ACRO_ÄKS	acronym
-aC	1	NOUN_ACRO_EE	acronym
-aC	2	NOUN_ACRO_Ω	acronym
-a°C	1	NOUN_ACRO_CELSIUS	acronym
-a°C	2	NOUN_ACRO_EE	acronym
-AC	1	NOUN_ACRO_EE	acronym
-acd	1	NOUN_ACRO_EE	acronym
-acd	2	NOUN_ACRO_KANDELA	acronym
-AC/DC	1	PROPN_ACRO_EE	acronym
-ad	1	NOUN_ACRO_EE	acronym
-ad	2	NOUN_ACRO_Ω	acronym
-ADAC	1	PROPN_ACRO_EE	acronym
-adhd	1	NOUN_ACRO_EE	acronym
-adhd	2	NOUN_ACRO_Ω	acronym
-ADP	1	PROPN_ACRO_EE	acronym
-ADSL	1	NOUN_ACRO_Ω	acronym
-ADSL	2	NOUN_ACRO_ÄKS	acronym
-ADT	1	NOUN_ACRO_EE	acronym
-AdultTV	1	PROPN_ACRO_EE	acronym
-AED	1	NOUN_ACRO_EE	acronym
-AEGEE	1	PROPN_ACRO_EE	acronym
-AEK	1	PROPN_ACRO_OO	acronym
-aF	1	NOUN_ACRO_Ω	acronym
-aF	2	NOUN_ACRO_ÄKS	acronym
-Af	1	NOUN_ACRO_ÄKS	acronym
-AFA	1	NOUN_ACRO_AA	acronym
-AFN	1	NOUN_ACRO_ÄKS	acronym
-AFP	1	PROPN_ACRO_EE	acronym
-AFP	2	PROPN_ACRO_EE	acronym
-AFS	1	PROPN_ACRO_ÄKS	acronym
-AFTA	1	PROPN_ACRO_AA	acronym
-ag	1	NOUN_ACRO_EE	acronym
-ag	2	NOUN_ACRO_EE	acronym
-AG	1	NOUN_ACRO_EE	acronym
-AGEA	1	NOUN_ACRO_AA	acronym
-AGEA	2	NOUN_ACRO_SAIRAALA	acronym
-agrol.	1	PCLE_VAAN	abbreviation
-agron.	1	PCLE_VAAN	abbreviation
-aGy	1	NOUN_ACRO_GRAY	acronym
-aGy	2	NOUN_ACRO_YY	acronym
-aH	1	NOUN_ACRO_Ω	acronym
-aH	2	NOUN_ACRO_OO	acronym
-Ah	1	NOUN_ACRO_OO	acronym
-AHKA	1	PROPN_ACRO_AA	acronym
-aHz	1	NOUN_ACRO_Ω	acronym
-aHz	2	NOUN_ACRO_ZET	acronym
-ÄI	1	NOUN_ACRO_II	acronym
-AIA	1	PROPN_ACRO_AA	acronym
-AICA	1	PROPN_ACRO_AA	acronym
-aids	1	NOUN_ACRO_ÄKS	acronym
-AIECE	1	PROPN_ACRO_EE	acronym
-AIESEC	1	PROPN_ACRO_EE	acronym
-AIG	1	PROPN_ACRO_EE	acronym
-aik.	1	PCLE_VAAN	abbreviation
-Air France-KLM	1	PROPN_ACRO_ÄKS	acronym
-Air100	1	PROPN_ACRO_NOLLA	acronym
-Airbnb	1	PROPN_ACRO_EE	acronym
-AIV	1	NOUN_ACRO_EE	acronym
-aJ	1	NOUN_ACRO_II	acronym
-aJ	2	NOUN_ACRO_JOULE	acronym
-aK	1	NOUN_ACRO_Ω	acronym
-aK	2	NOUN_ACRO_OO	acronym
-akat	1	NOUN_ACRO_EE	acronym
-akat	2	NOUN_ACRO_Ω	acronym
-akat.	1	PCLE_VAAN	abbreviation
-AKAVA	1	PROPN_ACRO_AA	acronym
-AKE	1	PROPN_ACRO_EE	acronym
-AKL	1	PROPN_ACRO_ÄKS	acronym
-AKS	1	PROPN_ACRO_ÄKS	acronym
-AKT	1	PROPN_ACRO_EE	acronym
-ÄKT	1	PROPN_ACRO_EE	acronym
-al.	1	PCLE_VAAN	abbreviation
-AL	1	PROPN_ACRO_LEHTI	acronym
-AL	3	PROPN_ACRO_ÄKS	acronym
-ALBA	1	PROPN_ACRO_AA	acronym
-Aleksi 13	1	PROPN_ACRO_KOLME	acronym
-alik.	1	PCLE_VAAN	abbreviation
-alil.	1	PCLE_VAAN	abbreviation
-alk.	1	PCLE_VAAN	abbreviation
-ALK	1	NOUN_ACRO_OO	acronym
-ALL	1	NOUN_ACRO_ÄKS	acronym
-alm	1	NOUN_ACRO_Ω	acronym
-alm	2	NOUN_ACRO_ÄKS	acronym
-ALS	1	NOUN_ACRO_ÄKS	acronym
-alv	1	NOUN_ACRO_EE	acronym
-alv.	1	PCLE_VAAN	abbreviation
-alx	1	NOUN_ACRO_Ω	acronym
-alx	2	NOUN_ACRO_ÄKS	acronym
-am	1	NOUN_ACRO_Ω	acronym
-am	2	NOUN_ACRO_ÄKS	acronym
-a.m.	1	PCLE_VAAN	abbreviation
-AM	1	PROPN_ACRO_ÄKS	acronym
-AMD	1	PROPN_ACRO_DOLLARI	acronym
-AMD	2	PROPN_ACRO_EE	acronym
-amir.	1	PCLE_VAAN	abbreviation
-amk	1	NOUN_ACRO_OO	acronym
-amol	1	NOUN_ACRO_Ω	acronym
-amol	2	NOUN_ACRO_ÄKS	acronym
-AMR	1	PROPN_ACRO_ÄKS	acronym
-aN	1	NOUN_ACRO_Ω	acronym
-aN	2	NOUN_ACRO_ÄKS	acronym
-ÅN	1	PROPN_ACRO_ÄKS	acronym
-Analyse2	1	PROPN_ACRO_KAKSI	acronym
-ANC	1	PROPN_ACRO_EE	acronym
-ANG	1	NOUN_ACRO_EE	acronym
-anon.	1	PCLE_VAAN	abbreviation
-ANP	1	PROPN_ACRO_EE	acronym
-ANP	2	PROPN_ACRO_EE	acronym
-ANSI	1	PROPN_ACRO_DOLLARI	acronym
-ANSI	2	PROPN_ACRO_II	acronym
-ANWR	1	PROPN_ACRO_ÄKS	acronym
-ao.	1	PCLE_VAAN	abbreviation
-AO	1	NOUN_ACRO_OO	acronym
-AO	2	NOUN_ACRO_PUNTA	acronym
-äo	1	NOUN_ACRO_GRAMMA	acronym
-äo	2	NOUN_ACRO_OO	acronym
-ÄO	1	NOUN_ACRO_OO	acronym
-ÄO	2	NOUN_ACRO_PUNTA	acronym
-AOA	1	NOUN_ACRO_AA	acronym
-AOA	2	NOUN_ACRO_AA	acronym
-AOK	1	NOUN_ACRO_OO	acronym
-AOL	1	PROPN_ACRO_ÄKS	acronym
-ÄOL	2	PROPN_ACRO_ÄKS	acronym
-AON	1	NOUN_ACRO_ÄKS	acronym
-AOR	1	NOUN_ACRO_Ω	acronym
-AOR	2	NOUN_ACRO_ÄKS	acronym
-AOVA	1	PROPN_ACRO_AA	acronym
-ap.	1	PCLE_VAAN	abbreviation
-AP	1	PROPN_ACRO_EE	acronym
-AP	2	PROPN_ACRO_EE	acronym
-aPa	1	NOUN_ACRO_AA	acronym
-aPa	2	NOUN_ACRO_Ω	acronym
-APEC	1	PROPN_ACRO_EE	acronym
-API	1	NOUN_ACRO_II	acronym
-API	2	NOUN_ACRO_Ω	acronym
-apul.	1	PCLE_VAAN	abbreviation
-apul.prof.	1	PCLE_VAAN	abbreviation
-ARA	1	PROPN_ACRO_AA	acronym
-arad	1	NOUN_ACRO_DOLLARI	acronym
-arad	2	NOUN_ACRO_EE	acronym
-ARENE	1	PROPN_ACRO_EE	acronym
-Arg$	1	NOUN_ACRO_DOLLARI	acronym
-ark	1	NOUN_ACRO_OO	acronym
-ark.	1	PCLE_VAAN	abbreviation
-ARK	1	PROPN_ACRO_OO	acronym
-arkkit.	1	PCLE_VAAN	abbreviation
-ARL	1	NOUN_ACRO_ÄKS	acronym
-ARM	1	PROPN_ACRO_ÄKS	acronym
-ARP	1	NOUN_ACRO_EE	acronym
-ARS	1	NOUN_ACRO_ÄKS	acronym
-art.	1	PCLE_VAAN	abbreviation
-arv.	1	PCLE_VAAN	abbreviation
-as	1	NOUN_ACRO_Ω	acronym
-as	2	NOUN_ACRO_ÄKS	acronym
-as.	1	PCLE_VAAN	abbreviation
-aS	1	NOUN_ACRO_Ω	acronym
-aS	2	NOUN_ACRO_ÄKS	acronym
-AS	1	NOUN_ACRO_ÄKS	acronym
-A/S	1	NOUN_ACRO_ÄKS	acronym
-ASA	1	NOUN_ACRO_AA	acronym
-ascii	1	NOUN_ACRO_II	acronym
-ascii	2	NOUN_ACRO_Ω	acronym
-ASEAN	1	PROPN_ACRO_ÄKS	acronym
-ASEAN+3	1	PROPN_ACRO_KOLME	acronym
-ASEM	1	PROPN_ACRO_ÄKS	acronym
-as.oy	1	NOUN_ACRO_GRAY	acronym
-as.oy	2	NOUN_ACRO_YY	acronym
-as.oy.	1	PCLE_VAAN	abbreviation
-AsOYL	1	NOUN_ACRO_Ω	acronym
-AsOYL	2	NOUN_ACRO_ÄKS	acronym
-ASP	1	NOUN_ACRO_EE	acronym
-asr	1	NOUN_ACRO_DOLLARI	acronym
-asr	2	NOUN_ACRO_ÄKS	acronym
-ass.	1	PCLE_VAAN	abbreviation
-assist.	1	PCLE_VAAN	abbreviation
-aSv	1	NOUN_ACRO_EE	acronym
-aSv	2	NOUN_ACRO_Ω	acronym
-ASX	1	PROPN_ACRO_ÄKS	acronym
-at	1	PCLE_VAAN	abbreviation
-aT	1	NOUN_ACRO_EE	acronym
-aT	2	NOUN_ACRO_GRAMMA	acronym
-A&T	1	PROPN_ACRO_EE	acronym
-atk	1	NOUN_ACRO_JÄRJESTÖ	acronym
-atk	2	NOUN_ACRO_OO	acronym
-ATL	1	PROPN_ACRO_ÄKS	acronym
-atm	1	NOUN_ACRO_ÄKS	acronym
-ATS	1	NOUN_ACRO_ÄKS	acronym
-AT&T	1	PROPN_ACRO_EE	acronym
-ATTAC	1	PROPN_ACRO_EE	acronym
-au.	1	PCLE_VAAN	abbreviation
-AU	1	PROPN_ACRO_UU	acronym
-AU$	1	NOUN_ACRO_DOLLARI	acronym
-AUD	1	NOUN_ACRO_DOLLARI	acronym
-AUD	2	NOUN_ACRO_EE	acronym
-AUK	1	NOUN_ACRO_Ω	acronym
-AUK	2	NOUN_ACRO_OO	acronym
-ausk.	1	PCLE_VAAN	abbreviation
-av	1	NOUN_ACRO_EE	acronym
-av	2	NOUN_ACRO_JÄRJESTÖ	acronym
-aV	1	NOUN_ACRO_EE	acronym
-aV	2	NOUN_ACRO_Ω	acronym
-AVEA	1	PROPN_ACRO_AA	acronym
-AVI	1	NOUN_ACRO_II	acronym
-aW	1	NOUN_ACRO_EE	acronym
-aW	2	NOUN_ACRO_Ω	acronym
-aWb	1	NOUN_ACRO_EE	acronym
-aWb	2	NOUN_ACRO_WEBER	acronym
-AWG	1	NOUN_ACRO_EE	acronym
-ay	1	NOUN_ACRO_YHDISTYS	acronym
-ay	2	NOUN_ACRO_YY	acronym
-ay.	1	PCLE_VAAN	abbreviation
-AYO	1	PROPN_ACRO_OO	acronym
-AZM	1	NOUN_ACRO_ÄKS	acronym
-AZN	1	NOUN_ACRO_ÄKS	acronym
-aΩ	1	NOUN_ACRO_Ω	acronym
-b	1	NOUN_ACRO_EE	acronym
-B	1	NOUN_ACRO_EE	acronym
-B	2	NOUN_ACRO_METRI	acronym
-B & B	1	NOUN_ACRO_EE	acronym
-B9	1	PROPN_ACRO_YHDEKSÄN	acronym
-BA	1	NOUN_ACRO_AA	acronym
-B.A.	1	PCLE_VAAN	abbreviation
-BAA	1	PROPN_ACRO_AA	acronym
-BAD	1	NOUN_ACRO_EE	acronym
-BAE	1	PROPN_ACRO_EE	acronym
-BAIC	1	PROPN_ACRO_EE	acronym
-BAM	1	NOUN_ACRO_ÄKS	acronym
-BAN	1	NOUN_ACRO_ÄKS	acronym
-Banco BPI	1	PROPN_ACRO_II	acronym
-Bank Zadhodni WBK	1	PROPN_ACRO_OO	acronym
-bar	2	PCLE_VAAN	abbreviation
-BASF	1	PROPN_ACRO_ÄKS	acronym
-BATS	1	PROPN_ACRO_ÄKS	acronym
-BayernLB	1	PROPN_ACRO_EE	acronym
-B&B	1	NOUN_ACRO_EE	acronym
-B&B	2	NOUN_ACRO_WEBER	acronym
-BBC	1	PROPN_ACRO_WEBER	acronym
-BBC	2	PROPN_ACRO_EE	acronym
-BBD	1	NOUN_ACRO_EE	acronym
-BB&T	1	PROPN_ACRO_EE	acronym
-BBVA	1	PROPN_ACRO_AA	acronym
-BD	1	NOUN_ACRO_EE	acronym
-BD	2	NOUN_ACRO_METRI	acronym
-BDS$	1	NOUN_ACRO_DOLLARI	acronym
-BDS$	2	NOUN_ACRO_WEBER	acronym
-BDT	1	NOUN_ACRO_EE	acronym
-Be	1	NOUN_ACRO_EE	acronym
-BE	1	PROPN_ACRO_EE	acronym
-BEA	1	NOUN_ACRO_AA	acronym
-BEA	2	NOUN_ACRO_GRAMMA	acronym
-BEC	1	NOUN_ACRO_EE	acronym
-BEF	1	NOUN_ACRO_ÄKS	acronym
-BEL	1	NOUN_ACRO_ÄKS	acronym
-Ber$	1	NOUN_ACRO_DOLLARI	acronym
-Ber$	2	NOUN_ACRO_WEBER	acronym
-BF	1	NOUN_ACRO_ÄKS	acronym
-BGL	1	NOUN_ACRO_ÄKS	acronym
-BGM	1	NOUN_ACRO_ÄKS	acronym
-BGN	1	NOUN_ACRO_ÄKS	acronym
-BGO	1	NOUN_ACRO_OO	acronym
-BHD	1	NOUN_ACRO_EE	acronym
-BHP	1	PROPN_ACRO_EE	acronym
-BIF	1	NOUN_ACRO_ÄKS	acronym
-BIS	1	PROPN_ACRO_ÄKS	acronym
-BKK	1	PROPN_ACRO_OO	acronym
-bkt	1	NOUN_ACRO_EE	acronym
-bkt	2	NOUN_ACRO_TUOTE	acronym
-BKT	1	NOUN_ACRO_EE	acronym
-BKT	2	NOUN_ACRO_TUOTE	acronym
-bktl	1	NOUN_ACRO_ÄKS	acronym
-Blue1	1	PROPN_ACRO_YKSI	acronym
-BMD	1	NOUN_ACRO_EE	acronym
-BMI	1	PROPN_ACRO_II	acronym
-BMW	1	PROPN_ACRO_EE	acronym
-BMWi	1	PROPN_ACRO_II	acronym
-BND	1	NOUN_ACRO_EE	acronym
-BOA	1	PROPN_ACRO_AA	acronym
-B.o.B	1	PROPN_ACRO_EE	acronym
-BOB	1	NOUN_ACRO_EE	acronym
-BOJ	1	PROPN_ACRO_II	acronym
-BOL	1	NOUN_ACRO_ÄKS	acronym
-BOP	1	NOUN_ACRO_EE	acronym
-BOV	1	NOUN_ACRO_EE	acronym
-BP	1	PROPN_ACRO_EE	acronym
-Bq	1	NOUN_ACRO_UU	acronym
-Bq	2	NOUN_ACRO_WEBER	acronym
-br.	1	PCLE_VAAN	abbreviation
-Br	1	NOUN_ACRO_ÄKS	acronym
-BRB	1	NOUN_ACRO_EE	acronym
-BRC	1	NOUN_ACRO_EE	acronym
-BRE	1	NOUN_ACRO_EE	acronym
-BRL	1	NOUN_ACRO_ÄKS	acronym
-BRN	1	NOUN_ACRO_ÄKS	acronym
-BRR	1	NOUN_ACRO_ÄKS	acronym
-brt	1	NOUN_ACRO_EE	acronym
-BRZ	1	NOUN_ACRO_ZET	acronym
-Bs	1	NOUN_ACRO_ÄKS	acronym
-B.S.	1	PCLE_VAAN	abbreviation
-BSc	1	NOUN_ACRO_EE	acronym
-BSc	2	NOUN_ACRO_METRI	acronym
-B.Sc.	1	PCLE_VAAN	abbreviation
-BSD	1	NOUN_ACRO_EE	acronym
-BSE	1	NOUN_ACRO_EE	acronym
-BSkyB	1	PROPN_ACRO_EE	acronym
-BT	1	PROPN_ACRO_EE	acronym
-BTIG	1	PROPN_ACRO_EE	acronym
-BTN	1	NOUN_ACRO_ÄKS	acronym
-BUK	1	NOUN_ACRO_OO	acronym
-Bureau ICE	1	PROPN_ACRO_EE	acronym
-BWP	1	NOUN_ACRO_EE	acronym
-BYB	1	NOUN_ACRO_EE	acronym
-BYD	1	PROPN_ACRO_EE	acronym
-BYR	1	NOUN_ACRO_ÄKS	acronym
-BZ$	1	NOUN_ACRO_DOLLARI	acronym
-BZ$	2	NOUN_ACRO_WEBER	acronym
-BZA	1	PROPN_ACRO_AA	acronym
-BZD	1	NOUN_ACRO_EE	acronym
-c	1	NOUN_ACRO_EE	acronym
-c	2	NOUN_ACRO_METRI	acronym
-C	1	NOUN_ACRO_EE	acronym
-C	2	NOUN_ACRO_EE	acronym
-£C	1	NOUN_ACRO_EE	acronym
-£C	2	NOUN_ACRO_PUNTA	acronym
-ca	1	PCLE_VAAN	abbreviation
-c:a	1	PCLE_VAAN	abbreviation
-cA	1	NOUN_ACRO_AA	acronym
-cA	2	NOUN_ACRO_DOLLARI	acronym
-C&A	1	PROPN_ACRO_AA	acronym
-CA$	1	NOUN_ACRO_DOLLARI	acronym
-CAD	1	NOUN_ACRO_EE	acronym
-CAF	1	PROPN_ACRO_ÄKS	acronym
-cal	1	NOUN_ACRO_DOLLARI	acronym
-cal	2	NOUN_ACRO_ÄKS	acronym
-Call99577	1	NOUN_ACRO_SEITSEMÄN	acronym
-CAM	1	NOUN_ACRO_ÄKS	acronym
-Can$	1	NOUN_ACRO_DOLLARI	acronym
-Canal+	1	PROPN_ACRO_PUNTA	acronym
-Carl’s Jr	1	PROPN_ACRO_ÄKS	acronym
-CAT	1	NOUN_ACRO_EE	acronym
-cBq	1	NOUN_ACRO_METRI	acronym
-cBq	2	NOUN_ACRO_UU	acronym
-CBS	1	PROPN_ACRO_ÄKS	acronym
-cc	1	NOUN_ACRO_EE	acronym
-cc	2	NOUN_ACRO_GRAMMA	acronym
-cC	1	NOUN_ACRO_EE	acronym
-cC	2	NOUN_ACRO_METRI	acronym
-c°C	1	NOUN_ACRO_CELSIUS	acronym
-c°C	2	NOUN_ACRO_EE	acronym
-CCCP	1	PROPN_ACRO_EE	acronym
-ccd	1	NOUN_ACRO_EE	acronym
-ccd	2	NOUN_ACRO_KANDELA	acronym
-cd	1	NOUN_ACRO_EE	acronym
-cd	2	NOUN_ACRO_KANDELA	acronym
-CD	1	NOUN_ACRO_EE	acronym
-CD	2	NOUN_ACRO_METRI	acronym
-CDF	1	NOUN_ACRO_ÄKS	acronym
-cdma	1	NOUN_ACRO_AA	acronym
-CD-R	1	NOUN_ACRO_JOULE	acronym
-CD-R	2	NOUN_ACRO_ÄKS	acronym
-CD-ROM	1	NOUN_ACRO_DOLLARI	acronym
-CD-ROM	2	NOUN_ACRO_ÄKS	acronym
-CD-RW	1	NOUN_ACRO_EE	acronym
-CD-RW	2	NOUN_ACRO_JOULE	acronym
-CE	1	NOUN_ACRO_EE	acronym
-CEA	1	NOUN_ACRO_AA	acronym
-CECA	1	PROPN_ACRO_AA	acronym
-CECA	2	PROPN_ACRO_GRAMMA	acronym
-CEFTA	1	PROPN_ACRO_AA	acronym
-CEN	1	PROPN_ACRO_ÄKS	acronym
-CENTO	1	PROPN_ACRO_OO	acronym
-CEP	1	PROPN_ACRO_EE	acronym
-CEPS	1	PROPN_ACRO_ÄKS	acronym
-CERN	1	PROPN_ACRO_ÄKS	acronym
-CEVA/EGL	1	PROPN_ACRO_ÄKS	acronym
-cf.	1	PCLE_VAAN	abbreviation
-cF	1	NOUN_ACRO_METRI	acronym
-cF	2	NOUN_ACRO_ÄKS	acronym
-CF	1	NOUN_ACRO_ÄKS	acronym
-CFPF	1	NOUN_ACRO_ÄKS	acronym
-cg	1	NOUN_ACRO_EE	acronym
-cg	2	NOUN_ACRO_GRAMMA	acronym
-CGI	1	PROPN_ACRO_II	acronym
-cGy	1	NOUN_ACRO_GRAY	acronym
-cGy	2	NOUN_ACRO_YY	acronym
-cH	1	NOUN_ACRO_METRI	acronym
-cH	2	NOUN_ACRO_OO	acronym
-Ch$	1	NOUN_ACRO_DOLLARI	acronym
-Ch$	2	NOUN_ACRO_WEBER	acronym
-CHE	1	NOUN_ACRO_EE	acronym
-CHF	1	NOUN_ACRO_ÄKS	acronym
-CHW	1	NOUN_ACRO_EE	acronym
-cHz	1	NOUN_ACRO_METRI	acronym
-cHz	2	NOUN_ACRO_ZET	acronym
-CIA	1	PROPN_ACRO_Ω	acronym
-CIA	2	PROPN_ACRO_AA	acronym
-CICA	1	PROPN_ACRO_AA	acronym
-CIE	1	PROPN_ACRO_EE	acronym
-CIHEC	1	PROPN_ACRO_EE	acronym
-CIMO	1	PROPN_ACRO_OO	acronym
-CINT	1	PROPN_ACRO_EE	acronym
-CIOFF	1	PROPN_ACRO_ÄKS	acronym
-CIPD	1	PROPN_ACRO_EE	acronym
-CISV	1	PROPN_ACRO_EE	acronym
-CIT	1	PROPN_ACRO_EE	acronym
-cJ	1	NOUN_ACRO_II	acronym
-cJ	2	NOUN_ACRO_JOULE	acronym
-cK	1	NOUN_ACRO_METRI	acronym
-cK	2	NOUN_ACRO_OO	acronym
-ckat	1	NOUN_ACRO_EE	acronym
-ckat	2	NOUN_ACRO_Ω	acronym
-cl	1	NOUN_ACRO_GRAMMA	acronym
-cl	2	NOUN_ACRO_ÄKS	acronym
-Cl	1	NOUN_ACRO_METRI	acronym
-Cl	2	NOUN_ACRO_ÄKS	acronym
-CLE	1	NOUN_ACRO_EE	acronym
-CLF	1	NOUN_ACRO_ÄKS	acronym
-clm	1	NOUN_ACRO_METRI	acronym
-clm	2	NOUN_ACRO_ÄKS	acronym
-CLP	1	NOUN_ACRO_EE	acronym
-clx	1	NOUN_ACRO_METRI	acronym
-clx	2	NOUN_ACRO_ÄKS	acronym
-cm	1	NOUN_ACRO_METRI	acronym
-cm	2	NOUN_ACRO_ÄKS	acronym
-CMA CGM	1	PROPN_ACRO_ÄKS	acronym
-cmol	1	NOUN_ACRO_Ω	acronym
-cmol	2	NOUN_ACRO_ÄKS	acronym
-cN	1	NOUN_ACRO_METRI	acronym
-cN	2	NOUN_ACRO_ÄKS	acronym
-CN	1	NOUN_ACRO_ÄKS	acronym
-CNBC	1	PROPN_ACRO_EE	acronym
-CNN	1	PROPN_ACRO_ÄKS	acronym
-CNN	2	PROPN_ACRO_ÄKS	acronym
-CNPC	1	PROPN_ACRO_EE	acronym
-CNS	1	NOUN_ACRO_ÄKS	acronym
-CNX	1	NOUN_ACRO_ÄKS	acronym
-CNY	1	NOUN_ACRO_YY	acronym
-c/o	1	PCLE_VAAN	abbreviation
-Co	1	NOUN_ACRO_DOLLARI	acronym
-Co	2	NOUN_ACRO_OO	acronym
-Co.	1	PCLE_VAAN	abbreviation
-CO	1	NOUN_ACRO_OO	acronym
-COD	1	NOUN_ACRO_EE	acronym
-Col$	1	NOUN_ACRO_DOLLARI	acronym
-Commerce Guys S.A.S	1	PROPN_ACRO_ÄKS	acronym
-COMP	1	NOUN_ACRO_EE	acronym
-COP	1	NOUN_ACRO_EE	acronym
-Corp	1	NOUN_ACRO_DOLLARI	acronym
-Corp	2	NOUN_ACRO_EE	acronym
-Corp.	1	PCLE_VAAN	abbreviation
-COU	1	NOUN_ACRO_UU	acronym
-cp	1	NOUN_ACRO_EE	acronym
-cPa	1	NOUN_ACRO_AA	acronym
-cPa	2	NOUN_ACRO_DOLLARI	acronym
-CPM	1	PROPN_ACRO_ÄKS	acronym
-CPW	1	PROPN_ACRO_EE	acronym
-CR	1	NOUN_ACRO_ÄKS	acronym
-CRA	1	PROPN_ACRO_AA	acronym
-crad	1	NOUN_ACRO_DOLLARI	acronym
-crad	2	NOUN_ACRO_EE	acronym
-CRC	1	NOUN_ACRO_EE	acronym
-CRC	2	NOUN_ACRO_METRI	acronym
-CRH	1	PROPN_ACRO_OO	acronym
-cs	1	NOUN_ACRO_METRI	acronym
-cs	2	NOUN_ACRO_ÄKS	acronym
-cS	1	NOUN_ACRO_METRI	acronym
-cS	2	NOUN_ACRO_ÄKS	acronym
-CSA	1	PROPN_ACRO_AA	acronym
-CSD	1	NOUN_ACRO_EE	acronym
-CSK	1	NOUN_ACRO_OO	acronym
-csr	1	NOUN_ACRO_WEBER	acronym
-csr	2	NOUN_ACRO_ÄKS	acronym
-CSR	1	PROPN_ACRO_ÄKS	acronym
-cSv	1	NOUN_ACRO_EE	acronym
-cSv	2	NOUN_ACRO_METRI	acronym
-cT	1	NOUN_ACRO_EE	acronym
-cT	2	NOUN_ACRO_GRAMMA	acronym
-CT	1	NOUN_ACRO_EE	acronym
-CT	2	NOUN_ACRO_GRAMMA	acronym
-CTIA	1	PROPN_ACRO_AA	acronym
-Cu	1	NOUN_ACRO_UU	acronym
-CUC	1	NOUN_ACRO_EE	acronym
-CUP	1	NOUN_ACRO_EE	acronym
-cv	1	NOUN_ACRO_EE	acronym
-cv	2	NOUN_ACRO_GRAY	acronym
-cV	1	NOUN_ACRO_EE	acronym
-cV	2	NOUN_ACRO_Ω	acronym
-CV	1	NOUN_ACRO_EE	acronym
-CV	2	NOUN_ACRO_GRAY	acronym
-CVE	1	NOUN_ACRO_EE	acronym
-CVEsc	1	NOUN_ACRO_EE	acronym
-cW	1	NOUN_ACRO_EE	acronym
-cW	2	NOUN_ACRO_Ω	acronym
-cWb	1	NOUN_ACRO_EE	acronym
-cWb	2	NOUN_ACRO_WEBER	acronym
-CYP	1	NOUN_ACRO_EE	acronym
-CZ	1	NOUN_ACRO_ZET	acronym
-CZK	1	NOUN_ACRO_OO	acronym
-cΩ	1	NOUN_ACRO_METRI	acronym
-cΩ	2	NOUN_ACRO_Ω	acronym
-d	1	NOUN_ACRO_EE	acronym
-d	2	NOUN_ACRO_EE	acronym
-dA	1	NOUN_ACRO_AA	acronym
-dA	2	NOUN_ACRO_DOLLARI	acronym
-DA	1	NOUN_ACRO_AA	acronym
-DA	2	NOUN_ACRO_DOLLARI	acronym
-daA	1	NOUN_ACRO_AA	acronym
-daA	2	NOUN_ACRO_DOLLARI	acronym
-DAB	1	NOUN_ACRO_EE	acronym
-daBq	1	NOUN_ACRO_Ω	acronym
-daBq	2	NOUN_ACRO_UU	acronym
-daC	1	NOUN_ACRO_EE	acronym
-daC	2	NOUN_ACRO_Ω	acronym
-da°C	1	NOUN_ACRO_CELSIUS	acronym
-da°C	2	NOUN_ACRO_EE	acronym
-dacd	1	NOUN_ACRO_EE	acronym
-dacd	2	NOUN_ACRO_KANDELA	acronym
-daF	1	NOUN_ACRO_Ω	acronym
-daF	2	NOUN_ACRO_ÄKS	acronym
-dag	1	NOUN_ACRO_EE	acronym
-dag	2	NOUN_ACRO_GRAMMA	acronym
-daGy	1	NOUN_ACRO_GRAY	acronym
-daGy	2	NOUN_ACRO_YY	acronym
-daH	1	NOUN_ACRO_Ω	acronym
-daH	2	NOUN_ACRO_OO	acronym
-daHz	1	NOUN_ACRO_Ω	acronym
-daHz	2	NOUN_ACRO_ZET	acronym
-daJ	1	NOUN_ACRO_II	acronym
-daJ	2	NOUN_ACRO_JOULE	acronym
-daK	1	NOUN_ACRO_Ω	acronym
-daK	2	NOUN_ACRO_OO	acronym
-dakat	1	NOUN_ACRO_EE	acronym
-dakat	2	NOUN_ACRO_Ω	acronym
-dalm	1	NOUN_ACRO_Ω	acronym
-dalm	2	NOUN_ACRO_ÄKS	acronym
-dalx	1	NOUN_ACRO_Ω	acronym
-dalx	2	NOUN_ACRO_ÄKS	acronym
-dam	1	NOUN_ACRO_Ω	acronym
-dam	2	NOUN_ACRO_ÄKS	acronym
-DAMA	1	PROPN_ACRO_AA	acronym
-damol	1	NOUN_ACRO_Ω	acronym
-damol	2	NOUN_ACRO_ÄKS	acronym
-daN	1	NOUN_ACRO_Ω	acronym
-daN	2	NOUN_ACRO_ÄKS	acronym
-Daniel Stewart & Co	1	PROPN_ACRO_OO	acronym
-daPa	1	NOUN_ACRO_AA	acronym
-daPa	2	NOUN_ACRO_DOLLARI	acronym
-darad	1	NOUN_ACRO_DOLLARI	acronym
-darad	2	NOUN_ACRO_EE	acronym
-das	1	NOUN_ACRO_Ω	acronym
-das	2	NOUN_ACRO_ÄKS	acronym
-daS	1	NOUN_ACRO_Ω	acronym
-daS	2	NOUN_ACRO_ÄKS	acronym
-dasr	1	NOUN_ACRO_DOLLARI	acronym
-dasr	2	NOUN_ACRO_ÄKS	acronym
-daSv	1	NOUN_ACRO_EE	acronym
-daSv	2	NOUN_ACRO_Ω	acronym
-daT	1	NOUN_ACRO_EE	acronym
-daT	2	NOUN_ACRO_GRAMMA	acronym
-DAT	1	PROPN_ACRO_EE	acronym
-daV	1	NOUN_ACRO_EE	acronym
-daV	2	NOUN_ACRO_Ω	acronym
-daW	1	NOUN_ACRO_EE	acronym
-daW	2	NOUN_ACRO_Ω	acronym
-daWb	1	NOUN_ACRO_EE	acronym
-daWb	2	NOUN_ACRO_WEBER	acronym
-daΩ	1	NOUN_ACRO_Ω	acronym
-dB	1	NOUN_ACRO_EE	acronym
-dB	2	NOUN_ACRO_METRI	acronym
-Db	1	NOUN_ACRO_EE	acronym
-Db	2	NOUN_ACRO_METRI	acronym
-dBq	1	NOUN_ACRO_METRI	acronym
-dBq	2	NOUN_ACRO_UU	acronym
-DBRS	1	PROPN_ACRO_ÄKS	acronym
-dC	1	NOUN_ACRO_EE	acronym
-dC	2	NOUN_ACRO_METRI	acronym
-d°C	1	NOUN_ACRO_CELSIUS	acronym
-d°C	2	NOUN_ACRO_EE	acronym
-DC	1	NOUN_ACRO_EE	acronym
-dcd	1	NOUN_ACRO_EE	acronym
-dcd	2	NOUN_ACRO_KANDELA	acronym
-DDB	1	PROPN_ACRO_EE	acronym
-DDM	1	NOUN_ACRO_ÄKS	acronym
-DDR	1	PROPN_ACRO_ÄKS	acronym
-DDT	1	NOUN_ACRO_EE	acronym
-DE	1	NOUN_ACRO_EE	acronym
-dem.	1	PCLE_VAAN	abbreviation
-DEM	1	NOUN_ACRO_ÄKS	acronym
-den	1	NOUN_ACRO_WEBER	acronym
-den	2	NOUN_ACRO_ÄKS	acronym
-dF	1	NOUN_ACRO_METRI	acronym
-dF	2	NOUN_ACRO_ÄKS	acronym
-DF	1	NOUN_ACRO_ÄKS	acronym
-DFI	1	NOUN_ACRO_II	acronym
-dg	1	NOUN_ACRO_EE	acronym
-dg	2	NOUN_ACRO_GRAMMA	acronym
-DGB	1	PROPN_ACRO_EE	acronym
-dGy	1	NOUN_ACRO_GRAY	acronym
-dGy	2	NOUN_ACRO_YY	acronym
-dH	1	NOUN_ACRO_METRI	acronym
-dH	2	NOUN_ACRO_OO	acronym
-DHL	1	PROPN_ACRO_ÄKS	acronym
-dHz	1	NOUN_ACRO_METRI	acronym
-dHz	2	NOUN_ACRO_ZET	acronym
-DI	1	NOUN_ACRO_II	acronym
-DI	2	NOUN_ACRO_METRI	acronym
-DIN	1	PROPN_ACRO_ÄKS	acronym
-dipl.	1	PCLE_VAAN	abbreviation
-dipl.arkkit.	1	PCLE_VAAN	abbreviation
-dipl.ekon.	1	PCLE_VAAN	abbreviation
-dipl.ins.	1	PCLE_VAAN	abbreviation
-dipl.kielenk.	1	PCLE_VAAN	abbreviation
-dipl.kirjeenv.	1	PCLE_VAAN	abbreviation
-dipl.kosm.	1	PCLE_VAAN	abbreviation
-dipl.urk.	1	PCLE_VAAN	abbreviation
-dir. cant.	1	PCLE_VAAN	abbreviation
-div.	1	PCLE_VAAN	abbreviation
-dj	1	NOUN_ACRO_II	acronym
-dJ	1	NOUN_ACRO_II	acronym
-dJ	2	NOUN_ACRO_JOULE	acronym
-DJF	1	NOUN_ACRO_ÄKS	acronym
-dK	1	NOUN_ACRO_METRI	acronym
-dK	2	NOUN_ACRO_OO	acronym
-DK	1	NOUN_ACRO_OO	acronym
-dkat	1	NOUN_ACRO_EE	acronym
-dkat	2	NOUN_ACRO_Ω	acronym
-DKK	1	NOUN_ACRO_OO	acronym
-DKK	2	NOUN_ACRO_OO	acronym
-DKr	1	NOUN_ACRO_ÄKS	acronym
-dl	1	NOUN_ACRO_GRAMMA	acronym
-dl	2	NOUN_ACRO_ÄKS	acronym
-DLA	1	PROPN_ACRO_AA	acronym
-dlm	1	NOUN_ACRO_METRI	acronym
-dlm	2	NOUN_ACRO_ÄKS	acronym
-dlx	1	NOUN_ACRO_METRI	acronym
-dlx	2	NOUN_ACRO_ÄKS	acronym
-dm	1	NOUN_ACRO_METRI	acronym
-dm	2	NOUN_ACRO_ÄKS	acronym
-DMA	1	NOUN_ACRO_AA	acronym
-dmol	1	NOUN_ACRO_Ω	acronym
-dmol	2	NOUN_ACRO_ÄKS	acronym
-dN	1	NOUN_ACRO_METRI	acronym
-dN	2	NOUN_ACRO_ÄKS	acronym
-dna	1	NOUN_ACRO_AA	acronym
-DNA	1	PROPN_ACRO_Ω	acronym
-DNA	2	PROPN_ACRO_AA	acronym
-DnB NOR	1	PROPN_ACRO_ÄKS	acronym
-DNB	1	PROPN_ACRO_EE	acronym
-dnro	1	N_RUIPELO	abbreviation
-do	1	NOUN_ACRO_OO	acronym
-DOP	1	NOUN_ACRO_EE	acronym
-dos.	1	PCLE_VAAN	abbreviation
-DOS	1	PROPN_ACRO_ÄKS	acronym
-dPa	1	NOUN_ACRO_AA	acronym
-dPa	2	NOUN_ACRO_DOLLARI	acronym
-DPA	1	NOUN_ACRO_AA	acronym
-DPA	2	NOUN_ACRO_AA	acronym
-DPI	1	NOUN_ACRO_II	acronym
-DPI	2	NOUN_ACRO_METRI	acronym
-Dr.	1	PCLE_VAAN	abbreviation
-drad	1	NOUN_ACRO_DOLLARI	acronym
-drad	2	NOUN_ACRO_EE	acronym
-DRAM	1	NOUN_ACRO_DOLLARI	acronym
-DRAM	2	NOUN_ACRO_ÄKS	acronym
-Dream Works SKG	1	PROPN_ACRO_EE	acronym
-ds	1	NOUN_ACRO_METRI	acronym
-ds	2	NOUN_ACRO_ÄKS	acronym
-dS	1	NOUN_ACRO_METRI	acronym
-dS	2	NOUN_ACRO_ÄKS	acronym
-dsr	1	NOUN_ACRO_WEBER	acronym
-dsr	2	NOUN_ACRO_ÄKS	acronym
-dSv	1	NOUN_ACRO_EE	acronym
-dSv	2	NOUN_ACRO_METRI	acronym
-DSV Air & Sea SAS	1	PROPN_ACRO_ÄKS	acronym
-dT	1	NOUN_ACRO_EE	acronym
-dT	2	NOUN_ACRO_GRAMMA	acronym
-DU	1	NOUN_ACRO_UU	acronym
-dV	1	NOUN_ACRO_EE	acronym
-dV	2	NOUN_ACRO_Ω	acronym
-dvd	1	NOUN_ACRO_EE	acronym
-dvd	2	NOUN_ACRO_METRI	acronym
-DVD	1	NOUN_ACRO_EE	acronym
-DVD	2	NOUN_ACRO_METRI	acronym
-dW	1	NOUN_ACRO_EE	acronym
-dW	2	NOUN_ACRO_Ω	acronym
-dWb	1	NOUN_ACRO_EE	acronym
-dWb	2	NOUN_ACRO_WEBER	acronym
-DZD	1	NOUN_ACRO_EE	acronym
-dΩ	1	NOUN_ACRO_METRI	acronym
-dΩ	2	NOUN_ACRO_Ω	acronym
-e	1	NOUN_ACRO_EE	acronym
-e.	1	PCLE_VAAN	abbreviation
-E	1	NOUN_ACRO_EE	acronym
-E	2	NOUN_ACRO_PUNTA	acronym
-EA	1	PROPN_ACRO_DOLLARI	acronym
-EA	2	PROPN_ACRO_AA	acronym
-eaa	1	PCLE_VAAN	abbreviation
-eaa.	1	PCLE_VAAN	abbreviation
-EADS	1	PROPN_ACRO_ÄKS	acronym
-EAN	2	NOUN_ACRO_ÄKS	acronym
-EARTO	1	PROPN_ACRO_OO	acronym
-EAY	1	PROPN_ACRO_YY	acronym
-EBF	1	PROPN_ACRO_ÄKS	acronym
-EBq	1	NOUN_ACRO_METRI	acronym
-EBq	2	NOUN_ACRO_UU	acronym
-EBRD	1	PROPN_ACRO_EE	acronym
-EBS	1	PROPN_ACRO_ÄKS	acronym
-EBU	1	PROPN_ACRO_UU	acronym
-EC	1	NOUN_ACRO_EE	acronym
-EC	2	NOUN_ACRO_METRI	acronym
-E°C	1	NOUN_ACRO_CELSIUS	acronym
-E°C	2	NOUN_ACRO_EE	acronym
-EC$	1	NOUN_ACRO_DOLLARI	acronym
-EC$	2	NOUN_ACRO_WEBER	acronym
-ECA	1	PROPN_ACRO_AA	acronym
-ECADI	1	PROPN_ACRO_II	acronym
-Ecd	1	NOUN_ACRO_EE	acronym
-Ecd	2	NOUN_ACRO_KANDELA	acronym
-Ecosoc	1	PROPN_ACRO_EE	acronym
-ECR	1	PROPN_ACRO_ÄKS	acronym
-ECRI	1	PROPN_ACRO_II	acronym
-ECS	1	NOUN_ACRO_ÄKS	acronym
-ECSC	1	PROPN_ACRO_EE	acronym
-ECU	1	NOUN_ACRO_UU	acronym
-ECV	1	NOUN_ACRO_EE	acronym
-ed.	1	PCLE_VAAN	abbreviation
-EDF	1	PROPN_ACRO_ÄKS	acronym
-EDI	1	NOUN_ACRO_II	acronym
-EE	1	NOUN_ACRO_EE	acronym
-EEC	1	PROPN_ACRO_EE	acronym
-eeg	1	NOUN_ACRO_EE	acronym
-EEK	1	NOUN_ACRO_OO	acronym
-EELA	1	PROPN_ACRO_AA	acronym
-EF	1	NOUN_ACRO_METRI	acronym
-EF	2	NOUN_ACRO_ÄKS	acronym
-EFF	1	PROPN_ACRO_ÄKS	acronym
-EFTA	1	PROPN_ACRO_AA	acronym
-e.g.	1	PCLE_VAAN	abbreviation
-Eg	1	NOUN_ACRO_EE	acronym
-Eg	2	NOUN_ACRO_GRAMMA	acronym
-EGP	1	NOUN_ACRO_EE	acronym
-EGy	1	NOUN_ACRO_GRAY	acronym
-EGy	2	NOUN_ACRO_YY	acronym
-EH	1	NOUN_ACRO_METRI	acronym
-EH	2	NOUN_ACRO_OO	acronym
-EHEC	1	NOUN_ACRO_EE	acronym
-eht.	1	PCLE_VAAN	abbreviation
-Ehty	1	PROPN_ACRO_YY	acronym
-EHTY	1	NOUN_ACRO_YY	acronym
-EHz	1	NOUN_ACRO_METRI	acronym
-EHz	2	NOUN_ACRO_ZET	acronym
-EICTA	1	PROPN_ACRO_AA	acronym
-EIP	1	NOUN_ACRO_EE	acronym
-EJ	1	NOUN_ACRO_II	acronym
-EJ	2	NOUN_ACRO_JOULE	acronym
-Ejustite.fr	1	PROPN_ACRO_ÄKS	acronym
-EK	1	PROPN_ACRO_METRI	acronym
-EK	2	PROPN_ACRO_OO	acronym
-Ekat	1	NOUN_ACRO_EE	acronym
-Ekat	2	NOUN_ACRO_Ω	acronym
-ekg	1	NOUN_ACRO_EE	acronym
-EKK	1	PROPN_ACRO_OO	acronym
-EKL	1	PROPN_ACRO_ÄKS	acronym
-ekon.	1	PCLE_VAAN	abbreviation
-EKP	1	PROPN_ACRO_EE	acronym
-eKr	1	PCLE_VAAN	abbreviation
-eKr.	1	PCLE_VAAN	abbreviation
-EKR	1	NOUN_ACRO_ÄKS	acronym
-EL	1	PROPN_ACRO_ÄKS	acronym
-eläinl.	1	PCLE_VAAN	abbreviation
-eläinlääket.	1	PCLE_VAAN	abbreviation
-eläk.	1	PCLE_VAAN	abbreviation
-ELDR	1	NOUN_ACRO_ÄKS	acronym
-Elektroni.fi	1	PROPN_ACRO_II	acronym
-elintarviket.	1	PCLE_VAAN	abbreviation
-ELK	1	NOUN_ACRO_Ω	acronym
-ELK	2	NOUN_ACRO_OO	acronym
-ELL	1	NOUN_ACRO_Ω	acronym
-ELL	2	NOUN_ACRO_ÄKS	acronym
-el.lääk.	1	PCLE_VAAN	abbreviation
-Elm	1	NOUN_ACRO_METRI	acronym
-Elm	2	NOUN_ACRO_ÄKS	acronym
-ELT	1	NOUN_ACRO_EE	acronym
-ELTO	1	NOUN_ACRO_OO	acronym
-Elx	1	NOUN_ACRO_METRI	acronym
-Elx	2	NOUN_ACRO_ÄKS	acronym
-em.	1	PCLE_VAAN	abbreviation
-Em	1	NOUN_ACRO_METRI	acronym
-Em	2	NOUN_ACRO_ÄKS	acronym
-EM	1	PROPN_ACRO_METRI	acronym
-EM	2	PROPN_ACRO_ÄKS	acronym
-EMC	1	PROPN_ACRO_EE	acronym
-EMEA	1	PROPN_ACRO_AA	acronym
-EMG	1	NOUN_ACRO_EE	acronym
-EMI	1	PROPN_ACRO_II	acronym
-Emol	1	NOUN_ACRO_Ω	acronym
-Emol	2	NOUN_ACRO_ÄKS	acronym
-EMS	1	NOUN_ACRO_ÄKS	acronym
-emt.	1	PCLE_VAAN	abbreviation
-Emu	1	PROPN_ACRO_UU	acronym
-EMU	1	PROPN_ACRO_UU	acronym
-EMW	1	PROPN_ACRO_EE	acronym
-EN	1	PROPN_ACRO_METRI	acronym
-EN	2	PROPN_ACRO_ÄKS	acronym
-ENEA	1	PROPN_ACRO_AA	acronym
-ENEA	2	PROPN_ACRO_KANDELA	acronym
-ent.	1	PCLE_VAAN	abbreviation
-EOA	1	NOUN_ACRO_AA	acronym
-EOAK	1	NOUN_ACRO_OO	acronym
-E.ON	1	PROPN_ACRO_ÄKS	acronym
-eos.	1	PCLE_VAAN	abbreviation
-EOS	1	NOUN_ACRO_ÄKS	acronym
-EP	1	PROPN_ACRO_EE	acronym
-EPa	1	NOUN_ACRO_AA	acronym
-EPa	2	NOUN_ACRO_DOLLARI	acronym
-EPO	1	PROPN_ACRO_OO	acronym
-eQ	1	PROPN_ACRO_UU	acronym
-EQ	1	PROPN_ACRO_UU	acronym
-EQT	1	PROPN_ACRO_EE	acronym
-Erad	1	NOUN_ACRO_DOLLARI	acronym
-Erad	2	NOUN_ACRO_EE	acronym
-Eräjärven SP	1	PROPN_ACRO_EE	acronym
-erikoiseläinl.	1	PCLE_VAAN	abbreviation
-erikoishammasl.	1	PCLE_VAAN	abbreviation
-erikoisl.	1	PCLE_VAAN	abbreviation
-erikoist.	1	PCLE_VAAN	abbreviation
-ERM	1	PROPN_ACRO_ÄKS	acronym
-ERN	1	NOUN_ACRO_ÄKS	acronym
-ERTO	1	PROPN_ACRO_OO	acronym
-ERVV	1	PROPN_ACRO_EE	acronym
-Es	1	PROPN_ACRO_METRI	acronym
-Es	2	PROPN_ACRO_ÄKS	acronym
-ES	1	NOUN_ACRO_METRI	acronym
-ES	2	NOUN_ACRO_ÄKS	acronym
-ESA	1	PROPN_ACRO_AA	acronym
-ESB	1	NOUN_ACRO_EE	acronym
-esik.	1	PCLE_VAAN	abbreviation
-esim	1	PCLE_VAAN	abbreviation
-esim.	1	PCLE_VAAN	abbreviation
-esitt.	1	PCLE_VAAN	abbreviation
-ESMA	1	PROPN_ACRO_AA	acronym
-ESO	1	PROPN_ACRO_OO	acronym
-ESP	1	NOUN_ACRO_EE	acronym
-Esr	1	NOUN_ACRO_WEBER	acronym
-Esr	2	NOUN_ACRO_ÄKS	acronym
-ESR	1	PROPN_ACRO_ÄKS	acronym
-est.	1	PCLE_VAAN	abbreviation
-ESTIEM	1	PROPN_ACRO_ÄKS	acronym
-ESv	1	NOUN_ACRO_EE	acronym
-ESv	2	NOUN_ACRO_METRI	acronym
-ESY	1	NOUN_ACRO_YY	acronym
-et al.	1	PCLE_VAAN	abbreviation
-et.	1	PCLE_VAAN	abbreviation
-ET	1	NOUN_ACRO_EE	acronym
-ET	2	NOUN_ACRO_GRAMMA	acronym
-ETA	1	PROPN_ACRO_AA	acronym
-ETB	1	NOUN_ACRO_EE	acronym
-etc	1	PCLE_VAAN	abbreviation
-etc.	1	PCLE_VAAN	abbreviation
-ETK	1	NOUN_ACRO_Ω	acronym
-ETK	2	PROPN_ACRO_OO	acronym
-ETL	1	NOUN_ACRO_Ω	acronym
-ETL	2	PROPN_ACRO_ÄKS	acronym
-ETLA	1	PROPN_ACRO_AA	acronym
-ETM	1	NOUN_ACRO_DOLLARI	acronym
-ETM	2	NOUN_ACRO_ÄKS	acronym
-ETSI	1	PROPN_ACRO_II	acronym
-ETSK	1	NOUN_ACRO_OO	acronym
-ETT	1	PROPN_ACRO_EE	acronym
-ETTA	1	PROPN_ACRO_AA	acronym
-ETY	1	PROPN_ACRO_JÄRJESTÖ	acronym
-ETY	2	PROPN_ACRO_YY	acronym
-ETYJ	1	PROPN_ACRO_II	acronym
-ETYK	1	PROPN_ACRO_OO	acronym
-EU	1	PROPN_ACRO_DOLLARI	acronym
-EU 27	1	PROPN_ACRO_SEITSEMÄN	acronym
-EU	2	PROPN_ACRO_UU	acronym
-EU27	1	PROPN_ACRO_SEITSEMÄN	acronym
-EUR	2	NOUN_ACRO_ÄKS	acronym
-Euro RSCG	1	PROPN_ACRO_EE	acronym
-EUSTORY	1	PROPN_ACRO_YY	acronym
-EUVL	1	NOUN_ACRO_ÄKS	acronym
-ev.	1	PCLE_VAAN	abbreviation
-eV	1	NOUN_ACRO_EE	acronym
-eV	2	NOUN_ACRO_Ω	acronym
-EV	1	NOUN_ACRO_EE	acronym
-EV	2	NOUN_ACRO_Ω	acronym
-EVA	1	PROPN_ACRO_AA	acronym
-EveryDNS	1	PROPN_ACRO_ÄKS	acronym
-ev.lut.	1	PCLE_VAAN	abbreviation
-ev.luutn.	1	PCLE_VAAN	abbreviation
-EVM	1	PROPN_ACRO_ÄKS	acronym
-evp.	1	PCLE_VAAN	abbreviation
-EVR	1	PROPN_ACRO_ÄKS	acronym
-EVVK	1	NOUN_ACRO_OO	acronym
-EW	1	NOUN_ACRO_EE	acronym
-EW	2	NOUN_ACRO_Ω	acronym
-EWb	1	NOUN_ACRO_EE	acronym
-EWb	2	NOUN_ACRO_WEBER	acronym
-EY	1	PROPN_ACRO_JÄRJESTÖ	acronym
-EY	2	PROPN_ACRO_YY	acronym
-EYVL	1	PROPN_ACRO_ÄKS	acronym
-EΩ	1	NOUN_ACRO_METRI	acronym
-EΩ	2	NOUN_ACRO_Ω	acronym
-f	1	NOUN_ACRO_ÄKS	acronym
-f.	1	PCLE_VAAN	abbreviation
-F	1	NOUN_ACRO_METRI	acronym
-F	2	NOUN_ACRO_ÄKS	acronym
-F$	1	NOUN_ACRO_DOLLARI	acronym
-F$	2	NOUN_ACRO_WEBER	acronym
-fa	1	NOUN_ACRO_AA	acronym
-fA	1	NOUN_ACRO_AA	acronym
-fA	2	NOUN_ACRO_DOLLARI	acronym
-FaK	1	NOUN_ACRO_Ω	acronym
-FaK	2	NOUN_ACRO_OO	acronym
-FaL	1	NOUN_ACRO_Ω	acronym
-FaL	2	NOUN_ACRO_ÄKS	acronym
-FaM	1	NOUN_ACRO_DOLLARI	acronym
-FaM	2	NOUN_ACRO_ÄKS	acronym
-FAO	1	PROPN_ACRO_OO	acronym
-FAQ	1	NOUN_ACRO_UU	acronym
-farm.	1	PCLE_VAAN	abbreviation
-farmas.	1	PCLE_VAAN	abbreviation
-FaT	1	NOUN_ACRO_DOLLARI	acronym
-FaT	2	NOUN_ACRO_EE	acronym
-FBI	1	PROPN_ACRO_II	acronym
-fBq	1	NOUN_ACRO_METRI	acronym
-fBq	2	NOUN_ACRO_UU	acronym
-Fbu	1	NOUN_ACRO_UU	acronym
-fC	1	NOUN_ACRO_EE	acronym
-fC	2	NOUN_ACRO_METRI	acronym
-f°C	1	NOUN_ACRO_CELSIUS	acronym
-f°C	2	NOUN_ACRO_EE	acronym
-F&C	1	PROPN_ACRO_EE	acronym
-fcd	1	NOUN_ACRO_EE	acronym
-fcd	2	NOUN_ACRO_KANDELA	acronym
-FCMA	1	PROPN_ACRO_AA	acronym
-FDIC	1	PROPN_ACRO_EE	acronym
-FEPCO 1	1	PROPN_ACRO_YKSI	acronym
-fF	1	NOUN_ACRO_METRI	acronym
-fF	2	NOUN_ACRO_ÄKS	acronym
-fg	1	NOUN_ACRO_EE	acronym
-fg	2	NOUN_ACRO_GRAMMA	acronym
-FGBMFI	1	PROPN_ACRO_II	acronym
-fGy	1	NOUN_ACRO_GRAY	acronym
-fGy	2	NOUN_ACRO_YY	acronym
-fH	1	NOUN_ACRO_METRI	acronym
-fH	2	NOUN_ACRO_OO	acronym
-fHz	1	NOUN_ACRO_METRI	acronym
-fHz	2	NOUN_ACRO_ZET	acronym
-FI	1	PROPN_ACRO_II	acronym
-FIA	1	PROPN_ACRO_AA	acronym
-Fiat SpA	1	PROPN_ACRO_AA	acronym
-FICIX	1	PROPN_ACRO_ÄKS	acronym
-FIFA	1	PROPN_ACRO_AA	acronym
-fil.	1	PCLE_VAAN	abbreviation
-FILE	1	NOUN_ACRO_EE	acronym
-FILI	1	PROPN_ACRO_II	acronym
-FIM	1	NOUN_ACRO_ÄKS	acronym
-FIMECC	1	PROPN_ACRO_EE	acronym
-FIMIC	1	PROPN_ACRO_EE	acronym
-FiMUG	1	PROPN_ACRO_EE	acronym
-FIN	1	PROPN_ACRO_ÄKS	acronym
-FIT	1	PROPN_ACRO_EE	acronym
-fJ	1	NOUN_ACRO_II	acronym
-fJ	2	NOUN_ACRO_JOULE	acronym
-FJD	1	NOUN_ACRO_EE	acronym
-fK	1	NOUN_ACRO_METRI	acronym
-fK	2	NOUN_ACRO_OO	acronym
-FK	1	NOUN_ACRO_Ω	acronym
-FK	2	NOUN_ACRO_OO	acronym
-fkat	1	NOUN_ACRO_EE	acronym
-fkat	2	NOUN_ACRO_Ω	acronym
-FKP	1	NOUN_ACRO_EE	acronym
-fl	1	NOUN_ACRO_GRAMMA	acronym
-fl	2	NOUN_ACRO_ÄKS	acronym
-FL	1	NOUN_ACRO_Ω	acronym
-FL	2	NOUN_ACRO_ÄKS	acronym
-flm	1	NOUN_ACRO_METRI	acronym
-flm	2	NOUN_ACRO_ÄKS	acronym
-flx	1	NOUN_ACRO_METRI	acronym
-flx	2	NOUN_ACRO_ÄKS	acronym
-fm	1	NOUN_ACRO_METRI	acronym
-fm	2	NOUN_ACRO_ÄKS	acronym
-FM	1	NOUN_ACRO_DOLLARI	acronym
-FM	2	NOUN_ACRO_ÄKS	acronym
-fmol	1	NOUN_ACRO_Ω	acronym
-fmol	2	NOUN_ACRO_ÄKS	acronym
-fN	1	NOUN_ACRO_METRI	acronym
-fN	2	NOUN_ACRO_ÄKS	acronym
-Fonderie47	1	PROPN_ACRO_SEITSEMÄN	acronym
-Forum 18	1	PROPN_ACRO_KAHDEKSAN	acronym
-fPa	1	NOUN_ACRO_AA	acronym
-fPa	2	NOUN_ACRO_DOLLARI	acronym
-fr	1	NOUN_ACRO_ÄKS	acronym
-FR	1	NOUN_ACRO_ÄKS	acronym
-frad	1	NOUN_ACRO_DOLLARI	acronym
-frad	2	NOUN_ACRO_EE	acronym
-FRF	1	NOUN_ACRO_ÄKS	acronym
-fs	1	NOUN_ACRO_METRI	acronym
-fs	2	NOUN_ACRO_ÄKS	acronym
-fS	1	NOUN_ACRO_METRI	acronym
-fS	2	NOUN_ACRO_ÄKS	acronym
-fsr	1	NOUN_ACRO_WEBER	acronym
-fsr	2	NOUN_ACRO_ÄKS	acronym
-fSv	1	NOUN_ACRO_EE	acronym
-fSv	2	NOUN_ACRO_METRI	acronym
-ft.	1	PCLE_VAAN	abbreviation
-fT	1	NOUN_ACRO_EE	acronym
-fT	2	NOUN_ACRO_GRAMMA	acronym
-Ft	1	NOUN_ACRO_EE	acronym
-FT	1	NOUN_ACRO_EE	acronym
-FT	2	NOUN_ACRO_WEBER	acronym
-FTAA	1	PROPN_ACRO_AA	acronym
-FTP	1	NOUN_ACRO_EE	acronym
-FTP	2	NOUN_ACRO_WEBER	acronym
-FUNET	1	NOUN_ACRO_EE	acronym
-FUUG	1	PROPN_ACRO_EE	acronym
-fV	1	NOUN_ACRO_EE	acronym
-fV	2	NOUN_ACRO_Ω	acronym
-fW	1	NOUN_ACRO_EE	acronym
-fW	2	NOUN_ACRO_Ω	acronym
-fWb	1	NOUN_ACRO_EE	acronym
-fWb	2	NOUN_ACRO_WEBER	acronym
-fΩ	1	NOUN_ACRO_METRI	acronym
-fΩ	2	NOUN_ACRO_Ω	acronym
-g	1	NOUN_ACRO_EE	acronym
-g	2	NOUN_ACRO_GRAMMA	acronym
-G	1	PROPN_ACRO_EE	acronym
-G	2	PROPN_ACRO_EE	acronym
-G	3	PROPN_ACRO_EE	acronym
-G	4	PROPN_ACRO_EE	acronym
-G	5	PROPN_ACRO_EE	acronym
-G$	1	NOUN_ACRO_DOLLARI	acronym
-G$	2	NOUN_ACRO_WEBER	acronym
-G20	1	PROPN_ACRO_NOLLA	acronym
-G4S	1	PROPN_ACRO_ÄKS	acronym
-G77	1	PROPN_ACRO_SEITSEMÄN	acronym
-G8	1	PROPN_ACRO_KAHDEKSAN	acronym
-GA	1	NOUN_ACRO_AA	acronym
-GA	2	NOUN_ACRO_DOLLARI	acronym
-gal	1	NOUN_ACRO_PUNTA	acronym
-gal	2	NOUN_ACRO_ÄKS	acronym
-GATT	1	NOUN_ACRO_EE	acronym
-GB	1	NOUN_ACRO_EE	acronym
-GBP	1	NOUN_ACRO_EE	acronym
-GBq	1	NOUN_ACRO_METRI	acronym
-GBq	2	NOUN_ACRO_UU	acronym
-GC	1	NOUN_ACRO_EE	acronym
-GC	2	NOUN_ACRO_METRI	acronym
-G°C	1	NOUN_ACRO_CELSIUS	acronym
-G°C	2	NOUN_ACRO_EE	acronym
-Gcd	1	NOUN_ACRO_EE	acronym
-Gcd	2	NOUN_ACRO_KANDELA	acronym
-GCHQ	1	PROPN_ACRO_UU	acronym
-GEA	1	NOUN_ACRO_AA	acronym
-GEA	2	NOUN_ACRO_GRAMMA	acronym
-GEK	1	NOUN_ACRO_OO	acronym
-GEL	1	NOUN_ACRO_ÄKS	acronym
-General Motors Co	1	PROPN_ACRO_OO	acronym
-GEYSIR	1	PROPN_ACRO_ÄKS	acronym
-GF	1	NOUN_ACRO_METRI	acronym
-GF	2	NOUN_ACRO_ÄKS	acronym
-GfK	1	PROPN_ACRO_OO	acronym
-Gg	1	NOUN_ACRO_EE	acronym
-Gg	2	NOUN_ACRO_GRAMMA	acronym
-GGy	1	NOUN_ACRO_GRAY	acronym
-GGy	2	NOUN_ACRO_YY	acronym
-GH	1	NOUN_ACRO_METRI	acronym
-GH	2	NOUN_ACRO_OO	acronym
-GHC	1	NOUN_ACRO_EE	acronym
-GHS	1	NOUN_ACRO_ÄKS	acronym
-GHz	1	NOUN_ACRO_METRI	acronym
-GHz	2	NOUN_ACRO_ZET	acronym
-GIP	1	NOUN_ACRO_EE	acronym
-GJ	1	NOUN_ACRO_II	acronym
-GJ	2	NOUN_ACRO_JOULE	acronym
-GK	1	NOUN_ACRO_METRI	acronym
-GK	2	NOUN_ACRO_OO	acronym
-Gkat	1	NOUN_ACRO_EE	acronym
-Gkat	2	NOUN_ACRO_Ω	acronym
-GL	1	NOUN_ACRO_GRAMMA	acronym
-GL	2	PROPN_ACRO_ÄKS	acronym
-GLG	1	PROPN_ACRO_EE	acronym
-Glm	1	NOUN_ACRO_METRI	acronym
-Glm	2	NOUN_ACRO_ÄKS	acronym
-Global Gaming Factory X	1	PROPN_ACRO_ÄKS	acronym
-Glx	1	NOUN_ACRO_METRI	acronym
-Glx	2	NOUN_ACRO_ÄKS	acronym
-gm	1	NOUN_ACRO_METRI	acronym
-gm	2	NOUN_ACRO_ÄKS	acronym
-Gm	1	NOUN_ACRO_METRI	acronym
-Gm	2	NOUN_ACRO_ÄKS	acronym
-GM	1	PROPN_ACRO_ÄKS	acronym
-Gmbh	1	NOUN_ACRO_OO	acronym
-GmbH	1	NOUN_ACRO_OO	acronym
-GMD	1	NOUN_ACRO_EE	acronym
-gmo	1	NOUN_ACRO_OO	acronym
-GMO	1	PROPN_ACRO_OO	acronym
-Gmol	1	NOUN_ACRO_Ω	acronym
-Gmol	2	NOUN_ACRO_ÄKS	acronym
-GN	1	NOUN_ACRO_METRI	acronym
-GN	2	NOUN_ACRO_ÄKS	acronym
-GNF	1	NOUN_ACRO_ÄKS	acronym
-GNS	1	NOUN_ACRO_ÄKS	acronym
-GodFm	1	PROPN_ACRO_ÄKS	acronym
-gon	1	NOUN_ACRO_ÄKS	acronym
-GP	1	NOUN_ACRO_EE	acronym
-GPa	1	NOUN_ACRO_AA	acronym
-GPa	2	NOUN_ACRO_DOLLARI	acronym
-GPRS	1	NOUN_ACRO_ÄKS	acronym
-GQE	1	NOUN_ACRO_EE	acronym
-Grad	1	NOUN_ACRO_DOLLARI	acronym
-Grad	2	NOUN_ACRO_EE	acronym
-GRD	1	NOUN_ACRO_EE	acronym
-Groupe BPCE	1	PROPN_ACRO_EE	acronym
-Gs	1	NOUN_ACRO_METRI	acronym
-Gs	2	NOUN_ACRO_ÄKS	acronym
-GS	1	NOUN_ACRO_METRI	acronym
-GS	2	NOUN_ACRO_ÄKS	acronym
-GSM	1	NOUN_ACRO_ÄKS	acronym
-Gsr	1	NOUN_ACRO_WEBER	acronym
-Gsr	2	NOUN_ACRO_ÄKS	acronym
-GSv	1	NOUN_ACRO_EE	acronym
-GSv	2	NOUN_ACRO_METRI	acronym
-Gt	1	PCLE_VAAN	abbreviation
-GT	1	NOUN_ACRO_EE	acronym
-GT	2	NOUN_ACRO_GRAMMA	acronym
-GTi	1	PROPN_ACRO_II	acronym
-GTi	2	PCLE_VAAN	abbreviation
-GTK	1	PROPN_ACRO_OO	acronym
-GTQ	1	NOUN_ACRO_UU	acronym
-GUAM	1	PROPN_ACRO_ÄKS	acronym
-GUE	1	NOUN_ACRO_EE	acronym
-GV	1	NOUN_ACRO_EE	acronym
-GV	2	NOUN_ACRO_Ω	acronym
-GW	1	NOUN_ACRO_EE	acronym
-GW	2	NOUN_ACRO_Ω	acronym
-GWb	1	NOUN_ACRO_EE	acronym
-GWb	2	NOUN_ACRO_WEBER	acronym
-GWE	1	NOUN_ACRO_EE	acronym
-GWP	1	NOUN_ACRO_EE	acronym
-Gy	1	NOUN_ACRO_GRAY	acronym
-Gy	2	NOUN_ACRO_YY	acronym
-GYD	1	NOUN_ACRO_EE	acronym
-GΩ	1	NOUN_ACRO_METRI	acronym
-GΩ	2	NOUN_ACRO_Ω	acronym
-h	1	NOUN_ACRO_METRI	acronym
-h	2	NOUN_ACRO_OO	acronym
-H	1	NOUN_ACRO_METRI	acronym
-H	2	NOUN_ACRO_OO	acronym
-ha	1	NOUN_ACRO_AA	acronym
-hA	1	NOUN_ACRO_AA	acronym
-hA	2	NOUN_ACRO_DOLLARI	acronym
-HA	1	NOUN_ACRO_AA	acronym
-hallinton.	1	PCLE_VAAN	abbreviation
-hallintot.	1	PCLE_VAAN	abbreviation
-hammaslääket.	1	PCLE_VAAN	abbreviation
-HAO	1	NOUN_ACRO_OO	acronym
-Harri Savunen & Co	1	PROPN_ACRO_OO	acronym
-HAUS	1	PROPN_ACRO_ÄKS	acronym
-Hb	1	NOUN_ACRO_EE	acronym
-HBL	1	PROPN_ACRO_ÄKS	acronym
-HBO	1	PROPN_ACRO_OO	acronym
-HBOS	1	PROPN_ACRO_ÄKS	acronym
-hBq	1	NOUN_ACRO_METRI	acronym
-hBq	2	NOUN_ACRO_UU	acronym
-h.c.	1	PCLE_VAAN	abbreviation
-hC	1	NOUN_ACRO_EE	acronym
-hC	2	NOUN_ACRO_METRI	acronym
-h°C	1	NOUN_ACRO_CELSIUS	acronym
-h°C	2	NOUN_ACRO_EE	acronym
-hcd	1	NOUN_ACRO_EE	acronym
-hcd	2	NOUN_ACRO_KANDELA	acronym
-HCL	1	PROPN_ACRO_ÄKS	acronym
-hdtv	1	NOUN_ACRO_EE	acronym
-hdtv	2	NOUN_ACRO_GRAY	acronym
-HE	1	NOUN_ACRO_EE	acronym
-Heinolan Palloilijat -47	1	PROPN_ACRO_SEITSEMÄN	acronym
-Helsingin Kiri -60	1	PROPN_ACRO_NOLLA	acronym
-Helsingin NMKY	1	PROPN_ACRO_YY	acronym
-Helsingin OP	1	PROPN_ACRO_EE	acronym
-Helsingin OPKK	1	PROPN_ACRO_OO	acronym
-HEPA	1	NOUN_ACRO_AA	acronym
-HETKY	1	PROPN_ACRO_YY	acronym
-HEUNI	1	PROPN_ACRO_II	acronym
-hF	1	NOUN_ACRO_METRI	acronym
-hF	2	NOUN_ACRO_ÄKS	acronym
-HFU	1	PROPN_ACRO_UU	acronym
-hg	1	NOUN_ACRO_EE	acronym
-hg	2	NOUN_ACRO_GRAMMA	acronym
-Hg	1	NOUN_ACRO_EE	acronym
-Hg	2	NOUN_ACRO_KANDELA	acronym
-hGy	1	NOUN_ACRO_GRAY	acronym
-hGy	2	NOUN_ACRO_YY	acronym
-hh	1	NOUN_ACRO_OO	acronym
-hH	1	NOUN_ACRO_METRI	acronym
-hH	2	NOUN_ACRO_OO	acronym
-hHz	1	NOUN_ACRO_METRI	acronym
-hHz	2	NOUN_ACRO_ZET	acronym
-HIFK	1	PROPN_ACRO_OO	acronym
-HIIT	1	PROPN_ACRO_EE	acronym
-HIM	1	NOUN_ACRO_METRI	acronym
-HIM	2	PROPN_ACRO_ÄKS	acronym
-HITAS	1	NOUN_ACRO_ÄKS	acronym
-HIV	1	NOUN_ACRO_EE	acronym
-HIV	2	NOUN_ACRO_YHDISTYS	acronym
-hJ	1	NOUN_ACRO_II	acronym
-hJ	2	NOUN_ACRO_JOULE	acronym
-HJK	1	PROPN_ACRO_OO	acronym
-hK	1	NOUN_ACRO_METRI	acronym
-hK	2	NOUN_ACRO_OO	acronym
-HK	1	NOUN_ACRO_Ω	acronym
-HK	2	PROPN_ACRO_OO	acronym
-HK$	1	NOUN_ACRO_DOLLARI	acronym
-HK$	2	NOUN_ACRO_WEBER	acronym
-hkat	1	NOUN_ACRO_EE	acronym
-hkat	2	NOUN_ACRO_Ω	acronym
-HKD	1	NOUN_ACRO_EE	acronym
-Hki	1	N_TYYLI	abbreviation
-HKL	1	NOUN_ACRO_TUOTE	acronym
-HKL	2	PROPN_ACRO_ÄKS	acronym
-hl	1	NOUN_ACRO_GRAMMA	acronym
-hl	2	NOUN_ACRO_ÄKS	acronym
-hl.	1	PCLE_VAAN	abbreviation
-HL	1	NOUN_ACRO_GRAMMA	acronym
-HL	2	NOUN_ACRO_PUNTA	acronym
-HL	3	PROPN_ACRO_ÄKS	acronym
-HLK	1	NOUN_ACRO_Ω	acronym
-HLK	2	NOUN_ACRO_OO	acronym
-HLL	1	NOUN_ACRO_Ω	acronym
-HLL	2	NOUN_ACRO_ÄKS	acronym
-hlm	1	NOUN_ACRO_METRI	acronym
-hlm	2	NOUN_ACRO_ÄKS	acronym
-hlö	1	N_JÄÄTELÖ	abbreviation
-HLT	1	NOUN_ACRO_DOLLARI	acronym
-HLT	2	NOUN_ACRO_EE	acronym
-hlx	1	NOUN_ACRO_METRI	acronym
-hlx	2	NOUN_ACRO_ÄKS	acronym
-hm	1	NOUN_ACRO_METRI	acronym
-hm	2	NOUN_ACRO_ÄKS	acronym
-HM	1	NOUN_ACRO_DOLLARI	acronym
-HM	2	NOUN_ACRO_ÄKS	acronym
-H&M	1	PROPN_ACRO_ÄKS	acronym
-hmol	1	NOUN_ACRO_Ω	acronym
-hmol	2	NOUN_ACRO_ÄKS	acronym
-HMV	1	PROPN_ACRO_EE	acronym
-hN	1	NOUN_ACRO_METRI	acronym
-hN	2	NOUN_ACRO_ÄKS	acronym
-HN	1	NOUN_ACRO_METRI	acronym
-HN	2	NOUN_ACRO_ÄKS	acronym
-HNL	1	NOUN_ACRO_ÄKS	acronym
-HO	1	NOUN_ACRO_OIKEUS	acronym
-HO	2	PROPN_ACRO_OO	acronym
-HOAS	1	PROPN_ACRO_ÄKS	acronym
-HögforsGST	1	PROPN_ACRO_EE	acronym
-hojks	1	NOUN_ACRO_ÄKS	acronym
-HOK	1	PROPN_ACRO_OO	acronym
-HOK	2	NOUN_ACRO_PUNTA	acronym
-Hollolan Urheilijat -46	1	PROPN_ACRO_KUUSI	acronym
-HOP	1	PROPN_ACRO_EE	acronym
-HOPS	1	NOUN_ACRO_GRAMMA	acronym
-HOPS	2	NOUN_ACRO_ÄKS	acronym
-hovioik.	1	PCLE_VAAN	abbreviation
-hp.	1	PCLE_VAAN	abbreviation
-HP	1	PROPN_ACRO_EE	acronym
-hPa	1	NOUN_ACRO_AA	acronym
-hPa	2	NOUN_ACRO_DOLLARI	acronym
-HPE	1	NOUN_ACRO_EE	acronym
-HQ	1	PROPN_ACRO_UU	acronym
-hra	1	N_KIRJA	abbreviation
-hrad	1	NOUN_ACRO_DOLLARI	acronym
-hrad	2	NOUN_ACRO_EE	acronym
-HRD	1	NOUN_ACRO_EE	acronym
-HRK	1	NOUN_ACRO_OO	acronym
-HRL	1	NOUN_ACRO_Ω	acronym
-HRL	2	NOUN_ACRO_ÄKS	acronym
-hs	1	NOUN_ACRO_METRI	acronym
-hs	2	NOUN_ACRO_ÄKS	acronym
-hS	1	NOUN_ACRO_METRI	acronym
-hS	2	NOUN_ACRO_ÄKS	acronym
-HS	1	NOUN_ACRO_PUNTA	acronym
-HS	2	PROPN_ACRO_ÄKS	acronym
-HSBC	1	PROPN_ACRO_EE	acronym
-HSE	1	PROPN_ACRO_EE	acronym
-HSL	1	NOUN_ACRO_TUOTE	acronym
-HSL	2	PROPN_ACRO_ÄKS	acronym
-hsr	1	NOUN_ACRO_WEBER	acronym
-hsr	2	NOUN_ACRO_ÄKS	acronym
-HST	1	NOUN_ACRO_EE	acronym
-hsto	1	N_TALO	abbreviation
-hSv	1	NOUN_ACRO_EE	acronym
-hSv	2	NOUN_ACRO_METRI	acronym
-hT	1	NOUN_ACRO_EE	acronym
-hT	2	NOUN_ACRO_GRAMMA	acronym
-HT	1	PROPN_ACRO_EE	acronym
-HTC	1	PROPN_ACRO_EE	acronym
-HTG	1	NOUN_ACRO_EE	acronym
-HTK	1	NOUN_ACRO_Ω	acronym
-HTK	2	NOUN_ACRO_OO	acronym
-htkk	1	NOUN_ACRO_OO	acronym
-HTL	1	NOUN_ACRO_Ω	acronym
-HTL	2	NOUN_ACRO_ÄKS	acronym
-HTM	1	NOUN_ACRO_DOLLARI	acronym
-HTM	2	NOUN_ACRO_ÄKS	acronym
-HTML	1	NOUN_ACRO_ÄKS	acronym
-HTT	1	NOUN_ACRO_DOLLARI	acronym
-HTT	2	NOUN_ACRO_EE	acronym
-HTTP	1	NOUN_ACRO_EE	acronym
-htv	1	NOUN_ACRO_EE	acronym
-HUF	1	NOUN_ACRO_ÄKS	acronym
-HuK	1	NOUN_ACRO_Ω	acronym
-HuK	2	NOUN_ACRO_OO	acronym
-hum.	1	PCLE_VAAN	abbreviation
-huom	1	PCLE_VAAN	abbreviation
-huom.	1	PCLE_VAAN	abbreviation
-HUS	1	PROPN_ACRO_ÄKS	acronym
-HUUGO	1	PROPN_ACRO_OO	acronym
-hv	1	NOUN_ACRO_EE	acronym
-hv	2	NOUN_ACRO_GRAMMA	acronym
-hV	1	NOUN_ACRO_EE	acronym
-hV	2	NOUN_ACRO_Ω	acronym
-H.V.	1	PCLE_VAAN	abbreviation
-HVK	1	PROPN_ACRO_OO	acronym
-HVT	1	NOUN_ACRO_EE	acronym
-hW	1	NOUN_ACRO_EE	acronym
-hW	2	NOUN_ACRO_Ω	acronym
-hWb	1	NOUN_ACRO_EE	acronym
-hWb	2	NOUN_ACRO_WEBER	acronym
-HY	1	PROPN_ACRO_YY	acronym
-HYK	1	PROPN_ACRO_OO	acronym
-HYKS	1	NOUN_ACRO_SAIRAALA	acronym
-HYKS	2	PROPN_ACRO_ÄKS	acronym
-HYLA	1	NOUN_ACRO_AA	acronym
-HYY	1	PROPN_ACRO_YY	acronym
-Hz	1	NOUN_ACRO_METRI	acronym
-Hz	2	NOUN_ACRO_ZET	acronym
-hΩ	1	NOUN_ACRO_METRI	acronym
-hΩ	2	NOUN_ACRO_Ω	acronym
-i	1	NOUN_ACRO_II	acronym
-i	2	NOUN_ACRO_WEBER	acronym
-I	1	NOUN_ACRO_II	acronym
-IAAF	1	PROPN_ACRO_ÄKS	acronym
-IAEA	1	PROPN_ACRO_AA	acronym
-IARC	1	PROPN_ACRO_EE	acronym
-IATA	1	PROPN_ACRO_AA	acronym
-IAU	1	PROPN_ACRO_UU	acronym
-ib.	1	PCLE_VAAN	abbreviation
-IB	1	NOUN_ACRO_EE	acronym
-IBBY	1	PROPN_ACRO_YY	acronym
-ibid.	1	PCLE_VAAN	abbreviation
-IBM	1	PROPN_ACRO_ÄKS	acronym
-IBRD	1	PROPN_ACRO_EE	acronym
-ICAP	1	PROPN_ACRO_EE	acronym
-ICCROM	1	PROPN_ACRO_ÄKS	acronym
-ICOMOS	1	PROPN_ACRO_ÄKS	acronym
-ict	1	NOUN_ACRO_EE	acronym
-id.	1	PCLE_VAAN	abbreviation
-ID	1	NOUN_ACRO_EE	acronym
-IDC	1	PROPN_ACRO_EE	acronym
-IDR	1	NOUN_ACRO_ÄKS	acronym
-i.e.	1	PCLE_VAAN	abbreviation
-IEA	1	PROPN_ACRO_AA	acronym
-IEC	1	NOUN_ACRO_EE	acronym
-IEEE	1	PROPN_ACRO_EE	acronym
-IEP	1	NOUN_ACRO_EE	acronym
-IFA	1	PROPN_ACRO_AA	acronym
-IFK	1	PROPN_ACRO_OO	acronym
-IHEYO	1	PROPN_ACRO_OO	acronym
-IIF	1	PROPN_ACRO_ÄKS	acronym
-IKB	1	PROPN_ACRO_EE	acronym
-IKI	1	PROPN_ACRO_II	acronym
-IKL	1	PROPN_ACRO_ÄKS	acronym
-ikt	1	NOUN_ACRO_EE	acronym
-IL	1	NOUN_ACRO_LEHTI	acronym
-IL	2	PROPN_ACRO_ÄKS	acronym
-ILL	1	PROPN_ACRO_ÄKS	acronym
-ilm.	1	PCLE_VAAN	abbreviation
-ilmavE	1	NOUN_ACRO_EE	acronym
-ILO	1	PROPN_ACRO_OO	acronym
-ILP	1	NOUN_ACRO_EE	acronym
-ILR	1	NOUN_ACRO_ÄKS	acronym
-ILS	1	NOUN_ACRO_ÄKS	acronym
-IMEKO	1	PROPN_ACRO_OO	acronym
-IMF	1	PROPN_ACRO_ÄKS	acronym
-IMI	1	PROPN_ACRO_II	acronym
-in	1	PCLE_VAAN	abbreviation
-in.	1	PCLE_VAAN	abbreviation
-inc	1	NOUN_ACRO_EE	acronym
-inc.	1	PCLE_VAAN	abbreviation
-ING	1	PROPN_ACRO_EE	acronym
-INR	1	NOUN_ACRO_ÄKS	acronym
-INRI	1	NOUN_ACRO_II	acronym
-ins.	1	PCLE_VAAN	abbreviation
-internet-tv	1	NOUN_ACRO_EE	acronym
-ip.	1	PCLE_VAAN	abbreviation
-IP	1	NOUN_ACRO_EE	acronym
-IPA	1	NOUN_ACRO_AA	acronym
-IPEM	1	PROPN_ACRO_ÄKS	acronym
-IPU	1	PROPN_ACRO_UU	acronym
-IQD	1	NOUN_ACRO_EE	acronym
-IR£	1	NOUN_ACRO_GRAMMA	acronym
-IR£	2	NOUN_ACRO_PUNTA	acronym
-IRA	1	PROPN_ACRO_AA	acronym
-IRC	1	NOUN_ACRO_EE	acronym
-IRR	1	NOUN_ACRO_ÄKS	acronym
-IS	1	NOUN_ACRO_PUNTA	acronym
-IS	2	PROPN_ACRO_ÄKS	acronym
-ISAI	1	PROPN_ACRO_II	acronym
-ISBN	1	NOUN_ACRO_ÄKS	acronym
-ISDN	1	NOUN_ACRO_ÄKS	acronym
-ISEC	1	PROPN_ACRO_EE	acronym
-ISJ	1	NOUN_ACRO_II	acronym
-ISK	1	NOUN_ACRO_OO	acronym
-ISM	1	PROPN_ACRO_ÄKS	acronym
-ISMN	1	NOUN_ACRO_ÄKS	acronym
-ISO	1	PROPN_ACRO_OO	acronym
-ISSN	1	NOUN_ACRO_ÄKS	acronym
-ISY	1	PROPN_ACRO_YY	acronym
-it	1	NOUN_ACRO_EE	acronym
-it.	1	PCLE_VAAN	abbreviation
-IT	1	NOUN_ACRO_EE	acronym
-IT	2	NOUN_ACRO_KANDELA	acronym
-ITC	1	PROPN_ACRO_EE	acronym
-ITE	1	NOUN_ACRO_EE	acronym
-ITL	1	NOUN_ACRO_ÄKS	acronym
-ITT	1	PROPN_ACRO_EE	acronym
-ITU	1	PROPN_ACRO_UU	acronym
-IU	1	NOUN_ACRO_UU	acronym
-i.v.	1	PCLE_VAAN	abbreviation
-IVO	1	PROPN_ACRO_OO	acronym
-IVY	1	PROPN_ACRO_YY	acronym
-IZT	1	PROPN_ACRO_EE	acronym
-j	1	NOUN_ACRO_II	acronym
-J	1	NOUN_ACRO_II	acronym
-J	2	NOUN_ACRO_JOULE	acronym
-J$	1	NOUN_ACRO_DOLLARI	acronym
-J$	2	NOUN_ACRO_WEBER	acronym
-jaa	2	PCLE_VAAN	abbreviation
-jaa.	1	PCLE_VAAN	abbreviation
-jääk.	1	PCLE_VAAN	abbreviation
-jälj.	1	PCLE_VAAN	abbreviation
-jatk.	1	PCLE_VAAN	abbreviation
-JBL	1	PROPN_ACRO_ÄKS	acronym
-JC	1	PROPN_ACRO_EE	acronym
-JD	1	NOUN_ACRO_EE	acronym
-JHL	1	PROPN_ACRO_ÄKS	acronym
-JHTT	1	NOUN_ACRO_EE	acronym
-JIT	1	NOUN_ACRO_EE	acronym
-Jk.	1	PCLE_VAAN	abbreviation
-JK	1	NOUN_ACRO_METRI	acronym
-JK	2	NOUN_ACRO_OO	acronym
-jKr	1	PCLE_VAAN	abbreviation
-jKr.	1	PCLE_VAAN	abbreviation
-jm	1	NOUN_ACRO_ÄKS	acronym
-JM	1	PROPN_ACRO_ÄKS	acronym
-JMD	1	NOUN_ACRO_EE	acronym
-jms	1	PCLE_VAAN	abbreviation
-jms.	1	PCLE_VAAN	abbreviation
-jne	1	PCLE_VAAN	abbreviation
-jne.	1	PCLE_VAAN	abbreviation
-JOD	1	NOUN_ACRO_EE	acronym
-joht.	1	PCLE_VAAN	abbreviation
-JOT	1	NOUN_ACRO_EE	acronym
-JoY	1	NOUN_ACRO_JÄRJESTÖ	acronym
-JoY	2	PROPN_ACRO_YY	acronym
-JP Morgan Chase & Co	1	PROPN_ACRO_OO	acronym
-JPMorgan Chase & Co	1	PROPN_ACRO_OO	acronym
-JPY	1	NOUN_ACRO_YY	acronym
-jr.	1	PCLE_VAAN	abbreviation
-JS	1	NOUN_ACRO_ÄKS	acronym
-JSN	1	NOUN_ACRO_JÄRJESTÖ	acronym
-JSN	2	PROPN_ACRO_ÄKS	acronym
-JSW	1	PROPN_ACRO_EE	acronym
-julk.	1	PCLE_VAAN	abbreviation
-JVC	1	PROPN_ACRO_EE	acronym
-JVG	1	PROPN_ACRO_EE	acronym
-JY	1	NOUN_ACRO_JÄRJESTÖ	acronym
-JY	2	PROPN_ACRO_YY	acronym
-JyP	1	PROPN_ACRO_EE	acronym
-JYP	1	PROPN_ACRO_EE	acronym
-k	1	NOUN_ACRO_OO	acronym
-k.	1	PCLE_VAAN	abbreviation
-K	1	NOUN_ACRO_METRI	acronym
-K	2	NOUN_ACRO_OO	acronym
-K Sh	1	NOUN_ACRO_OO	acronym
-K1	1	PROPN_ACRO_YKSI	acronym
-K12	1	NOUN_ACRO_KAKSI	acronym
-K13	1	NOUN_ACRO_KOLME	acronym
-K15	1	NOUN_ACRO_VIISI	acronym
-K16	1	NOUN_ACRO_KUUSI	acronym
-K18	1	NOUN_ACRO_KAHDEKSAN	acronym
-ka	1	NOUN_ACRO_AA	acronym
-ka.	1	PCLE_VAAN	abbreviation
-kA	1	NOUN_ACRO_AA	acronym
-kA	2	NOUN_ACRO_DOLLARI	acronym
-KA	1	PROPN_ACRO_AA	acronym
-kad.	1	PCLE_VAAN	abbreviation
-KadK	1	PROPN_ACRO_OO	acronym
-kal.	1	PCLE_VAAN	abbreviation
-kamr.	1	PCLE_VAAN	abbreviation
-kand.	1	PCLE_VAAN	abbreviation
-Kangasala SK	1	PROPN_ACRO_OO	acronym
-kansaned.	1	PCLE_VAAN	abbreviation
-kantt.	1	PCLE_VAAN	abbreviation
-KäO	1	NOUN_ACRO_OO	acronym
-kappal.	1	PCLE_VAAN	abbreviation
-kapt.	1	PCLE_VAAN	abbreviation
-kapt.luutn.	1	PCLE_VAAN	abbreviation
-käsit.op.	1	PCLE_VAAN	abbreviation
-kasvatust.	1	PCLE_VAAN	abbreviation
-kat.	1	PCLE_VAAN	abbreviation
-KAT	1	NOUN_ACRO_EE	acronym
-kats.	1	PCLE_VAAN	abbreviation
-KATTI	1	PROPN_ACRO_II	acronym
-kauppat.	1	PCLE_VAAN	abbreviation
-kb	1	NOUN_ACRO_EE	acronym
-kb	2	NOUN_ACRO_METRI	acronym
-kB	1	NOUN_ACRO_EE	acronym
-KBC	1	PROPN_ACRO_EE	acronym
-kBq	1	NOUN_ACRO_METRI	acronym
-kBq	2	NOUN_ACRO_UU	acronym
-kC	1	NOUN_ACRO_EE	acronym
-kC	2	NOUN_ACRO_METRI	acronym
-k°C	1	NOUN_ACRO_CELSIUS	acronym
-k°C	2	NOUN_ACRO_EE	acronym
-kcal	1	NOUN_ACRO_DOLLARI	acronym
-kcal	2	PCLE_VAAN	abbreviation
-kcd	1	NOUN_ACRO_EE	acronym
-kcd	2	NOUN_ACRO_KANDELA	acronym
-kd.	1	PCLE_VAAN	abbreviation
-KD	1	PROPN_ACRO_EE	acronym
-KD	2	NOUN_ACRO_EE	acronym
-ke	1	PCLE_VAAN	abbreviation
-KEDO	1	PROPN_ACRO_OO	acronym
-KEHO	1	PROPN_ACRO_OO	acronym
-KEL	1	NOUN_ACRO_Ω	acronym
-KEL	2	NOUN_ACRO_ÄKS	acronym
-KELA	1	PROPN_ACRO_AA	acronym
-kenr.	1	PCLE_VAAN	abbreviation
-kenr.luutn.	1	PCLE_VAAN	abbreviation
-kenr.maj.	1	PCLE_VAAN	abbreviation
-Kenttäurheilijat-58	1	PROPN_ACRO_KAHDEKSAN	acronym
-KEPA	1	PROPN_ACRO_AA	acronym
-Keravan Kori-80	1	PROPN_ACRO_NOLLA	acronym
-kers.	1	PCLE_VAAN	abbreviation
-KES	1	NOUN_ACRO_ÄKS	acronym
-kesk.	1	PCLE_VAAN	abbreviation
-Kesk.	1	PCLE_VAAN	abbreviation
-KeuPa HT	1	PROPN_ACRO_EE	acronym
-kF	1	NOUN_ACRO_METRI	acronym
-kF	2	NOUN_ACRO_ÄKS	acronym
-KFC	1	PROPN_ACRO_EE	acronym
-KFOR	1	PROPN_ACRO_ÄKS	acronym
-kg	1	NOUN_ACRO_EE	acronym
-kg	2	NOUN_ACRO_GRAMMA	acronym
-KGB	1	PROPN_ACRO_EE	acronym
-KGS	1	NOUN_ACRO_ÄKS	acronym
-kGy	1	NOUN_ACRO_GRAY	acronym
-kGy	2	NOUN_ACRO_YY	acronym
-kh	1	NOUN_ACRO_OO	acronym
-kh.	1	PCLE_VAAN	abbreviation
-kH	1	NOUN_ACRO_METRI	acronym
-kH	2	NOUN_ACRO_OO	acronym
-KHK	1	NOUN_ACRO_OO	acronym
-KHO	1	PROPN_ACRO_OO	acronym
-KHR	1	NOUN_ACRO_ÄKS	acronym
-khra	1	N_KIRJA	abbreviation
-KHT	1	NOUN_ACRO_EE	acronym
-kHz	1	NOUN_ACRO_METRI	acronym
-kHz	2	NOUN_ACRO_ZET	acronym
-KIE	1	PROPN_ACRO_EE	acronym
-KiEL	1	NOUN_ACRO_Ω	acronym
-KiEL	2	NOUN_ACRO_ÄKS	acronym
-kiint.oy	1	NOUN_ACRO_GRAY	acronym
-kiint.oy	2	NOUN_ACRO_YY	acronym
-kiint.oy.	1	PCLE_VAAN	abbreviation
-kiir.	1	PCLE_VAAN	abbreviation
-kir.	1	PCLE_VAAN	abbreviation
-kirj.	1	PCLE_VAAN	abbreviation
-kirjeenv.	1	PCLE_VAAN	abbreviation
-KiSV	1	PROPN_ACRO_EE	acronym
-Kiteen Pallo -90	1	PROPN_ACRO_NOLLA	acronym
-KIVI	1	PROPN_ACRO_II	acronym
-kj.	1	PCLE_VAAN	abbreviation
-kJ	1	NOUN_ACRO_II	acronym
-kJ	2	NOUN_ACRO_JOULE	acronym
-kk	1	NOUN_ACRO_OO	acronym
-kk	2	NOUN_ACRO_VUOSI	acronym
-kk.	1	PCLE_VAAN	abbreviation
-kK	1	NOUN_ACRO_METRI	acronym
-kK	2	NOUN_ACRO_OO	acronym
-KK	1	NOUN_ACRO_Ω	acronym
-KK	2	NOUN_ACRO_OO	acronym
-kkat	1	NOUN_ACRO_EE	acronym
-kkat	2	NOUN_ACRO_Ω	acronym
-KKH	1	PROPN_ACRO_OO	acronym
-KKK	1	PROPN_ACRO_OO	acronym
-kko	1	NOUN_ACRO_OO	acronym
-KKO	1	NOUN_ACRO_OIKEUS	acronym
-KKO	2	NOUN_ACRO_OO	acronym
-KKOY	1	PROPN_ACRO_YY	acronym
-kkp	1	NOUN_ACRO_EE	acronym
-KKR	1	PROPN_ACRO_ÄKS	acronym
-kl.	1	PCLE_VAAN	abbreviation
-KL	1	NOUN_ACRO_Ω	acronym
-KL	2	NOUN_ACRO_ÄKS	acronym
-Klinikka 22	1	PROPN_ACRO_KAKSI	acronym
-klm	1	NOUN_ACRO_METRI	acronym
-klm	2	NOUN_ACRO_ÄKS	acronym
-KLM	1	PROPN_ACRO_ÄKS	acronym
-klo	1	N_TALO	abbreviation
-KLT	1	NOUN_ACRO_EE	acronym
-klx	1	NOUN_ACRO_METRI	acronym
-klx	2	NOUN_ACRO_ÄKS	acronym
-km	1	NOUN_ACRO_METRI	acronym
-km	2	NOUN_ACRO_ÄKS	acronym
-KM	1	NOUN_ACRO_ÄKS	acronym
-KM	2	NOUN_ACRO_ÄKS	acronym
-k-m²	1	NOUN_ACRO_METRI	acronym
-k-m²	2	NOUN_ACRO_ÄKS	acronym
-k-m³	1	NOUN_ACRO_METRI	acronym
-k-m³	2	NOUN_ACRO_ÄKS	acronym
-KMF	1	NOUN_ACRO_ÄKS	acronym
-km/h	1	PCLE_VAAN	abbreviation
-KMN	1	PROPN_ACRO_ÄKS	acronym
-kmol	1	NOUN_ACRO_Ω	acronym
-kmol	2	NOUN_ACRO_ÄKS	acronym
-kN	1	NOUN_ACRO_METRI	acronym
-kN	2	NOUN_ACRO_ÄKS	acronym
-kni	1	N_TYYLI	abbreviation
-Knight Frank LLP	1	PROPN_ACRO_EE	acronym
-ko.	1	PCLE_VAAN	abbreviation
-KO	1	PROPN_ACRO_OO	acronym
-kok.	1	PCLE_VAAN	abbreviation
-Kok.	1	PCLE_VAAN	abbreviation
-KOK	1	NOUN_ACRO_OIKEUS	acronym
-KOK	2	PROPN_ACRO_OO	acronym
-kokonais-DNA	1	NOUN_ACRO_AA	acronym
-kom.	1	PCLE_VAAN	abbreviation
-KOM	1	NOUN_ACRO_ÄKS	acronym
-kom.kapt.	1	PCLE_VAAN	abbreviation
-komm.	1	PCLE_VAAN	abbreviation
-kompp.	1	PCLE_VAAN	abbreviation
-KoMu HT	1	PROPN_ACRO_EE	acronym
-konst.	1	PCLE_VAAN	abbreviation
-kop	1	NOUN_ACRO_EE	acronym
-KOP	1	PROPN_ACRO_EE	acronym
-korpr.	1	PCLE_VAAN	abbreviation
-Korutrahaksi.fi	1	PROPN_ACRO_II	acronym
-kotital.op.	1	PCLE_VAAN	abbreviation
-kotiteoll.op.	1	PCLE_VAAN	abbreviation
-KOY	1	NOUN_ACRO_GRAY	acronym
-KOY	2	NOUN_ACRO_YY	acronym
-kp	1	NOUN_ACRO_EE	acronym
-kp.	1	PCLE_VAAN	abbreviation
-kPa	1	NOUN_ACRO_AA	acronym
-kPa	2	NOUN_ACRO_DOLLARI	acronym
-kpl	1	NOUN_ACRO_TUOTE	acronym
-kpl	2	NOUN_ACRO_ÄKS	acronym
-kpm	1	NOUN_ACRO_ÄKS	acronym
-KPMG	1	PROPN_ACRO_EE	acronym
-KPN	1	PROPN_ACRO_ÄKS	acronym
-KPT	1	PROPN_ACRO_EE	acronym
-KPW	1	NOUN_ACRO_EE	acronym
-kr	1	NOUN_ACRO_ÄKS	acronym
-krad	1	NOUN_ACRO_DOLLARI	acronym
-krad	2	NOUN_ACRO_EE	acronym
-KRH	1	NOUN_ACRO_OO	acronym
-krist.	1	PCLE_VAAN	abbreviation
-krj	1	NOUN_ACRO_II	acronym
-krnro	1	N_RUIPELO	abbreviation
-KRO	1	NOUN_ACRO_OO	acronym
-KRP	1	NOUN_ACRO_EE	acronym
-krs	1	NOUN_ACRO_YHDISTYS	acronym
-krs	2	NOUN_ACRO_ÄKS	acronym
-KRW	1	NOUN_ACRO_EE	acronym
-ks	1	NOUN_ACRO_METRI	acronym
-ks	2	NOUN_ACRO_ÄKS	acronym
-ks.	1	PCLE_VAAN	abbreviation
-kS	1	NOUN_ACRO_METRI	acronym
-kS	2	NOUN_ACRO_ÄKS	acronym
-KSO	1	PROPN_ACRO_OO	acronym
-ksr	1	NOUN_ACRO_WEBER	acronym
-ksr	2	NOUN_ACRO_ÄKS	acronym
-kSv	1	NOUN_ACRO_EE	acronym
-kSv	2	NOUN_ACRO_METRI	acronym
-kt	1	NOUN_ACRO_EE	acronym
-kT	1	NOUN_ACRO_EE	acronym
-kT	2	NOUN_ACRO_GRAMMA	acronym
-KT	1	PROPN_ACRO_EE	acronym
-KT	2	NOUN_ACRO_WEBER	acronym
-KtaO	1	NOUN_ACRO_OO	acronym
-KteO	1	NOUN_ACRO_OO	acronym
-KTK	1	NOUN_ACRO_Ω	acronym
-KTK	2	PROPN_ACRO_OO	acronym
-KTL	1	NOUN_ACRO_Ω	acronym
-KTL	2	PROPN_ACRO_ÄKS	acronym
-KTM	1	NOUN_ACRO_DOLLARI	acronym
-KTM	2	NOUN_ACRO_ÄKS	acronym
-KTP	1	PROPN_ACRO_EE	acronym
-KTS	1	NOUN_ACRO_ÄKS	acronym
-KTT	1	NOUN_ACRO_EE	acronym
-KTT	2	NOUN_ACRO_WEBER	acronym
-KTTO	1	PROPN_ACRO_OO	acronym
-KTV	1	PROPN_ACRO_EE	acronym
-KtyO	1	NOUN_ACRO_OO	acronym
-KU	1	PROPN_ACRO_UU	acronym
-KUA	1	NOUN_ACRO_AA	acronym
-Kultarahaksi.fi	1	PROPN_ACRO_II	acronym
-kumpp.	1	PCLE_VAAN	abbreviation
-Kuntien Tekniset KTK	1	PROPN_ACRO_OO	acronym
-KuPS	1	PROPN_ACRO_ÄKS	acronym
-Kurikan OP	1	PROPN_ACRO_EE	acronym
-Kustaa III	1	NOUN_ACRO_KOLMAS	acronym
-kuv.	1	PCLE_VAAN	abbreviation
-KUV	1	PROPN_ACRO_EE	acronym
-KuvA	1	PROPN_ACRO_AA	acronym
-KuvO	1	NOUN_ACRO_OO	acronym
-kuv.op.	1	PCLE_VAAN	abbreviation
-kv.	1	PCLE_VAAN	abbreviation
-kV	1	NOUN_ACRO_EE	acronym
-kV	2	NOUN_ACRO_Ω	acronym
-KVL	1	PROPN_ACRO_ÄKS	acronym
-KVT	1	NOUN_ACRO_EE	acronym
-KVTEL	1	NOUN_ACRO_Ω	acronym
-KVTEL	2	NOUN_ACRO_ÄKS	acronym
-kvv	1	NOUN_ACRO_EE	acronym
-kW	1	NOUN_ACRO_EE	acronym
-kW	2	NOUN_ACRO_Ω	acronym
-kWb	1	NOUN_ACRO_EE	acronym
-kWb	2	NOUN_ACRO_WEBER	acronym
-KWD	1	NOUN_ACRO_EE	acronym
-kWh	1	NOUN_ACRO_METRI	acronym
-kWh	2	NOUN_ACRO_OO	acronym
-KWH	1	PROPN_ACRO_OO	acronym
-ky	1	NOUN_ACRO_JÄRJESTÖ	acronym
-ky	2	NOUN_ACRO_YY	acronym
-ky.	1	PCLE_VAAN	abbreviation
-KYD	1	NOUN_ACRO_EE	acronym
-KyO	1	PROPN_ACRO_OO	acronym
-KYS	1	PROPN_ACRO_ÄKS	acronym
-KZT	1	NOUN_ACRO_EE	acronym
-kΩ	1	NOUN_ACRO_METRI	acronym
-kΩ	2	NOUN_ACRO_Ω	acronym
-l	1	NOUN_ACRO_GRAMMA	acronym
-l	2	NOUN_ACRO_ÄKS	acronym
-l.	1	PCLE_VAAN	abbreviation
-L	1	NOUN_ACRO_GRAMMA	acronym
-L	2	NOUN_ACRO_ÄKS	acronym
-L2	1	NOUN_ACRO_KAKSI	acronym
-la	1	NOUN_ACRO_AA	acronym
-la	2	PCLE_VAAN	abbreviation
-LA	1	NOUN_ACRO_AA	acronym
-lääk.	1	PCLE_VAAN	abbreviation
-lääket.	1	PCLE_VAAN	abbreviation
-LAFTA	1	PROPN_ACRO_AA	acronym
-läh.	1	PCLE_VAAN	abbreviation
-Lahden Suunnistajat -37	1	PROPN_ACRO_SEITSEMÄN	acronym
-LaK	1	NOUN_ACRO_Ω	acronym
-LaK	2	NOUN_ACRO_OO	acronym
-LAK	1	NOUN_ACRO_OO	acronym
-lakit.	1	PCLE_VAAN	abbreviation
-LaL	1	NOUN_ACRO_Ω	acronym
-LaL	2	NOUN_ACRO_ÄKS	acronym
-länt.	1	PCLE_VAAN	abbreviation
-Lappeenrannan NMKY	1	PROPN_ACRO_YY	acronym
-lastent.op.	1	PCLE_VAAN	abbreviation
-LaT	1	NOUN_ACRO_DOLLARI	acronym
-LaT	2	NOUN_ACRO_EE	acronym
-LBP	1	NOUN_ACRO_EE	acronym
-LD	1	NOUN_ACRO_EE	acronym
-leht.	1	PCLE_VAAN	abbreviation
-lehtiö-pc	1	NOUN_ACRO_EE	acronym
-LEL	1	NOUN_ACRO_Ω	acronym
-LEL	2	NOUN_ACRO_ÄKS	acronym
-LEOPS	1	NOUN_ACRO_ÄKS	acronym
-Levi Strauss & Co	1	PROPN_ACRO_OO	acronym
-LG	1	PROPN_ACRO_EE	acronym
-LGT	1	PROPN_ACRO_EE	acronym
-LH	1	NOUN_ACRO_OO	acronym
-LI	1	NOUN_ACRO_II	acronym
-LIA	1	PROPN_ACRO_AA	acronym
-liikuntak.	1	PCLE_VAAN	abbreviation
-liikuntat.	1	PCLE_VAAN	abbreviation
-LiK	1	NOUN_ACRO_Ω	acronym
-LiK	2	NOUN_ACRO_OO	acronym
-lis.	1	PCLE_VAAN	abbreviation
-LitK	1	NOUN_ACRO_Ω	acronym
-LitK	2	NOUN_ACRO_OO	acronym
-LitL	1	NOUN_ACRO_Ω	acronym
-LitL	2	NOUN_ACRO_ÄKS	acronym
-LitM	1	NOUN_ACRO_DOLLARI	acronym
-LitM	2	NOUN_ACRO_ÄKS	acronym
-LitT	1	NOUN_ACRO_EE	acronym
-LitT	2	NOUN_ACRO_WEBER	acronym
-lk.	1	PCLE_VAAN	abbreviation
-LK	1	NOUN_ACRO_Ω	acronym
-LK	2	NOUN_ACRO_OO	acronym
-LKAB	1	PROPN_ACRO_EE	acronym
-LKH	1	NOUN_ACRO_OO	acronym
-LKK	1	PROPN_ACRO_OO	acronym
-lkm.	1	PCLE_VAAN	abbreviation
-LKP	1	PROPN_ACRO_EE	acronym
-LKR	1	NOUN_ACRO_ÄKS	acronym
-LKT	1	NOUN_ACRO_EE	acronym
-lkv.	1	PCLE_VAAN	abbreviation
-LKV	1	NOUN_ACRO_EE	acronym
-LKV	2	NOUN_ACRO_EE	acronym
-lky	1	NOUN_ACRO_YY	acronym
-lky.	1	PCLE_VAAN	abbreviation
-ll	1	NOUN_ACRO_ÄKS	acronym
-ll.	1	PCLE_VAAN	abbreviation
-LL	1	NOUN_ACRO_Ω	acronym
-LL	2	NOUN_ACRO_ÄKS	acronym
-LLC	1	PROPN_ACRO_EE	acronym
-Lloyds TSB	1	PROPN_ACRO_EE	acronym
-lm	1	NOUN_ACRO_METRI	acronym
-lm	2	NOUN_ACRO_ÄKS	acronym
-lm.	1	PCLE_VAAN	abbreviation
-Lm	1	NOUN_ACRO_ÄKS	acronym
-LMFAO	1	PROPN_ACRO_OO	acronym
-LO	1	PROPN_ACRO_OO	acronym
-LOGY	1	PROPN_ACRO_YY	acronym
-LOK	1	NOUN_ACRO_Ω	acronym
-LOK	2	NOUN_ACRO_OO	acronym
-Lp	1	NOUN_ACRO_EE	acronym
-LP	1	NOUN_ACRO_EE	acronym
-LPI	1	NOUN_ACRO_II	acronym
-LRD	1	NOUN_ACRO_EE	acronym
-LS	1	NOUN_ACRO_ÄKS	acronym
-lsd	1	NOUN_ACRO_EE	acronym
-LSL	1	NOUN_ACRO_ÄKS	acronym
-LSO	1	PROPN_ACRO_OO	acronym
-LT	1	PROPN_ACRO_EE	acronym
-LTCM	1	PROPN_ACRO_ÄKS	acronym
-ltd.	1	PCLE_VAAN	abbreviation
-LTE	1	PROPN_ACRO_EE	acronym
-ltk	1	NOUN_ACRO_OO	acronym
-ltk.	1	PCLE_VAAN	abbreviation
-LTL	1	NOUN_ACRO_ÄKS	acronym
-LTO	1	NOUN_ACRO_OO	acronym
-LTS	1	NOUN_ACRO_ÄKS	acronym
-LTT	1	PROPN_ACRO_EE	acronym
-LTY	1	PROPN_ACRO_YY	acronym
-LUC	1	NOUN_ACRO_EE	acronym
-LUF	1	PROPN_ACRO_ÄKS	acronym
-LuK	1	NOUN_ACRO_Ω	acronym
-LuK	2	NOUN_ACRO_OO	acronym
-LUL	1	NOUN_ACRO_ÄKS	acronym
-LUMA	1	NOUN_ACRO_AA	acronym
-luonnont.	1	PCLE_VAAN	abbreviation
-lut.	1	PCLE_VAAN	abbreviation
-LUTU	1	NOUN_ACRO_UU	acronym
-luutn.	1	PCLE_VAAN	abbreviation
-lv.	1	PCLE_VAAN	abbreviation
-lvi	1	NOUN_ACRO_II	acronym
-lvi	2	NOUN_ACRO_WEBER	acronym
-LVL	1	NOUN_ACRO_ÄKS	acronym
-LVM	1	NOUN_ACRO_ÄKS	acronym
-LVMH	1	PROPN_ACRO_OO	acronym
-LVR	1	NOUN_ACRO_ÄKS	acronym
-lvv.	1	PCLE_VAAN	abbreviation
-lx	1	NOUN_ACRO_METRI	acronym
-lx	2	NOUN_ACRO_ÄKS	acronym
-ly	1	NOUN_ACRO_YY	acronym
-LY	1	PROPN_ACRO_YY	acronym
-LYD	1	NOUN_ACRO_EE	acronym
-lyh.	1	PCLE_VAAN	abbreviation
-LYHKI	1	NOUN_ACRO_II	acronym
-m	1	NOUN_ACRO_METRI	acronym
-m	2	NOUN_ACRO_ÄKS	acronym
-µm	1	NOUN_ACRO_METRI	acronym
-µm	2	NOUN_ACRO_ÄKS	acronym
-M	1	NOUN_ACRO_ÄKS	acronym
-M.	2	PCLE_VAAN	abbreviation
-m²	1	NOUN_ACRO_METRI	acronym
-m²	2	NOUN_ACRO_ÄKS	acronym
-m³	1	NOUN_ACRO_METRI	acronym
-m³	2	NOUN_ACRO_ÄKS	acronym
-ma	1	NOUN_ACRO_AA	acronym
-ma	2	PCLE_VAAN	abbreviation
-ma.	1	PCLE_VAAN	abbreviation
-mA	1	NOUN_ACRO_AA	acronym
-mA	2	NOUN_ACRO_DOLLARI	acronym
-MA	1	NOUN_ACRO_AA	acronym
-MA	2	NOUN_ACRO_AA	acronym
-M.A.	1	PCLE_VAAN	abbreviation
-maan.	1	PCLE_VAAN	abbreviation
-maat.	1	PCLE_VAAN	abbreviation
-MAD	1	NOUN_ACRO_EE	acronym
-MAF	1	NOUN_ACRO_ÄKS	acronym
-MAI	1	NOUN_ACRO_II	acronym
-Mail.ru	1	PROPN_ACRO_UU	acronym
-Mainostoimisto 96	1	PROPN_ACRO_KUUSI	acronym
-maist.	1	PCLE_VAAN	abbreviation
-maj.	1	PCLE_VAAN	abbreviation
-maks.	1	PCLE_VAAN	abbreviation
-MAMU	1	NOUN_ACRO_UU	acronym
-MAN	1	PROPN_ACRO_ÄKS	acronym
-Manse PP	1	PROPN_ACRO_EE	acronym
-MaO	1	NOUN_ACRO_OO	acronym
-MAOL	1	PROPN_ACRO_ÄKS	acronym
-MAT	1	NOUN_ACRO_EE	acronym
-matr.	1	PCLE_VAAN	abbreviation
-Mb	1	NOUN_ACRO_EE	acronym
-Mb	2	NOUN_ACRO_METRI	acronym
-MB	1	NOUN_ACRO_EE	acronym
-MBA	1	NOUN_ACRO_AA	acronym
-M.B.A	1	NOUN_ACRO_AA	acronym
-MBA.	1	PCLE_VAAN	abbreviation
-MBD	1	NOUN_ACRO_EE	acronym
-Mbit	1	NOUN_ACRO_EE	acronym
-Mbit	2	NOUN_ACRO_METRI	acronym
-Mbit/s	1	NOUN_ACRO_METRI	acronym
-Mbit/s	2	NOUN_ACRO_ÄKS	acronym
-MBO	1	NOUN_ACRO_OO	acronym
-Mbps	1	NOUN_ACRO_METRI	acronym
-Mbps	2	NOUN_ACRO_ÄKS	acronym
-mBq	1	NOUN_ACRO_METRI	acronym
-mBq	2	NOUN_ACRO_UU	acronym
-MBq	1	NOUN_ACRO_METRI	acronym
-MBq	2	NOUN_ACRO_UU	acronym
-Mb/s	1	NOUN_ACRO_METRI	acronym
-Mb/s	2	NOUN_ACRO_ÄKS	acronym
-mC	1	NOUN_ACRO_EE	acronym
-mC	2	NOUN_ACRO_METRI	acronym
-m°C	1	NOUN_ACRO_CELSIUS	acronym
-m°C	2	NOUN_ACRO_EE	acronym
-MC	1	NOUN_ACRO_EE	acronym
-MC	2	NOUN_ACRO_METRI	acronym
-M°C	1	NOUN_ACRO_CELSIUS	acronym
-M°C	2	NOUN_ACRO_EE	acronym
-mcd	1	NOUN_ACRO_EE	acronym
-mcd	2	NOUN_ACRO_KANDELA	acronym
-Mcd	1	NOUN_ACRO_EE	acronym
-Mcd	2	NOUN_ACRO_KANDELA	acronym
-MCF	1	NOUN_ACRO_ÄKS	acronym
-MDC	1	NOUN_ACRO_EE	acronym
-MDen	1	NOUN_ACRO_ÄKS	acronym
-MDL	1	NOUN_ACRO_ÄKS	acronym
-MDU	1	PROPN_ACRO_UU	acronym
-ME	1	NOUN_ACRO_EE	acronym
-media-pc	1	NOUN_ACRO_EE	acronym
-Medi-It	1	PROPN_ACRO_EE	acronym
-MEK	1	PROPN_ACRO_OO	acronym
-MEL	1	NOUN_ACRO_Ω	acronym
-MEL	2	NOUN_ACRO_ÄKS	acronym
-MEMC	1	PROPN_ACRO_EE	acronym
-MEP	1	NOUN_ACRO_EE	acronym
-Mercedes-AMG	1	PROPN_ACRO_EE	acronym
-MerivE	1	PROPN_ACRO_EE	acronym
-merkon.	1	PCLE_VAAN	abbreviation
-METLA	1	PROPN_ACRO_AA	acronym
-METO	1	PROPN_ACRO_OO	acronym
-MetroPCS	1	PROPN_ACRO_ÄKS	acronym
-metsänhoit.	1	PCLE_VAAN	abbreviation
-metsät.	1	PCLE_VAAN	abbreviation
-MEUR	1	NOUN_ACRO_ÄKS	acronym
-MEX$	1	NOUN_ACRO_DOLLARI	acronym
-MEX$	2	NOUN_ACRO_WEBER	acronym
-mF	1	NOUN_ACRO_METRI	acronym
-mF	2	NOUN_ACRO_ÄKS	acronym
-MF	1	NOUN_ACRO_METRI	acronym
-MF	2	NOUN_ACRO_ÄKS	acronym
-MF Global Finance USA	1	PROPN_ACRO_AA	acronym
-mg	1	NOUN_ACRO_EE	acronym
-mg	2	NOUN_ACRO_GRAMMA	acronym
-Mg	1	NOUN_ACRO_EE	acronym
-Mg	2	NOUN_ACRO_GRAMMA	acronym
-MG	1	PROPN_ACRO_EE	acronym
-MGA	1	NOUN_ACRO_AA	acronym
-MGF	1	NOUN_ACRO_ÄKS	acronym
-MGM	1	PROPN_ACRO_ÄKS	acronym
-mGy	1	NOUN_ACRO_GRAY	acronym
-mGy	2	NOUN_ACRO_YY	acronym
-MGy	1	NOUN_ACRO_GRAY	acronym
-MGy	2	NOUN_ACRO_YY	acronym
-mH	1	NOUN_ACRO_METRI	acronym
-mH	2	NOUN_ACRO_OO	acronym
-MH	1	NOUN_ACRO_METRI	acronym
-MH	2	PROPN_ACRO_OO	acronym
-mhy.	1	PCLE_VAAN	abbreviation
-mHz	1	NOUN_ACRO_METRI	acronym
-mHz	2	NOUN_ACRO_ZET	acronym
-MHz	1	NOUN_ACRO_METRI	acronym
-MHz	2	NOUN_ACRO_ZET	acronym
-mi	1	NOUN_ACRO_II	acronym
-MI	1	NOUN_ACRO_II	acronym
-miel.	1	PCLE_VAAN	abbreviation
-MIGRI	1	PROPN_ACRO_II	acronym
-MIKES	1	PROPN_ACRO_ÄKS	acronym
-milj.	1	PCLE_VAAN	abbreviation
-min	1	NOUN_ACRO_ÄKS	acronym
-min	3	NOUN_ACRO_ÄKS	acronym
-min.	1	PCLE_VAAN	abbreviation
-Mirgor SACIFIA	1	PROPN_ACRO_AA	acronym
-Miss	1	PCLE_VAAN	abbreviation
-MIT	1	PROPN_ACRO_EE	acronym
-Mitsubishi UFJ	1	PROPN_ACRO_II	acronym
-Mitsui & Co	1	PROPN_ACRO_OO	acronym
-mJ	1	NOUN_ACRO_II	acronym
-mJ	2	NOUN_ACRO_JOULE	acronym
-MJ	1	NOUN_ACRO_II	acronym
-MJ	2	NOUN_ACRO_JOULE	acronym
-mk	1	NOUN_ACRO_GRAMMA	acronym
-mk	2	NOUN_ACRO_OO	acronym
-mK	1	NOUN_ACRO_METRI	acronym
-mK	2	NOUN_ACRO_OO	acronym
-MK	1	NOUN_ACRO_METRI	acronym
-MK	2	NOUN_ACRO_OO	acronym
-mkat	1	NOUN_ACRO_EE	acronym
-mkat	2	NOUN_ACRO_Ω	acronym
-Mkat	1	NOUN_ACRO_EE	acronym
-Mkat	2	NOUN_ACRO_Ω	acronym
-MKD	1	NOUN_ACRO_EE	acronym
-MKH	1	PROPN_ACRO_OO	acronym
-MKL	1	PROPN_ACRO_ÄKS	acronym
-MKN	1	NOUN_ACRO_ÄKS	acronym
-MKT	1	NOUN_ACRO_EE	acronym
-ml	1	NOUN_ACRO_GRAMMA	acronym
-ml	2	NOUN_ACRO_ÄKS	acronym
-ml.	1	PCLE_VAAN	abbreviation
-ML	1	PROPN_ACRO_ÄKS	acronym
-MLF	1	NOUN_ACRO_ÄKS	acronym
-mlk.	1	PCLE_VAAN	abbreviation
-Mlle	1	PCLE_VAAN	abbreviation
-mlm	1	NOUN_ACRO_METRI	acronym
-mlm	2	NOUN_ACRO_ÄKS	acronym
-Mlm	1	NOUN_ACRO_METRI	acronym
-Mlm	2	NOUN_ACRO_ÄKS	acronym
-mlx	1	NOUN_ACRO_METRI	acronym
-mlx	2	NOUN_ACRO_ÄKS	acronym
-Mlx	1	NOUN_ACRO_METRI	acronym
-Mlx	2	NOUN_ACRO_ÄKS	acronym
-mm	1	NOUN_ACRO_METRI	acronym
-mm	2	NOUN_ACRO_ÄKS	acronym
-mm	3	PCLE_VAAN	abbreviation
-mm.	1	PCLE_VAAN	abbreviation
-Mm	1	NOUN_ACRO_METRI	acronym
-Mm	2	NOUN_ACRO_ÄKS	acronym
-MM	1	NOUN_ACRO_WEBER	acronym
-MM	2	NOUN_ACRO_ÄKS	acronym
-Mme	1	PCLE_VAAN	abbreviation
-mmHg	1	NOUN_ACRO_EE	acronym
-mmHg	2	NOUN_ACRO_GRAMMA	acronym
-Mmk	1	NOUN_ACRO_GRAMMA	acronym
-Mmk	2	NOUN_ACRO_OO	acronym
-MMK	1	NOUN_ACRO_GRAMMA	acronym
-MMK	2	NOUN_ACRO_OO	acronym
-MMK	3	NOUN_ACRO_OO	acronym
-MML	1	NOUN_ACRO_Ω	acronym
-MML	2	PROPN_ACRO_ÄKS	acronym
-MMM	1	NOUN_ACRO_DOLLARI	acronym
-MMM	2	NOUN_ACRO_ÄKS	acronym
-mmol	1	NOUN_ACRO_Ω	acronym
-mmol	2	NOUN_ACRO_ÄKS	acronym
-Mmol	1	NOUN_ACRO_Ω	acronym
-Mmol	2	NOUN_ACRO_ÄKS	acronym
-MMT	1	NOUN_ACRO_DOLLARI	acronym
-MMT	2	NOUN_ACRO_EE	acronym
-MMYL	1	PROPN_ACRO_ÄKS	acronym
-mN	1	NOUN_ACRO_METRI	acronym
-mN	2	NOUN_ACRO_ÄKS	acronym
-MN	1	NOUN_ACRO_METRI	acronym
-MN	2	NOUN_ACRO_ÄKS	acronym
-MNT	1	NOUN_ACRO_EE	acronym
-MO	1	NOUN_ACRO_OO	acronym
-MO	2	NOUN_ACRO_OO	acronym
-MOEX Offshore 2007	1	PROPN_ACRO_SEITSEMÄN	acronym
-mol	1	NOUN_ACRO_Ω	acronym
-mol	2	NOUN_ACRO_ÄKS	acronym
-mom.	1	PCLE_VAAN	abbreviation
-MOP	1	NOUN_ACRO_EE	acronym
-mot	1	PCLE_VAAN	abbreviation
-mot.	1	PCLE_VAAN	abbreviation
-mp.	1	PCLE_VAAN	abbreviation
-mp3	1	NOUN_ACRO_KOLME	acronym
-MP3	1	NOUN_ACRO_KOLME	acronym
-mPa	1	NOUN_ACRO_AA	acronym
-mPa	2	NOUN_ACRO_DOLLARI	acronym
-MPa	1	NOUN_ACRO_AA	acronym
-MPa	2	NOUN_ACRO_DOLLARI	acronym
-MPEG	1	NOUN_ACRO_EE	acronym
-mpk	1	NOUN_ACRO_OO	acronym
-MpKK	1	PROPN_ACRO_OO	acronym
-mpm	1	PCLE_VAAN	abbreviation
-mpm.	1	PCLE_VAAN	abbreviation
-MpO	1	PROPN_ACRO_OO	acronym
-MPS	1	PROPN_ACRO_ÄKS	acronym
-Mpx	1	NOUN_ACRO_ÄKS	acronym
-mpy.	1	PCLE_VAAN	abbreviation
-MQ	1	PROPN_ACRO_UU	acronym
-Mr	1	PCLE_VAAN	abbreviation
-Mr.	1	PCLE_VAAN	abbreviation
-MR	1	PROPN_ACRO_ÄKS	acronym
-mrad	1	NOUN_ACRO_DOLLARI	acronym
-mrad	2	NOUN_ACRO_EE	acronym
-Mrad	1	NOUN_ACRO_DOLLARI	acronym
-Mrad	2	NOUN_ACRO_EE	acronym
-mrd.	1	PCLE_VAAN	abbreviation
-MRO	1	NOUN_ACRO_OO	acronym
-Mrs	1	PCLE_VAAN	abbreviation
-ms	1	NOUN_ACRO_METRI	acronym
-ms	2	NOUN_ACRO_ÄKS	acronym
-m/s	1	NOUN_ACRO_METRI	acronym
-m/s	2	NOUN_ACRO_ÄKS	acronym
-mS	1	NOUN_ACRO_METRI	acronym
-mS	2	NOUN_ACRO_ÄKS	acronym
-Ms	1	NOUN_ACRO_WEBER	acronym
-Ms	2	NOUN_ACRO_ÄKS	acronym
-Ms	3	NOUN_ACRO_ÄKS	acronym
-Ms	4	PCLE_VAAN	abbreviation
-MS	1	NOUN_ACRO_ÄKS	acronym
-MSB	1	PROPN_ACRO_EE	acronym
-MSc	1	NOUN_ACRO_EE	acronym
-M.Sc.	1	PCLE_VAAN	abbreviation
-MSCI	1	PROPN_ACRO_II	acronym
-MSD	1	PROPN_ACRO_EE	acronym
-MSK	1	PROPN_ACRO_OO	acronym
-msr	1	NOUN_ACRO_WEBER	acronym
-msr	2	NOUN_ACRO_ÄKS	acronym
-Msr	1	NOUN_ACRO_WEBER	acronym
-Msr	2	NOUN_ACRO_ÄKS	acronym
-msrk.	1	PCLE_VAAN	abbreviation
-mSv	1	NOUN_ACRO_EE	acronym
-mSv	2	NOUN_ACRO_METRI	acronym
-MSv	1	NOUN_ACRO_EE	acronym
-MSv	2	NOUN_ACRO_METRI	acronym
-mt.	1	PCLE_VAAN	abbreviation
-mT	1	NOUN_ACRO_EE	acronym
-mT	2	NOUN_ACRO_GRAMMA	acronym
-Mt	1	NOUN_ACRO_EE	acronym
-MT	1	NOUN_ACRO_EE	acronym
-MT	2	NOUN_ACRO_GRAMMA	acronym
-MTI	1	NOUN_ACRO_II	acronym
-MTK	1	PROPN_ACRO_OO	acronym
-MTL	1	PROPN_ACRO_ÄKS	acronym
-MTN	1	PROPN_ACRO_ÄKS	acronym
-MTP	1	NOUN_ACRO_EE	acronym
-mts.	1	PCLE_VAAN	abbreviation
-Mt/s	1	NOUN_ACRO_METRI	acronym
-Mt/s	2	NOUN_ACRO_ÄKS	acronym
-MTS	1	PROPN_ACRO_ÄKS	acronym
-MTT	1	PROPN_ACRO_EE	acronym
-MTV	1	NOUN_ACRO_WEBER	acronym
-MTV	2	PROPN_ACRO_EE	acronym
-MTV3	1	PROPN_ACRO_KOLME	acronym
-MuK	1	NOUN_ACRO_Ω	acronym
-MuK	2	NOUN_ACRO_OO	acronym
-MuL	1	NOUN_ACRO_Ω	acronym
-MuL	2	NOUN_ACRO_ÄKS	acronym
-MuM	1	NOUN_ACRO_DOLLARI	acronym
-MuM	2	NOUN_ACRO_ÄKS	acronym
-Munsala IK	1	PROPN_ACRO_OO	acronym
-MUR	1	NOUN_ACRO_ÄKS	acronym
-mus.	1	PCLE_VAAN	abbreviation
-mus.op.	1	PCLE_VAAN	abbreviation
-MuT	1	NOUN_ACRO_DOLLARI	acronym
-MuT	2	NOUN_ACRO_EE	acronym
-Muutos 2011	1	PROPN_ACRO_YKSI	acronym
-mv.	1	PCLE_VAAN	abbreviation
-mV	1	NOUN_ACRO_EE	acronym
-mV	2	NOUN_ACRO_Ω	acronym
-MV	1	PROPN_ACRO_EE	acronym
-MV	2	NOUN_ACRO_Ω	acronym
-MVR	1	NOUN_ACRO_ÄKS	acronym
-mvs.	1	PCLE_VAAN	abbreviation
-mW	1	NOUN_ACRO_EE	acronym
-mW	2	NOUN_ACRO_Ω	acronym
-MW	1	NOUN_ACRO_EE	acronym
-MW	2	NOUN_ACRO_Ω	acronym
-mWb	1	NOUN_ACRO_EE	acronym
-mWb	2	NOUN_ACRO_WEBER	acronym
-MWb	1	NOUN_ACRO_EE	acronym
-MWb	2	NOUN_ACRO_WEBER	acronym
-MWh	1	NOUN_ACRO_METRI	acronym
-MWh	2	NOUN_ACRO_OO	acronym
-MWK	1	NOUN_ACRO_OO	acronym
-MXN	1	NOUN_ACRO_ÄKS	acronym
-MXP	1	NOUN_ACRO_EE	acronym
-MXV	1	NOUN_ACRO_EE	acronym
-MYEL	1	NOUN_ACRO_Ω	acronym
-MYEL	2	NOUN_ACRO_ÄKS	acronym
-Mynämäen Suunnistajat -52	1	PROPN_ACRO_KAKSI	acronym
-myöh.	1	PCLE_VAAN	abbreviation
-MYR	1	NOUN_ACRO_ÄKS	acronym
-MySQL	1	PROPN_ACRO_ÄKS	acronym
-MYY	1	PROPN_ACRO_YY	acronym
-MZE	1	NOUN_ACRO_EE	acronym
-MZM	1	NOUN_ACRO_ÄKS	acronym
-MZN	1	NOUN_ACRO_ÄKS	acronym
-mΩ	1	NOUN_ACRO_METRI	acronym
-mΩ	2	NOUN_ACRO_Ω	acronym
-MΩ	1	NOUN_ACRO_METRI	acronym
-MΩ	2	NOUN_ACRO_Ω	acronym
-n	1	NOUN_ACRO_ÄKS	acronym
-n.	1	PCLE_VAAN	abbreviation
-N	1	NOUN_ACRO_METRI	acronym
-N	2	NOUN_ACRO_ÄKS	acronym
-N	3	NOUN_ACRO_ÄKS	acronym
-N$	1	NOUN_ACRO_DOLLARI	acronym
-N$	2	NOUN_ACRO_WEBER	acronym
-nA	1	NOUN_ACRO_AA	acronym
-nA	2	NOUN_ACRO_DOLLARI	acronym
-NA f.	1	PCLE_VAAN	abbreviation
-NAD	1	NOUN_ACRO_EE	acronym
-NAFTA	1	PROPN_ACRO_AA	acronym
-NASA	1	PROPN_ACRO_AA	acronym
-Nasdaq OMX	1	PROPN_ACRO_ÄKS	acronym
-NATO	1	PROPN_ACRO_OO	acronym
-N.B.	1	PCLE_VAAN	abbreviation
-NBC	1	PROPN_ACRO_EE	acronym
-NBG	1	PROPN_ACRO_EE	acronym
-nBq	1	NOUN_ACRO_METRI	acronym
-nBq	2	NOUN_ACRO_UU	acronym
-nC	1	NOUN_ACRO_EE	acronym
-nC	2	NOUN_ACRO_METRI	acronym
-n°C	1	NOUN_ACRO_CELSIUS	acronym
-n°C	2	NOUN_ACRO_EE	acronym
-NCC	1	PROPN_ACRO_EE	acronym
-ncd	1	NOUN_ACRO_EE	acronym
-ncd	2	NOUN_ACRO_KANDELA	acronym
-NDX	1	PROPN_ACRO_ÄKS	acronym
-NEA	1	PROPN_ACRO_AA	acronym
-NEC	1	PROPN_ACRO_EE	acronym
-NESU-KY	1	PROPN_ACRO_YY	acronym
-netti-tv	1	NOUN_ACRO_EE	acronym
-netti-tv	2	NOUN_ACRO_GRAY	acronym
-neuv.	1	PCLE_VAAN	abbreviation
-nF	1	NOUN_ACRO_METRI	acronym
-nF	2	NOUN_ACRO_ÄKS	acronym
-ng	1	NOUN_ACRO_EE	acronym
-ng	2	NOUN_ACRO_GRAMMA	acronym
-NGN	1	NOUN_ACRO_ÄKS	acronym
-nGy	1	NOUN_ACRO_GRAY	acronym
-nGy	2	NOUN_ACRO_YY	acronym
-nH	1	NOUN_ACRO_METRI	acronym
-nH	2	NOUN_ACRO_OO	acronym
-NHL	1	PROPN_ACRO_ÄKS	acronym
-nHz	1	NOUN_ACRO_METRI	acronym
-nHz	2	NOUN_ACRO_ZET	acronym
-NIB	1	PROPN_ACRO_EE	acronym
-NIC	1	NOUN_ACRO_EE	acronym
-nid.	1	PCLE_VAAN	abbreviation
-nim.	1	PCLE_VAAN	abbreviation
-nimim.	1	PCLE_VAAN	abbreviation
-NIO	1	NOUN_ACRO_OO	acronym
-nJ	1	NOUN_ACRO_II	acronym
-nJ	2	NOUN_ACRO_JOULE	acronym
-nk.	1	PCLE_VAAN	abbreviation
-nK	1	NOUN_ACRO_METRI	acronym
-nK	2	NOUN_ACRO_OO	acronym
-nkat	1	NOUN_ACRO_EE	acronym
-nkat	2	NOUN_ACRO_Ω	acronym
-NKP	1	PROPN_ACRO_EE	acronym
-Nkr	1	NOUN_ACRO_ÄKS	acronym
-NKr	1	NOUN_ACRO_ÄKS	acronym
-NKT	1	NOUN_ACRO_EE	acronym
-NL	1	PROPN_ACRO_ÄKS	acronym
-NLG	1	NOUN_ACRO_EE	acronym
-nlm	1	NOUN_ACRO_METRI	acronym
-nlm	2	NOUN_ACRO_ÄKS	acronym
-NLP	1	NOUN_ACRO_EE	acronym
-nlx	1	NOUN_ACRO_METRI	acronym
-nlx	2	NOUN_ACRO_ÄKS	acronym
-nm	1	NOUN_ACRO_METRI	acronym
-nm	2	NOUN_ACRO_ÄKS	acronym
-Nm	1	NOUN_ACRO_METRI	acronym
-Nm	2	NOUN_ACRO_ÄKS	acronym
-NMKY	1	NOUN_ACRO_YHDISTYS	acronym
-NMKY	2	PROPN_ACRO_YY	acronym
-nmol	1	NOUN_ACRO_Ω	acronym
-nmol	2	NOUN_ACRO_ÄKS	acronym
-NMT	1	NOUN_ACRO_EE	acronym
-nN	1	NOUN_ACRO_METRI	acronym
-nN	2	NOUN_ACRO_ÄKS	acronym
-NN	1	PROPN_ACRO_ÄKS	acronym
-N.N.	1	PCLE_VAAN	abbreviation
-NNKY	1	NOUN_ACRO_YHDISTYS	acronym
-NNKY	2	PROPN_ACRO_YY	acronym
-n:o	1	N_RUIPELO	abbreviation
-NOK	1	NOUN_ACRO_OO	acronym
-Norcar-BSB	1	PROPN_ACRO_EE	acronym
-NordLB	1	PROPN_ACRO_EE	acronym
-Nova KBM	1	PROPN_ACRO_ÄKS	acronym
-nPa	1	NOUN_ACRO_AA	acronym
-nPa	2	NOUN_ACRO_DOLLARI	acronym
-NPC	1	PROPN_ACRO_EE	acronym
-NPR	1	NOUN_ACRO_ÄKS	acronym
-NRA	1	PROPN_ACRO_AA	acronym
-nrad	1	NOUN_ACRO_DOLLARI	acronym
-nrad	2	NOUN_ACRO_EE	acronym
-nro	1	N_RUIPELO	abbreviation
-nro	2	PCLE_VAAN	abbreviation
-Nrs	1	NOUN_ACRO_ÄKS	acronym
-nrt	1	NOUN_ACRO_EE	acronym
-NRW	1	PROPN_ACRO_EE	acronym
-ns	1	NOUN_ACRO_METRI	acronym
-ns	2	NOUN_ACRO_ÄKS	acronym
-ns	3	PCLE_VAAN	abbreviation
-ns.	1	PCLE_VAAN	abbreviation
-nS	1	NOUN_ACRO_METRI	acronym
-nS	2	NOUN_ACRO_ÄKS	acronym
-NSA	1	PROPN_ACRO_AA	acronym
-NSN	1	PROPN_ACRO_ÄKS	acronym
-nsr	1	NOUN_ACRO_WEBER	acronym
-nsr	2	NOUN_ACRO_ÄKS	acronym
-nsr	3	NOUN_ACRO_ÄKS	acronym
-nSv	1	NOUN_ACRO_EE	acronym
-nSv	2	NOUN_ACRO_METRI	acronym
-nT	1	NOUN_ACRO_EE	acronym
-nT	2	NOUN_ACRO_GRAMMA	acronym
-NT$	1	NOUN_ACRO_DOLLARI	acronym
-NT$	2	NOUN_ACRO_WEBER	acronym
-NTB	1	PROPN_ACRO_EE	acronym
-nti	1	PCLE_VAAN	abbreviation
-NTP	1	PROPN_ACRO_EE	acronym
-Nu	1	NOUN_ACRO_UU	acronym
-Nurmon Urheilijat -99	1	PROPN_ACRO_YHDEKSÄN	acronym
-NUVA	1	PROPN_ACRO_AA	acronym
-nV	1	NOUN_ACRO_EE	acronym
-nV	2	NOUN_ACRO_Ω	acronym
-NV	1	NOUN_ACRO_EE	acronym
-NVL	1	PROPN_ACRO_ÄKS	acronym
-nW	1	NOUN_ACRO_EE	acronym
-nW	2	NOUN_ACRO_Ω	acronym
-nWb	1	NOUN_ACRO_EE	acronym
-nWb	2	NOUN_ACRO_WEBER	acronym
-nyk.	1	PCLE_VAAN	abbreviation
-$NZ	1	NOUN_ACRO_WEBER	acronym
-$NZ	2	NOUN_ACRO_ZET	acronym
-NZ$	1	NOUN_ACRO_DOLLARI	acronym
-NZ$	2	NOUN_ACRO_WEBER	acronym
-NZD	1	NOUN_ACRO_EE	acronym
-nΩ	1	NOUN_ACRO_METRI	acronym
-nΩ	2	NOUN_ACRO_Ω	acronym
-o	1	NOUN_ACRO_OO	acronym
-O	1	NOUN_ACRO_OO	acronym
-ö	1	NOUN_ACRO_ÖÖ	acronym
-Ö	1	PROPN_ACRO_ÖÖ	acronym
-O2	1	PROPN_ACRO_KAKSI	acronym
-oa.	1	PCLE_VAAN	abbreviation
-OAJ	1	NOUN_ACRO_JÄRJESTÖ	acronym
-OAJ	2	PROPN_ACRO_II	acronym
-OAS	1	PROPN_ACRO_ÄKS	acronym
-obs	1	PCLE_VAAN	abbreviation
-obs.	1	PCLE_VAAN	abbreviation
-OECD	1	PROPN_ACRO_EE	acronym
-OEEC	1	PROPN_ACRO_EE	acronym
-ÖFN	1	PROPN_ACRO_ÄKS	acronym
-oh.	1	PCLE_VAAN	abbreviation
-OIE	1	PROPN_ACRO_EE	acronym
-oik.	1	PCLE_VAAN	abbreviation
-oikeust.	1	PCLE_VAAN	abbreviation
-OIKOS	1	PROPN_ACRO_ÄKS	acronym
-ok	1	NOUN_ACRO_OO	acronym
-ok	2	PCLE_VAAN	abbreviation
-ok.	1	PCLE_VAAN	abbreviation
-OK	1	NOUN_ACRO_OK	acronym
-OK	2	NOUN_ACRO_OO	acronym
-OKM	1	NOUN_ACRO_ÄKS	acronym
-OKV	1	PROPN_ACRO_EE	acronym
-OLAF	1	NOUN_ACRO_ÄKS	acronym
-OLL	1	PROPN_ACRO_ÄKS	acronym
-OLPC	1	PROPN_ACRO_EE	acronym
-om.	1	PCLE_VAAN	abbreviation
-OM	1	NOUN_ACRO_ÄKS	acronym
-OMD	1	PROPN_ACRO_EE	acronym
-om.p.	1	PCLE_VAAN	abbreviation
-OMR	1	NOUN_ACRO_ÄKS	acronym
-OMX	1	PROPN_ACRO_ÄKS	acronym
-op	1	NOUN_ACRO_EE	acronym
-op.	1	PCLE_VAAN	abbreviation
-OPEC	1	PROPN_ACRO_EE	acronym
-opett.	1	PCLE_VAAN	abbreviation
-OPH	1	PROPN_ACRO_OO	acronym
-OPK	1	PROPN_ACRO_OO	acronym
-OPKK	1	PROPN_ACRO_OO	acronym
-OPKO	1	PROPN_ACRO_OO	acronym
-OPM	1	NOUN_ACRO_ÄKS	acronym
-OPO	1	NOUN_ACRO_OO	acronym
-opp.	1	PCLE_VAAN	abbreviation
-OPS	1	NOUN_ACRO_ÄKS	acronym
-OPTL	1	PROPN_ACRO_ÄKS	acronym
-Oriola-KD	1	PROPN_ACRO_EE	acronym
-ork.	1	PCLE_VAAN	abbreviation
-ortod.	1	PCLE_VAAN	abbreviation
-o.s.	1	PCLE_VAAN	abbreviation
-os.	1	PCLE_VAAN	abbreviation
-OS	1	NOUN_ACRO_ÄKS	acronym
-osk	1	NOUN_ACRO_OO	acronym
-osk.	1	PCLE_VAAN	abbreviation
-OSKE	1	PROPN_ACRO_EE	acronym
-OSMA	1	NOUN_ACRO_AA	acronym
-OSMA	2	NOUN_ACRO_DOLLARI	acronym
-OSTIV	1	PROPN_ACRO_EE	acronym
-OTC	1	NOUN_ACRO_EE	acronym
-OTE	1	PROPN_ACRO_EE	acronym
-OTK	1	NOUN_ACRO_Ω	acronym
-OTK	2	NOUN_ACRO_OO	acronym
-OTL	1	NOUN_ACRO_Ω	acronym
-OTL	2	NOUN_ACRO_ÄKS	acronym
-oto	1	NOUN_ACRO_OO	acronym
-oto.	1	PCLE_VAAN	abbreviation
-OTT	1	NOUN_ACRO_DOLLARI	acronym
-OTT	2	NOUN_ACRO_EE	acronym
-OÜ	1	NOUN_ACRO_YY	acronym
-Oulun NMKY	1	PROPN_ACRO_YY	acronym
-ov	1	NOUN_ACRO_EE	acronym
-ovh	1	NOUN_ACRO_GRAMMA	acronym
-ovh	2	NOUN_ACRO_OO	acronym
-ovh.	1	PCLE_VAAN	abbreviation
-OVT	1	NOUN_ACRO_EE	acronym
-oy	1	NOUN_ACRO_JÄRJESTÖ	acronym
-oy	2	NOUN_ACRO_YY	acronym
-oy.	1	PCLE_VAAN	abbreviation
-OY	1	NOUN_ACRO_OPISTO	acronym
-OY	2	PROPN_ACRO_YY	acronym
-oyj	1	NOUN_ACRO_II	acronym
-oyj	2	NOUN_ACRO_JÄRJESTÖ	acronym
-oyj.	1	PCLE_VAAN	abbreviation
-OYS	1	PROPN_ACRO_ÄKS	acronym
-oz.	1	PCLE_VAAN	abbreviation
-p	1	NOUN_ACRO_EE	acronym
-p.	1	PCLE_VAAN	abbreviation
-P	1	NOUN_ACRO_EE	acronym
-P	2	NOUN_ACRO_EE	acronym
-pa.	1	PCLE_VAAN	abbreviation
-pA	1	NOUN_ACRO_AA	acronym
-pA	2	NOUN_ACRO_DOLLARI	acronym
-Pa	1	NOUN_ACRO_AA	acronym
-Pa	2	NOUN_ACRO_DOLLARI	acronym
-PA	1	NOUN_ACRO_AA	acronym
-pääll.	1	PCLE_VAAN	abbreviation
-PAB	1	NOUN_ACRO_EE	acronym
-PAH	1	NOUN_ACRO_OO	acronym
-pak	1	NOUN_ACRO_OO	acronym
-pakk	1	NOUN_ACRO_OO	acronym
-PAM	1	PROPN_ACRO_ÄKS	acronym
-PAND	1	PROPN_ACRO_EE	acronym
-paneeli-pc	1	NOUN_ACRO_EE	acronym
-par.	1	PCLE_VAAN	abbreviation
-past.	1	PCLE_VAAN	abbreviation
-pat.	1	PCLE_VAAN	abbreviation
-patl.	1	PCLE_VAAN	abbreviation
-PAU	1	PROPN_ACRO_UU	acronym
-Paulson & Co	1	PROPN_ACRO_OO	acronym
-PAV	1	NOUN_ACRO_EE	acronym
-PAY	1	PROPN_ACRO_YY	acronym
-pBq	1	NOUN_ACRO_METRI	acronym
-pBq	2	NOUN_ACRO_UU	acronym
-PBq	1	NOUN_ACRO_METRI	acronym
-PBq	2	NOUN_ACRO_UU	acronym
-pc	1	NOUN_ACRO_EE	acronym
-pC	1	NOUN_ACRO_EE	acronym
-pC	2	NOUN_ACRO_METRI	acronym
-p°C	1	NOUN_ACRO_CELSIUS	acronym
-p°C	2	NOUN_ACRO_EE	acronym
-PC	1	NOUN_ACRO_EE	acronym
-PC	2	NOUN_ACRO_METRI	acronym
-P°C	1	NOUN_ACRO_CELSIUS	acronym
-P°C	2	NOUN_ACRO_EE	acronym
-PCB	1	NOUN_ACRO_EE	acronym
-pcd	1	NOUN_ACRO_EE	acronym
-pcd	2	NOUN_ACRO_KANDELA	acronym
-Pcd	1	NOUN_ACRO_EE	acronym
-Pcd	2	NOUN_ACRO_KANDELA	acronym
-PCUF	1	PROPN_ACRO_ÄKS	acronym
-pda	1	NOUN_ACRO_AA	acronym
-PDA	1	NOUN_ACRO_AA	acronym
-pdf	1	NOUN_ACRO_ÄKS	acronym
-PDF	1	NOUN_ACRO_ÄKS	acronym
-PDT	1	NOUN_ACRO_EE	acronym
-PDVSA	1	PROPN_ACRO_AA	acronym
-pe	1	NOUN_ACRO_EE	acronym
-pe	2	PCLE_VAAN	abbreviation
-PE	1	NOUN_ACRO_EE	acronym
-PEI	1	NOUN_ACRO_II	acronym
-Pellervon taloustutkimus PTT	1	PROPN_ACRO_EE	acronym
-PEN	1	NOUN_ACRO_ÄKS	acronym
-per.	1	PCLE_VAAN	abbreviation
-perj.	1	PCLE_VAAN	abbreviation
-perusk.op.	1	PCLE_VAAN	abbreviation
-PES	1	NOUN_ACRO_ÄKS	acronym
-PET	1	NOUN_ACRO_EE	acronym
-pF	1	NOUN_ACRO_METRI	acronym
-pF	2	NOUN_ACRO_ÄKS	acronym
-PF	1	NOUN_ACRO_METRI	acronym
-PF	2	NOUN_ACRO_ÄKS	acronym
-pg	1	NOUN_ACRO_EE	acronym
-pg	2	NOUN_ACRO_GRAMMA	acronym
-Pg	1	NOUN_ACRO_EE	acronym
-Pg	2	NOUN_ACRO_GRAMMA	acronym
-PGE	1	PROPN_ACRO_EE	acronym
-PGK	1	NOUN_ACRO_OO	acronym
-pGy	1	NOUN_ACRO_GRAY	acronym
-pGy	2	NOUN_ACRO_YY	acronym
-PGy	1	NOUN_ACRO_GRAY	acronym
-PGy	2	NOUN_ACRO_YY	acronym
-ph.	1	PCLE_VAAN	abbreviation
-pH	1	NOUN_ACRO_OO	acronym
-PH	1	NOUN_ACRO_METRI	acronym
-PH	2	NOUN_ACRO_OO	acronym
-PhD	1	NOUN_ACRO_EE	acronym
-Ph.D.	1	PCLE_VAAN	abbreviation
-Phillips 66	1	PROPN_ACRO_KUUSI	acronym
-PHP	1	NOUN_ACRO_EE	acronym
-PHS	1	PROPN_ACRO_ÄKS	acronym
-PHS/TBWA	1	PROPN_ACRO_AA	acronym
-pHz	1	NOUN_ACRO_METRI	acronym
-pHz	2	NOUN_ACRO_ZET	acronym
-PHz	1	NOUN_ACRO_METRI	acronym
-PHz	2	NOUN_ACRO_ZET	acronym
-pien-pc	1	NOUN_ACRO_EE	acronym
-PIN	1	NOUN_ACRO_ÄKS	acronym
-pinta-WWW	1	NOUN_ACRO_EE	acronym
-pinta-WWW	2	NOUN_ACRO_METRI	acronym
-pion.	1	PCLE_VAAN	abbreviation
-PISA	1	NOUN_ACRO_AA	acronym
-pit.	1	PCLE_VAAN	abbreviation
-pj	1	NOUN_ACRO_II	acronym
-pj	2	NOUN_ACRO_PUNTA	acronym
-pj.	1	PCLE_VAAN	abbreviation
-pJ	1	NOUN_ACRO_II	acronym
-pJ	2	NOUN_ACRO_JOULE	acronym
-PJ	1	NOUN_ACRO_II	acronym
-PJ	2	NOUN_ACRO_JOULE	acronym
-pjsto	1	N_TALO	abbreviation
-pk.	1	PCLE_VAAN	abbreviation
-pK	1	NOUN_ACRO_METRI	acronym
-pK	2	NOUN_ACRO_OO	acronym
-PK	1	NOUN_ACRO_METRI	acronym
-PK	2	NOUN_ACRO_OO	acronym
-pkat	1	NOUN_ACRO_EE	acronym
-pkat	2	NOUN_ACRO_Ω	acronym
-Pkat	1	NOUN_ACRO_EE	acronym
-Pkat	2	NOUN_ACRO_Ω	acronym
-PKC	1	PROPN_ACRO_EE	acronym
-PkO	1	NOUN_ACRO_OO	acronym
-PKR	1	NOUN_ACRO_ÄKS	acronym
-pkt	1	NOUN_ACRO_EE	acronym
-pkt	2	NOUN_ACRO_WEBER	acronym
-pl	1	NOUN_ACRO_ÄKS	acronym
-pl.	1	PCLE_VAAN	abbreviation
-PL	1	NOUN_ACRO_ÄKS	acronym
-plc	1	NOUN_ACRO_EE	acronym
-plm	1	NOUN_ACRO_METRI	acronym
-plm	2	NOUN_ACRO_ÄKS	acronym
-Plm	1	NOUN_ACRO_METRI	acronym
-Plm	2	NOUN_ACRO_ÄKS	acronym
-PLM	1	NOUN_ACRO_ÄKS	acronym
-PLN	1	NOUN_ACRO_ÄKS	acronym
-PLO	1	PROPN_ACRO_OO	acronym
-plx	1	NOUN_ACRO_METRI	acronym
-plx	2	NOUN_ACRO_ÄKS	acronym
-Plx	1	NOUN_ACRO_METRI	acronym
-Plx	2	NOUN_ACRO_ÄKS	acronym
-PLZ	1	NOUN_ACRO_ZET	acronym
-pm	1	NOUN_ACRO_METRI	acronym
-pm	2	NOUN_ACRO_ÄKS	acronym
-p.m.	1	PCLE_VAAN	abbreviation
-pm.	1	PCLE_VAAN	abbreviation
-Pm	1	NOUN_ACRO_METRI	acronym
-Pm	2	NOUN_ACRO_ÄKS	acronym
-PM	1	NOUN_ACRO_ÄKS	acronym
-PMI	1	PROPN_ACRO_II	acronym
-pmm	1	NOUN_ACRO_ÄKS	acronym
-PMMP	1	PROPN_ACRO_EE	acronym
-pmol	1	NOUN_ACRO_Ω	acronym
-pmol	2	NOUN_ACRO_ÄKS	acronym
-Pmol	1	NOUN_ACRO_Ω	acronym
-Pmol	2	NOUN_ACRO_ÄKS	acronym
-pms	1	NOUN_ACRO_ÄKS	acronym
-pN	1	NOUN_ACRO_METRI	acronym
-pN	2	NOUN_ACRO_ÄKS	acronym
-PN	1	NOUN_ACRO_METRI	acronym
-PN	2	PROPN_ACRO_ÄKS	acronym
-pnä	1	PCLE_VAAN	abbreviation
-pnk	1	NOUN_ACRO_OO	acronym
-po.	1	PCLE_VAAN	abbreviation
-pohj.	1	PCLE_VAAN	abbreviation
-Polamk	1	PROPN_ACRO_OO	acronym
-POP	1	PROPN_ACRO_EE	acronym
-Pöyry CM	1	PROPN_ACRO_ÄKS	acronym
-pp.	1	PCLE_VAAN	abbreviation
-PP	1	NOUN_ACRO_EE	acronym
-pPa	1	NOUN_ACRO_AA	acronym
-pPa	2	NOUN_ACRO_DOLLARI	acronym
-PPa	1	NOUN_ACRO_AA	acronym
-PPa	2	NOUN_ACRO_DOLLARI	acronym
-PPE	1	NOUN_ACRO_EE	acronym
-PPE-DE	1	NOUN_ACRO_EE	acronym
-PPI	1	NOUN_ACRO_II	acronym
-ppm	2	NOUN_ACRO_ÄKS	acronym
-PPO	1	PROPN_ACRO_OO	acronym
-PPR	1	PROPN_ACRO_ÄKS	acronym
-pr	1	NOUN_ACRO_ÄKS	acronym
-PR	1	NOUN_ACRO_METRI	acronym
-PR	2	NOUN_ACRO_ÄKS	acronym
-Pra	1	NOUN_ACRO_AA	acronym
-prad	1	NOUN_ACRO_DOLLARI	acronym
-prad	2	NOUN_ACRO_EE	acronym
-Prad	1	NOUN_ACRO_DOLLARI	acronym
-Prad	2	NOUN_ACRO_EE	acronym
-PRH	1	PROPN_ACRO_OO	acronym
-PRH	2	NOUN_ACRO_YHDISTYS	acronym
-prik.	1	PCLE_VAAN	abbreviation
-prk	1	NOUN_ACRO_OO	acronym
-prk	2	NOUN_ACRO_YHDISTYS	acronym
-prof.	1	PCLE_VAAN	abbreviation
-prok.	1	PCLE_VAAN	abbreviation
-ProSiebenSat1	1	PROPN_ACRO_YKSI	acronym
-prov.	1	PCLE_VAAN	abbreviation
-PRT	1	PROPN_ACRO_EE	acronym
-ps	1	NOUN_ACRO_METRI	acronym
-ps	2	NOUN_ACRO_ÄKS	acronym
-ps.	1	PCLE_VAAN	abbreviation
-pS	1	NOUN_ACRO_METRI	acronym
-pS	2	NOUN_ACRO_ÄKS	acronym
-Ps	1	NOUN_ACRO_METRI	acronym
-Ps	2	NOUN_ACRO_ÄKS	acronym
-PS	1	NOUN_ACRO_METRI	acronym
-PS	2	PROPN_ACRO_ÄKS	acronym
-P.S.	1	PCLE_VAAN	abbreviation
-PSA	1	PROPN_ACRO_AA	acronym
-PSE	1	NOUN_ACRO_EE	acronym
-PsK	1	NOUN_ACRO_Ω	acronym
-PsK	2	NOUN_ACRO_OO	acronym
-PsL	1	NOUN_ACRO_Ω	acronym
-PsL	2	NOUN_ACRO_ÄKS	acronym
-PsM	1	NOUN_ACRO_DOLLARI	acronym
-PsM	2	NOUN_ACRO_ÄKS	acronym
-PSOAS	1	PROPN_ACRO_ÄKS	acronym
-PSOP	1	PROPN_ACRO_EE	acronym
-PSP	1	PROPN_ACRO_EE	acronym
-psr	1	NOUN_ACRO_WEBER	acronym
-psr	2	NOUN_ACRO_ÄKS	acronym
-Psr	1	NOUN_ACRO_WEBER	acronym
-Psr	2	NOUN_ACRO_ÄKS	acronym
-PsT	1	NOUN_ACRO_DOLLARI	acronym
-PsT	2	NOUN_ACRO_EE	acronym
-psta	1	PCLE_VAAN	abbreviation
-psto	1	N_TALO	abbreviation
-pSv	1	NOUN_ACRO_EE	acronym
-pSv	2	NOUN_ACRO_METRI	acronym
-PSv	1	NOUN_ACRO_EE	acronym
-PSv	2	NOUN_ACRO_METRI	acronym
-psykol.	1	PCLE_VAAN	abbreviation
-pT	1	NOUN_ACRO_EE	acronym
-pT	2	NOUN_ACRO_GRAMMA	acronym
-PT	1	NOUN_ACRO_GRAMMA	acronym
-PT	2	PROPN_ACRO_EE	acronym
-PTE	1	NOUN_ACRO_EE	acronym
-ptk.	1	PCLE_VAAN	abbreviation
-PTO	1	NOUN_ACRO_OO	acronym
-ptri	1	N_KEHVELI	abbreviation
-PTS	1	NOUN_ACRO_ÄKS	acronym
-PTT	1	PROPN_ACRO_EE	acronym
-puh.	1	PCLE_VAAN	abbreviation
-puh.joht.	1	PCLE_VAAN	abbreviation
-Purcell & Co	1	PROPN_ACRO_OO	acronym
-pursim.	1	PCLE_VAAN	abbreviation
-puutarhaop.	1	PCLE_VAAN	abbreviation
-pv	1	NOUN_ACRO_EE	acronym
-pv	2	NOUN_ACRO_EE	acronym
-pv.	1	PCLE_VAAN	abbreviation
-pV	1	NOUN_ACRO_EE	acronym
-pV	2	NOUN_ACRO_Ω	acronym
-PV	1	NOUN_ACRO_EE	acronym
-PV	2	NOUN_ACRO_Ω	acronym
-pvc	1	NOUN_ACRO_EE	acronym
-pvc	2	NOUN_ACRO_WEBER	acronym
-pvm.	1	PCLE_VAAN	abbreviation
-PvTK	1	PROPN_ACRO_OO	acronym
-pW	1	NOUN_ACRO_EE	acronym
-pW	2	NOUN_ACRO_Ω	acronym
-PW	1	NOUN_ACRO_EE	acronym
-PW	2	NOUN_ACRO_Ω	acronym
-pWb	1	NOUN_ACRO_EE	acronym
-pWb	2	NOUN_ACRO_WEBER	acronym
-PWb	1	NOUN_ACRO_EE	acronym
-PWb	2	NOUN_ACRO_WEBER	acronym
-PwC	1	PROPN_ACRO_EE	acronym
-PYG	1	NOUN_ACRO_EE	acronym
-pΩ	1	NOUN_ACRO_METRI	acronym
-pΩ	2	NOUN_ACRO_Ω	acronym
-PΩ	1	NOUN_ACRO_METRI	acronym
-PΩ	2	NOUN_ACRO_Ω	acronym
-q	1	NOUN_ACRO_UU	acronym
-Q	1	NOUN_ACRO_UU	acronym
-QAR	1	NOUN_ACRO_ÄKS	acronym
-QR	1	NOUN_ACRO_ÄKS	acronym
-r	1	NOUN_ACRO_ÄKS	acronym
-r.	1	PCLE_VAAN	abbreviation
-R	1	NOUN_ACRO_ÄKS	acronym
-R	2	NOUN_ACRO_ÄKS	acronym
-R$	1	NOUN_ACRO_DOLLARI	acronym
-R$	2	NOUN_ACRO_WEBER	acronym
-RAC	1	PROPN_ACRO_EE	acronym
-rad	1	NOUN_ACRO_DOLLARI	acronym
-rad	2	NOUN_ACRO_EE	acronym
-Rahastoyhtiö Seligson & Co	1	PROPN_ACRO_OO	acronym
-rak.	1	PCLE_VAAN	abbreviation
-Rakennusteollisuus RT	1	PROPN_ACRO_EE	acronym
-RAKLI	1	PROPN_ACRO_II	acronym
-rak.mest.	1	PCLE_VAAN	abbreviation
-RAM	1	NOUN_ACRO_ÄKS	acronym
-RAY	1	NOUN_ACRO_YHDISTYS	acronym
-RAY	2	NOUN_ACRO_YY	acronym
-RBC	1	PROPN_ACRO_EE	acronym
-Rbl	1	NOUN_ACRO_ÄKS	acronym
-RBS	1	PROPN_ACRO_ÄKS	acronym
-RD$	1	NOUN_ACRO_DOLLARI	acronym
-RD$	2	NOUN_ACRO_WEBER	acronym
-re	1	NOUN_ACRO_EE	acronym
-Re.	1	PCLE_VAAN	abbreviation
-reht.	1	PCLE_VAAN	abbreviation
-rek.	1	PCLE_VAAN	abbreviation
-rek.nro	1	NOUN_ACRO_JÄRJESTÖ	acronym
-rek.nro	2	NOUN_ACRO_OO	acronym
-rek.tn	1	NOUN_ACRO_METRI	acronym
-rek.tn	2	NOUN_ACRO_ÄKS	acronym
-REM	1	NOUN_ACRO_ÄKS	acronym
-Repsol-YPF	1	PROPN_ACRO_ÄKS	acronym
-res.	1	PCLE_VAAN	abbreviation
-RFSU	1	PROPN_ACRO_UU	acronym
-RHD	1	NOUN_ACRO_EE	acronym
-RHJ	1	PROPN_ACRO_II	acronym
-Rhythm Watch Co	1	PROPN_ACRO_OO	acronym
-RI	1	PROPN_ACRO_II	acronym
-R&I	1	NOUN_ACRO_II	acronym
-RIM	1	PROPN_ACRO_ÄKS	acronym
-rkl	1	NOUN_ACRO_LUSIKKA	acronym
-rkl	2	NOUN_ACRO_ÄKS	acronym
-rkm.	1	PCLE_VAAN	abbreviation
-RKP	1	PROPN_ACRO_EE	acronym
-RKP	2	NOUN_ACRO_TUOTE	acronym
-Rkr	1	NOUN_ACRO_ÄKS	acronym
-RKT	1	NOUN_ACRO_EE	acronym
-RKTL	1	PROPN_ACRO_ÄKS	acronym
-rl	1	NOUN_ACRO_ÄKS	acronym
-RL	1	NOUN_ACRO_Ω	acronym
-RL	2	NOUN_ACRO_ÄKS	acronym
-RM	1	NOUN_ACRO_ÄKS	acronym
-rna	1	NOUN_ACRO_AA	acronym
-RN:o	1	N_RUIPELO	abbreviation
-RO	1	PROPN_ACRO_OO	acronym
-ROL	1	NOUN_ACRO_ÄKS	acronym
-ROM	1	NOUN_ACRO_ÄKS	acronym
-RON	1	NOUN_ACRO_ÄKS	acronym
-RoPS	1	PROPN_ACRO_ÄKS	acronym
-rov.	1	PCLE_VAAN	abbreviation
-rp.	1	PCLE_VAAN	abbreviation
-Rp	1	NOUN_ACRO_EE	acronym
-RP	1	PROPN_ACRO_EE	acronym
-rpl	1	NOUN_ACRO_ÄKS	acronym
-rs	1	NOUN_ACRO_METRI	acronym
-rs	2	NOUN_ACRO_ÄKS	acronym
-r/s	1	NOUN_ACRO_METRI	acronym
-r/s	2	NOUN_ACRO_ÄKS	acronym
-Rs.	1	PCLE_VAAN	abbreviation
-RSA	1	NOUN_ACRO_AA	acronym
-RSD	1	NOUN_ACRO_EE	acronym
-rsi	1	NOUN_ACRO_II	acronym
-RSS	1	NOUN_ACRO_ÄKS	acronym
-R.S.V.P.	1	PCLE_VAAN	abbreviation
-rt	1	NOUN_ACRO_EE	acronym
-RTE	1	PROPN_ACRO_EE	acronym
-rtg	1	NOUN_ACRO_EE	acronym
-rtg.	1	PCLE_VAAN	abbreviation
-RTL	1	PROPN_ACRO_ÄKS	acronym
-RTS	1	PROPN_ACRO_ÄKS	acronym
-RU	1	PROPN_ACRO_UU	acronym
-RUB	1	NOUN_ACRO_EE	acronym
-RUK	1	PROPN_ACRO_OO	acronym
-RUR	1	NOUN_ACRO_ÄKS	acronym
-RUS	1	PROPN_ACRO_ÄKS	acronym
-rva	1	N_VOIMA	abbreviation
-RVL	1	PROPN_ACRO_ÄKS	acronym
-RVLE	1	NOUN_ACRO_EE	acronym
-RWE	1	PROPN_ACRO_EE	acronym
-RWF	1	NOUN_ACRO_ÄKS	acronym
-RWI	1	PROPN_ACRO_II	acronym
-ry	1	NOUN_ACRO_YY	acronym
-ry.	1	PCLE_VAAN	abbreviation
-rykm.	1	PCLE_VAAN	abbreviation
-s	1	NOUN_ACRO_METRI	acronym
-s	2	NOUN_ACRO_ÄKS	acronym
-s.	1	PCLE_VAAN	abbreviation
-s. d.	1	PCLE_VAAN	abbreviation
-S	1	NOUN_ACRO_METRI	acronym
-S	2	NOUN_ACRO_ÄKS	acronym
-S$	1	NOUN_ACRO_DOLLARI	acronym
-S$	2	NOUN_ACRO_WEBER	acronym
-š	1	NOUN_ACRO_ÄKS	acronym
-Š	1	NOUN_ACRO_ÄKS	acronym
-s2	1	NOUN_ACRO_KAKSI	acronym
-s:a	1	PCLE_VAAN	abbreviation
-SA	1	PROPN_ACRO_AA	acronym
-SA	2	NOUN_ACRO_PUNTA	acronym
-Saab Parts GB	1	PROPN_ACRO_EE	acronym
-SAAB	1	PROPN_ACRO_EE	acronym
-SaaS	1	NOUN_ACRO_ÄKS	acronym
-sacr. min. kand.	1	PCLE_VAAN	abbreviation
-SAE	1	PROPN_ACRO_EE	acronym
-SAFA	1	PROPN_ACRO_AA	acronym
-sähköp.	1	PCLE_VAAN	abbreviation
-SAIC	1	PROPN_ACRO_EE	acronym
-sairaanh.op.	1	PCLE_VAAN	abbreviation
-sair.hoit.	1	PCLE_VAAN	abbreviation
-SAJ	1	PROPN_ACRO_II	acronym
-SAK	1	NOUN_ACRO_JÄRJESTÖ	acronym
-SAK	2	PROPN_ACRO_OO	acronym
-S.A.L.I	1	PROPN_ACRO_II	acronym
-SAMOK	1	PROPN_ACRO_OO	acronym
-Santander BR	1	PROPN_ACRO_ÄKS	acronym
-SAP	1	PROPN_ACRO_EE	acronym
-SAR	1	NOUN_ACRO_ÄKS	acronym
-SAS	1	PROPN_ACRO_ÄKS	acronym
-SASK	1	NOUN_ACRO_CELSIUS	acronym
-SASK	2	NOUN_ACRO_OO	acronym
-SatKS	1	PROPN_ACRO_ÄKS	acronym
-SatO	1	PROPN_ACRO_OO	acronym
-SATS	1	PROPN_ACRO_ÄKS	acronym
-SATU	1	PROPN_ACRO_UU	acronym
-säv.	1	PCLE_VAAN	abbreviation
-SavO	1	PROPN_ACRO_OO	acronym
-SBAB	1	PROPN_ACRO_EE	acronym
-SBD	1	NOUN_ACRO_EE	acronym
-SBS	1	PROPN_ACRO_ÄKS	acronym
-SCA	1	PROPN_ACRO_AA	acronym
-SCR	1	NOUN_ACRO_ÄKS	acronym
-s.d.	1	PCLE_VAAN	abbreviation
-sd.	1	PCLE_VAAN	abbreviation
-SDD	1	NOUN_ACRO_EE	acronym
-SDG	1	NOUN_ACRO_EE	acronym
-Sdp	1	PROPN_ACRO_EE	acronym
-Sdp	2	NOUN_ACRO_TUOTE	acronym
-SDP	1	PROPN_ACRO_EE	acronym
-SDP	2	NOUN_ACRO_TUOTE	acronym
-SE	1	NOUN_ACRO_EE	acronym
-SEA	1	PROPN_ACRO_AA	acronym
-Seat24	1	PROPN_ACRO_NELJÄ	acronym
-SEB	1	PROPN_ACRO_EE	acronym
-SEC	1	PROPN_ACRO_EE	acronym
-SEFE	1	PROPN_ACRO_EE	acronym
-SEK	1	NOUN_ACRO_OO	acronym
-SEL	1	PROPN_ACRO_ÄKS	acronym
-Seligson & Co	1	PROPN_ACRO_OO	acronym
-SELMU	1	PROPN_ACRO_UU	acronym
-SEPA	1	NOUN_ACRO_AA	acronym
-SESKO	1	PROPN_ACRO_OO	acronym
-SETA	1	PROPN_ACRO_AA	acronym
-SEV	1	PROPN_ACRO_EE	acronym
-SEY	1	PROPN_ACRO_YY	acronym
-Sf	1	NOUN_ACRO_ÄKS	acronym
-Sfr	1	NOUN_ACRO_ÄKS	acronym
-SFS	1	PROPN_ACRO_ÄKS	acronym
-SGD	1	NOUN_ACRO_EE	acronym
-SGML	1	NOUN_ACRO_ÄKS	acronym
-SGN	1	PROPN_ACRO_ÄKS	acronym
-sh.	1	PCLE_VAAN	abbreviation
-SHH	1	PROPN_ACRO_OO	acronym
-SHO	1	NOUN_ACRO_OO	acronym
-SHP	1	NOUN_ACRO_EE	acronym
-S.H.T.	1	PCLE_VAAN	abbreviation
-SI	1	NOUN_ACRO_II	acronym
-SI$	1	NOUN_ACRO_DOLLARI	acronym
-SI$	2	NOUN_ACRO_WEBER	acronym
-sia	1	NOUN_ACRO_AA	acronym
-SibA	1	PROPN_ACRO_AA	acronym
-SibA	2	NOUN_ACRO_KANDELA	acronym
-sid.	1	PCLE_VAAN	abbreviation
-siht.	1	PCLE_VAAN	abbreviation
-sit.	1	PCLE_VAAN	abbreviation
-SIT	1	NOUN_ACRO_EE	acronym
-SITRA	1	PROPN_ACRO_AA	acronym
-Sk	1	NOUN_ACRO_OO	acronym
-SK	1	NOUN_ACRO_LEHTI	acronym
-SK	2	NOUN_ACRO_Ω	acronym
-SK	3	PROPN_ACRO_OO	acronym
-SKAL	1	PROPN_ACRO_ÄKS	acronym
-SKDL	1	PROPN_ACRO_ÄKS	acronym
-SKK	1	NOUN_ACRO_OO	acronym
-SKL	1	PROPN_ACRO_ÄKS	acronym
-SKOP	1	PROPN_ACRO_EE	acronym
-Skp	1	PROPN_ACRO_EE	acronym
-Skp	2	NOUN_ACRO_TUOTE	acronym
-SKP	1	NOUN_ACRO_TUOTE	acronym
-SKP	2	PROPN_ACRO_EE	acronym
-SKr	1	NOUN_ACRO_ÄKS	acronym
-SKS	1	NOUN_ACRO_GRAMMA	acronym
-SKS	2	PROPN_ACRO_ÄKS	acronym
-SKV	1	PROPN_ACRO_EE	acronym
-sl.	1	PCLE_VAAN	abbreviation
-SL Re	1	NOUN_ACRO_EE	acronym
-SLA	1	NOUN_ACRO_AA	acronym
-SLL	1	NOUN_ACRO_JÄRJESTÖ	acronym
-SLL	2	PROPN_ACRO_ÄKS	acronym
-SLS	1	PROPN_ACRO_ÄKS	acronym
-SLSY	1	PROPN_ACRO_YY	acronym
-SLU	1	PROPN_ACRO_UU	acronym
-SM	1	NOUN_ACRO_WEBER	acronym
-SM	2	NOUN_ACRO_ÄKS	acronym
-SMP	1	NOUN_ACRO_TUOTE	acronym
-SMP	2	PROPN_ACRO_EE	acronym
-SMRT	1	PROPN_ACRO_EE	acronym
-SMS	1	NOUN_ACRO_ÄKS	acronym
-snro	1	N_RUIPELO	abbreviation
-SNS	1	PROPN_ACRO_ÄKS	acronym
-snt	1	NOUN_ACRO_EE	acronym
-snt	2	NOUN_ACRO_METRI	acronym
-SNT	1	NOUN_ACRO_EE	acronym
-SNTL	1	PROPN_ACRO_ÄKS	acronym
-so	1	NOUN_ACRO_OO	acronym
-so.	1	PCLE_VAAN	abbreviation
-So. Sh.	1	PCLE_VAAN	abbreviation
-SOA	1	PROPN_ACRO_AA	acronym
-SOAP	1	NOUN_ACRO_EE	acronym
-SOK	1	NOUN_ACRO_GRAMMA	acronym
-SOK	2	NOUN_ACRO_OO	acronym
-SOOL	1	PROPN_ACRO_ÄKS	acronym
-sora-r	1	NOUN_ACRO_ÄKS	acronym
-sos.	1	PCLE_VAAN	abbreviation
-SOS	1	NOUN_ACRO_ÄKS	acronym
-sos.dem.	1	PCLE_VAAN	abbreviation
-sot.	1	PCLE_VAAN	abbreviation
-sotat.	1	PCLE_VAAN	abbreviation
-SOTE	1	NOUN_ACRO_EE	acronym
-sov.	1	PCLE_VAAN	abbreviation
-sp.	1	PCLE_VAAN	abbreviation
-SP	1	PROPN_ACRO_EE	acronym
-S&P	1	NOUN_ACRO_EE	acronym
-SPAL	1	PROPN_ACRO_ÄKS	acronym
-SPR	1	PROPN_ACRO_ÄKS	acronym
-SQL	1	NOUN_ACRO_ÄKS	acronym
-sr	1	NOUN_ACRO_WEBER	acronym
-sr	2	NOUN_ACRO_ÄKS	acronym
-sr.	1	PCLE_VAAN	abbreviation
-SR	1	NOUN_ACRO_ÄKS	acronym
-SRD	1	NOUN_ACRO_EE	acronym
-SRG	1	NOUN_ACRO_EE	acronym
-srk	1	NOUN_ACRO_GRAMMA	acronym
-srk	2	NOUN_ACRO_OO	acronym
-srk.	1	PCLE_VAAN	abbreviation
-SRl	1	NOUN_ACRO_ÄKS	acronym
-SRMY	1	PROPN_ACRO_YY	acronym
-srnro	1	N_RUIPELO	abbreviation
-SRV	1	PROPN_ACRO_EE	acronym
-SSA	1	NOUN_ACRO_AA	acronym
-SSKH	1	PROPN_ACRO_OO	acronym
-SSP	1	PROPN_ACRO_EE	acronym
-SSSR	1	PROPN_ACRO_ÄKS	acronym
-st.	1	PCLE_VAAN	abbreviation
-ST	1	NOUN_ACRO_EE	acronym
-Stakes	1	PROPN_ACRO_ÄKS	acronym
-START	1	NOUN_ACRO_EE	acronym
-std	1	NOUN_ACRO_EE	acronym
-STD	1	NOUN_ACRO_EE	acronym
-STHL	1	PROPN_ACRO_ÄKS	acronym
-STK	1	PROPN_ACRO_OO	acronym
-stm.	1	PCLE_VAAN	abbreviation
-STM	1	NOUN_ACRO_ÄKS	acronym
-STS	1	PROPN_ACRO_ÄKS	acronym
-STT	1	PROPN_ACRO_EE	acronym
-STT	2	NOUN_ACRO_JÄRJESTÖ	acronym
-STTK	1	PROPN_ACRO_OO	acronym
-STTV	1	PROPN_ACRO_EE	acronym
-STUK	1	PROPN_ACRO_OO	acronym
-STX	1	PROPN_ACRO_ÄKS	acronym
-STX OSV	1	PROPN_ACRO_EE	acronym
-su	1	PCLE_VAAN	abbreviation
-SUB	1	PROPN_ACRO_EE	acronym
-SubTV	1	PROPN_ACRO_EE	acronym
-SUKOL	1	PROPN_ACRO_ÄKS	acronym
-SUL	1	PROPN_ACRO_ÄKS	acronym
-sunn.	1	PCLE_VAAN	abbreviation
-suom.	1	PCLE_VAAN	abbreviation
-Suomen UNICEF	1	PROPN_ACRO_ÄKS	acronym
-Suomi24	1	PROPN_ACRO_NELJÄ	acronym
-Suomi-Soffa SSF	1	PROPN_ACRO_ÄKS	acronym
-SuomiTV	1	PROPN_ACRO_EE	acronym
-SUPO	1	NOUN_ACRO_DOLLARI	acronym
-SUPO	2	NOUN_ACRO_OO	acronym
-SUR	1	NOUN_ACRO_ÄKS	acronym
-SUVA	1	NOUN_ACRO_AA	acronym
-sv	1	NOUN_ACRO_EE	acronym
-s.v.	1	PCLE_VAAN	abbreviation
-Sv	1	NOUN_ACRO_EE	acronym
-Sv	2	NOUN_ACRO_METRI	acronym
-SV	1	NOUN_ACRO_EE	acronym
-SVAL	1	PROPN_ACRO_ÄKS	acronym
-SVC	1	NOUN_ACRO_EE	acronym
-Svenska.nu	1	PROPN_ACRO_UU	acronym
-svh.	1	PCLE_VAAN	abbreviation
-SVL	1	NOUN_ACRO_Ω	acronym
-SVL	2	NOUN_ACRO_ÄKS	acronym
-SVT	1	PROPN_ACRO_EE	acronym
-SVUL	2	PROPN_ACRO_ÄKS	acronym
-SVVK	1	PROPN_ACRO_OO	acronym
-SWE	1	PROPN_ACRO_EE	acronym
-Sweco PM	1	PROPN_ACRO_ÄKS	acronym
-SwF	1	NOUN_ACRO_ÄKS	acronym
-SYKE	1	PROPN_ACRO_EE	acronym
-SYL	1	PROPN_ACRO_ÄKS	acronym
-synt.	1	PCLE_VAAN	abbreviation
-SYP	1	PROPN_ACRO_EE	acronym
-SYTY	1	PROPN_ACRO_YY	acronym
-SZL	1	NOUN_ACRO_ÄKS	acronym
-t	1	NOUN_ACRO_EE	acronym
-t	2	NOUN_ACRO_EE	acronym
-t.	1	PCLE_VAAN	abbreviation
-T	1	NOUN_ACRO_EE	acronym
-T	2	NOUN_ACRO_GRAMMA	acronym
-T Sh	1	NOUN_ACRO_OO	acronym
-T$	1	NOUN_ACRO_DOLLARI	acronym
-T$	2	NOUN_ACRO_WEBER	acronym
-TA	1	NOUN_ACRO_AA	acronym
-T/A	1	NOUN_ACRO_AA	acronym
-TAE	1	NOUN_ACRO_EE	acronym
-TaEL	1	NOUN_ACRO_Ω	acronym
-TaEL	2	NOUN_ACRO_ÄKS	acronym
-tait.	1	PCLE_VAAN	abbreviation
-TaK	1	NOUN_ACRO_Ω	acronym
-TaK	2	NOUN_ACRO_OO	acronym
-TaL	1	NOUN_ACRO_Ω	acronym
-TaL	2	NOUN_ACRO_ÄKS	acronym
-tal.hoit.	1	PCLE_VAAN	abbreviation
-TALK	1	NOUN_ACRO_OO	acronym
-taloust.	1	PCLE_VAAN	abbreviation
-TaM	1	NOUN_ACRO_DOLLARI	acronym
-TaM	2	NOUN_ACRO_ÄKS	acronym
-Tampereen Urheilijat -38	1	PROPN_ACRO_KAHDEKSAN	acronym
-TANE	1	PROPN_ACRO_EE	acronym
-tanssit.	1	PCLE_VAAN	abbreviation
-TAO	1	NOUN_ACRO_OO	acronym
-TAP	1	PROPN_ACRO_EE	acronym
-TAPRI	1	PROPN_ACRO_II	acronym
-tark.	1	PCLE_VAAN	abbreviation
-TASKU	1	PROPN_ACRO_UU	acronym
-TaT	1	NOUN_ACRO_DOLLARI	acronym
-TaT	2	NOUN_ACRO_EE	acronym
-TaY	1	NOUN_ACRO_JÄRJESTÖ	acronym
-TaY	2	PROPN_ACRO_YY	acronym
-TAYS	1	NOUN_ACRO_GRAMMA	acronym
-TAYS	2	PROPN_ACRO_ÄKS	acronym
-tb.	1	PCLE_VAAN	abbreviation
-TB	1	NOUN_ACRO_EE	acronym
-TBq	1	NOUN_ACRO_METRI	acronym
-TBq	2	NOUN_ACRO_UU	acronym
-TBWA	1	PROPN_ACRO_AA	acronym
-TC	1	NOUN_ACRO_EE	acronym
-T°C	1	NOUN_ACRO_CELSIUS	acronym
-T°C	2	NOUN_ACRO_EE	acronym
-Tcd	1	NOUN_ACRO_EE	acronym
-Tcd	2	NOUN_ACRO_KANDELA	acronym
-TCL	1	PROPN_ACRO_ÄKS	acronym
-TCP	1	NOUN_ACRO_EE	acronym
-TCP/IP	1	NOUN_ACRO_EE	acronym
-TDC	1	PROPN_ACRO_EE	acronym
-TDF	1	PROPN_ACRO_ÄKS	acronym
-TE	1	NOUN_ACRO_EE	acronym
-TeaK	1	NOUN_ACRO_OO	acronym
-TEAM	1	PROPN_ACRO_ÄKS	acronym
-teatt.	1	PCLE_VAAN	abbreviation
-TeK	1	NOUN_ACRO_OO	acronym
-TeK	2	NOUN_ACRO_WEBER	acronym
-TEK	1	PROPN_ACRO_OO	acronym
-TEKEL	1	PROPN_ACRO_ÄKS	acronym
-tekn.	1	PCLE_VAAN	abbreviation
-Teknologian tutkimuskeskus VTT	1	PROPN_ACRO_EE	acronym
-TeL	1	NOUN_ACRO_WEBER	acronym
-TeL	2	NOUN_ACRO_ÄKS	acronym
-TEL	1	NOUN_ACRO_Ω	acronym
-TEL	2	NOUN_ACRO_ÄKS	acronym
-TELA	1	PROPN_ACRO_AA	acronym
-Tele2	1	PROPN_ACRO_KAKSI	acronym
-TeM	1	NOUN_ACRO_METRI	acronym
-TeM	2	NOUN_ACRO_ÄKS	acronym
-TEM	1	PROPN_ACRO_ÄKS	acronym
-TEO	1	PROPN_ACRO_OO	acronym
-TEO LT	1	PROPN_ACRO_EE	acronym
-teol.	1	PCLE_VAAN	abbreviation
-teoll.	1	PCLE_VAAN	abbreviation
-terveydenh.	1	PCLE_VAAN	abbreviation
-terveystiet.	1	PCLE_VAAN	abbreviation
-TES	1	NOUN_ACRO_YHDISTYS	acronym
-TES	2	NOUN_ACRO_ÄKS	acronym
-TeT	1	NOUN_ACRO_EE	acronym
-TeT	2	NOUN_ACRO_WEBER	acronym
-TET	1	NOUN_ACRO_EE	acronym
-TEVA	1	NOUN_ACRO_AA	acronym
-TF	1	PROPN_ACRO_METRI	acronym
-TF	2	PROPN_ACRO_ÄKS	acronym
-Tg	1	NOUN_ACRO_EE	acronym
-Tg	2	NOUN_ACRO_GRAMMA	acronym
-TGC-10	1	PROPN_ACRO_NOLLA	acronym
-TGK-5	1	PROPN_ACRO_VIISI	acronym
-TGV	1	NOUN_ACRO_EE	acronym
-TGy	1	NOUN_ACRO_GRAY	acronym
-TGy	2	NOUN_ACRO_YY	acronym
-th.	1	PCLE_VAAN	abbreviation
-TH	1	NOUN_ACRO_METRI	acronym
-TH	2	PROPN_ACRO_OO	acronym
-THB	1	NOUN_ACRO_EE	acronym
-THL	1	PROPN_ACRO_ÄKS	acronym
-THz	1	NOUN_ACRO_METRI	acronym
-THz	2	NOUN_ACRO_ZET	acronym
-ti	1	NOUN_ACRO_II	acronym
-ti	2	PCLE_VAAN	abbreviation
-TI	1	PROPN_ACRO_II	acronym
-TIF	1	NOUN_ACRO_ÄKS	acronym
-TIFF	1	NOUN_ACRO_ÄKS	acronym
-Tiffany & Co	1	PROPN_ACRO_OO	acronym
-tiist.	1	PCLE_VAAN	abbreviation
-TIKE	1	PROPN_ACRO_EE	acronym
-til.	1	PCLE_VAAN	abbreviation
-TIR	1	NOUN_ACRO_ÄKS	acronym
-TIVIT	1	PROPN_ACRO_EE	acronym
-tj.	1	PCLE_VAAN	abbreviation
-TJ	1	NOUN_ACRO_II	acronym
-TJ	2	NOUN_ACRO_JOULE	acronym
-TJR	1	NOUN_ACRO_ÄKS	acronym
-tjs	1	PCLE_VAAN	abbreviation
-tjs.	1	PCLE_VAAN	abbreviation
-TJS	1	NOUN_ACRO_ÄKS	acronym
-tjsp	1	PCLE_VAAN	abbreviation
-t&k	1	NOUN_ACRO_OO	acronym
-tk.	1	PCLE_VAAN	abbreviation
-Tk	1	NOUN_ACRO_OO	acronym
-TK	1	NOUN_ACRO_METRI	acronym
-TK	2	PROPN_ACRO_OO	acronym
-Tkat	1	NOUN_ACRO_EE	acronym
-Tkat	2	NOUN_ACRO_Ω	acronym
-TkK	1	NOUN_ACRO_Ω	acronym
-TkK	2	NOUN_ACRO_OO	acronym
-TKK	1	PROPN_ACRO_OO	acronym
-TkL	1	NOUN_ACRO_Ω	acronym
-TkL	2	NOUN_ACRO_ÄKS	acronym
-TKL	1	PROPN_ACRO_ÄKS	acronym
-Tkr	1	NOUN_ACRO_ÄKS	acronym
-TkT	1	NOUN_ACRO_DOLLARI	acronym
-TkT	2	NOUN_ACRO_EE	acronym
-TKT	1	NOUN_ACRO_EE	acronym
-Tku	1	N_ASU	abbreviation
-tl	1	NOUN_ACRO_ÄKS	acronym
-TL	1	NOUN_ACRO_Ω	acronym
-TL	2	NOUN_ACRO_ÄKS	acronym
-TL	3	NOUN_ACRO_ÄKS	acronym
-TLAB	1	PROPN_ACRO_EE	acronym
-tlk	1	NOUN_ACRO_LUSIKKA	acronym
-tlk	2	NOUN_ACRO_OO	acronym
-tlk.	1	PCLE_VAAN	abbreviation
-Tlm	1	NOUN_ACRO_METRI	acronym
-Tlm	2	NOUN_ACRO_ÄKS	acronym
-Tlx	1	NOUN_ACRO_METRI	acronym
-Tlx	2	NOUN_ACRO_ÄKS	acronym
-tm.	1	PCLE_VAAN	abbreviation
-Tm	1	NOUN_ACRO_METRI	acronym
-Tm	2	NOUN_ACRO_ÄKS	acronym
-TM	1	PROPN_ACRO_DOLLARI	acronym
-TM	2	PROPN_ACRO_ÄKS	acronym
-TMA	1	PROPN_ACRO_AA	acronym
-TMB	1	PROPN_ACRO_EE	acronym
-tmi	1	PCLE_VAAN	abbreviation
-tmk	1	NOUN_ACRO_OO	acronym
-TMK	1	NOUN_ACRO_OO	acronym
-TMM	1	NOUN_ACRO_ÄKS	acronym
-T-Mobile USA	1	PROPN_ACRO_AA	acronym
-Tmol	1	NOUN_ACRO_Ω	acronym
-Tmol	2	NOUN_ACRO_ÄKS	acronym
-tms	1	PCLE_VAAN	abbreviation
-tms.	1	PCLE_VAAN	abbreviation
-TMT	1	NOUN_ACRO_EE	acronym
-tmv	1	PCLE_VAAN	abbreviation
-tmv.	1	PCLE_VAAN	abbreviation
-tn	1	NOUN_ACRO_ÄKS	acronym
-TN	1	NOUN_ACRO_METRI	acronym
-TN	2	NOUN_ACRO_ÄKS	acronym
-TND	1	NOUN_ACRO_EE	acronym
-TNK-BP	1	PROPN_ACRO_EE	acronym
-to	1	PCLE_VAAN	abbreviation
-TOAS	1	PROPN_ACRO_ÄKS	acronym
-toht.	1	PCLE_VAAN	abbreviation
-toim.	1	PCLE_VAAN	abbreviation
-toim.apul.	1	PCLE_VAAN	abbreviation
-toim.joht.	1	PCLE_VAAN	abbreviation
-toim.siht.	1	PCLE_VAAN	abbreviation
-TOKYO	1	PROPN_ACRO_OO	acronym
-TOP	1	NOUN_ACRO_EE	acronym
-TopK	1	PROPN_ACRO_OO	acronym
-Tornion Lentis –88	1	PROPN_ACRO_KAHDEKSAN	acronym
-torst.	1	PCLE_VAAN	abbreviation
-tp.	1	PCLE_VAAN	abbreviation
-TPa	1	NOUN_ACRO_AA	acronym
-TPa	2	NOUN_ACRO_DOLLARI	acronym
-TPE	1	NOUN_ACRO_EE	acronym
-TPG	1	PROPN_ACRO_EE	acronym
-TPK	1	PROPN_ACRO_OO	acronym
-TPS	1	PROPN_ACRO_ÄKS	acronym
-Trad	1	NOUN_ACRO_DOLLARI	acronym
-Trad	2	NOUN_ACRO_EE	acronym
-Tre	1	N_PISTE	abbreviation
-tri	1	N_TYYLI	abbreviation
-TRL	1	NOUN_ACRO_ÄKS	acronym
-TRY	1	NOUN_ACRO_YY	acronym
-ts.	1	PCLE_VAAN	abbreviation
-Ts	1	NOUN_ACRO_METRI	acronym
-Ts	2	NOUN_ACRO_ÄKS	acronym
-TS	1	NOUN_ACRO_METRI	acronym
-TS	2	PROPN_ACRO_ÄKS	acronym
-TSEMPPI	1	PROPN_ACRO_II	acronym
-TSK	1	PROPN_ACRO_OO	acronym
-TSL	1	PROPN_ACRO_ÄKS	acronym
-Tsr	1	NOUN_ACRO_WEBER	acronym
-Tsr	2	NOUN_ACRO_ÄKS	acronym
-tsto	1	N_TALO	abbreviation
-TSv	1	NOUN_ACRO_EE	acronym
-TSv	2	NOUN_ACRO_METRI	acronym
-TT	1	PROPN_ACRO_EE	acronym
-TT	2	NOUN_ACRO_GRAMMA	acronym
-TT$	1	NOUN_ACRO_DOLLARI	acronym
-TT$	2	NOUN_ACRO_WEBER	acronym
-TTD	1	NOUN_ACRO_EE	acronym
-TtK	1	NOUN_ACRO_Ω	acronym
-TtK	2	NOUN_ACRO_OO	acronym
-TTK	1	NOUN_ACRO_Ω	acronym
-TTK	2	PROPN_ACRO_OO	acronym
-TTKK	1	PROPN_ACRO_OO	acronym
-TtL	1	NOUN_ACRO_Ω	acronym
-TtL	2	NOUN_ACRO_ÄKS	acronym
-TTL	1	NOUN_ACRO_Ω	acronym
-TTL	2	PROPN_ACRO_ÄKS	acronym
-TtM	1	NOUN_ACRO_DOLLARI	acronym
-TtM	2	NOUN_ACRO_ÄKS	acronym
-TTM	1	NOUN_ACRO_DOLLARI	acronym
-TTM	2	NOUN_ACRO_ÄKS	acronym
-TTS	1	NOUN_ACRO_ÄKS	acronym
-TtT	1	NOUN_ACRO_EE	acronym
-TtT	2	NOUN_ACRO_WEBER	acronym
-TTT	1	NOUN_ACRO_DOLLARI	acronym
-TTT	2	NOUN_ACRO_EE	acronym
-TTY	1	NOUN_ACRO_JÄRJESTÖ	acronym
-TTY	2	PROPN_ACRO_YY	acronym
-TU	1	PROPN_ACRO_UU	acronym
-Tug	1	NOUN_ACRO_EE	acronym
-TUI	1	PROPN_ACRO_II	acronym
-TUKES	1	PROPN_ACRO_ÄKS	acronym
-TuKKK	1	PROPN_ACRO_OO	acronym
-TUL	1	PROPN_ACRO_ÄKS	acronym
-TULE	1	NOUN_ACRO_EE	acronym
-tuom.	1	PCLE_VAAN	abbreviation
-Turun NMKY	1	PROPN_ACRO_YY	acronym
-tus	1	NOUN_ACRO_ÄKS	acronym
-tv	1	NOUN_ACRO_EE	acronym
-tv	2	NOUN_ACRO_GRAY	acronym
-TV	1	NOUN_ACRO_EE	acronym
-TV	2	NOUN_ACRO_Ω	acronym
-TV1	1	PROPN_ACRO_YKSI	acronym
-TV2	1	PROPN_ACRO_KAKSI	acronym
-TVK	1	PROPN_ACRO_OO	acronym
-TVO	1	PROPN_ACRO_OO	acronym
-tvt	1	NOUN_ACRO_EE	acronym
-tvt	2	NOUN_ACRO_LUSIKKA	acronym
-TW	1	NOUN_ACRO_EE	acronym
-TW	2	NOUN_ACRO_Ω	acronym
-TWb	1	NOUN_ACRO_EE	acronym
-TWb	2	NOUN_ACRO_WEBER	acronym
-TWD	1	NOUN_ACRO_EE	acronym
-ty	1	NOUN_ACRO_YY	acronym
-TY	1	NOUN_ACRO_JÄRJESTÖ	acronym
-TY	2	PROPN_ACRO_YY	acronym
-TYK	1	PROPN_ACRO_OO	acronym
-TYKS	1	NOUN_ACRO_GRAMMA	acronym
-TYKS	2	PROPN_ACRO_ÄKS	acronym
-TYKY	1	NOUN_ACRO_YY	acronym
-TYS	1	PROPN_ACRO_ÄKS	acronym
-TZS	1	NOUN_ACRO_ÄKS	acronym
-TΩ	1	NOUN_ACRO_METRI	acronym
-TΩ	2	NOUN_ACRO_Ω	acronym
-u	1	NOUN_ACRO_UU	acronym
-U	1	NOUN_ACRO_UU	acronym
-U Sh	1	NOUN_ACRO_OO	acronym
-U2	1	PROPN_ACRO_KAKSI	acronym
-U2	2	PROPN_ACRO_KAKSI	acronym
-uä	1	NOUN_ACRO_METRI	acronym
-uä	2	NOUN_ACRO_ÄÄ	acronym
-UAH	1	NOUN_ACRO_OO	acronym
-UAK	1	NOUN_ACRO_OO	acronym
-UAZ	1	PROPN_ACRO_ZET	acronym
-UBS	1	PROPN_ACRO_ÄKS	acronym
-UEF	1	PROPN_ACRO_ÄKS	acronym
-UFO	1	NOUN_ACRO_OO	acronym
-UGS	1	NOUN_ACRO_ÄKS	acronym
-UGX	1	NOUN_ACRO_ÄKS	acronym
-UHT	1	NOUN_ACRO_EE	acronym
-UIL	1	PROPN_ACRO_ÄKS	acronym
-UK	1	NOUN_ACRO_OO	acronym
-ukg	1	NOUN_ACRO_EE	acronym
-UKK	1	NOUN_ACRO_OO	acronym
-ula	1	NOUN_ACRO_AA	acronym
-ULI	1	PROPN_ACRO_II	acronym
-UM	1	NOUN_ACRO_ÄKS	acronym
-UM	2	NOUN_ACRO_ÄKS	acronym
-UMO	1	PROPN_ACRO_OO	acronym
-umts	1	NOUN_ACRO_ÄKS	acronym
-UNCED	1	NOUN_ACRO_EE	acronym
-UNCTAD	1	NOUN_ACRO_EE	acronym
-UNDP	1	NOUN_ACRO_EE	acronym
-UNEP	1	PROPN_ACRO_EE	acronym
-UNESCO	1	PROPN_ACRO_OO	acronym
-UNFPA	1	PROPN_ACRO_AA	acronym
-UNHCR	1	PROPN_ACRO_ÄKS	acronym
-UNICEF	1	PROPN_ACRO_ÄKS	acronym
-UNIDO	1	PROPN_ACRO_OO	acronym
-UNIFIL	1	PROPN_ACRO_ÄKS	acronym
-UNITAR	1	PROPN_ACRO_ÄKS	acronym
-UNU	1	PROPN_ACRO_UU	acronym
-UNU-WIDER	1	PROPN_ACRO_ÄKS	acronym
-UPA	1	NOUN_ACRO_AA	acronym
-UPI	1	PROPN_ACRO_II	acronym
-UPM	1	PROPN_ACRO_ÄKS	acronym
-ups.	1	PCLE_VAAN	abbreviation
-UPS	1	PROPN_ACRO_ÄKS	acronym
-UPU	1	PROPN_ACRO_UU	acronym
-Ur$	1	NOUN_ACRO_DOLLARI	acronym
-UrhoTV	1	PROPN_ACRO_EE	acronym
-URHOtv	1	PROPN_ACRO_EE	acronym
-urk.	1	PCLE_VAAN	abbreviation
-url	1	NOUN_ACRO_ÄKS	acronym
-URL	1	NOUN_ACRO_ÄKS	acronym
-us.	1	PCLE_VAAN	abbreviation
-US$	1	NOUN_ACRO_DOLLARI	acronym
-USA	1	PROPN_ACRO_AA	acronym
-USB	1	NOUN_ACRO_EE	acronym
-USD	1	NOUN_ACRO_EE	acronym
-USD	2	NOUN_ACRO_GRAMMA	acronym
-USN	1	NOUN_ACRO_ÄKS	acronym
-USS	1	NOUN_ACRO_ÄKS	acronym
-UT	1	NOUN_ACRO_EE	acronym
-UTi	1	PROPN_ACRO_II	acronym
-UTVA	1	NOUN_ACRO_AA	acronym
-UudPr	1	PROPN_ACRO_ÄKS	acronym
-uv	1	NOUN_ACRO_DOLLARI	acronym
-uv	2	NOUN_ACRO_EE	acronym
-UVI	1	PROPN_ACRO_II	acronym
-UYI	1	NOUN_ACRO_II	acronym
-UYP	1	NOUN_ACRO_EE	acronym
-UYU	1	NOUN_ACRO_UU	acronym
-UZS	1	NOUN_ACRO_ÄKS	acronym
-v	1	NOUN_ACRO_EE	acronym
-v	2	NOUN_ACRO_VUOSI	acronym
-v.	1	PCLE_VAAN	abbreviation
-V	1	NOUN_ACRO_EE	acronym
-V	2	NOUN_ACRO_Ω	acronym
-va.	1	PCLE_VAAN	abbreviation
-VA	1	NOUN_ACRO_AA	acronym
-vääp.	1	PCLE_VAAN	abbreviation
-VAG	1	PROPN_ACRO_EE	acronym
-VAHO	1	PROPN_ACRO_OO	acronym
-Vaiht.	1	PCLE_VAAN	abbreviation
-VAK	1	PROPN_ACRO_OO	acronym
-VaKK	1	PROPN_ACRO_OO	acronym
-VakO	1	NOUN_ACRO_OO	acronym
-valt.	1	PCLE_VAAN	abbreviation
-valtiot.	1	PCLE_VAAN	abbreviation
-Valvira	1	PROPN_ACRO_AA	acronym
-VAMP	1	PROPN_ACRO_EE	acronym
-VankO	1	NOUN_ACRO_OO	acronym
-vänr.	1	PCLE_VAAN	abbreviation
-var.	1	PCLE_VAAN	abbreviation
-varan.	1	PCLE_VAAN	abbreviation
-varat.	1	PCLE_VAAN	abbreviation
-vas.	1	PCLE_VAAN	abbreviation
-Vas.	1	PCLE_VAAN	abbreviation
-VASEK	1	PROPN_ACRO_OO	acronym
-vast.	1	PCLE_VAAN	abbreviation
-VATT	1	PROPN_ACRO_EE	acronym
-VAV	1	PROPN_ACRO_EE	acronym
-VEB	1	NOUN_ACRO_EE	acronym
-VEF	1	NOUN_ACRO_ÄKS	acronym
-VEL	1	NOUN_ACRO_Ω	acronym
-VEL	2	NOUN_ACRO_ÄKS	acronym
-VELL	1	PROPN_ACRO_ÄKS	acronym
-VEO	1	PROPN_ACRO_OO	acronym
-VES	1	NOUN_ACRO_ÄKS	acronym
-VET	1	PROPN_ACRO_EE	acronym
-VG-62	1	PROPN_ACRO_KAKSI	acronym
-VGA	1	NOUN_ACRO_AA	acronym
-VH	1	PROPN_ACRO_OO	acronym
-VHF	1	NOUN_ACRO_ÄKS	acronym
-VHKK	1	PROPN_ACRO_OO	acronym
-VHL	1	NOUN_ACRO_ÄKS	acronym
-vht	1	PCLE_VAAN	abbreviation
-VHT	1	NOUN_ACRO_EE	acronym
-VI	1	NOUN_ACRO_II	acronym
-Viestintäyhdistys A&O	1	PROPN_ACRO_OO	acronym
-Vihdin Lentopallo-90	1	PROPN_ACRO_NOLLA	acronym
-vihr.	1	PCLE_VAAN	abbreviation
-Vihr.	1	PCLE_VAAN	abbreviation
-VIP	1	NOUN_ACRO_METRI	acronym
-VIP	2	NOUN_ACRO_EE	acronym
-virk.	1	PCLE_VAAN	abbreviation
-VJ	1	NOUN_ACRO_II	acronym
-vk	1	NOUN_ACRO_OO	acronym
-vk.	1	PCLE_VAAN	abbreviation
-VK	1	PROPN_ACRO_OO	acronym
-vkl	2	NOUN_ACRO_ÄKS	acronym
-VKL	1	PROPN_ACRO_ÄKS	acronym
-VKS	1	NOUN_ACRO_ÄKS	acronym
-VKS	2	NOUN_ACRO_ÄKS	acronym
-VKSV	1	PROPN_ACRO_EE	acronym
-VLP	1	PROPN_ACRO_EE	acronym
-vm.	1	PCLE_VAAN	abbreviation
-VM	1	NOUN_ACRO_ÄKS	acronym
-VMP	1	PROPN_ACRO_EE	acronym
-VN	1	PROPN_ACRO_ÄKS	acronym
-VN	2	NOUN_ACRO_ÄKS	acronym
-VND	1	NOUN_ACRO_EE	acronym
-VNK	1	NOUN_ACRO_OO	acronym
-VNN	1	NOUN_ACRO_ÄKS	acronym
-VNp.	1	PCLE_VAAN	abbreviation
-VO	1	NOUN_ACRO_OO	acronym
-V.O.	1	PCLE_VAAN	abbreviation
-Voimaosakeyhtiö SF	1	PROPN_ACRO_ÄKS	acronym
-voim.op.	1	PCLE_VAAN	abbreviation
-Vola.ro Student Adventure SRL	1	PROPN_ACRO_ÄKS	acronym
-Volvo IT	1	PROPN_ACRO_EE	acronym
-VOO	1	PROPN_ACRO_OO	acronym
-Vp.	1	PCLE_VAAN	abbreviation
-vpj	1	NOUN_ACRO_II	acronym
-vpj	2	NOUN_ACRO_PUNTA	acronym
-vpj.	1	PCLE_VAAN	abbreviation
-vpk	1	NOUN_ACRO_OO	acronym
-vpk	2	NOUN_ACRO_PUNTA	acronym
-VPS	1	PROPN_ACRO_ÄKS	acronym
-VR	1	PROPN_ACRO_ÄKS	acronym
-vrk	1	NOUN_ACRO_OO	acronym
-vrk	2	NOUN_ACRO_VUOSI	acronym
-VRK	1	PROPN_ACRO_OO	acronym
-vrt.	1	PCLE_VAAN	abbreviation
-vs	1	PCLE_VAAN	abbreviation
-vs.	1	PCLE_VAAN	abbreviation
-vsk.	1	PCLE_VAAN	abbreviation
-VSO	1	PROPN_ACRO_OO	acronym
-V.S.O.	1	PCLE_VAAN	abbreviation
-V.S.O.P.	1	PCLE_VAAN	abbreviation
-vt	1	NOUN_ACRO_EE	acronym
-vt.	1	PCLE_VAAN	abbreviation
-VT	1	NOUN_ACRO_EE	acronym
-VT	2	NOUN_ACRO_EE	acronym
-VTB	1	PROPN_ACRO_EE	acronym
-VTK	1	NOUN_ACRO_Ω	acronym
-VTK	2	NOUN_ACRO_OO	acronym
-VTL	1	NOUN_ACRO_Ω	acronym
-VTL	2	NOUN_ACRO_ÄKS	acronym
-VTM	1	NOUN_ACRO_DOLLARI	acronym
-VTM	2	PROPN_ACRO_ÄKS	acronym
-VTML	1	PROPN_ACRO_ÄKS	acronym
-VTT	1	NOUN_ACRO_CELSIUS	acronym
-VTT	2	NOUN_ACRO_DOLLARI	acronym
-VTT	3	PROPN_ACRO_EE	acronym
-VTV	1	PROPN_ACRO_EE	acronym
-VTY	1	PROPN_ACRO_YY	acronym
-VUV	1	NOUN_ACRO_EE	acronym
-vv.	1	PCLE_VAAN	abbreviation
-VVO	1	PROPN_ACRO_OO	acronym
-VVR	1	PROPN_ACRO_ÄKS	acronym
-VVV	1	PROPN_ACRO_EE	acronym
-VW	1	PROPN_ACRO_EE	acronym
-VW	2	NOUN_ACRO_WEBER	acronym
-VY	1	PROPN_ACRO_YY	acronym
-VYO	1	NOUN_ACRO_OO	acronym
-w	1	NOUN_ACRO_EE	acronym
-W	1	NOUN_ACRO_EE	acronym
-W	2	NOUN_ACRO_Ω	acronym
-WADA	1	PROPN_ACRO_AA	acronym
-Walt Disney Co	1	PROPN_ACRO_OO	acronym
-WAP	1	NOUN_ACRO_EE	acronym
-Wb	1	NOUN_ACRO_EE	acronym
-Wb	2	NOUN_ACRO_WEBER	acronym
-wc	1	NOUN_ACRO_EE	acronym
-WC	1	NOUN_ACRO_EE	acronym
-WC	2	NOUN_ACRO_METRI	acronym
-WCC	1	PROPN_ACRO_EE	acronym
-WELMU	1	PROPN_ACRO_UU	acronym
-Westend ICT	1	PROPN_ACRO_EE	acronym
-WestLB	1	PROPN_ACRO_EE	acronym
-WEU	1	PROPN_ACRO_UU	acronym
-Wh	1	NOUN_ACRO_OO	acronym
-WHO	1	PROPN_ACRO_OO	acronym
-WIDER	1	PROPN_ACRO_ÄKS	acronym
-Windows 95	1	NOUN_ACRO_VIISI	acronym
-WiO	1	PROPN_ACRO_OO	acronym
-WIPO	1	PROPN_ACRO_OO	acronym
-WLAN	1	NOUN_ACRO_ÄKS	acronym
-WPP	1	PROPN_ACRO_EE	acronym
-WRP	1	PROPN_ACRO_EE	acronym
-Ws	1	NOUN_ACRO_ÄKS	acronym
-WSOY	1	PROPN_ACRO_YY	acronym
-WST	1	NOUN_ACRO_EE	acronym
-WTO	1	PROPN_ACRO_OO	acronym
-WWF	1	PROPN_ACRO_ÄKS	acronym
-www	1	NOUN_ACRO_EE	acronym
-www	2	NOUN_ACRO_METRI	acronym
-WWW	1	NOUN_ACRO_EE	acronym
-WWW	2	NOUN_ACRO_METRI	acronym
-x	1	NOUN_ACRO_ÄKS	acronym
-X	1	NOUN_ACRO_ÄKS	acronym
-XAF	1	NOUN_ACRO_ÄKS	acronym
-XAG	1	NOUN_ACRO_EE	acronym
-XAU	1	NOUN_ACRO_UU	acronym
-XBA	1	NOUN_ACRO_AA	acronym
-XBB	1	NOUN_ACRO_EE	acronym
-XBC	1	NOUN_ACRO_EE	acronym
-XBD	1	NOUN_ACRO_EE	acronym
-XCD	1	NOUN_ACRO_EE	acronym
-XDR	1	NOUN_ACRO_ÄKS	acronym
-XEU	1	NOUN_ACRO_UU	acronym
-XFO	1	NOUN_ACRO_OO	acronym
-XFU	1	NOUN_ACRO_UU	acronym
-XL	1	NOUN_ACRO_ÄKS	acronym
-XML	1	NOUN_ACRO_ÄKS	acronym
-XOF	1	NOUN_ACRO_ÄKS	acronym
-XPD	1	NOUN_ACRO_EE	acronym
-XPF	1	NOUN_ACRO_ÄKS	acronym
-XPT	1	NOUN_ACRO_EE	acronym
-XRE	1	NOUN_ACRO_EE	acronym
-XS	1	NOUN_ACRO_ÄKS	acronym
-XTS	1	NOUN_ACRO_ÄKS	acronym
-XXX	1	NOUN_ACRO_ÄKS	acronym
-y	1	NOUN_ACRO_YY	acronym
-Y	1	NOUN_ACRO_YY	acronym
-Y2K	1	NOUN_ACRO_OO	acronym
-yA	1	NOUN_ACRO_AA	acronym
-yA	2	NOUN_ACRO_DOLLARI	acronym
-YA	1	NOUN_ACRO_AA	acronym
-YA	2	NOUN_ACRO_DOLLARI	acronym
-YAD	1	PROPN_ACRO_EE	acronym
-yBq	1	NOUN_ACRO_METRI	acronym
-yBq	2	NOUN_ACRO_UU	acronym
-YBq	1	NOUN_ACRO_METRI	acronym
-YBq	2	NOUN_ACRO_UU	acronym
-yC	1	NOUN_ACRO_EE	acronym
-yC	2	NOUN_ACRO_METRI	acronym
-y°C	1	NOUN_ACRO_CELSIUS	acronym
-y°C	2	NOUN_ACRO_EE	acronym
-YC	1	NOUN_ACRO_EE	acronym
-YC	2	NOUN_ACRO_METRI	acronym
-Y°C	1	NOUN_ACRO_CELSIUS	acronym
-Y°C	2	NOUN_ACRO_EE	acronym
-ycd	1	NOUN_ACRO_EE	acronym
-ycd	2	NOUN_ACRO_KANDELA	acronym
-Ycd	1	NOUN_ACRO_EE	acronym
-Ycd	2	NOUN_ACRO_KANDELA	acronym
-YDD	1	NOUN_ACRO_EE	acronym
-YEL	1	NOUN_ACRO_Ω	acronym
-YEL	2	NOUN_ACRO_ÄKS	acronym
-YER	1	NOUN_ACRO_ÄKS	acronym
-ye.ups.	1	PCLE_VAAN	abbreviation
-yF	1	NOUN_ACRO_METRI	acronym
-yF	2	NOUN_ACRO_ÄKS	acronym
-YF	1	NOUN_ACRO_METRI	acronym
-YF	2	NOUN_ACRO_ÄKS	acronym
-yg	1	NOUN_ACRO_EE	acronym
-yg	2	NOUN_ACRO_GRAMMA	acronym
-Yg	1	NOUN_ACRO_EE	acronym
-Yg	2	NOUN_ACRO_GRAMMA	acronym
-yGy	1	NOUN_ACRO_GRAY	acronym
-yGy	2	NOUN_ACRO_YY	acronym
-YGy	1	NOUN_ACRO_GRAY	acronym
-YGy	2	NOUN_ACRO_YY	acronym
-yH	1	NOUN_ACRO_METRI	acronym
-yH	2	NOUN_ACRO_OO	acronym
-YH	1	NOUN_ACRO_METRI	acronym
-YH	2	NOUN_ACRO_OO	acronym
-yhd.	1	PCLE_VAAN	abbreviation
-Yhdistys 9	1	PROPN_ACRO_YHDEKSÄN	acronym
-yht.	1	PCLE_VAAN	abbreviation
-yhteiskuntat.	1	PCLE_VAAN	abbreviation
-yHz	1	NOUN_ACRO_METRI	acronym
-yHz	2	NOUN_ACRO_ZET	acronym
-YHz	1	NOUN_ACRO_METRI	acronym
-YHz	2	NOUN_ACRO_ZET	acronym
-YIT	1	PROPN_ACRO_EE	acronym
-yJ	1	NOUN_ACRO_II	acronym
-yJ	2	NOUN_ACRO_JOULE	acronym
-YJ	1	NOUN_ACRO_II	acronym
-YJ	2	NOUN_ACRO_JOULE	acronym
-yK	1	NOUN_ACRO_METRI	acronym
-yK	2	NOUN_ACRO_OO	acronym
-YK	1	NOUN_ACRO_METRI	acronym
-YK	2	PROPN_ACRO_OO	acronym
-ykat	1	NOUN_ACRO_EE	acronym
-ykat	2	NOUN_ACRO_Ω	acronym
-Ykat	1	NOUN_ACRO_EE	acronym
-Ykat	2	NOUN_ACRO_Ω	acronym
-YKI	1	NOUN_ACRO_II	acronym
-yl.	1	PCLE_VAAN	abbreviation
-YL	1	PROPN_ACRO_ÄKS	acronym
-YLE	1	PROPN_ACRO_EE	acronym
-YLE	2	PROPN_ACRO_EE	acronym
-ylik.	1	PCLE_VAAN	abbreviation
-ylil.	1	PCLE_VAAN	abbreviation
-ylim.	1	PCLE_VAAN	abbreviation
-ylimatr.	1	PCLE_VAAN	abbreviation
-yliop.	1	PCLE_VAAN	abbreviation
-yliopp.	1	PCLE_VAAN	abbreviation
-ylip.	1	PCLE_VAAN	abbreviation
-yliv.	1	PCLE_VAAN	abbreviation
-ylm	1	NOUN_ACRO_METRI	acronym
-ylm	2	NOUN_ACRO_ÄKS	acronym
-Ylm	1	NOUN_ACRO_METRI	acronym
-Ylm	2	NOUN_ACRO_ÄKS	acronym
-ylx	1	NOUN_ACRO_METRI	acronym
-ylx	2	NOUN_ACRO_ÄKS	acronym
-Ylx	1	NOUN_ACRO_METRI	acronym
-Ylx	2	NOUN_ACRO_ÄKS	acronym
-ym	1	NOUN_ACRO_METRI	acronym
-ym	2	NOUN_ACRO_ÄKS	acronym
-ym	3	PCLE_VAAN	abbreviation
-ym.	1	PCLE_VAAN	abbreviation
-Ym	1	NOUN_ACRO_METRI	acronym
-Ym	2	NOUN_ACRO_ÄKS	acronym
-YM	1	NOUN_ACRO_ÄKS	acronym
-YMCA	1	PROPN_ACRO_AA	acronym
-ymol	1	NOUN_ACRO_Ω	acronym
-ymol	2	NOUN_ACRO_ÄKS	acronym
-Ymol	1	NOUN_ACRO_Ω	acronym
-Ymol	2	NOUN_ACRO_ÄKS	acronym
-YMP	1	NOUN_ACRO_EE	acronym
-yms	1	PCLE_VAAN	abbreviation
-yms.	1	PCLE_VAAN	abbreviation
-yN	1	NOUN_ACRO_METRI	acronym
-yN	2	NOUN_ACRO_ÄKS	acronym
-YN	1	NOUN_ACRO_METRI	acronym
-YN	2	NOUN_ACRO_ÄKS	acronym
-yo	1	NOUN_ACRO_OO	acronym
-yo	2	NOUN_ACRO_OPPILAS	acronym
-yo.	1	PCLE_VAAN	abbreviation
-yo.merk.	1	PCLE_VAAN	abbreviation
-yp.	1	PCLE_VAAN	abbreviation
-yPa	1	NOUN_ACRO_AA	acronym
-yPa	2	NOUN_ACRO_DOLLARI	acronym
-YPa	1	NOUN_ACRO_AA	acronym
-YPa	2	NOUN_ACRO_DOLLARI	acronym
-YPF	1	PROPN_ACRO_ÄKS	acronym
-yrad	1	NOUN_ACRO_DOLLARI	acronym
-yrad	2	NOUN_ACRO_EE	acronym
-Yrad	1	NOUN_ACRO_DOLLARI	acronym
-Yrad	2	NOUN_ACRO_EE	acronym
-YRl	1	NOUN_ACRO_ÄKS	acronym
-yrnro	1	N_RUIPELO	abbreviation
-ys	1	NOUN_ACRO_METRI	acronym
-ys	2	NOUN_ACRO_ÄKS	acronym
-yS	1	NOUN_ACRO_METRI	acronym
-yS	2	NOUN_ACRO_ÄKS	acronym
-Ys	1	NOUN_ACRO_METRI	acronym
-Ys	2	NOUN_ACRO_ÄKS	acronym
-YS	1	NOUN_ACRO_METRI	acronym
-YS	2	NOUN_ACRO_ÄKS	acronym
-ysr	1	NOUN_ACRO_WEBER	acronym
-ysr	2	NOUN_ACRO_ÄKS	acronym
-Ysr	1	NOUN_ACRO_WEBER	acronym
-Ysr	2	NOUN_ACRO_ÄKS	acronym
-ySv	1	NOUN_ACRO_EE	acronym
-ySv	2	NOUN_ACRO_METRI	acronym
-YSv	1	NOUN_ACRO_EE	acronym
-YSv	2	NOUN_ACRO_METRI	acronym
-yt	1	NOUN_ACRO_EE	acronym
-yT	1	NOUN_ACRO_EE	acronym
-yT	2	NOUN_ACRO_GRAMMA	acronym
-YT	1	PROPN_ACRO_EE	acronym
-YT	2	NOUN_ACRO_OK	acronym
-YTE	1	NOUN_ACRO_EE	acronym
-YTJ	1	NOUN_ACRO_II	acronym
-YTK	1	NOUN_ACRO_Ω	acronym
-YTK	2	NOUN_ACRO_OO	acronym
-YTL	1	NOUN_ACRO_Ω	acronym
-YTL	2	NOUN_ACRO_ÄKS	acronym
-YTL	3	NOUN_ACRO_ÄKS	acronym
-YTM	1	NOUN_ACRO_DOLLARI	acronym
-YTM	2	NOUN_ACRO_ÄKS	acronym
-YTN	1	PROPN_ACRO_ÄKS	acronym
-YTT	1	NOUN_ACRO_DOLLARI	acronym
-YTT	2	NOUN_ACRO_EE	acronym
-YTV	1	PROPN_ACRO_EE	acronym
-YUD	1	NOUN_ACRO_EE	acronym
-YUM	1	NOUN_ACRO_ÄKS	acronym
-YUN	1	NOUN_ACRO_ÄKS	acronym
-YUR	1	NOUN_ACRO_ÄKS	acronym
-YUTP	1	NOUN_ACRO_EE	acronym
-yv.	1	PCLE_VAAN	abbreviation
-yV	1	NOUN_ACRO_EE	acronym
-yV	2	NOUN_ACRO_Ω	acronym
-YV	1	NOUN_ACRO_EE	acronym
-YV	2	NOUN_ACRO_Ω	acronym
-YVA	1	NOUN_ACRO_AA	acronym
-yW	1	NOUN_ACRO_EE	acronym
-yW	2	NOUN_ACRO_Ω	acronym
-YW	1	NOUN_ACRO_EE	acronym
-YW	2	NOUN_ACRO_Ω	acronym
-yWb	1	NOUN_ACRO_EE	acronym
-yWb	2	NOUN_ACRO_WEBER	acronym
-YWb	1	NOUN_ACRO_EE	acronym
-YWb	2	NOUN_ACRO_WEBER	acronym
-YYA	1	NOUN_ACRO_AA	acronym
-yΩ	1	NOUN_ACRO_METRI	acronym
-yΩ	2	NOUN_ACRO_Ω	acronym
-YΩ	1	NOUN_ACRO_METRI	acronym
-YΩ	2	NOUN_ACRO_Ω	acronym
-z	1	NOUN_ACRO_ZET	acronym
-Z	1	NOUN_ACRO_ZET	acronym
-Z$	1	NOUN_ACRO_DOLLARI	acronym
-Z$	2	NOUN_ACRO_WEBER	acronym
-ž	1	NOUN_ACRO_ÄKS	acronym
-Ž	1	NOUN_ACRO_ÄKS	acronym
-zA	1	NOUN_ACRO_AA	acronym
-zA	2	NOUN_ACRO_DOLLARI	acronym
-ZA	1	NOUN_ACRO_AA	acronym
-ZA	2	NOUN_ACRO_DOLLARI	acronym
-ZAL	1	NOUN_ACRO_ÄKS	acronym
-ZAR	1	NOUN_ACRO_ÄKS	acronym
-ZBD	1	PROPN_ACRO_EE	acronym
-zBq	1	NOUN_ACRO_METRI	acronym
-zBq	2	NOUN_ACRO_UU	acronym
-ZBq	1	NOUN_ACRO_METRI	acronym
-ZBq	2	NOUN_ACRO_UU	acronym
-zC	1	NOUN_ACRO_EE	acronym
-zC	2	NOUN_ACRO_METRI	acronym
-z°C	1	NOUN_ACRO_CELSIUS	acronym
-z°C	2	NOUN_ACRO_EE	acronym
-ZC	1	NOUN_ACRO_EE	acronym
-ZC	2	NOUN_ACRO_METRI	acronym
-Z°C	1	NOUN_ACRO_CELSIUS	acronym
-Z°C	2	NOUN_ACRO_EE	acronym
-zcd	1	NOUN_ACRO_EE	acronym
-zcd	2	NOUN_ACRO_KANDELA	acronym
-Zcd	1	NOUN_ACRO_EE	acronym
-Zcd	2	NOUN_ACRO_KANDELA	acronym
-ZDF	1	PROPN_ACRO_ÄKS	acronym
-zF	1	NOUN_ACRO_METRI	acronym
-zF	2	NOUN_ACRO_ÄKS	acronym
-ZF	1	NOUN_ACRO_METRI	acronym
-ZF	2	NOUN_ACRO_ÄKS	acronym
-zg	1	NOUN_ACRO_EE	acronym
-zg	2	NOUN_ACRO_GRAMMA	acronym
-Zg	1	NOUN_ACRO_EE	acronym
-Zg	2	NOUN_ACRO_GRAMMA	acronym
-zGy	1	NOUN_ACRO_GRAY	acronym
-zGy	2	NOUN_ACRO_YY	acronym
-ZGy	1	NOUN_ACRO_GRAY	acronym
-ZGy	2	NOUN_ACRO_YY	acronym
-zH	1	NOUN_ACRO_METRI	acronym
-zH	2	NOUN_ACRO_OO	acronym
-ZH	1	NOUN_ACRO_METRI	acronym
-ZH	2	NOUN_ACRO_OO	acronym
-zHz	1	NOUN_ACRO_METRI	acronym
-zHz	2	NOUN_ACRO_ZET	acronym
-ZHz	1	NOUN_ACRO_METRI	acronym
-ZHz	2	NOUN_ACRO_ZET	acronym
-zJ	1	NOUN_ACRO_II	acronym
-zJ	2	NOUN_ACRO_JOULE	acronym
-ZJ	1	NOUN_ACRO_II	acronym
-ZJ	2	NOUN_ACRO_JOULE	acronym
-zK	1	NOUN_ACRO_METRI	acronym
-zK	2	NOUN_ACRO_OO	acronym
-ZK	1	NOUN_ACRO_METRI	acronym
-ZK	2	NOUN_ACRO_OO	acronym
-zkat	1	NOUN_ACRO_EE	acronym
-zkat	2	NOUN_ACRO_Ω	acronym
-Zkat	1	NOUN_ACRO_EE	acronym
-Zkat	2	NOUN_ACRO_Ω	acronym
-Zl	1	NOUN_ACRO_ÄKS	acronym
-zlm	1	NOUN_ACRO_METRI	acronym
-zlm	2	NOUN_ACRO_ÄKS	acronym
-Zlm	1	NOUN_ACRO_METRI	acronym
-Zlm	2	NOUN_ACRO_ÄKS	acronym
-zlx	1	NOUN_ACRO_METRI	acronym
-zlx	2	NOUN_ACRO_ÄKS	acronym
-Zlx	1	NOUN_ACRO_METRI	acronym
-Zlx	2	NOUN_ACRO_ÄKS	acronym
-zm	1	NOUN_ACRO_METRI	acronym
-zm	2	NOUN_ACRO_ÄKS	acronym
-Zm	1	NOUN_ACRO_METRI	acronym
-Zm	2	NOUN_ACRO_ÄKS	acronym
-ZMK	1	NOUN_ACRO_OO	acronym
-zmol	1	NOUN_ACRO_Ω	acronym
-zmol	2	NOUN_ACRO_ÄKS	acronym
-Zmol	1	NOUN_ACRO_Ω	acronym
-Zmol	2	NOUN_ACRO_ÄKS	acronym
-ZMW	1	NOUN_ACRO_EE	acronym
-zN	1	NOUN_ACRO_METRI	acronym
-zN	2	NOUN_ACRO_ÄKS	acronym
-ZN	1	NOUN_ACRO_METRI	acronym
-ZN	2	NOUN_ACRO_ÄKS	acronym
-zPa	1	NOUN_ACRO_AA	acronym
-zPa	2	NOUN_ACRO_DOLLARI	acronym
-ZPa	1	NOUN_ACRO_AA	acronym
-ZPa	2	NOUN_ACRO_DOLLARI	acronym
-zrad	1	NOUN_ACRO_DOLLARI	acronym
-zrad	2	NOUN_ACRO_EE	acronym
-Zrad	1	NOUN_ACRO_DOLLARI	acronym
-Zrad	2	NOUN_ACRO_EE	acronym
-ZRN	1	NOUN_ACRO_ÄKS	acronym
-ZRZ	1	NOUN_ACRO_ZET	acronym
-zs	1	NOUN_ACRO_METRI	acronym
-zs	2	NOUN_ACRO_ÄKS	acronym
-zS	1	NOUN_ACRO_METRI	acronym
-zS	2	NOUN_ACRO_ÄKS	acronym
-Zs	1	NOUN_ACRO_METRI	acronym
-Zs	2	NOUN_ACRO_ÄKS	acronym
-ZS	1	NOUN_ACRO_METRI	acronym
-ZS	2	NOUN_ACRO_ÄKS	acronym
-zsr	1	NOUN_ACRO_WEBER	acronym
-zsr	2	NOUN_ACRO_ÄKS	acronym
-Zsr	1	NOUN_ACRO_WEBER	acronym
-Zsr	2	NOUN_ACRO_ÄKS	acronym
-zSv	1	NOUN_ACRO_EE	acronym
-zSv	2	NOUN_ACRO_METRI	acronym
-ZSv	1	NOUN_ACRO_EE	acronym
-ZSv	2	NOUN_ACRO_METRI	acronym
-zT	1	NOUN_ACRO_EE	acronym
-zT	2	NOUN_ACRO_GRAMMA	acronym
-ZT	1	NOUN_ACRO_EE	acronym
-ZT	2	NOUN_ACRO_GRAMMA	acronym
-ZTE	1	PROPN_ACRO_EE	acronym
-zV	1	NOUN_ACRO_EE	acronym
-zV	2	NOUN_ACRO_Ω	acronym
-ZV	1	NOUN_ACRO_EE	acronym
-ZV	2	NOUN_ACRO_Ω	acronym
-zW	1	NOUN_ACRO_EE	acronym
-zW	2	NOUN_ACRO_Ω	acronym
-ZW	1	NOUN_ACRO_EE	acronym
-ZW	2	NOUN_ACRO_Ω	acronym
-zWb	1	NOUN_ACRO_EE	acronym
-zWb	2	NOUN_ACRO_WEBER	acronym
-ZWb	1	NOUN_ACRO_EE	acronym
-ZWb	2	NOUN_ACRO_WEBER	acronym
-ZWD	1	NOUN_ACRO_EE	acronym
-ZWL	1	NOUN_ACRO_ÄKS	acronym
-ZWR	1	NOUN_ACRO_ÄKS	acronym
-zΩ	1	NOUN_ACRO_METRI	acronym
-zΩ	2	NOUN_ACRO_Ω	acronym
-ZΩ	1	NOUN_ACRO_METRI	acronym
-ZΩ	2	NOUN_ACRO_Ω	acronym
-μA	1	NOUN_ACRO_AA	acronym
-μA	2	NOUN_ACRO_DOLLARI	acronym
-μBq	1	NOUN_ACRO_METRI	acronym
-μBq	2	NOUN_ACRO_UU	acronym
-μC	1	NOUN_ACRO_EE	acronym
-μC	2	NOUN_ACRO_METRI	acronym
-μ°C	1	NOUN_ACRO_CELSIUS	acronym
-μ°C	2	NOUN_ACRO_EE	acronym
-μcd	1	NOUN_ACRO_EE	acronym
-μcd	2	NOUN_ACRO_KANDELA	acronym
-μF	1	NOUN_ACRO_METRI	acronym
-μF	2	NOUN_ACRO_ÄKS	acronym
-μg	1	NOUN_ACRO_EE	acronym
-μg	2	NOUN_ACRO_GRAMMA	acronym
-μGy	1	NOUN_ACRO_GRAY	acronym
-μGy	2	NOUN_ACRO_YY	acronym
-μH	1	NOUN_ACRO_METRI	acronym
-μH	2	NOUN_ACRO_OO	acronym
-μHz	1	NOUN_ACRO_METRI	acronym
-μHz	2	NOUN_ACRO_ZET	acronym
-μJ	1	NOUN_ACRO_II	acronym
-μJ	2	NOUN_ACRO_JOULE	acronym
-μK	1	NOUN_ACRO_METRI	acronym
-μK	2	NOUN_ACRO_OO	acronym
-μkat	1	NOUN_ACRO_EE	acronym
-μkat	2	NOUN_ACRO_Ω	acronym
-μlm	1	NOUN_ACRO_METRI	acronym
-μlm	2	NOUN_ACRO_ÄKS	acronym
-μlx	1	NOUN_ACRO_METRI	acronym
-μlx	2	NOUN_ACRO_ÄKS	acronym
-μm	1	NOUN_ACRO_METRI	acronym
-μm	2	NOUN_ACRO_ÄKS	acronym
-μmol	1	NOUN_ACRO_Ω	acronym
-μmol	2	NOUN_ACRO_ÄKS	acronym
-μN	1	NOUN_ACRO_METRI	acronym
-μN	2	NOUN_ACRO_ÄKS	acronym
-μPa	1	NOUN_ACRO_AA	acronym
-μPa	2	NOUN_ACRO_DOLLARI	acronym
-μrad	1	NOUN_ACRO_DOLLARI	acronym
-μrad	2	NOUN_ACRO_EE	acronym
-μs	1	NOUN_ACRO_METRI	acronym
-μs	2	NOUN_ACRO_ÄKS	acronym
-μS	1	NOUN_ACRO_METRI	acronym
-μS	2	NOUN_ACRO_ÄKS	acronym
-μsr	1	NOUN_ACRO_WEBER	acronym
-μsr	2	NOUN_ACRO_ÄKS	acronym
-μSv	1	NOUN_ACRO_EE	acronym
-μSv	2	NOUN_ACRO_METRI	acronym
-μT	1	NOUN_ACRO_EE	acronym
-μT	2	NOUN_ACRO_GRAMMA	acronym
-μV	1	NOUN_ACRO_EE	acronym
-μV	2	NOUN_ACRO_Ω	acronym
-μW	1	NOUN_ACRO_EE	acronym
-μW	2	NOUN_ACRO_Ω	acronym
-μWb	1	NOUN_ACRO_EE	acronym
-μWb	2	NOUN_ACRO_WEBER	acronym
-μΩ	1	NOUN_ACRO_METRI	acronym
-μΩ	2	NOUN_ACRO_Ω	acronym
-Ω	1	NOUN_ACRO_METRI	acronym
-Ω	2	NOUN_ACRO_Ω	acronym
+lemma	homonym	abbr
+/	1	abbreviation
+&	1	abbreviation
++	2	abbreviation
+3 Step IT	1	acronym
+358	1	acronym
+4F	1	acronym
+a	1	acronym
+A	1	acronym
+A	2	acronym
+$A	1	acronym
+$A	2	acronym
+å	1	acronym
+å	2	acronym
+Å	1	acronym
+Å	2	acronym
+ä	1	acronym
+Ä	1	acronym
+A0	1	acronym
+A1	1	acronym
+A2	1	acronym
+A3	1	acronym
+A4	1	acronym
+A5	1	acronym
+aA	1	acronym
+aA	2	acronym
+AA	1	acronym
+AA	2	acronym
+ÅA	1	acronym
+ÅA	2	acronym
+AAL	1	acronym
+AAP	1	acronym
+AAP	2	acronym
+ab	1	acronym
+ab	2	acronym
+ab	3	abbreviation
+Ab	1	abbreviation
+ABB	1	acronym
+ABC	1	acronym
+ABN AMRO	1	acronym
+abp	1	acronym
+aBq	1	acronym
+aBq	2	acronym
+ABS	1	acronym
+aC	1	acronym
+aC	2	acronym
+a°C	1	acronym
+a°C	2	acronym
+AC	1	acronym
+acd	1	acronym
+acd	2	acronym
+AC/DC	1	acronym
+ad	1	acronym
+ad	2	acronym
+ADAC	1	acronym
+adhd	1	acronym
+adhd	2	acronym
+ADP	1	acronym
+ADSL	1	acronym
+ADSL	2	acronym
+ADT	1	acronym
+AdultTV	1	acronym
+AED	1	acronym
+AEGEE	1	acronym
+AEK	1	acronym
+aF	1	acronym
+aF	2	acronym
+Af	1	acronym
+AFA	1	acronym
+AFN	1	acronym
+AFP	1	acronym
+AFP	2	acronym
+AFS	1	acronym
+AFTA	1	acronym
+ag	1	acronym
+ag	2	acronym
+AG	1	acronym
+AGEA	1	acronym
+AGEA	2	acronym
+agrol.	1	abbreviation
+agron.	1	abbreviation
+aGy	1	acronym
+aGy	2	acronym
+aH	1	acronym
+aH	2	acronym
+Ah	1	acronym
+AHKA	1	acronym
+aHz	1	acronym
+aHz	2	acronym
+ÄI	1	acronym
+AIA	1	acronym
+AICA	1	acronym
+aids	1	acronym
+AIECE	1	acronym
+AIESEC	1	acronym
+AIG	1	acronym
+aik.	1	abbreviation
+Air France-KLM	1	acronym
+Air100	1	acronym
+Airbnb	1	acronym
+AIV	1	acronym
+aJ	1	acronym
+aJ	2	acronym
+aK	1	acronym
+aK	2	acronym
+akat	1	acronym
+akat	2	acronym
+akat.	1	abbreviation
+AKAVA	1	acronym
+AKE	1	acronym
+AKL	1	acronym
+AKS	1	acronym
+AKT	1	acronym
+ÄKT	1	acronym
+al.	1	abbreviation
+AL	1	acronym
+AL	3	acronym
+ALBA	1	acronym
+Aleksi 13	1	acronym
+alik.	1	abbreviation
+alil.	1	abbreviation
+alk.	1	abbreviation
+ALK	1	acronym
+ALL	1	acronym
+alm	1	acronym
+alm	2	acronym
+ALS	1	acronym
+alv	1	acronym
+alv.	1	abbreviation
+alx	1	acronym
+alx	2	acronym
+am	1	acronym
+am	2	acronym
+a.m.	1	abbreviation
+AM	1	acronym
+AMD	1	acronym
+AMD	2	acronym
+amir.	1	abbreviation
+amk	1	acronym
+amol	1	acronym
+amol	2	acronym
+AMR	1	acronym
+aN	1	acronym
+aN	2	acronym
+ÅN	1	acronym
+Analyse2	1	acronym
+ANC	1	acronym
+ANG	1	acronym
+anon.	1	abbreviation
+ANP	1	acronym
+ANP	2	acronym
+ANSI	1	acronym
+ANSI	2	acronym
+ANWR	1	acronym
+ao.	1	abbreviation
+AO	1	acronym
+AO	2	acronym
+äo	1	acronym
+äo	2	acronym
+ÄO	1	acronym
+ÄO	2	acronym
+AOA	1	acronym
+AOA	2	acronym
+AOK	1	acronym
+AOL	1	acronym
+ÄOL	2	acronym
+AON	1	acronym
+AOR	1	acronym
+AOR	2	acronym
+AOVA	1	acronym
+ap.	1	abbreviation
+AP	1	acronym
+AP	2	acronym
+aPa	1	acronym
+aPa	2	acronym
+APEC	1	acronym
+API	1	acronym
+API	2	acronym
+apul.	1	abbreviation
+apul.prof.	1	abbreviation
+ARA	1	acronym
+arad	1	acronym
+arad	2	acronym
+ARENE	1	acronym
+Arg$	1	acronym
+ark	1	acronym
+ark.	1	abbreviation
+ARK	1	acronym
+arkkit.	1	abbreviation
+ARL	1	acronym
+ARM	1	acronym
+ARP	1	acronym
+ARS	1	acronym
+art.	1	abbreviation
+arv.	1	abbreviation
+as	1	acronym
+as	2	acronym
+as.	1	abbreviation
+aS	1	acronym
+aS	2	acronym
+AS	1	acronym
+A/S	1	acronym
+ASA	1	acronym
+ascii	1	acronym
+ascii	2	acronym
+ASEAN	1	acronym
+ASEAN+3	1	acronym
+ASEM	1	acronym
+as.oy	1	acronym
+as.oy	2	acronym
+as.oy.	1	abbreviation
+AsOYL	1	acronym
+AsOYL	2	acronym
+ASP	1	acronym
+asr	1	acronym
+asr	2	acronym
+ass.	1	abbreviation
+assist.	1	abbreviation
+aSv	1	acronym
+aSv	2	acronym
+ASX	1	acronym
+at	1	abbreviation
+aT	1	acronym
+aT	2	acronym
+A&T	1	acronym
+atk	1	acronym
+atk	2	acronym
+ATL	1	acronym
+atm	1	acronym
+ATS	1	acronym
+AT&T	1	acronym
+ATTAC	1	acronym
+au.	1	abbreviation
+AU	1	acronym
+AU$	1	acronym
+AUD	1	acronym
+AUD	2	acronym
+AUK	1	acronym
+AUK	2	acronym
+ausk.	1	abbreviation
+av	1	acronym
+av	2	acronym
+aV	1	acronym
+aV	2	acronym
+AVEA	1	acronym
+AVI	1	acronym
+aW	1	acronym
+aW	2	acronym
+aWb	1	acronym
+aWb	2	acronym
+AWG	1	acronym
+ay	1	acronym
+ay	2	acronym
+ay.	1	abbreviation
+AYO	1	acronym
+AZM	1	acronym
+AZN	1	acronym
+aΩ	1	acronym
+b	1	acronym
+B	1	acronym
+B	2	acronym
+B & B	1	acronym
+B9	1	acronym
+BA	1	acronym
+B.A.	1	abbreviation
+BAA	1	acronym
+BAD	1	acronym
+BAE	1	acronym
+BAIC	1	acronym
+BAM	1	acronym
+BAN	1	acronym
+Banco BPI	1	acronym
+Bank Zadhodni WBK	1	acronym
+bar	2	abbreviation
+BASF	1	acronym
+BATS	1	acronym
+BayernLB	1	acronym
+B&B	1	acronym
+B&B	2	acronym
+BBC	1	acronym
+BBC	2	acronym
+BBD	1	acronym
+BB&T	1	acronym
+BBVA	1	acronym
+BD	1	acronym
+BD	2	acronym
+BDS$	1	acronym
+BDS$	2	acronym
+BDT	1	acronym
+Be	1	acronym
+BE	1	acronym
+BEA	1	acronym
+BEA	2	acronym
+BEC	1	acronym
+BEF	1	acronym
+BEL	1	acronym
+Ber$	1	acronym
+Ber$	2	acronym
+BF	1	acronym
+BGL	1	acronym
+BGM	1	acronym
+BGN	1	acronym
+BGO	1	acronym
+BHD	1	acronym
+BHP	1	acronym
+BIF	1	acronym
+BIS	1	acronym
+BKK	1	acronym
+bkt	1	acronym
+bkt	2	acronym
+BKT	1	acronym
+BKT	2	acronym
+bktl	1	acronym
+Blue1	1	acronym
+BMD	1	acronym
+BMI	1	acronym
+BMW	1	acronym
+BMWi	1	acronym
+BND	1	acronym
+BOA	1	acronym
+B.o.B	1	acronym
+BOB	1	acronym
+BOJ	1	acronym
+BOL	1	acronym
+BOP	1	acronym
+BOV	1	acronym
+BP	1	acronym
+Bq	1	acronym
+Bq	2	acronym
+br.	1	abbreviation
+Br	1	acronym
+BRB	1	acronym
+BRC	1	acronym
+BRE	1	acronym
+BRL	1	acronym
+BRN	1	acronym
+BRR	1	acronym
+brt	1	acronym
+BRZ	1	acronym
+Bs	1	acronym
+B.S.	1	abbreviation
+BSc	1	acronym
+BSc	2	acronym
+B.Sc.	1	abbreviation
+BSD	1	acronym
+BSE	1	acronym
+BSkyB	1	acronym
+BT	1	acronym
+BTIG	1	acronym
+BTN	1	acronym
+BUK	1	acronym
+Bureau ICE	1	acronym
+BWP	1	acronym
+BYB	1	acronym
+BYD	1	acronym
+BYR	1	acronym
+BZ$	1	acronym
+BZ$	2	acronym
+BZA	1	acronym
+BZD	1	acronym
+c	1	acronym
+c	2	acronym
+C	1	acronym
+C	2	acronym
+£C	1	acronym
+£C	2	acronym
+ca	1	abbreviation
+c:a	1	abbreviation
+cA	1	acronym
+cA	2	acronym
+C&A	1	acronym
+CA$	1	acronym
+CAD	1	acronym
+CAF	1	acronym
+cal	1	acronym
+cal	2	acronym
+Call99577	1	acronym
+CAM	1	acronym
+Can$	1	acronym
+Canal+	1	acronym
+Carl’s Jr	1	acronym
+CAT	1	acronym
+cBq	1	acronym
+cBq	2	acronym
+CBS	1	acronym
+cc	1	acronym
+cc	2	acronym
+cC	1	acronym
+cC	2	acronym
+c°C	1	acronym
+c°C	2	acronym
+CCCP	1	acronym
+ccd	1	acronym
+ccd	2	acronym
+cd	1	acronym
+cd	2	acronym
+CD	1	acronym
+CD	2	acronym
+CDF	1	acronym
+cdma	1	acronym
+CD-R	1	acronym
+CD-R	2	acronym
+CD-ROM	1	acronym
+CD-ROM	2	acronym
+CD-RW	1	acronym
+CD-RW	2	acronym
+CE	1	acronym
+CEA	1	acronym
+CECA	1	acronym
+CECA	2	acronym
+CEFTA	1	acronym
+CEN	1	acronym
+CENTO	1	acronym
+CEP	1	acronym
+CEPS	1	acronym
+CERN	1	acronym
+CEVA/EGL	1	acronym
+cf.	1	abbreviation
+cF	1	acronym
+cF	2	acronym
+CF	1	acronym
+CFPF	1	acronym
+cg	1	acronym
+cg	2	acronym
+CGI	1	acronym
+cGy	1	acronym
+cGy	2	acronym
+cH	1	acronym
+cH	2	acronym
+Ch$	1	acronym
+Ch$	2	acronym
+CHE	1	acronym
+CHF	1	acronym
+CHW	1	acronym
+cHz	1	acronym
+cHz	2	acronym
+CIA	1	acronym
+CIA	2	acronym
+CICA	1	acronym
+CIE	1	acronym
+CIHEC	1	acronym
+CIMO	1	acronym
+CINT	1	acronym
+CIOFF	1	acronym
+CIPD	1	acronym
+CISV	1	acronym
+CIT	1	acronym
+cJ	1	acronym
+cJ	2	acronym
+cK	1	acronym
+cK	2	acronym
+ckat	1	acronym
+ckat	2	acronym
+cl	1	acronym
+cl	2	acronym
+Cl	1	acronym
+Cl	2	acronym
+CLE	1	acronym
+CLF	1	acronym
+clm	1	acronym
+clm	2	acronym
+CLP	1	acronym
+clx	1	acronym
+clx	2	acronym
+cm	1	acronym
+cm	2	acronym
+CMA CGM	1	acronym
+cmol	1	acronym
+cmol	2	acronym
+cN	1	acronym
+cN	2	acronym
+CN	1	acronym
+CNBC	1	acronym
+CNN	1	acronym
+CNN	2	acronym
+CNPC	1	acronym
+CNS	1	acronym
+CNX	1	acronym
+CNY	1	acronym
+c/o	1	abbreviation
+Co	1	acronym
+Co	2	acronym
+Co.	1	abbreviation
+CO	1	acronym
+COD	1	acronym
+Col$	1	acronym
+Commerce Guys S.A.S	1	acronym
+COMP	1	acronym
+COP	1	acronym
+Corp	1	acronym
+Corp	2	acronym
+Corp.	1	abbreviation
+COU	1	acronym
+cp	1	acronym
+cPa	1	acronym
+cPa	2	acronym
+CPM	1	acronym
+CPW	1	acronym
+CR	1	acronym
+CRA	1	acronym
+crad	1	acronym
+crad	2	acronym
+CRC	1	acronym
+CRC	2	acronym
+CRH	1	acronym
+cs	1	acronym
+cs	2	acronym
+cS	1	acronym
+cS	2	acronym
+CSA	1	acronym
+CSD	1	acronym
+CSK	1	acronym
+csr	1	acronym
+csr	2	acronym
+CSR	1	acronym
+cSv	1	acronym
+cSv	2	acronym
+cT	1	acronym
+cT	2	acronym
+CT	1	acronym
+CT	2	acronym
+CTIA	1	acronym
+Cu	1	acronym
+CUC	1	acronym
+CUP	1	acronym
+cv	1	acronym
+cv	2	acronym
+cV	1	acronym
+cV	2	acronym
+CV	1	acronym
+CV	2	acronym
+CVE	1	acronym
+CVEsc	1	acronym
+cW	1	acronym
+cW	2	acronym
+cWb	1	acronym
+cWb	2	acronym
+CYP	1	acronym
+CZ	1	acronym
+CZK	1	acronym
+cΩ	1	acronym
+cΩ	2	acronym
+d	1	acronym
+d	2	acronym
+dA	1	acronym
+dA	2	acronym
+DA	1	acronym
+DA	2	acronym
+daA	1	acronym
+daA	2	acronym
+DAB	1	acronym
+daBq	1	acronym
+daBq	2	acronym
+daC	1	acronym
+daC	2	acronym
+da°C	1	acronym
+da°C	2	acronym
+dacd	1	acronym
+dacd	2	acronym
+daF	1	acronym
+daF	2	acronym
+dag	1	acronym
+dag	2	acronym
+daGy	1	acronym
+daGy	2	acronym
+daH	1	acronym
+daH	2	acronym
+daHz	1	acronym
+daHz	2	acronym
+daJ	1	acronym
+daJ	2	acronym
+daK	1	acronym
+daK	2	acronym
+dakat	1	acronym
+dakat	2	acronym
+dalm	1	acronym
+dalm	2	acronym
+dalx	1	acronym
+dalx	2	acronym
+dam	1	acronym
+dam	2	acronym
+DAMA	1	acronym
+damol	1	acronym
+damol	2	acronym
+daN	1	acronym
+daN	2	acronym
+Daniel Stewart & Co	1	acronym
+daPa	1	acronym
+daPa	2	acronym
+darad	1	acronym
+darad	2	acronym
+das	1	acronym
+das	2	acronym
+daS	1	acronym
+daS	2	acronym
+dasr	1	acronym
+dasr	2	acronym
+daSv	1	acronym
+daSv	2	acronym
+daT	1	acronym
+daT	2	acronym
+DAT	1	acronym
+daV	1	acronym
+daV	2	acronym
+daW	1	acronym
+daW	2	acronym
+daWb	1	acronym
+daWb	2	acronym
+daΩ	1	acronym
+dB	1	acronym
+dB	2	acronym
+Db	1	acronym
+Db	2	acronym
+dBq	1	acronym
+dBq	2	acronym
+DBRS	1	acronym
+dC	1	acronym
+dC	2	acronym
+d°C	1	acronym
+d°C	2	acronym
+DC	1	acronym
+dcd	1	acronym
+dcd	2	acronym
+DDB	1	acronym
+DDM	1	acronym
+DDR	1	acronym
+DDT	1	acronym
+DE	1	acronym
+dem.	1	abbreviation
+DEM	1	acronym
+den	1	acronym
+den	2	acronym
+dF	1	acronym
+dF	2	acronym
+DF	1	acronym
+DFI	1	acronym
+dg	1	acronym
+dg	2	acronym
+DGB	1	acronym
+dGy	1	acronym
+dGy	2	acronym
+dH	1	acronym
+dH	2	acronym
+DHL	1	acronym
+dHz	1	acronym
+dHz	2	acronym
+DI	1	acronym
+DI	2	acronym
+DIN	1	acronym
+dipl.	1	abbreviation
+dipl.arkkit.	1	abbreviation
+dipl.ekon.	1	abbreviation
+dipl.ins.	1	abbreviation
+dipl.kielenk.	1	abbreviation
+dipl.kirjeenv.	1	abbreviation
+dipl.kosm.	1	abbreviation
+dipl.urk.	1	abbreviation
+dir. cant.	1	abbreviation
+div.	1	abbreviation
+dj	1	acronym
+dJ	1	acronym
+dJ	2	acronym
+DJF	1	acronym
+dK	1	acronym
+dK	2	acronym
+DK	1	acronym
+dkat	1	acronym
+dkat	2	acronym
+DKK	1	acronym
+DKK	2	acronym
+DKr	1	acronym
+dl	1	acronym
+dl	2	acronym
+DLA	1	acronym
+dlm	1	acronym
+dlm	2	acronym
+dlx	1	acronym
+dlx	2	acronym
+dm	1	acronym
+dm	2	acronym
+DMA	1	acronym
+dmol	1	acronym
+dmol	2	acronym
+dN	1	acronym
+dN	2	acronym
+dna	1	acronym
+DNA	1	acronym
+DNA	2	acronym
+DnB NOR	1	acronym
+DNB	1	acronym
+dnro	1	abbreviation
+do	1	acronym
+DOP	1	acronym
+dos.	1	abbreviation
+DOS	1	acronym
+dPa	1	acronym
+dPa	2	acronym
+DPA	1	acronym
+DPA	2	acronym
+DPI	1	acronym
+DPI	2	acronym
+Dr.	1	abbreviation
+drad	1	acronym
+drad	2	acronym
+DRAM	1	acronym
+DRAM	2	acronym
+Dream Works SKG	1	acronym
+ds	1	acronym
+ds	2	acronym
+dS	1	acronym
+dS	2	acronym
+dsr	1	acronym
+dsr	2	acronym
+dSv	1	acronym
+dSv	2	acronym
+DSV Air & Sea SAS	1	acronym
+dT	1	acronym
+dT	2	acronym
+DU	1	acronym
+dV	1	acronym
+dV	2	acronym
+dvd	1	acronym
+dvd	2	acronym
+DVD	1	acronym
+DVD	2	acronym
+dW	1	acronym
+dW	2	acronym
+dWb	1	acronym
+dWb	2	acronym
+DZD	1	acronym
+dΩ	1	acronym
+dΩ	2	acronym
+e	1	acronym
+e.	1	abbreviation
+E	1	acronym
+E	2	acronym
+EA	1	acronym
+EA	2	acronym
+eaa	1	abbreviation
+eaa.	1	abbreviation
+EADS	1	acronym
+EAN	2	acronym
+EARTO	1	acronym
+EAY	1	acronym
+EBF	1	acronym
+EBq	1	acronym
+EBq	2	acronym
+EBRD	1	acronym
+EBS	1	acronym
+EBU	1	acronym
+EC	1	acronym
+EC	2	acronym
+E°C	1	acronym
+E°C	2	acronym
+EC$	1	acronym
+EC$	2	acronym
+ECA	1	acronym
+ECADI	1	acronym
+Ecd	1	acronym
+Ecd	2	acronym
+Ecosoc	1	acronym
+ECR	1	acronym
+ECRI	1	acronym
+ECS	1	acronym
+ECSC	1	acronym
+ECU	1	acronym
+ECV	1	acronym
+ed.	1	abbreviation
+EDF	1	acronym
+EDI	1	acronym
+EE	1	acronym
+EEC	1	acronym
+eeg	1	acronym
+EEK	1	acronym
+EELA	1	acronym
+EF	1	acronym
+EF	2	acronym
+EFF	1	acronym
+EFTA	1	acronym
+e.g.	1	abbreviation
+Eg	1	acronym
+Eg	2	acronym
+EGP	1	acronym
+EGy	1	acronym
+EGy	2	acronym
+EH	1	acronym
+EH	2	acronym
+EHEC	1	acronym
+eht.	1	abbreviation
+Ehty	1	acronym
+EHTY	1	acronym
+EHz	1	acronym
+EHz	2	acronym
+EICTA	1	acronym
+EIP	1	acronym
+EJ	1	acronym
+EJ	2	acronym
+Ejustite.fr	1	acronym
+EK	1	acronym
+EK	2	acronym
+Ekat	1	acronym
+Ekat	2	acronym
+ekg	1	acronym
+EKK	1	acronym
+EKL	1	acronym
+ekon.	1	abbreviation
+EKP	1	acronym
+eKr	1	abbreviation
+eKr.	1	abbreviation
+EKR	1	acronym
+EL	1	acronym
+eläinl.	1	abbreviation
+eläinlääket.	1	abbreviation
+eläk.	1	abbreviation
+ELDR	1	acronym
+Elektroni.fi	1	acronym
+elintarviket.	1	abbreviation
+ELK	1	acronym
+ELK	2	acronym
+ELL	1	acronym
+ELL	2	acronym
+el.lääk.	1	abbreviation
+Elm	1	acronym
+Elm	2	acronym
+ELT	1	acronym
+ELTO	1	acronym
+Elx	1	acronym
+Elx	2	acronym
+em.	1	abbreviation
+Em	1	acronym
+Em	2	acronym
+EM	1	acronym
+EM	2	acronym
+EMC	1	acronym
+EMEA	1	acronym
+EMG	1	acronym
+EMI	1	acronym
+Emol	1	acronym
+Emol	2	acronym
+EMS	1	acronym
+emt.	1	abbreviation
+Emu	1	acronym
+EMU	1	acronym
+EMW	1	acronym
+EN	1	acronym
+EN	2	acronym
+ENEA	1	acronym
+ENEA	2	acronym
+ent.	1	abbreviation
+EOA	1	acronym
+EOAK	1	acronym
+E.ON	1	acronym
+eos.	1	abbreviation
+EOS	1	acronym
+EP	1	acronym
+EPa	1	acronym
+EPa	2	acronym
+EPO	1	acronym
+eQ	1	acronym
+EQ	1	acronym
+EQT	1	acronym
+Erad	1	acronym
+Erad	2	acronym
+Eräjärven SP	1	acronym
+erikoiseläinl.	1	abbreviation
+erikoishammasl.	1	abbreviation
+erikoisl.	1	abbreviation
+erikoist.	1	abbreviation
+ERM	1	acronym
+ERN	1	acronym
+ERTO	1	acronym
+ERVV	1	acronym
+Es	1	acronym
+Es	2	acronym
+ES	1	acronym
+ES	2	acronym
+ESA	1	acronym
+ESB	1	acronym
+esik.	1	abbreviation
+esim	1	abbreviation
+esim.	1	abbreviation
+esitt.	1	abbreviation
+ESMA	1	acronym
+ESO	1	acronym
+ESP	1	acronym
+Esr	1	acronym
+Esr	2	acronym
+ESR	1	acronym
+est.	1	abbreviation
+ESTIEM	1	acronym
+ESv	1	acronym
+ESv	2	acronym
+ESY	1	acronym
+et al.	1	abbreviation
+et.	1	abbreviation
+ET	1	acronym
+ET	2	acronym
+ETA	1	acronym
+ETB	1	acronym
+etc	1	abbreviation
+etc.	1	abbreviation
+ETK	1	acronym
+ETK	2	acronym
+ETL	1	acronym
+ETL	2	acronym
+ETLA	1	acronym
+ETM	1	acronym
+ETM	2	acronym
+ETSI	1	acronym
+ETSK	1	acronym
+ETT	1	acronym
+ETTA	1	acronym
+ETY	1	acronym
+ETY	2	acronym
+ETYJ	1	acronym
+ETYK	1	acronym
+EU	1	acronym
+EU 27	1	acronym
+EU	2	acronym
+EU27	1	acronym
+EUR	2	acronym
+Euro RSCG	1	acronym
+EUSTORY	1	acronym
+EUVL	1	acronym
+ev.	1	abbreviation
+eV	1	acronym
+eV	2	acronym
+EV	1	acronym
+EV	2	acronym
+EVA	1	acronym
+EveryDNS	1	acronym
+ev.lut.	1	abbreviation
+ev.luutn.	1	abbreviation
+EVM	1	acronym
+evp.	1	abbreviation
+EVR	1	acronym
+EVVK	1	acronym
+EW	1	acronym
+EW	2	acronym
+EWb	1	acronym
+EWb	2	acronym
+EY	1	acronym
+EY	2	acronym
+EYVL	1	acronym
+EΩ	1	acronym
+EΩ	2	acronym
+f	1	acronym
+f.	1	abbreviation
+F	1	acronym
+F	2	acronym
+F$	1	acronym
+F$	2	acronym
+fa	1	acronym
+fA	1	acronym
+fA	2	acronym
+FaK	1	acronym
+FaK	2	acronym
+FaL	1	acronym
+FaL	2	acronym
+FaM	1	acronym
+FaM	2	acronym
+FAO	1	acronym
+FAQ	1	acronym
+farm.	1	abbreviation
+farmas.	1	abbreviation
+FaT	1	acronym
+FaT	2	acronym
+FBI	1	acronym
+fBq	1	acronym
+fBq	2	acronym
+Fbu	1	acronym
+fC	1	acronym
+fC	2	acronym
+f°C	1	acronym
+f°C	2	acronym
+F&C	1	acronym
+fcd	1	acronym
+fcd	2	acronym
+FCMA	1	acronym
+FDIC	1	acronym
+FEPCO 1	1	acronym
+fF	1	acronym
+fF	2	acronym
+fg	1	acronym
+fg	2	acronym
+FGBMFI	1	acronym
+fGy	1	acronym
+fGy	2	acronym
+fH	1	acronym
+fH	2	acronym
+fHz	1	acronym
+fHz	2	acronym
+FI	1	acronym
+FIA	1	acronym
+Fiat SpA	1	acronym
+FICIX	1	acronym
+FIFA	1	acronym
+fil.	1	abbreviation
+FILE	1	acronym
+FILI	1	acronym
+FIM	1	acronym
+FIMECC	1	acronym
+FIMIC	1	acronym
+FiMUG	1	acronym
+FIN	1	acronym
+FIT	1	acronym
+fJ	1	acronym
+fJ	2	acronym
+FJD	1	acronym
+fK	1	acronym
+fK	2	acronym
+FK	1	acronym
+FK	2	acronym
+fkat	1	acronym
+fkat	2	acronym
+FKP	1	acronym
+fl	1	acronym
+fl	2	acronym
+FL	1	acronym
+FL	2	acronym
+flm	1	acronym
+flm	2	acronym
+flx	1	acronym
+flx	2	acronym
+fm	1	acronym
+fm	2	acronym
+FM	1	acronym
+FM	2	acronym
+fmol	1	acronym
+fmol	2	acronym
+fN	1	acronym
+fN	2	acronym
+Fonderie47	1	acronym
+Forum 18	1	acronym
+fPa	1	acronym
+fPa	2	acronym
+fr	1	acronym
+FR	1	acronym
+frad	1	acronym
+frad	2	acronym
+FRF	1	acronym
+fs	1	acronym
+fs	2	acronym
+fS	1	acronym
+fS	2	acronym
+fsr	1	acronym
+fsr	2	acronym
+fSv	1	acronym
+fSv	2	acronym
+ft.	1	abbreviation
+fT	1	acronym
+fT	2	acronym
+Ft	1	acronym
+FT	1	acronym
+FT	2	acronym
+FTAA	1	acronym
+FTP	1	acronym
+FTP	2	acronym
+FUNET	1	acronym
+FUUG	1	acronym
+fV	1	acronym
+fV	2	acronym
+fW	1	acronym
+fW	2	acronym
+fWb	1	acronym
+fWb	2	acronym
+fΩ	1	acronym
+fΩ	2	acronym
+g	1	acronym
+g	2	acronym
+G	1	acronym
+G	2	acronym
+G	3	acronym
+G	4	acronym
+G	5	acronym
+G$	1	acronym
+G$	2	acronym
+G20	1	acronym
+G4S	1	acronym
+G77	1	acronym
+G8	1	acronym
+GA	1	acronym
+GA	2	acronym
+gal	1	acronym
+gal	2	acronym
+GATT	1	acronym
+GB	1	acronym
+GBP	1	acronym
+GBq	1	acronym
+GBq	2	acronym
+GC	1	acronym
+GC	2	acronym
+G°C	1	acronym
+G°C	2	acronym
+Gcd	1	acronym
+Gcd	2	acronym
+GCHQ	1	acronym
+GEA	1	acronym
+GEA	2	acronym
+GEK	1	acronym
+GEL	1	acronym
+General Motors Co	1	acronym
+GEYSIR	1	acronym
+GF	1	acronym
+GF	2	acronym
+GfK	1	acronym
+Gg	1	acronym
+Gg	2	acronym
+GGy	1	acronym
+GGy	2	acronym
+GH	1	acronym
+GH	2	acronym
+GHC	1	acronym
+GHS	1	acronym
+GHz	1	acronym
+GHz	2	acronym
+GIP	1	acronym
+GJ	1	acronym
+GJ	2	acronym
+GK	1	acronym
+GK	2	acronym
+Gkat	1	acronym
+Gkat	2	acronym
+GL	1	acronym
+GL	2	acronym
+GLG	1	acronym
+Glm	1	acronym
+Glm	2	acronym
+Global Gaming Factory X	1	acronym
+Glx	1	acronym
+Glx	2	acronym
+gm	1	acronym
+gm	2	acronym
+Gm	1	acronym
+Gm	2	acronym
+GM	1	acronym
+Gmbh	1	acronym
+GmbH	1	acronym
+GMD	1	acronym
+gmo	1	acronym
+GMO	1	acronym
+Gmol	1	acronym
+Gmol	2	acronym
+GN	1	acronym
+GN	2	acronym
+GNF	1	acronym
+GNS	1	acronym
+GodFm	1	acronym
+gon	1	acronym
+GP	1	acronym
+GPa	1	acronym
+GPa	2	acronym
+GPRS	1	acronym
+GQE	1	acronym
+Grad	1	acronym
+Grad	2	acronym
+GRD	1	acronym
+Groupe BPCE	1	acronym
+Gs	1	acronym
+Gs	2	acronym
+GS	1	acronym
+GS	2	acronym
+GSM	1	acronym
+Gsr	1	acronym
+Gsr	2	acronym
+GSv	1	acronym
+GSv	2	acronym
+Gt	1	abbreviation
+GT	1	acronym
+GT	2	acronym
+GTi	1	acronym
+GTi	2	abbreviation
+GTK	1	acronym
+GTQ	1	acronym
+GUAM	1	acronym
+GUE	1	acronym
+GV	1	acronym
+GV	2	acronym
+GW	1	acronym
+GW	2	acronym
+GWb	1	acronym
+GWb	2	acronym
+GWE	1	acronym
+GWP	1	acronym
+Gy	1	acronym
+Gy	2	acronym
+GYD	1	acronym
+GΩ	1	acronym
+GΩ	2	acronym
+h	1	acronym
+h	2	acronym
+H	1	acronym
+H	2	acronym
+ha	1	acronym
+hA	1	acronym
+hA	2	acronym
+HA	1	acronym
+hallinton.	1	abbreviation
+hallintot.	1	abbreviation
+hammaslääket.	1	abbreviation
+HAO	1	acronym
+Harri Savunen & Co	1	acronym
+HAUS	1	acronym
+Hb	1	acronym
+HBL	1	acronym
+HBO	1	acronym
+HBOS	1	acronym
+hBq	1	acronym
+hBq	2	acronym
+h.c.	1	abbreviation
+hC	1	acronym
+hC	2	acronym
+h°C	1	acronym
+h°C	2	acronym
+hcd	1	acronym
+hcd	2	acronym
+HCL	1	acronym
+hdtv	1	acronym
+hdtv	2	acronym
+HE	1	acronym
+Heinolan Palloilijat -47	1	acronym
+Helsingin Kiri -60	1	acronym
+Helsingin NMKY	1	acronym
+Helsingin OP	1	acronym
+Helsingin OPKK	1	acronym
+HEPA	1	acronym
+HETKY	1	acronym
+HEUNI	1	acronym
+hF	1	acronym
+hF	2	acronym
+HFU	1	acronym
+hg	1	acronym
+hg	2	acronym
+Hg	1	acronym
+Hg	2	acronym
+hGy	1	acronym
+hGy	2	acronym
+hh	1	acronym
+hH	1	acronym
+hH	2	acronym
+hHz	1	acronym
+hHz	2	acronym
+HIFK	1	acronym
+HIIT	1	acronym
+HIM	1	acronym
+HIM	2	acronym
+HITAS	1	acronym
+HIV	1	acronym
+HIV	2	acronym
+hJ	1	acronym
+hJ	2	acronym
+HJK	1	acronym
+hK	1	acronym
+hK	2	acronym
+HK	1	acronym
+HK	2	acronym
+HK$	1	acronym
+HK$	2	acronym
+hkat	1	acronym
+hkat	2	acronym
+HKD	1	acronym
+Hki	1	abbreviation
+HKL	1	acronym
+HKL	2	acronym
+hl	1	acronym
+hl	2	acronym
+hl.	1	abbreviation
+HL	1	acronym
+HL	2	acronym
+HL	3	acronym
+HLK	1	acronym
+HLK	2	acronym
+HLL	1	acronym
+HLL	2	acronym
+hlm	1	acronym
+hlm	2	acronym
+hlö	1	abbreviation
+HLT	1	acronym
+HLT	2	acronym
+hlx	1	acronym
+hlx	2	acronym
+hm	1	acronym
+hm	2	acronym
+HM	1	acronym
+HM	2	acronym
+H&M	1	acronym
+hmol	1	acronym
+hmol	2	acronym
+HMV	1	acronym
+hN	1	acronym
+hN	2	acronym
+HN	1	acronym
+HN	2	acronym
+HNL	1	acronym
+HO	1	acronym
+HO	2	acronym
+HOAS	1	acronym
+HögforsGST	1	acronym
+hojks	1	acronym
+HOK	1	acronym
+HOK	2	acronym
+Hollolan Urheilijat -46	1	acronym
+HOP	1	acronym
+HOPS	1	acronym
+HOPS	2	acronym
+hovioik.	1	abbreviation
+hp.	1	abbreviation
+HP	1	acronym
+hPa	1	acronym
+hPa	2	acronym
+HPE	1	acronym
+HQ	1	acronym
+hra	1	abbreviation
+hrad	1	acronym
+hrad	2	acronym
+HRD	1	acronym
+HRK	1	acronym
+HRL	1	acronym
+HRL	2	acronym
+hs	1	acronym
+hs	2	acronym
+hS	1	acronym
+hS	2	acronym
+HS	1	acronym
+HS	2	acronym
+HSBC	1	acronym
+HSE	1	acronym
+HSL	1	acronym
+HSL	2	acronym
+hsr	1	acronym
+hsr	2	acronym
+HST	1	acronym
+hsto	1	abbreviation
+hSv	1	acronym
+hSv	2	acronym
+hT	1	acronym
+hT	2	acronym
+HT	1	acronym
+HTC	1	acronym
+HTG	1	acronym
+HTK	1	acronym
+HTK	2	acronym
+htkk	1	acronym
+HTL	1	acronym
+HTL	2	acronym
+HTM	1	acronym
+HTM	2	acronym
+HTML	1	acronym
+HTT	1	acronym
+HTT	2	acronym
+HTTP	1	acronym
+htv	1	acronym
+HUF	1	acronym
+HuK	1	acronym
+HuK	2	acronym
+hum.	1	abbreviation
+huom	1	abbreviation
+huom.	1	abbreviation
+HUS	1	acronym
+HUUGO	1	acronym
+hv	1	acronym
+hv	2	acronym
+hV	1	acronym
+hV	2	acronym
+H.V.	1	abbreviation
+HVK	1	acronym
+HVT	1	acronym
+hW	1	acronym
+hW	2	acronym
+hWb	1	acronym
+hWb	2	acronym
+HY	1	acronym
+HYK	1	acronym
+HYKS	1	acronym
+HYKS	2	acronym
+HYLA	1	acronym
+HYY	1	acronym
+Hz	1	acronym
+Hz	2	acronym
+hΩ	1	acronym
+hΩ	2	acronym
+i	1	acronym
+i	2	acronym
+I	1	acronym
+IAAF	1	acronym
+IAEA	1	acronym
+IARC	1	acronym
+IATA	1	acronym
+IAU	1	acronym
+ib.	1	abbreviation
+IB	1	acronym
+IBBY	1	acronym
+ibid.	1	abbreviation
+IBM	1	acronym
+IBRD	1	acronym
+ICAP	1	acronym
+ICCROM	1	acronym
+ICOMOS	1	acronym
+ict	1	acronym
+id.	1	abbreviation
+ID	1	acronym
+IDC	1	acronym
+IDR	1	acronym
+i.e.	1	abbreviation
+IEA	1	acronym
+IEC	1	acronym
+IEEE	1	acronym
+IEP	1	acronym
+IFA	1	acronym
+IFK	1	acronym
+IHEYO	1	acronym
+IIF	1	acronym
+IKB	1	acronym
+IKI	1	acronym
+IKL	1	acronym
+ikt	1	acronym
+IL	1	acronym
+IL	2	acronym
+ILL	1	acronym
+ilm.	1	abbreviation
+ilmavE	1	acronym
+ILO	1	acronym
+ILP	1	acronym
+ILR	1	acronym
+ILS	1	acronym
+IMEKO	1	acronym
+IMF	1	acronym
+IMI	1	acronym
+in	1	abbreviation
+in.	1	abbreviation
+inc	1	acronym
+inc.	1	abbreviation
+ING	1	acronym
+INR	1	acronym
+INRI	1	acronym
+ins.	1	abbreviation
+internet-tv	1	acronym
+ip.	1	abbreviation
+IP	1	acronym
+IPA	1	acronym
+IPEM	1	acronym
+IPU	1	acronym
+IQD	1	acronym
+IR£	1	acronym
+IR£	2	acronym
+IRA	1	acronym
+IRC	1	acronym
+IRR	1	acronym
+IS	1	acronym
+IS	2	acronym
+ISAI	1	acronym
+ISBN	1	acronym
+ISDN	1	acronym
+ISEC	1	acronym
+ISJ	1	acronym
+ISK	1	acronym
+ISM	1	acronym
+ISMN	1	acronym
+ISO	1	acronym
+ISSN	1	acronym
+ISY	1	acronym
+it	1	acronym
+it.	1	abbreviation
+IT	1	acronym
+IT	2	acronym
+ITC	1	acronym
+ITE	1	acronym
+ITL	1	acronym
+ITT	1	acronym
+ITU	1	acronym
+IU	1	acronym
+i.v.	1	abbreviation
+IVO	1	acronym
+IVY	1	acronym
+IZT	1	acronym
+j	1	acronym
+J	1	acronym
+J	2	acronym
+J$	1	acronym
+J$	2	acronym
+jaa	2	abbreviation
+jaa.	1	abbreviation
+jääk.	1	abbreviation
+jälj.	1	abbreviation
+jatk.	1	abbreviation
+JBL	1	acronym
+JC	1	acronym
+JD	1	acronym
+JHL	1	acronym
+JHTT	1	acronym
+JIT	1	acronym
+Jk.	1	abbreviation
+JK	1	acronym
+JK	2	acronym
+jKr	1	abbreviation
+jKr.	1	abbreviation
+jm	1	acronym
+JM	1	acronym
+JMD	1	acronym
+jms	1	abbreviation
+jms.	1	abbreviation
+jne	1	abbreviation
+jne.	1	abbreviation
+JOD	1	acronym
+joht.	1	abbreviation
+JOT	1	acronym
+JoY	1	acronym
+JoY	2	acronym
+JP Morgan Chase & Co	1	acronym
+JPMorgan Chase & Co	1	acronym
+JPY	1	acronym
+jr.	1	abbreviation
+JS	1	acronym
+JSN	1	acronym
+JSN	2	acronym
+JSW	1	acronym
+julk.	1	abbreviation
+JVC	1	acronym
+JVG	1	acronym
+JY	1	acronym
+JY	2	acronym
+JyP	1	acronym
+JYP	1	acronym
+k	1	acronym
+k.	1	abbreviation
+K	1	acronym
+K	2	acronym
+K Sh	1	acronym
+K1	1	acronym
+K12	1	acronym
+K13	1	acronym
+K15	1	acronym
+K16	1	acronym
+K18	1	acronym
+ka	1	acronym
+ka.	1	abbreviation
+kA	1	acronym
+kA	2	acronym
+KA	1	acronym
+kad.	1	abbreviation
+KadK	1	acronym
+kal.	1	abbreviation
+kamr.	1	abbreviation
+kand.	1	abbreviation
+Kangasala SK	1	acronym
+kansaned.	1	abbreviation
+kantt.	1	abbreviation
+KäO	1	acronym
+kappal.	1	abbreviation
+kapt.	1	abbreviation
+kapt.luutn.	1	abbreviation
+käsit.op.	1	abbreviation
+kasvatust.	1	abbreviation
+kat.	1	abbreviation
+KAT	1	acronym
+kats.	1	abbreviation
+KATTI	1	acronym
+kauppat.	1	abbreviation
+kb	1	acronym
+kb	2	acronym
+kB	1	acronym
+KBC	1	acronym
+kBq	1	acronym
+kBq	2	acronym
+kC	1	acronym
+kC	2	acronym
+k°C	1	acronym
+k°C	2	acronym
+kcal	1	acronym
+kcal	2	abbreviation
+kcd	1	acronym
+kcd	2	acronym
+kd.	1	abbreviation
+KD	1	acronym
+KD	2	acronym
+ke	1	abbreviation
+KEDO	1	acronym
+KEHO	1	acronym
+KEL	1	acronym
+KEL	2	acronym
+KELA	1	acronym
+kenr.	1	abbreviation
+kenr.luutn.	1	abbreviation
+kenr.maj.	1	abbreviation
+Kenttäurheilijat-58	1	acronym
+KEPA	1	acronym
+Keravan Kori-80	1	acronym
+kers.	1	abbreviation
+KES	1	acronym
+kesk.	1	abbreviation
+Kesk.	1	abbreviation
+KeuPa HT	1	acronym
+kF	1	acronym
+kF	2	acronym
+KFC	1	acronym
+KFOR	1	acronym
+kg	1	acronym
+kg	2	acronym
+KGB	1	acronym
+KGS	1	acronym
+kGy	1	acronym
+kGy	2	acronym
+kh	1	acronym
+kh.	1	abbreviation
+kH	1	acronym
+kH	2	acronym
+KHK	1	acronym
+KHO	1	acronym
+KHR	1	acronym
+khra	1	abbreviation
+KHT	1	acronym
+kHz	1	acronym
+kHz	2	acronym
+KIE	1	acronym
+KiEL	1	acronym
+KiEL	2	acronym
+kiint.oy	1	acronym
+kiint.oy	2	acronym
+kiint.oy.	1	abbreviation
+kiir.	1	abbreviation
+kir.	1	abbreviation
+kirj.	1	abbreviation
+kirjeenv.	1	abbreviation
+KiSV	1	acronym
+Kiteen Pallo -90	1	acronym
+KIVI	1	acronym
+kj.	1	abbreviation
+kJ	1	acronym
+kJ	2	acronym
+kk	1	acronym
+kk	2	acronym
+kk.	1	abbreviation
+kK	1	acronym
+kK	2	acronym
+KK	1	acronym
+KK	2	acronym
+kkat	1	acronym
+kkat	2	acronym
+KKH	1	acronym
+KKK	1	acronym
+kko	1	acronym
+KKO	1	acronym
+KKO	2	acronym
+KKOY	1	acronym
+kkp	1	acronym
+KKR	1	acronym
+kl.	1	abbreviation
+KL	1	acronym
+KL	2	acronym
+Klinikka 22	1	acronym
+klm	1	acronym
+klm	2	acronym
+KLM	1	acronym
+klo	1	abbreviation
+KLT	1	acronym
+klx	1	acronym
+klx	2	acronym
+km	1	acronym
+km	2	acronym
+KM	1	acronym
+KM	2	acronym
+k-m²	1	acronym
+k-m²	2	acronym
+k-m³	1	acronym
+k-m³	2	acronym
+KMF	1	acronym
+km/h	1	abbreviation
+KMN	1	acronym
+kmol	1	acronym
+kmol	2	acronym
+kN	1	acronym
+kN	2	acronym
+kni	1	abbreviation
+Knight Frank LLP	1	acronym
+ko.	1	abbreviation
+KO	1	acronym
+kok.	1	abbreviation
+Kok.	1	abbreviation
+KOK	1	acronym
+KOK	2	acronym
+kokonais-DNA	1	acronym
+kom.	1	abbreviation
+KOM	1	acronym
+kom.kapt.	1	abbreviation
+komm.	1	abbreviation
+kompp.	1	abbreviation
+KoMu HT	1	acronym
+konst.	1	abbreviation
+kop	1	acronym
+KOP	1	acronym
+korpr.	1	abbreviation
+Korutrahaksi.fi	1	acronym
+kotital.op.	1	abbreviation
+kotiteoll.op.	1	abbreviation
+KOY	1	acronym
+KOY	2	acronym
+kp	1	acronym
+kp.	1	abbreviation
+kPa	1	acronym
+kPa	2	acronym
+kpl	1	acronym
+kpl	2	acronym
+kpm	1	acronym
+KPMG	1	acronym
+KPN	1	acronym
+KPT	1	acronym
+KPW	1	acronym
+kr	1	acronym
+krad	1	acronym
+krad	2	acronym
+KRH	1	acronym
+krist.	1	abbreviation
+krj	1	acronym
+krnro	1	abbreviation
+KRO	1	acronym
+KRP	1	acronym
+krs	1	acronym
+krs	2	acronym
+KRW	1	acronym
+ks	1	acronym
+ks	2	acronym
+ks.	1	abbreviation
+kS	1	acronym
+kS	2	acronym
+KSO	1	acronym
+ksr	1	acronym
+ksr	2	acronym
+kSv	1	acronym
+kSv	2	acronym
+kt	1	acronym
+kT	1	acronym
+kT	2	acronym
+KT	1	acronym
+KT	2	acronym
+KtaO	1	acronym
+KteO	1	acronym
+KTK	1	acronym
+KTK	2	acronym
+KTL	1	acronym
+KTL	2	acronym
+KTM	1	acronym
+KTM	2	acronym
+KTP	1	acronym
+KTS	1	acronym
+KTT	1	acronym
+KTT	2	acronym
+KTTO	1	acronym
+KTV	1	acronym
+KtyO	1	acronym
+KU	1	acronym
+KUA	1	acronym
+Kultarahaksi.fi	1	acronym
+kumpp.	1	abbreviation
+Kuntien Tekniset KTK	1	acronym
+KuPS	1	acronym
+Kurikan OP	1	acronym
+Kustaa III	1	acronym
+kuv.	1	abbreviation
+KUV	1	acronym
+KuvA	1	acronym
+KuvO	1	acronym
+kuv.op.	1	abbreviation
+kv.	1	abbreviation
+kV	1	acronym
+kV	2	acronym
+KVL	1	acronym
+KVT	1	acronym
+KVTEL	1	acronym
+KVTEL	2	acronym
+kvv	1	acronym
+kW	1	acronym
+kW	2	acronym
+kWb	1	acronym
+kWb	2	acronym
+KWD	1	acronym
+kWh	1	acronym
+kWh	2	acronym
+KWH	1	acronym
+ky	1	acronym
+ky	2	acronym
+ky.	1	abbreviation
+KYD	1	acronym
+KyO	1	acronym
+KYS	1	acronym
+KZT	1	acronym
+kΩ	1	acronym
+kΩ	2	acronym
+l	1	acronym
+l	2	acronym
+l.	1	abbreviation
+L	1	acronym
+L	2	acronym
+L2	1	acronym
+la	1	acronym
+la	2	abbreviation
+LA	1	acronym
+lääk.	1	abbreviation
+lääket.	1	abbreviation
+LAFTA	1	acronym
+läh.	1	abbreviation
+Lahden Suunnistajat -37	1	acronym
+LaK	1	acronym
+LaK	2	acronym
+LAK	1	acronym
+lakit.	1	abbreviation
+LaL	1	acronym
+LaL	2	acronym
+länt.	1	abbreviation
+Lappeenrannan NMKY	1	acronym
+lastent.op.	1	abbreviation
+LaT	1	acronym
+LaT	2	acronym
+LBP	1	acronym
+LD	1	acronym
+leht.	1	abbreviation
+lehtiö-pc	1	acronym
+LEL	1	acronym
+LEL	2	acronym
+LEOPS	1	acronym
+Levi Strauss & Co	1	acronym
+LG	1	acronym
+LGT	1	acronym
+LH	1	acronym
+LI	1	acronym
+LIA	1	acronym
+liikuntak.	1	abbreviation
+liikuntat.	1	abbreviation
+LiK	1	acronym
+LiK	2	acronym
+lis.	1	abbreviation
+LitK	1	acronym
+LitK	2	acronym
+LitL	1	acronym
+LitL	2	acronym
+LitM	1	acronym
+LitM	2	acronym
+LitT	1	acronym
+LitT	2	acronym
+lk.	1	abbreviation
+LK	1	acronym
+LK	2	acronym
+LKAB	1	acronym
+LKH	1	acronym
+LKK	1	acronym
+lkm.	1	abbreviation
+LKP	1	acronym
+LKR	1	acronym
+LKT	1	acronym
+lkv.	1	abbreviation
+LKV	1	acronym
+LKV	2	acronym
+lky	1	acronym
+lky.	1	abbreviation
+ll	1	acronym
+ll.	1	abbreviation
+LL	1	acronym
+LL	2	acronym
+LLC	1	acronym
+Lloyds TSB	1	acronym
+lm	1	acronym
+lm	2	acronym
+lm.	1	abbreviation
+Lm	1	acronym
+LMFAO	1	acronym
+LO	1	acronym
+LOGY	1	acronym
+LOK	1	acronym
+LOK	2	acronym
+Lp	1	acronym
+LP	1	acronym
+LPI	1	acronym
+LRD	1	acronym
+LS	1	acronym
+lsd	1	acronym
+LSL	1	acronym
+LSO	1	acronym
+LT	1	acronym
+LTCM	1	acronym
+ltd.	1	abbreviation
+LTE	1	acronym
+ltk	1	acronym
+ltk.	1	abbreviation
+LTL	1	acronym
+LTO	1	acronym
+LTS	1	acronym
+LTT	1	acronym
+LTY	1	acronym
+LUC	1	acronym
+LUF	1	acronym
+LuK	1	acronym
+LuK	2	acronym
+LUL	1	acronym
+LUMA	1	acronym
+luonnont.	1	abbreviation
+lut.	1	abbreviation
+LUTU	1	acronym
+luutn.	1	abbreviation
+lv.	1	abbreviation
+lvi	1	acronym
+lvi	2	acronym
+LVL	1	acronym
+LVM	1	acronym
+LVMH	1	acronym
+LVR	1	acronym
+lvv.	1	abbreviation
+lx	1	acronym
+lx	2	acronym
+ly	1	acronym
+LY	1	acronym
+LYD	1	acronym
+lyh.	1	abbreviation
+LYHKI	1	acronym
+m	1	acronym
+m	2	acronym
+µm	1	acronym
+µm	2	acronym
+M	1	acronym
+M.	2	abbreviation
+m²	1	acronym
+m²	2	acronym
+m³	1	acronym
+m³	2	acronym
+ma	1	acronym
+ma	2	abbreviation
+ma.	1	abbreviation
+mA	1	acronym
+mA	2	acronym
+MA	1	acronym
+MA	2	acronym
+M.A.	1	abbreviation
+maan.	1	abbreviation
+maat.	1	abbreviation
+MAD	1	acronym
+MAF	1	acronym
+MAI	1	acronym
+Mail.ru	1	acronym
+Mainostoimisto 96	1	acronym
+maist.	1	abbreviation
+maj.	1	abbreviation
+maks.	1	abbreviation
+MAMU	1	acronym
+MAN	1	acronym
+Manse PP	1	acronym
+MaO	1	acronym
+MAOL	1	acronym
+MAT	1	acronym
+matr.	1	abbreviation
+Mb	1	acronym
+Mb	2	acronym
+MB	1	acronym
+MBA	1	acronym
+M.B.A	1	acronym
+MBA.	1	abbreviation
+MBD	1	acronym
+Mbit	1	acronym
+Mbit	2	acronym
+Mbit/s	1	acronym
+Mbit/s	2	acronym
+MBO	1	acronym
+Mbps	1	acronym
+Mbps	2	acronym
+mBq	1	acronym
+mBq	2	acronym
+MBq	1	acronym
+MBq	2	acronym
+Mb/s	1	acronym
+Mb/s	2	acronym
+mC	1	acronym
+mC	2	acronym
+m°C	1	acronym
+m°C	2	acronym
+MC	1	acronym
+MC	2	acronym
+M°C	1	acronym
+M°C	2	acronym
+mcd	1	acronym
+mcd	2	acronym
+Mcd	1	acronym
+Mcd	2	acronym
+MCF	1	acronym
+MDC	1	acronym
+MDen	1	acronym
+MDL	1	acronym
+MDU	1	acronym
+ME	1	acronym
+media-pc	1	acronym
+Medi-It	1	acronym
+MEK	1	acronym
+MEL	1	acronym
+MEL	2	acronym
+MEMC	1	acronym
+MEP	1	acronym
+Mercedes-AMG	1	acronym
+MerivE	1	acronym
+merkon.	1	abbreviation
+METLA	1	acronym
+METO	1	acronym
+MetroPCS	1	acronym
+metsänhoit.	1	abbreviation
+metsät.	1	abbreviation
+MEUR	1	acronym
+MEX$	1	acronym
+MEX$	2	acronym
+mF	1	acronym
+mF	2	acronym
+MF	1	acronym
+MF	2	acronym
+MF Global Finance USA	1	acronym
+mg	1	acronym
+mg	2	acronym
+Mg	1	acronym
+Mg	2	acronym
+MG	1	acronym
+MGA	1	acronym
+MGF	1	acronym
+MGM	1	acronym
+mGy	1	acronym
+mGy	2	acronym
+MGy	1	acronym
+MGy	2	acronym
+mH	1	acronym
+mH	2	acronym
+MH	1	acronym
+MH	2	acronym
+mhy.	1	abbreviation
+mHz	1	acronym
+mHz	2	acronym
+MHz	1	acronym
+MHz	2	acronym
+mi	1	acronym
+MI	1	acronym
+miel.	1	abbreviation
+MIGRI	1	acronym
+MIKES	1	acronym
+milj.	1	abbreviation
+min	1	acronym
+min	3	acronym
+min.	1	abbreviation
+Mirgor SACIFIA	1	acronym
+Miss	1	abbreviation
+MIT	1	acronym
+Mitsubishi UFJ	1	acronym
+Mitsui & Co	1	acronym
+mJ	1	acronym
+mJ	2	acronym
+MJ	1	acronym
+MJ	2	acronym
+mk	1	acronym
+mk	2	acronym
+mK	1	acronym
+mK	2	acronym
+MK	1	acronym
+MK	2	acronym
+mkat	1	acronym
+mkat	2	acronym
+Mkat	1	acronym
+Mkat	2	acronym
+MKD	1	acronym
+MKH	1	acronym
+MKL	1	acronym
+MKN	1	acronym
+MKT	1	acronym
+ml	1	acronym
+ml	2	acronym
+ml.	1	abbreviation
+ML	1	acronym
+MLF	1	acronym
+mlk.	1	abbreviation
+Mlle	1	abbreviation
+mlm	1	acronym
+mlm	2	acronym
+Mlm	1	acronym
+Mlm	2	acronym
+mlx	1	acronym
+mlx	2	acronym
+Mlx	1	acronym
+Mlx	2	acronym
+mm	1	acronym
+mm	2	acronym
+mm	3	abbreviation
+mm.	1	abbreviation
+Mm	1	acronym
+Mm	2	acronym
+MM	1	acronym
+MM	2	acronym
+Mme	1	abbreviation
+mmHg	1	acronym
+mmHg	2	acronym
+Mmk	1	acronym
+Mmk	2	acronym
+MMK	1	acronym
+MMK	2	acronym
+MMK	3	acronym
+MML	1	acronym
+MML	2	acronym
+MMM	1	acronym
+MMM	2	acronym
+mmol	1	acronym
+mmol	2	acronym
+Mmol	1	acronym
+Mmol	2	acronym
+MMT	1	acronym
+MMT	2	acronym
+MMYL	1	acronym
+mN	1	acronym
+mN	2	acronym
+MN	1	acronym
+MN	2	acronym
+MNT	1	acronym
+MO	1	acronym
+MO	2	acronym
+MOEX Offshore 2007	1	acronym
+mol	1	acronym
+mol	2	acronym
+mom.	1	abbreviation
+MOP	1	acronym
+mot	1	abbreviation
+mot.	1	abbreviation
+mp.	1	abbreviation
+mp3	1	acronym
+MP3	1	acronym
+mPa	1	acronym
+mPa	2	acronym
+MPa	1	acronym
+MPa	2	acronym
+MPEG	1	acronym
+mpk	1	acronym
+MpKK	1	acronym
+mpm	1	abbreviation
+mpm.	1	abbreviation
+MpO	1	acronym
+MPS	1	acronym
+Mpx	1	acronym
+mpy.	1	abbreviation
+MQ	1	acronym
+Mr	1	abbreviation
+Mr.	1	abbreviation
+MR	1	acronym
+mrad	1	acronym
+mrad	2	acronym
+Mrad	1	acronym
+Mrad	2	acronym
+mrd.	1	abbreviation
+MRO	1	acronym
+Mrs	1	abbreviation
+ms	1	acronym
+ms	2	acronym
+m/s	1	acronym
+m/s	2	acronym
+mS	1	acronym
+mS	2	acronym
+Ms	1	acronym
+Ms	2	acronym
+Ms	3	acronym
+Ms	4	abbreviation
+MS	1	acronym
+MSB	1	acronym
+MSc	1	acronym
+M.Sc.	1	abbreviation
+MSCI	1	acronym
+MSD	1	acronym
+MSK	1	acronym
+msr	1	acronym
+msr	2	acronym
+Msr	1	acronym
+Msr	2	acronym
+msrk.	1	abbreviation
+mSv	1	acronym
+mSv	2	acronym
+MSv	1	acronym
+MSv	2	acronym
+mt.	1	abbreviation
+mT	1	acronym
+mT	2	acronym
+Mt	1	acronym
+MT	1	acronym
+MT	2	acronym
+MTI	1	acronym
+MTK	1	acronym
+MTL	1	acronym
+MTN	1	acronym
+MTP	1	acronym
+mts.	1	abbreviation
+Mt/s	1	acronym
+Mt/s	2	acronym
+MTS	1	acronym
+MTT	1	acronym
+MTV	1	acronym
+MTV	2	acronym
+MTV3	1	acronym
+MuK	1	acronym
+MuK	2	acronym
+MuL	1	acronym
+MuL	2	acronym
+MuM	1	acronym
+MuM	2	acronym
+Munsala IK	1	acronym
+MUR	1	acronym
+mus.	1	abbreviation
+mus.op.	1	abbreviation
+MuT	1	acronym
+MuT	2	acronym
+Muutos 2011	1	acronym
+mv.	1	abbreviation
+mV	1	acronym
+mV	2	acronym
+MV	1	acronym
+MV	2	acronym
+MVR	1	acronym
+mvs.	1	abbreviation
+mW	1	acronym
+mW	2	acronym
+MW	1	acronym
+MW	2	acronym
+mWb	1	acronym
+mWb	2	acronym
+MWb	1	acronym
+MWb	2	acronym
+MWh	1	acronym
+MWh	2	acronym
+MWK	1	acronym
+MXN	1	acronym
+MXP	1	acronym
+MXV	1	acronym
+MYEL	1	acronym
+MYEL	2	acronym
+Mynämäen Suunnistajat -52	1	acronym
+myöh.	1	abbreviation
+MYR	1	acronym
+MySQL	1	acronym
+MYY	1	acronym
+MZE	1	acronym
+MZM	1	acronym
+MZN	1	acronym
+mΩ	1	acronym
+mΩ	2	acronym
+MΩ	1	acronym
+MΩ	2	acronym
+n	1	acronym
+n.	1	abbreviation
+N	1	acronym
+N	2	acronym
+N	3	acronym
+N$	1	acronym
+N$	2	acronym
+nA	1	acronym
+nA	2	acronym
+NA f.	1	abbreviation
+NAD	1	acronym
+NAFTA	1	acronym
+NASA	1	acronym
+Nasdaq OMX	1	acronym
+NATO	1	acronym
+N.B.	1	abbreviation
+NBC	1	acronym
+NBG	1	acronym
+nBq	1	acronym
+nBq	2	acronym
+nC	1	acronym
+nC	2	acronym
+n°C	1	acronym
+n°C	2	acronym
+NCC	1	acronym
+ncd	1	acronym
+ncd	2	acronym
+NDX	1	acronym
+NEA	1	acronym
+NEC	1	acronym
+NESU-KY	1	acronym
+netti-tv	1	acronym
+netti-tv	2	acronym
+neuv.	1	abbreviation
+nF	1	acronym
+nF	2	acronym
+ng	1	acronym
+ng	2	acronym
+NGN	1	acronym
+nGy	1	acronym
+nGy	2	acronym
+nH	1	acronym
+nH	2	acronym
+NHL	1	acronym
+nHz	1	acronym
+nHz	2	acronym
+NIB	1	acronym
+NIC	1	acronym
+nid.	1	abbreviation
+nim.	1	abbreviation
+nimim.	1	abbreviation
+NIO	1	acronym
+nJ	1	acronym
+nJ	2	acronym
+nk.	1	abbreviation
+nK	1	acronym
+nK	2	acronym
+nkat	1	acronym
+nkat	2	acronym
+NKP	1	acronym
+Nkr	1	acronym
+NKr	1	acronym
+NKT	1	acronym
+NL	1	acronym
+NLG	1	acronym
+nlm	1	acronym
+nlm	2	acronym
+NLP	1	acronym
+nlx	1	acronym
+nlx	2	acronym
+nm	1	acronym
+nm	2	acronym
+Nm	1	acronym
+Nm	2	acronym
+NMKY	1	acronym
+NMKY	2	acronym
+nmol	1	acronym
+nmol	2	acronym
+NMT	1	acronym
+nN	1	acronym
+nN	2	acronym
+NN	1	acronym
+N.N.	1	abbreviation
+NNKY	1	acronym
+NNKY	2	acronym
+n:o	1	abbreviation
+NOK	1	acronym
+Norcar-BSB	1	acronym
+NordLB	1	acronym
+Nova KBM	1	acronym
+nPa	1	acronym
+nPa	2	acronym
+NPC	1	acronym
+NPR	1	acronym
+NRA	1	acronym
+nrad	1	acronym
+nrad	2	acronym
+nro	1	abbreviation
+nro	2	abbreviation
+Nrs	1	acronym
+nrt	1	acronym
+NRW	1	acronym
+ns	1	acronym
+ns	2	acronym
+ns	3	abbreviation
+ns.	1	abbreviation
+nS	1	acronym
+nS	2	acronym
+NSA	1	acronym
+NSN	1	acronym
+nsr	1	acronym
+nsr	2	acronym
+nsr	3	acronym
+nSv	1	acronym
+nSv	2	acronym
+nT	1	acronym
+nT	2	acronym
+NT$	1	acronym
+NT$	2	acronym
+NTB	1	acronym
+nti	1	abbreviation
+NTP	1	acronym
+Nu	1	acronym
+Nurmon Urheilijat -99	1	acronym
+NUVA	1	acronym
+nV	1	acronym
+nV	2	acronym
+NV	1	acronym
+NVL	1	acronym
+nW	1	acronym
+nW	2	acronym
+nWb	1	acronym
+nWb	2	acronym
+nyk.	1	abbreviation
+$NZ	1	acronym
+$NZ	2	acronym
+NZ$	1	acronym
+NZ$	2	acronym
+NZD	1	acronym
+nΩ	1	acronym
+nΩ	2	acronym
+o	1	acronym
+O	1	acronym
+ö	1	acronym
+Ö	1	acronym
+O2	1	acronym
+oa.	1	abbreviation
+OAJ	1	acronym
+OAJ	2	acronym
+OAS	1	acronym
+obs	1	abbreviation
+obs.	1	abbreviation
+OECD	1	acronym
+OEEC	1	acronym
+ÖFN	1	acronym
+oh.	1	abbreviation
+OIE	1	acronym
+oik.	1	abbreviation
+oikeust.	1	abbreviation
+OIKOS	1	acronym
+ok	1	acronym
+ok	2	abbreviation
+ok.	1	abbreviation
+OK	1	acronym
+OK	2	acronym
+OKM	1	acronym
+OKV	1	acronym
+OLAF	1	acronym
+OLL	1	acronym
+OLPC	1	acronym
+om.	1	abbreviation
+OM	1	acronym
+OMD	1	acronym
+om.p.	1	abbreviation
+OMR	1	acronym
+OMX	1	acronym
+op	1	acronym
+op.	1	abbreviation
+OPEC	1	acronym
+opett.	1	abbreviation
+OPH	1	acronym
+OPK	1	acronym
+OPKK	1	acronym
+OPKO	1	acronym
+OPM	1	acronym
+OPO	1	acronym
+opp.	1	abbreviation
+OPS	1	acronym
+OPTL	1	acronym
+Oriola-KD	1	acronym
+ork.	1	abbreviation
+ortod.	1	abbreviation
+o.s.	1	abbreviation
+os.	1	abbreviation
+OS	1	acronym
+osk	1	acronym
+osk.	1	abbreviation
+OSKE	1	acronym
+OSMA	1	acronym
+OSMA	2	acronym
+OSTIV	1	acronym
+OTC	1	acronym
+OTE	1	acronym
+OTK	1	acronym
+OTK	2	acronym
+OTL	1	acronym
+OTL	2	acronym
+oto	1	acronym
+oto.	1	abbreviation
+OTT	1	acronym
+OTT	2	acronym
+OÜ	1	acronym
+Oulun NMKY	1	acronym
+ov	1	acronym
+ovh	1	acronym
+ovh	2	acronym
+ovh.	1	abbreviation
+OVT	1	acronym
+oy	1	acronym
+oy	2	acronym
+oy.	1	abbreviation
+OY	1	acronym
+OY	2	acronym
+oyj	1	acronym
+oyj	2	acronym
+oyj.	1	abbreviation
+OYS	1	acronym
+oz.	1	abbreviation
+p	1	acronym
+p.	1	abbreviation
+P	1	acronym
+P	2	acronym
+pa.	1	abbreviation
+pA	1	acronym
+pA	2	acronym
+Pa	1	acronym
+Pa	2	acronym
+PA	1	acronym
+pääll.	1	abbreviation
+PAB	1	acronym
+PAH	1	acronym
+pak	1	acronym
+pakk	1	acronym
+PAM	1	acronym
+PAND	1	acronym
+paneeli-pc	1	acronym
+par.	1	abbreviation
+past.	1	abbreviation
+pat.	1	abbreviation
+patl.	1	abbreviation
+PAU	1	acronym
+Paulson & Co	1	acronym
+PAV	1	acronym
+PAY	1	acronym
+pBq	1	acronym
+pBq	2	acronym
+PBq	1	acronym
+PBq	2	acronym
+pc	1	acronym
+pC	1	acronym
+pC	2	acronym
+p°C	1	acronym
+p°C	2	acronym
+PC	1	acronym
+PC	2	acronym
+P°C	1	acronym
+P°C	2	acronym
+PCB	1	acronym
+pcd	1	acronym
+pcd	2	acronym
+Pcd	1	acronym
+Pcd	2	acronym
+PCUF	1	acronym
+pda	1	acronym
+PDA	1	acronym
+pdf	1	acronym
+PDF	1	acronym
+PDT	1	acronym
+PDVSA	1	acronym
+pe	1	acronym
+pe	2	abbreviation
+PE	1	acronym
+PEI	1	acronym
+Pellervon taloustutkimus PTT	1	acronym
+PEN	1	acronym
+per.	1	abbreviation
+perj.	1	abbreviation
+perusk.op.	1	abbreviation
+PES	1	acronym
+PET	1	acronym
+pF	1	acronym
+pF	2	acronym
+PF	1	acronym
+PF	2	acronym
+pg	1	acronym
+pg	2	acronym
+Pg	1	acronym
+Pg	2	acronym
+PGE	1	acronym
+PGK	1	acronym
+pGy	1	acronym
+pGy	2	acronym
+PGy	1	acronym
+PGy	2	acronym
+ph.	1	abbreviation
+pH	1	acronym
+PH	1	acronym
+PH	2	acronym
+PhD	1	acronym
+Ph.D.	1	abbreviation
+Phillips 66	1	acronym
+PHP	1	acronym
+PHS	1	acronym
+PHS/TBWA	1	acronym
+pHz	1	acronym
+pHz	2	acronym
+PHz	1	acronym
+PHz	2	acronym
+pien-pc	1	acronym
+PIN	1	acronym
+pinta-WWW	1	acronym
+pinta-WWW	2	acronym
+pion.	1	abbreviation
+PISA	1	acronym
+pit.	1	abbreviation
+pj	1	acronym
+pj	2	acronym
+pj.	1	abbreviation
+pJ	1	acronym
+pJ	2	acronym
+PJ	1	acronym
+PJ	2	acronym
+pjsto	1	abbreviation
+pk.	1	abbreviation
+pK	1	acronym
+pK	2	acronym
+PK	1	acronym
+PK	2	acronym
+pkat	1	acronym
+pkat	2	acronym
+Pkat	1	acronym
+Pkat	2	acronym
+PKC	1	acronym
+PkO	1	acronym
+PKR	1	acronym
+pkt	1	acronym
+pkt	2	acronym
+pl	1	acronym
+pl.	1	abbreviation
+PL	1	acronym
+plc	1	acronym
+plm	1	acronym
+plm	2	acronym
+Plm	1	acronym
+Plm	2	acronym
+PLM	1	acronym
+PLN	1	acronym
+PLO	1	acronym
+plx	1	acronym
+plx	2	acronym
+Plx	1	acronym
+Plx	2	acronym
+PLZ	1	acronym
+pm	1	acronym
+pm	2	acronym
+p.m.	1	abbreviation
+pm.	1	abbreviation
+Pm	1	acronym
+Pm	2	acronym
+PM	1	acronym
+PMI	1	acronym
+pmm	1	acronym
+PMMP	1	acronym
+pmol	1	acronym
+pmol	2	acronym
+Pmol	1	acronym
+Pmol	2	acronym
+pms	1	acronym
+pN	1	acronym
+pN	2	acronym
+PN	1	acronym
+PN	2	acronym
+pnä	1	abbreviation
+pnk	1	acronym
+po.	1	abbreviation
+pohj.	1	abbreviation
+Polamk	1	acronym
+POP	1	acronym
+Pöyry CM	1	acronym
+pp.	1	abbreviation
+PP	1	acronym
+pPa	1	acronym
+pPa	2	acronym
+PPa	1	acronym
+PPa	2	acronym
+PPE	1	acronym
+PPE-DE	1	acronym
+PPI	1	acronym
+ppm	2	acronym
+PPO	1	acronym
+PPR	1	acronym
+pr	1	acronym
+PR	1	acronym
+PR	2	acronym
+Pra	1	acronym
+prad	1	acronym
+prad	2	acronym
+Prad	1	acronym
+Prad	2	acronym
+PRH	1	acronym
+PRH	2	acronym
+prik.	1	abbreviation
+prk	1	acronym
+prk	2	acronym
+prof.	1	abbreviation
+prok.	1	abbreviation
+ProSiebenSat1	1	acronym
+prov.	1	abbreviation
+PRT	1	acronym
+ps	1	acronym
+ps	2	acronym
+ps.	1	abbreviation
+pS	1	acronym
+pS	2	acronym
+Ps	1	acronym
+Ps	2	acronym
+PS	1	acronym
+PS	2	acronym
+P.S.	1	abbreviation
+PSA	1	acronym
+PSE	1	acronym
+PsK	1	acronym
+PsK	2	acronym
+PsL	1	acronym
+PsL	2	acronym
+PsM	1	acronym
+PsM	2	acronym
+PSOAS	1	acronym
+PSOP	1	acronym
+PSP	1	acronym
+psr	1	acronym
+psr	2	acronym
+Psr	1	acronym
+Psr	2	acronym
+PsT	1	acronym
+PsT	2	acronym
+psta	1	abbreviation
+psto	1	abbreviation
+pSv	1	acronym
+pSv	2	acronym
+PSv	1	acronym
+PSv	2	acronym
+psykol.	1	abbreviation
+pT	1	acronym
+pT	2	acronym
+PT	1	acronym
+PT	2	acronym
+PTE	1	acronym
+ptk.	1	abbreviation
+PTO	1	acronym
+ptri	1	abbreviation
+PTS	1	acronym
+PTT	1	acronym
+puh.	1	abbreviation
+puh.joht.	1	abbreviation
+Purcell & Co	1	acronym
+pursim.	1	abbreviation
+puutarhaop.	1	abbreviation
+pv	1	acronym
+pv	2	acronym
+pv.	1	abbreviation
+pV	1	acronym
+pV	2	acronym
+PV	1	acronym
+PV	2	acronym
+pvc	1	acronym
+pvc	2	acronym
+pvm.	1	abbreviation
+PvTK	1	acronym
+pW	1	acronym
+pW	2	acronym
+PW	1	acronym
+PW	2	acronym
+pWb	1	acronym
+pWb	2	acronym
+PWb	1	acronym
+PWb	2	acronym
+PwC	1	acronym
+PYG	1	acronym
+pΩ	1	acronym
+pΩ	2	acronym
+PΩ	1	acronym
+PΩ	2	acronym
+q	1	acronym
+Q	1	acronym
+QAR	1	acronym
+QR	1	acronym
+r	1	acronym
+r.	1	abbreviation
+R	1	acronym
+R	2	acronym
+R$	1	acronym
+R$	2	acronym
+RAC	1	acronym
+rad	1	acronym
+rad	2	acronym
+Rahastoyhtiö Seligson & Co	1	acronym
+rak.	1	abbreviation
+Rakennusteollisuus RT	1	acronym
+RAKLI	1	acronym
+rak.mest.	1	abbreviation
+RAM	1	acronym
+RAY	1	acronym
+RAY	2	acronym
+RBC	1	acronym
+Rbl	1	acronym
+RBS	1	acronym
+RD$	1	acronym
+RD$	2	acronym
+re	1	acronym
+Re.	1	abbreviation
+reht.	1	abbreviation
+rek.	1	abbreviation
+rek.nro	1	acronym
+rek.nro	2	acronym
+rek.tn	1	acronym
+rek.tn	2	acronym
+REM	1	acronym
+Repsol-YPF	1	acronym
+res.	1	abbreviation
+RFSU	1	acronym
+RHD	1	acronym
+RHJ	1	acronym
+Rhythm Watch Co	1	acronym
+RI	1	acronym
+R&I	1	acronym
+RIM	1	acronym
+rkl	1	acronym
+rkl	2	acronym
+rkm.	1	abbreviation
+RKP	1	acronym
+RKP	2	acronym
+Rkr	1	acronym
+RKT	1	acronym
+RKTL	1	acronym
+rl	1	acronym
+RL	1	acronym
+RL	2	acronym
+RM	1	acronym
+rna	1	acronym
+RN:o	1	abbreviation
+RO	1	acronym
+ROL	1	acronym
+ROM	1	acronym
+RON	1	acronym
+RoPS	1	acronym
+rov.	1	abbreviation
+rp.	1	abbreviation
+Rp	1	acronym
+RP	1	acronym
+rpl	1	acronym
+rs	1	acronym
+rs	2	acronym
+r/s	1	acronym
+r/s	2	acronym
+Rs.	1	abbreviation
+RSA	1	acronym
+RSD	1	acronym
+rsi	1	acronym
+RSS	1	acronym
+R.S.V.P.	1	abbreviation
+rt	1	acronym
+RTE	1	acronym
+rtg	1	acronym
+rtg.	1	abbreviation
+RTL	1	acronym
+RTS	1	acronym
+RU	1	acronym
+RUB	1	acronym
+RUK	1	acronym
+RUR	1	acronym
+RUS	1	acronym
+rva	1	abbreviation
+RVL	1	acronym
+RVLE	1	acronym
+RWE	1	acronym
+RWF	1	acronym
+RWI	1	acronym
+ry	1	acronym
+ry.	1	abbreviation
+rykm.	1	abbreviation
+s	1	acronym
+s	2	acronym
+s.	1	abbreviation
+s. d.	1	abbreviation
+S	1	acronym
+S	2	acronym
+S$	1	acronym
+S$	2	acronym
+š	1	acronym
+Š	1	acronym
+s2	1	acronym
+s:a	1	abbreviation
+SA	1	acronym
+SA	2	acronym
+Saab Parts GB	1	acronym
+SAAB	1	acronym
+SaaS	1	acronym
+sacr. min. kand.	1	abbreviation
+SAE	1	acronym
+SAFA	1	acronym
+sähköp.	1	abbreviation
+SAIC	1	acronym
+sairaanh.op.	1	abbreviation
+sair.hoit.	1	abbreviation
+SAJ	1	acronym
+SAK	1	acronym
+SAK	2	acronym
+S.A.L.I	1	acronym
+SAMOK	1	acronym
+Santander BR	1	acronym
+SAP	1	acronym
+SAR	1	acronym
+SAS	1	acronym
+SASK	1	acronym
+SASK	2	acronym
+SatKS	1	acronym
+SatO	1	acronym
+SATS	1	acronym
+SATU	1	acronym
+säv.	1	abbreviation
+SavO	1	acronym
+SBAB	1	acronym
+SBD	1	acronym
+SBS	1	acronym
+SCA	1	acronym
+SCR	1	acronym
+s.d.	1	abbreviation
+sd.	1	abbreviation
+SDD	1	acronym
+SDG	1	acronym
+Sdp	1	acronym
+Sdp	2	acronym
+SDP	1	acronym
+SDP	2	acronym
+SE	1	acronym
+SEA	1	acronym
+Seat24	1	acronym
+SEB	1	acronym
+SEC	1	acronym
+SEFE	1	acronym
+SEK	1	acronym
+SEL	1	acronym
+Seligson & Co	1	acronym
+SELMU	1	acronym
+SEPA	1	acronym
+SESKO	1	acronym
+SETA	1	acronym
+SEV	1	acronym
+SEY	1	acronym
+Sf	1	acronym
+Sfr	1	acronym
+SFS	1	acronym
+SGD	1	acronym
+SGML	1	acronym
+SGN	1	acronym
+sh.	1	abbreviation
+SHH	1	acronym
+SHO	1	acronym
+SHP	1	acronym
+S.H.T.	1	abbreviation
+SI	1	acronym
+SI$	1	acronym
+SI$	2	acronym
+sia	1	acronym
+SibA	1	acronym
+SibA	2	acronym
+sid.	1	abbreviation
+siht.	1	abbreviation
+sit.	1	abbreviation
+SIT	1	acronym
+SITRA	1	acronym
+Sk	1	acronym
+SK	1	acronym
+SK	2	acronym
+SK	3	acronym
+SKAL	1	acronym
+SKDL	1	acronym
+SKK	1	acronym
+SKL	1	acronym
+SKOP	1	acronym
+Skp	1	acronym
+Skp	2	acronym
+SKP	1	acronym
+SKP	2	acronym
+SKr	1	acronym
+SKS	1	acronym
+SKS	2	acronym
+SKV	1	acronym
+sl.	1	abbreviation
+SL Re	1	acronym
+SLA	1	acronym
+SLL	1	acronym
+SLL	2	acronym
+SLS	1	acronym
+SLSY	1	acronym
+SLU	1	acronym
+SM	1	acronym
+SM	2	acronym
+SMP	1	acronym
+SMP	2	acronym
+SMRT	1	acronym
+SMS	1	acronym
+snro	1	abbreviation
+SNS	1	acronym
+snt	1	acronym
+snt	2	acronym
+SNT	1	acronym
+SNTL	1	acronym
+so	1	acronym
+so.	1	abbreviation
+So. Sh.	1	abbreviation
+SOA	1	acronym
+SOAP	1	acronym
+SOK	1	acronym
+SOK	2	acronym
+SOOL	1	acronym
+sora-r	1	acronym
+sos.	1	abbreviation
+SOS	1	acronym
+sos.dem.	1	abbreviation
+sot.	1	abbreviation
+sotat.	1	abbreviation
+SOTE	1	acronym
+sov.	1	abbreviation
+sp.	1	abbreviation
+SP	1	acronym
+S&P	1	acronym
+SPAL	1	acronym
+SPR	1	acronym
+SQL	1	acronym
+sr	1	acronym
+sr	2	acronym
+sr.	1	abbreviation
+SR	1	acronym
+SRD	1	acronym
+SRG	1	acronym
+srk	1	acronym
+srk	2	acronym
+srk.	1	abbreviation
+SRl	1	acronym
+SRMY	1	acronym
+srnro	1	abbreviation
+SRV	1	acronym
+SSA	1	acronym
+SSKH	1	acronym
+SSP	1	acronym
+SSSR	1	acronym
+st.	1	abbreviation
+ST	1	acronym
+Stakes	1	acronym
+START	1	acronym
+std	1	acronym
+STD	1	acronym
+STHL	1	acronym
+STK	1	acronym
+stm.	1	abbreviation
+STM	1	acronym
+STS	1	acronym
+STT	1	acronym
+STT	2	acronym
+STTK	1	acronym
+STTV	1	acronym
+STUK	1	acronym
+STX	1	acronym
+STX OSV	1	acronym
+su	1	abbreviation
+SUB	1	acronym
+SubTV	1	acronym
+SUKOL	1	acronym
+SUL	1	acronym
+sunn.	1	abbreviation
+suom.	1	abbreviation
+Suomen UNICEF	1	acronym
+Suomi24	1	acronym
+Suomi-Soffa SSF	1	acronym
+SuomiTV	1	acronym
+SUPO	1	acronym
+SUPO	2	acronym
+SUR	1	acronym
+SUVA	1	acronym
+sv	1	acronym
+s.v.	1	abbreviation
+Sv	1	acronym
+Sv	2	acronym
+SV	1	acronym
+SVAL	1	acronym
+SVC	1	acronym
+Svenska.nu	1	acronym
+svh.	1	abbreviation
+SVL	1	acronym
+SVL	2	acronym
+SVT	1	acronym
+SVUL	2	acronym
+SVVK	1	acronym
+SWE	1	acronym
+Sweco PM	1	acronym
+SwF	1	acronym
+SYKE	1	acronym
+SYL	1	acronym
+synt.	1	abbreviation
+SYP	1	acronym
+SYTY	1	acronym
+SZL	1	acronym
+t	1	acronym
+t	2	acronym
+t.	1	abbreviation
+T	1	acronym
+T	2	acronym
+T Sh	1	acronym
+T$	1	acronym
+T$	2	acronym
+TA	1	acronym
+T/A	1	acronym
+TAE	1	acronym
+TaEL	1	acronym
+TaEL	2	acronym
+tait.	1	abbreviation
+TaK	1	acronym
+TaK	2	acronym
+TaL	1	acronym
+TaL	2	acronym
+tal.hoit.	1	abbreviation
+TALK	1	acronym
+taloust.	1	abbreviation
+TaM	1	acronym
+TaM	2	acronym
+Tampereen Urheilijat -38	1	acronym
+TANE	1	acronym
+tanssit.	1	abbreviation
+TAO	1	acronym
+TAP	1	acronym
+TAPRI	1	acronym
+tark.	1	abbreviation
+TASKU	1	acronym
+TaT	1	acronym
+TaT	2	acronym
+TaY	1	acronym
+TaY	2	acronym
+TAYS	1	acronym
+TAYS	2	acronym
+tb.	1	abbreviation
+TB	1	acronym
+TBq	1	acronym
+TBq	2	acronym
+TBWA	1	acronym
+TC	1	acronym
+T°C	1	acronym
+T°C	2	acronym
+Tcd	1	acronym
+Tcd	2	acronym
+TCL	1	acronym
+TCP	1	acronym
+TCP/IP	1	acronym
+TDC	1	acronym
+TDF	1	acronym
+TE	1	acronym
+TeaK	1	acronym
+TEAM	1	acronym
+teatt.	1	abbreviation
+TeK	1	acronym
+TeK	2	acronym
+TEK	1	acronym
+TEKEL	1	acronym
+tekn.	1	abbreviation
+Teknologian tutkimuskeskus VTT	1	acronym
+TeL	1	acronym
+TeL	2	acronym
+TEL	1	acronym
+TEL	2	acronym
+TELA	1	acronym
+Tele2	1	acronym
+TeM	1	acronym
+TeM	2	acronym
+TEM	1	acronym
+TEO	1	acronym
+TEO LT	1	acronym
+teol.	1	abbreviation
+teoll.	1	abbreviation
+terveydenh.	1	abbreviation
+terveystiet.	1	abbreviation
+TES	1	acronym
+TES	2	acronym
+TeT	1	acronym
+TeT	2	acronym
+TET	1	acronym
+TEVA	1	acronym
+TF	1	acronym
+TF	2	acronym
+Tg	1	acronym
+Tg	2	acronym
+TGC-10	1	acronym
+TGK-5	1	acronym
+TGV	1	acronym
+TGy	1	acronym
+TGy	2	acronym
+th.	1	abbreviation
+TH	1	acronym
+TH	2	acronym
+THB	1	acronym
+THL	1	acronym
+THz	1	acronym
+THz	2	acronym
+ti	1	acronym
+ti	2	abbreviation
+TI	1	acronym
+TIF	1	acronym
+TIFF	1	acronym
+Tiffany & Co	1	acronym
+tiist.	1	abbreviation
+TIKE	1	acronym
+til.	1	abbreviation
+TIR	1	acronym
+TIVIT	1	acronym
+tj.	1	abbreviation
+TJ	1	acronym
+TJ	2	acronym
+TJR	1	acronym
+tjs	1	abbreviation
+tjs.	1	abbreviation
+TJS	1	acronym
+tjsp	1	abbreviation
+t&k	1	acronym
+tk.	1	abbreviation
+Tk	1	acronym
+TK	1	acronym
+TK	2	acronym
+Tkat	1	acronym
+Tkat	2	acronym
+TkK	1	acronym
+TkK	2	acronym
+TKK	1	acronym
+TkL	1	acronym
+TkL	2	acronym
+TKL	1	acronym
+Tkr	1	acronym
+TkT	1	acronym
+TkT	2	acronym
+TKT	1	acronym
+Tku	1	abbreviation
+tl	1	acronym
+TL	1	acronym
+TL	2	acronym
+TL	3	acronym
+TLAB	1	acronym
+tlk	1	acronym
+tlk	2	acronym
+tlk.	1	abbreviation
+Tlm	1	acronym
+Tlm	2	acronym
+Tlx	1	acronym
+Tlx	2	acronym
+tm.	1	abbreviation
+Tm	1	acronym
+Tm	2	acronym
+TM	1	acronym
+TM	2	acronym
+TMA	1	acronym
+TMB	1	acronym
+tmi	1	abbreviation
+tmk	1	acronym
+TMK	1	acronym
+TMM	1	acronym
+T-Mobile USA	1	acronym
+Tmol	1	acronym
+Tmol	2	acronym
+tms	1	abbreviation
+tms.	1	abbreviation
+TMT	1	acronym
+tmv	1	abbreviation
+tmv.	1	abbreviation
+tn	1	acronym
+TN	1	acronym
+TN	2	acronym
+TND	1	acronym
+TNK-BP	1	acronym
+to	1	abbreviation
+TOAS	1	acronym
+toht.	1	abbreviation
+toim.	1	abbreviation
+toim.apul.	1	abbreviation
+toim.joht.	1	abbreviation
+toim.siht.	1	abbreviation
+TOKYO	1	acronym
+TOP	1	acronym
+TopK	1	acronym
+Tornion Lentis –88	1	acronym
+torst.	1	abbreviation
+tp.	1	abbreviation
+TPa	1	acronym
+TPa	2	acronym
+TPE	1	acronym
+TPG	1	acronym
+TPK	1	acronym
+TPS	1	acronym
+Trad	1	acronym
+Trad	2	acronym
+Tre	1	abbreviation
+tri	1	abbreviation
+TRL	1	acronym
+TRY	1	acronym
+ts.	1	abbreviation
+Ts	1	acronym
+Ts	2	acronym
+TS	1	acronym
+TS	2	acronym
+TSEMPPI	1	acronym
+TSK	1	acronym
+TSL	1	acronym
+Tsr	1	acronym
+Tsr	2	acronym
+tsto	1	abbreviation
+TSv	1	acronym
+TSv	2	acronym
+TT	1	acronym
+TT	2	acronym
+TT$	1	acronym
+TT$	2	acronym
+TTD	1	acronym
+TtK	1	acronym
+TtK	2	acronym
+TTK	1	acronym
+TTK	2	acronym
+TTKK	1	acronym
+TtL	1	acronym
+TtL	2	acronym
+TTL	1	acronym
+TTL	2	acronym
+TtM	1	acronym
+TtM	2	acronym
+TTM	1	acronym
+TTM	2	acronym
+TTS	1	acronym
+TtT	1	acronym
+TtT	2	acronym
+TTT	1	acronym
+TTT	2	acronym
+TTY	1	acronym
+TTY	2	acronym
+TU	1	acronym
+Tug	1	acronym
+TUI	1	acronym
+TUKES	1	acronym
+TuKKK	1	acronym
+TUL	1	acronym
+TULE	1	acronym
+tuom.	1	abbreviation
+Turun NMKY	1	acronym
+tus	1	acronym
+tv	1	acronym
+tv	2	acronym
+TV	1	acronym
+TV	2	acronym
+TV1	1	acronym
+TV2	1	acronym
+TVK	1	acronym
+TVO	1	acronym
+tvt	1	acronym
+tvt	2	acronym
+TW	1	acronym
+TW	2	acronym
+TWb	1	acronym
+TWb	2	acronym
+TWD	1	acronym
+ty	1	acronym
+TY	1	acronym
+TY	2	acronym
+TYK	1	acronym
+TYKS	1	acronym
+TYKS	2	acronym
+TYKY	1	acronym
+TYS	1	acronym
+TZS	1	acronym
+TΩ	1	acronym
+TΩ	2	acronym
+u	1	acronym
+U	1	acronym
+U Sh	1	acronym
+U2	1	acronym
+U2	2	acronym
+uä	1	acronym
+uä	2	acronym
+UAH	1	acronym
+UAK	1	acronym
+UAZ	1	acronym
+UBS	1	acronym
+UEF	1	acronym
+UFO	1	acronym
+UGS	1	acronym
+UGX	1	acronym
+UHT	1	acronym
+UIL	1	acronym
+UK	1	acronym
+ukg	1	acronym
+UKK	1	acronym
+ula	1	acronym
+ULI	1	acronym
+UM	1	acronym
+UM	2	acronym
+UMO	1	acronym
+umts	1	acronym
+UNCED	1	acronym
+UNCTAD	1	acronym
+UNDP	1	acronym
+UNEP	1	acronym
+UNESCO	1	acronym
+UNFPA	1	acronym
+UNHCR	1	acronym
+UNICEF	1	acronym
+UNIDO	1	acronym
+UNIFIL	1	acronym
+UNITAR	1	acronym
+UNU	1	acronym
+UNU-WIDER	1	acronym
+UPA	1	acronym
+UPI	1	acronym
+UPM	1	acronym
+ups.	1	abbreviation
+UPS	1	acronym
+UPU	1	acronym
+Ur$	1	acronym
+UrhoTV	1	acronym
+URHOtv	1	acronym
+urk.	1	abbreviation
+url	1	acronym
+URL	1	acronym
+us.	1	abbreviation
+US$	1	acronym
+USA	1	acronym
+USB	1	acronym
+USD	1	acronym
+USD	2	acronym
+USN	1	acronym
+USS	1	acronym
+UT	1	acronym
+UTi	1	acronym
+UTVA	1	acronym
+UudPr	1	acronym
+uv	1	acronym
+uv	2	acronym
+UVI	1	acronym
+UYI	1	acronym
+UYP	1	acronym
+UYU	1	acronym
+UZS	1	acronym
+v	1	acronym
+v	2	acronym
+v.	1	abbreviation
+V	1	acronym
+V	2	acronym
+va.	1	abbreviation
+VA	1	acronym
+vääp.	1	abbreviation
+VAG	1	acronym
+VAHO	1	acronym
+Vaiht.	1	abbreviation
+VAK	1	acronym
+VaKK	1	acronym
+VakO	1	acronym
+valt.	1	abbreviation
+valtiot.	1	abbreviation
+Valvira	1	acronym
+VAMP	1	acronym
+VankO	1	acronym
+vänr.	1	abbreviation
+var.	1	abbreviation
+varan.	1	abbreviation
+varat.	1	abbreviation
+vas.	1	abbreviation
+Vas.	1	abbreviation
+VASEK	1	acronym
+vast.	1	abbreviation
+VATT	1	acronym
+VAV	1	acronym
+VEB	1	acronym
+VEF	1	acronym
+VEL	1	acronym
+VEL	2	acronym
+VELL	1	acronym
+VEO	1	acronym
+VES	1	acronym
+VET	1	acronym
+VG-62	1	acronym
+VGA	1	acronym
+VH	1	acronym
+VHF	1	acronym
+VHKK	1	acronym
+VHL	1	acronym
+vht	1	abbreviation
+VHT	1	acronym
+VI	1	acronym
+Viestintäyhdistys A&O	1	acronym
+Vihdin Lentopallo-90	1	acronym
+vihr.	1	abbreviation
+Vihr.	1	abbreviation
+VIP	1	acronym
+VIP	2	acronym
+virk.	1	abbreviation
+VJ	1	acronym
+vk	1	acronym
+vk.	1	abbreviation
+VK	1	acronym
+vkl	2	acronym
+VKL	1	acronym
+VKS	1	acronym
+VKS	2	acronym
+VKSV	1	acronym
+VLP	1	acronym
+vm.	1	abbreviation
+VM	1	acronym
+VMP	1	acronym
+VN	1	acronym
+VN	2	acronym
+VND	1	acronym
+VNK	1	acronym
+VNN	1	acronym
+VNp.	1	abbreviation
+VO	1	acronym
+V.O.	1	abbreviation
+Voimaosakeyhtiö SF	1	acronym
+voim.op.	1	abbreviation
+Vola.ro Student Adventure SRL	1	acronym
+Volvo IT	1	acronym
+VOO	1	acronym
+Vp.	1	abbreviation
+vpj	1	acronym
+vpj	2	acronym
+vpj.	1	abbreviation
+vpk	1	acronym
+vpk	2	acronym
+VPS	1	acronym
+VR	1	acronym
+vrk	1	acronym
+vrk	2	acronym
+VRK	1	acronym
+vrt.	1	abbreviation
+vs	1	abbreviation
+vs.	1	abbreviation
+vsk.	1	abbreviation
+VSO	1	acronym
+V.S.O.	1	abbreviation
+V.S.O.P.	1	abbreviation
+vt	1	acronym
+vt.	1	abbreviation
+VT	1	acronym
+VT	2	acronym
+VTB	1	acronym
+VTK	1	acronym
+VTK	2	acronym
+VTL	1	acronym
+VTL	2	acronym
+VTM	1	acronym
+VTM	2	acronym
+VTML	1	acronym
+VTT	1	acronym
+VTT	2	acronym
+VTT	3	acronym
+VTV	1	acronym
+VTY	1	acronym
+VUV	1	acronym
+vv.	1	abbreviation
+VVO	1	acronym
+VVR	1	acronym
+VVV	1	acronym
+VW	1	acronym
+VW	2	acronym
+VY	1	acronym
+VYO	1	acronym
+w	1	acronym
+W	1	acronym
+W	2	acronym
+WADA	1	acronym
+Walt Disney Co	1	acronym
+WAP	1	acronym
+Wb	1	acronym
+Wb	2	acronym
+wc	1	acronym
+WC	1	acronym
+WC	2	acronym
+WCC	1	acronym
+WELMU	1	acronym
+Westend ICT	1	acronym
+WestLB	1	acronym
+WEU	1	acronym
+Wh	1	acronym
+WHO	1	acronym
+WIDER	1	acronym
+Windows 95	1	acronym
+WiO	1	acronym
+WIPO	1	acronym
+WLAN	1	acronym
+WPP	1	acronym
+WRP	1	acronym
+Ws	1	acronym
+WSOY	1	acronym
+WST	1	acronym
+WTO	1	acronym
+WWF	1	acronym
+www	1	acronym
+www	2	acronym
+WWW	1	acronym
+WWW	2	acronym
+x	1	acronym
+X	1	acronym
+XAF	1	acronym
+XAG	1	acronym
+XAU	1	acronym
+XBA	1	acronym
+XBB	1	acronym
+XBC	1	acronym
+XBD	1	acronym
+XCD	1	acronym
+XDR	1	acronym
+XEU	1	acronym
+XFO	1	acronym
+XFU	1	acronym
+XL	1	acronym
+XML	1	acronym
+XOF	1	acronym
+XPD	1	acronym
+XPF	1	acronym
+XPT	1	acronym
+XRE	1	acronym
+XS	1	acronym
+XTS	1	acronym
+XXX	1	acronym
+y	1	acronym
+Y	1	acronym
+Y2K	1	acronym
+yA	1	acronym
+yA	2	acronym
+YA	1	acronym
+YA	2	acronym
+YAD	1	acronym
+yBq	1	acronym
+yBq	2	acronym
+YBq	1	acronym
+YBq	2	acronym
+yC	1	acronym
+yC	2	acronym
+y°C	1	acronym
+y°C	2	acronym
+YC	1	acronym
+YC	2	acronym
+Y°C	1	acronym
+Y°C	2	acronym
+ycd	1	acronym
+ycd	2	acronym
+Ycd	1	acronym
+Ycd	2	acronym
+YDD	1	acronym
+YEL	1	acronym
+YEL	2	acronym
+YER	1	acronym
+ye.ups.	1	abbreviation
+yF	1	acronym
+yF	2	acronym
+YF	1	acronym
+YF	2	acronym
+yg	1	acronym
+yg	2	acronym
+Yg	1	acronym
+Yg	2	acronym
+yGy	1	acronym
+yGy	2	acronym
+YGy	1	acronym
+YGy	2	acronym
+yH	1	acronym
+yH	2	acronym
+YH	1	acronym
+YH	2	acronym
+yhd.	1	abbreviation
+Yhdistys 9	1	acronym
+yht.	1	abbreviation
+yhteiskuntat.	1	abbreviation
+yHz	1	acronym
+yHz	2	acronym
+YHz	1	acronym
+YHz	2	acronym
+YIT	1	acronym
+yJ	1	acronym
+yJ	2	acronym
+YJ	1	acronym
+YJ	2	acronym
+yK	1	acronym
+yK	2	acronym
+YK	1	acronym
+YK	2	acronym
+ykat	1	acronym
+ykat	2	acronym
+Ykat	1	acronym
+Ykat	2	acronym
+YKI	1	acronym
+yl.	1	abbreviation
+YL	1	acronym
+YLE	1	acronym
+YLE	2	acronym
+ylik.	1	abbreviation
+ylil.	1	abbreviation
+ylim.	1	abbreviation
+ylimatr.	1	abbreviation
+yliop.	1	abbreviation
+yliopp.	1	abbreviation
+ylip.	1	abbreviation
+yliv.	1	abbreviation
+ylm	1	acronym
+ylm	2	acronym
+Ylm	1	acronym
+Ylm	2	acronym
+ylx	1	acronym
+ylx	2	acronym
+Ylx	1	acronym
+Ylx	2	acronym
+ym	1	acronym
+ym	2	acronym
+ym	3	abbreviation
+ym.	1	abbreviation
+Ym	1	acronym
+Ym	2	acronym
+YM	1	acronym
+YMCA	1	acronym
+ymol	1	acronym
+ymol	2	acronym
+Ymol	1	acronym
+Ymol	2	acronym
+YMP	1	acronym
+yms	1	abbreviation
+yms.	1	abbreviation
+yN	1	acronym
+yN	2	acronym
+YN	1	acronym
+YN	2	acronym
+yo	1	acronym
+yo	2	acronym
+yo.	1	abbreviation
+yo.merk.	1	abbreviation
+yp.	1	abbreviation
+yPa	1	acronym
+yPa	2	acronym
+YPa	1	acronym
+YPa	2	acronym
+YPF	1	acronym
+yrad	1	acronym
+yrad	2	acronym
+Yrad	1	acronym
+Yrad	2	acronym
+YRl	1	acronym
+yrnro	1	abbreviation
+ys	1	acronym
+ys	2	acronym
+yS	1	acronym
+yS	2	acronym
+Ys	1	acronym
+Ys	2	acronym
+YS	1	acronym
+YS	2	acronym
+ysr	1	acronym
+ysr	2	acronym
+Ysr	1	acronym
+Ysr	2	acronym
+ySv	1	acronym
+ySv	2	acronym
+YSv	1	acronym
+YSv	2	acronym
+yt	1	acronym
+yT	1	acronym
+yT	2	acronym
+YT	1	acronym
+YT	2	acronym
+YTE	1	acronym
+YTJ	1	acronym
+YTK	1	acronym
+YTK	2	acronym
+YTL	1	acronym
+YTL	2	acronym
+YTL	3	acronym
+YTM	1	acronym
+YTM	2	acronym
+YTN	1	acronym
+YTT	1	acronym
+YTT	2	acronym
+YTV	1	acronym
+YUD	1	acronym
+YUM	1	acronym
+YUN	1	acronym
+YUR	1	acronym
+YUTP	1	acronym
+yv.	1	abbreviation
+yV	1	acronym
+yV	2	acronym
+YV	1	acronym
+YV	2	acronym
+YVA	1	acronym
+yW	1	acronym
+yW	2	acronym
+YW	1	acronym
+YW	2	acronym
+yWb	1	acronym
+yWb	2	acronym
+YWb	1	acronym
+YWb	2	acronym
+YYA	1	acronym
+yΩ	1	acronym
+yΩ	2	acronym
+YΩ	1	acronym
+YΩ	2	acronym
+z	1	acronym
+Z	1	acronym
+Z$	1	acronym
+Z$	2	acronym
+ž	1	acronym
+Ž	1	acronym
+zA	1	acronym
+zA	2	acronym
+ZA	1	acronym
+ZA	2	acronym
+ZAL	1	acronym
+ZAR	1	acronym
+ZBD	1	acronym
+zBq	1	acronym
+zBq	2	acronym
+ZBq	1	acronym
+ZBq	2	acronym
+zC	1	acronym
+zC	2	acronym
+z°C	1	acronym
+z°C	2	acronym
+ZC	1	acronym
+ZC	2	acronym
+Z°C	1	acronym
+Z°C	2	acronym
+zcd	1	acronym
+zcd	2	acronym
+Zcd	1	acronym
+Zcd	2	acronym
+ZDF	1	acronym
+zF	1	acronym
+zF	2	acronym
+ZF	1	acronym
+ZF	2	acronym
+zg	1	acronym
+zg	2	acronym
+Zg	1	acronym
+Zg	2	acronym
+zGy	1	acronym
+zGy	2	acronym
+ZGy	1	acronym
+ZGy	2	acronym
+zH	1	acronym
+zH	2	acronym
+ZH	1	acronym
+ZH	2	acronym
+zHz	1	acronym
+zHz	2	acronym
+ZHz	1	acronym
+ZHz	2	acronym
+zJ	1	acronym
+zJ	2	acronym
+ZJ	1	acronym
+ZJ	2	acronym
+zK	1	acronym
+zK	2	acronym
+ZK	1	acronym
+ZK	2	acronym
+zkat	1	acronym
+zkat	2	acronym
+Zkat	1	acronym
+Zkat	2	acronym
+Zl	1	acronym
+zlm	1	acronym
+zlm	2	acronym
+Zlm	1	acronym
+Zlm	2	acronym
+zlx	1	acronym
+zlx	2	acronym
+Zlx	1	acronym
+Zlx	2	acronym
+zm	1	acronym
+zm	2	acronym
+Zm	1	acronym
+Zm	2	acronym
+ZMK	1	acronym
+zmol	1	acronym
+zmol	2	acronym
+Zmol	1	acronym
+Zmol	2	acronym
+ZMW	1	acronym
+zN	1	acronym
+zN	2	acronym
+ZN	1	acronym
+ZN	2	acronym
+zPa	1	acronym
+zPa	2	acronym
+ZPa	1	acronym
+ZPa	2	acronym
+zrad	1	acronym
+zrad	2	acronym
+Zrad	1	acronym
+Zrad	2	acronym
+ZRN	1	acronym
+ZRZ	1	acronym
+zs	1	acronym
+zs	2	acronym
+zS	1	acronym
+zS	2	acronym
+Zs	1	acronym
+Zs	2	acronym
+ZS	1	acronym
+ZS	2	acronym
+zsr	1	acronym
+zsr	2	acronym
+Zsr	1	acronym
+Zsr	2	acronym
+zSv	1	acronym
+zSv	2	acronym
+ZSv	1	acronym
+ZSv	2	acronym
+zT	1	acronym
+zT	2	acronym
+ZT	1	acronym
+ZT	2	acronym
+ZTE	1	acronym
+zV	1	acronym
+zV	2	acronym
+ZV	1	acronym
+ZV	2	acronym
+zW	1	acronym
+zW	2	acronym
+ZW	1	acronym
+ZW	2	acronym
+zWb	1	acronym
+zWb	2	acronym
+ZWb	1	acronym
+ZWb	2	acronym
+ZWD	1	acronym
+ZWL	1	acronym
+ZWR	1	acronym
+zΩ	1	acronym
+zΩ	2	acronym
+ZΩ	1	acronym
+ZΩ	2	acronym
+μA	1	acronym
+μA	2	acronym
+μBq	1	acronym
+μBq	2	acronym
+μC	1	acronym
+μC	2	acronym
+μ°C	1	acronym
+μ°C	2	acronym
+μcd	1	acronym
+μcd	2	acronym
+μF	1	acronym
+μF	2	acronym
+μg	1	acronym
+μg	2	acronym
+μGy	1	acronym
+μGy	2	acronym
+μH	1	acronym
+μH	2	acronym
+μHz	1	acronym
+μHz	2	acronym
+μJ	1	acronym
+μJ	2	acronym
+μK	1	acronym
+μK	2	acronym
+μkat	1	acronym
+μkat	2	acronym
+μlm	1	acronym
+μlm	2	acronym
+μlx	1	acronym
+μlx	2	acronym
+μm	1	acronym
+μm	2	acronym
+μmol	1	acronym
+μmol	2	acronym
+μN	1	acronym
+μN	2	acronym
+μPa	1	acronym
+μPa	2	acronym
+μrad	1	acronym
+μrad	2	acronym
+μs	1	acronym
+μs	2	acronym
+μS	1	acronym
+μS	2	acronym
+μsr	1	acronym
+μsr	2	acronym
+μSv	1	acronym
+μSv	2	acronym
+μT	1	acronym
+μT	2	acronym
+μV	1	acronym
+μV	2	acronym
+μW	1	acronym
+μW	2	acronym
+μWb	1	acronym
+μWb	2	acronym
+μΩ	1	acronym
+μΩ	2	acronym
+Ω	1	acronym
+Ω	2	acronym

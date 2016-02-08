@@ -1,340 +1,340 @@
-lemma	homonym	new_para	possessive
-alitse	1	PCLE_ALLE	opt
-alla	1	PCLE_KOTONA	opt
-alle	1	PCLE_ALLE	opt
-alta	1	PCLE_KOTONA	opt
-ammolla	1	PCLE_KOTONA	opt
-ammolle	1	PCLE_ALLE	opt
-edelle	1	PCLE_YLLE	opt
-edellä	1	PCLE_IKINÄ	opt
-edeltä	1	PCLE_IKINÄ	opt
-edessä	1	PCLE_IKINÄ	opt
-edestä	1	PCLE_IKINÄ	opt
-editse	1	PCLE_YLLE	opt
-eksyksiin	1	PCLE_NÄKYVIIN	opt
-eteen	1	PCLE_NÄKYVIIN	opt
-hajalla	1	PCLE_KOTONA	opt
-hajalle	1	PCLE_ALLE	opt
-hallussa	1	PCLE_KOTONA	opt
-hallusta	1	PCLE_KOTONA	opt
-haltuun	1	PCLE_VALTAAN	opt
-hampaissa	1	PCLE_KOTONA	opt
-hampaista	1	PCLE_KOTONA	opt
-haralla	1	PCLE_KOTONA	opt
-haralle	1	PCLE_ALLE	opt
-harilla	1	PCLE_KOTONA	opt
-harille	1	PCLE_ALLE	opt
-henkitoreihin	1	PCLE_VALTAAN	opt
-hereille	1	PCLE_YLLE	opt
-hereillä	1	PCLE_IKINÄ	opt
-huomassa	1	PCLE_KOTONA	opt
-huostassa	1	PCLE_KOTONA	opt
-häkellyksiin	1	PCLE_NÄKYVIIN	opt
-häkellyksissä	1	PCLE_IKINÄ	opt
-hämmennyksiin	1	PCLE_NÄKYVIIN	opt
-hämmennyksissä	1	PCLE_IKINÄ	opt
-hämäännyksiin	1	PCLE_NÄKYVIIN	opt
-hämäännyksissä	1	PCLE_IKINÄ	opt
-hätäännyksissä	1	PCLE_IKINÄ	obl
-hörölle	1	PCLE_YLLE	opt
-höröllä	1	PCLE_IKINÄ	opt
-ikinä	1	PCLE_IKINÄ	opt
-ikänä	1	PCLE_IKINÄ	opt
-istualla	1	PCLE_KOTONA	opt
-istualle	1	PCLE_ALLE	opt
-istualta	1	PCLE_KOTONA	opt
-jalkeilla	1	PCLE_KOTONA	opt
-jalkeille	1	PCLE_ALLE	opt
-jaloissa	1	PCLE_KOTONA	opt
-jaloista	1	PCLE_KOTONA	opt
-joutessa	1	PCLE_KOTONA	obl
-jäljessä	1	PCLE_IKINÄ	opt
-jäljestä	1	PCLE_IKINÄ	opt
-kannalla	1	PCLE_KOTONA	opt
-kannalle	1	PCLE_ALLE	opt
-kannoilla	1	PCLE_KOTONA	opt
-kannoille	1	PCLE_ALLE	opt
-kannoilta	1	PCLE_KOTONA	opt
-kanssa	1	PCLE_KOTONA	opt
-kateissa	1	PCLE_KOTONA	obl
-katsomatta	1	PCLE_KOTONA	opt
-kautta	1	PCLE_KOTONA	opt
-keralla	1	PCLE_KOTONA	opt
-keralle	1	PCLE_ALLE	opt
-keskeen	1	PCLE_NÄKYVIIN	opt
-keskelle	1	PCLE_YLLE	opt
-keskellä	1	PCLE_IKINÄ	opt
-keskeltä	1	PCLE_IKINÄ	opt
-kesken	1	PCLE_TYHMÄSTI	opt
-keskessä	1	PCLE_IKINÄ	opt
-keskestä	1	PCLE_IKINÄ	opt
-keskuudessa	1	PCLE_KOTONA	opt
-keskuudesta	1	PCLE_KOTONA	opt
-keskuuteen	1	PCLE_VALTAAN	opt
-kiihdyksiin	1	PCLE_NÄKYVIIN	opt
-kiihdyksissä	1	PCLE_IKINÄ	opt
-kimppuun	1	PCLE_VALTAAN	opt
-kintereille	1	PCLE_YLLE	opt
-kintereillä	1	PCLE_IKINÄ	opt
-kintereiltä	1	PCLE_IKINÄ	opt
-koholla	1	PCLE_KOTONA	opt
-koholle	1	PCLE_ALLE	opt
-kohtaan	1	PCLE_VALTAAN	opt
-kotia	1	PCLE_KOTONA	opt
-kotoa	1	PCLE_KOTONA	opt
-kotona	1	PCLE_KOTONA	opt
-kourissa	1	PCLE_KOTONA	opt
-kourista	1	PCLE_KOTONA	opt
-kuivilla	1	PCLE_KOTONA	opt
-kuiville	1	PCLE_ALLE	opt
-kuohuksiin	1	PCLE_VALTAAN	opt
-kuohuksissa	1	PCLE_KOTONA	opt
-kupeella	1	PCLE_KOTONA	opt
-kupeelle	1	PCLE_ALLE	opt
-kupeelta	1	PCLE_KOTONA	opt
-kustannuksella	1	PCLE_KOTONA	opt
-kuti	2	PCLE_VUOKSI	obl
-kylliksi	1	PCLE_LISÄKSI	opt
-kynsissä	1	PCLE_IKINÄ	opt
-kynsistä	1	PCLE_IKINÄ	opt
-käymäseltä	1	PCLE_IKINÄ	opt
-köniin	1	PCLE_NÄKYVIIN	opt
-laidalla	1	PCLE_KOTONA	opt
-laidalle	1	PCLE_ALLE	opt
-laidalta	1	PCLE_KOTONA	opt
-laidassa	1	PCLE_KOTONA	opt
-laidasta	1	PCLE_KOTONA	opt
-lailla	1	PCLE_KOTONA	opt
-laskematta	1	PCLE_KOTONA	opt
-lerpalla	1	PCLE_KOTONA	opt
-lerpalle	1	PCLE_ALLE	opt
-likelle	1	PCLE_YLLE	opt
-likellä	1	PCLE_IKINÄ	opt
-likeltä	1	PCLE_IKINÄ	opt
-lomitse	1	PCLE_ALLE	opt
-lopulla	1	PCLE_KOTONA	opt
-luokse	1	PCLE_ALLE	opt
-luona	1	PCLE_KOTONA	opt
-luota	1	PCLE_KOTONA	opt
-lurpalla	1	PCLE_KOTONA	opt
-lurpalle	1	PCLE_ALLE	opt
-luvalla	1	PCLE_KOTONA	opt
-lähelle	1	PCLE_YLLE	opt
-lähellä	1	PCLE_IKINÄ	opt
-läheltä	1	PCLE_IKINÄ	opt
-lähettyville	1	PCLE_YLLE	opt
-lähettyvillä	1	PCLE_IKINÄ	obl
-lähettyviltä	1	PCLE_IKINÄ	opt
-läkähdyksiin	1	PCLE_NÄKYVIIN	opt
-läkähdyksissä	1	PCLE_IKINÄ	opt
-lävitse	1	PCLE_YLLE	opt
-makuulla	1	PCLE_KOTONA	opt
-makuulle	1	PCLE_ALLE	opt
-makuulta	1	PCLE_KOTONA	opt
-menehdyksiin	1	PCLE_NÄKYVIIN	opt
-menehdyksissä	1	PCLE_IKINÄ	opt
-meneillä	1	PCLE_IKINÄ	opt
-mielestä	1	PCLE_IKINÄ	opt
-mieliksi	1	PCLE_LISÄKSI	opt
-muassa	1	PCLE_KOTONA	opt
-mukaan	1	PCLE_VALTAAN	opt
-mukana	1	PCLE_KOTONA	opt
-mutrulla	1	PCLE_KOTONA	opt
-mutrulle	1	PCLE_ALLE	opt
-myötä	1	PCLE_IKINÄ	opt
-nimissä	1	PCLE_IKINÄ	opt
-nirpalla	1	PCLE_KOTONA	opt
-niskalla	1	PCLE_KOTONA	opt
-niskalle	1	PCLE_ALLE	opt
-niskalta	1	PCLE_KOTONA	opt
-nojalla	1	PCLE_KOTONA	opt
-nukuksiin	1	PCLE_VALTAAN	opt
-nukuksissa	1	PCLE_KOTONA	opt
-näkyviin	1	PCLE_NÄKYVIIN	opt
-näkyville	1	PCLE_YLLE	opt
-näkyvillä	1	PCLE_IKINÄ	opt
-näkyviltä	1	PCLE_IKINÄ	opt
-näkyvissä	1	PCLE_IKINÄ	opt
-näkyvistä	1	PCLE_IKINÄ	opt
-näkökulmasta	1	PCLE_KOTONA	opt
-ohella	1	PCLE_KOTONA	opt
-ohitse	1	PCLE_ALLE	opt
-ojolla	1	PCLE_KOTONA	opt
-ojolle	1	PCLE_ALLE	opt
-osalta	1	PCLE_KOTONA	opt
-pahimmoiksi	1	PCLE_VUOKSI	opt
-paikalla	1	PCLE_KOTONA	opt
-paikalle	1	PCLE_ALLE	obl
-paikalta	1	PCLE_KOTONA	opt
-pakahduksiin	1	PCLE_VALTAAN	opt
-pakahduksissa	1	PCLE_KOTONA	opt
-palelluksissa	1	PCLE_KOTONA	opt
-pariin	1	PCLE_VALTAAN	opt
-parissa	1	PCLE_KOTONA	opt
-parista	1	PCLE_KOTONA	opt
-perimmältä	1	PCLE_IKINÄ	opt
-perältä	1	PCLE_IKINÄ	obl
-perässä	1	PCLE_IKINÄ	opt
-perästä	1	PCLE_IKINÄ	opt
-perään	1	PCLE_NÄKYVIIN	opt
-pikaistuksissa	1	PCLE_KOTONA	opt
-pikimmältä	1	PCLE_IKINÄ	opt
-piloilla	1	PCLE_KOTONA	obl
-pinnalla	1	PCLE_KOTONA	opt
-pinnalle	1	PCLE_ALLE	opt
-pinnalta	1	PCLE_KOTONA	opt
-pinnassa	1	PCLE_KOTONA	opt
-pinnasta	1	PCLE_KOTONA	opt
-pitkälle	1	PCLE_YLLE	opt
-pitkällä	1	PCLE_IKINÄ	obl
-pohjalla	1	PCLE_KOTONA	opt
-pohjalle	1	PCLE_ALLE	opt
-pohjalta	1	PCLE_KOTONA	opt
-pohjassa	1	PCLE_KOTONA	opt
-pohjasta	1	PCLE_KOTONA	opt
-pohjimmalta	1	PCLE_KOTONA	opt
-puoleen	1	PCLE_VALTAAN	opt
-puolessa	1	PCLE_KOTONA	opt
-puolesta	1	PCLE_KOTONA	opt
-päälle	1	PCLE_YLLE	opt
-päällitse	1	PCLE_YLLE	opt
-päällä	1	PCLE_IKINÄ	opt
-päältä	1	PCLE_IKINÄ	opt
-pökerryksiin	1	PCLE_NÄKYVIIN	opt
-pökerryksissä	1	PCLE_IKINÄ	opt
-pökerryksistä	1	PCLE_IKINÄ	opt
-pörhölle	1	PCLE_YLLE	opt
-pörhöllä	1	PCLE_IKINÄ	opt
-pörrölle	1	PCLE_YLLE	opt
-pörröllä	1	PCLE_IKINÄ	opt
-pöyhölle	1	PCLE_YLLE	opt
-pöyhöllä	1	PCLE_IKINÄ	opt
-reunalla	1	PCLE_KOTONA	opt
-reunalle	1	PCLE_ALLE	opt
-reunalta	1	PCLE_KOTONA	opt
-reunassa	1	PCLE_KOTONA	opt
-reunasta	1	PCLE_KOTONA	opt
-riipalla	1	PCLE_KOTONA	opt
-riipalle	1	PCLE_ALLE	opt
-rinnalla	1	PCLE_KOTONA	opt
-rinnalle	1	PCLE_ALLE	opt
-rinnalta	1	PCLE_KOTONA	opt
-ryypyksiin	1	PCLE_NÄKYVIIN	opt
-ryypyksissä	1	PCLE_IKINÄ	opt
-rökkiin	1	PCLE_NÄKYVIIN	opt
-seisaalla	1	PCLE_KOTONA	opt
-seisaalle	1	PCLE_ALLE	opt
-seisaalta	1	PCLE_KOTONA	opt
-seisoalla	1	PCLE_KOTONA	opt
-seisoalle	1	PCLE_ALLE	opt
-seisoalta	1	PCLE_KOTONA	opt
-seisovilla	1	PCLE_KOTONA	opt
-seisoville	1	PCLE_ALLE	opt
-seisovilta	1	PCLE_KOTONA	obl
-sikkaralla	1	PCLE_KOTONA	opt
-sikkaralle	1	PCLE_ALLE	opt
-silmässä	1	PCLE_IKINÄ	opt
-silmästä	1	PCLE_IKINÄ	opt
-sirrille	1	PCLE_YLLE	obl
-sirrillä	1	PCLE_IKINÄ	obl
-sisimmältä	1	PCLE_IKINÄ	obl
-sisälle	1	PCLE_YLLE	opt
-sisällä	1	PCLE_IKINÄ	opt
-sisältä	1	PCLE_IKINÄ	opt
-sisässä	1	PCLE_IKINÄ	opt
-sisästä	1	PCLE_IKINÄ	opt
-sisään	1	PCLE_NÄKYVIIN	opt
-sivuitse	1	PCLE_ALLE	opt
-supulla	1	PCLE_KOTONA	opt
-supulle	1	PCLE_ALLE	opt
-suussa	1	PCLE_KOTONA	opt
-suusta	1	PCLE_KOTONA	opt
-suutuksiin	1	PCLE_VALTAAN	opt
-suutuksissa	1	PCLE_KOTONA	opt
-taa	1	PCLE_KOTONA	opt
-taakse	1	PCLE_ALLE	opt
-tainnoksiin	1	PCLE_VALTAAN	opt
-tainnoksissa	1	PCLE_KOTONA	opt
-tainnoksista	1	PCLE_KOTONA	opt
-tainnuksiin	1	PCLE_VALTAAN	opt
-tainnuksissa	1	PCLE_KOTONA	opt
-tainnuksista	1	PCLE_KOTONA	opt
-taitse	1	PCLE_ALLE	opt
-takaa	1	PCLE_KOTONA	opt
-takana	1	PCLE_KOTONA	opt
-takia	1	PCLE_KOTONA	opt
-tarpeeksi	1	PCLE_VUOKSI	opt
-tasalla	1	PCLE_KOTONA	opt
-tasalle	1	PCLE_ALLE	opt
-tasalta	1	PCLE_KOTONA	opt
-tautta	1	PCLE_KOTONA	opt
-teloilla	1	PCLE_KOTONA	opt
-teloille	1	PCLE_ALLE	opt
-teloilta	1	PCLE_KOTONA	opt
-torkuksissa	1	PCLE_KOTONA	opt
-tuella	1	PCLE_KOTONA	opt
-tuohduksiin	1	PCLE_VALTAAN	opt
-tuohduksissa	1	PCLE_KOTONA	opt
-tykö	1	PCLE_TYKÖ	opt
-tykönä	1	PCLE_IKINÄ	opt
-tyköä	1	PCLE_IKINÄ	opt
-typerryksiin	1	PCLE_NÄKYVIIN	opt
-typerryksissä	1	PCLE_IKINÄ	opt
-typerryksistä	1	PCLE_IKINÄ	opt
-täynnä	1	PCLE_IKINÄ	opt
-ulottuviin	1	PCLE_VALTAAN	opt
-ulottuvilla	1	PCLE_KOTONA	opt
-ulottuville	1	PCLE_ALLE	opt
-ulottuvilta	1	PCLE_KOTONA	opt
-ulottuvissa	1	PCLE_KOTONA	opt
-ulottuvista	1	PCLE_KOTONA	opt
-uuvuksiin	1	PCLE_VALTAAN	opt
-uuvuksissa	1	PCLE_KOTONA	opt
-vallalla	1	PCLE_KOTONA	opt
-vallalle	1	PCLE_ALLE	opt
-vallassa	1	PCLE_KOTONA	opt
-vallasta	1	PCLE_KOTONA	opt
-valtaan	1	PCLE_VALTAAN	opt
-valveilla	1	PCLE_KOTONA	opt
-valveille	1	PCLE_ALLE	opt
-varaan	1	PCLE_VALTAAN	opt
-varassa	1	PCLE_KOTONA	opt
-varasta	1	PCLE_KOTONA	opt
-varpailla	1	PCLE_KOTONA	opt
-varpaille	1	PCLE_ALLE	opt
-vastaan	1	PCLE_VALTAAN	opt
-vastassa	1	PCLE_KOTONA	opt
-viereen	1	PCLE_NÄKYVIIN	opt
-vierelle	1	PCLE_YLLE	opt
-vierellä	1	PCLE_IKINÄ	opt
-viereltä	1	PCLE_IKINÄ	opt
-vieressä	1	PCLE_IKINÄ	opt
-vierestä	1	PCLE_IKINÄ	opt
-vieritse	1	PCLE_YLLE	opt
-vihoissa	1	PCLE_KOTONA	opt
-vimmastuksissa	1	PCLE_KOTONA	opt
-voivuksiin	1	PCLE_VALTAAN	opt
-voivuksissa	1	PCLE_KOTONA	opt
-välille	1	PCLE_YLLE	opt
-välissä	1	PCLE_IKINÄ	opt
-välistä	1	PCLE_IKINÄ	opt
-välitse	1	PCLE_YLLE	opt
-väsyksiin	1	PCLE_NÄKYVIIN	opt
-väsyksissä	1	PCLE_IKINÄ	opt
-ylettyville	1	PCLE_YLLE	opt
-ylettyvillä	1	PCLE_IKINÄ	opt
-ylettyviltä	1	PCLE_IKINÄ	opt
-ylitse	1	PCLE_YLLE	opt
-ylle	1	PCLE_YLLE	opt
-yllä	1	PCLE_IKINÄ	opt
-yltä	1	PCLE_IKINÄ	opt
-ymmälle	1	PCLE_YLLE	opt
-ymmällä	1	PCLE_IKINÄ	opt
-ympärille	1	PCLE_YLLE	opt
-ympärillä	1	PCLE_IKINÄ	opt
-ympäriltä	1	PCLE_IKINÄ	opt
-äkikseltä	1	PCLE_IKINÄ	opt
-äkkiseltä	1	PCLE_IKINÄ	opt
-ääneen	1	PCLE_NÄKYVIIN	opt
-ääressä	1	PCLE_IKINÄ	opt
-äärestä	1	PCLE_IKINÄ	opt
+lemma	homonym	possessive
+alitse	1	opt
+alla	1	opt
+alle	1	opt
+alta	1	opt
+ammolla	1	opt
+ammolle	1	opt
+edelle	1	opt
+edellä	1	opt
+edeltä	1	opt
+edessä	1	opt
+edestä	1	opt
+editse	1	opt
+eksyksiin	1	opt
+eteen	1	opt
+hajalla	1	opt
+hajalle	1	opt
+hallussa	1	opt
+hallusta	1	opt
+haltuun	1	opt
+hampaissa	1	opt
+hampaista	1	opt
+haralla	1	opt
+haralle	1	opt
+harilla	1	opt
+harille	1	opt
+henkitoreihin	1	opt
+hereille	1	opt
+hereillä	1	opt
+huomassa	1	opt
+huostassa	1	opt
+häkellyksiin	1	opt
+häkellyksissä	1	opt
+hämmennyksiin	1	opt
+hämmennyksissä	1	opt
+hämäännyksiin	1	opt
+hämäännyksissä	1	opt
+hätäännyksissä	1	obl
+hörölle	1	opt
+höröllä	1	opt
+ikinä	1	opt
+ikänä	1	opt
+istualla	1	opt
+istualle	1	opt
+istualta	1	opt
+jalkeilla	1	opt
+jalkeille	1	opt
+jaloissa	1	opt
+jaloista	1	opt
+joutessa	1	obl
+jäljessä	1	opt
+jäljestä	1	opt
+kannalla	1	opt
+kannalle	1	opt
+kannoilla	1	opt
+kannoille	1	opt
+kannoilta	1	opt
+kanssa	1	opt
+kateissa	1	obl
+katsomatta	1	opt
+kautta	1	opt
+keralla	1	opt
+keralle	1	opt
+keskeen	1	opt
+keskelle	1	opt
+keskellä	1	opt
+keskeltä	1	opt
+kesken	1	opt
+keskessä	1	opt
+keskestä	1	opt
+keskuudessa	1	opt
+keskuudesta	1	opt
+keskuuteen	1	opt
+kiihdyksiin	1	opt
+kiihdyksissä	1	opt
+kimppuun	1	opt
+kintereille	1	opt
+kintereillä	1	opt
+kintereiltä	1	opt
+koholla	1	opt
+koholle	1	opt
+kohtaan	1	opt
+kotia	1	opt
+kotoa	1	opt
+kotona	1	opt
+kourissa	1	opt
+kourista	1	opt
+kuivilla	1	opt
+kuiville	1	opt
+kuohuksiin	1	opt
+kuohuksissa	1	opt
+kupeella	1	opt
+kupeelle	1	opt
+kupeelta	1	opt
+kustannuksella	1	opt
+kuti	2	obl
+kylliksi	1	opt
+kynsissä	1	opt
+kynsistä	1	opt
+käymäseltä	1	opt
+köniin	1	opt
+laidalla	1	opt
+laidalle	1	opt
+laidalta	1	opt
+laidassa	1	opt
+laidasta	1	opt
+lailla	1	opt
+laskematta	1	opt
+lerpalla	1	opt
+lerpalle	1	opt
+likelle	1	opt
+likellä	1	opt
+likeltä	1	opt
+lomitse	1	opt
+lopulla	1	opt
+luokse	1	opt
+luona	1	opt
+luota	1	opt
+lurpalla	1	opt
+lurpalle	1	opt
+luvalla	1	opt
+lähelle	1	opt
+lähellä	1	opt
+läheltä	1	opt
+lähettyville	1	opt
+lähettyvillä	1	obl
+lähettyviltä	1	opt
+läkähdyksiin	1	opt
+läkähdyksissä	1	opt
+lävitse	1	opt
+makuulla	1	opt
+makuulle	1	opt
+makuulta	1	opt
+menehdyksiin	1	opt
+menehdyksissä	1	opt
+meneillä	1	opt
+mielestä	1	opt
+mieliksi	1	opt
+muassa	1	opt
+mukaan	1	opt
+mukana	1	opt
+mutrulla	1	opt
+mutrulle	1	opt
+myötä	1	opt
+nimissä	1	opt
+nirpalla	1	opt
+niskalla	1	opt
+niskalle	1	opt
+niskalta	1	opt
+nojalla	1	opt
+nukuksiin	1	opt
+nukuksissa	1	opt
+näkyviin	1	opt
+näkyville	1	opt
+näkyvillä	1	opt
+näkyviltä	1	opt
+näkyvissä	1	opt
+näkyvistä	1	opt
+näkökulmasta	1	opt
+ohella	1	opt
+ohitse	1	opt
+ojolla	1	opt
+ojolle	1	opt
+osalta	1	opt
+pahimmoiksi	1	opt
+paikalla	1	opt
+paikalle	1	obl
+paikalta	1	opt
+pakahduksiin	1	opt
+pakahduksissa	1	opt
+palelluksissa	1	opt
+pariin	1	opt
+parissa	1	opt
+parista	1	opt
+perimmältä	1	opt
+perältä	1	obl
+perässä	1	opt
+perästä	1	opt
+perään	1	opt
+pikaistuksissa	1	opt
+pikimmältä	1	opt
+piloilla	1	obl
+pinnalla	1	opt
+pinnalle	1	opt
+pinnalta	1	opt
+pinnassa	1	opt
+pinnasta	1	opt
+pitkälle	1	opt
+pitkällä	1	obl
+pohjalla	1	opt
+pohjalle	1	opt
+pohjalta	1	opt
+pohjassa	1	opt
+pohjasta	1	opt
+pohjimmalta	1	opt
+puoleen	1	opt
+puolessa	1	opt
+puolesta	1	opt
+päälle	1	opt
+päällitse	1	opt
+päällä	1	opt
+päältä	1	opt
+pökerryksiin	1	opt
+pökerryksissä	1	opt
+pökerryksistä	1	opt
+pörhölle	1	opt
+pörhöllä	1	opt
+pörrölle	1	opt
+pörröllä	1	opt
+pöyhölle	1	opt
+pöyhöllä	1	opt
+reunalla	1	opt
+reunalle	1	opt
+reunalta	1	opt
+reunassa	1	opt
+reunasta	1	opt
+riipalla	1	opt
+riipalle	1	opt
+rinnalla	1	opt
+rinnalle	1	opt
+rinnalta	1	opt
+ryypyksiin	1	opt
+ryypyksissä	1	opt
+rökkiin	1	opt
+seisaalla	1	opt
+seisaalle	1	opt
+seisaalta	1	opt
+seisoalla	1	opt
+seisoalle	1	opt
+seisoalta	1	opt
+seisovilla	1	opt
+seisoville	1	opt
+seisovilta	1	obl
+sikkaralla	1	opt
+sikkaralle	1	opt
+silmässä	1	opt
+silmästä	1	opt
+sirrille	1	obl
+sirrillä	1	obl
+sisimmältä	1	obl
+sisälle	1	opt
+sisällä	1	opt
+sisältä	1	opt
+sisässä	1	opt
+sisästä	1	opt
+sisään	1	opt
+sivuitse	1	opt
+supulla	1	opt
+supulle	1	opt
+suussa	1	opt
+suusta	1	opt
+suutuksiin	1	opt
+suutuksissa	1	opt
+taa	1	opt
+taakse	1	opt
+tainnoksiin	1	opt
+tainnoksissa	1	opt
+tainnoksista	1	opt
+tainnuksiin	1	opt
+tainnuksissa	1	opt
+tainnuksista	1	opt
+taitse	1	opt
+takaa	1	opt
+takana	1	opt
+takia	1	opt
+tarpeeksi	1	opt
+tasalla	1	opt
+tasalle	1	opt
+tasalta	1	opt
+tautta	1	opt
+teloilla	1	opt
+teloille	1	opt
+teloilta	1	opt
+torkuksissa	1	opt
+tuella	1	opt
+tuohduksiin	1	opt
+tuohduksissa	1	opt
+tykö	1	opt
+tykönä	1	opt
+tyköä	1	opt
+typerryksiin	1	opt
+typerryksissä	1	opt
+typerryksistä	1	opt
+täynnä	1	opt
+ulottuviin	1	opt
+ulottuvilla	1	opt
+ulottuville	1	opt
+ulottuvilta	1	opt
+ulottuvissa	1	opt
+ulottuvista	1	opt
+uuvuksiin	1	opt
+uuvuksissa	1	opt
+vallalla	1	opt
+vallalle	1	opt
+vallassa	1	opt
+vallasta	1	opt
+valtaan	1	opt
+valveilla	1	opt
+valveille	1	opt
+varaan	1	opt
+varassa	1	opt
+varasta	1	opt
+varpailla	1	opt
+varpaille	1	opt
+vastaan	1	opt
+vastassa	1	opt
+viereen	1	opt
+vierelle	1	opt
+vierellä	1	opt
+viereltä	1	opt
+vieressä	1	opt
+vierestä	1	opt
+vieritse	1	opt
+vihoissa	1	opt
+vimmastuksissa	1	opt
+voivuksiin	1	opt
+voivuksissa	1	opt
+välille	1	opt
+välissä	1	opt
+välistä	1	opt
+välitse	1	opt
+väsyksiin	1	opt
+väsyksissä	1	opt
+ylettyville	1	opt
+ylettyvillä	1	opt
+ylettyviltä	1	opt
+ylitse	1	opt
+ylle	1	opt
+yllä	1	opt
+yltä	1	opt
+ymmälle	1	opt
+ymmällä	1	opt
+ympärille	1	opt
+ympärillä	1	opt
+ympäriltä	1	opt
+äkikseltä	1	opt
+äkkiseltä	1	opt
+ääneen	1	opt
+ääressä	1	opt
+äärestä	1	opt

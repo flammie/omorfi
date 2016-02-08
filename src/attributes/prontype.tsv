@@ -1,99 +1,99 @@
-lemma	homonym	new_para	prontype
-ei-kukaan	1	PRON_KUKAAN	quantifier
-ei-mikään	1	PRON_MIKÄÄN	quantifier
-eri	2	PRON_KOKO	quantifier
-eräs	1	PRON_ERÄS	quantifier|indefinite
-harva	2	PRON_SAMA	quantifier
-harvempi	1	PRON_USEAMPI	quantifier
-he	2	PRON_ME	personal|pl3
-hän	1	PRON_HÄN	personal|sg3
-hää	2	PRON_HÄÄ	personal|sg3
-itse	2	PRON_ITSE	reflexive
-joka	1	PRON_JOKA	relative
-joka	2	PRON_KOKO	quantifier|indefinite
-jokainen	1	PRON_JOKAINEN	quantifier
-jokin	1	PRON_JOKIN	quantifier|indefinite
-joku	1	PRON_JOKU	quantifier|indefinite
-jokunen	1	PRON_JOKAINEN	quantifier
-jollainen	1	A_AAKKOSELLINEN	relative
-jolloin	1	ADV_JOLLOIN	relative
-jompi	1	PRON_KUMPI	quantifier
-jompikumpi	1	PRON_JOMPIKUMPI	quantifier|indefinite
-jonkinlainen	1	A_AAKKOSELLINEN	quantifier
-kaikki	1	PRON_KAIKKI	quantifier
-ken	1	PRON_MÄÄ	interrogative
-kenkään	1	PRON_MÄÄ	interrogative
-koko	3	PRON_KOKO	quantifier
-kuinka	1	ADV_KUHUN	interrogative
-kuka	1	PRON_KUKA	interrogative
-kuka	2	PRON_KUKA	quantifier
-kuka	3	PRON_KUKA	relative
-kukaan	1	PRON_KUKAAN	quantifier
-kukakin	1	PRON_KUKAKIN	quantifier
-kukin	1	PRON_KUKIN	quantifier
-kumpainenkin	1	PRON_KOKO	adj
-kumpi	1	PRON_KUMPI	interrogative
-kumpi	2	PRON_KUMPI	quantifier
-kumpikaan	1	PRON_KUMPIKAAN	quantifier
-kumpikin	1	PRON_KUMPIKIN	quantifier
-ma	3	PRON_MA	personal|sg1
-me	1	PRON_ME	personal|pl1
-mi	2	PRON_KOKO	interrogative
-mie	1	PRON_MIE	personal|sg1
-mikin	1	PRON_MIKIN	quantifier
-mikä	1	PRON_MIKÄ	interrogative
-mikä	2	PRON_MIKÄ	quantifier
-mikä	3	PRON_MIKÄ	relative
-mikäkin	1	PRON_MIKÄKIN	quantifier
-mikään	1	PRON_MIKÄÄN	quantifier
-millainen	1	A_AAKKOSELLINEN	interrogative
-millainen	2	A_AAKKOSELLINEN	quantifier
-mimmoinen	1	A_AAKKOSELLINEN	interrogative
-minkälainen	1	A_AAKKOSELLINEN	interrogative
-minkäslainen	1	A_AAKKOSELLINEN	interrogative
-minkäänlainen	1	A_AAKKOSELLINEN	interrogative
-minä	1	PRON_MINÄ	personal|sg1
-miten	1	ADV_MITEN	interrogative
-molemmat	1	PRON_MOLEMMAT	quantifier
-mones	1	PRON_MONES	quantifier
-moni	1	PRON_MONI	quantifier
-monta	1	PRON_MONTA	quantifier
-muu	3	PRON_MUU	quantifier
-muuan	1	PRON_MUUAN	quantifier|indefinite
-muudan	1	PRON_MUUAN	quantifier|indefinite
-muutama	1	PRON_MUUTAMA	quantifier
-mä	1	PRON_MÄ	personal|sg1
-mää	2	PRON_MÄÄ	personal|sg1
-ne	1	PRON_NE	demonstrative
-noi	1	PRON_NOI	demonstrative
-nuo	1	PRON_NUO	demonstrative
-nämä	1	PRON_NÄMÄ	demonstrative
-sa	1	PRON_MA	personal|sg2
-sama	1	PRON_SAMA	quantifier
-samanlainen	1	A_AAKKOSELLINEN	quantifier
-se	1	PRON_SE	demonstrative
-sellainen	1	A_AAKKOSELLINEN	demonstrative
-semmoinen	1	A_AAKKOSELLINEN	demonstrative
-semmonen	1	A_AAKKOSELLINEN	demonstrative
-sie	1	PRON_MIE	personal|sg2
-sinä	1	PRON_MINÄ	personal|sg2
-sä	1	PRON_MÄ	personal|sg2
-sää	2	PRON_MÄÄ	personal|sg2
-te	1	PRON_ME	personal|pl2
-toi	1	PRON_TOI	demonstrative
-toinen	3	PRON_TOINEN	quantifier
-toinen	4	PRON_TOINEN	reciprocal
-tommonen	1	A_AAKKOSELLINEN	demonstrative
-tuo	1	PRON_TUO	demonstrative
-tuollainen	1	A_AAKKOSELLINEN	demonstrative
-tuolloinen	1	A_AAKKOSELLINEN	demonstrative
-tuommoinen	1	A_AAKKOSELLINEN	demonstrative
-tällainen	1	A_AAKKOSELLINEN	demonstrative
-tämmöinen	1	A_KYLMÄJÄRKINEN	demonstrative
-tämä	1	PRON_TÄMÄ	demonstrative
-tää	1	PRON_MÄÄ	demonstrative
-usea	2	PRON_USEA	quantifier
-useampi	1	PRON_USEAMPI	quantifier
-yks	2	PRON_MÄÄ	quantifier
-yksi	2	PRON_YKSI	quantifier
-yksikään	1	PRON_KOKO	quantifier
+lemma	homonym	prontype
+ei-kukaan	1	quantifier
+ei-mikään	1	quantifier
+eri	2	quantifier
+eräs	1	quantifier|indefinite
+harva	2	quantifier
+harvempi	1	quantifier
+he	2	personal|pl3
+hän	1	personal|sg3
+hää	2	personal|sg3
+itse	2	reflexive
+joka	1	relative
+joka	2	quantifier|indefinite
+jokainen	1	quantifier
+jokin	1	quantifier|indefinite
+joku	1	quantifier|indefinite
+jokunen	1	quantifier
+jollainen	1	relative
+jolloin	1	relative
+jompi	1	quantifier
+jompikumpi	1	quantifier|indefinite
+jonkinlainen	1	quantifier
+kaikki	1	quantifier
+ken	1	interrogative
+kenkään	1	interrogative
+koko	3	quantifier
+kuinka	1	interrogative
+kuka	1	interrogative
+kuka	2	quantifier
+kuka	3	relative
+kukaan	1	quantifier
+kukakin	1	quantifier
+kukin	1	quantifier
+kumpainenkin	1	adj
+kumpi	1	interrogative
+kumpi	2	quantifier
+kumpikaan	1	quantifier
+kumpikin	1	quantifier
+ma	3	personal|sg1
+me	1	personal|pl1
+mi	2	interrogative
+mie	1	personal|sg1
+mikin	1	quantifier
+mikä	1	interrogative
+mikä	2	quantifier
+mikä	3	relative
+mikäkin	1	quantifier
+mikään	1	quantifier
+millainen	1	interrogative
+millainen	2	quantifier
+mimmoinen	1	interrogative
+minkälainen	1	interrogative
+minkäslainen	1	interrogative
+minkäänlainen	1	interrogative
+minä	1	personal|sg1
+miten	1	interrogative
+molemmat	1	quantifier
+mones	1	quantifier
+moni	1	quantifier
+monta	1	quantifier
+muu	3	quantifier
+muuan	1	quantifier|indefinite
+muudan	1	quantifier|indefinite
+muutama	1	quantifier
+mä	1	personal|sg1
+mää	2	personal|sg1
+ne	1	demonstrative
+noi	1	demonstrative
+nuo	1	demonstrative
+nämä	1	demonstrative
+sa	1	personal|sg2
+sama	1	quantifier
+samanlainen	1	quantifier
+se	1	demonstrative
+sellainen	1	demonstrative
+semmoinen	1	demonstrative
+semmonen	1	demonstrative
+sie	1	personal|sg2
+sinä	1	personal|sg2
+sä	1	personal|sg2
+sää	2	personal|sg2
+te	1	personal|pl2
+toi	1	demonstrative
+toinen	3	quantifier
+toinen	4	reciprocal
+tommonen	1	demonstrative
+tuo	1	demonstrative
+tuollainen	1	demonstrative
+tuolloinen	1	demonstrative
+tuommoinen	1	demonstrative
+tällainen	1	demonstrative
+tämmöinen	1	demonstrative
+tämä	1	demonstrative
+tää	1	demonstrative
+usea	2	quantifier
+useampi	1	quantifier
+yks	2	quantifier
+yksi	2	quantifier
+yksikään	1	quantifier

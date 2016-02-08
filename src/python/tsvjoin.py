@@ -47,7 +47,7 @@ def main():
             dest='outfilename',
             metavar="OFILE",
             help="write resulting data to OFILE")
-    ap.add_argument("--fields", "-f", action="store", type=int, default=2,
+    ap.add_argument("--fields", "-f", action="store", type=int, default=3,
             metavar="N", help="read N fields from master")
     ap.add_argument("--separator", "-s", action="store", default="\t",
             metavar="SEP", help="use SEP as separator")
@@ -81,14 +81,14 @@ def main():
                 if args.verbose and (linecount % 10000) == 0:
                     print(linecount, "...", end='\r')
                 if len(csv_parts) < args.fields - 1:
-                    print("Must have at least N-1 separators on each "
+                    print("Must have at least", args.fields - 2, "separators on each "
                           "non-comment non-empty line. Skipping:", csv_line,
                           file=stderr)
                     continue
                 if csv_parts[-1].endswith('<-HEADERS'):
                     # skip header line
                     continue
-                key = args.separator.join(csv_parts[0:args.fields])
+                key = args.separator.join(csv_parts[0:args.fields-1])
                 words[key] = csv_parts
                 entry_count += 1
         if args.verbose:
@@ -107,19 +107,19 @@ def main():
                     strict=True)
             headers = next(join_reader)
             if args.verbose:
-                print("Join should go to", headers[3])
+                print("Join should go to", headers[args.fields-1])
             for join_parts in join_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000) == 0:
                     print(linecount, "...", end='\r')
                 join_on = ''
-                if len(join_parts) < 4:
-                    print("Must have at least N separtors on each",
+                if len(join_parts) < args.fields:
+                    print("Must have at least", args.fields - 1,"separators on each",
                         "non-comment non-empty line of join; Skipping:\n", 
                         args.separator.join(join_parts),
                         file=stderr)
                     continue
-                join_on = args.separator.join(join_parts[0:args.fields])
+                join_on = args.separator.join(join_parts[0:args.fields-1])
                 if join_parts[-1].endswith('<-HEADERS'):
                     # skip header line
                     continue
@@ -142,11 +142,11 @@ def main():
                 else:
                     dedupe.add(join_on)
                     this_entry = words[join_on]
-                    this_entry += [headers[3] + '=' + join_parts[3]]
+                    this_entry += [headers[args.fields-1] + '=' + join_parts[args.fields-1]]
                     words[join_on] = this_entry
                     joincount += 1
         if args.verbose:
-            print(joincount, "lexical joins for", headers[3],
+            print(joincount, "lexical joins for", headers[args.fields-1],
                   "in the table\n")
 
     if errors:
