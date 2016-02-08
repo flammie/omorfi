@@ -145,13 +145,14 @@ def format_feats_ud(anal):
                 rvs['VerbForm'] = 'Fin'
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
+            elif value == 'REFLEXIVE':
+                rvs['Reflexive'] = 'Yes'
             elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
                 # not annotated in UD feats: 
                 # * punctuation classes
                 continue
-            elif value in ['REFLEXIVE', 'DECIMAL', 'ROMAN']:
+            elif value in ['DECIMAL', 'ROMAN']:
                 # not annotated in UD feats:
-                # * reflexive PronType
                 # * decimal, roman NumType
                 continue
             else:
