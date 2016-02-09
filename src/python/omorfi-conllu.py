@@ -39,7 +39,7 @@ def get_last_feats(anal):
     return rvs
 
 
-def format_feats_ud(anal):
+def format_feats_ud(anal, hacks=None):
     feats = get_last_feats(anal)
     rvs = dict()
     for f in feats:
@@ -62,7 +62,8 @@ def format_feats_ud(anal):
             elif 'PAST' in value:
                 rvs['Tense'] = 'Past'
         elif key == 'MOOD':
-            rvs['VerbForm'] = 'Fin'
+            if not hacks:
+                rvs['VerbForm'] = 'Fin'
             if value == 'INDV':
                 rvs['Mood'] = 'Ind'
             elif value == 'COND':
@@ -105,7 +106,8 @@ def format_feats_ud(anal):
                 rvs.pop('Voice')
             elif value == 'NEG':
                 rvs['Negative'] = 'Neg'
-                rvs['VerbForm'] = 'Fin'
+                if not hacks:
+                    rvs['VerbForm'] = 'Fin'
         elif key == 'PCP':
             rvs['VerbForm'] = 'Part'
             if value == 'VA':
@@ -142,7 +144,8 @@ def format_feats_ud(anal):
         elif key == 'SUBCAT':
             if value == 'NEG':
                 rvs['Negative'] = 'Neg'
-                rvs['VerbForm'] = 'Fin'
+                if not hacks:
+                    rvs['VerbForm'] = 'Fin'
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
             elif value == 'REFLEXIVE':
@@ -226,7 +229,11 @@ def format_feats_ud(anal):
     else:
         return '_'
 
-def format_upos_tdt(upos):
+def format_third_ftb(anal):
+    upos = get_last_feat("UPOS", anal)
+    return upos
+
+def format_third_tdt(upos):
     if upos in ['NOUN', 'PROPN']:
         return 'N'
     elif upos == 'ADJ':
@@ -252,7 +259,7 @@ def format_upos_tdt(upos):
     else:
         return 'X'
 
-def try_analyses_conllu(original, wordn, surf, anals, outfile):
+def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
     for anal in anals:
         upos = get_last_feat("UPOS", anal)
         if upos == original[3]:
@@ -260,34 +267,38 @@ def try_analyses_conllu(original, wordn, surf, anals, outfile):
             if feats == original[5]:
                 lemmas = "#".join(get_lemmas(anal))
                 if lemmas == original[2]:
-                    return print_analyses_conllu(wordn, surf, anal, outfile)
+                    return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
     # no exact match found (re-try without lemma)
     for anal in anals:
         upos = get_last_feat("UPOS", anal)
         if upos == original[3]:
             feats = format_feats_ud(anal)
             if feats == original[5]:
-                return print_analyses_conllu(wordn, surf, anal, outfile)
+                return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
     # and re-try without feats
     for anal in anals:
         upos = get_last_feat("UPOS", anal)
         if upos == original[3]:
-            return print_analyses_conllu(wordn, surf, anal, outfile)
-    return print_analyses_conllu(wordn, surf, anals[0], outfile)
+            return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
+    return print_analyses_conllu(wordn, surf, anals[0], outfile, hacks)
 
-def debug_analyses_conllu(original, wordn, surf, anals, outfile):
-    print(original, file=outfile)
+def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
+    print("# REFERENCE(python):", original, file=outfile)
     for anal in anals:
-        print_analyses_conllu(wordn, surf, anal, outfile)
+        print_analyses_conllu(wordn, surf, anal, outfile, hacks)
 
-def print_analyses_conllu(wordn, surf, anal, outfile):
+def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
     upos = get_last_feat("UPOS", anal)
     if not upos or upos == "":
         upos = 'X'
+    if hacks == 'ftb':
+        third = format_third_ftb(anal)
+    else:
+        third = format_third_tdt(upos)
     print(wordn, surf, "#".join(get_lemmas(anal)), 
             upos, 
-            format_upos_tdt(upos),
-            format_feats_ud(anal),
+            third,
+            format_feats_ud(anal, hacks),
             "_", "_", "_", "_", sep="\t", file=outfile)
 
 def main():
@@ -305,6 +316,9 @@ def main():
             help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-O', '--oracle', action='store_true',
             help="match to values in input when parsing if possible")
+    a.add_argument('--hacks', metavar='HACKS',
+            help="mangle anaelyses to match HACKS version of UD",
+            choices=['ftb'])
     a.add_argument('--debug', action='store_true',
             help="print lots of debug info while processing")
     options = a.parse_args()
@@ -351,13 +365,13 @@ def main():
             anals = omorfi.analyse(surf)
             if anals and len(anals) > 0:
                 if options.debug:
-                    debug_analyses_conllu(fields, index, surf, anals, options.outfile)
+                    debug_analyses_conllu(fields, index, surf, anals, options.outfile, options.hacks)
                 elif options.oracle:
                     try_analyses_conllu(fields, index, surf, anals, 
-                            options.outfile)
+                            options.outfile, options.hacks)
                 else:
                     print_analyses_conllu(index, surf, anals[0], 
-                            options.outfile)
+                            options.outfile, options.hacks)
             if not anals or len(anals) == 0 or (len(anals) == 1 and 
                     'UNKNOWN' in anals[0][0]):
                 unknowns += 1
