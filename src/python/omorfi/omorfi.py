@@ -112,9 +112,12 @@ class Omorfi:
                 print('No access to ', path, file=stderr)
             pass
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
-        if len(parts) < 2:
+        if len(parts) != 2:
             if this._verbosity:
                 print('not loaded', path)
+        elif not parts[0].startswith('omorfi'):
+            if this._verbosity:
+                print('not omorfi', path)
         elif parts[1] == 'analyse' and include['analyse']:
             if this._verbosity:
                 print('analyser', parts[0])
