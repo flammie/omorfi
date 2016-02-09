@@ -1,5 +1,5 @@
-#!/usr/bin/env -O python3
-from omorfi import Omorfi
+#!/usr/bin/env python3
+from omorfi.omorfi import Omorfi
 from glob  import glob
 from sys import stdout, argv
 import re
@@ -61,7 +61,7 @@ def add_to_sent(analyses, surf):
     global sent
     tags = set()
     for analysis in analyses:
-        parts = analysis.output.split('][')
+        parts = analysis[0].split('][')
         for part in parts:
             tag = part.rstrip(']').lstrip('[')
             tags.add(tag)
@@ -87,7 +87,7 @@ def add_to_sent(analyses, surf):
 # analysis mangling
 
 def harvest_word_ids(analysis):
-    word_ids = re.search(r"\[WORD_ID=([^]]*)\]", analysis.output)
+    word_ids = re.search(r"\[WORD_ID=([^]]*)\]", analysis[0])
     return "#".join(word_ids.groups())
 
 def extract_word_ids(word_pos):
@@ -109,7 +109,7 @@ def extract_tag(word_pos, tagstart):
 
 def stat_word_ids(token, analyses):
     for analysis in analyses:
-        for word_id in re.finditer(r"\[WORD_ID=([^]]*)\]", analysis.output):
+        for word_id in re.finditer(r"\[WORD_ID=([^]]*)\]", analysis[0]):
             if not word_id.group(1) in lemma_freqs:
                 lemma_freqs[word_id.group(1)] = 1
             else:
@@ -119,11 +119,11 @@ def stat_word_ids(token, analyses):
 
 def stat_nominal_cases(token, analyses, logfile):
     for analysis in analyses:
-        if '[POS=NOUN]' in analysis.output:
+        if '[POS=NOUN]' in analysis[0]:
             word_id = harvest_word_ids(analysis)
-            case = re.search(r"\[CASE=([^]]*)\]", analysis.output)
+            case = re.search(r"\[CASE=([^]]*)\]", analysis[0])
             if not case:
-                print("ERROR! missing case in", token, analysis.output, 
+                print("ERROR! missing case in", token, analysis[0], 
                         file=logfile)
                 continue
             if not case.group(1) in nominal_case_freqs:
@@ -139,11 +139,11 @@ def stat_nominal_cases(token, analyses, logfile):
 
 def stat_adjective_comps(token, analyses, logfile):
     for analysis in analyses:
-        if '[SUBCAT=ADJECTIVE]' in analysis.output:
+        if '[SUBCAT=ADJECTIVE]' in analysis[0]:
             word_id = harvest_word_ids(analysis)
-            comp = re.search(r"\[COMPARISON=([^]]*)\]", analysis.output)
+            comp = re.search(r"\[COMPARISON=([^]]*)\]", analysis[0])
             if not comp:
-                print("ERROR! missing comp in", token, analysis.output,
+                print("ERROR! missing comp in", token, analysis[0],
                         file=logfile)
                 continue
             if not word_id in adjective_comps_per_lemma:
@@ -391,11 +391,11 @@ def main():
         except IOError as ioe:
             print("Failed to open corpus ", test_corpus_file, ":", ioe)
     for test_corpus in test_corpora:
-        print('lines from', test_corpus)
+        print('lines from', test_corpus.name)
         linen = 0
         for line in test_corpus:
             linen += 1
-            if (linen % 500000) == 0:
+            if (linen % 200000) == 0:
                 print(linen, "...! Time to reload everything because memory is leaking very badly indeed!")
                 previous = list()
                 sent = list()
@@ -423,8 +423,8 @@ def main():
     test_adjective_agreements(adjective_log)
     print("Writing accurate statistics")
     print_adposition_stats(adposition_stats)
-    print_lemma_stats(open('../src/probabilistics/lemmas.freqs', 'w'))
-    print_case_stats(open('../src/probabilistics/cases.freqs', 'w'))
+    print_lemma_stats(open('lemmas.freqs', 'w'))
+    print_case_stats(open('cases.freqs', 'w'))
     exit(0)
 
 if __name__ == '__main__':
