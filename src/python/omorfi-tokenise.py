@@ -62,12 +62,13 @@ def main():
         surfs = omorfi.tokenise(line)
         tokens += len(surfs)
         if options.output_format == 'moses':
-            print(' '.join(surfs), file=options.outfile)
+            print(' '.join([surf[0] for surf in surfs]), file=options.outfile)
         else:
             print("# sentence-text:", line.rstrip("\n"), file=options.outfile)
             i = 1
             for surf in surfs:
-                print(i, surf, "_", "_", "_", "_", "_", "_", "_", "_", 
+                print(i, surf[0], "_", "_", "_", "_", "_", "_", "_", 
+                        surf[1], 
                         sep="\t", file=options.outfile)
                 i += 1
         if options.output_format == 'conllu':

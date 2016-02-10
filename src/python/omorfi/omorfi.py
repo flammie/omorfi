@@ -193,24 +193,82 @@ class Omorfi:
         for filename in loadable:
             this.load_filename(filename, **include)
 
-    def _find_retokens(this, token):
+    def _find_retoken_recase(this, token):
         if this.accept(token):
-            return [token]
+            return (token, "ORIGINALCASE")
         if this.can_lowercase and this.accept(token.lower()):
-            return [token.lower()]
+            return (token.lower(), "LOWERCASED=" + token)
         if this.can_uppercase and this.accept(token.upper()):
-            return [token.upper()]
-        if token[-1] in fin_punct_trailing and this.accept(token[:-1]):
-            return [token[:-1], token[-1]]
-        if token[0] in fin_punct_leading and this.accept(token[1:]):
-            return [token[0], token[1:]]
-        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing and this.accept(token[1:-1]):
-            return [token[0], token[1:-1], token[-1]]
-        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and this.accept(token[:-2]):
-            return [token[:-2], token[-2], token[-1]]
-        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and this.accept(token[:-3]):
-            return [token[:-3], token[-3], token[-2], token[-1]]
-        return [token]
+            return (token.upper(), "UPPERCASED=" + token)
+        if len(token) > 1:
+            if this.can_titlecase and this.accept(token[0].upper() + token[1:]):
+                return (token[0].upper() + token[1:], "TITLECASED=" + token)
+            if this.can_detitlecase and this.accept(token[0].lower() + token[1:]):
+                return (token[0].lower() + token[1:], "DETITLECASED=" + token)
+        return False
+
+
+    def _find_retokens(this, token):
+        retoken = this._find_retoken_recase(token)
+        if retoken:
+            return [retoken]
+        # Word.
+        if token[-1] in fin_punct_trailing:
+            retoken = this._find_retoken_recase(token[:-1])
+            if retoken:
+                return[(retoken[0], retoken[1] + "|SpaceAfter=No"),
+                        (token[-1], "SpaceBefore=No")]
+        # -Word
+        if token[0] in fin_punct_leading:
+            retoken = this._find_retoken_recase(token[1:])
+            if retoken:
+                return [(token[0], "SpaceAfter=No"),
+                        (retoken[0], retoken[1] + "|SpaceBefore=No")]
+        # "Word"
+        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing:
+            retoken = this._find_retoken_recase(token[1:-1])
+            if retoken:
+                return [
+                    (token[0], "SpaceAfter=No"),
+                    (retoken[0], retoken[1] + "|SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # word." or word",
+        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing:
+            retoken = this._find_retoken_recase(token[:-2])
+            if retoken:
+                return [
+                    (retoken[0], retoken[1] + "|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # word.", 
+        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing:
+            retoken = this._find_retoken_recase(token[:-3])
+            if retoken:
+                return [
+                    (retoken[0], retoken[1] + "|SpaceAfter=No"),
+                    (token[-3], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # "word."
+        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[0] in fin_punct_leading:
+            retoken = this._find_retoken_recase(token[1:-2])
+            if retoken:
+                return [
+                    (token[0], "SpaceAfter=No"),
+                    (retoken[0], retoken[1] + "|SpaceBefore=No|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # "word.",
+        if len(token) > 4 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and token[0] in fin_punct_leading:
+            retoken = this._find_retoken_recase(token[1:-3])
+            if retoken:
+                return [
+                    (token[0], "SpaceAfter=No"),
+                    (retoken[0], retoken[1] + "|SpaceBefore=No|SpaceAfter=No"),
+                    (token[-3], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        return [(token, "UNTOKENISED")]
 
 
 
