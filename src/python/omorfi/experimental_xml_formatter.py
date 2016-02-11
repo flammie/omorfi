@@ -68,7 +68,7 @@ def format_lexc_xml(wordmap):
     stub = xml_escape(wordmap['stub'])
     stub = stub.replace('|', '<s mcs="wb"/>').replace('_', '<s mcs="mb"/>')
     return ('    <e><a>%s</a><i>%s</i><cont lexica="%s"/></e>' % 
-            (analysis, stub, " ".join(wordmap['new_paras'])))
+            (analysis, stub, wordmap['new_para']))
 
 def format_continuation_lexicon_xml(tsvparts):
     xmlstring = '    <e>'

@@ -144,8 +144,8 @@ def main():
             wordmap['extras'] = '\t' + wordmap['extras']
         
         if args.verbose:
-            print("Guessed new para: %(new_paras)r" %(wordmap))
-        print("%(lemma)s\t%(new_paras)r%(extras)s" %(wordmap), file=output)
+            print("Guessed new para: %(new_para)r" %(wordmap))
+        print("%(lemma)s\t%(new_para)r%(extras)s" %(wordmap), file=output)
 
     input.close()
     output.close()
