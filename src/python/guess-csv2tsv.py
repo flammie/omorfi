@@ -28,9 +28,9 @@ import readline
 import csv
 from collections import defaultdict
 
-from wordmap import init_wordmap, get_wordmap_fieldnames
-from guess_new_class import guess_new_class
-from guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation
+from omorfi.wordmap import init_wordmap, get_wordmap_fieldnames
+from omorfi.guess_new_class import guess_new_class
+from omorfi.guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation
 
 
 def expand_pos(wordmap):
