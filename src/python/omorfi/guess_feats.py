@@ -22,7 +22,7 @@ from .error_logging import fail_guess_because
 def guess_pos_from_newpara(wordmap):
     if wordmap['pos']:
         return wordmap
-    new_para = wordmap['new_paras'][0]
+    new_para = wordmap['new_para']
     wordmap['pos'] = new_para[:new_para.find('_')]
 
 

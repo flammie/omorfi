@@ -336,16 +336,12 @@ def format_lexc_tdt(wordmap, format):
             if wordmap['kotus_av']:
                 wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
     elif '+newparas' in format:
-        for new_para in wordmap['new_paras']:
-            wordmap['analysis'] += "[NEWPARA=%s]" %(new_para)
+        wordmap['analysis'] += "[NEWPARA=%s]" %(wordmap['new_para'])
 
     # match WORD_ID= with epsilon, then stub and lemma might match
     lex_stub = '0' + wordmap['stub']
-    retvals = []
-    for new_para in wordmap['new_paras']:
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                new_para)]
-    return "\n".join(retvals)
+    return "%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub,
+            wordmap['new_para'])
 
 def format_multichars_lexc_tdt():
     multichars = ''
