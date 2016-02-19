@@ -23,7 +23,7 @@ from .string_manglers import three_syllable
 def guess_new_class(wordmap):
     '''Guess more exact classification now
     '''
-    if len(wordmap['new_para']) > 0:
+    if wordmap['new_para']:
         return wordmap
     if wordmap['kotus_tn'] is None or wordmap['kotus_tn'] == '':
         return wordmap
@@ -638,18 +638,18 @@ def guess_new_noun(wordmap):
             if not wordmap['kotus_av']:
                 if wordmap['lemma'].endswith('a'):
                     if three_syllable(wordmap['stub']):
-                        wordmap['new_paras'] = ['N_ASEMA']
+                        wordmap['new_para'] = 'N_ASEMA'
                     else:
-                        wordmap['new_paras'] = ['N_VOIMA']
+                        wordmap['new_para'] = 'N_VOIMA'
                 elif wordmap['lemma'].endswith('A'):
                     wordmap['new_para'] = 'N_FIFA'
                 elif wordmap['lemma'].endswith('ă'):
                     wordmap['new_para'] = 'N_VODĂ'
                 elif wordmap['lemma'].endswith('ä'):
                     if three_syllable(wordmap['stub']):
-                        wordmap['new_paras'] = ['N_ELÄMÄ']
+                        wordmap['new_para'] = 'N_ELÄMÄ'
                     else:
-                        wordmap['new_paras'] = ['N_HÖPÖTTÄJÄ']
+                        wordmap['new_para'] = ['N_HÖPÖTTÄJÄ']
                 elif wordmap['lemma'].endswith('an'):
                     wordmap['new_para'] = 'N_AAMUKAHDEKSAN'
                 elif wordmap['lemma'].endswith('än'):
@@ -3199,14 +3199,14 @@ def guess_new_adjective(wordmap):
         if not wordmap['kotus_av']:
             if wordmap['lemma'].endswith('a') or wordmap['lemma'].endswith('A'):
                 if three_syllable(wordmap['stub']):
-                    wordmap['new_paras'] = ['A_MATALA']
+                    wordmap['new_para'] = 'A_MATALA'
                 else:
-                    wordmap['new_paras'] = ['A_RUMA']
+                    wordmap['new_para'] = 'A_RUMA'
             elif wordmap['lemma'].endswith('ä'):
                 if three_syllable(wordmap['stub']):
-                    wordmap['new_paras'] = ['A_TERÄVÄ']
+                    wordmap['new_para'] = 'A_TERÄVÄ'
                 else:
-                    wordmap['new_paras'] = ['A_TYHMÄ']
+                    wordmap['new_para'] = 'A_TYHMÄ'
             else:
                 fail_guess_because(wordmap, ['A', 10, False],
                         ['a', 'ä'])
