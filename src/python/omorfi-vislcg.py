@@ -11,6 +11,7 @@ from time import perf_counter, process_time
 # string munging
 import re
 
+
 def get_lemmas(anal):
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
     lemmas = re_lemma.finditer(anal[0])
@@ -19,6 +20,7 @@ def get_lemmas(anal):
         rv += [lemma.group(1)]
     return rv
 
+
 def get_last_feat(feat, anal):
     re_feat = re.compile("\[" + feat + "=([^]]*)\]")
     feats = re_feat.finditer(anal[0])
@@ -26,6 +28,7 @@ def get_last_feat(feat, anal):
     for feat in feats:
         rv = feat.group(1)
     return rv
+
 
 def get_last_feats(anal):
     re_feats = re.compile("\[[^]]*\]")
@@ -61,15 +64,15 @@ def print_analyses_vislcg3(surf, anals, outfile):
             elif mm.group(1) == 'ALLO':
                 mrds = ['<' + mm.group(2) + '>'] + mrds
             elif mm.group(1) == 'WEIGHT' and mm.group(2) != 'inf':
-                    mrds += ['<W=' + str(int(float(mm.group(2)) * 100)) + '>']
+                mrds += ['<W=' + str(int(float(mm.group(2)) * 100)) + '>']
             elif mm.group(1) == 'WEIGHT' and mm.group(2) == 'inf':
-                    mrds += ['<W=65536>']
+                mrds += ['<W=65536>']
             elif mm.group(1) in ['STYLE']:
                 mrds += ['<' + mm.group(2) + '>']
             else:
                 mrds += [mm.group(2)]
         print('\t"', ''.join(lemmas).replace('"', '\\"'), '" ',
-                ' '.join(mrds), sep='', file=outfile)
+              ' '.join(mrds), sep='', file=outfile)
     print(file=outfile)
 
 
@@ -77,15 +80,15 @@ def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
+                   help="print verbosely while processing")
     a.add_argument('-o', '--output', metavar="OUTFILE", dest="outfile",
-            help="print output into OUTFILE", type=FileType('w'))
+                   help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
-            help="print statistics to STATFILE", type=FileType('w'))
+                   help="print statistics to STATFILE", type=FileType('w'))
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -120,17 +123,17 @@ def main():
             tokens += 1
             anals = omorfi.analyse(surf)
             print_analyses_vislcg3(surf, anals, options.outfile)
-            if len(anals) == 0 or (len(anals) == 1 and 
-                    'UNKNOWN' in anals[0][0]):
+            if len(anals) == 0 or (len(anals) == 1 and
+                                   'UNKNOWN' in anals[0][0]):
                 unknowns += 1
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Unknown:", unknowns, unknowns / tokens * 100,
-            "%", file=options.statfile)
-    print("CPU time:", cpuend-cpustart, "Real time:", realend-realstart,
-            file=options.statfile)
-    print("Tokens per timeunit:", tokens/(realend-realstart), 
-            file=options.statfile)
+          "%", file=options.statfile)
+    print("CPU time:", cpuend - cpustart, "Real time:", realend - realstart,
+          file=options.statfile)
+    print("Tokens per timeunit:", tokens / (realend - realstart),
+          file=options.statfile)
     exit(0)
 
 if __name__ == "__main__":

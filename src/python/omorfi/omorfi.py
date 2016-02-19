@@ -19,7 +19,9 @@ from glob import glob
 
 from .settings import fin_punct_leading, fin_punct_trailing
 
+
 class Omorfi:
+
     """
     An object holding omorfi automata for all the functions of omorfi.
 
@@ -66,11 +68,11 @@ class Omorfi:
     _verbosity = False
 
     _stdpaths = ['/usr/local/share/hfst/fi/',
-            '/usr/share/hfst/fi/',
-            '/usr/local/share/omorfi/',
-            '/usr/share/omorfi/']
+                 '/usr/share/hfst/fi/',
+                 '/usr/local/share/omorfi/',
+                 '/usr/share/omorfi/']
 
-    def __init__(this, verbosity = False):
+    def __init__(this, verbosity=False):
         """Construct Omorfi with given verbosity for printouts."""
         this._verbosity = verbosity
 
@@ -98,7 +100,7 @@ class Omorfi:
             include['segment'] = True
             include['accept'] = True
         for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
-                'hyphenate', 'segment', 'labelsegment']:
+                      'hyphenate', 'segment', 'labelsegment']:
             if not ttype in include:
                 include[ttype] = False
         his = None
@@ -155,7 +157,7 @@ class Omorfi:
 
     def load_from_dir(this, path=None, **include):
         """Load omorfi automata from given or known locations.
-        
+
         If path is given it should point to directory of automata,
         otherwise standard installation paths are tried. Currently standard
         linux install paths are all globbed in following order:
@@ -179,7 +181,7 @@ class Omorfi:
         if getenv('HOME'):
             home = getenv('HOME')
             homepaths = [home + '/.hfst/fi/',
-                          home + '/.omorfi/' ]
+                         home + '/.omorfi/']
         loadable = []
         if path:
             if this._verbosity:
@@ -207,7 +209,6 @@ class Omorfi:
                 return (token[0].lower() + token[1:], "DETITLECASED=" + token)
         return False
 
-
     def _find_retokens(this, token):
         retoken = this._find_retoken_recase(token)
         if retoken:
@@ -217,7 +218,7 @@ class Omorfi:
             retoken = this._find_retoken_recase(token[:-1])
             if retoken:
                 return[(retoken[0], retoken[1] + "|SpaceAfter=No"),
-                        (token[-1], "SpaceBefore=No")]
+                       (token[-1], "SpaceBefore=No")]
         # -Word
         if token[0] in fin_punct_leading:
             retoken = this._find_retoken_recase(token[1:])
@@ -240,7 +241,7 @@ class Omorfi:
                     (retoken[0], retoken[1] + "|SpaceAfter=No"),
                     (token[-2], "SpaceBefore=No|SpaceAfter=No"),
                     (token[-1], "SpaceBefore=No")]
-        # word.", 
+        # word.",
         if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing:
             retoken = this._find_retoken_recase(token[:-3])
             if retoken:
@@ -269,8 +270,6 @@ class Omorfi:
                     (token[-2], "SpaceBefore=No|SpaceAfter=No"),
                     (token[-1], "SpaceBefore=No")]
         return [(token, "UNTOKENISED")]
-
-
 
     def _retokenise(this, tokens):
         retokens = []
@@ -326,13 +325,13 @@ class Omorfi:
                 res = res + upres
         if not token.islower() and this.can_lowercase:
             lowtoken = token.lower()
-            if token !=  lowtoken:
+            if token != lowtoken:
                 lowres = this.analysers[automaton].lookup(token.lower())
                 for r in lowres:
                     r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
                 res += lowres
         for r in res:
-            r = (r[0] + '[WEIGHT=%f]' %(r[1]), r[1])
+            r = (r[0] + '[WEIGHT=%f]' % (r[1]), r[1])
         return res
 
     def analyse(this, token):
@@ -345,7 +344,7 @@ class Omorfi:
         the analysis will also be performed on all uppercase variant.
         If can_lowercase evaluates to not False,
         the analysis will also be performed on all lowercase variant.
-        
+
         The analyses with case mangling will have an additional element to them
         identifying the casing.
         """
@@ -426,15 +425,16 @@ class Omorfi:
             accept = True
         return accept
 
+
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
+                   help="print verbosely while processing")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:

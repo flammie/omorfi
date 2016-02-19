@@ -19,6 +19,7 @@
 
 from .error_logging import fail_guess_because
 
+
 def guess_pos_from_newpara(wordmap):
     if wordmap['pos']:
         return wordmap
@@ -42,9 +43,10 @@ def guess_grade_dir_from_ktn(wordmap):
     elif tn in [1007, 1008, 1009, 1010, 1024, 1026, 1067, 1099, 1101]:
         wordmap['grade_dir'] = 'weaken'
     else:
-        fail_guess_because(wordmap, [], ["0-78", 99, 101, 1007, 1008, 1009, 1010, 
-            1024, 1026, 1067, 1099, 1101])
+        fail_guess_because(wordmap, [], ["0-78", 99, 101, 1007, 1008, 1009, 1010,
+                                         1024, 1026, 1067, 1099, 1101])
     return wordmap
+
 
 def guess_stem_features_ktn(wordmap):
     '''Record guessable features based on kotus classification, such as stem
@@ -100,6 +102,7 @@ def guess_stem_features_ktn(wordmap):
             wordmap['stem_diphthong'] = 'ie'
     return wordmap
 
+
 def guess_harmony(wordmap):
     '''Guess word's harmony based on lemma, using trivial last harmony vowel
     or front algorithm.
@@ -147,6 +150,7 @@ def guess_harmony(wordmap):
         exit(1)
     return wordmap
 
+
 def guess_pronunciation(wordmap):
     if wordmap['pronunciation']:
         return wordmap
@@ -156,6 +160,7 @@ def guess_pronunciation(wordmap):
     elif wordmap['stem_diphthong']:
         wordmap['pronunciation'] += wordmap['stem_diphthong']
     return wordmap
+
 
 def guess_gradestem(wordmap):
     if wordmap['stem_vowel']:
@@ -170,6 +175,7 @@ def guess_gradestem(wordmap):
         wordmap['gradestem'] += '{PLT?}'
     return wordmap
 
+
 def guess_bound_morphs(wordmap):
     if wordmap['stub'] in ['-', '--']:
         return wordmap
@@ -180,4 +186,3 @@ def guess_bound_morphs(wordmap):
         wordmap['is_suffix'] = True
         wordmap['stub'] = wordmap['stub'][1:]
     return wordmap
-

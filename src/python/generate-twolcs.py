@@ -5,7 +5,7 @@ This script generates twolc files from database data.
 """
 
 
-# Author: Omorfi contributors, 2014 
+# Author: Omorfi contributors, 2014
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -26,42 +26,46 @@ from time import strftime
 import argparse
 
 from omorfi.twolc_formatter import format_alphabet_twolc, \
-        format_sets_twolc, format_definitions_twolc, format_rules_twolc, \
-        format_copyright_twolc
+    format_sets_twolc, format_definitions_twolc, format_rules_twolc, \
+    format_copyright_twolc
 
 # standard UI stuff
 
+
 def main():
     # initialise argument parser
-    ap = argparse.ArgumentParser(description="Generate Xerox twolcs for Finnish")
+    ap = argparse.ArgumentParser(
+        description="Generate Xerox twolcs for Finnish")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-            default=False,
-            help="do not print output to stdout while processing")
+                    default=False,
+                    help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
-            help="print each step to stdout while processing")
+                    help="print each step to stdout while processing")
     ap.add_argument("--output", "-o", type=argparse.FileType("w"),
-            required=True, metavar="OFILE", help="write output to OFILE")
+                    required=True, metavar="OFILE", help="write output to OFILE")
     ap.add_argument("--ruleset", "-r", required=True, action="store",
-            metavar="RULES", help="compile RULES ruleset")
+                    metavar="RULES", help="compile RULES ruleset")
 
     def FormatArgType(v):
         baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google"]
+                       "giellatekno", "ftb3", "segments", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
         parts = v.split('+')
         if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
+            raise argparse.ArgumentTypeError(
+                "Format must be one of: " + " ".join(baseformats))
         for ex in parts[1:]:
             if ex not in extras:
-                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
+                raise argparse.ArgumentTypeError(
+                    "Format extension must be one of: " + " ".join(extras))
         return v
     ap.add_argument("--format", "-f", action="store", default="omor",
-            help="use specific output format for twolc data",
-            type=FormatArgType)
+                    help="use specific output format for twolc data",
+                    type=FormatArgType)
     args = ap.parse_args()
     # check args
     # setup files
-    if args.verbose: 
+    if args.verbose:
         print("Writing everything to", args.output.name)
     print(format_copyright_twolc(), file=args.output)
     # print definitions to rootfile
@@ -73,7 +77,8 @@ def main():
     print(format_sets_twolc(args.format, args.ruleset), file=args.output)
     if args.verbose:
         print("Creating Definitions")
-    print(format_definitions_twolc(args.format, args.ruleset), file=args.output)
+    print(format_definitions_twolc(
+        args.format, args.ruleset), file=args.output)
     if args.verbose:
         print("Creating Rules")
     print(format_rules_twolc(args.format, args.ruleset), file=args.output)
@@ -82,4 +87,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

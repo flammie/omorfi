@@ -29,6 +29,7 @@ from .settings import common_multichars, version_id_easter_egg
 
 
 class Formatter(metaclass=ABCMeta):
+
     """
     An abstract base class for omorfi objects doing format conversions and
     such string mangling. The implememting classes are mainly tag-set
@@ -45,7 +46,7 @@ class Formatter(metaclass=ABCMeta):
     * from continuation record (a tsv row)
     """
 
-    def __init__(this, verbosity = False, **kwargs):
+    def __init__(this, verbosity=False, **kwargs):
         """Construct formatter with given verbosity."""
         this._verbosity = verbosity
 
@@ -99,7 +100,6 @@ class Formatter(metaclass=ABCMeta):
     def continuation2lexc(this, fields):
         """Turn continuation record into lexc string valid for insides of LEXICON"""
         pass
-
 
 
 def main():

@@ -32,31 +32,32 @@ from omorfi.settings import stuff_weights, boundary_weights
 
 # standard UI stuff
 
+
 def main():
     # initialise argument parser
     ap = argparse.ArgumentParser(description="Create FST reweighter for tags")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-            default=False,
-            help="do not print output to stdout while processing")
+                    default=False,
+                    help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
-            help="print each step to stdout while processing")
+                    help="print each step to stdout while processing")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o",
-            type=argparse.FileType("w"), required=True,
-            metavar="OFILE", help="write output to OFILE")
+                    type=argparse.FileType("w"), required=True,
+                    metavar="OFILE", help="write output to OFILE")
     ap.add_argument("--fields", "-F", action="store", default=2,
-            metavar="N", help="read N fields from master")
+                    metavar="N", help="read N fields from master")
     ap.add_argument("--separator", action="store", default="\t",
-            metavar="SEP", help="use SEP as separator")
+                    metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-            metavar="COMMENT", help="skip lines starting with COMMENT that"
-                "do not have SEPs")
+                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    "do not have SEPs")
     ap.add_argument("--strip", action="store",
-            metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP", help="strip STRIP from fields before using")
 
     ap.add_argument("--format", "-f", action="store", default="omor",
-            help="use specific output format for lexc data",
-            choices=["omor", "ftb3", "giella", "apertium", "boundary"])
+                    help="use specific output format for lexc data",
+                    choices=["omor", "ftb3", "giella", "apertium", "boundary"])
     args = ap.parse_args()
     if args.format == "omor":
         formatter = OmorFormatter(True)
@@ -68,15 +69,14 @@ def main():
         print("Not implemnetd formatters", args.format)
         exit(1)
     # setup files
-    if args.verbose: 
+    if args.verbose:
         print("Writing some weights to", args.output.name)
     for stuff, weight in stuff_weights.items():
         if formatter.stuff2lexc(stuff) and formatter.stuff2lexc(stuff) != '0':
             print(formatter.stuff2lexc(stuff), weight,
-                    sep='\t', file=args.output)
+                  sep='\t', file=args.output)
     exit(0)
 
 
 if __name__ == "__main__":
     main()
-

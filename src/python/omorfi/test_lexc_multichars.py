@@ -20,13 +20,23 @@
 
 import unittest
 
-from .omor_formatter import omor_multichars, stuff2omor
+from .omor_formatter import OmorFormatter
+from .apertium_formatter import ApertiumFormatter
+from .ftb3_formatter import Ftb3Formatter
+from .no_tags_formatter import NoTagsFormatter
+from .giella_formatter import GiellaFormatter
+
 
 class LexcMulticharsTest(unittest.TestCase):
-    def test_omor():
-        for stuff, omor in stuff2omor.items():
-            if len(omor) < 2:
-                continue
-            assertIn(omor, omor_multichars)
 
-
+    def test_multichars():
+        formatter = OmorFormatter(False)
+        formatter.format_multichars_lexc()
+        formatter = ApertiumFormatter(False)
+        formatter.format_multichars_lexc()
+        formatter = Ftb3Formatter(False)
+        formatter.format_multichars_lexc()
+        formatter = GiellaFormatter(False)
+        formatter.format_multichars_lexc()
+        formatter = NoTagsFormatter(False)
+        formatter.format_multichars_lexc()

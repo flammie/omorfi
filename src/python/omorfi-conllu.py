@@ -11,6 +11,7 @@ from time import perf_counter, process_time
 # string munging
 import re
 
+
 def get_lemmas(anal):
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
     lemmas = re_lemma.finditer(anal[0])
@@ -19,6 +20,7 @@ def get_lemmas(anal):
         rv += [lemma.group(1)]
     return rv
 
+
 def get_last_feat(feat, anal):
     re_feat = re.compile("\[" + feat + "=([^]]*)\]")
     feats = re_feat.finditer(anal[0])
@@ -26,6 +28,7 @@ def get_last_feat(feat, anal):
     for feat in feats:
         rv = feat.group(1)
     return rv
+
 
 def get_last_feats(anal):
     re_feats = re.compile("\[[^]]*\]")
@@ -151,7 +154,7 @@ def format_feats_ud(anal, hacks=None):
             elif value == 'REFLEXIVE':
                 rvs['Reflexive'] = 'Yes'
             elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
-                # not annotated in UD feats: 
+                # not annotated in UD feats:
                 # * punctuation classes
                 continue
             elif value in ['DECIMAL', 'ROMAN']:
@@ -192,11 +195,11 @@ def format_feats_ud(anal, hacks=None):
                 exit(1)
         elif key in ['DRV', 'LEX']:
             if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
-                    'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
+                         'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
                 # values found in UD finnish Derivs
                 rvs['Derivation'] = value[0] + value[1:].lower()
-            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 
-                    'ADE', 'INE', 'ELA', 'ILL']:
+            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
+                           'ADE', 'INE', 'ELA', 'ILL']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
@@ -204,7 +207,7 @@ def format_feats_ud(anal, hacks=None):
                 print("in", anal[0])
                 exit(1)
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE',
-                'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
+                     'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
             # Not feats in UD:
             # * UPOS is another field
             # * Allomorphy is ignored
@@ -222,16 +225,18 @@ def format_feats_ud(anal, hacks=None):
             print("in", anal[0])
             exit(1)
     rv = ''
-    for k,v in sorted(rvs.items()):
+    for k, v in sorted(rvs.items()):
         rv += k + '=' + v + '|'
     if len(rvs) != 0:
         return rv.rstrip('|')
     else:
         return '_'
 
+
 def format_third_ftb(anal):
     upos = get_last_feat("UPOS", anal)
     return upos
+
 
 def format_third_tdt(upos):
     if upos in ['NOUN', 'PROPN']:
@@ -259,6 +264,7 @@ def format_third_tdt(upos):
     else:
         return 'X'
 
+
 def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
     for anal in anals:
         upos = get_last_feat("UPOS", anal)
@@ -282,10 +288,12 @@ def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
             return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
     return print_analyses_conllu(wordn, surf, anals[0], outfile, hacks)
 
+
 def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
     print("# REFERENCE(python):", original, file=outfile)
     for anal in anals:
         print_analyses_conllu(wordn, surf, anal, outfile, hacks)
+
 
 def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
     upos = get_last_feat("UPOS", anal)
@@ -295,32 +303,33 @@ def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
         third = format_third_ftb(anal)
     else:
         third = format_third_tdt(upos)
-    print(wordn, surf, "#".join(get_lemmas(anal)), 
-            upos, 
-            third,
-            format_feats_ud(anal, hacks),
-            "_", "_", "_", "_", sep="\t", file=outfile)
+    print(wordn, surf, "#".join(get_lemmas(anal)),
+          upos,
+          third,
+          format_feats_ud(anal, hacks),
+          "_", "_", "_", "_", sep="\t", file=outfile)
+
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
+                   help="print verbosely while processing")
     a.add_argument('-o', '--output', metavar="OUTFILE", dest="outfile",
-            help="print output into OUTFILE", type=FileType('w'))
+                   help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
-            help="print statistics to STATFILE", type=FileType('w'))
+                   help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-O', '--oracle', action='store_true',
-            help="match to values in input when parsing if possible")
+                   help="match to values in input when parsing if possible")
     a.add_argument('--hacks', metavar='HACKS',
-            help="mangle anaelyses to match HACKS version of UD",
-            choices=['ftb'])
+                   help="mangle anaelyses to match HACKS version of UD",
+                   choices=['ftb'])
     a.add_argument('--debug', action='store_true',
-            help="print lots of debug info while processing")
+                   help="print lots of debug info while processing")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -359,21 +368,23 @@ def main():
                 if '-' in fields[0]:
                     continue
                 else:
-                    print("Cannot figure out token index", fields[0], file=stderr)
+                    print(
+                        "Cannot figure out token index", fields[0], file=stderr)
                     exit(1)
             surf = fields[1]
             anals = omorfi.analyse(surf)
             if anals and len(anals) > 0:
                 if options.debug:
-                    debug_analyses_conllu(fields, index, surf, anals, options.outfile, options.hacks)
+                    debug_analyses_conllu(
+                        fields, index, surf, anals, options.outfile, options.hacks)
                 elif options.oracle:
-                    try_analyses_conllu(fields, index, surf, anals, 
-                            options.outfile, options.hacks)
+                    try_analyses_conllu(fields, index, surf, anals,
+                                        options.outfile, options.hacks)
                 else:
-                    print_analyses_conllu(index, surf, anals[0], 
-                            options.outfile, options.hacks)
-            if not anals or len(anals) == 0 or (len(anals) == 1 and 
-                    'UNKNOWN' in anals[0][0]):
+                    print_analyses_conllu(index, surf, anals[0],
+                                          options.outfile, options.hacks)
+            if not anals or len(anals) == 0 or (len(anals) == 1 and
+                                                'UNKNOWN' in anals[0][0]):
                 unknowns += 1
         elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
             # these comments I know need to be retained as-is
@@ -392,15 +403,15 @@ def main():
             exit(1)
     cpuend = process_time()
     realend = perf_counter()
-    print("Tokens:", tokens, "Sentences:", sentences, 
-            file=options.statfile)
-    print("Unknowns / OOV:", unknowns, "=", 
-            unknowns / tokens * 100 if tokens != 0 else 0,
-            "%", file=options.statfile)
-    print("CPU time:", cpuend-cpustart, "Real time:", realend-realstart,
-            file=options.statfile)
-    print("Tokens per timeunit:", tokens/(realend-realstart), 
-            file=options.statfile)
+    print("Tokens:", tokens, "Sentences:", sentences,
+          file=options.statfile)
+    print("Unknowns / OOV:", unknowns, "=",
+          unknowns / tokens * 100 if tokens != 0 else 0,
+          "%", file=options.statfile)
+    print("CPU time:", cpuend - cpustart, "Real time:", realend - realstart,
+          file=options.statfile)
+    print("Tokens per timeunit:", tokens / (realend - realstart),
+          file=options.statfile)
     exit(0)
 
 if __name__ == "__main__":

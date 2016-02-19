@@ -11,22 +11,23 @@ from time import perf_counter, process_time
 # string munging
 import re
 
+
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
+                   help="print verbosely while processing")
     a.add_argument('-o', '--output', metavar="OUTFILE", dest="outfile",
-            help="print output into OUTFILE", type=FileType('w'))
+                   help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
-            help="print statistics to STATFILE", type=FileType('w'))
-    a.add_argument('-O', '--output-format', metavar="OUTFORMAT", 
-            default="moses",
-            help="format output for OUTFORMAT", choices=['moses', 'conllu'])
+                   help="print statistics to STATFILE", type=FileType('w'))
+    a.add_argument('-O', '--output-format', metavar="OUTFORMAT",
+                   default="moses",
+                   help="format output for OUTFORMAT", choices=['moses', 'conllu'])
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -67,21 +68,21 @@ def main():
             print("# sentence-text:", line.rstrip("\n"), file=options.outfile)
             i = 1
             for surf in surfs:
-                print(i, surf[0], "_", "_", "_", "_", "_", "_", "_", 
-                        surf[1], 
-                        sep="\t", file=options.outfile)
+                print(i, surf[0], "_", "_", "_", "_", "_", "_", "_",
+                      surf[1],
+                      sep="\t", file=options.outfile)
                 i += 1
         if options.output_format == 'conllu':
             print(file=options.outfile)
     cpuend = process_time()
     realend = perf_counter()
     print("Lines:", lines, "Tokens:", tokens, "Ratio:", tokens / lines,
-            "tokens/line", file=options.statfile)
-    print("CPU time:", cpuend-cpustart, "Real time:", realend-realstart,
-            file=options.statfile)
-    print("Tokens per timeunit:", tokens/(realend-realstart),
-            "Lines per timeunit:", lines/(realend-realstart),
-            file=options.statfile)
+          "tokens/line", file=options.statfile)
+    print("CPU time:", cpuend - cpustart, "Real time:", realend - realstart,
+          file=options.statfile)
+    print("Tokens per timeunit:", tokens / (realend - realstart),
+          "Lines per timeunit:", lines / (realend - realstart),
+          file=options.statfile)
     exit(0)
 
 if __name__ == "__main__":

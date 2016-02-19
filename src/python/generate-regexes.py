@@ -5,7 +5,7 @@ This script generates twolc files from database data.
 """
 
 
-# Author: Omorfi contributors, 2014 
+# Author: Omorfi contributors, 2014
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -31,23 +31,25 @@ from omorfi.ftb3_formatter import Ftb3Formatter
 
 # standard UI stuff
 
+
 def main():
     # initialise argument parser
-    ap = argparse.ArgumentParser(description="Generate Xerox twolcs for Finnish")
+    ap = argparse.ArgumentParser(
+        description="Generate Xerox twolcs for Finnish")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-            default=False,
-            help="do not print output to stdout while processing")
+                    default=False,
+                    help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
-            help="print each step to stdout while processing")
+                    help="print each step to stdout while processing")
     ap.add_argument("--output", "-o", type=argparse.FileType("w"),
-            required=True, metavar="OFILE", help="write output to OFILE")
+                    required=True, metavar="OFILE", help="write output to OFILE")
     ap.add_argument("--ruleset", "-r", required=True, action="store",
-            metavar="RULES", help="compile RULES ruleset")
+                    metavar="RULES", help="compile RULES ruleset")
 
     ap.add_argument("--format", "-f", action="store", default="omor",
-            help="use specific output format for twolc data",
-            choices=["omor", "apertium",
-                "giella", "ftb3", "segments", "google"])
+                    help="use specific output format for twolc data",
+                    choices=["omor", "apertium",
+                             "giella", "ftb3", "segments", "google"])
 
     args = ap.parse_args()
     # check args
@@ -60,7 +62,7 @@ def main():
         print("Not implemented yet format", args.format)
         exit(1)
     # setup files
-    if args.verbose: 
+    if args.verbose:
         print("Writing everything to", args.output.name)
     # print definitions to rootfile
     if args.verbose:
@@ -71,4 +73,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
