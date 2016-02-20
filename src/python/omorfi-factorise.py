@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-from sys import stdin, stdout
-from argparse import ArgumentParser
-from omorfi.omorfi import Omorfi
 import re
+from argparse import ArgumentParser
+from sys import stdin, stdout
+
+from omorfi.omorfi import Omorfi
 
 
 def main():

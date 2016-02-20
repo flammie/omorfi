@@ -21,9 +21,9 @@
 # utils to format apertium style data from omorfi database values
 
 from .formatter import Formatter
-from .settings import word_boundary, optional_hyphen
 from .lexc_formatter import lexc_escape
 from .no_tags_formatter import NoTagsFormatter
+from .settings import optional_hyphen, word_boundary
 
 
 class LabeledSegmentsFormatter(Formatter):

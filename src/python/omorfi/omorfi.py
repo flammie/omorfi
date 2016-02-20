@@ -10,12 +10,12 @@ the standard shell scripts or java interface.
 """
 
 
-import libhfst
 from argparse import ArgumentParser
-
-from sys import stderr, stdin
-from os import getenv, access, F_OK
 from glob import glob
+from os import F_OK, access, getenv
+from sys import stderr, stdin
+
+import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
 

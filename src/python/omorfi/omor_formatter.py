@@ -21,9 +21,9 @@
 #
 # utils to format apertium style data from omorfi database values
 
+from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
 from .lexc_formatter import lexc_escape
-from .error_logging import fail_formatting_missing_for, just_fail
 
 
 class OmorFormatter(Formatter):

@@ -19,8 +19,7 @@
 
 # functions for formatting the database data to lexc
 
-from .settings import optional_hyphen, word_boundary, stub_boundary,\
-    newword_boundary, morph_boundary, deriv_boundary
+from .settings import deriv_boundary, morph_boundary, newword_boundary, optional_hyphen, stub_boundary, word_boundary
 
 
 def lexc_escape(s):

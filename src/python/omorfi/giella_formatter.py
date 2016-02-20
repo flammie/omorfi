@@ -19,12 +19,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .formatter import Formatter
-
-from .lexc_formatter import lexc_escape
-from .settings import word_boundary, weak_boundary, \
-    morph_boundary, deriv_boundary, stub_boundary
 from .error_logging import fail_formatting_missing_for, just_fail
+from .formatter import Formatter
+from .lexc_formatter import lexc_escape
+from .settings import deriv_boundary, morph_boundary, stub_boundary, weak_boundary, word_boundary
 
 
 class GiellaFormatter(Formatter):

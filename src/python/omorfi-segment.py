@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-from sys import stdin, stdout, stderr
-from argparse import ArgumentParser
-from omorfi.omorfi import Omorfi
 import re
+from argparse import ArgumentParser
+from sys import stderr, stdin, stdout
+
+from omorfi.omorfi import Omorfi
 
 
 def print_moses_factor_segments(segments, labelsegments, surf, outfile):

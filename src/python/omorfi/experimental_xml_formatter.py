@@ -18,7 +18,9 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from xml.sax.saxutils import escape as xml_escape
+
 from ftb3_formatter import Ftb3Formatter
+
 from .settings import version_id_easter_egg
 
 

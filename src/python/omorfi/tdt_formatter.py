@@ -7,7 +7,6 @@ from sys import stderr
 from .lexc_formatter import lexc_escape
 from .omor_formatter import OmorFormatter
 
-
 tdt_multichars = {
     '% A',
     '% Adp',

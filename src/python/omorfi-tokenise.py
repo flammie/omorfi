@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stdin, stdout
-from argparse import ArgumentParser, FileType
-# omorfi
-from omorfi.omorfi import Omorfi
 # statistics
 from time import perf_counter, process_time
+
+# omorfi
+from omorfi.omorfi import Omorfi
 
 
 def main():

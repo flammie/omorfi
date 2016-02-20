@@ -19,11 +19,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
+from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
 from .formatter import Formatter
 from .lexc_formatter import lexc_escape
-from .settings import word_boundary, morph_boundary, deriv_boundary, optional_hyphen
-from .error_logging import fail_formatting_missing_for, fail_guess_because, \
-    just_fail
+from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
 
 
 class Ftb3Formatter(Formatter):

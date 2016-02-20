@@ -19,9 +19,9 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .settings import word_boundary
-from .error_logging import fail_formatting_missing_for
 from .apertium_formatter import ApertiumFormatter
+from .error_logging import fail_formatting_missing_for
+from .settings import word_boundary
 
 monodix_sdefs = {
     'abbr',
