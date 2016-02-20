@@ -21,10 +21,11 @@ This script generates edit distance.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import exit
 import argparse
+from sys import exit
 
-from omorfi.settings import fin_lowercase, fin_uppercase, fin_symbols
+from omorfi.settings import fin_lowercase, fin_symbols, fin_uppercase
+
 
 # standard UI stuff
 

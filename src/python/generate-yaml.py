@@ -21,12 +21,13 @@ This script converts TSV formatted tests to yaml formatted tests
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import argv, exit, stderr
+from time import strftime
 
 from omorfi.formatters import format_analysis_lexc
+
 
 # standard UI stuff
 

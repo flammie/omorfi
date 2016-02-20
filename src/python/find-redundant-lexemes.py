@@ -21,9 +21,9 @@ class which is an extension of the given paradigm.
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sys import stdin, stdout, stderr, exit
 import argparse
 from collections import defaultdict
+from sys import exit, stderr, stdin, stdout
 
 # Supersets of paradigm classes
 # (the list might be lacking something, e.g. adjectives & verbs)

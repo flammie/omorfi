@@ -21,10 +21,11 @@ Validates databases
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, exit
 import argparse
 import csv
 import re
+from sys import exit, stderr
+
 
 # standard UI stuff
 

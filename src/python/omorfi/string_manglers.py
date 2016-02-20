@@ -20,9 +20,9 @@ Includes some neat error logging for debugs and stuff."""
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr
 import re
 import unicodedata
+from sys import stderr
 
 from .error_logging import fail_guess_because
 

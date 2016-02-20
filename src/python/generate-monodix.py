@@ -21,11 +21,13 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, exit
 import argparse
 import csv
+from sys import exit, stderr
 
-from omorfi.monodix_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
+from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
+                                      format_monodix_pardef, format_monodix_sdefs)
+
 
 # standard UI stuff
 

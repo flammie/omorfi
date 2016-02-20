@@ -27,11 +27,12 @@ store additional data. The additional data needs to be in name=value format.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, exit
 import argparse
 import csv
+from sys import exit, stderr
 
 from omorfi.kotus_sanalista_formatter import format_wordmap_kotus_sanalista
+
 
 # standard UI stuff
 

@@ -21,14 +21,15 @@ This script converts Finnish TSV-formatted lexicon to github wiki
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, exit
 import argparse
 import csv
+from sys import exit, stderr
 
-from omorfi.omor_formatter import format_stuff_omor
+from omorfi.apertium_formatter import format_stuff_apertium
 from omorfi.ftb3_formatter import format_stuff_ftb3
 from omorfi.giella_formatter import format_stuff_giella
-from omorfi.apertium_formatter import format_stuff_apertium
+from omorfi.omor_formatter import format_stuff_omor
+
 
 # standard UI stuff
 

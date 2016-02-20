@@ -21,12 +21,12 @@ This script generates twolc files from database data.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import exit
 import argparse
+from sys import exit
 
-from omorfi.twolc_formatter import format_alphabet_twolc, \
-    format_sets_twolc, format_definitions_twolc, format_rules_twolc, \
-    format_copyright_twolc
+from omorfi.twolc_formatter import (format_alphabet_twolc, format_copyright_twolc, format_definitions_twolc,
+                                    format_rules_twolc, format_sets_twolc)
+
 
 # standard UI stuff
 
