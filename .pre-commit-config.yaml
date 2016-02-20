@@ -3,6 +3,7 @@
   hooks:
   - id: flake8
     args: []
+    additional_dependencies: ['pep8-naming']
 - repo: git://github.com/FalconSocial/pre-commit-python-sorter
   sha: 1.0.4
   hooks:
