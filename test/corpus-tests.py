@@ -53,7 +53,7 @@ def gather_lemmas(master_tsv):
         elif whitelist_props and fields[0][0].isupper() and tsv_borked:
             continue
         else:
-            lemmas.add(fields[0])
+            lemmas.add(fields[1])
 
 # context parsing
 
@@ -406,7 +406,7 @@ def main():
 
             if (linen % 1000) == 0:
                 print(linen, "...", end='\r')
-            for punct in ".,:;?!()":
+            for punct in "\".,:;?!()":
                 line = line.replace(punct, " " + punct + " ")
             for token in line.split():
                 analyses = omorfi.analyse(token)
