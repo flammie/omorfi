@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from sys import stdin, stdout
+from sys import stdin, stdout, stderr
 from argparse import ArgumentParser
 from omorfi.omorfi import Omorfi
 import re
@@ -95,7 +95,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         moses = re.sub(r"v\|PCPVA([a-zaä]+)", r"v\1|PCPVA", moses)
         moses = re.sub(r"v\|VERB\.PCPVA([aä])", r"v\1|VERB.PCPVA", moses)
         moses = re.sub(r"v\|AUX.PCPVA([aä])", r"v\1|AUX.PCPVA", moses)
-        #|PCPMATONön
+        # |PCPMATONön
         moses = re.sub(r"\|PCPMATON([a-zåäö]+)", r"\1|PCPMATON", moses)
         # puhu|VERB ma|NOUN an|INFMA.ILL
         moses = re.sub(r"(m[aä])\|NOUN ([aä]n)\|INFMA.ILL",

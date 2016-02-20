@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 
 # CLI stuff
-from sys import stderr, stdin, stdout
+from sys import stdin, stdout
 from argparse import ArgumentParser, FileType
 # omorfi
 from omorfi.omorfi import Omorfi
 # statistics
 from time import perf_counter, process_time
-# string munging
-import re
 
 
 def main():

@@ -21,8 +21,7 @@ This script generates twolc files from database data.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
+from sys import exit
 import argparse
 
 from omorfi.regex_formatter import format_rules_regex

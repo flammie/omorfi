@@ -8,7 +8,7 @@ from .settings import common_multichars, \
 
 def format_copyright_twolc():
     return """
-! This automatically generated twolc data is originated from 
+! This automatically generated twolc data is originated from
 ! omorfi database.
 ! Copyright (c) 2014 Omorfi contributors
 

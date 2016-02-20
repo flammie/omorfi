@@ -27,8 +27,7 @@ on the python's csv module, but may change in the future.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from ast import literal_eval
-from sys import stderr, stdout, exit, argv
+from sys import stderr, exit, argv
 from time import strftime
 import argparse
 import csv
@@ -40,16 +39,11 @@ from omorfi.giella_formatter import GiellaFormatter
 from omorfi.no_tags_formatter import NoTagsFormatter
 from omorfi.labeled_segments_formatter import LabeledSegmentsFormatter
 
-from omorfi.parse_csv_data import parse_defaults_from_tsv
-
 # standard UI stuff
 
 
 def main():
     # defaults
-    stubfiles = dict()
-    stempartfiles = dict()
-    inflectfiles = dict()
     curr_lexicon = dict()
     # initialise argument parser
     ap = argparse.ArgumentParser(
@@ -156,8 +150,6 @@ def main():
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
-        lexicon_count = 0
-        entry_count = 0
         print("! Omorfi stubs generated from", tsv_filename,
               "\n! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"),
               "\n! params: ", ' '.join(argv), file=args.output)
@@ -240,7 +232,7 @@ def main():
                           tsv_parts, file=stderr)
                     continue
                 pos = tsv_parts[0].split("_")[0]
-                if not pos in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
+                if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
                                "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ", "X",
                                "DIGITS", "CONJ", "SCONJ", "AUX", "DET"]:
                     print("Cannot deduce pos from incoming cont:",
@@ -280,7 +272,7 @@ def main():
                           file=stderr)
                     continue
                 pos = tsv_parts[0].split("_")[0]
-                if not pos in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
+                if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
                                "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ",
                                "X", "DIGITS", "CONJ", "SCONJ"]:
                     print("Cannot deduce pos from incoming cont:",

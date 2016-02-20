@@ -28,7 +28,6 @@ def guess_new_class(wordmap):
         return wordmap
     if wordmap['kotus_tn'] is None or wordmap['kotus_tn'] == '':
         return wordmap
-    tn = int(wordmap['kotus_tn'])
     if not wordmap['pos']:
         wordmap['pos'] = 'PARTICLE'
         wordmap['new_para'] = '#'

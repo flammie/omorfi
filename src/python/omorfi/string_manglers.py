@@ -24,6 +24,8 @@ from sys import stderr
 import re
 import unicodedata
 
+from .error_logging import fail_guess_because
+
 
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):
@@ -68,7 +70,7 @@ def mangle_suffixes_or_die(wordmap, suffixes):
     wordmap['bracketstub'] = replace_suffixes_or_die(wordmap['stub'], suffixes,
                                                      '<Del>→')
     wordmap['stub'] = remove_suffixes_or_die(wordmap['stub'], suffixes)
-    if wordmap['stub'] == None:
+    if wordmap['stub'] is None:
         print("Word has been misclassified or suffix stripping is insufficient."
               "Fix the database or stripping rules to continue.",
               "Relevant word entry:\n", wordmap, file=stderr)

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-#
-# utils to format apertium style data from omorfi database values
+# -*- coding: utf-8 -*-
+"""Functions to format Turku Dependency Treebank style analyses from omorfi data."""
 
-from .omorfi.lexc_formatter import lexc_escape
-from .omorfi.settings import word_boundary, weak_boundary, \
-    morph_boundary, deriv_boundary, optional_hyphen
-from .omorfi.error_logging import fail_formatting_missing_for
+from sys import stderr
+
+from .lexc_formatter import lexc_escape
+from .omor_formatter import OmorFormatter
 
 
 tdt_multichars = {
@@ -101,13 +101,13 @@ stuff2tdt = {
     "Cva": "[PCP_VA]",
     "Cnut": "[PCP_NUT]",
     "Cpos": "",
-    #"Cpos": "[CMP_POS]",
+    # "Cpos": "[CMP_POS]",
     "Ccmp": "[CMP_CMP]",
     "Csup": "[CMP_SUP]",
     "Dinen": "|DRV_Der_INEN]",
     "Dja": "|DRV_Der_JA]",
     "Dmaisilla": "[INF_MAISILLA]",
-    #"Dmaisilla": "|DRV_Der_MAISILLA]",
+    # "Dmaisilla": "|DRV_Der_MAISILLA]",
     "Dminen": "|DRV_Der_MINEN]",
     "Dtu": "|DRV_Der_TU]",
     "Dnut": "|DRV_Der_NUT]",
@@ -123,9 +123,9 @@ stuff2tdt = {
     "Du": "|DRV_Der_U]",
     "Duus": "|DRV_Der_UUS]",
     "Dmpi": "",
-    #"Dmpi": "|DRV_Der_MPI]",
+    # "Dmpi": "|DRV_Der_MPI]",
     "Din": "",
-    #"Din": "|DRV_Der_IN]",
+    # "Din": "|DRV_Der_IN]",
     "Ia": "[INF_A]",
     "Ie": "[INF_E]",
     "Ima": "[INF_MA]",
@@ -185,9 +185,9 @@ stuff2tdt = {
     "ACRONYM": "[POS_NOUN]% SUBCAT_ABBREVIATION]",
     "ABBREVIATION": "% SUBCAT_ABBREVIATION]",
     "SUFFIX": "",
-    #"SUFFIX": "% SUBCAT_SUFFIX]",
+    # "SUFFIX": "% SUBCAT_SUFFIX]",
     "PREFIX": "",
-    #"PREFIX": "% SUBCAT_PREFIX]",
+    # "PREFIX": "% SUBCAT_PREFIX]",
     "INTERJECTION": "% SUBCAT_INTERJECTION]",
     "ADPOSITION": "[POS_ADPOSITION]",
     "DEMONSTRATIVE": "% SUBCAT_Dem",
@@ -250,7 +250,7 @@ def format_analysis_lexc_tdt(anals, format):
     tdtstring = ''
     for tag in anals.split('|'):
         tdtstring += format_tag_tdt(tag, format)
-    return tdttstring
+    return tdtstring
 
 
 def format_continuation_lexc_tdt(anals, surf, cont, format):
@@ -334,7 +334,7 @@ def format_lexc_tdt(wordmap, format):
 
     if '+ktnkav' in format and wordmap['pos'] != 'ACRONYM':
         tag = "[KTN=%s]" % (lexc_escape(wordmap['kotus_tn']))
-        if tag in ktnkav_multichars:
+        if tag in OmorFormatter.ktnkav_multichars:
             wordmap['analysis'] += tag
             if wordmap['kotus_av']:
                 wordmap['analysis'] += "[KAV=%(kotus_av)s]" % (wordmap)
@@ -360,7 +360,7 @@ if __name__ == '__main__':
     for stuff, tdt in stuff2tdt.items():
         if len(tdt) < 2:
             continue
-        elif not tdt in tdt_multichars:
+        elif tdt not in tdt_multichars:
             print("There are conflicting formattings in here!", tdt,
                   "is not a valid defined tdt multichar_symbol!")
             fail = True

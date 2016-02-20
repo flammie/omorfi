@@ -21,8 +21,7 @@ Validates databases
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
+from sys import stderr, exit
 import argparse
 import csv
 import re
@@ -31,8 +30,6 @@ import re
 
 
 def main():
-    # defaults
-    outfiles = None
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Guess more data for Finnish TSV databases")
@@ -59,10 +56,8 @@ def main():
 
     if args.strip == '"' or args.strip == "'":
         quoting = csv.QUOTE_ALL
-        quotechar = args.strip
     else:
         quoting = csv.QUOTE_NONE
-        quotechar = None
 
     errors = False
     # read joins from file if any

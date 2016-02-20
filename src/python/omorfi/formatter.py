@@ -46,16 +46,16 @@ class Formatter(metaclass=ABCMeta):
     * from continuation record (a tsv row)
     """
 
-    def __init__(this, verbosity=False, **kwargs):
+    def __init__(self, verbosity=False, **kwargs):
         """Construct formatter with given verbosity."""
-        this._verbosity = verbosity
+        self._verbosity = verbosity
 
-    def copyright_lexc(this):
+    def copyright_lexc(self):
         """Return copyright declaration in lexc format"""
         return "! Copyright 2015 Omorfi Contributors, GNU GPLv3"
 
     @abstractmethod
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         """Return multichar declaration in lexc format"""
         multichars = "!! Following specials exist in all versions of omorfi\n"
         for mcs in common_multichars:
@@ -63,7 +63,7 @@ class Formatter(metaclass=ABCMeta):
         return multichars
 
     @abstractmethod
-    def root_lexicon_lexc(this):
+    def root_lexicon_lexc(self):
         """Return root lexicon in lexc format"""
         root = "LEXICON Root\n"
         root += """!! LEXICONS per class
@@ -92,12 +92,12 @@ class Formatter(metaclass=ABCMeta):
         return root
 
     @abstractmethod
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         """Turn wordmap into lexc string valid for insides of LEXICON"""
         pass
 
     @abstractmethod
-    def continuation2lexc(this, fields):
+    def continuation2lexc(self, fields):
         """Turn continuation record into lexc string valid for insides of LEXICON"""
         pass
 

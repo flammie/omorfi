@@ -19,9 +19,9 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .settings import word_boundary, weak_boundary, \
-    optional_hyphen
+from .settings import word_boundary
 from .error_logging import fail_formatting_missing_for
+from .apertium_formatter import ApertiumFormatter
 
 monodix_sdefs = {
     'abbr',
@@ -402,7 +402,7 @@ def format_monodix_entry(wordmap):
 # self test
 if __name__ == '__main__':
     fail = False
-    for stuff, ape in stuff2apertium.items():
+    for stuff, ape in ApertiumFormatter.stuff2apertium.items():
         if len(ape) < 2:
             continue
         elif ape.startswith('+'):
@@ -411,7 +411,7 @@ if __name__ == '__main__':
                       ape[ape.find('+'):],
                       "is not a valid apertium multichar_symbol!")
                 fail = True
-        elif not ape in apertium_multichars:
+        elif ape not in ApertiumFormatter.apertium_multichars:
             print("There are conflicting formattings in here!", ape,
                   "is not a valid apertium multichar_symbol!")
             fail = True

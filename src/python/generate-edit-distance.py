@@ -21,8 +21,7 @@ This script generates edit distance.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
+from sys import exit
 import argparse
 
 from omorfi.settings import fin_lowercase, fin_uppercase, fin_symbols

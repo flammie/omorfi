@@ -21,10 +21,9 @@
 # utils to format apertium style data from omorfi database values
 
 from .formatter import Formatter
-from .settings import word_boundary, weak_boundary, \
-    optional_hyphen
+from .settings import word_boundary, optional_hyphen
 from .lexc_formatter import lexc_escape
-from .error_logging import fail_formatting_missing_for, just_fail
+from .no_tags_formatter import NoTagsFormatter
 
 
 class LabeledSegmentsFormatter(Formatter):
@@ -314,25 +313,25 @@ class LabeledSegmentsFormatter(Formatter):
                     "": ""
                     }
 
-    def __init__(this, verbose=True, **kwargs):
-        this.verbose = verbose
+    def __init__(self, verbose=True, **kwargs):
+        self.verbose = verbose
 
-    def stuff2lexc(this, stuff):
-        return this.stuff2labels[stuff]
+    def stuff2lexc(self, stuff):
+        return self.stuff2labels[stuff]
 
-    def analyses2lexc(this, anals):
+    def analyses2lexc(self, anals):
         apestring = ''
         for i in anals.split('|'):
-            apestring += this.stuff2lexc(i)
+            apestring += self.stuff2lexc(i)
         return apestring
 
-    def continuation2lexc(this, anals, surf, cont):
+    def continuation2lexc(self, anals, surf, cont):
         # interleave tags and segments
         analstring = lexc_escape(surf)
-        analstring += this.analyses2lexc(anals)
+        analstring += self.analyses2lexc(anals)
         return "%s:%s\t%s ;\n" % (analstring, lexc_escape(surf), cont)
 
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         if wordmap['lemma'] == ' ':
             return ''
         wordmap['analysis'] = lexc_escape(wordmap['stub'])
@@ -345,15 +344,15 @@ class LabeledSegmentsFormatter(Formatter):
                                        wordmap['new_para'])
         return retvals
 
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"
-        for mc in this.multichars:
+        for mc in self.multichars:
             multichars += lexc_escape(mc) + "\n"
-        multichars += Formatter.multichars_lexc(this)
+        multichars += Formatter.multichars_lexc(self)
         return multichars
 
-    def root_lexicon_lexc(this):
-        root = Formatter.root_lexicon_lexc(this)
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
         return root
 
 # self test

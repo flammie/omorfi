@@ -23,8 +23,6 @@
 
 from .formatter import Formatter
 from .lexc_formatter import lexc_escape
-from .settings import word_boundary, weak_boundary, \
-    morph_boundary, deriv_boundary, optional_hyphen
 from .error_logging import fail_formatting_missing_for, just_fail
 
 
@@ -375,7 +373,7 @@ class OmorFormatter(Formatter):
         "Csup": "[CMP=SUP]",
         "Dinen": "[DRV=INEN]",
         "Dja": "[DRV=JA]",
-        #"Dmaisilla": "[INF=MAISILLA]",
+        # "Dmaisilla": "[INF=MAISILLA]",
         "Dmaisilla": "[DRV=MAISILLA]",
         "Dminen": "[DRV=MINEN]",
         "Dtu": "[DRV=TU]",
@@ -393,9 +391,9 @@ class OmorFormatter(Formatter):
         "Du": "[DRV=U]",
         "Duus": "[DRV=UUS]",
         "Dmpi": "",
-        #"Dmpi": "[DRV=MPI]",
+        # "Dmpi": "[DRV=MPI]",
         "Din": "",
-        #"Din": "[DRV=IN]",
+        # "Din": "[DRV=IN]",
         "Ia": "[INF=A]",
         "Ie": "[INF=E]",
         "Ima": "[INF=MA]",
@@ -501,9 +499,9 @@ class OmorFormatter(Formatter):
         "ACRONYM": "[ABBR=ACRONYM]",
         "ABBREVIATION": "[ABBR=ABBREVIATION]",
         "SUFFIX": "",
-        #"SUFFIX": "[SUBCAT=SUFFIX]",
+        # "SUFFIX": "[SUBCAT=SUFFIX]",
         "PREFIX": "",
-        #"PREFIX": "[SUBCAT=PREFIX]",
+        # "PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[PRONTYPE=DEM]",
@@ -511,7 +509,7 @@ class OmorFormatter(Formatter):
         "QUANTIFIER": "[SUBCAT=QUANTIFIER]",
         "PERSONAL": "[PRONTYPE=PRS]",
         "INDEFINITE": "[PRONTYPE=IND]",
-        #"INDEFINITE": "[SUBCAT=INDEF]",
+        # "INDEFINITE": "[SUBCAT=INDEF]",
         "INTERROGATIVE": "[PRONTYPE=INT]",
         "REFLEXIVE": "[SUBCAT=REFLEXIVE]",
         "RELATIVE": "[PRONTYPE=REL]",
@@ -573,69 +571,65 @@ class OmorFormatter(Formatter):
         ".": "",
         "": ""}
 
-    def __init__(this, verbose=False, **kwargs):
-        fail = False
-        for stuff, omor in this.stuff2omor.items():
+    def __init__(self, verbose=False, **kwargs):
+        for stuff, omor in self.stuff2omor.items():
             if len(omor) < 2:
                 continue
-            elif not omor in this.common_multichars | this.old_poses | \
-                    this.allo_multichars:
+            elif omor not in self.common_multichars | self.old_poses | \
+                    self.allo_multichars:
                 just_fail(
-                    "There are conflicting formattings in here!\n"
-                    + omor + " corresponding " + stuff +
+                    "There are conflicting formattings in here!\n" +
+                    omor + " corresponding " + stuff +
                     " is not a valid defined omor multichar_symbol!")
-                fail = True
-        if fail:
-            tainted = True
-        this.verbose = verbose
-        this.semantics = True
-        if not 'sem' in kwargs or not kwargs['sem']:
-            for k, v in this.stuff2omor.items():
+        self.verbose = verbose
+        self.semantics = True
+        if 'sem' not in kwargs or not kwargs['sem']:
+            for k, v in self.stuff2omor.items():
                 if "SEM=" in v:
-                    this.stuff2omor[k] = ""
-            this.semantics = False
-        this.allo = True
-        if not 'allo' in kwargs or not kwargs['allo']:
-            for k, v in this.stuff2omor.items():
+                    self.stuff2omor[k] = ""
+            self.semantics = False
+        self.allo = True
+        if 'allo' not in kwargs or not kwargs['allo']:
+            for k, v in self.stuff2omor.items():
                 if "ALLO=" in v:
-                    this.stuff2omor[k] = ""
-            this.allo = False
-        this.props = True
-        if not 'props' in kwargs or not kwargs['props']:
-            for k, v in this.stuff2omor.items():
+                    self.stuff2omor[k] = ""
+            self.allo = False
+        self.props = True
+        if 'props' not in kwargs or not kwargs['props']:
+            for k, v in self.stuff2omor.items():
                 if "PROPER=" in v:
-                    this.stuff2omor[k] = ""
-            this.props = False
-        this.ktnkav = True
-        if not 'ktnkav' in kwargs or not kwargs['ktnkav']:
-            for k, v in this.stuff2omor.items():
+                    self.stuff2omor[k] = ""
+            self.props = False
+        self.ktnkav = True
+        if 'ktnkav' not in kwargs or not kwargs['ktnkav']:
+            for k, v in self.stuff2omor.items():
                 if "KTN=" in v or "KAV=" in v:
-                    this.stuff2omor[k] = ""
-            this.ktnkav = False
-        this.newparas = True
-        if not 'newparas' in kwargs or not kwargs['newparas']:
-            for k, v in this.stuff2omor.items():
+                    self.stuff2omor[k] = ""
+            self.ktnkav = False
+        self.newparas = True
+        if 'newparas' not in kwargs or not kwargs['newparas']:
+            for k, v in self.stuff2omor.items():
                 if "NEW_PARA=" in v:
-                    this.stuff2omor[k] = ""
-            this.newparas = False
+                    self.stuff2omor[k] = ""
+            self.newparas = False
 
-    def stuff2lexc(this, stuff):
+    def stuff2lexc(self, stuff):
         if stuff == '0':
             return "0"
-        if stuff in this.stuff2omor:
-            return this.stuff2omor[stuff]
+        if stuff in self.stuff2omor:
+            return self.stuff2omor[stuff]
         else:
-            if this.verbose:
+            if self.verbose:
                 fail_formatting_missing_for(stuff, "omor")
             return ""
 
-    def analyses2lexc(this, anals):
+    def analyses2lexc(self, anals):
         omorstring = ''
         for tag in anals.split('|'):
-            omorstring += this.stuff2lexc(tag)
-        return omortstring
+            omorstring += self.stuff2lexc(tag)
+        return omorstring
 
-    def continuation2lexc(this, anals, surf, cont):
+    def continuation2lexc(self, anals, surf, cont):
         omorstring = ''
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             omorstring = lexc_escape(surf)
@@ -664,11 +658,11 @@ class OmorFormatter(Formatter):
 
         tags = anals.split('|')
         for tag in tags:
-            omorstring += this.stuff2lexc(tag)
+            omorstring += self.stuff2lexc(tag)
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (omorstring, surf, cont)
 
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         '''
         format string for canonical omor format for morphological analysis
         '''
@@ -678,59 +672,59 @@ class OmorFormatter(Formatter):
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         wordmap['analysis'] = "[WORD_ID=%s]" % (lexc_escape(wordmap['lemma']))
         wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJ')
-        wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+        wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
-            wordmap['analysis'] += this.stuff2lexc('SUFFIX')
+            wordmap['analysis'] += self.stuff2lexc('SUFFIX')
         if wordmap['is_prefix']:
-            wordmap['analysis'] += this.stuff2lexc('PREFIX')
+            wordmap['analysis'] += self.stuff2lexc('PREFIX')
             if wordmap['upos'] == 'ADJ':
-                wordmap['analysis'] += this.stuff2lexc('Cpos')
+                wordmap['analysis'] += self.stuff2lexc('Cpos')
 
         if wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(pclass)
+                wordmap['analysis'] += self.stuff2lexc(pclass)
 
         if wordmap['symbol']:
             for subcat in wordmap['symbol'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(subcat)
+                wordmap['analysis'] += self.stuff2lexc(subcat)
 
         if wordmap['prontype']:
             for stuff in wordmap['prontype'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['lex']:
             for stuff in wordmap['lex'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['abbr']:
             for stuff in wordmap['abbr'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['numtype']:
             for stuff in wordmap['numtype'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['adptype']:
             for stuff in wordmap['adptype'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['is_proper']:
-            if this.props and wordmap['proper_noun_class']:
+            if self.props and wordmap['proper_noun_class']:
                 for prop in wordmap['proper_noun_class'].split(','):
-                    wordmap['analysis'] += this.stuff2lexc(prop)
+                    wordmap['analysis'] += self.stuff2lexc(prop)
             else:
-                wordmap['analysis'] += this.stuff2lexc('PROPER')
+                wordmap['analysis'] += self.stuff2lexc('PROPER')
 
-        if this.semantics and wordmap['sem']:
+        if self.semantics and wordmap['sem']:
             for sem in wordmap['sem'].split(','):
-                wordmap['analysis'] += this.stuff2lexc(sem)
+                wordmap['analysis'] += self.stuff2lexc(sem)
 
         if wordmap['style']:
-            wordmap['analysis'] += this.stuff2lexc(wordmap['style'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['style'])
 
-        if this.ktnkav and wordmap['upos'] != 'ACRONYM':
+        if self.ktnkav and wordmap['upos'] != 'ACRONYM':
             tag = "[KTN=%s]" % (lexc_escape(wordmap['kotus_tn']))
-            if tag in ktnkav_multichars:
+            if tag in self.ktnkav_multichars:
                 wordmap['analysis'] += tag
                 if wordmap['kotus_av']:
                     wordmap['analysis'] += "[KAV=%(kotus_av)s]" % (wordmap)
-        if this.newparas:
-            wordmap['analysis'] += "[NEWPARA=%s]" % (new_para)
+        if self.newparas:
+            wordmap['analysis'] += "[NEWPARA=%s]" % (wordmap['new_para'],)
 
         # match WORD_ID= with epsilon, then stub and lemma might match
         lex_stub = '0' + wordmap['stub']
@@ -739,22 +733,22 @@ class OmorFormatter(Formatter):
                                       wordmap['new_para'])]
         return "\n".join(retvals)
 
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"
         multichars += "!! OMOR multichars:\n"
-        for mcs in this.common_multichars:
+        for mcs in self.common_multichars:
             multichars += mcs + "\n"
-        multichars += Formatter.multichars_lexc(this)
+        multichars += Formatter.multichars_lexc(self)
         return multichars
 
-    def root_lexicon_lexc(this):
-        root = Formatter.root_lexicon_lexc(this)
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens
             root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"
-            root += this.stuff2lexc('B→') + ':-   NOUN ;\n'
-            root += this.stuff2lexc('B→') + ':-   ADJ ;\n'
-            root += this.stuff2lexc('B→') + ':-   SUFFIX ;\n'
+            root += self.stuff2lexc('B→') + ':-   NOUN ;\n'
+            root += self.stuff2lexc('B→') + ':-   ADJ ;\n'
+            root += self.stuff2lexc('B→') + ':-   SUFFIX ;\n'
         if False:
             root += "0   TAGGER_HACKS    ;\n"
         return root
