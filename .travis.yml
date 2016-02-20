@@ -3,6 +3,7 @@ language: "python"
 python:
    - "3.4"
 install:
-   pip install flake8 pep8-naming
+   pip install flake8 pep8-naming isort
 script:
    flake8 src/python
+   isort -qc -rc src/python
