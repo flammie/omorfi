@@ -301,15 +301,15 @@ def main():
         if not line or line == '':
             print(file=outfile)
             continue
-        surfs = omorfi.tokenise(line)
-        for surf in surfs:
-            segments = omorfi.segment(surf)
-            labelsegments = omorfi.labelsegment(surf)
+        tokens = omorfi.tokenise(line)
+        for token in tokens:
+            segments = omorfi.segment(token[0])
+            labelsegments = omorfi.labelsegment(token[0])
             if options.output_format == 'moses-factors':
                 print_moses_factor_segments(
-                    segments, labelsegments, surf, outfile)
+                    segments, labelsegments, token[0], outfile)
             elif options.output_format == 'segments':
-                print_segments(segments, labelsegments, surf, outfile,
+                print_segments(segments, labelsegments, token[0], outfile,
                                options)
         print(file=outfile)
     exit(0)
