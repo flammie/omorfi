@@ -22,9 +22,10 @@
 
 from .formatter import Formatter
 from .settings import word_boundary, weak_boundary, \
-        optional_hyphen
+    optional_hyphen
 from .lexc_formatter import lexc_escape
 from .error_logging import fail_formatting_missing_for, just_fail
+
 
 class NoTagsFormatter(Formatter):
 
@@ -50,7 +51,7 @@ class NoTagsFormatter(Formatter):
         return apestring
 
     def continuation2lexc(this, anals, surf, cont):
-        analstring = this.analyses2lexc(anals) 
+        analstring = this.analyses2lexc(anals)
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             analstring = lexc_escape(surf) + analstring
@@ -62,7 +63,7 @@ class NoTagsFormatter(Formatter):
             pass
         else:
             analstring = lexc_escape(surf)
-        return "%s:%s\t%s ;\n" %(analstring, lexc_escape(surf), cont)
+        return "%s:%s\t%s ;\n" % (analstring, lexc_escape(surf), cont)
 
     def wordmap2lexc(this, wordmap):
         if wordmap['lemma'] == ' ':
@@ -74,10 +75,11 @@ class NoTagsFormatter(Formatter):
         else:
             wordmap['analysis'] = lexc_escape(wordmap['stub'])
         retvals = ""
-        wordmap['stub'] = wordmap['stub'].replace(word_boundary, optional_hyphen)
+        wordmap['stub'] = wordmap['stub'].replace(
+            word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        retvals += "%s:%s\t%s\t;\n" %(wordmap['analysis'], wordmap['stub'], 
-                wordmap['new_para'])
+        retvals += "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
+                                       wordmap['new_para'])
         return retvals
 
     def multichars_lexc(this):
@@ -93,4 +95,3 @@ class NoTagsFormatter(Formatter):
 if __name__ == '__main__':
     formatter = NoTagsFormatter()
     exit(0)
-

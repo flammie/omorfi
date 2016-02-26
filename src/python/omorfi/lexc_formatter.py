@@ -20,8 +20,9 @@
 # functions for formatting the database data to lexc
 
 from .settings import common_multichars, version_id_easter_egg, \
-        optional_hyphen, word_boundary, stub_boundary, newword_boundary, \
-        morph_boundary, deriv_boundary
+    optional_hyphen, word_boundary, stub_boundary, newword_boundary, \
+    morph_boundary, deriv_boundary
+
 
 def lexc_escape(s):
     '''Escape symbols that have special meaning in lexc.'''
@@ -58,30 +59,34 @@ def format_copyright_lexc():
 """
 
 
-
-
 # generics
 def format_continuation_lexc_generic(anals, surf, cont):
     surf = lexc_escape(surf)
-    return "%s:%s\t%s ; \n" %(surf.replace(optional_hyphen, newword_boundary),
-            surf, cont)
+    return "%s:%s\t%s ; \n" % (surf.replace(optional_hyphen, newword_boundary),
+                               surf, cont)
 
 
 def format_wordmap_lexc_generic(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['stub']) + stub_boundary
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
-    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
+    retvals += ["%s:%s\t%s\t;" %
+                (wordmap['analysis'], lex_stub, wordmap['new_para'])]
     return "\n".join(retvals)
 
+
 def format_wordmap_lexc_labeled_segments(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['stub']) + "[UPOS=" + wordmap['upos'] + ']'
+    wordmap['analysis'] = lexc_escape(
+        wordmap['stub']) + "[UPOS=" + wordmap['upos'] + ']'
     wordmap['analysis'] = wordmap['analysis'].replace(word_boundary, "[WB=+]")
-    wordmap['analysis'] = wordmap['analysis'].replace(newword_boundary, "[WB=?]")
+    wordmap['analysis'] = wordmap['analysis'].replace(
+        newword_boundary, "[WB=?]")
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
-    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
+    retvals += ["%s:%s\t%s\t;" %
+                (wordmap['analysis'], lex_stub, wordmap['new_para'])]
     return "\n".join(retvals)
+
 
 def format_continuation_lexc_labeled_segments(anals, surf, cont):
     surf = lexc_escape(surf)
@@ -97,20 +102,20 @@ def format_continuation_lexc_labeled_segments(anals, surf, cont):
         if anal.startswith("D") and "{DB}" in foo:
             foo = foo.replace(deriv_boundary, "[DB=" + anal + "]", 1)
         elif "{MB}" in foo:
-            foo = foo.replace(morph_boundary, "[MB="  + anal+ "]", 1)
+            foo = foo.replace(morph_boundary, "[MB=" + anal + "]", 1)
         else:
             restanals.append(anal)
     if restanals and len(restanals) > 0:
         foo += "[TRAILS=→" + "][?=".join(restanals) + "]"
 
-    return "%s:%s\t%s ; \n" %(foo.replace(optional_hyphen, newword_boundary),
-            surf, cont)
+    return "%s:%s\t%s ; \n" % (foo.replace(optional_hyphen, newword_boundary),
+                               surf, cont)
 
 
 def format_wordmap_lexc_generic(wordmap):
     wordmap['analysis'] = lexc_escape(wordmap['stub']) + stub_boundary
     retvals = []
     lex_stub = lexc_escape(wordmap['stub'])
-    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, wordmap['new_para'])]
+    retvals += ["%s:%s\t%s\t;" %
+                (wordmap['analysis'], lex_stub, wordmap['new_para'])]
     return "\n".join(retvals)
-

@@ -20,7 +20,9 @@
 from .omorfi.string_manglers import replace_rightmost, replace_rightmosts
 from sys import stderr
 
-# 
+#
+
+
 def plurale_tantum_get_singular_stem(wordmap):
     '''Guess inflectional singulars for words whose dictionary form is plural.
     '''
@@ -34,46 +36,63 @@ def plurale_tantum_get_singular_stem(wordmap):
         if tn in [7, 23, 24, 25, 26, 29, 30]:
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'e', 'i')
         # ^^ generic extra tweak
-        if (tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'A':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'k', 'kk')
-        elif (tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'B':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'p', 'pp')
-        elif (tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'C':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 't', 'tt')
+        if (tn in range(1, 7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'A':
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'k', 'kk')
+        elif (tn in range(1, 7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'B':
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'p', 'pp')
+        elif (tn in range(1, 7) or tn in range(8, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'C':
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 't', 'tt')
         elif tn == 1 and wordmap['kotus_av'] == 'D':
-            wordmap['stub'] = replace_rightmosts(wordmap['stub'], ['ut', 'yt', 'öt', 'ot'], ['ku', 'ky', 'kö', 'ko'])
+            wordmap['stub'] = replace_rightmosts(
+                wordmap['stub'], ['ut', 'yt', 'öt', 'ot'], ['ku', 'ky', 'kö', 'ko'])
         elif tn in [5, 7] and wordmap['kotus_av'] == 'D':
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'it', 'ki')
         elif tn in [9, 10] and wordmap['kotus_av'] == 'D':
-            wordmap['stub'] = replace_rightmosts(wordmap['stub'], ['at', 'ät'], ['ka', 'kä'])
+            wordmap['stub'] = replace_rightmosts(
+                wordmap['stub'], ['at', 'ät'], ['ka', 'kä'])
         elif tn == 1007:
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'jet', 'i')
         elif tn in [1009, 1010] and wordmap['kotus_av'] == 'D':
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'jat', 'ika')
         elif tn == 32 and wordmap['kotus_av'] == 'C':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 'et', ''), 'tt', 't')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 'et', ''), 'tt', 't')
         elif tn == 32 and wordmap['kotus_av'] == 'D':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 'et', ''), 'k', '')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 'et', ''), 'k', '')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'E':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'v', 'p')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'v', 'p')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'F':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'd', 't')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'd', 't')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'G':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'g', 'k')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'g', 'k')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'H':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'mm', 'mp')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'mm', 'mp')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'I':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'll', 'lt')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'll', 'lt')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'J':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'nn', 'nt')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'nn', 'nt')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'K':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'rr', 'rt')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'rr', 'rt')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'L':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'j', 'k')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'j', 'k')
         elif (tn in range(1, 16) or tn in range(17, 22)) and wordmap['kotus_av'] == 'M':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'v', 'k')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'v', 'k')
         elif (tn in [23, 24, 25, 26, 29, 30]) and wordmap['kotus_av'] == 'G':
-            wordmap['stub'] = replace_rightmost(replace_rightmost(wordmap['stub'], 't', ''), 'g', 'k')
+            wordmap['stub'] = replace_rightmost(
+                replace_rightmost(wordmap['stub'], 't', ''), 'g', 'k')
         elif tn == 16 and wordmap['kotus_av'] == 'H':
             wordmap['stub'] = wordmap['stub'][:-3] + 'pi'
         elif tn == 28 and wordmap['kotus_av'] == 'J':
@@ -132,7 +151,7 @@ def plurale_tantum_get_singular_stem(wordmap):
             fail_guess_because(wordmap, ["av", "!27,28,34"], ["1-48"])
             exit(1)
     else:
-        if tn in range(1,7) or tn in range(8, 16) or tn in range(17, 22):
+        if tn in range(1, 7) or tn in range(8, 16) or tn in range(17, 22):
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 't', '')
         elif tn in [7, 23, 24, 25, 26, 29, 30]:
             wordmap['stub'] = replace_rightmost(wordmap['stub'], 'et', 'i')
@@ -176,13 +195,13 @@ def plurale_tantum_get_singular_stem(wordmap):
         else:
             fail_guess_because(wordmap, ["!av"], ["1-49"])
             exit(1)
-    
+
     if wordmap['harmony'] == 'front':
         wordmap['stub'] = wordmap['stub'].replace('{uy}', 'y')
         wordmap['stub'] = wordmap['stub'].replace('{oö}', 'ö')
     elif wordmap['harmony'] == 'back':
         wordmap['stub'] = wordmap['stub'].replace('{uy}', 'u')
         wordmap['stub'] = wordmap['stub'].replace('{oö}', 'o')
-    
+
     wordmap['gradestem'] = wordmap['stub']
     return wordmap

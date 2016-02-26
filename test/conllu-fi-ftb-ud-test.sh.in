@@ -18,12 +18,12 @@ if test ! -r $conllus ; then
     echo missing $conllus, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -f $fsadir -i $conllus -o omorfi_ftb-ud-test.conllu -O ; then
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -f $fsadir -i $conllus -o omorfi_ftb-ud-test.conllu -O --hacks=ftb ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/conllu-compare.py -H omorfi_ftb-ud-test.conllu -r fi_ftb-ud-test.conllu -l omorfi_ftb-ud-test.log -t 64 ; then
-    echo We missed the target of 64 % conllu matches
+if ! @PYTHON@ $srcdir/conllu-compare.py -H omorfi_ftb-ud-test.conllu -r fi_ftb-ud-test.conllu -l omorfi_ftb-ud-test.log -t 75 ; then
+    echo We missed the target of 75 % conllu matches
     exit 1
 fi
 exit 0

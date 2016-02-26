@@ -5,6 +5,7 @@ from argparse import ArgumentParser
 from omorfi.omorfi import Omorfi
 import re
 
+
 def print_moses_factor_segments(segments, labelsegments, surf, outfile):
     if float(labelsegments[0][1]) != float('inf'):
         analysis = labelsegments[0][0]
@@ -34,19 +35,19 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
                 allow_uppers = True
                 skiptag = split
             elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
-                    'SCONJ', 'CONJ|VERB', 'INTJ', 'SYM']:
+                           'SCONJ', 'CONJ|VERB', 'INTJ', 'SYM']:
                 allow_uppers = True
                 moses += nextsep + split
             elif split in ['PL', 'INS', 'INE', 'ELA',
-                    'ILL', 'ADE', 'ABL', 'ALL', 'ACTV', 'PASV',
-                    'IMPV', 'POTN', 'COND', 'SG1', 'SG2', 'SG3', 'PL1',
-                    'PL2', 'PL3', 'PAST', 'INFA', 'PAR',
-                    'POSSP3', 'POSSG1', 'POSSG2', 'POSPL1', 'POSPL2',
-                    'GEN', 'PCPVA', 'INFE', 'PCPMA', 'PCPNUT', 'INFMA',
-                    'PE4', 'ABE', 'ESS', 'CONNEG', 'ORD', 'TRA', 'COM',
-                    'INFMAISILLA', 'PCPMATON',
-                    'HAN', 'KO', 'PA', 'S', 'KAAN', 'KA', 'KIN',
-                    'ACC']:
+                           'ILL', 'ADE', 'ABL', 'ALL', 'ACTV', 'PASV',
+                           'IMPV', 'POTN', 'COND', 'SG1', 'SG2', 'SG3', 'PL1',
+                           'PL2', 'PL3', 'PAST', 'INFA', 'PAR',
+                           'POSSP3', 'POSSG1', 'POSSG2', 'POSPL1', 'POSPL2',
+                           'GEN', 'PCPVA', 'INFE', 'PCPMA', 'PCPNUT', 'INFMA',
+                           'PE4', 'ABE', 'ESS', 'CONNEG', 'ORD', 'TRA', 'COM',
+                           'INFMAISILLA', 'PCPMATON',
+                           'HAN', 'KO', 'PA', 'S', 'KAAN', 'KA', 'KIN',
+                           'ACC']:
                 allow_uppers = True
                 if skiptag:
                     moses += nextsep + skiptag
@@ -81,40 +82,48 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         moses = re.sub(r"^([a-zåäö]+) ", r"\1|NOUN ", moses)
         moses = re.sub(r"([snrl])\|PCPNUTut", r"\1ut|PCPNUT", moses)
         moses = re.sub(r"([snrl])\|PCPNUTee", r"\1ee|PCPNUT", moses)
-        moses = re.sub(r"([snrl])\|AUX\.PCPNUTee", r"\1ee|AUX.PASV.PCPNUT", moses)
+        moses = re.sub(
+            r"([snrl])\|AUX\.PCPNUTee", r"\1ee|AUX.PASV.PCPNUT", moses)
         moses = re.sub(r"([snrl])\|PCPNUTe", r"\1e|PCPNUT", moses)
-        moses = re.sub(r"([snrl])\|AUX\.PCPNUTe", r"\1e|AUX.PASV.PCPNUT", moses)
+        moses = re.sub(
+            r"([snrl])\|AUX\.PCPNUTe", r"\1e|AUX.PASV.PCPNUT", moses)
         # teh|VERB |PCPNUTdy llä|ADE
         moses = re.sub(r"\|PCPNUT([tdrsnl]?[uy])", r"\1|PCPNUT", moses)
-        moses = re.sub(r"\|AUX\.PASV\.PCPNUT([tdrsnl]?[uy])", r"\1|AUX.PASV.PCPNUT", moses)
+        moses = re.sub(
+            r"\|AUX\.PASV\.PCPNUT([tdrsnl]?[uy])", r"\1|AUX.PASV.PCPNUT", moses)
         moses = re.sub(r"m\|PCPMA([a-zaä]+)", r"m\1|PCPMA", moses)
         moses = re.sub(r"v\|PCPVA([a-zaä]+)", r"v\1|PCPVA", moses)
         moses = re.sub(r"v\|VERB\.PCPVA([aä])", r"v\1|VERB.PCPVA", moses)
         moses = re.sub(r"v\|AUX.PCPVA([aä])", r"v\1|AUX.PCPVA", moses)
         #|PCPMATONön
         moses = re.sub(r"\|PCPMATON([a-zåäö]+)", r"\1|PCPMATON", moses)
-        #puhu|VERB ma|NOUN an|INFMA.ILL
+        # puhu|VERB ma|NOUN an|INFMA.ILL
         moses = re.sub(r"(m[aä])\|NOUN ([aä]n)\|INFMA.ILL",
-                r"\1|INFMA \2|ILL", moses)
-        #esitet|VERB tä|NOUN mä n|PASV.INFMA.INS
+                       r"\1|INFMA \2|ILL", moses)
+        # esitet|VERB tä|NOUN mä n|PASV.INFMA.INS
         # esitet|VERB tä|NOUN mä n|PASV.INFMA.INS
         moses = re.sub(r"(t[aä])\|NOUN (m[aä]) n\|PASV\.INFMA\.INS",
-                r"\1|PASV \2|INFMA n|INS", moses)
-        #annet|VERB ta|NOUN va t|PASV.PCPVA.PL
+                       r"\1|PASV \2|INFMA n|INS", moses)
+        # annet|VERB ta|NOUN va t|PASV.PCPVA.PL
         moses = re.sub(r"(t[aä])\|NOUN (v[aä]) t\|PASV\.PCPVA\.PL",
-                r"\1|PASV \2|PCPVA t|PL", moses)
+                       r"\1|PASV \2|PCPVA t|PL", moses)
         # todistet|VERB ta|NOUN va sti|PASV.PCPVA
         moses = re.sub(r"(t[aä])\|NOUN (v[aä]) sti\|PASV\.PCPVA",
-                r"\1|PASV \2|PCPVA sti|STI", moses)
-        moses = re.sub(r"([ei])\|NOUN (n|ssa|ssä)\|INFE.", r"\1|INFE \2|", moses)
+                       r"\1|PASV \2|PCPVA sti|STI", moses)
+        moses = re.sub(
+            r"([ei])\|NOUN (n|ssa|ssä)\|INFE.", r"\1|INFE \2|", moses)
         # herättäv|VERB.PCPVAä sti
-        moses = re.sub(r"v\|VERB.PCPVA([aä]) sti", r"v\1|VERB.PCPVA sti|STI", moses)
+        moses = re.sub(
+            r"v\|VERB.PCPVA([aä]) sti", r"v\1|VERB.PCPVA sti|STI", moses)
         # tarkastel|VERB ta|NOUN e ssa|PASV.INFE.INE
-        moses = re.sub(r"(t[aä])\|NOUN e (ssa|ssä)\|PASV.INFE.", r"\1|PASV e|INFE \2|", moses)
+        moses = re.sub(
+            r"(t[aä])\|NOUN e (ssa|ssä)\|PASV.INFE.", r"\1|PASV e|INFE \2|", moses)
         # varot|VERB ta|NOUN e n|PASV.INFE.INS
-        moses = re.sub(r"(t[aä])\|NOUN e n\|PASV.INFE.", r"\1|PASV e|INFE n|", moses)
-        #tä|NOUN isi in|PASV.COND.PE4
-        moses = re.sub(r"t([aä])\|NOUN isi in\|PASV.COND.PE4", r"t\1|PASV isi|COND in|PE4", moses)
+        moses = re.sub(
+            r"(t[aä])\|NOUN e n\|PASV.INFE.", r"\1|PASV e|INFE n|", moses)
+        # tä|NOUN isi in|PASV.COND.PE4
+        moses = re.sub(
+            r"t([aä])\|NOUN isi in\|PASV.COND.PE4", r"t\1|PASV isi|COND in|PE4", moses)
         # moniselitteise|ADJ sti
         moses = re.sub(r"ADJ sti$", "ADJ sti|STI", moses)
         # hillitse|VERB vä|PCPVA sti
@@ -127,7 +136,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         moses = re.sub(r"PCPMA sti$", "PCPMA sti|STI", moses)
         # yhdenmukaista|VERB minen
         moses = re.sub(r"\|VERB minen$", "|VERB minen|NOUN", moses)
-        # mi|NOUN s 
+        # mi|NOUN s
         moses = re.sub(r"mi\|NOUN s", "mis|NOUN", moses)
         # kunnalli|ADJ s-
         moses = re.sub(r"\|(ADJ|NOUN|PROPN) s-", r"s-|\1", moses)
@@ -138,9 +147,10 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         moses = re.sub(r"VERB ([uy])$", r"VERB \1|NOUN", moses)
         moses = re.sub(r"VERB ([uy]-)$", r"VERB \1|NOUN", moses)
         # clusterfuckup:
-        # soveltamis|NOUN|mis|NOUN|NOUN päivä määrä|NOUN n|GEN siirtämis|NOUNs|NOUN tä|PAR
+        # soveltamis|NOUN|mis|NOUN|NOUN päivä määrä|NOUN n|GEN
+        # siirtämis|NOUNs|NOUN tä|PAR
         moses = re.sub(r"mis\|NOUN\|mis\|NOUN\|NOUN ([a-zåäö]+)",
-                r"mis|NOUN \1|NOUN", moses)
+                       r"mis|NOUN \1|NOUN", moses)
         moses = re.sub(r"mis\|NOUNs\|NOUN", r"mis|NOUN", moses)
         # toimi|NOUN alo|NOUN i|NOUN ttain
         moses = re.sub(r"NOUN ttain$", "NOUN ttain|DERTTAIN", moses)
@@ -154,18 +164,18 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         # ulko|NOUN maalai|NOUN s|NOUN viha mielis|ADJ tä|PAR
         # epä|NOUN tasa-arvo asia|NOUN
         moses = re.sub(r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|NOUN",
-                r"\1|NOUN \2|NOUN \3|NOUN", moses)
+                       r"\1|NOUN \2|NOUN \3|NOUN", moses)
         moses = re.sub(r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|ADJ",
-                r"\1|NOUN \2|NOUN \3|ADJ", moses)
+                       r"\1|NOUN \2|NOUN \3|ADJ", moses)
         # šakki lauda|NOUN
-        # pöytä|NOUN rosé viine|NOUN i|PL stä|ELA 
+        # pöytä|NOUN rosé viine|NOUN i|PL stä|ELA
         # linja-auto liikentee|NOUN n|GEN
         moses = re.sub(r"^([A-Za-z*ÉéÄŠÖÅšäöå-]+) ([a-zäöå-]+)\|NOUN",
-                r"\1|NOUN \2|NOUN", moses)
+                       r"\1|NOUN \2|NOUN", moses)
         moses = re.sub(r"^([A-Za-z*ÉéÄŠÖÅšäöå-]+) ([a-zäöå-]+)\|PROPN",
-                r"\1|PROPN \2|PROPN", moses)
+                       r"\1|PROPN \2|PROPN", moses)
         moses = re.sub(r"^\|([A-Za-z*ÉéÄŠÖÅšäöå-]+).PROPN",
-                r"\1|PROPN", moses)
+                       r"\1|PROPN", moses)
         #  R|NOUN ja|ADV |S.NOUN
         # |S-.NOUN kirjaime|NOUN lla|ADE
         moses = re.sub(r"\|S.NOUN", r"S|NOUN", moses)
@@ -185,7 +195,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         # ADP
         moses = re.sub(r"\|ADP([in])", r"\1|ADP", moses)
         moses = re.sub(r"\|SG3pi", r"pi|SG3", moses)
-        # 
+        #
         moses = re.sub(r"([uy])\|PCPNUTt", r"\1t|PCPNUT", moses)
         # |NOUNäiliö|NOUN
         moses = re.sub(r"\|NOUN([a-zäåö]+)\|NOUN", r"\1|NOUN", moses)
@@ -233,38 +243,38 @@ def main():
     """Segment text in some formats."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
-    a.add_argument('-o', '--output', metavar="OUTFILE", 
-            help="print segments into OUTFILE")
-    a.add_argument('-O', '--output-format', metavar="OFORMAT", 
-            help="format output suitable for OFORMAT",
-            choices=["labels-tsv", "moses-factors", "segments"])
+                   help="print verbosely while processing")
+    a.add_argument('-o', '--output', metavar="OUTFILE",
+                   help="print segments into OUTFILE")
+    a.add_argument('-O', '--output-format', metavar="OFORMAT",
+                   help="format output suitable for OFORMAT",
+                   choices=["labels-tsv", "moses-factors", "segments"])
     a.add_argument('--no-split-words', action="store_false", default=True,
-            dest="split_words",
-            help="split on word boundaries")
+                   dest="split_words",
+                   help="split on word boundaries")
     a.add_argument('--no-split-new-words', action="store_false", default=True,
-            dest="split_new_words",
-            help="split on new word boundaries (prev. unattested compounds)")
+                   dest="split_new_words",
+                   help="split on new word boundaries (prev. unattested compounds)")
     a.add_argument('--no-split-morphs', action="store_false", default=True,
-            dest="split_morphs",
-            help="split on morph boundaries")
+                   dest="split_morphs",
+                   help="split on morph boundaries")
     a.add_argument('--split-derivs', action="store_true", default=False,
-            help="split on derivation boundaries")
+                   help="split on derivation boundaries")
     a.add_argument('--split-nonwords', action="store_true", default=False,
-            help="split on other boundaries")
+                   help="split on other boundaries")
     a.add_argument('--segment-marker', default=' ', metavar='SEG',
-            help="mark segment boundaries with SEG")
+                   help="mark segment boundaries with SEG")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
         if options.verbose:
             print("Reading automata dir", options.fsa)
-        omorfi.load_from_dir(options.fsa, segment=True, 
-                labelsegment=True)
+        omorfi.load_from_dir(options.fsa, segment=True,
+                             labelsegment=True)
     else:
         if options.verbose:
             print("Searching for automata everywhere...")
@@ -291,18 +301,18 @@ def main():
         if not line or line == '':
             print(file=outfile)
             continue
-        surfs = omorfi.tokenise(line)
-        for surf in surfs:
-            segments = omorfi.segment(surf)
-            labelsegments = omorfi.labelsegment(surf)
+        tokens = omorfi.tokenise(line)
+        for token in tokens:
+            segments = omorfi.segment(token[0])
+            labelsegments = omorfi.labelsegment(token[0])
             if options.output_format == 'moses-factors':
-                print_moses_factor_segments(segments, labelsegments, surf, outfile)
+                print_moses_factor_segments(
+                    segments, labelsegments, token[0], outfile)
             elif options.output_format == 'segments':
-                print_segments(segments, labelsegments, surf, outfile,
-                        options)
+                print_segments(segments, labelsegments, token[0], outfile,
+                               options)
         print(file=outfile)
     exit(0)
 
 if __name__ == "__main__":
     main()
-

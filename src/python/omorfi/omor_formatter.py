@@ -24,7 +24,7 @@
 from .formatter import Formatter
 from .lexc_formatter import lexc_escape
 from .settings import word_boundary, weak_boundary, \
-        morph_boundary, deriv_boundary, optional_hyphen
+    morph_boundary, deriv_boundary, optional_hyphen
 from .error_logging import fail_formatting_missing_for, just_fail
 
 
@@ -183,7 +183,7 @@ class OmorFormatter(Formatter):
         '[SEM=POLIT]',
         '[SEM=TIME]',
         '[SEM=TITLE]',
-        '[STYLE=ARCHAIC]', 
+        '[STYLE=ARCHAIC]',
         '[STYLE=DIALECTAL]',
         '[STYLE=NONSTANDARD]',
         '[STYLE=RARE]',
@@ -245,9 +245,9 @@ class OmorFormatter(Formatter):
         '[VOICE=PSS]',
         '[WORD_ID=',
         "[FOREIGN=FOREIGN]"
-        }
+    }
 
-    old_poses= {
+    old_poses = {
         '[POS=ADPOSITION]',
         '[POS=PUNCTUATION]',
         '[POS=PRONOUN]',
@@ -296,7 +296,7 @@ class OmorFormatter(Formatter):
         '[ALLO=Ä]',
         '[ALLO=ÄN]',
         '[ALLO=ÖN]'
-            }
+    }
 
     ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
@@ -362,46 +362,46 @@ class OmorFormatter(Formatter):
         "Aten": "[ALLO=TEN]",
         "Ajä": "[ALLO=JÄ]",
         "Aä": "[ALLO=Ä]",
-        "Bc": "[BOUNDARY=COMPOUND]", 
+        "Bc": "[BOUNDARY=COMPOUND]",
         "B-": "[COMPOUND_FORM=OMIT]",
         "B→": "[POSITION=SUFFIX]",
         "B←": "[POSITION=PREFIX]",
         "Cma": "[PCP=AGENT]",
-        "Cmaton": "[PCP=NEG]", 
+        "Cmaton": "[PCP=NEG]",
         "Cva": "[PCP=VA]",
         "Cnut": "[PCP=NUT]",
-        "Cpos": "[CMP=POS]", 
-        "Ccmp": "[CMP=CMP]", 
-        "Csup": "[CMP=SUP]", 
-        "Dinen": "[DRV=INEN]", 
+        "Cpos": "[CMP=POS]",
+        "Ccmp": "[CMP=CMP]",
+        "Csup": "[CMP=SUP]",
+        "Dinen": "[DRV=INEN]",
         "Dja": "[DRV=JA]",
-        #"Dmaisilla": "[INF=MAISILLA]", 
-        "Dmaisilla": "[DRV=MAISILLA]", 
+        #"Dmaisilla": "[INF=MAISILLA]",
+        "Dmaisilla": "[DRV=MAISILLA]",
         "Dminen": "[DRV=MINEN]",
-        "Dtu": "[DRV=TU]", 
+        "Dtu": "[DRV=TU]",
         "Dnut": "[DRV=NUT]",
         "Dva": "[DRV=VA]",
         "Dtava": "[DRV=TAVA]",
-        "Dma": "[DRV=MA]", 
+        "Dma": "[DRV=MA]",
         "Dmaton": "[DRV=MATON]",
-        "Ds": "[DRV=S]", 
+        "Ds": "[DRV=S]",
         "Dsti": "[DRV=STI]",
-        "Dttaa": "[DRV=TTAA]", 
+        "Dttaa": "[DRV=TTAA]",
         "Dtattaa": "[DRV=TATTAA]",
-        "Dtatuttaa": "[DRV=TATUTTAA]", 
-        "Dttain": "[DRV=TTAIN]", 
+        "Dtatuttaa": "[DRV=TATUTTAA]",
+        "Dttain": "[DRV=TTAIN]",
         "Du": "[DRV=U]",
         "Duus": "[DRV=UUS]",
-        "Dmpi": "", 
-        #"Dmpi": "[DRV=MPI]", 
+        "Dmpi": "",
+        #"Dmpi": "[DRV=MPI]",
         "Din": "",
         #"Din": "[DRV=IN]",
-        "Ia": "[INF=A]", 
-        "Ie": "[INF=E]", 
+        "Ia": "[INF=A]",
+        "Ie": "[INF=E]",
         "Ima": "[INF=MA]",
         "Iminen": "[INF=MINEN]",
         "Ncon": "[NEG=CON]",
-        "Nneg": "[SUBCAT=NEG]", 
+        "Nneg": "[SUBCAT=NEG]",
         "Npl": "[NUM=PL]",
         "Nsg": "[NUM=SG]",
         "N??": "",
@@ -422,16 +422,16 @@ class OmorFormatter(Formatter):
         "Qpa": "[CLIT=PA]",
         "Qko": "[CLIT=KO]",
         "Qkin": "[CLIT=KIN]",
-        "Qkaan": "[CLIT=KAAN]", 
+        "Qkaan": "[CLIT=KAAN]",
         "Qhan": "[CLIT=HAN]",
-        "Tcond": "[MOOD=COND]", 
+        "Tcond": "[MOOD=COND]",
         "Timp": "[MOOD=IMPV]",
-        "Tpast": "[MOOD=INDV][TENSE=PAST]", 
-        "Tpot": "[MOOD=POTN]", 
+        "Tpast": "[MOOD=INDV][TENSE=PAST]",
+        "Tpot": "[MOOD=POTN]",
         "Topt": "[MOOD=OPT]",
-        "Tpres": "[MOOD=INDV][TENSE=PRESENT]", 
+        "Tpres": "[MOOD=INDV][TENSE=PRESENT]",
         "Uarch": "[STYLE=ARCHAIC]",
-        "Udial": "[STYLE=DIALECTAL]", 
+        "Udial": "[STYLE=DIALECTAL]",
         "Unonstd": "[STYLE=NONSTANDARD]",
         "Urare": "[STYLE=RARE]",
         "Vact": "[VOICE=ACT]",
@@ -449,13 +449,13 @@ class OmorFormatter(Formatter):
         "Xins": "[CASE=INS]",
         "Xnom": "[CASE=NOM]",
         "Xpar": "[CASE=PAR]",
-        "Xtra": "[CASE=TRA]", 
+        "Xtra": "[CASE=TRA]",
         "Xlat": "[CASE=LAT]",
         "Xacc": "[CASE=ACC]",
         "X???": "",
-        "AUX": "[UPOS=AUX]", 
-        "DET": "[UPOS=DET]", 
-        "NOUN": "[UPOS=NOUN]", 
+        "AUX": "[UPOS=AUX]",
+        "DET": "[UPOS=DET]",
+        "NOUN": "[UPOS=NOUN]",
         "VERB": "[UPOS=VERB]",
         "ADV": "[UPOS=ADV]",
         "ADP": "[UPOS=ADP]",
@@ -474,13 +474,13 @@ class OmorFormatter(Formatter):
         "ADESSIVE": "[LEX=ADE]",
         "ALLATIVE": "[LEX=ALL]",
         "ELATIVE": "[LEX=ELA]",
-        "LOCATIVE": "[LEX=LOC]", 
+        "LOCATIVE": "[LEX=LOC]",
         "GENITIVE": "[LEX=GEN]",
-        "ILLATIVE": "[LEX=ILL]", 
+        "ILLATIVE": "[LEX=ILL]",
         "INESSIVE": "[LEX=INE]",
         "INSTRUCTIVE": "[LEX=INS]",
         "PARTITIVE": "[LEX=PAR]",
-        "SEPARATIVE": "[LEX=SEP]", 
+        "SEPARATIVE": "[LEX=SEP]",
         "LATIVE": "[LEX=LAT]",
         "DERSTI": "[LEX=STI]",
         "DERTTAIN": "[LEX=TTAIN]",
@@ -490,29 +490,30 @@ class OmorFormatter(Formatter):
         "PRONOUN": "[POS=PRONOUN]",
         "ADVERBIAL": "[UPOS=SCONJ][CONJ=ADVERBIAL]",
         "NUMERAL": "[POS=NUMERAL]",
-        "CARDINAL": "[NUMTYPE=CARD]", 
+        "CARDINAL": "[NUMTYPE=CARD]",
         "ORDINAL": "[NUMTYPE=ORD]",
-        # No [SUBCAT=DIGIT]: avoid multiple SUBCATs in one tagstring & comply with FTB1
+        # No [SUBCAT=DIGIT]: avoid multiple SUBCATs in one tagstring & comply
+        # with FTB1
         "DIGIT": "",
         "DECIMAL": "[SUBCAT=DECIMAL]",
         "ROMAN": "[SUBCAT=ROMAN]",
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
-        "ACRONYM": "[ABBR=ACRONYM]", 
+        "ACRONYM": "[ABBR=ACRONYM]",
         "ABBREVIATION": "[ABBR=ABBREVIATION]",
-        "SUFFIX": "", 
-        #"SUFFIX": "[SUBCAT=SUFFIX]", 
+        "SUFFIX": "",
+        #"SUFFIX": "[SUBCAT=SUFFIX]",
         "PREFIX": "",
         #"PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[POS=ADPOSITION]",
-        "DEMONSTRATIVE": "[PRONTYPE=DEM]", 
-        "QUANTOR": "[SUBCAT=QUANTIFIER]", 
-        "QUANTIFIER": "[SUBCAT=QUANTIFIER]", 
+        "DEMONSTRATIVE": "[PRONTYPE=DEM]",
+        "QUANTOR": "[SUBCAT=QUANTIFIER]",
+        "QUANTIFIER": "[SUBCAT=QUANTIFIER]",
         "PERSONAL": "[PRONTYPE=PRS]",
-        "INDEFINITE": "[PRONTYPE=IND]", 
-        #"INDEFINITE": "[SUBCAT=INDEF]", 
+        "INDEFINITE": "[PRONTYPE=IND]",
+        #"INDEFINITE": "[SUBCAT=INDEF]",
         "INTERROGATIVE": "[PRONTYPE=INT]",
-        "REFLEXIVE": "[SUBCAT=REFLEXIVE]", 
+        "REFLEXIVE": "[SUBCAT=REFLEXIVE]",
         "RELATIVE": "[PRONTYPE=REL]",
         "RECIPROCAL": "[PRONTYPE=REC]",
         "PL1": "[PERS=PL1]",
@@ -529,21 +530,21 @@ class OmorFormatter(Formatter):
         "NONSTANDARD": "[STYLE=NONSTANDARD]",
         "RARE": "[STYLE=RARE]",
         "TITLE": "[SEM=TITLE]",
-        "TIME": "[SEM=TIME]", 
+        "TIME": "[SEM=TIME]",
         "CURRENCY": "[SEM=CURRENCY]",
-        "MEDIA": "[SEM=MEDIA]", 
+        "MEDIA": "[SEM=MEDIA]",
         "POLIT": "[SEM=POLIT]",
-        "MEASURE": "[SEM=MEASURE]", 
+        "MEASURE": "[SEM=MEASURE]",
         "MALE": "[SEM=MALE]",
-        "FEMALE": "[SEM=FEMALE]", 
+        "FEMALE": "[SEM=FEMALE]",
         "CULTGRP": "[PROPER=CULTGRP]",
         "PRODUCT": "[PROPER=PRODUCT]",
         "ARTWORK": "[PROPER=ARTWORK]",
-        "EVENT": "[PROPER=EVENT]", 
+        "EVENT": "[PROPER=EVENT]",
         "FIRST": "[PROPER=FIRST]",
-        "LAST": "[PROPER=LAST]", 
+        "LAST": "[PROPER=LAST]",
         "GEO": "[PROPER=GEO]",
-        "ORG": "[PROPER=ORG]", 
+        "ORG": "[PROPER=ORG]",
         "MISC": "[PROPER=MISC]",
         "COUNTRY": "[SEM=COUNTRY]",
         "INHABITANT": "[SEM=INHABITANT]",
@@ -580,45 +581,43 @@ class OmorFormatter(Formatter):
             elif not omor in this.common_multichars | this.old_poses | \
                     this.allo_multichars:
                 just_fail(
-                        "There are conflicting formattings in here!\n"
-                        + omor + " corresponding " + stuff + 
-                        " is not a valid defined omor multichar_symbol!")
+                    "There are conflicting formattings in here!\n"
+                    + omor + " corresponding " + stuff +
+                    " is not a valid defined omor multichar_symbol!")
                 fail = True
         if fail:
             tainted = True
         this.verbose = verbose
         this.semantics = True
         if not 'sem' in kwargs or not kwargs['sem']:
-            for k,v in this.stuff2omor.items():
+            for k, v in this.stuff2omor.items():
                 if "SEM=" in v:
                     this.stuff2omor[k] = ""
             this.semantics = False
         this.allo = True
         if not 'allo' in kwargs or not kwargs['allo']:
-            for k,v in this.stuff2omor.items():
+            for k, v in this.stuff2omor.items():
                 if "ALLO=" in v:
                     this.stuff2omor[k] = ""
             this.allo = False
         this.props = True
         if not 'props' in kwargs or not kwargs['props']:
-            for k,v in this.stuff2omor.items():
+            for k, v in this.stuff2omor.items():
                 if "PROPER=" in v:
                     this.stuff2omor[k] = ""
             this.props = False
         this.ktnkav = True
         if not 'ktnkav' in kwargs or not kwargs['ktnkav']:
-            for k,v in this.stuff2omor.items():
+            for k, v in this.stuff2omor.items():
                 if "KTN=" in v or "KAV=" in v:
                     this.stuff2omor[k] = ""
             this.ktnkav = False
         this.newparas = True
         if not 'newparas' in kwargs or not kwargs['newparas']:
-            for k,v in this.stuff2omor.items():
+            for k, v in this.stuff2omor.items():
                 if "NEW_PARA=" in v:
                     this.stuff2omor[k] = ""
             this.newparas = False
-
-
 
     def stuff2lexc(this, stuff):
         if stuff == '0':
@@ -629,7 +628,6 @@ class OmorFormatter(Formatter):
             if this.verbose:
                 fail_formatting_missing_for(stuff, "omor")
             return ""
-
 
     def analyses2lexc(this, anals):
         omorstring = ''
@@ -643,7 +641,7 @@ class OmorFormatter(Formatter):
             omorstring = lexc_escape(surf)
             if anals and anals != 'LEMMA-START':
                 omorstring += ']'
-        
+
         # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
         if anals == 'Dnut':
             anals = 'Vact|Cnut'
@@ -663,12 +661,12 @@ class OmorFormatter(Formatter):
         elif ('Cnut' in anals or 'Cva' in anals or 'Cma' in anals or 'Cmaton' in anals) and \
              (anals.endswith('Npl') or anals.endswith('Nsg')):
             anals = anals + '|Xnom'
-        
+
         tags = anals.split('|')
         for tag in tags:
             omorstring += this.stuff2lexc(tag)
         surf = lexc_escape(surf)
-        return "%s:%s\t%s ;\n" %(omorstring, surf, cont)
+        return "%s:%s\t%s ;\n" % (omorstring, surf, cont)
 
     def wordmap2lexc(this, wordmap):
         '''
@@ -678,7 +676,7 @@ class OmorFormatter(Formatter):
             # do not include normal white space for now
             return ""
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        wordmap['analysis'] = "[WORD_ID=%s]" %(lexc_escape(wordmap['lemma']))
+        wordmap['analysis'] = "[WORD_ID=%s]" % (lexc_escape(wordmap['lemma']))
         wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJ')
         wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
@@ -695,7 +693,7 @@ class OmorFormatter(Formatter):
         if wordmap['symbol']:
             for subcat in wordmap['symbol'].split('|'):
                 wordmap['analysis'] += this.stuff2lexc(subcat)
-        
+
         if wordmap['prontype']:
             for stuff in wordmap['prontype'].split("|"):
                 wordmap['analysis'] += this.stuff2lexc(stuff)
@@ -724,21 +722,21 @@ class OmorFormatter(Formatter):
 
         if wordmap['style']:
             wordmap['analysis'] += this.stuff2lexc(wordmap['style'])
-        
+
         if this.ktnkav and wordmap['upos'] != 'ACRONYM':
-            tag = "[KTN=%s]" %(lexc_escape(wordmap['kotus_tn']))
+            tag = "[KTN=%s]" % (lexc_escape(wordmap['kotus_tn']))
             if tag in ktnkav_multichars:
                 wordmap['analysis'] += tag
                 if wordmap['kotus_av']:
-                    wordmap['analysis'] += "[KAV=%(kotus_av)s]" %(wordmap)
+                    wordmap['analysis'] += "[KAV=%(kotus_av)s]" % (wordmap)
         if this.newparas:
-            wordmap['analysis'] += "[NEWPARA=%s]" %(new_para)
+            wordmap['analysis'] += "[NEWPARA=%s]" % (new_para)
 
         # match WORD_ID= with epsilon, then stub and lemma might match
         lex_stub = '0' + wordmap['stub']
         retvals = []
-        retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-            wordmap['new_para'])]
+        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                      wordmap['new_para'])]
         return "\n".join(retvals)
 
     def multichars_lexc(this):

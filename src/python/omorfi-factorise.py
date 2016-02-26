@@ -5,17 +5,18 @@ from argparse import ArgumentParser
 from omorfi.omorfi import Omorfi
 import re
 
+
 def main():
     """Preprocess text for moses factored modeling."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
-    a.add_argument('-o', '--output', metavar="OUTFILE", 
-            help="print factors into OUTFILE")
+                   help="print verbosely while processing")
+    a.add_argument('-o', '--output', metavar="OUTFILE",
+                   help="print factors into OUTFILE")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -71,16 +72,16 @@ def main():
                     pass
                 else:
                     mrds += [mm.group(2)]
-            stemfixes = segments[0].output[segments[0].output.rfind("{STUB}"):].replace("{STUB}", "")
+            stemfixes = segments[0].output[
+                segments[0].output.rfind("{STUB}"):].replace("{STUB}", "")
             if '{' in stemfixes:
                 morphs = stemfixes[stemfixes.find("{"):].replace("{MB}", ".")
             else:
                 morphs = '0'
             print(surf, '+'.join(lemmas), pos, '.'.join(mrds),
-                    morphs, sep='|', end=' ', file=outfile)
+                  morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)
     exit(0)
 
 if __name__ == "__main__":
     main()
-

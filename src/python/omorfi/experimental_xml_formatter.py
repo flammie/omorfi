@@ -18,10 +18,9 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-
-
 def make_xmlid(s):
     return s.replace("?", "_UNK").replace("→", "_right").replace("←", "left").replace(".", "_")
+
 
 def format_multichars_lexc_xml():
     multichars = "  <Multichar_Symbols>\n"
@@ -29,7 +28,8 @@ def format_multichars_lexc_xml():
         key = make_xmlid(key)
         if key != '':
             if value != '':
-                multichars += "    <mcs id='" + key + "'>" + xml_escape(value) + "</mcs>\n"
+                multichars += "    <mcs id='" + key + \
+                    "'>" + xml_escape(value) + "</mcs>\n"
             else:
                 multichars += "    <mcs id='" + key + "'>" + key + "</mcs>\n"
         else:
@@ -45,6 +45,7 @@ def format_multichars_lexc_xml():
     multichars += "  </Multichar_Symbols>"
     return multichars
 
+
 def format_root_lexicon_xml():
     root = '  <LEXICON id="Root">\n'
     root += """<!-- ... -->
@@ -55,9 +56,11 @@ def format_root_lexicon_xml():
     root += '  </LEXICON>\n'
     return root
 
+
 def format_lexc_xml(wordmap):
     analysis = xml_escape(wordmap['lemma'])
-    analysis = analysis.replace('|', '<s mcs="wb"/>').replace('_', '<s mcs="mb"/>')
+    analysis = analysis.replace(
+        '|', '<s mcs="wb"/>').replace('_', '<s mcs="mb"/>')
     analysis += '<s mcs="' + wordmap['pos'] + '"/>'
     if wordmap['is_proper']:
         analysis += '<s mcs="proper"/>'
@@ -67,8 +70,9 @@ def format_lexc_xml(wordmap):
         analysis += "<s mcs='prefix'/>"
     stub = xml_escape(wordmap['stub'])
     stub = stub.replace('|', '<s mcs="wb"/>').replace('_', '<s mcs="mb"/>')
-    return ('    <e><a>%s</a><i>%s</i><cont lexica="%s"/></e>' % 
-            (analysis, stub, " ".join(wordmap['new_paras'])))
+    return ('    <e><a>%s</a><i>%s</i><cont lexica="%s"/></e>' %
+            (analysis, stub, wordmap['new_para']))
+
 
 def format_continuation_lexicon_xml(tsvparts):
     xmlstring = '    <e>'
@@ -84,6 +88,6 @@ def format_continuation_lexicon_xml(tsvparts):
     else:
         xmlstring += '<a/>'
     xmlstring += "<i>" + xml_escape(tsvparts[2]) + "</i>"
-    xmlstring += '<cont lexica="' + " ".join(tsvparts[3:]).replace("#", "_END") + '"/></e>\n'
+    xmlstring += '<cont lexica="' + \
+        " ".join(tsvparts[3:]).replace("#", "_END") + '"/></e>\n'
     return xmlstring
-
