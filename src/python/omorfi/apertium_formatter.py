@@ -53,6 +53,7 @@ class ApertiumFormatter(Formatter):
         "cond",
         "conneg",
         "def",
+        "det",
         "dem",
         "ela",
         "enc",
@@ -171,7 +172,7 @@ class ApertiumFormatter(Formatter):
         "Ata": "",
         "ABBREVIATION": "abbr",
         "ACRONYM": "abbr",
-        "ADJECTIVE": "adj",
+        "ADJ": "adj",
         "ADP": "post",
         "ADPOSITION": "post",
         "ADV": "adv",
@@ -181,6 +182,7 @@ class ApertiumFormatter(Formatter):
         "AINF_arg": "vaux",
         "ARTWORK": "",
         "ARROW": "",
+        "AUX": "vaux",
         "B-": "-",
         "B←": "-",
         "B→": "-",
@@ -206,6 +208,7 @@ class ApertiumFormatter(Formatter):
         "DECIMAL": "",
         "DERSTI": "",
         "DERTTAIN": "",
+        "DET": "det",
         "DEMONSTRATIVE": "dem",
         "DIGIT": "",
         "Din": "+in<n",
@@ -233,6 +236,7 @@ class ApertiumFormatter(Formatter):
         "FINAL-BRACKET": "rpar",
         "FINAL-QUOTE": "rquot",
         "FIRST": "ant",
+        "FRACTION": "",
         "GEO": "top",
         "Ia": "infa",
         "Ie": "infe",
@@ -242,7 +246,7 @@ class ApertiumFormatter(Formatter):
         "INITIAL-BRACKET": "lpar",
         "INITIAL-QUOTE": "lquot",
         "INTRANSITIVE_arg": "vblex",
-        "INTERJECTION": "ij",
+        "INTJ": "ij",
         "INTERROGATIVE": "itg",
         "LAST": "ant",
         "LEMMA-START": "",
@@ -250,6 +254,7 @@ class ApertiumFormatter(Formatter):
         "MAINF_arg": "vaux",
         "MEDIA": "",
         "MISC": "",
+        "MULTIPLICATIVE": "",
         "Ncon": "conneg",
         "N??": "",
         "Nneg": "neg",
@@ -274,14 +279,14 @@ class ApertiumFormatter(Formatter):
         "Ppl1": "p1><pl",
         "Ppl2": "p2><pl",
         "Ppl3": "p3><pl",
-        "PRONOUN": "prn",
+        "PRON": "prn",
         "PRODUCT": "",
         "PROPN": "np",
         "PROPER": "np",
         "Psg1": "p1><sg",
         "Psg2": "p2><sg",
         "Psg3": "p3><sg",
-        "PUNCTUATION": "",
+        "PUNCT": "",
         "Qhan": "+han<enc",
         "Qkaan": "+kaan<enc",
         "Qka": "+ka<enc",
@@ -303,6 +308,7 @@ class ApertiumFormatter(Formatter):
         "SPACE": "",
         "SUFFIX": "",
         "SUPERL": "sup",
+        "SYM": "",
         "Tcond": "cond",
         "Timp": "imp",
         "Topt": "",
@@ -341,6 +347,7 @@ class ApertiumFormatter(Formatter):
         "ILLATIVE": "ill",
         "LOCATIVE": "loc",
         "FTB3MAN": "",
+        "FTB3man": "",
         ".": "",
         "XForeign": "use_foreign",
         "X": "",
@@ -386,7 +393,7 @@ class ApertiumFormatter(Formatter):
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             analstring = lexc_escape(surf) + analstring
-        elif 'PUNCT_NONSTD_EXCL_LOOP' in cont:
+        elif 'PUNCT_NONSTD_EXCL_LOOP' in cont or 'PUNCT_NONSTD_DASH_LOOP' in cont:
             analstring = lexc_escape(surf) + analstring
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (analstring, surf, cont)
@@ -402,7 +409,7 @@ class ApertiumFormatter(Formatter):
             wordmap['analysis'] = "+" + wordmap['analysis']
         elif wordmap['is_prefix']:
             wordmap['analysis'] += "+"
-        if wordmap['pos'] == 'NOUN':
+        if wordmap['upos'] == 'NOUN':
             if wordmap['is_proper']:
                 wordmap['analysis'] += '%<np%>'
                 if wordmap['proper_noun_class']:
@@ -412,13 +419,13 @@ class ApertiumFormatter(Formatter):
                     wordmap['analysis'] += this.stuff2lexc(wordmap['sem'])
             else:
                 wordmap['analysis'] += '%<n%>'
-        elif wordmap['pos'] == 'VERB':
+        elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
                     'analysis'] += this.stuff2lexc(wordmap['argument'] + '_arg')
             else:
-                wordmap['analysis'] += this.stuff2lexc(wordmap['pos'])
-        elif wordmap['pos'] == 'CONJUNCTIONVERB':
+                wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+        elif wordmap['upos'] == 'CONJ|VERB':
             if wordmap['lemma'] == 'eikä':
                 wordmap['lemma'] = 'ei'
                 wordmap['analysis'] = 'ja' + \
@@ -434,7 +441,7 @@ class ApertiumFormatter(Formatter):
             for pclass in wordmap['particle'].split('|'):
                 wordmap['analysis'] += this.stuff2lexc(pclass)
         else:
-            wordmap['analysis'] += this.stuff2lexc(wordmap['pos'])
+            wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
         if wordmap['pronoun']:
             for stuff in wordmap['pronoun'].split("|"):
                 wordmap['analysis'] += this.stuff2lexc(stuff)
@@ -459,13 +466,13 @@ class ApertiumFormatter(Formatter):
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        retvals += "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
+        retvals += "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
                                        wordmap['new_para'])
         return retvals
 
     def multichars_lexc(this):
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"
-        for mcs in this.apertium_multichars:
+        for mcs in sorted(this.apertium_multichars):
             if not '><' in mcs and not mcs in ['', '+', '-', '#', '0']:
                 multichars += '%<' + lexc_escape(mcs) + "%>\n"
         multichars += Formatter.multichars_lexc(this)
