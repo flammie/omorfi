@@ -58,7 +58,7 @@ class Formatter(metaclass=ABCMeta):
     def multichars_lexc(this):
         """Return multichar declaration in lexc format"""
         multichars = "!! Following specials exist in all versions of omorfi\n"
-        for mcs in common_multichars:
+        for mcs in sorted(common_multichars):
             multichars += mcs + "\n"
         return multichars
 
