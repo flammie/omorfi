@@ -409,16 +409,13 @@ class ApertiumFormatter(Formatter):
             wordmap['analysis'] = "+" + wordmap['analysis']
         elif wordmap['is_prefix']:
             wordmap['analysis'] += "+"
-        if wordmap['upos'] == 'NOUN':
-            if wordmap['is_proper']:
-                wordmap['analysis'] += '%<np%>'
-                if wordmap['proper_noun_class']:
-                    wordmap[
-                        'analysis'] += this.stuff2lexc(wordmap['proper_noun_class'])
+        elif wordmap['upos'] == 'PROPN':
+            wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+            if wordmap['proper_noun_class']:
+                wordmap['analysis'] +=\
+                        this.stuff2lexc(wordmap['proper_noun_class'])
                 if wordmap['sem'] in ['MALE', 'FEMALE']:
                     wordmap['analysis'] += this.stuff2lexc(wordmap['sem'])
-            else:
-                wordmap['analysis'] += '%<n%>'
         elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
