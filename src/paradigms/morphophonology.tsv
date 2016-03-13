@@ -442,7 +442,7 @@ NOUN_IEN	NOUN	NOUN	32	D	False	strengthen	front	None	None	False	False
 NOUN_IES	NOUN	NOUN	41	D	False	strengthen	front	None	None	False	False
 NOUN_IKENET	NOUN	NOUN	32	D	obligatory	strengthen	front	None	None	False	False
 NOUN_IMMYT	NOUN	NOUN	43	H	False	strengthen	front	None	None	False	False
-NOUN_INGET	NOUN	NOUN	44	G	False	strengthen	front	None	None	False	False
+NOUN_INGET	PROPN	NOUN	44	G	False	strengthen	front	None	None	False	False
 NOUN_ITÄMAAT	NOUN	NOUN	18	None	obligatory	weaken	back	None	None	False	False
 NOUN_JÄÄTELÖ	NOUN	NOUN	2	None	False	weaken	front	None	None	False	False
 NOUN_JÄLSI	NOUN	NOUN	28	I	False	weaken	front	None	None	False	False
@@ -2003,11 +2003,11 @@ PROPN_ONKI	PROPN	NOUN	7	G	False	weaken	back	None	None	False	False
 PROPN_ONNET	PROPN	NOUN	7	J	obligatory	weaken	back	None	None	False	False
 PROPN_ONNI	PROPN	NOUN	7	None	False	weaken	back	None	None	False	False
 PROPN_OOKOO	PROPN	NOUN	18	None	False	weaken	back	o	None	False	False
-PROPN_OPINNOT	NOUN	NOUN	1	J	obligatory	weaken	back	None	None	False	False
+PROPN_OPINNOT	PROPN	NOUN	1	J	obligatory	weaken	back	None	None	False	False
 PROPN_OSATON	PROPN	NOUN	34	C	False	strengthen	back	None	None	False	False
 PROPN_OSOITE	PROPN	NOUN	48	C	False	strengthen	back	None	None	False	False
 PROPN_PÄÄ	PROPN	NOUN	18	None	False	weaken	front	ä	None	False	False
-PROPN_PAIKAT	NOUN	NOUN	9	A	obligatory	weaken	back	None	None	False	False
+PROPN_PAIKAT	PROPN	NOUN	9	A	obligatory	weaken	back	None	None	False	False
 PROPN_PANKIT	PROPN	NOUN	5	A	obligatory	weaken	back	None	None	False	False
 PROPN_PARFAIT	PROPN	NOUN	22	None	False	weaken	back	e	None	False	False
 PROPN_PATA	PROPN	NOUN	9	F	False	weaken	back	a	None	False	False
@@ -2121,7 +2121,7 @@ PROPN_SOINTI	PROPN	NOUN	5	J	False	weaken	back	None	None	False	False
 PROPN_SOKEA	PROPN	NOUN	15	None	False	weaken	back	a	None	False	False
 PROPN_SOTA	PROPN	NOUN	10	F	False	weaken	back	a	None	False	False
 PROPN_SPOTIFY	PROPN	NOUN	21	None	False	weaken	front	i	None	False	False
-PROPN_STADION	NOUN	NOUN	6	None	False	weaken	back	None	None	False	False
+PROPN_STADION	PROPN	NOUN	6	None	False	weaken	back	None	None	False	False
 PROPN_SUHTEET	PROPN	NOUN	48	F	obligatory	strengthen	back	None	None	False	False
 PROPN_SUKAT	PROPN	NOUN	10	A	obligatory	weaken	back	None	None	False	False
 PROPN_SULKA	PROPN	NOUN	10	D	False	weaken	back	a	None	False	False
