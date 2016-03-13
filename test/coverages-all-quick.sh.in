@@ -11,7 +11,7 @@ if test ! -r ../src/generated/omorfi-omor.analyse.hfst ; then
     echo Missing ../src/generated/omorfi-omor.analyse.hfst
     exit 77
 fi
-if ! @PYTHON@ $srcdir/coverage.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i coverage-fast-alls.freqs -c 1000 -o coverage-short.log ; then
+if ! @PYTHON@ $srcdir/coverage.py -f ../src/generated/omorfi-omor.analyse.hfst -i coverage-fast-alls.freqs -c 1000 -o coverage-short.log ; then
     echo We missed the target of 99 % coverage
     exit 1
 fi
