@@ -3,7 +3,7 @@
 # Settings
 HFST_FLAGS=--verbose
 voikkosharedir=$(libdir)/voikko/3/
-
+BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 # {{{ Files
 # Origins
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
@@ -254,16 +254,19 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 generated/omorfi.segment.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=none --none-segments
 
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=none --none-lemmas
 
 generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=none
 
 
@@ -271,6 +274,7 @@ generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=labelsegments
 
 # 
@@ -339,7 +343,7 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=omor \
-		-B PROPN-BLOCKING -B FGK \
+		$(BLACKLIST_FLAGS) \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
 generated/omorfi-omor-rewrite-tags.regex:
@@ -356,6 +360,7 @@ generated/omorfi-ftb3.reweight:
 generated/omorfi-ftb3.lexc: generated/master.tsv generated/stemparts.tsv generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=ftb3
 
 generated/omorfi-ftb3-rewrite-tags.regex:
@@ -371,6 +376,7 @@ generated/apertium-fin.fin.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:
@@ -391,6 +397,7 @@ generated/omorfi-giella.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=giella
 
 
