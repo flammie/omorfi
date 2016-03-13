@@ -211,7 +211,7 @@ def main():
                 for suffix in postponed_suffixes:
                     print(formatter.wordmap2lexc(suffix),
                           file=args.output)
-            for key, words in postponed_abbrs.items():
+            for key, words in sorted(postponed_abbrs.items()):
                 print("\nLEXICON", key, "\n\n", file=args.output)
                 for word in words:
                     print(formatter.wordmap2lexc(word),
