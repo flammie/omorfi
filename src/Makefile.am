@@ -13,6 +13,7 @@ LEXEMES=lexemes.tsv
 # lexical features
 LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/adptype.tsv \
+			attributes/blacklisted.tsv \
 			attributes/boundaries.tsv \
 			attributes/broken-paradigms.tsv \
 			attributes/clitics.tsv \
@@ -221,6 +222,7 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/python/tsvjoin.py -v -i $< \
 		-j $(srcdir)/attributes/abbr.tsv \
 		-j $(srcdir)/attributes/adptype.tsv \
+		-j $(srcdir)/attributes/blacklisted.tsv \
 		-j $(srcdir)/attributes/boundaries.tsv \
 		-j $(srcdir)/attributes/broken-paradigms.tsv \
 		-j $(srcdir)/attributes/lexicalised-inflection.tsv \
@@ -337,6 +339,7 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=omor \
+		-B PROPN-BLOCKING -B FGK \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
 generated/omorfi-omor-rewrite-tags.regex:
