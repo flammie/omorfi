@@ -21,12 +21,13 @@ This script converts TSV formatted tests to yaml formatted tests
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import argv, exit, stderr
+from time import strftime
 
 from omorfi.formatters import format_analysis_lexc
+
 
 # standard UI stuff
 
@@ -56,7 +57,7 @@ def main():
     ap.add_argument("--strip", action="store",
                     metavar="STRIP", help="strip STRIP from fields before using")
 
-    def FormatArgType(v):
+    def format_arg_type(v):
         baseformats = ["omor", "apertium",
                        "giellatekno", "ftb3", "segments", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
@@ -71,7 +72,7 @@ def main():
         return v
     ap.add_argument("--format", "-f", action="store", default="omor",
                     help="use specific output format for lexc data",
-                    type=FormatArgType)
+                    type=format_arg_type)
     args = ap.parse_args()
     quoting = csv.QUOTE_NONE
     quotechar = None

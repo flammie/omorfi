@@ -5,32 +5,32 @@ Test sort | uniq -c | sort -nr'd corpus
 """
 
 
-import libhfst
 from argparse import ArgumentParser, FileType
-
-from sys import stderr, stdin, stdout
-
+from sys import stderr
 from time import perf_counter, process_time
+
+import libhfst
+
 
 def main():
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
-            help="HFST's optimised lookup binary data for the transducer to be applied")
+                   help="HFST's optimised lookup binary data for the transducer to be applied")
     a.add_argument('-i', '--input', metavar="INFILE", type=open, required=True,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-o', '--output', metavar="outFILE", type=FileType('w'),
-            required=True,
-            dest="outfile", help="log file name")
+                   required=True,
+                   dest="outfile", help="log file name")
     a.add_argument('-v', '--verbose', action="store_true", default=False,
-            help="Print verbosely while processing")
+                   help="Print verbosely while processing")
     a.add_argument('-c', '--count', metavar="FREQ", default=0,
-            help="test only word-forms with frequency higher than FREQ")
+                   help="test only word-forms with frequency higher than FREQ")
     a.add_argument('-t', '--threshold', metavar='THOLD', default=99, type=int,
-            help="require THOLD % coverage or exit 1 (for testing)")
+                   help="require THOLD % coverage or exit 1 (for testing)")
     options = a.parse_args()
     his = libhfst.HfstInputStream(options.fsa)
     omorfi = his.read()
-    #libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
+    # libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
     # statistics
     tokens = 0
     uniqs = 0
@@ -73,19 +73,19 @@ def main():
     cpuend = process_time()
     realend = perf_counter()
     print("cpu time: ", cpuend - cpustart,
-            "real time:", realend - realstart)
+          "real time:", realend - realstart)
     print("Tokens", "Matches", "Misses", "%", sep="\t")
-    print(tokens, found_tokens, missed_tokens, 
-            found_tokens / tokens * 100 if tokens != 0 else 0,
-            sep="\t")
+    print(tokens, found_tokens, missed_tokens,
+          found_tokens / tokens * 100 if tokens != 0 else 0,
+          sep="\t")
     print("Uniqs", "Matches", "Misses", "%", sep="\t")
-    print(uniqs, found_uniqs, missed_uniqs, 
-            found_uniqs / uniqs * 100 if uniqs != 0 else 0,
-            sep="\t")
+    print(uniqs, found_uniqs, missed_uniqs,
+          found_uniqs / uniqs * 100 if uniqs != 0 else 0,
+          sep="\t")
     if tokens == 0 or (found_tokens / tokens * 100 < options.threshold):
         print("needs to have", options.threshold,
-                "% non-unique matches to pass regress test\n",
-                file=stderr)
+              "% non-unique matches to pass regress test\n",
+              file=stderr)
         exit(1)
     else:
         exit(0)

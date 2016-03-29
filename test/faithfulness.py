@@ -5,33 +5,34 @@ Test sort | uniq -c | sort -nr'd gold analysis data for faithfulness
 """
 
 
-import libhfst
 from argparse import ArgumentParser, FileType
-
-from sys import stderr, stdin, stdout
+from sys import stderr, stdout
 from time import perf_counter, process_time
+
+import libhfst
+
 
 def main():
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
-            help="HFST's optimised lookup binary data for the transducer to be applied")
+                   help="HFST's optimised lookup binary data for the transducer to be applied")
     a.add_argument('-i', '--input', metavar="INFILE", type=open, required=True,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-o', '--output', metavar="OUTFILE", required=True,
-            type=FileType('w'),
-            dest="outfile", help="result file")
+                   type=FileType('w'),
+                   dest="outfile", help="result file")
     a.add_argument('-X', '--statistics', metavar="STATFILE",
-            type=FileType('w'),
-            dest="statfile", help="statistics")
+                   type=FileType('w'),
+                   dest="statfile", help="statistics")
     a.add_argument('-v', '--verbose', action="store_true", default=False,
-            help="Print verbosely while processing")
+                   help="Print verbosely while processing")
     a.add_argument('-C', '--no-casing', action="store_true", default=False,
-            help="Do not try to recase input and output when matching")
+                   help="Do not try to recase input and output when matching")
     a.add_argument('-a', '--additional-mapping', default="", metavar="MAP",
-            help="Also try using MAP to match analyses and lemmas",
-            choices=["ftb3.1", ""])
+                   help="Also try using MAP to match analyses and lemmas",
+                   choices=["ftb3.1", ""])
     a.add_argument('-c', '--count', metavar="FREQ", default=0,
-            help="test only word-forms with frequency higher than FREQ")
+                   help="test only word-forms with frequency higher than FREQ")
     options = a.parse_args()
     his = libhfst.HfstInputStream(options.fsa)
     omorfi = his.read()
@@ -52,7 +53,6 @@ def main():
     deduct_unkwn = 0
     # known bugs by statistic to deduct (all)
     deduct_lemma = 0
-    deduct_anal = 0
     deduct_matches = 0
     deduct_results = 0
     # for make check target
@@ -108,12 +108,12 @@ def main():
                     print_in = False
                 else:
                     print("NORESULTS:", freq, surf, lemma, anals, sep="\t",
-                        file=options.outfile)
+                          file=options.outfile)
                     if options.verbose:
                         print("?", end='', file=stderr)
             else:
                 print("NORESULTS:", freq, surf, lemma, anals, sep="\t",
-                    file=options.outfile)
+                      file=options.outfile)
                 if options.verbose:
                     print("?", end='', file=stderr)
         elif not found_anals and not found_lemma:
@@ -129,12 +129,12 @@ def main():
                     print_in = False
                 else:
                     print("NOMATCH:", freq, surf, lemma + " " + analysis, sep="\t", end="\t",
-                        file=options.outfile)
+                          file=options.outfile)
                     if options.verbose:
                         print("!", end='', file=stderr)
             else:
-                print("NOMATCH:", freq, surf, lemma + " " +  analysis, sep="\t", end="\t",
-                    file=options.outfile)
+                print("NOMATCH:", freq, surf, lemma + " " + analysis, sep="\t", end="\t",
+                      file=options.outfile)
                 if options.verbose:
                     print("!", end='', file=stderr)
         elif not found_anals:
@@ -163,7 +163,7 @@ def main():
                         print_in = False
                     else:
                         print("NOANALMATCH:", freq, surf, analysis, sep="\t", end="\t",
-                            file=options.outfile)
+                              file=options.outfile)
                     if options.verbose:
                         print("@", end='', file=stderr)
                 elif 'Unkwn' in analysis:
@@ -174,16 +174,16 @@ def main():
                     if options.verbose:
                         print("@", end='', file=stderr)
                     print("NOANALMATCH:", freq, surf, analysis, sep="\t", end="\t",
-                        file=options.outfile)
+                          file=options.outfile)
             else:
                 if options.verbose:
                     print("@", end='', file=stderr)
                 print("NOANALMATCH:", freq, surf, analysis, sep="\t", end="\t",
-                    file=options.outfile)
+                      file=options.outfile)
         elif not found_lemma:
             anal_matches += freq
             print("NOLEMMAMATCH:", freq, surf, lemma, sep="\t", end="\t",
-                    file=options.outfile)
+                  file=options.outfile)
             if options.verbose:
                 print("#", end='', file=stderr)
         else:
@@ -200,44 +200,45 @@ def main():
     cpuend = process_time()
     print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
     print("Lines", "Matches", "Lemma", "Anals", "Mismatch", "No results", sep="\t",
-            file=options.statfile)
+          file=options.statfile)
     print(lines, full_matches, lemma_matches, anal_matches, no_matches,
-            no_results,
-            sep="\t", file=options.statfile)
+          no_results,
+          sep="\t", file=options.statfile)
     print(lines / lines * 100 if lines != 0 else 0,
-            full_matches / lines * 100 if lines != 0 else 0,
-            lemma_matches / lines * 100 if lines != 0 else 0,
-            anal_matches / lines * 100 if lines != 0 else 0,
-            no_matches / lines * 100 if lines != 0 else 0,
-            no_results / lines * 100 if lines != 0 else 0,
-            sep="\t", file=options.statfile)
+          full_matches / lines * 100 if lines != 0 else 0,
+          lemma_matches / lines * 100 if lines != 0 else 0,
+          anal_matches / lines * 100 if lines != 0 else 0,
+          no_matches / lines * 100 if lines != 0 else 0,
+          no_results / lines * 100 if lines != 0 else 0,
+          sep="\t", file=options.statfile)
     if options.additional_mapping == "ftb3.1":
         print("Deducting known bugs...\n",
-                "Forgn:", deduct_forgn,
-                "\nAdv Pos Man:", deduct_advposman,
-                "\noli V Prt Act:", deduct_oliprt,
-                "\nAbbr Prop:", deduct_abbr_prop,
-                "\nUnkwn:", deduct_unkwn,
-                file=options.statfile)
-        lines = lines - deduct_forgn - deduct_advposman - deduct_oliprt - deduct_abbr_prop - deduct_unkwn
+              "Forgn:", deduct_forgn,
+              "\nAdv Pos Man:", deduct_advposman,
+              "\noli V Prt Act:", deduct_oliprt,
+              "\nAbbr Prop:", deduct_abbr_prop,
+              "\nUnkwn:", deduct_unkwn,
+              file=options.statfile)
+        lines = lines - deduct_forgn - deduct_advposman - \
+            deduct_oliprt - deduct_abbr_prop - deduct_unkwn
         no_results -= deduct_results
         no_matches -= deduct_matches
         lemma_matches -= deduct_lemma
     if options.additional_mapping != '':
         print(lines, full_matches, lemma_matches, anal_matches, no_matches,
-                no_results,
-                sep="\t", file=options.statfile)
+              no_results,
+              sep="\t", file=options.statfile)
         print(lines / lines * 100 if lines != 0 else 0,
-                full_matches / lines * 100 if lines != 0 else 0,
-                lemma_matches / lines * 100 if lines != 0 else 0,
-                anal_matches / lines * 100 if lines != 0 else 0,
-                no_matches / lines * 100 if lines != 0 else 0,
-                no_results / lines * 100 if lines != 0 else 0,
-                sep="\t", file=options.statfile)
+              full_matches / lines * 100 if lines != 0 else 0,
+              lemma_matches / lines * 100 if lines != 0 else 0,
+              anal_matches / lines * 100 if lines != 0 else 0,
+              no_matches / lines * 100 if lines != 0 else 0,
+              no_results / lines * 100 if lines != 0 else 0,
+              sep="\t", file=options.statfile)
     if lines == 0 or (full_matches / lines * 100 < threshold):
         print("needs to have", threshold, "% matches to pass regress test\n",
-                "please examine", options.outfile.name, "for regressions",
-                file=stderr)
+              "please examine", options.outfile.name, "for regressions",
+              file=stderr)
         exit(1)
     else:
         exit(0)

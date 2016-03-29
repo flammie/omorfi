@@ -27,6 +27,10 @@ Helsinki), and [Finnish Wiktionary](http://fi.Wiktionary.org) (Creative Commons
 Attribution–ShareAlike). Some words have also been collected by omorfi
 developers and contributors and are GPLv3 like the rest of the package.
 
+These are the obligatory stamps of the day:
+
+![https://travis-ci.org/flammie/omorfi](https://travis-ci.org/flammie/omorfi.svg)
+
 ## Downloading and further information
 
 Omorfi is currently hosted at github. [Omorfi's github
@@ -490,3 +494,16 @@ redistributable by anyone. IRC channel [#omorfi on
 Freenode](irc://Freenode/#omorfi) is particularly good for immediate discussion
 about contributions. Any data or code contributed must be compatible with our
 licencing policy, i.e. GNU compatible free licence.
+
+### Coding standards
+
+Python code should pass the flake8 style checker and imports should be sorted
+in accordance with isort. Ideally, you should integrate these into your editor,
+[the development environment section of the python guide has instructions for a
+few editors](docs.python-guide.org/en/latest/dev/env/). In addition, you can
+install a pre-commit hook to run the checks like so:
+
+```
+$ pip install pre-commit
+$ pre-commit install
+```

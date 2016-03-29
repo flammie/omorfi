@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# CLI stuff
-from sys import stderr, stdin, stdout
-from argparse import ArgumentParser, FileType
-# omorfi
-from omorfi.omorfi import Omorfi
-# statistics
-from time import perf_counter, process_time
 # string munging
 import re
+from argparse import ArgumentParser, FileType
+# CLI stuff
+from sys import stdin, stdout
+# statistics
+from time import perf_counter, process_time
+
+# omorfi
+from omorfi.omorfi import Omorfi
 
 
 def get_lemmas(anal):
@@ -44,16 +45,9 @@ def get_last_feats(anal):
 
 def print_analyses_vislcg3(surf, anals, outfile):
     print('"<', surf, '>"', sep='', file=outfile)
-    re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    re_pos = re.compile("\[POS=([^]]*)\]")
     re_mrd = re.compile("\[([^=]*)=([^]]*)]")
     for anal in anals:
-        pos_matches = re_pos.finditer(anal[0])
-        pos = "UNK"
         mrds = []
-        lemmas = []
-        for pm in pos_matches:
-            pos = pm.group(1)
         lemmas = get_lemmas(anal)
         mrd_matches = re_mrd.finditer(anal[0])
         for mm in mrd_matches:

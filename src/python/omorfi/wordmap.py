@@ -33,6 +33,7 @@ def init_wordmap():
                "abbr": None, "lex": None,
                "numtype": None, "prontype": None, "adptype": None,
                "homonym": 0,
+               "blacklist": None,
                "pos": None, }
     return wordmap
 
@@ -45,4 +46,4 @@ def get_wordmap_fieldnames():
             "stem_diphthong", "sem", "particle", "pronunciation",
             "boundaries", "bracketstub", "origin", "extra_i", "extra_e",
             "real_pos", "symbol", "argument", "pronoun", "abbr",
-            "lex", "numtype", "prontype", "adptype", "pos"]
+            "lex", "numtype", "prontype", "adptype", "blacklist", "pos"]

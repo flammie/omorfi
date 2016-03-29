@@ -19,9 +19,7 @@
 
 # functions for formatting the database data to lexc
 
-from .settings import common_multichars, version_id_easter_egg, \
-    optional_hyphen, word_boundary, stub_boundary, newword_boundary, \
-    morph_boundary, deriv_boundary
+from .settings import deriv_boundary, morph_boundary, newword_boundary, optional_hyphen, stub_boundary, word_boundary
 
 
 def lexc_escape(s):
@@ -41,7 +39,7 @@ def lexc_escape(s):
 
 def format_copyright_lexc():
     return """
-! This automatically generated lexc data is originated from 
+! This automatically generated lexc data is originated from
 ! omorfi database.
 ! Copyright (c) 2014 Omorfi contributors
 
@@ -110,12 +108,3 @@ def format_continuation_lexc_labeled_segments(anals, surf, cont):
 
     return "%s:%s\t%s ; \n" % (foo.replace(optional_hyphen, newword_boundary),
                                surf, cont)
-
-
-def format_wordmap_lexc_generic(wordmap):
-    wordmap['analysis'] = lexc_escape(wordmap['stub']) + stub_boundary
-    retvals = []
-    lex_stub = lexc_escape(wordmap['stub'])
-    retvals += ["%s:%s\t%s\t;" %
-                (wordmap['analysis'], lex_stub, wordmap['new_para'])]
-    return "\n".join(retvals)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from .string_manglers import mangle_suffixes_or_die
 from .error_logging import fail_guess_because
+from .string_manglers import mangle_suffixes_or_die
 
 
 def stub_all_new_para(wordmap, stubmap):

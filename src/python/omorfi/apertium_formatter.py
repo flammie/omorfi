@@ -20,11 +20,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .formatter import Formatter
-from .settings import word_boundary, weak_boundary, \
-    optional_hyphen
-from .lexc_formatter import lexc_escape
 from .error_logging import fail_formatting_missing_for, just_fail
+from .formatter import Formatter
+from .lexc_formatter import lexc_escape
+from .settings import optional_hyphen, weak_boundary, word_boundary
 
 
 class ApertiumFormatter(Formatter):
@@ -354,9 +353,9 @@ class ApertiumFormatter(Formatter):
         "": ""
     }
 
-    def __init__(this, verbose=True):
-        this.verbose = verbose
-        for stuff, ape in this.stuff2apertium.items():
+    def __init__(self, verbose=True):
+        self.verbose = verbose
+        for stuff, ape in self.stuff2apertium.items():
             if len(ape) < 2:
                 continue
             elif ape.startswith('+'):
@@ -364,32 +363,32 @@ class ApertiumFormatter(Formatter):
                     just_fail("There are conflicting formattings in here! " +
                               ape[ape.find('+'):] +
                               " is not a valid apertium multichar_symbol!")
-            elif not ape in this.apertium_multichars:
+            elif ape not in self.apertium_multichars:
                 just_fail("There are conflicting formattings in here! " + ape +
                           " is not a valid apertium multichar_symbol!")
 
-    def stuff2lexc(this, stuff):
+    def stuff2lexc(self, stuff):
         if len(stuff) == 0:
             return ""
-        elif stuff in this.stuff2apertium:
-            if this.stuff2apertium[stuff] in ['+', '-', '#', '0', '']:
-                return this.stuff2apertium[stuff]
-            elif this.stuff2apertium[stuff].startswith('+'):
-                return (lexc_escape(this.stuff2apertium[stuff]) + '%>')
+        elif stuff in self.stuff2apertium:
+            if self.stuff2apertium[stuff] in ['+', '-', '#', '0', '']:
+                return self.stuff2apertium[stuff]
+            elif self.stuff2apertium[stuff].startswith('+'):
+                return (lexc_escape(self.stuff2apertium[stuff]) + '%>')
             else:
-                return ('%<' + lexc_escape(this.stuff2apertium[stuff]) + '%>')
+                return ('%<' + lexc_escape(self.stuff2apertium[stuff]) + '%>')
         else:
             fail_formatting_missing_for(stuff, "apertium")
             return ""
 
-    def analyses2lexc(this, anals):
+    def analyses2lexc(self, anals):
         apestring = ''
         for i in anals.split('|'):
-            apestring += this.stuff2lexc(i)
+            apestring += self.stuff2lexc(i)
         return apestring
 
-    def continuation2lexc(this, anals, surf, cont):
-        analstring = this.analyses2lexc(anals)
+    def continuation2lexc(self, anals, surf, cont):
+        analstring = self.analyses2lexc(anals)
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             analstring = lexc_escape(surf) + analstring
@@ -398,7 +397,7 @@ class ApertiumFormatter(Formatter):
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (analstring, surf, cont)
 
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         if wordmap['lemma'] == ' ':
             # apertium fails when surf == ' '
             return ''
@@ -410,73 +409,73 @@ class ApertiumFormatter(Formatter):
         elif wordmap['is_prefix']:
             wordmap['analysis'] += "+"
         elif wordmap['upos'] == 'PROPN':
-            wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
             if wordmap['proper_noun_class']:
                 wordmap['analysis'] +=\
-                        this.stuff2lexc(wordmap['proper_noun_class'])
+                    self.stuff2lexc(wordmap['proper_noun_class'])
                 if wordmap['sem'] in ['MALE', 'FEMALE']:
-                    wordmap['analysis'] += this.stuff2lexc(wordmap['sem'])
+                    wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
         elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
-                    'analysis'] += this.stuff2lexc(wordmap['argument'] + '_arg')
+                    'analysis'] += self.stuff2lexc(wordmap['argument'] + '_arg')
             else:
-                wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+                wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         elif wordmap['upos'] == 'CONJ|VERB':
             if wordmap['lemma'] == 'eikä':
                 wordmap['lemma'] = 'ei'
                 wordmap['analysis'] = 'ja' + \
-                    this.stuff2lexc('COORDINATING') + \
+                    self.stuff2lexc('COORDINATING') + \
                     '+ei' + \
-                    this.stuff2lexc('Nneg')
+                    self.stuff2lexc('Nneg')
             else:
                 wordmap['analysis'] = wordmap['lemma'][:-2] +\
-                    this.stuff2lexc('ADVERBIAL') + \
+                    self.stuff2lexc('ADVERBIAL') + \
                     '+' + wordmap['lemma'][-2:] + \
-                    this.stuff2lexc('Nneg')
+                    self.stuff2lexc('Nneg')
         elif wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(pclass)
+                wordmap['analysis'] += self.stuff2lexc(pclass)
         else:
-            wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['pronoun']:
             for stuff in wordmap['pronoun'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['lex']:
             for stuff in wordmap['lex'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['abbr']:
             for stuff in wordmap['abbr'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['numtype']:
             for stuff in wordmap['numtype'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['symbol']:
             for subcat in wordmap['symbol'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(subcat)
+                wordmap['analysis'] += self.stuff2lexc(subcat)
             if wordmap['stub'] in ";:":
-                wordmap['analysis'] += this.stuff2lexc("SENTENCE-BOUNDARY")
+                wordmap['analysis'] += self.stuff2lexc("SENTENCE-BOUNDARY")
         # XXX: for now
         if wordmap['lemma'] in "¹²³½¼=≥µ#/%":
-            wordmap['analysis'] += this.stuff2lexc("NOUN")
+            wordmap['analysis'] += self.stuff2lexc("NOUN")
         retvals = ""
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         retvals += "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
-                                       wordmap['new_para'])
+                                     wordmap['new_para'])
         return retvals
 
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"
-        for mcs in sorted(this.apertium_multichars):
-            if not '><' in mcs and not mcs in ['', '+', '-', '#', '0']:
+        for mcs in sorted(self.apertium_multichars):
+            if '><' not in mcs and mcs not in ['', '+', '-', '#', '0']:
                 multichars += '%<' + lexc_escape(mcs) + "%>\n"
-        multichars += Formatter.multichars_lexc(this)
+        multichars += Formatter.multichars_lexc(self)
         return multichars
 
-    def root_lexicon_lexc(this):
-        root = Formatter.root_lexicon_lexc(this)
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
         return root
 
 # self test

@@ -20,15 +20,14 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
+from sys import exit
 
-from omorfi.omor_formatter import OmorFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
 from omorfi.no_tags_formatter import NoTagsFormatter
+from omorfi.omor_formatter import OmorFormatter
+from omorfi.settings import stuff_weights
 
-from omorfi.settings import stuff_weights, boundary_weights
 
 # standard UI stuff
 

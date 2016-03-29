@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-from sys import stderr, exit
-from .settings import common_multichars, \
-    fin_lowercase, fin_uppercase, fin_vowels, fin_consonants, \
-    fin_symbols, optional_hyphen, word_boundary, newword_boundary
+from sys import exit, stderr
+
+from .settings import (common_multichars, fin_consonants, fin_lowercase, fin_symbols, fin_uppercase, fin_vowels,
+                       newword_boundary, optional_hyphen, word_boundary)
 
 
 def format_copyright_twolc():
     return """
-! This automatically generated twolc data is originated from 
+! This automatically generated twolc data is originated from
 ! omorfi database.
 ! Copyright (c) 2014 Omorfi contributors
 

@@ -19,9 +19,8 @@
 #
 # utils to format xerox regexes from omor's lexical data sources.
 
-from .settings import fin_orth_pairs, fin_lowercase, fin_uppercase, \
-    word_boundary, deriv_boundary, morph_boundary, newword_boundary, \
-    deriv_boundary, stub_boundary, weak_boundary, optional_hyphen
+from .settings import (deriv_boundary, fin_lowercase, fin_orth_pairs, fin_uppercase, morph_boundary, stub_boundary,
+                       weak_boundary, word_boundary)
 from .twolc_formatter import twolc_escape
 
 
