@@ -21,10 +21,9 @@ fields on right.
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sys import stdin, stdout, stderr, exit, argv
 import argparse
-import locale
 import csv
+from sys import exit, stderr
 
 
 def main():
@@ -83,7 +82,7 @@ def main():
                     print(linecount, "...", end='\r')
                 if len(csv_parts) < args.fields - 1:
                     print("Must have at least", args.fields - 2, "separators on each "
-                          "non-comment non-empty line. Skipping:", csv_line,
+                          "non-comment non-empty line. Skipping:", csv_parts,
                           file=stderr)
                     continue
                 if csv_parts[-1].endswith('<-HEADERS'):
@@ -124,7 +123,7 @@ def main():
                 if join_parts[-1].endswith('<-HEADERS'):
                     # skip header line
                     continue
-                if not join_on in words.keys():
+                if join_on not in words.keys():
                     if not args.ignore_errors:
                         print("\033[93mMissing!\033[0m "
                               "Could not find the key",

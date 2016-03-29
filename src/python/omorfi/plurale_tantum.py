@@ -17,10 +17,8 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from .error_logging import fail_guess_because
 from .omorfi.string_manglers import replace_rightmost, replace_rightmosts
-from sys import stderr
-
-#
 
 
 def plurale_tantum_get_singular_stem(wordmap):
@@ -29,7 +27,6 @@ def plurale_tantum_get_singular_stem(wordmap):
     if not wordmap['kotus_tn']:
         return wordmap
     tn = int(wordmap['kotus_tn'])
-    av = wordmap['kotus_av']
     if not wordmap['plurale_tantum'] == 'obligatory':
         return wordmap
     if wordmap['kotus_av'] and tn not in [27, 28, 34]:

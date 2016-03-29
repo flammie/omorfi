@@ -19,12 +19,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
+from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
 from .formatter import Formatter
 from .lexc_formatter import lexc_escape
-from .settings import word_boundary, weak_boundary, \
-    morph_boundary, deriv_boundary, optional_hyphen
-from .error_logging import fail_formatting_missing_for, fail_guess_because, \
-    just_fail
+from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
 
 
 class Ftb3Formatter(Formatter):
@@ -352,31 +350,31 @@ class Ftb3Formatter(Formatter):
                   "": ""
                   }
 
-    def __init__(this, verbose=True):
-        this.verbose = verbose
+    def __init__(self, verbose=True):
+        self.verbose = verbose
         fail = False
-        for stuff, ftb3 in this.stuff2ftb3.items():
+        for stuff, ftb3 in self.stuff2ftb3.items():
             if len(ftb3) < 2:
                 continue
-            elif not ftb3 in this.multichars:
+            elif ftb3 not in self.multichars:
                 just_fail("There are conflicting formattings in here!\n" +
                           ftb3 + " for " + stuff +
                           " is not a valid defined ftb3 multichar_symbol!")
                 fail = True
         if fail:
-            this.tainted = True
+            self.tainted = True
 
-    def stuff2lexc(this, stuff):
+    def stuff2lexc(self, stuff):
         if stuff == '0':
             return "0"
-        elif stuff in this.stuff2ftb3:
-            return this.stuff2ftb3[stuff]
+        elif stuff in self.stuff2ftb3:
+            return self.stuff2ftb3[stuff]
         else:
-            if this.verbose:
+            if self.verbose:
                 fail_formatting_missing_for(stuff, "ftb3.1")
             return ""
 
-    def analyses2lexc(this, anals):
+    def analyses2lexc(self, anals):
         ftbstring = ""
         if 'Nneg|Vact' in anals:
             anals = anals.replace('|Vact', '')
@@ -431,17 +429,17 @@ class Ftb3Formatter(Formatter):
                 reordered.append(part)
         # then rest in their natural order
         parts = [x for x in parts
-                 if not x.startswith('X') and not x.startswith('T')
-                 and not x.startswith('C') and not x.startswith('I')
-                 and not x.startswith('V')]
+                 if not x.startswith('X') and not x.startswith('T') and
+                 not x.startswith('C') and not x.startswith('I') and
+                 not x.startswith('V')]
         for part in parts:
             reordered.append(part)
         for anal in reordered:
-            ftbstring += this.stuff2lexc(anal)
+            ftbstring += self.stuff2lexc(anal)
         return ftbstring
 
-    def continuation2lexc(this, anals, surf, cont):
-        ftbstring = this.analyses2lexc(anals)
+    def continuation2lexc(self, anals, surf, cont):
+        ftbstring = self.analyses2lexc(anals)
         if 'COMPOUND' in cont:
             # XXX: there was += before
             ftbstring = surf.replace(
@@ -454,7 +452,7 @@ class Ftb3Formatter(Formatter):
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (ftbstring, surf, cont)
 
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         '''
         format string for canonical ftb3 format for morphological analysis
         '''
@@ -467,27 +465,27 @@ class Ftb3Formatter(Formatter):
             lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#') + '←<Del>'))
         if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and
                                              not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
-            wordmap['analysis'] += this.stuff2lexc('PUNCTUATION')
+            wordmap['analysis'] += self.stuff2lexc('PUNCTUATION')
         elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN',
                                 'NUMERAL', 'ACRONYM', 'PUNCTUATION', 'SUFFIX']:
-            wordmap['analysis'] += this.stuff2lexc(wordmap['pos'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['pos'])
         elif wordmap['pos'] == 'CONJUNCTIONVERB':
             if wordmap['lemma'] == 'eikä':
-                wordmap['analysis'] = wordmap['lemma'] + this.stuff2lexc('CONJ') + \
-                    this.stuff2lexc('Nneg')
+                wordmap['analysis'] = wordmap['lemma'] + self.stuff2lexc('CONJ') + \
+                    self.stuff2lexc('Nneg')
             else:
-                wordmap['analysis'] += this.stuff2lexc('ADVERBIAL') + \
-                    this.stuff2lexc('Nneg')
+                wordmap['analysis'] += self.stuff2lexc('ADVERBIAL') + \
+                    self.stuff2lexc('Nneg')
         elif wordmap['pos'] == 'PARTICLE':
             if wordmap['upos'] in ['CONJ', 'SCONJ', 'INTJ', 'ADV', 'ADP']:
-                wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+                wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
             else:
-                wordmap['analysis'] += this.stuff2lexc('PARTICLE')
+                wordmap['analysis'] += self.stuff2lexc('PARTICLE')
         elif wordmap['pos'] == 'PROPN':
             print("???", wordmap)
         elif wordmap['pos'] == 'X':
             # FORGN etc.
-            wordmap['analysis'] += this.stuff2lexc('NOUN')
+            wordmap['analysis'] += self.stuff2lexc('NOUN')
         else:
             fail_guess_because(wordmap, [], ["PARTICLE", "PROPN",
                                              'NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL',
@@ -498,21 +496,21 @@ class Ftb3Formatter(Formatter):
             if 'PERSONAL' in wordmap['prontype']:
                 wordmap['prontype'] = 'PERSONAL'
             for stuff in wordmap['prontype'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['lex']:
             for stuff in wordmap['lex'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['abbr']:
             for stuff in wordmap['abbr'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['numtype']:
             for stuff in wordmap['numtype'].split("|"):
-                wordmap['analysis'] += this.stuff2lexc(stuff)
+                wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['is_proper']:
-            wordmap['analysis'] += this.stuff2lexc('PROPER')
+            wordmap['analysis'] += self.stuff2lexc('PROPER')
         if wordmap['symbol']:
             for subcat in wordmap['symbol'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(subcat)
+                wordmap['analysis'] += self.stuff2lexc(subcat)
             if wordmap['lemma'] == '–':
                 wordmap['analysis'].replace('Dash', 'EnDash')
             if wordmap['lemma'] == '—':
@@ -526,22 +524,22 @@ class Ftb3Formatter(Formatter):
                                                       wordmap['new_para'])]
         return "\n".join(retvals)
 
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"
         multichars += "!! FTB 3.1 multichar set:\n"
-        for mcs in this.multichars:
+        for mcs in self.multichars:
             multichars += mcs + "\n"
-        multichars += Formatter.multichars_lexc(this)
+        multichars += Formatter.multichars_lexc(self)
         return multichars
 
-    def root_lexicon_lexc(this):
-        root = Formatter.root_lexicon_lexc(this)
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens left
             root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"
-            root += this.stuff2lexc('B→') + ':-   NOUN ;\n'
-            root += this.stuff2lexc('B→') + ':-   ADJ ;\n'
-            root += this.stuff2lexc('B→') + ':-   SUFFIX ;\n'
+            root += self.stuff2lexc('B→') + ':-   NOUN ;\n'
+            root += self.stuff2lexc('B→') + ':-   ADJ ;\n'
+            root += self.stuff2lexc('B→') + ':-   SUFFIX ;\n'
         return root
 
 # self test

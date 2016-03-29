@@ -20,11 +20,11 @@
 
 import unittest
 
-from .omor_formatter import OmorFormatter
 from .apertium_formatter import ApertiumFormatter
 from .ftb3_formatter import Ftb3Formatter
-from .no_tags_formatter import NoTagsFormatter
 from .giella_formatter import GiellaFormatter
+from .no_tags_formatter import NoTagsFormatter
+from .omor_formatter import OmorFormatter
 
 
 class LexcMulticharsTest(unittest.TestCase):

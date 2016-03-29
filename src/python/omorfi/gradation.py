@@ -17,8 +17,8 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from .omorfi.string_mangling import replace_rightmost, replace_rightmosts
 from .omorfi.error_logging import fail_guess_because
+from .omorfi.string_mangling import replace_rightmost, replace_rightmosts
 
 
 def gradation_make_morphophonemes(wordmap):

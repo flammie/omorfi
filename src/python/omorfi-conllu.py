@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# CLI stuff
-from sys import stderr, stdin, stdout
-from argparse import ArgumentParser, FileType
-# omorfi
-from omorfi.omorfi import Omorfi
-# statistics
-from time import perf_counter, process_time
 # string munging
 import re
+from argparse import ArgumentParser, FileType
+# CLI stuff
+from sys import stderr, stdin, stdout
+# statistics
+from time import perf_counter, process_time
+
+# omorfi
+from omorfi.omorfi import Omorfi
 
 
 def get_lemmas(anal):

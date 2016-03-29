@@ -21,13 +21,12 @@ This script generates twolc files from database data.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
+from sys import exit
 
-from omorfi.twolc_formatter import format_alphabet_twolc, \
-    format_sets_twolc, format_definitions_twolc, format_rules_twolc, \
-    format_copyright_twolc
+from omorfi.twolc_formatter import (format_alphabet_twolc, format_copyright_twolc, format_definitions_twolc,
+                                    format_rules_twolc, format_sets_twolc)
+
 
 # standard UI stuff
 
@@ -46,7 +45,7 @@ def main():
     ap.add_argument("--ruleset", "-r", required=True, action="store",
                     metavar="RULES", help="compile RULES ruleset")
 
-    def FormatArgType(v):
+    def format_arg_type(v):
         baseformats = ["omor", "apertium",
                        "giellatekno", "ftb3", "segments", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
@@ -61,7 +60,7 @@ def main():
         return v
     ap.add_argument("--format", "-f", action="store", default="omor",
                     help="use specific output format for twolc data",
-                    type=FormatArgType)
+                    type=format_arg_type)
     args = ap.parse_args()
     # check args
     # setup files

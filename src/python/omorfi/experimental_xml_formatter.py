@@ -17,6 +17,12 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from xml.sax.saxutils import escape as xml_escape
+
+from ftb3_formatter import Ftb3Formatter
+
+from .settings import version_id_easter_egg
+
 
 def make_xmlid(s):
     return s.replace("?", "_UNK").replace("→", "_right").replace("←", "left").replace(".", "_")
@@ -24,7 +30,7 @@ def make_xmlid(s):
 
 def format_multichars_lexc_xml():
     multichars = "  <Multichar_Symbols>\n"
-    for key, value in stuff2ftb3.items():
+    for key, value in Ftb3Formatter.stuff2ftb3.items():
         key = make_xmlid(key)
         if key != '':
             if value != '':
@@ -36,7 +42,7 @@ def format_multichars_lexc_xml():
             pass
 
     multichars += """<!-- Following specials exist in all versions of omorfi -->
-    <mcs id="hyph">{hyph?}</mcs> 
+    <mcs id="hyph">{hyph?}</mcs>
     <mcs id="deriv">»</mcs>
     <mcs id="infl">&gt;</mcs>
     <mcs id="wb">|</mcs>
@@ -79,7 +85,7 @@ def format_continuation_lexicon_xml(tsvparts):
     if tsvparts[1] != '':
         xmlstring += '<a>'
         for anal in tsvparts[1].split('|'):
-            if anal in stuff2ftb3:
+            if anal in Ftb3Formatter.stuff2ftb3:
                 anal = make_xmlid(anal)
                 xmlstring += '<s mcs="' + anal + '"/>'
             else:

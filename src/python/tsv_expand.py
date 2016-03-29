@@ -22,25 +22,24 @@ automatic guessing. The
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import exit, stderr
 
-from omorfi.wordmap import init_wordmap, get_wordmap_fieldnames
-from omorfi.parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
-from omorfi.stub import stub_all_ktn, stub_all_new_para
 # from guess_feats import guess_grade_dir_from_ktn, guess_harmony,
 # guess_stem_features_ktn, guess_pronunciation,
 from omorfi.guess_feats import guess_bound_morphs
-#from guess_new_class import guess_new_class
+from omorfi.parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
+from omorfi.stub import stub_all_new_para
+from omorfi.wordmap import get_wordmap_fieldnames, init_wordmap
+
+
+# from guess_new_class import guess_new_class
 
 
 # standard UI stuff
 
 def main():
-    # defaults
-    outfiles = None
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Guess more data for Finnish TSV databases")
@@ -153,11 +152,11 @@ def main():
                     continue
 
                 # Guess-works in order
-                #wordmap = guess_stem_features_ktn(wordmap)
-                #wordmap = guess_pronunciation(wordmap)
-                #wordmap = guess_grade_dir_from_ktn(wordmap)
-                #wordmap = guess_harmony(wordmap)
-                #wordmap = guess_new_class(wordmap)
+                # wordmap = guess_stem_features_ktn(wordmap)
+                # wordmap = guess_pronunciation(wordmap)
+                # wordmap = guess_grade_dir_from_ktn(wordmap)
+                # wordmap = guess_harmony(wordmap)
+                # wordmap = guess_new_class(wordmap)
                 wordmap = stub_all_new_para(wordmap, stubmap)
                 if not wordmap:
                     errors = True
