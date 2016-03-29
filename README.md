@@ -29,7 +29,7 @@ developers and contributors and are GPLv3 like the rest of the package.
 
 These are the obligatory stamps of the day:
 
-* [[https://travis-ci.org/flammie/omorfi][https://travis-ci.org/flammie/omorfi.svg?branch=master]]
+* [https://travis-ci.org/flammie/omorfi](https://travis-ci.org/flammie/omorfi.svg)
 
 ## Downloading and further information
 
