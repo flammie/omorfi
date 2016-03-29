@@ -27,6 +27,11 @@ Helsinki), and [Finnish Wiktionary](http://fi.Wiktionary.org) (Creative Commons
 Attribution–ShareAlike). Some words have also been collected by omorfi
 developers and contributors and are GPLv3 like the rest of the package.
 
+These are the obligatory stamps of the day:
+
+* [[https://travis-ci.org/flammie/omorfi]
+   [https://travis-ci.org/flammie/omorfi.svg?branch=master]]
+
 ## Downloading and further information
 
 Omorfi is currently hosted at github. [Omorfi's github
