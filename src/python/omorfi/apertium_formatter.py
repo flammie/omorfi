@@ -409,18 +409,18 @@ class ApertiumFormatter(Formatter):
         elif wordmap['is_prefix']:
             wordmap['analysis'] += "+"
         elif wordmap['upos'] == 'PROPN':
-            wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
             if wordmap['proper_noun_class']:
                 wordmap['analysis'] +=\
-                        this.stuff2lexc(wordmap['proper_noun_class'])
+                    self.stuff2lexc(wordmap['proper_noun_class'])
                 if wordmap['sem'] in ['MALE', 'FEMALE']:
-                    wordmap['analysis'] += this.stuff2lexc(wordmap['sem'])
+                    wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
         elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
                     'analysis'] += self.stuff2lexc(wordmap['argument'] + '_arg')
             else:
-                wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+                wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         elif wordmap['upos'] == 'CONJ|VERB':
             if wordmap['lemma'] == 'eikä':
                 wordmap['lemma'] = 'ei'
@@ -437,7 +437,7 @@ class ApertiumFormatter(Formatter):
             for pclass in wordmap['particle'].split('|'):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
         else:
-            wordmap['analysis'] += this.stuff2lexc(wordmap['upos'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['pronoun']:
             for stuff in wordmap['pronoun'].split("|"):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
@@ -463,13 +463,13 @@ class ApertiumFormatter(Formatter):
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         retvals += "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
-                                       wordmap['new_para'])
+                                     wordmap['new_para'])
         return retvals
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"
         for mcs in sorted(self.apertium_multichars):
-            if not '><' in mcs and not mcs in ['', '+', '-', '#', '0']:
+            if '><' not in mcs and mcs not in ['', '+', '-', '#', '0']:
                 multichars += '%<' + lexc_escape(mcs) + "%>\n"
         multichars += Formatter.multichars_lexc(self)
         return multichars
