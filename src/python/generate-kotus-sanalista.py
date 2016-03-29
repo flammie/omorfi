@@ -27,20 +27,17 @@ store additional data. The additional data needs to be in name=value format.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import exit, stderr
 
 from omorfi.kotus_sanalista_formatter import format_wordmap_kotus_sanalista
-from omorfi.parse_csv_data import parse_defaults_from_tsv
+
 
 # standard UI stuff
 
 
 def main():
-    # defaults
-    outfile = None
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Convert Finnish dictionary TSV data into kotus sanalista XML")
@@ -97,8 +94,6 @@ def main():
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
-        lexicon_count = 0
-        entry_count = 0
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,

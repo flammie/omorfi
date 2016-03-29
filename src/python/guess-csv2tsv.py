@@ -21,16 +21,13 @@ lexical data should be done separately.
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sys import stdin, stdout, stderr, exit, argv
 import argparse
-import locale
-import readline
-import csv
 from collections import defaultdict
+from sys import exit, stderr, stdin, stdout
 
-from omorfi.wordmap import init_wordmap, get_wordmap_fieldnames
+from omorfi.guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_pronunciation, guess_stem_features_ktn
 from omorfi.guess_new_class import guess_new_class
-from omorfi.guess_feats import guess_grade_dir_from_ktn, guess_harmony, guess_stem_features_ktn, guess_pronunciation
+from omorfi.wordmap import init_wordmap
 
 
 def expand_pos(wordmap):

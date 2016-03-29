@@ -21,22 +21,20 @@ This script converts Finnish TSV-formatted lexicon to github wiki
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import exit, stderr
 
-from omorfi.omor_formatter import format_stuff_omor
+from omorfi.apertium_formatter import format_stuff_apertium
 from omorfi.ftb3_formatter import format_stuff_ftb3
 from omorfi.giella_formatter import format_stuff_giella
-from omorfi.apertium_formatter import format_stuff_apertium
+from omorfi.omor_formatter import format_stuff_omor
+
 
 # standard UI stuff
 
 
 def main():
-    # defaults
-    outfile = None
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Convert omorfi database to github pages")
@@ -67,12 +65,9 @@ def main():
 
     args = ap.parse_args()
 
-    quoting = csv.QUOTE_NONE
-    quotechar = None
-    #
     # write preamble to wiki page
     print('# Introduction', file=args.output)
-    print("""This document was automatically generated from the omorfi 
+    print("""This document was automatically generated from the omorfi
             database. It describes some of the internal codes used in the
             database. Keys and values "_stuff_", and the _paradigms_ that
             define inflection patterns or so.""", file=args.output)
@@ -140,7 +135,6 @@ def main():
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 2:
-                    tsv_line = tsv_file.readline()
                     continue
                 print(file=args.output)
                 print("### `", tsv_parts['new_para'], "`",

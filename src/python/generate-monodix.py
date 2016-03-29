@@ -21,20 +21,18 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import exit, stderr
 
-from omorfi.monodix_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
-from omorfi.parse_csv_data import parse_defaults_from_tsv
+from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
+                                      format_monodix_pardef, format_monodix_sdefs)
+
 
 # standard UI stuff
 
 
 def main():
-    # defaults
-    outfile = None
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Convert Finnish dictionary TSV data into apertium monodix XML")
@@ -115,7 +113,7 @@ def main():
                 if len(tsv_parts) < 3:
                     print("Too few tabs on line", linecount,
                           "skipping following line completely:", file=stderr)
-                    print(tsv_line, file=stderr)
+                    print(tsv_parts, file=stderr)
                     tsv_line = tsv_file.readline()
                     continue
                 # format output

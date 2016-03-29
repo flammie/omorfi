@@ -21,13 +21,13 @@ This script generates twolc files from database data.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
+from sys import exit
 
-from omorfi.regex_formatter import format_rules_regex
-from omorfi.omor_formatter import OmorFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
+from omorfi.omor_formatter import OmorFormatter
+from omorfi.regex_formatter import format_rules_regex
+
 
 # standard UI stuff
 

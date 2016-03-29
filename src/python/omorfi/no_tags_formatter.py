@@ -21,56 +21,54 @@
 # utils to format apertium style data from omorfi database values
 
 from .formatter import Formatter
-from .settings import word_boundary, weak_boundary, \
-    optional_hyphen
 from .lexc_formatter import lexc_escape
-from .error_logging import fail_formatting_missing_for, just_fail
+from .settings import optional_hyphen, word_boundary
 
 
 class NoTagsFormatter(Formatter):
 
-    def __init__(this, verbose=True, **kwargs):
-        this.verbose = verbose
-        this.segment = False
-        this.lemmatise = False
+    def __init__(self, verbose=True, **kwargs):
+        self.verbose = verbose
+        self.segment = False
+        self.lemmatise = False
         if 'lemmatise' in kwargs and kwargs['lemmatise']:
-            this.lemmatise = True
+            self.lemmatise = True
         elif 'segment' in kwargs and kwargs['segment']:
-            this.segment = True
+            self.segment = True
 
-    def stuff2lexc(this, stuff):
+    def stuff2lexc(self, stuff):
         if 'Bc' == stuff:
             return word_boundary
         else:
             return ""
 
-    def analyses2lexc(this, anals):
+    def analyses2lexc(self, anals):
         apestring = ''
         for i in anals.split('|'):
-            apestring += this.stuff2lexc(i)
+            apestring += self.stuff2lexc(i)
         return apestring
 
-    def continuation2lexc(this, anals, surf, cont):
-        analstring = this.analyses2lexc(anals)
+    def continuation2lexc(self, anals, surf, cont):
+        analstring = self.analyses2lexc(anals)
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             analstring = lexc_escape(surf) + analstring
         elif 'PUNCT_NONSTD_EXCL_LOOP' in cont:
             analstring = lexc_escape(surf) + analstring
-        elif this.segment:
+        elif self.segment:
             analstring = lexc_escape(surf)
-        elif this.lemmatise:
+        elif self.lemmatise:
             pass
         else:
             analstring = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (analstring, lexc_escape(surf), cont)
 
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         if wordmap['lemma'] == ' ':
             return ''
-        if this.lemmatise:
+        if self.lemmatise:
             wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-        elif this.segment:
+        elif self.segment:
             wordmap['analysis'] = lexc_escape(wordmap['stub'])
         else:
             wordmap['analysis'] = lexc_escape(wordmap['stub'])
@@ -82,13 +80,13 @@ class NoTagsFormatter(Formatter):
                                        wordmap['new_para'])
         return retvals
 
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"
-        multichars += Formatter.multichars_lexc(this)
+        multichars += Formatter.multichars_lexc(self)
         return multichars
 
-    def root_lexicon_lexc(this):
-        root = Formatter.root_lexicon_lexc(this)
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
         return root
 
 # self test

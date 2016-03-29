@@ -19,12 +19,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .formatter import Formatter
-
-from .lexc_formatter import lexc_escape
-from .settings import word_boundary, weak_boundary, \
-    morph_boundary, deriv_boundary, optional_hyphen, stub_boundary
 from .error_logging import fail_formatting_missing_for, just_fail
+from .formatter import Formatter
+from .lexc_formatter import lexc_escape
+from .settings import deriv_boundary, morph_boundary, stub_boundary, weak_boundary, word_boundary
 
 
 class GiellaFormatter(Formatter):
@@ -395,36 +393,36 @@ class GiellaFormatter(Formatter):
                     "": ""
                     }
 
-    def __init__(this, verbosity=False):
-        this.verbosity = verbosity
+    def __init__(self, verbosity=False):
+        self.verbosity = verbosity
         fail = False
-        for stuff, giella in this.stuff2giella.items():
+        for stuff, giella in self.stuff2giella.items():
             if len(giella) < 2:
                 continue
-            elif not giella in this.giella_multichars:
+            elif giella not in self.giella_multichars:
                 just_fail("There are conflicting formattings in here!\n" + giella +
                           " is not a valid defined giella multichar_symbol!")
                 fail = True
         if fail:
-            this.tainted = True
+            self.tainted = True
 
-    def stuff2lexc(this, stuff):
+    def stuff2lexc(self, stuff):
         if stuff == '0':
             return "0"
-        elif stuff in this.stuff2giella:
-            return this.stuff2giella[stuff]
+        elif stuff in self.stuff2giella:
+            return self.stuff2giella[stuff]
         else:
             fail_formatting_missing_for(stuff, "giella.1")
             return ""
 
-    def analysis2lexc(this, anals):
+    def analysis2lexc(self, anals):
         giellastring = ""
         for anal in anals.split('|'):
-            giellastring += this.stuff2lexc(anal)
+            giellastring += self.stuff2lexc(anal)
         return giellastring
 
-    def continuation2lexc(this, anals, surf, cont):
-        giellastring = this.analysis2lexc(anals)
+    def continuation2lexc(self, anals, surf, cont):
+        giellastring = self.analysis2lexc(anals)
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             giellastring = lexc_escape(surf) + giellastring
         surf = lexc_escape(surf.replace(morph_boundary, ">")
@@ -433,7 +431,7 @@ class GiellaFormatter(Formatter):
                            .replace(stub_boundary, ""))
         return "%s:%s\t%s ;\n" % (giellastring, surf, cont)
 
-    def wordmap2lexc(this, wordmap):
+    def wordmap2lexc(self, wordmap):
         '''
         format string for canonical giella format for morphological analysis
         '''
@@ -442,24 +440,24 @@ class GiellaFormatter(Formatter):
         if wordmap['pos'] == 'CONJUNCTIONVERB':
             if wordmap['lemma'] == 'eikä':
                 wordmap['lemma'] = 'ei'
-                wordmap['analysis'] = this.stuff2lexc('COORDINATING') + \
-                    this.stuff2lexc('Nneg')
+                wordmap['analysis'] = self.stuff2lexc('COORDINATING') + \
+                    self.stuff2lexc('Nneg')
             else:
-                wordmap['analysis'] = this.stuff2lexc('ADVERBIAL') + \
-                    this.stuff2lexc('Nneg')
+                wordmap['analysis'] = self.stuff2lexc('ADVERBIAL') + \
+                    self.stuff2lexc('Nneg')
         else:
-            wordmap['analysis'] += this.stuff2lexc(wordmap['pos'])
+            wordmap['analysis'] += self.stuff2lexc(wordmap['pos'])
         if wordmap['is_proper']:
-            wordmap['analysis'] += this.stuff2lexc('PROPER')
+            wordmap['analysis'] += self.stuff2lexc('PROPER')
             if wordmap['proper_noun_class']:
                 wordmap[
-                    'analysis'] += this.stuff2lexc(wordmap['proper_noun_class'])
+                    'analysis'] += self.stuff2lexc(wordmap['proper_noun_class'])
         if wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(pclass)
+                wordmap['analysis'] += self.stuff2lexc(pclass)
         if wordmap['symbol']:
             for subcat in wordmap['symbol'].split('|'):
-                wordmap['analysis'] += this.stuff2lexc(subcat)
+                wordmap['analysis'] += self.stuff2lexc(subcat)
         lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "")
                                .replace(weak_boundary, "").replace(deriv_boundary, "»")
                                .replace(morph_boundary, ">"))
@@ -468,21 +466,21 @@ class GiellaFormatter(Formatter):
                                       wordmap['new_para'])]
         return "\n".join(retvals)
 
-    def multichars_lexc(this):
+    def multichars_lexc(self):
         multichars = "Multichar_Symbols\n!! giellatekno multichar set:\n"
-        for mcs in this.giella_multichars:
+        for mcs in self.giella_multichars:
             multichars += mcs + "\n"
-        multichars += Formatter.multichars_lexc(this)
+        multichars += Formatter.multichars_lexc(self)
         return multichars
 
-    def root_lexicon_lexc(this):
-        root = Formatter.root_lexicon_lexc(this)
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens left
             root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"
-            root += this.stuff2lexc('B→') + ':-   NOUN ;\n'
-            root += this.stuff2lexc('B→') + ':-   ADJ ;\n'
-            root += this.stuff2lexc('B→') + ':-   SUFFIX ;\n'
+            root += self.stuff2lexc('B→') + ':-   NOUN ;\n'
+            root += self.stuff2lexc('B→') + ':-   ADJ ;\n'
+            root += self.stuff2lexc('B→') + ':-   SUFFIX ;\n'
         return root
 
 
