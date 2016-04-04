@@ -171,6 +171,7 @@ CONJ_JA	CONJ	PARTICLE	99	None	False	False	front	None	None	False	False
 DET_SE	DET	PRONOUN	101	None	False	False	front	None	None	False	False
 DET_YKSI	DET	PRONOUN	31	None	False	weaken	front	None	None	False	False
 INTJ_HAH	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False
+INTJ_OO	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False
 NOUN_51aavameri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False
 NOUN_51hienosokeri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False
 NOUN_51Iso-Britannia	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False
