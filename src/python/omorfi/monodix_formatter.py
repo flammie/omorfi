@@ -295,6 +295,7 @@ stuff2monodix = {
     "Xnom": "nom",
     "Xpar": "par",
     "Xtra": "tra",
+    "X": "",
     ".": "",
     "": ""
 }
