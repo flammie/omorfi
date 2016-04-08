@@ -1,0 +1,26 @@
+#!/bin/bash
+# coverage for open sub titeln
+if test -z $srcdir ; then
+    echo invoke from make check or define srcdir=.
+    exit 1
+fi
+fsa="@top_builddir@/src/generated/omorfi-omor.analyse.hfst"
+cuf="OpenSubtitles2016.fi.uniq.freqs"
+cs="get-covered.bash"
+if ! test -r $fsa ; then
+    echo Unable to find built fsa for tests: $fsa
+    exit 77
+fi
+if ! test -f "$cuf" ; then
+    echo missing corpus data $cuf, run $cs and retry
+    exit 77
+fi
+if ! test -x @PYTHON@ ; then
+    echo python missing, cannot run tests
+    exit 77
+fi
+echo Looking up $cuf with $fsa
+if ! @PYTHON@ $srcdir/coverage.py -f $fsa -i $cuf -c 2 \
+        -o OpenSubtitles2016.coveragelog -t 97 ; then
+    exit 1
+fi

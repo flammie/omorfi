@@ -309,6 +309,8 @@ AC_CONFIG_FILES([test/coverage-fi-ud.sh],
                 [chmod +x test/coverage-fi-ud.sh])
 AC_CONFIG_FILES([test/coverage-fi-ftb-ud.sh],
                 [chmod +x test/coverage-fi-ftb-ud.sh])
+AC_CONFIG_FILES([test/coverage-opensubtitles.bash],
+                [chmod +x test/coverage-opensubtitles.bash])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
                 [chmod +x test/faithfulness-ftb-3.1.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
