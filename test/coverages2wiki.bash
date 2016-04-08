@@ -2,7 +2,7 @@
 
 toplist=top-100-log
 echo "## $(date --iso) coverages"
-echo "## $(date --iso) " >> ${toplist}
+echo "## $(date --iso) " > ${toplist}
 echo
 for f in *.coveragelog; do
     corpus=${f%.coveragelog}
