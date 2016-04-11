@@ -192,11 +192,8 @@ Boomi	1	propn-blocking
 Burgundi	1	propn-blocking
 Casanova	1	propn-blocking
 Charleston	1	propn-blocking
-da	1	fgk
 Dalai-lama	1	propn-blocking
 Dalton	1	propn-blocking
-de	1	fgk
-de	2	fgk
 Delta	1	propn-blocking
 Demo	1	propn-blocking
 Diaario	1	propn-blocking
@@ -3596,7 +3593,6 @@ Sammas	1	propn-blocking
 Sammio	1	propn-blocking
 Samoa	1	propn-blocking
 Sampo	1	propn-blocking
-san	1	fgk
 Sana	1	propn-blocking
 Sanasto	1	propn-blocking
 Sane	1	propn-blocking
@@ -4432,9 +4428,6 @@ Valvanne	1	propn-blocking
 Valvatti	1	propn-blocking
 Valve	10	propn-blocking
 Vamma	1	propn-blocking
-van	1	fgk
-Van	1	propn-blocking
-van	2	fgk
 Vana	1	propn-blocking
 Vanamo	1	propn-blocking
 Vanha	1	propn-blocking

@@ -1,6 +1,6 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=8
+nc=9
 function preprocess() {
     cat $@ | sed -e 's/[[:punct:]][[:space:][:punct:]]/ \0/g' \
         -e 's/[[:punct:]]\r\?$/ \0/' -e 's/^[[:punct:]]/\0 /' \
@@ -130,7 +130,7 @@ if ! test -f "fi-ud-test.uniq.freqs" ; then
     echo count
     frequency_list "fi-ud-test.tokens" > "fi-ud-test.uniq.freqs"
 fi
-echo UD Finnish-FTB ... 7/$nc
+echo UD Finnish-FTB ... 8/$nc
 if ! test -f "fi_ftb-ud-test.uniq.freqs" ; then
     if ! test -f "fi_ftb-ud-test.conllu" ; then
         git clone git@github.com:UniversalDependencies/UD_Finnish-FTB.git
@@ -141,5 +141,22 @@ if ! test -f "fi_ftb-ud-test.uniq.freqs" ; then
         cut -f 2 > "fi_ftb-ud-test.tokens"
     echo count
     frequency_list "fi_ftb-ud-test.tokens" > "fi_ftb-ud-test.uniq.freqs"
+fi
+
+# Open subtitles
+echo Open Subtitle 2016... corpus 9/$nc
+if ! test -f "OpenSubtitles2016.fi.uniq.freqs" ; then
+    if ! test -f "OpenSubtitles2016.fi.tokens" ; then
+        if ! test -f "OpenSubtitles2016.raw.fi.gz" ; then
+            echo fetch
+            fetch-opensubtitles.bash "fi"
+        fi
+        echo unpack
+        unpack-opensubtitles.bash "fi" > "OpenSubtitles2016.fi.text"
+        echo tokenise
+        preprocess < "OpenSubtitles2016.fi.text" > "OpenSubtitles2016.fi.tokens"
+    fi
+    echo count
+    frequency_list OpenSubtitles2016.fi.tokens > OpenSubtitles2016.fi.uniq.freqs
 fi
 
