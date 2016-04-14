@@ -1217,6 +1217,7 @@ generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 endif
 # }}}
 
+# {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \
 			 generated/ftb1-back_minen_omorfi.hfst \
@@ -1282,4 +1283,7 @@ CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 clean-local:
 	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
 		voikko/*hfst
+
+# }}}
+#
 # vim: set foldmethod=marker:
