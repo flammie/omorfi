@@ -5,5 +5,5 @@ python:
 install:
    pip install flake8 pep8-naming isort
 script:
-   * flake8 .
-   * isort -qc -rc .
+   - flake8 .
+   - isort -qc -rc .
