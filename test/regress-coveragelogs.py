@@ -6,8 +6,8 @@ Compare two directories full of coveragelogs for regressions.
 
 
 from argparse import ArgumentParser, FileType
-from sys import stderr
 from glob import glob
+from sys import stderr
 
 
 def main():
