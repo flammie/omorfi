@@ -44,7 +44,7 @@ def get_last_feats(anal):
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print('"<', surf, '>"', sep='', file=outfile)
+    print('"<', surf[0], '>"', sep='', file=outfile)
     re_mrd = re.compile("\[([^=]*)=([^]]*)]")
     for anal in anals:
         mrds = []
