@@ -9,23 +9,23 @@ from argparse import ArgumentParser, FileType
 from sys import stderr
 from glob import glob
 
+
 def main():
     a = ArgumentParser()
-    a.add_argument('-c', '--current', metavar="CURRDIR", required=True, 
-            dest="currdir", help="analysis results")
+    a.add_argument('-c', '--current', metavar="CURRDIR", required=True,
+                   dest="currdir", help="analysis results")
     a.add_argument('-r', '--reference', metavar="REFDIR", required=True,
                    dest="refdir", help="previous results")
     a.add_argument('-l', '--log', metavar="LOGFILE", required=True,
                    type=FileType('w'),
                    dest="logfile", help="result file")
-    a.add_argument('-t', '--thresholds', metavar='THOLDS', default=99, type=int,
-                   help="require THOLD % regressions or exit 1 (for testing)")
+    a.add_argument(
+        '-t', '--thresholds', metavar='THOLDS', default=99, type=int,
+        help="require THOLD % regressions or exit 1 (for testing)")
     options = a.parse_args()
     # count this
     currlines = 0
-    currtokens = 0
     reflines = 0
-    reftokens = 0
     regressioncount = 0
     regressions = dict()
     devcount = 0
