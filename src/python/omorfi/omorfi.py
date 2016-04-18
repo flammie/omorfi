@@ -298,32 +298,33 @@ class Omorfi:
             tokens = self._retokenise(line.split())
         return tokens
 
+    # XXX: change the logic to follow already tokenised infos
     def _analyse(self, token, automaton):
-        res = self.analysers[automaton].lookup(token)
+        res = self.analysers[automaton].lookup(token[0])
         if len(token) > 2 and token[0].islower() and self.can_titlecase:
-            tctoken = token[0].upper() + token[1:]
+            tctoken = token[0].upper() + token[0][1:]
             if tctoken != token:
                 tcres = self.analysers[automaton].lookup(tctoken)
                 for r in tcres:
                     r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
                 res = res + tcres
         if len(token) > 2 and token[0].isupper() and self.can_detitlecase:
-            dttoken = token[0].lower() + token[1:]
-            if dttoken != token:
+            dttoken = token[0].lower() + token[0][1:]
+            if dttoken != token[0]:
                 dtres = self.analysers[automaton].lookup(dttoken)
                 for r in dtres:
                     r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
                 res = res + dtres
-        if not token.isupper() and self.can_uppercase:
-            uptoken = token.upper()
-            if token != uptoken:
+        if not token[0].isupper() and self.can_uppercase:
+            uptoken = token[0].upper()
+            if token[0] != uptoken:
                 upres = self.analysers[automaton].lookup(uptoken)
                 for r in upres:
                     r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
                 res = res + upres
-        if not token.islower() and self.can_lowercase:
-            lowtoken = token.lower()
-            if token != lowtoken:
+        if not token[0].islower() and self.can_lowercase:
+            lowtoken = token[0].lower()
+            if token[0] != lowtoken:
                 lowres = self.analysers[automaton].lookup(token.lower())
                 for r in lowres:
                     r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
@@ -352,13 +353,13 @@ class Omorfi:
         if not anals and 'omorfi-omor' in self.analysers:
             anals = self._analyse(token, 'omorfi-omor')
             if not anals:
-                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token),
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token[0]),
                         float('inf'))
                 anals = [anal]
         if not anals and len(self.analysers):
             anals = self._analyse(token, self.analysers.keys[0])
             if not anals:
-                anal = ('[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]',
+                anal = ('[WORD_ID=%s]' % (token[0]) + '[GUESS=UNKNOWN][WEIGHT=inf]',
                         float('inf'))
                 anals = [anal]
         return anals
