@@ -8,7 +8,7 @@ from omorfi.omorfi import Omorfi
 
 
 def print_moses_factor_segments(segments, labelsegments, surf, outfile,
-        options):
+                                options):
     if float(labelsegments[0][1]) != float('inf'):
         analysis = labelsegments[0][0]
         splat = re.split("[]{}[]", analysis)
@@ -34,7 +34,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                 moses += ' '
                 nextsep = '|'
             elif split in ['NOUN', 'VERB', 'ADJ', 'COMP', 'PROPN',
-                    'SUPER', 'AUX', 'NUM', 'PRON', 'DET']:
+                           'SUPER', 'AUX', 'NUM', 'PRON', 'DET']:
                 allow_uppers = True
                 skiptag = split
             elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
@@ -166,9 +166,11 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         # kehitys|NOUN yhteis|NOUN työ mis|NOUNnisteri|NOUN nä|ESS
         # ulko|NOUN maalai|NOUN s|NOUN viha mielis|ADJ tä|PAR
         # epä|NOUN tasa-arvo asia|NOUN
-        moses = re.sub(r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|NOUN",
+        moses = re.sub(
+            r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|NOUN",
                        r"\1|NOUN \2|NOUN \3|NOUN", moses)
-        moses = re.sub(r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|ADJ",
+        moses = re.sub(
+            r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|ADJ",
                        r"\1|NOUN \2|NOUN \3|ADJ", moses)
         # šakki lauda|NOUN
         # pöytä|NOUN rosé viine|NOUN i|PL stä|ELA
@@ -215,15 +217,15 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
             segleft = segment_marker
             segright = segment_marker
         elif seglen % 2 == 0:
-            segleft = options.segment_marker[:int(seglen/2)]
-            segright = options.segment_marker[int(seglen/2):]
+            segleft = options.segment_marker[:int(seglen / 2)]
+            segright = options.segment_marker[int(seglen / 2):]
         else:
             segleft = options.segment_marker[:int((seglen - 1) / 2)]
             segright = options.segment_marker[int((seglen - 1) / 2):]
         moses = re.sub(r"\|", segleft + "|", moses)
         moses = re.sub(r" ", " " + segright, moses)
         last = moses.rfind(segleft + "|")
-        moses = moses[:last+len(segleft)-1] + moses[last+len(segleft):]
+        moses = moses[:last + len(segleft) - 1] + moses[last + len(segleft):]
         print(moses, end=' ', file=outfile)
     else:
         print(surf, end='|UNK ', file=outfile)
