@@ -168,10 +168,10 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         # epä|NOUN tasa-arvo asia|NOUN
         moses = re.sub(
             r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|NOUN",
-                       r"\1|NOUN \2|NOUN \3|NOUN", moses)
+            r"\1|NOUN \2|NOUN \3|NOUN", moses)
         moses = re.sub(
             r"([a-zéšäöå-]+)\|NOUN ([a-zšéäöå-]+) ([a-zšéäöå]+)\|ADJ",
-                       r"\1|NOUN \2|NOUN \3|ADJ", moses)
+            r"\1|NOUN \2|NOUN \3|ADJ", moses)
         # šakki lauda|NOUN
         # pöytä|NOUN rosé viine|NOUN i|PL stä|ELA
         # linja-auto liikentee|NOUN n|GEN
@@ -214,8 +214,8 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
             segleft = ''
             segright = ''
         elif seglen == 1:
-            segleft = segment_marker
-            segright = segment_marker
+            segleft = options.segment_marker
+            segright = options.segment_marker
         elif seglen % 2 == 0:
             segleft = options.segment_marker[:int(seglen / 2)]
             segright = options.segment_marker[int(seglen / 2):]
