@@ -7,7 +7,8 @@ from sys import stderr, stdin, stdout
 from omorfi.omorfi import Omorfi
 
 
-def print_moses_factor_segments(segments, labelsegments, surf, outfile):
+def print_moses_factor_segments(segments, labelsegments, surf, outfile,
+        options):
     if float(labelsegments[0][1]) != float('inf'):
         analysis = labelsegments[0][0]
         splat = re.split("[]{}[]", analysis)
@@ -32,7 +33,8 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
                     skiptag = None
                 moses += ' '
                 nextsep = '|'
-            elif split in ['NOUN', 'VERB', 'ADJ', 'COMP', 'PROPN', 'SUPER', 'AUX', 'NUM', 'PRON', 'DET']:
+            elif split in ['NOUN', 'VERB', 'ADJ', 'COMP', 'PROPN',
+                    'SUPER', 'AUX', 'NUM', 'PRON', 'DET']:
                 allow_uppers = True
                 skiptag = split
             elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
@@ -202,6 +204,26 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile):
         moses = re.sub(r"\|NOUN([a-zäåö]+)\|NOUN", r"\1|NOUN", moses)
         # || special case :-/
         moses = re.sub(r"\|\|SYM", "@pipe;|SYM", moses)
+        # finally
+        segleft = ''
+        segright = ''
+        seglen = len(options.segment_marker)
+        if seglen == 0:
+            segleft = ''
+            segright = ''
+        elif seglen == 1:
+            segleft = segment_marker
+            segright = segment_marker
+        elif seglen % 2 == 0:
+            segleft = options.segment_marker[:int(seglen/2)]
+            segright = options.segment_marker[int(seglen/2):]
+        else:
+            segleft = options.segment_marker[:int((seglen - 1) / 2)]
+            segright = options.segment_marker[int((seglen - 1) / 2):]
+        moses = re.sub(r"\|", segleft + "|", moses)
+        moses = re.sub(r" ", " " + segright, moses)
+        last = moses.rfind(segleft + "|")
+        moses = moses[:last+len(segleft)-1] + moses[last+len(segleft):]
         print(moses, end=' ', file=outfile)
     else:
         print(surf, end='|UNK ', file=outfile)
@@ -267,7 +289,7 @@ def main():
                    help="split on derivation boundaries")
     a.add_argument('--split-nonwords', action="store_true", default=False,
                    help="split on other boundaries")
-    a.add_argument('--segment-marker', default=' ', metavar='SEG',
+    a.add_argument('--segment-marker', default='→ ←', metavar='SEG',
                    help="mark segment boundaries with SEG")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
@@ -288,6 +310,10 @@ def main():
         outfile = open(options.output, 'w')
     else:
         outfile = stdout
+    if options.segment_marker is None:
+        if options.verbose:
+            print("Default segment marker is → ←")
+        options.segment_marker = '→ ←'
     if options.verbose:
         print("reading from", options.infile.name)
     if options.verbose:
@@ -308,7 +334,7 @@ def main():
             labelsegments = omorfi.labelsegment(token[0])
             if options.output_format == 'moses-factors':
                 print_moses_factor_segments(
-                    segments, labelsegments, token[0], outfile)
+                    segments, labelsegments, token[0], outfile, options)
             elif options.output_format == 'segments':
                 print_segments(segments, labelsegments, token[0], outfile,
                                options)
