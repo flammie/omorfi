@@ -173,6 +173,7 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
+			bash/omorfi-locate.sh \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
 			python/omorfi-conllu.py \

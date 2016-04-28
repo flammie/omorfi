@@ -1,9 +1,5 @@
 #!/bin/bash
-omorfidir="@prefix@/share/omorfi"
-bindir="@prefix@/bin"
-analyser="$bindir/omorfi-vislcg.py"
-PYTHON="@PYTHON@"
-CGPROC="@CGPROC@"
+source omorfi-locate.sh
 args=$@
 
 function print_version() {
@@ -32,24 +28,10 @@ function print_help() {
 }
 
 
-function check_omorfi() {
-    if test ! -d "$omorfidir" ; then
-        echo omorfi not found in $omorfidir
-        exit 1
-    fi
-    if test ! -r "$omorfidir"/omorfi.cg3bin ; then
-        echo disambiguation rules are not in $omorfidir/omorfi.cg3bin
-        exit 1
-    fi
-    if test x$1 == xverbose ; then
-        echo using $omorfidir for analysers
-    fi
-}
-
 function disambiguate() {
     cat $@ |\
-        "${PYTHON}" "${analyser}" -f "$omorfidir" |\
-        ${CGPROC} -f 0 "${omorfidir}"/omorfi.cg3bin
+        omorfi-vislcg.py -f "$omorfidir" |\
+        cg-proc -f 0 "${omorfidir}"/omorfi.cg3bin
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -67,6 +49,14 @@ elif test ! -r $1 ; then
     print_usage
     exit 1
 fi
-check_omorfi $verbose
+omorfidir=$(find_omorfi)
+if test -z "${omorfidir}" ; then
+    print_usage
+    help_find
+    exit 1
+fi
+if test x$verbose = xverbose ; then
+    echo Using $omorfidir/
+fi
 disambiguate $@
 

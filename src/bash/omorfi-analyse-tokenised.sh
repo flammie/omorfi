@@ -1,10 +1,10 @@
 #!/bin/bash
-omorfidir="@prefix@/lib/voikko/3/"
-omorfifile="$omorfidir/speller-omorfi.zhfst"
+
+source omorfi-locate.sh
 args=$@
 
 function print_version() {
-    echo "omorfi-spell 0.1"
+    echo "omorfi-interactive 0.1"
     echo "Copyright (c) 2014 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
@@ -27,22 +27,8 @@ function print_help() {
 }
 
 
-function check_omorfi() {
-    if test ! -d "$omorfidir" ; then
-        echo omorfi not found in $omorfidir
-        exit 1
-    fi
-    if test ! -r "$omorfifile" ; then
-        echo analyser not found in $omorfifile
-        exit 1
-    fi
-    if test x$1 == xverbose ; then
-        echo using $omorfifile as analyser
-    fi
-}
-
-function spell() {
-    cat $@ | @HOSPELL@ "$omorfifile"
+function analyse() {
+    cat $@ | hfst-lookup -x "$omorfifile"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -60,5 +46,13 @@ elif test ! -r $1 ; then
     print_usage
     exit 1
 fi
-check_omorfi $verbose
-spell $@
+omorfifile=$(find_omorfi analyse)
+if test -z $omorfifile ; then
+    print_usage
+    find_help analyse
+    exit 1
+fi
+if test x$verbose = xverbose ; then
+    print Using $omorfifile for analysis
+fi
+analyse $@

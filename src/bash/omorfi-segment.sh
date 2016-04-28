@@ -1,7 +1,6 @@
 #!/bin/bash
 
-omorfidir="@prefix@/share/omorfi"
-omorfifile="$omorfidir/omorfi.segment.hfst"
+source omorfi-locate.sh
 args=$@
 
 marker=" "
@@ -40,21 +39,6 @@ function print_help() {
     echo "This program uses hfst-lookup"
 }
 
-
-function check_omorfi() {
-    if test ! -d "$omorfidir" ; then
-        echo omorfi not found in $omorfidir
-        exit 1
-    fi
-    if test ! -r "$omorfifile" ; then
-        echo analyser not found in $omorfifile
-        echo maybe you have disabled segmentation or installation was incomplete?
-        exit 1
-    fi
-    if test x$1 == xverbose ; then
-        echo using $omorfifile as analyser
-    fi
-}
 
 function analyse() {
     cat $@ | @HLOOKUP@ "$omorfifile" |\
@@ -116,6 +100,11 @@ else
     markexpr='\('${markexpr#\\\|}'\)'
 fi
 
-check_omorfi $verbose
+omorfifile=$(find_omorfi segment)
+if test -z "$omorfifile" ; then
+    print_usage
+    find_help segment
+    exit 2
+fi
 analyse $@
 

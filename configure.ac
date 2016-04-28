@@ -281,20 +281,7 @@ AC_PATH_PROG([SBATCH], [sbatch], [false])
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
-AC_CONFIG_FILES([src/bash/omorfi-analyse-text.sh],
-                [chmod +x src/bash/omorfi-analyse-text.sh])
-AC_CONFIG_FILES([src/bash/omorfi-disambiguate-text.sh],
-                [chmod +x src/bash/omorfi-disambiguate-text.sh])
-AC_CONFIG_FILES([src/bash/omorfi-segment.sh],
-                [chmod +x src/bash/omorfi-segment.sh])
-AC_CONFIG_FILES([src/bash/omorfi-generate.sh],
-                [chmod +x src/bash/omorfi-generate.sh])
-AC_CONFIG_FILES([src/bash/omorfi-hyphenate.sh],
-                [chmod +x src/bash/omorfi-hyphenate.sh])
-AC_CONFIG_FILES([src/bash/omorfi-spell.sh],
-                [chmod +x src/bash/omorfi-spell.sh])
-AC_CONFIG_FILES([src/bash/omorfi-analyse-tokenised.sh],
-                [chmod +x src/bash/omorfi-analyse-tokenised.sh])
+AC_CONFIG_FILES([src/bash/omorfi.bash])
 AC_CONFIG_FILES([test/coverage-europarl.sh],
                 [chmod +x test/coverage-europarl.sh])
 AC_CONFIG_FILES([test/coverage-fiwiki.sh],

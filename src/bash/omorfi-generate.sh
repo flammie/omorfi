@@ -1,10 +1,9 @@
 #!/bin/bash
-omorfidir="@prefix@/share/omorfi"
-omorfifile="$omorfidir/omorfi.hyphenate-rules.hfst"
+source omorfi-locate.sh
 args=$@
-hyphen="-"
+
 function print_version() {
-    echo "omorfi-hyphenate 0.1"
+    echo "omorfi-generate 0.1"
     echo "Copyright (c) 2012 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
@@ -17,34 +16,18 @@ function print_usage() {
 }
 
 function print_help() {
-    echo "Hyphenates word-forms using omorfi as compound breaker"
+    echo "Generates word-forms from line separated omorfi definitions"
     echo
     echo "  -h, --help      Print this help dialog"
     echo "  -V, --version   Print version info"
     echo "  -v, --verbose   Print verbosely while processing"
     echo
     echo "If no FILENAMEs are given, input is read from standard input."
+    echo
 }
 
-
-function check_omorfi() {
-    if test ! -d "$omorfidir" ; then
-        echo omorfi not found in $omorfidir
-        exit 1
-    fi
-    if test ! -r "$omorfifile" ; then
-        echo hyphenator not found in $omorfifile
-        exit 1
-    fi
-    if test x$1 == xverbose ; then
-        echo using $omorfifile as hyphenator
-    fi
-}
-
-function hyphenate() {
-    cat $@ | @HLOOKUP@ -x "$omorfifile" |\
-        sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
-            -e "s/-4/$hyphen/g"
+function generate() {
+    cat $@ |  hfst-lookup  -x "$omorfifile"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -62,5 +45,13 @@ elif test ! -r $1 ; then
     print_usage
     exit 1
 fi
-check_omorfi $verbose
-hyphenate $@
+omorfifile=$(find_omorfi generate)
+if test -z "$omorfifile" ; then
+    print_usage
+    find_help generate
+    exit 2
+fi
+if test x$verbose = xverbose ; then
+    echo Using $omorfifile generator
+fi
+generate $@

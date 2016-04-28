@@ -1,11 +1,10 @@
 #!/bin/bash
-omorfidir="@prefix@/share/omorfi/"
-omorfifile="$omorfidir/omorfi-ftb3.analyse.hfst"
-args=$@
 
+args=$@
+hyphen="-"
 function print_version() {
-    echo "omorfi-interactive 0.1"
-    echo "Copyright (c) 2014 Tommi A Pirinen"
+    echo "omorfi-hyphenate 0.1"
+    echo "Copyright (c) 2012 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
@@ -17,7 +16,7 @@ function print_usage() {
 }
 
 function print_help() {
-    echo "Analyse separate word-forms or word-form lists"
+    echo "Hyphenates word-forms using omorfi as compound breaker"
     echo
     echo "  -h, --help      Print this help dialog"
     echo "  -V, --version   Print version info"
@@ -27,22 +26,10 @@ function print_help() {
 }
 
 
-function check_omorfi() {
-    if test ! -d "$omorfidir" ; then
-        echo omorfi not found in $omorfidir
-        exit 1
-    fi
-    if test ! -r "$omorfifile" ; then
-        echo analyser not found in $omorfifile
-        exit 1
-    fi
-    if test x$1 == xverbose ; then
-        echo using $omorfifile as analyser
-    fi
-}
-
-function analyse() {
-    cat $@ | @HLOOKUP@ -x "$omorfifile"
+function hyphenate() {
+    cat $@ | hfst-lookup -x "$omorfifile" |\
+        sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
+            -e "s/-4/$hyphen/g"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -60,5 +47,5 @@ elif test ! -r $1 ; then
     print_usage
     exit 1
 fi
-check_omorfi $verbose
-analyse $@
+omorfifile=$(find_omorfi hyphenate)
+hyphenate $@

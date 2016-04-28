@@ -1,6 +1,5 @@
 #!/bin/bash
-omorfidir="@prefix@/share/omorfi"
-omorfifile="$omorfidir/omorfi-ftb3.analyse.hfst"
+source omorfi-locate.sh
 args=$@
 
 function print_version() {
@@ -29,20 +28,6 @@ function print_help() {
 }
 
 
-function check_omorfi() {
-    if test ! -d "$omorfidir" ; then
-        echo omorfi not found in $omorfidir
-        exit 1
-    fi
-    if test ! -r "$omorfifile" ; then
-        echo analyser not found in $omorfifile
-        echo maybe you have disabled FTB3.1 or installation was incomplete?
-        exit 1
-    fi
-    if test x$1 == xverbose ; then
-        echo using $omorfifile as analyser
-    fi
-}
 cleanup=cat
 function check_cleaner() {
     if type -p apertium-destxt > /dev/null ; then
@@ -57,7 +42,7 @@ function check_cleaner() {
 }
 
 function analyse() {
-    cat $@ | $cleanup | sed -e 's/\.\[\]//g'| @HPROC@ -x "$omorfifile"
+    cat $@ | $cleanup | sed -e 's/\.\[\]//g'| hfst-proc -x "$omorfifile"
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
@@ -75,7 +60,15 @@ elif test ! -r $1 ; then
     print_usage
     exit 1
 fi
-check_omorfi $verbose
+omorfifile=$(find_omorfi "analyse")
+if test -z $omorfifile ; then
+    print_usage
+    find_help analyse
+    exit 1
+fi
+if test x$1 = xverbose ; then
+    echo Using $omorfifile for analysis
+fi
 check_cleaner $verbose
 analyse $@
 
