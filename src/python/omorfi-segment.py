@@ -307,10 +307,12 @@ def main():
     if options.infile:
         infile = options.infile
     else:
+        options.infile = stdin
         infile = stdin
     if options.output:
         outfile = open(options.output, 'w')
     else:
+        options.output = "<stdout>"
         outfile = stdout
     if options.segment_marker is None:
         if options.verbose:
