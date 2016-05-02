@@ -436,7 +436,7 @@ NOUN_IEN	NOUN	NOUN	32	D	False	strengthen	front	None	None	False	False
 NOUN_IES	NOUN	NOUN	41	D	False	strengthen	front	None	None	False	False
 NOUN_IKENET	NOUN	NOUN	32	D	obligatory	strengthen	front	None	None	False	False
 NOUN_IMMYT	NOUN	NOUN	43	H	False	strengthen	front	None	None	False	False
-NOUN_INGET	PROPN	NOUN	44	G	False	strengthen	front	None	None	False	False
+NOUN_INGET	NOUN	NOUN	44	G	False	strengthen	front	None	None	False	False
 NOUN_ITÄMAAT	NOUN	NOUN	18	None	obligatory	weaken	back	None	None	False	False
 NOUN_JEPPE	NOUN	NOUN	8	B	False	weaken	front	None	None	False	False
 NOUN_JOCKEY	NOUN	NOUN	21	None	False	weaken	back	i	None	False	False
@@ -1774,6 +1774,7 @@ PROPN_BRASSERIE	PROPN	NOUN	21	None	False	weaken	back	i	None	False	False
 PROPN_BRIE	PROPN	NOUN	21	None	False	weaken	front	i	None	False	False
 PROPN_CAMUS	PROPN	NOUN	22	None	False	weaken	back	None	None	False	False
 PROPN_CHACHACHA	PROPN	NOUN	21	None	False	weaken	back	a	None	False	False
+PROPN_COMPOUND	PROPN	NOUN	99	None	False	False	front	None	None	False	False
 PROPN_COWBOY	PROPN	NOUN	21	None	False	weaken	back	i	None	False	False
 PROPN_DIMITRIS	PROPN	NOUN	41	None	False	strengthen	front	None	None	False	False
 PROPN_EKKE	PROPN	NOUN	8	A	False	weaken	front	None	None	False	False

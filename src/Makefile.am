@@ -173,6 +173,7 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
+			bash/omorfi-locate.sh \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
 			python/omorfi-conllu.py \
@@ -1217,6 +1218,7 @@ generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 endif
 # }}}
 
+# {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \
 			 generated/ftb1-back_minen_omorfi.hfst \
@@ -1282,4 +1284,7 @@ CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 clean-local:
 	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
 		voikko/*hfst
+
+# }}}
+#
 # vim: set foldmethod=marker:

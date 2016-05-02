@@ -298,36 +298,37 @@ class Omorfi:
             tokens = self._retokenise(line.split())
         return tokens
 
-    def _analyse(self, token, automaton):
-        res = self.analysers[automaton].lookup(token)
-        if len(token) > 2 and token[0].islower() and self.can_titlecase:
-            tctoken = token[0].upper() + token[1:]
-            if tctoken != token:
-                tcres = self.analysers[automaton].lookup(tctoken)
-                for r in tcres:
-                    r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
+    def _analyse_str(self, s, automaton):
+        token = (s, "")
+        res = self._analyse_token(token, automaton)
+        if len(s) > 2 and s[0].islower() and self.can_titlecase:
+            tcs = s[0].upper() + s[1:]
+            if s != tcs:
+                tctoken = (tcs, 'TitleCased=' + s)
+                tcres = self._analyse_token(tctoken, automaton)
                 res = res + tcres
         if len(token) > 2 and token[0].isupper() and self.can_detitlecase:
-            dttoken = token[0].lower() + token[1:]
-            if dttoken != token:
-                dtres = self.analysers[automaton].lookup(dttoken)
-                for r in dtres:
-                    r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
+            dts = s[0].lower() + s[1:]
+            if dts != s:
+                dttoken = (dts, "DetitleCased=" + s)
+                dtres = self._analyse_token(dttoken, automaton)
                 res = res + dtres
-        if not token.isupper() and self.can_uppercase:
-            uptoken = token.upper()
-            if token != uptoken:
-                upres = self.analysers[automaton].lookup(uptoken)
-                for r in upres:
-                    r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
+        if not s.isupper() and self.can_uppercase:
+            ups = s.upper()
+            if s != ups:
+                uptoken = (ups, "UpperCased=" + s)
+                upres = self._analyse_token(uptoken, automaton)
                 res = res + upres
-        if not token.islower() and self.can_lowercase:
-            lowtoken = token.lower()
-            if token != lowtoken:
-                lowres = self.analysers[automaton].lookup(token.lower())
-                for r in lowres:
-                    r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
+        if not s.islower() and self.can_lowercase:
+            lows = s.lower()
+            if s != lows:
+                lowtoken = (lows, "LowerCased=" + s)
+                lowres = self._analyse_token(lowtoken, automaton)
                 res += lowres
+        return res
+
+    def _analyse_token(self, token, automaton):
+        res = self.analysers[automaton].lookup(token[0])
         for r in res:
             r = (r[0] + '[WEIGHT=%f]' % (r[1]), r[1])
         return res
@@ -348,17 +349,23 @@ class Omorfi:
         """
         anals = None
         if 'default' in self.analysers:
-            anals = self._analyse(token, 'default')
+            if isinstance(token, str):
+                anals = self._analyse_str(token, 'default')
+            else:
+                anals = self._analyse_token(token, 'default')
         if not anals and 'omorfi-omor' in self.analysers:
-            anals = self._analyse(token, 'omorfi-omor')
+            if isinstance(token, str):
+                anals = self._analyse_str(token, 'omorfi-omor')
+            else:
+                anals = self._analyse_token(token, 'omorfi-omor')
             if not anals:
-                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token),
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token[0]),
                         float('inf'))
                 anals = [anal]
         if not anals and len(self.analysers):
             anals = self._analyse(token, self.analysers.keys[0])
             if not anals:
-                anal = ('[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]',
+                anal = ('[WORD_ID=%s]' % (token[0]) + '[GUESS=UNKNOWN][WEIGHT=inf]',
                         float('inf'))
                 anals = [anal]
         return anals
