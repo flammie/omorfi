@@ -1,14 +1,21 @@
 #!/bin/bash
 # omorfi bash API
+
+# this is the order of dirs
+if test -n $OMORFI_PATH ; then
+    omorfipath=$OMORFI_PATH
+fi
 omorfidir="@prefix@/share/omorfi"
 homeomorfidir="$HOME/.omorfi"
 localomorfidir0=.
 localomorfidir1=generated
 localomorfidir2=src/generated
 localomorfidir3=../src/generated
+relomorfidir=$(dirname $0)/../share/omorfi
 function find_omorfi() {
-    for d in $omorfidir $homeomorfidir $localomorfidir0 $localomorfidir1 \
-        $localomorfidir2 $localomorfidir3 ; do
+    for d in $omorfipath $omorfidir $homeomorfidir \
+        $localomorfidir0 $localomorfidir1 $localomorfidir2 $localomorfidir3 \
+        $relomorfidir ; do
         if test $# = 0 ; then
             if test -d "$d" ; then
                 echo "$d"
