@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source omorfi-locate.sh
+source omorfi.bash
 args=$@
 
 
