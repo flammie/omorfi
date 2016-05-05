@@ -1,12 +1,12 @@
 #!/bin/bash
 
-source omorfi.bash
+source $(dirname $0)/omorfi.bash
 args=$@
 
 
 function print_version() {
-    echo "omorfi-spell 0.1"
-    echo "Copyright (c) 2014 Tommi A Pirinen"
+    echo "omorfi-spell 0.2 (using omorfi bash API $omorfiapi)"
+    echo "Copyright (c) 2016 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
@@ -28,10 +28,6 @@ function print_help() {
 }
 
 
-function spell() {
-    cat $@ | hfst-ospell "$omorfifile"
-}
-
 if test x$1 == x-h -o x$1 == x--help ; then
     print_usage
     print_help
@@ -42,10 +38,6 @@ elif test x$1 == x-V -o x$1 == x--version ; then
 elif test x$1 == x-v -o x$1 == x--verbose ; then
     verbose=verbose
     shift 1
-elif test ! -r $1 ; then
-    echo "Cannot read from $1"
-    print_usage
-    exit 1
 fi
-omorfifile=$(find_omorfi speller)
-spell $@
+
+cat $@ | omorfi_spell
