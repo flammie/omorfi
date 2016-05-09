@@ -364,12 +364,16 @@ class Omorfi:
         if not anals and 'omorfi-omor' in self.analysers:
             if isinstance(token, str):
                 anals = self._analyse_str(token, 'omorfi-omor')
+                if not anals:
+                    anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                            (token), float('inf'), "Unknown")
+                    anals = [anal]
             else:
                 anals = self._analyse_token(token, 'omorfi-omor')
-            if not anals:
-                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token[0]),
-                        float('inf'))
-                anals = [anal]
+                if not anals:
+                    anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                            (token[0]), float('inf'), "Unknown")
+                    anals = [anal]
         if not anals and len(self.analysers):
             anals = self._analyse(token, self.analysers.keys[0])
             if not anals:
