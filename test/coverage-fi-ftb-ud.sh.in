@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     echo invoke from make check or define srcdir=.
     exit 1
 fi
-fsa="@top_builddir@/src/generated/omorfi-omor.analyse.hfst"
+fsa="@top_builddir@/src/generated/"
 cuf="fi_ftb-ud-test.uniq.freqs"
 cs="get-covered.bash"
 if ! test -r  $fsa ; then
@@ -20,7 +20,7 @@ if ! test -x @PYTHON@ ; then
     exit 77
 fi
 echo Looking up fi_ftb-ud-test.uniq.freqs
-if ! @PYTHON@ $srcdir/coverage.py -f $fsa -i $cuf -c 2 -o fi_ftb-ud-test.coveragelog -t 96 ; then
+if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ $srcdir/coverage.py -f $fsa -i $cuf -c 2 -o fi_ftb-ud-test.coveragelog -t 96 ; then
     exit 1
 fi
 

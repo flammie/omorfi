@@ -9,7 +9,7 @@ from argparse import ArgumentParser, FileType
 from sys import stderr
 from time import perf_counter, process_time
 
-import libhfst
+from omorfi.omorfi import Omorfi
 
 
 def main():
@@ -28,9 +28,15 @@ def main():
     a.add_argument('-t', '--threshold', metavar='THOLD', default=99, type=int,
                    help="require THOLD % coverage or exit 1 (for testing)")
     options = a.parse_args()
-    his = libhfst.HfstInputStream(options.fsa)
-    omorfi = his.read()
-    # libhfst.HfstTransducer(libhfst.HfstInputStream(options.fsa))
+    omorfi = Omorfi(options.verbose)
+    if options.fsa:
+        if options.verbose:
+            print("reading language models in", options.fsa)
+        omorfi.load_from_dir(options.fsa, analyse=True, accept=True)
+    else:
+        if options.verbose:
+            print("reading language models in default dirs")
+        omorfi.load_from_dir()
     # statistics
     tokens = 0
     uniqs = 0
@@ -54,14 +60,8 @@ def main():
         uniqs += 1
         if options.verbose:
             print(tokens, "(", freq, ')...', end='\r')
-        anals = omorfi.lookup(surf)
-        if surf[0].isupper():
-            anals += omorfi.lookup(surf[0].lower() + surf[1:])
-        if surf.isupper():
-            anals += omorfi.lookup(surf.lower())
-        if surf.isupper():
-            anals += omorfi.lookup(surf[0] + surf[1:].lower())
-        if len(anals) > 0:
+        anals = omorfi.analyse(surf)
+        if len(anals) > 0 and not "GUESS=UNKNOWN" in anals[0][0]:
             found_tokens += freq
             found_uniqs += 1
         else:
