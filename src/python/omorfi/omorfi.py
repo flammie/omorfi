@@ -306,31 +306,39 @@ class Omorfi:
             if s != tcs:
                 tctoken = (tcs, 'TitleCased=' + s)
                 tcres = self._analyse_token(tctoken, automaton)
+                for r in tcres:
+                    r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
                 res = res + tcres
         if len(token) > 2 and token[0].isupper() and self.can_detitlecase:
             dts = s[0].lower() + s[1:]
             if dts != s:
                 dttoken = (dts, "DetitleCased=" + s)
                 dtres = self._analyse_token(dttoken, automaton)
+                for r in dtres:
+                    r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
                 res = res + dtres
         if not s.isupper() and self.can_uppercase:
             ups = s.upper()
             if s != ups:
                 uptoken = (ups, "UpperCased=" + s)
                 upres = self._analyse_token(uptoken, automaton)
+                for r in upres:
+                    r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
                 res = res + upres
         if not s.islower() and self.can_lowercase:
             lows = s.lower()
             if s != lows:
                 lowtoken = (lows, "LowerCased=" + s)
                 lowres = self._analyse_token(lowtoken, automaton)
+                for r in lowres:
+                    r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
                 res += lowres
         return res
 
     def _analyse_token(self, token, automaton):
         res = self.analysers[automaton].lookup(token[0])
         for r in res:
-            r = (r[0] + '[WEIGHT=%f]' % (r[1]), r[1])
+            r = (r[0] + '[WEIGHT=%f]' % (r[1]), r[1], token[1])
         return res
 
     def analyse(self, token):
