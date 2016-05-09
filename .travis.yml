@@ -7,3 +7,11 @@ install:
 script:
    - flake8 .
    - isort -qc -rc .
+notifications:
+    irc:
+        channels:
+            - "chat.freenode.net#hfst"
+            - "chat.freenode.net#omorfi"
+        on_failure: always
+        on_success: never
+
