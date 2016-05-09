@@ -119,28 +119,28 @@ fi
 
 # UD-finnish
 echo UD Finnish ... 7/$nc
-if ! test -f "fi-ud-test.uniq.freqs" ; then
-    if ! test -f "fi-ud-test.conllu" ; then
+if ! test -f "fi-ud-all.uniq.freqs" ; then
+    if ! test -f "fi-ud-all.conllu" ; then
         git clone git@github.com:UniversalDependencies/UD_Finnish.git
-        ln -s UD_Finnish/"fi-ud-test.conllu" .
+        cat UD_Finnish/fi-ud-*.conllu > "fi-ud-all.conllu"
     fi
     echo tokenise
-    egrep -v '^#' < "fi-ud-test.conllu" | tr -s '\n' |\
-        cut -f 2 > "fi-ud-test.tokens"
+    egrep -v '^#' < "fi-ud-all.conllu" | tr -s '\n' |\
+        cut -f 2 > "fi-ud-all.tokens"
     echo count
-    frequency_list "fi-ud-test.tokens" > "fi-ud-test.uniq.freqs"
+    frequency_list "fi-ud-all.tokens" > "fi-ud-all.uniq.freqs"
 fi
 echo UD Finnish-FTB ... 8/$nc
-if ! test -f "fi_ftb-ud-test.uniq.freqs" ; then
-    if ! test -f "fi_ftb-ud-test.conllu" ; then
+if ! test -f "fi_ftb-ud-all.uniq.freqs" ; then
+    if ! test -f "fi_ftb-ud-all.conllu" ; then
         git clone git@github.com:UniversalDependencies/UD_Finnish-FTB.git
-        ln -s UD_Finnish-FTB/"fi_ftb-ud-test.conllu" .
+        cat UD_Finnish-FTB/fi_ftb-ud-*.conllu > "fi_ftb-ud-all.conllu"
     fi
     echo tokenise
-    egrep -v '^#' < "fi_ftb-ud-test.conllu" | tr -s '\n' |\
-        cut -f 2 > "fi_ftb-ud-test.tokens"
+    egrep -v '^#' < "fi_ftb-ud-all.conllu" | tr -s '\n' |\
+        cut -f 2 > "fi_ftb-ud-all.tokens"
     echo count
-    frequency_list "fi_ftb-ud-test.tokens" > "fi_ftb-ud-test.uniq.freqs"
+    frequency_list "fi_ftb-ud-all.tokens" > "fi_ftb-ud-all.uniq.freqs"
 fi
 
 # Open subtitles

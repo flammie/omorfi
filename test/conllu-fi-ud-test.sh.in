@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     exit 1
 fi
 fsadir="@top_builddir@/src/generated/"
-conllus="fi-ud-test.conllu"
+conllus="fi-ud-all.conllu"
 cs="get-covered.bash"
 if test ! -d "$fsadir" ; then
     echo Missing $fsadir
@@ -18,11 +18,11 @@ if test ! -r $conllus ; then
     echo missing $conllus, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -f $fsadir -i $conllus -o omorfi-ud-test.conllu -O ; then
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -f $fsadir -i $conllus -o omorfi-ud-all.conllu -O ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/conllu-compare.py -H omorfi-ud-test.conllu -r fi-ud-test.conllu -l omorfi-ud-test.log -t 86 ; then
+if ! @PYTHON@ $srcdir/conllu-compare.py -H omorfi-ud-all.conllu -r fi-ud-all.conllu -l omorfi-ud-all.log -t 86 ; then
     echo We missed the target of 86 % conllu matches
     exit 1
 fi
