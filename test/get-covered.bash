@@ -1,10 +1,9 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=9
+nc=10
 function preprocess() {
-    cat $@ | sed -e 's/[[:punct:]][[:space:][:punct:]]/ \0/g' \
-        -e 's/[[:punct:]]\r\?$/ \0/' -e 's/^[[:punct:]]/\0 /' \
-        -e 's/[[:space:]][[:punct:]]/\0 /g' -e 's/[[:space:]]/ /g' |\
+    cat $@ |\
+        ../src/python/omorfi-tokenise.py |\
         tr -s ' ' '\n'
 }
 
@@ -159,4 +158,19 @@ if ! test -f "OpenSubtitles2016.fi.uniq.freqs" ; then
     echo count
     frequency_list OpenSubtitles2016.fi.tokens > OpenSubtitles2016.fi.uniq.freqs
 fi
-
+# tatoeba
+echo Tatoeba fi... corpus 10/$nc
+if ! test -f "tatoeba-fi.uniq.freqs" ; then
+    if ! test -f "tatoeba-fi.tokens" ; then
+        if ! test -f sentences.tar.bz2 ; then
+            echo fetch
+            fetch-tatoeba.bash
+        fi
+        echo unpack
+        unpack-tatoeba.bash "fin" > tatoeba-fi.text
+        echo tokenise
+        preprocess < tatoeba-fi.text > tatoeba-fi.tokens
+    fi
+    echo count
+    frequency_list tatoeba-fi.tokens > tatoeba-fi.uniq.freqs
+fi

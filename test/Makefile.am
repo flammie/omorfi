@@ -11,6 +11,7 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 	  coverage-fi-ud.sh \
 	  coverage-fi-ftb-ud.sh \
 	  coverage-opensubtitles.bash \
+	  coverage-tatoeba.bash \
 	  faithfulness-ftb-3.1.sh \
 	  conllu-fi-ud-test.sh \
 	  conllu-fi-ftb-ud-test.sh
