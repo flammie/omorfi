@@ -273,6 +273,7 @@ def get_upos(anal):
         upos = 'NOUN'
     return upos
 
+
 def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
     for anal in anals:
         upos = get_upos(anal)

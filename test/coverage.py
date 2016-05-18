@@ -61,7 +61,7 @@ def main():
         if options.verbose:
             print(tokens, "(", freq, ')...', end='\r')
         anals = omorfi.analyse(surf)
-        if len(anals) > 0 and not "GUESS=UNKNOWN" in anals[0][0]:
+        if len(anals) > 0 and "GUESS=UNKNOWN" not in anals[0][0]:
             found_tokens += freq
             found_uniqs += 1
         else:
