@@ -70,7 +70,8 @@ class Omorfi:
     _stdpaths = ['/usr/local/share/hfst/fi/',
                  '/usr/share/hfst/fi/',
                  '/usr/local/share/omorfi/',
-                 '/usr/share/omorfi/']
+                 '/usr/share/omorfi/',
+                 './', 'generated/', 'src/generated/', '../src/generated/']
 
     def __init__(self, verbosity=False):
         """Construct Omorfi with given verbosity for printouts."""
