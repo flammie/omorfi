@@ -268,7 +268,33 @@ class Omorfi:
                     (token[-3], "SpaceBefore=No|SpaceAfter=No"),
                     (token[-2], "SpaceBefore=No|SpaceAfter=No"),
                     (token[-1], "SpaceBefore=No")]
-        return [(token, "UNTOKENISED")]
+        # ...non-word...
+        pretoken = None
+        posttoken = None
+        while len(token) > 1 and token[-1] in fin_punct_trailing:
+            if posttoken == None:
+                posttoken = token[-1]
+            else:
+                posttoken = token[-1] + posttoken
+            token = token[:-1]
+        while len(token) > 1 and token[0] in fin_punct_leading:
+            if pretoken == None:
+                pretoken = token[0]
+            else:
+                pretoken = pretoken + token[0]
+            token = token[1:]
+        if pretoken and posttoken:
+            return [(pretoken, "SpaceAfter=No"),
+                    (token, "SpaceBefore=No|SpaceAfter=No"),
+                    (posttoken, "SpaceBefore=No")]
+        elif posttoken:
+            return [(token, "SpaceAfter=No"),
+                    (posttoken, "SpaceBefore=No")]
+        elif pretoken:
+            return [(pretoken, "SpaceAfter=No"),
+                    (token, "SpaceBefore=No")]
+        else:
+            return [(token, "Untokenised=yes")]
 
     def _retokenise(self, tokens):
         retokens = []
