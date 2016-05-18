@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20160000_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20160515], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20160000_alpha
+VERSION=20160515
 
 # Options
 AC_ARG_WITH([hfst],
@@ -296,6 +296,8 @@ AC_CONFIG_FILES([test/coverage-fi-ud.sh],
                 [chmod +x test/coverage-fi-ud.sh])
 AC_CONFIG_FILES([test/coverage-fi-ftb-ud.sh],
                 [chmod +x test/coverage-fi-ftb-ud.sh])
+AC_CONFIG_FILES([test/coverage-tatoeba.bash],
+                [chmod +x test/coverage-tatoeba.bash])
 AC_CONFIG_FILES([test/coverage-opensubtitles.bash],
                 [chmod +x test/coverage-opensubtitles.bash])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
@@ -331,7 +333,7 @@ Configured $PACKAGE_STRING:
     * segmenter: $enable_segmenter
     * lemmatiser: $enable_lemmatiser
     * hyphenators: $enable_hyphenator
-* 
+* Clusters
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
     * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail
 EOF
