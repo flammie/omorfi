@@ -36,10 +36,11 @@ These are the obligatory stamps of the day:
 ## Downloading and further information
 
 Omorfi is currently hosted at github. [Omorfi's github
-pages](https://github.com/flammie/omorfi) contain most of the important
-information about omorfi: wiki for additional documentation, version control
-system for source codes, bug tracker for reporting bugs, and the stable
-releases as convenient packages.
+repository](https://github.com/flammie/omorfi) contain most of the important
+information about omorfi: version control system for source codes, bug tracker
+for reporting bugs, and the stable releases as convenient packages. [Omorfi's
+gh-pages site](https://flammie.github.io/omorfi) contain further information not
+found in this README.
 
 ## Dependencies
 
