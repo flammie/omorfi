@@ -62,9 +62,9 @@ fin_consonants = fin_lower_consonants + fin_upper_consonants
 # the words containing symbols are likely weird / props etc.
 fin_symbols = "1234567890§!\"#¤%&/()=?½@£$‚{[]}<>*"
 # punctuation characters one may optionally split without space after the word
-fin_punct_trailing = "\"'.,?!)]}’”–:;"
+fin_punct_trailing = "\"'.,?!)]}’”–:;»>"
 # punctuations chopped of at the beginning of the word
-fin_punct_leading = "\"'([{’”-–"
+fin_punct_leading = "\"'<([{’”-–»>"
 # known variants and old orthographies 1:1
 # (a conservative listing for sure)
 fin_orth_pairs = [("’", "'"), ("’", "´"), ("’", "′"), ("-", "‐"),
