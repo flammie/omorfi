@@ -56,16 +56,16 @@ def main():
         for surf in surfs:
             anals = omorfi.analyse(surf)
             segments = omorfi.segment(surf)
-            pos_matches = re_pos.finditer(anals[0].output)
+            pos_matches = re_pos.finditer(anals[0][0])
             pos = "UNK"
             mrds = []
             lemmas = []
             for pm in pos_matches:
                 pos = pm.group(1)
-            lemma_matches = re_lemma.finditer(anals[0].output)
+            lemma_matches = re_lemma.finditer(anals[0][0])
             for lm in lemma_matches:
                 lemmas += [lm.group(1)]
-            mrd_matches = re_mrd.finditer(anals[0].output)
+            mrd_matches = re_mrd.finditer(anals[0][0])
             for mm in mrd_matches:
                 if mm.group(1) == 'WORD_ID':
                     mrds = []
@@ -73,8 +73,8 @@ def main():
                     pass
                 else:
                     mrds += [mm.group(2)]
-            stemfixes = segments[0].output[
-                segments[0].output.rfind("{STUB}"):].replace("{STUB}", "")
+            stemfixes = segments[0][0][
+                segments[0][0].rfind("{STUB}"):].replace("{STUB}", "")
             if '{' in stemfixes:
                 morphs = stemfixes[stemfixes.find("{"):].replace("{MB}", ".")
             else:
