@@ -8,12 +8,17 @@ date: 2016-02-08 18:23:58
 
 # Automata sizes
 
-While automata sizes are dependent on the underlying enginery, some changes in dictionary structures and implementations can greatly affect the sizes and thus efficiency of the stuff. This page shows automated test results of that for omorfi releases.
+While automata sizes are dependent on the underlying enginery, some changes in
+dictionary structures and implementations can greatly affect the sizes and thus
+efficiency of the stuff. This page shows automated test results of that for
+omorfi releases.
 
 
 # Automated size tests
 
-These are in ascending order of tiem since I >> them to the end of the file.
+These are in ascending order of time, since I just `>>` them to the end of this
+file. For sheet view, see [omorfi progress sheet in google
+ docs](https://docs.google.com/spreadsheets/d/1eTpUhCz0SzpRl3VYjuzI7etFB2N2bPrzyTV43ebYf6k/edit?usp=sharing)
 
 ## 2014-04-01 (manual tests)
 

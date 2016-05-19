@@ -8,11 +8,27 @@ date: 2016-02-08 18:23:58
 
 # Introduction
 
-One of the secondary goals for analysers built from omorfi data is to act as free/libre open source way to reproduce analyses in "gold" corpora for Finnish. Since most of the gold corpora have been made with commercial tools unavailable to us, without specs, we use automated tests to gauge how well can we even reproduce their results prior to disambiguation. This page lists automatic test results for those tests and discussion of whether we want to get 100 % recall or maintain correct readings in omorfi. We also provide ways to get to 100 % easily when needed
+One of the secondary goals for analysers built from omorfi data is to act as
+free/libre open source way to reproduce analyses in "gold" corpora for Finnish.
+Since most of the gold corpora have been made with commercial tools unavailable
+to us, without specs, we use automated tests to gauge how well can we even
+reproduce their results prior to disambiguation. This page lists automatic test
+results for those tests and discussion of whether we want to get 100 % recall
+or maintain correct readings in omorfi. We also provide ways to get to 100 %
+easily when needed
+
+These are in ascending order of time, since I just `>>` them to the end of this
+file. For sheet view, see [omorfi progress sheet in google
+ docs](https://docs.google.com/spreadsheets/d/1eTpUhCz0SzpRl3VYjuzI7etFB2N2bPrzyTV43ebYf6k/edit?usp=sharing)
 
 ## FTB 3.1 background
 
-The standard versions of omorfi in 2013–2015 use so-called FTB3.1 standard as a format for analyses. In this format, morphological analyses are encoded as string composed of a reconstructed lemma, followed by analysis tags separated by spaces. This document describes the differences from the official FTB3 format, the full description of the format can be found from [FTB web site](http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/index.shtml).
+The standard versions of omorfi in 2013–2015 use so-called FTB3.1 standard as a
+format for analyses. In this format, morphological analyses are encoded as
+string composed of a reconstructed lemma, followed by analysis tags separated
+by spaces. This document describes the differences from the official FTB3
+format, the full description of the format can be found from [FTB web
+site](http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/index.shtml).
 
 The analysis of the first sentence of declaration of human rights in FTB3 mode in omorfi stable version 20141014:
 
@@ -64,7 +80,8 @@ Extracted from our implementation:
 
 ## FTB3.1 Known differences #
 
-The releases of omorfi follow a regression test of 90 % _recall_ for FTB3.1 tags. The results for 20141014 are (Work in Progress):
+The releases of omorfi follow a regression test of 90 % _recall_ for FTB3.1
+tags. The results for 20141014 are (Work in Progress):
 
 
 The errors come mainly from following classes (the order of popularity per word-form):
@@ -87,11 +104,17 @@ Examples with counts (totals etc. as in table above)
 | 33216 | (5) No results | the `the Forgn Art` | – |
 | 21843 | (6) Mismatched | koskevia `koskeva A Pos Par Pl` | koskevia `koskea PrsPrc Act Pos Par Pl` |
 
-These are the top word-forms of the known mismatches, and the single word-forms alone attribute for 2.7 % of the errors
+These are the top word-forms of the known mismatches, and the single word-forms
+alone attribute for 2.7 % of the errors
 
 ## Getting 100 % recall for ftb3
 
-If you are doing some stuff that requires 100 % recall, please collect the strings from `ftb3.1.conllx` (with awk oneliner or whatever), compile them with `hfst-fst2strings` and `hfst-disjunct` that to your morphology `.hfst`. Omorfi will likely not support FTB3's all quirks e.g. the ones mentioned above. If you find mismatch that can be reasonably fixed, report a bug preferably with `git format-patch` included or use a github pull request.
+If you are doing some stuff that requires 100 % recall, please collect the
+strings from `ftb3.1.conllx` (with awk oneliner or whatever), compile them with
+`hfst-fst2strings` and `hfst-disjunct` that to your morphology `.hfst`. Omorfi
+will likely not support FTB3's all quirks e.g. the ones mentioned above. If you
+find mismatch that can be reasonably fixed, report a bug preferably with `git
+format-patch` included or use a github pull request.
 
 # Automated test runs
 

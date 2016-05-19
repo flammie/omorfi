@@ -15,8 +15,10 @@ to give you an idea of how fast the components might be.
 
 # Automated tests
 
-They are in ascending order by dates because I just >> the new results to the
-end of the file.
+
+These are in ascending order of time, since I just `>>` them to the end of this
+file. For sheet view, see [omorfi progress sheet in google
+ docs](https://docs.google.com/spreadsheets/d/1eTpUhCz0SzpRl3VYjuzI7etFB2N2bPrzyTV43ebYf6k/edit?usp=sharing)
 
 ## 2014-10-04 (manually)
 

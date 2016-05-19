@@ -8,13 +8,22 @@ date: 2016-02-08 18:23:58
 
 # Introduction #
 
-This page contains semi-automatically run test results for omorfi. The results have been achieved by running free corpora, such as Wikipedia, project gutenberg ebooks, jrc-acquis, FinnTreeBank 3.1 and Turku Dependency Treebank. The results are given for the _stable versions_ at the given date. The tokenisation is not stable so some of the mistakes are often artifacts of different tokenisation approaches, e.g., http may be a part of a URL.
+This page contains semi-automatically run test results for omorfi. The results
+have been achieved by running free corpora, such as Wikipedia, project
+gutenberg ebooks, jrc-acquis, FinnTreeBank 3.1 and Turku Dependency Treebank.
+The results are given for the _stable versions_ at the given date. The
+tokenisation is not stable so some of the mistakes are often artifacts of
+different tokenisation approaches, e.g., http may be a part of a URL.
 
 * [2013-03-19](#2013-03-19)
 * [2013-04-17](#2013-04-17)
 * [2014-10-14](#2014-10-14)
 * [2015-03-26](#2015-03-19-coverages)
 * [2015-09-04](#2015-09-04-coverages)
+
+These are in ascending order of time, since I just `>>` them to the end of this
+file. For sheet view, see [omorfi progress sheet in google
+ docs](https://docs.google.com/spreadsheets/d/1eTpUhCz0SzpRl3VYjuzI7etFB2N2bPrzyTV43ebYf6k/edit?usp=sharing)
 
 # 2013-03-19 #
 
