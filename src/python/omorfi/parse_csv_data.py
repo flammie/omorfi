@@ -17,7 +17,8 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from sys import stderr, exit
+from .error_logging import just_fail
+
 
 def parse_defaults_from_tsv(wordmap, tsv_parts):
     '''Parse default data from 2+ field tsv with new para and lemma.'''
@@ -45,14 +46,14 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
             if extra_fields[0] == 'plurale_tantum':
                 wordmap['plurale_tantum'] = extra_fields[1]
             elif extra_fields[0] == 'proper_noun_class':
-                wordmap['proper_noun_class'] =  extra_fields[1].upper()
+                wordmap['proper_noun_class'] = extra_fields[1].upper()
                 wordmap['is_proper'] = True
             elif extra_fields[0] == 'adjective_class':
-                wordmap['adjective_class'] =  extra_fields[1].upper()
+                wordmap['adjective_class'] = extra_fields[1].upper()
             elif extra_fields[0] == 'noun_class':
-                wordmap['noun_class'] =  extra_fields[1].upper() 
-            elif extra_fields[0] == 'numeral_class':
-                wordmap['numeral_class'] =  extra_fields[1].upper() 
+                wordmap['noun_class'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'numtype':
+                wordmap['numtype'] = extra_fields[1].upper()
             elif extra_fields[0] == 'possessive':
                 wordmap['possessive'] = extra_fields[1]
             elif extra_fields[0] == 'clitics':
@@ -67,7 +68,7 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
             elif extra_fields[0] == 'subcat':
                 wordmap['subcat'] = extra_fields[1].upper()
             elif extra_fields[0] == 'sem':
-                wordmap['sem'].append(extra_fields[1].upper())
+                wordmap['sem'] = extra_fields[1].upper()
             elif extra_fields[0] == 'particle':
                 wordmap['particle'] = extra_fields[1].upper()
             elif extra_fields[0] == 'pronunciation':
@@ -82,8 +83,19 @@ def parse_extras_from_tsv(wordmap, tsv_parts):
                 wordmap['pronoun'] = extra_fields[1].upper()
             elif extra_fields[0] == 'homonym':
                 wordmap['homonym'] = int(extra_fields[1])
+            elif extra_fields[0] == 'original-ktn':
+                wordmap['kotus_tn'] = int(extra_fields[1])
+            elif extra_fields[0] == 'prontype':
+                wordmap['prontype'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'abbr':
+                wordmap['abbr'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'lex':
+                wordmap['lex'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'adptype':
+                wordmap['adptype'] = extra_fields[1].upper()
+            elif extra_fields[0] == 'blacklist':
+                wordmap['blacklist'] = extra_fields[1].upper()
             else:
-                print("Unrecognised extra field", tsv_extra, "in TSV", file=stderr)
-                exit(1)
+                just_fail("Unrecognised extra field " + tsv_extra + " in TSV")
+                return None
     return wordmap
-

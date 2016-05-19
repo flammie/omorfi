@@ -3,7 +3,7 @@
 # Settings
 HFST_FLAGS=--verbose
 voikkosharedir=$(libdir)/voikko/3/
-
+BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 # {{{ Files
 # Origins
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
@@ -11,19 +11,22 @@ XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 # 
 LEXEMES=lexemes.tsv
 # lexical features
-LEMMA_JOINS=attributes/adjective-classes.tsv \
+LEMMA_JOINS=attributes/abbr.tsv \
+			attributes/adptype.tsv \
+			attributes/blacklisted.tsv \
 			attributes/boundaries.tsv \
-			attributes/noun-classes.tsv \
-			attributes/numeral-classes.tsv \
+			attributes/broken-paradigms.tsv \
+			attributes/clitics.tsv \
+			attributes/lexicalised-inflection.tsv \
+			attributes/numtype.tsv \
 			attributes/plurale-tantum.tsv \
 			attributes/possessives.tsv \
+			attributes/prontype.tsv \
 			attributes/pronunciation.tsv \
 			attributes/proper-classes.tsv \
-			attributes/particle-classes.tsv \
-			attributes/pronoun-classes.tsv \
-			attributes/symbol-classes.tsv \
 			attributes/semantic.tsv \
-			attributes/usage.tsv \
+			attributes/style.tsv \
+			attributes/symbol-classes.tsv \
 			attributes/verb-arguments.tsv
 # paradigm features
 PARADIGM_JOINS=paradigms/morphophonology.tsv \
@@ -31,27 +34,9 @@ PARADIGM_JOINS=paradigms/morphophonology.tsv \
 
 # Morphology
 # stem variants by deletion and concatenations
-STEMPARTS=continuations/acronym-stems.tsv \
-		  continuations/adjective-stems.tsv \
-		  continuations/digit-stubs.tsv \
-		  continuations/digit-stems.tsv \
-		  continuations/noun-stems.tsv \
-		  continuations/numeral-stems.tsv \
-		  continuations/particle-stems.tsv \
-		  continuations/pronoun-stems.tsv \
-		  continuations/symbol-stems.tsv \
-		  continuations/51-stems.tsv \
-		  continuations/verb-stems.tsv
+STEMPARTS=continuations/stems.tsv
 # suffixes by concatenations
-INFLECTIONS=continuations/acro-inflections.tsv \
-			continuations/adjective-inflections.tsv \
-			continuations/digit-inflections.tsv \
-			continuations/noun-inflections.tsv \
-			continuations/numeral-inflections.tsv \
-			continuations/particle-inflections.tsv \
-			continuations/pronoun-inflections.tsv \
-			continuations/symbol-inflections.tsv \
-			continuations/verb-inflections.tsv
+INFLECTIONS=continuations/inflections.tsv
 
 # }}}
 #
@@ -67,7 +52,9 @@ FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
 			   python/omorfi/twolc_formatter.py \
 			   python/omorfi/regex_formatter.py \
 			   python/omorfi/monodix_formatter.py \
-			   python/omorfi/formatters.py \
+			   python/omorfi/no_tags_formatter.py \
+			   python/omorfi/labeled_segments_formatter.py \
+			   python/omorfi/formatter.py \
 			   python/omorfi/kotus_sanalista_formatter.py
 # file formats
 GENERATOR_SCIRPTS=python/generate-lexcs.py \
@@ -99,11 +86,17 @@ SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
 # {{{Generated files
 if WANT_HFST
 GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
-				 generated/omorfi.lemmatise.hfst \
-				 generated/omorfi.tokenise.hfst \
-				 generated/omorfi.segment.hfst \
-				 generated/omorfi.hyphenate-rules.hfst
+				 generated/omorfi.tokenise.hfst
+if WANT_LEMMATISE
+GENERIC_AUTOMATA+=generated/omorfi.lemmatise.hfst
+endif
+if WANT_SEGMENTS
+GENERIC_AUTOMATA+=generated/omorfi.segment.hfst
+endif
+if WANT_HYPHENATE
+GENERIC_AUTOMATA+=generated/omorfi.hyphenate-rules.hfst
 # hyphenate-dict is unusable atm
+endif
 GENERIC_GENERATED=generated/omorfi-uppercase-any.twolc \
 				  generated/omorfi-uppercase-first.twolc \
 				  generated/omorfi-recase-any.twolc \
@@ -152,13 +145,16 @@ if WANT_OMOR
 GIELLA_AUTOMATA=generated/omorfi-giella.analyse.hfst \
 				generated/omorfi-giella.generate.hfst
 GIELLA_GENERATED=generated/omorfi-giella.lexc \
-				 generated/omorfi-giella.twolc \
 				 generated/omorfi-giella.reweight
 
 endif
-DB_GENERATED=generated/master.tsv generated/joint.tsv
+if WANT_LABELED_SEGMENTS
+LABELSEGMENT_AUTOMATA=generated/omorfi.labelsegment.hfst
+LABELSEGMENT_GENERATED=generated/omorfi-labelsegments.lexc
+endif
 
 endif # HFST
+DB_GENERATED=generated/master.tsv generated/joint.tsv
 if CAN_VISLCG3
 VISLCG3_GENERATED=generated/omorfi.cg3bin
 endif
@@ -167,8 +163,10 @@ endif
 # destnations directories for this stuff at the top of the file
 pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(APE_AUTOMATA) $(VISLCG3_GENERATED) \
-				$(FTB1_AUTOMATA)
+				$(FTB1_AUTOMATA) $(LABELSEGMENT_AUTOMATA) \
+				$(GIELLA_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
+pkgdata_DATA+=$(voikkoshare_DATA)
 pkgdata_DATA+=generated/master.tsv
 
 bin_SCRIPTS=bash/omorfi-analyse-text.sh \
@@ -178,8 +176,11 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
+			bash/omorfi.bash \
 			python/omorfi-factorise.py \
-			python/omorfi-analyse.py
+			python/omorfi-vislcg.py \
+			python/omorfi-conllu.py \
+			python/omorfi-segment.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
@@ -193,7 +194,16 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
 		   python/omorfi-factorise.py \
-		   python/omorfi-analyse.py \
+		   python/omorfi-conllu.py \
+		   python/omorfi-vislcg.py \
+		   python/omorfi-segment.py \
+		   bash/omorfi-analyse-text.sh \
+		   bash/omorfi-analyse-tokenised.sh \
+		   bash/omorfi-generate.sh \
+		   bash/omorfi-spell.sh \
+		   bash/omorfi-hyphenate.sh \
+		   bash/omorfi-segment.sh \
+		   bash/omorfi-disambiguate-text.sh \
 		   bash/validate-database.bash \
 		   vislcg3/omorfi.cg3
 
@@ -223,21 +233,22 @@ generated/timestamp:
 # database to database
 generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/python/tsvjoin.py -v -i $< \
-		-j $(srcdir)/attributes/adjective-classes.tsv \
+		-j $(srcdir)/attributes/abbr.tsv \
+		-j $(srcdir)/attributes/adptype.tsv \
+		-j $(srcdir)/attributes/blacklisted.tsv \
 		-j $(srcdir)/attributes/boundaries.tsv \
-		-j $(srcdir)/attributes/noun-classes.tsv \
-		-j $(srcdir)/attributes/numeral-classes.tsv \
+		-j $(srcdir)/attributes/broken-paradigms.tsv \
+		-j $(srcdir)/attributes/lexicalised-inflection.tsv \
+		-j $(srcdir)/attributes/numtype.tsv \
 		-j $(srcdir)/attributes/plurale-tantum.tsv \
-		-j $(srcdir)/attributes/possessives.tsv \
+		-j $(srcdir)/attributes/prontype.tsv \
 		-j $(srcdir)/attributes/pronunciation.tsv \
-		-j $(srcdir)/attributes/particle-classes.tsv \
 		-j $(srcdir)/attributes/proper-classes.tsv \
-		-j $(srcdir)/attributes/pronoun-classes.tsv \
 		-j $(srcdir)/attributes/semantic.tsv \
 		-j $(srcdir)/attributes/symbol-classes.tsv \
-		-j $(srcdir)/attributes/usage.tsv \
+		-j $(srcdir)/attributes/style.tsv \
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
-
+# 
 generated/master.tsv: generated/joint.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms/morphophonology.tsv \
@@ -253,11 +264,33 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 # database to generic
-generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
+generated/omorfi.segment.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=generic
+		$(BLACKLIST_FLAGS) \
+		-i generated/inflections.tsv -o $@ -f=none --none-segments
 
+generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
+		-i generated/inflections.tsv -o $@ -f=none --none-lemmas
+
+generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
+		-i generated/inflections.tsv -o $@ -f=none
+
+
+# segmented analysis experiment
+generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv -p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
+		-i generated/inflections.tsv -o $@ -f=labelsegments
+
+# 
 generated/omorfi-phon.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r phon -o $@
 
@@ -289,6 +322,10 @@ generated/omorfi-remove-boundaries.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r remove-boundaries -o $@
 
+generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+		-r remove-boundaries-giella -o $@
+
 generated/omorfi-between-tokens.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r between-tokens -o $@
@@ -318,11 +355,13 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=omor
+		-i generated/inflections.tsv -o $@ -f=omor \
+		$(BLACKLIST_FLAGS) \
+		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
 generated/omorfi-omor-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
-		-r rewrite-tags -o $@
+		-r rewrite-tags-omor -o $@
 
 # database to ftb3 
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
@@ -334,11 +373,12 @@ generated/omorfi-ftb3.reweight:
 generated/omorfi-ftb3.lexc: generated/master.tsv generated/stemparts.tsv generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=ftb3
 
 generated/omorfi-ftb3-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
-		-r rewrite-tags -o $@
+		-r rewrite-tags-ftb3 -o $@
 
 generated/omorfi-ftb3-lemmatise.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
@@ -349,6 +389,7 @@ generated/apertium-fin.fin.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:
@@ -369,6 +410,7 @@ generated/omorfi-giella.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
+		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=giella
 
 
@@ -431,20 +473,34 @@ generated/temporary.unbounded.hfst: generated/temporary.orth.hfst |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
 
-# lemmatisation is now built by messing with ftb3
-generated/omorfi.lemmatise.hfst: generated/temporary.ftb3.hfst generated/omorfi-ftb3-lemmatise.regex.hfst
-	$(HCOMP) $(HFST_FLAGS) $< generated/omorfi-ftb3-lemmatise.regex.hfst |\
-		$(HF2F) -f olw -o $@
+# Lemmatiser
+generated/temporary.lemmatise.hfst: generated/omorfi.lemmatise.lexc.hfst generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 generated/omorfi.lemmatise.lexc.hfst -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst -o $@
 
-# 
-generated/omorfi.segment.hfst: generated/temporary.unbounded.hfst
-	$(HINV) $< | $(HF2F) -f olw -o $@
+generated/omorfi.lemmatise.hfst: generated/temporary.lemmatise.hfst
+	$(HINV) $(HFST_FLAGS) $<  |\
+		$(HF2F) $(HFST_FLAGS) -f olw -o $@
+
+# segment
+generated/temporary.segment.hfst: generated/omorfi.segment.lexc.hfst generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 generated/omorfi.segment.lexc.hfst -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst -o $@
+
+generated/omorfi.segment.hfst: generated/temporary.segment.hfst
+	$(HINV) $(HFST_FLAGS) $<  |\
+		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # create one tape spell checker
-generated/omorfi.accept.hfst: generated/temporary.ftb3.hfst
-	$(HPR) $(HFST_FLAGS) --project=upper -i $< |\
-		$(HMIN) $(HFST_FLAGS) --encode-weights |\
-		$(HF2F) $(HFST_FLAGS) -f olw -o $@
+generated/temporary.accept.hfst: generated/omorfi.accept.lexc.hfst generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 generated/omorfi.accept.lexc.hfst -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HINV) $(HFST_FLAGS) |\
+		$(HCOMP) $(HFST_FLAGS) -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+generated/omorfi.accept.hfst: generated/temporary.accept.hfst
+	$(HF2F) $(HFST_FLAGS) -f olw $< -o $@
 
 # create basic corpus tokeniser
 # Should split at even-odd boundaries of word punct* word punct*
@@ -478,6 +534,47 @@ generated/omorfi.hyphenate-rules.hfst: generated/omorfi-hyphenate.twolc.hfst
 		$(HF2F) -f olw > $@
 
 # }}}
+#
+# {{{ GENERIC label segments
+# word-boundary huphens
+generated/temporary-labelsegments.hyphenated.hfst: generated/omorfi-labelsegments.lexc.hfst \
+	generated/omorfi-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+generated/temporary-labelsegments.boundary-weights.hfst: generated/temporary-labelsegments.hyphenated.hfst \
+		generated/omorfi-boundary.reweight
+	$(HREW) -T generated/omorfi-boundary.reweight $< -o $@ 
+
+# spelling variations
+generated/temporary-labelsegments.relaxed.hfst: generated/temporary-labelsegments.boundary-weights.hfst \
+	generated/omorfi-sh.regex.hfst \
+	generated/omorfi-zh.regex.hfst \
+	generated/omorfi-orthographic-variations.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-orthographic-variations.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
+		$(HSUB) $(HFST_FLAGS) -f š -T generated/omorfi-sh.regex.hfst |\
+		$(HSUB) $(HFST_FLAGS) -f ž -T generated/omorfi-zh.regex.hfst -o $@
+
+# case variations
+generated/temporary-labelsegments.orth.hfst: generated/temporary-labelsegments.relaxed.hfst \
+	generated/omorfi-uppercase-first.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-uppercase-first.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+# remove remaining morph boundaries at this point
+generated/temporary-labelsegments.unbounded.hfst: generated/temporary-labelsegments.orth.hfst |\
+	generated/omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+
+# 
+generated/omorfi.labelsegment.hfst: generated/temporary-labelsegments.unbounded.hfst
+	$(HINV) $< | $(HF2F) -f olw -o $@
+
+# }}}
+#
 # {{{FTB3 compilation
 
 # word-boundary huphens
@@ -1084,6 +1181,20 @@ generated/fin-automorf.hfst: generated/apertium-fin.fin.lexc.hfst \
 		$(HINV) $(HFST_FLAGS) -o $@
 # }}}
 #
+# {{{Giella comp
+generated/temporary-giella.analyse.hfst: generated/omorfi-giella.lexc.hfst \
+	generated/omorfi-hyphens.twolc.hfst generated/omorfi-remove-boundaries-giella.regex.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HCOMP) $(HFST_FLAGS) generated/omorfi-remove-boundaries-giella.regex.hfst |\
+		$(HINV) $(HFST_FLAGS) -o $@
+
+generated/omorfi-giella.analyse.hfst: generated/temporary-giella.analyse.hfst
+	$(HF2F) $(HFST_FLAGS) -f olw -i $< -o $@
+
+generated/omorfi-giella.generate.hfst: generated/temporary-giella.analyse.hfst
+	$(HINV) $(HFST_FLAGS) -i $< |\
+		$(HF2F) -f olw -o $@
+# }}}
 # {{{SPELL-CHECKING
 # voikko speller HFST beta targets'
 generated/errmodel.edit-distance.txt: python/generate-edit-distance.py
@@ -1119,6 +1230,7 @@ generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 endif
 # }}}
 
+# {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \
 			 generated/ftb1-back_minen_omorfi.hfst \
@@ -1184,4 +1296,7 @@ CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 clean-local:
 	rm -rf generated/ keys.*.tsv missing-keys.*.tsv \
 		voikko/*hfst
+
+# }}}
+#
 # vim: set foldmethod=marker:

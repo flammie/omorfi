@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
 
-from sys import stdin, stdout
-from argparse import ArgumentParser
-from omorfi.omorfi import Omorfi
 import re
+from argparse import ArgumentParser
+from sys import stdin, stdout
+
+from omorfi.omorfi import Omorfi
+
 
 def main():
     """Preprocess text for moses factored modeling."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
-    a.add_argument('-o', '--output', metavar="OUTFILE", 
-            help="print factors into OUTFILE")
+                   help="print verbosely while processing")
+    a.add_argument('-o', '--output', metavar="OUTFILE",
+                   help="print factors into OUTFILE")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -54,16 +56,16 @@ def main():
         for surf in surfs:
             anals = omorfi.analyse(surf)
             segments = omorfi.segment(surf)
-            pos_matches = re_pos.finditer(anals[0].output)
+            pos_matches = re_pos.finditer(anals[0][0])
             pos = "UNK"
             mrds = []
             lemmas = []
             for pm in pos_matches:
                 pos = pm.group(1)
-            lemma_matches = re_lemma.finditer(anals[0].output)
+            lemma_matches = re_lemma.finditer(anals[0][0])
             for lm in lemma_matches:
                 lemmas += [lm.group(1)]
-            mrd_matches = re_mrd.finditer(anals[0].output)
+            mrd_matches = re_mrd.finditer(anals[0][0])
             for mm in mrd_matches:
                 if mm.group(1) == 'WORD_ID':
                     mrds = []
@@ -71,16 +73,16 @@ def main():
                     pass
                 else:
                     mrds += [mm.group(2)]
-            stemfixes = segments[0].output[segments[0].output.rfind("{STUB}"):].replace("{STUB}", "")
+            stemfixes = segments[0][0][
+                segments[0][0].rfind("{STUB}"):].replace("{STUB}", "")
             if '{' in stemfixes:
                 morphs = stemfixes[stemfixes.find("{"):].replace("{MB}", ".")
             else:
                 morphs = '0'
             print(surf, '+'.join(lemmas), pos, '.'.join(mrds),
-                    morphs, sep='|', end=' ', file=outfile)
+                  morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)
     exit(0)
 
 if __name__ == "__main__":
     main()
-

@@ -5,7 +5,7 @@ This script generates twolc files from database data.
 """
 
 
-# Author: Omorfi contributors, 2014 
+# Author: Omorfi contributors, 2014
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -21,53 +21,55 @@ This script generates twolc files from database data.
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
+from sys import exit
 
+from omorfi.ftb3_formatter import Ftb3Formatter
+from omorfi.omor_formatter import OmorFormatter
 from omorfi.regex_formatter import format_rules_regex
+
 
 # standard UI stuff
 
+
 def main():
     # initialise argument parser
-    ap = argparse.ArgumentParser(description="Generate Xerox twolcs for Finnish")
+    ap = argparse.ArgumentParser(
+        description="Generate Xerox twolcs for Finnish")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-            default=False,
-            help="do not print output to stdout while processing")
+                    default=False,
+                    help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
-            help="print each step to stdout while processing")
+                    help="print each step to stdout while processing")
     ap.add_argument("--output", "-o", type=argparse.FileType("w"),
-            required=True, metavar="OFILE", help="write output to OFILE")
+                    required=True, metavar="OFILE", help="write output to OFILE")
     ap.add_argument("--ruleset", "-r", required=True, action="store",
-            metavar="RULES", help="compile RULES ruleset")
+                    metavar="RULES", help="compile RULES ruleset")
 
-    def FormatArgType(v):
-        baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google"]
-        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
-        parts = v.split('+')
-        if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
-        for ex in parts[1:]:
-            if ex not in extras:
-                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
-        return v
     ap.add_argument("--format", "-f", action="store", default="omor",
-            help="use specific output format for twolc data",
-            type=FormatArgType)
+                    help="use specific output format for twolc data",
+                    choices=["omor", "apertium",
+                             "giella", "ftb3", "segments", "google"])
+
     args = ap.parse_args()
     # check args
+    formatter = None
+    if args.format == "omor":
+        formatter = OmorFormatter(args.verbose)
+    elif args.format == "ftb3":
+        formatter = Ftb3Formatter(args.verbose)
+    else:
+        print("Not implemented yet format", args.format)
+        exit(1)
     # setup files
-    if args.verbose: 
+    if args.verbose:
         print("Writing everything to", args.output.name)
     # print definitions to rootfile
     if args.verbose:
         print("Creating Rules")
-    print(format_rules_regex(args.format, args.ruleset), file=args.output)
+    print(format_rules_regex(formatter, args.ruleset), file=args.output)
     exit(0)
 
 
 if __name__ == "__main__":
     main()
-

@@ -10,16 +10,18 @@ the standard shell scripts or java interface.
 """
 
 
-import libhfst
 from argparse import ArgumentParser
-
-from sys import stderr, stdin
-from os import getenv, access, F_OK
 from glob import glob
+from os import F_OK, access, getenv
+from sys import stderr, stdin
+
+import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
 
+
 class Omorfi:
+
     """
     An object holding omorfi automata for all the functions of omorfi.
 
@@ -57,6 +59,7 @@ class Omorfi:
     lemmatisers = dict()
     hyphenators = dict()
     segmenters = dict()
+    labelsegmenters = dict()
     acceptors = dict()
     can_lowercase = True
     can_titlecase = True
@@ -65,15 +68,16 @@ class Omorfi:
     _verbosity = False
 
     _stdpaths = ['/usr/local/share/hfst/fi/',
-            '/usr/share/hfst/fi/',
-            '/usr/local/share/omorfi/',
-            '/usr/share/omorfi/']
+                 '/usr/share/hfst/fi/',
+                 '/usr/local/share/omorfi/',
+                 '/usr/share/omorfi/',
+                 './', 'generated/', 'src/generated/', '../src/generated/']
 
-    def __init__(this, verbosity = False):
+    def __init__(self, verbosity=False):
         """Construct Omorfi with given verbosity for printouts."""
-        this._verbosity = verbosity
+        self._verbosity = verbosity
 
-    def load_filename(this, path, **include):
+    def load_filename(self, path, **include):
         """Load omorfi automaton from filename and guess its use.
 
         A file name should consist of three parts separated by full stop.
@@ -85,68 +89,75 @@ class Omorfi:
         The named arguments can include a name of automaton type as name,
         and truth value as value, for types of automata allowed to load.
         By default, the names `analyse`, `generate` and `segment` are loaded.
-        Names not included are defaulted to False. E.g., 
+        Names not included are defaulted to False. E.g.,
         `omorfi.load_filename(fn, analyse=True)`
         will only load file named fn if it can be identified as omorfi
         analyser. This is best used in conjunction with omorfi.load_from_dir.
         """
-        trans = None
         if len(include) == 0:
             include['analyse'] = True
             include['generate'] = True
             include['segment'] = True
             include['accept'] = True
         for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
-                'hyphenate', 'segment']:
-            if not ttype in include:
+                      'hyphenate', 'segment', 'labelsegment']:
+            if ttype not in include:
                 include[ttype] = False
-        if this._verbosity:
-            print('Loading file', path)
+        his = None
+        if self._verbosity:
+            print('Opening file', path)
         if access(path, F_OK):
-            trans = libhfst.HfstTransducer(libhfst.HfstInputStream(path))
+            his = libhfst.HfstInputStream(path)
         else:
             # FIXME: should fail
-            if this._verbosity:
+            if self._verbosity:
                 print('No access to ', path, file=stderr)
             pass
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
-        if len(parts) < 2:
-            if this._verbosity:
+        if len(parts) != 2:
+            if self._verbosity:
                 print('not loaded', path)
+        elif not parts[0].startswith('omorfi'):
+            if self._verbosity:
+                print('not omorfi', path)
         elif parts[1] == 'analyse' and include['analyse']:
-            if this._verbosity:
+            if self._verbosity:
                 print('analyser', parts[0])
-            this.analysers[parts[0]] = trans
+            self.analysers[parts[0]] = his.read()
         elif parts[1] == 'generate' and include['generate']:
-            if this._verbosity:
+            if self._verbosity:
                 print('generator', parts[0])
-            this.generators[parts[0]] = trans
+            self.generators[parts[0]] = his.read()
         elif parts[1] == 'accept' and include['accept']:
-            if this._verbosity:
+            if self._verbosity:
                 print('acceptor', parts[0])
-            this.acceptors[parts[0]] = trans
+            self.acceptors[parts[0]] = his.read()
         elif parts[1] == 'tokenise' and include['tokenise']:
-            if this._verbosity:
+            if self._verbosity:
                 print('tokeniser', parts[0])
-            this.tokenisers[parts[0]] = trans
+            self.tokenisers[parts[0]] = his.read()
         elif parts[1] == 'lemmatise' and include['lemmatise']:
-            if this._verbosity:
+            if self._verbosity:
                 print('lemmatiser', parts[0])
-            this.lemmatisers[parts[0]] = trans
+            self.lemmatisers[parts[0]] = his.read()
         elif parts[1] == 'hyphenate' and include['hyphenate']:
-            if this._verbosity:
+            if self._verbosity:
                 print('hyphenator', parts[0])
-            this.hyphenators[parts[0]] = trans
+            self.hyphenators[parts[0]] = his.read()
         elif parts[1] == 'segment' and include['segment']:
-            if this._verbosity:
+            if self._verbosity:
                 print('segmenter', parts[0])
-            this.segmenters[parts[0]] = trans
-        elif this._verbosity:
+            self.segmenters[parts[0]] = his.read()
+        elif parts[1] == 'labelsegment' and include['labelsegment']:
+            if self._verbosity:
+                print('labelsegmenter', parts[0])
+            self.labelsegmenters[parts[0]] = his.read()
+        elif self._verbosity:
             print('skipped', parts)
 
-    def load_from_dir(this, path=None, **include):
+    def load_from_dir(self, path=None, **include):
         """Load omorfi automata from given or known locations.
-        
+
         If path is given it should point to directory of automata,
         otherwise standard installation paths are tried. Currently standard
         linux install paths are all globbed in following order:
@@ -163,59 +174,124 @@ class Omorfi:
         for their usage.
 
         They keyword args can be used to limit loading of automata. The name
-        is analyser type and value is True. 
+        is analyser type and value is True.
         """
         homepaths = []
-        res = None
         if getenv('HOME'):
             home = getenv('HOME')
             homepaths = [home + '/.hfst/fi/',
-                          home + '/.omorfi/' ]
+                         home + '/.omorfi/']
         loadable = []
         if path:
-            if this._verbosity:
+            if self._verbosity:
                 print('adding', path + '/*.hfst')
             loadable = glob(path + '/*.hfst')
         else:
-            for sp in this._stdpaths + homepaths:
-                if this._verbosity:
+            for sp in self._stdpaths + homepaths:
+                if self._verbosity:
                     print('adding', sp + '/*.hfst')
                 loadable += glob(sp + '/*.hfst')
         for filename in loadable:
-            this.load_filename(filename, **include)
+            self.load_filename(filename, **include)
 
-    def _find_retokens(this, token):
-        if this.accept(token):
-            return [token]
-        if this.can_lowercase and this.accept(token.lower()):
-            return [token.lower()]
-        if this.can_uppercase and this.accept(token.upper()):
-            return [token.upper()]
-        if token[-1] in fin_punct_trailing and this.accept(token[:-1]):
-            return [token[:-1], token[-1]]
-        if token[0] in fin_punct_leading and this.accept(token[1:]):
-            return [token[0], token[1:]]
-        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing and this.accept(token[1:-1]):
-            return [token[0], token[1:-1], token[-1]]
-        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and this.accept(token[:-2]):
-            return [token[:-2], token[-2], token[-1]]
-        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and this.accept(token[:-3]):
-            return [token[:-3], token[-3], token[-2], token[-1]]
-        return [token]
+    def _find_retoken_recase(self, token):
+        if self.accept(token):
+            return (token, "ORIGINALCASE")
+        if self.can_lowercase and self.accept(token.lower()):
+            return (token.lower(), "LOWERCASED=" + token)
+        if self.can_uppercase and self.accept(token.upper()):
+            return (token.upper(), "UPPERCASED=" + token)
+        if len(token) > 1:
+            if self.can_titlecase and self.accept(token[0].upper() + token[1:]):
+                return (token[0].upper() + token[1:], "TITLECASED=" + token)
+            if self.can_detitlecase and self.accept(token[0].lower() + token[1:]):
+                return (token[0].lower() + token[1:], "DETITLECASED=" + token)
+        return False
 
+    def _find_retokens(self, token):
+        retoken = self._find_retoken_recase(token)
+        if retoken:
+            return [retoken]
+        # Word.
+        if token[-1] in fin_punct_trailing:
+            retoken = self._find_retoken_recase(token[:-1])
+            if retoken:
+                return[(retoken[0], retoken[1] + "|SpaceAfter=No"),
+                       (token[-1], "SpaceBefore=No")]
+        # -Word
+        if token[0] in fin_punct_leading:
+            retoken = self._find_retoken_recase(token[1:])
+            if retoken:
+                return [(token[0], "SpaceAfter=No"),
+                        (retoken[0], retoken[1] + "|SpaceBefore=No")]
+        # "Word"
+        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing:
+            retoken = self._find_retoken_recase(token[1:-1])
+            if retoken:
+                return [
+                    (token[0], "SpaceAfter=No"),
+                    (retoken[0], retoken[1] + "|SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # word." or word",
+        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing:
+            retoken = self._find_retoken_recase(token[:-2])
+            if retoken:
+                return [
+                    (retoken[0], retoken[1] + "|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # word.",
+        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing:
+            retoken = self._find_retoken_recase(token[:-3])
+            if retoken:
+                return [
+                    (retoken[0], retoken[1] + "|SpaceAfter=No"),
+                    (token[-3], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # "word."
+        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[0] in fin_punct_leading:
+            retoken = self._find_retoken_recase(token[1:-2])
+            if retoken:
+                return [
+                    (token[0], "SpaceAfter=No"),
+                    (retoken[0], retoken[1] + "|SpaceBefore=No|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # "word.",
+        if len(token) > 4 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and token[0] in fin_punct_leading:
+            retoken = self._find_retoken_recase(token[1:-3])
+            if retoken:
+                return [
+                    (token[0], "SpaceAfter=No"),
+                    (retoken[0], retoken[1] + "|SpaceBefore=No|SpaceAfter=No"),
+                    (token[-3], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-2], "SpaceBefore=No|SpaceAfter=No"),
+                    (token[-1], "SpaceBefore=No")]
+        # ...non-word...
+        pretokens = []
+        posttokens = []
+        while len(token) > 1 and token[-1] in fin_punct_trailing:
+            posttokens += [(token[-1], "SpaceBefore=No")]
+            token = token[:-1]
+        while len(token) > 1 and token[0] in fin_punct_leading:
+            pretokens += [(token[0], "SpaceAfter=No")]
+            token = token[1:]
+        return pretokens + \
+            [(token, "SpaceBefore=No|SpaceAfter=No")] + \
+            posttokens
 
-
-    def _retokenise(this, tokens):
+    def _retokenise(self, tokens):
         retokens = []
         for token in tokens:
-            for retoken in this._find_retokens(token):
+            for retoken in self._find_retokens(token):
                 retokens.append(retoken)
         return retokens
 
-    def _tokenise(this, line, automaton):
+    def _tokenise(self, line, automaton):
         return None
 
-    def tokenise(this, line):
+    def tokenise(self, line):
         """Perform tokenisation with loaded tokeniser if any, or `split()`.
 
         If tokeniser is available, it is applied to input line and if
@@ -228,47 +304,56 @@ class Omorfi:
         token using hard-coded list of extra splits.
         """
         tokens = None
-        if 'omorfi' in this.tokenisers:
-            tokens = this._tokenise(line, 'omorfi')
+        if 'omorfi' in self.tokenisers:
+            tokens = self._tokenise(line, 'omorfi')
         if not tokens:
-            tokens = this._retokenise(line.split())
+            tokens = self._retokenise(line.split())
         return tokens
 
-    def _analyse(this, token, automaton):
-        res = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token))
-        if len(token) > 2 and token[0].islower() and this.can_titlecase:
-            tctoken = token[0].upper() + token[1:]
-            if tctoken != token:
-                tcres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(tctoken))
+    def _analyse_str(self, s, automaton):
+        token = (s, "")
+        res = self._analyse_token(token, automaton)
+        if len(s) > 2 and s[0].islower() and self.can_titlecase:
+            tcs = s[0].upper() + s[1:]
+            if s != tcs:
+                tctoken = (tcs, 'TitleCased=' + s)
+                tcres = self._analyse_token(tctoken, automaton)
                 for r in tcres:
-                    r.output = r.output + '[CASECHANGE=TITLECASED]'
+                    r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
                 res = res + tcres
-        if len(token) > 2 and token[0].isupper() and this.can_detitlecase:
-            dttoken = token[0].lower() + token[1:]
-            if dttoken != token:
-                dtres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(dttoken))
+        if len(token) > 2 and token[0].isupper() and self.can_detitlecase:
+            dts = s[0].lower() + s[1:]
+            if dts != s:
+                dttoken = (dts, "DetitleCased=" + s)
+                dtres = self._analyse_token(dttoken, automaton)
                 for r in dtres:
-                    r.output = r.output + '[CASECHANGE=DETITLECASED]'
+                    r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
                 res = res + dtres
-        if not token.isupper() and this.can_uppercase:
-            uptoken = token.upper()
-            if token != uptoken:
-                upres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(uptoken))
+        if not s.isupper() and self.can_uppercase:
+            ups = s.upper()
+            if s != ups:
+                uptoken = (ups, "UpperCased=" + s)
+                upres = self._analyse_token(uptoken, automaton)
                 for r in upres:
-                    r.output = r.output + '[CASECHANGE=UPPERCASED]'
+                    r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
                 res = res + upres
-        if not token.islower() and this.can_lowercase:
-            lowtoken = token.lower()
-            if token !=  lowtoken:
-                lowres = libhfst.detokenize_paths(this.analysers[automaton].lookup_fd(token.lower()))
+        if not s.islower() and self.can_lowercase:
+            lows = s.lower()
+            if s != lows:
+                lowtoken = (lows, "LowerCased=" + s)
+                lowres = self._analyse_token(lowtoken, automaton)
                 for r in lowres:
-                    r.output = r.output + '[CASECHANGE=LOWERCASED]'
+                    r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
                 res += lowres
-        for r in res:
-            r.output = r.output + '[WEIGHT=%f]' %(r.weight)
         return res
 
-    def analyse(this, token):
+    def _analyse_token(self, token, automaton):
+        res = self.analysers[automaton].lookup(token[0])
+        for r in res:
+            r = (r[0] + '[WEIGHT=%f]' % (r[1]), r[1], token[1])
+        return res
+
+    def analyse(self, token):
         """Perform a simple morphological analysis lookup.
 
         If can_titlecase does not evaluate to False,
@@ -278,95 +363,107 @@ class Omorfi:
         the analysis will also be performed on all uppercase variant.
         If can_lowercase evaluates to not False,
         the analysis will also be performed on all lowercase variant.
-        
+
         The analyses with case mangling will have an additional element to them
         identifying the casing.
         """
         anals = None
-        if 'default' in this.analysers:
-            anals = this._analyse(token, 'default')
-        if not anals and 'omorfi-omor' in this.analysers:
-            anals = this._analyse(token, 'omorfi-omor')
+        if 'default' in self.analysers:
+            if isinstance(token, str):
+                anals = self._analyse_str(token, 'default')
+            else:
+                anals = self._analyse_token(token, 'default')
+        if not anals and 'omorfi-omor' in self.analysers:
+            if isinstance(token, str):
+                anals = self._analyse_str(token, 'omorfi-omor')
+                if not anals:
+                    anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                            (token), float('inf'), "Unknown")
+                    anals = [anal]
+            else:
+                anals = self._analyse_token(token, 'omorfi-omor')
+                if not anals:
+                    anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                            (token[0]), float('inf'), "Unknown")
+                    anals = [anal]
+        if not anals and len(self.analysers):
+            anals = self._analyse(token, self.analysers.keys[0])
             if not anals:
-                class FakeAnal():
-                    pass
-                anal = FakeAnal()
-                anal.output = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token)
-                anal.weight = float('inf')
-                anals = [anal]
-        if not anals and len(this.analysers):
-            anals = this._analyse(token, this.analysers.keys[0])
-            if not anals:
-                class FakeAnal():
-                    pass
-                anal = FakeAnal()
-                anal.output = '[WORD_ID=%s]' % (token) + '[GUESS=UNKNOWN][WEIGHT=inf]'
-                anal.weight = float('inf')
+                anal = ('[WORD_ID=%s]' % (token[0]) + '[GUESS=UNKNOWN][WEIGHT=inf]',
+                        float('inf'))
                 anals = [anal]
         return anals
 
-    def _lemmatise(this, token, automaton):
-        res = libhfst.detokenize_paths(this.lemmatisers[automaton].lookup_fd(token))
+    def _lemmatise(self, token, automaton):
+        res = self.lemmatisers[automaton].lookup(token)
         return res
 
-    def lemmatise(this, token):
+    def lemmatise(self, token):
         lemmas = None
-        if 'default' in this.lemmatisers:
-            lemmas = this._lemmatise(token, 'default')
-        if not lemmas and 'omorfi' in this.lemmatisers:
-            lemmas = this._lemmatise(token, 'omorfi')
+        if 'default' in self.lemmatisers:
+            lemmas = self._lemmatise(token, 'default')
+        if not lemmas and 'omorfi' in self.lemmatisers:
+            lemmas = self._lemmatise(token, 'omorfi')
             if not lemmas:
-                class FakeLemma():
-                    pass
-                lemma = FakeLemma()
-                lemma.output = token
-                lemma.weight = float('inf')
+                lemma = (token, float('inf'))
                 lemmas = [lemma]
         return lemmas
 
-    def _segment(this, token, automaton):
-        res = libhfst.detokenize_paths(this.segmenters[automaton].lookup_fd(token))
+    def _segment(self, token, automaton):
+        res = self.segmenters[automaton].lookup(token)
         return res
 
-    def segment(this, token):
+    def segment(self, token):
         segments = None
-        if 'default' in this.segmenters:
-            segments = this._segment(token, 'default')
-        if not segments and 'omorfi' in this.segmenters:
-            segments = this._segment(token, 'omorfi')
+        if 'default' in self.segmenters:
+            segments = self._segment(token, 'default')
+        if not segments and 'omorfi' in self.segmenters:
+            segments = self._segment(token, 'omorfi')
             if not segments:
-                class FakeSegment():
-                    pass
-                segment = FakeSegment()
-                segment.output = token
-                segment.weight = float('inf')
+                segment = (token, float('inf'))
                 segments = [segment]
         return segments
 
-    def _accept(this, token, automaton):
-        res = libhfst.detokenize_paths(this.acceptors[automaton].lookup_fd(token))
+    def _labelsegment(self, token, automaton):
+        res = self.labelsegmenters[automaton].lookup(token)
         return res
 
-    def accept(this, token):
+    def labelsegment(self, token):
+        labelsegments = None
+        if 'default' in self.labelsegmenters:
+            labelsegments = self._labelsegment(token, 'default')
+        if not labelsegments and 'omorfi' in self.labelsegmenters:
+            labelsegments = self._labelsegment(token, 'omorfi')
+            if not labelsegments:
+                labelsegment = (token, float('inf'))
+                labelsegments = [labelsegment]
+        return labelsegments
+
+    def _accept(self, token, automaton):
+        res = self.acceptors[automaton].lookup(token)
+        return res
+
+    def accept(self, token):
         accept = False
         accepts = None
-        if 'default' in this.acceptors:
-            accepts = this._accept(token, 'default')
-        if not accepts and 'omorfi' in this.acceptors:
-            accepts = this._accept(token, 'omorfi')
+        if 'default' in self.acceptors:
+            accepts = self._accept(token, 'default')
+        if not accepts and 'omorfi' in self.acceptors:
+            accepts = self._accept(token, 'omorfi')
         if accepts:
             accept = True
         return accept
+
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
     a.add_argument('-f', '--fsa', metavar='FSAPATH',
-            help="Path to directory of HFST format automata")
+                   help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
-            dest="infile", help="source of analysis data")
+                   dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
-            help="print verbosely while processing")
+                   help="print verbosely while processing")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -386,7 +483,7 @@ def main():
             anals = omorfi.analyse(surf)
             print(surf, end='')
             for anal in anals:
-                print("\t", anal.output, sep='', end='')
+                print("\t", anal[0], sep='', end='')
             print()
     exit(0)
 

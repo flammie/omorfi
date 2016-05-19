@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20150904], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20160515], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20150904
+VERSION=20160515
 
 # Options
 AC_ARG_WITH([hfst],
@@ -23,6 +23,42 @@ AC_ARG_ENABLE([voikko],
                               [enable_voikko=yes])
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno])
 
+# main tagset switches
+AC_ARG_ENABLE([omor],
+              [AS_HELP_STRING([--enable-omor],
+                              [generate omor automata @<:@default=enable@:>@])],
+                             [enable_omor=$enableval],
+                             [enable_omor=yes])
+AM_CONDITIONAL([WANT_OMOR], [test "x$enable_omor" = xyes])
+AC_ARG_ENABLE([omor_paradigms],
+              [AS_HELP_STRING([--enable-omor-paradigms],
+                              [include new_para feature in omors @<:@default=disable@:>@])],
+                              [enable_omor_paradigms=$enableval],
+                              [enable_omor_paradigms=no])
+AS_IF([test x$enable_omor_paradigms != xno], 
+      [AC_SUBST([OMORPARAFLAG], ["--omor-new-para"])])
+AC_ARG_ENABLE([omor_allomorphs],
+              [AS_HELP_STRING([--enable-omor-allomorphs],
+                              [include allomorph feature in omors @<:@default=disable@:>@])],
+                              [enable_omor_allomorphs=$enableval],
+                              [enable_omor_allomorphs=no])
+AS_IF([test x$enable_omor_allomorphs != xno],
+      [AC_SUBST([OMORALLOFLAG], ["--omor-allo"])])
+AC_ARG_ENABLE([omor_proper_classes],
+              [AS_HELP_STRING([--enable-omor-proper-classes],
+                              [include proper feature in omors @<:@default=enable@:>@])],
+                              [enable_omor_proper_classes=$enableval],
+                              [enable_omor_proper_classes=yes])
+AS_IF([test enable_omor_proper_classes != xno],
+      [AC_SUBST([OMORPROPFLAG], ["--omor-props"])])
+AC_ARG_ENABLE([omor_semantics],
+              [AS_HELP_STRING([--enable-omor-semantics],
+                              [include sem feature in omors @<:@default=enable@:>@])],
+                              [enable_omor_semantics=$enableval],
+                              [enable_omor_semantics=yes])
+AS_IF([test x$enable_omor_semantics != xno],
+      [AC_SUBST([OMORSEMFLAG], ["--omor-sem"])])
+
 # generic tagset switch to override (for lexc serialisation)
 AC_ARG_ENABLE([ftb1],
               [AS_HELP_STRING([--enable-ftb1],
@@ -32,29 +68,52 @@ AC_ARG_ENABLE([ftb1],
 AM_CONDITIONAL([WANT_FTB1], [test "x$enable_ftb1" = xyes])
 AC_ARG_ENABLE([ftb3],
               [AS_HELP_STRING([--enable-ftb3],
-                              [generate ftb3 automata @<:@default=enable@:>@])],
+                              [generate ftb3 automata @<:@default=disable@:>@])],
                              [enable_ftb3=$enableval],
-                             [enable_ftb3=yes])
+                             [enable_ftb3=no])
 AM_CONDITIONAL([WANT_FTB3], [test "x$enable_ftb3" = xyes])
-AC_ARG_ENABLE([omor],
-              [AS_HELP_STRING([--enable-omor],
-                              [generate omor automata @<:@default=enable@:>@])],
-                             [enable_omor=$enableval],
-                             [enable_omor=yes])
-AM_CONDITIONAL([WANT_OMOR], [test "x$enable_omor" = xyes])
 AC_ARG_ENABLE([apertium],
               [AS_HELP_STRING([--enable-apertium],
                               [generate apertium automata @<:@default=enable@:>@])],
                              [enable_apertium=$enableval],
-                             [enable_apertium=yes])
+                             [enable_apertium=no])
 AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" = xyes])
 AC_ARG_ENABLE([giella],
               [AS_HELP_STRING([--enable-giella],
-                              [generate giella automata @<:@default=enable@:>@])],
+                              [generate giella automata @<:@default=disable@:>@])],
                              [enable_giella=$enableval],
-                             [enable_giella=yes])
+                             [enable_giella=no])
 AM_CONDITIONAL([WANT_GIELLA], [test "x$enable_giella" = xyes])
+AC_ARG_ENABLE([labeled_segments],
+              [AS_HELP_STRING([--enable-labeled-segments],
+                              [generate labeled segmenter @<:@default=disable@:>@])],
+                             [enable_labeled_segments=$enableval],
+                             [enable_labeled_segments=no])
+AM_CONDITIONAL([WANT_LABELED_SEGMENTS], [test "x$enable_labeled_segments" = xyes])
 
+
+# applications
+# segmenter currently based on FTB 3
+AC_ARG_ENABLE([lemmatiser],
+              [AS_HELP_STRING([--enable-lemmatiser],
+                              [generate lemmatiser @<:@default=disable@:>@])],
+                             [enable_lemmatiser=$enableval],
+                             [enable_lemmatiser=no])
+AM_CONDITIONAL([WANT_LEMMATISE], [test x$enable_lemmatiser != xno])
+AC_ARG_ENABLE([segmenter],
+              [AS_HELP_STRING([--enable-segmenter],
+                              [generate segmenter @<:@default=disable@:>@])],
+                             [enable_segmenter=$enableval],
+                             [enable_segmenter=no])
+AM_CONDITIONAL([WANT_SEGMENTS], [test x$enable_segmenter != xno])
+AC_ARG_ENABLE([hyphenator],
+              [AS_HELP_STRING([--enable-hyphenator],
+                              [generate hyphenator @<:@default=disable@:>@])],
+                             [enable_hyphenator=$enableval],
+                             [enable_hyphenator=no])
+AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
+
+# run some things on clusters
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
             [with_pbs_mail=$withval],
@@ -71,7 +130,6 @@ AC_ARG_ENABLE([big-tests],
                              [big_tests=$enableval],
                              [big_tests=no])
 AM_CONDITIONAL([WANT_BIG_TESTS], [test "x$big_tests" != xno])
-
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
 AC_MSG_RESULT([40 seconds to mars])
@@ -122,9 +180,9 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HIX], [hfst-conjunct], [no])
        AS_IF([test "x$HIX" = "xno"],
              [AC_MSG_ERROR([hfst-conjunct is needed])])
-       AC_PATH_PROG([HPROC], [hfst-proc], [no])
+       AC_PATH_PROG([HPROC], [hfst-proc hfst-apertium-proc], [no])
        AS_IF([test "x$HPROC" = "xno"],
-             [AC_MSG_ERROR([hfst-proc is needed for testing])])
+             [AC_MSG_WARN([hfst-proc is needed for some corpus analysis])])
        AC_PATH_PROG([HREP], [hfst-repeat], [no])
        AS_IF([test "x$HREP" = xno],
              [AC_MSG_ERROR([hfst-repeat is needed for edit distance repetition])])
@@ -170,6 +228,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
     AC_SUBST([HIX], $with_hfst/hfst-conjunct)
     AC_SUBST([HSPL], $with_hfst/hfst-split)
     AC_SUBST([HPROC], $with_hfst/hfst-proc)
+    AC_SUBST([HAPROC], $with_hfst/hfst-apertium-proc)
     AC_SUBST([HREP], $with_hfst/hfst-repeat)
     AC_SUBST([HCAT], $with_hfst/hfst-concatenate)
     AC_SUBST([HUN], $with_hfst/hfst-disjunct)
@@ -222,20 +281,7 @@ AC_PATH_PROG([SBATCH], [sbatch], [false])
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
-AC_CONFIG_FILES([src/bash/omorfi-analyse-text.sh],
-                [chmod +x src/bash/omorfi-analyse-text.sh])
-AC_CONFIG_FILES([src/bash/omorfi-disambiguate-text.sh],
-                [chmod +x src/bash/omorfi-disambiguate-text.sh])
-AC_CONFIG_FILES([src/bash/omorfi-segment.sh],
-                [chmod +x src/bash/omorfi-segment.sh])
-AC_CONFIG_FILES([src/bash/omorfi-generate.sh],
-                [chmod +x src/bash/omorfi-generate.sh])
-AC_CONFIG_FILES([src/bash/omorfi-hyphenate.sh],
-                [chmod +x src/bash/omorfi-hyphenate.sh])
-AC_CONFIG_FILES([src/bash/omorfi-spell.sh],
-                [chmod +x src/bash/omorfi-spell.sh])
-AC_CONFIG_FILES([src/bash/omorfi-analyse-tokenised.sh],
-                [chmod +x src/bash/omorfi-analyse-tokenised.sh])
+AC_CONFIG_FILES([src/bash/omorfi.bash])
 AC_CONFIG_FILES([test/coverage-europarl.sh],
                 [chmod +x test/coverage-europarl.sh])
 AC_CONFIG_FILES([test/coverage-fiwiki.sh],
@@ -246,10 +292,22 @@ AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
                 [chmod +x test/coverage-jrc-acquis.sh])
 AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
                 [chmod +x test/coverage-ftb-3.1.sh])
+AC_CONFIG_FILES([test/coverage-fi-ud.sh],
+                [chmod +x test/coverage-fi-ud.sh])
+AC_CONFIG_FILES([test/coverage-fi-ftb-ud.sh],
+                [chmod +x test/coverage-fi-ftb-ud.sh])
+AC_CONFIG_FILES([test/coverage-tatoeba.bash],
+                [chmod +x test/coverage-tatoeba.bash])
+AC_CONFIG_FILES([test/coverage-opensubtitles.bash],
+                [chmod +x test/coverage-opensubtitles.bash])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
                 [chmod +x test/faithfulness-ftb-3.1.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
                 [chmod +x test/faithfulness-ftb-3.1-quick.sh])
+AC_CONFIG_FILES([test/conllu-fi-ud-test.sh],
+                [chmod +x test/conllu-fi-ud-test.sh])
+AC_CONFIG_FILES([test/conllu-fi-ftb-ud-test.sh],
+                [chmod +x test/conllu-fi-ftb-ud-test.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.sh],
@@ -265,12 +323,17 @@ cat <<EOF
 Configured $PACKAGE_STRING:
 =======
 * Analysers: $with_hfst
-    * OMOR $enable_omor
+    * OMOR $enable_omor $OMORPROPFLAG $OMORALLOFLAG $OMORPARAFLAG $OMORSEMFLAG
     * FTB3.1 $enable_ftb3
     * apertium $enable_apertium
     * giella: $enable_giella
-* Voikko speller: $enable_voikko
-* 
+    * labeled segmenter: $enable_labeled_segments
+* Applications
+    * Voikko speller: $enable_voikko
+    * segmenter: $enable_segmenter
+    * lemmatiser: $enable_lemmatiser
+    * hyphenators: $enable_hyphenator
+* Clusters
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
     * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail
 EOF

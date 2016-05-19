@@ -1,0 +1,17 @@
+sudo: false
+language: "python"
+python:
+   - "3.4"
+install:
+   pip install flake8 pep8-naming isort
+script:
+   - flake8 .
+   - isort -qc -rc .
+notifications:
+    irc:
+        channels:
+            - "chat.freenode.net#hfst"
+            - "chat.freenode.net#omorfi"
+        on_failure: always
+        on_success: never
+

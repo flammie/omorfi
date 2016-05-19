@@ -21,45 +21,45 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
 import csv
+from sys import exit, stderr
 
-from omorfi.monodix_formatter import format_monodix_alphabet, format_monodix_sdefs, format_monodix_pardef, format_monodix_entry, format_monodix_licence
-from omorfi.parse_csv_data import parse_defaults_from_tsv
+from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
+                                      format_monodix_pardef, format_monodix_sdefs)
+
 
 # standard UI stuff
 
+
 def main():
-    # defaults
-    outfile = None
     # initialise argument parser
-    ap = argparse.ArgumentParser(description="Convert Finnish dictionary TSV data into apertium monodix XML")
+    ap = argparse.ArgumentParser(
+        description="Convert Finnish dictionary TSV data into apertium monodix XML")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-            default=False,
-            help="do not print output to stdout while processing")
+                    default=False,
+                    help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
-            help="print each step to stdout while processing")
+                    help="print each step to stdout while processing")
     ap.add_argument("--master", "-m", action="append", required=True,
-            metavar="MFILE", help="read lexical roots from MFILEs")
+                    metavar="MFILE", help="read lexical roots from MFILEs")
     ap.add_argument("--stemparts", "-p", action="append", required=True,
-            metavar="SPFILE", help="read lexical roots from SPFILEs")
+                    metavar="SPFILE", help="read lexical roots from SPFILEs")
     ap.add_argument("--inflection", "-i", action="append", required=True,
-            metavar="INFFILE", help="read inflection from INFFILEs")
+                    metavar="INFFILE", help="read inflection from INFFILEs")
     ap.add_argument("--version", "-V", action="version")
-    ap.add_argument("--output", "-o", action="store", required=True, 
-            type=argparse.FileType('w'),
-            metavar="OFILE", help="write roots to OFILE")
+    ap.add_argument("--output", "-o", action="store", required=True,
+                    type=argparse.FileType('w'),
+                    metavar="OFILE", help="write roots to OFILE")
     ap.add_argument("--fields", "-F", action="store", default=2,
-            metavar="N", help="read N fields from master")
+                    metavar="N", help="read N fields from master")
     ap.add_argument("--separator", action="store", default="\t",
-            metavar="SEP", help="use SEP as separator")
+                    metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-            metavar="COMMENT", help="skip lines starting with COMMENT that"
-                "do not have SEPs")
+                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    "do not have SEPs")
     ap.add_argument("--strip", action="store",
-            metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP", help="strip STRIP from fields before using")
 
     args = ap.parse_args()
 
@@ -81,21 +81,21 @@ def main():
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
-                    strict=True)
+                                    strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 3:
-                    print("Too few tabs on line", linecount, 
-                        "skipping following line completely:", file=stderr)
+                    print("Too few tabs on line", linecount,
+                          "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
                 # format output
                 if curr_pardef != tsv_parts[0]:
                     if curr_pardef != '':
                         print('  </pardef>', file=args.output)
-                    print('  <pardef n="' + 
-                            tsv_parts[0].lower().replace('_', '__') +
-                            '">', file=args.output)
+                    print('  <pardef n="' +
+                          tsv_parts[0].lower().replace('_', '__') +
+                          '">', file=args.output)
                     curr_pardef = tsv_parts[0]
                 print(format_monodix_pardef(tsv_parts), file=args.output)
     print('  </pardef>', file=args.output)
@@ -107,22 +107,22 @@ def main():
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
-                    strict=True)
+                                    strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 3:
-                    print("Too few tabs on line", linecount, 
-                        "skipping following line completely:", file=stderr)
-                    print(tsv_line, file=stderr)
+                    print("Too few tabs on line", linecount,
+                          "skipping following line completely:", file=stderr)
+                    print(tsv_parts, file=stderr)
                     tsv_line = tsv_file.readline()
                     continue
                 # format output
                 if curr_pardef != tsv_parts[0]:
                     if curr_pardef != '':
                         print('  </pardef>', file=args.output)
-                    print('  <pardef n="' + 
-                            tsv_parts[0].lower().replace('_', '__') +
-                            '">', file=args.output)
+                    print('  <pardef n="' +
+                          tsv_parts[0].lower().replace('_', '__') +
+                          '">', file=args.output)
                     curr_pardef = tsv_parts[0]
                 print(format_monodix_pardef(tsv_parts), file=args.output)
                 tsv_line = tsv_file.readline()
@@ -135,14 +135,14 @@ def main():
         linecount = 0
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                    quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
+                                        quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
                     print(linecount, "...", sep='', end='\r')
                 if len(tsv_parts) < 18:
-                    print("Too few tabs on line", linecount, 
-                        "skipping following line completely:", file=stderr)
+                    print("Too few tabs on line", linecount,
+                          "skipping following line completely:", file=stderr)
                     print(tsv_line, file=stderr)
                     tsv_line = tsv_file.readline()
                     continue
@@ -156,4 +156,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

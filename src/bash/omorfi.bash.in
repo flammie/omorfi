@@ -1,0 +1,194 @@
+#!/bin/bash
+# omorfi bash API
+omorfiapi=@PACKAGE_VERSION@
+# this is the order of dirs
+if test -n $OMORFI_PATH ; then
+    omorfipath=$OMORFI_PATH
+fi
+omorfidir="@prefix@/share/omorfi"
+hfstproc=@HPROC@
+hfstlookup=@HLOOKUP@
+cgproc=@CGPROC@
+hfstospell=@HOSPELL@
+homeomorfidir="$HOME/.omorfi"
+localomorfidir0=.
+localomorfidir1=generated
+localomorfidir2=src/generated
+localomorfidir3=../src/generated
+relomorfidir=$(dirname $0)/../share/omorfi
+
+
+## args:
+## - $1: function
+## - $2: tagset (optional, if function in {generate, analyse}
+function omorfi_find() {
+    for d in $omorfipath $omorfidir $homeomorfidir \
+        $localomorfidir0 $localomorfidir1 $localomorfidir2 $localomorfidir3 \
+        $relomorfidir ; do
+        if test $# = 0 ; then
+            if test -d "$d" ; then
+                echo "$d"
+                break
+            fi
+        elif test $# = 1 ; then
+            func=$1
+            case $func in
+            analyse|generate)
+                for tagset in omor ftb3 ftb1 ; do
+                    if test -f "$d/omorfi-$tagset.$func.hfst" ; then
+                        echo "$d/omorfi-$tagset.$func.hfst"
+                        break 2
+                    fi
+                done;;
+            *)
+                if test -f "$d/omorfi.$func.hfst" ; then
+                    echo "$d/omorfi.$func.hfst"
+                    break
+                fi;;
+            esac
+        elif test $# = 2 ; then
+            func=$1
+            tagset=$2
+            if test -f "$d/omorfi-$tagset.$func.hfst" ; then
+                echo "$d/omorfi-$tagset.$func.hfst"
+                break
+            fi
+        fi
+    done
+}
+
+function omorfi_find_help() {
+    echo "Omorfi could not be located. Search path is:"
+    for d in $omorfidir $homeomorfidir $localomorfidir0 $localomorfidir1 \
+        $localomorfidir2 $localomorfidir3 ; do
+        if test $# = 0 ; then
+            echo $d
+        elif test $# = 1 ; then
+            func=$1
+            case $func in
+            analyse|generate)
+                for tagset in omor ftb3 ftb1 ; do
+                    echo "$d/omorfi-$tagset.$func.hfst"
+                done;;
+            *)
+                echo "$d/omorfi.$func.hfst"
+            esac
+        elif test $# = 2 ; then
+            func=$1
+            tagset=$2
+            echo "$d/omorfi-$tagset.$func.hfst"
+        fi
+    done
+}
+
+function apertium_cleanup() {
+    if type -p apertium-destxt > /dev/null ; then
+        apertium-destxt
+    elif type -p sed > /dev/null ; then
+        sed -e 's/[]@<>^$/\\{}[]/\\\0/g'
+    else
+        cat
+    fi
+}
+
+function omorfi_analyse_text() {
+    if test $# -le 1 ; then
+        omorfianalyser=$(omorfi_find "analyse" $1)
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse" $1
+    else
+        apertium_cleanup |\
+            sed -e 's/\.\[\]//g' |\
+            $hfstproc -x "$omorfianalyser"
+    fi
+}
+
+function omorfi_analyse_tokens() {
+    if test $# -le 1 ; then
+        omorfianalyser=$(omorfi_find "analyse" $1)
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse" $1
+    else
+        $hfstlookup -x -p "$omorfianalyser"
+    fi
+}
+
+function omorfi_disambiguate_text() {
+    omorfidir=$(omorfi_find)
+    if test -z "$omorfidir" ; then
+        omorfi_find_help
+    elif ! test -f "$omorfidir"/omorfi.cg3bin ; then
+        echo "Missing $omorfidir/omorfi.cg3bin"
+        echo "(You can override the search path with OMORFI_PATH variable)"
+    else
+        omorfi-vislcg.py -f "$omorfidir" |\
+            $cgproc -f 0 "$omorfidir"/omorfi.cg3bin
+    fi
+}
+
+function omorfi_generate() {
+    if test $# -le 1 ; then
+        omorfianalyser=$(omorfi_find "generate" $1)
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "generate" $1
+    else
+        $hfstlookup -x "$omorfianalyser"
+    fi
+}
+
+
+function omorfi_hyphenate() {
+    if test $# -eq 1 ; then
+        hyphen=$1
+    else
+        hyphen="-"
+    fi
+    omorfianalyser=$(omorfi_find "hyphenate")
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "hyphenate" $1
+    else
+        $hfstlookup -x "$omorfianalyser" |\
+            sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
+            -e "s/-4/$hyphen/g"
+    fi
+}
+
+function omorfi_segment() {
+    if test $# -eq 1 ; then
+        marker=$1
+        markexpr='\({.B}\|{STUB}\)'
+        unmarkexp='{_BOGUS_}'
+    elif test $# -eq 3 ; then
+        marker=$1
+        markexpr=$2
+        unmarkexpr=$3
+    else
+        marker="→ ←"
+        markexpr='\({.B}\|{STUB}\)'
+        unmarkexp='{_BOGUS_}'
+    fi
+    omorfianalyser=$(omorfi_find "segment")
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "segment"
+    else
+        $hfstlookup -x -p "$omorfianalyser" |\
+            sed -e "s:${markexpr}:${marker}:g" -e "s:${unmarkexpr}::g"
+    fi
+}
+
+function omorfi_spell() {
+    omorfidir=$(omorfi_find)
+    if test -z "$omorfidir" ; then
+        omorfi_find_help
+    elif ! test -f "$omorfidir"/speller-omorfi.zhfst ; then
+        echo "Missing $omorfidir/speller-omorfi.zhfst"
+        echo "(You can override the search path with OMORFI_PATH variable)"
+    else
+        $hfstospell -S "$omorfidir/speller-omorfi.zhfst"
+    fi
+}
+
+

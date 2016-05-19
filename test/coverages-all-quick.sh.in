@@ -7,11 +7,11 @@ if test ! -r $srcdir/coverage-fast-alls.freqs ; then
     echo Missing $srcdir/coverage-fast-alls.freqs
     exit 77
 fi
-if test ! -r ../src/generated/omorfi-omor.analyse.hfst ; then
-    echo Missing ../src/generated/omorfi-omor.analyse.hfst
+if test ! -r @top_builddir@/src/generated/ ; then
+    echo Missing @top_builddir@/src/generated/
     exit 77
 fi
-if ! @PYTHON@ $srcdir/coverage.py -f ../src/generated/omorfi-ftb3.analyse.hfst -i coverage-fast-alls.freqs -c 1000 -o coverage-short.log ; then
+if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ $srcdir/coverage.py -f ../src/generated/ -i coverage-fast-alls.freqs -c 1000 -o coverage-short.log ; then
     echo We missed the target of 99 % coverage
     exit 1
 fi

@@ -19,13 +19,14 @@
 #
 # utils to format apertium style data from omorfi database values
 
+from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
+from .formatter import Formatter
 from .lexc_formatter import lexc_escape
-from .settings import word_boundary, weak_boundary, \
-        morph_boundary, deriv_boundary, optional_hyphen
-from .error_logging import fail_formatting_missing_for
+from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
 
 
-ftb3_multichars= {
+class Ftb3Formatter(Formatter):
+    multichars = {
         '% A',
         '% V',
         '% N',
@@ -70,7 +71,7 @@ ftb3_multichars= {
         '% Ins',
         '% Abe',
         '% Tra',
-        '% Com' ,
+        '% Com',
         '% Lat',
         '% Acc',
         '% Sg',
@@ -99,7 +100,7 @@ ftb3_multichars= {
         '% Pl2',
         '% Pl3',
         '% Pe4',
-        '% ConNeg' ,
+        '% ConNeg',
         '% Neg',
         '% Act',
         '% Pass',
@@ -134,370 +135,414 @@ ftb3_multichars= {
         '% Foc%_s',
         '% Foc%_kA',
         '% Man',
+        '% Forgn',
         '%<Del%>→',
         '←%<Del%>'}
 
+    stuff2ftb3 = {"Bc": "#",
+                  ".sent": "",
+                  ".": ".",
+                  "Aa": "",
+                  "Aan": "",
+                  "ABBREVIATION": "% Abbr",
+                  "ABESSIVE": "% Abe",
+                  "ABLATIVE": "% Abl",
+                  "ACRONYM": "% N% Abbr",
+                  "ADESSIVE": "% Ade",
+                  "ADJ": "% A",
+                  "ADJECTIVE": "% A",
+                  "ADP": "% Adp% Po",
+                  "ADV": "% Adv",
+                  "ADVERBIAL": "",
+                  "Aen": "",
+                  "Ahan": "",
+                  "Ahen": "",
+                  "Ahin": "",
+                  "Ahon": "",
+                  "Ahun": "",
+                  "Ahyn": "",
+                  "Ahän": "",
+                  "Ahön": "",
+                  "Aia": "",
+                  "Aiden": "",
+                  "Aien": "",
+                  "Aihin": "",
+                  "Aiin": "",
+                  "Ain": "",
+                  "Aisiin": "",
+                  "Aita": "",
+                  "Aitten": "",
+                  "Aitä": "",
+                  "Aiä": "",
+                  "Aja": "",
+                  "Ajen": "",
+                  "Ajä": "",
+                  "ALLATIVE": "% All",
+                  "Ana": "",
+                  "Aon": "",
+                  "ARROW": "",
+                  "Asa": "",
+                  "Aseen": "",
+                  "Ata": "",
+                  "Aten": "",
+                  "Atä": "",
+                  "Aun": "",
+                  "Ayn": "",
+                  "Aä": "",
+                  "Aän": "",
+                  "Aön": "",
+                  "B-": "% TrunCo",
+                  "B←": "% TrunCo",
+                  "B→": "TrunCo% ",
+                  "CARDINAL": "",
+                  "ORDINAL": "% Ord",
+                  "Ccmp": "% Comp",
+                  "CLAUSE-BOUNDARY": "",
+                  "Cma": "% AgPrc",
+                  "Cmaisilla": "% Adv",
+                  "Cmaton": "% NegPrc",
+                  "Cnut": "% PrfPrc",
+                  "COMMA": "",
+                  "COMPARATIVE": "",
+                  "COMP": "% Comp",
+                  "CONJ": "% CC",
+                  "COORDINATING": "",
+                  "Cpos": "% Pos",
+                  "Csup": "% Superl",
+                  "Cva": "% PrsPrc",
+                  "DASH": "% Dash",
+                  "DECIMAL": "",
+                  "DEMONSTRATIVE": "% Dem",
+                  "DERSTI": "",
+                  "DERTTAIN": "",
+                  "DIGIT": "% Digit",
+                  "Din": "",
+                  "Dinen": "",
+                  "Dja": "",
+                  "Dma": "% AgPrc",
+                  "Dmaisilla": "% Inf5",
+                  "Dmaton": "% NegPrc",
+                  "Dminen": "% N",
+                  "Dmpi": "",
+                  "Dnut": "% PrfPrc% Act",
+                  "Ds": "",
+                  "Dsti": "",
+                  "Dtattaa": "",
+                  "Dtatuttaa": "",
+                  "Dtava": "% PrsPrc% Pass",
+                  "Dttaa": "",
+                  "Dttain": "",
+                  "Dtu": "% PrfPrc% Pass",
+                  "Du": "",
+                  "Duus": "",
+                  "Dva": "% PrsPrc% Act",
+                  "ELATIVE": "% Ela",
+                  "FINAL-BRACKET": "",
+                  "FINAL-QUOTE": "% Quote",
+                  "FRACTION": "",
+                  "FTB3man": "% Man",
+                  "FTB3MAN": "% Man",
+                  "GENITIVE": "% Gen",
+                  "Ia": "% Inf1",
+                  "Ie": "% Inf2",
+                  "ILLATIVE": "% Ill",
+                  "Ima": "% Inf3",
+                  "Iminen": "% N",
+                  "INDEFINITE": "% Indef",
+                  "INESSIVE": "% Ine",
+                  "INITIAL-BRACKET": "",
+                  "INITIAL-QUOTE": "% Quote",
+                  "INSTRUCTIVE": "% Man",
+                  "INTERROGATIVE": "% Interr",
+                  "INTJ": "% Interj",
+                  "LATIVE": "% Lat",
+                  "LEMMA-START": "",
+                  "LOCATIVE": "% Ess",
+                  "MULTIPLICATIVE": "",
+                  "Ncon": "% ConNeg",
+                  "Nneg": "% Neg",
+                  "NOUN": "% N",
+                  "Npl": "% Pl",
+                  "N??": "% Sg",
+                  "Nsg": "% Sg",
+                  "NUMERAL": "% Num",
+                  "NUM": "% Num",
+                  "O3": "% Px3",
+                  "Opl1": "% PxPl1",
+                  "Opl2": "% PxPl2",
+                  "Osg1": "% PxSg1",
+                  "Osg2": "% PxSg2",
+                  "PARTICLE": "% Part",
+                  "PARTITIVE": "% Par",
+                  "PE4": "% Pe4",
+                  "PERSONAL": "% Pers",
+                  "PL1": "% Pl1",
+                  "PL2": "% Pl2",
+                  "PL3": "% Pl3",
+                  "Ppe4": "% Pe4",
+                  "Ppl1": "% Pl1",
+                  "Ppl2": "% Pl2",
+                  "Ppl3": "% Pl3",
+                  "PREPOSITION": "% Adp% Pr",
+                  "PRONOUN": "% Pron",
+                  "PRON": "% Pron",
+                  "PROPER": "% Prop",
+                  "Psg1": "% Sg1",
+                  "Psg2": "% Sg2",
+                  "Psg3": "% Sg3",
+                  "PUNCTUATION": "% Punct",
+                  "Qhan": "% Foc%_hAn",
+                  "Qkaan": "% Foc%_kAAn",
+                  "Qka": "% Foc%_kA",
+                  "Qkin": "% Foc%_kin",
+                  "Qko": "% Foc%_kO",
+                  "Qpa": "% Foc%_pA",
+                  "Qs": "% Foc%_s",
+                  "QUALIFIER": "% A",
+                  "QUANTIFIER": "% Qnt",
+                  "QUANTOR": "% Qnt",
+                  "RECIPROCAL": "",
+                  "REFLEXIVE": "% Refl",
+                  "RELATIVE": "% Rel",
+                  "ROMAN": "% Roman",
+                  "SCONJ": "% CS",
+                  "SENTENCE-BOUNDARY": "",
+                  "SEPARATIVE": "% Par",
+                  "SG1": "% Sg1",
+                  "SG2": "% Sg2",
+                  "SG3": "% Sg3",
+                  "SPACE": "",
+                  "SUFFIX": "",
+                  "SUPERL": "% Superl",
+                  "Tcond": "% Cond",
+                  "Timp": "% Impv",
+                  "Topt": "% Opt",
+                  "Tpast": "% Pst",
+                  "Tpot": "% Pot",
+                  "Tpres": "% Prs",
+                  "Uarch": "",
+                  "Udial": "",
+                  "Unonstd": "",
+                  "UNSPECIFIED": "% Adv",
+                  "Urare": "",
+                  "Vact": "% Act",
+                  "VERB": "% V",
+                  "Vpss": "% Pass",
+                  "X": "",
+                  "Xabe": "% Abe",
+                  "Xabl": "% Abl",
+                  "Xacc": "% Acc",
+                  "Xade": "% Ade",
+                  "Xall": "% All",
+                  "Xcom": "% Com",
+                  "Xela": "% Ela",
+                  "Xess": "% Ess",
+                  "XForeign": "% Forgn",
+                  "Xgen": "% Gen",
+                  "Xill": "% Ill",
+                  "Xine": "% Ine",
+                  "Xins": "% Ins",
+                  "Xlat": "% Lat",
+                  "X???": "% Nom",
+                  "Xnom": "% Nom",
+                  "Xpar": "% Par",
+                  "Xtra": "% Tra",
+                  "": ""
+                  }
 
-stuff2ftb3 = {"Bc": "#",
-        ".sent": "",
-        "Aiden": "",
-        "Aien": "",
-        "Aiin": "",
-        "Ain": "",
-        "Ayn": "",
-        "Aän": "",
-        "Aön": "",
-        "Aisiin": "",
-        "Aseen": "",
-        "Aä": "",
-        "Ajä": "",
-        "Atä": "",
-        "Ajen": "",
-        "Aten": "",
-        "Ahin": "",
-        "Ahen": "",
-        "Ahyn": "",
-        "Aihin": "",
-        "Aiä": "",
-        "Ana": "",
-        "Asa": "",
-        "Aitten": "",
-        "Aan": "",
-        "Aen": "",
-        "Ahan": "",
-        "Ahon": "",
-        "Ahun": "",
-        "Aon": "",
-        "Aun": "",
-        "Aa": "",
-        "Aia": "",
-        "Aita": "",
-        "Aja": "",
-        "Ahän": "",
-        "Ahön": "",
-        "Aitä": "",
-        "Ata": "",
-        "B-": "% TrunCo",
-        "B→": "TrunCo% ",
-        "B←": "% TrunCo",
-        "Cma": "% AgPrc",
-        "Cmaisilla": "% Adv",
-        "Cnut": "% PrfPrc",
-        "Cva": "% PrsPrc",
-        "Cmaton": "% NegPrc",
-        "Cpos": "% Pos",
-        "Ccmp": "% Comp",
-        "Csup": "% Superl",
-        "Dmaisilla": "% Inf5",
-        "Dminen": "% N",
-        "Dnut": "% PrfPrc% Act",
-        "Dtu": "% PrfPrc% Pass",
-        "Dva": "% PrsPrc% Act",
-        "Dtava": "% PrsPrc% Pass",
-        "Dmaton": "% NegPrc",
-        "Duus": "",
-        "Dttaa": "",
-        "Dtattaa": "",
-        "Dtatuttaa": "",
-        "Dma": "% AgPrc",
-        "Dinen": "",
-        "Dja": "",
-        "Dmpi": "",
-        "Din": "",
-        "Ds": "",
-        "Du": "",
-        "Dsti": "",
-        "Dttain": "",
-        "FTB3man": "% Man",
-        "FTB3MAN": "% Man",
-        "Ia": "% Inf1",
-        "Ie": "% Inf2",
-        "Ima": "% Inf3",
-        "Iminen": "% N",
-        "Ncon": "% ConNeg",
-        "Nneg": "% Neg", 
-        "Npl": "% Pl", 
-        "Nsg": "% Sg", 
-        "N??": "% Sg",
-        "Osg1": "% PxSg1",
-        "Osg2": "% PxSg2",
-        "O3": "% Px3",
-        "Opl1": "% PxPl1",
-        "Opl2": "% PxPl2",
-        "Ppl1": "% Pl1", 
-        "Ppl2": "% Pl2",
-        "Ppl3": "% Pl3",
-        "Psg1": "% Sg1", 
-        "Psg2": "% Sg2",
-        "Psg3": "% Sg3",
-        "Ppe4": "% Pe4", 
-        "Qka": "% Foc%_kA",
-        "Qs": "% Foc%_s",
-        "Qpa": "% Foc%_pA",
-        "Qko": "% Foc%_kO",
-        "Qkin": "% Foc%_kin",
-        "Qkaan": "% Foc%_kAAn",
-        "Qhan": "% Foc%_hAn",
-        "Tcond": "% Cond",
-        "Timp": "% Impv", 
-        "Tpast": "% Pst",
-        "Tpot": "% Pot", 
-        "Tpres": "% Prs",
-        "Topt": "% Opt",
-        "Uarch": "",
-        "Udial": "",
-        "Urare": "",
-        "Unonstd": "",
-        "Vact": "% Act",
-        "Vpss": "% Pass",
-        "Xabe": "% Abe",
-        "Xabl": "% Abl",
-        "Xade": "% Ade",
-        "Xall": "% All",
-        "Xcom": "% Com",
-        "Xela": "% Ela",
-        "Xess": "% Ess", 
-        "Xgen": "% Gen",
-        "Xill": "% Ill", 
-        "Xine": "% Ine",
-        "Xins": "% Ins",
-        "Xnom": "% Nom",
-        "Xpar": "% Par", 
-        "Xtra": "% Tra", 
-        "Xlat": "% Lat",
-        "Xacc": "% Acc",
-        "X???": "% Nom",
-        "NOUN": "% N",
-        "ADJECTIVE": "% A", 
-        "QUALIFIER": "% A",
-        "ABESSIVE": "% Abe",
-        "ABLATIVE": "% Abl",
-        "ADESSIVE": "% Ade",
-        "ALLATIVE": "% All",
-        "ELATIVE": "% Ela",
-        "LOCATIVE": "% Ess", 
-        "GENITIVE": "% Gen",
-        "ILLATIVE": "% Ill", 
-        "INESSIVE": "% Ine",
-        "INSTRUCTIVE": "% Man",
-        "PARTITIVE": "% Par", 
-        "SEPARATIVE": "% Par", 
-        "LATIVE": "% Lat",
-        "VERB": "% V",
-        "ADVERB": "% Adv",
-        "INTERJECTION": "% Interj",
-        "PRONOUN": "% Pron",
-        "NUMERAL": "% Num",
-        "ADPOSITION": "% Adp% Po",
-        "PREPOSITION": "% Adp% Pr",
-        "CONJUNCTION": "",
-        "COORDINATING": "% CC",
-        "ADVERBIAL": "% CS",
-        "COMPARATIVE": "% CS",
-        "ABBREVIATION": "% Abbr",
-        "ACRONYM": "% N% Abbr",
-        "PROPER": "% Prop",
-        "CARDINAL": "", "ORDINAL": "% Ord",
-        "DEMONSTRATIVE": "% Dem",
-        "QUANTOR": "% Qnt",
-        "PERSONAL": "% Pers",
-        "INDEFINITE": "% Indef",
-        "INTERROGATIVE": "% Interr",
-        "REFLEXIVE": "% Refl",
-        "RELATIVE": "% Rel",
-        "PARTICLE": "% Part",
-        "RECIPROCAL": "",
-        "PUNCTUATION": "% Punct",
-        "DASH": "% Dash",
-        "SPACE": "",
-        "DECIMAL": "",
-        "CLAUSE-BOUNDARY": "",
-        "SENTENCE-BOUNDARY": "",
-        "INITIAL-QUOTE": "% Quote",
-        "FINAL-QUOTE": "% Quote",
-        "INITIAL-BRACKET": "",
-        "FINAL-BRACKET": "",
-        "DIGIT": "% Digit",
-        "ROMAN": "% Roman",
-        "PL1": "% Pl1", 
-        "PL2": "% Pl2",
-        "PL3": "% Pl3",
-        "SG1": "% Sg1", 
-        "SG2": "% Sg2",
-        "SG3": "% Sg3",
-        "PE4": "% Pe4",
-        "COMP": "% Comp",
-        "SUPERL": "% Superl",
-        "DERSTI": "",
-        "DERTTAIN": "",
-        "UNSPECIFIED": "% Adv",
-        "LEMMA-START": "",
-        "COMMA": "",
-        "ARROW": "",
-        ".": ".",
-        "": ""
-        }
+    def __init__(self, verbose=True):
+        self.verbose = verbose
+        fail = False
+        for stuff, ftb3 in self.stuff2ftb3.items():
+            if len(ftb3) < 2:
+                continue
+            elif ftb3 not in self.multichars:
+                just_fail("There are conflicting formattings in here!\n" +
+                          ftb3 + " for " + stuff +
+                          " is not a valid defined ftb3 multichar_symbol!")
+                fail = True
+        if fail:
+            self.tainted = True
 
-def format_stuff_ftb3(stuff):
-    if stuff == '0':
-        return "0"
-    elif stuff in stuff2ftb3:
-        return stuff2ftb3[stuff]
-    else:
-        fail_formatting_missing_for(stuff, "ftb3.1")
-        return ""
-
-def format_analysis_lexc_ftb3(anals):
-    ftbstring = ""
-    if 'Nneg|Vact' in anals:
-        anals = anals.replace('|Vact', '')
-    elif anals == 'Vact|Ia|Xlat':
-        anals = 'Ia|Xlat'
-    elif anals == 'Vact|Ima|Xins':
-        anals = 'Ima|FTB3man'
-    elif 'Vact|Ima' in anals:
-        anals = anals.replace('Vact|', '')
-    elif anals == 'Vact|Ie|Nsg|Xins':
-        anals = 'Ie|Vact|FTB3man'
-    elif anals == 'Vact|Tpres|Ppe4|Ncon':
-        anals = 'Vact|Tpres|Ncon'
-    elif anals == 'Vpss|Tpres|Ppe4|Ncon':
-        anals = 'Vpss|Tpres|Ncon'
-    elif 'Dmaton' in anals:
-        anals = anals.replace('Dmaton', 'Cmaton')
-    elif 'Dma' in anals:
-        anals = anals.replace('Dma', 'Cma')
-    parts = anals.split('|')
-    # Here is a bit of puzzle
-    # I < X
-    # V < X
-    # T < V
-    # C < V
-    # X < S
-    # -----
-    # I < T,C < V < X < N
-    reordered = []
-    # append I first
-    for part in parts:
-        if part.startswith('I'):
-            # Infinitive I before case X
-            reordered.append(part)
-    # then T or C
-    for part in parts:
-        if part.startswith('T'):
-            # Tense T before Voice V
-            reordered.append(part)
-        elif part.startswith('C'):
-            # Participle C before voice V
-            reordered.append(part)
-    # then V
-    for part in parts:
-        if part.startswith('V'):
-            # Voice V before Case X
-            reordered.append(part)
-    # then X
-    for part in parts:
-        if part.startswith('X'):
-            # Case X before Number N
-            reordered.append(part)
-    # then rest in their natural order
-    parts = [x for x in parts if not x.startswith('X') and not x.startswith('T') and not x.startswith('C') and not x.startswith('I') and not x.startswith('V')]
-    for part in parts:
-        reordered.append(part)
-    for anal in reordered:
-        ftbstring += format_stuff_ftb3(anal)
-    return ftbstring
-
-def format_continuation_lexc_ftb3(anals, surf, cont):
-    ftbstring = format_analysis_lexc_ftb3(anals)
-    if 'COMPOUND' in cont:
-        # XXX: there was += before
-        ftbstring =  surf.replace(morph_boundary, '').replace(deriv_boundary, '')
-    elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
-        ftbstring +=  surf.replace(morph_boundary, '').replace(deriv_boundary, '')
-    elif 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
-        ftbstring = lexc_escape(surf) + ftbstring
-    surf = lexc_escape(surf)
-    return "%s:%s\t%s ;\n" %(ftbstring, surf, cont)
-
-def format_wordmap_lexc_ftb3(wordmap, format):
-    '''
-    format string for canonical ftb3 format for morphological analysis
-    '''
-    if wordmap['stub'] == ' ':
-        # do not include normal white space for now
-        return ""
-    wordmap['stub'] = lexc_escape(wordmap['stub'].replace(word_boundary, optional_hyphen))
-    wordmap['analysis'] = "%s" %(lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#')  + '←<Del>'))
-    if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
-        wordmap['analysis'] += format_stuff_ftb3('PUNCTUATION')
-    elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL', 'ACRONYM', 'PUNCTUATION']:
-        wordmap['analysis'] += format_stuff_ftb3(wordmap['pos'])
-    elif wordmap['pos'] == 'CONJUNCTIONVERB':
-        if wordmap['lemma'] == 'eikä':
-            wordmap['lemma'] = 'ei'
-            wordmap['analysis'] += format_stuff_ftb3('COORDINATING') + \
-                    format_stuff_ftb3('Nneg')
+    def stuff2lexc(self, stuff):
+        if stuff == '0':
+            return "0"
+        elif stuff in self.stuff2ftb3:
+            return self.stuff2ftb3[stuff]
         else:
-            wordmap['analysis'] += format_stuff_ftb3('ADVERBIAL') + \
-                    format_stuff_ftb3('Nneg')
-    elif wordmap['pos'] == 'PARTICLE':
-        if wordmap['particle']:
-            for pclass in wordmap['particle'].split('|'):
-                wordmap['analysis'] += format_stuff_ftb3(pclass)
-        else:
-            wordmap['analysis'] += format_stuff_ftb3('PARTICLE')
-    else:
-        print("not in FTB3 known poses or particle!\n", wordmap)
-        exit(1)
-    if wordmap['pronoun']:
-        if 'PERSONAL' in wordmap['pronoun']:
-            wordmap['pronoun'] = 'PERSONAL'
-        for stuff in wordmap['pronoun'].split("|"):
-            wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['adjective_class']:
-        for stuff in wordmap['adjective_class'].split("|"):
-            wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['noun_class']:
-        for stuff in wordmap['noun_class'].split("|"):
-            wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['numeral_class']:
-        for stuff in wordmap['numeral_class'].split("|"):
-            wordmap['analysis'] += format_stuff_ftb3(stuff)
-    if wordmap['is_proper']:
-        wordmap['analysis'] += format_stuff_ftb3('PROPER')
-    if wordmap['symbol']:
-        for subcat in wordmap['symbol'].split('|'):
-            wordmap['analysis'] += format_stuff_ftb3(subcat)
-        if wordmap['lemma'] == '–':
-            wordmap['analysis'].replace('Dash', 'EnDash')
-        if wordmap['lemma'] == '—':
-            wordmap['analysis'].replace('Dash', 'EmDash')
-    lex_stub = wordmap['stub']
-    retvals = []
-    retvals += ["%s:%s\t%s\t;" %(wordmap['analysis'], lex_stub, 
-                wordmap['new_para'])]
-    if wordmap['lemma'] in ['-', '–', '—', '(']:
-        retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" %(wordmap['analysis'], lex_stub,
-            wordmap['new_para'])]
-    return "\n".join(retvals)
+            if self.verbose:
+                fail_formatting_missing_for(stuff, "ftb3.1")
+            return ""
 
-def format_multichars_lexc_ftb3():
-    multichars = "!! FTB 3.1 multichar set:\n"
-    for mcs in ftb3_multichars:
-        multichars += mcs + "\n"
-    return multichars
+    def analyses2lexc(self, anals):
+        ftbstring = ""
+        if 'Nneg|Vact' in anals:
+            anals = anals.replace('|Vact', '')
+        elif anals == 'Vact|Ia|Xlat':
+            anals = 'Ia|Xlat'
+        elif anals == 'Vact|Ima|Xins':
+            anals = 'Ima|FTB3man'
+        elif 'Vact|Ima' in anals:
+            anals = anals.replace('Vact|', '')
+        elif anals == 'Vact|Ie|Nsg|Xins':
+            anals = 'Ie|Vact|FTB3man'
+        elif anals == 'Vact|Tpres|Ppe4|Ncon':
+            anals = 'Vact|Tpres|Ncon'
+        elif anals == 'Vpss|Tpres|Ppe4|Ncon':
+            anals = 'Vpss|Tpres|Ncon'
+        elif 'Dmaton' in anals:
+            anals = anals.replace('Dmaton', 'Cmaton')
+        elif 'Dma' in anals:
+            anals = anals.replace('Dma', 'Cma')
+        parts = anals.split('|')
+        # Here is a bit of puzzle
+        # I < X
+        # V < X
+        # T < V
+        # C < V
+        # X < S
+        # -----
+        # I < T,C < V < X < N
+        reordered = []
+        # append I first
+        for part in parts:
+            if part.startswith('I'):
+                # Infinitive I before case X
+                reordered.append(part)
+        # then T or C
+        for part in parts:
+            if part.startswith('T'):
+                # Tense T before Voice V
+                reordered.append(part)
+            elif part.startswith('C'):
+                # Participle C before voice V
+                reordered.append(part)
+        # then V
+        for part in parts:
+            if part.startswith('V'):
+                # Voice V before Case X
+                reordered.append(part)
+        # then X
+        for part in parts:
+            if part.startswith('X'):
+                # Case X before Number N
+                reordered.append(part)
+        # then rest in their natural order
+        parts = [x for x in parts
+                 if not x.startswith('X') and not x.startswith('T') and
+                 not x.startswith('C') and not x.startswith('I') and
+                 not x.startswith('V')]
+        for part in parts:
+            reordered.append(part)
+        for anal in reordered:
+            ftbstring += self.stuff2lexc(anal)
+        return ftbstring
+
+    def continuation2lexc(self, anals, surf, cont):
+        ftbstring = self.analyses2lexc(anals)
+        if 'COMPOUND' in cont:
+            # XXX: there was += before
+            ftbstring = surf.replace(
+                morph_boundary, '').replace(deriv_boundary, '')
+        elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
+            ftbstring += surf.replace(morph_boundary,
+                                      '').replace(deriv_boundary, '')
+        elif 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
+            ftbstring = lexc_escape(surf) + ftbstring
+        surf = lexc_escape(surf)
+        return "%s:%s\t%s ;\n" % (ftbstring, surf, cont)
+
+    def wordmap2lexc(self, wordmap):
+        '''
+        format string for canonical ftb3 format for morphological analysis
+        '''
+        if wordmap['stub'] == ' ':
+            # do not include normal white space for now
+            return ""
+        wordmap['stub'] = lexc_escape(
+            wordmap['stub'].replace(word_boundary, optional_hyphen))
+        wordmap['analysis'] = "%s" % (
+            lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#') + '←<Del>'))
+        if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and
+                                             not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
+            wordmap['analysis'] += self.stuff2lexc('PUNCTUATION')
+        elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN',
+                                'NUMERAL', 'ACRONYM', 'PUNCTUATION', 'SUFFIX']:
+            wordmap['analysis'] += self.stuff2lexc(wordmap['pos'])
+        elif wordmap['pos'] == 'CONJUNCTIONVERB':
+            if wordmap['lemma'] == 'eikä':
+                wordmap['analysis'] = wordmap['lemma'] + self.stuff2lexc('CONJ') + \
+                    self.stuff2lexc('Nneg')
+            else:
+                wordmap['analysis'] += self.stuff2lexc('ADVERBIAL') + \
+                    self.stuff2lexc('Nneg')
+        elif wordmap['pos'] == 'PARTICLE':
+            if wordmap['upos'] in ['CONJ', 'SCONJ', 'INTJ', 'ADV', 'ADP']:
+                wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
+            else:
+                wordmap['analysis'] += self.stuff2lexc('PARTICLE')
+        elif wordmap['pos'] == 'PROPN':
+            print("???", wordmap)
+        elif wordmap['pos'] == 'X':
+            # FORGN etc.
+            wordmap['analysis'] += self.stuff2lexc('NOUN')
+        else:
+            fail_guess_because(wordmap, [], ["PARTICLE", "PROPN",
+                                             'NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL',
+                                             'ACRONYM', 'PUNCTUATION'],
+                               "not in FTB3 known poses or particle!")
+            exit(1)
+        if wordmap['prontype']:
+            if 'PERSONAL' in wordmap['prontype']:
+                wordmap['prontype'] = 'PERSONAL'
+            for stuff in wordmap['prontype'].split("|"):
+                wordmap['analysis'] += self.stuff2lexc(stuff)
+        if wordmap['lex']:
+            for stuff in wordmap['lex'].split("|"):
+                wordmap['analysis'] += self.stuff2lexc(stuff)
+        if wordmap['abbr']:
+            for stuff in wordmap['abbr'].split("|"):
+                wordmap['analysis'] += self.stuff2lexc(stuff)
+        if wordmap['numtype']:
+            for stuff in wordmap['numtype'].split("|"):
+                wordmap['analysis'] += self.stuff2lexc(stuff)
+        if wordmap['is_proper']:
+            wordmap['analysis'] += self.stuff2lexc('PROPER')
+        if wordmap['symbol']:
+            for subcat in wordmap['symbol'].split('|'):
+                wordmap['analysis'] += self.stuff2lexc(subcat)
+            if wordmap['lemma'] == '–':
+                wordmap['analysis'].replace('Dash', 'EnDash')
+            if wordmap['lemma'] == '—':
+                wordmap['analysis'].replace('Dash', 'EmDash')
+        lex_stub = wordmap['stub']
+        retvals = []
+        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                      wordmap['new_para'])]
+        if wordmap['lemma'] in ['-', '–', '—', '(']:
+            retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                                      wordmap['new_para'])]
+        return "\n".join(retvals)
+
+    def multichars_lexc(self):
+        multichars = "Multichar_Symbols\n"
+        multichars += "!! FTB 3.1 multichar set:\n"
+        for mcs in self.multichars:
+            multichars += mcs + "\n"
+        multichars += Formatter.multichars_lexc(self)
+        return multichars
+
+    def root_lexicon_lexc(self):
+        root = Formatter.root_lexicon_lexc(self)
+        if True:
+            # want co-ordinated hyphens left
+            root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"
+            root += self.stuff2lexc('B→') + ':-   NOUN ;\n'
+            root += self.stuff2lexc('B→') + ':-   ADJ ;\n'
+            root += self.stuff2lexc('B→') + ':-   SUFFIX ;\n'
+        return root
 
 # self test
 if __name__ == '__main__':
-    fail = False
-    for stuff, ftb3 in stuff2ftb3.items():
-        if len(ftb3) < 2:
-            continue
-        elif not ftb3 in ftb3_multichars:
-            print("There are conflicting formattings in here!", ftb3, 
-                    "is not a valid defined ftb3 multichar_symbol!")
-            fail = True
-    if fail:
-        exit(1)
-
+    formatter = Ftb3Formatter()
+    exit(0)

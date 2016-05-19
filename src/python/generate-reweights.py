@@ -20,66 +20,62 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from sys import stderr, stdout, exit, argv
-from time import strftime
 import argparse
+from sys import exit
 
-from omorfi.formatters import format_stuff
-from omorfi.settings import stuff_weights, boundary_weights
+from omorfi.ftb3_formatter import Ftb3Formatter
+from omorfi.no_tags_formatter import NoTagsFormatter
+from omorfi.omor_formatter import OmorFormatter
+from omorfi.settings import stuff_weights
+
 
 # standard UI stuff
+
 
 def main():
     # initialise argument parser
     ap = argparse.ArgumentParser(description="Create FST reweighter for tags")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-            default=False,
-            help="do not print output to stdout while processing")
+                    default=False,
+                    help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
-            help="print each step to stdout while processing")
+                    help="print each step to stdout while processing")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o",
-            type=argparse.FileType("w"), required=True,
-            metavar="OFILE", help="write output to OFILE")
+                    type=argparse.FileType("w"), required=True,
+                    metavar="OFILE", help="write output to OFILE")
     ap.add_argument("--fields", "-F", action="store", default=2,
-            metavar="N", help="read N fields from master")
+                    metavar="N", help="read N fields from master")
     ap.add_argument("--separator", action="store", default="\t",
-            metavar="SEP", help="use SEP as separator")
+                    metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-            metavar="COMMENT", help="skip lines starting with COMMENT that"
-                "do not have SEPs")
+                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    "do not have SEPs")
     ap.add_argument("--strip", action="store",
-            metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP", help="strip STRIP from fields before using")
 
-    def FormatArgType(v):
-        baseformats = ["omor", "apertium",
-                "giellatekno", "ftb3", "segments", "google", "boundary"]
-        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
-        parts = v.split('+')
-        if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError("Format must be one of: " + " ".join(baseformats))
-        for ex in parts[1:]:
-            if ex not in extras:
-                raise argparse.ArgumentTypeError("Format extension must be one of: " + " ".join(extras))
-        return v
     ap.add_argument("--format", "-f", action="store", default="omor",
-            help="use specific output format for lexc data",
-            type=FormatArgType)
+                    help="use specific output format for lexc data",
+                    choices=["omor", "ftb3", "giella", "apertium", "boundary"])
     args = ap.parse_args()
-    # setup files
-    if args.verbose: 
-        print("Writing some weights to", args.output.name)
-    if args.format == 'boundary':
-        for tag, weight in boundary_weights.items():
-            print(tag, weight, sep='\t', file=args.output)
+    if args.format == "omor":
+        formatter = OmorFormatter(True)
+    elif args.format == "ftb3":
+        formatter = Ftb3Formatter(True)
+    elif args.format == 'boundary':
+        formatter = NoTagsFormatter(True)
     else:
-        for stuff, weight in stuff_weights.items():
-            if format_stuff(stuff, args.format) and format_stuff(stuff, args.format) != '0':
-                print(format_stuff(stuff, args.format), weight,
-                        sep='\t', file=args.output)
+        print("Not implemnetd formatters", args.format)
+        exit(1)
+    # setup files
+    if args.verbose:
+        print("Writing some weights to", args.output.name)
+    for stuff, weight in stuff_weights.items():
+        if formatter.stuff2lexc(stuff) and formatter.stuff2lexc(stuff) != '0':
+            print(formatter.stuff2lexc(stuff), weight,
+                  sep='\t', file=args.output)
     exit(0)
 
 
 if __name__ == "__main__":
     main()
-
