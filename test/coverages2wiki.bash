@@ -12,12 +12,12 @@ for f in *.coveragelog; do
     types=$(wc -l < ${corpus}.uniq.freqs)
     tokenmisses=$(awk '{SUM+=$1;} END {print SUM;}' < ${f})
     typemisses=$(wc -l < ${f})
-    echo "| Feature | Missed | Coverage | All |"
+    echo "| Feature | Coverage # | Coverage % | All |"
     echo "|:--------|-------:|---------:|----:|"
-    echo "| Tokens  | $tokenmisses | " \
+    echo "| Tokens  | $(($tokens - $tokenmisses)) | " \
         $(echo "scale=4; (1 - $tokenmisses / $tokens) * 100" | bc ) \
         "% | $tokens |"
-    echo "| Types   | $typemisses |" \
+    echo "| Types   | $(($types - $typemisses)) |" \
         $(echo "scale=4; (1 - $typemisses / $types) * 100" | bc ) \
         "% | $types |"
     echo
