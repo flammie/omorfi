@@ -8,6 +8,8 @@ fi
 omorfidir="@prefix@/share/omorfi"
 hfstproc=@HPROC@
 hfstlookup=@HLOOKUP@
+cgproc=@CGPROC@
+hfstospell=@HOSPELL@
 homeomorfidir="$HOME/.omorfi"
 localomorfidir0=.
 localomorfidir1=generated
@@ -109,7 +111,7 @@ function omorfi_analyse_tokens() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "analyse" $1
     else
-        $hfstlookup -x "$omorfianalyser"
+        $hfstlookup -x -p "$omorfianalyser"
     fi
 }
 
@@ -172,7 +174,7 @@ function omorfi_segment() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "segment"
     else
-        $hfstlookup -x "$omorfianalyser" |\
+        $hfstlookup -x -p "$omorfianalyser" |\
             sed -e "s:${markexpr}:${marker}:g" -e "s:${unmarkexpr}::g"
     fi
 }
@@ -185,7 +187,7 @@ function omorfi_spell() {
         echo "Missing $omorfidir/speller-omorfi.zhfst"
         echo "(You can override the search path with OMORFI_PATH variable)"
     else
-        $hfstospell "$omorfidir/speller-omorfi.zhfst"
+        $hfstospell -S "$omorfidir/speller-omorfi.zhfst"
     fi
 }
 

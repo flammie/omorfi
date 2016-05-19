@@ -46,4 +46,4 @@ fi
 if test x$verbose = xverbose ; then
     echo "Trying to use $tagset to analyse... $@"
 fi
-cat $@ | omorfi_analyse_tokenised $tagset
+cat $@ | omorfi_analyse_tokens $tagset
