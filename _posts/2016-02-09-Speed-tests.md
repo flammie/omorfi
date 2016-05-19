@@ -38,3 +38,9 @@ file. For sheet view, see [omorfi progress sheet in google
 
 * 1M tokens in 90.097 equals 11099.1 tokens per second
 
+## 2016-05-19 times
+
+## ftb3.1 
+
+* 1M tokens in 7.4204 equals 134764 tokens per second
+

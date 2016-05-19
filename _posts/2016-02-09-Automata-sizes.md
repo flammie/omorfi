@@ -316,3 +316,113 @@ file. For sheet view, see [omorfi progress sheet in google
 | average output ambiguity |  1.001859 |
 
 
+## 2016-05-19 sizes
+
+### ../src/generated/omorfi-omor.analyse.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 22M |
+| states |  457883 |
+| arcs |  974299 |
+| average arcs per state |  2.127834 |
+| average input epsilons per state |  0.340871 |
+| average input ambiguity |  1.125085 |
+| average output ambiguity |  1.083649 |
+
+### ../src/generated/omorfi-omor.generate.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 22M |
+| states |  457715 |
+| arcs |  955684 |
+| average arcs per state |  2.087946 |
+| average input epsilons per state |  0.068798 |
+| average input ambiguity |  1.065164 |
+| average output ambiguity |  1.127683 |
+
+### ../src/generated/omorfi-omor.lexc.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 20M |
+| states |  457467 |
+| arcs |  951728 |
+| average arcs per state |  2.080430 |
+| average input epsilons per state |  0.065095 |
+| average input ambiguity |  1.062566 |
+| average output ambiguity |  1.120789 |
+
+### ../src/generated/omorfi-ftb3.analyse.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 54M |
+| states |  797956 |
+| arcs |  2410789 |
+| average arcs per state |  3.021205 |
+| average input epsilons per state |  0.357513 |
+| average input ambiguity |  1.124715 |
+| average output ambiguity |  1.328092 |
+
+### ../src/generated/omorfi-ftb3.generate.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 23M |
+| states |  452342 |
+| arcs |  974929 |
+| average arcs per state |  2.155292 |
+| average input epsilons per state |  0.044327 |
+| average input ambiguity |  1.052407 |
+| average output ambiguity |  1.086378 |
+
+### ../src/generated/omorfi-ftb3.lexc.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 20M |
+| states |  452148 |
+| arcs |  940321 |
+| average arcs per state |  2.079675 |
+| average input epsilons per state |  0.040558 |
+| average input ambiguity |  1.016653 |
+| average output ambiguity |  1.062322 |
+
+### ../src/generated/omorfi.accept.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 44M |
+| states |  459328 |
+| arcs |  1900510 |
+| average arcs per state |  4.137588 |
+| average input epsilons per state |  0.057913 |
+| average input ambiguity |  1.022871 |
+| average output ambiguity |  1.014195 |
+
+### ../src/generated/omorfi.lemmatise.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size |  |
+
+### ../src/generated/omorfi.segment.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size |  |
+
+### ../src/generated/omorfi.tokenise.hfst 
+
+| *Feature* | *Value* |
+|:----------|--------:|
+| file size | 22K |
+| states |  18 |
+| arcs |  1078 |
+| average arcs per state |  59.888889 |
+| average input epsilons per state |  0.888889 |
+| average input ambiguity |  1.000000 |
+| average output ambiguity |  1.001859 |
+
