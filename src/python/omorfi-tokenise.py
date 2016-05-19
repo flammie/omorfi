@@ -57,6 +57,8 @@ def main():
     for line in options.infile:
         line = line
         lines += 1
+        if options.verbose and lines % 10000 == 0:
+            print(lines, "...")
         if not line or line.rstrip('\n') == '':
             continue
         surfs = omorfi.tokenise(line)
