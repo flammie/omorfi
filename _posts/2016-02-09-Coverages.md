@@ -21,7 +21,6 @@ different tokenisation approaches, e.g., http may be a part of a URL.
 * [2015-03-26](#2015-03-19-coverages)
 * [2015-09-04](#2015-09-04-coverages)
 
-These are in ascending order of time, since I just `>>` them to the end of this
 file. For sheet view, see [omorfi progress sheet in google
  docs](https://docs.google.com/spreadsheets/d/1eTpUhCz0SzpRl3VYjuzI7etFB2N2bPrzyTV43ebYf6k/edit?usp=sharing)
 

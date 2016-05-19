@@ -30,7 +30,8 @@ by spaces. This document describes the differences from the official FTB3
 format, the full description of the format can be found from [FTB web
 site](http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/index.shtml).
 
-The analysis of the first sentence of declaration of human rights in FTB3 mode in omorfi stable version 20141014:
+The analysis of the first sentence of declaration of human rights in FTB3 mode
+in omorfi stable version 20141014:
 
 ```
 Kaikki kaikki Pron Qnt Nom Sg
@@ -82,7 +83,6 @@ Extracted from our implementation:
 
 The releases of omorfi follow a regression test of 90 % _recall_ for FTB3.1
 tags. The results for 20141014 are (Work in Progress):
-
 
 The errors come mainly from following classes (the order of popularity per word-form):
 
