@@ -278,8 +278,8 @@ class Omorfi:
             pretokens += [(token[0], "SpaceAfter=No")]
             token = token[1:]
         return pretokens + \
-                [(token, "SpaceBefore=No|SpaceAfter=No")] + \
-                posttokens
+            [(token, "SpaceBefore=No|SpaceAfter=No")] + \
+            posttokens
 
     def _retokenise(self, tokens):
         retokens = []
