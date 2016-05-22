@@ -344,7 +344,7 @@ java typically gives you, so use `-Xmx` switch.
 
 ### Raw automata
 
-The installed files are in `$prefix/share/omorfi` (taito installation is
+The installed files are in `$prefix/share/omorfi` (my taito installation is
 --prefix=$HOME)
 
 ```
@@ -391,6 +391,10 @@ hirveä	hirveä	0.000000
 > kissakoira-apina
 kissakoira-apina	kissa{hyph?}koira{hyph?}apina	0.000000
 ```
+
+When using `hfst-lookup` with large unclean material, it may get stuck at odd
+looking long strings, consider using `-t` switch to set timeout for individual
+analyses; omorfi bash API sets this to 15 seconds.
 
 ## Troubleshooting
 
@@ -448,6 +452,22 @@ If the file missing is `omorfi.cg3bin`, it may mean that the vislcg3 was missing
 at the time of the installation. Similarly may happen with omorfi-speller.zhfst,
 it will only be created when hfst-ospell and it's dependencies and zip are all
 available.
+
+### Processing text gets stuck / takes long
+
+Occasionally some tokens yield very complicated analyses and take a lot of
+memory or time. This happens especially with long strings that can be analysed
+as combinations of interjections like ahahaha...ha (in theory, each ah, aha, ha
+and hah within the string are ambiguous wrt. compounding), while current
+versions have blacklisted most such combinations some may still exist. When
+using hfst tools directly this can be solved using `-t` option to set the
+timeout. While these workarounds will slowly trickle to all parts of HFST and
+omorfi, it is often a good idea to pre-process text to remove or normalise
+offending strings as they will trip other NLP tools too.
+
+Some operations of omorfi legitly take a lot of memory, and most tools are
+suspectible to memory leaks. It may be often beneficial to `split` your data
+and process it in smaller chunks.
 
 ## Contributing
 
