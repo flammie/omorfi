@@ -52,7 +52,9 @@ FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
 			   python/omorfi/twolc_formatter.py \
 			   python/omorfi/regex_formatter.py \
 			   python/omorfi/monodix_formatter.py \
-			   python/omorfi/formatters.py \
+			   python/omorfi/no_tags_formatter.py \
+			   python/omorfi/labeled_segments_formatter.py \
+			   python/omorfi/formatter.py \
 			   python/omorfi/kotus_sanalista_formatter.py
 # file formats
 GENERATOR_SCIRPTS=python/generate-lexcs.py \
@@ -164,6 +166,7 @@ pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(FTB1_AUTOMATA) $(LABELSEGMENT_AUTOMATA) \
 				$(GIELLA_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
+pkgdata_DATA+=$(voikkoshare_DATA)
 pkgdata_DATA+=generated/master.tsv
 
 bin_SCRIPTS=bash/omorfi-analyse-text.sh \
@@ -173,7 +176,7 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
-			bash/omorfi-locate.sh \
+			bash/omorfi.bash \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
 			python/omorfi-conllu.py \
@@ -191,7 +194,16 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
 		   python/omorfi-factorise.py \
-		   python/omorfi-analyse.py \
+		   python/omorfi-conllu.py \
+		   python/omorfi-vislcg.py \
+		   python/omorfi-segment.py \
+		   bash/omorfi-analyse-text.sh \
+		   bash/omorfi-analyse-tokenised.sh \
+		   bash/omorfi-generate.sh \
+		   bash/omorfi-spell.sh \
+		   bash/omorfi-hyphenate.sh \
+		   bash/omorfi-segment.sh \
+		   bash/omorfi-disambiguate-text.sh \
 		   bash/validate-database.bash \
 		   vislcg3/omorfi.cg3
 

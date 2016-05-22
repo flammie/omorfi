@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source omorfi-locate.sh
+source $(dirname $0)/omorfi.bash
 args=$@
 
 marker=" "
@@ -8,8 +8,8 @@ markexpr=""
 unmarkexpr='\({STUB}\|{WB}\|{MB}\|{DB}\|{XB}\|{wB}\)'
 
 function print_version() {
-    echo "omorfi-segment 0.2"
-    echo "Copyright (c) 2015 Tommi A Pirinen"
+    echo "omorfi-segment 0.3 (using omorfi bash API $omorfiapi)"
+    echo "Copyright (c) 2016 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
@@ -39,11 +39,6 @@ function print_help() {
     echo "This program uses hfst-lookup"
 }
 
-
-function analyse() {
-    cat $@ | @HLOOKUP@ "$omorfifile" |\
-        sed -e "s:${markexpr}:${marker}:g" -e "s/${unmarkexpr}//g"
-}
 
 while test $# -gt 0 ; do 
     if test x$1 == x-h -o x$1 == x--help ; then
@@ -100,11 +95,4 @@ else
     markexpr='\('${markexpr#\\\|}'\)'
 fi
 
-omorfifile=$(find_omorfi segment)
-if test -z "$omorfifile" ; then
-    print_usage
-    find_help segment
-    exit 2
-fi
-analyse $@
-
+cat $@ | omorfi_segment $marker $markexpr $unmarkexpr

@@ -200,6 +200,10 @@ public class Omorfi
             stdpaths.add(System.getenv("HOME") + "/.hfst/fi/");
             stdpaths.add(System.getenv("HOME") + "/.omorfi/");
         }
+        stdpaths.add("./");
+        stdpaths.add("generated/");
+        stdpaths.add("src/generated/");
+        stdpaths.add("../src/generated/");
         for (String path : stdpaths)
         {
             System.out.println("Loading " + path);

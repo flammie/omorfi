@@ -3,6 +3,30 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20160515
+
+* Universal Dependencies for Finnish is the new standard format we now follow:
+    * POS is now UPOS and classes were changed accordingly (new classes: AUX,
+      PROPN, DET, CONJ, SCONJ, PUNCT, SYM, and VERB, NOUN, ADP, ADV as before)
+    * other features mostly match the feature field in UD documentation
+    * release cycle aims to be same six month cycle as with UD
+    * the automatic tests verify compatibility with UD; 92 % of lemmas, primary
+      POS tags and morphological features are the same as Finnish UD corpus,
+      75 % same as Finnish FTB UD corpus
+    * analyser for reading and writing CONLL-U format
+* tokenisation as script and more hacks to token stripping in corner cases
+* continuous integration with travis-ci, currently only testing basic script
+  programming conventions
+* added a lot of high coverage words and forms by hand
+* by popular request, some of the words can now be blacklisted, when you don't
+  want that guy named Mutta to ambiguate your conjunction analyses or the odd
+  new guinean bird to clash with some common verb
+* the "database" is now only keyed on lemma + homonym number; paradigm is extra
+  information like anything else
+* a lot of work on morphological segmentation towards statistical machine
+  translation; check proceedings of WMT shared tasks 2015 and 2016 to see why
+* started refactoring some python code into classes
+
 ## Significant changes in 20150904
 
 * allomorphy can be tagged again to distinguish e.g. *-iden* and *-itten* when

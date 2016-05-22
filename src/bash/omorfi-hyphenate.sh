@@ -3,8 +3,8 @@
 args=$@
 hyphen="-"
 function print_version() {
-    echo "omorfi-hyphenate 0.1"
-    echo "Copyright (c) 2012 Tommi A Pirinen"
+    echo "omorfi-hyphenate 0.2 (using omorfi bash API $omorfiapi)"
+    echo "Copyright (c) 2016 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
@@ -26,12 +26,6 @@ function print_help() {
 }
 
 
-function hyphenate() {
-    cat $@ | hfst-lookup -x "$omorfifile" |\
-        sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
-            -e "s/-4/$hyphen/g"
-}
-
 if test x$1 == x-h -o x$1 == x--help ; then
     print_usage
     print_help
@@ -42,10 +36,8 @@ elif test x$1 == x-V -o x$1 == x--version ; then
 elif test x$1 == x-v -o x$1 == x--verbose ; then
     verbose=verbose
     shift 1
-elif test ! -r $1 ; then
-    echo "Cannot read from $1"
-    print_usage
-    exit 1
+elif test x$1 == x--hyphen ; then
+    hyphen=$2
+    shift 2
 fi
-omorfifile=$(find_omorfi hyphenate)
-hyphenate $@
+cat $@ | omorfi_hyphenate $hyphen

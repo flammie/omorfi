@@ -36,6 +36,7 @@ ADJ_KADE	ADJ	ADJECTIVE	48	F	False	strengthen	back	None	None	False	False
 ADJ_KELPO	ADJ	ADJECTIVE	1	E	False	weaken	back	None	None	False	False
 ADJ_KOHELO	ADJ	ADJECTIVE	2	None	False	weaken	back	None	None	False	False
 ADJ_KOLKKO	ADJ	ADJECTIVE	1	A	False	weaken	back	None	None	False	False
+ADJ_KOLMAS	ADJ	ADJECTIVE	45	None	False	strengthen	back	None	None	False	False
 ADJ_KORKEA	ADJ	ADJECTIVE	15	None	False	weaken	back	a	None	False	False
 ADJ_KULTA	ADJ	ADJECTIVE	10	I	False	weaken	back	a	None	False	False
 ADJ_KULUNUT	ADJ	ADJECTIVE	47	None	False	strengthen	back	u	None	False	False
@@ -64,6 +65,7 @@ ADJ_MYKKÄ	ADJ	ADJECTIVE	10	A	False	weaken	front	ä	None	False	False
 ADJ_MYKKÄ	ADJ	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False
 ADJ_MÄRKÄ	ADJ	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False
 ADJ_MÄTÄ	ADJ	ADJECTIVE	10	F	False	weaken	front	ä	None	False	False
+ADJ_NELJÄS	ADJ	ADJECTIVE	45	None	False	strengthen	front	None	None	False	False
 ADJ_OHUT	ADJ	ADJECTIVE	43	None	False	strengthen	back	None	None	False	False
 ADJ_OIKEE	ADJ	ADJECTIVE	15	None	False	weaken	back	None	None	False	False
 ADJ_OPAAKKI	ADJ	ADJECTIVE	5	A	False	weaken	back	None	None	False	False
@@ -1708,12 +1710,13 @@ PRON_USEAMPI	PRON	PRONOUN	16	H	False	weaken	back	None	None	False	False
 PRON_USEIMMAT	PRON	PRONOUN	36	None	False	strengthen	back	None	None	False	False
 PRON_YKSI	PRON	PRONOUN	31	None	False	weaken	front	None	None	False	False
 PROPN_51Iso-Britannia	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
-PROPN_51Tyynimeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
-PROPN_51Punainenmeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
 PROPN_51Mustameri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
+PROPN_51Punainenmeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
+PROPN_51Tyynimeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
 PROPN_51Uusikaupunki	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
 PROPN_51Uusimaa	PROPN	PROPN	51	None	False	weaken	back	None	None	False	False
 PROPN_51Uusi-Seelanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False
+PROPN_A.	PROPN	NOUN	99	None	False	False	back	None	None	False	False
 PROPN_AAKKOSELLISUUS	PROPN	NOUN	40	None	False	strengthen	back	None	None	False	False
 PROPN_AAKKOSTAMINEN	PROPN	NOUN	38	None	False	strengthen	back	None	None	False	False
 PROPN_AALLOT	PROPN	NOUN	1	I	obligatory	weaken	back	None	None	False	False
@@ -1966,6 +1969,7 @@ PROPN_MALMÖ	PROPN	NOUN	21	None	False	weaken	front	ö	None	False	False
 PROPN_MARKKINAT	PROPN	NOUN	12	None	obligatory	weaken	back	None	None	False	False
 PROPN_MATEE	PROPN	NOUN	18	None	False	weaken	back	e	None	False	False
 PROPN_MATKUET	PROPN	NOUN	43	None	obligatory	strengthen	back	None	None	False	False
+PROPN_MC	PROPN	NOUN	99	None	False	False	back	None	None	False	False
 PROPN_MERI	PROPN	NOUN	1024	None	False	weaken	back	None	None	False	False
 PROPN_MERTU	PROPN	NOUN	1	K	False	weaken	back	None	None	False	False
 PROPN_METTE	PROPN	NOUN	8	C	False	weaken	front	None	None	False	False
@@ -2202,6 +2206,7 @@ PROPN_VINKU	PROPN	NOUN	1	G	False	weaken	back	None	None	False	False
 PROPN_VIRSI	PROPN	NOUN	28	K	False	weaken	front	None	None	False	False
 PROPN_VODĂ	PROPN	NOUN	10	None	False	weaken	back	None	None	False	False
 PROPN_VOIMA	PROPN	NOUN	10	None	False	weaken	back	a	None	False	False
+PROPN_VON	PROPN	NOUN	99	None	False	False	back	None	None	False	False
 PROPN_VUO	PROPN	NOUN	19	None	False	weaken	back	None	None	False	False
 PROPN_VUODET	PROPN	NOUN	27	None	obligatory	weaken	back	None	None	False	False
 PROPN_VUOLLE	PROPN	NOUN	48	I	False	strengthen	back	None	None	False	False
@@ -2224,9 +2229,9 @@ PUNCT_PILKKU	PUNCT	PUNCTUATION	99	None	False	None	back	None	None	True	True
 PUNCT_PISTE	PUNCT	PUNCTUATION	99	None	False	None	front	None	None	True	True
 SCONJ_ETTÄ	SCONJ	PARTICLE	99	None	False	False	front	None	None	False	False
 SYM_,	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True
-SYM_.	PUNCT	PUNCTUATION	99	None	False	None	front	None	None	True	True
+SYM_.	SYM	PUNCTUATION	99	None	False	None	front	None	None	True	True
 SYM_§	SYM	PUNCTUATION	99	None	False	None	front	None	None	True	True
-SYM_¢	NOUN	ACRONYM	0	None	False	weaken	front	None	None	False	False
+SYM_¢	SYM	ACRONYM	99	None	False	weaken	front	None	None	False	False
 SYM_$	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True
 SYM_£	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True
 SYM_€	SYM	ACRONYM	0	None	False	False	back	None	None	False	False
@@ -2235,7 +2240,7 @@ SYM_GRAMMA	SYM	ACRONYM	0	None	False	weaken	back	None	None	False	False
 SYM_JOULE	SYM	ACRONYM	0	None	False	weaken	back	None	None	False	False
 SYM_METRI	SYM	ACRONYM	0	None	False	False	front	None	None	False	False
 SYM_TUOTE	SYM	ACRONYM	0	None	False	strengthen	back	None	None	False	False
-SYM_WEBER	NOUN	ACRONYM	0	None	False	weaken	front	None	None	False	False
+SYM_WEBER	SYM	ACRONYM	0	None	False	weaken	front	None	None	False	False
 SYM_Ω	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True
 VERB_AALLOTA	VERB	VERB	75	I	False	strengthen	back	None	None	False	False
 VERB_AHNEHTIA	VERB	VERB	61	F	False	weaken	back	None	None	False	False
@@ -2251,6 +2256,7 @@ VERB_ERATA	VERB	VERB	72	D	False	strengthen	back	None	None	False	False
 VERB_ETUILLA	VERB	VERB	67	None	False	strengthen	back	None	None	False	False
 VERB_HALAJAA	VERB	VERB	78	None	False	weaken	back	None	None	False	False
 VERB_HALJETA	VERB	VERB	74	L	False	strengthen	back	None	None	False	False
+VERB_HALUTA	VERB	VERB	75	None	False	strengthen	back	None	None	False	False
 VERB_HAPATA	VERB	VERB	72	B	False	strengthen	back	None	None	False	False
 VERB_HARPPOA	VERB	VERB	52	B	False	weaken	back	None	None	False	False
 VERB_HAUKKOA	VERB	VERB	52	A	False	weaken	back	None	None	False	False
