@@ -26,6 +26,10 @@ from .settings import deriv_boundary, morph_boundary, stub_boundary, weak_bounda
 
 
 class GiellaFormatter(Formatter):
+    """Formatter for making giellatekno.uit.no from omorfi data.
+
+    Note that using this requires some manual work, you should not just blindly
+    delete progress made by others since data in giella svn is hand-made."""
     giella_multichars = {
         '+A',
         '+ABBR',

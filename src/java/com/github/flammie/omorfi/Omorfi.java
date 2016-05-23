@@ -100,6 +100,8 @@ public class Omorfi
      * automaton, first part is parsed as an identifier typically starting
      * with the word omorfi, followed by any extras, such as the tagset for
      * analysis or generation.
+     *
+     * @param path a string for path containing automata to be loaded.
      */
     public void load(String path) throws java.io.FileNotFoundException,
            java.io.IOException, net.sf.hfst.FormatException
@@ -230,6 +232,10 @@ public class Omorfi
       * 
       * The analyses with case mangling will have an additional element to them
       * identifying the casing.
+      *
+      * @param wf wordform to analyse
+      * @param automaton identifier of automaton to use for analyses
+      * @return a collection of analyses in string format
       */
     public Collection<String> analyse(String wf, String automaton) throws net.sf.hfst.NoTokenizationException
     {
@@ -303,6 +309,9 @@ public class Omorfi
       *
       * If no tokeniser are present, or none give results, the line will be
       * tokenised using java's basic string functions.
+      *
+      * @param line line of text to be split to tokens
+      * @return a collection of tokens excluding space-like stuff in between.
       */
     public Collection<String> tokenise(String line)
     {

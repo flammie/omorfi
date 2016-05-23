@@ -28,7 +28,7 @@ from .omor_formatter import OmorFormatter
 
 
 class LexcMulticharsTest(unittest.TestCase):
-
+    """Unit tests for Lexc multichars compatibility of formatters."""
     def test_multichars():
         formatter = OmorFormatter(False)
         formatter.format_multichars_lexc()

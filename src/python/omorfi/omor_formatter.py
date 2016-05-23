@@ -27,6 +27,7 @@ from .lexc_formatter import lexc_escape
 
 
 class OmorFormatter(Formatter):
+    """A formatter for making standard omor style analysis symbols."""
     common_multichars = {
         '[ABBR=ABBREVIATION]',
         '[ABBR=ACRONYM]',

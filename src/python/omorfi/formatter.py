@@ -47,11 +47,18 @@ class Formatter(metaclass=ABCMeta):
     """
 
     def __init__(self, verbosity=False, **kwargs):
-        """Construct formatter with given verbosity."""
+        """Construct formatter with given verbosity.
+        
+        @param verbosity whether to print messages while processing
+        @param kwargs keyword map to determine what automata to load
+        """
         self._verbosity = verbosity
 
     def copyright_lexc(self):
-        """Return copyright declaration in lexc format"""
+        """Return copyright declaration in lexc format.
+        
+        @return string holding current copyright declaration in lexc comment.
+        """
         return "! Copyright 2015 Omorfi Contributors, GNU GPLv3"
 
     @abstractmethod

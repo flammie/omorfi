@@ -26,6 +26,7 @@ from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boun
 
 
 class Ftb3Formatter(Formatter):
+    """Formatter to make FTB3.1 compatible analyses from omorfi data."""
     multichars = {
         '% A',
         '% V',
@@ -351,6 +352,10 @@ class Ftb3Formatter(Formatter):
                   }
 
     def __init__(self, verbose=True):
+        """Create formatter for FTB3.1 tagset with given verbosity.
+
+        @param verbose whether to print while processing.
+        """
         self.verbose = verbose
         fail = False
         for stuff, ftb3 in self.stuff2ftb3.items():
@@ -365,6 +370,11 @@ class Ftb3Formatter(Formatter):
             self.tainted = True
 
     def stuff2lexc(self, stuff):
+        """Convert omor tag to FTB3 lexc format.
+
+        @param stuff omor tag as string
+        @return string containing lexc formatted analysis.
+        """
         if stuff == '0':
             return "0"
         elif stuff in self.stuff2ftb3:
@@ -375,6 +385,11 @@ class Ftb3Formatter(Formatter):
             return ""
 
     def analyses2lexc(self, anals):
+        """Convert omor analyses to FTB3 lexc format.
+
+        @param anals omor tags as string
+        @return string containing lexc formatted analyses.
+        """
         ftbstring = ""
         if 'Nneg|Vact' in anals:
             anals = anals.replace('|Vact', '')
@@ -439,6 +454,10 @@ class Ftb3Formatter(Formatter):
         return ftbstring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Convert analysis, surface, continuation triplet to lexc entry
+
+        @return string containing lexc entry.
+        """
         ftbstring = self.analyses2lexc(anals)
         if 'COMPOUND' in cont:
             # XXX: there was += before
@@ -453,8 +472,9 @@ class Ftb3Formatter(Formatter):
         return "%s:%s\t%s ;\n" % (ftbstring, surf, cont)
 
     def wordmap2lexc(self, wordmap):
-        '''
-        format string for canonical ftb3 format for morphological analysis
+        '''format string for ftb3 lexc format for morphological analysis.
+
+        @return string containing lexc entries
         '''
         if wordmap['stub'] == ' ':
             # do not include normal white space for now
@@ -525,6 +545,10 @@ class Ftb3Formatter(Formatter):
         return "\n".join(retvals)
 
     def multichars_lexc(self):
+        """Create lexc multichars declaration for FTB3.1 format.
+
+        @return string containing lexc multichars section.
+        """
         multichars = "Multichar_Symbols\n"
         multichars += "!! FTB 3.1 multichar set:\n"
         for mcs in self.multichars:
@@ -533,6 +557,10 @@ class Ftb3Formatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Create lexc root lexicon for FTB3.1
+
+        @return string containing lexc root lexicon for FTB3.1"
+        """
         root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens left

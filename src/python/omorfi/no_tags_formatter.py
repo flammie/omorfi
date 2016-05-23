@@ -26,6 +26,7 @@ from .settings import optional_hyphen, word_boundary
 
 
 class NoTagsFormatter(Formatter):
+    """A formatter to make acceptors with very little to no analyses."""
 
     def __init__(self, verbose=True, **kwargs):
         self.verbose = verbose

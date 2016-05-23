@@ -27,6 +27,10 @@ from .settings import optional_hyphen, word_boundary
 
 
 class LabeledSegmentsFormatter(Formatter):
+    """A formatter for morphological segment analyser, experimental.
+
+    This system is to replicate the labeled morphological segmentation of other
+    unsupervised projects, such as: ..."""
 
     multichars = {
         '[ADJ]',

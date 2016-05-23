@@ -27,6 +27,9 @@ from .settings import optional_hyphen, weak_boundary, word_boundary
 
 
 class ApertiumFormatter(Formatter):
+    """A formatter for making apertium-fin from omorfi data."""
+
+    ## set of multichar symbols used in apertium 
     apertium_multichars = {
         "-",
         "",
@@ -131,6 +134,7 @@ class ApertiumFormatter(Formatter):
         "vaux",
         "vblex"
     }
+    ## mapping between omor codes and apertium multichars
     stuff2apertium = {
         "Aiden": "",
         "Aien": "",
@@ -353,7 +357,10 @@ class ApertiumFormatter(Formatter):
         "": ""
     }
 
+
     def __init__(self, verbose=True):
+        """Create apertium formatter with given verbosity."""
+        ## controls printing while processing
         self.verbose = verbose
         for stuff, ape in self.stuff2apertium.items():
             if len(ape) < 2:
@@ -368,6 +375,10 @@ class ApertiumFormatter(Formatter):
                           " is not a valid apertium multichar_symbol!")
 
     def stuff2lexc(self, stuff):
+        """Translate from omorfi tags to lexc strings.
+        
+        @return string containing lexc format tag
+        """
         if len(stuff) == 0:
             return ""
         elif stuff in self.stuff2apertium:
@@ -382,12 +393,20 @@ class ApertiumFormatter(Formatter):
             return ""
 
     def analyses2lexc(self, anals):
+        """Translate omorfi analysis string to lexc.
+        
+        @return string containing lexc format analysis
+        """
         apestring = ''
         for i in anals.split('|'):
             apestring += self.stuff2lexc(i)
         return apestring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Translate analysis, surface, continuation triplet to lexc format.
+        
+        @return string containing lexc formatted entry.
+        """
         analstring = self.analyses2lexc(anals)
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
@@ -398,6 +417,10 @@ class ApertiumFormatter(Formatter):
         return "%s:%s\t%s ;\n" % (analstring, surf, cont)
 
     def wordmap2lexc(self, wordmap):
+        """Translate filled wordmap to lexc format.
+        
+        @return string containing lexc formatted entry.
+        """
         if wordmap['lemma'] == ' ':
             # apertium fails when surf == ' '
             return ''
@@ -467,6 +490,10 @@ class ApertiumFormatter(Formatter):
         return retvals
 
     def multichars_lexc(self):
+        """Generate lexc multichars declaration.
+        
+        @return string containing lexc multichar declaration of apertium tags
+        """
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"
         for mcs in sorted(self.apertium_multichars):
             if '><' not in mcs and mcs not in ['', '+', '-', '#', '0']:
@@ -475,6 +502,10 @@ class ApertiumFormatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Generate lexc root lexicon.
+        
+        @return string containing lexc root lexicon
+        """
         root = Formatter.root_lexicon_lexc(self)
         return root
 
