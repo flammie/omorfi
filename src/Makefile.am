@@ -86,7 +86,7 @@ SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
 # {{{Generated files
 if WANT_HFST
 GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
-				 generated/omorfi.tokenise.hfst
+				 generated/omorfi.tokenise.pmatchfst
 if WANT_LEMMATISE
 GENERIC_AUTOMATA+=generated/omorfi.lemmatise.hfst
 endif
@@ -337,6 +337,11 @@ generated/omorfi-token.regex:
 generated/omorfi-token-separator.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r token-separator -o $@
+
+generated/omorfi.tokenise.pmatchfst: tokeniser/omorfi.tokenise.pmatch
+	pushd tokeniser
+	hfst-pmatch2fst -v -i omorfi.tokenise.pmatch -o ../generated/omorfi.tokenise.pmatchfst
+	popd
 
 generated/omorfi-hyphenate.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
