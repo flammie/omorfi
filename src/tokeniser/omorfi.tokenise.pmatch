@@ -1,4 +1,4 @@
-define dictword @"../generated/omorfi.accept.hfst";
+define dictword @"generated/omorfi.accept.hfst";
 define token LC(Whitespace | Punct | #) [dictword | Punct] RC(Whitespace | Punct | #) ;
 define TOP token;
 

@@ -339,9 +339,7 @@ generated/omorfi-token-separator.regex:
 		-r token-separator -o $@
 
 generated/omorfi.tokenise.pmatchfst: tokeniser/omorfi.tokenise.pmatch
-	pushd tokeniser
-	hfst-pmatch2fst -v -i omorfi.tokenise.pmatch -o ../generated/omorfi.tokenise.pmatchfst
-	popd
+	hfst-pmatch2fst -v -i $< -o $@ 
 
 generated/omorfi-hyphenate.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
