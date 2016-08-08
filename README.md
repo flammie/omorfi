@@ -127,6 +127,7 @@ The following uses *hfst-ospell*:
 
 The following are *python* scripts:
 vi
+- `omorfi-tokenise.py`: format raw text into tokens (words and puncts).
 - `omorfi-conllu.py`: analyse and generate CONLL-U formatted data (Universal
   Dependencies) format
 - `omorfi-vislcg.py`: analyse raw texts into VISL CG 3 format
@@ -149,10 +150,52 @@ $
 was executed on my laptop or work desktop because it didn't work on taito
 cluster. This is a hint that something requires more software to be installed.
 
+### Raw text tokenisation
+
+For many tasks you need to tokenise text before using it, this may involve:
+splitting punctuation from words, recasing, etc. Also formatting text into word
+per line, space-separated or more advanced formats like CONLL-U. There's only
+one tool `omorfi-tokenise.py` for this.
+
+```
+$ omorfi-tokenise.py -v -i test/newstest2015-fien-src.fi.text | tail
+kaupungin tiedotteen mukaan lähetys ei ole mahdollinen teknisten ongelmien vuoksi .
+Kouvolan kaupunki pahoittelee tilannetta .
+jälkitallenteen voi katsoa parin päivän päästä kokouksesta .
+Kouvolan kaupunginvaltuuston kokouksia on voinut katsoa internetin kautta vuoden alusta .
+seuraavan kerran päätöksentekoa voi seurata suorana 13.10.2014.
+valtuuston kokousvideot löytyvät osoitteesta http://www.kouvola.fi/index/aikuisvaestolle/paatoksenteko/valtuustoverkossa.html ja Kouvolan kaupungin YouTube-kanavalta .
+Lines: 1370 Tokens: 19755 Ratio: 14.41970802919708 tokens/line
+CPU time: 0.183332214 Real time: 0.30890897917561233
+Tokens per timeunit: 63950.87657445347 Lines per timeunit: 4434.963346342761
+```
+
+For CONLL-U and so Universal dependencies, you'd use `-O conllu`:
+
+```
+$ omorfi-tokenise.py -v -i test/newstest2015-fien-src.fi.text -O conllu| tail
+# sentence-text: Valtuuston kokousvideot löytyvät osoitteesta http://www.kouvola.fi/index/aikuisvaestolle/paatoksenteko/valtuustoverkossa.html ja Kouvolan kaupungin YouTube-kanavalta.
+1   valtuuston  _   _   _   _   _   _   _   LOWERCASED=Valtuuston
+2   kokousvideot    _   _   _   _   _   _   _   ORIGINALCASE
+3   löytyvät    _   _   _   _   _   _   _   ORIGINALCASE
+4   osoitteesta _   _   _   _   _   _   _   ORIGINALCASE
+5   http://www.kouvola.fi/index/aikuisvaestolle/paatoksenteko/valtuustoverkossa.html    _   __  _   _   _   _   SpaceBefore=No|SpaceAfter=No
+6   ja  _   _   _   _   _   _   _   ORIGINALCASE
+7   Kouvolan    _   _   _   _   _   _   _   ORIGINALCASE
+8   kaupungin   _   _   _   _   _   _   _   ORIGINALCASE
+9   YouTube-kanavalta   _   _   _   _   _   _   _   ORIGINALCASE|SpaceAfter=No
+10  .   _   _   _   _   _   _   _   SpaceBefore=No
+
+Lines: 1370 Tokens: 19755 Ratio: 14.41970802919708 tokens/line
+CPU time: 0.234918811 Real time: 0.2349290030542761
+```
 
 ### Morphological analysis
 
-Different kinds of morphological analysis use cases.
+Different kinds of morphological analysis use cases: traditional linguitsics
+with Xerox-style analysis, followed by constraitn grammars, or Universal
+dependency pre-parses, or factorised analysis for statistical machine
+ranslations.
 
 #### Xerox / Finite-State Morphology format
 
@@ -243,6 +286,51 @@ Kuntaliitoksen|kuntaliitos|UNK|NOUN.SG.GEN|0 selvittämisessä|selvittäminen|UN
 The input should be in format produced by moses's `tokenizer.perl` (truecase or
 clean-corpus-n not necessary). The output is readily usable by Moses train
 model.
+
+#### Universal Dependencies pre-parse format
+
+[Universal Dependencies](http://universaldependencies.org) TODO
+
+Universal dependencies parsing requires input in pre-tokenised,
+CONLL-U format, only fields INDEX, SURF and MISC are made use of in
+basic version.
+
+```
+$ python3 src/python/omorfi-conllu.py -v -i test/UD_Finnish/fi-ud-dev.conllu | tail -n 40
+# sentence-text: Onnettomuuspaikkaa ja kyseistä rataosaa ei ollut vielä uudistettu TGV-junia varten.
+1   Onnettomuuspaikkaa  onnettomuuspaikka   NOUN    N   Case=Par|Number=Sing    _   __  _
+2   ja  ja  ADV Adv _   _   _   _   _
+3   kyseistä    kyse    NOUN    N   Case=Ela|Number=Plur    _   _   _   _
+4   rataosaa    rataosa NOUN    N   Case=Par|Number=Sing    _   _   _   _
+5   ei  ei  VERB    V   Negative=Neg|Number=Sing|Person=3|VerbForm=Fin|Voice=Act    __  _   _
+6   ollut   olla    AUX V   Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass  _   _   _   _
+7   vielä   vielä   ADV Adv _   _   _   _   _
+8   uudistettu  uudistaa    VERB    V   Connegative=Yes|Mood=Ind|Tense=Past|VerbForm=Fin    _   _   _   _
+9   TGV-junia   TGV#juna    NOUN    N   Case=Par|Number=Plur    _   _   _   _
+10  varten  varten  ADP Adp AdpType=Post    _   _   _   _
+11  .   .   PUNCT   Punct   _   _   _   _   _
+```
+
+This can be combined with tokenisation to analyse raw corpora:
+
+```
+$ python3 src/python/omorfi-tokenise.py -O conllu -i test/newstest2015-fien-src.fi.text | python3 src/python/omorfi-conllu.py | tail -n 40
+# sentence-text: Valtuuston kokousvideot löytyvät osoitteesta http://www.kouvola.fi/index/aikuisvaestolle/paatoksenteko/valtuustoverkossa.html ja Kouvolan kaupungin YouTube-kanavalta.
+1   valtuuston  valtuusto   NOUN    N   Case=Gen|Number=Sing    _   _   _   _
+2   kokousvideot    kokous#video    NOUN    N   Case=Nom|Number=Plur    _   _   _   _
+3   löytyvät    löytyä  VERB    V   Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act _   _   _   _
+4   osoitteesta osoite  NOUN    N   Case=Ela|Number=Sing    _   _   _   _
+5   http://www.kouvola.fi/index/aikuisvaestolle/paatoksenteko/valtuustoverkossa.html    http://www.kouvola.fi/index/aikuisvaestolle/paatoksenteko/valtuustoverkossa.html    X   X   _   __  _   _
+6   ja  ja  ADV Adv _   _   _   _   _
+7   Kouvolan    Kouvola PROPN   N   Case=Gen|Number=Sing    _   _   _   _
+8   kaupungin   kaupunki    NOUN    N   Case=Gen|Number=Sing    _   _   _   _
+9   YouTube-kanavalta   YouTube#kanava  NOUN    N   Case=Abl|Number=Sing    _   _   __
+10  .   .   PUNCT   Punct   _   _   _   _   _
+```
+
+There's a cheat mode that can be used with UD training data to always select
+the best match, for evaluation purposes: `--oracle`. There's a debug mode to
+print full n-best for each token: `--debug`, this is pseudo CONLL-U.
 
 ### Morphological segmentation
 
