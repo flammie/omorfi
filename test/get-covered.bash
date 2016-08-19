@@ -1,6 +1,6 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=10
+nc=11
 function preprocess() {
     cat $@ > .tokenise 
     split -l 500000 .tokenise
@@ -203,4 +203,35 @@ if ! test -f "tatoeba-fi.uniq.freqs" ; then
     fi
     echo count
     frequency_list tatoeba-fi.tokens > tatoeba-fi.uniq.freqs
+fi
+
+# Turku Internet Parse Bank
+echo Internet parse bank... corpus 11/$nc
+if ! test -f "5grams.uniq.freqs" ; then
+    if ! test -f "5grams.tokens" ; then
+        if ! test -f 5grams.text ; then
+            if ! test -f 5grams.01.txt.gz ; then
+                echo fetch 1/4
+                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.01.txt.gz
+            fi
+            if ! test -f 5grams.02.txt.gz ; then
+                echo fetch 2/4
+                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.02.txt.gz
+            fi
+            if ! test -f 5grams.03.txt.gz ; then
+                echo fetch 3/4
+                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.03.txt.gz
+            fi
+            if ! test -f 5grams.04.txt.gz ; then
+                echo fetch 4/4
+                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.04.txt.gz
+            fi
+            echo unpack
+            zcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
+        fi
+        echo tokenise
+        cat 5grams.text | tr ' ' '\n' | cut -d/ -f1 > 5grams.tokens
+    fi
+    echo count
+    frequency_list 5grams.tokens > 5grams.uniq.freqs
 fi

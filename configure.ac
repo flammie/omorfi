@@ -282,24 +282,6 @@ AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi.bash])
-AC_CONFIG_FILES([test/coverage-europarl.sh],
-                [chmod +x test/coverage-europarl.sh])
-AC_CONFIG_FILES([test/coverage-fiwiki.sh],
-                [chmod +x test/coverage-fiwiki.sh])
-AC_CONFIG_FILES([test/coverage-gutenberg.sh],
-                [chmod +x test/coverage-gutenberg.sh])
-AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
-                [chmod +x test/coverage-jrc-acquis.sh])
-AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
-                [chmod +x test/coverage-ftb-3.1.sh])
-AC_CONFIG_FILES([test/coverage-fi-ud.sh],
-                [chmod +x test/coverage-fi-ud.sh])
-AC_CONFIG_FILES([test/coverage-fi-ftb-ud.sh],
-                [chmod +x test/coverage-fi-ftb-ud.sh])
-AC_CONFIG_FILES([test/coverage-tatoeba.bash],
-                [chmod +x test/coverage-tatoeba.bash])
-AC_CONFIG_FILES([test/coverage-opensubtitles.bash],
-                [chmod +x test/coverage-opensubtitles.bash])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
                 [chmod +x test/faithfulness-ftb-3.1.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
@@ -312,6 +294,8 @@ AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.sh],
                 [chmod +x test/coverages-all-quick.sh])
+AC_CONFIG_FILES([test/coverages-all-slow.bash],
+                [chmod +x test/coverages-all-slow.bash])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 AS_IF([test x$with_slurm_mail != xno],
