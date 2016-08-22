@@ -1,0 +1,45 @@
+#!/bin/bash
+# coverage for europarl
+fsa="@top_builddir@/src/generated/"
+if test -z $srcdir ; then
+    echo invoke from make check or define srcdir=.
+    exit 1
+fi
+if ! test -r $fsa ; then
+    echo Unable to find built fsa for tests: $fsa
+    exit 77
+fi
+if ! test -x @PYTHON@ ; then
+    echo python missing, cannot run tests
+    exit 77
+fi
+
+
+function coverage_check() {
+    if ! test -f "$1.uniq.freqs" ; then
+        echo missing corpus data $1.uniq.freqs, run get-covered.bash and retry
+        exit 77
+    fi
+    echo Looking up $1.uniq.freqs for at least $2 % coverage
+    if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
+            $srcdir/coverage.py -f $fsa -i $1.uniq.freqs -c $hapax\
+            -o $1.log -t $2 ; then
+        exit 1
+    fi
+    return 0
+}
+
+# fast and cheap: no hapaxes
+hapax=1
+coverage_check "europarl-v7.fi-en.fi" 95
+coverage_check "fi_ftb-ud-all" 96
+coverage_check "fi-ud-all" 96
+coverage_check "ftb3.1" 96
+coverage_check "gutenberg-fi" 96
+# ehh, hapax legomena 1 requires few gigabytes here...
+hapax=2
+coverage_check "jrc-fi" 93
+coverage_check "fiwiki-latest-pages-articles" 91
+# actually, a threshold of 3 is too much
+hapax=5
+coverage_check "5grams" 90
