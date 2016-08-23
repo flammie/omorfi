@@ -32,14 +32,17 @@ function coverage_check() {
 # fast and cheap: no hapaxes
 hapax=1
 coverage_check "europarl-v7.fi-en.fi" 95
-coverage_check "fi_ftb-ud-all" 96
-coverage_check "fi-ud-all" 96
+coverage_check "fi_ftb-ud" 96
+coverage_check "fi-ud" 96
 coverage_check "ftb3.1" 96
+coverage_check "ftb1-2014" 96
 coverage_check "gutenberg-fi" 96
+coverage_check "OpenSubtitles2016.fi" 95
+coverage_check "tatoeba-fi" 95
 # ehh, hapax legomena 1 requires few gigabytes here...
 hapax=2
 coverage_check "jrc-fi" 93
 coverage_check "fiwiki-latest-pages-articles" 91
 # actually, a threshold of 3 is too much
-hapax=5
+hapax=8
 coverage_check "5grams" 90
