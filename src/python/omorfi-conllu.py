@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 # -*- coding: utf-8 -*-
 
 # string munging
@@ -50,7 +50,7 @@ def format_feats_ud(anal, hacks=None):
         key = f.split("=")[0].lstrip("[")
         value = f.split("=")[1].rstrip("]")
         if key == 'CASE':
-            if value == 'LAT':
+            if value == 'LAT' and hacks != 'ftb':
                 # XXX: hack to retain compability
                 rvs['Number'] = 'Sing'
             else:
@@ -66,8 +66,7 @@ def format_feats_ud(anal, hacks=None):
             elif 'PAST' in value:
                 rvs['Tense'] = 'Past'
         elif key == 'MOOD':
-            if not hacks:
-                rvs['VerbForm'] = 'Fin'
+            rvs['VerbForm'] = 'Fin'
             if value == 'INDV':
                 rvs['Mood'] = 'Ind'
             elif value == 'COND':
@@ -200,7 +199,8 @@ def format_feats_ud(anal, hacks=None):
                 # values found in UD finnish Derivs
                 rvs['Derivation'] = value[0] + value[1:].lower()
             elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
-                           'ADE', 'INE', 'ELA', 'ILL']:
+                           'ADE', 'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN',
+                           'HKO', 'ISA', 'MAINEN']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
