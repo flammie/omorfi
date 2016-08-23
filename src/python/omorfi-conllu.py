@@ -109,8 +109,7 @@ def format_feats_ud(anal, hacks=None):
                 rvs.pop('Voice')
             elif value == 'NEG':
                 rvs['Negative'] = 'Neg'
-                if not hacks:
-                    rvs['VerbForm'] = 'Fin'
+                rvs['VerbForm'] = 'Fin'
         elif key == 'PCP':
             rvs['VerbForm'] = 'Part'
             if value == 'VA':
@@ -147,8 +146,7 @@ def format_feats_ud(anal, hacks=None):
         elif key == 'SUBCAT':
             if value == 'NEG':
                 rvs['Negative'] = 'Neg'
-                if not hacks:
-                    rvs['VerbForm'] = 'Fin'
+                rvs['VerbForm'] = 'Fin'
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
             elif value == 'REFLEXIVE':
