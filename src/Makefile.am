@@ -206,11 +206,12 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-hyphenate.sh \
 		   bash/omorfi-segment.sh \
 		   bash/omorfi-disambiguate-text.sh \
-		   bash/validate-database.bash \
+		   bash/constraint-unique-keys.bash \
 		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
-TESTS=bash/validate-database.bash
+TESTS=bash/constraint-unique-keys.bash \
+	  bash/consistent-attribute-keys.bash
 XFAIL_TESTS=tdt_formatter.py
 
 # python is anti-unit tests
