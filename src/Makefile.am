@@ -8,7 +8,7 @@ BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 # Origins
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 # Lexicography
-# 
+#
 LEXEMES=lexemes.tsv
 # lexical features
 LEMMA_JOINS=attributes/abbr.tsv \
@@ -40,7 +40,7 @@ INFLECTIONS=continuations/inflections.tsv
 
 # }}}
 #
-# {{{Scripts 
+# {{{Scripts
 # NB: (variable name = SCIRPTS cause automagic _SCRIPTS)
 # tag formats
 FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
@@ -207,11 +207,15 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-segment.sh \
 		   bash/omorfi-disambiguate-text.sh \
 		   bash/constraint-unique-keys.bash \
+		   bash/consistent-attribute-keys.bash \
+		   bash/valid-datatypes.bash \
 		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
 TESTS=bash/constraint-unique-keys.bash \
-	  bash/consistent-attribute-keys.bash
+	  bash/consistent-attribute-keys.bash \
+	  bash/valid-datatypes.bash
+
 XFAIL_TESTS=tdt_formatter.py
 
 # python is anti-unit tests
@@ -251,7 +255,7 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/symbol-classes.tsv \
 		-j $(srcdir)/attributes/style.tsv \
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
-# 
+#
 generated/master.tsv: generated/joint.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms/morphophonology.tsv \
@@ -293,7 +297,7 @@ generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.ts
 		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=labelsegments
 
-# 
+#
 generated/omorfi-phon.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r phon -o $@
 
@@ -342,25 +346,25 @@ generated/omorfi-token-separator.regex:
 		-r token-separator -o $@
 
 generated/omorfi.tokenise.pmatchfst: tokeniser/omorfi.tokenise.pmatch
-	hfst-pmatch2fst -v -i $< > $@ 
+	hfst-pmatch2fst -v -i $< > $@
 
 generated/omorfi.tokenise.pmatchfst.debug1: tokeniser/omorfi.tokenise.pmatch
-	hfst-pmatch2fst -v -i $< > $@ 
+	hfst-pmatch2fst -v -i $< > $@
 
 generated/omorfi.tokenise.pmatchfst.debug2: tokeniser/omorfi.tokenise.pmatch
-	hfst-pmatch2fst -v -i $< -o $@ 
+	hfst-pmatch2fst -v -i $< -o $@
 
 generated/omorfi-hyphenate.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
 
-generated/omorfi-boundary.reweight: 
+generated/omorfi-boundary.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=boundary -o $@
 
-# database to omor 
+# database to omor
 generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor -v
 
-generated/omorfi-omor.reweight: 
+generated/omorfi-omor.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=omor -o $@
 
 generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
@@ -375,7 +379,7 @@ generated/omorfi-omor-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
 		-r rewrite-tags-omor -o $@
 
-# database to ftb3 
+# database to ftb3
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=ftb3 -v
 
@@ -460,7 +464,7 @@ generated/temporary.hyphenated.hfst: generated/omorfi.lexc.hfst \
 
 generated/temporary.boundary-weights.hfst: generated/temporary.hyphenated.hfst \
 		generated/omorfi-boundary.reweight
-	$(HREW) -T generated/omorfi-boundary.reweight $< -o $@ 
+	$(HREW) -T generated/omorfi-boundary.reweight $< -o $@
 
 # spelling variations
 generated/temporary.relaxed.hfst: generated/temporary.boundary-weights.hfst \
@@ -556,7 +560,7 @@ generated/temporary-labelsegments.hyphenated.hfst: generated/omorfi-labelsegment
 
 generated/temporary-labelsegments.boundary-weights.hfst: generated/temporary-labelsegments.hyphenated.hfst \
 		generated/omorfi-boundary.reweight
-	$(HREW) -T generated/omorfi-boundary.reweight $< -o $@ 
+	$(HREW) -T generated/omorfi-boundary.reweight $< -o $@
 
 # spelling variations
 generated/temporary-labelsegments.relaxed.hfst: generated/temporary-labelsegments.boundary-weights.hfst \
@@ -581,7 +585,7 @@ generated/temporary-labelsegments.unbounded.hfst: generated/temporary-labelsegme
 		$(HMIN) $(HFST_FLAGS) > $@
 
 
-# 
+#
 generated/omorfi.labelsegment.hfst: generated/temporary-labelsegments.unbounded.hfst
 	$(HINV) $< | $(HF2F) -f olw -o $@
 
@@ -662,7 +666,7 @@ generated/omorfi-ftb3.generate.hfst: generated/temporary-ftb3.hyphenated.hfst \
 # This Makefile was tested using Omorfi revision
 # 20141014-213-g12c4345.
 #
-# Differences between regular Omorfi and the ftb1 version: 
+# Differences between regular Omorfi and the ftb1 version:
 #
 # - Ftb1 uses a different label set than Omorfi.
 #
