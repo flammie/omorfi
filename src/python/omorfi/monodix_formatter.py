@@ -180,8 +180,17 @@ stuff2monodix = {
     "Dma": "+ma<n>",
     "Dmaton": "+maton<adj>",
     "Dminen": "+minen<n>",
+    "Dmainen": "+mainen<adj>",
+    "Dnen": "+nen<n>",
+    "Dllinen": "+llinen<n>",
     "Dmpi": "+mpi<adj>",
     "Dnut": "+nut<adj>",
+    "Dhko": "+hko<adj>",
+    "Disa": "+isa<adj>",
+    "Dtar": "+tar<n>",
+    "Dlainen": "+lainen<n>",
+    "Dton": "+ton<adj>",
+    "Dtuttaa": "+tuttaa<vblex>",
     "Ds": "+s<n>",
     "Dsti": "+sti<adv>",
     "Dtattaa": "+tattaa<vblex>",
@@ -210,6 +219,7 @@ stuff2monodix = {
     "INTERROGATIVE": "itg",
     "LAST": "ant",
     "LEMMA-START": "",
+    "LEMMA-END": "",
     "MAINF_arg": "vaux",
     "MEDIA": "",
     "MISC": "",
@@ -240,6 +250,7 @@ stuff2monodix = {
     "PRONOUN": "prn",
     "PRODUCT": "",
     "PROPER": "np",
+    "PROPN": "np",
     "Psg1": "p1><sg",
     "Psg2": "p2><sg",
     "Psg3": "p3><sg",
@@ -295,7 +306,9 @@ stuff2monodix = {
     "Xnom": "nom",
     "Xpar": "par",
     "Xtra": "tra",
+    "FTB3man": "",
     "X": "",
+    "XForeign": "",
     ".": "",
     "": ""
 }
@@ -343,11 +356,14 @@ def format_monodix_l(s):
         return ''
 
 
-def format_monodix_r(anals):
+def format_monodix_r(anals, stem):
     r = ''
     if anals != '0':
         for anal in anals.split('|'):
-            r += format_monodix_s(anal)
+            if anal == '@@COPY-STEM@@':
+                r += stem
+            else:
+                r += format_monodix_s(anal)
     return r
 
 
@@ -357,6 +373,7 @@ def format_monodix_s(stuff):
         s += '<s n="' + stuff2monodix[stuff] + '"/>'
     else:
         fail_formatting_missing_for(stuff, "monodix")
+        s = '<s n="ERROR"/>'
     if '><' in s:
         s = s.replace('><', '"/><s n="')
     elif '"+"' in s:
@@ -380,7 +397,7 @@ def format_monodix_pardef(fields):
             pardef += '<i>' + format_monodix_l(fields[2]) + '</i>'
         else:
             pardef += '<p><l>' + format_monodix_l(fields[2]) + '</l>'
-            pardef += '<r>' + format_monodix_r(fields[1]) + '</r></p>'
+            pardef += '<r>' + format_monodix_r(fields[1], fields[2]) + '</r></p>'
         if cont != '#':
             pardef += format_monodix_par(cont)
         pardef += '</e>\n'

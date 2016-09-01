@@ -1,4 +1,4 @@
-
+#!/bin/env python3
 # -*- coding: utf-8 -*-
 
 # string munging
@@ -18,7 +18,13 @@ def get_lemmas(anal):
     lemmas = re_lemma.finditer(anal[0])
     rv = []
     for lemma in lemmas:
-        rv += [lemma.group(1)]
+        s = lemma.group(1)
+        for i in range(32):
+            hnsuf = '_' + str(i)
+            if s.endswith(hnsuf):
+                s = s[:-len(hnsuf)]
+        rv += [s]
+
     return rv
 
 
@@ -198,7 +204,8 @@ def format_feats_ud(anal, hacks=None):
                 rvs['Derivation'] = value[0] + value[1:].lower()
             elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
                            'ADE', 'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN',
-                           'HKO', 'ISA', 'MAINEN']:
+                           'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA',
+                           'MA', 'LOC']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
