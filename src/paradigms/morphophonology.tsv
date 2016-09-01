@@ -374,6 +374,7 @@ NOUN_EKKE	NOUN	NOUN	8	A	False	weaken	front	None	None	False	False
 NOUN_ELIN	NOUN	NOUN	33	None	False	strengthen	front	None	None	False	False
 NOUN_ELÄMÄ	NOUN	NOUN	10	None	False	weaken	front	ä	None	False	False
 NOUN_EPÄILTY	NOUN	NOUN	1	I	False	weaken	front	None	None	False	False
+NOUN_ESIM.	ADV	PARTICLE	99	None	False	False	back	None	None	False	False
 NOUN_ESQUIMAU	NOUN	NOUN	21	None	False	weaken	back	o	None	False	False
 NOUN_EUGENE	NOUN	NOUN	2	None	False	weaken	back	None	None	False	False
 NOUN_EURO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False
@@ -2484,3 +2485,4 @@ X_51eikä	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	Fa
 X_51ettei	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
 X_51äläkä	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
 X_FORGN_EN	X	X	99	None	False	weaken	back	None	None	False	False
+X_FORGN_SV	X	X	99	None	False	weaken	back	None	None	False	False
