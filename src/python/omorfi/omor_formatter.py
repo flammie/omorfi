@@ -659,10 +659,10 @@ class OmorFormatter(Formatter):
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         if int(wordmap['homonym']) == 1:
             wordmap['analysis'] = "[WORD_ID=%s]" % (
-                    lexc_escape(wordmap['lemma']))
+                lexc_escape(wordmap['lemma']))
         else:
             wordmap['analysis'] = "[WORD_ID=%s_%s]" % (
-                    lexc_escape(wordmap['lemma']), wordmap['homonym'])
+                lexc_escape(wordmap['lemma']), wordmap['homonym'])
         wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
             wordmap['analysis'] += self.stuff2lexc('SUFFIX')
