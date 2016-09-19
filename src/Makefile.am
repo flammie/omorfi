@@ -206,15 +206,17 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-hyphenate.sh \
 		   bash/omorfi-segment.sh \
 		   bash/omorfi-disambiguate-text.sh \
-		   bash/constraint-unique-keys.bash \
-		   bash/consistent-attribute-keys.bash \
-		   bash/valid-datatypes.bash \
+		   test-scripts/constraint-unique-keys.bash \
+		   test-scripts/consistent-attribute-keys.bash \
+		   test-scripts/valid-datatypes.bash \
+		   test-scripts/lemmas-match-regexes.py \
 		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
-TESTS=bash/constraint-unique-keys.bash \
-	  bash/consistent-attribute-keys.bash \
-	  bash/valid-datatypes.bash
+TESTS=test-scripts/constraint-unique-keys.bash \
+	  test-scripts/consistent-attribute-keys.bash \
+	  test-scripts/valid-datatypes.bash \
+	  test-scripts/lemmas-match-regexes.bash
 
 XFAIL_TESTS=tdt_formatter.py
 
