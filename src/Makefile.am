@@ -263,7 +263,7 @@ generated/master.tsv: generated/joint.tsv
 		-j $(srcdir)/paradigms/morphophonology.tsv \
 		-c $(srcdir)/paradigms/stub-deletions.tsv -v -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
-	tail -n +2 < $@.unsrt | sort >> $@
+	tail -n +2 < $@.unsrt | sort -k 1,1 >> $@
 	-rm -f $@.unsrt
 
 generated/stemparts.tsv: $(STEMPARTS) generated/timestamp
@@ -1153,21 +1153,8 @@ generated/temporary-omor.unbounded.hfst: generated/temporary-omor.relaxed.hfst |
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
-# hand-written weights for omor
-generated/temporary-omor.tagweighted.hfst: generated/temporary-omor.unbounded.hfst generated/omorfi-omor.reweight
-	$(HREW) $(HFST_FLAGS) -T generated/omorfi-omor.reweight generated/temporary-omor.unbounded.hfst |\
-		$(HMIN) $(HFST_FLAGS) > $@
-
-# no token weights
-generated/temporary-omor.tokenweighted.hfst: generated/temporary-omor.tagweighted.hfst
-	cp -v $< $@
-
-# no other weight combinations
-generated/temporary-omor.weighted.hfst: generated/temporary-omor.tokenweighted.hfst
-	cp -v $< $@
-
 # create morphological analyzer
-generated/temporary.omor.hfst: generated/temporary-omor.weighted.hfst
+generated/temporary.omor.hfst: generated/temporary-omor.unbounded.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HMIN) $(HFST_FLAGS) > $@
 
