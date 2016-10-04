@@ -231,8 +231,8 @@ def format_feats_ud(anal, hacks=None):
             print("in", anal[0])
             exit(1)
     rv = ''
-    for k, v in sorted(rvs.items()):
-        rv += k + '=' + v + '|'
+    for k in sorted(rvs, key=str.lower):
+        rv += k + '=' + rvs[k] + '|'
     if len(rvs) != 0:
         return rv.rstrip('|')
     else:
