@@ -640,6 +640,8 @@ class OmorFormatter(Formatter):
         for tag in anals.split('|'):
             if tag == '@@COPY-STEM@@':
                 omorstring += lexc_escape(surf)
+            elif tag.startswith('@@LITERAL') and tag.endswith('@@'):
+                omorstring += lexc_escape(tag[len('@@LITERAL'):-len('@@')])
             else:
                 omorstring += self.stuff2lexc(tag)
         return omorstring

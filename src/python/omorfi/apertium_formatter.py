@@ -207,7 +207,15 @@ class ApertiumFormatter(Formatter):
         "DEMONSTRATIVE": "dem",
         "DIGIT": "",
         "Din": "+in<n",
-        "Ds": "",
+        "Ds": "+s<n",
+        "Dhko": "+hko<adj",
+        "Disa": "+isa<adj",
+        "Dllinen": "+llinen<n",
+        "Dlainen": "+lainen<n",
+        "Dnen": "+nen<n",
+        "Dtar": "+tar<n",
+        "Dton": "+ton<adj",
+        "Dmainen": "+mainen<adj",
         "Du": "+u<n",
         "Dtava": "+tava<adj",
         "Dma": "+ma<n",
@@ -225,6 +233,7 @@ class ApertiumFormatter(Formatter):
         "Dttaa": "+ttaa<vblex",
         "Dtattaa": "+tattaa<vblex",
         "Dtatuttaa": "+tatuttaa<vblex",
+        "Dtuttaa": "+tuttaa<vblex",
         "Dsti": "+sti<adv",
         "EVENT": "",
         "FEMALE": "f",
@@ -245,6 +254,7 @@ class ApertiumFormatter(Formatter):
         "INTERROGATIVE": "itg",
         "LAST": "ant",
         "LEMMA-START": "",
+        "LEMMA-END": "",
         "MALE": "m",
         "MAINF_arg": "vaux",
         "MEDIA": "",
@@ -377,19 +387,19 @@ class ApertiumFormatter(Formatter):
             fail_formatting_missing_for(stuff, "apertium")
             return ""
 
-    def analyses2lexc(self, anals):
+    def analyses2lexc(self, anals, surf):
         apestring = ''
         for i in anals.split('|'):
-            apestring += self.stuff2lexc(i)
+            if i == '@@COPY-STEM@@':
+                apestring += lexc_escape(surf)
+            elif i.startswith('@@LITERAL:') and i.endswith('@@'):
+                apestring += lexc_escape(i[len('@@LITERAL:'):-len('@@')])
+            else:
+                apestring += self.stuff2lexc(i)
         return apestring
 
     def continuation2lexc(self, anals, surf, cont):
-        analstring = self.analyses2lexc(anals)
-        # the followings have surface fragments in continuations
-        if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
-            analstring = lexc_escape(surf) + analstring
-        elif 'PUNCT_NONSTD_EXCL_LOOP' in cont or 'PUNCT_NONSTD_DASH_LOOP' in cont:
-            analstring = lexc_escape(surf) + analstring
+        analstring = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (analstring, surf, cont)
 
