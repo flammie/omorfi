@@ -1227,7 +1227,6 @@ Kavi	1	propn-blocking
 Kavio	1	propn-blocking
 kea	1	fgk
 Kea	1	propn-blocking
-kea	1	tooshortforcompound
 Keho	1	propn-blocking
 Kehä	1	propn-blocking
 Keidassuo	1	propn-blocking
@@ -1616,7 +1615,6 @@ Kuha	1	propn-blocking
 Kuhankeittäjä	1	propn-blocking
 Kuhmolainen	1	propn-blocking
 kui	1	fgk
-kui	1	tooshortforcompound
 Kuikka	1	propn-blocking
 Kuiri	1	propn-blocking
 Kuiru	1	propn-blocking
@@ -2452,7 +2450,6 @@ Mokka	1	propn-blocking
 Molari	1	propn-blocking
 Moldova	1	propn-blocking
 mon	1	fgk
-mon	1	tooshortforcompound
 Mongo	1	propn-blocking
 Monikko	1	propn-blocking
 Monni	1	propn-blocking
@@ -2836,7 +2833,6 @@ Pahkurainen	1	propn-blocking
 Pahlavi	1	propn-blocking
 Pahna	1	propn-blocking
 pai	1	fgk
-pai	1	tooshortforcompound
 Paikka	1	propn-blocking
 Paimen	1	propn-blocking
 Painaa	1	propn-blocking
@@ -2905,7 +2901,6 @@ Pappi	1	propn-blocking
 Pappila	1	propn-blocking
 Papu	1	propn-blocking
 par	1	fgk
-par	1	tooshortforcompound
 Parantaa	1	propn-blocking
 Paratiisi	1	propn-blocking
 Parila	1	propn-blocking
@@ -4108,7 +4103,6 @@ Tahiti	1	propn-blocking
 Tahko	1	propn-blocking
 Tahkokivi	1	propn-blocking
 tai	2	fgk
-tai	2	tooshortforcompound
 tai	3	fgk
 Taiga	1	propn-blocking
 Taika	1	propn-blocking
@@ -4264,7 +4258,6 @@ Terävä	1	propn-blocking
 tes	1	tooshortforcompound
 Tesla	1	propn-blocking
 tet	1	fgk
-tet	1	tooshortforcompound
 Tetri	1	propn-blocking
 Teva	1	propn-blocking
 tho	1	tooshortforcompound
@@ -4590,7 +4583,6 @@ Vadelma	1	propn-blocking
 Vaha	1	propn-blocking
 Vahti	1	propn-blocking
 vai	1	fgk
-vai	1	tooshortforcompound
 Vaimo	1	propn-blocking
 Vainio	1	propn-blocking
 Vaivero	1	propn-blocking
