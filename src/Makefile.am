@@ -428,7 +428,7 @@ generated/omorfi-giella.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -v -m generated/master.tsv \
 		-p generated/stemparts.tsv \
-		$(BLACKLIST_FLAGS) \
+		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
 		-i generated/inflections.tsv -o $@ -f=giella
 
 
