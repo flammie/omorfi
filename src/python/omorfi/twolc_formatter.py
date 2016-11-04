@@ -4,7 +4,7 @@ from sys import exit, stderr
 
 from .settings import (common_multichars, fin_consonants, fin_lowercase, fin_symbols, fin_uppercase, fin_vowels,
                        newword_boundary, optional_hyphen, word_boundary)
-
+from .string_manglers import twolc_escape
 
 def format_copyright_twolc():
     return """
@@ -26,13 +26,6 @@ def format_copyright_twolc():
 """
 
 
-def twolc_escape(s):
-    '''Escape symbols that have special meaning in twolc.'''
-    s = s.replace("%", "__PERCENT__")
-    for c in ' @<>0!:";_^(){}-[]/?+|&*=$,':
-        s = s.replace(c, "%" + c)
-    s = s.replace("%_%_PERCENT%_%_", "%%")
-    return s
 
 
 def format_alphabet_twolc(format, ruleset):

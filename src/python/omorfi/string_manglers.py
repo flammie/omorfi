@@ -26,6 +26,39 @@ from sys import stderr
 
 from .error_logging import fail_guess_because
 
+# Xerox stuff
+
+
+def lexc_escape(s):
+    '''Escape symbols that have special meaning in lexc.'''
+    s = s.replace("%", "__PERCENT__")
+    s = s.replace(" ", "% ")
+    s = s.replace("<", "%<")
+    s = s.replace(">", "%>")
+    s = s.replace("0", "%0")
+    s = s.replace("!", "%!")
+    s = s.replace(":", "%:")
+    s = s.replace('"', '%"')
+    s = s.replace(";", "%;")
+    s = s.replace("__PERCENT__", "%%")
+    return s
+
+def twolc_escape(s):
+    '''Escape symbols that have special meaning in twolc.'''
+    s = s.replace("%", "__PERCENT__")
+    for c in ' @<>0!:";_^(){}-[]/?+|&*=$,':
+        s = s.replace(c, "%" + c)
+    s = s.replace("%_%_PERCENT%_%_", "%%")
+    return s
+
+def egrep2xerox(s, Multichars=None):
+    '''Convert POSIX extended regular expression to Xerox dialect'''
+    s = s.replace(".", "?")
+    xre = ' '.join(s)
+    return xre
+
+
+# generals
 
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):

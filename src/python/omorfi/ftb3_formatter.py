@@ -21,7 +21,7 @@
 
 from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
 from .formatter import Formatter
-from .lexc_formatter import lexc_escape
+from .string_manglers import lexc_escape
 from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
 
 

@@ -23,7 +23,7 @@
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .lexc_formatter import lexc_escape
+from .string_manglers import lexc_escape, egrep2xerox
 
 
 class OmorFormatter(Formatter):
@@ -650,6 +650,12 @@ class OmorFormatter(Formatter):
         tags = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (tags, surf, cont)
+
+    def guesser2lexc(self, regex, cont):
+        if not regex:
+            regex = ''
+        regex = egrep2xerox(regex)
+        return "< ?* %s >\t%s ;\n" %(regex, cont)
 
     def wordmap2lexc(self, wordmap):
         '''

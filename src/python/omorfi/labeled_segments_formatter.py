@@ -21,7 +21,7 @@
 # utils to format apertium style data from omorfi database values
 
 from .formatter import Formatter
-from .lexc_formatter import lexc_escape
+from .string_manglers import lexc_escape
 from .no_tags_formatter import NoTagsFormatter
 from .settings import optional_hyphen, word_boundary
 

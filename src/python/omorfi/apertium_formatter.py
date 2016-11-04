@@ -22,7 +22,7 @@
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .lexc_formatter import lexc_escape
+from .string_manglers import lexc_escape
 from .settings import optional_hyphen, weak_boundary, word_boundary
 
 

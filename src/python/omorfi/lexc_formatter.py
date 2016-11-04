@@ -22,20 +22,6 @@
 from .settings import deriv_boundary, morph_boundary, newword_boundary, optional_hyphen, stub_boundary, word_boundary
 
 
-def lexc_escape(s):
-    '''Escape symbols that have special meaning in lexc.'''
-    s = s.replace("%", "__PERCENT__")
-    s = s.replace(" ", "% ")
-    s = s.replace("<", "%<")
-    s = s.replace(">", "%>")
-    s = s.replace("0", "%0")
-    s = s.replace("!", "%!")
-    s = s.replace(":", "%:")
-    s = s.replace('"', '%"')
-    s = s.replace(";", "%;")
-    s = s.replace("__PERCENT__", "%%")
-    return s
-
 
 def format_copyright_lexc():
     return """
