@@ -192,7 +192,10 @@ class Omorfi:
                     print('adding', sp + '/*.hfst')
                 loadable += glob(sp + '/*.hfst')
         for filename in loadable:
-            self.load_filename(filename, **include)
+            try:
+                self.load_filename(filename, **include)
+            except:
+                print("broken HFST", filename, file=stderr)
 
     def _find_retoken_recase(self, token):
         if self.accept(token):
