@@ -143,7 +143,7 @@ APE_GENERATED=generated/apertium-fin.fin.lexc \
 			  generated/apertium-fin.fin.reweight \
 			  generated/apertium-fin.fin.yaml
 endif
-if WANT_OMOR
+if WANT_GIELLA
 GIELLA_AUTOMATA=generated/omorfi-giella.analyse.hfst \
 				generated/omorfi-giella.generate.hfst
 GIELLA_GENERATED=generated/omorfi-giella.lexc \
