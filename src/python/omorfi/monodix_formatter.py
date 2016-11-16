@@ -362,6 +362,8 @@ def format_monodix_r(anals, stem):
         for anal in anals.split('|'):
             if anal == '@@COPY-STEM@@':
                 r += stem
+            elif anal.startswith('@@LITERAL:') and anal.endswith('@@'):
+                r += anal[len('@@LITERAL:'):-len('@@')]
             else:
                 r += format_monodix_s(anal)
     return r
