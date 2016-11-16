@@ -186,7 +186,7 @@ def main():
                         continue
                 if args.exclude_blacklisted:
                     if wordmap['blacklist'] in args.exclude_blacklisted:
-                        continue
+                        wordmap['new_para'] = 'XXX_BLACKLISTED_SINK'
                 # choose correct lexicon
                 incoming_lexicon = tsv_parts['upos']
                 if tsv_parts['is_suffix']:
