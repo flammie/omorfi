@@ -20,11 +20,11 @@
 #
 # utils to format apertium style data from omorfi database values
 
+from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
 from .string_manglers import lexc_escape
 from .no_tags_formatter import NoTagsFormatter
 from .settings import optional_hyphen, word_boundary
-
 
 class LabeledSegmentsFormatter(Formatter):
 
@@ -220,6 +220,7 @@ class LabeledSegmentsFormatter(Formatter):
                     "INTERROGATIVE": "",
                     "INTJ": "[INTJ]",
                     "LATIVE": "",
+                    "LEMMA-END": "",
                     "LEMMA-START": "",
                     "LOCATIVE": "",
                     "Ncon": "[CONNEG]",
@@ -316,19 +317,31 @@ class LabeledSegmentsFormatter(Formatter):
     def __init__(self, verbose=True, **kwargs):
         self.verbose = verbose
 
-    def stuff2lexc(self, stuff):
-        return self.stuff2labels[stuff]
+    def stuff2lexc(self, stuff, stem):
+        if stuff == '@@COPY-STEM@@':
+            # we already copy stem
+            return ''
+        elif stuff.startswith('@@LITERAL:') and stuff.endswith('@@'):
+            # we already copy stem
+            return ''
+        elif stuff in self.stuff2labels:
+            return self.stuff2labels[stuff]
+        else:
+            if self.verbose:
+                fail_formatting_missing_for(stuff, "labeled segements")
+            return "ERRORMACRO"
 
-    def analyses2lexc(self, anals):
+
+    def analyses2lexc(self, anals, stem):
         apestring = ''
         for i in anals.split('|'):
-            apestring += self.stuff2lexc(i)
+            apestring += self.stuff2lexc(i, stem)
         return apestring
 
     def continuation2lexc(self, anals, surf, cont):
         # interleave tags and segments
         analstring = lexc_escape(surf)
-        analstring += self.analyses2lexc(anals)
+        analstring += self.analyses2lexc(anals, surf)
         return "%s:%s\t%s ;\n" % (analstring, lexc_escape(surf), cont)
 
     def wordmap2lexc(self, wordmap):
@@ -340,8 +353,13 @@ class LabeledSegmentsFormatter(Formatter):
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        retvals += "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
+        if 'BLACKLIST' in wordmap['new_para']:
+            return "! ! %s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
                                        wordmap['new_para'])
+        else:
+            return "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
+                                       wordmap['new_para'])
+
         return retvals
 
     def multichars_lexc(self):

@@ -536,7 +536,11 @@ class Ftb3Formatter(Formatter):
                 wordmap['analysis'].replace('Dash', 'EmDash')
         lex_stub = wordmap['stub']
         retvals = []
-        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+        if 'BLACKLIST' in wordmap['new_para']:
+            retvals += ["! ! !%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                      wordmap['new_para'])]
+        else:
+            retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
                                       wordmap['new_para'])]
         if wordmap['lemma'] in ['-', '–', '—', '(']:
             retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" % (wordmap['analysis'], lex_stub,

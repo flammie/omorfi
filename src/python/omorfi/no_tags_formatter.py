@@ -76,9 +76,13 @@ class NoTagsFormatter(Formatter):
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        retvals += "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
+
+        lexc_line = "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
                                        wordmap['new_para'])
-        return retvals
+        if 'BLACKLISTED' in wordmap['new_para']:
+            return "! ! !" + lexc_line
+        else:
+            return lexc_line
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"

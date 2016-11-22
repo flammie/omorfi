@@ -468,9 +468,12 @@ class ApertiumFormatter(Formatter):
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        retvals += "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
+        if 'BLACKLIST' in wordmap['new_para']:
+            return "!%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
                                      wordmap['new_para'])
-        return retvals
+        else:
+            return "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
+                                     wordmap['new_para'])
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"

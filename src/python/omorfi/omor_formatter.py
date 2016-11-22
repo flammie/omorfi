@@ -727,10 +727,14 @@ class OmorFormatter(Formatter):
 
         # match WORD_ID= with epsilon, then stub and lemma might match
         lex_stub = '0' + wordmap['stub']
-        retvals = []
-        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                                      wordmap['new_para'])]
-        return "\n".join(retvals)
+
+        lexc_line = "%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                      wordmap['new_para'])
+        if 'BLACKLISTED' in wordmap['new_para']:
+            return "! ! !" + lexc_line
+        else:
+            return lexc_line
+
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"

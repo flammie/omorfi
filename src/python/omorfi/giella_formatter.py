@@ -437,6 +437,8 @@ class GiellaFormatter(Formatter):
         for anal in anals.split('|'):
             if anal == '@@COPY-STEM@@':
                 giellastring += lexc_escape(surf)
+            elif anal.startswith('@@LITERAL:') and anal.endswith('@@'):
+                giellastring += lexc_escape(anal[len('@@LITERAL:'):-len('@@')])
             else:
                 giellastring += self.stuff2lexc(anal)
         return giellastring
@@ -481,9 +483,13 @@ class GiellaFormatter(Formatter):
         lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "")
                                .replace(weak_boundary, "").replace(deriv_boundary, "»")
                                .replace(morph_boundary, ">"))
-        retvals = []
-        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                                      wordmap['new_para'])]
+        lexc_line = "%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                wordmap['new_para'])
+        if 'BLACKLISTED' in wordmap['new_para']:
+            return "! ! !" + lexc_line
+        else:
+            return lexc_line
+
         return "\n".join(retvals)
 
     def multichars_lexc(self):
