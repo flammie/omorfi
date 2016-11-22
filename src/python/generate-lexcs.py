@@ -71,7 +71,7 @@ def main():
     ap.add_argument("--exclude-blacklisted", "-B", action="append", type=str,
                     metavar="BLIST", help="exclude lemmas in BLIST blacklist",
                     choices=["FGK", "PROPN-BLOCKING", "NOUN-BLOCKING-PROPN",
-                        "TOOSHORTFORCOMPOUND"])
+                             "TOOSHORTFORCOMPOUND"])
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", "--one-file", "-1",
                     type=argparse.FileType("w"), required=True,

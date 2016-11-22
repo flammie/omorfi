@@ -21,8 +21,8 @@
 # utils to format apertium style data from omorfi database values
 
 from .formatter import Formatter
-from .string_manglers import lexc_escape
 from .settings import optional_hyphen, word_boundary
+from .string_manglers import lexc_escape
 
 
 class NoTagsFormatter(Formatter):
@@ -72,13 +72,11 @@ class NoTagsFormatter(Formatter):
             wordmap['analysis'] = lexc_escape(wordmap['stub'])
         else:
             wordmap['analysis'] = lexc_escape(wordmap['stub'])
-        retvals = ""
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-
         lexc_line = "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
-                                       wordmap['new_para'])
+                                        wordmap['new_para'])
         if 'BLACKLISTED' in wordmap['new_para']:
             return "! ! !" + lexc_line
         else:

@@ -23,7 +23,7 @@
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .string_manglers import lexc_escape, egrep2xerox
+from .string_manglers import egrep2xerox, lexc_escape
 
 
 class OmorFormatter(Formatter):
@@ -655,7 +655,7 @@ class OmorFormatter(Formatter):
         if not regex:
             regex = ''
         regex = egrep2xerox(regex)
-        return "< ?* %s >\t%s ;\n" %(regex, cont)
+        return "< ?* %s >\t%s ;\n" % (regex, cont)
 
     def wordmap2lexc(self, wordmap):
         '''
@@ -734,7 +734,6 @@ class OmorFormatter(Formatter):
             return "! ! !" + lexc_line
         else:
             return lexc_line
-
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"

@@ -9,8 +9,9 @@ import re
 from argparse import ArgumentParser, FileType
 from sys import stderr, stdout
 
-from convert_tag_format import convert_omor_string
 from omorfi import Omorfi
+
+from convert_tag_format import convert_omor_string
 
 
 def main():

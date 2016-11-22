@@ -20,11 +20,12 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .error_logging import fail_formatting_missing_for, just_fail
+from .error_logging import fail_formatting_missing_for
 from .formatter import Formatter
-from .string_manglers import lexc_escape
 from .no_tags_formatter import NoTagsFormatter
 from .settings import optional_hyphen, word_boundary
+from .string_manglers import lexc_escape
+
 
 class LabeledSegmentsFormatter(Formatter):
 
@@ -331,7 +332,6 @@ class LabeledSegmentsFormatter(Formatter):
                 fail_formatting_missing_for(stuff, "labeled segements")
             return "ERRORMACRO"
 
-
     def analyses2lexc(self, anals, stem):
         apestring = ''
         for i in anals.split('|'):
@@ -355,7 +355,7 @@ class LabeledSegmentsFormatter(Formatter):
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         if 'BLACKLIST' in wordmap['new_para']:
             return "! ! %s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
-                                       wordmap['new_para'])
+                                           wordmap['new_para'])
         else:
             return "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
                                        wordmap['new_para'])

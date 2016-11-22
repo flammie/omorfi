@@ -6,6 +6,7 @@ from .settings import (common_multichars, fin_consonants, fin_lowercase, fin_sym
                        newword_boundary, optional_hyphen, word_boundary)
 from .string_manglers import twolc_escape
 
+
 def format_copyright_twolc():
     return """
 ! This automatically generated twolc data is originated from
@@ -24,8 +25,6 @@ def format_copyright_twolc():
 ! You should have received a copy of the GNU General Public License
 ! along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
-
 
 
 def format_alphabet_twolc(format, ruleset):

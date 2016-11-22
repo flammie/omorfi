@@ -26,6 +26,7 @@ from sys import stderr
 
 from .error_logging import fail_guess_because
 
+
 # Xerox stuff
 
 
@@ -43,6 +44,7 @@ def lexc_escape(s):
     s = s.replace("__PERCENT__", "%%")
     return s
 
+
 def twolc_escape(s):
     '''Escape symbols that have special meaning in twolc.'''
     s = s.replace("%", "__PERCENT__")
@@ -50,6 +52,7 @@ def twolc_escape(s):
         s = s.replace(c, "%" + c)
     s = s.replace("%_%_PERCENT%_%_", "%%")
     return s
+
 
 def egrep2xerox(s, Multichars=None):
     '''Convert POSIX extended regular expression to Xerox dialect'''

@@ -22,8 +22,8 @@
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .string_manglers import lexc_escape
 from .settings import optional_hyphen, weak_boundary, word_boundary
+from .string_manglers import lexc_escape
 
 
 class ApertiumFormatter(Formatter):
@@ -464,13 +464,12 @@ class ApertiumFormatter(Formatter):
         # XXX: for now
         if wordmap['lemma'] in "¹²³½¼=≥µ#/%":
             wordmap['analysis'] += self.stuff2lexc("NOUN")
-        retvals = ""
         wordmap['stub'] = wordmap['stub'].replace(
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         if 'BLACKLIST' in wordmap['new_para']:
             return "!%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
-                                     wordmap['new_para'])
+                                      wordmap['new_para'])
         else:
             return "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
                                      wordmap['new_para'])

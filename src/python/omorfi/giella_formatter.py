@@ -21,8 +21,8 @@
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .string_manglers import lexc_escape
 from .settings import deriv_boundary, morph_boundary, stub_boundary, weak_boundary, word_boundary
+from .string_manglers import lexc_escape
 
 
 class GiellaFormatter(Formatter):
@@ -484,13 +484,11 @@ class GiellaFormatter(Formatter):
                                .replace(weak_boundary, "").replace(deriv_boundary, "»")
                                .replace(morph_boundary, ">"))
         lexc_line = "%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                wordmap['new_para'])
+                                      wordmap['new_para'])
         if 'BLACKLISTED' in wordmap['new_para']:
             return "! ! !" + lexc_line
         else:
             return lexc_line
-
-        return "\n".join(retvals)
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n!! giellatekno multichar set:\n"

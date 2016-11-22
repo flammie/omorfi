@@ -21,8 +21,8 @@
 
 from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
 from .formatter import Formatter
-from .string_manglers import lexc_escape
 from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
+from .string_manglers import lexc_escape
 
 
 class Ftb3Formatter(Formatter):
@@ -231,7 +231,7 @@ class Ftb3Formatter(Formatter):
                   "Disa": "% N",
                   "Dton": "% A",
                   "Dllinen": "% A",
-                  "Cmainen": "% A", # WHERE DOES IT COMER FROM???
+                  "Cmainen": "% A",  # WHERE DOES IT COMER FROM???
                   "Dmainen": "% A",
                   "Dnut": "% PrfPrc% Act",
                   "Ds": "",
@@ -538,10 +538,10 @@ class Ftb3Formatter(Formatter):
         retvals = []
         if 'BLACKLIST' in wordmap['new_para']:
             retvals += ["! ! !%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                                      wordmap['new_para'])]
+                                               wordmap['new_para'])]
         else:
             retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                                      wordmap['new_para'])]
+                                          wordmap['new_para'])]
         if wordmap['lemma'] in ['-', '–', '—', '(']:
             retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
                                                       wordmap['new_para'])]
