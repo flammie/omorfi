@@ -2,12 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20160515], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20161115], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
 
 PACKAGE=omorfi
-VERSION=20160515
+VERSION=20161115
 
 # Options
 AC_ARG_WITH([hfst],
@@ -35,7 +35,7 @@ AC_ARG_ENABLE([omor_paradigms],
                               [include new_para feature in omors @<:@default=disable@:>@])],
                               [enable_omor_paradigms=$enableval],
                               [enable_omor_paradigms=no])
-AS_IF([test x$enable_omor_paradigms != xno], 
+AS_IF([test x$enable_omor_paradigms != xno],
       [AC_SUBST([OMORPARAFLAG], ["--omor-new-para"])])
 AC_ARG_ENABLE([omor_allomorphs],
               [AS_HELP_STRING([--enable-omor-allomorphs],
@@ -210,7 +210,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([ADT], [apertium-destxt], [cat])
        AS_IF([test x$ADT = xcat],
           [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
-    [AS_IF([test x$with_hfst != xno], 
+    [AS_IF([test x$with_hfst != xno],
            [AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
     AC_SUBST([HLEXC], $with_hfst/hfst-lexc)
     AC_SUBST([HTWOLC], $with_hfst/hfst-twolc)
@@ -242,7 +242,7 @@ AC_PATH_PROG([CGCOMP], [cg-comp], [false])
 AC_PATH_PROG([CGPROC], [cg-proc], [false])
 AM_CONDITIONAL([CAN_VISLCG3], [test x$CGCOMP != xfalse])
 
-AS_IF([test "x$enable_voikko" = "xyes"], 
+AS_IF([test "x$enable_voikko" = "xyes"],
       [AC_PATH_PROG([ZIP], [zip], [false])
        AS_IF([test "x$ZIP" = "xfalse"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
