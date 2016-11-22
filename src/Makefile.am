@@ -30,14 +30,16 @@ LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/verb-arguments.tsv
 # paradigm features
 PARADIGM_JOINS=paradigms/morphophonology.tsv \
-			   paradigms/stub-deletions.tsv
+			   paradigms/stub-deletions.tsv \
+			   paradigms/suffix-regexes.tsv
 
 # Morphology
 # stem variants by deletion and concatenations
 STEMPARTS=continuations/stems.tsv
 # suffixes by concatenations
 INFLECTIONS=continuations/inflections.tsv
-
+# Tokenisation
+TOKENS=tokeniser/omorfi.tokenise.pmatch
 # }}}
 #
 # {{{Scripts
@@ -182,6 +184,7 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
 			python/omorfi-conllu.py \
+			python/omorfi-tokenise.py \
 			python/omorfi-segment.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
@@ -192,6 +195,7 @@ pkgpython_PYTHON=python/omorfi/__init__.py \
 # These go into dist tarballs... which we no longer make
 # N.B. for distcheck anyways
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
+		   $(TOKENS) \
 		   $(SCIRPTS) \
 		   $(STEMPARTS) $(INFLECTIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
@@ -199,6 +203,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   python/omorfi-conllu.py \
 		   python/omorfi-vislcg.py \
 		   python/omorfi-segment.py \
+		   python/omorfi-tokenise.py \
 		   bash/omorfi-analyse-text.sh \
 		   bash/omorfi-analyse-tokenised.sh \
 		   bash/omorfi-generate.sh \
@@ -209,6 +214,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   test-scripts/constraint-unique-keys.bash \
 		   test-scripts/consistent-attribute-keys.bash \
 		   test-scripts/valid-datatypes.bash \
+		   test-scripts/lemmas-match-regexes.bash \
 		   test-scripts/lemmas-match-regexes.py \
 		   vislcg3/omorfi.cg3
 
