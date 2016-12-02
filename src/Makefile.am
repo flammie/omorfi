@@ -383,6 +383,13 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 		$(BLACKLIST_FLAGS) \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
+generated/omorfi-omor-guesser.lexc: paradigms/suffix-regexes.tsv \
+	paradigms/stub-deletions.tsv generated/stemparts.tsv \
+	generated/inflections.tsv
+	$(PYTHON) $(srcdir)/python/generate-guessers.py -v  \
+		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
+		-p generated/stemparts.tsv -i generated/inflections.tsv -o $@ -f=omor
+
 generated/omorfi-omor-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
 		-r rewrite-tags-omor -o $@
