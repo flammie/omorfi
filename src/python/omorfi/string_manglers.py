@@ -56,10 +56,38 @@ def twolc_escape(s):
 
 def egrep2xerox(s, Multichars=None):
     '''Convert POSIX extended regular expression to Xerox dialect'''
+    # this is iterative hack for a small subset
+    if '[' in s and ']' in s:
+        left_parts = s.split('[')
+        prefix = left_parts[0]
+        right_parts = ''.join(left_parts[1:]).split(']')
+        infix_class = right_parts[0]
+        suffix = ''.join(right_parts[1:])
+        s = prefix + '[' + '|'.join(infix_class) + ']' + suffix
     s = s.replace(".", "?")
     xre = ' '.join(s)
     return xre
 
+def regex_delete_surface(regex, deletion):
+    if not deletion:
+        return regex
+    resplit = regex.split(' ')
+    for i in range(1, len(deletion) + 1):
+        if deletion[-i] == '0':
+            continue
+        elif i > len(resplit):
+            resplit = ['?:0'] + resplit
+        elif resplit[-i] == '?':
+            resplit[-i] = '?:0'
+        elif resplit[-i] == '-':
+            resplit[-i] = '%-:0'
+        elif deletion[-i] == resplit[-i]:
+            resplit[-i] = resplit[-i] + ':0'
+        else:
+            print("DATOISSA VIRHE: ", resplit[-i], "!=", deletion[-i],
+                    "comparing", regex, "and", deletion)
+            resplit[-i] = resplit[-i] + ':0'
+    return ' '.join(resplit)
 
 # generals
 

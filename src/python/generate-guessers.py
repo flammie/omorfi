@@ -117,6 +117,28 @@ def main():
         if args.exclude_pos:
             print("Not writing closed parts-of-speech data in",
                   ",".join(args.exclude_pos))
+    # find deletions to map
+    deletions = dict()
+    for tsv_filename in args.sdfilenames:
+        if args.verbose:
+            print("Reading suffix mutations from", tsv_filename)
+        linecount = 0
+        with open(tsv_filename, 'r', newline='') as tsvfile:
+            tsv_reader = csv.DictReader(tsvfile, delimiter=args.separator,
+                    quoting=quoting, escapechar='\\', strict=True)
+            linecount = 0
+            for tsv_parts in tsv_reader:
+                linecount += 1
+                if args.verbose and (linecount % 1000 == 0):
+                    print(linecount, "...", sep='', end='\r')
+                if len(tsv_parts) < 2:
+                    print("bleh", file=stderr)
+                    continue
+                if 'deletion' in tsv_parts:
+                    deletions[tsv_parts['new_para']] = tsv_parts['deletion']
+                else:
+                    deletions[tsv_parts['new_para']] = ''
+
     # print definitions to rootfile
     print(formatter.copyright_lexc(), file=args.output)
     if args.verbose:
@@ -153,15 +175,56 @@ def main():
                           tsv_parts[0], "Skipping")
                     continue
                 # format output
+                if tsv_parts[0] not in deletions:
+                    print("DATOISSA VIRHE!", tsv_parts[0], "not in",
+                            args.sdfilenames)
+                    continue
                 if len(tsv_parts) == 2:
                     print(formatter.guesser2lexc(
-                        tsv_parts[1], tsv_parts[0]),
+                        tsv_parts[1], deletions[tsv_parts[0]], tsv_parts[0]),
                         file=args.output)
                 else:
                     print(formatter.guesser2lexc(
-                        None, tsv_parts[0]),
+                        None, deletions[tsv_parts[0]], tsv_parts[0]),
                         file=args.output)
     # FOLLOWING IS SHARED WITH generate-lexcies
+    # print stem parts
+    for tsv_filename in args.spfilenames:
+        if args.verbose:
+            print("Reading from", tsv_filename)
+        linecount = 0
+        print("! Omorfi stemparts generated from", tsv_file.name,
+              "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"),
+              "! params: ", ' '.join(argv), file=args.output)
+        print(formatter.copyright_lexc(), file=args.output)
+        curr_lexicon = ""
+        with open(tsv_filename, 'r', newline='') as tsv_file:
+            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
+                                    strict=True)
+            for tsv_parts in tsv_reader:
+                linecount += 1
+                if len(tsv_parts) < 3:
+                    print(tsv_filename, linecount,
+                          "Too few tabs on line",
+                          "skipping following fields:",
+                          tsv_parts, file=stderr)
+                    continue
+                pos = tsv_parts[0].split("_")[0]
+                if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
+                               "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ", "X",
+                               "DIGITS", "CONJ", "SCONJ", "AUX", "DET"]:
+                    print("Cannot deduce pos from incoming cont:",
+                          tsv_parts[0], "Skipping")
+                    continue
+                # format output
+                if curr_lexicon != tsv_parts[0]:
+                    print("\nLEXICON", tsv_parts[0], end="\n\n",
+                          file=args.output)
+                    curr_lexicon = tsv_parts[0]
+                for cont in tsv_parts[3:]:
+                    print(formatter.continuation2lexc(
+                        tsv_parts[1], tsv_parts[2], cont),
+                        file=args.output)
     # print inflections
     for tsv_filename in args.inffilenames:
         if args.verbose:
