@@ -2,23 +2,24 @@
 layout: page
 title: "omorfi-segment(1)"
 category: man
-date: 2016-02-08 18:23:58
+date: 2016-12-06 03:23:58
 ---
 
 
 ```
-OMORFI-SEGMENT(1)                User Commands                OMORFI-SEGMENT(1)
+OMORFI-SEGMENT(1)                 User Commands                OMORFI-SEGMENT(1)
 
 
 
 NAME
-       omorfi-segment - segment Finnish word-forms into morphs using omorfi
+       omorfi-segment - manual page for omorfi-segment
 
 SYNOPSIS
-       omorfi-segment.sh [OPTION] [FILENAME...]
+       omorfi-segment.py [OPTIONs]
 
 DESCRIPTION
-       Segments running text using omorfi automata and hfst tools
+       Morphologically  segments  running  text  using  omorfi automata and hfst
+       tools
 
        -h, --help
               Print this help dialog
@@ -26,32 +27,54 @@ DESCRIPTION
        -V, --version
               Print version info
 
+       -f FSAPATH, --fsa FSAPATH
+              Path to directory of HFST format automata
+
+       -i INFILE, --input INFILE
+              source of analysis data
+
+       -o OUTFILE, --output OUTFILE
+              print segmented data into OUTFILE
+
+       -O OUTFORMAT, --output-format OUTFORMAT
+              use OUTFORMAT format to print output
+
        -v, --verbose
               Print verbosely while processing
 
-       -s, --segment SPOINT
-              segment on SPOINTs [default=ALL-STUB]
+       --no-split-words
+              no splitting on word-word boundaries (compound)
 
-       -m, --marker M
-              use M to mark segmentation points [default= ]
+       --no-split-new-words
+              no splitting on dynamoc  word-word  boundaries  (prev.  unattested
+              compounds)
 
-       If  no  FILENAMEs are given, input is read from standard input.
-       If no SPOINTs are given, segmentation is  done  on  all  bound‐
-       aries,  except  STUB. Possible values are: WORD, MORPH, DERIVA‐
-       TION, NEWWORD, ETYM, STUB or ALL, corresponding to wB, MB,  DB,
-       WB,  XB, STUB and all of above.  If no markers are specified, a
-       single ASCII white space is  used.   Marker  can  be  arbitrary
-       string  not  containing  colons  or sed specials.  This program
-       uses hfst-lookup
+       --no-split-morphs
+              no splitting on morph-morph boundaries
+
+       --split-derivs
+              split on deriv-morph boundaries too
+
+       --split-nonwords
+              split on other boundaries
+
+       --segment-marker SEG
+              use SEG to mark segmentation points
+
+       If  no  FILENAMEs  are  given,  input  is read from standard input. If no
+       marker is specified, an appropriate marker for OUTFORMAT is selected. The
+       OUTFORMAT  is one of {segments, moses-factors, labels-tsv} for plain-text
+       splitted, Moses SMT style factors or labeled segments in TSV stream
 
 COPYRIGHT
-       Copyright © 2015 Omorfi contributors Licence GPLv3: GNU  GPL  version  3
+       Copyright © 2015 Tommi  A  Pirinen  Licence  GPLv3:  GNU  GPL  version  3
        <http://gnu.org/licenses/gpl.html>
-       This  is  free  software:  you  are  free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       This is free software: you are free to change and redistribute it.  There
+       is NO WARRANTY, to the extent permitted by law.
+
+NOTICE
+       This used to be a bash script but was promoted into python.
 
 
 
-OMORFI                             March 2015                 OMORFI-SEGMENT(1)
-```
-
+omorfi-segment                    December 2016                OMORFI-SEGMENT(1)
