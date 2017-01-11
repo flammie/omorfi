@@ -1423,7 +1423,7 @@ merely >> the new data at the end. See:
 
 ### europarl-v7.fi-en.fi
 
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 |----------:|:----------|
@@ -1530,7 +1530,7 @@ merely >> the new data at the end. See:
 
 ### fiwiki-latest-pages-articles
 
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 |----------:|:----------|
@@ -1637,7 +1637,7 @@ merely >> the new data at the end. See:
 
 ### ftb3.1
 
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 |----------:|:----------|
@@ -1745,7 +1745,7 @@ merely >> the new data at the end. See:
 ### gutenberg-fi
 
 
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 |----------:|:----------|
@@ -1853,7 +1853,7 @@ merely >> the new data at the end. See:
 ### jrc-fi
 
 
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 |----------:|:----------|
@@ -1957,9 +1957,9 @@ merely >> the new data at the end. See:
 | 1343 | 2005/C |
 | 1322 | 1493/1999 |
 | 1312 | LOOPU |
-## 2015-09-04 
+## 2015-09-04
 ### europarl-v7.fi-en.fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 2741 | ulko |
@@ -2064,7 +2064,7 @@ merely >> the new data at the end. See:
 | 245 | Jarzembowskin |
 
 ### fiwiki-latest-pages-articles
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 94591 | Lä |
@@ -2169,7 +2169,7 @@ merely >> the new data at the end. See:
 | 1354 | Fameen |
 
 ### ftb3.1
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 33216 | the |
@@ -2274,7 +2274,7 @@ merely >> the new data at the end. See:
 | 1130 | che |
 
 ### gutenberg-fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 8461 | ett'ei |
@@ -2379,7 +2379,7 @@ merely >> the new data at the end. See:
 | 650 | Jesuksen |
 
 ### jrc-fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 34629 | the |
@@ -2483,9 +2483,9 @@ merely >> the new data at the end. See:
 | 1322 | 1493/1999 |
 | 1312 | LOOPU |
 
-## 2016-05-19 
+## 2016-05-19
 ### europarl-v7.fi-en.fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 1442 | HU |
@@ -2590,7 +2590,7 @@ merely >> the new data at the end. See:
 | 209 | Packin |
 
 ### fi_ftb-ud-all
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 33 | ell |
@@ -2695,7 +2695,7 @@ merely >> the new data at the end. See:
 | 2 | yhtäkkii |
 
 ### fi-ud-all
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 37 | Mithridates |
@@ -2800,7 +2800,7 @@ merely >> the new data at the end. See:
 | 4 | sillo |
 
 ### fiwiki-latest-pages-articles
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 15906 | You |
@@ -2905,7 +2905,7 @@ merely >> the new data at the end. See:
 | 2293 | Boys |
 
 ### ftb3.1
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 20965 | EUROOPAN |
@@ -3010,7 +3010,7 @@ merely >> the new data at the end. See:
 | 1024 | sgb |
 
 ### gutenberg-fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 3317 | y.m |
@@ -3115,7 +3115,7 @@ merely >> the new data at the end. See:
 | 594 | Rostof |
 
 ### jrc-fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 21916 | EUROOPAN |
@@ -3220,7 +3220,7 @@ merely >> the new data at the end. See:
 | 1172 | States |
 
 ### OpenSubtitles2016.fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 7086 | lle |
@@ -3325,7 +3325,7 @@ merely >> the new data at the end. See:
 | 1911 | oIIa |
 
 ### tatoeba-fi
-#### 100 most common missing word-forms 
+#### 100 most common missing word-forms
 
 | Frequency | Word-form |
 | 108 | Tatoeba |
@@ -3428,4 +3428,1161 @@ merely >> the new data at the end. See:
 | 2 | Voitsitko |
 | 2 | vittuukaan |
 | 2 | virheettömästi |
+
+## 2016-11-15
+
+### 5grams
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 78447 | hotel |
+| 58393 | sosiaali |
+| 50869 | autaa |
+| 46920 | you |
+| 43833 | world |
+| 43044 | is |
+| 40767 | my |
+| 34571 | big |
+| 34433 | kayakista |
+| 27500 | club |
+| 27264 | with |
+| 27217 | all |
+| 26526 | ilmaistoidussa |
+| 26306 | inn |
+| 24576 | one |
+| 24007 | red |
+| 22625 | park |
+| 22505 | up |
+| 22499 | star |
+| 22443 | beach |
+| 22348 | poker |
+| 21832 | diplodocs |
+| 21615 | hd |
+| 21444 | le |
+| 21279 | life |
+| 20745 | music |
+| 20300 | your |
+| 19556 | time |
+| 19455 | travel |
+| 19229 | al |
+| 18997 | fi |
+| 18729 | las |
+| 18471 | blue |
+| 18393 | street |
+| 18268 | team |
+| 18116 | os |
+| 18054 | this |
+| 17566 | ite |
+| 17375 | about |
+| 17351 | that |
+| 17154 | be |
+| 16020 | air |
+| 15994 | ton |
+| 15329 | suites |
+| 15224 | go |
+| 15076 | are |
+| 15075 | free |
+| 14889 | national |
+| 14711 | full |
+| 14438 | m2 |
+| 14412 | we |
+| 14355 | airport |
+| 14262 | an |
+| 14242 | european |
+| 14219 | office |
+| 14200 | system |
+| 14183 | not |
+| 12951 | spa |
+| 12900 | ., |
+| 12717 | hp |
+| 12676 | final |
+| 12606 | digital |
+| 12566 | resort |
+| 12550 | little |
+| 12508 | bad |
+| 12387 | have |
+| 12375 | old |
+| 12292 |  |
+| 12124 | night |
+| 12032 | bay |
+| 11902 | ac |
+| 11694 | university |
+| 11677 | ps3 |
+| 11669 | myos |
+| 11517 | ylä |
+| 11472 | ens |
+| 11444 | dark |
+| 11292 | ennenkaikkea |
+| 11281 | death |
+| 11200 | was |
+| 11016 | finnish |
+| 10960 | sport |
+| 10815 | nordic |
+| 10810 | du |
+| 10769 | ulko |
+| 10762 | net |
+| 10702 | what |
+| 10540 | research |
+| 10505 | first |
+| 10446 | sm |
+| 10403 | news |
+| 10399 | xp |
+| 10367 | uncategorized |
+| 10354 | sd |
+| 10279 | golden |
+| 10233 | kok |
+| 10122 | master |
+| 10115 | us |
+| 10064 | light |
+| 9999 | science |
+
+### europarl-v7.fi-en.fi
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 1442 | HU |
+| 1097 | ssa |
+| 946 | Verts/ALE-ryhmän |
+| 849 | Saddam |
+| 795 | José |
+| 747 | Ashton |
+| 725 | OLAFin |
+| 688 | Patten |
+| 666 | Verheugen |
+| 629 | Fischler |
+| 610 | SIS |
+| 573 | Laekenin |
+| 571 | NATOn |
+| 559 | sta |
+| 513 | Hamasin |
+| 489 | Barón |
+| 446 | Poettering |
+| 432 | Frattini |
+| 406 | Lankan |
+| 394 | Posselt |
+| 393 | Monti |
+| 391 | ta |
+| 390 | Palacio |
+| 384 | Barnier |
+| 383 | Ecofin-neuvoston |
+| 376 | Aung |
+| 375 | Santer |
+| 375 | European |
+| 372 | Swoboda |
+| 371 | Saharov-palkinnon |
+| 351 | lle |
+| 349 | Wallström |
+| 345 | zu |
+| 340 | Amnesty |
+| 337 | Graefe |
+| 328 | Bolkesteinin |
+| 325 | EGR:n |
+| 322 | stä |
+| 321 | Bolkestein |
+| 320 | Cohn-Bendit |
+| 315 | Lamy |
+| 314 | Ferrero-Waldner |
+| 301 | Pattenin |
+| 300 | lla |
+| 299 | EGR |
+| 297 | S&D-ryhmän |
+| 297 | Méndez |
+| 294 | Reding |
+| 293 | iin |
+| 292 | Romano |
+| 285 | Vitorino |
+| 283 | Swobodan |
+| 282 | KOM(2001 |
+| 280 | Sarkozy |
+| 279 | Bögen |
+| 274 | ECHO |
+| 273 | Hamas |
+| 273 | González |
+| 269 | Lehnen |
+| 268 | Corbettin |
+| 268 | Barrot |
+| 263 | T?et?enian |
+| 258 | Verheugenin |
+| 256 | Elmar |
+| 254 | Fischer |
+| 252 | Jarzembowski |
+| 250 | Milosevi |
+| 248 | Europe |
+| 246 | Schreyer |
+| 245 | Prestigen |
+| 245 | Jarzembowskin |
+| 242 | Fischlerin |
+| 241 | Bangemann |
+| 240 | McCreevy |
+| 238 | Rothleyn |
+| 231 | Mandelson |
+| 231 | Juncker |
+| 231 | Corbett |
+| 229 | Salafranca |
+| 229 | muuntogeenisiä |
+| 229 | Ashtonin |
+| 225 | koordinoidusti |
+| 225 | Izquierdo |
+| 222 | Wogaun |
+| 222 | Berlusconin |
+| 219 | Tšernobylin |
+| 219 | Berlusconi |
+| 216 | Verhofstadt |
+| 216 | ETYJin |
+| 215 | Merkel |
+| 215 | Delorsin |
+| 213 | KOM(2000 |
+| 212 | Miloseviin |
+| 210 | Pack |
+| 210 | Nielson |
+| 209 | Packin |
+| 209 | Oomen-Ruijtenin |
+| 206 | T?ekin |
+| 206 | Bonino |
+| 206 | analyysia |
+
+### fi_ftb-ud
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 31 | ell |
+| 18 | siel |
+| 15 | siin |
+| 15 | joll |
+| 13 | täs |
+| 9 | niit |
+| 8 | sil |
+| 8 | mitää |
+| 7 | Vares |
+| 7 | sillee |
+| 6 | ol |
+| 5 | yhen |
+| 5 | tääl |
+| 5 | tämmönen |
+| 5 | siit |
+| 5 | pitäs |
+| 5 | niiku |
+| 5 | ite |
+| 4 | tämmösen |
+| 4 | semmone |
+| 4 | rupee |
+| 4 | rauhotu |
+| 4 | puol |
+| 4 | johonki |
+| 4 | itte |
+| 4 | esimerkiks |
+| 4 | Emmä |
+| 3 | yhtää |
+| 3 | vähäm |
+| 3 | viitti |
+| 3 | viikkoo |
+| 3 | upeeta |
+| 3 | tämmöstä |
+| 3 | tämmösiä |
+| 3 | ton |
+| 3 | tiä |
+| 3 | tiiä |
+| 3 | tietsä |
+| 3 | tarttee |
+| 3 | tartte |
+| 3 | sillo |
+| 3 | siihe |
+| 3 | semmost |
+| 3 | sellaist |
+| 3 | sekasin |
+| 3 | sd |
+| 3 | pitäskö |
+| 3 | Oottekste |
+| 3 | onk |
+| 3 | ollenkaa |
+| 3 | näis |
+| 3 | näi |
+| 3 | nytte |
+| 3 | nipin |
+| 3 | ninku |
+| 3 | mis |
+| 3 | millon |
+| 3 | keng- |
+| 3 | kaikkee |
+| 3 | jotaki |
+| 3 | jonnekkii |
+| 3 | ens |
+| 3 | Akiro |
+| 3 | ainaki |
+| 3 | 30_000 |
+| 3 | 3_000 |
+| 3 | 10_000 |
+| 2 | Yoeune |
+| 2 | yksie |
+| 2 | yhtäkkii |
+| 2 | yhes |
+| 2 | yheksän |
+| 2 | x:ää |
+| 2 | Woman |
+| 2 | vähäks |
+| 2 | vuuen |
+| 2 | vuoks |
+| 2 | viittis |
+| 2 | venäläisittäin |
+| 2 | uus |
+| 2 | Utulta |
+| 2 | täälä |
+| 2 | täsä |
+| 2 | täst |
+| 2 | Täs |
+| 2 | tämmöst |
+| 2 | tällasen |
+| 2 | tuol |
+| 2 | Tuleek |
+| 2 | Troia |
+| 2 | tommost |
+| 2 | tiäks |
+| 2 | tilloo |
+| 2 | Tellu |
+| 2 | teil |
+| 2 | TBK |
+| 2 | Sytky |
+| 2 | styrox-laatikkoon |
+| 2 | Soiliki |
+| 2 | siälä |
+
+### fi-ud
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 37 | Mithridates |
+| 26 | EUROOPAN |
+| 20 | Mithridateen |
+| 18 | 5(n) |
+| 14 | EMN:n |
+| 11 | Åkeby |
+| 10 | Pirate |
+| 10 | Peku |
+| 9 | Ariarathes |
+| 8 | World |
+| 8 | Wolters |
+| 8 | Vicia |
+| 8 | Valdas |
+| 8 | Sydow |
+| 8 | Rauparaha |
+| 8 | Kokljuschkin |
+| 8 | Gliese |
+| 8 | Festuca |
+| 8 | EMN |
+| 8 | Berlusconin |
+| 8 | Berlusconi |
+| 7 | Zapatero |
+| 7 | Venera |
+| 7 | türki |
+| 7 | Trifolium |
+| 7 | Thom |
+| 7 | Stora |
+| 7 | Ratcliffe |
+| 7 | Cao |
+| 7 | Binderup |
+| 7 | 3.Rf3 |
+| 6 | You |
+| 6 | Tšerepanov |
+| 6 | Tienshinhan |
+| 6 | Star |
+| 6 | SDP:tä |
+| 6 | Nikomedes |
+| 6 | N63 |
+| 6 | Music |
+| 6 | Mirianin |
+| 6 | Lupinus |
+| 6 | Louramo |
+| 6 | Lolium |
+| 6 | Laodiken |
+| 6 | Judge |
+| 6 | HC |
+| 6 | Gallagher |
+| 6 | e5 |
+| 6 | E21 |
+| 6 | common |
+| 6 | 2.f4 |
+| 5 | with |
+| 5 | Wars |
+| 5 | Tracon |
+| 5 | takas |
+| 5 | tajuu |
+| 5 | Standard |
+| 5 | Rodrigues |
+| 5 | Risperidonia |
+| 5 | Records |
+| 5 | Qazibe |
+| 5 | Origenes |
+| 5 | Moolenaar |
+| 5 | Molvania |
+| 5 | Medicago |
+| 5 | Laodike |
+| 5 | Know |
+| 5 | Jarzembowski |
+| 5 | Iglesiaksen |
+| 5 | Fischer |
+| 5 | Finnjet |
+| 5 | Filen |
+| 5 | EKPJ:n |
+| 5 | death |
+| 5 | Charger |
+| 5 | Brassica |
+| 5 | Bayn |
+| 4 | Åsbrink |
+| 4 | Wagon |
+| 4 | VHS |
+| 4 | TTW |
+| 4 | Trunkenpolz |
+| 4 | Thriller |
+| 4 | Thrill |
+| 4 | Son |
+| 4 | Silvio |
+| 4 | sillo |
+| 4 | Science |
+| 4 | sativa |
+| 4 | Routila |
+| 4 | Risperidon |
+| 4 | pratensis |
+| 4 | OMXH |
+| 4 | Novo |
+| 4 | McCainin |
+| 4 | Luminance |
+| 4 | Libuše |
+| 4 | LHC:n |
+| 4 | Large |
+| 4 | kakskytvaille |
+
+### fiwiki-latest-pages-articles
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 15906 | You |
+| 14765 | World |
+| 9981 | Records |
+| 8763 | Music |
+| 6963 | National |
+| 6888 | All |
+| 6828 | Red |
+| 6353 | One |
+| 6023 | Your |
+| 5988 | Life |
+| 5818 | with |
+| 5804 | Is |
+| 5552 | Blue |
+| 5530 | Air |
+| 5504 | Night |
+| 5398 | Time |
+| 5365 | Big |
+| 5175 | University |
+| 5172 | Club |
+| 4476 | José |
+| 4435 | Star |
+| 4312 | Up |
+| 4269 | Die |
+| 4231 | Golden |
+| 4175 | Team |
+| 4008 | Little |
+| 3922 | Tour |
+| 3879 | Press |
+| 3680 | Hockey |
+| 3639 | This |
+| 3608 | Park |
+| 3422 | Street |
+| 3377 | League |
+| 3364 | Lake |
+| 3330 | is |
+| 3313 | Recordsin |
+| 3246 | Heart |
+| 3225 | Les |
+| 3225 | Dead |
+| 3209 | Death |
+| 3169 | We |
+| 3081 | Bad |
+| 3021 | Don't |
+| 3016 | What |
+| 3006 | Dark |
+| 2939 | Go |
+| 2923 | Space |
+| 2921 | Al |
+| 2907 | <li |
+| 2899 | War |
+| 2831 | <br> |
+| 2791 | Way |
+| 2788 | British |
+| 2776 | School |
+| 2753 | Girl |
+| 2716 | Dance |
+| 2713 | Last |
+| 2678 | European |
+| 2670 | Film |
+| 2663 | Database |
+| 2643 | feat |
+| 2631 | Svenska |
+| 2624 | Serie |
+| 2600 | Luokka:Vuoden |
+| 2555 | Force |
+| 2538 | Awards |
+| 2537 | Football |
+| 2519 | That |
+| 2504 | Paris |
+| 2493 | Bank |
+| 2490 | History |
+| 2482 | Great |
+| 2463 | Society |
+| 2463 | Are |
+| 2439 | Fort |
+| 2437 | States |
+| 2435 | Bay |
+| 2420 | Luokka:Vuonna |
+| 2414 | Billboard |
+| 2413 | Association |
+| 2408 | Remix |
+| 2401 | an |
+| 2391 | Fire |
+| 2387 | Vol |
+| 2343 | Dream |
+| 2342 | With |
+| 2322 | An |
+| 2310 | :The |
+| 2299 | Project |
+| 2298 | Games |
+| 2298 | First |
+| 2293 | Boys |
+| 2291 | Award |
+| 2280 | Racing |
+| 2238 | Wikipedia:Poistettavat |
+| 2223 | South |
+| 2212 | Light |
+| 2193 | Road |
+| 2192 | Deep |
+| 2190 | Planet |
+
+### ftb1-2014
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 34 | ell |
+| 20 | siel |
+| 17 | siin |
+| 17 | joll |
+| 14 | täs |
+| 10 | niit |
+| 9 | Vares |
+| 9 | sillee |
+| 9 | sil |
+| 8 | Tarja_Halonen |
+| 8 | siit |
+| 8 | pitäs |
+| 8 | mitää |
+| 6 | yhen |
+| 6 | ol |
+| 6 | Helsingin_Sanomat |
+| 5 | tääl |
+| 5 | tämmöstä |
+| 5 | tämmönen |
+| 5 | rupee |
+| 5 | niiku |
+| 5 | jotenki |
+| 5 | ite |
+| 4 | viikkoo |
+| 4 | upeeta |
+| 4 | tämmösiä |
+| 4 | tämmösen |
+| 4 | siihe |
+| 4 | semmone |
+| 4 | rauhotu |
+| 4 | puol |
+| 4 | näis |
+| 4 | nytte |
+| 4 | millon |
+| 4 | kaikkee |
+| 4 | jotaki |
+| 4 | johonki |
+| 4 | itte |
+| 4 | Euroopan_unionin |
+| 4 | esimerkiks |
+| 4 | Emmä |
+| 4 | 4_600 |
+| 3 | yhtää |
+| 3 | vähäm |
+| 3 | vähäks |
+| 3 | viitti |
+| 3 | ton |
+| 3 | tiä |
+| 3 | tiiä |
+| 3 | tietsä |
+| 3 | TBK |
+| 3 | tarttee |
+| 3 | tartte |
+| 3 | Tampereen_yliopistossa |
+| 3 | sillo |
+| 3 | sielt |
+| 3 | semmost |
+| 3 | sellaist |
+| 3 | sekasin |
+| 3 | sd |
+| 3 | Roman_Polanskin |
+| 3 | pääs |
+| 3 | Punaisen_Ristin |
+| 3 | pitäskö |
+| 3 | Paavo_Lipponen |
+| 3 | Oottekste |
+| 3 | onk |
+| 3 | ollenkaa |
+| 3 | ol´ |
+| 3 | näi |
+| 3 | nipin_napin |
+| 3 | ninku |
+| 3 | New_Yorkissa |
+| 3 | muute |
+| 3 | mis |
+| 3 | Martti_Ahtisaari |
+| 3 | kirjotti |
+| 3 | keng- |
+| 3 | kattelin |
+| 3 | Katotaas |
+| 3 | jonnekkii |
+| 3 | hirveesti |
+| 3 | Helsingin_yliopiston |
+| 3 | Helsingin_Sanomien |
+| 3 | Esko_Aho |
+| 3 | ens |
+| 3 | Akiro |
+| 3 | ainaki |
+| 3 | aikasemmin |
+| 3 | Abdi |
+| 3 | 300_000 |
+| 3 | 30_000 |
+| 3 | 3_000 |
+| 3 | 10_000 |
+| 2 | Yoeune |
+| 2 | yksie |
+| 2 | yhtäkkii |
+| 2 | yhes |
+| 2 | yheksän |
+| 2 | x:ää |
+
+### ftb3.1
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 20965 | EUROOPAN |
+| 9051 | ex |
+| 6051 | amp |
+| 5287 | du |
+| 4751 | à |
+| 4703 | le |
+| 4489 | p.m |
+| 4371 | HU |
+| 3874 | les |
+| 3701 | with |
+| 3382 | PIC |
+| 3319 | Ltd |
+| 3302 | die |
+| 3242 | is |
+| 3042 | be |
+| 3017 | Commission |
+| 3011 | European |
+| 2705 | της |
+| 2517 | και |
+| 2488 | na |
+| 2440 | lt |
+| 2413 | Bank |
+| 2399 | que |
+| 2246 | nr |
+| 2186 | europa.eu.int |
+| 2153 | par |
+| 2145 | pic |
+| 2132 | an |
+| 2130 | that |
+| 2094 | comm |
+| 2043 | un |
+| 1950 | την |
+| 1941 | του |
+| 1890 | a. |
+| 1825 | mod |
+| 1751 | το |
+| 1749 | dans |
+| 1732 | für |
+| 1718 | della |
+| 1685 | pour |
+| 1667 | state |
+| 1665 | των |
+| 1639 | Fax |
+| 1604 | County |
+| 1601 | b. |
+| 1582 | που |
+| 1568 | CENELEC |
+| 1547 | this |
+| 1524 | st |
+| 1497 | are |
+| 1497 | Act |
+| 1463 | S.A |
+| 1459 | het |
+| 1430 | για |
+| 1416 | να |
+| 1414 | Limited |
+| 1408 | ta |
+| 1400 | 1.1.2006– |
+| 1399 | eG |
+| 1356 | een |
+| 1346 | η |
+| 1344 | il |
+| 1343 | από |
+| 1329 | ssa |
+| 1305 | EG |
+| 1297 | add |
+| 1293 | με |
+| 1274 | voor |
+| 1273 | Tel |
+| 1270 | LOOPU |
+| 1268 | not |
+| 1264 | which |
+| 1250 | Nr |
+| 1215 | PO |
+| 1203 | general |
+| 1182 | Société |
+| 1152 | SIS |
+| 1149 | other |
+| 1149 | OLAFin |
+| 1134 | under |
+| 1130 | Classification |
+| 1130 | che |
+| 1122 | including |
+| 1104 | States |
+| 1098 | Kingdom |
+| 1088 | Limites |
+| 1088 | Klassificering |
+| 1085 | Council |
+| 1066 | Europe |
+| 1061 | zu |
+| 1061 | Box |
+| 1059 | C10 |
+| 1054 | National |
+| 1036 | programme |
+| 1030 | Raiffeisenbank |
+| 1024 | sgb |
+| 1024 | financial |
+| 1018 | NEWLINE |
+| 1009 | secretariat |
+| 1009 | information |
+
+### gutenberg-fi
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 3317 | y.m |
+| 2881 | j.n.e |
+| 2653 | *** |
+| 2487 | d'Artagnan |
+| 2284 | huoneesen |
+| 2169 | s.o |
+| 1558 | ol |
+| 1451 | waan |
+| 1342 | Oblomov |
+| 1190 | Mit |
+| 1168 | End |
+| 1166 | Project |
+| 1153 | Produced |
+| 1152 | LIISA |
+| 1129 | wielä |
+| 1128 | Jesus |
+| 1118 | JUHANI |
+| 1072 | jälestä |
+| 1027 | Kitty |
+| 1023 | Aramis |
+| 1020 | Jesuksen |
+| 1004 | Bräsig |
+| 996 | Glenarvan |
+| 969 | Natasha |
+| 947 | oliwat |
+| 922 | Kenelm |
+| 920 | Gutenberg |
+| 914 | kauvas |
+| 913 | kysäsi |
+| 909 | mit |
+| 902 | EBook |
+| 890 | à |
+| 881 | kaikk |
+| 880 | Uli |
+| 879 | Jurgis |
+| 869 | Monte-Cristo |
+| 865 | Paganel |
+| 861 | HENRIK |
+| 860 | n.s |
+| 843 | ain |
+| 832 | loordi |
+| 829 | mailman |
+| 823 | Mabel |
+| 816 | HANNA |
+| 814 | SOLNESS |
+| 812 | Smoke |
+| 801 | Villefort |
+| 797 | Vronski |
+| 797 | Lents |
+| 796 | att |
+| 789 | Siell |
+| 781 | muutamain |
+| 771 | Vinitius |
+| 771 | Bertelsköld |
+| 761 | erääsen |
+| 751 | JUSSI |
+| 748 | Il |
+| 742 | till |
+| 740 | Gervaise |
+| 738 | jag |
+| 737 | FLEMING |
+| 728 | Mathieu |
+| 725 | Portos |
+| 724 | mylord |
+| 724 | alotti |
+| 717 | Emilio |
+| 711 | karkoittaa |
+| 706 | D'Artagnan |
+| 696 | mailmassa |
+| 681 | Danglars |
+| 680 | olekkaan |
+| 673 | Raskolnikov |
+| 669 | siell |
+| 669 | HELENA |
+| 664 | Mik |
+| 663 | tarjoo |
+| 663 | ANTTI |
+| 657 | FALK |
+| 656 | ELLI |
+| 650 | Täss |
+| 649 | tääll |
+| 649 | Kaikk |
+| 643 | Kuink |
+| 643 | heittäysi |
+| 640 | HILDE |
+| 638 | laskeusi |
+| 638 | jälessä |
+| 628 | Laurie |
+| 626 | jälkimäinen |
+| 625 | Wäinämöinen |
+| 619 | kahdenkesken |
+| 617 | Hawermann |
+| 616 | Morrel |
+| 615 | Denise |
+| 611 | Lucy |
+| 610 | kuitenki |
+| 601 | yhtämittaa |
+| 596 | owat |
+| 594 | Rostof |
+| 591 | woi |
+
+### jrc-fi
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 21916 | EUROOPAN |
+| 17109 | EUR/100 |
+| 14604 | PAIKKA> |
+| 14444 | >TAULUKON |
+| 9152 | ex |
+| 6675 | +++++ |
+| 5385 | >VIITTAUS |
+| 4865 | KAAVIOON> |
+| 4863 | à |
+| 4729 | *IT |
+| 4399 | EUR/t |
+| 4002 | les |
+| 3920 | *FR |
+| 3893 | FILE= |
+| 3886 | >PIC |
+| 3771 | with |
+| 3489 | die |
+| 3304 | is |
+| 3192 | %amp% |
+| 3043 | Commission |
+| 3028 | European |
+| 2757 | της |
+| 2502 | και |
+| 2493 | // |
+| 2461 | Ltd |
+| 2445 | que |
+| 2422 | 0,— |
+| 2411 | Bank |
+| 2335 | *DE |
+| 2323 | na |
+| 2284 | nr |
+| 2215 | par |
+| 2192 | KOM(2005 |
+| 2179 | >KAAVION |
+| 2176 | that |
+| 2044 | την |
+| 1996 | %:a |
+| 1983 | pic |
+| 1957 | un |
+| 1955 | του |
+| 1954 | mod |
+| 1925 | *HU |
+| 1907 | *ES |
+| 1805 | für |
+| 1803 | an |
+| 1801 | Fischer |
+| 1797 | dans |
+| 1781 | Boel |
+| 1774 | το |
+| 1762 | HU |
+| 1753 | della |
+| 1744 | Mariann |
+| 1720 | pour |
+| 1671 | των |
+| 1638 | EUR/kg |
+| 1627 | Fax |
+| 1611 | *CZ |
+| 1604 | this |
+| 1598 | County |
+| 1590 | που |
+| 1566 | S.A |
+| 1530 | are |
+| 1521 | CENELEC |
+| 1520 | het |
+| 1507 | p/st |
+| 1432 | Limited |
+| 1431 | *NL |
+| 1431 | KOM(2004 |
+| 1430 | για |
+| 1416 | να |
+| 1408 | Act |
+| 1401 | eG |
+| 1393 | il |
+| 1385 | KOM(2006 |
+| 1382 | *SK |
+| 1377 | *PL |
+| 1357 | από |
+| 1341 | η |
+| 1340 | lopull |
+| 1311 | LOOPU> |
+| 1308 | voor |
+| 1308 | ALKU> |
+| 1307 | which |
+| 1293 | με |
+| 1290 | *UK |
+| 1289 | not |
+| 1287 | Nr |
+| 1257 | /* |
+| 1254 | */ |
+| 1219 | Tel |
+| 1202 | other |
+| 1198 | EG |
+| 1183 | Société |
+| 1172 | States |
+| 1156 | een |
+| 1152 | under |
+| 1148 | che |
+| 1136 | including |
+| 1134 | Classification |
+| 1115 | Kingdom |
+
+### OpenSubtitles2016.fi
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 7086 | lle |
+| 5878 | Joey |
+| 5826 | Lucy |
+| 5536 | oIe |
+| 5194 | Sean |
+| 5183 | Red |
+| 4937 | Luke |
+| 4830 | Dean |
+| 4550 | Maggie |
+| 4490 | lhan |
+| 4327 | Hank |
+| 4299 | Jackie |
+| 4288 | Al |
+| 4241 | llä |
+| 4198 | Big |
+| 4158 | Doug |
+| 4025 | Grace |
+| 3930 | Josh |
+| 3858 | Parker |
+| 3772 | oIi |
+| 3758 | Greg |
+| 3665 | Frankie |
+| 3646 | Ed |
+| 3624 | Cole |
+| 3602 | Jamie |
+| 3336 | Ethan |
+| 3277 | Beth |
+| 3258 | lsä |
+| 3252 | Rocky |
+| 3056 | lla |
+| 3050 | Dylan |
+| 3031 | OIen |
+| 3027 | Chloe |
+| 3015 | Vince |
+| 2902 | Homer |
+| 2873 | Mickey |
+| 2802 | Cooper |
+| 2786 | Kenny |
+| 2774 | Street |
+| 2767 | Clay |
+| 2765 | Harold |
+| 2765 | Carrie |
+| 2718 | Las |
+| 2700 | ÄIkää |
+| 2637 | Gus |
+| 2620 | Connor |
+| 2554 | Ellie |
+| 2533 | Mitch |
+| 2530 | ...ja |
+| 2513 | Ned |
+| 2496 | Lenny |
+| 2480 | Zoe |
+| 2465 | SUBHEAVEN.ORG |
+| 2450 | Russell |
+| 2416 | Liz |
+| 2412 | Abby |
+| 2375 | Richie |
+| 2371 | Walt |
+| 2328 | ÄIä |
+| 2325 | Travis |
+| 2302 | Holly |
+| 2296 | you |
+| 2280 | Audrey |
+| 2273 | Shane |
+| 2265 | Nate |
+| 2250 | Rob |
+| 2248 | Manny |
+| 2232 | Wendy |
+| 2232 | Gina |
+| 2209 | Cindy |
+| 2207 | Wade |
+| 2195 | Allison |
+| 2168 | Blue |
+| 2167 | Quinn |
+| 2162 | tääIIä |
+| 2148 | Bart |
+| 2138 | Frodo |
+| 2129 | Jeffrey |
+| 2123 | Collins |
+| 2122 | Debbie |
+| 2105 | Leslie |
+| 2091 | Toby |
+| 2087 | Mikey |
+| 2057 | Curtis |
+| 2047 | Booth |
+| 2045 | Han |
+| 2026 | Trevor |
+| 2026 | Lloyd |
+| 2012 | Buck |
+| 1977 | Reed |
+| 1963 | Fort |
+| 1958 | Riley |
+| 1953 | Wallace |
+| 1953 | Phoebe |
+| 1949 | Dexter |
+| 1932 | Original |
+| 1927 | S.org |
+| 1912 | Troy |
+| 1911 | oIIa |
+| 1899 | Paulie |
+
+### tatoeba-fi
+#### 100 most common missing word-forms
+
+| Frequency | Word-form |
+| 108 | Tatoeba |
+| 67 | Marya |
+| 35 | Tatoebassa |
+| 31 | Tatoebaan |
+| 24 | Tatoeban |
+| 14 | Tatoebasta |
+| 14 | Ootsä |
+| 13 | Tatoebaa |
+| 13 | Marylta |
+| 11 | Marysta |
+| 8 | Ooksä |
+| 7 | Muiriel |
+| 7 | kusutaan |
+| 6 | WC:seen |
+| 6 | tosissas |
+| 6 | Tanaka |
+| 6 | Puerto |
+| 6 | mitää |
+| 5 | sashimista |
+| 5 | Onkoha |
+| 5 | Mist |
+| 5 | Mayuko |
+| 5 | koskaa |
+| 5 | ite |
+| 4 | Yumi |
+| 4 | todellä |
+| 4 | tiiä |
+| 4 | Tatoeba-projekti |
+| 4 | Tatoeballe |
+| 4 | Tatoeba-korpuksen |
+| 4 | Taroun |
+| 4 | Taj |
+| 4 | sekasin |
+| 4 | ryssi |
+| 4 | Rico |
+| 4 | pitäsi |
+| 4 | Ogawa |
+| 4 | nurinpäin |
+| 4 | Naoko |
+| 4 | Mite |
+| 4 | Mis |
+| 4 | Miksä |
+| 4 | Lucy |
+| 4 | kolmenkympin |
+| 4 | Keiko |
+| 4 | Golden |
+| 4 | cool |
+| 3 | Yooko |
+| 3 | yhen |
+| 3 | väitetysti |
+| 3 | UFO:a |
+| 3 | tännä |
+| 3 | Tomil |
+| 3 | Tomii |
+| 3 | Tieksä |
+| 3 | Tatoeba-projektin |
+| 3 | Tallenna”-painiketta |
+| 3 | Scrooge |
+| 3 | sashimia |
+| 3 | rättipoikki |
+| 3 | Quebecissä |
+| 3 | noloo |
+| 3 | mutsiis |
+| 3 | Muirielin |
+| 3 | Marylla |
+| 3 | Lorelei |
+| 3 | litsarin |
+| 3 | Kenji |
+| 3 | Kenin |
+| 3 | Jeeves |
+| 3 | jang |
+| 3 | Huntia |
+| 3 | hujan |
+| 3 | Hokkaidolla |
+| 3 | Hiltonissa |
+| 3 | Hakatan |
+| 3 | hajan |
+| 3 | Gate |
+| 3 | Duck |
+| 3 | Beth |
+| 2 | Ääk |
+| 2 | äitiis |
+| 2 | yuri |
+| 2 | Yoshida |
+| 2 | ympärikännissä |
+| 2 | yhessä |
+| 2 | yhdin |
+| 2 | Woods |
+| 2 | Wi-Fi |
+| 2 | Wau |
+| 2 | Wasedan |
+| 2 | Voitsitko |
+| 2 | vittuukaan |
+| 2 | virheettömästi |
+| 2 | Villilintujen |
+| 2 | vihanen |
+| 2 | vihane |
+| 2 | Vihaaksä |
+| 2 | uus |
+| 2 | uudestaa |
 
