@@ -1,17 +1,16 @@
-sudo: false
-language: "python"
-python:
-   - "3.4"
-install:
-   pip install flake8 pep8-naming isort
+before_install:
+    - sudo apt-get install libxml++2.6-dev libarchive-dev
+    - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+    - sudo apt-get install hfst
 script:
-   - flake8 .
-   - isort -qc -rc .
+    - ./autogen.sh
+    - ./configure
+    - make
+    - make check
 notifications:
     irc:
         channels:
-            - "chat.freenode.net#hfst"
             - "chat.freenode.net#omorfi"
         on_failure: always
-        on_success: never
+        on_success: always
 
