@@ -28,3 +28,9 @@ $(PACKAGE)-binaries-$(VERSION).tar.xz: bindist-dir
 
 $(PACKAGE)-ftb3-$(VERSION).tar.xz: ftb3-distdir
 	tar Jcvf $@ $(PACKAGE)_ftb3-$(VERSION)
+
+conversions:
+	$(MAKE) -C src conversions
+
+test:
+	$(MAKE) check

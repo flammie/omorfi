@@ -26,7 +26,8 @@ import csv
 from sys import argv, exit, stderr
 from time import strftime
 
-from omorfi.formatters import format_analysis_lexc
+from omorfi.omor_formatter import OmorFormatter
+from omorfi.apertium_formatter import ApertiumFormatter
 
 
 # standard UI stuff
@@ -57,26 +58,19 @@ def main():
     ap.add_argument("--strip", action="store",
                     metavar="STRIP", help="strip STRIP from fields before using")
 
-    def format_arg_type(v):
-        baseformats = ["omor", "apertium",
-                       "giellatekno", "ftb3", "segments", "google"]
-        extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]
-        parts = v.split('+')
-        if parts[0] not in baseformats:
-            raise argparse.ArgumentTypeError(
-                "Format must be one of: " + " ".join(baseformats))
-        for ex in parts[1:]:
-            if ex not in extras:
-                raise argparse.ArgumentTypeError(
-                    "Format extension must be one of: " + " ".join(extras))
-        return v
+
     ap.add_argument("--format", "-f", action="store", default="omor",
                     help="use specific output format for lexc data",
-                    type=format_arg_type)
+                    choices=['omor', 'apertium'])
     args = ap.parse_args()
     quoting = csv.QUOTE_NONE
     quotechar = None
     # setup files
+    formatter = None
+    if args.format == 'omor':
+        formatter = OmorFormatter()
+    elif args.format == 'apertium':
+        formatter = ApertiumFormatter()
     if args.verbose:
         print("Writing yaml to", args.output.name)
     # print test cases
@@ -104,7 +98,7 @@ def main():
                 # format output
                 print('   "', tsv_parts[1], sep='', file=args.output,
                       end='')
-                print(format_analysis_lexc(tsv_parts[2],
+                print(formatter.analyses2lexc(tsv_parts[2],
                                            args.format).replace('% ', ' '),
                       file=args.output, end='')
                 print('": "', tsv_parts[0], '"', sep='', file=args.output)

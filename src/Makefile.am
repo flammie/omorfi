@@ -133,9 +133,7 @@ OMOR_AUTOMATA=generated/omorfi-omor.analyse.hfst \
 OMOR_GENERATED=generated/omorfi-omor.lexc \
 			   generated/omorfi-omor.reweight \
 			   generated/omorfi-omor-tests.yaml \
-			   generated/omorfi-omor-rewrite-tags.regex \
-			   generated/omorfi-omor-between-tokens.regex.hfst \
-			   generated/omorfi-omor-token.regex.hfst
+			   generated/omorfi-omor-rewrite-tags.regex
 
 endif
 if WANT_APERTIUM
@@ -428,6 +426,9 @@ generated/apertium-fin.fin.twolc:
 
 generated/apertium-fin.fin.yaml: $(top_srcdir)/test/gtd-tests.tsv
 	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=apertium -v
+
+generated/apertium-fin.fin.reweight:
+	$(PYTHON) $(srcdir)/python/generate-reweights.py -v -f=apertium -o $@
 
 # database to monodix
 generated/omorfi.dix: generated/master.tsv generated/stemparts.tsv \
@@ -1316,5 +1317,14 @@ clean-local:
 		voikko/*hfst
 
 # }}}
+
+# {{{ other convenience targets...
+
+conversions: $(DB_GENERTED) $(GENERIC_GENERATED) $(OMOR_GENERATED) \
+	$(LABELSEGMENT_GENERATED) \
+	$(FTB3_GENERATED) $(APE_GENERATED)
+
+# }}}
+
 #
 # vim: set foldmethod=marker:
