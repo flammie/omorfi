@@ -191,7 +191,7 @@ class ApertiumFormatter(Formatter):
         "Cnut": "pp",
         "COMMA": "",
         "COMPARATIVE": "cnjsub",
-        "COMP": "com",
+        "COMP": "",
         "CONJUNCTION": "",
         "CONJUNCTIONVERB": "cnjcoo><vblex",
         "CONJ": "cnjcoo",
@@ -413,9 +413,7 @@ class ApertiumFormatter(Formatter):
         wordmap['analysis'] = lexc_escape(wordmap['lemma'])
         wordmap['analysis'] = wordmap['analysis'].replace(
             word_boundary, '+').replace(weak_boundary, '')
-        if wordmap['is_suffix']:
-            wordmap['analysis'] = "+" + wordmap['analysis']
-        elif wordmap['is_prefix']:
+        if wordmap['is_prefix']:
             wordmap['analysis'] += "+"
         elif wordmap['upos'] == 'PROPN':
             wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
@@ -487,6 +485,7 @@ class ApertiumFormatter(Formatter):
 
     def root_lexicon_lexc(self):
         root = Formatter.root_lexicon_lexc(self)
+        root += '\t'.join(['0','SUFFIX',';']) + '\n'
         return root
 
 # self test
