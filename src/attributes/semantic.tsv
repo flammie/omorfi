@@ -1048,6 +1048,8 @@ dominikaanilainen	2	inhabitant
 dominikaanilainen	3	country
 dominikaanilainen	4	inhabitant
 Dominikaaninen tasavalta	1	country
+Don	1	male
+Donald	1	male
 DOP	1	currency
 Dora	1	female
 Doris	1	female
@@ -2343,6 +2345,7 @@ jKr	1	time
 jKr.	1	time
 jm	1	measure
 JMD	1	currency
+Joachim	1	male
 Joakim	1	male
 Joanna	1	female
 Joanne	1	female
@@ -5603,6 +5606,7 @@ SDG	1	currency
 Sdp	1	polit
 SDP	1	polit
 SE	1	org
+Sean	1	male
 Sebastian	1	male
 Seena	1	female
 Seidi	1	female
@@ -6195,6 +6199,8 @@ thaimaalainen	2	inhabitant
 thaimaalainen	3	country
 thaimaalainen	4	inhabitant
 THB	1	currency
+Theresa	1	female
+Therese	1	female
 Theo	1	male
 Theodor	1	male
 THz	2	measure
@@ -6879,6 +6885,7 @@ vk.	1	time
 vkl	2	time
 VKS	1	org
 VKS	2	title
+Vladimir	1	male
 VM	1	org
 VN	1	org
 VN	2	title
@@ -6936,6 +6943,7 @@ wallisfutunalainen	2	inhabitant
 wallisfutunalainen	3	country
 wallisfutunalainen	4	inhabitant
 walser	1	language
+Walter	1	male
 Waltteri	1	male
 waray	1	language
 washo	1	language
