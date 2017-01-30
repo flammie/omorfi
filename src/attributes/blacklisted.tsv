@@ -275,7 +275,6 @@ emä	1	tooshortforcompound
 Emäjoki	1	propn-blocking
 Emäntä	1	propn-blocking
 Engelsmanni	1	propn-blocking
-Englanti	1	propn-blocking
 Enkeli	1	propn-blocking
 Ennakko	1	propn-blocking
 Enne	1	propn-blocking
@@ -292,7 +291,6 @@ erä	1	tooshortforcompound
 Erä	1	propn-blocking
 Erämaa	1	propn-blocking
 Esikko	1	propn-blocking
-Espanja	1	propn-blocking
 Esso	1	propn-blocking
 Este	1	propn-blocking
 Esteri	1	propn-blocking
@@ -829,7 +827,6 @@ Jankko	1	propn-blocking
 Jano	1	propn-blocking
 Jantunen	1	propn-blocking
 jao	1	tooshortforcompound
-Japani	1	propn-blocking
 Jatke	1	propn-blocking
 Jatkettu	1	propn-blocking
 Jatko	1	propn-blocking
@@ -1336,7 +1333,6 @@ Kiilto	1	propn-blocking
 Kiilu	1	propn-blocking
 Kiiluva	1	propn-blocking
 Kiima	1	propn-blocking
-kiina	1	noun-blocking-propn
 Kiipeli	1	propn-blocking
 Kiira	1	propn-blocking
 Kiire	1	propn-blocking
@@ -3424,8 +3420,6 @@ Ranko	1	propn-blocking
 Ranne	1	propn-blocking
 Rannikko	1	propn-blocking
 Rannikkoseutu	1	propn-blocking
-Ranska	1	propn-blocking
-Ranskalainen	1	propn-blocking
 Ranta	1	propn-blocking
 Rantakallio	1	propn-blocking
 Rantakivi	1	propn-blocking
@@ -3617,7 +3611,6 @@ Ruoska	1	propn-blocking
 Ruoste	1	propn-blocking
 Ruoti	1	propn-blocking
 Ruotsalainen	1	propn-blocking
-Ruotsi	1	propn-blocking
 Ruovisto	1	propn-blocking
 Rupinen	1	propn-blocking
 Rupla	1	propn-blocking
@@ -3713,7 +3706,6 @@ Sakke	1	propn-blocking
 Sakki	1	propn-blocking
 Sakko	1	propn-blocking
 Sako	1	propn-blocking
-saksa	1	noun-blocking-propn
 Saksi	1	propn-blocking
 Saksmanni	1	propn-blocking
 Saku	1	propn-blocking
@@ -4171,7 +4163,6 @@ Tanga	1	propn-blocking
 Tanhua	1	propn-blocking
 Tanka	1	propn-blocking
 Tanner	1	propn-blocking
-tanska	1	noun-blocking-propn
 Tantere	1	propn-blocking
 Tantti	1	propn-blocking
 tao	1	tooshortforcompound
@@ -4705,8 +4696,6 @@ Venho	1	propn-blocking
 Vento	1	propn-blocking
 Ventti	1	propn-blocking
 Venymä	1	propn-blocking
-Venäjä	1	propn-blocking
-Venäläinen	1	propn-blocking
 Vepsä	1	propn-blocking
 Vepsäläinen	1	propn-blocking
 Verhiö	1	propn-blocking
