@@ -34,7 +34,6 @@ Aatos	1	male
 Aatto	1	male
 Aatu	1	male
 Aava	1	female
-Brigitte	1	female
 ab	2	org
 ab	3	org
 Abel	1	male
@@ -718,6 +717,7 @@ BRB	1	currency
 BRC	1	currency
 BRE	1	currency
 bretoni	1	language
+Brigitte	1	female
 Briitta	1	female
 Brita	1	female
 Britannia	1	country
@@ -2295,6 +2295,7 @@ Jasu	1	male
 Jatta	1	female
 JD	1	currency
 Jeanette	1	female
+Jeff	1	male
 Jemen	1	country
 jemeniläinen	1	country
 jemeniläinen	2	inhabitant
@@ -3789,6 +3790,7 @@ MaO	1	org
 maori	1	language
 mapudungun	1	language
 marathi	1	language
+Marco	1	male
 Marena	1	female
 Margareeta	1	female
 Margareta	1	female
@@ -6199,10 +6201,10 @@ thaimaalainen	2	inhabitant
 thaimaalainen	3	country
 thaimaalainen	4	inhabitant
 THB	1	currency
-Theresa	1	female
-Therese	1	female
 Theo	1	male
 Theodor	1	male
+Theresa	1	female
+Therese	1	female
 THz	2	measure
 ti	1	time
 ti	2	time
