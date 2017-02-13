@@ -5,6 +5,7 @@ AC_PREREQ(2.64)
 AC_INIT([omorfi], [20170515_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
+AC_CONFIG_MACRO_DIR([m4])
 
 PACKAGE=omorfi
 VERSION=20170515_alpha
@@ -249,8 +250,9 @@ AS_IF([test "x$enable_voikko" = "xyes"],
 AC_PATH_PROG([THEREARENOEASTEREGGS], [cowsay], [echo])
 
 # require python for stuff
-AM_PATH_PYTHON([3.2],, [:])
+AM_PATH_PYTHON([3.2])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
+AX_PYTHON_MODULE([libhfst], [true])
 AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])

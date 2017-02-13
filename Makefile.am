@@ -5,6 +5,7 @@
 EXTRA_DIST=README.bindist
 ## N.B. GNU standards COPYING AUTHORS INSTALL README NEWS need not be declared
 SUBDIRS = src doc test man
+ACLOCAL_AMFLAGS = -I m4
 
 pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
