@@ -260,7 +260,8 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/style.tsv \
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
 #
-generated/master.tsv: generated/joint.tsv
+generated/master.tsv: generated/joint.tsv paradigms/morphophonology.tsv \
+	paradigms/stub-deletions.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms/morphophonology.tsv \
 		-c $(srcdir)/paradigms/stub-deletions.tsv -i $< -o $@.unsrt
