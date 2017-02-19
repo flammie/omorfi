@@ -48,6 +48,7 @@ class ApertiumFormatter(Formatter):
         "cnjcoo><vblex",
         "cnjsub",
         "cnjadv",
+        "cog",
         "com",
         "cond",
         "conneg",
@@ -190,7 +191,7 @@ class ApertiumFormatter(Formatter):
         "Cnut": "pp",
         "COMMA": "",
         "COMPARATIVE": "cnjsub",
-        "COMP": "com",
+        "COMP": "",
         "CONJUNCTION": "",
         "CONJUNCTIONVERB": "cnjcoo><vblex",
         "CONJ": "cnjcoo",
@@ -207,11 +208,13 @@ class ApertiumFormatter(Formatter):
         "DEMONSTRATIVE": "dem",
         "DIGIT": "",
         "Din": "+in<n",
+        "Din²": "",
         "Ds": "+s<n",
         "Dhko": "+hko<adj",
         "Disa": "+isa<adj",
         "Dllinen": "+llinen<n",
         "Dlainen": "+lainen<n",
+        "Dla": "+la<n",
         "Dnen": "+nen<n",
         "Dtar": "+tar<n",
         "Dton": "+ton<adj",
@@ -221,7 +224,7 @@ class ApertiumFormatter(Formatter):
         "Dma": "+ma<n",
         "Dinen": "+inen<n",
         "Dja": "+ja<n",
-        "Dmpi": "+mpi<adj",
+        "Dmpi": "",
         "Dmaisilla": "+maisilla<adv",
         "Dminen": "+minen<n",
         "Dnut": "+nut<adj",
@@ -252,7 +255,7 @@ class ApertiumFormatter(Formatter):
         "INTRANSITIVE_arg": "vblex",
         "INTJ": "ij",
         "INTERROGATIVE": "itg",
-        "LAST": "ant",
+        "LAST": "cog",
         "LEMMA-START": "",
         "LEMMA-END": "",
         "MALE": "m",
@@ -410,9 +413,7 @@ class ApertiumFormatter(Formatter):
         wordmap['analysis'] = lexc_escape(wordmap['lemma'])
         wordmap['analysis'] = wordmap['analysis'].replace(
             word_boundary, '+').replace(weak_boundary, '')
-        if wordmap['is_suffix']:
-            wordmap['analysis'] = "+" + wordmap['analysis']
-        elif wordmap['is_prefix']:
+        if wordmap['is_prefix']:
             wordmap['analysis'] += "+"
         elif wordmap['upos'] == 'PROPN':
             wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
@@ -484,6 +485,7 @@ class ApertiumFormatter(Formatter):
 
     def root_lexicon_lexc(self):
         root = Formatter.root_lexicon_lexc(self)
+        root += '\t'.join(['0','SUFFIX',';']) + '\n'
         return root
 
 # self test

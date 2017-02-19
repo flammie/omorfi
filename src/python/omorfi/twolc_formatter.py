@@ -69,8 +69,11 @@ def format_alphabet_twolc(format, ruleset):
     elif ruleset == 'apertium':
         for mcs in common_multichars:
             twolcstring += twolc_escape(mcs) + ':0 ! deleting all specials\n'
+    elif ruleset == 'phon':
+        for mcs in common_multichars:
+            twolcstring += twolc_escape(mcs) + '\n'
     else:
-        print("Unknown ruleset", ruleset, file=stderr)
+        print("Unknown alphabet for ruleset", ruleset, file=stderr)
         exit(1)
     twolcstring += ';\n'
     return twolcstring
@@ -96,8 +99,10 @@ def format_sets_twolc(format, ruleset):
             '! Consonants\n'
     elif ruleset == 'apertium':
         pass
+    elif ruleset == 'phon':
+        pass
     else:
-        print("missing ruleset", ruleset)
+        print("Unknown sets for ruleset", ruleset, file=stderr)
         exit(1)
     twolcstring += 'DUMMYSETCANBEUSEDTOTESTBUGS = a b c ;\n'
     return twolcstring
@@ -114,7 +119,7 @@ def format_definitions_twolc(format, ruleset):
 
 def format_rules_twolc(format, ruleset):
     twolcstring = "Rules\n"
-    if ruleset == 'stub-phon':
+    if ruleset == 'stub-phon' or ruleset == 'phon':
         twolcstring += '"Dummy rule"\na <= _ ;\n'
     elif ruleset == 'recase-any':
         twolcstring += '"Uppercase anywhere dummy rule"\n'
@@ -122,6 +127,10 @@ def format_rules_twolc(format, ruleset):
     elif ruleset == 'uppercase-first':
         twolcstring += '"Require uppercase in beginning"\n'
         twolcstring += 'LC:UC => .#. _ ;\n'
+        twolcstring += '\twhere LC in Lower UC in Upper matched ;\n'
+    elif ruleset == 'uppercase-any':
+        twolcstring += '"Disallow lowercase"\n'
+        twolcstring += 'UC:LC /<= _ ;\n'
         twolcstring += '\twhere LC in Lower UC in Upper matched ;\n'
     elif ruleset == 'hyphens':
         twolcstring += '"Disallow no hyphen between equal vowels"\n'

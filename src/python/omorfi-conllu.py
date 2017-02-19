@@ -205,7 +205,7 @@ def format_feats_ud(anal, hacks=None):
             elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
                            'ADE', 'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN',
                            'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA',
-                           'MA', 'LOC']:
+                           'MA', 'LOC', 'LA']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
