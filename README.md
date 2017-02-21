@@ -53,7 +53,7 @@ looking to build *omorfi* on *Ubuntu*, go to: [Pre-requisites for
 Ubuntu](http://wiki.apertium.org/wiki/Prerequisites_for_Debian).
 
 Compilation of the morphological analyser, generation, lemmatisation or
-spell-checking requires [HFST](http://hfst.sf.net) tools or compatible
+spell-checking requires [HFST](https://hfst.github.io/) tools or compatible
 installed. For use, you will need the python bindings too, and a relatively
 recent version of python 3. Of course standard GNU build tools are needed as
 well. You should have versions no more than year or two old, the build is not
