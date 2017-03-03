@@ -36,6 +36,9 @@ Aatu	1	male
 Aava	1	female
 ab	2	org
 ab	3	org
+Abdel	1	male
+Abdul	1	male
+Abdullah	1	male
 Abel	1	male
 abhaasi	1	language
 Abiel	1	male
@@ -333,6 +336,7 @@ antiguabarbudalainen	4	inhabitant
 Antigua ja Barbuda	1	country
 Anton	1	male
 Antonia	1	female
+Antonio	1	male
 Antti	1	male
 Antto	1	male
 anttolainen	1	inhabitant
@@ -632,6 +636,7 @@ bermudalainen	1	country
 bermudalainen	2	inhabitant
 bermudalainen	3	country
 bermudalainen	4	inhabitant
+Bernd	1	male
 Bernhard	1	male
 Bernice	1	female
 Bernt	1	male
@@ -1888,6 +1893,7 @@ hiligaino	1	language
 Hilja	1	female
 Hilkka	1	female
 Hilla	1	female
+Hillary	1	female
 Hille	1	female
 Hillevi	1	female
 Hilma	1	female
@@ -2087,6 +2093,7 @@ inarilainen	2	inhabitant
 inarinsaame	1	language
 inc.	1	org
 inc	1	org
+Indiana	2	female
 Indonesia	1	country
 indonesia	1	language
 indonesialainen	1	country
@@ -2756,6 +2763,7 @@ keikyäläinen	2	inhabitant
 Keimo	1	male
 keiteleläinen	1	inhabitant
 keiteleläinen	2	inhabitant
+Kelly	1	male
 kemijärveläinen	1	inhabitant
 kemijärveläinen	2	inhabitant
 kemiläinen	1	inhabitant
@@ -3535,6 +3543,7 @@ loppilainen	2	inhabitant
 Lorentz	1	male
 Lotta	1	female
 Lotten	1	female
+Louis	1	male
 Louise	1	female
 lounais-	1	geo
 Loviisa	1	female
@@ -3565,6 +3574,7 @@ LUF	2	currency
 luhankalainen	1	inhabitant
 luhankalainen	2	inhabitant
 luhya	1	language
+Luis	1	male
 luiseño	1	language
 LuK	2	title
 Luka	1	male
@@ -4130,6 +4140,7 @@ MNT	1	currency
 MO	1	org
 MO	2	title
 Moa	1	female
+Mohammed	1	male
 mohawk	1	language
 mokša	1	language
 mol	2	measure
@@ -5227,6 +5238,7 @@ rautiolainen	1	inhabitant
 rautiolainen	2	inhabitant
 rautjärveläinen	1	inhabitant
 rautjärveläinen	2	inhabitant
+Raymond	1	male
 Rbl	1	currency
 RD$	1	currency
 Re.	1	currency
@@ -6209,6 +6221,8 @@ Theo	1	male
 Theodor	1	male
 Theresa	1	female
 Therese	1	female
+Thomas	1	male
+Thomas	3	male
 THz	2	measure
 ti	1	time
 ti	2	time
@@ -6794,6 +6808,7 @@ veteliläinen	1	inhabitant
 veteliläinen	2	inhabitant
 VHL	1	org
 vht	1	title
+Victoria	2	female
 Vidar	1	male
 Viena	1	female
 Vieno	1	female
@@ -6957,6 +6972,7 @@ washo	1	language
 Wb	1	measure
 Werneri	1	male
 Wh	1	measure
+Wilbur	1	male
 Wilhelm	1	male
 Wilhelmiina	1	female
 Wilhelmina	1	female
