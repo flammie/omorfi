@@ -249,6 +249,7 @@ class OmorFormatter(Formatter):
         '[VOICE=ACT]',
         '[VOICE=PSS]',
         '[WORD_ID=',
+        '[NEWPARA=',
         "[FOREIGN=FOREIGN]"
     }
 
@@ -623,7 +624,7 @@ class OmorFormatter(Formatter):
         self.newparas = True
         if 'newparas' not in kwargs or not kwargs['newparas']:
             for k, v in self.stuff2omor.items():
-                if "NEW_PARA=" in v:
+                if "NEWPARA=" in v:
                     self.stuff2omor[k] = ""
             self.newparas = False
 
