@@ -53,6 +53,8 @@ class ApertiumFormatter(Formatter):
         "com",
         "cond",
         "conneg",
+        "compound-only-L",
+        "compound-R",
         "def",
         "det",
         "dem",
@@ -180,9 +182,9 @@ class ApertiumFormatter(Formatter):
         "ARTWORK": "",
         "ARROW": "",
         "AUX": "vaux",
-        "B-": "-",
-        "B←": "-",
-        "B→": "-",
+        "B-": "",
+        "B←": "compound-only-L",
+        "B→": "compound-R",
         "Bc": "+",
         "CARDINAL": "card",
         "Ccmp": "com",
@@ -437,7 +439,7 @@ class ApertiumFormatter(Formatter):
                     '+ei' + \
                     self.stuff2lexc('Nneg')
             else:
-                wordmap['analysis'] = wordmap['lemma'][:-2] +\
+                wordmap['analysis'] = wordmap['lemma'][:-2] + \
                     self.stuff2lexc('ADVERBIAL') + \
                     '+' + wordmap['lemma'][-2:] + \
                     self.stuff2lexc('Nneg')

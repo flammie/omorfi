@@ -1,11 +1,11 @@
 lemma	homonym	sem
 $	1	currency
 £	1	currency
-¥	2	currency
 ₤	1	currency
 €	1	currency
-a	1	time
+¥	2	currency
 $A	1	currency
+a	1	time
 aA	1	measure
 AA	1	org
 Aabraham	1	male
@@ -33,9 +33,7 @@ Aati	1	male
 Aatos	1	male
 Aatto	1	male
 Aatu	1	male
-Marcel	1	male
 Aava	1	female
-Johanne	1	female
 ab	2	org
 ab	3	org
 Abdel	1	male
@@ -50,8 +48,8 @@ Abraham	1	male
 aC	1	measure
 a°C	2	measure
 acd	1	measure
-ad	1	title
 a.D.	1	time
+ad	1	title
 Ada	1	female
 Adam	1	male
 adangme	1	language
@@ -63,8 +61,8 @@ Adrian	1	male
 ADT	1	org
 adyge	2	language
 AED	1	currency
-aF	2	measure
 Af	1	currency
+aF	2	measure
 AFA	1	currency
 afar	1	language
 Afganistan	1	country
@@ -87,8 +85,8 @@ agrol.	1	title
 agrologi	1	title
 agron.	1	title
 agronomi	1	title
-aH	2	measure
 Ah	1	measure
+aH	2	measure
 ahlaislainen	1	inhabitant
 ahlaislainen	2	inhabitant
 Ahti	1	male
@@ -151,8 +149,8 @@ alavieskalainen	1	inhabitant
 alavieskalainen	2	inhabitant
 alavutelainen	1	inhabitant
 alavutelainen	2	inhabitant
-albania	1	language
 Albania	1	country
+albania	1	language
 albanialainen	1	country
 albanialainen	2	inhabitant
 albanialainen	3	country
@@ -218,17 +216,17 @@ Alvi	1	male
 Alvin	1	male
 Alvina	1	female
 alx	2	measure
-am	2	measure
 a.m.	1	time
+am	2	measure
 Amalia	1	female
 Amanda	1	female
 AMD	1	currency
 AMD	2	currency
 Amelia	1	female
 Amelie	1	female
-Amerikan Samoa	1	country
 amerikanenglanti	1	language
 amerikanespanja	1	language
+Amerikan Samoa	1	country
 amerikansamoalainen	1	country
 amerikansamoalainen	2	inhabitant
 amerikansamoalainen	3	country
@@ -331,11 +329,11 @@ Ante	1	male
 Antero	1	male
 Anthony	1	male
 Antigua	1	country
-Antigua ja Barbuda	1	country
 antiguabarbudalainen	1	country
 antiguabarbudalainen	2	inhabitant
 antiguabarbudalainen	3	country
 antiguabarbudalainen	4	inhabitant
+Antigua ja Barbuda	1	country
 Anton	1	male
 Antonia	1	female
 Antonio	1	male
@@ -400,8 +398,8 @@ Arla	1	female
 ARM	1	currency
 Armas	1	male
 Armas	2	male
-armenia	1	language
 Armenia	1	country
+armenia	1	language
 armenialainen	1	country
 armenialainen	2	inhabitant
 armenialainen	3	country
@@ -437,10 +435,10 @@ Arvi	1	male
 Arvid	1	male
 Arvo	1	male
 arvoisa	1	title
-as	2	measure
 aS	1	measure
-AS	1	org
 A/S	1	org
+AS	1	org
+as	2	measure
 ASA	1	org
 asentaja	1	title
 asessori	1	title
@@ -460,8 +458,8 @@ askolalainen	2	inhabitant
 Aslak	1	male
 Aslög	1	female
 Asmo	1	male
-as.oy	2	org
 as.oy.	1	org
+as.oy	2	org
 asr	2	measure
 ass.	1	title
 assami	2	language
@@ -486,9 +484,9 @@ atšeh	1	language
 Atso	1	male
 atšoli	1	language
 Atte	1	male
-au.	1	title
-AU	1	measure
 AU$	1	currency
+AU	1	measure
+au.	1	title
 AUD	2	currency
 August	1	male
 Augusta	1	female
@@ -533,8 +531,8 @@ awadhi	1	language
 aWb	1	measure
 AWG	1	currency
 Axel	1	male
-ay	2	org
 ay.	1	org
+ay	2	org
 Azerbaidžan	1	country
 azerbaidžanilainen	1	country
 azerbaidžanilainen	2	inhabitant
@@ -545,8 +543,8 @@ AZM	1	currency
 AZN	1	currency
 aΩ	1	measure
 B	1	measure
-BA	1	title
 B.A.	1	title
+BA	1	title
 BAD	1	currency
 bafia	1	language
 Bahama	1	country
@@ -687,13 +685,13 @@ BOP	1	currency
 Borgåbladet	1	media
 Boris	1	male
 Boris	2	male
-bosnia	1	language
 Bosnia	1	country
-Bosnia ja Hertsegovina	1	country
+bosnia	1	language
 bosniahertsegovinalainen	1	country
 bosniahertsegovinalainen	2	inhabitant
 bosniahertsegovinalainen	3	country
 bosniahertsegovinalainen	4	inhabitant
+Bosnia ja Hertsegovina	1	country
 Botswana	1	country
 Botswana	2	country
 botswanalainen	1	country
@@ -759,15 +757,15 @@ brändöläinen	1	inhabitant
 brändöläinen	2	inhabitant
 Bs	1	currency
 B.S.	1	title
-BSc	1	title
 B.Sc.	1	title
+BSc	1	title
 BSD	1	currency
 BTN	1	currency
 budjettineuvos	1	title
 bugi	1	language
 BUK	1	currency
-bulgaria	1	language
 Bulgaria	1	country
+bulgaria	1	language
 bulgarialainen	1	country
 bulgarialainen	2	inhabitant
 bulgarialainen	3	country
@@ -780,8 +778,8 @@ burkinalainen	1	country
 burkinalainen	2	inhabitant
 burkinalainen	3	country
 burkinalainen	4	inhabitant
-burma	1	language
 Burma	1	country
+burma	1	language
 burmalainen	1	country
 burmalainen	2	inhabitant
 burmalainen	3	country
@@ -798,11 +796,11 @@ BZ$	1	currency
 BZD	1	currency
 Börje	1	male
 c	1	currency
+£C	1	currency
 C	1	currency
 C	2	measure
-£C	1	currency
-cA	1	measure
 CA$	1	currency
+cA	1	measure
 CAD	1	currency
 caddo	1	language
 Caj	1	male
@@ -837,12 +835,12 @@ cebuano	1	language
 Cecilia	1	female
 Celeste	1	female
 Celina	1	female
-cF	2	measure
 CF	1	currency
+cF	2	measure
 CFPF	1	currency
 cg	1	measure
-cH	2	measure
 Ch$	1	currency
+cH	2	measure
 Charlotta	1	female
 CHE	1	currency
 cherokee	1	language
@@ -882,8 +880,8 @@ cmol	2	measure
 cN	2	measure
 CNX	1	currency
 CNY	1	currency
-Co	1	org
 Co.	1	org
+Co	1	org
 Col$	1	currency
 Conny	1	male
 cookinsaarelainen	1	country
@@ -893,8 +891,8 @@ cookinsaarelainen	4	inhabitant
 Cookinsaaret	1	country
 COP	1	currency
 Cornelia	1	female
-Corp	2	org
 Corp.	1	org
+Corp	2	org
 Costa Rica	1	country
 costaricalainen	1	country
 costaricalainen	2	inhabitant
@@ -931,8 +929,8 @@ CZK	1	currency
 cΩ	2	measure
 d	1	measure
 d	2	time
-dA	1	measure
 DA	1	currency
+dA	1	measure
 daA	1	measure
 Daavid	1	male
 daBq	2	measure
@@ -940,8 +938,8 @@ daC	1	measure
 da°C	2	measure
 dacd	1	measure
 daF	2	measure
-dag	1	measure
 Dag	1	male
+dag	1	measure
 Daga	1	female
 Dagmar	1	female
 Dagny	1	female
@@ -955,8 +953,8 @@ dalm	2	measure
 dalx	2	measure
 dam	2	measure
 damol	2	measure
-daN	2	measure
 Dan	1	male
+daN	2	measure
 Dani	1	male
 Daniel	1	male
 Daniela	1	female
@@ -973,8 +971,8 @@ daW	1	measure
 daWb	1	measure
 dazaga	1	language
 daΩ	1	measure
-dB	1	measure
 Db	1	currency
+dB	1	measure
 dBq	2	measure
 dC	1	measure
 d°C	2	measure
@@ -987,8 +985,8 @@ DEM	1	currency
 den	2	measure
 Deniz	1	male
 Dennis	1	male
-dF	2	measure
 DF	1	currency
+dF	2	measure
 dg	1	measure
 dH	2	measure
 dHz	2	measure
@@ -1013,14 +1011,14 @@ diplomikosmetologi	1	title
 diplomiurkuri	1	title
 dipl.urk.	1	title
 dir. cant.	1	title
-dir. mus.	1	title
 director	1	title
 dirhami	1	currency
+dir. mus.	1	title
 Disa	1	female
 div.	1	org
 divehi	1	language
-dj	1	title
 dJ	1	measure
+dj	1	title
 djerma	1	language
 DJF	1	currency
 Djibouti	1	country
@@ -1091,14 +1089,14 @@ E	1	currency
 Ea	1	female
 EA	1	measure
 EA	2	measure
-eaa	1	time
 eaa.	1	time
+eaa	1	time
 Ebba	1	female
 Ebbe	1	male
 EBq	2	measure
+EC$	1	currency
 EC	1	measure
 E°C	2	measure
-EC$	1	currency
 Ecd	1	measure
 eckeröläinen	1	inhabitant
 eckeröläinen	2	inhabitant
@@ -1169,9 +1167,8 @@ Ekat	1	measure
 Ekku	1	male
 ekon.	1	title
 ekonomi	1	title
-eKr	1	time
 eKr.	1	time
-El Salvador	1	country
+eKr	1	time
 EL	1	title
 elami	1	language
 Elea	1	female
@@ -1223,6 +1220,7 @@ Elna	1	female
 Elof	1	male
 elokuvaneuvos	1	title
 Elsa	1	female
+El Salvador	1	country
 elsalvadorilainen	1	country
 elsalvadorilainen	2	inhabitant
 elsalvadorilainen	3	country
@@ -1322,8 +1320,8 @@ eräjärveläinen	2	inhabitant
 eräneuvos	1	title
 Es	2	measure
 Es	3	measure
-Esa	1	male
 ESA	1	currency
+Esa	1	male
 ESA	2	currency
 Esaias	1	male
 Esaias	2	male
@@ -1334,8 +1332,8 @@ esittelijä	1	title
 Eskil	1	male
 Esko	1	male
 ESP	1	currency
-espanja	1	language
 Espanja	1	country
+espanja	1	language
 espanjalainen	1	country
 espanjalainen	2	inhabitant
 espanjalainen	3	country
@@ -1394,9 +1392,9 @@ euralainen	1	inhabitant
 euralainen	2	inhabitant
 euro	1	currency
 eurosentti	1	currency
-ev.	1	title
 eV	1	measure
 EV	1	measure
+ev.	1	title
 Eva	1	female
 Evald	1	male
 Evamaria	1	female
@@ -1418,8 +1416,8 @@ ewe	1	language
 ewondo	1	language
 EΩ	2	measure
 f.	1	currency
-F	1	measure
 F$	1	currency
+F	1	measure
 fA	1	measure
 Fabian	1	male
 FaK	2	title
@@ -1455,8 +1453,8 @@ fg	1	measure
 fH	2	measure
 fHz	2	measure
 Fidelma	1	female
-fidži	1	language
 Fidži	1	country
+fidži	1	language
 fidžiläinen	1	country
 fidžiläinen	2	inhabitant
 fidžiläinen	3	country
@@ -1526,9 +1524,9 @@ friuli	1	language
 fs	2	measure
 fS	2	measure
 fsr	2	measure
+Ft	1	currency
 ft.	1	measure
 fT	1	measure
-Ft	1	currency
 FT	1	title
 fulani	1	language
 fut	1	language
@@ -1544,9 +1542,9 @@ fääri	1	language
 föglöläinen	1	inhabitant
 föglöläinen	2	inhabitant
 fΩ	2	measure
-g	1	measure
-G	1	currency
 G$	1	currency
+G	1	currency
+g	1	measure
 ga	1	language
 GA	1	measure
 Gabon	1	country
@@ -1576,8 +1574,8 @@ Geir	1	male
 GEK	1	currency
 GEL	1	currency
 Georg	1	male
-georgia	1	language
 Georgia	1	country
+georgia	1	language
 georgialainen	1	country
 georgialainen	2	inhabitant
 georgialainen	3	country
@@ -1644,14 +1642,14 @@ gruusialainen	1	country
 gruusialainen	2	inhabitant
 gruusialainen	3	country
 gruusialainen	4	inhabitant
-grönlanti	1	language
 Grönlanti	1	country
+grönlanti	1	language
 grönlantilainen	1	country
 grönlantilainen	2	inhabitant
 grönlantilainen	3	country
 grönlantilainen	4	inhabitant
-Gs	2	measure
 GS	1	measure
+Gs	2	measure
 Gsr	2	measure
 GT	1	measure
 GTQ	1	currency
@@ -1709,9 +1707,9 @@ Göte	1	male
 GΩ	2	measure
 h	1	time
 ha	1	measure
-ha	2	measure
 hA	1	measure
 HA	1	title
+ha	2	measure
 haapajärveläinen	1	inhabitant
 haapajärveläinen	2	inhabitant
 haapajärvinen	1	inhabitant
@@ -1728,8 +1726,8 @@ Hagar	1	female
 haida	1	language
 hailuotolainen	1	inhabitant
 hailuotolainen	2	inhabitant
-haiti	1	language
 Haiti	1	country
+haiti	1	language
 haitilainen	1	country
 haitilainen	2	inhabitant
 haitilainen	3	country
@@ -1800,8 +1798,8 @@ hausjärvinen	1	inhabitant
 hausjärvinen	2	inhabitant
 havaiji	1	language
 hBq	2	measure
-h.c.	1	title
 hC	1	measure
+h.c.	1	title
 h°C	2	measure
 hcd	1	measure
 Heard and McDonaldinsaaret	1	country
@@ -1916,13 +1914,13 @@ hirvensalmelainen	2	inhabitant
 hJ	1	measure
 Hjalmar	1	male
 Hjördis	1	female
+HK$	1	currency
 hK	2	measure
 HK	2	title
-HK$	1	currency
 hkat	1	measure
 HKD	1	currency
-hl	2	measure
 HL	1	title
+hl	2	measure
 HL	2	title
 HLK	2	title
 HLL	2	title
@@ -1941,8 +1939,8 @@ HO	2	org
 hoitaja	1	title
 HOK	1	title
 Holger	1	male
-hollanti	1	language
 Hollanti	1	country
+hollanti	1	language
 hollantilainen	1	country
 hollantilainen	2	inhabitant
 hollantilainen	3	country
@@ -2095,11 +2093,11 @@ Inari	1	female
 inarilainen	1	inhabitant
 inarilainen	2	inhabitant
 inarinsaame	1	language
-inc	1	org
 inc.	1	org
+inc	1	org
 Indiana	2	female
-indonesia	1	language
 Indonesia	1	country
+indonesia	1	language
 indonesialainen	1	country
 indonesialainen	2	inhabitant
 indonesialainen	3	country
@@ -2183,8 +2181,8 @@ ISJ	1	currency
 ISK	1	currency
 Isko	1	male
 Isla	1	female
-islanti	1	language
 Islanti	1	country
+islanti	1	language
 islantilainen	1	country
 islantilainen	2	inhabitant
 islantilainen	3	country
@@ -2208,8 +2206,8 @@ israelilainen	3	country
 israelilainen	4	inhabitant
 Isto	1	male
 it.	1	geo
-italia	1	language
 Italia	1	country
+italia	1	language
 italialainen	1	country
 italialainen	2	inhabitant
 italialainen	3	country
@@ -2232,10 +2230,10 @@ itävaltalainen	4	inhabitant
 IU	1	measure
 Ivar	1	male
 Izvestija	1	media
-J	1	measure
 J$	1	currency
-jaa	1	time
+J	1	measure
 jaa.	1	time
+jaa	1	time
 Jaakkima	1	male
 Jaakko	1	male
 Jaakob	1	male
@@ -2284,8 +2282,8 @@ Janne	1	male
 Janni	1	female
 Jannika	1	female
 jao	1	language
-japani	1	language
 Japani	1	country
+japani	1	language
 japanilainen	1	country
 japanilainen	2	inhabitant
 japanilainen	3	country
@@ -2354,8 +2352,8 @@ Jimmy	1	male
 Jiri	1	male
 Jirko	1	male
 jju	1	language
-jKr	1	time
 jKr.	1	time
+jKr	1	time
 jm	1	measure
 JMD	1	currency
 Joachim	1	male
@@ -2368,6 +2366,7 @@ joensuulainen	1	inhabitant
 joensuulainen	2	inhabitant
 Johan	1	male
 Johanna	1	female
+Johanne	1	female
 Johannes	1	male
 John	1	male
 Johnny	1	male
@@ -2463,8 +2462,8 @@ Julie	1	female
 Julie	2	female
 Juliette	1	female
 Julius	1	male
-junior	1	title
 Junior	1	male
+junior	1	title
 Junnu	1	male
 jupikkikieli	1	language
 Juri	1	male
@@ -2518,11 +2517,10 @@ Jöran	1	male
 Jörgen	1	male
 Jörn	1	male
 K	1	measure
-K Sh	1	currency
 ka	1	measure
-ka	2	measure
 kA	1	measure
-kaakkois-	1	geo
+ka	2	measure
+kaakkois	1	geo
 Kaakonkulma	1	media
 Kaapo	1	male
 Kaappo	1	male
@@ -2630,13 +2628,13 @@ kantoninkiina	1	language
 kantt.	1	title
 kanttori	1	title
 kanuri	1	language
-Kap Verde	1	country
 kappal.	1	title
 kappalainen	1	title
 kapt.	1	title
 kapteeni	1	title
 kapteeniluutnantti	1	title
 kapt.luutn.	1	title
+Kap Verde	1	country
 kapverdeläinen	1	country
 kapverdeläinen	2	inhabitant
 kapverdeläinen	3	country
@@ -2757,8 +2755,8 @@ kC	1	measure
 k°C	2	measure
 kcal	2	measure
 kcd	1	measure
-kd.	1	polit
 KD	1	currency
+kd.	1	polit
 KD	2	polit
 ke	1	time
 Keelingsaaret	1	country
@@ -2807,10 +2805,10 @@ Kerstin	1	female
 Kerttu	1	female
 Kerttuli	1	female
 KES	1	currency
-kesk.	1	polit
-kesk.	2	time
 Kesk.	1	org
+kesk.	1	polit
 Kesk.	2	polit
+kesk.	2	time
 Keski-Afrikan tasavalta	1	country
 Keski-Afrikka	1	country
 keskiafrikkalainen	1	country
@@ -2874,16 +2872,16 @@ kiikoislainen	1	inhabitant
 kiikoislainen	2	inhabitant
 kiiminkiläinen	1	inhabitant
 kiiminkiläinen	2	inhabitant
-kiina	1	language
 Kiina	1	country
+kiina	1	language
 kiinalainen	1	country
 kiinalainen	2	inhabitant
 kiinalainen	3	country
 kiinalainen	4	inhabitant
 kiinteistöneuvos	1	title
 kiinteistönvälittäjä	1	title
-kiint.oy	2	org
 kiint.oy.	1	org
+kiint.oy	2	org
 Kiira	1	female
 Kiira-Johanna	1	female
 kikuju	1	language
@@ -2913,8 +2911,8 @@ kirgisialainen	3	country
 kirgisialainen	4	inhabitant
 Kirgisistan	1	country
 Kirgistan	1	country
-kiribati	1	language
 Kiribati	1	country
+kiribati	1	language
 kiribatilainen	1	country
 kiribatilainen	2	inhabitant
 kiribatilainen	3	country
@@ -2957,8 +2955,8 @@ kivijärvinen	2	inhabitant
 kJ	1	measure
 Kjell	1	male
 kk	1	time
-kK	2	measure
 KK	1	title
+kK	2	measure
 kkat	1	measure
 KKO	2	org
 kkp	1	measure
@@ -2973,10 +2971,10 @@ klingon	1	language
 klm	2	measure
 klo	1	time
 klx	2	measure
-km	2	measure
 KM	1	currency
-KM	2	title
 k-m²	2	measure
+km	2	measure
+KM	2	title
 k-m³	2	measure
 KMF	1	currency
 kmol	2	measure
@@ -2987,16 +2985,16 @@ kodisjokelainen	1	inhabitant
 kodisjokelainen	2	inhabitant
 koijärveläinen	1	inhabitant
 koijärveläinen	2	inhabitant
-koillis-	1	geo
+koillis	1	geo
 Koillis-Lappi	1	media
 Koillissanomat	1	media
 Koillis-Savo	1	media
 koivulahtelainen	1	inhabitant
 koivulahtelainen	2	inhabitant
-kok.	1	polit
-kok.	2	title
 Kok.	1	org
+kok.	1	polit
 Kok.	2	polit
+kok.	2	title
 kokemäkeläinen	1	inhabitant
 kokemäkeläinen	2	inhabitant
 kokkolalainen	1	inhabitant
@@ -3027,8 +3025,8 @@ Komorit	1	country
 koneteknikko	1	title
 konginkankaalainen	1	inhabitant
 konginkankaalainen	2	inhabitant
-kongo	1	language
 Kongo	1	country
+kongo	1	language
 Kongo-Brazzaville	1	country
 Kongo-Kinshasa	1	country
 kongolainen	1	country
@@ -3059,8 +3057,8 @@ koose	1	language
 kop	1	currency
 kop	2	currency
 kopti	1	language
-korea	1	language
 Korea	1	country
+korea	1	language
 Korea	2	country
 korealainen	1	country
 korealainen	2	inhabitant
@@ -3123,8 +3121,8 @@ kpm	1	measure
 KPW	1	currency
 kr	1	currency
 krad	2	measure
-kreikka	1	language
 Kreikka	1	country
+kreikka	1	language
 kreikkalainen	1	country
 kreikkalainen	2	inhabitant
 kreikkalainen	3	country
@@ -3146,8 +3144,8 @@ Kristina	1	female
 Kristine	1	female
 Kristoffer	1	male
 KRO	1	currency
-kroatia	1	language
 Kroatia	1	country
+kroatia	1	language
 kroatialainen	1	country
 kroatialainen	2	inhabitant
 kroatialainen	3	country
@@ -3160,6 +3158,7 @@ kruunupyyläinen	2	inhabitant
 KRW	1	currency
 ks	1	measure
 kS	2	measure
+K Sh	1	currency
 ksr	2	measure
 kt	1	measure
 kT	1	measure
@@ -3180,8 +3179,8 @@ kuhmalainen	2	inhabitant
 kuhmoislainen	1	inhabitant
 kuhmoislainen	2	inhabitant
 kuhmolainen	1	inhabitant
-kuhmolainen	2	inhabitant
 Kuhmolainen	1	media
+kuhmolainen	2	inhabitant
 Kuisma	1	male
 kuivaniemeläinen	1	inhabitant
 kuivaniemeläinen	2	inhabitant
@@ -3247,8 +3246,8 @@ kwasio	1	language
 kWb	1	measure
 KWD	1	currency
 kWh	2	measure
-ky	1	org
 ky.	1	org
+ky	1	org
 KYD	1	currency
 Kylli	1	female
 Kyllikki	1	female
@@ -3279,9 +3278,9 @@ kölsch	1	language
 köyliöläinen	1	inhabitant
 köyliöläinen	2	inhabitant
 kΩ	2	measure
-l	1	measure
-l.	1	geo
 L	1	currency
+l.	1	geo
+l	1	measure
 la	1	time
 la	2	time
 laamanni	1	title
@@ -3300,8 +3299,8 @@ laitilainen	2	inhabitant
 laitilalainen	1	inhabitant
 laitilalainen	2	inhabitant
 laivahuoltaja	1	title
-LaK	2	title
 LAK	1	currency
+LaK	2	title
 lakit.	1	title
 LaL	2	title
 lamba	1	language
@@ -3351,8 +3350,8 @@ lastent.op.	1	title
 LaT	2	title
 lati	1	currency
 latina	1	language
-latvia	1	language
 Latvia	1	country
+latvia	1	language
 latvialainen	1	country
 latvialainen	2	inhabitant
 latvialainen	3	country
@@ -3462,8 +3461,8 @@ lieksalainen	1	inhabitant
 lieksalainen	2	inhabitant
 lietolainen	1	inhabitant
 lietolainen	2	inhabitant
-liettua	1	language
 Liettua	1	country
+liettua	1	language
 liettualainen	1	country
 liettualainen	2	inhabitant
 liettualainen	3	country
@@ -3517,17 +3516,17 @@ LKH	1	org
 LKR	1	currency
 lkt	1	language
 LKT	1	title
-lkv.	1	time
 LKV	1	org
+lkv.	1	time
 LKV	2	title
-lky	1	org
 lky.	1	org
-ll	1	org
+lky	1	org
 ll.	1	org
+ll	1	org
 LL	1	title
 LL	2	currency
-lm	2	measure
 Lm	1	currency
+lm	2	measure
 lohjalainen	1	inhabitant
 lohjalainen	2	inhabitant
 lohtajalainen	1	inhabitant
@@ -3549,7 +3548,7 @@ Lotta	1	female
 Lotten	1	female
 Louis	1	male
 Louise	1	female
-lounais-	1	geo
+lounais	1	geo
 Loviisa	1	female
 loviisalainen	1	inhabitant
 loviisalainen	2	inhabitant
@@ -3605,7 +3604,7 @@ luopioislainen	1	inhabitant
 luopioislainen	2	inhabitant
 luopiolainen	1	inhabitant
 luopiolainen	2	inhabitant
-luoteis-	1	geo
+luoteis	1	geo
 Luoteisväylä	1	media
 luotolainen	1	inhabitant
 luotolainen	2	inhabitant
@@ -3621,8 +3620,8 @@ luutn.	1	title
 luutnantti	1	title
 luvialainen	1	inhabitant
 luvialainen	2	inhabitant
-luxemburg	1	language
 Luxemburg	1	country
+luxemburg	1	language
 luxemburgilainen	1	country
 luxemburgilainen	2	inhabitant
 luxemburgilainen	3	country
@@ -3659,21 +3658,21 @@ lääk.	1	title
 lääket.	1	title
 lääkintöneuvos	1	title
 lääkäri	1	title
-m	1	measure
-µm	2	measure
 m€	1	currency
-M	1	currency
-M.	2	title
 M€	1	currency
+M	1	currency
+m	1	measure
 m²	2	measure
+µm	2	measure
+M.	2	title
 m³	2	measure
-ma	1	time
-ma	2	time
-ma.	1	title
 mA	1	measure
 MA	1	measure
-MA	2	title
+ma	1	time
+ma.	1	title
 M.A.	1	title
+ma	2	time
+MA	2	title
 maakuntaneuvos	1	title
 maalahtelainen	1	inhabitant
 maalahtelainen	2	inhabitant
@@ -3736,13 +3735,13 @@ Maisa	1	female
 maist.	1	title
 maisteri	1	title
 maithili	1	language
-maj.	1	title
 Maj	1	female
+maj.	1	title
 Maja	1	female
 majuri	1	title
 makassar	1	language
-makedonia	1	language
 Makedonia	1	country
+makedonia	1	language
 makedonialainen	1	country
 makedonialainen	2	inhabitant
 makedonialainen	3	country
@@ -3779,8 +3778,8 @@ malilainen	4	inhabitant
 Malin	1	female
 Malina	1	female
 Malla	1	female
-malta	1	language
 Malta	1	country
+malta	1	language
 Malta	2	country
 maltalainen	1	country
 maltalainen	2	inhabitant
@@ -3807,14 +3806,15 @@ MaO	1	org
 maori	1	language
 mapudungun	1	language
 marathi	1	language
+Marcel	1	male
 Marco	1	male
 Marena	1	female
 Margareeta	1	female
 Margareta	1	female
 Margit	1	female
 Margita	1	female
-mari	1	language
 Mari	1	female
+mari	1	language
 Maria	1	female
 Maria-Kristina	1	female
 Marianna	1	female
@@ -3921,15 +3921,15 @@ mayottelainen	3	country
 mayottelainen	4	inhabitant
 Mb	1	measure
 MB	1	measure
-MBA	1	title
 M.B.A	1	title
 MBA.	1	title
+MBA	1	title
 mBq	2	measure
 MBq	2	measure
 mbundu	1	language
 mC	1	measure
-m°C	2	measure
 MC	1	measure
+m°C	2	measure
 M°C	2	measure
 mcd	1	measure
 Mcd	1	measure
@@ -4006,8 +4006,8 @@ Mg	1	measure
 MGA	1	currency
 MGF	1	currency
 mgo	1	language
-mH	2	measure
 MH	1	measure
+mH	2	measure
 MH	2	title
 mhy.	1	org
 mHz	2	measure
@@ -4018,6 +4018,7 @@ Micaela	1	female
 Michael	1	male
 Michaela	1	female
 Michaelsdotter	1	female
+Michelle	1	female
 micmac	1	language
 miehikkäläinen	1	inhabitant
 miehikkäläinen	2	inhabitant
@@ -4110,8 +4111,8 @@ Mitro	1	male
 mJ	1	measure
 MJ	1	measure
 mk	1	currency
-mK	2	measure
 MK	1	currency
+mK	2	measure
 MK	2	measure
 mkat	1	measure
 Mkat	1	measure
@@ -4138,8 +4139,8 @@ MMM	2	org
 mmol	2	measure
 Mmol	2	measure
 MMT	2	title
-mN	2	measure
 MN	1	measure
+mN	2	measure
 MNT	1	currency
 MO	1	org
 MO	2	title
@@ -4148,8 +4149,8 @@ Mohammed	1	male
 mohawk	1	language
 mokša	1	language
 mol	2	measure
-moldova	1	language
 Moldova	1	country
+moldova	1	language
 moldovalainen	1	country
 moldovalainen	2	inhabitant
 moldovalainen	3	country
@@ -4200,19 +4201,19 @@ mPa	1	measure
 MPa	1	measure
 mpk	1	measure
 Mpx	1	measure
-Mr	1	title
 Mr.	1	title
+Mr	1	title
 mrad	2	measure
 Mrad	2	measure
 MRO	1	currency
 Mrs	1	title
+MS	1	measure
 ms	2	measure
 mS	2	measure
 Ms	2	measure
 Ms	4	title
-MS	1	measure
-MSc	1	title
 M.Sc.	1	title
+MSc	1	title
 msr	2	measure
 Msr	2	measure
 mT	1	measure
@@ -4270,9 +4271,9 @@ muuruveteläinen	2	inhabitant
 muuruvetinen	1	inhabitant
 muuruvetinen	2	inhabitant
 muusikko	1	title
-mv.	1	title
 mV	1	measure
 MV	1	measure
+mv.	1	title
 MVR	1	currency
 mvs.	1	org
 mW	1	measure
@@ -4319,16 +4320,16 @@ Märit	1	female
 Märta	1	female
 mΩ	2	measure
 MΩ	2	measure
+N$	1	currency
 N	1	currency
 N	2	measure
 N	3	title
-N$	1	currency
 nA	1	measure
-NA f.	1	currency
 naantalilainen	1	inhabitant
 naantalilainen	2	inhabitant
 NAD	1	currency
 Nadja-Mari	1	female
+NA f.	1	currency
 nahuatlkieli	1	language
 nakkilalainen	1	inhabitant
 nakkilalainen	2	inhabitant
@@ -4353,8 +4354,8 @@ Natalia	1	female
 Natalie	1	female
 Natalie	2	female
 Natanael	1	male
-nauru	1	language
 Nauru	1	country
+nauru	1	language
 naurulainen	1	country
 naurulainen	2	inhabitant
 naurulainen	3	country
@@ -4409,6 +4410,7 @@ Nicholas	2	male
 Nicky	1	male
 Niclas	1	male
 Nico	1	male
+Nicola	1	female
 Nicolas	1	male
 Nicolas	2	male
 Nicole	1	female
@@ -4447,8 +4449,8 @@ Ninni	1	female
 NIO	1	currency
 Nipa	1	male
 Nita	1	female
-niue	1	language
 Niue	1	country
+niue	1	language
 niuelainen	1	country
 niuelainen	2	inhabitant
 niuelainen	3	country
@@ -4491,8 +4493,8 @@ norfolkinsaarelainen	2	inhabitant
 norfolkinsaarelainen	3	country
 norfolkinsaarelainen	4	inhabitant
 Norfolkinsaari	1	country
-norja	1	language
 Norja	1	country
+norja	1	language
 norjalainen	1	country
 norjalainen	2	inhabitant
 norjalainen	3	country
@@ -4514,8 +4516,8 @@ nrt	1	measure
 ns	2	measure
 nS	2	measure
 nsr	2	measure
-nT	1	measure
 NT$	1	currency
+nT	1	measure
 nti	1	title
 Nu	1	currency
 nuer	1	language
@@ -4551,8 +4553,8 @@ nyankole	1	language
 Nykypäivä	1	media
 nyoro	1	language
 Nyyrikki	1	male
-$NZ	2	currency
 NZ$	1	currency
+$NZ	2	currency
 NZD	1	currency
 nzima	1	language
 närpiöläinen	1	inhabitant
@@ -4627,8 +4629,8 @@ Orvar	1	male
 Orvo	1	male
 Orvokki	1	female
 osage	1	language
-osk	1	org
 osk.	1	org
+osk	1	org
 Oskar	1	male
 Oskari	1	male
 osmani	2	language
@@ -4662,14 +4664,14 @@ outokumpulainen	1	inhabitant
 outokumpulainen	2	inhabitant
 ov	1	measure
 Ove	1	male
-oy	2	org
 oy.	1	org
 OÜ	1	org
-oyj	1	org
+oy	2	org
 oyj.	1	org
+oyj	1	org
 oz.	1	measure
-p	1	time
 P	1	currency
+p	1	time
 P	2	measure
 pA	1	measure
 Pa	1	measure
@@ -4700,8 +4702,8 @@ pakistanilainen	2	inhabitant
 pakistanilainen	3	country
 pakistanilainen	4	inhabitant
 pakk	1	measure
-palau	1	language
 Palau	1	country
+palau	1	language
 palaulainen	1	country
 palaulainen	2	inhabitant
 palaulainen	3	country
@@ -4773,8 +4775,8 @@ pBq	2	measure
 PBq	2	measure
 pc	1	measure
 pC	1	measure
-p°C	2	measure
 PC	1	measure
+p°C	2	measure
 P°C	2	measure
 pcd	1	measure
 Pcd	1	measure
@@ -4915,10 +4917,10 @@ pitcairnilainen	4	inhabitant
 Pitäjäläinen	1	media
 pitäjänneuvos	1	title
 Pitäjänuutiset	1	media
-pj	1	title
-pj.	1	title
 pJ	1	measure
 PJ	1	measure
+pj.	1	title
+pj	1	title
 pK	1	measure
 PK	1	measure
 pkat	1	measure
@@ -4929,9 +4931,9 @@ pk-seutu	1	geo
 pkt	1	measure
 pl	1	measure
 plc	1	org
+PLM	1	org
 plm	2	measure
 Plm	2	measure
-PLM	1	org
 PLN	1	currency
 plx	2	measure
 Plx	2	measure
@@ -4948,8 +4950,8 @@ pnk	1	measure
 pnä	1	time
 pohj.	1	geo
 pohjalainen	1	inhabitant
-pohjalainen	2	inhabitant
 Pohjalainen	1	media
+pohjalainen	2	inhabitant
 pohjanpitäjäläinen	1	inhabitant
 pohjanpitäjäläinen	2	inhabitant
 pohjaslahtelainen	1	inhabitant
@@ -4990,8 +4992,8 @@ pornaislainen	1	inhabitant
 pornaislainen	2	inhabitant
 pornalainen	1	inhabitant
 pornalainen	2	inhabitant
-portugali	1	language
 Portugali	1	country
+portugali	1	language
 portugalilainen	1	country
 portugalilainen	2	inhabitant
 portugalilainen	3	country
@@ -5022,11 +5024,11 @@ prokuristi	1	title
 prov.	1	title
 provensaali	1	language
 proviisori	1	title
-ps	2	measure
 ps.	1	polit
+PS	1	polit
+ps	2	measure
 pS	2	measure
 Ps	2	measure
-PS	1	polit
 PsK	2	title
 PsL	2	title
 PsM	2	title
@@ -5061,8 +5063,8 @@ punkaharjulainen	2	inhabitant
 punkalaitumelainen	1	inhabitant
 punkalaitumelainen	2	inhabitant
 punta	1	currency
-puola	1	language
 Puola	1	country
+puola	1	language
 puolalainen	1	country
 puolalainen	2	inhabitant
 puolalainen	3	country
@@ -5088,10 +5090,10 @@ puutarhaop.	1	title
 puutarhaopettaja	1	title
 puutarhuri	1	title
 pv	1	measure
-pv	2	time
-pv.	1	title
 pV	1	measure
 PV	1	measure
+pv.	1	title
+pv	2	time
 pW	1	measure
 PW	1	measure
 pWb	1	measure
@@ -5147,11 +5149,11 @@ qatarilainen	2	inhabitant
 qatarilainen	3	country
 qatarilainen	4	inhabitant
 QR	1	currency
+R$	1	currency
+R	1	currency
 r	1	measure
 r.	1	polit
-R	1	currency
 R	2	measure
-R$	1	currency
 Raafael	1	male
 raahelainen	1	inhabitant
 raahelainen	2	inhabitant
@@ -5197,18 +5199,18 @@ Rami	1	male
 Ramona	1	female
 randi	1	currency
 Rannikkoseutu	1	media
-ranska	1	language
 Ranska	1	country
+ranska	1	language
 ranskalainen	1	country
 ranskalainen	2	inhabitant
 ranskalainen	3	country
 ranskalainen	4	inhabitant
 Ranskan Guayana	1	country
-Ranskan Polynesia	1	country
 ranskanguayanalainen	1	country
 ranskanguayanalainen	2	inhabitant
 ranskanguayanalainen	3	country
 ranskanguayanalainen	4	inhabitant
+Ranskan Polynesia	1	country
 ranskanpolynesialainen	1	country
 ranskanpolynesialainen	2	inhabitant
 ranskanpolynesialainen	3	country
@@ -5335,8 +5337,8 @@ ROL	1	currency
 Roland	1	male
 Rolf	1	male
 romani	2	language
-romania	1	language
 Romania	1	country
+romania	1	language
 romanialainen	1	country
 romanialainen	2	inhabitant
 romanialainen	3	country
@@ -5363,20 +5365,20 @@ rovaniemeläinen	1	inhabitant
 rovaniemeläinen	2	inhabitant
 rovasti	1	title
 Roy	1	male
+Rp	1	currency
 rp.	1	org
 rp.	2	polit
-Rp	1	currency
 rpl	1	currency
+Rs.	1	currency
 rs	1	measure
 r/s	2	measure
-Rs.	1	currency
 RSD	1	currency
 rsi	1	measure
 rt	1	measure
-rtg	1	measure
 rtg.	1	measure
-ruanda	1	language
+rtg	1	measure
 Ruanda	1	country
+ruanda	1	language
 ruandalainen	1	country
 ruandalainen	2	inhabitant
 ruandalainen	3	country
@@ -5396,8 +5398,8 @@ ruotsalainen	1	country
 ruotsalainen	2	inhabitant
 ruotsalainen	3	country
 ruotsalainen	4	inhabitant
-ruotsi	1	language
 Ruotsi	1	country
+ruotsi	1	language
 ruotsinpyhtääläinen	1	inhabitant
 ruotsinpyhtääläinen	2	inhabitant
 ruoveteläinen	1	inhabitant
@@ -5420,18 +5422,18 @@ rva	1	title
 RVLE	1	org
 rwa	1	language
 RWF	1	currency
-ry	1	org
 ry.	1	org
+ry	1	org
 rymättyläläinen	1	inhabitant
 rymättyläläinen	2	inhabitant
 rääkkyläinen	1	inhabitant
 rääkkyläinen	2	inhabitant
 rääkkyläläinen	1	inhabitant
 rääkkyläläinen	2	inhabitant
-s	1	time
-S	1	measure
 S$	1	currency
 š	1	currency
+S	1	measure
+s	1	time
 SA	1	org
 Saaga	1	female
 saame	1	language
@@ -5457,24 +5459,22 @@ Saila	1	female
 Saima	1	female
 Saimi	1	female
 Saini	1	female
-Saint Helena	1	country
-Saint Kitts ja Nevis	1	country
-Saint Lucia	1	country
-Saint Vincent	1	country
-Saint Vincent ja Grenadiinit	1	country
 Saint-Barthélemy	1	country
 saintbarthélemylainen	1	country
 saintbarthélemylainen	2	inhabitant
 saintbarthélemylainen	3	country
 saintbarthélemylainen	4	inhabitant
+Saint Helena	1	country
 sainthelenalainen	1	country
 sainthelenalainen	2	inhabitant
 sainthelenalainen	3	country
 sainthelenalainen	4	inhabitant
+Saint Kitts ja Nevis	1	country
 saintkittsnevisläinen	1	country
 saintkittsnevisläinen	2	inhabitant
 saintkittsnevisläinen	3	country
 saintkittsnevisläinen	4	inhabitant
+Saint Lucia	1	country
 saintlucialainen	1	country
 saintlucialainen	2	inhabitant
 saintlucialainen	3	country
@@ -5486,14 +5486,16 @@ saintmartinilainen	3	country
 saintmartinilainen	4	inhabitant
 Saint-Pierre	1	country
 Saint-Pierre ja Miquelon	1	country
+Saint Vincent	1	country
+Saint Vincent ja Grenadiinit	1	country
 sairaalaneuvos	1	title
 sairaanhoidonopettaja	1	title
 sairaanhoitaja	1	title
 sairaanh.op.	1	title
 sair.hoit.	1	title
 Sakari	1	male
-saksa	1	language
 Saksa	1	country
+saksa	1	language
 saksalainen	1	country
 saksalainen	2	inhabitant
 saksalainen	3	country
@@ -5534,8 +5536,8 @@ Sami	1	male
 Sami-Petteri	1	male
 sammattilainen	1	inhabitant
 sammattilainen	2	inhabitant
-samoa	1	language
 Samoa	1	country
+samoa	1	language
 samoalainen	1	country
 samoalainen	2	inhabitant
 samoalainen	3	country
@@ -5549,7 +5551,6 @@ Sampsa	1	male
 Samu	1	male
 Samuel	1	male
 Samuli	1	male
-San Marino	1	country
 sanctus	1	title
 sandawe	1	language
 Sandra	1	female
@@ -5558,6 +5559,7 @@ Sanelma	1	female
 sango	1	language
 sangu	1	language
 Sani	1	female
+San Marino	1	country
 sanmarinolainen	1	country
 sanmarinolainen	2	inhabitant
 sanmarinolainen	3	country
@@ -5663,8 +5665,8 @@ seppä	1	title
 seppä	2	title
 Serafia	1	female
 Serafiina	1	female
-serbia	1	language
 Serbia	1	country
+serbia	1	language
 serbialainen	1	country
 serbialainen	2	inhabitant
 serbialainen	3	country
@@ -5699,8 +5701,8 @@ sierraleonelainen	2	inhabitant
 sierraleonelainen	3	country
 sierraleonelainen	4	inhabitant
 sieviläinen	1	inhabitant
-sieviläinen	2	inhabitant
 Sieviläinen	1	media
+sieviläinen	2	inhabitant
 Sigfrid	1	female
 Sigfrid	2	male
 Signe	1	female
@@ -5783,8 +5785,8 @@ sisilia	1	language
 Sisko	1	female
 Sissi	1	female
 Sisu	1	male
-sit.	1	polit
 SIT	1	currency
+sit.	1	polit
 siuntiolainen	1	inhabitant
 siuntiolainen	2	inhabitant
 Siv	1	female
@@ -5800,7 +5802,6 @@ skotti	1	language
 SKP	2	polit
 SKr	1	currency
 sl.	1	time
-SL Re	1	currency
 slevi	1	language
 SLL	2	currency
 Slovakia	1	country
@@ -5815,10 +5816,10 @@ slovenialainen	1	country
 slovenialainen	2	inhabitant
 slovenialainen	3	country
 slovenialainen	4	inhabitant
+SL Re	1	currency
 SMP	2	polit
 snt	1	currency
 SNT	1	geo
-So. Sh.	1	currency
 sodankyläläinen	1	inhabitant
 sodankyläläinen	2	inhabitant
 Sofia	1	female
@@ -5862,9 +5863,10 @@ sorani	1	language
 sorbi	1	language
 sorbikieli	1	language
 Sorja	1	female
-sos.	1	polit
 SOS	1	currency
+sos.	1	polit
 sos.dem.	1	polit
+So. Sh.	1	currency
 sosiaalineuvos	1	title
 sosiaalipsykologi	1	title
 sosionomi	1	title
@@ -5875,9 +5877,9 @@ sotkamolainen	1	inhabitant
 sotkamolainen	2	inhabitant
 sottungalainen	1	inhabitant
 sottungalainen	2	inhabitant
-sr	2	measure
-sr.	1	title
 SR	1	currency
+sr.	1	title
+sr	2	measure
 sranan	1	language
 SRD	1	currency
 SRG	1	currency
@@ -5886,23 +5888,24 @@ srilankalainen	1	country
 srilankalainen	2	inhabitant
 srilankalainen	3	country
 srilankalainen	4	inhabitant
-srk	2	org
 srk.	1	org
+srk	2	org
 SRl	1	currency
 SSP	1	currency
 st.	1	title
 ST	1	title
 Staffan	1	male
-std	1	measure
 STD	1	currency
+std	1	measure
 Stefan	1	male
 Stella	1	female
 Sten	1	male
+Stephen	1	male
 Steven	1	male
 Stig	1	male
 Stina	1	female
-stm.	1	title
 STM	1	org
+stm.	1	title
 STT	1	media
 Sture	1	male
 Styrbjörn	1	male
@@ -5947,8 +5950,8 @@ Suomenmaa	1	media
 suomenniemeläinen	1	inhabitant
 suomenniemeläinen	2	inhabitant
 Suometar	1	female
-suomi	2	language
 Suomi	1	country
+suomi	2	language
 suomusjärveläinen	1	inhabitant
 suomusjärveläinen	2	inhabitant
 suomussalmelainen	1	inhabitant
@@ -6012,8 +6015,8 @@ Synnöve	1	female
 SYP	1	currency
 sysmäläinen	1	inhabitant
 sysmäläinen	2	inhabitant
-syyria	1	language
 Syyria	1	country
+syyria	1	language
 syyrialainen	1	country
 syyrialainen	2	inhabitant
 syyrialainen	3	country
@@ -6032,11 +6035,10 @@ säynätsaloinen	2	inhabitant
 säynätsalolainen	1	inhabitant
 säynätsalolainen	2	inhabitant
 Sören	1	male
+T$	1	currency
+T	1	currency
 t	1	measure
 t	2	time
-T	1	currency
-T Sh	1	currency
-T$	1	currency
 TA	1	measure
 taaleri	1	currency
 Taani	1	male
@@ -6114,8 +6116,8 @@ tansanialainen	1	country
 tansanialainen	2	inhabitant
 tansanialainen	3	country
 tansanialainen	4	inhabitant
-tanska	1	language
 Tanska	1	country
+tanska	1	language
 tanskalainen	1	country
 tanskalainen	2	inhabitant
 tanskalainen	3	country
@@ -6170,8 +6172,8 @@ tekn.	1	title
 teknikko	1	title
 TeL	2	title
 televisiotoimittaja	1	title
-TeliaSonera	1	media
 Telia-Sonera	1	media
+TeliaSonera	1	media
 Tellervo	1	female
 telugu	1	language
 TeM	2	title
@@ -6265,19 +6267,19 @@ Titta	1	female
 tiukkalainen	1	inhabitant
 tiukkalainen	2	inhabitant
 tiv	1	language
-tj.	1	title
 TJ	1	measure
+tj.	1	title
 TJR	1	currency
 TJS	1	currency
-tk.	1	time
 Tk	1	currency
 TK	1	measure
+tk.	1	time
 Tkat	1	measure
 TkK	2	title
 TkL	2	title
 Tkr	1	currency
-TkT	2	title
 TKT	1	org
+TkT	2	title
 tl	1	measure
 TL	1	org
 TL	2	title
@@ -6286,8 +6288,8 @@ tlingit	1	language
 tlk	2	measure
 Tlm	2	measure
 Tlx	2	measure
-Tm	2	measure
 TM	1	org
+Tm	2	measure
 TM	2	title
 tmi	1	org
 tmk	1	time
@@ -6331,8 +6333,8 @@ Toini	1	female
 toivakkalainen	1	inhabitant
 toivakkalainen	2	inhabitant
 Toivo	1	male
-tokelau	1	language
 Tokelau	1	country
+tokelau	1	language
 tokelaulainen	1	country
 tokelaulainen	2	inhabitant
 tokelaulainen	3	country
@@ -6346,8 +6348,8 @@ Tomi	1	male
 Tommi	1	male
 Tommy	1	male
 Tomppa	1	male
-tonga	1	language
 Tonga	1	country
+tonga	1	language
 tongalainen	1	country
 tongalainen	2	inhabitant
 tongalainen	3	country
@@ -6409,25 +6411,26 @@ tšekinmaalainen	1	country
 tšekinmaalainen	2	inhabitant
 tšekinmaalainen	3	country
 tšekinmaalainen	4	inhabitant
-tšekki	1	language
 Tšekki	1	country
+tšekki	1	language
 Tšekki	2	country
 tšekkiläinen	1	country
 tšekkiläinen	2	inhabitant
 tšekkiläinen	3	country
 tšekkiläinen	4	inhabitant
 tšetšeeni	2	language
+T Sh	1	currency
 tšibtša	1	language
 tsimši	1	language
 tsonga	1	language
 Tsr	2	measure
 tšuvassi	1	language
 tswana	1	language
-TT	1	title
 TT$	1	currency
+TT	1	title
 TTD	1	currency
-TtK	2	title
 TTK	1	title
+TtK	2	title
 TtL	2	title
 TTL	2	title
 TtM	2	title
@@ -6458,8 +6461,8 @@ Tuovi	1	female
 tupikieli	1	language
 Ture	1	male
 Turkka	1	male
-turkki	1	language
 Turkki	1	country
+turkki	1	language
 turkkilainen	1	country
 turkkilainen	2	inhabitant
 turkkilainen	3	country
@@ -6498,14 +6501,14 @@ tuusulalainen	1	inhabitant
 tuusulalainen	2	inhabitant
 Tuutikki	1	female
 tuva	1	language
-tuvalu	1	language
 Tuvalu	1	country
+tuvalu	1	language
 tuvalulainen	1	country
 tuvalulainen	2	inhabitant
 tuvalulainen	3	country
 tuvalulainen	4	inhabitant
-TV	1	measure
 TV1	1	media
+TV	1	measure
 TV2	1	media
 TW	1	measure
 TWb	1	measure
@@ -6535,7 +6538,6 @@ töysäläinen	1	inhabitant
 töysäläinen	2	inhabitant
 TΩ	2	measure
 u	1	measure
-U Sh	1	currency
 UAH	1	currency
 UAK	1	currency
 udmurtti	1	language
@@ -6550,8 +6552,8 @@ UGX	1	currency
 uiguuri	2	language
 uittoneuvos	1	title
 Ukko	1	male
-ukraina	1	language
 Ukraina	1	country
+ukraina	1	language
 ukrainalainen	1	country
 ukrainalainen	2	inhabitant
 ukrainalainen	3	country
@@ -6575,8 +6577,8 @@ UNCED	1	event
 UNCTAD	1	event
 Unelma	1	female
 UNHCR	1	title
-unkari	1	language
 Unkari	1	country
+unkari	1	language
 unkarilainen	1	country
 unkarilainen	2	inhabitant
 unkarilainen	3	country
@@ -6614,6 +6616,7 @@ uruguaylainen	3	country
 uruguaylainen	4	inhabitant
 US$	1	currency
 USD	1	currency
+U Sh	1	currency
 uskelainen	1	inhabitant
 uskelainen	2	inhabitant
 uskelalainen	1	inhabitant
@@ -6659,9 +6662,9 @@ uzbekistanilainen	3	country
 uzbekistanilainen	4	inhabitant
 uzbekki	1	language
 UZS	1	currency
-v	1	time
-v.	1	time
 V	1	measure
+v.	1	time
+v	1	time
 VA	1	measure
 vaalalainen	1	inhabitant
 vaalalainen	2	inhabitant
@@ -6687,8 +6690,8 @@ valkealainen	1	inhabitant
 valkealainen	2	inhabitant
 valkealalainen	1	inhabitant
 valkealalainen	2	inhabitant
-valkovenäjä	1	language
 Valko-Venäjä	1	country
+valkovenäjä	1	language
 valkovenäläinen	1	country
 valkovenäläinen	2	inhabitant
 valkovenäläinen	3	country
@@ -6746,8 +6749,8 @@ varpaisjärveläinen	1	inhabitant
 varpaisjärveläinen	2	inhabitant
 Varpu	1	female
 Varpu	2	female
-vas.	1	polit
 Vas.	1	org
+vas.	1	polit
 Vas.	2	polit
 Vasabladet	1	media
 Vatikaani	1	country
@@ -6788,8 +6791,8 @@ venezuelalainen	2	inhabitant
 venezuelalainen	3	country
 venezuelalainen	4	inhabitant
 Venla	1	female
-venäjä	1	language
 Venäjä	1	country
+venäjä	1	language
 venäläinen	1	country
 venäläinen	2	inhabitant
 venäläinen	3	country
@@ -6819,8 +6822,8 @@ Vieno	1	female
 vieremäläinen	1	inhabitant
 vieremäläinen	2	inhabitant
 viestintäneuvos	1	title
-vietnam	1	language
 Vietnam	1	country
+vietnam	1	language
 vietnamilainen	1	country
 vietnamilainen	2	inhabitant
 vietnamilainen	3	country
@@ -6828,8 +6831,8 @@ vietnamilainen	4	inhabitant
 Viggo	1	male
 vihantilainen	1	inhabitant
 vihantilainen	2	inhabitant
-vihr.	1	polit
 Vihr.	1	org
+vihr.	1	polit
 Vihr.	2	polit
 vihtiläinen	1	inhabitant
 vihtiläinen	2	inhabitant
@@ -6884,8 +6887,8 @@ Viola	1	female
 viransijainen	1	title
 virk.	1	title
 virkailija	1	title
-viro	1	language
 Viro	1	country
+viro	1	language
 virolahtelainen	1	inhabitant
 virolahtelainen	2	inhabitant
 virolainen	1	country
@@ -6906,8 +6909,8 @@ Viveka	1	female
 Vivi	1	female
 Vivian	1	female
 Viviana	1	female
-vk	1	time
 vk.	1	time
+vk	1	time
 vkl	2	time
 VKS	1	org
 VKS	2	title
@@ -6925,14 +6928,14 @@ Voitto	1	male
 volapük	1	language
 Volmar	1	male
 Volter	1	male
-vpj	1	title
 vpj.	1	title
+vpj	1	title
 vpk	1	org
 vrk	1	time
 vs.	1	title
+VT	1	currency
 vt	1	measure
 vt.	1	title
-VT	1	currency
 VT	2	title
 VTK	2	title
 VTL	2	title
@@ -6963,11 +6966,11 @@ W	1	measure
 Wagner	1	male
 wakashkieli	1	language
 Waldemar	1	male
-Wallis ja Futuna	1	country
 wallisfutunalainen	1	country
 wallisfutunalainen	2	inhabitant
 wallisfutunalainen	3	country
 wallisfutunalainen	4	inhabitant
+Wallis ja Futuna	1	country
 walser	1	language
 Walter	1	male
 Waltteri	1	male
@@ -7020,8 +7023,8 @@ Yanna	1	female
 yBq	2	measure
 YBq	2	measure
 yC	1	measure
-y°C	2	measure
 YC	1	measure
+y°C	2	measure
 Y°C	2	measure
 ycd	1	measure
 Ycd	1	measure
@@ -7115,17 +7118,17 @@ Ylä-Satakunta	1	media
 yläsorbi	1	language
 ylöjärveläinen	1	inhabitant
 ylöjärveläinen	2	inhabitant
+YM	1	org
 ym	2	measure
 Ym	2	measure
-YM	1	org
 ymol	2	measure
 Ymol	2	measure
 yN	2	measure
 YN	2	measure
 Yngvar	1	male
 Yngve	1	male
-yo	1	title
 yo.	1	title
+yo	1	title
 yo.merk.	1	title
 yPa	1	measure
 YPa	1	measure
@@ -7186,8 +7189,8 @@ zaza	1	language
 zBq	2	measure
 ZBq	2	measure
 zC	1	measure
-z°C	2	measure
 ZC	1	measure
+z°C	2	measure
 Z°C	2	measure
 zcd	1	measure
 Zcd	1	measure
@@ -7208,8 +7211,8 @@ zimbabwelainen	3	country
 zimbabwelainen	4	inhabitant
 zJ	1	measure
 ZJ	1	measure
-zK	2	measure
 ZK	1	measure
+zK	2	measure
 zkat	1	measure
 Zkat	1	measure
 Zl	1	currency
@@ -7224,18 +7227,18 @@ ZMK	1	currency
 zmol	2	measure
 Zmol	2	measure
 ZMW	1	currency
-zN	2	measure
 ZN	1	measure
+zN	2	measure
 zPa	1	measure
 ZPa	1	measure
 zrad	2	measure
 Zrad	2	measure
 ZRN	1	currency
 ZRZ	1	currency
+ZS	1	measure
 zs	2	measure
 zS	2	measure
 Zs	2	measure
-ZS	1	measure
 zsr	2	measure
 Zsr	2	measure
 zT	1	measure
