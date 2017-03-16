@@ -279,19 +279,16 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 generated/omorfi.segment.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=none --none-segments
 
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=none --none-lemmas
 
 generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=none
 
 
@@ -299,7 +296,6 @@ generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=labelsegments
 
 #
@@ -368,7 +364,6 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=omor \
-		$(BLACKLIST_FLAGS) \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
 generated/omorfi-omor-guesser.lexc: paradigms/suffix-regexes.tsv \
@@ -408,7 +403,6 @@ generated/apertium-fin.fin.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-p generated/stemparts.tsv \
-		$(BLACKLIST_FLAGS) \
 		-i generated/inflections.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:

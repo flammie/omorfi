@@ -250,6 +250,7 @@ class OmorFormatter(Formatter):
         '[VOICE=PSS]',
         '[WORD_ID=',
         '[NEWPARA=',
+        '[BLACKLIST=',
         "[FOREIGN=FOREIGN]"
     }
 
@@ -683,6 +684,9 @@ class OmorFormatter(Formatter):
             if wordmap['upos'] == 'ADJ':
                 wordmap['analysis'] += self.stuff2lexc('Cpos')
 
+        if wordmap['blacklist']:
+            wordmap['analysis'] += self.stuff2lexc('BLACKLISTED') +
+            wordmap['blacklist'] + ']'
         if wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
@@ -706,16 +710,11 @@ class OmorFormatter(Formatter):
         if wordmap['adptype']:
             for stuff in wordmap['adptype'].split("|"):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
-        if wordmap['is_proper']:
-            if self.props and wordmap['proper_noun_class']:
-                for prop in wordmap['proper_noun_class'].split(','):
-                    wordmap['analysis'] += self.stuff2lexc(prop)
-            else:
-                wordmap['analysis'] += self.stuff2lexc('PROPER')
 
+        if self.props and wordmap['proper_noun_class']:
+            wordmap['analysis'] += self.stuff2lexc(wordmap['proper_noun_class'])
         if self.semantics and wordmap['sem']:
-            for sem in wordmap['sem'].split(','):
-                wordmap['analysis'] += self.stuff2lexc(sem)
+            wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
 
         if wordmap['style']:
             wordmap['analysis'] += self.stuff2lexc(wordmap['style'])
