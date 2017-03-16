@@ -233,7 +233,7 @@ class OmorFormatter(Formatter):
         '[UPOS=AUX]',
         '[UPOS=DET]',
         '[UPOS=INTJ]',
-        '[UPOS=CONJ]',
+        '[UPOS=CCONJ]',
         '[UPOS=SCONJ]',
         '[UPOS=SCONJ][CONJ=COMPARATIVE]',
         '[UPOS=SCONJ][CONJ=ADVERBIAL]',
@@ -475,7 +475,7 @@ class OmorFormatter(Formatter):
         "ADP": "[UPOS=ADP]",
         "ADJ": "[UPOS=ADJ]",
         "INTJ": "[UPOS=INTJ]",
-        "CONJ": "[UPOS=CONJ]",
+        "CCONJ": "[UPOS=CCONJ]",
         "SCONJ": "[UPOS=SCONJ]",
         "PRON": "[UPOS=PRON]",
         "SYM": "[UPOS=SYM]",
@@ -499,7 +499,7 @@ class OmorFormatter(Formatter):
         "DERSTI": "[LEX=STI]",
         "DERTTAIN": "[LEX=TTAIN]",
         "CONJUNCTION": "",
-        "COORDINATING": "[UPOS=CONJ]",
+        "COORDINATING": "[UPOS=CCONJ]",
         "COMPARATIVE": "[UPOS=SCONJ][CONJ=COMPARATIVE]",
         "PRONOUN": "[POS=PRONOUN]",
         "ADVERBIAL": "[UPOS=SCONJ][CONJ=ADVERBIAL]",
@@ -582,7 +582,7 @@ class OmorFormatter(Formatter):
         "FTB3man": "",
         "LEMMA-START": "[WORD_ID=",
         "LEMMA-END": "]",
-        "CONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
+        "CCONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
         "FTB3MAN": "",
         "XForeign": "[FOREIGN=FOREIGN]",
         "": ""}
@@ -685,8 +685,8 @@ class OmorFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc('Cpos')
 
         if wordmap['blacklist']:
-            wordmap['analysis'] += self.stuff2lexc('BLACKLISTED') +
-            wordmap['blacklist'] + ']'
+            wordmap['analysis'] += self.stuff2lexc('BLACKLISTED') + \
+                wordmap['blacklist'] + ']'
         if wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
                 wordmap['analysis'] += self.stuff2lexc(pclass)

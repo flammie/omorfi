@@ -78,9 +78,9 @@ class Formatter(metaclass=ABCMeta):
     0   INTJ ;
     0   PUNCT ;
     0   SYM ;
-    0   CONJ ;
+    0   CCONJ ;
     0   SCONJ ;
-    0   CONJ|VERB ;
+    0   CCONJ|VERB ;
     0   PROPN ;
     0   ACRONYM ;
     0   ABBREVIATION    ;

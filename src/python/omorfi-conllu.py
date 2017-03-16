@@ -114,7 +114,7 @@ def format_feats_ud(anal, hacks=None):
                 # XXX
                 rvs.pop('Voice')
             elif value == 'NEG':
-                rvs['Negative'] = 'Neg'
+                rvs['Polarity'] = 'Neg'
                 rvs['VerbForm'] = 'Fin'
         elif key == 'PCP':
             rvs['VerbForm'] = 'Part'
@@ -151,7 +151,7 @@ def format_feats_ud(anal, hacks=None):
                 rvs['Degree'] = 'Pos'
         elif key == 'SUBCAT':
             if value == 'NEG':
-                rvs['Negative'] = 'Neg'
+                rvs['Polarity'] = 'Neg'
                 rvs['VerbForm'] = 'Fin'
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
@@ -251,7 +251,7 @@ def format_third_tdt(upos):
         return 'A'
     elif upos in ['VERB', 'AUX']:
         return 'V'
-    elif upos in ['CONJ', 'SCONJ']:
+    elif upos in ['CCONJ', 'SCONJ']:
         return 'C'
     elif upos == 'ADP':
         return 'Adp'
