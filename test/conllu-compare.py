@@ -62,6 +62,9 @@ def main():
             if '-' in reffields[0]:
                 refline = next(options.reffile)
                 reffields = refline.strip().split('\t')
+            elif '.' in reffields[0]:
+                refline = next(options.reffile)
+                reffields = refline.strip().split('\t')
             else:
                 skiplines += 1
                 print("misaligned (index)! IN:", infields[0], "REF:", reffields[0],

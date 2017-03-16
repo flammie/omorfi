@@ -212,7 +212,7 @@ def format_feats_ud(anal, hacks=None):
                 print("Unknown non-inflectional affix", key, '=', value)
                 print("in", anal[0])
                 exit(1)
-        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE',
+        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                      'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
             # Not feats in UD:
             # * UPOS is another field
@@ -380,6 +380,10 @@ def main():
                 index = int(fields[0])
             except ValueError:
                 if '-' in fields[0]:
+                    # MWE
+                    continue
+                elif '.' in fields[0]:
+                    # a ghost
                     continue
                 else:
                     print(
