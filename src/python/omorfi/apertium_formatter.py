@@ -128,6 +128,7 @@ class ApertiumFormatter(Formatter):
         "use_archaic",
         "use_nonstd",
         "use_foreign",
+        "use_blacklist",
         "vaux",
         "vblex"
     }
@@ -186,6 +187,7 @@ class ApertiumFormatter(Formatter):
         "B←": "compound-only-L",
         "B→": "compound-R",
         "Bc": "+",
+        "BLACKLISTED": "use_blacklist",
         "CARDINAL": "card",
         "Ccmp": "com",
         "CLAUSE-BOUNDARY": "",
@@ -198,6 +200,7 @@ class ApertiumFormatter(Formatter):
         "CONJUNCTION": "",
         "CONJUNCTIONVERB": "cnjcoo><vblex",
         "CONJ": "cnjcoo",
+        "CCONJ": "cnjcoo",
         "COORDINATING": "cnjcoo",
         "Cpos": "pos",
         "Csup": "sup",
@@ -431,7 +434,7 @@ class ApertiumFormatter(Formatter):
                     'analysis'] += self.stuff2lexc(wordmap['argument'] + '_arg')
             else:
                 wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
-        elif wordmap['upos'] == 'CONJ|VERB':
+        elif wordmap['upos'] == 'CCONJ|VERB':
             if wordmap['lemma'] == 'eikä':
                 wordmap['lemma'] = 'ei'
                 wordmap['analysis'] = 'ja' + \
@@ -448,6 +451,10 @@ class ApertiumFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
         else:
             wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
+        if wordmap['blacklist']:
+            if wordmap['blacklist'] != "TOOSHORTFORCOMPOUND":
+                wordmap['analysis'] += self.stuff2lexc('BLACKLISTED')
+
         if wordmap['pronoun']:
             for stuff in wordmap['pronoun'].split("|"):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
