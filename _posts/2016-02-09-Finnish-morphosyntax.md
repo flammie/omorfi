@@ -122,3 +122,12 @@ wondering a word-form, and cannot find it in
 
 There is an ongoing work to list particularly suspicious words to produce
 limited vocabulary analysers.
+
+## Adjective or noun?
+
+There are groups of words that can be used both as adjectives and nouns. The most common
+examples of this include inhabitants of region: *suomalainen* (a Finn, Finnish), 
+*helsinkiläinen* (from Helsinki), etc. Also many colour words have this duality:
+*punainen* (red), *purppura* (purple), but some have more or less strict divide between
+a noun lexeme and adjectival one: *sini* (blue N) ~ *sininen* (blue N/A), *kulta* (gold N),
+*kultainen* (golden A). To recognise adjectives, ...
