@@ -5,8 +5,9 @@ before_install:
     - cat /var/lib/dpkg/info/python3-libhfst.list
 before_script:
       # https://stackoverflow.com/questions/25756134/how-to-add-my-module-to-travis-ci-pythonpath
-    - export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages
+    - export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages/
 script:
+    - export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages/
     - ./autogen.sh
     - ./configure
     - make
