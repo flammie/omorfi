@@ -1,4 +1,5 @@
 dist: trusty
+language : generic
 before_install:
     - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
     - sudo apt-get install hfst python3-libhfst libhfst48-dev
