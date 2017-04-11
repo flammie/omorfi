@@ -299,11 +299,11 @@ def main():
         if options.verbose:
             print("Reading automata dir", options.fsa)
         omorfi.load_from_dir(options.fsa, segment=True,
-                             labelsegment=True)
+                             labelsegment=True, accept=True)
     else:
         if options.verbose:
             print("Searching for automata everywhere...")
-        omorfi.load_from_dir(labelsegment=True, segment=True)
+        omorfi.load_from_dir(labelsegment=True, segment=True, accept=True)
     if options.infile:
         infile = options.infile
     else:
