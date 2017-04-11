@@ -289,7 +289,7 @@ class Omorfi:
                 retokens.append(retoken)
         return retokens
 
-    def _tokenise(self, line, automaton):
+    def _tokenise(self, line):
         return None
 
     def tokenise(self, line):
@@ -305,8 +305,8 @@ class Omorfi:
         token using hard-coded list of extra splits.
         """
         tokens = None
-        if 'omorfi' in self.tokenisers:
-            tokens = self._tokenise(line, 'omorfi')
+        if self.tokeniser:
+            tokens = self._tokenise(line)
         if not tokens:
             tokens = self._retokenise(line.split())
         return tokens
