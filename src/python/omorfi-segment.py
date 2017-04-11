@@ -277,7 +277,8 @@ def main():
                    help="print segments into OUTFILE")
     a.add_argument('-O', '--output-format', metavar="OFORMAT",
                    help="format output suitable for OFORMAT",
-                   choices=["labels-tsv", "moses-factors", "segments"])
+                   required=True,
+                   choices=["moses-factors", "segments"])
     a.add_argument('--no-split-words', action="store_false", default=True,
                    dest="split_words",
                    help="split on word boundaries")
