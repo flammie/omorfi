@@ -1,13 +1,16 @@
 ## Process this file with automake to produce Makefile.in
 
 TESTS=rough-tests.sh scripts-runnable.sh \
+	  tools-all-quick.bash \
 	  faithfulness-ftb-3.1-quick.sh \
 	  coverages-all-quick.sh \
 	  faithfulness-ftb-3.1.sh \
 	  conllu-fi-ud-test.sh \
-	  conllu-fi-ftb-ud-test.sh \
-	  coverages-all-slow.bash
-#XFAIL_TESTS=
+	  conllu-fi-ftb-ud-test.sh
+if WANT_BIG_TESTS
+TESTS+=coverages-all-slow.bash
+endif
+XFAIL_TESTS=tools-all-quick.bash
 EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \
 		   wordforms.list \

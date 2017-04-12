@@ -300,6 +300,8 @@ AC_CONFIG_FILES([test/coverages-all-quick.sh],
                 [chmod +x test/coverages-all-quick.sh])
 AC_CONFIG_FILES([test/coverages-all-slow.bash],
                 [chmod +x test/coverages-all-slow.bash])
+AC_CONFIG_FILES([test/tools-all-quick.bash],
+                [chmod +x test/tools-all-quick.bash])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 AS_IF([test x$with_slurm_mail != xno],
