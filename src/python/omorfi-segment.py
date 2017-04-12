@@ -277,7 +277,8 @@ def main():
                    help="print segments into OUTFILE")
     a.add_argument('-O', '--output-format', metavar="OFORMAT",
                    help="format output suitable for OFORMAT",
-                   choices=["labels-tsv", "moses-factors", "segments"])
+                   required=True,
+                   choices=["moses-factors", "segments"])
     a.add_argument('--no-split-words', action="store_false", default=True,
                    dest="split_words",
                    help="split on word boundaries")
@@ -299,11 +300,11 @@ def main():
         if options.verbose:
             print("Reading automata dir", options.fsa)
         omorfi.load_from_dir(options.fsa, segment=True,
-                             labelsegment=True)
+                             labelsegment=True, accept=True)
     else:
         if options.verbose:
             print("Searching for automata everywhere...")
-        omorfi.load_from_dir(labelsegment=True, segment=True)
+        omorfi.load_from_dir(labelsegment=True, segment=True, accept=True)
     if options.infile:
         infile = options.infile
     else:

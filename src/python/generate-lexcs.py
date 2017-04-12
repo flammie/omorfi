@@ -242,9 +242,10 @@ def main():
                 pos = tsv_parts[0].split("_")[0]
                 if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
                                "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ", "X",
-                               "DIGITS", "CONJ", "SCONJ", "AUX", "DET"]:
+                               "DIGITS", "CCONJ", "SCONJ", "AUX", "DET"]:
                     print("Cannot deduce pos from incoming cont:",
-                          tsv_parts[0], "Skipping")
+                          tsv_parts[0])
+                    exit(1)
                     continue
                 if pos in args.exclude_pos:
                     continue
@@ -282,9 +283,10 @@ def main():
                 pos = tsv_parts[0].split("_")[0]
                 if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
                                "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ",
-                               "X", "DIGITS", "CONJ", "SCONJ"]:
+                               "X", "DIGITS", "CCONJ", "SCONJ"]:
                     print("Cannot deduce pos from incoming cont:",
-                          tsv_parts[0], "Skipping")
+                          tsv_parts[0])
+                    exit(1)
                     continue
                 if pos in args.exclude_pos:
                     continue

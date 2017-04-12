@@ -171,7 +171,7 @@ AUX_TAITAA	AUX	VERB	76	F	False	weaken	back	None	None	False	False
 AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False
 AUX_TÄYTYÄ	AUX	VERB	52	F	False	weaken	front	None	None	False	False
 AUX_VOIDA	AUX	VERB	62	None	False	strengthen	back	None	None	False	False
-CONJ_JA	CONJ	PARTICLE	99	None	False	False	front	None	None	False	False
+CCONJ_JA	CCONJ	PARTICLE	99	None	False	False	front	None	None	False	False
 DET_SE	DET	PRONOUN	101	None	False	False	front	None	None	False	False
 DET_YKSI	DET	PRONOUN	31	None	False	weaken	front	None	None	False	False
 INTJ_HAH	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False
@@ -367,7 +367,6 @@ NOUN_BRIE	NOUN	NOUN	21	None	False	weaken	front	i	None	False	False
 NOUN_BÄNET	NOUN	NOUN	8	None	obligatory	weaken	front	None	None	False	False
 NOUN_CAMUS	NOUN	NOUN	22	None	False	weaken	back	None	None	False	False
 NOUN_CHACHACHA	NOUN	NOUN	21	None	False	weaken	back	a	None	False	False
-NOUN_COMPOUND	NOUN	NOUN	99	None	False	False	front	None	None	False	False
 NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	back	i	None	False	False
 NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	front	i	None	False	False
 NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	front	None	None	False	False
@@ -918,6 +917,7 @@ NOUN_VUOSITUHAT	NOUN	NOUN	46	None	False	strengthen	back	None	None	False	False
 NOUN_VÄRTÖ	NOUN	NOUN	1	K	False	weaken	front	None	None	False	False
 NOUN_YHTIÖT	NOUN	NOUN	3	None	obligatory	weaken	front	None	None	False	False
 NOUN_YKSIKKÖ	NOUN	NOUN	4	A	False	weaken	front	None	None	False	False
+NOUN_YLEIS	NOUN	NOUN	99	None	False	False	front	None	None	False	False
 NOUN_YLKÄ	NOUN	NOUN	10	L	False	weaken	front	ä	None	False	False
 NOUN_YLÄNKÖ	NOUN	NOUN	1	G	False	weaken	front	None	None	False	False
 NOUN_YLÖÖ	NOUN	NOUN	17	None	False	weaken	front	ö	None	False	False
@@ -2483,8 +2483,8 @@ VERB_ÄLLISTYÄ	VERB	VERB	52	None	False	weaken	front	None	None	False	False
 VERB_ÄNGETÄ	VERB	VERB	74	G	False	strengthen	front	None	None	False	False
 VERB_ÄRISTÄ	VERB	VERB	66	None	False	strengthen	front	None	None	False	False
 VERB_ÖYKKÄRÖIDÄ	VERB	VERB	62	None	False	strengthen	front	None	None	False	False
-X_51eikä	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
-X_51ettei	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
-X_51äläkä	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
+X_51eikä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
+X_51ettei	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
+X_51äläkä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
 X_FORGN_EN	X	X	99	None	False	weaken	back	None	None	False	False
 X_FORGN_SV	X	X	99	None	False	weaken	back	None	None	False	False

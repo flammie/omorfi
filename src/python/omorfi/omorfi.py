@@ -23,44 +23,36 @@ from .settings import fin_punct_leading, fin_punct_trailing
 class Omorfi:
 
     """
-    An object holding omorfi automata for all the functions of omorfi.
+    An object holding omorfi binariesfor all the functions of omorfi.
 
-    Each of the automata are accessible by their function and identifier.
-    Some combinations of functionalities may be available that access more
-    than one automaton in non-trivial ways. Currently supported automata
-    functuions are:
+    The following functionalities use automata binaries that need to be loaded
+    separately:
     * analysis
     * tokenisation
     * generation
     * lemmatisation
     * segmentation
     * lookup
+    * guess
 
-    These are followed by corresponding automaton sets as attributes:
-        analysers: key is 'omorfi-' + tagset
-        tokenisers: key is 'omorfi'
-        generators: key is 'omorfi-' + tagset
-        lemmatisers: key is 'omorfi'
-        hyphenators: key is 'omorfi'
-        segmenters: key is 'omorfi'
-
-    The python code can perform minimal string munging controlled by bool
-    attributes:
+    There is python code to perform basic string munging controlled by following
+    bool attributes:
         can_lowercase: to use `str.lower()`
         can_titlecase: to use `str[0].upper() + str[1:]`
         can_uppercase: to use `str.upper()`
         can_detitlecase: to use `str[0].lower + str[1:]`
 
-    The annotations will be changed if transformation has been applied.
+    The annotations will be changed when transformation has been applied.
     """
-    analysers = dict()
-    tokenisers = dict()
-    generators = dict()
-    lemmatisers = dict()
-    hyphenators = dict()
-    segmenters = dict()
-    labelsegmenters = dict()
-    acceptors = dict()
+    analyser = None
+    tokeniser = None
+    generator = None
+    lemmatiser = None
+    hyphenator = None
+    segmenter = None
+    labelsegmenter = None
+    acceptor = None
+    guesser = None
     can_lowercase = True
     can_titlecase = True
     can_detitlecase = True
@@ -123,35 +115,41 @@ class Omorfi:
         elif parts[1] == 'analyse' and include['analyse']:
             if self._verbosity:
                 print('analyser', parts[0])
-            self.analysers[parts[0]] = his.read()
+            if parts[0].endswith('omor'):
+                self.analyser = his.read()
+            elif self._verbosity:
+                print("unsupported analyser", parts[0])
         elif parts[1] == 'generate' and include['generate']:
             if self._verbosity:
                 print('generator', parts[0])
-            self.generators[parts[0]] = his.read()
+            if parts[0].endswith('omor'):
+                self.generator = his.read()
+            elif self._verbosity:
+                print("unsupported generater", parts[0])
         elif parts[1] == 'accept' and include['accept']:
             if self._verbosity:
                 print('acceptor', parts[0])
-            self.acceptors[parts[0]] = his.read()
+            self.acceptor = his.read()
         elif parts[1] == 'tokenise' and include['tokenise']:
             if self._verbosity:
                 print('tokeniser', parts[0])
-            self.tokenisers[parts[0]] = his.read()
+            self.tokeniser = his.read()
         elif parts[1] == 'lemmatise' and include['lemmatise']:
             if self._verbosity:
                 print('lemmatiser', parts[0])
-            self.lemmatisers[parts[0]] = his.read()
+            self.lemmatiser = his.read()
         elif parts[1] == 'hyphenate' and include['hyphenate']:
             if self._verbosity:
                 print('hyphenator', parts[0])
-            self.hyphenators[parts[0]] = his.read()
+            self.hyphenator = his.read()
         elif parts[1] == 'segment' and include['segment']:
             if self._verbosity:
                 print('segmenter', parts[0])
-            self.segmenters[parts[0]] = his.read()
+            self.segmenter = his.read()
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if self._verbosity:
                 print('labelsegmenter', parts[0])
-            self.labelsegmenters[parts[0]] = his.read()
+            self.labelsegmenter = his.read()
         elif self._verbosity:
             print('skipped', parts)
 
@@ -291,7 +289,7 @@ class Omorfi:
                 retokens.append(retoken)
         return retokens
 
-    def _tokenise(self, line, automaton):
+    def _tokenise(self, line):
         return None
 
     def tokenise(self, line):
@@ -307,20 +305,20 @@ class Omorfi:
         token using hard-coded list of extra splits.
         """
         tokens = None
-        if 'omorfi' in self.tokenisers:
-            tokens = self._tokenise(line, 'omorfi')
+        if self.tokeniser:
+            tokens = self._tokenise(line)
         if not tokens:
             tokens = self._retokenise(line.split())
         return tokens
 
-    def _analyse_str(self, s, automaton):
+    def _analyse_str(self, s):
         token = (s, "")
-        res = self._analyse_token(token, automaton)
+        res = self._analyse_token(token)
         if len(s) > 2 and s[0].islower() and self.can_titlecase:
             tcs = s[0].upper() + s[1:]
             if s != tcs:
                 tctoken = (tcs, 'TitleCased=' + s)
-                tcres = self._analyse_token(tctoken, automaton)
+                tcres = self._analyse_token(tctoken)
                 for r in tcres:
                     r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
                 res = res + tcres
@@ -328,7 +326,7 @@ class Omorfi:
             dts = s[0].lower() + s[1:]
             if dts != s:
                 dttoken = (dts, "DetitleCased=" + s)
-                dtres = self._analyse_token(dttoken, automaton)
+                dtres = self._analyse_token(dttoken)
                 for r in dtres:
                     r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
                 res = res + dtres
@@ -336,7 +334,7 @@ class Omorfi:
             ups = s.upper()
             if s != ups:
                 uptoken = (ups, "UpperCased=" + s)
-                upres = self._analyse_token(uptoken, automaton)
+                upres = self._analyse_token(uptoken)
                 for r in upres:
                     r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
                 res = res + upres
@@ -344,14 +342,14 @@ class Omorfi:
             lows = s.lower()
             if s != lows:
                 lowtoken = (lows, "LowerCased=" + s)
-                lowres = self._analyse_token(lowtoken, automaton)
+                lowres = self._analyse_token(lowtoken)
                 for r in lowres:
                     r = (r[0] + '[CASECHANGE=LOWERCASED]', r[1])
                 res += lowres
         return res
 
-    def _analyse_token(self, token, automaton):
-        res = self.analysers[automaton].lookup(token[0])
+    def _analyse_token(self, token):
+        res = self.analyser.lookup(token[0])
         for r in res:
             r = (r[0] + '[WEIGHT=%f]' % (r[1]), r[1], token[1])
         return res
@@ -371,88 +369,60 @@ class Omorfi:
         identifying the casing.
         """
         anals = None
-        if 'default' in self.analysers:
-            if isinstance(token, str):
-                anals = self._analyse_str(token, 'default')
-            else:
-                anals = self._analyse_token(token, 'default')
-        if not anals and 'omorfi-omor' in self.analysers:
-            if isinstance(token, str):
-                anals = self._analyse_str(token, 'omorfi-omor')
-                if not anals:
-                    anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
-                            (token), float('inf'), "Unknown")
-                    anals = [anal]
-            else:
-                anals = self._analyse_token(token, 'omorfi-omor')
-                if not anals:
-                    anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
-                            (token[0]), float('inf'), "Unknown")
-                    anals = [anal]
-        if not anals and len(self.analysers):
-            anals = self._analyse(token, self.analysers.keys[0])
-            if not anals:
-                anal = ('[WORD_ID=%s]' % (token[0]) + '[GUESS=UNKNOWN][WEIGHT=inf]',
-                        float('inf'))
-                anals = [anal]
+        if isinstance(token, str):
+            anals = self._analyse_str(token)
+        else:
+            anals = self._analyse_token(token)
+        if not anals:
+            anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                    (token), float('inf'), "Unknown")
+            anals = [anal]
         return anals
 
-    def _lemmatise(self, token, automaton):
-        res = self.lemmatisers[automaton].lookup(token)
+    def _lemmatise(self, token):
+        res = self.lemmatiser.lookup(token)
         return res
 
     def lemmatise(self, token):
         lemmas = None
-        if 'default' in self.lemmatisers:
-            lemmas = self._lemmatise(token, 'default')
-        if not lemmas and 'omorfi' in self.lemmatisers:
-            lemmas = self._lemmatise(token, 'omorfi')
-            if not lemmas:
-                lemma = (token, float('inf'))
-                lemmas = [lemma]
+        lemmas = self._lemmatise(token)
+        if not lemmas:
+            lemma = (token, float('inf'))
+            lemmas = [lemma]
         return lemmas
 
-    def _segment(self, token, automaton):
-        res = self.segmenters[automaton].lookup(token)
+    def _segment(self, token):
+        res = self.segmenter.lookup(token)
         return res
 
     def segment(self, token):
         segments = None
-        if 'default' in self.segmenters:
-            segments = self._segment(token, 'default')
-        if not segments and 'omorfi' in self.segmenters:
-            segments = self._segment(token, 'omorfi')
-            if not segments:
-                segment = (token, float('inf'))
-                segments = [segment]
+        segments = self._segment(token)
+        if not segments:
+            segment = (token, float('inf'))
+            segments = [segment]
         return segments
 
-    def _labelsegment(self, token, automaton):
-        res = self.labelsegmenters[automaton].lookup(token)
+    def _labelsegment(self, token):
+        res = self.labelsegmenter.lookup(token)
         return res
 
     def labelsegment(self, token):
         labelsegments = None
-        if 'default' in self.labelsegmenters:
-            labelsegments = self._labelsegment(token, 'default')
-        if not labelsegments and 'omorfi' in self.labelsegmenters:
-            labelsegments = self._labelsegment(token, 'omorfi')
-            if not labelsegments:
-                labelsegment = (token, float('inf'))
-                labelsegments = [labelsegment]
+        labelsegments = self._labelsegment(token)
+        if not labelsegments:
+            labelsegment = (token, float('inf'))
+            labelsegments = [labelsegment]
         return labelsegments
 
-    def _accept(self, token, automaton):
-        res = self.acceptors[automaton].lookup(token)
+    def _accept(self, token):
+        res = self.acceptor.lookup(token)
         return res
 
     def accept(self, token):
         accept = False
         accepts = None
-        if 'default' in self.acceptors:
-            accepts = self._accept(token, 'default')
-        if not accepts and 'omorfi' in self.acceptors:
-            accepts = self._accept(token, 'omorfi')
+        accepts = self._accept(token)
         if accepts:
             accept = True
         return accept

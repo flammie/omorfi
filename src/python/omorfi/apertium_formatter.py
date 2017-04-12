@@ -53,6 +53,8 @@ class ApertiumFormatter(Formatter):
         "com",
         "cond",
         "conneg",
+        "compound-only-L",
+        "compound-R",
         "def",
         "det",
         "dem",
@@ -118,6 +120,7 @@ class ApertiumFormatter(Formatter):
         "reflex",
         "rel",
         "sg",
+        "sp",
         "sup",
         "sym",
         "top",
@@ -126,6 +129,7 @@ class ApertiumFormatter(Formatter):
         "use_archaic",
         "use_nonstd",
         "use_foreign",
+        "use_blacklist",
         "vaux",
         "vblex"
     }
@@ -180,10 +184,11 @@ class ApertiumFormatter(Formatter):
         "ARTWORK": "",
         "ARROW": "",
         "AUX": "vaux",
-        "B-": "-",
-        "B←": "-",
-        "B→": "-",
+        "B-": "",
+        "B←": "compound-only-L",
+        "B→": "compound-R",
         "Bc": "+",
+        "BLACKLISTED": "use_blacklist",
         "CARDINAL": "card",
         "Ccmp": "com",
         "CLAUSE-BOUNDARY": "",
@@ -196,6 +201,7 @@ class ApertiumFormatter(Formatter):
         "CONJUNCTION": "",
         "CONJUNCTIONVERB": "cnjcoo><vblex",
         "CONJ": "cnjcoo",
+        "CCONJ": "cnjcoo",
         "COORDINATING": "cnjcoo",
         "Cpos": "pos",
         "Csup": "sup",
@@ -265,7 +271,7 @@ class ApertiumFormatter(Formatter):
         "MISC": "",
         "MULTIPLICATIVE": "",
         "Ncon": "conneg",
-        "N??": "",
+        "N??": "sp",
         "Nneg": "neg",
         "NOUN": "n",
         "Npl": "pl",
@@ -429,7 +435,7 @@ class ApertiumFormatter(Formatter):
                     'analysis'] += self.stuff2lexc(wordmap['argument'] + '_arg')
             else:
                 wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
-        elif wordmap['upos'] == 'CONJ|VERB':
+        elif wordmap['upos'] == 'CCONJ|VERB':
             if wordmap['lemma'] == 'eikä':
                 wordmap['lemma'] = 'ei'
                 wordmap['analysis'] = 'ja' + \
@@ -437,7 +443,7 @@ class ApertiumFormatter(Formatter):
                     '+ei' + \
                     self.stuff2lexc('Nneg')
             else:
-                wordmap['analysis'] = wordmap['lemma'][:-2] +\
+                wordmap['analysis'] = wordmap['lemma'][:-2] + \
                     self.stuff2lexc('ADVERBIAL') + \
                     '+' + wordmap['lemma'][-2:] + \
                     self.stuff2lexc('Nneg')
@@ -446,6 +452,10 @@ class ApertiumFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
         else:
             wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
+        if wordmap['blacklist']:
+            if wordmap['blacklist'] != "TOOSHORTFORCOMPOUND":
+                wordmap['analysis'] += self.stuff2lexc('BLACKLISTED')
+
         if wordmap['pronoun']:
             for stuff in wordmap['pronoun'].split("|"):
                 wordmap['analysis'] += self.stuff2lexc(stuff)

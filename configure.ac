@@ -116,12 +116,14 @@ AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
 
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
-            [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
+            [AS_HELP_STRING([--with-pbs-mail],
+                            [set email for pbs job @<:@default=disable pbs@:>@])],
             [with_pbs_mail=$withval],
             [with_pbs_mail=no])
 AC_SUBST([PBS_EMAIL], [$with_pbs_mail])
 AC_ARG_WITH([slurm-mail],
-            [AS_HELP_STRING([set email for slurm job @<:@default=disable pbs@:>@])],
+            [AS_HELP_STRING([--with-slurm-mail],
+                            [set email for slurm job @<:@default=disable pbs@:>@])],
             [with_slurm_mail=$withval],
             [with_slurm_mail=no])
 AC_SUBST([SLURM_EMAIL], [$with_slurm_mail])
