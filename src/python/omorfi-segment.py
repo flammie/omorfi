@@ -161,7 +161,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         moses = re.sub(r"\|X\|NUM", r"X|NUM", moses)
         moses = re.sub(r"\|X-\|NUM", r"X-|NUM", moses)
         # e|CONJ|VERBmme
-        moses = re.sub(r"CONJ\|VERB", r"CONJVERB ", moses)
+        moses = re.sub(r"CCONJ\|VERB", r"CCONJVERB ", moses)
         # elin|NOUN tarvike ala|NOUN
         # kehitys|NOUN yhteis|NOUN työ mis|NOUNnisteri|NOUN nä|ESS
         # ulko|NOUN maalai|NOUN s|NOUN viha mielis|ADJ tä|PAR
