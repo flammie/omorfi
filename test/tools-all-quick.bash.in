@@ -28,4 +28,4 @@ function tool_check() {
     return 0
 }
 
-tool_check hfst-segment -O moses
+tool_check hfst-segment.py -O moses-factors
