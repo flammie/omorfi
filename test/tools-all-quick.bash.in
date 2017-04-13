@@ -1,7 +1,7 @@
 #!/bin/bash
 # coverage for europarl
 fsa="@top_builddir@/src/generated/"
-tooldir="@top_srcdir@/src/python/"
+tooldir="@top_srcdir@/src/python"
 
 if test -z $srcdir ; then
     echo invoke from make check or define srcdir=.
@@ -28,4 +28,4 @@ function tool_check() {
     return 0
 }
 
-tool_check hfst-segment.py -O moses-factors
+tool_check omorfi-segment.py -O moses-factors
