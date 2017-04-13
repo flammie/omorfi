@@ -5,7 +5,7 @@ before_install:
     - sudo apt-get install hfst python3-libhfst
 script:
     - ./autogen.sh
-    - ./configure
+    - ./configure --enable-segmenter
     - make
     - make check
     - cat test/test-suite.log
