@@ -37,8 +37,8 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                            'SUPER', 'AUX', 'NUM', 'PRON', 'DET']:
                 allow_uppers = True
                 skiptag = split
-            elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
-                           'SCONJ', 'CONJ|VERB', 'INTJ', 'SYM']:
+            elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CCONJ',
+                           'SCONJ', 'CCONJ|VERB', 'INTJ', 'SYM']:
                 allow_uppers = True
                 moses += nextsep + split
             elif split in ['PL', 'INS', 'INE', 'ELA',
