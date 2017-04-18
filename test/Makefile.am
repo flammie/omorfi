@@ -10,7 +10,7 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
-XFAIL_TESTS=tools-all-quick.bash
+#XFAIL_TESTS=tools-all-quick.bash
 EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \
 		   wordforms.list \
