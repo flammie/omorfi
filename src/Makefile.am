@@ -3,7 +3,15 @@
 # Settings
 HFST_FLAGS=
 voikkosharedir=$(libdir)/voikko/3/
+
+if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
+ORIGIN_FLAGS=-O kotus
+HLEXC_FLAGS=
+else
+HLEXC_FLAGS=--Werror
+endif
+
 # {{{ Files
 # Origins
 XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
@@ -279,24 +287,28 @@ generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
 generated/omorfi.segment.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none --none-segments
+		-i generated/inflections.tsv -o $@ -f=none --none-segments \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none --none-lemmas
+		-i generated/inflections.tsv -o $@ -f=none --none-lemmas \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none
+		-i generated/inflections.tsv -o $@ -f=none \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=labelsegments
+		-i generated/inflections.tsv -o $@ -f=labelsegments \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 #
 generated/omorfi-phon.twolc: generated/timestamp
@@ -364,7 +376,9 @@ generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-p generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=omor \
-		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
+		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG) \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
+
 
 generated/omorfi-omor-guesser.lexc: paradigms/suffix-regexes.tsv \
 	paradigms/stub-deletions.tsv generated/stemparts.tsv \
@@ -440,7 +454,7 @@ endif
 # {{{ COMPILATION RECIPES
 # compile lexc
 %.lexc.hfst: %.lexc
-	$(HLEXC) --Werror -o $@ $<
+	$(HLEXC) $(HFST_FLAGS) $(HLEXC_FLAGS) -o $@ $<
 
 # compile twolc
 %.twolc.hfst: %.twolc

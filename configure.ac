@@ -127,6 +127,13 @@ AC_ARG_WITH([slurm-mail],
             [with_slurm_mail=$withval],
             [with_slurm_mail=no])
 AC_SUBST([SLURM_EMAIL], [$with_slurm_mail])
+# Control heaviness of builds and tests
+AC_ARG_ENABLE([small-lexicons],
+              [AS_HELP_STRING([--enable-small-lexicons],
+                              [whether to greatly reduce lexicon sizes @<:@default=no@:>@])],
+                             [small_lexicons=$enableval],
+                             [small_lexicons=no])
+AM_CONDITIONAL([WANT_SMALL_LEXICONS], [test "x$small_lexicons" != xno])
 AC_ARG_ENABLE([big-tests],
               [AS_HELP_STRING([--enable-big-tests],
                               [whether to run large corpus tests @<:@default=no@:>@])],
@@ -313,11 +320,14 @@ cat <<EOF
 Configured $PACKAGE_STRING:
 =======
 * Analysers: $with_hfst
-    * OMOR $enable_omor $OMORPROPFLAG $OMORALLOFLAG $OMORPARAFLAG $OMORSEMFLAG
+    * OMOR $enable_omor (flags: $OMORPROPFLAG $OMORALLOFLAG $OMORPARAFLAG $OMORSEMFLAG)
     * FTB3.1 $enable_ftb3
     * apertium $enable_apertium
     * giella: $enable_giella
     * labeled segmenter: $enable_labeled_segments
+* Limits:
+    * tiny lexicons: $enable_small_lexicons
+    * big tests: $enable_big_tests
 * Applications
     * Voikko speller: $enable_voikko
     * segmenter: $enable_segmenter

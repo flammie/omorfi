@@ -72,6 +72,11 @@ def main():
                     metavar="BLIST", help="exclude lemmas in BLIST blacklist",
                     choices=["FGK", "PROPN-BLOCKING", "NOUN-BLOCKING-PROPN",
                              "TOOSHORTFORCOMPOUND"])
+    ap.add_argument("--include-origin", "-O", action="append", type=str,
+                    metavar="ORIGIN", 
+                    help="include lemmas from ORIGIN source",
+                    choices=["kotus", "omorfi", "unihu", "finnwordnet",
+                        "fiwiktionary"])
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", "--one-file", "-1",
                     type=argparse.FileType("w"), required=True,
@@ -184,6 +189,9 @@ def main():
                 if args.include_lemmas:
                     if wordmap['lemma'] not in lemmas:
                         continue
+                if args.include_origin:
+                    if wordmap['origin'] not in args.include_origin:
+                        continue
                 if args.exclude_blacklisted:
                     if wordmap['blacklist'] in args.exclude_blacklisted:
                         wordmap['new_para'] = 'XXX_BLACKLISTED_SINK'
@@ -212,10 +220,11 @@ def main():
                     print(formatter.wordmap2lexc(suffix),
                           file=args.output)
             for key, words in sorted(postponed_abbrs.items()):
-                print("\nLEXICON", key, "\n\n", file=args.output)
-                for word in words:
-                    print(formatter.wordmap2lexc(word),
-                          file=args.output)
+                if len(words) > 0:
+                    print("\nLEXICON", key, "\n\n", file=args.output)
+                    for word in words:
+                        print(formatter.wordmap2lexc(word),
+                              file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
     # print stem parts
