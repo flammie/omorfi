@@ -37,10 +37,10 @@ class Omorfi:
 
     There is python code to perform basic string munging controlled by following
     bool attributes:
-        can_lowercase: to use `str.lower()`
-        can_titlecase: to use `str[0].upper() + str[1:]`
-        can_uppercase: to use `str.upper()`
-        can_detitlecase: to use `str[0].lower + str[1:]`
+        try_lowercase: to use `str.lower()`
+        try_titlecase: to use `str[0].upper() + str[1:]`
+        try_uppercase: to use `str.upper()`
+        try_detitlecase: to use `str[0].lower + str[1:]`
 
     The annotations will be changed when transformation has been applied.
     """
@@ -53,10 +53,18 @@ class Omorfi:
     labelsegmenter = None
     acceptor = None
     guesser = None
-    can_lowercase = True
-    can_titlecase = True
-    can_detitlecase = True
-    can_uppercase = False
+    try_lowercase = True
+    try_titlecase = True
+    try_detitlecase = True
+    try_uppercase = False
+    can_analyse = False
+    can_tokenise = True
+    can_generate = False
+    can_lemmatise = False
+    can_hyphenate = False
+    can_segment = False
+    can_labelsegment = False
+    can_guess = False
     _verbosity = False
 
     _stdpaths = ['/usr/local/share/hfst/fi/',
@@ -117,6 +125,9 @@ class Omorfi:
                 print('analyser', parts[0])
             if parts[0].endswith('omor'):
                 self.analyser = his.read()
+                self.can_analyse = True
+                self.can_accept = True
+                self.can_lemmatise = True
             elif self._verbosity:
                 print("unsupported analyser", parts[0])
         elif parts[1] == 'generate' and include['generate']:
@@ -124,32 +135,39 @@ class Omorfi:
                 print('generator', parts[0])
             if parts[0].endswith('omor'):
                 self.generator = his.read()
+                self.can_generate = True
             elif self._verbosity:
                 print("unsupported generater", parts[0])
         elif parts[1] == 'accept' and include['accept']:
             if self._verbosity:
                 print('acceptor', parts[0])
             self.acceptor = his.read()
+            self.can_accept = True
         elif parts[1] == 'tokenise' and include['tokenise']:
             if self._verbosity:
                 print('tokeniser', parts[0])
             self.tokeniser = his.read()
+            self.can_tokenise = True
         elif parts[1] == 'lemmatise' and include['lemmatise']:
             if self._verbosity:
                 print('lemmatiser', parts[0])
             self.lemmatiser = his.read()
+            self.can_lemmatise = True
         elif parts[1] == 'hyphenate' and include['hyphenate']:
             if self._verbosity:
                 print('hyphenator', parts[0])
             self.hyphenator = his.read()
+            self.can_hyphenate = True
         elif parts[1] == 'segment' and include['segment']:
             if self._verbosity:
                 print('segmenter', parts[0])
             self.segmenter = his.read()
+            self.can_segment = True
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if self._verbosity:
                 print('labelsegmenter', parts[0])
             self.labelsegmenter = his.read()
+            self.can_segment = True
         elif self._verbosity:
             print('skipped', parts)
 
@@ -198,14 +216,14 @@ class Omorfi:
     def _find_retoken_recase(self, token):
         if self.accept(token):
             return (token, "ORIGINALCASE")
-        if self.can_lowercase and self.accept(token.lower()):
+        if self.try_lowercase and self.accept(token.lower()):
             return (token.lower(), "LOWERCASED=" + token)
-        if self.can_uppercase and self.accept(token.upper()):
+        if self.try_uppercase and self.accept(token.upper()):
             return (token.upper(), "UPPERCASED=" + token)
         if len(token) > 1:
-            if self.can_titlecase and self.accept(token[0].upper() + token[1:]):
+            if self.try_titlecase and self.accept(token[0].upper() + token[1:]):
                 return (token[0].upper() + token[1:], "TITLECASED=" + token)
-            if self.can_detitlecase and self.accept(token[0].lower() + token[1:]):
+            if self.try_detitlecase and self.accept(token[0].lower() + token[1:]):
                 return (token[0].lower() + token[1:], "DETITLECASED=" + token)
         return False
 
@@ -314,7 +332,7 @@ class Omorfi:
     def _analyse_str(self, s):
         token = (s, "")
         res = self._analyse_token(token)
-        if len(s) > 2 and s[0].islower() and self.can_titlecase:
+        if len(s) > 2 and s[0].islower() and self.try_titlecase:
             tcs = s[0].upper() + s[1:]
             if s != tcs:
                 tctoken = (tcs, 'TitleCased=' + s)
@@ -322,7 +340,7 @@ class Omorfi:
                 for r in tcres:
                     r = (r[0] + '[CASECHANGE=TITLECASED]', r[1])
                 res = res + tcres
-        if len(token) > 2 and token[0].isupper() and self.can_detitlecase:
+        if len(token) > 2 and token[0].isupper() and self.try_detitlecase:
             dts = s[0].lower() + s[1:]
             if dts != s:
                 dttoken = (dts, "DetitleCased=" + s)
@@ -330,7 +348,7 @@ class Omorfi:
                 for r in dtres:
                     r = (r[0] + '[CASECHANGE=DETITLECASED]', r[1])
                 res = res + dtres
-        if not s.isupper() and self.can_uppercase:
+        if not s.isupper() and self.try_uppercase:
             ups = s.upper()
             if s != ups:
                 uptoken = (ups, "UpperCased=" + s)
@@ -338,7 +356,7 @@ class Omorfi:
                 for r in upres:
                     r = (r[0] + '[CASECHANGE=UPPERCASED]', r[1])
                 res = res + upres
-        if not s.islower() and self.can_lowercase:
+        if not s.islower() and self.try_lowercase:
             lows = s.lower()
             if s != lows:
                 lowtoken = (lows, "LowerCased=" + s)
@@ -357,12 +375,12 @@ class Omorfi:
     def analyse(self, token):
         """Perform a simple morphological analysis lookup.
 
-        If can_titlecase does not evaluate to False,
+        If try_titlecase does not evaluate to False,
         the analysis will also be performed with first letter
         uppercased and rest lowercased.
-        If can_uppercase evaluates to not False,
+        If try_uppercase evaluates to not False,
         the analysis will also be performed on all uppercase variant.
-        If can_lowercase evaluates to not False,
+        If try_lowercase evaluates to not False,
         the analysis will also be performed on all lowercase variant.
 
         The analyses with case mangling will have an additional element to them
@@ -426,7 +444,6 @@ class Omorfi:
         if accepts:
             accept = True
         return accept
-
 
 def main():
     """Invoke a simple CLI analyser."""
