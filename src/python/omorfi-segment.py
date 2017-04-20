@@ -305,6 +305,12 @@ def main():
         if options.verbose:
             print("Searching for automata everywhere...")
         omorfi.load_from_dir(labelsegment=True, segment=True, accept=True)
+    if not omorfi.can_segment:
+        print("Could not load segmenter(s), re-compile them or use -f option")
+        print()
+        print("To compile segmenter, use --enable-segmenter, and/or",
+                "--enable-labeled-segments")
+        exit(1)
     if options.infile:
         infile = options.infile
     else:

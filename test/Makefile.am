@@ -10,7 +10,6 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
-XFAIL_TESTS=tools-all-quick.bash
 if WANT_SMALL_LEXICONS
 TESTS+=rougher-tests.bash coverages-less-quick.bash
 XFAIL_TESTS+=rough-tests.sh coverages-all-quick.sh

@@ -21,11 +21,14 @@ function tool_check() {
     tool=$1
     shift
     if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
-            $tooldir/$tool $@ -f $fsa -i wordforms.list \
+            $tooldir/$tool $@ -v -f $fsa -i wordforms.list \
             -o wordforms.$(basename 1)log  ; then
         exit 1
     fi
     return 0
 }
 
-tool_check omorfi-segment.py -O moses-factors
+if test -f $fsa/omorfi.segment.hfst -a -f $fsa/omorfi.labelsegment.hfst ; then
+    tool_check omorfi-segment.py -O moses-factors
+fi
+
