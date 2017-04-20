@@ -93,6 +93,7 @@ ADJ_SIPPI	ADJ	ADJECTIVE	5	B	False	weaken	front	None	None	False	False
 ADJ_SISIN	ADJ	ADJECTIVE	36	None	False	strengthen	front	None	None	False	False
 ADJ_STYDI	ADJ	ADJECTIVE	5	None	False	weaken	front	None	None	False	False
 ADJ_SUIPPO	ADJ	ADJECTIVE	1	B	False	weaken	back	None	None	False	False
+ADJ_SUOMALAINEN	ADJ	ADJECTIVE	38	None	False	strengthen	back	None	None	False	False
 ADJ_SUURI	ADJ	ADJECTIVE	24	None	False	weaken	back	None	None	False	False
 ADJ_SUURI	ADJ	ADJECTIVE	26	None	False	weaken	back	None	None	False	False
 ADJ_SYMPPIS	ADJ	ADJECTIVE	39	None	False	strengthen	front	None	None	False	False
@@ -803,6 +804,7 @@ NOUN_SUHTEET	NOUN	NOUN	48	F	obligatory	strengthen	back	None	None	False	False
 NOUN_SUKAT	NOUN	NOUN	10	A	obligatory	weaken	back	None	None	False	False
 NOUN_SULKA	NOUN	NOUN	10	D	False	weaken	back	a	None	False	False
 NOUN_SUODATIN	NOUN	NOUN	33	C	False	strengthen	back	None	None	False	False
+NOUN_SUOMALAINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False
 NOUN_SUOT	NOUN	NOUN	19	None	obligatory	weaken	back	None	None	False	False
 NOUN_SYDÄN	NOUN	NOUN	33	None	False	strengthen	front	None	None	False	False
 NOUN_SYLI	NOUN	NOUN	23	None	False	weaken	front	None	None	False	False
@@ -2414,6 +2416,7 @@ VERB_SAMMOTA	VERB	VERB	74	H	False	strengthen	back	None	None	False	False
 VERB_SATAA	VERB	VERB	56	F	False	weaken	back	None	None	False	False
 VERB_SELVITÄ	VERB	VERB	75	None	False	strengthen	front	None	None	False	False
 VERB_SIEPATA	VERB	VERB	73	B	False	strengthen	back	None	None	False	False
+VERB_SI’ITÄ	VERB	VERB	75	D	False	strengthen	front	None	None	False	False
 VERB_SILIYTYÄ	VERB	VERB	52	F	False	weaken	front	None	None	False	False
 VERB_SILPOA	VERB	VERB	52	E	False	weaken	back	None	None	False	False
 VERB_SIVALTAA	VERB	VERB	54	I	False	weaken	back	None	None	False	False
