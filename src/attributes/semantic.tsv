@@ -736,8 +736,6 @@ britti	1	country
 britti	2	inhabitant
 brittiläinen	1	country
 brittiläinen	2	inhabitant
-brittiläinen	3	country
-brittiläinen	4	inhabitant
 Brittiläiset Neitsytsaaret	1	country
 BRL	1	currency
 BRN	1	currency
@@ -5412,8 +5410,6 @@ ruokolahtelainen	1	inhabitant
 ruokolahtelainen	2	inhabitant
 ruotsalainen	1	country
 ruotsalainen	2	inhabitant
-ruotsalainen	3	country
-ruotsalainen	4	inhabitant
 ruotsi	1	language
 Ruotsi	1	country
 ruotsinpyhtääläinen	1	inhabitant
@@ -6662,8 +6658,6 @@ Uusimaa	1	media
 Uusi-Seelanti	2	country
 uusiseelantilainen	1	country
 uusiseelantilainen	2	inhabitant
-uusiseelantilainen	3	country
-uusiseelantilainen	4	inhabitant
 uutisankkuri	1	title
 Uutis-Jousi	1	media
 UYI	1	currency
@@ -6708,8 +6702,6 @@ valkovenäjä	1	language
 Valko-Venäjä	1	country
 valkovenäläinen	1	country
 valkovenäläinen	2	inhabitant
-valkovenäläinen	3	country
-valkovenäläinen	4	inhabitant
 valloni	2	language
 Valma	1	female
 valmentaja	1	title
@@ -6809,8 +6801,6 @@ venäjä	1	language
 Venäjä	1	country
 venäläinen	1	country
 venäläinen	2	inhabitant
-venäläinen	3	country
-venäläinen	4	inhabitant
 Vera	1	female
 Verna	1	female
 Verner	1	male
