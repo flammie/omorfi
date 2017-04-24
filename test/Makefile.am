@@ -7,6 +7,7 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 	  faithfulness-ftb-3.1.sh \
 	  conllu-fi-ud-test.sh \
 	  conllu-fi-ftb-ud-test.sh
+XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
