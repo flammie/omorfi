@@ -31,3 +31,19 @@ if CAN_YAML_TEST
 
 endif
 
+
+coverage-fast-alls.freqs: 5grams.uniq.freqs \
+						  fiwiki-latest-pages-articles.uniq.freqs \
+						  OpenSubtitles2016.fi.uniq.freqs \
+						  ftb1-2014.uniq.freqs \
+						  tatoeba-fi.uniq.freqs \
+						  europarl-v7.fi-en.fi.uniq.freqs \
+						  ftb3.1.uniq.freqs \
+						  fi_ftb-ud.uniq.freqs \
+						  gutenberg-fi.uniq.freqs \
+						  vks.uniq.freqs \
+						  fi-ud.uniq.freqs \
+						  jrc-fi.uniq.freqs \
+						  vns.uniq.freqs
+	$(PYTHON) sum-uniq-freqs.py -o $@ -t 1000 $^
+
