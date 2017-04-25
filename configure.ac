@@ -305,6 +305,8 @@ AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.sh],
                 [chmod +x test/coverages-all-quick.sh])
+AC_CONFIG_FILES([test/coverages-less-quick.bash],
+                [chmod +x test/coverages-less-quick.bash])
 AC_CONFIG_FILES([test/coverages-all-slow.bash],
                 [chmod +x test/coverages-all-slow.bash])
 AC_CONFIG_FILES([test/tools-all-quick.bash],

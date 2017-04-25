@@ -6,7 +6,7 @@ voikkosharedir=$(libdir)/voikko/3/
 
 if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
-ORIGIN_FLAGS=-O kotus
+ORIGIN_FLAGS=-O kotus -O omorfi++
 HLEXC_FLAGS=
 else
 HLEXC_FLAGS=--Werror

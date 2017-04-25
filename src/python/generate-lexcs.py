@@ -76,7 +76,7 @@ def main():
                     metavar="ORIGIN", 
                     help="include lemmas from ORIGIN source",
                     choices=["kotus", "omorfi", "unihu", "finnwordnet",
-                        "fiwiktionary"])
+                        "fiwiktionary", "omorfi++"])
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", "--one-file", "-1",
                     type=argparse.FileType("w"), required=True,
@@ -183,6 +183,8 @@ def main():
                 # read data from database
                 wordmap = tsv_parts
                 # exclusions
+                if wordmap['new_para'] == 'X_IGNORE':
+                    continue
                 if args.exclude_pos:
                     if wordmap['pos'] in args.exclude_pos:
                         continue
@@ -190,7 +192,12 @@ def main():
                     if wordmap['lemma'] not in lemmas:
                         continue
                 if args.include_origin:
-                    if wordmap['origin'] not in args.include_origin:
+                    origins = wordmap['origin'].split('|')
+                    origin_ok = False
+                    for origin in origins:
+                        if origin in args.include_origin:
+                            origin_ok = True
+                    if not origin_ok:
                         continue
                 if args.exclude_blacklisted:
                     if wordmap['blacklist'] in args.exclude_blacklisted:

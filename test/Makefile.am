@@ -7,13 +7,18 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 	  faithfulness-ftb-3.1.sh \
 	  conllu-fi-ud-test.sh \
 	  conllu-fi-ftb-ud-test.sh
+XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
-#XFAIL_TESTS=tools-all-quick.bash
+if WANT_SMALL_LEXICONS
+TESTS+=rougher-tests.bash coverages-less-quick.bash
+XFAIL_TESTS+=rough-tests.sh coverages-all-quick.sh
+endif
 EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \
 		   wordforms.list \
+		   wordforms-common.list \
 		   coverage.py \
 		   faithfulness.py \
 		   conllu-compare.py
