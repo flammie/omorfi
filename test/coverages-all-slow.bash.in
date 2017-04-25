@@ -39,6 +39,8 @@ coverage_check "ftb1-2014" 96
 coverage_check "gutenberg-fi" 96
 coverage_check "OpenSubtitles2016.fi" 95
 coverage_check "tatoeba-fi" 95
+coverage_check "vns" 85
+coverage_check "vks" 50
 # ehh, hapax legomena 1 requires few gigabytes here...
 hapax=2
 coverage_check "jrc-fi" 93

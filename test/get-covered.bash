@@ -1,8 +1,8 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=11
+nc=13
 function preprocess() {
-    cat $@ > .tokenise 
+    cat $@ > .tokenise
     split -l 500000 .tokenise
     for f in x?? ; do
         ../src/python/omorfi-tokenise.py -i $f |\
@@ -152,14 +152,14 @@ fi
 echo UD Finnish-FTB ... 8/$nc
 if ! test -f "fi_ftb-ud.uniq.freqs" ; then
     if ! test -f "fi_ftb-ud.conllu" ; then
-        if ! test -d UD_Finnish-FTB ; then
-            git clone git@github.com:UniversalDependencies/UD_Finnish-FTB.git
+        if ! test -d UD_Finnish-ftb ; then
+            git clone git@github.com:UniversalDependencies/UD_Finnish-ftb.git
         else
-            pushd UD_Finnish-FTB
+            pushd UD_Finnish-ftb
             git pull
             popd
         fi
-        cat UD_Finnish-FTB/fi_ftb-ud-{train,dev}.conllu > "fi_ftb-ud.conllu"
+        cat UD_Finnish-ftb/fi_ftb-ud-{train,dev}.conllu > "fi_ftb-ud.conllu"
     fi
     echo tokenise
     egrep -v '^#' < "fi_ftb-ud.conllu" | tr -s '\n' |\
@@ -172,7 +172,7 @@ fi
 echo Open Subtitle 2016... corpus 9/$nc
 if ! test -f "OpenSubtitles2016.fi.uniq.freqs" ; then
     if ! test -f "OpenSubtitles2016.fi.tokens" ; then
-        if ! test -f "OpenSubtitles2016.fi.text" ; then 
+        if ! test -f "OpenSubtitles2016.fi.text" ; then
             if ! test -f "OpenSubtitles2016.raw.fi.gz" ; then
                 echo fetch
                 fetch-opensubtitles.bash "fi"
@@ -235,3 +235,34 @@ if ! test -f "5grams.uniq.freqs" ; then
     echo count
     frequency_list 5grams.tokens > 5grams.uniq.freqs
 fi
+
+# Old language frequency lists
+echo Vanhan kirjasuomen sanojen taajuuksia... corpus 12/$nc
+if ! test -f "vks.uniq.freqs" ; then
+    if ! test -f "vks_frek.txt" ; then
+        if ! test -f vks_frek.zip ; then
+            echo fetch 1/4
+            wget http://kaino.kotus.fi/sanat/taajuuslista/vks_frek.zip
+        fi
+        echo unpack
+        unzip vks_frek.zip
+    fi
+    echo count
+    recode l1..u8 vks_frek.txt
+    cut -d ' ' -f 2,3 vks_frek.txt > vks.uniq.freqs
+fi
+echo Varhaisnykysuomen sanojen taajuuksia... corpus 13/$nc
+if ! test -f "vns.uniq.freqs" ; then
+    if ! test -f "vns_frek.txt" ; then
+        if ! test -f vns_frek.zip ; then
+            echo fetch 1/4
+            wget http://kaino.kotus.fi/sanat/taajuuslista/vns_frek.zip
+        fi
+        echo unpack
+        unzip vns_frek.zip
+    fi
+    echo count
+    recode l1..u8 vns_frek.txt
+    cut -d ' ' -f 2,3 vns_frek.txt > vns.uniq.freqs
+fi
+
