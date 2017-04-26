@@ -19,6 +19,11 @@ import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
 
+can_udpipe = False
+try:
+    from ufal.udpipe import Model
+except ImportError:
+    can_udpipe = False
 
 class Omorfi:
 
@@ -53,6 +58,7 @@ class Omorfi:
     labelsegmenter = None
     acceptor = None
     guesser = None
+    udpiper = None
     try_lowercase = True
     try_titlecase = True
     try_detitlecase = True
@@ -65,6 +71,8 @@ class Omorfi:
     can_segment = False
     can_labelsegment = False
     can_guess = False
+    can_udpipe = False
+
     _verbosity = False
 
     _stdpaths = ['/usr/local/share/hfst/fi/',
@@ -212,6 +220,11 @@ class Omorfi:
                 self.load_filename(filename, **include)
             except:
                 print("broken HFST", filename, file=stderr)
+
+    def load_udpipe(self, filename):
+        if not can_udpipe:
+            return
+        udpiper = Model.load(filename)
 
     def _find_retoken_recase(self, token):
         if self.accept(token):
