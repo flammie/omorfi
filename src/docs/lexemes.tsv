@@ -1,5 +1,43 @@
 lemma	homonym	doc
+½	1	half
+¼	1	quarter
+¹	1	superscript one
+-	1	ASCII minus-hyphen, still most common dash
+'	1	ASCII single quotation mark, still most common single quotation
+:	1	colon
+,	1	comma
+$	1	dollar
+...	1	ellipsis
+—	1	em dash, rarer than en dash or minus-hyphen
+–	1	en dash, relatively common, recommended for hyphens
+€	1	euro
+.	1	full stop
+(	1	left bracket
+{	1	left curly bracket
+”	1	left double quotation in 9-shape, common and recommended
+’	1	left single quotation in 9-shape, common and recommended
+[	1	left square bracket
+˗	1	minus sign, rare
+‰	1	permille
+|	1	pipe used in computer systems, logics etc.
++	1	plus
+―	1	quotation dash, rare but seen in some official corpora
+)	1	right bracket
+}	1	right curly bracket
+]	1	right square bracket
+;	1	semicolon
+…	1	single symbol for ellipsis, rare but seen in some official corpora
+²	1	superscript two
+"	1	ASCII double quotation mark, still most common double quotation
+"	2	ASCII double quotation mark, still most common double quotation
+!	2	exclamation mark
+?	2	question mark
+”	2	right double quotation in 9-shape, common and recommended
+’	2	right single quotation in 9-shape, common and recommended
+/	2	slash, for division, URLs, etc.
+³	1	superscript three
 ADSL	1	Asymmetric Digital Subscriber Line
+aina	2	always, as adverb
 API	1	Application Programming Interface
 atk	1	automaattinen tekstinkäsittely
 BBC	1	British Broadcasting Company
@@ -11,17 +49,19 @@ CD-R	1	Compact Disc Read-Only
 CD-RW	1	Compact Disc Read-Write
 CIA	1	Central Intelligence Agency
 DDR	1	Deutsches Democratische Republic
+DJ	1	Disc Jockey
 dna	1	deoxyribonucleic acid
 DNA	1	Deoxyribo-Nucleic Acid
-DJ	1	Disc Jockey
 DPI	1	Dots Per Inch
 DVD	1	Digital Versatile Disc
 EEC	1	European Economy Council
 EKP	1	Euroopan Keskus-Pankki
 EMU	1	European Monetary Union
+ennen	2	before, as adposition, complement in partitive
 ETY	1	Euroopan Turvallisuus-Yhteisö
-EU	1	Euroopan Unioni
-EY	1	Euroopan Yhteisö
+EU	2	Euroopan Unioni
+Eurooppa	2	Europe, as proper noun for geographical area
+EY	2	Euroopan Yhteisö
 FBI	1	Federal Bureau of Investigation
 FIFA	1	Football
 FTP	1	File Transfer Protocol
@@ -39,8 +79,14 @@ IP	1	Internet Protocol
 IRC	1	Internet Relay Chat
 ISBN	1	International Serial Book Number
 IT	1	Informaatio-Teknologia
+itse	1	self, as the reflexive pronoun, see VISK §769
+itse	2	self as reflexive pronoun (c.f. VISK § 104)
+ja	1	and, as cconj, see VISK § 817
+jos	1	if, as sconj, see VISK § 818
+kanssa	1	with something, adposition with genitive complement
 KHO	1	Korkein Hovi-Oikeus
 KOP	1	Kansallis-Osake-Pankki
+kun	1	when, as sconj, see VISK § 818
 lehtiö-pc	1	Personal Computer
 media-pc	1	Personal Computer
 MTV	1	Music TeleVision
@@ -51,11 +97,12 @@ NBA	1	National Basketball Association
 netti-tv	1	Tele-visio
 NHL	1	National Hockey League
 NL	1	Neuvosto-Liitto
+n:o	1	abbreviation for number, chiefly europarl language etc.
 NPC	1	Non-Player Character
 OK	1	not pronounced in words
-oyj	1	Julkinen Osake-Yhtiö
-OY	1	Osake-Yhtiö
 oy	1	Osake-Yhtiö
+OY	1	Osake-Yhtiö
+oyj	1	Julkinen Osake-Yhtiö
 paneeli-pc	1	Personal Computer
 PDF	1	Portable Document Format
 pH	1	per Hydrogen
@@ -74,8 +121,8 @@ SPR	1	Suomen Punainen Risti
 SQL	1	Structured Query Language
 STT	1	Suomen Tieto-Toimisto
 SUL	1	Suomen Urheilu-Liitto
-TCP/IP	1	Transmission Control Protocol / Internet Protocol
 TCP	1	Transmission Control Protocol
+TCP/IP	1	Transmission Control Protocol / Internet Protocol
 TI	1	Texas Instruments
 TM	1	Tekniikan Maailma
 TPS	1	Turun Pallo-Seura
@@ -83,6 +130,7 @@ TS	1	Turun Sanomat
 tv	1	tele-visio
 URL	1	Uniform Resource Locator
 USA	1	United States of America
+vaan	1	but rather, as cconj, see VISK § 1106
 VIP	1	Very Important Person
 VR	1	Valtion Rautatiet
 VW	1	Volks Wagen

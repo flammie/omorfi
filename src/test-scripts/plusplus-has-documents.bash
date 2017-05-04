@@ -6,7 +6,7 @@ WORK=$(mktemp -d -t omorfi-validate-database.XXXXXXXXXX)
 echo checking for missing docs for omorfi++ in ${LEXFILE}...
 fgrep 'omorfi++' ${LEXFILE} | cut -f 1,2 > ${WORK}/keys
 sort < ${WORK}/keys > ${WORK}/lc-sort-keys
-cut -f 1,2 ${DOCFILE} | sort | uniq > ${WORK}/keys.$(basename $DOCFILE)
+cut -f 1,2 ${DOCFILE} | sort > ${WORK}/keys.$(basename $DOCFILE)
 comm -13 ${WORK}/keys.$(basename $DOCFILE) ${WORK}/lc-sort-keys > ${WORK}/missing-keys.$(basename $DOCFILE)
 while read k ; do
     echo MISSING $k is found in ${LEXFILE} but is not in $DOCFILE >> ${WORK}/fails.$(basename $DOCFILE)
