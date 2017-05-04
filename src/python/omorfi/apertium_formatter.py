@@ -53,6 +53,8 @@ class ApertiumFormatter(Formatter):
         "com",
         "cond",
         "conneg",
+        "cmp",
+        "cmp-split",
         "compound-only-L",
         "compound-R",
         "def",
@@ -184,10 +186,10 @@ class ApertiumFormatter(Formatter):
         "ARTWORK": "",
         "ARROW": "",
         "AUX": "vaux",
-        "B-": "",
+        "B-": "cmp-split",
         "B←": "compound-only-L",
         "B→": "compound-R",
-        "Bc": "+",
+        "Bc": "cmp>+",
         "BLACKLISTED": "use_blacklist",
         "CARDINAL": "card",
         "Ccmp": "com",
@@ -205,7 +207,7 @@ class ApertiumFormatter(Formatter):
         "COORDINATING": "cnjcoo",
         "Cpos": "pos",
         "Csup": "sup",
-        "CULTGRP": "",
+        "CULTGRP": "al",
         "Cva": "pprs",
         "DASH": "",
         "DECIMAL": "",
@@ -365,7 +367,7 @@ class ApertiumFormatter(Formatter):
         "FTB3man": "",
         ".": "",
         "XForeign": "use_foreign",
-        "X": "",
+        "X": "x",
         "": ""
     }
 
@@ -376,6 +378,11 @@ class ApertiumFormatter(Formatter):
                 continue
             elif ape.startswith('+'):
                 if not ape[ape.find('+'):]:
+                    just_fail("There are conflicting formattings in here! " +
+                              ape[ape.find('+'):] +
+                              " is not a valid apertium multichar_symbol!")
+            elif ape.endswith('+'):
+                if not ape[:ape.find('+')]:
                     just_fail("There are conflicting formattings in here! " +
                               ape[ape.find('+'):] +
                               " is not a valid apertium multichar_symbol!")
@@ -391,6 +398,8 @@ class ApertiumFormatter(Formatter):
                 return self.stuff2apertium[stuff]
             elif self.stuff2apertium[stuff].startswith('+'):
                 return (lexc_escape(self.stuff2apertium[stuff]) + '%>')
+            elif self.stuff2apertium[stuff].endswith('+'):
+                return ('%<' + lexc_escape(self.stuff2apertium[stuff]))
             else:
                 return ('%<' + lexc_escape(self.stuff2apertium[stuff]) + '%>')
         else:
