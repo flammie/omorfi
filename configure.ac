@@ -256,7 +256,7 @@ AS_IF([test "x$enable_voikko" = "xyes"],
       [AC_PATH_PROG([ZIP], [zip], [false])
        AS_IF([test "x$ZIP" = "xfalse"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
-AC_PATH_PROG([THEREARENOEASTEREGGS], [cowsay], [echo])
+AC_PATH_PROGS([THEREARENOEASTEREGGS], [toilet figlet banner cowsay], [echo])
 
 # require python for stuff
 AM_PATH_PYTHON([3.2])
