@@ -440,6 +440,7 @@ A/S	1	org
 ASA	1	org
 asentaja	1	title
 asessori	1	title
+Ashton	1	male
 asiamies	1	title
 asianajaja	1	title
 asikkalainen	1	inhabitant
@@ -555,6 +556,7 @@ bahrainilainen	1	country
 bahrainilainen	2	inhabitant
 bahrainilainen	3	country
 bahrainilainen	4	inhabitant
+Bailey	1	male
 balettineuvos	1	title
 bali	1	language
 BAM	1	currency
@@ -739,6 +741,7 @@ brittiläinen	2	inhabitant
 Brittiläiset Neitsytsaaret	1	country
 BRL	1	currency
 BRN	1	currency
+Brooklyn	1	female
 Bror	1	male
 BRR	1	currency
 brt	1	measure
@@ -749,6 +752,7 @@ bruneilainen	3	country
 bruneilainen	4	inhabitant
 Bruno	1	male
 Brynolf	1	male
+Bryson	1	male
 BRZ	1	currency
 brändöläinen	1	inhabitant
 brändöläinen	2	inhabitant
@@ -871,6 +875,7 @@ Clark	2	male
 Claude	1	male
 CLE	1	currency
 CLF	1	currency
+Clive	1	male
 clm	2	measure
 CLP	1	currency
 clx	2	measure
@@ -882,6 +887,7 @@ CNY	1	currency
 Co	1	org
 Co.	1	org
 Col$	1	currency
+Cole	1	male
 Conny	1	male
 cookinsaarelainen	1	country
 cookinsaarelainen	2	inhabitant
@@ -960,6 +966,7 @@ Daniela	1	female
 daPa	1	measure
 darad	2	measure
 dargi	1	language
+Darren	1	male
 das	2	measure
 daS	2	measure
 dasr	2	measure
@@ -985,6 +992,7 @@ DEM	1	currency
 den	2	measure
 Deniz	1	male
 Dennis	1	male
+Devon	1	male
 dF	2	measure
 DF	1	currency
 dg	1	measure
@@ -996,6 +1004,7 @@ Dick	1	male
 Dimitri	1	male
 dinaari	1	currency
 dinka	1	language
+Dion	1	male
 dipl.arkkit.	1	title
 dipl.ekon.	1	title
 dipl.ins.	1	title
@@ -1072,6 +1081,7 @@ dragsfjärdiläinen	1	inhabitant
 dragsfjärdiläinen	2	inhabitant
 drakma	1	currency
 dravidakieli	1	language
+Drew	1	male
 ds	1	measure
 dS	2	measure
 dsr	2	measure
@@ -1420,6 +1430,7 @@ F	1	measure
 F$	1	currency
 fA	1	measure
 Fabian	1	male
+Fabrice	1	male
 FaK	2	title
 FaL	2	title
 falklandinsaarelainen	1	country
@@ -2313,6 +2324,7 @@ Jean	1	male
 Jeanette	1	female
 Jean-Luc	1	male
 Jeff	1	male
+Jeffrey	1	male
 Jemen	1	country
 jemeniläinen	1	country
 jemeniläinen	2	inhabitant
@@ -4598,6 +4610,7 @@ Ole	1	male
 Olga	1	female
 Oliver	1	male
 Olivia	1	female
+Olivier	1	male
 Olle	1	male
 Olli	1	male
 Olof	1	male
@@ -4730,6 +4743,7 @@ palestiinalainen	2	inhabitant
 palestiinalainen	3	country
 palestiinalainen	4	inhabitant
 Palestiinalaisalue	1	country
+Palmer	1	male
 paltamolainen	1	inhabitant
 paltamolainen	2	inhabitant
 Pamela	1	female
@@ -5287,6 +5301,7 @@ reisjärvinen	2	inhabitant
 Reko	1	male
 rek.tn	2	measure
 Rene	1	male
+Renée	1	female
 renkolainen	1	inhabitant
 renkolainen	2	inhabitant
 renminbi	1	currency
@@ -5703,6 +5718,7 @@ Sfr	1	currency
 SGD	1	currency
 shambala	1	language
 shan	1	language
+Shannon	1	male
 shekeli	1	currency
 shillinki	1	currency
 SHO	1	title
@@ -5923,6 +5939,7 @@ Stina	1	female
 stm.	1	title
 STM	1	org
 STT	1	media
+Stuart	1	male
 Sture	1	male
 Styrbjörn	1	male
 su	1	time
@@ -6111,6 +6128,7 @@ taloust.	1	title
 taloustirehtööri	1	title
 Talvikki	1	female
 TaM	2	title
+Tamar	1	male
 Tamara	1	female
 tamašek	1	language
 tamazight	1	language

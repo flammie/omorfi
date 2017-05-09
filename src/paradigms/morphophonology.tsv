@@ -1696,6 +1696,7 @@ PRON_MONES	PRON	PRONOUN	45	None	False	strengthen	back	None	None	False	False
 PRON_MONI	PRON	PRONOUN	23	None	False	weaken	back	None	None	False	False
 PRON_MONIAS	PRON	PRONOUN	41	None	False	strengthen	back	None	None	False	False
 PRON_MONTA	PRON	PRONOUN	101	None	False	False	back	None	None	False	False
+PRON_MONTAKO	PRON	PRONOUN	101	None	False	False	back	None	None	False	False
 PRON_MUU	PRON	PRONOUN	18	None	False	weaken	back	u	None	False	False
 PRON_MUUAN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False
 PRON_MUUTAMA	PRON	PRONOUN	10	None	False	weaken	back	a	None	False	False
