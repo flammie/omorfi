@@ -2,6 +2,7 @@ lemma	homonym	doc
 ½	1	half
 ¼	1	quarter
 ¹	1	superscript one
+"	1	ASCII double quotation mark, still most common double quotation
 -	1	ASCII minus-hyphen, still most common dash
 '	1	ASCII single quotation mark, still most common single quotation
 :	1	colon
@@ -28,7 +29,6 @@ $	1	dollar
 ;	1	semicolon
 …	1	single symbol for ellipsis, rare but seen in some official corpora
 ²	1	superscript two
-"	1	ASCII double quotation mark, still most common double quotation
 "	2	ASCII double quotation mark, still most common double quotation
 !	2	exclamation mark
 ?	2	question mark
@@ -39,6 +39,7 @@ $	1	dollar
 ADSL	1	Asymmetric Digital Subscriber Line
 aina	2	always, as adverb
 API	1	Application Programming Interface
+asti	2	until, as adposition, complent is genitive
 atk	1	automaattinen tekstinkäsittely
 BBC	1	British Broadcasting Company
 BKT	1	Brutto-Kansan-Tuote
@@ -58,8 +59,11 @@ EEC	1	European Economy Council
 EKP	1	Euroopan Keskus-Pankki
 EMU	1	European Monetary Union
 ennen	2	before, as adposition, complement in partitive
+esim.	1	esimerkiksi, "ex." or for example
+ettei	1	compound of että+ei with inflection (technically part of the dictionary, but as a non-inflecting particle set)
 ETY	1	Euroopan Turvallisuus-Yhteisö
 EU	2	Euroopan Unioni
+euro	1	euro, european currency from 2001-
 Eurooppa	2	Europe, as proper noun for geographical area
 EY	2	Euroopan Yhteisö
 FBI	1	Federal Bureau of Investigation
@@ -89,6 +93,7 @@ KOP	1	Kansallis-Osake-Pankki
 kun	1	when, as sconj, see VISK § 818
 lehtiö-pc	1	Personal Computer
 media-pc	1	Personal Computer
+mm.	1	muun muassa, "incl." or among others
 MTV	1	Music TeleVision
 MTV3	1	Mainos-Tele-Visio
 NASA	1	National Air and Space A
@@ -103,6 +108,7 @@ OK	1	not pronounced in words
 oy	1	Osake-Yhtiö
 OY	1	Osake-Yhtiö
 oyj	1	Julkinen Osake-Yhtiö
+paitsi	1	except, as adpoistion, complement is partitive
 paneeli-pc	1	Personal Computer
 PDF	1	Portable Document Format
 pH	1	per Hydrogen
@@ -111,6 +117,7 @@ pinta-WWW	1	World Wide Web
 PPI	1	Points Per Inch
 PR	1	Public Relations
 RNA	1	Ribonucleic Acid
+s.	1	sivu, "p." or page
 SAK	1	Suomen Ammattiliittojen Keskusjärjestö
 SDP	1	Sosiali-Demokraattinen Puolue 
 SGML	1	Standardised General Markup Language
@@ -121,6 +128,7 @@ SPR	1	Suomen Punainen Risti
 SQL	1	Structured Query Language
 STT	1	Suomen Tieto-Toimisto
 SUL	1	Suomen Urheilu-Liitto
+takia	1	because of, as adpoistion, complement is genitive
 TCP	1	Transmission Control Protocol
 TCP/IP	1	Transmission Control Protocol / Internet Protocol
 TI	1	Texas Instruments
@@ -131,6 +139,7 @@ tv	1	tele-visio
 URL	1	Uniform Resource Locator
 USA	1	United States of America
 vaan	1	but rather, as cconj, see VISK § 1106
+vai	3	or, as cconj, used in contrastive position only
 VIP	1	Very Important Person
 VR	1	Valtion Rautatiet
 VW	1	Volks Wagen
@@ -145,4 +154,5 @@ WWW	1	World Wide Web
 XML	1	Extensible Markup Language
 Y2K	1	Year 2000
 YK	1	Yhdistyneet Kansakunnat
+ÄO	1	Älykkyysosamäärä
 ÄO	1	Älykkyysosamäärä
