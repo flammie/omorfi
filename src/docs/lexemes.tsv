@@ -1,5 +1,8 @@
-lemma	doc
+lemma	homonym	doc
 ADSL	Asymmetric Digital Subscriber Line
+aikaan	1	done, accomplished, verb complement kind of, e.g., saada aikaan
+aikaan	2	during (around), adposition with genitive complement, e.g., sen aikaan
+aikana	1	during (while), adposition with genitive complement, e.g., sen aikana
 API	Application Programming Interface
 atk	automaattinen tekstinkäsittely
 BBC	British Broadcasting Company
@@ -26,7 +29,7 @@ FBI	Federal Bureau of Investigation
 FIFA	Football
 FTP	File Transfer Protocol
 GM	General Motors
-HIFK	Helsingfors 
+HIFK	Helsingfors
 HIV	Human Immunodeficiency Virus
 HJK	Helsingin Jalkapallo-Klubi
 HKL	Helsingin Kaupungin Liikenne
@@ -65,7 +68,7 @@ PPI	Points Per Inch
 PR	Public Relations
 RNA	Ribonucleic Acid
 SAK	Suomen Ammattiliittojen Keskusjärjestö
-SDP	Sosiali-Demokraattinen Puolue 
+SDP	Sosiali-Demokraattinen Puolue
 SGML	Standardised General Markup Language
 SKDL	Suomen Kristillis-Demokraattien Liitto
 Skp	Suomen keskuspankki
