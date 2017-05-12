@@ -16151,7 +16151,6 @@ karkeapintainen	1	karkea{WB}pintainen
 karkeapuheinen	1	karkea{WB}puheinen
 karkearakeinen	1	karkea{WB}rakeinen
 karkearakenteinen	1	karkea{WB}rakenteinen
-karkearehu	1	karkea{WB}rehu
 karkearehu	2	karkea{WB}rehu
 karkeasanainen	1	karkea{WB}sanainen
 karkeasyinen	1	karkea{WB}syinen
@@ -46003,7 +46002,6 @@ raitiovaunuliikenne	1	raitio{WB}vaunu{WB}liikenne
 raitiovaunulinja	1	raitio{WB}vaunu{WB}linja
 raitiovaunupysäkki	1	raitio{WB}vaunu{WB}pysäkki
 raitishenkinen	1	raitis{WB}henkinen
-raitisilma	1	raitis{WB}ilma
 raitisilma	2	raitis{WB}ilma
 raitisilmakuilu	1	raitisilma{WB}kuilu
 raitisilmasuodatin	1	raitis{WB}ilma{WB}suodatin
@@ -46528,9 +46526,7 @@ raskassarjalainen	1	raskas{WB}sarjalainen
 raskassoutuinen	1	raskas{WB}soutuinen
 raskassälpä	1	raskas{WB}sälpä
 raskastekoinen	1	raskas{WB}tekoinen
-raskasvesi	1	raskas{WB}vesi
 raskasvesi	2	raskas{WB}vesi
-raskasvety	1	raskas{WB}vety
 raskasvety	2	raskas{WB}vety
 raskaudenaika	1	raskauden{WB}aika
 raskaudenaikainen	1	raskauden{WB}aikainen
