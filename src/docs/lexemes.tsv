@@ -37,12 +37,28 @@ $	1	dollar
 ²	1	superscript two
 ³	1	superscript three
 ADSL	1	Asymmetric Digital Subscriber Line
-aikaan	1	done, accomplished, verb complement kind of, e.g., saada aikaan
-aikaan	2	during (around), adposition with genitive complement, e.g., sen aikaan
-aikana	1	during (while), adposition with genitive complement, e.g., sen aikana
-aina	2	always, as adverb
+aikaan	1	done, accomplished, verb complement kind of, e.g., "saada aikaan"
+aikaan	2	during (around), adposition with genitive complement, e.g., "sen aikaan"
+aikana	1	during (while), adposition with genitive complement, e.g., "sen aikana"
+aina	1	FIXME, adposition
+aina	2	always, as adverb, "aina mun pitää"
+ajallaan	1	FIXME, adposition
+ajallaan	2	in time, as adverb, "yritä tulla ajallaan"
+ajatuksissaan	1	in thought, as adverb, "olin ajaktusissaan ~ ajatuksissani", see VISK § 655
+ajatuksissaan	1	in undergarments, as adverb, "olin ajaktusissaan ~ ajatuksissani", see VISK § 655
+alapuolella	1	under, as adposition, genitive complement or possessive, "laiturin alapuolella"
+alapuolelle	1	to under, as adposition, genitive complement or possessive, "laiturin alapuolelle"
+alitse	1	via under, as adposition, genitive complement or possessive, "kölin alitse"
+alkupuolella	1	in the beginning, as adposition, genitive complement or possessive, "tarinan alkupuolella"
+alla	1	under, as adposition, genitive complement or possessive, "laiturin alla"
+alle	1	to under, as adposition, genitive complement or possessive, "laiturin alle"
+alta	1	from under, as adposition, genitive complement or possessive, "laiturin alta"
+alussa	1	in the beginning, as adposition, genitive complement or possessive, "tarinan alussa"
 API	1	Application Programming Interface
-asti	2	until, as adposition, complent is genitive
+asti	2	until, as adposition, complent is genitive, "loppuun asti"
+avulla	1	with help of, as adp, complement is genitive or possessive, "sen avulla"
+edessä	2	in front of, as adp, complement is genitive or possessive, "talon edessä"
+editse	1	via front of, as adp, complement is genitive or possessive, "talon editse"
 atk	1	automaattinen tekstinkäsittely
 BBC	1	British Broadcasting Company
 BKT	1	Brutto-Kansan-Tuote
@@ -63,7 +79,8 @@ EKP	1	Euroopan Keskus-Pankki
 eli	1	that is, then, sometimes also or, co-ordinating conjunction, "kissa eli eläin", "kissa eli koira"
 eli	2	so, discourse particle, to be mumbled turn-initially or pausing, "eli eli, mitäs sit"
 EMU	1	European Monetary Union
-ennen	2	before, as adposition, complement in partitive
+ennen	1	in the old times, as adverb, "ennen oli kaikki paremmin"
+ennen	2	before, as adposition, complement in partitive, "ennen kaikkea"
 esim.	1	esimerkiksi, "ex." or for example
 ettei	1	compound of että+ei with inflection (technically part of the dictionary, but as a non-inflecting particle set)
 että	1	that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature "tiesin, että on yö"
