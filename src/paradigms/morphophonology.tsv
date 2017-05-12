@@ -138,9 +138,9 @@ ADJ_ÄLLISTYNYT	ADJ	ADJECTIVE	47	None	False	strengthen	front	y	None	False	False
 ADJ_ÖYKKÄRI	ADJ	ADJECTIVE	6	None	False	weaken	front	None	None	False	False
 ADP_ALLA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_ALLE	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
-ADP_HYVILLÄÄN	ADP	PARTICLE	99	None	False	False	front	None	None	obligatory	True
-ADP_ILKOSILLAAN	ADP	PARTICLE	99	None	False	False	back	None	None	obligatory	True
-ADP_ISTUALLEEN	ADP	PARTICLE	99	None	False	False	back	None	None	obligatory	True
+ADV_HYVILLÄÄN	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True
+ADV_ILKOSILLAAN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
+ADV_ISTUALLEEN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ADP_KOTONA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_LISÄKSI	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADP_LÄHELLÄ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
