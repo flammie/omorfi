@@ -287,7 +287,6 @@ ahdashenkinen	1	ahdas{WB}henkinen
 ahdashenkisesti	1	ahdas{WB}henkisesti
 ahdashenkisyys	1	ahdas{WB}henkisyys
 ahdaskatseinen	1	ahdas{WB}katseinen
-ahdaskulmaglaukooma	1	ahdaskulma{WB}glaukooma
 ahdaskulmaglaukooma	1	ahdas{WB}kulma{WB}glaukooma
 ahdasmielinen	1	ahdas{WB}mielinen
 ahdasmielisesti	1	ahdas{WB}mielisesti
@@ -775,7 +774,6 @@ akromaatti	1	a{WB}kromaatti
 akromaattinen	1	a{WB}kromaattinen
 akromegalia	1	akro{WB}megalia
 akrylonitriili	1	akrylo{WB}nitriili
-akrylonitriili	1	akrylo{XB}nitriili
 akryyliamidi	1	akryyli{WB}amidi
 akryylihappo	1	akryyli{WB}happo
 akryylikuitu	1	akryyli{WB}kuitu
@@ -976,7 +974,6 @@ alavirta	1	ala{WB}virta
 alayksikkö	1	ala{WB}yksikkö
 alaääni	1	ala{WB}ääni
 albanian kieli	1	albanian kieli
-albatrossi	1	alba{WB}trossi
 aldehydialkoholi	1	aldehydi{WB}alkoholi
 aldehydiradikaali	1	aldehydi{WB}radikaali
 aldehydiryhmä	1	aldehydi{WB}ryhmä
@@ -1783,7 +1780,6 @@ angiinamyrkytys	1	angiina{WB}myrkytys
 angina pectoris	1	angina pectoris
 angioedeema	1	angio{WB}edeema
 angiogeneesi	1	angio{WB}geneesi
-angiogeneesi	1	angio{XB}geneesi
 angiografia	1	angio{WB}grafia
 angioneuroosi	1	angio{WB}neuroosi
 angioneuroottinen	1	angio{WB}neuroottinen
@@ -1943,7 +1939,6 @@ antidepressiivi	1	anti{WB}depressiivi
 antidiureetti	1	anti{WB}diureetti
 antielektroni	1	anti{WB}elektroni
 antiemeetti	1	anti{WB}emeetti
-antiemeetti	1	anti{XB}emeetti
 antiepilepti	1	anti{WB}epilepti
 antifeminismi	1	anti{WB}feminismi
 antifeministi	1	anti{WB}feministi
@@ -2523,7 +2518,6 @@ asetyylikloridi	1	asetyyli{WB}kloridi
 asetyylikysteiini	1	asetyyli{WB}kysteiini
 asetyyliradikaali	1	asetyyli{WB}radikaali
 asetyyliryhmä	1	asetyyli{WB}ryhmä
-asetyylisalisyylihappo	1	asetyyli{WB}salisyylihappo
 asetyylisalisyylihappo	1	asetyyli{WB}salisyyli{WB}happo
 asevalmistaja	1	ase{WB}valmistaja
 asevalvonta	1	ase{WB}valvonta
@@ -3047,7 +3041,6 @@ autonhuolto	1	auton{WB}huolto
 autonkuljettaja	1	auton{WB}kuljettaja
 autonkuljetusrekka	1	autonkuljetus{WB}rekka
 autonkuljetusvaunu	1	auton{WB}kuljetusvaunu
-autonomia	1	auton{WB}omia
 autonpyörä	1	auton{WB}pyörä
 autonrakennustekniikka	1	auton{WB}rakennustekniikka
 autonrengas	1	auton{WB}rengas
@@ -3210,7 +3203,6 @@ avioliittoneuvonta	1	avio{WB}liitto{WB}neuvonta
 avioliittopalatsi	1	avio{WB}liitto{WB}palatsi
 aviomies	1	avio{WB}mies
 aviomurha	1	avio{WB}murha
-avioniikka	1	avion{WB}iikka
 avionrikkoja	1	avion{WB}rikkoja
 avio-oikeus	1	avio-oikeus
 avio-onni	1	avio-onni
@@ -3344,7 +3336,6 @@ bantukieli	1	bantu{WB}kieli
 baptistikirkko	1	baptisti{WB}kirkko
 baptistisaarnaaja	1	baptisti{WB}saarnaaja
 baptistiseurakunta	1	baptisti{WB}seura{WB}kunta
-barbaari	1	bar{WB}baari
 barbituurihappo	1	barbituuri{WB}happo
 baritonilaulaja	1	baritoni{WB}laulaja
 baritonioboe	1	baritoni{WB}oboe
@@ -3826,7 +3817,6 @@ curryjauhe	1	curry{WB}jauhe
 currykana	1	curry{WB}kana
 currykastike	1	curry{WB}kastike
 currykeitto	1	curry{WB}keitto
-dadaismi	1	dada{WB}ismi
 dalmatiankoira	1	dalmatian{WB}koira
 daltepariininatrium	1	daltepariini{WB}natrium
 damaskiteräs	1	damaski{WB}teräs
@@ -6420,7 +6410,6 @@ ferrosyanidihappo	1	ferrosyanidi{WB}happo
 ferroyhdiste	1	ferro{WB}yhdiste
 fetajuusto	1	feta{WB}juusto
 fibrinogeeni	1	fibrino{WB}geeni
-fibrinogeeni	1	fibrino{XB}geeni
 fibroadenooma	1	fibro{WB}adenooma
 fibroblasti	1	fibro{WB}blasti
 fibromyalgia	1	fibro{WB}myalgia
@@ -6539,7 +6528,6 @@ fosfaattilannoite	1	fosfaatti{WB}lannoite
 fosfodiesteraasi	1	fosfodi{WB}esteraasi
 fosfolipaasi	1	fosfo{WB}lipaasi
 fosfolipidi	1	fosfo{WB}lipidi
-fosfolipidi	1	fosfo{XB}lipidi
 fosforihappo	1	fosfori{WB}happo
 fosforilannoite	1	fosfori{WB}lannoite
 fosforiloiste	1	fosfori{WB}loiste
@@ -6644,7 +6632,6 @@ gangsteritoiminta	1	gangsteri{WB}toiminta
 gansikloviiri	1	gansi{WB}kloviiri
 gastroduodeniitti	1	gastro{WB}duodeniitti
 gastroenteriitti	1	gastro{WB}enteriitti
-gastroenteriitti	1	gastro{XB}enteriitti
 gastroenterologi	1	gastro{WB}enterologi
 gastroenterologia	1	gastro{WB}enterologia
 gastroesofageaalinen	1	gastro{WB}esofageaalinen
@@ -6924,7 +6911,6 @@ haiallas	1	hai{WB}allas
 haihdutusjäähdytin	1	haihdutus{WB}jäähdytin
 haihtumismittari	1	haihtumis{WB}mittari
 haikala	1	hai{WB}kala
-haikara	1	hai{WB}kara
 haikaralintu	1	haikara{WB}lintu
 hailaji	1	hai{WB}laji
 hailinpyynti	1	hailin{WB}pyynti
@@ -6979,9 +6965,6 @@ hajakylvö	1	haja{WB}kylvö
 hajamielinen	1	haja{WB}mielinen
 hajamielisesti	1	haja{WB}mielisesti
 hajamielisyys	1	haja{WB}mielisyys
-hajanainen	1	haja{WB}nainen
-hajanaisesti	1	haja{WB}naisesti
-hajanaisuus	1	haja{WB}naisuus
 hajapoiminto	1	haja{WB}poiminto
 hajareisin	1	haja{WB}reisin
 hajarivi	1	haja{WB}rivi
@@ -7256,8 +7239,6 @@ halpahintainen	1	halpa{WB}hintainen
 halpajuusto	1	halpa{WB}juusto
 halpakorkoinen	1	halpa{WB}korkoinen
 halpalento	1	halpa{WB}lento
-halpamainen	1	halpa{WB}mainen
-halpamaisesti	1	halpa{WB}maisesti
 halpamyynti	1	halpa{WB}myynti
 halparakentaja	1	halpa{WB}rakentaja
 halpatavarakauppa	1	halpa{WB}tavarakauppa
@@ -8873,7 +8854,6 @@ hiekkasärkkä	1	hiekka{WB}särkkä
 Hiekkatie	1	Hiekka{WB}tie
 hiekkatörmä	1	hiekka{WB}törmä
 Hiekkotie	1	Hiekko{WB}tie
-hiekoitus	1	hie{WB}koitus
 hieneritys	1	hien{WB}eritys
 hienhaju	1	hien{WB}haju
 hienohelma	1	hieno{WB}helma
@@ -8889,7 +8869,6 @@ hienomekaanikko	1	hieno{WB}mekaanikko
 hienomekaaninen	1	hieno{WB}mekaaninen
 hienomekaniikka	1	hieno{WB}mekaniikka
 hienomotoriikka	1	hieno{WB}motoriikka
-hienonnin	1	hien{WB}onnin
 hienopaperi	1	hieno{WB}paperi
 hienopesu	1	hieno{WB}pesu
 hienopesuaine	1	hieno{WB}pesu{WB}aine
@@ -9883,7 +9862,6 @@ hullunmylly	1	hullun{WB}mylly
 hullunrohkea	1	hullun{WB}rohkea
 hulluruoho	1	hullu{WB}ruoho
 hulpioreuna	1	hulpio{WB}reuna
-hulttiomainen	1	hulttio{WB}mainen
 humalahakuinen	1	humala{WB}hakuinen
 humalajuominen	1	humala{WB}juominen
 humalankuivaamo	1	humalan{WB}kuivaamo
@@ -10103,7 +10081,6 @@ hurmoksenkaltainen	1	hurmoksen{WB}kaltainen
 hurmosliike	1	hurmos{WB}liike
 hurmostila	1	hurmos{WB}tila
 hurraaisänmaallisuus	1	hurraa{WB}isän{WB}maallisuus
-hurrikaani	1	hurri{WB}kaani
 hurrikaanilyhty	1	hurrikaani{WB}lyhty
 hurtanminttu	1	hurtan{WB}minttu
 huru-ukko	1	huru-ukko
@@ -10370,7 +10347,6 @@ hypotalamus	1	hypo{WB}talamus
 hypoteekkilaina	1	hypoteekki{WB}laina
 hypoteekkipankki	1	hypoteekki{WB}pankki
 hypotensiivinen	1	hypo{WB}tensiivinen
-hypotensiivinen	1	hypo{XB}tensiivinen
 hypotensio	1	hypo{WB}tensio
 hypoterminen	1	hypo{WB}terminen
 hypotoninen	1	hypo{WB}toninen
@@ -10472,7 +10448,6 @@ hyväntahtoisuus	1	hyvän{WB}tahtoisuus
 hyväntapainen	1	hyvän{WB}tapainen
 hyväntekeväinen	1	hyvän{WB}tekeväinen
 hyväntekeväisyys	1	hyvän{WB}tekeväisyys
-hyväntekeväisyys	1	hyvän{WB}tekevä{WB}isyys
 hyväntekeväisyysalbumi	1	hyväntekeväisyys{WB}albumi
 hyväntekeväisyysavustus	1	hyväntekeväisyys{WB}avustus
 hyväntekeväisyysjuhla	1	hyväntekeväisyys{WB}juhla
@@ -10562,7 +10537,6 @@ hyönteistuho	1	hyönteis{WB}tuho
 hyönteisvahinko	1	hyönteis{WB}vahinko
 hyötyajoneuvo	1	hyöty{WB}ajo{WB}neuvo
 hyötyeläin	1	hyöty{WB}eläin
-hyötyisä	1	hyöty{WB}isä
 hyötykasvi	1	hyöty{WB}kasvi
 hyötykasvuinen	1	hyöty{WB}kasvuinen
 hyötykuorma	1	hyöty{WB}kuorma
@@ -11886,7 +11860,6 @@ intergalaktinen	1	inter{WB}galaktinen
 interleukiini	1	inter{WB}leukiini
 interlineaarinen	1	inter{WB}lineaarinen
 intermodulaatio	1	inter{WB}modulaatio
-internationalismi	1	international{WB}ismi
 internationalismi	1	inter{WB}nationalismi
 internationalisti	1	inter{WB}nationalisti
 internetkahvila	1	internet{WB}kahvila
@@ -12945,7 +12918,6 @@ Joensuu	1	Joen{WB}suu
 joenuoma	1	joen{WB}uoma
 joenvarsi	1	joen{WB}varsi
 jogurttijäätelö	1	jogurtti{WB}jäätelö
-johanneksenleipäpuu	1	johanneksenleipä{WB}puu
 johanneksenleipäpuu	1	johanneksen{WB}leipä{WB}puu
 johanneksenleipäpuujauhe	1	johanneksenleipäpuu{WB}jauhe
 johanneksenleipäpuumakeinen	1	johanneksenleipäpuu{WB}makeinen
@@ -16757,7 +16729,6 @@ katkerosuola	1	katkero{WB}suola
 katkohengitys	1	katko{WB}hengitys
 katkokävely	1	katko{WB}kävely
 katkokäynti	1	katko{WB}käynti
-katkonainen	1	katko{WB}nainen
 katkoviiva	1	katko{WB}viiva
 katoalue	1	kato{WB}alue
 katoamistemppu	1	katoamis{WB}temppu
@@ -19976,7 +19947,6 @@ kitararausku	1	kitara{WB}rausku
 kitarasävellys	1	kitara{WB}sävellys
 kitarisa	1	kita{WB}risa
 kitarisatulehdus	1	kita{WB}risa{WB}tulehdus
-kitaristi	1	kita{WB}risti
 kitiinikuori	1	kitiini{WB}kuori
 kitiinipanssari	1	kitiini{WB}panssari
 kitkahäviö	1	kitka{WB}häviö
@@ -22526,7 +22496,6 @@ kukonlaulu	1	kukon{WB}laulu
 kukonpoika	1	kukon{WB}poika
 kukonpoikanen	1	kukon{WB}poikanen
 Kukuljärvi	1	Kukul{WB}järvi
-kulinaarinen	1	kulin{WB}aarinen
 kulissiavioliitto	1	kulissi{WB}avio{WB}liitto
 kulissientakainen	1	kulissien{WB}takainen
 kulissimaalari	1	kulissi{WB}maalari
@@ -23526,7 +23495,6 @@ kustavilaistuoli	1	kustavilais{WB}tuoli
 kustavilaistyyli	1	kustavilais{WB}tyyli
 kustavilaistyylinen	1	kustavilais{WB}tyylinen
 kutistekalvopakkaus	1	kutistekalvo{WB}pakkaus
-kutistuma	1	kutis{WB}tuma
 kutistumiskerroin	1	kutistumis{WB}kerroin
 kutistumisvara	1	kutistumis{WB}vara
 kutkalääke	1	kutka{WB}lääke
@@ -31121,7 +31089,6 @@ maksatäplä	1	maksa{WB}täplä
 maksavaltimo	1	maksa{WB}valtimo
 maksavuoka	1	maksa{WB}vuoka
 maksihame	1	maksi{WB}hame
-maksimaalinen	1	maksi{WB}maalinen
 maksimiannos	1	maksimi{WB}annos
 maksimiarvo	1	maksimi{WB}arvo
 maksimikohta	1	maksimi{WB}kohta
@@ -33158,7 +33125,6 @@ minigolf	1	mini{WB}golf
 minihame	1	mini{WB}hame
 minikokoinen	1	mini{WB}kokoinen
 minikoripallo	1	mini{WB}kori{WB}pallo
-minimaalinen	1	mini{WB}maalinen
 minimiaika	1	minimi{WB}aika
 minimiarvo	1	minimi{WB}arvo
 minimiehto	1	minimi{WB}ehto
@@ -34267,9 +34233,6 @@ mustikkasoppa	1	mustikka{WB}soppa
 mustikkasose	1	mustikka{WB}sose
 mustikkatyyppi	1	mustikka{WB}tyyppi
 mustuaislaajentuma	1	mustuais{WB}laajentuma
-mutageeni	1	muta{WB}geeni
-mutageeninen	1	muta{WB}geeninen
-mutageneesi	1	muta{XB}geneesi
 mutakerros	1	muta{WB}kerros
 mutakerrostuma	1	muta{WB}kerrostuma
 mutakuono	1	muta{WB}kuono
@@ -34293,7 +34256,6 @@ muukalaispassi	1	muukalais{WB}passi
 muukalaispelko	1	muukalais{WB}pelko
 muukalaisperäinen	1	muukalais{WB}peräinen
 muukalaistädyke	1	muukalais{WB}tädyke
-muukalaisuus	1	muu{WB}kalaisuus
 muukalaisviha	1	muukalais{WB}viha
 muukalaisvoittoinen	1	muukalais{WB}voittoinen
 muuliaasi	1	muuli{WB}aasi
@@ -34353,7 +34315,6 @@ muurinsärkijä	1	muurin{WB}särkijä
 muuripata	1	muuri{WB}pata
 muuriyrtti	1	muuri{WB}yrtti
 Muuruvesi	1	Muuru{WB}vesi
-muusata	1	muu{WB}sata
 muutoksenhakemus	1	muutoksen{WB}hakemus
 muutoksenhakija	1	muutoksen{WB}hakija
 muutoksenhaku	1	muutoksen{WB}haku
@@ -35547,7 +35508,6 @@ neurobiologi	1	neuro{WB}biologi
 neurobiologia	1	neuro{WB}biologia
 neuroblastooma	1	neuro{WB}blastooma
 neurodermatiitti	1	neuro{WB}dermatiitti
-neuroendokriininen	1	neuroendo{XB}kriininen
 neuroendokriininen	1	neuro{WB}endo{WB}kriininen
 neuroepiteeli	1	neuro{XB}epiteeli
 neurofibrooma	1	neuro{WB}fibrooma
@@ -35557,13 +35517,11 @@ neurofysiini	1	neuro{WB}fysiini
 neurofysiologi	1	neuro{WB}fysiologi
 neurofysiologia	1	neuro{WB}fysiologia
 neurogeeninen	1	neuro{WB}geeninen
-neurogeeninen	1	neuro{XB}geeninen
 neurogeneesi	1	neuro{XB}geneesi
 neurohormoni	1	neuro{WB}hormoni
 neurokirurgi	1	neuro{WB}kirurgi
 neurokirurgia	1	neuro{WB}kirurgia
 neurolepti	1	neuro{WB}lepti
-neurolepti	1	neuro{XB}lepti
 neurolingvisti	1	neuro{XB}lingvisti
 neurolingvistiikka	1	neuro{WB}lingvistiikka
 neuromuskulaarinen	1	neuro{WB}muskulaarinen
@@ -35578,7 +35536,6 @@ neuroradiologi	1	neuro{WB}radiologi
 neuroradiologia	1	neuro{WB}radiologia
 neuroregulaattori	1	neuro{WB}regulaattori
 neurotiede	1	neuro{WB}tiede
-neurotiede	1	neuro{XB}tiede
 neurotoksiini	1	neuro{WB}toksiini
 neurotoksinen	1	neuro{WB}toksinen
 neurovaskulaarinen	1	neuro{WB}vaskulaarinen
@@ -38480,7 +38437,6 @@ palavapensas	2	palava{WB}pensas
 palavarakkaus	2	palava{WB}rakkaus
 palavasieluinen	1	palava{WB}sieluinen
 palavatpensaat	1	palava{WB}tpensaat
-palaveri	1	pala{WB}veri
 palearktinen	1	pale{WB}arktinen
 paleltumavamma	1	paleltuma{WB}vamma
 paleltumisvamma	1	paleltumis{WB}vamma
@@ -39229,10 +39185,7 @@ paralingvistinen	1	para{WB}lingvistinen
 parallaksivirhe	1	parallaksi{WB}virhe
 paralleeliaksiooma	1	paralleeli{WB}aksiooma
 paralleelioppi	1	paralleeli{WB}oppi
-paramagneetti	1	param{WB}agneetti
-paramagneettinen	1	param{WB}agneettinen
 paramagneettinen	1	para{WB}magneettinen
-paramagnetismi	1	param{WB}agnetismi
 paramagnetismi	1	para{WB}magnetismi
 paramedikalisaatio	1	para{WB}medikalisaatio
 parametoksiamfetamiini	1	para{WB}metoksi{WB}amfetamiini
@@ -39258,7 +39211,6 @@ paraoranssi	1	para{WB}oranssi
 parapareesi	1	para{WB}pareesi
 paraplegia	1	para{WB}plegia
 paraproteinemia	1	para{WB}proteinemia
-parapsykologi	1	parap{WB}sykologi
 parapsykologi	1	para{WB}psykologi
 parapsykologia	1	para{WB}psykologia
 parapsykologinen	1	para{WB}psykologinen
@@ -39539,7 +39491,6 @@ patjapussi	1	patja{WB}pussi
 patjavarjo	1	patja{WB}varjo
 patoallas	1	pato{WB}allas
 patoaukko	1	pato{WB}aukko
-patogeneesi	1	pato{WB}geneesi
 patogeneesi	1	pato{XB}geneesi
 patoluukku	1	pato{WB}luukku
 patopainemoottori	1	patopaine{WB}moottori
@@ -40725,7 +40676,6 @@ pienoissukellusvene	1	pienois{WB}sukellusvene
 pienoistaide	1	pienois{WB}taide
 pienoistorni	1	pienois{WB}torni
 pienoisveistos	1	pienois{WB}veistos
-pienokainen	1	pien{WB}okainen
 pienokainen	2	pien{WB}okainen
 pienosakas	1	pien{WB}osakas
 pienpaine	1	pien{WB}paine
@@ -41543,7 +41493,6 @@ piparminttu	1	pipar{WB}minttu
 piparminttukaramelli	1	piparminttu{WB}karamelli
 piparminttumakeinen	1	piparminttu{WB}makeinen
 piparminttupastilli	1	piparminttu{WB}pastilli
-piparminttutee	1	piparminttu{WB}tee
 piparminttutee	1	pipar{WB}minttu{WB}tee
 piparminttuöljy	1	piparminttu{WB}öljy
 pipolakki	1	pipo{WB}lakki
@@ -42220,7 +42169,6 @@ polttoainesuodatin	1	polttoaine{WB}suodatin
 polttoainesäiliö	1	poltto{WB}aine{WB}säiliö
 polttohaudata	1	poltto{WB}haudata
 polttohautaus	1	poltto{WB}hautaus
-polttoitsemurha	1	poltto{WB}itsemurha
 polttoitsemurha	1	poltto{WB}itse{WB}murha
 polttojäte	1	poltto{WB}jäte
 polttokaasu	1	poltto{WB}kaasu
@@ -43367,7 +43315,8 @@ pullopuu	1	pullo{WB}puu
 pulloruokinta	1	pullo{WB}ruokinta
 pulloruokittu	1	pullo{WB}ruokittu
 pullotalo	1	pullo{WB}talo
-pulloveri	1	pullo{WB}veri
+pulloveri	1	pull{WB}overi
+pulloveri	2	pullo{WB}veri
 pullovesi	1	pullo{WB}vesi
 pulmakysymys	1	pulma{WB}kysymys
 pulmalelu	1	pulma{WB}lelu
@@ -47373,7 +47322,6 @@ rikkiviisas	2	rikki{WB}viisas
 rikkiviisaus	1	rikki{WB}viisaus
 rikkokasvi	1	rikko{WB}kasvi
 rikkomuksentekijä	1	rikkomuksen{WB}tekijä
-rikkonainen	1	rikko{WB}nainen
 rikkurityövoima	1	rikkuri{WB}työ{WB}voima
 rikoksensuosija	1	rikoksen{WB}suosija
 rikoksentekijä	1	rikoksen{WB}tekijä
@@ -48100,7 +48048,6 @@ ruiskupistooli	1	ruisku{WB}pistooli
 ruiskupuristaa	1	ruisku{WB}puristaa
 ruiskusuolata	1	ruisku{WB}suolata
 ruiskusuolaus	1	ruisku{WB}suolaus
-ruiskute	1	ruis{WB}kute
 ruiskutuskelpoinen	1	ruiskutus{WB}kelpoinen
 ruiskutusmoottori	1	ruiskutus{WB}moottori
 ruiskutuspumppu	1	ruiskutus{WB}pumppu
@@ -49172,7 +49119,6 @@ sacherkakku	1	sacher{WB}kakku
 sacherleivos	1	sacher{WB}leivos
 sadannespiste	1	sadannes{WB}piste
 sadanpäällikkö	1	sadan{WB}päällikkö
-sadanpäämies	1	sadan{WB}päämies
 sadanpäämies	1	sadan{WB}pää{WB}mies
 sadanpäämies	2	sadan{WB}pää{WB}mies
 sadasmiljoonasosa	1	sadas{WB}miljoonasosa
@@ -51005,7 +50951,6 @@ siirtokirjoitus	1	siirto{WB}kirjoitus
 siirtokunta	1	siirto{WB}kunta
 siirtokustannus	1	siirto{WB}kustannus
 siirtokuva	1	siirto{WB}kuva
-siirtolainen	1	siirto{WB}lainen
 siirtolaisasutus	1	siirtolais{WB}asutus
 siirtolaisvirta	1	siirtolais{WB}virta
 siirtolaite	1	siirto{WB}laite
@@ -53084,7 +53029,6 @@ spektrografia	1	spektro{WB}grafia
 spektroskooppi	1	spektro{WB}skooppi
 spektroskopia	1	spektro{WB}skopia
 spermapankki	1	sperma{WB}pankki
-spermatogeneesi	1	spermato{WB}geneesi
 spermatogeneesi	1	spermato{XB}geneesi
 spiraaligalaksi	1	spiraali{WB}galaksi
 spiraalivetoketju	1	spiraali{WB}vetoketju
@@ -53207,8 +53151,6 @@ subfertiili	1	sub{WB}fertiili
 subfertiliteetti	1	sub{WB}fertiliteetti
 subjektiosa	1	subjekti{WB}osa
 subjektisija	1	subjekti{WB}sija
-subjektivisti	1	subjekti{WB}visti
-subjektivistinen	1	subjekti{WB}vistinen
 subkapsulaarinen	1	sub{WB}kapsulaarinen
 subkliininen	1	sub{WB}kliininen
 subkortikaalinen	1	sub{WB}kortikaalinen
@@ -54049,7 +53991,6 @@ suoramainos	1	suora{WB}mainos
 suoramarkkinoija	1	suora{WB}markkinoija
 suoramarkkinointi	1	suora{WB}markkinointi
 suoramyynti	1	suora{WB}myynti
-suoranainen	1	suora{WB}nainen
 suoranaisesti	1	suora{WB}naisesti
 suoranokkainen	1	suora{WB}nokkainen
 suoraommel	2	suora{WB}ommel
@@ -55493,8 +55434,6 @@ säveltaso	1	sävel{WB}taso
 sävelteos	1	sävel{WB}teos
 säveltäjämestari	1	säveltäjä{WB}mestari
 sävyasteikko	1	sävy{WB}asteikko
-sävyisä	1	sävy{WB}isä
-sävyisästi	1	sävy{WB}isästi
 sävylasi	1	sävy{WB}lasi
 sävyposliini	1	sävy{WB}posliini
 sävytepesu	1	sävyte{WB}pesu
@@ -56242,7 +56181,6 @@ talidomidilapsi	1	talidomidi{WB}lapsi
 talikynttilä	1	tali{WB}kynttilä
 talinvuotosarveistuma	1	talinvuoto{WB}sarveistuma
 talirauhanen	1	tali{WB}rauhanen
-talismaani	1	talis{WB}maani
 talitiainen	1	tali{WB}tiainen
 talitintti	1	tali{WB}tintti
 taliöljy	1	tali{WB}öljy
@@ -57800,8 +57738,7 @@ terävänäköisesti	1	terävä{WB}näköisesti
 terävänäköisyys	1	terävä{WB}näköisyys
 teräväpiikkinen	1	terävä{WB}piikkinen
 teräväpiirteinen	1	terävä{WB}piirteinen
-teräväpiirtotelevisio	1	terävä{WB}piirto{WB}televisio
-teräväpiirtotelevisio	1	terävä{WB}piirto{WB}tele{WB}visio
+teräväpiirtotelevisio	1	terävä{WB}piirto{WB}tele{XB}visio
 teräväpäinen	1	terävä{WB}päinen
 teräväreunainen	1	terävä{WB}reunainen
 teräväsanainen	1	terävä{WB}sanainen
@@ -58260,8 +58197,6 @@ Tiilivääräntie	1	Tiiliväärän{WB}tie
 tiimalasi	1	tiima{WB}lasi
 tiimityö	1	tiimi{WB}työ
 tiineysaika	1	tiineys{WB}aika
-tiipii	1	tii{WB}pii
-tiirikka	1	tii{WB}rikka
 Tiisanoja	1	Tiisan{WB}oja
 tiiviskantinen	1	tiivis{WB}kantinen
 tiiviskorkkinen	1	tiivis{WB}korkkinen
@@ -61396,7 +61331,6 @@ ulkokuva	1	ulko{WB}kuva
 ulkokuvaus	1	ulko{WB}kuvaus
 ulkokynttilä	1	ulko{WB}kynttilä
 ulkokäymälä	1	ulko{WB}käymälä
-ulkolainen	1	ulko{WB}lainen
 ulkolaita	1	ulko{WB}laita
 ulkolaitamoottori	1	ulko{WB}laita{WB}moottori
 ulkolaji	1	ulko{WB}laji
@@ -61571,8 +61505,6 @@ ulosvedin	1	ulos{WB}vedin
 ultrakevyt	1	ultra{WB}kevyt
 ultrakonservatiivi	1	ultra{WB}konservatiivi
 ultralyhyt	1	ultra{WB}lyhyt
-ultramariini	1	ultra{WB}mariini
-ultramariini	2	ultra{WB}mariini
 ultramariininsininen	1	ultramariinin{WB}sininen
 ultramikroskooppi	1	ultra{WB}mikroskooppi
 ultramikroskooppinen	1	ultra{WB}mikroskooppinen
@@ -61622,9 +61554,6 @@ umpimurtuma	1	umpi{WB}murtuma
 umpimähkäinen	1	umpi{WB}mähkäinen
 umpimähkäisesti	1	umpi{WB}mähkäisesti
 umpimähkään	1	umpi{WB}mähkään
-umpinainen	1	umpi{WB}nainen
-umpinaisesti	1	umpi{WB}naisesti
-umpinaisuus	1	umpi{WB}naisuus
 umpiolasi	1	umpio{WB}lasi
 umpiolasi-ikkuna	1	umpio{WB}lasi-ikkuna
 umpiotölkki	1	umpio{WB}tölkki
@@ -61717,7 +61646,6 @@ universaaliaika	1	universaali{WB}aika
 universaalijoukko	1	universaali{WB}joukko
 universaalikoje	1	universaali{WB}koje
 universaalitiede	1	uni{WB}versaali{WB}tiede
-univormu	1	uni{WB}vormu
 univormupukuinen	1	uni{WB}vormu{WB}pukuinen
 unkarin kieli	1	unkarin kieli
 unkarinkielinen	1	unkarin{WB}kielinen
@@ -61784,7 +61712,6 @@ uranvalinta	1	uran{WB}valinta
 urapaikkaus	1	ura{WB}paikkaus
 uraputki	1	ura{WB}putki
 uraruuvi	1	ura{WB}ruuvi
-urasiili	1	ura{WB}siili
 urasuunnittelu	1	ura{WB}suunnittelu
 urbaanilegenda	1	urbaani{WB}legenda
 uretrografia	1	uretro{WB}grafia
@@ -62621,7 +62548,6 @@ vainoharha	1	vaino{WB}harha
 vainoharhainen	1	vaino{WB}harhainen
 vainohullu	1	vaino{WB}hullu
 vainohulluus	1	vaino{WB}hulluus
-vainolainen	1	vaino{WB}lainen
 vainovalkea	1	vaino{WB}valkea
 vainukoira	1	vainu{WB}koira
 vaippaeläin	1	vaippa{WB}eläin
@@ -66253,9 +66179,7 @@ virkaa toimittava	1	virkaa toimittava
 virka-aika	1	virka-aika
 virkaanasettajainen	1	virkaan{WB}asettajainen
 virkaanastujainen	1	virkaan{WB}astujainen
-virkaanastujaisesitelmä	1	virkaanastujais{WB}esitelmä
 virkaanastujaisesitelmä	1	virkaan{WB}astujais{WB}esitelmä
-virkaanastujaispuhe	1	virkaanastujais{WB}puhe
 virkaanastujaispuhe	1	virkaan{WB}astujais{WB}puhe
 virkaanastumispäivä	1	virkaan{WB}astumis{WB}päivä
 virka-apu	1	virka-apu
@@ -67820,7 +67744,6 @@ yhteenkasvettuma	1	yhteen{WB}kasvettuma
 yhteenkasvettuminen	1	yhteen{WB}kasvettuminen
 yhteenkuuluva	1	yhteen{WB}kuuluva
 yhteenkuuluvaisuus	1	yhteen{WB}kuuluvaisuus
-yhteenkuuluvaisuus	1	yhteen{WB}kuulu{WB}vaisuus
 yhteenkuuluvuudentunne	1	yhteen{WB}kuuluvuuden{WB}tunne
 yhteenkuuluvuus	1	yhteen{WB}kuuluvuus
 yhteenkytkentä	1	yhteen{WB}kytkentä
@@ -68072,7 +67995,6 @@ yksin tein	1	yksin tein
 yksinedustaja	1	yksin{WB}edustaja
 yksineläjä	1	yksin{WB}eläjä
 yksinhuoltaja	1	yksin{WB}huoltaja
-yksinhuoltajaisä	1	yksinhuoltaja{WB}isä
 yksinhuoltajaisä	1	yksin{WB}huoltaja{WB}isä
 yksinhuoltajaperhe	1	yksinhuoltaja{WB}perhe
 yksinhuoltajaäiti	1	yksinhuoltaja{WB}äiti
