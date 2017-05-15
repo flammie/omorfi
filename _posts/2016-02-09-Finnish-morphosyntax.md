@@ -141,3 +141,14 @@ characters will be used as a proper noun, and many of these found their way to o
 database. We have some manual annotations for worst overlaps, but it is always a good
 thing to keep in mind, that most words can be proper nouns, especially when they end
 in title-case position (however, some modern proper nouns are not even title-cased!).
+
+## Adposition or adverb?
+
+There is a large number of adpositions that can be treated as adverb, and vice versa. The
+rules for telling the two apart are not too clear in the end. The main test should be, an
+adposition has a compulsory nominal complement, and you should be able to tell what its case
+is, e.g. usually genitive or partitive, but some take other cases. Many adpositions can also
+have their possessive suffix as a complement, however, some lexemes with obvious possessive
+suffixes that could not be imagined as a noun complement must be adverbs. It is especially
+important when changing and adding ADV or ADP lexemes to document the rationale with example
+sentence and the description. These examples can be found in [TODO]
