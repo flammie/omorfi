@@ -47,6 +47,7 @@ ajallaan	2	in time, as adverb, "yritä tulla ajallaan"
 ajatuksissaan	1	in thought, as adverb, "olin ajatuksissaan ~ ajatuksissani", see VISK § 655
 alapuolella	1	under, as adposition, genitive complement or possessive, "laiturin alapuolella"
 alapuolelle	1	to under, as adposition, genitive complement or possessive, "laiturin alapuolelle"
+alapuolelta	1	from under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
 alas	1	to under, down, as adverb, "tule alas"
 alas	2	down (the road or such), as adposition, partitive complement or possessive, "alas tietä pitkin"
 ali	1	to / through underneath, as adverb, "täytyy mennä ali"
@@ -64,10 +65,8 @@ asemasta	1	instead, as adv, ??
 asemasta	2	instead of, as adposition, genitive complement or possessive, "tien asemasta", commonly used instead of 'asemesta'
 asemesta	2	instead of, as adposition, genitive complement or possessive, "tien asemesta", grammar recommends instead of 'asemasta'
 asti	2	until, as adposition, complent is genitive, "loppuun asti"
-avulla	1	with help of, as adp, complement is genitive or possessive, "sen avulla"
-edessä	2	in front of, as adp, complement is genitive or possessive, "talon edessä"
-editse	1	via front of, as adp, complement is genitive or possessive, "talon editse"
 atk	1	automaattinen tekstinkäsittely
+avulla	1	with help of, as adp, complement is genitive or possessive, "sen avulla"
 BBC	1	British Broadcasting Company
 BKT	1	Brutto-Kansan-Tuote
 BMW	1	Bayerische Motor W
@@ -82,6 +81,8 @@ dna	1	deoxyribonucleic acid
 DNA	1	Deoxyribo-Nucleic Acid
 DPI	1	Dots Per Inch
 DVD	1	Digital Versatile Disc
+edessä	2	in front of, as adp, complement is genitive or possessive, "talon edessä"
+editse	1	via front of, as adp, complement is genitive or possessive, "talon editse"
 EEC	1	European Economy Council
 EKP	1	Euroopan Keskus-Pankki
 eli	1	that is, then, sometimes also or, co-ordinating conjunction, "kissa eli eläin", "kissa eli koira"
@@ -109,6 +110,9 @@ HKL	1	Helsingin Kaupungin Liikenne
 HS	1	Helsingin Sanomat
 HTML	1	Hyper-Text Markup Language
 HTTP	1	Hyper-Text Transfer Protocol
+hännille	2	to end, tails, as adposition, genitive complement or possessive, "jonon hännille"
+hännillä	2	end, "tails", as adposition, genitive complement or possessive, "jonon hännillä"
+hänniltä	2	from end, tails, as adposition, genitive complement or possessive, "jonon hänniltä"
 IBM	1	International Business Machines
 internet-tv	1	Tele-Visio
 IP	1	Internet Protocol
@@ -125,6 +129,8 @@ joko	3	either, paired with tai in either-or structure, perhaps (this) co-ordinat
 jos	2	if, as sconj, "jos voisit jäädä", see VISK § 818
 jotta	1	so that, in order to, as sub-ordinating conjunction, "jotta pystyn valmistumaan",
 jotta	2	yota, noun prefix SI unit, rare
+jäljessä	2	behind, as adposition
+jäljestä	2	from behind, as adposition
 kanssa	1	with something, adposition with genitive complement, suffix-likey, "Pekan kanssa", "kanssani"
 kanssa	2	also as well, adverb, perhaps rather limited, "tuletko kanssa?"
 KHO	1	Korkein Hovi-Oikeus
@@ -169,6 +175,7 @@ NL	1	Neuvosto-Liitto
 n:o	1	abbreviation for number, chiefly europarl language etc.
 NPC	1	Non-Player Character
 OK	1	not pronounced in words
+ottamatta	1	excepting, as adposition, illative complement, mainly "lukuun ottamatta"
 oy	1	Osake-Yhtiö
 OY	1	Osake-Yhtiö
 oyj	1	Julkinen Osake-Yhtiö
@@ -177,6 +184,7 @@ paitsi	2	but not, as adverb, "jään paitsi"
 paitsi	3	except, as sub-ordinating conjunction, "kerroin kaiken muun, paitsi en totuutta" UD Finnish, see also VISK § 708 examples d)
 paneeli-pc	1	(Panel) Personal Computer??
 PDF	1	Portable Document Format
+perässä	2	behind, as adposition
 pH	1	per Hydrogen
 pien-pc	1	Personal Computer
 pinta-WWW	1	World Wide Web
@@ -190,6 +198,7 @@ SDP	1	Sosiali-Demokraattinen Puolue
 sekä	1	and too, coordinating conj, "kissat sekä koirat"
 SGML	1	Standardised General Markup Language
 sillä	1	because, subordinating conj, "sillä tiedän paremmin" (NB ambig with many se adessives)
+sisältä	2	from inside. as adposition, "talon sisältä"
 SKDL	1	Suomen Kristillis-Demokraattien Liitto
 Skp	1	Suomen keskuspankki
 SOK	1	Suomen Osuus-Kauppa
