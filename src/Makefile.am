@@ -1192,6 +1192,37 @@ generated/omorfi.generate.hfst: generated/temporary-omor.hyphenated.hfst  genera
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
+# word-boundary huphens
+generated/temporary-omor-guesser.hyphenated.hfst: generated/omorfi-omor-guesser.lexc.hfst \
+	generated/omorfi-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+# spelling variations
+generated/temporary-omor-guesser.relaxed.hfst: generated/temporary-omor-guesser.hyphenated.hfst \
+	generated/omorfi-sh.regex.hfst \
+	generated/omorfi-zh.regex.hfst \
+	generated/omorfi-orthographic-variations.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-orthographic-variations.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
+		$(HSUB) $(HFST_FLAGS) -f š -T generated/omorfi-sh.regex.hfst |\
+		$(HSUB) $(HFST_FLAGS) -f ž -T generated/omorfi-zh.regex.hfst -o $@
+
+# remove remaining morph boundaries at this point
+generated/temporary-omor-guesser.unbounded.hfst: generated/temporary-omor-guesser.relaxed.hfst |\
+	generated/omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+# create morphological analyzer
+generated/temporary.omor-guesser.hfst: generated/temporary-omor-guesser.unbounded.hfst
+	$(HINV) $(HFST_FLAGS) $< |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+# finalising
+generated/omorfi.guess.hfst: generated/temporary.omor-guesser.hfst
+	$(HF2F) $(HFST_FLAGS) -f olw -o $@ -i $<
+
 # }}}
 #
 # {{{APE compilation

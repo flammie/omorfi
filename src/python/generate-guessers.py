@@ -144,7 +144,9 @@ def main():
     if args.verbose:
         print("Creating Multichar_Symbols and Root")
     print(formatter.multichars_lexc(), file=args.output)
-    print(formatter.root_lexicon_lexc(), file=args.output)
+    print("LEXICON Root", file=args.output)
+    print("0 GUESSERS ;", file=args.output)
+
     # print stem parts
     for tsv_filename in args.refilenames:
         if args.verbose:

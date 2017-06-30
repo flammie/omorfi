@@ -108,7 +108,8 @@ class Omorfi:
             include['segment'] = True
             include['accept'] = True
         for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
-                      'hyphenate', 'segment', 'labelsegment']:
+                      'hyphenate', 'segment', 'labelsegment', 'guesser',
+                      'udpipe']:
             if ttype not in include:
                 include[ttype] = False
         his = None
@@ -165,6 +166,11 @@ class Omorfi:
                 print('segmenter', parts[0])
             self.segmenter = his.read()
             self.can_segment = True
+        elif parts[1] == 'guesser' and include['guesser']:
+            if self._verbosity:
+                print('guesser', parts[0])
+            self.guesser = his.read()
+            self.can_guess = True
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if self._verbosity:
                 print('labelsegmenter', parts[0])
@@ -217,6 +223,7 @@ class Omorfi:
 
     def load_udpipe(self, filename):
         if not self.can_udpipe:
+            print("importing udpipe failed, cannot load udpipe")
             return
         self.udpiper = Model.load(filename)
         self.udtokeniser = self.udpiper.newTokenizer(Model.DEFAULT)
@@ -405,6 +412,24 @@ class Omorfi:
             anals = [anal]
         return anals
 
+    def _guess_str(self, s):
+        token = (s, "")
+        return self._guess_token(token)
+
+    def _guess_token(self, token):
+        res = self.guesser.lookup(token[0])
+        for r in res:
+            r = (r[0] + '[GUESS=FSA][WEIGHT=%f]' %(r[1]), r[1], token[1])
+        return res
+
+    def guess(self, token):
+        guesses = None
+        if isinstance(token, str):
+            guesses = self._guess_str(token)
+        else:
+            guesse = self._guess_token(token)
+        return guesses
+
     def _lemmatise(self, token):
         res = self.lemmatiser.lookup(token)
         return res
@@ -452,6 +477,7 @@ class Omorfi:
         if accepts:
             accept = True
         return accept
+
 
 def main():
     """Invoke a simple CLI analyser."""
