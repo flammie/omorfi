@@ -125,27 +125,21 @@ class Omorfi:
         if len(parts) != 2:
             if self._verbosity:
                 print('not loaded', path)
-        elif not parts[0].startswith('omorfi'):
+        elif not parts[0] == 'omorfi':
             if self._verbosity:
                 print('not omorfi', path)
         elif parts[1] == 'analyse' and include['analyse']:
             if self._verbosity:
                 print('analyser', parts[0])
-            if parts[0].endswith('omor'):
-                self.analyser = his.read()
-                self.can_analyse = True
-                self.can_accept = True
-                self.can_lemmatise = True
-            elif self._verbosity:
-                print("unsupported analyser", parts[0])
+            self.analyser = his.read()
+            self.can_analyse = True
+            self.can_accept = True
+            self.can_lemmatise = True
         elif parts[1] == 'generate' and include['generate']:
             if self._verbosity:
                 print('generator', parts[0])
-            if parts[0].endswith('omor'):
-                self.generator = his.read()
-                self.can_generate = True
-            elif self._verbosity:
-                print("unsupported generater", parts[0])
+            self.generator = his.read()
+            self.can_generate = True
         elif parts[1] == 'accept' and include['accept']:
             if self._verbosity:
                 print('acceptor', parts[0])
@@ -222,9 +216,10 @@ class Omorfi:
                 print("broken HFST", filename, file=stderr)
 
     def load_udpipe(self, filename):
-        if not can_udpipe:
+        if not self.can_udpipe:
             return
-        udpiper = Model.load(filename)
+        self.udpiper = Model.load(filename)
+        self.udtokeniser = self.udpiper.newTokenizer(Model.DEFAULT)
 
     def _find_retoken_recase(self, token):
         if self.accept(token):
