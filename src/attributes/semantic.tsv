@@ -815,6 +815,7 @@ Carina	1	female
 Carita	1	female
 Carl-Henrik	1	male
 Carl-Johan	1	male
+Carlo	1	male
 Carola	1	female
 Carolina	1	female
 Caspian	1	male
@@ -860,6 +861,7 @@ Christel	1	female
 Christer	1	male
 Christian	1	male
 Christina	1	female
+Christine	1	female
 Christoff	1	male
 Christoffer	1	male
 Christopher	1	male
@@ -1588,7 +1590,8 @@ GEL	1	currency
 Georg	1	male
 George	1	male
 georgia	1	language
-Georgia	1	country
+Georgia	1	female
+Georgia	2	country
 georgialainen	1	country
 georgialainen	2	inhabitant
 georgialainen	3	country
@@ -1818,6 +1821,7 @@ hC	1	measure
 h°C	2	measure
 hcd	1	measure
 Heard and McDonaldinsaaret	1	country
+Heather	1	female
 Hedda	1	female
 Hedvig	1	female
 heetti	1	language
@@ -3920,6 +3924,7 @@ Matleena	1	female
 matr.	1	title
 matruusi	1	title
 Mats	1	male
+Matthias	1	male
 Matti	1	male
 Mattias	1	male
 Mattias	2	male
@@ -4461,6 +4466,8 @@ Niklas	1	male
 Niklas	2	male
 Niko	1	male
 Nikodemus	1	male
+Nikola	3	male
+Nikola	4	female
 Nikolai	1	male
 Nikolas	1	male
 Nikolas	2	male
@@ -5892,6 +5899,7 @@ soninke	1	language
 Sonja	1	female
 sonkajärveläinen	1	inhabitant
 sonkajärveläinen	2	inhabitant
+Sophia	1	female
 sorani	1	language
 sorbi	1	language
 sorbikieli	1	language
@@ -6231,6 +6239,7 @@ Terhi-Elina	1	female
 Terhikki	1	female
 Terho	1	male
 Tero	1	male
+Terry	1	male
 Terttu	1	female
 Tervareitti	1	media
 terveydenh.	1	title

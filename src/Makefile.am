@@ -133,9 +133,9 @@ FTB1_AUTOMATA=generated/omorfi-ftb1.analyse.hfst
 
 endif
 if WANT_OMOR
-OMOR_AUTOMATA=generated/omorfi-omor.analyse.hfst \
-			  generated/omorfi-omor_recased.analyse.hfst \
-			  generated/omorfi-omor.generate.hfst
+OMOR_AUTOMATA=generated/omorfi.analyse.hfst \
+			  generated/omorfi_recased.analyse.hfst \
+			  generated/omorfi.generate.hfst
 OMOR_GENERATED=generated/omorfi-omor.lexc \
 			   generated/omorfi-omor.reweight \
 			   generated/omorfi-omor-tests.yaml \
@@ -709,7 +709,7 @@ generated/omorfi-ftb3.generate.hfst: generated/temporary-ftb3.hyphenated.hfst \
 # Convert omorfi to tropical format via sfst format in order
 # to get rid of weights and add optional upper casing for all
 # words.
-generated/ftb1-morphology.omor.hfst: generated/omorfi-omor.analyse.hfst generated/ftb1-capitalize.regex.hfst
+generated/ftb1-morphology.omor.hfst: generated/omorfi.analyse.hfst generated/ftb1-capitalize.regex.hfst
 	hfst-fst2fst -S $< | \
 	hfst-fst2fst -t | \
 	hfst-compose -1 generated/ftb1-capitalize.regex.hfst | \
@@ -1178,19 +1178,50 @@ generated/temporary.omor.hfst: generated/temporary-omor.unbounded.hfst
 		$(HMIN) $(HFST_FLAGS) > $@
 
 # finalising
-generated/omorfi-omor.analyse.hfst: generated/temporary.omor.hfst
+generated/omorfi.analyse.hfst: generated/temporary.omor.hfst
 	$(HF2F) $(HFST_FLAGS) -f olw -o $@ -i $<
 
-generated/omorfi-omor_recased.analyse.hfst: generated/temporary.omor.hfst generated/omorfi-recase-any.twolc.hfst
+generated/omorfi_recased.analyse.hfst: generated/temporary.omor.hfst generated/omorfi-recase-any.twolc.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HIC) $(HFST_FLAGS) - generated/omorfi-recase-any.twolc.hfst |\
 		$(HINV) $(HFST_FLAGS) |\
 		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
 # create generator from analyzer
-generated/omorfi-omor.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
+generated/omorfi.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
+
+# word-boundary huphens
+generated/temporary-omor-guesser.hyphenated.hfst: generated/omorfi-omor-guesser.lexc.hfst \
+	generated/omorfi-hyphens.twolc.hfst
+	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
+		$(HMIN) $(HFST_FLAGS) -o $@
+
+# spelling variations
+generated/temporary-omor-guesser.relaxed.hfst: generated/temporary-omor-guesser.hyphenated.hfst \
+	generated/omorfi-sh.regex.hfst \
+	generated/omorfi-zh.regex.hfst \
+	generated/omorfi-orthographic-variations.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-orthographic-variations.regex.hfst |\
+		$(HMIN) $(HFST_FLAGS) |\
+		$(HSUB) $(HFST_FLAGS) -f š -T generated/omorfi-sh.regex.hfst |\
+		$(HSUB) $(HFST_FLAGS) -f ž -T generated/omorfi-zh.regex.hfst -o $@
+
+# remove remaining morph boundaries at this point
+generated/temporary-omor-guesser.unbounded.hfst: generated/temporary-omor-guesser.relaxed.hfst |\
+	generated/omorfi-remove-boundaries.regex.hfst
+	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst  |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+# create morphological analyzer
+generated/temporary.omor-guesser.hfst: generated/temporary-omor-guesser.unbounded.hfst
+	$(HINV) $(HFST_FLAGS) $< |\
+		$(HMIN) $(HFST_FLAGS) > $@
+
+# finalising
+generated/omorfi.guess.hfst: generated/temporary.omor-guesser.hfst
+	$(HF2F) $(HFST_FLAGS) -f olw -o $@ -i $<
 
 # }}}
 #

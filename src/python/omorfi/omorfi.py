@@ -108,7 +108,8 @@ class Omorfi:
             include['segment'] = True
             include['accept'] = True
         for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
-                      'hyphenate', 'segment', 'labelsegment']:
+                      'hyphenate', 'segment', 'labelsegment', 'guesser',
+                      'udpipe']:
             if ttype not in include:
                 include[ttype] = False
         his = None
@@ -125,27 +126,21 @@ class Omorfi:
         if len(parts) != 2:
             if self._verbosity:
                 print('not loaded', path)
-        elif not parts[0].startswith('omorfi'):
+        elif not parts[0] == 'omorfi':
             if self._verbosity:
                 print('not omorfi', path)
         elif parts[1] == 'analyse' and include['analyse']:
             if self._verbosity:
                 print('analyser', parts[0])
-            if parts[0].endswith('omor'):
-                self.analyser = his.read()
-                self.can_analyse = True
-                self.can_accept = True
-                self.can_lemmatise = True
-            elif self._verbosity:
-                print("unsupported analyser", parts[0])
+            self.analyser = his.read()
+            self.can_analyse = True
+            self.can_accept = True
+            self.can_lemmatise = True
         elif parts[1] == 'generate' and include['generate']:
             if self._verbosity:
                 print('generator', parts[0])
-            if parts[0].endswith('omor'):
-                self.generator = his.read()
-                self.can_generate = True
-            elif self._verbosity:
-                print("unsupported generater", parts[0])
+            self.generator = his.read()
+            self.can_generate = True
         elif parts[1] == 'accept' and include['accept']:
             if self._verbosity:
                 print('acceptor', parts[0])
@@ -171,6 +166,11 @@ class Omorfi:
                 print('segmenter', parts[0])
             self.segmenter = his.read()
             self.can_segment = True
+        elif parts[1] == 'guesser' and include['guesser']:
+            if self._verbosity:
+                print('guesser', parts[0])
+            self.guesser = his.read()
+            self.can_guess = True
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if self._verbosity:
                 print('labelsegmenter', parts[0])
@@ -222,9 +222,11 @@ class Omorfi:
                 print("broken HFST", filename, file=stderr)
 
     def load_udpipe(self, filename):
-        if not can_udpipe:
+        if not self.can_udpipe:
+            print("importing udpipe failed, cannot load udpipe")
             return
-        udpiper = Model.load(filename)
+        self.udpiper = Model.load(filename)
+        self.udtokeniser = self.udpiper.newTokenizer(Model.DEFAULT)
 
     def _find_retoken_recase(self, token):
         if self.accept(token):
@@ -410,6 +412,24 @@ class Omorfi:
             anals = [anal]
         return anals
 
+    def _guess_str(self, s):
+        token = (s, "")
+        return self._guess_token(token)
+
+    def _guess_token(self, token):
+        res = self.guesser.lookup(token[0])
+        for r in res:
+            r = (r[0] + '[GUESS=FSA][WEIGHT=%f]' %(r[1]), r[1], token[1])
+        return res
+
+    def guess(self, token):
+        guesses = None
+        if isinstance(token, str):
+            guesses = self._guess_str(token)
+        else:
+            guesse = self._guess_token(token)
+        return guesses
+
     def _lemmatise(self, token):
         res = self.lemmatiser.lookup(token)
         return res
@@ -457,6 +477,7 @@ class Omorfi:
         if accepts:
             accept = True
         return accept
+
 
 def main():
     """Invoke a simple CLI analyser."""

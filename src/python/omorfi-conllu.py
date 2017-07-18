@@ -349,7 +349,7 @@ def main():
     if options.fsa:
         if options.verbose:
             print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True)
+        omorfi.load_from_dir(options.fsa, analyse=True, guesser=True)
     else:
         if options.verbose:
             print("reading language models in default dirs")
@@ -391,6 +391,10 @@ def main():
                     exit(1)
             surf = fields[1]
             anals = omorfi.analyse(surf)
+            if not anals or len(anals) == 0 or (len(anals) == 1 and
+                                                'UNKNOWN' in anals[0][0]):
+                unknowns += 1
+                anals = omorfi.guess(surf)
             if anals and len(anals) > 0:
                 if options.debug:
                     debug_analyses_conllu(
@@ -401,9 +405,6 @@ def main():
                 else:
                     print_analyses_conllu(index, surf, anals[0],
                                           options.outfile, options.hacks)
-            if not anals or len(anals) == 0 or (len(anals) == 1 and
-                                                'UNKNOWN' in anals[0][0]):
-                unknowns += 1
         elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
             # these comments I know need to be retained as-is
             print(line.strip(), file=options.outfile)
