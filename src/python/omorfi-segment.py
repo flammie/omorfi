@@ -266,10 +266,12 @@ def print_segments(segments, labelsegments, surf, outfile, options):
             sep = ''
             for segmenteds in segments:
                 print(sep, end='', file=outfile)
-                print(segment_splits(segmenteds[0], options), end='')
+                print(segment_splits(segmenteds[0], options), end='',
+                        file=outfile)
                 sep = options.show_ambiguous
         else:
-            print(segment_splits(segments[0][0], options), end='')
+            print(segment_splits(segments[0][0], options), end='',
+                    file=outfile)
         print(' ', end='', file=outfile)
     else:
         print("Missing segmenter", file=stderr)
