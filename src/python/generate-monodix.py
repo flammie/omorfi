@@ -23,6 +23,8 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 
 import argparse
 import csv
+import re
+
 from sys import exit, stderr
 
 from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
@@ -73,11 +75,15 @@ def main():
     print(format_monodix_sdefs(), file=args.output)
     # read from csv files
     print('  <pardefs>', file=args.output)
+    printed_pardefs = set()
     for tsv_filename in args.inflection:
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
         curr_pardef = ''
+        stacked_pardefs = list()
+        can_print = True
+        pardef_data = ''
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
@@ -91,19 +97,62 @@ def main():
                     continue
                 # format output
                 if curr_pardef != tsv_parts[0]:
-                    if curr_pardef != '':
-                        print('  </pardef>', file=args.output)
-                    print('  <pardef n="' +
-                          tsv_parts[0].lower().replace('_', '__') +
-                          '">', file=args.output)
+                    if curr_pardef != '' and pardef_data != '':
+                        pardef_data += '  </pardef>'
+                    if can_print:
+                        print(pardef_data, file=args.output)
+                        printed_pardefs.add(curr_pardef.lower().replace('_',
+                                '__'))
+                        pardef_data = ''
+                        can_print = True
+                    else:
+                        stacked_pardefs += [pardef_data]
+                        can_print = True
+                        pardef_data = ''
+                    pardef_data += '  <pardef n="' + \
+                          tsv_parts[0].lower().replace('_', '__') + \
+                          '">\n'
                     curr_pardef = tsv_parts[0]
-                print(format_monodix_pardef(tsv_parts), file=args.output)
-    print('  </pardef>', file=args.output)
+                pardef_data += format_monodix_pardef(tsv_parts)
+                for outlex in tsv_parts[3:]:
+                    if outlex.lower().replace('_', '__') not in printed_pardefs:
+                        can_print = False
+        break_out = False
+        while len(stacked_pardefs) > 0:
+            next_stack = stacked_pardefs
+            for pardef in stacked_pardefs:
+                pardef_orig = pardef
+                can_print = True
+                pardef_name = re.search('pardef n="([^"]*)"', pardef).group(1)
+                for outlex in re.finditer('<par n="([^"]*)"', pardef):
+                    if outlex.group(1) not in printed_pardefs:
+                        if break_out:
+                            pardef = pardef.replace('<par n="' +
+                                    outlex.group(1) + '"/>',
+                                    '<!-- loop: ' +
+                                    outlex.group(1).replace("_", "@") +
+                                    '-->')
+                            print("removed ", outlex.group(1), "from",
+                                    pardef_name, "to resolve a loop")
+                        else:
+                            can_print = False
+                if can_print:
+                    print(pardef, file=args.output)
+                    printed_pardefs.add(pardef_name)
+                    next_stack.remove(pardef_orig)
+                    break_out = False
+            if len(next_stack) == len(stacked_pardefs):
+                break_out = True
+            else:
+                stacked_pardefs = next_stack
     for tsv_filename in args.stemparts:
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
         curr_pardef = ''
+        stacked_pardefs = list()
+        can_print = True
+        pardef_data = ''
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
@@ -118,15 +167,54 @@ def main():
                     continue
                 # format output
                 if curr_pardef != tsv_parts[0]:
-                    if curr_pardef != '':
-                        print('  </pardef>', file=args.output)
-                    print('  <pardef n="' +
-                          tsv_parts[0].lower().replace('_', '__') +
-                          '">', file=args.output)
+                    if curr_pardef != '' and pardef_data != '':
+                        pardef_data += '  </pardef>'
+                    if can_print:
+                        print(pardef_data, file=args.output)
+                        printed_pardefs.add(curr_pardef.lower().replace('_',
+                            '__'))
+                        pardef_data = ''
+                        can_print = True
+                    else:
+                        stacked_pardefs += [pardef_data]
+                        can_print = True
+                        pardef_data = ''
+                    pardef_data += '  <pardef n="' + \
+                          tsv_parts[0].lower().replace('_', '__') + \
+                          '">\n'
                     curr_pardef = tsv_parts[0]
-                print(format_monodix_pardef(tsv_parts), file=args.output)
-                tsv_line = tsv_file.readline()
-    print('  </pardef>', file=args.output)
+                pardef_data += format_monodix_pardef(tsv_parts)
+                for outlex in tsv_parts[3:]:
+                    if outlex.lower().replace('_', '__') not in printed_pardefs:
+                        can_print = False
+        break_out = False
+        while len(stacked_pardefs) > 0:
+            next_stack = stacked_pardefs
+            for pardef in stacked_pardefs:
+                pardef_orig = pardef
+                can_print = True
+                pardef_name = re.search('pardef n="([^"]*)"', pardef).group(1)
+                for outlex in re.finditer('<par n="([^"]*)"', pardef):
+                    if outlex.group(1) not in printed_pardefs:
+                        if break_out:
+                            pardef = pardef.replace('<par n="' +
+                                    outlex.group(1) + '"/>',
+                                    '<!-- loop: ' +
+                                    outlex.group(1).replace("_", "@") +
+                                    '-->')
+                            print("removed ", outlex.group(1), "from",
+                                    pardef_name, "to resolve a loop")
+                        else:
+                            can_print = False
+                if can_print:
+                    print(pardef, file=args.output)
+                    printed_pardefs.add(pardef_name)
+                    next_stack.remove(pardef_orig)
+                    break_out = False
+            if len(next_stack) == len(stacked_pardefs):
+                break_out = True
+            else:
+                stacked_pardefs = next_stack
     print('  </pardefs>', file=args.output)
     print('  <section id="main" type="standard">', file=args.output)
     for tsv_filename in args.master:

@@ -31,6 +31,7 @@ monodix_sdefs = {
     'actv',
     'ade',
     'adj',
+    'adv',
     'agent',
     'all',
     'ant',
@@ -86,7 +87,7 @@ monodix_sdefs = {
     'pp',
     'pprs',
     'pr',
-    'pres',
+    'pri',
     'prn',
     'pxpl1',
     'pxpl2',
@@ -102,7 +103,7 @@ monodix_sdefs = {
     'top',
     'tra',
     'vblex',
-    'ND'}
+    'ND', 'ERROR'}
 
 stuff2monodix = {
     "Aiden": "",
@@ -173,35 +174,35 @@ stuff2monodix = {
     "DECIMAL": "",
     "DEMONSTRATIVE": "dem",
     "DIGIT": "",
-    "Dinen": "+inen<adj>",
-    "Din": "+in<n>",
-    "Dja": "+ja<n>",
-    "Dmaisilla": "+maisilla<adv>",
-    "Dma": "+ma<n>",
-    "Dmaton": "+maton<adj>",
-    "Dminen": "+minen<n>",
-    "Dmainen": "+mainen<adj>",
-    "Dnen": "+nen<n>",
-    "Dllinen": "+llinen<n>",
-    "Dmpi": "+mpi<adj>",
-    "Dnut": "+nut<adj>",
-    "Dhko": "+hko<adj>",
-    "Disa": "+isa<adj>",
-    "Dtar": "+tar<n>",
-    "Dlainen": "+lainen<n>",
-    "Dton": "+ton<adj>",
-    "Dtuttaa": "+tuttaa<vblex>",
-    "Ds": "+s<n>",
-    "Dsti": "+sti<adv>",
-    "Dtattaa": "+tattaa<vblex>",
-    "Dtatuttaa": "+tatuttaa<vblex>",
-    "Dtava": "+tava<adj>",
-    "Dttaa": "+ttaa<vblex>",
-    "Dttain": "+ttain<adv>",
-    "Dtu": "+tu<adj>",
-    "Du": "+u<n>",
-    "Duus": "+uus<n>",
-    "Dva": "+va<a>",
+    "Dinen": "+inen<adj",
+    "Din": "+in<n",
+    "Dja": "+ja<n",
+    "Dmaisilla": "+maisilla<adv",
+    "Dma": "+ma<n",
+    "Dmaton": "+maton<adj",
+    "Dminen": "+minen<n",
+    "Dmainen": "+mainen<adj",
+    "Dnen": "+nen<n",
+    "Dllinen": "+llinen<n",
+    "Dmpi": "+mpi<adj",
+    "Dnut": "+nut<adj",
+    "Dhko": "+hko<adj",
+    "Disa": "+isa<adj",
+    "Dtar": "+tar<n",
+    "Dlainen": "+lainen<n",
+    "Dton": "+ton<adj",
+    "Dtuttaa": "+tuttaa<vblex",
+    "Ds": "+s<n",
+    "Dsti": "+sti<adv",
+    "Dtattaa": "+tattaa<vblex",
+    "Dtatuttaa": "+tatuttaa<vblex",
+    "Dtava": "+tava<adj",
+    "Dttaa": "+ttaa<vblex",
+    "Dttain": "+ttain<adv",
+    "Dtu": "+tu<adj",
+    "Du": "+u<n",
+    "Duus": "+uus<n",
+    "Dva": "+va<adj",
     "EVENT": "",
     "FINAL-BRACKET": "rpar",
     "FINAL-QUOTE": "rquot",
@@ -378,6 +379,8 @@ def format_monodix_s(stuff):
         s = '<s n="ERROR"/>'
     if '><' in s:
         s = s.replace('><', '"/><s n="')
+    elif '<s n="+' in s:
+        s = s.replace('<s n="', '').replace('<', '<s n="')
     elif '"+"' in s:
         s = '+'
     elif '""' in s:
@@ -388,6 +391,8 @@ def format_monodix_s(stuff):
 
 
 def format_monodix_par(cont):
+    if cont.startswith("X_FORGN"):
+        return ''
     return '<par n="' + cont.lower().replace('_', '__') + '"/>'
 
 
@@ -407,12 +412,15 @@ def format_monodix_pardef(fields):
 
 
 def format_monodix_entry(wordmap):
-    e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;') + '">'
+    if wordmap['new_para'] == 'X_IGNORE':
+        return ''
+    e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;').replace('"',
+            '&quot;').replace("<", "&lt;") + '">'
     e += '<p><l>' + \
         wordmap['stub'].replace(word_boundary, '').replace(
-            '&', '&amp;') + '</l>'
+            '&', '&amp;').replace('<', '&lt;') + '</l>'
     e += '<r>'
-    e += wordmap['lemma'].replace('&', '&amp;')
+    e += wordmap['lemma'].replace('&', '&amp;').replace("<", "&lt;")
     e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
     e += '</r></p>'
     e += format_monodix_par(wordmap['new_para'])
