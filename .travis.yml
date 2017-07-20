@@ -3,6 +3,8 @@ language : generic
 before_install:
     - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
     - sudo apt-get install hfst python3-libhfst
+before_script:
+    - export PYTHON_PATH=$PYTHONPATH:/usr/lib/python3/dist-packages
 script:
     - ./autogen.sh
     - ./configure --enable-segmenter --enable-labeled-segments --enable-lemmatiser
