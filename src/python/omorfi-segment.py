@@ -231,34 +231,48 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         print(surf, end='|UNK ', file=outfile)
 
 
+def segment_splits(segments, options):
+    segmented = ''
+    splat = re.split("[{}]", segments)
+    for split in splat:
+        if split == 'MB':
+            if options.split_morphs:
+                segmented += options.segment_marker
+        elif split == 'WB':
+            if options.split_words:
+                segmented += options.segment_marker
+        elif split == 'wB':
+            if options.split_new_words:
+                segmented += options.segment_marker
+        elif split == 'DB':
+            if options.split_derivs:
+                segmented += options.segment_marker
+        elif split == 'XB':
+            if options.split_nonwords:
+                segmented += options.segment_marker
+        elif split == 'STUB':
+            pass
+        elif split == 'hyph?':
+            if options.split_words:
+                segmented += options.segment_marker
+        else:
+            segmented += split
+    return segmented
+
+
 def print_segments(segments, labelsegments, surf, outfile, options):
     if segments:
-        segmented = ''
-        splat = re.split("[{}]", segments[0][0])
-        for split in splat:
-            if split == 'MB':
-                if options.split_morphs:
-                    segmented += options.segment_marker
-            elif split == 'WB':
-                if options.split_words:
-                    segmented += options.segment_marker
-            elif split == 'wB':
-                if options.split_new_words:
-                    segmented += options.segment_marker
-            elif split == 'DB':
-                if options.split_derivs:
-                    segmented += options.segment_marker
-            elif split == 'XB':
-                if options.split_nonwords:
-                    segmented += options.segment_marker
-            elif split == 'STUB':
-                pass
-            elif split == 'hyph?':
-                if options.split_words:
-                    segmented += options.segment_marker
-            else:
-                segmented += split
-        print(segmented, end=' ', file=outfile)
+        if options.show_ambiguous:
+            sep = ''
+            for segmenteds in segments:
+                print(sep, end='', file=outfile)
+                print(segment_splits(segmenteds[0], options), end='',
+                        file=outfile)
+                sep = options.show_ambiguous
+        else:
+            print(segment_splits(segments[0][0], options), end='',
+                    file=outfile)
+        print(' ', end='', file=outfile)
     else:
         print("Missing segmenter", file=stderr)
         exit(1)
@@ -294,6 +308,8 @@ def main():
                    help="split on other boundaries")
     a.add_argument('--segment-marker', default='→ ←', metavar='SEG',
                    help="mark segment boundaries with SEG")
+    a.add_argument('--show-ambiguous', default=False, metavar='ASEP',
+                   help="separate ambiguous segmentations with SEG")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
