@@ -412,7 +412,7 @@ def format_monodix_pardef(fields):
 
 
 def format_monodix_entry(wordmap):
-    if wordmap['new_para'] == 'X_IGNORE':
+    if wordmap['new_para'] == 'X_IGNORE' or wordmap['lemma'] == ' ':
         return ''
     e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;').replace('"',
             '&quot;').replace("<", "&lt;") + '">'
