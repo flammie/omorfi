@@ -179,6 +179,12 @@ class Omorfi:
         elif self._verbosity:
             print('skipped', parts)
 
+    def _maybe_str2token(self, s):
+        if isinstance(s, str):
+            return (s, "")
+        else:
+            return s
+
     def load_from_dir(self, path=None, **include):
         """Load omorfi automata from given or known locations.
 
@@ -422,7 +428,19 @@ class Omorfi:
             r = (r[0] + '[GUESS=FSA][WEIGHT=%f]' %(r[1]), r[1], token[1])
         return res
 
+    def _guess_heuristic(self, token):
+        guess = (token[0], float('inf'), token[1])
+        if token[0][0].isupper() and len(token[0]) > 1:
+            guess = (token[0] + "[UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +
+                    "[WEIGHT=28021984]", 28021984, token[1])
+        else:
+            guess = (token[0] + "[UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +
+                    "[WEIGHT=28021984]", 28021984, token[1])
+        return [guess]
+
     def guess(self, token):
+        if not self.can_guess:
+            return self._guess_heuristic(self._maybe_str2token(token))
         guesses = None
         if isinstance(token, str):
             guesses = self._guess_str(token)

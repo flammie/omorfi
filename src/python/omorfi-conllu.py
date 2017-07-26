@@ -38,7 +38,7 @@ def get_last_feat(feat, anal):
 
 
 def get_last_feats(anal):
-    re_feats = re.compile("\[[^]]*\]")
+    re_feats = re.compile("\[[A-Z_]*=[^]]*\]")
     rvs = list()
     feats = re_feats.finditer(anal[0])
     for feat in feats:
