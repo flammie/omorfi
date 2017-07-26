@@ -452,5 +452,6 @@ def main():
     print_case_stats(open('cases.freqs', 'w'))
     exit(0)
 
+
 if __name__ == '__main__':
     main()

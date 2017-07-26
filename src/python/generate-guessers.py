@@ -89,7 +89,7 @@ def main():
     formatter = None
     if args.format == 'omor':
         formatter = OmorFormatter(args.verbose, new_para=False,
-                allo=False, props=False, sem=False)
+                                  allo=False, props=False, sem=False)
     elif args.format == 'ftb3':
         formatter = Ftb3Formatter(args.verbose)
     elif args.format == 'apertium':
@@ -107,10 +107,8 @@ def main():
     # check args
     if args.strip == '"' or args.strip == "'":
         quoting = csv.QUOTE_ALL
-        quotechar = args.strip
     else:
         quoting = csv.QUOTE_NONE
-        quotechar = None
     # setup files
     if args.verbose:
         print("Writing everything to", args.output.name)
@@ -125,7 +123,8 @@ def main():
         linecount = 0
         with open(tsv_filename, 'r', newline='') as tsvfile:
             tsv_reader = csv.DictReader(tsvfile, delimiter=args.separator,
-                    quoting=quoting, escapechar='\\', strict=True)
+                                        quoting=quoting, escapechar='\\',
+                                        strict=True)
             linecount = 0
             for tsv_parts in tsv_reader:
                 linecount += 1
@@ -179,7 +178,7 @@ def main():
                 # format output
                 if tsv_parts[0] not in deletions:
                     print("DATOISSA VIRHE!", tsv_parts[0], "not in",
-                            args.sdfilenames)
+                          args.sdfilenames)
                     continue
                 if len(tsv_parts) == 2:
                     print(formatter.guesser2lexc(

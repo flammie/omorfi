@@ -267,11 +267,11 @@ def print_segments(segments, labelsegments, surf, outfile, options):
             for segmenteds in segments:
                 print(sep, end='', file=outfile)
                 print(segment_splits(segmenteds[0], options), end='',
-                        file=outfile)
+                      file=outfile)
                 sep = options.show_ambiguous
         else:
             print(segment_splits(segments[0][0], options), end='',
-                    file=outfile)
+                  file=outfile)
         print(' ', end='', file=outfile)
     else:
         print("Missing segmenter", file=stderr)
@@ -325,7 +325,7 @@ def main():
         print("Could not load segmenter(s), re-compile them or use -f option")
         print()
         print("To compile segmenter, use --enable-segmenter, and/or",
-                "--enable-labeled-segments")
+              "--enable-labeled-segments")
         exit(1)
     if options.infile:
         infile = options.infile
@@ -367,6 +367,7 @@ def main():
                                options)
         print(file=outfile)
     exit(0)
+
 
 if __name__ == "__main__":
     main()

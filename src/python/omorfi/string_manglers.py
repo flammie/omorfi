@@ -54,7 +54,7 @@ def twolc_escape(s):
     return s
 
 
-def egrep2xerox(s, Multichars=None):
+def egrep2xerox(s, multichars=None):
     '''Convert POSIX extended regular expression to Xerox dialect'''
     # this is iterative hack for a small subset
     if '[' in s and ']' in s:
@@ -67,6 +67,7 @@ def egrep2xerox(s, Multichars=None):
     s = s.replace(".", "?")
     xre = ' '.join(s)
     return xre
+
 
 def regex_delete_surface(regex, deletion):
     if not deletion:
@@ -85,12 +86,12 @@ def regex_delete_surface(regex, deletion):
             resplit[-i] = resplit[-i] + ':0'
         else:
             print("DATOISSA VIRHE: ", resplit[-i], "!=", deletion[-i],
-                    "comparing", regex, "and", deletion)
+                  "comparing", regex, "and", deletion)
             resplit[-i] = resplit[-i] + ':0'
     return ' '.join(resplit)
 
-# generals
 
+# generals
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):
         fail_guess_because(wordmap, [], [suffix])
@@ -169,6 +170,7 @@ def strip_diacritics(s):
     '''Convert Unicode characters with diacritics to their plain variants.'''
     return ''.join(c for c in unicodedata.normalize('NFD', s)
                    if unicodedata.category(c) != 'Mn')
+
 
 r_consonant = r'[kptgbdsfhvjlrmnczwxq]'
 r_syllable = strip_diacritics(

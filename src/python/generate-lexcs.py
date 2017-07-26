@@ -73,10 +73,10 @@ def main():
                     choices=["FGK", "PROPN-BLOCKING", "NOUN-BLOCKING-PROPN",
                              "TOOSHORTFORCOMPOUND"])
     ap.add_argument("--include-origin", "-O", action="append", type=str,
-                    metavar="ORIGIN", 
+                    metavar="ORIGIN",
                     help="include lemmas from ORIGIN source",
                     choices=["kotus", "omorfi", "unihu", "finnwordnet",
-                        "fiwiktionary", "omorfi++"])
+                             "fiwiktionary", "omorfi++"])
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", "--one-file", "-1",
                     type=argparse.FileType("w"), required=True,

@@ -373,6 +373,7 @@ class LabeledSegmentsFormatter(Formatter):
         root = Formatter.root_lexicon_lexc(self)
         return root
 
+
 # self test
 if __name__ == '__main__':
     formatter = NoTagsFormatter()

@@ -290,7 +290,6 @@ class GiellaFormatter(Formatter):
                     "Dtuttaa": "+Der/tuttaa",
                     "Dlainen": "+Der/lainen",
                     "Dttain": "+Der/ttain",
-                    "Dttain": "+Der/tuttaa",
                     "Dtu": "+PrfPrc+Pass",
                     "Du": "+Der/u",
                     "Duus": "+Der/uus",

@@ -23,10 +23,10 @@
 import argparse
 from sys import exit
 
+from omorfi.apertium_formatter import ApertiumFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
 from omorfi.no_tags_formatter import NoTagsFormatter
 from omorfi.omor_formatter import OmorFormatter
-from omorfi.apertium_formatter import ApertiumFormatter
 from omorfi.settings import stuff_weights
 
 

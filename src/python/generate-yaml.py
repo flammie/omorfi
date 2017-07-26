@@ -26,8 +26,8 @@ import csv
 from sys import argv, exit, stderr
 from time import strftime
 
-from omorfi.omor_formatter import OmorFormatter
 from omorfi.apertium_formatter import ApertiumFormatter
+from omorfi.omor_formatter import OmorFormatter
 
 
 # standard UI stuff
@@ -57,8 +57,6 @@ def main():
                     "do not have SEPs")
     ap.add_argument("--strip", action="store",
                     metavar="STRIP", help="strip STRIP from fields before using")
-
-
     ap.add_argument("--format", "-f", action="store", default="omor",
                     help="use specific output format for lexc data",
                     choices=['omor', 'apertium'])
@@ -99,7 +97,7 @@ def main():
                 print('   "', tsv_parts[1], sep='', file=args.output,
                       end='')
                 print(formatter.analyses2lexc(tsv_parts[2],
-                                           args.format).replace('% ', ' '),
+                                              args.format).replace('% ', ' '),
                       file=args.output, end='')
                 print('": "', tsv_parts[0], '"', sep='', file=args.output)
     exit(0)

@@ -25,6 +25,7 @@ try:
 except ImportError:
     can_udpipe = False
 
+
 class Omorfi:
 
     """
@@ -425,17 +426,17 @@ class Omorfi:
     def _guess_token(self, token):
         res = self.guesser.lookup(token[0])
         for r in res:
-            r = (r[0] + '[GUESS=FSA][WEIGHT=%f]' %(r[1]), r[1], token[1])
+            r = (r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1]), r[1], token[1])
         return res
 
     def _guess_heuristic(self, token):
         guess = (token[0], float('inf'), token[1])
         if token[0][0].isupper() and len(token[0]) > 1:
             guess = (token[0] + "[UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +
-                    "[WEIGHT=28021984]", 28021984, token[1])
+                     "[WEIGHT=28021984]", 28021984, token[1])
         else:
             guess = (token[0] + "[UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +
-                    "[WEIGHT=28021984]", 28021984, token[1])
+                     "[WEIGHT=28021984]", 28021984, token[1])
         return [guess]
 
     def guess(self, token):
@@ -445,7 +446,7 @@ class Omorfi:
         if isinstance(token, str):
             guesses = self._guess_str(token)
         else:
-            guesse = self._guess_token(token)
+            guesses = self._guess_token(token)
         return guesses
 
     def _lemmatise(self, token):
@@ -528,6 +529,7 @@ def main():
                 print("\t", anal[0], sep='', end='')
             print()
     exit(0)
+
 
 if __name__ == "__main__":
     main()

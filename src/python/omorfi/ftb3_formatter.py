@@ -565,6 +565,7 @@ class Ftb3Formatter(Formatter):
             root += self.stuff2lexc('B→') + ':-   SUFFIX ;\n'
         return root
 
+
 # self test
 if __name__ == '__main__':
     formatter = Ftb3Formatter()

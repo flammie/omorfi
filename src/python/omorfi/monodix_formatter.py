@@ -415,7 +415,7 @@ def format_monodix_entry(wordmap):
     if wordmap['new_para'] == 'X_IGNORE' or wordmap['lemma'] == ' ':
         return ''
     e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;').replace('"',
-            '&quot;').replace("<", "&lt;") + '">'
+                                                                   '&quot;').replace("<", "&lt;") + '">'
     e += '<p><l>' + \
         wordmap['stub'].replace(word_boundary, '').replace(
             '&', '&amp;').replace('<', '&lt;') + '</l>'
@@ -426,6 +426,7 @@ def format_monodix_entry(wordmap):
     e += format_monodix_par(wordmap['new_para'])
     e += '</e>'
     return e
+
 
 # self test
 if __name__ == '__main__':

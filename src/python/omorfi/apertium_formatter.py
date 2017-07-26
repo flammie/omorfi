@@ -505,8 +505,9 @@ class ApertiumFormatter(Formatter):
 
     def root_lexicon_lexc(self):
         root = Formatter.root_lexicon_lexc(self)
-        root += '\t'.join(['0','SUFFIX',';']) + '\n'
+        root += '\t'.join(['0', 'SUFFIX', ';']) + '\n'
         return root
+
 
 # self test
 if __name__ == '__main__':

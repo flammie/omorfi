@@ -24,7 +24,6 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 import argparse
 import csv
 import re
-
 from sys import exit, stderr
 
 from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
@@ -102,7 +101,7 @@ def main():
                     if can_print:
                         print(pardef_data, file=args.output)
                         printed_pardefs.add(curr_pardef.lower().replace('_',
-                                '__'))
+                                                                        '__'))
                         pardef_data = ''
                         can_print = True
                     else:
@@ -110,8 +109,8 @@ def main():
                         can_print = True
                         pardef_data = ''
                     pardef_data += '  <pardef n="' + \
-                          tsv_parts[0].lower().replace('_', '__') + \
-                          '">\n'
+                        tsv_parts[0].lower().replace('_', '__') + \
+                        '">\n'
                     curr_pardef = tsv_parts[0]
                 pardef_data += format_monodix_pardef(tsv_parts)
                 for outlex in tsv_parts[3:]:
@@ -128,12 +127,12 @@ def main():
                     if outlex.group(1) not in printed_pardefs:
                         if break_out:
                             pardef = pardef.replace('<par n="' +
-                                    outlex.group(1) + '"/>',
-                                    '<!-- loop: ' +
-                                    outlex.group(1).replace("_", "@") +
-                                    '-->')
+                                                    outlex.group(1) + '"/>',
+                                                    '<!-- loop: ' +
+                                                    outlex.group(1).replace("_",
+                                                                            "@") + '-->')
                             print("removed ", outlex.group(1), "from",
-                                    pardef_name, "to resolve a loop")
+                                  pardef_name, "to resolve a loop")
                         else:
                             can_print = False
                 if can_print:
@@ -172,7 +171,7 @@ def main():
                     if can_print:
                         print(pardef_data, file=args.output)
                         printed_pardefs.add(curr_pardef.lower().replace('_',
-                            '__'))
+                                                                        '__'))
                         pardef_data = ''
                         can_print = True
                     else:
@@ -180,8 +179,8 @@ def main():
                         can_print = True
                         pardef_data = ''
                     pardef_data += '  <pardef n="' + \
-                          tsv_parts[0].lower().replace('_', '__') + \
-                          '">\n'
+                        tsv_parts[0].lower().replace('_', '__') + \
+                        '">\n'
                     curr_pardef = tsv_parts[0]
                 pardef_data += format_monodix_pardef(tsv_parts)
                 for outlex in tsv_parts[3:]:
@@ -198,12 +197,12 @@ def main():
                     if outlex.group(1) not in printed_pardefs:
                         if break_out:
                             pardef = pardef.replace('<par n="' +
-                                    outlex.group(1) + '"/>',
-                                    '<!-- loop: ' +
-                                    outlex.group(1).replace("_", "@") +
-                                    '-->')
+                                                    outlex.group(1) + '"/>',
+                                                    '<!-- loop: ' +
+                                                    outlex.group(1).replace("_",
+                                                                            "@") + '-->')
                             print("removed ", outlex.group(1), "from",
-                                    pardef_name, "to resolve a loop")
+                                  pardef_name, "to resolve a loop")
                         else:
                             can_print = False
                 if can_print:
