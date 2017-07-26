@@ -10,13 +10,14 @@ handling Finnish texts in a linguistically motivated manner. The main
 components of this repository are:
 
 1. _a lexical database_ containing hundreds of thousands of words (c.f.
-   [lexical statistics](Lexical-statistics))
+   [lexical statistics](pages/Lexical-statistics))
 2. a collection of _scripts_ to convert lexical database into formats used by
-   upstream NLP tools (c.f. [lexical processing](Database-processing))
+   upstream NLP tools (c.f. [lexical processing](pages/Database-processing))
 3. an _autotools setup_ to build and install (or package, or deploy): the
    scripts, the database, and simple APIs / convenience processing tools
-3. a collection of relatively _simple APIs_ for a selection of languages and
-   scripts to apply the NLP tools and access the database
+3. a collection of relatively _simple APIs_ with bindings for a selection of
+   programming languages and scripts to apply the NLP tools and access the
+   database
 
 The formats we produce are (links to free open source implementations
 included):
@@ -38,38 +39,39 @@ list of all pages on the left.
 
 Everyone should read at least versioning information and readme:
 
-1. [Versions and download info](meta/Releases.html)
+1. [Versions and download info](pages/Releases.html)
 1. [README](https://github.com/flammie/omorfi#omorfiopen-morphology-of-finnish)
 
 If you wish to use omorfi in a serious application you probably found out from
 the README that a python or java API is the way to go:
 
-1. [Python API](api/Python-API.html)
-1. [Java API](api/Java-API.html)
+1. [Python API](pages/Python-API.html)
+1. [Java API](pages/Java-API.html)
+1. [Bash API](pages/Bash-API.html)
 
-There's a mass of automatically generated statistics from each version of 
+There's a bunch of semi-automatically generated statistics from each version of
 omorfi:
 
-1. [Lexical statistics](stats/Lexical-statistics.html)
-1. [Coverage tests](stats/Coverages.html)
-1. [Missing word-forms by corpora](stats/CoveragesTop100Deltas.html)
-1. [Faithfulness tests](stats/Faithfulness-tests.html)
-1. [Speed](stats/Speed-tests.html)
-1. [Automata sizes](stats/Automata-sizes.html)
+1. [Lexical statistics](pages/Lexical-statistics.html)
+1. [Coverage tests](pages/Coverages.html)
+1. [Missing word-forms by corpora](pages/CoveragesTop100Deltas.html)
+1. [Faithfulness tests](pages/Faithfulness-tests.html)
+1. [Speed](pages/Speed-tests.html)
+1. [Automata sizes](pages/Automata-sizes.html)
 
 The design principles of morphological analysis have been changed a dozen of
 times to accommodate various applications:
 
-1. [Analysis tags](design/tag-formats.html)
-1. [Design "principles" for tags](design/Tagging-possibilities.html)
-1. [Internal keys and codes](design/Paradigms-and-stuffs.html)
+1. [Analysis tags](pages/tag-formats.html)
+1. [Design "principles" for tags](pages/Tagging-possibilities.html)
+1. [Internal keys and codes](pages/Paradigms-and-stuffs.html)
 
 More internal documentations:
 
-1. [Directory layout](design/Directory-layout.html)
-1. [Database struccture](design/Database-processing.html)
+1. [Directory layout](pages/Directory-layout.html)
+1. [Database struccture](pages/Database-processing.html)
 
-And more...
+And more... Perhaps see the [automatically generated link list](#navigation)
 
 ## Contact
 
@@ -79,11 +81,14 @@ are available for immediate chats ([Freenode webchat
 here](https://webchat.freenode.net/)). The google group discussion list
 omorfi-devel@groups.google.com ([Google groups web interface
 here](https://groups.google.com/forum/#!forum/omorfi-devel)) can also be used,
-it may require subscription but is very low volume. If, for some reason, you
-wish to discuss in private, authors’ private emails can be used as contact, but
-prefer public chats for general usage etc., questions as the archive of
-frequently asked questions will surely benefit everyone. For bug reports use
-the issue functionality on this site, or even pull requests.
+it may require subscription but is very low volume. Suggestions, bug reports,
+corrections and new lexical data can be sent using [github's omorfi issue
+tracker](//github.com/flammie/omorfi/issues).
+
+If, for some reason, you wish to discuss in private, authors’ private emails can
+be used as contact, but prefer public chats for general usage etc., questions as
+the archive of frequently asked questions will surely benefit everyone. For bug
+reports use the issue functionality on this site, or even pull requests.
 
 ## Alternatives of omorfi
 
