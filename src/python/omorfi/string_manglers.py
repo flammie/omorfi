@@ -27,6 +27,71 @@ from sys import stderr
 from .error_logging import fail_guess_because
 
 
+# Xerox stuff
+
+
+def lexc_escape(s):
+    '''Escape symbols that have special meaning in lexc.'''
+    s = s.replace("%", "__PERCENT__")
+    s = s.replace(" ", "% ")
+    s = s.replace("<", "%<")
+    s = s.replace(">", "%>")
+    s = s.replace("0", "%0")
+    s = s.replace("!", "%!")
+    s = s.replace(":", "%:")
+    s = s.replace('"', '%"')
+    s = s.replace(";", "%;")
+    s = s.replace("__PERCENT__", "%%")
+    return s
+
+
+def twolc_escape(s):
+    '''Escape symbols that have special meaning in twolc.'''
+    s = s.replace("%", "__PERCENT__")
+    for c in ' @<>0!:";_^(){}-[]/?+|&*=$,':
+        s = s.replace(c, "%" + c)
+    s = s.replace("%_%_PERCENT%_%_", "%%")
+    return s
+
+
+def egrep2xerox(s, multichars=None):
+    '''Convert POSIX extended regular expression to Xerox dialect'''
+    # this is iterative hack for a small subset
+    if '[' in s and ']' in s:
+        left_parts = s.split('[')
+        prefix = left_parts[0]
+        right_parts = ''.join(left_parts[1:]).split(']')
+        infix_class = right_parts[0]
+        suffix = ''.join(right_parts[1:])
+        s = prefix + '[' + '|'.join(infix_class) + ']' + suffix
+    s = s.replace(".", "?")
+    xre = ' '.join(s)
+    return xre
+
+
+def regex_delete_surface(regex, deletion):
+    if not deletion:
+        return regex
+    resplit = regex.split(' ')
+    for i in range(1, len(deletion) + 1):
+        if deletion[-i] == '0':
+            continue
+        elif i > len(resplit):
+            resplit = ['?:0'] + resplit
+        elif resplit[-i] == '?':
+            resplit[-i] = '?:0'
+        elif resplit[-i] == '-':
+            resplit[-i] = '%-:0'
+        elif deletion[-i] == resplit[-i]:
+            resplit[-i] = resplit[-i] + ':0'
+        else:
+            print("DATOISSA VIRHE: ", resplit[-i], "!=", deletion[-i],
+                  "comparing", regex, "and", deletion)
+            resplit[-i] = resplit[-i] + ':0'
+    return ' '.join(resplit)
+
+
+# generals
 def require_suffix(wordmap, suffix):
     if not wordmap['lemma'].endswith(suffix):
         fail_guess_because(wordmap, [], [suffix])
@@ -105,6 +170,7 @@ def strip_diacritics(s):
     '''Convert Unicode characters with diacritics to their plain variants.'''
     return ''.join(c for c in unicodedata.normalize('NFD', s)
                    if unicodedata.category(c) != 'Mn')
+
 
 r_consonant = r'[kptgbdsfhvjlrmnczwxq]'
 r_syllable = strip_diacritics(

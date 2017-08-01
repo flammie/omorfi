@@ -70,7 +70,13 @@ def main():
                     metavar="ILFILE", help="read lemmas to include from ILFILE")
     ap.add_argument("--exclude-blacklisted", "-B", action="append", type=str,
                     metavar="BLIST", help="exclude lemmas in BLIST blacklist",
-                    choices=["FGK", "PROPN-BLOCKING"])
+                    choices=["FGK", "PROPN-BLOCKING", "NOUN-BLOCKING-PROPN",
+                             "TOOSHORTFORCOMPOUND"])
+    ap.add_argument("--include-origin", "-O", action="append", type=str,
+                    metavar="ORIGIN",
+                    help="include lemmas from ORIGIN source",
+                    choices=["kotus", "omorfi", "unihu", "finnwordnet",
+                             "fiwiktionary", "omorfi++"])
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", "--one-file", "-1",
                     type=argparse.FileType("w"), required=True,
@@ -104,7 +110,7 @@ def main():
 
     formatter = None
     if args.format == 'omor':
-        formatter = OmorFormatter(args.verbose, new_para=args.omor_new_para,
+        formatter = OmorFormatter(args.verbose, newparas=args.omor_new_para,
                                   allo=args.omor_allo, props=args.omor_props, sem=args.omor_sem)
     elif args.format == 'ftb3':
         formatter = Ftb3Formatter(args.verbose)
@@ -177,15 +183,25 @@ def main():
                 # read data from database
                 wordmap = tsv_parts
                 # exclusions
+                if wordmap['new_para'] == 'X_IGNORE':
+                    continue
                 if args.exclude_pos:
                     if wordmap['pos'] in args.exclude_pos:
                         continue
                 if args.include_lemmas:
                     if wordmap['lemma'] not in lemmas:
                         continue
+                if args.include_origin:
+                    origins = wordmap['origin'].split('|')
+                    origin_ok = False
+                    for origin in origins:
+                        if origin in args.include_origin:
+                            origin_ok = True
+                    if not origin_ok:
+                        continue
                 if args.exclude_blacklisted:
                     if wordmap['blacklist'] in args.exclude_blacklisted:
-                        continue
+                        wordmap['new_para'] = 'XXX_BLACKLISTED_SINK'
                 # choose correct lexicon
                 incoming_lexicon = tsv_parts['upos']
                 if tsv_parts['is_suffix']:
@@ -211,10 +227,11 @@ def main():
                     print(formatter.wordmap2lexc(suffix),
                           file=args.output)
             for key, words in sorted(postponed_abbrs.items()):
-                print("\nLEXICON", key, "\n\n", file=args.output)
-                for word in words:
-                    print(formatter.wordmap2lexc(word),
-                          file=args.output)
+                if len(words) > 0:
+                    print("\nLEXICON", key, "\n\n", file=args.output)
+                    for word in words:
+                        print(formatter.wordmap2lexc(word),
+                              file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
     # print stem parts
@@ -241,9 +258,10 @@ def main():
                 pos = tsv_parts[0].split("_")[0]
                 if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
                                "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ", "X",
-                               "DIGITS", "CONJ", "SCONJ", "AUX", "DET"]:
+                               "DIGITS", "CCONJ", "SCONJ", "AUX", "DET"]:
                     print("Cannot deduce pos from incoming cont:",
-                          tsv_parts[0], "Skipping")
+                          tsv_parts[0])
+                    exit(1)
                     continue
                 if pos in args.exclude_pos:
                     continue
@@ -281,9 +299,10 @@ def main():
                 pos = tsv_parts[0].split("_")[0]
                 if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
                                "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ",
-                               "X", "DIGITS", "CONJ", "SCONJ"]:
+                               "X", "DIGITS", "CCONJ", "SCONJ"]:
                     print("Cannot deduce pos from incoming cont:",
-                          tsv_parts[0], "Skipping")
+                          tsv_parts[0])
+                    exit(1)
                     continue
                 if pos in args.exclude_pos:
                     continue

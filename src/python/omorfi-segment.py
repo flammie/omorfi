@@ -37,8 +37,8 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                            'SUPER', 'AUX', 'NUM', 'PRON', 'DET']:
                 allow_uppers = True
                 skiptag = split
-            elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CONJ',
-                           'SCONJ', 'CONJ|VERB', 'INTJ', 'SYM']:
+            elif split in ['ADV', 'ADP', 'X', 'PUNCT', 'CCONJ',
+                           'SCONJ', 'CCONJ|VERB', 'INTJ', 'SYM']:
                 allow_uppers = True
                 moses += nextsep + split
             elif split in ['PL', 'INS', 'INE', 'ELA',
@@ -161,7 +161,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         moses = re.sub(r"\|X\|NUM", r"X|NUM", moses)
         moses = re.sub(r"\|X-\|NUM", r"X-|NUM", moses)
         # e|CONJ|VERBmme
-        moses = re.sub(r"CONJ\|VERB", r"CONJVERB ", moses)
+        moses = re.sub(r"CCONJ\|VERB", r"CCONJVERB ", moses)
         # elin|NOUN tarvike ala|NOUN
         # kehitys|NOUN yhteis|NOUN työ mis|NOUNnisteri|NOUN nä|ESS
         # ulko|NOUN maalai|NOUN s|NOUN viha mielis|ADJ tä|PAR
@@ -231,34 +231,48 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         print(surf, end='|UNK ', file=outfile)
 
 
+def segment_splits(segments, options):
+    segmented = ''
+    splat = re.split("[{}]", segments)
+    for split in splat:
+        if split == 'MB':
+            if options.split_morphs:
+                segmented += options.segment_marker
+        elif split == 'WB':
+            if options.split_words:
+                segmented += options.segment_marker
+        elif split == 'wB':
+            if options.split_new_words:
+                segmented += options.segment_marker
+        elif split == 'DB':
+            if options.split_derivs:
+                segmented += options.segment_marker
+        elif split == 'XB':
+            if options.split_nonwords:
+                segmented += options.segment_marker
+        elif split == 'STUB':
+            pass
+        elif split == 'hyph?':
+            if options.split_words:
+                segmented += options.segment_marker
+        else:
+            segmented += split
+    return segmented
+
+
 def print_segments(segments, labelsegments, surf, outfile, options):
     if segments:
-        segmented = ''
-        splat = re.split("[{}]", segments[0][0])
-        for split in splat:
-            if split == 'MB':
-                if options.split_morphs:
-                    segmented += options.segment_marker
-            elif split == 'WB':
-                if options.split_words:
-                    segmented += options.segment_marker
-            elif split == 'wB':
-                if options.split_new_words:
-                    segmented += options.segment_marker
-            elif split == 'DB':
-                if options.split_derivs:
-                    segmented += options.segment_marker
-            elif split == 'XB':
-                if options.split_nonwords:
-                    segmented += options.segment_marker
-            elif split == 'STUB':
-                pass
-            elif split == 'hyph?':
-                if options.split_words:
-                    segmented += options.segment_marker
-            else:
-                segmented += split
-        print(segmented, end=' ', file=outfile)
+        if options.show_ambiguous:
+            sep = ''
+            for segmenteds in segments:
+                print(sep, end='', file=outfile)
+                print(segment_splits(segmenteds[0], options), end='',
+                      file=outfile)
+                sep = options.show_ambiguous
+        else:
+            print(segment_splits(segments[0][0], options), end='',
+                  file=outfile)
+        print(' ', end='', file=outfile)
     else:
         print("Missing segmenter", file=stderr)
         exit(1)
@@ -277,7 +291,8 @@ def main():
                    help="print segments into OUTFILE")
     a.add_argument('-O', '--output-format', metavar="OFORMAT",
                    help="format output suitable for OFORMAT",
-                   choices=["labels-tsv", "moses-factors", "segments"])
+                   required=True,
+                   choices=["moses-factors", "segments"])
     a.add_argument('--no-split-words', action="store_false", default=True,
                    dest="split_words",
                    help="split on word boundaries")
@@ -293,17 +308,25 @@ def main():
                    help="split on other boundaries")
     a.add_argument('--segment-marker', default='→ ←', metavar='SEG',
                    help="mark segment boundaries with SEG")
+    a.add_argument('--show-ambiguous', default=False, metavar='ASEP',
+                   help="separate ambiguous segmentations with SEG")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
         if options.verbose:
             print("Reading automata dir", options.fsa)
         omorfi.load_from_dir(options.fsa, segment=True,
-                             labelsegment=True)
+                             labelsegment=True, accept=True)
     else:
         if options.verbose:
             print("Searching for automata everywhere...")
-        omorfi.load_from_dir(labelsegment=True, segment=True)
+        omorfi.load_from_dir(labelsegment=True, segment=True, accept=True)
+    if not omorfi.can_segment:
+        print("Could not load segmenter(s), re-compile them or use -f option")
+        print()
+        print("To compile segmenter, use --enable-segmenter, and/or",
+              "--enable-labeled-segments")
+        exit(1)
     if options.infile:
         infile = options.infile
     else:
@@ -344,6 +367,7 @@ def main():
                                options)
         print(file=outfile)
     exit(0)
+
 
 if __name__ == "__main__":
     main()

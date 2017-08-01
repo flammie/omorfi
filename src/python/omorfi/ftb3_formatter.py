@@ -21,8 +21,8 @@
 
 from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
 from .formatter import Formatter
-from .lexc_formatter import lexc_escape
 from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
+from .string_manglers import lexc_escape
 
 
 class Ftb3Formatter(Formatter):
@@ -225,10 +225,20 @@ class Ftb3Formatter(Formatter):
                   "Dmaton": "% NegPrc",
                   "Dminen": "% N",
                   "Dmpi": "",
+                  "Dhko": "",
+                  "Dtar": "",
+                  "Dnen": "",
+                  "Dlainen": "% N",
+                  "Disa": "% N",
+                  "Dton": "% A",
+                  "Dllinen": "% A",
+                  "Cmainen": "% A",  # WHERE DOES IT COMER FROM???
+                  "Dmainen": "% A",
                   "Dnut": "% PrfPrc% Act",
                   "Ds": "",
                   "Dsti": "",
                   "Dtattaa": "",
+                  "Dtuttaa": "",
                   "Dtatuttaa": "",
                   "Dtava": "% PrsPrc% Pass",
                   "Dttaa": "",
@@ -257,6 +267,7 @@ class Ftb3Formatter(Formatter):
                   "INTERROGATIVE": "% Interr",
                   "INTJ": "% Interj",
                   "LATIVE": "% Lat",
+                  "LEMMA-END": "",
                   "LEMMA-START": "",
                   "LOCATIVE": "% Ess",
                   "MULTIPLICATIVE": "",
@@ -384,7 +395,7 @@ class Ftb3Formatter(Formatter):
                 fail_formatting_missing_for(stuff, "ftb3.1")
             return ""
 
-    def analyses2lexc(self, anals):
+    def analyses2lexc(self, anals, surf):
         """Convert omor analyses to FTB3 lexc format.
 
         @param anals omor tags as string
@@ -419,6 +430,11 @@ class Ftb3Formatter(Formatter):
         # -----
         # I < T,C < V < X < N
         reordered = []
+        # append @@ first
+        for part in parts:
+            if part.startswith('@@'):
+                # Special cases before anything
+                reordered.append(part)
         # append I first
         for part in parts:
             if part.startswith('I'):
@@ -450,7 +466,12 @@ class Ftb3Formatter(Formatter):
         for part in parts:
             reordered.append(part)
         for anal in reordered:
-            ftbstring += self.stuff2lexc(anal)
+            if anal == '@@COPY-STEM@@':
+                ftbstring += lexc_escape(surf)
+            elif anal.startswith('@@LITERAL') and anal.endswith('@@'):
+                ftbstring += lexc_escape(anal[len('@@LITERAL'):-len('@@')])
+            else:
+                ftbstring += self.stuff2lexc(anal)
         return ftbstring
 
     def continuation2lexc(self, anals, surf, cont):
@@ -458,7 +479,7 @@ class Ftb3Formatter(Formatter):
 
         @return string containing lexc entry.
         """
-        ftbstring = self.analyses2lexc(anals)
+        ftbstring = self.analyses2lexc(anals, surf)
         if 'COMPOUND' in cont:
             # XXX: there was += before
             ftbstring = surf.replace(
@@ -466,8 +487,6 @@ class Ftb3Formatter(Formatter):
         elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
             ftbstring += surf.replace(morph_boundary,
                                       '').replace(deriv_boundary, '')
-        elif 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
-            ftbstring = lexc_escape(surf) + ftbstring
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (ftbstring, surf, cont)
 
@@ -537,8 +556,12 @@ class Ftb3Formatter(Formatter):
                 wordmap['analysis'].replace('Dash', 'EmDash')
         lex_stub = wordmap['stub']
         retvals = []
-        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                                      wordmap['new_para'])]
+        if 'BLACKLIST' in wordmap['new_para']:
+            retvals += ["! ! !%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                               wordmap['new_para'])]
+        else:
+            retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                          wordmap['new_para'])]
         if wordmap['lemma'] in ['-', '–', '—', '(']:
             retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
                                                       wordmap['new_para'])]
@@ -569,6 +592,7 @@ class Ftb3Formatter(Formatter):
             root += self.stuff2lexc('B→') + ':-   ADJ ;\n'
             root += self.stuff2lexc('B→') + ':-   SUFFIX ;\n'
         return root
+
 
 # self test
 if __name__ == '__main__':

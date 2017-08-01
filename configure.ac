@@ -2,12 +2,13 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20160515], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20170515_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
+AC_CONFIG_MACRO_DIR([m4])
 
 PACKAGE=omorfi
-VERSION=20160515
+VERSION=20170515_alpha
 
 # Options
 AC_ARG_WITH([hfst],
@@ -35,7 +36,7 @@ AC_ARG_ENABLE([omor_paradigms],
                               [include new_para feature in omors @<:@default=disable@:>@])],
                               [enable_omor_paradigms=$enableval],
                               [enable_omor_paradigms=no])
-AS_IF([test x$enable_omor_paradigms != xno], 
+AS_IF([test x$enable_omor_paradigms != xno],
       [AC_SUBST([OMORPARAFLAG], ["--omor-new-para"])])
 AC_ARG_ENABLE([omor_allomorphs],
               [AS_HELP_STRING([--enable-omor-allomorphs],
@@ -115,15 +116,24 @@ AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
 
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
-            [AS_HELP_STRING([set email for pbs job @<:@default=disable pbs@:>@])],
+            [AS_HELP_STRING([--with-pbs-mail],
+                            [set email for pbs job @<:@default=disable pbs@:>@])],
             [with_pbs_mail=$withval],
             [with_pbs_mail=no])
 AC_SUBST([PBS_EMAIL], [$with_pbs_mail])
 AC_ARG_WITH([slurm-mail],
-            [AS_HELP_STRING([set email for slurm job @<:@default=disable pbs@:>@])],
+            [AS_HELP_STRING([--with-slurm-mail],
+                            [set email for slurm job @<:@default=disable pbs@:>@])],
             [with_slurm_mail=$withval],
             [with_slurm_mail=no])
 AC_SUBST([SLURM_EMAIL], [$with_slurm_mail])
+# Control heaviness of builds and tests
+AC_ARG_ENABLE([small-lexicons],
+              [AS_HELP_STRING([--enable-small-lexicons],
+                              [whether to greatly reduce lexicon sizes @<:@default=no@:>@])],
+                             [small_lexicons=$enableval],
+                             [small_lexicons=no])
+AM_CONDITIONAL([WANT_SMALL_LEXICONS], [test "x$small_lexicons" != xno])
 AC_ARG_ENABLE([big-tests],
               [AS_HELP_STRING([--enable-big-tests],
                               [whether to run large corpus tests @<:@default=no@:>@])],
@@ -210,7 +220,7 @@ AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([ADT], [apertium-destxt], [cat])
        AS_IF([test x$ADT = xcat],
           [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
-    [AS_IF([test x$with_hfst != xno], 
+    [AS_IF([test x$with_hfst != xno],
            [AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
     AC_SUBST([HLEXC], $with_hfst/hfst-lexc)
     AC_SUBST([HTWOLC], $with_hfst/hfst-twolc)
@@ -242,15 +252,16 @@ AC_PATH_PROG([CGCOMP], [cg-comp], [false])
 AC_PATH_PROG([CGPROC], [cg-proc], [false])
 AM_CONDITIONAL([CAN_VISLCG3], [test x$CGCOMP != xfalse])
 
-AS_IF([test "x$enable_voikko" = "xyes"], 
+AS_IF([test "x$enable_voikko" = "xyes"],
       [AC_PATH_PROG([ZIP], [zip], [false])
        AS_IF([test "x$ZIP" = "xfalse"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
-AC_PATH_PROG([THEREARENOEASTEREGGS], [cowsay], [echo])
+AC_PATH_PROGS([THEREARENOEASTEREGGS], [toilet figlet banner cowsay], [echo])
 
 # require python for stuff
-AM_PATH_PYTHON([3.2],, [:])
+AM_PATH_PYTHON([3.2])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
+AX_PYTHON_MODULE([libhfst], [true])
 AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
@@ -282,24 +293,6 @@ AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi.bash])
-AC_CONFIG_FILES([test/coverage-europarl.sh],
-                [chmod +x test/coverage-europarl.sh])
-AC_CONFIG_FILES([test/coverage-fiwiki.sh],
-                [chmod +x test/coverage-fiwiki.sh])
-AC_CONFIG_FILES([test/coverage-gutenberg.sh],
-                [chmod +x test/coverage-gutenberg.sh])
-AC_CONFIG_FILES([test/coverage-jrc-acquis.sh],
-                [chmod +x test/coverage-jrc-acquis.sh])
-AC_CONFIG_FILES([test/coverage-ftb-3.1.sh],
-                [chmod +x test/coverage-ftb-3.1.sh])
-AC_CONFIG_FILES([test/coverage-fi-ud.sh],
-                [chmod +x test/coverage-fi-ud.sh])
-AC_CONFIG_FILES([test/coverage-fi-ftb-ud.sh],
-                [chmod +x test/coverage-fi-ftb-ud.sh])
-AC_CONFIG_FILES([test/coverage-tatoeba.bash],
-                [chmod +x test/coverage-tatoeba.bash])
-AC_CONFIG_FILES([test/coverage-opensubtitles.bash],
-                [chmod +x test/coverage-opensubtitles.bash])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
                 [chmod +x test/faithfulness-ftb-3.1.sh])
 AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
@@ -312,6 +305,12 @@ AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.sh],
                 [chmod +x test/coverages-all-quick.sh])
+AC_CONFIG_FILES([test/coverages-less-quick.bash],
+                [chmod +x test/coverages-less-quick.bash])
+AC_CONFIG_FILES([test/coverages-all-slow.bash],
+                [chmod +x test/coverages-all-slow.bash])
+AC_CONFIG_FILES([test/tools-all-quick.bash],
+                [chmod +x test/tools-all-quick.bash])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 AS_IF([test x$with_slurm_mail != xno],
@@ -323,11 +322,14 @@ cat <<EOF
 Configured $PACKAGE_STRING:
 =======
 * Analysers: $with_hfst
-    * OMOR $enable_omor $OMORPROPFLAG $OMORALLOFLAG $OMORPARAFLAG $OMORSEMFLAG
+    * OMOR $enable_omor (flags: $OMORPROPFLAG $OMORALLOFLAG $OMORPARAFLAG $OMORSEMFLAG)
     * FTB3.1 $enable_ftb3
     * apertium $enable_apertium
     * giella: $enable_giella
     * labeled segmenter: $enable_labeled_segments
+* Limits:
+    * tiny lexicons: $enable_small_lexicons
+    * big tests: $enable_big_tests
 * Applications
     * Voikko speller: $enable_voikko
     * segmenter: $enable_segmenter

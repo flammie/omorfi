@@ -35,6 +35,8 @@ These are the obligatory stamps of the day:
 
 ## Downloading and further information
 
+→ See also: https://flammie.github.io/omorfi/meta/Releases.html
+
 Omorfi is currently hosted at github. [Omorfi's github
 repository](https://github.com/flammie/omorfi) contain most of the important
 information about omorfi: version control system for source codes, bug tracker
@@ -44,13 +46,19 @@ found in this README.
 
 ## Dependencies
 
+Before you start: Apertium wiki has installation information for most
+dependencies on their [Apertium installation pages, look at section called
+pre-requisites](http://wiki.apertium.org/wiki/Installation), e.g., if you are
+looking to build *omorfi* on *Ubuntu*, go to: [Pre-requisites for
+Ubuntu](http://wiki.apertium.org/wiki/Prerequisites_for_Debian).
+
 Compilation of the morphological analyser, generation, lemmatisation or
-spell-checking requires [HFST](http://hfst.sf.net) tools or compatible
-installed, including the python bindings and relatively recent python. Of
-course standard GNU build tools are needed as well. You should have versions no
-more than year or two old, the build is not guaranteed to work at all with
-ancient versions of GNU build tools, HFST or python. The versions that should
-work are as follows:
+spell-checking requires [HFST](https://hfst.github.io/) tools or compatible
+installed. For use, you will need the python bindings too, and a relatively
+recent version of python 3. Of course standard GNU build tools are needed as
+well. You should have versions no more than year or two old, the build is not
+guaranteed to work at all with ancient versions of GNU build tools, HFST or
+python. The versions that should work are as follows:
 
   * **hfst-3.8** or greater, with python bindings
   * **python-3.2** or greater, with hfst python bindings available
@@ -64,8 +72,7 @@ APIs require:
 
 * *Python 3.2* for python API
 * *Java 7* for Java API
-
-For bash tools, recent GNU coreutils etc. should be more than enough.
+* *Bash 3*, *coreutils* for bash API
 
 ## Installation
 
@@ -104,7 +111,9 @@ for autotools systems.
 
 ## Usage
 
-Omorfi comes with several simple scripts for basic functionalities. These 
+→ See also: man pages
+
+Omorfi comes with several simple scripts for basic functionalities. These
 scripts cover the most basic usage with minimal amount of required extra
 tools, however, for advanced usage you may want to check the APIs or bindings
 for python and Java.
@@ -117,7 +126,7 @@ Following are basic shell scripts that only use *HFST* tools and GNU
 - `omorfi-generate.sh`: generate word-forms from omor descriptions
 - `omorfi-segment.sh`: morphologically segment word-forms one per line
 
-The following requires *python* and *VISL CG 3* 
+The following requires *python* and *VISL CG 3*
 
 - `omorfi-disambiguate-text.sh`: analyse text and disambiguate using VISL CG-3
 
@@ -127,6 +136,7 @@ The following uses *hfst-ospell*:
 
 The following are *python* scripts:
 vi
+- `omorfi-tokenise.py`: format raw text into tokens (words and puncts).
 - `omorfi-conllu.py`: analyse and generate CONLL-U formatted data (Universal
   Dependencies) format
 - `omorfi-vislcg.py`: analyse raw texts into VISL CG 3 format
@@ -136,23 +146,69 @@ The following examples have been run in the omorfi source dir after succesful
 installation. The command lines look like this:
 
 ```
-[tpirinen@c305 omorfi]$ 
+$
 ```
 
-for taito-shell.csc.fi. This is a thing that works in CSC-maintained taito
-cluster easily. The command line like:
+When testing the instructions, please do not copy/pasdte the dollar sign, it is
+not a part of the command, but an command-line prompt indicator!
+
+### Raw text tokenisation
+
+→ See also: https://flammie.github.io/omorfi/man/omorfi-tokenise(1).html
+
+For many tasks you need to tokenise text before using it, this may involve:
+splitting punctuation from words, recasing, etc. Also formatting text into word
+per line, space-separated or more advanced formats like CONLL-U. There's only
+one tool `omorfi-tokenise.py` for this.
 
 ```
-$ 
+$ omorfi-tokenise.py -v -i test/newstest2016-fien-ref.fi.text | tail
+kokouksessa keskusteltiin myös lakimiesten ammattinharjoittamisoikeuksien takaamisesta sekä ammattituomareiden ja - syyttäjien tukemisesta .
+kokoukseen osallistui myös pääministeri Li Keqiang , sekä vanhemmat johtajat Liu Yunshan ja Zhang Gaoli , kerrottiin kokouksen jälkeen julkaistussa lausunnossa .
+Lines: 3000 Tokens: 47338 Ratio: 15.779333333333334 tokens/line
+CPU time: 0.5221295579999996 Real time: 0.5221478860185016
+Tokens per timeunit: 90660.1391436499 Lines per timeunit: 5745.498699373647
 ```
 
-was executed on my laptop or work desktop because it didn't work on taito
-cluster. This is a hint that something requires more software to be installed.
+For CONLL-U and so Universal dependencies, you'd use `-O conllu`:
 
+```
+$ omorfi-tokenise.py -v -i test/newstest2016-fien-ref.fi.text -O conllu| tail
+# sentence-text: Kokoukseen osallistui myös pääministeri Li Keqiang, sekä vanhemmat johtajat Liu Yunshan ja Zhang Gaoli, kerrottiin kokouksen jälkeen julkaistussa lausunnossa.
+1	kokoukseen	_	_	_	_	_	_	_	LOWERCASED=Kokoukseen
+2	osallistui	_	_	_	_	_	_	_	ORIGINALCASE
+3	myös	_	_	_	_	_	_	_	ORIGINALCASE
+4	pääministeri	_	_	_	_	_	_	_	ORIGINALCASE
+5	Li	_	_	_	_	_	_	_	ORIGINALCASE
+6	Keqiang	_	_	_	_	_	_	_	SpaceBefore=No|SpaceAfter=No
+7	,	_	_	_	_	_	_	_	SpaceBefore=No
+8	sekä	_	_	_	_	_	_	_	ORIGINALCASE
+9	vanhemmat	_	_	_	_	_	_	_	ORIGINALCASE
+10	johtajat	_	_	_	_	_	_	_	ORIGINALCASE
+11	Liu	_	_	_	_	_	_	_	ORIGINALCASE
+12	Yunshan	_	_	_	_	_	_	_	SpaceBefore=No|SpaceAfter=No
+13	ja	_	_	_	_	_	_	_	ORIGINALCASE
+14	Zhang	_	_	_	_	_	_	_	ORIGINALCASE
+15	Gaoli	_	_	_	_	_	_	_	SpaceBefore=No|SpaceAfter=No
+16	,	_	_	_	_	_	_	_	SpaceBefore=No
+17	kerrottiin	_	_	_	_	_	_	_	ORIGINALCASE
+18	kokouksen	_	_	_	_	_	_	_	ORIGINALCASE
+19	jälkeen	_	_	_	_	_	_	_	ORIGINALCASE
+20	julkaistussa	_	_	_	_	_	_	_	ORIGINALCASE
+21	lausunnossa	_	_	_	_	_	_	_	ORIGINALCASE|SpaceAfter=No
+22	.	_	_	_	_	_	_	_	SpaceBefore=No
+
+Lines: 3000 Tokens: 47338 Ratio: 15.779333333333334 tokens/line
+CPU time: 0.9153448170000003 Real time: 1.1707193159963936
+Tokens per timeunit: 40434.96964061865 Lines per timeunit: 2562.5271224355897
+```
 
 ### Morphological analysis
 
-Different kinds of morphological analysis use cases.
+Different kinds of morphological analysis use cases: traditional linguitsics
+with Xerox-style analysis, followed by constraitn grammars, or Universal
+dependency pre-parses, or factorised analysis for statistical machine
+ranslations.
 
 #### Xerox / Finite-State Morphology format
 
@@ -160,33 +216,34 @@ Most commonly you will probably want to turn text files into FTB3.1 lists into
 xerox format analyses:
 
 ```
-[tpirinen@c305 omorfi]$ omorfi-analyse-text.sh \
-    test/newstest2015-fien-src.fi.text | head
-Juankosken	[WORD_ID=Juankoski][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
-Juankosken	[WORD_ID=juan][UPOS=NOUN][SEM=CURRENCY][NUM=SG][CASE=NOM][BOUNDARY=COMPOUND][WORD_ID=koski][UPOS=NOUN][NUM=SG][CASE=GEN]
+$ omorfi-analyse-text.sh test/newstest2016-enfi-ref.fi.text |head
+Tampereella	[WORD_ID=Tampere][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=ADE]
 
-kaupunki	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=NOM]
+karkuteillä	[WORD_ID=karkuteillä][UPOS=ADV]
+karkuteillä	[WORD_ID=karkuteillä_2][UPOS=ADV]
 
-liittyy	[WORD_ID=liittyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PRESENT][PERS=SG3]
-
-Kuopion	[WORD_ID=Kuopio][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
-Kuopion	[WORD_ID=kuopia][UPOS=VERB][VOICE=ACT][MOOD=OPT][PERS=SG1][STYLE=ARCHAIC]
+ollut	[WORD_ID=olla][UPOS=AUX][DRV=NUT][CMP=POS][NUM=SG][CASE=NOM]
+ollut	[WORD_ID=olla][UPOS=AUX][DRV=TU][CMP=POS][NUM=PL][CASE=NOM]
+ollut	[WORD_ID=olla][UPOS=AUX][VOICE=ACT][MOOD=INDV][TENSE=PAST][NUM=SG][NEG=CON]
+ollut	[WORD_ID=olla][UPOS=AUX][VOICE=ACT][PCP=NUT]
+ollut	[WORD_ID=olla][UPOS=AUX][VOICE=PSS][PCP=NUT][CMP=POS][CASE=NOM][NUM=PL]
 ```
 
 If your text is already split into word-forms (one word-form per line), it can
 be analysed like this:
 
 ```
-[tpirinen@c305 omorfi]$ omorfi-analyse-tokenised.sh test/wordforms.list | head
-.	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]	133.099609
+$ omorfi-analyse-tokenised.sh test/wordforms.list  | head
+.	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]	0,000000
 
-1	[WORD_ID=1][UPOS=NUM][NUMTYPE=CARD]	133.099609
+1	[WORD_ID=1][UPOS=NUM][NUMTYPE=CARD]	0,000000
+1	[WORD_ID=1][UPOS=NUM][NUMTYPE=CARD][NUM=SG][CASE=NOM]	0,000000
 
-10	[WORD_ID=10][UPOS=NUM][NUMTYPE=CARD]	133.099609
+10	[WORD_ID=10][UPOS=NUM][NUMTYPE=CARD]	0,000000
+10	[WORD_ID=10][UPOS=NUM][NUMTYPE=CARD][NUM=SG][CASE=NOM]	0,000000
 
-1000–2000	[WORD_ID=1000][UPOS=NUM][NUMTYPE=CARD][BOUNDARY=COMPOUND][WORD_ID=2000][UPOS=NUM][NUMTYPE=CARD]	134.099609
-
-1 000	[WORD_ID=1 000][UPOS=NUM][NUMTYPE=CARD]	133.099609
+1000–2000	[WORD_ID=1000][UPOS=NUM][NUMTYPE=CARD][BOUNDARY=COMPOUND][WORD_ID=2000][UPOS=NUM][NUMTYPE=CARD]	0,000000
+1000–2000	[WORD_ID=1000][UPOS=NUM][NUMTYPE=CARD][BOUNDARY=COMPOUND][WORD_ID=2000][UPOS=NUM][NUMTYPE=CARD][NUM=SG][CASE=NOM]	0,000000
 ```
 
 #### VISL CG 3 format
@@ -196,35 +253,102 @@ A full pipeline for VISL CG 3 disambiguation is implemented as a convenience
 script that works like text analysis script:
 
 ```
-$ omorfi-disambiguate-text.sh test/newstest2015-fien-src.fi.text | head
-"<Juankosken>"
-	"Juankoski" PROPN GEO SG GEN
-"<kaupunki>"
-	"kaupunki" NOUN SG NOM
-"<liittyy>"
-	"liittyä" VERB ACT INDV PRESENT SG3
-"<Kuopion>"
-	"Kuopio" PROPN GEO SG GEN
-"<kaupunkiin>"
-	"kaupunki" NOUN SG ILL
+$ omorfi-disambiguate-text.sh test/newstest2016-enfi-ref.fi.text | tail
+"<kokoukseen>"
+	"kokouksi" NOUN SG ILL
+	"kokouksi_2" NOUN SG ILL
+	"kokous" NOUN SG ILL
+"<osallistui>"
+	"osallistua" VERB ACT INDV PAST SG3
+"<myös>"
+	"myödä" VERB <DIALECTAL> ACT IMPV SG2 S
+"<pääministeri>"
+	"pää-ministeri" NOUN TITLE SG NOM
+	"pääministeri" NOUN TITLE SG NOM
+"<Li>"
+	"Li" NUM ROMAN
+	"Li" PROPN FIRST SG NOM
+	"Li_2" PROPN LAST SG NOM
+"<Keqiang>"
+	"Keqiang" UNKNOWN <W=65536>
+"<,>"
+	"," PUNCT CLAUSE COMMA CLB
+	",_2" SYM CLB
+"<sekä>"
+	"sekä" CONJ
+"<vanhemmat>"
+	"vanha" ADJ MPI CMP PL NOM
+	"vanhempi" NOUN PL NOM
+"<johtajat>"
+	"johtaa" VERB JA PL NOM
+	"johtaja" NOUN TITLE PL NOM
+"<Liu>"
+	"Liu" PROPN LAST SG NOM
+"<Yunshan>"
+	"Yunshan" UNKNOWN <W=65536>
+"<ja>"
+	"ja" CONJ
+"<Zhang>"
+	"Zhang" PROPN LAST SG NOM
+"<Gaoli>"
+	"Gaoli" UNKNOWN <W=65536>
+"<,>"
+	"," PUNCT CLAUSE COMMA CLB
+	",_2" SYM CLB
+"<kerrottiin>"
+	"kertoa" VERB PSS INDV PAST PE4
+"<kokouksen>"
+	"kokouksi" NOUN SG GEN
+	"kokouksi_2" NOUN SG GEN
+	"kokous" NOUN SG GEN
+"<jälkeen>"
+	"jälkeen_2" ADV PREP
+"<julkaistussa>"
+	"julkaistu" ADJ POS SG INE
+"<lausunnossa>"
+	"lausunto" NOUN SG INE
+"<.>"
+	"." PUNCT SENTENCE
+Tokens: 47338 Unknown: 1982 4.186911149604969 %
+CPU time: 3.087152993 Real time: 3.1000033089949284
+Tokens per timeunit: 15270.306280849665
 ```
 
 
-CG style format can be generated using python based analyser script 
+CG style format can be generated using python based analyser script
 `omorfi-vislcg.py`:
 
 ```
-[tpirinen@c305 omorfi]$ omorfi-vislcg.py -i test/newstest2015-fien-src.fi.text | head
-"<Juankosken>"
-	"Juankoski" PROPN GEO SG GEN
+$ omorfi-vislcg.py -i test/newstest2016-enfi-ref.fi.text | tail
+"<,>"
+	"," PUNCT CLAUSE COMMA
+	",_2" SYM
 
-"<kaupunki>"
-	"kaupunki" NOUN SG NOM
+"<kerrottiin>"
+	"kertoa" VERB PSS INDV PAST PE4
 
-"<liittyy>"
-	"liittyä" VERB ACT INDV PRESENT SG3
+"<kokouksen>"
+	"kokouksi" NOUN SG GEN
+	"kokouksi_2" NOUN SG GEN
+	"kokous" NOUN SG GEN
 
-"<Kuopion>"
+"<jälkeen>"
+	"jälkeen" ADP POST
+	"jälkeen_2" ADV PREP
+	"jälki" NOUN SG ILL
+
+"<julkaistussa>"
+	"julkaistu" ADJ POS SG INE
+
+"<lausunnossa>"
+	"lausunto" NOUN SG INE
+
+"<.>"
+	"." PUNCT SENTENCE
+
+Tokens: 47338 Unknown: 1982 4.186911149604969 %
+CPU time: 3.6671915069999996 Real time: 3.66774150999845
+Tokens per timeunit: 12906.580213178655
 ```
 
 
@@ -233,52 +357,116 @@ CG style format can be generated using python based analyser script
 Moses factored analysis format can be generated using python script:
 
 ```
-$ omorfi-factorise.py -i test/newstest2015-fien-src.fi.text | head
-Juankosken|Juankoski|UNK|PROPN.GEO.SG.GEN|0 kaupunki|kaupunki|UNK|NOUN.SG.NOM|0 liittyy|liittyä|UNK|VERB.ACT.INDV.PRESENT.SG3|0 Kuopion|Kuopio|UNK|PROPN.GEO.SG.GEN|0 kaupunkiin|kaupunki|UNK|NOUN.SG.ILL|0 vuoden|vuosi|UNK|NOUN.SG.GEN|0 2017|2017|UNK|NUM.CARD|0 alussa.|alussa.|UNK|UNKNOWN|0 
-Kuopion|Kuopio|UNK|PROPN.GEO.SG.GEN|0 kaupunginvaltuusto|kaupunginvaltuusto|UNK|NOUN.SG.NOM|0 hyväksyi|hyväksyä|UNK|VERB.ACT.INDV.PAST.SG3|0 liitoksen|liitos|UNK|NOUN.SG.GEN|0 yksimielisesti|yksimielisesti|UNK|ADV.STI|0 maanantaina.|maanantaina.|UNK|UNKNOWN|0 
-Juankosken|Juankoski|UNK|PROPN.GEO.SG.GEN|0 kaupunginvaltuusto|kaupunginvaltuusto|UNK|NOUN.SG.NOM|0 hyväksyi|hyväksyä|UNK|VERB.ACT.INDV.PAST.SG3|0 liitoksen|liitos|UNK|NOUN.SG.GEN|0 viime|viime|UNK|ADV|0 viikolla.|viikolla.|UNK|UNKNOWN|0 
-Kuntaliitoksen|kuntaliitos|UNK|NOUN.SG.GEN|0 selvittämisessä|selvittäminen|UNK|NOUN.SG.INE|0 oli|olla|UNK|AUX.ACT.INDV.PAST.SG3|0 mukana|mukana|UNK|ADP.POST|0 myös|myös|UNK|ADV|0 Tuusniemen|Tuusniemi|UNK|PROPN.GEO.SG.GEN|0 kunta,|kunta,|UNK|UNKNOWN|0 mutta|mutta|UNK|ADP|0 sen|se|UNK|DET.SG.GEN|0 valtuusto|valtuusto|UNK|NOUN.SG.NOM|0 päätti,|päätti,|UNK|UNKNOWN|0 että|että|UNK|INTJ|0 Tuusniemi|Tuusniemi|UNK|PROPN.GEO.SG.NOM|0 jatkaa|jatkaa|UNK|VERB.ACT.A.LAT|0 itsenäisenä.|itsenäisenä.|UNK|UNKNOWN|0 
+$ omorfi-factorise.py -i test/newstest2016-enfi-ref.fi.text | tail
+Kokouksessa|koko+uksi|UNK|NOUN.SG.INE|0 keskusteltiin|keskustella|UNK|VERB.PSS.INDV.PAST.PE4|0 myös|myödä|UNK|VERB.DIALECTAL.ACT.IMPV.SG2.S|0 lakimiesten|laki+mies|UNK|NOUN.PL.GEN|0 ammattinharjoittamisoikeuksien|ammattinharjoittamisoikeuksien|UNK|UNKNOWN|0 takaamisesta|taata_2|UNK|VERB.MINEN.SG.ELA|0 sekä|sekä|UNK|CONJ|0 ammattituomareiden|ammatti-+tuomari|UNK|NOUN.TITLE.PL.GEN|0 ja|ja|UNK|CONJ|0 -syyttäjien|syyttäjä|UNK|NOUN.TITLE.PL.GEN|0 tukemisesta.|tukemisesta.|UNK|UNKNOWN|0
+Kokoukseen|koko+uksi|UNK|NOUN.SG.ILL|0 osallistui|osallistua|UNK|VERB.ACT.INDV.PAST.SG3|0 myös|myödä|UNK|VERB.DIALECTAL.ACT.IMPV.SG2.S|0 pääministeri|pää-+ministeri|UNK|NOUN.TITLE.SG.NOM|0 Li|Li|UNK|NUM.ROMAN|0 Keqiang,|Keqiang,|UNK|UNKNOWN|0 sekä|sekä|UNK|CONJ|0 vanhemmat|vanha|UNK|ADJ.MPI.CMP.PL.NOM|0 johtajat|johtaa|UNK|VERB.JA.PL.NOM|0 Liu|Liu|UNK|PROPN.LAST.SG.NOM|0 Yunshan|Yunshan|UNK|UNKNOWN|0 ja|ja|UNK|CONJ|0 Zhang|Zhang|UNK|PROPN.LAST.SG.NOM|0 Gaoli,|Gaoli,|UNK|UNKNOWN|0 kerrottiin|kertoa|UNK|VERB.PSS.INDV.PAST.PE4|0 kokouksen|koko+uksi|UNK|NOUN.SG.GEN|0 jälkeen|jälkeen|UNK|ADP.POST|0 julkaistussa|julkaistu|UNK|ADJ.POS.SG.INE|0 lausunnossa.|lausunnossa.|UNK|UNKNOWN|0
 ```
 
 The input should be in format produced by moses's `tokenizer.perl` (truecase or
 clean-corpus-n not necessary). The output is readily usable by Moses train
-model.
+model. *If you don't use tokenizer.perl, the words next to punctuation will not
+be analysed.*
+
+#### Universal Dependencies pre-parse format
+
+[Universal Dependencies](http://universaldependencies.org) are the up-and-coming
+standard for all your morpho-syntactic needs! Omorfi is currently scheduled to
+follow up on Universal dependencies relaeas schedules and analysis and design
+principles.
+
+Universal dependencies parsing requires input in pre-tokenised,
+CONLL-U format, only fields INDEX, SURF and MISC are made use of in
+basic version.
+
+```
+$ omorfi-conllu.py -v -i test/UD_Finnish/fi-ud-dev.conllu | tail -n 40
+# sentence-text: TGV-junat ajavat toistaiseksi normaalia pikajunan nopeutta muilla rataosuuksilla kuin erityisesti nopeaa liikennettä varten suunnitelluilla aidatuilla osuuksilla, joissa ei ole tasoristeyksiä.
+1	TGV-junat	TGV#juna	NOUN	N	Case=Nom|Number=Plur	_	_	_	_
+2	ajavat	ajaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur	_	_	_	_
+3	toistaiseksi	toistainen	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	_	_	_	_
+4	normaalia	normaali	ADJ	A	Case=Par|Degree=Pos|Number=Sing	_	_	_	_
+5	pikajunan	pika-#juna	NOUN	N	Case=Gen|Number=Sing	_	_	_	_
+6	nopeutta	nopeus	NOUN	N	Case=Par|Number=Sing	_	_	_	_
+7	muilla	muu	ADJ	A	Case=Ade|Degree=Pos|Number=Plur	_	_	_	_
+8	rataosuuksilla	rata#osuus	NOUN	N	Case=Ade|Number=Plur	_	_	_	_
+9	kuin	kuin	SCONJ	C	_	_	_	_	_
+10	erityisesti	erityisesti	ADV	Adv	Derivation=Sti	_	_	_	_
+11	nopeaa	nopea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	_	_	_	_
+12	liikennettä	liikenne	NOUN	N	Case=Par|Number=Sing	_	_	_	_
+13	varten	varten	ADV	Adv	_	_	_	_	_
+14	suunnitelluilla	suunnitella	VERB	V	Case=Ade|Degree=Pos|Number=Plur	_	_	_	_
+15	aidatuilla	aidata	VERB	V	Case=Ade|Degree=Pos|Number=Plur	_	_	_	_
+16	osuuksilla	osuus	NOUN	N	Case=Ade|Number=Plur	_	_	_	_
+17	,	,	PUNCT	Punct	_	_	_	_	_
+18	joissa	joka	PRON	Pron	Case=Ine|Number=Plur|PronType=Rel	_	_	_	_
+19	ei	ei	VERB	V	Negative=Neg|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	_	_	__
+20	ole	olla	AUX	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	_	_	_	_
+21	tasoristeyksiä	taso#risteys	NOUN	N	Case=Par|Number=Plur	_	_	_	_
+22	.	.	PUNCT	Punct	_	_	_	_	_
+```
+
+This can be combined with tokenisation to analyse raw corpora:
+
+```
+$ omorfi-tokenise.py -O conllu -i test/newstest2016-enfi-ref.fi.text | omorfi-conllu.py | tail -n 40
+# sentence-text: Kokoukseen osallistui myös pääministeri Li Keqiang, sekä vanhemmat johtajat Liu Yunshan ja Zhang Gaoli, kerrottiin kokouksen jälkeen julkaistussa lausunnossa.
+1	kokoukseen	koko#uksi	NOUN	N	Case=Ill|Number=Sing	_	_	_	_
+2	osallistui	osallistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	_	_	_	_
+3	myös	myödä	VERB	V	Clitic=S|Mood=Imp|Number=Sing|Person=2|Style=Coll|VerbForm=Fin|Voice=Act	__	_	_
+4	pääministeri	pää-#ministeri	NOUN	N	Case=Nom|Number=Sing	_	_	_	_
+5	Li	Li	NUM	Num	_	_	_	_	_
+6	Keqiang	Keqiang	X	X	_	_	_	_	_
+7	,	,	PUNCT	Punct	_	_	_	_	_
+8	sekä	sekä	CONJ	C	_	_	_	_	_
+9	vanhemmat	vanha	ADJ	A	Case=Nom|Degree=Cmp|Number=Plur	_	_	_	_
+10	johtajat	johtaa	VERB	V	Case=Nom|Derivation=Ja|Number=Plur	_	_	_	_
+11	Liu	Liu	PROPN	N	Case=Nom|Number=Sing	_	_	_	_
+12	Yunshan	Yunshan	X	X	_	_	_	_	_
+13	ja	ja	CONJ	C	_	_	_	_	_
+14	Zhang	Zhang	PROPN	N	Case=Nom|Number=Sing	_	_	_	_
+15	Gaoli	Gaoli	X	X	_	_	_	_	_
+16	,	,	PUNCT	Punct	_	_	_	_	_
+17	kerrottiin	kertoa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	_	_	_	_
+18	kokouksen	koko#uksi	NOUN	N	Case=Gen|Number=Sing	_	_	_	_
+19	jälkeen	jälkeen	ADP	Adp	AdpType=Post	_	_	_	_
+20	julkaistussa	julkaistu	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	_	_	_	_
+21	lausunnossa	lausunto	NOUN	N	Case=Ine|Number=Sing	_	_	_	_
+22	.	.	PUNCT	Punct	_	_	_	_	_
+
+```
+
+There's a cheat mode that can be used with UD training data to always select
+the best match, for evaluation purposes: `--oracle`. There's a debug mode to
+print full n-best for each token: `--debug`, this is pseudo CONLL-U.
 
 ### Morphological segmentation
 
 The morphological segmentation can be done like this:
 
 ```
-[tpirinen@c305 omorfi]$ omorfi-segment.sh test/wordforms.list | tail -n 30
-
-äristä	ärist→ ←ä	0.000000
-äristä	äris→ ←tä	0.000000
-
-äyräs	äyräs	0.000000
-
-äyräässä	äyrää→ ←ssä	0.000000
-
-äänestys	äänestys	0.000000
-
-äänioikeus	ääni→ ←oikeus	0.000000
+$ omorfi-segment.py -O segments -i test/newstest2016-enfi-ref.fi.text
+Lisäksi ulko→ ←maalais→ ←ten pysyv→ ←i→ ←en asukas→ ←lup→ ←i→ ←en , ” green cardien , ” haku→ ←prosessi→ ←a helpote→ ←taan optimoima→ ←lla vaatimuks→ ←i→ ←a ja keventämä→ ←llä haku→ ←prosessi→ ←a .
+Kokouksessa keskustel→ ←tiin myös lakimies→ ←ten ammattinharjoittamisoikeuksien takaamise→ ←sta sekä ammatti→ ←tuomare→ ←i→ ←den ja - syyttäj→ ←i→ ←en tukemise→ ←sta .
+Kokoukseen osallistu→ ←i myös pää→ ←ministeri Li Keqiang , sekä vanhemma→ ←t johtaja→ ←t Liu Yunshan ja Zhang Gaoli , kerrot→ ←tiin kokoukse→ ←n jälkeen julkaistu→ ←ssa lausunno→ ←ssa .
 ```
+
+**Preliminary** support for labeled segmentation is also available but not
+guaranteed to work.
 
 ### Spell-Checking and correction
 
 Spelling correction may be done if hfst-ospell is installed:
 
 ```
-[tpirinen@c305 omorfi]$ omorfi-spell.sh test/wordforms.list | head
-"." is in the lexicon...
-"1" is in the lexicon...
-"10" is in the lexicon...
-"1000–2000" is in the lexicon...
-"1 000" is in the lexicon...
-"11" is in the lexicon...
-"12" is in the lexicon...
-"13" is in the lexicon...
-"14" is in the lexicon...
-"15" is in the lexicon...
+$ omorfi-spell.sh test/wordforms.list | tail
+"äyräässä" is in the lexicon...
+"äänestys" is in the lexicon...
+"äänioikeus" is in the lexicon...
+"öykkärein" is in the lexicon...
+"öykkäri" is in the lexicon...
+"öykkärimpi" is in the lexicon...
+"öykkäröi" is in the lexicon...
+"öykkäröidä" is in the lexicon...
 ```
 
 ### Morphological generation
@@ -286,13 +474,15 @@ Spelling correction may be done if hfst-ospell is installed:
 Generating word-forms can be done using:
 
 ```
-[tpirinen@c305 omorfi]$ omorfi-generate.sh
-> [WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=NOM]
-[WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=NOM]	bisse	0.000000
+$ omorfi-generate.sh
+[WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=NOM]
+[WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=NOM]	bisse	0,000000
 
-> [WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=INE]
-[WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=INE]	bissessä	0.000000
+[WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=INE]
+[WORD_ID=bisse][UPOS=NOUN][NUM=SG][CASE=INE]	bissessä	0,000000
 ```
+
+The input for generator is simply the output of the raw analyser.
 
 ## Advanced usage
 
@@ -307,20 +497,27 @@ Python interface (more details on python API page):
 
 ```
 [tpirinen@c305 omorfi]$ python3
-Python 3.4.0 (default, Mar 18 2014, 16:02:57) 
+Python 3.4.0 (default, Mar 18 2014, 16:02:57)
 [GCC 4.8.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from omorfi.omorfi import Omorfi
 >>> omorfi = Omorfi()
 >>> omorfi.load_from_dir()
 >>> omorfi.analyse("koira")
-(('[WORD_ID=koira][UPOS=NOUN][NUM=SG][CASE=NOM]', 133.099609375),)
->>> analyses = omorfi.analyse("koira")
->>> for analysis in analyses:
+(('[WORD_ID=koira][UPOS=NOUN][NUM=SG][CASE=NOM]', 0.0),)
+>>> for analysis in anlyses:
 ...     print(analysis[0], analysis[1])
-... 
-[WORD_ID=koira][UPOS=NOUN][NUM=SG][CASE=NOM] 133.099609375
->>> 
+...
+[WORD_ID=alku][UPOS=NOUN][NUM=SG][CASE=ELA] 0.0
+[WORD_ID=alunen][UPOS=NOUN][NUM=SG][CASE=PAR] 0.0
+[WORD_ID=alus][UPOS=NOUN][NUM=SG][CASE=PAR] 0.0
+[WORD_ID=alusta][UPOS=NOUN][NUM=SG][CASE=NOM] 0.0
+[WORD_ID=alusta_2][UPOS=ADV] 0.0
+[WORD_ID=alusta_3][UPOS=ADV] 0.0
+[WORD_ID=alustaa][UPOS=VERB][VOICE=ACT][MOOD=IMPV][PERS=SG2] 0.0
+[WORD_ID=alustaa][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PRESENT][NEG=CON] 0.0
+[WORD_ID=Alku_2][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=ELA] 0.0
+[WORD_ID=Alku_3][UPOS=PROPN][PROPER=LAST][NUM=SG][CASE=ELA] 0.0
 ```
 
 ### Java
@@ -328,7 +525,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Java class (more details on java API pages):
 
 ```
-$ CLASSPATH=$HOME/Koodit/hfst-optimized-lookup/hfst-optimized-lookup-java/hfst-ol.jar:. java com.github.flammie.omorfi.Omorfi 
+$ CLASSPATH=$HOME/Koodit/hfst-optimized-lookup/hfst-optimized-lookup-java/hfst-ol.jar:. java com.github.flammie.omorfi.Omorfi
 ...
 Read all.
 > talo
@@ -344,53 +541,46 @@ java typically gives you, so use `-Xmx` switch.
 
 ### Raw automata
 
-The installed files are in `$prefix/share/omorfi` (taito installation is
---prefix=$HOME)
+The installed files are in `$prefix/share/omorfi` (my installation is in linux
+default: `/usr/local`)
 
 ```
-[tpirinen@c305 java]$ ls ~/share/omorfi/
-master.tsv		    omorfi-giella.generate.hfst  omorfi-omor.generate.hfst	   omorfi.tokenise.hfst
-omorfi.accept.hfst	    omorfi.labelsegment.hfst	 omorfi-omor_recased.analyse.hfst  speller-omorfi.zhfst
-omorfi-giella.analyse.hfst  omorfi-omor.analyse.hfst	 omorfi.segment.hfst
-
-
-
 $ ls /usr/local/share/omorfi/
-master.tsv		  omorfi-ftb3.generate.hfst    omorfi-omor.analyse.hfst		 omorfi.tokenise.hfst
-omorfi.accept.hfst	  omorfi-giella.analyse.hfst   omorfi-omor.generate.hfst	 speller-omorfi.zhfst
-omorfi.cg3bin		  omorfi-giella.generate.hfst  omorfi-omor_recased.analyse.hfst
-omorfi-ftb3.analyse.hfst  omorfi.labelsegment.hfst     omorfi.segment.hfst
+fin-autogen.hfst    omorfi-ftb1.analyse.hfst	 omorfi.labelsegment.hfst	   omorfi.tokenise.hfst
+fin-automorf.hfst   omorfi-ftb3.analyse.hfst	 omorfi-omor.analyse.hfst	   omorfi.tokenise.pmatchfst
+master.tsv	    omorfi-ftb3.generate.hfst	 omorfi-omor.generate.hfst	   omorfi.tokenise.pmatchfst.debug1
+omorfi.accept.hfst  omorfi-giella.analyse.hfst	 omorfi-omor_recased.analyse.hfst  omorfi.tokenise.pmatchfst.debug2
+omorfi.cg3bin	    omorfi-giella.generate.hfst  omorfi.segment.hfst		   speller-omorfi.zhfst
 ```
 
-The naming *was changed* back in 2014–2015 cycle! This was made because people
-seem to distribute automata over the net without attributions, at least the
-default filenames for most automata are now `omorfi*.hfst`. The system is:
-omorfi.`function`.hfst, or omorfi-`variant`.`function`.hfst. The variants other
-than `omor` are for convenience and interoperability, and have recasing built
-in, but since they encode existing standards, will also be more stable between
-versions.
+The naming is probably not gonna be same forever.
 
 ### HFST tools
 
 You can directly access specific automata using finite-state tools from the HFST
-project (details can be found on their individual man pages and 
+project (details can be found on their individual man pages and
 [HFST wiki](https://kitwiki.csc.fi/):
 
 ```
-[tpirinen@c305 omorfi]$ hfst-lookup ~/share/omorfi/omorfi.segment.hfst 
+$ hfst-lookup /usr/local/share/omorfi/omorfi.segment.hfst
 > talossani
-talossani	talo{MB}ssa{MB}ni	0.000000
+talossani	talo{DB}s{MB}sa{MB}ni	0,000000
+talossani	talo{MB}ssa{MB}ni	0,000000
 
 > on
-on	on	0.000000
+on	on	0,000000
 
 > hirveä
-hirveä	hirve{MB}ä	0.000000
-hirveä	hirveä	0.000000
+hirveä	hirve{MB}ä	0,000000
+hirveä	hirveä	0,000000
 
 > kissakoira-apina
 kissakoira-apina	kissa{hyph?}koira{hyph?}apina	0.000000
 ```
+
+When using `hfst-lookup` with large unclean material, it may get stuck at odd
+looking long strings, consider using `-t` switch to set timeout for individual
+analyses; omorfi bash API sets this to 15 seconds.
 
 ## Troubleshooting
 
@@ -448,6 +638,22 @@ If the file missing is `omorfi.cg3bin`, it may mean that the vislcg3 was missing
 at the time of the installation. Similarly may happen with omorfi-speller.zhfst,
 it will only be created when hfst-ospell and it's dependencies and zip are all
 available.
+
+### Processing text gets stuck / takes long
+
+Occasionally some tokens yield very complicated analyses and take a lot of
+memory or time. This happens especially with long strings that can be analysed
+as combinations of interjections like ahahaha...ha (in theory, each ah, aha, ha
+and hah within the string are ambiguous wrt. compounding), while current
+versions have blacklisted most such combinations some may still exist. When
+using hfst tools directly this can be solved using `-t` option to set the
+timeout. While these workarounds will slowly trickle to all parts of HFST and
+omorfi, it is often a good idea to pre-process text to remove or normalise
+offending strings as they will trip other NLP tools too.
+
+Some operations of omorfi legitly take a lot of memory, and most tools are
+suspectible to memory leaks. It may be often beneficial to `split` your data
+and process it in smaller chunks.
 
 ## Contributing
 

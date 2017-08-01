@@ -3,6 +3,21 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20161115
+
+* Started drafting more blacklists and *known good* lexemes subsets for people
+  who struggle with rare words and productive compounding, derivation
+* Updated to Universal Dependencies version 1.4
+* A lot of new derivations by the way
+* Preliminary guessers
+* More loopy guessery things for punctuation and digit combos
+* Minor fixes to UD feature sorting
+* Homonym numbers used in some applications
+* Added timeouts where downstream tools support them, so tools don't seem like
+  they are freezing at random
+* moved old documentations to github-pages
+* added preliminary hfst-pmatch-based tokeniser
+
 ## Significant changes in 20160515
 
 * Universal Dependencies for Finnish is the new standard format we now follow:

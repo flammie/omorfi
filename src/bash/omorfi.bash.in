@@ -8,6 +8,7 @@ fi
 omorfidir="@prefix@/share/omorfi"
 hfstproc=@HPROC@
 hfstlookup=@HLOOKUP@
+lookupflags="-x -t 15 -p"
 cgproc=@CGPROC@
 hfstospell=@HOSPELL@
 homeomorfidir="$HOME/.omorfi"
@@ -111,7 +112,7 @@ function omorfi_analyse_tokens() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "analyse" $1
     else
-        $hfstlookup -x -p "$omorfianalyser"
+        $hfstlookup $lookupflags "$omorfianalyser"
     fi
 }
 
@@ -135,7 +136,7 @@ function omorfi_generate() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "generate" $1
     else
-        $hfstlookup -x "$omorfianalyser"
+        $hfstlookup $lookupflags "$omorfianalyser"
     fi
 }
 
@@ -150,7 +151,7 @@ function omorfi_hyphenate() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "hyphenate" $1
     else
-        $hfstlookup -x "$omorfianalyser" |\
+        $hfstlookup $lookupflags "$omorfianalyser" |\
             sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \
             -e "s/-4/$hyphen/g"
     fi
@@ -174,7 +175,7 @@ function omorfi_segment() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "segment"
     else
-        $hfstlookup -x -p "$omorfianalyser" |\
+        $hfstlookup $lookupflags "$omorfianalyser" |\
             sed -e "s:${markexpr}:${marker}:g" -e "s:${unmarkexpr}::g"
     fi
 }

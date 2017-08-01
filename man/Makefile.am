@@ -2,7 +2,8 @@
 
 bootstrappable=omorfi-analyse-text.1 omorfi-hyphenate.1 omorfi-generate.1\
 			   omorfi-spell.1 omorfi-analyse-tokenised.1 omorfi-segment.1
-broken=omorfi-factorise.1
+broken=omorfi-factorise.1 omorfi-conllu.1 omorfi-disambiguate-text.1 \
+	   omorfi-tokenise.1 omorfi-vislcg.1
 
 dist_man1_MANS=$(bootstrappable) $(broken)
 

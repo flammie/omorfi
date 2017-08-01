@@ -93,6 +93,7 @@ ADJ_SIPPI	ADJ	ADJECTIVE	5	B	False	weaken	front	None	None	False	False
 ADJ_SISIN	ADJ	ADJECTIVE	36	None	False	strengthen	front	None	None	False	False
 ADJ_STYDI	ADJ	ADJECTIVE	5	None	False	weaken	front	None	None	False	False
 ADJ_SUIPPO	ADJ	ADJECTIVE	1	B	False	weaken	back	None	None	False	False
+ADJ_SUOMALAINEN	ADJ	ADJECTIVE	38	None	False	strengthen	back	None	None	False	False
 ADJ_SUURI	ADJ	ADJECTIVE	24	None	False	weaken	back	None	None	False	False
 ADJ_SUURI	ADJ	ADJECTIVE	26	None	False	weaken	back	None	None	False	False
 ADJ_SYMPPIS	ADJ	ADJECTIVE	39	None	False	strengthen	front	None	None	False	False
@@ -122,6 +123,7 @@ ADJ_VELTTO	ADJ	ADJECTIVE	1	C	False	weaken	back	None	None	False	False
 ADJ_VENTO	ADJ	ADJECTIVE	1	J	False	weaken	back	None	None	False	False
 ADJ_VIATON	ADJ	ADJECTIVE	34	C	False	strengthen	back	None	None	False	False
 ADJ_VIHANTA	ADJ	ADJECTIVE	9	J	False	weaken	back	a	None	False	False
+ADJ_VIHERIÄ	ADJ	ADJECTIVE	15	None	False	weaken	front	ä	None	False	False
 ADJ_VIIPALOITU	ADJ	ADJECTIVE	1	F	False	weaken	back	None	None	False	False
 ADJ_VIMMATTU	ADJ	ADJECTIVE	1	C	False	weaken	back	None	None	False	False
 ADJ_VIRKKU	ADJ	ADJECTIVE	1	A	False	weaken	back	None	None	False	False
@@ -134,12 +136,11 @@ ADJ_YKSILÖITY	ADJ	ADJECTIVE	1	F	False	weaken	front	None	None	False	False
 ADJ_YLENNETTY	ADJ	ADJECTIVE	1	C	False	weaken	front	None	None	False	False
 ADJ_ÄLLISTYNYT	ADJ	ADJECTIVE	47	None	False	strengthen	front	y	None	False	False
 ADJ_ÖYKKÄRI	ADJ	ADJECTIVE	6	None	False	weaken	front	None	None	False	False
+ADP_ALLA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_ALLE	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
-ADP_HYVILLÄÄN	ADP	PARTICLE	99	None	False	False	front	None	None	obligatory	True
-ADP_ILKOSILLAAN	ADP	PARTICLE	99	None	False	False	back	None	None	obligatory	True
-ADP_ISTUALLEEN	ADP	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ADP_KOTONA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_LISÄKSI	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
+ADP_LÄHELLÄ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADP_MUKAAN	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_MUKAISESTI	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_NÄHDEN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
@@ -149,7 +150,10 @@ ADP_VALTAAN	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_VUOKSI	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_YLLE	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADV_AIKANSA	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
+ADV_HYVILLÄÄN	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True
 ADV_IKINÄ	ADV	PARTICLE	99	None	False	False	front	None	None	optional	False
+ADV_ILKOSILLAAN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
+ADV_ISTUALLEEN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ADV_JO	ADV	PARTICLE	99	None	False	False	back	None	None	False	False
 ADV_JONNE	ADV	PARTICLE	99	None	False	False	back	None	None	False	False
 ADV_KUHUN	ADV	PARTICLE	99	None	False	False	back	None	None	False	True
@@ -169,7 +173,7 @@ AUX_TAITAA	AUX	VERB	76	F	False	weaken	back	None	None	False	False
 AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False
 AUX_TÄYTYÄ	AUX	VERB	52	F	False	weaken	front	None	None	False	False
 AUX_VOIDA	AUX	VERB	62	None	False	strengthen	back	None	None	False	False
-CONJ_JA	CONJ	PARTICLE	99	None	False	False	front	None	None	False	False
+CCONJ_JA	CCONJ	PARTICLE	99	None	False	False	front	None	None	False	False
 DET_SE	DET	PRONOUN	101	None	False	False	front	None	None	False	False
 DET_YKSI	DET	PRONOUN	31	None	False	weaken	front	None	None	False	False
 INTJ_HAH	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False
@@ -344,6 +348,7 @@ NOUN_APE	NOUN	NOUN	48	B	False	strengthen	back	None	None	False	False
 NOUN_APU	NOUN	NOUN	1	E	False	weaken	back	None	None	False	False
 NOUN_ARISTOTELES	NOUN	NOUN	41	None	False	strengthen	back	None	None	False	False
 NOUN_ARKI	NOUN	NOUN	7	L	False	weaken	back	None	None	False	False
+NOUN_ARKKITEHTI	NOUN	NOUN	5	F	False	weaken	both	None	None	False	False
 NOUN_ASEMA	NOUN	NOUN	10	None	False	weaken	back	a	None	False	False
 NOUN_ASKAR	NOUN	NOUN	49	None	False	strengthen	back	None	None	False	False
 NOUN_ASKELLIN	NOUN	NOUN	33	I	False	strengthen	back	None	None	False	False
@@ -365,7 +370,6 @@ NOUN_BRIE	NOUN	NOUN	21	None	False	weaken	front	i	None	False	False
 NOUN_BÄNET	NOUN	NOUN	8	None	obligatory	weaken	front	None	None	False	False
 NOUN_CAMUS	NOUN	NOUN	22	None	False	weaken	back	None	None	False	False
 NOUN_CHACHACHA	NOUN	NOUN	21	None	False	weaken	back	a	None	False	False
-NOUN_COMPOUND	NOUN	NOUN	99	None	False	False	front	None	None	False	False
 NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	back	i	None	False	False
 NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	front	i	None	False	False
 NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	front	None	None	False	False
@@ -374,6 +378,7 @@ NOUN_EKKE	NOUN	NOUN	8	A	False	weaken	front	None	None	False	False
 NOUN_ELIN	NOUN	NOUN	33	None	False	strengthen	front	None	None	False	False
 NOUN_ELÄMÄ	NOUN	NOUN	10	None	False	weaken	front	ä	None	False	False
 NOUN_EPÄILTY	NOUN	NOUN	1	I	False	weaken	front	None	None	False	False
+NOUN_ESIM.	ADV	PARTICLE	99	None	False	False	back	None	None	False	False
 NOUN_ESQUIMAU	NOUN	NOUN	21	None	False	weaken	back	o	None	False	False
 NOUN_EUGENE	NOUN	NOUN	2	None	False	weaken	back	None	None	False	False
 NOUN_EURO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False
@@ -754,6 +759,7 @@ NOUN_RUOPPAAT	NOUN	NOUN	41	B	obligatory	strengthen	back	None	None	False	False
 NOUN_RUUHI	NOUN	NOUN	24	None	False	weaken	back	None	None	False	False
 NOUN_RUUMIS	NOUN	NOUN	41	None	False	strengthen	back	None	None	False	False
 NOUN_RUUVI	NOUN	NOUN	5	None	False	weaken	back	None	None	False	False
+NOUN_PYRAMIDI	NOUN	NOUN	5	None	False	weaken	both	None	None	False	False
 NOUN_RYNNÄS	NOUN	NOUN	41	J	False	strengthen	front	None	None	False	False
 NOUN_RYNTTYYT	NOUN	NOUN	41	C	obligatory	strengthen	front	None	None	False	False
 NOUN_RYNTÄÄT	NOUN	NOUN	41	J	obligatory	strengthen	front	None	None	False	False
@@ -801,6 +807,7 @@ NOUN_SUHTEET	NOUN	NOUN	48	F	obligatory	strengthen	back	None	None	False	False
 NOUN_SUKAT	NOUN	NOUN	10	A	obligatory	weaken	back	None	None	False	False
 NOUN_SULKA	NOUN	NOUN	10	D	False	weaken	back	a	None	False	False
 NOUN_SUODATIN	NOUN	NOUN	33	C	False	strengthen	back	None	None	False	False
+NOUN_SUOMALAINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False
 NOUN_SUOT	NOUN	NOUN	19	None	obligatory	weaken	back	None	None	False	False
 NOUN_SYDÄN	NOUN	NOUN	33	None	False	strengthen	front	None	None	False	False
 NOUN_SYLI	NOUN	NOUN	23	None	False	weaken	front	None	None	False	False
@@ -915,6 +922,7 @@ NOUN_VUOSITUHAT	NOUN	NOUN	46	None	False	strengthen	back	None	None	False	False
 NOUN_VÄRTÖ	NOUN	NOUN	1	K	False	weaken	front	None	None	False	False
 NOUN_YHTIÖT	NOUN	NOUN	3	None	obligatory	weaken	front	None	None	False	False
 NOUN_YKSIKKÖ	NOUN	NOUN	4	A	False	weaken	front	None	None	False	False
+NOUN_YLEIS	NOUN	NOUN	99	None	False	False	front	None	None	False	False
 NOUN_YLKÄ	NOUN	NOUN	10	L	False	weaken	front	ä	None	False	False
 NOUN_YLÄNKÖ	NOUN	NOUN	1	G	False	weaken	front	None	None	False	False
 NOUN_YLÖÖ	NOUN	NOUN	17	None	False	weaken	front	ö	None	False	False
@@ -1690,6 +1698,7 @@ PRON_MONES	PRON	PRONOUN	45	None	False	strengthen	back	None	None	False	False
 PRON_MONI	PRON	PRONOUN	23	None	False	weaken	back	None	None	False	False
 PRON_MONIAS	PRON	PRONOUN	41	None	False	strengthen	back	None	None	False	False
 PRON_MONTA	PRON	PRONOUN	101	None	False	False	back	None	None	False	False
+PRON_MONTAKO	PRON	PRONOUN	101	None	False	False	back	None	None	False	False
 PRON_MUU	PRON	PRONOUN	18	None	False	weaken	back	u	None	False	False
 PRON_MUUAN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False
 PRON_MUUTAMA	PRON	PRONOUN	10	None	False	weaken	back	a	None	False	False
@@ -2289,6 +2298,7 @@ VERB_JÄÄDÄ	VERB	VERB	63	None	False	strengthen	front	None	None	False	False
 VERB_KAATAA	VERB	VERB	57	F	False	weaken	back	None	None	False	False
 VERB_KAIKOTA	VERB	VERB	74	A	False	strengthen	back	None	None	False	False
 VERB_KAIKOTA	VERB	VERB	74	D	False	strengthen	back	None	None	False	False
+VERB_KAIPAELLA	VERB	VERB	67	None	False	strengthen	back	None	None	False	False
 VERB_KAIVATA	VERB	VERB	73	E	False	strengthen	back	None	None	False	False
 VERB_KALPPIA	VERB	VERB	61	B	False	weaken	back	None	None	False	False
 VERB_KAMMETA	VERB	VERB	74	H	False	strengthen	back	None	None	False	False
@@ -2411,6 +2421,7 @@ VERB_SAMMOTA	VERB	VERB	74	H	False	strengthen	back	None	None	False	False
 VERB_SATAA	VERB	VERB	56	F	False	weaken	back	None	None	False	False
 VERB_SELVITÄ	VERB	VERB	75	None	False	strengthen	front	None	None	False	False
 VERB_SIEPATA	VERB	VERB	73	B	False	strengthen	back	None	None	False	False
+VERB_SI’ITÄ	VERB	VERB	75	D	False	strengthen	front	None	None	False	False
 VERB_SILIYTYÄ	VERB	VERB	52	F	False	weaken	front	None	None	False	False
 VERB_SILPOA	VERB	VERB	52	E	False	weaken	back	None	None	False	False
 VERB_SIVALTAA	VERB	VERB	54	I	False	weaken	back	None	None	False	False
@@ -2480,7 +2491,9 @@ VERB_ÄLLISTYÄ	VERB	VERB	52	None	False	weaken	front	None	None	False	False
 VERB_ÄNGETÄ	VERB	VERB	74	G	False	strengthen	front	None	None	False	False
 VERB_ÄRISTÄ	VERB	VERB	66	None	False	strengthen	front	None	None	False	False
 VERB_ÖYKKÄRÖIDÄ	VERB	VERB	62	None	False	strengthen	front	None	None	False	False
-X_51eikä	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
-X_51ettei	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
-X_51äläkä	CONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
+X_51eikä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
+X_51ettei	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
+X_51äläkä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False
 X_FORGN_EN	X	X	99	None	False	weaken	back	None	None	False	False
+X_FORGN_SV	X	X	99	None	False	weaken	back	None	None	False	False
+X_IGNORE	X	X	99	None	False	weaken	back	None	None	False	False

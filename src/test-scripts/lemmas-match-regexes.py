@@ -61,7 +61,7 @@ def main():
         quoting = csv.QUOTE_NONE
 
     errors = False
-    # read joins from file if any
+    # read regexes from paradign definition file
     regexmap = dict()
     with open(args.regex_file, 'r', newline='') as regexes:
         re_reader = csv.DictReader(regexes, delimiter=args.separator,
@@ -72,9 +72,12 @@ def main():
                       re_parts)
                 continue
             key = re_parts['new_para']
-            regexmap[key] = re_parts['suffix_regex']
+            if re_parts['suffix_regex']:
+                regexmap[key] = re_parts['suffix_regex']
+            else:
+                regexmap[key] = ''
 
-    # read from csv files
+    # read lemmas from lexemes file
     with open(args.input, 'r', newline='') as infile:
         tsv_reader = csv.DictReader(infile, delimiter=args.separator,
                                     quoting=quoting, escapechar='\\', strict=True)
@@ -95,6 +98,9 @@ def main():
                           regexmap[tsv_parts['new_para']], '$/',
                           sep='', file=stderr)
                     errors = True
+            else:
+                print(tsv_parts['new_para'], "not found in", args.regex_file)
+                errors = True
     if errors:
         print("you must fix database integrity or hack the scripts",
               "before continuing")

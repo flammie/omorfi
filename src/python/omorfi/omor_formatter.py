@@ -23,7 +23,7 @@
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .lexc_formatter import lexc_escape
+from .string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
 
 
 class OmorFormatter(Formatter):
@@ -66,23 +66,30 @@ class OmorFormatter(Formatter):
         '[CONJ=COMPARATIVE]',
         '[CONJ=COORD]',
         '[DRV=IN]',
+        '[DRV=ISA]',
         '[DRV=INEN]',
+        '[DRV=NEN]',
         '[DRV=JA]',
         '[DRV=LAINEN]',
+        '[DRV=LA]',
         '[DRV=LLINEN]',
         '[DRV=MA]',
         '[DRV=MAISILLA]',
         '[DRV=MATON]',
         '[DRV=MINEN]',
+        '[DRV=MAINEN]',
+        '[DRV=LAINEN]',
         '[DRV=MPI]',
         '[DRV=NUT]',
         '[DRV=NUT]',
         '[DRV=OI]',
+        '[DRV=HKO]',
         '[DRV=S]',
         '[DRV=STI]',
         '[DRV=TAR]',
         '[DRV=TATTAA]',
         '[DRV=TATUTTAA]',
+        '[DRV=TUTTAA]',
         '[DRV=TAVA]',
         '[DRV=TON]',
         '[DRV=TSE]',
@@ -227,7 +234,7 @@ class OmorFormatter(Formatter):
         '[UPOS=AUX]',
         '[UPOS=DET]',
         '[UPOS=INTJ]',
-        '[UPOS=CONJ]',
+        '[UPOS=CCONJ]',
         '[UPOS=SCONJ]',
         '[UPOS=SCONJ][CONJ=COMPARATIVE]',
         '[UPOS=SCONJ][CONJ=ADVERBIAL]',
@@ -243,6 +250,8 @@ class OmorFormatter(Formatter):
         '[VOICE=ACT]',
         '[VOICE=PSS]',
         '[WORD_ID=',
+        '[NEWPARA=',
+        '[BLACKLIST=',
         "[FOREIGN=FOREIGN]"
     }
 
@@ -372,11 +381,17 @@ class OmorFormatter(Formatter):
         "Cpos": "[CMP=POS]",
         "Ccmp": "[CMP=CMP]",
         "Csup": "[CMP=SUP]",
-        "Dinen": "[DRV=INEN]",
+        "Dhko": "[DRV=HKO]",
+        "Dinen": "[DRV=NEN]",
+        "Dnen": "[DRV=INEN]",
+        "Dla": "[DRV=LA]",
+        "Dlainen": "[DRV=LAINEN]",
+        "Dllinen": "[DRV=LLINEN]",
+        "Disa": "[DRV=ISA]",
         "Dja": "[DRV=JA]",
-        # "Dmaisilla": "[INF=MAISILLA]",
         "Dmaisilla": "[DRV=MAISILLA]",
         "Dminen": "[DRV=MINEN]",
+        "Dmainen": "[DRV=MAINEN]",
         "Dtu": "[DRV=TU]",
         "Dnut": "[DRV=NUT]",
         "Dva": "[DRV=VA]",
@@ -388,13 +403,14 @@ class OmorFormatter(Formatter):
         "Dttaa": "[DRV=TTAA]",
         "Dtattaa": "[DRV=TATTAA]",
         "Dtatuttaa": "[DRV=TATUTTAA]",
+        "Dtuttaa": "[DRV=TUTTAA]",
         "Dttain": "[DRV=TTAIN]",
         "Du": "[DRV=U]",
         "Duus": "[DRV=UUS]",
-        "Dmpi": "",
-        # "Dmpi": "[DRV=MPI]",
-        "Din": "",
-        # "Din": "[DRV=IN]",
+        "Dmpi": "[DRV=MPI]",
+        "Dtar": "[DRV=TAR]",
+        "Dton": "[DRV=TON]",
+        "Din": "[DRV=IN]",
         "Ia": "[INF=A]",
         "Ie": "[INF=E]",
         "Ima": "[INF=MA]",
@@ -460,7 +476,7 @@ class OmorFormatter(Formatter):
         "ADP": "[UPOS=ADP]",
         "ADJ": "[UPOS=ADJ]",
         "INTJ": "[UPOS=INTJ]",
-        "CONJ": "[UPOS=CONJ]",
+        "CCONJ": "[UPOS=CCONJ]",
         "SCONJ": "[UPOS=SCONJ]",
         "PRON": "[UPOS=PRON]",
         "SYM": "[UPOS=SYM]",
@@ -484,7 +500,7 @@ class OmorFormatter(Formatter):
         "DERSTI": "[LEX=STI]",
         "DERTTAIN": "[LEX=TTAIN]",
         "CONJUNCTION": "",
-        "COORDINATING": "[UPOS=CONJ]",
+        "COORDINATING": "[UPOS=CCONJ]",
         "COMPARATIVE": "[UPOS=SCONJ][CONJ=COMPARATIVE]",
         "PRONOUN": "[POS=PRONOUN]",
         "ADVERBIAL": "[UPOS=SCONJ][CONJ=ADVERBIAL]",
@@ -566,10 +582,10 @@ class OmorFormatter(Formatter):
         "UNSPECIFIED": "",
         "FTB3man": "",
         "LEMMA-START": "[WORD_ID=",
-        "CONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
+        "LEMMA-END": "]",
+        "CCONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
         "FTB3MAN": "",
         "XForeign": "[FOREIGN=FOREIGN]",
-        ".": "",
         "": ""}
 
     def __init__(self, verbose=False, **kwargs):
@@ -610,7 +626,7 @@ class OmorFormatter(Formatter):
         self.newparas = True
         if 'newparas' not in kwargs or not kwargs['newparas']:
             for k, v in self.stuff2omor.items():
-                if "NEW_PARA=" in v:
+                if "NEWPARA=" in v:
                     self.stuff2omor[k] = ""
             self.newparas = False
 
@@ -622,46 +638,30 @@ class OmorFormatter(Formatter):
         else:
             if self.verbose:
                 fail_formatting_missing_for(stuff, "omor")
-            return ""
+            return "ERRORMACRO"
 
-    def analyses2lexc(self, anals):
+    def analyses2lexc(self, anals, surf):
         omorstring = ''
         for tag in anals.split('|'):
-            omorstring += self.stuff2lexc(tag)
+            if tag == '@@COPY-STEM@@':
+                omorstring += lexc_escape(surf)
+            elif tag.startswith('@@LITERAL') and tag.endswith('@@'):
+                omorstring += lexc_escape(tag[len('@@LITERAL'):-len('@@')])
+            else:
+                omorstring += self.stuff2lexc(tag)
         return omorstring
 
     def continuation2lexc(self, anals, surf, cont):
-        omorstring = ''
-        if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
-            omorstring = lexc_escape(surf)
-            if anals and anals != 'LEMMA-START':
-                omorstring += ']'
-
-        # Collapse DRV=NUT/TU and PCP=NUT to PCP=NUT with full inflection
-        if anals == 'Dnut':
-            anals = 'Vact|Cnut'
-        elif anals == 'Dtu':
-            anals = 'Vpss|Cnut'
-        # Collapse DRV=VA/TAVA and PCP=VA to PCP=VA with full inflection
-        elif anals == 'Dva':
-            anals = 'Vact|Cva'
-        elif anals == 'Dtava':
-            anals = 'Vpss|Cva'
-        # Collapse DRV=MA and PCP=AGENT to PCP=AGENT with full inflection
-        elif anals == 'Dma':
-            anals = 'Cma'
-        # Collapse DRV=MATON and PCP=NEG to PCP=NEG with full inflection
-        elif anals == 'Dmaton':
-            anals = 'Cmaton'
-        elif ('Cnut' in anals or 'Cva' in anals or 'Cma' in anals or 'Cmaton' in anals) and \
-             (anals.endswith('Npl') or anals.endswith('Nsg')):
-            anals = anals + '|Xnom'
-
-        tags = anals.split('|')
-        for tag in tags:
-            omorstring += self.stuff2lexc(tag)
+        tags = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
-        return "%s:%s\t%s ;\n" % (omorstring, surf, cont)
+        return "%s:%s\t%s ;\n" % (tags, surf, cont)
+
+    def guesser2lexc(self, regex, deletion, cont):
+        if not regex:
+            regex = ''
+        regex = egrep2xerox(regex)
+        regex = regex_delete_surface(regex, deletion)
+        return "< ?* %s >\t%s ;\n" % (regex, cont)
 
     def wordmap2lexc(self, wordmap):
         '''
@@ -671,8 +671,12 @@ class OmorFormatter(Formatter):
             # do not include normal white space for now
             return ""
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        wordmap['analysis'] = "[WORD_ID=%s]" % (lexc_escape(wordmap['lemma']))
-        wordmap['particle'] = wordmap['particle'].replace('QUALIFIER', 'ADJ')
+        if int(wordmap['homonym']) == 1:
+            wordmap['analysis'] = "[WORD_ID=%s]" % (
+                lexc_escape(wordmap['lemma']))
+        else:
+            wordmap['analysis'] = "[WORD_ID=%s_%s]" % (
+                lexc_escape(wordmap['lemma']), wordmap['homonym'])
         wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
             wordmap['analysis'] += self.stuff2lexc('SUFFIX')
@@ -681,6 +685,9 @@ class OmorFormatter(Formatter):
             if wordmap['upos'] == 'ADJ':
                 wordmap['analysis'] += self.stuff2lexc('Cpos')
 
+        if wordmap['blacklist']:
+            wordmap['analysis'] += self.stuff2lexc('BLACKLISTED') + \
+                wordmap['blacklist'] + ']'
         if wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
@@ -704,16 +711,11 @@ class OmorFormatter(Formatter):
         if wordmap['adptype']:
             for stuff in wordmap['adptype'].split("|"):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
-        if wordmap['is_proper']:
-            if self.props and wordmap['proper_noun_class']:
-                for prop in wordmap['proper_noun_class'].split(','):
-                    wordmap['analysis'] += self.stuff2lexc(prop)
-            else:
-                wordmap['analysis'] += self.stuff2lexc('PROPER')
 
+        if self.props and wordmap['proper_noun_class']:
+            wordmap['analysis'] += self.stuff2lexc(wordmap['proper_noun_class'])
         if self.semantics and wordmap['sem']:
-            for sem in wordmap['sem'].split(','):
-                wordmap['analysis'] += self.stuff2lexc(sem)
+            wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
 
         if wordmap['style']:
             wordmap['analysis'] += self.stuff2lexc(wordmap['style'])
@@ -729,10 +731,13 @@ class OmorFormatter(Formatter):
 
         # match WORD_ID= with epsilon, then stub and lemma might match
         lex_stub = '0' + wordmap['stub']
-        retvals = []
-        retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
-                                      wordmap['new_para'])]
-        return "\n".join(retvals)
+
+        lexc_line = "%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+                                      wordmap['new_para'])
+        if 'BLACKLISTED' in wordmap['new_para']:
+            return "! ! !" + lexc_line
+        else:
+            return lexc_line
 
     def multichars_lexc(self):
         multichars = "Multichar_Symbols\n"
@@ -753,6 +758,7 @@ class OmorFormatter(Formatter):
         if False:
             root += "0   TAGGER_HACKS    ;\n"
         return root
+
 
 # self test
 if __name__ == '__main__':

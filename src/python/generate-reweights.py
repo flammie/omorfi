@@ -23,6 +23,7 @@
 import argparse
 from sys import exit
 
+from omorfi.apertium_formatter import ApertiumFormatter
 from omorfi.ftb3_formatter import Ftb3Formatter
 from omorfi.no_tags_formatter import NoTagsFormatter
 from omorfi.omor_formatter import OmorFormatter
@@ -64,6 +65,8 @@ def main():
         formatter = Ftb3Formatter(True)
     elif args.format == 'boundary':
         formatter = NoTagsFormatter(True)
+    elif args.format == 'apertium':
+        formatter = ApertiumFormatter(True)
     else:
         print("Not implemnetd formatters", args.format)
         exit(1)

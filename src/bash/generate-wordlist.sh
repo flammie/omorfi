@@ -5,7 +5,7 @@ if test $# -lt 2 ; then
 fi
 cat $1 | while read l; do
     echo ${l}...
-    echo -n ${l}: >> $2
+    echo -n \"${l} \"  >> $2
     echo ${l} |\
         sed -e 's/./\0 /g' |\
         sed -e 's/[$_]/%\0/g' |\

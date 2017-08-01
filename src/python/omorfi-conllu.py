@@ -18,7 +18,13 @@ def get_lemmas(anal):
     lemmas = re_lemma.finditer(anal[0])
     rv = []
     for lemma in lemmas:
-        rv += [lemma.group(1)]
+        s = lemma.group(1)
+        for i in range(32):
+            hnsuf = '_' + str(i)
+            if s.endswith(hnsuf):
+                s = s[:-len(hnsuf)]
+        rv += [s]
+
     return rv
 
 
@@ -32,7 +38,7 @@ def get_last_feat(feat, anal):
 
 
 def get_last_feats(anal):
-    re_feats = re.compile("\[[^]]*\]")
+    re_feats = re.compile("\[[A-Z_]*=[^]]*\]")
     rvs = list()
     feats = re_feats.finditer(anal[0])
     for feat in feats:
@@ -50,7 +56,7 @@ def format_feats_ud(anal, hacks=None):
         key = f.split("=")[0].lstrip("[")
         value = f.split("=")[1].rstrip("]")
         if key == 'CASE':
-            if value == 'LAT':
+            if value == 'LAT' and hacks != 'ftb':
                 # XXX: hack to retain compability
                 rvs['Number'] = 'Sing'
             else:
@@ -66,8 +72,7 @@ def format_feats_ud(anal, hacks=None):
             elif 'PAST' in value:
                 rvs['Tense'] = 'Past'
         elif key == 'MOOD':
-            if not hacks:
-                rvs['VerbForm'] = 'Fin'
+            rvs['VerbForm'] = 'Fin'
             if value == 'INDV':
                 rvs['Mood'] = 'Ind'
             elif value == 'COND':
@@ -109,9 +114,8 @@ def format_feats_ud(anal, hacks=None):
                 # XXX
                 rvs.pop('Voice')
             elif value == 'NEG':
-                rvs['Negative'] = 'Neg'
-                if not hacks:
-                    rvs['VerbForm'] = 'Fin'
+                rvs['Polarity'] = 'Neg'
+                rvs['VerbForm'] = 'Fin'
         elif key == 'PCP':
             rvs['VerbForm'] = 'Part'
             if value == 'VA':
@@ -147,9 +151,8 @@ def format_feats_ud(anal, hacks=None):
                 rvs['Degree'] = 'Pos'
         elif key == 'SUBCAT':
             if value == 'NEG':
-                rvs['Negative'] = 'Neg'
-                if not hacks:
-                    rvs['VerbForm'] = 'Fin'
+                rvs['Polarity'] = 'Neg'
+                rvs['VerbForm'] = 'Fin'
             elif value == 'QUANTIFIER':
                 rvs['PronType'] = 'Ind'
             elif value == 'REFLEXIVE':
@@ -200,14 +203,16 @@ def format_feats_ud(anal, hacks=None):
                 # values found in UD finnish Derivs
                 rvs['Derivation'] = value[0] + value[1:].lower()
             elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
-                           'ADE', 'INE', 'ELA', 'ILL']:
+                           'ADE', 'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN',
+                           'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA',
+                           'MA', 'LOC', 'LA']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
                 print("in", anal[0])
                 exit(1)
-        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE',
+        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                      'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
             # Not feats in UD:
             # * UPOS is another field
@@ -226,8 +231,8 @@ def format_feats_ud(anal, hacks=None):
             print("in", anal[0])
             exit(1)
     rv = ''
-    for k, v in sorted(rvs.items()):
-        rv += k + '=' + v + '|'
+    for k in sorted(rvs, key=str.lower):
+        rv += k + '=' + rvs[k] + '|'
     if len(rvs) != 0:
         return rv.rstrip('|')
     else:
@@ -246,7 +251,7 @@ def format_third_tdt(upos):
         return 'A'
     elif upos in ['VERB', 'AUX']:
         return 'V'
-    elif upos in ['CONJ', 'SCONJ']:
+    elif upos in ['CCONJ', 'SCONJ']:
         return 'C'
     elif upos == 'ADP':
         return 'Adp'
@@ -344,7 +349,7 @@ def main():
     if options.fsa:
         if options.verbose:
             print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True)
+        omorfi.load_from_dir(options.fsa, analyse=True, guesser=True)
     else:
         if options.verbose:
             print("reading language models in default dirs")
@@ -375,6 +380,10 @@ def main():
                 index = int(fields[0])
             except ValueError:
                 if '-' in fields[0]:
+                    # MWE
+                    continue
+                elif '.' in fields[0]:
+                    # a ghost
                     continue
                 else:
                     print(
@@ -382,6 +391,10 @@ def main():
                     exit(1)
             surf = fields[1]
             anals = omorfi.analyse(surf)
+            if not anals or len(anals) == 0 or (len(anals) == 1 and
+                                                'UNKNOWN' in anals[0][0]):
+                unknowns += 1
+                anals = omorfi.guess(surf)
             if anals and len(anals) > 0:
                 if options.debug:
                     debug_analyses_conllu(
@@ -392,9 +405,6 @@ def main():
                 else:
                     print_analyses_conllu(index, surf, anals[0],
                                           options.outfile, options.hacks)
-            if not anals or len(anals) == 0 or (len(anals) == 1 and
-                                                'UNKNOWN' in anals[0][0]):
-                unknowns += 1
         elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
             # these comments I know need to be retained as-is
             print(line.strip(), file=options.outfile)
@@ -422,6 +432,7 @@ def main():
     print("Tokens per timeunit:", tokens / (realend - realstart),
           file=options.statfile)
     exit(0)
+
 
 if __name__ == "__main__":
     main()

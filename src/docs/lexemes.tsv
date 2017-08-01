@@ -1,100 +1,252 @@
-lemma	doc
-ADSL	Asymmetric Digital Subscriber Line
-API	Application Programming Interface
-atk	automaattinen tekstinkäsittely
-BBC	British Broadcasting Company
-BKT	Brutto-Kansan-Tuote
-BMW	Bayerische Motor W
-cd	compact disc
-CD	Compact Disc
-CD-R	Compact Disc Read-Only
-CD-RW	Compact Disc Read-Write
-CIA	Central Intelligence Agency
-DDR	Deutsches Democratische Republic
-dna	deoxyribonucleic acid
-DNA	Deoxyribo-Nucleic Acid
-DJ	Disc Jockey
-DPI	Dots Per Inch
-DVD	Digital Versatile Disc
-EEC	European Economy Council
-EKP	Euroopan Keskus-Pankki
-EMU	European Monetary Union
-ETY	Euroopan Turvallisuus-Yhteisö
-EU	Euroopan Unioni
-EY	Euroopan Yhteisö
-FBI	Federal Bureau of Investigation
-FIFA	Football
-FTP	File Transfer Protocol
-GM	General Motors
-HIFK	Helsingfors 
-HIV	Human Immunodeficiency Virus
-HJK	Helsingin Jalkapallo-Klubi
-HKL	Helsingin Kaupungin Liikenne
-HS	Helsingin Sanomat
-HTML	Hyper-Text Markup Language
-HTTP	Hyper-Text Transfer Protocol
-IBM	International Business Machines
-internet-tv	Tele-Visio
-IP	Internet Protocol
-IRC	Internet Relay Chat
-ISBN	International Serial Book Number
-IT	Informaatio-Teknologia
-KHO	Korkein Hovi-Oikeus
-KOP	Kansallis-Osake-Pankki
-lehtiö-pc	Personal Computer
-media-pc	Personal Computer
-MTV	Music TeleVision
-MTV3	Mainos-Tele-Visio
-NASA	National Air and Space A
-NATO	North-Atlantic T Organisation
-NBA	National Basketball Association
-netti-tv	Tele-visio
-NHL	National Hockey League
-NL	Neuvosto-Liitto
-NPC	Non-Player Character
-OK	not pronounced in words
-oyj	Julkinen Osake-Yhtiö
-OY	Osake-Yhtiö
-oy	Osake-Yhtiö
-paneeli-pc	Personal Computer
-PDF	Portable Document Format
-pH	per Hydrogen
-pien-pc	Personal Computer
-pinta-WWW	World Wide Web
-PPI	Points Per Inch
-PR	Public Relations
-RNA	Ribonucleic Acid
-SAK	Suomen Ammattiliittojen Keskusjärjestö
-SDP	Sosiali-Demokraattinen Puolue 
-SGML	Standardised General Markup Language
-SKDL	Suomen Kristillis-Demokraattien Liitto
-Skp	Suomen keskuspankki
-SOK	Suomen Osuus-Kauppa
-SPR	Suomen Punainen Risti
-SQL	Structured Query Language
-STT	Suomen Tieto-Toimisto
-SUL	Suomen Urheilu-Liitto
-TCP/IP	Transmission Control Protocol / Internet Protocol
-TCP	Transmission Control Protocol
-TI	Texas Instruments
-TM	Tekniikan Maailma
-TPS	Turun Pallo-Seura
-TS	Turun Sanomat
-tv	tele-visio
-URL	Uniform Resource Locator
-USA	United States of America
-VIP	Very Important Person
-VR	Valtion Rautatiet
-VW	Volks Wagen
-WAP	Wireles Application Protocol
-WC	Water Closet
-WHO	World Health Organisation
-WSOY	Werner-Söderström Osake-Yhtiö
-WTO	World Trade Organisation
-WWF	World Wildlife Foundation
-www	world wide web
-WWW	World Wide Web
-XML	Extensible Markup Language
-Y2K	Year 2000
-YK	Yhdistyneet Kansakunnat
-ÄO	Älykkyysosamäärä
+lemma	homonym	doc
+|	1	pipe used in computer systems, logics etc.
+-	1	ASCII minus-hyphen, still most common dash
+,	1	comma
+;	1	semicolon
+:	1	colon
+!	2	exclamation mark
+?	2	question mark
+/	2	slash, for division, URLs, etc.
+.	1	full stop
+...	1	ellipsis
+'	1	ASCII single quotation mark, still most common single quotation
+’	1	left single quotation in 9-shape, common and recommended
+’	2	right single quotation in 9-shape, common and recommended
+"	1	ASCII double quotation mark, still most common double quotation
+"	2	ASCII double quotation mark, still most common double quotation
+”	1	left double quotation in 9-shape, common and recommended
+”	2	right double quotation in 9-shape, common and recommended
+(	1	left bracket
+)	1	right bracket
+[	1	left square bracket
+]	1	right square bracket
+{	1	left curly bracket
+}	1	right curly bracket
+$	1	dollar
+€	1	euro
++	1	plus
+˗	1	minus sign, rare
+—	1	em dash, rarer than en dash or minus-hyphen
+–	1	en dash, relatively common, recommended for hyphens
+‰	1	permille
+―	1	quotation dash, rare but seen in some official corpora
+…	1	single symbol for ellipsis, rare but seen in some official corpora
+¼	1	quarter
+½	1	half
+¹	1	superscript one
+²	1	superscript two
+³	1	superscript three
+ADSL	1	Asymmetric Digital Subscriber Line
+aikaan	1	done, accomplished, verb complement kind of, e.g., "saada aikaan"
+aikaan	2	during (around), adposition with genitive complement, e.g., "sen aikaan"
+aikana	1	during (while), adposition with genitive complement, e.g., "sen aikana"
+aina	1	FIXME, adposition
+aina	2	always, as adverb, "aina mun pitää"
+ajallaan	1	FIXME, adposition
+ajallaan	2	in time, as adverb, "yritä tulla ajallaan"
+ajatuksissaan	1	in thought, as adverb, "olin ajatuksissaan ~ ajatuksissani", see VISK § 655
+alapuolelta	1	under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
+alapuolella	1	under, as adposition, genitive complement or possessive, "laiturin alapuolella"
+alapuolelle	1	to under, as adposition, genitive complement or possessive, "laiturin alapuolelle"
+alapuolelta	1	from under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
+alas	1	to under, down, as adverb, "tule alas"
+alas	2	down (the road or such), as adposition, partitive complement or possessive, "alas tietä pitkin"
+ali	1	to / through underneath, as adverb, "täytyy mennä ali"
+ali	2	to / through underneath, as adposition, genitive complement or possessive, "kölin ali"
+alitse	1	via under, as adposition, genitive complement or possessive, "kölin alitse"
+alkaen	1	onwards, to start, as adverb, "alun alkaen"
+alkaen	2	beginning from timepoint, as adposition, elative complement, "maanantaista alkaen"
+alkupuolella	1	in the beginning, as adposition, genitive complement or possessive, "tarinan alkupuolella"
+alla	1	under, as adposition, genitive complement or possessive, "laiturin alla"
+alle	1	to under, as adposition, genitive complement or possessive, "laiturin alle"
+alta	1	from under, as adposition, genitive complement or possessive, "laiturin alta"
+alussa	1	in the beginning, as adposition, genitive complement or possessive, "tarinan alussa"
+API	1	Application Programming Interface
+asemasta	1	instead, as adv, ??
+asemasta	2	instead of, as adposition, genitive complement or possessive, "tien asemasta", commonly used instead of 'asemesta'
+asemesta	2	instead of, as adposition, genitive complement or possessive, "tien asemesta", grammar recommends instead of 'asemasta'
+asti	2	until, as adposition, complent is genitive, "loppuun asti"
+atk	1	automaattinen tekstinkäsittely
+avulla	1	with help of, as adp, complement is genitive or possessive, "sen avulla"
+BBC	1	British Broadcasting Company
+BKT	1	Brutto-Kansan-Tuote
+BMW	1	Bayerische Motor W
+cd	1	compact disc
+CD	1	Compact Disc
+CD-R	1	Compact Disc Read-Only
+CD-RW	1	Compact Disc Read-Write
+CIA	1	Central Intelligence Agency
+DDR	1	Deutsches Democratische Republic
+DJ	1	Disc Jockey
+dna	1	deoxyribonucleic acid
+DNA	1	Deoxyribo-Nucleic Acid
+DPI	1	Dots Per Inch
+DVD	1	Digital Versatile Disc
+edessä	2	in front of, as adp, complement is genitive or possessive, "talon edessä"
+editse	1	via front of, as adp, complement is genitive or possessive, "talon editse"
+EEC	1	European Economy Council
+EKP	1	Euroopan Keskus-Pankki
+eli	1	that is, then, sometimes also or, co-ordinating conjunction, "kissa eli eläin", "kissa eli koira"
+eli	2	so, discourse particle, to be mumbled turn-initially or pausing, "eli eli, mitäs sit"
+EMU	1	European Monetary Union
+ennen	1	in the old times, as adverb, "ennen oli kaikki paremmin"
+ennen	2	before, as adposition, complement in partitive, "ennen kaikkea"
+esim.	1	esimerkiksi, "ex." or for example
+ettei	1	compound of että+ei with inflection (technically part of the dictionary, but as a non-inflecting particle set)
+että	1	that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature "tiesin, että on yö"
+että	3	that, co-ordinating conjunction, one of the more generic conjunctions, sometimes co-ordinating, refer to VISK § 819
+ETY	1	Euroopan Turvallisuus-Yhteisö
+EU	2	Euroopan Unioni
+euro	1	euro, european currency from 2001-
+Eurooppa	2	Europe, as proper noun for geographical area
+EY	2	Euroopan Yhteisö
+FBI	1	Federal Bureau of Investigation
+FIFA	1	Football
+FTP	1	File Transfer Protocol
+GM	1	General Motors
+HIFK	1	Helsingfors
+HIV	1	Human Immunodeficiency Virus
+HJK	1	Helsingin Jalkapallo-Klubi
+HKL	1	Helsingin Kaupungin Liikenne
+HS	1	Helsingin Sanomat
+HTML	1	Hyper-Text Markup Language
+HTTP	1	Hyper-Text Transfer Protocol
+hännille	2	to end, tails, as adposition, genitive complement or possessive, "jonon hännille"
+hännillä	2	end, "tails", as adposition, genitive complement or possessive, "jonon hännillä"
+hänniltä	2	from end, tails, as adposition, genitive complement or possessive, "jonon hänniltä"
+IBM	1	International Business Machines
+internet-tv	1	Tele-Visio
+IP	1	Internet Protocol
+IRC	1	Internet Relay Chat
+ISBN	1	International Serial Book Number
+IT	1	Informaatio-Teknologia
+itse	1	self, as the reflexive pronoun, see VISK §769
+itse	2	self as reflexive pronoun (c.f. VISK § 104)
+ja	1	and, as cconj, "kissoja ja koiria", see VISK § 817
+ja	2	as well, as adverb, colloquial-ish, "mentiin sinne ja"
+joko	1	either, paired with tai in either-or structure, rarer sub-ordinating reading, see VISK § 815
+joko	2	already? (from jo+ko), adverb, "joko taas?"
+joko	3	either, paired with tai in either-or structure, perhaps (this) co-ordinating is more common interpretation, "joko minä tai sinä", see VISK § 815
+jos	2	if, as sconj, "jos voisit jäädä", see VISK § 818
+jotta	1	so that, in order to, as sub-ordinating conjunction, "jotta pystyn valmistumaan",
+jotta	2	yota, noun prefix SI unit, rare
+jäljessä	2	behind, as adposition
+jäljestä	2	from behind, as adposition
+kanssa	1	with something, adposition with genitive complement, suffix-likey, "Pekan kanssa", "kanssani"
+kanssa	2	also as well, adverb, perhaps rather limited, "tuletko kanssa?"
+KHO	1	Korkein Hovi-Oikeus
+kohta	1	place, spot, noun
+kohta	2	soon, adverb
+kohta	3	if not really, paired sub-ordinating conjunction jos ... kohta
+KOP	1	Kansallis-Osake-Pankki
+koska	1	when, as adverb, "koska tulet?"
+koska	3	because, sub-ordinating conj, "koska olen hyvä"
+kuin	1	as ... as, sub-ordinating conj, comparative particle, "niin kauan kuin", "parempi kuin"
+kuin	4	both ... and, paired with niin, co-ordinating conj, "niin kissoja kuin koiriakin"
+kun	1	when, sub-ordinating conj, "kun menen kotiin", see VISK § 818
+kunnes	2	until, sub-ordinating conjunction, "kunnes olet valmis"
+kuten	1	like a, such, as adverb, "eläin kuten kärpänen", used like "kuin"
+kuten	2	like, as sub-ordinating conjunction "tulkitse kuten pystyt"
+lehtiö-pc	1	Personal Computer
+media-pc	1	Personal Computer
+mikä	1	what, as interrogataive, "mikä tuo on?"
+mikä	2	what a, quantifier, "mikä mainio esimerkkilause"
+mikä	3	that, which, as relative pronoun, "se meni, mikä tuli"
+mikä	4	that, which, as conjunction
+mikäli	1	if, given that, sub-ordinating conjunction, "mikäli voidaan"
+mitä	1	what, interrogative adverb "mitä haluat"
+mitä	2	that, relative FIXME
+mitä	3	than, as sub-ordinating conjuction "aikaisemmin mitä ajattelin" used like "kuin", maybe also paired conjunction sitä-mitä?
+mm.	1	muun muassa, "incl." or among others
+MTV	1	Music TeleVision
+MTV3	1	Mainos-Tele-Visio
+mukaan	1	according to, adp, genitive complement or possessive suffix, "lehden mukaan", "hänen mukaansa"
+mukaan	2	along, adv, verb complement, "lähde mukaan!"
+mutta	1	this adp is FIXME
+mutta	2	... but, co-ordinating conjunction, "ei hyvä, mutta ok"
+Mutta	1	proper noun, rather rare but notably overlaps an everyday conjunction
+NASA	1	National Air and Space A
+NATO	1	North-Atlantic T Organisation
+NBA	1	National Basketball Association
+netti-tv	1	Tele-visio
+NHL	1	National Hockey League
+niin	1	so, such, adverb, "tehtiin niin"
+niin	2	as well as, paired co-ordinating conjunction with kuin, "niin kissoja kuin koiriakin"
+NL	1	Neuvosto-Liitto
+n:o	1	abbreviation for number, chiefly europarl language etc.
+NPC	1	Non-Player Character
+OK	1	not pronounced in words
+ottamatta	1	excepting, as adposition, illative complement, mainly "lukuun ottamatta"
+oy	1	Osake-Yhtiö
+OY	1	Osake-Yhtiö
+oyj	1	Julkinen Osake-Yhtiö
+paitsi	1	except, as adposition, complement is partitive, see VISK § 708
+paitsi	2	but not, as adverb, "jään paitsi"
+paitsi	3	except, as sub-ordinating conjunction, "kerroin kaiken muun, paitsi en totuutta" UD Finnish, see also VISK § 708 examples d)
+paneeli-pc	1	(Panel) Personal Computer??
+PDF	1	Portable Document Format
+perässä	2	behind, as adposition
+pH	1	per Hydrogen
+pien-pc	1	Personal Computer
+pinta-WWW	1	World Wide Web
+PPI	1	Points Per Inch
+PR	1	Public Relations
+RNA	1	Ribonucleic Acid
+s.	1	sivu, "p." or page
+saati	3	also not even, coordinating conj, "ei kissoja saati koiria", see VISK § 816
+SAK	1	Suomen Ammattiliittojen Keskusjärjestö
+SDP	1	Sosiali-Demokraattinen Puolue
+sekä	1	and too, coordinating conj, "kissat sekä koirat"
+SGML	1	Standardised General Markup Language
+sillä	1	because, subordinating conj, "sillä tiedän paremmin" (NB ambig with many se adessives)
+sisältä	2	from inside. as adposition, "talon sisältä"
+SKDL	1	Suomen Kristillis-Demokraattien Liitto
+Skp	1	Suomen keskuspankki
+SOK	1	Suomen Osuus-Kauppa
+SPR	1	Suomen Punainen Risti
+SQL	1	Structured Query Language
+STT	1	Suomen Tieto-Toimisto
+SUL	1	Suomen Urheilu-Liitto
+taas	1	again, adverb, "taas myöhässä"
+taas	2	when again, as paired sub-ordinating conjunction with kun, "kun taas huomenna ei"
+tai	1	or, coordinating conjunction, "kissat tai koirat"
+tai	2	a Kadai language, noun, rather rare but ambiguous with common conjunction
+takia	1	because of, as adpoistion, complement is genitive
+TCP	1	Transmission Control Protocol
+TCP/IP	1	Transmission Control Protocol / Internet Protocol
+TI	1	Texas Instruments
+TM	1	Tekniikan Maailma
+toisaalta	1	on the other hand, as adverb, "toisaalta ei kiinnosta"
+toisaalta	2	and otoh, as paired conjunction with ja
+TPS	1	Turun Pallo-Seura
+TS	1	Turun Sanomat
+tv	1	tele-visio
+URL	1	Uniform Resource Locator
+USA	1	United States of America
+vaan	1	but rather, as cconj, see VISK § 1106
+vaan	2	really indeed, as adverb, "ei nyt vaan pysty"
+vai	1	Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunctions and adverbs
+vai	2	really so, as adverb, colloquial, "ai on vai"
+vai	3	or, as cconj, used in contrastive position only, "kissoja vai koiria"
+vaikk	1	even though, as subordinating conjunction, colloquial "vaikka ärsyttäisikin", see VISK § 816
+vaikka	2	even, as adverb, "vaikka mitä", "vaikka kuinka paljon" see VISK § 841
+vaikka	3	even though, as subordinating conjunction, "vaikka ärsyttäisikin", see VISK § 816
+VIP	1	Very Important Person
+VR	1	Valtion Rautatiet
+VW	1	Volks Wagen
+WAP	1	Wireles Application Protocol
+WC	1	Water Closet
+WHO	1	World Health Organisation
+WSOY	1	Werner-Söderström Osake-Yhtiö
+WTO	1	World Trade Organisation
+WWF	1	World Wildlife Foundation
+www	1	world wide web
+WWW	1	World Wide Web
+XML	1	Extensible Markup Language
+Y2K	1	Year 2000
+YK	1	Yhdistyneet Kansakunnat
+ynnä	1	plus, as an adverb
+ynnä	2	and, as co-ordinating conjunction, rare
+ÄO	1	Älykkyysosamäärä
+ÄO	1	Älykkyysosamäärä
+ääriin	1	to the end of the, genitive argument for destination, usually e.g. earth or world
