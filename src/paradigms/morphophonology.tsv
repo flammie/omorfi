@@ -138,9 +138,6 @@ ADJ_ÄLLISTYNYT	ADJ	ADJECTIVE	47	None	False	strengthen	front	y	None	False	False
 ADJ_ÖYKKÄRI	ADJ	ADJECTIVE	6	None	False	weaken	front	None	None	False	False
 ADP_ALLA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_ALLE	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
-ADV_HYVILLÄÄN	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True
-ADV_ILKOSILLAAN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
-ADV_ISTUALLEEN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ADP_KOTONA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_LISÄKSI	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADP_LÄHELLÄ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
@@ -153,7 +150,10 @@ ADP_VALTAAN	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_VUOKSI	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True
 ADP_YLLE	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True
 ADV_AIKANSA	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
+ADV_HYVILLÄÄN	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True
 ADV_IKINÄ	ADV	PARTICLE	99	None	False	False	front	None	None	optional	False
+ADV_ILKOSILLAAN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
+ADV_ISTUALLEEN	ADV	PARTICLE	99	None	False	False	back	None	None	obligatory	True
 ADV_JO	ADV	PARTICLE	99	None	False	False	back	None	None	False	False
 ADV_JONNE	ADV	PARTICLE	99	None	False	False	back	None	None	False	False
 ADV_KUHUN	ADV	PARTICLE	99	None	False	False	back	None	None	False	True
@@ -348,6 +348,7 @@ NOUN_APE	NOUN	NOUN	48	B	False	strengthen	back	None	None	False	False
 NOUN_APU	NOUN	NOUN	1	E	False	weaken	back	None	None	False	False
 NOUN_ARISTOTELES	NOUN	NOUN	41	None	False	strengthen	back	None	None	False	False
 NOUN_ARKI	NOUN	NOUN	7	L	False	weaken	back	None	None	False	False
+NOUN_ARKKITEHTI	NOUN	NOUN	5	F	False	weaken	both	None	None	False	False
 NOUN_ASEMA	NOUN	NOUN	10	None	False	weaken	back	a	None	False	False
 NOUN_ASKAR	NOUN	NOUN	49	None	False	strengthen	back	None	None	False	False
 NOUN_ASKELLIN	NOUN	NOUN	33	I	False	strengthen	back	None	None	False	False
@@ -758,6 +759,7 @@ NOUN_RUOPPAAT	NOUN	NOUN	41	B	obligatory	strengthen	back	None	None	False	False
 NOUN_RUUHI	NOUN	NOUN	24	None	False	weaken	back	None	None	False	False
 NOUN_RUUMIS	NOUN	NOUN	41	None	False	strengthen	back	None	None	False	False
 NOUN_RUUVI	NOUN	NOUN	5	None	False	weaken	back	None	None	False	False
+NOUN_PYRAMIDI	NOUN	NOUN	5	None	False	weaken	both	None	None	False	False
 NOUN_RYNNÄS	NOUN	NOUN	41	J	False	strengthen	front	None	None	False	False
 NOUN_RYNTTYYT	NOUN	NOUN	41	C	obligatory	strengthen	front	None	None	False	False
 NOUN_RYNTÄÄT	NOUN	NOUN	41	J	obligatory	strengthen	front	None	None	False	False
