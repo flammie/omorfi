@@ -66,14 +66,12 @@ def main():
     args = ap.parse_args()
 
     # write preamble to wiki page
-    print('# Introduction', file=args.output)
-    print("""This document was automatically generated from the omorfi
-            database. It describes some of the internal codes used in the
-            database. Keys and values "_stuff_", and the _paradigms_ that
-            define inflection patterns or so.""", file=args.output)
+    print('# omor stuff: some internal short-hand codes in omorfi databases',
+            file=args.output)
+    print("_This is an automatically generated documentation based on omorfi" +
+          "lexical database._", file=args.output)
     # read from csv files
     print(file=args.output)
-    print('## Stuff ', file=args.output)
     print("""Stuff are internal things, but they appear in database a lot, so
             you will want to know what they are if you are gonna modify database
             of affixes.""", file=args.output)
@@ -82,7 +80,28 @@ def main():
         generators to either define analysis tags or decide whether or not to
         include the affected string into language model. The default renditions
         for a handful of omorfi tag formats are provided (only ones that have
-        trivially0 mapped formatting are included.""", file=args.output)
+        trivially mapped formatting are included.""", file=args.output)
+    print(file=args.output)
+    # stolen from turku:
+    # https://turkunlp.github.io/Finnish_PropBank/
+    print("""<table id="stufftable" class="display">
+<thead>
+<tr>
+<th>Stuff</th>
+</tr>
+</thead>
+<tbody>
+{% for stuff in site.stuffs %}
+<tr><td><a href="stuffs/{{stuff.stuff}}.html">{{stuff.stuff}}</a></td></tr>
+{% endfor %}
+</tbody>
+</table>
+
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#stufftable').DataTable({ autoFill: true });
+} );
+</script>""", file=args.output)
     for tsv_filename in args.stuff_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
