@@ -65,6 +65,10 @@ def main():
     args = ap.parse_args()
 
     # write preamble to wiki page
+    print('---', file=args.output)
+    print('layout: page', file=args.output)
+    print('title: Omor stuff–Internal codes', file=args.output)
+    print('---', file=args.output)
     print('# omor stuff: some internal short-hand codes in omorfi databases',
             file=args.output)
     print(file=args.output)
@@ -92,17 +96,15 @@ def main():
 </tr>
 </thead>
 <tbody>
-{% for stuff in site.stuffs %}
-<tr><td><a href="stuffs/{{stuff.stuff}}.html">{{stuff.stuff}}</a></td></tr>
+{% for page in site.pages %}
+{% if page.stuff %}
+<tr><td><a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a></td></tr>
+{% endif %}
 {% endfor %}
 </tbody>
 </table>
 
-<script type="text/javascript">
-$(document).ready( function () {
-    $('#stufftable').DataTable({ autoFill: true });
-} );
-</script>""", file=args.output)
+""", file=args.output)
     formatters = [OmorFormatter(args.verbose), ApertiumFormatter(args.verbose),
                   Ftb3Formatter(args.verbose), GiellaFormatter(args.verbose)]
     for tsv_filename in args.stuff_docs:
@@ -120,8 +122,13 @@ $(document).ready( function () {
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfile=open(args.outdir + '/' + tsv_parts['stuff'].lower() +
+                outfile=open(args.outdir + '/' + 
+                             tsv_parts['stuff'].replace('?', '_') +
                              '.markdown', 'w')
+                print('---', file=outfile)
+                print('layout: stuff', file=outfile)
+                print('stuff:', tsv_parts['stuff'], file=outfile)
+                print('---', file=outfile)
                 print("### `", tsv_parts['stuff'], "` ", file=outfile)
                 print(file=outfile)
                 print(tsv_parts['doc'], file=outfile)
