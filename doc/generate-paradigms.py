@@ -85,7 +85,7 @@ def main():
     print(file=args.output)
     # stolen from turku:
     # https://turkunlp.github.io/Finnish_PropBank/
-    print("""<table id="stufftable" class="display">
+    print("""<table id="paradigmtable" class="display">
 <thead>
 <tr>
 <th>Stuff</th>
@@ -94,7 +94,7 @@ def main():
 <tbody>
 {% for page in site.pages %}
 {% if page.paradigm %}
-<tr><td><a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a></td></tr>
+<tr><td><a href="paradigms/{{page.paradigm}}.html">{{page.paradigm}}</a></td></tr>
 {% endif %}
 {% endfor %}
 </tbody>
@@ -111,6 +111,7 @@ def main():
             for key in tsv_parts.keys():
                 if key != 'new_para':
                     paradata[tsv_parts['new_para']][key] = tsv_parts[key]
+    paradigms = set(paradata.keys())
     for tsv_filename in args.paradigm_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -142,10 +143,13 @@ def main():
                     for key in paradata[tsv_parts['new_para']].keys():
                         print("* ", key, ": ", paradata[tsv_parts['new_para']][key],
                               sep='', file=outfile)
+                    paradigms.remove(tsv_parts['new_para'])
                 else:
-                    if not tsv_parts['doc']:
-                        print("UNDOCUMENTED", tsv_parts['new_para'])
-                        exit(1)
+                    print("found in docs but not in data:",
+                            tsv_parts['new_para'], file=stderr)
+    if len(paradigms) > 0:
+        print("Undocumented paradigms left:", ", ".join(paradigms),
+                file=stderr)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 
