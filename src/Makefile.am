@@ -226,10 +226,11 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 TESTS=test-scripts/constraint-unique-keys.bash \
 	  test-scripts/consistent-attribute-keys.bash \
 	  test-scripts/valid-datatypes.bash \
+	  test-scripts/paradigms-have-documents.bash \
 	  test-scripts/plusplus-has-documents.bash \
 	  test-scripts/lemmas-match-regexes.bash
 
-XFAIL_TESTS=tdt_formatter.py
+XFAIL_TESTS=
 
 # python is anti-unit tests
 # https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
