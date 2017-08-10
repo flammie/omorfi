@@ -226,7 +226,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 TESTS=test-scripts/constraint-unique-keys.bash \
 	  test-scripts/consistent-attribute-keys.bash \
 	  test-scripts/valid-datatypes.bash \
-	  test-scripts/paradigms-have-documents.bash \
+	  test-scripts/paradigm-coverage.bash \
 	  test-scripts/plusplus-has-documents.bash \
 	  test-scripts/lemmas-match-regexes.bash
 
