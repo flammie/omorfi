@@ -86,8 +86,8 @@ def main():
             linecount += 1
             if args.verbose and (linecount % 10000 == 0):
                 print(linecount, "...", sep='', end='\r')
-            if len(tsv_parts) < args.fields:
-                print("Must have at least N separators on each",
+            if len(tsv_parts) < 4 or None in tsv_parts.values():
+                print("Must have at least 4 separators on each",
                       "non-comment non-empty line; skipping:",
                       tsv_parts, file=stderr)
                 continue
@@ -99,7 +99,8 @@ def main():
                           sep='', file=stderr)
                     errors = True
             else:
-                print(tsv_parts['new_para'], "not found in", args.regex_file)
+                print(tsv_parts['new_para'], "not found in", args.regex_file,
+                        ':\n', tsv_parts, file=stderr)
                 errors = True
     if errors:
         print("you must fix database integrity or hack the scripts",
