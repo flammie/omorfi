@@ -1,0 +1,19 @@
+
+---
+layout: paradigm
+paradigm: PROPN_RIUTAT
+---
+### ` PROPN_RIUTAT `
+
+
+* grade_dir: weaken
+* stem_vowel: None
+* kotus_av: C
+* pos: NOUN
+* harmony: back
+* upos: PROPN
+* kotus_tn: 9
+* plurale_tantum: obligatory
+* clitics: False
+* possessive: False
+* stem_diphthong: None

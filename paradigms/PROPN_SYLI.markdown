@@ -1,0 +1,19 @@
+
+---
+layout: paradigm
+paradigm: PROPN_SYLI
+---
+### ` PROPN_SYLI `
+
+
+* grade_dir: weaken
+* stem_vowel: None
+* kotus_av: None
+* pos: NOUN
+* harmony: front
+* upos: PROPN
+* kotus_tn: 23
+* plurale_tantum: False
+* clitics: False
+* possessive: False
+* stem_diphthong: None

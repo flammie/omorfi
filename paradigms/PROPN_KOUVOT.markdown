@@ -1,0 +1,19 @@
+
+---
+layout: paradigm
+paradigm: PROPN_KOUVOT
+---
+### ` PROPN_KOUVOT `
+
+
+* grade_dir: weaken
+* stem_vowel: None
+* kotus_av: E
+* pos: NOUN
+* harmony: back
+* upos: PROPN
+* kotus_tn: 1
+* plurale_tantum: obligatory
+* clitics: False
+* possessive: False
+* stem_diphthong: None

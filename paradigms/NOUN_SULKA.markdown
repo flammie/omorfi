@@ -1,0 +1,19 @@
+
+---
+layout: paradigm
+paradigm: NOUN_SULKA
+---
+### ` NOUN_SULKA `
+
+Dictionary class 9 k~0 without optional ’
+* grade_dir: weaken
+* stem_vowel: a
+* kotus_av: D
+* pos: NOUN
+* harmony: back
+* upos: NOUN
+* kotus_tn: 10
+* plurale_tantum: False
+* clitics: False
+* possessive: False
+* stem_diphthong: None
