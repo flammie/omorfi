@@ -62,6 +62,8 @@ In bibtex:
 {% endraw %}
 ```
 
+If you are writing a paper in LREC or such, the ISLRN to use is [887-124-499-095-1](http://islrn.org/resources/887-124-499-095-1/).
+
 # Publications about omorfi specifically
 
 This list might not be complete, I do not know if anyone else has written something.
