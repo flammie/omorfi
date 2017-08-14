@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_SHOW
@@ -7,13 +6,13 @@ paradigm: NOUN_SHOW
 
 Dictionary class 22 u
 * grade_dir: weaken
-* stem_vowel: u
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 22
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: u
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 22
 * clitics: False
 * possessive: False
-* stem_diphthong: None

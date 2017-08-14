@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_COMPOUND
@@ -7,13 +6,13 @@ paradigm: PROPN_COMPOUND
 
 for bound proper noun particles, usually with hyphen, such as ‘Etelä-’
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 99
 * clitics: False
 * possessive: False
-* stem_diphthong: None

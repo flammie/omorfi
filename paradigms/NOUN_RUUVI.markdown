@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_RUUVI
@@ -7,13 +6,13 @@ paradigm: NOUN_RUUVI
 
 Dictionary class 5 back
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 5
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 5
 * clitics: False
 * possessive: False
-* stem_diphthong: None

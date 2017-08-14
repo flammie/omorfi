@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_TUODA
@@ -7,13 +6,13 @@ paradigm: VERB_TUODA
 
 Dictionary class64 uo
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 64
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: None
+* kotus_tn: 64
 * clitics: False
 * possessive: False
-* stem_diphthong: None

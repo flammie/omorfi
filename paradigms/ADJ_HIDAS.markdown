@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_HIDAS
@@ -7,13 +6,13 @@ paradigm: ADJ_HIDAS
 
 Dictionary class 41 das
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: F
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 41
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: back
+* kotus_av: F
+* kotus_tn: 41
 * clitics: False
 * possessive: False
-* stem_diphthong: None

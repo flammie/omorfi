@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_ACRO_METRI
@@ -7,13 +6,13 @@ paradigm: PROPN_ACRO_METRI
 
 The acronyms ending in a word that inflects like ‘metri’ with i:e type stem
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: ACRONYM
-* harmony: front
-* upos: PROPN
-* kotus_tn: 0
 * plurale_tantum: False
+* pos: ACRONYM
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 0
 * clitics: False
 * possessive: False
-* stem_diphthong: None

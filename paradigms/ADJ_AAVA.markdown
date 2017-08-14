@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_AAVA
@@ -7,13 +6,13 @@ paradigm: ADJ_AAVA
 
 Bisyllabic a stems with e comparative and j plurals are in class described here, and dictionary class ⁹.
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

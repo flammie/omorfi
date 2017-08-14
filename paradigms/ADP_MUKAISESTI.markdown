@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADP_MUKAISESTI
@@ -7,13 +6,13 @@ paradigm: ADP_MUKAISESTI
 
 adposition without possessives, clitic with back harmony
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: PARTICLE
-* harmony: back
-* upos: ADP
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: PARTICLE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADP
+* harmony: back
+* kotus_av: None
+* kotus_tn: 99
 * clitics: True
 * possessive: optional
-* stem_diphthong: None

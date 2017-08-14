@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_VANHEMMAT
@@ -7,13 +6,13 @@ paradigm: PROPN_VANHEMMAT
 
 Dictionary class xxx matt plurale tantum
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: H
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 16
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: H
+* kotus_tn: 16
 * clitics: False
 * possessive: False
-* stem_diphthong: None

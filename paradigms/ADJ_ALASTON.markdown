@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_ALASTON
@@ -7,13 +6,13 @@ paradigm: ADJ_ALASTON
 
 Dictionary class 34 back
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 34
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 34
 * clitics: False
 * possessive: False
-* stem_diphthong: None

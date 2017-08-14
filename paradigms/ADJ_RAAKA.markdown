@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_RAAKA
@@ -7,13 +6,13 @@ paradigm: ADJ_RAAKA
 
 k:’ variation obligatory apostrophe
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: D
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: D
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

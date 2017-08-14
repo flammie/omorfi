@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_AIKA
@@ -7,13 +6,13 @@ paradigm: NOUN_AIKA
 
 Non-dictionary class aika
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: D
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 1009
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: NOUN
+* harmony: back
+* kotus_av: D
+* kotus_tn: 1009
 * clitics: False
 * possessive: False
-* stem_diphthong: None

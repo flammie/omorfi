@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_RANGAISTA
@@ -7,13 +6,13 @@ paradigm: VERB_RANGAISTA
 
 Dictionary class66 back k~g
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: G
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 66
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: G
+* kotus_tn: 66
 * clitics: False
 * possessive: False
-* stem_diphthong: None

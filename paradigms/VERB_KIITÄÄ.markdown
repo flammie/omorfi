@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_KIITÄÄ
@@ -7,13 +6,13 @@ paradigm: VERB_KIITÄÄ
 
 Dictionary class55 front
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: F
-* pos: VERB
-* harmony: front
-* upos: VERB
-* kotus_tn: 55
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: front
+* kotus_av: F
+* kotus_tn: 55
 * clitics: False
 * possessive: False
-* stem_diphthong: None

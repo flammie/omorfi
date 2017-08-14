@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_UPOTA
@@ -7,13 +6,13 @@ paradigm: VERB_UPOTA
 
 Dictionary class74 back 0~p o 
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: B
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 74
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: B
+* kotus_tn: 74
 * clitics: False
 * possessive: False
-* stem_diphthong: None

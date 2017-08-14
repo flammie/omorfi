@@ -130,7 +130,6 @@ def main():
                 outfile=open(args.outdir + '/' +
                              tsv_parts['new_para'].replace('?', '_') +
                              '.markdown', 'w')
-                print(file=outfile)
                 print('---', file=outfile)
                 print('layout: paradigm', file=outfile)
                 print('paradigm:', tsv_parts['new_para'], file=outfile)

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NUM_VIISI
@@ -7,13 +6,13 @@ paradigm: NUM_VIISI
 
 Dictionary class27 front
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NUMERAL
-* harmony: front
-* upos: NUM
-* kotus_tn: 27
 * plurale_tantum: False
+* pos: NUMERAL
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NUM
+* harmony: front
+* kotus_av: None
+* kotus_tn: 27
 * clitics: False
 * possessive: False
-* stem_diphthong: None

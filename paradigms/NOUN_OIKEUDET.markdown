@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_OIKEUDET
@@ -7,13 +6,13 @@ paradigm: NOUN_OIKEUDET
 
 Dictionary class sdet plurale tantum
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 40
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 40
 * clitics: False
 * possessive: False
-* stem_diphthong: None

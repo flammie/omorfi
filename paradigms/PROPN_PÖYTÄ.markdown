@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_PÖYTÄ
@@ -7,13 +6,13 @@ paradigm: PROPN_PÖYTÄ
 
 Dictionary class 10 front t~d
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: F
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: PROPN
+* harmony: front
+* kotus_av: F
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

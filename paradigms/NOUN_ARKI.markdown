@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_ARKI
@@ -7,13 +6,13 @@ paradigm: NOUN_ARKI
 
 Dictionary class 7 back k~j
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: L
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 7
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: L
+* kotus_tn: 7
 * clitics: False
 * possessive: False
-* stem_diphthong: None

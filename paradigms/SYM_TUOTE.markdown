@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: SYM_TUOTE
@@ -7,13 +6,13 @@ paradigm: SYM_TUOTE
 
 symbols, inflection with : and compounding with -
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: ACRONYM
-* harmony: back
-* upos: SYM
-* kotus_tn: 0
 * plurale_tantum: False
+* pos: ACRONYM
+* stem_diphthong: None
+* stem_vowel: None
+* upos: SYM
+* harmony: back
+* kotus_av: None
+* kotus_tn: 0
 * clitics: False
 * possessive: False
-* stem_diphthong: None

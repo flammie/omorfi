@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_ASUKAS
@@ -7,13 +6,13 @@ paradigm: NOUN_ASUKAS
 
 Dictionary class 41 kas
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: A
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 41
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: A
+* kotus_tn: 41
 * clitics: False
 * possessive: False
-* stem_diphthong: None

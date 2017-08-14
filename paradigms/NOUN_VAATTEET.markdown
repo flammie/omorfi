@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_VAATTEET
@@ -7,13 +6,13 @@ paradigm: NOUN_VAATTEET
 
 Dictionary class teeeeet plurale tantum
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: C
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 48
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: C
+* kotus_tn: 48
 * clitics: False
 * possessive: False
-* stem_diphthong: None

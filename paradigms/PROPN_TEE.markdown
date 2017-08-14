@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_TEE
@@ -7,13 +6,13 @@ paradigm: PROPN_TEE
 
 Dictionary class 18 e
 * grade_dir: weaken
-* stem_vowel: e
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 18
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: e
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 18
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_HELLE
@@ -7,13 +6,13 @@ paradigm: ADJ_HELLE
 
 Dictionary class 48 l~t back
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: I
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 48
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: front
+* kotus_av: I
+* kotus_tn: 48
 * clitics: False
 * possessive: False
-* stem_diphthong: None

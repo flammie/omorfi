@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NUM_51kaksiseitsemättä
@@ -7,13 +6,13 @@ paradigm: NUM_51kaksiseitsemättä
 
 Optimisation hack for exceptional compound ’kaksiseitsemättä’ that inflects in all parts with agreement
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NUMERAL
-* harmony: back
-* upos: NUM
-* kotus_tn: 51
 * plurale_tantum: False
+* pos: NUMERAL
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NUM
+* harmony: back
+* kotus_av: None
+* kotus_tn: 51
 * clitics: False
 * possessive: False
-* stem_diphthong: None

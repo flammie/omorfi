@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_VARVAS
@@ -7,13 +6,13 @@ paradigm: PROPN_VARVAS
 
 Dictionary class 41 vas
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: E
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 41
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: E
+* kotus_tn: 41
 * clitics: False
 * possessive: False
-* stem_diphthong: None

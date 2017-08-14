@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_NALLE
@@ -7,13 +6,13 @@ paradigm: NOUN_NALLE
 
 Dictionary class 8 back
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 8
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 8
 * clitics: False
 * possessive: False
-* stem_diphthong: None

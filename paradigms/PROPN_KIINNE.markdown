@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KIINNE
@@ -7,13 +6,13 @@ paradigm: PROPN_KIINNE
 
 Dictionary class 48 front ne
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: J
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 48
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: J
+* kotus_tn: 48
 * clitics: False
 * possessive: False
-* stem_diphthong: None

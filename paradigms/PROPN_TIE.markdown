@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_TIE
@@ -7,13 +6,13 @@ paradigm: PROPN_TIE
 
 Dictionary class 19 ie
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 19
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 19
 * clitics: False
 * possessive: False
-* stem_diphthong: None

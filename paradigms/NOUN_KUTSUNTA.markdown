@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_KUTSUNTA
@@ -7,13 +6,13 @@ paradigm: NOUN_KUTSUNTA
 
 Dictionary class 9 t~n
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: J
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: NOUN
+* harmony: back
+* kotus_av: J
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

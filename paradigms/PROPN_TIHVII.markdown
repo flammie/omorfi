@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_TIHVII
@@ -7,13 +6,13 @@ paradigm: PROPN_TIHVII
 
 
 * grade_dir: weaken
-* stem_vowel: i
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 17
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: i
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 17
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_VAPAA
@@ -7,13 +6,13 @@ paradigm: ADJ_VAPAA
 
 There are no other bisyllabic long vowel stems in adjectives
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 17
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 17
 * clitics: False
 * possessive: False
-* stem_diphthong: None

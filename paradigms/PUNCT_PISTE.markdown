@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PUNCT_PISTE
@@ -7,13 +6,13 @@ paradigm: PUNCT_PISTE
 
 punctuation, rare front inflection plausible
 * grade_dir: None
-* stem_vowel: None
-* kotus_av: None
-* pos: PUNCTUATION
-* harmony: front
-* upos: PUNCT
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: PUNCTUATION
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PUNCT
+* harmony: front
+* kotus_av: None
+* kotus_tn: 99
 * clitics: True
 * possessive: True
-* stem_diphthong: None

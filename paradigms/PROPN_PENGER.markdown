@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_PENGER
@@ -7,13 +6,13 @@ paradigm: PROPN_PENGER
 
 Dictionary class 49 ger
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: G
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 49
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: G
+* kotus_tn: 49
 * clitics: False
 * possessive: False
-* stem_diphthong: None

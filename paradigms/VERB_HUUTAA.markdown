@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_HUUTAA
@@ -7,13 +6,13 @@ paradigm: VERB_HUUTAA
 
 Dictionary class54 back
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: F
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 54
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: F
+* kotus_tn: 54
 * clitics: False
 * possessive: False
-* stem_diphthong: None

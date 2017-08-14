@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_POPPA
@@ -7,13 +6,13 @@ paradigm: ADJ_POPPA
 
 
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: B
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: B
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

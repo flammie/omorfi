@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_HALPA
@@ -7,13 +6,13 @@ paradigm: ADJ_HALPA
 
 The pa : va stem with e comparative and j plurals is described here, and the dictionary class is ⁹⁻E.
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: E
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: E
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

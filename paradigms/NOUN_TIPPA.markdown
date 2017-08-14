@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_TIPPA
@@ -7,13 +6,13 @@ paradigm: NOUN_TIPPA
 
 Dictionary class 9 p~0
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: B
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: NOUN
+* harmony: back
+* kotus_av: B
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

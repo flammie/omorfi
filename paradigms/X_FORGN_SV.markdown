@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: X_FORGN_SV
@@ -7,13 +6,13 @@ paradigm: X_FORGN_SV
 
 new particles of Swedish origin
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: X
-* harmony: back
-* upos: X
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: X
+* stem_diphthong: None
+* stem_vowel: None
+* upos: X
+* harmony: back
+* kotus_av: None
+* kotus_tn: 99
 * clitics: False
 * possessive: False
-* stem_diphthong: None

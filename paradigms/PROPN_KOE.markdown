@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KOE
@@ -7,13 +6,13 @@ paradigm: PROPN_KOE
 
 Dictionary class 48 back 0k
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: D
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 48
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: D
+* kotus_tn: 48
 * clitics: False
 * possessive: False
-* stem_diphthong: None

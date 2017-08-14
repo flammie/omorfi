@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_LAHTI
@@ -7,13 +6,13 @@ paradigm: PROPN_LAHTI
 
 Dictionary class 7 back t~d
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: F
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 7
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: F
+* kotus_tn: 7
 * clitics: False
 * possessive: False
-* stem_diphthong: None

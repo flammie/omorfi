@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_RANGAT
@@ -7,13 +6,13 @@ paradigm: PROPN_RANGAT
 
 
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: G
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 9
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: G
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

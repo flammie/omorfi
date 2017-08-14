@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NUM_PARI
@@ -7,13 +6,13 @@ paradigm: NUM_PARI
 
 Dictionary class5 moremore
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: NUMERAL
-* harmony: back
-* upos: NUM
-* kotus_tn: 7
 * plurale_tantum: False
+* pos: NUMERAL
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NUM
+* harmony: back
+* kotus_av: None
+* kotus_tn: 7
 * clitics: False
 * possessive: False
-* stem_diphthong: None

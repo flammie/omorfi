@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADV_HYVILLÄÄN
@@ -7,13 +6,13 @@ paradigm: ADV_HYVILLÄÄN
 
 None
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: PARTICLE
-* harmony: front
-* upos: ADV
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: PARTICLE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADV
+* harmony: front
+* kotus_av: None
+* kotus_tn: 99
 * clitics: True
 * possessive: obligatory
-* stem_diphthong: None

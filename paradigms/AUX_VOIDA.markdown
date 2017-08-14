@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: AUX_VOIDA
@@ -7,13 +6,13 @@ paradigm: AUX_VOIDA
 
 auxiliary version of 
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: VERB
-* harmony: back
-* upos: AUX
-* kotus_tn: 62
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: AUX
+* harmony: back
+* kotus_av: None
+* kotus_tn: 62
 * clitics: False
 * possessive: False
-* stem_diphthong: None

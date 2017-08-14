@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_RIMMIT
@@ -7,13 +6,13 @@ paradigm: PROPN_RIMMIT
 
 
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: H
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 5
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: H
+* kotus_tn: 5
 * clitics: False
 * possessive: False
-* stem_diphthong: None

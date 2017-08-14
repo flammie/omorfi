@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_ELÄMÄ
@@ -7,13 +6,13 @@ paradigm: NOUN_ELÄMÄ
 
 Dictionary class 11 front
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: NOUN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

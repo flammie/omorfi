@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_TÄYSI
@@ -7,13 +6,13 @@ paradigm: ADJ_TÄYSI
 
 Dictionary class 27 front
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 27
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 27
 * clitics: False
 * possessive: False
-* stem_diphthong: None

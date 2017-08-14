@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_PIIROA
@@ -7,13 +6,13 @@ paradigm: PROPN_PIIROA
 
 dictionary class 15 oa, lexicalised ADJ_AINOA nouns
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 15
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 15
 * clitics: False
 * possessive: False
-* stem_diphthong: None

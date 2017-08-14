@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_GAY
@@ -7,13 +6,13 @@ paradigm: ADJ_GAY
 
 Some loan words inflect irregularly, either more along the written form or the pronunciation. There are not many direct adjective loans in general.
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 21
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 21
 * clitics: False
 * possessive: False
-* stem_diphthong: None

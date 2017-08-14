@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: SCONJ_ETTÄ
@@ -7,13 +6,13 @@ paradigm: SCONJ_ETTÄ
 
 sub-ordinating conjunction, no inflections
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: PARTICLE
-* harmony: front
-* upos: SCONJ
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: PARTICLE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: SCONJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 99
 * clitics: False
 * possessive: False
-* stem_diphthong: None

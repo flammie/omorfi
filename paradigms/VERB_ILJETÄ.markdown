@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_ILJETÄ
@@ -7,13 +6,13 @@ paradigm: VERB_ILJETÄ
 
 Dictionary class74 front j~k 
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: L
-* pos: VERB
-* harmony: front
-* upos: VERB
-* kotus_tn: 74
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: front
+* kotus_av: L
+* kotus_tn: 74
 * clitics: False
 * possessive: False
-* stem_diphthong: None

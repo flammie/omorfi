@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_ANTIMET
@@ -7,13 +6,13 @@ paradigm: NOUN_ANTIMET
 
 Dictionary class 31 nnin plurale tantum
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: J
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 33
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: J
+* kotus_tn: 33
 * clitics: False
 * possessive: False
-* stem_diphthong: None
