@@ -64,7 +64,7 @@ times to accommodate various applications:
 
 1. [Analysis tags](pages/tag-formats.html)
 1. [Design "principles" for tags](pages/Tagging-possibilities.html)
-1. [Internal keys and codes](pages/Paradigms-and-stuffs.html)
+1. [Internal keys and codes](stuff.html)
 
 More internal documentations:
 
