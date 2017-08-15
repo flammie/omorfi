@@ -47,7 +47,7 @@ def main():
                     type=argparse.FileType('w'),
                     metavar="OFILE", help="write docs OFILE")
     ap.add_argument("--outdir", "-O", action="store", required=True,
-                    metavar="ODIR", help="write individual stuffs to " +
+                    metavar="ODIR", help="write individual paradigms to " +
                     "ODIR/paradigm.md")
     ap.add_argument("--fields", "-F", action="store", default=2,
                     metavar="N", help="read N fields from master")
@@ -88,7 +88,7 @@ def main():
     print("""<table id="paradigmtable" class="display">
 <thead>
 <tr>
-<th>Stuff</th>
+<th>Paradigm</th>
 </tr>
 </thead>
 <tbody>

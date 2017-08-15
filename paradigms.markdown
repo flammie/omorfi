@@ -15,7 +15,7 @@ Paradigms are sub-groups of lexemes that have unique morpho-phonological feature
 <table id="paradigmtable" class="display">
 <thead>
 <tr>
-<th>Stuff</th>
+<th>Paradigm</th>
 </tr>
 </thead>
 <tbody>
