@@ -1,0 +1,8 @@
+---
+layout: lexeme
+lexeme: ½
+---
+
+###  ½ 
+half
+

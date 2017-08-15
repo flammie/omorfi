@@ -1,0 +1,13 @@
+---
+layout: lexeme
+lexeme: ”
+---
+
+###  ” 
+left double quotation in 9-shape, common and recommended
+
+
+###  ”  (alternate reading 2 )
+
+right double quotation in 9-shape, common and recommended
+

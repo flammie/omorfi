@@ -1,0 +1,8 @@
+---
+layout: lexeme
+lexeme: —
+---
+
+###  — 
+em dash, rarer than en dash or minus-hyphen
+

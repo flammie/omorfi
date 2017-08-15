@@ -1,0 +1,8 @@
+---
+layout: lexeme
+lexeme: ³
+---
+
+###  ³ 
+superscript three
+

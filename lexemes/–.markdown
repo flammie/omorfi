@@ -1,0 +1,8 @@
+---
+layout: lexeme
+lexeme: –
+---
+
+###  – 
+en dash, relatively common, recommended for hyphens
+
