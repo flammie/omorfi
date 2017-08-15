@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_SOTA
@@ -7,13 +6,13 @@ paradigm: PROPN_SOTA
 
 Dictionary class 10 back t~d
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: F
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: PROPN
+* harmony: back
+* kotus_av: F
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

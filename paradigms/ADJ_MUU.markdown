@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_MUU
@@ -7,13 +6,13 @@ paradigm: ADJ_MUU
 
 
 * grade_dir: weaken
-* stem_vowel: u
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 18
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: u
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 18
 * clitics: False
 * possessive: False
-* stem_diphthong: None

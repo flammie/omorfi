@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: DET_SE
@@ -7,13 +6,13 @@ paradigm: DET_SE
 
 determiner version of pronoun ‘se’
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: PRONOUN
-* harmony: front
-* upos: DET
-* kotus_tn: 101
 * plurale_tantum: False
+* pos: PRONOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: DET
+* harmony: front
+* kotus_av: None
+* kotus_tn: 101
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_OLKA
@@ -7,13 +6,13 @@ paradigm: NOUN_OLKA
 
 Dictionary class 9 k~0 without optional ’
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: L
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: NOUN
+* harmony: back
+* kotus_av: L
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

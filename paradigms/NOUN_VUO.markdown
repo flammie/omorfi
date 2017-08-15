@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_VUO
@@ -7,13 +6,13 @@ paradigm: NOUN_VUO
 
 Dictionary class 19 uo
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 19
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 19
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_YLÄNKÖ
@@ -7,13 +6,13 @@ paradigm: NOUN_YLÄNKÖ
 
 Dictionary class 1nkö
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: G
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 1
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: front
+* kotus_av: G
+* kotus_tn: 1
 * clitics: False
 * possessive: False
-* stem_diphthong: None

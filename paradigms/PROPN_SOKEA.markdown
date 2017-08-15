@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_SOKEA
@@ -7,13 +6,13 @@ paradigm: PROPN_SOKEA
 
 The a-final words ending in long vowels with syllable boundary have a:0 variation and more allomorphs for plyral genitive or illative. Dictionary class 15 ea
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 15
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 15
 * clitics: False
 * possessive: False
-* stem_diphthong: None

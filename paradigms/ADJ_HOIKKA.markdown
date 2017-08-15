@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_HOIKKA
@@ -7,13 +6,13 @@ paradigm: ADJ_HOIKKA
 
 
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: A
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: A
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

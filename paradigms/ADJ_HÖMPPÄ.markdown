@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_HÖMPPÄ
@@ -7,13 +6,13 @@ paradigm: ADJ_HÖMPPÄ
 
 The quantitative k and t gradations are not found for adjectives with this a stem.
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: B
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: ADJ
+* harmony: front
+* kotus_av: B
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

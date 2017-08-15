@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KÄRJET
@@ -7,13 +6,13 @@ paradigm: PROPN_KÄRJET
 
 
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: L
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 7
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: L
+* kotus_tn: 7
 * clitics: False
 * possessive: False
-* stem_diphthong: None

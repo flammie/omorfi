@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_ACRO_ZET
@@ -7,13 +6,13 @@ paradigm: PROPN_ACRO_ZET
 
 Acronyms that end in 'z' pronounced as letter
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: ACRONYM
-* harmony: back
-* upos: PROPN
-* kotus_tn: 0
 * plurale_tantum: False
+* pos: ACRONYM
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 0
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_VANHEMPI
@@ -7,13 +6,13 @@ paradigm: NOUN_VANHEMPI
 
 Dictionary class 16
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: H
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 16
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: H
+* kotus_tn: 16
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_TOKEE
@@ -7,13 +6,13 @@ paradigm: PROPN_TOKEE
 
 Dictionary class 20 e
 * grade_dir: weaken
-* stem_vowel: e
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 17
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: e
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 17
 * clitics: False
 * possessive: False
-* stem_diphthong: None

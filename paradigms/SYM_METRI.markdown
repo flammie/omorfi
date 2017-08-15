@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: SYM_METRI
@@ -7,13 +6,13 @@ paradigm: SYM_METRI
 
 symbols, inflection with : and compounding with -
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: ACRONYM
-* harmony: front
-* upos: SYM
-* kotus_tn: 0
 * plurale_tantum: False
+* pos: ACRONYM
+* stem_diphthong: None
+* stem_vowel: None
+* upos: SYM
+* harmony: front
+* kotus_av: None
+* kotus_tn: 0
 * clitics: False
 * possessive: False
-* stem_diphthong: None

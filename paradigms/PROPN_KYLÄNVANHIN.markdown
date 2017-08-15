@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KYLÄNVANHIN
@@ -7,13 +6,13 @@ paradigm: PROPN_KYLÄNVANHIN
 
 
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 36
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 36
 * clitics: False
 * possessive: False
-* stem_diphthong: None

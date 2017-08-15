@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_RÄMIÄT
@@ -7,13 +6,13 @@ paradigm: NOUN_RÄMIÄT
 
 
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 12
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 12
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_LIPEÄ
@@ -7,13 +6,13 @@ paradigm: NOUN_LIPEÄ
 
 Dictionary class 15 eä
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 15
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: NOUN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 15
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_KITARA
@@ -7,13 +6,13 @@ paradigm: NOUN_KITARA
 
 
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 13
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 13
 * clitics: False
 * possessive: False
-* stem_diphthong: None

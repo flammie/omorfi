@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_VÄNGÄTÄ
@@ -7,13 +6,13 @@ paradigm: VERB_VÄNGÄTÄ
 
 Dictionary class73 front g~k
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: G
-* pos: VERB
-* harmony: front
-* upos: VERB
-* kotus_tn: 73
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: front
+* kotus_av: G
+* kotus_tn: 73
 * clitics: False
 * possessive: False
-* stem_diphthong: None

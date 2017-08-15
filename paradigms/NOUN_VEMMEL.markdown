@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_VEMMEL
@@ -7,13 +6,13 @@ paradigm: NOUN_VEMMEL
 
 Dictionary class 49 mel
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: H
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 49
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: front
+* kotus_av: H
+* kotus_tn: 49
 * clitics: False
 * possessive: False
-* stem_diphthong: None

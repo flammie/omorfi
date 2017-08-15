@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_MIETTIÄ
@@ -7,13 +6,13 @@ paradigm: VERB_MIETTIÄ
 
 Dictionary class61 front t~0
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: C
-* pos: VERB
-* harmony: front
-* upos: VERB
-* kotus_tn: 61
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: front
+* kotus_av: C
+* kotus_tn: 61
 * clitics: False
 * possessive: False
-* stem_diphthong: None

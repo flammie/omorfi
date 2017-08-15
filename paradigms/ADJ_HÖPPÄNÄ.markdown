@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_HÖPPÄNÄ
@@ -7,13 +6,13 @@ paradigm: ADJ_HÖPPÄNÄ
 
 ä:0
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 12
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: ADJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 12
 * clitics: False
 * possessive: False
-* stem_diphthong: None

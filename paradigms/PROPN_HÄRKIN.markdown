@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_HÄRKIN
@@ -7,13 +6,13 @@ paradigm: PROPN_HÄRKIN
 
 
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: A
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 33
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: A
+* kotus_tn: 33
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_ROHJETA
@@ -7,13 +6,13 @@ paradigm: VERB_ROHJETA
 
 Dictionary class.. back j~k
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: L
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 72
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: L
+* kotus_tn: 72
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_OHUT
@@ -7,13 +6,13 @@ paradigm: ADJ_OHUT
 
 Dictionary class 43 back
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 43
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 43
 * clitics: False
 * possessive: False
-* stem_diphthong: None

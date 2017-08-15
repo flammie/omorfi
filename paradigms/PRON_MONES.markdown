@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PRON_MONES
@@ -7,13 +6,13 @@ paradigm: PRON_MONES
 
 inflects like NUM_KOLMAS
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: PRONOUN
-* harmony: back
-* upos: PRON
-* kotus_tn: 45
 * plurale_tantum: False
+* pos: PRONOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PRON
+* harmony: back
+* kotus_av: None
+* kotus_tn: 45
 * clitics: False
 * possessive: False
-* stem_diphthong: None

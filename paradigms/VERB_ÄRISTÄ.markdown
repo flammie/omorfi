@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_ÄRISTÄ
@@ -7,13 +6,13 @@ paradigm: VERB_ÄRISTÄ
 
 Dictionary class66 front
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: VERB
-* harmony: front
-* upos: VERB
-* kotus_tn: 66
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: front
+* kotus_av: None
+* kotus_tn: 66
 * clitics: False
 * possessive: False
-* stem_diphthong: None

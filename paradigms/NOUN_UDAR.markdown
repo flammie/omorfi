@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_UDAR
@@ -7,13 +6,13 @@ paradigm: NOUN_UDAR
 
 Dictionary class 49 dar
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: F
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 49
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: F
+* kotus_tn: 49
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_RÄVÄKKÄ
@@ -7,13 +6,13 @@ paradigm: ADJ_RÄVÄKKÄ
 
 kkä:k(k)ö variation with optional k in plurals
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: A
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 14
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: ADJ
+* harmony: front
+* kotus_av: A
+* kotus_tn: 14
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: AUX_PITÄÄ
@@ -7,13 +6,13 @@ paradigm: AUX_PITÄÄ
 
 auxiliary version of tä:dä verb stem
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: F
-* pos: VERB
-* harmony: front
-* upos: AUX
-* kotus_tn: 53
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: AUX
+* harmony: front
+* kotus_av: F
+* kotus_tn: 53
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_RAMPA
@@ -7,13 +6,13 @@ paradigm: PROPN_RAMPA
 
 Dictionary class 9 p~m
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: H
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: PROPN
+* harmony: back
+* kotus_av: H
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

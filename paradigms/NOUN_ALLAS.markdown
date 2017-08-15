@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_ALLAS
@@ -7,13 +6,13 @@ paradigm: NOUN_ALLAS
 
 Dictionary class 41 las
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: I
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 41
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: I
+* kotus_tn: 41
 * clitics: False
 * possessive: False
-* stem_diphthong: None

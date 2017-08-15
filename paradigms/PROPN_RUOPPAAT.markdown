@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_RUOPPAAT
@@ -7,13 +6,13 @@ paradigm: PROPN_RUOPPAAT
 
 
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: B
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 41
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: B
+* kotus_tn: 41
 * clitics: False
 * possessive: False
-* stem_diphthong: None

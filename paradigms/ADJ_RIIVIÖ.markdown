@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_RIIVIÖ
@@ -7,13 +6,13 @@ paradigm: ADJ_RIIVIÖ
 
 The front voweled stems with ö after vowels go to class described here, and used the old dictionary class ³.
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 3
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 3
 * clitics: False
 * possessive: False
-* stem_diphthong: None

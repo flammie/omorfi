@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_SIVISTYNYT
@@ -7,13 +6,13 @@ paradigm: NOUN_SIVISTYNYT
 
 Dictionary class 47 front
 * grade_dir: strengthen
-* stem_vowel: y
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 47
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: y
+* upos: NOUN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 47
 * clitics: False
 * possessive: False
-* stem_diphthong: None

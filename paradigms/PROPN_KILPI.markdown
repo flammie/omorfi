@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KILPI
@@ -7,13 +6,13 @@ paradigm: PROPN_KILPI
 
 Dictionary class 7 front p~v
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: E
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 7
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: E
+* kotus_tn: 7
 * clitics: False
 * possessive: False
-* stem_diphthong: None

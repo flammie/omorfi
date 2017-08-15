@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_ONNI
@@ -7,13 +6,13 @@ paradigm: PROPN_ONNI
 
 Dictionary class 7 back
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 7
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 7
 * clitics: False
 * possessive: False
-* stem_diphthong: None

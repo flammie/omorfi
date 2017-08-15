@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_NIMETÖN
@@ -7,13 +6,13 @@ paradigm: PROPN_NIMETÖN
 
 Dictionary class 34 tän
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: C
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 34
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: C
+* kotus_tn: 34
 * clitics: False
 * possessive: False
-* stem_diphthong: None

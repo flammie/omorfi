@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_BRASSERIE
@@ -7,13 +6,13 @@ paradigm: PROPN_BRASSERIE
 
 Dictionary class 21 i back
 * grade_dir: weaken
-* stem_vowel: i
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 21
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: i
+* upos: PROPN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 21
 * clitics: False
 * possessive: False
-* stem_diphthong: None

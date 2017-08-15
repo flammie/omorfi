@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PRON_MUUTAMA
@@ -7,13 +6,13 @@ paradigm: PRON_MUUTAMA
 
 inflects like NOUN_ASEMA
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: PRONOUN
-* harmony: back
-* upos: PRON
-* kotus_tn: 10
 * plurale_tantum: False
+* pos: PRONOUN
+* stem_diphthong: None
+* stem_vowel: a
+* upos: PRON
+* harmony: back
+* kotus_av: None
+* kotus_tn: 10
 * clitics: False
 * possessive: False
-* stem_diphthong: None

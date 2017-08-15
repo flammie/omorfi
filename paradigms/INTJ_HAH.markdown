@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: INTJ_HAH
@@ -7,13 +6,13 @@ paradigm: INTJ_HAH
 
 interjection that does not participate in interjection compounding
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: PARTICLE
-* harmony: back
-* upos: INTJ
-* kotus_tn: 99
 * plurale_tantum: False
+* pos: PARTICLE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: INTJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 99
 * clitics: False
 * possessive: False
-* stem_diphthong: None

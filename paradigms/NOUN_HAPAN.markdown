@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_HAPAN
@@ -7,13 +6,13 @@ paradigm: NOUN_HAPAN
 
 lexicalised noun of adjective hapan with n:ma variation
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: B
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 34
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: B
+* kotus_tn: 34
 * clitics: False
 * possessive: False
-* stem_diphthong: None

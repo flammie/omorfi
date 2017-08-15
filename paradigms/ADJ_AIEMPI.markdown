@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_AIEMPI
@@ -7,13 +6,13 @@ paradigm: ADJ_AIEMPI
 
 lexicalised comparatives
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: H
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 16
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: back
+* kotus_av: H
+* kotus_tn: 16
 * clitics: False
 * possessive: False
-* stem_diphthong: None

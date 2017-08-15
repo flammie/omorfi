@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_PELTI
@@ -7,13 +6,13 @@ paradigm: PROPN_PELTI
 
 Dictionary class 5 front t~l
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: I
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 5
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: I
+* kotus_tn: 5
 * clitics: False
 * possessive: False
-* stem_diphthong: None

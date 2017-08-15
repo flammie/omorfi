@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PRON_KUKA
@@ -7,13 +6,13 @@ paradigm: PRON_KUKA
 
 pronoun kuka has heteroclitic ke stem for inflection as well as more rare or diaectal ku- etc.
 * grade_dir: False
-* stem_vowel: None
-* kotus_av: None
-* pos: PRONOUN
-* harmony: back
-* upos: PRON
-* kotus_tn: 101
 * plurale_tantum: False
+* pos: PRONOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PRON
+* harmony: back
+* kotus_av: None
+* kotus_tn: 101
 * clitics: False
 * possessive: False
-* stem_diphthong: None

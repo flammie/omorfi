@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_TEMMATA
@@ -7,13 +6,13 @@ paradigm: VERB_TEMMATA
 
 Dictionary class73 back m~p
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: H
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 73
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: H
+* kotus_tn: 73
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: AUX_TAITAA
@@ -7,13 +6,13 @@ paradigm: AUX_TAITAA
 
 auxiliary version of ta:si verb stem
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: F
-* pos: VERB
-* harmony: back
-* upos: AUX
-* kotus_tn: 76
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: AUX
+* harmony: back
+* kotus_av: F
+* kotus_tn: 76
 * clitics: False
 * possessive: False
-* stem_diphthong: None

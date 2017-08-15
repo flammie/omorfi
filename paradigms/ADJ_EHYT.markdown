@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_EHYT
@@ -7,13 +6,13 @@ paradigm: ADJ_EHYT
 
 Dictionary class 43 front
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 43
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 43
 * clitics: False
 * possessive: False
-* stem_diphthong: None

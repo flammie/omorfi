@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NUM_KYMMEN
@@ -7,13 +6,13 @@ paradigm: NUM_KYMMEN
 
 archaic form ‘kymmen’ inflects like NUM_KYMMENEN
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: NUMERAL
-* harmony: front
-* upos: NUM
-* kotus_tn: 32
 * plurale_tantum: False
+* pos: NUMERAL
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NUM
+* harmony: front
+* kotus_av: None
+* kotus_tn: 32
 * clitics: False
 * possessive: False
-* stem_diphthong: None

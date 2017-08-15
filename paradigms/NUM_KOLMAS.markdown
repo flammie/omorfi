@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NUM_KOLMAS
@@ -7,13 +6,13 @@ paradigm: NUM_KOLMAS
 
 Dictionary class45
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: NUMERAL
-* harmony: back
-* upos: NUM
-* kotus_tn: 45
 * plurale_tantum: False
+* pos: NUMERAL
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NUM
+* harmony: back
+* kotus_av: None
+* kotus_tn: 45
 * clitics: False
 * possessive: False
-* stem_diphthong: None

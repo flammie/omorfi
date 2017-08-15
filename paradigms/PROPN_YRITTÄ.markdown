@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_YRITTÄ
@@ -7,13 +6,13 @@ paradigm: PROPN_YRITTÄ
 
 
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: C
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 9
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: PROPN
+* harmony: front
+* kotus_av: C
+* kotus_tn: 9
 * clitics: False
 * possessive: False
-* stem_diphthong: None

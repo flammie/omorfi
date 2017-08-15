@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_KUTEA
@@ -7,13 +6,13 @@ paradigm: VERB_KUTEA
 
 Dictionary class58 back t~d
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: F
-* pos: VERB
-* harmony: back
-* upos: VERB
-* kotus_tn: 58
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: back
+* kotus_av: F
+* kotus_tn: 58
 * clitics: False
 * possessive: False
-* stem_diphthong: None

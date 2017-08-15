@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_LÄTYSKÄ
@@ -7,13 +6,13 @@ paradigm: ADJ_LÄTYSKÄ
 
 ä:ö and ä:0 variations
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: front
-* upos: ADJ
-* kotus_tn: 13
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: ADJ
+* harmony: front
+* kotus_av: None
+* kotus_tn: 13
 * clitics: False
 * possessive: False
-* stem_diphthong: None

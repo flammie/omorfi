@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_KORKEA
@@ -7,13 +6,13 @@ paradigm: ADJ_KORKEA
 
 
 * grade_dir: weaken
-* stem_vowel: a
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 15
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: a
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 15
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_BEIGNET
@@ -7,13 +6,13 @@ paradigm: NOUN_BEIGNET
 
 Dictionary class 22 e front
 * grade_dir: weaken
-* stem_vowel: e
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: NOUN
-* kotus_tn: 22
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: e
+* upos: NOUN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 22
 * clitics: False
 * possessive: False
-* stem_diphthong: None

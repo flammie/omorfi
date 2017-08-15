@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_RYYPPY
@@ -7,13 +6,13 @@ paradigm: PROPN_RYYPPY
 
 Dictionary class 1py
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: B
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 1
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: B
+* kotus_tn: 1
 * clitics: False
 * possessive: False
-* stem_diphthong: None

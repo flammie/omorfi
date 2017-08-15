@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_KOKO
@@ -7,13 +6,13 @@ paradigm: NOUN_KOKO
 
 k:’ should be obligatory but new rules allow k:0 for ‘koko’
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: D
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 1
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: D
+* kotus_tn: 1
 * clitics: False
 * possessive: False
-* stem_diphthong: None

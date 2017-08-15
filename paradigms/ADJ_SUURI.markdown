@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_SUURI
@@ -7,13 +6,13 @@ paradigm: ADJ_SUURI
 
 Dictionary class 24~26 back
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 26
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 26
 * clitics: False
 * possessive: False
-* stem_diphthong: None

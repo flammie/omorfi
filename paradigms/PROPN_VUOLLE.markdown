@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_VUOLLE
@@ -7,13 +6,13 @@ paradigm: PROPN_VUOLLE
 
 Dictionary class 48 back le
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: I
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 48
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: I
+* kotus_tn: 48
 * clitics: False
 * possessive: False
-* stem_diphthong: None

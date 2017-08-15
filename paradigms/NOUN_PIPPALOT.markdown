@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_PIPPALOT
@@ -7,13 +6,13 @@ paradigm: NOUN_PIPPALOT
 
 Dictionary class 3iot plurale tantum
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 2
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: None
+* kotus_tn: 2
 * clitics: False
 * possessive: False
-* stem_diphthong: None

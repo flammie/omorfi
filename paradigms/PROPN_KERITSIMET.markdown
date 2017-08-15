@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KERITSIMET
@@ -7,13 +6,13 @@ paradigm: PROPN_KERITSIMET
 
 Dictionary class 31 t fr plurale tantum
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 33
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 33
 * clitics: False
 * possessive: False
-* stem_diphthong: None

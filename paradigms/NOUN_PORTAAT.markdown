@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: NOUN_PORTAAT
@@ -7,13 +6,13 @@ paradigm: NOUN_PORTAAT
 
 Dictionary class rtaat plurale tantum
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: K
-* pos: NOUN
-* harmony: back
-* upos: NOUN
-* kotus_tn: 41
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: NOUN
+* harmony: back
+* kotus_av: K
+* kotus_tn: 41
 * clitics: False
 * possessive: False
-* stem_diphthong: None

@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: ADJ_AVOIN
@@ -7,13 +6,13 @@ paradigm: ADJ_AVOIN
 
 Dictionary class 33
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: None
-* pos: ADJECTIVE
-* harmony: back
-* upos: ADJ
-* kotus_tn: 33
 * plurale_tantum: False
+* pos: ADJECTIVE
+* stem_diphthong: None
+* stem_vowel: None
+* upos: ADJ
+* harmony: back
+* kotus_av: None
+* kotus_tn: 33
 * clitics: False
 * possessive: False
-* stem_diphthong: None

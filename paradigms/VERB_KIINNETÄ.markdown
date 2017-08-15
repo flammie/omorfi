@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: VERB_KIINNETÄ
@@ -7,13 +6,13 @@ paradigm: VERB_KIINNETÄ
 
 Dictionary class72 front n~t
 * grade_dir: strengthen
-* stem_vowel: None
-* kotus_av: J
-* pos: VERB
-* harmony: front
-* upos: VERB
-* kotus_tn: 72
 * plurale_tantum: False
+* pos: VERB
+* stem_diphthong: None
+* stem_vowel: None
+* upos: VERB
+* harmony: front
+* kotus_av: J
+* kotus_tn: 72
 * clitics: False
 * possessive: False
-* stem_diphthong: None

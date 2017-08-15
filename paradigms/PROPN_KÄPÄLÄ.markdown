@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KÄPÄLÄ
@@ -7,13 +6,13 @@ paradigm: PROPN_KÄPÄLÄ
 
 Dictionary class 11 front Some a stems with a:o variation have slightly different set of allomorphs
 * grade_dir: weaken
-* stem_vowel: ä
-* kotus_av: None
-* pos: NOUN
-* harmony: front
-* upos: PROPN
-* kotus_tn: 11
 * plurale_tantum: False
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: ä
+* upos: PROPN
+* harmony: front
+* kotus_av: None
+* kotus_tn: 11
 * clitics: False
 * possessive: False
-* stem_diphthong: None

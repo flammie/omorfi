@@ -1,4 +1,3 @@
-
 ---
 layout: paradigm
 paradigm: PROPN_KAARROT
@@ -7,13 +6,13 @@ paradigm: PROPN_KAARROT
 
 
 * grade_dir: weaken
-* stem_vowel: None
-* kotus_av: K
-* pos: NOUN
-* harmony: back
-* upos: PROPN
-* kotus_tn: 1
 * plurale_tantum: obligatory
+* pos: NOUN
+* stem_diphthong: None
+* stem_vowel: None
+* upos: PROPN
+* harmony: back
+* kotus_av: K
+* kotus_tn: 1
 * clitics: False
 * possessive: False
-* stem_diphthong: None
