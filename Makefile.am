@@ -46,3 +46,12 @@ conversions:
 
 test:
 	$(MAKE) check
+
+gh-pages:
+	PYTHONPATH=$(topsrcdir)/src/python $(PYTHON) doc/generate-stuffs.py \
+			   -S src/docs/stuff.tsv -o stuff.markdown -O stuffs/
+	$(PYTHON) doc/generate-paradigms.py -P src/docs/paradigms.tsv \
+		-A src/paradigms/ -o paradigms.markdown -O paradigms/
+	$(PYTHON) doc/generate-lexemes.py -L src/docs/lexemes.tsv \
+		-l src/lexemes.tsv -o lexemes.markdown -O lexemes/
+	doc/generate-statistics.bash test/ statistics/
