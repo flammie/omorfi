@@ -49,7 +49,7 @@ for f in $1/*.coveragelog ; do
 done
 
 # generate list of most common missing words
-echo "## $(date --iso) " >> ${INDEX}
+echo "## top 100 missing words per corpus " >> ${INDEX}
 for f in $1/*coveragelog ; do
     corpus=${f%.coveragelog}
     echo "### ${corpus}" >> ${INDEX}
