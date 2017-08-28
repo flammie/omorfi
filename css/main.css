@@ -81,12 +81,12 @@ body.rtl ul, body.rtl ol {
 /* Flammie */
 
 table th, table td {
-    border: 1px black;
-    padding: 1em 0;
+    border: 1px black solid;
+    padding: 0 1em;
 }
 
-table tr::nth-child(even) {
-    background-color: gray;
+tr:nth-child(even) {
+    background-color: azure;
 }
 
 h1, h2, h3, h4, h5 {
