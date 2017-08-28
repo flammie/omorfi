@@ -10,6 +10,9 @@ ACLOCAL_AMFLAGS = -I m4
 pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
 
+.PHONY: doc
+
+
 bindist-dir: all
 	if ! test -d $(PACKAGE)-binaries-$(VERSION) ; then \
 		$(MKDIR_P) omorfi-binaries-$(VERSION) ;\
@@ -36,11 +39,14 @@ conversions:
 test:
 	$(MAKE) check
 
-gh-pages:
-	PYTHONPATH=$(topsrcdir)/src/python $(PYTHON) doc/generate-stuffs.py \
+gh-pages: doc
+	$(JEKYLL) build
+
+doc:
+	PYTHONPATH=$(srcdir)/src/python $(PYTHON) doc/generate-stuffs.py \
 			   -S src/docs/stuff.tsv -o stuff.markdown -O stuffs/
 	$(PYTHON) doc/generate-paradigms.py -P src/docs/paradigms.tsv \
 		-A src/paradigms/ -o paradigms.markdown -O paradigms/
 	$(PYTHON) doc/generate-lexemes.py -L src/docs/lexemes.tsv \
 		-l src/lexemes.tsv -o lexemes.markdown -O lexemes/
-	doc/generate-statistics.bash test/ statistics/
+	doc/generate-statistics.bash test/

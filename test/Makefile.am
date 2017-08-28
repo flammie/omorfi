@@ -13,7 +13,7 @@ TESTS+=coverages-all-slow.bash
 endif
 if WANT_SMALL_LEXICONS
 TESTS+=rougher-tests.bash coverages-less-quick.bash
-XFAIL_TESTS+=rough-tests.sh coverages-all-quick.sh
+XFAIL_TESTS+=rough-tests.sh coverages-all-quick.sh coverages-all-slow.bash
 endif
 EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \
