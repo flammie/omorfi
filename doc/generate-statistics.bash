@@ -38,6 +38,7 @@ echo >> $INDEX
 echo "| Frequency | UPOS |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
 cut -f 1 src/generated/master.tsv | sort | uniq -c | sort -nr | fgrep -v upos |\
+    tr '|' ',' | sed -e 's/,/, /g' |\
     sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]$//' |\
     sed -e 's/ / | /' -e 's/^/| /' -e 's/$/ |/' >> $INDEX
 echo >> $INDEX

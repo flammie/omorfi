@@ -9,9 +9,7 @@ _These are semi-automatically generated statistics from omorfi
 database._ The statistics are based on the actual data in the database tables
 and the versions of whole analysed corpora and tools on this date.
 
-Generation time was `2017-08-28T03+02:00`
-
-**This version was generated with small lexicons turned on.**
+Generation time was `2017-08-28T04+02:00`
 
 ## Lexical database
 
@@ -42,7 +40,7 @@ definitions](http://universaldependencies.org/fi/pos/index.html).
 | 37 | SCONJ |
 | 25 | X |
 | 17 | CCONJ |
-| 10 | CCONJ|VERB |
+| 10 | CCONJ, VERB |
 | 10 | AUX |
 | 2 | DET |
 
@@ -115,6 +113,7 @@ automatically gathered details about each paradigm.
 | 17 | CCONJ |
 | 10 | AUX |
 | 2 | DET |
+
 ## Naïve coverages
 
 Naïve coverage is number of tokens (types) that receive one or more
@@ -156,6 +155,11 @@ most frequent missing tokens per
 corpus](#Most-frequent-missing-tokens-per-corpus).
 
 ## Most frequent missing tokens per corpus 
+
+These are the most common tokens still left unrecognised by the
+lexicon. Most of them should be foreign languages, codes and rubbish. These
+are used from time to time improve the lexical coverage.
+
 ### test/europarl-v7.fi-en.fi
 
 | Frequency | Word-form |
