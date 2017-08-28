@@ -77,3 +77,22 @@ body.rtl .row-fluid [class*="span"]:first-child {
 body.rtl ul, body.rtl ol {
     margin: 0 25px 10px 0;
 }
+
+/* Flammie */
+
+table th, table td {
+    border: 1px black;
+    padding: 1em 0;
+}
+
+table tr::nth-child(even) {
+    background-color: gray;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Linux Libertine", serif;
+}
+
+p, li, td, th, div {
+    font-family: "Ubuntu", "Oxygen", "Canterell", sans-serif;
+}
