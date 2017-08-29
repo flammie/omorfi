@@ -9,7 +9,7 @@ _These are semi-automatically generated statistics from omorfi
 database._ The statistics are based on the actual data in the database tables
 and the versions of whole analysed corpora and tools on this date.
 
-Generation time was `2017-08-28T04+02:00`
+Generation time was `2017-08-29T02+02:00`
 
 ## Lexical database
 
@@ -95,24 +95,24 @@ lexemes into for inflection and some of the lexical features, such as UPOS.
 You can see the [Paradigms](paradigms.html) generated documentation for some
 automatically gathered details about each paradigm.
 
-| Frequency | origin |
+| Frequency | Paradigm |
 |----------:|:-----|
-| 273814 | PROPN |
-| 112038 | NOUN |
-| 19114 | ADJ |
-| 11083 | VERB |
-| 8481 | ADV |
-| 901 | NUM |
-| 572 | ADP |
-| 382 | INTJ |
-| 86 | PRON |
-| 76 | SYM |
-| 51 | PUNCT |
-| 37 | SCONJ |
-| 35 | X |
-| 17 | CCONJ |
+| 730 | NUM |
+| 609 | NOUN |
+| 514 | PROPN |
+| 227 | VERB |
+| 134 | ADJ |
+| 53 | PRON |
+| 14 | SYM |
+| 14 | ADV |
+| 12 | ADP |
 | 10 | AUX |
+| 6 | X |
+| 4 | PUNCT |
+| 2 | INTJ |
 | 2 | DET |
+| 1 | SCONJ |
+| 1 | CCONJ |
 
 ## Naïve coverages
 

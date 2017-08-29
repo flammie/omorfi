@@ -68,11 +68,12 @@ lexemes into for inflection and some of the lexical features, such as UPOS.
 You can see the [Paradigms](paradigms.html) generated documentation for some
 automatically gathered details about each paradigm." >> $INDEX
 echo >> $INDEX
-echo "| Frequency | origin |" >> $INDEX
+echo "| Frequency | Paradigm |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
 cut -f 3 src/lexemes.tsv |\
     fgrep -v 'new_para' |\
-    cut -f 1 -d _ | sort | uniq -c | sort -nr |\
+    sort | uniq | cut -f 1 -d _ |\
+    sort | uniq -c | sort -nr |\
     sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]$//' |\
     sed -e 's/ / | /' -e 's/^/| /' -e 's/$/ |/' >> $INDEX
 echo >> $INDEX
