@@ -276,8 +276,7 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 generated/master.tsv: generated/joint.tsv paradigms/morphophonology.tsv \
 	paradigms/stub-deletions.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
-		-j $(srcdir)/paradigms/morphophonology.tsv \
-		-c $(srcdir)/paradigms/stub-deletions.tsv -i $< -o $@.unsrt
+		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | sort -k 1,1 >> $@
 	-rm -f $@.unsrt
@@ -390,8 +389,8 @@ generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
 		-i generated/inflections.tsv -o $@ -f=omor \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi-omor-guesser.lexc: paradigms/suffix-regexes.tsv \
-	paradigms/stub-deletions.tsv generated/stemparts.tsv \
+generated/omorfi-omor-guesser.lexc: paradigms.tsv \
+	generated/stemparts.tsv \
 	generated/inflections.tsv
 	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
 		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
