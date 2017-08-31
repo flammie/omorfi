@@ -8,7 +8,7 @@ if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 ORIGIN_FLAGS=-O kotus -O omorfi++
 else !WANT_SMALL_LEXICONS
-HLEXC_FLAGS=-Werror
+HLEXC_FLAGS=--Werror
 endif
 
 # {{{ Files
@@ -164,7 +164,7 @@ LABELSEGMENT_AUTOMATA=generated/omorfi.labelsegment.hfst
 LABELSEGMENT_GENERATED=generated/omorfi-labelsegments.lexc
 endif
 
-endif 
+endif
 DB_GENERATED=generated/master.tsv generated/joint.tsv
 if CAN_VISLCG3
 VISLCG3_GENERATED=generated/omorfi.cg3bin
@@ -1159,7 +1159,8 @@ generated/temporary.analyse.hfst: generated/temporary.unbounded.hfst
 generated/omorfi.analyse.hfst: generated/temporary.analyse.hfst
 	$(HF2F) $(HFST_FLAGS) -f olw -o $@ -i $<
 
-generated/omorfi_recased.hfst: generated/temporary.hfst generated/omorfi-recase-any.twolc.hfst
+# simple recasing (DEPRECATED)
+generated/omorfi_recased.analyse.hfst: generated/temporary.analyse.hfst generated/omorfi-recase-any.twolc.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HIC) $(HFST_FLAGS) - generated/omorfi-recase-any.twolc.hfst |\
 		$(HINV) $(HFST_FLAGS) |\
@@ -1196,7 +1197,8 @@ generated/temporary.describe.hfst: generated/temporary-omor.unbounded.hfst
 generated/omorfi.describe.hfst: generated/temporary.describe.hfst
 	$(HF2F) $(HFST_FLAGS) -f olw -o $@ -i $<
 
-generated/omorfi_recased.analyse.hfst: generated/temporary.describe.hfst generated/omorfi-recase-any.twolc.hfst
+# simple recasing (DEPRECATED)
+generated/omorfi_recased.describe.hfst: generated/temporary.describe.hfst generated/omorfi-recase-any.twolc.hfst
 	$(HINV) $(HFST_FLAGS) $< |\
 		$(HIC) $(HFST_FLAGS) - generated/omorfi-recase-any.twolc.hfst |\
 		$(HINV) $(HFST_FLAGS) |\
