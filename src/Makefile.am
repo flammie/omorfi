@@ -38,11 +38,6 @@ LEMMA_JOINS=attributes/abbr.tsv \
 # paradigm features
 PARADIGM_JOINS=paradigms.tsv
 
-# Morphology
-# stem variants by deletion and concatenations
-STEMPARTS=continuations/stems.tsv
-# suffixes by concatenations
-INFLECTIONS=continuations/inflections.tsv
 # Tokenisation
 TOKENS=tokeniser/omorfi.tokenise.pmatch
 # }}}
@@ -278,37 +273,30 @@ generated/master.tsv: generated/joint.tsv paradigms.tsv
 	tail -n +2 < $@.unsrt | sort -k 1,1 >> $@
 	-rm -f $@.unsrt
 
-generated/stemparts.tsv: $(STEMPARTS) generated/timestamp
-	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
-
-generated/inflections.tsv: $(INFLECTIONS) generated/timestamp
+generated/continuations.tsv: continuations.tsv generated/timestamp
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 # database to generic
-generated/omorfi.segment.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none --none-segments \
+generated/omorfi.segment.lexc: generated/master.tsv continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c continuations.tsv -o $@ -f=none --none-segments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi.lemmatise.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none --none-lemmas \
+generated/omorfi.lemmatise.lexc: generated/master.tsv continuations.tsv \
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c continuations.tsv -o $@ -f=none --none-lemmas \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi.accept.lexc:  generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=none \
+generated/omorfi.accept.lexc:  generated/master.tsv continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv  \
+		-c continuations.tsv -o $@ -f=none \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 
 # segmented analysis experiment
-generated/omorfi-labelsegments.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv -p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=labelsegments \
+generated/omorfi-labelsegments.lexc: generated/master.tsv continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c continuations.tsv -o $@ -f=labelsegments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 #
@@ -372,26 +360,20 @@ generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 generated/omorfi-omor.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
 
-generated/omorfi-omor.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
+generated/omorfi-omor.lexc: generated/master.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=omor \
+		-c continuations.tsv -o $@ -f=omor \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
-generated/omorfi.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
+generated/omorfi.lexc: generated/master.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=omor \
+		-c continuations.tsv -o $@ -f=omor \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi-omor-guesser.lexc: paradigms.tsv \
-	generated/stemparts.tsv \
-	generated/inflections.tsv
+generated/omorfi-omor-guesser.lexc: paradigms.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
 		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
-		-p generated/stemparts.tsv -i generated/inflections.tsv -o $@ -f=omor
+		-c continuiations.tsv -o $@ -f=omor
 
 generated/omorfi-omor-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
@@ -404,11 +386,10 @@ generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 generated/omorfi-ftb3.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py  -f=ftb3 -o $@
 
-generated/omorfi-ftb3.lexc: generated/master.tsv generated/stemparts.tsv generated/inflections.tsv
+generated/omorfi-ftb3.lexc: generated/master.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py  -m generated/master.tsv \
-		-p generated/stemparts.tsv \
 		$(BLACKLIST_FLAGS) \
-		-i generated/inflections.tsv -o $@ -f=ftb3
+		-c continuations.tsv -o $@ -f=ftb3
 
 generated/omorfi-ftb3-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
@@ -419,11 +400,9 @@ generated/omorfi-ftb3-lemmatise.regex:
 		-r lemmatise -o $@
 
 # database to apertium
-generated/apertium-fin.fin.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
+generated/apertium-fin.fin.lexc: generated/master.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@ -f=apertium
+		-c continuations.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=apertium -r apertium -o $@
@@ -435,19 +414,15 @@ generated/apertium-fin.fin.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=apertium -o $@
 
 # database to monodix
-generated/omorfi.dix: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
+generated/omorfi.dix: generated/master.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-monodix.py -m generated/master.tsv \
-		-p generated/stemparts.tsv \
-		-i generated/inflections.tsv -o $@
+		-c continuations.tsv -o $@
 
 # database to giella
-generated/omorfi-giella.lexc: generated/master.tsv generated/stemparts.tsv \
-	generated/inflections.tsv
+generated/omorfi-giella.lexc: generated/master.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-p generated/stemparts.tsv \
 		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
-		-i generated/inflections.tsv -o $@ -f=giella
+		-i continuations.tsv -o $@ -f=giella
 
 
 

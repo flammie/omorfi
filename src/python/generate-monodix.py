@@ -44,10 +44,8 @@ def main():
                     help="print each step to stdout while processing")
     ap.add_argument("--master", "-m", action="append", required=True,
                     metavar="MFILE", help="read lexical roots from MFILEs")
-    ap.add_argument("--stemparts", "-p", action="append", required=True,
-                    metavar="SPFILE", help="read lexical roots from SPFILEs")
-    ap.add_argument("--inflection", "-i", action="append", required=True,
-                    metavar="INFFILE", help="read inflection from INFFILEs")
+    ap.add_argument("--continuations", "-c", action="append", required=True,
+                    metavar="CONTFILE", help="read pardefs from CONTFILEs")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True,
                     type=argparse.FileType('w'),
@@ -75,76 +73,7 @@ def main():
     # read from csv files
     print('  <pardefs>', file=args.output)
     printed_pardefs = set()
-    for tsv_filename in args.inflection:
-        if args.verbose:
-            print("Reading from", tsv_filename)
-        linecount = 0
-        curr_pardef = ''
-        stacked_pardefs = list()
-        can_print = True
-        pardef_data = ''
-        # for each line
-        with open(tsv_filename, "r", newline='') as tsv_file:
-            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
-                                    strict=True)
-            for tsv_parts in tsv_reader:
-                linecount += 1
-                if len(tsv_parts) < 3:
-                    print("Too few tabs on line", linecount,
-                          "skipping following line completely:", file=stderr)
-                    print(tsv_parts, file=stderr)
-                    continue
-                # format output
-                if curr_pardef != tsv_parts[0]:
-                    if curr_pardef != '' and pardef_data != '':
-                        pardef_data += '  </pardef>'
-                    if can_print:
-                        print(pardef_data, file=args.output)
-                        printed_pardefs.add(curr_pardef.lower().replace('_',
-                                                                        '__'))
-                        pardef_data = ''
-                        can_print = True
-                    else:
-                        stacked_pardefs += [pardef_data]
-                        can_print = True
-                        pardef_data = ''
-                    pardef_data += '  <pardef n="' + \
-                        tsv_parts[0].lower().replace('_', '__') + \
-                        '">\n'
-                    curr_pardef = tsv_parts[0]
-                pardef_data += format_monodix_pardef(tsv_parts)
-                for outlex in tsv_parts[3:]:
-                    if outlex.lower().replace('_', '__') not in printed_pardefs:
-                        can_print = False
-        break_out = False
-        while len(stacked_pardefs) > 0:
-            next_stack = stacked_pardefs
-            for pardef in stacked_pardefs:
-                pardef_orig = pardef
-                can_print = True
-                pardef_name = re.search('pardef n="([^"]*)"', pardef).group(1)
-                for outlex in re.finditer('<par n="([^"]*)"', pardef):
-                    if outlex.group(1) not in printed_pardefs:
-                        if break_out:
-                            pardef = pardef.replace('<par n="' +
-                                                    outlex.group(1) + '"/>',
-                                                    '<!-- loop: ' +
-                                                    outlex.group(1).replace("_",
-                                                                            "@") + '-->')
-                            print("removed ", outlex.group(1), "from",
-                                  pardef_name, "to resolve a loop")
-                        else:
-                            can_print = False
-                if can_print:
-                    print(pardef, file=args.output)
-                    printed_pardefs.add(pardef_name)
-                    next_stack.remove(pardef_orig)
-                    break_out = False
-            if len(next_stack) == len(stacked_pardefs):
-                break_out = True
-            else:
-                stacked_pardefs = next_stack
-    for tsv_filename in args.stemparts:
+    for tsv_filename in args.continuations:
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
