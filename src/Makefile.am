@@ -36,9 +36,7 @@ LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/symbol-classes.tsv \
 			attributes/verb-arguments.tsv
 # paradigm features
-PARADIGM_JOINS=paradigms/morphophonology.tsv \
-			   paradigms/stub-deletions.tsv \
-			   paradigms/suffix-regexes.tsv
+PARADIGM_JOINS=paradigms.tsv
 
 # Morphology
 # stem variants by deletion and concatenations
@@ -273,8 +271,7 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/style.tsv \
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
 #
-generated/master.tsv: generated/joint.tsv paradigms/morphophonology.tsv \
-	paradigms/stub-deletions.tsv
+generated/master.tsv: generated/joint.tsv paradigms.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
