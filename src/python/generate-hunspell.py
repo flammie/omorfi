@@ -26,8 +26,6 @@ import csv
 import re
 from sys import exit, stderr
 
-from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
-                                      format_monodix_pardef, format_monodix_sdefs)
 
 
 # standard UI stuff
@@ -44,10 +42,8 @@ def main():
                     help="print each step to stdout while processing")
     ap.add_argument("--master", "-m", action="append", required=True,
                     metavar="MFILE", help="read lexical roots from MFILEs")
-    ap.add_argument("--stemparts", "-p", action="append", required=True,
-                    metavar="SPFILE", help="read lexical roots from SPFILEs")
-    ap.add_argument("--inflection", "-i", action="append", required=True,
-                    metavar="INFFILE", help="read inflection from INFFILEs")
+    ap.add_argument("--continuations", "-c", action="append", required=True,
+                    metavar="CONTFILE", help="read inflection from CONTFILEs")
     ap.add_argument("--paradigms", "-P", action="append", required=True,
                     metavar="PFILE", help="read paradigms from PFILEs")
     ap.add_argument("--version", "-V", action="version")
@@ -71,14 +67,39 @@ def main():
 
     quoting = csv.QUOTE_NONE
     quotechar = None
+    # map continuation to affixes
+    affixmap = {'SUFFIX': 1, 'NOUN': 2, 'ADJ': 3, 'VERB': 4, 'INTJ': 5,
+            'ACRONYM': 6, 'NUM': 7, 'PROPN': 8}
+    conts = 0
+    for tsv_filename in args.continuations:
+        if args.verbose:
+            print("Reading from", tsv_filename)
+        with open(tsv_filename, "r", newline='') as tsv_file:
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
+                    strict=True)
+            for tsv_parts in tsv_reader:
+                if not tsv_parts['continuation'] in affixmap:
+                    affixmap[tsv_parts['continuation']] = conts + 100
+                    conts += 1
+    # map paradigms to memory in dict
+    paradigms = dict()
+    for tsv_filename in args.paradigms:
+        if args.verbose:
+            print("Reading from", tsv_filename)
+        with open(tsv_filename, "r", newline='') as tsv_file:
+            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
+                    strict=True)
+            for tsv_parts in tsv_reader:
+                paradigms[tsv_parts['new_para']] = tsv_parts
     # write header to AFF file
+    if args.verbose:
+        print("Writing affixes to", args.aff.file_name)
     print('SET UTF-8', file=args.aff)
     print('FLAG long', file=args.aff)
     #          abcdefghijklmnopqrstuvwxyzåäöšžABCDEFGHIJKLMNOPQRESTUVWXYZÅÄÖŠŽ-.
     print('TRY aintesloukämrvjhpydögbcfwzxqåšžAINTESLOUKÄMRVJHPYDÖGBCXFWZXQÅŠŽ-.',
             file=args.aff)
-    affixmap = dict()
-    for tsv_filename in args.inflection:
+    for tsv_filename in args.continuations:
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
@@ -95,17 +116,31 @@ def main():
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
+                elif 'HEADERS' in tsv_parts[3]:
+                    continue
                 # format output
-                if prev_pardef != tsv_parts[0]:
+                if prev_pardef != '' and prev_pardef != tsv_parts[0]:
                     # AFFIX PARADIGM CROSS COUNT
                     pardef_data = 'SFX %d Y %d' % (affixmap[prev_pardef],
                             pardef_data.count('\n')) + pardef_data
                     print(pardef_data, file=args.aff)
                     pardef_data = ''
                 # AFFIX PARADIGM DELETE ADD MATCH
-                pardef_data += '\nSFX %d\t%s\t%s\t¤%s' % (affixmap[tsv_parts[0],
-                    paradigms[tsv_parts[0]]['deletion'],
-                    paradigms[tsv_parts[0]]['suffix_regex'])
+                if tsv_parts[0] in paradigms:
+                    deletion = paradigms[tsv_parts[0]]['deletion']
+                    suffix_match = paradigms[tsv_parts[0]]['suffix_regex']
+                else:
+                    deletion = "0"
+                    suffix_match = "."
+                contlist = list()
+                for cont in tsv_parts[3:]:
+                    if cont == '#':
+                        continue
+                    contlist += [str(affixmap[cont])]
+                conts = ','.join(contlist)
+                affix = tsv_parts[2].replace(
+                pardef_data += '\nSFX %d\t%s\t%s/%s\t%s' % (affixmap[tsv_parts[0]],
+                        deletion, tsv_parts[2], conts, suffix_match)
                 prev_pardef = tsv_parts[0]
 
     for tsv_filename in args.master:
@@ -114,7 +149,8 @@ def main():
         linecount = 0
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                                        quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
+                                        quoting=quoting, quotechar=quotechar,
+                                        escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
