@@ -3,9 +3,12 @@
 
 AC_PREREQ(2.64)
 AC_INIT([omorfi], [20170515_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
-AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests])
+AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
 AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
+AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
 VERSION=20170515_alpha
@@ -145,7 +148,13 @@ AC_MSG_CHECKING([if plans for world domination have succeeded yet])
 AC_MSG_RESULT([40 seconds to mars])
 
 # Checks for programs
+AM_PROG_AR
+AC_PROG_CC
+AC_PROG_CXX
+LT_INIT
+AC_PROG_INSTALL
 AC_PROG_LN_S
+AC_PROG_MAKE_SET
 AC_PATH_PROG([TIME], [time], [false])
 AS_IF([test "x$with_hfst" = "xyes" ], [
        AC_PATH_PROG([HLEXC], [hfst-lexc], [no])
@@ -285,6 +294,8 @@ AC_PATH_PROG([SBATCH], [sbatch], [false])
 # we are not using any traditional programming so as to need these standard
 # sections:
 # Checks for libraries
+PKG_CHECK_MODULES([LIBHFST], [hfst > 3.12],
+                  [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
 # Checks for header files
 # Checks for typedefs, structures and compiler characteristics
 # Checks for library functions
