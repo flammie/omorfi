@@ -293,11 +293,13 @@ AC_PATH_PROG([SBATCH], [sbatch], [false])
 
 # we are not using any traditional programming so as to need these standard
 # sections:
+AC_LANG([C++])
 # Checks for libraries
 PKG_CHECK_MODULES([LIBHFST], [hfst > 3.12],
                   [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
 # Checks for header files
 # Checks for typedefs, structures and compiler characteristics
+AX_CXX_COMPILE_STDCXX_11
 # Checks for library functions
 
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml

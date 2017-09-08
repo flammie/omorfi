@@ -27,16 +27,17 @@
 
 #include <hfst/hfst.h>
 
+
 namespace omorfi {
 
     class Omorfi {
 
     private:
 
-      hfst::Transducer analyser_;
+      hfst::HfstTransducer* analyser_;
       bool can_analyse_;
 
-      HfstTransducer* openHFST_(std::string& filename);
+      hfst::HfstTransducer* openHFST_(std::string& filename);
 
     public:
 
@@ -46,7 +47,11 @@ namespace omorfi {
 
         void loadAllFromDefaultDirs();
 
+        void loadFromDir(std::string& path);
+
         void loadFile(std::string& filename);
+
+        void loadAnalyser(std::string& filename);
 
         std::vector<std::string> analyse(std::string token);
 
@@ -55,7 +60,7 @@ namespace omorfi {
         bool accept(std::string token);
 
 
-    }
+    };
 
 }
 

@@ -1273,6 +1273,15 @@ generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 endif
 # }}}
 
+# {{{ C++ library
+
+lib_LTLIBRARIES=libomorfi.la
+libomorfi_la_SOURCES=cpp/omorfi.cc
+libomorfi_la_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(HFST_CFLAGS)
+libomorfi_la_LDFLAGS=-no-undefined -version-info 0:0:0 $(HFST_LIBS)
+
+# }}}
+
 # {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \

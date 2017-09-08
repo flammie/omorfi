@@ -25,26 +25,30 @@
 
 #include <hfst/hfst.h>
 #include <glob.h>
+#include <dirent.h>
+
+#include "omorfi.hh"
 
 namespace omorfi {
 
     Omorfi::Omorfi() :
-        can_analyse(false)
+        can_analyse_(false)
     {}
 
-    ~Omorfi::Omorfi() {
+    Omorfi::~Omorfi() {
         if (analyser_ != nullptr) {
-            delete analyser;
+            delete analyser_;
         }
     }
 
     void
     Omorfi::loadAllFromDefaultDirs() {
         std::vector<std::string> stdPaths = {"/usr/local/share/omorfi/",
-            "/usr/share/omorfi/"}
-        std::string homepath = getenv("HOME");
+            "/usr/share/omorfi/"};
+        char* homepath = getenv("HOME");
         if (homepath != nullptr) {
-            stdPaths.add(homepath);
+            std::string homeomorfi = string(homepath) + "/.omorfi/";
+            stdPaths.push_back(homeomorfi);
         }
         for (auto path : stdPaths) {
             DIR* dirp = opendir(path.c_str());
@@ -55,12 +59,12 @@ namespace omorfi {
     }
 
     void
-    Omorfi::loadFromDir(std::string dirname) {
-        glob_t globs;
+    Omorfi::loadFromDir(std::string& dirname) {
+        glob_t* globs;
         glob((dirname + "/omorfi*.hfst").c_str(), GLOB_TILDE, nullptr,
-             &globs);
-        for (int i = 0; i < globs.gl_pathc; i++) {
-            std::string filepath(globs.gl_pathv[1]);
+             globs);
+        for (unsigned int i = 0; i < globs->gl_pathc; i++) {
+            std::string filepath(globs->gl_pathv[1]);
             loadFile(filepath);
         }
         globfree(globs);
@@ -68,40 +72,52 @@ namespace omorfi {
 
     void
     Omorfi::loadFile(std::string& filename) {
-        if (filepath.find(".analyse.")) {
-            loadAnalyser(filepath);
+        if (filename.find(".analyse.")) {
+            loadAnalyser(filename);
         }
         else {
-            fprintf(stderr, "Unrecognised automaton %s", filepath);
+            fprintf(stderr, "Unrecognised automaton %s", filename.c_str());
         }
     }
 
-    HfstTransducer*
+    hfst::HfstTransducer*
     Omorfi::openHFST_(std::string& path) {
-        HfstInputStream his(path);
-        his.open();
-        HfstTransducer* hfst = new HfstTransducer(his);
+        hfst::HfstInputStream his(path);
+        //his.open();
+        hfst::HfstTransducer* hfst = new hfst::HfstTransducer(his);
         his.close();
         return hfst;
     }
 
     void
     Omorfi::loadAnalyser(std::string& filename) {
-          analyser_ = openHFST_(path);
+          analyser_ = openHFST_(filename);
+          if (analyser_ != nullptr) {
+              can_analyse_ = true;
+          } else {
+              can_analyse_ = false;
+          }
     }
 
      std::vector<std::string>
      Omorfi::analyse(std::string token) {
-        if (!can_analyse) {
-            throw();
+        if (can_analyse_) {
+            // do it
+        } else {
+            // XXX: error
         }
+        return std::vector<std::string>();
      }
 
      std::vector<std::string>
-     Omorfi::tokenise(std::string text);
+     Omorfi::tokenise(std::string text) {
+         return std::vector<std::string>();
+     }
 
      bool
-     Omorfi::accept(std::string token);
+     Omorfi::accept(std::string token) {
+         return (analyse(token).size() > 0);
+     }
 
 
 
