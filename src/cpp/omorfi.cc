@@ -99,18 +99,30 @@ namespace omorfi {
           }
     }
 
-     std::vector<std::string>
-     Omorfi::analyse(std::string token) {
+    std::vector<std::string>
+    Omorfi::analyse(std::string token) {
+        std::vector<std::string> anals;
         if (can_analyse_) {
             // do it
+            hfst::HfstOneLevelPaths* results = analyser_->lookup_fd(token);
+            for (hfst::HfstOneLevelPath anal : *results) {
+                hfst::StringVector analysis = anal.second;
+                std::string a;
+                for (std::string c : analysis) {
+                    a += c;
+                }
+                anals.push_back(a);
+            }
+            return anals;
         } else {
             // XXX: error
+            throw std::runtime_error("analyser not loaded");
         }
         return std::vector<std::string>();
      }
 
      std::vector<std::string>
-     Omorfi::tokenise(std::string text) {
+     Omorfi::tokenise(std::string /* text */) {
          return std::vector<std::string>();
      }
 
