@@ -5,29 +5,29 @@ category: design
 date: 2016-02-08 18:23:58
 ---
 
+**This document is outdated**
 
-This documentation concerns _hacking_ instructions of scripts in `src/` that handle and facilitate new word classification and lexical database stuff. The current version is just an unstructured collection of hacks. The data is stored in tsv files roughly as is understood by python's `csv.writer` and `csv.DictWriter` classes.
+This page is _hacking_ instructions for some scripts in `src/` that handle and facilitate lexical database usage in omorfi. The current version of the _lexical database_ is just a loosely structured collection of scripts and data. The data is stored in tsv files roughly as is understood by python's `csv.writer` and `csv.DictWriter` classes.
 
-(I'd like to rewrite this part in SQLite or something that maintains consistency of data on updates, stay tuned for updates in OmorfiLexicalDatabase. I would appreciate help of someone who actually likes database even though I studied this stuff decade ago and know how to do it I am not awfully excited about it anymore.)
+<aside>(I'd like to rewrite this part in SQLite or something that maintains consistency of data on updates, stay tuned for updates in OmorfiLexicalDatabase. I would appreciate help of someone who actually likes database even though I studied this stuff decade ago and know how to do it I am not awfully excited about it anymore.)</aside>
 
-# Introduction #
+# Introduction
 
-Lot of omorfi's functionality is based on large databases of lexical data, that is, information about words. Data from different sources has different kinds of information, and often lacking lot of explicit knowledge of the word's morphophonological structures, so we have a ton of python scripts to figure these data out semi-automatically. This process is also called _guessing_. Ideally most data sources should have all this data available verified by humans so that we wouldn't have to guess, but new words come up all the time and this set of scripts is done to help people in classification. The data is set up in a python's `dict()` structure.
+Lot of omorfi's functionality is based on having a large database of lexical data, that is, information about words. This data is stored in what we call _lexical database_, basically a collection of lexical entries associated to additional pieces of information that is required for different applications and research. The main entries are stored in database of lexemes, which is used as unique key for the word concept, i.e. currently just the dictionary form and a (running) homonym number. You can find this in the `lexemes.tsv`. This is combined with additional data based on the unique key, you can currently find them in `attributes/*.tsv`. Currently all word entries are required to have a _paradigm_ key `new_para`, this points to additional set of information joined to the lexical entry.  
 
-The whole process can be summarised by this simple flow-chart:
+# Data sources and guessing
 
-![https://omorfi.googlecode.com/git-history/lexical-as-top/doc/omorfi-flowchart-2015.svg](https://omorfi.googlecode.com/git-history/lexical-as-top/doc/omorfi-flowchart-2015.svg)
+Data from different sources has different kinds of information, and often lacking lot of explicit knowledge of the word's morphophonological structures, so we have some python scripts to figure these data out semi-automatically. This process is also called _guessing_. Ideally most data sources should have all this data available verified by humans so that we wouldn't have to guess, but new words come up all the time and this set of scripts is done to help people in classification. The data is set up in a python's `dict()` structure.
 
-The files in `src/lexemes/*.tsv` are joined column by column based on the lemma + homonym as key. The files in `src/paradigms/*.tsv` are joined en masse based on new\_para class.
 
 # Details #
 
 The map that we collect into python contains following fields. These main fields can form unique keys:
 
   * **lemma** is the word's id / the _dictionary form_.
-  * **new\_para** is our _full_ classification of the word.
-  * **pos** is _morphological_ part-of-speech.
   * **homonym** is a number denoting different lexemes with same lemma.
+  * **new\_para** is our _full_ classification of the word.
+  * **origin** denotes the data source for the lexeme.
 
 These are used for compatibility with official dictionaries
 
@@ -51,7 +51,8 @@ These are used in applications, for semantics, pragmatics, whatever:
   * **numeral\_class** is a string for additional numeral analyses
   * **pronoun** is a string of additional pronoun analyses
   * **style** determines usage limitations of word.
-  * **origin** denotes the data source for the lexeme.
+  * **upos** is _universal_ part-of-speech.
+  * **pos** is _legacy_ part-of-speech.
 
 These are used by implementations for morphographemics, etc.:
 
@@ -77,13 +78,17 @@ It is not fully unique, but almost. This is **required** for guessing, we cannot
 
 ## New para ##
 
-Is our classification to the word that contains _all_ the information that is required to inflect it properly in _omorfi_ systems. **Not guessable**. This classification is detailed in other wiki pages: . This is encoded as a `list`.
+Is our classification to the word that contains _all_ the information that is required to inflect it properly in _omorfi_ systems. **Not guessable**. This classification is detailed in other wiki pages: . This is encoded as a `string`.
 
 Note that this encodes all the information of other variables so it can be expanded to all other variables, or other variables can be used to guess this one.
 
+## UPOS
+
+Universal POS is a POS value drawn from [Universal dependencies](https://universaldependencies.org) standard. This is the main POS value used in omorfi since 2015.
+
 ## POS ##
 
-The POS used by omorfi is strictly limited to morphological features that can be seen from the inflection of the word.  **Not guessable**. It works like this: Nouns inflect in case/number forms, Adjectives have comparative derivation on top of that. Verbs inflect in tense/mood and person forms among others. Particles do not inflect. This is encoded as `string in ['N', 'A', 'V', 'P']`
+The legacy POS value used by omorfi is strictly limited to morphological features that can be seen from the inflection of the word.  **Not guessable**. It works like this: Nouns inflect in case/number forms, Adjectives have comparative derivation on top of that. Verbs inflect in tense/mood and person forms among others. Particles do not inflect. This is encoded as `string in ['N', 'A', 'V', 'P']`
 
 ## Homonym ##
 
