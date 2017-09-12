@@ -6,5 +6,5 @@ includedir=@includedir@
 Name: omorfi
 Description: Finnish lexical and morphological database and some parsers
 Version: @VERSION@
-Libs: 
-Cflags:
+Libs: @LIBHFST_LIBS@
+Cflags: @LIBHFST_CFLAGS@
