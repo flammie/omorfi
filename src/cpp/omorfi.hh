@@ -37,7 +37,7 @@ namespace omorfi {
       hfst::HfstTransducer* analyser_;
       bool can_analyse_;
 
-      hfst::HfstTransducer* openHFST_(std::string& filename);
+      hfst::HfstTransducer* openHFST_(const std::string& filename);
 
     public:
 
@@ -47,17 +47,17 @@ namespace omorfi {
 
         void loadAllFromDefaultDirs();
 
-        void loadFromDir(std::string& path);
+        void loadFromDir(const std::string& path);
 
-        void loadFile(std::string& filename);
+        void loadFile(const std::string& filename);
 
-        void loadAnalyser(std::string& filename);
+        void loadAnalyser(const std::string& filename);
 
-        std::vector<std::string> analyse(std::string token);
+        std::vector<std::string> analyse(const std::string& token);
 
-        std::vector<std::string> tokenise(std::string text);
+        std::vector<std::string> tokenise(const std::string& text);
 
-        bool accept(std::string token);
+        bool accept(const std::string& token);
 
 
     };

@@ -59,7 +59,7 @@ namespace omorfi {
     }
 
     void
-    Omorfi::loadFromDir(std::string& dirname) {
+    Omorfi::loadFromDir(const std::string& dirname) {
         glob_t* globs;
         glob((dirname + "/omorfi*.hfst").c_str(), GLOB_TILDE, nullptr,
              globs);
@@ -71,7 +71,7 @@ namespace omorfi {
     }
 
     void
-    Omorfi::loadFile(std::string& filename) {
+    Omorfi::loadFile(const std::string& filename) {
         if (filename.find(".analyse.")) {
             loadAnalyser(filename);
         }
@@ -81,7 +81,7 @@ namespace omorfi {
     }
 
     hfst::HfstTransducer*
-    Omorfi::openHFST_(std::string& path) {
+    Omorfi::openHFST_(const std::string& path) {
         hfst::HfstInputStream his(path);
         //his.open();
         hfst::HfstTransducer* hfst = new hfst::HfstTransducer(his);
@@ -90,7 +90,7 @@ namespace omorfi {
     }
 
     void
-    Omorfi::loadAnalyser(std::string& filename) {
+    Omorfi::loadAnalyser(const std::string& filename) {
           analyser_ = openHFST_(filename);
           if (analyser_ != nullptr) {
               can_analyse_ = true;
@@ -100,7 +100,7 @@ namespace omorfi {
     }
 
     std::vector<std::string>
-    Omorfi::analyse(std::string token) {
+    Omorfi::analyse(const std::string& token) {
         std::vector<std::string> anals;
         if (can_analyse_) {
             // do it
@@ -122,12 +122,12 @@ namespace omorfi {
      }
 
      std::vector<std::string>
-     Omorfi::tokenise(std::string /* text */) {
+     Omorfi::tokenise(const std::string& /* text */) {
          return std::vector<std::string>();
      }
 
      bool
-     Omorfi::accept(std::string token) {
+     Omorfi::accept(const std::string& token) {
          return (analyse(token).size() > 0);
      }
 
