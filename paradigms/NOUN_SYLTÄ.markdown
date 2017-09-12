@@ -5,14 +5,16 @@ paradigm: NOUN_SYLTÄ
 ### ` NOUN_SYLTÄ `
 
 Dictionary class 10 front t~l
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: ä
-* upos: NOUN
-* harmony: front
-* kotus_av: I
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: tä
+* kotus_av: I
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: tä
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: ä

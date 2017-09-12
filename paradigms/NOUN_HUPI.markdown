@@ -5,14 +5,16 @@ paradigm: NOUN_HUPI
 ### ` NOUN_HUPI `
 
 Dictionary class 5 back p~v There is a gap in i final words for p:v variation and front harmony
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: E
 * kotus_tn: 5
-* clitics: False
+* upos: NOUN
+* suffix_regex: pi
+* kotus_av: E
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pi
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

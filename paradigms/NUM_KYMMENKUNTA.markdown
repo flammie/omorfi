@@ -5,14 +5,16 @@ paradigm: NUM_KYMMENKUNTA
 ### ` NUM_KYMMENKUNTA `
 
 Approximative numerals, no inflection
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NUMERAL
-* stem_diphthong: None
-* stem_vowel: a
-* upos: NUM
-* harmony: back
-* kotus_av: J
 * kotus_tn: 10
-* clitics: False
+* upos: NUM
+* suffix_regex: kunta
+* kotus_av: J
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: a
+* plurale_tantum: False
+* clitics: False
+* pos: NUMERAL
+* stem_vowel: a

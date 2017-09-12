@@ -5,14 +5,16 @@ paradigm: NOUN_HÄÄT
 ### ` NOUN_HÄÄT `
 
 Dictionary class xxx äät plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 18
-* clitics: False
+* upos: NOUN
+* suffix_regex: äät
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ät
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

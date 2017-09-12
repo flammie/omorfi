@@ -5,14 +5,16 @@ paradigm: VERB_SIVALTAA
 ### ` VERB_SIVALTAA `
 
 Dictionary class54 back t~l
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: I
 * kotus_tn: 54
-* clitics: False
+* upos: VERB
+* suffix_regex: taa
+* kotus_av: I
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: taa
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

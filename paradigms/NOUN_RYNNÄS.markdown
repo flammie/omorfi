@@ -5,14 +5,16 @@ paradigm: NOUN_RYNNÄS
 ### ` NOUN_RYNNÄS `
 
 Dictionary class 41 näs
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: J
 * kotus_tn: 41
-* clitics: False
+* upos: NOUN
+* suffix_regex: nnäs
+* kotus_av: J
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: näs
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

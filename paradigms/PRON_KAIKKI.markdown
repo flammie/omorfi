@@ -5,14 +5,16 @@ paradigm: PRON_KAIKKI
 ### ` PRON_KAIKKI `
 
 prnoun kaikki inflects like NOUN_
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: PRONOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PRON
-* harmony: back
-* kotus_av: A
 * kotus_tn: 7
-* clitics: False
+* upos: PRON
+* suffix_regex: kaikki
+* kotus_av: A
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ki
+* plurale_tantum: False
+* clitics: False
+* pos: PRONOUN
+* stem_vowel: None

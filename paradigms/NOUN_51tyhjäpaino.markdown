@@ -5,14 +5,16 @@ paradigm: NOUN_51tyhjäpaino
 ### ` NOUN_51tyhjäpaino `
 
 Optimisation hack for exceptional compound ’tyhjäpaino’ that inflects in all parts with agreement
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 51
-* clitics: False
+* upos: NOUN
+* suffix_regex: tyhjäpaino
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: äpaino
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_LÄHDES
 ### ` PROPN_LÄHDES `
 
 
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: F
 * kotus_tn: 41
-* clitics: False
+* upos: PROPN
+* suffix_regex: des
+* kotus_av: F
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: des
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

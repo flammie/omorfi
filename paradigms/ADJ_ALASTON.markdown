@@ -5,14 +5,16 @@ paradigm: ADJ_ALASTON
 ### ` ADJ_ALASTON `
 
 Dictionary class 34 back
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 34
-* clitics: False
+* upos: ADJ
+* suffix_regex: ton
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: n
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

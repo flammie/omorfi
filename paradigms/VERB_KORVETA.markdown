@@ -5,14 +5,16 @@ paradigm: VERB_KORVETA
 ### ` VERB_KORVETA `
 
 Dictionary class74 back v~pe
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: E
 * kotus_tn: 74
-* clitics: False
+* upos: VERB
+* suffix_regex: veta
+* kotus_av: E
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: veta
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

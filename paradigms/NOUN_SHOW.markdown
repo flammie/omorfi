@@ -5,14 +5,16 @@ paradigm: NOUN_SHOW
 ### ` NOUN_SHOW `
 
 Dictionary class 22 u
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: u
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 22
-* clitics: False
+* upos: NOUN
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: 
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: u

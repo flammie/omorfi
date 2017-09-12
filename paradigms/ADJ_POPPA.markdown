@@ -5,14 +5,16 @@ paradigm: ADJ_POPPA
 ### ` ADJ_POPPA `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: a
-* upos: ADJ
-* harmony: back
-* kotus_av: B
 * kotus_tn: 10
-* clitics: False
+* upos: ADJ
+* suffix_regex: ppa
+* kotus_av: B
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pa
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: a

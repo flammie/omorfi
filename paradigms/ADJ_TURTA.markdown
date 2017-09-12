@@ -5,14 +5,16 @@ paradigm: ADJ_TURTA
 ### ` ADJ_TURTA `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: a
-* upos: ADJ
-* harmony: back
-* kotus_av: K
 * kotus_tn: 10
-* clitics: False
+* upos: ADJ
+* suffix_regex: rta
+* kotus_av: K
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ta
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: a

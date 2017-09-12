@@ -5,14 +5,16 @@ paradigm: NOUN_YKSIKKÖ
 ### ` NOUN_YKSIKKÖ `
 
 Dictionary class 4 kkö
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: A
 * kotus_tn: 4
-* clitics: False
+* upos: NOUN
+* suffix_regex: kkö
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: kö
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

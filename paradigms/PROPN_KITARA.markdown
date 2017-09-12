@@ -5,14 +5,16 @@ paradigm: PROPN_KITARA
 ### ` PROPN_KITARA `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: a
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 13
-* clitics: False
+* upos: PROPN
+* suffix_regex: a
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: a
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: a

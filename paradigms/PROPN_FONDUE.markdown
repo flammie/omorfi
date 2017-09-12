@@ -5,14 +5,16 @@ paradigm: PROPN_FONDUE
 ### ` PROPN_FONDUE `
 
 Dictionary class 21 ye
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: y
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 21
-* clitics: False
+* upos: PROPN
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: 
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: y

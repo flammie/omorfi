@@ -5,14 +5,16 @@ paradigm: NOUN_PYRAMIDI
 ### ` NOUN_PYRAMIDI `
 
 i:e with front and back harmony acceptable
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: both
-* kotus_av: None
 * kotus_tn: 5
-* clitics: False
+* upos: NOUN
+* suffix_regex: i
+* kotus_av: None
+* grade_dir: weaken
+* harmony: both
 * possessive: False
+* stem_diphthong: None
+* deletion: i
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

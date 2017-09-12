@@ -5,14 +5,16 @@ paradigm: PROPN_SÄNKY
 ### ` PROPN_SÄNKY `
 
 Dictionary class 1nky
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: G
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: nky
+* kotus_av: G
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ky
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

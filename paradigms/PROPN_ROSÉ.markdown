@@ -5,14 +5,16 @@ paradigm: PROPN_ROSÉ
 ### ` PROPN_ROSÉ `
 
 Dictionary class 21 e back
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: e
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 21
-* clitics: False
+* upos: PROPN
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: 
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: e

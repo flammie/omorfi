@@ -5,14 +5,16 @@ paradigm: NOUN_RIPE
 ### ` NOUN_RIPE `
 
 Dictionary class 48 front pe
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: B
 * kotus_tn: 48
-* clitics: False
+* upos: NOUN
+* suffix_regex: pe
+* kotus_av: B
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: e
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: ADJ_TYVEN
 ### ` ADJ_TYVEN `
 
 Dictionary class 32
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: None
 * kotus_tn: 32
-* clitics: False
+* upos: ADJ
+* suffix_regex: n
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

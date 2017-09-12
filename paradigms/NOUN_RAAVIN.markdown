@@ -5,14 +5,16 @@ paradigm: NOUN_RAAVIN
 ### ` NOUN_RAAVIN `
 
 Dictionary class 33 front p~vin
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: E
 * kotus_tn: 33
-* clitics: False
+* upos: NOUN
+* suffix_regex: vin
+* kotus_av: E
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: vin
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

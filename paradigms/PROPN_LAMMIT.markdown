@@ -5,14 +5,16 @@ paradigm: PROPN_LAMMIT
 ### ` PROPN_LAMMIT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: H
 * kotus_tn: 5
-* clitics: False
+* upos: PROPN
+* suffix_regex: mmit
+* kotus_av: H
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: mit
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

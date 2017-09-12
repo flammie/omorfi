@@ -5,14 +5,16 @@ paradigm: VERB_KAIVATA
 ### ` VERB_KAIVATA `
 
 Dictionary class73 back v~p
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: E
 * kotus_tn: 73
-* clitics: False
+* upos: VERB
+* suffix_regex: vata
+* kotus_av: E
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: vata
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

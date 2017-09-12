@@ -5,14 +5,16 @@ paradigm: NUM_51seitsemänmiljoonaa
 ### ` NUM_51seitsemänmiljoonaa `
 
 Optimisation hack for exceptional compound ’seitsemänmiljoonaa’ that inflects in all parts with agreement
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NUMERAL
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NUM
-* harmony: back
-* kotus_av: None
 * kotus_tn: 51
-* clitics: False
+* upos: NUM
+* suffix_regex: seitsemänmiljoonaa
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: änmiljoonaa
+* plurale_tantum: False
+* clitics: False
+* pos: NUMERAL
+* stem_vowel: None

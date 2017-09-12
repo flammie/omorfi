@@ -5,14 +5,16 @@ paradigm: ADJ_KULTA
 ### ` ADJ_KULTA `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: a
-* upos: ADJ
-* harmony: back
-* kotus_av: I
 * kotus_tn: 10
-* clitics: False
+* upos: ADJ
+* suffix_regex: lta
+* kotus_av: I
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ta
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: a

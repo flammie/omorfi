@@ -5,14 +5,16 @@ paradigm: ADJ_SUURI
 ### ` ADJ_SUURI `
 
 Dictionary class 24~26 back
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
+* kotus_tn: 2426
 * upos: ADJ
-* harmony: back
+* suffix_regex: i
 * kotus_av: None
-* kotus_tn: 26
-* clitics: False
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: i
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

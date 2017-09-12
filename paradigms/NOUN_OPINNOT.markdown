@@ -5,14 +5,16 @@ paradigm: NOUN_OPINNOT
 ### ` NOUN_OPINNOT `
 
 Dictionary class 1not plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: J
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: nnot
+* kotus_av: J
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: not
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

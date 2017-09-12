@@ -5,14 +5,16 @@ paradigm: PROPN_LENTTEE
 ### ` PROPN_LENTTEE `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: e
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 17
-* clitics: False
+* upos: PROPN
+* suffix_regex: ee
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: e
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: e

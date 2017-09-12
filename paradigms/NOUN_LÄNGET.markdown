@@ -5,14 +5,16 @@ paradigm: NOUN_LÄNGET
 ### ` NOUN_LÄNGET `
 
 Dictionary class xxx get plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: G
 * kotus_tn: 7
-* clitics: False
+* upos: NOUN
+* suffix_regex: nget
+* kotus_av: G
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: get
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

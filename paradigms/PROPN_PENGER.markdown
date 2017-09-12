@@ -5,14 +5,16 @@ paradigm: PROPN_PENGER
 ### ` PROPN_PENGER `
 
 Dictionary class 49 ger
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: G
 * kotus_tn: 49
-* clitics: False
+* upos: PROPN
+* suffix_regex: nger
+* kotus_av: G
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ger
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

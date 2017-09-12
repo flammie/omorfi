@@ -5,14 +5,16 @@ paradigm: ADJ_HELLE
 ### ` ADJ_HELLE `
 
 Dictionary class 48 l~t back
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: I
 * kotus_tn: 48
-* clitics: False
+* upos: ADJ
+* suffix_regex: lle
+* kotus_av: I
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: le
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

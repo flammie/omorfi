@@ -5,14 +5,16 @@ paradigm: PROPN_JYLKYT
 ### ` PROPN_JYLKYT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: A
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: kyt
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: yt
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

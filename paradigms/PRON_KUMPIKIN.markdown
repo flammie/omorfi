@@ -5,14 +5,16 @@ paradigm: PRON_KUMPIKIN
 ### ` PRON_KUMPIKIN `
 
 pronoun kumpikaan inflects like PRON_KUMPI before kin clitic
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: PRONOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PRON
-* harmony: back
-* kotus_av: None
 * kotus_tn: 101
-* clitics: False
+* upos: PRON
+* suffix_regex: mpikin
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pikin
+* plurale_tantum: False
+* clitics: False
+* pos: PRONOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_LUKU
 ### ` PROPN_LUKU `
 
 Dictionary class 1cuku
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: M
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: uku
+* kotus_av: M
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ku
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

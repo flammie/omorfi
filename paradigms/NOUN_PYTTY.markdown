@@ -5,14 +5,16 @@ paradigm: NOUN_PYTTY
 ### ` NOUN_PYTTY `
 
 Dictionary class 1ty
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: C
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: tty
+* kotus_av: C
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ty
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

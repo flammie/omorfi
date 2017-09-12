@@ -5,14 +5,16 @@ paradigm: NOUN_PUU
 ### ` NOUN_PUU `
 
 Dictionary class 18 u
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: u
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 18
-* clitics: False
+* upos: NOUN
+* suffix_regex: u
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: u
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: u

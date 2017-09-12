@@ -5,14 +5,16 @@ paradigm: VERB_TEMMATA
 ### ` VERB_TEMMATA `
 
 Dictionary class73 back m~p
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: H
 * kotus_tn: 73
-* clitics: False
+* upos: VERB
+* suffix_regex: mmata
+* kotus_av: H
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: mata
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

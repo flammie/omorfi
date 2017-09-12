@@ -5,14 +5,16 @@ paradigm: ADV_MITEN
 ### ` ADV_MITEN `
 
 None
-* grade_dir: False
-* plurale_tantum: False
-* pos: PARTICLE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADV
-* harmony: front
-* kotus_av: None
 * kotus_tn: 99
-* clitics: True
+* upos: ADV
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: False
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: True
+* pos: PARTICLE
+* stem_vowel: None

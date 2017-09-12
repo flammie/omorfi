@@ -5,14 +5,16 @@ paradigm: NOUN_IKENET
 ### ` NOUN_IKENET `
 
 Dictionary class 31 ien plurale tantum
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: D
 * kotus_tn: 32
-* clitics: False
+* upos: NOUN
+* suffix_regex: kenet
+* kotus_av: D
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: kenet
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

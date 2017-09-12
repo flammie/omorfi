@@ -5,14 +5,16 @@ paradigm: NOUN_RUIPELO
 ### ` NOUN_RUIPELO `
 
 Dictionary class 2o
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 2
-* clitics: False
+* upos: NOUN
+* suffix_regex: o
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

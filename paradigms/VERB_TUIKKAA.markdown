@@ -5,14 +5,16 @@ paradigm: VERB_TUIKKAA
 ### ` VERB_TUIKKAA `
 
 Dictionary class77 back 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: A
 * kotus_tn: 78
-* clitics: False
+* upos: VERB
+* suffix_regex: kkaa
+* kotus_av: A
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: kaa
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

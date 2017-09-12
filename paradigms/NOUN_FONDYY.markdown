@@ -5,14 +5,16 @@ paradigm: NOUN_FONDYY
 ### ` NOUN_FONDYY `
 
 Dictionary class 20 y
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: y
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 20
-* clitics: False
+* upos: NOUN
+* suffix_regex: yy
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: y
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: y

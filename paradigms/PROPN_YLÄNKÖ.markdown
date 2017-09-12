@@ -5,14 +5,16 @@ paradigm: PROPN_YLÄNKÖ
 ### ` PROPN_YLÄNKÖ `
 
 Dictionary class 1nkö
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: G
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: nkö
+* kotus_av: G
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: kö
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

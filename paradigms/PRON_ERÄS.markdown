@@ -5,14 +5,16 @@ paradigm: PRON_ERÄS
 ### ` PRON_ERÄS `
 
 pronoun s:ä inflection like NOUN_XXX
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: PRONOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PRON
-* harmony: front
-* kotus_av: None
 * kotus_tn: 41
-* clitics: False
+* upos: PRON
+* suffix_regex: s
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: s
+* plurale_tantum: False
+* clitics: False
+* pos: PRONOUN
+* stem_vowel: None

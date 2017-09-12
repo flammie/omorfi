@@ -5,14 +5,16 @@ paradigm: PROPN_MERTU
 ### ` PROPN_MERTU `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: K
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: rtu
+* kotus_av: K
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: tu
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

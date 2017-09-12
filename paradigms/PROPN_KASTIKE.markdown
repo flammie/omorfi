@@ -5,14 +5,16 @@ paradigm: PROPN_KASTIKE
 ### ` PROPN_KASTIKE `
 
 Dictionary class 48 back ke
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: A
 * kotus_tn: 48
-* clitics: False
+* upos: PROPN
+* suffix_regex: ke
+* kotus_av: A
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: e
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

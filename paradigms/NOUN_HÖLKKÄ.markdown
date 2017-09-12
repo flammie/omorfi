@@ -5,14 +5,16 @@ paradigm: NOUN_HÖLKKÄ
 ### ` NOUN_HÖLKKÄ `
 
 Dictionary class 10 front k̃~0
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: ä
-* upos: NOUN
-* harmony: front
-* kotus_av: A
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: kkä
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: kä
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: ä

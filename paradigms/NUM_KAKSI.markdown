@@ -5,14 +5,16 @@ paradigm: NUM_KAKSI
 ### ` NUM_KAKSI `
 
 Dictionary class31 back§
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NUMERAL
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NUM
-* harmony: back
-* kotus_av: None
 * kotus_tn: 31
-* clitics: False
+* upos: NUM
+* suffix_regex: kaksi
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ksi
+* plurale_tantum: False
+* clitics: False
+* pos: NUMERAL
+* stem_vowel: None

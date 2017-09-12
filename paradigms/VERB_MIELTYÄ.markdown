@@ -5,14 +5,16 @@ paradigm: VERB_MIELTYÄ
 ### ` VERB_MIELTYÄ `
 
 Dictionary class52 t~l y
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: front
-* kotus_av: I
 * kotus_tn: 52
-* clitics: False
+* upos: VERB
+* suffix_regex: ltyä
+* kotus_av: I
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: tyä
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

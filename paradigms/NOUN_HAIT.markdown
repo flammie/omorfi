@@ -5,14 +5,16 @@ paradigm: NOUN_HAIT
 ### ` NOUN_HAIT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 18
-* clitics: False
+* upos: NOUN
+* suffix_regex: it
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: it
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

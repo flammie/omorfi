@@ -5,14 +5,16 @@ paradigm: NOUN_KUULOKKEET
 ### ` NOUN_KUULOKKEET `
 
 Dictionary class kkkeeet plurale tantum
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: D
 * kotus_tn: 48
-* clitics: False
+* upos: NOUN
+* suffix_regex: keet
+* kotus_av: A
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: keet
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

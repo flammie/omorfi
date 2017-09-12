@@ -5,14 +5,16 @@ paradigm: PROPN_INGET
 ### ` PROPN_INGET `
 
 
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: G
 * kotus_tn: 44
-* clitics: False
+* upos: NOUN
+* suffix_regex: nget
+* kotus_av: G
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: get
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

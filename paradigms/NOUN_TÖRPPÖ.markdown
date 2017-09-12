@@ -5,14 +5,16 @@ paradigm: NOUN_TÖRPPÖ
 ### ` NOUN_TÖRPPÖ `
 
 Dictionary class 1pö
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: B
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: ppö
+* kotus_av: B
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: pö
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

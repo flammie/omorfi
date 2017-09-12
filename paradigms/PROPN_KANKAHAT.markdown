@@ -5,14 +5,16 @@ paradigm: PROPN_KANKAHAT
 ### ` PROPN_KANKAHAT `
 
 
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: G
 * kotus_tn: 41
-* clitics: False
+* upos: PROPN
+* suffix_regex: hat
+* kotus_av: G
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: hat
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

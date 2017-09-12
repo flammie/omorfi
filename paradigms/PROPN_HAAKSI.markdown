@@ -5,14 +5,16 @@ paradigm: PROPN_HAAKSI
 ### ` PROPN_HAAKSI `
 
 Dictionary class 27 ksi
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 31
-* clitics: False
+* upos: PROPN
+* suffix_regex: ksi
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ksi
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

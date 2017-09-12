@@ -5,14 +5,16 @@ paradigm: PROPN_PIDOT
 ### ` PROPN_PIDOT `
 
 Dictionary class 1ot plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: F
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: dot
+* kotus_av: F
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: dot
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

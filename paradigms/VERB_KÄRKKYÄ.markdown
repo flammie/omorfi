@@ -5,14 +5,16 @@ paradigm: VERB_KÄRKKYÄ
 ### ` VERB_KÄRKKYÄ `
 
 Dictionary class52 k~0 y
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: front
-* kotus_av: A
 * kotus_tn: 52
-* clitics: False
+* upos: VERB
+* suffix_regex: kkyä
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: kyä
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

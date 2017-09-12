@@ -5,14 +5,16 @@ paradigm: ADJ_ÄLLISTYNYT
 ### ` ADJ_ÄLLISTYNYT `
 
 Dictionary class 47 front
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: y
-* upos: ADJ
-* harmony: front
-* kotus_av: None
 * kotus_tn: 47
-* clitics: False
+* upos: ADJ
+* suffix_regex: yt
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: yt
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: y

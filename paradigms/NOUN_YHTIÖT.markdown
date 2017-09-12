@@ -5,14 +5,16 @@ paradigm: NOUN_YHTIÖT
 ### ` NOUN_YHTIÖT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 3
-* clitics: False
+* upos: NOUN
+* suffix_regex: t
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: t
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: NOUN_KUOPPA
 ### ` NOUN_KUOPPA `
 
 Dictionary class 10 back p~0
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: a
-* upos: NOUN
-* harmony: back
-* kotus_av: B
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: ppa
+* kotus_av: B
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pa
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: a

@@ -5,14 +5,16 @@ paradigm: NOUN_MYRKKY
 ### ` NOUN_MYRKKY `
 
 Dictionary class 1ky
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: A
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: kky
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ky
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

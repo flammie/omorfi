@@ -5,14 +5,16 @@ paradigm: PROPN_KLUMPIT
 ### ` PROPN_KLUMPIT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: B
 * kotus_tn: 5
-* clitics: False
+* upos: PROPN
+* suffix_regex: pit
+* kotus_av: B
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: it
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

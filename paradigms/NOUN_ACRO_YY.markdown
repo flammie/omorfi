@@ -5,14 +5,16 @@ paradigm: NOUN_ACRO_YY
 ### ` NOUN_ACRO_YY `
 
 Acronym that ends in 'y' pronounced as letter
-* grade_dir: False
-* plurale_tantum: False
-* pos: ACRONYM
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 0
-* clitics: False
+* upos: NOUN
+* suffix_regex: [YÜyü]
+* kotus_av: None
+* grade_dir: False
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: ACRONYM
+* stem_vowel: None

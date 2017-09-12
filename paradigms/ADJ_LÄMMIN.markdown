@@ -5,14 +5,16 @@ paradigm: ADJ_LÄMMIN
 ### ` ADJ_LÄMMIN `
 
 Dictionary class 34 m~p front
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: H
 * kotus_tn: 35
-* clitics: False
+* upos: ADJ
+* suffix_regex: mmin
+* kotus_av: H
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: min
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

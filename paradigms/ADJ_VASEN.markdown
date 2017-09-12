@@ -5,14 +5,16 @@ paradigm: ADJ_VASEN
 ### ` ADJ_VASEN `
 
 Dictionary class 36
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 37
-* clitics: False
+* upos: ADJ
+* suffix_regex: n
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: n
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

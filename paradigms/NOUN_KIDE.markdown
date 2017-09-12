@@ -5,14 +5,16 @@ paradigm: NOUN_KIDE
 ### ` NOUN_KIDE `
 
 Dictionary class 48 front de
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: F
 * kotus_tn: 48
-* clitics: False
+* upos: NOUN
+* suffix_regex: de
+* kotus_av: F
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: de
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

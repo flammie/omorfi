@@ -5,14 +5,16 @@ paradigm: VERB_JAHDATA
 ### ` VERB_JAHDATA `
 
 Dictionary class73 back d~r
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: F
 * kotus_tn: 73
-* clitics: False
+* upos: VERB
+* suffix_regex: data
+* kotus_av: F
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: data
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

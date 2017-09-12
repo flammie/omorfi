@@ -5,14 +5,16 @@ paradigm: ADJ_KYLMÄJÄRKINEN
 ### ` ADJ_KYLMÄJÄRKINEN `
 
 Dictionary class 38 front
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: None
 * kotus_tn: 38
-* clitics: False
+* upos: ADJ
+* suffix_regex: nen
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: nen
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

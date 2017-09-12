@@ -5,14 +5,16 @@ paradigm: ADJ_TÄYSI
 ### ` ADJ_TÄYSI `
 
 Dictionary class 27 front
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: None
 * kotus_tn: 27
-* clitics: False
+* upos: ADJ
+* suffix_regex: si
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: si
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: NOUN_HÄVINNEET
 ### ` NOUN_HÄVINNEET `
 
 Dictionary class nut plurale tantum
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 47
-* clitics: False
+* upos: NOUN
+* suffix_regex: neet
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: et
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

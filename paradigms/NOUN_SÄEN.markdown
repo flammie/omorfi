@@ -5,14 +5,16 @@ paradigm: NOUN_SÄEN
 ### ` NOUN_SÄEN `
 
 Dictionary class 49 en
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: D
 * kotus_tn: 49
-* clitics: False
+* upos: NOUN
+* suffix_regex: en
+* kotus_av: D
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: en
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: NOUN_AUER
 ### ` NOUN_AUER `
 
 Dictionary class 49 auer
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: T
 * kotus_tn: 49
-* clitics: False
+* upos: NOUN
+* suffix_regex: er
+* kotus_av: T
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: er
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

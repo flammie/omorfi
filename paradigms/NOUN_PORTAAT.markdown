@@ -5,14 +5,16 @@ paradigm: NOUN_PORTAAT
 ### ` NOUN_PORTAAT `
 
 Dictionary class rtaat plurale tantum
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: K
 * kotus_tn: 41
-* clitics: False
+* upos: NOUN
+* suffix_regex: rtaat
+* kotus_av: K
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: taat
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

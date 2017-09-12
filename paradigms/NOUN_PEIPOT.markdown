@@ -5,14 +5,16 @@ paradigm: NOUN_PEIPOT
 ### ` NOUN_PEIPOT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: B
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: pot
+* kotus_av: B
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ot
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

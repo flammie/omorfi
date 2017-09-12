@@ -5,14 +5,16 @@ paradigm: ADJ_VIMMATTU
 ### ` ADJ_VIMMATTU `
 
 The quantitative gradation of t before u is in class described here, which was ¹⁻C in the dictionary. The u stems with quantitative t gradation are commonest with nut participle passive derivation’s back form (-ttu).
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: C
 * kotus_tn: 1
-* clitics: False
+* upos: ADJ
+* suffix_regex: ttu
+* kotus_av: C
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: tu
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

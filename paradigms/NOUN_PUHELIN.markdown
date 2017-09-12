@@ -5,14 +5,16 @@ paradigm: NOUN_PUHELIN
 ### ` NOUN_PUHELIN `
 
 Dictionary class 33 back
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 33
-* clitics: False
+* upos: NOUN
+* suffix_regex: n
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: n
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

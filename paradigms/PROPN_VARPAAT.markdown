@@ -5,14 +5,16 @@ paradigm: PROPN_VARPAAT
 ### ` PROPN_VARPAAT `
 
 
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: E
 * kotus_tn: 41
-* clitics: False
+* upos: PROPN
+* suffix_regex: paat
+* kotus_av: E
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: paat
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

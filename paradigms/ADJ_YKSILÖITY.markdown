@@ -5,14 +5,16 @@ paradigm: ADJ_YKSILÖITY
 ### ` ADJ_YKSILÖITY `
 
 The gradation of t ~ d after u is in class described here, the dictionary class for this is ¹⁻F. The commonest t ~ d variation in u stems comes from nut participle’s passive’s front form (-ty).
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: F
 * kotus_tn: 1
-* clitics: False
+* upos: ADJ
+* suffix_regex: ty
+* kotus_av: F
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ty
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

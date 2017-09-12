@@ -5,14 +5,16 @@ paradigm: NUM_51kahdeksanbiljoonaa
 ### ` NUM_51kahdeksanbiljoonaa `
 
 Optimisation hack for exceptional compound ’kahdeksanbiljoonaa’ that inflects in all parts with agreement
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NUMERAL
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NUM
-* harmony: back
-* kotus_av: None
 * kotus_tn: 51
-* clitics: False
+* upos: NUM
+* suffix_regex: kahdeksanbiljoonaa
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: anbiljoonaa
+* plurale_tantum: False
+* clitics: False
+* pos: NUMERAL
+* stem_vowel: None

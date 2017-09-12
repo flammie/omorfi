@@ -5,14 +5,16 @@ paradigm: ADJ_UUSI
 ### ` ADJ_UUSI `
 
 Dictionary class 27 back
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 27
-* clitics: False
+* upos: ADJ
+* suffix_regex: si
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: si
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

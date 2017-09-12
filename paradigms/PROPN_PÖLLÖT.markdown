@@ -5,14 +5,16 @@ paradigm: PROPN_PÖLLÖT
 ### ` PROPN_PÖLLÖT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: öt
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: t
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

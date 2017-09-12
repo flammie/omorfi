@@ -5,14 +5,16 @@ paradigm: NOUN_HAPSI
 ### ` NOUN_HAPSI `
 
 Dictionary class 27 psi
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 29
-* clitics: False
+* upos: NOUN
+* suffix_regex: psi
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: psi
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: VERB_KIERTYÄ
 ### ` VERB_KIERTYÄ `
 
 Dictionary class52 t~r y
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: front
-* kotus_av: K
 * kotus_tn: 52
-* clitics: False
+* upos: VERB
+* suffix_regex: rtyä
+* kotus_av: K
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: tyä
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

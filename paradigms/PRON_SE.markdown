@@ -5,14 +5,16 @@ paradigm: PRON_SE
 ### ` PRON_SE `
 
 inflects with e:i stems, singulars only
-* grade_dir: False
-* plurale_tantum: False
-* pos: PRONOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PRON
-* harmony: front
-* kotus_av: None
 * kotus_tn: 101
-* clitics: False
+* upos: PRON
+* suffix_regex: se
+* kotus_av: None
+* grade_dir: False
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: e
+* plurale_tantum: False
+* clitics: False
+* pos: PRONOUN
+* stem_vowel: None

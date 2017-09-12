@@ -5,14 +5,16 @@ paradigm: VERB_AMPUA
 ### ` VERB_AMPUA `
 
 Dictionary class52 p~m u
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: H
 * kotus_tn: 52
-* clitics: False
+* upos: VERB
+* suffix_regex: pua
+* kotus_av: H
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pua
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_BRIE
 ### ` PROPN_BRIE `
 
 Dictionary class 21 i front
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: i
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 21
-* clitics: False
+* upos: PROPN
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: i

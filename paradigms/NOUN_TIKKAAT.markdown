@@ -5,14 +5,16 @@ paradigm: NOUN_TIKKAAT
 ### ` NOUN_TIKKAAT `
 
 Dictionary class kaat plurale tantum
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: D
 * kotus_tn: 41
-* clitics: False
+* upos: NOUN
+* suffix_regex: kaat
+* kotus_av: A
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: kaat
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_COWBOY
 ### ` PROPN_COWBOY `
 
 Dictionary class 21 iy
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: i
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 21
-* clitics: False
+* upos: PROPN
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: 
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: i

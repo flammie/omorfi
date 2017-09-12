@@ -5,14 +5,16 @@ paradigm: ADP_MUKAISESTI
 ### ` ADP_MUKAISESTI `
 
 adposition without possessives, clitic with back harmony
-* grade_dir: False
-* plurale_tantum: False
-* pos: PARTICLE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADP
-* harmony: back
-* kotus_av: None
 * kotus_tn: 99
-* clitics: True
+* upos: ADP
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: False
+* harmony: back
 * possessive: optional
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: True
+* pos: PARTICLE
+* stem_vowel: None

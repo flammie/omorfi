@@ -5,14 +5,16 @@ paradigm: PROPN_MITTA
 ### ` PROPN_MITTA `
 
 Dictionary class 9 t~0
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: a
-* upos: PROPN
-* harmony: back
-* kotus_av: C
 * kotus_tn: 9
-* clitics: False
+* upos: PROPN
+* suffix_regex: tta
+* kotus_av: C
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ta
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: a

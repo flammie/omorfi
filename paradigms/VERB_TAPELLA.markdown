@@ -5,14 +5,16 @@ paradigm: VERB_TAPELLA
 ### ` VERB_TAPELLA `
 
 Dictionary class67 back l 0p
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: B
 * kotus_tn: 67
-* clitics: False
+* upos: VERB
+* suffix_regex: pella
+* kotus_av: B
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ella
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

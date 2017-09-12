@@ -5,14 +5,16 @@ paradigm: PROPN_RAUDAT
 ### ` PROPN_RAUDAT `
 
 Dictionary class xxx dat plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: F
 * kotus_tn: 9
-* clitics: False
+* upos: PROPN
+* suffix_regex: dat
+* kotus_av: F
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: dat
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: AUX_AIKOA
 ### ` AUX_AIKOA `
 
 auxiliary version of ko:o verb stem
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: AUX
-* harmony: back
-* kotus_av: D
 * kotus_tn: 52
-* clitics: False
+* upos: AUX
+* suffix_regex: aikoa
+* kotus_av: D
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: koa
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

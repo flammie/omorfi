@@ -5,14 +5,16 @@ paradigm: NOUN_SISÄLTÖ
 ### ` NOUN_SISÄLTÖ `
 
 Dictionary class 1ltö
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: I
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: ltö
+* kotus_av: I
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: tö
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

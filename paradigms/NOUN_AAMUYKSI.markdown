@@ -5,14 +5,16 @@ paradigm: NOUN_AAMUYKSI
 ### ` NOUN_AAMUYKSI `
 
 Non-dictionary class for numeral compounds ending yksi
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 31
-* clitics: False
+* upos: NOUN
+* suffix_regex: yksi
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ksi
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

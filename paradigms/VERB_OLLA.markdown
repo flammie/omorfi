@@ -5,14 +5,16 @@ paradigm: VERB_OLLA
 ### ` VERB_OLLA `
 
 The verb olla has very peculiar and heteroclitic inflection with lot of common short forms in standard spoken Finnish
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: None
 * kotus_tn: 1067
-* clitics: False
+* upos: VERB
+* suffix_regex: olla
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: olla
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

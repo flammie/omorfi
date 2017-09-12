@@ -5,14 +5,16 @@ paradigm: NOUN_SÄRKÄT
 ### ` NOUN_SÄRKÄT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: A
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: kät
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ät
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

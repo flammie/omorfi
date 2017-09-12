@@ -5,14 +5,16 @@ paradigm: PROPN_RINTEET
 ### ` PROPN_RINTEET `
 
 
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: J
 * kotus_tn: 48
-* clitics: False
+* upos: PROPN
+* suffix_regex: nteet
+* kotus_av: J
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: teet
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

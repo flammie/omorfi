@@ -5,14 +5,16 @@ paradigm: NOUN_KENGÄT
 ### ` NOUN_KENGÄT `
 
 Dictionary class xxx a front kg plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: G
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: ngät
+* kotus_av: G
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: gät
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

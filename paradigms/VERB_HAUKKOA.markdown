@@ -5,14 +5,16 @@ paradigm: VERB_HAUKKOA
 ### ` VERB_HAUKKOA `
 
 Dictionary class52 k~0 o
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: A
 * kotus_tn: 52
-* clitics: False
+* upos: VERB
+* suffix_regex: kkoa
+* kotus_av: A
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: koa
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

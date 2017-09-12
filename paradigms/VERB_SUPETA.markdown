@@ -5,14 +5,16 @@ paradigm: VERB_SUPETA
 ### ` VERB_SUPETA `
 
 Dictionary class72 front 0~p
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: B
 * kotus_tn: 72
-* clitics: False
+* upos: VERB
+* suffix_regex: peta
+* kotus_av: B
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: eta
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

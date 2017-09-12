@@ -5,14 +5,16 @@ paradigm: PROPN_51Tyynimeri
 ### ` PROPN_51Tyynimeri `
 
 Optimisation hack for exceptional compound ’Tyynimeri’ that inflects in all parts with agreement
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 51
-* clitics: False
+* upos: PROPN
+* suffix_regex: Tyynimeri
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: imeri
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

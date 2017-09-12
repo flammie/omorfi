@@ -5,14 +5,16 @@ paradigm: ADJ_KULUNUT
 ### ` ADJ_KULUNUT `
 
 Dictionary class 47 back
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: u
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 47
-* clitics: False
+* upos: ADJ
+* suffix_regex: ut
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ut
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: u

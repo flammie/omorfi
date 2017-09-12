@@ -5,14 +5,16 @@ paradigm: PROPN_NISSE
 ### ` PROPN_NISSE `
 
 Dictionary class 8 front
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 8
-* clitics: False
+* upos: PROPN
+* suffix_regex: [Eeěë]
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_LUPA
 ### ` PROPN_LUPA `
 
 Dictionary class 10 back p~v
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: a
-* upos: PROPN
-* harmony: back
-* kotus_av: E
 * kotus_tn: 10
-* clitics: False
+* upos: PROPN
+* suffix_regex: pa
+* kotus_av: E
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pa
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: a

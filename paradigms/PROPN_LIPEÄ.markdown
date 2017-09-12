@@ -5,14 +5,16 @@ paradigm: PROPN_LIPEÄ
 ### ` PROPN_LIPEÄ `
 
 Dictionary class 15 eä
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: ä
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 15
-* clitics: False
+* upos: PROPN
+* suffix_regex: eä
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ä
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: ä

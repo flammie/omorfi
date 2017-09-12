@@ -5,14 +5,16 @@ paradigm: ADJ_VALKAISTU
 ### ` ADJ_VALKAISTU `
 
 The stems ending in u are in class described here, and in old dictionaries the class is ¹. Common part of this class is formed by nut participle passive’s _back_ vowel versions after s stem verbs
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 1
-* clitics: False
+* upos: ADJ
+* suffix_regex: u
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

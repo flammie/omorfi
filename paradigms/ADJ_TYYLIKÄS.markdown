@@ -5,14 +5,16 @@ paradigm: ADJ_TYYLIKÄS
 ### ` ADJ_TYYLIKÄS `
 
 Dictionary class 41 käs
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: A
 * kotus_tn: 41
-* clitics: False
+* upos: ADJ
+* suffix_regex: käs
+* kotus_av: A
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: äs
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_VUO
 ### ` PROPN_VUO `
 
 Dictionary class 19 uo
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 19
-* clitics: False
+* upos: PROPN
+* suffix_regex: uo
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: uo
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: NOUN_JUMALA
 ### ` NOUN_JUMALA `
 
 a:0 with consonant stem ten genitive
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: a
-* upos: NOUN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: a
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: a
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: a

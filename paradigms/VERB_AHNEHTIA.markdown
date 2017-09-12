@@ -5,14 +5,16 @@ paradigm: VERB_AHNEHTIA
 ### ` VERB_AHNEHTIA `
 
 Dictionary class61 back t~d
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: F
 * kotus_tn: 61
-* clitics: False
+* upos: VERB
+* suffix_regex: tia
+* kotus_av: F
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: tia
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

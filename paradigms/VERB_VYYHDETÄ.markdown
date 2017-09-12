@@ -5,14 +5,16 @@ paradigm: VERB_VYYHDETÄ
 ### ` VERB_VYYHDETÄ `
 
 Dictionary class74 front t~de
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: front
-* kotus_av: F
 * kotus_tn: 74
-* clitics: False
+* upos: VERB
+* suffix_regex: detä
+* kotus_av: F
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: detä
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

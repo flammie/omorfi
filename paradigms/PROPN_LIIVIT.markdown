@@ -5,14 +5,16 @@ paradigm: PROPN_LIIVIT
 ### ` PROPN_LIIVIT `
 
 Dictionary class xxx iiiit plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 5
-* clitics: False
+* upos: PROPN
+* suffix_regex: it
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: t
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

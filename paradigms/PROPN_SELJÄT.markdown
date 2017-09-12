@@ -5,14 +5,16 @@ paradigm: PROPN_SELJÄT
 ### ` PROPN_SELJÄT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: L
 * kotus_tn: 10
-* clitics: False
+* upos: PROPN
+* suffix_regex: jät
+* kotus_av: L
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: jät
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

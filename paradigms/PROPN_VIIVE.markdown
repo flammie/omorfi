@@ -5,14 +5,16 @@ paradigm: PROPN_VIIVE
 ### ` PROPN_VIIVE `
 
 Dictionary class 48 front ve
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: E
 * kotus_tn: 48
-* clitics: False
+* upos: PROPN
+* suffix_regex: ve
+* kotus_av: E
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ve
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

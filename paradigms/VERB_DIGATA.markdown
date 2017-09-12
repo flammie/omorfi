@@ -5,14 +5,16 @@ paradigm: VERB_DIGATA
 ### ` VERB_DIGATA `
 
 Dictionary class73 back 0~g
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: O
 * kotus_tn: 73
-* clitics: False
+* upos: VERB
+* suffix_regex: gata
+* kotus_av: O
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ata
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

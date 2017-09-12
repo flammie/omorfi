@@ -5,14 +5,16 @@ paradigm: ADJ_POHATTA
 ### ` ADJ_POHATTA `
 
 A-final words with long vowels and syllable boundary
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: a
-* upos: ADJ
-* harmony: back
-* kotus_av: C
 * kotus_tn: 14
-* clitics: False
+* upos: ADJ
+* suffix_regex: tta
+* kotus_av: C
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ta
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: a

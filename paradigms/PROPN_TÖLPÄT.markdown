@@ -5,14 +5,16 @@ paradigm: PROPN_TÖLPÄT
 ### ` PROPN_TÖLPÄT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: B
 * kotus_tn: 10
-* clitics: False
+* upos: PROPN
+* suffix_regex: pät
+* kotus_av: B
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ät
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: ADJ_SUIPPO
 ### ` ADJ_SUIPPO `
 
 The quantitative gradation of p before o is in class described here and old dictionaries would use ¹⁻B.
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: B
 * kotus_tn: 1
-* clitics: False
+* upos: ADJ
+* suffix_regex: ppo
+* kotus_av: B
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: po
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: PROPN_TEHTAAT
 ### ` PROPN_TEHTAAT `
 
 
-* grade_dir: strengthen
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: F
 * kotus_tn: 41
-* clitics: False
+* upos: PROPN
+* suffix_regex: taat
+* kotus_av: F
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: taat
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

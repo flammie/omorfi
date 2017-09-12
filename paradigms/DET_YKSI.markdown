@@ -5,14 +5,16 @@ paradigm: DET_YKSI
 ### ` DET_YKSI `
 
 determiner version of pronoun/numeral ‘yksi’
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: PRONOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: DET
-* harmony: front
-* kotus_av: None
 * kotus_tn: 31
-* clitics: False
+* upos: DET
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ksi
+* plurale_tantum: False
+* clitics: False
+* pos: PRONOUN
+* stem_vowel: None

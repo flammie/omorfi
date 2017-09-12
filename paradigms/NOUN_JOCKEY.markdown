@@ -5,14 +5,16 @@ paradigm: NOUN_JOCKEY
 ### ` NOUN_JOCKEY `
 
 Dictionary class 21 yi
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 21
-* clitics: False
+* upos: NOUN
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: weaken
+* harmony: both
 * possessive: False
+* stem_diphthong: None
+* deletion: 
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: i

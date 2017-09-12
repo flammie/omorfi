@@ -5,14 +5,16 @@ paradigm: VERB_PYYTÄÄ
 ### ` VERB_PYYTÄÄ `
 
 Dictionary class54 front
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: front
-* kotus_av: F
 * kotus_tn: 54
-* clitics: False
+* upos: VERB
+* suffix_regex: tää
+* kotus_av: F
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: tää
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

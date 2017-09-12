@@ -5,14 +5,16 @@ paradigm: NOUN_FÄNRIKIT
 ### ` NOUN_FÄNRIKIT `
 
 
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: A
 * kotus_tn: 5
-* clitics: False
+* upos: NOUN
+* suffix_regex: it
+* kotus_av: A
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: it
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

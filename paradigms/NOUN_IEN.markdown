@@ -5,14 +5,16 @@ paradigm: NOUN_IEN
 ### ` NOUN_IEN `
 
 Dictionary class 32 ien Some of the n-final stems have n:m variation.
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: D
 * kotus_tn: 32
-* clitics: False
+* upos: NOUN
+* suffix_regex: en
+* kotus_av: D
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: en
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

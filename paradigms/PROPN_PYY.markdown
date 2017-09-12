@@ -5,14 +5,16 @@ paradigm: PROPN_PYY
 ### ` PROPN_PYY `
 
 Dictionary class 18 y
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: y
-* upos: PROPN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 18
-* clitics: False
+* upos: PROPN
+* suffix_regex: yy
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: y
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: y

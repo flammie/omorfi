@@ -5,14 +5,16 @@ paradigm: ADJ_PAHIN
 ### ` ADJ_PAHIN `
 
 Dictionary class 35 back
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 36
-* clitics: False
+* upos: ADJ
+* suffix_regex: in
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: n
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

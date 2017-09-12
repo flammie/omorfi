@@ -5,14 +5,16 @@ paradigm: VERB_KALPPIA
 ### ` VERB_KALPPIA `
 
 Dictionary class61 back p~0
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: B
 * kotus_tn: 61
-* clitics: False
+* upos: VERB
+* suffix_regex: ppia
+* kotus_av: B
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: pia
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

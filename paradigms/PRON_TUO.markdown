@@ -5,14 +5,16 @@ paradigm: PRON_TUO
 ### ` PRON_TUO `
 
 inflects like NOUN_SUO, singulars only
-* grade_dir: False
-* plurale_tantum: False
-* pos: PRONOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PRON
-* harmony: back
-* kotus_av: None
 * kotus_tn: 101
-* clitics: False
+* upos: PRON
+* suffix_regex: tuo
+* kotus_av: None
+* grade_dir: False
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: uo
+* plurale_tantum: False
+* clitics: False
+* pos: PRONOUN
+* stem_vowel: None

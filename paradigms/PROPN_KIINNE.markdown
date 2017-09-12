@@ -5,14 +5,16 @@ paradigm: PROPN_KIINNE
 ### ` PROPN_KIINNE `
 
 Dictionary class 48 front ne
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: J
 * kotus_tn: 48
-* clitics: False
+* upos: PROPN
+* suffix_regex: nne
+* kotus_av: J
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ne
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

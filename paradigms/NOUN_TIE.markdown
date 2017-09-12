@@ -5,14 +5,16 @@ paradigm: NOUN_TIE
 ### ` NOUN_TIE `
 
 Dictionary class 19 ie
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 19
-* clitics: False
+* upos: NOUN
+* suffix_regex: ie
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ie
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

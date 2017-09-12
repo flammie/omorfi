@@ -5,14 +5,16 @@ paradigm: NOUN_NUKKE
 ### ` NOUN_NUKKE `
 
 Dictionary class 8 k~0 back
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: A
 * kotus_tn: 8
-* clitics: False
+* upos: NOUN
+* suffix_regex: kke
+* kotus_av: A
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ke
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

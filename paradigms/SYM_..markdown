@@ -5,14 +5,16 @@ paradigm: SYM_.
 ### ` SYM_. `
 
 symbols, front inflection with : and compounding with -
-* grade_dir: None
-* plurale_tantum: False
-* pos: PUNCTUATION
-* stem_diphthong: None
-* stem_vowel: None
-* upos: SYM
-* harmony: front
-* kotus_av: None
 * kotus_tn: 99
-* clitics: True
+* upos: SYM
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: None
+* harmony: front
 * possessive: True
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: True
+* pos: PUNCTUATION
+* stem_vowel: None

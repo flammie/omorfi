@@ -5,14 +5,16 @@ paradigm: PROPN_AAKKOSTAMINEN
 ### ` PROPN_AAKKOSTAMINEN `
 
 Dictionary class 38 back
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 38
-* clitics: False
+* upos: PROPN
+* suffix_regex: nen
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: nen
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

@@ -5,14 +5,16 @@ paradigm: VERB_TIPAHDELLA
 ### ` VERB_TIPAHDELLA `
 
 Dictionary class67 back l d~t
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: F
 * kotus_tn: 67
-* clitics: False
+* upos: VERB
+* suffix_regex: della
+* kotus_av: F
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: della
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

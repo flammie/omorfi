@@ -5,14 +5,16 @@ paradigm: NUM_51seitsemänkvintiljoonaa
 ### ` NUM_51seitsemänkvintiljoonaa `
 
 Optimisation hack for exceptional compound ’seitsemänkvintiljoonaa’ that inflects in all parts with agreement
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NUMERAL
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NUM
-* harmony: back
-* kotus_av: None
 * kotus_tn: 51
-* clitics: False
+* upos: NUM
+* suffix_regex: seitsemänkvintiljoonaa
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: änkvintiljoonaa
+* plurale_tantum: False
+* clitics: False
+* pos: NUMERAL
+* stem_vowel: None

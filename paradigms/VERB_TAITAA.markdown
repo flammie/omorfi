@@ -5,14 +5,16 @@ paradigm: VERB_TAITAA
 ### ` VERB_TAITAA `
 
 Dictionary class76 back
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: F
 * kotus_tn: 76
-* clitics: False
+* upos: VERB
+* suffix_regex: taa
+* kotus_av: F
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: taa
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

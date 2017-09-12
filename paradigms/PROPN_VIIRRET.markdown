@@ -5,14 +5,16 @@ paradigm: PROPN_VIIRRET
 ### ` PROPN_VIIRRET `
 
 
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: K
 * kotus_tn: 44
-* clitics: False
+* upos: PROPN
+* suffix_regex: rret
+* kotus_av: K
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: ret
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

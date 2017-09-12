@@ -5,14 +5,16 @@ paradigm: ADV_VAAN
 ### ` ADV_VAAN `
 
 None
-* grade_dir: False
-* plurale_tantum: False
-* pos: PARTICLE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADV
-* harmony: back
-* kotus_av: None
 * kotus_tn: 99
-* clitics: False
+* upos: ADV
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: False
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: PARTICLE
+* stem_vowel: None

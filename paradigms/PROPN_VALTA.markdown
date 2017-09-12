@@ -5,14 +5,16 @@ paradigm: PROPN_VALTA
 ### ` PROPN_VALTA `
 
 Dictionary class 9 t~l
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: a
-* upos: PROPN
-* harmony: back
-* kotus_av: I
 * kotus_tn: 9
-* clitics: False
+* upos: PROPN
+* suffix_regex: lta
+* kotus_av: I
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ta
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: a

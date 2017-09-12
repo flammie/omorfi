@@ -5,14 +5,16 @@ paradigm: NOUN_NYLJIN
 ### ` NOUN_NYLJIN `
 
 Dictionary class 33 front jin
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: L
 * kotus_tn: 33
-* clitics: False
+* upos: NOUN
+* suffix_regex: jin
+* kotus_av: L
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: jin
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

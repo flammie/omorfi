@@ -5,14 +5,16 @@ paradigm: PUNCT_NONSTD_EXCL_LOOP
 ### ` PUNCT_NONSTD_EXCL_LOOP `
 
 accounts for repeated exclamation-like characters
-* grade_dir: None
-* plurale_tantum: False
-* pos: PUNCTUATION
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PUNCT
-* harmony: back
-* kotus_av: None
 * kotus_tn: 99
-* clitics: True
+* upos: PUNCT
+* suffix_regex: .
+* kotus_av: None
+* grade_dir: None
+* harmony: back
 * possessive: True
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: True
+* pos: PUNCTUATION
+* stem_vowel: None

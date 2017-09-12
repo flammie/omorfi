@@ -5,14 +5,16 @@ paradigm: ADJ_BEIGE
 ### ` ADJ_BEIGE `
 
 The front variation of unchanging e stems is class described here, and in old dictionaries ⁸.
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: None
-* upos: ADJ
-* harmony: front
-* kotus_av: None
 * kotus_tn: 8
-* clitics: False
+* upos: ADJ
+* suffix_regex: e
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: None

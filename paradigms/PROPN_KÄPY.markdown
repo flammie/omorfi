@@ -5,14 +5,16 @@ paradigm: PROPN_KÄPY
 ### ` PROPN_KÄPY `
 
 Dictionary class 1py
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: front
-* kotus_av: E
 * kotus_tn: 1
-* clitics: False
+* upos: PROPN
+* suffix_regex: py
+* kotus_av: E
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: py
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

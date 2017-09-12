@@ -5,14 +5,16 @@ paradigm: VERB_KERITÄ
 ### ` VERB_KERITÄ `
 
 Dictionary class75 itä
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: front
-* kotus_av: D
 * kotus_tn: 75
-* clitics: False
+* upos: VERB
+* suffix_regex: itä
+* kotus_av: D
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: itä
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

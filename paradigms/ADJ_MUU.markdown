@@ -5,14 +5,16 @@ paradigm: ADJ_MUU
 ### ` ADJ_MUU `
 
 
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: ADJECTIVE
-* stem_diphthong: None
-* stem_vowel: u
-* upos: ADJ
-* harmony: back
-* kotus_av: None
 * kotus_tn: 18
-* clitics: False
+* upos: ADJ
+* suffix_regex: uu
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: u
+* plurale_tantum: False
+* clitics: False
+* pos: ADJECTIVE
+* stem_vowel: u

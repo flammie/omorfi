@@ -5,14 +5,16 @@ paradigm: NOUN_KÖYHYYS
 ### ` NOUN_KÖYHYYS `
 
 Dictionary class 40 front Some s final words have special lengthening inflection.
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 40
-* clitics: False
+* upos: NOUN
+* suffix_regex: ys
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: s
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

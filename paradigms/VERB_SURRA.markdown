@@ -5,14 +5,16 @@ paradigm: VERB_SURRA
 ### ` VERB_SURRA `
 
 Dictionary class67 back r
-* grade_dir: strengthen
-* plurale_tantum: False
-* pos: VERB
-* stem_diphthong: None
-* stem_vowel: None
-* upos: VERB
-* harmony: back
-* kotus_av: None
 * kotus_tn: 67
-* clitics: False
+* upos: VERB
+* suffix_regex: rra
+* kotus_av: None
+* grade_dir: strengthen
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: ra
+* plurale_tantum: False
+* clitics: False
+* pos: VERB
+* stem_vowel: None

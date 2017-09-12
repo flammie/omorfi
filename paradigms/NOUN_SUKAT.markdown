@@ -5,14 +5,16 @@ paradigm: NOUN_SUKAT
 ### ` NOUN_SUKAT `
 
 Dictionary class xxx a front k0 plurale tantum
-* grade_dir: weaken
-* plurale_tantum: obligatory
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: back
-* kotus_av: A
 * kotus_tn: 10
-* clitics: False
+* upos: NOUN
+* suffix_regex: kat
+* kotus_av: A
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: at
+* plurale_tantum: obligatory
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

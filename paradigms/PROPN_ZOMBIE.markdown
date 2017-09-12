@@ -5,14 +5,16 @@ paradigm: PROPN_ZOMBIE
 ### ` PROPN_ZOMBIE `
 
 Similar inflection exists in limited amounts in new loan words that are written as pronounced (thus taking no stem variation but still ending with long vowels with a syllable boundary) Dictionary class 3eta
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: PROPN
-* harmony: back
-* kotus_av: None
 * kotus_tn: 3
-* clitics: False
+* upos: PROPN
+* suffix_regex: e
+* kotus_av: None
+* grade_dir: weaken
+* harmony: back
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None

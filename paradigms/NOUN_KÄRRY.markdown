@@ -5,14 +5,16 @@ paradigm: NOUN_KÄRRY
 ### ` NOUN_KÄRRY `
 
 Dictionary class 1y
-* grade_dir: weaken
-* plurale_tantum: False
-* pos: NOUN
-* stem_diphthong: None
-* stem_vowel: None
-* upos: NOUN
-* harmony: front
-* kotus_av: None
 * kotus_tn: 1
-* clitics: False
+* upos: NOUN
+* suffix_regex: [YÜyÿü]
+* kotus_av: None
+* grade_dir: weaken
+* harmony: front
 * possessive: False
+* stem_diphthong: None
+* deletion: None
+* plurale_tantum: False
+* clitics: False
+* pos: NOUN
+* stem_vowel: None
