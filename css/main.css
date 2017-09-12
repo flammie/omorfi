@@ -98,5 +98,5 @@ p, li, td, th, div {
 }
 
 a.external::after {
-    content("↝");
+    content: "↝";
 }
