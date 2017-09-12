@@ -41,7 +41,7 @@ def main():
     ap.add_argument("--paradigm-docs", "-P", action="append", required=True,
                     metavar="PDFILE", help="read paradigm docs from PDFILEs")
     ap.add_argument("--paradigms", "-A", required=True,
-                    metavar="PARADIR", help="read paradigm data from PARADIR/")
+                    metavar="PARAFILE", help="read paradigm data from PARAFILE")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True,
                     type=argparse.FileType('w'),
@@ -103,7 +103,7 @@ def main():
 """, file=args.output)
 
     paradata = dict()
-    with open(args.paradigms + "/morphophonology.tsv") as tsv_file:
+    with open(args.paradigms) as tsv_file:
         tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                                     strict=True)
         for tsv_parts in tsv_reader:
