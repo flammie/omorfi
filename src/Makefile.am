@@ -4,11 +4,12 @@
 HFST_FLAGS=
 voikkosharedir=$(libdir)/voikko/3/
 
+HLEXC_FLAGS=--alignStrings
 if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 ORIGIN_FLAGS=-O kotus -O omorfi++
 else !WANT_SMALL_LEXICONS
-HLEXC_FLAGS=--Werror
+HLEXC_FLAGS+=--Werror
 endif
 
 # {{{ Files
