@@ -1,8 +1,9 @@
 dist: trusty
+group: deprecated-2017Q3
 language : generic
 before_install:
     - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
-    - sudo apt-get install hfst python3-libhfst
+    - sudo apt-get install hfst python3-libhfst libhfst49-dev
     - which python3
     - echo $PYTHONPATH
 script:
