@@ -283,7 +283,7 @@ generated/omorfi.segment.lexc: generated/master.tsv continuations.tsv
 		-c continuations.tsv -o $@ -f=none --none-segments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi.lemmatise.lexc: generated/master.tsv continuations.tsv \
+generated/omorfi.lemmatise.lexc: generated/master.tsv continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c continuations.tsv -o $@ -f=none --none-lemmas \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
