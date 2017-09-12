@@ -51,8 +51,6 @@ def main():
                     metavar="N", help="read N fields from master")
     ap.add_argument("--join", "-j", action="store", required=True,
                     metavar="JFILE", help="read join fields from JFILE")
-    ap.add_argument("--stub", "-c", action="store", required=True,
-                    metavar="SFILE", help="read stub expressions from SFILE")
     ap.add_argument("--separator", "-s", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
@@ -71,6 +69,7 @@ def main():
 
     errors = False
     joinmap = dict()
+    stubmap = dict()
     # read joins from file if any
     with open(args.join, 'r', newline='') as joins:
         join_reader = csv.DictReader(joins, delimiter=args.separator,
@@ -82,17 +81,7 @@ def main():
                 continue
             key = join_parts['new_para']
             joinmap[key] = join_parts
-    stubmap = dict()
-    with open(args.stub, 'r', newline='') as stubs:
-        stub_reader = csv.DictReader(stubs, delimiter=args.separator,
-                                     quoting=quoting, escapechar='\\', strict=True)
-        for stub_parts in stub_reader:
-            if len(stub_parts) < 2:
-                print("Must have at least N separators in stubbings; skipping",
-                      stub_parts)
-                continue
-            key = stub_parts['new_para']
-            stubmap[key] = stub_parts['deletion']
+            stubmap[key] = join_parts['deletion']
 
     # read from csv files
     with open(args.output, 'w', newline='') as output:

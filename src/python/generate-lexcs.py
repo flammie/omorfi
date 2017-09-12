@@ -57,12 +57,9 @@ def main():
     ap.add_argument("--master", "-m", action="append", required=True,
                     dest="masterfilenames",
                     metavar="MFILE", help="read lexical roots from MFILEs")
-    ap.add_argument("--stemparts", "-p", action="append", required=True,
-                    dest='spfilenames',
-                    metavar="SPFILE", help="read lexical roots from SPFILEs")
-    ap.add_argument("--inflection", "-i", action="append", required=True,
-                    dest='inffilenames',
-                    metavar="INFFILE", help="read inflection from INFFILEs")
+    ap.add_argument("--continuations", "-c", action="append", required=True,
+                    dest='contfilenames',
+                    metavar="CONTFILE", help="read continuations from CONTFILEs")
     ap.add_argument("--exclude-pos", "-x", action="append",
                     metavar="XPOS",
                     help="exclude all XPOS parts of speech from generation")
@@ -234,12 +231,12 @@ def main():
                               file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
-    # print stem parts
-    for tsv_filename in args.spfilenames:
+    # print continuation parts
+    for tsv_filename in args.contfilenames:
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
-        print("! Omorfi stemparts generated from", tsv_file.name,
+        print("! Omorfi continuations generated from", tsv_file.name,
               "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"),
               "! params: ", ' '.join(argv), file=args.output)
         print(formatter.copyright_lexc(), file=args.output)
@@ -261,48 +258,6 @@ def main():
                                "DIGITS", "CCONJ", "SCONJ", "AUX", "DET"]:
                     print("Cannot deduce pos from incoming cont:",
                           tsv_parts[0])
-                    exit(1)
-                    continue
-                if pos in args.exclude_pos:
-                    continue
-                # format output
-                if curr_lexicon != tsv_parts[0]:
-                    print("\nLEXICON", tsv_parts[0], end="\n\n",
-                          file=args.output)
-                    curr_lexicon = tsv_parts[0]
-                for cont in tsv_parts[3:]:
-                    print(formatter.continuation2lexc(
-                        tsv_parts[1], tsv_parts[2], cont),
-                        file=args.output)
-    # print inflections
-    for tsv_filename in args.inffilenames:
-        if args.verbose:
-            print("Reading from", tsv_filename)
-        linecount = 0
-        print("! Omorfi inflects generated from", tsv_file.name,
-              "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"),
-              "! params: ", ' '.join(argv), file=args.output)
-        print(formatter.copyright_lexc(), file=args.output)
-        curr_lexicon = ""
-        # for each line
-        with open(tsv_filename, 'r', newline='') as tsv_file:
-            tsv_reader = csv.reader(tsv_file, delimiter=args.separator,
-                                    strict=True)
-            for tsv_parts in tsv_reader:
-                linecount += 1
-                if len(tsv_parts) < 3:
-                    print(tsv_filename, linecount,
-                          "Too few tabs on line",
-                          "skipping following fields:", tsv_parts,
-                          file=stderr)
-                    continue
-                pos = tsv_parts[0].split("_")[0]
-                if pos not in ["ADJ", "NOUN", "VERB", "PROPN", "NUM",
-                               "PRON", "ADP", "ADV", "SYM", "PUNCT", "INTJ",
-                               "X", "DIGITS", "CCONJ", "SCONJ"]:
-                    print("Cannot deduce pos from incoming cont:",
-                          tsv_parts[0])
-                    exit(1)
                     continue
                 if pos in args.exclude_pos:
                     continue

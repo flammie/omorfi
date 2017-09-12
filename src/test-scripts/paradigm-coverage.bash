@@ -1,15 +1,13 @@
 #!/bin/bash
 LEXFILE=lexemes.tsv
 DOCFILE=docs/paradigms.tsv
-REFILE=paradigms/suffix-regexes.tsv
-MFILE=paradigms/morphophonology.tsv
-DELFILE=paradigms/stub-deletions.tsv
+PARAFILE=paradigms.tsv
 
 WORK=$(mktemp -d -t omorfi-validate-database.XXXXXXXXXX)
 
 echo checking for missing docs for paradigms in ${LEXFILE}...
 cut -f 3 ${LEXFILE} | sort | uniq > ${WORK}/paradigms
-for d in $MFILE $REFILE $DELFILE $DOCFILE ; do
+for d in $PARAFILE $DOCFILE ; do
     cut -f 1 ${d} | sort | uniq > ${WORK}/$(basename $d).paradigms
     comm -23 ${WORK}/paradigms ${WORK}/$(basename $d).paradigms > ${WORK}/missing-para-$(basename $d)
     while read k ; do

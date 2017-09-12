@@ -240,6 +240,7 @@ Amira	1	female
 amiraali	1	title
 amk	1	org
 amol	2	measure
+Amy	1	female
 aN	2	measure
 Anastasia	1	female
 Anatolius	1	male
@@ -414,6 +415,7 @@ Aron	1	male
 ARP	1	currency
 ARS	1	currency
 Arsi	1	male
+Arthur	1	male
 artisti	1	title
 artjärveläinen	1	inhabitant
 artjärveläinen	2	inhabitant
@@ -2332,6 +2334,7 @@ JD	1	currency
 Jean	1	male
 Jeanette	1	female
 Jean-Luc	1	male
+Jeesus	1	male
 Jeff	1	male
 Jeffrey	1	male
 Jemen	1	country
@@ -2368,6 +2371,7 @@ Jesper	1	male
 Jesperi	1	male
 Jesse	1	male
 Jessica	1	female
+Jesus	1	male
 Jetta	1	female
 jgo	1	language
 JHTT	1	org
@@ -3165,6 +3169,7 @@ kriminturkki	1	language
 krist.	1	polit
 Krista	1	female
 Kristel	1	female
+Kristen	1	female
 Krister	1	male
 Kristian	1	male
 Kristiina	1	female
@@ -3172,6 +3177,7 @@ kristiinalainen	1	inhabitant
 kristiinalainen	2	inhabitant
 kristiinankaupunkilainen	1	inhabitant
 kristiinankaupunkilainen	2	inhabitant
+Kristin	1	female
 Kristina	1	female
 Kristine	1	female
 Kristoffer	1	male
@@ -3446,6 +3452,7 @@ Lenni	1	male
 lentokapteeni	1	title
 Leo	1	male
 Leonard	1	male
+Leonardo	1	male
 Leonora	1	female
 Leopold	1	male
 leppävirtalainen	1	inhabitant
@@ -3835,6 +3842,7 @@ Mansaari	1	country
 Manta	1	female
 mantšu	1	language
 Manu	1	male
+Manuela	1	female
 MaO	1	org
 maori	1	language
 mapudungun	1	language
@@ -3929,6 +3937,7 @@ Matleena	1	female
 matr.	1	title
 matruusi	1	title
 Mats	1	male
+Matthew	1	male
 Matthias	1	male
 Matti	1	male
 Mattias	1	male
@@ -4900,6 +4909,7 @@ pH	1	measure
 PH	1	measure
 Ph.D.	1	title
 Philip	1	male
+Phoenix	2	male
 PHP	1	currency
 pHz	2	measure
 PHz	2	measure
@@ -5569,6 +5579,7 @@ salomonsaarelainen	4	inhabitant
 Salomonsaaret	1	country
 saltvikilainen	1	inhabitant
 saltvikilainen	2	inhabitant
+Salvador	1	male
 Sam	1	male
 samarianaramea	1	language
 Sambia	1	country
@@ -6860,6 +6871,8 @@ veteliläinen	1	inhabitant
 veteliläinen	2	inhabitant
 VHL	1	org
 vht	1	title
+Victor	1	male
+Victor	2	female
 Victoria	2	female
 Vidar	1	male
 Viena	1	female
