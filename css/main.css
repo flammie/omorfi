@@ -96,3 +96,7 @@ h1, h2, h3, h4, h5 {
 p, li, td, th, div {
     font-family: "Ubuntu", "Oxygen", "Canterell", sans-serif;
 }
+
+a.external::after {
+    content("↝");
+}
