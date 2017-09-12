@@ -7,15 +7,14 @@ if test ! -r $srcdir/wordforms.list ; then
     echo Missing word list $srcdir/wordforms.list
     exit 73
 fi
-fsa='-'
-for f in ../src/generated/omorfi-*.analyse.hfst \
-    ../src/generated/fin-automorf.hfst \
-    ../src/generated/omorfi.segment.hfst \
-    ../src/generated/omorfi.lemmatise.hfst ; do
-    hfst-lookup -q $f < $srcdir/wordforms.list > wordforms.anals
+fsa='../src/generated/omorfi.analyse.hfst'
+if test -f $fsa ; then
+    hfst-lookup -q $fsa < $srcdir/wordforms.list > wordforms.anals
     if grep '+?' wordforms.anals -m 1 > /dev/null ; then
-        echo "following known wordforms were missing from $f"
+        echo "following known wordforms were missing from $fsa"
         grep '+?' wordforms.anals
         exit 1
     fi
-done
+else
+    echo "missing $fsa"
+fi
