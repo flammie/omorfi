@@ -4,11 +4,12 @@
 HFST_FLAGS=
 voikkosharedir=$(libdir)/voikko/3/
 
+HLEXC_FLAGS=--alignStrings
 if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 ORIGIN_FLAGS=-O kotus -O omorfi++
 else !WANT_SMALL_LEXICONS
-HLEXC_FLAGS=--Werror
+HLEXC_FLAGS+=--Werror
 endif
 
 # {{{ Files
@@ -1239,7 +1240,7 @@ generated/omorfi-giella.generate.hfst: generated/temporary-giella.analyse.hfst
 		$(HF2F) -f olw -o $@
 # }}}
 # {{{SPELL-CHECKING
-# voikko speller HFST beta targets'
+# voikko speller LIBHFST beta targets'
 generated/errmodel.edit-distance.txt: python/generate-edit-distance.py
 	$(PYTHON) $< -o $@
 
@@ -1277,8 +1278,12 @@ endif
 
 lib_LTLIBRARIES=libomorfi.la
 libomorfi_la_SOURCES=cpp/omorfi.cc
-libomorfi_la_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(HFST_CFLAGS)
-libomorfi_la_LDFLAGS=-no-undefined -version-info 0:0:0 $(HFST_LIBS)
+libomorfi_la_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
+libomorfi_la_LDFLAGS=-no-undefined -version-info 0:0:0 $(LIBHFST_LIBS)
+bin_PROGRAMS=omorfi-lookup
+omorfi_lookup_SOURCES=cpp/omorfi-lookup.cc
+omorfi_lookup_LDADD=libomorfi.la $(LIBHFST_LIBS)
+omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
 
 # }}}
 
