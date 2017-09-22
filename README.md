@@ -655,6 +655,30 @@ Some operations of omorfi legitly take a lot of memory, and most tools are
 suspectible to memory leaks. It may be often beneficial to `split` your data
 and process it in smaller chunks.
 
+### Make gets killed
+
+Compiling omorfi takes some memory, of course it is over 10 megabytes of words
+that need to be expanded and processed in a number of ways, it can momentarily
+take up more than 2 or 4 gigabytes of memory. If you have that or less RAM,
+depending on your setup it may either slow down the computer a lot, or just
+cause compilation to fail. The error  message in that case will usually only
+read something like:
+
+```
+make[2]: Verzeichnis „/home/tpirinen/github/flammie/omorfi/src“ wird betreten
+/usr/bin/hfst-lexc  --alignStrings --Werror -o generated/omorfi.accept.lexc.hfst generated/omorfi.accept.lexc
+/usr/bin/hfst-lexc: warning: Defaulting to OpenFst tropical type
+...  Getötet
+make[2]: *** [generated/omorfi.lexc.hfst] Killed
+```
+
+it all depends on versions of make and language settings, but in general most of
+the time it will say at least "killed" and usually nothing more as an error message
+near the end. Current versions of omorfi support compiling a limited-size version with
+high-quality dictionaries only, using `./configure --enable-small-lexicons` option.
+If this works but normal compilation doesn't, you may need to acquire more RAM or
+tweak some memory-related settings.
+
 ## Contributing
 
 Omorfi code and data are free and libre open source, modifiable and
