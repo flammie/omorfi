@@ -497,6 +497,18 @@ class Omorfi:
             accept = True
         return accept
 
+    def _generate(self, omorstring):
+        res = self.generator.lookup(omorstring)
+        return res
+
+    def generate(self, omorstring):
+        generated = None
+        if self.can_generate:
+            generated = self._generate(omorstring)
+            if not generated:
+                generated = [(omorstring, float('inf'))]
+        return generated
+
 
 def main():
     """Invoke a simple CLI analyser."""
