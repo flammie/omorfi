@@ -25,9 +25,9 @@ echo >> "There are total of \*$(wc -l < src/lexemes.tsv)\* in the database" \
     >> $INDEX
 echo "### Per universal POS" >> $INDEX
 echo >> $INDEX
-echo "The universal parts-of-speech are described in [Universal dependencies 
+echo "The universal parts-of-speech are described in [Universal dependencies
 UPOS documentation](http://universaldependencies.org/u/pos/index.html) and its
-[Finnish UPOS 
+[Finnish UPOS
 definitions](http://universaldependencies.org/fi/pos/index.html)." >> $INDEX
 echo >> $INDEX
 echo "| Frequency | UPOS |" >> $INDEX
@@ -80,9 +80,20 @@ function convert_coveragelog {
         echo Cannot read from $1 or $3 >&2
         return 1
     fi
+    HAPAX=1
+    case $3 in
+        *5grams*)
+            HAPAX=8;;
+        *jrc-fi*)
+            HAPAX=2;;
+        *OpenSubtitles2016.fi*)
+            HAPAX=2;;
+        *fiwiki*)
+            HAPAX=2;;
+    esac
     echo "### $2"
     echo
-    tokens=$(awk '{SUM+=$1;} END {print SUM;}' < ${3})
+    tokens=$(awk "\$1 >= $HAPAX"' {SUM+=$1;} END {print SUM;}' < ${3})
     types=$(wc -l < ${3})
     tokenmisses=$(awk '{SUM+=$1;} END {print SUM;}' < ${1})
     typemisses=$(wc -l < ${1})
@@ -142,7 +153,7 @@ echo >> $INDEX
 
 echo "## Automata statistics" >> $INDEX
 echo >> $INDEX
-echo "The underlying language models are mostly represented by 
+echo "The underlying language models are mostly represented by
 [finite-state automata (FSAs)](https://en.wikipedia.org/wiki/Finite-state
 automaton). The figures may give some indication of the speed and size of the
 models in practical applications." >> $INDEX
