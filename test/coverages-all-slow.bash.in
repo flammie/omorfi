@@ -37,12 +37,12 @@ coverage_check "fi-ud" 96
 coverage_check "ftb3.1" 96
 coverage_check "ftb1-2014" 96
 coverage_check "gutenberg-fi" 96
-coverage_check "OpenSubtitles2016.fi" 95
 coverage_check "tatoeba-fi" 95
 coverage_check "vns" 85
 coverage_check "vks" 50
 # ehh, hapax legomena 1 requires few gigabytes here...
 hapax=2
+coverage_check "OpenSubtitles2016.fi" 95
 coverage_check "jrc-fi" 93
 coverage_check "fiwiki-latest-pages-articles" 91
 # actually, a threshold of 3 is too much
