@@ -49,23 +49,16 @@ Everyone should read at least versioning information and readme:
 If you wish to use omorfi in a serious application you probably found out from
 the README that a python or java API is the way to go:
 
-1. [Python API](pages/Python-API.html)
-1. [Java API](pages/Java-API.html)
-1. [Bash API](pages/Bash-API.html)
+1. [API design ](pages/API-design.html)
+1. [doxygen apidocs](doc/html/)
 
 ### Statistics
 
-There's a bunch of semi-automatically generated statistics from each version of
-omorfi:
+There's some [semi-automatically generated statistics](statistics.html)
+available.
 
-1. [Lexical statistics](pages/Lexical-statistics.html)
-1. [Coverage tests](pages/Coverages.html)
-1. [Missing word-forms by corpora](pages/CoveragesTop100Deltas.html)
-1. [Faithfulness tests](pages/Faithfulness-tests.html)
-1. [Speed](pages/Speed-tests.html)
-1. [Automata sizes](pages/Automata-sizes.html)
 
-### Design rants
+### Design, historical notes, stuff
 
 The design principles of morphological analysis have been changed a dozen of
 times to accommodate various applications:
@@ -78,7 +71,6 @@ More internal documentations:
 1. [Directory layout](pages/Directory-layout.html)
 1. [Database struccture](pages/Database-processing.html)
 
-And more... Perhaps see the [automatically generated link list](#navigation)
 
 ### Automatically generated stuff
 
@@ -87,7 +79,7 @@ gh-pages.
 
 1. [Words](lexemes.html), particularly those that are problematic (a FAQ for
    word entries, in a way)
-1. [Paradigms](paradigms.html), i.e. inflection patterns 
+1. [Paradigms](paradigms.html), i.e. inflection patterns
 1. [Internal keys and codes](stuff.html)
 
 
