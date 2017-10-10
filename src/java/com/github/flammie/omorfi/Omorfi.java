@@ -18,8 +18,6 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
 
 import net.sf.hfst.Transducer;
 import net.sf.hfst.TransducerHeader;
@@ -54,6 +52,30 @@ import net.sf.hfst.NoTokenizationException;
 public class Omorfi
 {
 
+    /** @brief analyser */
+    private Transducer analyser;
+    /** @brief tokeniser */
+    private Transducer tokeniser;
+    /** @brief lemmatiser */
+    private Transducer lemmatiser;
+    /** @brief generator */
+    private Transducer generator;
+    /** @brief hyphenator */
+    private Transducer hyphenator;
+    /** @brief acceptor */
+    private Transducer acceptor;
+    /** @brief segmenter */
+    private Transducer segmenter;
+    /** @brief whether try uppercasing */
+    private boolean uppercase;
+    /** @brief whether try titlecasing */
+    private boolean titlecase;
+    /** @brief whether try lowercasing */
+    private boolean lowercase;
+    /** @brief whether try untitlecasing */
+    private boolean detitlecase;
+
+
     /**
      * @brief construct empty omorfi holder.
      */
@@ -62,16 +84,17 @@ public class Omorfi
         lowercase = true;
         uppercase = true;
         titlecase = true;
-        analysers = new HashMap<String, Transducer>();
-        tokenisers = new HashMap<String, Transducer>();
-        lemmatisers = new HashMap<String, Transducer>();
-        generators = new HashMap<String, Transducer>();
-        hyphenators = new HashMap<String, Transducer>();
-        acceptors = new HashMap<String, Transducer>();
-        segmenters = new HashMap<String, Transducer>();
+        detitlecase = true;
+        analyser = new Transducer();
+        tokeniser = new Transducer();
+        lemmatiser = new Transducer();
+        generator = new Transducer();
+        hyphenator = new Transducer();
+        acceptor = new Transducer();
+        segmenter = new Transducer();
     }
 
-    static private Transducer loadTransducer(String path) 
+    static private Transducer loadTransducer(String path)
         throws java.io.FileNotFoundException, java.io.IOException,
                           net.sf.hfst.FormatException
     {
@@ -92,6 +115,12 @@ public class Omorfi
         }
     }
 
+    public void loadAnalyser(String path) throws java.io.FileNotFoundException,
+           java.io.IOException, net.fs.hfst.FormatException
+    {
+        analyser = loadTransducer(path);
+    }
+
     /**
      * @brief Load omorfi automaton from filename and guess its use.
      *
@@ -100,6 +129,8 @@ public class Omorfi
      * automaton, first part is parsed as an identifier typically starting
      * with the word omorfi, followed by any extras, such as the tagset for
      * analysis or generation.
+     *
+     * @deprecated use loadXXX(String) versions instead
      */
     public void load(String path) throws java.io.FileNotFoundException,
            java.io.IOException, net.sf.hfst.FormatException
@@ -111,45 +142,46 @@ public class Omorfi
         {
             return;
         }
-        String type = filename.substring(filename.indexOf(".") + 1, 
+        String type = filename.substring(filename.indexOf(".") + 1,
                 filename.lastIndexOf("."));
         if ((!type.equals("analyse")) && (!type.equals("generate")) &&
                 (!type.equals("accept")) && (!type.equals("tokenise")) &&
-                (!type.equals("lemmatise")) && (!type.equals("segment")))
+                (!type.equals("lemmatise")) && (!type.equals("segment")) &&
+                (!type.equals("describe")))
         {
             System.out.println(filename + ": Unrecognised type " + type);
             return;
         }
-        if (type.equals("analyse"))
+        if (type.equals("analyse") || type.equals("describe"))
         {
             System.out.println(filename + " = " + type + " : " + id);
-            analysers.put(id, loadTransducer(path));
+            analyser = loadTransducer(path);
         }
-/*        else if (type.equals("generate"))
+        else if (type.equals("generate"))
         {
-            generators.put(id, loadTransducer(path));
+            generator = loadTransducer(path);
         }
         else if (type.equals("accept"))
         {
-            acceptors.put(id, loadTransducer(path));
+            acceptor = loadTransducer(path);
         }
         else if (type.equals("tokenise"))
         {
-            tokenisers.put(id, loadTransducer(path));
+            tokeniser = loadTransducer(path);
         }
         else if (type.equals("lemmatise"))
         {
-            lemmatisers.put(id, loadTransducer(path));
+            lemmatiser = loadTransducer(path);
         }
         else if (type.equals("hyphenate"))
         {
-            hyphenators.put(id, loadTransducer(path));
+            hyphenator = loadTransducer(path);
         }
         else if (type.equals("segment"))
         {
-            segmenters.put(id, loadTransducer(path));
+            segmenter = loadTransducer(path);
         }
-*/        else
+        else
         {
             System.out.println(filename + ": Unrecognised type " + type);
         }
@@ -157,6 +189,8 @@ public class Omorfi
 
     /**
      * @brief load all recognisable automata in given path.
+     *
+     * @deprecated use loadXXX(String) versions instead
      */
     public void loadAll(String path) throws java.io.FileNotFoundException,
            java.io.IOException
@@ -186,6 +220,8 @@ public class Omorfi
 
     /**
      * @brief load all automata in standard system locations.
+     *
+     * @deprecated use loadXXX(String) versions instead
      */
     public void loadAll() throws java.io.FileNotFoundException,
            java.io.IOException
@@ -227,71 +263,45 @@ public class Omorfi
       * the analysis will also be performed on all uppercase variant.
       * If can_lowercase evaluates to not False,
       * the analysis will also be performed on all lowercase variant.
-      * 
+      *
       * The analyses with case mangling will have an additional element to them
       * identifying the casing.
       */
-    public Collection<String> analyse(String wf, String automaton) throws net.sf.hfst.NoTokenizationException
+    public Collection<String> analyse(String wf) throws net.sf.hfst.NoTokenizationException
     {
-        System.out.println("Analysing " + wf + " with " + automaton);
+        System.out.println("Analysing " + wf);
         Collection<String> res = new ArrayList<String>(
-                analysers.get(automaton).analyze(wf));
+                analyser.analyze(wf));
+        Collection<String> rv = new ArrayList<String>();
+        for (String s : res)
+        {
+            rv.add(s.replace("\t", "[WEIGHT=") + "]");
+        }
         if (uppercase)
         {
             Collection<String> upres = new ArrayList<String>(
-                analysers.get(automaton).analyze(wf.toUpperCase()));
+                analyser.analyze(wf.toUpperCase()));
             for (String s : upres)
             {
-                res.add(s + "[CASECHANGE=UPPERCASED]");
+                rv.add(s.replace("\t", "[WEIGHT=") +
+                    "][CASECHANGE=UPPERCASED]");
             }
         }
         if (lowercase)
         {
             Collection<String> lowres = new ArrayList<String>(
-                analysers.get(automaton).analyze(wf.toLowerCase()));
+                analyser.analyze(wf.toLowerCase()));
             for (String s : lowres)
             {
-                res.add(s + "[CASECHANGE=LOWERCASED]");
+                rv.add(s.replace("\t", "[WEIGHT=") +
+                        "][CASECHANGE=LOWERCASED]");
             }
         }
-        Collection<String> rv = new ArrayList<String>();
-        for (String s : res)
-        {
-            rv.add(s.replace("\t", "[WEIGHT=") + "]");
-   }
+        if (rv.size() == 0) {
+            rv.add("[WORD_ID=" + wf +
+                    "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR][WEIGHT=65536]")
+        }
         return rv;
-    }
-
-    /**
-     * @brief perform analysis with any loaded automaton.
-     */
-    public Collection<String> analyse(String wf) throws net.sf.hfst.NoTokenizationException
-    {
-        System.out.println("Analysing " + wf);
-        System.out.println(analysers);
-        Collection<String> anals = new ArrayList<String>();
-        if (analysers.containsKey("default"))
-        {
-            anals = analyse(wf, "default");
-        }
-        if ((anals.size() == 0) && (analysers.containsKey("omorfi-omor")))
-        {
-            anals = analyse(wf, "omorfi-omor");
-        }
-        if (anals.size() == 0)
-        {
-            anals = new ArrayList<String>();
-            anals.add("[WORD_ID=" + wf + "][GUESS=UNKNOWN][WEIGHT=inf]");
-        }
-        return anals;
-    }
-
-    /**
-     * @brief Perform tokenisation with specific automaton.
-     */
-    public Collection<String> tokenise(String line, String id)
-    {
-        return new ArrayList<String>();
     }
 
     /**
@@ -329,28 +339,6 @@ public class Omorfi
         return tokens;
     }
 
-    /** @brief analysers */
-    private Map<String, Transducer> analysers;
-    /** @brief tokenisers */
-    private Map<String, Transducer> tokenisers;
-    /** @brief lemmatisers */
-    private Map<String, Transducer> lemmatisers;
-    /** @brief generators */
-    private Map<String, Transducer> generators;
-    /** @brief hyphenators */
-    private Map<String, Transducer> hyphenators;
-    /** @brief acceptors */
-    private Map<String, Transducer> acceptors;
-    /** @brief segmenters */
-    private Map<String, Transducer> segmenters;
-    /** @brief whether try uppercasing */
-    private boolean uppercase;
-    /** @brief whether try untitlecasing */
-    private boolean titlecase;
-    /** @brief whether try lowercasing */
-    private boolean lowercase;
-
-
     /**
      * @brief example CLI analysis app.
      */
@@ -378,10 +366,10 @@ public class Omorfi
         {
             System.out.print("> ");
             System.out.flush();
-            while ((line = br.readLine()) != null) 
+            while ((line = br.readLine()) != null)
             {
                 Collection<String> tokens = omorfi.tokenise(line);
-                for (String token : tokens) 
+                for (String token : tokens)
                 {
                     Collection<String> anals = omorfi.analyse(token);
                     for (String anal : anals)
