@@ -85,13 +85,6 @@ public class Omorfi
         uppercase = true;
         titlecase = true;
         detitlecase = true;
-        analyser = new Transducer();
-        tokeniser = new Transducer();
-        lemmatiser = new Transducer();
-        generator = new Transducer();
-        hyphenator = new Transducer();
-        acceptor = new Transducer();
-        segmenter = new Transducer();
     }
 
     static private Transducer loadTransducer(String path)
@@ -116,7 +109,7 @@ public class Omorfi
     }
 
     public void loadAnalyser(String path) throws java.io.FileNotFoundException,
-           java.io.IOException, net.fs.hfst.FormatException
+           java.io.IOException, net.sf.hfst.FormatException
     {
         analyser = loadTransducer(path);
     }
@@ -299,7 +292,7 @@ public class Omorfi
         }
         if (rv.size() == 0) {
             rv.add("[WORD_ID=" + wf +
-                    "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR][WEIGHT=65536]")
+                    "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR][WEIGHT=65536]");
         }
         return rv;
     }
@@ -317,17 +310,6 @@ public class Omorfi
     public Collection<String> tokenise(String line)
     {
         Collection<String> tokens = new ArrayList<String>();
-        try
-        {
-            if (tokenisers.containsKey("omorfi"))
-            {
-                tokens = tokenise(line, "omorfi");
-            }
-        }
-        catch (NullPointerException npe)
-        {
-            // pass
-        }
         if (tokens.size() == 0)
         {
             tokens = new ArrayList<String>();

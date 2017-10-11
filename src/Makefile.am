@@ -1286,7 +1286,14 @@ omorfi_lookup_LDADD=libomorfi.la $(LIBHFST_LIBS)
 omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
 
 # }}}
+# {{{ java library
 
+if CAN_JAVA
+javadir=$(pkgdatadir)/
+dist_java_JAVA=java/com/github/flammie/omorfi/Omorfi.java
+endif
+
+# }}}
 # {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \
