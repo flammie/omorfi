@@ -220,13 +220,10 @@ public class Omorfi
            java.io.IOException
     {
         List<String> stdpaths = new ArrayList<String>();
-        stdpaths.add("/usr/local/share/hfst/fi/");
-        stdpaths.add("/usr/share/hfst/fi/");
         stdpaths.add("/usr/local/share/omorfi/");
         stdpaths.add("/usr/share/omorfi/");
         if (System.getenv("HOME") != null)
         {
-            stdpaths.add(System.getenv("HOME") + "/.hfst/fi/");
             stdpaths.add(System.getenv("HOME") + "/.omorfi/");
         }
         stdpaths.add("./");
@@ -270,7 +267,7 @@ public class Omorfi
         {
             rv.add(s.replace("\t", "[WEIGHT=") + "]");
         }
-        if (uppercase)
+        if (uppercase && (!wf.equals(wf.toUpperCase())))
         {
             Collection<String> upres = new ArrayList<String>(
                 analyser.analyze(wf.toUpperCase()));
@@ -280,7 +277,7 @@ public class Omorfi
                     "][CASECHANGE=UPPERCASED]");
             }
         }
-        if (lowercase)
+        if (lowercase && (!wf.equals(wf.toLowerCase())))
         {
             Collection<String> lowres = new ArrayList<String>(
                 analyser.analyze(wf.toLowerCase()));
