@@ -29,25 +29,15 @@ import net.sf.hfst.NoTokenizationException;
 /**
  * @brief An object holding automata for all functions of omorfi.
  *
- * Each of the automata are accessible by their function and identifier.
- * Some combinations of functionalities may be available that access more
- * than one automaton in non-trivial ways. Currently supported automata
- * functions are:
+ * Currently supported automata functions are:
  *   * analysis
  *   * tokenisation
  *   * generation
  *   * lemmatisation
  *   * segmentation
  *   * lookup
- * These are followed by corresponding automaton sets as attributes:
- *       analysers: key is 'omorfi-' + tagset
- *       tokenisers: key is 'omorfi'
- *       generators: key is 'omorfi-' + tagset
- *       lemmatizers: key is 'omorfi'
- *       hyphenators: key is 'omorfi'
- *       segmenters: key is 'omorfi'
  *
- * The java code can perform minimal string munging.
+ * The java code can perform minimal string munging by tokenisation, recasing.
  */
 public class Omorfi
 {
@@ -119,9 +109,7 @@ public class Omorfi
      *
      * A file name should consist of three parts separated by full stop.
      * The second part must be a keyword describing the use of the
-     * automaton, first part is parsed as an identifier typically starting
-     * with the word omorfi, followed by any extras, such as the tagset for
-     * analysis or generation.
+     * automaton, first part must be "omorfi".
      *
      * @deprecated use loadXXX(String) versions instead
      */
@@ -132,6 +120,10 @@ public class Omorfi
         System.out.println(filename);
         String id = filename.substring(0, filename.indexOf("."));
         if (filename.indexOf(".") == filename.lastIndexOf("."))
+        {
+            return;
+        }
+        else if (!id.equals("omorfi"))
         {
             return;
         }
