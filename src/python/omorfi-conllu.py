@@ -389,6 +389,7 @@ def main():
     tokens = 0
     unknowns = 0
     sentences = 0
+    recognised_comments = ['sent_id =', 'text =', 'doc-name:', 'sentence-text:']
     for line in options.infile:
         fields = line.strip().split('\t')
         if len(fields) == 10:
@@ -423,13 +424,13 @@ def main():
                 else:
                     print_analyses_conllu(index, surf, anals[0],
                                           options.outfile, options.hacks)
-        elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
-            # these comments I know need to be retained as-is
-            print(line.strip(), file=options.outfile)
         elif line.startswith('#'):
-            # unknown comment
             print(line.strip(), file=options.outfile)
-            if options.verbose:
+            recognised = False
+            for rec in recognised_comments:
+                if line.startswith('# ' + rec):
+                    recognised = True
+            if not recognised and options.verbose:
                 print("Warning! Unrecognised comment line:", line, sep='\n')
         elif not line or line.strip() == '':
             # retain exactly 1 empty line between sents
