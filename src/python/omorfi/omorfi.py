@@ -420,8 +420,12 @@ class Omorfi:
         else:
             anals = self._analyse_token(token)
         if not anals:
-            anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+            if isinstance(token, str):
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
                     (token), float('inf'), "Unknown")
+            else:
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                    (token[0]), float('inf'), "Unknown")
             anals = [anal]
         return anals
 
