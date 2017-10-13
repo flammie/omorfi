@@ -64,7 +64,7 @@ AC_CACHE_VAL(ax_cv_class_$ac_var_name, [
         AX_TRY_COMPILE_JAVA([$1], , [eval "ac_cv_class_$ac_var_name=yes"],
                 [eval "ac_cv_class_$ac_var_name=no"])
 eval "ac_var_val=$`eval echo ac_cv_class_$ac_var_name`"
-eval "HAVE_$ac_var_name=$`echo ac_cv_class_$ac_var_val`"
+eval "HAVE_$ac_var_name=$`echo ac_cv_class_$ac_var_name`"
 HAVE_LAST_CLASS=$ac_var_val
 if test x$ac_var_val = xyes; then
         ifelse([$2], , :, [$2])
