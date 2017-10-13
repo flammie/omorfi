@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20170515_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20170515], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20170515_alpha
+VERSION=20170515
 
 # Options
 AC_ARG_WITH([hfst],
@@ -276,6 +276,11 @@ AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
+# require java for stuff
+AC_CHECK_CLASSPATH
+AX_PROG_JAVA
+AX_CHECK_CLASS([net.sf.hfst.Transducer])
+AM_CONDITIONAL([CAN_JAVA], [test x$HAVE_net_sf_hfst_Transducer != xno])
 
 # separated my scripts for corpora fetching, some preprocessing
 AC_PATH_PROG([FETCH_EUROPARL], [fetch-europarl.bash], [false])
@@ -292,8 +297,7 @@ AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 AC_PATH_PROG([QSUB], [qsub], [false])
 AC_PATH_PROG([SBATCH], [sbatch], [false])
 
-# we are not using any traditional programming so as to need these standard
-# sections:
+
 AC_LANG([C++])
 # Checks for libraries
 PKG_CHECK_MODULES([LIBHFST], [hfst > 3.12],

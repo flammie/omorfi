@@ -21,7 +21,6 @@ relomorfidir=$(dirname $0)/../share/omorfi
 
 ## args:
 ## - $1: function
-## - $2: tagset (optional, if function in {generate, analyse}
 function omorfi_find() {
     for d in $omorfipath $omorfidir $homeomorfidir \
         $localomorfidir0 $localomorfidir1 $localomorfidir2 $localomorfidir3 \
@@ -33,25 +32,8 @@ function omorfi_find() {
             fi
         elif test $# = 1 ; then
             func=$1
-            case $func in
-            analyse|generate)
-                for tagset in omor ftb3 ftb1 ; do
-                    if test -f "$d/omorfi-$tagset.$func.hfst" ; then
-                        echo "$d/omorfi-$tagset.$func.hfst"
-                        break 2
-                    fi
-                done;;
-            *)
-                if test -f "$d/omorfi.$func.hfst" ; then
-                    echo "$d/omorfi.$func.hfst"
-                    break
-                fi;;
-            esac
-        elif test $# = 2 ; then
-            func=$1
-            tagset=$2
-            if test -f "$d/omorfi-$tagset.$func.hfst" ; then
-                echo "$d/omorfi-$tagset.$func.hfst"
+            if test -f "$d/omorfi.$func.hfst" ; then
+                echo "$d/omorfi.$func.hfst"
                 break
             fi
         fi
@@ -66,18 +48,7 @@ function omorfi_find_help() {
             echo $d
         elif test $# = 1 ; then
             func=$1
-            case $func in
-            analyse|generate)
-                for tagset in omor ftb3 ftb1 ; do
-                    echo "$d/omorfi-$tagset.$func.hfst"
-                done;;
-            *)
-                echo "$d/omorfi.$func.hfst"
-            esac
-        elif test $# = 2 ; then
-            func=$1
-            tagset=$2
-            echo "$d/omorfi-$tagset.$func.hfst"
+            echo "$d/omorfi.$func.hfst"
         fi
     done
 }
@@ -94,10 +65,10 @@ function apertium_cleanup() {
 
 function omorfi_analyse_text() {
     if test $# -le 1 ; then
-        omorfianalyser=$(omorfi_find "analyse" $1)
+        omorfianalyser=$(omorfi_find "analyse")
     fi
     if test -z "$omorfianalyser" ; then
-        omorfi_find_help "analyse" $1
+        omorfi_find_help "analyse"
     else
         apertium_cleanup |\
             sed -e 's/\.\[\]//g' |\
@@ -107,10 +78,10 @@ function omorfi_analyse_text() {
 
 function omorfi_analyse_tokens() {
     if test $# -le 1 ; then
-        omorfianalyser=$(omorfi_find "analyse" $1)
+        omorfianalyser=$(omorfi_find "analyse")
     fi
     if test -z "$omorfianalyser" ; then
-        omorfi_find_help "analyse" $1
+        omorfi_find_help "analyse"
     else
         $hfstlookup $lookupflags "$omorfianalyser"
     fi
@@ -131,10 +102,10 @@ function omorfi_disambiguate_text() {
 
 function omorfi_generate() {
     if test $# -le 1 ; then
-        omorfianalyser=$(omorfi_find "generate" $1)
+        omorfianalyser=$(omorfi_find "generate")
     fi
     if test -z "$omorfianalyser" ; then
-        omorfi_find_help "generate" $1
+        omorfi_find_help "generate"
     else
         $hfstlookup $lookupflags "$omorfianalyser"
     fi
@@ -149,7 +120,7 @@ function omorfi_hyphenate() {
     fi
     omorfianalyser=$(omorfi_find "hyphenate")
     if test -z "$omorfianalyser" ; then
-        omorfi_find_help "hyphenate" $1
+        omorfi_find_help "hyphenate"
     else
         $hfstlookup $lookupflags "$omorfianalyser" |\
             sed -e "s/-1/$hyphen/g" -e "s/-2/$hyphen/g" -e "s/-3/$hyphen/g" \

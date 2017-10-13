@@ -309,6 +309,16 @@ def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
         print_analyses_conllu(wordn, surf, anal, outfile, hacks)
 
 
+def format_misc(anal):
+    guess = get_last_feat("GUESS", anal)
+    miscs = []
+    if guess and not guess == "":
+        miscs += ["GUESS=" + guess]
+    if len(miscs) > 0:
+        return '|'.join(miscs)
+    else:
+        return '_'
+
 def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
     upos = get_last_feat("UPOS", anal)
     if not upos or upos == "":
@@ -321,7 +331,7 @@ def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
           upos,
           third,
           format_feats_ud(anal, hacks),
-          "_", "_", "_", "_", sep="\t", file=outfile)
+          "_", "_", "_", format_misc(anal), sep="\t", file=outfile)
 
 
 def main():
@@ -339,12 +349,16 @@ def main():
                    help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-O', '--oracle', action='store_true',
                    help="match to values in input when parsing if possible")
+    a.add_argument('-u', '--udpipe', metavar="UDPIPE",
+                   help='use UDPIPE for additional guesses (experi-mental)')
     a.add_argument('--hacks', metavar='HACKS',
                    help="mangle anaelyses to match HACKS version of UD",
                    choices=['ftb'])
     a.add_argument('--debug', action='store_true',
                    help="print lots of debug info while processing")
     options = a.parse_args()
+    if options.verbose:
+        print("Printing verbosely")
     omorfi = Omorfi(options.verbose)
     if options.fsa:
         if options.verbose:
@@ -354,6 +368,10 @@ def main():
         if options.verbose:
             print("reading language models in default dirs")
         omorfi.load_from_dir()
+    if options.udpipe:
+        if options.verbose:
+            print("Loading udpipe", options.udpipe)
+        omorfi.load_udpipe(options.udpipe)
     if not options.infile:
         print("reading from <stdin>")
         options.infile = stdin
@@ -371,6 +389,7 @@ def main():
     tokens = 0
     unknowns = 0
     sentences = 0
+    recognised_comments = ['sent_id =', 'text =', 'doc-name:', 'sentence-text:']
     for line in options.infile:
         fields = line.strip().split('\t')
         if len(fields) == 10:
@@ -405,13 +424,13 @@ def main():
                 else:
                     print_analyses_conllu(index, surf, anals[0],
                                           options.outfile, options.hacks)
-        elif line.startswith('# doc-name:') or line.startswith('# sentence-text:'):
-            # these comments I know need to be retained as-is
-            print(line.strip(), file=options.outfile)
         elif line.startswith('#'):
-            # unknown comment
             print(line.strip(), file=options.outfile)
-            if options.verbose:
+            recognised = False
+            for rec in recognised_comments:
+                if line.startswith('# ' + rec):
+                    recognised = True
+            if not recognised and options.verbose:
                 print("Warning! Unrecognised comment line:", line, sep='\n')
         elif not line or line.strip() == '':
             # retain exactly 1 empty line between sents

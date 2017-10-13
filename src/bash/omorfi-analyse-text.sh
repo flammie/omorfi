@@ -21,7 +21,6 @@ function print_help() {
     echo "  -h, --help      Print this help dialog"
     echo "  -V, --version   Print version info"
     echo "  -v, --verbose   Print verbosely while processing"
-    echo "  --tagset TAGS   Use TAGS analyser"
     echo
     echo "If no FILENAMEs are given, input is read from standard input."
     echo "This program uses hfst-apertium-proc and, if found"
@@ -38,12 +37,6 @@ elif test x$1 == x-V -o x$1 == x--version ; then
 elif test x$1 == x-v -o x$1 == x--verbose ; then
     verbose=verbose
     shift 1
-elif test x$1 == x--tagset ; then 
-    tagset=$2
-    shift 2
-fi
-if test -z "$tagset" ; then
-    tagset=omor
 fi
 if test x$verbose = xverbose ; then
     echo "Trying to use $tagset to analyse... $@"
@@ -52,4 +45,4 @@ if test x$verbose = xverbose ; then
         echo "THIS TOOL DOES NOT PRINT OUTPUT IMMEDIATELY AT LINEBREAK/ENTER"
     fi
 fi
-cat $@ | omorfi_analyse_text $tagset
+cat $@ | omorfi_analyse_text
