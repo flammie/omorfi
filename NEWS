@@ -3,6 +3,30 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20170515
+
+* Universal Dependencies version 2 is now used, still mainly lemma, UPOS,
+  features fields are analysed
+* At least 2,336 new words (based on diffstat: 38886 additions, 3655 deletions)
+* Preliminary support for various guessing models: python-based, finite-state
+  and UDPipe. This means that it is possibly to get analyses for all tokens,
+  albeit quality of guesses varies.
+* A minimal C++ library version has been made to match java and python bindings.
+  C++-11 and libhfst are required.
+* The dix version can now be compiled with lttoolbox with a lot of memory
+* A restricted "gold" dictionary mode has been added. This is good for both end
+  users with limited memory and end users who require higher quality lexemes
+  (i.e., only research institute approved, no wiktionary words or other weird
+   stuffs)
+* Documentations and automatic testing much reworked with the new modern toys
+  from github: travis-ci, jekyll
+* Started weeding the ADP/ADV jungle...
+* Fixed a horrible bug in the corpus coverage testing that terribly
+  under-estimated our coverage for corpora where hapax legomena etc. were
+  ignored
+* Lot of documentation has been semi-automated, therefore many changes can be
+  viewed at the new gh-pages site: https://flammie.github.io/omorfi/
+
 ## Significant changes in 20161115
 
 * Started drafting more blacklists and *known good* lexemes subsets for people
