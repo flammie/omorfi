@@ -665,6 +665,7 @@ BIF	1	currency
 bihari	1	language
 bikol	1	language
 bilin	1	language
+Bill	1	male
 bini	1	language
 Birger	1	male
 Birgit	1	female
@@ -818,6 +819,7 @@ Caramia	1	female
 Carina	1	female
 Carita	1	female
 Carla	1	female
+Carles	1	male
 Carl-Henrik	1	male
 Carl-Johan	1	male
 Carlo	1	male
@@ -848,6 +850,7 @@ CFPF	1	currency
 cg	1	measure
 cH	2	measure
 Ch$	1	currency
+Charles	1	male
 Charlotta	1	female
 CHE	1	currency
 cherokee	1	language
@@ -2014,6 +2017,7 @@ HTT	1	title
 htv	1	measure
 HUF	1	currency
 Hufvudstadsbladet	1	media
+Hugh	1	male
 Hugo	1	male
 Huippuvuoret	1	country
 Huippuvuoret ja Jan Mayen	1	country
@@ -2397,6 +2401,7 @@ Joel	1	male
 joensuulainen	1	inhabitant
 joensuulainen	2	inhabitant
 Johan	1	male
+Johann	1	male
 Johanna	1	female
 Johanne	1	female
 Johannes	1	male
@@ -5479,6 +5484,7 @@ rwa	1	language
 RWF	1	currency
 ry	1	org
 ry.	1	org
+Ryan	2	male
 rymättyläläinen	1	inhabitant
 rymättyläläinen	2	inhabitant
 rääkkyläinen	1	inhabitant
@@ -5680,6 +5686,7 @@ savonrantalainen	2	inhabitant
 savukoskelainen	1	inhabitant
 savukoskelainen	2	inhabitant
 SBD	1	currency
+Scott	1	male
 SCR	1	currency
 sd.	1	polit
 SDD	1	currency
@@ -7080,6 +7087,7 @@ yA	1	measure
 YA	1	measure
 yangben	1	language
 Yanna	1	female
+Yasmina	1	female
 yBq	2	measure
 YBq	2	measure
 yC	1	measure

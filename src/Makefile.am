@@ -38,6 +38,7 @@ LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/verb-arguments.tsv
 # paradigm features
 PARADIGM_JOINS=paradigms.tsv
+CONTINUATIONS=continuations.tsv
 
 # Tokenisation
 TOKENS=tokeniser/omorfi.tokenise.pmatch
@@ -198,7 +199,7 @@ pkgpython_PYTHON=python/omorfi/__init__.py \
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   $(TOKENS) \
 		   $(SCIRPTS) \
-		   $(STEMPARTS) $(INFLECTIONS) \
+		   $(CONTINUATIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
 		   python/omorfi-factorise.py \
 		   python/omorfi-conllu.py \
@@ -217,6 +218,9 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   test-scripts/valid-datatypes.bash \
 		   test-scripts/lemmas-match-regexes.bash \
 		   test-scripts/lemmas-match-regexes.py \
+		   test-scripts/paradigm-coverage.bash \
+		   test-scripts/plusplus-has-documents.bash \
+		   test-scripts/valid-datatypes.bash \
 		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
@@ -278,26 +282,26 @@ generated/continuations.tsv: continuations.tsv generated/timestamp
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
 # database to generic
-generated/omorfi.segment.lexc: generated/master.tsv continuations.tsv
+generated/omorfi.segment.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c continuations.tsv -o $@ -f=none --none-segments \
+		-c generated/continuations.tsv -o $@ -f=none --none-segments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi.lemmatise.lexc: generated/master.tsv continuations.tsv
+generated/omorfi.lemmatise.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c continuations.tsv -o $@ -f=none --none-lemmas \
+		-c generated/continuations.tsv -o $@ -f=none --none-lemmas \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi.accept.lexc:  generated/master.tsv continuations.tsv
+generated/omorfi.accept.lexc:  generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv  \
-		-c continuations.tsv -o $@ -f=none \
+		-c generated/continuations.tsv -o $@ -f=none \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 
 # segmented analysis experiment
-generated/omorfi-labelsegments.lexc: generated/master.tsv continuations.tsv
+generated/omorfi-labelsegments.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c continuations.tsv -o $@ -f=labelsegments \
+		-c generated/continuations.tsv -o $@ -f=labelsegments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 #
@@ -361,20 +365,20 @@ generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 generated/omorfi-omor.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
 
-generated/omorfi-omor.lexc: generated/master.tsv continuations.tsv
+generated/omorfi-omor.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c continuations.tsv -o $@ -f=omor \
+		-c generated/continuations.tsv -o $@ -f=omor \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
-generated/omorfi.lexc: generated/master.tsv continuations.tsv
+generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c continuations.tsv -o $@ -f=omor \
+		-c generated/continuations.tsv -o $@ -f=omor \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-generated/omorfi-omor-guesser.lexc: paradigms.tsv continuations.tsv
+generated/omorfi-omor-guesser.lexc: paradigms.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
 		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
-		-c continuiations.tsv -o $@ -f=omor
+		-c generated/continuations.tsv -o $@ -f=omor
 
 generated/omorfi-omor-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
@@ -387,10 +391,10 @@ generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 generated/omorfi-ftb3.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py  -f=ftb3 -o $@
 
-generated/omorfi-ftb3.lexc: generated/master.tsv continuations.tsv
+generated/omorfi-ftb3.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py  -m generated/master.tsv \
 		$(BLACKLIST_FLAGS) \
-		-c continuations.tsv -o $@ -f=ftb3
+		-c generated/continuations.tsv -o $@ -f=ftb3
 
 generated/omorfi-ftb3-rewrite-tags.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
@@ -401,9 +405,9 @@ generated/omorfi-ftb3-lemmatise.regex:
 		-r lemmatise -o $@
 
 # database to apertium
-generated/apertium-fin.fin.lexc: generated/master.tsv
+generated/apertium-fin.fin.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c continuations.tsv -o $@ -f=apertium
+		-c generated/continuations.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=apertium -r apertium -o $@
@@ -415,15 +419,15 @@ generated/apertium-fin.fin.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=apertium -o $@
 
 # database to monodix
-generated/omorfi.dix: generated/master.tsv continuations.tsv
+generated/omorfi.dix: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-monodix.py -m generated/master.tsv \
-		-c continuations.tsv -o $@
+		-c generated/continuations.tsv -o $@
 
 # database to giella
-generated/omorfi-giella.lexc: generated/master.tsv continuations.tsv
+generated/omorfi-giella.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
-		-i continuations.tsv -o $@ -f=giella
+		-i generated/continuations.tsv -o $@ -f=giella
 
 
 
@@ -1277,6 +1281,7 @@ endif
 # {{{ C++ library
 
 lib_LTLIBRARIES=libomorfi.la
+include_HEADERS=cpp/omorfi.hh
 libomorfi_la_SOURCES=cpp/omorfi.cc
 libomorfi_la_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
 libomorfi_la_LDFLAGS=-no-undefined -version-info 0:0:0 $(LIBHFST_LIBS)
@@ -1286,7 +1291,14 @@ omorfi_lookup_LDADD=libomorfi.la $(LIBHFST_LIBS)
 omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
 
 # }}}
+# {{{ java library
 
+if CAN_JAVA
+javadir=$(pkgdatadir)/
+dist_java_JAVA=java/com/github/flammie/omorfi/Omorfi.java
+endif
+
+# }}}
 # {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \

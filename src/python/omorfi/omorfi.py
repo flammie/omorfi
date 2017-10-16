@@ -19,9 +19,9 @@ import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
 
-can_udpipe = False
+can_udpipe = True
 try:
-    from ufal.udpipe import Model
+    from ufal.udpipe import Model, Pipeline, ProcessingError
 except ImportError:
     can_udpipe = False
 
@@ -60,6 +60,8 @@ class Omorfi:
     acceptor = None
     guesser = None
     udpiper = None
+    udpipeline = None
+    uderror = None
     try_lowercase = True
     try_titlecase = True
     try_detitlecase = True
@@ -229,11 +231,15 @@ class Omorfi:
                 print("broken HFST", filename, file=stderr)
 
     def load_udpipe(self, filename):
-        if not self.can_udpipe:
-            print("importing udpipe failed, cannot load udpipe")
+        if not can_udpipe:
+            print("importing udpipe failed, cannot load udpipe xxx")
             return
         self.udpiper = Model.load(filename)
-        self.udtokeniser = self.udpiper.newTokenizer(Model.DEFAULT)
+        # use pipeline for now, ugly but workable
+        self.udpipeline = Pipeline(self.udpiper, 'horizontal', Pipeline.DEFAULT,
+                Pipeline.DEFAULT, 'conllu')
+        self.uderror = ProcessingError()
+        self.can_udpipe = True
 
     def _find_retoken_recase(self, token):
         if self.accept(token):
@@ -414,10 +420,35 @@ class Omorfi:
         else:
             anals = self._analyse_token(token)
         if not anals:
-            anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+            if isinstance(token, str):
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
                     (token), float('inf'), "Unknown")
+            else:
+                anal = ('[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
+                    (token[0]), float('inf'), "Unknown")
             anals = [anal]
         return anals
+
+    def analyse_sentence(self, s):
+        """Analyse a full sentence with tokenisation and guessing.
+
+        for details of tokenisation, see @c tokenise(self, s).
+        for details of analysis, see @c analyse(self, token).
+        If further models like udpipe are loaded, may fill in gaps with that.
+        """
+        tokens = self.tokenise(s)
+        if not tokens:
+            tokens = [(s, "ERRORS=analyse_sentence_1")]
+        analyses = []
+        for token in tokens:
+            analyses += [self.analyse(token)]
+        if self.can_udpipe:
+            udinput = '\n'.join([token[0] for token in tokens])
+            uds = self.udpipe(udinput)
+        if len(uds) == len(analyses):
+            for i in range(len(uds)):
+                analsyses[i] += [uds[i]]
+        return None
 
     def _guess_str(self, s):
         token = (s, "")
@@ -441,7 +472,10 @@ class Omorfi:
 
     def guess(self, token):
         if not self.can_guess:
-            return self._guess_heuristic(self._maybe_str2token(token))
+            if self.can_udpipe:
+                return self._udpipe(token[0])
+            else:
+                return self._guess_heuristic(self._maybe_str2token(token))
         guesses = None
         if isinstance(token, str):
             guesses = self._guess_str(token)
@@ -497,6 +531,46 @@ class Omorfi:
             accept = True
         return accept
 
+    def _generate(self, omorstring):
+        res = self.generator.lookup(omorstring)
+        return res
+
+    def generate(self, omorstring):
+        generated = None
+        if self.can_generate:
+            generated = self._generate(omorstring)
+            if not generated:
+                generated = [(omorstring, float('inf'))]
+        return generated
+
+    def _udpipe(self, udinput):
+        conllus = self.udpipeline.process(udinput, self.uderror)
+        if self.uderror.occurred():
+            return None
+        tokens = []
+        for conllu in conllus.split('\n'):
+            if conllu.startswith('#'):
+                continue
+            elif conllu.strip() == '':
+                continue
+            tokens += [self._conllu2token(conllu)]
+        return tokens
+
+    def _conllu2token(self, conllu):
+        fields = conllu.split()
+        if len(fields) != 10:
+            print("conllu2token conllu fail", fields)
+        upos = fields[3]
+        wordid = fields[2]
+        surf = fields[1]
+        ufeats = fields[5]
+        misc = fields[9]
+        analysis = '[WORD_ID=%s][UPOS=%s]%s[GUESS=UDPIPE]' %(wordid, upos,
+                self._ufeats2omor(ufeats))
+        return (analysis, float('inf'), misc)
+
+    def _ufeats2omor(self, ufeats):
+        return '[' + ufeats.replace('|', '][') + ']'
 
 def main():
     """Invoke a simple CLI analyser."""

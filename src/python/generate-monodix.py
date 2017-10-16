@@ -73,6 +73,7 @@ def main():
     # read from csv files
     print('  <pardefs>', file=args.output)
     printed_pardefs = set()
+    broken_pardefs = set()
     for tsv_filename in args.continuations:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -130,8 +131,12 @@ def main():
                                                     '<!-- loop: ' +
                                                     outlex.group(1).replace("_",
                                                                             "@") + '-->')
-                            print("removed ", outlex.group(1), "from",
-                                  pardef_name, "to resolve a loop")
+                            if outlex.group(1) + pardef_name not in \
+                                    broken_pardefs:
+                                print("removed ", outlex.group(1), "from",
+                                      pardef_name, "to resolve a loop")
+                                broken_pardefs.add(outlex.group(1) +
+                                        pardef_name)
                         else:
                             can_print = False
                 if can_print:
