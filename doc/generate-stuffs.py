@@ -131,8 +131,8 @@ The symbols are default output variants without context-sensitive filtering.
                         file=outfile)
                 print('---', file=outfile)
                 print("# `", tsv_parts['stuff'], "`", file=outfile)
-                print("| `", tsv_parts['stuff'], "` |", file=args.output,
-                        end=' ')
+                print("| ", tsv_parts['stuff'], " |", file=args.output,
+                        end=' ', sep='')
                 print(file=outfile)
                 print(tsv_parts['doc'], file=outfile)
                 print(tsv_parts['doc'], file=args.output, end=' ')
@@ -141,10 +141,10 @@ The symbols are default output variants without context-sensitive filtering.
                 print("| Omorfi | Apertium | FTB 3.1 | Giella |", file=outfile)
                 print("|:------:|:--------:|:-------:|:------:|", file=outfile)
                 for formatter in formatters:
-                    print("| `", formatter.stuff2lexc(tsv_parts['stuff']),
-                            file=outfile, end='` ')
-                    print("| `", formatter.stuff2lexc(tsv_parts['stuff']),
-                            file=args.output, end='` ')
+                    print("| ", formatter.stuff2lexc(tsv_parts['stuff']),
+                            file=outfile, end=' ')
+                    print("| ", formatter.stuff2lexc(tsv_parts['stuff']),
+                            file=args.output, end=' ')
                 print(" |", file=outfile)
                 print(" |", file=args.output)
 
