@@ -2,11 +2,11 @@
 layout: stuff
 stuff: REFLEXIVE
 ---
-### ` REFLEXIVE ` 
+# ` REFLEXIVE `
 
-Reflexive (pronoun)
+Reflexive (pronoun), lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
 
-[SUBCAT=REFLEXIVE]
-%<reflex%>
-% Refl
-+Refl
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=REFLEXIVE]` | ` %<reflex%>` | ` % Refl` | ` +Refl`  |

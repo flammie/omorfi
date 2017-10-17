@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Timp
 ---
-### ` Timp ` 
+# ` Timp `
 
-Impertative" 
+Impertative, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
 
-[MOOD=IMPV]
-%<imp%>
-% Impv
-+Impv
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [MOOD=IMPV]` | ` %<imp%>` | ` % Impv` | ` +Impv`  |

@@ -1,12 +1,12 @@
 ---
 layout: stuff
-stuff: X???
+stuff: X___
 ---
-### ` X??? ` 
+# ` X??? `
 
-Case to be determined
+Case to be determined, inflectional feature
 
-
-
-% Nom
-+Nom
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` ` | ` ` | ` % Nom` | ` +Nom`  |

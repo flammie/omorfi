@@ -2,11 +2,11 @@
 layout: stuff
 stuff: PERSONAL
 ---
-### ` PERSONAL ` 
+# ` PERSONAL `
 
-Personal (pronoun)
+Personal, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
 
-[PRONTYPE=PRS]
-%<pers%>
-% Pers
-+Pers
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PRONTYPE=PRS]` | ` %<pers%>` | ` % Pers` | ` +Pers`  |

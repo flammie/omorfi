@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xacc
 ---
-### ` Xacc ` 
+# ` Xacc `
 
-Accusative
+Accusative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=ACC]
-%<acc%>
-% Acc
-+Acc
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=ACC]` | ` %<acc%>` | ` % Acc` | ` +Acc`  |

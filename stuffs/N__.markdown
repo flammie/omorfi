@@ -1,12 +1,12 @@
 ---
 layout: stuff
-stuff: N??
+stuff: N__
 ---
-### ` N?? ` 
+# ` N?? `
 
-Number to be determined
+Number to be determined, inflectional feature
 
-
-%<sp%>
-% Sg
-+Sg
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` ` | ` %<sp%>` | ` % Sg` | ` +Sg`  |

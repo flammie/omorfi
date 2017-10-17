@@ -2,11 +2,11 @@
 layout: stuff
 stuff: CARDINAL
 ---
-### ` CARDINAL ` 
+# ` CARDINAL `
 
-Cardinal
+Cardinal, lexical feature based on UD NumType, refer to http://universaldependencies.org/u/feat/NumType.html
 
-[NUMTYPE=CARD]
-%<card%>
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [NUMTYPE=CARD]` | ` %<card%>` | ` ` | ` `  |

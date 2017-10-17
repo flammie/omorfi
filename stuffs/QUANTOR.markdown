@@ -2,11 +2,11 @@
 layout: stuff
 stuff: QUANTOR
 ---
-### ` QUANTOR ` 
+# ` QUANTOR `
 
-Quantifier (pronoun)
+Quantifier, lexical feature for non-inflecting adjective types, not used elsewhere(?)
 
-[SUBCAT=QUANTIFIER]
-%<qu%>
-% Qnt
-+Qnt
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=QUANTIFIER]` | ` %<qu%>` | ` % Qnt` | ` +Qnt`  |

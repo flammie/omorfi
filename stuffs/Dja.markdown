@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dja
 ---
-### ` Dja ` 
+# ` Dja `
 
-Derivation -jA
+Derivation -jA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=JA]
-+ja%<n%>
-
-+Der/ja
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=JA]` | ` +ja%<n%>` | ` ` | ` +Der/ja`  |

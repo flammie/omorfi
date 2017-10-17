@@ -2,11 +2,11 @@
 layout: stuff
 stuff: CLAUSE-BOUNDARY
 ---
-### ` CLAUSE-BOUNDARY ` 
+# ` CLAUSE-BOUNDARY `
 
-Clause final
+Clause final, lexical feature of clause bounding tokens
 
-[BOUNDARY=CLAUSE]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [BOUNDARY=CLAUSE]` | ` ` | ` ` | ` `  |

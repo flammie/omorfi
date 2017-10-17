@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dmpi
 ---
-### ` Dmpi ` 
+# ` Dmpi `
 
-Derivation -mpi
+Derivation -mpi, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=MPI]
-
-
-+Comp
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=MPI]` | ` ` | ` ` | ` +Comp`  |

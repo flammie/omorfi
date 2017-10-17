@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Tpast
 ---
-### ` Tpast ` 
+# ` Tpast `
 
-Indicative past
+Indicative past, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
 
-[MOOD=INDV][TENSE=PAST]
-%<past%>
-% Pst
-+Pst
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [MOOD=INDV][TENSE=PAST]` | ` %<past%>` | ` % Pst` | ` +Pst`  |

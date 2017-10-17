@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xabl
 ---
-### ` Xabl ` 
+# ` Xabl `
 
-Ablative
+Ablative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=ABL]
-%<abl%>
-% Abl
-+Abl
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=ABL]` | ` %<abl%>` | ` % Abl` | ` +Abl`  |

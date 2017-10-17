@@ -2,11 +2,11 @@
 layout: stuff
 stuff: POSTPOSITION
 ---
-### ` POSTPOSITION ` 
+# ` POSTPOSITION `
 
-Postposition
+Postposition, lexical feature based on UD-Finnish AdpType, an adposition that is after its complement
 
-[ADPTYPE=POST]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [ADPTYPE=POST]` | ` ` | ` ` | ` `  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Cmaisilla
 ---
-### ` Cmaisilla ` 
+# ` Cmaisilla `
 
-Fifth infinitive
+Fifth infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
 
-ERRORMACRO
-
-% Adv
-+Der/maisilla
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` ERRORMACRO` | ` ` | ` % Adv` | ` +Der/maisilla`  |

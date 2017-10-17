@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dnut
 ---
-### ` Dnut ` 
+# ` Dnut `
 
-Deverbal -nUt
+Deverbal -nUt, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=NUT]
-+nut%<adj%>
-% PrfPrc% Act
-+PrfPrc+Act
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=NUT]` | ` +nut%<adj%>` | ` % PrfPrc% Act` | ` +PrfPrc+Act`  |

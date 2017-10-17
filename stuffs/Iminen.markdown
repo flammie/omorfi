@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Iminen
 ---
-### ` Iminen ` 
+# ` Iminen `
 
-Fourth infinitive
+Fourth infinitive, inflectional feature
 
-[INF=MINEN]
-%<infminen%>
-% N
-+N
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [INF=MINEN]` | ` %<infminen%>` | ` % N` | ` +N`  |

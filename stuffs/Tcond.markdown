@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Tcond
 ---
-### ` Tcond ` 
+# ` Tcond `
 
-Conditional
+Conditional, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
 
-[MOOD=COND]
-%<cond%>
-% Cond
-+Cond
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [MOOD=COND]` | ` %<cond%>` | ` % Cond` | ` +Cond`  |

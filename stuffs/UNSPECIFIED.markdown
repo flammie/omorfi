@@ -2,11 +2,11 @@
 layout: stuff
 stuff: UNSPECIFIED
 ---
-### ` UNSPECIFIED ` 
+# ` UNSPECIFIED `
 
-Unclassified particle
+Unclassified particle, lexical feature for undecided particles
 
-
-%<part%>
-% Adv
-+Pcle
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` ` | ` %<part%>` | ` % Adv` | ` +Pcle`  |

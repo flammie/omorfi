@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Cma
 ---
-### ` Cma ` 
+# ` Cma `
 
-Agent participle
+Agent participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
 
-[PCP=AGENT]
-%<agent%>
-% AgPrc
-+AgPrc
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PCP=AGENT]` | ` %<agent%>` | ` % AgPrc` | ` +AgPrc`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: FINAL-BRACKET
 ---
-### ` FINAL-BRACKET ` 
+# ` FINAL-BRACKET `
 
-Right bracket
+Right bracket, lexical feature of SYM, for apertium compatibility
 
-[SUBCAT=BRACKET][POSITION=FINAL]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=BRACKET][POSITION=FINAL]` | ` ` | ` ` | ` `  |

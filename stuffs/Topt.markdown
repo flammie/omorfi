@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Topt
 ---
-### ` Topt ` 
+# ` Topt `
 
-Optative
+Optative, inflectional feature, archaic
 
-[MOOD=OPT]
-
-% Opt
-+Opt
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [MOOD=OPT]` | ` ` | ` % Opt` | ` +Opt`  |

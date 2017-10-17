@@ -2,11 +2,11 @@
 layout: stuff
 stuff: DIGIT
 ---
-### ` DIGIT ` 
+# ` DIGIT `
 
-Digits
+Digits, lexical feature of NUMs written in digits
 
-
-
-% Digit
-+Digit
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` ` | ` ` | ` % Digit` | ` +Digit`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: DASH
 ---
-### ` DASH ` 
+# ` DASH `
 
-Dash
+Dash, lexical feature of SYM, apertium compatibility
 
-[SUBCAT=DASH]
-
-% Dash
-+Dash
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=DASH]` | ` ` | ` % Dash` | ` +Dash`  |

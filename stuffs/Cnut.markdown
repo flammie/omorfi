@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Cnut
 ---
-### ` Cnut ` 
+# ` Cnut `
 
-Nut participle
+Nut participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
 
-[PCP=NUT]
-%<pp%>
-% PrfPrc
-+PrfPrc
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PCP=NUT]` | ` %<pp%>` | ` % PrfPrc` | ` +PrfPrc`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: SENTENCE-BOUNDARY
 ---
-### ` SENTENCE-BOUNDARY ` 
+# ` SENTENCE-BOUNDARY `
 
-Sentence final
+Sentence final, lexical feature of sentece bounding tokens
 
-[BOUNDARY=SENTENCE]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [BOUNDARY=SENTENCE]` | ` ` | ` ` | ` `  |

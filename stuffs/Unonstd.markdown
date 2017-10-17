@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Unonstd
 ---
-### ` Unonstd ` 
+# ` Unonstd `
 
-Non-standard
+Non-standard form
 
-[STYLE=NONSTANDARD]
-%<use_nonstd%>
-
-+Err/Orth
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [STYLE=NONSTANDARD]` | ` %<use_nonstd%>` | ` ` | ` +Err/Orth`  |

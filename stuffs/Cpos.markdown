@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Cpos
 ---
-### ` Cpos ` 
+# ` Cpos `
 
-Positive comparison
+Positive comparison, inflectional feature, refer to http://universaldependencies.org/u/feat/Degree.html
 
-[CMP=POS]
-%<pos%>
-% Pos
-+Pos
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CMP=POS]` | ` %<pos%>` | ` % Pos` | ` +Pos`  |

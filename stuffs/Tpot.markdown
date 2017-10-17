@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Tpot
 ---
-### ` Tpot ` 
+# ` Tpot `
 
-Potential" 
+Potential, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
 
-[MOOD=POTN]
-%<pot%>
-% Pot
-+Pot
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [MOOD=POTN]` | ` %<pot%>` | ` % Pot` | ` +Pot`  |

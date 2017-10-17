@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dva
 ---
-### ` Dva ` 
+# ` Dva `
 
-Deverbal -vA
+Deverbal -vA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=VA]
-+va%<adj%>
-% PrsPrc% Act
-+PrsPrc+Act
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=VA]` | ` +va%<adj%>` | ` % PrsPrc% Act` | ` +PrsPrc+Act`  |

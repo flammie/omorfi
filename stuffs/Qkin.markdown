@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Qkin
 ---
-### ` Qkin ` 
+# ` Qkin `
 
-Focus clitic particle -kin
+Focus clitic particle -kin, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
 
-[CLIT=KIN]
-+kin%<enc%>
-% Foc%_kin
-+Foc/kin
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CLIT=KIN]` | ` +kin%<enc%>` | ` % Foc%_kin` | ` +Foc/kin`  |

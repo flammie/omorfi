@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xill
 ---
-### ` Xill ` 
+# ` Xill `
 
-Illative" 
+Illative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=ILL]
-%<ill%>
-% Ill
-+Ill
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=ILL]` | ` %<ill%>` | ` % Ill` | ` +Ill`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xins
 ---
-### ` Xins ` 
+# ` Xins `
 
-Instructive
+Instructive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=INS]
-%<ins%>
-% Ins
-+Ins
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=INS]` | ` %<ins%>` | ` % Ins` | ` +Ins`  |

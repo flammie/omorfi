@@ -107,6 +107,10 @@ def main():
 """, file=args.output)
     formatters = [OmorFormatter(args.verbose), ApertiumFormatter(args.verbose),
                   Ftb3Formatter(args.verbose), GiellaFormatter(args.verbose)]
+    print("| Stuff | Doc | Omorfi | Apertium | FTB 3.1 | Giella |",
+            file=args.output)
+    print("|:-----:|:---:|:------:|:--------:|:-------:|:------:|",
+            file=args.output)
     for tsv_filename in args.stuff_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -127,14 +131,26 @@ def main():
                              '.markdown', 'w')
                 print('---', file=outfile)
                 print('layout: stuff', file=outfile)
-                print('stuff:', tsv_parts['stuff'], file=outfile)
+                print('stuff:', tsv_parts['stuff'].replace('?', '_'),
+                        file=outfile)
                 print('---', file=outfile)
-                print("### `", tsv_parts['stuff'], "` ", file=outfile)
+                print("# `", tsv_parts['stuff'], "`", file=outfile)
+                print("| `", tsv_parts['stuff'], "` |", file=args.output,
+                        end=' ')
                 print(file=outfile)
                 print(tsv_parts['doc'], file=outfile)
+                print(tsv_parts['doc'], file=args.output, end=' ')
                 print(file=outfile)
+                print("## Default formats", file=outfile)
+                print("| Omorfi | Apertium | FTB 3.1 | Giella |", file=outfile)
+                print("|:------:|:--------:|:-------:|:------:|", file=outfile)
                 for formatter in formatters:
-                    print(formatter.stuff2lexc(tsv_parts['stuff']), file=outfile)
+                    print("| `", formatter.stuff2lexc(tsv_parts['stuff']),
+                            file=outfile, end='` ')
+                    print("| `", formatter.stuff2lexc(tsv_parts['stuff']),
+                            file=args.output, end='` ')
+                print(" |", file=outfile)
+                print(" |", file=args.output)
 
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()

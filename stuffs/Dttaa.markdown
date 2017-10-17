@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dttaa
 ---
-### ` Dttaa ` 
+# ` Dttaa `
 
-Derivation -ttAA
+Derivation -ttAA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=TTAA]
-+ttaa%<vblex%>
-
-+Der/ttaa
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=TTAA]` | ` +ttaa%<vblex%>` | ` ` | ` +Der/ttaa`  |

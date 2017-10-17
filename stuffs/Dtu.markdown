@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dtu
 ---
-### ` Dtu ` 
+# ` Dtu `
 
-Deverbal -tU
+Deverbal -tU, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=TU]
-+tu%<adj%>
-% PrfPrc% Pass
-+PrfPrc+Pass
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=TU]` | ` +tu%<adj%>` | ` % PrfPrc% Pass` | ` +PrfPrc+Pass`  |

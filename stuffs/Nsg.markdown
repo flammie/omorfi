@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Nsg
 ---
-### ` Nsg ` 
+# ` Nsg `
 
-Singular" 
+Singular, inflectional feature, refer to http://universaldependencies.org/u/feat/Number.html
 
-[NUM=SG]
-%<sg%>
-% Sg
-+Sg
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [NUM=SG]` | ` %<sg%>` | ` % Sg` | ` +Sg`  |

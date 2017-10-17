@@ -2,11 +2,11 @@
 layout: stuff
 stuff: PRONOUN
 ---
-### ` PRONOUN ` 
+# ` PRONOUN `
 
 Pronoun
 
-[POS=PRONOUN]
-
-% Pron
-+Pron
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| [POS=PRONOUN] |  | % Pron | +Pron  |

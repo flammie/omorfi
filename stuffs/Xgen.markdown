@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xgen
 ---
-### ` Xgen ` 
+# ` Xgen `
 
-Genitive
+Genitive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=GEN]
-%<gen%>
-% Gen
-+Gen
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=GEN]` | ` %<gen%>` | ` % Gen` | ` +Gen`  |

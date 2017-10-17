@@ -2,11 +2,11 @@
 layout: stuff
 stuff: DEMONSTRATIVE
 ---
-### ` DEMONSTRATIVE ` 
+# ` DEMONSTRATIVE `
 
-Demonstrative
+Demonstrative, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
 
-[PRONTYPE=DEM]
-%<dem%>
-% Dem
-+Dem
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PRONTYPE=DEM]` | ` %<dem%>` | ` % Dem` | ` +Dem`  |

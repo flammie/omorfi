@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Qka
 ---
-### ` Qka ` 
+# ` Qka `
 
-Focus clitic particle -kA
+Focus clitic particle -kA, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
 
-[CLIT=KA]
-+ka%<enc%>
-% Foc%_kA
-+Foc/ka
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CLIT=KA]` | ` +ka%<enc%>` | ` % Foc%_kA` | ` +Foc/ka`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Ds
 ---
-### ` Ds ` 
+# ` Ds `
 
-Derivaiton -s
+Derivaiton -s, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=S]
-+s%<n%>
-
-+Cmp
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=S]` | ` +s%<n%>` | ` ` | ` +Cmp`  |

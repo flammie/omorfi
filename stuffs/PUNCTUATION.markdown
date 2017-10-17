@@ -2,11 +2,11 @@
 layout: stuff
 stuff: PUNCTUATION
 ---
-### ` PUNCTUATION ` 
+# ` PUNCTUATION `
 
 Punctuation
 
-[POS=PUNCTUATION]
-
-% Punct
-+Punct
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| [POS=PUNCTUATION] |  | % Punct | +Punct  |

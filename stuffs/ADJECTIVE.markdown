@@ -2,11 +2,11 @@
 layout: stuff
 stuff: ADJECTIVE
 ---
-### ` ADJECTIVE ` 
+# ` ADJECTIVE `
 
 Adjective (comparable)
 
-ERRORMACRO
-
-% A
-+A
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ERRORMACRO |  | % A | +A  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: SPACE
 ---
-### ` SPACE ` 
+# ` SPACE `
 
-Space
+Space, lexical feature of SYM, needed for compatibility with many external systems that do not support space-as-a-token concept
 
-[SUBCAT=SPACE]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=SPACE]` | ` ` | ` ` | ` `  |

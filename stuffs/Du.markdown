@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Du
 ---
-### ` Du ` 
+# ` Du `
 
-Derivation -u
+Derivation -u, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=U]
-+u%<n%>
-
-+Der/u
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=U]` | ` +u%<n%>` | ` ` | ` +Der/u`  |

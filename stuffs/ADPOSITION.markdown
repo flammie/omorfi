@@ -2,11 +2,11 @@
 layout: stuff
 stuff: ADPOSITION
 ---
-### ` ADPOSITION ` 
+# ` ADPOSITION `
 
 Adposition
 
-[POS=ADPOSITION]
-%<post%>
-
-+Adp+Po
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| [POS=ADPOSITION] | %<post%> |  | +Adp+Po  |

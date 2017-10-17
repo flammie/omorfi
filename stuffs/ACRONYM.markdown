@@ -2,11 +2,11 @@
 layout: stuff
 stuff: ACRONYM
 ---
-### ` ACRONYM ` 
+# ` ACRONYM `
 
-Acronym (inflects with colon)
+Acronym, shortening that inflects with colon
 
-[ABBR=ACRONYM]
-%<acr%>
-% N% Abbr
-+ACR
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [ABBR=ACRONYM]` | ` %<acr%>` | ` % N% Abbr` | ` +ACR`  |

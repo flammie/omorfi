@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Ie
 ---
-### ` Ie ` 
+# ` Ie `
 
-E infinitive
+E infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/InfForm.html
 
-[INF=E]
-%<infe%>
-% Inf2
-+Inf2
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [INF=E]` | ` %<infe%>` | ` % Inf2` | ` +Inf2`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xabe
 ---
-### ` Xabe ` 
+# ` Xabe `
 
-Abessive
+Abessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=ABE]
-%<abe%>
-% Abe
-+Abe
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=ABE]` | ` %<abe%>` | ` % Abe` | ` +Abe`  |

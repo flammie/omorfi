@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xela
 ---
-### ` Xela ` 
+# ` Xela `
 
-Elative
+Elative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=ELA]
-%<ela%>
-% Ela
-+Ela
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=ELA]` | ` %<ela%>` | ` % Ela` | ` +Ela`  |

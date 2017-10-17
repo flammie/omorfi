@@ -2,11 +2,11 @@
 layout: stuff
 stuff: INITIAL-BRACKET
 ---
-### ` INITIAL-BRACKET ` 
+# ` INITIAL-BRACKET `
 
-Left bracket
+Left bracket, lexical feature of SYM, for apertium compatibility
 
-[SUBCAT=BRACKET][POSITION=INITIAL]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=BRACKET][POSITION=INITIAL]` | ` ` | ` ` | ` `  |

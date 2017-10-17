@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xnom
 ---
-### ` Xnom ` 
+# ` Xnom `
 
-Nominative
+Nominative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=NOM]
-%<nom%>
-% Nom
-+Nom
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=NOM]` | ` %<nom%>` | ` % Nom` | ` +Nom`  |

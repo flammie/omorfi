@@ -2,11 +2,11 @@
 layout: stuff
 stuff: B←
 ---
-### ` B← ` 
+# ` B← `
 
 Marker for right co-ordinated compound hyphen
 
-[POSITION=PREFIX]
-%<compound-only-L%>
-% TrunCo
-+TruncPrefix
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [POSITION=PREFIX]` | ` %<compound-only-L%>` | ` % TrunCo` | ` +TruncPrefix`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: INITIAL-QUOTE
 ---
-### ` INITIAL-QUOTE ` 
+# ` INITIAL-QUOTE `
 
-Left quotation mark
+Left quotation mark, lexical feature of SYM, for apertium compatibility
 
-[SUBCAT=QUOTATION][POSITION=INITIAL]
-
-% Quote
-+Quote
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=QUOTATION][POSITION=INITIAL]` | ` ` | ` % Quote` | ` +Quote`  |

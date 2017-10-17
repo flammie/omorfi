@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Ia
 ---
-### ` Ia ` 
+# ` Ia `
 
-A infinitive
+A infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/InfForm.html
 
-[INF=A]
-%<infa%>
-% Inf1
-+Inf1
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [INF=A]` | ` %<infa%>` | ` % Inf1` | ` +Inf1`  |

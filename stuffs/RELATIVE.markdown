@@ -2,11 +2,11 @@
 layout: stuff
 stuff: RELATIVE
 ---
-### ` RELATIVE ` 
+# ` RELATIVE `
 
-Relative
+Relative, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
 
-[PRONTYPE=REL]
-%<rel%>
-% Rel
-+Rel
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PRONTYPE=REL]` | ` %<rel%>` | ` % Rel` | ` +Rel`  |

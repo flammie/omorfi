@@ -2,11 +2,11 @@
 layout: stuff
 stuff: ABBREVIATION
 ---
-### ` ABBREVIATION ` 
+# ` ABBREVIATION `
 
-Abbreviation (non-inflecting, may end in full stop)
+Abbreviation, shortening, non-inflecting, may end in full stop
 
-[ABBR=ABBREVIATION]
-%<abbr%>
-% Abbr
-+ABBR
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [ABBR=ABBREVIATION]` | ` %<abbr%>` | ` % Abbr` | ` +ABBR`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: DECIMAL
 ---
-### ` DECIMAL ` 
+# ` DECIMAL `
 
-Decimal digits
+Decimal digits, lexical feature of NUMs written in digits
 
-[SUBCAT=DECIMAL]
-
-
-
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=DECIMAL]` | ` ` | ` ` | ` `  |

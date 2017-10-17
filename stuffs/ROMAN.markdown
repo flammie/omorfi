@@ -2,11 +2,11 @@
 layout: stuff
 stuff: ROMAN
 ---
-### ` ROMAN ` 
+# ` ROMAN `
 
-Roman numerals
+Roman numerals, lexical feature of NUMs written in roman numerals
 
-[SUBCAT=ROMAN]
-
-% Roman
-+Roman
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [SUBCAT=ROMAN]` | ` ` | ` % Roman` | ` +Roman`  |

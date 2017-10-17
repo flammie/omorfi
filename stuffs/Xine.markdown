@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Xine
 ---
-### ` Xine ` 
+# ` Xine `
 
-Inessive
+Inessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
 
-[CASE=INE]
-%<ine%>
-% Ine
-+Ine
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CASE=INE]` | ` %<ine%>` | ` % Ine` | ` +Ine`  |

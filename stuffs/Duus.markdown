@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Duus
 ---
-### ` Duus ` 
+# ` Duus `
 
-Derivation -UUs
+Derivation -UUs, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=UUS]
-+uus%<adj%>
-
-+Der/uus
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=UUS]` | ` +uus%<adj%>` | ` ` | ` +Der/uus`  |

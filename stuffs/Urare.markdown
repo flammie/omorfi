@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Urare
 ---
-### ` Urare ` 
+# ` Urare `
 
-Rare
+Rare form
 
-[STYLE=RARE]
-
-
-+Use/Marg
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [STYLE=RARE]` | ` ` | ` ` | ` +Use/Marg`  |

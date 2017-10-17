@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Bc
 ---
-### ` Bc ` 
+# ` Bc `
 
-Compound boundary for generated compounds
+Compound boundary for generated (derivational-inflectional) compounds
 
-[BOUNDARY=COMPOUND]
-%<cmp%>+
-#
-#
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [BOUNDARY=COMPOUND]` | ` %<cmp%>+` | ` #` | ` #`  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: PREPOSITION
 ---
-### ` PREPOSITION ` 
+# ` PREPOSITION `
 
-Preposition
+Preposition, lexical feature based on UD-Finnish AdpType, an adposition that is before its complent, refer to http://universaldependencies.org/fi/feat/AdpType.html
 
-[ADPTYPE=PREP]
-
-% Adp% Pr
-+Adp+Pr
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [ADPTYPE=PREP]` | ` ` | ` % Adp% Pr` | ` +Adp+Pr`  |

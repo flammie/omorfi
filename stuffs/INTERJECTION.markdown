@@ -2,11 +2,11 @@
 layout: stuff
 stuff: INTERJECTION
 ---
-### ` INTERJECTION ` 
+# ` INTERJECTION `
 
 Interjection
 
-[SUBCAT=INTERJECTION]
-
-
-+Interj
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| [SUBCAT=INTERJECTION] |  |  | +Interj  |

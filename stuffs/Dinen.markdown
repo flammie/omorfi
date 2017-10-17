@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dinen
 ---
-### ` Dinen ` 
+# ` Dinen `
 
-Derivation -inen
+Derivation -inen, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=NEN]
-+inen%<n%>
-
-+Der/inint
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=NEN]` | ` +inen%<n%>` | ` ` | ` +Der/inint`  |

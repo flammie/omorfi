@@ -2,11 +2,11 @@
 layout: stuff
 stuff: NOUN
 ---
-### ` NOUN ` 
+# ` NOUN `
 
-Noun
+Noun, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/NOUN.html
 
-[UPOS=NOUN]
-%<n%>
-% N
-+N
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [UPOS=NOUN]` | ` %<n%>` | ` % N` | ` +N`  |

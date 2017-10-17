@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Ccmp
 ---
-### ` Ccmp ` 
+# ` Ccmp `
 
-Comparative comparison
+Comparative comparison, inflectional feature, refer to http://universaldependencies.org/u/feat/Degree.html
 
-[CMP=CMP]
-%<com%>
-% Comp
-+Comp
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CMP=CMP]` | ` %<com%>` | ` % Comp` | ` +Comp`  |

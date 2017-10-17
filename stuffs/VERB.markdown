@@ -2,11 +2,11 @@
 layout: stuff
 stuff: VERB
 ---
-### ` VERB ` 
+# ` VERB `
 
-Verb
+Verb, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/VERB.html
 
-[UPOS=VERB]
-%<vblex%>
-% V
-+V
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [UPOS=VERB]` | ` %<vblex%>` | ` % V` | ` +V`  |

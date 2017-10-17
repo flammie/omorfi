@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Tpres
 ---
-### ` Tpres ` 
+# ` Tpres `
 
-Indicative Present
+Indicative Present, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
 
-[MOOD=INDV][TENSE=PRESENT]
-%<pri%>
-% Prs
-+Prs
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [MOOD=INDV][TENSE=PRESENT]` | ` %<pri%>` | ` % Prs` | ` +Prs`  |

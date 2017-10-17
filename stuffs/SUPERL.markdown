@@ -2,11 +2,11 @@
 layout: stuff
 stuff: SUPERL
 ---
-### ` SUPERL ` 
+# ` SUPERL `
 
-Superlative
+Superlative, lexicalised version for inflectional feature of adjectives, refer to http://universaldependencies.org/u/feat/Degree.html
 
-[CMP=SUP]
-%<sup%>
-% Superl
-+Superl
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CMP=SUP]` | ` %<sup%>` | ` % Superl` | ` +Superl`  |

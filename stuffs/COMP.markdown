@@ -2,11 +2,11 @@
 layout: stuff
 stuff: COMP
 ---
-### ` COMP ` 
+# ` COMP `
 
-Comparative
+Comparative, lexicalised version for inflectional feature of adjectives, refer to http://universaldependencies.org/u/feat/Degree.html
 
-[CMP=CMP]
-
-% Comp
-+Comp
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CMP=CMP]` | ` ` | ` % Comp` | ` +Comp`  |

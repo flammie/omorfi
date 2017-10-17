@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Cmaton
 ---
-### ` Cmaton ` 
+# ` Cmaton `
 
-Negation participle
+Negation participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
 
-[PCP=NEG]
-%<pneg%>
-% NegPrc
-+NegPrc
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PCP=NEG]` | ` %<pneg%>` | ` % NegPrc` | ` +NegPrc`  |

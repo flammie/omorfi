@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Udial
 ---
-### ` Udial ` 
+# ` Udial `
 
-Dialect general
+Dialectal (generic) form
 
-[STYLE=DIALECTAL]
-%<use_nonstd%>
-
-+Dial/Finland
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [STYLE=DIALECTAL]` | ` %<use_nonstd%>` | ` ` | ` +Dial/Finland`  |

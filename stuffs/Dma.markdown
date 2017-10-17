@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Dma
 ---
-### ` Dma ` 
+# ` Dma `
 
-Derivation -mA
+Derivation -mA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 
-[DRV=MA]
-+ma%<n%>
-% AgPrc
-+AgPrc
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [DRV=MA]` | ` +ma%<n%>` | ` % AgPrc` | ` +AgPrc`  |

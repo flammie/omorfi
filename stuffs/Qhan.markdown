@@ -2,11 +2,11 @@
 layout: stuff
 stuff: Qhan
 ---
-### ` Qhan ` 
+# ` Qhan `
 
-Focus clitic particle -hAn
+Focus clitic particle -hAn, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
 
-[CLIT=HAN]
-+han%<enc%>
-% Foc%_hAn
-+Foc/han
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [CLIT=HAN]` | ` +han%<enc%>` | ` % Foc%_hAn` | ` +Foc/han`  |

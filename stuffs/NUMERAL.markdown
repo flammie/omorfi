@@ -2,11 +2,11 @@
 layout: stuff
 stuff: NUMERAL
 ---
-### ` NUMERAL ` 
+# ` NUMERAL `
 
 Numeral
 
-[POS=NUMERAL]
-%<num%>
-% Num
-+Num
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| [POS=NUMERAL] | %<num%> | % Num | +Num  |

@@ -2,11 +2,11 @@
 layout: stuff
 stuff: ADVERB
 ---
-### ` ADVERB ` 
+# ` ADVERB `
 
 Adverb
 
-ERRORMACRO
-%<adv%>
-
-+Adv
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ERRORMACRO | %<adv%> |  | +Adv  |

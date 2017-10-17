@@ -2,11 +2,11 @@
 layout: stuff
 stuff: INDEFINITE
 ---
-### ` INDEFINITE ` 
+# ` INDEFINITE `
 
-Indefinite (pronoun)
+Indefinite (pronoun), lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
 
-[PRONTYPE=IND]
-%<ind%>
-% Indef
-+Indef
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| ` [PRONTYPE=IND]` | ` %<ind%>` | ` % Indef` | ` +Indef`  |

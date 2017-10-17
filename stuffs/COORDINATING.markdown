@@ -2,11 +2,11 @@
 layout: stuff
 stuff: COORDINATING
 ---
-### ` COORDINATING ` 
+# ` COORDINATING `
 
 Coordinating conjunction
 
-[UPOS=CCONJ]
-%<cnjcoo%>
-
-+CC
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+| [UPOS=CCONJ] | %<cnjcoo%> |  | +CC  |
