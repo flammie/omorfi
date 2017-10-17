@@ -10,20 +10,16 @@ Stuff are internal things, but they appear in database a lot, so you will want t
 
 The stuff is typically used by the file format and/or analysis generators to either define analysis tags or decide whether or not to include the affected string into language model. The default renditions for a handful of omorfi tag formats are provided (only ones that have trivially mapped formatting are included.
 
-<table id="stufftable" class="display">
-<thead>
-<tr>
-<th>Stuff</th>
-</tr>
-</thead>
-<tbody>
-{% for page in site.pages %}
-{% if page.stuff %}
-<tr><td><a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a></td></tr>
-{% endif %}
-{% endfor %}
-</tbody>
-</table>
+<p>Stuffs:
+{% for page in site.pages %}{% if page.stuff %}
+<a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a>, 
+{% endif %}{% endfor %}
+</p>
+
+## Stuffs in tabular format
+
+The symbols are default output variants without context-sensitive filtering.
+
 
 
 | Stuff | Doc | Omorfi | Apertium | FTB 3.1 | Giella |
@@ -173,4 +169,5 @@ The stuff is typically used by the file format and/or analysis generators to eit
 | ` Xlat ` | Lative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html | ` [CASE=LAT]` | ` %<lat%>` | ` % Lat` | ` +Lat`  |
 | ` Xacc ` | Accusative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html | ` [CASE=ACC]` | ` %<acc%>` | ` % Acc` | ` +Acc`  |
 | ` X??? ` | Case to be determined, inflectional feature | ` ` | ` ` | ` % Nom` | ` +Nom`  |
+
 <!-- vim: set ft=markdown:-->

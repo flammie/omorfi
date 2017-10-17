@@ -89,20 +89,16 @@ def main():
     print(file=args.output)
     # stolen from turku:
     # https://turkunlp.github.io/Finnish_PropBank/
-    print("""<table id="stufftable" class="display">
-<thead>
-<tr>
-<th>Stuff</th>
-</tr>
-</thead>
-<tbody>
-{% for page in site.pages %}
-{% if page.stuff %}
-<tr><td><a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a></td></tr>
-{% endif %}
-{% endfor %}
-</tbody>
-</table>
+    print("""<p>Stuffs:
+{% for page in site.pages %}{% if page.stuff %}
+<a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a>, 
+{% endif %}{% endfor %}
+</p>
+
+## Stuffs in tabular format
+
+The symbols are default output variants without context-sensitive filtering.
+
 
 """, file=args.output)
     formatters = [OmorFormatter(args.verbose), ApertiumFormatter(args.verbose),
@@ -152,6 +148,7 @@ def main():
                 print(" |", file=outfile)
                 print(" |", file=args.output)
 
+    print(file=args.output)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 
