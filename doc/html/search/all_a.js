@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tokenise',['tokenise',['../classomorfi_1_1omorfi_1_1Omorfi.html#aedfd9acc2064b74dee8aea28a3302c2d',1,'omorfi.omorfi.Omorfi.tokenise()'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a1533065bca7c2232f92e69e56f1a8ef8',1,'com.github.flammie.omorfi.Omorfi.tokenise(String line, String id)'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a7544861a4034ce7c420f1388e0fd9c39',1,'com.github.flammie.omorfi.Omorfi.tokenise(String line)']]]
+  ['root_5flexicon_5flexc',['root_lexicon_lexc',['../classomorfi_1_1apertium__formatter_1_1ApertiumFormatter.html#a91e184b8b83762b2461ba5f813fd8d3c',1,'omorfi.apertium_formatter.ApertiumFormatter.root_lexicon_lexc()'],['../classomorfi_1_1formatter_1_1Formatter.html#a70995050055ab9a25bf166d404998bed',1,'omorfi.formatter.Formatter.root_lexicon_lexc()'],['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html#ada315b4d64625589c64cd324fa24994e',1,'omorfi.ftb3_formatter.Ftb3Formatter.root_lexicon_lexc()']]]
 ];

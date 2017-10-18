@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['load',['load',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#afa5ec5d974f57e5bcf5f381e4d0aac2d',1,'com::github::flammie::omorfi::Omorfi']]],
-  ['loadall',['loadAll',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a8c28ad34af4f37fc4163eb72f67dbb2b',1,'com.github.flammie.omorfi.Omorfi.loadAll(String path)'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#aee9b4666bb561df76dbda7d09795c0b3',1,'com.github.flammie.omorfi.Omorfi.loadAll()']]],
-  ['loadallfromdefaultdirs',['loadAllFromDefaultDirs',['../classomorfi_1_1Omorfi.html#a4d97ce736c59122d28ec509a6e31ea2a',1,'omorfi::Omorfi']]],
-  ['loadanalyser',['loadAnalyser',['../classomorfi_1_1Omorfi.html#a36f8a817621eed09cc68171ae7348289',1,'omorfi::Omorfi']]],
-  ['loadfile',['loadFile',['../classomorfi_1_1Omorfi.html#a2a5a83f83ead42065bb8c9091b3d6201',1,'omorfi::Omorfi']]],
-  ['loadfromdir',['loadFromDir',['../classomorfi_1_1Omorfi.html#a6e797d772a808c64335cf4c293e00203',1,'omorfi::Omorfi']]]
+  ['accept',['accept',['../classomorfi_1_1Omorfi.html#ab649a9e7426f06262ce3083e61c25c77',1,'omorfi::Omorfi']]],
+  ['analyse',['analyse',['../classomorfi_1_1omorfi_1_1Omorfi.html#a56b288134823fba836111bcf3ffd5ffd',1,'omorfi.omorfi.Omorfi.analyse()'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#abbae76f94795abf06e15f9118a4cd80c',1,'com.github.flammie.omorfi.Omorfi.analyse()'],['../classomorfi_1_1Omorfi.html#a14c845e112d7974d0dc9e7e328d5237d',1,'omorfi::Omorfi::analyse()']]],
+  ['analyse_5fsentence',['analyse_sentence',['../classomorfi_1_1omorfi_1_1Omorfi.html#a5f87157d6384ce2c5ac00799b5cbf7bc',1,'omorfi::omorfi::Omorfi']]],
+  ['analyses2lexc',['analyses2lexc',['../classomorfi_1_1apertium__formatter_1_1ApertiumFormatter.html#a2452d266bc904247733d9878816d8eb0',1,'omorfi.apertium_formatter.ApertiumFormatter.analyses2lexc()'],['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html#ac966ccceef9996e8836d7bd375991fc6',1,'omorfi.ftb3_formatter.Ftb3Formatter.analyses2lexc()']]]
 ];
