@@ -14,6 +14,7 @@ from argparse import ArgumentParser
 from glob import glob
 from os import F_OK, access, getenv
 from sys import stderr, stdin
+from math import log
 
 import libhfst
 
@@ -62,6 +63,8 @@ class Omorfi:
     udpiper = None
     udpipeline = None
     uderror = None
+    lexlogprobs = dict()
+    taglogprobs = dict()
     try_lowercase = True
     try_titlecase = True
     try_detitlecase = True
@@ -240,6 +243,39 @@ class Omorfi:
                 Pipeline.DEFAULT, 'conllu')
         self.uderror = ProcessingError()
         self.can_udpipe = True
+
+    def load_lexical_frequencies(self, lexfile):
+        lextotal = 0
+        lexcounts = dict()
+        for line in lexfile:
+            fields = line.split('\t')
+            lexcount = int(fields[0])
+            lexcounts[fields[1]] = lexcount
+            lextotal += lexcount
+        for lex, freq in lexcounts.items():
+            if freq != 0:
+                self.lexlogprobs[lex] = log(freq/lextotal)
+            else:
+                # XXX: hack hack, should just use LM count stuff with
+                # discounts
+                self.lexlogprobs[lex] = log(1/(lextotal + 1))
+
+    def load_omortag_frequencies(self, omorfile):
+        omortotal = 0
+        omorcounts = dict()
+        for line in omorfile:
+            fields = line.split('\t')
+            omorcount = int(fields[0])
+            omorcounts[fields[1]] = omorcount
+            omortotal += omorcount
+        for omor, freq in omorcounts.items():
+            if freq != 0:
+                self.taglogprobs[omor] = log(freq/omortotal)
+            else:
+                # XXX: hack hack, should just use LM count stuff with
+                # discounts
+                self.taglogprobs[omor] = log(1/(omortotal + 1))
+
 
     def _find_retoken_recase(self, token):
         if self.accept(token):

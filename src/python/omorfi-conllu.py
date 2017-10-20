@@ -354,6 +354,8 @@ def main():
     a.add_argument('--hacks', metavar='HACKS',
                    help="mangle anaelyses to match HACKS version of UD",
                    choices=['ftb'])
+    a.add_argument('-X', '--frequencies', metavar="FREQDIR",
+                   help="read frequencies from FREQDIR/*.freqs")
     a.add_argument('--debug', action='store_true',
                    help="print lots of debug info while processing")
     options = a.parse_args()
@@ -383,6 +385,15 @@ def main():
         print("writing to", options.outfile.name)
     if not options.statfile:
         options.statfile = stdout
+    lexprobs = None
+    tagprobs = None
+
+    if options.frequencies:
+        with open(options.frequencies + '/lexemes.freqs') as lexfile:
+            omorfi.load_lexical_frequencies(lexfile)
+        with open(options.frequencies + '/omors.freqs') as omorfile:
+            omorfi.load_omortag_frequencies(omorfile)
+
     # statistics
     realstart = perf_counter()
     cpustart = process_time()
