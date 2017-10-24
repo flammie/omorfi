@@ -191,7 +191,9 @@ class Omorfi:
         elif isinstance(s, dict):
             return s
         else:
-            return {"unknown": s}
+            return {"error": "not a string or dict",
+                    "location": "maybe_str2token",
+                    "data": s}
 
     def load_from_dir(self, path=None, **include):
         """Load omorfi automata from given or known locations.
@@ -282,7 +284,7 @@ class Omorfi:
     def _find_retoken_recase(self, token):
         """Turns a string into a recased non-OOV token."""
         if self.accept(token):
-            return {"surf": token, "analsurf": token, "recase": "ORIGINALCASE")
+            return {"surf": token, "analsurf": token, "recase": "ORIGINALCASE"}
         if self.try_lowercase and self.accept(token.lower()):
             return {"surf": token, "analsurf": token.lower(),
                     "recase": "LOWERCASED"}
@@ -368,7 +370,7 @@ class Omorfi:
                 retoken["SpaceAfter"] = "No"
                 retoken["SpaceBefore"] = "No"
                 return [
-                        {"surf": token[0], "SpaceAfter": "No"),
+                        {"surf": token[0], "SpaceAfter": "No"},
                         retoken,
                         {"surf": token[-3], "SpaceBefore": "No",
                             "SpaceAfter": "No"},
@@ -382,7 +384,7 @@ class Omorfi:
             posttokens += [{"surf": token[-1], "SpaceBefore": "No"}]
             token = token[:-1]
         while len(token) > 1 and token[0] in fin_punct_leading:
-            pretokens += [{"surf": token[0], "SpaceAfter": "No")]
+            pretokens += [{"surf": token[0], "SpaceAfter": "No"}]
             token = token[1:]
         lastresort = {"surf": token}
         if len(pretokens) > 0:
@@ -498,19 +500,22 @@ class Omorfi:
             anals = self._analyse_token(token)
         else:
             anals = [{"error": "token is not str or dict",
-                "token", token, "location": "analyse()"}]
+                "token": token, "location": "analyse()"}]
         if not anals:
             if isinstance(token, str):
-                anal = {"anal": '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
-                        (token), "weight": float('inf'), "OOV": "Yes",
+                anal = {"anal": '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
+                        % (token), "weight": float('inf'), "OOV": "Yes",
                         "guess": "None"}
             elif isinstance(token, dict):
-                anal["anal"] = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' %
-                    (token['surf']), "weight": float('inf'), "OOV": "Yes",
-                    "guess": "None")
+                anal = token.copy()
+                anal["anal"] = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
+                        % (token['surf'])
+                anal["weight"] = float('inf')
+                anal["OOV"] = "Yes"
+                anal["guess"] = "None"
             else:
                 anal = {"error": "token is not str or dict",
-                        "token", token, "location": "analyse()"}
+                        "token": token, "location": "analyse()"}
             anals = [anal]
         return anals
 
@@ -524,85 +529,150 @@ class Omorfi:
         tokens = self.tokenise(s)
         if not tokens:
             tokens = [{"error": "cannot tokenise sentence",
-                "sentence": s, "location": "analyse_sentence")]
-        analyses = []
+                "sentence": s, "location": "analyse_sentence"}]
+        analysis_lists = []
+        i = 0
         for token in tokens:
-            analyses += [self.analyse(token)]
+            i += 1
+            analysis_lists[i] += [self.analyse(token)]
         if self.can_udpipe:
             # N.B: I used the vertical input here
             udinput = '\n'.join([token["surf"] for token in tokens])
             uds = self.udpipe(udinput)
-        if len(uds) == len(analyses):
+        if len(uds) == len(analysis_lists):
             for i in range(len(uds)):
-                analsyses[i] += [uds[i]]
+                analsysis_lists[i] += [uds[i]]
         return None
 
     def _guess_str(self, s):
-        token = (s, "")
+        token = {"surf": s}
         return self._guess_token(token)
 
     def _guess_token(self, token):
-        res = self.guesser.lookup(token[0])
+        res = self.guesser.lookup(token['surf'])
+        guesses = []
         for r in res:
-            r = (r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1]), r[1], token[1])
-        return res
+            guesstoken = token.copy()
+            guesstoken['anal'] = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
+            guesstoken['weight'] = float(r[1])
+            guesstoken['guess'] = 'FSA'
+            guesses += [guesstoken]
+        return guesses
 
     def _guess_heuristic(self, token):
-        guess = (token[0], float('inf'), token[1])
-        if token[0][0].isupper() and len(token[0]) > 1:
-            guess = (token[0] + "[UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +
-                     "[WEIGHT=28021984]", 28021984, token[1])
+        '''Heuristic guessing function written fully in python.
+
+        This should always be the most simple basic backoff, e.g. noun singular
+        nominative for everything.
+        '''
+        guesstoken = token.copy()
+        # woo advanced heuristics!!
+        if token['surf'][0].isupper() and len(token['surf']) > 1:
+            guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
+                    "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                     "[WEIGHT=28021984]"
+            guesstoken['weight'] = 28021984
         else:
-            guess = (token[0] + "[UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +
-                     "[WEIGHT=28021984]", 28021984, token[1])
-        return [guess]
+            guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
+                    "[UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                     "[WEIGHT=28021984]"
+            guesstoken['weight'] = 28021984
+        return [guesstoken]
 
     def guess(self, token):
-        if not self.can_guess:
-            if self.can_udpipe:
-                return self._udpipe(token[0])
-            else:
-                return self._guess_heuristic(self._maybe_str2token(token))
-        guesses = None
-        if isinstance(token, str):
-            guesses = self._guess_str(token)
-        else:
-            guesses = self._guess_token(token)
+        '''Speculate morphological analyses of OOV token.
+
+        This method may use multiple information sources, but not the actual
+        analyser. Therefore a typical use of this is after the analyse(token)
+        function has failed. Note that some information sources perform badly
+        when guessing without context, for these the analyse_sentence(sent) is
+        the only option.
+        '''
+        realtoken = self._maybe_str2token(token)
+        guesses = self._guess_heuristic(realtoken)
+        if self.can_udpipe:
+            guesses += [self._udpipe(realtoken['surf'])]
+        if self.can_guess:
+            guesses += self._guess_token(realtoken)
         return guesses
 
     def _lemmatise(self, token):
-        res = self.lemmatiser.lookup(token)
-        return res
+        res = self.lemmatiser.lookup(token['surf'])
+        lemmas = []
+        for r in res:
+            lemmatoken = token.copy()
+            lemmatoken['lemma'] = r[0]
+            lemmatoken['lemmaweight'] = float(r[1])
+            lemmas += [lemmatoken]
+        return lemmas
 
     def lemmatise(self, token):
+        '''Lemmatise a token, returning a dictionary ID.
+
+        Like morphological analysis, can return more than one results, which
+        are possible (combinations of) lexeme ids. If the token is not in the
+        dictionary, the surface form is returned as most likely "lemma".
+        '''
+        realtoken = self._maybe_str2token(token)
         lemmas = None
-        lemmas = self._lemmatise(token)
-        if not lemmas:
-            lemma = (token, float('inf'))
-            lemmas = [lemma]
+        lemmas = self._lemmatise(realtoken)
+        if not lemmas or len(lemmas) < 1:
+            lemmatoken = realtoken.copy()
+            lemmatoken['lemma'] = lemmatoken['surf']
+            lemmatoken['lemmaweight'] = float('inf')
+            lemmas = [lemmatoken]
         return lemmas
 
     def _segment(self, token):
         res = self.segmenter.lookup(token)
-        return res
+        segmenteds = []
+        for r in res:
+            segmenttoken = token.copy()
+            segmenttoken['segments'] = r[0]
+            segmenttoken['segmentweight'] = float(r[1])
+            segmenteds += [segmenttoken]
+        return segmenteds
 
     def segment(self, token):
+        '''Segment token into morphs, words and other string pieces.
+
+        The segments come separated by some internal markers for different
+        segment boundaries.
+        '''
+        realtoken = self._maybe_str2token(token)
         segments = None
-        segments = self._segment(token)
-        if not segments:
-            segment = (token, float('inf'))
-            segments = [segment]
+        segments = self._segment(realtoken)
+        if not segments or len(segments) < 1:
+            segmenttoken = realtoken.copy()
+            segmenttoken['segments'] = segmenttoken['surf']
+            segments = [segmenttoken]
         return segments
 
     def _labelsegment(self, token):
         res = self.labelsegmenter.lookup(token)
+        lss = []
+        for r in res:
+            lstoken = token.copy()
+            lstoken['labelsegments'] = r[0]
+            lstoken['lsweight'] = float(r[1])
+            lss += [lstoken]
         return res
 
     def labelsegment(self, token):
+        '''Segment token into labelled morphs, words and other string pieces.
+
+        The segments are suffixed with their morphologically relevant
+        informations, e.g. lexical classes for root lexemes and inflectional
+        features for inflectional segments. This functionality is experimental
+        due to hacky way it was patched together.
+        '''
+        realtoken = self._maybe_str2token(token)
         labelsegments = None
-        labelsegments = self._labelsegment(token)
-        if not labelsegments:
-            labelsegment = (token, float('inf'))
+        labelsegments = self._labelsegment(realtoken)
+        if not labelsegments or len(labelsegments) < 1:
+            lstoken = realtoken.copy()
+            lstoken['labelsegments'] = lstoken['surf']
+            lstoken['lsweight'] = float('inf')
             labelsegments = [labelsegment]
         return labelsegments
 
@@ -611,23 +681,53 @@ class Omorfi:
         return res
 
     def accept(self, token):
+        '''Check if the token is in the dictionary or not.
+
+        Returns False for OOVs, True otherwise. Note, that this is not
+        necessarily more efficient than analyse(token)'''
+        realtoken = self._maybe_str2token(token)
         accept = False
         accepts = None
-        accepts = self._accept(token)
-        if accepts:
+        accepts = self._accept(realtoken)
+        if accepts and len(accepts) > 0:
             accept = True
+        else:
+            accept = False
         return accept
 
-    def _generate(self, omorstring):
-        res = self.generator.lookup(omorstring)
-        return res
+    def _generate(self, token):
+        res = self.generator.lookup(token['anal'])
+        generations = []
+        for r in res:
+            g = token.copy()
+            g['surf'] = r[0]
+            g['genweight'] = r[1]
+            generations += [g]
+        return generations
 
     def generate(self, omorstring):
-        generated = None
+        '''Generate surface forms corresponding given token description.
+
+        Currently only supports very direct omor style analysis string
+        generation. For round-tripping and API consistency you can also feed a
+        token dict here.
+        '''
+        gentoken = None
+        if isinstance(omorstring, str):
+            gentoken['anal'] = omorstring
+        elif isinstance(omorstring, dict):
+            # for round-tripping
+            gentoken = omorstring
+        else:
+            gentoken = {'error': 'token not dict or string',
+                    'location': 'generate()'}
+        generateds = None
         if self.can_generate:
-            generated = self._generate(omorstring)
+            generated = self._generate(gentoken['anal'])
             if not generated:
-                generated = [(omorstring, float('inf'))]
+                gentoken['surf'] = gentoken['anal']
+                gentoken['genweight'] = float('inf')
+                generated = [gentoken]
         return generated
 
     def _udpipe(self, udinput):
@@ -654,7 +754,9 @@ class Omorfi:
         misc = fields[9]
         analysis = '[WORD_ID=%s][UPOS=%s]%s[GUESS=UDPIPE]' %(wordid, upos,
                 self._ufeats2omor(ufeats))
-        return (analysis, float('inf'), misc)
+        token = {'anal': analysis, 'misc': misc, 'upos': upos, 'surf': surf,
+                 'ufeats': ufeats}
+        return token
 
     def _ufeats2omor(self, ufeats):
         return '[' + ufeats.replace('|', '][') + ']'
@@ -685,9 +787,8 @@ def main():
         surfs = omorfi.tokenise(line)
         for surf in surfs:
             anals = omorfi.analyse(surf)
-            print(surf, end='')
             for anal in anals:
-                print("\t", anal[0], sep='', end='')
+                print(anal)
             print()
     exit(0)
 
