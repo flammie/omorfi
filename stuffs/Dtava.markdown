@@ -9,4 +9,4 @@ Deverbal -tAvA, derivational feature, refer to http://universaldependencies.org/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=TAVA]` | ` +tava%<adj%>` | ` % PrsPrc% Pass` | ` +PrsPrc+Pass`  |
+|  [DRV=TAVA] |  +tava%<adj%> |  % PrsPrc% Pass |  +PrsPrc+Pass  |

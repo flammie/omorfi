@@ -9,4 +9,4 @@ Second person singular actor, inflectional feature, refer to http://universaldep
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=SG2]` | ` %<p2%>%<sg%>` | ` % Sg2` | ` +Sg2`  |
+|  [PERS=SG2] |  %<p2%>%<sg%> |  % Sg2 |  +Sg2  |

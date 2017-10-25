@@ -9,4 +9,4 @@ Superlative comparison, inflectional featurehttp://universaldependencies.org/u/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CMP=SUP]` | ` %<sup%>` | ` % Superl` | ` +Superl`  |
+|  [CMP=SUP] |  %<sup%> |  % Superl |  +Superl  |

@@ -9,4 +9,4 @@ Focus clitic particle -hAn, inflectional feature. refer to http://universaldepen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CLIT=HAN]` | ` +han%<enc%>` | ` % Foc%_hAn` | ` +Foc/han`  |
+|  [CLIT=HAN] |  +han%<enc%> |  % Foc%_hAn |  +Foc/han  |

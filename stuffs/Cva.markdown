@@ -9,4 +9,4 @@ Va participle, inflectional feature, refer to http://universaldependencies.org/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PCP=VA]` | ` %<pprs%>` | ` % PrsPrc` | ` +PrsPrc`  |
+|  [PCP=VA] |  %<pprs%> |  % PrsPrc |  +PrsPrc  |

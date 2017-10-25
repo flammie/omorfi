@@ -9,4 +9,4 @@ First person plural actor, inflectional feature, refer to http://universaldepend
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=PL1]` | ` %<p1%>%<pl%>` | ` % Pl1` | ` +Pl1`  |
+|  [PERS=PL1] |  %<p1%>%<pl%> |  % Pl1 |  +Pl1  |

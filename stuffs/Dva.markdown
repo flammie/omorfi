@@ -9,4 +9,4 @@ Deverbal -vA, derivational feature, refer to http://universaldependencies.org/fi
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=VA]` | ` +va%<adj%>` | ` % PrsPrc% Act` | ` +PrsPrc+Act`  |
+|  [DRV=VA] |  +va%<adj%> |  % PrsPrc% Act |  +PrsPrc+Act  |

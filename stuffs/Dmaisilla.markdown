@@ -9,4 +9,4 @@ Deverbal -mAisillA, derivational feature, refer to http://universaldependencies.
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=MAISILLA]` | ` +maisilla%<adv%>` | ` % Inf5` | ` +Der/maisilla`  |
+|  [DRV=MAISILLA] |  +maisilla%<adv%> |  % Inf5 |  +Der/maisilla  |

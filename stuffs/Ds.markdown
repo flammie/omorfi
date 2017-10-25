@@ -9,4 +9,4 @@ Derivaiton -s, derivational feature, refer to http://universaldependencies.org/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=S]` | ` +s%<n%>` | ` ` | ` +Cmp`  |
+|  [DRV=S] |  +s%<n%> |   |  +Cmp  |

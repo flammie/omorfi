@@ -9,4 +9,4 @@ Verb, lexical feature, based on UPOS, refer to http://universaldependencies.org/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=VERB]` | ` %<vblex%>` | ` % V` | ` +V`  |
+|  [UPOS=VERB] |  %<vblex%> |  % V |  +V  |

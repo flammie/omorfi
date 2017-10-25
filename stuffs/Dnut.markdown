@@ -9,4 +9,4 @@ Deverbal -nUt, derivational feature, refer to http://universaldependencies.org/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=NUT]` | ` +nut%<adj%>` | ` % PrfPrc% Act` | ` +PrfPrc+Act`  |
+|  [DRV=NUT] |  +nut%<adj%> |  % PrfPrc% Act |  +PrfPrc+Act  |

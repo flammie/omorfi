@@ -9,4 +9,4 @@ Lative, inflectional feature, refer to http://universaldependencies.org/u/feat/C
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=LAT]` | ` %<lat%>` | ` % Lat` | ` +Lat`  |
+|  [CASE=LAT] |  %<lat%> |  % Lat |  +Lat  |

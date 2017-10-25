@@ -9,4 +9,4 @@ Conneg verb form (in negative constructions), inflectional feature, refer to htt
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [NEG=CON]` | ` %<conneg%>` | ` % ConNeg` | ` +ConNeg`  |
+|  [NEG=CON] |  %<conneg%> |  % ConNeg |  +ConNeg  |

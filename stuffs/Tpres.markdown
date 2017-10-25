@@ -9,4 +9,4 @@ Indicative Present, inflectional feature, refer to http://universaldependencies.
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [MOOD=INDV][TENSE=PRESENT]` | ` %<pri%>` | ` % Prs` | ` +Prs`  |
+|  [MOOD=INDV][TENSE=PRESENT] |  %<pri%> |  % Prs |  +Prs  |

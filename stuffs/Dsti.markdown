@@ -9,4 +9,4 @@ Derivation -sti, derivational feature, refer to http://universaldependencies.org
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=STI]` | ` +sti%<adv%>` | ` ` | ` +Der/sti`  |
+|  [DRV=STI] |  +sti%<adv%> |   |  +Der/sti  |

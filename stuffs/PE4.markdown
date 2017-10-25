@@ -9,4 +9,4 @@ Passive / fourth persion, lexicalised version for inflectional feature of verbs,
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=PE4]` | ` ` | ` % Pe4` | ` +Pe4`  |
+|  [PERS=PE4] |   |  % Pe4 |  +Pe4  |

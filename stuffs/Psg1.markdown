@@ -9,4 +9,4 @@ First person singular actor, inflectional feature, refer to http://universaldepe
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=SG1]` | ` %<p1%>%<sg%>` | ` % Sg1` | ` +Sg1`  |
+|  [PERS=SG1] |  %<p1%>%<sg%> |  % Sg1 |  +Sg1  |

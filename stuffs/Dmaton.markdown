@@ -9,4 +9,4 @@ Deverbal mAtOn, derivational feature, refer to http://universaldependencies.org/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=MATON]` | ` +maton%<adj%>` | ` % NegPrc` | ` +NegPrc`  |
+|  [DRV=MATON] |  +maton%<adj%> |  % NegPrc |  +NegPrc  |

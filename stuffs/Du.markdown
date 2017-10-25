@@ -9,4 +9,4 @@ Derivation -u, derivational feature, refer to http://universaldependencies.org/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=U]` | ` +u%<n%>` | ` ` | ` +Der/u`  |
+|  [DRV=U] |  +u%<n%> |   |  +Der/u  |

@@ -9,4 +9,4 @@ Comitative, inflectional feature, refer to http://universaldependencies.org/u/fe
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=COM]` | ` %<com%>` | ` % Com` | ` +Com`  |
+|  [CASE=COM] |  %<com%> |  % Com |  +Com  |

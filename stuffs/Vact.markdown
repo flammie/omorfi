@@ -9,4 +9,4 @@ Active mood, inflectional feature, refer to http://universaldependencies.org/u/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [VOICE=ACT]` | ` %<actv%>` | ` % Act` | ` +Act`  |
+|  [VOICE=ACT] |  %<actv%> |  % Act |  +Act  |

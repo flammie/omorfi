@@ -9,4 +9,4 @@ Auxiliary verb, lexical feature, based on UPOS, refer to http://universaldepende
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=AUX]` | ` %<vaux%>` | ` ` | ` `  |
+|  [UPOS=AUX] |  %<vaux%> |   |    |

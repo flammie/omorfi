@@ -9,4 +9,4 @@ Third person singular actor, inflectional feature, refer to http://universaldepe
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=SG3]` | ` %<p3%>%<sg%>` | ` % Sg3` | ` +Sg3`  |
+|  [PERS=SG3] |  %<p3%>%<sg%> |  % Sg3 |  +Sg3  |

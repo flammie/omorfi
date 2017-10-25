@@ -9,4 +9,4 @@ Nominative, inflectional feature, refer to http://universaldependencies.org/u/fe
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=NOM]` | ` %<nom%>` | ` % Nom` | ` +Nom`  |
+|  [CASE=NOM] |  %<nom%> |  % Nom |  +Nom  |

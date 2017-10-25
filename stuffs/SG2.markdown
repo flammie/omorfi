@@ -9,4 +9,4 @@ Second singular, lexicalised version for inflectional feature of verbs, refer to
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=SG2]` | ` %<p2%>` | ` % Sg2` | ` +Sg2`  |
+|  [PERS=SG2] |  %<p2%> |  % Sg2 |  +Sg2  |

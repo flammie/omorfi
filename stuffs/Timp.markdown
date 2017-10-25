@@ -9,4 +9,4 @@ Impertative, inflectional feature, refer to http://universaldependencies.org/u/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [MOOD=IMPV]` | ` %<imp%>` | ` % Impv` | ` +Impv`  |
+|  [MOOD=IMPV] |  %<imp%> |  % Impv |  +Impv  |

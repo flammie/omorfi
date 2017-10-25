@@ -9,4 +9,4 @@ First person singular possessive, inflectional feature, refer to http://universa
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [POSS=SG1]` | ` %<pxsg1%>` | ` % PxSg1` | ` +PxSg1`  |
+|  [POSS=SG1] |  %<pxsg1%> |  % PxSg1 |  +PxSg1  |

@@ -9,4 +9,4 @@ Personal, lexical feature based on UD PronType, refer to http://universaldepende
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PRONTYPE=PRS]` | ` %<pers%>` | ` % Pers` | ` +Pers`  |
+|  [PRONTYPE=PRS] |  %<pers%> |  % Pers |  +Pers  |

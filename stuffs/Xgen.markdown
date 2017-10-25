@@ -9,4 +9,4 @@ Genitive, inflectional feature, refer to http://universaldependencies.org/u/feat
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=GEN]` | ` %<gen%>` | ` % Gen` | ` +Gen`  |
+|  [CASE=GEN] |  %<gen%> |  % Gen |  +Gen  |

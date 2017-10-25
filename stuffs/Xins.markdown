@@ -9,4 +9,4 @@ Instructive, inflectional feature, refer to http://universaldependencies.org/u/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=INS]` | ` %<ins%>` | ` % Ins` | ` +Ins`  |
+|  [CASE=INS] |  %<ins%> |  % Ins |  +Ins  |

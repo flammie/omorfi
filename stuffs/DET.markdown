@@ -9,4 +9,4 @@ Determiner, lexical feature, based on UPOS, refer to http://universaldependencie
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=DET]` | ` %<det%>` | ` ` | ` `  |
+|  [UPOS=DET] |  %<det%> |   |    |

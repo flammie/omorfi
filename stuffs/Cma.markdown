@@ -9,4 +9,4 @@ Agent participle, inflectional feature, refer to http://universaldependencies.or
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PCP=AGENT]` | ` %<agent%>` | ` % AgPrc` | ` +AgPrc`  |
+|  [PCP=AGENT] |  %<agent%> |  % AgPrc |  +AgPrc  |

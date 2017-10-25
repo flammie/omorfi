@@ -9,4 +9,4 @@ Quantifier, lexical feature for non-inflecting adjective types, not used elsewhe
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [SUBCAT=QUANTIFIER]` | ` %<qu%>` | ` % Qnt` | ` +Qnt`  |
+|  [SUBCAT=QUANTIFIER] |  %<qu%> |  % Qnt |  +Qnt  |

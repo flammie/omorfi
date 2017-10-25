@@ -9,4 +9,4 @@ Second person singular possessive, inflectional feature, refer to http://univers
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [POSS=SG2]` | ` %<pxsg2%>` | ` % PxSg2` | ` +PxSg2`  |
+|  [POSS=SG2] |  %<pxsg2%> |  % PxSg2 |  +PxSg2  |

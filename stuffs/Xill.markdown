@@ -9,4 +9,4 @@ Illative, inflectional feature, refer to http://universaldependencies.org/u/feat
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=ILL]` | ` %<ill%>` | ` % Ill` | ` +Ill`  |
+|  [CASE=ILL] |  %<ill%> |  % Ill |  +Ill  |

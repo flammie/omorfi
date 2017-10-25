@@ -9,4 +9,4 @@ Coordinating conjunction, lexical feature, based on UPOS, refer to http://univer
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=CCONJ]` | ` %<cnjcoo%>` | ` ` | ` `  |
+|  [UPOS=CCONJ] |  %<cnjcoo%> |   |    |

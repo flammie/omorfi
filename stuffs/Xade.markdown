@@ -9,4 +9,4 @@ Adessive, inflectional feature, refer to http://universaldependencies.org/u/feat
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=ADE]` | ` %<ade%>` | ` % Ade` | ` +Ade`  |
+|  [CASE=ADE] |  %<ade%> |  % Ade |  +Ade  |

@@ -9,4 +9,4 @@ Nut participle, inflectional feature, refer to http://universaldependencies.org/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PCP=NUT]` | ` %<pp%>` | ` % PrfPrc` | ` +PrfPrc`  |
+|  [PCP=NUT] |  %<pp%> |  % PrfPrc |  +PrfPrc  |

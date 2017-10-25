@@ -9,4 +9,4 @@ Conditional, inflectional feature, refer to http://universaldependencies.org/u/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [MOOD=COND]` | ` %<cond%>` | ` % Cond` | ` +Cond`  |
+|  [MOOD=COND] |  %<cond%> |  % Cond |  +Cond  |

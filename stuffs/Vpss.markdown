@@ -9,4 +9,4 @@ Passive, inflectional feature, refer to http://universaldependencies.org/u/feat/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [VOICE=PSS]` | ` %<pasv%>` | ` % Pass` | ` +Pass`  |
+|  [VOICE=PSS] |  %<pasv%> |  % Pass |  +Pass  |

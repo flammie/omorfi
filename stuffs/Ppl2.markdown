@@ -9,4 +9,4 @@ Second person plural actor, inflectional feature, refer to http://universaldepen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=PL2]` | ` %<p2%>%<pl%>` | ` % Pl2` | ` +Pl2`  |
+|  [PERS=PL2] |  %<p2%>%<pl%> |  % Pl2 |  +Pl2  |

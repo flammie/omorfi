@@ -9,4 +9,4 @@ Fifth infinitive, inflectional feature, refer to http://universaldependencies.or
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` ERRORMACRO` | ` ` | ` % Adv` | ` +Der/maisilla`  |
+|  ERRORMACRO |   |  % Adv |  +Der/maisilla  |

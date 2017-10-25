@@ -9,4 +9,4 @@ Derivation -jA, derivational feature, refer to http://universaldependencies.org/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=JA]` | ` +ja%<n%>` | ` ` | ` +Der/ja`  |
+|  [DRV=JA] |  +ja%<n%> |   |  +Der/ja  |

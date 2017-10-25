@@ -9,4 +9,4 @@ Adverbial conjunction, lexical feature, based on UPOS, refer to http://universal
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=SCONJ]` | ` %<cnjsub%>` | ` % CS` | ` `  |
+|  [UPOS=SCONJ] |  %<cnjsub%> |  % CS |    |

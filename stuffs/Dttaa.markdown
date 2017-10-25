@@ -9,4 +9,4 @@ Derivation -ttAA, derivational feature, refer to http://universaldependencies.or
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=TTAA]` | ` +ttaa%<vblex%>` | ` ` | ` +Der/ttaa`  |
+|  [DRV=TTAA] |  +ttaa%<vblex%> |   |  +Der/ttaa  |

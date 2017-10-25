@@ -9,4 +9,4 @@ Adjective, lexical feature, based on UPOS, refer to http://universaldependencies
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=ADJ]` | ` %<adj%>` | ` % A` | ` `  |
+|  [UPOS=ADJ] |  %<adj%> |  % A |    |

@@ -9,4 +9,4 @@ Third person ambiguous possessive, inflectional feature, refer to http://univers
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [POSS=3]` | ` %<pxsp3%>` | ` % Px3` | ` +Px3`  |
+|  [POSS=3] |  %<pxsp3%> |  % Px3 |  +Px3  |

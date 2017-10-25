@@ -9,4 +9,4 @@ Indicative past, inflectional feature, refer to http://universaldependencies.org
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [MOOD=INDV][TENSE=PAST]` | ` %<past%>` | ` % Pst` | ` +Pst`  |
+|  [MOOD=INDV][TENSE=PAST] |  %<past%> |  % Pst |  +Pst  |

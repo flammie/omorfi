@@ -9,4 +9,4 @@ Transtlative, inflectional feature, refer to http://universaldependencies.org/u/
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=TRA]` | ` %<tra%>` | ` % Tra` | ` +Tra`  |
+|  [CASE=TRA] |  %<tra%> |  % Tra |  +Tra  |

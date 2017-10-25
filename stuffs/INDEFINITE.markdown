@@ -9,4 +9,4 @@ Indefinite (pronoun), lexical feature based on UD PronType, refer to http://univ
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PRONTYPE=IND]` | ` %<ind%>` | ` % Indef` | ` +Indef`  |
+|  [PRONTYPE=IND] |  %<ind%> |  % Indef |  +Indef  |

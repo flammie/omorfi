@@ -9,4 +9,4 @@ E infinitive, inflectional feature, refer to http://universaldependencies.org/fi
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [INF=E]` | ` %<infe%>` | ` % Inf2` | ` +Inf2`  |
+|  [INF=E] |  %<infe%> |  % Inf2 |  +Inf2  |

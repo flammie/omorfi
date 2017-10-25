@@ -9,4 +9,4 @@ Secod plural, lexicalised version for inflectional feature of verbs, refer to ht
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=PL2]` | ` %<p2%>` | ` % Pl2` | ` +Pl2`  |
+|  [PERS=PL2] |  %<p2%> |  % Pl2 |  +Pl2  |

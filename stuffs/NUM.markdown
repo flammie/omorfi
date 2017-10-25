@@ -9,4 +9,4 @@ Numeral, lexical feature, based on UPOS, refer to http://universaldependencies.o
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=NUM]` | ` %<num%>` | ` % Num` | ` +Num`  |
+|  [UPOS=NUM] |  %<num%> |  % Num |  +Num  |

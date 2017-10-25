@@ -9,4 +9,4 @@ Partitive, inflectional feature, refer to http://universaldependencies.org/u/fea
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=PAR]` | ` %<par%>` | ` % Par` | ` +Par`  |
+|  [CASE=PAR] |  %<par%> |  % Par |  +Par  |

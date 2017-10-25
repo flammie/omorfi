@@ -9,4 +9,4 @@ Interrogative, lexical feature based on UD PronType, refer to http://universalde
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PRONTYPE=INT]` | ` %<itg%>` | ` % Interr` | ` +Interr`  |
+|  [PRONTYPE=INT] |  %<itg%> |  % Interr |  +Interr  |

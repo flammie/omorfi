@@ -9,4 +9,4 @@ Derivation -mpi, derivational feature, refer to http://universaldependencies.org
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=MPI]` | ` ` | ` ` | ` +Comp`  |
+|  [DRV=MPI] |   |   |  +Comp  |

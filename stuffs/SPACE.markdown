@@ -9,4 +9,4 @@ Space, lexical feature of SYM, needed for compatibility with many external syste
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [SUBCAT=SPACE]` | ` ` | ` ` | ` `  |
+|  [SUBCAT=SPACE] |   |   |    |

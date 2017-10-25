@@ -9,4 +9,4 @@ Deverbal -tU, derivational feature, refer to http://universaldependencies.org/fi
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=TU]` | ` +tu%<adj%>` | ` % PrfPrc% Pass` | ` +PrfPrc+Pass`  |
+|  [DRV=TU] |  +tu%<adj%> |  % PrfPrc% Pass |  +PrfPrc+Pass  |

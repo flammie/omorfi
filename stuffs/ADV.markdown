@@ -9,4 +9,4 @@ Adverb, lexical feature, based on UPOS, refer to http://universaldependencies.or
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=ADV]` | ` %<adv%>` | ` % Adv` | ` `  |
+|  [UPOS=ADV] |  %<adv%> |  % Adv |    |

@@ -9,4 +9,4 @@ Preposition, lexical feature based on UD-Finnish AdpType, an adposition that is 
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [ADPTYPE=PREP]` | ` ` | ` % Adp% Pr` | ` +Adp+Pr`  |
+|  [ADPTYPE=PREP] |   |  % Adp% Pr |  +Adp+Pr  |

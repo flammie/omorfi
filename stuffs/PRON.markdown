@@ -9,4 +9,4 @@ Pronoun, lexical feature, based on UPOS, refer to http://universaldependencies.o
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=PRON]` | ` %<prn%>` | ` % Pron` | ` `  |
+|  [UPOS=PRON] |  %<prn%> |  % Pron |    |

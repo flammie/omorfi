@@ -9,4 +9,4 @@ Third plural, lexicalised version for inflectional feature of verbs, refer to ht
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=PL3]` | ` %<p3%>` | ` % Pl3` | ` +Pl3`  |
+|  [PERS=PL3] |  %<p3%> |  % Pl3 |  +Pl3  |

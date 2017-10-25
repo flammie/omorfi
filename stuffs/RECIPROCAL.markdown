@@ -9,4 +9,4 @@ Reciprocal, lexical feature based on UD PronType, refer to http://universaldepen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PRONTYPE=REC]` | ` %<rec%>` | ` ` | ` `  |
+|  [PRONTYPE=REC] |  %<rec%> |   |    |

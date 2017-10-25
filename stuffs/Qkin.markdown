@@ -9,4 +9,4 @@ Focus clitic particle -kin, inflectional feature. refer to http://universaldepen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CLIT=KIN]` | ` +kin%<enc%>` | ` % Foc%_kin` | ` +Foc/kin`  |
+|  [CLIT=KIN] |  +kin%<enc%> |  % Foc%_kin |  +Foc/kin  |

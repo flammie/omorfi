@@ -9,4 +9,4 @@ Derivation -UUs, derivational feature, refer to http://universaldependencies.org
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [DRV=UUS]` | ` +uus%<adj%>` | ` ` | ` +Der/uus`  |
+|  [DRV=UUS] |  +uus%<adj%> |   |  +Der/uus  |

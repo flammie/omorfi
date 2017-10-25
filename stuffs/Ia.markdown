@@ -9,4 +9,4 @@ A infinitive, inflectional feature, refer to http://universaldependencies.org/fi
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [INF=A]` | ` %<infa%>` | ` % Inf1` | ` +Inf1`  |
+|  [INF=A] |  %<infa%> |  % Inf1 |  +Inf1  |

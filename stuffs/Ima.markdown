@@ -9,4 +9,4 @@ mA infinitive, inflectional feature, refer to http://universaldependencies.org/f
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [INF=MA]` | ` %<infma%>` | ` % Inf3` | ` +Inf3`  |
+|  [INF=MA] |  %<infma%> |  % Inf3 |  +Inf3  |

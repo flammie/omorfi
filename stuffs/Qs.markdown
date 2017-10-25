@@ -9,4 +9,4 @@ Focus clitic particle -s, inflectional feature. refer to http://universaldepende
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CLIT=S]` | ` +s%<enc%>` | ` % Foc%_s` | ` +Foc/s`  |
+|  [CLIT=S] |  +s%<enc%> |  % Foc%_s |  +Foc/s  |

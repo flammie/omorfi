@@ -9,4 +9,4 @@ Comparative, lexicalised version for inflectional feature of adjectives, refer t
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CMP=CMP]` | ` ` | ` % Comp` | ` +Comp`  |
+|  [CMP=CMP] |   |  % Comp |  +Comp  |

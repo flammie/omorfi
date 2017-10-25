@@ -9,4 +9,4 @@ Marker for left co-ordinated compound hyphen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [POSITION=SUFFIX]` | ` %<compound-R%>` | ` TrunCo% ` | ` TruncSuffix+`  |
+|  [POSITION=SUFFIX] |  %<compound-R%> |  TrunCo%  |  TruncSuffix+  |

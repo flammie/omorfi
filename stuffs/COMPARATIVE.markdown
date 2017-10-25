@@ -9,4 +9,4 @@ Comparative conjunction, lexical feature based on the Finnish grammar, mainly fo
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=SCONJ][CONJ=COMPARATIVE]` | ` %<cnjsub%>` | ` ` | ` +CS`  |
+|  [UPOS=SCONJ][CONJ=COMPARATIVE] |  %<cnjsub%> |   |  +CS  |

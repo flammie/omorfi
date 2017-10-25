@@ -9,4 +9,4 @@ Reflexive (pronoun), lexical feature based on UD PronType, refer to http://unive
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [SUBCAT=REFLEXIVE]` | ` %<reflex%>` | ` % Refl` | ` +Refl`  |
+|  [SUBCAT=REFLEXIVE] |  %<reflex%> |  % Refl |  +Refl  |

@@ -9,4 +9,4 @@ First person plural possessive, inflectional feature, refer to http://universald
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [POSS=PL1]` | ` %<pxpl1%>` | ` % PxPl1` | ` +PxPl1`  |
+|  [POSS=PL1] |  %<pxpl1%> |  % PxPl1 |  +PxPl1  |

@@ -9,4 +9,4 @@ Superlative, lexicalised version for inflectional feature of adjectives, refer t
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CMP=SUP]` | ` %<sup%>` | ` % Superl` | ` +Superl`  |
+|  [CMP=SUP] |  %<sup%> |  % Superl |  +Superl  |

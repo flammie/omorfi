@@ -9,4 +9,4 @@ Ablative, inflectional feature, refer to http://universaldependencies.org/u/feat
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CASE=ABL]` | ` %<abl%>` | ` % Abl` | ` +Abl`  |
+|  [CASE=ABL] |  %<abl%> |  % Abl |  +Abl  |

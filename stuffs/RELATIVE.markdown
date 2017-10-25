@@ -9,4 +9,4 @@ Relative, lexical feature based on UD PronType, refer to http://universaldepende
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PRONTYPE=REL]` | ` %<rel%>` | ` % Rel` | ` +Rel`  |
+|  [PRONTYPE=REL] |  %<rel%> |  % Rel |  +Rel  |

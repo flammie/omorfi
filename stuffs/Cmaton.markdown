@@ -9,4 +9,4 @@ Negation participle, inflectional feature, refer to http://universaldependencies
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PCP=NEG]` | ` %<pneg%>` | ` % NegPrc` | ` +NegPrc`  |
+|  [PCP=NEG] |  %<pneg%> |  % NegPrc |  +NegPrc  |

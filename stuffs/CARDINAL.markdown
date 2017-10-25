@@ -9,4 +9,4 @@ Cardinal, lexical feature based on UD NumType, refer to http://universaldependen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [NUMTYPE=CARD]` | ` %<card%>` | ` ` | ` `  |
+|  [NUMTYPE=CARD] |  %<card%> |   |    |

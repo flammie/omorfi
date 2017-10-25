@@ -9,4 +9,4 @@ First plural, lexicalised version for inflectional feature of verbs, refer to ht
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [PERS=PL1]` | ` %<p1%>` | ` % Pl1` | ` +Pl1`  |
+|  [PERS=PL1] |  %<p1%> |  % Pl1 |  +Pl1  |

@@ -9,4 +9,4 @@ Symbol, lexical feature, based on UPOS, refer to http://universaldependencies.or
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [UPOS=SYM]` | ` %<sym%>` | ` ` | ` `  |
+|  [UPOS=SYM] |  %<sym%> |   |    |

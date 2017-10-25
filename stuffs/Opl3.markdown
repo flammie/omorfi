@@ -9,4 +9,4 @@ Third person plural possessive, inflectional feature, refer to http://universald
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` ERRORMACRO` | ` ` | ` ` | ` `  |
+|  ERRORMACRO |   |   |    |

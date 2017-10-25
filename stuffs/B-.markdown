@@ -9,4 +9,4 @@ Marker for co-ordinated compound hyphen
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [COMPOUND_FORM=OMIT]` | ` %<cmp-split%>` | ` % TrunCo` | ` +Trunc`  |
+|  [COMPOUND_FORM=OMIT] |  %<cmp-split%> |  % TrunCo |  +Trunc  |

@@ -9,4 +9,4 @@ Potential, inflectional feature, refer to http://universaldependencies.org/u/fea
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [MOOD=POTN]` | ` %<pot%>` | ` % Pot` | ` +Pot`  |
+|  [MOOD=POTN] |  %<pot%> |  % Pot |  +Pot  |

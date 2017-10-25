@@ -9,4 +9,4 @@ Singular, inflectional feature, refer to http://universaldependencies.org/u/feat
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [NUM=SG]` | ` %<sg%>` | ` % Sg` | ` +Sg`  |
+|  [NUM=SG] |  %<sg%> |  % Sg |  +Sg  |

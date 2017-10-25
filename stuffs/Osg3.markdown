@@ -9,4 +9,4 @@ Third person singular possessive, inflectional feature, refer to http://universa
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` ERRORMACRO` | ` ` | ` ` | ` `  |
+|  ERRORMACRO |   |   |    |

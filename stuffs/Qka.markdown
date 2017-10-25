@@ -9,4 +9,4 @@ Focus clitic particle -kA, inflectional feature. refer to http://universaldepend
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-| ` [CLIT=KA]` | ` +ka%<enc%>` | ` % Foc%_kA` | ` +Foc/ka`  |
+|  [CLIT=KA] |  +ka%<enc%> |  % Foc%_kA |  +Foc/ka  |
