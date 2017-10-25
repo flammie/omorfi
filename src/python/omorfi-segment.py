@@ -9,8 +9,8 @@ from omorfi.omorfi import Omorfi
 
 def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                                 options):
-    if float(labelsegments[0][1]) != float('inf'):
-        analysis = labelsegments[0][0]
+    if float(labelsegments[0]['lsweights') != float('inf'):
+        analysis = labelsegments[0]['labelsegments']
         splat = re.split("[]{}[]", analysis)
         skiptag = None
         nextsep = '|'
@@ -266,11 +266,11 @@ def print_segments(segments, labelsegments, surf, outfile, options):
             sep = ''
             for segmenteds in segments:
                 print(sep, end='', file=outfile)
-                print(segment_splits(segmenteds[0], options), end='',
+                print(segment_splits(segmenteds['segments'], options), end='',
                       file=outfile)
                 sep = options.show_ambiguous
         else:
-            print(segment_splits(segments[0][0], options), end='',
+            print(segment_splits(segments[0]['segments'], options), end='',
                   file=outfile)
         print(' ', end='', file=outfile)
     else:
@@ -357,13 +357,13 @@ def main():
             continue
         tokens = omorfi.tokenise(line)
         for token in tokens:
-            segments = omorfi.segment(token[0])
-            labelsegments = omorfi.labelsegment(token[0])
+            segments = omorfi.segment(token)
+            labelsegments = omorfi.labelsegment(token)
             if options.output_format == 'moses-factors':
                 print_moses_factor_segments(
-                    segments, labelsegments, token[0], outfile, options)
+                    segments, labelsegments, token, outfile, options)
             elif options.output_format == 'segments':
-                print_segments(segments, labelsegments, token[0], outfile,
+                print_segments(segments, labelsegments, token, outfile,
                                options)
         print(file=outfile)
     exit(0)
