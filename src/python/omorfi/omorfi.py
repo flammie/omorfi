@@ -673,7 +673,7 @@ class Omorfi:
             lstoken = realtoken.copy()
             lstoken['labelsegments'] = lstoken['surf']
             lstoken['lsweight'] = float('inf')
-            labelsegments = [labelsegment]
+            labelsegments = [lstoken]
         return labelsegments
 
     def _accept(self, token):

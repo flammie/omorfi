@@ -9,7 +9,7 @@ from omorfi.omorfi import Omorfi
 
 def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                                 options):
-    if float(labelsegments[0]['lsweights') != float('inf'):
+    if float(labelsegments[0]['lsweight']) != float('inf'):
         analysis = labelsegments[0]['labelsegments']
         splat = re.split("[]{}[]", analysis)
         skiptag = None
