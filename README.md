@@ -695,6 +695,15 @@ high-quality dictionaries only, using `./configure --enable-small-lexicons` opti
 If this works but normal compilation doesn't, you may need to acquire more RAM or
 tweak some memory-related settings.
 
+### Configure hangs infinitely when testing for java on Mac OS X
+
+I hear that the java test hangs on some Mac OS X versions of some java
+implementations. It may be fixable by some interrupt, but you can also
+work around by commenting the lines `AX_PROG_JAVA` and `AX_CHECK_CLASS` out in
+the `configure.ac` and running `autogen.sh`. You may also want to change the
+`AM_CONDITIONAL(CAN_JAVA, ...)` into `AM_CONDITIONAL(CAN_JAVA, false)` so the
+java bindings won't be tried.
+
 ## Contributing
 
 Omorfi code and data are free and libre open source, modifiable and
