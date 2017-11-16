@@ -26,7 +26,8 @@ import csv
 import re
 from sys import exit, stderr
 
-
+from omorfi.settings import optional_hyphen, weak_boundary, word_boundary,\
+        morph_boundary, deriv_boundary, stub_boundary
 
 # standard UI stuff
 
@@ -132,17 +133,23 @@ def main():
                 else:
                     deletion = "0"
                     suffix_match = "."
+                if deletion == None:
+                    deletion = "0"
                 contlist = list()
                 for cont in tsv_parts[3:]:
                     if cont == '#':
                         continue
                     contlist += [str(affixmap[cont])]
                 conts = ','.join(contlist)
-                affix = tsv_parts[2].replace(
+                affix = tsv_parts[2].replace(weak_boundary,
+                        "").replace(word_boundary, "").replace(morph_boundary,
+                        "").replace(deriv_boundary, "").replace(stub_boundary,
+                                "").replace(optional_hyphen, "")
                 pardef_data += '\nSFX %d\t%s\t%s/%s\t%s' % (affixmap[tsv_parts[0]],
-                        deletion, tsv_parts[2], conts, suffix_match)
+                        deletion, affix, conts, suffix_match)
                 prev_pardef = tsv_parts[0]
-
+    # XXX: count lexemes and print
+    print("%d" %(400000), file=args.dic)
     for tsv_filename in args.master:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -162,6 +169,10 @@ def main():
                     tsv_line = tsv_file.readline()
                     continue
                 wordmap = tsv_parts
+                if wordmap['new_para'] == 'X_IGNORE':
+                    continue
+                print("%s/%d" %(wordmap['lemma'],
+                    affixmap[wordmap['new_para']]), file=args.dic)
                 # XXX: format output
     exit()
 
