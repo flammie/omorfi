@@ -21,7 +21,7 @@ echo >> $INDEX
 echo "The numbers are counted from the database, unique lexical items.
 Depending on your definitions there may be ±1 % difference, e.g. with homonyms,
 defective and doubled paradigms, etc." >> $INDEX
-echo >> "There are total of \*$(wc -l < src/lexemes.tsv)\* in the database" \
+echo "There are total of \*$(wc -l < src/lexemes.tsv)\* in the database" \
     >> $INDEX
 echo "### Per universal POS" >> $INDEX
 echo >> $INDEX
