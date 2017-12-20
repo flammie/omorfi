@@ -15,7 +15,6 @@ Aake	1	male
 Aamu	1	female
 Aamulehti	1	media
 Aamuposti	1	media
-Jacob	1	male
 Aapeli	1	male
 Aapo	1	male
 Aappo	1	male
@@ -1138,6 +1137,7 @@ ECV	1	currency
 Ed	1	male
 Edgar	1	male
 Edit	1	female
+Edouard	1	male
 edustaja	1	title
 Edvard	1	male
 Edvin	1	male
@@ -2281,6 +2281,7 @@ jaalalainen	2	inhabitant
 Jaana	1	female
 jaava	1	language
 Jack	1	male
+Jacob	1	male
 Jade	1	female
 Jade-Maria	1	female
 Jadessa	1	female
@@ -2445,6 +2446,7 @@ Joonatan	1	male
 Joosef	1	male
 Jooseppi	1	male
 Joosu	1	male
+Jordan	3	male
 Jordania	1	country
 jordanialainen	1	country
 jordanialainen	2	inhabitant
@@ -4695,6 +4697,7 @@ oripääläinen	1	inhabitant
 oripääläinen	2	inhabitant
 oriveteläinen	1	inhabitant
 oriveteläinen	2	inhabitant
+Orlando	1	male
 oromo	1	language
 Orvar	1	male
 Orvo	1	male
@@ -4955,6 +4958,7 @@ Pierre	1	male
 Pietari	1	male
 pietarsaarelainen	1	inhabitant
 pietarsaarelainen	2	inhabitant
+Pieter	1	male
 Pihla	1	female
 pihlajaveteläinen	1	inhabitant
 pihlajaveteläinen	2	inhabitant
@@ -5467,6 +5471,7 @@ ruandalainen	3	country
 ruandalainen	4	inhabitant
 RUB	1	currency
 Ruben	1	male
+Ruby	1	female
 Rudolf	1	male
 Rufus	1	male
 Runa	1	female
@@ -5772,6 +5777,7 @@ SGD	1	currency
 shambala	1	language
 shan	1	language
 Shannon	1	male
+Sharon	1	female
 shekeli	1	currency
 shillinki	1	currency
 SHO	1	title
@@ -6876,6 +6882,7 @@ venezuelalainen	2	inhabitant
 venezuelalainen	3	country
 venezuelalainen	4	inhabitant
 Venla	1	female
+Ventura	3	male
 venäjä	1	language
 Venäjä	1	country
 venäläinen	1	country
@@ -7073,6 +7080,7 @@ Wilhelmina	1	female
 Wiljam	1	male
 Wiljami	1	male
 William	1	male
+Willy	1	male
 Wilma	1	female
 Wilmer	1	male
 wolaitta	1	language
