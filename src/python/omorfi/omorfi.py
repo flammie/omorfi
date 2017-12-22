@@ -677,7 +677,7 @@ class Omorfi:
         return labelsegments
 
     def _accept(self, token):
-        res = self.acceptor.lookup(token)
+        res = self.acceptor.lookup(token['surf'])
         return res
 
     def accept(self, token):
