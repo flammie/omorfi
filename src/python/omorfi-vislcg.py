@@ -15,7 +15,7 @@ from omorfi.omorfi import Omorfi
 
 def get_lemmas(anal):
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    lemmas = re_lemma.finditer(anal[0])
+    lemmas = re_lemma.finditer(anal['anal'])
     rv = []
     for lemma in lemmas:
         rv += [lemma.group(1)]
@@ -44,12 +44,12 @@ def get_last_feats(anal):
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print('"<', surf[0], '>"', sep='', file=outfile)
+    print('"<', surf['surf'], '>"', sep='', file=outfile)
     re_mrd = re.compile("\[([^=]*)=([^]]*)]")
     for anal in anals:
         mrds = []
         lemmas = get_lemmas(anal)
-        mrd_matches = re_mrd.finditer(anal[0])
+        mrd_matches = re_mrd.finditer(anal['anal'])
         for mm in mrd_matches:
             if mm.group(1) == 'WORD_ID':
                 mrds = []
@@ -118,7 +118,7 @@ def main():
             anals = omorfi.analyse(surf)
             print_analyses_vislcg3(surf, anals, options.outfile)
             if len(anals) == 0 or (len(anals) == 1 and
-                                   'UNKNOWN' in anals[0][0]):
+                                   'UNKNOWN' in anals[0]['anal']):
                 unknowns += 1
     cpuend = process_time()
     realend = perf_counter()
