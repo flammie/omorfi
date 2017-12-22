@@ -116,10 +116,11 @@ def main():
         for surf in surfs:
             tokens += 1
             anals = omorfi.analyse(surf)
-            print_analyses_vislcg3(surf, anals, options.outfile)
             if len(anals) == 0 or (len(anals) == 1 and
                                    'UNKNOWN' in anals[0]['anal']):
                 unknowns += 1
+                anals = omorfi.guess(surf)
+            print_analyses_vislcg3(surf, anals, options.outfile)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Unknown:", unknowns, unknowns / tokens * 100,

@@ -574,7 +574,7 @@ class Omorfi:
             guesstoken['weight'] = 28021984
         else:
             guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
-                    "[UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                    "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                      "[WEIGHT=28021984]"
             guesstoken['weight'] = 28021984
         return [guesstoken]
