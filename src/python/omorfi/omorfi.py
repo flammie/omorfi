@@ -624,7 +624,7 @@ class Omorfi:
         return lemmas
 
     def _segment(self, token):
-        res = self.segmenter.lookup(token)
+        res = self.segmenter.lookup(token['surf'])
         segmenteds = []
         for r in res:
             segmenttoken = token.copy()
@@ -649,7 +649,7 @@ class Omorfi:
         return segments
 
     def _labelsegment(self, token):
-        res = self.labelsegmenter.lookup(token)
+        res = self.labelsegmenter.lookup(token['surf'])
         lss = []
         for r in res:
             lstoken = token.copy()
