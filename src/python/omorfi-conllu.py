@@ -314,6 +314,14 @@ def format_misc(analtoken):
     miscs = []
     if guess and not guess == "":
         miscs += ["GUESS=" + guess]
+    if 'analsurf' in analtoken:
+        miscs += ['AnalysisForm=' + analtoken['analsurf']]
+    if 'recase' in analtoken:
+        miscs += ['CaseChanged=' + analtoken['recase']]
+    if 'SpaceAfter' in analtoken:
+        miscs += ['SpaceAfter=' + analtoken['SpaceAfter']]
+    if 'SpaceBefore' in analtoken:
+        miscs += ['SpaceBefore=' + analtoken['SpaceBefore']]
     if len(miscs) > 0:
         return '|'.join(miscs)
     else:
