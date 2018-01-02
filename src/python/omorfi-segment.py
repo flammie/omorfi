@@ -228,7 +228,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
         moses = moses[:last + len(segleft) - 1] + moses[last + len(segleft):]
         print(moses, end=' ', file=outfile)
     else:
-        print(surf, end='|UNK ', file=outfile)
+        print(surf['surf'], end='|UNK ', file=outfile)
 
 
 def segment_splits(segments, options):

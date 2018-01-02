@@ -656,7 +656,7 @@ class Omorfi:
             lstoken['labelsegments'] = r[0]
             lstoken['lsweight'] = float(r[1])
             lss += [lstoken]
-        return res
+        return lss
 
     def labelsegment(self, token):
         '''Segment token into labelled morphs, words and other string pieces.
