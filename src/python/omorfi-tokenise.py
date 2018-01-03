@@ -7,8 +7,25 @@ from sys import stdin, stdout
 # statistics
 from time import perf_counter, process_time
 
+import json
+
 # omorfi
 from omorfi.omorfi import Omorfi
+
+def format_omorfi_miscs(surftoken):
+    miscs = []
+    if 'analsurf' in surftoken:
+        miscs += ['AnalysisForm=' + surftoken['analsurf']]
+    if 'recase' in surftoken:
+        miscs += ['CaseChanged=' + surftoken['recase']]
+    if 'SpaceAfter' in surftoken:
+        miscs += ['SpaceAfter=' + surftoken['SpaceAfter']]
+    if 'SpaceBefore' in surftoken:
+        miscs += ['SpaceBefore=' + surftoken['SpaceBefore']]
+    if len(miscs) > 0:
+        return '|'.join(miscs)
+    else:
+        return '_'
 
 
 def main():
@@ -26,7 +43,8 @@ def main():
                    help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-O', '--output-format', metavar="OUTFORMAT",
                    default="moses",
-                   help="format output for OUTFORMAT", choices=['moses', 'conllu'])
+                   help="format output for OUTFORMAT", choices=['moses',
+                       'conllu', 'json'])
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.fsa:
@@ -53,7 +71,7 @@ def main():
     tokens = 0
     lines = 0
     if options.output_format == 'conllu':
-        print("# doc-name:", options.infile.name, file=options.outfile)
+        print("# new doc id=", options.infile.name, file=options.outfile)
     for line in options.infile:
         line = line
         lines += 1
@@ -64,13 +82,16 @@ def main():
         surfs = omorfi.tokenise(line)
         tokens += len(surfs)
         if options.output_format == 'moses':
-            print(' '.join([surf[0] for surf in surfs]), file=options.outfile)
+            print(' '.join([surf['surf'] for surf in surfs]), file=options.outfile)
+        elif options.output_format == 'json':
+            print(json.encode(surfs))
         else:
-            print("# sentence-text:", line.rstrip("\n"), file=options.outfile)
+            print("# sent_id =", lines, file=options.outfile)
+            print("# text =", line.rstrip("\n"), file=options.outfile)
             i = 1
             for surf in surfs:
-                print(i, surf[0], "_", "_", "_", "_", "_", "_", "_",
-                      surf[1],
+                print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_",
+                      format_omorfi_miscs(surf),
                       sep="\t", file=options.outfile)
                 i += 1
         if options.output_format == 'conllu':

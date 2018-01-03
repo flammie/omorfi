@@ -13,9 +13,9 @@ from time import perf_counter, process_time
 from omorfi.omorfi import Omorfi
 
 
-def get_lemmas(anal):
+def get_lemmas(analtoken):
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    lemmas = re_lemma.finditer(anal[0])
+    lemmas = re_lemma.finditer(analtoken['anal'])
     rv = []
     for lemma in lemmas:
         s = lemma.group(1)
@@ -28,19 +28,19 @@ def get_lemmas(anal):
     return rv
 
 
-def get_last_feat(feat, anal):
+def get_last_feat(feat, analtoken):
     re_feat = re.compile("\[" + feat + "=([^]]*)\]")
-    feats = re_feat.finditer(anal[0])
+    feats = re_feat.finditer(analtoken['anal'])
     rv = ""
     for feat in feats:
         rv = feat.group(1)
     return rv
 
 
-def get_last_feats(anal):
+def get_last_feats(analtoken):
     re_feats = re.compile("\[[A-Z_]*=[^]]*\]")
     rvs = list()
-    feats = re_feats.finditer(anal[0])
+    feats = re_feats.finditer(analtoken['anal'])
     for feat in feats:
         if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
             rvs = list()
@@ -49,8 +49,8 @@ def get_last_feats(anal):
     return rvs
 
 
-def format_feats_ud(anal, hacks=None):
-    feats = get_last_feats(anal)
+def format_feats_ud(analtoken, hacks=None):
+    feats = get_last_feats(analtoken)
     rvs = dict()
     for f in feats:
         key = f.split("=")[0].lstrip("[")
@@ -167,7 +167,7 @@ def format_feats_ud(anal, hacks=None):
                 continue
             else:
                 print("Unhandled subcat: ", value)
-                print("in", anal[0][0])
+                print("in", analtoken)
                 exit(1)
         elif key == 'ABBR':
             # XXX?
@@ -195,7 +195,7 @@ def format_feats_ud(anal, hacks=None):
                 continue
             else:
                 print("Unknown style", value)
-                print("in", anal[0])
+                print("in", analtoken)
                 exit(1)
         elif key in ['DRV', 'LEX']:
             if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
@@ -210,7 +210,7 @@ def format_feats_ud(anal, hacks=None):
                 continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
-                print("in", anal[0])
+                print("in", analtoken)
                 exit(1)
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                      'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
@@ -228,7 +228,7 @@ def format_feats_ud(anal, hacks=None):
             continue
         else:
             print("Unhandled", key, '=', value)
-            print("in", anal[0])
+            print("in", analtoken)
             exit(1)
     rv = ''
     for k in sorted(rvs, key=str.lower):
@@ -239,8 +239,8 @@ def format_feats_ud(anal, hacks=None):
         return '_'
 
 
-def format_third_ftb(anal):
-    upos = get_last_feat("UPOS", anal)
+def format_third_ftb(analtoken):
+    upos = get_last_feat("UPOS", analtoken)
     return upos
 
 
@@ -271,9 +271,9 @@ def format_third_tdt(upos):
         return 'X'
 
 
-def get_upos(anal):
-    upos = get_last_feat("UPOS", anal)
-    drv = get_last_feat("DRV", anal)
+def get_upos(analtoken):
+    upos = get_last_feat("UPOS", analtoken)
+    drv = get_last_feat("DRV", analtoken)
     if upos == 'VERB' and drv == 'MINEN':
         upos = 'NOUN'
     return upos
@@ -309,11 +309,19 @@ def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
         print_analyses_conllu(wordn, surf, anal, outfile, hacks)
 
 
-def format_misc(anal):
-    guess = get_last_feat("GUESS", anal)
+def format_misc(analtoken):
+    guess = get_last_feat("GUESS", analtoken)
     miscs = []
     if guess and not guess == "":
         miscs += ["GUESS=" + guess]
+    if 'analsurf' in analtoken:
+        miscs += ['AnalysisForm=' + analtoken['analsurf']]
+    if 'recase' in analtoken:
+        miscs += ['CaseChanged=' + analtoken['recase']]
+    if 'SpaceAfter' in analtoken:
+        miscs += ['SpaceAfter=' + analtoken['SpaceAfter']]
+    if 'SpaceBefore' in analtoken:
+        miscs += ['SpaceBefore=' + analtoken['SpaceBefore']]
     if len(miscs) > 0:
         return '|'.join(miscs)
     else:
@@ -354,6 +362,8 @@ def main():
     a.add_argument('--hacks', metavar='HACKS',
                    help="mangle anaelyses to match HACKS version of UD",
                    choices=['ftb'])
+    a.add_argument('-X', '--frequencies', metavar="FREQDIR",
+                   help="read frequencies from FREQDIR/*.freqs")
     a.add_argument('--debug', action='store_true',
                    help="print lots of debug info while processing")
     options = a.parse_args()
@@ -383,6 +393,15 @@ def main():
         print("writing to", options.outfile.name)
     if not options.statfile:
         options.statfile = stdout
+    lexprobs = None
+    tagprobs = None
+
+    if options.frequencies:
+        with open(options.frequencies + '/lexemes.freqs') as lexfile:
+            omorfi.load_lexical_frequencies(lexfile)
+        with open(options.frequencies + '/omors.freqs') as omorfile:
+            omorfi.load_omortag_frequencies(omorfile)
+
     # statistics
     realstart = perf_counter()
     cpustart = process_time()
@@ -411,7 +430,7 @@ def main():
             surf = fields[1]
             anals = omorfi.analyse(surf)
             if not anals or len(anals) == 0 or (len(anals) == 1 and
-                                                'UNKNOWN' in anals[0][0]):
+                                                'OOV' in anals[0]):
                 unknowns += 1
                 anals = omorfi.guess(surf)
             if anals and len(anals) > 0:
@@ -424,6 +443,9 @@ def main():
                 else:
                     print_analyses_conllu(index, surf, anals[0],
                                           options.outfile, options.hacks)
+            else:
+                print("Failed:", fields)
+                exit(1)
         elif line.startswith('#'):
             print(line.strip(), file=options.outfile)
             recognised = False
