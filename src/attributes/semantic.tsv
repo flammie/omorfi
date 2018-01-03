@@ -155,6 +155,7 @@ albanialainen	3	country
 albanialainen	4	inhabitant
 Albert	1	male
 Albertina	1	female
+Alberto	1	male
 Albin	1	male
 Ale	1	male
 Alec	1	male
@@ -585,6 +586,7 @@ barbadoslainen	4	inhabitant
 Barbara	1	female
 Barbro	1	female
 Barbuda	1	country
+Barnaby	1	male
 basaa	1	language
 baski	1	language
 baškiiri	1	language
@@ -596,6 +598,7 @@ BDT	1	currency
 Be	1	currency
 Beata	1	female
 Beatrice	1	female
+Beatrix	1	female
 BEC	1	currency
 bedža	1	language
 Beeda	1	female
@@ -678,6 +681,7 @@ BMD	1	currency
 BND	1	currency
 Bo	1	male
 Bo	2	male
+Bob	1	male
 BOB	1	currency
 Bodil	1	female
 bodo	1	language
@@ -853,6 +857,7 @@ Ch$	1	currency
 Charles	1	male
 Charlotta	1	female
 CHE	1	currency
+Chelsea	4	female
 cherokee	1	language
 cheyenne	1	language
 CHF	1	currency
@@ -864,6 +869,7 @@ chileläinen	4	inhabitant
 chinook-jargon	1	language
 chipewyan	1	language
 choctaw	1	language
+Chris	1	male
 Christa	1	female
 Christel	1	female
 Christer	1	male
@@ -921,6 +927,7 @@ CRC	1	currency
 cree	2	language
 creek	1	language
 Crista	1	female
+Cristina	2	female
 cs	2	measure
 cS	2	measure
 CSD	1	currency
@@ -1130,8 +1137,10 @@ ecuadorilainen	2	inhabitant
 ecuadorilainen	3	country
 ecuadorilainen	4	inhabitant
 ECV	1	currency
+Ed	1	male
 Edgar	1	male
 Edit	1	female
+Edouard	1	male
 edustaja	1	title
 Edvard	1	male
 Edvin	1	male
@@ -1624,6 +1633,7 @@ GHC	1	currency
 ghomala	1	language
 GHS	1	currency
 GHz	2	measure
+Gianluigi	1	male
 Gibraltar	1	country
 gibraltarilainen	1	country
 gibraltarilainen	2	inhabitant
@@ -1651,6 +1661,7 @@ gorontalo	1	language
 Gottfrid	1	male
 GPa	1	measure
 GQE	1	currency
+Grace	1	female
 Grad	2	measure
 GRD	1	currency
 grebo	1	language
@@ -2273,6 +2284,7 @@ jaalalainen	2	inhabitant
 Jaana	1	female
 jaava	1	language
 Jack	1	male
+Jacob	1	male
 Jade	1	female
 Jade-Maria	1	female
 Jadessa	1	female
@@ -2300,6 +2312,7 @@ janakkalainen	2	inhabitant
 janakkalalainen	1	inhabitant
 janakkalalainen	2	inhabitant
 Jane	1	female
+Janet	1	female
 Janetta	1	female
 Janette	1	female
 Jani	1	male
@@ -2436,6 +2449,7 @@ Joonatan	1	male
 Joosef	1	male
 Jooseppi	1	male
 Joosu	1	male
+Jordan	3	male
 Jordania	1	country
 jordanialainen	1	country
 jordanialainen	2	inhabitant
@@ -2453,6 +2467,7 @@ Josefiina	1	female
 Josefin	1	female
 Josefina	1	female
 Josefine	1	female
+Josep	1	male
 Joseph	1	male
 Joshua	1	male
 Jouko	1	male
@@ -2468,6 +2483,7 @@ joutsalainen	2	inhabitant
 Joutseno	1	media
 joutsenolainen	1	inhabitant
 joutsenolainen	2	inhabitant
+Joyce	2	female
 JP-Kunnallissanomat	1	media
 JPY	1	currency
 jr.	1	title
@@ -3622,6 +3638,7 @@ LUF	2	currency
 luhankalainen	1	inhabitant
 luhankalainen	2	inhabitant
 luhya	1	language
+Luigi	1	male
 Luis	1	male
 luiseño	1	language
 LuK	2	title
@@ -3804,6 +3821,7 @@ malawilainen	2	inhabitant
 malawilainen	3	country
 malawilainen	4	inhabitant
 malawintonga	1	language
+Malcolm	1	male
 malediivilainen	1	country
 malediivilainen	2	inhabitant
 malediivilainen	3	country
@@ -3928,6 +3946,7 @@ Martta	1	female
 Martti	1	male
 marttilalainen	1	inhabitant
 marttilalainen	2	inhabitant
+Marvin	1	male
 marwari	1	language
 Mary	1	female
 maskulainen	1	inhabitant
@@ -4405,6 +4424,7 @@ Natalia	1	female
 Natalie	1	female
 Natalie	2	female
 Natanael	1	male
+Nathan	1	male
 nauru	1	language
 Nauru	1	country
 naurulainen	1	country
@@ -4414,6 +4434,7 @@ naurulainen	4	inhabitant
 nauvolainen	1	inhabitant
 nauvolainen	2	inhabitant
 navajo	1	language
+Navidad	1	female
 nBq	2	measure
 nC	1	measure
 n°C	2	measure
@@ -4490,6 +4511,7 @@ Nikola	4	female
 Nikolai	1	male
 Nikolas	1	male
 Nikolas	2	male
+Nikolaus	1	male
 Niko-Petteri	1	male
 Nils	1	male
 nilsiäläinen	1	inhabitant
@@ -4679,11 +4701,13 @@ oripääläinen	1	inhabitant
 oripääläinen	2	inhabitant
 oriveteläinen	1	inhabitant
 oriveteläinen	2	inhabitant
+Orlando	1	male
 oromo	1	language
 Orvar	1	male
 Orvo	1	male
 Orvokki	1	female
 osage	1	language
+Oscar	1	male
 osk	1	org
 osk.	1	org
 Oskar	1	male
@@ -4913,6 +4937,7 @@ PGK	1	currency
 pH	1	measure
 PH	1	measure
 Ph.D.	1	title
+Phil	1	male
 Philip	1	male
 Phoenix	2	male
 PHP	1	currency
@@ -4933,9 +4958,11 @@ Pielisjokiseutu	1	media
 pielisjärveläinen	1	inhabitant
 pielisjärveläinen	2	inhabitant
 pienviljelijä	1	title
+Pierre	1	male
 Pietari	1	male
 pietarsaarelainen	1	inhabitant
 pietarsaarelainen	2	inhabitant
+Pieter	1	male
 Pihla	1	female
 pihlajaveteläinen	1	inhabitant
 pihlajaveteläinen	2	inhabitant
@@ -5253,6 +5280,7 @@ rakennusmies	1	title
 rakennusneuvos	1	title
 rak.mest.	1	title
 Ralf	1	male
+Ralph	1	male
 Rami	1	male
 Ramona	1	female
 randi	1	currency
@@ -5394,6 +5422,7 @@ RO	1	currency
 Robert	1	male
 Roberto	1	male
 Robin	1	male
+Rocky	1	male
 Roger	1	male
 ROL	1	currency
 Roland	1	male
@@ -5447,6 +5476,7 @@ ruandalainen	3	country
 ruandalainen	4	inhabitant
 RUB	1	currency
 Ruben	1	male
+Ruby	1	female
 Rudolf	1	male
 Rufus	1	male
 Runa	1	female
@@ -5752,6 +5782,7 @@ SGD	1	currency
 shambala	1	language
 shan	1	language
 Shannon	1	male
+Sharon	1	female
 shekeli	1	currency
 shillinki	1	currency
 SHO	1	title
@@ -6856,6 +6887,7 @@ venezuelalainen	2	inhabitant
 venezuelalainen	3	country
 venezuelalainen	4	inhabitant
 Venla	1	female
+Ventura	3	male
 venäjä	1	language
 Venäjä	1	country
 venäläinen	1	country
@@ -7053,6 +7085,7 @@ Wilhelmina	1	female
 Wiljam	1	male
 Wiljami	1	male
 William	1	male
+Willy	1	male
 Wilma	1	female
 Wilmer	1	male
 wolaitta	1	language
