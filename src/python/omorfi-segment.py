@@ -232,31 +232,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
 
 
 def segment_splits(segments, options):
-    segmented = ''
-    splat = re.split("[{}]", segments)
-    for split in splat:
-        if split == 'MB':
-            if options.split_morphs:
-                segmented += options.segment_marker
-        elif split == 'WB':
-            if options.split_words:
-                segmented += options.segment_marker
-        elif split == 'wB':
-            if options.split_new_words:
-                segmented += options.segment_marker
-        elif split == 'DB':
-            if options.split_derivs:
-                segmented += options.segment_marker
-        elif split == 'XB':
-            if options.split_nonwords:
-                segmented += options.segment_marker
-        elif split == 'STUB':
-            pass
-        elif split == 'hyph?':
-            if options.split_words:
-                segmented += options.segment_marker
-        else:
-            segmented += split
+    segmented = get_segments(segments, options)
     return segmented
 
 
