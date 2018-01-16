@@ -21,8 +21,9 @@ def print_analyses_vislcg3(surf, anals, outfile):
     for anal in anals:
         lemmas = get_lemmas(anal)
         mrds = get_vislcg_feats(anal)
-        print('\t"', ''.join(lemmas).replace('"', '\\"'), '" ',
-              ' '.join(mrds), sep='', file=outfile)
+        print('\t"', '#'.join(lemmas).replace('"', '\\"'), '" ',
+              ' '.join(mrds), ' <CMP=' + str(len(lemmas)) + '>',
+              sep='', file=outfile)
     print(file=outfile)
 
 
