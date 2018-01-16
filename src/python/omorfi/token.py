@@ -249,22 +249,33 @@ def get_vislcg_feats(token):
     for feat in feats:
         key = feat.split("=")[0].strip("[")
         value = feat.split("=")[1].strip("]")
-        if key in ["ALLO", "SEM", "STYLE"]:
+        if key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
+                "POSITION", "ABBR", "FOREIGN"]:
             # semantics, non-core morph in brackets
             vislcgs += ["<" + key + "_" + value + ">"]
-        elif key in ["CASE", "NUM", "PERSON", "UPOS"]:
+        elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
+                "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
+                "CONJ"]:
             # core morph show only value as is (omor style though)
             vislcgs += [value]
+        elif key in ["CLIT", "INF", "PCP", "POSS"]:
+            # ...except when only value is too short
+            vislcgs += [key + value]
+        elif key == "NEG" and value == "CON":
+            vislcgs += ["CONNEG"]
+        elif key in ["WEIGHT", "GUESS"]:
+            # Weights is handled via token features
+            pass
         else:
             print("Unhandled", key, "=", value, "in", token,
                     "for vislcg")
             exit(1)
-    if "recase" in token and token['recase'] != "ORIGINAL":
+    if "recase" in token and token['recase'] != "ORIGINALCASE":
         vislcgs += ["<*" + token['recase'] + ">"]
     if "weight" in token:
-        vislcgs += ["<W=" + int(token['weight'] * 1000) + ">"]
+        vislcgs += ["<W=" + str(int(float(token['weight']) * 1000)) + ">"]
     if "lemmaweight" in token:
-        vislcgs += ["<L=" + int(token['weight'] * 1000) + ">"]
+        vislcgs += ["<L=" + str(int(float(token['weight']) * 1000)) + ">"]
     if "guess" in token:
         vislcgs += ["<Heur?>", "<Guesser_" + token['guess'] + ">"]
     return vislcgs
