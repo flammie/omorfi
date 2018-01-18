@@ -11,7 +11,7 @@ def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                                 options):
     if float(labelsegments[0]['lsweight']) != float('inf'):
         segs = get_moses_factor_segments(labelsegments[0])
-        print(' '.join(segs), end=' ', file=outfile)
+        print(options.segment_marker.join(segs), end=' ', file=outfile)
     else:
         print(surf['surf'], end='|UNK ', file=outfile)
 
