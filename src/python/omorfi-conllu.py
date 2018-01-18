@@ -11,272 +11,13 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi.omorfi import Omorfi
+from omorfi.token import get_ud_feats, get_upos, get_lemmas, \
+        format_feats_ud, format_xpos_ftb, format_xpos_tdt, format_misc_ud
 
 
-def get_lemmas(analtoken):
-    re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    lemmas = re_lemma.finditer(analtoken['anal'])
-    rv = []
-    for lemma in lemmas:
-        s = lemma.group(1)
-        for i in range(32):
-            hnsuf = '_' + str(i)
-            if s.endswith(hnsuf):
-                s = s[:-len(hnsuf)]
-        rv += [s]
-
-    return rv
 
 
-def get_last_feat(feat, analtoken):
-    re_feat = re.compile("\[" + feat + "=([^]]*)\]")
-    feats = re_feat.finditer(analtoken['anal'])
-    rv = ""
-    for feat in feats:
-        rv = feat.group(1)
-    return rv
 
-
-def get_last_feats(analtoken):
-    re_feats = re.compile("\[[A-Z_]*=[^]]*\]")
-    rvs = list()
-    feats = re_feats.finditer(analtoken['anal'])
-    for feat in feats:
-        if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
-            rvs = list()
-        else:
-            rvs.append(feat.group(0))
-    return rvs
-
-
-def format_feats_ud(analtoken, hacks=None):
-    feats = get_last_feats(analtoken)
-    rvs = dict()
-    for f in feats:
-        key = f.split("=")[0].lstrip("[")
-        value = f.split("=")[1].rstrip("]")
-        if key == 'CASE':
-            if value == 'LAT' and hacks != 'ftb':
-                # XXX: hack to retain compability
-                rvs['Number'] = 'Sing'
-            else:
-                rvs['Case'] = value[0] + value[1:].lower()
-        elif key == 'NUM':
-            if value == 'SG':
-                rvs['Number'] = 'Sing'
-            elif value == 'PL':
-                rvs['Number'] = 'Plur'
-        elif key == 'TENSE':
-            if 'PRESENT' in value:
-                rvs['Tense'] = 'Pres'
-            elif 'PAST' in value:
-                rvs['Tense'] = 'Past'
-        elif key == 'MOOD':
-            rvs['VerbForm'] = 'Fin'
-            if value == 'INDV':
-                rvs['Mood'] = 'Ind'
-            elif value == 'COND':
-                rvs['Mood'] = 'Cnd'
-            elif value == 'IMPV':
-                rvs['Mood'] = 'Imp'
-            else:
-                rvs['Mood'] = value[0] + value[1:].lower()
-        elif key == 'VOICE':
-            if value == 'PSS':
-                rvs['Voice'] = 'Pass'
-            elif value == 'ACT':
-                rvs['Voice'] = 'Act'
-        elif key == 'PERS':
-            if 'SG' in value:
-                rvs['Number'] = 'Sing'
-            elif 'PL' in value:
-                rvs['Number'] = 'Plur'
-            if '1' in value:
-                rvs['Person'] = '1'
-            elif '2' in value:
-                rvs['Person'] = '2'
-            elif '3' in value:
-                rvs['Person'] = '3'
-        elif key == 'POSS':
-            if 'SG' in value:
-                rvs['Number[psor]'] = 'Sing'
-            elif 'PL' in value:
-                rvs['Number[psor]'] = 'Plur'
-            if '1' in value:
-                rvs['Person[psor]'] = '1'
-            elif '2' in value:
-                rvs['Person[psor]'] = '2'
-            elif '3' in value:
-                rvs['Person[psor]'] = '3'
-        elif key == 'NEG':
-            if value == 'CON':
-                rvs['Connegative'] = 'Yes'
-                # XXX
-                rvs.pop('Voice')
-            elif value == 'NEG':
-                rvs['Polarity'] = 'Neg'
-                rvs['VerbForm'] = 'Fin'
-        elif key == 'PCP':
-            rvs['VerbForm'] = 'Part'
-            if value == 'VA':
-                rvs['PartForm'] = 'Pres'
-            elif value == 'NUT':
-                rvs['PartForm'] = 'Past'
-            elif value == 'MA':
-                rvs['PartForm'] = 'Agent'
-            elif value == 'MATON':
-                rvs['PartForm'] = 'Neg'
-        elif key == 'INF':
-            rvs['VerbForm'] = 'Inf'
-            if value == 'A':
-                rvs['InfForm'] = '1'
-            elif value == 'E':
-                rvs['InfForm'] = '2'
-                # XXX
-                rvs['Number'] = 'Sing'
-            elif value == 'MA':
-                rvs['InfForm'] = '3'
-                # XXX
-                rvs['Number'] = 'Sing'
-            elif value == 'MINEN':
-                rvs['InfForm'] = '4'
-            elif value == 'MAISILLA':
-                rvs['InfForm'] = '5'
-        elif key == 'CMP':
-            if value == 'SUP':
-                rvs['Degree'] = 'Sup'
-            elif value == 'CMP':
-                rvs['Degree'] = 'Cmp'
-            elif value == 'POS':
-                rvs['Degree'] = 'Pos'
-        elif key == 'SUBCAT':
-            if value == 'NEG':
-                rvs['Polarity'] = 'Neg'
-                rvs['VerbForm'] = 'Fin'
-            elif value == 'QUANTIFIER':
-                rvs['PronType'] = 'Ind'
-            elif value == 'REFLEXIVE':
-                rvs['Reflexive'] = 'Yes'
-            elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
-                # not annotated in UD feats:
-                # * punctuation classes
-                continue
-            elif value in ['DECIMAL', 'ROMAN']:
-                # not annotated in UD feats:
-                # * decimal, roman NumType
-                continue
-            else:
-                print("Unhandled subcat: ", value)
-                print("in", analtoken)
-                exit(1)
-        elif key == 'ABBR':
-            # XXX?
-            rvs['Abbr'] = 'Yes'
-        elif key == 'NUMTYPE':
-            rvs['NumType'] = value[0] + value[1:].lower()
-        elif key == 'PRONTYPE':
-            rvs['PronType'] = value[0] + value[1:].lower()
-        elif key == 'ADPTYPE':
-            rvs['AdpType'] = value[0] + value[1:].lower()
-        elif key == 'CLIT':
-            rvs['Clitic'] = value[0] + value[1:].lower()
-        elif key == 'FOREIGN':
-            rvs['Foreign'] = value[0] + value[1:].lower()
-        elif key == 'STYLE':
-            if value in ['DIALECTAL', 'COLLOQUIAL']:
-                rvs['Style'] = 'Coll'
-            elif value == 'NONSTANDARD':
-                # XXX: Non-standard spelling is kind of a typo?
-                # e.g. seitsämän -> seitsemän
-                rvs['Typo'] = 'Yes'
-            elif value == 'ARCHAIC':
-                rvs['Style'] = 'Arch'
-            elif value == 'RARE':
-                continue
-            else:
-                print("Unknown style", value)
-                print("in", analtoken)
-                exit(1)
-        elif key in ['DRV', 'LEX']:
-            if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
-                         'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
-                # values found in UD finnish Derivs
-                rvs['Derivation'] = value[0] + value[1:].lower()
-            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
-                           'ADE', 'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN',
-                           'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA',
-                           'MA', 'LOC', 'LA']:
-                # valuse not found in UD finnish Derivs
-                continue
-            else:
-                print("Unknown non-inflectional affix", key, '=', value)
-                print("in", analtoken)
-                exit(1)
-        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
-                     'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
-            # Not feats in UD:
-            # * UPOS is another field
-            # * Allomorphy is ignored
-            # * Weight = no probabilities
-            # * No feats for recasing
-            # * FIXME: lexicalised inflection usually not a feat
-            # * Guessering not a feat
-            # * Proper noun classification not a feat
-            # * punct sidedness is not a feat
-            # * XXX: sem has not been used as a feat?
-            # * special CONJ comparative is not used in UD
-            continue
-        else:
-            print("Unhandled", key, '=', value)
-            print("in", analtoken)
-            exit(1)
-    rv = ''
-    for k in sorted(rvs, key=str.lower):
-        rv += k + '=' + rvs[k] + '|'
-    if len(rvs) != 0:
-        return rv.rstrip('|')
-    else:
-        return '_'
-
-
-def format_third_ftb(analtoken):
-    upos = get_last_feat("UPOS", analtoken)
-    return upos
-
-
-def format_third_tdt(upos):
-    if upos in ['NOUN', 'PROPN']:
-        return 'N'
-    elif upos == 'ADJ':
-        return 'A'
-    elif upos in ['VERB', 'AUX']:
-        return 'V'
-    elif upos in ['CCONJ', 'SCONJ']:
-        return 'C'
-    elif upos == 'ADP':
-        return 'Adp'
-    elif upos == 'ADV':
-        return 'Adv'
-    elif upos == 'PRON':
-        return 'Pron'
-    elif upos == 'PUNCT':
-        return 'Punct'
-    elif upos == 'SYM':
-        return 'Symb'
-    elif upos == 'INTJ':
-        return 'Interj'
-    elif upos == 'NUM':
-        return 'Num'
-    else:
-        return 'X'
-
-
-def get_upos(analtoken):
-    upos = get_last_feat("UPOS", analtoken)
-    drv = get_last_feat("DRV", analtoken)
-    if upos == 'VERB' and drv == 'MINEN':
-        upos = 'NOUN'
-    return upos
 
 
 def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
@@ -309,37 +50,20 @@ def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
         print_analyses_conllu(wordn, surf, anal, outfile, hacks)
 
 
-def format_misc(analtoken):
-    guess = get_last_feat("GUESS", analtoken)
-    miscs = []
-    if guess and not guess == "":
-        miscs += ["GUESS=" + guess]
-    if 'analsurf' in analtoken:
-        miscs += ['AnalysisForm=' + analtoken['analsurf']]
-    if 'recase' in analtoken:
-        miscs += ['CaseChanged=' + analtoken['recase']]
-    if 'SpaceAfter' in analtoken:
-        miscs += ['SpaceAfter=' + analtoken['SpaceAfter']]
-    if 'SpaceBefore' in analtoken:
-        miscs += ['SpaceBefore=' + analtoken['SpaceBefore']]
-    if len(miscs) > 0:
-        return '|'.join(miscs)
-    else:
-        return '_'
 
 def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
-    upos = get_last_feat("UPOS", anal)
+    upos = get_upos(anal)
     if not upos or upos == "":
         upos = 'X'
     if hacks == 'ftb':
-        third = format_third_ftb(anal)
+        third = format_xpos_ftb(anal)
     else:
-        third = format_third_tdt(upos)
+        third = format_xpos_tdt(anal)
     print(wordn, surf, "#".join(get_lemmas(anal)),
           upos,
           third,
           format_feats_ud(anal, hacks),
-          "_", "_", "_", format_misc(anal), sep="\t", file=outfile)
+          "_", "_", "_", format_misc_ud(anal), sep="\t", file=outfile)
 
 
 def main():
@@ -459,7 +183,7 @@ def main():
             print(file=options.outfile)
             sentences += 1
         else:
-            print("Error in conllu format:", line, sep='\n', file=stderr)
+            print("Error in conllu format: '", line, "'", file=stderr)
             exit(1)
     cpuend = process_time()
     realend = perf_counter()

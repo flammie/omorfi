@@ -11,21 +11,7 @@ import json
 
 # omorfi
 from omorfi.omorfi import Omorfi
-
-def format_omorfi_miscs(surftoken):
-    miscs = []
-    if 'analsurf' in surftoken:
-        miscs += ['AnalysisForm=' + surftoken['analsurf']]
-    if 'recase' in surftoken:
-        miscs += ['CaseChanged=' + surftoken['recase']]
-    if 'SpaceAfter' in surftoken:
-        miscs += ['SpaceAfter=' + surftoken['SpaceAfter']]
-    if 'SpaceBefore' in surftoken:
-        miscs += ['SpaceBefore=' + surftoken['SpaceBefore']]
-    if len(miscs) > 0:
-        return '|'.join(miscs)
-    else:
-        return '_'
+from omorfi.token import format_misc_ud
 
 
 def main():
@@ -91,7 +77,7 @@ def main():
             i = 1
             for surf in surfs:
                 print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_",
-                      format_omorfi_miscs(surf),
+                      format_misc_ud(surf),
                       sep="\t", file=options.outfile)
                 i += 1
         if options.output_format == 'conllu':

@@ -572,11 +572,13 @@ class Omorfi:
                     "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                      "[WEIGHT=28021984]"
             guesstoken['weight'] = 28021984
+            guesstoken['guess'] = 'PYTHON0ISUPPER'
         else:
             guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
                     "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                      "[WEIGHT=28021984]"
             guesstoken['weight'] = 28021984
+            guesstoken['guess'] = 'PYTHONELSE'
         return [guesstoken]
 
     def guess(self, token):
