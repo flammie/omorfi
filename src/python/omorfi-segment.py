@@ -23,11 +23,17 @@ def print_segments(segments, labelsegments, surf, outfile, options):
             sep = ''
             for segmenteds in segments:
                 print(sep, end='', file=outfile)
-                print(options.segment_marker.join(get_segments(segmenteds, options)),
+                print(options.segment_marker.join(get_segments(segmenteds,
+                    options.split_morphs, options.split_words, 
+                    options.split_new_words, options.split_derivs,
+                    options.split_nonwords)),
                         end='', file=outfile)
                 sep = options.show_ambiguous
         else:
-            print(options.segment_marker.join(get_segments(segments[0], options)),
+            print(options.segment_marker.join(get_segments(segments[0],
+                    options.split_morphs, options.split_words, 
+                    options.split_new_words, options.split_derivs,
+                    options.split_nonwords)),
                     end='', file=outfile)
         print(' ', end='', file=outfile)
     else:

@@ -281,41 +281,42 @@ def get_vislcg_feats(token):
     return vislcgs
 
 
-def get_segments(token, options):
+def get_segments(token, split_morphs=True, split_words=True,
+        split_new_words=True, split_derivs=False, split_nonwords=False):
     segments = token['segments']
     # this code is ugly
     segments = [segments.replace('{hyph?}', '')]
     resegs = []
     for segment in segments:
-        if options.split_morphs:
+        if split_morphs:
             resegs += segment.split('{MB}')
         else:
             resegs += [segment.replace('{MB}', '')]
     segments = resegs
     resegs = []
     for segment in segments:
-        if options.split_words:
+        if split_words:
             resegs += segment.split('{WB}')
         else:
             resegs += [segment.replace('{WB}', '')]
     segments = resegs
     resegs = []
     for segment in segments:
-        if options.split_new_words:
+        if split_new_words:
             resegs += segment.split('{wB}')
         else:
             resegs += [segment.replace('{wB}', '')]
     segments = resegs
     resegs = []
     for segment in segments:
-        if options.split_derivs:
+        if split_derivs:
             resegs += segment.split('{DB}')
         else:
             resegs += [segment.replace('{DB}', '')]
     segments = resegs
     resegs = []
     for segment in segments:
-        if options.split_nonwords:
+        if split_nonwords:
             resegs += segment.split('{XB}')
         else:
             resegs += [segment.replace('{XB}', '')]
