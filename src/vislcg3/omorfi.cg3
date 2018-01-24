@@ -2,7 +2,7 @@
 # Constraint grammar for Finnish
 # GNU GPLv3
 # Authors: Tommi A Pirinen
-# but also remade based on Fred Karlsson's fincg
+# but also remade based on Fred Karlsson's fincg:
 
 ##  This program is free software: you can redistribute it and/or modify
 ##  it under the terms of the GNU General Public License as published by
@@ -16,11 +16,15 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ 
+STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ
+    NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT
+    SG PL
+
     HAN KO PA S KA KAAN KIN
-    SUBCAT_NEG CONNEG
+    <SUBCAT_NEG> CONNEG
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN> 
-    <DRV_MA> ;
+    <DRV_MA> <DRV_JA> <DRV_NEN>
+    <STYLE_DIALECTAL> <STYLE_ARCHAIC> <STYLE_NONSTANDARD> ;
 OPTIONS += no-inline-sets ;
 
 DELIMITERS = "<.>" "<!>" "<?>" ;
@@ -32,13 +36,16 @@ LIST CLITIC = HAN KO PA S KA KAAN KIN ;
 LIST CONJUNCTION = CCONJ SCONJ ;
 LIST VERBAUX = VERB AUX ;
 LIST DERIVATIONS = <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U>
-    <DRV_MINEN> <DRV_MA> ;
+    <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
 LIST JA-ADV = ("ja" ADV) ;
+LIST VAN-PROPN = ("van" PROPN) ;
+LIST HELSING-PROPN = ("Helsing" PROPN) ;
 LIST RECASED = <*LOWERCASED> <*UPPERCASED> <*TITLECASED> <*DETITLECASED> ;
 LIST MIN-WEIGHT = <W=MIN> ;
 LIST MIN-COMPOUND = <CMP=MIN> ;
-LIST BADEVIL_WORDS = ("kui" NOUN) ("tai" NOUN) ("vai" NOUN);
+LIST BADEVIL_WORDS = ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ;
+LIST NONSTANDARDS = <STYLE_ARCHAIC> <STYLE_DIALECTAL> <STYLE_NONSTANDARD> ;
 
 BEFORE-SECTIONS
 
@@ -46,18 +53,25 @@ REMOVE:bad-words BADEVIL_WORDS ;
 
 SECTION # all stuff
 
-##! € ollaan menos sinne ja.
-REMOVE:ja-adv ADV (0 JA-ADV) (NOT 1 ENDSENT) ;
+##! $ ollaan menos sinne ja.
+REMOVE:ja-adv JA-ADV (NOT 1 ENDSENT) ;
+
+##! $ Helsingissä on lunta
+##! € näitkö sen uuden van Helsingin episodin?
+REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 
 ##! € en oo sitä nähny
 ##! € en tule
-REMOVE:conneg-needs-neg CONNEG (NOT -1* SUBCAT_NEG) ;
+REMOVE:conneg-needs-neg CONNEG (NOT -1* <SUBCAT_NEG>) ;
 
 SECTION # last-resorts
 
-REMOVE:prefer-original-case RECASED ;
+REMOVE:prefer-standard NONSTANDARDS ;
+REMOVE:prefer-original-case RECASED (NOT -1 <<<);
 REMOVE:least-derivations DERIVATIONS ;
 SELECT:least-compounds MIN-COMPOUND ;
 SELECT:probably MIN-WEIGHT ;
+REMOVE:avoid-instructives INS ;
+REMOVE:avoid-abessives ABE ;
 
 # vim: set ft=vislcg3:
