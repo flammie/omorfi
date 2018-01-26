@@ -1070,6 +1070,7 @@ DNA	2	media
 dogri	1	language
 dogrib	1	language
 dollari	1	currency
+Dolly	1	female
 Dominica	1	country
 dominicalainen	1	country
 dominicalainen	2	inhabitant
@@ -1479,6 +1480,7 @@ fcd	1	measure
 Felicia	1	female
 Felix	1	male
 Ferdinand	1	male
+Fernandez	1	male
 fF	2	measure
 fg	1	measure
 fH	2	measure
@@ -1541,6 +1543,7 @@ Frank	1	male
 Frans	1	male
 Fransiska	1	female
 Fred	1	male
+Frederic	1	male
 Fredrik	1	male
 Fredrika	1	female
 Frej	1	male
@@ -3399,6 +3402,7 @@ lapväärttiläinen	2	inhabitant
 lari	1	currency
 Lari	1	male
 Larissa	1	female
+Larry	1	male
 Lars	1	male
 Lasse	1	male
 Lassi	1	male
@@ -4768,6 +4772,7 @@ paavolainen	2	inhabitant
 paavolalainen	1	inhabitant
 paavolalainen	2	inhabitant
 PAB	1	currency
+Pablo	1	male
 padasjokelainen	1	inhabitant
 padasjokelainen	2	inhabitant
 pahlavi	1	language
@@ -4806,6 +4811,7 @@ panamalainen	4	inhabitant
 pandžabi	1	language
 pangasinan	1	language
 Panu	1	male
+Paolo	1	male
 paperikoneenhoitaja	1	title
 papiamentu	1	language
 papualaiskieli	1	language
@@ -4864,6 +4870,7 @@ pe	1	time
 pe	2	time
 pedersöreläinen	1	inhabitant
 pedersöreläinen	2	inhabitant
+Pedro	1	male
 Peetu	1	male
 PEI	1	currency
 Peik	1	male
@@ -5838,6 +5845,7 @@ Simo	1	male
 simolainen	1	inhabitant
 simolainen	2	inhabitant
 Simon	1	male
+Simona	1	female
 Simone	1	female
 Simonpoika	1	male
 simpeleläinen	1	inhabitant
@@ -7088,6 +7096,7 @@ William	1	male
 Willy	1	male
 Wilma	1	female
 Wilmer	1	male
+Winston	1	male
 wolaitta	1	language
 Wolfgang	1	male
 wolof	1	language
