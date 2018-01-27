@@ -70,8 +70,13 @@ def main():
         if not line or line == '':
             continue
         surfs = omorfi.tokenise(line)
+        first_in_sent = True
         for surf in surfs:
             tokens += 1
+            if first_in_sent and surf["surf"][0].isupper():
+                if "analsurf" not in surf or surf['analsurf'][0].isupper():
+                    surf['analsurf_override'] = surf['surf'][0].lower() + \
+                            surf['surf'][1:]
             anals = omorfi.analyse(surf)
             if len(anals) == 0 or (len(anals) == 1 and
                                    'UNKNOWN' in anals[0]['anal']):

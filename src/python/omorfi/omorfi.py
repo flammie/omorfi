@@ -468,10 +468,17 @@ class Omorfi:
         return res
 
     def _analyse_token(self, token):
+        rv = []
+        if "analsurf_override" in token:
+            res = self.analyser.lookup(token["analsurf_override"])
+            for r in res:
+                rvtoken = token.copy()
+                rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
+                rvtoken['weight'] = r[1]
+                rv.append(rvtoken)
         if "analsurf" not in token:
             token["analsurf"] = token["surf"]
         res = self.analyser.lookup(token["analsurf"])
-        rv = []
         for r in res:
             rvtoken = token.copy()
             rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
