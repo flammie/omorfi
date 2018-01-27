@@ -45,7 +45,7 @@ def get_last_feats(token):
     rvs = list()
     feats = re_feats.finditer(token['anal'])
     for feat in feats:
-        if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
+        if 'WORD_ID=' in feat.group(0):
             # feats reset on word boundary
             rvs = list()
         else:
@@ -266,6 +266,14 @@ def get_vislcg_feats(token):
         elif key in ["WEIGHT", "GUESS"]:
             # Weights is handled via token features
             pass
+        elif key == "BOUNDARY":
+            if value == "CLAUSE":
+                vislcgs += ["<CLB>"]
+            elif value == "SENTENCE":
+                vislcgs += ["<SENT>"]
+            else:
+                print("Unhandled boundary = ", value, "in", token)
+                exit(1)
         else:
             print("Unhandled", key, "=", value, "in", token,
                     "for vislcg")
