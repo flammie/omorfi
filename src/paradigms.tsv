@@ -2107,7 +2107,7 @@ VERB_ARVATA	VERB	VERB	73	None	False	strengthen	back	None	None	False	False	ta	ta
 VERB_AUTTAA	VERB	VERB	56	C	False	weaken	back	None	None	False	False	ttaa	taa
 VERB_DIGATA	VERB	VERB	73	O	False	strengthen	back	None	None	False	False	gata	ata
 VERB_EHTIÄ	VERB	VERB	61	F	False	weaken	front	None	None	False	False	tiä	tiä
-VERB_EI	VERB	VERB	1099	None	False	weaken	front	None	None	False	False	ei	ei
+AUX_EI	AUX	VERB	1099	None	False	weaken	front	None	None	False	False	ei	ei
 VERB_ENTÄÄ	VERB	VERB	55	J	False	weaken	front	None	None	False	False	ntää	tää
 VERB_ERATA	VERB	VERB	72	D	False	strengthen	back	None	None	False	False	ata	ata
 VERB_ETUILLA	VERB	VERB	67	None	False	strengthen	back	None	None	False	False	lla	la
