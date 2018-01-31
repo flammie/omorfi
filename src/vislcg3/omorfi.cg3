@@ -16,10 +16,10 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ
+STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ
     NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT
     SG PL
-
+    INFA INFE INFMA
     HAN KO PA S KA KAAN KIN
     <SUBCAT_NEG> CONNEG
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN> 
@@ -31,21 +31,32 @@ DELIMITERS = "<.>" "<!>" "<?>" ;
 
 SETS
 
+# grammar groups
 LIST NOMINAL = NOUN ADJ PRON PROPN ;
 LIST CLITIC = HAN KO PA S KA KAAN KIN ;
 LIST CONJUNCTION = CCONJ SCONJ ;
 LIST VERBAUX = VERB AUX ;
 LIST DERIVATIONS = <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U>
     <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> ;
+# sentences and clauses
+LiST BEGINSENT = >>> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
+# words
+LIST BADEVIL_WORDS = ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ("pai" NOUN) 
+    ("par" NOUN) ("tule" NOUN) ("kuvi" NOUN) ;
 LIST JA-ADV = ("ja" ADV) ;
 LIST VAN-PROPN = ("van" PROPN) ;
 LIST HELSING-PROPN = ("Helsing" PROPN) ;
+LIST ETTÄ-INTJ = ("että" INTJ) ;
+LIST SEKÄ-CCONJ = ("sekä" CCONJ) ;
+LIST ETTÄ-CCONJ = ("että" CCONJ) ;
+LIST NIISI-NOUN = ("niisi" NOUN) ;
+# secondaries
 LIST RECASED = <*LOWERCASED> <*UPPERCASED> <*TITLECASED> <*DETITLECASED> ;
 LIST MIN-WEIGHT = <W=MIN> ;
 LIST MIN-COMPOUND = <CMP=MIN> ;
-LIST BADEVIL_WORDS = ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ;
 LIST NONSTANDARDS = <STYLE_ARCHAIC> <STYLE_DIALECTAL> <STYLE_NONSTANDARD> ;
+
 
 BEFORE-SECTIONS
 
@@ -56,6 +67,11 @@ SECTION # all stuff
 ##! $ ollaan menos sinne ja.
 REMOVE:ja-adv JA-ADV (NOT 1 ENDSENT) ;
 
+##! $ ai että voi että
+REMOVE:että-intj ETTÄ-INTJ (NOT -1 INTJ) ;
+##! $ oli siellä sekä kaljaa että apinoita.
+REMOVE:sekä-että-cconj ETTÄ-CCONJ (NOT -1* SEKÄ-CCONJ) ;
+
 ##! $ Helsingissä on lunta
 ##! € näitkö sen uuden van Helsingin episodin?
 REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
@@ -64,14 +80,17 @@ REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 ##! € en tule
 REMOVE:conneg-needs-neg CONNEG (NOT -1* <SUBCAT_NEG>) ;
 
+REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
+
 SECTION # last-resorts
 
+SELECT:prefer-punct-over-sym PUNCT (0 SYM);
 REMOVE:prefer-standard NONSTANDARDS ;
-REMOVE:prefer-original-case RECASED (NOT -1 <<<);
+REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 REMOVE:least-derivations DERIVATIONS ;
 SELECT:least-compounds MIN-COMPOUND ;
 SELECT:probably MIN-WEIGHT ;
 REMOVE:avoid-instructives INS ;
-REMOVE:avoid-abessives ABE ;
+REMOVE:avoid-abessives ABE (NOT 0 VERB + INFMA);
 
 # vim: set ft=vislcg3:
