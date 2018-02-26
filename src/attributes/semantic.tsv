@@ -129,6 +129,7 @@ alahärmäläinen	1	inhabitant
 alahärmäläinen	2	inhabitant
 alajärveläinen	1	inhabitant
 alajärveläinen	2	inhabitant
+Alan	1	male
 alankomaalainen	1	country
 alankomaalainen	2	inhabitant
 Alankomaat	1	country
@@ -717,6 +718,7 @@ Bouvet’nsaari	1	country
 BOV	1	currency
 Bq	1	measure
 Br	1	currency
+Brady	2	male
 bradž	1	language
 Brasilia	1	country
 brasilialainen	1	country
@@ -4262,6 +4264,7 @@ montserratilainen	3	country
 montserratilainen	4	inhabitant
 Moona	1	female
 MOP	1	currency
+Morgan	1	male
 morisyen	1	language
 Moritz	1	male
 Mosambik	1	country
@@ -4485,6 +4488,7 @@ nicaragualainen	3	country
 nicaragualainen	4	inhabitant
 Nicholas	1	male
 Nicholas	2	male
+Nick	1	male
 Nicky	1	male
 Niclas	1	male
 Nico	1	male
@@ -6007,6 +6011,7 @@ Stefan	1	male
 Stella	1	female
 Sten	1	male
 Stephan	1	male
+Stephanie	1	female
 Stephen	1	male
 Steve	1	male
 Steven	1	male
