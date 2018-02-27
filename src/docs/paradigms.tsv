@@ -1,4 +1,5 @@
 new_para	doc
+ADJ_PIKKU	Non-inflecting adjectives, like pikku, eri etc.
 ADJ_AAKKOSELLINEN	Dictionary class 38 back
 ADJ_AAVA	Bisyllabic a stems with e comparative and j plurals are in class described here, and dictionary class ⁹.
 ADJ_ABNORMAALI	The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶.
@@ -160,6 +161,7 @@ ADV_TYHMÄSTI
 ADV_VAAN
 ADV_YLIPÄÄNSÄ
 AUX_AIKOA	auxiliary version of ko:o verb stem
+AUX_EI	Negation verb ‘ei’ has heteroclitic inflection
 AUX_JOUTUA	auxiliary version of tu:du verb stem
 AUX_MAHTAA	auxiliary version of ta:do verb stem
 AUX_OLLA	auxiliary version of ‘olla’
@@ -2107,7 +2109,6 @@ VERB_ARVATA	Dictionary class73 back
 VERB_AUTTAA	Dictionary class56 back t~0
 VERB_DIGATA	Dictionary class73 back 0~g
 VERB_EHTIÄ	Dictionary class61 front t~d
-VERB_EI	Negation verb ‘ei’ has heteroclitic inflection
 VERB_ENTÄÄ	Dictionary class55 front t~n
 VERB_ERATA	Dictionary class72 back 0~k
 VERB_ETUILLA	Dictionary class67 back i~e l

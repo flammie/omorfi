@@ -224,7 +224,7 @@ def get_ud_feats(token, hacks=None):
                 print("in", analtoken)
                 exit(1)
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
-                     'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
+                     'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ', 'BOUNDARY']:
             # Not feats in UD:
             # * UPOS is another field
             # * Allomorphy is ignored
@@ -236,6 +236,7 @@ def get_ud_feats(token, hacks=None):
             # * punct sidedness is not a feat
             # * XXX: sem has not been used as a feat?
             # * special CONJ comparative is not used in UD
+            # * clause / sentence boundary tag ignored
             continue
         else:
             print("Unhandled", key, '=', value)

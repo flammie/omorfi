@@ -74,6 +74,7 @@ ADJ_PARANNELTU	ADJ	ADJECTIVE	1	I	False	weaken	back	None	None	False	False	ltu	tu
 ADJ_PARAS	ADJ	ADJECTIVE	41	None	False	strengthen	back	None	None	False	False	as	as
 ADJ_PEEAA	ADJ	ADJECTIVE	18	None	False	weaken	back	a	None	False	False	aa	a
 ADJ_PIENI	ADJ	ADJECTIVE	26	None	False	weaken	front	None	None	False	False	i	i
+ADJ_PIKKU	ADJ	ADJECTIVE	99	None	False	strengthen	back	None	None	False	False	.
 ADJ_PINKKI	ADJ	ADJECTIVE	5	A	False	weaken	front	None	None	False	False	kki	ki
 ADJ_PITKÄ	ADJ	ADJECTIVE	1010	None	False	weaken	front	ä	None	False	False	tkä	tkä
 ADJ_POHATTA	ADJ	ADJECTIVE	14	C	False	weaken	back	a	None	False	False	tta	ta
@@ -160,6 +161,7 @@ ADV_TYHMÄSTI	ADV	PARTICLE	99	None	False	False	front	None	None	False	True	.
 ADV_VAAN	ADV	PARTICLE	99	None	False	False	back	None	None	False	False	.
 ADV_YLIPÄÄNSÄ	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True	.
 AUX_AIKOA	AUX	VERB	52	D	False	weaken	back	None	None	False	False	aikoa	koa
+AUX_EI	AUX	VERB	1099	None	False	weaken	front	None	None	False	False	ei	ei
 AUX_JOUTUA	AUX	VERB	52	F	False	weaken	back	None	None	False	False	joutua	tua
 AUX_MAHTAA	AUX	VERB	56	F	False	weaken	back	None	None	False	False	mahtaa	taa
 AUX_OLLA	AUX	VERB	1067	None	False	weaken	back	None	None	False	False	olla	olla
@@ -1213,7 +1215,7 @@ NUM_51neljäundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51neljäundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäundekiljoonaa	äundekiljoonaa
 NUM_51neljäviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäviidettä	äviidettä
 NUM_51neljäyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäyhdeksättä	äyhdeksättä
-NUM_51puolitoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	puolitoista	puolitoista
+NUM_51puolitoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	puolitoista	itoista
 NUM_51seitsemänbiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänbiljardia	änbiljardia
 NUM_51seitsemänbiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänbiljoonaa	änbiljoonaa
 NUM_51seitsemändekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemändekiljardia	ändekiljardia
@@ -2107,7 +2109,6 @@ VERB_ARVATA	VERB	VERB	73	None	False	strengthen	back	None	None	False	False	ta	ta
 VERB_AUTTAA	VERB	VERB	56	C	False	weaken	back	None	None	False	False	ttaa	taa
 VERB_DIGATA	VERB	VERB	73	O	False	strengthen	back	None	None	False	False	gata	ata
 VERB_EHTIÄ	VERB	VERB	61	F	False	weaken	front	None	None	False	False	tiä	tiä
-AUX_EI	AUX	VERB	1099	None	False	weaken	front	None	None	False	False	ei	ei
 VERB_ENTÄÄ	VERB	VERB	55	J	False	weaken	front	None	None	False	False	ntää	tää
 VERB_ERATA	VERB	VERB	72	D	False	strengthen	back	None	None	False	False	ata	ata
 VERB_ETUILLA	VERB	VERB	67	None	False	strengthen	back	None	None	False	False	lla	la
