@@ -1666,7 +1666,7 @@
 "<väitti>"
 	"väittää" VERB ACT INDV PAST SG3 <W=0> <CMP=1>
 "<aika>"
-:	"aika" NOUN SG NOM <W=0> <CMP=1>
+;	"aika" NOUN SG NOM <W=0> <CMP=1>
 	"aika" ADV <W=0> <CMP=1>
 "<hartaasti>"
 	"hartaasti" ADV <LEX_STI> <W=0> <CMP=1>
@@ -4517,7 +4517,7 @@
 	"matka" NOUN SG ELA <W=0> <CMP=1>
 "<olemaan>"
 	"olla" AUX ACT INFMA ILL <W=0> <CMP=1>
-:	"olla" VERB ACT INFMA ILL <W=0> <CMP=1>
+;	"olla" VERB ACT INFMA ILL <W=0> <CMP=1>
 ;	"olla" AUX <DRV_MA> POS SG ILL <W=0> <CMP=1> REMOVE:82:least-derivations
 ;	"olla" VERB <DRV_MA> POS SG ILL <W=0> <CMP=1> REMOVE:82:least-derivations
 "<...>"
@@ -6172,7 +6172,7 @@
 	"käsitellä" VERB <DRV_TAVA> POS SG ESS <W=0> <CMP=1>
 ;	"käsiteltävä" ADJ POS SG ESS <W=0> <CMP=1>
 "<oleva>"
-:	"oleva" ADJ POS SG NOM <W=0> <CMP=1>
+;	"oleva" ADJ POS SG NOM <W=0> <CMP=1>
 ;	"olla" AUX ACT PCPVA SG <W=0> <CMP=1>
 	"olla" VERB ACT PCPVA SG <W=0> <CMP=1>
 ;	"olla" AUX <DRV_VA> POS SG NOM <W=0> <CMP=1> REMOVE:82:least-derivations
@@ -6233,7 +6233,7 @@
 ;	"yhtä" ADV <W=0> <CMP=1>
 	"yksi" NUM CARD SG PAR <W=0> <CMP=1>
 ;	"yksi" PRON <SUBCAT_QUANTIFIER> SG PAR <W=0> <CMP=1>
-;"yksi" DET SG PAR <W=0> <CMP=1>
+;	"yksi" DET SG PAR <W=0> <CMP=1>
 "<kohtaa>"
 ;	"kohdata" VERB ACT IMPV SG2 <W=0> <CMP=1>
 	"kohta" NOUN SG PAR <W=0> <CMP=1>
@@ -7100,7 +7100,7 @@
 	"." PUNCT <SENT> <W=0> <CMP=1>
 
 "<Voin>"
-:	"voida" VERB ACT INDV PRESENT SG1 <W=0> <CMP=1>
+;	"voida" VERB ACT INDV PRESENT SG1 <W=0> <CMP=1>
 ;	"voi" NOUN SG GEN <W=0> <CMP=1>
 	"voida" AUX ACT INDV PAST SG1 <W=0> <CMP=1>
 ;	"voida" AUX ACT INDV PRESENT SG1 <W=0> <CMP=1>
@@ -7248,7 +7248,7 @@
 "<seisovat>"
 	"seisoa" VERB ACT INDV PRESENT PL3 <W=0> <CMP=1> SELECT:83:least-compounds
 ;	"seisoa" VERB ACT PCPVA PL <W=0> <CMP=1> SELECT:83:least-compounds
-:	"seisova" NOUN PL NOM <W=0> <CMP=1> SELECT:83:least-compounds
+;	"seisova" NOUN PL NOM <W=0> <CMP=1> SELECT:83:least-compounds
 ;	"seisova" ADJ POS PL NOM <W=0> <CMP=1> SELECT:83:least-compounds
 ;	"seisoa" VERB <DRV_VA> POS PL NOM <W=0> <CMP=1> REMOVE:82:least-derivations
 ;	"sei#sopa" NOUN PL NOM <W=0> <CMP=2> SELECT:83:least-compounds
@@ -8010,7 +8010,7 @@
 ;	"yhdessä" ADV <W=0> <CMP=1>
 	"yksi" NUM CARD SG INE <W=0> <CMP=1>
 ;	"yksi" PRON <SUBCAT_QUANTIFIER> SG INE <W=0> <CMP=1>
-;"yksi" DET SG INE <W=0> <CMP=1>
+;	"yksi" DET SG INE <W=0> <CMP=1>
 "<päivässä>"
 	"päivä" NOUN SG INE <W=0> <CMP=1>
 ;	"päivänen" NOUN SG ESS <STYLE_ARCHAIC> <W=0> <CMP=1> REMOVE:80:prefer-standard
@@ -8280,7 +8280,7 @@
 	"aikuinen" NOUN PL GEN <W=0> <CMP=1>
 "<puolinaisista>"
 	"puolinainen" ADJ POS PL ELA <W=0> <CMP=1> SELECT:83:least-compounds
-;;	"puoli#nainen" NOUN PL ELA <W=0> <CMP=2> SELECT:83:least-compounds
+;	"puoli#nainen" NOUN PL ELA <W=0> <CMP=2> SELECT:83:least-compounds
 ;	"puoli#naisinen" ADJ POS SG PAR <W=0> <CMP=2> SELECT:83:least-compounds
 "<lauseista>"
 	"lause" NOUN PL ELA <W=0> <CMP=1>
@@ -8726,7 +8726,7 @@
 "<että>"
 	"että" SCONJ <W=0> <CMP=1>
 ;	"että" CCONJ <W=0> <CMP=1>
-;	"että" INTJ <W=0> <CMP=1> REMOVE:67:että-intj
+;	"että" INTJ <W=0> <CMP=1> REMOVE:67:että-intj
 "<isä>"
 	"isä" NOUN SG NOM <W=0> <CMP=1>
 "<kuolee>"
@@ -14942,7 +14942,6 @@
 "<että>"
 	"että" SCONJ <W=0> <CMP=1>
 ;	"että" CCONJ <W=0> <CMP=1>
-;	"että" INTJ <W=0> <CMP=1> REMOVE:67:että-intj
 "<todistuksia>"
 	"todistus" NOUN PL PAR <W=0> <CMP=1>
 "<myöntävillä>"
@@ -15668,7 +15667,7 @@
 "<että>"
 	"että" SCONJ <W=0> <CMP=1>
 ;	"että" CCONJ <W=0> <CMP=1>
-; 	"että" INTJ <W=0> <CMP=1> REMOVE:67:että-intj
+;	"että" INTJ <W=0> <CMP=1> REMOVE:67:että-intj
 "<heidän>"
 	"he" PRON PRS PL3 PL GEN <W=0> <CMP=1>
 "<nimeämänsä>"
@@ -16040,7 +16039,7 @@
 ;	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<otettava>"
 	"ottaa" VERB PSS PCPVA SG <W=0> <CMP=1>
-:	"ottaa" VERB <DRV_TAVA> POS SG NOM <W=0> <CMP=1>
+;	"ottaa" VERB <DRV_TAVA> POS SG NOM <W=0> <CMP=1>
 "<käyttöön>"
 	"käyttö" NOUN SG ILL <W=0> <CMP=1>
 "<ja>"
@@ -17018,7 +17017,7 @@
 ;	"viimeinen" ADJ POS SG PAR POSS3 <W=0> <CMP=1>
 	"viimeistään" ADV <W=0> <CMP=1>
 "<1>"
-:	"1" NUM CARD <W=0> <CMP=1>
+;	"1" NUM CARD <W=0> <CMP=1>
 	"1" NUM CARD SG NOM <W=0> <CMP=1>
 "<päivänä>"
 	"päivä" NOUN SG ESS <W=0> <CMP=1>
@@ -20065,7 +20064,7 @@
 	"helppo" ADJ POS SG NOM <W=0> <CMP=1>
 "<ymmärtää>"
 	"ymmärtää" VERB ACT INFA LAT <W=0> <CMP=1>
-:	"ymmärtää" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
+;	"ymmärtää" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<oppimisprosessin>"
 	"oppia#prosessi" NOUN SG GEN <W=0> <CMP=2>
 ;	"oppiminen#prosessi" NOUN SG GEN <W=0> <CMP=2>
@@ -21829,7 +21828,7 @@
 ;	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<kuultavissa>"
 ;	"kuultava" ADJ POS PL INE <W=0> <CMP=1>
-; "kuultava" NOUN PL INE <W=0> <CMP=1>
+;	"kuultava" NOUN PL INE <W=0> <CMP=1>
 	"kuulla" VERB <DRV_TAVA> POS PL INE <W=0> <CMP=1> REMOVE:115:least-derivations
 ;	"kuultaa" VERB <DRV_VA> POS PL INE <W=0> <CMP=1> REMOVE:115:least-derivations
 "<.>"
@@ -22551,7 +22550,7 @@
 "<teki>"
 	"tehdä" VERB ACT INDV PAST SG3 <W=0> <CMP=1>
 "<ensimmäisellä>"
-:	"ensimmäinen" NOUN SG ADE <W=0> <CMP=1>
+;	"ensimmäinen" NOUN SG ADE <W=0> <CMP=1>
 ;	"ensimmäinen" NUM ORD SG ADE <W=0> <CMP=1>
 	"ensimmäinen" ADJ POS SG ADE <W=0> <CMP=1>
 "<puoliajalla>"
@@ -25644,7 +25643,7 @@
 ;	"kuu" NOUN SG GEN POSSSG2 <W=0> <CMP=1>
 ;	"kuu" NOUN SG NOM POSSSG2 <W=0> <CMP=1>
 	"kuusi" NOUN SG NOM <W=0> <CMP=1>
-:	"kuusi" NUM CARD SG NOM <W=0> <CMP=1>
+;	"kuusi" NUM CARD SG NOM <W=0> <CMP=1>
 "<viikkoa>"
 	"viikko" NOUN SG PAR <W=0> <CMP=1>
 "<putkeen>"
@@ -26804,7 +26803,7 @@
 ;	"matkustaa" VERB <DRV_JA> SG ELA <W=0> <CMP=1> REMOVE:115:least-derivations
 "<25>"
 	"25" NUM CARD <W=0> <CMP=1>
-:	"25" NUM CARD SG NOM <W=0> <CMP=1>
+;	"25" NUM CARD SG NOM <W=0> <CMP=1>
 "<loukkaantui>"
 	"loukkaantua" VERB ACT INDV PAST SG3 <W=0> <CMP=1>
 "<,>"
@@ -26812,7 +26811,7 @@
 ;	"," SYM <W=0> <CMP=1> SELECT:112:prefer-punct-over-sym
 "<yksi>"
 	"yksi" NUM CARD SG NOM <W=0> <CMP=1>
-:	"yksi" PRON <SUBCAT_QUANTIFIER> SG NOM <W=0> <CMP=1>
+;	"yksi" PRON <SUBCAT_QUANTIFIER> SG NOM <W=0> <CMP=1>
 ;	"yksi" DET SG NOM <W=0> <CMP=1>
 "<heistä>"
 	"he" PRON PRS PL3 PL ELA <W=0> <CMP=1>
@@ -27119,7 +27118,7 @@
 "<oli>"
 	"olla" AUX ACT INDV PAST SG3 <W=0> <CMP=1>
 	"olla" VERB ACT INDV PAST SG3 <W=0> <CMP=1>
-";<hyvin>"
+"<hyvin>"
 	"hyvin" ADV <W=0> <CMP=1>
 ;	"hyvä" ADJ SUP SG NOM <W=0> <CMP=1>
 ;	"hyvä" ADJ POS PL INS <W=0> <CMP=1> REMOVE:135:avoid-instructives
@@ -32910,7 +32909,7 @@
 "<on>"
 	"olla" AUX ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
-";<voimistanut>"
+"<voimistanut>"
 	"voimistaa" VERB ACT PCPNUT POS NOM SG <W=0> <CMP=1> SELECT:133:least-compounds
 ;	"voida#tanu" ADJ POS PL NOM <W=0> <CMP=2> SELECT:133:least-compounds
 ;	"voimistaa" VERB ACT INDV PAST SG CONNEG <W=0> <CMP=1> REMOVE:121:conneg-needs-neg
@@ -33427,7 +33426,7 @@
 	"vastaus" NOUN SG NOM <W=0> <CMP=1>
 "<on>"
 	"olla" AUX ACT INDV PRESENT SG3 <W=0> <CMP=1>
-M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
+	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<koheesiopolitiikka>"
 	"koheesio#politiikka" NOUN SG NOM <W=0> <CMP=2>
 "<,>"
@@ -34415,7 +34414,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<on>"
 	"olla" AUX ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
-";<päässyt>"
+"<päässyt>"
 	"päästä" VERB ACT PCPNUT POS NOM SG <W=0> <CMP=1>
 ;	"päästä" VERB ACT INDV PAST SG CONNEG <W=0> <CMP=1> REMOVE:121:conneg-needs-neg
 ;	"päästä" VERB <DRV_NUT> POS SG NOM <W=0> <CMP=1> REMOVE:132:least-derivations
@@ -36973,7 +36972,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"olla" AUX ACT INDV PAST SG1 <W=0> <CMP=1>
 ;	"olka" NOUN PL INS <W=0> <CMP=1> REMOVE:146:avoid-instructives
 "<edelleen>"
-:	"edelle" ADP POST POSS3 <W=0> <CMP=1>
+;	"edelle" ADP POST POSS3 <W=0> <CMP=1>
 	"edelleen" ADV <W=0> <CMP=1>
 "<nälkäinen>"
 	"nälkäinen" ADJ POS SG NOM <W=0> <CMP=1>
@@ -42185,7 +42184,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<">"
 	"\"" PUNCT <SUBCAT_QUOTATION> <POSITION_FINAL> <W=0> <CMP=1>
 ;	"\"" PUNCT <SUBCAT_QUOTATION> <POSITION_INITIAL> <W=0> <CMP=1>
-" <;>"
+"<;>"
 	";" PUNCT <CLB> <W=0> <CMP=1>
 "<lisätään>"
 	"lisätä" VERB PSS INDV PRESENT PE4 <W=0> <CMP=1>
@@ -42621,7 +42620,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<tuontia>"
 	"tuonti" NOUN SG PAR <W=0> <CMP=1>
 "<varten>"
-:	"varten" ADV <W=0> <CMP=1>
+;	"varten" ADV <W=0> <CMP=1>
 	"varten" ADP POST <W=0> <CMP=1>
 "<;>"
 	";" PUNCT <CLB> <W=0> <CMP=1>
@@ -42662,7 +42661,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"joka" PRON REL PL NOM <W=0> <CMP=1>
 "<on>"
 	"olla" AUX ACT INDV PRESENT SG3 <W=0> <CMP=1>
-:	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
+;	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<tilapäisesti>"
 	"tilapäisesti" ADV <LEX_STI> <W=0> <CMP=1>
 "<viety>"
@@ -42672,7 +42671,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<Kairon>"
 	"Kairo" PROPN SG GEN <W=0> <CMP=1>
 "<pääkaupunkialueelle>"
-:	"pää#kaupunkialue" NOUN SG ALL <W=0> <CMP=2> SELECT:144:least-compounds
+;	"pää#kaupunkialue" NOUN SG ALL <W=0> <CMP=2> SELECT:144:least-compounds
 	"pääkaupunki#alue" NOUN SG ALL <W=0> <CMP=2> SELECT:144:least-compounds
 ;	"pää#kaupunki#alue" NOUN SG ALL <W=0> <CMP=3> SELECT:144:least-compounds
 "<,>"
@@ -45540,7 +45539,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 "<tänä>"
 	"tämä" PRON DEM SG ESS <W=0> <CMP=1>
 "<vuonna>"
-:	"vuonna" ADV <W=0> <CMP=1>
+;	"vuonna" ADV <W=0> <CMP=1>
 	"vuosi" NOUN SG ESS <STYLE_RARE> <W=0> <CMP=1>
 "<,>"
 	"," PUNCT <CLB> <SUBCAT_COMMA> <W=0> <CMP=1> SELECT:140:prefer-punct-over-sym
@@ -46257,7 +46256,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"-" PUNCT <SUBCAT_DASH> <W=0> <CMP=1>
 "<On>"
 	"olla" AUX ACT INDV PRESENT SG3 <*LOWERCASED> <W=0> <CMP=1>
-:	"olla" VERB ACT INDV PRESENT SG3 <*LOWERCASED> <W=0> <CMP=1>
+;	"olla" VERB ACT INDV PRESENT SG3 <*LOWERCASED> <W=0> <CMP=1>
 "<tärkeää>"
 	"tärkeä" ADJ POS SG PAR <W=0> <CMP=1>
 "<,>"
@@ -47292,7 +47291,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"ihminen" NOUN PL NOM <W=0> <CMP=1>
 "<tapaavat>"
 	"tavata" VERB ACT INDV PRESENT PL3 <W=0> <CMP=1>
-:	"tavata" VERB ACT PCPVA PL <W=0> <CMP=1>
+;	"tavata" VERB ACT PCPVA PL <W=0> <CMP=1>
 ;	"tavata" VERB <DRV_VA> POS PL NOM <W=0> <CMP=1> REMOVE:143:least-derivations
 "<toisiaan>"
 ;	"toinen" NOUN PL PAR POSS3 <W=0> <CMP=1>
@@ -47313,7 +47312,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 ;	"toinen" ADJ POS PL GEN POSS3 <W=0> <CMP=1>
 ;	"toinen" PRON <SUBCAT_QUANTIFIER> PL GEN POSS3 <W=0> <CMP=1>
 	"toinen" PRON REC PL GEN POSS3 <W=0> <CMP=1>
-;;	"toinen" NUM ORD PL GEN POSS3 <W=0> <CMP=1> REMOVE:104:ordinal-is-adjective
+;	"toinen" NUM ORD PL GEN POSS3 <W=0> <CMP=1> REMOVE:104:ordinal-is-adjective
 "<kanssa>"
 	"kanssa" ADP POST <W=0> <CMP=1>
 ;	"kanssa" ADV <W=0> <CMP=1>
@@ -51730,7 +51729,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"kuusi" NUM CARD SG GEN <W=0> <CMP=1>
 "<kilometrin>"
 	"kilometri" NOUN SG GEN <W=0> <CMP=1> SELECT:144:least-compounds
-;;	"kilo#-metri" NOUN SG GEN <W=0> <CMP=2> SELECT:144:least-compounds
+;	"kilo#-metri" NOUN SG GEN <W=0> <CMP=2> SELECT:144:least-compounds
 ;	"kilo#metri" NOUN SG GEN <W=0> <CMP=2> SELECT:144:least-compounds
 "<päässä>"
 ;	"pää" NOUN SG INE <W=0> <CMP=1>
@@ -51953,7 +51952,7 @@ M	"olla" VERB ACT INDV PRESENT SG3 <W=0> <CMP=1>
 	"muodostaa" VERB ACT INDV PRESENT PL3 <W=0> <CMP=1>
 ;	"muodostaa" VERB ACT PCPVA PL <W=0> <CMP=1>
 ;	"muodostava" ADJ POS PL NOM <W=0> <CMP=1>
-;;	"muodostaa" VERB <DRV_VA> POS PL NOM <W=0> <CMP=1> REMOVE:143:least-derivations
+;	"muodostaa" VERB <DRV_VA> POS PL NOM <W=0> <CMP=1> REMOVE:143:least-derivations
 "<pienoiskylän>"
 	"pienoinen#kylä" NOUN SG GEN <W=0> <CMP=2>
 "<.>"

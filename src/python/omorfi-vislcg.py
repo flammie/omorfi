@@ -5,7 +5,7 @@
 import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
-from sys import stdin, stdout
+from sys import stdin, stdout, stderr
 # statistics
 from time import perf_counter, process_time
 
@@ -38,6 +38,9 @@ def main():
                    help="print verbosely while processing")
     a.add_argument('-o', '--output', metavar="OUTFILE", dest="outfile",
                    help="print output into OUTFILE", type=FileType('w'))
+    a.add_argument('-F', '--format', metavar="INFORMAT", default='text',
+                   help="read input using INFORMAT tokenisation",
+                   choices=['text', 'vislcg'])
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
                    help="print statistics to STATFILE", type=FileType('w'))
     options = a.parse_args()
@@ -65,24 +68,51 @@ def main():
     cpustart = process_time()
     tokens = 0
     unknowns = 0
-    for line in options.infile:
-        line = line
-        if not line or line == '':
-            continue
-        surfs = omorfi.tokenise(line)
-        first_in_sent = True
-        for surf in surfs:
-            tokens += 1
-            if first_in_sent and surf["surf"][0].isupper():
-                if "analsurf" not in surf or surf['analsurf'][0].isupper():
-                    surf['analsurf_override'] = surf['surf'][0].lower() + \
-                            surf['surf'][1:]
-            anals = omorfi.analyse(surf)
-            if len(anals) == 0 or (len(anals) == 1 and
-                                   'UNKNOWN' in anals[0]['anal']):
-                unknowns += 1
-                anals = omorfi.guess(surf)
-            print_analyses_vislcg3(surf, anals, options.outfile)
+    if options.format=='text':
+        for line in options.infile:
+            if not line or line == '':
+                continue
+            surfs = omorfi.tokenise(line)
+            first_in_sent = True
+            for surf in surfs:
+                tokens += 1
+                if first_in_sent and surf["surf"][0].isupper():
+                    if "analsurf" not in surf or surf['analsurf'][0].isupper():
+                        surf['analsurf_override'] = surf['surf'][0].lower() + \
+                                surf['surf'][1:]
+                        first_in_sent = False
+                anals = omorfi.analyse(surf)
+                if len(anals) == 0 or (len(anals) == 1 and
+                                       'UNKNOWN' in anals[0]['anal']):
+                    unknowns += 1
+                    anals = omorfi.guess(surf)
+                print_analyses_vislcg3(surf, anals, options.outfile)
+    elif options.format == 'vislcg':
+        for line in options.infile:
+            line = line.rstrip()
+            if not line or line == '':
+                print(file=options.outfile)
+            elif line.startswith("#") or line.startswith("<"):
+                print(line, file=options.outfile)
+            elif line.startswith('"<') and line.endswith('>"'):
+                tokens += 1
+                surf = {'surf': line[2:-2]}
+                anals = omorfi.analyse(surf)
+                if len(anals) == 0 or (len(anals) == 1 and
+                        'UNKNOWN' in anals[0]['anal']):
+                    unknowns += 1
+                    anals = omorfi.guess(surf)
+                print_analyses_vislcg3(surf, anals, options.outfile)
+            elif line.startswith('\t"') or line.startswith(';\t"'):
+                # gold?
+                pass
+            else:
+                print("Error parsing line", line, file=stderr)
+                exit(2)
+    else:
+        print("input format missing implementation", options.format,
+                file=stderr)
+        exit(2)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Unknown:", unknowns, unknowns / tokens * 100,
