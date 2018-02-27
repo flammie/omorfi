@@ -17,10 +17,14 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ
+    DET
     NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT
     SG PL
+    ACTV PASV INDV POTN IMPV COND
     INFA INFE INFMA
+    POSSSG1 POSSSG2 POSSSP3 POSSPL1 POSSPL2
     HAN KO PA S KA KAAN KIN
+    ORD CARD
     <SUBCAT_NEG> CONNEG
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN> 
     <DRV_MA> <DRV_JA> <DRV_NEN>
@@ -37,13 +41,49 @@ LIST CLITIC = HAN KO PA S KA KAAN KIN ;
 LIST CONJUNCTION = CCONJ SCONJ ;
 LIST VERBAUX = VERB AUX ;
 LIST DERIVATIONS = <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U>
-    <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> ;
+    <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> <DRV_ISA> <DRV_TAVA> ;
 # sentences and clauses
-LiST BEGINSENT = >>> ;
+LIST BEGINSENT = >>> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
 # words
-LIST BADEVIL_WORDS = ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ("pai" NOUN) 
-    ("par" NOUN) ("tule" NOUN) ("kuvi" NOUN) ;
+
+## short words that many find problems with
+LIST BADEVIL_WORDS = 
+    ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ("pai" NOUN)
+    ("par" NOUN) ("tule" NOUN) ("kuvi" NOUN) ("kos" NOUN)
+    ("mon" NOUN) ("lev" NOUN)
+    ("taka" NOUN) ("edus" NOUN)
+    ("he" INTJ) ;
+
+## propns that overlap commoner words
+LIST RARER_PROPN = 
+    ("Vanha" PROPN) ("Mei" PROPN) ("Osa" PROPN) ("Hanska" PROPN)
+    ("Osta" PROPN) ("Leikkaa" PROPN) ("Varo" PROPN) ("Tarkki" PROPN)
+    ("Onkki" PROPN) ("Ede" PROPN) ("Mietti" PROPN) ("Metsä" PROPN)
+    ("Puu" PROPN) ("Koto" PROPN) ("Mörä" PROPN) ("Tuli" PROPN) 
+    ("Hauska" PROPN) ("Uutinen" PROPN) ("Piha" PROPN) ("Sakko" PROPN)
+    ("Ota" PROPN) ("Leikkaa" PROPN) ("Lähdet" PROPN) ("Matka" PROPN)
+    ("Lähellä" PROPN) ("Makkara" PROPN) ("Maku" PROPN) ("Suo" PROPN)
+    ("Kauha" PROPN) ("Tietty" PROPN) ("Muu" PROPN) ("Sen" PROPN)
+    ("Erinomainen" PROPN) ("Allekirjoittanut" PROPN) ("Markkina" PROPN)
+    ("Turu" PROPN) ("Muu" PROPN) ("Alku" PROPN) ("Lava" PROPN)
+    ("Tila" PROPN) ("Pyhä" PROPN) ("Suora" PROPN) ("He" PROPN)
+    ("Sen" PROPN) ("Ainoa" PROPN) ("Viimeinen" PROPN) ("Ole" PROPN)
+    ("Jo" PROPN) ("Ole" PROPN) ("Ihana" PROPN) ("Tos" PROPN)
+    ("Mies" PROPN) ("As" PROPN) ("Asi" PROPN) ("Viimeinen" PROPN)
+    ("Toivo" PROPN) ("Pitkä" PROPN) ("Viimeinen" PROPN)
+    ("Lusikka" PROPN) ("Asema" PROPN) ("Mies" PROPN) 
+    ("Olin" PROPN) ("Tieto" PROPN) ("Erä" PROPN) ("Jyrkänne" PROPN) 
+    ("Kello" PROPN) ("Kuppi" PROPN) ("Mutta" PROPN) ("Yhtiö" PROPN) 
+    ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN) 
+    ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ;
+LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2) 
+    ("tunti" POSSSG2) ("lupa" POSSSG2) ("rupi" POSSSG2) ("hai" POSSSG2) 
+    ("taju" POSSSG2) ("pyy" POSSSG2) ("kerä" POSSSG2) ("vasta" POSSSG2) 
+    ("pää" POSSSG2) ("harja" POSSSG2) ("vuo" POSSSG2) ("pää" POSSSG2);
+LIST SIITTÄÄ-VERBS = ("siittää" VERB) ("siitä" VERB) ("si’itä" VERB) ;
+LIST SIITÄ-DEM = ("se" PRON) ("se" DET) ;
+LIST SINUN = ("sinä" SG GEN) ;
 LIST JA-ADV = ("ja" ADV) ;
 LIST VAN-PROPN = ("van" PROPN) ;
 LIST HELSING-PROPN = ("Helsing" PROPN) ;
@@ -51,6 +91,9 @@ LIST ETTÄ-INTJ = ("että" INTJ) ;
 LIST SEKÄ-CCONJ = ("sekä" CCONJ) ;
 LIST ETTÄ-CCONJ = ("että" CCONJ) ;
 LIST NIISI-NOUN = ("niisi" NOUN) ;
+LIST ENTÄÄ-VERB = ("entää" VERB) ;
+LIST ENSIN-ADV = ("ensin" ADV) ;
+LIST NAINEN-VERB = ("naida" VERB POTN) ;
 # secondaries
 LIST RECASED = <*LOWERCASED> <*UPPERCASED> <*TITLECASED> <*DETITLECASED> ;
 LIST MIN-WEIGHT = <W=MIN> ;
@@ -64,6 +107,17 @@ REMOVE:bad-words BADEVIL_WORDS ;
 
 SECTION # all stuff
 
+# UD preferences
+
+# FIXME: use $$ to match lemma
+REMOVE:ordinal-is-adjective ORD (0 ADJ) ;
+
+# trad. possessives
+# sinun {kuusi, voisi, tiesi}
+REMOVE:only-poss-if-pron-sg2 SG2POSS-CONFUSION (NOT -1 SINUN) ;
+
+# surface-form specific disambiguation between few lexemes
+
 ##! $ ollaan menos sinne ja.
 REMOVE:ja-adv JA-ADV (NOT 1 ENDSENT) ;
 
@@ -76,21 +130,34 @@ REMOVE:sekä-että-cconj ETTÄ-CCONJ (NOT -1* SEKÄ-CCONJ) ;
 ##! € näitkö sen uuden van Helsingin episodin?
 REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 
+##! pulloissa on vanhan näköiset etiketit
+REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 PROPN) ;
+
+REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
+
 ##! € en oo sitä nähny
 ##! € en tule
-REMOVE:conneg-needs-neg CONNEG (NOT -1* <SUBCAT_NEG>) ;
+REMOVE:conneg-needs-neg CONNEG (NOT -1* <SUBCAT_NEG> BARRIER CONNEG) ;
 
 REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
 
+##! € siitä en tiedä mitään
+##! $ siitä maailma täyteen lapsia
+REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
+
+REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
+
 SECTION # last-resorts
 
+REMOVE:rare-propn-shadows-commons RARER_PROPN ;
 SELECT:prefer-punct-over-sym PUNCT (0 SYM);
 REMOVE:prefer-standard NONSTANDARDS ;
 REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 REMOVE:least-derivations DERIVATIONS ;
 SELECT:least-compounds MIN-COMPOUND ;
 SELECT:probably MIN-WEIGHT ;
-REMOVE:avoid-instructives INS ;
-REMOVE:avoid-abessives ABE (NOT 0 VERB + INFMA);
+REMOVE:avoid-instructives INS (NOT 0 VERB + INFE) ;
+REMOVE:avoid-abessives ABE (NOT 0 VERB + INFMA) ;
+REMOVE:avoid-clitics CLITIC ;
 
 # vim: set ft=vislcg3:
