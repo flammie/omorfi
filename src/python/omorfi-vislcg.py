@@ -24,8 +24,40 @@ def print_analyses_vislcg3(surf, anals, outfile):
         print('\t"', '#'.join(lemmas).replace('"', '\\"'), '" ',
               ' '.join(mrds), ' <CMP=' + str(len(lemmas)) + '>',
               sep='', file=outfile)
-    print(file=outfile)
 
+def get_surfs(line, omorfi):
+    if not line or line == '':
+        return [{'comment': ''}]
+    surfs = omorfi.tokenise(line)
+    first_in_sent = True
+    for surf in surfs:
+        if first_in_sent and surf["surf"][0].isupper():
+            if "analsurf" not in surf or surf['analsurf'][0].isupper():
+                surf['analsurf_override'] = surf['surf'][0].lower() + \
+                        surf['surf'][1:]
+                first_in_sent = False
+    return surfs
+
+def get_vislcg_surfs(line, prev):
+    line = line.rstrip()
+    if not line or line == '':
+        return [{'comment': ''}]
+    elif line.startswith("#") or line.startswith("<"):
+        return [{'comment': line.strip()}]
+    elif line.startswith('"<') and line.endswith('>"'):
+        surf = {'surf': line[2:-2]}
+        if prev and 'comment' in prev and (prev['comment'] == '' or \
+                prev['comment'].startswith('#') or \
+                prev['comment'].startswith('<')) and \
+                surf['surf'][0].isupper():
+            surf['analsurf_override'] = surf['surf'][0].lower() + \
+                    surf['surf'][1:]
+        return [surf]
+    elif line.startswith('\t"') or line.startswith(';\t"'):
+        # gold?
+        return [{'comment': line}]
+    else:
+        return [{'error': 'vislcg parsing: ' + line}]
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -68,51 +100,36 @@ def main():
     cpustart = process_time()
     tokens = 0
     unknowns = 0
-    if options.format=='text':
-        for line in options.infile:
-            if not line or line == '':
-                continue
-            surfs = omorfi.tokenise(line)
-            first_in_sent = True
-            for surf in surfs:
+    last = None
+    for line in options.infile:
+        surfs = []
+        if options.format == 'vislcg':
+            surfs = get_vislcg_surfs(line, last)
+        elif options.format == 'text':
+            surfs = get_surfs(line, omorfi)
+        else:
+            print("input format missing implementation", options.format,
+                file=stderr)
+            exit(2)
+        for surf in surfs:
+            if 'surf' in surf:
                 tokens += 1
-                if first_in_sent and surf["surf"][0].isupper():
-                    if "analsurf" not in surf or surf['analsurf'][0].isupper():
-                        surf['analsurf_override'] = surf['surf'][0].lower() + \
-                                surf['surf'][1:]
-                        first_in_sent = False
                 anals = omorfi.analyse(surf)
                 if len(anals) == 0 or (len(anals) == 1 and
                                        'UNKNOWN' in anals[0]['anal']):
                     unknowns += 1
                     anals = omorfi.guess(surf)
                 print_analyses_vislcg3(surf, anals, options.outfile)
-    elif options.format == 'vislcg':
-        for line in options.infile:
-            line = line.rstrip()
-            if not line or line == '':
-                print(file=options.outfile)
-            elif line.startswith("#") or line.startswith("<"):
-                print(line, file=options.outfile)
-            elif line.startswith('"<') and line.endswith('>"'):
-                tokens += 1
-                surf = {'surf': line[2:-2]}
-                anals = omorfi.analyse(surf)
-                if len(anals) == 0 or (len(anals) == 1 and
-                        'UNKNOWN' in anals[0]['anal']):
-                    unknowns += 1
-                    anals = omorfi.guess(surf)
-                print_analyses_vislcg3(surf, anals, options.outfile)
-            elif line.startswith('\t"') or line.startswith(';\t"'):
-                # gold?
-                pass
-            else:
-                print("Error parsing line", line, file=stderr)
+            elif 'comment' in surf:
+                if surf['comment'].startswith(';') or \
+                       surf['comment'].startswith('\t'):
+                    continue
+                else:
+                    print(surf['comment'], file=options.outfile)
+            elif 'error' in surf:
+                print(surf['error'], file=stderr)
                 exit(2)
-    else:
-        print("input format missing implementation", options.format,
-                file=stderr)
-        exit(2)
+            last = surf
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Unknown:", unknowns, unknowns / tokens * 100,
