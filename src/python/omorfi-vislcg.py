@@ -94,7 +94,10 @@ def main():
     if options.verbose:
         print("writing to", options.outfile.name)
     if not options.statfile:
-        options.statfile = stdout
+        if options.outfile == stdout:
+            options.statfile = stdout
+        else:
+            options.statfile = stderr
     # statistics
     realstart = perf_counter()
     cpustart = process_time()
@@ -132,11 +135,12 @@ def main():
             last = surf
     cpuend = process_time()
     realend = perf_counter()
-    print("Tokens:", tokens, "Unknown:", unknowns, unknowns / tokens * 100,
-          "%", file=options.statfile)
-    print("CPU time:", cpuend - cpustart, "Real time:", realend - realstart,
+    print("# Tokens:", tokens, "\n# Unknown:", unknowns,
+          unknowns / tokens * 100, "%", file=options.statfile)
+    print("# CPU time:", cpuend - cpustart,
+          "\n# Real time:", realend - realstart,
           file=options.statfile)
-    print("Tokens per timeunit:", tokens / (realend - realstart),
+    print("# Tokens per timeunit:", tokens / (realend - realstart),
           file=options.statfile)
     exit(0)
 
