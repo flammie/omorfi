@@ -908,6 +908,7 @@ Co.	1	org
 Col$	1	currency
 Cole	1	male
 Conny	1	male
+Conor	1	male
 cookinsaarelainen	1	country
 cookinsaarelainen	2	inhabitant
 cookinsaarelainen	3	country
@@ -1539,6 +1540,7 @@ forssalainen	2	inhabitant
 fPa	1	measure
 fr	1	currency
 frad	2	measure
+Frances	1	male
 Franco	2	male
 François	1	male
 frangi	1	currency
@@ -1601,6 +1603,7 @@ gambialainen	2	inhabitant
 gambialainen	3	country
 gambialainen	4	inhabitant
 ganda	1	language
+Gary	2	male
 gbaja	1	language
 GBP	1	currency
 GBq	2	measure
@@ -2222,6 +2225,7 @@ Iro	1	female
 irokeesikieli	1	language
 IRR	1	currency
 Isa	1	female
+Isaac	1	male
 Isabella	1	female
 Isak	1	male
 ISJ	1	currency
@@ -2439,6 +2443,7 @@ Jomi	1	male
 Jon	1	male
 Jonas	1	male
 Jonatan	1	male
+Jonathan	1	male
 Jone	1	male
 Joni	1	male
 Joni-Markku	1	male
