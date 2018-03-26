@@ -61,8 +61,18 @@ namespace omorfi {
     void
     Omorfi::loadFromDir(const std::string& dirname) {
         glob_t* globs;
+#ifdef GLOB_TILDE
         glob((dirname + "/omorfi*.hfst").c_str(), GLOB_TILDE, nullptr,
              globs);
+#else
+	if (dirname[0] == '~')
+            fprintf(stderr,
+                    "GLOB_TILDE is not supported on your platform, "
+                    "the tilde in \"%s\" won't be expanded.",
+                    dirname.c_str());
+
+        glob((dirname + "/omorfi*.hfst").c_str(), 0, nullptr, globs);
+#endif
         for (unsigned int i = 0; i < globs->gl_pathc; i++) {
             std::string filepath(globs->gl_pathv[1]);
             loadFile(filepath);
