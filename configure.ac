@@ -117,6 +117,13 @@ AC_ARG_ENABLE([hyphenator],
                              [enable_hyphenator=no])
 AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
 
+# libraries
+AC_ARG_WITH([java],
+            [AS_HELP_STRING([--without-java],
+                            [do not build java library])],
+            [with_java=$withval],
+            [with_java=yes])
+
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([--with-pbs-mail],
@@ -143,6 +150,7 @@ AC_ARG_ENABLE([big-tests],
                              [big_tests=$enableval],
                              [big_tests=no])
 AM_CONDITIONAL([WANT_BIG_TESTS], [test "x$big_tests" != xno])
+
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
 AC_MSG_RESULT([40 seconds to mars])
@@ -275,11 +283,17 @@ AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
+
 # require java for stuff
-AC_CHECK_CLASSPATH
-AX_PROG_JAVA
-AX_CHECK_CLASS([net.sf.hfst.Transducer])
-AM_CONDITIONAL([CAN_JAVA], [test x$HAVE_net_sf_hfst_Transducer != xno])
+if test "x$with_java" = xyes
+then
+    AC_CHECK_CLASSPATH
+    AX_PROG_JAVA
+    AX_CHECK_CLASS([net.sf.hfst.Transducer])
+    AM_CONDITIONAL([CAN_JAVA], [test x$HAVE_net_sf_hfst_Transducer != xno])
+else
+    AM_CONDITIONAL([CAN_JAVA], [test x = y])
+fi
 
 # separated my scripts for corpora fetching, some preprocessing
 AC_PATH_PROG([FETCH_EUROPARL], [fetch-europarl.bash], [false])
@@ -352,6 +366,9 @@ Configured $PACKAGE_STRING:
     * segmenter: $enable_segmenter
     * lemmatiser: $enable_lemmatiser
     * hyphenators: $enable_hyphenator
+* Libraries
+    * Python 3: yes
+    * Java: $with_java
 * Clusters
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
     * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail
