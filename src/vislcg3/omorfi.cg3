@@ -25,8 +25,8 @@ STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ
     POSSSG1 POSSSG2 POSSSP3 POSSPL1 POSSPL2
     HAN KO PA S KA KAAN KIN
     ORD CARD
-    <SUBCAT_NEG> CONNEG
-    <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN> 
+    NEG CONNEG
+    <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN>
     <DRV_MA> <DRV_JA> <DRV_NEN>
     <STYLE_DIALECTAL> <STYLE_ARCHAIC> <STYLE_NONSTANDARD> ;
 OPTIONS += no-inline-sets ;
@@ -48,7 +48,7 @@ LIST ENDSENT = "<.>" "<!>" "<?>" ;
 # words
 
 ## short words that many find problems with
-LIST BADEVIL_WORDS = 
+LIST BADEVIL_WORDS =
     ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ("pai" NOUN)
     ("par" NOUN) ("tule" NOUN) ("kuvi" NOUN) ("kos" NOUN)
     ("mon" NOUN) ("lev" NOUN)
@@ -56,11 +56,11 @@ LIST BADEVIL_WORDS =
     ("he" INTJ) ;
 
 ## propns that overlap commoner words
-LIST RARER_PROPN = 
+LIST RARER_PROPN =
     ("Vanha" PROPN) ("Mei" PROPN) ("Osa" PROPN) ("Hanska" PROPN)
     ("Osta" PROPN) ("Leikkaa" PROPN) ("Varo" PROPN) ("Tarkki" PROPN)
     ("Onkki" PROPN) ("Ede" PROPN) ("Mietti" PROPN) ("Metsä" PROPN)
-    ("Puu" PROPN) ("Koto" PROPN) ("Mörä" PROPN) ("Tuli" PROPN) 
+    ("Puu" PROPN) ("Koto" PROPN) ("Mörä" PROPN) ("Tuli" PROPN)
     ("Hauska" PROPN) ("Uutinen" PROPN) ("Piha" PROPN) ("Sakko" PROPN)
     ("Ota" PROPN) ("Leikkaa" PROPN) ("Lähdet" PROPN) ("Matka" PROPN)
     ("Lähellä" PROPN) ("Makkara" PROPN) ("Maku" PROPN) ("Suo" PROPN)
@@ -72,14 +72,14 @@ LIST RARER_PROPN =
     ("Jo" PROPN) ("Ole" PROPN) ("Ihana" PROPN) ("Tos" PROPN)
     ("Mies" PROPN) ("As" PROPN) ("Asi" PROPN) ("Viimeinen" PROPN)
     ("Toivo" PROPN) ("Pitkä" PROPN) ("Viimeinen" PROPN)
-    ("Lusikka" PROPN) ("Asema" PROPN) ("Mies" PROPN) 
-    ("Olin" PROPN) ("Tieto" PROPN) ("Erä" PROPN) ("Jyrkänne" PROPN) 
-    ("Kello" PROPN) ("Kuppi" PROPN) ("Mutta" PROPN) ("Yhtiö" PROPN) 
-    ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN) 
+    ("Lusikka" PROPN) ("Asema" PROPN) ("Mies" PROPN)
+    ("Olin" PROPN) ("Tieto" PROPN) ("Erä" PROPN) ("Jyrkänne" PROPN)
+    ("Kello" PROPN) ("Kuppi" PROPN) ("Mutta" PROPN) ("Yhtiö" PROPN)
+    ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN)
     ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ;
-LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2) 
-    ("tunti" POSSSG2) ("lupa" POSSSG2) ("rupi" POSSSG2) ("hai" POSSSG2) 
-    ("taju" POSSSG2) ("pyy" POSSSG2) ("kerä" POSSSG2) ("vasta" POSSSG2) 
+LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2)
+    ("tunti" POSSSG2) ("lupa" POSSSG2) ("rupi" POSSSG2) ("hai" POSSSG2)
+    ("taju" POSSSG2) ("pyy" POSSSG2) ("kerä" POSSSG2) ("vasta" POSSSG2)
     ("pää" POSSSG2) ("harja" POSSSG2) ("vuo" POSSSG2) ("pää" POSSSG2);
 LIST SIITTÄÄ-VERBS = ("siittää" VERB) ("siitä" VERB) ("si’itä" VERB) ;
 LIST SIITÄ-DEM = ("se" PRON) ("se" DET) ;
@@ -137,7 +137,7 @@ REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 
 ##! € en oo sitä nähny
 ##! € en tule
-REMOVE:conneg-needs-neg CONNEG (NOT -1* <SUBCAT_NEG> BARRIER CONNEG) ;
+REMOVE:conneg-needs-neg CONNEG (NOT -1* NEG BARRIER CONNEG) ;
 
 REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
 

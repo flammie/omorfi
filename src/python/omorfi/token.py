@@ -250,15 +250,8 @@ def get_vislcg_feats(token):
     for feat in feats:
         key = feat.split("=")[0].strip("[")
         value = feat.split("=")[1].strip("]")
-        if key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
-                "POSITION", "ABBR", "FOREIGN"]:
-            # semantics, non-core morph in brackets
-            vislcgs += ["<" + key + "_" + value + ">"]
-        elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
-                "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
-                "CONJ"]:
-            # core morph show only value as is (omor style though)
-            vislcgs += [value]
+        if key == "SUBCAT" and value == "NEG":
+            vislcgs += ["NEG"]
         elif key in ["CLIT", "INF", "PCP", "POSS"]:
             # ...except when only value is too short
             vislcgs += [key + value]
@@ -275,9 +268,18 @@ def get_vislcg_feats(token):
             else:
                 print("Unhandled boundary = ", value, "in", token)
                 exit(1)
+        elif key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
+                     "POSITION", "ABBR", "FOREIGN"]:
+            # semantics, non-core morph in brackets
+            vislcgs += ["<" + key + "_" + value + ">"]
+        elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
+                     "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
+                     "CONJ"]:
+            # core morph show only value as is (omor style though)
+            vislcgs += [value]
         else:
             print("Unhandled", key, "=", value, "in", token,
-                    "for vislcg")
+                  "for vislcg")
             exit(1)
     if "recase" in token and token['recase'] != "ORIGINALCASE":
         vislcgs += ["<*" + token['recase'] + ">"]
@@ -291,7 +293,8 @@ def get_vislcg_feats(token):
 
 
 def get_segments(token, split_morphs=True, split_words=True,
-        split_new_words=True, split_derivs=False, split_nonwords=False):
+                 split_new_words=True, split_derivs=False,
+                 split_nonwords=False):
     segments = token['segments']
     # this code is ugly
     segments = [segments.replace('{hyph?}', '')]
