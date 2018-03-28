@@ -83,7 +83,7 @@
 # text = Muita matkalla sinne?
 # sent_id =  b104.5
 "<Muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<matkalla>"
 	"matka" NOUN ADE SG
 "<sinne>"
@@ -151,7 +151,7 @@
 "<tutustuimme>"
 	"tutustua" VERB INDV PL1 PAST ACT
 "<moniin>"
-	"moni" PRON ILL PL INDV
+	"moni" PRON ILL PL
 "<mukaviin>"
 	"mukava" ADJ ILL POS PL
 "<ihmisiin>"
@@ -552,7 +552,7 @@
 "<joulua>"
 	"joulu" NOUN PAR SG
 "<kaikille>"
-	"kaikki" PRON ALL PL INDV
+	"kaikki" PRON ALL PL
 "<tutuille>"
 	"tuttu" NOUN ALL POS PL
 "<ja>"
@@ -889,7 +889,7 @@
 "<saada>"
 	"saada" VERB INFA SG ACT
 "<jonkun>"
-	"joku" PRON GEN SG INDV
+	"joku" PRON GEN SG
 "<vinkin>"
 	"vinkki" NOUN GEN SG
 "<seuraavaksi>"
@@ -1087,7 +1087,7 @@
 "<,>"
 	"," PUNCT
 "<jokaisella>"
-	"jokainen" PRON ADE SG INDV
+	"jokainen" PRON ADE SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<näistä>"
@@ -1630,7 +1630,7 @@
 "<että>"
 	"että" SCONJ
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<asettuu>"
 	"asettua" VERB INDV SG3 PRESENT ACT
 "<kohdalleen>"
@@ -1766,7 +1766,7 @@
 "<että>"
 	"että" SCONJ
 "<kumpikaan>"
-	"kumpikaan" PRON NOM SG INDV
+	"kumpikaan" PRON NOM SG
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<sitä>"
@@ -1908,7 +1908,7 @@
 # text = Eräs, jo yli 70-vuotias mies keskusteli psykologin kanssa siitä, että hän haluaisi jatkaa seksielämää, mutta hänen vaimonsa sairastaa vakavaa tautia, eikä enää pysty harrastamaan seksiä.
 # sent_id =  b401.34
 "<Eräs>"
-	"eräs" PRON NOM SG INDV
+	"eräs" PRON NOM SG
 "<,>"
 	"," PUNCT
 "<jo>"
@@ -2322,7 +2322,7 @@
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<vinkit>"
 	"vinkki" NOUN NOM PL
 "<,>"
@@ -2332,7 +2332,7 @@
 "<löytyvät>"
 	"löytyä" VERB INDV PL3 PRESENT ACT
 "<muistakin>"
-	"muu" PRON ELA KIN PL INDV
+	"muu" PRON ELA KIN PL
 "<oppaista>"
 	"opas" NOUN ELA PL
 "<,>"
@@ -2422,7 +2422,7 @@
 "<kertomalla>"
 	"kertoa" VERB ADE INFMA SG ACT
 "<muutamia>"
-	"muutama" PRON PAR PL INDV
+	"muutama" PRON PAR PL
 "<kirjan>"
 	"kirja" NOUN GEN SG
 "<kirjoittajan>"
@@ -3212,7 +3212,7 @@
 "<jakavat>"
 	"jakaa" VERB INDV PL3 PRESENT ACT
 "<samat>"
-	"sama" PRON NOM PL INDV
+	"sama" PRON NOM PL
 "<ajatukset>"
 	"ajatus" NOUN NOM PL
 "<kanssanne>"
@@ -3233,7 +3233,7 @@
 "<ja>"
 	"ja" CCONJ
 "<muiden>"
-	"muu" PRON GEN PL INDV
+	"muu" PRON GEN PL
 "<naisten>"
 	"nainen" NOUN GEN PL
 "<seurassa>"
@@ -3534,7 +3534,7 @@
 "<ja>"
 	"ja" CCONJ
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<aina>"
@@ -3571,7 +3571,7 @@
 "<kun>"
 	"kun" SCONJ
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<puhuu>"
 	"puhua" VERB INDV SG3 PRESENT ACT
 "<suomea>"
@@ -3823,7 +3823,7 @@
 "<nyt>"
 	"nyt" ADV
 "<joltain>"
-	"jokin" PRON ABL SG INDV
+	"jokin" PRON ABL SG
 "<hippimummelin>"
 	"hippi#mummeli" NOUN GEN SG
 "<päähineeltä>"
@@ -4636,7 +4636,7 @@
 "<kaverina>"
 	"kaveri" NOUN ESS SG
 "<muitakin>"
-	"muu" PRON PAR KIN PL INDV
+	"muu" PRON PAR KIN PL
 "<täytteitä>"
 	"täyte" NOUN PAR PL
 "<.>"
@@ -4772,7 +4772,7 @@
 "<En>"
 	"ei" AUX SG1 NEG ACT
 "<mullään>"
-	"mikään" PRON ADE SG INDV YES
+	"mikään" PRON ADE SG YES
 "<muista>"
 	"muistaa" VERB CONNEG INDV PRESENT
 "<kenen>"
@@ -4807,7 +4807,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kaikille>"
-	"kaikki" PRON ALL PL INDV
+	"kaikki" PRON ALL PL
 "<tuttu>"
 	"tuttu" ADJ NOM POS SG
 "<,>"
@@ -4827,7 +4827,7 @@
 "<siinä>"
 	"se" PRON INE SG DEM
 "<jossakin>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<blogissa>"
 	"blogi" NOUN INE SG
 "<.>"
@@ -4974,7 +4974,7 @@
 "<kuin>"
 	"kuin" SCONJ
 "<muut>"
-	"muu" PRON NOM PL INDV
+	"muu" PRON NOM PL
 "<.>"
 	"." PUNCT
 
@@ -5048,7 +5048,7 @@
 "<kun>"
 	"kun" SCONJ
 "<eräs>"
-	"eräs" PRON NOM SG INDV
+	"eräs" PRON NOM SG
 "<amerikkalainen>"
 	"amerikkalainen" ADJ NOM POS <Lainen> SG
 "<valmistaja>"
@@ -5079,7 +5079,7 @@
 "<että>"
 	"että" SCONJ
 "<molemmissa>"
-	"molemmat" PRON INE PL INDV
+	"molemmat" PRON INE PL
 "<tapauksissa>"
 	"tapaus" NOUN INE PL
 "<,>"
@@ -5177,7 +5177,7 @@
 "<tai>"
 	"tai" CCONJ
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<vaarallisia>"
 	"vaarallinen" ADJ PAR POS <Llinen> PL
 "<osia>"
@@ -5357,7 +5357,7 @@
 "<esiinny>"
 	"esiintyä" VERB CONNEG INDV PRESENT
 "<jossakin>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<kohtaa>"
 	"kohta" NOUN PAR SG
 "<ongelmia>"
@@ -5388,7 +5388,7 @@
 "<että>"
 	"että" SCONJ
 "<jossain>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<toimitaan>"
 	"toimia" VERB INDV PRESENT PASS
 "<petollisessa>"
@@ -5496,7 +5496,7 @@
 "<tehdä>"
 	"tehdä" VERB INFA SG ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<.>"
 	"." PUNCT
 
@@ -5706,7 +5706,7 @@
 "<koituu>"
 	"koitua" VERB INDV SG3 PRESENT ACT
 "<jossain>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<vaiheessa>"
 	"vaihe" NOUN INE SG
 "<vahinkoa>"
@@ -5773,7 +5773,7 @@
 "<joka>"
 	"joka" PRON NOM SG REL
 "<ainoalla>"
-	"ainoa" PRON ADE SG INDV
+	"ainoa" PRON ADE SG
 "<etapilla>"
 	"etappi" NOUN ADE SG
 "<,>"
@@ -6070,7 +6070,7 @@
 "<käsitellään>"
 	"käsitellä" VERB INDV PRESENT PASS
 "<monia>"
-	"moni" PRON PAR PL INDV
+	"moni" PRON PAR PL
 "<äskettäin>"
 	"äskettäin" ADV <Ttain>
 "<havaittuja>"
@@ -6185,7 +6185,7 @@
 "<todeta>"
 	"todeta" VERB INFA SG ACT
 "<jotain>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<CE-merkinnästä>"
 	"CE#merkintä" NOUN ELA SG
 "<:>"
@@ -6284,7 +6284,7 @@
 # text = Monissa tapauksissa valmistaja ei saa käyttää CE-merkintää oman arvionsa ja oman todistuksensa perusteella, vaan sen on saatava kolmannen osapuolen arvio, nimittäin aina silloin, kun tuotteen viallisesta toiminnasta voi olla vaaraa käyttäjälle.
 # sent_id =  e1008.40
 "<Monissa>"
-	"moni" PRON INE PL INDV
+	"moni" PRON INE PL
 "<tapauksissa>"
 	"tapaus" NOUN INE PL
 "<valmistaja>"
@@ -6481,7 +6481,7 @@
 "<joka>"
 	"joka" PRON NOM SG REL
 "<ainoan>"
-	"ainoa" PRON GEN SG INDV
+	"ainoa" PRON GEN SG
 "<markkinoille>"
 	"markkina" NOUN ALL PL
 "<tulevan>"
@@ -6707,7 +6707,7 @@
 "<saa>"
 	"saada" VERB CONNEG INDV PRESENT
 "<missään>"
-	"mikään" PRON INE SG INDV
+	"mikään" PRON INE SG
 "<olosuhteissa>"
 	"olo#suhde" NOUN INE PL
 "<vaarantaa>"
@@ -6744,7 +6744,7 @@
 "<että>"
 	"että" SCONJ
 "<kukaan>"
-	"kukaan" PRON NOM SG INDV
+	"kukaan" PRON NOM SG
 "<sellaista>"
 	"sellainen" NOUN PAR <Lainen> SG
 "<suunnittelee>"
@@ -6889,7 +6889,7 @@
 "<joka>"
 	"joka" PRON NOM SG REL
 "<ainoaa>"
-	"ainoa" PRON PAR SG INDV
+	"ainoa" PRON PAR SG
 "<tuotantoprosessin>"
 	"tuotanto#prosessi" NOUN GEN SG
 "<ja>"
@@ -7010,7 +7010,7 @@
 "<jo>"
 	"jo" ADV
 "<monta>"
-	"moni" PRON PAR SG INDV
+	"moni" PRON PAR SG
 "<kertaa>"
 	"kerta" NOUN PAR SG
 "<->"
@@ -7117,7 +7117,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<jossain>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<suhteessa>"
 	"suhde" NOUN INE SG
 "<tuotteen>"
@@ -7299,7 +7299,7 @@
 "<ja>"
 	"ja" CCONJ
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<Euroopan>"
 	"Eurooppa" PROPN GEN SG
 "<parlamentin>"
@@ -7789,7 +7789,7 @@
 "<torjun>"
 	"torjua" VERB INDV SG1 PRESENT ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<nämä>"
 	"tämä" PRON NOM PL DEM
 "<ilkeämieliset>"
@@ -8036,7 +8036,7 @@
 "<sanonut>"
 	"sanoa" VERB NOM POS SG PAST ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<sellaista>"
 	"sellainen" ADJ PAR <Lainen> SG
 "<.>"
@@ -8045,7 +8045,7 @@
 # text = Kaikki tämä on erottamaton osa vastalausettani, jonka parlamentin jäsenet ehkä ymmärtävät, mutta jolle kansalaiset varmasti osaavat antaa oikean arvon.
 # sent_id =  e1075.7
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<tämä>"
 	"tämä" PRON NOM SG DEM
 "<on>"
@@ -8178,7 +8178,7 @@
 "<helpottanut>"
 	"helpottaa" VERB NOM POS SG PAST ACT
 "<monien>"
-	"moni" PRON GEN PL INDV
+	"moni" PRON GEN PL
 "<eurooppalaisten>"
 	"eurooppalainen" NOUN GEN <Lainen> PL
 "<vapaata>"
@@ -8195,7 +8195,7 @@
 "<myös>"
 	"myös" ADV
 "<kaikille>"
-	"kaikki" PRON ALL PL INDV
+	"kaikki" PRON ALL PL
 "<niille>"
 	"se" PRON ALL PL DEM
 "<henkilöille>"
@@ -8240,7 +8240,7 @@
 "<ratkaistava>"
 	"ratkaista" VERB NOM POS SG PRESENT PASS
 "<useita>"
-	"usea" PRON PAR PL INDV
+	"usea" PRON PAR PL
 "<ongelmia>"
 	"ongelma" NOUN PAR PL
 "<tällä>"
@@ -8366,7 +8366,7 @@
 "<puitesopimus>"
 	"puite#sopimus" NOUN NOM SG
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<ongelmat>"
 	"ongelma" NOUN NOM PL
 "<?>"
@@ -8406,7 +8406,7 @@
 "<Toimivatko>"
 	"toimia" VERB KO INDV PL3 PRESENT ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<jäsenvaltiot>"
 	"jäsen#valtio" NOUN NOM PL
 "<vilpittömässä>"
@@ -8521,7 +8521,7 @@
 "<alueesta>"
 	"alue" NOUN ELA SG
 "<kaikille>"
-	"kaikki" PRON ALL PL INDV
+	"kaikki" PRON ALL PL
 "<turvallinen>"
 	"turvallinen" ADJ NOM POS <Llinen> SG
 "<alue>"
@@ -9108,7 +9108,7 @@
 "<pystyvät>"
 	"pystyä" VERB INDV PL3 PRESENT ACT
 "<jossain>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<määrin>"
 	"määrin" ADV
 "<hoitamaan>"
@@ -9359,7 +9359,7 @@
 "<katsellen>"
 	"katsella" VERB INS INFE SG ACT
 "<samoja>"
-	"sama" PRON PAR PL INDV
+	"sama" PRON PAR PL
 "<korkeita>"
 	"korkea" ADJ PAR POS PL
 "<taloja>"
@@ -9784,7 +9784,7 @@
 "<lähtisi>"
 	"lähteä" VERB COND SG3 ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<osat>"
 	"osa" NOUN NOM PL
 "<irti>"
@@ -9805,7 +9805,7 @@
 "<jo>"
 	"jo" ADV
 "<monta>"
-	"moni" PRON PAR SG INDV
+	"moni" PRON PAR SG
 "<kuukautta>"
 	"kuu#kausi" NOUN PAR SG
 "<.>"
@@ -10311,7 +10311,7 @@
 "<sitten>"
 	"sitten" ADV
 "<jossain>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<vaiheessa>"
 	"vaihe" NOUN INE SG
 "<hän>"
@@ -10376,7 +10376,7 @@
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<kukaan>"
-	"kukaan" PRON NOM SG INDV
+	"kukaan" PRON NOM SG
 "<voi>"
 	"voida" AUX CONNEG INDV PRESENT
 "<tietää>"
@@ -10407,9 +10407,9 @@
 "<tiedetä>"
 	"tietää" VERB CONNEG INDV PRESENT PASS
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<muuta>"
-	"muu" PRON PAR SG INDV
+	"muu" PRON PAR SG
 "<kuin>"
 	"kuin" SCONJ
 "<se>"
@@ -10430,7 +10430,7 @@
 # text = Kukaan ei edes tiedä missä hän asuu.
 # sent_id =  f401.44
 "<Kukaan>"
-	"kukaan" PRON NOM SG INDV
+	"kukaan" PRON NOM SG
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<edes>"
@@ -10739,7 +10739,7 @@
 "<saivat>"
 	"saada" VERB INDV PL3 PAST ACT
 "<kaiken>"
-	"kaikki" PRON GEN SG INDV
+	"kaikki" PRON GEN SG
 "<näyttämään>"
 	"näyttää" VERB ILL INFMA SG ACT
 "<vääristyneeltä>"
@@ -10768,7 +10768,7 @@
 "<nimen>"
 	"nimi" NOUN GEN SG
 "<samaan>"
-	"sama" PRON ILL SG INDV
+	"sama" PRON ILL SG
 "<sävyyn>"
 	"sävy" NOUN ILL SG
 "<kuin>"
@@ -10848,7 +10848,7 @@
 # text = Kaikki siellä tulee muistuttamaan hänestä.
 # sent_id =  f402.6
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<siellä>"
 	"siellä" ADV
 "<tulee>"
@@ -11360,7 +11360,7 @@
 "<,>"
 	"," PUNCT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sumeaa>"
@@ -11642,7 +11642,7 @@
 # text = Sama viikonloppu, jolloin kuva otettiin.
 # sent_id =  f402.46
 "<Sama>"
-	"sama" PRON NOM SG INDV
+	"sama" PRON NOM SG
 "<viikonloppu>"
 	"viikon#loppu" NOUN NOM <U> SG
 "<,>"
@@ -11728,7 +11728,7 @@
 "<Äkkiä>"
 	"äkkiä" ADV
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<näkyi>"
 	"näkyä" VERB INDV SG3 PAST ACT
 "<välähdyksinä>"
@@ -11992,7 +11992,7 @@
 "<ja>"
 	"ja" CCONJ
 "<jotakin>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<jääkiekkojoukkuetta>"
 	"jää#kiekko#joukkue" NOUN PAR SG
 "<mainostava>"
@@ -12223,7 +12223,7 @@
 "<ole>"
 	"olla" AUX CONNEG INDV PRESENT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<merkitystä>"
 	"merkitys" NOUN PAR SG
 "<.>"
@@ -12333,7 +12333,7 @@
 "<niissä>"
 	"se" PRON INE PL DEM
 "<kaikissa>"
-	"kaikki" PRON INE PL INDV
+	"kaikki" PRON INE PL
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<kuitenkin>"
@@ -12415,7 +12415,7 @@
 "<elämääni>"
 	"elämä" NOUN PAR SG SING 1
 "<jonkun>"
-	"joku" PRON GEN SG INDV
+	"joku" PRON GEN SG
 "<välttämättömän>"
 	"välttämätön" ADJ GEN POS <Ton> SG
 "<rahanlähteen>"
@@ -12524,7 +12524,7 @@
 "<,>"
 	"," PUNCT
 "<joku>"
-	"joku" PRON NOM SG INDV
+	"joku" PRON NOM SG
 "<toinen>"
 	"toinen" PRON NOM SG RCP
 "<raukka>"
@@ -12565,7 +12565,7 @@
 "<Haluaako>"
 	"haluta" VERB KO INDV SG3 PRESENT ACT
 "<kukaan>"
-	"kukaan" PRON NOM SG INDV
+	"kukaan" PRON NOM SG
 "<tulla>"
 	"tulla" VERB INFA SG ACT
 "<määriteltäväksi>"
@@ -12903,7 +12903,7 @@
 "<minulla>"
 	"minä" PRON ADE SG1 PRS
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<tarvittava>"
 	"tarvita" VERB NOM POS SG PRESENT PASS
 "<mukanani>"
@@ -12977,7 +12977,7 @@
 "<ei>"
 	"ei" VERB SG0 NEG ACT
 "<muuna>"
-	"muu" PRON ESS SG INDV
+	"muu" PRON ESS SG
 "<,>"
 	"," PUNCT
 "<niin>"
@@ -13056,7 +13056,7 @@
 "<kuin>"
 	"kuin" SCONJ
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<julkaisematta>"
 	"julkaista" VERB ABE INFMA SG ACT
 "<jääneet>"
@@ -13234,7 +13234,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<ku>"
 	"kun" SCONJ COLL
 "<se>"
@@ -13580,9 +13580,9 @@
 "<eikä>"
 	"ei" VERB KA SG3 NEG ACT
 "<kukaan>"
-	"kukaan" PRON NOM SG INDV
+	"kukaan" PRON NOM SG
 "<muukaan>"
-	"muu" PRON NOM KAAN SG INDV
+	"muu" PRON NOM KAAN SG
 "<meistä>"
 	"minä" PRON ELA PL1 PRS
 "<tykkää>"
@@ -13773,7 +13773,7 @@
 "<tai>"
 	"tai" CCONJ
 "<molempia>"
-	"molemmat" PRON PAR PL INDV
+	"molemmat" PRON PAR PL
 "<mitä>"
 	"mikä" PRON PAR SG REL
 "<vaan>"
@@ -13822,7 +13822,7 @@
 "<on>"
 	"olla" AUX INDV SG3 COLL PRESENT ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<sen>"
 	"se" PRON GEN SG DEM
 "<narkkareita>"
@@ -13929,7 +13929,7 @@
 "<Tai>"
 	"tai" CCONJ
 "<muut>"
-	"muu" PRON NOM PL INDV
+	"muu" PRON NOM PL
 "<sanoo>"
 	"sanoa" VERB INDV PL3 COLL PRESENT ACT
 "<,>"
@@ -13972,7 +13972,7 @@
 "<koskaan>"
 	"koskaan" ADV
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<,>"
 	"," PUNCT
 "<kirjotan>"
@@ -14173,9 +14173,9 @@
 "<ja>"
 	"ja" CCONJ
 "<kaikkee>"
-	"kaikki" PRON PAR SG INDV COLL
+	"kaikki" PRON PAR SG COLL
 "<muuta>"
-	"muu" PRON PAR SG INDV
+	"muu" PRON PAR SG
 "<meteliä>"
 	"meteli" NOUN PAR SG
 "<.>"
@@ -14242,7 +14242,7 @@
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<minkään>"
-	"mikään" PRON GEN SG INDV
+	"mikään" PRON GEN SG
 "<jengin>"
 	"jengi" NOUN GEN SG
 "<maa>"
@@ -14324,7 +14324,7 @@
 "<sanoo>"
 	"sanoa" VERB INDV PL3 COLL PRESENT ACT
 "<kaikkia>"
-	"kaikki" PRON PAR PL INDV
+	"kaikki" PRON PAR PL
 "<ihmisiä>"
 	"ihminen" NOUN PAR PL
 "<paskapusseiks>"
@@ -14454,7 +14454,7 @@
 "<ainaki>"
 	"ainakin" ADV COLL
 "<jotku>"
-	"joku" PRON NOM PL INDV COLL
+	"joku" PRON NOM PL COLL
 "<.>"
 	"." PUNCT
 
@@ -14538,7 +14538,7 @@
 # text = Jotku luulee, et koneet on kovia eikä niille pärjää, mut ei se nii mee.
 # sent_id =  f803.47
 "<Jotku>"
-	"joku" PRON NOM PL INDV COLL
+	"joku" PRON NOM PL COLL
 "<luulee>"
 	"luulla" VERB INDV PL3 COLL PRESENT ACT
 "<,>"
@@ -14575,7 +14575,7 @@
 # text = Jotku niistä on sairaan nopeita, mut ne on sit heikkoi.
 # sent_id =  f803.48
 "<Jotku>"
-	"joku" PRON NOM PL INDV COLL
+	"joku" PRON NOM PL COLL
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<on>"
@@ -14604,7 +14604,7 @@
 "<Sit>"
 	"sitten" ADV COLL
 "<jotku>"
-	"joku" PRON NOM PL INDV COLL
+	"joku" PRON NOM PL COLL
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<on>"
@@ -14631,7 +14631,7 @@
 # text = Jotku niistä sammahtaa tosi nopeesti.
 # sent_id =  f803.50
 "<Jotku>"
-	"joku" PRON NOM PL INDV COLL
+	"joku" PRON NOM PL COLL
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<sammahtaa>"
@@ -14801,7 +14801,7 @@
 # text = Yks niistä on sellanen mainospelle, se on karannu jostain pikaruokalasta.
 # sent_id =  f803.56
 "<Yks>"
-	"yksi" PRON NOM SG INDV COLL
+	"yksi" PRON NOM SG COLL
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<on>"
@@ -14819,7 +14819,7 @@
 "<karannu>"
 	"karata" VERB NOM POS SG PAST COLL ACT
 "<jostain>"
-	"jokin" PRON ELA SG INDV
+	"jokin" PRON ELA SG
 "<pikaruokalasta>"
 	"pika#ruokala" NOUN ELA SG
 "<.>"
@@ -14828,7 +14828,7 @@
 # text = Yks toinen on sitte sellanen linkkaava köyryselkänen rautakanki, joka on aina tukevasti kamois.
 # sent_id =  f803.57
 "<Yks>"
-	"yksi" PRON NOM SG INDV COLL
+	"yksi" PRON NOM SG COLL
 "<toinen>"
 	"toinen" PRON NOM SG RCP
 "<on>"
@@ -14865,7 +14865,7 @@
 "<on>"
 	"olla" AUX INDV PL3 COLL PRESENT ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<sellasii>"
 	"sellainen" ADJ PAR POS <Lainen> PL COLL
 "<säälittävii>"
@@ -15087,7 +15087,7 @@
 "<sille>"
 	"se" PRON ALL SG DEM
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<sanookaan>"
 	"sanoa" VERB KAAN INFA SG COLL ACT
 "<.>"
@@ -15235,7 +15235,7 @@
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<muu>"
-	"muu" PRON NOM SG INDV
+	"muu" PRON NOM SG
 "<jengi>"
 	"jengi" NOUN NOM SG
 "<sitä>"
@@ -15360,7 +15360,7 @@
 "<ja>"
 	"ja" CCONJ
 "<kaikkee>"
-	"kaikki" PRON PAR SG INDV COLL
+	"kaikki" PRON PAR SG COLL
 "<.>"
 	"." PUNCT
 
@@ -15466,7 +15466,7 @@
 "<vaikuttanut>"
 	"vaikuttaa" VERB NOM POS SG PAST ACT
 "<millään>"
-	"mikään" PRON ADE SG INDV
+	"mikään" PRON ADE SG
 "<lailla>"
 	"lailla" ADV
 "<A.>"
@@ -15512,7 +15512,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<ihmeellistä>"
 	"ihmeellinen" ADJ PAR POS <Llinen> SG
 "<,>"
@@ -15578,7 +15578,7 @@
 "<tiennyt>"
 	"tietää" VERB NOM POS SG PAST ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<yli>"
 	"yli" ADV
 "<1000>"
@@ -15686,7 +15686,7 @@
 "<hoitamaan>"
 	"hoitaa" VERB ILL INFMA SG ACT
 "<jonkun>"
-	"joku" PRON GEN SG INDV
+	"joku" PRON GEN SG
 "<pätevän>"
 	"pätevä" ADJ GEN POS SG
 "<henkilön>"
@@ -15699,7 +15699,7 @@
 "<Hieman>"
 	"hieman" ADV
 "<samaan>"
-	"sama" PRON ILL SG INDV
+	"sama" PRON ILL SG
 "<tyyliin>"
 	"tyyli" NOUN ILL SG
 "<kuin>"
@@ -15760,7 +15760,7 @@
 "<ole>"
 	"olla" VERB CONNEG INDV PRESENT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<tekemistä>"
 	"tekeminen" NOUN PAR <Minen> SG
 "<sen>"
@@ -15879,7 +15879,7 @@
 "<kirjoittamisesta>"
 	"kirjoittaminen" NOUN ELA <Minen> SG
 "<muuta>"
-	"muu" PRON PAR SG INDV
+	"muu" PRON PAR SG
 "<kuin>"
 	"kuin" SCONJ
 "<sen>"
@@ -16118,7 +16118,7 @@
 "<kuinka>"
 	"kuinka" ADV
 "<monta>"
-	"moni" PRON PAR SG INDV
+	"moni" PRON PAR SG
 "<kilometriä>"
 	"kilo#metri" NOUN PAR SG
 "<enemmän>"
@@ -16207,7 +16207,7 @@
 "<jo>"
 	"jo" ADV
 "<monet>"
-	"moni" PRON NOM PL INDV
+	"moni" PRON NOM PL
 "<vuodet>"
 	"vuosi" NOUN NOM PL
 "<.>"
@@ -16889,7 +16889,7 @@
 # text = Kaikilla variaatioilla kokeiltuna, kahvi oli parasta mustana.
 # sent_id =  fF01.28
 "<Kaikilla>"
-	"kaikki" PRON ADE PL INDV
+	"kaikki" PRON ADE PL
 "<variaatioilla>"
 	"variaatio" NOUN ADE PL
 "<kokeiltuna>"
@@ -16997,7 +16997,7 @@
 "<vieden>"
 	"viedä" VERB INS INFE SG ACT
 "<kaiken>"
-	"kaikki" PRON GEN SG INDV
+	"kaikki" PRON GEN SG
 "<huomion>"
 	"huomio" NOUN GEN SG
 "<,>"
@@ -17013,7 +17013,7 @@
 "<jakaa>"
 	"jakaa" VERB INFA SG ACT
 "<muille>"
-	"muu" PRON ALL PL INDV
+	"muu" PRON ALL PL
 "<asioille>"
 	"asia" NOUN ALL PL
 "<.>"
@@ -17381,7 +17381,7 @@
 "<Otan>"
 	"ottaa" VERB INDV SG1 PRESENT ACT
 "<kaikesta>"
-	"kaikki" PRON ELA SG INDV
+	"kaikki" PRON ELA SG
 "<huolimatta>"
 	"huolimatta" ADP POST
 "<uuden>"
@@ -17491,7 +17491,7 @@
 "<mahdollisuuden>"
 	"mahdollisuus" NOUN GEN SG
 "<joissakin>"
-	"jokin" PRON INE PL INDV
+	"jokin" PRON INE PL
 "<tapauksissa>"
 	"tapaus" NOUN INE PL
 "<unohtaa>"
@@ -17738,7 +17738,7 @@
 "<tiesi>"
 	"tietää" VERB INDV SG3 PAST ACT
 "<yhtä>"
-	"yksi" PRON PAR SG INDV
+	"yksi" PRON PAR SG
 "<jos>"
 	"jos" CCONJ
 "<toistakin>"
@@ -17885,7 +17885,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muilta>"
-	"muu" PRON ABL PL INDV
+	"muu" PRON ABL PL
 "<osin>"
 	"osa" NOUN INS PL
 "<Alfaa>"
@@ -18261,7 +18261,7 @@
 "<sulla>"
 	"sinä" PRON ADE SG2 PRS COLL
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<mahdollisuuksia>"
 	"mahdollisuus" NOUN PAR <Llinen,Vs> PL
 "<ni>"
@@ -18294,7 +18294,7 @@
 "<että>"
 	"että" SCONJ
 "<mikään>"
-	"mikään" PRON NOM SG INDV
+	"mikään" PRON NOM SG
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<estä>"
@@ -18478,7 +18478,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<jokin>"
-	"jokin" PRON NOM SG INDV
+	"jokin" PRON NOM SG
 "<lämmin>"
 	"lämmin" ADJ NOM POS SG
 "<yöpymispaikka>"
@@ -18494,7 +18494,7 @@
 "<pääsemään>"
 	"päästä" VERB ILL INFMA SG ACT
 "<jostakin>"
-	"jokin" PRON ELA SG INDV
+	"jokin" PRON ELA SG
 "<kolosta>"
 	"kolo" NOUN ELA SG
 "<sisään>"
@@ -18524,7 +18524,7 @@
 "<toivomasta>"
 	"toivoa" VERB ELA INFMA SG ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<ihmeellisyyksiä>"
 	"ihmeellisyys" NOUN PAR PL
 "<.>"
@@ -18533,7 +18533,7 @@
 # text = Jokaisesta turhastakin selaamisesta otetaan hinta.
 # sent_id =  h1011.21
 "<Jokaisesta>"
-	"jokainen" PRON ELA SG INDV
+	"jokainen" PRON ELA SG
 "<turhastakin>"
 	"turha" ADJ ELA KIN POS SG
 "<selaamisesta>"
@@ -18695,7 +18695,7 @@
 "<Illalla>"
 	"ilta" NOUN ADE SG
 "<monet>"
-	"moni" PRON NOM PL INDV
+	"moni" PRON NOM PL
 "<Romanovit>"
 	"Romanov" PROPN NOM PL
 "<kokoontuivat>"
@@ -18744,7 +18744,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kenenkään>"
-	"kukaan" PRON GEN SG INDV
+	"kukaan" PRON GEN SG
 "<asiaan>"
 	"asia" NOUN ILL SG
 "<puuttumatta>"
@@ -18977,7 +18977,7 @@
 "<mielenkiintoisin>"
 	"mielenkiintoinen" ADJ NOM SUP <Inen> SG
 "<kaikista>"
-	"kaikki" PRON ELA PL INDV
+	"kaikki" PRON ELA PL
 "<vertailun>"
 	"vertailu" NOUN GEN <U> SG
 "<arvostelukohteista>"
@@ -19182,7 +19182,7 @@
 "<mulle>"
 	"minä" PRON ALL SG PRS COLL
 "<mikkään>"
-	"mikään" PRON NOM SG INDV COLL
+	"mikään" PRON NOM SG COLL
 "<päänsärky>"
 	"pään#särky" NOUN NOM <U> SG
 "<ole>"
@@ -19192,7 +19192,7 @@
 "<jos>"
 	"jos" SCONJ
 "<joku>"
-	"joku" PRON NOM SG INDV
+	"joku" PRON NOM SG
 "<mua>"
 	"minä" PRON PAR SG PRS COLL
 "<ihhailee>"
@@ -19401,7 +19401,7 @@
 "<piristä>"
 	"piristä" VERB INFA SG ACT
 "<monta>"
-	"moni" PRON PAR SG INDV
+	"moni" PRON PAR SG
 "<kertaa>"
 	"kerta" NOUN PAR SG
 "<ja>"
@@ -19446,7 +19446,7 @@
 "<jos>"
 	"jos" SCONJ
 "<jotain>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<siihen>"
 	"se" PRON ILL SG DEM
 "<ruokavalioon>"
@@ -19583,7 +19583,7 @@
 "<Ottakaamme>"
 	"ottaa" VERB IMPV PL1 ACT
 "<muutamia>"
-	"muutama" PRON PAR PL INDV
+	"muutama" PRON PAR PL
 "<esimerkkejä>"
 	"esi#merkki" NOUN PAR PL
 "<läpimurtokeksintöjen>"
@@ -19614,7 +19614,7 @@
 "<että>"
 	"että" SCONJ
 "<joku>"
-	"joku" PRON NOM SG INDV
+	"joku" PRON NOM SG
 "<hullu>"
 	"hullu" NOUN NOM SG
 "<maksaa>"
@@ -19686,7 +19686,7 @@
 "<joissa>"
 	"joka" PRON INE PL REL
 "<jompikumpi>"
-	"jompikumpi" PRON NOM SG INDV
+	"jompikumpi" PRON NOM SG
 "<vanhemmista>"
 	"vanhempi" NOUN ELA PL
 "<on>"
@@ -19896,7 +19896,7 @@
 "<tekee>"
 	"tehdä" VERB INDV SG3 PRESENT ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<kovinkaan>"
 	"kovin" ADV KAAN
 "<tarkoituksellisesti>"
@@ -19982,7 +19982,7 @@
 "<kokoonnuimme>"
 	"kokoontua" VERB INDV PL1 PAST ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<yhdessä>"
 	"yhdessä" ADV
 
@@ -19993,7 +19993,7 @@
 "<hoitelee>"
 	"hoidella" VERB INDV SG3 PRESENT ACT
 "<sama>"
-	"sama" PRON NOM SG INDV
+	"sama" PRON NOM SG
 "<vanha>"
 	"vanha" ADJ NOM POS SG
 "<kotoinen>"
@@ -20088,7 +20088,7 @@
 "<palaa>"
 	"palata" VERB INDV SG3 PRESENT ACT
 "<samaan>"
-	"sama" PRON ILL SG INDV
+	"sama" PRON ILL SG
 "<syöksykierteeseen>"
 	"syöksy#kierre" NOUN ILL SG
 "<kuin>"
@@ -20215,7 +20215,7 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<toiminnot>"
 	"toiminto" NOUN NOM PL
 "<voidaan>"
@@ -20772,7 +20772,7 @@
 # text = Kunkin " kilpailulajin ", joita ovat musiikki, tanssi, kuvataide, kirjallisuus, draama, elokuva ja arkkitehtuuri, kolme ansioituneinta edustajaa saa kunniamaininnan.
 # sent_id =  h1073.3
 "<Kunkin>"
-	"kukin" PRON GEN SG INDV
+	"kukin" PRON GEN SG
 "<">"
 	""" PUNCT
 "<kilpailulajin>"
@@ -20930,7 +20930,7 @@
 "<kuulua>"
 	"kuulua" VERB INFA SG ACT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<.>"
 	"." PUNCT
 
@@ -21029,7 +21029,7 @@
 "<tähän>"
 	"tämä" PRON ILL SG DEM
 "<samaan>"
-	"sama" PRON ILL SG INDV
+	"sama" PRON ILL SG
 "<tota>"
 	"tuota" INTJ COLL
 "<kokonaisuuteen>"
@@ -21153,7 +21153,7 @@
 "<ja>"
 	"ja" CCONJ
 "<kaikkea>"
-	"kaikki" PRON PAR SG INDV
+	"kaikki" PRON PAR SG
 "<se>"
 	"se" PRON NOM SG DEM
 "<saksalainen>"
@@ -21182,7 +21182,7 @@
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<jotakin>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<on>"
 	"olla" AUX INDV SG0 PRESENT ACT
 "<oppinut>"
@@ -21278,7 +21278,7 @@
 "<Kirjolohilaitoksista>"
 	"kirjo#lohi#laitos" NOUN ELA PL
 "<moni>"
-	"moni" PRON NOM SG INDV
+	"moni" PRON NOM SG
 "<lopettamassa>"
 	"lopettaa" VERB INE INFMA SG ACT
 "<tuotantonsa>"
@@ -21678,7 +21678,7 @@
 "<nyt>"
 	"nyt" ADV
 "<yks>"
-	"yksi" PRON NOM SG INDV COLL
+	"yksi" PRON NOM SG COLL
 "<kolme>"
 	"kolme" NUM NOM SG CARD
 "<viikkoo>"
@@ -22523,7 +22523,7 @@
 "<että>"
 	"että" SCONJ
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<kuljetuksen>"
 	"kuljetus" NOUN GEN SG
 "<aikana>"
@@ -23392,7 +23392,7 @@
 "<ennakkoedellytykseksi>"
 	"ennakko#edellytys" NOUN TRA SG
 "<kaikille>"
-	"kaikki" PRON ALL PL INDV
+	"kaikki" PRON ALL PL
 "<eläimiä>"
 	"eläin" NOUN PAR PL
 "<kuljetuksen>"
@@ -23589,7 +23589,7 @@
 "<myös>"
 	"myös" ADV
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<toimijaryhmiä>"
 	"toimija#ryhmä" NOUN PAR PL
 "<kuten>"
@@ -23622,7 +23622,7 @@
 "<vuoksi>"
 	"vuoksi" ADP POST
 "<jotkin>"
-	"jokin" PRON NOM PL INDV
+	"jokin" PRON NOM PL
 "<eläinten>"
 	"eläin" NOUN GEN PL
 "<hyvinvointiin>"
@@ -23638,7 +23638,7 @@
 "<koskemaan>"
 	"koskea" VERB ILL INFMA SG ACT
 "<kaikkia>"
-	"kaikki" PRON PAR PL INDV
+	"kaikki" PRON PAR PL
 "<eläinten>"
 	"eläin" NOUN GEN PL
 "<kuljetukseen>"
@@ -23667,7 +23667,7 @@
 "<asema>"
 	"asema" NOUN NOM SG
 "<joidenkin>"
-	"jokin" PRON GEN PL INDV
+	"jokin" PRON GEN PL
 "<kotieläinlajien>"
 	"koti#eläin#laji" NOUN GEN PL
 "<kuljetuksissa>"
@@ -24101,7 +24101,7 @@
 "<usein>"
 	"usein" ADV
 "<muihin>"
-	"muu" PRON ILL PL INDV
+	"muu" PRON ILL PL
 "<kuin>"
 	"kuin" SCONJ
 "<kaupallisiin>"
@@ -25000,7 +25000,7 @@
 "<vahvistaa>"
 	"vahvistaa" VERB INFA SG ACT
 "<kaikissa>"
-	"kaikki" PRON INE PL INDV
+	"kaikki" PRON INE PL
 "<maantiekuljetusvälineissä>"
 	"maan#tie#kuljetus#väline" NOUN INE PL
 "<käytettävää>"
@@ -25061,7 +25061,7 @@
 "<huomioon>"
 	"huomio" NOUN ILL SG
 "<joidenkin>"
-	"jokin" PRON GEN PL INDV
+	"jokin" PRON GEN PL
 "<alueiden>"
 	"alue" NOUN GEN PL
 "<,>"
@@ -25711,7 +25711,7 @@
 "<tarkoitetaan>"
 	"tarkoittaa" VERB INDV PRESENT PASS
 "<kaikkia>"
-	"kaikki" PRON PAR PL INDV
+	"kaikki" PRON PAR PL
 "<tarkastusasemia>"
 	"tarkastus#asema" NOUN PAR PL
 "<,>"
@@ -25947,7 +25947,7 @@
 "<polkumyynnillä>"
 	"polku#myynti" NOUN ADE SG
 "<muista>"
-	"muu" PRON ELA PL INDV
+	"muu" PRON ELA PL
 "<kuin>"
 	"kuin" SCONJ
 "<Euroopan>"
@@ -26409,7 +26409,7 @@
 "<lisäksi>"
 	"lisäksi" ADP POST
 "<kaikille>"
-	"kaikki" PRON ALL PL INDV
+	"kaikki" PRON ALL PL
 "<asianomaisille>"
 	"asian#omainen" ADJ ALL POS <Inen> PL
 "<lähetettiin>"
@@ -26708,7 +26708,7 @@
 # text = Ainoa artikla
 # sent_id =  j004.19
 "<Ainoa>"
-	"ainoa" PRON NOM SG INDV
+	"ainoa" PRON NOM SG
 "<artikla>"
 	"artikla" NOUN NOM SG
 
@@ -27791,7 +27791,7 @@
 "<koskevat>"
 	"koskea" VERB INDV PL3 PRESENT ACT
 "<samaa>"
-	"sama" PRON PAR SG INDV
+	"sama" PRON PAR SG
 "<erää>"
 	"erä" NOUN PAR SG
 "<ja>"
@@ -27819,7 +27819,7 @@
 "<erikseen>"
 	"erikseen" ADV
 "<jokaiselle>"
-	"jokainen" PRON ALL SG INDV
+	"jokainen" PRON ALL SG
 "<erälle>"
 	"erä" NOUN ALL SG
 "<.>"
@@ -27909,7 +27909,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kaikilta>"
-	"kaikki" PRON ABL PL INDV
+	"kaikki" PRON ABL PL
 "<osiltaan>"
 	"osa" NOUN ABL PL 3
 "<velvoittava>"
@@ -27925,7 +27925,7 @@
 "<sellaisenaan>"
 	"sellainen" ADJ ESS <Lainen> SG 3
 "<kaikissa>"
-	"kaikki" PRON INE PL INDV
+	"kaikki" PRON INE PL
 "<jäsenvaltioissa>"
 	"jäsen#valtio" NOUN INE PL
 "<.>"
@@ -27995,7 +27995,7 @@
 "<unelmaloman>"
 	"unelma#loma" NOUN GEN SG
 "<jossakin>"
-	"jokin" PRON INE SG INDV
+	"jokin" PRON INE SG
 "<Aasian>"
 	"Aasia" PROPN GEN SG
 "<vaihtokohteista>"
@@ -28082,7 +28082,7 @@
 "<luultavasti>"
 	"luultavasti" ADV <Sti>
 "<yhden>"
-	"yksi" PRON GEN SG INDV
+	"yksi" PRON GEN SG
 "<elämäsi>"
 	"elämä" NOUN GEN SG SING 2
 "<parhaimmista>"
@@ -28295,7 +28295,7 @@
 # text = Monet ovat kysyneet minulta, miksi ylipäänsä lähdin Indonesiaan ja Balille.
 # sent_id =  s203.12
 "<Monet>"
-	"moni" PRON NOM PL INDV
+	"moni" PRON NOM PL
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<kysyneet>"
@@ -29336,7 +29336,7 @@
 # text = Kaikki hyvä loppuu aikanaan, mutta onneksi tuhannet valokuvat, ihanat seikkailut ja kokemukset sekä kivat kaverit kultaavat muistot.
 # sent_id =  s203.43
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<hyvä>"
 	"hyvä" ADJ NOM POS SG
 "<loppuu>"
@@ -29420,7 +29420,7 @@
 # text = Jokaisen opiskelijan pitäisi kokea se.
 # sent_id =  s203.45
 "<Jokaisen>"
-	"jokainen" PRON GEN SG INDV
+	"jokainen" PRON GEN SG
 "<opiskelijan>"
 	"opiskelija" NOUN GEN <Ja> SG
 "<pitäisi>"
@@ -29458,7 +29458,7 @@
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<olemme>"
 	"olla" AUX INDV PL1 PRESENT ACT
 "<vähintään>"
@@ -29491,7 +29491,7 @@
 "<sisimmissään>"
 	"sisin" NOUN INE PL 3
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<tutkijat>"
 	"tutkija" NOUN NOM <Ja> PL
 "<ovat>"
@@ -29516,7 +29516,7 @@
 # text = Kaikki tietomme asuttamastamme maailmankaikkeudesta on lähtenyt yhdestä kysymyksestä: miten?
 # sent_id =  s305.4
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<tietomme>"
 	"tieto" NOUN NOM SG PLUR 1
 "<asuttamastamme>"
@@ -29547,7 +29547,7 @@
 "<todellisuudessa>"
 	"todellisuus" NOUN INE <Llinen,Vs> SG
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<,>"
 	"," PUNCT
 "<mitä>"
@@ -29597,7 +29597,7 @@
 "<takia>"
 	"takia" ADP POST
 "<jokainen>"
-	"jokainen" PRON NOM SG INDV
+	"jokainen" PRON NOM SG
 "<askel>"
 	"askel" NOUN NOM SG
 "<missä>"
@@ -29674,7 +29674,7 @@
 "<kasvaa>"
 	"kasvaa" VERB INDV SG3 PRESENT ACT
 "<kaikilta>"
-	"kaikki" PRON ABL PL INDV
+	"kaikki" PRON ABL PL
 "<osin>"
 	"osa" NOUN INS PL
 "<tasaista>"
@@ -29734,7 +29734,7 @@
 "<lamaannuttamina>"
 	"lamaannuttaa" VERB ESS POS PL AGT ACT
 "<monet>"
-	"moni" PRON NOM PL INDV
+	"moni" PRON NOM PL
 "<eivät>"
 	"ei" AUX PL3 NEG ACT
 "<uskalla>"
@@ -29769,9 +29769,9 @@
 "<välitä>"
 	"välittää" VERB CONNEG INDV PRESENT
 "<mistään>"
-	"mikään" PRON ELA SG INDV
+	"mikään" PRON ELA SG
 "<muusta>"
-	"muu" PRON ELA SG INDV
+	"muu" PRON ELA SG
 "<kuin>"
 	"kuin" SCONJ
 "<Oikean>"
@@ -29859,7 +29859,7 @@
 "<missä>"
 	"mikä" PRON INE SG INT
 "<muittenkin>"
-	"muu" PRON GEN KIN POS PL INDV
+	"muu" PRON GEN KIN POS PL
 "<;>"
 	";" PUNCT
 "<pennissä>"
@@ -29873,7 +29873,7 @@
 "<ja>"
 	"ja" CCONJ
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<typeriä>"
 	"typerä" ADJ PAR POS PL
 "<sananlaskuja>"
@@ -30665,7 +30665,7 @@
 "<pääsy>"
 	"pääsy" NOUN NOM <U> SG
 "<erääseen>"
-	"eräs" PRON ILL PL INDV YES
+	"eräs" PRON ILL PL YES
 "<murtautujien>"
 	"murtautuja" NOUN GEN <Ja> PL
 "<käyttämän>"
@@ -31342,7 +31342,7 @@
 "<vain>"
 	"vain" ADV
 "<harva>"
-	"harva" PRON NOM SG INDV
+	"harva" PRON NOM SG
 "<maahanmuuttaja>"
 	"maahanmuuttaja" NOUN NOM <Ja> SG
 "<.>"
@@ -31480,7 +31480,7 @@
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<monessa>"
-	"moni" PRON INE SG INDV
+	"moni" PRON INE SG
 "<tapauksessa>"
 	"tapaus" NOUN INE SG
 "<välttämättömiä>"
@@ -31531,7 +31531,7 @@
 "<purevat>"
 	"purra" VERB INDV PL3 PRESENT ACT
 "<kaikkiin>"
-	"kaikki" PRON ILL PL INDV
+	"kaikki" PRON ILL PL
 "<aiempaa>"
 	"aiempi" ADJ PAR POS SG
 "<huonommin>"
@@ -31642,7 +31642,7 @@
 "<–>"
 	"–" PUNCT
 "<Muissa>"
-	"muu" PRON INE PL INDV
+	"muu" PRON INE PL
 "<toimenpiteissä>"
 	"toimen#pide" NOUN INE PL
 "<laskua>"
@@ -31701,7 +31701,7 @@
 "<tai>"
 	"tai" CCONJ
 "<muuhun>"
-	"muu" PRON ILL SG INDV
+	"muu" PRON ILL SG
 "<toimenpiteeseen>"
 	"toimen#pide" NOUN ILL SG
 "<osallistunut>"
@@ -32184,7 +32184,7 @@
 "<kohdella>"
 	"kohdella" VERB INFA SG ACT
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<niin>"
 	"niin" ADV
 "<kuin>"
@@ -32192,7 +32192,7 @@
 "<haluaisi>"
 	"haluta" VERB COND SG3 ACT
 "<muiden>"
-	"muu" PRON GEN PL INDV
+	"muu" PRON GEN PL
 "<kohtelevan>"
 	"kohdella" VERB GEN POS SG PRESENT ACT
 "<itseään>"
@@ -32261,7 +32261,7 @@
 # text = Kaikki eivät halua olla töissä tehopakkauksia.
 # sent_id =  t049.15
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<eivät>"
 	"ei" AUX PL3 NEG ACT
 "<halua>"
@@ -32284,7 +32284,7 @@
 "<mukaan>"
 	"mukaan" ADP POST
 "<yksi>"
-	"yksi" PRON NOM SG INDV
+	"yksi" PRON NOM SG
 "<suurimmista>"
 	"suuri" ADJ ELA SUP PL
 "<stressin>"
@@ -32300,7 +32300,7 @@
 "<odotukset>"
 	"odotus" NOUN NOM PL
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<kohtaan>"
 	"kohtaan" ADP POST
 "<.>"
@@ -32311,7 +32311,7 @@
 "<–>"
 	"–" PUNCT
 "<Kaikilla>"
-	"kaikki" PRON ADE PL INDV
+	"kaikki" PRON ADE PL
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<vahvuuksia>"
@@ -32433,7 +32433,7 @@
 # text = Kaikista ihmisistä ja heidän ajatuksistaan voi melkein aina löytää jotain kielteistä.
 # sent_id =  t049.23
 "<Kaikista>"
-	"kaikki" PRON ELA PL INDV
+	"kaikki" PRON ELA PL
 "<ihmisistä>"
 	"ihminen" NOUN ELA PL
 "<ja>"
@@ -32451,7 +32451,7 @@
 "<löytää>"
 	"löytää" VERB INFA SG ACT
 "<jotain>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<kielteistä>"
 	"kielteinen" NOUN PAR SG
 "<.>"
@@ -32468,7 +32468,7 @@
 "<ole>"
 	"olla" AUX CONNEG INDV PRESENT
 "<mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<hyötyä>"
 	"hyöty" NOUN PAR <U> SG
 "<–>"
@@ -32988,7 +32988,7 @@
 # text = Muita oppiaineen näkyviä tutkimusaloja ovat suomi toisena kielenä -tutkimus sekä Agricolan kieleen liittyvä tutkimus.
 # sent_id =  u021.15
 "<Muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<oppiaineen>"
 	"oppi#aine" NOUN GEN SG
 "<näkyviä>"
@@ -33468,7 +33468,7 @@
 "<uudistettuna>"
 	"uudistaa" VERB ESS POS SG PAST PASS
 "<kaikkien>"
-	"kaikki" PRON GEN PL INDV
+	"kaikki" PRON GEN PL
 "<suomalaisten>"
 	"suomalainen" NOUN GEN <Lainen> PL
 "<ulottuville>"
@@ -33506,7 +33506,7 @@
 # text = Eräs esteistä on Agricolan vaihteleva kirjoitustapa, joka poikkeaa nykysuomen selkeästä oikeinkirjoitusjärjestelmästä, Häkkinen kertoi.
 # sent_id =  u032.7
 "<Eräs>"
-	"eräs" PRON NOM SG INDV
+	"eräs" PRON NOM SG
 "<esteistä>"
 	"este" NOUN ELA PL
 "<on>"
@@ -33859,7 +33859,7 @@
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<jotakin>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<,>"
 	"," PUNCT
 "<mitä>"
@@ -34424,7 +34424,7 @@
 "<elimistön>"
 	"elimistö" NOUN GEN SG
 "<jokaiseksi>"
-	"jokainen" PRON TRA SG INDV
+	"jokainen" PRON TRA SG
 "<solutyypiksi>"
 	"solu#tyyppi" NOUN TRA SG
 "<,>"
@@ -34544,7 +34544,7 @@
 "<Yhdessä>"
 	"yhdessä" ADV
 "<muiden>"
-	"muu" PRON GEN PL INDV
+	"muu" PRON GEN PL
 "<eurooppalaisten>"
 	"eurooppalainen" ADJ GEN POS <Lainen> PL
 "<kantasoluryhmien>"
@@ -34886,7 +34886,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<eräs>"
-	"eräs" PRON NOM SG INDV
+	"eräs" PRON NOM SG
 "<kulttuuripääkaupungin>"
 	"kulttuuri#pää#kaupunki" NOUN GEN SG
 "<kiistaton>"
@@ -34926,7 +34926,7 @@
 # text = Eräs hankkeista on TIUKU (Tieteen ja kulttuurin Turku, hyvinvoiva kaupunki) -hanke.
 # sent_id =  u047.10
 "<Eräs>"
-	"eräs" PRON NOM SG INDV
+	"eräs" PRON NOM SG
 "<hankkeista>"
 	"hanke" NOUN ELA PL
 "<on>"
@@ -35004,7 +35004,7 @@
 "<mukana>"
 	"mukana" ADP POST
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<tiedekunnat>"
 	"tiede#kunta" NOUN NOM PL
 "<ja>"
@@ -35210,7 +35210,7 @@
 "<olla>"
 	"olla" AUX INFA SG ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<innostuneet>"
 	"innostunut" ADJ NOM POS PL
 "<kaupunkilaiset>"
@@ -35257,9 +35257,9 @@
 "<ja>"
 	"ja" CCONJ
 "<monien>"
-	"moni" PRON GEN PL INDV
+	"moni" PRON GEN PL
 "<muiden>"
-	"muu" PRON GEN PL INDV
+	"muu" PRON GEN PL
 "<alojen>"
 	"ala" NOUN GEN PL
 "<välinen>"
@@ -35561,7 +35561,7 @@
 "<kuin>"
 	"kuin" CCONJ
 "<muut>"
-	"muu" PRON NOM PL INDV
+	"muu" PRON NOM PL
 "<kipuajalajit>"
 	"kivuta#laji" NOUN NOM PL
 "<.>"
@@ -36273,7 +36273,7 @@
 "<tai>"
 	"tai" CCONJ
 "<molemmille>"
-	"molemmat" PRON ALL PL INDV
+	"molemmat" PRON ALL PL
 "<.>"
 	"." PUNCT
 
@@ -36526,7 +36526,7 @@
 "<käyty>"
 	"käydä" VERB NOM POS SG PAST PASS
 "<jonkin>"
-	"jokin" PRON GEN SG INDV
+	"jokin" PRON GEN SG
 "<verran>"
 	"verran" ADV
 "<keskustelua>"
@@ -37444,7 +37444,7 @@
 # text = Muiden vastaavien henkilöiden tavoin tarinat hänestä ovat muokkautuneet eri muotoihin riippuen kulloisestakin kertojasta.
 # sent_id =  w107.5
 "<Muiden>"
-	"muu" PRON GEN PL INDV
+	"muu" PRON GEN PL
 "<vastaavien>"
 	"vastaava" ADJ GEN POS PL
 "<henkilöiden>"
@@ -37485,7 +37485,7 @@
 "<tutuksi>"
 	"tuttu" ADJ TRA POS SG
 "<monelle>"
-	"moni" PRON ALL SG INDV
+	"moni" PRON ALL SG
 "<1950-luvulla>"
 	"1950#luku" NOUN ADE SG
 "<Saariselän>"
@@ -37689,7 +37689,7 @@
 # text = Jotain merkkejä asuinkentästä on silti vielä nähtävillä Lankojärvellä.
 # sent_id =  w107.14
 "<Jotain>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<merkkejä>"
 	"merkki" NOUN PAR PL
 "<asuinkentästä>"
@@ -37753,7 +37753,7 @@
 "<ja>"
 	"ja" CCONJ
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<Lapin>"
 	"Lappi" PROPN GEN SG
 "<takamaita>"
@@ -37979,7 +37979,7 @@
 "<naisten>"
 	"nainen" NOUN GEN PL
 "<molemmat>"
-	"molemmat" PRON NOM PL INDV
+	"molemmat" PRON NOM PL
 "<henkilökohtaiset>"
 	"henkilö#kohtainen" ADJ NOM POS <Inen> PL
 "<matkat>"
@@ -38239,7 +38239,7 @@
 "<Myöhemmin>"
 	"myöhemmin" ADV
 "<samana>"
-	"sama" PRON ESS SG INDV
+	"sama" PRON ESS SG
 "<vuonna>"
 	"vuosi" NOUN ESS SG
 "<hän>"
@@ -38819,7 +38819,7 @@
 "<mutta>"
 	"mutta" CCONJ
 "<samaan>"
-	"sama" PRON ILL SG INDV
+	"sama" PRON ILL SG
 "<aikaan>"
 	"aika" NOUN ILL SG
 "<kuolleisuus>"
@@ -38974,7 +38974,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<jonkin>"
-	"jokin" PRON GEN SG INDV
+	"jokin" PRON GEN SG
 "<verran>"
 	"verran" ADV
 "<pienempi>"
@@ -39083,7 +39083,7 @@
 "<vaihtelevat>"
 	"vaihdella" VERB INDV PL3 PRESENT ACT
 "<jonkin>"
-	"jokin" PRON GEN SG INDV
+	"jokin" PRON GEN SG
 "<verran>"
 	"verran" ADV
 "<eri>"
@@ -39120,7 +39120,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<jonkin>"
-	"jokin" PRON GEN SG INDV
+	"jokin" PRON GEN SG
 "<verran>"
 	"verran" ADV
 "<pienempi>"
@@ -39416,7 +39416,7 @@
 "<syöpää>"
 	"syöpä" NOUN PAR SG
 "<jokaista>"
-	"jokainen" PRON PAR SG INDV
+	"jokainen" PRON PAR SG
 "<mammografiasäteilyn>"
 	"mammografia#säteily" NOUN GEN <U> SG
 "<aiheuttamaa>"
@@ -39492,7 +39492,7 @@
 "<syöpää>"
 	"syöpä" NOUN PAR SG
 "<jokaista>"
-	"jokainen" PRON PAR SG INDV
+	"jokainen" PRON PAR SG
 "<aiheutettua>"
 	"aiheuttaa" VERB PAR POS SG PAST PASS
 "<kohti>"
@@ -39933,7 +39933,7 @@
 # text = Kaikki Yhdysvaltojen suuret lääketieteelliset järjestöt suosittelevat naisille mammografiaseulontaa 40 ikävuodesta ylöspäin.
 # sent_id =  w146.33
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<Yhdysvaltojen>"
 	"Yhdysvallat" PROPN GEN PL
 "<suuret>"
@@ -39968,7 +39968,7 @@
 "<kuuluvat>"
 	"kuulua" VERB INDV PL3 PRESENT ACT
 "<kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<50–64-vuotiaat>"
 	"50#64#vuotias" ADJ NOM POS PL
 "<naiset>"
@@ -40176,7 +40176,7 @@
 # text = Monet hänen sukulaisensa vaikuttivat musiikin alalla, ja hän sai opetusta Jan Willemszoon Lossyltä ja Gioseffo Zarlinolta.
 # sent_id =  w148.3
 "<Monet>"
-	"moni" PRON NOM PL INDV
+	"moni" PRON NOM PL
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<sukulaisensa>"
@@ -40390,7 +40390,7 @@
 "<voitti>"
 	"voittaa" VERB INDV SG3 PAST ACT
 "<saman>"
-	"sama" PRON GEN SG INDV
+	"sama" PRON GEN SG
 "<matkan>"
 	"matka" NOUN GEN SG
 "<neljä>"
@@ -40742,7 +40742,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sama>"
-	"sama" PRON NOM SG INDV
+	"sama" PRON NOM SG
 "<kuin>"
 	"kuin" SCONJ
 "<The>"
@@ -41076,7 +41076,7 @@
 "<sisältävän>"
 	"sisältää" VERB GEN POS SG PRESENT ACT
 "<useita>"
-	"usea" PRON PAR PL INDV
+	"usea" PRON PAR PL
 "<pelaamista>"
 	"pelaaminen" NOUN PAR <Minen> SG
 "<haittaavia>"
@@ -41205,7 +41205,7 @@
 "<enää>"
 	"enää" ADV
 "<montaa>"
-	"monta" PRON PAR SG INDV
+	"monta" PRON PAR SG
 "<tuntia>"
 	"tunti" NOUN PAR SG
 "<.>"
@@ -41627,7 +41627,7 @@
 "<naiselle>"
 	"nainen" NOUN ALL SG
 "<molemmille>"
-	"molemmat" PRON ALL PL INDV
+	"molemmat" PRON ALL PL
 "<kolme>"
 	"kolme" NUM NOM SG CARD
 "<erilaista>"
@@ -42014,7 +42014,7 @@
 # text = Mitään ei ole unohdettu."
 # sent_id =  w173.38
 "<Mitään>"
-	"mikään" PRON PAR SG INDV
+	"mikään" PRON PAR SG
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<ole>"
@@ -42240,7 +42240,7 @@
 "<että>"
 	"että" SCONJ
 "<muut>"
-	"muu" PRON NOM PL INDV
+	"muu" PRON NOM PL
 "<simit>"
 	"sim" NOUN NOM PL
 "<vanhenevat>"
@@ -42293,7 +42293,7 @@
 "<,>"
 	"," PUNCT
 "<muissa>"
-	"muu" PRON INE PL INDV
+	"muu" PRON INE PL
 "<talouksissa>"
 	"talous" NOUN INE PL
 "<simit>"
@@ -42360,7 +42360,7 @@
 "<ja>"
 	"ja" CCONJ
 "<mikään>"
-	"mikään" PRON NOM SG INDV
+	"mikään" PRON NOM SG
 "<pelikerta>"
 	"peli#kerta" NOUN NOM SG
 "<ei>"
@@ -42370,7 +42370,7 @@
 "<tunnu>"
 	"tuntua" VERB CONNEG INDV PRESENT
 "<samalta>"
-	"sama" PRON ABL SG INDV
+	"sama" PRON ABL SG
 "<.>"
 	"." PUNCT
 
@@ -42379,7 +42379,7 @@
 "<Jos>"
 	"jos" SCONJ
 "<joku>"
-	"joku" PRON NOM SG INDV
+	"joku" PRON NOM SG
 "<muuttaa>"
 	"muuttaa" VERB INDV SG3 PRESENT ACT
 "<pois>"
@@ -42441,7 +42441,7 @@
 "<soittamaan>"
 	"soittaa" VERB ILL INFMA SG ACT
 "<muille>"
-	"muu" PRON ALL PL INDV
+	"muu" PRON ALL PL
 "<ja>"
 	"ja" CCONJ
 "<palvelunumeroihin>"
@@ -42519,7 +42519,7 @@
 # text = Samasta syystä lapsia pitää kehittää tarpeeksi paljon aina kun lapsi kasvaa (vauva-taapero-lapsi-teini-ikäinen-nuori aikuinen)
 # sent_id =  w173.53
 "<Samasta>"
-	"sama" PRON ELA SG INDV
+	"sama" PRON ELA SG
 "<syystä>"
 	"syy" NOUN ELA SG
 "<lapsia>"
@@ -42588,7 +42588,7 @@
 "<jättämättä>"
 	"jättää" VERB ABE INFMA SG ACT
 "<muita>"
-	"muu" PRON PAR PL INDV
+	"muu" PRON PAR PL
 "<simejä>"
 	"sim" NOUN PAR PL
 "<oman>"
@@ -42842,7 +42842,7 @@
 "<tai>"
 	"tai" CCONJ
 "<joissain>"
-	"jokin" PRON INE PL INDV
+	"jokin" PRON INE PL
 "<tilanteissa>"
 	"tilanne" NOUN INE PL
 "<taksilla>"
@@ -42903,7 +42903,7 @@
 "<tavaraa>"
 	"tavara" NOUN PAR SG
 "<muiden>"
-	"muu" PRON GEN PL INDV
+	"muu" PRON GEN PL
 "<pelaajien>"
 	"pelaaja" NOUN GEN <Ja> PL
 "<kanssa>"
@@ -43060,7 +43060,7 @@
 "<valita>"
 	"valita" VERB INFA SG ACT
 "<monia>"
-	"moni" PRON PAR PL INDV
+	"moni" PRON PAR PL
 "<erilaisia>"
 	"erilainen" ADJ PAR POS <Lainen> PL
 "<uria>"
@@ -43207,7 +43207,7 @@
 "<mutta>"
 	"mutta" CCONJ
 "<kaikissa>"
-	"kaikki" PRON INE PL INDV
+	"kaikki" PRON INE PL
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kuitenkin>"
@@ -43277,7 +43277,7 @@
 "<tai>"
 	"tai" CCONJ
 "<jonkin>"
-	"jokin" PRON GEN SG INDV
+	"jokin" PRON GEN SG
 "<tietyn>"
 	"tietty" ADJ GEN POS SG
 "<kirjan>"
@@ -43570,7 +43570,7 @@
 # text = Kaikki saaret ovat metsäisiä, louhikkoisia ja niillä elää runsaasti riistaeläimiä.
 # sent_id =  w179.5
 "<Kaikki>"
-	"kaikki" PRON NOM SG INDV
+	"kaikki" PRON NOM SG
 "<saaret>"
 	"saari" NOUN NOM PL
 "<ovat>"
@@ -43867,7 +43867,7 @@
 "<Tingin>"
 	"Ting" PROPN GEN SG
 "<molemmat>"
-	"molemmat" PRON NOM PL INDV
+	"molemmat" PRON NOM PL
 "<vanhemmat>"
 	"vanhempi" NOUN NOM PL
 "<olivat>"
@@ -44031,7 +44031,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<jotain>"
-	"jokin" PRON PAR SG INDV
+	"jokin" PRON PAR SG
 "<selvästi>"
 	"selvästi" ADV <Sti>
 "<vialla>"
@@ -45386,7 +45386,7 @@
 "<käräjäoikeudessa>"
 	"käräjä#oikeus" NOUN INE SG
 "<muutamaankin>"
-	"muutama" PRON ILL KIN SG INDV
+	"muutama" PRON ILL KIN SG
 "<kertaan>"
 	"kerta" NOUN ILL SG
 "<.>"
@@ -45535,7 +45535,7 @@
 "<ja>"
 	"ja" CCONJ
 "<muuta>"
-	"muu" PRON PAR SG INDV
+	"muu" PRON PAR SG
 "<yleishyödyllistä>"
 	"yleis#hyödyllinen" ADJ PAR POS <Llinen> SG
 "<toimintaa>"
@@ -46138,7 +46138,7 @@
 # text = Monet lakimiehet ovat tarjonneet al-Zaidille apuaan.
 # sent_id =  wn061.8
 "<Monet>"
-	"moni" PRON NOM PL INDV
+	"moni" PRON NOM PL
 "<lakimiehet>"
 	"laki#mies" NOUN NOM PL
 "<ovat>"
@@ -46428,7 +46428,7 @@
 # text = Saman kohtalon koki 89. minuutilla AS Roman Marco Motta.
 # sent_id =  wn077.6
 "<Saman>"
-	"sama" PRON GEN SG INDV
+	"sama" PRON GEN SG
 "<kohtalon>"
 	"kohtalo" NOUN GEN SG
 "<koki>"
