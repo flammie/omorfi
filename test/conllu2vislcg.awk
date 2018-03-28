@@ -22,10 +22,13 @@ function ufeat2vislish(udstring)
         else if (kv[2] == "Ind") { rv = rv " INDV"; }
         else if (kv[2] == "Cnd") { rv = rv " COND"; }
         else if (kv[2] == "Imp") { rv = rv " IMPV"; }
+        else if (kv[1] == "Connegative") { rv = rv " CONNEG"; }
         else if ((kv[1] == "InfForm") && (kv[2] == "1")) { rv = rv " INFA"; }
         else if ((kv[1] == "InfForm") && (kv[2] == "2")) { rv = rv " INFE"; }
         else if ((kv[1] == "InfForm") && (kv[2] == "3")) { rv = rv " INFMA"; }
         else if ((kv[1] == "VerbForm")) { rv = rv; }
+        else if ((kv[1] == "PronType") && (kv[2] == "Ind")) { rv = rv; }
+        else if ((kv[1] == "Derivation")) { rv = rv " <" kv[2] ">"; }
         else { rv = rv " " toupper(kv[2]); }
     }
     gsub(/PL PERS\+/, "PL", rv);
