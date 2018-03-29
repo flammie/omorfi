@@ -276,7 +276,10 @@ def get_vislcg_feats(token):
                      "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
                      "CONJ"]:
             # core morph show only value as is (omor style though)
-            vislcgs += [value]
+            if value == 'LAT':
+                pass
+            else:
+                vislcgs += [value]
         else:
             print("Unhandled", key, "=", value, "in", token,
                   "for vislcg")
