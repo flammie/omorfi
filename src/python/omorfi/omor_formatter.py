@@ -636,7 +636,7 @@ class OmorFormatter(Formatter):
         if stuff == '0':
             return "0"
         if stuff in self.stuff2omor:
-            return self.stuff2omor[stuff]
+            return lexc_escape(self.stuff2omor[stuff])
         else:
             if self.verbose:
                 fail_formatting_missing_for(stuff, "omor")
