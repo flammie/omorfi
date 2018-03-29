@@ -137,7 +137,8 @@ REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 
 ##! € en oo sitä nähny
 ##! € en tule
-REMOVE:conneg-needs-neg CONNEG (NOT -1* NEG BARRIER CONNEG) ;
+##! € ole hiljaa
+REMOVE:conneg-needs-neg CONNEG (NEGATE -1* NEG BARRIER CONNEG) ;
 
 REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
 
