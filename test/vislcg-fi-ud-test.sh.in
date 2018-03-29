@@ -6,7 +6,7 @@ fi
 fsadir="@top_builddir@/src/generated/"
 vislcgs="fi-ud-test.cg3text"
 cs="get-covered.bash"
-thold=96
+thold=90
 if test ! -d "$fsadir" ; then
     echo Missing $fsadir
     exit 77
