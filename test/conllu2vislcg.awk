@@ -34,6 +34,7 @@ function ufeat2vislish(udstring)
         else if ((kv[1] == "Derivation")) { rv = rv " <" kv[2] ">"; }
         else if ((kv[1] == "Style")) { rv = rv " <" kv[2] ">"; }
         else if ((kv[1] == "Clitic")) { rv = rv " CLIT" toupper(kv[2]); }
+        else if (kv[2] == "Yes") { rv = rv " " toupper(kv[1]); }
         else { rv = rv " " toupper(kv[2]); }
     }
     gsub(/PL PERS\+/, "PL", rv);
