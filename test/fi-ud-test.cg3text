@@ -8,7 +8,7 @@
 # text = Tänäänkin pitäisi mennä teatteriin.
 # sent_id =  b104.2
 "<Tänäänkin>"
-	"tänään" ADV KIN
+	"tänään" ADV CLITKIN
 "<pitäisi>"
 	"pitää" AUX COND SG0 ACT
 "<mennä>"
@@ -72,7 +72,7 @@
 "<mennä>"
 	"mennä" VERB INFA SG ACT
 "<vaikkapa>"
-	"vaikka" ADV PA
+	"vaikka" ADV CLITPA
 "<Suxessiin>"
 	"Suxess" PROPN ILL SG
 "<oluelle>"
@@ -187,7 +187,7 @@
 "<Siksi>"
 	"siksi" ADV
 "<olenkin>"
-	"olla" AUX KIN INDV SG1 PRESENT ACT
+	"olla" AUX CLITKIN INDV SG1 PRESENT ACT
 "<häissä>"
 	"häät" NOUN INE PL
 "<ja>"
@@ -226,7 +226,7 @@
 "<kuin>"
 	"kuin" CCONJ
 "<suostuikin>"
-	"suostua" VERB KIN INDV SG3 PAST ACT
+	"suostua" VERB CLITKIN INDV SG3 PAST ACT
 "<lähtemään>"
 	"lähteä" VERB ILL INFMA SG ACT
 "<mukaan>"
@@ -371,7 +371,7 @@
 "<tyttönimeni>"
 	"tyttö#nimi" NOUN NOM SG SING 1
 "<todellakin>"
-	"todella" ADV KIN
+	"todella" ADV CLITKIN
 "<olevan>"
 	"olla" AUX GEN POS SG PRESENT ACT
 "<Marple>"
@@ -631,7 +631,7 @@
 "<tulee>"
 	"tulla" VERB INDV SG3 PRESENT ACT
 "<luokses>"
-	"luokse" ADP POST SING 2 COLL
+	"luokse" ADP POST SING 2 <Coll>
 "<aina>"
 	"aina" ADV
 "<takaisin>"
@@ -766,7 +766,7 @@
 "<että>"
 	"että" SCONJ
 "<vähemmälläkin>"
-	"vähä" ADJ ADE KIN CMP SG
+	"vähä" ADJ ADE CLITKIN CMP SG
 "<seksillä>"
 	"seksi" NOUN ADE SG
 "<selviää>"
@@ -877,7 +877,7 @@
 "<ihan>"
 	"ihan" ADV
 "<senkin>"
-	"se" PRON GEN KIN SG DEM
+	"se" PRON GEN CLITKIN SG DEM
 "<vuoksi>"
 	"vuoksi" ADP POST
 "<,>"
@@ -924,7 +924,7 @@
 "<parisuhteista>"
 	"pari#suhde" NOUN ELA PL
 "<puhumattakaan>"
-	"puhua" VERB ABE KAAN INFMA SG ACT
+	"puhua" VERB ABE CLITKAAN INFMA SG ACT
 "<!>"
 	"!" PUNCT
 
@@ -1031,7 +1031,7 @@
 "<vaikka>"
 	"vaikka" SCONJ
 "<seksikin>"
-	"seksi" NOUN NOM KIN SG
+	"seksi" NOUN NOM CLITKIN SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<tunneasia>"
@@ -1305,7 +1305,7 @@
 "<kirjat>"
 	"kirja" NOUN NOM PL
 "<juurikaan>"
-	"juuri" ADV KAAN
+	"juuri" ADV CLITKAAN
 "<poikkea>"
 	"poiketa" VERB CONNEG INDV PRESENT
 "<niistä>"
@@ -1353,7 +1353,7 @@
 "<Uudelleen>"
 	"uudelleen" ADV
 "<virittäviäkin>"
-	"virittävä" NOUN PAR KIN PL
+	"virittävä" NOUN PAR CLITKIN PL
 "<kehotetaan>"
 	"kehottaa" VERB INDV PRESENT PSS
 "<keskustelemaan>"
@@ -1685,7 +1685,7 @@
 "<niin>"
 	"niin" ADV
 "<silloinhan>"
-	"silloin" ADV HAN
+	"silloin" ADV CLITHAN
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<näitä>"
@@ -1699,7 +1699,7 @@
 "<,>"
 	"," PUNCT
 "<eikö>"
-	"ei" VERB KO SG0 NEG ACT
+	"ei" VERB CLITKO SG0 NEG ACT
 "<niin>"
 	"niin" ADV
 "<?>"
@@ -1840,7 +1840,7 @@
 # text = Tällaistakin voi vielä kuulla tai lukea.
 # sent_id =  b401.32
 "<Tällaistakin>"
-	"tällainen" ADJ PAR KIN <Lainen> SG
+	"tällainen" ADJ PAR CLITKIN <Lainen> SG
 "<voi>"
 	"voida" AUX INDV SG0 PRESENT ACT
 "<vielä>"
@@ -1956,7 +1956,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<enää>"
 	"enää" ADV
 "<pysty>"
@@ -2007,7 +2007,7 @@
 "<että>"
 	"että" SCONJ
 "<pitäisikö>"
-	"pitää" AUX KO COND SG3 ACT
+	"pitää" AUX CLITKO COND SG3 ACT
 "<keskustella>"
 	"keskustella" VERB INFA SG ACT
 "<asiasta>"
@@ -2053,7 +2053,7 @@
 "<”>"
 	"”" PUNCT
 "<Voisiko>"
-	"voida" VERB KO COND SG3 ACT
+	"voida" VERB CLITKO COND SG3 ACT
 "<vaimosi>"
 	"vaimo" NOUN NOM SG SING 2
 "<paremmin>"
@@ -2090,7 +2090,7 @@
 # text = Voisitko itse paremmin, jos seksielämäsi jatkuisi?”
 # sent_id =  b401.38
 "<Voisitko>"
-	"voida" VERB KO COND SG2 ACT
+	"voida" VERB CLITKO COND SG2 ACT
 "<itse>"
 	"itse" ADV
 "<paremmin>"
@@ -2152,7 +2152,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<hän>"
 	"hän" PRON NOM SG3 PRS
 "<kertonut>"
@@ -2174,7 +2174,7 @@
 "<jo>"
 	"jo" ADV
 "<muutenkin>"
-	"muuten" ADV KIN
+	"muuten" ADV CLITKIN
 "<vaikean>"
 	"vaikea" ADJ GEN POS SG
 "<sairauden>"
@@ -2187,7 +2187,7 @@
 # text = Onko tämä moraalisesti oikein, sitä on vaikea sanoa.
 # sent_id =  b401.41
 "<Onko>"
-	"olla" AUX KO INDV SG3 PRESENT ACT
+	"olla" AUX CLITKO INDV SG3 PRESENT ACT
 "<tämä>"
 	"tämä" PRON NOM SG DEM
 "<moraalisesti>"
@@ -2332,7 +2332,7 @@
 "<löytyvät>"
 	"löytyä" VERB INDV PL3 PRESENT ACT
 "<muistakin>"
-	"muu" PRON ELA KIN PL
+	"muu" PRON ELA CLITKIN PL
 "<oppaista>"
 	"opas" NOUN ELA PL
 "<,>"
@@ -2655,7 +2655,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<koskaan>"
 	"koskaan" ADV
 "<lisää>"
@@ -2679,7 +2679,7 @@
 "<Se>"
 	"se" PRON NOM SG DEM
 "<vähäinenkin>"
-	"vähäinen" ADJ NOM KIN POS <Inen> SG
+	"vähäinen" ADJ NOM CLITKIN POS <Inen> SG
 "<seksi>"
 	"seksi" NOUN NOM SG
 "<ja>"
@@ -3169,7 +3169,7 @@
 "<(>"
 	"(" PUNCT
 "<kotonakin>"
-	"kotona" ADV KIN
+	"kotona" ADV CLITKIN
 "<voi>"
 	"voida" AUX INDV SG0 PRESENT ACT
 "<tanssia>"
@@ -3363,7 +3363,7 @@
 # text = Just eilen puhuttiin, miten vasta nyt oikeastaan tuntuu, että tää on koti, ja elämä rullailee ihan normaalisti, on ehtinyt kehittää omat rutiinit uuteen paikkaan, ja sitten ollaankin jo lähdössä takaisin kotiin.
 # sent_id =  b602.7
 "<Just>"
-	"juuri" ADV COLL
+	"juuri" ADV <Coll>
 "<eilen>"
 	"eilen" ADV
 "<puhuttiin>"
@@ -3385,7 +3385,7 @@
 "<että>"
 	"että" SCONJ
 "<tää>"
-	"tämä" PRON NOM SG DEM COLL
+	"tämä" PRON NOM SG DEM <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<koti>"
@@ -3425,7 +3425,7 @@
 "<sitten>"
 	"sitten" ADV
 "<ollaankin>"
-	"olla" AUX KIN INDV PRESENT PSS
+	"olla" AUX CLITKIN INDV PRESENT PSS
 "<jo>"
 	"jo" ADV
 "<lähdössä>"
@@ -3617,7 +3617,7 @@
 "<paeta>"
 	"paeta" VERB INFA SG ACT
 "<mua>"
-	"minä" PRON PAR SG PRS COLL
+	"minä" PRON PAR SG PRS <Coll>
 "<Japaniin>"
 	"Japani" PROPN ILL SG
 "<täksi>"
@@ -3667,9 +3667,9 @@
 "<hävitin>"
 	"hävittää" VERB INDV SG1 PAST ACT
 "<mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<Mulberry-huivin>"
-	"Mulberry#huivi" NOUN GEN SG COLL
+	"Mulberry#huivi" NOUN GEN SG <Coll>
 "<,>"
 	"," PUNCT
 "<ja>"
@@ -3700,11 +3700,11 @@
 "<iskin>"
 	"iskeä" VERB INDV SG1 PAST ACT
 "<mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<nykyisen>"
 	"nykyinen" ADJ GEN POS <Inen> SG
 "<lempparin>"
-	"lemppari" NOUN GEN SG COLL
+	"lemppari" NOUN GEN SG <Coll>
 "<,>"
 	"," PUNCT
 "<rusehtavan>"
@@ -3783,11 +3783,11 @@
 "<Mites>"
 	"mites" ADV
 "<tää>"
-	"tämä" PRON NOM SG DEM COLL
+	"tämä" PRON NOM SG DEM <Coll>
 "<mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<uus>"
-	"uusi" ADJ NOM POS SG COLL
+	"uusi" ADJ NOM POS SG <Coll>
 "<huovutus-harrastus>"
 	"huovutus#harrastus" NOUN NOM SG
 "<?>"
@@ -3811,7 +3811,7 @@
 # text = Kutistu ehkä 10-kertaisesti ja näyttää nyt joltain hippimummelin päähineeltä.
 # sent_id =  b602.21
 "<Kutistu>"
-	"kutistua" VERB INDV SG3 COLL PAST ACT
+	"kutistua" VERB INDV SG3 <Coll> PAST ACT
 "<ehkä>"
 	"ehkä" ADV
 "<10-kertaisesti>"
@@ -3900,7 +3900,7 @@
 "<sitten>"
 	"sitten" ADV
 "<tota>"
-	"tuo" PRON PAR SG DEM COLL
+	"tuo" PRON PAR SG DEM <Coll>
 "<jättilaukkua>"
 	"jätti#laukku" NOUN PAR SG
 "<toiselle>"
@@ -4081,13 +4081,13 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<pieni>"
 	"pieni" ADJ NOM POS SG
 "<nokare>"
 	"nokare" NOUN NOM SG
 "<voitakaan>"
-	"voi" NOUN PAR KAAN SG
+	"voi" NOUN PAR CLITKAAN SG
 "<ole>"
 	"olla" AUX CONNEG INDV PRESENT
 "<pahitteeksi>"
@@ -4140,7 +4140,7 @@
 "<...>"
 	"..." PUNCT
 "<kokeilkaas>"
-	"kokeilla" VERB S IMPV PL2 ACT
+	"kokeilla" VERB CLITS IMPV PL2 ACT
 "<!>"
 	"!" PUNCT
 
@@ -4532,13 +4532,13 @@
 "<top>"
 	"top" NOUN NOM SG
 "<kymppiin>"
-	"kymppi" NOUN ILL SG COLL
+	"kymppi" NOUN ILL SG <Coll>
 "<meidän>"
 	"minä" PRON GEN PL1 PRS
 "<mielestämme>"
 	"mieli" NOUN ELA SG PLUR 1
 "<päässeekäänt>"
-	"päästä" VERB NOM KAAN POS PL PCPNUT YES ACT
+	"päästä" VERB NOM CLITKAAN POS PL PCPNUT YES ACT
 "<,>"
 	"," PUNCT
 "<on>"
@@ -4569,7 +4569,7 @@
 "<eivät>"
 	"ei" AUX PL3 NEG ACT
 "<häpiä>"
-	"hävetä" VERB CONNEG INDV COLL PRESENT
+	"hävetä" VERB CONNEG INDV <Coll> PRESENT
 "<oman>"
 	"oma" ADJ GEN POS SG
 "<paikkakunnan>"
@@ -4589,7 +4589,7 @@
 "<vaikkeivat>"
 	"vaikka#ei" VERB PL3 NEG YES ACT
 "<olekaan>"
-	"olla" AUX KAAN CONNEG INDV PRESENT
+	"olla" AUX CLITKAAN CONNEG INDV PRESENT
 "<ruispohjaan>"
 	"ruis#pohja" NOUN ILL SG
 "<tehtyjä>"
@@ -4620,7 +4620,7 @@
 "<ihan>"
 	"ihan" ADV
 "<eka>"
-	"ensimmäinen" NOUN NOM SG COLL
+	"ensimmäinen" NOUN NOM SG <Coll>
 "<minun>"
 	"minä" PRON GEN SG1 PRS
 "<elämässäni>"
@@ -4636,7 +4636,7 @@
 "<kaverina>"
 	"kaveri" NOUN ESS SG
 "<muitakin>"
-	"muu" PRON PAR KIN PL
+	"muu" PRON PAR CLITKIN PL
 "<täytteitä>"
 	"täyte" NOUN PAR PL
 "<.>"
@@ -4645,11 +4645,11 @@
 # text = Kyllähän kebab pitsaankin passaa, vaan minä nautin siitä kuitenkin enmmän eihan kebab salaattina tai joskus jopa ranskalaisilla .
 # sent_id =  b709.17
 "<Kyllähän>"
-	"kyllä" ADV HAN
+	"kyllä" ADV CLITHAN
 "<kebab>"
 	"kebab" NOUN NOM SG
 "<pitsaankin>"
-	"pitsa" NOUN ILL KIN SG
+	"pitsa" NOUN ILL CLITKIN SG
 "<passaa>"
 	"passata" VERB INDV SG3 PRESENT ACT
 "<,>"
@@ -4688,7 +4688,7 @@
 "<Vaan>"
 	"vaan" CCONJ
 "<onhan>"
-	"olla" AUX HAN INDV SG3 PRESENT ACT
+	"olla" AUX CLITHAN INDV SG3 PRESENT ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<edes>"
@@ -4729,9 +4729,9 @@
 # text = Eikä hintakaan päätä huimaa
 # sent_id =  b709.21
 "<Eikä>"
-	"ei" AUX KA SG3 NEG ACT
+	"ei" AUX CLITKA SG3 NEG ACT
 "<hintakaan>"
-	"hinta" NOUN NOM KAAN SG
+	"hinta" NOUN NOM CLITKAAN SG
 "<päätä>"
 	"pää" NOUN PAR SG
 "<huimaa>"
@@ -4757,7 +4757,7 @@
 "<makeaa>"
 	"makea" ADJ PAR POS SG
 "<herkkuahan>"
-	"herkku" NOUN PAR HAN SG
+	"herkku" NOUN PAR CLITHAN SG
 "<nimi>"
 	"nimi" NOUN NOM SG
 "<tarkoittaa>"
@@ -4803,7 +4803,7 @@
 "<oikeastaan>"
 	"oikeastaan" ADV
 "<herkkuhan>"
-	"herkku" NOUN NOM HAN SG
+	"herkku" NOUN NOM CLITHAN SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kaikille>"
@@ -4836,7 +4836,7 @@
 # text = Hihkaskoon ken tunnistaa nimityksen omakseen, niin linkitän...
 # sent_id =  b711.5
 "<Hihkaskoon>"
-	"hihkaista" VERB IMPV SG3 COLL ACT
+	"hihkaista" VERB IMPV SG3 <Coll> ACT
 "<ken>"
 	"ken" PRON NOM SG INT
 "<tunnistaa>"
@@ -5234,7 +5234,7 @@
 "<vaikka>"
 	"vaikka" SCONJ
 "<käsittelenkin>"
-	"käsitellä" VERB KIN INDV SG1 PRESENT ACT
+	"käsitellä" VERB CLITKIN INDV SG1 PRESENT ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<vielä>"
@@ -5306,7 +5306,7 @@
 "<paras>"
 	"hyvä" ADJ NOM SUP SG
 "<lainsäätäjäkään>"
-	"lain#säätäjä" NOUN NOM KAAN <Ja> SG
+	"lain#säätäjä" NOUN NOM CLITKAAN <Ja> SG
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<voi>"
@@ -6203,7 +6203,7 @@
 "<->"
 	"-" PUNCT
 "<olipa>"
-	"olla" AUX PA INDV SG3 PAST ACT
+	"olla" AUX CLITPA INDV SG3 PAST ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<eurooppalainen>"
@@ -6461,7 +6461,7 @@
 # text = Halutaanko lelualalla mennä siihen, että kolmas osapuoli arvioi joka ainoan markkinoille tulevan lelun vai jätetäänkö asia siihen, että valmistajat ottavat takuun ja siten myös vastuun käyttämällä CE-merkintää - mihin on lisättävä vielä se, että valmistajien on voitava nykyisin voimassa olevien sääntöjen mukaan todistaa koska tahansa laajalla dokumentaatiolla, että ne käyttävät CE-merkintää oikeutetusti - vai lähdetäänkö kolmannelle tielle määrittelemällä uudessa leludirektiivissä tiettyjä lelutyyppejä, joille merkinnän myöntää kolmas osapuoli?
 # sent_id =  e1008.45
 "<Halutaanko>"
-	"haluta" VERB KO INDV PRESENT PSS
+	"haluta" VERB CLITKO INDV PRESENT PSS
 "<lelualalla>"
 	"lelu#ala" NOUN ADE SG
 "<mennä>"
@@ -6491,7 +6491,7 @@
 "<vai>"
 	"vai" CCONJ
 "<jätetäänkö>"
-	"jättää" VERB KO INDV PRESENT PSS
+	"jättää" VERB CLITKO INDV PRESENT PSS
 "<asia>"
 	"asia" NOUN NOM SG
 "<siihen>"
@@ -6577,7 +6577,7 @@
 "<vai>"
 	"vai" CCONJ
 "<lähdetäänkö>"
-	"lähteä" VERB KO INDV PRESENT PSS
+	"lähteä" VERB CLITKO INDV PRESENT PSS
 "<kolmannelle>"
 	"kolmas" ADJ ALL SG ORD
 "<tielle>"
@@ -6736,7 +6736,7 @@
 "<->"
 	"-" PUNCT
 "<enkä>"
-	"ei" AUX KA SG1 NEG ACT
+	"ei" AUX CLITKA SG1 NEG ACT
 "<usko>"
 	"uskoa" VERB CONNEG INDV PRESENT
 "<,>"
@@ -7057,7 +7057,7 @@
 # text = Olihan se halpa, muttei hyvä!
 # sent_id =  e1008.57
 "<Olihan>"
-	"olla" AUX HAN INDV SG3 PAST ACT
+	"olla" AUX CLITHAN INDV SG3 PAST ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<halpa>"
@@ -7084,7 +7084,7 @@
 "<hyvää>"
 	"hyvä" ADJ PAR POS SG
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<tarkoita>"
@@ -7099,7 +7099,7 @@
 # text = Siispä kuluttajan täytyy tietää, että tuotteen hinta on jossain suhteessa tuotteen laatuun ja turvallisuuteen.
 # sent_id =  e1008.59
 "<Siispä>"
-	"siis" ADV PA
+	"siis" ADV CLITPA
 "<kuluttajan>"
 	"kuluttaja" NOUN GEN <Ja> SG
 "<täytyy>"
@@ -7225,7 +7225,7 @@
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<parannetaankin>"
-	"parantaa" VERB KIN INDV PRESENT PSS
+	"parantaa" VERB CLITKIN INDV PRESENT PSS
 "<ja>"
 	"ja" CCONJ
 "<että>"
@@ -7257,7 +7257,7 @@
 "<niitä>"
 	"se" PRON PAR PL DEM
 "<täytyykin>"
-	"täytyä" AUX KIN INDV SG0 PRESENT ACT
+	"täytyä" AUX CLITKIN INDV SG0 PRESENT ACT
 "<antaa>"
 	"antaa" VERB INFA SG ACT
 "<.>"
@@ -7582,7 +7582,7 @@
 "<,>"
 	"," PUNCT
 "<kannattaako>"
-	"kannattaa" VERB KO INDV SG3 PRESENT ACT
+	"kannattaa" VERB CLITKO INDV SG3 PRESENT ACT
 "<hän>"
 	"hän" PRON NOM SG3 PRS
 "<sitä>"
@@ -7662,7 +7662,7 @@
 "<,>"
 	"," PUNCT
 "<kannattaako>"
-	"kannattaa" VERB KO INDV SG3 PRESENT ACT
+	"kannattaa" VERB CLITKO INDV SG3 PRESENT ACT
 "<myös>"
 	"myös" ADV
 "<neuvosto>"
@@ -7690,7 +7690,7 @@
 # text = Onko huomautettavaa?
 # sent_id =  e1061.2
 "<Onko>"
-	"olla" VERB KO INDV SG3 PRESENT ACT
+	"olla" VERB CLITKO INDV SG3 PRESENT ACT
 "<huomautettavaa>"
 	"huomauttaa" VERB PAR POS SG PRESENT PSS
 "<?>"
@@ -7766,7 +7766,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<tule>"
 	"tulla" VERB CONNEG INDV PRESENT
 "<olemaan>"
@@ -8022,13 +8022,13 @@
 "<minulle>"
 	"minä" PRON ALL SG1 PRS
 "<todellakin>"
-	"todella" ADV KIN
+	"todella" ADV CLITKIN
 "<tuttu>"
 	"tuttu" ADJ NOM POS SG
 "<,>"
 	"," PUNCT
 "<enkä>"
-	"ei" VERB KA SG1 NEG ACT
+	"ei" VERB CLITKA SG1 NEG ACT
 "<ole>"
 	"olla" AUX CONNEG INDV PRESENT
 "<koskaan>"
@@ -8331,7 +8331,7 @@
 # text = Päästäänkö kolmanteen pilariin kuuluvaa tietosuojaa koskevasta puitepäätöksestä poliittiseen yhteisymmärrykseen tämän vuoden loppuun mennessä?
 # sent_id =  e1079.10
 "<Päästäänkö>"
-	"päästä" VERB KO INDV PRESENT PSS
+	"päästä" VERB CLITKO INDV PRESENT PSS
 "<kolmanteen>"
 	"kolmas" ADJ ILL SG ORD
 "<pilariin>"
@@ -8362,7 +8362,7 @@
 # text = Ratkaiseeko puitesopimus kaikki ongelmat?
 # sent_id =  e1079.11
 "<Ratkaiseeko>"
-	"ratkaista" VERB KO INDV SG3 PRESENT ACT
+	"ratkaista" VERB CLITKO INDV SG3 PRESENT ACT
 "<puitesopimus>"
 	"puite#sopimus" NOUN NOM SG
 "<kaikki>"
@@ -8375,7 +8375,7 @@
 # text = Onko tietosuojaviranomaisilla asianmukaiset voimavarat tietosuojaa koskevien sääntöjen täytäntöönpanemiseksi SIS II -järjestelmän osalta?
 # sent_id =  e1079.12
 "<Onko>"
-	"olla" AUX KO INDV SG3 PRESENT ACT
+	"olla" AUX CLITKO INDV SG3 PRESENT ACT
 "<tietosuojaviranomaisilla>"
 	"tieto#suoja#viran#omainen" NOUN ADE PL
 "<asianmukaiset>"
@@ -8404,7 +8404,7 @@
 # text = Toimivatko kaikki jäsenvaltiot vilpittömässä mielessä Schengen-tietoja käsitellessään?
 # sent_id =  e1079.13
 "<Toimivatko>"
-	"toimia" VERB KO INDV PL3 PRESENT ACT
+	"toimia" VERB CLITKO INDV PL3 PRESENT ACT
 "<kaikki>"
 	"kaikki" PRON NOM SG
 "<jäsenvaltiot>"
@@ -9267,9 +9267,9 @@
 "<">"
 	""" PUNCT
 "<Eikö>"
-	"ei" VERB KO PL0 NEG COLL ACT
+	"ei" VERB CLITKO PL0 NEG <Coll> ACT
 "<sinustakin>"
-	"sinä" PRON ELA KIN SG2 PRS
+	"sinä" PRON ELA CLITKIN SG2 PRS
 "<?>"
 	"?" PUNCT
 "<">"
@@ -9389,7 +9389,7 @@
 # text = Ettekö näe?"
 # sent_id =  f212.9
 "<Ettekö>"
-	"ei" AUX KO PL2 NEG ACT
+	"ei" AUX CLITKO PL2 NEG ACT
 "<näe>"
 	"nähdä" VERB CONNEG INDV PRESENT
 "<?>"
@@ -9462,11 +9462,11 @@
 "<Päätin>"
 	"päättää" VERB INDV SG1 PAST ACT
 "<alottaa>"
-	"alottaa" VERB INFA SG COLL ACT
+	"alottaa" VERB INFA SG <Coll> ACT
 "<jatkotarinan>"
 	"jatko#tarina" NOUN GEN SG
 "<kirjottamisen>"
-	"kirjoittaminen" NOUN GEN <Minen> SG COLL
+	"kirjoittaminen" NOUN GEN <Minen> SG <Coll>
 "<.>"
 	"." PUNCT
 
@@ -9995,7 +9995,7 @@
 "<saanut>"
 	"saada" VERB NOM POS SG PCPNUT ACT
 "<demoninkin>"
-	"demoni" NOUN GEN KIN SG
+	"demoni" NOUN GEN CLITKIN SG
 "<pakenemaan>"
 	"paeta" VERB ILL INFMA SG ACT
 "<paikalta>"
@@ -10372,7 +10372,7 @@
 "<Tai>"
 	"tai" CCONJ
 "<eihän>"
-	"ei" AUX HAN SG3 NEG ACT
+	"ei" AUX CLITHAN SG3 NEG ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<kukaan>"
@@ -10394,7 +10394,7 @@
 "<vaikka>"
 	"vaikka" ADV
 "<olisikaan>"
-	"olla" AUX KAAN CONNEG COND
+	"olla" AUX CLITKAAN CONNEG COND
 "<.>"
 	"." PUNCT
 
@@ -10801,7 +10801,7 @@
 "<Pelkkiä>"
 	"pelkkä" ADJ PAR POS PL
 "<sekottuneita>"
-	"sekoittua" VERB PAR POS PL PCPNUT COLL ACT
+	"sekoittua" VERB PAR POS PL PCPNUT <Coll> ACT
 "<kyyneleitä>"
 	"kyynel" NOUN PAR PL
 "<ja>"
@@ -11794,11 +11794,11 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<tule>"
 	"tulla" VERB CONNEG INDV PRESENT
 "<takasin>"
-	"takaisin" ADV COLL
+	"takaisin" ADV <Coll>
 "<.>"
 	"." PUNCT
 
@@ -12023,7 +12023,7 @@
 "<kun>"
 	"kun" SCONJ
 "<ikkunakin>"
-	"ikkuna" NOUN NOM KIN SG
+	"ikkuna" NOUN NOM CLITKIN SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kiinni>"
@@ -12108,7 +12108,7 @@
 "<unohtunut>"
 	"unohtua" VERB NOM POS SG PCPNUT ACT
 "<itseltänikin>"
-	"itse" PRON ABL KIN SG SING 1 YES
+	"itse" PRON ABL CLITKIN SG SING 1 YES
 "<.>"
 	"." PUNCT
 
@@ -12259,7 +12259,7 @@
 "<voi>"
 	"voida" AUX CONNEG INDV PRESENT
 "<tietääkään>"
-	"tietää" VERB KAAN INFA SG ACT
+	"tietää" VERB CLITKAAN INFA SG ACT
 "<,>"
 	"," PUNCT
 "<kuinka>"
@@ -12308,7 +12308,7 @@
 "<ja>"
 	"ja" CCONJ
 "<tekstikin>"
-	"teksti" NOUN NOM KIN SG
+	"teksti" NOUN NOM CLITKIN SG
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<alkeellista>"
@@ -12497,7 +12497,7 @@
 # text = Sehän olisi julmaa.
 # sent_id =  f603.18
 "<Sehän>"
-	"se" PRON NOM HAN SG DEM
+	"se" PRON NOM CLITHAN SG DEM
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<julmaa>"
@@ -12563,7 +12563,7 @@
 # text = Haluaako kukaan tulla määriteltäväksi "siksi hiljaiseksi naiseksi, joka laittaa vispipuuroihin kansia".
 # sent_id =  f603.22
 "<Haluaako>"
-	"haluta" VERB KO INDV SG3 PRESENT ACT
+	"haluta" VERB CLITKO INDV SG3 PRESENT ACT
 "<kukaan>"
 	"kukaan" PRON NOM SG
 "<tulla>"
@@ -12698,7 +12698,7 @@
 "<ahkerien>"
 	"ahkera" ADJ GEN POS PL
 "<koululaistenkin>"
-	"koululainen" NOUN GEN KIN <Lainen> PL
+	"koululainen" NOUN GEN CLITKIN <Lainen> PL
 "<alkaa>"
 	"alkaa" VERB INDV SG3 PRESENT ACT
 "<.>"
@@ -12879,7 +12879,7 @@
 "<,>"
 	"," PUNCT
 "<onko>"
-	"olla" AUX KO INDV SG0 PRESENT ACT
+	"olla" AUX CLITKO INDV SG0 PRESENT ACT
 "<minusta>"
 	"minä" PRON ELA SG1 PRS
 "<siihen>"
@@ -12887,7 +12887,7 @@
 "<tai>"
 	"tai" CCONJ
 "<voinko>"
-	"voida" AUX KO INDV SG1 PRESENT ACT
+	"voida" AUX CLITKO INDV SG1 PRESENT ACT
 "<koskaan>"
 	"koskaan" ADV
 "<vain>"
@@ -12899,7 +12899,7 @@
 "<,>"
 	"," PUNCT
 "<onko>"
-	"olla" AUX KO INDV SG3 PRESENT ACT
+	"olla" AUX CLITKO INDV SG3 PRESENT ACT
 "<minulla>"
 	"minä" PRON ADE SG1 PRS
 "<kaikki>"
@@ -12911,7 +12911,7 @@
 "<ja>"
 	"ja" CCONJ
 "<haluanko>"
-	"haluta" VERB KO INDV SG1 PRESENT ACT
+	"haluta" VERB CLITKO INDV SG1 PRESENT ACT
 "<kenties>"
 	"kenties" ADV
 "<seuraavana>"
@@ -12956,7 +12956,7 @@
 "<pitkälle>"
 	"pitkälle" ADV
 "<ajatteluakin>"
-	"ajattelu" NOUN PAR KIN <U> SG
+	"ajattelu" NOUN PAR CLITKIN <U> SG
 "<kun>"
 	"kun" ADV
 "<voi>"
@@ -13015,7 +13015,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<joudu>"
 	"joutua" AUX CONNEG INDV PRESENT
 "<aamuyöllä>"
@@ -13127,7 +13127,7 @@
 "<ikinä>"
 	"ikinä" ADV
 "<menenkin>"
-	"mennä" VERB KIN INDV SG1 PRESENT ACT
+	"mennä" VERB CLITKIN INDV SG1 PRESENT ACT
 "<.>"
 	"." PUNCT
 
@@ -13151,7 +13151,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<niinku>"
-	"niin#kuin" ADV COLL
+	"niin#kuin" ADV <Coll>
 "<Telatassu>"
 	"Telatassu" PROPN NOM SG
 "<,>"
@@ -13170,15 +13170,15 @@
 # text = Mä oon ihan hipihiljaa nurkas.
 # sent_id =  f803.3
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<oon>"
-	"olla" AUX INDV SG1 COLL PRESENT ACT
+	"olla" AUX INDV SG1 <Coll> PRESENT ACT
 "<ihan>"
 	"ihan" ADV
 "<hipihiljaa>"
 	"hipi#hiljaa" ADV
 "<nurkas>"
-	"nurkka" NOUN INE SG COLL
+	"nurkka" NOUN INE SG <Coll>
 "<.>"
 	"." PUNCT
 
@@ -13189,7 +13189,7 @@
 "<se>"
 	"se" PRON NOM SG DEM
 "<kauheesti>"
-	"kauheasti" ADV <Sti> COLL
+	"kauheasti" ADV <Sti> <Coll>
 "<koskaan>"
 	"koskaan" ADV
 "<puhu>"
@@ -13197,11 +13197,11 @@
 "<,>"
 	"," PUNCT
 "<enkä>"
-	"ei" VERB KA SG1 NEG ACT
+	"ei" VERB CLITKA SG1 NEG ACT
 "<puhu>"
 	"puhua" VERB CONNEG INDV PRESENT
 "<mäkään>"
-	"minä" PRON NOM KAAN SG PRS COLL
+	"minä" PRON NOM CLITKAAN SG PRS <Coll>
 "<.>"
 	"." PUNCT
 
@@ -13216,27 +13216,27 @@
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<istun>"
 	"istua" VERB INDV SG1 PRESENT ACT
 "<tääl>"
-	"täällä" ADV COLL
+	"täällä" ADV <Coll>
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<tääl>"
-	"täällä" ADV COLL
+	"täällä" ADV <Coll>
 "<alakerras>"
-	"ala#kerta" NOUN INE SG COLL
+	"ala#kerta" NOUN INE SG <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muita>"
 	"muu" PRON PAR PL
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<ja>"
@@ -13246,31 +13246,31 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<antaa>"
 	"antaa" VERB INDV SG3 PRESENT ACT
 "<mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<silti>"
 	"silti" ADV
 "<monesti>"
 	"monesti" ADV <Sti>
 "<istuu>"
-	"istua" VERB INFA SG COLL ACT
+	"istua" VERB INFA SG <Coll> ACT
 "<tääl>"
-	"täällä" ADV COLL
+	"täällä" ADV <Coll>
 "<tosi>"
 	"tosi" ADV
 "<pitkään>"
 	"pitkään" ADV
 "<enneku>"
-	"ennen#kuin" SCONJ COLL
+	"ennen#kuin" SCONJ <Coll>
 "<ajaa>"
 	"ajaa" VERB INDV SG3 PRESENT ACT
 "<mut>"
-	"minä" PRON ACC SG PRS COLL
+	"minä" PRON ACC SG PRS <Coll>
 "<pois>"
 	"pois" ADV
 "<.>"
@@ -13287,11 +13287,11 @@
 "<kärry>"
 	"kärry" NOUN NOM <U> SG
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<sillä>"
 	"se" PRON ADE SG DEM
 "<oo>"
-	"olla" AUX CONNEG INDV COLL PRESENT
+	"olla" AUX CONNEG INDV <Coll> PRESENT
 "<käsiä>"
 	"käsi" NOUN PAR PL
 "<.>"
@@ -13306,13 +13306,13 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<sillä>"
 	"se" PRON ADE SG DEM
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<oo>"
-	"olla" AUX CONNEG INDV COLL PRESENT
+	"olla" AUX CONNEG INDV <Coll> PRESENT
 "<jalkoja>"
 	"jalka" NOUN PAR PL
 "<.>"
@@ -13321,15 +13321,15 @@
 # text = Mä oon kuullu, et Teltsu on joskus ollu solttu ja astunu miinaan tai jotain, ja siks se istuu ny tuos telatuolis.
 # sent_id =  f803.8
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<oon>"
-	"olla" AUX INDV SG1 COLL PRESENT ACT
+	"olla" AUX INDV SG1 <Coll> PRESENT ACT
 "<kuullu>"
-	"kuulla" VERB NOM POS SG PCPNUT COLL ACT
+	"kuulla" VERB NOM POS SG PCPNUT <Coll> ACT
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<Teltsu>"
 	"Teltsu" PROPN NOM SG
 "<on>"
@@ -13337,13 +13337,13 @@
 "<joskus>"
 	"joskus" ADV
 "<ollu>"
-	"olla" AUX NOM POS SG PCPNUT COLL ACT
+	"olla" AUX NOM POS SG PCPNUT <Coll> ACT
 "<solttu>"
 	"solttu" NOUN NOM SG
 "<ja>"
 	"ja" CCONJ
 "<astunu>"
-	"astua" VERB NOM POS SG PCPNUT COLL ACT
+	"astua" VERB NOM POS SG PCPNUT <Coll> ACT
 "<miinaan>"
 	"miina" NOUN ILL SG
 "<tai>"
@@ -13355,24 +13355,24 @@
 "<ja>"
 	"ja" CCONJ
 "<siks>"
-	"siksi" ADV COLL
+	"siksi" ADV <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<istuu>"
 	"istua" VERB INDV SG3 PRESENT ACT
 "<ny>"
-	"nyt" ADV COLL
+	"nyt" ADV <Coll>
 "<tuos>"
-	"tuo" PRON INE SG DEM COLL
+	"tuo" PRON INE SG DEM <Coll>
 "<telatuolis>"
-	"tela#tuoli" NOUN INE SG COLL
+	"tela#tuoli" NOUN INE SG <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Karriki on joskus ollut ihan oikeissa töissä, taksina tai jotain, mut siitä on aikaa.
 # sent_id =  f803.9
 "<Karriki>"
-	"Karri" PROPN NOM KIN SG COLL
+	"Karri" PROPN NOM CLITKIN SG <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<joskus>"
@@ -13396,7 +13396,7 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<on>"
@@ -13417,11 +13417,11 @@
 "<niin>"
 	"niin" ADV
 "<paljo>"
-	"paljon" ADV COLL
+	"paljon" ADV <Coll>
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<se>"
@@ -13431,7 +13431,7 @@
 "<taksista>"
 	"taksi" NOUN ELA SG
 "<mee>"
-	"mennä" VERB CONNEG INDV COLL PRESENT
+	"mennä" VERB CONNEG INDV <Coll> PRESENT
 "<.>"
 	"." PUNCT
 
@@ -13440,17 +13440,17 @@
 "<">"
 	""" PUNCT
 "<Etsä>"
-	"ei#sinä" VERB KO SG2 NEG COLL ACT
+	"ei#sinä" VERB CLITKO SG2 NEG <Coll> ACT
 "<vois>"
-	"voida" AUX COND SG3 COLL ACT
+	"voida" AUX COND SG3 <Coll> ACT
 "<Runkku>"
 	"Runkku" PROPN NOM SG
 "<nyt>"
 	"nyt" ADV
 "<lähtee>"
-	"lähteä" VERB INFA SG COLL ACT
+	"lähteä" VERB INFA SG <Coll> ACT
 "<niinku>"
-	"niin#kuin" ADV COLL
+	"niin#kuin" ADV <Coll>
 "<vittuun>"
 	"vittu" NOUN ILL SG
 "<?>"
@@ -13465,14 +13465,14 @@
 "<heittää>"
 	"heittää" VERB INDV SG3 PRESENT ACT
 "<mulle>"
-	"minä" PRON ALL SG PRS COLL
+	"minä" PRON ALL SG PRS <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Mä kohautan olkiani ja lähen nouseen portaita yläkertaan.
 # sent_id =  f803.13
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<kohautan>"
 	"kohauttaa" VERB INDV SG1 PRESENT ACT
 "<olkiani>"
@@ -13480,9 +13480,9 @@
 "<ja>"
 	"ja" CCONJ
 "<lähen>"
-	"lähteä" VERB INDV SG1 COLL PRESENT ACT
+	"lähteä" VERB INDV SG1 <Coll> PRESENT ACT
 "<nouseen>"
-	"nousta" VERB ILL INFMA SG COLL ACT
+	"nousta" VERB ILL INFMA SG <Coll> ACT
 "<portaita>"
 	"portaat" NOUN PAR PL
 "<yläkertaan>"
@@ -13518,7 +13518,7 @@
 "<pomo>"
 	"pomo" NOUN NOM SG
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<tykkää>"
@@ -13537,7 +13537,7 @@
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<ei>"
@@ -13557,7 +13557,7 @@
 "<ja>"
 	"ja" CCONJ
 "<siks>"
-	"siksi" ADV COLL
+	"siksi" ADV <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<ei>"
@@ -13572,17 +13572,17 @@
 # text = Emmäkään tykkää koneista eikä kukaan muukaan meistä, paitsi ehkä Teltsu, mut mun mielestä Karri on silti ihan ookoo.
 # sent_id =  f803.17
 "<Emmäkään>"
-	"ei#minä" VERB KAAN SG1 NEG COLL ACT
+	"ei#minä" VERB CLITKAAN SG1 NEG <Coll> ACT
 "<tykkää>"
 	"tykätä" VERB CONNEG INDV PRESENT
 "<koneista>"
 	"kone" NOUN ELA PL
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<kukaan>"
 	"kukaan" PRON NOM SG
 "<muukaan>"
-	"muu" PRON NOM KAAN SG
+	"muu" PRON NOM CLITKAAN SG
 "<meistä>"
 	"minä" PRON ELA PL1 PRS
 "<tykkää>"
@@ -13598,9 +13598,9 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<mielestä>"
 	"mieli" NOUN ELA SG
 "<Karri>"
@@ -13625,7 +13625,7 @@
 "<tykkää>"
 	"tykätä" VERB CONNEG INDV PRESENT
 "<Teltsustakaan>"
-	"Teltsu" PROPN ELA KAAN SG
+	"Teltsu" PROPN ELA CLITKAAN SG
 "<,>"
 	"," PUNCT
 "<kun>"
@@ -13639,7 +13639,7 @@
 "<Karrin>"
 	"Karri" PROPN GEN SG
 "<kans>"
-	"kanssa" ADP POST COLL
+	"kanssa" ADP POST <Coll>
 "<ja>"
 	"ja" CCONJ
 "<kun>"
@@ -13649,9 +13649,9 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muutenki>"
-	"muuten" ADV KIN COLL
+	"muuten" ADV CLITKIN <Coll>
 "<puoliks>"
-	"puoliksi" ADV COLL
+	"puoliksi" ADV <Coll>
 "<kone>"
 	"kone" NOUN NOM SG
 "<.>"
@@ -13660,9 +13660,9 @@
 # text = Mut alakerras Teltsu on pomo eikä ees Stilsu rähise siellä koskaan.
 # sent_id =  f803.19
 "<Mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<alakerras>"
-	"ala#kerta" NOUN INE SG COLL
+	"ala#kerta" NOUN INE SG <Coll>
 "<Teltsu>"
 	"Teltsu" PROPN NOM SG
 "<on>"
@@ -13670,9 +13670,9 @@
 "<pomo>"
 	"pomo" NOUN NOM SG
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<ees>"
-	"edes" ADV COLL
+	"edes" ADV <Coll>
 "<Stilsu>"
 	"Stilsu" PROPN NOM SG
 "<rähise>"
@@ -13691,7 +13691,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<tapellu>"
-	"tapella" VERB NOM POS SG PCPNUT COLL ACT
+	"tapella" VERB NOM POS SG PCPNUT <Coll> ACT
 "<yöllä>"
 	"yö" NOUN ADE SG
 "<,>"
@@ -13701,7 +13701,7 @@
 "<kädet>"
 	"käsi" NOUN NOM PL
 "<on>"
-	"olla" AUX INDV SG3 COLL PRESENT ACT
+	"olla" AUX INDV SG3 <Coll> PRESENT ACT
 "<auki>"
 	"auki" ADV
 "<ja>"
@@ -13709,14 +13709,14 @@
 "<paita>"
 	"paita" NOUN NOM SG
 "<veres>"
-	"veri" NOUN INE SG COLL
+	"veri" NOUN INE SG <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Mut se nyt on aina veres.
 # sent_id =  f803.21
 "<Mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<nyt>"
@@ -13726,7 +13726,7 @@
 "<aina>"
 	"aina" ADV
 "<veres>"
-	"veri" NOUN INE SG COLL
+	"veri" NOUN INE SG <Coll>
 "<.>"
 	"." PUNCT
 
@@ -13741,7 +13741,7 @@
 "<ja>"
 	"ja" CCONJ
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<vetää>"
 	"vetää" VERB INDV SG3 PRESENT ACT
 "<niitä>"
@@ -13749,13 +13749,13 @@
 "<ja>"
 	"ja" CCONJ
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<alkaa>"
 	"alkaa" VERB INDV SG3 PRESENT ACT
 "<koluaan>"
-	"koluta" VERB ILL INFMA SG COLL ACT
+	"koluta" VERB ILL INFMA SG <Coll> ACT
 "<tätä>"
 	"tämä" PRON PAR SG DEM
 "<meidän>"
@@ -13765,11 +13765,11 @@
 "<ja>"
 	"ja" CCONJ
 "<hakkaa>"
-	"hakata" VERB ILL INFMA SG COLL ACT
+	"hakata" VERB ILL INFMA SG <Coll> ACT
 "<tai>"
 	"tai" CCONJ
 "<painaa>"
-	"painaa" VERB ILL INFMA SG COLL ACT
+	"painaa" VERB ILL INFMA SG <Coll> ACT
 "<tai>"
 	"tai" CCONJ
 "<molempia>"
@@ -13792,13 +13792,13 @@
 "<se>"
 	"se" PRON NOM SG DEM
 "<paljoo>"
-	"paljoa" ADV COLL
+	"paljoa" ADV <Coll>
 "<välitä>"
 	"välittää" VERB CONNEG INDV PRESENT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<onko>"
-	"olla" AUX KO INDV SG3 PRESENT ACT
+	"olla" AUX CLITKO INDV SG3 PRESENT ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<kundi>"
@@ -13820,7 +13820,7 @@
 "<ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV SG3 COLL PRESENT ACT
+	"olla" AUX INDV SG3 <Coll> PRESENT ACT
 "<kaikki>"
 	"kaikki" PRON NOM SG
 "<sen>"
@@ -13834,7 +13834,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muutenki>"
-	"muuten" ADV KIN COLL
+	"muuten" ADV CLITKIN <Coll>
 "<niin>"
 	"niin" ADV
 "<iso>"
@@ -13846,7 +13846,7 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<tartte>"
-	"tarvita" AUX CONNEG INDV COLL PRESENT
+	"tarvita" AUX CONNEG INDV <Coll> PRESENT
 "<välittää>"
 	"välittää" VERB INFA SG ACT
 "<.>"
@@ -13855,23 +13855,23 @@
 # text = Sit ku ne selvii, ne tulee taas ruinaan Stilsulta kamaa.
 # sent_id =  f803.24
 "<Sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<ne>"
 	"se" PRON NOM PL DEM
 "<selvii>"
-	"selvitä" VERB INDV PL3 COLL PRESENT ACT
+	"selvitä" VERB INDV PL3 <Coll> PRESENT ACT
 "<,>"
 	"," PUNCT
 "<ne>"
 	"se" PRON NOM PL DEM
 "<tulee>"
-	"tulla" VERB INDV PL3 COLL PRESENT ACT
+	"tulla" VERB INDV PL3 <Coll> PRESENT ACT
 "<taas>"
 	"taas" ADV
 "<ruinaan>"
-	"ruinata" VERB ILL INFMA SG COLL ACT
+	"ruinata" VERB ILL INFMA SG <Coll> ACT
 "<Stilsulta>"
 	"Stilsu" PROPN ABL SG
 "<kamaa>"
@@ -13884,21 +13884,21 @@
 "<Se>"
 	"se" PRON NOM SG DEM
 "<tykkäis>"
-	"tykätä" VERB COND SG3 COLL ACT
+	"tykätä" VERB COND SG3 <Coll> ACT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<sanottais>"
-	"sanoa" VERB COND PL1 COLL ACT
+	"sanoa" VERB COND PL1 <Coll> ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<Stiletiks>"
-	"Stiletti" PROPN TRA SG COLL
+	"Stiletti" PROPN TRA SG <Coll>
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<on>"
@@ -13906,21 +13906,21 @@
 "<liian>"
 	"liian" ADV
 "<vaikee>"
-	"vaikea" ADJ NOM POS SG COLL
+	"vaikea" ADJ NOM POS SG <Coll>
 "<nimi>"
 	"nimi" NOUN NOM SG
 "<ja>"
 	"ja" CCONJ
 "<siks>"
-	"siksi" ADV COLL
+	"siksi" ADV <Coll>
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<sanotaan>"
-	"sanoa" VERB INDV PL1 COLL PRESENT ACT
+	"sanoa" VERB INDV PL1 <Coll> PRESENT ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<Stilsuks>"
-	"Stilsu" PROPN TRA SG COLL
+	"Stilsu" PROPN TRA SG <Coll>
 "<.>"
 	"." PUNCT
 
@@ -13931,11 +13931,11 @@
 "<muut>"
 	"muu" PRON NOM PL
 "<sanoo>"
-	"sanoa" VERB INDV PL3 COLL PRESENT ACT
+	"sanoa" VERB INDV PL3 <Coll> PRESENT ACT
 "<,>"
 	"," PUNCT
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<en>"
 	"ei" VERB SG1 NEG ACT
 "<.>"
@@ -13944,11 +13944,11 @@
 # text = Mua sanotaan Runkuks, se on niinku Runoilija, ku mä en sano koskaan mitään, kirjotan vaan seinille.
 # sent_id =  f803.27
 "<Mua>"
-	"minä" PRON PAR SG PRS COLL
+	"minä" PRON PAR SG PRS <Coll>
 "<sanotaan>"
 	"sanoa" VERB INDV PRESENT PSS
 "<Runkuks>"
-	"Runkku" PROPN TRA SG COLL
+	"Runkku" PROPN TRA SG <Coll>
 "<,>"
 	"," PUNCT
 "<se>"
@@ -13956,15 +13956,15 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<niinku>"
-	"niin#kuin" ADV COLL
+	"niin#kuin" ADV <Coll>
 "<Runoilija>"
 	"Runoilija" PROPN NOM SG
 "<,>"
 	"," PUNCT
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<en>"
 	"ei" AUX SG1 NEG ACT
 "<sano>"
@@ -13976,7 +13976,7 @@
 "<,>"
 	"," PUNCT
 "<kirjotan>"
-	"kirjoittaa" VERB INDV SG1 COLL PRESENT ACT
+	"kirjoittaa" VERB INDV SG1 <Coll> PRESENT ACT
 "<vaan>"
 	"vaan" ADV
 "<seinille>"
@@ -13991,7 +13991,7 @@
 "<kyllä>"
 	"kyllä" ADV
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<joskus>"
 	"joskus" ADV
 "<lapsena>"
@@ -14001,9 +14001,9 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<konekorttelin>"
 	"kone#kortteli" NOUN GEN SG
 "<peltijengi>"
@@ -14011,15 +14011,15 @@
 "<sai>"
 	"saada" VERB INDV SG3 PAST ACT
 "<mut>"
-	"minä" PRON ACC SG PRS COLL
+	"minä" PRON ACC SG PRS <Coll>
 "<kiinni>"
 	"kiinni" ADV
 "<ja>"
 	"ja" CCONJ
 "<leikkas>"
-	"leikata" VERB INDV SG3 COLL PAST ACT
+	"leikata" VERB INDV SG3 <Coll> PAST ACT
 "<multa>"
-	"minä" PRON ABL SG PRS COLL
+	"minä" PRON ABL SG PRS <Coll>
 "<kielen>"
 	"kieli" NOUN GEN SG
 "<.>"
@@ -14028,23 +14028,23 @@
 # text = Sit Stilsu on hakannu multa etuhampaat, ku emmä sen mielestä niitä enää tartte, ku emmä osaa puhuu.
 # sent_id =  f803.29
 "<Sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<Stilsu>"
 	"Stilsu" PROPN NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<hakannu>"
-	"hakata" VERB NOM POS SG PCPNUT COLL ACT
+	"hakata" VERB NOM POS SG PCPNUT <Coll> ACT
 "<multa>"
-	"minä" PRON ABL SG PRS COLL
+	"minä" PRON ABL SG PRS <Coll>
 "<etuhampaat>"
 	"etu#hammas" NOUN NOM PL
 "<,>"
 	"," PUNCT
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<emmä>"
-	"ei#minä" VERB SG1 NEG COLL ACT
+	"ei#minä" VERB SG1 NEG <Coll> ACT
 "<sen>"
 	"se" PRON GEN SG DEM
 "<mielestä>"
@@ -14054,24 +14054,24 @@
 "<enää>"
 	"enää" ADV
 "<tartte>"
-	"tarvita" VERB CONNEG INDV COLL PRESENT
+	"tarvita" VERB CONNEG INDV <Coll> PRESENT
 "<,>"
 	"," PUNCT
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<emmä>"
-	"ei#minä" VERB SG1 NEG COLL ACT
+	"ei#minä" VERB SG1 NEG <Coll> ACT
 "<osaa>"
 	"osata" VERB CONNEG INDV PRESENT
 "<puhuu>"
-	"puhua" VERB INFA SG COLL ACT
+	"puhua" VERB INFA SG <Coll> ACT
 "<.>"
 	"." PUNCT
 
 # text = Mä istun siinä tuolilla ku Stilsu avaa silmänsä.
 # sent_id =  f803.30
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<istun>"
 	"istua" VERB INDV SG1 PRESENT ACT
 "<siinä>"
@@ -14079,7 +14079,7 @@
 "<tuolilla>"
 	"tuoli" NOUN ADE SG
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<Stilsu>"
 	"Stilsu" PROPN NOM SG
 "<avaa>"
@@ -14092,13 +14092,13 @@
 # text = Mä nään siitä et sitä riepoo ja jomottaa ja mä häivyn kiireesti pois ja piiloon.
 # sent_id =  f803.31
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<nään>"
-	"nähdä" VERB INDV SG1 COLL PRESENT ACT
+	"nähdä" VERB INDV SG1 <Coll> PRESENT ACT
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<riepoo>"
@@ -14110,7 +14110,7 @@
 "<ja>"
 	"ja" CCONJ
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<häivyn>"
 	"häipyä" VERB INDV SG1 PRESENT ACT
 "<kiireesti>"
@@ -14131,21 +14131,21 @@
 "<tulee>"
 	"tulla" VERB INDV SG3 PRESENT ACT
 "<peräs>"
-	"perässä" ADV COLL
+	"perässä" ADV <Coll>
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<mua>"
-	"minä" PRON PAR SG PRS COLL
+	"minä" PRON PAR SG PRS <Coll>
 "<jaksa>"
 	"jaksaa" VERB CONNEG INDV PRESENT
 "<ettii>"
-	"etsiä" VERB INFA SG COLL ACT
+	"etsiä" VERB INFA SG <Coll> ACT
 "<,>"
 	"," PUNCT
 "<se>"
@@ -14155,11 +14155,11 @@
 "<alkaa>"
 	"alkaa" VERB INDV SG3 PRESENT ACT
 "<riehuu>"
-	"riehua" VERB INFA SG COLL ACT
+	"riehua" VERB INFA SG <Coll> ACT
 "<ja>"
 	"ja" CCONJ
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<alkaa>"
 	"alkaa" VERB INDV SG3 PRESENT ACT
 "<kuulua>"
@@ -14173,7 +14173,7 @@
 "<ja>"
 	"ja" CCONJ
 "<kaikkee>"
-	"kaikki" PRON PAR SG COLL
+	"kaikki" PRON PAR SG <Coll>
 "<muuta>"
 	"muu" PRON PAR SG
 "<meteliä>"
@@ -14184,7 +14184,7 @@
 # text = Mä painan kädet korville, se on vähän ku menis jonneki pois.
 # sent_id =  f803.33
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<painan>"
 	"painaa" VERB INDV SG1 PRESENT ACT
 "<kädet>"
@@ -14200,11 +14200,11 @@
 "<vähän>"
 	"vähän" ADV
 "<ku>"
-	"kuin" SCONJ COLL
+	"kuin" SCONJ <Coll>
 "<menis>"
-	"mennä" VERB COND SG3 COLL ACT
+	"mennä" VERB COND SG3 <Coll> ACT
 "<jonneki>"
-	"jonnekin" ADV COLL
+	"jonnekin" ADV <Coll>
 "<pois>"
 	"pois" ADV
 "<.>"
@@ -14215,15 +14215,15 @@
 "<Me>"
 	"minä" PRON NOM PL1 PRS
 "<istutaan>"
-	"istua" VERB INDV PL1 COLL PRESENT ACT
+	"istua" VERB INDV PL1 <Coll> PRESENT ACT
 "<Karrin>"
 	"Karri" PROPN GEN SG
 "<kyydis>"
-	"kyyti" NOUN INE SG COLL
+	"kyyti" NOUN INE SG <Coll>
 "<ja>"
 	"ja" CCONJ
 "<ajetaan>"
-	"ajaa" VERB INDV PL1 COLL PRESENT ACT
+	"ajaa" VERB INDV PL1 <Coll> PRESENT ACT
 "<ostarille>"
 	"ostari" NOUN ALL SG
 "<.>"
@@ -14236,9 +14236,9 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<vähä>"
-	"vähän" ADV COLL
+	"vähän" ADV <Coll>
 "<sellanen>"
-	"sellainen" ADJ NOM POS <Lainen> SG COLL
+	"sellainen" ADJ NOM POS <Lainen> SG <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<minkään>"
@@ -14261,7 +14261,7 @@
 "<tietysti>"
 	"tietysti" ADV <Sti>
 "<kans>"
-	"kanssa" ADV COLL
+	"kanssa" ADV <Coll>
 "<siellä>"
 	"siellä" ADV
 "<.>"
@@ -14272,19 +14272,19 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<asuu>"
-	"asua" VERB INDV PL3 COLL PRESENT ACT
+	"asua" VERB INDV PL3 <Coll> PRESENT ACT
 "<ihan>"
 	"ihan" ADV
 "<meidän>"
 	"minä" PRON GEN PL1 PRS
 "<naapurissa>"
-	"naapuri" NOUN INE SG COLL
+	"naapuri" NOUN INE SG <Coll>
 "<eikä>"
-	"ei" VERB KA PL1 NEG COLL ACT
+	"ei" VERB CLITKA PL1 NEG <Coll> ACT
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<tykätä>"
-	"tykätä" VERB CONNEG INDV COLL PRESENT
+	"tykätä" VERB CONNEG INDV <Coll> PRESENT
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<.>"
@@ -14297,11 +14297,11 @@
 "<Vittu>"
 	"vittu" INTJ
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<alko>"
-	"alkaa" VERB INDV SG3 COLL PAST ACT
+	"alkaa" VERB INDV SG3 <Coll> PAST ACT
 "<haiseen>"
-	"haista" VERB ILL INFMA SG COLL ACT
+	"haista" VERB ILL INFMA SG <Coll> ACT
 "<paska>"
 	"paska" NOUN NOM SG
 "<!>"
@@ -14311,7 +14311,7 @@
 "<ne>"
 	"se" PRON NOM PL DEM
 "<huutaa>"
-	"huutaa" VERB INDV PL3 COLL PRESENT ACT
+	"huutaa" VERB INDV PL3 <Coll> PRESENT ACT
 "<meille>"
 	"minä" PRON ALL PL1 PRS
 "<.>"
@@ -14322,21 +14322,21 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<sanoo>"
-	"sanoa" VERB INDV PL3 COLL PRESENT ACT
+	"sanoa" VERB INDV PL3 <Coll> PRESENT ACT
 "<kaikkia>"
 	"kaikki" PRON PAR PL
 "<ihmisiä>"
 	"ihminen" NOUN PAR PL
 "<paskapusseiks>"
-	"paska#pussi" NOUN TRA PL COLL
+	"paska#pussi" NOUN TRA PL <Coll>
 "<tai>"
 	"tai" CCONJ
 "<räkäpaskoiks>"
-	"räkä#paska" NOUN TRA PL COLL
+	"räkä#paska" NOUN TRA PL <Coll>
 "<tai>"
 	"tai" CCONJ
 "<sellasiks>"
-	"sellainen" ADJ TRA POS <Lainen> PL COLL
+	"sellainen" ADJ TRA POS <Lainen> PL <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14345,11 +14345,11 @@
 "<Tai>"
 	"tai" CCONJ
 "<limanaamoiks>"
-	"lima#naama" NOUN TRA PL COLL
+	"lima#naama" NOUN TRA PL <Coll>
 "<tai>"
 	"tai" CCONJ
 "<vittunaamoiks>"
-	"vittu#naama" NOUN TRA PL COLL
+	"vittu#naama" NOUN TRA PL <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14360,13 +14360,13 @@
 "<Mitä>"
 	"mitä" ADV
 "<vittuu>"
-	"vittua" INTJ COLL
+	"vittua" INTJ <Coll>
 "<noi>"
-	"tuo" PRON NOM PL DEM COLL
+	"tuo" PRON NOM PL DEM <Coll>
 "<roskikset>"
 	"roskis" NOUN NOM PL
 "<rämisee>"
-	"rämistä" VERB INDV PL3 COLL PRESENT ACT
+	"rämistä" VERB INDV PL3 <Coll> PRESENT ACT
 "<?>"
 	"?" PUNCT
 "<">"
@@ -14380,13 +14380,13 @@
 "<ääneen>"
 	"ääni" NOUN ILL SG
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<ne>"
 	"se" PRON NOM PL DEM
 "<kuulis>"
-	"kuulla" VERB COND PL3 COLL ACT
+	"kuulla" VERB COND PL3 <Coll> ACT
 "<kans>"
-	"kanssa" ADV COLL
+	"kanssa" ADV <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14395,17 +14395,17 @@
 "<Me>"
 	"minä" PRON NOM PL1 PRS
 "<sanotaan>"
-	"sanoa" VERB INDV PL1 COLL PRESENT ACT
+	"sanoa" VERB INDV PL1 <Coll> PRESENT ACT
 "<niitä>"
 	"se" PRON PAR PL DEM
 "<roskiksiks>"
-	"roskis" NOUN TRA PL COLL
+	"roskis" NOUN TRA PL <Coll>
 "<tai>"
 	"tai" CCONJ
 "<vaikka>"
 	"vaikka" ADV
 "<paskapöntöiks>"
-	"paska#pönttö" NOUN TRA PL COLL
+	"paska#pönttö" NOUN TRA PL <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14414,29 +14414,29 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<ku>"
-	"kun" ADV COLL
+	"kun" ADV <Coll>
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<peltiä>"
 	"pelti" NOUN PAR SG
 "<,>"
 	"," PUNCT
 "<niinku>"
-	"niin#kuin" CCONJ COLL
+	"niin#kuin" CCONJ <Coll>
 "<roskiksetki>"
-	"roskis" NOUN NOM KIN PL COLL
+	"roskis" NOUN NOM CLITKIN PL <Coll>
 "<,>"
 	"," PUNCT
 "<tai>"
 	"tai" CCONJ
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<ne>"
 	"se" PRON NOM PL DEM
 "<kyllä>"
 	"kyllä" ADV
 "<muoviaki>"
-	"muovi" NOUN PAR KIN SG COLL
+	"muovi" NOUN PAR CLITKIN SG <Coll>
 "<,>"
 	"," PUNCT
 "<konejengi>"
@@ -14448,13 +14448,13 @@
 "<ja>"
 	"ja" CCONJ
 "<roskiksetki>"
-	"roskis" NOUN NOM KIN PL COLL
+	"roskis" NOUN NOM CLITKIN PL <Coll>
 "<,>"
 	"," PUNCT
 "<ainaki>"
-	"ainakin" ADV COLL
+	"ainakin" ADV <Coll>
 "<jotku>"
-	"joku" PRON NOM PL COLL
+	"joku" PRON NOM PL <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14463,7 +14463,7 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<näyttää>"
-	"näyttää" VERB INDV PL3 COLL PRESENT ACT
+	"näyttää" VERB INDV PL3 <Coll> PRESENT ACT
 "<meille>"
 	"minä" PRON ALL PL1 PRS
 "<käsimerkkejä>"
@@ -14473,7 +14473,7 @@
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<näytetään>"
-	"näyttää" VERB INDV PL1 COLL PRESENT ACT
+	"näyttää" VERB INDV PL1 <Coll> PRESENT ACT
 "<niille>"
 	"se" PRON ALL PL DEM
 "<.>"
@@ -14482,25 +14482,25 @@
 # text = Mut ei me aleta nyt rähiseen, pidetään vaan lämpöö päällä.
 # sent_id =  f803.45
 "<Mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ei>"
-	"ei" AUX PL1 NEG COLL ACT
+	"ei" AUX PL1 NEG <Coll> ACT
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<aleta>"
-	"alkaa" VERB CONNEG INDV COLL PRESENT
+	"alkaa" VERB CONNEG INDV <Coll> PRESENT
 "<nyt>"
 	"nyt" ADV
 "<rähiseen>"
-	"rähistä" VERB ILL INFMA SG COLL ACT
+	"rähistä" VERB ILL INFMA SG <Coll> ACT
 "<,>"
 	"," PUNCT
 "<pidetään>"
-	"pitää" VERB INDV PL1 COLL PRESENT ACT
+	"pitää" VERB INDV PL1 <Coll> PRESENT ACT
 "<vaan>"
 	"vaan" ADV
 "<lämpöö>"
-	"lämpö" NOUN PAR SG COLL
+	"lämpö" NOUN PAR SG <Coll>
 "<päällä>"
 	"päällä" ADV
 "<.>"
@@ -14509,7 +14509,7 @@
 # text = Niillon oma kortteli, meillä oma, nii ei nyt tartte riehuu.
 # sent_id =  f803.46
 "<Niillon>"
-	"niillä#on" VERB INDV SG3 COLL PRESENT ACT
+	"niillä#on" VERB INDV SG3 <Coll> PRESENT ACT
 "<oma>"
 	"oma" ADJ NOM POS SG
 "<kortteli>"
@@ -14523,36 +14523,36 @@
 "<,>"
 	"," PUNCT
 "<nii>"
-	"niin" SCONJ COLL
+	"niin" SCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<nyt>"
 	"nyt" ADV
 "<tartte>"
-	"tarvita" AUX CONNEG INDV COLL PRESENT
+	"tarvita" AUX CONNEG INDV <Coll> PRESENT
 "<riehuu>"
-	"riehua" VERB INFA SG COLL ACT
+	"riehua" VERB INFA SG <Coll> ACT
 "<.>"
 	"." PUNCT
 
 # text = Jotku luulee, et koneet on kovia eikä niille pärjää, mut ei se nii mee.
 # sent_id =  f803.47
 "<Jotku>"
-	"joku" PRON NOM PL COLL
+	"joku" PRON NOM PL <Coll>
 "<luulee>"
-	"luulla" VERB INDV PL3 COLL PRESENT ACT
+	"luulla" VERB INDV PL3 <Coll> PRESENT ACT
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<koneet>"
 	"kone" NOUN NOM PL
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<kovia>"
 	"kova" ADJ PAR POS PL
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<niille>"
 	"se" PRON ALL PL DEM
 "<pärjää>"
@@ -14560,26 +14560,26 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<nii>"
-	"niin" ADV COLL
+	"niin" ADV <Coll>
 "<mee>"
-	"mennä" VERB CONNEG INDV COLL PRESENT
+	"mennä" VERB CONNEG INDV <Coll> PRESENT
 "<.>"
 	"." PUNCT
 
 # text = Jotku niistä on sairaan nopeita, mut ne on sit heikkoi.
 # sent_id =  f803.48
 "<Jotku>"
-	"joku" PRON NOM PL COLL
+	"joku" PRON NOM PL <Coll>
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<sairaan>"
 	"sairas" ADJ GEN POS SG
 "<nopeita>"
@@ -14587,42 +14587,42 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<heikkoi>"
-	"heikko" ADJ PAR POS PL COLL
+	"heikko" ADJ PAR POS PL <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Sit jotku niistä on tosi vahvoi, mut ne on sit hitaita.
 # sent_id =  f803.49
 "<Sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<jotku>"
-	"joku" PRON NOM PL COLL
+	"joku" PRON NOM PL <Coll>
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<tosi>"
 	"tosi" ADV
 "<vahvoi>"
-	"vahva" ADJ PAR POS PL COLL
+	"vahva" ADJ PAR POS PL <Coll>
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<hitaita>"
 	"hidas" ADJ PAR POS PL
 "<.>"
@@ -14631,15 +14631,15 @@
 # text = Jotku niistä sammahtaa tosi nopeesti.
 # sent_id =  f803.50
 "<Jotku>"
-	"joku" PRON NOM PL COLL
+	"joku" PRON NOM PL <Coll>
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<sammahtaa>"
-	"sammahtaa" VERB INDV PL3 COLL PRESENT ACT
+	"sammahtaa" VERB INDV PL3 <Coll> PRESENT ACT
 "<tosi>"
 	"tosi" ADV
 "<nopeesti>"
-	"nopeasti" ADV <Sti> COLL
+	"nopeasti" ADV <Sti> <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14660,7 +14660,7 @@
 "<nopeiden>"
 	"nopea" ADJ GEN POS PL
 "<kans>"
-	"kanssa" ADP POST COLL
+	"kanssa" ADP POST <Coll>
 "<ja>"
 	"ja" CCONJ
 "<mitä>"
@@ -14668,15 +14668,15 @@
 "<tekee>"
 	"tehdä" VERB INDV SG0 PRESENT ACT
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<vahvojen>"
 	"vahva" ADJ GEN POS PL
 "<kans>"
-	"kanssa" ADP POST COLL
+	"kanssa" ADP POST <Coll>
 "<,>"
 	"," PUNCT
 "<nii>"
-	"niin" SCONJ COLL
+	"niin" SCONJ <Coll>
 "<sitä>"
 	"sitä" ADV
 "<pärjää>"
@@ -14691,9 +14691,9 @@
 # text = On tietty ardet, ne on tosi pahoja.
 # sent_id =  f803.52
 "<On>"
-	"olla" VERB INDV PL3 COLL PRESENT ACT
+	"olla" VERB INDV PL3 <Coll> PRESENT ACT
 "<tietty>"
-	"tietysti" ADV <Sti> COLL
+	"tietysti" ADV <Sti> <Coll>
 "<ardet>"
 	"arde" PROPN NOM PL
 "<,>"
@@ -14701,7 +14701,7 @@
 "<ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<tosi>"
 	"tosi" ADV
 "<pahoja>"
@@ -14714,15 +14714,15 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<entisii>"
-	"entinen" ADJ PAR POS <Inen> PL COLL
+	"entinen" ADJ PAR POS <Inen> PL <Coll>
 "<vartijoita>"
 	"vartija" NOUN PAR <Ja> PL
 "<ja>"
 	"ja" CCONJ
 "<sellasii>"
-	"sellainen" ADJ PAR POS <Lainen> PL COLL
+	"sellainen" ADJ PAR POS <Lainen> PL <Coll>
 "<,>"
 	"," PUNCT
 "<ja>"
@@ -14730,7 +14730,7 @@
 "<ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<nopeita>"
 	"nopea" ADJ PAR POS PL
 "<ja>"
@@ -14743,7 +14743,7 @@
 # text = Mut ei niitä täällä paljoo oo eikä ne hengaa konekorttelin peltipurkkien kans, niillä on niinku vähä isommat kuviot.
 # sent_id =  f803.54
 "<Mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<niitä>"
@@ -14751,11 +14751,11 @@
 "<täällä>"
 	"täällä" ADV
 "<paljoo>"
-	"paljoa" ADV COLL
+	"paljoa" ADV <Coll>
 "<oo>"
-	"olla" AUX CONNEG INDV COLL PRESENT
+	"olla" AUX CONNEG INDV <Coll> PRESENT
 "<eikä>"
-	"ei" VERB KA PL3 NEG COLL ACT
+	"ei" VERB CLITKA PL3 NEG <Coll> ACT
 "<ne>"
 	"se" PRON NOM PL DEM
 "<hengaa>"
@@ -14765,7 +14765,7 @@
 "<peltipurkkien>"
 	"pelti#purkki" NOUN GEN PL
 "<kans>"
-	"kanssa" ADP POST COLL
+	"kanssa" ADP POST <Coll>
 "<,>"
 	"," PUNCT
 "<niillä>"
@@ -14773,9 +14773,9 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<niinku>"
-	"niin#kuin" ADV COLL
+	"niin#kuin" ADV <Coll>
 "<vähä>"
-	"vähän" ADV COLL
+	"vähän" ADV <Coll>
 "<isommat>"
 	"iso" ADJ NOM CMP PL
 "<kuviot>"
@@ -14790,7 +14790,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sellasta>"
-	"sellainen" ADJ PAR POS <Lainen> SG COLL
+	"sellainen" ADJ PAR POS <Lainen> SG <Coll>
 "<sekalaista>"
 	"sekalainen" ADJ PAR POS <Lainen> SG
 "<peltiromua>"
@@ -14801,13 +14801,13 @@
 # text = Yks niistä on sellanen mainospelle, se on karannu jostain pikaruokalasta.
 # sent_id =  f803.56
 "<Yks>"
-	"yksi" PRON NOM SG COLL
+	"yksi" PRON NOM SG <Coll>
 "<niistä>"
 	"se" PRON ELA PL DEM
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sellanen>"
-	"sellainen" ADJ NOM POS <Lainen> SG COLL
+	"sellainen" ADJ NOM POS <Lainen> SG <Coll>
 "<mainospelle>"
 	"mainos#pelle" NOUN NOM SG
 "<,>"
@@ -14817,7 +14817,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<karannu>"
-	"karata" VERB NOM POS SG PCPNUT COLL ACT
+	"karata" VERB NOM POS SG PCPNUT <Coll> ACT
 "<jostain>"
 	"jokin" PRON ELA SG
 "<pikaruokalasta>"
@@ -14828,19 +14828,19 @@
 # text = Yks toinen on sitte sellanen linkkaava köyryselkänen rautakanki, joka on aina tukevasti kamois.
 # sent_id =  f803.57
 "<Yks>"
-	"yksi" PRON NOM SG COLL
+	"yksi" PRON NOM SG <Coll>
 "<toinen>"
 	"toinen" PRON NOM SG RCP
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sitte>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<sellanen>"
-	"sellainen" ADJ NOM POS <Lainen> SG COLL
+	"sellainen" ADJ NOM POS <Lainen> SG <Coll>
 "<linkkaava>"
 	"linkata" VERB NOM POS SG PRESENT ACT
 "<köyryselkänen>"
-	"köyry#selkäinen" ADJ NOM POS <Inen> SG COLL
+	"köyry#selkäinen" ADJ NOM POS <Inen> SG <Coll>
 "<rautakanki>"
 	"rauta#kanki" NOUN NOM SG
 "<,>"
@@ -14854,7 +14854,7 @@
 "<tukevasti>"
 	"tukevasti" ADV <Sti>
 "<kamois>"
-	"kamoissa" ADV COLL
+	"kamoissa" ADV <Coll>
 "<.>"
 	"." PUNCT
 
@@ -14863,21 +14863,21 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<on>"
-	"olla" AUX INDV PL3 COLL PRESENT ACT
+	"olla" AUX INDV PL3 <Coll> PRESENT ACT
 "<kaikki>"
 	"kaikki" PRON NOM SG
 "<sellasii>"
-	"sellainen" ADJ PAR POS <Lainen> PL COLL
+	"sellainen" ADJ PAR POS <Lainen> PL <Coll>
 "<säälittävii>"
-	"säälittävä" ADJ PAR POS PL COLL
+	"säälittävä" ADJ PAR POS PL <Coll>
 "<luusereita>"
 	"luuseri" NOUN PAR PL
 "<,>"
 	"," PUNCT
 "<sellasia>"
-	"sellainen" ADJ PAR POS <Lainen> PL COLL
+	"sellainen" ADJ PAR POS <Lainen> PL <Coll>
 "<ku>"
-	"kuin" SCONJ COLL
+	"kuin" SCONJ <Coll>
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<.>"
@@ -14886,13 +14886,13 @@
 # text = Mun sydän alkaa hakkaan ihan raivona, ku mä nään sen.
 # sent_id =  f803.59
 "<Mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<sydän>"
 	"sydän" NOUN NOM SG
 "<alkaa>"
 	"alkaa" VERB INDV SG3 PRESENT ACT
 "<hakkaan>"
-	"hakata" VERB ILL INFMA SG COLL ACT
+	"hakata" VERB ILL INFMA SG <Coll> ACT
 "<ihan>"
 	"ihan" ADV
 "<raivona>"
@@ -14900,11 +14900,11 @@
 "<,>"
 	"," PUNCT
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<nään>"
-	"nähdä" VERB INDV SG1 COLL PRESENT ACT
+	"nähdä" VERB INDV SG1 <Coll> PRESENT ACT
 "<sen>"
 	"se" PRON GEN SG DEM
 "<.>"
@@ -14913,7 +14913,7 @@
 # text = Mä sanon sitä Hopeeksi.
 # sent_id =  f803.60
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<sanon>"
 	"sanoa" VERB INDV SG1 PRESENT ACT
 "<sitä>"
@@ -14930,7 +14930,7 @@
 "<menee>"
 	"mennä" VERB INDV SG3 PRESENT ACT
 "<hengaan>"
-	"hengata" VERB ILL INFMA SG COLL ACT
+	"hengata" VERB ILL INFMA SG <Coll> ACT
 "<konejengin>"
 	"kone#jengi" NOUN GEN SG
 "<kärrylle>"
@@ -14945,7 +14945,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<musta>"
-	"minä" PRON ELA SG PRS COLL
+	"minä" PRON ELA SG PRS <Coll>
 "<kaunein>"
 	"kaunis" ADJ NOM SUP SG
 "<olento>"
@@ -14958,7 +14958,7 @@
 # text = Mun mielestä se on tytsy, mut eihän koneista voi sanoo, et onko ne tytsyi vai kundei.
 # sent_id =  f803.63
 "<Mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<mielestä>"
 	"mieli" NOUN ELA SG
 "<se>"
@@ -14966,40 +14966,40 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<tytsy>"
-	"tytsy" NOUN NOM SG COLL
+	"tytsy" NOUN NOM SG <Coll>
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<eihän>"
-	"ei" AUX HAN SG3 NEG ACT
+	"ei" AUX CLITHAN SG3 NEG ACT
 "<koneista>"
 	"kone" NOUN ELA PL
 "<voi>"
 	"voida" AUX INDV SG3 PRESENT ACT
 "<sanoo>"
-	"sanoa" VERB INFA SG COLL ACT
+	"sanoa" VERB INFA SG <Coll> ACT
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<onko>"
-	"olla" AUX KO INDV PL3 COLL PRESENT ACT
+	"olla" AUX CLITKO INDV PL3 <Coll> PRESENT ACT
 "<ne>"
 	"se" PRON NOM PL DEM
 "<tytsyi>"
-	"tytsy" NOUN PAR PL COLL
+	"tytsy" NOUN PAR PL <Coll>
 "<vai>"
 	"vai" CCONJ
 "<kundei>"
-	"kundi" NOUN PAR PL COLL
+	"kundi" NOUN PAR PL <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Mä tykkään hengata täällä ostarilla just siks, ku täällä mä aina joskus nään sitä.
 # sent_id =  f803.64
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<tykkään>"
 	"tykätä" VERB INDV SG1 PRESENT ACT
 "<hengata>"
@@ -15009,23 +15009,23 @@
 "<ostarilla>"
 	"ostari" NOUN ADE SG
 "<just>"
-	"juuri" ADV COLL
+	"juuri" ADV <Coll>
 "<siks>"
-	"siksi" ADV COLL
+	"siksi" ADV <Coll>
 "<,>"
 	"," PUNCT
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<täällä>"
 	"täällä" ADV
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<aina>"
 	"aina" ADV
 "<joskus>"
 	"joskus" ADV
 "<nään>"
-	"nähdä" VERB INDV SG1 COLL PRESENT ACT
+	"nähdä" VERB INDV SG1 <Coll> PRESENT ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<.>"
@@ -15034,7 +15034,7 @@
 # text = Mä haluaisin mennä sen luokse ja sanoo kuinka paljo mä rakastan sitä, mut emmä pysty.
 # sent_id =  f803.65
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<haluaisin>"
 	"haluta" VERB COND SG1 ACT
 "<mennä>"
@@ -15046,13 +15046,13 @@
 "<ja>"
 	"ja" CCONJ
 "<sanoo>"
-	"sanoa" VERB INFA SG COLL ACT
+	"sanoa" VERB INFA SG <Coll> ACT
 "<kuinka>"
 	"kuinka" ADV
 "<paljo>"
-	"paljon" ADV COLL
+	"paljon" ADV <Coll>
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<rakastan>"
 	"rakastaa" VERB INDV SG1 PRESENT ACT
 "<sitä>"
@@ -15060,9 +15060,9 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<emmä>"
-	"ei#minä" VERB SG1 NEG COLL ACT
+	"ei#minä" VERB SG1 NEG <Coll> ACT
 "<pysty>"
 	"pystyä" VERB CONNEG INDV PRESENT
 "<.>"
@@ -15073,23 +15073,23 @@
 "<Siis>"
 	"siis" ADV
 "<meneen>"
-	"mennä" VERB ILL INFMA SG COLL ACT
+	"mennä" VERB ILL INFMA SG <Coll> ACT
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<emmä>"
-	"ei#minä" VERB SG1 NEG COLL ACT
+	"ei#minä" VERB SG1 NEG <Coll> ACT
 "<tietenkään>"
 	"tietenkään" ADV
 "<vois>"
-	"voida" AUX COND SG3 COLL ACT
+	"voida" AUX COND SG3 <Coll> ACT
 "<sille>"
 	"se" PRON ALL SG DEM
 "<mitään>"
 	"mikään" PRON PAR SG
 "<sanookaan>"
-	"sanoa" VERB KAAN INFA SG COLL ACT
+	"sanoa" VERB CLITKAAN INFA SG <Coll> ACT
 "<.>"
 	"." PUNCT
 
@@ -15098,7 +15098,7 @@
 "<Joskus>"
 	"joskus" ADV
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<hengaan>"
 	"hengata" VERB INDV SG1 PRESENT ACT
 "<vaan>"
@@ -15108,15 +15108,15 @@
 "<ihan>"
 	"ihan" ADV
 "<yksikseen>"
-	"yksikseen" ADV COLL
+	"yksikseen" ADV <Coll>
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<näkisin>"
 	"nähdä" VERB COND SG1 ACT
 "<senki>"
-	"se" PRON GEN KIN SG DEM COLL
+	"se" PRON GEN CLITKIN SG DEM <Coll>
 "<yksin>"
 	"yksin" ADV
 "<.>"
@@ -15125,7 +15125,7 @@
 # text = Sit jos se on, niin mä oon ihan vaan jähmettyny paikoilleen.
 # sent_id =  f803.68
 "<Sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<jos>"
 	"jos" SCONJ
 "<se>"
@@ -15137,15 +15137,15 @@
 "<niin>"
 	"niin" ADV
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<oon>"
-	"olla" AUX INDV SG1 COLL PRESENT ACT
+	"olla" AUX INDV SG1 <Coll> PRESENT ACT
 "<ihan>"
 	"ihan" ADV
 "<vaan>"
 	"vaan" ADV
 "<jähmettyny>"
-	"jähmettyä" VERB NOM POS SG PCPNUT COLL ACT
+	"jähmettyä" VERB NOM POS SG PCPNUT <Coll> ACT
 "<paikoilleen>"
 	"paikoilleen" ADV
 "<.>"
@@ -15160,7 +15160,7 @@
 "<tuijottaa>"
 	"tuijottaa" VERB INDV SG3 PRESENT ACT
 "<mua>"
-	"minä" PRON PAR SG PRS COLL
+	"minä" PRON PAR SG PRS <Coll>
 "<,>"
 	"," PUNCT
 "<niillä>"
@@ -15168,23 +15168,23 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<hopeasilmil>"
-	"hopeasilmä" NOUN ADE PL COLL
+	"hopeasilmä" NOUN ADE PL <Coll>
 "<,>"
 	"," PUNCT
 "<ja>"
 	"ja" CCONJ
 "<sillon>"
-	"silloin" ADV COLL
+	"silloin" ADV <Coll>
 "<musta>"
-	"minä" PRON ELA SG PRS COLL
+	"minä" PRON ELA SG PRS <Coll>
 "<tuntuu>"
 	"tuntua" VERB INDV SG3 PRESENT ACT
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<kuolen>"
 	"kuolla" VERB INDV SG1 PRESENT ACT
 "<siihen>"
@@ -15197,13 +15197,13 @@
 # text = Mä oon öisin spreijannu sydämiä, isoja ja pikkuisia punaisia sydämiä, ihan joka puolelle ostaria, vaikka ei muu jengi sitä tiedä enkä mä aio kertoo.
 # sent_id =  f803.70
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<oon>"
-	"olla" AUX INDV SG1 COLL PRESENT ACT
+	"olla" AUX INDV SG1 <Coll> PRESENT ACT
 "<öisin>"
 	"öisin" ADV
 "<spreijannu>"
-	"spreijata" VERB NOM POS SG PCPNUT COLL ACT
+	"spreijata" VERB NOM POS SG PCPNUT <Coll> ACT
 "<sydämiä>"
 	"sydän" NOUN PAR PL
 "<,>"
@@ -15243,20 +15243,20 @@
 "<tiedä>"
 	"tietää" VERB CONNEG INDV PRESENT
 "<enkä>"
-	"ei" VERB KA SG1 NEG ACT
+	"ei" VERB CLITKA SG1 NEG ACT
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<aio>"
 	"aikoa" AUX CONNEG INDV PRESENT
 "<kertoo>"
-	"kertoa" VERB INFA SG COLL ACT
+	"kertoa" VERB INFA SG <Coll> ACT
 "<.>"
 	"." PUNCT
 
 # text = Mä haluaisin niin kovasti spreijata ostarin etuseinään mut ja sen ja ison sydämen, mut jos mä tekisin sen, niin mut varmaan tapettais.
 # sent_id =  f803.71
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<haluaisin>"
 	"haluta" VERB COND SG1 ACT
 "<niin>"
@@ -15270,7 +15270,7 @@
 "<etuseinään>"
 	"etu#seinä" NOUN ILL SG
 "<mut>"
-	"minä" PRON ACC SG PRS COLL
+	"minä" PRON ACC SG PRS <Coll>
 "<ja>"
 	"ja" CCONJ
 "<sen>"
@@ -15284,11 +15284,11 @@
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<jos>"
 	"jos" SCONJ
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<tekisin>"
 	"tehdä" VERB COND SG1 ACT
 "<sen>"
@@ -15298,11 +15298,11 @@
 "<niin>"
 	"niin" ADV
 "<mut>"
-	"minä" PRON ACC SG PRS COLL
+	"minä" PRON ACC SG PRS <Coll>
 "<varmaan>"
 	"varmaan" ADV
 "<tapettais>"
-	"tappaa" VERB CONNEG COND COLL PSS
+	"tappaa" VERB CONNEG COND <Coll> PSS
 "<.>"
 	"." PUNCT
 
@@ -15313,20 +15313,20 @@
 "<se>"
 	"se" PRON NOM SG DEM
 "<voitais>"
-	"voida" AUX CONNEG COND COLL PSS
+	"voida" AUX CONNEG COND <Coll> PSS
 "<tappaa>"
 	"tappaa" VERB INFA SG ACT
 "<kans>"
-	"kanssa" ADV COLL
+	"kanssa" ADV <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Siks mulla on piilossa semmoinen isompi kuva, johon tulee mä ja se ja sit paljo sydämiä ja kaikkee.
 # sent_id =  f803.73
 "<Siks>"
-	"siksi" ADV COLL
+	"siksi" ADV <Coll>
 "<mulla>"
-	"minä" PRON ADE SG PRS COLL
+	"minä" PRON ADE SG PRS <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<piilossa>"
@@ -15344,7 +15344,7 @@
 "<tulee>"
 	"tulla" VERB INDV SG3 PRESENT ACT
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<ja>"
 	"ja" CCONJ
 "<se>"
@@ -15352,24 +15352,24 @@
 "<ja>"
 	"ja" CCONJ
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<paljo>"
-	"paljon" ADV COLL
+	"paljon" ADV <Coll>
 "<sydämiä>"
 	"sydän" NOUN PAR PL
 "<ja>"
 	"ja" CCONJ
 "<kaikkee>"
-	"kaikki" PRON PAR SG COLL
+	"kaikki" PRON PAR SG <Coll>
 "<.>"
 	"." PUNCT
 
 # text = Sitte ku se on valmis, nii mä näytän sen sille ja sit se ehkä tajuu ja me aletaan kimppaan.
 # sent_id =  f803.74
 "<Sitte>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<ku>"
-	"kun" SCONJ COLL
+	"kun" SCONJ <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<on>"
@@ -15379,9 +15379,9 @@
 "<,>"
 	"," PUNCT
 "<nii>"
-	"niin" ADV COLL
+	"niin" ADV <Coll>
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<näytän>"
 	"näyttää" VERB INDV SG1 PRESENT ACT
 "<sen>"
@@ -15391,19 +15391,19 @@
 "<ja>"
 	"ja" CCONJ
 "<sit>"
-	"sitten" ADV COLL
+	"sitten" ADV <Coll>
 "<se>"
 	"se" PRON NOM SG DEM
 "<ehkä>"
 	"ehkä" ADV
 "<tajuu>"
-	"tajuta" VERB INDV SG3 COLL PRESENT ACT
+	"tajuta" VERB INDV SG3 <Coll> PRESENT ACT
 "<ja>"
 	"ja" CCONJ
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<aletaan>"
-	"alkaa" VERB INDV PL1 COLL PRESENT ACT
+	"alkaa" VERB INDV PL1 <Coll> PRESENT ACT
 "<kimppaan>"
 	"kimppa" NOUN ILL SG
 "<.>"
@@ -15412,31 +15412,31 @@
 # text = Mä tiedän, et oon kyl ihan sekasi, mut ei se mua haittaa.
 # sent_id =  f803.75
 "<Mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<tiedän>"
 	"tietää" VERB INDV SG1 PRESENT ACT
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<oon>"
-	"olla" AUX INDV SG1 COLL PRESENT ACT
+	"olla" AUX INDV SG1 <Coll> PRESENT ACT
 "<kyl>"
-	"kyllä" ADV COLL
+	"kyllä" ADV <Coll>
 "<ihan>"
 	"ihan" ADV
 "<sekasi>"
-	"sekaisin" ADV COLL
+	"sekaisin" ADV <Coll>
 "<,>"
 	"," PUNCT
 "<mut>"
-	"mutta" CCONJ COLL
+	"mutta" CCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<mua>"
-	"minä" PRON PAR SG PRS COLL
+	"minä" PRON PAR SG PRS <Coll>
 "<haittaa>"
 	"haitata" VERB CONNEG INDV PRESENT
 "<.>"
@@ -15557,11 +15557,11 @@
 # text = Sepä asiasta tekikin mutkikkaan.
 # sent_id =  fB04.5
 "<Sepä>"
-	"se" PRON NOM PA SG DEM
+	"se" PRON NOM CLITPA SG DEM
 "<asiasta>"
 	"asia" NOUN ELA SG
 "<tekikin>"
-	"tehdä" VERB KIN INDV SG3 PAST ACT
+	"tehdä" VERB CLITKIN INDV SG3 PAST ACT
 "<mutkikkaan>"
 	"mutkikas" ADJ GEN POS SG
 "<.>"
@@ -15621,7 +15621,7 @@
 "<kertova>"
 	"kertoa" VERB NOM POS SG PRESENT ACT
 "<tekstikään>"
-	"teksti" NOUN NOM KAAN SG
+	"teksti" NOUN NOM CLITKAAN SG
 "<ollut>"
 	"olla" AUX NOM POS SG PCPNUT ACT
 "<juuri>"
@@ -15646,7 +15646,7 @@
 # text = Alunperinkin, A. Jokinen, halutessaan saada tuon valtavan haasteen aiheuttamat paineet ja uramuutokset jälkipolvien luettavaksi, halusi asiaa hoitamaan jonkun pätevän henkilön.
 # sent_id =  fB04.8
 "<Alunperinkin>"
-	"alunperin" ADV KIN
+	"alunperin" ADV CLITKIN
 "<,>"
 	"," PUNCT
 "<A.>"
@@ -15875,7 +15875,7 @@
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<tienny>"
-	"tietää" VERB NOM POS SG PCPNUT COLL ACT
+	"tietää" VERB NOM POS SG PCPNUT <Coll> ACT
 "<kirjoittamisesta>"
 	"kirjoittaminen" NOUN ELA <Minen> SG
 "<muuta>"
@@ -15902,7 +15902,7 @@
 # text = Pienenkin viiveen yllättäessä, A. Jokisen insinööritaitojen mahtipontisen haasteen esilletuominen hidastui jopa niin paljon, että tauon aikana ehti syödä pikaravintolassa lastentarhanopettajien jokaviikkoisen lakon aikana.
 # sent_id =  fB04.12
 "<Pienenkin>"
-	"pieni" ADJ GEN KIN POS SG
+	"pieni" ADJ GEN CLITKIN POS SG
 "<viiveen>"
 	"viive" NOUN GEN SG
 "<yllättäessä>"
@@ -16035,7 +16035,7 @@
 "<sokea>"
 	"sokea" ADJ NOM POS SG
 "<koirakin>"
-	"koira" NOUN NOM KIN SG
+	"koira" NOUN NOM CLITKIN SG
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<nauranut>"
@@ -16236,7 +16236,7 @@
 "<muutoin>"
 	"muutoin" ADV
 "<onkin>"
-	"olla" AUX KIN INDV SG3 PRESENT ACT
+	"olla" AUX CLITKIN INDV SG3 PRESENT ACT
 "<kylmähkö>"
 	"kylmähkö" ADJ NOM POS SG
 "<vuodenaika>"
@@ -16570,7 +16570,7 @@
 # text = Onko sitten teoriassa olemassa mahdollisuus, ettei se olisi?
 # sent_id =  fF01.17
 "<Onko>"
-	"olla" AUX KO INDV SG3 PRESENT ACT
+	"olla" AUX CLITKO INDV SG3 PRESENT ACT
 "<sitten>"
 	"sitten" ADV
 "<teoriassa>"
@@ -16593,7 +16593,7 @@
 # text = Eikö tämän kaltaisessa asiassa käytännön ja teorian tulisi olla samanlaisia?”
 # sent_id =  fF01.18
 "<Eikö>"
-	"ei" AUX KO SG3 NEG ACT
+	"ei" AUX CLITKO SG3 NEG ACT
 "<tämän>"
 	"tämä" PRON GEN SG DEM
 "<kaltaisessa>"
@@ -16703,13 +16703,13 @@
 # text = Eikä saanut siihen tilaisuuttakaan kun Pekka jatkoi puhettaan.
 # sent_id =  fF01.22
 "<Eikä>"
-	"ei" AUX KA SG3 NEG ACT
+	"ei" AUX CLITKA SG3 NEG ACT
 "<saanut>"
 	"saada" VERB NOM POS SG PCPNUT ACT
 "<siihen>"
 	"se" PRON ILL SG DEM
 "<tilaisuuttakaan>"
-	"tilaisuus" NOUN PAR KAAN <Inen,Vs> SG
+	"tilaisuus" NOUN PAR CLITKAAN <Inen,Vs> SG
 "<kun>"
 	"kun" SCONJ
 "<Pekka>"
@@ -16882,7 +16882,7 @@
 "<kermasta>"
 	"kerma" NOUN ELA SG
 "<puhumattakaan>"
-	"puhua" VERB ABE KAAN INFMA SG ACT
+	"puhua" VERB ABE CLITKAAN INFMA SG ACT
 "<.>"
 	"." PUNCT
 
@@ -16943,7 +16943,7 @@
 "<mitä>"
 	"mikä" PRON PAR SG REL
 "<pitikin>"
-	"pitää" AUX KIN INDV SG3 PAST ACT
+	"pitää" AUX CLITKIN INDV SG3 PAST ACT
 "<.>"
 	"." PUNCT
 
@@ -17100,7 +17100,7 @@
 # text = Olisiko silloin kuitenkin teoriassa mahdollisuus sille ettei se olisi?
 # sent_id =  fF01.35
 "<Olisiko>"
-	"olla" AUX KO COND SG3 ACT
+	"olla" AUX CLITKO COND SG3 ACT
 "<silloin>"
 	"silloin" ADV
 "<kuitenkin>"
@@ -17143,7 +17143,7 @@
 "<saada>"
 	"saada" VERB INFA SG ACT
 "<lähellekään>"
-	"lähelle" ADP PREP KAAN
+	"lähelle" ADP PREP CLITKAAN
 "<puhdasta>"
 	"puhdas" ADJ PAR POS SG
 "<.>"
@@ -17395,7 +17395,7 @@
 "<tätä>"
 	"tämä" PRON PAR SG DEM
 "<onkin>"
-	"olla" AUX KIN INDV SG3 PRESENT ACT
+	"olla" AUX CLITKIN INDV SG3 PRESENT ACT
 "<hieman>"
 	"hieman" ADV
 "<puhdistettu>"
@@ -17615,11 +17615,11 @@
 # text = Paa se siihe
 # sent_id =  h1007.1
 "<Paa>"
-	"panna" VERB IMPV SG2 COLL ACT
+	"panna" VERB IMPV SG2 <Coll> ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<siihe>"
-	"se" PRON ILL SG DEM COLL
+	"se" PRON ILL SG DEM <Coll>
 
 # text = ja o - sulle onnea kuule kun sä olet anoppi.
 # sent_id =  h1007.2
@@ -17630,7 +17630,7 @@
 "<->"
 	"-" PUNCT
 "<sulle>"
-	"sinä" PRON ALL SG2 PRS COLL
+	"sinä" PRON ALL SG2 PRS <Coll>
 "<onnea>"
 	"onni" NOUN PAR SG
 "<kuule>"
@@ -17638,7 +17638,7 @@
 "<kun>"
 	"kun" SCONJ
 "<sä>"
-	"sinä" PRON NOM SG2 PRS COLL
+	"sinä" PRON NOM SG2 PRS <Coll>
 "<olet>"
 	"olla" AUX INDV SG2 PRESENT ACT
 "<anoppi>"
@@ -17742,7 +17742,7 @@
 "<jos>"
 	"jos" CCONJ
 "<toistakin>"
-	"toinen" PRON PAR KIN SG
+	"toinen" PRON PAR CLITKIN SG
 "<vanhan>"
 	"vanha" ADJ GEN POS SG
 "<Egyptin>"
@@ -17906,11 +17906,11 @@
 "<ala>"
 	"alkaa" VERB CONNEG INDV PRESENT
 "<roikkua>"
-	"roikkua" VERB INFA SG COLL ACT
+	"roikkua" VERB INFA SG <Coll> ACT
 "<mun>"
-	"minä" PRON GEN SG PRS COLL
+	"minä" PRON GEN SG PRS <Coll>
 "<kaulassa>"
-	"kaula" NOUN INE SG COLL
+	"kaula" NOUN INE SG <Coll>
 "<.>"
 	"." PUNCT
 
@@ -17991,7 +17991,7 @@
 "<harvoin>"
 	"harvoin" ADV
 "<kirkossakaan>"
-	"kirkko" NOUN INE KAAN SG
+	"kirkko" NOUN INE CLITKAAN SG
 "<.>"
 	"." PUNCT
 
@@ -18004,7 +18004,7 @@
 "<kuin>"
 	"kuin" SCONJ
 "<huomaatkaan>"
-	"huomata" VERB KAAN INDV SG2 PRESENT ACT
+	"huomata" VERB CLITKAAN INDV SG2 PRESENT ACT
 "<.>"
 	"." PUNCT
 
@@ -18041,13 +18041,13 @@
 # text = Mää jo tälle meitin Aksulle sanoin että pistäs tohon pihaan mainoksen
 # sent_id =  h1007.21
 "<Mää>"
-	"minä" PRON NOM SG PRS COLL
+	"minä" PRON NOM SG PRS <Coll>
 "<jo>"
 	"jo" ADV
 "<tälle>"
 	"tämä" PRON ALL SG DEM
 "<meitin>"
-	"minä" PRON GEN PL1 PRS COLL
+	"minä" PRON GEN PL1 PRS <Coll>
 "<Aksulle>"
 	"Aksu" PROPN ALL SG
 "<sanoin>"
@@ -18055,9 +18055,9 @@
 "<että>"
 	"että" SCONJ
 "<pistäs>"
-	"pistää" VERB S IMPV SG2 ACT
+	"pistää" VERB CLITS IMPV SG2 ACT
 "<tohon>"
-	"tuo" PRON ILL SG DEM COLL
+	"tuo" PRON ILL SG DEM <Coll>
 "<pihaan>"
 	"piha" NOUN ILL SG
 "<mainoksen>"
@@ -18125,11 +18125,11 @@
 "<Kuule>"
 	"kuule" INTJ
 "<mul>"
-	"minä" PRON ADE SG1 PRS COLL
+	"minä" PRON ADE SG1 PRS <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<yks>"
-	"yksi" NUM NOM SG CARD COLL
+	"yksi" NUM NOM SG CARD <Coll>
 "<junailuasia>"
 	"junailu#asia" NOUN NOM SG
 "<mielessä>"
@@ -18219,7 +18219,7 @@
 # text = nekinhän on ratkottavissa.
 # sent_id =  h1011.3
 "<nekinhän>"
-	"se" PRON NOM HAN,KIN PL DEM
+	"se" PRON NOM CLITHAN,KIN PL DEM
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<ratkottavissa>"
@@ -18257,27 +18257,27 @@
 # text = Olisko sulla mitään mahdollisuuksia ni esitellä täs seuraavas numerossa sitä sun hanketta
 # sent_id =  h1011.5
 "<Olisko>"
-	"olla" AUX KO COND SG3 COLL ACT
+	"olla" AUX CLITKO COND SG3 <Coll> ACT
 "<sulla>"
-	"sinä" PRON ADE SG2 PRS COLL
+	"sinä" PRON ADE SG2 PRS <Coll>
 "<mitään>"
 	"mikään" PRON PAR SG
 "<mahdollisuuksia>"
 	"mahdollisuus" NOUN PAR <Llinen,Vs> PL
 "<ni>"
-	"niin" ADV COLL
+	"niin" ADV <Coll>
 "<esitellä>"
 	"esitellä" VERB INFA SG ACT
 "<täs>"
-	"tämä" PRON INE SG DEM COLL
+	"tämä" PRON INE SG DEM <Coll>
 "<seuraavas>"
-	"seuraava" ADJ INE POS SG COLL
+	"seuraava" ADJ INE POS SG <Coll>
 "<numerossa>"
 	"numero" NOUN INE SG
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<sun>"
-	"sinä" PRON GEN SG2 PRS COLL
+	"sinä" PRON GEN SG2 PRS <Coll>
 "<hanketta>"
 	"hanke" NOUN PAR SG
 
@@ -18444,7 +18444,7 @@
 "<sormien>"
 	"sormi" NOUN GEN PL
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<laki>"
 	"laki" NOUN NOM SG
 "<ole>"
@@ -18535,7 +18535,7 @@
 "<Jokaisesta>"
 	"jokainen" PRON ELA SG
 "<turhastakin>"
-	"turha" ADJ ELA KIN POS SG
+	"turha" ADJ ELA CLITKIN POS SG
 "<selaamisesta>"
 	"selaaminen" NOUN ELA <Minen> SG
 "<otetaan>"
@@ -18560,7 +18560,7 @@
 "<kuin>"
 	"kuin" CCONJ
 "<kuopuksenkin>"
-	"kuopus" NOUN GEN KIN SG
+	"kuopus" NOUN GEN CLITKIN SG
 "<verikokeista>"
 	"veri#koe" NOUN ELA PL
 "<.>"
@@ -18642,11 +18642,11 @@
 # text = Varmaa yhdeltoist myöhäsintää.
 # sent_id =  h1035.1
 "<Varmaa>"
-	"varmaan" ADV COLL
+	"varmaan" ADV <Coll>
 "<yhdeltoist>"
 	"yksi#toista" NUM ABL SG CARD
 "<myöhäsintää>"
-	"myöhäisintään" ADV COLL
+	"myöhäisintään" ADV <Coll>
 "<.>"
 	"." PUNCT
 
@@ -18786,7 +18786,7 @@
 "<missä>"
 	"mikä" PRON INE SG INT
 "<lieneekään>"
-	"olla" AUX KAAN POT SG3 ACT
+	"olla" AUX CLITKAAN POT SG3 ACT
 "<oltu>"
 	"olla" AUX NOM POS SG PCPNUT PSS
 "<tätä>"
@@ -18849,7 +18849,7 @@
 "<,>"
 	"," PUNCT
 "<oletko>"
-	"olla" AUX KO INDV SG2 PRESENT ACT
+	"olla" AUX CLITKO INDV SG2 PRESENT ACT
 "<se>"
 	"se" PRON NOM SG DEM
 "<kuitenkaan>"
@@ -19019,7 +19019,7 @@
 # text = olisiko viininvalmistus yrittäjälle sivu- vai pääelinkeino?
 # sent_id =  h1035.20
 "<olisiko>"
-	"olla" AUX KO COND SG3 ACT
+	"olla" AUX CLITKO COND SG3 ACT
 "<viininvalmistus>"
 	"viinin#valmistus" NOUN NOM SG
 "<yrittäjälle>"
@@ -19167,7 +19167,7 @@
 "<aika>"
 	"aika" ADV
 "<outojenkin>"
-	"outo" ADJ GEN KIN POS PL
+	"outo" ADJ GEN CLITKIN POS PL
 "<kontrahtien>"
 	"kontrahti" NOUN GEN PL
 "<alle>"
@@ -19180,9 +19180,9 @@
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<mulle>"
-	"minä" PRON ALL SG PRS COLL
+	"minä" PRON ALL SG PRS <Coll>
 "<mikkään>"
-	"mikään" PRON NOM SG COLL
+	"mikään" PRON NOM SG <Coll>
 "<päänsärky>"
 	"pään#särky" NOUN NOM <U> SG
 "<ole>"
@@ -19194,9 +19194,9 @@
 "<joku>"
 	"joku" PRON NOM SG
 "<mua>"
-	"minä" PRON PAR SG PRS COLL
+	"minä" PRON PAR SG PRS <Coll>
 "<ihhailee>"
-	"ihailla" VERB INDV SG3 COLL PRESENT ACT
+	"ihailla" VERB INDV SG3 <Coll> PRESENT ACT
 "<.>"
 	"." PUNCT
 
@@ -19238,13 +19238,13 @@
 "<kun>"
 	"kun" SCONJ
 "<rupes>"
-	"ruveta" VERB INDV SG0 COLL PAST ACT
+	"ruveta" VERB INDV SG0 <Coll> PAST ACT
 "<janottaan>"
-	"janottaa" VERB ILL INFMA SG COLL ACT
+	"janottaa" VERB ILL INFMA SG <Coll> ACT
 "<,>"
 	"," PUNCT
 "<pitäs>"
-	"pitää" AUX COND SG0 COLL ACT
+	"pitää" AUX COND SG0 <Coll> ACT
 "<päästä>"
 	"päästä" VERB INFA SG ACT
 "<tonne>"
@@ -19460,11 +19460,11 @@
 "<sitten>"
 	"sitten" ADV
 "<meiän>"
-	"minä" PRON GEN PL1 PRS COLL
+	"minä" PRON GEN PL1 PRS <Coll>
 "<täytys>"
-	"täytyä" AUX COND SG3 COLL ACT
+	"täytyä" AUX COND SG3 <Coll> ACT
 "<oikeen>"
-	"oikein" ADV COLL
+	"oikein" ADV <Coll>
 "<selvittää>"
 	"selvittää" VERB INFA SG ACT
 "<että>"
@@ -19474,7 +19474,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<löytyny>"
-	"löytyä" VERB NOM POS SG PCPNUT COLL ACT
+	"löytyä" VERB NOM POS SG PCPNUT <Coll> ACT
 "<.>"
 	"." PUNCT
 
@@ -19555,7 +19555,7 @@
 # text = Hehän tulevat takaisin.
 # sent_id =  h1039.21
 "<Hehän>"
-	"hän" PRON NOM HAN PL3 PRS
+	"hän" PRON NOM CLITHAN PL3 PRS
 "<tulevat>"
 	"tulla" VERB INDV PL3 PRESENT ACT
 "<takaisin>"
@@ -19566,7 +19566,7 @@
 # text = Pystyykö Bosniaan antamaan vielä avustusta?
 # sent_id =  h1039.22
 "<Pystyykö>"
-	"pystyä" VERB KO INDV SG3 PRESENT ACT
+	"pystyä" VERB CLITKO INDV SG3 PRESENT ACT
 "<Bosniaan>"
 	"Bosnia" PROPN ILL SG
 "<antamaan>"
@@ -19722,17 +19722,17 @@
 "<,>"
 	"," PUNCT
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<en>"
 	"ei" AUX SG1 NEG ACT
 "<huomannu>"
-	"huomata" VERB NOM POS SG PCPNUT COLL ACT
+	"huomata" VERB NOM POS SG PCPNUT <Coll> ACT
 "<,>"
 	"," PUNCT
 "<et>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<sulla>"
-	"sinä" PRON ADE SG2 PRS COLL
+	"sinä" PRON ADE SG2 PRS <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kassi>"
@@ -19799,7 +19799,7 @@
 # text = Onko tarpeen olla noin perusteellinen?
 # sent_id =  h1052.6
 "<Onko>"
-	"olla" VERB KO INDV SG0 PRESENT ACT
+	"olla" VERB CLITKO INDV SG0 PRESENT ACT
 "<tarpeen>"
 	"tarpeen" ADV
 "<olla>"
@@ -19898,7 +19898,7 @@
 "<mitään>"
 	"mikään" PRON PAR SG
 "<kovinkaan>"
-	"kovin" ADV KAAN
+	"kovin" ADV CLITKAAN
 "<tarkoituksellisesti>"
 	"tarkoituksellisesti" ADV <Sti>
 "<.>"
@@ -19942,13 +19942,13 @@
 "<kyse>"
 	"kyse" NOUN NOM SG
 "<onkin>"
-	"olla" AUX KIN INDV SG3 PRESENT ACT
+	"olla" AUX CLITKIN INDV SG3 PRESENT ACT
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<,>"
 	"," PUNCT
 "<onko>"
-	"olla" AUX KO INDV SG0 PRESENT ACT
+	"olla" AUX CLITKO INDV SG0 PRESENT ACT
 "<järkevää>"
 	"järkevä" ADJ PAR POS SG
 "<tukea>"
@@ -20105,13 +20105,13 @@
 # text = mä vaa jätän tämmöse lomakkeen
 # sent_id =  h1052.20
 "<mä>"
-	"minä" PRON NOM SG1 PRS COLL
+	"minä" PRON NOM SG1 PRS <Coll>
 "<vaa>"
-	"vaan" ADV COLL
+	"vaan" ADV <Coll>
 "<jätän>"
 	"jättää" VERB INDV SG1 PRESENT ACT
 "<tämmöse>"
-	"tämmöinen" ADJ POS <Inen> SG COLL
+	"tämmöinen" ADJ POS <Inen> SG <Coll>
 "<lomakkeen>"
 	"lomake" NOUN GEN SG
 
@@ -20124,7 +20124,7 @@
 "<,>"
 	"," PUNCT
 "<tapahtuiko>"
-	"tapahtua" VERB KO INDV SG3 PAST ACT
+	"tapahtua" VERB CLITKO INDV SG3 PAST ACT
 "<niin>"
 	"niin" ADV
 
@@ -20188,7 +20188,7 @@
 "<Kesä>"
 	"kesä" NOUN NOM SG
 "<menikin>"
-	"mennä" VERB KIN INDV SG3 PAST ACT
+	"mennä" VERB CLITKIN INDV SG3 PAST ACT
 "<ihan>"
 	"ihan" ADV
 "<villilän>"
@@ -20280,7 +20280,7 @@
 "<ja>"
 	"ja" CCONJ
 "<mahakaskin>"
-	"mahakas" ADJ NOM KIN POS SG
+	"mahakas" ADJ NOM CLITKIN POS SG
 "<,>"
 	"," PUNCT
 "<ainakin>"
@@ -20401,7 +20401,7 @@
 "<rockista>"
 	"rock" NOUN ELA SG
 "<vaiko>"
-	"vai" CCONJ KO
+	"vai" CCONJ CLITKO
 "<iskelmästä>"
 	"iskelmä" NOUN ELA SG
 "<?>"
@@ -20616,7 +20616,7 @@
 "<tämä>"
 	"tämä" PRON NOM SG DEM
 "<päiväkään>"
-	"päivä" NOUN NOM KAAN SG
+	"päivä" NOUN NOM CLITKAAN SG
 "<.>"
 	"." PUNCT
 
@@ -20829,7 +20829,7 @@
 # text = Pitikö sitä taas nukkua viimeiseen asti!
 # sent_id =  h1073.4
 "<Pitikö>"
-	"pitää" AUX KO INDV SG3 PAST ACT
+	"pitää" AUX CLITKO INDV SG3 PAST ACT
 "<sitä>"
 	"sitä" ADV
 "<taas>"
@@ -20854,7 +20854,7 @@
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<käsis>"
-	"käsi" NOUN INE PL COLL
+	"käsi" NOUN INE PL <Coll>
 "<pysy>"
 	"pysyä" VERB CONNEG INDV PRESENT
 "<sano>"
@@ -20914,9 +20914,9 @@
 # text = Muistappas ett ei tuolla saa tuntua tai kuulua mitään.
 # sent_id =  h1073.9
 "<Muistappas>"
-	"muistaa" VERB PA IMPV SG2 COLL ACT
+	"muistaa" VERB CLITPA IMPV SG2 <Coll> ACT
 "<ett>"
-	"että" SCONJ COLL
+	"että" SCONJ <Coll>
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<tuolla>"
@@ -20953,7 +20953,7 @@
 "<Jospa>"
 	"jospa" ADV
 "<minäkin>"
-	"minä" PRON NOM KIN SG1 PRS
+	"minä" PRON NOM CLITKIN SG1 PRS
 "<pääsisin>"
 	"päästä" VERB COND SG1 ACT
 "<mukaan>"
@@ -20983,7 +20983,7 @@
 "<on>"
 	"olla" AUX INDV SG0 PRESENT ACT
 "<jäkättääkään>"
-	"jäkättää" VERB KAAN INFA SG ACT
+	"jäkättää" VERB CLITKAAN INFA SG ACT
 "<,>"
 	"," PUNCT
 "<vaan>"
@@ -21031,15 +21031,15 @@
 "<samaan>"
 	"sama" PRON ILL SG
 "<tota>"
-	"tuota" INTJ COLL
+	"tuota" INTJ <Coll>
 "<kokonaisuuteen>"
 	"kokonaisuus" NOUN ILL <Inen,Vs> SG
 "<liitettäis>"
-	"liittää" VERB CONNEG COND COLL PSS
+	"liittää" VERB CONNEG COND <Coll> PSS
 "<yks>"
-	"yksi" NUM NOM SG CARD COLL
+	"yksi" NUM NOM SG CARD <Coll>
 "<tällanen>"
-	"tällainen" ADJ NOM POS <Lainen> SG COLL
+	"tällainen" ADJ NOM POS <Lainen> SG <Coll>
 "<kriittinen>"
 	"kriittinen" ADJ NOM POS <Inen> SG
 "<artikkeli>"
@@ -21051,9 +21051,9 @@
 "<mitkä>"
 	"mikä" PRON NOM PL INT
 "<on>"
-	"olla" AUX INDV SG3 COLL PRESENT ACT
+	"olla" AUX INDV SG3 <Coll> PRESENT ACT
 "<nää>"
-	"tämä" PRON NOM PL DEM COLL
+	"tämä" PRON NOM PL DEM <Coll>
 "<asiat>"
 	"asia" NOUN NOM PL
 "<joissa>"
@@ -21326,7 +21326,7 @@
 "<epävakaa>"
 	"epä#vakaa" ADJ NOM POS SG
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<salli>"
 	"sallia" VERB CONNEG INDV PRESENT
 "<juoksemista>"
@@ -21343,7 +21343,7 @@
 # text = Oletteko ehkä kotoisin Raumalta?
 # sent_id =  h1075.5
 "<Oletteko>"
-	"olla" AUX KO INDV PL2 PRESENT ACT
+	"olla" AUX CLITKO INDV PL2 PRESENT ACT
 "<ehkä>"
 	"ehkä" ADV
 "<kotoisin>"
@@ -21387,9 +21387,9 @@
 # text = Haluisit sä tavata sen?
 # sent_id =  h1075.7
 "<Haluisit>"
-	"haluta" VERB KO COND SG2 COLL ACT
+	"haluta" VERB CLITKO COND SG2 <Coll> ACT
 "<sä>"
-	"sinä" PRON NOM SG2 PRS COLL
+	"sinä" PRON NOM SG2 PRS <Coll>
 "<tavata>"
 	"tavata" VERB INFA SG ACT
 "<sen>"
@@ -21678,11 +21678,11 @@
 "<nyt>"
 	"nyt" ADV
 "<yks>"
-	"yksi" PRON NOM SG COLL
+	"yksi" PRON NOM SG <Coll>
 "<kolme>"
 	"kolme" NUM NOM SG CARD
 "<viikkoo>"
-	"viikko" NOUN PAR SG COLL
+	"viikko" NOUN PAR SG <Coll>
 "<aikaa>"
 	"aika" NOUN PAR SG
 "<.>"
@@ -23680,7 +23680,7 @@
 "<Keskusten>"
 	"keskus" NOUN GEN PL
 "<olisikin>"
-	"olla" AUX KIN COND SG3 ACT
+	"olla" AUX CLITKIN COND SG3 ACT
 "<varmistettava>"
 	"varmistaa" VERB NOM POS SG PRESENT PSS
 "<,>"
@@ -25484,7 +25484,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<sellaiseen>"
 	"sellainen" ADJ ILL <Lainen> SG
 "<eläinkuljetukseen>"
@@ -27981,7 +27981,7 @@
 # text = Haluaisitko sinä yhdistää vaihto-opiskelun ja eksoottisen unelmaloman jossakin Aasian vaihtokohteista?
 # sent_id =  s203.2
 "<Haluaisitko>"
-	"haluta" VERB KO COND SG2 ACT
+	"haluta" VERB CLITKO COND SG2 ACT
 "<sinä>"
 	"sinä" PRON NOM SG2 PRS
 "<yhdistää>"
@@ -28210,7 +28210,7 @@
 "<ja>"
 	"ja" CCONJ
 "<olenkin>"
-	"olla" AUX KIN INDV SG1 PRESENT ACT
+	"olla" AUX CLITKIN INDV SG1 PRESENT ACT
 "<monesti>"
 	"monesti" ADV <Sti>
 "<todennut>"
@@ -28239,7 +28239,7 @@
 # text = Päivääkään en vaihtaisi tuosta ajasta pois, vaikka koti-ikävä välillä vaivasikin.
 # sent_id =  s203.10
 "<Päivääkään>"
-	"päivä" NOUN PAR KAAN SG
+	"päivä" NOUN PAR CLITKAAN SG
 "<en>"
 	"ei" AUX SG1 NEG ACT
 "<vaihtaisi>"
@@ -28259,7 +28259,7 @@
 "<välillä>"
 	"välillä" ADV
 "<vaivasikin>"
-	"vaivata" VERB KIN INDV SG3 PAST ACT
+	"vaivata" VERB CLITKIN INDV SG3 PAST ACT
 "<.>"
 	"." PUNCT
 
@@ -28560,7 +28560,7 @@
 "<kuin>"
 	"kuin" CCONJ
 "<Balillakin>"
-	"Bali" PROPN ADE KIN SG
+	"Bali" PROPN ADE CLITKIN SG
 "<.>"
 	"." PUNCT
 
@@ -28675,7 +28675,7 @@
 "<Sitten>"
 	"sitten" ADV
 "<olikin>"
-	"olla" AUX KIN INDV SG3 PAST ACT
+	"olla" AUX CLITKIN INDV SG3 PAST ACT
 "<edessä>"
 	"edessä" ADV
 "<vain>"
@@ -28905,7 +28905,7 @@
 "<toi>"
 	"tuoda" VERB INDV SG3 PAST ACT
 "<opiskeluunkin>"
-	"opiskelu" NOUN ILL KIN <U> SG
+	"opiskelu" NOUN ILL CLITKIN <U> SG
 "<tietynlaista>"
 	"tietynlainen" ADJ PAR POS <Lainen> SG
 "<ainutlaatuisuutta>"
@@ -28997,7 +28997,7 @@
 "<ja>"
 	"ja" CCONJ
 "<vaihtareilla>"
-	"vaihtari" NOUN ADE PL COLL
+	"vaihtari" NOUN ADE PL <Coll>
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mahdollisuus>"
@@ -29210,9 +29210,9 @@
 "<ja>"
 	"ja" CCONJ
 "<mikäpä>"
-	"mikä" PRON NOM PA SG REL
+	"mikä" PRON NOM CLITPA SG REL
 "<olisikaan>"
-	"olla" AUX KAAN COND SG3 ACT
+	"olla" AUX CLITKAAN COND SG3 ACT
 "<parempaa>"
 	"hyvä" ADJ PAR CMP SG
 "<aktiviteettia>"
@@ -29442,7 +29442,7 @@
 "<Olen>"
 	"olla" AUX INDV SG1 PRESENT ACT
 "<viimeaikoina>"
-	"viime#aika" NOUN ESS PL COLL
+	"viime#aika" NOUN ESS PL <Coll>
 "<miettinyt>"
 	"miettiä" VERB NOM POS SG PCPNUT ACT
 "<tieteentekijän>"
@@ -29454,7 +29454,7 @@
 "<koska>"
 	"koska" SCONJ
 "<sitähän>"
-	"se" PRON PAR HAN SG DEM
+	"se" PRON PAR CLITHAN SG DEM
 "<me>"
 	"minä" PRON NOM PL1 PRS
 "<kaikki>"
@@ -29507,7 +29507,7 @@
 "<hämmästellä>"
 	"hämmästellä" VERB INFA SG ACT
 "<yksinkertaisintakin>"
-	"yksinkertainen" ADJ PAR KIN SUP <Inen> SG
+	"yksinkertainen" ADJ PAR CLITKIN SUP <Inen> SG
 "<ilmiötä>"
 	"ilmiö" NOUN PAR SG
 "<.>"
@@ -29615,7 +29615,7 @@
 "<vaikka>"
 	"vaikka" SCONJ
 "<olisikin>"
-	"olla" AUX KIN COND SG3 ACT
+	"olla" AUX CLITKIN COND SG3 ACT
 "<toisten>"
 	"toinen" PRON GEN PL RCP
 "<mielestä>"
@@ -29859,7 +29859,7 @@
 "<missä>"
 	"mikä" PRON INE SG INT
 "<muittenkin>"
-	"muu" PRON GEN KIN POS PL
+	"muu" PRON GEN CLITKIN POS PL
 "<;>"
 	";" PUNCT
 "<pennissä>"
@@ -30241,7 +30241,7 @@
 "<nähnyt>"
 	"nähdä" VERB NOM POS SG PCPNUT ACT
 "<myöskään>"
-	"myös" ADV KAAN
+	"myös" ADV CLITKAAN
 "<näiden>"
 	"tämä" PRON GEN PL DEM
 "<mainoslauseiden>"
@@ -30353,7 +30353,7 @@
 "<,>"
 	"," PUNCT
 "<onko>"
-	"olla" VERB KO INDV SG3 PRESENT ACT
+	"olla" VERB CLITKO INDV SG3 PRESENT ACT
 "<aihetta>"
 	"aihe" NOUN PAR SG
 "<jatkotoimiin>"
@@ -30361,7 +30361,7 @@
 "<vai>"
 	"vai" CCONJ
 "<onko>"
-	"olla" AUX KO INDV SG3 PRESENT ACT
+	"olla" AUX CLITKO INDV SG3 PRESENT ACT
 "<tämä>"
 	"tämä" PRON NOM SG DEM
 "<riittävä>"
@@ -31520,7 +31520,7 @@
 "<kuin>"
 	"kuin" SCONJ
 "<suomalaisillakin>"
-	"suomalainen" NOUN ADE KIN <Lainen> PL
+	"suomalainen" NOUN ADE CLITKIN <Lainen> PL
 "<.>"
 	"." PUNCT
 
@@ -31917,7 +31917,7 @@
 # text = Oletko tehoääliö töissä?
 # sent_id =  t049.1
 "<Oletko>"
-	"olla" AUX KO INDV SG2 PRESENT ACT
+	"olla" AUX CLITKO INDV SG2 PRESENT ACT
 "<tehoääliö>"
 	"teho#ääliö" NOUN NOM SG
 "<töissä>"
@@ -31976,7 +31976,7 @@
 "<töissä>"
 	"työ" NOUN INE PL
 "<hyvinkin>"
-	"hyvin" ADV KIN
+	"hyvin" ADV CLITKIN
 "<intensiivisesti>"
 	"intensiivisesti" ADV <Sti>
 "<.>"
@@ -32076,7 +32076,7 @@
 "<sitten>"
 	"sitten" ADV
 "<tartuttaisikaan>"
-	"tarttua" VERB KAAN CONNEG COND PSS
+	"tarttua" VERB CLITKAAN CONNEG COND PSS
 "<,>"
 	"," PUNCT
 "<psykologi>"
@@ -32204,7 +32204,7 @@
 "<ohella>"
 	"ohella" ADP POST
 "<työtovereihinkin>"
-	"työ#toveri" NOUN ILL KIN PL
+	"työ#toveri" NOUN ILL CLITKIN PL
 "<.>"
 	"." PUNCT
 
@@ -32374,7 +32374,7 @@
 "<,>"
 	"," PUNCT
 "<äläkä>"
-	"ei" VERB KA IMPV SG2 NEG ACT
+	"ei" VERB CLITKA IMPV SG2 NEG ACT
 "<osallistu>"
 	"osallistua" VERB CONNEG INDV PRESENT
 "<juoruiluun>"
@@ -32596,7 +32596,7 @@
 "<ja>"
 	"ja" CCONJ
 "<nykyäänkin>"
-	"nykyään" ADV KIN
+	"nykyään" ADV CLITKIN
 "<puhutaan>"
 	"puhua" VERB INDV PRESENT PSS
 "<kauniita>"
@@ -33969,7 +33969,7 @@
 "<julkaisusarjassa>"
 	"julkaisu#sarja" NOUN INE SG
 "<Wanhan>"
-	"wanha" ADJ GEN POS SG ARCH
+	"wanha" ADJ GEN POS SG <Arch>
 "<suomen>"
 	"suomi" NOUN GEN SG
 "<arkisto>"
@@ -36253,7 +36253,7 @@
 "<koska>"
 	"koska" SCONJ
 "<normaalistikin>"
-	"normaalisti" ADV KIN <Sti>
+	"normaalisti" ADV CLITKIN <Sti>
 "<alkanut>"
 	"alkaa" VERB NOM POS SG PCPNUT ACT
 "<synnytys>"
@@ -36290,7 +36290,7 @@
 "<itsestään>"
 	"itsestään" ADV
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<avustavia>"
 	"avustava" ADJ PAR POS PL
 "<toimenpiteitä>"
@@ -37466,7 +37466,7 @@
 "<riippuen>"
 	"riippua" VERB INS INFE SG ACT
 "<kulloisestakin>"
-	"kulloinen" ADJ ELA KIN POS <Inen> SG
+	"kulloinen" ADJ ELA CLITKIN POS <Inen> SG
 "<kertojasta>"
 	"kertoja" NOUN ELA <Ja> SG
 "<.>"
@@ -37568,7 +37568,7 @@
 "<ja>"
 	"ja" CCONJ
 "<muutenkin>"
-	"muuten" ADV KIN
+	"muuten" ADV CLITKIN
 "<välillä>"
 	"välillä" ADV
 "<hätyytteli>"
@@ -38593,7 +38593,7 @@
 "<Itse>"
 	"itse" PRON NOM SG YES
 "<tarinakin>"
-	"tarina" NOUN NOM KIN SG
+	"tarina" NOUN NOM CLITKIN SG
 "<sijoittuu>"
 	"sijoittua" VERB INDV SG3 PRESENT ACT
 "<nukkejen>"
@@ -39522,7 +39522,7 @@
 "<välein>"
 	"väli" NOUN INS PL
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<naisten>"
 	"nainen" NOUN GEN PL
 "<lähisukulaisilla>"
@@ -41174,7 +41174,7 @@
 "<tahdon>"
 	"tahto" NOUN GEN SG
 "<voikin>"
-	"voida" AUX KIN INDV SG3 PRESENT ACT
+	"voida" AUX CLITKIN INDV SG3 PRESENT ACT
 "<ottaa>"
 	"ottaa" VERB INFA SG ACT
 "<niiltä>"
@@ -41193,7 +41193,7 @@
 "<nopeammin>"
 	"nopeasti" ADV CMP <Sti>
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<ruokailussa>"
 	"ruokailu" NOUN INE <U> SG
 "<tai>"
@@ -41712,7 +41712,7 @@
 "<Kuten>"
 	"kuten" ADV
 "<edellisissäkin>"
-	"edellinen" ADJ INE KIN POS <Llinen> PL
+	"edellinen" ADJ INE CLITKIN POS <Llinen> PL
 "<peleissä>"
 	"peli" NOUN INE PL
 "<,>"
@@ -41720,7 +41720,7 @@
 "<Sims>"
 	"Sims" PROPN NOM SG
 "<3:ssakin>"
-	"3" NUM INE KIN SG CARD
+	"3" NUM INE CLITKIN SG CARD
 "<voi>"
 	"voida" AUX INDV SG0 PRESENT ACT
 "<tehdä>"
@@ -43673,7 +43673,7 @@
 "<mantereella>"
 	"mantere" NOUN ADE SG
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<kuulu>"
 	"kuulua" VERB CONNEG INDV PRESENT
 "<saaristoon>"
@@ -43877,7 +43877,7 @@
 "<,>"
 	"," PUNCT
 "<eikä>"
-	"ei" VERB KA SG3 NEG ACT
+	"ei" VERB CLITKA SG3 NEG ACT
 "<heillä>"
 	"hän" PRON ADE PL3 PRS
 "<ollut>"
@@ -45386,7 +45386,7 @@
 "<käräjäoikeudessa>"
 	"käräjä#oikeus" NOUN INE SG
 "<muutamaankin>"
-	"muutama" PRON ILL KIN SG
+	"muutama" PRON ILL CLITKIN SG
 "<kertaan>"
 	"kerta" NOUN ILL SG
 "<.>"
@@ -45838,7 +45838,7 @@
 "<Obama>"
 	"Obama" PROPN NOM SG
 "<voittaakin>"
-	"voittaa" VERB KIN INDV SG3 PRESENT ACT
+	"voittaa" VERB CLITKIN INDV SG3 PRESENT ACT
 "<hänet>"
 	"hän" PRON ACC SG3 PRS
 "<useammassa>"
@@ -46080,7 +46080,7 @@
 "<ihmiset>"
 	"ihminen" NOUN NOM PL
 "<ovatkin>"
-	"olla" AUX KIN INDV PL3 PRESENT ACT
+	"olla" AUX CLITKIN INDV PL3 PRESENT ACT
 "<eilen>"
 	"eilen" ADV
 "<ja>"
@@ -46121,7 +46121,7 @@
 "<vaikka>"
 	"vaikka" SCONJ
 "<kutsuukin>"
-	"kutsua" VERB KIN INDV SG3 PRESENT ACT
+	"kutsua" VERB CLITKIN INDV SG3 PRESENT ACT
 "<tämän>"
 	"tämä" PRON GEN SG DEM
 "<tekoa>"
