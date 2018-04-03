@@ -2140,7 +2140,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<valinneet>"
-	"valita" VERB GEN POS SG PCPNUT YES ACT
+	"valita" VERB GEN POS SG PCPNUT TYPO ACT
 "<seksin>"
 	"seksi" NOUN GEN SG
 "<toisen>"
@@ -2858,7 +2858,7 @@
 "<ja>"
 	"ja" CCONJ
 "<laittamalle>"
-	"laittaa" VERB ADE INFMA SG YES ACT
+	"laittaa" VERB ADE INFMA SG TYPO ACT
 "<hänelle>"
 	"hän" PRON ALL SG3 PRS
 "<miehen>"
@@ -3267,7 +3267,7 @@
 "<Paluu>"
 	"paluu" NOUN NOM SG
 "<nr.>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<1>"
 	"1" NUM CARD
 
@@ -3346,7 +3346,7 @@
 "<3,5>"
 	"3,5" NUM CARD
 "<kk>"
-	"kuu#kausi" NOUN YES PAR SG
+	"kuu#kausi" NOUN ABBR PAR SG
 "<ja>"
 	"ja" CCONJ
 "<edessä>"
@@ -4025,7 +4025,7 @@
 "<Kastikkeen>"
 	"kastike" NOUN GEN SG
 "<säimme>"
-	"syödä" VERB INDV PL1 PAST YES ACT
+	"syödä" VERB INDV PL1 PAST TYPO ACT
 "<tuoretagliatellen>"
 	"tuore#tagliatelle" NOUN GEN SG
 "<kera>"
@@ -4331,7 +4331,7 @@
 "<11.90>"
 	"11.90" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN ABBR PAR SG
 "<,>"
 	"," PUNCT
 "<vaan>"
@@ -4357,7 +4357,7 @@
 "<12.10>"
 	"12.10" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN ABBR PAR SG
 "<.>"
 	"." PUNCT
 
@@ -4374,7 +4374,7 @@
 "<(>"
 	"(" PUNCT
 "<huom>"
-	"huomata" VERB YES IMPV SG2 ACT
+	"huomata" VERB ABBR IMPV SG2 ACT
 "<!>"
 	"!" PUNCT
 "<nimi>"
@@ -4440,7 +4440,7 @@
 "<ollut>"
 	"olla" AUX NOM POS SG PCPNUT ACT
 "<hintaansa>"
-	"hinta" NOUN NOM SG 3 YES
+	"hinta" NOUN NOM SG 3 TYPO
 "<väärtti>"
 	"väärtti" ADJ NOM POS SG
 
@@ -4478,7 +4478,7 @@
 "<9.80>"
 	"9.80" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN ABBR PAR SG
 "<ja>"
 	"ja" CCONJ
 "<nyt>"
@@ -4494,7 +4494,7 @@
 "<10.20>"
 	"10.20" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN ABBR PAR SG
 "<...>"
 	"..." PUNCT
 "<.>"
@@ -4509,7 +4509,7 @@
 "<ihan>"
 	"ihan" ADV
 "<ok>"
-	"ok" NOUN YES NOM SG
+	"ok" NOUN ABBR NOM SG
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -4522,7 +4522,7 @@
 # text = Vaikkeivat pitsat nyt ihan top kymppiin meidän mielestämme päässeekäänt, on kuitenkin ihan kiva käydä erilaisissa paikoissa katsastamassa niiden antia
 # sent_id =  b709.14
 "<Vaikkeivat>"
-	"vaikka#ei" VERB PL3 NEG YES ACT
+	"vaikka#ei" VERB PL3 NEG TYPO ACT
 "<pitsat>"
 	"pitsa" NOUN NOM PL
 "<nyt>"
@@ -4538,7 +4538,7 @@
 "<mielestämme>"
 	"mieli" NOUN ELA SG PLUR 1
 "<päässeekäänt>"
-	"päästä" VERB NOM CLITKAAN POS PL PCPNUT YES ACT
+	"päästä" VERB NOM CLITKAAN POS PL PCPNUT TYPO ACT
 "<,>"
 	"," PUNCT
 "<on>"
@@ -4587,7 +4587,7 @@
 "<...>"
 	"..." PUNCT
 "<vaikkeivat>"
-	"vaikka#ei" VERB PL3 NEG YES ACT
+	"vaikka#ei" VERB PL3 NEG TYPO ACT
 "<olekaan>"
 	"olla" AUX CLITKAAN CONNEG INDV PRESENT
 "<ruispohjaan>"
@@ -4665,9 +4665,9 @@
 "<kuitenkin>"
 	"kuitenkin" ADV
 "<enmmän>"
-	"enemmän" ADV YES
+	"enemmän" ADV TYPO
 "<eihan>"
-	"ihan" ADV YES
+	"ihan" ADV TYPO
 "<kebab>"
 	"kebab" NOUN NOM SG
 "<salaattina>"
@@ -4772,7 +4772,7 @@
 "<En>"
 	"ei" AUX SG1 NEG ACT
 "<mullään>"
-	"mikään" PRON ADE SG YES
+	"mikään" PRON ADE SG TYPO
 "<muista>"
 	"muistaa" VERB CONNEG INDV PRESENT
 "<kenen>"
@@ -4944,7 +4944,7 @@
 "<(>"
 	"(" PUNCT
 "<DE>"
-	"DE" NOUN YES NOM SG
+	"DE" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<Arvoisa>"
@@ -5109,13 +5109,13 @@
 "<hyväksytty>"
 	"hyväksyä" VERB NOM POS SG PCPNUT PSS
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<mukaisesti>"
 	"mukaisesti" ADV <Sti>
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<markkinoille>"
 	"markkina" NOUN ALL PL
 "<.>"
@@ -5893,7 +5893,7 @@
 "<olevia>"
 	"olla" VERB PAR POS PL PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<määräyksiä>"
 	"määräys" NOUN PAR PL
 "<.>"
@@ -5931,7 +5931,7 @@
 "<tulevat>"
 	"tulla" VERB INDV PL3 PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<lainsäätäjät>"
 	"lain#säätäjä" NOUN NOM <Ja> PL
 "<:>"
@@ -6245,7 +6245,7 @@
 "<täysin>"
 	"täysin" ADV
 "<EU:ssa>"
-	"EU" PROPN YES INE SG
+	"EU" PROPN ABBR INE SG
 "<voimassa>"
 	"voimassa" ADV
 "<olevia>"
@@ -6421,7 +6421,7 @@
 "<voitte>"
 	"voida" AUX INDV PL2 PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<lainsäätäjänä>"
 	"lain#säätäjä" NOUN ESS <Ja> SG
 "<tarkastella>"
@@ -7185,7 +7185,7 @@
 "<nykyinen>"
 	"nykyinen" ADJ NOM POS <Inen> SG
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<lainsäädäntö>"
 	"lain#säädäntö" NOUN NOM SG
 "<on>"
@@ -7277,7 +7277,7 @@
 "<(>"
 	"(" PUNCT
 "<PT>"
-	"PT" NOUN YES NOM SG
+	"PT" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<Hyvät>"
@@ -7395,7 +7395,7 @@
 # text = EU:n toimielinten välisen yhteistyön ja parlamentin tiiviin osallistumisen kannalta vuoropuhelusta on tullut hyvin tärkeää nyt, kun EU:n kilpailupolitiikka kattaa energian ja yleistä taloudellista etua koskevien palvelujen kaltaisia strategisia aloja, kun siihen sisältyy uusia aloja, kuten ympäristö, ja kun kilpailusta on tullut suuressa määrin maailmanlaajuista.
 # sent_id =  e1021.4
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<toimielinten>"
 	"toimi#elin" NOUN GEN PL
 "<välisen>"
@@ -7429,7 +7429,7 @@
 "<kun>"
 	"kun" SCONJ
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<kilpailupolitiikka>"
 	"kilpailu#politiikka" NOUN NOM SG
 "<kattaa>"
@@ -7504,7 +7504,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN ABBR GEN SG
 "<kansalaisten>"
 	"kansalainen" NOUN GEN <Lainen> PL
 "<puolesta>"
@@ -7724,9 +7724,9 @@
 "<kuulu>"
 	"kuulua" VERB CONNEG INDV PRESENT
 "<EU:>"
-	"EU" PROPN YES ALL SG
+	"EU" PROPN ABBR ALL SG
 "<lle>"
-	"lle" PROPN YES ALL SG
+	"lle" PROPN ABBR ALL SG
 "<.>"
 	"." PUNCT
 
@@ -7758,7 +7758,7 @@
 # text = EU ei ole, eikä tule olemaan valtio.
 # sent_id =  e1062.3
 "<EU>"
-	"EU" PROPN YES NOM SG
+	"EU" PROPN ABBR NOM SG
 "<ei>"
 	"ei" VERB SG3 NEG ACT
 "<ole>"
@@ -8105,7 +8105,7 @@
 "<(>"
 	"(" PUNCT
 "<EN>"
-	"EN" NOUN YES
+	"EN" NOUN ABBR
 "<)>"
 	")" PUNCT
 "<Arvoisa>"
@@ -9330,7 +9330,7 @@
 "<tiukensivat>"
 	"tiukentaa" VERB INDV PL3 PAST ACT
 "<otettani>"
-	"ote" NOUN PAR SG 3 YES
+	"ote" NOUN PAR SG 3 TYPO
 "<omistani>"
 	"oma" ADJ ELA POS PL SING 1
 "<hetkeksi>"
@@ -9511,7 +9511,7 @@
 "<lopettaa>"
 	"lopettaa" VERB INFA SG ACT
 "<kesken.>"
-	"kesken#." ADP PREP YES
+	"kesken#." ADP PREP TYPO
 "<:D>"
 	":D" SYM
 
@@ -9913,7 +9913,7 @@
 # text = -Maks.
 # sent_id =  f401.21
 "<-Maks>"
-	"-#Maks" PROPN NOM SG YES
+	"-#Maks" PROPN NOM SG TYPO
 "<.>"
 	"." PUNCT
 
@@ -11134,7 +11134,7 @@
 "<lattialle>"
 	"lattia" NOUN ALL SG
 "<musta>"
-	"musta" ADJ GEN POS SG YES
+	"musta" ADJ GEN POS SG TYPO
 "<ja>"
 	"ja" CCONJ
 "<kiiltävän>"
@@ -11208,7 +11208,7 @@
 "<ja>"
 	"ja" CCONJ
 "<murtavat>"
-	"murtaa" VERB INDV SG3 PRESENT YES ACT
+	"murtaa" VERB INDV SG3 PRESENT TYPO ACT
 "<sen>"
 	"se" PRON GEN SG DEM
 "<.>"
@@ -11219,7 +11219,7 @@
 "<Katson>"
 	"katsoa" VERB INDV SG1 PRESENT ACT
 "<itseäni>"
-	"itse" PRON PAR SG SING 1 YES
+	"itse" PRON PAR SG SING 1 REFLEX
 "<peilistä>"
 	"peili" NOUN ELA SG
 "<.>"
@@ -12063,7 +12063,7 @@
 "<ehkä>"
 	"ehkä" ADV
 "<itseni>"
-	"itse" PRON NOM SG SING 1 YES
+	"itse" PRON NOM SG SING 1 REFLEX
 "<alastomaksi>"
 	"alaston" ADJ TRA POS <Ton> SG
 "<,>"
@@ -12108,7 +12108,7 @@
 "<unohtunut>"
 	"unohtua" VERB NOM POS SG PCPNUT ACT
 "<itseltänikin>"
-	"itse" PRON ABL CLITKIN SG SING 1 YES
+	"itse" PRON ABL CLITKIN SG SING 1 REFLEX
 "<.>"
 	"." PUNCT
 
@@ -12248,7 +12248,7 @@
 "<löytämässä>"
 	"löytää" VERB INE INFMA SG ACT
 "<itseni>"
-	"itse" PRON GEN SG SING 1 YES
+	"itse" PRON GEN SG SING 1 REFLEX
 "<.>"
 	"." PUNCT
 
@@ -12441,7 +12441,7 @@
 # text = Tidän, mistä pidän ja mitä haluan tehdä koko elämäni, mutta haluan tehdä sitä vain työnä.
 # sent_id =  f603.16
 "<Tidän>"
-	"tietää" VERB INDV SG1 PRESENT YES ACT
+	"tietää" VERB INDV SG1 PRESENT TYPO ACT
 "<,>"
 	"," PUNCT
 "<mistä>"
@@ -12923,7 +12923,7 @@
 "<asiaa>"
 	"asia" NOUN PAR SG
 "<X>"
-	"X" NOUN YES NOM SG
+	"X" NOUN ABBR NOM SG
 "<,>"
 	"," PUNCT
 "<joka>"
@@ -12933,7 +12933,7 @@
 "<esineen>"
 	"esine" NOUN GEN SG
 "<Y>"
-	"Y" NOUN YES NOM SG
+	"Y" NOUN ABBR NOM SG
 "<mukaan>"
 	"mukaan" ADP PREP
 "<ottamista>"
@@ -13040,7 +13040,7 @@
 "<koko>"
 	"koko" ADJ
 "<itseni>"
-	"itse" PRON GEN SG SING 1 YES
+	"itse" PRON GEN SG SING 1 REFLEX
 "<löytäminen>"
 	"löytäminen" NOUN NOM <Minen> SG
 "<on>"
@@ -13062,13 +13062,13 @@
 "<jääneet>"
 	"jäädä" VERB NOM POS PL PCPNUT ACT
 "<itseni>"
-	"itse" PRON GEN SG SING 1 YES
+	"itse" PRON GEN SG SING 1 REFLEX
 "<etsimiset>"
 	"etsiminen" NOUN NOM <Minen> PL
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<itselleni>"
-	"itse" PRON ALL SG SING 1 YES
+	"itse" PRON ALL SG SING 1 REFLEX
 "<yhteensä>"
 	"yhteensä" ADV
 "<,>"
@@ -13612,7 +13612,7 @@
 "<ihan>"
 	"ihan" ADV
 "<ookoo>"
-	"ookoo" ADJ YES
+	"ookoo" ADJ ABBR
 "<.>"
 	"." PUNCT
 
@@ -15470,7 +15470,7 @@
 "<lailla>"
 	"lailla" ADV
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<suunnittelutyöhön>"
@@ -15540,7 +15540,7 @@
 "<kun>"
 	"kun" ADV
 "<siltä>"
-	"silta" NOUN NOM SG YES
+	"silta" NOUN NOM SG TYPO
 "<oli>"
 	"olla" VERB INDV SG3 PAST ACT
 "<mannermaalta>"
@@ -15570,7 +15570,7 @@
 # text = A. Jokinen ei tiennyt mitään yli 1000km pitkistä silloista.
 # sent_id =  fB04.6
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<ei>"
@@ -15584,7 +15584,7 @@
 "<1000>"
 	"1000" NUM CARD
 "<km>"
-	"km" NOUN YES PAR SG
+	"km" NOUN ABBR PAR SG
 "<pitkistä>"
 	"pitkä" ADJ ELA POS PL
 "<silloista>"
@@ -15627,7 +15627,7 @@
 "<juuri>"
 	"juuri" ADV
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<perunoiden>"
@@ -15650,7 +15650,7 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<,>"
@@ -15772,7 +15772,7 @@
 "<että>"
 	"että" SCONJ
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<,>"
@@ -15865,7 +15865,7 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<palkkaama>"
@@ -15910,7 +15910,7 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<insinööritaitojen>"
@@ -15979,7 +15979,7 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<saattoi>"
@@ -16011,7 +16011,7 @@
 "<ettei>"
 	"että#ei" VERB SG3 NEG ACT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<saanut>"
@@ -16077,7 +16077,7 @@
 "<)>"
 	")" PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<työntömitan>"
@@ -16505,7 +16505,7 @@
 "<pehmeään>"
 	"pehmeä" ADJ ILL POS SG
 "<makkaraa>"
-	"makkara" NOUN ILL SG YES
+	"makkara" NOUN ILL SG TYPO
 "<se>"
 	"se" PRON NOM SG DEM
 "<pysähtyi>"
@@ -16661,7 +16661,7 @@
 "<nipistettävä>"
 	"nipistää" VERB NOM POS SG PRESENT PSS
 "<itseään>"
-	"itse" PRON PAR SG 3 YES
+	"itse" PRON PAR SG 3 REFLEX
 "<todetakseen>"
 	"todeta" VERB TRA INFA SG 3 ACT
 "<,>"
@@ -17209,7 +17209,7 @@
 "<kuppinsa>"
 	"kuppi" NOUN GEN SG 3
 "<kuunnellessa>"
-	"kuunnella" VERB INE INFE SG 3 YES ACT
+	"kuunnella" VERB INE INFE SG 3 TYPO ACT
 "<Pekan>"
 	"Pekka" PROPN GEN SG
 "<esitelmöintiä>"
@@ -17678,7 +17678,7 @@
 "<Hyväksy>"
 	"hyväksyä" VERB IMPV SG2 ACT
 "<itsesi>"
-	"itse" PRON NOM SG SING 2 YES
+	"itse" PRON NOM SG SING 2 REFLEX
 "<,>"
 	"," PUNCT
 "<ole>"
@@ -17686,7 +17686,7 @@
 "<oma>"
 	"oma" ADJ NOM POS SG
 "<itsesi>"
-	"itse" PRON NOM SG SING 2 YES
+	"itse" PRON NOM SG SING 2 REFLEX
 "<ja>"
 	"ja" CCONJ
 "<nauti>"
@@ -17881,7 +17881,7 @@
 "<Tietysti>"
 	"tietysti" ADV <Sti>
 "<BMW>"
-	"BMW" PROPN YES NOM SG
+	"BMW" PROPN ABBR NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muilta>"
@@ -19120,7 +19120,7 @@
 "<kahdessa>"
 	"kaksi" NUM INE SG CARD
 "<valtakunnallisissa>"
-	"valta#kunnallinen" ADJ INE POS <Llinen> SG YES
+	"valta#kunnallinen" ADJ INE POS <Llinen> SG TYPO
 "<näyttelyssä>"
 	"näyttely" NOUN INE <U> SG
 "<.>"
@@ -20059,7 +20059,7 @@
 "<Joko>"
 	"joko" CCONJ
 "<itse>"
-	"itse" PRON NOM PL YES
+	"itse" PRON NOM PL REFLEX
 "<tankit>"
 	"tankki" NOUN NOM PL
 "<vuotivat>"
@@ -20251,7 +20251,7 @@
 "<ratsasti>"
 	"ratsastaa" VERB INDV SG3 PAST ACT
 "<itsensä>"
-	"itse" PRON GEN SG 3 YES
+	"itse" PRON GEN SG 3 REFLEX
 "<pahan>"
 	"paha" ADJ GEN POS SG
 "<kerran>"
@@ -21766,11 +21766,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<1/2005>"
 	"1/2005" NUM CARD
 "<,>"
@@ -21820,11 +21820,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<1255/97>"
 	"1255/97" NUM CARD
 "<muuttamisesta>"
@@ -23340,11 +23340,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<1255/97>"
 	"1255/97" NUM CARD
 "<säännöksiä>"
@@ -23821,11 +23821,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<3820/85>"
 	"3820/85" NUM CARD
 "<säädetään>"
@@ -23889,11 +23889,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<3821/85>"
 	"3821/85" NUM CARD
 "<säädetään>"
@@ -24091,7 +24091,7 @@
 "<artiklan>"
 	"artikla" NOUN GEN SG
 "<c>"
-	"c" NOUN YES NOM SG
+	"c" NOUN ABBR NOM SG
 "<alakohdassa>"
 	"ala#kohta" NOUN INE SG
 "<,>"
@@ -24249,7 +24249,7 @@
 "<artiklan>"
 	"artikla" NOUN GEN SG
 "<d>"
-	"d" NOUN YES NOM SG
+	"d" NOUN ABBR NOM SG
 "<alakohdan>"
 	"ala#kohta" NOUN GEN SG
 "<ja>"
@@ -24308,7 +24308,7 @@
 "<seuraamusten>"
 	"seuraamus" NOUN GEN PL
 "<riittämätömyys>"
-	"riittämättömyys" NOUN NOM SG YES
+	"riittämättömyys" NOUN NOM SG TYPO
 "<kannustaa>"
 	"kannustaa" VERB INDV SG3 PRESENT ACT
 "<rikkomaan>"
@@ -24913,11 +24913,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN ABBR NOM SG
 "<411/98>"
 	"411/98" NUM CARD
 "<.>"
@@ -25274,7 +25274,7 @@
 # text = a) eläinten kuljetuksiin, joita kasvattajat suorittavat omilla maatalousajoneuvoillaan tai kuljetusvälineillään, kun maantieteelliset olosuhteet vaativat tiettyjen eläintyyppien kuljetusta siirtolaiduntamista varten;
 # sent_id =  j001.69
 "<a>"
-	"a" NOUN YES NOM SG
+	"a" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<eläinten>"
@@ -25323,7 +25323,7 @@
 # text = b) sellaisiin kasvattajien omilla kuljetusvälineillään suorittamiin omien eläintensä kuljetuksiin, joiden pituus kasvattajan tilalta on alle 50 kilometriä.
 # sent_id =  j001.70
 "<b>"
-	"b" NOUN YES NOM SG
+	"b" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<sellaisiin>"
@@ -25550,7 +25550,7 @@
 # text = a) ’eläimillä’ eläviä selkärankaisia eläimiä;
 # sent_id =  j001.77
 "<a>"
-	"a" NOUN YES NOM SG
+	"a" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25573,7 +25573,7 @@
 # text = b) ’keräyskeskuksilla’ paikkoja, jotka voivat olla esimerkiksi tiloja, koontikeskuksia ja markkinoita ja joissa eri tiloilta peräisin olevat kotieläiminä pidettävät hevos-, nauta-, lammas-, vuohi- ja sikaeläimet kootaan yhteen kuljetuserien muodostamiseksi;
 # sent_id =  j001.78
 "<b>"
-	"b" NOUN YES NOM SG
+	"b" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25654,7 +25654,7 @@
 # text = c) ’hoitajalla’ henkilöä, joka on välittömästi vastuussa eläinten hyvinvoinnista ja on niiden mukana kuljetusmatkan ajan;
 # sent_id =  j001.79
 "<c>"
-	"c" NOUN YES NOM SG
+	"c" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25699,7 +25699,7 @@
 # text = d) ’rajatarkastusasemalla’ kaikkia tarkastusasemia, jotka on nimetty ja hyväksytty direktiivin 91/496/ETY  6 artiklan mukaisesti suorittamaan yhteisön alueen rajalla eläinlääkinnällisiä tarkastuksia kolmansista maista saapuville eläimille;
 # sent_id =  j001.80
 "<d>"
-	"d" NOUN YES NOM SG
+	"d" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25762,7 +25762,7 @@
 # text = e) ’yhteisön eläinlääkintälainsäädännöllä’ direktiivin 90/425/ETY  liitteessä A olevassa I luvussa lueteltua lainsäädäntöä ja myöhemmin annettuja täytäntöönpanosääntöjä;
 # sent_id =  j001.81
 "<e>"
-	"e" NOUN YES NOM SG
+	"e" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25782,7 +25782,7 @@
 "<liitteessä>"
 	"liite" NOUN INE SG
 "<A>"
-	"A" NOUN YES NOM SG
+	"A" NOUN ABBR NOM SG
 "<olevassa>"
 	"olla" VERB INE POS SG PRESENT ACT
 "<I>"
@@ -25807,7 +25807,7 @@
 # text = f) ’toimivaltaisella viranomaisella’ jäsenvaltion keskusviranomaista, jolla on toimivalta suorittaa eläinten hyvinvointia koskevia tarkastuksia, tai mitä tahansa viranomaista, jolle se on siirtänyt tällaisen toimivallan;
 # sent_id =  j001.82
 "<f>"
-	"f" NOUN YES NOM SG
+	"f" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25979,11 +25979,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<384/96>"
 	"384/96" NUM CARD
 "<,>"
@@ -26032,7 +26032,7 @@
 # text = A. MENETTELY
 # sent_id =  j004.3
 "<A.>"
-	"A." NOUN YES
+	"A." NOUN ABBR
 "<MENETTELY>"
 	"menettely" NOUN NOM <U> SG
 
@@ -26106,7 +26106,7 @@
 "<(>"
 	"(" PUNCT
 "<CEFIC>"
-	"CEFIC" PROPN YES NOM SG
+	"CEFIC" PROPN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<perusasetuksen>"
@@ -26422,7 +26422,7 @@
 # text = B. VALITUKSEN PERUUTTAMINEN JA MENETTELYN PÄÄTTÄMINEN
 # sent_id =  j004.11
 "<B.>"
-	"B." NOUN YES
+	"B." NOUN ABBR
 "<VALITUKSEN>"
 	"valitus" NOUN GEN SG
 "<PERUUTTAMINEN>"
@@ -26443,7 +26443,7 @@
 "<)>"
 	")" PUNCT
 "<CEFIC>"
-	"CEFIC" PROPN YES NOM SG
+	"CEFIC" PROPN ABBR NOM SG
 "<peruutti>"
 	"peruuttaa" VERB INDV SG3 PAST ACT
 "<virallisesti>"
@@ -26784,11 +26784,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<1415/2006>"
 	"1415/2006" NUM CARD
 "<,>"
@@ -26881,11 +26881,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<1784/2003>"
 	"1784/2003" NUM CARD
 "<ja>"
@@ -26952,11 +26952,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<2131/93>"
 	"2131/93" NUM CARD
 "<säädetään>"
@@ -27288,11 +27288,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<2131/93>"
 	"2131/93" NUM CARD
 "<.>"
@@ -27320,7 +27320,7 @@
 # text = a) tarjoukset vahvistetaan tarjouksen kohteena olevan erän tosiasiallisen laadun perusteella;
 # sent_id =  j024.17
 "<a>"
-	"a" NOUN YES NOM SG
+	"a" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<tarjoukset>"
@@ -27347,7 +27347,7 @@
 # text = b) vähimmäismyyntihinta vahvistetaan tasolle, jolla se ei häiritse viljamarkkinoita.
 # sent_id =  j024.18
 "<b>"
-	"b" NOUN YES NOM SG
+	"b" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<vähimmäismyyntihinta>"
@@ -27432,11 +27432,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<2131/93>"
 	"2131/93" NUM CARD
 "<13>"
@@ -27619,21 +27619,21 @@
 "<:>"
 	":" PUNCT
 "<Pôdohospodárska>"
-	"Pôdohospodárska" X YES
+	"Pôdohospodárska" X FOREIGN
 "<platobná>"
-	"platobná" X YES
+	"platobná" X FOREIGN
 "<agentúra>"
-	"agentúra" X YES
+	"agentúra" X FOREIGN
 "<oddelenie>"
-	"oddelenie" X YES
+	"oddelenie" X FOREIGN
 "<obilnín>"
-	"obilnín" X YES
+	"obilnín" X FOREIGN
 "<a>"
-	"a" X YES
+	"a" X FOREIGN
 "<škrobu>"
-	"škrobu" X YES
+	"škrobu" X FOREIGN
 "<Dobrovičova>"
-	"Dobrovičova" X YES
+	"Dobrovičova" X FOREIGN
 "<12>"
 	"12" NUM CARD
 "<SK-815>"
@@ -27740,11 +27740,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN ABBR NOM SG
 "<1784/200325>"
 	"1784/200325" NUM CARD
 "<artiklan>"
@@ -28187,7 +28187,7 @@
 "<”>"
 	"”" PUNCT
 "<–synonyymeillä>"
-	"–#synonyymi" NOUN ADE PL YES
+	"–#synonyymi" NOUN ADE PL TYPO
 "<.>"
 	"." PUNCT
 
@@ -29088,7 +29088,7 @@
 "<,>"
 	"," PUNCT
 "<bahasa>"
-	"bahasa" X YES
+	"bahasa" X FOREIGN
 "<indonesian>"
 	"indonesia" NOUN GEN SG
 "<,>"
@@ -29988,30 +29988,30 @@
 # text = Be all you can be, bebe!
 # sent_id =  s305.16
 "<Be>"
-	"Be" X YES
+	"Be" X FOREIGN
 "<all>"
-	"all" X YES
+	"all" X FOREIGN
 "<you>"
-	"you" X YES
+	"you" X FOREIGN
 "<can>"
-	"can" X YES
+	"can" X FOREIGN
 "<be>"
-	"be" X YES
+	"be" X FOREIGN
 "<,>"
 	"," PUNCT
 "<bebe>"
-	"bebe" X YES
+	"bebe" X FOREIGN
 "<!>"
 	"!" PUNCT
 
 # text = TS: HK:n "parempi rypsiporsas" luovutti
 # sent_id =  t010.1
 "<TS>"
-	"TS" NOUN YES NOM SG
+	"TS" NOUN ABBR NOM SG
 "<:>"
 	":" PUNCT
 "<HK:n>"
-	"HK" NOUN YES GEN SG
+	"HK" NOUN ABBR GEN SG
 "<">"
 	""" PUNCT
 "<parempi>"
@@ -30026,7 +30026,7 @@
 # text = HK Ruokatalo on toimittanut Eviralle selvityksen, jossa se lupaa muun muassa lopettaa rypsiporsastuotteidensa mainostamisen sydänystävällisinä.
 # sent_id =  t010.2
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN ABBR NOM SG
 "<Ruokatalo>"
 	"ruoka#talo" NOUN NOM SG
 "<on>"
@@ -30071,7 +30071,7 @@
 "<voimakkaasti>"
 	"voimakkaasti" ADV <Sti>
 "<HK:n>"
-	"HK" NOUN YES GEN SG
+	"HK" NOUN ABBR GEN SG
 "<possumainontaa>"
 	"possu#mainonta" NOUN PAR SG
 "<,>"
@@ -30088,7 +30088,7 @@
 # text = HK Ruokatalo on vääntänyt useiden kuukausien ajan kättä elintarviketurvallisuusvirasto Eviran kanssa väittämistä, joita yhtiö on käyttänyt rypsirehua syöneen sian lihasta valmistettujen tuotteidensa mainonnassa.
 # sent_id =  t010.4
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN ABBR NOM SG
 "<Ruokatalo>"
 	"ruoka#talo" NOUN NOM SG
 "<on>"
@@ -30145,7 +30145,7 @@
 "<perin>"
 	"perin" ADV
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN ABBR NOM SG
 "<hehkutti>"
 	"hehkuttaa" VERB INDV SG3 PAST ACT
 "<rypsiporsaan>"
@@ -30188,7 +30188,7 @@
 "<,>"
 	"," PUNCT
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN ABBR NOM SG
 "<vaihtoi>"
 	"vaihtaa" VERB INDV SG3 PAST ACT
 "<vakuutteluihin>"
@@ -30258,7 +30258,7 @@
 "<Selvityksessään>"
 	"selvitys" NOUN INE SG 3
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN ABBR NOM SG
 "<lupaa>"
 	"luvata" VERB INDV SG3 PRESENT ACT
 "<lopettaa>"
@@ -30312,7 +30312,7 @@
 "<jotka>"
 	"joka" PRON NOM PL REL
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN ABBR NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<selvityksessään>"
@@ -30444,7 +30444,7 @@
 "<ja>"
 	"ja" CCONJ
 "<organisaatio>"
-	"organisaatio" NOUN PAR SG YES
+	"organisaatio" NOUN PAR SG TYPO
 "<yli>"
 	"yli" ADV
 "<kymmenestä>"
@@ -30665,7 +30665,7 @@
 "<pääsy>"
 	"pääsy" NOUN NOM <U> SG
 "<erääseen>"
-	"eräs" PRON ILL PL YES
+	"eräs" PRON ILL PL TYPO
 "<murtautujien>"
 	"murtautuja" NOUN GEN <Ja> PL
 "<käyttämän>"
@@ -31168,7 +31168,7 @@
 "<(>"
 	"(" PUNCT
 "<TEM>"
-	"TEM" PROPN YES NOM SG
+	"TEM" PROPN ABBR NOM SG
 "<)>"
 	")" PUNCT
 "<Tilastokeskuksen>"
@@ -31199,7 +31199,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<TEM:llä>"
-	"TEM" PROPN YES ADE SG
+	"TEM" PROPN ABBR ADE SG
 "<myös>"
 	"myös" ADV
 "<positiivisia>"
@@ -31298,7 +31298,7 @@
 "<Räisänen>"
 	"Räisänen" PROPN NOM SG
 "<TEM:tä>"
-	"TEM" PROPN YES ABL SG YES
+	"TEM" PROPN ABBR ABL SG TYPO
 "<Taloussanomille>"
 	"Talous#sanomat" PROPN ALL PL
 "<.>"
@@ -31357,7 +31357,7 @@
 "<osa>"
 	"osa" NOUN NOM SG
 "<ulkomaalaisista>"
-	"ulkomaalainen" NOUN ALL <Lainen> PL YES
+	"ulkomaalainen" NOUN ALL <Lainen> PL TYPO
 "<suunnatuista>"
 	"suunnata" VERB ELA POS PL PCPNUT PSS
 "<työvoimapoliittista>"
@@ -31737,7 +31737,7 @@
 # text = TEM:n mukaan työvoimaviranomaiset eivät onnistuneet taantumassa mitoittamaan ja ajoittamaan työvoimapolitiikan suhdannepoliittisia toimia parhaalla mahdollisella tavalla.
 # sent_id =  t032.22
 "<TEM:n>"
-	"TEM" PROPN YES GEN SG
+	"TEM" PROPN ABBR GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<työvoimaviranomaiset>"
@@ -31772,7 +31772,7 @@
 # text = TEM:n mukaan tukityöllistämistoimet näyttivät purevan melko hyvin myös vuonna 2009.
 # sent_id =  t032.23
 "<TEM:n>"
-	"TEM" PROPN YES GEN SG
+	"TEM" PROPN ABBR GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<tukityöllistämistoimet>"
@@ -31878,7 +31878,7 @@
 # text = TEM:n mukaan viranomaiset lisäsivät työllistämistoimien määrää työttömyyden kasvuun nähden liian vähän, mikä on sittemmin lisännyt pitkäaikaistyöttömyyttä.
 # sent_id =  t032.27
 "<TEM:n>"
-	"TEM" PROPN YES GEN SG
+	"TEM" PROPN ABBR GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<viranomaiset>"
@@ -32148,7 +32148,7 @@
 "<paitsi>"
 	"paitsi" ADV
 "<itseensä>"
-	"itse" PRON ILL SG 3 YES
+	"itse" PRON ILL SG 3 REFLEX
 "<,>"
 	"," PUNCT
 "<myös>"
@@ -32196,7 +32196,7 @@
 "<kohtelevan>"
 	"kohdella" VERB GEN POS SG PRESENT ACT
 "<itseään>"
-	"itse" PRON PAR SG 3 YES
+	"itse" PRON PAR SG 3 REFLEX
 "<toimii>"
 	"toimia" VERB INDV SG3 PRESENT ACT
 "<ystävien>"
@@ -32499,7 +32499,7 @@
 "<mukaan>"
 	"mukaan" ADP POST
 "<ellä>"
-	"edellä" ADV YES
+	"edellä" ADV TYPO
 "<olevat>"
 	"olla" VERB NOM POS PL PRESENT ACT
 "<viisi>"
@@ -32763,7 +32763,7 @@
 "<tutkimustyöhön>"
 	"tutkimus#työ" NOUN ILL SG
 "<liityviä>"
-	"liittyä" VERB PAR POS PL PRESENT YES ACT
+	"liittyä" VERB PAR POS PL PRESENT TYPO ACT
 "<asioita>"
 	"asia" NOUN PAR PL
 "<.>"
@@ -35336,7 +35336,7 @@
 "<23>"
 	"23" NUM CARD
 "<cm>"
-	"cm" NOUN YES PAR SG
+	"cm" NOUN ABBR PAR SG
 "<.>"
 	"." PUNCT
 
@@ -35353,7 +35353,7 @@
 "<ja>"
 	"ja" CCONJ
 "<tihesti>"
-	"tiheästi" ADV <Sti> YES
+	"tiheästi" ADV <Sti> TYPO
 "<musta>"
 	"musta" ADJ NOM POS SG
 "<viiruinen>"
@@ -35383,7 +35383,7 @@
 # text = Mustaviirukpuajan siivet ja pyrstö ovat väriltään tumman kastanjanruskeat.
 # sent_id =  w085.5
 "<Mustaviirukpuajan>"
-	"Musta#viiru#kipuaja" NOUN GEN <Ja> SG YES
+	"Musta#viiru#kipuaja" NOUN GEN <Ja> SG TYPO
 "<siivet>"
 	"siipi" NOUN NOM PL
 "<ja>"
@@ -35408,7 +35408,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mustavlkoviiruinen>"
-	"musta#valko#viiruinen" ADJ NOM POS <Inen> SG YES
+	"musta#valko#viiruinen" ADJ NOM POS <Inen> SG TYPO
 "<.>"
 	"." PUNCT
 
@@ -35509,7 +35509,7 @@
 "<metsien>"
 	"metsä" NOUN GEN PL
 "<laitaimlla>"
-	"laitama" NOUN ADE PL YES
+	"laitama" NOUN ADE PL TYPO
 "<.>"
 	"." PUNCT
 
@@ -36357,7 +36357,7 @@
 "<Kirjakauppa>"
 	"kirja#kauppa" NOUN NOM SG
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN ABBR NOM SG
 "<(>"
 	"(" PUNCT
 "<mainonnassa>"
@@ -36547,17 +36547,17 @@
 "<engl.>"
 	"englanti" NOUN TRA SG
 "<light>"
-	"light" X YES
+	"light" X FOREIGN
 "<weight>"
-	"weight" X YES
+	"weight" X FOREIGN
 "<coated>"
-	"coated" X YES
+	"coated" X FOREIGN
 "<paper>"
-	"paper" X YES
+	"paper" X FOREIGN
 "<;>"
 	";" PUNCT
 "<LWC>"
-	"LWC" X YES
+	"LWC" X FOREIGN
 "<)>"
 	")" PUNCT
 "<tarkoittaa>"
@@ -36624,7 +36624,7 @@
 "<LWC-paperia>"
 	"LWC#paperi" NOUN PAR SG
 "<korkeampipitasoinen>"
-	"korkea#tasoinen" ADJ NOM POS <Inen> SG YES
+	"korkea#tasoinen" ADJ NOM POS <Inen> SG TYPO
 "<laatu>"
 	"laatu" NOUN NOM SG
 "<on>"
@@ -36835,7 +36835,7 @@
 "<Urheilutelevisio>"
 	"urheilu#televisio" PROPN NOM SG
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN ABBR NOM SG
 "<sai>"
 	"saada" VERB INDV SG3 PAST ACT
 "<valtakunnallisen>"
@@ -36892,7 +36892,7 @@
 "<Television>"
 	"television" PROPN GEN SG
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN ABBR NOM SG
 "</>"
 	"/" PUNCT
 "<Nelonen>"
@@ -36917,7 +36917,7 @@
 "<myös>"
 	"myös" ADV
 "<teksti-tv>"
-	"teksti#tv" NOUN YES NOM SG
+	"teksti#tv" NOUN ABBR NOM SG
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -37007,7 +37007,7 @@
 "<Urheilutelevisio>"
 	"urheilu#televisio" PROPN NOM SG
 "<Oy:n>"
-	"oy" NOUN YES GEN SG
+	"oy" NOUN ABBR GEN SG
 "<osakkeista>"
 	"osake" NOUN ELA PL
 "<.>"
@@ -37051,7 +37051,7 @@
 "<,>"
 	"," PUNCT
 "<esim.>"
-	"esimerkiksi" ADV YES
+	"esimerkiksi" ADV ABBR
 "<Liigacupin>"
 	"liiga#cup" PROPN GEN SG
 "<finaalin>"
@@ -37712,7 +37712,7 @@
 "<Meänteis>"
 	"Meänteis" PROPN NOM SG
 "<itse>"
-	"itse" PRON NOM SG YES
+	"itse" PRON NOM SG REFLEX
 "<meni>"
 	"mennä" VERB INDV SG3 PAST ACT
 "<naimisiin>"
@@ -37765,7 +37765,7 @@
 "<Kartat>"
 	"kartta" NOUN NOM PL
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN ABBR NOM SG
 "<,>"
 	"," PUNCT
 "<2005>"
@@ -37839,7 +37839,7 @@
 "<(>"
 	"(" PUNCT
 "<s.>"
-	"syntyä" VERB YES NOM POS SG PCPNUT ACT
+	"syntyä" VERB ABBR NOM POS SG PCPNUT ACT
 "<22.>"
 	"22." ADJ ORD
 "<joulukuuta>"
@@ -37948,7 +37948,7 @@
 "<7,5>"
 	"7,5" NUM CARD
 "<km:llä>"
-	"kilo#metri" NOUN YES ADE SG
+	"kilo#metri" NOUN ABBR ADE SG
 "<ja>"
 	"ja" CCONJ
 "<saavutti>"
@@ -37958,7 +37958,7 @@
 "<15>"
 	"15" NUM CARD
 "<km:llä>"
-	"kilo#metri" NOUN YES ADE SG
+	"kilo#metri" NOUN ABBR ADE SG
 "<.>"
 	"." PUNCT
 
@@ -37989,13 +37989,13 @@
 "<7,5>"
 	"7,5" NUM CARD
 "<km>"
-	"kilo#metri" NOUN YES PAR SG
+	"kilo#metri" NOUN ABBR PAR SG
 "<ja>"
 	"ja" CCONJ
 "<15>"
 	"15" NUM CARD
 "<km>"
-	"kilo#metri" NOUN YES PAR SG
+	"kilo#metri" NOUN ABBR PAR SG
 "<.>"
 	"." PUNCT
 
@@ -38224,7 +38224,7 @@
 "<4>"
 	"4" NUM CARD
 "<x>"
-	"x" NOUN YES NOM SG
+	"x" NOUN ABBR NOM SG
 "<400>"
 	"400" NUM CARD
 "<metrin>"
@@ -38395,7 +38395,7 @@
 "<(>"
 	"(" PUNCT
 "<s.>"
-	"syntynyt" VERB YES NOM POS SG PCPNUT ACT
+	"syntynyt" VERB ABBR NOM POS SG PCPNUT ACT
 "<5.>"
 	"5." ADJ ORD
 "<heinäkuuta>"
@@ -38455,7 +38455,7 @@
 "<levyttänyt>"
 	"levyttää" VERB NOM POS SG PCPNUT ACT
 "<mm.>"
-	"mm." ADV YES
+	"mm." ADV ABBR
 "<Johannes>"
 	"Johannes" PROPN NOM SG
 "<Brahmsia>"
@@ -38514,7 +38514,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<äänietty>"
-	"äänittää" VERB NOM POS SG PCPNUT YES PSS
+	"äänittää" VERB NOM POS SG PCPNUT TYPO PSS
 "<Los>"
 	"Los" PROPN NOM SG
 "<Angered>"
@@ -38591,7 +38591,7 @@
 # text = Itse tarinakin sijoittuu nukkejen maailmaan.
 # sent_id =  w138.5
 "<Itse>"
-	"itse" PRON NOM SG YES
+	"itse" PRON NOM SG REFLEX
 "<tarinakin>"
 	"tarina" NOUN NOM CLITKIN SG
 "<sijoittuu>"
@@ -39089,7 +39089,7 @@
 "<eri>"
 	"eri" ADJ
 "<aikona>"
-	"aika" NOUN ESS PL YES
+	"aika" NOUN ESS PL TYPO
 "<ja>"
 	"ja" CCONJ
 "<eri>"
@@ -40117,7 +40117,7 @@
 "<eli>"
 	"eli" CCONJ
 "<nk.>"
-	"nk." ADJ YES
+	"nk." ADJ ABBR
 "<taustailmaantuvuudesta>"
 	"tausta#ilmaantuvuus" NOUN ELA <Vs> SG
 "<.>"
@@ -40315,7 +40315,7 @@
 "<Eleanor>"
 	"Eleanor" PROPN NOM SG
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN ABBR NOM SG
 "<Garatti>"
 	"Garatti" PROPN NOM SG
 "<(>"
@@ -40461,9 +40461,9 @@
 "<(>"
 	"(" PUNCT
 "<ven.>"
-	"ven." NOUN YES TRA SG
+	"ven." NOUN ABBR TRA SG
 "<Первома́йск>"
-	"Первома́йск" X YES
+	"Первома́йск" X FOREIGN
 "<)>"
 	")" PUNCT
 "<on>"
@@ -40624,7 +40624,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mm.>"
-	"mm." ADV YES
+	"mm." ADV ABBR
 "<kone->"
 	"kone" NOUN NOM SG
 "<ja>"
@@ -41107,7 +41107,7 @@
 "<The>"
 	"The" PROPN NOM SG
 "<Sims-sarjan>"
-	"Sims#sarja" PROPN GEN SG YES
+	"Sims#sarja" PROPN GEN SG TYPO
 "<osista>"
 	"osa" NOUN ELA PL
 "<tuttua>"
@@ -41162,7 +41162,7 @@
 "<huolehtia>"
 	"huolehtia" VERB INFA SG ACT
 "<itsestään>"
-	"itse" PRON ELA SG 3 YES
+	"itse" PRON ELA SG 3 REFLEX
 "<paremmin>"
 	"paremmin" ADV
 "<,>"
@@ -41299,7 +41299,7 @@
 "<(>"
 	"(" PUNCT
 "<esim.>"
-	"esim." ADV YES
+	"esim." ADV ABBR
 "<kaunis>"
 	"kaunis" ADJ NOM POS SG
 "<sisustus>"
@@ -41433,7 +41433,7 @@
 "<vedenpelkoinen>"
 	"vesi#pelkoinen" ADJ NOM POS <Inen> SG
 "<jne>"
-	"jne" ADV YES
+	"jne" ADV ABBR
 "<...>"
 	"..." PUNCT
 "<)>"
@@ -41551,7 +41551,7 @@
 "<korujen>"
 	"koru" NOUN GEN PL
 "<jne.>"
-	"jne." ADV YES
+	"jne." ADV ABBR
 "<valitseminen>"
 	"valitseminen" NOUN NOM <Minen> SG
 "<eri>"
@@ -43170,7 +43170,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mm.>"
-	"mm." ADV YES
+	"mm." ADV ABBR
 "<työskentele>"
 	"työskennellä" VERB IMPV SG2 ACT
 "<ankarasti>"
@@ -43411,7 +43411,7 @@
 "<ja>"
 	"ja" CCONJ
 "<esim.>"
-	"esim." ADV YES
+	"esim." ADV ABBR
 "<kitaransoittotaidon>"
 	"kitara#soitto#taito" NOUN GEN SG
 "<kehittyessä>"
@@ -43741,11 +43741,11 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<siiirtyivät>"
-	"siirtyä" VERB INDV PL3 PAST YES ACT
+	"siirtyä" VERB INDV PL3 PAST TYPO ACT
 "<Yhdysvaltojen>"
 	"Yhdysvallat" PROPN GEN PL
 "<halllintaan>"
-	"hallinta" NOUN ILL SG YES
+	"hallinta" NOUN ILL SG TYPO
 "<1867>"
 	"1867" NUM CARD
 "<Alaskan>"
@@ -43770,7 +43770,7 @@
 "<(>"
 	"(" PUNCT
 "<s.>"
-	"syntyä" VERB YES NOM POS SG PCPNUT ACT
+	"syntyä" VERB ABBR NOM POS SG PCPNUT ACT
 "<27.>"
 	"27." ADJ ORD
 "<tammikuuta>"
@@ -43842,7 +43842,7 @@
 "<vanhempien>"
 	"vanhempi" NOUN GEN PL
 "<olleessa>"
-	"olla" AUX INE INFE SG YES ACT
+	"olla" AUX INE INFE SG TYPO ACT
 "<Yhdysvalloissa>"
 	"Yhdysvallat" PROPN INE PL
 "<synnytys>"
@@ -44064,7 +44064,7 @@
 "<Jussi>"
 	"Jussi" NOUN NOM SG
 "<K.>"
-	"K." PROPN YES NOM SG
+	"K." PROPN ABBR NOM SG
 "<Niemelä>"
 	"Niemelä" PROPN NOM SG
 "<sanoi>"
@@ -44454,7 +44454,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sanut>"
-	"saada" VERB NOM POS SG PCPNUT YES ACT
+	"saada" VERB NOM POS SG PCPNUT TYPO ACT
 "<Nobelin>"
 	"Nobel" PROPN GEN SG
 "<rauhanpalkinnon>"
@@ -44755,7 +44755,7 @@
 "<useita>"
 	"usea" ADJ PAR POS PL
 "<YK:n>"
-	"YK" PROPN YES GEN SG
+	"YK" PROPN ABBR GEN SG
 "<rakennuksia>"
 	"rakennus" NOUN PAR PL
 "<.>"
@@ -44764,7 +44764,7 @@
 # text = YK:n alaisen pakolaisjärjestön johtaja António Guterres pitää iskua suunnattuna YK:ta kohtaan.
 # sent_id =  wn036.12
 "<YK:n>"
-	"YK" PROPN YES GEN SG
+	"YK" PROPN ABBR GEN SG
 "<alaisen>"
 	"alainen" ADJ GEN POS <Inen> SG
 "<pakolaisjärjestön>"
@@ -44782,7 +44782,7 @@
 "<suunnattuna>"
 	"suunnata" VERB ESS POS SG PCPNUT PSS
 "<YK:ta>"
-	"YK" PROPN YES PAR SG
+	"YK" PROPN ABBR PAR SG
 "<kohtaan>"
 	"kohtaan" ADP POST
 "<.>"
@@ -44953,7 +44953,7 @@
 # text = WWF:n mukaan öljypalmuplantaasit ovat pääsyy sademetsien häviämiseen.
 # sent_id =  wn042.5
 "<WWF:n>"
-	"WWF" PROPN YES GEN SG
+	"WWF" PROPN ABBR GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<öljypalmuplantaasit>"
@@ -45107,7 +45107,7 @@
 "<tuottaja>"
 	"tuottaja" NOUN NOM <Ja> SG
 "<USA:n>"
-	"USA" PROPN YES GEN SG
+	"USA" PROPN ABBR GEN SG
 "<ja>"
 	"ja" CCONJ
 "<Kiinan>"
@@ -45465,7 +45465,7 @@
 "<Käräjäoikeus>"
 	"käräjä#oikeus" NOUN NOM SG
 "<velvoiti>"
-	"velvoittaa" VERB INDV SG3 PAST YES ACT
+	"velvoittaa" VERB INDV SG3 PAST TYPO ACT
 "<Tossavaisen>"
 	"Tossavainen" PROPN GEN SG
 "<karja>"
@@ -45734,7 +45734,7 @@
 "<24>"
 	"24" NUM CARD
 "<osavaltioissa>"
-	"osa#valtio" NOUN INE SG YES
+	"osa#valtio" NOUN INE SG TYPO
 "<.>"
 	"." PUNCT
 
@@ -45769,7 +45769,7 @@
 "<New>"
 	"New" PROPN NOM SG
 "<Yersey>"
-	"Jersey" PROPN GEN SG YES
+	"Jersey" PROPN GEN SG TYPO
 "<,>"
 	"," PUNCT
 "<Missourin>"
@@ -45956,7 +45956,7 @@
 "<George>"
 	"George" PROPN NOM SG
 "<W.>"
-	"W." PROPN YES NOM SG
+	"W." PROPN ABBR NOM SG
 "<Bushia>"
 	"Bush" PROPN PAR SG
 "<päin>"
@@ -46210,7 +46210,7 @@
 "<tänään>"
 	"tänään" ADV
 "<BBC:lle>"
-	"BBC" PROPN YES ALL SG
+	"BBC" PROPN ABBR ALL SG
 "<sotilaiden>"
 	"sotilas" NOUN GEN PL
 "<pahoinpidelleen>"
@@ -46326,7 +46326,7 @@
 "<liigassa>"
 	"liiga" NOUN INE SG
 "<englantilaisella>"
-	"englantilainen" ADJ ALL POS <Lainen> SG YES
+	"englantilainen" ADJ ALL POS <Lainen> SG TYPO
 "<Arsenalille>"
 	"Arsenal" PROPN ALL SG
 "<6–7>"
@@ -46363,7 +46363,7 @@
 "<tarvinneet>"
 	"tarvita" VERB NOM POS PL PCPNUT ACT
 "<vähintää>"
-	"vähintään" ADV YES
+	"vähintään" ADV TYPO
 "<kahden>"
 	"kaksi" NUM GEN SG CARD
 "<maalin>"
@@ -46371,7 +46371,7 @@
 "<voiton>"
 	"voitto" NOUN GEN SG
 "<pudoktaakseen>"
-	"pudottaa" VERB TRA INFA SG 3 YES ACT
+	"pudottaa" VERB TRA INFA SG 3 TYPO ACT
 "<Arsenalin>"
 	"Arsenal" PROPN GEN SG
 "<.>"
@@ -46545,7 +46545,7 @@
 "<taas>"
 	"taas" ADV
 "<saannut>"
-	"saada" VERB NOM POS SG PCPNUT YES ACT
+	"saada" VERB NOM POS SG PCPNUT TYPO ACT
 "<palloa>"
 	"pallo" NOUN PAR SG
 "<maaliin>"
