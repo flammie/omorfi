@@ -17,9 +17,9 @@ function ufeat2vislish(udstring)
         else if ((kv[1] == "Person['psor']")) { rv = rv " POSS+" kv[2]; }
         else if ((kv[1] == "Number['psor']") && (kv[2] == "Sing")) { rv = rv " POSSPL"; }
         else if ((kv[1] == "Number['psor']") && (kv[2] == "Plur")) { rv = rv " POSSPL"; }
-        else if (kv[2] == "Pres") { rv = rv " PRESENT"; }
         else if ((kv[1] == "PartForm") && (kv[2] == "Past")) { rv = rv " PCPNUT"; }
         else if ((kv[1] == "PartForm") && (kv[2] == "Pres")) { rv = rv " PCPVA"; }
+        else if (kv[2] == "Pres") { rv = rv " PRESENT"; }
         else if (kv[2] == "Past") { rv = rv " PAST"; }
         else if ((kv[1] == "PronType") && (kv[2] == "Ind")) { rv = rv; }
         else if (kv[2] == "Ind") { rv = rv " INDV"; }
