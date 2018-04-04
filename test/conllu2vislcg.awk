@@ -13,10 +13,10 @@ function ufeat2vislish(udstring)
         else if ((kv[1] == "Number") && (kv[2] == "Plur")) { rv = rv " PL"; }
         else if ((kv[1] == "Person")) { rv = rv " PERS+" kv[2]; }
         else if ((kv[1] == "Person")) { rv = rv " PERS+" kv[2]; }
-        else if ((kv[1] == "Person['psor']")) { rv = rv " POSS+" kv[2]; }
-        else if ((kv[1] == "Person['psor']")) { rv = rv " POSS+" kv[2]; }
-        else if ((kv[1] == "Number['psor']") && (kv[2] == "Sing")) { rv = rv " POSSPL"; }
-        else if ((kv[1] == "Number['psor']") && (kv[2] == "Plur")) { rv = rv " POSSPL"; }
+        else if ((kv[1] == "Person[psor]")) { rv = rv " POSS+" kv[2]; }
+        else if ((kv[1] == "Person[psor]")) { rv = rv " POSS+" kv[2]; }
+        else if ((kv[1] == "Number[psor]") && (kv[2] == "Sing")) { rv = rv " POSSSG"; }
+        else if ((kv[1] == "Number[psor]") && (kv[2] == "Plur")) { rv = rv " POSSPL"; }
         else if ((kv[1] == "PartForm") && (kv[2] == "Past")) { rv = rv " PCPNUT"; }
         else if ((kv[1] == "PartForm") && (kv[2] == "Pres")) { rv = rv " PCPVA"; }
         else if (kv[2] == "Pres") { rv = rv " PRESENT"; }
@@ -40,6 +40,8 @@ function ufeat2vislish(udstring)
     }
     gsub(/PL PERS\+/, "PL", rv);
     gsub(/SG PERS\+/, "SG", rv);
+    gsub(/POSSPL POSS\+/, "POSSPL", rv);
+    gsub(/POSSSG POSS\+/, "POSSSG", rv);
     return rv;
 }
 /^$/ {print;}
