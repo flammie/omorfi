@@ -76,7 +76,8 @@ LIST RARER_PROPN =
     ("Olin" PROPN) ("Tieto" PROPN) ("Erä" PROPN) ("Jyrkänne" PROPN)
     ("Kello" PROPN) ("Kuppi" PROPN) ("Mutta" PROPN) ("Yhtiö" PROPN)
     ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN)
-    ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ("Tu" PROPN) ;
+    ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ("Tu" PROPN)
+    ("Vä" PROPN) ("Vähä" PROPN) ;
 LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2)
     ("tunti" POSSSG2) ("lupa" POSSSG2) ("rupi" POSSSG2) ("hai" POSSSG2)
     ("taju" POSSSG2) ("pyy" POSSSG2) ("kerä" POSSSG2) ("vasta" POSSSG2)
