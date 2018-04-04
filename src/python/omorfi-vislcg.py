@@ -11,62 +11,19 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi.omorfi import Omorfi
-
-
-def get_lemmas(anal):
-    re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    lemmas = re_lemma.finditer(anal['anal'])
-    rv = []
-    for lemma in lemmas:
-        rv += [lemma.group(1)]
-    return rv
-
-
-def get_last_feat(feat, anal):
-    re_feat = re.compile("\[" + feat + "=([^]]*)\]")
-    feats = re_feat.finditer(anal[0])
-    rv = ""
-    for feat in feats:
-        rv = feat.group(1)
-    return rv
-
-
-def get_last_feats(anal):
-    re_feats = re.compile("\[[^]]*\]")
-    rvs = list()
-    feats = re_feats.finditer(anal[0][0])
-    for feat in feats:
-        if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
-            rvs = list()
-        else:
-            rvs.append(feat.group(0))
-    return rvs
+from omorfi.token import get_lemmas, get_last_feat, get_last_feats, \
+        get_vislcg_feats
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
     print('"<', surf['surf'], '>"', sep='', file=outfile)
     re_mrd = re.compile("\[([^=]*)=([^]]*)]")
     for anal in anals:
-        mrds = []
         lemmas = get_lemmas(anal)
-        mrd_matches = re_mrd.finditer(anal['anal'])
-        for mm in mrd_matches:
-            if mm.group(1) == 'WORD_ID':
-                mrds = []
-            elif mm.group(1) == 'CASECHANGE' and mm.group(2) != 'NONE':
-                mrds = ['<' + mm.group(2) + '>'] + mrds
-            elif mm.group(1) == 'ALLO':
-                mrds = ['<' + mm.group(2) + '>'] + mrds
-            elif mm.group(1) == 'WEIGHT' and mm.group(2) != 'inf':
-                mrds += ['<W=' + str(int(float(mm.group(2)) * 100)) + '>']
-            elif mm.group(1) == 'WEIGHT' and mm.group(2) == 'inf':
-                mrds += ['<W=65536>']
-            elif mm.group(1) in ['STYLE']:
-                mrds += ['<' + mm.group(2) + '>']
-            else:
-                mrds += [mm.group(2)]
-        print('\t"', ''.join(lemmas).replace('"', '\\"'), '" ',
-              ' '.join(mrds), sep='', file=outfile)
+        mrds = get_vislcg_feats(anal)
+        print('\t"', '#'.join(lemmas).replace('"', '\\"'), '" ',
+              ' '.join(mrds), ' <CMP=' + str(len(lemmas)) + '>',
+              sep='', file=outfile)
     print(file=outfile)
 
 
