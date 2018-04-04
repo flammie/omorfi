@@ -488,7 +488,7 @@ class Omorfi:
                 rvtoken["weight"] = r[1]
                 rv.append(rvtoken)
         else:
-            # try all according to options
+            # use real surface case
             res = self.analyser.lookup(token["surf"])
             for r in res:
                 rvtoken = token.copy()
@@ -496,6 +496,8 @@ class Omorfi:
                 rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
                 rvtoken["weight"] = r[1]
                 rv.append(rvtoken)
+        if not "analsurf_override" in token and not "analsurf" in token:
+            # also guess other cases
             s = token['surf']
             if len(s) > 2 and s[0].islower() and self.try_titlecase:
                 tcs = s[0].upper() + s[1:].lower()
