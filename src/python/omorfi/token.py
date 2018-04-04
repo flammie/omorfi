@@ -213,16 +213,18 @@ def get_ud_feats(token, hacks=None):
                          'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
                 # values found in UD finnish Derivs
                 rvs['Derivation'] = value[0] + value[1:].lower()
-            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS',
-                           'ADE', 'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN',
-                           'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA',
-                           'MA', 'LOC', 'LA']:
+            elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE', 'INE',
+                           'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²', 'HKO',
+                           'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA', 'MA',
+                           'LOC', 'LA']:
                 # valuse not found in UD finnish Derivs
                 continue
             else:
                 print("Unknown non-inflectional affix", key, '=', value)
-                print("in", analtoken)
+                print("in", token)
                 exit(1)
+        elif key == 'BLACKLIST':
+            continue
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                      'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
             # Not feats in UD:

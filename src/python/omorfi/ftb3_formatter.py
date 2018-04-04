@@ -447,7 +447,7 @@ class Ftb3Formatter(Formatter):
         parts = [x for x in parts
                  if not x.startswith('X') and not x.startswith('T') and
                  not x.startswith('C') and not x.startswith('I') and
-                 not x.startswith('V')]
+                 not x.startswith('V') and not x.startswith('@@')]
         for part in parts:
             reordered.append(part)
         for anal in reordered:
@@ -465,9 +465,6 @@ class Ftb3Formatter(Formatter):
             # XXX: there was += before
             ftbstring = surf.replace(
                 morph_boundary, '').replace(deriv_boundary, '')
-        elif 'NUM_' in cont and ('BACK' in cont or 'FRONT' in cont and not ('CLIT' in cont or 'POSS' in cont)):
-            ftbstring += surf.replace(morph_boundary,
-                                      '').replace(deriv_boundary, '')
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (ftbstring, surf, cont)
 

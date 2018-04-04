@@ -65,6 +65,7 @@ class OmorFormatter(Formatter):
         '[CONJ=COMPARATIVE]',
         '[CONJ=COORD]',
         '[DRV=IN]',
+        '[DRV=IN²]',
         '[DRV=ISA]',
         '[DRV=INEN]',
         '[DRV=NEN]',
@@ -381,8 +382,8 @@ class OmorFormatter(Formatter):
         "Ccmp": "[CMP=CMP]",
         "Csup": "[CMP=SUP]",
         "Dhko": "[DRV=HKO]",
-        "Dinen": "[DRV=NEN]",
-        "Dnen": "[DRV=INEN]",
+        "Dinen": "[DRV=INEN]",
+        "Dnen": "[DRV=NEN]",
         "Dla": "[DRV=LA]",
         "Dlainen": "[DRV=LAINEN]",
         "Dllinen": "[DRV=LLINEN]",
@@ -410,6 +411,7 @@ class OmorFormatter(Formatter):
         "Dtar": "[DRV=TAR]",
         "Dton": "[DRV=TON]",
         "Din": "[DRV=IN]",
+        "Din²": "[DRV=IN²]",
         "Ia": "[INF=A]",
         "Ie": "[INF=E]",
         "Ima": "[INF=MA]",
@@ -585,6 +587,7 @@ class OmorFormatter(Formatter):
         "CCONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
         "FTB3MAN": "",
         "XForeign": "[FOREIGN=FOREIGN]",
+        "BLACKLISTED": "[BLACKLIST=",
         "": ""}
 
     def __init__(self, verbose=False, **kwargs):
@@ -635,8 +638,7 @@ class OmorFormatter(Formatter):
         if stuff in self.stuff2omor:
             return self.stuff2omor[stuff]
         else:
-            if self.verbose:
-                fail_formatting_missing_for(stuff, "omor")
+            fail_formatting_missing_for(stuff, "omor")
             return "ERRORMACRO"
 
     def analyses2lexc(self, anals, surf):
