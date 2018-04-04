@@ -16,7 +16,7 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ
+STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ NUM
     DET
     NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT
     SG PL
@@ -76,7 +76,8 @@ LIST RARER_PROPN =
     ("Olin" PROPN) ("Tieto" PROPN) ("Erä" PROPN) ("Jyrkänne" PROPN)
     ("Kello" PROPN) ("Kuppi" PROPN) ("Mutta" PROPN) ("Yhtiö" PROPN)
     ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN)
-    ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ;
+    ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ("Tu" PROPN)
+    ("Vä" PROPN) ("Vähä" PROPN) ;
 LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2)
     ("tunti" POSSSG2) ("lupa" POSSSG2) ("rupi" POSSSG2) ("hai" POSSSG2)
     ("taju" POSSSG2) ("pyy" POSSSG2) ("kerä" POSSSG2) ("vasta" POSSSG2)
@@ -110,7 +111,7 @@ SECTION # all stuff
 # UD preferences
 
 # FIXME: use $$ to match lemma
-REMOVE:ordinal-is-adjective ORD (0 ADJ) ;
+REMOVE:UD-ordinal-is-adjective NUM (0 ORD) ;
 
 # trad. possessives
 # sinun {kuusi, voisi, tiesi}

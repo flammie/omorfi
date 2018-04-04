@@ -33,7 +33,7 @@
 "<sille>"
 	"se" PRON ALL SG DEM
 "<sisarentyttärelleni>"
-	"sisaren#tytär" NOUN ALL SG SING 1
+	"sisaren#tytär" NOUN ALL SG POSSSG1
 "<,>"
 	"," PUNCT
 "<joka>"
@@ -53,7 +53,7 @@
 "<kaupunginteatterin>"
 	"kaupungin#teatteri" NOUN GEN SG
 "<Laulavat>"
-	"laulaa" VERB NOM POS PL PRESENT ACT
+	"laulaa" VERB NOM POS PL PCPVA ACT
 "<sadepisarat>"
 	"sade#pisara" NOUN NOM PL
 "<-musikaaliin>"
@@ -162,7 +162,7 @@
 # text = Mielestäni juhlien hauskin osuus on aina uusien ystävien löytäminen.
 # sent_id =  b113.5
 "<Mielestäni>"
-	"mieli" NOUN ELA SG SING 1
+	"mieli" NOUN ELA SG POSSSG1
 "<juhlien>"
 	"juhla" NOUN GEN PL
 "<hauskin>"
@@ -271,7 +271,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mukanani>"
-	"mukana" ADV SING 1
+	"mukana" ADV POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -282,7 +282,7 @@
 "<vanhaa>"
 	"vanha" ADJ PAR POS SG
 "<tuttavaani>"
-	"tuttava" NOUN ILL SG SING 1
+	"tuttava" NOUN ILL SG POSSSG1
 "<tuli>"
 	"tulla" VERB INDV SG3 PAST ACT
 "<rupattelemaan>"
@@ -300,9 +300,9 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mukanani>"
-	"mukana" ADV SING 1
+	"mukana" ADV POSSSG1
 "<oleva>"
-	"olla" VERB NOM POS SG PRESENT ACT
+	"olla" VERB NOM POS SG PCPVA ACT
 "<uusi>"
 	"uusi" ADJ NOM POS SG
 "<komea>"
@@ -331,13 +331,13 @@
 "<naaman>"
 	"naama" NOUN GEN SG
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<mieheni>"
-	"mies" NOUN NOM SG SING 1
+	"mies" NOUN NOM SG POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<puolisoni>"
-	"puoliso" NOUN NOM SG SING 1
+	"puoliso" NOUN NOM SG POSSSG1
 "<jo>"
 	"jo" ADV
 "<yhdeksättä>"
@@ -369,11 +369,11 @@
 "<Osoitin>"
 	"osoittaa" VERB INDV SG1 PAST ACT
 "<tyttönimeni>"
-	"tyttö#nimi" NOUN NOM SG SING 1
+	"tyttö#nimi" NOUN NOM SG POSSSG1
 "<todellakin>"
 	"todella" ADV CLITKIN
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<Marple>"
 	"Marple" PROPN NOM SG
 "<,>"
@@ -383,7 +383,7 @@
 "<yhdistelin>"
 	"yhdistellä" VERB INDV SG1 PAST ACT
 "<päässäni>"
-	"pää" NOUN INE SG SING 1
+	"pää" NOUN INE SG POSSSG1
 "<ihmisten>"
 	"ihminen" NOUN GEN PL
 "<nimiä>"
@@ -505,7 +505,7 @@
 "<hänestä>"
 	"hän" PRON ELA SG3 PRS
 "<mielessäni>"
-	"mieli" NOUN INE SG SING 1
+	"mieli" NOUN INE SG POSSSG1
 "<luonut>"
 	"luoda" VERB NOM POS SG PCPNUT ACT
 "<.>"
@@ -583,7 +583,7 @@
 "<loistaa>"
 	"loistaa" VERB INDV SG3 PRESENT ACT
 "<ympärilleen>"
-	"ympärille" ADV 3
+	"ympärille" ADV POSS+3
 "<jouluvaloa>"
 	"joulu#valo" NOUN PAR SG
 "<.>"
@@ -631,7 +631,7 @@
 "<tulee>"
 	"tulla" VERB INDV SG3 PRESENT ACT
 "<luokses>"
-	"luokse" ADP POST SING 2 <Coll>
+	"luokse" ADP POST POSSSG2 <Coll>
 "<aina>"
 	"aina" ADV
 "<takaisin>"
@@ -795,7 +795,7 @@
 "<lukevat>"
 	"lukea" VERB INDV PL3 PRESENT ACT
 "<kumppanilleen>"
-	"kumppani" NOUN ALL SG 3
+	"kumppani" NOUN ALL SG POSS+3
 "<niitä>"
 	"se" PRON PAR PL DEM
 "<kohtia>"
@@ -811,7 +811,7 @@
 "<heidän>"
 	"hän" PRON GEN PL3 PRS
 "<toivettaan>"
-	"toive" NOUN PAR SG 3
+	"toive" NOUN PAR SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -1005,7 +1005,7 @@
 "<pidä>"
 	"pitää" VERB CONNEG INDV PRESENT
 "<paikkaansa>"
-	"paikka" NOUN PAR SG 3
+	"paikka" NOUN PAR SG POSS+3
 "<,>"
 	"," PUNCT
 "<seksistä>"
@@ -1101,7 +1101,7 @@
 "<oma>"
 	"oma" ADJ NOM POS SG
 "<käsityksensä>"
-	"käsitys" NOUN NOM SG 3
+	"käsitys" NOUN NOM SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -1130,7 +1130,7 @@
 "<tunnetasolla>"
 	"tunne#taso" NOUN ADE SG
 "<olevaa>"
-	"olla" VERB PAR POS SG PRESENT ACT
+	"olla" VERB PAR POS SG PCPVA ACT
 "<yhteyttä>"
 	"yhteys" NOUN PAR <Vs> SG
 "<ja>"
@@ -1192,7 +1192,7 @@
 "<jopa>"
 	"jopa" ADV
 "<roihuavaa>"
-	"roihuta" VERB PAR POS SG PRESENT ACT
+	"roihuta" VERB PAR POS SG PCPVA ACT
 "<tulta>"
 	"tuli" NOUN PAR SG
 "<on>"
@@ -1321,7 +1321,7 @@
 "<alussa>"
 	"alku" NOUN INE <U> SG
 "<oleville>"
-	"olla" VERB ALL POS PL PRESENT ACT
+	"olla" VERB ALL POS PL PCPVA ACT
 "<annetaan>"
 	"antaa" VERB INDV PRESENT PSS
 "<opasteeksi>"
@@ -1338,7 +1338,7 @@
 "<kertomaan>"
 	"kertoa" VERB ILL INFMA SG ACT
 "<toiveensa>"
-	"toive" NOUN GEN SG 3
+	"toive" NOUN GEN SG POSS+3
 "<heti>"
 	"heti" ADV
 "<ja>"
@@ -1359,7 +1359,7 @@
 "<keskustelemaan>"
 	"keskustella" VERB ILL INFMA SG ACT
 "<toiveistaan>"
-	"toive" NOUN ELA PL 3
+	"toive" NOUN ELA PL POSS+3
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -1451,7 +1451,7 @@
 "<siis>"
 	"siis" ADV
 "<lähtökohdiltaan>"
-	"lähtö#kohta" NOUN ABL PL 3
+	"lähtö#kohta" NOUN ABL PL POSS+3
 "<huomattavasti>"
 	"huomattavasti" ADV <Sti>
 "<vaikeampi>"
@@ -1480,7 +1480,7 @@
 "<tuntevat>"
 	"tuntea" VERB INDV PL3 PRESENT ACT
 "<toisensa>"
-	"toinen" PRON NOM SG 3
+	"toinen" PRON NOM SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<ovat>"
@@ -1554,7 +1554,7 @@
 "<Tuomalla>"
 	"tuoda" VERB ADE INFMA SG ACT
 "<toiveensa>"
-	"toive" NOUN NOM PL 3
+	"toive" NOUN NOM PL POSS+3
 "<esille>"
 	"esille" ADV
 "<pelätään>"
@@ -1603,7 +1603,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<loukkaantuvan>"
-	"loukkaantua" VERB GEN POS SG PRESENT ACT
+	"loukkaantua" VERB GEN POS SG PCPVA ACT
 "<.>"
 	"." PUNCT
 
@@ -1634,7 +1634,7 @@
 "<asettuu>"
 	"asettua" VERB INDV SG3 PRESENT ACT
 "<kohdalleen>"
-	"kohta" NOUN ALL SG 3
+	"kohta" NOUN ALL SG POSS+3
 "<,>"
 	"," PUNCT
 "<kun>"
@@ -1946,7 +1946,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<vaimonsa>"
-	"vaimo" NOUN NOM SG 3
+	"vaimo" NOUN NOM SG POSS+3
 "<sairastaa>"
 	"sairastaa" VERB INDV SG3 PRESENT ACT
 "<vakavaa>"
@@ -2055,7 +2055,7 @@
 "<Voisiko>"
 	"voida" VERB CLITKO COND SG3 ACT
 "<vaimosi>"
-	"vaimo" NOUN NOM SG SING 2
+	"vaimo" NOUN NOM SG POSSSG2
 "<paremmin>"
 	"paremmin" ADV
 "<jos>"
@@ -2100,7 +2100,7 @@
 "<jos>"
 	"jos" SCONJ
 "<seksielämäsi>"
-	"seksi#elämä" NOUN NOM SG SING 2
+	"seksi#elämä" NOUN NOM SG POSSSG2
 "<jatkuisi>"
 	"jatkua" VERB COND SG3 ACT
 "<?>"
@@ -2140,7 +2140,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<valinneet>"
-	"valita" VERB GEN POS SG PCPNUT YES ACT
+	"valita" VERB GEN POS SG PCPNUT TYPO ACT
 "<seksin>"
 	"seksi" NOUN GEN SG
 "<toisen>"
@@ -2160,7 +2160,7 @@
 "<tätä>"
 	"tämä" PRON PAR SG DEM
 "<vaimolleen>"
-	"vaimo" NOUN ALL SG 3
+	"vaimo" NOUN ALL SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<lisännyt>"
@@ -2170,7 +2170,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<taakkaansa>"
-	"taakka" NOUN PAR SG 3
+	"taakka" NOUN PAR SG POSS+3
 "<jo>"
 	"jo" ADV
 "<muutenkin>"
@@ -2259,9 +2259,9 @@
 "<avioehdon>"
 	"avio#ehto" NOUN GEN SG
 "<suojataksemme>"
-	"suojata" VERB TRA INFA SG PLUR 1 ACT
+	"suojata" VERB TRA INFA SG POSSPL1 ACT
 "<varallisuuttamme>"
-	"varallisuus" NOUN PAR <Llinen,Vs> SG PLUR 1
+	"varallisuus" NOUN PAR <Llinen,Vs> SG POSSPL1
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -2310,11 +2310,11 @@
 # text = Selatessani tätä ostamaani opasta löysin siitä kaikki vinkit, jotka löytyvät muistakin oppaista, ja joilla parannetaan seksiä ja orgasmin saantia.
 # sent_id =  b401.44
 "<Selatessani>"
-	"selata" VERB INE INFE SG SING 1 ACT
+	"selata" VERB INE INFE SG POSSSG1 ACT
 "<tätä>"
 	"tämä" PRON PAR SG DEM
 "<ostamaani>"
-	"ostaa" VERB PAR POS SG SING AGT 1 ACT
+	"ostaa" VERB PAR POS SG POSSSG AGT POSS+1 ACT
 "<opasta>"
 	"opas" NOUN PAR SG
 "<löysin>"
@@ -2519,7 +2519,7 @@
 "<soitat>"
 	"soittaa" VERB INDV SG2 PRESENT ACT
 "<äidillesi>"
-	"äiti" NOUN ALL SG SING 2
+	"äiti" NOUN ALL SG POSSSG2
 "<tai>"
 	"tai" CCONJ
 "<anopille>"
@@ -2541,19 +2541,19 @@
 "<ruokaa>"
 	"ruoka" NOUN PAR SG
 "<lapsillesi>"
-	"lapsi" NOUN ALL PL SING 2
+	"lapsi" NOUN ALL PL POSSSG2
 "<ja>"
 	"ja" CCONJ
 "<hoidat>"
 	"hoitaa" VERB INDV SG2 PRESENT ACT
 "<kotiasi>"
-	"koti" NOUN PAR SG SING 2
+	"koti" NOUN PAR SG POSSSG2
 "<,>"
 	"," PUNCT
 "<vaikka>"
 	"vaikka" SCONJ
 "<päätäsi>"
-	"pää" NOUN PAR SG SING 2
+	"pää" NOUN PAR SG POSSSG2
 "<särkee>"
 	"särkeä" VERB INDV SG0 PRESENT ACT
 "<.>"
@@ -2621,7 +2621,7 @@
 "<helpotusta>"
 	"helpotus" NOUN PAR SG
 "<oloosi>"
-	"olo" NOUN ILL SG SING 2
+	"olo" NOUN ILL SG POSSSG2
 "<?>"
 	"?" PUNCT
 
@@ -2717,9 +2717,9 @@
 "<Näytä>"
 	"näyttää" VERB IMPV SG2 ACT
 "<rakkautesi>"
-	"rakkaus" NOUN NOM <Vs> SG SING 2
+	"rakkaus" NOUN NOM <Vs> SG POSSSG2
 "<kumppaniisi>"
-	"kumppani" NOUN ILL SG SING 2
+	"kumppani" NOUN ILL SG POSSSG2
 "<seksin>"
 	"seksi" NOUN GEN SG
 "<avulla>"
@@ -2771,7 +2771,7 @@
 "<Ponnistelkaa>"
 	"ponnistella" VERB IMPV PL2 ACT
 "<toistenne>"
-	"toinen" PRON GEN PL PLUR 2
+	"toinen" PRON GEN PL POSSPL2
 "<vuoksi>"
 	"vuoksi" ADP POST
 "<!>"
@@ -2858,7 +2858,7 @@
 "<ja>"
 	"ja" CCONJ
 "<laittamalle>"
-	"laittaa" VERB ADE INFMA SG YES ACT
+	"laittaa" VERB ADE INFMA SG TYPO ACT
 "<hänelle>"
 	"hän" PRON ALL SG3 PRS
 "<miehen>"
@@ -2925,7 +2925,7 @@
 # text = Rakkauttaan voi todella näyttää myös seksillä ja hyväilyillä.
 # sent_id =  b401.65
 "<Rakkauttaan>"
-	"rakkaus" NOUN PAR <Vs> SG 3
+	"rakkaus" NOUN PAR <Vs> SG POSS+3
 "<voi>"
 	"voida" AUX INDV SG0 PRESENT ACT
 "<todella>"
@@ -3016,7 +3016,7 @@
 "<kiinnostus>"
 	"kiinnostus" NOUN NOM SG
 "<toisiamme>"
-	"toinen" PRON PAR PL PLUR 1
+	"toinen" PRON PAR PL POSSPL1
 "<kohtaan>"
 	"kohtaan" ADP POST
 "<loppuu>"
@@ -3074,15 +3074,15 @@
 "<hoitakaa>"
 	"hoitaa" VERB IMPV PL2 ACT
 "<hiuksianne>"
-	"hius" NOUN PAR PL PLUR 2
+	"hius" NOUN PAR PL POSSPL2
 "<,>"
 	"," PUNCT
 "<kasvojanne>"
-	"kasvot" NOUN PAR PL PLUR 2
+	"kasvot" NOUN PAR PL POSSPL2
 "<,>"
 	"," PUNCT
 "<ihoanne>"
-	"iho" NOUN PAR SG PLUR 2
+	"iho" NOUN PAR SG POSSPL2
 "<.>"
 	"." PUNCT
 
@@ -3149,7 +3149,7 @@
 "<Kuunnelkaa>"
 	"kuunnella" VERB IMPV PL2 ACT
 "<lempimusiikkianne>"
-	"lempi#musiikki" NOUN PAR SG PLUR 2
+	"lempi#musiikki" NOUN PAR SG POSSPL2
 "<,>"
 	"," PUNCT
 "<tanssikaa>"
@@ -3190,7 +3190,7 @@
 "<usein>"
 	"usein" ADV
 "<naisystävienne>"
-	"nais#ystävä" NOUN GEN PL PLUR 2
+	"nais#ystävä" NOUN GEN PL POSSPL2
 "<seurassa>"
 	"seura" NOUN INE SG
 "<,>"
@@ -3216,7 +3216,7 @@
 "<ajatukset>"
 	"ajatus" NOUN NOM PL
 "<kanssanne>"
-	"kanssa" ADV PLUR 2
+	"kanssa" ADV POSSPL2
 "<.>"
 	"." PUNCT
 
@@ -3256,7 +3256,7 @@
 "<omat>"
 	"oma" ADJ NOM POS PL
 "<vinkkinsä>"
-	"vinkki" NOUN GEN SG 3
+	"vinkki" NOUN GEN SG POSS+3
 "<kommenteissa>"
 	"kommentti" NOUN INE PL
 "<.>"
@@ -3267,7 +3267,7 @@
 "<Paluu>"
 	"paluu" NOUN NOM SG
 "<nr.>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<1>"
 	"1" NUM CARD
 
@@ -3346,7 +3346,7 @@
 "<3,5>"
 	"3,5" NUM CARD
 "<kk>"
-	"kuu#kausi" NOUN YES PAR SG
+	"kuu#kausi" NOUN <ABBR> PAR SG
 "<ja>"
 	"ja" CCONJ
 "<edessä>"
@@ -3442,7 +3442,7 @@
 "<Omalta>"
 	"oma" ADJ ABL POS SG
 "<osaltani>"
-	"osa" NOUN ABL SG SING 1
+	"osa" NOUN ABL SG POSSSG1
 "<Suomeen>"
 	"Suomi" PROPN ILL SG
 "<ravaamiset>"
@@ -4025,7 +4025,7 @@
 "<Kastikkeen>"
 	"kastike" NOUN GEN SG
 "<säimme>"
-	"syödä" VERB INDV PL1 PAST YES ACT
+	"syödä" VERB INDV PL1 PAST TYPO ACT
 "<tuoretagliatellen>"
 	"tuore#tagliatelle" NOUN GEN SG
 "<kera>"
@@ -4121,7 +4121,7 @@
 "<sekaan>"
 	"sekaan" ADV
 "<kuutioimani>"
-	"kuutioida" VERB NOM POS SG SING AGT 1 ACT
+	"kuutioida" VERB NOM POS SG POSSSG AGT POSS+1 ACT
 "<omena>"
 	"omena" NOUN NOM SG
 "<.>"
@@ -4149,7 +4149,7 @@
 "<Ilmari>"
 	"Ilmari" PROPN NOM SG
 "<kavereineen>"
-	"kaveri" NOUN COM 3
+	"kaveri" NOUN COM POSS+3
 
 # text = Hieman pitkäksi venähtäneellä vappuajelulla poikkesimme kotimatkalla pikaisesti Kempeleen Rossossa syömässä... ihan vaan pitsaa.
 # sent_id =  b709.2
@@ -4199,7 +4199,7 @@
 "<joten>"
 	"joten" ADV
 "<valintani>"
-	"valinta" NOUN NOM SG SING 1
+	"valinta" NOUN NOM SG POSSSG1
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<Ilmari>"
@@ -4331,7 +4331,7 @@
 "<11.90>"
 	"11.90" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN <ABBR> PAR SG
 "<,>"
 	"," PUNCT
 "<vaan>"
@@ -4357,7 +4357,7 @@
 "<12.10>"
 	"12.10" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN <ABBR> PAR SG
 "<.>"
 	"." PUNCT
 
@@ -4374,7 +4374,7 @@
 "<(>"
 	"(" PUNCT
 "<huom>"
-	"huomata" VERB YES IMPV SG2 ACT
+	"huomata" VERB <ABBR> IMPV SG2 ACT
 "<!>"
 	"!" PUNCT
 "<nimi>"
@@ -4432,7 +4432,7 @@
 "<vaan>"
 	"vaan" CCONJ
 "<mielestäni>"
-	"mieli" NOUN ELA SG SING 1
+	"mieli" NOUN ELA SG POSSSG1
 "<Ilmari>"
 	"Ilmari" PROPN NOM SG
 "<ei>"
@@ -4440,7 +4440,7 @@
 "<ollut>"
 	"olla" AUX NOM POS SG PCPNUT ACT
 "<hintaansa>"
-	"hinta" NOUN NOM SG 3 YES
+	"hinta" NOUN NOM SG POSS+3 TYPO
 "<väärtti>"
 	"väärtti" ADJ NOM POS SG
 
@@ -4478,7 +4478,7 @@
 "<9.80>"
 	"9.80" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN <ABBR> PAR SG
 "<ja>"
 	"ja" CCONJ
 "<nyt>"
@@ -4494,7 +4494,7 @@
 "<10.20>"
 	"10.20" NUM CARD
 "<e>"
-	"e" NOUN YES PAR SG
+	"e" NOUN <ABBR> PAR SG
 "<...>"
 	"..." PUNCT
 "<.>"
@@ -4509,7 +4509,7 @@
 "<ihan>"
 	"ihan" ADV
 "<ok>"
-	"ok" NOUN YES NOM SG
+	"ok" NOUN <ABBR> NOM SG
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -4522,7 +4522,7 @@
 # text = Vaikkeivat pitsat nyt ihan top kymppiin meidän mielestämme päässeekäänt, on kuitenkin ihan kiva käydä erilaisissa paikoissa katsastamassa niiden antia
 # sent_id =  b709.14
 "<Vaikkeivat>"
-	"vaikka#ei" VERB PL3 NEG YES ACT
+	"vaikka#ei" VERB PL3 NEG TYPO ACT
 "<pitsat>"
 	"pitsa" NOUN NOM PL
 "<nyt>"
@@ -4536,9 +4536,9 @@
 "<meidän>"
 	"minä" PRON GEN PL1 PRS
 "<mielestämme>"
-	"mieli" NOUN ELA SG PLUR 1
+	"mieli" NOUN ELA SG POSSPL1
 "<päässeekäänt>"
-	"päästä" VERB NOM CLITKAAN POS PL PCPNUT YES ACT
+	"päästä" VERB NOM CLITKAAN POS PL PCPNUT TYPO ACT
 "<,>"
 	"," PUNCT
 "<on>"
@@ -4587,7 +4587,7 @@
 "<...>"
 	"..." PUNCT
 "<vaikkeivat>"
-	"vaikka#ei" VERB PL3 NEG YES ACT
+	"vaikka#ei" VERB PL3 NEG TYPO ACT
 "<olekaan>"
 	"olla" AUX CLITKAAN CONNEG INDV PRESENT
 "<ruispohjaan>"
@@ -4624,7 +4624,7 @@
 "<minun>"
 	"minä" PRON GEN SG1 PRS
 "<elämässäni>"
-	"elämä" NOUN INE SG SING 1
+	"elämä" NOUN INE SG POSSSG1
 "<)>"
 	")" PUNCT
 "<...>"
@@ -4665,9 +4665,9 @@
 "<kuitenkin>"
 	"kuitenkin" ADV
 "<enmmän>"
-	"enemmän" ADV YES
+	"enemmän" ADV TYPO
 "<eihan>"
-	"ihan" ADV YES
+	"ihan" ADV TYPO
 "<kebab>"
 	"kebab" NOUN NOM SG
 "<salaattina>"
@@ -4696,7 +4696,7 @@
 "<kerran>"
 	"kerran" ADV
 "<kokeiltava>"
-	"kokeilla" VERB NOM POS SG PRESENT PSS
+	"kokeilla" VERB NOM POS SG PCPVA PSS
 "<...>"
 	"..." PUNCT
 "<.>"
@@ -4772,7 +4772,7 @@
 "<En>"
 	"ei" AUX SG1 NEG ACT
 "<mullään>"
-	"mikään" PRON ADE SG YES
+	"mikään" PRON ADE SG TYPO
 "<muista>"
 	"muistaa" VERB CONNEG INDV PRESENT
 "<kenen>"
@@ -4844,7 +4844,7 @@
 "<nimityksen>"
 	"nimitys" NOUN GEN SG
 "<omakseen>"
-	"oma" ADJ TRA POS SG 3
+	"oma" ADJ TRA POS SG POSS+3
 "<,>"
 	"," PUNCT
 "<niin>"
@@ -4877,7 +4877,7 @@
 "<+>"
 	"+" SYM
 "<vatkattavaa>"
-	"vatkata" VERB PAR POS SG PRESENT PSS
+	"vatkata" VERB PAR POS SG PCPVA PSS
 "<vaniljakastiketta>"
 	"vanilja#kastike" NOUN PAR SG
 "<+>"
@@ -4944,7 +4944,7 @@
 "<(>"
 	"(" PUNCT
 "<DE>"
-	"DE" NOUN YES NOM SG
+	"DE" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<Arvoisa>"
@@ -5015,7 +5015,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sovellettava>"
-	"soveltaa" VERB NOM POS SG PRESENT PSS
+	"soveltaa" VERB NOM POS SG PCPVA PSS
 "<korkeimpia>"
 	"korkea" ADJ PAR SUP PL
 "<vaatimuksia>"
@@ -5109,13 +5109,13 @@
 "<hyväksytty>"
 	"hyväksyä" VERB NOM POS SG PCPNUT PSS
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<mukaisesti>"
 	"mukaisesti" ADV <Sti>
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<markkinoille>"
 	"markkina" NOUN ALL PL
 "<.>"
@@ -5214,7 +5214,7 @@
 "<Käsillä>"
 	"käsillä" ADV
 "<oleva>"
-	"olla" VERB NOM POS SG PRESENT ACT
+	"olla" VERB NOM POS SG PCPVA ACT
 "<ongelma>"
 	"ongelma" NOUN NOM SG
 "<ei>"
@@ -5226,7 +5226,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevaa>"
-	"olla" VERB PAR POS SG PRESENT ACT
+	"olla" VERB PAR POS SG PCPVA ACT
 "<lainsäädäntöä>"
 	"lain#säädäntö" NOUN PAR SG
 "<->"
@@ -5250,7 +5250,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<tarkistettava>"
-	"tarkistaa" VERB NOM POS SG PRESENT PSS
+	"tarkistaa" VERB NOM POS SG PCPVA PSS
 "<->"
 	"-" PUNCT
 "<vaan>"
@@ -5262,7 +5262,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<täytäntöönpanoa>"
@@ -5423,7 +5423,7 @@
 "<Kreikassa>"
 	"Kreikka" PROPN INE SG
 "<käytettyään>"
-	"käyttää" VERB PAR POS SG PCPNUT 3 PSS
+	"käyttää" VERB PAR POS SG PCPNUT POSS+3 PSS
 "<viallista>"
 	"viallinen" ADJ PAR POS <Llinen> SG
 "<höyrysilitysrautaa>"
@@ -5535,7 +5535,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevia>"
-	"olla" VERB PAR POS PL PRESENT ACT
+	"olla" VERB PAR POS PL PCPVA ACT
 "<määräyksiä>"
 	"määräys" NOUN PAR PL
 "<.>"
@@ -5665,7 +5665,7 @@
 "<asettavat>"
 	"asettaa" VERB INDV PL3 PRESENT ACT
 "<alihankkijansa>"
-	"ali#hankkija" NOUN NOM <Ja> PL 3
+	"ali#hankkija" NOUN NOM <Ja> PL POSS+3
 "<edelleen>"
 	"edelleen" ADV
 "<kustannuspaineen>"
@@ -5681,7 +5681,7 @@
 "<tarjoamaan>"
 	"tarjota" VERB ILL INFMA SG ACT
 "<tuotteensa>"
-	"tuote" NOUN NOM PL 3
+	"tuote" NOUN NOM PL POSS+3
 "<aina>"
 	"aina" ADV
 "<vain>"
@@ -5783,7 +5783,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevia>"
-	"olla" VERB PAR POS PL PRESENT ACT
+	"olla" VERB PAR POS PL PCPVA ACT
 "<määräyksiä>"
 	"määräys" NOUN PAR PL
 "<noudatetaan>"
@@ -5891,9 +5891,9 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevia>"
-	"olla" VERB PAR POS PL PRESENT ACT
+	"olla" VERB PAR POS PL PCPVA ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<määräyksiä>"
 	"määräys" NOUN PAR PL
 "<.>"
@@ -5916,7 +5916,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<huolehdittava>"
-	"huolehtia" VERB NOM POS SG PRESENT PSS
+	"huolehtia" VERB NOM POS SG PCPVA PSS
 "<markkinavalvonnan>"
 	"markkina#valvonta" NOUN GEN SG
 "<toiminnasta>"
@@ -5931,7 +5931,7 @@
 "<tulevat>"
 	"tulla" VERB INDV PL3 PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<lainsäätäjät>"
 	"lain#säätäjä" NOUN NOM <Ja> PL
 "<:>"
@@ -5939,7 +5939,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<huolehdittava>"
-	"huolehtia" VERB NOM POS SG PRESENT PSS
+	"huolehtia" VERB NOM POS SG PCPVA PSS
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<,>"
@@ -6245,11 +6245,11 @@
 "<täysin>"
 	"täysin" ADV
 "<EU:ssa>"
-	"EU" PROPN YES INE SG
+	"EU" PROPN <ABBR> INE SG
 "<voimassa>"
 	"voimassa" ADV
 "<olevia>"
-	"olla" VERB PAR POS PL PRESENT ACT
+	"olla" VERB PAR POS PL PCPVA ACT
 "<määräyksiä>"
 	"määräys" NOUN PAR PL
 "<.>"
@@ -6300,13 +6300,13 @@
 "<oman>"
 	"oma" ADJ GEN POS SG
 "<arvionsa>"
-	"arvio" NOUN GEN SG 3
+	"arvio" NOUN GEN SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<oman>"
 	"oma" ADJ GEN POS SG
 "<todistuksensa>"
-	"todistus" NOUN GEN SG 3
+	"todistus" NOUN GEN SG POSS+3
 "<perusteella>"
 	"peruste" NOUN ADE SG
 "<,>"
@@ -6318,7 +6318,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<saatava>"
-	"saada" VERB NOM POS SG PRESENT PSS
+	"saada" VERB NOM POS SG PCPVA PSS
 "<kolmannen>"
 	"kolmas" ADJ GEN SG ORD
 "<osapuolen>"
@@ -6386,7 +6386,7 @@
 "<vaatimustenmukaisuutta>"
 	"vaatimus#mukaisuus" NOUN PAR <Inen,Vs> SG
 "<arvioivien>"
-	"arvioida" VERB GEN POS PL PRESENT ACT
+	"arvioida" VERB GEN POS PL PCPVA ACT
 "<elinten>"
 	"elin" NOUN GEN PL
 "<toimintaa>"
@@ -6421,7 +6421,7 @@
 "<voitte>"
 	"voida" AUX INDV PL2 PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<lainsäätäjänä>"
 	"lain#säätäjä" NOUN ESS <Ja> SG
 "<tarkastella>"
@@ -6446,13 +6446,13 @@
 "<nyt>"
 	"nyt" ADV
 "<päätettävä>"
-	"päättää" VERB NOM POS SG PRESENT PSS
+	"päättää" VERB NOM POS SG PCPVA PSS
 "<vaikeasta>"
 	"vaikea" ADJ ELA POS SG
 "<leluja>"
 	"lelu" NOUN PAR PL
 "<koskevasta>"
-	"koskea" VERB ELA POS SG PRESENT ACT
+	"koskea" VERB ELA POS SG PCPVA ACT
 "<kysymyksestä>"
 	"kysymys" NOUN ELA SG
 "<.>"
@@ -6485,7 +6485,7 @@
 "<markkinoille>"
 	"markkina" NOUN ALL PL
 "<tulevan>"
-	"tulla" VERB GEN POS SG PRESENT ACT
+	"tulla" VERB GEN POS SG PCPVA ACT
 "<lelun>"
 	"lelu" NOUN GEN SG
 "<vai>"
@@ -6525,7 +6525,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<lisättävä>"
-	"lisätä" VERB NOM POS SG PRESENT PSS
+	"lisätä" VERB NOM POS SG PCPVA PSS
 "<vielä>"
 	"vielä" ADV
 "<se>"
@@ -6539,13 +6539,13 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<voitava>"
-	"voida" AUX NOM POS SG PRESENT PSS
+	"voida" AUX NOM POS SG PCPVA PSS
 "<nykyisin>"
 	"nykyisin" ADV
 "<voimassa>"
 	"voimassa" ADV
 "<olevien>"
-	"olla" VERB GEN POS PL PRESENT ACT
+	"olla" VERB GEN POS PL PCPVA ACT
 "<sääntöjen>"
 	"sääntö" NOUN GEN PL
 "<mukaan>"
@@ -6614,7 +6614,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sanottava>"
-	"sanoa" VERB NOM POS SG PRESENT PSS
+	"sanoa" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<että>"
@@ -6691,7 +6691,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<varmistettava>"
-	"varmistaa" VERB NOM POS SG PRESENT PSS
+	"varmistaa" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<että>"
@@ -6774,7 +6774,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<hyväksyttävä>"
-	"hyväksyttää" VERB NOM POS SG PRESENT ACT
+	"hyväksyttää" VERB NOM POS SG PCPVA ACT
 "<laite>"
 	"laite" NOUN NOM SG
 "<.>"
@@ -6799,7 +6799,7 @@
 "<toivon>"
 	"toivoa" VERB INDV SG1 PRESENT ACT
 "<saavani>"
-	"saada" VERB NOM POS SG SING PRESENT 1 ACT
+	"saada" VERB NOM POS SG POSSSG PCPVA POSS+1 ACT
 "<tässä>"
 	"tämä" PRON INE SG DEM
 "<keskustelussa>"
@@ -6926,7 +6926,7 @@
 "<markkinoilla>"
 	"markkina" NOUN ADE PL
 "<toimivien>"
-	"toimia" VERB GEN POS PL PRESENT ACT
+	"toimia" VERB GEN POS PL PCPVA ACT
 "<yritysten>"
 	"yritys" NOUN GEN PL
 "<vastuu>"
@@ -7144,7 +7144,7 @@
 "<jäsenvaltioissa>"
 	"jäsen#valtio" NOUN INE PL
 "<leviävän>"
-	"levitä" VERB GEN POS SG PRESENT ACT
+	"levitä" VERB GEN POS SG PCPVA ACT
 "<halpojen>"
 	"halpa" ADJ GEN POS PL
 "<hintojen>"
@@ -7185,7 +7185,7 @@
 "<nykyinen>"
 	"nykyinen" ADJ NOM POS <Inen> SG
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<lainsäädäntö>"
 	"lain#säädäntö" NOUN NOM SG
 "<on>"
@@ -7277,7 +7277,7 @@
 "<(>"
 	"(" PUNCT
 "<PT>"
-	"PT" NOUN YES NOM SG
+	"PT" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<Hyvät>"
@@ -7376,7 +7376,7 @@
 "<kohtaan>"
 	"kohtaan" ADP POST
 "<osoittamastaan>"
-	"osoittaa" VERB ELA POS SG AGT 3 ACT
+	"osoittaa" VERB ELA POS SG AGT POSS+3 ACT
 "<henkilökohtaisesta>"
 	"henkilö#kohtainen" ADJ ELA POS <Inen> SG
 "<mielenkiinnosta>"
@@ -7395,7 +7395,7 @@
 # text = EU:n toimielinten välisen yhteistyön ja parlamentin tiiviin osallistumisen kannalta vuoropuhelusta on tullut hyvin tärkeää nyt, kun EU:n kilpailupolitiikka kattaa energian ja yleistä taloudellista etua koskevien palvelujen kaltaisia strategisia aloja, kun siihen sisältyy uusia aloja, kuten ympäristö, ja kun kilpailusta on tullut suuressa määrin maailmanlaajuista.
 # sent_id =  e1021.4
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<toimielinten>"
 	"toimi#elin" NOUN GEN PL
 "<välisen>"
@@ -7429,7 +7429,7 @@
 "<kun>"
 	"kun" SCONJ
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<kilpailupolitiikka>"
 	"kilpailu#politiikka" NOUN NOM SG
 "<kattaa>"
@@ -7445,7 +7445,7 @@
 "<etua>"
 	"etu" NOUN PAR SG
 "<koskevien>"
-	"koskea" VERB GEN POS PL PRESENT ACT
+	"koskea" VERB GEN POS PL PCPVA ACT
 "<palvelujen>"
 	"palvelu" NOUN GEN <U> PL
 "<kaltaisia>"
@@ -7504,13 +7504,13 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<EU:n>"
-	"EU" PROPN YES GEN SG
+	"EU" PROPN <ABBR> GEN SG
 "<kansalaisten>"
 	"kansalainen" NOUN GEN <Lainen> PL
 "<puolesta>"
 	"puolesta" ADP POST
 "<jatkettava>"
-	"jatkaa" VERB NOM POS SG PRESENT PSS
+	"jatkaa" VERB NOM POS SG PCPVA PSS
 "<kilpailupolitiikan>"
 	"kilpailu#politiikka" NOUN GEN SG
 "<saattamista>"
@@ -7522,7 +7522,7 @@
 "<ja>"
 	"ja" CCONJ
 "<pidettävä>"
-	"pitää" VERB NOM POS SG PRESENT PSS
+	"pitää" VERB NOM POS SG PCPVA PSS
 "<yllä>"
 	"yllä" ADV
 "<yhteistyöhenkeä>"
@@ -7563,7 +7563,7 @@
 "<läsnä>"
 	"läsnä" ADV
 "<puheenvuoroni>"
-	"puheen#vuoro" NOUN GEN SG SING 1
+	"puheen#vuoro" NOUN GEN SG POSSSG1
 "<aikana>"
 	"aika" NOUN ESS SG
 "<.>"
@@ -7692,7 +7692,7 @@
 "<Onko>"
 	"olla" VERB CLITKO INDV SG3 PRESENT ACT
 "<huomautettavaa>"
-	"huomauttaa" VERB PAR POS SG PRESENT PSS
+	"huomauttaa" VERB PAR POS SG PCPVA PSS
 "<?>"
 	"?" PUNCT
 
@@ -7724,9 +7724,9 @@
 "<kuulu>"
 	"kuulua" VERB CONNEG INDV PRESENT
 "<EU:>"
-	"EU" PROPN YES ALL SG
+	"EU" PROPN <ABBR> ALL SG
 "<lle>"
-	"lle" PROPN YES ALL SG
+	"lle" PROPN <ABBR> ALL SG
 "<.>"
 	"." PUNCT
 
@@ -7758,7 +7758,7 @@
 # text = EU ei ole, eikä tule olemaan valtio.
 # sent_id =  e1062.3
 "<EU>"
-	"EU" PROPN YES NOM SG
+	"EU" PROPN <ABBR> NOM SG
 "<ei>"
 	"ei" VERB SG3 NEG ACT
 "<ole>"
@@ -7925,7 +7925,7 @@
 "<pöytäkirjaan>"
 	"pöytä#kirja" NOUN ILL SG
 "<merkittäväksi>"
-	"merkitä" VERB TRA POS SG PRESENT PSS
+	"merkitä" VERB TRA POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<että>"
@@ -7994,7 +7994,7 @@
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<mielestäni>"
-	"mieli" NOUN ELA SG SING 1
+	"mieli" NOUN ELA SG POSSSG1
 "<ole>"
 	"olla" AUX CONNEG INDV PRESENT
 "<lainkaan>"
@@ -8055,7 +8055,7 @@
 "<osa>"
 	"osa" NOUN NOM SG
 "<vastalausettani>"
-	"vasta#lause" NOUN PAR SG SING 1
+	"vasta#lause" NOUN PAR SG POSSSG1
 "<,>"
 	"," PUNCT
 "<jonka>"
@@ -8105,7 +8105,7 @@
 "<(>"
 	"(" PUNCT
 "<EN>"
-	"EN" NOUN YES
+	"EN" NOUN <ABBR>
 "<)>"
 	")" PUNCT
 "<Arvoisa>"
@@ -8121,7 +8121,7 @@
 "<onnitella>"
 	"onnitella" VERB INFA SG ACT
 "<ryhmäni>"
-	"ryhmä" NOUN GEN SG SING 1
+	"ryhmä" NOUN GEN SG POSSSG1
 "<puolesta>"
 	"puolesta" ADP POST
 "<niitä>"
@@ -8137,7 +8137,7 @@
 "<omaa>"
 	"oma" ADJ PAR POS SG
 "<kotimaatani>"
-	"koti#maa" NOUN PAR SG SING 1
+	"koti#maa" NOUN PAR SG POSSSG1
 "<Latviaa>"
 	"Latvia" PROPN PAR SG
 "<,>"
@@ -8238,7 +8238,7 @@
 "<vielä>"
 	"vielä" ADV
 "<ratkaistava>"
-	"ratkaista" VERB NOM POS SG PRESENT PSS
+	"ratkaista" VERB NOM POS SG PCPVA PSS
 "<useita>"
 	"usea" PRON PAR PL
 "<ongelmia>"
@@ -8316,7 +8316,7 @@
 "<sääntöihin>"
 	"sääntö" NOUN ILL PL
 "<sovellettava>"
-	"soveltaa" VERB NOM POS SG PRESENT PSS
+	"soveltaa" VERB NOM POS SG PCPVA PSS
 "<tietosuojajärjestelmä>"
 	"tieto#suoja#järjestelmä" NOUN NOM SG
 "<on>"
@@ -8337,11 +8337,11 @@
 "<pilariin>"
 	"pilari" NOUN ILL SG
 "<kuuluvaa>"
-	"kuulua" VERB PAR POS SG PRESENT ACT
+	"kuulua" VERB PAR POS SG PCPVA ACT
 "<tietosuojaa>"
 	"tieto#suoja" NOUN PAR SG
 "<koskevasta>"
-	"koskea" VERB ELA POS SG PRESENT ACT
+	"koskea" VERB ELA POS SG PCPVA ACT
 "<puitepäätöksestä>"
 	"puite#päätös" NOUN ELA SG
 "<poliittiseen>"
@@ -8385,7 +8385,7 @@
 "<tietosuojaa>"
 	"tieto#suoja" NOUN PAR SG
 "<koskevien>"
-	"koskea" VERB GEN POS PL PRESENT ACT
+	"koskea" VERB GEN POS PL PCPVA ACT
 "<sääntöjen>"
 	"sääntö" NOUN GEN PL
 "<täytäntöönpanemiseksi>"
@@ -8416,7 +8416,7 @@
 "<Schengen-tietoja>"
 	"Schengen#tieto" NOUN PAR PL
 "<käsitellessään>"
-	"käsitellä" VERB INE INFE SG 3 ACT
+	"käsitellä" VERB INE INFE SG POSS+3 ACT
 "<?>"
 	"?" PUNCT
 
@@ -8493,7 +8493,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<edessämme>"
-	"edessä" ADV PLUR 1
+	"edessä" ADV POSSPL1
 "<uusi>"
 	"uusi" ADJ NOM POS SG
 "<tehtävä>"
@@ -8513,7 +8513,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<tehtävä>"
-	"tehdä" VERB NOM POS SG PRESENT PSS
+	"tehdä" VERB NOM POS SG PCPVA PSS
 "<vapaan>"
 	"vapaa" ADJ GEN POS SG
 "<liikkuvuuden>"
@@ -8558,7 +8558,7 @@
 "<raskaana>"
 	"raskaana" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<naisen>"
 	"nainen" NOUN GEN SG
 "<kivittäminen>"
@@ -8587,11 +8587,11 @@
 # text = Toimivaltansa ja mahdollisuuksiensa puitteissa komissio seuraa tilannetta tarkasti.
 # sent_id =  e1080.2
 "<Toimivaltansa>"
-	"toimi#valta" NOUN GEN SG 3
+	"toimi#valta" NOUN GEN SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<mahdollisuuksiensa>"
-	"mahdollisuus" NOUN GEN <Llinen,Vs> PL 3
+	"mahdollisuus" NOUN GEN <Llinen,Vs> PL POSS+3
 "<puitteissa>"
 	"puitteissa" ADP POST
 "<komissio>"
@@ -8761,7 +8761,7 @@
 "<jatkaa>"
 	"jatkaa" VERB INFA SG ACT
 "<ponnistuksiaan>"
-	"ponnistus" NOUN PAR PL 3
+	"ponnistus" NOUN PAR PL POSS+3
 "<tässä>"
 	"tämä" PRON INE SG DEM
 "<asiassa>"
@@ -8771,7 +8771,7 @@
 "<mutta>"
 	"mutta" CCONJ
 "<käsittääkseni>"
-	"käsittää" VERB TRA INFA SG SING 1 ACT
+	"käsittää" VERB TRA INFA SG POSSSG1 ACT
 "<parlamentin>"
 	"parlamentti" NOUN GEN SG
 "<jäsenet>"
@@ -8835,7 +8835,7 @@
 "<ihmisoikeuksia>"
 	"ihmis#oikeus" NOUN PAR <Vs> PL
 "<koskeva>"
-	"koskea" VERB NOM POS SG PRESENT ACT
+	"koskea" VERB NOM POS SG PCPVA ACT
 "<koulutus>"
 	"koulutus" NOUN NOM SG
 "<turvallisuusjoukoille>"
@@ -9292,9 +9292,9 @@
 "<sinun>"
 	"sinä" PRON GEN SG2 PRS
 "<kuvittelevan>"
-	"kuvitella" VERB GEN POS SG PRESENT ACT
+	"kuvitella" VERB GEN POS SG PCPVA ACT
 "<omiasi>"
-	"oma" ADJ PAR POS PL SING 2
+	"oma" ADJ PAR POS PL POSSSG2
 "<,>"
 	"," PUNCT
 "<mutten>"
@@ -9313,7 +9313,7 @@
 "<Nyökkäsin>"
 	"nyökätä" VERB INDV SG1 PAST ACT
 "<päätäni>"
-	"pää" NOUN PAR SG SING 1
+	"pää" NOUN PAR SG POSSSG1
 "<katsellen>"
 	"katsella" VERB INS INFE SG ACT
 "<punatiilisiä>"
@@ -9326,13 +9326,13 @@
 # text = Sormesi tiukensivat otettani omistani hetkeksi ja luin sen kiitokseksi.
 # sent_id =  f212.6
 "<Sormesi>"
-	"sormi" NOUN NOM PL SING 2
+	"sormi" NOUN NOM PL POSSSG2
 "<tiukensivat>"
 	"tiukentaa" VERB INDV PL3 PAST ACT
 "<otettani>"
-	"ote" NOUN PAR SG 3 YES
+	"ote" NOUN PAR SG POSS+3 TYPO
 "<omistani>"
-	"oma" ADJ ELA POS PL SING 1
+	"oma" ADJ ELA POS PL POSSSG1
 "<hetkeksi>"
 	"hetki" NOUN TRA SG
 "<ja>"
@@ -9353,7 +9353,7 @@
 "<nojaan>"
 	"nojata" VERB INDV SG1 PRESENT ACT
 "<päätäni>"
-	"pää" NOUN PAR SG SING 1
+	"pää" NOUN PAR SG POSSSG1
 "<ikkunaan>"
 	"ikkuna" NOUN ILL SG
 "<katsellen>"
@@ -9410,9 +9410,9 @@
 "<odotan>"
 	"odottaa" VERB INDV SG1 PRESENT ACT
 "<kuulevani>"
-	"kuulla" VERB GEN POS SG SING PRESENT 1 ACT
+	"kuulla" VERB GEN POS SG POSSSG PCPVA POSS+1 ACT
 "<äänesi>"
-	"ääni" NOUN GEN SG SING 2
+	"ääni" NOUN GEN SG POSSSG2
 "<.>"
 	"." PUNCT
 
@@ -9427,7 +9427,7 @@
 "<hiljaista>"
 	"hiljainen" ADJ PAR POS <Inen> SG
 "<lähtösi>"
-	"lähtö" NOUN GEN SG SING 2
+	"lähtö" NOUN GEN SG POSSSG2
 "<jälkeen>"
 	"jälkeen" ADP POST
 "<.>"
@@ -9511,7 +9511,7 @@
 "<lopettaa>"
 	"lopettaa" VERB INFA SG ACT
 "<kesken.>"
-	"kesken#." ADP PREP YES
+	"kesken#." ADP PREP TYPO
 "<:D>"
 	":D" SYM
 
@@ -9578,7 +9578,7 @@
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<väriltään>"
-	"väri" NOUN ABL SG 3
+	"väri" NOUN ABL SG POSS+3
 "<kellertävää>"
 	"kellertävä" ADJ PAR POS SG
 "<ja>"
@@ -9592,7 +9592,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<kasvojaan>"
-	"kasvot" NOUN PAR PL 3
+	"kasvot" NOUN PAR PL POSS+3
 "<.>"
 	"." PUNCT
 
@@ -9603,9 +9603,9 @@
 "<siristeli>"
 	"siristellä" VERB INDV SG3 PAST ACT
 "<silmiään>"
-	"silmä" NOUN PAR PL 3
+	"silmä" NOUN PAR PL POSS+3
 "<katsahtaessaan>"
-	"katsahtaa" VERB INE INFE SG 3 ACT
+	"katsahtaa" VERB INE INFE SG POSS+3 ACT
 "<aurinkoon>"
 	"aurinko" NOUN ILL SG
 "<.>"
@@ -9722,7 +9722,7 @@
 "<kaatua>"
 	"kaatua" VERB INFA SG ACT
 "<naamalleen>"
-	"naama" NOUN ALL SG 3
+	"naama" NOUN ALL SG POSS+3
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -9732,7 +9732,7 @@
 "<säilyttämään>"
 	"säilyttää" VERB ILL INFMA SG ACT
 "<tasapainonsa>"
-	"tasa#paino" NOUN GEN SG 3
+	"tasa#paino" NOUN GEN SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -9913,7 +9913,7 @@
 # text = -Maks.
 # sent_id =  f401.21
 "<-Maks>"
-	"-#Maks" PROPN NOM SG YES
+	"-#Maks" PROPN NOM SG TYPO
 "<.>"
 	"." PUNCT
 
@@ -9955,7 +9955,7 @@
 "<hitaasti>"
 	"hitaasti" ADV <Sti>
 "<katseensa>"
-	"katse" NOUN GEN SG 3
+	"katse" NOUN GEN SG POSS+3
 "<ylös>"
 	"ylös" ADV
 "<.>"
@@ -10154,7 +10154,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<naamansa>"
-	"naama" NOUN NOM SG 3
+	"naama" NOUN NOM SG POSS+3
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<kapea>"
@@ -10168,7 +10168,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<otsaansa>"
-	"otsa" NOUN PAR SG 3
+	"otsa" NOUN PAR SG POSS+3
 "<koristi>"
 	"koristaa" VERB INDV SG3 PAST ACT
 "<leveä>"
@@ -10217,7 +10217,7 @@
 "<toinen>"
 	"toinen" PRON NOM SG RCP
 "<silmänsä>"
-	"silmä" NOUN NOM SG 3
+	"silmä" NOUN NOM SG POSS+3
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<ole>"
@@ -10300,7 +10300,7 @@
 "<ja>"
 	"ja" CCONJ
 "<kidutettavaksi>"
-	"kiduttaa" VERB TRA POS SG PRESENT PSS
+	"kiduttaa" VERB TRA POS SG PCPVA PSS
 "<.>"
 	"." PUNCT
 
@@ -10478,7 +10478,7 @@
 "<,>"
 	"," PUNCT
 "<miettiessään>"
-	"miettiä" VERB INE INFE SG 3 ACT
+	"miettiä" VERB INE INFE SG POSS+3 ACT
 "<sen>"
 	"se" PRON GEN SG DEM
 "<väriä>"
@@ -10492,7 +10492,7 @@
 "<miehen>"
 	"mies" NOUN GEN SG
 "<tuijottavan>"
-	"tuijottaa" VERB GEN POS SG PRESENT ACT
+	"tuijottaa" VERB GEN POS SG PCPVA ACT
 "<suoraan>"
 	"suoraan" ADV
 "<häneen>"
@@ -10507,7 +10507,7 @@
 "<käänsi>"
 	"kääntää" VERB INDV SG3 PAST ACT
 "<päänsä>"
-	"pää" NOUN GEN SG 3
+	"pää" NOUN GEN SG POSS+3
 "<nopeasti>"
 	"nopeasti" ADV <Sti>
 "<ikkunaan>"
@@ -10546,7 +10546,7 @@
 "<piteli>"
 	"pidellä" VERB INDV SG3 PAST ACT
 "<päätään>"
-	"pää" NOUN PAR SG 3
+	"pää" NOUN PAR SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -10570,7 +10570,7 @@
 "<katsomaan>"
 	"katsoa" VERB ILL INFMA SG ACT
 "<taakseen>"
-	"taakse" ADV 3
+	"taakse" ADV POSS+3
 "<.>"
 	"." PUNCT
 
@@ -10596,7 +10596,7 @@
 "<säpsähti>"
 	"säpsähtää" VERB INDV SG3 PAST ACT
 "<huomatessaan>"
-	"huomata" VERB INE INFE SG 3 ACT
+	"huomata" VERB INE INFE SG POSS+3 ACT
 "<Maksin>"
 	"Maks" PROPN GEN SG
 "<ilmeen>"
@@ -10642,7 +10642,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<viereensä>"
-	"viereen" ADP POST 3
+	"viereen" ADP POST POSS+3
 "<.>"
 	"." PUNCT
 
@@ -10667,7 +10667,7 @@
 "<Krobsin>"
 	"Krobs" PROPN GEN SG
 "<tuijottavan>"
-	"tuijottaa" VERB GEN POS SG PRESENT ACT
+	"tuijottaa" VERB GEN POS SG PCPVA ACT
 "<vihaisesti>"
 	"vihaisesti" ADV <Sti>
 "<.>"
@@ -10707,7 +10707,7 @@
 "<käänsi>"
 	"kääntää" VERB INDV SG3 PAST ACT
 "<katseensa>"
-	"katse" NOUN GEN SG 3
+	"katse" NOUN GEN SG POSS+3
 "<ulos>"
 	"ulos" ADV
 "<.>"
@@ -10878,7 +10878,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<ilonsa>"
-	"ilo" NOUN NOM SG 3
+	"ilo" NOUN NOM SG POSS+3
 "<näkyy>"
 	"näkyä" VERB INDV SG3 PRESENT ACT
 "<suuressa>"
@@ -10942,7 +10942,7 @@
 "<saa>"
 	"saada" VERB CONNEG INDV PRESENT
 "<katsettani>"
-	"katse" NOUN PAR SG SING 1
+	"katse" NOUN PAR SG POSSSG1
 "<irti>"
 	"irti" ADV
 "<kuvasta>"
@@ -10983,7 +10983,7 @@
 "<veteen>"
 	"vesi" NOUN ILL SG
 "<mukanaan>"
-	"mukana" ADV 3
+	"mukana" ADV POSS+3
 "<.>"
 	"." PUNCT
 
@@ -10992,7 +10992,7 @@
 "<Suljen>"
 	"sulkea" VERB INDV SG1 PRESENT ACT
 "<silmäni>"
-	"silmä" NOUN NOM PL SING 1
+	"silmä" NOUN NOM PL POSSSG1
 "<kyyneleiden>"
 	"kyynel" NOUN GEN PL
 "<yrittäessä>"
@@ -11009,7 +11009,7 @@
 "<Nostan>"
 	"nostaa" VERB INDV SG1 PRESENT ACT
 "<käteni>"
-	"käsi" NOUN GEN SG SING 1
+	"käsi" NOUN GEN SG POSSSG1
 "<pienen>"
 	"pieni" ADJ GEN POS SG
 "<,>"
@@ -11027,7 +11027,7 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<nyrkkini>"
-	"nyrkki" NOUN GEN SG SING 1
+	"nyrkki" NOUN GEN SG POSSSG1
 "<sisään>"
 	"sisään" ADP POST
 "<.>"
@@ -11081,7 +11081,7 @@
 "<riipaisee>"
 	"riipaista" VERB INDV SG3 PRESENT ACT
 "<sydäntäni>"
-	"sydän" NOUN PAR SG SING 1
+	"sydän" NOUN PAR SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11090,7 +11090,7 @@
 "<Pudistan>"
 	"pudistaa" VERB INDV SG1 PRESENT ACT
 "<päätäni>"
-	"pää" NOUN PAR SG SING 1
+	"pää" NOUN PAR SG POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<potkin>"
@@ -11098,7 +11098,7 @@
 "<kengät>"
 	"kenkä" NOUN NOM PL
 "<jalastani>"
-	"jalka" NOUN ELA SG SING 1
+	"jalka" NOUN ELA SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11134,13 +11134,13 @@
 "<lattialle>"
 	"lattia" NOUN ALL SG
 "<musta>"
-	"musta" ADJ GEN POS SG YES
+	"musta" ADJ GEN POS SG TYPO
 "<ja>"
 	"ja" CCONJ
 "<kiiltävän>"
 	"kiiltävä" ADJ GEN POS SG
 "<mekkoni>"
-	"mekko" NOUN GEN SG SING 1
+	"mekko" NOUN GEN SG POSSSG1
 "<,>"
 	"," PUNCT
 "<sekä>"
@@ -11148,7 +11148,7 @@
 "<tummat>"
 	"tumma" ADJ NOM POS PL
 "<alusvaatteeni>"
-	"alus#vaate" NOUN NOM PL SING 1
+	"alus#vaate" NOUN NOM PL POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11167,7 +11167,7 @@
 "<vierellä>"
 	"vierellä" ADP POST
 "<olevat>"
-	"olla" VERB NOM POS PL PRESENT ACT
+	"olla" VERB NOM POS PL PCPVA ACT
 "<kynttilät>"
 	"kynttilä" NOUN NOM PL
 "<.>"
@@ -11176,7 +11176,7 @@
 # text = Painaessani katkaisijaa, pimeys valtaa hetkeksi koko huoneen, kunnes kynttilöiden loiste nappaa pimeydestä kiinni ja murtavat sen.
 # sent_id =  f402.22
 "<Painaessani>"
-	"painaa" VERB INE INFE SG SING 1 ACT
+	"painaa" VERB INE INFE SG POSSSG1 ACT
 "<katkaisijaa>"
 	"katkaisija" NOUN PAR <Ja> SG
 "<,>"
@@ -11208,7 +11208,7 @@
 "<ja>"
 	"ja" CCONJ
 "<murtavat>"
-	"murtaa" VERB INDV SG3 PRESENT YES ACT
+	"murtaa" VERB INDV SG3 PRESENT TYPO ACT
 "<sen>"
 	"se" PRON GEN SG DEM
 "<.>"
@@ -11219,7 +11219,7 @@
 "<Katson>"
 	"katsoa" VERB INDV SG1 PRESENT ACT
 "<itseäni>"
-	"itse" PRON PAR SG SING 1 YES
+	"itse" PRON PAR SG POSSSG1 REFLEX
 "<peilistä>"
 	"peili" NOUN ELA SG
 "<.>"
@@ -11240,7 +11240,7 @@
 "<matkaa>"
 	"matka" NOUN PAR SG
 "<poskillani>"
-	"poski" NOUN ADE PL SING 1
+	"poski" NOUN ADE PL POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11255,7 +11255,7 @@
 "<ja>"
 	"ja" CCONJ
 "<hiukseni>"
-	"hius" NOUN NOM PL SING 1
+	"hius" NOUN NOM PL POSSSG1
 "<valahtavat>"
 	"valahtaa" VERB INDV PL3 PRESENT ACT
 "<auki>"
@@ -11270,7 +11270,7 @@
 "<lennähtää>"
 	"lennähtää" VERB INDV SG3 PRESENT ACT
 "<silmilleni>"
-	"silmä" NOUN ALL PL SING 1
+	"silmä" NOUN ALL PL POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<kätkee>"
@@ -11278,7 +11278,7 @@
 "<ne>"
 	"se" PRON NOM PL DEM
 "<alleen>"
-	"alle" ADV 3
+	"alle" ADV POSS+3
 "<.>"
 	"." PUNCT
 
@@ -11339,7 +11339,7 @@
 "<suljen>"
 	"sulkea" VERB INDV SG1 PRESENT ACT
 "<silmäni>"
-	"silmä" NOUN NOM PL SING 1
+	"silmä" NOUN NOM PL POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<laskeudun>"
@@ -11356,7 +11356,7 @@
 "<Avaan>"
 	"avata" VERB INDV SG1 PRESENT ACT
 "<silmäni>"
-	"silmä" NOUN NOM PL SING 1
+	"silmä" NOUN NOM PL POSSSG1
 "<,>"
 	"," PUNCT
 "<kaikki>"
@@ -11388,7 +11388,7 @@
 "<aivan>"
 	"aivan" ADV
 "<edessäni>"
-	"edessä" ADV SING 1
+	"edessä" ADV POSSSG1
 "<hymyilemässä>"
 	"hymyillä" VERB INE INFMA SG ACT
 "<ja>"
@@ -11411,7 +11411,7 @@
 "<mutta>"
 	"mutta" CCONJ
 "<happeni>"
-	"happi" NOUN NOM SG SING 1
+	"happi" NOUN NOM SG POSSSG1
 "<loppuu>"
 	"loppua" VERB INDV SG3 PRESENT ACT
 "<ja>"
@@ -11430,7 +11430,7 @@
 "<Hengitän>"
 	"hengittää" VERB INDV SG1 PRESENT ACT
 "<keuhkoni>"
-	"keuhko" NOUN NOM PL SING 1
+	"keuhko" NOUN NOM PL POSSSG1
 "<täyteen>"
 	"täyteen" ADV
 "<ilmaa>"
@@ -11517,13 +11517,13 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<halaavan>"
-	"halata" VERB GEN POS SG PRESENT ACT
+	"halata" VERB GEN POS SG PCPVA ACT
 "<minua>"
 	"minä" PRON PAR SG1 PRS
 "<ja>"
 	"ja" CCONJ
 "<suutelevan>"
-	"suudella" VERB GEN POS SG PRESENT ACT
+	"suudella" VERB GEN POS SG PCPVA ACT
 "<yhä>"
 	"yhä" ADV
 "<uudelleen>"
@@ -11548,7 +11548,7 @@
 "<suljen>"
 	"sulkea" VERB INDV SG1 PRESENT ACT
 "<silmäni>"
-	"silmä" NOUN NOM PL SING 1
+	"silmä" NOUN NOM PL POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11559,13 +11559,13 @@
 "<seisoo>"
 	"seisoa" VERB INDV SG3 PRESENT ACT
 "<edessäni>"
-	"edessä" ADV SING 1
+	"edessä" ADV POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<ottaa>"
 	"ottaa" VERB INDV SG3 PRESENT ACT
 "<kädestäni>"
-	"käsi" NOUN ELA SG SING 1
+	"käsi" NOUN ELA SG POSSSG1
 "<kiinni>"
 	"kiinni" ADV
 "<.>"
@@ -11608,7 +11608,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<äänensä>"
-	"ääni" NOUN NOM SG 3
+	"ääni" NOUN NOM SG POSS+3
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<hyvin>"
@@ -11622,7 +11622,7 @@
 "<kauas>"
 	"kauas" ADV
 "<mökkimme>"
-	"mökki" NOUN GEN SG PLUR 1
+	"mökki" NOUN GEN SG POSSPL1
 "<pihassa>"
 	"piha" NOUN INE SG
 "<.>"
@@ -11633,7 +11633,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<silmänsä>"
-	"silmä" NOUN NOM PL 3
+	"silmä" NOUN NOM PL POSS+3
 "<säihkyivät>"
 	"säihkyä" VERB INDV PL3 PAST ACT
 "<.>"
@@ -11669,9 +11669,9 @@
 "<kietoi>"
 	"kietoa" VERB INDV SG3 PAST ACT
 "<kätensä>"
-	"käsi" NOUN NOM PL 3
+	"käsi" NOUN NOM PL POSS+3
 "<ympärilleni>"
-	"ympärille" ADV SING 1
+	"ympärille" ADV POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11734,7 +11734,7 @@
 "<välähdyksinä>"
 	"välähdys" NOUN ESS PL
 "<pääni>"
-	"pää" NOUN GEN SG SING 1
+	"pää" NOUN GEN SG POSSSG1
 "<sisällä>"
 	"sisällä" ADP POST
 "<.>"
@@ -11775,7 +11775,7 @@
 "<suklaiset>"
 	"suklainen" ADJ NOM <Inen> PL
 "<silmänsä>"
-	"silmä" NOUN NOM PL 3
+	"silmä" NOUN NOM PL POSS+3
 "<.>"
 	"." PUNCT
 
@@ -11807,7 +11807,7 @@
 "<Avaan>"
 	"avata" VERB INDV SG1 PRESENT ACT
 "<silmäni>"
-	"silmä" NOUN NOM PL SING 1
+	"silmä" NOUN NOM PL POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11870,7 +11870,7 @@
 "<huulet>"
 	"huuli" NOUN NOM PL
 "<huuliani>"
-	"huuli" NOUN PAR PL SING 1
+	"huuli" NOUN PAR PL POSSSG1
 "<vasten>"
 	"vasten" ADP POST
 "<ja>"
@@ -11878,9 +11878,9 @@
 "<kietoo>"
 	"kietoa" VERB INDV SG3 PRESENT ACT
 "<kätensä>"
-	"käsi" NOUN NOM PL 3
+	"käsi" NOUN NOM PL POSS+3
 "<ympärilleni>"
-	"ympärille" ADV SING 1
+	"ympärille" ADV POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11931,7 +11931,7 @@
 "<kuiskaa>"
 	"kuiskata" VERB INDV SG3 PRESENT ACT
 "<korvaani>"
-	"korva" NOUN ILL SG SING 1
+	"korva" NOUN ILL SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -11940,7 +11940,7 @@
 "<Suljen>"
 	"sulkea" VERB INDV SG1 PRESENT ACT
 "<silmäni>"
-	"silmä" NOUN NOM PL SING 1
+	"silmä" NOUN NOM PL POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<kun>"
@@ -11984,7 +11984,7 @@
 "<puolikkaalla>"
 	"puolikas" NOUN ADE SG
 "<sohvallani>"
-	"sohva" NOUN ADE SG SING 1
+	"sohva" NOUN ADE SG POSSSG1
 "<Finnet>"
 	"Finnet" PROPN NOM SG
 "<Internationalia>"
@@ -11996,11 +11996,11 @@
 "<jääkiekkojoukkuetta>"
 	"jää#kiekko#joukkue" NOUN PAR SG
 "<mainostava>"
-	"mainostaa" VERB NOM POS SG PRESENT ACT
+	"mainostaa" VERB NOM POS SG PCPVA ACT
 "<kalastajalakki>"
 	"kalastaja#lakki" NOUN NOM SG
 "<päässäni>"
-	"pää" NOUN INE SG SING 1
+	"pää" NOUN INE SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -12055,7 +12055,7 @@
 "<puristukseen>"
 	"puristus" NOUN ILL SG
 "<ohimoissani>"
-	"ohimo" NOUN INE PL SING 1
+	"ohimo" NOUN INE PL POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<tuntisin>"
@@ -12063,7 +12063,7 @@
 "<ehkä>"
 	"ehkä" ADV
 "<itseni>"
-	"itse" PRON NOM SG SING 1 YES
+	"itse" PRON NOM SG POSSSG1 REFLEX
 "<alastomaksi>"
 	"alaston" ADJ TRA POS <Ton> SG
 "<,>"
@@ -12096,7 +12096,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<päässäni>"
-	"pää" NOUN INE SG SING 1
+	"pää" NOUN INE SG POSSSG1
 "<,>"
 	"," PUNCT
 "<on>"
@@ -12108,7 +12108,7 @@
 "<unohtunut>"
 	"unohtua" VERB NOM POS SG PCPNUT ACT
 "<itseltänikin>"
-	"itse" PRON ABL CLITKIN SG SING 1 YES
+	"itse" PRON ABL CLITKIN SG POSSSG1 REFLEX
 "<.>"
 	"." PUNCT
 
@@ -12161,7 +12161,7 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<päähäni>"
-	"pää" NOUN ILL SG SING 1
+	"pää" NOUN ILL SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -12180,7 +12180,7 @@
 "<lattialta>"
 	"lattia" NOUN ABL SG
 "<etsittyäni>"
-	"etsiä" VERB PAR POS SG SING PCPNUT 1 PSS
+	"etsiä" VERB PAR POS SG POSSSG PCPNUT POSS+1 PSS
 "<paria>"
 	"pari" NOUN PAR SG
 "<kauan>"
@@ -12215,7 +12215,7 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<päähäni>"
-	"pää" NOUN ILL SG SING 1
+	"pää" NOUN ILL SG POSSSG1
 "<joutumisella>"
 	"joutuminen" NOUN ADE <Minen> SG
 "<ei>"
@@ -12248,7 +12248,7 @@
 "<löytämässä>"
 	"löytää" VERB INE INFMA SG ACT
 "<itseni>"
-	"itse" PRON GEN SG SING 1 YES
+	"itse" PRON GEN SG POSSSG1 REFLEX
 "<.>"
 	"." PUNCT
 
@@ -12285,7 +12285,7 @@
 "<olemisesta>"
 	"oleminen" NOUN ELA <Minen> SG
 "<kertovia>"
-	"kertoa" VERB PAR POS PL PRESENT ACT
+	"kertoa" VERB PAR POS PL PCPVA ACT
 "<merkintöjä>"
 	"merkintä" NOUN PAR PL
 "<.>"
@@ -12320,7 +12320,7 @@
 "<sitten>"
 	"sitten" ADV
 "<kirjoittamani>"
-	"kirjoittaa" VERB NOM POS SG SING AGT 1 ACT
+	"kirjoittaa" VERB NOM POS SG POSSSG AGT POSS+1 ACT
 "<teksti>"
 	"teksti" NOUN NOM SG
 "<.>"
@@ -12347,11 +12347,11 @@
 "<ihmiset>"
 	"ihminen" NOUN NOM PL
 "<ympärilläni>"
-	"ympärillä" ADV SING 1
+	"ympärillä" ADV POSSSG1
 "<tietävät>"
 	"tietää" VERB INDV PL3 PRESENT ACT
 "<haluavansa>"
-	"haluta" VERB NOM POS PL PRESENT 3 ACT
+	"haluta" VERB NOM POS PL PCPVA POSS+3 ACT
 "<kivaan>"
 	"kiva" ADJ ILL POS SG
 "<sisätyöhön>"
@@ -12413,7 +12413,7 @@
 "<määritellä>"
 	"määritellä" VERB INFA SG ACT
 "<elämääni>"
-	"elämä" NOUN PAR SG SING 1
+	"elämä" NOUN PAR SG POSSSG1
 "<jonkun>"
 	"joku" PRON GEN SG
 "<välttämättömän>"
@@ -12430,7 +12430,7 @@
 "<Koko>"
 	"koko" ADJ
 "<ammatinvalintani>"
-	"ammatin#valinta" NOUN GEN SG SING 1
+	"ammatin#valinta" NOUN GEN SG POSSSG1
 "<oli>"
 	"olla" AUX INDV SG3 PAST ACT
 "<järkivalinta>"
@@ -12441,7 +12441,7 @@
 # text = Tidän, mistä pidän ja mitä haluan tehdä koko elämäni, mutta haluan tehdä sitä vain työnä.
 # sent_id =  f603.16
 "<Tidän>"
-	"tietää" VERB INDV SG1 PRESENT YES ACT
+	"tietää" VERB INDV SG1 PRESENT TYPO ACT
 "<,>"
 	"," PUNCT
 "<mistä>"
@@ -12459,7 +12459,7 @@
 "<koko>"
 	"koko" ADJ
 "<elämäni>"
-	"elämä" NOUN GEN SG SING 1
+	"elämä" NOUN GEN SG POSSSG1
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -12486,11 +12486,11 @@
 "<työn>"
 	"työ" NOUN GEN SG
 "<määrittävän>"
-	"määrittää" VERB GEN POS SG PRESENT ACT
+	"määrittää" VERB GEN POS SG PCPVA ACT
 "<koko>"
 	"koko" ADJ
 "<minuuttani>"
-	"minuus" NOUN PAR <Vs> SG SING 1
+	"minuus" NOUN PAR <Vs> SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -12569,7 +12569,7 @@
 "<tulla>"
 	"tulla" VERB INFA SG ACT
 "<määriteltäväksi>"
-	"määritellä" VERB TRA POS SG PRESENT PSS
+	"määritellä" VERB TRA POS SG PCPVA PSS
 "<">"
 	""" PUNCT
 "<siksi>"
@@ -12647,7 +12647,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<huomioitava>"
-	"huomioida" VERB NOM POS SG PRESENT PSS
+	"huomioida" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<että>"
@@ -12680,7 +12680,7 @@
 "<Minun>"
 	"minä" PRON GEN SG1 PRS
 "<vapauteni>"
-	"vapaus" NOUN GEN <Vs> SG SING 1
+	"vapaus" NOUN GEN <Vs> SG POSSSG1
 "<alkaa>"
 	"alkaa" VERB INDV SG3 PRESENT ACT
 "<nimittäin>"
@@ -12734,7 +12734,7 @@
 "<nostaa>"
 	"nostaa" VERB INDV SG3 PRESENT ACT
 "<juurensa>"
-	"juuri" NOUN NOM PL 3
+	"juuri" NOUN NOM PL POSS+3
 "<mullasta>"
 	"multa" NOUN ELA SG
 "<kuin>"
@@ -12777,7 +12777,7 @@
 "<pakata>"
 	"pakata" VERB INFA SG ACT
 "<elämäni>"
-	"elämä" NOUN NOM SG SING 1
+	"elämä" NOUN NOM SG POSSSG1
 "<yhteen>"
 	"yksi" NUM ILL SG CARD
 "<laukkuun>"
@@ -12828,11 +12828,11 @@
 "<mennä>"
 	"mennä" VERB INFA SG ACT
 "<kotieni>"
-	"koti" NOUN GEN PL SING 1
+	"koti" NOUN GEN PL POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<sänkyjeni>"
-	"sänky" NOUN GEN PL SING 1
+	"sänky" NOUN GEN PL POSSSG1
 "<välillä>"
 	"välillä" ADP POST
 "<kuin>"
@@ -12866,7 +12866,7 @@
 "<painan>"
 	"painaa" VERB INDV SG1 PRESENT ACT
 "<pääni>"
-	"pää" NOUN GEN SG SING 1
+	"pää" NOUN GEN SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -12905,9 +12905,9 @@
 "<kaikki>"
 	"kaikki" PRON NOM SG
 "<tarvittava>"
-	"tarvita" VERB NOM POS SG PRESENT PSS
+	"tarvita" VERB NOM POS SG PCPVA PSS
 "<mukanani>"
-	"mukana" ADV SING 1
+	"mukana" ADV POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<haluanko>"
@@ -12923,7 +12923,7 @@
 "<asiaa>"
 	"asia" NOUN PAR SG
 "<X>"
-	"X" NOUN YES NOM SG
+	"X" NOUN <ABBR> NOM SG
 "<,>"
 	"," PUNCT
 "<joka>"
@@ -12933,7 +12933,7 @@
 "<esineen>"
 	"esine" NOUN GEN SG
 "<Y>"
-	"Y" NOUN YES NOM SG
+	"Y" NOUN <ABBR> NOM SG
 "<mukaan>"
 	"mukaan" ADP PREP
 "<ottamista>"
@@ -12945,7 +12945,7 @@
 "<yritän>"
 	"yrittää" VERB INDV SG1 PRESENT ACT
 "<parhaani>"
-	"paras" NOUN GEN SG SING 1
+	"paras" NOUN GEN SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -13040,7 +13040,7 @@
 "<koko>"
 	"koko" ADJ
 "<itseni>"
-	"itse" PRON GEN SG SING 1 YES
+	"itse" PRON GEN SG POSSSG1 REFLEX
 "<löytäminen>"
 	"löytäminen" NOUN NOM <Minen> SG
 "<on>"
@@ -13062,13 +13062,13 @@
 "<jääneet>"
 	"jäädä" VERB NOM POS PL PCPNUT ACT
 "<itseni>"
-	"itse" PRON GEN SG SING 1 YES
+	"itse" PRON GEN SG POSSSG1 REFLEX
 "<etsimiset>"
 	"etsiminen" NOUN NOM <Minen> PL
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<itselleni>"
-	"itse" PRON ALL SG SING 1 YES
+	"itse" PRON ALL SG POSSSG1 REFLEX
 "<yhteensä>"
 	"yhteensä" ADV
 "<,>"
@@ -13103,9 +13103,9 @@
 "<kirjoittamaan>"
 	"kirjoittaa" VERB ILL INFMA SG ACT
 "<elämäntehtävääni>"
-	"elämän#tehtävä" NOUN PAR SG SING 1
+	"elämän#tehtävä" NOUN PAR SG POSSSG1
 "<tukevalla>"
-	"tukea" VERB ADE POS SG PRESENT ACT
+	"tukea" VERB ADE POS SG PCPVA ACT
 "<tietokoneella>"
 	"tieto#kone" NOUN ADE SG
 "<,>"
@@ -13115,7 +13115,7 @@
 "<voin>"
 	"voida" AUX INDV SG1 PRESENT ACT
 "<kokonsa>"
-	"koko" NOUN GEN SG 3
+	"koko" NOUN GEN SG POSS+3
 "<ansiosta>"
 	"ansio" NOUN ELA SG
 "<kantaa>"
@@ -13476,7 +13476,7 @@
 "<kohautan>"
 	"kohauttaa" VERB INDV SG1 PRESENT ACT
 "<olkiani>"
-	"olka" NOUN PAR PL SING 1
+	"olka" NOUN PAR PL POSSSG1
 "<ja>"
 	"ja" CCONJ
 "<lähen>"
@@ -13612,7 +13612,7 @@
 "<ihan>"
 	"ihan" ADV
 "<ookoo>"
-	"ookoo" ADJ YES
+	"ookoo" ADJ <ABBR>
 "<.>"
 	"." PUNCT
 
@@ -14085,7 +14085,7 @@
 "<avaa>"
 	"avata" VERB INDV SG3 PRESENT ACT
 "<silmänsä>"
-	"silmä" NOUN NOM PL 3
+	"silmä" NOUN NOM PL POSS+3
 "<.>"
 	"." PUNCT
 
@@ -14838,7 +14838,7 @@
 "<sellanen>"
 	"sellainen" ADJ NOM POS <Lainen> SG <Coll>
 "<linkkaava>"
-	"linkata" VERB NOM POS SG PRESENT ACT
+	"linkata" VERB NOM POS SG PCPVA ACT
 "<köyryselkänen>"
 	"köyry#selkäinen" ADJ NOM POS <Inen> SG <Coll>
 "<rautakanki>"
@@ -15454,7 +15454,7 @@
 "<Naapurista>"
 	"naapuri" NOUN ELA SG
 "<kantautuva>"
-	"kantautua" VERB NOM POS SG PRESENT ACT
+	"kantautua" VERB NOM POS SG PCPVA ACT
 "<ruusun>"
 	"ruusu" NOUN GEN SG
 "<värinen>"
@@ -15470,7 +15470,7 @@
 "<lailla>"
 	"lailla" ADV
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<suunnittelutyöhön>"
@@ -15540,7 +15540,7 @@
 "<kun>"
 	"kun" ADV
 "<siltä>"
-	"silta" NOUN NOM SG YES
+	"silta" NOUN NOM SG TYPO
 "<oli>"
 	"olla" VERB INDV SG3 PAST ACT
 "<mannermaalta>"
@@ -15570,7 +15570,7 @@
 # text = A. Jokinen ei tiennyt mitään yli 1000km pitkistä silloista.
 # sent_id =  fB04.6
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<ei>"
@@ -15584,7 +15584,7 @@
 "<1000>"
 	"1000" NUM CARD
 "<km>"
-	"km" NOUN YES PAR SG
+	"km" NOUN <ABBR> PAR SG
 "<pitkistä>"
 	"pitkä" ADJ ELA POS PL
 "<silloista>"
@@ -15619,7 +15619,7 @@
 "<tietämättömyydestä>"
 	"tietämättömyys" NOUN ELA SG
 "<kertova>"
-	"kertoa" VERB NOM POS SG PRESENT ACT
+	"kertoa" VERB NOM POS SG PCPVA ACT
 "<tekstikään>"
 	"teksti" NOUN NOM CLITKAAN SG
 "<ollut>"
@@ -15627,7 +15627,7 @@
 "<juuri>"
 	"juuri" ADV
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<perunoiden>"
@@ -15639,7 +15639,7 @@
 "<kirjoittajan>"
 	"kirjoittaja" NOUN GEN <Ja> SG
 "<käsiteltävänä>"
-	"käsitellä" VERB ESS POS SG PRESENT PSS
+	"käsitellä" VERB ESS POS SG PCPVA PSS
 "<.>"
 	"." PUNCT
 
@@ -15650,13 +15650,13 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<,>"
 	"," PUNCT
 "<halutessaan>"
-	"haluta" VERB INE INFE SG 3 ACT
+	"haluta" VERB INE INFE SG POSS+3 ACT
 "<saada>"
 	"saada" VERB INFA SG ACT
 "<tuon>"
@@ -15676,7 +15676,7 @@
 "<jälkipolvien>"
 	"jälki#polvi" NOUN GEN PL
 "<luettavaksi>"
-	"luettaa" VERB TRA POS SG PRESENT ACT
+	"luettaa" VERB TRA POS SG PCPVA ACT
 "<,>"
 	"," PUNCT
 "<halusi>"
@@ -15709,7 +15709,7 @@
 "<Olympia-kylästä>"
 	"olympia#kylä" NOUN ELA SG
 "<huolehtiva>"
-	"huolehtia" VERB NOM POS SG PRESENT ACT
+	"huolehtia" VERB NOM POS SG PCPVA ACT
 "<nakkikojuketjun>"
 	"nakki#koju#ketju" NOUN GEN SG
 "<omistaja>"
@@ -15725,7 +15725,7 @@
 "<kisailijoista>"
 	"kisailija" NOUN ELA <Ja> PL
 "<huolehtivaa>"
-	"huolehtia" VERB PAR POS SG PRESENT ACT
+	"huolehtia" VERB PAR POS SG PCPVA ACT
 "<aluetta>"
 	"alue" NOUN PAR SG
 "<ja>"
@@ -15772,7 +15772,7 @@
 "<että>"
 	"että" SCONJ
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<,>"
@@ -15800,13 +15800,13 @@
 "<koko>"
 	"koko" ADJ NOM POS SG
 "<haasteensa>"
-	"haaste" NOUN GEN SG 3
+	"haaste" NOUN GEN SG POSS+3
 "<paperille>"
 	"paperi" NOUN ALL SG
 "<,>"
 	"," PUNCT
 "<tiedettyään>"
-	"tietää" VERB PAR POS SG PCPNUT 3 PSS
+	"tietää" VERB PAR POS SG PCPNUT POSS+3 PSS
 "<jo>"
 	"jo" ADV
 "<etukäteen>"
@@ -15832,13 +15832,13 @@
 "<tuon>"
 	"tuo" PRON GEN SG DEM
 "<luettavaksi>"
-	"lukea" VERB TRA POS SG PRESENT PSS
+	"lukea" VERB TRA POS SG PCPVA PSS
 "<tarkoitetun>"
 	"tarkoittaa" VERB GEN POS SG PCPNUT PSS
 "<tekstin>"
 	"teksti" NOUN GEN SG
 "<luettavaan>"
-	"lukea" VERB ILL POS SG PRESENT PSS
+	"lukea" VERB ILL POS SG PCPVA PSS
 "<ja>"
 	"ja" CCONJ
 "<nimenomaan>"
@@ -15850,7 +15850,7 @@
 "<helposti>"
 	"helposti" ADV <Sti>
 "<luettavaan>"
-	"lukea" VERB ILL POS SG PRESENT PSS
+	"lukea" VERB ILL POS SG PCPVA PSS
 "<muotoon>"
 	"muoto" NOUN ILL SG
 "<.>"
@@ -15865,7 +15865,7 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<palkkaama>"
@@ -15910,7 +15910,7 @@
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokisen>"
 	"Jokinen" PROPN GEN SG
 "<insinööritaitojen>"
@@ -15957,7 +15957,7 @@
 # text = Oikoluettuaan oikolukuhetkellä aikaansaadun tekstin tuosta hänen suunnittelurajoittuneisuuteensa sisällöltään pyrkivää tekstiä, A. Jokinen saattoi tajuta, ettei ole minkäänlaisia perusteluita kirjoittaa yhtään pidempää tarinaa siitä, ettei A. Jokinen saanut edes haasteiden edessä kompastumistaan kirjoitettua siten, etteikö sokea koirakin olisi nauranut sille viimeistään kuvatekstien kohdalla.
 # sent_id =  fB04.13
 "<Oikoluettuaan>"
-	"oiko#lukea" VERB PAR POS SG PCPNUT 3 PSS
+	"oiko#lukea" VERB PAR POS SG PCPNUT POSS+3 PSS
 "<oikolukuhetkellä>"
 	"oiko#luku#hetki" NOUN ADE SG
 "<aikaansaadun>"
@@ -15969,17 +15969,17 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<suunnittelurajoittuneisuuteensa>"
-	"suunnittelu#rajoittuneisuuteensa" NOUN ILL SG 3
+	"suunnittelu#rajoittuneisuuteensa" NOUN ILL SG POSS+3
 "<sisällöltään>"
-	"sisältö" NOUN ABL SG 3
+	"sisältö" NOUN ABL SG POSS+3
 "<pyrkivää>"
-	"pyrkiä" VERB PAR POS SG PRESENT ACT
+	"pyrkiä" VERB PAR POS SG PCPVA ACT
 "<tekstiä>"
 	"teksti" NOUN PAR SG
 "<,>"
 	"," PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<saattoi>"
@@ -16011,7 +16011,7 @@
 "<ettei>"
 	"että#ei" VERB SG3 NEG ACT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<saanut>"
@@ -16023,7 +16023,7 @@
 "<edessä>"
 	"edessä" ADP POST
 "<kompastumistaan>"
-	"kompastuminen" NOUN PAR <Minen> SG 3
+	"kompastuminen" NOUN PAR <Minen> SG POSS+3
 "<kirjoitettua>"
 	"kirjoittaa" VERB PAR POS SG PCPNUT PSS
 "<siten>"
@@ -16077,7 +16077,7 @@
 "<)>"
 	")" PUNCT
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Jokinen>"
 	"Jokinen" PROPN NOM SG
 "<työntömitan>"
@@ -16126,7 +16126,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<suunnitelmiensa>"
-	"suunnitelma" NOUN GEN PL 3
+	"suunnitelma" NOUN GEN PL POSS+3
 "<mukaan>"
 	"mukaan" ADP POST
 "<tarvitaan>"
@@ -16136,7 +16136,7 @@
 "<kattamiseksi>"
 	"kattaminen" NOUN TRA <Minen> SG
 "<rakennettavaan>"
-	"rakentaa" VERB ILL POS SG PRESENT PSS
+	"rakentaa" VERB ILL POS SG PCPVA PSS
 "<perinteiseen>"
 	"perinteinen" ADJ ILL POS <Inen> SG
 "<siltakatoskattoon>"
@@ -16187,7 +16187,7 @@
 "<aloitteli>"
 	"aloitella" VERB INDV SG3 PAST ACT
 "<aamuaan>"
-	"aamu" NOUN PAR SG 3
+	"aamu" NOUN PAR SG POSS+3
 "<aamupalaa>"
 	"aamu#pala" NOUN PAR SG
 "<valmistaen>"
@@ -16426,7 +16426,7 @@
 "<,>"
 	"," PUNCT
 "<aikomuksenaan>"
-	"aikomus" NOUN ESS SG 3
+	"aikomus" NOUN ESS SG POSS+3
 "<leikata>"
 	"leikata" VERB INFA SG ACT
 "<sillä>"
@@ -16436,7 +16436,7 @@
 "<maksamakkaraa>"
 	"maksa#makkara" NOUN PAR SG
 "<ruisleivälleen>"
-	"ruis#leipä" NOUN ALL SG 3
+	"ruis#leipä" NOUN ALL SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -16445,7 +16445,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<mielestään>"
-	"mieli" NOUN ELA SG 3
+	"mieli" NOUN ELA SG POSS+3
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<ollut>"
@@ -16505,7 +16505,7 @@
 "<pehmeään>"
 	"pehmeä" ADJ ILL POS SG
 "<makkaraa>"
-	"makkara" NOUN ILL SG YES
+	"makkara" NOUN ILL SG TYPO
 "<se>"
 	"se" PRON NOM SG DEM
 "<pysähtyi>"
@@ -16524,7 +16524,7 @@
 "<äsken>"
 	"äsken" ADV
 "<kuulemaansa>"
-	"kuulla" VERB PAR POS SG AGT 3 ACT
+	"kuulla" VERB PAR POS SG AGT POSS+3 ACT
 "<ja>"
 	"ja" CCONJ
 "<kääntyi>"
@@ -16643,7 +16643,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<kehoonsa>"
-	"keho" NOUN ILL SG 3
+	"keho" NOUN ILL SG POSS+3
 "<,>"
 	"," PUNCT
 "<ja>"
@@ -16659,11 +16659,11 @@
 "<alla>"
 	"alla" ADP POST
 "<nipistettävä>"
-	"nipistää" VERB NOM POS SG PRESENT PSS
+	"nipistää" VERB NOM POS SG PCPVA PSS
 "<itseään>"
-	"itse" PRON PAR SG 3 YES
+	"itse" PRON PAR SG POSS+3 REFLEX
 "<todetakseen>"
-	"todeta" VERB TRA INFA SG 3 ACT
+	"todeta" VERB TRA INFA SG POSS+3 ACT
 "<,>"
 	"," PUNCT
 "<että>"
@@ -16717,7 +16717,7 @@
 "<jatkoi>"
 	"jatkaa" VERB INDV SG3 PAST ACT
 "<puhettaan>"
-	"puhe" NOUN PAR SG 3
+	"puhe" NOUN PAR SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -16767,7 +16767,7 @@
 "<kumihansikkain>"
 	"kumi#hansikas" NOUN INS PL
 "<kuivaustelineestämme>"
-	"kuivaus#teline" NOUN ELA SG PLUR 1
+	"kuivaus#teline" NOUN ELA SG POSSPL1
 "<,>"
 	"," PUNCT
 "<ottaa>"
@@ -16833,7 +16833,7 @@
 "<hörpyn>"
 	"hörppy" NOUN GEN <U> SG
 "<kahviaan>"
-	"kahvi" NOUN PAR SG 3
+	"kahvi" NOUN PAR SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<yritti>"
@@ -16987,9 +16987,9 @@
 "<huolen>"
 	"huoli" NOUN GEN SG
 "<jatkaessaan>"
-	"jatkaa" VERB INE INFE SG 3 ACT
+	"jatkaa" VERB INE INFE SG POSS+3 ACT
 "<selontekoaan>"
-	"selon#teko" NOUN PAR SG 3
+	"selon#teko" NOUN PAR SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<näin>"
@@ -17083,7 +17083,7 @@
 "<edellä>"
 	"edellä" ADV
 "<kuvaamallani>"
-	"kuvata" VERB ADE POS SG SING AGT 1 ACT
+	"kuvata" VERB ADE POS SG POSSSG AGT POSS+1 ACT
 "<menetelmällä>"
 	"menetelmä" NOUN ADE SG
 "<,>"
@@ -17123,7 +17123,7 @@
 # text = Mielestäni kyllä, koska kuvaamallasi puhdistusmenetelmällä sitä olisi mahdoton saada lähellekään puhdasta.
 # sent_id =  fF01.36
 "<Mielestäni>"
-	"mieli" NOUN ELA SG SING 1
+	"mieli" NOUN ELA SG POSSSG1
 "<kyllä>"
 	"kyllä" ADV
 "<,>"
@@ -17131,7 +17131,7 @@
 "<koska>"
 	"koska" SCONJ
 "<kuvaamallasi>"
-	"kuvata" VERB ADE POS SG SING AGT 2 ACT
+	"kuvata" VERB ADE POS SG POSSSG AGT POSS+2 ACT
 "<puhdistusmenetelmällä>"
 	"puhdistus#menetelmä" NOUN ADE SG
 "<sitä>"
@@ -17205,17 +17205,17 @@
 "<huomasi>"
 	"huomata" VERB INDV SG3 PAST ACT
 "<tyhjentäneensä>"
-	"tyhjentää" VERB GEN POS SG PCPNUT 3 ACT
+	"tyhjentää" VERB GEN POS SG PCPNUT POSS+3 ACT
 "<kuppinsa>"
-	"kuppi" NOUN GEN SG 3
+	"kuppi" NOUN GEN SG POSS+3
 "<kuunnellessa>"
-	"kuunnella" VERB INE INFE SG 3 YES ACT
+	"kuunnella" VERB INE INFE SG POSS+3 TYPO ACT
 "<Pekan>"
 	"Pekka" PROPN GEN SG
 "<esitelmöintiä>"
 	"esitelmöinti" NOUN PAR SG
 "<veitsiaiheestaan>"
-	"veitsi#aihe" NOUN ELA SG 3
+	"veitsi#aihe" NOUN ELA SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -17232,7 +17232,7 @@
 "<huomannut>"
 	"huomata" VERB NOM POS SG PCPNUT ACT
 "<tehneensä>"
-	"tehdä" VERB GEN POS SG PCPNUT 3 ACT
+	"tehdä" VERB GEN POS SG PCPNUT POSS+3 ACT
 "<niin>"
 	"niin" ADV
 "<.>"
@@ -17291,7 +17291,7 @@
 "<aallon>"
 	"aalto" NOUN GEN SG
 "<sisällään>"
-	"sisällä" ADV 3
+	"sisällä" ADV POSS+3
 "<mutta>"
 	"mutta" CCONJ
 "<päätti>"
@@ -17305,7 +17305,7 @@
 "<nauttimalla>"
 	"nauttia" VERB ADE INFMA SG ACT
 "<espressonsa>"
-	"espresso" NOUN GEN SG 3
+	"espresso" NOUN GEN SG POSS+3
 "<tuplana>"
 	"tupla" NOUN ESS SG
 "<päivällisen>"
@@ -17324,7 +17324,7 @@
 "<veistä>"
 	"veitsi" NOUN PAR SG
 "<kädessään>"
-	"käsi" NOUN INE SG 3
+	"käsi" NOUN INE SG POSS+3
 "<mietteliään>"
 	"mietteliäs" ADJ GEN POS SG
 "<näköisenä>"
@@ -17343,7 +17343,7 @@
 "<ruisleipäviipale>"
 	"ruis#leipä#viipale" NOUN NOM SG
 "<vierellään>"
-	"vierellä" ADV 3
+	"vierellä" ADV POSS+3
 "<.>"
 	"." PUNCT
 
@@ -17445,7 +17445,7 @@
 "<todistaa>"
 	"todistaa" VERB INFA SG ACT
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<toisin>"
 	"toisin" ADV
 "<.>"
@@ -17524,7 +17524,7 @@
 "<jatkaa>"
 	"jatkaa" VERB INFA SG ACT
 "<aamupalaamme>"
-	"aamu#pala" NOUN PAR SG PLUR 1
+	"aamu#pala" NOUN PAR SG POSSPL1
 "<.>"
 	"." PUNCT
 "<”>"
@@ -17537,7 +17537,7 @@
 "<lopetti>"
 	"lopettaa" VERB INDV SG3 PAST ACT
 "<lauseensa>"
-	"lause" NOUN GEN SG 3
+	"lause" NOUN GEN SG POSS+3
 "<leveään>"
 	"leveä" ADJ ILL POS SG
 "<hymyyn>"
@@ -17557,7 +17557,7 @@
 "<keskeytynyttä>"
 	"keskeytyä" VERB PAR POS SG PCPNUT ACT
 "<työtään>"
-	"työ" NOUN PAR SG 3
+	"työ" NOUN PAR SG POSS+3
 "<maksamakkaran>"
 	"maksa#makkara" NOUN GEN SG
 "<sekä>"
@@ -17590,7 +17590,7 @@
 "<vaivalla>"
 	"vaiva" NOUN ADE SG
 "<ajatuksensa>"
-	"ajatus" NOUN NOM PL 3
+	"ajatus" NOUN NOM PL POSS+3
 "<kasaan>"
 	"kasaan" ADV
 "<ja>"
@@ -17664,7 +17664,7 @@
 "<Viisas>"
 	"viisas" ADJ NOM POS SG
 "<ystäväni>"
-	"ystävä" NOUN GEN SG SING 1
+	"ystävä" NOUN GEN SG POSSSG1
 "<kertoi>"
 	"kertoa" VERB INDV SG3 PAST ACT
 "<koko>"
@@ -17678,7 +17678,7 @@
 "<Hyväksy>"
 	"hyväksyä" VERB IMPV SG2 ACT
 "<itsesi>"
-	"itse" PRON NOM SG SING 2 YES
+	"itse" PRON NOM SG POSSSG2 REFLEX
 "<,>"
 	"," PUNCT
 "<ole>"
@@ -17686,13 +17686,13 @@
 "<oma>"
 	"oma" ADJ NOM POS SG
 "<itsesi>"
-	"itse" PRON NOM SG SING 2 YES
+	"itse" PRON NOM SG POSSSG2 REFLEX
 "<ja>"
 	"ja" CCONJ
 "<nauti>"
 	"nauttia" VERB IMPV SG2 ACT
 "<elämästäsi>"
-	"elämä" NOUN ELA SG SING 2
+	"elämä" NOUN ELA SG POSSSG2
 "<.>"
 	"." PUNCT
 
@@ -17881,7 +17881,7 @@
 "<Tietysti>"
 	"tietysti" ADV <Sti>
 "<BMW>"
-	"BMW" PROPN YES NOM SG
+	"BMW" PROPN <ABBR> NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<muilta>"
@@ -18223,7 +18223,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<ratkottavissa>"
-	"ratkoa" VERB INE POS PL PRESENT PSS
+	"ratkoa" VERB INE POS PL PCPVA PSS
 "<.>"
 	"." PUNCT
 
@@ -18302,11 +18302,11 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<pyrkimyksiään>"
-	"pyrkimys" NOUN PAR PL 3
+	"pyrkimys" NOUN PAR PL POSS+3
 "<saattaa>"
 	"saattaa" VERB INFA SG ACT
 "<miehensä>"
-	"mies" NOUN NOM SG 3
+	"mies" NOUN NOM SG POSS+3
 "<Valkoisen>"
 	"valkoinen" ADJ GEN POS <Inen> SG
 "<talon>"
@@ -18382,7 +18382,7 @@
 "<näytelmää>"
 	"näytelmä" NOUN PAR SG
 "<parantaakseen>"
-	"parantaa" VERB TRA INFA SG 3 ACT
+	"parantaa" VERB TRA INFA SG POSS+3 ACT
 "<Karvaturri>"
 	"karva#turri" NOUN NOM SG
 "<suukotteli>"
@@ -18591,7 +18591,7 @@
 "<kokouksesta>"
 	"kokous" NOUN ELA SG
 "<elävänä>"
-	"elää" VERB ESS POS SG PRESENT ACT
+	"elää" VERB ESS POS SG PCPVA ACT
 "<">"
 	""" PUNCT
 "<,>"
@@ -18686,7 +18686,7 @@
 "<oma>"
 	"oma" ADJ NOM POS SG
 "<suosikkinsa>"
-	"suosikki" NOUN NOM SG 3
+	"suosikki" NOUN NOM SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -18701,7 +18701,7 @@
 "<kokoontuivat>"
 	"kokoontua" VERB INDV PL3 PAST ACT
 "<palatseihinsa>"
-	"palatsi" NOUN ILL PL 3
+	"palatsi" NOUN ILL PL POSS+3
 "<päivälliselle>"
 	"päivällinen" ADJ ALL POS <Llinen> SG
 "<.>"
@@ -18835,7 +18835,7 @@
 "<tajusin>"
 	"tajuta" VERB INDV SG1 PAST ACT
 "<ihastuneeni>"
-	"ihastua" VERB GEN POS SG SING PCPNUT 1 ACT
+	"ihastua" VERB GEN POS SG POSSSG PCPNUT POSS+1 ACT
 "<sinuun>"
 	"sinä" PRON ILL SG2 PRS
 "<->"
@@ -18955,7 +18955,7 @@
 "<hoitamaan>"
 	"hoitaa" VERB ILL INFMA SG ACT
 "<tehtäviäsi>"
-	"tehtävä" NOUN PAR PL SING 2
+	"tehtävä" NOUN PAR PL POSSSG2
 "<.>"
 	"." PUNCT
 
@@ -19068,7 +19068,7 @@
 "<Rakastakaa>"
 	"rakastaa" VERB IMPV PL2 ACT
 "<toisianne>"
-	"toinen" PRON PAR PL PLUR 2 RCP
+	"toinen" PRON PAR PL POSSPL2 RCP
 "<.>"
 	"." PUNCT
 
@@ -19120,7 +19120,7 @@
 "<kahdessa>"
 	"kaksi" NUM INE SG CARD
 "<valtakunnallisissa>"
-	"valta#kunnallinen" ADJ INE POS <Llinen> SG YES
+	"valta#kunnallinen" ADJ INE POS <Llinen> SG TYPO
 "<näyttelyssä>"
 	"näyttely" NOUN INE <U> SG
 "<.>"
@@ -19129,9 +19129,9 @@
 # text = Menetettyään joukkonsa Santala synnytti uuden liiton
 # sent_id =  h1039.3
 "<Menetettyään>"
-	"menettää" VERB PAR POS SG PCPNUT 3 PSS
+	"menettää" VERB PAR POS SG PCPNUT POSS+3 PSS
 "<joukkonsa>"
-	"joukko" NOUN NOM PL 3
+	"joukko" NOUN NOM PL POSS+3
 "<Santala>"
 	"Santala" PROPN NOM SG
 "<synnytti>"
@@ -19163,7 +19163,7 @@
 "<pistää>"
 	"pistää" VERB INFA SG ACT
 "<nimensä>"
-	"nimi" NOUN GEN SG 3
+	"nimi" NOUN GEN SG POSS+3
 "<aika>"
 	"aika" ADV
 "<outojenkin>"
@@ -19290,7 +19290,7 @@
 "<,>"
 	"," PUNCT
 "<kukkivien>"
-	"kukkia" VERB GEN POS PL PRESENT ACT
+	"kukkia" VERB GEN POS PL PCPVA ACT
 "<pajujen>"
 	"paju" NOUN GEN PL
 "<kohdalla>"
@@ -19313,7 +19313,7 @@
 "<antaa>"
 	"antaa" VERB INDV SG3 PRESENT ACT
 "<ennakkolausuntonsa>"
-	"ennakko#lausunto" NOUN GEN SG 3
+	"ennakko#lausunto" NOUN GEN SG POSS+3
 "<kolmen>"
 	"kolme" NUM GEN SG CARD
 "<viikon>"
@@ -19694,7 +19694,7 @@
 "<surmannut>"
 	"surmata" VERB NOM POS SG PCPNUT ACT
 "<lapsensa>"
-	"lapsi" NOUN GEN SG 3
+	"lapsi" NOUN GEN SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -19753,7 +19753,7 @@
 "<kertoi>"
 	"kertoa" VERB INDV SG3 PAST ACT
 "<saaneensa>"
-	"saada" VERB GEN POS SG PCPNUT 3 ACT
+	"saada" VERB GEN POS SG PCPNUT POSS+3 ACT
 "<kokouksessa>"
 	"kokous" NOUN INE SG
 "<sellaisen>"
@@ -19971,7 +19971,7 @@
 "<mahdollista>"
 	"mahdollinen" ADJ PAR POS <Llinen> SG
 "<ehdokkuuttaan>"
-	"ehdokkuus" NOUN PAR <Vs> SG 3
+	"ehdokkuus" NOUN PAR <Vs> SG POSS+3
 "<tyrmää>"
 	"tyrmätä" VERB CONNEG INDV PRESENT
 "<.>"
@@ -20059,7 +20059,7 @@
 "<Joko>"
 	"joko" CCONJ
 "<itse>"
-	"itse" PRON NOM PL YES
+	"itse" PRON NOM PL REFLEX
 "<tankit>"
 	"tankki" NOUN NOM PL
 "<vuotivat>"
@@ -20251,7 +20251,7 @@
 "<ratsasti>"
 	"ratsastaa" VERB INDV SG3 PAST ACT
 "<itsensä>"
-	"itse" PRON GEN SG 3 YES
+	"itse" PRON GEN SG POSS+3 REFLEX
 "<pahan>"
 	"paha" ADJ GEN POS SG
 "<kerran>"
@@ -20332,7 +20332,7 @@
 "<Otc-listaa>"
 	"Otc#lista" NOUN PAR SG
 "<koskevat>"
-	"koskea" VERB NOM POS PL PRESENT ACT
+	"koskea" VERB NOM POS PL PCPVA ACT
 "<Arvopaperivälittäjien>"
 	"arvo#paperi#välittäjä" NOUN GEN <Ja> PL
 "<yhdistyksen>"
@@ -20373,7 +20373,7 @@
 "<heidän>"
 	"hän" PRON GEN PL3 PRS
 "<uurastustaan>"
-	"uurastus" NOUN PAR SG 3
+	"uurastus" NOUN PAR SG POSS+3
 "<sieltä>"
 	"sieltä" ADV
 "<.>"
@@ -20439,7 +20439,7 @@
 "<oman>"
 	"oma" ADJ GEN POS SG
 "<ennätyksensä>"
-	"ennätys" NOUN GEN SG 3
+	"ennätys" NOUN GEN SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<tämän>"
@@ -20543,7 +20543,7 @@
 "<kärsiä>"
 	"kärsiä" VERB INFA SG ACT
 "<romaaninsa>"
-	"romaani" NOUN GEN SG 3
+	"romaani" NOUN GEN SG POSS+3
 "<väärin>"
 	"väärin" ADV
 "<lukemisesta>"
@@ -20554,7 +20554,7 @@
 "<olkapäille>"
 	"olka#pää" NOUN ALL PL
 "<valuva>"
-	"valua" VERB NOM POS SG PRESENT ACT
+	"valua" VERB NOM POS SG PCPVA ACT
 "<tukka>"
 	"tukka" NOUN NOM SG
 "<on>"
@@ -20635,7 +20635,7 @@
 "<heidän>"
 	"hän" PRON GEN PL3 PRS
 "<valittavanaan>"
-	"valita" VERB ESS POS SG PRESENT 3 PSS
+	"valita" VERB ESS POS SG PCPVA POSS+3 PSS
 "<oli>"
 	"olla" VERB INDV SG3 PAST ACT
 "<yli>"
@@ -20667,7 +20667,7 @@
 "<lauantaina>"
 	"lauantai" NOUN ESS SG
 "<aloittavansa>"
-	"aloittaa" VERB GEN POS SG PRESENT 3 ACT
+	"aloittaa" VERB GEN POS SG PCPVA POSS+3 ACT
 "<maan>"
 	"maa" NOUN GEN SG
 "<eteläosien>"
@@ -20753,7 +20753,7 @@
 "<Vastoin>"
 	"vastoin" ADP PREP
 "<tapojani>"
-	"tapa" NOUN PAR PL SING 1
+	"tapa" NOUN PAR PL POSSSG1
 "<minun>"
 	"minä" PRON GEN SG1 PRS
 "<on>"
@@ -20765,7 +20765,7 @@
 "<päivätä>"
 	"päivätä" VERB INFA SG ACT
 "<muistikirjani>"
-	"muisti#kirja" NOUN NOM SG SING 1
+	"muisti#kirja" NOUN NOM SG POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -20878,7 +20878,7 @@
 # text = Kuvatekstinne Kaksi kiusausta, parempi ja huonompi suututti minut.
 # sent_id =  h1073.7
 "<Kuvatekstinne>"
-	"kuva#teksti" NOUN NOM SG PLUR 2
+	"kuva#teksti" NOUN NOM SG POSSPL2
 "<Kaksi>"
 	"kaksi" NUM NOM SG CARD
 "<kiusausta>"
@@ -20991,7 +20991,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mentävä>"
-	"mennä" VERB NOM POS SG PRESENT PSS
+	"mennä" VERB NOM POS SG PCPVA PSS
 "<itse>"
 	"itse" ADV
 "<mukaan>"
@@ -21076,7 +21076,7 @@
 "<työkalut>"
 	"työ#kalu" NOUN NOM PL
 "<työnantajalleen>"
-	"työnantaja" NOUN ALL <Ja> SG 3
+	"työnantaja" NOUN ALL <Ja> SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -21271,7 +21271,7 @@
 "<pidätetään>"
 	"pidättää" VERB INDV PRESENT PSS
 "<hengitystään>"
-	"hengitys" NOUN PAR SG 3
+	"hengitys" NOUN PAR SG POSS+3
 
 # text = Kirjolohilaitoksista moni lopettamassa tuotantonsa
 # sent_id =  h1075.2
@@ -21282,7 +21282,7 @@
 "<lopettamassa>"
 	"lopettaa" VERB INE INFMA SG ACT
 "<tuotantonsa>"
-	"tuotanto" NOUN GEN SG 3
+	"tuotanto" NOUN GEN SG POSS+3
 
 # text = Samalla syntyy riipaisevia runoja Carelia-lehden sivuille nimellä Katri Korvela.
 # sent_id =  h1075.3
@@ -21404,7 +21404,7 @@
 "<kuvittelet>"
 	"kuvitella" VERB INDV SG2 PRESENT ACT
 "<tuntevasi>"
-	"tuntea" VERB GEN POS SG SING PRESENT 2 ACT
+	"tuntea" VERB GEN POS SG POSSSG PCPVA POSS+2 ACT
 "<minut>"
 	"minä" PRON ACC SG1 PRS
 "<,>"
@@ -21456,7 +21456,7 @@
 # text = Käyttölupani on vanhenemassa, miten uusin sen?
 # sent_id =  h1075.10
 "<Käyttölupani>"
-	"käyttö#lupa" NOUN NOM SG SING 1
+	"käyttö#lupa" NOUN NOM SG POSSSG1
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<vanhenemassa>"
@@ -21534,7 +21534,7 @@
 "<katua>"
 	"katua" VERB INFA SG ACT
 "<hyvyyttäni>"
-	"hyvyys" NOUN PAR SG SING 1
+	"hyvyys" NOUN PAR SG POSSSG1
 "<,>"
 	"," PUNCT
 "<se>"
@@ -21555,11 +21555,11 @@
 "<sai>"
 	"saada" VERB INDV SG3 PAST ACT
 "<maamme>"
-	"maa" NOUN GEN SG PLUR 1
+	"maa" NOUN GEN SG POSSPL1
 "<varttuneiston>"
 	"varttuneisto" NOUN GEN SG
 "<raivoihinsa>"
-	"raivo" NOUN ILL PL 3
+	"raivo" NOUN ILL PL POSS+3
 "<.>"
 	"." PUNCT
 
@@ -21626,13 +21626,13 @@
 # text = Tihentyvässä metsässä ja paksunevassa sammalikossa kukinta heikkenee.
 # sent_id =  h1075.20
 "<Tihentyvässä>"
-	"tihentyä" VERB INE POS SG PRESENT ACT
+	"tihentyä" VERB INE POS SG PCPVA ACT
 "<metsässä>"
 	"metsä" NOUN INE SG
 "<ja>"
 	"ja" CCONJ
 "<paksunevassa>"
-	"paksuta" VERB INE POS SG PRESENT ACT
+	"paksuta" VERB INE POS SG PCPVA ACT
 "<sammalikossa>"
 	"sammalikko" NOUN INE SG
 "<kukinta>"
@@ -21701,7 +21701,7 @@
 "<että>"
 	"että" SCONJ
 "<tuloksesi>"
-	"tulos" NOUN NOM PL SING 2
+	"tulos" NOUN NOM PL POSSSG2
 "<olivat>"
 	"olla" AUX INDV PL3 PAST ACT
 "<niin>"
@@ -21740,11 +21740,11 @@
 "<kukkia>"
 	"kukka" NOUN PAR PL
 "<isäsi>"
-	"isä" NOUN GEN SG SING 2
+	"isä" NOUN GEN SG POSSSG2
 "<ja>"
 	"ja" CCONJ
 "<äitisi>"
-	"äiti" NOUN GEN SG SING 2
+	"äiti" NOUN GEN SG POSSSG2
 "<haudalle>"
 	"hauta" NOUN ALL SG
 "<.>"
@@ -21766,11 +21766,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<1/2005>"
 	"1/2005" NUM CARD
 "<,>"
@@ -21798,7 +21798,7 @@
 "<siihen>"
 	"se" PRON ILL SG DEM
 "<liittyvien>"
-	"liittyä" VERB GEN POS PL PRESENT ACT
+	"liittyä" VERB GEN POS PL PCPVA ACT
 "<toimenpiteiden>"
 	"toimen#pide" NOUN GEN PL
 "<aikana>"
@@ -21820,11 +21820,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<1255/97>"
 	"1255/97" NUM CARD
 "<muuttamisesta>"
@@ -21972,11 +21972,11 @@
 "<huomioon>"
 	"huomio" NOUN ILL SG
 "<laatiessaan>"
-	"laatia" VERB INE INFE SG 3 ACT
+	"laatia" VERB INE INFE SG POSS+3 ACT
 "<ja>"
 	"ja" CCONJ
 "<pannessaan>"
-	"panna" VERB INE INFE SG 3 ACT
+	"panna" VERB INE INFE SG POSS+3 ACT
 "<täytäntöön>"
 	"täytäntöön" ADV
 "<yhteisön>"
@@ -22035,7 +22035,7 @@
 "<kuljetusta>"
 	"kuljetus" NOUN PAR SG
 "<koskevia>"
-	"koskea" VERB PAR POS PL PRESENT ACT
+	"koskea" VERB PAR POS PL PCPVA ACT
 "<sääntöjä>"
 	"sääntö" NOUN PAR PL
 "<,>"
@@ -22180,7 +22180,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevaan>"
-	"olla" VERB ILL POS SG PRESENT ACT
+	"olla" VERB ILL POS SG PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<lainsäädäntöön>"
@@ -22288,7 +22288,7 @@
 "<,>"
 	"," PUNCT
 "<rajoitettava>"
-	"rajoittaa" VERB NOM POS SG PRESENT PSS
+	"rajoittaa" VERB NOM POS SG PCPVA PSS
 "<vähimpään>"
 	"vähä" ADJ ILL SUP SG
 "<mahdolliseen>"
@@ -22325,7 +22325,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<lainsäädännön>"
@@ -22399,7 +22399,7 @@
 "<käyttöön>"
 	"käyttö" NOUN ILL SG
 "<otettavista>"
-	"ottaa" VERB ELA POS PL PRESENT PSS
+	"ottaa" VERB ELA POS PL PCPVA PSS
 "<tiukemmista>"
 	"tiukka" ADJ ELA CMP PL
 "<vaatimuksista>"
@@ -22452,7 +22452,7 @@
 "<kuljetusta>"
 	"kuljetus" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<lainsäädännön>"
@@ -22566,7 +22566,7 @@
 "<rajatarkastusasemilla>"
 	"raja#tarkastus#asema" NOUN ADE PL
 "<tehtäviin>"
-	"tehdä" VERB ILL POS PL PRESENT PSS
+	"tehdä" VERB ILL POS PL PCPVA PSS
 "<eläinlääkinnällisiin>"
 	"eläin#lääkinnällinen" ADJ ILL POS <Llinen> PL
 "<tarkastuksiin>"
@@ -22605,7 +22605,7 @@
 "<hyvinvointia>"
 	"hyvin#vointi" NOUN PAR SG
 "<käsittelevä>"
-	"käsitellä" VERB NOM POS SG PRESENT ACT
+	"käsitellä" VERB NOM POS SG PCPVA ACT
 "<tiedekomitea>"
 	"tiede#komitea" NOUN NOM SG
 "<antoi>"
@@ -22644,7 +22644,7 @@
 "<vuoksi>"
 	"vuoksi" ADP POST
 "<muutettava>"
-	"muuttaa" VERB NOM POS SG PRESENT PSS
+	"muuttaa" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<jotta>"
@@ -22703,7 +22703,7 @@
 "<koiria>"
 	"koira" NOUN PAR PL
 "<koskevista>"
-	"koskea" VERB ELA POS PL PRESENT ACT
+	"koskea" VERB ELA POS PL PCPVA ACT
 "<erityissäännöksistä>"
 	"erityis#säännös" NOUN ELA PL
 "<tehdään>"
@@ -22735,7 +22735,7 @@
 "<koskevat>"
 	"koskea" VERB INDV PL3 PRESENT ACT
 "<lausuntonsa>"
-	"lausunto" NOUN NOM SG 3
+	"lausunto" NOUN NOM SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -22754,7 +22754,7 @@
 "<eläinkuljetuksia>"
 	"eläin#kuljetus" NOUN PAR PL
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<lainsäädännön>"
@@ -22853,7 +22853,7 @@
 "<erityistarpeita>"
 	"erityis#tarve" NOUN PAR PL
 "<omaavia>"
-	"omata" VERB PAR POS PL PRESENT ACT
+	"omata" VERB PAR POS PL PCPVA ACT
 "<lajeja>"
 	"laji" NOUN PAR PL
 "<varten>"
@@ -22903,7 +22903,7 @@
 "<lajeihin>"
 	"laji" NOUN ILL PL
 "<kuuluvien>"
-	"kuulua" VERB GEN POS PL PRESENT ACT
+	"kuulua" VERB GEN POS PL PCPVA ACT
 "<eläinten>"
 	"eläin" NOUN GEN PL
 "<kuljetuksen>"
@@ -23002,7 +23002,7 @@
 "<kuljetuksiin>"
 	"kuljetus" NOUN ILL PL
 "<liittyviä>"
-	"liittyä" VERB PAR POS PL PRESENT ACT
+	"liittyä" VERB PAR POS PL PCPVA ACT
 "<erityistarpeita>"
 	"erityis#tarve" NOUN PAR PL
 "<.>"
@@ -23019,11 +23019,11 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<tulkittava>"
-	"tulkita" VERB NOM POS SG PRESENT PSS
+	"tulkita" VERB NOM POS SG PCPVA PSS
 "<ja>"
 	"ja" CCONJ
 "<sovellettava>"
-	"soveltaa" VERB NOM POS SG PRESENT PSS
+	"soveltaa" VERB NOM POS SG PCPVA PSS
 "<edellä>"
 	"edellä" ADV
 "<mainitun>"
@@ -23041,7 +23041,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<ajantasaistettava>"
-	"ajantasaistaa" VERB NOM POS SG PRESENT PSS
+	"ajantasaistaa" VERB NOM POS SG PCPVA PSS
 "<aina>"
 	"aina" ADV
 "<silloin>"
@@ -23069,7 +23069,7 @@
 "<näytä>"
 	"näyttää" VERB CONNEG INDV PRESENT
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<edellä>"
 	"edellä" ADV
 "<mainitun>"
@@ -23304,7 +23304,7 @@
 "<pysähdyspaikkoja>"
 	"pysähdys#paikka" NOUN PAR PL
 "<koskevista>"
-	"koskea" VERB ELA POS PL PRESENT ACT
+	"koskea" VERB ELA POS PL PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<vaatimuksista>"
@@ -23340,11 +23340,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<1255/97>"
 	"1255/97" NUM CARD
 "<säännöksiä>"
@@ -23388,7 +23388,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<asetettava>"
-	"asettaa" VERB NOM POS SG PRESENT PSS
+	"asettaa" VERB NOM POS SG PCPVA PSS
 "<ennakkoedellytykseksi>"
 	"ennakko#edellytys" NOUN TRA SG
 "<kaikille>"
@@ -23400,7 +23400,7 @@
 "<aikana>"
 	"aika" NOUN ESS SG
 "<käsitteleville>"
-	"käsitellä" VERB ALL POS PL PRESENT ACT
+	"käsitellä" VERB ALL POS PL PCPVA ACT
 "<henkilöille>"
 	"henkilö" NOUN ALL PL
 "<,>"
@@ -23509,7 +23509,7 @@
 "<ollen>"
 	"ollen" ADV
 "<toimittava>"
-	"toimia" VERB NOM POS SG PRESENT PSS
+	"toimia" VERB NOM POS SG PCPVA PSS
 "<vastuullisemmin>"
 	"vastuullisesti" ADV CMP <Sti>
 "<ja>"
@@ -23517,11 +23517,11 @@
 "<avoimemmin>"
 	"avoimesti" ADV CMP <Sti>
 "<asemansa>"
-	"asema" NOUN NOM SG 3
+	"asema" NOUN NOM SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<toimiensa>"
-	"toimi" NOUN GEN PL 3
+	"toimi" NOUN GEN PL POSS+3
 "<osalta>"
 	"osa" NOUN ABL SG
 "<.>"
@@ -23536,15 +23536,15 @@
 "<erityisesti>"
 	"erityisesti" ADV <Sti>
 "<annettava>"
-	"antaa" VERB NOM POS SG PRESENT PSS
+	"antaa" VERB NOM POS SG PCPVA PSS
 "<selvitys>"
 	"selvitys" NOUN NOM SG
 "<luvastaan>"
-	"lupa" NOUN ELA SG 3
+	"lupa" NOUN ELA SG POSS+3
 "<,>"
 	"," PUNCT
 "<raportoitava>"
-	"raportoida" VERB NOM POS SG PRESENT PSS
+	"raportoida" VERB NOM POS SG PCPVA PSS
 "<säännönmukaisesti>"
 	"säännön#mukaisesti" ADV <Sti>
 "<mahdollisista>"
@@ -23554,13 +23554,13 @@
 "<ja>"
 	"ja" CCONJ
 "<pidettävä>"
-	"pitää" VERB NOM POS SG PRESENT PSS
+	"pitää" VERB NOM POS SG PCPVA PSS
 "<tarkasti>"
 	"tarkasti" ADV <Sti>
 "<kirjaa>"
 	"kirja" NOUN PAR SG
 "<toiminnastaan>"
-	"toiminta" NOUN ELA SG 3
+	"toiminta" NOUN ELA SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<sen>"
@@ -23634,7 +23634,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<ulotettava>"
-	"ulottaa" VERB NOM POS SG PRESENT PSS
+	"ulottaa" VERB NOM POS SG PCPVA PSS
 "<koskemaan>"
 	"koskea" VERB ILL INFMA SG ACT
 "<kaikkia>"
@@ -23644,7 +23644,7 @@
 "<kuljetukseen>"
 	"kuljetus" NOUN ILL SG
 "<liittyviä>"
-	"liittyä" VERB PAR POS PL PRESENT ACT
+	"liittyä" VERB PAR POS PL PCPVA ACT
 "<toimijoita>"
 	"toimija" NOUN PAR <Ja> PL
 "<.>"
@@ -23682,7 +23682,7 @@
 "<olisikin>"
 	"olla" AUX CLITKIN COND SG3 ACT
 "<varmistettava>"
-	"varmistaa" VERB NOM POS SG PRESENT PSS
+	"varmistaa" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<että>"
@@ -23706,7 +23706,7 @@
 "<aikana>"
 	"aika" NOUN ESS SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<lainsäädännön>"
@@ -23762,7 +23762,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<laadittava>"
-	"laatia" VERB NOM POS SG PRESENT PSS
+	"laatia" VERB NOM POS SG PCPVA PSS
 "<erityismenettelyt>"
 	"erityis#menettely" NOUN NOM <U> PL
 "<,>"
@@ -23821,11 +23821,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<3820/85>"
 	"3820/85" NUM CARD
 "<säädetään>"
@@ -23889,11 +23889,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<3821/85>"
 	"3821/85" NUM CARD
 "<säädetään>"
@@ -23907,7 +23907,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<asennettava>"
-	"asentaa" VERB NOM POS SG PRESENT PSS
+	"asentaa" VERB NOM POS SG PCPVA PSS
 "<valvontalaitteet>"
 	"valvonta#laite" NOUN NOM PL
 "<ja>"
@@ -23917,7 +23917,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<käytettävä>"
-	"käyttää" VERB NOM POS SG PRESENT PSS
+	"käyttää" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<jotta>"
@@ -23931,7 +23931,7 @@
 "<tieliikennettä>"
 	"tie#liikenne" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<sosiaalilainsäädännön>"
 	"sosiaali#lain#säädäntö" NOUN GEN SG
 "<noudattaminen>"
@@ -23948,13 +23948,13 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<asetettava>"
-	"asettaa" VERB NOM POS SG PRESENT PSS
+	"asettaa" VERB NOM POS SG PCPVA PSS
 "<saataville>"
-	"saada" VERB ALL POS PL PRESENT PSS
+	"saada" VERB ALL POS PL PCPVA PSS
 "<ja>"
 	"ja" CCONJ
 "<tarkistettava>"
-	"tarkistaa" VERB NOM POS SG PRESENT PSS
+	"tarkistaa" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<jotta>"
@@ -23968,7 +23968,7 @@
 "<hyvinvointia>"
 	"hyvin#vointi" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<mukaisten>"
@@ -24009,7 +24009,7 @@
 "<aikana>"
 	"aika" NOUN ESS SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<lainsäädännön>"
@@ -24030,7 +24030,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<luotava>"
-	"luoda" VERB NOM POS SG PRESENT PSS
+	"luoda" VERB NOM POS SG PCPVA PSS
 "<joustavia>"
 	"joustava" ADJ PAR POS PL
 "<menettelyjä>"
@@ -24091,7 +24091,7 @@
 "<artiklan>"
 	"artikla" NOUN GEN SG
 "<c>"
-	"c" NOUN YES NOM SG
+	"c" NOUN <ABBR> NOM SG
 "<alakohdassa>"
 	"ala#kohta" NOUN INE SG
 "<,>"
@@ -24119,7 +24119,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<suoritettava>"
-	"suorittaa" VERB NOM POS SG PRESENT PSS
+	"suorittaa" VERB NOM POS SG PCPVA PSS
 "<yhdenmukaisesti>"
 	"yhdenmukaisesti" ADV <Sti>
 "<tämän>"
@@ -24233,7 +24233,7 @@
 "<teurastamoon>"
 	"teurastamo" NOUN ILL SG
 "<teurastettaviksi>"
-	"teurastaa" VERB TRA POS PL PRESENT PSS
+	"teurastaa" VERB TRA POS PL PCPVA PSS
 "<,>"
 	"," PUNCT
 "<ja>"
@@ -24249,7 +24249,7 @@
 "<artiklan>"
 	"artikla" NOUN GEN SG
 "<d>"
-	"d" NOUN YES NOM SG
+	"d" NOUN <ABBR> NOM SG
 "<alakohdan>"
 	"ala#kohta" NOUN GEN SG
 "<ja>"
@@ -24271,11 +24271,11 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<pidettävä>"
-	"pitää" VERB NOM POS SG PRESENT PSS
+	"pitää" VERB NOM POS SG PCPVA PSS
 "<">"
 	""" PUNCT
 "<teurastettaviksi>"
-	"teurastaa" VERB TRA POS PL PRESENT PSS
+	"teurastaa" VERB TRA POS PL PCPVA PSS
 "<tarkoitettuina>"
 	"tarkoittaa" VERB ESS POS PL PCPNUT PSS
 "<hevoseläiminä>"
@@ -24298,17 +24298,17 @@
 "<hyvinvointia>"
 	"hyvin#vointi" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<rikkomuksista>"
 	"rikkomus" NOUN ELA PL
 "<aiheutuvien>"
-	"aiheutua" VERB GEN POS PL PRESENT ACT
+	"aiheutua" VERB GEN POS PL PCPVA ACT
 "<seuraamusten>"
 	"seuraamus" NOUN GEN PL
 "<riittämätömyys>"
-	"riittämättömyys" NOUN NOM SG YES
+	"riittämättömyys" NOUN NOM SG TYPO
 "<kannustaa>"
 	"kannustaa" VERB INDV SG3 PRESENT ACT
 "<rikkomaan>"
@@ -24339,7 +24339,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<luotava>"
-	"luoda" VERB NOM POS SG PRESENT PSS
+	"luoda" VERB NOM POS SG PCPVA PSS
 "<yhdenmukaiset>"
 	"yhdenmukainen" ADJ NOM POS <Inen> PL
 "<menettelyt>"
@@ -24363,7 +24363,7 @@
 "<hyvinvointia>"
 	"hyvin#vointi" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<rikkomisesta>"
@@ -24382,7 +24382,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<hyväksyttävä>"
-	"hyväksyä" VERB NOM POS SG PRESENT PSS
+	"hyväksyä" VERB NOM POS SG PCPVA PSS
 "<tämän>"
 	"tämä" PRON GEN SG DEM
 "<asetuksen>"
@@ -24392,7 +24392,7 @@
 "<rikkomuksiin>"
 	"rikkomus" NOUN ILL PL
 "<sovellettavia>"
-	"soveltaa" VERB PAR POS PL PRESENT PSS
+	"soveltaa" VERB PAR POS PL PCPVA PSS
 "<seuraamuksia>"
 	"seuraamus" NOUN PAR PL
 "<koskevat>"
@@ -24404,7 +24404,7 @@
 "<ja>"
 	"ja" CCONJ
 "<varmistettava>"
-	"varmistaa" VERB NOM POS SG PRESENT PSS
+	"varmistaa" VERB NOM POS SG PCPVA PSS
 "<seuraamusten>"
 	"seuraamus" NOUN GEN PL
 "<täytäntöönpano>"
@@ -24421,7 +24421,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<oltava>"
-	"olla" AUX NOM POS SG PRESENT PSS
+	"olla" AUX NOM POS SG PCPVA PSS
 "<tehokkaita>"
 	"tehokas" ADJ PAR POS PL
 "<,>"
@@ -24474,7 +24474,7 @@
 "<meriteitse>"
 	"meri#teitse" ADV
 "<kuljetettava>"
-	"kuljettaa" VERB NOM POS SG PRESENT PSS
+	"kuljettaa" VERB NOM POS SG PCPVA PSS
 "<lähetys>"
 	"lähetys" NOUN NOM SG
 "<voidaan>"
@@ -24505,7 +24505,7 @@
 "<kuljetustapaa>"
 	"kuljetus#tapa" NOUN PAR SG
 "<koskevista>"
-	"koskea" VERB ELA POS PL PRESENT ACT
+	"koskea" VERB ELA POS PL PCPVA ACT
 "<erityisistä>"
 	"erityinen" ADJ ELA POS <Inen> PL
 "<toimenpiteistä>"
@@ -24536,13 +24536,13 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<muutettava>"
-	"muuttaa" VERB NOM POS SG PRESENT PSS
+	"muuttaa" VERB NOM POS SG PCPVA PSS
 "<eläinten>"
 	"eläin" NOUN GEN PL
 "<terveyteen>"
 	"terveys" NOUN ILL <Vs> SG
 "<liittyvistä>"
-	"liittyä" VERB ELA POS PL PRESENT ACT
+	"liittyä" VERB ELA POS PL PCPVA ACT
 "<ongelmista>"
 	"ongelma" NOUN ELA PL
 "<yhteisön>"
@@ -24596,7 +24596,7 @@
 "<eläinkuljettajia>"
 	"eläin#kuljettaja" NOUN PAR <Ja> PL
 "<koskevien>"
-	"koskea" VERB GEN POS PL PRESENT ACT
+	"koskea" VERB GEN POS PL PCPVA ACT
 "<vaatimusten>"
 	"vaatimus" NOUN GEN PL
 "<osalta>"
@@ -24643,7 +24643,7 @@
 "<myös>"
 	"myös" ADV
 "<muutettava>"
-	"muuttaa" VERB NOM POS SG PRESENT PSS
+	"muuttaa" VERB NOM POS SG PCPVA PSS
 "<niin>"
 	"niin" ADV
 "<,>"
@@ -24702,7 +24702,7 @@
 "<kotieläinjalostusta>"
 	"koti#eläin#jalostus" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<lainsäädännön>"
 	"lain#säädäntö" NOUN GEN SG
 "<oikean>"
@@ -24738,7 +24738,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<sovellettava>"
-	"soveltaa" VERB NOM POS SG PRESENT PSS
+	"soveltaa" VERB NOM POS SG PCPVA PSS
 "<eläinten>"
 	"eläin" NOUN GEN PL
 "<hyvinvointiin>"
@@ -24797,7 +24797,7 @@
 "<tarkastuksia>"
 	"tarkastus" NOUN PAR PL
 "<koskevia>"
-	"koskea" VERB PAR POS PL PRESENT ACT
+	"koskea" VERB PAR POS PL PCPVA ACT
 "<sääntöjä>"
 	"sääntö" NOUN PAR PL
 "<,>"
@@ -24809,7 +24809,7 @@
 "<omalta>"
 	"oma" ADJ ABL POS SG
 "<osaltaan>"
-	"osa" NOUN ABL SG 3
+	"osa" NOUN ABL SG POSS+3
 "<edistää>"
 	"edistää" VERB INFA SG ACT
 "<tämän>"
@@ -24871,7 +24871,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<kumottava>"
-	"kumota" VERB NOM POS SG PRESENT PSS
+	"kumota" VERB NOM POS SG PCPVA PSS
 "<yli>"
 	"yli" ADV
 "<kahdeksan>"
@@ -24879,21 +24879,21 @@
 "<tuntia>"
 	"tunti" NOUN PAR SG
 "<kestäviin>"
-	"kestää" VERB ILL POS PL PRESENT ACT
+	"kestää" VERB ILL POS PL PCPVA ACT
 "<eläinkuljetuksiin>"
 	"eläin#kuljetus" NOUN ILL PL
 "<käytettäville>"
-	"käyttää" VERB ALL POS PL PRESENT PSS
+	"käyttää" VERB ALL POS PL PCPVA PSS
 "<maantieajoneuvoille>"
 	"maan#tie#ajo#neuvo" NOUN ALL PL
 "<asetettavista>"
-	"asettaa" VERB ELA POS PL PRESENT PSS
+	"asettaa" VERB ELA POS PL PCPVA PSS
 "<eläinten>"
 	"eläin" NOUN GEN PL
 "<suojelua>"
 	"suojelu" NOUN PAR <U> SG
 "<koskevista>"
-	"koskea" VERB ELA POS PL PRESENT ACT
+	"koskea" VERB ELA POS PL PCPVA ACT
 "<lisävaatimuksista>"
 	"lisä#vaatimus" NOUN ELA PL
 "<16>"
@@ -24913,11 +24913,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"numero" NOUN YES NOM SG
+	"numero" NOUN <ABBR> NOM SG
 "<411/98>"
 	"411/98" NUM CARD
 "<.>"
@@ -25004,7 +25004,7 @@
 "<maantiekuljetusvälineissä>"
 	"maan#tie#kuljetus#väline" NOUN INE PL
 "<käytettävää>"
-	"käyttää" VERB PAR POS SG PRESENT PSS
+	"käyttää" VERB PAR POS SG PCPVA PSS
 "<paikannusjärjestelmää>"
 	"paikannus#järjestelmä" NOUN PAR SG
 "<koskevat>"
@@ -25110,13 +25110,13 @@
 "<täytäntöönpanemiseksi>"
 	"täytäntöönpaneminen" NOUN TRA <Minen> SG
 "<tarvittavista>"
-	"tarvita" VERB ELA POS PL PRESENT PSS
+	"tarvita" VERB ELA POS PL PCPVA PSS
 "<toimenpiteistä>"
 	"toimen#pide" NOUN ELA PL
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<päätettävä>"
-	"päättää" VERB NOM POS SG PRESENT PSS
+	"päättää" VERB NOM POS SG PCPVA PSS
 "<menettelystä>"
 	"menettely" NOUN ELA <U> SG
 "<komissiolle>"
@@ -25181,7 +25181,7 @@
 "<ELÄINKULJETUKSIA>"
 	"eläin#kuljetus" NOUN PAR PL
 "<KOSKEVAT>"
-	"koskea" VERB NOM POS PL PRESENT ACT
+	"koskea" VERB NOM POS PL PCPVA ACT
 "<YLEISET>"
 	"yleinen" ADJ NOM POS <Inen> PL
 "<EDELLYTYKSET>"
@@ -25212,7 +25212,7 @@
 "<yhteisössä>"
 	"yhteisö" NOUN INE SG
 "<tapahtuviin>"
-	"tapahtua" VERB ILL POS PL PRESENT ACT
+	"tapahtua" VERB ILL POS PL PCPVA ACT
 "<elävien>"
 	"elävä" ADJ GEN POS PL
 "<selkärankaisten>"
@@ -25240,13 +25240,13 @@
 "<tullialueelle>"
 	"tulli#alue" NOUN ALL SG
 "<saapuville>"
-	"saapua" VERB ALL POS PL PRESENT ACT
+	"saapua" VERB ALL POS PL PCPVA ACT
 "<tai>"
 	"tai" CCONJ
 "<sieltä>"
 	"sieltä" ADV
 "<lähteville>"
-	"lähteä" VERB ALL POS PL PRESENT ACT
+	"lähteä" VERB ALL POS PL PCPVA ACT
 "<kuljetuserille>"
 	"kuljetus#erä" NOUN ALL PL
 "<.>"
@@ -25274,7 +25274,7 @@
 # text = a) eläinten kuljetuksiin, joita kasvattajat suorittavat omilla maatalousajoneuvoillaan tai kuljetusvälineillään, kun maantieteelliset olosuhteet vaativat tiettyjen eläintyyppien kuljetusta siirtolaiduntamista varten;
 # sent_id =  j001.69
 "<a>"
-	"a" NOUN YES NOM SG
+	"a" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<eläinten>"
@@ -25292,11 +25292,11 @@
 "<omilla>"
 	"oma" ADJ ADE POS PL
 "<maatalousajoneuvoillaan>"
-	"maa#talous#ajo#neuvo" NOUN ADE PL 3
+	"maa#talous#ajo#neuvo" NOUN ADE PL POSS+3
 "<tai>"
 	"tai" CCONJ
 "<kuljetusvälineillään>"
-	"kuljetus#väline" NOUN ADE PL 3
+	"kuljetus#väline" NOUN ADE PL POSS+3
 "<,>"
 	"," PUNCT
 "<kun>"
@@ -25323,7 +25323,7 @@
 # text = b) sellaisiin kasvattajien omilla kuljetusvälineillään suorittamiin omien eläintensä kuljetuksiin, joiden pituus kasvattajan tilalta on alle 50 kilometriä.
 # sent_id =  j001.70
 "<b>"
-	"b" NOUN YES NOM SG
+	"b" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<sellaisiin>"
@@ -25333,13 +25333,13 @@
 "<omilla>"
 	"oma" ADJ ADE POS PL
 "<kuljetusvälineillään>"
-	"kuljetus#väline" NOUN ADE PL 3
+	"kuljetus#väline" NOUN ADE PL POSS+3
 "<suorittamiin>"
 	"suorittaa" VERB ILL POS PL AGT ACT
 "<omien>"
 	"oma" ADJ GEN POS PL
 "<eläintensä>"
-	"eläin" NOUN GEN PL 3
+	"eläin" NOUN GEN PL POSS+3
 "<kuljetuksiin>"
 	"kuljetus" NOUN ILL PL
 "<,>"
@@ -25406,7 +25406,7 @@
 "<alueella>"
 	"alue" NOUN ADE SG
 "<tapahtuvien>"
-	"tapahtua" VERB GEN POS PL PRESENT ACT
+	"tapahtua" VERB GEN POS PL PCPVA ACT
 "<kuljetusten>"
 	"kuljetus" NOUN GEN PL
 "<aikana>"
@@ -25416,7 +25416,7 @@
 "<jäsenvaltiosta>"
 	"jäsen#valtio" NOUN ELA SG
 "<lähtevien>"
-	"lähteä" VERB GEN POS PL PRESENT ACT
+	"lähteä" VERB GEN POS PL PCPVA ACT
 "<merikuljetusten>"
 	"meri#kuljetus" NOUN GEN PL
 "<aikana>"
@@ -25550,7 +25550,7 @@
 # text = a) ’eläimillä’ eläviä selkärankaisia eläimiä;
 # sent_id =  j001.77
 "<a>"
-	"a" NOUN YES NOM SG
+	"a" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25573,7 +25573,7 @@
 # text = b) ’keräyskeskuksilla’ paikkoja, jotka voivat olla esimerkiksi tiloja, koontikeskuksia ja markkinoita ja joissa eri tiloilta peräisin olevat kotieläiminä pidettävät hevos-, nauta-, lammas-, vuohi- ja sikaeläimet kootaan yhteen kuljetuserien muodostamiseksi;
 # sent_id =  j001.78
 "<b>"
-	"b" NOUN YES NOM SG
+	"b" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25617,11 +25617,11 @@
 "<peräisin>"
 	"peräisin" ADV
 "<olevat>"
-	"olla" VERB NOM POS PL PRESENT ACT
+	"olla" VERB NOM POS PL PCPVA ACT
 "<kotieläiminä>"
 	"koti#eläin" NOUN ESS PL
 "<pidettävät>"
-	"pitää" VERB NOM POS PL PRESENT PSS
+	"pitää" VERB NOM POS PL PCPVA PSS
 "<hevos->"
 	"hevonen" NOUN
 "<,>"
@@ -25654,7 +25654,7 @@
 # text = c) ’hoitajalla’ henkilöä, joka on välittömästi vastuussa eläinten hyvinvoinnista ja on niiden mukana kuljetusmatkan ajan;
 # sent_id =  j001.79
 "<c>"
-	"c" NOUN YES NOM SG
+	"c" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25699,7 +25699,7 @@
 # text = d) ’rajatarkastusasemalla’ kaikkia tarkastusasemia, jotka on nimetty ja hyväksytty direktiivin 91/496/ETY  6 artiklan mukaisesti suorittamaan yhteisön alueen rajalla eläinlääkinnällisiä tarkastuksia kolmansista maista saapuville eläimille;
 # sent_id =  j001.80
 "<d>"
-	"d" NOUN YES NOM SG
+	"d" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25753,7 +25753,7 @@
 "<maista>"
 	"maa" NOUN ELA PL
 "<saapuville>"
-	"saapua" VERB ALL POS PL PRESENT ACT
+	"saapua" VERB ALL POS PL PCPVA ACT
 "<eläimille>"
 	"eläin" NOUN ALL PL
 "<;>"
@@ -25762,7 +25762,7 @@
 # text = e) ’yhteisön eläinlääkintälainsäädännöllä’ direktiivin 90/425/ETY  liitteessä A olevassa I luvussa lueteltua lainsäädäntöä ja myöhemmin annettuja täytäntöönpanosääntöjä;
 # sent_id =  j001.81
 "<e>"
-	"e" NOUN YES NOM SG
+	"e" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25782,9 +25782,9 @@
 "<liitteessä>"
 	"liite" NOUN INE SG
 "<A>"
-	"A" NOUN YES NOM SG
+	"A" NOUN <ABBR> NOM SG
 "<olevassa>"
-	"olla" VERB INE POS SG PRESENT ACT
+	"olla" VERB INE POS SG PCPVA ACT
 "<I>"
 	"I" ADJ ORD
 "<luvussa>"
@@ -25807,7 +25807,7 @@
 # text = f) ’toimivaltaisella viranomaisella’ jäsenvaltion keskusviranomaista, jolla on toimivalta suorittaa eläinten hyvinvointia koskevia tarkastuksia, tai mitä tahansa viranomaista, jolle se on siirtänyt tällaisen toimivallan;
 # sent_id =  j001.82
 "<f>"
-	"f" NOUN YES NOM SG
+	"f" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<’>"
@@ -25839,7 +25839,7 @@
 "<hyvinvointia>"
 	"hyvin#vointi" NOUN PAR SG
 "<koskevia>"
-	"koskea" VERB PAR POS PL PRESENT ACT
+	"koskea" VERB PAR POS PL PCPVA ACT
 "<tarkastuksia>"
 	"tarkastus" NOUN PAR PL
 "<,>"
@@ -25894,13 +25894,13 @@
 "<peräisin>"
 	"peräisin" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<piikarbidin>"
 	"pii#karbidi" NOUN GEN SG
 "<tuontia>"
 	"tuonti" NOUN PAR SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<polkumyynnin>"
 	"polku#myynti" NOUN GEN SG
 "<vastaisen>"
@@ -25957,7 +25957,7 @@
 "<jäsenvaltioista>"
 	"jäsen#valtio" NOUN ELA PL
 "<tapahtuvalta>"
-	"tapahtua" VERB ABL POS SG PRESENT ACT
+	"tapahtua" VERB ABL POS SG PCPVA ACT
 "<tuonnilta>"
 	"tuonti" NOUN ABL SG
 "<suojautumisesta>"
@@ -25979,11 +25979,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<384/96>"
 	"384/96" NUM CARD
 "<,>"
@@ -26032,7 +26032,7 @@
 # text = A. MENETTELY
 # sent_id =  j004.3
 "<A.>"
-	"A." NOUN YES
+	"A." NOUN <ABBR>
 "<MENETTELY>"
 	"menettely" NOUN NOM <U> SG
 
@@ -26069,13 +26069,13 @@
 "<peräisin>"
 	"peräisin" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<piikarbidin>"
 	"pii#karbidi" NOUN GEN SG
 "<tuonnin>"
 	"tuonti" NOUN GEN SG
 "<tapahtuvan>"
-	"tapahtua" VERB GEN POS SG PRESENT ACT
+	"tapahtua" VERB GEN POS SG PCPVA ACT
 "<vahingollisella>"
 	"vahingollinen" ADJ ADE POS <Llinen> SG
 "<polkumyynnillä>"
@@ -26106,7 +26106,7 @@
 "<(>"
 	"(" PUNCT
 "<CEFIC>"
-	"CEFIC" PROPN YES NOM SG
+	"CEFIC" PROPN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<perusasetuksen>"
@@ -26185,7 +26185,7 @@
 "<siitä>"
 	"se" PRON ELA SG DEM
 "<aiheutuvan>"
-	"aiheutua" VERB GEN POS SG PRESENT ACT
+	"aiheutua" VERB GEN POS SG PCPVA ACT
 "<merkittävän>"
 	"merkittävä" ADJ GEN POS SG
 "<vahingon>"
@@ -26259,13 +26259,13 @@
 "<peräisin>"
 	"peräisin" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<CN-koodiin>"
 	"CN#koodi" NOUN ILL SG
 "<28492000>"
 	"28492000" NUM CARD
 "<kuuluvan>"
-	"kuulua" VERB GEN POS SG PRESENT ACT
+	"kuulua" VERB GEN POS SG PCPVA ACT
 "<piikarbidin>"
 	"pii#karbidi" NOUN GEN SG
 "<tuontia>"
@@ -26273,7 +26273,7 @@
 "<yhteisöön>"
 	"yhteisö" NOUN ILL SG
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<polkumyynnin>"
 	"polku#myynti" NOUN GEN SG
 "<vastaisen>"
@@ -26306,7 +26306,7 @@
 "<vientiä>"
 	"vienti" NOUN PAR SG
 "<harjoittaville>"
-	"harjoittaa" VERB ALL POS PL PRESENT ACT
+	"harjoittaa" VERB ALL POS PL PCPVA ACT
 "<tuottajille>"
 	"tuottaja" NOUN ALL <Ja> PL
 "<,>"
@@ -26322,7 +26322,7 @@
 "<viejiä>"
 	"viejä" NOUN PAR <Ja> PL
 "<edustaville>"
-	"edustaa" VERB ALL POS PL PRESENT ACT
+	"edustaa" VERB ALL POS PL PCPVA ACT
 "<järjestöille>"
 	"järjestö" NOUN ALL PL
 "<,>"
@@ -26334,7 +26334,7 @@
 "<tiedettiin>"
 	"tietää" VERB INDV PAST PSS
 "<koskevan>"
-	"koskea" VERB GEN POS SG PRESENT ACT
+	"koskea" VERB GEN POS SG PCPVA ACT
 "<,>"
 	"," PUNCT
 "<sekä>"
@@ -26377,7 +26377,7 @@
 "<esittää>"
 	"esittää" VERB INFA SG ACT
 "<näkökantansa>"
-	"näkö#kanta" NOUN NOM PL 3
+	"näkö#kanta" NOUN NOM PL POSS+3
 "<kirjallisesti>"
 	"kirjallisesti" ADV <Sti>
 "<ja>"
@@ -26395,7 +26395,7 @@
 "<aloittamista>"
 	"aloittaminen" NOUN PAR <Minen> SG
 "<koskevassa>"
-	"koskea" VERB INE POS SG PRESENT ACT
+	"koskea" VERB INE POS SG PCPVA ACT
 "<ilmoituksessa>"
 	"ilmoitus" NOUN INE SG
 "<asetetussa>"
@@ -26422,7 +26422,7 @@
 # text = B. VALITUKSEN PERUUTTAMINEN JA MENETTELYN PÄÄTTÄMINEN
 # sent_id =  j004.11
 "<B.>"
-	"B." NOUN YES
+	"B." NOUN <ABBR>
 "<VALITUKSEN>"
 	"valitus" NOUN GEN SG
 "<PERUUTTAMINEN>"
@@ -26443,13 +26443,13 @@
 "<)>"
 	")" PUNCT
 "<CEFIC>"
-	"CEFIC" PROPN YES NOM SG
+	"CEFIC" PROPN <ABBR> NOM SG
 "<peruutti>"
 	"peruuttaa" VERB INDV SG3 PAST ACT
 "<virallisesti>"
 	"virallisesti" ADV <Sti>
 "<valituksensa>"
-	"valitus" NOUN GEN SG 3
+	"valitus" NOUN GEN SG POSS+3
 "<1>"
 	"1" NUM CARD
 "<päivänä>"
@@ -26537,7 +26537,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<päätettävä>"
-	"päättää" VERB NOM POS SG PRESENT PSS
+	"päättää" VERB NOM POS SG PCPVA PSS
 "<,>"
 	"," PUNCT
 "<koska>"
@@ -26598,7 +26598,7 @@
 "<esittää>"
 	"esittää" VERB INFA SG ACT
 "<huomautuksensa>"
-	"huomautus" NOUN NOM SG 3
+	"huomautus" NOUN NOM SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -26660,17 +26660,17 @@
 "<peräisin>"
 	"peräisin" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<piikarbidin>"
 	"pii#karbidi" NOUN GEN SG
 "<yhteisöön>"
 	"yhteisö" NOUN ILL SG
 "<suuntautuvaa>"
-	"suuntautua" VERB PAR POS SG PRESENT ACT
+	"suuntautua" VERB PAR POS SG PCPVA ACT
 "<tuontia>"
 	"tuonti" NOUN PAR SG
 "<koskeva>"
-	"koskea" VERB NOM POS SG PRESENT ACT
+	"koskea" VERB NOM POS SG PCPVA ACT
 "<polkumyynnin>"
 	"polku#myynti" NOUN GEN SG
 "<vastainen>"
@@ -26680,7 +26680,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<päätettävä>"
-	"päättää" VERB NOM POS SG PRESENT PSS
+	"päättää" VERB NOM POS SG PCPVA PSS
 "<ottamatta>"
 	"ottaa" VERB ABE INFMA SG ACT
 "<käyttöön>"
@@ -26721,19 +26721,19 @@
 "<peräisin>"
 	"peräisin" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<CN-koodiin>"
 	"CN#koodi" NOUN ILL SG
 "<28492000>"
 	"28492000" NUM CARD
 "<kuuluvan>"
-	"kuulua" VERB GEN POS SG PRESENT ACT
+	"kuulua" VERB GEN POS SG PCPVA ACT
 "<piikarbidin>"
 	"pii#karbidi" NOUN GEN SG
 "<tuontia>"
 	"tuonti" NOUN PAR SG
 "<koskeva>"
-	"koskea" VERB NOM POS SG PRESENT ACT
+	"koskea" VERB NOM POS SG PCPVA ACT
 "<polkumyynnin>"
 	"polku#myynti" NOUN GEN SG
 "<vastainen>"
@@ -26784,11 +26784,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<1415/2006>"
 	"1415/2006" NUM CARD
 "<,>"
@@ -26818,7 +26818,7 @@
 "<hallussa>"
 	"hallussa" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<maissin>"
 	"maissi" NOUN GEN SG
 "<myymiseksi>"
@@ -26881,11 +26881,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<1784/2003>"
 	"1784/2003" NUM CARD
 "<ja>"
@@ -26920,7 +26920,7 @@
 "<Interventioelinten>"
 	"interventio#elin" NOUN GEN PL
 "<hallussaan>"
-	"hallussa" ADV 3
+	"hallussa" ADV POSS+3
 "<pitämien>"
 	"pitää" VERB GEN POS PL AGT ACT
 "<viljojen>"
@@ -26952,11 +26952,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<2131/93>"
 	"2131/93" NUM CARD
 "<säädetään>"
@@ -26972,7 +26972,7 @@
 "<hallussa>"
 	"hallussa" ADV
 "<oleva>"
-	"olla" VERB NOM POS SG PRESENT ACT
+	"olla" VERB NOM POS SG PCPVA ACT
 "<vilja>"
 	"vilja" NOUN NOM SG
 "<saatetaan>"
@@ -27025,7 +27025,7 @@
 "<olisi>"
 	"olla" AUX COND SG3 ACT
 "<käytettävä>"
-	"käyttää" VERB NOM POS SG PRESENT PSS
+	"käyttää" VERB NOM POS SG PCPVA PSS
 "<.>"
 	"." PUNCT
 
@@ -27044,7 +27044,7 @@
 "<hallussa>"
 	"hallussa" ADV
 "<olevat>"
-	"olla" VERB NOM POS PL PRESENT ACT
+	"olla" VERB NOM POS PL PCPVA ACT
 "<maissivarastot>"
 	"maissi#varasto" NOUN NOM PL
 "<olisi>"
@@ -27054,7 +27054,7 @@
 "<vuoksi>"
 	"vuoksi" ADP POST
 "<saatettava>"
-	"saattaa" VERB NOM POS SG PRESENT PSS
+	"saattaa" VERB NOM POS SG PCPVA PSS
 "<yhteisön>"
 	"yhteisö" NOUN GEN SG
 "<viljamarkkinoille>"
@@ -27106,7 +27106,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<vahvistettava>"
-	"vahvistaa" VERB NOM POS SG PRESENT PSS
+	"vahvistaa" VERB NOM POS SG PCPVA PSS
 "<jakokerroin>"
 	"jako#kerroin" NOUN NOM SG
 "<vähimmäismyyntihinnan>"
@@ -27252,9 +27252,9 @@
 "<tarjouskilpailulla>"
 	"tarjous#kilpailu" NOUN ADE <U> SG
 "<hallussaan>"
-	"hallussa" ADV 3
+	"hallussa" ADV POSS+3
 "<olevat>"
-	"olla" VERB NOM POS PL PRESENT ACT
+	"olla" VERB NOM POS PL PCPVA ACT
 "<100000>"
 	"100000" NUM CARD
 "<maissitonnia>"
@@ -27288,11 +27288,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<2131/93>"
 	"2131/93" NUM CARD
 "<.>"
@@ -27320,7 +27320,7 @@
 # text = a) tarjoukset vahvistetaan tarjouksen kohteena olevan erän tosiasiallisen laadun perusteella;
 # sent_id =  j024.17
 "<a>"
-	"a" NOUN YES NOM SG
+	"a" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<tarjoukset>"
@@ -27332,7 +27332,7 @@
 "<kohteena>"
 	"kohde" NOUN ESS SG
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<erän>"
 	"erä" NOUN GEN SG
 "<tosiasiallisen>"
@@ -27347,7 +27347,7 @@
 # text = b) vähimmäismyyntihinta vahvistetaan tasolle, jolla se ei häiritse viljamarkkinoita.
 # sent_id =  j024.18
 "<b>"
-	"b" NOUN YES NOM SG
+	"b" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<vähimmäismyyntihinta>"
@@ -27390,7 +27390,7 @@
 "<voimassa>"
 	"voimassa" ADV
 "<olevaa>"
-	"olla" VERB PAR POS SG PRESENT ACT
+	"olla" VERB PAR POS SG PCPVA ACT
 "<interventiohintaa>"
 	"interventio#hinta" NOUN PAR SG
 "<,>"
@@ -27432,11 +27432,11 @@
 "<(>"
 	"(" PUNCT
 "<ETY>"
-	"ETY" NOUN YES NOM SG
+	"ETY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<2131/93>"
 	"2131/93" NUM CARD
 "<13>"
@@ -27601,7 +27601,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<jätettävä>"
-	"jättää" VERB NOM POS SG PRESENT PSS
+	"jättää" VERB NOM POS SG PCPVA PSS
 "<Slovakian>"
 	"Slovakia" PROPN GEN SG
 "<interventioelimelle>"
@@ -27619,21 +27619,21 @@
 "<:>"
 	":" PUNCT
 "<Pôdohospodárska>"
-	"Pôdohospodárska" X YES
+	"Pôdohospodárska" X FOREIGN
 "<platobná>"
-	"platobná" X YES
+	"platobná" X FOREIGN
 "<agentúra>"
-	"agentúra" X YES
+	"agentúra" X FOREIGN
 "<oddelenie>"
-	"oddelenie" X YES
+	"oddelenie" X FOREIGN
 "<obilnín>"
-	"obilnín" X YES
+	"obilnín" X FOREIGN
 "<a>"
-	"a" X YES
+	"a" X FOREIGN
 "<škrobu>"
-	"škrobu" X YES
+	"škrobu" X FOREIGN
 "<Dobrovičova>"
-	"Dobrovičova" X YES
+	"Dobrovičova" X FOREIGN
 "<12>"
 	"12" NUM CARD
 "<SK-815>"
@@ -27677,7 +27677,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<annettava>"
-	"antaa" VERB NOM POS SG PRESENT PSS
+	"antaa" VERB NOM POS SG PCPVA PSS
 "<saadut>"
 	"saada" VERB NOM POS PL PCPNUT PSS
 "<tarjoukset>"
@@ -27710,7 +27710,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<toimitettava>"
-	"toimittaa" VERB NOM POS SG PRESENT PSS
+	"toimittaa" VERB NOM POS SG PCPVA PSS
 "<sähköisessä>"
 	"sähköinen" ADJ INE POS <Inen> SG
 "<muodossa>"
@@ -27718,7 +27718,7 @@
 "<liitteessä>"
 	"liite" NOUN INE SG
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<lomakkeen>"
 	"lomake" NOUN GEN SG
 "<mukaisesti>"
@@ -27740,11 +27740,11 @@
 "<(>"
 	"(" PUNCT
 "<EY>"
-	"EY" NOUN YES NOM SG
+	"EY" NOUN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<N:o>"
-	"N:o" NOUN YES NOM SG
+	"N:o" NOUN <ABBR> NOM SG
 "<1784/200325>"
 	"1784/200325" NUM CARD
 "<artiklan>"
@@ -27803,9 +27803,9 @@
 "<ylittää>"
 	"ylittää" VERB INDV SG3 PRESENT ACT
 "<käytettävissä>"
-	"käyttää" VERB INE POS PL PRESENT PSS
+	"käyttää" VERB INE POS PL PCPVA PSS
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<määrän>"
 	"määrä" NOUN GEN SG
 "<,>"
@@ -27911,9 +27911,9 @@
 "<kaikilta>"
 	"kaikki" PRON ABL PL
 "<osiltaan>"
-	"osa" NOUN ABL PL 3
+	"osa" NOUN ABL PL POSS+3
 "<velvoittava>"
-	"velvoittaa" VERB NOM POS SG PRESENT ACT
+	"velvoittaa" VERB NOM POS SG PCPVA ACT
 "<,>"
 	"," PUNCT
 "<ja>"
@@ -27923,7 +27923,7 @@
 "<sovelletaan>"
 	"soveltaa" VERB INDV PRESENT PSS
 "<sellaisenaan>"
-	"sellainen" ADJ ESS <Lainen> SG 3
+	"sellainen" ADJ ESS <Lainen> SG POSS+3
 "<kaikissa>"
 	"kaikki" PRON INE PL
 "<jäsenvaltioissa>"
@@ -28084,15 +28084,15 @@
 "<yhden>"
 	"yksi" PRON GEN SG
 "<elämäsi>"
-	"elämä" NOUN GEN SG SING 2
+	"elämä" NOUN GEN SG POSSSG2
 "<parhaimmista>"
 	"hyvä" ADJ ELA SUP PL
 "<hetkistäsi>"
-	"hetki" NOUN ELA PL SING 2
+	"hetki" NOUN ELA PL POSSSG2
 "<vaihto-opiskelua>"
 	"vaihto#opiskelu" NOUN PAR <U> SG
 "<suorittaessasi>"
-	"suorittaa" VERB INE INFE SG SING 2 ACT
+	"suorittaa" VERB INE INFE SG POSSSG2 ACT
 "<.>"
 	"." PUNCT
 
@@ -28187,7 +28187,7 @@
 "<”>"
 	"”" PUNCT
 "<–synonyymeillä>"
-	"–#synonyymi" NOUN ADE PL YES
+	"–#synonyymi" NOUN ADE PL TYPO
 "<.>"
 	"." PUNCT
 
@@ -28328,7 +28328,7 @@
 "<ennen>"
 	"ennen" ADP PREP
 "<lähtöäni>"
-	"lähtö" NOUN PAR SG SING 1
+	"lähtö" NOUN PAR SG POSSSG1
 "<useasti>"
 	"useasti" ADV <Sti>
 "<,>"
@@ -28425,7 +28425,7 @@
 "<yhdessä>"
 	"yhdessä" ADV
 "<ystäväni>"
-	"ystävä" NOUN GEN SG SING 1
+	"ystävä" NOUN GEN SG POSSSG1
 "<kanssa>"
 	"kanssa" ADP POST
 "<hetken>"
@@ -28530,7 +28530,7 @@
 # text = Valittavana on runsas ja monipuolinen määrä yliopistoja niin Bangkokissa, Phuketissa, Kiinan Kantonissa kuin Balillakin.
 # sent_id =  s203.19
 "<Valittavana>"
-	"valita" VERB ESS POS SG PRESENT PSS
+	"valita" VERB ESS POS SG PCPVA PSS
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<runsas>"
@@ -28715,7 +28715,7 @@
 "<kasvattanut>"
 	"kasvattaa" VERB NOM POS SG PCPNUT ACT
 "<suosiotaan>"
-	"suosio" NOUN PAR SG 3
+	"suosio" NOUN PAR SG POSS+3
 "<vaihtokohteena>"
 	"vaihto#kohde" NOUN ESS SG
 "<voimakkaasti>"
@@ -28743,7 +28743,7 @@
 "<vilkkaimmin>"
 	"vilkkaasti" ADV SUP <Sti>
 "<kasvavaan>"
-	"kasvaa" VERB ILL POS SG PRESENT ACT
+	"kasvaa" VERB ILL POS SG PCPVA ACT
 "<talousalueeseen>"
 	"talous#alue" NOUN ILL SG
 "<.>"
@@ -28835,7 +28835,7 @@
 "<säilyvät>"
 	"säilyä" VERB INDV PL3 PRESENT ACT
 "<mielessäsi>"
-	"mieli" NOUN INE SG SING 2
+	"mieli" NOUN INE SG POSSSG2
 "<koko>"
 	"koko" ADJ
 "<elämän>"
@@ -29012,7 +29012,7 @@
 # text = Suoritettavat kurssit Udayana Universityssä olivat mielestäni mielenkiintoisia ja hyödyllisiä.
 # sent_id =  s203.33
 "<Suoritettavat>"
-	"suorittaa" VERB NOM POS PL PRESENT PSS
+	"suorittaa" VERB NOM POS PL PCPVA PSS
 "<kurssit>"
 	"kurssi" NOUN NOM PL
 "<Udayana>"
@@ -29022,7 +29022,7 @@
 "<olivat>"
 	"olla" AUX INDV PL3 PAST ACT
 "<mielestäni>"
-	"mieli" NOUN ELA SG SING 1
+	"mieli" NOUN ELA SG POSSSG1
 "<mielenkiintoisia>"
 	"mielenkiintoinen" ADJ PAR POS <Inen> PL
 "<ja>"
@@ -29088,7 +29088,7 @@
 "<,>"
 	"," PUNCT
 "<bahasa>"
-	"bahasa" X YES
+	"bahasa" X FOREIGN
 "<indonesian>"
 	"indonesia" NOUN GEN SG
 "<,>"
@@ -29119,13 +29119,13 @@
 "<omalta>"
 	"oma" ADJ ABL POS SG
 "<kohdaltani>"
-	"kohta" NOUN ABL SG SING 1
+	"kohta" NOUN ABL SG POSSSG1
 "<saan>"
 	"saada" VERB INDV SG1 PRESENT ACT
 "<opintosuoritusmerkinnät>"
 	"opinto#suoritus#merkintä" NOUN NOM PL
 "<suorittamistani>"
-	"suorittaa" VERB ELA POS PL SING AGT 1 ACT
+	"suorittaa" VERB ELA POS PL POSSSG AGT POSS+1 ACT
 "<kursseista>"
 	"kurssi" NOUN ELA PL
 "<tiedekunnan>"
@@ -29133,7 +29133,7 @@
 "<yleisiin>"
 	"yleinen" ADJ ILL POS <Inen> PL
 "<opintoihini>"
-	"opinto" NOUN ILL PL SING 1
+	"opinto" NOUN ILL PL POSSSG1
 "<.>"
 	"." PUNCT
 
@@ -29185,7 +29185,7 @@
 "<olivat>"
 	"olla" AUX INDV PL3 PAST ACT
 "<mielestäni>"
-	"mieli" NOUN ELA SG SING 1
+	"mieli" NOUN ELA SG POSSSG1
 "<erittäin>"
 	"erittäin" ADV <Ttain>
 "<mielenkiintoisia>"
@@ -29342,7 +29342,7 @@
 "<loppuu>"
 	"loppua" VERB INDV SG3 PRESENT ACT
 "<aikanaan>"
-	"aika" NOUN ESS SG 3
+	"aika" NOUN ESS SG POSS+3
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -29399,7 +29399,7 @@
 "<omalta>"
 	"oma" ADJ ABL POS SG
 "<kohdaltani>"
-	"kohta" NOUN ABL SG SING 1
+	"kohta" NOUN ABL SG POSSSG1
 "<voin>"
 	"voida" AUX INDV SG1 PRESENT ACT
 "<sanoa>"
@@ -29489,7 +29489,7 @@
 "<että>"
 	"että" SCONJ
 "<sisimmissään>"
-	"sisin" NOUN INE PL 3
+	"sisin" NOUN INE PL POSS+3
 "<kaikki>"
 	"kaikki" PRON NOM SG
 "<tutkijat>"
@@ -29518,9 +29518,9 @@
 "<Kaikki>"
 	"kaikki" PRON NOM SG
 "<tietomme>"
-	"tieto" NOUN NOM SG PLUR 1
+	"tieto" NOUN NOM SG POSSPL1
 "<asuttamastamme>"
-	"asuttaa" VERB ELA POS SG PLUR AGT 1 ACT
+	"asuttaa" VERB ELA POS SG POSSPL AGT POSS+1 ACT
 "<maailmankaikkeudesta>"
 	"maailman#kaikkeus" NOUN ELA <Vs> SG
 "<on>"
@@ -29586,7 +29586,7 @@
 "<on>"
 	"olla" VERB INDV SG3 PRESENT ACT
 "<kysyttävää>"
-	"kysyä" VERB PAR POS SG PRESENT PSS
+	"kysyä" VERB PAR POS SG PCPVA PSS
 "<.>"
 	"." PUNCT
 
@@ -29609,7 +29609,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<edistävä>"
-	"edistää" VERB NOM POS SG PRESENT ACT
+	"edistää" VERB NOM POS SG PCPVA ACT
 "<,>"
 	"," PUNCT
 "<vaikka>"
@@ -29802,7 +29802,7 @@
 "<omia>"
 	"oma" ADJ PAR POS PL
 "<tuloksiaan>"
-	"tulos" NOUN PAR PL 3
+	"tulos" NOUN PAR PL POSS+3
 "<kohtaan>"
 	"kohtaan" ADP POST
 "<ja>"
@@ -29812,9 +29812,9 @@
 "<ne>"
 	"se" PRON NOM PL DEM
 "<kollegoilleen>"
-	"kollega" NOUN ALL PL 3
+	"kollega" NOUN ALL PL POSS+3
 "<tarkasteltavaksi>"
-	"tarkastella" VERB TRA POS SG PRESENT PSS
+	"tarkastella" VERB TRA POS SG PCPVA PSS
 "<uusien>"
 	"uusi" ADJ GEN POS PL
 "<näkemysten>"
@@ -29843,13 +29843,13 @@
 "<raskailta>"
 	"raskas" ADJ ABL POS PL
 "<kannettaviksi>"
-	"kantaa" VERB TRA POS PL PRESENT PSS
+	"kantaa" VERB TRA POS PL PCPVA PSS
 "<,>"
 	"," PUNCT
 "<mutta>"
 	"mutta" CCONJ
 "<työmme>"
-	"työ" NOUN NOM SG PLUR 1
+	"työ" NOUN NOM SG POSSPL1
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<työtä>"
@@ -29898,7 +29898,7 @@
 "<omaa>"
 	"oma" ADJ PAR POS SG
 "<taitoansa>"
-	"taito" NOUN PAR SG 3
+	"taito" NOUN PAR SG POSS+3
 "<tarpeellisena>"
 	"tarpeellinen" ADJ ESS POS <Llinen> SG
 "<osana>"
@@ -29912,7 +29912,7 @@
 "<jättää>"
 	"jättää" VERB INFA SG ACT
 "<osuutensa>"
-	"osuus" NOUN GEN <Vs> SG 3
+	"osuus" NOUN GEN <Vs> SG POSS+3
 "<toimittamatta>"
 	"toimittaa" VERB ABE INFMA SG ACT
 "<,>"
@@ -29936,7 +29936,7 @@
 "<omiin>"
 	"oma" ADJ ILL POS PL
 "<tuloksiinsa>"
-	"tulos" NOUN ILL PL 3
+	"tulos" NOUN ILL PL POSS+3
 "<ja>"
 	"ja" CCONJ
 "<tietotaidon>"
@@ -29975,11 +29975,11 @@
 "<tehdä>"
 	"tehdä" VERB INFA SG ACT
 "<parhaamme>"
-	"hyvä" ADJ GEN SUP SG PLUR 1
+	"hyvä" ADJ GEN SUP SG POSSPL1
 "<omien>"
 	"oma" ADJ GEN POS PL
 "<olojemme>"
-	"olo" NOUN GEN PL PLUR 1
+	"olo" NOUN GEN PL POSSPL1
 "<parantamiseksi>"
 	"parantaminen" NOUN TRA <Minen> SG
 "<.>"
@@ -29988,30 +29988,30 @@
 # text = Be all you can be, bebe!
 # sent_id =  s305.16
 "<Be>"
-	"Be" X YES
+	"Be" X FOREIGN
 "<all>"
-	"all" X YES
+	"all" X FOREIGN
 "<you>"
-	"you" X YES
+	"you" X FOREIGN
 "<can>"
-	"can" X YES
+	"can" X FOREIGN
 "<be>"
-	"be" X YES
+	"be" X FOREIGN
 "<,>"
 	"," PUNCT
 "<bebe>"
-	"bebe" X YES
+	"bebe" X FOREIGN
 "<!>"
 	"!" PUNCT
 
 # text = TS: HK:n "parempi rypsiporsas" luovutti
 # sent_id =  t010.1
 "<TS>"
-	"TS" NOUN YES NOM SG
+	"TS" NOUN <ABBR> NOM SG
 "<:>"
 	":" PUNCT
 "<HK:n>"
-	"HK" NOUN YES GEN SG
+	"HK" NOUN <ABBR> GEN SG
 "<">"
 	""" PUNCT
 "<parempi>"
@@ -30026,7 +30026,7 @@
 # text = HK Ruokatalo on toimittanut Eviralle selvityksen, jossa se lupaa muun muassa lopettaa rypsiporsastuotteidensa mainostamisen sydänystävällisinä.
 # sent_id =  t010.2
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN <ABBR> NOM SG
 "<Ruokatalo>"
 	"ruoka#talo" NOUN NOM SG
 "<on>"
@@ -30052,7 +30052,7 @@
 "<lopettaa>"
 	"lopettaa" VERB INFA SG ACT
 "<rypsiporsastuotteidensa>"
-	"rypsi#porsas#tuote" NOUN GEN PL 3
+	"rypsi#porsas#tuote" NOUN GEN PL POSS+3
 "<mainostamisen>"
 	"mainostaminen" NOUN GEN <Minen> SG
 "<sydänystävällisinä>"
@@ -30071,7 +30071,7 @@
 "<voimakkaasti>"
 	"voimakkaasti" ADV <Sti>
 "<HK:n>"
-	"HK" NOUN YES GEN SG
+	"HK" NOUN <ABBR> GEN SG
 "<possumainontaa>"
 	"possu#mainonta" NOUN PAR SG
 "<,>"
@@ -30088,7 +30088,7 @@
 # text = HK Ruokatalo on vääntänyt useiden kuukausien ajan kättä elintarviketurvallisuusvirasto Eviran kanssa väittämistä, joita yhtiö on käyttänyt rypsirehua syöneen sian lihasta valmistettujen tuotteidensa mainonnassa.
 # sent_id =  t010.4
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN <ABBR> NOM SG
 "<Ruokatalo>"
 	"ruoka#talo" NOUN NOM SG
 "<on>"
@@ -30132,7 +30132,7 @@
 "<valmistettujen>"
 	"valmistaa" VERB GEN POS PL PCPNUT PSS
 "<tuotteidensa>"
-	"tuote" NOUN GEN PL 3
+	"tuote" NOUN GEN PL POSS+3
 "<mainonnassa>"
 	"mainonta" NOUN INE SG
 "<.>"
@@ -30145,13 +30145,13 @@
 "<perin>"
 	"perin" ADV
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN <ABBR> NOM SG
 "<hehkutti>"
 	"hehkuttaa" VERB INDV SG3 PAST ACT
 "<rypsiporsaan>"
 	"rypsi#porsas" NOUN GEN SG
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<">"
 	""" PUNCT
 "<sydämelle>"
@@ -30188,7 +30188,7 @@
 "<,>"
 	"," PUNCT
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN <ABBR> NOM SG
 "<vaihtoi>"
 	"vaihtaa" VERB INDV SG3 PAST ACT
 "<vakuutteluihin>"
@@ -30256,9 +30256,9 @@
 # text = Selvityksessään HK lupaa lopettaa kiistanalaisten väittämien käytön tuotteiden mainonnassa elokuun alusta lähtien.
 # sent_id =  t010.8
 "<Selvityksessään>"
-	"selvitys" NOUN INE SG 3
+	"selvitys" NOUN INE SG POSS+3
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN <ABBR> NOM SG
 "<lupaa>"
 	"luvata" VERB INDV SG3 PRESENT ACT
 "<lopettaa>"
@@ -30312,11 +30312,11 @@
 "<jotka>"
 	"joka" PRON NOM PL REL
 "<HK>"
-	"HK" NOUN YES NOM SG
+	"HK" NOUN <ABBR> NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<selvityksessään>"
-	"selvitys" NOUN INE SG 3
+	"selvitys" NOUN INE SG POSS+3
 "<luvannut>"
 	"luvata" VERB NOM POS SG PCPNUT ACT
 "<,>"
@@ -30444,7 +30444,7 @@
 "<ja>"
 	"ja" CCONJ
 "<organisaatio>"
-	"organisaatio" NOUN PAR SG YES
+	"organisaatio" NOUN PAR SG TYPO
 "<yli>"
 	"yli" ADV
 "<kymmenestä>"
@@ -30561,7 +30561,7 @@
 "<satelliittiviestintälaitteita>"
 	"satelliitti#viestintä#laite" NOUN PAR PL
 "<valmistava>"
-	"valmistaa" VERB NOM POS SG PRESENT ACT
+	"valmistaa" VERB NOM POS SG PCPVA ACT
 "<yhtiö>"
 	"yhtiö" NOUN NOM SG
 "<.>"
@@ -30665,7 +30665,7 @@
 "<pääsy>"
 	"pääsy" NOUN NOM <U> SG
 "<erääseen>"
-	"eräs" PRON ILL PL YES
+	"eräs" PRON ILL PL TYPO
 "<murtautujien>"
 	"murtautuja" NOUN GEN <Ja> PL
 "<käyttämän>"
@@ -30699,7 +30699,7 @@
 "<vaikeuksissa>"
 	"vaikeus" NOUN INE <Vs> PL
 "<oleva>"
-	"olla" VERB NOM POS SG PRESENT ACT
+	"olla" VERB NOM POS SG PCPVA ACT
 "<Valko-Venäjä>"
 	"Valko#Venäjä" PROPN NOM SG
 "<nojaa>"
@@ -30709,7 +30709,7 @@
 "<vahvemmin>"
 	"vahvasti" ADV CMP <Sti>
 "<naapuriinsa>"
-	"naapuri" NOUN ILL SG 3
+	"naapuri" NOUN ILL SG POSS+3
 "<Venäjään>"
 	"Venäjä" PROPN ILL SG
 "<.>"
@@ -30861,7 +30861,7 @@
 "<heidän>"
 	"hän" PRON GEN PL3 PRS
 "<haluavan>"
-	"haluta" VERB GEN POS SG PRESENT ACT
+	"haluta" VERB GEN POS SG PCPVA ACT
 "<sitä>"
 	"se" PRON PAR SG DEM
 "<,>"
@@ -30871,7 +30871,7 @@
 "<sanoi>"
 	"sanoa" VERB INDV SG3 PAST ACT
 "<taistelevansa>"
-	"taistella" VERB NOM POS SG PRESENT 3 ACT
+	"taistella" VERB NOM POS SG PCPVA POSS+3 ACT
 "<liitoksen>"
 	"liitos" NOUN GEN SG
 "<puolesta>"
@@ -30896,7 +30896,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kunnioitettava>"
-	"kunnioittaa" VERB NOM POS SG PRESENT PSS
+	"kunnioittaa" VERB NOM POS SG PCPVA PSS
 "<myös>"
 	"myös" ADV
 "<Valko-Venäjän>"
@@ -30941,13 +30941,13 @@
 "<arvioitu>"
 	"arvioida" VERB NOM POS SG PCPNUT PSS
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<jopa>"
 	"jopa" ADV
 "<nälänhätää>"
 	"nälän#hätä" NOUN PAR SG
 "<vastaava>"
-	"vastata" VERB NOM POS SG PRESENT ACT
+	"vastata" VERB NOM POS SG PCPVA ACT
 "<tilanne>"
 	"tilanne" NOUN NOM SG
 "<.>"
@@ -31017,7 +31017,7 @@
 "<riippuvainen>"
 	"riippuvainen" ADJ NOM POS <Inen> SG
 "<naapurinsa>"
-	"naapuri" NOUN GEN SG 3
+	"naapuri" NOUN GEN SG POSS+3
 "<taloudellisesta>"
 	"taloudellinen" ADJ ELA POS <Llinen> SG
 "<tuesta>"
@@ -31168,7 +31168,7 @@
 "<(>"
 	"(" PUNCT
 "<TEM>"
-	"TEM" PROPN YES NOM SG
+	"TEM" PROPN <ABBR> NOM SG
 "<)>"
 	")" PUNCT
 "<Tilastokeskuksen>"
@@ -31176,7 +31176,7 @@
 "<rekisteriseurantaan>"
 	"rekisteri#seuranta" NOUN ILL SG
 "<perustuvasta>"
-	"perustua" VERB ELA POS SG PRESENT ACT
+	"perustua" VERB ELA POS SG PCPVA ACT
 "<raportista>"
 	"raportti" NOUN ELA SG
 "<.>"
@@ -31199,7 +31199,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<TEM:llä>"
-	"TEM" PROPN YES ADE SG
+	"TEM" PROPN <ABBR> ADE SG
 "<myös>"
 	"myös" ADV
 "<positiivisia>"
@@ -31298,7 +31298,7 @@
 "<Räisänen>"
 	"Räisänen" PROPN NOM SG
 "<TEM:tä>"
-	"TEM" PROPN YES ABL SG YES
+	"TEM" PROPN <ABBR> ABL SG TYPO
 "<Taloussanomille>"
 	"Talous#sanomat" PROPN ALL PL
 "<.>"
@@ -31357,7 +31357,7 @@
 "<osa>"
 	"osa" NOUN NOM SG
 "<ulkomaalaisista>"
-	"ulkomaalainen" NOUN ALL <Lainen> PL YES
+	"ulkomaalainen" NOUN ALL <Lainen> PL TYPO
 "<suunnatuista>"
 	"suunnata" VERB ELA POS PL PCPNUT PSS
 "<työvoimapoliittista>"
@@ -31512,7 +31512,7 @@
 "<näyttävät>"
 	"näyttää" VERB INDV PL3 PRESENT ACT
 "<purevan>"
-	"purra" VERB GEN POS SG PRESENT ACT
+	"purra" VERB GEN POS SG PCPVA ACT
 "<yhtä>"
 	"yhtä" ADV
 "<hyvin>"
@@ -31737,7 +31737,7 @@
 # text = TEM:n mukaan työvoimaviranomaiset eivät onnistuneet taantumassa mitoittamaan ja ajoittamaan työvoimapolitiikan suhdannepoliittisia toimia parhaalla mahdollisella tavalla.
 # sent_id =  t032.22
 "<TEM:n>"
-	"TEM" PROPN YES GEN SG
+	"TEM" PROPN <ABBR> GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<työvoimaviranomaiset>"
@@ -31772,7 +31772,7 @@
 # text = TEM:n mukaan tukityöllistämistoimet näyttivät purevan melko hyvin myös vuonna 2009.
 # sent_id =  t032.23
 "<TEM:n>"
-	"TEM" PROPN YES GEN SG
+	"TEM" PROPN <ABBR> GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<tukityöllistämistoimet>"
@@ -31780,7 +31780,7 @@
 "<näyttivät>"
 	"näyttää" VERB INDV PL3 PAST ACT
 "<purevan>"
-	"purra" VERB GEN POS SG PRESENT ACT
+	"purra" VERB GEN POS SG PCPVA ACT
 "<melko>"
 	"melko" ADV
 "<hyvin>"
@@ -31878,7 +31878,7 @@
 # text = TEM:n mukaan viranomaiset lisäsivät työllistämistoimien määrää työttömyyden kasvuun nähden liian vähän, mikä on sittemmin lisännyt pitkäaikaistyöttömyyttä.
 # sent_id =  t032.27
 "<TEM:n>"
-	"TEM" PROPN YES GEN SG
+	"TEM" PROPN <ABBR> GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<viranomaiset>"
@@ -31966,7 +31966,7 @@
 "<Paljon>"
 	"paljon" ADV
 "<aikaansaavat>"
-	"aikaan#saada" VERB NOM POS PL PRESENT ACT
+	"aikaan#saada" VERB NOM POS PL PCPVA ACT
 "<työhirmut>"
 	"työ#hirmu" NOUN NOM PL
 "<saattavat>"
@@ -32030,7 +32030,7 @@
 "<puhdistettua>"
 	"puhdistaa" VERB PAR POS SG PCPNUT PSS
 "<maineensa>"
-	"maine" NOUN GEN SG 3
+	"maine" NOUN GEN SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -32070,7 +32070,7 @@
 "<heidän>"
 	"hän" PRON GEN PL3 PRS
 "<ajatuksiinsa>"
-	"ajatus" NOUN ILL PL 3
+	"ajatus" NOUN ILL PL POSS+3
 "<ei>"
 	"ei" AUX SG3 NEG ACT
 "<sitten>"
@@ -32119,7 +32119,7 @@
 "<tuntevat>"
 	"tuntea" VERB INDV PL3 PRESENT ACT
 "<olevansa>"
-	"olla" AUX NOM POS PL PRESENT 3 ACT
+	"olla" AUX NOM POS PL PCPVA POSS+3 ACT
 "<arvostettuja>"
 	"arvostaa" VERB PAR POS PL PCPNUT PSS
 "<.>"
@@ -32148,7 +32148,7 @@
 "<paitsi>"
 	"paitsi" ADV
 "<itseensä>"
-	"itse" PRON ILL SG 3 YES
+	"itse" PRON ILL SG POSS+3 REFLEX
 "<,>"
 	"," PUNCT
 "<myös>"
@@ -32194,9 +32194,9 @@
 "<muiden>"
 	"muu" PRON GEN PL
 "<kohtelevan>"
-	"kohdella" VERB GEN POS SG PRESENT ACT
+	"kohdella" VERB GEN POS SG PCPVA ACT
 "<itseään>"
-	"itse" PRON PAR SG 3 YES
+	"itse" PRON PAR SG POSS+3 REFLEX
 "<toimii>"
 	"toimia" VERB INDV SG3 PRESENT ACT
 "<ystävien>"
@@ -32256,7 +32256,7 @@
 "<Käytä>"
 	"käyttää" VERB IMPV SG2 ACT
 "<järkeäsi>"
-	"järki" NOUN PAR SG SING 2
+	"järki" NOUN PAR SG POSSSG2
 
 # text = Kaikki eivät halua olla töissä tehopakkauksia.
 # sent_id =  t049.15
@@ -32441,7 +32441,7 @@
 "<heidän>"
 	"hän" PRON GEN PL3 PRS
 "<ajatuksistaan>"
-	"ajatus" NOUN ELA PL 3
+	"ajatus" NOUN ELA PL POSS+3
 "<voi>"
 	"voida" AUX INDV SG0 PRESENT ACT
 "<melkein>"
@@ -32499,9 +32499,9 @@
 "<mukaan>"
 	"mukaan" ADP POST
 "<ellä>"
-	"edellä" ADV YES
+	"edellä" ADV TYPO
 "<olevat>"
-	"olla" VERB NOM POS PL PRESENT ACT
+	"olla" VERB NOM POS PL PCPVA ACT
 "<viisi>"
 	"viisi" NUM NOM SG CARD
 "<ohjetta>"
@@ -32525,7 +32525,7 @@
 "<oikeasti>"
 	"oikeasti" ADV <Sti>
 "<vaativan>"
-	"vaatia" VERB GEN POS SG PRESENT ACT
+	"vaatia" VERB GEN POS SG PCPVA ACT
 "<harjoitusta>"
 	"harjoitus" NOUN PAR SG
 "<.>"
@@ -32716,7 +32716,7 @@
 "<luentosaliin>"
 	"luento#sali" NOUN ILL SG
 "<kuultavaksi>"
-	"kuulla" VERB TRA POS SG PRESENT PSS
+	"kuulla" VERB TRA POS SG PCPVA PSS
 "<useita>"
 	"usea" ADJ PAR POS PL
 "<tieteellisiä>"
@@ -32739,7 +32739,7 @@
 "<gradu>"
 	"gradu" NOUN NOM SG
 "<-tutkielmiensa>"
-	"tutkielma" NOUN GEN PL 3
+	"tutkielma" NOUN GEN PL POSS+3
 "<aiheista>"
 	"aihe" NOUN ELA PL
 "<,>"
@@ -32763,7 +32763,7 @@
 "<tutkimustyöhön>"
 	"tutkimus#työ" NOUN ILL SG
 "<liityviä>"
-	"liittyä" VERB PAR POS PL PRESENT YES ACT
+	"liittyä" VERB PAR POS PL PCPVA TYPO ACT
 "<asioita>"
 	"asia" NOUN PAR PL
 "<.>"
@@ -32780,7 +32780,7 @@
 "<tilaisuuden>"
 	"tilaisuus" NOUN GEN <Inen,Vs> SG
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<tieteellisen>"
 	"tieteellinen" ADJ GEN POS <Llinen> SG
 "<esiintymisen>"
@@ -32969,7 +32969,7 @@
 "<niihin>"
 	"se" PRON ILL PL DEM
 "<kohdistuvat>"
-	"kohdistua" VERB NOM POS PL PRESENT ACT
+	"kohdistua" VERB NOM POS PL PCPVA ACT
 "<ennakkoluulot>"
 	"ennakko#luulo" NOUN NOM PL
 "<ja>"
@@ -33012,7 +33012,7 @@
 "<kieleen>"
 	"kieli" NOUN ILL SG
 "<liittyvä>"
-	"liittyä" VERB NOM POS SG PRESENT ACT
+	"liittyä" VERB NOM POS SG PCPVA ACT
 "<tutkimus>"
 	"tutkimus" NOUN NOM SG
 "<.>"
@@ -33027,7 +33027,7 @@
 "<tiedepäivään>"
 	"tiede#päivä" NOUN ILL SG
 "<liittyvä>"
-	"liittyä" VERB NOM POS SG PRESENT ACT
+	"liittyä" VERB NOM POS SG PCPVA ACT
 "<posterinäyttely>"
 	"posteri#näyttely" NOUN NOM <U> SG
 "<on>"
@@ -33081,7 +33081,7 @@
 "<esimiehenä>"
 	"esi#mies" NOUN ESS SG
 "<toimiva>"
-	"toimia" VERB NOM POS SG PRESENT ACT
+	"toimia" VERB NOM POS SG PCPVA ACT
 "<naisprofessori>"
 	"nainen#professori" NOUN NOM SG
 "<.>"
@@ -33439,7 +33439,7 @@
 "<hengellisen>"
 	"hengellinen" ADJ GEN POS <Llinen> SG
 "<sisältönsä>"
-	"sisältö" NOUN GEN SG 3
+	"sisältö" NOUN GEN SG POSS+3
 "<lisäksi>"
 	"lisäksi" ADP POST
 "<runotaiteena>"
@@ -33472,7 +33472,7 @@
 "<suomalaisten>"
 	"suomalainen" NOUN GEN <Lainen> PL
 "<ulottuville>"
-	"ulottua" VERB ALL POS PL PRESENT ACT
+	"ulottua" VERB ALL POS PL PCPVA ACT
 "<.>"
 	"." PUNCT
 
@@ -33514,7 +33514,7 @@
 "<Agricolan>"
 	"Agricola" PROPN GEN SG
 "<vaihteleva>"
-	"vaihdella" VERB NOM POS SG PRESENT ACT
+	"vaihdella" VERB NOM POS SG PCPVA ACT
 "<kirjoitustapa>"
 	"kirjoitus#tapa" NOUN NOM SG
 "<,>"
@@ -34065,7 +34065,7 @@
 "<syöpään>"
 	"syöpä" NOUN ILL SG
 "<liittyviä>"
-	"liittyä" VERB PAR POS PL PRESENT ACT
+	"liittyä" VERB PAR POS PL PCPVA ACT
 "<muutoksia>"
 	"muutos" NOUN PAR PL
 "<soluissa>"
@@ -34121,7 +34121,7 @@
 "<keskuksessa>"
 	"keskus" NOUN INE SG
 "<toimiva>"
-	"toimia" VERB NOM POS SG PRESENT ACT
+	"toimia" VERB NOM POS SG PCPVA ACT
 "<tutkimusryhmä>"
 	"tutkimus#ryhmä" NOUN NOM SG
 "<keskittyy>"
@@ -34269,7 +34269,7 @@
 "<perustuvat>"
 	"perustua" VERB INDV PL3 PRESENT ACT
 "<tutkimustuloksemme>"
-	"tutkimus#tulos" NOUN NOM PL PLUR 1
+	"tutkimus#tulos" NOUN NOM PL POSSPL1
 "<olivat>"
 	"olla" AUX INDV PL3 PAST ACT
 "<odottamattomia>"
@@ -34326,7 +34326,7 @@
 "<Tässä>"
 	"tämä" PRON INE SG DEM
 "<keskuksemme>"
-	"keskus" NOUN GEN SG PLUR 1
+	"keskus" NOUN GEN SG POSSPL1
 "<teknologiaosaaminen>"
 	"teknologia#osaaminen" NOUN NOM <Minen> SG
 "<on>"
@@ -34401,7 +34401,7 @@
 "<ainutlaatuisten>"
 	"ainutlaatuinen" ADJ GEN POS <Inen> PL
 "<ominaisuuksiensa>"
-	"ominaisuus" NOUN GEN <Inen,Vs> PL 3
+	"ominaisuus" NOUN GEN <Inen,Vs> PL POSS+3
 "<vuoksi>"
 	"vuoksi" ADP POST
 "<:>"
@@ -35247,7 +35247,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<tuleva>"
-	"tulla" VERB NOM POS SG PRESENT ACT
+	"tulla" VERB NOM POS SG PCPVA ACT
 "<tieteen>"
 	"tiede" NOUN GEN SG
 "<,>"
@@ -35313,11 +35313,11 @@
 "<Keski-Amerikassa>"
 	"Keski#Amerikka" PROPN INE SG
 "<tavattava>"
-	"tavata" VERB NOM POS SG PRESENT PSS
+	"tavata" VERB NOM POS SG PCPVA PSS
 "<kipuajiin>"
 	"kipuaja" NOUN ILL <Ja> PL
 "<kuuluva>"
-	"kuulua" VERB NOM POS SG PRESENT ACT
+	"kuulua" VERB NOM POS SG PCPVA ACT
 "<varpuslintu>"
 	"varpus#lintu" NOUN NOM SG
 "<.>"
@@ -35326,7 +35326,7 @@
 # text = Kooltaan mustaviirukipuaja on noin 23 cm.
 # sent_id =  w085.2
 "<Kooltaan>"
-	"koko" NOUN ABL SG 3
+	"koko" NOUN ABL SG POSS+3
 "<mustaviirukipuaja>"
 	"musta#viiru#kipuaja" NOUN NOM <Ja> SG
 "<on>"
@@ -35336,7 +35336,7 @@
 "<23>"
 	"23" NUM CARD
 "<cm>"
-	"cm" NOUN YES PAR SG
+	"cm" NOUN <ABBR> PAR SG
 "<.>"
 	"." PUNCT
 
@@ -35353,7 +35353,7 @@
 "<ja>"
 	"ja" CCONJ
 "<tihesti>"
-	"tiheästi" ADV <Sti> YES
+	"tiheästi" ADV <Sti> TYPO
 "<musta>"
 	"musta" ADJ NOM POS SG
 "<viiruinen>"
@@ -35383,7 +35383,7 @@
 # text = Mustaviirukpuajan siivet ja pyrstö ovat väriltään tumman kastanjanruskeat.
 # sent_id =  w085.5
 "<Mustaviirukpuajan>"
-	"Musta#viiru#kipuaja" NOUN GEN <Ja> SG YES
+	"Musta#viiru#kipuaja" NOUN GEN <Ja> SG TYPO
 "<siivet>"
 	"siipi" NOUN NOM PL
 "<ja>"
@@ -35393,7 +35393,7 @@
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<väriltään>"
-	"väri" NOUN ABL SG 3
+	"väri" NOUN ABL SG POSS+3
 "<tumman>"
 	"tumma" ADJ GEN POS SG
 "<kastanjanruskeat>"
@@ -35408,7 +35408,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mustavlkoviiruinen>"
-	"musta#valko#viiruinen" ADJ NOM POS <Inen> SG YES
+	"musta#valko#viiruinen" ADJ NOM POS <Inen> SG TYPO
 "<.>"
 	"." PUNCT
 
@@ -35509,7 +35509,7 @@
 "<metsien>"
 	"metsä" NOUN GEN PL
 "<laitaimlla>"
-	"laitama" NOUN ADE PL YES
+	"laitama" NOUN ADE PL TYPO
 "<.>"
 	"." PUNCT
 
@@ -35860,7 +35860,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<halkaisijaltaan>"
-	"halkaisija" NOUN ABL <Ja> SG 3
+	"halkaisija" NOUN ABL <Ja> SG POSS+3
 "<10>"
 	"10" NUM CARD
 "<senttimetriä>"
@@ -35889,7 +35889,7 @@
 # text = Kestoltaan avautumisvaihe vaihtelee viiden ja kymmenen tunnin välillä.
 # sent_id =  w088.11
 "<Kestoltaan>"
-	"kesto" NOUN ABL SG 3
+	"kesto" NOUN ABL SG POSS+3
 "<avautumisvaihe>"
 	"avautumis#vaihe" NOUN NOM SG
 "<vaihtelee>"
@@ -36118,7 +36118,7 @@
 "<normaaliin>"
 	"normaali" ADJ ILL POS SG
 "<kokoonsa>"
-	"koko" NOUN ILL SG 3
+	"koko" NOUN ILL SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -36200,7 +36200,7 @@
 "<ennen>"
 	"ennen" ADP PREP
 "<syntymäänsä>"
-	"syntymä" NOUN PAR SG 3
+	"syntymä" NOUN PAR SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -36322,7 +36322,7 @@
 "<Synnytykseen>"
 	"synnytys" NOUN ILL SG
 "<liittyvän>"
-	"liittyä" VERB GEN POS SG PRESENT ACT
+	"liittyä" VERB GEN POS SG PCPVA ACT
 "<kivun>"
 	"kipu" NOUN GEN SG
 "<voimakkuus>"
@@ -36342,7 +36342,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<käytettävissä>"
-	"käyttää" VERB INE POS PL PRESENT PSS
+	"käyttää" VERB INE POS PL PCPVA PSS
 "<tehokkaita>"
 	"tehokas" ADJ PAR POS PL
 "<keinoja>"
@@ -36357,7 +36357,7 @@
 "<Kirjakauppa>"
 	"kirja#kauppa" NOUN NOM SG
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN <ABBR> NOM SG
 "<(>"
 	"(" PUNCT
 "<mainonnassa>"
@@ -36547,17 +36547,17 @@
 "<engl.>"
 	"englanti" NOUN TRA SG
 "<light>"
-	"light" X YES
+	"light" X FOREIGN
 "<weight>"
-	"weight" X YES
+	"weight" X FOREIGN
 "<coated>"
-	"coated" X YES
+	"coated" X FOREIGN
 "<paper>"
-	"paper" X YES
+	"paper" X FOREIGN
 "<;>"
 	";" PUNCT
 "<LWC>"
-	"LWC" X YES
+	"LWC" X FOREIGN
 "<)>"
 	")" PUNCT
 "<tarkoittaa>"
@@ -36624,7 +36624,7 @@
 "<LWC-paperia>"
 	"LWC#paperi" NOUN PAR SG
 "<korkeampipitasoinen>"
-	"korkea#tasoinen" ADJ NOM POS <Inen> SG YES
+	"korkea#tasoinen" ADJ NOM POS <Inen> SG TYPO
 "<laatu>"
 	"laatu" NOUN NOM SG
 "<on>"
@@ -36835,7 +36835,7 @@
 "<Urheilutelevisio>"
 	"urheilu#televisio" PROPN NOM SG
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN <ABBR> NOM SG
 "<sai>"
 	"saada" VERB INDV SG3 PAST ACT
 "<valtakunnallisen>"
@@ -36875,7 +36875,7 @@
 "<aloitti>"
 	"aloittaa" VERB INDV SG3 PAST ACT
 "<lähetyksensä>"
-	"lähetys" NOUN GEN SG 3
+	"lähetys" NOUN GEN SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -36892,7 +36892,7 @@
 "<Television>"
 	"television" PROPN GEN SG
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN <ABBR> NOM SG
 "</>"
 	"/" PUNCT
 "<Nelonen>"
@@ -36917,7 +36917,7 @@
 "<myös>"
 	"myös" ADV
 "<teksti-tv>"
-	"teksti#tv" NOUN YES NOM SG
+	"teksti#tv" NOUN <ABBR> NOM SG
 "<,>"
 	"," PUNCT
 "<mutta>"
@@ -36950,7 +36950,7 @@
 "<Sanoma-konserniin>"
 	"sanoma#konserni" PROPN ILL SG
 "<kuuluva>"
-	"kuulua" VERB NOM POS SG PRESENT ACT
+	"kuulua" VERB NOM POS SG PCPVA ACT
 "<Sanoma>"
 	"sanoma" PROPN NOM SG
 "<Entertainment>"
@@ -36985,7 +36985,7 @@
 "<2007>"
 	"2007" NUM CARD
 "<ostettuaan>"
-	"ostaa" VERB PAR POS SG PCPNUT 3 PSS
+	"ostaa" VERB PAR POS SG PCPNUT POSS+3 PSS
 "<Sportup>"
 	"Sportup" PROPN NOM SG
 "<Finland>"
@@ -37007,7 +37007,7 @@
 "<Urheilutelevisio>"
 	"urheilu#televisio" PROPN NOM SG
 "<Oy:n>"
-	"oy" NOUN YES GEN SG
+	"oy" NOUN <ABBR> GEN SG
 "<osakkeista>"
 	"osake" NOUN ELA PL
 "<.>"
@@ -37051,7 +37051,7 @@
 "<,>"
 	"," PUNCT
 "<esim.>"
-	"esimerkiksi" ADV YES
+	"esimerkiksi" ADV <ABBR>
 "<Liigacupin>"
 	"liiga#cup" PROPN GEN SG
 "<finaalin>"
@@ -37384,7 +37384,7 @@
 "<oikea>"
 	"oikea" ADJ NOM POS SG
 "<nimensä>"
-	"nimi" NOUN NOM SG 3
+	"nimi" NOUN NOM SG POSS+3
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<Reijo>"
@@ -37508,7 +37508,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<käyntinsä>"
-	"käynti" NOUN GEN SG 3
+	"käynti" NOUN GEN SG POSS+3
 "<jälkeen>"
 	"jälkeen" ADP POST
 "<erityisen>"
@@ -37547,7 +37547,7 @@
 "<hänestä>"
 	"hän" PRON ELA SG3 PRS
 "<kirjoissaan>"
-	"kirja" NOUN INE PL 3
+	"kirja" NOUN INE PL POSS+3
 "<.>"
 	"." PUNCT
 
@@ -37701,7 +37701,7 @@
 "<vielä>"
 	"vielä" ADV
 "<nähtävillä>"
-	"nähdä" VERB ADE POS PL PRESENT PSS
+	"nähdä" VERB ADE POS PL PCPVA PSS
 "<Lankojärvellä>"
 	"Lanko#järvi" PROPN ADE SG
 "<.>"
@@ -37712,7 +37712,7 @@
 "<Meänteis>"
 	"Meänteis" PROPN NOM SG
 "<itse>"
-	"itse" PRON NOM SG YES
+	"itse" PRON NOM SG REFLEX
 "<meni>"
 	"mennä" VERB INDV SG3 PAST ACT
 "<naimisiin>"
@@ -37765,7 +37765,7 @@
 "<Kartat>"
 	"kartta" NOUN NOM PL
 "<Oy>"
-	"oy" NOUN YES NOM SG
+	"oy" NOUN <ABBR> NOM SG
 "<,>"
 	"," PUNCT
 "<2005>"
@@ -37781,7 +37781,7 @@
 "<oman>"
 	"oma" ADJ GEN POS SG
 "<tarinansa>"
-	"tarina" NOUN GEN SG 3
+	"tarina" NOUN GEN SG POSS+3
 "<ja>"
 	"ja" CCONJ
 "<oikaisee>"
@@ -37839,7 +37839,7 @@
 "<(>"
 	"(" PUNCT
 "<s.>"
-	"syntyä" VERB YES NOM POS SG PCPNUT ACT
+	"syntyä" VERB <ABBR> NOM POS SG PCPNUT ACT
 "<22.>"
 	"22." ADJ ORD
 "<joulukuuta>"
@@ -37948,7 +37948,7 @@
 "<7,5>"
 	"7,5" NUM CARD
 "<km:llä>"
-	"kilo#metri" NOUN YES ADE SG
+	"kilo#metri" NOUN <ABBR> ADE SG
 "<ja>"
 	"ja" CCONJ
 "<saavutti>"
@@ -37958,7 +37958,7 @@
 "<15>"
 	"15" NUM CARD
 "<km:llä>"
-	"kilo#metri" NOUN YES ADE SG
+	"kilo#metri" NOUN <ABBR> ADE SG
 "<.>"
 	"." PUNCT
 
@@ -37989,13 +37989,13 @@
 "<7,5>"
 	"7,5" NUM CARD
 "<km>"
-	"kilo#metri" NOUN YES PAR SG
+	"kilo#metri" NOUN <ABBR> PAR SG
 "<ja>"
 	"ja" CCONJ
 "<15>"
 	"15" NUM CARD
 "<km>"
-	"kilo#metri" NOUN YES PAR SG
+	"kilo#metri" NOUN <ABBR> PAR SG
 "<.>"
 	"." PUNCT
 
@@ -38012,11 +38012,11 @@
 "<lyhyesti>"
 	"lyhyesti" ADV <Sti>
 "<synnyttääkseen>"
-	"synnyttää" VERB TRA INFA SG 3 ACT
+	"synnyttää" VERB TRA INFA SG POSS+3 ACT
 "<ensimmäisen>"
 	"ensimmäinen" ADJ GEN <Inen> SG ORD
 "<lapsensa>"
-	"lapsi" NOUN NOM SG 3
+	"lapsi" NOUN NOM SG POSS+3
 "<(>"
 	"(" PUNCT
 "<isä>"
@@ -38037,7 +38037,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<paluunsa>"
-	"paluu" NOUN NOM SG 3
+	"paluu" NOUN NOM SG POSS+3
 "<ladulle>"
 	"latu" NOUN ALL SG
 "<ei>"
@@ -38064,7 +38064,7 @@
 "<lopetti>"
 	"lopettaa" VERB INDV SG3 PAST ACT
 "<uransa>"
-	"ura" NOUN NOM SG 3
+	"ura" NOUN NOM SG POSS+3
 "<Naganon>"
 	"Nagano" PROPN GEN SG
 "<talvikisojen>"
@@ -38101,7 +38101,7 @@
 "<entistä>"
 	"entinen" ADJ PAR POS <Inen> SG
 "<työnantajaansa>"
-	"työ#antaja" NOUN ILL <Ja> SG 3
+	"työ#antaja" NOUN ILL <Ja> SG POSS+3
 "<VIA>"
 	"VIA" PROPN NOM SG
 "<Railia>"
@@ -38224,7 +38224,7 @@
 "<4>"
 	"4" NUM CARD
 "<x>"
-	"x" NOUN YES NOM SG
+	"x" NOUN <ABBR> NOM SG
 "<400>"
 	"400" NUM CARD
 "<metrin>"
@@ -38395,7 +38395,7 @@
 "<(>"
 	"(" PUNCT
 "<s.>"
-	"syntynyt" VERB YES NOM POS SG PCPNUT ACT
+	"syntynyt" VERB <ABBR> NOM POS SG PCPNUT ACT
 "<5.>"
 	"5." ADJ ORD
 "<heinäkuuta>"
@@ -38455,7 +38455,7 @@
 "<levyttänyt>"
 	"levyttää" VERB NOM POS SG PCPNUT ACT
 "<mm.>"
-	"mm." ADV YES
+	"mm." ADV <ABBR>
 "<Johannes>"
 	"Johannes" PROPN NOM SG
 "<Brahmsia>"
@@ -38514,7 +38514,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<äänietty>"
-	"äänittää" VERB NOM POS SG PCPNUT YES PSS
+	"äänittää" VERB NOM POS SG PCPNUT TYPO PSS
 "<Los>"
 	"Los" PROPN NOM SG
 "<Angered>"
@@ -38582,7 +38582,7 @@
 "<Budapestissa>"
 	"Budapest" PROPN INE SG
 "<olevasta>"
-	"olla" VERB ELA POS SG PRESENT ACT
+	"olla" VERB ELA POS SG PCPVA ACT
 "<nukketeatterista>"
 	"nukke#teatteri" NOUN ELA SG
 "<.>"
@@ -38591,7 +38591,7 @@
 # text = Itse tarinakin sijoittuu nukkejen maailmaan.
 # sent_id =  w138.5
 "<Itse>"
-	"itse" PRON NOM SG YES
+	"itse" PRON NOM SG REFLEX
 "<tarinakin>"
 	"tarina" NOUN NOM CLITKIN SG
 "<sijoittuu>"
@@ -38616,7 +38616,7 @@
 "<levylle>"
 	"levy" NOUN ALL SG
 "<keikkaillessaan>"
-	"keikkailla" VERB INE INFE SG 3 ACT
+	"keikkailla" VERB INE INFE SG POSS+3 ACT
 "<Mercyful>"
 	"Mercyful" PROPN NOM SG
 "<Faten>"
@@ -38631,7 +38631,7 @@
 # text = Vapaapäivänään hän oli nähnyt suuren Kansallisen Nukketeatterin, jossa esitetään vain nukketeatteria.
 # sent_id =  w138.7
 "<Vapaapäivänään>"
-	"vapaa#päivä" NOUN ESS SG 3
+	"vapaa#päivä" NOUN ESS SG POSS+3
 "<hän>"
 	"hän" PRON NOM SG3 PRS
 "<oli>"
@@ -38674,9 +38674,9 @@
 "<myöhemmin>"
 	"myöhemmin" ADV
 "<selaillessaan>"
-	"selailla" VERB INE INFE SG 3 ACT
+	"selailla" VERB INE INFE SG POSS+3 ACT
 "<muistilappujaan>"
-	"muisti#lappu" NOUN PAR PL 3
+	"muisti#lappu" NOUN PAR PL POSS+3
 "<hän>"
 	"hän" PRON NOM SG3 PRS
 "<havaitsi>"
@@ -38684,7 +38684,7 @@
 "<nukketeatteritarinaan>"
 	"nukke#teatteri#tarina" NOUN ILL SG
 "<liittyvän>"
-	"liittyä" VERB GEN POS SG PRESENT ACT
+	"liittyä" VERB GEN POS SG PCPVA ACT
 "<potentiaalin>"
 	"potentiaali" NOUN GEN SG
 "<.>"
@@ -38701,7 +38701,7 @@
 "<avulla>"
 	"apu" NOUN ADE <U> SG
 "<tapahtuva>"
-	"tapahtua" VERB NOM POS SG PRESENT ACT
+	"tapahtua" VERB NOM POS SG PCPVA ACT
 "<rintasyövän>"
 	"rinta#syöpä" NOUN GEN SG
 "<seulontatutkimus>"
@@ -38780,11 +38780,11 @@
 "<todettu>"
 	"todeta" VERB NOM POS SG PCPNUT PSS
 "<vähentävän>"
-	"vähentää" VERB GEN POS SG PRESENT ACT
+	"vähentää" VERB GEN POS SG PCPVA ACT
 "<rintasyövästä>"
 	"rinta#syöpä" NOUN ELA SG
 "<johtuvia>"
-	"johtua" VERB PAR POS PL PRESENT ACT
+	"johtua" VERB PAR POS PL PCPVA ACT
 "<kuolemia>"
 	"kuolema" NOUN PAR PL
 "<40–74-vuotiailla>"
@@ -38913,7 +38913,7 @@
 "<rintasyövästä>"
 	"rinta#syöpä" NOUN ELA SG
 "<johtuvia>"
-	"johtua" VERB PAR POS PL PRESENT ACT
+	"johtua" VERB PAR POS PL PCPVA ACT
 "<kuolemia>"
 	"kuolema" NOUN PAR PL
 "<50–69-vuotiailla>"
@@ -39089,7 +39089,7 @@
 "<eri>"
 	"eri" ADJ
 "<aikona>"
-	"aika" NOUN ESS PL YES
+	"aika" NOUN ESS PL TYPO
 "<ja>"
 	"ja" CCONJ
 "<eri>"
@@ -39206,7 +39206,7 @@
 "<filmiä>"
 	"filmi" NOUN PAR SG
 "<käyttävän>"
-	"käyttää" VERB GEN POS SG PRESENT ACT
+	"käyttää" VERB GEN POS SG PCPVA ACT
 "<kuvauksen>"
 	"kuvaus" NOUN GEN SG
 "<ja>"
@@ -39286,7 +39286,7 @@
 "<vaikuttaa>"
 	"vaikuttaa" VERB INDV SG3 PRESENT ACT
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<paras>"
 	"hyvä" ADJ NOM SUP SG
 "<,>"
@@ -39430,7 +39430,7 @@
 "<kun>"
 	"kun" SCONJ
 "<kuvattavat>"
-	"kuvata" VERB NOM POS PL PRESENT PSS
+	"kuvata" VERB NOM POS PL PCPVA PSS
 "<ovat>"
 	"olla" AUX INDV PL3 PRESENT ACT
 "<50–59-vuotiaita>"
@@ -40018,7 +40018,7 @@
 "<laatua>"
 	"laatu" NOUN PAR SG
 "<mittaavia>"
-	"mitata" VERB PAR POS PL PRESENT ACT
+	"mitata" VERB PAR POS PL PCPVA ACT
 "<tunnuksia>"
 	"tunnus" NOUN PAR PL
 "<ovat>"
@@ -40117,7 +40117,7 @@
 "<eli>"
 	"eli" CCONJ
 "<nk.>"
-	"nk." ADJ YES
+	"nk." ADJ <ABBR>
 "<taustailmaantuvuudesta>"
 	"tausta#ilmaantuvuus" NOUN ELA <Vs> SG
 "<.>"
@@ -40180,7 +40180,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<sukulaisensa>"
-	"sukulainen" NOUN NOM <Lainen> PL 3
+	"sukulainen" NOUN NOM <Lainen> PL POSS+3
 "<vaikuttivat>"
 	"vaikuttaa" VERB INDV PL3 PAST ACT
 "<musiikin>"
@@ -40261,7 +40261,7 @@
 "<Hänen>"
 	"hän" PRON GEN SG3 PRS
 "<oppilaitaan>"
-	"oppilas" NOUN PAR PL 3
+	"oppilas" NOUN PAR PL POSS+3
 "<olivat>"
 	"olla" AUX INDV PL3 PAST ACT
 "<muiden>"
@@ -40315,7 +40315,7 @@
 "<Eleanor>"
 	"Eleanor" PROPN NOM SG
 "<A.>"
-	"A." PROPN YES NOM SG
+	"A." PROPN <ABBR> NOM SG
 "<Garatti>"
 	"Garatti" PROPN NOM SG
 "<(>"
@@ -40461,9 +40461,9 @@
 "<(>"
 	"(" PUNCT
 "<ven.>"
-	"ven." NOUN YES TRA SG
+	"ven." NOUN <ABBR> TRA SG
 "<Первома́йск>"
-	"Первома́йск" X YES
+	"Первома́йск" X FOREIGN
 "<)>"
 	")" PUNCT
 "<on>"
@@ -40542,7 +40542,7 @@
 "<rautatieltä>"
 	"rauta#tie" NOUN ABL SG
 "<haarautuvan>"
-	"haarautua" VERB GEN POS SG PRESENT ACT
+	"haarautua" VERB GEN POS SG PCPVA ACT
 "<sivuradan>"
 	"sivu#rata" NOUN GEN SG
 "<pääteasema>"
@@ -40580,7 +40580,7 @@
 "<saanut>"
 	"saada" VERB NOM POS SG PCPNUT ACT
 "<alkunsa>"
-	"alku" NOUN GEN <U> SG 3
+	"alku" NOUN GEN <U> SG POSS+3
 "<terästehtaan>"
 	"teräs#tehdas" NOUN GEN SG
 "<yhteyteen>"
@@ -40624,7 +40624,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mm.>"
-	"mm." ADV YES
+	"mm." ADV <ABBR>
 "<kone->"
 	"kone" NOUN NOM SG
 "<ja>"
@@ -40788,7 +40788,7 @@
 "<toteuttaa>"
 	"toteuttaa" VERB INFA SG ACT
 "<hahmonsa>"
-	"hahmo" NOUN GEN SG 3
+	"hahmo" NOUN GEN SG POSS+3
 "<pahimpia>"
 	"paha" ADJ PAR SUP PL
 "<pelkoja>"
@@ -40817,11 +40817,11 @@
 "<ohjata>"
 	"ohjata" VERB INFA SG ACT
 "<simiään>"
-	"sim" NOUN PAR SG 3
+	"sim" NOUN PAR SG POSS+3
 "<täysin>"
 	"täysin" ADV
 "<haluamaansa>"
-	"haluta" VERB ILL POS SG AGT 3 ACT
+	"haluta" VERB ILL POS SG AGT POSS+3 ACT
 "<elämänsuuntaan>"
 	"elämä#suunta" NOUN ILL SG
 "<.>"
@@ -41068,19 +41068,19 @@
 "<beta-version>"
 	"beta#versio" NOUN GEN SG
 "<olevan>"
-	"olla" AUX GEN POS SG PRESENT ACT
+	"olla" AUX GEN POS SG PCPVA ACT
 "<vajavainen>"
 	"vajavainen" ADJ NOM POS <Inen> SG
 "<ja>"
 	"ja" CCONJ
 "<sisältävän>"
-	"sisältää" VERB GEN POS SG PRESENT ACT
+	"sisältää" VERB GEN POS SG PCPVA ACT
 "<useita>"
 	"usea" PRON PAR PL
 "<pelaamista>"
 	"pelaaminen" NOUN PAR <Minen> SG
 "<haittaavia>"
-	"haitata" VERB PAR POS PL PRESENT ACT
+	"haitata" VERB PAR POS PL PCPVA ACT
 "<teknisiä>"
 	"tekninen" ADJ PAR POS <Inen> PL
 "<ongelmia>"
@@ -41107,7 +41107,7 @@
 "<The>"
 	"The" PROPN NOM SG
 "<Sims-sarjan>"
-	"Sims#sarja" PROPN GEN SG YES
+	"Sims#sarja" PROPN GEN SG TYPO
 "<osista>"
 	"osa" NOUN ELA PL
 "<tuttua>"
@@ -41125,7 +41125,7 @@
 "<huolehtia>"
 	"huolehtia" VERB INFA SG ACT
 "<luomansa>"
-	"luoda" VERB GEN POS SG AGT 3 ACT
+	"luoda" VERB GEN POS SG AGT POSS+3 ACT
 "<hahmon>"
 	"hahmo" NOUN GEN SG
 "<eli>"
@@ -41143,7 +41143,7 @@
 "<kuitenkin>"
 	"kuitenkin" ADV
 "<edeltäjiään>"
-	"edeltäjä" NOUN PAR <Ja> PL 3
+	"edeltäjä" NOUN PAR <Ja> PL POSS+3
 "<pienemmässä>"
 	"pieni" ADJ INE CMP SG
 "<roolissa>"
@@ -41162,7 +41162,7 @@
 "<huolehtia>"
 	"huolehtia" VERB INFA SG ACT
 "<itsestään>"
-	"itse" PRON ELA SG 3 YES
+	"itse" PRON ELA SG POSS+3 REFLEX
 "<paremmin>"
 	"paremmin" ADV
 "<,>"
@@ -41299,7 +41299,7 @@
 "<(>"
 	"(" PUNCT
 "<esim.>"
-	"esim." ADV YES
+	"esim." ADV <ABBR>
 "<kaunis>"
 	"kaunis" ADJ NOM POS SG
 "<sisustus>"
@@ -41433,7 +41433,7 @@
 "<vedenpelkoinen>"
 	"vesi#pelkoinen" ADJ NOM POS <Inen> SG
 "<jne>"
-	"jne" ADV YES
+	"jne" ADV <ABBR>
 "<...>"
 	"..." PUNCT
 "<)>"
@@ -41442,7 +41442,7 @@
 # text = Simeistään voi muokata vaikka lapsia vihaavia raivopäitä, tai hyveellisiä nörttejä.
 # sent_id =  w173.22
 "<Simeistään>"
-	"sim" NOUN ELA PL 3
+	"sim" NOUN ELA PL POSS+3
 "<voi>"
 	"voida" AUX INDV SG0 PRESENT ACT
 "<muokata>"
@@ -41452,7 +41452,7 @@
 "<lapsia>"
 	"lapsi" NOUN PAR PL
 "<vihaavia>"
-	"vihata" VERB PAR POS PL PRESENT ACT
+	"vihata" VERB PAR POS PL PCPVA ACT
 "<raivopäitä>"
 	"raivo#pää" NOUN PAR PL
 "<,>"
@@ -41551,7 +41551,7 @@
 "<korujen>"
 	"koru" NOUN GEN PL
 "<jne.>"
-	"jne." ADV YES
+	"jne." ADV <ABBR>
 "<valitseminen>"
 	"valitseminen" NOUN NOM <Minen> SG
 "<eri>"
@@ -41987,7 +41987,7 @@
 "<katsoa>"
 	"katsoa" VERB INFA SG ACT
 "<ympärillesi>"
-	"ympärille" ADV SING 2
+	"ympärille" ADV POSSSG2
 "<ja>"
 	"ja" CCONJ
 "<sen>"
@@ -41997,7 +41997,7 @@
 "<katsoa>"
 	"katsoa" VERB INFA SG ACT
 "<simisi>"
-	"sim" NOUN GEN SG SING 2
+	"sim" NOUN GEN SG POSSSG2
 "<ympäristöä>"
 	"ympäristö" NOUN PAR SG
 "<ja>"
@@ -42201,7 +42201,7 @@
 "<teet>"
 	"tehdä" VERB INDV SG2 PRESENT ACT
 "<kotisi>"
-	"koti" NOUN GEN SG SING 2
+	"koti" NOUN GEN SG POSSSG2
 "<ulkopuolella>"
 	"ulkopuolella" ADP POST
 "<,>"
@@ -42221,7 +42221,7 @@
 "<sisällä>"
 	"sisällä" ADP PREP
 "<kodissasi>"
-	"koti" NOUN INE SG SING 2
+	"koti" NOUN INE SG POSSSG2
 "<">"
 	""" PUNCT
 "<.>"
@@ -42454,7 +42454,7 @@
 "<Raskaana>"
 	"raskaana" ADV
 "<olevat>"
-	"olla" VERB NOM POS PL PRESENT ACT
+	"olla" VERB NOM POS PL PCPVA ACT
 "<simit>"
 	"sim" NOUN NOM PL
 "<pystyvät>"
@@ -42471,7 +42471,7 @@
 "<Raskaana>"
 	"raskaana" ADV
 "<olevalle>"
-	"olla" VERB ALL POS SG PRESENT ACT
+	"olla" VERB ALL POS SG PCPVA ACT
 "<naiselle>"
 	"nainen" NOUN ALL SG
 "<tulee>"
@@ -42492,7 +42492,7 @@
 "<raskaana>"
 	"raskaana" ADV
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<simin>"
 	"sim" NOUN GEN SG
 "<saa>"
@@ -42594,7 +42594,7 @@
 "<oman>"
 	"oma" ADJ GEN POS SG
 "<onnensa>"
-	"onni" NOUN GEN SG 3
+	"onni" NOUN GEN SG POSS+3
 "<nojaan>"
 	"noja" NOUN ILL SG
 "<.>"
@@ -42813,7 +42813,7 @@
 "<kulkea>"
 	"kulkea" VERB INFA SG ACT
 "<kotiensa>"
-	"koti" NOUN GEN PL 3
+	"koti" NOUN GEN PL POSS+3
 "<ulkopuolella>"
 	"ulkopuolella" ADP POST
 "<.>"
@@ -42919,7 +42919,7 @@
 "<omia>"
 	"oma" ADJ PAR POS PL
 "<muokkaamiaan>"
-	"muokata" VERB PAR POS PL AGT 3 ACT
+	"muokata" VERB PAR POS PL AGT POSS+3 ACT
 "<esineitä>"
 	"esine" NOUN PAR PL
 "<,>"
@@ -43083,7 +43083,7 @@
 "<kehittyvät>"
 	"kehittyä" VERB INDV PL3 PRESENT ACT
 "<urallaan>"
-	"ura" NOUN ADE SG 3
+	"ura" NOUN ADE SG POSS+3
 "<,>"
 	"," PUNCT
 "<jos>"
@@ -43109,7 +43109,7 @@
 "<uraan>"
 	"ura" NOUN ILL SG
 "<vaadittavia>"
-	"vaatia" VERB PAR POS PL PRESENT PSS
+	"vaatia" VERB PAR POS PL PCPVA PSS
 "<taitoja>"
 	"taito" NOUN PAR PL
 "<.>"
@@ -43170,7 +43170,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<mm.>"
-	"mm." ADV YES
+	"mm." ADV <ABBR>
 "<työskentele>"
 	"työskennellä" VERB IMPV SG2 ACT
 "<ankarasti>"
@@ -43370,7 +43370,7 @@
 "<vaikkapa>"
 	"vaikkapa" ADV
 "<kokkaustaidoistasi>"
-	"kokkaus#taito" NOUN ELA PL SING 2
+	"kokkaus#taito" NOUN ELA PL POSSSG2
 "<,>"
 	"," PUNCT
 "<he>"
@@ -43382,11 +43382,11 @@
 "<maksaa>"
 	"maksaa" VERB INFA SG ACT
 "<saadakseen>"
-	"saada" VERB TRA INFA SG 3 ACT
+	"saada" VERB TRA INFA SG POSS+3 ACT
 "<nauttia>"
 	"nauttia" VERB INFA SG ACT
 "<antimistasi>"
-	"antimet" NOUN ELA PL SING 2
+	"antimet" NOUN ELA PL POSSSG2
 "<)>"
 	")" PUNCT
 "<.>"
@@ -43411,7 +43411,7 @@
 "<ja>"
 	"ja" CCONJ
 "<esim.>"
-	"esim." ADV YES
+	"esim." ADV <ABBR>
 "<kitaransoittotaidon>"
 	"kitara#soitto#taito" NOUN GEN SG
 "<kehittyessä>"
@@ -43688,7 +43688,7 @@
 "<sai>"
 	"saada" VERB INDV SG3 PAST ACT
 "<nimensä>"
-	"nimi" NOUN GEN SG 3
+	"nimi" NOUN GEN SG POSS+3
 "<Aleksandr>"
 	"Aleksandr" PROPN NOM SG
 "<Baranovin>"
@@ -43741,11 +43741,11 @@
 "<Ne>"
 	"se" PRON NOM PL DEM
 "<siiirtyivät>"
-	"siirtyä" VERB INDV PL3 PAST YES ACT
+	"siirtyä" VERB INDV PL3 PAST TYPO ACT
 "<Yhdysvaltojen>"
 	"Yhdysvallat" PROPN GEN PL
 "<halllintaan>"
-	"hallinta" NOUN ILL SG YES
+	"hallinta" NOUN ILL SG TYPO
 "<1867>"
 	"1867" NUM CARD
 "<Alaskan>"
@@ -43770,7 +43770,7 @@
 "<(>"
 	"(" PUNCT
 "<s.>"
-	"syntyä" VERB YES NOM POS SG PCPNUT ACT
+	"syntyä" VERB <ABBR> NOM POS SG PCPNUT ACT
 "<27.>"
 	"27." ADJ ORD
 "<tammikuuta>"
@@ -43842,7 +43842,7 @@
 "<vanhempien>"
 	"vanhempi" NOUN GEN PL
 "<olleessa>"
-	"olla" AUX INE INFE SG YES ACT
+	"olla" AUX INE INFE SG TYPO ACT
 "<Yhdysvalloissa>"
 	"Yhdysvallat" PROPN INE PL
 "<synnytys>"
@@ -43889,7 +43889,7 @@
 "<kasvattaa>"
 	"kasvattaa" VERB INFA SG ACT
 "<poikaansa>"
-	"poika" NOUN PAR SG 3
+	"poika" NOUN PAR SG POSS+3
 "<,>"
 	"," PUNCT
 "<joten>"
@@ -43935,7 +43935,7 @@
 # text = Vanhempiensa suhteiden avulla hän pääsi opiskelemaan Michiganin yliopistoon.
 # sent_id =  w199.6
 "<Vanhempiensa>"
-	"vanhempi" NOUN GEN PL 3
+	"vanhempi" NOUN GEN PL POSS+3
 "<suhteiden>"
 	"suhde" NOUN GEN PL
 "<avulla>"
@@ -43996,13 +43996,13 @@
 "<rikkomista>"
 	"rikkominen" NOUN PAR <Minen> SG
 "<koskeva>"
-	"koskea" VERB NOM POS SG PRESENT ACT
+	"koskea" VERB NOM POS SG PCPVA ACT
 "<lainkohta>"
 	"lain#kohta" NOUN NOM SG
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<kumottava>"
-	"kumota" VERB NOM POS SG PRESENT PSS
+	"kumota" VERB NOM POS SG PCPVA PSS
 "<.>"
 	"." PUNCT
 
@@ -44064,7 +44064,7 @@
 "<Jussi>"
 	"Jussi" NOUN NOM SG
 "<K.>"
-	"K." PROPN YES NOM SG
+	"K." PROPN <ABBR> NOM SG
 "<Niemelä>"
 	"Niemelä" PROPN NOM SG
 "<sanoi>"
@@ -44170,7 +44170,7 @@
 "<vieressä>"
 	"vieressä" ADP POST
 "<olevalla>"
-	"olla" VERB ADE POS SG PRESENT ACT
+	"olla" VERB ADE POS SG PCPVA ACT
 "<matkakeskustyömaalla>"
 	"matka#keskus#työ#maa" NOUN ADE SG
 "<sattui>"
@@ -44292,7 +44292,7 @@
 "<saaneen>"
 	"saada" VERB GEN POS SG PCPNUT ACT
 "<alkunsa>"
-	"alku" NOUN GEN <U> SG 3
+	"alku" NOUN GEN <U> SG POSS+3
 "<matkakeskuksen>"
 	"matka#keskus" NOUN GEN SG
 "<pysäköintikerroksessa>"
@@ -44454,7 +44454,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<sanut>"
-	"saada" VERB NOM POS SG PCPNUT YES ACT
+	"saada" VERB NOM POS SG PCPNUT TYPO ACT
 "<Nobelin>"
 	"Nobel" PROPN GEN SG
 "<rauhanpalkinnon>"
@@ -44639,7 +44639,7 @@
 "<Heidän>"
 	"hän" PRON GEN PL3 PRS
 "<joukossaan>"
-	"joukko" NOUN INE SG 3
+	"joukko" NOUN INE SG POSS+3
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<myös>"
@@ -44733,7 +44733,7 @@
 "<saivat>"
 	"saada" VERB INDV PL3 PAST ACT
 "<surmansa>"
-	"surma" NOUN GEN SG 3
+	"surma" NOUN GEN SG POSS+3
 "<heitä>"
 	"hän" PRON PAR PL3 PRS
 "<kuljettaneessa>"
@@ -44755,7 +44755,7 @@
 "<useita>"
 	"usea" ADJ PAR POS PL
 "<YK:n>"
-	"YK" PROPN YES GEN SG
+	"YK" PROPN <ABBR> GEN SG
 "<rakennuksia>"
 	"rakennus" NOUN PAR PL
 "<.>"
@@ -44764,7 +44764,7 @@
 # text = YK:n alaisen pakolaisjärjestön johtaja António Guterres pitää iskua suunnattuna YK:ta kohtaan.
 # sent_id =  wn036.12
 "<YK:n>"
-	"YK" PROPN YES GEN SG
+	"YK" PROPN <ABBR> GEN SG
 "<alaisen>"
 	"alainen" ADJ GEN POS <Inen> SG
 "<pakolaisjärjestön>"
@@ -44782,7 +44782,7 @@
 "<suunnattuna>"
 	"suunnata" VERB ESS POS SG PCPNUT PSS
 "<YK:ta>"
-	"YK" PROPN YES PAR SG
+	"YK" PROPN <ABBR> PAR SG
 "<kohtaan>"
 	"kohtaan" ADP POST
 "<.>"
@@ -44888,7 +44888,7 @@
 "<kirjapainoalalla>"
 	"kirja#paino#ala" NOUN ADE SG
 "<toimivalle>"
-	"toimia" VERB ALL POS SG PRESENT ACT
+	"toimia" VERB ALL POS SG PCPVA ACT
 "<Gummerukselle>"
 	"Gummerus" PROPN ALL SG
 "<.>"
@@ -44913,7 +44913,7 @@
 "<sen>"
 	"se" PRON GEN SG DEM
 "<puolittavan>"
-	"puolittaa" VERB GEN POS SG PRESENT ACT
+	"puolittaa" VERB GEN POS SG PCPVA ACT
 "<kasvihuonepäästöt>"
 	"kasvi#huone#päästö" NOUN NOM PL
 "<nykyisiin>"
@@ -44936,7 +44936,7 @@
 "<ehdottomasti>"
 	"ehdottomasti" ADV <Sti>
 "<kannattavansa>"
-	"kannattaa" VERB NOM POS SG PRESENT 3 ACT
+	"kannattaa" VERB NOM POS SG PCPVA POSS+3 ACT
 "<Neste>"
 	"Neste" PROPN NOM SG
 "<Oilin>"
@@ -44953,7 +44953,7 @@
 # text = WWF:n mukaan öljypalmuplantaasit ovat pääsyy sademetsien häviämiseen.
 # sent_id =  wn042.5
 "<WWF:n>"
-	"WWF" PROPN YES GEN SG
+	"WWF" PROPN <ABBR> GEN SG
 "<mukaan>"
 	"mukaan" ADP POST
 "<öljypalmuplantaasit>"
@@ -44990,9 +44990,9 @@
 "<metsästä>"
 	"metsä" NOUN ELA SG
 "<elinkeinonsa>"
-	"elin#keino" NOUN GEN SG 3
+	"elin#keino" NOUN GEN SG POSS+3
 "<saavien>"
-	"saada" VERB GEN POS PL PRESENT ACT
+	"saada" VERB GEN POS PL PCPVA ACT
 "<elintapaa>"
 	"elin#tapa" NOUN PAR SG
 "<ja>"
@@ -45045,7 +45045,7 @@
 "<pelätään>"
 	"pelätä" VERB INDV PRESENT PSS
 "<kuolevan>"
-	"kuolla" VERB GEN POS SG PRESENT ACT
+	"kuolla" VERB GEN POS SG PCPVA ACT
 "<sukupuuttoon>"
 	"sukupuutto" NOUN ILL SG
 "<viidessä>"
@@ -45107,7 +45107,7 @@
 "<tuottaja>"
 	"tuottaja" NOUN NOM <Ja> SG
 "<USA:n>"
-	"USA" PROPN YES GEN SG
+	"USA" PROPN <ABBR> GEN SG
 "<ja>"
 	"ja" CCONJ
 "<Kiinan>"
@@ -45302,7 +45302,7 @@
 "<jättämään>"
 	"jättää" VERB ILL INFMA SG ACT
 "<kunnostamansa>"
-	"kunnostaa" VERB GEN POS SG AGT 3 ACT
+	"kunnostaa" VERB GEN POS SG AGT POSS+3 ACT
 "<tilan>"
 	"tila" NOUN GEN SG
 
@@ -45465,7 +45465,7 @@
 "<Käräjäoikeus>"
 	"käräjä#oikeus" NOUN NOM SG
 "<velvoiti>"
-	"velvoittaa" VERB INDV SG3 PAST YES ACT
+	"velvoittaa" VERB INDV SG3 PAST TYPO ACT
 "<Tossavaisen>"
 	"Tossavainen" PROPN GEN SG
 "<karja>"
@@ -45506,7 +45506,7 @@
 "<on>"
 	"olla" AUX INDV SG3 PRESENT ACT
 "<luovutettava>"
-	"luovuttaa" VERB NOM POS SG PRESENT PSS
+	"luovuttaa" VERB NOM POS SG PCPVA PSS
 "<marraskuun>"
 	"marraskuu" NOUN GEN SG
 "<loppuun>"
@@ -45734,7 +45734,7 @@
 "<24>"
 	"24" NUM CARD
 "<osavaltioissa>"
-	"osa#valtio" NOUN INE SG YES
+	"osa#valtio" NOUN INE SG TYPO
 "<.>"
 	"." PUNCT
 
@@ -45769,7 +45769,7 @@
 "<New>"
 	"New" PROPN NOM SG
 "<Yersey>"
-	"Jersey" PROPN GEN SG YES
+	"Jersey" PROPN GEN SG TYPO
 "<,>"
 	"," PUNCT
 "<Missourin>"
@@ -45946,9 +45946,9 @@
 "<sunnuntaina>"
 	"sunnuntai" NOUN ESS SG
 "<heitettyään>"
-	"heittää" VERB PAR POS SG PCPNUT 3 PSS
+	"heittää" VERB PAR POS SG PCPNUT POSS+3 PSS
 "<kenkänsä>"
-	"kenkä" NOUN NOM SG 3
+	"kenkä" NOUN NOM SG POSS+3
 "<Yhdysvaltain>"
 	"Yhdysvalta" PROPN GEN PL
 "<presidentti>"
@@ -45956,7 +45956,7 @@
 "<George>"
 	"George" PROPN NOM SG
 "<W.>"
-	"W." PROPN YES NOM SG
+	"W." PROPN <ABBR> NOM SG
 "<Bushia>"
 	"Bush" PROPN PAR SG
 "<päin>"
@@ -45970,7 +45970,7 @@
 "<Lähi-idän>"
 	"Lähi-itä" PROPN GEN SG
 "<matkallaan>"
-	"matka" NOUN ADE SG 3
+	"matka" NOUN ADE SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -46061,7 +46061,7 @@
 "<epäsuosiossa>"
 	"epä#suosio" NOUN INE SG
 "<olevan>"
-	"olla" VERB GEN POS SG PRESENT ACT
+	"olla" VERB GEN POS SG PCPVA ACT
 "<Bushin>"
 	"Bush" PROPN GEN SG
 "<kimppuun>"
@@ -46090,7 +46090,7 @@
 "<osoittaneet>"
 	"osoittaa" VERB NOM POS PL PCPNUT ACT
 "<mieltään>"
-	"mieli" NOUN PAR SG 3
+	"mieli" NOUN PAR SG POSS+3
 "<tämän>"
 	"tämä" PRON GEN SG DEM
 "<vapauttamisen>"
@@ -46148,7 +46148,7 @@
 "<al-Zaidille>"
 	"al-Zaidi" PROPN ALL SG
 "<apuaan>"
-	"apu" NOUN PAR <U> SG 3
+	"apu" NOUN PAR <U> SG POSS+3
 "<.>"
 	"." PUNCT
 
@@ -46210,7 +46210,7 @@
 "<tänään>"
 	"tänään" ADV
 "<BBC:lle>"
-	"BBC" PROPN YES ALL SG
+	"BBC" PROPN <ABBR> ALL SG
 "<sotilaiden>"
 	"sotilas" NOUN GEN PL
 "<pahoinpidelleen>"
@@ -46229,7 +46229,7 @@
 "<hänen>"
 	"hän" PRON GEN SG3 PRS
 "<mukaansa>"
-	"mukaan" ADP POST 3
+	"mukaan" ADP POST POSS+3
 "<katkennut>"
 	"katketa" VERB NOM POS SG PCPNUT ACT
 "<käsi>"
@@ -46326,7 +46326,7 @@
 "<liigassa>"
 	"liiga" NOUN INE SG
 "<englantilaisella>"
-	"englantilainen" ADJ ALL POS <Lainen> SG YES
+	"englantilainen" ADJ ALL POS <Lainen> SG TYPO
 "<Arsenalille>"
 	"Arsenal" PROPN ALL SG
 "<6–7>"
@@ -46363,7 +46363,7 @@
 "<tarvinneet>"
 	"tarvita" VERB NOM POS PL PCPNUT ACT
 "<vähintää>"
-	"vähintään" ADV YES
+	"vähintään" ADV TYPO
 "<kahden>"
 	"kaksi" NUM GEN SG CARD
 "<maalin>"
@@ -46371,7 +46371,7 @@
 "<voiton>"
 	"voitto" NOUN GEN SG
 "<pudoktaakseen>"
-	"pudottaa" VERB TRA INFA SG 3 YES ACT
+	"pudottaa" VERB TRA INFA SG POSS+3 TYPO ACT
 "<Arsenalin>"
 	"Arsenal" PROPN GEN SG
 "<.>"
@@ -46545,7 +46545,7 @@
 "<taas>"
 	"taas" ADV
 "<saannut>"
-	"saada" VERB NOM POS SG PCPNUT YES ACT
+	"saada" VERB NOM POS SG PCPNUT TYPO ACT
 "<palloa>"
 	"pallo" NOUN PAR SG
 "<maaliin>"
@@ -46615,7 +46615,7 @@
 "<jatkaa>"
 	"jatkaa" VERB INDV SG3 PRESENT ACT
 "<pelejään>"
-	"peli" NOUN PAR PL 3
+	"peli" NOUN PAR PL POSS+3
 "<puolivälierissä>"
 	"puoli#väli#erä" NOUN INE PL
 "<.>"
@@ -46683,7 +46683,7 @@
 "<kertoi>"
 	"kertoa" VERB INDV SG3 PAST ACT
 "<olevansa>"
-	"olla" AUX GEN POS SG PRESENT 3 ACT
+	"olla" AUX GEN POS SG PCPVA POSS+3 ACT
 "<helpottunut>"
 	"helpottunut" ADJ NOM POS
 "<roolin>"
@@ -46705,7 +46705,7 @@
 "<tietoinen>"
 	"tietoinen" ADJ NOM POS <Inen> SG
 "<roolistaan>"
-	"rooli" NOUN ELA SG 3
+	"rooli" NOUN ELA SG POSS+3
 "<jo>"
 	"jo" ADV
 "<kahden>"
