@@ -508,6 +508,7 @@ class OmorFormatter(Formatter):
         "NUMERAL": "[POS=NUMERAL]",
         "CARDINAL": "[NUMTYPE=CARD]",
         "ORDINAL": "[NUMTYPE=ORD]",
+        "ORD": "[NUMTYPE=ORD]",
         # No [SUBCAT=DIGIT]: avoid multiple SUBCATs in one tagstring & comply
         # with FTB1
         "DIGIT": "",
@@ -679,7 +680,10 @@ class OmorFormatter(Formatter):
         else:
             wordmap['analysis'] = "[WORD_ID=%s_%s]" % (
                 lexc_escape(wordmap['lemma']), wordmap['homonym'])
-        wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
+        if wordmap['numtype'] and wordmap['numtype'] == 'ORD':
+            wordmap['analysis'] += self.stuff2lexc('ADJ')
+        else:
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
             wordmap['analysis'] += self.stuff2lexc('SUFFIX')
         if wordmap['is_prefix']:
