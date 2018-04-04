@@ -270,8 +270,8 @@ def get_vislcg_feats(token):
             vislcgs += [key + value]
         elif key == "NEG" and value == "CON":
             vislcgs += ["CONNEG"]
-        elif key in ["WEIGHT", "GUESS"]:
-            # Weights is handled via token features
+        elif key in ["WEIGHT", "GUESS", "CASECHANGE"]:
+            # Weights, recasing ... are handled via token features
             pass
         elif key == "BOUNDARY":
             if value == "CLAUSE":
