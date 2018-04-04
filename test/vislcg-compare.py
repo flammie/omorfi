@@ -39,6 +39,7 @@ def main():
     tags_miss_total = 0
     tags_match = 0
     tags_match_total = 0
+    compounding_fails = 0
     hypline = False
     in_hyps = False
     for refline in options.reffile:
@@ -56,7 +57,7 @@ def main():
             refs = refline.strip().split()
             reflemma = refs[0][1:-1]
             reftags = refs[1:]
-            reftags = list(filter(lambda x : '<' not in x, reftags))
+            reftags = list(filter(lambda x: '<' not in x, reftags))
             tokens += 1
         else:
             print("Unparsable in reference:", refline, file=stderr)
@@ -92,6 +93,10 @@ def main():
                 if hyplemma == reflemma:
                     lemmas_match_total += 1
                     lemma_found = True
+                elif hyplemma.replace('#', '') == reflemma.replace('#', ''):
+                    lemmas_match_total += 1
+                    lemma_found = True
+                    compounding_fails += 1
                 else:
                     lemmas_miss_total += 1
                 lemma_hyps += [hyplemma]
@@ -124,19 +129,21 @@ def main():
         else:
             lemmas_miss += 1
             print("LEMMAMISS", reflemma, '(', reftags, ')', refsurf,
-                    'HYPS:', lemma_hyps, file=options.logfile)
+                  'HYPS:', lemma_hyps, file=options.logfile)
         if tags_found:
             tags_match += 1
             print("TAGOK", reftags, file=options.logfile)
         else:
             tags_miss += 1
             print("TAGMISS", reftags, '(', reflemma, ')', refsurf,
-                    'HYPS:', tag_hyps, file=options.logfile)
-    print("Tokens", "Lemmas", "Tagsets", sep="\t")
+                  'HYPS:', tag_hyps, file=options.logfile)
+    print("Tokens", "Lemmas", "Taglists", sep="\t")
     print(tokens, lemmas_match, tags_match, sep="\t")
     print(tokens / tokens * 100,
-            (lemmas_match) / tokens * 100,
-            (tags_match) / tokens * 100, sep='\t')
+          (lemmas_match) / tokens * 100,
+          (tags_match) / tokens * 100, sep='\t')
+    print("Lemmas with mismatched #'s:", compounding_fails, "(",
+          compounding_fails / tokens * 100, "%)")
     print("Ambiguity left:", hypotheses / tokens)
     if lines == 0 or \
             (lemmas_match / tokens * 100 < options.thresholds) or\
