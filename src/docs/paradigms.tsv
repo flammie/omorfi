@@ -1,5 +1,4 @@
 new_para	doc
-ADJ_PIKKU	Non-inflecting adjectives, like pikku, eri etc.
 ADJ_AAKKOSELLINEN	Dictionary class 38 back
 ADJ_AAVA	Bisyllabic a stems with e comparative and j plurals are in class described here, and dictionary class ⁹.
 ADJ_ABNORMAALI	The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶.
@@ -75,6 +74,7 @@ ADJ_PARANNELTU	The quantitative gradation of t after l in o stems is in class de
 ADJ_PARAS	the superlative paras relexicalised
 ADJ_PEEAA
 ADJ_PIENI	Dictionary class 24~26 front
+ADJ_PIKKU	Non-inflecting adjectives, like pikku, eri etc.
 ADJ_PINKKI	Stems with quantitative k gradation, i final and front harmony are in class described here and dictionary class ⁵⁻A or ⁵⁻D. There's no back vowel version of the bisyllabic gradating -ppi form.
 ADJ_PITKÄ	Adjective pitkä
 ADJ_POHATTA	A-final words with long vowels and syllable boundary
@@ -2109,6 +2109,7 @@ VERB_ARVATA	Dictionary class73 back
 VERB_AUTTAA	Dictionary class56 back t~0
 VERB_DIGATA	Dictionary class73 back 0~g
 VERB_EHTIÄ	Dictionary class61 front t~d
+VERB_EI	Negation verb ‘ei’ has heteroclitic inflection
 VERB_ENTÄÄ	Dictionary class55 front t~n
 VERB_ERATA	Dictionary class72 back 0~k
 VERB_ETUILLA	Dictionary class67 back i~e l
