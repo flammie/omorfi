@@ -26,6 +26,19 @@ def get_lemmas(token):
             if s.endswith(hnsuf):
                 s = s[:-len(hnsuf)]
         rv += [s]
+    # legacy pron hack
+    if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
+            get_upos(token) == 'PRON':
+        if rv[0] == 'me':
+            rv[0] = 'minä'
+        elif rv[0] == 'te':
+            rv[0] = 'sinä'
+        elif rv[0] == 'he':
+            rv[0] = 'hän'
+        elif rv[0] == 'nämä':
+            rv[0] = 'tämä'
+        elif rv[0] == 'ne':
+            rv[0] = 'se'
     return rv
 
 
