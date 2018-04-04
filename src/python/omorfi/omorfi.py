@@ -81,6 +81,8 @@ class Omorfi:
 
     _verbosity = False
 
+    _penalty = 28021984
+
     _stdpaths = ['/usr/local/share/hfst/fi/',
                  '/usr/share/hfst/fi/',
                  '/usr/local/share/omorfi/',
@@ -500,39 +502,48 @@ class Omorfi:
                 tcres = self.analyser.lookup(tcs)
                 for r in tcres:
                     tctoken = token.copy()
+                    tctoken['recase'] = 'Titlecased'
                     tctoken['analsurf'] = tcs
                     tctoken['anal'] = r[0] + \
-                        '[CASECHANGE=TITLECASED][WEIGHT=%f]' % (r[1])
-                    tctoken["weight"] = r[1]
+                        '[CASECHANGE=TITLECASED][WEIGHT=%f]' % (r[1] +
+                                self._penalty)
+                    tctoken["weight"] = r[1] + self._penalty
                     rv.append(tctoken)
             if len(token) > 2 and s[0].isupper() and self.try_detitlecase:
                 dts = s[0].lower() + s[1:]
                 dtres = self.analyser.lookup(dts)
                 for r in dtres:
                     dttoken = token.copy()
+                    dttoken['recase'] = 'dETITLECASED'
                     dttoken['analsurf'] = dts
                     dttoken['anal'] = r[0] + \
-                            "[CASECHANGE=DETITLECASED][WEIGHT=%f]" % (r[1])
-                    dttoken["weight"] = r[1]
+                            "[CASECHANGE=DETITLECASED][WEIGHT=%f]" % (r[1] +
+                                    self._penalty)
+                    dttoken["weight"] = r[1] + self._penalty
                     rv.append(dttoken)
             if not s.isupper() and self.try_uppercase:
                 ups = s.upper()
                 upres = self.analyser.lookup(ups)
                 for r in upres:
                     uptoken = token.copy()
+                    uptoken['recase'] = 'UPPERCASED'
                     uptoken['analsurf'] = ups
                     uptoken['anal'] = r[0] + \
-                            "[CASECHANGE=UPPERCASED][WEIGHT=%f]" % (r[1])
-                    uptoken["weight"] = r[1]
+                            "[CASECHANGE=UPPERCASED][WEIGHT=%f]" % (r[1] +
+                                    self._penalty)
+                    uptoken["weight"] = r[1] + self._penalty
                     rv.append(uptoken)
             if not s.islower() and self.try_lowercase:
                 lows = s.lower()
                 lowres = self.analyser.lookup(lows)
                 for r in lowres:
                     lowtoken = token.copy()
+                    lowtoken['recase'] = 'lowercased'
                     lowtoken['analsurf'] = lows
                     lowtoken['anal'] = r[0] +\
-                             "[CASECHANGE=LOWERCASED][WEIGHT=%f]" %(r[1])
+                             "[CASECHANGE=LOWERCASED][WEIGHT=%f]" %(r[1] +
+                                     self._penalty)
+                    lowtoken["weight"] = r[1] + self._penalty
                     rv.append(lowtoken)
         return rv
 
@@ -627,14 +638,14 @@ class Omorfi:
         if token['surf'][0].isupper() and len(token['surf']) > 1:
             guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
                     "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                     "[WEIGHT=28021984]"
-            guesstoken['weight'] = 28021984
+                     "[WEIGHT=%f]" %( self._penalty )
+            guesstoken['weight'] = self._penalty
             guesstoken['guess'] = 'PYTHON0ISUPPER'
         else:
             guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
                     "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                     "[WEIGHT=28021984]"
-            guesstoken['weight'] = 28021984
+                     "[WEIGHT=%f]" %( self._penalty )
+            guesstoken['weight'] = self._penalty
             guesstoken['guess'] = 'PYTHONELSE'
         return [guesstoken]
 
