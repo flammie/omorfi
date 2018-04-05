@@ -295,6 +295,8 @@ def get_vislcg_feats(token):
                 pass
             else:
                 vislcgs += [value]
+        elif key == "BLACKLIST":
+            vislcgs += ["<**" + value + ">"]
         else:
             print("Unhandled", key, "=", value, "in", token,
                   "for vislcg")
