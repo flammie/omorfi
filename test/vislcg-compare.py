@@ -43,6 +43,7 @@ def main():
     hypline = False
     in_hyps = False
     for refline in options.reffile:
+        lines += 1
         refline = refline.rstrip()
         if not refline or refline == '':
             continue
@@ -137,17 +138,21 @@ def main():
             tags_miss += 1
             print("TAGMISS", reftags, '(', reflemma, ')', refsurf,
                   'HYPS:', tag_hyps, file=options.logfile)
-    print("Tokens", "Lemmas", "Taglists", sep="\t")
-    print(tokens, lemmas_match, tags_match, sep="\t")
-    print(tokens / tokens * 100,
+    print("Metric\\Stuff", "Tokens", "Lemmas", "Taglists", sep="\t")
+    print("Freq", tokens, lemmas_match, tags_match, sep="\t")
+    print("Rec", tokens / tokens * 100,
           (lemmas_match) / tokens * 100,
           (tags_match) / tokens * 100, sep='\t')
+    print("Freq", hypotheses, lemmas_match_total, tags_match_total, sep="\t")
+    print("Pr", hypotheses / hypotheses * 100,
+          (lemmas_match_total) / hypotheses * 100,
+          (tags_match_total) / hypotheses * 100, sep='\t')
     print("Lemmas with mismatched #'s:", compounding_fails, "(",
           compounding_fails / tokens * 100, "%)")
     print("Ambiguity left:", hypotheses / tokens)
-    if lines == 0 or \
-            (lemmas_match / tokens * 100 < options.thresholds) or\
-            (tags_match / tokens * 100 < options.thresholds):
+    if tokens == 0 or \
+            ((lemmas_match / tokens * 100) < options.thresholds) or\
+            ((tags_match / tokens * 100) < options.thresholds):
         print("needs to have", options.thresholds,
               "% matches to pass regress test\n",
               file=stderr)
