@@ -146,6 +146,7 @@ class OmorFormatter(Formatter):
         '[PERS=PL1]',
         '[PERS=PL2]',
         '[PERS=PL3]',
+        '[PERS=SG0]',
         '[PERS=SG1]',
         '[PERS=SG2]',
         '[PERS=SG3]',
@@ -429,6 +430,7 @@ class OmorFormatter(Formatter):
         "Ppl1": "[PERS=PL1]",
         "Ppl2": "[PERS=PL2]",
         "Ppl3": "[PERS=PL3]",
+        "Psg0": "[PERS=SG0]",
         "Psg1": "[PERS=SG1]",
         "Psg2": "[PERS=SG2]",
         "Psg3": "[PERS=SG3]",
@@ -508,6 +510,7 @@ class OmorFormatter(Formatter):
         "NUMERAL": "[POS=NUMERAL]",
         "CARDINAL": "[NUMTYPE=CARD]",
         "ORDINAL": "[NUMTYPE=ORD]",
+        "ORD": "[NUMTYPE=ORD]",
         # No [SUBCAT=DIGIT]: avoid multiple SUBCATs in one tagstring & comply
         # with FTB1
         "DIGIT": "",
@@ -535,6 +538,7 @@ class OmorFormatter(Formatter):
         "PL1": "[PERS=PL1]",
         "PL2": "[PERS=PL2]",
         "PL3": "[PERS=PL3]",
+        "SG0": "[PERS=SG0]",
         "SG1": "[PERS=SG1]",
         "SG2": "[PERS=SG2]",
         "SG3": "[PERS=SG3]",
@@ -636,7 +640,7 @@ class OmorFormatter(Formatter):
         if stuff == '0':
             return "0"
         if stuff in self.stuff2omor:
-            return self.stuff2omor[stuff]
+            return lexc_escape(self.stuff2omor[stuff])
         else:
             fail_formatting_missing_for(stuff, "omor")
             return "ERRORMACRO"
@@ -678,7 +682,10 @@ class OmorFormatter(Formatter):
         else:
             wordmap['analysis'] = "[WORD_ID=%s_%s]" % (
                 lexc_escape(wordmap['lemma']), wordmap['homonym'])
-        wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
+        if wordmap['numtype'] and wordmap['numtype'] == 'ORD':
+            wordmap['analysis'] += self.stuff2lexc('ADJ')
+        else:
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
             wordmap['analysis'] += self.stuff2lexc('SUFFIX')
         if wordmap['is_prefix']:

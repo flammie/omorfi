@@ -74,6 +74,7 @@ ADJ_PARANNELTU	The quantitative gradation of t after l in o stems is in class de
 ADJ_PARAS	the superlative paras relexicalised
 ADJ_PEEAA
 ADJ_PIENI	Dictionary class 24~26 front
+ADJ_PIKKU	Non-inflecting adjectives, like pikku, eri etc.
 ADJ_PINKKI	Stems with quantitative k gradation, i final and front harmony are in class described here and dictionary class ⁵⁻A or ⁵⁻D. There's no back vowel version of the bisyllabic gradating -ppi form.
 ADJ_PITKÄ	Adjective pitkä
 ADJ_POHATTA	A-final words with long vowels and syllable boundary
@@ -160,6 +161,7 @@ ADV_TYHMÄSTI
 ADV_VAAN
 ADV_YLIPÄÄNSÄ
 AUX_AIKOA	auxiliary version of ko:o verb stem
+AUX_EI	Negation verb ‘ei’ has heteroclitic inflection
 AUX_JOUTUA	auxiliary version of tu:du verb stem
 AUX_MAHTAA	auxiliary version of ta:do verb stem
 AUX_OLLA	auxiliary version of ‘olla’

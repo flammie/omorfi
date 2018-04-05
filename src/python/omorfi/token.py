@@ -26,6 +26,19 @@ def get_lemmas(token):
             if s.endswith(hnsuf):
                 s = s[:-len(hnsuf)]
         rv += [s]
+    # legacy pron hack
+    if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
+            get_upos(token) == 'PRON':
+        if rv[0] == 'me':
+            rv[0] = 'minä'
+        elif rv[0] == 'te':
+            rv[0] = 'sinä'
+        elif rv[0] == 'he':
+            rv[0] = 'hän'
+        elif rv[0] == 'nämä':
+            rv[0] = 'tämä'
+        elif rv[0] == 'ne':
+            rv[0] = 'se'
     return rv
 
 
@@ -45,7 +58,7 @@ def get_last_feats(token):
     rvs = list()
     feats = re_feats.finditer(token['anal'])
     for feat in feats:
-        if 'BOUNDARY=' in feat.group(0) or 'WORD_ID=' in feat.group(0):
+        if 'WORD_ID=' in feat.group(0):
             # feats reset on word boundary
             rvs = list()
         else:
@@ -226,7 +239,7 @@ def get_ud_feats(token, hacks=None):
         elif key == 'BLACKLIST':
             continue
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
-                     'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ']:
+                     'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ', 'BOUNDARY']:
             # Not feats in UD:
             # * UPOS is another field
             # * Allomorphy is ignored
@@ -238,6 +251,7 @@ def get_ud_feats(token, hacks=None):
             # * punct sidedness is not a feat
             # * XXX: sem has not been used as a feat?
             # * special CONJ comparative is not used in UD
+            # * clause / sentence boundary tag ignored
             continue
         else:
             print("Unhandled", key, '=', value)
@@ -251,26 +265,39 @@ def get_vislcg_feats(token):
     for feat in feats:
         key = feat.split("=")[0].strip("[")
         value = feat.split("=")[1].strip("]")
-        if key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
-                "POSITION", "ABBR", "FOREIGN"]:
-            # semantics, non-core morph in brackets
-            vislcgs += ["<" + key + "_" + value + ">"]
-        elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
-                "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
-                "CONJ"]:
-            # core morph show only value as is (omor style though)
-            vislcgs += [value]
+        if key == "SUBCAT" and value == "NEG":
+            vislcgs += ["NEG"]
         elif key in ["CLIT", "INF", "PCP", "POSS"]:
             # ...except when only value is too short
             vislcgs += [key + value]
         elif key == "NEG" and value == "CON":
             vislcgs += ["CONNEG"]
-        elif key in ["WEIGHT", "GUESS"]:
-            # Weights is handled via token features
+        elif key in ["WEIGHT", "GUESS", "CASECHANGE"]:
+            # Weights, recasing ... are handled via token features
             pass
+        elif key == "BOUNDARY":
+            if value == "CLAUSE":
+                vislcgs += ["<CLB>"]
+            elif value == "SENTENCE":
+                vislcgs += ["<SENT>"]
+            else:
+                print("Unhandled boundary = ", value, "in", token)
+                exit(1)
+        elif key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
+                     "POSITION", "ABBR", "FOREIGN"]:
+            # semantics, non-core morph in brackets
+            vislcgs += ["<" + key + "_" + value + ">"]
+        elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
+                     "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
+                     "CONJ"]:
+            # core morph show only value as is (omor style though)
+            if value == 'LAT':
+                pass
+            else:
+                vislcgs += [value]
         else:
             print("Unhandled", key, "=", value, "in", token,
-                    "for vislcg")
+                  "for vislcg")
             exit(1)
     if "recase" in token and token['recase'] != "ORIGINALCASE":
         vislcgs += ["<*" + token['recase'] + ">"]
@@ -284,7 +311,8 @@ def get_vislcg_feats(token):
 
 
 def get_segments(token, split_morphs=True, split_words=True,
-        split_new_words=True, split_derivs=False, split_nonwords=False):
+                 split_new_words=True, split_derivs=False,
+                 split_nonwords=False):
     segments = token['segments']
     # this code is ugly
     segments = [segments.replace('{hyph?}', '')]
