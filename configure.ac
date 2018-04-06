@@ -122,7 +122,7 @@ AC_ARG_WITH([java],
             [AS_HELP_STRING([--without-java],
                             [do not build java library])],
             [with_java=$withval],
-            [with_java=yes])
+            [with_java=no])
 
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
@@ -284,16 +284,20 @@ AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
 
-# require java for stuff
-if test "x$with_java" = xyes
-then
+# check java when not disabled
+AS_IF([test "x$with_java" != xno], [
     AC_CHECK_CLASSPATH
     AX_PROG_JAVA
+    AX_PROG_JAVAC
     AX_CHECK_CLASS([net.sf.hfst.Transducer])
-    AM_CONDITIONAL([CAN_JAVA], [test x$HAVE_net_sf_hfst_Transducer != xno])
-else
-    AM_CONDITIONAL([CAN_JAVA], [test x = y])
-fi
+    ])
+AS_IF([test "x$with_java" = xyes], [
+    AS_IF([test "x$HAVE_net_sf_hfst_Transducer" = xno],
+          [AC_WARN([Building java with bundled hfst then])
+          AC_SUBST([HFSTCLASSPATH], [java])
+          ])
+    ], [AC_SUBST([HFSTCLASSPATH], [$with_java])])
+AM_CONDITIONAL([CAN_JAVA], [test x$with_java != xno])
 
 # separated my scripts for corpora fetching, some preprocessing
 AC_PATH_PROG([FETCH_EUROPARL], [fetch-europarl.bash], [false])

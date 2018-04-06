@@ -1296,6 +1296,7 @@ omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
 
 if CAN_JAVA
 javadir=$(pkgdatadir)/
+AM_JAVACFLAGS=-cp $(HFSTCLASSPATH)
 dist_java_JAVA=java/com/github/flammie/omorfi/Omorfi.java
 endif
 

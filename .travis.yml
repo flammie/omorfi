@@ -7,7 +7,7 @@ before_install:
     - echo $PYTHONPATH
 script:
     - ./autogen.sh
-    - ./configure --enable-segmenter --enable-labeled-segments --enable-lemmatiser --enable-ftb3
+    - ./configure --enable-segmenter --enable-labeled-segments --enable-lemmatiser --enable-ftb3 --with-java
     - make
     - make check
     - cat test/test-suite.log
