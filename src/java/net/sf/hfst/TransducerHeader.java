@@ -33,6 +33,8 @@ public class TransducerHeader
     /**
      * Read in the (56 bytes of) header information, which unfortunately
      * is mostly in little-endian unsigned form.
+     *
+     * @param file file stream pointing to a header
      */
     public TransducerHeader(FileInputStream file) throws java.io.IOException, FormatException
     {
@@ -47,7 +49,7 @@ public class TransducerHeader
 	}
 	ByteArray b = new ByteArray(head, 56);
 	file.read(b.getBytes(), 5, 51);
-	
+
 	number_of_input_symbols = b.getUShort();
 	number_of_symbols = b.getUShort();
 	size_of_transition_index_table = (int) b.getUInt();
@@ -66,6 +68,11 @@ public class TransducerHeader
 	has_unweighted_input_epsilon_cycles = b.getBool();
     }
 
+    /** whether bytes start with HFST 3 header
+     *
+     * @param bytes bytes to check
+     * @return true if HFST3 header, false otherwise
+     */
     public Boolean begins_hfst3_header(ByteArray bytes)
     {
 	if (bytes.getSize() < 5) {
@@ -77,6 +84,9 @@ public class TransducerHeader
 		bytes.getUByte() == 0);
     }
 
+    /** read HFST 3 header.
+     * @param file file that contains a header
+     */
     public void read_hfst3_header(FileInputStream file) throws java.io.IOException, FormatException
     {
         // The only thing we really check is that the format begins with
@@ -93,25 +103,45 @@ public class TransducerHeader
         }
 
     }
-
+    /** Get input symbol count
+     * @return input symbol count
+     */
     public int getInputSymbolCount()
     { return number_of_input_symbols; }
-	
+
+    /** Get symbol count
+     * @return  symbol count
+     */
     public int getSymbolCount()
     { return number_of_symbols; }
 
+    /** Get index table size
+     * @return index table size
+     */
     public int getIndexTableSize()
     { return size_of_transition_index_table; }
 
+    /** Get target table size
+     * @return target table size
+     */
     public int getTargetTableSize()
     { return size_of_transition_target_table; }
 
+    /** Whether it's weighted.
+     * @return true if weighted, false otherwise
+     */
     public Boolean isWeighted()
     { return weighted; }
 
+    /** Whether it's hfst 3 header.
+     * @return true if header, false otherwise
+     */
     public Boolean hasHfst3Header()
     { return hfst3; }
 
+    /** Whether it's intact.
+     * @return true if intact, false otherwise
+     */
     public Boolean isIntact()
     { return intact; }
 }

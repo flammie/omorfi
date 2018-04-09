@@ -10,9 +10,16 @@ import java.util.Hashtable;
  */
 public class TransducerAlphabet
 {
+    /** a key table */
     public Vector<String> keyTable;
+    /** flag diacritics operation keys */
     public Hashtable<Integer, FlagDiacriticOperation> operations;
+    /** flag diacritic feature key. */
     public Integer features;
+    /** Read alphabet from transducer data.
+     * @param charstream  transducer data stream at header position
+     * @param number_of_symbols  size of alphabet
+     */
     public TransducerAlphabet(DataInputStream charstream,
 		    int number_of_symbols) throws java.io.IOException
     {

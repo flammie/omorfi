@@ -11,13 +11,22 @@ public class ByteArray
     private int index;
     private int size;
 
+    /** Create byte array from int.
+     *
+     * @param s  int to convert
+     */
     public ByteArray(int s)
     {
 	size = s;
 	bytes = new byte[size];
 	index = 0;
     }
-    
+
+    /** Create byte array from byte array.
+     *
+     * @param another  array to convert
+     * @param s  size to convert
+     */
     public ByteArray(ByteArray another, int s)
     {
 	size = Math.max(s, another.getSize());
@@ -28,21 +37,37 @@ public class ByteArray
 	index = 0;
     }
 
+    /** Get byte array size.
+     *
+     * @return  the size*/
     public int getSize()
     {
 	return size;
     }
 
+    /** Get a byte.
+     *
+     * @param i  index of byte.
+     * @return  byte at the index
+     */
     public byte get(int i)
     {
 	return bytes[i];
     }
 
+    /** Get all bytes.
+     *
+     * @return all bytes
+     */
     public byte[] getBytes()
     {
 	return bytes;
     }
 
+    /** Get unsigned byte.
+     *
+     * @return  unsigned byte
+     */
     public short getUByte()
     {
 	short result = 0;
@@ -51,6 +76,10 @@ public class ByteArray
 	return result;
     }
 
+    /** Get unsigned short.
+     *
+     * @return  unsigned short
+     */
     public int getUShort() throws java.io.IOException
     {
 	int result = 0;
@@ -62,6 +91,10 @@ public class ByteArray
 	return result;
     }
 
+    /** Get unsigned int.
+     *
+     * @return unsigned int
+     */
     public long getUInt() throws java.io.IOException
     {
 	long result = 0;
@@ -76,6 +109,10 @@ public class ByteArray
 	return result;
     }
 
+    /** Get unsigned bool.
+     *
+     * @return  unsigned bool
+     */
     public Boolean getBool() throws java.io.IOException
     {
 	if (this.getUInt() == 0)
@@ -83,6 +120,10 @@ public class ByteArray
 	return true;
     }
 
+    /** Get unsigned float.
+     *
+     * @return  unsigned float
+     */
     public float getFloat() throws java.io.IOException
     {
 	int bits = 0;

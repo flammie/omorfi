@@ -15,17 +15,29 @@ import net.sf.hfst.NoTokenizationException;
 public class UnweightedTransducer extends Transducer
 {
 
+    /** An unweighted transition index. */
     public class TransitionIndex
     {
+        /** input symbol */
 	protected int inputSymbol;
+    /** index for first transition */
 	protected long firstTransitionIndex;
-	
+
+    /** create index
+     *
+     * @param input input symbol
+     * @param firstTransition index
+     */
 	public TransitionIndex(int input, long firstTransition)
 	    {
 		inputSymbol = input;
 		firstTransitionIndex = firstTransition;
 	    }
-	
+
+    /** whether index matches  symbol
+     * @param s index
+     * @return true if matches, false otherwise
+     */
 	public Boolean matches(int s)
 	{
 	    if (inputSymbol == HfstOptimizedLookup.NO_SYMBOL_NUMBER)
@@ -34,16 +46,24 @@ public class UnweightedTransducer extends Transducer
 		{ return true; }
 	    return (s == inputSymbol);
 	}
-	
+    /** whether is final
+     * @return true if final. false otherwise
+     */
 	public Boolean isFinal()
 	{
 	    return (inputSymbol == HfstOptimizedLookup.NO_SYMBOL_NUMBER &&
 		    firstTransitionIndex != HfstOptimizedLookup.NO_TABLE_INDEX);
 	}
-	
+
+    /** gets target
+     * @return index of target
+     */
 	    public long target()
 	{ return firstTransitionIndex; }
-	
+
+        /** gets input symbol
+         * @return input symbol key
+         */
 	public int getInput()
 	{ return inputSymbol; }
     }
@@ -56,7 +76,12 @@ public class UnweightedTransducer extends Transducer
     public class IndexTable
     {
 	private TransitionIndex[] indices;
-	
+
+    /** Read index from transducer data.
+     *
+     * @param filestream  transducer data stream at index position
+     * @param indicesCount  size of index
+     */
 	public IndexTable(FileInputStream filestream,
 			  Integer indicesCount) throws java.io.IOException
 	{
@@ -73,27 +98,49 @@ public class UnweightedTransducer extends Transducer
 		}
 	}
 
+    /** Whether state at index is final.
+     * @param index index of the state
+     * @return true if final, else otherwise.
+     */
 	public Boolean isFinal(Integer index)
 	{ return indices[index].isFinal(); }
 
+    /** Get index at position.
+     * @param index index of the state
+     * @return index to transitions.
+     */
 	public TransitionIndex at(Integer index)
 	{ return indices[index]; }
 
     }
 
+    /** An unweighted transducer transition. */
     public class Transition
     {
+        /** input symbol */
 	protected int inputSymbol;
+    /** output symbol */
 	protected int outputSymbol;
+    /** target index */
 	protected long targetIndex;
-	
+    /** Create an unweighted transition
+     *
+     * @param input  input symbol
+     * @param output  output symbol
+     * @param target  target state index
+     */
 	public Transition(int input, int output, long target)
 	{
 	    inputSymbol = input;
 	    outputSymbol = output;
 	    targetIndex = target;
 	}
-	
+
+    /** Whether transition matches the symbol.
+     *
+     * @param symbol symbol key
+     * @return true if transition is for symbol, false otherwise
+     */
 	public Boolean matches(int symbol)
 	{
 	    if (inputSymbol == HfstOptimizedLookup.NO_SYMBOL_NUMBER)
@@ -102,15 +149,28 @@ public class UnweightedTransducer extends Transducer
 		{ return true; }
 	    return (inputSymbol == symbol);
 	}
+    /** Get target state.
+     * @return target state index.
+     */
 	public long target()
 	{ return targetIndex; }
-	
+
+    /** Get output symbol.
+     * @return output symbol
+     */
 	public int getOutput()
 	{ return outputSymbol; }
-	
+
+    /** Get input symbol
+     * @return input symbol
+     */
 	public int getInput()
 	{ return inputSymbol; }
-	
+
+    /**
+     * Whether the state is final.
+     * @return  true if final, false otherweise.
+     */
 	public Boolean isFinal()
 	{
 	    return (inputSymbol == HfstOptimizedLookup.NO_SYMBOL_NUMBER &&
@@ -118,7 +178,7 @@ public class UnweightedTransducer extends Transducer
 		    targetIndex == 1);
 	}
     }
-    
+
     /**
      * On instantiation reads the transducer's transition table and provides an
      * interface to it.
@@ -127,6 +187,11 @@ public class UnweightedTransducer extends Transducer
     {
 	private Transition[] transitions;
 
+    /** Read transitions from transducer file data.
+     *
+     * @param filestream input data pointing at the transitions
+     * @param transitionCount  number of transitions to read.
+     */
 	public TransitionTable(FileInputStream filestream,
 			       Integer transitionCount) throws java.io.IOException
 	{
@@ -142,27 +207,52 @@ public class UnweightedTransducer extends Transducer
 		}
 	}
 
+    /** get transition at index.
+     * @param pos  index
+     * @return a transition
+     */
 	public Transition at(Integer pos)
 	{ return transitions[pos]; }
 
+    /** get size of index.
+     * @return size
+     */
 	public Integer size()
 	{ return transitions.length; }
 
     }
 
+    /** header */
     protected TransducerHeader header;
+    /** alphabet */
     protected TransducerAlphabet alphabet;
+    /** states */
     protected Stack< int[] > stateStack;
+    /** flag operations */
     protected Hashtable<Integer, FlagDiacriticOperation> operations;
+    /** letters */
     protected LetterTrie letterTrie;
+    /** indices */
     protected IndexTable indexTable;
+    /** transitions */
     protected TransitionTable transitionTable;
+    /** display vector */
     protected Vector<String> displayVector;
+    /** output string */
     protected int[] outputString;
+    /** input string */
     protected Vector<Integer> inputString;
+    /** output pointer */
     protected int outputPointer;
+    /** input pointer */
     protected int inputPointer;
-    
+
+    /** Read a transducer from data.
+     *
+     * @param file  data  stream pointing to transudcer binary
+     * @param h  header read from the stream
+     * @param a alphabet read from the stream
+     */
     public UnweightedTransducer(FileInputStream file, TransducerHeader h, TransducerAlphabet a) throws java.io.IOException
     {
 	header = h;
@@ -199,7 +289,7 @@ public class UnweightedTransducer extends Transducer
 	}
 	return (int) i;
     }
-    
+
     private void tryEpsilonIndices(int index)
     {
 	if (indexTable.at(index).getInput() == 0)
@@ -313,6 +403,11 @@ public class UnweightedTransducer extends Transducer
 	    }
     }
 
+    /** Analyse a string.
+     *
+     * @param input  a token to analyse
+     * @return  all possible analyses for input
+     */
     public Collection<String> analyze(String input) throws NoTokenizationException
     {
 	inputString.clear();
@@ -320,7 +415,7 @@ public class UnweightedTransducer extends Transducer
 	outputPointer = 0;
 	outputString[0] = HfstOptimizedLookup.NO_SYMBOL_NUMBER;
 	inputPointer = 0;
-	
+
 	IndexString inputLine = new IndexString(input);
 	while (inputLine.index < input.length())
 	    {
@@ -399,7 +494,7 @@ public class UnweightedTransducer extends Transducer
 		(stateStack.peek()[flag.feature] == flag.value) ||
 		(stateStack.peek()[flag.feature] != flag.value &&
 		 stateStack.peek()[flag.feature] < 0)) {
-		
+
 		    stateStack.push(top);
 		    stateStack.peek()[flag.feature] = flag.value;
 		    return true;
