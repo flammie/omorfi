@@ -26,6 +26,9 @@ from .string_manglers import lexc_escape
 
 
 class GiellaFormatter(Formatter):
+    """Formatter that handles conversions to giellatekno.uit.no conventions."""
+
+    ## Giellatekno style analysis tags
     giella_multichars = {
         '+A',
         '+ABBR',
@@ -190,6 +193,7 @@ class GiellaFormatter(Formatter):
         '+V'
     }
 
+    ## Omorfi to giellatekno tag mapping
     stuff2giella = {"Bc": "#",
                     ".": "",
                     "Aiden": "",
@@ -410,6 +414,11 @@ class GiellaFormatter(Formatter):
                     }
 
     def __init__(self, verbosity=False):
+        """Create a giellatekno tag formatter with given verbosity.
+
+        @param verbosity set to true to disable output printng
+        """
+        ## Verbosity
         self.verbosity = verbosity
         fail = False
         for stuff, giella in self.stuff2giella.items():
@@ -420,9 +429,14 @@ class GiellaFormatter(Formatter):
                           " is not a valid defined giella multichar_symbol!")
                 fail = True
         if fail:
+            ## Whether tags match reality
             self.tainted = True
 
     def stuff2lexc(self, stuff):
+        """Convert omorfi analysis to giellatekno's lexc.
+
+        @return lexc-formatted string containing giellatekno tag(s)
+        """
         if stuff == '0':
             return "0"
         elif stuff in self.stuff2giella:
@@ -432,6 +446,10 @@ class GiellaFormatter(Formatter):
             return ""
 
     def analyses2lexc(self, anals, surf):
+        """Convert omorfi analyses and lexeme into giellatekno format.
+
+        @return lexc-formatted string containing giellatekno tags and lemma
+        """
         giellastring = ""
         for anal in anals.split('|'):
             if anal == '@@COPY-STEM@@':
@@ -443,6 +461,10 @@ class GiellaFormatter(Formatter):
         return giellastring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Create lexical entry for omorfi continuation class data
+
+        @return lexc-date for omorfi continuation class
+        """
         giellastring = self.analyses2lexc(anals, surf)
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
             giellastring = lexc_escape(surf) + giellastring
@@ -455,6 +477,8 @@ class GiellaFormatter(Formatter):
     def wordmap2lexc(self, wordmap):
         '''
         format string for canonical giella format for morphological analysis
+
+        @return lexc-formatted lexical entry for a giellatekno word.
         '''
         wordmap['analysis'] = lexc_escape(
             wordmap['lemma'].replace(word_boundary, '#'))
@@ -490,6 +514,10 @@ class GiellaFormatter(Formatter):
             return lexc_line
 
     def multichars_lexc(self):
+        """Create lexc analysis tags declaration in giellatekno format.
+
+        @return lexc-formatted string of giellatekno Mutlichar_symbols block.
+        """
         multichars = "Multichar_Symbols\n!! giellatekno multichar set:\n"
         for mcs in self.giella_multichars:
             multichars += mcs + "\n"
@@ -497,6 +525,10 @@ class GiellaFormatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Create root lexicon for giellatekno lexc.
+
+        @return lexc-formatted string of giellatekno Root lexicon
+        """
         root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens left

@@ -26,6 +26,9 @@ from .string_manglers import lexc_escape
 
 
 class Ftb3Formatter(Formatter):
+    """Formatter for converting omorfi to FTB 3 -like formats."""
+
+    ## FTB-3 multichar symbols
     multichars = {
         '% A',
         '% V',
@@ -139,6 +142,7 @@ class Ftb3Formatter(Formatter):
         '%<Del%>→',
         '←%<Del%>'}
 
+    ## a mapping from omorfi stuff to lexc symbols of omorfi
     stuff2ftb3 = {"Bc": "#",
                   ".sent": "",
                   ".": ".",
@@ -362,6 +366,11 @@ class Ftb3Formatter(Formatter):
                   }
 
     def __init__(self, verbose=True):
+        """Create a FTB-3 format converter for omorfi with given verbosity.
+
+        @param verbose set to false to disable progress printing.
+        """
+        ## Verbosity
         self.verbose = verbose
         fail = False
         for stuff, ftb3 in self.stuff2ftb3.items():
@@ -373,9 +382,15 @@ class Ftb3Formatter(Formatter):
                           " is not a valid defined ftb3 multichar_symbol!")
                 fail = True
         if fail:
+            ## If tags don't match
             self.tainted = True
 
     def stuff2lexc(self, stuff):
+        """Get lexc-formatted FTB-3 analysis for omorfi analysis.
+
+        @param stuff  omorfi style analysis
+        @return lexc-format string containing FTB-3 analysis tag(s).
+        """
         if stuff == '0':
             return "0"
         elif stuff in self.stuff2ftb3:
@@ -386,6 +401,12 @@ class Ftb3Formatter(Formatter):
             return ""
 
     def analyses2lexc(self, anals, surf):
+        """Get lexc-formatted string for omorfi analyses and lemma.
+
+        @param anals pipe-delimited omorfi analysis
+        @param surf surface form of the word
+        @return lexc-format stiring for analyses and lemma
+        """
         ftbstring = ""
         if 'Nneg|Vact' in anals:
             anals = anals.replace('|Vact', '')
@@ -460,6 +481,10 @@ class Ftb3Formatter(Formatter):
         return ftbstring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Get lexc representation for omorfi continuation lexicons.
+
+        @return lexc-formatted lexicon entry
+        """
         ftbstring = self.analyses2lexc(anals, surf)
         if 'COMPOUND' in cont:
             # XXX: there was += before
@@ -471,6 +496,8 @@ class Ftb3Formatter(Formatter):
     def wordmap2lexc(self, wordmap):
         '''
         format string for canonical ftb3 format for morphological analysis
+
+        @return FTB3 lexical entry in lexc format
         '''
         if wordmap['stub'] == ' ':
             # do not include normal white space for now
@@ -545,6 +572,10 @@ class Ftb3Formatter(Formatter):
         return "\n".join(retvals)
 
     def multichars_lexc(self):
+        """Get FTB3 analysis tags in lexc format.
+
+        @return lexc-formatted Multichar_symbols section of FTB 3 symbols
+        """
         multichars = "Multichar_Symbols\n"
         multichars += "!! FTB 3.1 multichar set:\n"
         for mcs in self.multichars:
@@ -553,6 +584,10 @@ class Ftb3Formatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Get FTB3 root lexicon in lexc format.
+
+        @return lexc-formatted string for Root lexicon for FTB3 format
+        """
         root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens left
