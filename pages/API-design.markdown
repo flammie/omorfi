@@ -35,6 +35,10 @@ FST internals. These are roughly the functionalities:
 
 That is all.
 
+Here is a UML chart I drew about the design:
+
+![UML chart of omorfi API]({{ site.baseurl }}/doc/omorfi-API.svg)
+
 # Language specific APIs
 
 The language specific APIs are generated with doc comment system of the host
