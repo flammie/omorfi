@@ -12,3 +12,7 @@ bootstrap:
 		help2man -s 1 -o $$f -N -S OMORFI `echo $$f | sed 's/.1/.sh/'`; \
 	done
 
+htmls:
+	for f in $(bootstrappable) $(broken) ; do \
+		groff -mandoc -Thtml $$f > $$f.html ;\
+	done
