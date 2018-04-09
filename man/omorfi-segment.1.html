@@ -1,0 +1,160 @@
+<!-- Creator     : groff version 1.22.2 -->
+<!-- CreationDate: Mon Apr  9 04:44:59 2018 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>OMORFI-SEGMENT</title>
+
+</head>
+<body>
+
+<h1 align="center">OMORFI-SEGMENT</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+<a href="#NOTICE">NOTICE</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">omorfi-segment
+&minus; manual page for omorfi-segment</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>omorfi-segment.py</b>
+[<i>OPTIONs</i>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">Morphologically
+segments running text using omorfi automata and hfst tools
+<b><br>
+&minus;h</b>, <b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Print this help dialog</p>
+
+<p style="margin-left:11%;"><b>&minus;V</b>,
+<b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Print version info</p>
+
+<p style="margin-left:11%;"><b>&minus;f</b> FSAPATH,
+<b>&minus;&minus;fsa</b> FSAPATH</p>
+
+<p style="margin-left:22%;">Path to directory of HFST
+format automata</p>
+
+<p style="margin-left:11%;"><b>&minus;i</b> INFILE,
+<b>&minus;&minus;input</b> INFILE</p>
+
+<p style="margin-left:22%;">source of analysis data</p>
+
+<p style="margin-left:11%;"><b>&minus;o</b> OUTFILE,
+<b>&minus;&minus;output</b> OUTFILE</p>
+
+<p style="margin-left:22%;">print segmented data into
+OUTFILE</p>
+
+<p style="margin-left:11%;"><b>&minus;O</b> OUTFORMAT,
+<b>&minus;&minus;output-format</b> OUTFORMAT</p>
+
+<p style="margin-left:22%;">use OUTFORMAT format to print
+output</p>
+
+<p style="margin-left:11%;"><b>&minus;v</b>,
+<b>&minus;&minus;verbose</b></p>
+
+<p style="margin-left:22%;">Print verbosely while
+processing</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;no&minus;split&minus;words</b></p>
+
+<p style="margin-left:22%;">no splitting on word-word
+boundaries (compound)</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;no&minus;split&minus;new&minus;words</b></p>
+
+<p style="margin-left:22%;">no splitting on dynamoc
+word-word boundaries (prev. unattested compounds)</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;no&minus;split&minus;morphs</b></p>
+
+<p style="margin-left:22%;">no splitting on morph-morph
+boundaries</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;split&minus;derivs</b></p>
+
+<p style="margin-left:22%;">split on deriv-morph boundaries
+too</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;split&minus;nonwords</b></p>
+
+<p style="margin-left:22%;">split on other boundaries</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;segment&minus;marker</b>
+SEG</p>
+
+<p style="margin-left:22%;">use SEG to mark segmentation
+points</p>
+
+<p style="margin-left:11%; margin-top: 1em">If no FILENAMEs
+are given, input is read from standard input. If no marker
+is specified, an appropriate marker for OUTFORMAT is
+selected. The OUTFORMAT is one of {segments, moses-factors,
+labels-tsv} for plain-text splitted, Moses SMT style factors
+or labeled segments in TSV stream</p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Copyright
+&copy; 2015 Tommi A Pirinen Licence GPLv3: GNU GPL version 3
+&lt;http://gnu.org/licenses/gpl.html&gt; <br>
+This is free software: you are free to change and
+redistribute it. There is NO WARRANTY, to the extent
+permitted by law.</p>
+
+<h2>NOTICE
+<a name="NOTICE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This used to be
+a bash script but was promoted into python.</p>
+<hr>
+</body>
+</html>
