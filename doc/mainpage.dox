@@ -1,0 +1,22 @@
+/** \mainpage
+
+The omorfi has number of programming language bindings that are described
+in this doxygen site. As of current version of omorfi, you should only look
+at the Omorfi class/object/things and the functions load_analyser, 
+load_XXX, tokenise and analyse. Stuff outside these classes is not really
+part of the API while it is somewhat documented. For design, see
+\sa https://flammie.github.io/omorfi/pages/API-design.html
+
+Since navigation of doxygen is not ideal for multi-programming-language stuff,
+see:
+
+<dl>
+<dt>Python</dt>
+<dd>\link omorfi.omorfi.Omorfi \endlink</dd>
+<dt>Java</dt>
+<dd>\link com.github.flammie.omorfi.Omorfi \endlink</dd>
+<dt>C++</dt>
+<dd>\link omorfi::Omorfi \endlink</dd>
+</dl>
+
+*/

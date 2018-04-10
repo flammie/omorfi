@@ -90,7 +90,8 @@ WARN_FORMAT            = "$file:$line: $text"
 WARN_LOGFILE           =
 INPUT                  = ../src/python \
                          ../src/java \
-                         ../src/cpp
+                         ../src/cpp \
+                         mainpage.dox
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.py \
                          *.java \
