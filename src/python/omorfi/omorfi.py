@@ -51,38 +51,69 @@ class Omorfi:
 
     The annotations will be changed when transformation has been applied.
     """
+
+    ## analyser model
     analyser = None
+    ## tokeniser
     tokeniser = None
+    ## generator model
     generator = None
+    ## lemmatising model
     lemmatiser = None
+    ## hyphenating model
     hyphenator = None
+    ## segmenting model
     segmenter = None
+    ## label-segment model
     labelsegmenter = None
+    ## acceptor
     acceptor = None
+    ## guesser model
     guesser = None
+    ## UDPipe model
     udpiper = None
+    ## UDPipeline object :-(
     udpipeline = None
+    ## UDError object :-(
     uderror = None
+    ## database of lexical unigram probabilities
     lexlogprobs = dict()
+    ## database of tag unigram probabilities
     taglogprobs = dict()
+    ## whether to lowercase and re-analyse if needed
     try_lowercase = True
+    ## whether to Titlecase and re-analyse if needed
     try_titlecase = True
+    ## whether to dEtitlecase and re-analyse if needed
     try_detitlecase = True
+    ## whether to UPPERCASE and re-analyse if needed
     try_uppercase = False
+    ## whether analyser model is loaded
     can_analyse = False
+    ## whether tokenisr model is loaded
     can_tokenise = True
+    ## whether generator model is loaded
     can_generate = False
+    ## whether lemmatising model is loaded
     can_lemmatise = False
+    ## whether hypenation model is loaded
     can_hyphenate = False
+    ## whether segmentation model is loaded
     can_segment = False
+    ## whether label segmentation model is loaded
     can_labelsegment = False
+    ## whether guesser model is loaded
     can_guess = False
+    ## whether UDPipe is loaded
     can_udpipe = False
 
+    ## whether to print verbosely
     _verbosity = False
 
+    ## magic number for penalty weights
     _penalty = 28021984
 
+    ## paths to search auto-detected models from
     _stdpaths = ['/usr/local/share/hfst/fi/',
                  '/usr/share/hfst/fi/',
                  '/usr/local/share/omorfi/',
@@ -141,13 +172,17 @@ class Omorfi:
             if self._verbosity:
                 print('analyser', parts[0])
             self.analyser = his.read()
+            ## analyser is loaded
             self.can_analyse = True
+            ## acceptor is loaded
             self.can_accept = True
+            ## lemmatiser is loaded
             self.can_lemmatise = True
         elif parts[1] == 'generate' and include['generate']:
             if self._verbosity:
                 print('generator', parts[0])
             self.generator = his.read()
+            ## generator is loaded
             self.can_generate = True
         elif parts[1] == 'accept' and include['accept']:
             if self._verbosity:
@@ -158,6 +193,7 @@ class Omorfi:
             if self._verbosity:
                 print('tokeniser', parts[0])
             self.tokeniser = his.read()
+            ## tokeniser is loaded
             self.can_tokenise = True
         elif parts[1] == 'lemmatise' and include['lemmatise']:
             if self._verbosity:
@@ -168,16 +204,19 @@ class Omorfi:
             if self._verbosity:
                 print('hyphenator', parts[0])
             self.hyphenator = his.read()
+            ## hyphenator is loaded
             self.can_hyphenate = True
         elif parts[1] == 'segment' and include['segment']:
             if self._verbosity:
                 print('segmenter', parts[0])
             self.segmenter = his.read()
+            ## segmenter is loaded
             self.can_segment = True
         elif parts[1] == 'guesser' and include['guesser']:
             if self._verbosity:
                 print('guesser', parts[0])
             self.guesser = his.read()
+            ## guesserr is loaded
             self.can_guess = True
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if self._verbosity:
@@ -240,6 +279,14 @@ class Omorfi:
                 print("broken HFST", filename, file=stderr)
 
     def load_udpipe(self, filename):
+        """Load UDPipe model for statistical parsing.
+
+        UDPipe can be used as extra information source for OOV symbols
+        or all tokens. It works best with sentence-based analysis, token
+        based does not keep track of context.
+
+        @param filename  path to UDPipe model
+        """
         if not can_udpipe:
             print("importing udpipe failed, cannot load udpipe xxx")
             return
@@ -248,9 +295,15 @@ class Omorfi:
         self.udpipeline = Pipeline(self.udpiper, 'horizontal', Pipeline.DEFAULT,
                 Pipeline.DEFAULT, 'conllu')
         self.uderror = ProcessingError()
+        ## udpipe is loaded
         self.can_udpipe = True
 
     def load_lexical_frequencies(self, lexfile):
+        """Load a frequency list for lemmas. Experimental.
+        Currently in uniq -c format, subject to change.
+
+        @param filename path to file with frequencies.
+        """
         lextotal = 0
         lexcounts = dict()
         for line in lexfile:
@@ -267,6 +320,11 @@ class Omorfi:
                 self.lexlogprobs[lex] = log(1/(lextotal + 1))
 
     def load_omortag_frequencies(self, omorfile):
+        """Load a frequenc list for tags. Experimental.
+        Currently in uniq -c format. Subject to change.
+
+        @param filename path to file with frequencies.
+        """
         omortotal = 0
         omorcounts = dict()
         for line in omorfile:
@@ -407,6 +465,10 @@ class Omorfi:
         return retokens
 
     def _tokenise(self, line):
+        """Tokenise with FSA.
+        
+        @param line  string to tokenise
+        """
         return None
 
     def tokenise(self, line):
@@ -749,6 +811,7 @@ class Omorfi:
         return labelsegments
 
     def _accept(self, token):
+        """Look up token from acceptor model."""
         res = self.acceptor.lookup(token['surf'])
         return res
 
@@ -756,7 +819,8 @@ class Omorfi:
         '''Check if the token is in the dictionary or not.
 
         Returns False for OOVs, True otherwise. Note, that this is not
-        necessarily more efficient than analyse(token)'''
+        necessarily more efficient than analyse(token)
+        '''
         realtoken = self._maybe_str2token(token)
         accept = False
         accepts = None
