@@ -28,7 +28,11 @@ from .string_manglers import lexc_escape
 
 
 class LabeledSegmentsFormatter(Formatter):
+    """Handles conversions for morph segmenter with morph labels.
+    Experimental.
+    """
 
+    ## labels for segments
     multichars = {
         '[ADJ]',
         '[VERB]',
@@ -105,6 +109,7 @@ class LabeledSegmentsFormatter(Formatter):
         '[kA]',
         '[FORGN]'}
 
+    ## convert omorfi analyses to segment labels
     stuff2labels = {"Bc": "{wB}",
                     ".sent": "",
                     ".": ".",
@@ -316,9 +321,18 @@ class LabeledSegmentsFormatter(Formatter):
                     }
 
     def __init__(self, verbose=True, **kwargs):
+        """Create a segment label formatter with given verbosity and options.
+
+        @param verbose set to false to disable output logging
+        """
+        ## verbosity
         self.verbose = verbose
 
     def stuff2lexc(self, stuff, stem):
+        """Convert omorfi analysis into segment labels
+
+        @return lexc-formatted string of labeled segments
+        """
         if stuff == '@@COPY-STEM@@':
             # we already copy stem
             return ''
@@ -333,18 +347,30 @@ class LabeledSegmentsFormatter(Formatter):
             return "ERRORMACRO"
 
     def analyses2lexc(self, anals, stem):
+        """Convert omorfi analysis string and stem into labeled segments.
+
+        @return lexc-formatted string of labeled segments
+        """
         apestring = ''
         for i in anals.split('|'):
             apestring += self.stuff2lexc(i, stem)
         return apestring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Create lexc continuation class for omorfi morphology informations.
+
+        @return lexc-formatted entry for continuation class data
+        """
         # interleave tags and segments
         analstring = lexc_escape(surf)
         analstring += self.analyses2lexc(anals, surf)
         return "%s:%s\t%s ;\n" % (analstring, lexc_escape(surf), cont)
 
     def wordmap2lexc(self, wordmap):
+        """Format omorfi lexical data into labeled stem segments in lexc.
+
+        @return lexc-formatted lexical entry
+        """
         if wordmap['lemma'] == ' ':
             return ''
         wordmap['analysis'] = lexc_escape(wordmap['stub'])
@@ -363,6 +389,10 @@ class LabeledSegmentsFormatter(Formatter):
         return retvals
 
     def multichars_lexc(self):
+        """Format labels as lexc block
+
+        @return lexc-format multichar symbols definition for segment labels
+        """
         multichars = "Multichar_Symbols\n"
         for mc in self.multichars:
             multichars += lexc_escape(mc) + "\n"
@@ -370,6 +400,10 @@ class LabeledSegmentsFormatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Create root lexicon for labeled segments
+
+        @return lexc-format Root lexicon for labeled morph segments
+        """
         root = Formatter.root_lexicon_lexc(self)
         return root
 

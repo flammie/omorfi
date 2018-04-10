@@ -26,15 +26,24 @@ import net.sf.hfst.FormatException;
  *
  */
 public class HfstOptimizedLookup {
-    public final static long TRANSITION_TARGET_TABLE_START = 2147483648l; // 2^31 or UINT_MAX/2 rounded up
-
+    /** magic number. 2^31 or UINT_MAX/2 rounded up */
+    public final static long TRANSITION_TARGET_TABLE_START = 2147483648l;
+    /** magic number. */
     public final static long NO_TABLE_INDEX = 4294967295l;
-    public final static float INFINITE_WEIGHT = (float) 4294967295l; // this is hopefully the same as
+    /** magic number. */
+    public final static float INFINITE_WEIGHT = (float) 4294967295l;
+    // this is hopefully the same as
     // static_cast<float>(UINT_MAX) in C++
+    /** magic number. */
     public final static int NO_SYMBOL_NUMBER = 65535; // this is USHRT_MAX
 
+    /** One of the possible operations of Xerox flag diacritics. */
     public static enum FlagDiacriticOperator {P, N, R, D, C, U};
 
+    /** Run a given transducer on standard input.
+     *
+     * @param t  a transducer to run.
+     */
     public static void runTransducer(Transducer t) {
 		System.out.println("Ready for input.");
 		BufferedReader stdin = new BufferedReader(new InputStreamReader(
@@ -61,8 +70,12 @@ public class HfstOptimizedLookup {
 			System.out.println();
 		}
 	}
-    
-    
+
+
+    /** Command line interface for optimised lookup java.
+     *
+     * @param  argv  the command line arguments.
+     */
     public static void main(String[] argv) throws IOException
     {
 	if (argv.length != 1)

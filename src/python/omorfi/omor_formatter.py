@@ -27,6 +27,9 @@ from .string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
 
 
 class OmorFormatter(Formatter):
+    """Converts Omorfi's default formats for strings."""
+
+    ## Omorfi multichars for all omorfi analysers
     common_multichars = {
         '[ABBR=ABBREVIATION]',
         '[ABBR=ACRONYM]',
@@ -256,6 +259,7 @@ class OmorFormatter(Formatter):
         "[FOREIGN=FOREIGN]"
     }
 
+    ## legacy multichars for long POS analyses
     old_poses = {
         '[POS=ADPOSITION]',
         '[POS=PUNCTUATION]',
@@ -264,6 +268,7 @@ class OmorFormatter(Formatter):
         '[POS=SYMBOL]'
     }
 
+    ## tags for analysing allomorphs
     allo_multichars = {
         '[ALLO=A]',
         '[ALLO=AN]',
@@ -307,6 +312,7 @@ class OmorFormatter(Formatter):
         '[ALLO=ÖN]'
     }
 
+    ## tags for analysing kotus dictionary classifications
     ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
         '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
@@ -330,6 +336,8 @@ class OmorFormatter(Formatter):
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
         '[KAV=N]', '[KAV=O]', '[KAV=P]', '[KAV=T]'}
 
+    ## mapping from omorfi data to omorfi analyses... Between the really really
+    ## internal format and mildly internal format :-}
     stuff2omor = {
         ".sent": "[BOUNDARY=SENTENCE]",
         "Aa": "[ALLO=A]",
@@ -595,6 +603,15 @@ class OmorFormatter(Formatter):
         "": ""}
 
     def __init__(self, verbose=False, **kwargs):
+        """Create a conversion with given verbosity and options
+
+        @param verbose set to true ot print output while processing
+        @param sem  set to true to include semantic tags
+        @param allo  set to true to include allomiorph tags
+        @param props  set to true to include NER tags
+        @param ktnkav  set to true to get KOTUS dictionary paradigms tags
+        @param newparas  set to true to get omorfi paradigms tags
+        """
         for stuff, omor in self.stuff2omor.items():
             if len(omor) < 2:
                 continue
@@ -604,31 +621,37 @@ class OmorFormatter(Formatter):
                     "There are conflicting formattings in here!\n" +
                     omor + " corresponding " + stuff +
                     " is not a valid defined omor multichar_symbol!")
+        ## verbosity
         self.verbose = verbose
+        ## if semantics tags enabled
         self.semantics = True
         if 'sem' not in kwargs or not kwargs['sem']:
             for k, v in self.stuff2omor.items():
                 if "SEM=" in v:
                     self.stuff2omor[k] = ""
             self.semantics = False
+        ## if allomorph tags enabled
         self.allo = True
         if 'allo' not in kwargs or not kwargs['allo']:
             for k, v in self.stuff2omor.items():
                 if "ALLO=" in v:
                     self.stuff2omor[k] = ""
             self.allo = False
+        ## if NER tags enabled
         self.props = True
         if 'props' not in kwargs or not kwargs['props']:
             for k, v in self.stuff2omor.items():
                 if "PROPER=" in v:
                     self.stuff2omor[k] = ""
             self.props = False
+        ## if kotus paradimgs tags enabled
         self.ktnkav = True
         if 'ktnkav' not in kwargs or not kwargs['ktnkav']:
             for k, v in self.stuff2omor.items():
                 if "KTN=" in v or "KAV=" in v:
                     self.stuff2omor[k] = ""
             self.ktnkav = False
+        ## if omorfi paradigms tags enabled
         self.newparas = True
         if 'newparas' not in kwargs or not kwargs['newparas']:
             for k, v in self.stuff2omor.items():
@@ -637,6 +660,10 @@ class OmorFormatter(Formatter):
             self.newparas = False
 
     def stuff2lexc(self, stuff):
+        """Convert omorfi internal tag to omorfi lexc analysis tag
+
+        @return lexc-formatted omorfi analysis
+        """
         if stuff == '0':
             return "0"
         if stuff in self.stuff2omor:
@@ -646,6 +673,10 @@ class OmorFormatter(Formatter):
             return "ERRORMACRO"
 
     def analyses2lexc(self, anals, surf):
+        """Convert omorfi analysis tags string into omorfi lexc tags.
+
+        @return lexc-formatted tag string with potentially stem fragments etc.
+        """
         omorstring = ''
         for tag in anals.split('|'):
             if tag == '@@COPY-STEM@@':
@@ -657,11 +688,19 @@ class OmorFormatter(Formatter):
         return omorstring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Create lexc entry from omorfi continuation data
+
+        @return lexc-format continuation entry
+        """
         tags = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (tags, surf, cont)
 
     def guesser2lexc(self, regex, deletion, cont):
+        """Create a lexc guesser entry from omorfi continuation data
+
+        @return lexc-format guesser lexical entry
+        """
         if not regex:
             regex = ''
         regex = egrep2xerox(regex)
@@ -671,6 +710,8 @@ class OmorFormatter(Formatter):
     def wordmap2lexc(self, wordmap):
         '''
         format string for canonical omor format for morphological analysis
+
+        @return lexc-formatted lexical entry for omorfi analyses
         '''
         if wordmap['stub'] == ' ':
             # do not include normal white space for now
@@ -748,6 +789,10 @@ class OmorFormatter(Formatter):
             return lexc_line
 
     def multichars_lexc(self):
+        """Create analysis tags description for lexc for omorfi tags
+
+        @return lexc-formatted Multichar_symbols block for omorfi analyses
+        """
         multichars = "Multichar_Symbols\n"
         multichars += "!! OMOR multichars:\n"
         for mcs in self.common_multichars:
@@ -756,6 +801,10 @@ class OmorFormatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Create omorfi root lexicon.
+
+        @return elxc-formatted Root lexicon string for omorfi
+        """
         root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens

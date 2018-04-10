@@ -25,6 +25,10 @@
 
 #include "omorfi.hh"
 
+/** Print standard usage message.
+ *
+ * @param progam_name name of the program
+ */
 void
 print_usage(const char* program_name) {
     // c.f. http://www.gnu.org/prep/standards/standards.html#g_t_002d_002dhelp
@@ -37,6 +41,12 @@ print_usage(const char* program_name) {
     printf("\n");
 }
 
+/** Command-line interface to omorfi lookup.
+ *
+ * @param argc  number of arguments
+ * @param argv  arguments in array
+ * @return 0 if program terminated succesfully, 1 otherwise
+ */
 int main(int argc, char** argv) {
     while (true) {
         static const struct option long_options[] = {
