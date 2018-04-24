@@ -441,7 +441,8 @@ class Omorfi:
         pretokens = []
         posttokens = []
         while len(token) > 1 and token[-1] in fin_punct_trailing:
-            posttokens += [{"surf": token[-1], "SpaceBefore": "No"}]
+            posttokens = ([{"surf": token[-1], "SpaceBefore": "No"}]
+                          + posttokens)
             token = token[:-1]
         while len(token) > 1 and token[0] in fin_punct_leading:
             pretokens += [{"surf": token[0], "SpaceAfter": "No"}]
@@ -464,12 +465,19 @@ class Omorfi:
                 retokens.append(retoken)
         return retokens
 
-    def _tokenise(self, line):
+    def fsa_tokenise(self, line):
         """Tokenise with FSA.
         
         @param line  string to tokenise
         """
         return None
+
+    def python_tokenise(self, line):
+        """Tokenise with python's basic string functions.
+
+        @param line  string to tokenise
+        """
+        return self._retokenise(line.split())
 
     def tokenise(self, line):
         """Perform tokenisation with loaded tokeniser if any, or `split()`.
@@ -485,9 +493,9 @@ class Omorfi:
         """
         tokens = None
         if self.tokeniser:
-            tokens = self._tokenise(line)
+            tokens = self.fsa_tokenise(line)
         if not tokens:
-            tokens = self._retokenise(line.split())
+            tokens = self.python_tokenise(line)
         return tokens
 
     def _analyse_str(self, s):
