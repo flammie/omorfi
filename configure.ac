@@ -143,7 +143,7 @@ AC_ARG_ENABLE([small-lexicons],
                               [whether to greatly reduce lexicon sizes @<:@default=no@:>@])],
                              [small_lexicons=$enableval],
                              [small_lexicons=no])
-AM_CONDITIONAL([WANT_SMALL_LEXICONS], [test "x$small_lexicons" != xno])
+AM_CONDITIONAL([ONLY_SMALL_LEXICONS], [test "x$small_lexicons" != xno])
 AC_ARG_ENABLE([big-tests],
               [AS_HELP_STRING([--enable-big-tests],
                               [whether to run large corpus tests @<:@default=no@:>@])],

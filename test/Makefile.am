@@ -8,14 +8,12 @@ TESTS=rough-tests.sh scripts-runnable.sh \
 	  conllu-fi-ud-test.sh \
 	  conllu-fi-ftb-ud-test.sh \
 	  regressions.sh \
-	  vislcg-fi-ud-test.sh
+	  vislcg-fi-ud-test.sh \
+	  rougher-tests.bash \
+	  coverages-less-quick.bash
 XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
-endif
-if WANT_SMALL_LEXICONS
-TESTS+=rougher-tests.bash coverages-less-quick.bash
-XFAIL_TESTS+=rough-tests.sh coverages-all-quick.sh coverages-all-slow.bash
 endif
 EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \

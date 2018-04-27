@@ -5,12 +5,8 @@ HFST_FLAGS=
 voikkosharedir=$(libdir)/voikko/3/
 
 HLEXC_FLAGS=--alignStrings
-if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 ORIGIN_FLAGS=-O kotus -O omorfi++
-else !WANT_SMALL_LEXICONS
-HLEXC_FLAGS+=--Werror
-endif
 
 # {{{ Files
 # Origins
@@ -129,12 +125,13 @@ endif
 if WANT_OMOR
 OMOR_AUTOMATA=generated/omorfi.analyse.hfst \
 			  generated/omorfi_recased.analyse.hfst
-if !WANT_SMALL_LEXICONS
+if !ONLY_SMALL_LEXICONS
 OMOR_AUTOMATA+=generated/omorfi.describe.hfst \
 			   generated/omorfi_recased.describe.hfst \
 			   generated/omorfi.generate.hfst
 endif
-OMOR_GENERATED=generated/omorfi-omor.lexc \
+OMOR_GENERATED=generated/omorfi.lexc \
+			   generated/omorfi-large.lexc \
 			   generated/omorfi-omor.reweight \
 			   generated/omorfi-omor-tests.yaml \
 			   generated/omorfi-omor-rewrite-tags.regex
@@ -282,22 +279,24 @@ generated/master.tsv: generated/joint.tsv paradigms.tsv
 generated/continuations.tsv: continuations.tsv generated/timestamp
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
-# database to generic
+# database to omorfi native lexcies:
+# segmenter
 generated/omorfi.segment.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-segments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
+# lemmatiser
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-lemmas \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
+# acceptor
 generated/omorfi.accept.lexc:  generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv  \
 		-c generated/continuations.tsv -o $@ -f=none \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
-
 
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/continuations.tsv
@@ -305,42 +304,81 @@ generated/omorfi-labelsegments.lexc: generated/master.tsv generated/continuation
 		-c generated/continuations.tsv -o $@ -f=labelsegments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-#
+# YAML tests
+generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
+	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor
+
+# baseline reweighter
+generated/omorfi-omor.reweight:
+	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
+
+# Gold dictionary lexc: kotus + omorfi++ - FGK - PROPN blockers
+generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c generated/continuations.tsv -o $@ -f=omor \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS) \
+		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
+
+# Real omorfi dictionary
+generated/omorfi-large.lexc: generated/master.tsv generated/continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c generated/continuations.tsv -o $@ -f=omor \
+		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
+
+
+# Xerox style guesser
+generated/omorfi-guesser.lexc: paradigms.tsv generated/continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
+		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
+		-c generated/continuations.tsv -o $@ -f=omor
+
+# hacks
+generated/omorfi-rewrite-tags.regex:
+	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
+		-r rewrite-tags-omor -o $@
+
+# misc twol rules
 generated/omorfi-phon.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r phon -o $@
 
+# recasing optional rules
 generated/omorfi-recase-any.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r recase-any -o $@
 
+# uppercasing optional rules
 generated/omorfi-uppercase-any.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-any -o $@
 
+# titlecasing optional rules
 generated/omorfi-uppercase-first.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-first -o $@
 
+# hyphenation rules
 generated/omorfi-hyphens.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r hyphens -o $@
 
+# orthography rules
 generated/omorfi-orthographic-variations.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r orthographic-variations -o $@
 
+# ž rules
 generated/omorfi-zh.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r zh -o $@
 
+# š rules
 generated/omorfi-sh.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r sh -o $@
 
+# removing extra markers
 generated/omorfi-remove-boundaries.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r remove-boundaries -o $@
 
-generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
-		-r remove-boundaries-giella -o $@
 
+# tokeniser components
 generated/omorfi-between-tokens.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r between-tokens -o $@
@@ -359,31 +397,6 @@ generated/omorfi-hyphenate.twolc:
 generated/omorfi-boundary.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=boundary -o $@
 
-# database to omor
-generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor
-
-generated/omorfi-omor.reweight:
-	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
-
-generated/omorfi-omor.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c generated/continuations.tsv -o $@ -f=omor \
-		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
-
-generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c generated/continuations.tsv -o $@ -f=omor \
-		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
-
-generated/omorfi-omor-guesser.lexc: paradigms.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
-		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
-		-c generated/continuations.tsv -o $@ -f=omor
-
-generated/omorfi-omor-rewrite-tags.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
-		-r rewrite-tags-omor -o $@
 
 # database to ftb3
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
@@ -430,6 +443,9 @@ generated/omorfi-giella.lexc: generated/master.tsv generated/continuations.tsv
 		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
 		-i generated/continuations.tsv -o $@ -f=giella
 
+generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+		-r remove-boundaries-giella -o $@
 
 
 # database (back) to kotus
@@ -1144,7 +1160,7 @@ generated/omorfi_recased.analyse.hfst: generated/temporary.analyse.hfst generate
 		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
 # Full lexicon
-generated/temporary-omor.hyphenated.hfst: generated/omorfi-omor.lexc.hfst \
+generated/temporary-omor.hyphenated.hfst: generated/omorfi-large.lexc.hfst \
 	generated/omorfi-hyphens.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
@@ -1181,7 +1197,7 @@ generated/omorfi_recased.describe.hfst: generated/temporary.describe.hfst genera
 		$(HINV) $(HFST_FLAGS) |\
 		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
-# create generator from analyzer
+# create generator from large analyzer
 generated/omorfi.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
