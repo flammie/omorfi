@@ -52,63 +52,6 @@ class Omorfi:
     The annotations will be changed when transformation has been applied.
     """
 
-    ## analyser model
-    analyser = None
-    ## tokeniser
-    tokeniser = None
-    ## generator model
-    generator = None
-    ## lemmatising model
-    lemmatiser = None
-    ## hyphenating model
-    hyphenator = None
-    ## segmenting model
-    segmenter = None
-    ## label-segment model
-    labelsegmenter = None
-    ## acceptor
-    acceptor = None
-    ## guesser model
-    guesser = None
-    ## UDPipe model
-    udpiper = None
-    ## UDPipeline object :-(
-    udpipeline = None
-    ## UDError object :-(
-    uderror = None
-    ## database of lexical unigram probabilities
-    lexlogprobs = dict()
-    ## database of tag unigram probabilities
-    taglogprobs = dict()
-    ## whether to lowercase and re-analyse if needed
-    try_lowercase = True
-    ## whether to Titlecase and re-analyse if needed
-    try_titlecase = True
-    ## whether to dEtitlecase and re-analyse if needed
-    try_detitlecase = True
-    ## whether to UPPERCASE and re-analyse if needed
-    try_uppercase = False
-    ## whether analyser model is loaded
-    can_analyse = False
-    ## whether tokenisr model is loaded
-    can_tokenise = True
-    ## whether generator model is loaded
-    can_generate = False
-    ## whether lemmatising model is loaded
-    can_lemmatise = False
-    ## whether hypenation model is loaded
-    can_hyphenate = False
-    ## whether segmentation model is loaded
-    can_segment = False
-    ## whether label segmentation model is loaded
-    can_labelsegment = False
-    ## whether guesser model is loaded
-    can_guess = False
-    ## whether UDPipe is loaded
-    can_udpipe = False
-
-    ## whether to print verbosely
-    _verbosity = False
 
     ## magic number for penalty weights
     _penalty = 28021984
@@ -123,6 +66,74 @@ class Omorfi:
     def __init__(self, verbosity=False):
         """Construct Omorfi with given verbosity for printouts."""
         self._verbosity = verbosity
+        ## analyser model
+        self.analyser = None
+        ## tokeniser
+        self.tokeniser = None
+        ## generator model
+        self.generator = None
+        ## lemmatising model
+        self.lemmatiser = None
+        ## hyphenating model
+        self.hyphenator = None
+        ## segmenting model
+        self.segmenter = None
+        ## label-segment model
+        self.labelsegmenter = None
+        ## acceptor
+        self.acceptor = None
+        ## guesser model
+        self.guesser = None
+        ## UDPipe model
+        self.udpiper = None
+        ## UDPipeline object :-(
+        self.udpipeline = None
+        ## UDError object :-(
+        self.uderror = None
+        ## database of lexical unigram probabilities
+        self.lexlogprobs = dict()
+        ## database of tag unigram probabilities
+        self.taglogprobs = dict()
+        ## whether to lowercase and re-analyse if needed
+        self.try_lowercase = True
+        ## whether to Titlecase and re-analyse if needed
+        self.try_titlecase = True
+        ## whether to dEtitlecase and re-analyse if needed
+        self.try_detitlecase = True
+        ## whether to UPPERCASE and re-analyse if needed
+        self.try_uppercase = False
+        ## whether analyser model is loaded
+        self.can_analyse = False
+        ## whether tokenisr model is loaded
+        self.can_tokenise = True
+        ## whether generator model is loaded
+        self.can_generate = False
+        ## whether lemmatising model is loaded
+        self.can_lemmatise = False
+        ## whether hypenation model is loaded
+        self.can_hyphenate = False
+        ## whether segmentation model is loaded
+        self.can_segment = False
+        ## whether label segmentation model is loaded
+        self.can_labelsegment = False
+        ## whether guesser model is loaded
+        self.can_guess = False
+        ## whether UDPipe is loaded
+        self.can_udpipe = False
+
+    def load_hfst(self, f):
+        if access(f, F_OK):
+            his = libhfst.HfstInputStream(f)
+        else:
+            # FIXME: should fail
+            if self._verbosity:
+                print('No access to ', path, file=stderr)
+            pass
+        return his.read()
+
+
+    def load_analyser(self, f):
+        self.analyser = self.load_hfst(f)
 
     def load_filename(self, path, **include):
         """Load omorfi automaton from filename and guess its use.
@@ -151,16 +162,6 @@ class Omorfi:
                       'udpipe']:
             if ttype not in include:
                 include[ttype] = False
-        his = None
-        if self._verbosity:
-            print('Opening file', path)
-        if access(path, F_OK):
-            his = libhfst.HfstInputStream(path)
-        else:
-            # FIXME: should fail
-            if self._verbosity:
-                print('No access to ', path, file=stderr)
-            pass
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
         if len(parts) != 2:
             if self._verbosity:
@@ -171,7 +172,7 @@ class Omorfi:
         elif parts[1] == 'analyse' and include['analyse']:
             if self._verbosity:
                 print('analyser', parts[0])
-            self.analyser = his.read()
+            self.analyser = load_analyser(path)
             ## analyser is loaded
             self.can_analyse = True
             ## acceptor is loaded

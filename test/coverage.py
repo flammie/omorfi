@@ -14,8 +14,8 @@ from omorfi.omorfi import Omorfi
 
 def main():
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAFILE', required=True,
-                   help="HFST's optimised lookup binary data for the transducer to be applied")
+    a.add_argument('-a', '--analyser', metavar='AFILE', required=True,
+                   help="load analyser model AFILE for coverage checks")
     a.add_argument('-i', '--input', metavar="INFILE", type=open, required=True,
                    dest="infile", help="source of analysis data")
     a.add_argument('-o', '--output', metavar="outFILE", type=FileType('w'),
@@ -29,14 +29,13 @@ def main():
                    help="require THOLD % coverage or exit 1 (for testing)")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.analyser:
         if options.verbose:
-            print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True, accept=True)
+            print("reading analyser model", options.analyser)
+        omorfi.load_analyser(options.analyser)
     else:
-        if options.verbose:
-            print("reading language models in default dirs")
-        omorfi.load_from_dir()
+        print("analyser model is needed", file=stderr)
+        exit(1)
     # statistics
     tokens = 0
     uniqs = 0
