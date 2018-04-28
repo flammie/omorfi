@@ -284,7 +284,7 @@ def get_vislcg_feats(token):
                 print("Unhandled boundary = ", value, "in", token)
                 exit(1)
         elif key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
-                     "POSITION", "ABBR", "FOREIGN"]:
+                     "POSITION", "ABBR", "FOREIGN", "PROPER"]:
             # semantics, non-core morph in brackets
             vislcgs += ["<" + key + "_" + value + ">"]
         elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
