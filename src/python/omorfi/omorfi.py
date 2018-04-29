@@ -132,8 +132,17 @@ class Omorfi:
         return his.read()
 
 
+    def load_labelsegmenter(self, f):
+        self.labelsegmenter = self.load_hfst(f)
+        self.can_labelsegment = True
+
+    def load_segmenter(self, f):
+        self.segmenter = self.load_hfst(f)
+        self.can_segment = True
+
     def load_analyser(self, f):
         self.analyser = self.load_hfst(f)
+        self.can_analyse = True
 
     def load_filename(self, path, **include):
         """Load omorfi automaton from filename and guess its use.
@@ -821,7 +830,12 @@ class Omorfi:
 
     def _accept(self, token):
         """Look up token from acceptor model."""
-        res = self.acceptor.lookup(token['surf'])
+        if self.acceptor:
+            res = self.acceptor.lookup(token['surf'])
+        elif self.analyser:
+            res = self.analyser.lookup(token['surf'])
+        else:
+            res = None
         return res
 
     def accept(self, token):
