@@ -2,7 +2,7 @@
 
 import re
 from argparse import ArgumentParser
-from sys import stdin, stdout
+from sys import stdin, stdout, stderr
 
 from omorfi.omorfi import Omorfi
 
@@ -10,8 +10,10 @@ from omorfi.omorfi import Omorfi
 def main():
     """Preprocess text for moses factored modeling."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-a', '--analyser', metavar='AFILE',
+                   help="load analyser model from AFILE")
+    a.add_argument('-s', '--segmenter', metavar='SFILE',
+                   help="load segmenter model from SFILE")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -20,14 +22,20 @@ def main():
                    help="print factors into OUTFILE")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.analyser:
         if options.verbose:
-            print("Reading automata dir", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True, segment=True)
+            print("Reading analyser model", options.analyser)
+        omorfi.load_analyser(options.analyser)
     else:
+        print("at least analyser file is needed", file=stderr)
+        exit(1)
+    if options.segmenter:
         if options.verbose:
-            print("Searching for automata everywhere...")
-        omorfi.load_from_dir(analyse=True, segment=True)
+            print("Reading segmenter model", options.segmenter)
+        omorfi.load_segmenter(options.segmenter)
+    else:
+        print("at least analyser file is needed", file=stderr)
+        exit(1)
     if options.infile:
         infile = options.infile
     else:
