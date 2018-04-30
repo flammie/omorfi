@@ -3,12 +3,12 @@ if test -z $srcdir ; then
     echo Use make check or define srcdir
     exit 1
 fi
-fsadir="@top_builddir@/src/generated/"
+analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
 vislcgs="fi-ud-test.cg3text"
 cs="get-covered.bash"
 thold=90
-if test ! -d "$fsadir" ; then
-    echo Missing $fsadir
+if test ! -r "$analyser" ; then
+    echo Missing $analyser
     exit 77
 fi
 if ! test -x @PYTHON@ ; then
@@ -19,7 +19,7 @@ if test ! -r $vislcgs ; then
     echo missing $vislcgs, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-vislcg.py -F vislcg -f $fsadir \
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-vislcg.py -F vislcg -a $analyser \
         -i $vislcgs -o omorfi-ud-test.cg3text ; then
     echo analysis failed
     exit 2

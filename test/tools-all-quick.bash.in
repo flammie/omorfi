@@ -1,6 +1,7 @@
 #!/bin/bash
 # coverage for europarl
-fsa="@top_builddir@/src/generated/"
+fsadir="@top_builddir@/src/generated/"
+fsa="@top_builddir@/src/generated/omorfi.analyse.hfst"
 tooldir="@top_srcdir@/src/python"
 
 if test -z $srcdir ; then
@@ -17,18 +18,22 @@ if ! test -x @PYTHON@ ; then
 fi
 
 
-function tool_check() {
-    tool=$1
-    shift
-    if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
-            $tooldir/$tool $@ -v -f $fsa -i wordforms.list \
-            -o wordforms.$(basename 1)log  ; then
+if test -f $fsadir/omorfi.analyse.hfst; then
+    if ! $tooldir/omorfi-conllu.py -a $fsadir/omorfi.analyse.hfst \
+            -i fi_tdt-ud-dev.conllu  ; then
         exit 1
     fi
-    return 0
-}
+    if ! $tooldir/omorfi-vislcg.py -a $fsadir/omorfi.analyse.hfst \
+            -i wordforms.list  ; then
+        exit 1
+    fi
+fi
 
-if test -f $fsa/omorfi.segment.hfst -a -f $fsa/omorfi.labelsegment.hfst ; then
-    tool_check omorfi-segment.py -O moses-factors
+if test -f $fsadir/omorfi.segment.hfst -a -f $fsadir/omorfi.labelsegment.hfst ; then
+    if ! $tooldir/omorfi-segment.py -s $fsadir/omorfi.segment.hfst \
+            -S $fsadir/omorfi.labelsegment.hfst -O moses-factors \
+            -i wordforms.list; then
+        exit 1
+    fi
 fi
 

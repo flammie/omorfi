@@ -44,8 +44,10 @@ def print_segments(segments, labelsegments, surf, outfile, options):
 def main():
     """Segment text in some formats."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-s', '--segmenter', metavar='SFILE',
+                   help="load segmenter from SFILE")
+    a.add_argument('-S', '--labeller', metavar='LSFILE',
+                   help="load labelsegmenter from LSFILE")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -75,15 +77,17 @@ def main():
                    help="separate ambiguous segmentations with SEG")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.segmenter:
         if options.verbose:
-            print("Reading automata dir", options.fsa)
-        omorfi.load_from_dir(options.fsa, segment=True,
-                             labelsegment=True, accept=True)
+            print("Reading segmenter", options.segmenter)
+        omorfi.load_segmenter(options.segmenter)
     else:
+        print("segmenter is needed for segmenting", file=stderr)
+        exit(2)
+    if options.labeller:
         if options.verbose:
-            print("Searching for automata everywhere...")
-        omorfi.load_from_dir(labelsegment=True, segment=True, accept=True)
+            print("Reading labelsegmenter", options.labeller)
+        omorfi.load_labelsegmenter(options.labeller)
     if not omorfi.can_segment:
         print("Could not load segmenter(s), re-compile them or use -f option")
         print()

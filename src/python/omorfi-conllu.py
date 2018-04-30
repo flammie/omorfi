@@ -69,8 +69,8 @@ def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-a', '--analyser', metavar='AFILE',
+                   help="read analyser model from AFILE")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -84,7 +84,7 @@ def main():
     a.add_argument('-u', '--udpipe', metavar="UDPIPE",
                    help='use UDPIPE for additional guesses (experi-mental)')
     a.add_argument('--hacks', metavar='HACKS',
-                   help="mangle anaelyses to match HACKS version of UD",
+                   help="mangle analyses to match HACKS version of UD",
                    choices=['ftb'])
     a.add_argument('-X', '--frequencies', metavar="FREQDIR",
                    help="read frequencies from FREQDIR/*.freqs")
@@ -94,14 +94,13 @@ def main():
     if options.verbose:
         print("Printing verbosely")
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.analyser:
         if options.verbose:
-            print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True, guesser=True)
+            print("reading analyser model", options.analyser)
+        omorfi.load_analyser(options.analyser)
     else:
-        if options.verbose:
-            print("reading language models in default dirs")
-        omorfi.load_from_dir()
+        print("analyser is needed to conllu", file=stdrr)
+        exit(4)
     if options.udpipe:
         if options.verbose:
             print("Loading udpipe", options.udpipe)

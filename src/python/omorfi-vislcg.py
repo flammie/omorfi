@@ -62,8 +62,8 @@ def get_vislcg_surfs(line, prev):
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-a', '--analyser', metavar='AFILE',
+                   help="load analyser model from AFILE")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -77,14 +77,13 @@ def main():
                    help="print statistics to STATFILE", type=FileType('w'))
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.analyser:
         if options.verbose:
-            print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True, accept=True)
+            print("reading analyser model", options.analyser)
+        omorfi.load_analyser(options.analyser)
     else:
-        if options.verbose:
-            print("reading language models in default dirs")
-        omorfi.load_from_dir()
+        print("analyser is required to vislcg", file=stderr)
+        exit(4)
     if not options.infile:
         options.infile = stdin
     if options.verbose:
