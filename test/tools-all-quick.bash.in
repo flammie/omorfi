@@ -19,12 +19,20 @@ fi
 
 
 if test -f $fsadir/omorfi.analyse.hfst; then
+    if ! $tooldir/omorfi-tokenise.py -a $fsadir/omorfi.analyse.hfst \
+            -i test.text  ; then
+        exit 1
+    fi
     if ! $tooldir/omorfi-conllu.py -a $fsadir/omorfi.analyse.hfst \
-            -i fi_tdt-ud-dev.conllu  ; then
+            -i test.conllu  ; then
         exit 1
     fi
     if ! $tooldir/omorfi-vislcg.py -a $fsadir/omorfi.analyse.hfst \
-            -i wordforms.list  ; then
+            -i test.text  ; then
+        exit 1
+    fi
+    if ! $tooldir/omorfi-factorise.py -a $fsadir/omorfi.analyse.hfst \
+            -i test.text  ; then
         exit 1
     fi
 fi
@@ -32,7 +40,7 @@ fi
 if test -f $fsadir/omorfi.segment.hfst -a -f $fsadir/omorfi.labelsegment.hfst ; then
     if ! $tooldir/omorfi-segment.py -s $fsadir/omorfi.segment.hfst \
             -S $fsadir/omorfi.labelsegment.hfst -O moses-factors \
-            -i wordforms.list; then
+            -i test.text; then
         exit 1
     fi
 fi
