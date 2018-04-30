@@ -32,9 +32,12 @@ if test -f $fsadir/omorfi.analyse.hfst; then
             -i test.text -o $tempfile ; then
         exit 1
     fi
-    if ! $tooldir/omorfi-factorise.py -a $fsadir/omorfi.analyse.hfst \
-            -i test.text -o $tempfile ; then
-        exit 1
+    if test -f $fsadir/omorfi.segment.hfst ; then
+        if ! $tooldir/omorfi-factorise.py -a $fsadir/omorfi.analyse.hfst \
+                -s $fsadir/omorfi.segment.hfst \
+                -i test.text -o $tempfile ; then
+            exit 1
+        fi
     fi
 fi
 
