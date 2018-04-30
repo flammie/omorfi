@@ -132,26 +132,26 @@ fi
 
 # UD-finnish
 echo UD Finnish ... 7/$nc
-if ! test -f "fi-ud.uniq.freqs" ; then
-    if ! test -f "fi-ud.conllu" ; then
-        if ! test -d UD_Finnish ; then
-            git clone git@github.com:UniversalDependencies/UD_Finnish.git
+if ! test -f "fi_tdt-ud.uniq.freqs" ; then
+    if ! test -f "fi_tdt-ud-train.conllu" ; then
+        if ! test -d UD_Finnish-TDT ; then
+            git clone git@github.com:UniversalDependencies/UD_Finnish-TDT.git
         else
-            pushd UD_Finnish
+            pushd UD_Finnish-TDT
             git pull
             popd
         fi
-        cat UD_Finnish/fi-ud-{train,dev}.conllu > "fi-ud.conllu"
+        cp UD_Finnish-TDT/fi_tdt-ud-{train,dev,test}.conllu .
     fi
     echo tokenise
-    egrep -v '^#' < "fi-ud.conllu" | tr -s '\n' |\
-        cut -f 2 > "fi-ud.tokens"
+    cat fi_tdt-ud-{train,dev}.conllu | egrep -v '^#' | tr -s '\n' |\
+        cut -f 2 > "fi_tdt-ud.tokens"
     echo count
-    frequency_list "fi-ud.tokens" > "fi-ud.uniq.freqs"
+    frequency_list "fi_tdt-ud.tokens" > "fi_tdt-ud.uniq.freqs"
 fi
 echo UD Finnish-FTB ... 8/$nc
 if ! test -f "fi_ftb-ud.uniq.freqs" ; then
-    if ! test -f "fi_ftb-ud.conllu" ; then
+    if ! test -f "fi_ftb-ud-train.conllu" ; then
         if ! test -d UD_Finnish-ftb ; then
             git clone git@github.com:UniversalDependencies/UD_Finnish-ftb.git
         else
@@ -159,10 +159,10 @@ if ! test -f "fi_ftb-ud.uniq.freqs" ; then
             git pull
             popd
         fi
-        cat UD_Finnish-ftb/fi_ftb-ud-{train,dev}.conllu > "fi_ftb-ud.conllu"
+        cp UD_Finnish-ftb/fi_ftb-ud-{train,dev,test}.conllu .
     fi
     echo tokenise
-    egrep -v '^#' < "fi_ftb-ud.conllu" | tr -s '\n' |\
+    cat fi_ftb-ud-{train,dev}.conllu | egrep -v '^#' | tr -s '\n' |\
         cut -f 2 > "fi_ftb-ud.tokens"
     echo count
     frequency_list "fi_ftb-ud.tokens" > "fi_ftb-ud.uniq.freqs"
