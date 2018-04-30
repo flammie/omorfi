@@ -1,0 +1,18 @@
+# text = The Garden Collection by H&M
+# sent_id =  b204.1
+1	The	The	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+2	Garden	Garden	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	Collection	Collection	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+4	by	by	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+5	H&M	H&M	PROPN	N	Abbr=Yes|Case=Nom|Number=Sing	1	flat:name	_	_
+
+# text = Viikonlopun pyöritys alkoi H&M:n järjestämällä bloggaajabrunssilla Helsingissä.
+# sent_id =  b204.2
+1	Viikonlopun	viikon#loppu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	2	nmod:poss	_	_
+2	pyöritys	pyöritys	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	H&M:n	H&M	PROPN	N	Abbr=Yes|Case=Gen|Number=Sing	5	nsubj	_	_
+5	järjestämällä	järjestää	VERB	V	Case=Ade|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	6	acl	_	_
+6	bloggaajabrunssilla	bloggaaja#brunssi	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+7	Helsingissä	Helsinki	PROPN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
