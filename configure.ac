@@ -328,14 +328,14 @@ AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi.bash])
-AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
-                [chmod +x test/faithfulness-ftb-3.1.sh])
-AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
-                [chmod +x test/faithfulness-ftb-3.1-quick.sh])
+AC_CONFIG_FILES([test/ftb-3.1-test.bash],
+                [chmod +x test/ftb-3.1-test.bash])
+AC_CONFIG_FILES([test/ftb-3.1-quick-test.bash],
+                [chmod +x test/ftb-3.1-quick-test.bash])
 AC_CONFIG_FILES([test/vislcg-fi-ud-test.sh],
                 [chmod +x test/vislcg-fi-ud-test.sh])
-AC_CONFIG_FILES([test/conllu-fi-ud-test.sh],
-                [chmod +x test/conllu-fi-ud-test.sh])
+AC_CONFIG_FILES([test/conllu-fi-tdt-ud-test.bash],
+                [chmod +x test/conllu-fi-tdt-ud-test.bash])
 AC_CONFIG_FILES([test/conllu-fi-ftb-ud-test.sh],
                 [chmod +x test/conllu-fi-ftb-ud-test.sh])
 AC_CONFIG_FILES([test/speed-test.sh],

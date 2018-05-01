@@ -2,10 +2,10 @@
 
 TESTS=rough-tests.sh scripts-runnable.sh \
 	  tools-all-quick.bash \
-	  faithfulness-ftb-3.1-quick.sh \
+	  ftb-3.1-quick-test.bash \
 	  coverages-all-quick.sh \
-	  faithfulness-ftb-3.1.sh \
-	  conllu-fi-ud-test.sh \
+	  ftb-3.1-test.bash \
+	  conllu-fi-tdt-ud-test.bash \
 	  conllu-fi-ftb-ud-test.sh \
 	  regressions.sh \
 	  vislcg-fi-ud-test.sh \
