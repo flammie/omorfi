@@ -29,9 +29,11 @@ Helsinki), and [Finnish Wiktionary](http://fi.Wiktionary.org) (Creative Commons
 Attribution–ShareAlike). Some words have also been collected by omorfi
 developers and contributors and are GPLv3 like the rest of the package.
 
-These are the obligatory stamps of the day:
+I hear all the cool kids wear these things these days, sure they are much nicer
+than w3c validator stamps:
 
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
+[![Coverage Status](https://coveralls.io/repos/github/flammie/omorfi/badge.svg?branch=master)](https://coveralls.io/github/flammie/omorfi?branch=master)
 
 ## Downloading and further information
 
@@ -132,8 +134,8 @@ to enable or disable the API bindings for Java or other languages. The
     * giella: no
     * labeled segmenter: no
 * Limits:
-    * tiny lexicons: 
-    * big tests: 
+    * tiny lexicons:
+    * big tests:
 * Applications
     * Voikko speller: yes
     * segmenter: no
