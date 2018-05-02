@@ -14,6 +14,12 @@ def require_omor(token):
     if not 'anal' in token:
         raise TypeError("this functionality requires token with omor analyses")
 
+def is_tokenlist_oov(tokens):
+    if len(tokens) == 0:
+        return True
+    if len(tokens) == 1 and 'OOV' in tokens[0]:
+        return True
+
 def get_lemmas(token):
     require_omor(token)
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
@@ -81,7 +87,10 @@ def get_ftb_feats(token):
         key = f.split("=")[0].lstrip("[")
         value = f.split("=")[1].rstrip("]")
         if key == 'UPOS':
-            continue
+            if value == 'PROPN':
+                rvs += ['Prop']
+            else:
+                continue
         elif key == 'NUM':
             if value == 'SG':
                 rvs += ['Sg']
@@ -94,7 +103,7 @@ def get_ftb_feats(token):
                 rvs += ['Past']
         elif key == 'MOOD':
             if value == 'INDV':
-                rvs += ['Ind']
+                continue
             elif value == 'COND':
                 rvs += ['Cnd']
             elif value == 'IMPV':
@@ -107,11 +116,13 @@ def get_ftb_feats(token):
             elif value == 'ACT':
                 rvs += ['Act']
         elif key == 'PERS':
-            if value == 'SG1':
+            if value == 'SG0':
+                rvs += ['Sg3']
+            elif value == 'SG1':
                 rvs += ['Sg1']
             elif value == 'SG2':
                 rvs += ['Sg2']
-            elif value == 'Sg3':
+            elif value == 'SG3':
                 rvs += ['Sg3']
             elif value == 'PL1':
                 rvs += ['Pl1']
@@ -119,6 +130,11 @@ def get_ftb_feats(token):
                 rvs += ['Pl2']
             elif value == 'PL3':
                 rvs += ['Pl3']
+            elif value == 'PE4':
+                rvs += ['Pe4']
+            else:
+                print("Unknown", key, value)
+                exit(1)
         elif key == 'POSS':
             if value == 'SG1':
                 rvs += ['PxSg1']
@@ -137,6 +153,7 @@ def get_ftb_feats(token):
                 rvs += ['ConNeg']
             elif value == 'NEG':
                 rvs += ['Neg']
+                rvs += ['Act']
         elif key == 'INF':
             if value == 'A':
                 rvs += ['Inf1']
@@ -160,12 +177,14 @@ def get_ftb_feats(token):
         elif key == 'SUBCAT':
             if value == 'NEG':
                 rvs += ['Neg']
-                rvs += ['Fin']
+            elif value == 'QUOTATION':
+                rvs += ['Quote']
             elif value == 'QUANTIFIER':
                 rvs += ['Ind']
             elif value == 'REFLEXIVE':
-                rvs += ['Yes']
-            elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
+                rvs += ['Refl']
+            elif value in ['COMMA', 'DASH', 'BRACKET',
+                    'ARROW']:
                 # not annotated in UD feats:
                 # * punctuation classes
                 continue
@@ -175,7 +194,7 @@ def get_ftb_feats(token):
                 continue
             else:
                 print("Unhandled subcat: ", value)
-                print("in", analtoken)
+                print("in", token)
                 exit(1)
         elif key == 'NUMTYPE':
             rvs += [value[0] + value[1:].lower()]
@@ -760,10 +779,8 @@ def format_xpos_ftb(token):
         return 'Adv'
     elif upos == 'PRON':
         return 'Pron'
-    elif upos == 'PUNCT':
+    elif upos in ['PUNCT', 'SYM']:
         return 'Punct'
-    elif upos == 'SYM':
-        return 'Symb'
     elif upos == 'INTJ':
         return 'Interj'
     elif upos == 'NUM':
