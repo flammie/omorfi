@@ -73,6 +73,129 @@ def get_upos(token, deriv_munging=True):
             upos = 'NOUN'
     return upos
 
+def get_ftb_feats(token):
+    feats = get_last_feats(token)
+    rvs = list()
+    rvs += [format_xpos_ftb(token)]
+    for f in feats:
+        key = f.split("=")[0].lstrip("[")
+        value = f.split("=")[1].rstrip("]")
+        if key == 'UPOS':
+            continue
+        elif key == 'NUM':
+            if value == 'SG':
+                rvs += ['Sg']
+            elif value == 'PL':
+                rvs += ['Pl']
+        elif key == 'TENSE':
+            if 'PRESENT' in value:
+                rvs += ['Prs']
+            elif 'PAST' in value:
+                rvs += ['Past']
+        elif key == 'MOOD':
+            if value == 'INDV':
+                rvs += ['Ind']
+            elif value == 'COND':
+                rvs += ['Cnd']
+            elif value == 'IMPV':
+                rvs += ['Imp']
+            else:
+                rvs += [value[0] + value[1:].lower()]
+        elif key == 'VOICE':
+            if value == 'PSS':
+                rvs += ['Pass']
+            elif value == 'ACT':
+                rvs += ['Act']
+        elif key == 'PERS':
+            if value == 'SG1':
+                rvs += ['Sg1']
+            elif value == 'SG2':
+                rvs += ['Sg2']
+            elif value == 'Sg3':
+                rvs += ['Sg3']
+            elif value == 'PL1':
+                rvs += ['Pl1']
+            elif value == 'PL2':
+                rvs += ['Pl2']
+            elif value == 'PL3':
+                rvs += ['Pl3']
+        elif key == 'POSS':
+            if value == 'SG1':
+                rvs += ['PxSg1']
+            elif value == 'SG2':
+                rvs += ['PxSg2']
+            elif value == '3':
+                rvs += ['PxSp3']
+            elif value == 'PL1':
+                rvs += ['PxPl1']
+            elif value == 'PL2':
+                rvs += ['PxPl2']
+            elif value == 'PL3':
+                rvs += ['PxPl3']
+        elif key == 'NEG':
+            if value == 'CON':
+                rvs += ['ConNeg']
+            elif value == 'NEG':
+                rvs += ['Neg']
+        elif key == 'INF':
+            if value == 'A':
+                rvs += ['Inf1']
+            elif value == 'E':
+                rvs += ['Inf2']
+            elif value == 'MA':
+                rvs += ['Inf3']
+            elif value == 'MINEN':
+                rvs += ['Inf4']
+            elif value == 'MAISILLA':
+                rvs += ['Inf5']
+        elif key == 'CASE':
+            rvs += [value[0].upper() + value[1:].lower()]
+        elif key == 'CMP':
+            if value == 'SUP':
+                rvs += ['Sup']
+            elif value == 'CMP':
+                rvs += ['Cmp']
+            elif value == 'POS':
+                rvs += ['Pos']
+        elif key == 'SUBCAT':
+            if value == 'NEG':
+                rvs += ['Neg']
+                rvs += ['Fin']
+            elif value == 'QUANTIFIER':
+                rvs += ['Ind']
+            elif value == 'REFLEXIVE':
+                rvs += ['Yes']
+            elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
+                # not annotated in UD feats:
+                # * punctuation classes
+                continue
+            elif value in ['DECIMAL', 'ROMAN']:
+                # not annotated in UD feats:
+                # * decimal, roman NumType
+                continue
+            else:
+                print("Unhandled subcat: ", value)
+                print("in", analtoken)
+                exit(1)
+        elif key == 'NUMTYPE':
+            rvs += [value[0] + value[1:].lower()]
+        elif key == 'PRONTYPE':
+            rvs += [value[0] + value[1:].lower()]
+        elif key == 'ADPTYPE':
+            rvs += [value[0] + value[1:].lower()]
+        elif key == 'CLIT':
+            rvs += [value[0] + value[1:].lower()]
+        elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
+                     'GUESS', 'PROPER', 'SEM', 'CONJ', 'BOUNDARY',
+                     'PCP', 'DRV', 'LEX', 'BLACKLIST', 'STYLE', 'ABBR',
+                     'POSITION', "FOREIGN"]:
+            continue
+        else:
+            print("Unhandled", key, '=', value)
+            print("in", token)
+            exit(1)
+    return rvs
+
 def get_ud_feats(token, hacks=None):
     feats = get_last_feats(token)
     rvs = dict()
@@ -603,8 +726,52 @@ def format_feats_ud(token, hacks=None):
         return '_'
 
 
+def format_feats_ftb(token):
+    rvs = get_ftb_feats(token)
+    return ' '.join(rvs)
+
 def format_xpos_ftb(token):
     upos = get_upos(token)
+    if upos in ['NOUN', 'PROPN']:
+        return 'N'
+    elif upos == 'ADJ':
+        return 'A'
+    elif upos in ['VERB', 'AUX']:
+        pcp = get_last_feat('PCP', token)
+        if pcp:
+            if pcp == 'NUT':
+                return 'PrfPrc'
+            elif pcp == 'MA':
+                return 'AgPrc'
+            elif pcp == 'VA':
+                return 'PrsPrc'
+            elif pcp == 'NEG':
+                return 'NegPrc'
+            else:
+                return 'V'
+        return 'V'
+    elif upos == 'CCONJ':
+        return 'CC'
+    elif upos == 'SCONJ':
+        return 'CS'
+    elif upos == 'ADP':
+        return 'Adp'
+    elif upos == 'ADV':
+        return 'Adv'
+    elif upos == 'PRON':
+        return 'Pron'
+    elif upos == 'PUNCT':
+        return 'Punct'
+    elif upos == 'SYM':
+        return 'Symb'
+    elif upos == 'INTJ':
+        return 'Interj'
+    elif upos == 'NUM':
+        return 'Num'
+    elif upos == 'X':
+        return 'Forgn'
+    else:
+        return 'Unkwn'
     return upos
 
 
