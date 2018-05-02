@@ -3,11 +3,11 @@ if test -z $srcdir ; then
     echo Use make check or define srcdir
     exit 1
 fi
-fsadir="@top_builddir@/src/generated/"
-conllus="fi_ftb-ud.conllu"
+analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
+conllus="fi_ftb-ud-dev.conllu"
 cs="get-covered.bash"
-if test ! -d "$fsadir" ; then
-    echo Missing $fsadir
+if test ! -r "$analyser" ; then
+    echo Missing $analyser
     exit 77
 fi
 if ! test -x @PYTHON@ ; then
@@ -18,11 +18,13 @@ if test ! -r $conllus ; then
     echo missing $conllus, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -f $fsadir -i $conllus -o omorfi_ftb-ud.conllu -O --hacks=ftb ; then
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -a $analyser \
+        -i $conllus -o omor$conllus -O --hacks=ftb ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/conllu-compare.py -H omorfi_ftb-ud.conllu -r fi_ftb-ud.conllu -l omorfi_ftb-ud.log -t 75 ; then
+if ! @PYTHON@ $srcdir/conllu-compare.py -H omor$conllus -r $conllus \
+        -l omorfi_ftb-ud.log -t 75 ; then
     echo We missed the target of 75 % conllu matches
     exit 1
 fi
