@@ -33,7 +33,7 @@ I hear all the cool kids wear these things these days, sure they are much nicer
 than w3c validator stamps:
 
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
-[![Coverage Status](https://coveralls.io/repos/github/flammie/omorfi/badge.svg?branch=master)](https://coveralls.io/github/flammie/omorfi?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/flammie/omorfi/badge.svg?branch=master)](https://coveralls.io/github/flammie/omorfi?branch=feature/coveralls)
 
 ## Downloading and further information
 
