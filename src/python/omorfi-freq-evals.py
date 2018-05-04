@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Test sort | uniq -c | sort -nr'd gold analysis data for faithfulness
