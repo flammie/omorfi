@@ -37,12 +37,16 @@ def main():
                    help="if coverage is less than THOLD exit with error")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.analyser:
-        if options.verbose:
-            print("reading analyser from", options.analyser)
-        omorfi.load_analyser(options.analyser)
-    if not options.statfile:
-        options.statfile = stdout
+    try:
+        if options.analyser:
+            if options.verbose:
+                print("reading analyser from", options.analyser)
+            omorfi.load_analyser(options.analyser)
+        if not options.statfile:
+            options.statfile = stdout
+    except IOError:
+        print("Could not process file", options.analyser, file=stderr)
+        exit(2)
     # basic statistics
     covered = 0
     full_matches = 0
@@ -135,7 +139,7 @@ def main():
               no_matches / lines * 100 if lines != 0 else 0,
               no_results / lines * 100 if lines != 0 else 0,
               sep="\t", file=options.statfile)
-    if lines == 0 or (full_matches / lines * 100 < options.threshold):
+    if lines == 0 or (full_matches / lines * 100 < int(options.threshold)):
         print("needs to have", threshold, "% matches to pass regress test\n",
               "please examine", options.outfile.name, "for regressions",
               file=stderr)
