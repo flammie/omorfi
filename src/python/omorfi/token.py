@@ -20,7 +20,7 @@ def is_tokenlist_oov(tokens):
     if len(tokens) == 1 and 'OOV' in tokens[0]:
         return True
 
-def get_lemmas(token):
+def get_lemmas(token, hacks=None):
     require_omor(token)
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
     lemmas = re_lemma.finditer(token['anal'])
@@ -34,7 +34,7 @@ def get_lemmas(token):
         rv += [s]
     # legacy pron hack
     if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
-            get_upos(token) == 'PRON':
+            get_upos(token) == 'PRON' and hacks:
         if rv[0] == 'me':
             rv[0] = 'minä'
         elif rv[0] == 'te':
@@ -89,6 +89,9 @@ def get_ftb_feats(token):
         if key == 'UPOS':
             if value == 'PROPN':
                 rvs += ['Prop']
+            elif value == 'ADV' and token['surf'].endswith("sti"):
+                # This is FTB oddity
+                rvs += ['Pos', 'Man']
             else:
                 continue
         elif key == 'NUM':
@@ -153,7 +156,6 @@ def get_ftb_feats(token):
                 rvs += ['ConNeg']
             elif value == 'NEG':
                 rvs += ['Neg']
-                rvs += ['Act']
         elif key == 'INF':
             if value == 'A':
                 rvs += ['Inf1']
@@ -183,12 +185,16 @@ def get_ftb_feats(token):
                 rvs += ['Ind']
             elif value == 'REFLEXIVE':
                 rvs += ['Refl']
-            elif value in ['COMMA', 'DASH', 'BRACKET',
-                    'ARROW']:
+            elif value == 'DIGIT':
+                rvs += ['Digit']
+            elif value == 'DASH':
+                rvs += ['Dash']
+            elif value in ['COMMA', 'BRACKET',
+                    'ARROW', 'DECIMAL', 'PREFIX', 'SUFFIX']:
                 # not annotated in UD feats:
                 # * punctuation classes
                 continue
-            elif value in ['DECIMAL', 'ROMAN']:
+            elif value == 'ROMAN':
                 # not annotated in UD feats:
                 # * decimal, roman NumType
                 continue
@@ -197,7 +203,8 @@ def get_ftb_feats(token):
                 print("in", token)
                 exit(1)
         elif key == 'NUMTYPE':
-            rvs += [value[0] + value[1:].lower()]
+            if 'Digit' not in rvs:
+                rvs += [value[0] + value[1:].lower()]
         elif key == 'PRONTYPE':
             rvs += [value[0] + value[1:].lower()]
         elif key == 'ADPTYPE':
@@ -213,6 +220,13 @@ def get_ftb_feats(token):
             print("Unhandled", key, '=', value)
             print("in", token)
             exit(1)
+    # post hacks
+    if 'Neg' in rvs and 'Act' in rvs:
+        revs = []
+        for r in rvs:
+            if r != 'Act':
+                revs += [r]
+        rvs = revs
     return rvs
 
 def get_ud_feats(token, hacks=None):
