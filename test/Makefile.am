@@ -1,16 +1,18 @@
 ## Process this file with automake to produce Makefile.in
 
-TESTS=rough-tests.sh scripts-runnable.sh \
+# order in slowness order
+TESTS=rough-tests.sh \
+	  rougher-tests.bash \
+	  scripts-runnable.sh \
+	  regressions.sh \
 	  tools-all-quick.bash \
 	  ftb-3.1-quick-test.bash \
-	  coverages-all-quick.sh \
+	  coverages-all-quick.bash \
+	  coverages-less-quick.bash \
 	  ftb-3.1-test.bash \
 	  conllu-fi-tdt-ud-test.bash \
 	  conllu-fi-ftb-ud-test.sh \
-	  regressions.sh \
-	  vislcg-fi-ud-test.sh \
-	  rougher-tests.bash \
-	  coverages-less-quick.bash
+	  vislcg-fi-ud-test.sh
 XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
