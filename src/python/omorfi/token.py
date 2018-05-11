@@ -802,3 +802,64 @@ def format_xpos_tdt(token):
     else:
         return 'X'
 
+
+def get_line_tokens(line, omorfi):
+    if not line or line == '':
+        return [{'comment': ''}]
+    surfs = omorfi.tokenise(line)
+    first_in_sent = True
+    for surf in surfs:
+        if first_in_sent and surf["surf"][0].isupper():
+            if "analsurf" not in surf or surf['analsurf'][0].isupper():
+                surf['analsurf_override'] = surf['surf'][0].lower() + \
+                        surf['surf'][1:]
+                first_in_sent = False
+    return surfs
+
+def get_line_tokens_vislcg(line, prev = {}):
+    line = line.rstrip()
+    if not line or line == '':
+        return [{'comment': ''}]
+    elif line.startswith("#") or line.startswith("<"):
+        return [{'comment': line.strip()}]
+    elif line.startswith('"<') and line.endswith('>"'):
+        surf = {'surf': line[2:-2]}
+        if prev and 'comment' in prev and (prev['comment'] == '' or \
+                prev['comment'].startswith('#') or \
+                prev['comment'].startswith('<')) and \
+                surf['surf'][0].isupper():
+            surf['analsurf_override'] = surf['surf'][0].lower() + \
+                    surf['surf'][1:]
+        return [surf]
+    elif line.startswith('\t"') or line.startswith(';\t"'):
+        # gold?
+        return [{'comment': line}]
+    else:
+        return [{'error': 'vislcg parsing: ' + line}]
+
+def get_line_tokens_conllu(line, prev = {}):
+    if not line or line.strip() == '':
+        return [{'comment': ''}]
+    elif line.startswith('#'):
+        return [{'comment': line.strip()}]
+    elif len(line.split('\t')) == 10:
+        fields = line.strip().split('\t')
+        token = {}
+        try:
+            index = int(fields[0])
+        except ValueError:
+            if '-' in fields[0]:
+                # MWE
+                token['conllu_form'] = 'mwe'
+            elif '.' in fields[0]:
+                # a ghost
+                token['conllu_form'] = 'ghost'
+            else:
+                print(
+                    "Cannot figure out token index", fields[0], file=stderr)
+                exit(1)
+        token['surf'] = fields[1]
+        return [token]
+    else:
+        return [{'error': 'conllu parsing: ' + line}]
+
