@@ -100,6 +100,9 @@ def main():
                 if lemma == lemma_ftb3:
                     found_lemma = True
                     print("LEMMAHIT", lemma, lemma_ftb3, file=options.outfile)
+                elif lemma.replace('#', '') == lemma_ftb3.replace('#', ''):
+                    found_lemma = True
+                    print("LEMMARECOMP", lemma, lemma_ftb3, file=options.outfile)
                 else:
                     print("LEMMAMISS", lemma, lemma_ftb3, file=options.outfile)
         if not found_anals and not found_lemma:
