@@ -84,7 +84,6 @@ def main():
             print("OOV", surf, sep='\t', file=options.outfile)
         found_anals = False
         found_lemma = False
-        print_in = True
         for anal in anals:
             if options.format == 'ftb3.1':
                 anal_ftb3 = format_feats_ftb(anal)
@@ -105,21 +104,22 @@ def main():
                     print("LEMMARECOMP", lemma, lemma_ftb3, file=options.outfile)
                 else:
                     print("LEMMAMISS", lemma, lemma_ftb3, file=options.outfile)
-        if not found_anals and not found_lemma:
-            no_matches += freq
-            print("MISS", surf, sep='\t', file=options.outfile)
-        elif found_anals and found_lemma:
-            print("HIT", surf, sep='\t', file=options.outfile)
-            full_matches += freq
-        elif not found_anals:
-            anal_matches += freq
-            print("LEMMANOANAL", surf, sep='\t', file=options.outfile)
-        elif not found_lemma:
-            lemma_matches += freq
-            print("ANALNOLEMMA", surf, sep='\t', file=options.outfile)
-        else:
-            print("Logical error, kill everyone")
-            exit(13)
+        if options.format != 'coverage':
+            if not found_anals and not found_lemma:
+                no_matches += freq
+                print("MISS", surf, sep='\t', file=options.outfile)
+            elif found_anals and found_lemma:
+                print("HIT", surf, sep='\t', file=options.outfile)
+                full_matches += freq
+            elif not found_anals:
+                anal_matches += freq
+                print("LEMMANOANAL", surf, sep='\t', file=options.outfile)
+            elif not found_lemma:
+                lemma_matches += freq
+                print("ANALNOLEMMA", surf, sep='\t', file=options.outfile)
+            else:
+                print("Logical error, kill everyone")
+                exit(13)
     realend = perf_counter()
     cpuend = process_time()
     print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
@@ -142,8 +142,19 @@ def main():
               no_matches / lines * 100 if lines != 0 else 0,
               no_results / lines * 100 if lines != 0 else 0,
               sep="\t", file=options.statfile)
-    if lines == 0 or (full_matches / lines * 100 < int(options.threshold)):
+    if lines == 0:
+        print("Needs more than 0 lines to determine something",
+              file=stderr)
+        exit(2)
+    elif options.format == 'ftb3.1' and \
+            (full_matches / lines * 100 <= int(options.threshold)):
         print("needs to have", threshold, "% matches to pass regress test\n",
+              "please examine", options.outfile.name, "for regressions",
+              file=stderr)
+        exit(1)
+    elif options.format == 'coverage' and \
+            (covered / lines * 100 <= int(options.threshold)):
+        print("needs to have", threshold, "% coverage to pass regress test\n",
               "please examine", options.outfile.name, "for regressions",
               file=stderr)
         exit(1)
