@@ -80,7 +80,7 @@ def main():
             surfs = get_line_tokens_conllu(line, last)
         else:
             print("input format missing implementation", options.format,
-                file=stderr)
+                  file=stderr)
             exit(2)
         for surf in surfs:
             if 'conllu_form' in surf:
