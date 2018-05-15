@@ -23,7 +23,9 @@ def is_tokenlist_oov(tokens):
 def get_lemmas(token, hacks=None):
     require_omor(token)
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    lemmas = re_lemma.finditer(token['anal'])
+    escanal = token['anal'].replace('[WORD_ID=]]',
+            '[WORD_ID=@RIGHTSQUAREBRACKET@]')
+    lemmas = re_lemma.finditer(escanal)
     rv = []
     for lemma in lemmas:
         s = lemma.group(1)
@@ -31,6 +33,8 @@ def get_lemmas(token, hacks=None):
             hnsuf = '_' + str(i)
             if s.endswith(hnsuf):
                 s = s[:-len(hnsuf)]
+        if s == '@RIGHTSQUAREBRACKET@':
+            s= ']'
         rv += [s]
     # legacy pron hack
     if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
@@ -108,7 +112,7 @@ def get_ftb_feats(token):
             if value == 'INDV':
                 continue
             elif value == 'COND':
-                rvs += ['Cnd']
+                rvs += ['Cond']
             elif value == 'IMPV':
                 rvs += ['Imp']
             else:
@@ -182,15 +186,20 @@ def get_ftb_feats(token):
             elif value == 'QUOTATION':
                 rvs += ['Quote']
             elif value == 'QUANTIFIER':
-                rvs += ['Ind']
+                rvs += ['Qnt']
             elif value == 'REFLEXIVE':
                 rvs += ['Refl']
             elif value == 'DIGIT':
                 rvs += ['Digit']
             elif value == 'DASH':
-                rvs += ['Dash']
+                if token['surf'] == '—':
+                    rvs += ['EmDash']
+                elif token['surf'] == '–':
+                    rvs += ['EnDash']
+                else:
+                    rvs += ['Dash']
             elif value in ['COMMA', 'BRACKET',
-                    'ARROW', 'DECIMAL', 'PREFIX', 'SUFFIX']:
+                           'ARROW', 'DECIMAL', 'PREFIX', 'SUFFIX']:
                 # not annotated in UD feats:
                 # * punctuation classes
                 continue
@@ -206,11 +215,30 @@ def get_ftb_feats(token):
             if 'Digit' not in rvs:
                 rvs += [value[0] + value[1:].lower()]
         elif key == 'PRONTYPE':
-            rvs += [value[0] + value[1:].lower()]
+            if value == 'PRS':
+                rvs += ['Pers']
+            else:
+                rvs += [value[0] + value[1:].lower()]
         elif key == 'ADPTYPE':
-            rvs += [value[0] + value[1:].lower()]
+            if value == 'POST':
+                rvs += ['Po']
+            elif value == 'PREP':
+                rvs += ['Pr']
+            else:
+                print("Unknown adptype", value)
+                print("in", token)
+                exit(1)
         elif key == 'CLIT':
             rvs += [value[0] + value[1:].lower()]
+        elif key == 'ABBR':
+            rvs += ['Abbr']
+        elif key == 'DRV':
+            if value in ['NUT', 'VA']:
+                rvs += ['Act']
+            elif value in ['TU', 'TAVA']:
+                rvs += ['Pass']
+            else:
+                continue
         elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                      'GUESS', 'PROPER', 'SEM', 'CONJ', 'BOUNDARY',
                      'PCP', 'DRV', 'LEX', 'BLACKLIST', 'STYLE', 'ABBR',
@@ -225,6 +253,24 @@ def get_ftb_feats(token):
         revs = []
         for r in rvs:
             if r != 'Act':
+                revs += [r]
+        rvs = revs
+    elif 'Abbr' in rvs:
+        revs = []
+        for r in rvs:
+            if r not in ['N', 'Prop']:
+                revs += [r]
+        rvs = revs
+    elif 'Inf1' in rvs:
+        revs = []
+        for r in rvs:
+            if r not in ['Act', 'Pl', 'Sg']:
+                revs += [r]
+        rvs = revs
+    elif 'Pers' in rvs:
+        revs = []
+        for r in rvs:
+            if r not in ['Pl1', 'Sg1', 'Pl2', 'Sg2', 'Pl3', 'Sg3']:
                 revs += [r]
         rvs = revs
     return rvs
@@ -341,13 +387,17 @@ def get_ud_feats(token, hacks=None):
                 # not annotated in UD feats:
                 # * punctuation classes
                 continue
-            elif value in ['DECIMAL', 'ROMAN']:
+            elif value in ['DECIMAL', 'ROMAN', 'DIGIT']:
+                # not annotated in UD feats:
+                # * decimal, roman NumType
+                continue
+            elif value in ['PREFIX', 'SUFFIX']:
                 # not annotated in UD feats:
                 # * decimal, roman NumType
                 continue
             else:
                 print("Unhandled subcat: ", value)
-                print("in", analtoken)
+                print("in", token)
                 exit(1)
         elif key == 'ABBR':
             # XXX?
@@ -375,7 +425,7 @@ def get_ud_feats(token, hacks=None):
                 continue
             else:
                 print("Unknown style", value)
-                print("in", analtoken)
+                print("in", token)
                 exit(1)
         elif key in ['DRV', 'LEX']:
             if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
@@ -770,13 +820,13 @@ def format_xpos_ftb(token):
     elif upos == 'ADJ':
         return 'A'
     elif upos in ['VERB', 'AUX']:
-        pcp = get_last_feat('PCP', token)
+        pcp = get_last_feat('DRV', token)
         if pcp:
-            if pcp == 'NUT':
+            if pcp in ['NUT', 'TU']:
                 return 'PrfPrc'
             elif pcp == 'MA':
                 return 'AgPrc'
-            elif pcp == 'VA':
+            elif pcp in ['VA', 'TAVA']:
                 return 'PrsPrc'
             elif pcp == 'NEG':
                 return 'NegPrc'
@@ -799,6 +849,8 @@ def format_xpos_ftb(token):
         return 'Interj'
     elif upos == 'NUM':
         return 'Num'
+    elif upos == 'DET':
+        return 'Pron'
     elif upos == 'X':
         return 'Forgn'
     else:
