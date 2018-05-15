@@ -122,14 +122,11 @@ class Omorfi:
         self.can_udpipe = False
 
     def load_hfst(self, f):
-        if access(f, F_OK):
+        try:
             his = libhfst.HfstInputStream(f)
-        else:
-            # FIXME: should fail
-            if self._verbosity:
-                print('No access to ', path, file=stderr)
-            pass
-        return his.read()
+            return his.read()
+        except libhfst.NotTransducerStreamException:
+            raise IOError
 
 
     def load_labelsegmenter(self, f):

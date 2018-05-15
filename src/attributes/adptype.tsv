@@ -1,4 +1,5 @@
 lemma	homonym	adptype
+aikana	1	postposition
 alapuolella	1	postposition
 alapuolella	2	postposition
 alla	1	postposition
@@ -54,6 +55,7 @@ mennessä	2	postposition
 muassa	1	postposition
 mukaan	1	postposition
 mukaan	2	preposition
+mukaisesti	2	postposition
 mukana	1	postposition
 mukana	2	preposition
 myöten	1	postposition
@@ -63,11 +65,13 @@ nähden	1	postposition
 ohella	1	postposition
 ohitse	1	postposition
 ohitse	2	postposition
+osalta	1	postposition
 paikallaan	1	preposition
 pariin	1	postposition
 pariin	2	postposition
 parissa	1	postposition
 parista	1	postposition
+perusteella	1	postposition
 perään	1	postposition
 perään	2	postposition
 puitteissa	1	postposition
