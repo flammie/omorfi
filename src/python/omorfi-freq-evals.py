@@ -88,6 +88,8 @@ def main():
             if options.format == 'ftb3.1':
                 anal_ftb3 = format_feats_ftb(anal)
                 lemma_ftb3 = '#'.join(get_lemmas(anal))
+                # hacks ftb3:
+                analysis = analysis.replace(" >>>", "")
                 if analysis == anal_ftb3:
                     found_anals = True
                     print("ANALHIT", analysis, anal_ftb3, file=options.outfile)
@@ -107,7 +109,7 @@ def main():
         if options.format != 'coverage':
             if not found_anals and not found_lemma:
                 no_matches += freq
-                print("MISS", surf, sep='\t', file=options.outfile)
+                print("NOHITS!", surf, sep='\t', file=options.outfile)
             elif found_anals and found_lemma:
                 print("HIT", surf, sep='\t', file=options.outfile)
                 full_matches += freq
