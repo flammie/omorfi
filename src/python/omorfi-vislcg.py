@@ -13,18 +13,11 @@ from time import perf_counter, process_time
 from omorfi.omorfi import Omorfi
 from omorfi.token import get_lemmas, \
         get_vislcg_feats, get_line_tokens, get_line_tokens_vislcg, \
-        get_line_tokens_conllu
+        get_line_tokens_conllu, format_analyses_vislcg
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print('"<', surf['surf'], '>"', sep='', file=outfile)
-    re_mrd = re.compile("\[([^=]*)=([^]]*)]")
-    for anal in anals:
-        lemmas = get_lemmas(anal)
-        mrds = get_vislcg_feats(anal)
-        print('\t"', '#'.join(lemmas), '" ',
-              ' '.join(mrds), ' <CMP=' + str(len(lemmas)) + '>',
-              sep='', file=outfile)
+    print(format_analyses_vislcg(surf, anals), file=outfile)
 
 def main():
     """Invoke a simple CLI analyser."""

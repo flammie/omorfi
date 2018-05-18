@@ -432,6 +432,9 @@ def get_vislcg_feats(token):
         vislcgs += ["<L=" + str(int(float(token['weight']) * 1000)) + ">"]
     if "guess" in token:
         vislcgs += ["<Heur?>", "<Guesser_" + token['guess'] + ">"]
+    # number of compound parts in compound is a good CG numeric feature!!
+    lemmas = get_lemmas(token)
+    vislcgs += ['<CMP=' + str(len(lemmas)) + '>']
     return vislcgs
 
 
@@ -862,4 +865,12 @@ def get_line_tokens_conllu(line, prev = {}):
         return [token]
     else:
         return [{'error': 'conllu parsing: ' + line}]
+
+def format_analyses_vislcg(surf, anals):
+    vislcg = '"<' + surf['surf'] + '>"\n'
+    for anal in anals:
+        mrds = get_vislcg_feats(anal)
+        lemmas = get_lemmas(anal)
+        vislcg += '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds) + '\n'
+    return vislcg
 
