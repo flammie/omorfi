@@ -35,17 +35,21 @@ DELIMITERS = "<.>" "<!>" "<?>" ;
 
 SETS
 
-# grammar groups
+# {{{ grammar groups
+## Nominal poses
 LIST NOMINAL = NOUN ADJ PRON PROPN ;
+## Clitic particle tags
 LIST CLITIC = HAN KO PA S KA KAAN KIN ;
+## Conjunctions
 LIST CONJUNCTION = CCONJ SCONJ ;
+## any vebs
 LIST VERBAUX = VERB AUX ;
-LIST DERIVATIONS = <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U>
-    <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> <DRV_ISA> <DRV_TAVA> ;
-# sentences and clauses
+# }}}
+# {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
-# words
+# }}}
+# {{{ words
 
 ## short words that many find problems with
 LIST BADEVIL_WORDS =
@@ -78,28 +82,50 @@ LIST RARER_PROPN =
     ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN)
     ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ("Tu" PROPN)
     ("Vä" PROPN) ("Vähä" PROPN) ;
+## the words where 2nd person singular possessives overlap with e.g. past
+## 3rd person singular e.g. "voisi" = {your butter(s), he could},
+## "tiesi" = {your roads, he knew} but also: "kuusi" = {your moon(s),
+## six}
 LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2)
     ("tunti" POSSSG2) ("lupa" POSSSG2) ("rupi" POSSSG2) ("hai" POSSSG2)
     ("taju" POSSSG2) ("pyy" POSSSG2) ("kerä" POSSSG2) ("vasta" POSSSG2)
     ("pää" POSSSG2) ("harja" POSSSG2) ("vuo" POSSSG2) ("pää" POSSSG2);
+## "siitä" = {to conceive, from it}
 LIST SIITTÄÄ-VERBS = ("siittää" VERB) ("siitä" VERB) ("si’itä" VERB) ;
 LIST SIITÄ-DEM = ("se" PRON) ("se" DET) ;
+## "sinun" = yours
 LIST SINUN = ("sinä" SG GEN) ;
+## ja ADV is spoken
 LIST JA-ADV = ("ja" ADV) ;
+## van Houten, etc.
 LIST VAN-PROPN = ("van" PROPN) ;
+## Helsingin = {Helsinki’s, Helsing’s}
 LIST HELSING-PROPN = ("Helsing" PROPN) ;
+## spoken
 LIST ETTÄ-INTJ = ("että" INTJ) ;
+## sekä - että is paired cconj, otherwise että sconj
 LIST SEKÄ-CCONJ = ("sekä" CCONJ) ;
 LIST ETTÄ-CCONJ = ("että" CCONJ) ;
+## niiden {niisi’s, theirs} (I dunno what niisi is)
 LIST NIISI-NOUN = ("niisi" NOUN) ;
+## ensin {first, some odd verb that doesn't really go with 1sg}
 LIST ENTÄÄ-VERB = ("entää" VERB) ;
 LIST ENSIN-ADV = ("ensin" ADV) ;
+## nainen {female, I might marry/fuck}
 LIST NAINEN-VERB = ("naida" VERB POTN) ;
-# secondaries
+# }}}
+# {{{ secondaries
+## we have these tags when analyser doesn't match the case
 LIST RECASED = <*LOWERCASED> <*UPPERCASED> <*TITLECASED> <*DETITLECASED> ;
+## generic weight = approximate log prob of some linear combo
 LIST MIN-WEIGHT = <W=MIN> ;
+## we count compound boundaries
 LIST MIN-COMPOUND = <CMP=MIN> ;
+## tags for known wrong or odd stuff
 LIST NONSTANDARDS = <STYLE_ARCHAIC> <STYLE_DIALECTAL> <STYLE_NONSTANDARD> ;
+## derivations
+LIST DERIVATIONS = <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U>
+    <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> <DRV_ISA> <DRV_TAVA> ;
 
 
 BEFORE-SECTIONS
@@ -131,9 +157,10 @@ REMOVE:sekä-että-cconj ETTÄ-CCONJ (NOT -1* SEKÄ-CCONJ) ;
 ##! € näitkö sen uuden van Helsingin episodin?
 REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 
-##! pulloissa on vanhan näköiset etiketit
+##! € pulloissa on vanhan näköiset etiketit
 REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 PROPN) ;
 
+##! € nainen on kuin morsian
 REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 
 ##! € en oo sitä nähny
@@ -141,12 +168,14 @@ REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 ##! € ole hiljaa
 REMOVE:conneg-needs-neg CONNEG (NEGATE -1* NEG BARRIER CONNEG) ;
 
+##! € niiden pitää tulla myös
 REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
 
 ##! € siitä en tiedä mitään
 ##! $ siitä maailma täyteen lapsia
 REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
 
+##! € ensin syödään sitten vasta mennään
 REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
 
 SECTION # last-resorts
