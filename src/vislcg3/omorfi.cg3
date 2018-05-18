@@ -26,9 +26,12 @@ STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ N
     HAN KO PA S KA KAAN KIN
     ORD CARD
     NEG CONNEG
+    PCPNUT PCPVA
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN>
     <DRV_MA> <DRV_JA> <DRV_NEN>
-    <STYLE_DIALECTAL> <STYLE_ARCHAIC> <STYLE_NONSTANDARD> ;
+    <STYLE_DIALECTAL> <STYLE_ARCHAIC> <STYLE_NONSTANDARD>
+    <*lowercased> <*UPPERCASED> <*TitleCased> <*dETITLECASED>
+    <**PROPN-BLOCKING> ;
 OPTIONS += no-inline-sets ;
 
 DELIMITERS = "<.>" "<!>" "<?>" ;
@@ -44,6 +47,8 @@ LIST CLITIC = HAN KO PA S KA KAAN KIN ;
 LIST CONJUNCTION = CCONJ SCONJ ;
 ## any vebs
 LIST VERBAUX = VERB AUX ;
+## copula?
+LIST COPULA = ("olla" AUX) ;
 # }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
@@ -116,7 +121,9 @@ LIST NAINEN-VERB = ("naida" VERB POTN) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
-LIST RECASED = <*LOWERCASED> <*UPPERCASED> <*TITLECASED> <*DETITLECASED> ;
+LIST RECASED = <*lowercased> <*UPPERCASED> <*TitleCased> <*dETITLECASED> ;
+## we have some blacklists
+LIST BLACKLISTED = <**PROPN-BLOCKING> ;
 ## generic weight = approximate log prob of some linear combo
 LIST MIN-WEIGHT = <W=MIN> ;
 ## we count compound boundaries
@@ -178,6 +185,10 @@ REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
 ##! € ensin syödään sitten vasta mennään
 REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
 
+##! € poliisilla on ollut etsintäatehtävä
+##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa
+SELECT:perfect-tense PCPNUT (-1* COPULA BARRIER VERBAUX) ;
+
 SECTION # last-resorts
 
 REMOVE:rare-propn-shadows-commons RARER_PROPN ;
@@ -190,5 +201,6 @@ SELECT:probably MIN-WEIGHT ;
 REMOVE:avoid-instructives INS (NOT 0 VERB + INFE) ;
 REMOVE:avoid-abessives ABE (NOT 0 VERB + INFMA) ;
 REMOVE:avoid-clitics CLITIC ;
+REMOVE:blacklists BLACKLISTED ;
 
 # vim: set ft=vislcg3:
