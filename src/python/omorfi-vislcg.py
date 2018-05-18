@@ -11,53 +11,13 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi.omorfi import Omorfi
-from omorfi.token import get_lemmas, get_last_feat, get_last_feats, \
-        get_vislcg_feats
+from omorfi.token import get_lemmas, \
+        get_vislcg_feats, get_line_tokens, get_line_tokens_vislcg, \
+        get_line_tokens_conllu, format_analyses_vislcg
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print('"<', surf['surf'], '>"', sep='', file=outfile)
-    re_mrd = re.compile("\[([^=]*)=([^]]*)]")
-    for anal in anals:
-        lemmas = get_lemmas(anal)
-        mrds = get_vislcg_feats(anal)
-        print('\t"', '#'.join(lemmas), '" ',
-              ' '.join(mrds), ' <CMP=' + str(len(lemmas)) + '>',
-              sep='', file=outfile)
-
-def get_surfs(line, omorfi):
-    if not line or line == '':
-        return [{'comment': ''}]
-    surfs = omorfi.tokenise(line)
-    first_in_sent = True
-    for surf in surfs:
-        if first_in_sent and surf["surf"][0].isupper():
-            if "analsurf" not in surf or surf['analsurf'][0].isupper():
-                surf['analsurf_override'] = surf['surf'][0].lower() + \
-                        surf['surf'][1:]
-                first_in_sent = False
-    return surfs
-
-def get_vislcg_surfs(line, prev):
-    line = line.rstrip()
-    if not line or line == '':
-        return [{'comment': ''}]
-    elif line.startswith("#") or line.startswith("<"):
-        return [{'comment': line.strip()}]
-    elif line.startswith('"<') and line.endswith('>"'):
-        surf = {'surf': line[2:-2]}
-        if prev and 'comment' in prev and (prev['comment'] == '' or \
-                prev['comment'].startswith('#') or \
-                prev['comment'].startswith('<')) and \
-                surf['surf'][0].isupper():
-            surf['analsurf_override'] = surf['surf'][0].lower() + \
-                    surf['surf'][1:]
-        return [surf]
-    elif line.startswith('\t"') or line.startswith(';\t"'):
-        # gold?
-        return [{'comment': line}]
-    else:
-        return [{'error': 'vislcg parsing: ' + line}]
+    print(format_analyses_vislcg(surf, anals), file=outfile)
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -72,7 +32,7 @@ def main():
                    help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-F', '--format', metavar="INFORMAT", default='text',
                    help="read input using INFORMAT tokenisation",
-                   choices=['text', 'vislcg'])
+                   choices=['text', 'vislcg', 'conllu'])
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
                    help="print statistics to STATFILE", type=FileType('w'))
     options = a.parse_args()
@@ -106,15 +66,21 @@ def main():
     for line in options.infile:
         surfs = []
         if options.format == 'vislcg':
-            surfs = get_vislcg_surfs(line, last)
+            surfs = get_line_tokens_vislcg(line, last)
         elif options.format == 'text':
-            surfs = get_surfs(line, omorfi)
+            surfs = get_line_tokens(line, omorfi)
+        elif options.format == 'conllu':
+            surfs = get_line_tokens_conllu(line, last)
         else:
             print("input format missing implementation", options.format,
-                file=stderr)
+                  file=stderr)
             exit(2)
         for surf in surfs:
-            if 'surf' in surf:
+            if 'conllu_form' in surf:
+                # skip conllu special forms in input for now:
+                # (ellipsis and MWE magics)
+                continue
+            elif 'surf' in surf:
                 tokens += 1
                 anals = omorfi.analyse(surf)
                 if len(anals) == 0 or (len(anals) == 1 and
