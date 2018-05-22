@@ -27,10 +27,11 @@ STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ N
     ORD CARD
     NEG CONNEG
     PCPNUT PCPVA
+    SG1 SG2 SG3 PL1 PL2 PL3 SG0
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN>
     <DRV_MA> <DRV_JA> <DRV_NEN>
     <STYLE_DIALECTAL> <STYLE_ARCHAIC> <STYLE_NONSTANDARD>
-    <*lowercased> <*UPPERCASED> <*TitleCased> <*dETITLECASED>
+    <*lowercased> <*UPPERCASED> <*Titlecased> <*dETITLECASED>
     <**PROPN-BLOCKING> ;
 OPTIONS += no-inline-sets ;
 
@@ -86,7 +87,20 @@ LIST RARER_PROPN =
     ("Kello" PROPN) ("Kuppi" PROPN) ("Mutta" PROPN) ("Yhtiö" PROPN)
     ("Ka" PROPN) ("Kutsu" PROPN) ("Teos" PROPN) ("Teema" PROPN)
     ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ("Tu" PROPN)
-    ("Vä" PROPN) ("Vähä" PROPN) ;
+    ("Vä" PROPN) ("Vähä" PROPN) ("Karta" PROPN) ("Silta" PROPN) 
+    ("Onni" PROPN) ("Joki" PROPN) ("Muuri" PROPN) ("Vuo" PROPN)
+    ("Vuoksi" PROPN) ("Kiva" PROPN) ("Miele" PROPN) ;
+## adverbs that are rarer than adp or noun counterparts. also some
+## questionable advs that should've been intjs
+LIST RARER-ADV =
+    ("kuin" ADV) ("kun" ADV) ;
+## adps that are rarer than adv or noun counterparts
+## prefer ADPS-WITH-CASE over RARER-ADP
+LIST RARER-ADP =
+    ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ;
+## Adpositions by their complement
+LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ;
+LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) ;
 ## the words where 2nd person singular possessives overlap with e.g. past
 ## 3rd person singular e.g. "voisi" = {your butter(s), he could},
 ## "tiesi" = {your roads, he knew} but also: "kuusi" = {your moon(s),
@@ -111,6 +125,9 @@ LIST ETTÄ-INTJ = ("että" INTJ) ;
 ## sekä - että is paired cconj, otherwise että sconj
 LIST SEKÄ-CCONJ = ("sekä" CCONJ) ;
 LIST ETTÄ-CCONJ = ("että" CCONJ) ;
+## niin - kuin is paired cconj
+LIST NIIN-CCONJ = ("niin" CCONJ) ;
+LIST KUIN-CCONJ = ("kuin" CCONJ) ;
 ## niiden {niisi’s, theirs} (I dunno what niisi is)
 LIST NIISI-NOUN = ("niisi" NOUN) ;
 ## ensin {first, some odd verb that doesn't really go with 1sg}
@@ -118,10 +135,16 @@ LIST ENTÄÄ-VERB = ("entää" VERB) ;
 LIST ENSIN-ADV = ("ensin" ADV) ;
 ## nainen {female, I might marry/fuck}
 LIST NAINEN-VERB = ("naida" VERB POTN) ;
+## vähän = a little either adv or adj gen
+LIST VÄHÄN-ADV = ("vähän" ADV) ;
+LIST VÄHÄ-ADJ = ("vähä" ADJ) ;
+## vaikka mitä
+LIST VAIKKA-ADV = ("vaikka" ADV) ;
+LIST MIKÄ-PRON = ("mikä" PRON) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
-LIST RECASED = <*lowercased> <*UPPERCASED> <*TitleCased> <*dETITLECASED> ;
+LIST RECASED = <*lowercased> <*UPPERCASED> <*Titlecased> <*dETITLECASED> ;
 ## we have some blacklists
 LIST BLACKLISTED = <**PROPN-BLOCKING> ;
 ## generic weight = approximate log prob of some linear combo
@@ -130,16 +153,16 @@ LIST MIN-WEIGHT = <W=MIN> ;
 LIST MIN-COMPOUND = <CMP=MIN> ;
 ## tags for known wrong or odd stuff
 LIST NONSTANDARDS = <STYLE_ARCHAIC> <STYLE_DIALECTAL> <STYLE_NONSTANDARD> ;
-## derivations
-LIST DERIVATIONS = <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U>
-    <DRV_MINEN> <DRV_MA> <DRV_JA> <DRV_NEN> <DRV_ISA> <DRV_TAVA> ;
+## derivations (apart from the near-inflectional)
+LIST DERIVATIONS = <DRV_LA> <DRV_U> <DRV_MINEN> <DRV_JA> <DRV_NEN>
+    <DRV_ISA> <DRV_TAVA> ;
 
 
 BEFORE-SECTIONS
 
 REMOVE:bad-words BADEVIL_WORDS ;
 
-SECTION # all stuff
+SECTION # words minimal context
 
 # UD preferences
 
@@ -159,6 +182,8 @@ REMOVE:ja-adv JA-ADV (NOT 1 ENDSENT) ;
 REMOVE:että-intj ETTÄ-INTJ (NOT -1 INTJ) ;
 ##! $ oli siellä sekä kaljaa että apinoita.
 REMOVE:sekä-että-cconj ETTÄ-CCONJ (NOT -1* SEKÄ-CCONJ) ;
+##! $ oli siellä niin kaljaa kuin apinoitakin.
+REMOVE:niin-kuin-cconj NIIN-CCONJ (NOT 1* KUIN-CCONJ) ;
 
 ##! $ Helsingissä on lunta
 ##! € näitkö sen uuden van Helsingin episodin?
@@ -170,10 +195,9 @@ REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 PROPN) ;
 ##! € nainen on kuin morsian
 REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 
-##! € en oo sitä nähny
-##! € en tule
-##! € ole hiljaa
-REMOVE:conneg-needs-neg CONNEG (NEGATE -1* NEG BARRIER CONNEG) ;
+##! € kun rahaa ei ole, löytää vaikka mitä
+##! $ vaikka rahaa ei ole, löytää sitä
+REMOVE:vaikka-mitä VAIKKA-ADV (NEGATE 1 MIKÄ-PRON) ;
 
 ##! € niiden pitää tulla myös
 REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
@@ -185,9 +209,26 @@ REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
 ##! € ensin syödään sitten vasta mennään
 REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
 
+##! € he joivat vähän vettä
+SELECT:vähän-adv VÄHÄN-ADV (0 VÄHÄ-ADJ) ;
+
+SECTION # grammar and context
+
+##! € en oo sitä nähny
+##! € en tule
+##! € ole hiljaa
+REMOVE:conneg-needs-neg CONNEG (NEGATE -1* NEG BARRIER CONNEG) ;
+
 ##! € poliisilla on ollut etsintäatehtävä
 ##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa
 SELECT:perfect-tense PCPNUT (-1* COPULA BARRIER VERBAUX) ;
+
+##! €
+SELECT:adp-gen-complements ADPS-WITH-GEN (-1* GEN BARRIER ADP) (1* GEN BARRIER ADP) ;
+SELECT:adp-par-complements ADPS-WITH-PAR (-1* PAR BARRIER ADP) (1* PAR BARRIER ADP) ;
+
+##! €
+REMOVE:det-needs-np DET (NEGATE 1 NOMINAL) ;
 
 SECTION # last-resorts
 
@@ -202,5 +243,5 @@ REMOVE:avoid-instructives INS (NOT 0 VERB + INFE) ;
 REMOVE:avoid-abessives ABE (NOT 0 VERB + INFMA) ;
 REMOVE:avoid-clitics CLITIC ;
 REMOVE:blacklists BLACKLISTED ;
-
+REMOVE:avoid-sg0 SG0 ;
 # vim: set ft=vislcg3:
