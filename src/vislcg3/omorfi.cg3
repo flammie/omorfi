@@ -29,7 +29,9 @@ STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ N
     PCPNUT PCPVA
     SG1 SG2 SG3 PL1 PL2 PL3 SG0
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN>
-    <DRV_MA> <DRV_JA> <DRV_NEN>
+    <DRV_MA> <DRV_JA> <DRV_NEN> <DRV_STI>
+    <LEX_STI>
+    <POSITION_FINAL> <POSITION_INITIAL>
     <STYLE_DIALECTAL> <STYLE_ARCHAIC> <STYLE_NONSTANDARD>
     <*lowercased> <*UPPERCASED> <*Titlecased> <*dETITLECASED>
     <**PROPN-BLOCKING> ;
@@ -89,7 +91,8 @@ LIST RARER_PROPN =
     ("Puute" PROPN) ("Soi" PROPN) ("Hakkuu" PROPN) ("Tu" PROPN)
     ("Vä" PROPN) ("Vähä" PROPN) ("Karta" PROPN) ("Silta" PROPN) 
     ("Onni" PROPN) ("Joki" PROPN) ("Muuri" PROPN) ("Vuo" PROPN)
-    ("Vuoksi" PROPN) ("Kiva" PROPN) ("Miele" PROPN) ;
+    ("Vuoksi" PROPN) ("Kiva" PROPN) ("Miele" PROPN) 
+    ("Maakunta" PROPN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs
 LIST RARER-ADV =
@@ -99,8 +102,15 @@ LIST RARER-ADV =
 LIST RARER-ADP =
     ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ;
 ## Adpositions by their complement
-LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ;
-LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) ;
+LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) ;
+LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) 
+    ("alla" ADP) ;
+## Verbs with inf
+LIST VERBS-WITH-INFA = ("alkaa" AUX) ("haluta" AUX) ("tahtoa" AUX) ;
+LIST VERBS-WITH-INFMAAN = ("alkaa" AUX) ("päästä" AUX) ("ruveta" AUX) ;
+## numerals that are used nouns too
+LIST NUM-MULTIPLIER = ("puoli" NUM) ("sata" NUM) ("miljoona" NUM) ;
+
 ## the words where 2nd person singular possessives overlap with e.g. past
 ## 3rd person singular e.g. "voisi" = {your butter(s), he could},
 ## "tiesi" = {your roads, he knew} but also: "kuusi" = {your moon(s),
@@ -141,6 +151,9 @@ LIST VÄHÄ-ADJ = ("vähä" ADJ) ;
 ## vaikka mitä
 LIST VAIKKA-ADV = ("vaikka" ADV) ;
 LIST MIKÄ-PRON = ("mikä" PRON) ;
+## häntä {tail, him}
+LIST HÄNTÄ-NOUN = ("häntä" NOUN) ;
+LIST HÄN-PRON = ("hän" PRON) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -155,7 +168,7 @@ LIST MIN-COMPOUND = <CMP=MIN> ;
 LIST NONSTANDARDS = <STYLE_ARCHAIC> <STYLE_DIALECTAL> <STYLE_NONSTANDARD> ;
 ## derivations (apart from the near-inflectional)
 LIST DERIVATIONS = <DRV_LA> <DRV_U> <DRV_MINEN> <DRV_JA> <DRV_NEN>
-    <DRV_ISA> <DRV_TAVA> ;
+    <DRV_ISA> <DRV_TAVA> <DRV_STI> ;
 
 
 BEFORE-SECTIONS
@@ -212,6 +225,10 @@ REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
 ##! € he joivat vähän vettä
 SELECT:vähän-adv VÄHÄN-ADV (0 VÄHÄ-ADJ) ;
 
+##! € he odottivat häntä
+##! $ koira juoksi häntä heiluen
+SELECT:häntä-pron HÄN-PRON (0 HÄNTÄ-NOUN) ;
+
 SECTION # grammar and context
 
 ##! € en oo sitä nähny
@@ -230,8 +247,14 @@ SELECT:adp-par-complements ADPS-WITH-PAR (-1* PAR BARRIER ADP) (1* PAR BARRIER A
 ##! €
 REMOVE:det-needs-np DET (NEGATE 1 NOMINAL) ;
 
+##! € siitä on puoli vuotta
+SELECT:nump-partitive NUM-MULTIPLIER (1 PAR) ;
+
 SECTION # last-resorts
 
+SELECT:final-needs-initial <POSITION_FINAL> (-2* <POSITION_INITIAL> BARRIER <POSITION_FINAL>) ;
+SELECT:initial-needs-final <POSITION_INITIAL> (2* <POSITION_FINAL> BARRIER <POSITION_INITIAL>) ;
+REMOVE:lexicalised-over-derived-sti <DRV_STI> (0 <LEX_STI>) ;
 REMOVE:rare-propn-shadows-commons RARER_PROPN ;
 SELECT:prefer-punct-over-sym PUNCT (0 SYM);
 REMOVE:prefer-standard NONSTANDARDS ;
