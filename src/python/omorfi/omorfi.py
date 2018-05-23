@@ -578,52 +578,56 @@ class Omorfi:
             s = token['surf']
             if len(s) > 2 and s[0].islower() and self.try_titlecase:
                 tcs = s[0].upper() + s[1:].lower()
-                tcres = self.analyser.lookup(tcs)
-                for r in tcres:
-                    tctoken = token.copy()
-                    tctoken['recase'] = 'Titlecased'
-                    tctoken['analsurf'] = tcs
-                    tctoken['anal'] = r[0] + \
-                        '[CASECHANGE=TITLECASED][WEIGHT=%f]' % (r[1] +
-                                self._penalty)
-                    tctoken["weight"] = r[1] + self._penalty
-                    rv.append(tctoken)
+                if tcs != s:
+                    tcres = self.analyser.lookup(tcs)
+                    for r in tcres:
+                        tctoken = token.copy()
+                        tctoken['recase'] = 'Titlecased'
+                        tctoken['analsurf'] = tcs
+                        tctoken['anal'] = r[0] + \
+                            '[CASECHANGE=TITLECASED][WEIGHT=%f]' % (r[1] +
+                                    self._penalty)
+                        tctoken["weight"] = r[1] + self._penalty
+                        rv.append(tctoken)
             if len(token) > 2 and s[0].isupper() and self.try_detitlecase:
                 dts = s[0].lower() + s[1:]
-                dtres = self.analyser.lookup(dts)
-                for r in dtres:
-                    dttoken = token.copy()
-                    dttoken['recase'] = 'dETITLECASED'
-                    dttoken['analsurf'] = dts
-                    dttoken['anal'] = r[0] + \
-                            "[CASECHANGE=DETITLECASED][WEIGHT=%f]" % (r[1] +
-                                    self._penalty)
-                    dttoken["weight"] = r[1] + self._penalty
-                    rv.append(dttoken)
+                if dts != s:
+                    dtres = self.analyser.lookup(dts)
+                    for r in dtres:
+                        dttoken = token.copy()
+                        dttoken['recase'] = 'dETITLECASED'
+                        dttoken['analsurf'] = dts
+                        dttoken['anal'] = r[0] + \
+                                "[CASECHANGE=DETITLECASED][WEIGHT=%f]" % (r[1] +
+                                        self._penalty)
+                        dttoken["weight"] = r[1] + self._penalty
+                        rv.append(dttoken)
             if not s.isupper() and self.try_uppercase:
                 ups = s.upper()
-                upres = self.analyser.lookup(ups)
-                for r in upres:
-                    uptoken = token.copy()
-                    uptoken['recase'] = 'UPPERCASED'
-                    uptoken['analsurf'] = ups
-                    uptoken['anal'] = r[0] + \
-                            "[CASECHANGE=UPPERCASED][WEIGHT=%f]" % (r[1] +
-                                    self._penalty)
-                    uptoken["weight"] = r[1] + self._penalty
-                    rv.append(uptoken)
+                if ups != s:
+                    upres = self.analyser.lookup(ups)
+                    for r in upres:
+                        uptoken = token.copy()
+                        uptoken['recase'] = 'UPPERCASED'
+                        uptoken['analsurf'] = ups
+                        uptoken['anal'] = r[0] + \
+                                "[CASECHANGE=UPPERCASED][WEIGHT=%f]" % (r[1] +
+                                        self._penalty)
+                        uptoken["weight"] = r[1] + self._penalty
+                        rv.append(uptoken)
             if not s.islower() and self.try_lowercase:
                 lows = s.lower()
-                lowres = self.analyser.lookup(lows)
-                for r in lowres:
-                    lowtoken = token.copy()
-                    lowtoken['recase'] = 'lowercased'
-                    lowtoken['analsurf'] = lows
-                    lowtoken['anal'] = r[0] +\
-                             "[CASECHANGE=LOWERCASED][WEIGHT=%f]" %(r[1] +
-                                     self._penalty)
-                    lowtoken["weight"] = r[1] + self._penalty
-                    rv.append(lowtoken)
+                if lows != s:
+                    lowres = self.analyser.lookup(lows)
+                    for r in lowres:
+                        lowtoken = token.copy()
+                        lowtoken['recase'] = 'lowercased'
+                        lowtoken['analsurf'] = lows
+                        lowtoken['anal'] = r[0] +\
+                                 "[CASECHANGE=LOWERCASED][WEIGHT=%f]" %(r[1] +
+                                         self._penalty)
+                        lowtoken["weight"] = r[1] + self._penalty
+                        rv.append(lowtoken)
         return rv
 
     def analyse(self, token):
