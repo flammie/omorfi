@@ -22,7 +22,7 @@ STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ N
     SG PL
     ACTV PASV INDV POTN IMPV COND
     INFA INFE INFMA
-    POSSSG1 POSSSG2 POSSSP3 POSSPL1 POSSPL2
+    POSSSG1 POSSSG2 POSS3 POSSPL1 POSSPL2
     HAN KO PA S KA KAAN KIN
     ORD CARD
     NEG CONNEG
@@ -52,6 +52,8 @@ LIST CONJUNCTION = CCONJ SCONJ ;
 LIST VERBAUX = VERB AUX ;
 ## copula?
 LIST COPULA = ("olla" AUX) ;
+##
+LIST VERB-PL3 = (VERB PL3) (AUX PL3) ;
 # }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
@@ -102,15 +104,19 @@ LIST RARER-ADV =
 LIST RARER-ADP =
     ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ;
 ## Adpositions by their complement
-LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) ;
+LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) 
+    ("ilman" ADP) ;
 LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) 
-    ("alla" ADP) ;
+    ("alla" ADP) ("kanssa" ADP) ;
 ## Verbs with inf
 LIST VERBS-WITH-INFA = ("alkaa" AUX) ("haluta" AUX) ("tahtoa" AUX) ;
 LIST VERBS-WITH-INFMAAN = ("alkaa" AUX) ("päästä" AUX) ("ruveta" AUX) ;
 ## numerals that are used nouns too
 LIST NUM-MULTIPLIER = ("puoli" NUM) ("sata" NUM) ("miljoona" NUM) ;
-
+## temporal adverbs that can be noun forms
+LIST TIME-ADV = ("maanantaina" ADV) ("tiistaina" ADV) ("keskiviikkona" ADV)
+    ("torstaina" ADV) ("perjantaina" ADV) ("lauantaina" ADV)
+    ("sunnuntaina" ADV) ;
 ## the words where 2nd person singular possessives overlap with e.g. past
 ## 3rd person singular e.g. "voisi" = {your butter(s), he could},
 ## "tiesi" = {your roads, he knew} but also: "kuusi" = {your moon(s),
@@ -147,13 +153,25 @@ LIST ENSIN-ADV = ("ensin" ADV) ;
 LIST NAINEN-VERB = ("naida" VERB POTN) ;
 ## vähän = a little either adv or adj gen
 LIST VÄHÄN-ADV = ("vähän" ADV) ;
-LIST VÄHÄ-ADJ = ("vähä" ADJ) ;
+LIST VÄHÄN-ADJ = ("vähä" ADJ GEN) ;
 ## vaikka mitä
 LIST VAIKKA-ADV = ("vaikka" ADV) ;
 LIST MIKÄ-PRON = ("mikä" PRON) ;
 ## häntä {tail, him}
 LIST HÄNTÄ-NOUN = ("häntä" NOUN) ;
-LIST HÄN-PRON = ("hän" PRON) ;
+LIST HÄNTÄ-PRON = ("hän" PRON PAR) ;
+## erikseen { separately, with his rounds }
+LIST ERIKSEEN-ADV = ("erikseen" ADV) ;
+LIST ERIKSEEN-NOUN = ("erä" NOUN PL POSS3) ;
+## jälkeen { after, into trace }
+LIST JÄLKEEN-NOUN = ("jälki" NOUN ILL) ;
+LIST JÄLKEEN-AD = ("jälkeen" ADV) ("jälkeen" ADP) ;
+## uusia = { new, to renew }
+LIST UUSI-ADJ = ("uusi" ADJ) ;
+LIST UUSI-VERB = ("uusia" VERB) ;
+## Japan is some rarer propn according to ...
+LIST JAPANI-PROPN = ("Japani" PROPN) ;
+LIST JAPAN-PROPN = ("Japan" PROPN) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -205,6 +223,9 @@ REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 ##! € pulloissa on vanhan näköiset etiketit
 REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 PROPN) ;
 
+##! € Japaniin suuntautuva vierailu
+REMOVE:Japan-not-country JAPAN-PROPN (0 JAPANI-PROPN) ;
+
 ##! € nainen on kuin morsian
 REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 
@@ -223,11 +244,23 @@ REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
 REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
 
 ##! € he joivat vähän vettä
-SELECT:vähän-adv VÄHÄN-ADV (0 VÄHÄ-ADJ) ;
+SELECT:vähän-adv VÄHÄN-ADV (0 VÄHÄN-ADJ) ;
 
 ##! € he odottivat häntä
 ##! $ koira juoksi häntä heiluen
-SELECT:häntä-pron HÄN-PRON (0 HÄNTÄ-NOUN) ;
+SELECT:häntä-pron HÄNTÄ-PRON (0 HÄNTÄ-NOUN) ;
+
+##! € kaupunginvaltuusto hyväksyi liitokesn maantaina
+SELECT:temprals-prefer-adv TIME-ADV (0 NOUN) ;
+
+##! € päätetään siitä erikseen
+SELECT:erikseen-adv ERIKSEEN-ADV (0 ERIKSEEN-NOUN);
+
+##! € aamun jälkeen on yö
+REMOVE:jälkeen-adp JÄLKEEN-NOUN (0 JÄLKEEN-AD) ;
+
+##! Intian uusi pääministeri on Narendra Modi
+SELECT:uusi-adj UUSI-ADJ (0 UUSI-VERB) ;
 
 SECTION # grammar and context
 
@@ -241,8 +274,8 @@ REMOVE:conneg-needs-neg CONNEG (NEGATE -1* NEG BARRIER CONNEG) ;
 SELECT:perfect-tense PCPNUT (-1* COPULA BARRIER VERBAUX) ;
 
 ##! €
-SELECT:adp-gen-complements ADPS-WITH-GEN (-1* GEN BARRIER ADP) (1* GEN BARRIER ADP) ;
-SELECT:adp-par-complements ADPS-WITH-PAR (-1* PAR BARRIER ADP) (1* PAR BARRIER ADP) ;
+SELECT:adp-gen-complements ADPS-WITH-GEN (0* GEN BARRIER ADP) ;
+SELECT:adp-par-complements ADPS-WITH-PAR (0* PAR BARRIER ADP) ;
 
 ##! €
 REMOVE:det-needs-np DET (NEGATE 1 NOMINAL) ;
@@ -250,10 +283,14 @@ REMOVE:det-needs-np DET (NEGATE 1 NOMINAL) ;
 ##! € siitä on puoli vuotta
 SELECT:nump-partitive NUM-MULTIPLIER (1 PAR) ;
 
-SECTION # last-resorts
+##! € pääministerit tapaavat Intiassa
+SELECT:verb-pl3-agree-left VERB-PL3 (-1 NOUN + PL) ;
 
 SELECT:final-needs-initial <POSITION_FINAL> (-2* <POSITION_INITIAL> BARRIER <POSITION_FINAL>) ;
 SELECT:initial-needs-final <POSITION_INITIAL> (2* <POSITION_FINAL> BARRIER <POSITION_INITIAL>) ;
+
+SECTION # last-resorts
+
 REMOVE:lexicalised-over-derived-sti <DRV_STI> (0 <LEX_STI>) ;
 REMOVE:rare-propn-shadows-commons RARER_PROPN ;
 SELECT:prefer-punct-over-sym PUNCT (0 SYM);
