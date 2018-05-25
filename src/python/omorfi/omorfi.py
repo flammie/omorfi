@@ -872,7 +872,7 @@ class Omorfi:
         generation. For round-tripping and API consistency you can also feed a
         token dict here.
         '''
-        gentoken = None
+        gentoken = {}
         if isinstance(omorstring, str):
             gentoken['anal'] = omorstring
         elif isinstance(omorstring, dict):
@@ -883,7 +883,7 @@ class Omorfi:
                     'location': 'generate()'}
         generateds = None
         if self.can_generate:
-            generated = self._generate(gentoken['anal'])
+            generated = self._generate(gentoken)
             if not generated:
                 gentoken['surf'] = gentoken['anal']
                 gentoken['genweight'] = float('inf')
