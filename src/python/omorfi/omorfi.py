@@ -140,6 +140,32 @@ class Omorfi:
     def load_analyser(self, f):
         self.analyser = self.load_hfst(f)
         self.can_analyse = True
+        self.can_accept = True
+        self.can_lemmatise = True
+
+    def load_generator(self, f):
+        self.generator = self.load_hfst(f)
+        self.can_generate = True
+
+    def load_acceptor(self, f):
+        self.acceptor = self.load_hfst(f)
+        self.can_accept = True
+
+    def load_tokeniser(self, f):
+        self.tokeniser = self.load_hfst(f)
+        self.can_tokenise = True
+
+    def load_lemmatiser(self, f):
+        self.tokeniser = self.load_hfst(f)
+        self.can_lemmatise = True
+
+    def load_hyphenator(self, f):
+        self.hyphenator = self.load_hfst(f)
+        self.can_hyphenate = True
+
+    def load_guesser(self, f):
+        self.guesser = self.load_hfst(f)
+        self.can_guess = True
 
     def load_filename(self, path, **include):
         """Load omorfi automaton from filename and guess its use.
@@ -178,58 +204,39 @@ class Omorfi:
         elif parts[1] == 'analyse' and include['analyse']:
             if self._verbosity:
                 print('analyser', parts[0])
-            self.analyser = load_analyser(path)
-            ## analyser is loaded
-            self.can_analyse = True
-            ## acceptor is loaded
-            self.can_accept = True
-            ## lemmatiser is loaded
-            self.can_lemmatise = True
+            self.load_analyser(path)
         elif parts[1] == 'generate' and include['generate']:
             if self._verbosity:
                 print('generator', parts[0])
-            self.generator = his.read()
-            ## generator is loaded
-            self.can_generate = True
+            self.load_generator(path)
         elif parts[1] == 'accept' and include['accept']:
             if self._verbosity:
                 print('acceptor', parts[0])
-            self.acceptor = his.read()
-            self.can_accept = True
+            self.load_acceptor(path)
         elif parts[1] == 'tokenise' and include['tokenise']:
             if self._verbosity:
                 print('tokeniser', parts[0])
-            self.tokeniser = his.read()
-            ## tokeniser is loaded
-            self.can_tokenise = True
+            self.load_tokeniser(path)
         elif parts[1] == 'lemmatise' and include['lemmatise']:
             if self._verbosity:
                 print('lemmatiser', parts[0])
-            self.lemmatiser = his.read()
-            self.can_lemmatise = True
+            self.load_lemmatiser(path)
         elif parts[1] == 'hyphenate' and include['hyphenate']:
             if self._verbosity:
                 print('hyphenator', parts[0])
-            self.hyphenator = his.read()
-            ## hyphenator is loaded
-            self.can_hyphenate = True
+            self.load_hyphenator(path)
         elif parts[1] == 'segment' and include['segment']:
             if self._verbosity:
                 print('segmenter', parts[0])
-            self.segmenter = his.read()
-            ## segmenter is loaded
-            self.can_segment = True
+            self.load_segmenter(path)
         elif parts[1] == 'guesser' and include['guesser']:
             if self._verbosity:
                 print('guesser', parts[0])
-            self.guesser = his.read()
-            ## guesserr is loaded
-            self.can_guess = True
+            self.load_guesser(path)
         elif parts[1] == 'labelsegment' and include['labelsegment']:
             if self._verbosity:
                 print('labelsegmenter', parts[0])
-            self.labelsegmenter = his.read()
-            self.can_segment = True
+            self.load_labelsegmenter(path)
         elif self._verbosity:
             print('skipped', parts)
 
