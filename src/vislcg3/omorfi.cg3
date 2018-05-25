@@ -4,6 +4,10 @@
 # Authors: Tommi A Pirinen
 # but also remade based on Fred Karlsson's fincg:
 
+##! A note on comments: ##! is used for testing:
+##! euro sign for example of remove not applying
+##! dollar sign for remove rule firing
+
 ##  This program is free software: you can redistribute it and/or modify
 ##  it under the terms of the GNU General Public License as published by
 ##  the Free Software Foundation, either version 3 of the License.
@@ -105,14 +109,16 @@ LIST RARER-ADP =
     ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ;
 ## Adpositions by their complement
 LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) 
-    ("ilman" ADP) ;
+    ("ilman" ADP) ("kautta" ADP) ("huolimatta" ADP) ("asti" ADP) ;
 LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) 
-    ("alla" ADP) ("kanssa" ADP) ;
+    ("alla" ADP) ("kanssa" ADP) ("kautta" ADP) ;
+LIST ADPS-WITH-ILL = ("nähden" ADP) ;
 ## Verbs with inf
 LIST VERBS-WITH-INFA = ("alkaa" AUX) ("haluta" AUX) ("tahtoa" AUX) ;
 LIST VERBS-WITH-INFMAAN = ("alkaa" AUX) ("päästä" AUX) ("ruveta" AUX) ;
 ## numerals that are used nouns too
-LIST NUM-MULTIPLIER = ("puoli" NUM) ("sata" NUM) ("miljoona" NUM) ;
+LIST NUM-MULTIPLIER = ("puoli" NUM) ("sata" NUM) ("miljoona" NUM) 
+    ("pari" NUM) ;
 ## temporal adverbs that can be noun forms
 LIST TIME-ADV = ("maanantaina" ADV) ("tiistaina" ADV) ("keskiviikkona" ADV)
     ("torstaina" ADV) ("perjantaina" ADV) ("lauantaina" ADV)
@@ -166,12 +172,23 @@ LIST ERIKSEEN-NOUN = ("erä" NOUN PL POSS3) ;
 ## jälkeen { after, into trace }
 LIST JÄLKEEN-NOUN = ("jälki" NOUN ILL) ;
 LIST JÄLKEEN-AD = ("jälkeen" ADV) ("jälkeen" ADP) ;
+# jäljelle { left, onto trace }
+LIST JÄLKEEN-NOUN = ("jälki" NOUNALL) ;
+LIST JÄLJELLE-ADV = ("jälkeen" ADV) ;
 ## uusia = { new, to renew }
 LIST UUSI-ADJ = ("uusi" ADJ) ;
 LIST UUSI-VERB = ("uusia" VERB) ;
 ## Japan is some rarer propn according to ...
 LIST JAPANI-PROPN = ("Japani" PROPN) ;
 LIST JAPAN-PROPN = ("Japan" PROPN) ;
+## ajan { I drive, time, during }
+LIST AJAN-NOUN = ("aika" NOUN GEN) ;
+LIST AJAN-AD = ("ajan" ADV) ("ajan" ADP) ;
+## koko = whole
+LIST KOKO-ADJ = ("koko" ADJ) ;
+## lainkaan { at all, of law's either }
+LIST LAINKAAN-ADV = ("lainkaan" ADV) ;
+LIST LAINKAAN-NOUN = ("laki" GEN KAAN) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -197,7 +214,7 @@ SECTION # words minimal context
 
 # UD preferences
 
-# FIXME: use $$ to match lemma
+# FIXME: use agreements to match lemma
 REMOVE:UD-ordinal-is-adjective NUM (0 ORD) ;
 
 # trad. possessives
@@ -206,71 +223,109 @@ REMOVE:only-poss-if-pron-sg2 SG2POSS-CONFUSION (NOT -1 SINUN) ;
 
 # surface-form specific disambiguation between few lexemes
 
-##! $ ollaan menos sinne ja.
+##! € ollaan menos sinne ja.
 REMOVE:ja-adv JA-ADV (NOT 1 ENDSENT) ;
 
-##! $ ai että voi että
+##! € ai että, voi että.
 REMOVE:että-intj ETTÄ-INTJ (NOT -1 INTJ) ;
-##! $ oli siellä sekä kaljaa että apinoita.
+##! € oli siellä sekä kaljaa että apinoita.
 REMOVE:sekä-että-cconj ETTÄ-CCONJ (NOT -1* SEKÄ-CCONJ) ;
-##! $ oli siellä niin kaljaa kuin apinoitakin.
+##! € oli siellä niin kaljaa kuin apinoitakin.
 REMOVE:niin-kuin-cconj NIIN-CCONJ (NOT 1* KUIN-CCONJ) ;
 
-##! $ Helsingissä on lunta
+##! $ Helsingissä on lunta.
 ##! € näitkö sen uuden van Helsingin episodin?
 REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 
-##! € pulloissa on vanhan näköiset etiketit
+##! $ pulloissa on vanhan näköiset etiketit.
 REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 PROPN) ;
 
-##! € Japaniin suuntautuva vierailu
+##! $ Japaniin suuntautuva vierailu.
 REMOVE:Japan-not-country JAPAN-PROPN (0 JAPANI-PROPN) ;
 
-##! € nainen on kuin morsian
+##! $ nainen on kuin morsian.
 REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 NOUN) ;
 
-##! € kun rahaa ei ole, löytää vaikka mitä
-##! $ vaikka rahaa ei ole, löytää sitä
+##! € kun rahaa ei ole, löytää vaikka mitä.
+##! $ vaikka rahaa ei ole, löytää sitä.
 REMOVE:vaikka-mitä VAIKKA-ADV (NEGATE 1 MIKÄ-PRON) ;
 
-##! € niiden pitää tulla myös
+##! $ niiden pitää tulla myös.
 REMOVE:niisi-niiden NIISI-NOUN (0 PRON) ;
 
-##! € siitä en tiedä mitään
-##! $ siitä maailma täyteen lapsia
+##! $ siitä en tiedä mitään.
+##! € siitä maailma täyteen lapsia.
 REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
 
-##! € ensin syödään sitten vasta mennään
+##! $ ensin syödään sitten vasta mennään.
 REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
 
-##! € he joivat vähän vettä
+##! $ he joivat vähän vettä.
 SELECT:vähän-adv VÄHÄN-ADV (0 VÄHÄN-ADJ) ;
 
-##! € he odottivat häntä
-##! $ koira juoksi häntä heiluen
+##! $ he odottivat häntä.
+##! € koira juoksi häntä heiluen.
 SELECT:häntä-pron HÄNTÄ-PRON (0 HÄNTÄ-NOUN) ;
 
-##! € kaupunginvaltuusto hyväksyi liitokesn maantaina
+##! $ kaupunginvaltuusto hyväksyi liitoksen maanantaina.
 SELECT:temprals-prefer-adv TIME-ADV (0 NOUN) ;
 
-##! € päätetään siitä erikseen
+##! $ päätetään siitä erikseen.
 SELECT:erikseen-adv ERIKSEEN-ADV (0 ERIKSEEN-NOUN);
 
-##! € aamun jälkeen on yö
-REMOVE:jälkeen-adp JÄLKEEN-NOUN (0 JÄLKEEN-AD) ;
+##! $ aamun jälkeen on yö.
+REMOVE:jälkeen-ad JÄLKEEN-NOUN (0 JÄLKEEN-AD) ;
+REMOVE:jäljelle-adv JÄLJELLE-NOUN (0 JÄLJELLE-AD) ;
 
-##! Intian uusi pääministeri on Narendra Modi
+##! $ Intian uusi pääministeri on Narendra Modi.
 SELECT:uusi-adj UUSI-ADJ (0 UUSI-VERB) ;
+
+##! $ hän ei ole ollenkaan rehellinen 
+SELECT:ollenkaan-adv OLLENKAAN-ADV (0 OLLENKAAN-VERB) ;
+
+
+# orignal word-form specific section (fgk)
+# I have only selected the ones I can explain and fidn examples of:
+# I also skipped adps that already have case bindings
+# ––Flammie
+
+##! $ emme ratkaise pitkän ajan ongelmia.
+SELECT:ajan-noun AJAN-NOUN (-1 GEN) ;
+##! $ auringon pinta muuttuu koko ajan.
+SELECT:ajan-noun AJAN-NOUN (-1 KOKO-ADJ) ;
+
+##! $ erään sateen jälkeen olin yksin.
+##! € toiseen erään vaihtopelaajien määrää vähennettiin.
+SELECT:erään-pron ERÄÄN-PRON (1 GEN) ;
+
+##! $ mitä jää jäljelle.
+REMOVE:jäljelle-adv JÄLJELLE-NOUN (0 JÄLJELLE-ADV) ;
+
+##! $ se on kerrassaan mahtavaa.
+REMOVE:kerrassaan-adv KERRASSAAN-NOUN (0 KERRASSAAN-ADV) ;
+
+##! $ ei ole lainkaan vaikeaa lakata.
+SELECT:lainkaan-adv LAINKAAN-ADV (0 LAINKAAN-NOUN) ;
+
+##! $ sade oli kastellut hänet läpeensä.
+SELECT:läpeensä-adv LÄPEENSÄ-ADV (0 LÄPEENSÄ-NOUN) ;
+
+##! $ 
+SELECT:merkitystä-par MERKITYSTÄ-PAR (NOT 1 ELA) ;
+
+SELECT:noissa-pron NOISSA-PRON (0 NOISSA-NOUN) ;
+
+# selected words from origina cg end here
 
 SECTION # grammar and context
 
-##! € en oo sitä nähny
-##! € en tule
-##! € ole hiljaa
+##! € en oo sitä nähny.
+##! € en tule.
+##! € ole hiljaa.
 REMOVE:conneg-needs-neg CONNEG (NEGATE -1* NEG BARRIER CONNEG) ;
 
-##! € poliisilla on ollut etsintäatehtävä
-##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa
+##! € poliisilla on ollut etsintäatehtävä.
+##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa.
 SELECT:perfect-tense PCPNUT (-1* COPULA BARRIER VERBAUX) ;
 
 ##! €
@@ -280,10 +335,10 @@ SELECT:adp-par-complements ADPS-WITH-PAR (0* PAR BARRIER ADP) ;
 ##! €
 REMOVE:det-needs-np DET (NEGATE 1 NOMINAL) ;
 
-##! € siitä on puoli vuotta
+##! € siitä on puoli vuotta.
 SELECT:nump-partitive NUM-MULTIPLIER (1 PAR) ;
 
-##! € pääministerit tapaavat Intiassa
+##! € pääministerit tapaavat Intiassa.
 SELECT:verb-pl3-agree-left VERB-PL3 (-1 NOUN + PL) ;
 
 SELECT:final-needs-initial <POSITION_FINAL> (-2* <POSITION_INITIAL> BARRIER <POSITION_FINAL>) ;
