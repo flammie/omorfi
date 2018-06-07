@@ -47,7 +47,7 @@ namespace omorfi {
             "/usr/share/omorfi/"};
         char* homepath = getenv("HOME");
         if (homepath != nullptr) {
-            std::string homeomorfi = string(homepath) + "/.omorfi/";
+            std::string homeomorfi = std::string(homepath) + "/.omorfi/";
             stdPaths.push_back(homeomorfi);
         }
         for (auto path : stdPaths) {
