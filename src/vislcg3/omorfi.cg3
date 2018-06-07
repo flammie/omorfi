@@ -22,16 +22,17 @@
 
 STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ NUM
     DET
-    NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT
+    NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT ESS
     SG PL
-    ACTV PASV INDV POTN IMPV COND
+    ACTV PASV INDV POTN IMPV COND PRES PAST
     INFA INFE INFMA
     POSSSG1 POSSSG2 POSS3 POSSPL1 POSSPL2
-    HAN KO PA S KA KAAN KIN
+    CLITHAN CLITKO CLITPA CLITS CLITKA CLITKAAN CLITKIN
     ORD CARD
     NEG CONNEG
     PCPNUT PCPVA
     SG1 SG2 SG3 PL1 PL2 PL3 SG0
+    POS CMP SUP
     <DRV_LA> <DRV_VA> <DRV_NUT> <DRV_TU> <DRV_MA> <DRV_U> <DRV_MINEN>
     <DRV_MA> <DRV_JA> <DRV_NEN> <DRV_STI>
     <LEX_STI>
@@ -49,7 +50,7 @@ SETS
 ## Nominal poses
 LIST NOMINAL = NOUN ADJ PRON PROPN ;
 ## Clitic particle tags
-LIST CLITIC = HAN KO PA S KA KAAN KIN ;
+LIST CLITIC = CLITHAN CLITKO CLITPA CLITS CLITKA CLITKAAN CLITKIN ;
 ## Conjunctions
 LIST CONJUNCTION = CCONJ SCONJ ;
 ## any vebs
@@ -58,10 +59,19 @@ LIST VERBAUX = VERB AUX ;
 LIST COPULA = ("olla" AUX) ;
 ##
 LIST VERB-PL3 = (VERB PL3) (AUX PL3) ;
+## ad-adjectives etc.
+LIST ADA = ADV ;
+## AD words
+LIST AD = ADJ ADV ADP ;
+## comparatives and superlatives
+LIST CMP-SUP = CMP SUP ;
+##
+LIST POSS = POSSSG1 POSSSG2 POSS3 POSSPL1 POSSPL2 ;
 # }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
+LIST CLB = "<,>" ;
 # }}}
 # {{{ words
 
@@ -103,18 +113,73 @@ LIST RARER_PROPN =
 ## questionable advs that should've been intjs
 LIST RARER-ADV =
     ("kuin" ADV) ("kun" ADV) ;
+## adverbs that are much commoner than nominal counterparts
+LIST DEFAULT-ADV =
+    ("erikseen" ADV) ("erilleen" ADV) ("erillään" ADV) 
+    ("lainkaan" ADV) ("läpeensä" ADV) ("kaikkiaan" ADV)
+    ("kumminkaan" ADV) ("kumminkin" ADV) ("naimisiin" ADV)
+    ("naimisissa" ADV) ("jäljelle" ADV) ("kerrassaan" ADV)
+    ("kotoisin" ADV) ("kumminkin" ADV) ("kumminkaan" ADV)
+    ("oikeastaan" ADV) ("parhaimmillaan" ADV) ("pelkästään" ADV)
+    ("tietenkin" ADV) ("tietenkään" ADV) ("toisinaan" ADV)
+    ("tosiaan" ADV) ("usein" ADV) ("vahnastaan" ADV)
+    ("vähintään" ADV) ("yhteensä" ADV) ("yhtään" ADV)
+    ("yksinään" ADV) ("yksistään" ADV) ("öisin" ADV)
+    ("varsin" ADV) ;
+## following adverbs are quite safe to select umless matching case is in
+## ±1 tokens (depending if ADJ or NOUN ambiguity)
+## inessives np initial
+LIST ADV-LIKE-ADJ-INE =
+    ("yhdessä" ADV) ("vinossa" ADV) ("pystyssä" ADV) ;
+## illatives np initial
+LIST ADV-LIKE-ADJ-ILL =
+    ("suoraan" ADV) ("yksiin" ADV) ("myöhään" ADV)
+    ("turhaan" ADV) ("varmaan" ADV) ("täyteen" ADV) 
+    ("pitkään" ADV) ("pystyyn" ADV) ;
+LIST ADV-LIKE-ADJ-ALL =
+    ("uudelleen" ADV) ;
+LIST ADV-LIKE-ADJ-ELA =
+    ("uudestaan" ADV) ;
+LIST ADV-LIKE-ADJ-ADE =
+    ("syvällä" ADV) ("samalla" ADV) ("pitkällä" ADV) ;
+LIST ADV-LIKE-ADJ-INS =
+    ("myöhemmin" ADV) ("nykyisin" ADV) ("vähemmän" INS) ;
+## translatives np final
+## instructives ... maybe
+LIST ADV-LIKE-NOUN-TRA =
+    ("tarpeeksi" ADV) ("käsiksi" ADV) ("mieliksi" ADV) ("osaksi" ADV)
+    ("periksi" ADV) ;
+## instructives ... maybe
+LIST ADV-LIKE-NOUN-INS =
+    ("paikoin" ADV) ("selin" ADV) ("silloin" ADV)
+    ("suinkin" ADV) ("suinkaan" ADV) ("tuskin" ADV) 
+    ("vihdoin" ADV) ("puolin" ADV) ("muutoin" ADV) ;
+## adessives
+LIST ADV-LIKE-NOUN-ADE =
+    ("todella" ADV) ("tavallaan" ADV) ("mielellään" ADV)
+    ("perillä" ADV) ("suunnitteilla" ADV) ("vireillä" ADV) 
+    ("jäljellä" ADV) ;
+LIST ADV-LIKE-NOUN-ALL =
+    ("perille" ADV) ("suunnilleen" ADV) ;
+LIST ADV-LIKE-NOUN-ELA =
+    ("suorastaan" ADV) ;
 ## adps that are rarer than adv or noun counterparts
 ## prefer ADPS-WITH-CASE over RARER-ADP
 LIST RARER-ADP =
     ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ;
 ## Adpositions by their complement
+## adpositions with partitive complement
 LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) 
     ("ilman" ADP) ("kautta" ADP) ("huolimatta" ADP) ("asti" ADP) ;
+## adositions with genitive complement
 LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) 
     ("alla" ADP) ("kanssa" ADP) ("kautta" ADP) ;
+## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" ADP) ;
-## Verbs with inf
+## Verbs with inf complements
+## ... infa
 LIST VERBS-WITH-INFA = ("alkaa" AUX) ("haluta" AUX) ("tahtoa" AUX) ;
+## ... inf maan
 LIST VERBS-WITH-INFMAAN = ("alkaa" AUX) ("päästä" AUX) ("ruveta" AUX) ;
 ## numerals that are used nouns too
 LIST NUM-MULTIPLIER = ("puoli" NUM) ("sata" NUM) ("miljoona" NUM) 
@@ -173,7 +238,7 @@ LIST ERIKSEEN-NOUN = ("erä" NOUN PL POSS3) ;
 LIST JÄLKEEN-NOUN = ("jälki" NOUN ILL) ;
 LIST JÄLKEEN-AD = ("jälkeen" ADV) ("jälkeen" ADP) ;
 # jäljelle { left, onto trace }
-LIST JÄLKEEN-NOUN = ("jälki" NOUNALL) ;
+LIST JÄLJELLE-NOUN = ("jälki" NOUN ALL) ;
 LIST JÄLJELLE-ADV = ("jälkeen" ADV) ;
 ## uusia = { new, to renew }
 LIST UUSI-ADJ = ("uusi" ADJ) ;
@@ -186,9 +251,114 @@ LIST AJAN-NOUN = ("aika" NOUN GEN) ;
 LIST AJAN-AD = ("ajan" ADV) ("ajan" ADP) ;
 ## koko = whole
 LIST KOKO-ADJ = ("koko" ADJ) ;
-## lainkaan { at all, of law's either }
-LIST LAINKAAN-ADV = ("lainkaan" ADV) ;
-LIST LAINKAAN-NOUN = ("laki" GEN KAAN) ;
+## uudestaan = {again, from their new}
+LIST UUDESTAAN-ADJ = ("uusi" ADJ ELA POSS3) ;
+## jäljelle = {left, to a trace}
+LIST JÄLJELLE-AD = ("jäljelle" ADV) ("jäljelle" ADP) ;
+## ollenkaan = {at all, while being}
+LIST OLLENKAAN-ADV = ("ollenkaan" ADV) ;
+LIST OLLENKAAN-VERB = ("olla" INFE CLITKAAN) ;
+## erään = {of some, to a set}
+LIST ERÄÄN-PRON = ("eräs" PRON SG GEN) ;
+## merkitystä = {of importance, from marked}
+LIST MERKITYSTÄ-PAR = ("merkitys" PAR) ;
+## noissa = {in those, in ashes}
+LIST NOISSA-PRON = ("nuo" PRON INE) ("tuo" PRON PL INE) ;
+LIST NOISSA-NOUN = ("noki" SG INE) ;
+## peräisin = {originating from, I'd guarantee}
+LIST PERÄISIN-ADV = ("peräisin" ADV) ;
+LIST PERÄISIN-VERB = ("perätä" VERB COND SG1) ;
+## sekin = {that one too, of cheque}
+LIST SEKIN-PRON = ("se" PRON CLITKIN) ;
+LIST LUNASTAA-VERB = ("lunastaa" VERB) ;
+## 
+LIST TUO-PRON = ("tuo" PRON) ;
+LIST KAIKKI = ("kaikki" PRON) ("kaikki" ADJ) ;
+## vastaan {against}
+LIST VASTAAN-ADV = ("vastaan" ADV) ;
+##
+LIST ARVOINEN-ADJ = ("arvoinen" ADJ) ;
+LIST KALLIS-ADJ = ("kallis" ADJ) ;
+## pieniä = {make smaller, small}
+LIST PIENIÄ-ADJ = ("pieni" ADJ PAR) ;
+## vaaleissa etc. {elections, blondes}
+LIST VAALEISSA-ADJ = ("vaalea" ADJ PL INE) ;
+LIST VAALEISTA-ADJ = ("vaalea" ADJ PL ELA) ;
+LIST VAALEIHIN-ADJ = ("vaalea" ADJ PL ILL) ;
+LIST VAALEILLA-ADJ = ("vaalea" ADJ PL ADE) ;
+## 
+LIST OTTAA-VERB = ("ottaa" VERB) ;
+##
+LIST KALLIS-NOUN = ("kallis" NOUN) ;
+##
+LIST HYVIN-ADA = ("hyvin" ADV) ;
+LIST LIIAN-ADV = ("liian" ADV) ;
+##
+LIST MITÄ-ADV = ("mitä" ADV) ;
+##
+LIST TÄYSIN-ADA = ("täysin" ADV) ;
+##
+LIST EDELLÄ-ADV = ("edellä" ADV) ;
+##
+LIST ENNEN-ADV = ("ennen" ADV) ;
+##
+LIST IKINÄ-ADV = ("ikinä" ADV) ;
+##
+LIST KAHDEN-ADV = ("kahden" ADV) ;
+##
+LIST KOOLLE-ADV = ("koolle" ADV) ;
+##
+LIST KAUPPA-NOUN = ("kauppa" NOUN) ;
+##
+LIST KOHTA-ADV = ("kohta" ADV) ;
+##
+LIST KUTSUA-VERB = ("kutsua" VERB) ;
+##
+LIST LISÄÄ-ADV = ("lisää" ADV) ;
+##
+LIST JOS-ADV = ("jos" ADV) ;
+##
+LIST KAUEMMAKSI-ADV = ("kauemmaksi" ADV) ;
+LIST KAUEMPAA-ADV = ("kauempaa" ADV) ;
+LIST KAUEMPANA-ADV = ("kauempana" ADV) ;
+LIST KAUEMMAKSI-ADJ = ("kauempi" ADJ TRA) ;
+LIST KAUEMPAA-ADJ = ("kauempi" ADJ TRA) ;
+LIST KAUEMPANA-ADJ = ("kauempi" ADJ ESS) ;
+LIST LÄHEMMÄKSI-ADV = ("lähemmäksi" ADV) ;
+LIST LÄHEMPÄÄ-ADV = ("lähempää" ADV) ;
+LIST LÄHEMPÄNÄ-ADV = ("lähempänä" ADV) ;
+LIST LÄHEMMÄKSI-ADJ = ("lähempi" ADJ TRA) ;
+LIST LÄHEMPÄÄ-ADJ = ("lähempi" ADJ PAR) ;
+LIST LÄHEMPÄNÄ-ADJ = ("lähempi" ADJ ESS) ;
+## näin = {so, I saw}
+LIST NÄIN-ADV = ("näin" ADV) ;
+LIST NÄIN-VERB = ("nähdä" VERB SG1 PAST) ;
+##
+LIST NIIN-ADV = ("niin" ADV) ;
+##
+LIST ESIM = ("esim." NOUN) ("esimerkiks" ADV) ("esimerkki" NOUN SG TRA) ;
+##
+LIST TAI-CCONJ = ("tai" CCONJ) ;
+## 
+LIST NÄKÖJÄÄN-ADV = ("näköjään" ADV) ;
+##
+LIST SIKSI-ADV = ("siksi" ADV) ;
+## 
+LIST SUOTTA-ADV = ("suotta" ADV) ;
+## 
+LIST SYNTYISIN-ADV = ("syntyisin" ADV) ;
+##
+LIST TAKAISIN-ADV = ("takaisin" ADV) ;
+## 
+LIST TOISTAMISEEN-ADV = ("toistamiseen" ADV) ;
+##
+LIST MINÄ-PRON = ("minä" PRON) ;
+##
+LIST HEIDÄN-PRON = ("he" PRON GEN) ("hän" PRON PL GEN) ;
+##
+LIST LUJAA-ADV = ("lujaa" ADV) ;
+##
+LIST SUORAAN-ADV = ("suoraan" ADV) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -280,11 +450,12 @@ REMOVE:jäljelle-adv JÄLJELLE-NOUN (0 JÄLJELLE-AD) ;
 ##! $ Intian uusi pääministeri on Narendra Modi.
 SELECT:uusi-adj UUSI-ADJ (0 UUSI-VERB) ;
 
-##! $ hän ei ole ollenkaan rehellinen 
+##! $ hän ei ole ollenkaan rehellinen.
 SELECT:ollenkaan-adv OLLENKAAN-ADV (0 OLLENKAAN-VERB) ;
 
 
-# orignal word-form specific section (fgk)
+# {{{ orignal word-form specific section (fgk)
+SECTION # FGK-word-specific
 # I have only selected the ones I can explain and fidn examples of:
 # I also skipped adps that already have case bindings
 # ––Flammie
@@ -298,24 +469,177 @@ SELECT:ajan-noun AJAN-NOUN (-1 KOKO-ADJ) ;
 ##! € toiseen erään vaihtopelaajien määrää vähennettiin.
 SELECT:erään-pron ERÄÄN-PRON (1 GEN) ;
 
-##! $ mitä jää jäljelle.
-REMOVE:jäljelle-adv JÄLJELLE-NOUN (0 JÄLJELLE-ADV) ;
 
-##! $ se on kerrassaan mahtavaa.
-REMOVE:kerrassaan-adv KERRASSAAN-NOUN (0 KERRASSAAN-ADV) ;
 
-##! $ ei ole lainkaan vaikeaa lakata.
-SELECT:lainkaan-adv LAINKAAN-ADV (0 LAINKAAN-NOUN) ;
 
-##! $ sade oli kastellut hänet läpeensä.
-SELECT:läpeensä-adv LÄPEENSÄ-ADV (0 LÄPEENSÄ-NOUN) ;
-
-##! $ 
+##! $ sillä on merkitystä elinkeinoelämässä.
+##! € salasanan löydät seinälle merkitystä tekstistä.
 SELECT:merkitystä-par MERKITYSTÄ-PAR (NOT 1 ELA) ;
 
+##! $ aiotko mennä sinne noissa vaatteissa.
 SELECT:noissa-pron NOISSA-PRON (0 NOISSA-NOUN) ;
 
-# selected words from origina cg end here
+##! $ mistä se on peräisin.
+SELECT:peräisin-adv PERÄISIN-ADV (0 PERÄISIN-VERB) (0* COPULA) ;
+
+##! $ sekin on vielä.
+##! € lunastan sen sekin jahka joudan.
+SELECT:sekin-pron SEKIN-PRON (NEGATE -1* LUNASTAA-VERB BARRIER VERB) ;
+
+
+##! hmm?
+SELECT:kaikki-tuo TUO-PRON (-1 KAIKKI) (NOT -2 PRON) ;
+
+##! $ tankki täyteen bensaa.
+
+##! $ ota vastaan se lahja.
+SELECT:ottaa-vastaan-adv VASTAAN-ADV (-1* OTTAA-VERB BARRIER VERB) ;
+
+##! $ minkä arvoinen turkis se oli.
+SELECT:gen-arvoinen ARVOINEN-ADJ (-1 GEN) ;
+
+##! $ Japani on kallis maa.
+SELECT:kallis-adj KALLIS-ADJ (0 KALLIS-NOUN) ;
+
+
+##! $ pieniä sieviä sieniä.
+SELECT:pieniä-adj PIENIÄ-ADJ (1 PAR) ;
+
+
+##! € presidentti Trump voitti vaaleissa.
+##! $ vaaleissa munkeissa on enemmän makua.
+REMOVE:vaaleissa-adj VAALEISSA-ADJ (NEGATE 1 INE) ;
+
+##! $ pidän vaaleista naisista.
+REMOVE:vaaleista-adj VAALEISTA-ADJ (NEGATE 1 ELA) ;
+
+##! € presidentti Trump toi vaaleihin markkinoiden tuntua.
+REMOVE:vaaleihin-adj VAALEIHIN-ADJ (NEGATE 1 ILL) ;
+
+##! € presidentti Trump valittiin demokraattisilla vaaleilla.
+REMOVE:vaaleilla-adj VAALEILLA-ADJ (NEGATE 1 ADE) ;
+
+##! € se on hyvin suuri.
+##! € se meni hyvin nopeasti.
+SELECT:hyvin-adv HYVIN-ADA (1 AD) ;
+
+##! € se on liian vanha.
+##! $ vim poistaa liian lian.
+SELECT:liian-adv LIIAN-ADV (NEGATE 1 GEN) ;
+
+##! € mitä suurempi peukalo sitä suurempi pikkurilli.
+##! € mitä suurimmissa määrin kyllä.
+SELECT:mitä-ada MITÄ-ADV (1 CMP-SUP) ;
+
+##! $ hän on täysin kyvytön.
+SELECT:täysin-ada TÄYSIN-ADA (1 AD) ;
+
+
+##! $ he ovat vielä edellä.
+##! € kuningas ei edellä jätkää.
+##! € kuka on sinua edellä?
+SELECT:edellä-adv EDELLÄ-ADV (NEGATE -1* NEG) (NEGATE -1 GEN) (NEGATE -1 PAR) (NEGATE 1 PAR) ;
+
+##! $
+SELECT:ennen-adv-kuin ENNEN-ADV (1 KUIN-CCONJ) ;
+
+##
+
+##! € en olis ikinä uskonu.
+SELECT:ikinä-adv IKINÄ-ADV (NEGATE -1 ESS) ;
+
+##! € miten paljon aikaa on jäljellä.
+
+##!
+SELECT:kahden-adv KAHDEN-ADV (NEGATE 1 GEN) (NEGATE 1 KAUPPA-NOUN) ;
+
+
+
+##!
+SELECT:jos-kohta-adv KOHTA-ADV (-1 JOS-ADV) ;
+
+##! kutsutaan kokous koolle.
+SELECT:kutsua-koolle KOOLLE-ADV (-1* KUTSUA-VERB) ;
+
+
+##
+
+SELECT:lisää-adv LISÄÄ-ADV (0* PAR BARRIER CLB) ;
+
+##!
+SELECT:kauemmaksi-adv KAUEMMAKSI-ADV (0 KAUEMMAKSI-ADJ) (NEGATE 1 TRA) ;
+SELECT:kauempaa-adv KAUEMPAA-ADV (0 KAUEMPAA-ADJ) (NEGATE -1 PAR) ;
+SELECT:kauempana-adv KAUEMPANA-ADV (0 KAUEMPANA-ADJ) (NEGATE -1 ESS) ;
+SELECT:lähemmäksi-adv LÄHEMMÄKSI-ADV (0 LÄHEMMÄKSI-ADJ) (NEGATE 1 TRA) ;
+SELECT:lähempää-adv LÄHEMPÄÄ-ADV (0 LÄHEMPÄÄ-ADJ) (NEGATE 1 PAR) ;
+SELECT:lähempänä-adv LÄHEMPÄNÄ-ADV (0 LÄHEMPÄNÄ-ADJ) (NEGATE 1 ESS) ;
+
+
+
+
+
+
+SELECT:niin-tai-näin-adv NÄIN-ADV (-2 NIIN-ADV) (-1 TAI-CCONJ) ;
+SELECT:esim-näin-adv NÄIN-ADV (-1 ESIM) ;
+
+SELECT:näköjään-adv NÄKÖJÄÄN-ADV (NEGATE -1 HEIDÄN-PRON) ;
+
+
+
+
+
+
+
+
+
+
+
+
+##! € siksi olen niin iloinen.
+##! € voin tulla siksi miksi minua luulet.
+SELECT:siksi-adv SIKSI-ADV (-1 BEGINSENT) (NEGATE 1 TRA) ;
+
+
+
+
+
+SELECT:suotta-adv SUOTTA-ADV (NEGATE -1 ABE) ;
+
+
+
+SELECT:syntyisin-adv SYNTYISIN-ADV (NEGATE -1 MINÄ-PRON) ;
+
+
+SELECT:takaisin-adv TAKAISIN-ADV (NEGATE -1 MINÄ-PRON) ;
+
+
+SELECT:toistamiseen-adv TOISTAMISEEN-ADV (NEGATE -1 GEN) ;
+
+
+
+
+
+
+
+
+
+
+##! $ he joivat vähän vettä.
+##! € hän joi sen vähän veden mitä sai.
+SELECT:vähän-adv VÄHÄN-ADV (NOT 1 GEN) ;
+
+
+
+
+SELECT:lujaa-adv LUJAA-ADV (NEGATE 1 PAR) ;
+
+
+# 
+SELECT:suoraan-adv SUORAAN-ADV (NEGATE -1 ILL) (NEGATE 1 ILL) ;
+
+#
+# selected words from original Karlsson's cg-1 end here }}}
+#
 
 SECTION # grammar and context
 
@@ -346,6 +670,45 @@ SELECT:initial-needs-final <POSITION_INITIAL> (2* <POSITION_FINAL> BARRIER <POSI
 
 SECTION # last-resorts
 
+##! $ mitä jää jäljelle.
+##! $ se on kerrassaan mahtavaa.
+##! $ mennään suoraan sinne.
+##! € aseta kortit suoraan riviin
+
+##! € olen nähnyt tarpeeksi.
+
+##! € olen todella viisas.
+##! $ kerää tarkalleen kolme omenaa.
+##! $ se on varsin totta.
+##! $ joskus menee myöhään.
+##! € he tanssivat myöhään yöhön.
+##! $ tavallaan olet kuitenkin oikeassa.
+##! € hän teki kaiken omalla tyhmällä tavallaan.
+##! $ kirjoitin kaikki säännöt ihan turhaan.
+##! € kulutin rahani turhaan roskaan.
+##! $ panin kaikki rahani varmaan hevoseen.
+##! € varmaan tuhlasin kaikki rahani siihen,
+##! $ he ottivat välittömästi yhteen.
+##! € panin kaikki rahani yhteen hevoseen.
+##! $ yritä uudestaan.
+##! $ yritä uudelleen.
+##! $ voitele molemmin puolin.
+SELECT:adv-unless-adj-ine-agreement ADV-LIKE-ADJ-INE (NEGATE 1 INE) ;
+SELECT:adv-unless-adj-ill-agreement ADV-LIKE-ADJ-ILL (NEGATE 1 ILL) ;
+SELECT:adv-unless-adj-ins-agreement ADV-LIKE-ADJ-INS (NEGATE 1 INS) ;
+SELECT:adv-unless-adj-ade-agreement ADV-LIKE-ADJ-ADE (NEGATE 1 ADE) ;
+SELECT:adv-unless-adj-all-agreement ADV-LIKE-ADJ-ALL (NEGATE 1 ALL) ;
+SELECT:adv-unless-adj-ela-agreement ADV-LIKE-ADJ-ELA (NEGATE 1 ELA) ;
+SELECT:adv-unless-noun-tra-agreement ADV-LIKE-NOUN-TRA (NEGATE -1 TRA) ;
+SELECT:adv-unless-noun-ins-agreement ADV-LIKE-NOUN-INS (NEGATE -1 INS) ;
+SELECT:adv-unless-noun-ade-agreement ADV-LIKE-NOUN-ADE (NEGATE -1 ADE) ;
+SELECT:adv-unless-noun-all-agreement ADV-LIKE-NOUN-ALL (NEGATE -1 ALL) ;
+SELECT:adv-unless-noun-ela-agreement ADV-LIKE-NOUN-ELA (NEGATE -1 ELA) ;
+##! $ ei ole lainkaan vaikeaa lakata.
+##! $ sade oli kastellut hänet läpeensä.
+##! $ mistä olet kotoisin?
+SELECT:adverbs-with-rarer-nominals DEFAULT-ADV ;
+REMOVE:adjectives-rarely-possessed ADJ + POSS ;
 REMOVE:lexicalised-over-derived-sti <DRV_STI> (0 <LEX_STI>) ;
 REMOVE:rare-propn-shadows-commons RARER_PROPN ;
 SELECT:prefer-punct-over-sym PUNCT (0 SYM);
