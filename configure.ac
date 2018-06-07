@@ -123,6 +123,11 @@ AC_ARG_WITH([java],
                             [do not build java library])],
             [with_java=$withval],
             [with_java=no])
+AC_ARG_WITH([cpp],
+            [AS_HELP_STRING([--without-cpp],
+                            [do not build cpp library])],
+            [with_cpp=$withval],
+            [with_cpp=yes])
 
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
@@ -319,6 +324,8 @@ AC_LANG([C++])
 # Checks for libraries
 PKG_CHECK_MODULES([LIBHFST], [hfst > 3.12],
                   [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
+AM_CONDITIONAL([WANT_CPP], [test x$with_cpp != xno])
+
 # Checks for header files
 # Checks for typedefs, structures and compiler characteristics
 AX_CXX_COMPILE_STDCXX_11
@@ -375,6 +382,7 @@ Configured $PACKAGE_STRING:
 * Libraries
     * Python 3: yes
     * Java: $with_java
+    * C++: $with_cpp
 * Clusters
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
     * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail

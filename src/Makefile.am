@@ -1297,6 +1297,7 @@ endif
 
 # {{{ C++ library
 
+if WANT_CPP
 lib_LTLIBRARIES=libomorfi.la
 include_HEADERS=cpp/omorfi.hh
 libomorfi_la_SOURCES=cpp/omorfi.cc
@@ -1306,6 +1307,7 @@ bin_PROGRAMS=omorfi-lookup
 omorfi_lookup_SOURCES=cpp/omorfi-lookup.cc
 omorfi_lookup_LDADD=libomorfi.la $(LIBHFST_LIBS)
 omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
+endif
 
 # }}}
 # {{{ java library
