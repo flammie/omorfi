@@ -95,6 +95,7 @@ Ahto	1	male
 Ahto	2	male
 Ahvo	1	male
 aHz	2	measure
+Aida	1	female
 Aija	1	female
 Aila	1	female
 Aili	1	female
@@ -129,6 +130,7 @@ alahärmäläinen	1	inhabitant
 alahärmäläinen	2	inhabitant
 alajärveläinen	1	inhabitant
 alajärveläinen	2	inhabitant
+Alan	1	male
 alankomaalainen	1	country
 alankomaalainen	2	inhabitant
 Alankomaat	1	country
@@ -256,6 +258,7 @@ Andrea	1	female
 Andreas	1	male
 Andreas	2	male
 Andreevits	1	male
+Andrew	1	male
 Anelma	1	female
 Anette	1	female
 ANG	1	currency
@@ -716,6 +719,7 @@ Bouvet’nsaari	1	country
 BOV	1	currency
 Bq	1	measure
 Br	1	currency
+Brady	2	male
 bradž	1	language
 Brasilia	1	country
 brasilialainen	1	country
@@ -905,6 +909,7 @@ Co.	1	org
 Col$	1	currency
 Cole	1	male
 Conny	1	male
+Conor	1	male
 cookinsaarelainen	1	country
 cookinsaarelainen	2	inhabitant
 cookinsaarelainen	3	country
@@ -981,6 +986,7 @@ Dani	1	male
 Daniel	1	male
 Daniela	1	female
 daPa	1	measure
+Daphne	1	female
 darad	2	measure
 dargi	1	language
 Darren	1	male
@@ -989,6 +995,7 @@ daS	2	measure
 dasr	2	measure
 daT	1	measure
 daV	1	measure
+Dave	1	male
 David	1	male
 daW	1	measure
 daWb	1	measure
@@ -1070,6 +1077,7 @@ DNA	2	media
 dogri	1	language
 dogrib	1	language
 dollari	1	currency
+Dolly	1	female
 Dominica	1	country
 dominicalainen	1	country
 dominicalainen	2	inhabitant
@@ -1141,6 +1149,7 @@ Ed	1	male
 Edgar	1	male
 Edit	1	female
 Edouard	1	male
+Eduard	1	male
 edustaja	1	title
 Edvard	1	male
 Edvin	1	male
@@ -1479,6 +1488,7 @@ fcd	1	measure
 Felicia	1	female
 Felix	1	male
 Ferdinand	1	male
+Fernandez	1	male
 fF	2	measure
 fg	1	measure
 fH	2	measure
@@ -1534,6 +1544,7 @@ forssalainen	2	inhabitant
 fPa	1	measure
 fr	1	currency
 frad	2	measure
+Frances	1	male
 Franco	2	male
 François	1	male
 frangi	1	currency
@@ -1541,6 +1552,7 @@ Frank	1	male
 Frans	1	male
 Fransiska	1	female
 Fred	1	male
+Frederic	1	male
 Fredrik	1	male
 Fredrika	1	female
 Frej	1	male
@@ -1595,6 +1607,7 @@ gambialainen	2	inhabitant
 gambialainen	3	country
 gambialainen	4	inhabitant
 ganda	1	language
+Gary	2	male
 gbaja	1	language
 GBP	1	currency
 GBq	2	measure
@@ -1639,7 +1652,9 @@ gibraltarilainen	1	country
 gibraltarilainen	2	inhabitant
 gibraltarilainen	3	country
 gibraltarilainen	4	inhabitant
+Gina	1	female
 GIP	1	currency
+Giuseppe	1	male
 GJ	1	measure
 GK	1	measure
 Gkat	1	measure
@@ -1663,6 +1678,7 @@ GPa	1	measure
 GQE	1	currency
 Grace	1	female
 Grad	2	measure
+Graham	1	male
 GRD	1	currency
 grebo	1	language
 Greger	1	male
@@ -2056,6 +2072,7 @@ hΩ	2	measure
 Ian	1	male
 iban	1	language
 ibibio	1	language
+Ibrahim	1	male
 ID	1	currency
 Ida	1	female
 Ida-Jemina	1	female
@@ -2216,6 +2233,7 @@ Iro	1	female
 irokeesikieli	1	language
 IRR	1	currency
 Isa	1	female
+Isaac	1	male
 Isabella	1	female
 Isak	1	male
 ISJ	1	currency
@@ -2433,6 +2451,7 @@ Jomi	1	male
 Jon	1	male
 Jonas	1	male
 Jonatan	1	male
+Jonathan	1	male
 Jone	1	male
 Joni	1	male
 Joni-Markku	1	male
@@ -2548,6 +2567,7 @@ juutalaisespanja	1	language
 juutalaispersia	1	language
 juvalainen	1	inhabitant
 juvalainen	2	inhabitant
+Jürgen	1	male
 Jyri	1	male
 Jyrki	1	male
 jyväskyläläinen	1	inhabitant
@@ -3399,6 +3419,7 @@ lapväärttiläinen	2	inhabitant
 lari	1	currency
 Lari	1	male
 Larissa	1	female
+Larry	1	male
 Lars	1	male
 Lasse	1	male
 Lassi	1	male
@@ -4029,6 +4050,7 @@ mende	1	language
 Menna	1	female
 MEP	1	title
 meppi	1	title
+Mercedes	1	female
 merenkulkuneuvos	1	title
 Meri	1	female
 Meri	2	female
@@ -4257,6 +4279,7 @@ montserratilainen	3	country
 montserratilainen	4	inhabitant
 Moona	1	female
 MOP	1	currency
+Morgan	1	male
 morisyen	1	language
 Moritz	1	male
 Mosambik	1	country
@@ -4480,6 +4503,7 @@ nicaragualainen	3	country
 nicaragualainen	4	inhabitant
 Nicholas	1	male
 Nicholas	2	male
+Nick	1	male
 Nicky	1	male
 Niclas	1	male
 Nico	1	male
@@ -4768,6 +4792,7 @@ paavolainen	2	inhabitant
 paavolalainen	1	inhabitant
 paavolalainen	2	inhabitant
 PAB	1	currency
+Pablo	1	male
 padasjokelainen	1	inhabitant
 padasjokelainen	2	inhabitant
 pahlavi	1	language
@@ -4806,6 +4831,7 @@ panamalainen	4	inhabitant
 pandžabi	1	language
 pangasinan	1	language
 Panu	1	male
+Paolo	1	male
 paperikoneenhoitaja	1	title
 papiamentu	1	language
 papualaiskieli	1	language
@@ -4864,6 +4890,7 @@ pe	1	time
 pe	2	time
 pedersöreläinen	1	inhabitant
 pedersöreläinen	2	inhabitant
+Pedro	1	male
 Peetu	1	male
 PEI	1	currency
 Peik	1	male
@@ -5838,6 +5865,7 @@ Simo	1	male
 simolainen	1	inhabitant
 simolainen	2	inhabitant
 Simon	1	male
+Simona	1	female
 Simone	1	female
 Simonpoika	1	male
 simpeleläinen	1	inhabitant
@@ -5998,6 +6026,7 @@ Stefan	1	male
 Stella	1	female
 Sten	1	male
 Stephan	1	male
+Stephanie	1	female
 Stephen	1	male
 Steve	1	male
 Steven	1	male
@@ -7088,6 +7117,7 @@ William	1	male
 Willy	1	male
 Wilma	1	female
 Wilmer	1	male
+Winston	1	male
 wolaitta	1	language
 Wolfgang	1	male
 wolof	1	language
