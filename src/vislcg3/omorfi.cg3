@@ -25,7 +25,7 @@ STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ N
     DET
     NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT ESS
     SG PL
-    ACTV PASV INDV POTN IMPV COND PRES PAST
+    ACT PSS INDV POTN IMPV COND PRES PAST
     INFA INFE INFMA INFMINEN
     POSSSG1 POSSSG2 POSS3 POSSPL1 POSSPL2
     CLITHAN CLITKO CLITPA CLITS CLITKA CLITKAAN CLITKIN
@@ -71,25 +71,47 @@ LIST AD = ADJ ADV ADP ;
 LIST CMP-SUP = CMP SUP ;
 ##
 LIST POSS = POSSSG1 POSSSG2 POSS3 POSSPL1 POSSPL2 ;
+## agent participle
+LIST AGENT-PCP = <DRV_MA> ;
 ## case subgroups
 LIST LOCATIVE-IN = INE ADE ;
 LIST LOCATIVE-TO = ILL ALL ;
 LIST LOCATIVE-FROM = ELA ABL ;
 LIST ILL/ALL/PAR = ILL ALL PAR ;
 LIST PERS-PRON-SG = (PRS SG1) (PRS SG2) (PRS SG3) ;
+# ordinals XXX: adj doesn't have ord yet...
+LIST NUM-ORD = (NUM ORD) ;
+LIST ADJ-ORD = (ADJ) ;
+# Infintive a
+LIST INFA-SG = (INFA SG) ;
+LIST INFA-PL = (INFA PL) ;
+# adj cases (and other agreement stuffs)
+LIST ADJ-PAR = (ADJ PAR) (DET PAR) (PRON DEM PAR) (NUM PAR) ;
+LIST ADJ-INE = (ADJ INE) (DET INE) (PRON DEM INE) (NUM INE) ;
+LIST ADJ-ELA = (ADJ ELA) (DET ELA) (PRON DEM ELA) (NUM ELA) ;
+LIST ADJ-ILL = (ADJ ILL) (DET ILL) (PRON DEM ILL) (NUM ILL) ;
+LIST ADJ-ADE = (ADJ ADE) (DET ADE) (PRON DEM ADE) (NUM ADE) ;
+LIST ADJ-ABL = (ADJ ABL) (DET ABL) (PRON DEM ABL) (NUM ABL) ;
+LIST ADJ-ALL = (ADJ ALL) (DET ALL) (PRON DEM ALL) (NUM ALL) ;
+LIST ADJ-TRA = (ADJ TRA) (DET TRA) (PRON DEM TRA) (NUM TRA) ;
+LIST ADJ-ABE = (ADJ ABE) (DET ABE) (PRON DEM ABE) (NUM ABE) ;
+LIST ADJ-ESS = (ADJ ESS) (DET ESS) (PRON DEM ESS) (NUM ESS) ;
+# inmpv sg2 is systematically indv pres sg3
+LIST IMPV-SG2 = (IMPV SG2) ;
+LIST INDV-SG3 = (INDV SG3) ;
 # }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
 LIST CLB = "<,>" ;
 # }}}
-# {{{ words
+# {{{ word groups
 
 ## short words that many find problems with
 LIST BADEVIL_WORDS =
     ("kui" NOUN) ("tai" NOUN) ("vai" NOUN) ("pai" NOUN)
     ("par" NOUN) ("tule" NOUN) ("kuvi" NOUN) ("kos" NOUN)
-    ("mon" NOUN) ("lev" NOUN)
+    ("mon" NOUN) ("lev" NOUN) ("ka" NOUN)
     ("taka" NOUN) ("edus" NOUN)
     ("he" INTJ) ;
 
@@ -119,15 +141,17 @@ LIST RARER-PROPN =
     ("Onni" PROPN) ("Joki" PROPN) ("Muuri" PROPN) ("Vuo" PROPN)
     ("Vuoksi" PROPN) ("Kiva" PROPN) ("Miele" PROPN) 
     ("Maakunta" PROPN) ("Pia" PROPN) ("Per" PROPN) ("Olle" PROPN)
-    ("Johan" PROPN) ("Aino" PROPN) ("Halunen" PROPN) ;
+    ("Johan" PROPN) ("Aino" PROPN) ("Halunen" PROPN) ("Eni" PROPN) 
+    ("Seuranen" PROPN) ;
 ## also some cases where a rare noun blocks commoner propn
 ## often languages, nationalities, tribes
 LIST RARER-NOUN = ("missouri" NOUN) ("tai" NOUN) ("vai" NOUN) 
-    ("muutti" NOUN) ;
+    ("muutti" NOUN) ("kanna" NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs
 LIST RARER-ADV =
-    ("kuin" ADV) ("kun" ADV) ("tai" ADV) ("sen" ADV) ;
+    ("kuin" ADV) ("kun" ADV) ("tai" ADV) ("sen" ADV) 
+    ("viisi" ADV) ("kuuluu" ADV) ("koska" ADV) ("pitkää" ADV) ;
 ## verbs that shadow some noun forms etc.
 LIST RARER-VERB =
     ("juuria" VERB) ("eritä" VERB) ("niittää" VERB)
@@ -164,7 +188,7 @@ LIST ADV-LIKE-ADJ-ELA =
 LIST ADV-LIKE-ADJ-ADE =
     ("syvällä" ADV) ("samalla" ADV) ("pitkällä" ADV) ;
 LIST ADV-LIKE-ADJ-INS =
-    ("myöhemmin" ADV) ("nykyisin" ADV) ;
+    ("myöhemmin" ADV) ("nykyisin" ADV) ("aiemmin" ADV) ;
 LIST ADV-LIKE-ADJ-GEN = ("vähän" ADV) ("paljon" ADV) 
     ("vähemmän" ADV) ("enemmän" ADV) ;
 ## translatives np final
@@ -196,12 +220,13 @@ LIST RARER-ADP =
 ## adpositions with partitive complement
 LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) 
     ("ilman" ADP) ("kautta" ADP) ("huolimatta" ADP) ("asti" ADP) 
-    ("sitten" ADP) ;
+    ("sitten" ADP) ("ennen" ADP) ;
 ## adositions with genitive complement
 LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP) 
     ("alla" ADP) ("kanssa" ADP) ("kautta" ADP) ("puolesta" ADP) 
     ("läpi" ADP) ("johdolla" ADP) ("sisällä" ADP) ("perusteella" ADP) 
-    ("sijaan" ADP) ("suhteen" ADP) ("avulla" ADP) ("jälkeen" ADP) ;
+    ("sijaan" ADP) ("suhteen" ADP) ("avulla" ADP) ("jälkeen" ADP) 
+    ("myötä" ADP) ;
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" ADP) ;
 ## adpositions with illative complement
@@ -209,10 +234,10 @@ LIST ADPS-WITH-ELA = ("ulos" ADP) ;
 ## Verbs with inf complements
 ## ... infa
 LIST VERBS-WITH-INFA = ("alkaa" AUX) ("haluta" AUX) ("tahtoa" AUX) 
-    ("saattaa" AUX) ("aikoa" AUX) ;
+    ("saattaa" AUX) ("aikoa" AUX) ("pitää" AUX) ;
 ## ... inf maan
 LIST VERBS-WITH-INFMAAN = ("alkaa" AUX) ("päästä" AUX) ("ruveta" AUX) 
-    ("pystyä" VERB) ("joutua" AUX) ;
+    ("pystyä" VERB) ("joutua" AUX) ("tulla" VERB) ;
 ## nouns where plural is rare / theoretical / shadows more common stuff
 LIST NOUNS-RARELY-PLURAL = ("kota" NOUN PL) ("ikä" NOUN PL)
     ("kirjo" NOUN PL) ("lei" NOUN PL) ("bi" NOUN PL)
@@ -238,6 +263,8 @@ LIST SG2POSS-CONFUSION = ("kuu" POSSSG2) ("voi" POSSSG2) ("tie" POSSSG2)
     ("pää" POSSSG2) ("harja" POSSSG2) ("vuo" POSSSG2) ("pää" POSSSG2)
     ("halu" POSSSG2) ("tapa" POSSSG2) ("tosi" POSSSG2) ("pola" POSSSG2 ILL)
     ("poli" POSSSG2 ILL);
+## }}}
+## {{{ words
 ## "siitä" = {to conceive, from it}
 LIST SIITTÄÄ-VERBS = ("siittää" VERB) ("siitä" VERB) ("si’itä" VERB) ;
 LIST SIITÄ-DEM = ("se" PRON) ("se" DET) ;
@@ -440,14 +467,26 @@ LIST VOI-AUX = ("voida" AUX SG3) ;
 ## ei = {no, not, none, negative aux, }
 LIST EI-INTJ = ("ei" INTJ) ;
 LIST EI-AUX = ("ei" AUX) ;
-## tuktittava 
+## tutlittava 
 LIST TUTKITTAVA-DRV-VA = ("tutkittaa" <DRV_VA>) ;
 LIST TUTKITTAVA-NOUN = ("tutkittava" NOUN) ;
+## merkittävä
+LIST MERKITTÄVÄ-DRV-VA = ("merkittää" <DRV_VA>) ;
+LIST MERKITTÄVÄ-ADJ = ("merkittävä" ADJ) ;
 ## copulas for minen verb chains
 LIST OLE-CONNEG = ("olla" VERB CONNEG) ;
 ## vaan = {not ... but (CCONJ), not really at all (ADV)}
 LIST VAAN-ADV = ("vaan" ADV) ;
 LIST VAAN-CCONJ = ("vaan" CCONJ) ;
+## pidetään = {are held, are lengthened}
+LIST PIDETÄ-PASS = ("pidetä" VERB PSS) ;
+LIST PITÄÄ-PASS = ("pitää" VERB PSS) ;
+## joissa = {in the rivers, which}
+LIST JOISSA-PRON = ("joka" PRON PL) ;
+LIST JOISSA-NOUN = ("joki" NOUN PL) ;
+## apu, avu 
+LIST AVU-NOUN = ("apu" NOUN) ;
+LIST APU-NOUN = ("avu" NOUN) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -466,18 +505,21 @@ LIST DERIVATIONS = <DRV_LA> <DRV_U> <DRV_MINEN> <DRV_JA> <DRV_NEN>
 
 # }}}
 
-BEFORE-SECTIONS # {{{ preprocess worst stuff away
+BEFORE-SECTIONS # {{{ preprocess worst stuff away and select options
 
+## removes all analyses that get too many complaints by users
 REMOVE:bad-words BADEVIL_WORDS ;
 
+## ensure ordinals only gives one analysis
+## (two is needed for different standards / treebanks)
+REMOVE:UD-ordinal-is-adjective NUM-ORD (0 ADJ-ORD) ;
+
+## ensure infa short form only gives one analysis
+## (two is needed for different standards / treebanks)
+REMOVE:infa-is-sg INFA-PL (0 INFA-SG) ;
 # }}}
 
 SECTION # {{{ words minimal context
-
-# UD preferences
-
-# FIXME: use agreements to match lemma
-REMOVE:UD-ordinal-is-adjective NUM (0 ORD) ;
 
 # trad. possessives
 # sinun {kuusi, voisi, tiesi}
@@ -556,6 +598,8 @@ SELECT:voi-aux-infa VOI-AUX (1* INFA BARRIER VERB) ;
 REMOVE:ei-intj-intj EI-INTJ (NEGATE 1 VITTUSAATANA) ;
 ##! $ tutkittavan todellisuudentaju näyttäytyy
 REMOVE:tutkittava-over-tutkittaa TUTKITTAVA-DRV-VA (0 TUTKITTAVA-NOUN) ;
+##! $ aiheesta annettiin ensimmäinen merkittävä päätös
+REMOVE:merkittävä-over-merkittää MERKITTÄVÄ-DRV-VA (0 MERKITTÄVÄ-ADJ) ;
 ##! $ se ei vaan onnistu
 SELECT:ei-vaan-adv VAAN-ADV (-1 NEG) ;
 ##! $ ulkopolitiikka ei tehdä pressan johdolla, vaan pressasta huolimatta
@@ -789,7 +833,8 @@ SELECT:päin-adp-after-towards-case PÄIN-ADP (-1* ILL/ALL/PAR BARRIER VERB) ;
 ##! € on hyvä olo ollut siitä lähtien.
 SELECT:lähtien-after-from-case LÄHTIEN-ADP (-1* LOCATIVE-FROM BARRIER VERB) ;
 
-
+##! € avun tarpeessa
+REMOVE:apu-over-avu AVU-NOUN (0 AVU-NOUN) ;
 
 #
 # selected words from original Karlsson's cg-1 end here }}}
@@ -799,7 +844,7 @@ SECTION # {{{ grammar and context
 ##! € en tule.
 ##! € ole hiljaa.
 IFF:conneg-when-neg CONNEG (-1* NEG BARRIER CONNEG) ;
-
+SELECT:neg-when-conneg NEG (1* CONNEG BARRIER VERB) ;
 ##! € poliisilla on ollut etsintäatehtävä.
 ##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa.
 SELECT:perfect-tense PCPNUT (-1* COPULA BARRIER VERBAUX) ;
@@ -827,13 +872,30 @@ SELECT:verb-pl3-agree-left VERB-PL3 (-1 NOUN + PL) ;
 ##! $ ei ole lahjahevosta suuhin katsomineb
 IFF:ei-ole-infminen INFMINEN (-1* OLE-CONNEG) ;
 
+##! agent pcp must be poss or with possessor nearby
+##! otherwise it's always infinitive or not ambiguous
+##! € kenen piirtämään tauluun me kirjoitetaan?
+REMOVE:gen-agent-pcp AGENT-PCP (NEGATE -1 GEN) ;
+
+##! basic agreement
+SELECT:adj-par-agreement ADJ-PAR (1 PAR) ;
+SELECT:adj-ine-agreement ADJ-INE (1 INE) ;
+SELECT:adj-ela-agreement ADJ-ELA (1 ELA) ;
+SELECT:adj-ill-agreement ADJ-ILL (1 ILL) ;
+SELECT:adj-ade-agreement ADJ-ADE (1 ADE) ;
+SELECT:adj-abl-agreement ADJ-ABL (1 ABL) ;
+SELECT:adj-all-agreement ADJ-ALL (1 ALL) ;
+SELECT:adj-tra-agreement ADJ-TRA (1 TRA) ;
+SELECT:adj-abe-agreement ADJ-ABE (1 ABE) ;
+SELECT:adj-ess-agreement ADJ-ESS (1 ESS) ;
+
 ##! $ sanoja "lainattuja sanoja".
 SELECT:final-needs-initial <POSITION_FINAL> (-2* <POSITION_INITIAL> BARRIER <POSITION_FINAL>) ;
 ##! $ sanoja "lainattuja sanoja".
 SELECT:initial-needs-final <POSITION_INITIAL> (2* <POSITION_FINAL> BARRIER <POSITION_INITIAL>) ;
 
 # }}}
-SECTION # {{{ last-resorts
+AFTER-SECTIONS # {{{ last-resorts
 
 ## This section is a sledgehammer for all things even slightly rare
 ## and suspicious
@@ -887,6 +949,8 @@ REMOVE:lexicalised-over-derived-sti <DRV_STI> (0 <LEX_STI>) ;
 REMOVE:rare-verb-shadows-commons RARER-VERB ;
 REMOVE:rare-propn-shadows-commons RARER-PROPN ;
 REMOVE:rare-noun-shadows-commons RARER-NOUN ;
+REMOVE:rare-adp-shadows-commons RARER-ADP ;
+REMOVE:rare-adv-shadows-commons RARER-ADV ;
 SELECT:prefer-punct-over-sym PUNCT (0 SYM);
 REMOVE:prefer-standard NONSTANDARDS ;
 REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
@@ -899,6 +963,12 @@ REMOVE:avoid-clitics CLITIC ;
 REMOVE:blacklists BLACKLISTED ;
 REMOVE:avoid-sg0 SG0 ;
 REMOVE:rare-pers-pron-forms PL (0 PERS-PRON-SG) ;
+REMOVE:adj-over-drv-va <DRV_VA> (0 ADJ) ;
+REMOVE:prefer-pri-sg3-over-imp-sg2 IMPV-SG2 (0 INDV-SG3) ;
+
+SELECT:joka-over-joki JOISSA-PRON (0 JOISSA-NOUN) ;
+##! $ heitä pidetään viisaina
+REMOVE:pitää-over-pidetä PIDETÄ-PASS (0 PITÄÄ-PASS) ;
 # }}}
 
 # vim: set ft=vislcg3 foldmethod=marker:
