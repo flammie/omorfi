@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20171115_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20180511_rc1], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20171115_alpha
+VERSION=20180511_rc1
 
 # Options
 AC_ARG_WITH([hfst],
@@ -158,7 +158,7 @@ AM_CONDITIONAL([WANT_BIG_TESTS], [test "x$big_tests" != xno])
 
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
-AC_MSG_RESULT([40 seconds to mars])
+AC_MSG_RESULT([we are the new world order])
 
 # Checks for programs
 AM_PROG_AR
