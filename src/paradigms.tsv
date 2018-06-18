@@ -1074,7 +1074,7 @@ NUM_51kuudessentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51kuudessentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudessentiljoonas	ssentiljoonas
 NUM_51kuudesseptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesseptiljardis	sseptiljardis
 NUM_51kuudesseptiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesseptiljoonas	sseptiljoonas
-NUM_51kuudestoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudestoista	stoista
+NUM_51kuudestoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	stoista	stoista
 NUM_51kuudestredekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudestredekiljardis	stredekiljardis
 NUM_51kuudestredekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudestredekiljoonas	stredekiljoonas
 NUM_51kuudestriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudestriljardis	striljardis
