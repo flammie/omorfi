@@ -3,6 +3,26 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20180511
+
+* Universal dependencies version 2.2 is now used as target
+* At least 226 new words: 239 additions and 13 deletions in lexeme database
+* Most changes are in development infra, so not visible to end users...
+* Started rewriting CG from the scratch
+* The APIs for programming language deprecate load(filename) and load(dir) forms
+  of filename guessing functions in favour of forthcoming loadAnalyser(file),
+  loadLemmatiser(file), loadUDPipe(file) etc. etc. functions
+* Working towards more general tokenise-analyse-disambiguate pipelines maybe,
+  or just refactoring
+* lots more automated tests -> lots less human errors
+* By popular request: there are two analysers now, one with small dictionary
+  and one with full, use the smaller one when you do not want to see birds or
+  languages or tribes analysed. The smaller one replaces the old default, but
+  the new tools will require you to select one explicitly anyways
+* fixes and workarounds: java and c++ can now be disabled partially or totally
+* adopted SG0 as possible verb form analysis from UD data
+
+
 ## Significant changes in 20170515
 
 * Universal Dependencies version 2 is now used, still mainly lemma, UPOS,
