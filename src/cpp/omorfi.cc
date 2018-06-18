@@ -29,6 +29,8 @@
 
 #include "omorfi.hh"
 
+#define OMORFI_LOOKUP_TIMEOUT 6.66f
+
 namespace omorfi {
 
     Omorfi::Omorfi() :
@@ -47,7 +49,7 @@ namespace omorfi {
             "/usr/share/omorfi/"};
         char* homepath = getenv("HOME");
         if (homepath != nullptr) {
-            std::string homeomorfi = string(homepath) + "/.omorfi/";
+            std::string homeomorfi = std::string(homepath) + "/.omorfi/";
             stdPaths.push_back(homeomorfi);
         }
         for (auto path : stdPaths) {
@@ -114,7 +116,8 @@ namespace omorfi {
         std::vector<std::string> anals;
         if (can_analyse_) {
             // do it
-            hfst::HfstOneLevelPaths* results = analyser_->lookup_fd(token);
+            hfst::HfstOneLevelPaths* results =
+                analyser_->lookup_fd(token, -1, OMORFI_LOOKUP_TIMEOUT);
             for (hfst::HfstOneLevelPath anal : *results) {
                 hfst::StringVector analysis = anal.second;
                 std::string a;
