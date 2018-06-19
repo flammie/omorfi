@@ -27,7 +27,7 @@
 
 /** Print standard usage message.
  *
- * @param progam_name name of the program
+ * @param program_name name of the program
  */
 void
 print_usage(const char* program_name) {
