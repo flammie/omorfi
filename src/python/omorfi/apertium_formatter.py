@@ -288,6 +288,7 @@ class ApertiumFormatter(Formatter):
         "Opl1": "pxpl1",
         "Opl2": "pxpl2",
         "ORDINAL": "ord",
+        "ORD": "ord",
         "ORG": "al",
         "Osg1": "pxsg1",
         "Osg2": "pxsg2",
@@ -307,6 +308,7 @@ class ApertiumFormatter(Formatter):
         "Psg1": "p1><sg",
         "Psg2": "p2><sg",
         "Psg3": "p3><sg",
+        "Psg0": "p3><sg",
         "PUNCT": "punct",
         "Qhan": "+han<enc",
         "Qkaan": "+kaan<enc",
@@ -325,6 +327,7 @@ class ApertiumFormatter(Formatter):
         "SG1": "p1",
         "SG2": "p2",
         "SG3": "p3",
+        "SG0": "p3",
         "SENTENCE-BOUNDARY": "",
         "SPACE": "",
         "SUFFIX": "",
@@ -429,8 +432,8 @@ class ApertiumFormatter(Formatter):
         for i in anals.split('|'):
             if i == '@@COPY-STEM@@':
                 apestring += lexc_escape(surf)
-            elif i.startswith('@@LITERAL:') and i.endswith('@@'):
-                apestring += lexc_escape(i[len('@@LITERAL:'):-len('@@')])
+            elif i.startswith('@@LITERAL') and i.endswith('@@'):
+                apestring += lexc_escape(i[len('@@LITERAL'):-len('@@')])
             else:
                 apestring += self.stuff2lexc(i)
         return apestring
