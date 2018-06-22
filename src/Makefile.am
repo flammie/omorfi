@@ -54,6 +54,7 @@ FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
 			   python/omorfi/monodix_formatter.py \
 			   python/omorfi/no_tags_formatter.py \
 			   python/omorfi/labeled_segments_formatter.py \
+			   python/omorfi/token.py \
 			   python/omorfi/formatter.py \
 			   python/omorfi/kotus_sanalista_formatter.py
 # file formats
@@ -218,6 +219,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   test-scripts/paradigm-coverage.bash \
 		   test-scripts/plusplus-has-documents.bash \
 		   test-scripts/valid-datatypes.bash \
+		   test-scripts/lexc-errors.bash \
 		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
