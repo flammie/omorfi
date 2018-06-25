@@ -18,7 +18,7 @@ function print_usage() {
 }
 
 function print_help() {
-    echo "Analyse separate word-forms or word-form lists"
+    echo "Count and measure coverage of omorfi for Finnish texts"
     echo
     echo "  -h, --help        Print this help dialog"
     echo "  -V, --version     Print version info"
