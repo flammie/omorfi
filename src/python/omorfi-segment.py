@@ -45,9 +45,9 @@ def main():
     """Segment text in some formats."""
     a = ArgumentParser()
     a.add_argument('-s', '--segmenter', metavar='SFILE',
-                   help="load segmenter from SFILE")
+                   help="load segmenter from SFILE", required=True)
     a.add_argument('-S', '--labeller', metavar='LSFILE',
-                   help="load labelsegmenter from LSFILE")
+                   help="load labelsegmenter from LSFILE", required=True)
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',

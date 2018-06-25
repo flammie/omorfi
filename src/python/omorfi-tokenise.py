@@ -3,7 +3,7 @@
 
 from argparse import ArgumentParser, FileType
 # CLI stuff
-from sys import stdin, stdout
+from sys import stdin, stdout, stderr
 # statistics
 from time import perf_counter, process_time
 
@@ -18,7 +18,8 @@ def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
     a.add_argument('-a', '--analyser', metavar='AFILE',
-                   help="load tokeniser model from (analyser) AFILE")
+                   help="load tokeniser model from (analyser) AFILE",
+                   required=True)
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -30,7 +31,7 @@ def main():
     a.add_argument('-O', '--output-format', metavar="OUTFORMAT",
                    default="moses",
                    help="format output for OUTFORMAT", choices=['moses',
-                       'conllu', 'json'])
+                       'conllu', 'json', 'ftb3'])
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.analyser:
@@ -70,7 +71,7 @@ def main():
             print(' '.join([surf['surf'] for surf in surfs]), file=options.outfile)
         elif options.output_format == 'json':
             print(json.encode(surfs))
-        else:
+        elif options.output_format == 'conllu':
             print("# sent_id =", lines, file=options.outfile)
             print("# text =", line.rstrip("\n"), file=options.outfile)
             i = 1
@@ -79,6 +80,15 @@ def main():
                       format_misc_ud(surf),
                       sep="\t", file=options.outfile)
                 i += 1
+        elif options.output_format == 'ftb3':
+            print("<s><loc file=\"", options.infile.name, "\" line=\"",
+                    lines, "\" />", file=options.outfile, sep="")
+            i = 1
+            for surf in surfs:
+                print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_", "_",
+                        sep="\t", file=options.outfile)
+                i += 1
+            print("</s>", file=options.outfile)
         if options.output_format == 'conllu':
             print(file=options.outfile)
     cpuend = process_time()

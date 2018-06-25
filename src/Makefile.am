@@ -180,16 +180,24 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-segment.sh \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
+			bash/omorfi-tokenise.bash \
+			bash/omorfi-freq-evals.bash \
+			bash/omorfi-conllu.bash \
+			bash/omorfi-ftb3.bash \
+			bash/omorfi-vislcg.bash \
 			bash/omorfi.bash \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
 			python/omorfi-conllu.py \
 			python/omorfi-tokenise.py \
-			python/omorfi-segment.py
+			python/omorfi-segment.py \
+			python/omorfi-freq-evals.py \
+			python/omorfi-ftb3.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
-				 python/omorfi/settings.py
+				 python/omorfi/settings.py \
+				 python/omorfi/token.py
 
 
 # These go into dist tarballs... which we no longer make
@@ -204,6 +212,8 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   python/omorfi-vislcg.py \
 		   python/omorfi-segment.py \
 		   python/omorfi-tokenise.py \
+		   python/omorfi-freq-evals.py \
+		   python/omorfi-ftb3.py \
 		   bash/omorfi-analyse-text.sh \
 		   bash/omorfi-analyse-tokenised.sh \
 		   bash/omorfi-generate.sh \
@@ -211,6 +221,11 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-hyphenate.sh \
 		   bash/omorfi-segment.sh \
 		   bash/omorfi-disambiguate-text.sh \
+		   bash/omorfi-tokenise.bash \
+		   bash/omorfi-freq-evals.bash \
+		   bash/omorfi-conllu.bash \
+		   bash/omorfi-ftb3.bash \
+		   bash/omorfi-vislcg.bash \
 		   test-scripts/constraint-unique-keys.bash \
 		   test-scripts/consistent-attribute-keys.bash \
 		   test-scripts/valid-datatypes.bash \

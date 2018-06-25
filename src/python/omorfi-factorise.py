@@ -11,9 +11,9 @@ def main():
     """Preprocess text for moses factored modeling."""
     a = ArgumentParser()
     a.add_argument('-a', '--analyser', metavar='AFILE',
-                   help="load analyser model from AFILE")
+                   help="load analyser model from AFILE", required=True)
     a.add_argument('-s', '--segmenter', metavar='SFILE',
-                   help="load segmenter model from SFILE")
+                   help="load segmenter model from SFILE", required=True)
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -34,7 +34,7 @@ def main():
             print("Reading segmenter model", options.segmenter)
         omorfi.load_segmenter(options.segmenter)
     else:
-        print("at least analyser file is needed", file=stderr)
+        print("at least segmenter file is needed", file=stderr)
         exit(1)
     if options.infile:
         infile = options.infile

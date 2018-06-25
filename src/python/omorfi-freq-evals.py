@@ -6,7 +6,7 @@ Test sort | uniq -c | sort -nr'd gold analysis data for faithfulness
 
 
 from argparse import ArgumentParser, FileType
-from sys import stderr, stdout
+from sys import stderr, stdout, stdin
 from time import perf_counter, process_time
 
 from omorfi.omorfi import Omorfi
@@ -16,7 +16,7 @@ def main():
     a = ArgumentParser()
     a.add_argument('-a', '--analyser', metavar='FSAFILE', required=True,
                    help="load analyser from FSAFILE")
-    a.add_argument('-i', '--input', metavar="INFILE", type=open, required=True,
+    a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-o', '--output', metavar="OUTFILE",
                    type=FileType('w'),
@@ -42,8 +42,13 @@ def main():
             if options.verbose:
                 print("reading analyser from", options.analyser)
             omorfi.load_analyser(options.analyser)
+        if not options.infile:
+            options.infile = stdin
+            print("reading from <stdin>")
         if not options.statfile:
             options.statfile = stdout
+        if not options.outfile:
+            options.outfile = stdout
     except IOError:
         print("Could not process file", options.analyser, file=stderr)
         exit(2)
