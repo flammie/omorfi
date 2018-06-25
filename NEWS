@@ -21,6 +21,9 @@ see git log and then `ChangeLog.old`.
   the new tools will require you to select one explicitly anyways
 * fixes and workarounds: java and c++ can now be disabled partially or totally
 * adopted SG0 as possible verb form analysis from UD data
+* The end users are now provided with bash-scripts wrappers for all
+  functionalities, whereas the typically python versions allow more control
+  of parametres
 
 
 ## Significant changes in 20170515
