@@ -135,7 +135,7 @@ function omorfi_conllu() {
 }
 
 function omorfi_factorise() {
-    omorfisegmenter=$(omorfi_find "segmenter")
+    omorfisegmenter=$(omorfi_find "segment")
     if test $# -lt 1 ; then
         omorfianalyser=$(omorfi_find "analyse")
         dict=analyse
@@ -146,7 +146,7 @@ function omorfi_factorise() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "analyse"
     elif test -z "$omorfisegmenter" ; then
-        omorfi_find_help "segmenter"
+        omorfi_find_help "segment"
     else
         omorfi_tokenise $dict |\
             python_wrap omorfi-factorise.py -a $omorfianalyser\

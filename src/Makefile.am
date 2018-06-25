@@ -178,6 +178,7 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-generate.sh \
 			bash/omorfi-spell.sh \
 			bash/omorfi-segment.sh \
+			bash/omorfi-factorise.bash \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
 			bash/omorfi-tokenise.bash \
@@ -226,6 +227,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-conllu.bash \
 		   bash/omorfi-ftb3.bash \
 		   bash/omorfi-vislcg.bash \
+		   bash/omorfi-factorise.bash \
 		   test-scripts/constraint-unique-keys.bash \
 		   test-scripts/consistent-attribute-keys.bash \
 		   test-scripts/valid-datatypes.bash \
