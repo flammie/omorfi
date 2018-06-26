@@ -4,5 +4,5 @@ lexeme: esim.
 ---
 
 ###  esim. 
-esimerkiksi, "ex." or for example
+esimerkiksi, "e.g." or for example
 

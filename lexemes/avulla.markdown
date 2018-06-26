@@ -4,5 +4,5 @@ lexeme: avulla
 ---
 
 ###  avulla 
-with help of, as adp, complement is genitive or possessive, "sen avulla"
+adposition (with help of) when can be attached to a genitive NP, otherwise noun forms of *apu* (help)
 

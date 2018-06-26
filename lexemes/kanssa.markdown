@@ -4,7 +4,7 @@ lexeme: kanssa
 ---
 
 ###  kanssa 
-with something, adposition with genitive complement, suffix-likey, "Pekan kanssa", "kanssani"
+adposition (with) when can be attached to a genitive NP, otherwise adverb (as well)
 
 
 ###  kanssa  (alternate reading 2 )

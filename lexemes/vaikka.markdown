@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: vaikka
 ---
 
+###  vaikka 
+adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
+
+
 ###  vaikka  (alternate reading 2 )
 
 even, as adverb, "vaikka mitä", "vaikka kuinka paljon" see VISK § 841

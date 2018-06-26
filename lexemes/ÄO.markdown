@@ -6,7 +6,3 @@ lexeme: ÄO
 ###  ÄO 
 Älykkyysosamäärä
 
-
-###  ÄO 
-Älykkyysosamäärä
-

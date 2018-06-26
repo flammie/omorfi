@@ -3,7 +3,11 @@ layout: lexeme
 lexeme: jäljestä
 ---
 
+###  jäljestä 
+from behind, adverb
+
+
 ###  jäljestä  (alternate reading 2 )
 
-from behind, as adposition
+from behind of, as adposition
 

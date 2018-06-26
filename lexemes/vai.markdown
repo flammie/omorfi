@@ -4,6 +4,10 @@ lexeme: vai
 ---
 
 ###  vai 
+This noun means a Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or).
+
+
+###  vai 
 Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunctions and adverbs
 
 

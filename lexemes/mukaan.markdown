@@ -4,7 +4,7 @@ lexeme: mukaan
 ---
 
 ###  mukaan 
-according to, adp, genitive complement or possessive suffix, "lehden mukaan", "hänen mukaansa"
+adposition (with) when can be attached to a genitive NP, otherwise adverb (along)
 
 
 ###  mukaan  (alternate reading 2 )
