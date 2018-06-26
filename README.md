@@ -148,41 +148,43 @@ For fully usable system you may want to turn the applications on.
 
 ## Usage
 
-→ See also: [man pages](https://flammie.github.io/omorfi/man/)
 
-Following are basic shell scripts that only use *HFST* tools and GNU
-*coreutils*:
+All of the scripts can be invoked with `-h` to see options. Most take file
+(list) as input or just read standard input, in plain text format. Some
+programs may require specific automata or language models.
 
-- `omorfi-analyse-text.sh`: analyse plain text into ambiguous word-form lists
-- `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line
-- `omorfi-generate.sh`: generate word-forms from omor descriptions
+1. `omorfi-disambiguate-text.sh`: analyse text and disambiguate using VISL CG-3
+1. `omorfi-analyse-text.sh`: analyse plain text into ambiguous word-form lists
+1. `omorfi-spell.sh`: spell-check and correct word-forms one per line
+1. `omorfi-segment.sh`: morphologically segment word-forms one per line
+1. `omorfi-conllu.bash`: analyse text and print CONLL-U format output (Universal
+  Dependencies)
+1. `omorfi-freq-evals.bash`: analyse text and print out frequency list and
+  coverage
+1. `omorfi-ftb3.bash`: analyse text and print out FTB3.1 formatted output
+  (FinnTreeBank, CONLL-X compatible)
+1. `omorfi-factorise.bash`: analyse text and print out Moses factored format
+1. `omorfi-vislcg.bash`: analyse text and print out VISL CG 3 output
+1. `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line 
+   (unlike other functions, this takes word list and not text input)
+1. `omorfi-generate.sh`: generate word-forms from omor descriptions
+   (unlike other functions, takes analysis list as input)
 
-The following scripts require *python*:
+Some functions come with lower-level interface, where you have to take care
+of full pipeline manually but have more control over parametres:
 
 - `omorfi-tokenise.py`: format raw text into tokens (words and puncts).
 - `omorfi-conllu.py`: analyse and generate CONLL-U formatted data (Universal
   Dependencies) format
 - `omorfi-vislcg.py`: analyse raw texts into VISL CG 3 format
-
-The following requires *python* and *VISL CG 3*
-
-- `omorfi-disambiguate-text.sh`: analyse text and disambiguate using VISL CG-3
-
-The following uses *hfst-ospell*:
-
-- `omorfi-spell.sh`: spell-check and correct word-forms one per line
-
-The following script requires *segmenting* automata enabled:
-
-- `omorfi-segment.sh`: morphologically segment word-forms one per line
 - `omorfi-segment.py`: morphologically segment word-forms one per line
-
-The following script uses *all* enabled automata and *python*:
-
 - `omorfi-factorise.py`: analyse raw texts into moses factored format
+- `omorfi-freq-evals.py`: analyse frequency lists and generate coverage
+- `omorfi-ftb3.py`: analyse and generate FTB3 (CONLL-X) format
 
-For further examples please refer to [omorfi man pages](https://flammie.github.io/omorfi/man/)
-or [omorfi usage examples in github pages](https://flammie.github.io/omorfi/pages/usage-examples.html)
+For further examples please refer to:
+* [omorfi usage examples in github pages](https://flammie.github.io/omorfi/pages/usage-examples.html)
+* [omorfi man pages](https://flammie.github.io/omorfi/man/)
 
 ## Programming APIs
 

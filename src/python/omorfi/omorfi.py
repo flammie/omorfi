@@ -102,6 +102,8 @@ class Omorfi:
         self.try_detitlecase = True
         ## whether to UPPERCASE and re-analyse if needed
         self.try_uppercase = False
+        ## whether accept model is loaded
+        self.can_accept = False
         ## whether analyser model is loaded
         self.can_analyse = False
         ## whether tokenisr model is loaded
@@ -122,6 +124,10 @@ class Omorfi:
         self.can_udpipe = False
 
     def load_hfst(self, f):
+        """Load an automaton from file.
+
+        @param f containing single hfst automaton binary.
+        """
         try:
             his = libhfst.HfstInputStream(f)
             return his.read()
@@ -130,40 +136,85 @@ class Omorfi:
 
 
     def load_labelsegmenter(self, f):
+        """Load labeled segments model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.labelsegmenter = self.load_hfst(f)
         self.can_labelsegment = True
 
     def load_segmenter(self, f):
+        """Load segmentation model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.segmenter = self.load_hfst(f)
         self.can_segment = True
 
     def load_analyser(self, f):
+        """Load analysis model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.analyser = self.load_hfst(f)
         self.can_analyse = True
         self.can_accept = True
         self.can_lemmatise = True
 
     def load_generator(self, f):
+        """Load generation model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.generator = self.load_hfst(f)
         self.can_generate = True
 
     def load_acceptor(self, f):
+        """Load acceptor model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.acceptor = self.load_hfst(f)
         self.can_accept = True
 
     def load_tokeniser(self, f):
+        """Load tokeniser model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.tokeniser = self.load_hfst(f)
         self.can_tokenise = True
 
     def load_lemmatiser(self, f):
+        """Load lemmatiser model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.tokeniser = self.load_hfst(f)
         self.can_lemmatise = True
 
     def load_hyphenator(self, f):
+        """Load hyphenator model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.hyphenator = self.load_hfst(f)
         self.can_hyphenate = True
 
     def load_guesser(self, f):
+        """Load guesser model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
         self.guesser = self.load_hfst(f)
         self.can_guess = True
 
@@ -481,7 +532,7 @@ class Omorfi:
 
     def fsa_tokenise(self, line):
         """Tokenise with FSA.
-        
+
         @param line  string to tokenise
         """
         return None

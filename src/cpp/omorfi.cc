@@ -29,6 +29,7 @@
 
 #include "omorfi.hh"
 
+//! timeout before libhfst gives up when traversing automata
 #define OMORFI_LOOKUP_TIMEOUT 6.66f
 
 namespace omorfi {

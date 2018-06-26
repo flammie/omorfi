@@ -526,7 +526,7 @@ def get_segments(token, split_morphs=True, split_words=True,
                  split_nonwords=False):
     segments = token['segments']
     # this code is ugly
-    segments = [segments.replace('{hyph?}', '')]
+    segments = [segments.replace('{hyph?}', '').replace("{STUB}", "")]
     resegs = []
     for segment in segments:
         if split_morphs:
@@ -782,6 +782,8 @@ def get_moses_factor_segments(token):
     return moses.split()
 
 def format_misc_ud(token):
+    if not 'anal' in token:
+        return '_'
     guess = get_last_feat("GUESS", token)
     miscs = []
     if guess and not guess == "":

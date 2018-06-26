@@ -5,7 +5,7 @@ TESTS=rough-tests.sh \
 	  rougher-tests.bash \
 	  scripts-runnable.sh \
 	  regressions.sh \
-	  tools-all-quick.bash \
+	  tools-python.bash \
 	  ftb-3.1-quick-test.bash \
 	  coverages-all-quick.bash \
 	  coverages-less-quick.bash \
@@ -18,14 +18,17 @@ if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
 EXTRA_DIST=rough-tests.sh \
+		   rougher-tests.bash \
+		   regressions.sh \
 		   scripts-runnable.sh \
 		   wordforms.list \
 		   wordforms-common.list \
-		   coverage.py \
 		   faithfulness.py \
+		   test.text \
+		   test.conllu \
 		   conllu-compare.py
 
-CLEANFILES=wordforms.anals
+CLEANFILES=wordforms.anals wordforms-common.anals
 
 if CAN_YAML_TEST
 #yaml-tests.yaml: test-header.yaml $(top_builddir)/src/lexical/gtd-tests.yaml

@@ -5,7 +5,10 @@ omorfiapi=@PACKAGE_VERSION@
 if test -n $OMORFI_PATH ; then
     omorfipath=$OMORFI_PATH
 fi
-omorfidir="@prefix@/share/omorfi"
+python=@PYTHON@
+prefix=@prefix@
+PYTHONPATH=$PYTHONPATH:@pythondir@
+omorfidir="$prefix/share/omorfi"
 hfstproc=@HPROC@
 hfstlookup=@HLOOKUP@
 lookupflags="-x -t 15 -p"
@@ -18,6 +21,9 @@ localomorfidir2=src/generated
 localomorfidir3=../src/generated
 relomorfidir=$(dirname $0)/../share/omorfi
 
+function python_wrap() {
+    PYTHONPATH=$PYTHONPATH $@
+}
 
 ## args:
 ## - $1: function
@@ -32,9 +38,21 @@ function omorfi_find() {
             fi
         elif test $# = 1 ; then
             func=$1
-            if test -f "$d/omorfi.$func.hfst" ; then
-                echo "$d/omorfi.$func.hfst"
-                break
+            if test x$func = xvislcg ; then
+                if test -f "$d/omorfi.cg3bin" ; then
+                    echo "$d/omorfi.cg3bin"
+                    break
+                fi
+            elif test x$func = xspeller ; then
+                if test -f "$d/speller-omorfi.zhfst" ; then
+                    echo "$d/speller-omorfi.zhfst"
+                    break
+                fi
+            else
+                if test -f "$d/omorfi.$func.hfst" ; then
+                    echo "$d/omorfi.$func.hfst"
+                    break
+                fi
             fi
         fi
     done
@@ -51,6 +69,9 @@ function omorfi_find_help() {
             echo "$d/omorfi.$func.hfst"
         fi
     done
+    echo If you have omorfi installed or set up, it is possible that this
+    echo optional feature was disabled at build time.
+    exit 1
 }
 
 function apertium_cleanup() {
@@ -63,9 +84,30 @@ function apertium_cleanup() {
     fi
 }
 
-function omorfi_analyse_text() {
-    if test $# -le 1 ; then
+function omorfi_tokenise() {
+    if test $# -lt 1 ; then
         omorfianalyser=$(omorfi_find "analyse")
+    else
+        omorfianalyser=$(omorfi_find $1)
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse"
+    else
+        if test $# -eq 2 ; then
+            python_wrap omorfi-tokenise.py -a $omorfianalyser -O $2 \
+                -x /tmp/omorfi.statlog
+        else
+            python_wrap omorfi-tokenise.py -a $omorfianalyser \
+                -x /tmp/omorfi.statlog
+        fi
+    fi
+}
+
+function omorfi_analyse_text() {
+    if test $# -lt 1 ; then
+        omorfianalyser=$(omorfi_find "analyse")
+    else
+        omorfianalyser=$(omorfi_find $1)
     fi
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "analyse"
@@ -76,9 +118,81 @@ function omorfi_analyse_text() {
     fi
 }
 
-function omorfi_analyse_tokens() {
-    if test $# -le 1 ; then
+function omorfi_conllu() {
+    if test $# -lt 1 ; then
         omorfianalyser=$(omorfi_find "analyse")
+        dict=analyse
+    else
+        omorfianalyser=$(omorfi_find $1)
+        dict=$1
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse"
+    else
+        omorfi_tokenise $dict conllu |\
+            python_wrap omorfi-conllu.py -a $omorfianalyser
+    fi
+}
+
+function omorfi_factorise() {
+    omorfisegmenter=$(omorfi_find "segment")
+    if test $# -lt 1 ; then
+        omorfianalyser=$(omorfi_find "analyse")
+        dict=analyse
+    else
+        omorfianalyser=$(omorfi_find $1)
+        dict=$1
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse"
+    elif test -z "$omorfisegmenter" ; then
+        omorfi_find_help "segment"
+    else
+        omorfi_tokenise $dict |\
+            python_wrap omorfi-factorise.py -a $omorfianalyser\
+                -s $omorfisegmenter
+    fi
+}
+
+function omorfi_freq_evals() {
+    if test $# -lt 1 ; then
+        omorfianalyser=$(omorfi_find "analyse")
+        dict=analyse
+    else
+        omorfianalyser=$(omorfi_find $1)
+        dict=$1
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse"
+    else
+        omorfi_tokenise $dict |\
+            tr -s ' ' '\n' |\
+            sort | uniq -c | sort -nr |\
+            python_wrap omorfi-freq-evals.py -a $omorfianalyser 
+    fi
+}
+
+function omorfi_ftb3() {
+    if test $# -lt 1 ; then
+        omorfianalyser=$(omorfi_find "analyse")
+        dict=analyse
+    else
+        omorfianalyser=$(omorfi_find $1)
+        dict=$1
+    fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help "analyse"
+    else
+        omorfi_tokenise $dict ftb3 |\
+            python_wrap omorfi-ftb3.py -a $omorfianalyser 
+    fi
+}
+
+function omorfi_analyse_tokens() {
+    if test $# -lt 1 ; then
+        omorfianalyser=$(omorfi_find "analyse")
+    else
+        omorfianalyser=$(omorfi_find $1)
     fi
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "analyse"
@@ -87,23 +201,29 @@ function omorfi_analyse_tokens() {
     fi
 }
 
-function omorfi_disambiguate_text() {
-    omorfidir=$(omorfi_find)
-    if test -z "$omorfidir" ; then
-        omorfi_find_help
-    elif ! test -f "$omorfidir"/omorfi.cg3bin ; then
-        echo "Missing $omorfidir/omorfi.cg3bin"
-        echo "(You can override the search path with OMORFI_PATH variable)"
+function omorfi_vislcg() {
+    if test $# -lt 1 ; then
+        omorfianalyser=$(omorfi_find "analyse")
     else
-        omorfi-vislcg.py -f "$omorfidir" |\
-            $cgproc -f 0 "$omorfidir"/omorfi.cg3bin
+        omorfianalyser=$(omorfi_find $1)
     fi
+    if test -z "$omorfianalyser" ; then
+        omorfi_find_help $1
+    fi
+    python_wrap omorfi-vislcg.py -a $omorfianalyser
+}
+
+function omorfi_disambiguate_text() {
+    omorficg=$(omorfi_find vislcg)
+    if test -z "$omorficg" ; then
+        omorfi_find_help vislcg
+    fi
+    omorfi_vislcg $1 |
+        $cgproc -f 0 "$omorficg"
 }
 
 function omorfi_generate() {
-    if test $# -le 1 ; then
-        omorfianalyser=$(omorfi_find "generate")
-    fi
+    omorfianalyser=$(omorfi_find "generate")
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "generate"
     else
@@ -129,35 +249,30 @@ function omorfi_hyphenate() {
 }
 
 function omorfi_segment() {
-    if test $# -eq 1 ; then
-        marker=$1
-        markexpr='\({.B}\|{STUB}\)'
-        unmarkexp='{_BOGUS_}'
-    elif test $# -eq 3 ; then
-        marker=$1
-        markexpr=$2
-        unmarkexpr=$3
-    else
-        marker="→ ←"
-        markexpr='\({.B}\|{STUB}\)'
-        unmarkexp='{_BOGUS_}'
-    fi
-    omorfianalyser=$(omorfi_find "segment")
-    if test -z "$omorfianalyser" ; then
+    omorfisegmenter=$(omorfi_find "segment")
+    omorfilabelser=$(omorfi_find "labelsegment")
+
+    if test -z "$omorfisegmenter" ; then
         omorfi_find_help "segment"
+    elif test -z "$omorfilabelser" ; then
+        omorfi_find_help "labelsegment"
     else
-        $hfstlookup $lookupflags "$omorfianalyser" |\
-            sed -e "s:${markexpr}:${marker}:g" -e "s:${unmarkexpr}::g"
+        if test -$# -eq 1 ; then
+            python_wrap omorfi-segment.py -s "$omorfisegmenter" \
+                -S "$omorfilabelser" \
+                --segment-marker $1 -O segments
+        else
+            python_wrap omorfi-segment.py -s "$omorfisegmenter" \
+                -S "$omorfilabelser" \
+                -O segments
+        fi
     fi
 }
 
 function omorfi_spell() {
-    omorfidir=$(omorfi_find)
-    if test -z "$omorfidir" ; then
-        omorfi_find_help
-    elif ! test -f "$omorfidir"/speller-omorfi.zhfst ; then
-        echo "Missing $omorfidir/speller-omorfi.zhfst"
-        echo "(You can override the search path with OMORFI_PATH variable)"
+    omorfispeller=$(omorfi_find "speller")
+    if test -z "$omorfispeller" ; then
+        omorfi_find_help "speller"
     else
         $hfstospell -S "$omorfidir/speller-omorfi.zhfst"
     fi
