@@ -223,9 +223,7 @@ function omorfi_disambiguate_text() {
 }
 
 function omorfi_generate() {
-    if test $# -lt 1 ; then
-        omorfianalyser=$(omorfi_find "generate")
-    fi
+    omorfianalyser=$(omorfi_find "generate")
     if test -z "$omorfianalyser" ; then
         omorfi_find_help "generate"
     else
