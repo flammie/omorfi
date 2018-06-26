@@ -9,4 +9,4 @@ Derivation -inen, derivational feature, refer to http://universaldependencies.or
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-|  [DRV=NEN] |  +inen%<n%> |   |  +Der/inint  |
+|  [DRV=INEN] |  +inen%<n%> |   |  +Der/inint  |
