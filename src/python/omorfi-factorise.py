@@ -2,7 +2,7 @@
 
 import re
 from argparse import ArgumentParser
-from sys import stdin, stdout
+from sys import stdin, stdout, stderr
 
 from omorfi.omorfi import Omorfi
 
@@ -10,8 +10,10 @@ from omorfi.omorfi import Omorfi
 def main():
     """Preprocess text for moses factored modeling."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-a', '--analyser', metavar='AFILE',
+                   help="load analyser model from AFILE", required=True)
+    a.add_argument('-s', '--segmenter', metavar='SFILE',
+                   help="load segmenter model from SFILE", required=True)
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -20,14 +22,20 @@ def main():
                    help="print factors into OUTFILE")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.analyser:
         if options.verbose:
-            print("Reading automata dir", options.fsa)
-        omorfi.load_from_dir(options.fsa)
+            print("Reading analyser model", options.analyser)
+        omorfi.load_analyser(options.analyser)
     else:
+        print("at least analyser file is needed", file=stderr)
+        exit(1)
+    if options.segmenter:
         if options.verbose:
-            print("Searching for automata everywhere...")
-        omorfi.load_from_dir()
+            print("Reading segmenter model", options.segmenter)
+        omorfi.load_segmenter(options.segmenter)
+    else:
+        print("at least segmenter file is needed", file=stderr)
+        exit(1)
     if options.infile:
         infile = options.infile
     else:
@@ -37,12 +45,11 @@ def main():
     else:
         outfile = stdout
     if options.verbose:
-        print("reading from", options.infile.name)
+        print("reading from", infile.name)
     if options.verbose:
-        print("writign to", options.output)
-
+        print("writign to", outfile.name)
     re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    re_pos = re.compile("\[POS=([^]]*)\]")
+    re_pos = re.compile("\[UPOS=([^]]*)\]")
     re_mrd = re.compile("\[([^=]*)=([^]]*)]")
     linen = 0
     for line in infile:
@@ -56,16 +63,16 @@ def main():
         for surf in surfs:
             anals = omorfi.analyse(surf)
             segments = omorfi.segment(surf)
-            pos_matches = re_pos.finditer(anals[0][0])
+            pos_matches = re_pos.finditer(anals[0]['anal'])
             pos = "UNK"
             mrds = []
             lemmas = []
             for pm in pos_matches:
                 pos = pm.group(1)
-            lemma_matches = re_lemma.finditer(anals[0][0])
+            lemma_matches = re_lemma.finditer(anals[0]['anal'])
             for lm in lemma_matches:
                 lemmas += [lm.group(1)]
-            mrd_matches = re_mrd.finditer(anals[0][0])
+            mrd_matches = re_mrd.finditer(anals[0]['anal'])
             for mm in mrd_matches:
                 if mm.group(1) == 'WORD_ID':
                     mrds = []
@@ -73,12 +80,16 @@ def main():
                     pass
                 else:
                     mrds += [mm.group(2)]
-            stemfixes = segments[0][0][
-                segments[0][0].rfind("{STUB}"):].replace("{STUB}", "")
-            if '{' in stemfixes:
-                morphs = stemfixes[stemfixes.find("{"):].replace("{MB}", ".")
+            parts = segments[0]['segments']
+            if '{DB}' in parts:
+                suffixes = parts[parts.rfind('{DB}')+4:]
+            elif '{WB}' in parts:
+                suffixes = parts[parts.rfind('{WB}')+4:]
+            elif '{hyph?}' in parts:
+                suffixes = parts[parts.rfind('{hyph?}')+6:]
             else:
-                morphs = '0'
+                suffixes = "0"
+            morphs = suffixes[suffixes.find("{"):].replace("{MB}", ".")
             print(surf, '+'.join(lemmas), pos, '.'.join(mrds),
                   morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)

@@ -1,10 +1,11 @@
 #!/bin/bash
 
+source $(dirname $0)/omorfi.bash
 args=$@
 hyphen="-"
 function print_version() {
-    echo "omorfi-hyphenate 0.2 (using omorfi bash API $omorfiapi)"
-    echo "Copyright (c) 2016 Tommi A Pirinen"
+    echo "omorfi-hyphenate 0.3 (using omorfi bash API $omorfiapi)"
+    echo "Copyright (c) 2018 Tommi A Pirinen"
     echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."

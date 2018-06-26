@@ -3,19 +3,23 @@
 
 from argparse import ArgumentParser, FileType
 # CLI stuff
-from sys import stdin, stdout
+from sys import stdin, stdout, stderr
 # statistics
 from time import perf_counter, process_time
 
+import json
+
 # omorfi
 from omorfi.omorfi import Omorfi
+from omorfi.token import format_misc_ud
 
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-a', '--analyser', metavar='AFILE',
+                   help="load tokeniser model from (analyser) AFILE",
+                   required=True)
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
@@ -26,17 +30,17 @@ def main():
                    help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('-O', '--output-format', metavar="OUTFORMAT",
                    default="moses",
-                   help="format output for OUTFORMAT", choices=['moses', 'conllu'])
+                   help="format output for OUTFORMAT", choices=['moses',
+                       'conllu', 'json', 'ftb3'])
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
+    if options.analyser:
         if options.verbose:
-            print("reading language models in", options.fsa)
-        omorfi.load_from_dir(options.fsa, analyse=True, accept=True)
+            print("reading language model", options.analyser)
+        omorfi.load_analyser(options.analyser)
     else:
-        if options.verbose:
-            print("reading language models in default dirs")
-        omorfi.load_from_dir()
+        print("analyser is needed for tokenisation", file=stderr)
+        exit(1)
     if not options.infile:
         options.infile = stdin
     if options.verbose:
@@ -53,7 +57,7 @@ def main():
     tokens = 0
     lines = 0
     if options.output_format == 'conllu':
-        print("# doc-name:", options.infile.name, file=options.outfile)
+        print("# new doc id=", options.infile.name, file=options.outfile)
     for line in options.infile:
         line = line
         lines += 1
@@ -64,15 +68,27 @@ def main():
         surfs = omorfi.tokenise(line)
         tokens += len(surfs)
         if options.output_format == 'moses':
-            print(' '.join([surf[0] for surf in surfs]), file=options.outfile)
-        else:
-            print("# sentence-text:", line.rstrip("\n"), file=options.outfile)
+            print(' '.join([surf['surf'] for surf in surfs]), file=options.outfile)
+        elif options.output_format == 'json':
+            print(json.encode(surfs))
+        elif options.output_format == 'conllu':
+            print("# sent_id =", lines, file=options.outfile)
+            print("# text =", line.rstrip("\n"), file=options.outfile)
             i = 1
             for surf in surfs:
-                print(i, surf[0], "_", "_", "_", "_", "_", "_", "_",
-                      surf[1],
+                print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_",
+                      format_misc_ud(surf),
                       sep="\t", file=options.outfile)
                 i += 1
+        elif options.output_format == 'ftb3':
+            print("<s><loc file=\"", options.infile.name, "\" line=\"",
+                    lines, "\" />", file=options.outfile, sep="")
+            i = 1
+            for surf in surfs:
+                print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_", "_",
+                        sep="\t", file=options.outfile)
+                i += 1
+            print("</s>", file=options.outfile)
         if options.output_format == 'conllu':
             print(file=options.outfile)
     cpuend = process_time()

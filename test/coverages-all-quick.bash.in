@@ -1,0 +1,21 @@
+#!/bin/bash
+analyser=@top_builddir@/src/generated/omorfi.describe.hfst
+freqs=coverage-fast-alls.freqs
+if test -z $srcdir ; then
+    echo Use make check or define srcdir
+    exit 1
+fi
+if test ! -r $freqs ; then
+    echo Missing $freqs
+    exit 77
+fi
+if test ! -r $analyser ; then
+    echo Missing $analyser
+    exit 77
+fi
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-freq-evals.py -a $analyser \
+        -i $freqs -c 1000 -o coverage-short.log ; then
+    echo We missed the target of 99 % coverage
+    exit 1
+fi
+exit 0

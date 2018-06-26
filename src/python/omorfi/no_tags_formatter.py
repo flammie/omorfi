@@ -26,11 +26,22 @@ from .string_manglers import lexc_escape
 
 
 class NoTagsFormatter(Formatter):
-    """A formatter to make acceptors with very little to no analyses."""
+    """A formatter that can create tagless analysers. This is used for e.g.,
+    lemmatisers, acceptors, and morph segmenters."""
 
     def __init__(self, verbose=True, **kwargs):
+        """Create omorfi tag converter for tagless automata with given verbosity
+        and options.
+
+        @param verbose set to false to disable printing
+        @param segment set to true to create segmenter
+        @param lemmatise set to true to create lemmatiser
+        """
+        ## verbosity
         self.verbose = verbose
+        ## if we are creating a segmenter
         self.segment = False
+        ## if we are creating a lemmatiser
         self.lemmatise = False
         if 'lemmatise' in kwargs and kwargs['lemmatise']:
             self.lemmatise = True
@@ -38,18 +49,30 @@ class NoTagsFormatter(Formatter):
             self.segment = True
 
     def stuff2lexc(self, stuff):
+        """Convert omorfi analyses to nothing
+
+        @return empty string unless relevant for lemmatiser or segmenter
+        """
         if 'Bc' == stuff:
             return word_boundary
         else:
             return ""
 
     def analyses2lexc(self, anals):
+        """Convert omorfi analyses to nothing
+
+        @return empty string unless relevant for lemmatiser or segmenter
+        """
         apestring = ''
         for i in anals.split('|'):
             apestring += self.stuff2lexc(i)
         return apestring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Create lexc content for omorfi continuation class data
+
+        @return lexc-formatted continuation class entry
+        """
         analstring = self.analyses2lexc(anals)
         # the followings have surface fragments in continuations
         if 'DIGITS_' in cont and not ('BACK' in cont or 'FRONT' in cont):
@@ -65,6 +88,10 @@ class NoTagsFormatter(Formatter):
         return "%s:%s\t%s ;\n" % (analstring, lexc_escape(surf), cont)
 
     def wordmap2lexc(self, wordmap):
+        """Format omorfi lexical item for tagless analysis
+
+        @return lexc-format entry for lemma/stub analysis
+        """
         if wordmap['lemma'] == ' ':
             return ''
         if self.lemmatise:
@@ -84,11 +111,20 @@ class NoTagsFormatter(Formatter):
             return lexc_line
 
     def multichars_lexc(self):
+        """Create analysis tags for lemmas and segments
+
+        @return lexc-formatted string for Multichar_symbols block without
+                analyses
+        """
         multichars = "Multichar_Symbols\n"
         multichars += Formatter.multichars_lexc(self)
         return multichars
 
     def root_lexicon_lexc(self):
+        """Create lexc root lexicon for lemmatisers and segmenters
+
+        @return lexc-format string for Root lexicon of lemmatiser
+        """
         root = Formatter.root_lexicon_lexc(self)
         return root
 

@@ -68,7 +68,7 @@
 
 AU_ALIAS([AC_PROG_JAVAC], [AX_PROG_JAVAC])
 AC_DEFUN([AX_PROG_JAVAC],[
-m4_define([m4_ax_prog_javac_list],["gcj -C" guavac jikes javac])dnl
+m4_define([m4_ax_prog_javac_list],[guavac jikes javac])dnl
 AS_IF([test "x$JAVAPREFIX" = x],
       [test "x$JAVAC" = x && AC_CHECK_PROGS([JAVAC], [m4_ax_prog_javac_list])],
       [test "x$JAVAC" = x && AC_CHECK_PROGS([JAVAC], [m4_ax_prog_javac_list], [], [$JAVAPREFIX/bin])])

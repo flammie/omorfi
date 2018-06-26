@@ -5,12 +5,8 @@ HFST_FLAGS=
 voikkosharedir=$(libdir)/voikko/3/
 
 HLEXC_FLAGS=--alignStrings
-if WANT_SMALL_LEXICONS
 BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
 ORIGIN_FLAGS=-O kotus -O omorfi++
-else !WANT_SMALL_LEXICONS
-HLEXC_FLAGS+=--Werror
-endif
 
 # {{{ Files
 # Origins
@@ -58,6 +54,7 @@ FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
 			   python/omorfi/monodix_formatter.py \
 			   python/omorfi/no_tags_formatter.py \
 			   python/omorfi/labeled_segments_formatter.py \
+			   python/omorfi/token.py \
 			   python/omorfi/formatter.py \
 			   python/omorfi/kotus_sanalista_formatter.py
 # file formats
@@ -129,12 +126,13 @@ endif
 if WANT_OMOR
 OMOR_AUTOMATA=generated/omorfi.analyse.hfst \
 			  generated/omorfi_recased.analyse.hfst
-if !WANT_SMALL_LEXICONS
+if !ONLY_SMALL_LEXICONS
 OMOR_AUTOMATA+=generated/omorfi.describe.hfst \
 			   generated/omorfi_recased.describe.hfst \
 			   generated/omorfi.generate.hfst
 endif
-OMOR_GENERATED=generated/omorfi-omor.lexc \
+OMOR_GENERATED=generated/omorfi.lexc \
+			   generated/omorfi-large.lexc \
 			   generated/omorfi-omor.reweight \
 			   generated/omorfi-omor-tests.yaml \
 			   generated/omorfi-omor-rewrite-tags.regex
@@ -180,18 +178,27 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-generate.sh \
 			bash/omorfi-spell.sh \
 			bash/omorfi-segment.sh \
+			bash/omorfi-factorise.bash \
 			bash/omorfi-hyphenate.sh \
 			bash/omorfi-disambiguate-text.sh \
+			bash/omorfi-tokenise.bash \
+			bash/omorfi-freq-evals.bash \
+			bash/omorfi-conllu.bash \
+			bash/omorfi-ftb3.bash \
+			bash/omorfi-vislcg.bash \
 			bash/omorfi.bash \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
 			python/omorfi-conllu.py \
 			python/omorfi-tokenise.py \
-			python/omorfi-segment.py
+			python/omorfi-segment.py \
+			python/omorfi-freq-evals.py \
+			python/omorfi-ftb3.py
 
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
-				 python/omorfi/settings.py
+				 python/omorfi/settings.py \
+				 python/omorfi/token.py
 
 
 # These go into dist tarballs... which we no longer make
@@ -206,6 +213,8 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   python/omorfi-vislcg.py \
 		   python/omorfi-segment.py \
 		   python/omorfi-tokenise.py \
+		   python/omorfi-freq-evals.py \
+		   python/omorfi-ftb3.py \
 		   bash/omorfi-analyse-text.sh \
 		   bash/omorfi-analyse-tokenised.sh \
 		   bash/omorfi-generate.sh \
@@ -213,6 +222,12 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-hyphenate.sh \
 		   bash/omorfi-segment.sh \
 		   bash/omorfi-disambiguate-text.sh \
+		   bash/omorfi-tokenise.bash \
+		   bash/omorfi-freq-evals.bash \
+		   bash/omorfi-conllu.bash \
+		   bash/omorfi-ftb3.bash \
+		   bash/omorfi-vislcg.bash \
+		   bash/omorfi-factorise.bash \
 		   test-scripts/constraint-unique-keys.bash \
 		   test-scripts/consistent-attribute-keys.bash \
 		   test-scripts/valid-datatypes.bash \
@@ -221,6 +236,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   test-scripts/paradigm-coverage.bash \
 		   test-scripts/plusplus-has-documents.bash \
 		   test-scripts/valid-datatypes.bash \
+		   test-scripts/lexc-errors.bash \
 		   vislcg3/omorfi.cg3
 
 # These are ran with make check. All modules should have stuff
@@ -229,6 +245,7 @@ TESTS=test-scripts/constraint-unique-keys.bash \
 	  test-scripts/valid-datatypes.bash \
 	  test-scripts/paradigm-coverage.bash \
 	  test-scripts/plusplus-has-documents.bash \
+	  test-scripts/lexc-errors.bash \
 	  test-scripts/lemmas-match-regexes.bash
 
 XFAIL_TESTS=
@@ -281,22 +298,24 @@ generated/master.tsv: generated/joint.tsv paradigms.tsv
 generated/continuations.tsv: continuations.tsv generated/timestamp
 	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
 
-# database to generic
+# database to omorfi native lexcies:
+# segmenter
 generated/omorfi.segment.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-segments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
+# lemmatiser
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-lemmas \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
+# acceptor
 generated/omorfi.accept.lexc:  generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv  \
 		-c generated/continuations.tsv -o $@ -f=none \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
-
 
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/continuations.tsv
@@ -304,42 +323,81 @@ generated/omorfi-labelsegments.lexc: generated/master.tsv generated/continuation
 		-c generated/continuations.tsv -o $@ -f=labelsegments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
-#
+# YAML tests
+generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
+	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor
+
+# baseline reweighter
+generated/omorfi-omor.reweight:
+	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
+
+# Gold dictionary lexc: kotus + omorfi++ - FGK - PROPN blockers
+generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c generated/continuations.tsv -o $@ -f=omor \
+		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS) \
+		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
+
+# Real omorfi dictionary
+generated/omorfi-large.lexc: generated/master.tsv generated/continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+		-c generated/continuations.tsv -o $@ -f=omor \
+		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
+
+
+# Xerox style guesser
+generated/omorfi-guesser.lexc: paradigms.tsv generated/continuations.tsv
+	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
+		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
+		-c generated/continuations.tsv -o $@ -f=omor
+
+# hacks
+generated/omorfi-rewrite-tags.regex:
+	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
+		-r rewrite-tags-omor -o $@
+
+# misc twol rules
 generated/omorfi-phon.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r phon -o $@
 
+# recasing optional rules
 generated/omorfi-recase-any.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r recase-any -o $@
 
+# uppercasing optional rules
 generated/omorfi-uppercase-any.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-any -o $@
 
+# titlecasing optional rules
 generated/omorfi-uppercase-first.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-first -o $@
 
+# hyphenation rules
 generated/omorfi-hyphens.twolc: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r hyphens -o $@
 
+# orthography rules
 generated/omorfi-orthographic-variations.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r orthographic-variations -o $@
 
+# ž rules
 generated/omorfi-zh.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r zh -o $@
 
+# š rules
 generated/omorfi-sh.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r sh -o $@
 
+# removing extra markers
 generated/omorfi-remove-boundaries.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r remove-boundaries -o $@
 
-generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
-		-r remove-boundaries-giella -o $@
 
+# tokeniser components
 generated/omorfi-between-tokens.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r between-tokens -o $@
@@ -358,31 +416,6 @@ generated/omorfi-hyphenate.twolc:
 generated/omorfi-boundary.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=boundary -o $@
 
-# database to omor
-generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor
-
-generated/omorfi-omor.reweight:
-	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
-
-generated/omorfi-omor.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c generated/continuations.tsv -o $@ -f=omor \
-		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
-
-generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
-		-c generated/continuations.tsv -o $@ -f=omor \
-		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
-
-generated/omorfi-omor-guesser.lexc: paradigms.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
-		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
-		-c generated/continuations.tsv -o $@ -f=omor
-
-generated/omorfi-omor-rewrite-tags.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
-		-r rewrite-tags-omor -o $@
 
 # database to ftb3
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
@@ -429,6 +462,9 @@ generated/omorfi-giella.lexc: generated/master.tsv generated/continuations.tsv
 		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
 		-i generated/continuations.tsv -o $@ -f=giella
 
+generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+		-r remove-boundaries-giella -o $@
 
 
 # database (back) to kotus
@@ -1143,7 +1179,7 @@ generated/omorfi_recased.analyse.hfst: generated/temporary.analyse.hfst generate
 		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
 # Full lexicon
-generated/temporary-omor.hyphenated.hfst: generated/omorfi-omor.lexc.hfst \
+generated/temporary-omor.hyphenated.hfst: generated/omorfi-large.lexc.hfst \
 	generated/omorfi-hyphens.twolc.hfst
 	$(HIC) $(HFST_FLAGS) -1 $< -2 generated/omorfi-hyphens.twolc.hfst |\
 		$(HMIN) $(HFST_FLAGS) -o $@
@@ -1180,7 +1216,7 @@ generated/omorfi_recased.describe.hfst: generated/temporary.describe.hfst genera
 		$(HINV) $(HFST_FLAGS) |\
 		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
-# create generator from analyzer
+# create generator from large analyzer
 generated/omorfi.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
@@ -1280,6 +1316,7 @@ endif
 
 # {{{ C++ library
 
+if WANT_CPP
 lib_LTLIBRARIES=libomorfi.la
 include_HEADERS=cpp/omorfi.hh
 libomorfi_la_SOURCES=cpp/omorfi.cc
@@ -1289,12 +1326,14 @@ bin_PROGRAMS=omorfi-lookup
 omorfi_lookup_SOURCES=cpp/omorfi-lookup.cc
 omorfi_lookup_LDADD=libomorfi.la $(LIBHFST_LIBS)
 omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
+endif
 
 # }}}
 # {{{ java library
 
 if CAN_JAVA
 javadir=$(pkgdatadir)/
+AM_JAVACFLAGS=-cp $(HFSTCLASSPATH)
 dist_java_JAVA=java/com/github/flammie/omorfi/Omorfi.java
 endif
 

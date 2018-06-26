@@ -7,7 +7,7 @@ if test ! -r $srcdir/wordforms.list ; then
     echo Missing word list $srcdir/wordforms.list
     exit 73
 fi
-fsa='../src/generated/omorfi.analyse.hfst'
+fsa='../src/generated/omorfi.describe.hfst'
 if test -f $fsa ; then
     hfst-lookup -q $fsa < $srcdir/wordforms.list > wordforms.anals
     if grep '+?' wordforms.anals -m 1 > /dev/null ; then
@@ -17,4 +17,5 @@ if test -f $fsa ; then
     fi
 else
     echo "missing $fsa"
+    exit 1
 fi

@@ -30,4 +30,6 @@ doc:
 	doc/generate-statistics.bash test/
 
 clean-local:
-	find com/github/flammie/omorfi -name '*.class' -delete
+	if test -d com ; then \
+		find com/github/flammie/omorfi -name '*.class' -delete ;\
+	fi

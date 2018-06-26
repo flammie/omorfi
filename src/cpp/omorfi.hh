@@ -1,4 +1,4 @@
-/** 
+/**
  * @file omorfi.hh
  *
  * @brief Omorfi bindings for C++.
@@ -61,23 +61,27 @@ namespace omorfi {
        * - ./generated
        * - .
        *
-       * @deprecated This is a convenience function and is indefinetely 
+       * @deprecated This is a convenience function and is indefinetely
        * deprecated. Use specific loading functions instead.
        */
       void loadAllFromDefaultDirs();
 
       /**
-       * load all omorfi models from a given directory. 
+       * load all omorfi models from a given directory.
+       *
+       * @param path the directory containing automata
        *
        * @deprecated This relies on standard filenames, which can change
        * between versions. This convenience function is deprecated, it is
        * preferred to use specific loading functions instead.
        */
-      void loadFromDir(const std::string& ath);
+      void loadFromDir(const std::string& path);
 
       /**
        * load an omorfi model from a file.
        *
+       * @param filename  to an automaton, where basename follows old naming
+       *                  conventions.
        * @deprecated Associating model to right functionality relies on
        * standard filenames, that change between versions, this convenience
        * function is deprecated. Use specific loading functions instead.
@@ -86,11 +90,15 @@ namespace omorfi {
 
       /**
        * load analysis model from a file.
+       *
+       * @param filename path to an automaton file binary.
        */
       void loadAnalyser(const std::string& filename);
 
       /**
        * analyse a string as a single input token.
+       *
+       * @param token  word to analys as string
        *
        * @return an unordered vector of strings giving all known analyses. May
        * be an empty list if no analyses are found, but this behaviour cannot
@@ -102,6 +110,8 @@ namespace omorfi {
       /**
        * tokenise a string for analysis.
        *
+       * @param text  text to split into tokens.
+       *
        * @return a vector of tokens given as strings, in order they should
        * appear in the analyses. The return value does not need to be a
        * split of  source @c text.
@@ -112,6 +122,9 @@ namespace omorfi {
        * Test if string is a valid word-form and in the lexicon.
        * Note that this function is not any faster than @c analyse, but it
        * resolves some internal codings of guessed analyses.
+       *
+       * @param token  a word to test
+       * @return true if token is in dictionary, false otherwise
        */
       bool accept(const std::string& token);
 
