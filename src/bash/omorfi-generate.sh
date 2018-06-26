@@ -36,15 +36,6 @@ elif test x$1 == x-V -o x$1 == x--version ; then
 elif test x$1 == x-v -o x$1 == x--verbose ; then
     verbose=verbose
     shift 1
-elif test x$1 == x--tagset ; then
-    tagset=$2
-    shift 2
 fi
 
-if test -z "$tagset" ; then
-    tagset=omor
-fi
-if test x$verbose = xverbose ; then
-    echo trying to generate using $tagset
-fi
-cat $@ | omorfi_generate $tagset
+cat $@ | omorfi_generate

@@ -27,6 +27,9 @@ from .string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
 
 
 class OmorFormatter(Formatter):
+    """Converts Omorfi's default formats for strings."""
+
+    ## Omorfi multichars for all omorfi analysers
     common_multichars = {
         '[ABBR=ABBREVIATION]',
         '[ABBR=ACRONYM]',
@@ -65,6 +68,7 @@ class OmorFormatter(Formatter):
         '[CONJ=COMPARATIVE]',
         '[CONJ=COORD]',
         '[DRV=IN]',
+        '[DRV=IN²]',
         '[DRV=ISA]',
         '[DRV=INEN]',
         '[DRV=NEN]',
@@ -145,6 +149,7 @@ class OmorFormatter(Formatter):
         '[PERS=PL1]',
         '[PERS=PL2]',
         '[PERS=PL3]',
+        '[PERS=SG0]',
         '[PERS=SG1]',
         '[PERS=SG2]',
         '[PERS=SG3]',
@@ -254,6 +259,7 @@ class OmorFormatter(Formatter):
         "[FOREIGN=FOREIGN]"
     }
 
+    ## legacy multichars for long POS analyses
     old_poses = {
         '[POS=ADPOSITION]',
         '[POS=PUNCTUATION]',
@@ -262,6 +268,7 @@ class OmorFormatter(Formatter):
         '[POS=SYMBOL]'
     }
 
+    ## tags for analysing allomorphs
     allo_multichars = {
         '[ALLO=A]',
         '[ALLO=AN]',
@@ -305,6 +312,7 @@ class OmorFormatter(Formatter):
         '[ALLO=ÖN]'
     }
 
+    ## tags for analysing kotus dictionary classifications
     ktnkav_multichars = {
         '[KTN=1]', '[KTN=2]', '[KTN=3]', '[KTN=4]', '[KTN=5]',
         '[KTN=6]', '[KTN=7]', '[KTN=8]', '[KTN=9]', '[KTN=10]',
@@ -328,6 +336,8 @@ class OmorFormatter(Formatter):
         '[KAV=K]', '[KAV=L]', '[KAV=M]',
         '[KAV=N]', '[KAV=O]', '[KAV=P]', '[KAV=T]'}
 
+    ## mapping from omorfi data to omorfi analyses... Between the really really
+    ## internal format and mildly internal format :-}
     stuff2omor = {
         ".sent": "[BOUNDARY=SENTENCE]",
         "Aa": "[ALLO=A]",
@@ -381,8 +391,8 @@ class OmorFormatter(Formatter):
         "Ccmp": "[CMP=CMP]",
         "Csup": "[CMP=SUP]",
         "Dhko": "[DRV=HKO]",
-        "Dinen": "[DRV=NEN]",
-        "Dnen": "[DRV=INEN]",
+        "Dinen": "[DRV=INEN]",
+        "Dnen": "[DRV=NEN]",
         "Dla": "[DRV=LA]",
         "Dlainen": "[DRV=LAINEN]",
         "Dllinen": "[DRV=LLINEN]",
@@ -410,6 +420,7 @@ class OmorFormatter(Formatter):
         "Dtar": "[DRV=TAR]",
         "Dton": "[DRV=TON]",
         "Din": "[DRV=IN]",
+        "Din²": "[DRV=IN²]",
         "Ia": "[INF=A]",
         "Ie": "[INF=E]",
         "Ima": "[INF=MA]",
@@ -427,6 +438,7 @@ class OmorFormatter(Formatter):
         "Ppl1": "[PERS=PL1]",
         "Ppl2": "[PERS=PL2]",
         "Ppl3": "[PERS=PL3]",
+        "Psg0": "[PERS=SG0]",
         "Psg1": "[PERS=SG1]",
         "Psg2": "[PERS=SG2]",
         "Psg3": "[PERS=SG3]",
@@ -506,18 +518,15 @@ class OmorFormatter(Formatter):
         "NUMERAL": "[POS=NUMERAL]",
         "CARDINAL": "[NUMTYPE=CARD]",
         "ORDINAL": "[NUMTYPE=ORD]",
-        # No [SUBCAT=DIGIT]: avoid multiple SUBCATs in one tagstring & comply
-        # with FTB1
-        "DIGIT": "",
+        "ORD": "[NUMTYPE=ORD]",
+        "DIGIT": "[SUBCAT=DIGIT]",
         "DECIMAL": "[SUBCAT=DECIMAL]",
         "ROMAN": "[SUBCAT=ROMAN]",
         "QUALIFIER": "[SUBCAT=QUALIFIER]",
         "ACRONYM": "[ABBR=ACRONYM]",
         "ABBREVIATION": "[ABBR=ABBREVIATION]",
-        "SUFFIX": "",
-        # "SUFFIX": "[SUBCAT=SUFFIX]",
-        "PREFIX": "",
-        # "PREFIX": "[SUBCAT=PREFIX]",
+        "SUFFIX": "[SUBCAT=SUFFIX]",
+        "PREFIX": "[SUBCAT=PREFIX]",
         "INTERJECTION": "[SUBCAT=INTERJECTION]",
         "ADPOSITION": "[POS=ADPOSITION]",
         "DEMONSTRATIVE": "[PRONTYPE=DEM]",
@@ -525,7 +534,6 @@ class OmorFormatter(Formatter):
         "QUANTIFIER": "[SUBCAT=QUANTIFIER]",
         "PERSONAL": "[PRONTYPE=PRS]",
         "INDEFINITE": "[PRONTYPE=IND]",
-        # "INDEFINITE": "[SUBCAT=INDEF]",
         "INTERROGATIVE": "[PRONTYPE=INT]",
         "REFLEXIVE": "[SUBCAT=REFLEXIVE]",
         "RELATIVE": "[PRONTYPE=REL]",
@@ -533,6 +541,7 @@ class OmorFormatter(Formatter):
         "PL1": "[PERS=PL1]",
         "PL2": "[PERS=PL2]",
         "PL3": "[PERS=PL3]",
+        "SG0": "[PERS=SG0]",
         "SG1": "[PERS=SG1]",
         "SG2": "[PERS=SG2]",
         "SG3": "[PERS=SG3]",
@@ -585,9 +594,19 @@ class OmorFormatter(Formatter):
         "CCONJ|VERB": "[UPOS=VERB][SUBCAT=NEG]",
         "FTB3MAN": "",
         "XForeign": "[FOREIGN=FOREIGN]",
+        "BLACKLISTED": "[BLACKLIST=",
         "": ""}
 
     def __init__(self, verbose=False, **kwargs):
+        """Create a conversion with given verbosity and options
+
+        @param verbose set to true ot print output while processing
+        @param sem  set to true to include semantic tags
+        @param allo  set to true to include allomiorph tags
+        @param props  set to true to include NER tags
+        @param ktnkav  set to true to get KOTUS dictionary paradigms tags
+        @param newparas  set to true to get omorfi paradigms tags
+        """
         for stuff, omor in self.stuff2omor.items():
             if len(omor) < 2:
                 continue
@@ -597,31 +616,37 @@ class OmorFormatter(Formatter):
                     "There are conflicting formattings in here!\n" +
                     omor + " corresponding " + stuff +
                     " is not a valid defined omor multichar_symbol!")
+        ## verbosity
         self.verbose = verbose
+        ## if semantics tags enabled
         self.semantics = True
         if 'sem' not in kwargs or not kwargs['sem']:
             for k, v in self.stuff2omor.items():
                 if "SEM=" in v:
                     self.stuff2omor[k] = ""
             self.semantics = False
+        ## if allomorph tags enabled
         self.allo = True
         if 'allo' not in kwargs or not kwargs['allo']:
             for k, v in self.stuff2omor.items():
                 if "ALLO=" in v:
                     self.stuff2omor[k] = ""
             self.allo = False
+        ## if NER tags enabled
         self.props = True
         if 'props' not in kwargs or not kwargs['props']:
             for k, v in self.stuff2omor.items():
                 if "PROPER=" in v:
                     self.stuff2omor[k] = ""
             self.props = False
+        ## if kotus paradimgs tags enabled
         self.ktnkav = True
         if 'ktnkav' not in kwargs or not kwargs['ktnkav']:
             for k, v in self.stuff2omor.items():
                 if "KTN=" in v or "KAV=" in v:
                     self.stuff2omor[k] = ""
             self.ktnkav = False
+        ## if omorfi paradigms tags enabled
         self.newparas = True
         if 'newparas' not in kwargs or not kwargs['newparas']:
             for k, v in self.stuff2omor.items():
@@ -630,16 +655,23 @@ class OmorFormatter(Formatter):
             self.newparas = False
 
     def stuff2lexc(self, stuff):
+        """Convert omorfi internal tag to omorfi lexc analysis tag
+
+        @return lexc-formatted omorfi analysis
+        """
         if stuff == '0':
             return "0"
         if stuff in self.stuff2omor:
-            return self.stuff2omor[stuff]
+            return lexc_escape(self.stuff2omor[stuff])
         else:
-            if self.verbose:
-                fail_formatting_missing_for(stuff, "omor")
+            fail_formatting_missing_for(stuff, "omor")
             return "ERRORMACRO"
 
     def analyses2lexc(self, anals, surf):
+        """Convert omorfi analysis tags string into omorfi lexc tags.
+
+        @return lexc-formatted tag string with potentially stem fragments etc.
+        """
         omorstring = ''
         for tag in anals.split('|'):
             if tag == '@@COPY-STEM@@':
@@ -651,11 +683,19 @@ class OmorFormatter(Formatter):
         return omorstring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Create lexc entry from omorfi continuation data
+
+        @return lexc-format continuation entry
+        """
         tags = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (tags, surf, cont)
 
     def guesser2lexc(self, regex, deletion, cont):
+        """Create a lexc guesser entry from omorfi continuation data
+
+        @return lexc-format guesser lexical entry
+        """
         if not regex:
             regex = ''
         regex = egrep2xerox(regex)
@@ -665,6 +705,8 @@ class OmorFormatter(Formatter):
     def wordmap2lexc(self, wordmap):
         '''
         format string for canonical omor format for morphological analysis
+
+        @return lexc-formatted lexical entry for omorfi analyses
         '''
         if wordmap['stub'] == ' ':
             # do not include normal white space for now
@@ -676,7 +718,10 @@ class OmorFormatter(Formatter):
         else:
             wordmap['analysis'] = "[WORD_ID=%s_%s]" % (
                 lexc_escape(wordmap['lemma']), wordmap['homonym'])
-        wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
+        if wordmap['numtype'] and wordmap['numtype'] == 'ORD':
+            wordmap['analysis'] += self.stuff2lexc('ADJ')
+        else:
+            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         if wordmap['is_suffix']:
             wordmap['analysis'] += self.stuff2lexc('SUFFIX')
         if wordmap['is_prefix']:
@@ -739,6 +784,10 @@ class OmorFormatter(Formatter):
             return lexc_line
 
     def multichars_lexc(self):
+        """Create analysis tags description for lexc for omorfi tags
+
+        @return lexc-formatted Multichar_symbols block for omorfi analyses
+        """
         multichars = "Multichar_Symbols\n"
         multichars += "!! OMOR multichars:\n"
         for mcs in self.common_multichars:
@@ -747,6 +796,10 @@ class OmorFormatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Create omorfi root lexicon.
+
+        @return elxc-formatted Root lexicon string for omorfi
+        """
         root = Formatter.root_lexicon_lexc(self)
         if True:
             # want co-ordinated hyphens

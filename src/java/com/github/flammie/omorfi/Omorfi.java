@@ -77,6 +77,11 @@ public class Omorfi
         detitlecase = true;
     }
 
+    /**
+     * Loads an HFST transducer.
+     *
+     * @param path  the path to analyser encoded as string.
+     */
     static private Transducer loadTransducer(String path)
         throws java.io.FileNotFoundException, java.io.IOException,
                           net.sf.hfst.FormatException
@@ -98,6 +103,12 @@ public class Omorfi
         }
     }
 
+    /**
+     * @brief Load an omorfi analyser from the given file. The file should
+     * contain a single HFST automaton for omorfi style analyses.
+     *
+     * @param path  the path to analyser encoded as string.
+     */
     public void loadAnalyser(String path) throws java.io.FileNotFoundException,
            java.io.IOException, net.sf.hfst.FormatException
     {
@@ -111,8 +122,10 @@ public class Omorfi
      * The second part must be a keyword describing the use of the
      * automaton, first part must be "omorfi".
      *
+     * @param path  the path to analyser encoded as string.
      * @deprecated use loadXXX(String) versions instead
      */
+    @Deprecated
     public void load(String path) throws java.io.FileNotFoundException,
            java.io.IOException, net.sf.hfst.FormatException
     {
@@ -175,8 +188,10 @@ public class Omorfi
     /**
      * @brief load all recognisable automata in given path.
      *
+     * @param path  the path to analyser encoded as string.
      * @deprecated use loadXXX(String) versions instead
      */
+    @Deprecated
     public void loadAll(String path) throws java.io.FileNotFoundException,
            java.io.IOException
     {
@@ -208,6 +223,7 @@ public class Omorfi
      *
      * @deprecated use loadXXX(String) versions instead
      */
+    @Deprecated
     public void loadAll() throws java.io.FileNotFoundException,
            java.io.IOException
     {
@@ -236,19 +252,22 @@ public class Omorfi
     }
 
     /**
-      * @brief Perform a simple morphological analysis lookup.
-      *
-      * If can_titlecase does not evaluate to False,
-      * the analysis will also be performed with first letter
-      * uppercased and rest lowercased.
-      * If can_uppercase evaluates to not False,
-      * the analysis will also be performed on all uppercase variant.
-      * If can_lowercase evaluates to not False,
-      * the analysis will also be performed on all lowercase variant.
-      *
-      * The analyses with case mangling will have an additional element to them
-      * identifying the casing.
-      */
+     * @brief Perform a simple morphological analysis lookup.
+     *
+     * If can_titlecase does not evaluate to False,
+     * the analysis will also be performed with first letter
+     * uppercased and rest lowercased.
+     * If can_uppercase evaluates to not False,
+     * the analysis will also be performed on all uppercase variant.
+     * If can_lowercase evaluates to not False,
+     * the analysis will also be performed on all lowercase variant.
+     *
+     * The analyses with case mangling will have an additional element to them
+     * identifying the casing.
+     *
+     * @param wf  the token to analyse as a string.
+     * @return  a collection of analyses for the token.
+     */
     public Collection<String> analyse(String wf) throws net.sf.hfst.NoTokenizationException
     {
         System.out.println("Analysing " + wf);
@@ -287,18 +306,21 @@ public class Omorfi
     }
 
     /**
-      * @brief Perform tokenisation with loaded tokeniser if any, or split.
-      *
-      * If tokeniser is available, it is applied to input line and if
-      * result is achieved, it is split to tokens according to tokenisation
-      * strategy and returned as a list.
-      *
-      * If no tokeniser are present, or none give results, the line will be
-      * tokenised using java's basic string functions.
-      */
-    public Collection<String> tokenise(String line)
+     * @brief Perform tokenisation with loaded tokeniser if any, or split.
+     *
+     * If tokeniser is available, it is applied to input line and if
+     * result is achieved, it is split to tokens according to tokenisation
+     * strategy and returned as a list.
+     *
+     * If no tokeniser are present, or none give results, the line will be
+     * tokenised using java's basic string functions.
+     *
+     * @param line  A string containing a line from corpus to split into tokens.
+     * @return  an ordered collection of tokens that makes up the string.
+     */
+    public List<String> tokenise(String line)
     {
-        Collection<String> tokens = new ArrayList<String>();
+        List<String> tokens = new ArrayList<String>();
         if (tokens.size() == 0)
         {
             tokens = new ArrayList<String>();
@@ -312,6 +334,8 @@ public class Omorfi
 
     /**
      * @brief example CLI analysis app.
+     *
+     * @param args  Command-line arguments.
      */
     public static void main(String[] args)
     {

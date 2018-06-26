@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20171115_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20180511], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20171115_alpha
+VERSION=20180511
 
 # Options
 AC_ARG_WITH([hfst],
@@ -117,6 +117,18 @@ AC_ARG_ENABLE([hyphenator],
                              [enable_hyphenator=no])
 AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
 
+# libraries
+AC_ARG_WITH([java],
+            [AS_HELP_STRING([--without-java],
+                            [do not build java library])],
+            [with_java=$withval],
+            [with_java=no])
+AC_ARG_WITH([cpp],
+            [AS_HELP_STRING([--without-cpp],
+                            [do not build cpp library])],
+            [with_cpp=$withval],
+            [with_cpp=yes])
+
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([--with-pbs-mail],
@@ -136,16 +148,17 @@ AC_ARG_ENABLE([small-lexicons],
                               [whether to greatly reduce lexicon sizes @<:@default=no@:>@])],
                              [small_lexicons=$enableval],
                              [small_lexicons=no])
-AM_CONDITIONAL([WANT_SMALL_LEXICONS], [test "x$small_lexicons" != xno])
+AM_CONDITIONAL([ONLY_SMALL_LEXICONS], [test "x$small_lexicons" != xno])
 AC_ARG_ENABLE([big-tests],
               [AS_HELP_STRING([--enable-big-tests],
                               [whether to run large corpus tests @<:@default=no@:>@])],
                              [big_tests=$enableval],
                              [big_tests=no])
 AM_CONDITIONAL([WANT_BIG_TESTS], [test "x$big_tests" != xno])
+
 # hum dee dum
 AC_MSG_CHECKING([if plans for world domination have succeeded yet])
-AC_MSG_RESULT([40 seconds to mars])
+AC_MSG_RESULT([we are the new world order])
 
 # Checks for programs
 AM_PROG_AR
@@ -275,11 +288,21 @@ AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
-# require java for stuff
-AC_CHECK_CLASSPATH
-AX_PROG_JAVA
-AX_CHECK_CLASS([net.sf.hfst.Transducer])
-AM_CONDITIONAL([CAN_JAVA], [test x$HAVE_net_sf_hfst_Transducer != xno])
+
+# check java when not disabled
+AS_IF([test "x$with_java" != xno], [
+    AC_CHECK_CLASSPATH
+    AX_PROG_JAVA
+    AX_PROG_JAVAC
+    AX_CHECK_CLASS([net.sf.hfst.Transducer])
+    ])
+AS_IF([test "x$with_java" = xyes], [
+    AS_IF([test "x$HAVE_net_sf_hfst_Transducer" = xno],
+          [AC_WARN([Building java with bundled hfst then])
+          AC_SUBST([HFSTCLASSPATH], [java])
+          ])
+    ], [AC_SUBST([HFSTCLASSPATH], [$with_java])])
+AM_CONDITIONAL([CAN_JAVA], [test x$with_java != xno])
 
 # separated my scripts for corpora fetching, some preprocessing
 AC_PATH_PROG([FETCH_EUROPARL], [fetch-europarl.bash], [false])
@@ -301,6 +324,8 @@ AC_LANG([C++])
 # Checks for libraries
 PKG_CHECK_MODULES([LIBHFST], [hfst > 3.12],
                   [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
+AM_CONDITIONAL([WANT_CPP], [test x$with_cpp != xno])
+
 # Checks for header files
 # Checks for typedefs, structures and compiler characteristics
 AX_CXX_COMPILE_STDCXX_11
@@ -310,24 +335,26 @@ AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
                  omorfi.pc man/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi.bash])
-AC_CONFIG_FILES([test/faithfulness-ftb-3.1.sh],
-                [chmod +x test/faithfulness-ftb-3.1.sh])
-AC_CONFIG_FILES([test/faithfulness-ftb-3.1-quick.sh],
-                [chmod +x test/faithfulness-ftb-3.1-quick.sh])
-AC_CONFIG_FILES([test/conllu-fi-ud-test.sh],
-                [chmod +x test/conllu-fi-ud-test.sh])
+AC_CONFIG_FILES([test/ftb-3.1-test.bash],
+                [chmod +x test/ftb-3.1-test.bash])
+AC_CONFIG_FILES([test/ftb-3.1-quick-test.bash],
+                [chmod +x test/ftb-3.1-quick-test.bash])
+AC_CONFIG_FILES([test/vislcg-fi-ud-test.sh],
+                [chmod +x test/vislcg-fi-ud-test.sh])
+AC_CONFIG_FILES([test/conllu-fi-tdt-ud-test.bash],
+                [chmod +x test/conllu-fi-tdt-ud-test.bash])
 AC_CONFIG_FILES([test/conllu-fi-ftb-ud-test.sh],
                 [chmod +x test/conllu-fi-ftb-ud-test.sh])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
-AC_CONFIG_FILES([test/coverages-all-quick.sh],
-                [chmod +x test/coverages-all-quick.sh])
+AC_CONFIG_FILES([test/coverages-all-quick.bash],
+                [chmod +x test/coverages-all-quick.bash])
 AC_CONFIG_FILES([test/coverages-less-quick.bash],
                 [chmod +x test/coverages-less-quick.bash])
 AC_CONFIG_FILES([test/coverages-all-slow.bash],
                 [chmod +x test/coverages-all-slow.bash])
-AC_CONFIG_FILES([test/tools-all-quick.bash],
-                [chmod +x test/tools-all-quick.bash])
+AC_CONFIG_FILES([test/tools-python.bash],
+                [chmod +x test/tools-python.bash])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 AS_IF([test x$with_slurm_mail != xno],
@@ -352,6 +379,10 @@ Configured $PACKAGE_STRING:
     * segmenter: $enable_segmenter
     * lemmatiser: $enable_lemmatiser
     * hyphenators: $enable_hyphenator
+* Libraries
+    * Python 3: yes
+    * Java: $with_java
+    * C++: $with_cpp
 * Clusters
     * run tests on PBS cluster: $QSUB → mailto: $with_pbs_mail
     * run tests on SLURM cluster: $SBATCH → mailto: $with_slurm_mail

@@ -1,29 +1,34 @@
 ## Process this file with automake to produce Makefile.in
 
-TESTS=rough-tests.sh scripts-runnable.sh \
-	  tools-all-quick.bash \
-	  faithfulness-ftb-3.1-quick.sh \
-	  coverages-all-quick.sh \
-	  faithfulness-ftb-3.1.sh \
-	  conllu-fi-ud-test.sh \
-	  conllu-fi-ftb-ud-test.sh
+# order in slowness order
+TESTS=rough-tests.sh \
+	  rougher-tests.bash \
+	  scripts-runnable.sh \
+	  regressions.sh \
+	  tools-python.bash \
+	  ftb-3.1-quick-test.bash \
+	  coverages-all-quick.bash \
+	  coverages-less-quick.bash \
+	  ftb-3.1-test.bash \
+	  conllu-fi-tdt-ud-test.bash \
+	  conllu-fi-ftb-ud-test.sh \
+	  vislcg-fi-ud-test.sh
 XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
-if WANT_SMALL_LEXICONS
-TESTS+=rougher-tests.bash coverages-less-quick.bash
-XFAIL_TESTS+=rough-tests.sh coverages-all-quick.sh coverages-all-slow.bash
-endif
 EXTRA_DIST=rough-tests.sh \
+		   rougher-tests.bash \
+		   regressions.sh \
 		   scripts-runnable.sh \
 		   wordforms.list \
 		   wordforms-common.list \
-		   coverage.py \
 		   faithfulness.py \
+		   test.text \
+		   test.conllu \
 		   conllu-compare.py
 
-CLEANFILES=wordforms.anals
+CLEANFILES=wordforms.anals wordforms-common.anals
 
 if CAN_YAML_TEST
 #yaml-tests.yaml: test-header.yaml $(top_builddir)/src/lexical/gtd-tests.yaml

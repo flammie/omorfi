@@ -27,6 +27,9 @@ from .string_manglers import lexc_escape
 
 
 class ApertiumFormatter(Formatter):
+    """Formatter that handles conversions for apertium's conventions."""
+
+    ## All apertium multichar symbols
     apertium_multichars = {
         "-",
         "",
@@ -135,6 +138,7 @@ class ApertiumFormatter(Formatter):
         "vaux",
         "vblex"
     }
+    ## a mapping from omorfi stuff to apertium symbols
     stuff2apertium = {
         "Aiden": "",
         "Aien": "",
@@ -284,6 +288,7 @@ class ApertiumFormatter(Formatter):
         "Opl1": "pxpl1",
         "Opl2": "pxpl2",
         "ORDINAL": "ord",
+        "ORD": "ord",
         "ORG": "al",
         "Osg1": "pxsg1",
         "Osg2": "pxsg2",
@@ -303,6 +308,7 @@ class ApertiumFormatter(Formatter):
         "Psg1": "p1><sg",
         "Psg2": "p2><sg",
         "Psg3": "p3><sg",
+        "Psg0": "p3><sg",
         "PUNCT": "punct",
         "Qhan": "+han<enc",
         "Qkaan": "+kaan<enc",
@@ -321,6 +327,7 @@ class ApertiumFormatter(Formatter):
         "SG1": "p1",
         "SG2": "p2",
         "SG3": "p3",
+        "SG0": "p3",
         "SENTENCE-BOUNDARY": "",
         "SPACE": "",
         "SUFFIX": "",
@@ -372,6 +379,11 @@ class ApertiumFormatter(Formatter):
     }
 
     def __init__(self, verbose=True):
+        """Create an apertium formatter with given verbosity.
+
+        @param verbose  set to false to disable stdout logging
+        """
+        ## verbosity, i.e. print while translating
         self.verbose = verbose
         for stuff, ape in self.stuff2apertium.items():
             if len(ape) < 2:
@@ -391,6 +403,10 @@ class ApertiumFormatter(Formatter):
                           " is not a valid apertium multichar_symbol!")
 
     def stuff2lexc(self, stuff):
+        """Get apertium analyses in lexc format corresponding omorfi stuff.
+
+        @return str containing lexc formatted analysis tag(s)
+        """
         if len(stuff) == 0:
             return ""
         elif stuff in self.stuff2apertium:
@@ -407,22 +423,32 @@ class ApertiumFormatter(Formatter):
             return ""
 
     def analyses2lexc(self, anals, surf):
+        """Get full analysis string in lexc for omorfi analyses.
+
+        @return str containing lexc-formatted analysi tags and potential lemma
+                fragments
+        """
         apestring = ''
         for i in anals.split('|'):
             if i == '@@COPY-STEM@@':
                 apestring += lexc_escape(surf)
-            elif i.startswith('@@LITERAL:') and i.endswith('@@'):
-                apestring += lexc_escape(i[len('@@LITERAL:'):-len('@@')])
+            elif i.startswith('@@LITERAL') and i.endswith('@@'):
+                apestring += lexc_escape(i[len('@@LITERAL'):-len('@@')])
             else:
                 apestring += self.stuff2lexc(i)
         return apestring
 
     def continuation2lexc(self, anals, surf, cont):
+        """Get lexc representation for omorfi continuation lexicon."""
         analstring = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
         return "%s:%s\t%s ;\n" % (analstring, surf, cont)
 
     def wordmap2lexc(self, wordmap):
+        """Get lexc representation of omorfi lexeme in a wordmap.
+
+        @return lexc-formatted entries for the word
+        """
         if wordmap['lemma'] == ' ':
             # apertium fails when surf == ' '
             return ''
@@ -496,6 +522,10 @@ class ApertiumFormatter(Formatter):
                                      wordmap['new_para'])
 
     def multichars_lexc(self):
+        """Get apertium compatible lexc multichars.
+
+        @return str containing lexc multichar_symbols block for apertium tags
+        """
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"
         for mcs in sorted(self.apertium_multichars):
             if '><' not in mcs and mcs not in ['', '+', '-', '#', '0']:
@@ -504,6 +534,9 @@ class ApertiumFormatter(Formatter):
         return multichars
 
     def root_lexicon_lexc(self):
+        """Get apertium compatible lexc root.
+
+        @return str containing lexc Root lexicon for apertium"""
         root = Formatter.root_lexicon_lexc(self)
         root += '\t'.join(['0', 'SUFFIX', ';']) + '\n'
         return root

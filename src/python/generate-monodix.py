@@ -24,43 +24,47 @@ This script converts Finnish TSV-formatted lexicon to apertium format,
 import argparse
 import csv
 import re
-from sys import exit, stderr
+from sys import stderr
 
-from omorfi.monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
-                                      format_monodix_pardef, format_monodix_sdefs)
+from omorfi.monodix_formatter import (format_monodix_alphabet,
+                                      format_monodix_entry,
+                                      format_monodix_licence,
+                                      format_monodix_pardef,
+                                      format_monodix_sdefs)
 
 
 # standard UI stuff
 
 
 def main():
+    """Main for command-line usage."""
     # initialise argument parser
-    ap = argparse.ArgumentParser(
+    argp = argparse.ArgumentParser(
         description="Convert Finnish dictionary TSV data into apertium monodix XML")
-    ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
-                    default=False,
-                    help="do not print output to stdout while processing")
-    ap.add_argument("--verbose", "-v", action="store_true", default=False,
-                    help="print each step to stdout while processing")
-    ap.add_argument("--master", "-m", action="append", required=True,
-                    metavar="MFILE", help="read lexical roots from MFILEs")
-    ap.add_argument("--continuations", "-c", action="append", required=True,
-                    metavar="CONTFILE", help="read pardefs from CONTFILEs")
-    ap.add_argument("--version", "-V", action="version")
-    ap.add_argument("--output", "-o", action="store", required=True,
-                    type=argparse.FileType('w'),
-                    metavar="OFILE", help="write roots to OFILE")
-    ap.add_argument("--fields", "-F", action="store", default=2,
-                    metavar="N", help="read N fields from master")
-    ap.add_argument("--separator", action="store", default="\t",
-                    metavar="SEP", help="use SEP as separator")
-    ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
-                    "do not have SEPs")
-    ap.add_argument("--strip", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
+    argp.add_argument("--quiet", "-q", action="store_false", dest="verbose",
+                      default=False,
+                      help="do not print output to stdout while processing")
+    argp.add_argument("--verbose", "-v", action="store_true", default=False,
+                      help="print each step to stdout while processing")
+    argp.add_argument("--master", "-m", action="append", required=True,
+                      metavar="MFILE", help="read lexical roots from MFILEs")
+    argp.add_argument("--continuations", "-c", action="append", required=True,
+                      metavar="CONTFILE", help="read pardefs from CONTFILEs")
+    argp.add_argument("--version", "-V", action="version")
+    argp.add_argument("--output", "-o", action="store", required=True,
+                      type=argparse.FileType('w'),
+                      metavar="OFILE", help="write roots to OFILE")
+    argp.add_argument("--fields", "-F", action="store", default=2,
+                      metavar="N", help="read N fields from master")
+    argp.add_argument("--separator", action="store", default="\t",
+                      metavar="SEP", help="use SEP as separator")
+    argp.add_argument("--comment", "-C", action="append", default=["#"],
+                      metavar="COMMENT", help="skip lines starting with COMMENT that"
+                      "do not have SEPs")
+    argp.add_argument("--strip", action="store",
+                      metavar="STRIP", help="strip STRIP from fields before using")
 
-    args = ap.parse_args()
+    args = argp.parse_args()
 
     quoting = csv.QUOTE_NONE
     quotechar = None
@@ -130,13 +134,12 @@ def main():
                                                     outlex.group(1) + '"/>',
                                                     '<!-- loop: ' +
                                                     outlex.group(1).replace("_",
-                                                                            "@") + '-->')
+                                                                            "@")
+                                                    + '-->')
                             if outlex.group(1) + pardef_name not in \
                                     broken_pardefs:
-                                print("removed ", outlex.group(1), "from",
-                                      pardef_name, "to resolve a loop")
                                 broken_pardefs.add(outlex.group(1) +
-                                        pardef_name)
+                                                   pardef_name)
                         else:
                             can_print = False
                 if can_print:
@@ -156,7 +159,8 @@ def main():
         linecount = 0
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                                        quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
+                                        quoting=quoting, quotechar=quotechar,
+                                        escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
@@ -172,6 +176,8 @@ def main():
                 print(format_monodix_entry(wordmap), file=args.output)
     print('  </section>', file=args.output)
     print('</dictionary>', file=args.output)
+    print(len(broken_pardefs), "loops broken due to limitations of apertium:")
+    print(', '.join(broken_pardefs))
     exit()
 
 

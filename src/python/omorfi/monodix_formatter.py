@@ -146,6 +146,7 @@ stuff2monodix = {
     "ABBREVIATION": "abbr",
     "ACRONYM": "abbr",
     "ADJECTIVE": "adj",
+    "ADJ": "adj",
     "ADPOSITION": "post",
     "ADVERB": "adv",
     "ADVERBIAL": "cnjadv",
@@ -176,7 +177,9 @@ stuff2monodix = {
     "DIGIT": "",
     "Dinen": "+inen<adj",
     "Din": "+in<n",
+    "Din²": "+in<adj",
     "Dja": "+ja<n",
+    "Dla": "+la<n",
     "Dmaisilla": "+maisilla<adv",
     "Dma": "+ma<n",
     "Dmaton": "+maton<adj",
@@ -236,6 +239,7 @@ stuff2monodix = {
     "Opl1": "pxpl1",
     "Opl2": "pxpl2",
     "ORDINAL": "ord",
+    "ORD": "ord",
     "ORG": "",
     "Osg1": "pxsg1",
     "Osg2": "pxsg2",
@@ -252,6 +256,7 @@ stuff2monodix = {
     "PRODUCT": "",
     "PROPER": "np",
     "PROPN": "np",
+    "Psg0": "sg",
     "Psg1": "p1><sg",
     "Psg2": "p2><sg",
     "Psg3": "p3><sg",
@@ -363,8 +368,8 @@ def format_monodix_r(anals, stem):
         for anal in anals.split('|'):
             if anal == '@@COPY-STEM@@':
                 r += stem
-            elif anal.startswith('@@LITERAL:') and anal.endswith('@@'):
-                r += anal[len('@@LITERAL:'):-len('@@')]
+            elif anal.startswith('@@LITERAL') and anal.endswith('@@'):
+                r += anal[len('@@LITERAL'):-len('@@')]
             else:
                 r += format_monodix_s(anal)
     return r

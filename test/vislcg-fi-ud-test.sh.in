@@ -1,0 +1,37 @@
+#!/bin/bash
+if test -z $srcdir ; then
+    echo Use make check or define srcdir
+    exit 1
+fi
+analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
+vislcgs="fi-ud-test.cg3text"
+cs="get-covered.bash"
+thold=90
+if test ! -r "$analyser" ; then
+    echo Missing $analyser
+    exit 77
+fi
+if ! test -x @PYTHON@ ; then
+    echo Missing python
+    exit 77
+fi
+if test ! -r $vislcgs ; then
+    echo missing $vislcgs, use $cs and re-try
+    exit 77
+fi
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-vislcg.py -F vislcg -a $analyser \
+        -i $vislcgs -o omorfi-ud-test.cg3text ; then
+    echo analysis failed
+    exit 2
+fi
+if ! @CGPROC@ -f 0 @top_builddir@/src/generated/omorfi.cg3bin < \
+        omorfi-ud-test.cg3text > omorfi-ud-test.cg3disam ; then
+    echo disam failed
+    exit 2
+fi
+if ! @PYTHON@ $srcdir/vislcg-compare.py -H omorfi-ud-test.cg3disam -r\
+        fi-ud-test.cg3text -l fi-ud-test.cg3log -t $thold ; then
+    echo We missed the target of $thold % vislcg matches
+    exit 1
+fi
+exit 0
