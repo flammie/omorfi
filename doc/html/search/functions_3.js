@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['load',['load',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#afa5ec5d974f57e5bcf5f381e4d0aac2d',1,'com::github::flammie::omorfi::Omorfi']]],
-  ['load_5ffilename',['load_filename',['../classomorfi_1_1omorfi_1_1Omorfi.html#a59fa20aaf1a16b8eb7f7be57387da72e',1,'omorfi::omorfi::Omorfi']]],
-  ['load_5ffrom_5fdir',['load_from_dir',['../classomorfi_1_1omorfi_1_1Omorfi.html#abf87604335fd681bc0b478a1d8b57e53',1,'omorfi::omorfi::Omorfi']]],
-  ['loadall',['loadAll',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a8c28ad34af4f37fc4163eb72f67dbb2b',1,'com.github.flammie.omorfi.Omorfi.loadAll(String path)'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#aee9b4666bb561df76dbda7d09795c0b3',1,'com.github.flammie.omorfi.Omorfi.loadAll()']]],
-  ['loadallfromdefaultdirs',['loadAllFromDefaultDirs',['../classomorfi_1_1Omorfi.html#a4d97ce736c59122d28ec509a6e31ea2a',1,'omorfi::Omorfi']]],
-  ['loadanalyser',['loadAnalyser',['../classomorfi_1_1Omorfi.html#a36f8a817621eed09cc68171ae7348289',1,'omorfi::Omorfi']]],
-  ['loadfile',['loadFile',['../classomorfi_1_1Omorfi.html#a2a5a83f83ead42065bb8c9091b3d6201',1,'omorfi::Omorfi']]],
-  ['loadfromdir',['loadFromDir',['../classomorfi_1_1Omorfi.html#a6e797d772a808c64335cf4c293e00203',1,'omorfi::Omorfi']]]
+  ['continuation2lexc',['continuation2lexc',['../classomorfi_1_1apertium__formatter_1_1ApertiumFormatter.html#a0bf1c43379c5b11a7476319c1b1fa504',1,'omorfi.apertium_formatter.ApertiumFormatter.continuation2lexc()'],['../classomorfi_1_1formatter_1_1Formatter.html#aaf7f36d45c8fc255bea67a648b372b5d',1,'omorfi.formatter.Formatter.continuation2lexc()'],['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html#aec826dca8890e41dabfaf529776a3676',1,'omorfi.ftb3_formatter.Ftb3Formatter.continuation2lexc()'],['../classomorfi_1_1giella__formatter_1_1GiellaFormatter.html#a6ba3e751ab0a0f8eff4dd56e3aab6be4',1,'omorfi.giella_formatter.GiellaFormatter.continuation2lexc()'],['../classomorfi_1_1labeled__segments__formatter_1_1LabeledSegmentsFormatter.html#a467bcb4dbc13b96bf63003a5921cbfdd',1,'omorfi.labeled_segments_formatter.LabeledSegmentsFormatter.continuation2lexc()'],['../classomorfi_1_1no__tags__formatter_1_1NoTagsFormatter.html#a2cb9c935d25da0f005d4bb647da35f06',1,'omorfi.no_tags_formatter.NoTagsFormatter.continuation2lexc()'],['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html#a46b1a229a0b5369632a531f55da89ebe',1,'omorfi.omor_formatter.OmorFormatter.continuation2lexc()']]],
+  ['copyright_5flexc',['copyright_lexc',['../classomorfi_1_1formatter_1_1Formatter.html#ad6553d85ae10049114ccba5e015e7457',1,'omorfi::formatter::Formatter']]]
 ];

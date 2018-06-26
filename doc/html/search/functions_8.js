@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['tokenise',['tokenise',['../classomorfi_1_1omorfi_1_1Omorfi.html#aedfd9acc2064b74dee8aea28a3302c2d',1,'omorfi.omorfi.Omorfi.tokenise()'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a7544861a4034ce7c420f1388e0fd9c39',1,'com.github.flammie.omorfi.Omorfi.tokenise()'],['../classomorfi_1_1Omorfi.html#aac8c04160eb154e88f018b966e6f875c',1,'omorfi::Omorfi::tokenise()']]]
+  ['labelsegment',['labelsegment',['../classomorfi_1_1omorfi_1_1Omorfi.html#a7530a732d8aacc838006f90b7f38a832',1,'omorfi::omorfi::Omorfi']]],
+  ['lemmatise',['lemmatise',['../classomorfi_1_1omorfi_1_1Omorfi.html#a3820bcfc581a373dc55e34266cb9efe4',1,'omorfi::omorfi::Omorfi']]],
+  ['lettertrie',['LetterTrie',['../classnet_1_1sf_1_1hfst_1_1LetterTrie.html#ac0f94c29ed5ed19b094240bb99e7154c',1,'net::sf::hfst::LetterTrie']]],
+  ['lettertrienode',['LetterTrieNode',['../classnet_1_1sf_1_1hfst_1_1LetterTrie_1_1LetterTrieNode.html#a11df628cc8c70378df1d49fb4a84535f',1,'net::sf::hfst::LetterTrie::LetterTrieNode']]],
+  ['load',['load',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#afa5ec5d974f57e5bcf5f381e4d0aac2d',1,'com::github::flammie::omorfi::Omorfi']]],
+  ['load_5facceptor',['load_acceptor',['../classomorfi_1_1omorfi_1_1Omorfi.html#ad956ea24cd469025cc3479df4d3d8931',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fanalyser',['load_analyser',['../classomorfi_1_1omorfi_1_1Omorfi.html#a601a769b2deafadfa6b9702619c53dfc',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5ffilename',['load_filename',['../classomorfi_1_1omorfi_1_1Omorfi.html#a59fa20aaf1a16b8eb7f7be57387da72e',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5ffrom_5fdir',['load_from_dir',['../classomorfi_1_1omorfi_1_1Omorfi.html#abf87604335fd681bc0b478a1d8b57e53',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fgenerator',['load_generator',['../classomorfi_1_1omorfi_1_1Omorfi.html#afe203402a964e6d59719717e0a95b5c6',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fguesser',['load_guesser',['../classomorfi_1_1omorfi_1_1Omorfi.html#aae7e0d4005ecbe65e1b2507c8e9877be',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fhfst',['load_hfst',['../classomorfi_1_1omorfi_1_1Omorfi.html#af61480fa6be53e865a3eb84d659729b8',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fhyphenator',['load_hyphenator',['../classomorfi_1_1omorfi_1_1Omorfi.html#a4aad798439940d64b8cd6b501648de94',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5flabelsegmenter',['load_labelsegmenter',['../classomorfi_1_1omorfi_1_1Omorfi.html#aecf30124db8121916aba88a5e1235353',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5flemmatiser',['load_lemmatiser',['../classomorfi_1_1omorfi_1_1Omorfi.html#aa5b21cdc7ebb4c869d8b36e62cf84764',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5flexical_5ffrequencies',['load_lexical_frequencies',['../classomorfi_1_1omorfi_1_1Omorfi.html#a9c83e16275aa527d660ec23190e4bdee',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fomortag_5ffrequencies',['load_omortag_frequencies',['../classomorfi_1_1omorfi_1_1Omorfi.html#a2216b0a7fec27ef1bb2e8859ed4fadc2',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fsegmenter',['load_segmenter',['../classomorfi_1_1omorfi_1_1Omorfi.html#a63c5eb4da589824e23693381767e3926',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5ftokeniser',['load_tokeniser',['../classomorfi_1_1omorfi_1_1Omorfi.html#a10b83d4d16501d93cbbc67ae71950ff6',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fudpipe',['load_udpipe',['../classomorfi_1_1omorfi_1_1Omorfi.html#a96cdd6ba5c3412153dbbbadd31039bec',1,'omorfi::omorfi::Omorfi']]],
+  ['loadall',['loadAll',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a8c28ad34af4f37fc4163eb72f67dbb2b',1,'com.github.flammie.omorfi.Omorfi.loadAll(String path)'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#aee9b4666bb561df76dbda7d09795c0b3',1,'com.github.flammie.omorfi.Omorfi.loadAll()']]],
+  ['loadallfromdefaultdirs',['loadAllFromDefaultDirs',['../classomorfi_1_1Omorfi.html#a4d97ce736c59122d28ec509a6e31ea2a',1,'omorfi::Omorfi']]],
+  ['loadanalyser',['loadAnalyser',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a2504f246c588ce0270d85b4db1357eb8',1,'com.github.flammie.omorfi.Omorfi.loadAnalyser()'],['../classomorfi_1_1Omorfi.html#a36f8a817621eed09cc68171ae7348289',1,'omorfi::Omorfi::loadAnalyser()']]],
+  ['loadfile',['loadFile',['../classomorfi_1_1Omorfi.html#a2a5a83f83ead42065bb8c9091b3d6201',1,'omorfi::Omorfi']]],
+  ['loadfromdir',['loadFromDir',['../classomorfi_1_1Omorfi.html#ab3ed7bd5bdc5d2ced6209e9790825f69',1,'omorfi::Omorfi']]]
 ];

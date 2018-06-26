@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['formatter',['Formatter',['../classomorfi_1_1formatter_1_1Formatter.html',1,'omorfi::formatter']]],
-  ['ftb3formatter',['Ftb3Formatter',['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html',1,'omorfi::ftb3_formatter']]]
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
+  ['displayvector',['displayVector',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#a457bdb42c68bff9dd444e379df0df72f',1,'net.sf.hfst.UnweightedTransducer.displayVector()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#a5aa00e8184ea90f1c1978e26ceb71de4',1,'net.sf.hfst.WeightedTransducer.displayVector()']]]
 ];

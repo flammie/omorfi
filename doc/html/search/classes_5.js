@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['omorfi',['Omorfi',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html',1,'com.github.flammie.omorfi.Omorfi'],['../classomorfi_1_1Omorfi.html',1,'omorfi::Omorfi'],['../classomorfi_1_1omorfi_1_1Omorfi.html',1,'omorfi.omorfi.Omorfi']]],
-  ['omorformatter',['OmorFormatter',['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html',1,'omorfi::omor_formatter']]]
+  ['indexstring',['IndexString',['../classnet_1_1sf_1_1hfst_1_1IndexString.html',1,'net::sf::hfst']]],
+  ['indextable',['IndexTable',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer_1_1IndexTable.html',1,'net.sf.hfst.UnweightedTransducer.IndexTable'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer_1_1IndexTable.html',1,'net.sf.hfst.WeightedTransducer.IndexTable']]]
 ];

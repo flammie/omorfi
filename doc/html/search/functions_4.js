@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#ad44b37e2db9ee7673bccd2f07a557701',1,'com::github::flammie::omorfi::Omorfi']]],
-  ['multichars_5flexc',['multichars_lexc',['../classomorfi_1_1apertium__formatter_1_1ApertiumFormatter.html#aed79ba093abfc13ddd9005fda09dec92',1,'omorfi.apertium_formatter.ApertiumFormatter.multichars_lexc()'],['../classomorfi_1_1formatter_1_1Formatter.html#abdb1293f3bbd46158c4aa6ec0963d1d8',1,'omorfi.formatter.Formatter.multichars_lexc()'],['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html#a06071341ffca6fd3c908eb6ba0950f52',1,'omorfi.ftb3_formatter.Ftb3Formatter.multichars_lexc()']]]
+  ['findkey',['findKey',['../classnet_1_1sf_1_1hfst_1_1LetterTrie_1_1LetterTrieNode.html#a95c8dc69c3803245552a4c4a7a2edfa6',1,'net::sf::hfst::LetterTrie::LetterTrieNode']]],
+  ['flagdiacriticoperation',['FlagDiacriticOperation',['../classnet_1_1sf_1_1hfst_1_1FlagDiacriticOperation.html#aa0898e1300c8de434e0b1630e378b768',1,'net.sf.hfst.FlagDiacriticOperation.FlagDiacriticOperation(HfstOptimizedLookup.FlagDiacriticOperator operation, Integer feat, Integer val)'],['../classnet_1_1sf_1_1hfst_1_1FlagDiacriticOperation.html#a00fa5c8b872d41eb12679b4dcd9a6008',1,'net.sf.hfst.FlagDiacriticOperation.FlagDiacriticOperation()']]],
+  ['fsa_5ftokenise',['fsa_tokenise',['../classomorfi_1_1omorfi_1_1Omorfi.html#ae415a4830d3d25f9a9902d5588e90ceb',1,'omorfi::omorfi::Omorfi']]]
 ];

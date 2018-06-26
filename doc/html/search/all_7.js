@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['main',['main',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#ad44b37e2db9ee7673bccd2f07a557701',1,'com::github::flammie::omorfi::Omorfi']]],
-  ['multichars_5flexc',['multichars_lexc',['../classomorfi_1_1apertium__formatter_1_1ApertiumFormatter.html#aed79ba093abfc13ddd9005fda09dec92',1,'omorfi.apertium_formatter.ApertiumFormatter.multichars_lexc()'],['../classomorfi_1_1formatter_1_1Formatter.html#abdb1293f3bbd46158c4aa6ec0963d1d8',1,'omorfi.formatter.Formatter.multichars_lexc()'],['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html#a06071341ffca6fd3c908eb6ba0950f52',1,'omorfi.ftb3_formatter.Ftb3Formatter.multichars_lexc()']]]
+  ['hashfst3header',['hasHfst3Header',['../classnet_1_1sf_1_1hfst_1_1TransducerHeader.html#ae139e4b1a606bc05719b1033ec17d4ba',1,'net::sf::hfst::TransducerHeader']]],
+  ['header',['header',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#a76dcf8c0fb336a3526dfbc271a819890',1,'net.sf.hfst.UnweightedTransducer.header()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#a3ab7578a2982de0ff253ecaa9d42d9d5',1,'net.sf.hfst.WeightedTransducer.header()']]],
+  ['hfstoptimizedlookup',['HfstOptimizedLookup',['../classnet_1_1sf_1_1hfst_1_1HfstOptimizedLookup.html',1,'net::sf::hfst']]],
+  ['hyphenator',['hyphenator',['../classomorfi_1_1omorfi_1_1Omorfi.html#a49675adacc19e1319b80b7bf9fdb6293',1,'omorfi::omorfi::Omorfi']]]
 ];
