@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 INDEX=statistics.markdown
 
 # build index page
@@ -14,15 +14,20 @@ echo "_These are semi-automatically generated statistics from omorfi
 database._ The statistics are based on the actual data in the database tables
 and the versions of whole analysed corpora and tools on this date." >> $INDEX
 echo >> $INDEX
-echo "Generation time was \`$(date --iso=hours)\`" >> $INDEX
+echo "Generation time was \`$(date --iso=hours)\`:" >> $INDEX
+echo "\`\`\`" >> $INDEX
 head -n 8 config.log | tail -n 6 >> $INDEX
+echo "\`\`\`" >> $INDEX
+echo "This is a released version, and can be downloaded from github." >> $INDEX
+echo >> $INDEX
 echo "## Lexical database" >> $INDEX
 echo >> $INDEX
 echo "The numbers are counted from the database, unique lexical items.
 Depending on your definitions there may be ±1 % difference, e.g. with homonyms,
 defective and doubled paradigms, etc." >> $INDEX
-echo "There are total of \*$(wc -l < src/lexemes.tsv)\* in the database" \
+echo "There are total of \*$(wc -l < src/lexemes.tsv)\* lexemes." \
     >> $INDEX
+echo >> $INDEX
 echo "### Per universal POS" >> $INDEX
 echo >> $INDEX
 echo "The universal parts-of-speech are described in [Universal dependencies
@@ -36,6 +41,7 @@ cut -f 1 src/generated/master.tsv | sort | uniq -c | sort -nr | fgrep -v upos |\
     tr '|' ',' | sed -e 's/,/, /g' |\
     sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]$//' |\
     sed -e 's/ / | /' -e 's/^/| /' -e 's/$/ |/' >> $INDEX
+echo "| $(wc -l < src/lexemes.tsv) | *TOTAL* |" >> $INDEX
 echo >> $INDEX
 echo "### Per sources of origin" >> $INDEX
 echo >> $INDEX
@@ -90,6 +96,10 @@ function convert_coveragelog {
             HAPAX=2;;
         *fiwiki*)
             HAPAX=2;;
+        *coverage-fast*)
+            HAPAX=1000;;
+        *)
+            HAPAX=1;;
     esac
     echo "### $2"
     echo
@@ -144,9 +154,9 @@ for f in test/*coveragelog ; do
     echo "### ${corpus}" >> ${INDEX}
     echo >> ${INDEX}
     echo "| Frequency | Word-form |" >> ${INDEX}
-    echo "|----------:|:----------|"
+    echo "|----------:|:----------|" >> ${INDEX}
     head -n 100 $f |\
-        awk '{printf("| %s | %s |\n", $1, $2);}' >> ${INDEX}
+        awk '{printf("| %s | %s |\n", $1, $3);}' >> ${INDEX}
     echo >> ${INDEX}
 done
 echo >> $INDEX

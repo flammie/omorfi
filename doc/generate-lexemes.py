@@ -29,7 +29,7 @@ from sys import exit, stderr
 def filenamify(s):
     repls = {'!': 'EXCL', '?': 'QQ', '"': 'DQUO', "'": 'SQUO', '/': 'SLASH',
             '\\': 'BACKSLASH', '<': 'LEFT', '>': 'RIGHT', ':': 'COLON',
-            ' ': 'SPACE', '|': 'PIPE', '.': 'STOP', ',': 'COMMA', 
+            ' ': 'SPACE', '|': 'PIPE', '.': 'STOP', ',': 'COMMA',
             ';': 'SC', '(': 'LBR', ')': 'RBR', '[': 'LSQ',
             ']': 'RSQ', '{': 'LCURL', '}': 'RCURL', '$': 'DORA',
             '\t': 'TAB'}
@@ -49,8 +49,8 @@ def main():
                     help="do not print output to stdout while processing")
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
                     help="print each step to stdout while processing")
-    ap.add_argument("--lexeme-docs", "-L", action="append", required=True,
-                    metavar="PDFILE", help="read paradigm docs from LDFILEs")
+    ap.add_argument("--lexeme-docs", "-L", required=True,
+                    metavar="LDFILE", help="read lexeme docs from LDFILE")
     ap.add_argument("--lexemes", "-l", required=True,
                     metavar="LEXENES", help="read lexemes data from LEXEMES")
     ap.add_argument("--version", "-V", action="version")
@@ -89,75 +89,87 @@ def main():
             "in wiktionary, or other such services.", file=args.output)
     print(file=args.output)
     # read from csv files
-    print(file=args.output)
-    # stolen from turku:
-    # https://turkunlp.github.io/Finnish_PropBank/
-    print("""<table id="lexemetable" class="display">
-<thead>
-<tr>
-<th>Lexeme</th>
-</tr>
-</thead>
-<tbody>
-{% for page in site.pages %}
-{% if page.lexeme %}
-<tr><td><a href="lexemes/{{page.lexeme}}.html">{{page.lexeme}}</a></td></tr>
-{% endif %}
-{% endfor %}
-</tbody>
-</table>
 
-""", file=args.output)
+    print("| Lexeme | Short note |", file=args.output)
+    print("|:------:|:----------:", end='', file=args.output)
 
     lexdata = dict()
-    #with open(args.lexemes) as tsv_file:
-    #    tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-    #                                strict=True)
-    #    # probably could just read whole thing in one sweep
-    #    for tsv_parts in tsv_reader:
-    #        lexkey = tsv_parts['lemma'] + '_' + tsv_parts['homonym']
-    #        lexdata[lexkey] = dict()
-    #        for key in tsv_parts.keys():
-    #            if key != 'new_para':
-    #                lexdata[lexkey][key] = tsv_parts[key]
-    for tsv_filename in args.lexeme_docs:
-        if args.verbose:
-            print("Reading from", tsv_filename)
+    with open(args.lexemes, 'r', newline='') as tsv_file:
+        tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
+                                    strict=True)
+        for tsv_parts in tsv_reader:
+            if len(tsv_parts) < 2 or tsv_parts['lemma'] == None or \
+                    tsv_parts['homonym'] == None:
+                print("Too few tabs on line, skipping:", tsv_parts)
+                continue
+            lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
+            lexdata[lexkey] = tsv_parts
+    with open(args.lexeme_docs, 'r', newline='') as tsv_file:
+        tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
+                                    strict=True)
+        prev_lemma = ''
         linecount = 0
-        # for each line
-        with open(tsv_filename, 'r', newline='') as tsv_file:
-            tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                                        strict=True)
-            prev_lemma = ''
-            for tsv_parts in tsv_reader:
-                linecount += 1
-                if len(tsv_parts) < 2 or tsv_parts['doc'] == None:
-                    print("Too few tabs on line", linecount,
-                          "skipping following line completely:", file=stderr)
-                    print(tsv_parts, file=stderr)
-                    continue
-                if '\t' in tsv_parts['lemma']:
-                    print("ARGH python tsv fail on line:",
-                            tsv_parts, file=stderr)
-                    continue
-                if tsv_parts['lemma'] != prev_lemma:
-                    outfile=open(args.outdir + '/' +
-                             filenamify(tsv_parts['lemma']) +
-                             '.markdown', 'w')
-                    prev_lemma = tsv_parts['lemma']
-                    print('---', file=outfile)
-                    print('layout: lexeme', file=outfile)
-                    print('lexeme:', tsv_parts['lemma'], file=outfile)
-                    print('---', file=outfile)
-                print(file=outfile)
-                print("### ", tsv_parts['lemma'], "",
-                      file=outfile, end='')
-                if tsv_parts['homonym'] != '1':
-                    print(" (alternate reading", tsv_parts['homonym'],
-                          ")", file=outfile)
-                print(file=outfile)
-                print(tsv_parts['doc'], file=outfile)
-                print(file=outfile)
+        for tsv_parts in tsv_reader:
+            linecount += 1
+            if len(tsv_parts) < 2 or tsv_parts['doc'] == None:
+                print("Too few tabs on line", linecount,
+                      "skipping following line completely:", file=stderr)
+                print(tsv_parts, file=stderr)
+                continue
+            if '\t' in tsv_parts['lemma']:
+                print("ARGH python tsv fail on line:",
+                        tsv_parts, file=stderr)
+                continue
+            if tsv_parts['lemma'] != prev_lemma:
+                print("|\n| [%s](lexemes/%s.html) |" %(
+                    tsv_parts['lemma'].replace("]", "(right square " +\
+                        "bracket)").replace("|", "(pipe " +\
+                        "symbol)").replace("[", "(left square bracket)"),
+                        filenamify(tsv_parts['lemma'])), end='',
+                        file=args.output)
+                outfile=open(args.outdir + '/' +
+                         filenamify(tsv_parts['lemma']) +
+                         '.markdown', 'w')
+                prev_lemma = tsv_parts['lemma']
+                print('---', file=outfile)
+                print('layout: lexeme', file=outfile)
+                print('lexeme:', tsv_parts['lemma'], file=outfile)
+                print('---', file=outfile)
+            print(file=outfile)
+            if tsv_parts['homonym'] == '1':
+                print("### ", tsv_parts['lemma'], file=outfile)
+                print(" ", tsv_parts['doc'], end=' ', file=args.output)
+            else:
+                print("##", tsv_parts['lemma'], "(alternate reading",
+                        tsv_parts['homonym'], ")", file=outfile)
+                print(" **or** ", tsv_parts['doc'], end=' ', file=args.output)
+            print(file=outfile)
+            print(tsv_parts['doc'], file=outfile)
+            lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
+            if lexkey in lexdata:
+
+                print("* UPOS: ", lexdata[lexkey]['upos'], file=outfile)
+                if 0 < int(lexdata[lexkey]['kotus_tn']) and\
+                        int(lexdata[lexkey]['kotus_tn']) < 99:
+                    print("* in KOTUS dictionary under: ",
+                          lexdata[lexkey]['kotus_tn'], file=outfile)
+                print("* Added from: ", lexdata[lexkey]['origin'], file=outfile)
+                if lexdata[lexkey]['proper_noun_class']:
+                    print("* Possible NER class: ",
+                          lexdata[lexkey]['proper_noun_class'], file=outfile)
+                if lexdata[lexkey]['prontype']:
+                    print("* PronType: ",
+                          lexdata[lexkey]['prontype'], file=outfile)
+                if lexdata[lexkey]['adptype']:
+                    print("* AdpType: ",
+                          lexdata[lexkey]['adptype'], file=outfile)
+                if lexdata[lexkey]['numtype']:
+                    print("* NumType: ",
+                          lexdata[lexkey]['numtype'], file=outfile)
+                if lexdata[lexkey]['blacklist']:
+                    print("* Blacklisted: ",
+                          lexdata[lexkey]['blacklist'], file=outfile)
+            print(file=outfile)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 

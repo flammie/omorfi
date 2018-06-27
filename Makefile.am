@@ -26,7 +26,7 @@ doc:
 	$(PYTHON) doc/generate-paradigms.py -P src/docs/paradigms.tsv \
 		-A src/paradigms.tsv -o paradigms.markdown -O paradigms/
 	$(PYTHON) doc/generate-lexemes.py -L src/docs/lexemes.tsv \
-		-l src/lexemes.tsv -o lexemes.markdown -O lexemes/
+		-l src/generated/master.tsv -o lexemes.markdown -O lexemes/
 	doc/generate-statistics.bash test/
 
 clean-local:
