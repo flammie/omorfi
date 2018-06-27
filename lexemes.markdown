@@ -10,7 +10,7 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 
 | Lexeme | Short note |
 |:------:|:----------:|
-| [|](lexemes/PIPE.html) |  pipe used in computer systems, logics etc. |
+| [(pipe symbol)](lexemes/PIPE.html) |  pipe used in computer systems, logics etc. |
 | [-](lexemes/-.html) |  ASCII minus-hyphen, still most common dash |
 | [,](lexemes/COMMA.html) |  comma |
 | [;](lexemes/SC.html) |  semicolon |
@@ -25,8 +25,8 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [”](lexemes/”.html) |  left double quotation in 9-shape, common and recommended  **or**  right double quotation in 9-shape, common and recommended |
 | [(](lexemes/LBR.html) |  left bracket |
 | [)](lexemes/RBR.html) |  right bracket |
-| [[](lexemes/LSQ.html) |  left square bracket |
-| []](lexemes/RSQ.html) |  right square bracket |
+| [(left square bracket)](lexemes/LSQ.html) |  left square bracket |
+| [(right square bracket)](lexemes/RSQ.html) |  right square bracket |
 | [{](lexemes/LCURL.html) |  left curly bracket |
 | [}](lexemes/RCURL.html) |  right curly bracket |
 | [$](lexemes/DORA.html) |  dollar |
