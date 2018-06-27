@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: ‰
 ---
 
-###  ‰ 
+###  ‰
+
 permille
+* UPOS:  SYM
+* Added from:  omorfi++
 

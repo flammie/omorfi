@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: HIV
 ---
 
-###  HIV 
+###  HIV
+
 Human Immunodeficiency Virus
+* UPOS:  NOUN
+* Added from:  unk
 

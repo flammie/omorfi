@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: NASA
 ---
 
-###  NASA 
+###  NASA
+
 National Air and Space A
+* UPOS:  PROPN
+* Added from:  unk
+* Possible NER class:  ORG
 

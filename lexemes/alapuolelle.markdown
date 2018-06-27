@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: alapuolelle
 ---
 
-###  alapuolelle 
+###  alapuolelle
+
 to under, as adposition, genitive complement or possessive, "laiturin alapuolelle"
+* UPOS:  ADP
+* Added from:  omorfi++
 

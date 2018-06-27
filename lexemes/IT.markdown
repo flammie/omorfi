@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: IT
 ---
 
-###  IT 
+###  IT
+
 Informaatio-Teknologia
+* UPOS:  NOUN
+* Added from:  kotus
 

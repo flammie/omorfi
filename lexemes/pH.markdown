@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: pH
 ---
 
-###  pH 
+###  pH
+
 per Hydrogen
+* UPOS:  NOUN
+* Added from:  unk
 

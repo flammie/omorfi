@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: TS
 ---
 
-###  TS 
+###  TS
+
 Turun Sanomat
+* UPOS:  NOUN
+* Added from:  unk
 

@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: oyj
 ---
 
-###  oyj 
+###  oyj
+
 Julkinen Osake-Yhtiö
+* UPOS:  NOUN
+* Added from:  unk
 

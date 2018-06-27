@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: ÄO
 ---
 
-###  ÄO 
+###  ÄO
+
 Älykkyysosamäärä
+* UPOS:  NOUN
+* Added from:  kotus
 

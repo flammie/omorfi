@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: HKL
 ---
 
-###  HKL 
+###  HKL
+
 Helsingin Kaupungin Liikenne
+* UPOS:  NOUN
+* Added from:  unk
 

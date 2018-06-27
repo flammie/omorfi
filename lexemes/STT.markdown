@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: STT
 ---
 
-###  STT 
+###  STT
+
 Suomen Tieto-Toimisto
+* UPOS:  PROPN
+* Added from:  unk
+* Possible NER class:  ORG
 

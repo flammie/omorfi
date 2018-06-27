@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: HTML
 ---
 
-###  HTML 
+###  HTML
+
 Hyper-Text Markup Language
+* UPOS:  NOUN
+* Added from:  unk
 

@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: TCP
 ---
 
-###  TCP 
+###  TCP
+
 Transmission Control Protocol
+* UPOS:  NOUN
+* Added from:  unk
 

@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: suinkaan
 ---
 
-###  suinkaan 
+###  suinkaan
+
 usually seen as adverb (at all, negative), but overlaps instructive of the noun *suu* (mouth)
+* UPOS:  ADV
+* Added from:  kotus
 

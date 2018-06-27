@@ -3,6 +3,12 @@ layout: lexeme
 lexeme: Teos
 ---
 
-###  Teos 
+###  Teos
+
 This proper noun overlaps  very common *teos* (product).
+* UPOS:  PROPN
+* in KOTUS dictionary under:  39
+* Added from:  unihu
+* Possible NER class:  ORG
+* Blacklisted:  PROPN-BLOCKING
 

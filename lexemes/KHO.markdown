@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: KHO
 ---
 
-###  KHO 
+###  KHO
+
 Korkein Hovi-Oikeus
+* UPOS:  PROPN
+* Added from:  unk
+* Possible NER class:  ORG
 

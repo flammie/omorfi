@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: PR
 ---
 
-###  PR 
+###  PR
+
 Public Relations
+* UPOS:  NOUN
+* Added from:  unk
 

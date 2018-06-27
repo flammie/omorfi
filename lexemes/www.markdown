@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: www
 ---
 
-###  www 
+###  www
+
 world wide web
+* UPOS:  NOUN
+* Added from:  unk
 

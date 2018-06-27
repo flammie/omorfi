@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: mielellään
 ---
 
-###  mielellään 
+###  mielellään
+
 usually seen as adverb (gladly), but can be analysed as possessive adessive of the noun *mieli* (mind)
+* UPOS:  ADV
+* Added from:  kotus
 

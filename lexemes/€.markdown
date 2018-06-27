@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: €
 ---
 
-###  € 
+###  €
+
 euro
+* UPOS:  SYM
+* Added from:  omorfi++
 

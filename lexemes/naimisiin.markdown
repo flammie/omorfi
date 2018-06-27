@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: naimisiin
 ---
 
-###  naimisiin 
+###  naimisiin
+
 usually seen as adverb (married), but can be analysed as a form of *naiminen* (marriage)
+* UPOS:  ADV
+* Added from:  kotus
 

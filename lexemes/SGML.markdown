@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: SGML
 ---
 
-###  SGML 
+###  SGML
+
 Standardised General Markup Language
+* UPOS:  NOUN
+* Added from:  unk
 

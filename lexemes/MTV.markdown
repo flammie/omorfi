@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: MTV
 ---
 
-###  MTV 
+###  MTV
+
 Music TeleVision
+* UPOS:  NOUN
+* Added from:  unk
 

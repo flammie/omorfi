@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: cd
 ---
 
-###  cd 
+###  cd
+
 compact disc
+* UPOS:  NOUN
+* Added from:  unk
 

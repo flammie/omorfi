@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: YK
 ---
 
-###  YK 
+###  YK
+
 Yhdistyneet Kansakunnat
+* UPOS:  NOUN
+* Added from:  unk
 

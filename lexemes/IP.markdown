@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: IP
 ---
 
-###  IP 
+###  IP
+
 Internet Protocol
+* UPOS:  NOUN
+* Added from:  unk
 

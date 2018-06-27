@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: alkupuolella
 ---
 
-###  alkupuolella 
+###  alkupuolella
+
 in the beginning, as adposition, genitive complement or possessive, "tarinan alkupuolella"
+* UPOS:  ADP
+* Added from:  unk
 

@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: ²
 ---
 
-###  ² 
+###  ²
+
 superscript two
+* UPOS:  SYM
+* Added from:  omorfi++
 

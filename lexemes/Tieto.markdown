@@ -3,6 +3,12 @@ layout: lexeme
 lexeme: Tieto
 ---
 
-###  Tieto 
+###  Tieto
+
 This proper noun overlaps  very common *tieto* (knowledge).
+* UPOS:  PROPN
+* in KOTUS dictionary under:  1
+* Added from:  unihu
+* Possible NER class:  ORG
+* Blacklisted:  PROPN-BLOCKING
 

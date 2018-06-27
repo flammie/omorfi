@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: SQL
 ---
 
-###  SQL 
+###  SQL
+
 Structured Query Language
+* UPOS:  NOUN
+* Added from:  omorfi
 

@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: s.
 ---
 
-###  s. 
+###  s.
+
 sivu, "p." or page
+* UPOS:  ADV
+* Added from:  omorfi++
 

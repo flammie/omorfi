@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: OK
 ---
 
-###  OK 
+###  OK
+
 not pronounced in words
+* UPOS:  NOUN
+* Added from:  kotus
 

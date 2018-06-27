@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: ottamatta
 ---
 
-###  ottamatta 
+###  ottamatta
+
 excepting, as adposition, illative complement, mainly "lukuun ottamatta"
+* UPOS:  ADP
+* Added from:  omorfi++
 

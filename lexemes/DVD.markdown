@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: DVD
 ---
 
-###  DVD 
+###  DVD
+
 Digital Versatile Disc
+* UPOS:  NOUN
+* Added from:  unk
 

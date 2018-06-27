@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: myöhään
 ---
 
-###  myöhään 
+###  myöhään
+
 usually seen as adverb (late), but can be analysed as illative of the adjective *myöhä* (late)
+* UPOS:  ADV
+* Added from:  kotus
 

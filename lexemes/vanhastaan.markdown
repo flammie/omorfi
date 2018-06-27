@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: vanhastaan
 ---
 
-###  vanhastaan 
+###  vanhastaan
+
 usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old)
+* UPOS:  ADV
+* Added from:  kotus
 

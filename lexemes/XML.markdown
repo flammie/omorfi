@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: XML
 ---
 
-###  XML 
+###  XML
+
 Extensible Markup Language
+* UPOS:  NOUN
+* Added from:  unk
 

@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: WSOY
 ---
 
-###  WSOY 
+###  WSOY
+
 Werner-Söderström Osake-Yhtiö
+* UPOS:  PROPN
+* Added from:  unk
+* Possible NER class:  ORG
 

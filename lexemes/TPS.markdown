@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: TPS
 ---
 
-###  TPS 
+###  TPS
+
 Turun Pallo-Seura
+* UPOS:  PROPN
+* Added from:  unk
+* Possible NER class:  ORG
 

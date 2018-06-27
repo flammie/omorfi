@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: oy
 ---
 
-###  oy 
+###  oy
+
 Osake-Yhtiö
+* UPOS:  NOUN
+* Added from:  unk
 

@@ -3,6 +3,10 @@ layout: lexeme
 lexeme: VW
 ---
 
-###  VW 
+###  VW
+
 Volks Wagen
+* UPOS:  PROPN
+* Added from:  unk
+* Possible NER class:  PRODUCT
 

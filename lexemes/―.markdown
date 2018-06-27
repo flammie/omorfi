@@ -3,6 +3,9 @@ layout: lexeme
 lexeme: ―
 ---
 
-###  ― 
+###  ―
+
 quotation dash, rare but seen in some official corpora
+* UPOS:  PUNCT
+* Added from:  omorfi++
 
