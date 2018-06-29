@@ -21,7 +21,8 @@
 
 from .apertium_formatter import ApertiumFormatter
 from .error_logging import fail_formatting_missing_for
-from .settings import word_boundary
+from .settings import word_boundary, morph_boundary, deriv_boundary, \
+                      weak_boundary, stub_boundary, optional_hyphen
 
 monodix_sdefs = {
     'abbr',
@@ -357,7 +358,9 @@ def format_monodix_sdefs():
 
 def format_monodix_l(s):
     if s != '0':
-        return s.replace(' ', '<b/>').replace(word_boundary, '')
+        return s.replace(' ', '<b/>').replace(word_boundary, '') \
+            .replace(morph_boundary, '').replace(deriv_boundary, '')\
+            .replace(stub_boundary, '').replace(optional_hyphen, '')
     else:
         return ''
 
