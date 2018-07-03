@@ -60,6 +60,10 @@ def main():
     no_matches = 0
     no_results = 0
     lines = 0
+    # types
+    types_covered = 0
+    types_no_results = 0
+    types = 0
     # for make check target
     threshold = options.threshold
     realstart = perf_counter()
@@ -79,14 +83,17 @@ def main():
             lemma = fields[2]
             analysis = fields[3]
         lines += freq
+        types += 1
         if options.verbose:
             print(lines, '(', freq, ') ...', end='\r')
         anals = omorfi.analyse(surf)
         if not is_tokenlist_oov(anals):
             covered += freq
+            types_covered += 1
         else:
             no_results += freq
-            print("OOV", surf, sep='\t', file=options.outfile)
+            types_no_results += 1
+            print(freq, "OOV", surf, sep='\t', file=options.outfile)
         found_anals = False
         found_lemma = False
         for anal in anals:
@@ -97,33 +104,34 @@ def main():
                 analysis = analysis.replace(" >>>", "")
                 if analysis == anal_ftb3:
                     found_anals = True
-                    print("ANALHIT", analysis, anal_ftb3, file=options.outfile)
                 elif set(anal_ftb3.split()) == set(analysis.split()):
                     found_anals = True
-                    print("PERMUTAHIT", analysis, anal_ftb3, file=options.outfile)
+                    print(freq, "PERMUTAHIT", analysis, anal_ftb3, sep='\t',
+                            file=options.outfile)
                 else:
-                    print("ANALMISS", analysis, anal_ftb3, file=options.outfile)
+                    print(freq, "ANALMISS", analysis, anal_ftb3, sep='\t',
+                            file=options.outfile)
                 if lemma == lemma_ftb3:
                     found_lemma = True
-                    print("LEMMAHIT", lemma, lemma_ftb3, file=options.outfile)
                 elif lemma.replace('#', '') == lemma_ftb3.replace('#', ''):
                     found_lemma = True
-                    print("LEMMARECOMP", lemma, lemma_ftb3, file=options.outfile)
+                    print(freq, "LEMMARECOMP", lemma, lemma_ftb3, sep='\t',
+                            file=options.outfile)
                 else:
-                    print("LEMMAMISS", lemma, lemma_ftb3, file=options.outfile)
+                    print("LEMMAMISS", lemma, lemma_ftb3, sep='\t',
+                            file=options.outfile)
         if options.format != 'coverage':
             if not found_anals and not found_lemma:
                 no_matches += freq
-                print("NOHITS!", surf, sep='\t', file=options.outfile)
+                print(freq, "NOHITS!", surf, sep='\t', file=options.outfile)
             elif found_anals and found_lemma:
-                print("HIT", surf, sep='\t', file=options.outfile)
                 full_matches += freq
             elif not found_anals:
                 anal_matches += freq
-                print("LEMMANOANAL", surf, sep='\t', file=options.outfile)
+                print(freq, "LEMMANOANAL", surf, sep='\t', file=options.outfile)
             elif not found_lemma:
                 lemma_matches += freq
-                print("ANALNOLEMMA", surf, sep='\t', file=options.outfile)
+                print(freq, "ANALNOLEMMA", surf, sep='\t', file=options.outfile)
             else:
                 print("Logical error, kill everyone")
                 exit(13)
@@ -135,6 +143,12 @@ def main():
     print(lines / lines * 100 if lines != 0 else 0,
           covered / lines * 100 if lines != 0 else 0,
           (lines-covered) / lines * 100 if lines != 0 else 0,
+          sep="\t", file=options.statfile)
+    print("Types", "Covered", "OOV", sep="\t", file=options.statfile)
+    print(types, types_covered, types-types_covered, sep="\t", file=options.statfile)
+    print(types / types * 100 if types != 0 else 0,
+          types_covered / types * 100 if types != 0 else 0,
+          (types-types_covered) / types * 100 if types != 0 else 0,
           sep="\t", file=options.statfile)
     if options.format == 'ftb3.1':
         print("Lines", "Matches", "Lemma", "Anals", "Mismatch", "No results", sep="\t",

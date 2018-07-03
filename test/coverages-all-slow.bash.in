@@ -1,6 +1,6 @@
 #!/bin/bash
 # coverage for europarl
-fsa="@top_builddir@/src/generated/"
+fsa="@top_builddir@/src/generated/omorfi.describe.hfst"
 if test -z $srcdir ; then
     echo invoke from make check or define srcdir=.
     exit 1
@@ -22,7 +22,8 @@ function coverage_check() {
     fi
     echo Looking up $1.uniq.freqs for at least $2 % coverage
     if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
-            $srcdir/coverage.py -f $fsa -i $1.uniq.freqs -c $hapax\
+            @top_builddir@/src/python/omorfi-freq-evals.py -a $fsa \
+            -i $1.uniq.freqs -c $hapax\
             -o $1.coveragelog -t $2 ; then
         exit 1
     fi
