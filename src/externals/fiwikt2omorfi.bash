@@ -77,9 +77,10 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
     sed -re "s/(<entry>)/\n\1/g" |\
 # Place entries in alphabetical order (due to uniform xml strucuture sort
 # command works normally) and write as .xml file
-    sort |\
+    sort | tee fiwikt.tempxml |\
 # pick all classified for now
     fgrep '<kotus' |\
+    fgrep -v 'lemma>-' |\
 # make csv
     sed -re 's/^.*<lemma>([^<]*).*<wordclass>([^<]*).*<kotus>([^<]*).*$/\1,\3,\2/' |\
 # remove missing lemmas or classes shown as leftover tags from ^^
@@ -89,6 +90,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
     gawk -F , 'NF == 3 {printf("%s\t1\t%s_%s\tfiwikt\n", $1, $3, $2);}
         NF == 4 {printf("%s\t1\t%s_%s%s\tfiwikt\n", $1, $4, $2, $3);}' |\
     sed -e 's/Adverbi_99/ADV_NOPEASTI/' \
+        -e 's/Interjektio_[^	]*/INTJ_HAH/' \
         -e 's/\(o	1	\)Substantiivi_1	/\1NOUN_TALO	/' \
         -e 's/\(o	1	\)Erisnimi_1	/\1PROPN_TALO	/' \
         -e 's/\(u	1	\)Substantiivi_1	/\1NOUN_ASU	/' \
@@ -158,6 +160,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Erisnimi_6C	/\1PROPN_SKEITTI	/' \
         -e 's/\(i	1	\)Erisnimi_7	/\1PROPN_ONNI	/' \
         -e 's/\(i	1	\)Substantiivi_7	/\1NOUN_ONNI	/' \
+        -e 's/\(e	1	\)Numeraali_7	/\1NUM_KOLME	/' \
         -e 's/\(i	1	\)Erisnimi_7D	/\1PROPN_NOKI	/' \
         -e 's/\(i	1	\)Erisnimi_7E	/\1PROPN_LAHTI	/' \
         -e 's/\(i	1	\)Erisnimi_7F	/\1PROPN_KORPI	/' \
@@ -169,6 +172,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(e	1	\)Substantiivi_8	/\1NOUN_NALLE	/' \
         -e 's/\(e	1	\)Erisnimi_8A	/\1PROPN_EKKE	/' \
         -e 's/\(a	1	\)Substantiivi_9	/\1NOUN_KIRJA	/' \
+        -e 's/\(a	1	\)Pronomini_9	/\1PRON_SAMA	/' \
         -e 's/\(a	1	\)Erisnimi_9	/\1PROPN_KIRJA	/' \
         -e 's/\(a	1	\)Erisnimi_9A	/\1PROPN_POLITIIKKA	/' \
         -e 's/\(a	1	\)Substantiivi_9B	/\1NOUN_TIPPA	/' \
@@ -183,8 +187,12 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Adjektiivi_10	/\1ADJ_RUMA	/' \
         -e 's/\(a	1	\)Substantiivi_10	/\1NOUN_VOIMA	/' \
         -e 's/\(a	1	\)Erisnimi_10	/\1PROPN_VOIMA	/' \
+        -e 's/\(a	1	\)Verbi_10	/\1NOUN_VOIMA	/' \
         -e 's/\(ä	1	\)Erisnimi_10	/\1PROPN_HÖPÖTTÄJÄ	/' \
         -e 's/\(ä	1	\)Substantiivi_10	/\1NOUN_HÖPÖTTÄJÄ	/' \
+        -e 's/\(a	1	\)Numeraali_10	/\1NUM_MILJOONA	/' \
+        -e 's/\(än	1	\)Numeraali_10	/\1NUM_YHDEKSÄN	/' \
+        -e 's/\(ä	1	\)Erisnimi_10	/\1PROPN_HÖPÖTTÄJÄ	/' \
         -e 's/\(a	1	\)Erisnimi_10A	/\1PROPN_KUKKA	/' \
         -e 's/\(ä	1	\)Erisnimi_10A	/\1PROPN_HÖLKKÄ	/' \
         -e 's/\(ä	1	\)Erisnimi_10B	/\1PROPN_SEPPÄ	/' \
@@ -213,12 +221,17 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Substantiivi_13	/\1NOUN_KIRJA	/' \
         -e 's/\(a	1	\)Erisnimi_13	/\1PROPN_KIRJA	/' \
         -e 's/\(a	1	\)Erisnimi_14	/\1PROPN_LUSIKKA	/' \
+        -e 's/\(a	1	\)Substantiivi_14A	/\1NOUN_LUSIKKA	/' \
         -e 's/\(a	1	\)Erisnimi_14A	/\1PROPN_LUSIKKA	/' \
         -e 's/\(ä	1	\)Erisnimi_14A	/\1PROPN_HÖLKKÄ	/' \
         -e 's/\(a	1	\)Erisnimi_14C	/\1PROPN_MITTA	/' \
         -e 's/\(a	1	\)Substantiivi_14G	/\1NOUN_HONKA	/' \
+        -e 's/\(a	1	\)Pronomini_15	/\1PRON_USEA	/' \
+        -e 's/\(i	1	\)Pronomini_16	/\1PRON_KUMPI	/' \
+        -e 's/\(ikin	1	\)Pronomini_16	/\1PRON_KUMPIKIN	/' \
         -e 's/\(a	1	\)Erisnimi_18	/\1PROPN_MAA	/' \
         -e 's/\(u	1	\)Erisnimi_18	/\1PROPN_PUU	/' \
+        -e 's/\(u	1	\)Pronomini_18	/\1PRON_MUU	/' \
         -e 's/\(o	1	\)Erisnimi_18	/\1PROPN_OOKOO	/' \
         -e 's/\(ä	1	\)Erisnimi_18	/\1PROPN_PÄÄ	/' \
         -e 's/\(ie	1	\)Erisnimi_19	/\1PROPN_TIE	/' \
@@ -226,6 +239,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(e	1	\)Substantiivi_20	/\1NOUN_PATEE	/' \
         -e 's/\(ä	1	\)Erisnimi_20	/\1PROPN_HYVINKÄÄ	/' \
         -e 's/\(	1	\)Substantiivi_21	/\1NOUN_ROSÉ	/' \
+        -e 's/\(ie	1	\)Pronomini_21	/\1PRON_MIE	/' \
         -e 's/\(	1	\)Erisnimi_21	/\1PROPN_ROSÉ	/' \
         -e 's/\(w	1	\)Erisnimi_22	/\1PROPN_SHOW	/' \
         -e 's/\(i	1	\)Substantiivi_24	/\1NOUN_RUUHI	/' \
@@ -240,11 +254,15 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Substantiivi_31	/\1NOUN_HAAKSI	/' \
         -e 's/\(n	1	\)Erisnimi_32	/\1PROPN_SIEMEN	/' \
         -e 's/\(n	1	\)Erisnimi_33A	/\1PROPN_HÄRKIN	/' \
+        -e 's/\(ton	1	\)Verbi_34C	/\1ADJ_VIATON	/' \
+        -e 's/\(tön	1	\)Verbi_34C	/\1ADJ_KYVYTÖN	/' \
         -e 's/\(n	1	\)Adjektiivi_33B	/\1ADJ_HAPAN	/' \
         -e 's/\([äöyÄÖY].*nen	1	\)Erisnimi_38	/\1PROPN_KYLKIÄINEN	/' \
         -e 's/\(nen	1	\)Substantiivi_38	/\1NOUN_AAKKOSTAMINEN	/' \
+        -e 's/\(nen	1	\)Pronomini_38	/\1PRON_JOKAINEN	/' \
         -e 's/\(nen	1	\)Erisnimi_38	/\1PROPN_AAKKOSTAMINEN	/' \
         -e 's/\(nen	1	\)Adjektiivi_38	/\1ADJ_AAKKOSELLINEN	/' \
+        -e 's/\(s	1	\)Numeraali_38	/\1NUM_NELJÄS	/' \
         -e 's/\(s	1	\)Erisnimi_39	/\1PROPN_VAKUUTUS	/' \
         -e 's/\(s	1	\)Substantiivi_39	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(uus	1	\)Substantiivi_40	/\1NOUN_AAKKOSELLISUUS	/' \
@@ -269,6 +287,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(et	1	\)Erisnimi_44K	/\1PROPN_VIIRRET	/' \
         -e 's/\(et	1	\)Erisnimi_44I	/\1PROPN_VUOLLET	/' \
         -e 's/\(et	1	\)Erisnimi_44J	/\1PROPN_RINNET	/' \
+        -e 's/\(as	1	\)Numeraali_45	/\1ADJ_KOLMAS	/' \
+        -e 's/\(äs	1	\)Numeraali_45	/\1ADJ_NELJÄS	/' \
         -e 's/\(yt	1	\)Adjektiivi_47	/\1ADJ_ÄLLISTYNYT	/' \
         -e 's/\(i	1	\)Substantiivi_48	/\1NOUN_ORI	/' \
         -e 's/\(e	1	\)Substantiivi_48	/\1NOUN_ASTE	/' \
@@ -283,6 +303,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(l	1	\)Substantiivi_49	/\1NOUN_SIEMEN	/' \
         -e 's/\(l	1	\)Erisnimi_49E	/\1PROPN_TAIVAL	/' \
         -e 's/\(.	1	\)Substantiivi_51	/\1NOUN_51XXX	/' \
+        -e 's/\(.	1	\)Numeraali_51	/\1NUM_51XXX	/' \
+        -e 's/\(.	1	\)Pronomini_51	/\1PRON_51XXX	/' \
         -e 's/\(.	1	\)Erisnimi_51	/\1PROPN_51XXX	/' |\
     sed -e 's/\(a	1	\)Verbi_53	/\1VERB_KASVAA	/' \
         -e 's/\(a	1	\)Verbi_53C	/\1VERB_VIEROITTAA	/' \
@@ -295,3 +317,19 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Verbi_72D	/\1VERB_POIKETA	/' \
         -e 's/\(a	1	\)Verbi_73	/\1VERB_ARVATA	/' \
         -e 's/\(a	1	\)Verbi_74D	/\1VERB_POIKETA	/'
+# see what else we can
+cat fiwikt.tempxml |\
+# pick all classified for now
+    fgrep -v '<kotus' |\
+    egrep 'Interjektio|Adverbi' |\
+    fgrep -v 'lemma>-' |\
+# make csv
+    sed -re 's/^.*<lemma>([^<]*).*<wordclass>([^<]*).*$/\1,\2/' |\
+# remove missing lemmas or classes shown as leftover tags from ^^
+    fgrep -v '<entry>' |\
+    tr '|' ',' |\
+    sed -re 's/([[:digit:]]+)-([[:upper:]])/\1,\2/' |\
+    gawk -F , 'NF == 2 {printf("%s\t1\t%s\tfiwikt\n", $1, $2);}' |\
+    sed -e 's/Adverbi_99/ADV_NOPEASTI/' \
+        -e 's/Adverbi/ADV_NOPEASTI/' \
+        -e 's/Interjektio/INTJ_HAH/'
