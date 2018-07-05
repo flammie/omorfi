@@ -321,7 +321,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
 cat fiwikt.tempxml |\
 # pick all classified for now
     fgrep -v '<kotus' |\
-    egrep 'Interjektio|Adverbi' |\
+    egrep 'Interjektio|Adverbi|Konjunktion|Prepositio' |\
+    egrep -v 'Verbi|Substantiivi|Adjektiivi|Pronomini|Numeraali' |\
     fgrep -v 'lemma>-' |\
 # make csv
     sed -re 's/^.*<lemma>([^<]*).*<wordclass>([^<]*).*$/\1,\2/' |\
@@ -332,4 +333,6 @@ cat fiwikt.tempxml |\
     gawk -F , 'NF == 2 {printf("%s\t1\t%s\tfiwikt\n", $1, $2);}' |\
     sed -e 's/Adverbi_99/ADV_NOPEASTI/' \
         -e 's/Adverbi/ADV_NOPEASTI/' \
-        -e 's/Interjektio/INTJ_HAH/'
+        -e 's/Prepositio/ADP_MUKAISESTI/' \
+        -e 's/Interjektio/INTJ_HAH/' \
+        -e 's/Konjunktio/SCONJ_ETTÄ/'
