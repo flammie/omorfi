@@ -114,7 +114,7 @@ def main():
                                 lexdata[lexkey], sep='\n')
                         missed += 1
             else:
-                reflex[lexkey] = tsv_parts
+                lexdata[lexkey] = tsv_parts
                 added += 1
         print("Added", added, "merged", merged, "left", missed)
     with open(args.outfilename, "w") as output:
