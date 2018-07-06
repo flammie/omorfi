@@ -278,13 +278,13 @@ NOUN_AAMUKYMMENEN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	kymm
 NOUN_AAMUYHDEKSÄN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	än	än
 NOUN_AAMUYKSI	NOUN	NOUN	31	None	False	weaken	front	None	None	False	False	yksi	ksi
 NOUN_AARRE	NOUN	NOUN	48	K	False	strengthen	back	None	None	False	False	rre	re
-NOUN_ACRO_AA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aa]
+NOUN_ACRO_AA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aaáàâã]
 NOUN_ACRO_CELSIUS	NOUN	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
 NOUN_ACRO_DOLLARI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_EE	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvw]
+NOUN_ACRO_EE	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvwéèêëçð]
 NOUN_ACRO_GRAMMA	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
 NOUN_ACRO_GRAY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_II	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[IJij]
+NOUN_ACRO_II	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[IJijíìïî]
 NOUN_ACRO_JOULE	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
 NOUN_ACRO_JÄRJESTÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
 NOUN_ACRO_KAHDEKSAN	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	8
@@ -300,24 +300,24 @@ NOUN_ACRO_NELJÄ	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	4
 NOUN_ACRO_NOLLA	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	0
 NOUN_ACRO_OIKEUS	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
 NOUN_ACRO_OK	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_OO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[HKOÅhkoå]
+NOUN_ACRO_OO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[HKOÅhkoåóòô]
 NOUN_ACRO_OPISTO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
 NOUN_ACRO_OPPILAS	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
 NOUN_ACRO_PUNTA	NOUN	ACRONYM	10	None	False	weaken	front	None	None	False	False	.
 NOUN_ACRO_SAIRAALA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
 NOUN_ACRO_SEITSEMÄN	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
 NOUN_ACRO_TUOTE	NOUN	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
-NOUN_ACRO_UU	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[QUqu]
+NOUN_ACRO_UU	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[QUquúùû]
 NOUN_ACRO_VIISI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	5
 NOUN_ACRO_VUOSI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
 NOUN_ACRO_WEBER	NOUN	ACRONYM	0	None	False	weaken	front	None	None	False	False	.
 NOUN_ACRO_YHDISTYS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
 NOUN_ACRO_YKSI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	1
-NOUN_ACRO_YY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[YÜyü]
+NOUN_ACRO_YY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[YÜyüýÿ]
 NOUN_ACRO_ZET	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[ZŽzž]
-NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]
-NOUN_ACRO_ÄÄ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ää]
-NOUN_ACRO_ÖÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Öö]
+NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³ńñ]
+NOUN_ACRO_ÄÄ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ääæ]
+NOUN_ACRO_ÖÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ööøõ]
 NOUN_ACRO_Ω	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
 NOUN_AIKA	NOUN	NOUN	1009	D	False	weaken	back	a	None	False	False	ika	ika
 NOUN_AIVOKUOLLUT	NOUN	NOUN	47	None	False	strengthen	back	u	None	False	False	ut	ut
