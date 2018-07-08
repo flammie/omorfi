@@ -281,7 +281,7 @@ NOUN_AARRE	NOUN	NOUN	48	K	False	strengthen	back	None	None	False	False	rre	re
 NOUN_ACRO_AA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aaáàâã]
 NOUN_ACRO_CELSIUS	NOUN	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
 NOUN_ACRO_DOLLARI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_EE	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvwéèêëçð]
+NOUN_ACRO_EE	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvwéèêëçðþ]
 NOUN_ACRO_GRAMMA	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
 NOUN_ACRO_GRAY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
 NOUN_ACRO_II	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[IJijíìïî]
@@ -315,7 +315,7 @@ NOUN_ACRO_YHDISTYS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
 NOUN_ACRO_YKSI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	1
 NOUN_ACRO_YY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[YÜyüýÿ]
 NOUN_ACRO_ZET	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[ZŽzž]
-NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³ńñ]
+NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³ńñß]
 NOUN_ACRO_ÄÄ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ääæ]
 NOUN_ACRO_ÖÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ööøõ]
 NOUN_ACRO_Ω	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
