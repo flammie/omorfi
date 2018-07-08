@@ -142,16 +142,18 @@ LIST RARER-PROPN =
     ("Vuoksi" PROPN) ("Kiva" PROPN) ("Miele" PROPN) 
     ("Maakunta" PROPN) ("Pia" PROPN) ("Per" PROPN) ("Olle" PROPN)
     ("Johan" PROPN) ("Aino" PROPN) ("Halunen" PROPN) ("Eni" PROPN) 
-    ("Seuranen" PROPN) ;
+    ("Seuranen" PROPN) ("Koiranen" PROPN) ("Marilla" PROPN) 
+    ("Marin" PROPN) ;
 ## also some cases where a rare noun blocks commoner propn
 ## often languages, nationalities, tribes
 LIST RARER-NOUN = ("missouri" NOUN) ("tai" NOUN) ("vai" NOUN) 
-    ("muutti" NOUN) ("kanna" NOUN) ;
+    ("muutti" NOUN) ("kanna" NOUN) ("kerto" NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs
 LIST RARER-ADV =
     ("kuin" ADV) ("kun" ADV) ("tai" ADV) ("sen" ADV) 
-    ("viisi" ADV) ("kuuluu" ADV) ("koska" ADV) ("pitkää" ADV) ;
+    ("viisi" ADV) ("kuuluu" ADV) ("koska" ADV) ("pitkää" ADV) 
+    ("sinut" ADV) ;
 ## verbs that shadow some noun forms etc.
 LIST RARER-VERB =
     ("juuria" VERB) ("eritä" VERB) ("niittää" VERB)
@@ -215,7 +217,7 @@ LIST ADV-LIKE-NOUN-INE =
 ## adps that are rarer than adv or noun counterparts
 ## prefer ADPS-WITH-CASE over RARER-ADP
 LIST RARER-ADP =
-    ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ;
+    ("silloin" ADP) ("vaikka" ADP) ("aina" ADP) ("mutta" ADP) ;
 ## Adpositions by their complement
 ## adpositions with partitive complement
 LIST ADPS-WITH-PAR = ("ylös" ADP) ("päin" ADP) ("vastaan" ADP) 
@@ -226,7 +228,7 @@ LIST ADPS-WITH-GEN = ("takana" ADP) ("mukaan" ADP) ("vuoksi" ADP)
     ("alla" ADP) ("kanssa" ADP) ("kautta" ADP) ("puolesta" ADP) 
     ("läpi" ADP) ("johdolla" ADP) ("sisällä" ADP) ("perusteella" ADP) 
     ("sijaan" ADP) ("suhteen" ADP) ("avulla" ADP) ("jälkeen" ADP) 
-    ("myötä" ADP) ;
+    ("myötä" ADP) ("edessä" ADP) ("alle" ADP) ;
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" ADP) ;
 ## adpositions with illative complement
