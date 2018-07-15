@@ -63,8 +63,12 @@ class Omorfi:
                  '/usr/share/omorfi/',
                  './', 'generated/', 'src/generated/', '../src/generated/']
 
-    def __init__(self, verbosity=False):
-        """Construct Omorfi with given verbosity for printouts."""
+    def __init__(self, verbosity=False, use_describe=False):
+        """Construct Omorfi
+
+        Takes a verbosity for printouts and uses either the small lexicon
+        analyser or the full lexicon describer depending upon use_describe.
+        """
         self._verbosity = verbosity
         ## analyser model
         self.analyser = None
@@ -84,6 +88,8 @@ class Omorfi:
         self.acceptor = None
         ## guesser model
         self.guesser = None
+        ## describer model
+        self.describer = None
         ## UDPipe model
         self.udpiper = None
         ## UDPipeline object :-(
@@ -120,8 +126,12 @@ class Omorfi:
         self.can_labelsegment = False
         ## whether guesser model is loaded
         self.can_guess = False
+        ## whether describer model is loaded
+        self.can_describe = False
         ## whether UDPipe is loaded
         self.can_udpipe = False
+        ## whether to use full lexicon/describe FST
+        self.use_describe = use_describe
 
     def load_hfst(self, f):
         """Load an automaton from file.
@@ -218,6 +228,15 @@ class Omorfi:
         self.guesser = self.load_hfst(f)
         self.can_guess = True
 
+    def load_describer(self, f):
+        """Load describer model from a file.
+
+        @param f containing single hfst automaton binary.
+        @sa load_hfst(self, f)
+        """
+        self.describer = self.load_hfst(f)
+        self.can_describe = True
+
     def load_filename(self, path, **include):
         """Load omorfi automaton from filename and guess its use.
 
@@ -240,9 +259,11 @@ class Omorfi:
             include['generate'] = True
             include['segment'] = True
             include['accept'] = True
+            if self.use_describe:
+                include['describe'] = True
         for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
                       'hyphenate', 'segment', 'labelsegment', 'guesser',
-                      'udpipe']:
+                      'udpipe', 'describe']:
             if ttype not in include:
                 include[ttype] = False
         parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
@@ -288,6 +309,10 @@ class Omorfi:
             if self._verbosity:
                 print('labelsegmenter', parts[0])
             self.load_labelsegmenter(path)
+        elif parts[1] == 'describe' and include['describe']:
+            if self._verbosity:
+                print('describer', parts[0])
+            self.load_describer(path)
         elif self._verbosity:
             print('skipped', parts)
 
@@ -563,6 +588,14 @@ class Omorfi:
             tokens = self.python_tokenise(line)
         return tokens
 
+    @property
+    def eff_analyser(self):
+        """Return the effective analyser: either describer or analyser."""
+        if self.can_describe and self.use_describe:
+            return self.describer
+        else:
+            return self.analyser
+
     def _analyse_str(self, s):
         """Legacy function if you really need to analyse a string.
 
@@ -608,7 +641,7 @@ class Omorfi:
         rv = []
         if "analsurf_override" in token:
             # begin of sentence, etc. recasing extra
-            res = self.analyser.lookup(token["analsurf_override"])
+            res = self.eff_analyser.lookup(token["analsurf_override"])
             for r in res:
                 rvtoken = token.copy()
                 rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
@@ -616,7 +649,7 @@ class Omorfi:
                 rv.append(rvtoken)
         if "analsurf" in token:
             # surface from already determined
-            res = self.analyser.lookup(token["analsurf"])
+            res = self.eff_analyser.lookup(token["analsurf"])
             for r in res:
                 rvtoken = token.copy()
                 rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
@@ -624,7 +657,7 @@ class Omorfi:
                 rv.append(rvtoken)
         else:
             # use real surface case
-            res = self.analyser.lookup(token["surf"])
+            res = self.eff_analyser.lookup(token["surf"])
             for r in res:
                 rvtoken = token.copy()
                 rvtoken['analsurf'] = token["surf"]
@@ -637,7 +670,7 @@ class Omorfi:
             if len(s) > 2 and s[0].islower() and self.try_titlecase:
                 tcs = s[0].upper() + s[1:].lower()
                 if tcs != s:
-                    tcres = self.analyser.lookup(tcs)
+                    tcres = self.eff_analyser.lookup(tcs)
                     for r in tcres:
                         tctoken = token.copy()
                         tctoken['recase'] = 'Titlecased'
@@ -650,7 +683,7 @@ class Omorfi:
             if len(token) > 2 and s[0].isupper() and self.try_detitlecase:
                 dts = s[0].lower() + s[1:]
                 if dts != s:
-                    dtres = self.analyser.lookup(dts)
+                    dtres = self.eff_analyser.lookup(dts)
                     for r in dtres:
                         dttoken = token.copy()
                         dttoken['recase'] = 'dETITLECASED'
@@ -663,7 +696,7 @@ class Omorfi:
             if not s.isupper() and self.try_uppercase:
                 ups = s.upper()
                 if ups != s:
-                    upres = self.analyser.lookup(ups)
+                    upres = self.eff_analyser.lookup(ups)
                     for r in upres:
                         uptoken = token.copy()
                         uptoken['recase'] = 'UPPERCASED'
@@ -676,7 +709,7 @@ class Omorfi:
             if not s.islower() and self.try_lowercase:
                 lows = s.lower()
                 if lows != s:
-                    lowres = self.analyser.lookup(lows)
+                    lowres = self.eff_analyser.lookup(lows)
                     for r in lowres:
                         lowtoken = token.copy()
                         lowtoken['recase'] = 'lowercased'
@@ -891,8 +924,8 @@ class Omorfi:
         """Look up token from acceptor model."""
         if self.acceptor:
             res = self.acceptor.lookup(token['surf'])
-        elif self.analyser:
-            res = self.analyser.lookup(token['surf'])
+        elif self.eff_analyser:
+            res = self.eff_analyser.lookup(token['surf'])
         else:
             res = None
         return res
@@ -986,10 +1019,13 @@ def main():
                    help="Path to directory of HFST format automata")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
+    a.add_argument('-d', '--describe', action="store_true",
+                   help="Use the full lexicon describer rather than the small "
+                        "lexicon analyser")
     a.add_argument('-v', '--verbose', action='store_true',
                    help="print verbosely while processing")
     options = a.parse_args()
-    omorfi = Omorfi(options.verbose)
+    omorfi = Omorfi(options.verbose, options.describe)
     if options.fsa:
         omorfi.load_from_dir(options.fsa)
     else:
