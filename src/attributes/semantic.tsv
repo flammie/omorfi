@@ -8,7 +8,6 @@ a	1	time
 $A	1	currency
 aA	1	measure
 AA	1	org
-Aabraham	1	male
 Aada	1	female
 Aadolf	1	male
 Aake	1	male
@@ -339,6 +338,7 @@ antiguabarbudalainen	2	inhabitant
 antiguabarbudalainen	3	country
 antiguabarbudalainen	4	inhabitant
 Anton	1	male
+Antoni	1	male
 Antonia	1	female
 Antonio	1	male
 Antti	1	male
@@ -893,6 +893,7 @@ cl	2	measure
 Clara	1	female
 Clark	2	male
 Claude	1	male
+Claudia	1	female
 CLE	1	currency
 CLF	1	currency
 Clive	1	male
@@ -1561,6 +1562,7 @@ Frejvid	1	male
 FRF	1	currency
 Frida	1	female
 Fridolf	1	male
+Friedrich	1	male
 friisi	1	language
 Fritiof	1	male
 Fritjof	1	male
@@ -1627,6 +1629,7 @@ georgialainen	1	country
 georgialainen	2	inhabitant
 georgialainen	3	country
 georgialainen	4	inhabitant
+Gerald	1	male
 Gerhard	1	male
 Germund	1	male
 Gerry	1	male
@@ -1874,6 +1877,7 @@ heinolainen	1	inhabitant
 heinolainen	2	inhabitant
 heinolalainen	1	inhabitant
 heinolalainen	2	inhabitant
+Heinrich	1	male
 heinäveteläinen	1	inhabitant
 heinäveteläinen	2	inhabitant
 heinävetinen	1	inhabitant
@@ -2511,6 +2515,7 @@ juan	1	currency
 juankoskelainen	1	inhabitant
 juankoskelainen	2	inhabitant
 Judit	1	female
+Judith	1	female
 Jugoslavia	1	country
 jugoslavianmakedonialainen	1	country
 jugoslavianmakedonialainen	2	inhabitant
@@ -2783,6 +2788,7 @@ katalaani	1	language
 katanganluba	1	language
 Katariina	1	female
 Katarina	1	female
+Katharina	1	female
 Kati	1	female
 Kati-Maria	1	female
 Katinka	1	female
@@ -3662,6 +3668,7 @@ luhankalainen	2	inhabitant
 luhya	1	language
 Luigi	1	male
 Luis	1	male
+Luise	1	female
 luiseño	1	language
 LuK	2	title
 Luka	1	male
@@ -3875,6 +3882,7 @@ Malvinassaaret	1	country
 mandar	1	language
 Mandi	1	female
 mandingo	1	language
+Manfred	1	male
 manipuri	1	language
 manksi	1	language
 Manne	1	male
@@ -4003,6 +4011,7 @@ mauritiuslainen	3	country
 mauritiuslainen	4	inhabitant
 Mauritz	1	male
 Max	1	male
+Maximilian	1	male
 Maximus	1	male
 mayakieli	1	language
 Mayotte	1	country
