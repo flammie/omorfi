@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf8 -*-
 """
-This script converts Finnish TSV-formatted lexicon to apertium format,
+This script converts Finnish TSV-formatted lexicon to hunspell format,
 """
 
 
-# Author: Tommi A Pirinen <flammie@iki.fi> 2009, 2011
+# Author: Tommi A Pirinen <flammie@iki.fi> 2009, 2011, 2018
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@ from sys import exit, stderr
 def main():
     # initialise argument parser
     ap = argparse.ArgumentParser(
-        description="Convert Finnish dictionary TSV data into apertium monodix XML")
+        description="Convert Finnish dictionary TSV data into hunspell")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
                     default=False,
                     help="do not print output to stdout while processing")
@@ -132,17 +132,20 @@ def main():
                 else:
                     deletion = "0"
                     suffix_match = "."
+                if deletion == None or deletion == "None":
+                    deletion = "0"
                 contlist = list()
                 for cont in tsv_parts[3:]:
                     if cont == '#':
                         continue
                     contlist += [str(affixmap[cont])]
                 conts = ','.join(contlist)
-                affix = tsv_parts[2].replace(
+                affix = tsv_parts[2].replace('{MB}', '').replace('{DB}', '').replace('{STUB}', '')
                 pardef_data += '\nSFX %d\t%s\t%s/%s\t%s' % (affixmap[tsv_parts[0]],
-                        deletion, tsv_parts[2], conts, suffix_match)
+                        deletion, affix, conts, suffix_match)
                 prev_pardef = tsv_parts[0]
 
+    print(155883, file=args.dic)
     for tsv_filename in args.master:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -163,6 +166,14 @@ def main():
                     continue
                 wordmap = tsv_parts
                 # XXX: format output
+                if 'PROPN' in wordmap['new_para'] or 'IGNORE' in wordmap['new_para']:
+                    pass
+                elif wordmap['new_para'] in affixmap:
+                    print(wordmap['lemma'], affixmap[wordmap['new_para']],
+                            sep='/', file=args.dic)
+                else:
+                    print(wordmap['lemma'], file=args.dic)
+                    print("Missing para", wordmap['new_para'], file=stderr)
     exit()
 
 
