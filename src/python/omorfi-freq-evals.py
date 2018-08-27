@@ -9,7 +9,7 @@ from argparse import ArgumentParser, FileType
 from sys import stderr, stdout, stdin
 from time import perf_counter, process_time
 
-from omorfi.omorfi import Omorfi
+from omorfi import Omorfi
 from omorfi.token import is_tokenlist_oov, format_feats_ftb, get_lemmas
 
 def main():

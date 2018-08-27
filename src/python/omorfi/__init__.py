@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Omorfi API for python."""
 
-# Author: Tommi A Pirinen <flammie@iki.fi> 2015
+# Author: Tommi A Pirinen <flammie@iki.fi> 2018
 
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -21,9 +21,11 @@
 
 __all__ = ['Omorfi']
 
-__version__ = "2015"
+__version__ = "2018"
 __author__ = "Omorfi contributors"
 __author_email__ = "omorfi-development@googlegroups.com"
+
+from .omorfi import Omorfi
 
 if __name__ == "__main__":
     pass
