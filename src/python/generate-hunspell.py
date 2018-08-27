@@ -95,7 +95,7 @@ def main():
     if args.verbose:
         print("Writing affixes to", args.aff.file_name)
     print('SET UTF-8', file=args.aff)
-    print('FLAG long', file=args.aff)
+    print('FLAG num', file=args.aff)
     #          abcdefghijklmnopqrstuvwxyzåäöšžABCDEFGHIJKLMNOPQRESTUVWXYZÅÄÖŠŽ-.
     print('TRY aintesloukämrvjhpydögbcfwzxqåšžAINTESLOUKÄMRVJHPYDÖGBCXFWZXQÅŠŽ-.',
             file=args.aff)
