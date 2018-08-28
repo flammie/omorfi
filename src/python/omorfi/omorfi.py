@@ -291,16 +291,6 @@ class Omorfi:
         elif self._verbosity:
             print('skipped', parts)
 
-    def _maybe_str2token(self, s):
-        if isinstance(s, str):
-            return {"surf": s}
-        elif isinstance(s, dict):
-            return s
-        else:
-            return {"error": "not a string or dict",
-                    "location": "maybe_str2token",
-                    "data": s}
-
     def load_from_dir(self, path=None, **include):
         """Load omorfi automata from given or known locations.
 
@@ -409,24 +399,28 @@ class Omorfi:
     def _find_retoken_recase(self, token):
         """Turns a string into a recased non-OOV token."""
         if self.accept(token):
-            return {"surf": token, "analsurf": token, "recase": "ORIGINALCASE"}
-        if self.try_lowercase and self.accept(token.lower()):
-            return {"surf": token, "analsurf": token.lower(),
-                    "recase": "LOWERCASED"}
-        if self.try_uppercase and self.accept(token.upper()):
-            return {"surf": token, analsurf: "token.upper()",
-                    "recase": "UPPERCASED"}
-        if len(token) > 1:
-            if self.try_titlecase and \
-                    self.accept(token[0].upper() + token[1:].lower()):
-                return {"surf": token,
-                        "analsurf": token[0].upper() + token[1:].lower(),
-                        "recase": "TITLECASED"}
-            if self.try_detitlecase and \
-                    self.accept(token[0].lower() + token[1:]):
-                return {"surf": token,
-                        "analsurf": token[0].lower() + token[1:],
-                        "recase": "DETITLECASED"}
+            return token
+        if len(token.surf) > 1:
+            if self.try_titlecase and not token.surf[0].isupper():
+                token.analsurf = token.surf[0].upper() + token[1:].lower()
+                if self.accept(token):
+                    token.recased = 'Titlecased'
+                    return token
+            if self.try_detitlecase and not token.surf[0].islower():
+                token.analsurf = token.surf[0].lower() + token[1:]
+                if self.accept(token):
+                    token.recased = 'dETITLECASED'
+                    return token
+        if self.try_lowercase and self.surf.lower() != token.surf:
+            token.analsurf = token.surf.lower()
+            if self.accept(token):
+                token.recased = 'lowercased'
+                return token
+        if self.try_uppercase and not token.surf.upper() != token.surf:
+            token.analsurf = token.surf.upper()
+            if self.accept(token):
+                token.recased = 'UPPERCASED'
+                return token
         return False
 
     def _find_retokens(self, token):
@@ -702,29 +696,13 @@ class Omorfi:
         The analyses with case mangling will have an additional element to them
         identifying the casing.
         """
-        anals = None
-        if isinstance(token, str):
-            anals = self._analyse_str(token)
-        elif isinstance(token ,dict):
-            anals = self._analyse_token(token)
-        else:
-            anals = [{"error": "token is not str or dict",
-                "token": token, "location": "analyse()"}]
+        anals = self._analyse_token(token)
         if not anals:
-            if isinstance(token, str):
-                anal = {"anal": '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
-                        % (token), "weight": float('inf'), "OOV": "Yes",
-                        "guess": "None"}
-            elif isinstance(token, dict):
-                anal = token.copy()
-                anal["anal"] = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
+            anal = token.copy()
+            anal.omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
                         % (token['surf'])
-                anal["weight"] = float('inf')
-                anal["OOV"] = "Yes"
-                anal["guess"] = "None"
-            else:
-                anal = {"error": "token is not str or dict",
-                        "token": token, "location": "analyse()"}
+            anal.weight = float('inf')
+            anal.oov = "Yes"
             anals = [anal]
         return anals
 
@@ -850,11 +828,10 @@ class Omorfi:
         The segments come separated by some internal markers for different
         segment boundaries.
         '''
-        realtoken = self._maybe_str2token(token)
         segments = None
-        segments = self._segment(realtoken)
+        segments = self._segment(token)
         if not segments or len(segments) < 1:
-            segmenttoken = realtoken.copy()
+            segmenttoken = token.copy()
             segmenttoken['segments'] = segmenttoken['surf']
             segments = [segmenttoken]
         return segments
@@ -877,11 +854,10 @@ class Omorfi:
         features for inflectional segments. This functionality is experimental
         due to hacky way it was patched together.
         '''
-        realtoken = self._maybe_str2token(token)
         labelsegments = None
-        labelsegments = self._labelsegment(realtoken)
+        labelsegments = self._labelsegment(token)
         if not labelsegments or len(labelsegments) < 1:
-            lstoken = realtoken.copy()
+            lstoken = token.copy()
             lstoken['labelsegments'] = lstoken['surf']
             lstoken['lsweight'] = float('inf')
             labelsegments = [lstoken]
@@ -890,9 +866,15 @@ class Omorfi:
     def _accept(self, token):
         """Look up token from acceptor model."""
         if self.acceptor:
-            res = self.acceptor.lookup(token['surf'])
+            if token.analsurf:
+                res = self.acceptor.lookup(token.analsurf)
+            else:
+                res = self.acceptor.lookup(token.surf)
         elif self.analyser:
-            res = self.analyser.lookup(token['surf'])
+            if token.analsurf:
+                res = self.analyser.lookup(token.analsurf)
+            else:
+                res = self.analyser.lookup(token.surf)
         else:
             res = None
         return res
@@ -903,10 +885,9 @@ class Omorfi:
         Returns False for OOVs, True otherwise. Note, that this is not
         necessarily more efficient than analyse(token)
         '''
-        realtoken = self._maybe_str2token(token)
         accept = False
         accepts = None
-        accepts = self._accept(realtoken)
+        accepts = self._accept(token)
         if accepts and len(accepts) > 0:
             accept = True
         else:
@@ -914,7 +895,7 @@ class Omorfi:
         return accept
 
     def _generate(self, token):
-        res = self.generator.lookup(token['anal'])
+        res = self.generator.lookup(token.omor)
         generations = []
         for r in res:
             g = token.copy()
@@ -978,6 +959,31 @@ class Omorfi:
 
     def _ufeats2omor(self, ufeats):
         return '[' + ufeats.replace('|', '][') + ']'
+
+    def tokenise_sentence(self, sentence):
+        '''tokenise a sentence.
+
+        To be used when text is already sentence-splitted. If the
+        text is plain text with sentence boundaries within lines,
+        use 
+
+        @todo tokenise_text
+        '''
+        if not sentence or sentence == '':
+            token = Token()
+            token.nontoken = True
+            token.comment = ''
+            return [token]
+        tokens = omorfi.tokenise(sentence)
+        pos = 1
+        for token in token:
+            if pos == 1:
+                token.firstinsent = True
+            else:
+                token.firstinsent = False
+            surf.position = pos
+            pos += 1
+        return tokens
 
 def main():
     """Invoke a simple CLI analyser."""
