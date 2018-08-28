@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stderr, stdin, stdout
@@ -10,9 +9,9 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_ud_feats, get_upos, get_lemmas, \
-        format_feats_ud, format_xpos_ftb, format_xpos_tdt, format_misc_ud
+from omorfi import Omorfi, Token
+#from omorfi.token import get_ud_feats, get_upos, get_lemmas, \
+#       format_feats_ud, format_xpos_ftb, format_xpos_tdt, format_misc_ud
 
 
 
@@ -99,7 +98,7 @@ def main():
             print("reading analyser model", options.analyser)
         omorfi.load_analyser(options.analyser)
     else:
-        print("analyser is needed to conllu", file=stdrr)
+        print("analyser is needed to conllu", file=stderr)
         exit(4)
     if options.udpipe:
         if options.verbose:
@@ -116,8 +115,6 @@ def main():
         print("writing to", options.outfile.name)
     if not options.statfile:
         options.statfile = stdout
-    lexprobs = None
-    tagprobs = None
 
     if options.frequencies:
         with open(options.frequencies + '/lexemes.freqs') as lexfile:
@@ -132,25 +129,9 @@ def main():
     unknowns = 0
     sentences = 0
     recognised_comments = ['sent_id =', 'text =', 'doc-name:', 'sentence-text:']
-    for line in options.infile:
-        fields = line.strip().split('\t')
-        if len(fields) == 10:
-            # conllu is 10 field format
+    while sent = tokenise_conllu(options.infile):
+        for token in sent:
             tokens += 1
-            try:
-                index = int(fields[0])
-            except ValueError:
-                if '-' in fields[0]:
-                    # MWE
-                    continue
-                elif '.' in fields[0]:
-                    # a ghost
-                    continue
-                else:
-                    print(
-                        "Cannot figure out token index", fields[0], file=stderr)
-                    exit(1)
-            surf = fields[1]
             anals = omorfi.analyse(surf)
             if not anals or len(anals) == 0 or (len(anals) == 1 and
                                                 'OOV' in anals[0]):

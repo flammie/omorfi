@@ -19,6 +19,7 @@ from math import log
 import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
+from .token import Token
 
 can_udpipe = True
 try:
@@ -100,6 +101,8 @@ class Omorfi:
         self.try_titlecase = True
         ## whether to dEtitlecase and re-analyse if needed
         self.try_detitlecase = True
+        ## whether to dEtitlecase and re-analyse if needed
+        self.try_detitle_firstinsent = True
         ## whether to UPPERCASE and re-analyse if needed
         self.try_uppercase = False
         ## whether accept model is loaded
@@ -218,121 +221,6 @@ class Omorfi:
         self.guesser = self.load_hfst(f)
         self.can_guess = True
 
-    def load_filename(self, path, **include):
-        """Load omorfi automaton from filename and guess its use.
-
-        A file name should consist of three parts separated by full stop.
-        The second part must be a keyword describing the use of the
-        automaton, first part is parsed as an identifier typically starting
-        with the word omorfi, followed by any extras, such as the tagset for
-        analysis or generation.
-
-        The named arguments can include a name of automaton type as name,
-        and truth value as value, for types of automata allowed to load.
-        By default, the names `analyse`, `generate` and `segment` are loaded.
-        Names not included are defaulted to False. E.g.,
-        `omorfi.load_filename(fn, analyse=True)`
-        will only load file named fn if it can be identified as omorfi
-        analyser. This is best used in conjunction with omorfi.load_from_dir.
-        """
-        if len(include) == 0:
-            include['analyse'] = True
-            include['generate'] = True
-            include['segment'] = True
-            include['accept'] = True
-        for ttype in ['analyse', 'generate', 'accept', 'tokenise', 'lemmatise',
-                      'hyphenate', 'segment', 'labelsegment', 'guesser',
-                      'udpipe']:
-            if ttype not in include:
-                include[ttype] = False
-        parts = path[path.rfind('/') + 1:path.rfind('.')].split('.')
-        if len(parts) != 2:
-            if self._verbosity:
-                print('not loaded', path)
-        elif not parts[0] == 'omorfi':
-            if self._verbosity:
-                print('not omorfi', path)
-        elif parts[1] == 'analyse' and include['analyse']:
-            if self._verbosity:
-                print('analyser', parts[0])
-            self.load_analyser(path)
-        elif parts[1] == 'generate' and include['generate']:
-            if self._verbosity:
-                print('generator', parts[0])
-            self.load_generator(path)
-        elif parts[1] == 'accept' and include['accept']:
-            if self._verbosity:
-                print('acceptor', parts[0])
-            self.load_acceptor(path)
-        elif parts[1] == 'tokenise' and include['tokenise']:
-            if self._verbosity:
-                print('tokeniser', parts[0])
-            self.load_tokeniser(path)
-        elif parts[1] == 'lemmatise' and include['lemmatise']:
-            if self._verbosity:
-                print('lemmatiser', parts[0])
-            self.load_lemmatiser(path)
-        elif parts[1] == 'hyphenate' and include['hyphenate']:
-            if self._verbosity:
-                print('hyphenator', parts[0])
-            self.load_hyphenator(path)
-        elif parts[1] == 'segment' and include['segment']:
-            if self._verbosity:
-                print('segmenter', parts[0])
-            self.load_segmenter(path)
-        elif parts[1] == 'guesser' and include['guesser']:
-            if self._verbosity:
-                print('guesser', parts[0])
-            self.load_guesser(path)
-        elif parts[1] == 'labelsegment' and include['labelsegment']:
-            if self._verbosity:
-                print('labelsegmenter', parts[0])
-            self.load_labelsegmenter(path)
-        elif self._verbosity:
-            print('skipped', parts)
-
-    def load_from_dir(self, path=None, **include):
-        """Load omorfi automata from given or known locations.
-
-        If path is given it should point to directory of automata,
-        otherwise standard installation paths are tried. Currently standard
-        linux install paths are all globbed in following order:
-
-        * /usr/local/share/hfst/fi/*.hfst
-        * /usr/share/hfst/fi/*.hfst
-        * /usr/local/share/omorfi/*.hfst
-        * /usr/share/omorfi/*.hfst
-        * getenv('HOME') + /.hfst/fi/*.hfst
-        * getenv('HOME') + /.omorfi/*.hfst
-
-        Last two paths require getenv('HOME'). All automata matching
-        glob *.hfst are loaded and stored in part of omorfi class appropriate
-        for their usage.
-
-        They keyword args can be used to limit loading of automata. The name
-        is analyser type and value is True.
-        """
-        homepaths = []
-        if getenv('HOME'):
-            home = getenv('HOME')
-            homepaths = [home + '/.hfst/fi/',
-                         home + '/.omorfi/']
-        loadable = []
-        if path:
-            if self._verbosity:
-                print('adding', path + '/*.hfst')
-            loadable = glob(path + '/*.hfst')
-        else:
-            for sp in self._stdpaths + homepaths:
-                if self._verbosity:
-                    print('adding', sp + '/*.hfst')
-                loadable += glob(sp + '/*.hfst')
-        for filename in loadable:
-            try:
-                self.load_filename(filename, **include)
-            except:
-                print("broken HFST", filename, file=stderr)
-
     def load_udpipe(self, filename):
         """Load UDPipe model for statistical parsing.
 
@@ -348,7 +236,7 @@ class Omorfi:
         self.udpiper = Model.load(filename)
         # use pipeline for now, ugly but workable
         self.udpipeline = Pipeline(self.udpiper, 'horizontal', Pipeline.DEFAULT,
-                Pipeline.DEFAULT, 'conllu')
+                                   Pipeline.DEFAULT, 'conllu')
         self.uderror = ProcessingError()
         ## udpipe is loaded
         self.can_udpipe = True
@@ -411,7 +299,7 @@ class Omorfi:
                 if self.accept(token):
                     token.recased = 'dETITLECASED'
                     return token
-        if self.try_lowercase and self.surf.lower() != token.surf:
+        if self.try_lowercase and token.surf.lower() != token.surf:
             token.analsurf = token.surf.lower()
             if self.accept(token):
                 token.recased = 'lowercased'
@@ -424,94 +312,47 @@ class Omorfi:
         return False
 
     def _find_retokens(self, token):
-        """Turns a string into a list of likely tokens."""
-        retoken = self._find_retoken_recase(token)
-        if retoken:
-            return [retoken]
-        # Word.
-        if token[-1] in fin_punct_trailing:
-            retoken = self._find_retoken_recase(token[:-1])
-            if retoken:
-                retoken['SpaceAfter'] = "No"
-                return[retoken, {"surf": token[-1], "SpaceBefore": "No"}]
-        # -Word
-        if token[0] in fin_punct_leading:
-            retoken = self._find_retoken_recase(token[1:])
-            if retoken:
-                retoken['SpaceBefore'] = 'No'
-                return [{"surf": token[0], "SpaceAfter": "No"},
-                        retoken]
-        # "Word"
-        if token[0] in fin_punct_leading and token[-1] in fin_punct_trailing:
-            retoken = self._find_retoken_recase(token[1:-1])
-            if retoken:
-                retoken['SpaceBefore'] = 'No'
-                retoken['SpaceAfter'] = 'No'
-                return [
-                        {"surf": token[0], "SpaceAfter": "No"},
-                        retoken,
-                        {"surf": token[-1], "SpaceBefore": "No"}]
-        # word." or word",
-        if len(token) > 2 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing:
-            retoken = self._find_retoken_recase(token[:-2])
-            if retoken:
-                retoken["SpaceAfter"] = "No"
-                return [
-                    retoken,
-                    {"surf": token[-2], "SpaceBefore": "No", "SpaceAfter": "No"},
-                    {"surf": token[-1], "SpaceBefore": "No"}]
-        # word.",
-        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing:
-            retoken = self._find_retoken_recase(token[:-3])
-            if retoken:
-                retoken["SpaceAfter"] = "No"
-                return [
-                    retoken,
-                    {"surf": token[-3], "SpaceBefore": "No", "SpaceAfter": "No"},
-                    {"surf": token[-2], "SpaceBefore": "No", "SpaceAfter": "No"},
-                    {"surf": token[-1], "SpaceBefore": "No"}]
-        # "word."
-        if len(token) > 3 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[0] in fin_punct_leading:
-            retoken = self._find_retoken_recase(token[1:-2])
-            if retoken:
-                retoken["SpaceAfter"] = "No"
-                retoken["SpaceBefore"] = "No"
-                return [
-                        {"surf": token[0], "SpaceAfter": "No"},
-                        retoken,
-                        {"surf": token[-2], "SpaceBefore": "No",
-                            "SpaceAfter": "No"},
-                        {"surf": token[-1], "SpaceBefore": "No"}]
-        # "word.",
-        if len(token) > 4 and token[-1] in fin_punct_trailing and token[-2] in fin_punct_trailing and token[-3] in fin_punct_trailing and token[0] in fin_punct_leading:
-            retoken = self._find_retoken_recase(token[1:-3])
-            if retoken:
-                retoken["SpaceAfter"] = "No"
-                retoken["SpaceBefore"] = "No"
-                return [
-                        {"surf": token[0], "SpaceAfter": "No"},
-                        retoken,
-                        {"surf": token[-3], "SpaceBefore": "No",
-                            "SpaceAfter": "No"},
-                        {"surf": token[-2], "SpaceBefore": "No",
-                            "SpaceAfter": "No"},
-                        {"surf": token[-1], "SpaceBefore": "No"}]
-        # ...non-word...
+        """Turns a string into a list of likely tokens.
+
+        Tries to strip punct tokens from left and right.
+        """
         pretokens = []
         posttokens = []
-        while len(token) > 1 and token[-1] in fin_punct_trailing:
-            posttokens = ([{"surf": token[-1], "SpaceBefore": "No"}]
-                          + posttokens)
-            token = token[:-1]
-        while len(token) > 1 and token[0] in fin_punct_leading:
-            pretokens += [{"surf": token[0], "SpaceAfter": "No"}]
-            token = token[1:]
-        lastresort = {"surf": token}
-        if len(pretokens) > 0:
-            lastresort['SpaceBefore'] = 'No'
-        if len(posttokens) > 0:
-            lastresort['SpaceAfter'] = 'No'
-        return pretokens + [lastresort] + posttokens
+        for i in range(4):
+            for j in range(4):
+                if len(token) > (i +j):
+                    if j == 0:
+                        resurf = token.surf[i:]
+                    else:
+                        resurf = token.surf[i:-j]
+                    presurfs = token.surf[:i]
+                    postsurfs = token.surf[j:]
+                    pretrailpuncts = True
+                    for c in presurfs:
+                        if c in fin_punct_leading:
+                            pretoken = Token(c)
+                            pretoken.spaceafter = 'No'
+                            pretokens.append(pretoken)
+                        else:
+                            pretrailpuncts = False
+                            break
+                    for c in postsurfs:
+                        if c in fin_punct_trailing:
+                            posttoken = Token(c)
+                            posttoken.spacebefore = 'No'
+                            posttokens.append(posttoken)
+                        else:
+                            pretrailpuncts = False
+                            break
+                    if not pretrailpuncts:
+                        continue
+                    retoken = Token(resurf)
+                    if self._find_retoken_recase(retoken):
+                        return pretokens + [retoken] + posttokens
+                    else:
+                        continue
+        # no acceptable substring inside, just strip puncts
+        return [token]
 
     def _retokenise(self, tokens):
         """Takes list of string from and produces list of tokens.
@@ -557,89 +398,48 @@ class Omorfi:
             tokens = self.python_tokenise(line)
         return tokens
 
-    def _analyse_str(self, s):
-        """Legacy function if you really need to analyse a string.
-
-        Turn it into a token and analyse a token instead. This is not even the
-        standard string mangling. Do not touch."""
-        token = {"surf": s}
-        res = self._analyse_token(token)
-        if len(s) > 2 and s[0].islower() and self.try_titlecase:
-            tcs = s[0].upper() + s[1:].lower()
-            if s != tcs:
-                tctoken = {"surf": s, "analsurf": tcs, "recase": 'Titlecased'}
-                tcres = self._analyse_token(tctoken)
-                for r in tcres:
-                    r['anal'] += '[CASECHANGE=TITLECASED]'
-                res = res + tcres
-        if len(token) > 2 and s[0].isupper() and self.try_detitlecase:
-            dts = s[0].lower() + s[1:]
-            if dts != s:
-                dttoken = {"surf": s, "analsurf": dts, "recase": "dETITLECASED"}
-                dtres = self._analyse_token(dttoken)
-                for r in dtres:
-                    r['anal'] += '[CASECHANGE=DETITLECASED]'
-                res = res + dtres
-        if not s.isupper() and self.try_uppercase:
-            ups = s.upper()
-            if s != ups:
-                uptoken = {"surf": s, "analsurf": ups, "recase": "UPPERCASED"}
-                upres = self._analyse_token(uptoken)
-                for r in upres:
-                    r['anal'] += '[CASECHANGE=UPPERCASED]'
-                res = res + upres
-        if not s.islower() and self.try_lowercase:
-            lows = s.lower()
-            if s != lows:
-                lowtoken = {"surf": s, "analsurf": lows, "recase": "lowercased"}
-                lowres = self._analyse_token(lowtoken)
-                for r in lowres:
-                    r['anal'] += '[CASECHANGE=LOWERCASED]'
-                res += lowres
-        return res
-
     def _analyse_token(self, token):
         rv = []
-        if "analsurf_override" in token:
+        if token.firstinsent and self.try_detitle_firstinsent:
             # begin of sentence, etc. recasing extra
-            res = self.analyser.lookup(token["analsurf_override"])
+            res = self.analyser.lookup(token.surf[0].lower() + token.surf[1:])
             for r in res:
                 rvtoken = token.copy()
-                rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken['weight'] = r[1]
+                rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
+                rvtoken.weight = r[1]
                 rv.append(rvtoken)
-        if "analsurf" in token:
+        if token.analsurf:
             # surface from already determined
-            res = self.analyser.lookup(token["analsurf"])
+            res = self.analyser.lookup(token.analsurf)
             for r in res:
                 rvtoken = token.copy()
-                rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken["weight"] = r[1]
+                rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
+                rvtoken.weight = r[1]
                 rv.append(rvtoken)
         else:
             # use real surface case
-            res = self.analyser.lookup(token["surf"])
+            res = self.analyser.lookup(token.surf)
             for r in res:
                 rvtoken = token.copy()
-                rvtoken['analsurf'] = token["surf"]
-                rvtoken['anal'] = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken["weight"] = r[1]
+                rvtoken.analsurf = token.surf
+                rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
+                rvtoken.omor = r[1]
                 rv.append(rvtoken)
         if not "analsurf_override" in token and not "analsurf" in token:
             # also guess other cases
-            s = token['surf']
+            s = token.surf
             if len(s) > 2 and s[0].islower() and self.try_titlecase:
                 tcs = s[0].upper() + s[1:].lower()
                 if tcs != s:
                     tcres = self.analyser.lookup(tcs)
                     for r in tcres:
                         tctoken = token.copy()
-                        tctoken['recase'] = 'Titlecased'
-                        tctoken['analsurf'] = tcs
-                        tctoken['anal'] = r[0] + \
+                        tctoken.recased = 'Titlecased'
+                        tctoken.analsurf = tcs
+                        tctoken.omor = r[0] + \
                             '[CASECHANGE=TITLECASED][WEIGHT=%f]' % (r[1] +
-                                    self._penalty)
-                        tctoken["weight"] = r[1] + self._penalty
+                                                                    self._penalty)
+                        tctoken.weight = r[1] + self._penalty
                         rv.append(tctoken)
             if len(token) > 2 and s[0].isupper() and self.try_detitlecase:
                 dts = s[0].lower() + s[1:]
@@ -647,12 +447,12 @@ class Omorfi:
                     dtres = self.analyser.lookup(dts)
                     for r in dtres:
                         dttoken = token.copy()
-                        dttoken['recase'] = 'dETITLECASED'
-                        dttoken['analsurf'] = dts
-                        dttoken['anal'] = r[0] + \
+                        dttoken.recased = 'dETITLECASED'
+                        dttoken.analsurf = dts
+                        dttoken.omor = r[0] + \
                                 "[CASECHANGE=DETITLECASED][WEIGHT=%f]" % (r[1] +
-                                        self._penalty)
-                        dttoken["weight"] = r[1] + self._penalty
+                                                                          self._penalty)
+                        dttoken.weight = r[1] + self._penalty
                         rv.append(dttoken)
             if not s.isupper() and self.try_uppercase:
                 ups = s.upper()
@@ -660,12 +460,12 @@ class Omorfi:
                     upres = self.analyser.lookup(ups)
                     for r in upres:
                         uptoken = token.copy()
-                        uptoken['recase'] = 'UPPERCASED'
-                        uptoken['analsurf'] = ups
-                        uptoken['anal'] = r[0] + \
+                        uptoken.recased = 'UPPERCASED'
+                        uptoken.analsurf = ups
+                        uptoken.omor = r[0] + \
                                 "[CASECHANGE=UPPERCASED][WEIGHT=%f]" % (r[1] +
-                                        self._penalty)
-                        uptoken["weight"] = r[1] + self._penalty
+                                                                        self._penalty)
+                        uptoken.weight = r[1] + self._penalty
                         rv.append(uptoken)
             if not s.islower() and self.try_lowercase:
                 lows = s.lower()
@@ -673,12 +473,12 @@ class Omorfi:
                     lowres = self.analyser.lookup(lows)
                     for r in lowres:
                         lowtoken = token.copy()
-                        lowtoken['recase'] = 'lowercased'
-                        lowtoken['analsurf'] = lows
-                        lowtoken['anal'] = r[0] +\
+                        lowtoken.recased = 'lowercased'
+                        lowtoken.analsurf = lows
+                        lowtoken.omor = r[0] +\
                                  "[CASECHANGE=LOWERCASED][WEIGHT=%f]" %(r[1] +
-                                         self._penalty)
-                        lowtoken["weight"] = r[1] + self._penalty
+                                                                        self._penalty)
+                        lowtoken.weight = r[1] + self._penalty
                         rv.append(lowtoken)
         return rv
 
@@ -713,10 +513,12 @@ class Omorfi:
         for details of analysis, see @c analyse(self, token).
         If further models like udpipe are loaded, may fill in gaps with that.
         """
-        tokens = self.tokenise(s)
+        tokens = self.tokenise_sentence(s)
         if not tokens:
-            tokens = [{"error": "cannot tokenise sentence",
-                "sentence": s, "location": "analyse_sentence"}]
+            errortoken = Token()
+            errortoken.error = "cannot tokenise sentence"
+            errortoken.comment = {"sentence": s, "location": "analyse_sentence"}
+            return [errortoken]
         analysis_lists = []
         i = 0
         for token in tokens:
@@ -724,19 +526,15 @@ class Omorfi:
             analysis_lists[i] += [self.analyse(token)]
         if self.can_udpipe:
             # N.B: I used the vertical input here
-            udinput = '\n'.join([token["surf"] for token in tokens])
-            uds = self.udpipe(udinput)
-        if len(uds) == len(analysis_lists):
-            for i in range(len(uds)):
-                analsysis_lists[i] += [uds[i]]
+            udinput = '\n'.join([token.surf for token in tokens])
+            uds = self._udpipe(udinput)
+            if len(uds) == len(analysis_lists):
+                for i, ud in enumerate(uds):
+                    analysis_lists[i] += [ud]
         return None
 
-    def _guess_str(self, s):
-        token = {"surf": s}
-        return self._guess_token(token)
-
     def _guess_token(self, token):
-        res = self.guesser.lookup(token['surf'])
+        res = self.guesser.lookup(token.surf)
         guesses = []
         for r in res:
             guesstoken = token.copy()
@@ -754,18 +552,18 @@ class Omorfi:
         '''
         guesstoken = token.copy()
         # woo advanced heuristics!!
-        if token['surf'][0].isupper() and len(token['surf']) > 1:
-            guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
+        if token.surf[0].isupper() and len(token.surf) > 1:
+            guesstoken.omor = '[WORD_ID=' + token.surf +\
                     "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                     "[WEIGHT=%f]" %( self._penalty )
-            guesstoken['weight'] = self._penalty
-            guesstoken['guess'] = 'PYTHON0ISUPPER'
+                     "[WEIGHT=%f]" %(self._penalty)
+            guesstoken.weight = self._penalty
+            guesstoken.guesser = 'PYTHON0ISUPPER'
         else:
-            guesstoken['anal'] = '[WORD_ID=' + token['surf'] +\
+            guesstoken.omor = '[WORD_ID=' + token.surf +\
                     "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                     "[WEIGHT=%f]" %( self._penalty )
-            guesstoken['weight'] = self._penalty
-            guesstoken['guess'] = 'PYTHONELSE'
+                     "[WEIGHT=%f]" %(self._penalty)
+            guesstoken.weight = self._penalty
+            guesstoken.guesser = 'PYTHONELSE'
         return [guesstoken]
 
     def guess(self, token):
@@ -777,21 +575,20 @@ class Omorfi:
         when guessing without context, for these the analyse_sentence(sent) is
         the only option.
         '''
-        realtoken = self._maybe_str2token(token)
-        guesses = self._guess_heuristic(realtoken)
+        guesses = self._guess_heuristic(token)
         if self.can_udpipe:
-            guesses += [self._udpipe(realtoken['surf'])]
+            guesses += [self._udpipe(token.surf)]
         if self.can_guess:
-            guesses += self._guess_token(realtoken)
+            guesses += self._guess_token(token)
         return guesses
 
     def _lemmatise(self, token):
-        res = self.lemmatiser.lookup(token['surf'])
+        res = self.lemmatiser.lookup(token.surf)
         lemmas = []
         for r in res:
             lemmatoken = token.copy()
-            lemmatoken['lemma'] = r[0]
-            lemmatoken['lemmaweight'] = float(r[1])
+            lemmatoken.lemma = r[0]
+            lemmatoken.lemmaweight = float(r[1])
             lemmas += [lemmatoken]
         return lemmas
 
@@ -802,23 +599,22 @@ class Omorfi:
         are possible (combinations of) lexeme ids. If the token is not in the
         dictionary, the surface form is returned as most likely "lemma".
         '''
-        realtoken = self._maybe_str2token(token)
         lemmas = None
-        lemmas = self._lemmatise(realtoken)
+        lemmas = self._lemmatise(token)
         if not lemmas or len(lemmas) < 1:
-            lemmatoken = realtoken.copy()
-            lemmatoken['lemma'] = lemmatoken['surf']
-            lemmatoken['lemmaweight'] = float('inf')
+            lemmatoken = token.copy()
+            lemmatoken.lemma = lemmatoken.surf
+            lemmatoken.lemmaweight = float('inf')
             lemmas = [lemmatoken]
         return lemmas
 
     def _segment(self, token):
-        res = self.segmenter.lookup(token['surf'])
+        res = self.segmenter.lookup(token.surf)
         segmenteds = []
         for r in res:
             segmenttoken = token.copy()
-            segmenttoken['segments'] = r[0]
-            segmenttoken['segmentweight'] = float(r[1])
+            segmenttoken.segments = r[0]
+            segmenttoken.segmentweight = float(r[1])
             segmenteds += [segmenttoken]
         return segmenteds
 
@@ -832,17 +628,17 @@ class Omorfi:
         segments = self._segment(token)
         if not segments or len(segments) < 1:
             segmenttoken = token.copy()
-            segmenttoken['segments'] = segmenttoken['surf']
+            segmenttoken.segments = segmenttoken.surf
             segments = [segmenttoken]
         return segments
 
     def _labelsegment(self, token):
-        res = self.labelsegmenter.lookup(token['surf'])
+        res = self.labelsegmenter.lookup(token.surf)
         lss = []
         for r in res:
             lstoken = token.copy()
-            lstoken['labelsegments'] = r[0]
-            lstoken['lsweight'] = float(r[1])
+            lstoken.labelsegments = r[0]
+            lstoken.lsweight = float(r[1])
             lss += [lstoken]
         return lss
 
@@ -858,8 +654,8 @@ class Omorfi:
         labelsegments = self._labelsegment(token)
         if not labelsegments or len(labelsegments) < 1:
             lstoken = token.copy()
-            lstoken['labelsegments'] = lstoken['surf']
-            lstoken['lsweight'] = float('inf')
+            lstoken.labelsegments = lstoken['surf']
+            lstoken.lsweight = float('inf')
             labelsegments = [lstoken]
         return labelsegments
 
@@ -899,8 +695,8 @@ class Omorfi:
         generations = []
         for r in res:
             g = token.copy()
-            g['surf'] = r[0]
-            g['genweight'] = r[1]
+            g.surf = r[0]
+            g.genweight = r[1]
             generations += [g]
         return generations
 
@@ -911,21 +707,13 @@ class Omorfi:
         generation. For round-tripping and API consistency you can also feed a
         token dict here.
         '''
-        gentoken = {}
-        if isinstance(omorstring, str):
-            gentoken['anal'] = omorstring
-        elif isinstance(omorstring, dict):
-            # for round-tripping
-            gentoken = omorstring
-        else:
-            gentoken = {'error': 'token not dict or string',
-                    'location': 'generate()'}
-        generateds = None
+        gentoken = Token()
+        gentoken.omor = omorstring
         if self.can_generate:
             generated = self._generate(gentoken)
             if not generated:
-                gentoken['surf'] = gentoken['anal']
-                gentoken['genweight'] = float('inf')
+                gentoken.surf = gentoken.omor
+                gentoken.genweight = float('inf')
                 generated = [gentoken]
         return generated
 
@@ -943,29 +731,15 @@ class Omorfi:
         return tokens
 
     def _conllu2token(self, conllu):
-        fields = conllu.split()
-        if len(fields) != 10:
-            print("conllu2token conllu fail", fields)
-        upos = fields[3]
-        wordid = fields[2]
-        surf = fields[1]
-        ufeats = fields[5]
-        misc = fields[9]
-        analysis = '[WORD_ID=%s][UPOS=%s]%s[GUESS=UDPIPE]' %(wordid, upos,
-                self._ufeats2omor(ufeats))
-        token = {'anal': analysis, 'misc': misc, 'upos': upos, 'surf': surf,
-                 'ufeats': ufeats}
-        return token
+        return Token.fromconllu(conllu)
 
-    def _ufeats2omor(self, ufeats):
-        return '[' + ufeats.replace('|', '][') + ']'
 
     def tokenise_sentence(self, sentence):
         '''tokenise a sentence.
 
         To be used when text is already sentence-splitted. If the
         text is plain text with sentence boundaries within lines,
-        use 
+        use
 
         @todo tokenise_text
         '''
@@ -984,6 +758,60 @@ class Omorfi:
             surf.position = pos
             pos += 1
         return tokens
+
+    def tokenise_conllu(self, f):
+        '''tokenise a conllu sentence or comment.
+
+        Should be used a file-like iterable that has CONLL-U sentence or
+        comment or empty block coming up.'''
+        tokens = list()
+        for line in f:
+            fields = line.strip().split('\t')
+            token = Token()
+            if len(fields != 10):
+                if line.startswith('#'):
+                    token.nontoken = True
+                    token.comment = line.strip()
+                    tokens.append(token)
+                    return tokens
+                elif line.strip() == '':
+                    token.nontoken = True
+                    token.comment = ''
+                    tokens = [token]
+                    return tokens
+                else:
+                    token.nontoken = True
+                    token.error = line.strip()
+                    tokens = [token]
+                    return tokens
+            try:
+                index = int(fields[0])
+            except ValueError:
+                if '-' in fields[0]:
+                    # MWE
+                    continue
+                elif '.' in fields[0]:
+                    # a ghost
+                    continue
+                else:
+                    print("Cannot figure out token index", fields[0],
+                          file=stderr)
+                    exit(1)
+            token.pos = index
+            if index == 1:
+                token.firstinsent = True
+            token.surf = fields[1]
+            if fields[9] != '_':
+                miscs = fields[9].split('|')
+                for misc in miscs:
+                    k,v = misc.split('=')
+                    if k == 'SpaceAfter':
+                        token.spaceafter = v
+                    else:
+                        print("Unknown MISC", k, file=stderr)
+                        exit(1)
+
+
 
 def main():
     """Invoke a simple CLI analyser."""

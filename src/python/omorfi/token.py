@@ -37,17 +37,44 @@ class Token:
         else:
             raise KeyError(key)
 
-    def fromdict(cls, token):
+    @staticmethod
+    def fromdict(token):
         """Create token from pre-2019 tokendict."""
-        cons = cls(token['surf'])
-        for k,v in token.items():
+        cons = Token(token['surf'])
+        for k, v in token.items():
             if k == 'anal':
-                cons.omor = anal
+                cons.omor = v
         return cons
 
-    def fromsurf(cls, surf):
+    @staticmethod
+    def fromsurf(surf):
         """Creat token from surface string."""
-        return cls(surf)
+        return Token(surf)
+
+    @staticmethod
+    def formconllu(conllu):
+        """Create token from conll-u line."""
+        fields = conllu.split()
+        if len(fields) != 10:
+            print("conllu2token conllu fail", fields)
+        upos = fields[3]
+        wordid = fields[2]
+        surf = fields[1]
+        ufeats = fields[5]
+        misc = fields[9]
+        analysis = '[WORD_ID=%s][UPOS=%s]%s[GUESS=UDPIPE]' %(wordid, upos,
+                                                             _ufeats2omor(ufeats))
+        token = Token(surf)
+        token.anal = analysis
+        token.misc = misc
+        token.upos = upos
+        token.surf = surf
+        token.ufeats = ufeats
+        return token
+
+    @staticmethod
+    def _ufeats2omor(ufeats):
+        return '[' + ufeats.replace('|', '][') + ']'
 
     def error_in_omors(self, omor, blah):
         if blah:
@@ -965,7 +992,7 @@ class Token:
 
 class Hypotheses(list):
     """
-    A set of tokens consisting all hypotheses for analysis of single 
+    A set of tokens consisting all hypotheses for analysis of single
     surface form.
     """
 
