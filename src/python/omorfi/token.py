@@ -2,12 +2,22 @@
 # -*- coding: utf-8 -*-
 
 """
-Support functions for handling tokens.
+Support functions for handling tokens. Now in class form.
 """
 import re
 
 
 class Token:
+    """Token holds a slice of text with its analyses and features.
+
+    Token is typically a word-form, such as "pojat" or "juopottelevat", but
+    can also be a white-space sequence or placeholder for some out of text
+    metadata, a tag, comment or i/o error.
+
+    For a reference, see [spaCy tokens](https://spacy.io/api/token), it's
+    not exactly the same thing and I don't agree with all there, but it's
+    quite cool and well-documented.
+    """
 
     def __init__(self, surf=None):
         """Create token with surface string optionally."""

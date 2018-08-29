@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 
-import re
 from argparse import ArgumentParser
 from sys import stderr, stdin, stdout
 
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_segments, get_moses_factor_segments
+from omorfi import Omorfi
+
 
 def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                                 options):
     if float(labelsegments[0]['lsweight']) != float('inf'):
-        segs = get_moses_factor_segments(labelsegments[0])
+        segs = labelsegments[0].get_moses_factor_segments()
         print(options.segment_marker.join(segs), end=' ', file=outfile)
     else:
         print(surf['surf'], end='|UNK ', file=outfile)
-
 
 
 def print_segments(segments, labelsegments, surf, outfile, options):
@@ -23,18 +21,18 @@ def print_segments(segments, labelsegments, surf, outfile, options):
             sep = ''
             for segmenteds in segments:
                 print(sep, end='', file=outfile)
-                print(options.segment_marker.join(get_segments(segmenteds,
-                    options.split_morphs, options.split_words, 
-                    options.split_new_words, options.split_derivs,
-                    options.split_nonwords)),
-                        end='', file=outfile)
-                sep = options.show_ambiguous
-        else:
-            print(options.segment_marker.join(get_segments(segments[0],
-                    options.split_morphs, options.split_words, 
+                print(options.segment_marker.join(segmenteds.get_segments(
+                    options.split_morphs, options.split_words,
                     options.split_new_words, options.split_derivs,
                     options.split_nonwords)),
                     end='', file=outfile)
+                sep = options.show_ambiguous
+        else:
+            print(options.segment_marker.join(segments[0].get_segments(
+                  options.split_morphs, options.split_words,
+                  options.split_new_words, options.split_derivs,
+                  options.split_nonwords)),
+                  end='', file=outfile)
         print(' ', end='', file=outfile)
     else:
         print("Missing segmenter", file=stderr)

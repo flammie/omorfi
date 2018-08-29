@@ -129,14 +129,20 @@ def main():
     unknowns = 0
     sentences = 0
     recognised_comments = ['sent_id =', 'text =', 'doc-name:', 'sentence-text:']
-    while sent = tokenise_conllu(options.infile):
-        for token in sent:
+    for sentplus in tokenise_conllu(options.infile):
+        for token in sentplus:
+            if token.nontoken and token.comment:
+                if token.comment == '':
+                    print(file=options.outfile)
+                else:
+                    print("#", token.comment, file=options.outfile)
+                continue
             tokens += 1
-            anals = omorfi.analyse(surf)
+            anals = omorfi.analyse(token)
             if not anals or len(anals) == 0 or (len(anals) == 1 and
                                                 'OOV' in anals[0]):
                 unknowns += 1
-                anals = omorfi.guess(surf)
+                anals = omorfi.guess(token)
             if anals and len(anals) > 0:
                 if options.debug:
                     debug_analyses_conllu(
@@ -148,23 +154,8 @@ def main():
                     print_analyses_conllu(index, surf, anals[0],
                                           options.outfile, options.hacks)
             else:
-                print("Failed:", fields)
+                print("???", file=stderr)
                 exit(1)
-        elif line.startswith('#'):
-            print(line.strip(), file=options.outfile)
-            recognised = False
-            for rec in recognised_comments:
-                if line.startswith('# ' + rec):
-                    recognised = True
-            if not recognised and options.verbose:
-                print("Warning! Unrecognised comment line:", line, sep='\n')
-        elif not line or line.strip() == '':
-            # retain exactly 1 empty line between sents
-            print(file=options.outfile)
-            sentences += 1
-        else:
-            print("Error in conllu format: '", line, "'", file=stderr)
-            exit(1)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Sentences:", sentences,
