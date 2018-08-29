@@ -1,0 +1,3 @@
+[flake8]
+# doxygen wants ## comments and flake8 warns about them :-/
+ignore = E266
