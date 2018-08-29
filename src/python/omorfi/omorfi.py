@@ -804,13 +804,45 @@ class Omorfi:
             if fields[9] != '_':
                 miscs = fields[9].split('|')
                 for misc in miscs:
-                    k,v = misc.split('=')
+                    k, v = misc.split('=')
                     if k == 'SpaceAfter':
                         token.spaceafter = v
                     else:
                         print("Unknown MISC", k, file=stderr)
                         exit(1)
 
+    def tokenise_vislcg(self, f):
+        '''Tokenises a sentence from VISL-CG format data.'''
+        tokens = list()
+        pos = 1
+        for line in f:
+            token = Token()
+            if not line or line == '':
+                token.nontoken = True
+                token.comment = ''
+                tokens.append(token)
+                return tokens
+            elif line.startswith("#") or line.startswith("<"):
+                token.nontoken = True
+                token.comment = line.strip()
+                tokens.append(token)
+                return tokens
+            elif line.startswith('"<') and line.endswith('>"'):
+                token.surf = line[2:-2]
+                if pos == 1:
+                    token.firstinsent = True
+                tokens.append(token)
+                pos += 1
+            elif line.startswith('\t"'):
+                fields = line.strip().split()
+                token.lemma = fields[1].strip('"')
+            elif line.startswith(';\t"'):
+                # gold?
+                token.nontoken = True
+                token.comment = line.strip()
+            else:
+                token.nontoken = True
+                token.error = 'vislcg: ' + line.strip()
 
 
 def main():

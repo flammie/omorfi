@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stdin, stdout, stderr
@@ -10,14 +9,12 @@ from sys import stdin, stdout, stderr
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_lemmas, \
-        get_vislcg_feats, get_line_tokens, get_line_tokens_vislcg, \
-        get_line_tokens_conllu, format_analyses_vislcg
+from omorfi import Omorfi
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print(format_analyses_vislcg(surf, anals), file=outfile)
+    print(anals.printable_vislcg(), file=outfile)
+
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -62,42 +59,42 @@ def main():
     cpustart = process_time()
     tokens = 0
     unknowns = 0
-    last = None
-    for line in options.infile:
-        surfs = []
+    tokens = True
+    while not tokens:
         if options.format == 'vislcg':
-            surfs = get_line_tokens_vislcg(line, last)
+            tokens = omorfi.tokenise_vislcg(options.infile)
         elif options.format == 'text':
-            surfs = get_line_tokens(line, omorfi)
+            tokens = omorfi.tokenise_line(options.infile.readline())
         elif options.format == 'conllu':
-            surfs = get_line_tokens_conllu(line, last)
+            tokens = omorfi.tokenise_conllu(options.infile)
         else:
             print("input format missing implementation", options.format,
                   file=stderr)
             exit(2)
-        for surf in surfs:
-            if 'conllu_form' in surf:
+        if not tokens:
+            break
+        for token in tokens:
+            if token.error:
+                print(token.error, file=stderr)
+                exit(2)
+            elif token.comment and not token.surf:
+                if token.comment.startswith(';') or \
+                        token.comment.startswith('\t'):
+                    continue
+                else:
+                    print(token.comment, file=options.outfile)
+            elif token.nontoken:
                 # skip conllu special forms in input for now:
                 # (ellipsis and MWE magics)
                 continue
-            elif 'surf' in surf:
+            elif token.surf:
                 tokens += 1
-                anals = omorfi.analyse(surf)
+                anals = omorfi.analyse(token)
                 if len(anals) == 0 or (len(anals) == 1 and
                                        'UNKNOWN' in anals[0]['anal']):
                     unknowns += 1
-                    anals = omorfi.guess(surf)
-                print_analyses_vislcg3(surf, anals, options.outfile)
-            elif 'comment' in surf:
-                if surf['comment'].startswith(';') or \
-                       surf['comment'].startswith('\t'):
-                    continue
-                else:
-                    print(surf['comment'], file=options.outfile)
-            elif 'error' in surf:
-                print(surf['error'], file=stderr)
-                exit(2)
-            last = surf
+                    anals = omorfi.guess(token)
+                print_analyses_vislcg3(token, anals, options.outfile)
     cpuend = process_time()
     realend = perf_counter()
     print("# Tokens:", tokens, "\n# Unknown:", unknowns,

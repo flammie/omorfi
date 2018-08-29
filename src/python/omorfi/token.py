@@ -6,6 +6,9 @@ Support functions for handling tokens. Now in class form.
 """
 import re
 
+# debug :-(
+from sys import stderr
+
 
 class Token:
     """Token holds a slice of text with its analyses and features.
@@ -27,10 +30,12 @@ class Token:
         self.surf = surf
         ## surface used for analysis
         self.analsurf = None
+        ## Lemma or word ID or baseform
+        self.lemma = None
         ## whether the word starts the sentence
         self.first_in_sent = False
         ## whether analysis was guessed from OOV
-        self.oov = True
+        self.oov = False
         ## generic weight
         self.weight = None
         ## weight based on lexems
@@ -38,7 +43,27 @@ class Token:
         ## whitespace
         self.whitespace = False
         ## nontoken
-        self.nontoken = True
+        self.nontoken = False
+        ## misc (UD field)
+        self.misc = None
+        ## comment (esp. with non-token)
+        self.comment = None
+        ## use when tokenisation or parsing breaks
+        self.error = None
+        ## Case transformation performed between surf and analysis
+        self.recased = False
+        ## The actual analysed token if changed for analysis from surf
+        self.analsurf = None
+        ## Guesser used to produce analysis for oov
+        self.guesser = None
+        ## Underlying raw segment analysis
+        self.segments = None
+        ## Underlying raw labelsegment analysis
+        self.labelsegments = None
+        ## If token is separated by space from left
+        self.spacebefore = False
+        ## If token is separated by space from right
+        self.spaceafter = False
 
     def __getitem__(self, key):
         """Tokens are like dicts ever still."""
@@ -62,7 +87,7 @@ class Token:
         return Token(surf)
 
     @staticmethod
-    def formconllu(conllu):
+    def fromconllu(conllu):
         """Create token from conll-u line."""
         fields = conllu.split()
         if len(fields) != 10:
@@ -72,14 +97,40 @@ class Token:
         surf = fields[1]
         ufeats = fields[5]
         misc = fields[9]
-        analysis = '[WORD_ID=%s][UPOS=%s]%s[GUESS=UDPIPE]' %(wordid, upos,
-                                                             _ufeats2omor(ufeats))
+        analysis = '[WORD_ID=%s][UPOS=%s]%s' % (wordid, upos,
+                                                Token._ufeats2omor(ufeats))
         token = Token(surf)
-        token.anal = analysis
+        token.omor = analysis
         token.misc = misc
-        token.upos = upos
         token.surf = surf
-        token.ufeats = ufeats
+        return token
+
+    @staticmethod
+    def fromvislcg(line):
+        '''Create a token from VISL CG-3 line.
+
+        VISL-CG 3 is not a line based format, so you only get a partial token.
+        '''
+        token = Token()
+        line = line.rstrip()
+        if not line or line == '':
+            token.nontoken = True
+            token.comment = ''
+        elif line.startswith("#") or line.startswith("<"):
+            token.nontoken = True
+            token.comment = line.strip()
+        elif line.startswith('"<') and line.endswith('>"'):
+            token.surf = line[2:-2]
+        elif line.startswith('\t"'):
+            fields = line.strip().split()
+            token.lemma = fields[1].strip('"')
+        elif line.startswith(';\t"'):
+            # gold?
+            token.nontoken = True
+            token.comment = line.strip()
+        else:
+            token.nontoken = True
+            token.error = 'vislcg: ' + line.strip()
         return token
 
     @staticmethod
@@ -87,18 +138,17 @@ class Token:
         return '[' + ufeats.replace('|', '][') + ']'
 
     def error_in_omors(self, omor, blah):
+        '''Convenience function to log error and die in format handlings.'''
         if blah:
             print(blah, file=stderr)
-        print("Unrecongised", omor, "in", self.errordump(),
-                file=stderr)
+        print("Unrecongised", omor, "in", self, file=stderr)
         exit(1)
 
     def get_lemmas(self, hacks=None):
-        if not self.omor:
-            raise TokenMissingAnalysis("omor")
-        re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
+        '''Get lemma(s) from analysed token.'''
+        re_lemma = re.compile(r"\[WORD_ID=([^]]*)\]")
         escanal = self.omor.replace('[WORD_ID=]]',
-                '[WORD_ID=@RIGHTSQUAREBRACKET@]')
+                                    '[WORD_ID=@RIGHTSQUAREBRACKET@]')
         lemmas = re_lemma.finditer(escanal)
         rv = []
         for lemma in lemmas:
@@ -108,7 +158,7 @@ class Token:
                 if s.endswith(hnsuf):
                     s = s[:-len(hnsuf)]
             if s == '@RIGHTSQUAREBRACKET@':
-                s= ']'
+                s = ']'
             rv += [s]
         # legacy pron hack
         if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
@@ -125,22 +175,28 @@ class Token:
                 rv[0] = 'se'
         return rv
 
-
     def get_last_feat(self, feat):
-        if not self.omor:
-            raise TokenMissingAnalysis("omor")
-        re_feat = re.compile("\[" + feat + "=([^]]*)\]")
+        '''Get last (effective) value for the given morphological feature.
+
+        This function tries to determine the most likely morphosyntactic
+        feature values from complex analyses, e.g. with compounds and
+        derivations the most relevant ones for the whole token.
+        '''
+        re_feat = re.compile(r"\[" + feat + r"=([^]]*)\]")
         feats = re_feat.finditer(self.omor)
         rv = ""
-        for feat in feats:
-            rv = feat.group(1)
+        for f in feats:
+            rv = f.group(1)
         return rv
 
-
     def get_last_feats(self):
-        if not self.omor:
-            raise TokenMissingAnalysis("omor")
-        re_feats = re.compile("\[[A-Z_]*=[^]]*\]")
+        '''Get last (effective) value for the given morphological feature.
+
+        This function tries to determine the most likely morphosyntactic
+        feature values from complex analyses, e.g. with compounds and
+        derivations the most relevant ones for the whole token.
+        '''
+        re_feats = re.compile(r"\[[A-Z_]*=[^]]*\]")
         rvs = list()
         feats = re_feats.finditer(self.omor)
         for feat in feats:
@@ -152,6 +208,7 @@ class Token:
         return rvs
 
     def get_upos(self, deriv_munging=True):
+        '''Get Universal Part-of-Speech.'''
         upos = self.get_last_feat("UPOS")
         if deriv_munging:
             drv = self.get_last_feat("DRV")
@@ -160,6 +217,7 @@ class Token:
         return upos
 
     def get_ftb_feats(self):
+        '''Get FTB analyses from token data.'''
         feats = self.get_last_feats()
         rvs = list()
         rvs += [self.get_xpos_ftb()]
@@ -345,6 +403,7 @@ class Token:
         return rvs
 
     def get_ud_feats(self, hacks=None):
+        '''Get Universal Dependencies features from analysed token.'''
         feats = self.get_last_feats()
         rvs = dict()
         for f in feats:
@@ -497,10 +556,10 @@ class Token:
                              'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
                     # values found in UD finnish Derivs
                     rvs['Derivation'] = value[0] + value[1:].lower()
-                elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE', 'INE',
-                               'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²', 'HKO',
-                               'ISA', 'MAINEN', 'NUT', 'TU', 'VA', 'TAVA', 'MA',
-                               'LOC', 'LA']:
+                elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE',
+                               'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²',
+                               'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA',
+                               'TAVA', 'MA', 'LOC', 'LA']:
                     # valuse not found in UD finnish Derivs
                     continue
                 else:
@@ -508,7 +567,8 @@ class Token:
             elif key == 'BLACKLIST':
                 continue
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
-                         'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ', 'BOUNDARY']:
+                         'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ',
+                         'BOUNDARY']:
                 # Not feats in UD:
                 # * UPOS is another field
                 # * Allomorphy is ignored
@@ -527,6 +587,7 @@ class Token:
         return rvs
 
     def get_vislcg_feats(self):
+        '''Get VISL-CG 3 features from analysed token.'''
         feats = self.get_last_feats()
         vislcgs = list()
         for feat in feats:
@@ -554,8 +615,8 @@ class Token:
                 # semantics, non-core morph in brackets
                 vislcgs += ["<" + key + "_" + value + ">"]
             elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
-                         "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE", "CMP",
-                         "CONJ"]:
+                         "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE",
+                         "CMP", "CONJ"]:
                 # core morph show only value as is (omor style though)
                 if value == 'LAT':
                     pass
@@ -571,19 +632,17 @@ class Token:
             vislcgs += ["<W=" + str(int(self.weight * 1000)) + ">"]
         if self.lexicalweight:
             vislcgs += ["<L=" + str(int(self.lexicalweight * 1000)) + ">"]
-        if self.guessed:
+        if self.guesser:
             vislcgs += ["<Heur?>", "<Guesser_" + self.guesser + ">"]
         # number of compound parts in compound is a good CG numeric feature!!
         lemmas = self.get_lemmas()
         vislcgs += ['<CMP=' + str(len(lemmas)) + '>']
         return vislcgs
 
-
     def get_segments(self, split_morphs=True, split_words=True,
                      split_new_words=True, split_derivs=False,
                      split_nonwords=False):
-        if not self.segments:
-            raise TokenMissingAnalysis("segments")
+        '''Get specified segments from segmented analysis.'''
         segments = self.segments
         # this code is ugly
         segments = [segments.replace('{hyph?}', '').replace("{STUB}", "")]
@@ -624,8 +683,7 @@ class Token:
         return resegs
 
     def get_moses_factor_segments(self):
-        if not self.labelsegments:
-            raise TokenMissingAnalysis("labelsegments")
+        '''Create moses factors from analyses.'''
         analysis = self.labelsegments
         splat = re.split("[]{}[]", analysis)
         skiptag = None
@@ -709,7 +767,8 @@ class Token:
         # teh|VERB |PCPNUTdy llä|ADE
         moses = re.sub(r"\|PCPNUT([tdrsnl]?[uy])", r"\1|PCPNUT", moses)
         moses = re.sub(
-            r"\|AUX\.PASV\.PCPNUT([tdrsnl]?[uy])", r"\1|AUX.PASV.PCPNUT", moses)
+            r"\|AUX\.PASV\.PCPNUT([tdrsnl]?[uy])", r"\1|AUX.PASV.PCPNUT",
+            moses)
         moses = re.sub(r"m\|PCPMA([a-zaä]+)", r"m\1|PCPMA", moses)
         moses = re.sub(r"v\|PCPVA([a-zaä]+)", r"v\1|PCPVA", moses)
         moses = re.sub(r"v\|VERB\.PCPVA([aä])", r"v\1|VERB.PCPVA", moses)
@@ -736,13 +795,15 @@ class Token:
             r"v\|VERB.PCPVA([aä]) sti", r"v\1|VERB.PCPVA sti|STI", moses)
         # tarkastel|VERB ta|NOUN e ssa|PASV.INFE.INE
         moses = re.sub(
-            r"(t[aä])\|NOUN e (ssa|ssä)\|PASV.INFE.", r"\1|PASV e|INFE \2|", moses)
+            r"(t[aä])\|NOUN e (ssa|ssä)\|PASV.INFE.", r"\1|PASV e|INFE \2|",
+            moses)
         # varot|VERB ta|NOUN e n|PASV.INFE.INS
         moses = re.sub(
             r"(t[aä])\|NOUN e n\|PASV.INFE.", r"\1|PASV e|INFE n|", moses)
         # tä|NOUN isi in|PASV.COND.PE4
         moses = re.sub(
-            r"t([aä])\|NOUN isi in\|PASV.COND.PE4", r"t\1|PASV isi|COND in|PE4", moses)
+            r"t([aä])\|NOUN isi in\|PASV.COND.PE4",
+            r"t\1|PASV isi|COND in|PE4", moses)
         # moniselitteise|ADJ sti
         moses = re.sub(r"ADJ sti$", "ADJ sti|STI", moses)
         # hillitse|VERB vä|PCPVA sti
@@ -843,10 +904,14 @@ class Token:
     ##    moses = moses[:last + len(segleft) - 1] + moses[last + len(segleft):]
         return moses.split()
 
-    def get_misc_ud(self):
+    def get_ud_misc(self):
+        '''Get random collection of analyses for token.
+
+        Primarily used for UD MISC field but can be used for any extra data.
+        '''
         miscs = []
         if self.guesser:
-            miscs += ["Guesser=" + guess]
+            miscs += ["Guesser=" + self.guesser]
         if self.analsurf and self.analsurf != self.surf:
             miscs += ['AnalysisForm=' + self.analsurf]
         if self.recased:
@@ -855,30 +920,38 @@ class Token:
             miscs += ['SpaceAfter=' + self.spaceafter]
         if self.spacebefore:
             miscs += ['SpaceBefore=' + self.spacebefore]
-        if len(miscs) > 0:
-            return '|'.join(miscs)
-        else:
+        return miscs
+
+    def printable_ud_misc(self):
+        '''Formats UD misc like in UD data.'''
+        miscs = self.get_ud_misc()
+        if not miscs:
             return '_'
+        return '|'.join(miscs)
 
+    def printable_ud_feats(self, hacks=None):
+        '''Formats UD feats from token data exactly as in fi-tdt data.
 
-
-    def get_feats_ud(self, hacks=None):
-        rvs = get_ud_feats(self, hacks)
+        When the correct analysis is in question the result should be equal
+        to the UFEAT field of the connl-u data downloadable from UD web site,
+        in string format.
+        '''
+        rvs = self.get_ud_feats(hacks)
+        if not rvs:
+            return '_'
         rv = ''
         for k in sorted(rvs, key=str.lower):
             rv += k + '=' + rvs[k] + '|'
-        if len(rvs) != 0:
-            return rv.rstrip('|')
-        else:
-            return '_'
+        return rv.rstrip('|')
 
-
-    def get_feats_ftb(self):
-        rvs = get_ftb_feats(self)
+    def printable_ftb_feats(self):
+        '''Formats FTB feats from token data like in FTB-2014 data.'''
+        rvs = self.get_ftb_feats()
         return ' '.join(rvs)
 
     def get_xpos_ftb(self):
-        upos = get_upos(self)
+        '''Gets FTB-compatible part-of-speech from analysis.'''
+        upos = self.get_upos()
         if upos in ['NOUN', 'PROPN']:
             return 'N'
         elif upos == 'ADJ':
@@ -921,8 +994,8 @@ class Token:
             return 'Unkwn'
         return upos
 
-
     def get_xpos_tdt(self):
+        '''Get TDT-compatible part-of-speech from analysed token.'''
         upos = self.get_upos()
         if upos in ['NOUN', 'PROPN']:
             return 'N'
@@ -950,56 +1023,6 @@ class Token:
             return 'X'
 
 
-
-    def get_line_tokens_vislcg(line, prev = {}):
-        line = line.rstrip()
-        if not line or line == '':
-            return [{'comment': ''}]
-        elif line.startswith("#") or line.startswith("<"):
-            return [{'comment': line.strip()}]
-        elif line.startswith('"<') and line.endswith('>"'):
-            surf = {'surf': line[2:-2]}
-            if prev and 'comment' in prev and (prev['comment'] == '' or \
-                    prev['comment'].startswith('#') or \
-                    prev['comment'].startswith('<')) and \
-                    surf['surf'][0].isupper():
-                surf['analsurf_override'] = surf['surf'][0].lower() + \
-                        surf['surf'][1:]
-            return [surf]
-        elif line.startswith('\t"') or line.startswith(';\t"'):
-            # gold?
-            return [{'comment': line}]
-        else:
-            return [{'error': 'vislcg parsing: ' + line}]
-
-    def get_line_tokens_conllu(line, prev = {}):
-        if not line or line.strip() == '':
-            return [{'comment': ''}]
-        elif line.startswith('#'):
-            return [{'comment': line.strip()}]
-        elif len(line.split('\t')) == 10:
-            fields = line.strip().split('\t')
-            token = {}
-            try:
-                index = int(fields[0])
-            except ValueError:
-                if '-' in fields[0]:
-                    # MWE
-                    token['conllu_form'] = 'mwe'
-                elif '.' in fields[0]:
-                    # a ghost
-                    token['conllu_form'] = 'ghost'
-                else:
-                    print(
-                        "Cannot figure out token index", fields[0], file=stderr)
-                    exit(1)
-            token['surf'] = fields[1]
-            return [token]
-        else:
-            return [{'error': 'conllu parsing: ' + line}]
-
-
-
 class Hypotheses(list):
     """
     A set of tokens consisting all hypotheses for analysis of single
@@ -1007,20 +1030,21 @@ class Hypotheses(list):
     """
 
     def is_tokenlist_oov(self):
-        if len(self) == 0:
+        '''Checks if all hypotheses are OOV guesses.'''
+        if not self:
             return True
         elif len(self) == 1 and self[0].oov:
             return True
-        elif len(self) > 0 and not self[0].oov:
+        elif self and not self[0].oov:
             return False
         else:
             return False
 
-    def get_analyses_vislcg(self, surf):
-        vislcg = '"<' + surf['surf'] + '>"\n'
+    def printable_vislcg(self):
+        '''Create VISL-CG 3 output from hypothesis list.'''
+        vislcg = '"<' + self[0].surf + '>"\n'
         for anal in self:
             mrds = anal.get_vislcg_feats()
             lemmas = anal.get_lemmas()
             vislcg += '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds) + '\n'
         return vislcg
-
