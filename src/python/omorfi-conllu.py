@@ -9,46 +9,45 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi import Omorfi, Token
+from omorfi import Omorfi
 from omorfi.token import is_tokenlist_oov
-#from omorfi.token import get_ud_feats, get_upos, get_lemmas, \
-#       format_feats_ud, format_xpos_ftb, format_xpos_tdt, format_misc_ud
 
 
-
-
-
-
-
-def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
+def try_analyses_conllu(anals, outfile, hacks=None):
+    if not anals[0]._conllu:
+        print("Oracle data missing from", anals[0].surf)
+        exit(2)
+    original = anals[0]._conllu
+    print(original)
+    best = None
+    highest = -1
     for anal in anals:
-        upos = get_upos(anal)
+        upos = anal.get_upos()
+        feats = anal.printable_ud_feats()
+        lemmas = anal.get_lemmas()
+        if lemmas:
+            lemma = '#'.join(anal.get_lemmas())
+        else:
+            lemma = '_'
+        score = 0
         if upos == original[3]:
-            feats = format_feats_ud(anal)
-            if feats == original[5]:
-                lemmas = "#".join(get_lemmas(anal))
-                if lemmas == original[2]:
-                    return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-    # no exact match found (re-try without lemma)
-    for anal in anals:
-        upos = get_upos(anal)
-        if upos == original[3]:
-            feats = format_feats_ud(anal)
-            if feats == original[5]:
-                return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-    # and re-try without feats
-    for anal in anals:
-        upos = get_upos(anal)
-        if upos == original[3]:
-            return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-    return print_analyses_conllu(wordn, surf, anals[0], outfile, hacks)
+            score += 10
+        if lemma == original[2]:
+            score += 10
+        elif lemma.strip('#') == original[2].strip('#'):
+            score += 5
+        if feats == original[5]:
+            score += 10
+        if score > highest:
+            best = anal
+            highest = score
+    return print_analyses_conllu(best, outfile, hacks)
 
 
-def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
-    print("# REFERENCE(python):", original, file=outfile)
+def debug_analyses_conllu(anals, outfile, hacks=None):
+    print("# REFERENCE(python):", anals[0]._conllu, file=outfile)
     for anal in anals:
-        print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-
+        print_analyses_conllu(anal, outfile, hacks)
 
 
 def print_analyses_conllu(anal, outfile, hacks=None):
@@ -59,9 +58,14 @@ def print_analyses_conllu(anal, outfile, hacks=None):
         third = anal.get_xpos_ftb()
     else:
         third = anal.get_xpos_tdt()
-    print(anal.pos, anal.surf, "#".join(anal.get_lemmas()), upos, third,
+    lemmas = anal.get_lemmas()
+    if not lemmas:
+        lemma = '_'
+    else:
+        lemma = '#'.join(anal.get_lemmas())
+    print(anal.pos, anal.surf, lemma, upos, third,
           anal.printable_ud_feats(hacks),
-          "_", "_", "_", anal.printable_misc_ud(), sep="\t", file=outfile)
+          "_", "_", "_", anal.printable_ud_misc(), sep="\t", file=outfile)
 
 
 def main():
@@ -134,16 +138,14 @@ def main():
             eoffed = True
             break
         for token in sentplus:
-            if token.nontoken and token.comment:
+            if token.nontoken:
                 if token.comment == '':
                     print(file=options.outfile)
                 else:
-                    print("#", token.comment, file=options.outfile)
+                    print(token.comment, file=options.outfile)
                 continue
-            elif token.nontoken:
-                print("DEBUG", token.nontoken)
             elif not token.surf:
-                print("DEBUG", token)
+                print("DEBUG nosurf", token)
                 continue
             tokens += 1
             anals = omorfi.analyse(token)
@@ -152,13 +154,12 @@ def main():
                 anals = omorfi.guess(token)
             if anals and len(anals) > 0:
                 if options.debug:
-                    debug_analyses_conllu(
-                        fields, index, surf, anals, options.outfile, options.hacks)
+                    debug_analyses_conllu(anals, options.outfile,
+                                          options.hacks)
                 elif options.oracle:
-                    try_analyses_conllu(fields, index, surf, anals,
-                                        options.outfile, options.hacks)
+                    try_analyses_conllu(anals, options.outfile, options.hacks)
                 else:
-                    print_analyses_conllu(anals[0], options.outfile, 
+                    print_analyses_conllu(anals[0], options.outfile,
                                           options.hacks)
             else:
                 print("???", file=stderr)

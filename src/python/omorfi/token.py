@@ -66,6 +66,8 @@ class Token:
         self.spacebefore = False
         ## If token is separated by space from right
         self.spaceafter = False
+        ## hide reference conll-u here
+        self._conllu = None
 
     def __getitem__(self, key):
         """Tokens are like dicts ever still."""
@@ -73,6 +75,15 @@ class Token:
             return self.omor
         else:
             raise KeyError(key)
+
+    def __str__(self):
+        s = 'Token: {'
+        if self.surf:
+            s += 'surf: ' + self.surf
+        if self.omor:
+            s += 'omor: ' + self.omor
+        s += '}'
+        return s
 
     @staticmethod
     def fromdict(token):
@@ -232,6 +243,8 @@ class Token:
         feats = self.get_last_feats()
         rvs = list()
         rvs += [self.get_xpos_ftb()]
+        if not feats:
+            return rvs
         for f in feats:
             key = f.split("=")[0].lstrip("[")
             value = f.split("=")[1].rstrip("]")
@@ -416,6 +429,8 @@ class Token:
     def get_ud_feats(self, hacks=None):
         '''Get Universal Dependencies features from analysed token.'''
         feats = self.get_last_feats()
+        if not feats:
+            return None
         rvs = dict()
         for f in feats:
             key = f.split("=")[0].lstrip("[")

@@ -11,8 +11,6 @@ the standard shell scripts or java interface.
 
 
 from argparse import ArgumentParser
-from glob import glob
-from os import F_OK, access, getenv
 from sys import stderr, stdin
 from math import log
 
@@ -21,7 +19,7 @@ from copy import copy
 import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
-from .token import Token, is_tokenlist_oov
+from .token import Token
 
 can_udpipe = True
 try:
@@ -45,8 +43,8 @@ class Omorfi:
     * lookup
     * guess
 
-    There is python code to perform basic string munging controlled by following
-    bool attributes:
+    There is python code to perform basic string munging controlled by
+    following bool attributes:
         try_lowercase: to use `str.lower()`
         try_titlecase: to use `str[0].upper() + str[1:]`
         try_uppercase: to use `str.upper()`
@@ -54,7 +52,6 @@ class Omorfi:
 
     The annotations will be changed when transformation has been applied.
     """
-
 
     ## magic number for penalty weights
     _penalty = 28021984
@@ -128,7 +125,7 @@ class Omorfi:
         ## whether UDPipe is loaded
         self.can_udpipe = False
 
-    def load_hfst(self, f):
+    def _load_hfst(self, f):
         """Load an automaton from file.
 
         @param f containing single hfst automaton binary.
@@ -139,32 +136,28 @@ class Omorfi:
         except libhfst.NotTransducerStreamException:
             raise IOError
 
-
     def load_labelsegmenter(self, f):
         """Load labeled segments model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.labelsegmenter = self.load_hfst(f)
+        self.labelsegmenter = self._load_hfst(f)
         self.can_labelsegment = True
 
     def load_segmenter(self, f):
         """Load segmentation model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.segmenter = self.load_hfst(f)
+        self.segmenter = self._load_hfst(f)
         self.can_segment = True
 
     def load_analyser(self, f):
         """Load analysis model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.analyser = self.load_hfst(f)
+        self.analyser = self._load_hfst(f)
         self.can_analyse = True
         self.can_accept = True
         self.can_lemmatise = True
@@ -173,54 +166,48 @@ class Omorfi:
         """Load generation model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.generator = self.load_hfst(f)
+        self.generator = self._load_hfst(f)
         self.can_generate = True
 
     def load_acceptor(self, f):
         """Load acceptor model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.acceptor = self.load_hfst(f)
+        self.acceptor = self._load_hfst(f)
         self.can_accept = True
 
     def load_tokeniser(self, f):
         """Load tokeniser model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.tokeniser = self.load_hfst(f)
+        self.tokeniser = self._load_hfst(f)
         self.can_tokenise = True
 
     def load_lemmatiser(self, f):
         """Load lemmatiser model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.tokeniser = self.load_hfst(f)
+        self.tokeniser = self._load_hfst(f)
         self.can_lemmatise = True
 
     def load_hyphenator(self, f):
         """Load hyphenator model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.hyphenator = self.load_hfst(f)
+        self.hyphenator = self._load_hfst(f)
         self.can_hyphenate = True
 
     def load_guesser(self, f):
         """Load guesser model from a file.
 
         @param f containing single hfst automaton binary.
-        @sa load_hfst(self, f)
         """
-        self.guesser = self.load_hfst(f)
+        self.guesser = self._load_hfst(f)
         self.can_guess = True
 
     def load_udpipe(self, filename):
@@ -237,8 +224,9 @@ class Omorfi:
             return
         self.udpiper = Model.load(filename)
         # use pipeline for now, ugly but workable
-        self.udpipeline = Pipeline(self.udpiper, 'horizontal', Pipeline.DEFAULT,
-                                   Pipeline.DEFAULT, 'conllu')
+        self.udpipeline = Pipeline(self.udpiper, 'horizontal',
+                                   Pipeline.DEFAULT, Pipeline.DEFAULT,
+                                   'conllu')
         self.uderror = ProcessingError()
         ## udpipe is loaded
         self.can_udpipe = True
@@ -258,11 +246,11 @@ class Omorfi:
             lextotal += lexcount
         for lex, freq in lexcounts.items():
             if freq != 0:
-                self.lexlogprobs[lex] = log(freq/lextotal)
+                self.lexlogprobs[lex] = log(freq / lextotal)
             else:
                 # XXX: hack hack, should just use LM count stuff with
                 # discounts
-                self.lexlogprobs[lex] = log(1/(lextotal + 1))
+                self.lexlogprobs[lex] = log(1 / (lextotal + 1))
 
     def load_omortag_frequencies(self, omorfile):
         """Load a frequenc list for tags. Experimental.
@@ -279,12 +267,11 @@ class Omorfi:
             omortotal += omorcount
         for omor, freq in omorcounts.items():
             if freq != 0:
-                self.taglogprobs[omor] = log(freq/omortotal)
+                self.taglogprobs[omor] = log(freq / omortotal)
             else:
                 # XXX: hack hack, should just use LM count stuff with
                 # discounts
-                self.taglogprobs[omor] = log(1/(omortotal + 1))
-
+                self.taglogprobs[omor] = log(1 / (omortotal + 1))
 
     def _find_retoken_recase(self, token):
         """Turns a string into a recased non-OOV token."""
@@ -426,7 +413,7 @@ class Omorfi:
                 rvtoken = copy(token)
                 rvtoken.analsurf = token.surf
                 rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken.omor = r[1]
+                rvtoken.weight = r[1]
                 rv.append(rvtoken)
         if not token.analsurf and token.surf:
             # also guess other cases
@@ -440,8 +427,8 @@ class Omorfi:
                         tctoken.recased = 'Titlecased'
                         tctoken.analsurf = tcs
                         tctoken.omor = r[0] + \
-                            '[CASECHANGE=TITLECASED][WEIGHT=%f]' % (r[1] +
-                                                                    self._penalty)
+                            '[CASECHANGE=TITLECASED]' + \
+                            '[WEIGHT=%f]' % (r[1] + self._penalty)
                         tctoken.weight = r[1] + self._penalty
                         rv.append(tctoken)
             if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
@@ -453,8 +440,8 @@ class Omorfi:
                         dttoken.recased = 'dETITLECASED'
                         dttoken.analsurf = dts
                         dttoken.omor = r[0] + \
-                                "[CASECHANGE=DETITLECASED][WEIGHT=%f]" % (r[1] +
-                                                                          self._penalty)
+                            "[CASECHANGE=DETITLECASED]" + \
+                            "[WEIGHT=%f]" % (r[1] + self._penalty)
                         dttoken.weight = r[1] + self._penalty
                         rv.append(dttoken)
             if not s.isupper() and self.try_uppercase:
@@ -466,8 +453,8 @@ class Omorfi:
                         uptoken.recased = 'UPPERCASED'
                         uptoken.analsurf = ups
                         uptoken.omor = r[0] + \
-                                "[CASECHANGE=UPPERCASED][WEIGHT=%f]" % (r[1] +
-                                                                        self._penalty)
+                            "[CASECHANGE=UPPERCASED]" + \
+                            "[WEIGHT=%f]" % (r[1] + self._penalty)
                         uptoken.weight = r[1] + self._penalty
                         rv.append(uptoken)
             if not s.islower() and self.try_lowercase:
@@ -479,8 +466,8 @@ class Omorfi:
                         lowtoken.recased = 'lowercased'
                         lowtoken.analsurf = lows
                         lowtoken.omor = r[0] +\
-                                 "[CASECHANGE=LOWERCASED][WEIGHT=%f]" %(r[1] +
-                                                                        self._penalty)
+                            "[CASECHANGE=LOWERCASED]" + \
+                            "[WEIGHT=%f]" % (r[1] + self._penalty)
                         lowtoken.weight = r[1] + self._penalty
                         rv.append(lowtoken)
         return rv
@@ -520,7 +507,8 @@ class Omorfi:
         if not tokens:
             errortoken = Token()
             errortoken.error = "cannot tokenise sentence"
-            errortoken.comment = {"sentence": s, "location": "analyse_sentence"}
+            errortoken.comment = {"sentence": s,
+                                  "location": "analyse_sentence"}
             return [errortoken]
         analysis_lists = []
         i = 0
@@ -559,14 +547,14 @@ class Omorfi:
         # woo advanced heuristics!!
         if token.surf[0].isupper() and len(token.surf) > 1:
             guesstoken.omor = '[WORD_ID=' + token.surf +\
-                    "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                     "[WEIGHT=%f]" %(self._penalty)
+                "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                "[WEIGHT=%f]" % (self._penalty)
             guesstoken.weight = self._penalty
             guesstoken.guesser = 'PYTHON0ISUPPER'
         else:
             guesstoken.omor = '[WORD_ID=' + token.surf +\
-                    "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                     "[WEIGHT=%f]" %(self._penalty)
+                "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                "[WEIGHT=%f]" % (self._penalty)
             guesstoken.weight = self._penalty
             guesstoken.guesser = 'PYTHONELSE'
         return [guesstoken]
@@ -686,14 +674,7 @@ class Omorfi:
         Returns False for OOVs, True otherwise. Note, that this is not
         necessarily more efficient than analyse(token)
         '''
-        accept = False
-        accepts = None
-        accepts = self._accept(token)
-        if accepts and len(accepts) > 0:
-            accept = True
-        else:
-            accept = False
-        return accept
+        return self._accept(token)
 
     def _generate(self, token):
         res = self.generator.lookup(token.omor)
@@ -737,7 +718,6 @@ class Omorfi:
 
     def _conllu2token(self, conllu):
         return Token.fromconllu(conllu)
-
 
     def tokenise_sentence(self, sentence):
         '''tokenise a sentence.
@@ -789,6 +769,7 @@ class Omorfi:
                     token.error = line.strip()
                     tokens = [token]
                     return tokens
+            token._conllu = fields
             try:
                 index = int(fields[0])
             except ValueError:
@@ -819,18 +800,22 @@ class Omorfi:
         return tokens
 
     def tokenise_vislcg(self, f):
-        '''Tokenises a sentence from VISL-CG format data.'''
+        '''Tokenises a sentence from VISL-CG format data.
+
+        Returns a list of tokens when it hits first non-token block, including
+        a token representing this non-token block.
+        '''
         tokens = list()
         pos = 1
         for line in f:
             token = Token()
             if not line or line == '':
-                token.nontoken = True
+                token.nontoken = "separator"
                 token.comment = ''
                 tokens.append(token)
                 return tokens
             elif line.startswith("#") or line.startswith("<"):
-                token.nontoken = True
+                token.nontoken = "comment"
                 token.comment = line.strip()
                 tokens.append(token)
                 return tokens
@@ -845,28 +830,29 @@ class Omorfi:
                 token.lemma = fields[1].strip('"')
             elif line.startswith(';\t"'):
                 # gold?
-                token.nontoken = True
+                token.nontoken = "gold"
                 token.comment = line.strip()
             else:
-                token.nontoken = True
+                token.nontoken = "error"
                 token.error = 'vislcg: ' + line.strip()
+        eoft = Token()
+        eoft.nontoken = "eof"
+        tokens.append(eoft)
+        return tokens
 
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-f', '--fsa', metavar='FSAPATH',
-                   help="Path to directory of HFST format automata")
+    a.add_argument('-f', '--fsa', metavar='FSA', required=True,
+                   help="Path to FSA analyser")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
     a.add_argument('-v', '--verbose', action='store_true',
                    help="print verbosely while processing")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
-    if options.fsa:
-        omorfi.load_from_dir(options.fsa)
-    else:
-        omorfi.load_from_dir()
+    omorfi.load_analyser(options.fsa)
     if not options.infile:
         options.infile = stdin
     if options.verbose:

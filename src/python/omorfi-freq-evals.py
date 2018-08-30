@@ -100,7 +100,7 @@ def main():
         found_lemma = False
         for anal in anals:
             if options.format == 'ftb3.1':
-                anal_ftb3 = anal.get_feats_ftb()
+                anal_ftb3 = ' '.join(anal.get_ftb_feats())
                 lemma_ftb3 = '#'.join(anal.get_lemmas())
                 # hacks ftb3:
                 analysis = analysis.replace(" >>>", "")
@@ -130,10 +130,12 @@ def main():
                 full_matches += freq
             elif not found_anals:
                 anal_matches += freq
-                print(freq, "LEMMANOANAL", surf, sep='\t', file=options.outfile)
+                print(freq, "LEMMANOANAL", surf, sep='\t',
+                      file=options.outfile)
             elif not found_lemma:
                 lemma_matches += freq
-                print(freq, "ANALNOLEMMA", surf, sep='\t', file=options.outfile)
+                print(freq, "ANALNOLEMMA", surf, sep='\t',
+                      file=options.outfile)
             else:
                 print("Logical error, kill everyone")
                 exit(13)
