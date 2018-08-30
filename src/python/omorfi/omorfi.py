@@ -16,10 +16,12 @@ from os import F_OK, access, getenv
 from sys import stderr, stdin
 from math import log
 
+from copy import copy
+
 import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
-from .token import Token
+from .token import Token, is_tokenlist_oov
 
 can_udpipe = True
 try:
@@ -320,7 +322,7 @@ class Omorfi:
         posttokens = []
         for i in range(4):
             for j in range(4):
-                if len(token) > (i +j):
+                if len(token.surf) > (i + j):
                     if j == 0:
                         resurf = token.surf[i:]
                     else:
@@ -360,7 +362,8 @@ class Omorfi:
         May change number of tokens. Should be used with result of split().
         """
         retokens = []
-        for token in tokens:
+        for s in tokens:
+            token = Token(s)
             for retoken in self._find_retokens(token):
                 retokens.append(retoken)
         return retokens
@@ -404,7 +407,7 @@ class Omorfi:
             # begin of sentence, etc. recasing extra
             res = self.analyser.lookup(token.surf[0].lower() + token.surf[1:])
             for r in res:
-                rvtoken = token.copy()
+                rvtoken = copy(token)
                 rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
                 rvtoken.weight = r[1]
                 rv.append(rvtoken)
@@ -412,7 +415,7 @@ class Omorfi:
             # surface from already determined
             res = self.analyser.lookup(token.analsurf)
             for r in res:
-                rvtoken = token.copy()
+                rvtoken = copy(token)
                 rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
                 rvtoken.weight = r[1]
                 rv.append(rvtoken)
@@ -420,12 +423,12 @@ class Omorfi:
             # use real surface case
             res = self.analyser.lookup(token.surf)
             for r in res:
-                rvtoken = token.copy()
+                rvtoken = copy(token)
                 rvtoken.analsurf = token.surf
                 rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
                 rvtoken.omor = r[1]
                 rv.append(rvtoken)
-        if not "analsurf_override" in token and not "analsurf" in token:
+        if not token.analsurf and token.surf:
             # also guess other cases
             s = token.surf
             if len(s) > 2 and s[0].islower() and self.try_titlecase:
@@ -433,7 +436,7 @@ class Omorfi:
                 if tcs != s:
                     tcres = self.analyser.lookup(tcs)
                     for r in tcres:
-                        tctoken = token.copy()
+                        tctoken = copy(token)
                         tctoken.recased = 'Titlecased'
                         tctoken.analsurf = tcs
                         tctoken.omor = r[0] + \
@@ -441,12 +444,12 @@ class Omorfi:
                                                                     self._penalty)
                         tctoken.weight = r[1] + self._penalty
                         rv.append(tctoken)
-            if len(token) > 2 and s[0].isupper() and self.try_detitlecase:
+            if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
                 dts = s[0].lower() + s[1:]
                 if dts != s:
                     dtres = self.analyser.lookup(dts)
                     for r in dtres:
-                        dttoken = token.copy()
+                        dttoken = copy(token)
                         dttoken.recased = 'dETITLECASED'
                         dttoken.analsurf = dts
                         dttoken.omor = r[0] + \
@@ -459,7 +462,7 @@ class Omorfi:
                 if ups != s:
                     upres = self.analyser.lookup(ups)
                     for r in upres:
-                        uptoken = token.copy()
+                        uptoken = copy(token)
                         uptoken.recased = 'UPPERCASED'
                         uptoken.analsurf = ups
                         uptoken.omor = r[0] + \
@@ -472,7 +475,7 @@ class Omorfi:
                 if lows != s:
                     lowres = self.analyser.lookup(lows)
                     for r in lowres:
-                        lowtoken = token.copy()
+                        lowtoken = copy(token)
                         lowtoken.recased = 'lowercased'
                         lowtoken.analsurf = lows
                         lowtoken.omor = r[0] +\
@@ -498,9 +501,9 @@ class Omorfi:
         """
         anals = self._analyse_token(token)
         if not anals:
-            anal = token.copy()
+            anal = copy(token)
             anal.omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
-                        % (token['surf'])
+                        % (token.surf)
             anal.weight = float('inf')
             anal.oov = "Yes"
             anals = [anal]
@@ -537,7 +540,7 @@ class Omorfi:
         res = self.guesser.lookup(token.surf)
         guesses = []
         for r in res:
-            guesstoken = token.copy()
+            guesstoken = copy(token)
             guesstoken['anal'] = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
             guesstoken['weight'] = float(r[1])
             guesstoken['guess'] = 'FSA'
@@ -550,7 +553,9 @@ class Omorfi:
         This should always be the most simple basic backoff, e.g. noun singular
         nominative for everything.
         '''
-        guesstoken = token.copy()
+        guesstoken = copy(token)
+        if not token.surf:
+            return [guesstoken]
         # woo advanced heuristics!!
         if token.surf[0].isupper() and len(token.surf) > 1:
             guesstoken.omor = '[WORD_ID=' + token.surf +\
@@ -586,7 +591,7 @@ class Omorfi:
         res = self.lemmatiser.lookup(token.surf)
         lemmas = []
         for r in res:
-            lemmatoken = token.copy()
+            lemmatoken = copy(token)
             lemmatoken.lemma = r[0]
             lemmatoken.lemmaweight = float(r[1])
             lemmas += [lemmatoken]
@@ -602,7 +607,7 @@ class Omorfi:
         lemmas = None
         lemmas = self._lemmatise(token)
         if not lemmas or len(lemmas) < 1:
-            lemmatoken = token.copy()
+            lemmatoken = copy(token)
             lemmatoken.lemma = lemmatoken.surf
             lemmatoken.lemmaweight = float('inf')
             lemmas = [lemmatoken]
@@ -612,7 +617,7 @@ class Omorfi:
         res = self.segmenter.lookup(token.surf)
         segmenteds = []
         for r in res:
-            segmenttoken = token.copy()
+            segmenttoken = copy(token)
             segmenttoken.segments = r[0]
             segmenttoken.segmentweight = float(r[1])
             segmenteds += [segmenttoken]
@@ -627,7 +632,7 @@ class Omorfi:
         segments = None
         segments = self._segment(token)
         if not segments or len(segments) < 1:
-            segmenttoken = token.copy()
+            segmenttoken = copy(token)
             segmenttoken.segments = segmenttoken.surf
             segments = [segmenttoken]
         return segments
@@ -636,7 +641,7 @@ class Omorfi:
         res = self.labelsegmenter.lookup(token.surf)
         lss = []
         for r in res:
-            lstoken = token.copy()
+            lstoken = copy(token)
             lstoken.labelsegments = r[0]
             lstoken.lsweight = float(r[1])
             lss += [lstoken]
@@ -653,7 +658,7 @@ class Omorfi:
         labelsegments = None
         labelsegments = self._labelsegment(token)
         if not labelsegments or len(labelsegments) < 1:
-            lstoken = token.copy()
+            lstoken = copy(token)
             lstoken.labelsegments = lstoken['surf']
             lstoken.lsweight = float('inf')
             labelsegments = [lstoken]
@@ -694,7 +699,7 @@ class Omorfi:
         res = self.generator.lookup(token.omor)
         generations = []
         for r in res:
-            g = token.copy()
+            g = copy(token)
             g.surf = r[0]
             g.genweight = r[1]
             generations += [g]
@@ -748,14 +753,14 @@ class Omorfi:
             token.nontoken = True
             token.comment = ''
             return [token]
-        tokens = omorfi.tokenise(sentence)
+        tokens = self.tokenise(sentence)
         pos = 1
-        for token in token:
+        for token in tokens:
             if pos == 1:
                 token.firstinsent = True
             else:
                 token.firstinsent = False
-            surf.position = pos
+            token.pos = pos
             pos += 1
         return tokens
 
@@ -768,7 +773,7 @@ class Omorfi:
         for line in f:
             fields = line.strip().split('\t')
             token = Token()
-            if len(fields != 10):
+            if len(fields) != 10:
                 if line.startswith('#'):
                     token.nontoken = True
                     token.comment = line.strip()
@@ -810,6 +815,8 @@ class Omorfi:
                     else:
                         print("Unknown MISC", k, file=stderr)
                         exit(1)
+            tokens.append(token)
+        return tokens
 
     def tokenise_vislcg(self, f):
         '''Tokenises a sentence from VISL-CG format data.'''

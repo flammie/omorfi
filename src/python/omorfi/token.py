@@ -33,7 +33,9 @@ class Token:
         ## Lemma or word ID or baseform
         self.lemma = None
         ## whether the word starts the sentence
-        self.first_in_sent = False
+        self.firstinsent = False
+        ## word index in context, e.g. UD column 1
+        self.pos = 0
         ## whether analysis was guessed from OOV
         self.oov = False
         ## generic weight
@@ -146,6 +148,11 @@ class Token:
 
     def get_lemmas(self, hacks=None):
         '''Get lemma(s) from analysed token.'''
+        if not self.omor:
+            if self.surf:
+                return [self.surf]
+            else:
+                return None
         re_lemma = re.compile(r"\[WORD_ID=([^]]*)\]")
         escanal = self.omor.replace('[WORD_ID=]]',
                                     '[WORD_ID=@RIGHTSQUAREBRACKET@]')
@@ -182,6 +189,8 @@ class Token:
         feature values from complex analyses, e.g. with compounds and
         derivations the most relevant ones for the whole token.
         '''
+        if not self.omor:
+            return None
         re_feat = re.compile(r"\[" + feat + r"=([^]]*)\]")
         feats = re_feat.finditer(self.omor)
         rv = ""
@@ -196,6 +205,8 @@ class Token:
         feature values from complex analyses, e.g. with compounds and
         derivations the most relevant ones for the whole token.
         '''
+        if not self.omor:
+            return None
         re_feats = re.compile(r"\[[A-Z_]*=[^]]*\]")
         rvs = list()
         feats = re_feats.finditer(self.omor)
@@ -1023,28 +1034,23 @@ class Token:
             return 'X'
 
 
-class Hypotheses(list):
-    """
-    A set of tokens consisting all hypotheses for analysis of single
-    surface form.
-    """
+def is_tokenlist_oov(l):
+    '''Checks if all hypotheses are OOV guesses.'''
+    if not l:
+        return True
+    elif len(l) == 1 and l[0].oov:
+        return True
+    elif l and not l[0].oov:
+        return False
+    else:
+        return False
 
-    def is_tokenlist_oov(self):
-        '''Checks if all hypotheses are OOV guesses.'''
-        if not self:
-            return True
-        elif len(self) == 1 and self[0].oov:
-            return True
-        elif self and not self[0].oov:
-            return False
-        else:
-            return False
 
-    def printable_vislcg(self):
-        '''Create VISL-CG 3 output from hypothesis list.'''
-        vislcg = '"<' + self[0].surf + '>"\n'
-        for anal in self:
-            mrds = anal.get_vislcg_feats()
-            lemmas = anal.get_lemmas()
-            vislcg += '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds) + '\n'
-        return vislcg
+def printable_vislcg(l):
+    '''Create VISL-CG 3 output from hypothesis list.'''
+    vislcg = '"<' + l[0].surf + '>"\n'
+    for anal in l:
+        mrds = anal.get_vislcg_feats()
+        lemmas = anal.get_lemmas()
+        vislcg += '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds) + '\n'
+    return vislcg

@@ -10,6 +10,7 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi import Omorfi, Token
+from omorfi.token import is_tokenlist_oov
 #from omorfi.token import get_ud_feats, get_upos, get_lemmas, \
 #       format_feats_ud, format_xpos_ftb, format_xpos_tdt, format_misc_ud
 
@@ -50,19 +51,17 @@ def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
 
 
 
-def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
-    upos = get_upos(anal)
+def print_analyses_conllu(anal, outfile, hacks=None):
+    upos = anal.get_upos()
     if not upos or upos == "":
         upos = 'X'
     if hacks == 'ftb':
-        third = format_xpos_ftb(anal)
+        third = anal.get_xpos_ftb()
     else:
-        third = format_xpos_tdt(anal)
-    print(wordn, surf, "#".join(get_lemmas(anal)),
-          upos,
-          third,
-          format_feats_ud(anal, hacks),
-          "_", "_", "_", format_misc_ud(anal), sep="\t", file=outfile)
+        third = anal.get_xpos_tdt()
+    print(anal.pos, anal.surf, "#".join(anal.get_lemmas()), upos, third,
+          anal.printable_ud_feats(hacks),
+          "_", "_", "_", anal.printable_misc_ud(), sep="\t", file=outfile)
 
 
 def main():
@@ -128,8 +127,12 @@ def main():
     tokens = 0
     unknowns = 0
     sentences = 0
-    recognised_comments = ['sent_id =', 'text =', 'doc-name:', 'sentence-text:']
-    for sentplus in tokenise_conllu(options.infile):
+    eoffed = False
+    while not eoffed:
+        sentplus = omorfi.tokenise_conllu(options.infile)
+        if not sentplus:
+            eoffed = True
+            break
         for token in sentplus:
             if token.nontoken and token.comment:
                 if token.comment == '':
@@ -137,10 +140,14 @@ def main():
                 else:
                     print("#", token.comment, file=options.outfile)
                 continue
+            elif token.nontoken:
+                print("DEBUG", token.nontoken)
+            elif not token.surf:
+                print("DEBUG", token)
+                continue
             tokens += 1
             anals = omorfi.analyse(token)
-            if not anals or len(anals) == 0 or (len(anals) == 1 and
-                                                'OOV' in anals[0]):
+            if is_tokenlist_oov(anals):
                 unknowns += 1
                 anals = omorfi.guess(token)
             if anals and len(anals) > 0:
@@ -151,8 +158,8 @@ def main():
                     try_analyses_conllu(fields, index, surf, anals,
                                         options.outfile, options.hacks)
                 else:
-                    print_analyses_conllu(index, surf, anals[0],
-                                          options.outfile, options.hacks)
+                    print_analyses_conllu(anals[0], options.outfile, 
+                                          options.hacks)
             else:
                 print("???", file=stderr)
                 exit(1)

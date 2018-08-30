@@ -10,6 +10,7 @@ from sys import stderr, stdout, stdin
 from time import perf_counter, process_time
 
 from omorfi import Omorfi, Token
+from omorfi.token import is_tokenlist_oov
 
 
 def main():
@@ -88,7 +89,7 @@ def main():
             print(lines, '(', freq, ') ...', end='\r')
         token = Token(surf)
         anals = omorfi.analyse(token)
-        if not anals.is_tokenlist_oov():
+        if not is_tokenlist_oov(anals):
             covered += freq
             types_covered += 1
         else:

@@ -48,9 +48,6 @@ def main():
         print("reading from", infile.name)
     if options.verbose:
         print("writign to", outfile.name)
-    re_lemma = re.compile("\[WORD_ID=([^]]*)\]")
-    re_pos = re.compile("\[UPOS=([^]]*)\]")
-    re_mrd = re.compile("\[([^=]*)=([^]]*)]")
     linen = 0
     for line in infile:
         line = line.strip()
@@ -59,28 +56,16 @@ def main():
             print(linen, '...')
         if not line or line == '':
             continue
-        surfs = line.split()
-        for surf in surfs:
-            anals = omorfi.analyse(surf)
-            segments = omorfi.segment(surf)
-            pos_matches = re_pos.finditer(anals[0]['anal'])
-            pos = "UNK"
-            mrds = []
-            lemmas = []
-            for pm in pos_matches:
-                pos = pm.group(1)
-            lemma_matches = re_lemma.finditer(anals[0]['anal'])
-            for lm in lemma_matches:
-                lemmas += [lm.group(1)]
-            mrd_matches = re_mrd.finditer(anals[0]['anal'])
-            for mm in mrd_matches:
-                if mm.group(1) == 'WORD_ID':
-                    mrds = []
-                elif mm.group(1) == 'WEIGHT':
-                    pass
-                else:
-                    mrds += [mm.group(2)]
-            parts = segments[0]['segments']
+        tokens = omorfi.tokenise_sentence(line)
+        for token in tokens:
+            if not token.surf:
+                continue
+            anals = omorfi.analyse(token)
+            segments = omorfi.segment(token)
+            pos = anals[0].get_upos()
+            mrds = anals[0].get_last_feats()
+            lemmas = anals[0].get_lemmas()
+            parts = segments[0].segments
             if '{DB}' in parts:
                 suffixes = parts[parts.rfind('{DB}')+4:]
             elif '{WB}' in parts:
@@ -90,7 +75,7 @@ def main():
             else:
                 suffixes = "0"
             morphs = suffixes[suffixes.find("{"):].replace("{MB}", ".")
-            print(surf, '+'.join(lemmas), pos, '.'.join(mrds),
+            print(token.surf, '+'.join(lemmas), pos, '.'.join(mrds),
                   morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)
     exit(0)

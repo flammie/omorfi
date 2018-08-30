@@ -69,7 +69,7 @@ def main():
         surfs = omorfi.tokenise(line)
         tokens += len(surfs)
         if options.output_format == 'moses':
-            print(' '.join([surf['surf'] for surf in surfs]), file=options.outfile)
+            print(' '.join([surf.surf for surf in surfs]), file=options.outfile)
         elif options.output_format == 'json':
             print(json.encode(surfs))
         elif options.output_format == 'conllu':
