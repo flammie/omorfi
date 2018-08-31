@@ -730,7 +730,7 @@ class Omorfi:
         '''
         if not sentence or sentence == '':
             token = Token()
-            token.nontoken = True
+            token.nontoken = "separator"
             token.comment = ''
             return [token]
         tokens = self.tokenise(sentence)
@@ -744,6 +744,30 @@ class Omorfi:
             pos += 1
         return tokens
 
+    def tokenise_plaintext(self, f):
+        '''tokenise a line of text.
+
+        @todo should get sentence from plaintext in the future.'''
+        tokens = list()
+        for line in f:
+            tokens = self.tokenise(line.strip())
+            pos = 1
+            for token in tokens:
+                if pos == 1:
+                    token.firstinsent = True
+                else:
+                    token.firstinsent = False
+                token.pos = pos
+                pos += 1
+            sep = Token()
+            sep.nontoken = "separator"
+            tokens.append(sep)
+            return tokens
+        eoft = Token()
+        eoft.nontoken = "eof"
+        tokens.append(eoft)
+        return tokens
+
     def tokenise_conllu(self, f):
         '''tokenise a conllu sentence or comment.
 
@@ -755,17 +779,17 @@ class Omorfi:
             token = Token()
             if len(fields) != 10:
                 if line.startswith('#'):
-                    token.nontoken = True
+                    token.nontoken = "comment"
                     token.comment = line.strip()
                     tokens.append(token)
                     return tokens
                 elif line.strip() == '':
-                    token.nontoken = True
+                    token.nontoken = "separator"
                     token.comment = ''
-                    tokens = [token]
+                    tokens.append(token)
                     return tokens
                 else:
-                    token.nontoken = True
+                    token.nontoken = "error"
                     token.error = line.strip()
                     tokens = [token]
                     return tokens
@@ -797,6 +821,9 @@ class Omorfi:
                         print("Unknown MISC", k, file=stderr)
                         exit(1)
             tokens.append(token)
+        eoft = Token()
+        eoft.nontoken = "eof"
+        tokens.append(eoft)
         return tokens
 
     def tokenise_vislcg(self, f):
@@ -809,27 +836,33 @@ class Omorfi:
         pos = 1
         for line in f:
             token = Token()
+            line = line.strip()
             if not line or line == '':
                 token.nontoken = "separator"
                 token.comment = ''
                 tokens.append(token)
                 return tokens
             elif line.startswith("#") or line.startswith("<"):
+                # # comment, or
+                # <TAG> </TAG>
                 token.nontoken = "comment"
                 token.comment = line.strip()
                 tokens.append(token)
                 return tokens
             elif line.startswith('"<') and line.endswith('>"'):
+                # "<surf>"
+                token = Token()
                 token.surf = line[2:-2]
                 if pos == 1:
                     token.firstinsent = True
                 tokens.append(token)
                 pos += 1
             elif line.startswith('\t"'):
+                # \t"lemma" ANAL ANAL ANAL
                 fields = line.strip().split()
-                token.lemma = fields[1].strip('"')
+                token.lemma = fields[0].strip('"')
             elif line.startswith(';\t"'):
-                # gold?
+                # ;\t"lemma" ANAL ANAL ANAL KEYWORD:rulename
                 token.nontoken = "gold"
                 token.comment = line.strip()
             else:

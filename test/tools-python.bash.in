@@ -33,6 +33,10 @@ if test -f $fsadir/omorfi.analyse.hfst; then
             -i $srcdir/test.text -o $tempfile ; then
         exit 1
     fi
+    if ! @PYTHON@ $tooldir/omorfi-vislcg.py -F vislcg -a $fsadir/omorfi.analyse.hfst \
+            -i $srcdir/test.cg3text -o $tempfile ; then
+        exit 1
+    fi
     if test -f $fsadir/omorfi.segment.hfst ; then
         if ! @PYTHON@ $tooldir/omorfi-factorise.py -a $fsadir/omorfi.analyse.hfst \
                 -s $fsadir/omorfi.segment.hfst \

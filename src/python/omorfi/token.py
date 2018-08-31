@@ -81,9 +81,15 @@ class Token:
     def __str__(self):
         s = 'Token: {'
         if self.surf:
-            s += 'surf: ' + self.surf
+            s += ', surf: ' + self.surf
         if self.omor:
-            s += 'omor: ' + self.omor
+            s += ', omor: ' + self.omor
+        if self.nontoken:
+            s += ', nontoken: ' + self.nontoken
+        if self.error:
+            s += ', error: ' + self.error
+        if self.comment:
+            s += ', comment: ' + self.comment
         s += '}'
         return s
 
@@ -1050,6 +1056,12 @@ class Token:
         else:
             return 'X'
 
+    def printable_vislcg(self):
+        '''Create VISL-CG 3 output from the token.'''
+        mrds = self.get_vislcg_feats()
+        lemmas = self.get_lemmas()
+        return '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds)
+
 
 def is_tokenlist_oov(l):
     '''Checks if all hypotheses are OOV guesses.'''
@@ -1067,7 +1079,5 @@ def printable_vislcg(l):
     '''Create VISL-CG 3 output from hypothesis list.'''
     vislcg = '"<' + l[0].surf + '>"\n'
     for anal in l:
-        mrds = anal.get_vislcg_feats()
-        lemmas = anal.get_lemmas()
-        vislcg += '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds) + '\n'
+        vislcg += anal.printable_vislcg()
     return vislcg

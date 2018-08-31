@@ -139,20 +139,30 @@ def main():
             break
         for token in sentplus:
             if token.nontoken:
-                if token.comment == '':
-                    print(file=options.outfile)
-                else:
+                if token.nontoken == 'comment':
                     print(token.comment, file=options.outfile)
+                elif token.nontoken == 'eof':
+                    eoffed = True
+                    break
+                elif token.nontoken == 'separator':
+                    sentences += 1
+                    print(file=options.outfile)
+                elif token.nontoken == 'error':
+                    print("Unrecognisable line:", token.error, file=stderr)
+                    exit(1)
+                else:
+                    print("Error:", token, file=stderr)
+                    exit(1)
                 continue
             elif not token.surf:
-                print("DEBUG nosurf", token)
-                continue
+                print("No surface in CONLL-U?", token, file=stderr)
+                exit(1)
             tokens += 1
             anals = omorfi.analyse(token)
             if is_tokenlist_oov(anals):
                 unknowns += 1
                 anals = omorfi.guess(token)
-            if anals and len(anals) > 0:
+            if anals:
                 if options.debug:
                     debug_analyses_conllu(anals, options.outfile,
                                           options.hacks)
