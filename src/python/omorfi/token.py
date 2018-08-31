@@ -60,8 +60,10 @@ class Token:
         self.guesser = None
         ## Underlying raw segment analysis
         self.segments = None
+        self.segmentweight = None
         ## Underlying raw labelsegment analysis
         self.labelsegments = None
+        self.lsweight = None
         ## If token is separated by space from left
         self.spacebefore = False
         ## If token is separated by space from right

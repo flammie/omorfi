@@ -647,7 +647,7 @@ class Omorfi:
         labelsegments = self._labelsegment(token)
         if not labelsegments or len(labelsegments) < 1:
             lstoken = copy(token)
-            lstoken.labelsegments = lstoken['surf']
+            lstoken.labelsegments = lstoken.surf
             lstoken.lsweight = float('inf')
             labelsegments = [lstoken]
         return labelsegments

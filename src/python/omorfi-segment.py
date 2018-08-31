@@ -8,11 +8,11 @@ from omorfi import Omorfi
 
 def print_moses_factor_segments(segments, labelsegments, surf, outfile,
                                 options):
-    if float(labelsegments[0]['lsweight']) != float('inf'):
+    if float(labelsegments[0].lsweight) != float('inf'):
         segs = labelsegments[0].get_moses_factor_segments()
         print(options.segment_marker.join(segs), end=' ', file=outfile)
     else:
-        print(surf['surf'], end='|UNK ', file=outfile)
+        print(surf.surf, end='|UNK ', file=outfile)
 
 
 def print_segments(segments, labelsegments, surf, outfile, options):
