@@ -279,12 +279,12 @@ class Omorfi:
             return token
         if len(token.surf) > 1:
             if self.try_titlecase and not token.surf[0].isupper():
-                token.analsurf = token.surf[0].upper() + token[1:].lower()
+                token.analsurf = token.surf[0].upper() + token.surf[1:].lower()
                 if self.accept(token):
                     token.recased = 'Titlecased'
                     return token
             if self.try_detitlecase and not token.surf[0].islower():
-                token.analsurf = token.surf[0].lower() + token[1:]
+                token.analsurf = token.surf[0].lower() + token.surf[1:]
                 if self.accept(token):
                     token.recased = 'dETITLECASED'
                     return token
@@ -305,6 +305,9 @@ class Omorfi:
 
         Tries to strip punct tokens from left and right.
         """
+        retoken = self._find_retoken_recase(token)
+        if retoken:
+            return [retoken]
         pretokens = []
         posttokens = []
         for i in range(4):
@@ -315,7 +318,7 @@ class Omorfi:
                     else:
                         resurf = token.surf[i:-j]
                     presurfs = token.surf[:i]
-                    postsurfs = token.surf[j:]
+                    postsurfs = token.surf[-j:]
                     pretrailpuncts = True
                     for c in presurfs:
                         if c in fin_punct_leading:
@@ -336,9 +339,11 @@ class Omorfi:
                     if not pretrailpuncts:
                         continue
                     retoken = Token(resurf)
-                    if self._find_retoken_recase(retoken):
-                        return pretokens + [retoken] + posttokens
+                    reretoken = self._find_retoken_recase(retoken)
+                    if reretoken:
+                        return pretokens + [reretoken] + posttokens
                     else:
+                        print("no", file=stderr)
                         continue
         # no acceptable substring inside, just strip puncts
         return [token]
