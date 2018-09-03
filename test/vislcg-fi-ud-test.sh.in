@@ -6,7 +6,7 @@ fi
 analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
 vislcgs="fi-ud-test.cg3text"
 cs="get-covered.bash"
-thold=90
+thold=89
 if test ! -r "$analyser" ; then
     echo Missing $analyser
     exit 77
