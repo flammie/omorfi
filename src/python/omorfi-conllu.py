@@ -18,7 +18,6 @@ def try_analyses_conllu(anals, outfile, hacks=None):
         print("Oracle data missing from", anals[0].surf)
         exit(2)
     original = anals[0]._conllu
-    print(original)
     best = None
     highest = -1
     for anal in anals:

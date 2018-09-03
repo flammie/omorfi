@@ -1059,7 +1059,7 @@ class Token:
     def printable_vislcg(self):
         '''Create VISL-CG 3 output from the token.'''
         mrds = self.get_vislcg_feats()
-        lemmas = self.get_lemmas()
+        lemmas = self.get_lemmas(True)
         return '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds)
 
 
