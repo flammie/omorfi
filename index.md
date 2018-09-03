@@ -10,7 +10,7 @@ natural language processing of Finnish based on knowledge driven paradigm.
 The main components of this repository are:
 
 1. _a lexical database_ containing hundreds of thousands of words (c.f.
-   [lexical statistics](pages/Lexical-statistics))
+   [lexical statistics](statistics.html))
 2. a collection of _scripts_ to convert lexical database into formats used by
    upstream NLP tools (c.f. [lexical processing](pages/Database-processing))
 3. an _autotools setup_ to build and install (or package, or deploy): the
@@ -28,7 +28,7 @@ included):
    as a basis for *language models*,
 2. [apertium](//sf.net/p/apertium), to be used for *machine translation*
 3. [voikko](//voikko.puimula.org), to be used for *spell-checking* and
-   *correction*
+   *correction* (also experimental _hunspell_ for legacy spell-checking)
 4. _kotus-sanalista_, _lexical markup framework_, _tab-separated values_, etc.
    for long and short term storage, intermediate formats.
 
