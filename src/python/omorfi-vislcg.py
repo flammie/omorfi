@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stdin, stdout, stderr
@@ -10,14 +9,15 @@ from sys import stdin, stdout, stderr
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_lemmas, \
-        get_vislcg_feats, get_line_tokens, get_line_tokens_vislcg, \
-        get_line_tokens_conllu, format_analyses_vislcg
+from omorfi import Omorfi
+from omorfi.token import is_tokenlist_oov
 
 
 def print_analyses_vislcg3(surf, anals, outfile):
-    print(format_analyses_vislcg(surf, anals), file=outfile)
+    print('"<%s>"' % (anals[0].surf), file=outfile)
+    for anal in anals:
+        print(anal.printable_vislcg(), file=outfile)
+
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -60,52 +60,56 @@ def main():
     # statistics
     realstart = perf_counter()
     cpustart = process_time()
-    tokens = 0
+    tokencount = 0
     unknowns = 0
-    last = None
-    for line in options.infile:
-        surfs = []
+    eoffed = False
+    while not eoffed:
         if options.format == 'vislcg':
-            surfs = get_line_tokens_vislcg(line, last)
+            tokens = omorfi.tokenise_vislcg(options.infile)
         elif options.format == 'text':
-            surfs = get_line_tokens(line, omorfi)
+            tokens = omorfi.tokenise_plaintext(options.infile)
         elif options.format == 'conllu':
-            surfs = get_line_tokens_conllu(line, last)
+            tokens = omorfi.tokenise_conllu(options.infile)
         else:
             print("input format missing implementation", options.format,
                   file=stderr)
             exit(2)
-        for surf in surfs:
-            if 'conllu_form' in surf:
-                # skip conllu special forms in input for now:
-                # (ellipsis and MWE magics)
-                continue
-            elif 'surf' in surf:
-                tokens += 1
-                anals = omorfi.analyse(surf)
-                if len(anals) == 0 or (len(anals) == 1 and
-                                       'UNKNOWN' in anals[0]['anal']):
-                    unknowns += 1
-                    anals = omorfi.guess(surf)
-                print_analyses_vislcg3(surf, anals, options.outfile)
-            elif 'comment' in surf:
-                if surf['comment'].startswith(';') or \
-                       surf['comment'].startswith('\t'):
-                    continue
-                else:
-                    print(surf['comment'], file=options.outfile)
-            elif 'error' in surf:
-                print(surf['error'], file=stderr)
+        if not tokens:
+            break
+        for token in tokens:
+            if token.error:
+                print(token.error, file=stderr)
                 exit(2)
-            last = surf
+            elif token.nontoken:
+                if token.nontoken == 'comment':
+                    print(token.comment, file=options.outfile)
+                elif token.nontoken == 'separator':
+                    print(file=options.outfile)
+                elif token.nontoken == 'eof':
+                    eoffed = True
+                    break
+                else:
+                    print("Unrecognised", token, file=stderr)
+                    exit(2)
+            elif token.surf:
+                tokencount += 1
+                anals = omorfi.analyse(token)
+                if is_tokenlist_oov(anals):
+                    unknowns += 1
+                    anals = omorfi.guess(token)
+                print_analyses_vislcg3(token, anals, options.outfile)
+            else:
+                print("Unrecognised", token, file=stderr)
+                exit(2)
     cpuend = process_time()
     realend = perf_counter()
-    print("# Tokens:", tokens, "\n# Unknown:", unknowns,
-          unknowns / tokens * 100, "%", file=options.statfile)
+    print("# Tokens:", tokencount, "\n# Unknown:", unknowns,
+          unknowns / tokencount * 100 if tokencount > 0 else 0, "%",
+          file=options.statfile)
     print("# CPU time:", cpuend - cpustart,
           "\n# Real time:", realend - realstart,
           file=options.statfile)
-    print("# Tokens per timeunit:", tokens / (realend - realstart),
+    print("# Tokens per timeunit:", tokencount / (realend - realstart),
           file=options.statfile)
     exit(0)
 

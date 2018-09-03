@@ -9,8 +9,9 @@ from argparse import ArgumentParser, FileType
 from sys import stderr, stdout, stdin
 from time import perf_counter, process_time
 
-from omorfi import Omorfi
-from omorfi.token import is_tokenlist_oov, format_feats_ftb, get_lemmas
+from omorfi import Omorfi, Token
+from omorfi.token import is_tokenlist_oov
+
 
 def main():
     a = ArgumentParser()
@@ -86,7 +87,8 @@ def main():
         types += 1
         if options.verbose:
             print(lines, '(', freq, ') ...', end='\r')
-        anals = omorfi.analyse(surf)
+        token = Token(surf)
+        anals = omorfi.analyse(token)
         if not is_tokenlist_oov(anals):
             covered += freq
             types_covered += 1
@@ -98,8 +100,8 @@ def main():
         found_lemma = False
         for anal in anals:
             if options.format == 'ftb3.1':
-                anal_ftb3 = format_feats_ftb(anal)
-                lemma_ftb3 = '#'.join(get_lemmas(anal))
+                anal_ftb3 = ' '.join(anal.get_ftb_feats())
+                lemma_ftb3 = '#'.join(anal.get_lemmas())
                 # hacks ftb3:
                 analysis = analysis.replace(" >>>", "")
                 if analysis == anal_ftb3:
@@ -107,19 +109,19 @@ def main():
                 elif set(anal_ftb3.split()) == set(analysis.split()):
                     found_anals = True
                     print(freq, "PERMUTAHIT", analysis, anal_ftb3, sep='\t',
-                            file=options.outfile)
+                          file=options.outfile)
                 else:
                     print(freq, "ANALMISS", analysis, anal_ftb3, sep='\t',
-                            file=options.outfile)
+                          file=options.outfile)
                 if lemma == lemma_ftb3:
                     found_lemma = True
                 elif lemma.replace('#', '') == lemma_ftb3.replace('#', ''):
                     found_lemma = True
                     print(freq, "LEMMARECOMP", lemma, lemma_ftb3, sep='\t',
-                            file=options.outfile)
+                          file=options.outfile)
                 else:
                     print("LEMMAMISS", lemma, lemma_ftb3, sep='\t',
-                            file=options.outfile)
+                          file=options.outfile)
         if options.format != 'coverage':
             if not found_anals and not found_lemma:
                 no_matches += freq
@@ -128,10 +130,12 @@ def main():
                 full_matches += freq
             elif not found_anals:
                 anal_matches += freq
-                print(freq, "LEMMANOANAL", surf, sep='\t', file=options.outfile)
+                print(freq, "LEMMANOANAL", surf, sep='\t',
+                      file=options.outfile)
             elif not found_lemma:
                 lemma_matches += freq
-                print(freq, "ANALNOLEMMA", surf, sep='\t', file=options.outfile)
+                print(freq, "ANALNOLEMMA", surf, sep='\t',
+                      file=options.outfile)
             else:
                 print("Logical error, kill everyone")
                 exit(13)
@@ -139,20 +143,21 @@ def main():
     cpuend = process_time()
     print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
     print("Lines", "Covered", "OOV", sep="\t", file=options.statfile)
-    print(lines, covered, lines-covered, sep="\t", file=options.statfile)
+    print(lines, covered, lines - covered, sep="\t", file=options.statfile)
     print(lines / lines * 100 if lines != 0 else 0,
           covered / lines * 100 if lines != 0 else 0,
-          (lines-covered) / lines * 100 if lines != 0 else 0,
+          (lines - covered) / lines * 100 if lines != 0 else 0,
           sep="\t", file=options.statfile)
     print("Types", "Covered", "OOV", sep="\t", file=options.statfile)
-    print(types, types_covered, types-types_covered, sep="\t", file=options.statfile)
+    print(types, types_covered, types - types_covered, sep="\t",
+          file=options.statfile)
     print(types / types * 100 if types != 0 else 0,
           types_covered / types * 100 if types != 0 else 0,
-          (types-types_covered) / types * 100 if types != 0 else 0,
+          (types - types_covered) / types * 100 if types != 0 else 0,
           sep="\t", file=options.statfile)
     if options.format == 'ftb3.1':
-        print("Lines", "Matches", "Lemma", "Anals", "Mismatch", "No results", sep="\t",
-              file=options.statfile)
+        print("Lines", "Matches", "Lemma", "Anals", "Mismatch",
+              "No results", sep="\t", file=options.statfile)
         print(lines, full_matches, lemma_matches, anal_matches, no_matches,
               no_results,
               sep="\t", file=options.statfile)

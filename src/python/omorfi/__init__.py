@@ -19,13 +19,14 @@
 #
 
 
-__all__ = ['Omorfi']
+__all__ = ['Omorfi', 'Token']
 
 __version__ = "2018"
 __author__ = "Omorfi contributors"
 __author_email__ = "omorfi-development@googlegroups.com"
 
 from .omorfi import Omorfi
+from .token import Token
 
 if __name__ == "__main__":
     pass

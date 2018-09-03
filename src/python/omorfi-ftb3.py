@@ -10,9 +10,7 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import format_xpos_ftb, get_lemmas, \
-        format_feats_ftb
+from omorfi import Omorfi, Token
 
 
 
@@ -95,8 +93,6 @@ def main():
         print("writing to", options.outfile.name)
     if not options.statfile:
         options.statfile = stdout
-    lexprobs = None
-    tagprobs = None
 
     if options.frequencies:
         with open(options.frequencies + '/lexemes.freqs') as lexfile:
@@ -129,10 +125,10 @@ def main():
             if anals and len(anals) > 0:
                 if options.oracle:
                     try_analyses_ftb(fields, index, surf, anals,
-                                        options.outfile)
+                                     options.outfile)
                 else:
                     print_analyses_ftb(index, surf, anals[0],
-                                          options.outfile)
+                                       options.outfile)
             else:
                 print("Failed:", fields)
                 exit(1)
