@@ -981,6 +981,14 @@ $ omorfi-generate.sh
 
 The input for generator is simply the output of the raw analyser.
 
+Generation has not been used so much because I have no use cases. There's some convenience scripts not installed in the `src/bash`, here's a classical example by Fred Karlsson of generating all forms of a noun *kauppa* (a shop) in Finnish. [He lists 2,253 forms](https://www.ling.helsinki.fi/~fkarlsso/genkau2.html), our current version is [here containing 35,983 forms of word *kauppa*](genkau3.html). And here's the execution:
+
+```
+echo kauppa > kauppa.wordlist
+bash src/bash/generate-wordlist.sh kauppa.wordlist kauppa.wordforms
+hfst-lookup src/generated/omorfi.describe.hfst -q < kauppa.wordforms | sed -e 's/\[WORD_ID=kauppa\]\[UPOS=//' | tr '][' '  ' | tr -s '\n' | sed -e 's/[0-9, ]*$//'
+```
+
 # Programming interfaces / bindings
 
 → See also: [API
