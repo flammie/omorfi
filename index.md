@@ -34,8 +34,7 @@ included):
 
 ## Documentation
 
-The main point of up-to-date documentation is these webpages. You should find
-list of all pages [on the left](#navigation).
+The main point of up-to-date documentation is these webpages.
 
 ### Basics
 
@@ -43,6 +42,7 @@ Everyone should read at least versioning information and readme:
 
 1. [Versions and download info](pages/Releases.html)
 1. [README](https://github.com/flammie/omorfi#omorfiopen-morphology-of-finnish)
+1. [Usage examples](pages/usage-examples.html)
 
 ### Bindings
 
@@ -81,7 +81,7 @@ gh-pages.
    word entries, in a way)
 1. [Paradigms](paradigms.html), i.e. inflection patterns
 1. [Internal keys and codes](stuff.html)
-
+1. [All forms of *kauppa*](pages/genkau3.html), a retake on old experiment
 
 ## Contact
 
