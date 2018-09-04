@@ -66,7 +66,7 @@ def main():
 
     # write preamble to wiki page
     print('---', file=args.output)
-    print('layout: page', file=args.output)
+    print('layout: default', file=args.output)
     print('title: Omor stuff–Internal codes', file=args.output)
     print('---', file=args.output)
     print('# omor stuff: some internal short-hand codes in omorfi databases',

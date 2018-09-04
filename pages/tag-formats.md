@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Tag formats"
 category: data
 date: 2016-02-08 18:23:58

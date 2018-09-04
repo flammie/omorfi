@@ -74,7 +74,7 @@ def main():
 
     # write preamble to wiki page
     print('---', file=args.output)
-    print('layout: page', file=args.output)
+    print('layout: default', file=args.output)
     print('title: Lexemes', file=args.output)
     print('---', file=args.output)
     print('# Lexemes', file=args.output)

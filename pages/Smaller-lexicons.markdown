@@ -1,6 +1,6 @@
 ---
 title: Smaller lexicon
-layout: page
+layout: default
 ---
 
 # Notes about the smaller lexicon version of omorfi

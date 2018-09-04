@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Omor stuff–Internal codes
 ---
 # omor stuff: some internal short-hand codes in omorfi databases

@@ -4,7 +4,7 @@ INDEX=statistics.markdown
 
 # build index page
 echo "---" > $INDEX
-echo "layout: page" >> $INDEX
+echo "layout: default" >> $INDEX
 echo "title: Statistics" >> $INDEX
 echo "---" >> $INDEX
 echo >> $INDEX

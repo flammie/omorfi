@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Directory layout"
 category: design
 date: 2016-02-08 18:23:58

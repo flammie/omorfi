@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 Title: Omorfi usage examples
 ---
 

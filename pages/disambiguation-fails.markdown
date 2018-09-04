@@ -1,6 +1,6 @@
 ---
 title: Disamgiguation fails (funny)
-layout: page
+layout: default
 ---
 
 # Disambiguation fails

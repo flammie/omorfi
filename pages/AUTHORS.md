@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "AUTHORS"
 category: meta
 date: 2016-02-08 18:23:58

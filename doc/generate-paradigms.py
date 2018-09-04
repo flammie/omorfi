@@ -63,7 +63,7 @@ def main():
 
     # write preamble to wiki page
     print('---', file=args.output)
-    print('layout: page', file=args.output)
+    print('layout: default', file=args.output)
     print('title: Paradigms', file=args.output)
     print('---', file=args.output)
     print('# Paradigms', file=args.output)

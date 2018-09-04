@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "omorfi-tokenise(1)"
 category: man
 date: 2016-12-06 03:23:58

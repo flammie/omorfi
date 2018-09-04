@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "omorfi-segment(1)"
 category: man
 date: 2016-12-06 03:23:58

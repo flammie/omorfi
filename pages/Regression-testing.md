@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Regression testing"
 category: design
 date: 2016-04-15 16:41:24

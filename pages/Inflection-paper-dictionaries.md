@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Inflection paper dictionaries"
 category: stats
 date: 2016-02-08 18:23:58

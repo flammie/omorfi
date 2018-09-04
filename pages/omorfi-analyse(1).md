@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "omorfi-analyse(1)"
 category: man
 date: 2016-02-08 18:23:58
