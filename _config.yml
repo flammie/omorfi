@@ -31,3 +31,5 @@ exclude: ['bin', 'README.md', 'src', 'test']
 markdown: kramdown
 kramdown:
     input: GFM
+
+theme: jekyll-theme-midnight
