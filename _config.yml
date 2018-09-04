@@ -1,35 +1,3 @@
-# Site title and subtitle. This is used in _includes/header.html
-title: 'Omorfi'
-subtitle: 'Open morphology for Finnish'
-
-# Enable/show navigation. There are there options:
-#   0 - always hide
-#   1 - always show
-#   2 - show only if posts are present
-navigation: 1
-
-# URL to source code, used in _includes/footer.html
-codeurl: 'https://github.com/flammie/omorfi'
-
-
-# Keep as an empty string if served up at the root. If served up at a specific
-# path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
-baseurl: '/omorfi'
-
-# Dates are not included in permalinks
-permalink: none
-
-# Syntax highlighting
-highlighter: rouge
-
-# Since these are pages, it doesn't really matter
-future: true
-
 # Exclude non-site files
 exclude: ['bin', 'README.md', 'src', 'test']
-
-markdown: kramdown
-kramdown:
-    input: GFM
-
 theme: jekyll-theme-midnight
