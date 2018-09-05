@@ -10,10 +10,10 @@ from sys import stderr, stdout, stdin
 from time import perf_counter, process_time
 
 from omorfi import Omorfi, Token
-from omorfi.token import is_tokenlist_oov
 
 
 def main():
+    """Command-line interface for omorfi's sort | uniq -c tester."""
     a = ArgumentParser()
     a.add_argument('-a', '--analyser', metavar='FSAFILE', required=True,
                    help="load analyser from FSAFILE")
@@ -89,7 +89,7 @@ def main():
             print(lines, '(', freq, ') ...', end='\r')
         token = Token(surf)
         anals = omorfi.analyse(token)
-        if not is_tokenlist_oov(anals):
+        if not token.is_oov():
             covered += freq
             types_covered += 1
         else:

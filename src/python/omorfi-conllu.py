@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""A command-line interface for omorfi with CONLL-U I/O formats."""
+
 # string munging
 from argparse import ArgumentParser, FileType
 # CLI stuff
@@ -10,10 +12,11 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi import Omorfi
-from omorfi.token import is_tokenlist_oov
+from omorfi.fileformats import next_conllu
 
 
-def try_analyses_conllu(anals, outfile, hacks=None):
+def try_analyses_conllu(token, outfile, hacks=None):
+    anals = token.analyses
     if not anals[0]._conllu:
         print("Oracle data missing from", anals[0].surf)
         exit(2)
@@ -43,13 +46,15 @@ def try_analyses_conllu(anals, outfile, hacks=None):
     return print_analyses_conllu(best, outfile, hacks)
 
 
-def debug_analyses_conllu(anals, outfile, hacks=None):
+def debug_analyses_conllu(token, outfile, hacks=None):
+    anals = token.analyses
     print("# REFERENCE(python):", anals[0]._conllu, file=outfile)
     for anal in anals:
         print_analyses_conllu(anal, outfile, hacks)
 
 
-def print_analyses_conllu(anal, outfile, hacks=None):
+def print_analyses_conllu(token, outfile, hacks=None):
+    anal = token.analyses[0]
     upos = anal.get_upos()
     if not upos or upos == "":
         upos = 'X'
@@ -62,7 +67,7 @@ def print_analyses_conllu(anal, outfile, hacks=None):
         lemma = '_'
     else:
         lemma = '#'.join(anal.get_lemmas())
-    print(anal.pos, anal.surf, lemma, upos, third,
+    print(token.pos, token.surf, lemma, upos, third,
           anal.printable_ud_feats(hacks),
           "_", "_", "_", anal.printable_ud_misc(), sep="\t", file=outfile)
 
@@ -132,7 +137,7 @@ def main():
     sentences = 0
     eoffed = False
     while not eoffed:
-        sentplus = omorfi.tokenise_conllu(options.infile)
+        sentplus = next_conllu(options.infile)
         if not sentplus:
             eoffed = True
             break
@@ -157,22 +162,16 @@ def main():
                 print("No surface in CONLL-U?", token, file=stderr)
                 exit(1)
             tokens += 1
-            anals = omorfi.analyse(token)
-            if is_tokenlist_oov(anals):
+            omorfi.analyse(token)
+            if token.is_oov():
                 unknowns += 1
-                anals = omorfi.guess(token)
-            if anals:
-                if options.debug:
-                    debug_analyses_conllu(anals, options.outfile,
-                                          options.hacks)
-                elif options.oracle:
-                    try_analyses_conllu(anals, options.outfile, options.hacks)
-                else:
-                    print_analyses_conllu(anals[0], options.outfile,
-                                          options.hacks)
+                omorfi.guess(token)
+            if options.debug:
+                debug_analyses_conllu(token, options.outfile, options.hacks)
+            elif options.oracle:
+                try_analyses_conllu(token, options.outfile, options.hacks)
             else:
-                print("???", file=stderr)
-                exit(1)
+                print_analyses_conllu(token, options.outfile, options.hacks)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Sentences:", sentences,

@@ -4,8 +4,9 @@
 File format I/O handlings
 """
 
-from .token import Token
 from sys import stderr
+
+from .token import Token
 
 
 def next_plaintext(f):
@@ -145,4 +146,9 @@ def next_vislcg(f):
     eoft = Token()
     eoft.nontoken = "eof"
     tokens.append(eoft)
+    return tokens
+
+def next_omorfi(f):
+    '''Read next block in omorfi internal stream format.'''
+    tokens = []
     return tokens

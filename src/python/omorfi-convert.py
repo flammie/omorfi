@@ -9,7 +9,8 @@ from sys import stdin, stdout, stderr
 
 # omorfi
 from omorfi.doc import Doc
-from omorfi.fileformats import next_vislcg, next_conllu, next_plaintext
+from omorfi.fileformats import next_vislcg, next_conllu, next_plaintext,\
+                               next_omorfi
 
 
 def main():
@@ -45,10 +46,7 @@ def main():
         elif options.informat == 'conllu':
             tokens = next_conllu(options.infile)
         elif options.informat == 'omorfi':
-            # RT test or so
-            doc = Doc.read(options.infile)
-            eoffed = True
-            break
+            tokens = next_omorfi(options.infile)
         else:
             print("input format missing implementation", options.informat,
                   file=stderr)
