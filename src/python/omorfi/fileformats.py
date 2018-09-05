@@ -7,21 +7,24 @@ File format I/O handlings
 from .token import Token
 from sys import stderr
 
-def next_plaintext(self, f):
+
+def next_plaintext(f):
     '''tokenise a line of text.
 
     @todo should get sentence from plaintext in the future.'''
     tokens = list()
     for line in f:
-        tokens = self.tokenise(line.strip())
+        surfs = line.strip().split()
         pos = 1
-        for token in tokens:
+        for surf in surfs:
+            token = Token(surf)
             if pos == 1:
                 token.firstinsent = True
             else:
                 token.firstinsent = False
             token.pos = pos
             pos += 1
+            tokens.append(token)
         sep = Token()
         sep.nontoken = "separator"
         tokens.append(sep)
@@ -32,7 +35,7 @@ def next_plaintext(self, f):
     return tokens
 
 
-def next_conllu(self, f):
+def next_conllu(f):
     '''tokenise a conllu sentence or comment.
 
     Should be used a file-like iterable that has CONLL-U sentence or
@@ -97,7 +100,7 @@ def next_conllu(self, f):
     return tokens
 
 
-def next_vislcg(self, f):
+def next_vislcg(f):
     '''Tokenises a sentence from VISL-CG format data.
 
     Returns a list of tokens when it hits first non-token block, including

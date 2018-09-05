@@ -5,6 +5,8 @@
 A lightweight container for whole texts. Contains tokens.
 """
 
+from .token import Token
+
 
 class Doc:
     """Doc contains tokens consisting a text or corpus.
@@ -55,7 +57,7 @@ class Doc:
             else:
                 if sent_start:
                     sent_end = len(self.tokens)
-                    self.sents.append(tuple(sent_start, sent_end))
+                    self.sents.append([sent_start, sent_end])
 
     def write(self, f):
         '''Writes self in some format into a file-like object.
@@ -66,17 +68,17 @@ class Doc:
         first = True
         for token in self.tokens:
             if not first:
-                print(",", end='', file=f)
-            print(dict(token), file=f)
+                print(",", file=f)
+            print(token, end='', file=f)
             first = False
-        print('], "sents": [', file=f)
+        print('\n], "sents": [', file=f)
         first = True
         for sent in self.sents:
             if not first:
-                print(",", end='', file=f)
-            print('[', sent[0], ', ', sent[1], ']', file=f)
+                print(",", file=f)
+            print('[', sent[0], ', ', sent[1], ']', end='', file=f)
             first = False
-        print(']}', file=f)
+        print('\n]}', file=f)
 
     @staticmethod
     def read(f):
@@ -85,6 +87,18 @@ class Doc:
         if line.strip() != '"omorfi.Doc": { "tokens": [':
             print("Error blerb:", line.strip())
             exit(1)
+        doc = Doc()
+        in_sents = False
         for line in f:
-            print(line.strip())
-
+            if line.strip().endswith("]}"):
+                continue
+            elif in_sents:
+                first, last = line.strip().rstrip(",").rstrip("]"). \
+                    strip("[").strip().split(", ")
+                doc.sents.append([first, last])
+            elif '"sents":' in line:
+                in_sents = True
+            elif '"omorfi.Token":' in line:
+                token = Token.fromstr(line.strip().rstrip(","))
+                doc.tokens.append(token)
+        return doc

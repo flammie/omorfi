@@ -79,19 +79,50 @@ class Token:
             raise KeyError(key)
 
     def __str__(self):
-        s = 'Token: {'
+        s = '"omorfi.Token": {'
         if self.surf:
-            s += ', surf: ' + self.surf
-        if self.omor:
-            s += ', omor: ' + self.omor
+            s += '"surf": "' + self.surf + '"'
         if self.nontoken:
-            s += ', nontoken: ' + self.nontoken
+            s += '"nontoken": "' + self.nontoken + '"'
+        if self.pos:
+            s += ', "pos": "' + str(self.pos) + '"'
+        if self.omor:
+            s += ', "omor": "' + self.omor + '"'
         if self.error:
-            s += ', error: ' + self.error
+            s += ', "error": "' + self.error + '"'
         if self.comment:
-            s += ', comment: ' + self.comment
+            s += ', "comment": "' + self.comment + '"'
         s += '}'
         return s
+
+    @staticmethod
+    def fromstr(s):
+        """Creates token from string.
+
+        Strings should be made with print(token).
+        """
+        start = s.find("omorfi.Token")
+        token = Token()
+        if not start:
+            token.nontoken = "error"
+            token.error = s
+            return token
+        end = start + len("omorfi.Token':")
+        fields = s[end + 2:-1].split(", ")
+        for field in fields:
+            k, v = field.strip("{").rstrip("]").rstrip("}").split(":")
+
+            if k == '"surf"':
+                token.surf = v.strip().strip('"')
+            elif k == '"nontoken"':
+                token.nontoken = v.strip().strip('"')
+            elif k == '"pos"':
+                token.pos = int(v.strip().strip('"'))
+            elif k == '"error"':
+                token.error = v.strip().strip('"')
+            elif k == '"comment"':
+                token.comment = v.strip().strip('"')
+        return token
 
     @staticmethod
     def fromdict(token):
@@ -1081,5 +1112,3 @@ def printable_vislcg(l):
     for anal in l:
         vislcg += anal.printable_vislcg()
     return vislcg
-
-
