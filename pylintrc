@@ -1,0 +1,7 @@
+[MESSAGES CONTROL]
+
+disable=no-else-return
+
+[FORMAT]
+
+max-line-length=79
