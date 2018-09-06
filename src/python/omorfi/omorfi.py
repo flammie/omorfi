@@ -510,14 +510,13 @@ class Omorfi:
 
     def _guess_token(self, token):
         res = self.guesser.lookup(token.surf)
-        guesses = []
         for r in res:
-            guesstoken = copy(token)
-            guesstoken['anal'] = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
-            guesstoken['weight'] = float(r[1])
-            guesstoken['guess'] = 'FSA'
-            guesses += [guesstoken]
-        return guesses
+            anal = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
+            weight = float(r[1])
+            guess = Analysis(anal, weight, "omor")
+            guess.manglers.append("GUESSER_FSA")
+            token.analyses.append(guess)
+        return token.analyses
 
     def _guess_heuristic(self, token):
         '''Heuristic guessing function written fully in python.
@@ -525,23 +524,22 @@ class Omorfi:
         This should always be the most simple basic backoff, e.g. noun singular
         nominative for everything.
         '''
-        guesstoken = copy(token)
-        if not token.surf:
-            return [guesstoken]
         # woo advanced heuristics!!
         if token.surf[0].isupper() and len(token.surf) > 1:
-            guesstoken.omor = '[WORD_ID=' + token.surf +\
+            omor = '[WORD_ID=' + token.surf +\
                 "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
-            guesstoken.weight = self._penalty
-            guesstoken.guesser = 'PYTHON0ISUPPER'
+            weight = self._penalty
+            guess = Analysis(omor, weight, "omor")
+            guess.manglers.append('GUESSER_PYTHON_0ISUPPER')
         else:
-            guesstoken.omor = '[WORD_ID=' + token.surf +\
+            omor = '[WORD_ID=' + token.surf +\
                 "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
-            guesstoken.weight = self._penalty
-            guesstoken.guesser = 'PYTHONELSE'
-        return [guesstoken]
+            weight = self._penalty
+            guess = Analysis(omor, weight, "omor")
+            guess.manglers.append('GUESSER_PYTHON_ELSE')
+        return token.analyses
 
     def guess(self, token):
         '''Speculate morphological analyses of OOV token.
@@ -561,13 +559,12 @@ class Omorfi:
 
     def _lemmatise(self, token):
         res = self.lemmatiser.lookup(token.surf)
-        lemmas = []
         for r in res:
-            lemmatoken = copy(token)
-            lemmatoken.lemma = r[0]
-            lemmatoken.lemmaweight = float(r[1])
-            lemmas += [lemmatoken]
-        return lemmas
+            lemma = r[0]
+            weight = float(r[1])
+            anal = Analysis(lemma, weight, "lemma")
+            token.analyses.append(anal)
+        return token.analyses
 
     def lemmatise(self, token):
         '''Lemmatise a token, returning a dictionary ID.
@@ -579,21 +576,21 @@ class Omorfi:
         lemmas = None
         lemmas = self._lemmatise(token)
         if not lemmas or len(lemmas) < 1:
-            lemmatoken = copy(token)
-            lemmatoken.lemma = lemmatoken.surf
-            lemmatoken.lemmaweight = float('inf')
-            lemmas = [lemmatoken]
-        return lemmas
+            lemma = token.surf
+            weight = float('inf')
+            guess = Analysis(lemma, weight, "lemma")
+            guess.manglers.append("GUESSER_SURFISLEMMA")
+            token.analyses.append(guess)
+        return token.analyses
 
     def _segment(self, token):
         res = self.segmenter.lookup(token.surf)
-        segmenteds = []
         for r in res:
-            segmenttoken = copy(token)
-            segmenttoken.segments = r[0]
-            segmenttoken.segmentweight = float(r[1])
-            segmenteds += [segmenttoken]
-        return segmenteds
+            segments = r[0]
+            weight = float(r[1])
+            anal = Analysis(segments, weight, "segments")
+            token.analyses.append(anal)
+        return token.analyses
 
     def segment(self, token):
         '''Segment token into morphs, words and other string pieces.
@@ -604,10 +601,12 @@ class Omorfi:
         segments = None
         segments = self._segment(token)
         if not segments or len(segments) < 1:
-            segmenttoken = copy(token)
-            segmenttoken.segments = segmenttoken.surf
-            segments = [segmenttoken]
-        return segments
+            segments = token.surf
+            weight = float('inf')
+            guess = Analysis(segments, weight, "lemma")
+            guess.manglers.append("GUESSER_SURFISSEGMENT")
+            token.analyses.append(guess)
+        return token.analyses
 
     def _labelsegment(self, token):
         res = self.labelsegmenter.lookup(token.surf)

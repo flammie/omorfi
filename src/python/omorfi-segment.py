@@ -6,37 +6,48 @@ from sys import stderr, stdin, stdout
 from omorfi import Omorfi
 
 
-def print_moses_factor_segments(segments, labelsegments, surf, outfile,
-                                options):
-    if float(labelsegments[0].lsweight) != float('inf'):
-        segs = labelsegments[0].get_moses_factor_segments()
+def print_moses_factor_segments(token, outfile, options):
+    labelsegments = None
+    for anal in token.analyses:
+        if anal.name == "labelsegments":
+            labelsegments = anal
+            break
+    if not labelsegments:
+        print("Missing labelsegments for token", token, file=stderr)
+        exit(1)
+    if float(labelsegments.lsweight) != float('inf'):
+        segs = labelsegments.get_moses_factor_segments()
         print(options.segment_marker.join(segs), end=' ', file=outfile)
     else:
-        print(surf.surf, end='|UNK ', file=outfile)
+        print(token.surf, end='|UNK ', file=outfile)
 
 
-def print_segments(segments, labelsegments, surf, outfile, options):
-    if segments:
-        if options.show_ambiguous:
-            sep = ''
-            for segmenteds in segments:
-                print(sep, end='', file=outfile)
-                print(options.segment_marker.join(segmenteds.get_segments(
-                    options.split_morphs, options.split_words,
-                    options.split_new_words, options.split_derivs,
-                    options.split_nonwords)),
-                    end='', file=outfile)
-                sep = options.show_ambiguous
-        else:
-            print(options.segment_marker.join(segments[0].get_segments(
-                  options.split_morphs, options.split_words,
-                  options.split_new_words, options.split_derivs,
-                  options.split_nonwords)),
-                  end='', file=outfile)
-        print(' ', end='', file=outfile)
-    else:
-        print("Missing segmenter", file=stderr)
+def print_segments(token, outfile, options):
+    segments = None
+    for anal in token.analyses:
+        if anal.name == "segments":
+            segments = anal
+            break
+    if not segments:
+        print("Missing segments for token", file=stderr)
         exit(1)
+    if options.show_ambiguous:
+        sep = ''
+        for segmenteds in segments:
+            print(sep, end='', file=outfile)
+            print(options.segment_marker.join(segmenteds.get_segments(
+                options.split_morphs, options.split_words,
+                options.split_new_words, options.split_derivs,
+                options.split_nonwords)),
+                end='', file=outfile)
+            sep = options.show_ambiguous
+    else:
+        print(options.segment_marker.join(segments[0].get_segments(
+              options.split_morphs, options.split_words,
+              options.split_new_words, options.split_derivs,
+              options.split_nonwords)),
+              end='', file=outfile)
+    print(' ', end='', file=outfile)
 
 
 def main():
@@ -61,7 +72,8 @@ def main():
                    help="split on word boundaries")
     a.add_argument('--no-split-new-words', action="store_false", default=True,
                    dest="split_new_words",
-                   help="split on new word boundaries (prev. unattested compounds)")
+                   help="split on new word boundaries " +
+                   "(prev. unattested compounds)")
     a.add_argument('--no-split-morphs', action="store_false", default=True,
                    dest="split_morphs",
                    help="split on morph boundaries")
@@ -122,14 +134,12 @@ def main():
             continue
         tokens = omorfi.tokenise(line)
         for token in tokens:
-            segments = omorfi.segment(token)
-            labelsegments = omorfi.labelsegment(token)
+            omorfi.segment(token)
+            omorfi.labelsegment(token)
             if options.output_format == 'moses-factors':
-                print_moses_factor_segments(
-                    segments, labelsegments, token, outfile, options)
+                print_moses_factor_segments(token, outfile, options)
             elif options.output_format == 'segments':
-                print_segments(segments, labelsegments, token, outfile,
-                               options)
+                print_segments(token, outfile, options)
         print(file=outfile)
     exit(0)
 
