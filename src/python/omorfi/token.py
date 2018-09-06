@@ -208,6 +208,8 @@ class Token:
     def printable_vislcg(self):
         '''Create VISL-CG 3 output based on token and its analyses.'''
         vislcg = '"<' + self.surf + '>"\n'
+        newline = ""
         for anal in self.analyses:
-            vislcg += anal.printable_vislcg()
+            vislcg += newline + anal.printable_vislcg()
+            newline = "\n"
         return vislcg

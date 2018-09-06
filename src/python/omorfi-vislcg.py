@@ -11,6 +11,7 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi import Omorfi
+from omorfi.fileformats import next_conllu, next_vislcg, next_plaintext
 
 
 def main():
@@ -59,11 +60,11 @@ def main():
     eoffed = False
     while not eoffed:
         if options.format == 'vislcg':
-            tokens = omorfi.tokenise_vislcg(options.infile)
+            tokens = next_vislcg(options.infile)
         elif options.format == 'text':
-            tokens = omorfi.tokenise_plaintext(options.infile)
+            tokens = next_plaintext(options.infile)
         elif options.format == 'conllu':
-            tokens = omorfi.tokenise_conllu(options.infile)
+            tokens = next_conllu(options.infile)
         else:
             print("input format missing implementation", options.format,
                   file=stderr)
