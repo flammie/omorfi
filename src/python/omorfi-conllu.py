@@ -15,15 +15,20 @@ from omorfi import Omorfi
 from omorfi.fileformats import next_conllu
 
 
+def get_reference_conllu_list(token):
+    if not token.gold:
+        print("Oracle data missing from", token, file=stderr)
+        exit(2)
+    else:
+        return token.gold.split("\t")
+
+
 def try_analyses_conllu(token, outfile, hacks=None):
     anals = token.analyses
-    if not anals[0]._conllu:
-        print("Oracle data missing from", anals[0].surf)
-        exit(2)
-    original = anals[0]._conllu
+    original = get_reference_conllu_list(token)
     best = None
     highest = -1
-    for anal in anals:
+    for i, anal in enumerate(anals):
         upos = anal.get_upos()
         feats = anal.printable_ud_feats()
         lemmas = anal.get_lemmas()
@@ -38,23 +43,33 @@ def try_analyses_conllu(token, outfile, hacks=None):
             score += 10
         elif lemma.strip('#') == original[2].strip('#'):
             score += 5
+        elif lemma.lower() == original[2].lower():
+            score += 5
         if feats == original[5]:
             score += 10
+        else:
+            featset = set(feats.split("|"))
+            refset = set(original[5].split("|"))
+            score += len(featset.intersection(refset))
         if score > highest:
-            best = anal
+            best = i
             highest = score
-    return print_analyses_conllu(best, outfile, hacks)
+    return print_analyses_conllu(token, outfile, hacks, best)
 
 
 def debug_analyses_conllu(token, outfile, hacks=None):
     anals = token.analyses
-    print("# REFERENCE(python):", anals[0]._conllu, file=outfile)
+    print("# REFERENCE(python):", get_reference_conllu_list(token),
+          file=outfile)
     for anal in anals:
         print_analyses_conllu(anal, outfile, hacks)
 
 
-def print_analyses_conllu(token, outfile, hacks=None):
-    anal = token.analyses[0]
+def print_analyses_conllu(token, outfile, hacks=None, best=0):
+    anal = token.analyses[best]
+    if anal.name != 'omor':
+        print("Trying to omorprint non-omor analysis", anal, file=stderr)
+        exit(1)
     upos = anal.get_upos()
     if not upos or upos == "":
         upos = 'X'

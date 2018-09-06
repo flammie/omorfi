@@ -40,6 +40,8 @@ class Token:
         self.spacebefore = False
         ## If token is separated by space from right
         self.spaceafter = False
+        ## Gold reference can be stored in token for few apps
+        self.gold = None
 
     def __getitem__(self, key):
         """Tokens can still be accessed like dicts for compatibility.
@@ -71,8 +73,11 @@ class Token:
         if self.pos:
             s += ',\n "pos": "' + str(self.pos) + '"'
         if self.analyses:
-            s += ',\n "omorfi.Analyses": [\n'
-            s += ',\n '.join(self.analyses)
+            s += ',\n "omorfi.Analyses": ['
+            comma = ""
+            for anal in self.analyses:
+                s += comma + "\n" + str(anal)
+                comma = ","
             s += '\n]'
         if self.error:
             s += ',\n "error": "' + self.error + '"'

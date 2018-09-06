@@ -11,8 +11,8 @@ from sys import stderr
 
 def main():
     a = ArgumentParser()
-    a.add_argument('-H', '--hypothesis', metavar="HYPFILE", type=open, required=True,
-                   dest="hypfile", help="analysis results")
+    a.add_argument('-H', '--hypothesis', metavar="HYPFILE", type=open,
+                   required=True, dest="hypfile", help="analysis results")
     a.add_argument('-r', '--reference', metavar="REFFILE", type=open,
                    required=True,
                    dest="reffile", help="reference data")
@@ -23,8 +23,9 @@ def main():
                    help="Allow fuzzy matches if tokenisation differs")
     a.add_argument('-v', '--verbose', action="store_true", default=False,
                    help="Print verbosely while processing")
-    a.add_argument('-t', '--thresholds', metavar='THOLDS', default=99, type=int,
-                   help="require THOLD % for lemma, UPOS and UFEAT or exit 1 (for testing)")
+    a.add_argument('-t', '--thresholds', metavar='THOLDS', default=99,
+                   type=int, help="require THOLD % for lemma, UPOS and " +
+                   "UFEATs or exit 1 (for testing)")
     options = a.parse_args()
     #
     lines = 0
@@ -55,8 +56,8 @@ def main():
             elif hypline == refline:
                 continue
             else:
-                print("mismatched unknown non-content! IN:", hypline, "REF:", refline,
-                      sep='\n')
+                print("mismatched unknown non-content! IN:", hypline,
+                      "REF:", refline, sep='\n')
                 exit(1)
         if infields[0] != reffields[0]:
             if '-' in reffields[0]:
@@ -67,8 +68,9 @@ def main():
                 reffields = refline.strip().split('\t')
             else:
                 skiplines += 1
-                print("misaligned (index)! IN:", infields[0], "REF:", reffields[0],
-                      "\n", hypline, refline, "skipping...", file=stderr)
+                print("misaligned (index)! IN:", infields[0], "REF:",
+                      reffields[0], "\n", hypline, refline,
+                      "skipping...", file=stderr)
                 if options.realign:
                     while hypline != "":
                         skiplines += 1
@@ -80,8 +82,8 @@ def main():
                     exit(1)
         if infields[1] != reffields[1]:
             skiplines += 1
-            print("misaligned (surface)! IN:", infields[1], "REF:", reffields[1],
-                  "\n", hypline, "\n", refline, file=stderr)
+            print("misaligned (surface)! IN:", infields[1], "REF:",
+                  reffields[1], "\n", hypline, "\n", refline, file=stderr)
             if options.realign:
                 while hypline != "":
                     skiplines += 1
@@ -94,27 +96,28 @@ def main():
         if infields[2] != reffields[2]:
             missed_lemmas += 1
             print("LEMMA", infields[2], reffields[2], file=options.logfile)
-            print("SURFS", infields[1], reffields[1], file=options.logfile)
-            print("LEMMA|SURF", infields[1], reffields[1], infields[
-                  2], reffields[2], file=options.logfile)
+            print("^^|SURF", infields[1], reffields[1], infields[2],
+                  reffields[2], file=options.logfile)
         if infields[3] != reffields[3]:
             missed_uposes += 1
             print("UPOS", infields[3], reffields[3], file=options.logfile)
-            print("SURFS", infields[1], reffields[1], file=options.logfile)
-            print("UPOS|SURF", infields[1], reffields[1], infields[
-                  3], reffields[3], file=options.logfile)
+            print("^^|SURF", infields[1], reffields[1], infields[3],
+                  reffields[3], file=options.logfile)
         if infields[4] != reffields[4]:
             missed_tdtposes += 1
             print("TDTPOS", infields[4], reffields[4], file=options.logfile)
-            print("SURFS", infields[1], reffields[1], file=options.logfile)
-            print("TDTPOS|SURF", infields[1], reffields[1], infields[
-                  4], reffields[4], file=options.logfile)
+            print("^^|SURF", infields[1], reffields[1], infields[4],
+                  reffields[4], file=options.logfile)
         if infields[5] != reffields[5]:
             missed_feats += 1
             print("UFEAT", infields[5], reffields[5], file=options.logfile)
-            print("SURFS", infields[1], reffields[1], file=options.logfile)
-            print("UFEAT|SURF", infields[1], reffields[1], infields[
-                  5], reffields[5], file=options.logfile)
+            print("^^|SURF", infields[1], reffields[1], infields[5],
+                  reffields[5], file=options.logfile)
+            infeats = set(infields[5].split("|"))
+            reffeats = set(reffields[5].split("|"))
+            missfeats = reffeats - infeats
+            for misfit in missfeats:
+                print("MISFIT", misfit, file=options.logfile)
         if infields[6] != reffields[6]:
             missed_uds += 1
             print("UD", infields[6], reffields[6], file=options.logfile)
@@ -153,8 +156,10 @@ def main():
           sep="\t")
     print("Skipped due to tokenisation etc. (no fuzz):", skiplines)
     if deplines == 0 or \
-            ((deplines - missed_lemmas) / deplines * 100 < options.thresholds) or\
-            ((deplines - missed_uposes) / deplines * 100 < options.thresholds) or\
+            ((deplines - missed_lemmas) / deplines * 100 < options.thresholds)\
+            or\
+            ((deplines - missed_uposes) / deplines * 100 < options.thresholds)\
+            or\
             ((deplines - missed_feats) / deplines * 100 < options.thresholds):
         print("needs to have", options.thresholds,
               "% matches to pass regress test\n",

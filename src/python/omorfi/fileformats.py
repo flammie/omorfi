@@ -7,7 +7,7 @@ File format I/O handlings
 from sys import stderr
 
 from .token import Token
-
+from .analysis import Analysis
 
 def next_plaintext(f):
     '''tokenise a line of text.
@@ -61,7 +61,7 @@ def next_conllu(f):
                 token.error = line.strip()
                 tokens = [token]
                 return tokens
-        token._conllu = fields
+        token.gold = line.strip()
         try:
             index = int(fields[0])
         except ValueError:
