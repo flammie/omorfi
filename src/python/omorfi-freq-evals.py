@@ -88,7 +88,7 @@ def main():
         if options.verbose:
             print(lines, '(', freq, ') ...', end='\r')
         token = Token(surf)
-        anals = omorfi.analyse(token)
+        omorfi.analyse(token)
         if not token.is_oov():
             covered += freq
             types_covered += 1
@@ -98,7 +98,7 @@ def main():
             print(freq, "OOV", surf, sep='\t', file=options.outfile)
         found_anals = False
         found_lemma = False
-        for anal in anals:
+        for anal in token.get_nbest(0, "omor"):
             if options.format == 'ftb3.1':
                 anal_ftb3 = ' '.join(anal.get_ftb_feats())
                 lemma_ftb3 = '#'.join(anal.get_lemmas())

@@ -213,3 +213,50 @@ class Token:
             vislcg += newline + anal.printable_vislcg()
             newline = "\n"
         return vislcg
+
+    def get_nbest(self, n: int, name="omor"):
+        """Get n most likely analyses of given type.
+
+        Args:
+            n: number of analyses, use 0 to get all
+
+        Returns:
+            At most n analyses of given type or empty list if there aren't any.
+        """
+        nbest = []
+        worst = -1.0
+        if n == 0:
+            n = 65535
+        for anal in self.analyses:
+            if anal.name == name:
+                if len(nbest) < n:
+                    nbest.append(anal)
+                    # when filling the queue find biggest
+                    if anal.weight > worst:
+                        worst = anal.weight
+                elif anal.weight < worst:
+                    # replace worst
+                    for i, a in enumerate(nbest):
+                        if a.weight == worst:
+                            nbest[i] = anal
+                    worst = 0
+                    for a in nbest:
+                        if a.weight > worst:
+                            worst = a.weight
+        return nbest
+
+    def get_best(self, name="omor"):
+        """Get most likely analysis of given type.
+
+        Args:
+            name: type of analysis to look for.
+
+        Returns:
+            most probably analysis of given type, or None if analyses have not
+            been made for the type.
+        """
+        nbest1 = self.get_nbest(1, name)
+        if nbest1:
+            return nbest1[0]
+        else:
+            return None

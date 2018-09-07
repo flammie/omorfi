@@ -15,11 +15,8 @@ def print_moses_factor_segments(token, outfile, options):
     if not labelsegments:
         print("Missing labelsegments for token", token, file=stderr)
         exit(1)
-    if float(labelsegments.lsweight) != float('inf'):
-        segs = labelsegments.get_moses_factor_segments()
-        print(options.segment_marker.join(segs), end=' ', file=outfile)
-    else:
-        print(token.surf, end='|UNK ', file=outfile)
+    segs = labelsegments.get_moses_factor_segments()
+    print(options.segment_marker.join(segs), end=' ', file=outfile)
 
 
 def print_segments(token, outfile, options):
@@ -98,7 +95,7 @@ def main():
         if options.verbose:
             print("Reading labelsegmenter", options.labeller)
         omorfi.load_labelsegmenter(options.labeller)
-    if not omorfi.can_segment:
+    if not omorfi.can_segment or not omorfi.can_labelsegment:
         print("Could not load segmenter(s), re-compile them or use -f option")
         print()
         print("To compile segmenter, use --enable-segmenter, and/or",
