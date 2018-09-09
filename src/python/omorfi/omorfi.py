@@ -14,12 +14,11 @@ from argparse import ArgumentParser
 from sys import stderr, stdin
 from math import log
 
-from copy import copy
-
 import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
 from .token import Token
+from .analysis import Analysis
 
 can_udpipe = True
 try:
@@ -31,7 +30,7 @@ except ImportError:
 class Omorfi:
 
     """
-    An object holding omorfi binariesfor all the functions of omorfi.
+    An object holding omorfi binaries for all the functions of omorfi.
 
     The following functionalities use automata binaries that need to be loaded
     separately:
@@ -53,15 +52,8 @@ class Omorfi:
     The annotations will be changed when transformation has been applied.
     """
 
-    ## magic number for penalty weights
+    #: magic number for penalty weights
     _penalty = 28021984
-
-    ## paths to search auto-detected models from
-    _stdpaths = ['/usr/local/share/hfst/fi/',
-                 '/usr/share/hfst/fi/',
-                 '/usr/local/share/omorfi/',
-                 '/usr/share/omorfi/',
-                 './', 'generated/', 'src/generated/', '../src/generated/']
 
     def __init__(self, verbosity=False):
         """Construct Omorfi with given verbosity for printouts."""
@@ -273,35 +265,32 @@ class Omorfi:
                 # discounts
                 self.taglogprobs[omor] = log(1 / (omortotal + 1))
 
-    def _find_retoken_recase(self, token):
-        """Turns a string into a recased non-OOV token."""
+    def _find_retoken_recase(self, token: Token):
+        """Checks if token is acceptable when case is ignored.
+
+        Used case-ignorations depend on the settings.
+        """
         if self.accept(token):
             return token
         if len(token.surf) > 1:
+            # we test len to just use 1: slice...
             if self.try_titlecase and not token.surf[0].isupper():
-                token.analsurf = token.surf[0].upper() + token.surf[1:].lower()
-                if self.accept(token):
-                    token.recased = 'Titlecased'
+                if self.accept(Token(token.surf[0].upper() +
+                                     token.surf[1:].lower())):
                     return token
             if self.try_detitlecase and not token.surf[0].islower():
-                token.analsurf = token.surf[0].lower() + token.surf[1:]
-                if self.accept(token):
-                    token.recased = 'dETITLECASED'
+                if self.accept(Token(token.surf[0].lower() + token.surf[1:])):
                     return token
-        if self.try_lowercase and token.surf.lower() != token.surf:
-            token.analsurf = token.surf.lower()
-            if self.accept(token):
-                token.recased = 'lowercased'
+        if self.try_lowercase:
+            if self.accept(Token(token.surf.lower())):
                 return token
-        if self.try_uppercase and not token.surf.upper() != token.surf:
-            token.analsurf = token.surf.upper()
-            if self.accept(token):
-                token.recased = 'UPPERCASED'
+        if self.try_uppercase:
+            if self.accept(Token(token.surf.upper())):
                 return token
         return False
 
-    def _find_retokens(self, token):
-        """Turns a string into a list of likely tokens.
+    def _find_retokens(self, token: Token):
+        """Finds list of acceptable sub-tokens from a token.
 
         Tries to strip punct tokens from left and right.
         """
@@ -342,9 +331,6 @@ class Omorfi:
                     reretoken = self._find_retoken_recase(retoken)
                     if reretoken:
                         return pretokens + [reretoken] + posttokens
-                    else:
-                        print("no", file=stderr)
-                        continue
         # no acceptable substring inside, just strip puncts
         return [token]
 
@@ -360,21 +346,23 @@ class Omorfi:
                 retokens.append(retoken)
         return retokens
 
-    def fsa_tokenise(self, line):
+    def fsa_tokenise(self, line: str):
         """Tokenise with FSA.
 
-        @param line  string to tokenise
+        Args:
+            line:  string to tokenise
         """
         return None
 
-    def python_tokenise(self, line):
+    def python_tokenise(self, line: str):
         """Tokenise with python's basic string functions.
 
-        @param line  string to tokenise
+        Args:
+            line:  string to tokenise
         """
         return self._retokenise(line.split())
 
-    def tokenise(self, line):
+    def tokenise(self, line: str):
         """Perform tokenisation with loaded tokeniser if any, or `split()`.
 
         If tokeniser is available, it is applied to input line and if
@@ -385,6 +373,15 @@ class Omorfi:
         tokenised using python's basic string functions. If analyser is
         present, tokeniser will try harder to get some analyses for each
         token using hard-coded list of extra splits.
+
+        Args:
+            line: a string to be tokenised, should contain a line of text or a
+                  sentence
+
+        Returns:
+            A list of tokens based on the line. List may include boundary
+            non-tokens if e.g. sentence boundaries are recognised. For empty
+            line a paragraph break non-token may be returned.
         """
         tokens = None
         if self.tokeniser:
@@ -393,112 +390,111 @@ class Omorfi:
             tokens = self.python_tokenise(line)
         return tokens
 
-    def _analyse_token(self, token):
-        rv = []
-        if token.firstinsent and self.try_detitle_firstinsent:
-            # begin of sentence, etc. recasing extra
-            res = self.analyser.lookup(token.surf[0].lower() + token.surf[1:])
-            for r in res:
-                rvtoken = copy(token)
-                rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken.weight = r[1]
-                rv.append(rvtoken)
-        if token.analsurf:
-            # surface from already determined
-            res = self.analyser.lookup(token.analsurf)
-            for r in res:
-                rvtoken = copy(token)
-                rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken.weight = r[1]
-                rv.append(rvtoken)
-        else:
-            # use real surface case
-            res = self.analyser.lookup(token.surf)
-            for r in res:
-                rvtoken = copy(token)
-                rvtoken.analsurf = token.surf
-                rvtoken.omor = r[0] + '[WEIGHT=%f]' % (r[1])
-                rvtoken.weight = r[1]
-                rv.append(rvtoken)
-        if not token.analsurf and token.surf:
-            # also guess other cases
-            s = token.surf
-            if len(s) > 2 and s[0].islower() and self.try_titlecase:
-                tcs = s[0].upper() + s[1:].lower()
-                if tcs != s:
-                    tcres = self.analyser.lookup(tcs)
-                    for r in tcres:
-                        tctoken = copy(token)
-                        tctoken.recased = 'Titlecased'
-                        tctoken.analsurf = tcs
-                        tctoken.omor = r[0] + \
-                            '[CASECHANGE=TITLECASED]' + \
-                            '[WEIGHT=%f]' % (r[1] + self._penalty)
-                        tctoken.weight = r[1] + self._penalty
-                        rv.append(tctoken)
-            if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
-                dts = s[0].lower() + s[1:]
-                if dts != s:
-                    dtres = self.analyser.lookup(dts)
-                    for r in dtres:
-                        dttoken = copy(token)
-                        dttoken.recased = 'dETITLECASED'
-                        dttoken.analsurf = dts
-                        dttoken.omor = r[0] + \
-                            "[CASECHANGE=DETITLECASED]" + \
-                            "[WEIGHT=%f]" % (r[1] + self._penalty)
-                        dttoken.weight = r[1] + self._penalty
-                        rv.append(dttoken)
-            if not s.isupper() and self.try_uppercase:
-                ups = s.upper()
-                if ups != s:
-                    upres = self.analyser.lookup(ups)
-                    for r in upres:
-                        uptoken = copy(token)
-                        uptoken.recased = 'UPPERCASED'
-                        uptoken.analsurf = ups
-                        uptoken.omor = r[0] + \
-                            "[CASECHANGE=UPPERCASED]" + \
-                            "[WEIGHT=%f]" % (r[1] + self._penalty)
-                        uptoken.weight = r[1] + self._penalty
-                        rv.append(uptoken)
-            if not s.islower() and self.try_lowercase:
-                lows = s.lower()
-                if lows != s:
-                    lowres = self.analyser.lookup(lows)
-                    for r in lowres:
-                        lowtoken = copy(token)
-                        lowtoken.recased = 'lowercased'
-                        lowtoken.analsurf = lows
-                        lowtoken.omor = r[0] +\
-                            "[CASECHANGE=LOWERCASED]" + \
-                            "[WEIGHT=%f]" % (r[1] + self._penalty)
-                        lowtoken.weight = r[1] + self._penalty
-                        rv.append(lowtoken)
-        return rv
+    def _analyse_token(self, token: Token):
+        '''Analyse token using HFST and perform recasings.'''
+        # use real surface case
+        res = self.analyser.lookup(token.surf)
+        for r in res:
+            omor = r[0] + '[WEIGHT=%f]' % (r[1])
+            weight = r[1]
+            token.analyses.append(Analysis(omor, weight, "omor"))
+        # also guess other cases
+        s = token.surf
+        trieds = {s}
+        if len(s) > 2 and s[0].islower() and self.try_titlecase:
+            tcs = s[0].upper() + s[1:].lower()
+            if tcs not in trieds:
+                tcres = self.analyser.lookup(tcs)
+                for r in tcres:
+                    mangler = 'Titlecased'
+                    omor = r[0] + \
+                        '[CASECHANGE=TITLECASED]' + \
+                        '[WEIGHT=%f]' % (r[1] + self._penalty)
+                    weight = r[1] + self._penalty
+                    anal = Analysis(omor, weight, "omor")
+                    anal.manglers.append(mangler)
+                    anal.analsurf = tcs
+                    token.analyses.append(anal)
+                trieds.add(tcs)
+                res += tcres
+        if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
+            dts = s[0].lower() + s[1:]
+            if dts not in trieds:
+                dtres = self.analyser.lookup(dts)
+                for r in dtres:
+                    mangler = 'dETITLECASED'
+                    omor = r[0] + \
+                        "[CASECHANGE=DETITLECASED]" + \
+                        "[WEIGHT=%f]" % (r[1] + self._penalty)
+                    weight = r[1]
+                    if token.pos != 1:
+                        weight += self._penalty
+                    anal = Analysis(omor, weight, "omor")
+                    anal.manglers.append(mangler)
+                    anal.analsurf = dts
+                    token.analyses.append(anal)
+                trieds.add(dts)
+                res += dtres
+        if not s.isupper() and self.try_uppercase:
+            ups = s.upper()
+            if ups not in trieds:
+                upres = self.analyser.lookup(ups)
+                for r in upres:
+                    mangler = 'UPPERCASED'
+                    omor = r[0] + \
+                        "[CASECHANGE=UPPERCASED]" + \
+                        "[WEIGHT=%f]" % (r[1] + self._penalty)
+                    weight = r[1] + self._penalty
+                    anal = Analysis(omor, weight, "omor")
+                    anal.manglers.append(mangler)
+                    anal.analsurf = ups
+                    token.analyses.append(anal)
+                trieds.add(ups)
+                res += upres
+        if not s.islower() and self.try_lowercase:
+            lows = s.lower()
+            if lows not in trieds:
+                lowres = self.analyser.lookup(lows)
+                for r in lowres:
+                    mangler = 'lowercased'
+                    omor = r[0] +\
+                        "[CASECHANGE=LOWERCASED]" + \
+                        "[WEIGHT=%f]" % (r[1] + self._penalty)
+                    weight = r[1] + self._penalty
+                    anal = Analysis(omor, weight, "omor")
+                    anal.manglers.append(mangler)
+                    anal.analsurf = lows
+                    token.analyses.append(anal)
+                trieds. add(lows)
+                res += lowres
+        return res
 
-    def analyse(self, token):
+    def analyse(self, token: Token):
         """Perform a simple morphological analysis lookup.
 
-        If try_titlecase does not evaluate to False,
-        the analysis will also be performed with first letter
-        uppercased and rest lowercased.
-        If try_uppercase evaluates to not False,
-        the analysis will also be performed on all uppercase variant.
-        If try_lowercase evaluates to not False,
-        the analysis will also be performed on all lowercase variant.
+        The analysis will be performed for re-cased variants based on the
+        state of the member variables. The re-cased analyses will have more
+        penalty weight and additional analyses indicating the changes.
 
-        The analyses with case mangling will have an additional element to them
-        identifying the casing.
+        Side-Effects:
+            The analyses are stored in the token, and only raw HFST structures
+            are returned. To get more specific features in pythonic structures,
+            refer to the Token and Analysis objects.
+
+        Args:
+            token: token to be analysed.
+
+        Returns:
+            An HFST structure of raw analyses, or None if there are no matches
+            in the dictionary.
         """
         anals = self._analyse_token(token)
         if not anals:
-            anal = copy(token)
-            anal.omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' \
-                        % (token.surf)
-            anal.weight = float('inf')
-            anal.oov = "Yes"
-            anals = [anal]
+            omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
+            weight = float('inf')
+            anal = Analysis(omor, weight, "omor")
+            anal.manglers.append("GUESSER_NONE")
+            token.analyses.append(anal)
         return anals
 
     def analyse_sentence(self, s):
@@ -530,41 +526,48 @@ class Omorfi:
         return None
 
     def _guess_token(self, token):
+        '''Use HFST guesser.'''
         res = self.guesser.lookup(token.surf)
-        guesses = []
         for r in res:
-            guesstoken = copy(token)
-            guesstoken['anal'] = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
-            guesstoken['weight'] = float(r[1])
-            guesstoken['guess'] = 'FSA'
-            guesses += [guesstoken]
-        return guesses
+            anal = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
+            weight = float(r[1])
+            guess = Analysis(anal, weight, "omor")
+            guess.manglers.append("GUESSER_FSA")
+            token.analyses.append(guess)
+        return res
 
-    def _guess_heuristic(self, token):
+    def _guess_heuristic(self, token: Token):
         '''Heuristic guessing function written fully in python.
 
-        This should always be the most simple basic backoff, e.g. noun singular
-        nominative for everything.
+        This is kind of last resort, but has some basic heuristics that may
+        be always useful.
         '''
-        guesstoken = copy(token)
-        if not token.surf:
-            return [guesstoken]
         # woo advanced heuristics!!
-        if token.surf[0].isupper() and len(token.surf) > 1:
-            guesstoken.omor = '[WORD_ID=' + token.surf +\
+        guess = None
+        if len(token.surf) == 1:
+            omor = '[WORD_ID=' + token.surf +\
+                "][UPOS=SYM][GUESS=HEUR]" +\
+                "[WEIGHT=%f]" % (self._penalty)
+            weight = self._penalty
+            guess = Analysis(omor, weight, "omor")
+            guess.manglers.append('GUESSER_PYTHON_LEN1')
+        elif token.surf[0].isupper() and len(token.surf) > 1:
+            omor = '[WORD_ID=' + token.surf +\
                 "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
-            guesstoken.weight = self._penalty
-            guesstoken.guesser = 'PYTHON0ISUPPER'
+            weight = self._penalty
+            guess = Analysis(omor, weight, "omor")
+            guess.manglers.append('GUESSER_PYTHON_0ISUPPER')
         else:
-            guesstoken.omor = '[WORD_ID=' + token.surf +\
+            omor = '[WORD_ID=' + token.surf +\
                 "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
-            guesstoken.weight = self._penalty
-            guesstoken.guesser = 'PYTHONELSE'
-        return [guesstoken]
+            weight = self._penalty
+            guess = Analysis(omor, weight, "omor")
+            guess.manglers.append('GUESSER_PYTHON_ELSE')
+        return [guess]
 
-    def guess(self, token):
+    def guess(self, token: Token):
         '''Speculate morphological analyses of OOV token.
 
         This method may use multiple information sources, but not the actual
@@ -572,6 +575,16 @@ class Omorfi:
         function has failed. Note that some information sources perform badly
         when guessing without context, for these the analyse_sentence(sent) is
         the only option.
+
+        Side-effect:
+            This operation stores guesses in token for future use as well as
+            returning them.
+
+        Args:
+            token: token to analyse with guessers.
+
+        Returns:
+            New guesses as a list of Analysis objects.
         '''
         guesses = self._guess_heuristic(token)
         if self.can_udpipe:
@@ -582,93 +595,117 @@ class Omorfi:
 
     def _lemmatise(self, token):
         res = self.lemmatiser.lookup(token.surf)
-        lemmas = []
         for r in res:
-            lemmatoken = copy(token)
-            lemmatoken.lemma = r[0]
-            lemmatoken.lemmaweight = float(r[1])
-            lemmas += [lemmatoken]
-        return lemmas
+            lemma = r[0]
+            weight = float(r[1])
+            anal = Analysis(lemma, weight, "lemma")
+            token.analyses.append(anal)
+        return res
 
-    def lemmatise(self, token):
-        '''Lemmatise a token, returning a dictionary ID.
+    def lemmatise(self, token: Token):
+        '''Lemmatise token, splitting it into valid word id's from lexical db.
 
-        Like morphological analysis, can return more than one results, which
-        are possible (combinations of) lexeme ids. If the token is not in the
-        dictionary, the surface form is returned as most likely "lemma".
+        Side-effect:
+            This operation stores lemmas in the token for future use and only
+            returns HFST structures. Use Token's method's to retrieve tokens
+            in pythonic structures.
+
+        Args:
+            token: token to lemmatise
+
+        Returns:
+            A HFST strucuture of possible lemmas or None if not found in the
+            dictionary.
         '''
         lemmas = None
         lemmas = self._lemmatise(token)
         if not lemmas or len(lemmas) < 1:
-            lemmatoken = copy(token)
-            lemmatoken.lemma = lemmatoken.surf
-            lemmatoken.lemmaweight = float('inf')
-            lemmas = [lemmatoken]
-        return lemmas
+            lemma = token.surf
+            weight = float('inf')
+            guess = Analysis(lemma, weight, "lemma")
+            guess.manglers.append("GUESSER_SURFISLEMMA")
+            token.analyses.append(guess)
+        return token.analyses
 
-    def _segment(self, token):
+    def _segment(self, token: Token):
+        '''Intenal segmenting using HFST automaton.'''
         res = self.segmenter.lookup(token.surf)
-        segmenteds = []
         for r in res:
-            segmenttoken = copy(token)
-            segmenttoken.segments = r[0]
-            segmenttoken.segmentweight = float(r[1])
-            segmenteds += [segmenttoken]
-        return segmenteds
+            segments = r[0]
+            weight = float(r[1])
+            anal = Analysis(segments, weight, "segments")
+            token.analyses.append(anal)
+        return res
 
-    def segment(self, token):
+    def segment(self, token: Token):
         '''Segment token into morphs, words and other string pieces.
 
-        The segments come separated by some internal markers for different
-        segment boundaries.
+        **Side-effect:** this operation stores segments in the token for future
+        use and only returns the HFST structures. To get pythonic data use
+        Token's methods afterwards.
+
+        Args:
+            token: token to segment
+
+        Returns:
+            An HFST structure containing raw segmentation strings or None if
+            the dictionary couldn't segment the token.
         '''
         segments = None
         segments = self._segment(token)
         if not segments or len(segments) < 1:
-            segmenttoken = copy(token)
-            segmenttoken.segments = segmenttoken.surf
-            segments = [segmenttoken]
+            segments = token.surf
+            weight = float('inf')
+            guess = Analysis(segments, weight, "segments")
+            guess.manglers.append("GUESSER_SURFISSEGMENT")
+            token.analyses.append(guess)
         return segments
 
-    def _labelsegment(self, token):
+    def _labelsegment(self, token: Token):
+        '''Internal implementation of segment label lookup with FSA.'''
         res = self.labelsegmenter.lookup(token.surf)
-        lss = []
         for r in res:
-            lstoken = copy(token)
-            lstoken.labelsegments = r[0]
-            lstoken.lsweight = float(r[1])
-            lss += [lstoken]
-        return lss
+            labelsegments = r[0]
+            weight = float(r[1])
+            anal = Analysis(labelsegments, weight, "labelsegments")
+            token.analyses.append(anal)
+        return res
 
-    def labelsegment(self, token):
+    def labelsegment(self, token: Token):
         '''Segment token into labelled morphs, words and other string pieces.
 
         The segments are suffixed with their morphologically relevant
         informations, e.g. lexical classes for root lexemes and inflectional
         features for inflectional segments. This functionality is experimental
         due to hacky way it was patched together.
+
+        Note that this operation stores the labelsegments in the token for
+        future use, and only returns raw HFST structures. To get pythonic
+        you can use Token's methods afterwards.
+
+        Args:
+            token: token to segment with labels
+
+        Returns:
+            HFST structure containing raw labelsegments or None if dictionary
+            couldn't segment the token.
         '''
         labelsegments = None
         labelsegments = self._labelsegment(token)
         if not labelsegments or len(labelsegments) < 1:
-            lstoken = copy(token)
-            lstoken.labelsegments = lstoken.surf
-            lstoken.lsweight = float('inf')
-            labelsegments = [lstoken]
+            labelsegments = token.surf + "|UNK"
+            lsweight = float('inf')
+            guess = Analysis(labelsegments, lsweight, "labelsegments")
+            guess.manglers.append("GUESSER_SURFISLABELS")
+            token.analyses.append(guess)
         return labelsegments
 
     def _accept(self, token):
         """Look up token from acceptor model."""
         if self.acceptor:
-            if token.analsurf:
-                res = self.acceptor.lookup(token.analsurf)
-            else:
-                res = self.acceptor.lookup(token.surf)
+            res = self.acceptor.lookup(token.surf)
         elif self.analyser:
-            if token.analsurf:
-                res = self.analyser.lookup(token.analsurf)
-            else:
-                res = self.analyser.lookup(token.surf)
+            res = self.analyser.lookup(token.surf)
         else:
             res = None
         return res
@@ -679,33 +716,33 @@ class Omorfi:
         Returns False for OOVs, True otherwise. Note, that this is not
         necessarily more efficient than analyse(token)
         '''
-        return self._accept(token)
+        return bool(self._accept(token))
 
-    def _generate(self, token):
-        res = self.generator.lookup(token.omor)
+    def _generate(self, s):
+        res = self.generator.lookup(s)
         generations = []
         for r in res:
-            g = copy(token)
-            g.surf = r[0]
-            g.genweight = r[1]
-            generations += [g]
-        return generations
+            generations += [r[0]]
+        return "/".join(generations)
 
-    def generate(self, omorstring):
+    def generate(self, omorstring: str):
         '''Generate surface forms corresponding given token description.
 
         Currently only supports very direct omor style analysis string
-        generation. For round-tripping and API consistency you can also feed a
-        token dict here.
+        generation.
+
+        Args:
+            omorstring: Omorfi analysis string to generate
+
+        Returns
+            A surface string word-form, or the omorstring argument if
+            generation fails. Or None if generator is not loaded.
         '''
-        gentoken = Token()
-        gentoken.omor = omorstring
+        generated = None
         if self.can_generate:
-            generated = self._generate(gentoken)
+            generated = self._generate(omorstring)
             if not generated:
-                gentoken.surf = gentoken.omor
-                gentoken.genweight = float('inf')
-                generated = [gentoken]
+                return omorstring
         return generated
 
     def _udpipe(self, udinput):

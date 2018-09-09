@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""Command-line interface for omorfi analysis in VISL CG-3 formats."""
 
 # string munging
 from argparse import ArgumentParser, FileType
@@ -10,13 +11,7 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi import Omorfi
-from omorfi.token import is_tokenlist_oov
-
-
-def print_analyses_vislcg3(surf, anals, outfile):
-    print('"<%s>"' % (anals[0].surf), file=outfile)
-    for anal in anals:
-        print(anal.printable_vislcg(), file=outfile)
+from omorfi.fileformats import next_conllu, next_vislcg, next_plaintext
 
 
 def main():
@@ -65,11 +60,11 @@ def main():
     eoffed = False
     while not eoffed:
         if options.format == 'vislcg':
-            tokens = omorfi.tokenise_vislcg(options.infile)
+            tokens = next_vislcg(options.infile)
         elif options.format == 'text':
-            tokens = omorfi.tokenise_plaintext(options.infile)
+            tokens = next_plaintext(options.infile)
         elif options.format == 'conllu':
-            tokens = omorfi.tokenise_conllu(options.infile)
+            tokens = next_conllu(options.infile)
         else:
             print("input format missing implementation", options.format,
                   file=stderr)
@@ -93,11 +88,11 @@ def main():
                     exit(2)
             elif token.surf:
                 tokencount += 1
-                anals = omorfi.analyse(token)
-                if is_tokenlist_oov(anals):
+                omorfi.analyse(token)
+                if token.is_oov():
                     unknowns += 1
-                    anals = omorfi.guess(token)
-                print_analyses_vislcg3(token, anals, options.outfile)
+                    omorfi.guess(token)
+                print(token.printable_vislcg(), file=options.outfile)
             else:
                 print("Unrecognised", token, file=stderr)
                 exit(2)

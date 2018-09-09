@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""A command-line interface for omorfi with CONLL-U I/O formats."""
+
 # string munging
 from argparse import ArgumentParser, FileType
 # CLI stuff
@@ -10,17 +12,23 @@ from time import perf_counter, process_time
 
 # omorfi
 from omorfi import Omorfi
-from omorfi.token import is_tokenlist_oov
+from omorfi.fileformats import next_conllu
 
 
-def try_analyses_conllu(anals, outfile, hacks=None):
-    if not anals[0]._conllu:
-        print("Oracle data missing from", anals[0].surf)
+def get_reference_conllu_list(token):
+    if not token.gold:
+        print("Oracle data missing from", token, file=stderr)
         exit(2)
-    original = anals[0]._conllu
+    else:
+        return token.gold.split("\t")
+
+
+def try_analyses_conllu(token, outfile, hacks=None):
+    anals = token.analyses
+    original = get_reference_conllu_list(token)
     best = None
     highest = -1
-    for anal in anals:
+    for i, anal in enumerate(anals):
         upos = anal.get_upos()
         feats = anal.printable_ud_feats()
         lemmas = anal.get_lemmas()
@@ -35,21 +43,33 @@ def try_analyses_conllu(anals, outfile, hacks=None):
             score += 10
         elif lemma.strip('#') == original[2].strip('#'):
             score += 5
+        elif lemma.lower() == original[2].lower():
+            score += 5
         if feats == original[5]:
             score += 10
+        else:
+            featset = set(feats.split("|"))
+            refset = set(original[5].split("|"))
+            score += len(featset.intersection(refset))
         if score > highest:
-            best = anal
+            best = i
             highest = score
-    return print_analyses_conllu(best, outfile, hacks)
+    return print_analyses_conllu(token, outfile, hacks, best)
 
 
-def debug_analyses_conllu(anals, outfile, hacks=None):
-    print("# REFERENCE(python):", anals[0]._conllu, file=outfile)
+def debug_analyses_conllu(token, outfile, hacks=None):
+    anals = token.analyses
+    print("# REFERENCE(python):", get_reference_conllu_list(token),
+          file=outfile)
     for anal in anals:
         print_analyses_conllu(anal, outfile, hacks)
 
 
-def print_analyses_conllu(anal, outfile, hacks=None):
+def print_analyses_conllu(token, outfile, hacks=None, best=0):
+    anal = token.analyses[best]
+    if anal.name != 'omor':
+        print("Trying to omorprint non-omor analysis", anal, file=stderr)
+        exit(1)
     upos = anal.get_upos()
     if not upos or upos == "":
         upos = 'X'
@@ -62,7 +82,7 @@ def print_analyses_conllu(anal, outfile, hacks=None):
         lemma = '_'
     else:
         lemma = '#'.join(anal.get_lemmas())
-    print(anal.pos, anal.surf, lemma, upos, third,
+    print(token.pos, token.surf, lemma, upos, third,
           anal.printable_ud_feats(hacks),
           "_", "_", "_", anal.printable_ud_misc(), sep="\t", file=outfile)
 
@@ -132,7 +152,7 @@ def main():
     sentences = 0
     eoffed = False
     while not eoffed:
-        sentplus = omorfi.tokenise_conllu(options.infile)
+        sentplus = next_conllu(options.infile)
         if not sentplus:
             eoffed = True
             break
@@ -157,22 +177,16 @@ def main():
                 print("No surface in CONLL-U?", token, file=stderr)
                 exit(1)
             tokens += 1
-            anals = omorfi.analyse(token)
-            if is_tokenlist_oov(anals):
+            omorfi.analyse(token)
+            if token.is_oov():
                 unknowns += 1
-                anals = omorfi.guess(token)
-            if anals:
-                if options.debug:
-                    debug_analyses_conllu(anals, options.outfile,
-                                          options.hacks)
-                elif options.oracle:
-                    try_analyses_conllu(anals, options.outfile, options.hacks)
-                else:
-                    print_analyses_conllu(anals[0], options.outfile,
-                                          options.hacks)
+                omorfi.guess(token)
+            if options.debug:
+                debug_analyses_conllu(token, options.outfile, options.hacks)
+            elif options.oracle:
+                try_analyses_conllu(token, options.outfile, options.hacks)
             else:
-                print("???", file=stderr)
-                exit(1)
+                print_analyses_conllu(token, options.outfile, options.hacks)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Sentences:", sentences,

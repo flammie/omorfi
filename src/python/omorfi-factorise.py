@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import re
+"""Command-line interface to create moses factored analyses with omorfi."""
+
 from argparse import ArgumentParser
 from sys import stdin, stdout, stderr
 
@@ -61,20 +62,20 @@ def main():
             if not token.surf:
                 continue
             anals = omorfi.analyse(token)
+            pos = "X"
+            mrds = ["?"]
+            lemmas = [token.surf]
+            if anals:
+                anal = token.get_best("omor")
+                pos = anal.get_upos()
+                mrds = anal.get_last_feats()
+                lemmas = anal.get_lemmas()
             segments = omorfi.segment(token)
-            pos = anals[0].get_upos()
-            mrds = anals[0].get_last_feats()
-            lemmas = anals[0].get_lemmas()
-            parts = segments[0].segments
-            if '{DB}' in parts:
-                suffixes = parts[parts.rfind('{DB}')+4:]
-            elif '{WB}' in parts:
-                suffixes = parts[parts.rfind('{WB}')+4:]
-            elif '{hyph?}' in parts:
-                suffixes = parts[parts.rfind('{hyph?}')+6:]
-            else:
-                suffixes = "0"
-            morphs = suffixes[suffixes.find("{"):].replace("{MB}", ".")
+            morphs = "0"
+            if segments:
+                segment = token.get_best("segments")
+                parts = segment.get_segments()
+                morphs = ".".join(parts)
             print(token.surf, '+'.join(lemmas), pos, '.'.join(mrds),
                   morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)
