@@ -14,8 +14,6 @@ from argparse import ArgumentParser
 from sys import stderr, stdin
 from math import log
 
-from copy import copy
-
 import libhfst
 
 from .settings import fin_punct_leading, fin_punct_trailing
@@ -494,7 +492,9 @@ class Omorfi:
         if not anals:
             omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
             weight = float('inf')
-            token.analyses.append(Analysis(omor, weight, "omor"))
+            anal = Analysis(omor, weight, "omor")
+            anal.manglers.append("GUESSER_NONE")
+            token.analyses.append(anal)
         return anals
 
     def analyse_sentence(self, s):

@@ -975,6 +975,4 @@ class Analysis:
             for mangler in self.manglers:
                 if 'GUESS' in mangler.upper():
                     return True
-        if not self.name == 'omor':
-            return False
         return False
