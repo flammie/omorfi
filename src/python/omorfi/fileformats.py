@@ -9,6 +9,7 @@ from sys import stderr
 from .token import Token
 from .analysis import Analysis
 
+
 def next_plaintext(f):
     '''tokenise a line of text.
 
@@ -101,11 +102,21 @@ def next_conllu(f):
     return tokens
 
 
-def next_vislcg(f):
+def next_vislcg(f, isgold=True):
     '''Tokenises a sentence from VISL-CG format data.
 
     Returns a list of tokens when it hits first non-token block, including
-    a token representing this non-token block.
+    a token representing this non-token block. If the block contains analyses
+    as well as surface forms, they will be processed too.
+
+    Args:
+        isgold: if True, the VISL CG-3 analyses are read into token's gold
+                analysis data, otherwise they are appended to token's analyses
+                list.
+
+    Returns:
+        list of tokens found in f at its current read position, up to and
+        including next non-token found (can be EOF).
     '''
     tokens = list()
     pos = 1
@@ -134,11 +145,14 @@ def next_vislcg(f):
             pos += 1
         elif line.startswith('\t"'):
             # \t"lemma" ANAL ANAL ANAL
-            fields = line.strip().split()
-            token.lemma = fields[0].strip('"')
+            if isgold:
+                token.gold = line.strip()
+            else:
+                anal = Analysis.fromvislcg(line)
+                token.analyses.append(anal)
         elif line.startswith(';\t"'):
             # ;\t"lemma" ANAL ANAL ANAL KEYWORD:rulename
-            token.nontoken = "gold"
+            token.nontoken = "comment"
             token.comment = line.strip()
         else:
             token.nontoken = "error"
@@ -147,6 +161,7 @@ def next_vislcg(f):
     eoft.nontoken = "eof"
     tokens.append(eoft)
     return tokens
+
 
 def next_omorfi(f):
     '''Read next block in omorfi internal stream format.'''

@@ -64,7 +64,59 @@ class Analysis:
                 a.weight = float(v.strip('"'))
             else:
                 print("Cannot parse", s, "as analysis", file=stderr)
+                exit(1)
         return a
+
+    @staticmethod
+    def fromvislcg(s):
+        '''Constructs analysis from VISL-CG string.
+
+        The string should match what the method printable_vislcg creates plus
+        optional VISL CG 3 trace and such markings.
+        '''
+        fields = s.strip().split()
+        lemma = fields[0].strip('"')
+        vislcgs = []
+        omorstr = '[WORD_ID=' + lemma + ']'
+        if len(fields) < 2:
+            return omorstr
+        upos = fields[1]
+        if upos in ["NOUN", "ADJ", "VERB", "AUX", "ADP", "X", "CCONJ",
+                    "SCONJ", "DET"]:
+            omorstr += '[UPOS=' + upos + ']'
+        else:
+            print("Cannot find UPOS in VISL CG 3:", s, file=stderr)
+            exit(1)
+        if len(fields) < 3:
+            return omorstr
+        vislcgs = fields[2:]
+        for vislcg in vislcgs:
+            if vislcg in ["PRESENT", "PAST"]:
+                omorstr += '[TENSE=' + vislcg + ']'
+            elif vislcg in ["SG", "PL"]:
+                omorstr += '[NUM=' + vislcg + ']'
+            elif vislcg in ["ABE", "ABL", "ACC", "ADE", "ALL", "COM", "ELA",
+                            "ESS", "GEN", "ILL", "INE", "INS", "LAT", "NOM",
+                            "PAR", "TRA"]:
+                omorstr += "[CASE=" + vislcg + "]"
+            elif vislcg in ["CMP", "POS", "SUP"]:
+                omorstr += "[CMP=" + vislcg + "]"
+            elif vislcg in ["PRS", "DEM"]:
+                omorstr += "[PRONTYPE=" + vislcg + "]"
+            elif vislcg in ["ACT", "PSS"]:
+                omorstr += "[VOICE=" + vislcg + "]"
+            elif vislcg.startswith("POSS"):
+                omorstr += "[POSS=" + vislcg[4:] + "]"
+            elif vislcg.startswith("CLIT"):
+                omorstr += "[CLIT=" + vislcg[4:] + "]"
+            elif vislcg.startswith("PCP"):
+                omorstr += "[PCP=" + vislcg[3:] + "]"
+            elif vislcg.startswith("INF"):
+                omorstr += "[INF=" + vislcg[3:] + "]"
+            else:
+                print("Cannot parse", vislcg, "as vislcg", file=stderr)
+        anal = Analysis(omorstr, 0.0, "omor")
+        return anal
 
     def error_in_omors(self, omor, blah):
         '''Convenience function to log error and die in format handlings.'''
