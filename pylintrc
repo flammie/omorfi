@@ -1,6 +1,6 @@
 [MESSAGES CONTROL]
 
-disable=no-else-return
+disable=no-else-return, simplifiable-if-statement
 
 [FORMAT]
 
