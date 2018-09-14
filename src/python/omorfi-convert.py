@@ -8,9 +8,8 @@ from argparse import ArgumentParser, FileType
 from sys import stdin, stdout, stderr
 
 # omorfi
-from omorfi.doc import Doc
 from omorfi.fileformats import next_vislcg, next_conllu, next_plaintext,\
-                               next_omorfi
+    next_omorfi
 
 
 def main():
@@ -25,8 +24,8 @@ def main():
     a.add_argument('-I', '--informat', metavar="INFORMAT", required=True,
                    help="read input using INFORMAT tokenisation",
                    choices=['tokens', 'vislcg', 'conllu', 'omorfi'])
-    a.add_argument('-O', '--outformat', metavar='OUTFORMAT', default="json",
-                   choices=['omorfi', 'json'])
+    a.add_argument('-O', '--outformat', metavar='OUTFORMAT', default="omorfi",
+                   choices=['omorfi', 'json', 'vislcg', 'conllu'])
     options = a.parse_args()
     if not options.infile:
         options.infile = stdin
@@ -37,10 +36,9 @@ def main():
     if options.verbose:
         print("converting to", options.outfile.name)
     eoffed = False
-    doc = Doc()
     while not eoffed:
         if options.informat == 'vislcg':
-            tokens = next_vislcg(options.infile)
+            tokens = next_vislcg(options.infile, False)
         elif options.informat == 'tokens':
             tokens = next_plaintext(options.infile)
         elif options.informat == 'conllu':
@@ -52,12 +50,22 @@ def main():
                   file=stderr)
             exit(2)
         if not tokens:
+            eoffed = True
             break
-        doc.add(tokens)
         for token in tokens:
             if token.nontoken == 'eof':
                 eoffed = True
-    doc.write(options.outfile)
+                break
+            if options.outformat == 'vislcg':
+                print(token.printable_vislcg(), file=options.outfile)
+            elif options.outformat == 'conllu':
+                print(token.printable_conllu(), file=options.outfile)
+            elif options.outformat == 'omorfi':
+                print(token, file=options.outfile)
+            else:
+                print("Format implementation misisng", options.outformat,
+                      file=stderr)
+                exit(1)
     exit(0)
 
 

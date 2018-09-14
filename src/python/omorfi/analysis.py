@@ -75,17 +75,34 @@ class Analysis:
         optional VISL CG 3 trace and such markings.
         '''
         fields = s.strip().split()
+        lemma = fields[0]
+        if not fields[0].startswith('"'):
+            print("Cannot find lemma in VISL CG 3:", s, file=stderr)
+            exit(1)
+        if not fields[0].endswith('"'):
+            lemmaend = False
+            for posm1, field in enumerate(fields[1:]):
+                lemma += field
+                if field.endswith('"'):
+                    lemmaend = posm1 + 1
+                    break
+            if not lemmaend:
+                print("Cannot find lemma in VISL CG 3:", s, file=stderr)
+                exit(1)
+            fields = [lemma] + fields[lemmaend + 1:]
         lemma = fields[0].strip('"')
         vislcgs = []
         omorstr = '[WORD_ID=' + lemma + ']'
+        weight = 0.0
         if len(fields) < 2:
             return omorstr
         upos = fields[1]
-        if upos in ["NOUN", "ADJ", "VERB", "AUX", "ADP", "X", "CCONJ",
-                    "SCONJ", "DET"]:
+        if upos in ["NOUN", "ADJ", "VERB", "AUX", "ADP", "X", "CCONJ", "PRON",
+                    "SCONJ", "DET", "PROPN", "PUNCT", "SYM", "ADV", "NUM",
+                    "INTJ"]:
             omorstr += '[UPOS=' + upos + ']'
         else:
-            print("Cannot find UPOS in VISL CG 3:", s, file=stderr)
+            print("Cannot find UPOS in VISL CG 3:", fields, file=stderr)
             exit(1)
         if len(fields) < 3:
             return omorstr
@@ -99,12 +116,27 @@ class Analysis:
                             "ESS", "GEN", "ILL", "INE", "INS", "LAT", "NOM",
                             "PAR", "TRA"]:
                 omorstr += "[CASE=" + vislcg + "]"
+            elif vislcg in ["INDV", "IMPV", "COND", "POTN", "IND"]:
+                omorstr += "[MOOD=" + vislcg + "]"
+            elif vislcg in ["SG1", "SG2", "SG3", "PL1", "PL2", "PL3", "PE4"]:
+                omorstr += "[PERS=" + vislcg + "]"
             elif vislcg in ["CMP", "POS", "SUP"]:
                 omorstr += "[CMP=" + vislcg + "]"
-            elif vislcg in ["PRS", "DEM"]:
+            elif vislcg == "CONNEG":
+                omorstr += "[NEG=CON]"
+            elif vislcg in ["PRS", "DEM", "REL", "INT", "REC"]:
                 omorstr += "[PRONTYPE=" + vislcg + "]"
+            elif vislcg in ["HAN", "KO", "PA", "S", "KA", "KIN", "KAAN"]:
+                omorstr += "[CLIT=" + vislcg + "]"
+            elif vislcg in ["PREP", "POST"]:
+                omorstr += "[ADPTYPE=" + vislcg + "]"
+            elif vislcg in ["CARD", "ORD", "FRAC", "MULT"]:
+                omorstr += "[NUMTYPE=" + vislcg + "]"
             elif vislcg in ["ACT", "PSS"]:
                 omorstr += "[VOICE=" + vislcg + "]"
+            elif vislcg in ["SCONJ", "COMPARATIVE", "ADP", "SGNOM"]:
+                # XXX: hacks that shouldn't be
+                pass
             elif vislcg.startswith("POSS"):
                 omorstr += "[POSS=" + vislcg[4:] + "]"
             elif vislcg.startswith("CLIT"):
@@ -113,9 +145,15 @@ class Analysis:
                 omorstr += "[PCP=" + vislcg[3:] + "]"
             elif vislcg.startswith("INF"):
                 omorstr += "[INF=" + vislcg[3:] + "]"
+            elif vislcg.startswith("<W=") and vislcg.endswith(">"):
+                weight = float(vislcg[3:-1])
+            elif vislcg.startswith("<") and vislcg.endswith(">"):
+                # secondaries are safe to skip
+                pass
             else:
                 print("Cannot parse", vislcg, "as vislcg", file=stderr)
-        anal = Analysis(omorstr, 0.0, "omor")
+                exit(1)
+        anal = Analysis(omorstr, weight, "omor")
         return anal
 
     def error_in_omors(self, omor, blah):

@@ -214,6 +214,41 @@ class Token:
             newline = "\n"
         return vislcg
 
+    def printable_conllu(self, which="1random"):
+        '''Create CONLL-U output based on token and selected analysis.'''
+        if self.nontoken:
+            if self.nontoken == 'error':
+                return "# ERROR:" + self.error
+            elif self.nontoken == 'comment':
+                if self.comment.startswith('#'):
+                    return self.comment
+                else:
+                    return '# ' + self.comment
+            elif self.nontoken == 'separator':
+                return '\n'
+            else:
+                # ignore other nontokens??
+                return ''
+        lemma = self.surf
+        upos = 'X'
+        third = '_'
+        ud_feats = '_'
+        ud_misc = '_'
+        anal = None
+        if which == "1random":
+            if self.analyses:
+                anal = self.analyses[0]
+        if anal:
+            upos = anal.get_upos()
+            third = anal.get_xpos_tdt()
+            lemmas = anal.get_lemmas()
+            if lemmas:
+                lemma = '#'.join(lemmas)
+            ud_feats = anal.printable_ud_feats()
+            ud_misc = anal.printable_ud_misc()
+        return "\t".join([str(self.pos), self.surf, lemma, upos, third,
+                          ud_feats, "_", "_", "_", ud_misc])
+
     def get_nbest(self, n: int, name="omor"):
         """Get n most likely analyses of given type.
 

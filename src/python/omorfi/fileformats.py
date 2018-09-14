@@ -120,10 +120,13 @@ def next_vislcg(f, isgold=True):
     '''
     tokens = list()
     pos = 1
+    token = None
     for line in f:
-        token = Token()
-        line = line.strip()
+        line = line.rstrip()
         if not line or line == '':
+            if token:
+                tokens.append(token)
+            token = Token()
             token.nontoken = "separator"
             token.comment = ''
             tokens.append(token)
@@ -131,17 +134,22 @@ def next_vislcg(f, isgold=True):
         elif line.startswith("#") or line.startswith("<"):
             # # comment, or
             # <TAG> </TAG>
+            if token:
+                tokens.append(token)
+            token = Token()
             token.nontoken = "comment"
             token.comment = line.strip()
             tokens.append(token)
             return tokens
         elif line.startswith('"<') and line.endswith('>"'):
             # "<surf>"
+            if token:
+                tokens.append(token)
             token = Token()
+            token.pos = pos
             token.surf = line[2:-2]
             if pos == 1:
                 token.firstinsent = True
-            tokens.append(token)
             pos += 1
         elif line.startswith('\t"'):
             # \t"lemma" ANAL ANAL ANAL
@@ -157,6 +165,8 @@ def next_vislcg(f, isgold=True):
         else:
             token.nontoken = "error"
             token.error = 'vislcg: ' + line.strip()
+    if token:
+        tokens.append(token)
     eoft = Token()
     eoft.nontoken = "eof"
     tokens.append(eoft)
