@@ -390,14 +390,15 @@ class Omorfi:
             tokens = self.python_tokenise(line)
         return tokens
 
-    def _analyse_token(self, token: Token):
+    def _analyse(self, token: Token):
         '''Analyse token using HFST and perform recasings.'''
         # use real surface case
+        newanals = list()
         res = self.analyser.lookup(token.surf)
         for r in res:
             omor = r[0] + '[WEIGHT=%f]' % (r[1])
             weight = r[1]
-            token.analyses.append(Analysis(omor, weight, "omor"))
+            newanals.append(Analysis(omor, weight, "omor"))
         # also guess other cases
         s = token.surf
         trieds = {s}
@@ -414,9 +415,8 @@ class Omorfi:
                     anal = Analysis(omor, weight, "omor")
                     anal.manglers.append(mangler)
                     anal.analsurf = tcs
-                    token.analyses.append(anal)
+                    newanals.append(anal)
                 trieds.add(tcs)
-                res += tcres
         if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
             dts = s[0].lower() + s[1:]
             if dts not in trieds:
@@ -432,9 +432,8 @@ class Omorfi:
                     anal = Analysis(omor, weight, "omor")
                     anal.manglers.append(mangler)
                     anal.analsurf = dts
-                    token.analyses.append(anal)
+                    newanals.append(anal)
                 trieds.add(dts)
-                res += dtres
         if not s.isupper() and self.try_uppercase:
             ups = s.upper()
             if ups not in trieds:
@@ -448,7 +447,7 @@ class Omorfi:
                     anal = Analysis(omor, weight, "omor")
                     anal.manglers.append(mangler)
                     anal.analsurf = ups
-                    token.analyses.append(anal)
+                    newanals.append(anal)
                 trieds.add(ups)
                 res += upres
         if not s.islower() and self.try_lowercase:
@@ -464,10 +463,12 @@ class Omorfi:
                     anal = Analysis(omor, weight, "omor")
                     anal.manglers.append(mangler)
                     anal.analsurf = lows
-                    token.analyses.append(anal)
+                    newanals.append(anal)
                 trieds. add(lows)
                 res += lowres
-        return res
+        for a in newanals:
+            token.analyses.append(a)
+        return newanals
 
     def analyse(self, token: Token):
         """Perform a simple morphological analysis lookup.
@@ -477,9 +478,8 @@ class Omorfi:
         penalty weight and additional analyses indicating the changes.
 
         Side-Effects:
-            The analyses are stored in the token, and only raw HFST structures
-            are returned. To get more specific features in pythonic structures,
-            refer to the Token and Analysis objects.
+            The analyses are stored in the token, and only the new analyses
+            are returned.
 
         Args:
             token: token to be analysed.
@@ -488,7 +488,9 @@ class Omorfi:
             An HFST structure of raw analyses, or None if there are no matches
             in the dictionary.
         """
-        anals = self._analyse_token(token)
+        if isinstance(token, str):
+            token = Token(token)
+        anals = self._analyse(token)
         if not anals:
             omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
             weight = float('inf')
@@ -507,6 +509,7 @@ class Omorfi:
         tokens = self.tokenise_sentence(s)
         if not tokens:
             errortoken = Token()
+            errortoken.nontoken = "error"
             errortoken.error = "cannot tokenise sentence"
             errortoken.comment = {"sentence": s,
                                   "location": "analyse_sentence"}
