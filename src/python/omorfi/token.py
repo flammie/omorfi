@@ -263,7 +263,7 @@ class Token:
         if n == 0:
             n = 65535
         for anal in self.analyses:
-            if anal.name == name:
+            if anal.rawtype == name:
                 if len(nbest) < n:
                     nbest.append(anal)
                     # when filling the queue find biggest

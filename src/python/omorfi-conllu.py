@@ -67,7 +67,7 @@ def debug_analyses_conllu(token, outfile, hacks=None):
 
 def print_analyses_conllu(token, outfile, hacks=None, best=0):
     anal = token.analyses[best]
-    if anal.name != 'omor':
+    if anal.rawtype != 'omor':
         print("Trying to omorprint non-omor analysis", anal, file=stderr)
         exit(1)
     upos = anal.get_upos()

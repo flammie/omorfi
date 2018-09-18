@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Formatter to de/format omor style analyses for omrfi."""
 
-# (c) Omorfi contributors <omorfi-devel@groups.google.com> 2015
+# (c) Omorfi contributors <omorfi-devel@groups.google.com> 2015–2018
 # see AUTHORS file in top-level dir of this project, or
 # <https://github.com/flammie/omorfi/wiki/AUTHORS>
 
@@ -20,6 +20,8 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # utils to format apertium style data from omorfi database values
+
+import re
 
 from .error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
@@ -346,7 +348,6 @@ class OmorFormatter(Formatter):
         "Asa": "[ALLO=SA]",
         "Aia": "[ALLO=IA]",
         "Ata": "[ALLO=TA]",
-        "Aita": "[ALLO=ITA]",
         "Atä": "[ALLO=TÄ]",
         "Aiä": "[ALLO=IÄ]",
         "Aita": "[ALLO=ITA]",
@@ -359,7 +360,6 @@ class OmorFormatter(Formatter):
         "Aisiin": "[ALLO=ISIIN]",
         "Aien": "[ALLO=IEN]",
         "Ajen": "[ALLO=JEN]",
-        "Aten": "[ALLO=TEN]",
         "Aan": "[ALLO=AN]",
         "Aen": "[ALLO=EN]",
         "Ain": "[ALLO=IN]",
@@ -757,7 +757,8 @@ class OmorFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
 
         if self.props and wordmap['proper_noun_class']:
-            wordmap['analysis'] += self.stuff2lexc(wordmap['proper_noun_class'])
+            wordmap['analysis'] += \
+                self.stuff2lexc(wordmap['proper_noun_class'])
         if self.semantics and wordmap['sem']:
             wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
 
@@ -810,6 +811,82 @@ class OmorFormatter(Formatter):
         if False:
             root += "0   TAGGER_HACKS    ;\n"
         return root
+
+    @staticmethod
+    def get_lemmas(s, hacks=None):
+        '''Get lemma(s) from analysed token.'''
+        re_lemma = re.compile(r"\[WORD_ID=([^]]*)\]")
+        escanal = s.replace('[WORD_ID=]]',
+                            '[WORD_ID=@RIGHTSQUAREBRACKET@]')
+        lemmas = re_lemma.finditer(escanal)
+        rv = []
+        for lemma in lemmas:
+            s = lemma.group(1)
+            for i in range(32):
+                hnsuf = '_' + str(i)
+                if s.endswith(hnsuf):
+                    s = s[:-len(hnsuf)]
+            if s == '@RIGHTSQUAREBRACKET@':
+                s = ']'
+            rv += [s]
+        # legacy pron hack
+        if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
+                OmorFormatter.get_upos(s) == 'PRON' and hacks:
+            if rv[0] == 'me':
+                rv[0] = 'minä'
+            elif rv[0] == 'te':
+                rv[0] = 'sinä'
+            elif rv[0] == 'he':
+                rv[0] = 'hän'
+            elif rv[0] == 'nämä':
+                rv[0] = 'tämä'
+            elif rv[0] == 'ne':
+                rv[0] = 'se'
+        return rv
+
+    @staticmethod
+    def get_last_feat(s, feat):
+        '''Get last (effective) value for the given morphological feature.
+
+        This function tries to determine the most likely morphosyntactic
+        feature values from complex analyses, e.g. with compounds and
+        derivations the most relevant ones for the whole token.
+        '''
+        re_feat = re.compile(r"\[" + feat + r"=([^]]*)\]")
+        feats = re_feat.finditer(s)
+        rv = ""
+        for f in feats:
+            rv = f.group(1)
+        return rv
+
+    @staticmethod
+    def get_last_feats(s):
+        '''Get last (effective) value for the given morphological feature.
+
+        This function tries to determine the most likely morphosyntactic
+        feature values from complex analyses, e.g. with compounds and
+        derivations the most relevant ones for the whole token.
+        '''
+        re_feats = re.compile(r"\[[A-Z_]*=[^]]*\]")
+        rvs = list()
+        feats = re_feats.finditer(s)
+        for feat in feats:
+            if 'WORD_ID=' in feat.group(0):
+                # feats reset on word boundary
+                rvs = list()
+            else:
+                rvs.append(feat.group(0))
+        return rvs
+
+    @staticmethod
+    def get_upos(s, deriv_munging=True):
+        '''Get Universal Part-of-Speech.'''
+        upos = OmorFormatter.get_last_feat(s, "UPOS")
+        if deriv_munging:
+            drv = OmorFormatter.get_last_feat(s, "DRV")
+            if upos == 'VERB' and drv == 'MINEN':
+                upos = 'NOUN'
+        return upos
 
 
 # self test

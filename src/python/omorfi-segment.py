@@ -9,7 +9,7 @@ from omorfi import Omorfi
 def print_moses_factor_segments(token, outfile, options):
     labelsegments = None
     for anal in token.analyses:
-        if anal.name == "labelsegments":
+        if anal.rawtype == "labelsegments":
             labelsegments = anal
             break
     if not labelsegments:
@@ -22,7 +22,7 @@ def print_moses_factor_segments(token, outfile, options):
 def print_segments(token, outfile, options):
     segments = None
     for anal in token.analyses:
-        if anal.name == "segments":
+        if anal.rawtype == "segments":
             segments = anal
             break
     if not segments:
@@ -32,17 +32,19 @@ def print_segments(token, outfile, options):
         sep = ''
         for segmenteds in segments:
             print(sep, end='', file=outfile)
-            print(options.segment_marker.join(segmenteds.get_segments(
+            print(options.segment_marker.join(
+                segmenteds.get_segments(
+                    options.split_morphs, options.split_words,
+                    options.split_new_words, options.split_derivs,
+                    options.split_nonwords)),
+                  end='', file=outfile)
+            sep = options.show_ambiguous
+    else:
+        print(options.segment_marker.join(
+            segments[0].get_segments(
                 options.split_morphs, options.split_words,
                 options.split_new_words, options.split_derivs,
                 options.split_nonwords)),
-                end='', file=outfile)
-            sep = options.show_ambiguous
-    else:
-        print(options.segment_marker.join(segments[0].get_segments(
-              options.split_morphs, options.split_words,
-              options.split_new_words, options.split_derivs,
-              options.split_nonwords)),
               end='', file=outfile)
     print(' ', end='', file=outfile)
 

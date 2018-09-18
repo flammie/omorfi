@@ -9,6 +9,8 @@ Contains single hypothesis of single aspect of things.
 import re
 from sys import stderr
 
+from .omor_formatter import OmorFormatter
+
 
 class Analysis:
     """Contains a single analysis of a token.
@@ -18,34 +20,53 @@ class Analysis:
     contains segment markers.
     """
 
-    def __init__(self, raw=None, weight=float("inf"), name="omor"):
-        """Create an analysis from string and weight.
+    def __init__(self):
+        """Create an empty analysis
 
         @param raw  analysis in string form
         @param weight  penalty weight for analysis
         """
         #: underlying raw omor analysis
-        self.raw = raw
+        self.raw = None
+        #: universal part of speech
+        self.upos = None
+        #: last effective universal feats (private feats allowed, but see misc)
+        self.ufeats = dict()
+        #: misc features
+        self.misc = dict()
         #: type of analysis: omor, segmentation, lemmatisation etc.
-        self.name = name
+        self.rawtype = None
         #: FSA or similar weight
-        self.weight = weight
+        self.weight = float("inf")
         #: surface actually used for analysis (if different from parent token's
         #: surf)
         self.analsurf = None
         #: Recasers, spelling correctors and plain guessers
-        self.manglers = []
+        self.manglers = list()
+        #: lemmas
+        self.lemmas = list()
 
     def __str__(self):
         s = '"omorfi.Analysis": {'
-        s += '"name": "' + self.name + '", '
-        s += '"raw": "' + self.raw + '", '
+        if self.rawtype:
+            s += '"rawtype": "' + self.rawtype + '", '
+        if self.raw:
+            s += '"raw": "' + self.raw + '", '
         s += '"weight": "' + str(self.weight) + '"'
         s += '}'
         return s
 
+    def get_upos(self):
+        return self.upos
+
+    def get_lemmas(self):
+        return self.lemmas
+
+    def get_ufeats(self):
+        return self.ufeats
+
     @staticmethod
-    def fromstr(s):
+    def fromstr(s: str):
         '''Constructs analysis from string'''
         a = Analysis()
         if '"omorfi.Analysis":' not in s:
@@ -56,14 +77,226 @@ class Analysis:
         fields = s[start:end].split(", ")
         for field in fields:
             k, v = field.split(":")
-            if k.strip('"') == "name":
-                a.name = v.strip('"')
+            if k.strip('"') == "rawtype":
+                a.rawtype = v.strip('"')
             elif k.strip('"') == "raw":
                 a.raw = v.strip('"')
             elif k.strip('"') == "weight":
                 a.weight = float(v.strip('"'))
             else:
                 print("Cannot parse", s, "as analysis", file=stderr)
+                exit(1)
+        return a
+
+    @staticmethod
+    def fromomor(s: str, weight=float("inf"), hacks=None):
+        '''Constructs analysis form Omor style string.
+
+        Typically used to create an analysis from libhfst string and weight
+        after using omorfi HFST analyser on a surface string.
+
+        Args:
+            s       An omor-style analysis string, e.g.
+                "[WORD_ID=äh][UPOS=INTJ]"
+            weight  A penalty-weight of the analysis
+            hacks   Used for mangling some values based on some standards and
+                treebanks
+
+        Returns:
+            a token with omor analysis parsed into structured information
+        '''
+        a = Analysis()
+        a.raw = s
+        a.rawtype = "omor"
+        a.weight = weight
+        a.upos = OmorFormatter.get_upos(s)
+        a.lemmas = OmorFormatter.get_lemmas(s)
+        feats = OmorFormatter.get_last_feats(s)
+        if not feats:
+            a.feats = None
+            return a
+        a.feats = dict()
+        for f in feats:
+            key = f.split("=")[0].lstrip("[")
+            value = f.split("=")[1].rstrip("]")
+            if key == 'CASE':
+                if value == 'LAT' and hacks != 'ftb':
+                    # XXX: hack to retain compability
+                    a.feats['Number'] = 'Sing'
+                else:
+                    a.feats['Case'] = value[0] + value[1:].lower()
+            elif key == 'NUM':
+                if value == 'SG':
+                    a.feats['Number'] = 'Sing'
+                elif value == 'PL':
+                    a.feats['Number'] = 'Plur'
+            elif key == 'TENSE':
+                if 'PRESENT' in value:
+                    a.feats['Tense'] = 'Pres'
+                elif 'PAST' in value:
+                    a.feats['Tense'] = 'Past'
+            elif key == 'MOOD':
+                a.feats['VerbForm'] = 'Fin'
+                if value == 'INDV':
+                    a.feats['Mood'] = 'Ind'
+                elif value == 'COND':
+                    a.feats['Mood'] = 'Cnd'
+                elif value == 'IMPV':
+                    a.feats['Mood'] = 'Imp'
+                else:
+                    a.feats['Mood'] = value[0] + value[1:].lower()
+            elif key == 'VOICE':
+                if value == 'PSS':
+                    a.feats['Voice'] = 'Pass'
+                elif value == 'ACT':
+                    a.feats['Voice'] = 'Act'
+            elif key == 'PERS':
+                if 'SG' in value:
+                    a.feats['Number'] = 'Sing'
+                elif 'PL' in value:
+                    a.feats['Number'] = 'Plur'
+                if '1' in value:
+                    a.feats['Person'] = '1'
+                elif '2' in value:
+                    a.feats['Person'] = '2'
+                elif '3' in value:
+                    a.feats['Person'] = '3'
+            elif key == 'POSS':
+                if 'SG' in value:
+                    a.feats['Number[psor]'] = 'Sing'
+                elif 'PL' in value:
+                    a.feats['Number[psor]'] = 'Plur'
+                if '1' in value:
+                    a.feats['Person[psor]'] = '1'
+                elif '2' in value:
+                    a.feats['Person[psor]'] = '2'
+                elif '3' in value:
+                    a.feats['Person[psor]'] = '3'
+            elif key == 'NEG':
+                if value == 'CON':
+                    a.feats['Connegative'] = 'Yes'
+                    # XXX
+                    a.feats.pop('Voice')
+                elif value == 'NEG':
+                    a.feats['Polarity'] = 'Neg'
+                    a.feats['VerbForm'] = 'Fin'
+            elif key == 'PCP':
+                a.feats['VerbForm'] = 'Part'
+                if value == 'VA':
+                    a.feats['PartForm'] = 'Pres'
+                elif value == 'NUT':
+                    a.feats['PartForm'] = 'Past'
+                elif value == 'MA':
+                    a.feats['PartForm'] = 'Agent'
+                elif value == 'MATON':
+                    a.feats['PartForm'] = 'Neg'
+            elif key == 'INF':
+                a.feats['VerbForm'] = 'Inf'
+                if value == 'A':
+                    a.feats['InfForm'] = '1'
+                elif value == 'E':
+                    a.feats['InfForm'] = '2'
+                    # XXX
+                    a.feats['Number'] = 'Sing'
+                elif value == 'MA':
+                    a.feats['InfForm'] = '3'
+                    # XXX
+                    a.feats['Number'] = 'Sing'
+                elif value == 'MINEN':
+                    a.feats['InfForm'] = '4'
+                elif value == 'MAISILLA':
+                    a.feats['InfForm'] = '5'
+            elif key == 'CMP':
+                if value == 'SUP':
+                    a.feats['Degree'] = 'Sup'
+                elif value == 'CMP':
+                    a.feats['Degree'] = 'Cmp'
+                elif value == 'POS':
+                    a.feats['Degree'] = 'Pos'
+            elif key == 'SUBCAT':
+                if value == 'NEG':
+                    a.feats['Polarity'] = 'Neg'
+                    a.feats['VerbForm'] = 'Fin'
+                elif value == 'QUANTIFIER':
+                    a.feats['PronType'] = 'Ind'
+                elif value == 'REFLEXIVE':
+                    a.feats['Reflexive'] = 'Yes'
+                elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
+                    # not annotated in UD feats:
+                    # * punctuation classes
+                    continue
+                elif value in ['DECIMAL', 'ROMAN', 'DIGIT']:
+                    # not annotated in UD feats:
+                    # * decimal, roman NumType
+                    continue
+                elif value in ['PREFIX', 'SUFFIX']:
+                    # not annotated in UD feats:
+                    # * decimal, roman NumType
+                    continue
+                else:
+                    print(key, value, 'SUBCAT', 'UD')
+                    exit(1)
+            elif key == 'ABBR':
+                # XXX?
+                a.feats['Abbr'] = 'Yes'
+            elif key == 'NUMTYPE':
+                a.feats['NumType'] = value[0] + value[1:].lower()
+            elif key == 'PRONTYPE':
+                a.feats['PronType'] = value[0] + value[1:].lower()
+            elif key == 'ADPTYPE':
+                a.feats['AdpType'] = value[0] + value[1:].lower()
+            elif key == 'CLIT':
+                a.feats['Clitic'] = value[0] + value[1:].lower()
+            elif key == 'FOREIGN':
+                a.feats['Foreign'] = value[0] + value[1:].lower()
+            elif key == 'STYLE':
+                if value in ['DIALECTAL', 'COLLOQUIAL']:
+                    a.feats['Style'] = 'Coll'
+                elif value == 'NONSTANDARD':
+                    # XXX: Non-standard spelling is kind of a typo?
+                    # e.g. seitsämän -> seitsemän
+                    a.feats['Typo'] = 'Yes'
+                elif value == 'ARCHAIC':
+                    a.feats['Style'] = 'Arch'
+                elif value == 'RARE':
+                    continue
+                else:
+                    print(key, value, 'STYLE', 'UD')
+                    exit(1)
+            elif key in ['DRV', 'LEX']:
+                if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
+                             'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
+                    # values found in UD finnish Derivs
+                    a.feats['Derivation'] = value[0] + value[1:].lower()
+                elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE',
+                               'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²',
+                               'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA',
+                               'TAVA', 'MA', 'LOC', 'LA']:
+                    # valuse not found in UD finnish Derivs
+                    continue
+                else:
+                    print(key, value, 'UD')
+                    exit(1)
+            elif key == 'BLACKLIST':
+                continue
+            elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
+                         'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ',
+                         'BOUNDARY']:
+                # Not feats in UD:
+                # * UPOS is another field
+                # * Allomorphy is ignored
+                # * Weight = no probabilities
+                # * No feats for recasing
+                # * FIXME: lexicalised inflection usually not a feat
+                # * Guessering not a feat
+                # * Proper noun classification not a feat
+                # * punct sidedness is not a feat
+                # * XXX: sem has not been used as a feat?
+                # * special CONJ comparative is not used in UD
+                # * clause / sentence boundary tag ignored
+                continue
+            else:
+                print(key, value, 'UD')
                 exit(1)
         return a
 
@@ -156,97 +389,9 @@ class Analysis:
         anal = Analysis(omorstr, weight, "omor")
         return anal
 
-    def error_in_omors(self, omor, blah):
-        '''Convenience function to log error and die in format handlings.'''
-        if blah:
-            print(blah, file=stderr)
-        print("Unrecongised", omor, "in", self, file=stderr)
-        exit(1)
-
-    def get_lemmas(self, hacks=None):
-        '''Get lemma(s) from analysed token.'''
-        if self.name != 'omor':
-            if self.analsurf:
-                return [self.analsurf]
-            else:
-                return None
-        re_lemma = re.compile(r"\[WORD_ID=([^]]*)\]")
-        escanal = self.raw.replace('[WORD_ID=]]',
-                                   '[WORD_ID=@RIGHTSQUAREBRACKET@]')
-        lemmas = re_lemma.finditer(escanal)
-        rv = []
-        for lemma in lemmas:
-            s = lemma.group(1)
-            for i in range(32):
-                hnsuf = '_' + str(i)
-                if s.endswith(hnsuf):
-                    s = s[:-len(hnsuf)]
-            if s == '@RIGHTSQUAREBRACKET@':
-                s = ']'
-            rv += [s]
-        # legacy pron hack
-        if len(rv) == 1 and rv[0] in ['me', 'te', 'he', 'nämä', 'ne'] and\
-                self.get_upos() == 'PRON' and hacks:
-            if rv[0] == 'me':
-                rv[0] = 'minä'
-            elif rv[0] == 'te':
-                rv[0] = 'sinä'
-            elif rv[0] == 'he':
-                rv[0] = 'hän'
-            elif rv[0] == 'nämä':
-                rv[0] = 'tämä'
-            elif rv[0] == 'ne':
-                rv[0] = 'se'
-        return rv
-
-    def get_last_feat(self, feat):
-        '''Get last (effective) value for the given morphological feature.
-
-        This function tries to determine the most likely morphosyntactic
-        feature values from complex analyses, e.g. with compounds and
-        derivations the most relevant ones for the whole token.
-        '''
-        if self.name != 'omor':
-            return None
-        re_feat = re.compile(r"\[" + feat + r"=([^]]*)\]")
-        feats = re_feat.finditer(self.raw)
-        rv = ""
-        for f in feats:
-            rv = f.group(1)
-        return rv
-
-    def get_last_feats(self):
-        '''Get last (effective) value for the given morphological feature.
-
-        This function tries to determine the most likely morphosyntactic
-        feature values from complex analyses, e.g. with compounds and
-        derivations the most relevant ones for the whole token.
-        '''
-        if self.name != "omor":
-            return None
-        re_feats = re.compile(r"\[[A-Z_]*=[^]]*\]")
-        rvs = list()
-        feats = re_feats.finditer(self.raw)
-        for feat in feats:
-            if 'WORD_ID=' in feat.group(0):
-                # feats reset on word boundary
-                rvs = list()
-            else:
-                rvs.append(feat.group(0))
-        return rvs
-
-    def get_upos(self, deriv_munging=True):
-        '''Get Universal Part-of-Speech.'''
-        upos = self.get_last_feat("UPOS")
-        if deriv_munging:
-            drv = self.get_last_feat("DRV")
-            if upos == 'VERB' and drv == 'MINEN':
-                upos = 'NOUN'
-        return upos
-
     def get_ftb_feats(self):
         '''Get FTB analyses from token data.'''
-        feats = self.get_last_feats()
+        feats = self.ufeats
         rvs = list()
         rvs += [self.get_xpos_ftb()]
         if not feats:
@@ -304,7 +449,8 @@ class Analysis:
                 elif value == 'PE4':
                     rvs += ['Pe4']
                 else:
-                    self.error_in_omors(key, "for ftb")
+                    print(key, "for ftb", file=stderr)
+                    exit(1)
             elif key == 'POSS':
                 if value == 'SG1':
                     rvs += ['PxSg1']
@@ -371,7 +517,8 @@ class Analysis:
                     # * decimal, roman NumType
                     continue
                 else:
-                    self.error_in_omors('SUBCAT', 'FTB3')
+                    print(key, value, 'SUBCAT', 'FTB3')
+                    exit(1)
             elif key == 'NUMTYPE':
                 if 'Digit' not in rvs:
                     rvs += [value[0] + value[1:].lower()]
@@ -386,7 +533,8 @@ class Analysis:
                 elif value == 'PREP':
                     rvs += ['Pr']
                 else:
-                    self.error_in_omors('ADPTYPE', 'FTB3')
+                    print(key, value, 'ADPTYPE', 'FTB3')
+                    exit(1)
             elif key == 'CLIT':
                 rvs += [value[0] + value[1:].lower()]
             elif key == 'ABBR':
@@ -404,7 +552,8 @@ class Analysis:
                          'POSITION', "FOREIGN"]:
                 continue
             else:
-                self.error_in_omors(key, 'FTB3')
+                print(key, value, 'FTB3')
+                exit(1)
         # post hacks
         if 'Neg' in rvs and 'Act' in rvs:
             revs = []
@@ -432,195 +581,9 @@ class Analysis:
             rvs = revs
         return rvs
 
-    def get_ud_feats(self, hacks=None):
-        '''Get Universal Dependencies features from analysed token.'''
-        feats = self.get_last_feats()
-        if not feats:
-            return None
-        rvs = dict()
-        for f in feats:
-            key = f.split("=")[0].lstrip("[")
-            value = f.split("=")[1].rstrip("]")
-            if key == 'CASE':
-                if value == 'LAT' and hacks != 'ftb':
-                    # XXX: hack to retain compability
-                    rvs['Number'] = 'Sing'
-                else:
-                    rvs['Case'] = value[0] + value[1:].lower()
-            elif key == 'NUM':
-                if value == 'SG':
-                    rvs['Number'] = 'Sing'
-                elif value == 'PL':
-                    rvs['Number'] = 'Plur'
-            elif key == 'TENSE':
-                if 'PRESENT' in value:
-                    rvs['Tense'] = 'Pres'
-                elif 'PAST' in value:
-                    rvs['Tense'] = 'Past'
-            elif key == 'MOOD':
-                rvs['VerbForm'] = 'Fin'
-                if value == 'INDV':
-                    rvs['Mood'] = 'Ind'
-                elif value == 'COND':
-                    rvs['Mood'] = 'Cnd'
-                elif value == 'IMPV':
-                    rvs['Mood'] = 'Imp'
-                else:
-                    rvs['Mood'] = value[0] + value[1:].lower()
-            elif key == 'VOICE':
-                if value == 'PSS':
-                    rvs['Voice'] = 'Pass'
-                elif value == 'ACT':
-                    rvs['Voice'] = 'Act'
-            elif key == 'PERS':
-                if 'SG' in value:
-                    rvs['Number'] = 'Sing'
-                elif 'PL' in value:
-                    rvs['Number'] = 'Plur'
-                if '1' in value:
-                    rvs['Person'] = '1'
-                elif '2' in value:
-                    rvs['Person'] = '2'
-                elif '3' in value:
-                    rvs['Person'] = '3'
-            elif key == 'POSS':
-                if 'SG' in value:
-                    rvs['Number[psor]'] = 'Sing'
-                elif 'PL' in value:
-                    rvs['Number[psor]'] = 'Plur'
-                if '1' in value:
-                    rvs['Person[psor]'] = '1'
-                elif '2' in value:
-                    rvs['Person[psor]'] = '2'
-                elif '3' in value:
-                    rvs['Person[psor]'] = '3'
-            elif key == 'NEG':
-                if value == 'CON':
-                    rvs['Connegative'] = 'Yes'
-                    # XXX
-                    rvs.pop('Voice')
-                elif value == 'NEG':
-                    rvs['Polarity'] = 'Neg'
-                    rvs['VerbForm'] = 'Fin'
-            elif key == 'PCP':
-                rvs['VerbForm'] = 'Part'
-                if value == 'VA':
-                    rvs['PartForm'] = 'Pres'
-                elif value == 'NUT':
-                    rvs['PartForm'] = 'Past'
-                elif value == 'MA':
-                    rvs['PartForm'] = 'Agent'
-                elif value == 'MATON':
-                    rvs['PartForm'] = 'Neg'
-            elif key == 'INF':
-                rvs['VerbForm'] = 'Inf'
-                if value == 'A':
-                    rvs['InfForm'] = '1'
-                elif value == 'E':
-                    rvs['InfForm'] = '2'
-                    # XXX
-                    rvs['Number'] = 'Sing'
-                elif value == 'MA':
-                    rvs['InfForm'] = '3'
-                    # XXX
-                    rvs['Number'] = 'Sing'
-                elif value == 'MINEN':
-                    rvs['InfForm'] = '4'
-                elif value == 'MAISILLA':
-                    rvs['InfForm'] = '5'
-            elif key == 'CMP':
-                if value == 'SUP':
-                    rvs['Degree'] = 'Sup'
-                elif value == 'CMP':
-                    rvs['Degree'] = 'Cmp'
-                elif value == 'POS':
-                    rvs['Degree'] = 'Pos'
-            elif key == 'SUBCAT':
-                if value == 'NEG':
-                    rvs['Polarity'] = 'Neg'
-                    rvs['VerbForm'] = 'Fin'
-                elif value == 'QUANTIFIER':
-                    rvs['PronType'] = 'Ind'
-                elif value == 'REFLEXIVE':
-                    rvs['Reflexive'] = 'Yes'
-                elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
-                    # not annotated in UD feats:
-                    # * punctuation classes
-                    continue
-                elif value in ['DECIMAL', 'ROMAN', 'DIGIT']:
-                    # not annotated in UD feats:
-                    # * decimal, roman NumType
-                    continue
-                elif value in ['PREFIX', 'SUFFIX']:
-                    # not annotated in UD feats:
-                    # * decimal, roman NumType
-                    continue
-                else:
-                    self.error_in_omors('SUBCAT', 'UD')
-            elif key == 'ABBR':
-                # XXX?
-                rvs['Abbr'] = 'Yes'
-            elif key == 'NUMTYPE':
-                rvs['NumType'] = value[0] + value[1:].lower()
-            elif key == 'PRONTYPE':
-                rvs['PronType'] = value[0] + value[1:].lower()
-            elif key == 'ADPTYPE':
-                rvs['AdpType'] = value[0] + value[1:].lower()
-            elif key == 'CLIT':
-                rvs['Clitic'] = value[0] + value[1:].lower()
-            elif key == 'FOREIGN':
-                rvs['Foreign'] = value[0] + value[1:].lower()
-            elif key == 'STYLE':
-                if value in ['DIALECTAL', 'COLLOQUIAL']:
-                    rvs['Style'] = 'Coll'
-                elif value == 'NONSTANDARD':
-                    # XXX: Non-standard spelling is kind of a typo?
-                    # e.g. seitsämän -> seitsemän
-                    rvs['Typo'] = 'Yes'
-                elif value == 'ARCHAIC':
-                    rvs['Style'] = 'Arch'
-                elif value == 'RARE':
-                    continue
-                else:
-                    self.error_in_omors('STYLE', 'UD')
-            elif key in ['DRV', 'LEX']:
-                if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
-                             'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
-                    # values found in UD finnish Derivs
-                    rvs['Derivation'] = value[0] + value[1:].lower()
-                elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE',
-                               'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²',
-                               'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA',
-                               'TAVA', 'MA', 'LOC', 'LA']:
-                    # valuse not found in UD finnish Derivs
-                    continue
-                else:
-                    self.error_in_omors(key, 'UD')
-            elif key == 'BLACKLIST':
-                continue
-            elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
-                         'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ',
-                         'BOUNDARY']:
-                # Not feats in UD:
-                # * UPOS is another field
-                # * Allomorphy is ignored
-                # * Weight = no probabilities
-                # * No feats for recasing
-                # * FIXME: lexicalised inflection usually not a feat
-                # * Guessering not a feat
-                # * Proper noun classification not a feat
-                # * punct sidedness is not a feat
-                # * XXX: sem has not been used as a feat?
-                # * special CONJ comparative is not used in UD
-                # * clause / sentence boundary tag ignored
-                continue
-            else:
-                self.error_in_omors(key, 'UD')
-        return rvs
-
     def get_vislcg_feats(self):
         '''Get VISL-CG 3 features from analysed token.'''
-        feats = self.get_last_feats()
+        feats = self.ufeats
         vislcgs = list()
         for feat in feats:
             key = feat.split("=")[0].strip("[")
@@ -641,7 +604,8 @@ class Analysis:
                 elif value == "SENTENCE":
                     vislcgs += ["<SENT>"]
                 else:
-                    self.error_in_omors('BOUNDARY', 'VISLCG')
+                    print(key, value, 'BOUNDARY', 'VISLCG')
+                    exit(1)
             elif key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
                          "POSITION", "ABBR", "FOREIGN", "PROPER"]:
                 # semantics, non-core morph in brackets
@@ -657,7 +621,8 @@ class Analysis:
             elif key == "BLACKLIST":
                 vislcgs += ["<**" + value + ">"]
             else:
-                self.error_in_omors(key, 'VISLCG')
+                print(key, value, 'VISLCG')
+                exit(1)
         if self.weight:
             if self.weight != float('inf'):
                 vislcgs += ["<W=" + str(int(self.weight) * 1000) + ">"]
@@ -676,7 +641,7 @@ class Analysis:
                      split_new_words=True, split_derivs=False,
                      split_nonwords=False):
         '''Get specified segments from segmented analysis.'''
-        if self.name != 'segments':
+        if self.rawtype != 'segments':
             return None
         segments = self.raw
         # this code is ugly
@@ -719,7 +684,7 @@ class Analysis:
 
     def get_moses_factor_segments(self):
         '''Create moses factors from analyses.'''
-        if self.name != 'labelsegments':
+        if self.rawtype != 'labelsegments':
             return None
         analysis = self.raw
         splat = re.split("[]{}[]", analysis)
@@ -967,7 +932,7 @@ class Analysis:
         to the UFEAT field of the connl-u data downloadable from UD web site,
         in string format.
         '''
-        rvs = self.get_ud_feats(hacks)
+        rvs = self.ufeats
         if not rvs:
             return '_'
         rv = ''
@@ -1056,7 +1021,7 @@ class Analysis:
     def printable_vislcg(self):
         '''Create VISL-CG 3 output from the token.'''
         mrds = self.get_vislcg_feats()
-        lemmas = self.get_lemmas(True)
+        lemmas = self.get_lemmas()
         return '\t"' + '#'.join(lemmas) + '" ' + ' '.join(mrds)
 
     def is_oov(self):

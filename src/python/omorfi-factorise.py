@@ -68,7 +68,7 @@ def main():
             if anals:
                 anal = token.get_best("omor")
                 pos = anal.get_upos()
-                mrds = anal.get_last_feats()
+                mrds = anal.get_ufeats()
                 lemmas = anal.get_lemmas()
             segments = omorfi.segment(token)
             morphs = "0"

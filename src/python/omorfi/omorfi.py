@@ -398,7 +398,7 @@ class Omorfi:
         for r in res:
             omor = r[0] + '[WEIGHT=%f]' % (r[1])
             weight = r[1]
-            newanals.append(Analysis(omor, weight, "omor"))
+            newanals.append(Analysis.fromomor(omor, weight))
         # also guess other cases
         s = token.surf
         trieds = {s}
@@ -412,7 +412,7 @@ class Omorfi:
                         '[CASECHANGE=TITLECASED]' + \
                         '[WEIGHT=%f]' % (r[1] + self._penalty)
                     weight = r[1] + self._penalty
-                    anal = Analysis(omor, weight, "omor")
+                    anal = Analysis.fromomor(omor, weight)
                     anal.manglers.append(mangler)
                     anal.analsurf = tcs
                     newanals.append(anal)
@@ -429,7 +429,7 @@ class Omorfi:
                     weight = r[1]
                     if token.pos != 1:
                         weight += self._penalty
-                    anal = Analysis(omor, weight, "omor")
+                    anal = Analysis.fromomor(omor, weight)
                     anal.manglers.append(mangler)
                     anal.analsurf = dts
                     newanals.append(anal)
@@ -444,7 +444,7 @@ class Omorfi:
                         "[CASECHANGE=UPPERCASED]" + \
                         "[WEIGHT=%f]" % (r[1] + self._penalty)
                     weight = r[1] + self._penalty
-                    anal = Analysis(omor, weight, "omor")
+                    anal = Analysis.fromomor(omor, weight)
                     anal.manglers.append(mangler)
                     anal.analsurf = ups
                     newanals.append(anal)
@@ -460,7 +460,7 @@ class Omorfi:
                         "[CASECHANGE=LOWERCASED]" + \
                         "[WEIGHT=%f]" % (r[1] + self._penalty)
                     weight = r[1] + self._penalty
-                    anal = Analysis(omor, weight, "omor")
+                    anal = Analysis.fromomor(omor, weight)
                     anal.manglers.append(mangler)
                     anal.analsurf = lows
                     newanals.append(anal)
@@ -494,7 +494,7 @@ class Omorfi:
         if not anals:
             omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
             weight = float('inf')
-            anal = Analysis(omor, weight, "omor")
+            anal = Analysis.fromomor(omor, weight)
             anal.manglers.append("GUESSER_NONE")
             token.analyses.append(anal)
         return anals
@@ -534,7 +534,7 @@ class Omorfi:
         for r in res:
             anal = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
             weight = float(r[1])
-            guess = Analysis(anal, weight, "omor")
+            guess = Analysis.fromomor(anal, weight)
             guess.manglers.append("GUESSER_FSA")
             token.analyses.append(guess)
         return res
@@ -552,21 +552,21 @@ class Omorfi:
                 "][UPOS=SYM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
             weight = self._penalty
-            guess = Analysis(omor, weight, "omor")
+            guess = Analysis.fromomor(omor, weight)
             guess.manglers.append('GUESSER_PYTHON_LEN1')
         elif token.surf[0].isupper() and len(token.surf) > 1:
             omor = '[WORD_ID=' + token.surf +\
                 "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
             weight = self._penalty
-            guess = Analysis(omor, weight, "omor")
+            guess = Analysis.fromomor(omor, weight)
             guess.manglers.append('GUESSER_PYTHON_0ISUPPER')
         else:
             omor = '[WORD_ID=' + token.surf +\
                 "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                 "[WEIGHT=%f]" % (self._penalty)
             weight = self._penalty
-            guess = Analysis(omor, weight, "omor")
+            guess = Analysis.fromomor(omor, weight)
             guess.manglers.append('GUESSER_PYTHON_ELSE')
         return [guess]
 
@@ -601,7 +601,10 @@ class Omorfi:
         for r in res:
             lemma = r[0]
             weight = float(r[1])
-            anal = Analysis(lemma, weight, "lemma")
+            anal = Analysis()
+            anal.raw = lemma
+            anal.rawtype = "lemma"
+            anal.weight = weight
             token.analyses.append(anal)
         return res
 
@@ -625,7 +628,10 @@ class Omorfi:
         if not lemmas or len(lemmas) < 1:
             lemma = token.surf
             weight = float('inf')
-            guess = Analysis(lemma, weight, "lemma")
+            guess = Analysis()
+            guess.raw = lemma
+            guess.rawtype = "lemma"
+            guess.ewight = weight
             guess.manglers.append("GUESSER_SURFISLEMMA")
             token.analyses.append(guess)
         return token.analyses
@@ -636,7 +642,10 @@ class Omorfi:
         for r in res:
             segments = r[0]
             weight = float(r[1])
-            anal = Analysis(segments, weight, "segments")
+            anal = Analysis()
+            anal.raw = segments
+            anal.weight = weight
+            anal.rawtype = "segments"
             token.analyses.append(anal)
         return res
 
@@ -659,7 +668,10 @@ class Omorfi:
         if not segments or len(segments) < 1:
             segments = token.surf
             weight = float('inf')
-            guess = Analysis(segments, weight, "segments")
+            guess = Analysis()
+            guess.raw = segments
+            guess.weight = weight
+            guess.rawtype = "segments"
             guess.manglers.append("GUESSER_SURFISSEGMENT")
             token.analyses.append(guess)
         return segments
@@ -670,7 +682,10 @@ class Omorfi:
         for r in res:
             labelsegments = r[0]
             weight = float(r[1])
-            anal = Analysis(labelsegments, weight, "labelsegments")
+            anal = Analysis()
+            anal.raw = labelsegments
+            anal.weight = weight
+            anal.rawtype = "labelsegments"
             token.analyses.append(anal)
         return res
 
@@ -698,7 +713,10 @@ class Omorfi:
         if not labelsegments or len(labelsegments) < 1:
             labelsegments = token.surf + "|UNK"
             lsweight = float('inf')
-            guess = Analysis(labelsegments, lsweight, "labelsegments")
+            guess = Analysis()
+            guess. raw = labelsegments
+            guess.weight = lsweight
+            guess.rawtype = "labelsegments"
             guess.manglers.append("GUESSER_SURFISLABELS")
             token.analyses.append(guess)
         return labelsegments
