@@ -28,7 +28,8 @@ def main():
                    "UFEATs or exit 1 (for testing)")
     options = a.parse_args()
     #
-    lines = 0
+    reflines = 0
+    hyplines = 0
     deplines = 0
     skiplines = 0
     # count this
@@ -41,24 +42,46 @@ def main():
     missed_deps2 = 0
     missed_misc = 0
 
-    for hypline in options.hypfile:
-        refline = next(options.reffile)
-        lines += 1
+    eoffed = False
+    while not eoffed:
+        try:
+            hypline = next(options.hypfile)
+            refline = next(options.reffile)
+        except StopIteration:
+            eoffed = True
+            break
+        reflines += 1
+        hyplines += 1
         infields = hypline.strip().split('\t')
         reffields = refline.strip().split('\t')
-        if len(infields) < 4:
-            if 'doc-name' in hypline:
-                continue
-            elif 'sentence-text' in hypline:
-                while hypline != refline:
-                    refline = next(options.reffile)
-                continue
-            elif hypline == refline:
-                continue
+        while len(infields) < 4:
+            if hypline.startswith('#') or hypline.strip() == "":
+                pass
             else:
-                print("mismatched unknown non-content! IN:", hypline,
+                print("mismatched unknown non-content! HYP:", hypline,
                       "REF:", refline, sep='\n')
                 exit(1)
+            try:
+                hypline = next(options.hypfile)
+            except StopIteration:
+                eoffed = True
+                break
+            hyplines += 1
+            infields = hypline.strip().split('\t')
+        while len(reffields) < 4:
+            if refline.startswith('#') or refline.strip() == "":
+                pass
+            else:
+                print("mismatched unknown non-content! REF:", refline,
+                      "HYP:", hypline, sep='\n')
+                exit(1)
+            try:
+                refline = next(options.reffile)
+            except StopIteration:
+                eoffed = True
+                break
+            reflines += 1
+            reffields = refline.strip().split('\t')
         if infields[0] != reffields[0]:
             if '-' in reffields[0]:
                 refline = next(options.reffile)
