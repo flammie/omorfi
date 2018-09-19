@@ -82,6 +82,8 @@ def main():
                 break
             reflines += 1
             reffields = refline.strip().split('\t')
+        if eoffed:
+            break
         if infields[0] != reffields[0]:
             if '-' in reffields[0]:
                 refline = next(options.reffile)
