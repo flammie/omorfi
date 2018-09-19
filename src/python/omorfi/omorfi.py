@@ -120,13 +120,17 @@ class Omorfi:
     def _load_hfst(self, f):
         """Load an automaton from file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f:  containing single hfst automaton binary.
+
+        Throws:
+            FileNotFoundError if file is not found
         """
         try:
             his = libhfst.HfstInputStream(f)
             return his.read()
         except libhfst.NotTransducerStreamException:
-            raise IOError
+            raise IOError(2, f) from None
 
     def load_labelsegmenter(self, f):
         """Load labeled segments model from a file.
