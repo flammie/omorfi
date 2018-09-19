@@ -113,115 +113,116 @@ class Analysis:
         a.lemmas = OmorFormatter.get_lemmas(s)
         feats = OmorFormatter.get_last_feats(s)
         if not feats:
-            a.feats = None
+            a.ufeats = None
             return a
-        a.feats = dict()
+        a.ufeats = dict()
         for f in feats:
             key = f.split("=")[0].lstrip("[")
             value = f.split("=")[1].rstrip("]")
             if key == 'CASE':
                 if value == 'LAT' and hacks != 'ftb':
                     # XXX: hack to retain compability
-                    a.feats['Number'] = 'Sing'
+                    a.ufeats['Number'] = 'Sing'
                 else:
-                    a.feats['Case'] = value[0] + value[1:].lower()
+                    a.ufeats['Case'] = value[0] + value[1:].lower()
             elif key == 'NUM':
                 if value == 'SG':
-                    a.feats['Number'] = 'Sing'
+                    a.ufeats['Number'] = 'Sing'
                 elif value == 'PL':
-                    a.feats['Number'] = 'Plur'
+                    a.ufeats['Number'] = 'Plur'
             elif key == 'TENSE':
                 if 'PRESENT' in value:
-                    a.feats['Tense'] = 'Pres'
+                    a.ufeats['Tense'] = 'Pres'
                 elif 'PAST' in value:
-                    a.feats['Tense'] = 'Past'
+                    a.ufeats['Tense'] = 'Past'
             elif key == 'MOOD':
-                a.feats['VerbForm'] = 'Fin'
+                a.ufeats['VerbForm'] = 'Fin'
                 if value == 'INDV':
-                    a.feats['Mood'] = 'Ind'
+                    a.ufeats['Mood'] = 'Ind'
                 elif value == 'COND':
-                    a.feats['Mood'] = 'Cnd'
+                    a.ufeats['Mood'] = 'Cnd'
                 elif value == 'IMPV':
-                    a.feats['Mood'] = 'Imp'
+                    a.ufeats['Mood'] = 'Imp'
                 else:
-                    a.feats['Mood'] = value[0] + value[1:].lower()
+                    a.ufeats['Mood'] = value[0] + value[1:].lower()
             elif key == 'VOICE':
                 if value == 'PSS':
-                    a.feats['Voice'] = 'Pass'
+                    a.ufeats['Voice'] = 'Pass'
                 elif value == 'ACT':
-                    a.feats['Voice'] = 'Act'
+                    a.ufeats['Voice'] = 'Act'
             elif key == 'PERS':
                 if 'SG' in value:
-                    a.feats['Number'] = 'Sing'
+                    a.ufeats['Number'] = 'Sing'
                 elif 'PL' in value:
-                    a.feats['Number'] = 'Plur'
+                    a.ufeats['Number'] = 'Plur'
                 if '1' in value:
-                    a.feats['Person'] = '1'
+                    a.ufeats['Person'] = '1'
                 elif '2' in value:
-                    a.feats['Person'] = '2'
+                    a.ufeats['Person'] = '2'
                 elif '3' in value:
-                    a.feats['Person'] = '3'
+                    a.ufeats['Person'] = '3'
             elif key == 'POSS':
                 if 'SG' in value:
-                    a.feats['Number[psor]'] = 'Sing'
+                    a.ufeats['Number[psor]'] = 'Sing'
                 elif 'PL' in value:
-                    a.feats['Number[psor]'] = 'Plur'
+                    a.ufeats['Number[psor]'] = 'Plur'
                 if '1' in value:
-                    a.feats['Person[psor]'] = '1'
+                    a.ufeats['Person[psor]'] = '1'
                 elif '2' in value:
-                    a.feats['Person[psor]'] = '2'
+                    a.ufeats['Person[psor]'] = '2'
                 elif '3' in value:
-                    a.feats['Person[psor]'] = '3'
+                    a.ufeats['Person[psor]'] = '3'
             elif key == 'NEG':
                 if value == 'CON':
-                    a.feats['Connegative'] = 'Yes'
+                    a.ufeats['Connegative'] = 'Yes'
                     # XXX
-                    a.feats.pop('Voice')
+                    a.ufeats.pop('Voice')
                 elif value == 'NEG':
-                    a.feats['Polarity'] = 'Neg'
-                    a.feats['VerbForm'] = 'Fin'
+                    a.ufeats['Polarity'] = 'Neg'
+                    a.ufeats['VerbForm'] = 'Fin'
             elif key == 'PCP':
-                a.feats['VerbForm'] = 'Part'
+                a.ufeats['VerbForm'] = 'Part'
                 if value == 'VA':
-                    a.feats['PartForm'] = 'Pres'
+                    a.ufeats['PartForm'] = 'Pres'
                 elif value == 'NUT':
-                    a.feats['PartForm'] = 'Past'
+                    a.ufeats['PartForm'] = 'Past'
                 elif value == 'MA':
-                    a.feats['PartForm'] = 'Agent'
+                    a.ufeats['PartForm'] = 'Agent'
                 elif value == 'MATON':
-                    a.feats['PartForm'] = 'Neg'
+                    a.ufeats['PartForm'] = 'Neg'
             elif key == 'INF':
-                a.feats['VerbForm'] = 'Inf'
+                a.ufeats['VerbForm'] = 'Inf'
                 if value == 'A':
-                    a.feats['InfForm'] = '1'
+                    a.ufeats['InfForm'] = '1'
                 elif value == 'E':
-                    a.feats['InfForm'] = '2'
+                    a.ufeats['InfForm'] = '2'
                     # XXX
-                    a.feats['Number'] = 'Sing'
+                    a.ufeats['Number'] = 'Sing'
                 elif value == 'MA':
-                    a.feats['InfForm'] = '3'
+                    a.ufeats['InfForm'] = '3'
                     # XXX
-                    a.feats['Number'] = 'Sing'
+                    a.ufeats['Number'] = 'Sing'
                 elif value == 'MINEN':
-                    a.feats['InfForm'] = '4'
+                    a.ufeats['InfForm'] = '4'
                 elif value == 'MAISILLA':
-                    a.feats['InfForm'] = '5'
+                    a.ufeats['InfForm'] = '5'
             elif key == 'CMP':
                 if value == 'SUP':
-                    a.feats['Degree'] = 'Sup'
+                    a.ufeats['Degree'] = 'Sup'
                 elif value == 'CMP':
-                    a.feats['Degree'] = 'Cmp'
+                    a.ufeats['Degree'] = 'Cmp'
                 elif value == 'POS':
-                    a.feats['Degree'] = 'Pos'
+                    a.ufeats['Degree'] = 'Pos'
             elif key == 'SUBCAT':
                 if value == 'NEG':
-                    a.feats['Polarity'] = 'Neg'
-                    a.feats['VerbForm'] = 'Fin'
+                    a.ufeats['Polarity'] = 'Neg'
+                    a.ufeats['VerbForm'] = 'Fin'
                 elif value == 'QUANTIFIER':
-                    a.feats['PronType'] = 'Ind'
+                    a.ufeats['PronType'] = 'Ind'
                 elif value == 'REFLEXIVE':
-                    a.feats['Reflexive'] = 'Yes'
-                elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET']:
+                    a.ufeats['Reflexive'] = 'Yes'
+                elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET',
+                               'ARROW']:
                     # not annotated in UD feats:
                     # * punctuation classes
                     continue
@@ -238,26 +239,26 @@ class Analysis:
                     exit(1)
             elif key == 'ABBR':
                 # XXX?
-                a.feats['Abbr'] = 'Yes'
+                a.ufeats['Abbr'] = 'Yes'
             elif key == 'NUMTYPE':
-                a.feats['NumType'] = value[0] + value[1:].lower()
+                a.ufeats['NumType'] = value[0] + value[1:].lower()
             elif key == 'PRONTYPE':
-                a.feats['PronType'] = value[0] + value[1:].lower()
+                a.ufeats['PronType'] = value[0] + value[1:].lower()
             elif key == 'ADPTYPE':
-                a.feats['AdpType'] = value[0] + value[1:].lower()
+                a.ufeats['AdpType'] = value[0] + value[1:].lower()
             elif key == 'CLIT':
-                a.feats['Clitic'] = value[0] + value[1:].lower()
+                a.ufeats['Clitic'] = value[0] + value[1:].lower()
             elif key == 'FOREIGN':
-                a.feats['Foreign'] = value[0] + value[1:].lower()
+                a.ufeats['Foreign'] = value[0] + value[1:].lower()
             elif key == 'STYLE':
                 if value in ['DIALECTAL', 'COLLOQUIAL']:
-                    a.feats['Style'] = 'Coll'
+                    a.ufeats['Style'] = 'Coll'
                 elif value == 'NONSTANDARD':
                     # XXX: Non-standard spelling is kind of a typo?
                     # e.g. seitsämän -> seitsemän
-                    a.feats['Typo'] = 'Yes'
+                    a.ufeats['Typo'] = 'Yes'
                 elif value == 'ARCHAIC':
-                    a.feats['Style'] = 'Arch'
+                    a.ufeats['Style'] = 'Arch'
                 elif value == 'RARE':
                     continue
                 else:
@@ -267,7 +268,7 @@ class Analysis:
                 if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
                              'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
                     # values found in UD finnish Derivs
-                    a.feats['Derivation'] = value[0] + value[1:].lower()
+                    a.ufeats['Derivation'] = value[0] + value[1:].lower()
                 elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE',
                                'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²',
                                'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA',
@@ -386,7 +387,8 @@ class Analysis:
             else:
                 print("Cannot parse", vislcg, "as vislcg", file=stderr)
                 exit(1)
-        anal = Analysis(omorstr, weight, "omor")
+        anal = Analysis.fromomor(omorstr)
+        anal.weight = weight
         return anal
 
     def get_ftb_feats(self):
@@ -396,9 +398,7 @@ class Analysis:
         rvs += [self.get_xpos_ftb()]
         if not feats:
             return rvs
-        for f in feats:
-            key = f.split("=")[0].lstrip("[")
-            value = f.split("=")[1].rstrip("]")
+        for key, value in feats.items():
             if key == 'UPOS':
                 if value == 'PROPN':
                     rvs += ['Prop']
@@ -407,10 +407,10 @@ class Analysis:
                     rvs += ['Pos', 'Man']
                 else:
                     continue
-            elif key == 'NUM':
-                if value == 'SG':
+            elif key == 'Number':
+                if value == 'Sing':
                     rvs += ['Sg']
-                elif value == 'PL':
+                elif value == 'Plur':
                     rvs += ['Pl']
             elif key == 'TENSE':
                 if 'PRESENT' in value:
@@ -585,53 +585,8 @@ class Analysis:
         '''Get VISL-CG 3 features from analysed token.'''
         feats = self.ufeats
         vislcgs = list()
-        for feat in feats:
-            key = feat.split("=")[0].strip("[")
-            value = feat.split("=")[1].strip("]")
-            if key == "SUBCAT" and value == "NEG":
-                vislcgs += ["NEG"]
-            elif key in ["CLIT", "INF", "PCP", "POSS"]:
-                # ...except when only value is too short
-                vislcgs += [key + value]
-            elif key == "NEG" and value == "CON":
-                vislcgs += ["CONNEG"]
-            elif key in ["WEIGHT", "GUESS", "CASECHANGE"]:
-                # Weights, recasing ... are handled via token features
-                pass
-            elif key == "BOUNDARY":
-                if value == "CLAUSE":
-                    vislcgs += ["<CLB>"]
-                elif value == "SENTENCE":
-                    vislcgs += ["<SENT>"]
-                else:
-                    print(key, value, 'BOUNDARY', 'VISLCG')
-                    exit(1)
-            elif key in ["ALLO", "SEM", "STYLE", "LEX", "DRV", "SUBCAT",
-                         "POSITION", "ABBR", "FOREIGN", "PROPER"]:
-                # semantics, non-core morph in brackets
-                vislcgs += ["<" + key + "_" + value + ">"]
-            elif key in ["CASE", "NUM", "PERS", "UPOS", "VOICE", "MOOD",
-                         "TENSE", "NUMTYPE", "ADPTYPE", "CLIT", "PRONTYPE",
-                         "CMP", "CONJ"]:
-                # core morph show only value as is (omor style though)
-                if value == 'LAT':
-                    pass
-                else:
-                    vislcgs += [value]
-            elif key == "BLACKLIST":
-                vislcgs += ["<**" + value + ">"]
-            else:
-                print(key, value, 'VISLCG')
-                exit(1)
-        if self.weight:
-            if self.weight != float('inf'):
-                vislcgs += ["<W=" + str(int(self.weight) * 1000) + ">"]
-        if self.manglers:
-            for mangler in self.manglers:
-                if "CASED" in mangler.upper():
-                    vislcgs += ["<*" + mangler + ">"]
-                elif "GUESS" in mangler.upper():
-                    vislcgs += ["<Heur?>", "<?" + mangler + ">"]
+        for key, value in feats.items():
+            vislcgs += [key + '=' + value]
         # number of compound parts in compound is a good CG numeric feature!!
         lemmas = self.get_lemmas()
         vislcgs += ['<CMP=' + str(len(lemmas)) + '>']
@@ -953,15 +908,14 @@ class Analysis:
         elif upos == 'ADJ':
             return 'A'
         elif upos in ['VERB', 'AUX']:
-            pcp = self.get_last_feat('DRV')
-            if pcp:
-                if pcp in ['NUT', 'TU']:
+            if 'PartForm' in self.ufeats:
+                if self.ufeats['PartForm'] == 'Past':
                     return 'PrfPrc'
-                elif pcp == 'MA':
+                elif self.ufeats['PartForm'] == 'Agent':
                     return 'AgPrc'
-                elif pcp in ['VA', 'TAVA']:
+                elif self.ufeats['PartForm'] == 'Pres':
                     return 'PrsPrc'
-                elif pcp == 'NEG':
+                elif self.ufeats['PartForm'] == 'Neg':
                     return 'NegPrc'
                 else:
                     return 'V'
