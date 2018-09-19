@@ -48,10 +48,15 @@ class Analysis:
 
     def __str__(self):
         s = '"omorfi.Analysis": {'
-        if self.rawtype:
-            s += '"rawtype": "' + self.rawtype + '", '
         if self.raw:
+            s += '"rawtype": "' + self.rawtype + '", '
             s += '"raw": "' + self.raw + '", '
+        if self.upos:
+            s += '"upos": "' + self.upos + '", '
+        if self.ufeats:
+            s += '"ufeats": "' + str(self.ufeats) + '", '
+        if self.misc:
+            s += '"misc": "' + str(self.misc) + '", '
         s += '"weight": "' + str(self.weight) + '"'
         s += '}'
         return s
@@ -130,6 +135,9 @@ class Analysis:
                     a.ufeats['Number'] = 'Sing'
                 elif value == 'PL':
                     a.ufeats['Number'] = 'Plur'
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'TENSE':
                 if 'PRESENT' in value:
                     a.ufeats['Tense'] = 'Pres'
@@ -150,28 +158,52 @@ class Analysis:
                     a.ufeats['Voice'] = 'Pass'
                 elif value == 'ACT':
                     a.ufeats['Voice'] = 'Act'
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'PERS':
                 if 'SG' in value:
                     a.ufeats['Number'] = 'Sing'
                 elif 'PL' in value:
                     a.ufeats['Number'] = 'Plur'
+                elif 'PE' in value:
+                    pass
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
                 if '1' in value:
                     a.ufeats['Person'] = '1'
                 elif '2' in value:
                     a.ufeats['Person'] = '2'
                 elif '3' in value:
                     a.ufeats['Person'] = '3'
+                elif '0' in value:
+                    a.ufeats['Person'] = '0'
+                elif '4' in value:
+                    a.misc['Person'] = '4'
+                    pass
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'POSS':
                 if 'SG' in value:
                     a.ufeats['Number[psor]'] = 'Sing'
                 elif 'PL' in value:
                     a.ufeats['Number[psor]'] = 'Plur'
+                elif value == '3':
+                    pass
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
                 if '1' in value:
                     a.ufeats['Person[psor]'] = '1'
                 elif '2' in value:
                     a.ufeats['Person[psor]'] = '2'
                 elif '3' in value:
                     a.ufeats['Person[psor]'] = '3'
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'NEG':
                 if value == 'CON':
                     a.ufeats['Connegative'] = 'Yes'
@@ -186,10 +218,13 @@ class Analysis:
                     a.ufeats['PartForm'] = 'Pres'
                 elif value == 'NUT':
                     a.ufeats['PartForm'] = 'Past'
-                elif value == 'MA':
+                elif value in ["MA", "AGENT"]:
                     a.ufeats['PartForm'] = 'Agent'
-                elif value == 'MATON':
+                elif value in ["MATON", "NEG"]:
                     a.ufeats['PartForm'] = 'Neg'
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'INF':
                 a.ufeats['VerbForm'] = 'Inf'
                 if value == 'A':
@@ -206,6 +241,9 @@ class Analysis:
                     a.ufeats['InfForm'] = '4'
                 elif value == 'MAISILLA':
                     a.ufeats['InfForm'] = '5'
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'CMP':
                 if value == 'SUP':
                     a.ufeats['Degree'] = 'Sup'
@@ -213,6 +251,9 @@ class Analysis:
                     a.ufeats['Degree'] = 'Cmp'
                 elif value == 'POS':
                     a.ufeats['Degree'] = 'Pos'
+                else:
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'SUBCAT':
                 if value == 'NEG':
                     a.ufeats['Polarity'] = 'Neg'
@@ -225,15 +266,15 @@ class Analysis:
                                'ARROW']:
                     # not annotated in UD feats:
                     # * punctuation classes
-                    continue
+                    a.misc['PunctType'] = value[0] + value[1:].lower()
                 elif value in ['DECIMAL', 'ROMAN', 'DIGIT']:
                     # not annotated in UD feats:
                     # * decimal, roman NumType
-                    continue
+                    a.misc['NumType'] = value[0] + value[1:].lower()
                 elif value in ['PREFIX', 'SUFFIX']:
                     # not annotated in UD feats:
-                    # * decimal, roman NumType
-                    continue
+                    # * Hanging prefix/suffix?
+                    a.misc['AffixType'] = value[0] + value[1:].lower()
                 else:
                     print(key, value, 'SUBCAT', 'UD')
                     exit(1)
@@ -264,7 +305,7 @@ class Analysis:
                 else:
                     print(key, value, 'STYLE', 'UD')
                     exit(1)
-            elif key in ['DRV', 'LEX']:
+            elif key == 'DRV':
                 if value in ['INEN', 'JA', 'LAINEN', 'LLINEN', 'MINEN', 'STI',
                              'TAR', 'TON', 'TTAA', 'TTAIN', 'U', 'VS']:
                     # values found in UD finnish Derivs
@@ -274,19 +315,26 @@ class Analysis:
                                'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA',
                                'TAVA', 'MA', 'LOC', 'LA']:
                     # valuse not found in UD finnish Derivs
-                    continue
+                    a.misc['Derivation'] = value[0] + value[1:].lower()
                 else:
                     print(key, value, 'UD')
                     exit(1)
+            elif key == 'LEX':
+                a.misc['Lexicalised'] = value[0] + value[1:].lower()
             elif key == 'BLACKLIST':
-                continue
+                a.misc['Blacklisted'] = value
+            elif key == 'PROPER':
+                a.misc['PropnType'] = value[0] + value[1:].lower()
+            elif key == 'POSITION':
+                a.misc['GoesWith'] = value[0] + value[1:].lower()
+            elif key == 'SEM':
+                a.misc['SemType'] = value[0] + value[1:].lower()
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
-                         'GUESS', 'PROPER', 'POSITION', 'SEM', 'CONJ',
-                         'BOUNDARY']:
+                         'GUESS', 'CONJ', 'BOUNDARY']:
                 # Not feats in UD:
                 # * UPOS is another field
                 # * Allomorphy is ignored
-                # * Weight = no probabilities
+                # * Weight = no pties
                 # * No feats for recasing
                 # * FIXME: lexicalised inflection usually not a feat
                 # * Guessering not a feat
@@ -297,7 +345,7 @@ class Analysis:
                 # * clause / sentence boundary tag ignored
                 continue
             else:
-                print(key, value, 'UD')
+                print(key, value, 'omor')
                 exit(1)
         return a
 
@@ -396,99 +444,103 @@ class Analysis:
         feats = self.ufeats
         rvs = list()
         rvs += [self.get_xpos_ftb()]
-        if not feats:
-            return rvs
+        if self.upos == 'PROPN':
+            rvs += ['Prop']
+        elif self.upos == 'ADV' and self.get_lemmas()[-1].endswith("sti"):
+            # This is FTB oddity
+            rvs += ['Pos', 'Man']
         for key, value in feats.items():
-            if key == 'UPOS':
-                if value == 'PROPN':
-                    rvs += ['Prop']
-                elif value == 'ADV' and self.get_lemmas()[-1].endswith("sti"):
-                    # This is FTB oddity
-                    rvs += ['Pos', 'Man']
-                else:
-                    continue
-            elif key == 'Number':
+            if key == 'Number':
                 if value == 'Sing':
                     rvs += ['Sg']
                 elif value == 'Plur':
                     rvs += ['Pl']
-            elif key == 'TENSE':
-                if 'PRESENT' in value:
+            elif key == 'Tense':
+                if value == 'Pres':
                     rvs += ['Prs']
-                elif 'PAST' in value:
-                    rvs += ['Past']
-            elif key == 'MOOD':
-                if value == 'INDV':
+                elif value == 'Past':
+                    rvs += ['Prt']
+            elif key == 'Mood':
+                if value == 'Ind':
                     continue
-                elif value == 'COND':
+                elif value == 'Cnd':
                     rvs += ['Cond']
-                elif value == 'IMPV':
+                elif value == 'Impv':
                     rvs += ['Imp']
                 else:
-                    rvs += [value[0] + value[1:].lower()]
-            elif key == 'VOICE':
-                if value == 'PSS':
-                    rvs += ['Pass']
-                elif value == 'ACT':
-                    rvs += ['Act']
-            elif key == 'PERS':
-                if value == 'SG0':
-                    rvs += ['Sg3']
-                elif value == 'SG1':
-                    rvs += ['Sg1']
-                elif value == 'SG2':
-                    rvs += ['Sg2']
-                elif value == 'SG3':
-                    rvs += ['Sg3']
-                elif value == 'PL1':
-                    rvs += ['Pl1']
-                elif value == 'PL2':
-                    rvs += ['Pl2']
-                elif value == 'PL3':
-                    rvs += ['Pl3']
-                elif value == 'PE4':
+                    rvs += [value]
+            elif key == 'Voice':
+                rvs += [value]
+            elif key == 'Person':
+                if value == '0':
+                    rvs += ['__3']
+                elif value == '1':
+                    rvs += ['__1']
+                elif value == '2':
+                    rvs += ['__2']
+                elif value == '3':
+                    rvs += ['__3']
+                elif value == '4':
                     rvs += ['Pe4']
                 else:
-                    print(key, "for ftb", file=stderr)
+                    print(key, value, "for ftb", file=stderr)
                     exit(1)
-            elif key == 'POSS':
-                if value == 'SG1':
-                    rvs += ['PxSg1']
-                elif value == 'SG2':
-                    rvs += ['PxSg2']
+            elif key == 'Number[psor]':
+                if value == 'Sing':
+                    rvs += ['PxSg_']
+                elif value == 'Plur':
+                    rvs += ['PxPl_']
+                else:
+                    print(key, value, "for ftb", file=stderr)
+                    exit(1)
+            elif key == 'Person[psor]':
+                if value == '1':
+                    rvs += ['Px__1']
+                elif value == '2':
+                    rvs += ['Px__2']
                 elif value == '3':
                     rvs += ['PxSp3']
-                elif value == 'PL1':
-                    rvs += ['PxPl1']
-                elif value == 'PL2':
-                    rvs += ['PxPl2']
-                elif value == 'PL3':
-                    rvs += ['PxPl3']
-            elif key == 'NEG':
-                if value == 'CON':
-                    rvs += ['ConNeg']
-                elif value == 'NEG':
+                else:
+                    print(key, value, "for ftb", file=stderr)
+                    exit(1)
+            elif key == 'Polarity':
+                if value == 'Neg':
                     rvs += ['Neg']
-            elif key == 'INF':
-                if value == 'A':
-                    rvs += ['Inf1']
-                elif value == 'E':
+                else:
+                    print(key, value, "ftb", file=stderr)
+                    exit(1)
+            elif key == 'Connegative':
+                if value == 'Yes':
+                    rvs += ['Act', 'ConNeg']
+                else:
+                    print(key, value, "ftb", file=stderr)
+                    exit(1)
+            elif key == 'InfForm':
+                if value == '1':
+                    rvs += ['Inf1', 'Lat']
+                elif value == '2':
                     rvs += ['Inf2']
-                elif value == 'MA':
+                elif value == '3':
                     rvs += ['Inf3']
                 elif value == 'MINEN':
                     rvs += ['Inf4']
                 elif value == 'MAISILLA':
                     rvs += ['Inf5']
-            elif key == 'CASE':
-                rvs += [value[0].upper() + value[1:].lower()]
-            elif key == 'CMP':
-                if value == 'SUP':
-                    rvs += ['Sup']
-                elif value == 'CMP':
-                    rvs += ['Cmp']
-                elif value == 'POS':
-                    rvs += ['Pos']
+            elif key == 'PartForm':
+                if value == 'Pres':
+                    rvs += ['PrsPrc']
+                elif value == 'Past':
+                    rvs += ['PstPrc']
+                elif value == '3':
+                    rvs += ['Inf3']
+                elif value == 'MINEN':
+                    rvs += ['Inf4']
+                elif value == 'MAISILLA':
+                    rvs += ['Inf5']
+            elif key == 'Case':
+                rvs += [value]
+            elif key == 'Degree':
+                rvs += [value]
             elif key == 'SUBCAT':
                 if value == 'NEG':
                     rvs += ['Neg']
@@ -496,87 +548,153 @@ class Analysis:
                     rvs += ['Quote']
                 elif value == 'QUANTIFIER':
                     rvs += ['Qnt']
-                elif value == 'REFLEXIVE':
-                    rvs += ['Refl']
                 elif value == 'DIGIT':
                     rvs += ['Digit']
-                elif value == 'DASH':
-                    if self.get_lemmas()[-1] == '—':
-                        rvs += ['EmDash']
-                    elif self.get_lemmas()[-1] == '–':
-                        rvs += ['EnDash']
-                    else:
-                        rvs += ['Dash']
                 elif value in ['COMMA', 'BRACKET',
                                'ARROW', 'DECIMAL', 'PREFIX', 'SUFFIX']:
-                    # not annotated in UD feats:
+                    # not annotated in FTN feats:
                     # * punctuation classes
                     continue
                 elif value == 'ROMAN':
-                    # not annotated in UD feats:
+                    # not annotated in FTN feats:
                     # * decimal, roman NumType
                     continue
                 else:
                     print(key, value, 'SUBCAT', 'FTB3')
                     exit(1)
-            elif key == 'NUMTYPE':
-                if 'Digit' not in rvs:
-                    rvs += [value[0] + value[1:].lower()]
-            elif key == 'PRONTYPE':
-                if value == 'PRS':
+            elif key == 'NumType':
+                rvs += [value]
+            elif key == 'PronType':
+                if value == 'Prs':
                     rvs += ['Pers']
+                elif value == 'Ind':
+                    rvs += ['Qnt']
                 else:
-                    rvs += [value[0] + value[1:].lower()]
-            elif key == 'ADPTYPE':
-                if value == 'POST':
+                    rvs += [value]
+            elif key == 'AdpType':
+                if value == 'Post':
                     rvs += ['Po']
-                elif value == 'PREP':
+                elif value == 'Prep':
                     rvs += ['Pr']
                 else:
                     print(key, value, 'ADPTYPE', 'FTB3')
                     exit(1)
-            elif key == 'CLIT':
-                rvs += [value[0] + value[1:].lower()]
-            elif key == 'ABBR':
+            elif key == 'Clitic':
+                rvs += [value]
+            elif key == 'Abbr':
                 rvs += ['Abbr']
-            elif key == 'DRV':
+            elif key == 'Derivation':
                 if value in ['NUT', 'VA']:
                     rvs += ['Act']
                 elif value in ['TU', 'TAVA']:
                     rvs += ['Pass']
                 else:
                     continue
+            elif key == 'Reflexive':
+                rvs += ['Refl']
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                          'GUESS', 'PROPER', 'SEM', 'CONJ', 'BOUNDARY',
-                         'PCP', 'DRV', 'LEX', 'BLACKLIST', 'STYLE', 'ABBR',
-                         'POSITION', "FOREIGN"]:
+                         'PCP', 'DRV', 'LEX', 'BLACKLIST', 'Style',
+                         'POSITION', "Foreign", 'VerbForm',
+                         'Typo']:
                 continue
             else:
                 print(key, value, 'FTB3')
                 exit(1)
+        for key, value in self.misc.items():
+            if key == 'NumType':
+                rvs += [value]
+            elif key == 'Person' and value == '4':
+                rvs += ['Pe4']
+            elif key == 'PunctType':
+                if value == "Quotation":
+                    rvs += ["Quote"]
+                elif value == "Dash":
+                    if self.get_lemmas()[-1] == '—':
+                        rvs += ['EmDash']
+                    elif self.get_lemmas()[-1] == '–':
+                        rvs += ['EnDash']
+                    else:
+                        rvs += ['Dash']
+                elif value in ["Comma", "Bracket", "Arrow"]:
+                    pass
+                else:
+                    print(key, value, 'FTB3', file=stderr)
+                    exit(1)
+            elif key == 'PropnType':
+                rvs += ["Prop"]
+            elif key in ['AffixType', "GoesWith"]:
+                # XXX
+                pass
+            elif key == 'SemType':
+                pass
+            elif key == "Derivation":
+                if value in ["Tava", "Tu"]:
+                    rvs += ["Pass"]
+                elif value in ["Va", "Nut"]:
+                    rvs += ["Act"]
+                else:
+                    pass
+            elif key in ["Lexicalised", "Blacklisted"]:
+                continue
+            else:
+                print(key, value, 'FTB3miscelse', file=stderr)
+                exit(1)
         # post hacks
+        if 'Punct' in rvs and 'Sg' in rvs and 'Nom' in rvs:
+            revs = []
+            for r in rvs:
+                if r not in ['Sg', 'Nom']:
+                    revs += [r]
+            rvs = revs
+        if '__1' in rvs or '__2' in rvs or '__3' in rvs:
+            revs = []
+            for r in rvs:
+                if r not in ['__1', '__2', '__3', 'Sg', 'Pl']:
+                    revs += [r]
+            if 'Sg' in rvs and '__1' in rvs:
+                revs += ['Sg1']
+            elif 'Sg' in rvs and '__2' in rvs:
+                revs += ['Sg2']
+            elif 'Sg' in rvs and '__3' in rvs:
+                revs += ['Sg3']
+            elif 'Pl' in rvs and '__1' in rvs:
+                revs += ['Pl1']
+            elif 'Pl' in rvs and '__2' in rvs:
+                revs += ['Pl2']
+            elif 'Pl' in rvs and '__3' in rvs:
+                revs += ['Pl3']
+            else:
+                print("__X without Sg or Pl", file=stderr)
+            rvs = revs
         if 'Neg' in rvs and 'Act' in rvs:
             revs = []
             for r in rvs:
                 if r != 'Act':
                     revs += [r]
             rvs = revs
-        elif 'Abbr' in rvs:
+        if 'Abbr' in rvs:
             revs = []
             for r in rvs:
                 if r not in ['N', 'Prop']:
                     revs += [r]
             rvs = revs
-        elif 'Inf1' in rvs:
+        if 'Inf1' in rvs:
             revs = []
             for r in rvs:
                 if r not in ['Act', 'Pl', 'Sg']:
                     revs += [r]
             rvs = revs
-        elif 'Pers' in rvs:
+        if 'Pers' in rvs:
             revs = []
             for r in rvs:
                 if r not in ['Pl1', 'Sg1', 'Pl2', 'Sg2', 'Pl3', 'Sg3']:
+                    revs += [r]
+            rvs = revs
+        if 'Card' in rvs and 'Digit' in rvs:
+            revs = []
+            for r in rvs:
+                if r != 'Card':
                     revs += [r]
             rvs = revs
         return rvs
@@ -908,14 +1026,15 @@ class Analysis:
         elif upos == 'ADJ':
             return 'A'
         elif upos in ['VERB', 'AUX']:
-            if 'PartForm' in self.ufeats:
-                if self.ufeats['PartForm'] == 'Past':
+            # this is inverse that I intended but oh well...
+            if 'Derivation' in self.misc:
+                if self.misc['Derivation'] in ['Nut', 'Tu']:
                     return 'PrfPrc'
-                elif self.ufeats['PartForm'] == 'Agent':
+                elif self.misc['Derivation'] == 'Ma':
                     return 'AgPrc'
-                elif self.ufeats['PartForm'] == 'Pres':
+                elif self.misc['Derivation'] in ['Va', 'Tava']:
                     return 'PrsPrc'
-                elif self.ufeats['PartForm'] == 'Neg':
+                elif self.misc['Derivation'] == 'Maton':
                     return 'NegPrc'
                 else:
                     return 'V'
