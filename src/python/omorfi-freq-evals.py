@@ -58,6 +58,8 @@ def main():
     full_matches = 0
     lemma_matches = 0
     anal_matches = 0
+    only_permuted = 0
+    only_rehashed = 0
     no_matches = 0
     no_results = 0
     lines = 0
@@ -98,6 +100,8 @@ def main():
             print(freq, "OOV", surf, sep='\t', file=options.outfile)
         found_anals = False
         found_lemma = False
+        rehashed = True
+        permuted = True
         for anal in token.get_nbest(0, "omor"):
             if options.format == 'ftb3.1':
                 anal_ftb3 = ' '.join(anal.get_ftb_feats())
@@ -106,6 +110,7 @@ def main():
                 analysis = analysis.replace(" >>>", "")
                 if analysis == anal_ftb3:
                     found_anals = True
+                    permuted = False
                 elif set(anal_ftb3.split()) == set(analysis.split()):
                     found_anals = True
                     print(freq, "PERMUTAHIT", analysis, anal_ftb3, sep='\t',
@@ -115,12 +120,13 @@ def main():
                           file=options.outfile)
                 if lemma == lemma_ftb3:
                     found_lemma = True
+                    rehashed = False
                 elif lemma.replace('#', '') == lemma_ftb3.replace('#', ''):
                     found_lemma = True
                     print(freq, "LEMMARECOMP", lemma, lemma_ftb3, sep='\t',
                           file=options.outfile)
                 else:
-                    print("LEMMAMISS", lemma, lemma_ftb3, sep='\t',
+                    print(freq, "LEMMAMISS", lemma, lemma_ftb3, sep='\t',
                           file=options.outfile)
         if options.format != 'coverage':
             if not found_anals and not found_lemma:
@@ -139,6 +145,10 @@ def main():
             else:
                 print("Logical error, kill everyone")
                 exit(13)
+            if rehashed:
+                only_rehashed += freq
+            if permuted:
+                only_permuted += freq
     realend = perf_counter()
     cpuend = process_time()
     print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
@@ -168,6 +178,12 @@ def main():
               no_matches / lines * 100 if lines != 0 else 0,
               no_results / lines * 100 if lines != 0 else 0,
               sep="\t", file=options.statfile)
+        print("Of which", "Tag permuations", "Lemma rehashing", sep='\t',
+              file=options.statfile)
+        print(lines / lines * 100 if lines != 0 else 0,
+              only_permuted / lines * 100 if lines != 0 else 0,
+              only_rehashed / lines * 100 if lines != 0 else 0, sep='\t',
+              file=options.statfile)
     if lines == 0:
         print("Needs more than 0 lines to determine something",
               file=stderr)
