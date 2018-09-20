@@ -21,16 +21,66 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # {{{ options
-STRICT-TAGS += NOUN VERB AUX ADJ ADV ADP PROPN PRON SYM PUNCT CCONJ SCONJ INTJ NUM
-    DET
-    NOM PAR ACC GEN INE ELA ILL ADE ABL ALL TRA INS ABE LAT ESS
-    SG PL
-    ACT PSS INDV POTN IMPV COND PRES PAST
-    INFA INFE INFMA INFMINEN
-    POSSSG1 POSSSG2 POSS3 POSSPL1 POSSPL2
-    CLITHAN CLITKO CLITPA CLITS CLITKA CLITKAAN CLITKIN
-    ORD CARD
-    NEG CONNEG
+STRICT-TAGS += 
+    UPOS=NOUN
+    UPOS=VERB
+    UPOS=AUX
+    UPOS=ADJ
+    UPOS=ADV
+    UPOS=ADP
+    UPOS=PROPN
+    UPOS=PRON
+    UPOS=SYM
+    UPOS=PUNCT
+    UPOS=CCONJ
+    UPOS=SCONJ
+    UPOS=INTJ
+    UPOS=NUM
+    UPOS=DET
+    Case=NOM
+    Case=PAR
+    Case=ACC
+    Case=GEN
+    Case=INE
+    Case=ELA
+    Case=ILL
+    Case=ADE
+    Case=ABL
+    Case=ALL
+    Case=TRA
+    Case=INS
+    Case=ABE
+    Case=LAT
+    Case=ESS
+    Number=SG
+    Number=PL
+    Voice=ACT
+    Voice=PSS
+    Mood=INDV
+    Mood=POTN
+    Mood=IMPV
+    Mood=COND
+    Tense=PRES
+    Tense=PAST
+    InfForm=1
+    InfForm=2
+    InfForm=3
+    Number[psor]=Sing
+    Number[psor]=Plur
+    Person[psor]=1
+    Person[psor]=2
+    Person[psor]=3
+    Clitic=HAN
+    Clitic=KO
+    Clitic=PA
+    Clitic=S
+    Clitic=KA
+    Clitic=KAAN
+    Clitic=KIN
+    NumType=ORD
+    NumType=CARD
+    NEG
+    CONNEG
     PCPNUT PCPVA PCPMA
     SG1 SG2 SG3 PL1 PL2 PL3 SG0
     POS CMP SUP
