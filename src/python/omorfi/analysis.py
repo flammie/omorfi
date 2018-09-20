@@ -703,6 +703,7 @@ class Analysis:
         '''Get VISL-CG 3 features from analysed token.'''
         feats = self.ufeats
         vislcgs = list()
+        vislcgs += ['UPOS=' + self.upos]
         for key, value in feats.items():
             vislcgs += [key + '=' + value]
         # number of compound parts in compound is a good CG numeric feature!!
@@ -1103,4 +1104,6 @@ class Analysis:
             for mangler in self.manglers:
                 if 'GUESS' in mangler.upper():
                     return True
+        if self.weight == float("inf"):
+            return True
         return False

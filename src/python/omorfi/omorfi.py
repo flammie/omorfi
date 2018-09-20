@@ -496,11 +496,12 @@ class Omorfi:
             token = Token(token)
         anals = self._analyse(token)
         if not anals:
-            omor = '[WORD_ID=%s][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
+            omor = '[WORD_ID=%s][UPOS=X][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
             weight = float('inf')
             anal = Analysis.fromomor(omor, weight)
             anal.manglers.append("GUESSER_NONE")
             token.analyses.append(anal)
+            return [anal]
         return anals
 
     def analyse_sentence(self, s):
@@ -572,6 +573,7 @@ class Omorfi:
             weight = self._penalty
             guess = Analysis.fromomor(omor, weight)
             guess.manglers.append('GUESSER_PYTHON_ELSE')
+        token.analyses.append(guess)
         return [guess]
 
     def guess(self, token: Token):
