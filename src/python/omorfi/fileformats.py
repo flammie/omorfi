@@ -160,8 +160,7 @@ def next_vislcg(f, isgold=True):
                 token.analyses.append(anal)
         elif line.startswith(';\t"'):
             # ;\t"lemma" ANAL ANAL ANAL KEYWORD:rulename
-            token.nontoken = "comment"
-            token.comment = line.strip()
+            pass
         else:
             token.nontoken = "error"
             token.error = 'vislcg: ' + line.strip()
