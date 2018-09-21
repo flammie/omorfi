@@ -563,12 +563,17 @@ class Analysis:
                     print(key, value, 'SUBCAT', 'FTB3')
                     exit(1)
             elif key == 'NumType':
-                rvs += [value]
+                if value == 'Ord':
+                    rvs += [value]
+                else:
+                    pass
             elif key == 'PronType':
                 if value == 'Prs':
                     rvs += ['Pers']
                 elif value == 'Ind':
                     rvs += ['Qnt']
+                elif value == 'Int':
+                    rvs += ['Interr']
                 else:
                     rvs += [value]
             elif key == 'AdpType':
@@ -580,7 +585,10 @@ class Analysis:
                     print(key, value, 'ADPTYPE', 'FTB3')
                     exit(1)
             elif key == 'Clitic':
-                rvs += [value]
+                if value == 'Ka':
+                    rvs += ['Foc_kA']
+                else:
+                    rvs += ['Foc_' + value]
             elif key == 'Abbr':
                 rvs += ['Abbr']
             elif key == 'Derivation':
@@ -641,6 +649,14 @@ class Analysis:
                 print(key, value, 'FTB3miscelse', file=stderr)
                 exit(1)
         # post hacks
+        if self.lemmas == ['ei'] and 'Foc_kA' in rvs:
+            revs = []
+            for r in rvs:
+                if r != 'V':
+                    revs += [r]
+                else:
+                    revs += ['CC']
+            rvs = revs
         if 'Punct' in rvs and 'Sg' in rvs and 'Nom' in rvs:
             revs = []
             for r in rvs:
@@ -667,6 +683,28 @@ class Analysis:
             else:
                 print("__X without Sg or Pl", file=stderr)
             rvs = revs
+        if 'Px__1' in rvs or 'Px__2' in rvs or 'Px__3' in rvs:
+            revs = []
+            for r in rvs:
+                if r not in ['Px__1', 'Px__2', 'Px__3', 'PxSg_', 'PxPl_']:
+                    revs += [r]
+            if 'PxSg_' in rvs and 'Px__1' in rvs:
+                revs += ['PxSg1']
+            elif 'PxSg_' in rvs and 'Px__2' in rvs:
+                revs += ['PxSg2']
+            elif 'PxSg_' in rvs and 'Px__3' in rvs:
+                revs += ['PxSg3']
+            elif 'PxPl_' in rvs and 'Px__1' in rvs:
+                revs += ['PxPl1']
+            elif 'PxPl_' in rvs and 'Px__2' in rvs:
+                revs += ['PxPl2']
+            elif 'PxPl_' in rvs and 'Px__3' in rvs:
+                revs += ['PxPl3']
+            elif 'Px__3' in rvs:
+                revs += ['Px3']
+            else:
+                print("__X without Sg or Pl", file=stderr)
+            rvs = revs
         if 'Neg' in rvs and 'Act' in rvs:
             revs = []
             for r in rvs:
@@ -690,6 +728,13 @@ class Analysis:
             for r in rvs:
                 if r not in ['Pl1', 'Sg1', 'Pl2', 'Sg2', 'Pl3', 'Sg3']:
                     revs += [r]
+                elif r in ['Pl1', 'Pl2', 'Pl3']:
+                    revs += ['Pl']
+                elif r in ['Sg1', 'Sg2', 'Sg3']:
+                    revs += ['Sg']
+                else:
+                    print("Logical error", r, rvs)
+                    exit(2)
             rvs = revs
         if 'Card' in rvs and 'Digit' in rvs:
             revs = []
