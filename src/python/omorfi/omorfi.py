@@ -406,7 +406,8 @@ class Omorfi:
         # also guess other cases
         s = token.surf
         trieds = {s}
-        if len(s) > 2 and s[0].islower() and self.try_titlecase:
+        if len(s) > 2 and (s[0].islower() or s[1].isupper()) and \
+                self.try_titlecase:
             tcs = s[0].upper() + s[1:].lower()
             if tcs not in trieds:
                 tcres = self.analyser.lookup(tcs)
@@ -496,7 +497,8 @@ class Omorfi:
             token = Token(token)
         anals = self._analyse(token)
         if not anals:
-            omor = '[WORD_ID=%s][UPOS=X][GUESS=UNKNOWN][WEIGHT=inf]' % (token.surf)
+            omor = '[WORD_ID=' + token.surf + '][UPOS=X]' +\
+                   '[GUESS=UNKNOWN][WEIGHT=inf]'
             weight = float('inf')
             anal = Analysis.fromomor(omor, weight)
             anal.manglers.append("GUESSER_NONE")
