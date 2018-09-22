@@ -33,6 +33,19 @@ These are the obligatory stamps of the day:
 
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
 
+## Documentation
+
+There is a [github-pages site for omorfi](//flammie.github.io/omorfi/), that
+contains both automatically generated information about omorfi and larger
+documentation, including some design rationale and historical remarks.
+
+### Academic works
+
+Some technical background is detailed also in academic papers, these are
+collected on the [articles page on
+gh-pages](//flammie.github.io/omorfi/pages/Articles.html), including
+citation information.
+
 ## Downloading and further information
 
 → See also: [Release policy](https://flammie.github.io/omorfi/pages/Releases.html)
@@ -40,9 +53,7 @@ These are the obligatory stamps of the day:
 Omorfi is currently hosted at github. [Omorfi's github
 repository](https://github.com/flammie/omorfi) contain most of the important
 information about omorfi: version control system for source codes, bug tracker
-for reporting bugs, and the stable releases as convenient packages. [Omorfi's
-gh-pages site](https://flammie.github.io/omorfi/) contain further information not
-found in this README.
+for reporting bugs, and the stable releases as convenient packages.
 
 ## Dependencies
 
