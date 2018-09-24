@@ -403,7 +403,7 @@ class Omorfi:
             omor = r[0] + '[WEIGHT=%f]' % (r[1])
             weight = r[1]
             newanals.append(Analysis.fromomor(omor, weight))
-        if not newanals and token.pos == 1 and token.surf[0].isupper()\
+        if token.pos == 1 and token.surf[0].isupper()\
                 and len(token.surf) > 1:
             res = self.analyser.lookup(token.surf[0].lower() +
                                        token.surf[1:])
@@ -441,7 +441,7 @@ class Omorfi:
                    '[GUESS=UNKNOWN][WEIGHT=inf]'
             weight = float('inf')
             anal = Analysis.fromomor(omor, weight)
-            anal.manglers.append("GUESSER_NONE")
+            anal.manglers.append("GUESSER=NONE")
             token.analyses.append(anal)
             return [anal]
         return anals
@@ -482,7 +482,7 @@ class Omorfi:
             anal = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
             weight = float(r[1])
             guess = Analysis.fromomor(anal, weight)
-            guess.manglers.append("GUESSER_FSA")
+            guess.manglers.append("GUESSER=FSA")
             token.analyses.append(guess)
         return res
 
@@ -558,7 +558,7 @@ class Omorfi:
                     anal.manglers.append(mangler)
                     anal.analsurf = lows
                     newanals.append(anal)
-                trieds. add(lows)
+                trieds.add(lows)
         if not newanals:
             if len(token.surf) == 1:
                 omor = '[WORD_ID=' + token.surf +\
@@ -566,21 +566,24 @@ class Omorfi:
                     "[WEIGHT=%f]" % (self._penalty)
                 weight = self._penalty
                 guess = Analysis.fromomor(omor, weight)
-                guess.manglers.append('GUESSER_PYTHON_LEN1')
+                guess.manglers.append('GUESSER=PYTHON_LEN1')
+                newanals.append(guess)
             elif token.surf[0].isupper() and len(token.surf) > 1:
                 omor = '[WORD_ID=' + token.surf +\
                     "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                     "[WEIGHT=%f]" % (self._penalty)
                 weight = self._penalty
                 guess = Analysis.fromomor(omor, weight)
-                guess.manglers.append('GUESSER_PYTHON_0ISUPPER')
+                guess.manglers.append('GUESSER=PYTHON_0ISUPPER')
+                newanals.append(guess)
             else:
                 omor = '[WORD_ID=' + token.surf +\
                     "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
                     "[WEIGHT=%f]" % (self._penalty)
                 weight = self._penalty
                 guess = Analysis.fromomor(omor, weight)
-                guess.manglers.append('GUESSER_PYTHON_ELSE')
+                guess.manglers.append('GUESSER=PYTHON_ELSE')
+                newanals.append(guess)
         for anal in newanals:
             token.analyses.append(anal)
         return newanals
@@ -647,7 +650,7 @@ class Omorfi:
             guess.raw = lemma
             guess.rawtype = "lemma"
             guess.ewight = weight
-            guess.manglers.append("GUESSER_SURFISLEMMA")
+            guess.manglers.append("GUESSER=SURFISLEMMA")
             token.analyses.append(guess)
         return token.analyses
 
@@ -687,7 +690,7 @@ class Omorfi:
             guess.raw = segments
             guess.weight = weight
             guess.rawtype = "segments"
-            guess.manglers.append("GUESSER_SURFISSEGMENT")
+            guess.manglers.append("GUESSER=SURFISSEGMENT")
             token.analyses.append(guess)
         return segments
 
@@ -732,7 +735,7 @@ class Omorfi:
             guess. raw = labelsegments
             guess.weight = lsweight
             guess.rawtype = "labelsegments"
-            guess.manglers.append("GUESSER_SURFISLABELS")
+            guess.manglers.append("GUESSER=SURFISLABELS")
             token.analyses.append(guess)
         return labelsegments
 

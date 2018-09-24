@@ -90,7 +90,11 @@ def main():
         if options.verbose:
             print(lines, '(', freq, ') ...', end='\r')
         token = Token(surf)
+        # pos 1 triggers acceptable detitlecasing
+        token.pos = 1
         omorfi.analyse(token)
+        if token.is_oov():
+            omorfi.guess(token)
         if not token.is_oov():
             covered += freq
             types_covered += 1

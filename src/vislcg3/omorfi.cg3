@@ -111,14 +111,15 @@ STRICT-TAGS +=
     Voice=Pss
     # Omorfi specific features
     <InfForm=4>
-    <Lexical=Sti>
+    <Lexicalised=Sti>
     <Position=Final>
     <Position=Initial>
+    <*GUESSER=NONE>
     <*lowercased>
     <*UPPERCASED>
     <*Titlecased>
     <*dETITLECASED>
-    <**PROPN-BLOCKING> ;
+    <Blacklisted=PROPN-BLOCKING> ;
 OPTIONS += no-inline-sets ;
 
 DELIMITERS = "<.>" "<!>" "<?>" ;
@@ -1013,6 +1014,8 @@ AFTER-SECTIONS # {{{ last-resorts
 ## This section is a sledgehammer for all things even slightly rare
 ## and suspicious
 
+REMOVE:no-last-resort-guesses <*GUESSER=NONE> ;
+
 ##! $ mitä jää jäljelle.
 ##! $ se on kerrassaan mahtavaa.
 ##! $ mennään suoraan sinne.
@@ -1058,7 +1061,7 @@ SELECT:adv-unless-noun-ela-agreement ADV-LIKE-NOUN-ELA (NEGATE -1 Case=Ela) ;
 SELECT:adverbs-with-rarer-nominals DEFAULT-ADV ;
 REMOVE:adjectives-rarely-possessed UPOS=ADJ + POSS ;
 REMOVE:unusual-plurals NOUNS-RARELY-PLURAL ;
-REMOVE:lexicalised-over-derived-sti Derivation=Sti (0 <Lexical=Sti>) ;
+REMOVE:lexicalised-over-derived-sti Derivation=Sti (0 <Lexicalised=Sti>) ;
 REMOVE:rare-verb-shadows-commons RARER-VERB ;
 REMOVE:rare-propn-shadows-commons RARER-PROPN ;
 REMOVE:rare-noun-shadows-commons RARER-NOUN ;
@@ -1066,7 +1069,6 @@ REMOVE:rare-adp-shadows-commons RARER-ADP ;
 REMOVE:rare-adv-shadows-commons RARER-ADV ;
 SELECT:prefer-punct-over-sym UPOS=PUNCT (0 UPOS=SYM);
 REMOVE:prefer-standard NONSTANDARDS ;
-REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 REMOVE:least-derivations DERIVATIONS ;
 SELECT:least-compounds MIN-COMPOUND ;
 SELECT:probably MIN-WEIGHT ;
@@ -1078,6 +1080,7 @@ REMOVE:avoid-sg0 Person=0 ;
 REMOVE:rare-pers-pron-forms Number=Plur (0 PERS-PRON-SG) ;
 REMOVE:adj-over-drv-va Derivation=Va (0 UPOS=ADJ) ;
 REMOVE:prefer-pri-sg3-over-imp-sg2 IMPV-SG2 (0 INDV-SG3) ;
+REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 
 SELECT:joka-over-joki JOISSA-PRON (0 JOISSA-NOUN) ;
 ##! $ heitä pidetään viisaina

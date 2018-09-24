@@ -326,7 +326,7 @@ class Analysis:
             elif key == 'PROPER':
                 a.misc['PropnType'] = value[0] + value[1:].lower()
             elif key == 'POSITION':
-                a.misc['GoesWith'] = value[0] + value[1:].lower()
+                a.misc['Position'] = value[0] + value[1:].lower()
             elif key == 'SEM':
                 a.misc['SemType'] = value[0] + value[1:].lower()
             elif key == 'COMPOUND_FORM':
@@ -633,7 +633,7 @@ class Analysis:
                     exit(1)
             elif key == 'PropnType':
                 rvs += ["Prop"]
-            elif key in ['AffixType', "GoesWith"]:
+            elif key in ['AffixType', "GoesWith", "Position"]:
                 # XXX
                 pass
             elif key == 'SemType':
@@ -748,14 +748,21 @@ class Analysis:
 
     def get_vislcg_feats(self):
         '''Get VISL-CG 3 features from analysed token.'''
-        feats = self.ufeats
         vislcgs = list()
         vislcgs += ['UPOS=' + self.upos]
-        for key, value in feats.items():
+        for key, value in self.ufeats.items():
             vislcgs += [key + '=' + value]
+        for key, value in self.misc.items():
+            vislcgs += ['<' + key + '=' + value + '>']
         # number of compound parts in compound is a good CG numeric feature!!
         lemmas = self.get_lemmas()
         vislcgs += ['<CMP=' + str(len(lemmas)) + '>']
+        if self.weight != float('inf'):
+            vislcgs += ['<W=' + str(int(self.weight * 1000)) + '>']
+        else:
+            vislcgs += ['<W=999999999999999999999999>']
+        for mangler in self.manglers:
+            vislcgs += ['<*' + mangler + '>']
         return vislcgs
 
     def get_segments(self, split_morphs=True, split_words=True,
