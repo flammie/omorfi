@@ -315,7 +315,7 @@ NOUN_ACRO_YHDISTYS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
 NOUN_ACRO_YKSI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	1
 NOUN_ACRO_YY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[YÜyüýÿ]
 NOUN_ACRO_ZET	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[ZŽzž]
-NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³ńñß]
+NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³23ńñß]
 NOUN_ACRO_ÄÄ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ääæ]
 NOUN_ACRO_ÖÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ööøõ]
 NOUN_ACRO_Ω	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
@@ -2159,6 +2159,7 @@ VERB_KANTAA	VERB	VERB	56	J	False	weaken	back	None	None	False	False	ntaa	taa
 VERB_KARHETA	VERB	VERB	72	None	False	strengthen	back	None	None	False	False	ta	ta
 VERB_KARHUTA	VERB	VERB	74	None	False	strengthen	back	None	None	False	False	ta	ta
 VERB_KASVAA	VERB	VERB	56	None	False	weaken	back	None	None	False	False	aa	aa
+VERB_KATSOA	VERB	VERB	52	None	False	weaken	back	None	None	False	False	oa	tsoa
 VERB_KAUNISTUA	VERB	VERB	52	None	False	weaken	back	None	None	False	False	ua	a
 VERB_KAVETA	VERB	VERB	72	E	False	strengthen	back	None	None	False	False	veta	veta
 VERB_KERETÄ	VERB	VERB	74	D	False	strengthen	front	None	None	False	False	etä	etä

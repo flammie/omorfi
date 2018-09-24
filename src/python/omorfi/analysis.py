@@ -329,6 +329,8 @@ class Analysis:
                 a.misc['GoesWith'] = value[0] + value[1:].lower()
             elif key == 'SEM':
                 a.misc['SemType'] = value[0] + value[1:].lower()
+            elif key == 'COMPOUND_FORM':
+                a.misc['GoesWith'] = value[0] + value[1:].lower()
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                          'GUESS', 'CONJ', 'BOUNDARY']:
                 # Not feats in UD:

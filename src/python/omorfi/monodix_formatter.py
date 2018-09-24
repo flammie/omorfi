@@ -153,6 +153,7 @@ stuff2monodix = {
     "ADVERBIAL": "cnjadv",
     "AINF_arg": "vaux",
     "ARTWORK": "",
+    "Bxxx": "-",
     "B-": "-",
     "B←": "-",
     "B→": "-",

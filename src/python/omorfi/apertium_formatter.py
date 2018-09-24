@@ -191,6 +191,7 @@ class ApertiumFormatter(Formatter):
         "ARROW": "",
         "AUX": "vaux",
         "B-": "cmp-split",
+        "Bxxx": "compound-only-L",
         "B←": "compound-only-L",
         "B→": "compound-R",
         "Bc": "cmp>+",
@@ -385,7 +386,7 @@ class ApertiumFormatter(Formatter):
         """
         ## verbosity, i.e. print while translating
         self.verbose = verbose
-        for stuff, ape in self.stuff2apertium.items():
+        for _, ape in self.stuff2apertium.items():
             if len(ape) < 2:
                 continue
             elif ape.startswith('+'):
@@ -413,11 +414,11 @@ class ApertiumFormatter(Formatter):
             if self.stuff2apertium[stuff] in ['+', '-', '#', '0', '']:
                 return self.stuff2apertium[stuff]
             elif self.stuff2apertium[stuff].startswith('+'):
-                return (lexc_escape(self.stuff2apertium[stuff]) + '%>')
+                return lexc_escape(self.stuff2apertium[stuff]) + '%>'
             elif self.stuff2apertium[stuff].endswith('+'):
-                return ('%<' + lexc_escape(self.stuff2apertium[stuff]))
+                return '%<' + lexc_escape(self.stuff2apertium[stuff])
             else:
-                return ('%<' + lexc_escape(self.stuff2apertium[stuff]) + '%>')
+                return '%<' + lexc_escape(self.stuff2apertium[stuff]) + '%>'
         else:
             fail_formatting_missing_for(stuff, "apertium")
             return ""
@@ -467,7 +468,8 @@ class ApertiumFormatter(Formatter):
         elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
-                    'analysis'] += self.stuff2lexc(wordmap['argument'] + '_arg')
+                    'analysis'] += self.stuff2lexc(wordmap['argument'] +
+                                                   '_arg')
             else:
                 wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
         elif wordmap['upos'] == 'CCONJ|VERB':
