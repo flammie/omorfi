@@ -403,74 +403,14 @@ class Omorfi:
             omor = r[0] + '[WEIGHT=%f]' % (r[1])
             weight = r[1]
             newanals.append(Analysis.fromomor(omor, weight))
-        # also guess other cases
-        s = token.surf
-        trieds = {s}
-        if len(s) > 2 and (s[0].islower() or s[1].isupper()) and \
-                self.try_titlecase:
-            tcs = s[0].upper() + s[1:].lower()
-            if tcs not in trieds:
-                tcres = self.analyser.lookup(tcs)
-                for r in tcres:
-                    mangler = 'Titlecased'
-                    omor = r[0] + \
-                        '[CASECHANGE=TITLECASED]' + \
-                        '[WEIGHT=%f]' % (r[1] + self._penalty)
-                    weight = r[1] + self._penalty
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
-                    anal.analsurf = tcs
-                    newanals.append(anal)
-                trieds.add(tcs)
-        if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
-            dts = s[0].lower() + s[1:]
-            if dts not in trieds:
-                dtres = self.analyser.lookup(dts)
-                for r in dtres:
-                    mangler = 'dETITLECASED'
-                    omor = r[0] + \
-                        "[CASECHANGE=DETITLECASED]" + \
-                        "[WEIGHT=%f]" % (r[1] + self._penalty)
-                    weight = r[1]
-                    if token.pos != 1:
-                        weight += self._penalty
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
-                    anal.analsurf = dts
-                    newanals.append(anal)
-                trieds.add(dts)
-        if not s.isupper() and self.try_uppercase:
-            ups = s.upper()
-            if ups not in trieds:
-                upres = self.analyser.lookup(ups)
-                for r in upres:
-                    mangler = 'UPPERCASED'
-                    omor = r[0] + \
-                        "[CASECHANGE=UPPERCASED]" + \
-                        "[WEIGHT=%f]" % (r[1] + self._penalty)
-                    weight = r[1] + self._penalty
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
-                    anal.analsurf = ups
-                    newanals.append(anal)
-                trieds.add(ups)
-                res += upres
-        if not s.islower() and self.try_lowercase:
-            lows = s.lower()
-            if lows not in trieds:
-                lowres = self.analyser.lookup(lows)
-                for r in lowres:
-                    mangler = 'lowercased'
-                    omor = r[0] +\
-                        "[CASECHANGE=LOWERCASED]" + \
-                        "[WEIGHT=%f]" % (r[1] + self._penalty)
-                    weight = r[1] + self._penalty
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
-                    anal.analsurf = lows
-                    newanals.append(anal)
-                trieds. add(lows)
-                res += lowres
+        if not newanals and token.pos == 1 and token.surf[0].isupper()\
+                and len(token.surf) > 1:
+            res = self.analyser.lookup(token.surf[0].lower() +
+                                       token.surf[1:])
+            for r in res:
+                omor = r[0] + '[WEIGHT=%f]' % (r[1])
+                weight = r[1]
+                newanals.append(Analysis.fromomor(omor, weight))
         for a in newanals:
             token.analyses.append(a)
         return newanals
@@ -553,30 +493,97 @@ class Omorfi:
         be always useful.
         '''
         # woo advanced heuristics!!
-        guess = None
-        if len(token.surf) == 1:
-            omor = '[WORD_ID=' + token.surf +\
-                "][UPOS=SYM][GUESS=HEUR]" +\
-                "[WEIGHT=%f]" % (self._penalty)
-            weight = self._penalty
-            guess = Analysis.fromomor(omor, weight)
-            guess.manglers.append('GUESSER_PYTHON_LEN1')
-        elif token.surf[0].isupper() and len(token.surf) > 1:
-            omor = '[WORD_ID=' + token.surf +\
-                "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                "[WEIGHT=%f]" % (self._penalty)
-            weight = self._penalty
-            guess = Analysis.fromomor(omor, weight)
-            guess.manglers.append('GUESSER_PYTHON_0ISUPPER')
-        else:
-            omor = '[WORD_ID=' + token.surf +\
-                "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
-                "[WEIGHT=%f]" % (self._penalty)
-            weight = self._penalty
-            guess = Analysis.fromomor(omor, weight)
-            guess.manglers.append('GUESSER_PYTHON_ELSE')
-        token.analyses.append(guess)
-        return [guess]
+        newanals = list()
+        s = token.surf
+        trieds = {s}
+        if len(s) > 2 and (s[0].islower() or s[1].isupper()) and \
+                self.try_titlecase:
+            tcs = s[0].upper() + s[1:].lower()
+            if tcs not in trieds:
+                tcres = self.analyser.lookup(tcs)
+                for r in tcres:
+                    mangler = 'Titlecased'
+                    omor = r[0] + \
+                        '[CASECHANGE=TITLECASED]' + \
+                        '[WEIGHT=%f]' % (r[1] + self._penalty)
+                    weight = r[1] + self._penalty
+                    anal = Analysis.fromomor(omor, weight)
+                    anal.manglers.append(mangler)
+                    anal.analsurf = tcs
+                    newanals.append(anal)
+                trieds.add(tcs)
+        if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
+            dts = s[0].lower() + s[1:]
+            if dts not in trieds:
+                dtres = self.analyser.lookup(dts)
+                for r in dtres:
+                    mangler = 'dETITLECASED'
+                    omor = r[0] + \
+                        "[CASECHANGE=DETITLECASED]" + \
+                        "[WEIGHT=%f]" % (r[1] + self._penalty)
+                    weight = r[1]
+                    if token.pos != 1:
+                        weight += self._penalty
+                    anal = Analysis.fromomor(omor, weight)
+                    anal.manglers.append(mangler)
+                    anal.analsurf = dts
+                    newanals.append(anal)
+                trieds.add(dts)
+        if not s.isupper() and self.try_uppercase:
+            ups = s.upper()
+            if ups not in trieds:
+                upres = self.analyser.lookup(ups)
+                for r in upres:
+                    mangler = 'UPPERCASED'
+                    omor = r[0] + \
+                        "[CASECHANGE=UPPERCASED]" + \
+                        "[WEIGHT=%f]" % (r[1] + self._penalty)
+                    weight = r[1] + self._penalty
+                    anal = Analysis.fromomor(omor, weight)
+                    anal.manglers.append(mangler)
+                    anal.analsurf = ups
+                    newanals.append(anal)
+                trieds.add(ups)
+        if not s.islower() and self.try_lowercase:
+            lows = s.lower()
+            if lows not in trieds:
+                lowres = self.analyser.lookup(lows)
+                for r in lowres:
+                    mangler = 'lowercased'
+                    omor = r[0] +\
+                        "[CASECHANGE=LOWERCASED]" + \
+                        "[WEIGHT=%f]" % (r[1] + self._penalty)
+                    weight = r[1] + self._penalty
+                    anal = Analysis.fromomor(omor, weight)
+                    anal.manglers.append(mangler)
+                    anal.analsurf = lows
+                    newanals.append(anal)
+                trieds. add(lows)
+        if not newanals:
+            if len(token.surf) == 1:
+                omor = '[WORD_ID=' + token.surf +\
+                    "][UPOS=SYM][GUESS=HEUR]" +\
+                    "[WEIGHT=%f]" % (self._penalty)
+                weight = self._penalty
+                guess = Analysis.fromomor(omor, weight)
+                guess.manglers.append('GUESSER_PYTHON_LEN1')
+            elif token.surf[0].isupper() and len(token.surf) > 1:
+                omor = '[WORD_ID=' + token.surf +\
+                    "][UPOS=PROPN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                    "[WEIGHT=%f]" % (self._penalty)
+                weight = self._penalty
+                guess = Analysis.fromomor(omor, weight)
+                guess.manglers.append('GUESSER_PYTHON_0ISUPPER')
+            else:
+                omor = '[WORD_ID=' + token.surf +\
+                    "][UPOS=NOUN][NUM=SG][CASE=NOM][GUESS=HEUR]" +\
+                    "[WEIGHT=%f]" % (self._penalty)
+                weight = self._penalty
+                guess = Analysis.fromomor(omor, weight)
+                guess.manglers.append('GUESSER_PYTHON_ELSE')
+        for anal in newanals:
+            token.analyses.append(anal)
+        return newanals
 
     def guess(self, token: Token):
         '''Speculate morphological analyses of OOV token.
@@ -807,10 +814,6 @@ class Omorfi:
         tokens = self.tokenise(sentence)
         pos = 1
         for token in tokens:
-            if pos == 1:
-                token.firstinsent = True
-            else:
-                token.firstinsent = False
             token.pos = pos
             pos += 1
         return tokens
@@ -824,10 +827,6 @@ class Omorfi:
             tokens = self.tokenise(line.strip())
             pos = 1
             for token in tokens:
-                if pos == 1:
-                    token.firstinsent = True
-                else:
-                    token.firstinsent = False
                 token.pos = pos
                 pos += 1
             sep = Token()
@@ -879,8 +878,6 @@ class Omorfi:
                           file=stderr)
                     exit(1)
             token.pos = index
-            if index == 1:
-                token.firstinsent = True
             token.surf = fields[1]
             if fields[9] != '_':
                 miscs = fields[9].split('|')
@@ -930,8 +927,6 @@ class Omorfi:
                 # "<surf>"
                 token = Token()
                 token.surf = line[2:-2]
-                if pos == 1:
-                    token.firstinsent = True
                 tokens.append(token)
                 pos += 1
             elif line.startswith('\t"'):
