@@ -41,12 +41,14 @@ aiemmin	1	usually seen as adverb (earlier), but can be analysed as instructive o
 aikaan	1	done, accomplished, verb complement kind of, e.g., "saada aikaan"
 aikaan	2	during (around), adposition with genitive complement, e.g., "sen aikaan"
 aikana	1	during (while), adposition with genitive complement, e.g., "sen aikana"
-aina	1	adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
+aina	1	REMOVED adposition (send an example sentence if you need it back)
 aina	2	always, as adverb, "aina mun pitää"
 Aino	1	This proper noun overlaps forms of very common *ainoa* "only".
 Ainoa	1	This proper noun overlaps very common *ainoa* "only".
 ajallaan	1	adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
 ajallaan	2	in time, as adverb, "yritä tulla ajallaan"
+ajalta	1	from time of smth as adposition, "ristiretkien ajalta"
+ajoilta	1	from times of smth as adposition, "ristiretkien ajoilta"
 ajatuksissaan	1	in thought, as adverb, "olin ajatuksissaan ~ ajatuksissani", see VISK § 655
 alapuolella	1	under, as adposition, genitive complement or possessive, "laiturin alapuolella"
 alapuolelle	1	to under, as adposition, genitive complement or possessive, "laiturin alapuolelle"
@@ -198,6 +200,10 @@ kotoisin	1	usually seen as adverb (from), but can be analysed as a form of *koto
 kui	1	This noun means the Dravidian language spoken by the Kui in southeastern India (FinnWordNet) but overlaps forms of very common *kuin* "as".
 kuin	1	as ... as, sub-ordinating conj, comparative particle, "niin kauan kuin", "parempi kuin"
 kuin	4	both ... and, paired with niin, co-ordinating conj, "niin kissoja kuin koiriakin"
+kuivilla	1	dry from smth (alcohol, drug etc.), elative complement "olen kuivilla viinasta kolme kuukautta"
+kuivilla	2	dry also literally "olen kuivilla"
+kuiville	1	into dry from smth. (alcohol, drug etc.) "pitää päästä kuiville viinasta"
+kuiville	2	getting dry from, also literally "päästä kuiville"
 kumminkaan	1	usually seen as adverb (however, negative), but can be analysed as a form of *kumpi* (which)
 kumminkin	1	usually seen as adverb (however, affirmative), but can be analysed as a form of *kumpi* (which)
 kun	1	when, sub-ordinating conj, "kun menen kotiin", see VISK § 818
@@ -207,6 +213,8 @@ kuten	1	like a, such, as adverb, "eläin kuten kärpänen", used like "kuin"
 kuten	2	like, as sub-ordinating conjunction "tulkitse kuten pystyt"
 Kutsu	1	This proper noun overlaps forms of very common *kutsu* "invitation", *kutsua* "to invite" etc.
 kuvi	1	This noun means a Dravidian language spoken in southeast India (FinnWordNet) but overlaps forms of very common *kuva* (picture).
+käsin	1	manually "by hand", as opposed to automatically "tee se käsin"
+käsin	2	from smwh. ablative complement "mereltä käsin"
 käsiksi	1	usually seen as adverb (intervene), but can be analysed as translative of the noun *käsi* (hand)
 lainkaan	1	usually seen as adverb (at all), but can be analysed as a form of *laki* (law, hilltop)
 Lava	1	This proper noun overlaps very common *lava* (stage).
@@ -246,13 +254,13 @@ MTV	1	Music TeleVision
 MTV3	1	Mainos-Tele-Visio
 mukaan	1	adposition (with) when can be attached to a genitive NP, otherwise adverb (along)
 mukaan	2	along, adv, verb complement, "lähde mukaan!"
-mutta	1	this adp is FIXME
-mutta	2	... but, co-ordinating conjunction, "ei hyvä, mutta ok"
+mutta	1	REMOVED non CC version, provide examples to get it back
+mutta	2	co-ordinating conjunction, "ei hyvä, mutta ok"
 Mutta	1	proper noun, rather rare but notably overlaps an everyday conjunction
 Mutta	1	This proper noun overlaps  very common *mutta* (but).
 Muu	1	This proper noun overlaps  very common *muu* (other).
 Muuri	1	This proper noun overlaps forms of very common *muuri* (wall).
-muutoin	1	usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move)
+muutoin	2	usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move)
 muutti	1	a noun meaning something I don't know, but overlaps forms of *muuttaa* (to move).
 myöhemmin	1	usually seen as adverb (later), but can be analysed as instructive of the adjective *myöhä* (late)
 myöhään	1	usually seen as adverb (late), but can be analysed as illative of the adjective *myöhä* (late)
@@ -340,6 +348,10 @@ sijaan	1	adposition (instead of) when can be attached to a genitive NP, otherwis
 sijaan	1	adverv (instead)
 silloin	1	adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
 silloin	2	usually seen as adverb (then), but overlaps instructive of the noun *silta* (bridge)
+siksi	1	REMOVED, in lack of adpositional evidence
+siksi	2	thus, therefore, that's why, notably also translative of *se* (it)
+siten	1	REMOVED, in lack of adpositional evidence
+siten	2	so, thusly
 sillä	1	because, subordinating conj, "sillä tiedän paremmin" (NB ambig with many se adessives)
 Silta	1	This proper noun overlaps  very common *silta* (bridge).
 sisällä	1	adverb
@@ -423,7 +435,7 @@ vai	1	Vai people, a Manden ethnic group, rather rare, but overlaps with common c
 vai	2	really so, as adverb, colloquial, "ai on vai"
 vai	3	or, as cconj, used in contrastive position only, "kissoja vai koiria"
 vaikk	1	even though, as subordinating conjunction, colloquial "vaikka ärsyttäisikin", see VISK § 816
-vaikka	1	adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
+vaikka	1	REMOVED
 vaikka	2	even, as adverb, "vaikka mitä", "vaikka kuinka paljon" see VISK § 841
 vaikka	3	even though, as subordinating conjunction, "vaikka ärsyttäisikin", see VISK § 816
 Vanha	1	This proper noun overlaps  very common *vanha* (old)
@@ -431,6 +443,10 @@ vanhastaan	1	usually seen as adverb (traditionally), but can be analysed as a fo
 varmaan	1	usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure)
 Varo	1	This proper noun overlaps forms of very common *varoa* (beware).
 varsin	1	usually seen as adverb (really), but can be analysed as a form of *varsi* (stem)
+vallassa	1	in rule, "täällä on vallassa kuningas"
+vallassa	2	possessed by smth., genitive complement "pahan hengen vallassa"
+vallassa	1	dethroned, "kuningas syöstiin vallasta"
+vallassa	2	exorcised of smth., genitive complement "pahan hengen vallasta"
 vastaan	1	adposition (against smth) when can be attached to a partitive NP, otherwise adverb (against)
 vastaan	2	adverb (against)
 vihdoin	1	usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig)
