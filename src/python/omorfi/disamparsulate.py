@@ -7,6 +7,9 @@ Beta-testing a wack idea of not disambiguating and dependency parsing at the
 same time. Pay no attention to the man behind the curtains and move along.
 """
 
+from sys import argv
+
+from .fileformats import next_conllu
 from .token import Token
 
 
@@ -15,15 +18,15 @@ class Suggestion:
 
     def __init__(self):
         self.name = "Unnamed"
-        self.target = None
+        self.target = dict()
         # ± tokens = stuff
-        self.context = None
+        self.context = dict()
         # barrier for * contexts
-        self,barrier = None
+        self.barrier = dict()
         # when 0 is also
-        self.dispute = None
+        self.dispute = dict()
         # dep to add
-        self.depname = None
+        self.depname = dict()
         # from:
         # -inf: quasi-always (grammatical, CG style SELECT) to
         # -1.0: weak evidence, last resort tie break
@@ -46,8 +49,8 @@ class Suggestion:
                 if not matched:
                     continue
             if self.context:
-                head = self.find_context(token, sentence)
-                if not head:
+                heads = self.find_context(token, sentence)
+                if not heads:
                     matched = False
                     continue
             if matched:
@@ -57,8 +60,73 @@ class Suggestion:
                     for b in token.analyses:
                         if b != analysis:
                             b.weight += self.unlikelihood
-                if head and self.dep:
-                    analysis.ud = head
+                for head in heads:
+                    if self.depname:
+                        analysis.udep = {self.depname: head.pos}
+                    # also reweight the head
+
+    def find_context(self, token: Token, sentence: list):
+        heads = list()
+        for head in sentence:
+            if self.in_context(token, sentence, head):
+                for analysis in token.analyses:
+                    matched = True
+                    if "ufeats" in self.context:
+                        for feat, value in self.context["ufeats"]:
+                            if feat not in analysis.ufeats:
+                                matched = False
+                                break
+                            elif analysis.ufeats[feat] != value:
+                                matched = False
+                                break
+                    if matched:
+                        heads.append({"pos": token.pos, "a": analysis})
+
+    def in_context(self, token: Token, sentence: list, head: Token):
+        if self.context['location'] == 'left' and head.pos < token.pos:
+            if self.barrier:
+                for blocker in sentence:
+                    if blocker.pos < head.pos or blocker.pos > token.pos:
+                        continue
+                    for feat, value in self.barrier['ufeats']:
+                        for anal in blocker.analyses:
+                            if feat in anal.ufeats and \
+                                    anal.ufeats[feat] == value:
+                                return False
+            return True
+        elif self.context['location'] == 'right' and head.pos > token.pos:
+            if self.barrier:
+                for blocker in sentence:
+                    if blocker.pos > head.pos or blocker.pos < token.pos:
+                        continue
+                    for feat, value in self.barrier['ufeats']:
+                        for anal in blocker.analyses:
+                            if feat in anal.ufeats and \
+                                    anal.ufeats[feat] == value:
+                                return False
+            return True
+        elif self.context['location'] == 'any':
+            if self.barrier:
+                for blocker in sentence:
+                    if blocker.pos < min(head.pos, token.pos) or \
+                            blocker.pos < max(token.pos, head.pos):
+                        continue
+                    for feat, value in self.barrier['ufeats']:
+                        for anal in blocker.analyses:
+                            if feat in anal.ufeats and \
+                                    anal.ufeats[feat] == value:
+                                return False
+            return True
+        elif self.context['location'].isdigit() or\
+                self.context['location'][0] in '+-' and \
+                self.context['location'][1:].isdigit():
+            if head.pos == token.pos + int(self.context):
+                return True
+            else:
+                return False
+        else:
+            print("Broken context defionition:", self.context)
+            exit(1)
 
 
 def linguisticate(sentence: list):
@@ -76,6 +144,22 @@ def linguisticate(sentence: list):
 
 def main():
     """Invoke a simple CLI analyser."""
+    if len(argv) < 2:
+        print("Usage:", argv[0], "CONLLU")
+        exit(1)
+    infile = open(argv[1])
+    eoffed = False
+    while not eoffed:
+        sent = next_conllu(infile)
+        if not sent:
+            continue
+        for token in sent:
+            if token.error == "eof":
+                eoffed = True
+                continue
+        linguisticate(sent)
+        for token in sent:
+            print(token.printable_conllu())
     exit(0)
 
 
