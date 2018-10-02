@@ -214,7 +214,7 @@ class Token:
             newline = "\n"
         return vislcg
 
-    def printable_conllu(self, which="1random"):
+    def printable_conllu(self, hacks=None, which="1best"):
         '''Create CONLL-U output based on token and selected analysis.'''
         if self.nontoken:
             if self.nontoken == 'error':
@@ -238,16 +238,32 @@ class Token:
         if which == "1random":
             if self.analyses:
                 anal = self.analyses[0]
+        elif which == "1best":
+            minw = float("inf")
+            for a in self.analyses:
+                if a.weight < minw:
+                    anal = a
+                    minw = a.weight
+        elif self.analyses[which]:
+            anal = self.analyses[which]
+        else:
+            print("Unknown which", which)
+            exit(1)
         if anal:
             upos = anal.get_upos()
-            third = anal.get_xpos_tdt()
+            if hacks and hacks == 'ftb':
+                third = anal.get_xpos_ftb()
+            else:
+                third = anal.get_xpos_tdt()
             lemmas = anal.get_lemmas()
             if lemmas:
                 lemma = '#'.join(lemmas)
             ud_feats = anal.printable_ud_feats()
             ud_misc = anal.printable_ud_misc()
+            depname = anal.printable_udepname()
+            dephead = anal.printable_udephead()
         return "\t".join([str(self.pos), self.surf, lemma, upos, third,
-                          ud_feats, "_", "_", "_", ud_misc])
+                          ud_feats, dephead, depname, "_", ud_misc])
 
     def get_nbest(self, n: int, name="omor"):
         """Get n most likely analyses of given type.

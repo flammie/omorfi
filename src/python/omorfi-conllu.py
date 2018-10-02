@@ -13,6 +13,7 @@ from time import perf_counter, process_time
 # omorfi
 from omorfi import Omorfi
 from omorfi.fileformats import next_conllu
+from omorfi.disamparsulate import linguisticate
 
 
 def get_reference_conllu_list(token):
@@ -54,43 +55,33 @@ def try_analyses_conllu(token, outfile, hacks=None):
         if score > highest:
             best = i
             highest = score
-    return print_analyses_conllu(token, outfile, hacks, best)
+    print(token.printable_conllu(hacks, best), file=outfile)
 
 
 def debug_analyses_conllu(token, outfile, hacks=None):
     anals = token.analyses
     print("# REFERENCE(python):", get_reference_conllu_list(token),
           file=outfile)
-    for anal in anals:
-        print_analyses_conllu(anal, outfile, hacks)
+    for i, anal in enumerate(anals):
+        print(token.printable_conllu(hacks, i), file=outfile)
 
 
-def print_analyses_conllu(token, outfile, hacks=None, best=0):
-    anal = token.analyses[best]
-    if anal.rawtype != 'omor':
-        print("Trying to omorprint non-omor analysis", anal, file=stderr)
-        exit(1)
-    upos = anal.get_upos()
-    if not upos or upos == "":
-        upos = 'X'
-    if hacks == 'ftb':
-        third = anal.get_xpos_ftb()
-    else:
-        third = anal.get_xpos_tdt()
-    lemmas = anal.get_lemmas()
-    if not lemmas:
-        lemma = '_'
-    else:
-        lemma = '#'.join(anal.get_lemmas())
-    print(token.pos, token.surf, lemma, upos, third,
-          anal.printable_ud_feats(hacks),
-          "_", "_", "_", anal.printable_ud_misc(), sep="\t", file=outfile)
+def print_analyses(sent, options):
+    for token in sent:
+        if token.nontoken:
+            continue
+        if options.debug:
+            debug_analyses_conllu(token, options.outfile, options.hacks)
+        elif options.oracle:
+            try_analyses_conllu(token, options.outfile, options.hacks)
+        else:
+            print(token.printable_conllu(options.hacks), file=options.outfile)
 
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-a', '--analyser', metavar='AFILE',
+    a.add_argument('-a', '--analyser', metavar='AFILE', required=True,
                    help="read analyser model from AFILE")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
@@ -181,12 +172,8 @@ def main():
             if token.is_oov():
                 unknowns += 1
                 omorfi.guess(token)
-            if options.debug:
-                debug_analyses_conllu(token, options.outfile, options.hacks)
-            elif options.oracle:
-                try_analyses_conllu(token, options.outfile, options.hacks)
-            else:
-                print_analyses_conllu(token, options.outfile, options.hacks)
+        linguisticate(sentplus)
+        print_analyses(sentplus, options)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Sentences:", sentences,

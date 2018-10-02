@@ -32,6 +32,9 @@ class Analysis:
         self.upos = None
         #: last effective universal feats (private feats allowed, but see misc)
         self.ufeats = dict()
+        #: UD dep, target and name
+        self.udepname = None
+        self.udeppos = None
         #: misc features
         self.misc = dict()
         #: type of analysis: omor, segmentation, lemmatisation etc.
@@ -1041,9 +1044,10 @@ class Analysis:
         '''
         miscs = []
         if self.manglers:
-            miscs += ["Guesser=" + '|'.join(self.manglers)]
+            miscs += ['|'.join(self.manglers)]
         if self.analsurf:
             miscs += ['AnalysisForm=' + self.analsurf]
+        miscs += ['Weight=' + str(self.weight)]
         return miscs
 
     def printable_ud_misc(self):
@@ -1052,6 +1056,20 @@ class Analysis:
         if not miscs:
             return '_'
         return '|'.join(miscs)
+
+    def printable_udepname(self):
+        if self.udepname:
+            return self.udepname
+        else:
+            return '_'
+
+    def printable_udephead(self):
+        if self.udepname and self.udepname == 'root' and self.udeppos == 0:
+            return '0'
+        if self.udeppos:
+            return str(self.udeppos)
+        else:
+            return '_'
 
     def printable_ud_feats(self, hacks=None):
         '''Formats UD feats from token data exactly as in fi-tdt data.
