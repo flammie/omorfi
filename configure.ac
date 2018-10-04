@@ -322,7 +322,7 @@ AC_PATH_PROG([SBATCH], [sbatch], [false])
 
 AC_LANG([C++])
 # Checks for libraries
-PKG_CHECK_MODULES([LIBHFST], [hfst > 3.12],
+PKG_CHECK_MODULES([LIBHFST], [hfst >= 3.15],
                   [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
 AM_CONDITIONAL([WANT_CPP], [test x$with_cpp != xno])
 

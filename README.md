@@ -31,7 +31,10 @@ developers and contributors and are GPLv3 like the rest of the package.
 
 These are the obligatory stamps of the day:
 
-[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
+[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
+(stable master branch:
+[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
+)
 
 ## Documentation
 
@@ -71,8 +74,11 @@ well. You should have versions no older than one or two years. The build is not
 guaranteed to work at all with all ancient versions of GNU build tools, HFST or
 python. The versions that should work are as follows:
 
-  * **hfst-3.8** or greater, with python bindings
+  * **hfst-3.15** or greater, with python bindings
   * **python-3.2** or greater, with hfst python bindings available
+    * Note! 3.15 has greatly improved efficiency of HFST python bindings, it is
+      a hard requirement for build and use (memory usage is stable 100 megs 
+      instead of linearly rising from few gigs!)
   * GNU **autoconf-2.64** and **automake-1.12**
 
 The use of certain automata also requires additional tools:
