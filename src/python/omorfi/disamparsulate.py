@@ -63,7 +63,7 @@ class Evidence:
                 elif self.unlikelihood < 0:
                     for b in token.analyses:
                         if b != analysis:
-                            b.weight += self.unlikelihood
+                            b.weight -= self.unlikelihood
                 for head in heads:
                     # we actually want to copy analysis per head
                     if self.depname:
@@ -71,15 +71,19 @@ class Evidence:
                         analysis.udeppos = head['pos']
                     # also reweight the head
 
-    def find_context(self, token: Token, sentence: list):
+    def find_context(self, target: Token, sentence: list):
         '''Traverse sentence to find contexts that match.'''
         if self.context['location'] == 'ROOT':
             return [{"pos": 0, "a": None}]
         heads = list()
         for head in sentence:
-            if self.in_context(token, sentence, head):
-                for analysis in token.analyses:
+            if self.in_context(target, sentence, head):
+                for analysis in head.analyses:
                     matched = True
+                    if "upos" in self.context:
+                        if analysis.upos != self.context['upos']:
+                            matched = False
+                            break
                     if "ufeats" in self.context:
                         for feat, value in self.context["ufeats"]:
                             if feat not in analysis.ufeats:
@@ -89,9 +93,10 @@ class Evidence:
                                 matched = False
                                 break
                     if matched:
-                        heads.append({"pos": token.pos, "a": analysis})
+                        heads.append({"pos": head.pos, "a": analysis})
+        return heads
 
-    def in_context(self, token: Token, sentence: list, head: Token):
+    def in_context(self, target: Token, sentence: list, head: Token):
         '''Check if head is within context and no barrier blocks it.
 
         Does note check if head is valid head, just that it is in context
@@ -99,10 +104,10 @@ class Evidence:
         '''
         if self.context['location'] == 'ROOT':
             return True
-        elif self.context['location'] == 'left' and head.pos < token.pos:
+        elif self.context['location'] == 'left' and head.pos < target.pos:
             if self.barrier:
                 for blocker in sentence:
-                    if blocker.pos < head.pos or blocker.pos > token.pos:
+                    if blocker.pos < head.pos or blocker.pos > target.pos:
                         continue
                     if 'upos' in self.barrier:
                         for anal in blocker.analyses:
@@ -115,10 +120,10 @@ class Evidence:
                                         anal.ufeats[feat] == value:
                                     return False
             return True
-        elif self.context['location'] == 'right' and head.pos > token.pos:
+        elif self.context['location'] == 'right' and head.pos > target.pos:
             if self.barrier:
                 for blocker in sentence:
-                    if blocker.pos > head.pos or blocker.pos < token.pos:
+                    if blocker.pos > head.pos or blocker.pos < target.pos:
                         continue
                     if 'upos' in self.barrier:
                         for anal in blocker.analyses:
@@ -133,16 +138,14 @@ class Evidence:
             return True
         elif self.context['location'] == 'any':
             if self.barrier:
-                print("barrier?", self.barrier, token.pos, head.pos)
                 for blocker in sentence:
-                    if blocker.pos < min(head.pos, token.pos) or \
-                            blocker.pos < max(token.pos, head.pos) or \
-                            blocker.pos == token.pos:
+                    if blocker.pos < min(head.pos, target.pos) or \
+                            blocker.pos < max(target.pos, head.pos) or \
+                            blocker.pos == target.pos:
                         continue
                     if 'upos' in self.barrier:
                         for anal in blocker.analyses:
                             if anal.upos == self.barrier['upos']:
-                                print(anal, "blockrd")
                                 return False
                     if 'ufeats' in self.barrier:
                         for feat, value in self.barrier['ufeats']:
@@ -150,12 +153,11 @@ class Evidence:
                                 if feat in anal.ufeats and \
                                         anal.ufeats[feat] == value:
                                     return False
-            print("nay")
             return True
         elif self.context['location'].isdigit() or\
                 self.context['location'][0] in '+-' and \
                 self.context['location'][1:].isdigit():
-            if head.pos == token.pos + int(self.context):
+            if head.pos == target.pos + int(self.context):
                 return True
             else:
                 return False
