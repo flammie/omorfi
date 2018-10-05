@@ -1,5 +1,5 @@
 #!/bin/bash
-# coverage for europarl
+# coverage for everything
 fsa="@top_builddir@/src/generated/omorfi.describe.hfst"
 if test -z $srcdir ; then
     echo invoke from make check or define srcdir=.
@@ -41,11 +41,8 @@ coverage_check "gutenberg-fi" 96
 coverage_check "tatoeba-fi" 95
 coverage_check "vns" 85
 coverage_check "vks" 50
-# ehh, hapax legomena 1 requires few gigabytes here...
-#hapax=2
 coverage_check "OpenSubtitles2016.fi" 95
 coverage_check "jrc-fi" 93
 coverage_check "fiwiki-latest-pages-articles" 91
-# actually, a threshold of 3 is too much
-#hapax=8
+coverage_check "unimorph-fin" 93
 coverage_check "5grams" 90
