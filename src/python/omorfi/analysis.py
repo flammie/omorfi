@@ -445,7 +445,7 @@ class Analysis:
         return anal
 
     def get_ftb_feats(self):
-        '''Get FTB analyses from token data.'''
+        '''Get ftb analyses from token data.'''
         feats = self.ufeats
         rvs = list()
         rvs += [self.get_xpos_ftb()]
@@ -748,6 +748,166 @@ class Analysis:
                     revs += [r]
             rvs = revs
         return rvs
+
+    def get_unimorph_feats(self):
+        '''Get Unimorph analyses from token data.'''
+        rvs = list()
+        if self.upos == 'NOUN':
+            rvs += ['N']
+        elif self.upos == 'VERB':
+            if 'PartForm' in self.ufeats:
+                rvs += ['V.PTCP']
+            else:
+                rvs += ['V']
+        elif self.upos == 'ADJ':
+            rvs += ['ADJ']
+        for key, value in self.ufeats.items():
+            if key == 'Number':
+                if value == 'Sing':
+                    rvs += ['SG']
+                elif value == 'Plur':
+                    rvs += ['PL']
+            elif key == 'Tense':
+                if value == 'Pres':
+                    rvs += ['PRS']
+                elif value == 'Past':
+                    rvs += ['PST']
+            elif key == 'Mood':
+                if value == 'Ind':
+                    rvs += ['POS', 'IND']
+                elif value == 'Cnd':
+                    rvs += ['PRS', 'POS', 'COND']
+                elif value == 'Imp':
+                    rvs += ['PRS', 'POS', 'IMP']
+                elif value == 'Potn':
+                    rvs += ['PRS', 'POS', 'POT']
+                else:
+                    rvs += [value.upper()]
+            elif key == 'Voice':
+                rvs += [value.upper()]
+            elif key == 'Person':
+                if value == '0':
+                    rvs += ['3']
+                elif value == '1':
+                    rvs += ['1']
+                elif value == '2':
+                    rvs += ['2']
+                elif value == '3':
+                    rvs += ['3']
+                elif value == '4':
+                    pass
+                else:
+                    print(key, value, "for unimorph", file=stderr)
+                    exit(1)
+            elif key == 'Number[psor]':
+                # ignored in unimroph
+                pass
+            elif key == 'Person[psor]':
+                # ignored in unimroph
+                pass
+            elif key == 'Polarity':
+                rvs += ['???']
+            elif key == 'Connegative':
+                rvs += ['NEG']
+            elif key == 'InfForm':
+                if value == '1':
+                    rvs += ['NFIN']
+                elif value == '2':
+                    rvs += ['???']
+                elif value == '3':
+                    rvs += ['???']
+                elif value == 'MINEN':
+                    rvs += ['???']
+                elif value == 'MAISILLA':
+                    rvs += ['???']
+            elif key == 'PartForm':
+                if value == 'Pres':
+                    rvs += ['PRS']
+                elif value == 'Past':
+                    rvs += ['PST']
+                elif value == '3':
+                    rvs += ['???']
+            elif key == 'Case':
+                if value == 'Nom':
+                    rvs += ['NOM']
+                elif value == 'Ill':
+                    rvs += ['IN+ALL']
+                elif value == 'Tra':
+                    rvs += ['TRANS']
+                elif value == 'Ade':
+                    rvs += ['AT+ESS']
+                elif value == 'All':
+                    rvs += ['AT+ALL']
+                elif value == 'Abl':
+                    rvs += ['AT+ABL']
+                elif value == 'Ess':
+                    rvs += ['FRML']
+                elif value == 'Com':
+                    rvs += ['COM', 'PL']
+                elif value == 'Ins':
+                    rvs += ['INS']
+                elif value == 'Ine':
+                    rvs += ['IN+ESS']
+                elif value == 'Ela':
+                    rvs += ['IN+ABL']
+                elif value == 'Abe':
+                    rvs += ['PRIV']
+                elif value == 'Par':
+                    rvs += ['PRT']
+                elif value == 'Gen':
+                    rvs += ['GEN']
+                elif value == 'Acc':
+                    rvs += ['ACC']
+                else:
+                    rvs += ['???']
+            elif key == 'Degree':
+                # yeah. unimorph has same analysis for comparative and positive
+                pass
+            elif key == 'SUBCAT':
+                rvs += ['???']
+            elif key == 'NumType':
+                rvs += ['???']
+            elif key == 'PronType':
+                rvs += ['???']
+            elif key == 'AdpType':
+                rvs += ['???']
+            elif key == 'Clitic':
+                rvs += ['???']
+            elif key == 'Abbr':
+                rvs += ['???']
+            elif key == 'Derivation':
+                rvs += ['???']
+            elif key == 'Reflexive':
+                rvs += ['???']
+            elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
+                         'GUESS', 'PROPER', 'SEM', 'CONJ', 'BOUNDARY',
+                         'PCP', 'DRV', 'LEX', 'BLACKLIST', 'Style',
+                         'POSITION', "Foreign", 'VerbForm',
+                         'Typo']:
+                continue
+            else:
+                print(key, value, 'unimorph')
+                exit(1)
+        # unimorph is very limited so we delete a lot of tags...
+        if 'V.PTCP' in rvs and 'ACT' in rvs and 'PRS' in rvs:
+            rvs = ['V.PTCP', 'ACT', 'PRS']
+        elif 'V.PTCP' in rvs and 'ACT' in rvs and 'PST' in rvs:
+            rvs = ['V.PTCP', 'ACT', 'PST']
+        elif 'V.PTCP' in rvs and 'PASS' in rvs and 'PRS' in rvs:
+            rvs = ['V.PTCP', 'PASS', 'PRS']
+        elif 'V.PTCP' in rvs and 'PASS' in rvs and 'PST' in rvs:
+            rvs = ['V.PTCP', 'PASS', 'PST']
+        elif 'NFIN' in rvs:
+            rvs = ['V', 'NFIN']
+        # re-order as use
+        revs = []
+        for r in rvs:
+            if r not in ['SG', 'PL']:
+                revs.append(r)
+        for r in rvs:
+            if r in ['SG', 'PL']:
+                revs.append(r)
+        return revs
 
     def get_vislcg_feats(self):
         '''Get VISL-CG 3 features from analysed token.'''
@@ -1085,6 +1245,11 @@ class Analysis:
         for k in sorted(rvs, key=str.lower):
             rv += k + '=' + rvs[k] + '|'
         return rv.rstrip('|')
+
+    def printable_unimorph(self):
+        '''Formats FTB feats from token data like in FTB-2014 data.'''
+        rvs = self.get_unimorph_feats()
+        return ';'.join(rvs)
 
     def printable_ftb_feats(self):
         '''Formats FTB feats from token data like in FTB-2014 data.'''
