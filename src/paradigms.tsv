@@ -420,6 +420,7 @@ NOUN_KANAALI	NOUN	NOUN	6	None	False	weaken	back	None	None	False	False	[AOUŌÓÅ
 NOUN_KANGAS	NOUN	NOUN	41	G	False	strengthen	back	None	None	False	False	ngas	gas
 NOUN_KANNEL	NOUN	NOUN	49	J	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnel	nel
 NOUN_KANNET	NOUN	NOUN	28	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet	net
+NOUN_KARBOKSYLAATTI	NOUN	NOUN	5	C	False	weaken	both	None	None	False	False	tti	ti
 NOUN_KASTANJETIT	NOUN	NOUN	5	C	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tit	it
 NOUN_KASTIKE	NOUN	NOUN	48	A	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ke	e
 NOUN_KASTILJAT	NOUN	NOUN	13	None	obligatory	weaken	back	None	None	False	False	at	at
