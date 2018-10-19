@@ -420,6 +420,7 @@ NOUN_KANAALI	NOUN	NOUN	6	None	False	weaken	back	None	None	False	False	[AOUŌÓÅ
 NOUN_KANGAS	NOUN	NOUN	41	G	False	strengthen	back	None	None	False	False	ngas	gas
 NOUN_KANNEL	NOUN	NOUN	49	J	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnel	nel
 NOUN_KANNET	NOUN	NOUN	28	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet	net
+NOUN_KARBOKSYLAATTI	NOUN	NOUN	5	C	False	weaken	both	None	None	False	False	tti	ti
 NOUN_KASTANJETIT	NOUN	NOUN	5	C	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tit	it
 NOUN_KASTIKE	NOUN	NOUN	48	A	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ke	e
 NOUN_KASTILJAT	NOUN	NOUN	13	None	obligatory	weaken	back	None	None	False	False	at	at
@@ -495,7 +496,7 @@ NOUN_LEIPÄ	NOUN	NOUN	10	E	False	weaken	front	ä	None	False	False	pä	pä
 NOUN_LEPAKKO	NOUN	NOUN	4	A	False	weaken	back	None	None	False	False	kko	ko
 NOUN_LIEMI	NOUN	NOUN	25	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mi	mi
 NOUN_LIITTOUTUNEET	NOUN	NOUN	47	None	obligatory	strengthen	back	None	None	False	False	neet	et
-NOUN_LIIVIT	NOUN	NOUN	5	None	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it	t
+NOUN_LIIVIT	NOUN	NOUN	5	None	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it	it
 NOUN_LINTU	NOUN	NOUN	1	J	False	weaken	back	None	None	False	False	ntu	tu
 NOUN_LIPEÄ	NOUN	NOUN	15	None	False	weaken	front	ä	None	False	False	eä	ä
 NOUN_LIPPU	NOUN	NOUN	1	B	False	weaken	back	None	None	False	False	ppu	pu
@@ -543,7 +544,7 @@ NOUN_NEITSYT	NOUN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 NOUN_NEUVOTTELUT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 NOUN_NIHTI	NOUN	NOUN	5	F	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ti	ti
 NOUN_NIITUT	NOUN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
-NOUN_NIMETÖN	NOUN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	tön
+NOUN_NIMETÖN	NOUN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	ön
 NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[Eeěë]
 NOUN_NOKI	NOUN	NOUN	7	D	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki	ki
 NOUN_NOUGAT	NOUN	NOUN	22	None	False	weaken	back	a	None	False	False	.
@@ -1860,7 +1861,7 @@ PROPN_NIHTI	PROPN	NOUN	5	F	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉ
 PROPN_NIITUT	PROPN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
 PROPN_NIITYT	PROPN	NOUN	1	C	obligatory	weaken	front	None	None	False	False	tyt	yt
 PROPN_NIMETÖIN	PROPN	NOUN	34	C	False	strengthen	front	None	None	False	False	töin	töin
-PROPN_NIMETÖN	PROPN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	tön
+PROPN_NIMETÖN	PROPN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	ön
 PROPN_NISSE	PROPN	NOUN	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*[Eeěë]
 PROPN_NOKI	PROPN	NOUN	7	D	False	weaken	back	None	None	False	False	ki	ki
 PROPN_NOUGAT	PROPN	NOUN	22	None	False	weaken	back	a	None	False	False	.

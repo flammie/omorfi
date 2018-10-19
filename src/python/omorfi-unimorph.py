@@ -67,7 +67,7 @@ def main():
         if len(fields) < 3:
             print("ERROR: Skipping line", fields, file=stderr)
             continue
-        if ' ' in fields[1]:
+        if ' ' in fields[1] or ' ' in fields[0]:
             continue
         lines += 1
         if lines % 1000 == 0:
