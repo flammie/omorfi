@@ -12,7 +12,8 @@ TESTS=rough-tests.sh \
 	  ftb-3.1-test.bash \
 	  conllu-fi-tdt-ud-test.bash \
 	  conllu-fi-ftb-ud-test.sh \
-	  vislcg-fi-ud-test.sh
+	  vislcg-fi-ud-test.sh \
+	  unimorph-test.bash
 XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash

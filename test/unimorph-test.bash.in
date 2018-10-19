@@ -1,0 +1,26 @@
+#!/bin/bash
+if test -z $srcdir ; then
+    echo Use make check or define srcdir
+    exit 1
+fi
+fsa="@top_builddir@/src/generated/omorfi.describe.hfst"
+cuf="unimorph-fin.unimorphs"
+cs="get-covered.bash"
+if test ! -r "$fsa" ; then
+    echo Missing $fsa
+    exit 77
+fi
+if ! test -x @PYTHON@ ; then
+    echo Missing python
+    exit 77
+fi
+if test ! -r $cuf ; then
+    echo missing $cuf, use $cs and re-try
+    exit 77
+fi
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-unimorph.py -a $fsa -i $cuf \
+        -o unimorph-fin.unimorphlog -t 94; then
+    echo We missed the target of 94 % approximate recall
+    exit 1
+fi
+exit 0

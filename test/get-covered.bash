@@ -272,7 +272,8 @@ if ! test -f "unimorph-fin.uniq.freqs" ; then
         git clone git@github.com:unimorph/fin.git
         cp fin/fin.? .
     fi
-    cat fin.? | cut -f 2 | fgrep -v ' ' > "unimorph-fin.tokens"
+    cat fin/fin.? > unimorph-fin.unimorphs
+    cat unimorph-fin.unimorphs | cut -f 2 | fgrep -v ' ' > "unimorph-fin.tokens"
     echo count
     frequency_list "unimorph-fin.tokens" > "unimorph-fin.uniq.freqs"
 fi
