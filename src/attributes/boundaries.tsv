@@ -21186,11 +21186,9 @@ koputuslevy	1	koputus{WB}levy
 koputusvasara	1	koputus{WB}vasara
 koputusääni	1	koputus{WB}ääni
 koraalialkusoitto	1	koraali{WB}alkusoitto
-koraalialkusoitto	2	koraali{WB}alku{WB}soitto
 koraalikirja	1	koraali{WB}kirja
 koraalisävelmä	1	koraali{WB}sävelmä
 koraalivirsikirja	1	koraali{WB}virsikirja
-koraalivirsikirja	2	koraali{WB}virsi{WB}kirja
 koralliahven	1	koralli{WB}ahven
 korallieläin	1	koralli{WB}eläin
 korallihiekka	1	koralli{WB}hiekka
