@@ -47,7 +47,7 @@ def main():
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True,
                     metavar="OFILE", help="write data to OFILE")
-    ap.add_argument("--fields", "-f", action="store", default=2,
+    ap.add_argument("--fields", "-f", action="store", default=4,
                     metavar="N", help="read N fields from master")
     ap.add_argument("--join", "-j", action="store", required=True,
                     metavar="JFILE", help="read join fields from JFILE")
