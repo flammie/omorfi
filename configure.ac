@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20180511], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20181111_alpha], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20180511
+VERSION=20180511_alpha
 
 # Options
 AC_ARG_WITH([hfst],
@@ -279,6 +279,8 @@ AS_IF([test "x$enable_voikko" = "xyes"],
        AS_IF([test "x$ZIP" = "xfalse"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
 AC_PATH_PROGS([THEREARENOEASTEREGGS], [toilet figlet banner cowsay], [echo])
+AC_PATH_PROGS([WGET], [wget])
+AC_PATH_PROGS([TAR], [tar gtar gnutar])
 
 # require python for stuff
 AM_PATH_PYTHON([3.2])
