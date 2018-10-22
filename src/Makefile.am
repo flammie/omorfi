@@ -263,7 +263,7 @@ CLEANFILES=$(GENERIC_GENERATED) $(FTB3_GENERATED) $(DB_GENERATED) \
 		   keys duplicate-keys lc-sort-keys
 # }}}
 #
-# {{{GENERATING
+# {{{GENERATING 
 if CAN_PYTHON
 generated/timestamp:
 	mkdir -p generated
@@ -309,12 +309,14 @@ generated/omorfi.segment.lexc: generated/master.tsv generated/continuations.tsv
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-lemmas \
+		--break-loops \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 # acceptor
 generated/omorfi.accept.lexc:  generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv  \
 		-c generated/continuations.tsv -o $@ -f=none \
+		--break-loops \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 # segmented analysis experiment
@@ -336,6 +338,7 @@ generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=omor \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS) \
+		--break-loops \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
 # Real omorfi dictionary

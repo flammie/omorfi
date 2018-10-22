@@ -103,6 +103,8 @@ def main():
                     help="include lemmas in raw analyses")
     ap.add_argument("--none-segments", action="store_true", default=False,
                     help="include segments in raw analyses")
+    ap.add_argument("--break-loops", action="store_true", default=False,
+                    help="skip continuations that may loop, comp/der/etc.")
     args = ap.parse_args()
 
     formatter = None
@@ -261,6 +263,11 @@ def main():
                     continue
                 if pos in args.exclude_pos:
                     continue
+                if args.break_loops:
+                    if "COMPOUND" in tsv_parts[0] or "DERIV" in tsv_parts[0] \
+                            or "LOOP" in tsv_parts[0]:
+                        # small lexicon doesn't compound or derive
+                        continue
                 # format output
                 if curr_lexicon != tsv_parts[0]:
                     print("\nLEXICON", tsv_parts[0], end="\n\n",
