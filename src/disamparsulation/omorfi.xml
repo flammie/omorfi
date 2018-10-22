@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<disamparsulations version="0.0.0">
+  <evidence name="instructives unlikely">
+    <target>
+      <ufeats>
+        <ufeat name="Case">Ins</ufeat>
+      </ufeats>
+    </target>
+    <likelihood>unlikely</likelihood>
+  </evidence>
+  <evidence name="puncts to nearest main verb">
+    <target>
+      <upos>PUNCT</upos>
+    </target>
+    <likelihood>usually</likelihood>
+    <dep>punct</dep>
+    <context>
+      <location>any</location>
+      <upos>VERB</upos>
+      <barrier>
+        <upos>PUNCT</upos>
+      </barrier>
+    </context>
+  </evidence>
+  <evidence name="verbs can be roots">
+    <target>
+      <upos>VERB</upos>
+    </target>
+    <likelihood>probably</likelihood>
+    <depname>root</depname>
+    <context>
+      <location>ROOT</location>
+    </context>
+  </evidence>
+  <evidence name="cconj coordinates its +1">
+    <target>
+      <upos>CCONJ</upos>
+    </target>
+    <likelihood>probably</likelihood>
+    <context>
+      <location>+1</location>
+    </context>
+  </evidence>
+  <evidence name="elative adj agrees its +1">
+    <target>
+      <upos>ADJ</upos>
+      <ufeats>
+        <ufeat name="Case">Ela</ufeat>
+      </ufeats>
+    </target>
+    <likelihood>usually</likelihood>
+    <depname>amod</depname>
+    <context>
+      <location>+1</location>
+      <ufeats>
+        <ufeat name="Case">Ela</ufeat>
+      </ufeats>
+    </context>
+  </evidence>
+</disamparsulations>
