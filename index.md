@@ -60,16 +60,13 @@ available.
 
 ### Design, historical notes, stuff
 
-The design principles of morphological analysis have been changed a dozen of
-times to accommodate various applications:
+Some notes about design and development
 
 1. [Analysis tags](pages/tag-formats.html)
 1. [Design "principles" for tags](pages/Tagging-possibilities.html)
-
-More internal documentations:
-
 1. [Directory layout](pages/Directory-layout.html)
-1. [Database struccture](pages/Database-processing.html)
+1. [Database structure](pages/Database-processing.html)
+1. [Testing](pages/Regression-testing.html)
 
 
 ### Automatically generated stuff
