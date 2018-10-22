@@ -70,7 +70,7 @@ def main():
         if ' ' in fields[1] or ' ' in fields[0]:
             continue
         lines += 1
-        if lines % 1000 == 0:
+        if options.verbose and lines % 1000 == 0:
             print(lines, '...')
         lemma = fields[0]
         surf = fields[1]
