@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Regression testing"
-category: design
-date: 2016-04-15 16:41:24
 ---
 
 
@@ -14,8 +12,14 @@ document describes the testing done.
 
 ## Automatic testing
 
-Will be detailed later. In typical setup, a simple `make check` will invoke
-the test suite.
+Automatic tests are there to guarantee some baseline *reproducibility* of results with omorfi. It is recommended that after publishing results with omorfi, an automatic test is added to the `test/` directory that can be ran as a part of `make check` target. This is ran as a part of continuous integration, currently in github via [travis CI](https://travis-ci.org/). There are different kinds of automatic tests, roughly of few following types:
+
+* (Analysis) Coverage: check that word-forms are in dictionaries / models
+* Analysis recall: check that given analyses are produced for given wordforms
+* wikitable recall: check that we can analyse an inflection table for given wiktionary word (lemma)
+* Regressions: check that recall (sometimes precision@) for large corpus data is not smaller than for previous release
+
+Since tests require large text data they can not be ran in full for all development cycle and not in the continuous integration service that we use for free.
 
 ## Manually testing for regressions
 
