@@ -62,10 +62,11 @@ STRICT-TAGS +=
     Clitic=Ko
     Clitic=Pa
     Clitic=S
-    ConNeg=Yes
+    Connegative=Yes
     Degree=Comp
     Degree=Pos
     Degree=Sup
+    Derivation=Ja
     Derivation=Inen
     Derivation=Va
     Derivation=La
@@ -100,7 +101,7 @@ STRICT-TAGS +=
     Person[psor]=1
     Person[psor]=2
     Person[psor]=3
-    Polarity=Negative
+    Polarity=Neg
     PronType=Dem
     PronType=Pers
     Style=Coll
@@ -119,7 +120,9 @@ STRICT-TAGS +=
     <*UPPERCASED>
     <*Titlecased>
     <*dETITLECASED>
-    <Blacklisted=PROPN-BLOCKING> ;
+    <Blacklisted=FGK>
+    <Blacklisted=PROPN-BLOCKING>
+    ;
 OPTIONS += no-inline-sets ;
 
 DELIMITERS = "<.>" "<!>" "<?>" ;
@@ -587,7 +590,7 @@ LIST TUTKITTAVA-NOUN = ("tutkittava" UPOS=NOUN) ;
 LIST MERKITTÄVÄ-DRV-VA = ("merkittää" <Deriv=Va>) ;
 LIST MERKITTÄVÄ-ADJ = ("merkittävä" UPOS=ADJ) ;
 ## copulas for minen verb chains
-LIST OLE-CONNEG = ("olla" UPOS=VERB ConNeg=Yes) ;
+LIST OLE-CONNEG = ("olla" UPOS=VERB Connegative=Yes) ;
 ## vaan = {not ... but (CCONJ), not really at all (ADV)}
 LIST VAAN-ADV = ("vaan" UPOS=ADV) ;
 LIST VAAN-CCONJ = ("vaan" UPOS=CCONJ) ;
@@ -605,7 +608,7 @@ LIST APU-NOUN = ("avu" UPOS=NOUN) ;
 ## we have these tags when analyser doesn't match the case
 LIST RECASED = <*lowercased> <*UPPERCASED> <*Titlecased> <*dETITLECASED> ;
 ## we have some blacklists
-LIST BLACKLISTED = <Blacklisted> ;
+LIST BLACKLISTED = <Blacklisted=PROPN-BLOCKING> <Blacklisted=FGK> ;
 ## generic weight = approximate log prob of some linear combo
 LIST MIN-WEIGHT = <W=MIN> ;
 ## we count compound boundaries
@@ -613,7 +616,7 @@ LIST MIN-COMPOUND = <CMP=MIN> ;
 ## tags for known wrong or odd stuff
 LIST NONSTANDARDS = Style=Coll Typo=Yes ;
 ## derivations (apart from the near-inflectional)
-LIST DERIVATIONS = <Derivation> ;
+LIST DERIVATIONS = Derivation=Inen Derivation=Ja Derivation=U ;
 ## Any other guessers
 LIST GUESSED = <Guesser> ;
 # }}}
@@ -714,9 +717,9 @@ REMOVE:tutkittava-over-tutkittaa TUTKITTAVA-DRV-VA (0 TUTKITTAVA-NOUN) ;
 ##! $ aiheesta annettiin ensimmäinen merkittävä päätös
 REMOVE:merkittävä-over-merkittää MERKITTÄVÄ-DRV-VA (0 MERKITTÄVÄ-ADJ) ;
 ##! $ se ei vaan onnistu
-SELECT:ei-vaan-adv VAAN-ADV (-1 Polarity=Negative) ;
+SELECT:ei-vaan-adv VAAN-ADV (-1 Polarity=Neg) ;
 ##! $ ulkopolitiikka ei tehdä pressan johdolla, vaan pressasta huolimatta
-SELECT:ei-blah-vaan-cconj VAAN-CCONJ (-2* Polarity=Negative BARRIER BEGINSENT) ;
+SELECT:ei-blah-vaan-cconj VAAN-CCONJ (-2* Polarity=Neg BARRIER BEGINSENT) ;
 # }}}
 SECTION # {{{ FGK-word-specific 
 # I have only selected the ones I can explain and fidn examples of:
@@ -804,7 +807,7 @@ SELECT:täysin-ada TÄYSIN-ADA (1 AD) ;
 ##! $ he ovat vielä edellä.
 ##! € kuningas ei edellä jätkää.
 ##! € kuka on sinua edellä?
-SELECT:edellä-adv EDELLÄ-ADV (NEGATE -1* Polarity=Negative) (NEGATE -1 Case=Gen) (NEGATE -1 Case=Par) (NEGATE 1 Case=Par) ;
+SELECT:edellä-adv EDELLÄ-ADV (NEGATE -1* Polarity=Neg) (NEGATE -1 Case=Gen) (NEGATE -1 Case=Par) (NEGATE 1 Case=Par) ;
 
 ##! $
 SELECT:ennen-adv-kuin ENNEN-ADV (1 KUIN-CCONJ) ;
@@ -956,8 +959,8 @@ SECTION # {{{ grammar and context
 ##! € en oo sitä nähny.
 ##! € en tule.
 ##! € ole hiljaa.
-IFF:conneg-when-neg ConNeg=Yes (-1* Polarity=Negative BARRIER ConNeg=Yes) ;
-SELECT:neg-when-conneg Polarity=Negative (1* ConNeg=Yes BARRIER UPOS=VERB) ;
+IFF:conneg-when-neg Connegative=Yes (-1* Polarity=Neg BARRIER Connegative=Yes) ;
+SELECT:neg-when-conneg Polarity=Neg (1* Connegative=Yes BARRIER UPOS=VERB) ;
 ##! € poliisilla on ollut etsintäatehtävä.
 ##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa.
 SELECT:perfect-tense PartForm=Past (-1* COPULA BARRIER VERBAUX) ;
