@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20180511_alpha
+VERSION=20181111_alpha
 
 # Options
 AC_ARG_WITH([hfst],

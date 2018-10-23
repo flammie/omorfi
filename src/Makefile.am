@@ -195,9 +195,14 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			python/omorfi-freq-evals.py \
 			python/omorfi-ftb3.py
 
+# Actual python API omorfi.* (no need to add unused internal stuff)
 pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
 				 python/omorfi/settings.py \
+				 python/omorfi/analysis.py \
+				 python/omorfi/doc.py \
+				 python/omorfi/fileformats.py \
+				 python/omorfi/disamparsulate.py \
 				 python/omorfi/token.py
 
 

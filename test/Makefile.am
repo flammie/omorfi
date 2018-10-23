@@ -18,16 +18,20 @@ XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
+
+TESTDATAFILES=wordforms.list \
+			  wordforms-common.list \
+			  test.text \
+			  test.conllu \
+			  test.cg3text
+
 EXTRA_DIST=rough-tests.sh \
 		   rougher-tests.bash \
 		   regressions.sh \
 		   scripts-runnable.sh \
-		   wordforms.list \
-		   wordforms-common.list \
 		   faithfulness.py \
-		   test.text \
-		   test.conllu \
-		   conllu-compare.py
+		   conllu-compare.py \
+		   $(TESTDATAFILES)
 
 CLEANFILES=wordforms.anals wordforms-common.anals
 
