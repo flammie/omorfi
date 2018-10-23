@@ -1,0 +1,33 @@
+<!--
+   Copyright 2018 Flammie A Pirinen, Omorfi contributors
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation; version 3 and not later,
+
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not <http://www.gnu.org/licenses/>.
+-->
+<!ELEMENT disamparsulations (evidence*)>
+<!ATTLIST disamparsulations
+    version CDATA #REQUIRED>
+<!ELEMENT evidence (target, likelihood, depname?, context?)
+<!ATTLIST evidence
+    name CDATA #REQUIRED>
+<!ELEMENT target (upos?, ufeats?)>
+<!ELEMENT upos (#PCDATA)>
+<!ELEMENT ufeats (ufeat*)>
+<!ELEMENT ufeat (#PCDATA)>
+<!ATTLIST ufeat
+    name CDATA #REQUIRED>
+<!ELEMENT likelihood (#PCDATA)>
+<!ELEMENT depname (#PCDATA)>
+<!ELEMENT context (location, upos?, ufeats?, barrier?)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT barrier (upos?, ufeats?)>
+

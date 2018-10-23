@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2018 Flammie A Pirinen, Omorfi contributors
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation; version 3 and not later,
+
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not <http://www.gnu.org/licenses/>.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+  <xs:element name="disamparsulations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="evidence"/>
+      </xs:sequence>
+      <xs:attribute name="version" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="evidence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" ref="target"/>
+        <xs:element minOccurs="1" maxOccurs="1" ref="likelihood"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="depname"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="context"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="target">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="upos"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="ufeats"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="upos" type="xs:string"/>
+  <xs:element name="ufeats">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="ufeat"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ufeat" type="xs:string"/>
+  <xs:element name="likelihood" type="xs:string"/>
+  <xs:element name="depname" type="xs:string"/>
+  <xs:element name="context">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" ref="location"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="upos"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="ufeats"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="barrier"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="location" type="xs:string"/>
+  <xs:element name="barrier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="upos"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="ufeats"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
