@@ -77,7 +77,7 @@ python. The versions that should work are as follows:
   * **hfst-3.15** or greater, with python bindings
   * **python-3.2** or greater, with hfst python bindings available
     * Note! 3.15 has greatly improved efficiency of HFST python bindings, it is
-      a hard requirement for build and use (memory usage is stable 100 megs 
+      a hard requirement for build and use (memory usage is stable 100 megs
       instead of linearly rising from few gigs!)
   * GNU **autoconf-2.64** and **automake-1.12**
 
@@ -93,6 +93,22 @@ APIs require:
 * The C++ API uses C++-11, this is basically available on all modern platforms.
 
 ## Installation
+
+**NB:*** If you do not want to re-compile omorfi yourself, you can download the
+language models from previous release using omorfi-download.bash:*
+
+```
+./configure
+src/bash/omorfi-download.bash
+```
+
+This will download some of the pre-compiled dictionaries into your current
+working directory. You can then start using them and skip to [Usage](#Usage).
+For the current development version with latest updates it is advisable to
+compile your own, it is also necessary if you want to make any customisations to
+the dictionaries, etc.
+
+- - -
 
 Installation uses standard autotools system:
 
@@ -149,8 +165,8 @@ to enable or disable the API bindings for Java or other languages. The
     * giella: no
     * labeled segmenter: no
 * Limits:
-    * tiny lexicons: 
-    * big tests: 
+    * tiny lexicons:
+    * big tests:
 * Applications
     * Voikko speller: yes
     * segmenter: no
@@ -182,10 +198,12 @@ programs may require specific automata or language models.
   (FinnTreeBank, CONLL-X compatible)
 1. `omorfi-factorise.bash`: analyse text and print out Moses factored format
 1. `omorfi-vislcg.bash`: analyse text and print out VISL CG 3 output
-1. `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line 
+1. `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line
    (unlike other functions, this takes word list and not text input)
 1. `omorfi-generate.sh`: generate word-forms from omor descriptions
    (unlike other functions, takes analysis list as input)
+1. `omorfi-download.bash`: downloads some pre-compiled models from latest
+   stable release (available from 20181111 onwards).
 
 Some functions come with lower-level interface, where you have to take care
 of full pipeline manually but have more control over parametres:
