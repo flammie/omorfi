@@ -298,3 +298,7 @@ $ pre-commit install
 
 I (Flammie) also recommend syntastic, e.g. I use
 [vim-syntastic](https://github.com/vim-syntastic/syntastic)
+
+### Code of conduct
+
+Since I it's 2018 I just want to remind GNU has a (mostly) good description of what FLOSS hacking code of conduct should be https://www.gnu.org/philosophy/kind-communication.html. Omorfi is free and open source project that depends on user contributions and we aim to be maximally approachable and so on. Thanks.
