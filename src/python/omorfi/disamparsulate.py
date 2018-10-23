@@ -9,6 +9,9 @@ same time. Pay no attention to the man behind the curtains and move along.
 
 from sys import argv
 from copy import copy
+# stuff
+import xml.etree.ElementTree
+from xml.etree.ElementTree import Element
 
 from .fileformats import next_conllu
 from .token import Token
@@ -161,89 +164,139 @@ class Evidence:
             exit(1)
 
 
-def linguisticate(sentence: list):
+def frobblesnizz(f):
+    '''parse disampursalations from XML file.'''
+    xmltree = xml.etree.ElementTree.parse(f)
+    root = xmltree.getroot()
+    if root.get("version") != "0.0.0":
+        print("Unsupported version", root.get("version"))
+    rules = list()
+    for child in root:
+        # parse stuff
+        if child.tag == 'evidence':
+            e = parse_evidence(child)
+            rules.append(e)
+        else:
+            print("Unknown element disamparsulations:", child)
+            exit(2)
+    return rules
+
+
+def parse_evidence(evidence: Element):
+    '''Parse evidence element block.'''
+    e = Evidence()
+    e.name = evidence.get('name')
+    for child in evidence:
+        if child.tag == 'target':
+            e.target = parse_target(child)
+        elif child.tag == 'likelihood':
+            e.probability = parse_likelihood(child)
+        elif child.tag == 'depname':
+            e.depname = parse_depname(child)
+        elif child.tag == 'context':
+            e.context = parse_context(child)
+        else:
+            print("Unknown element under evidence:", child)
+            exit(2)
+    return e
+
+
+def parse_target(target: Element):
+    '''Parse target definition element.'''
+    t = dict()
+    for child in target:
+        if child.tag == 'upos':
+            t['upos'] = parse_upos(child)
+        elif child.tag == 'ufeats':
+            t['ufeats'] = parse_ufeats(child)
+        else:
+            print("Unknown element under target:",
+                  xml.etree.ElementTree.tostring(child))
+    return t
+
+
+def parse_likelihood(likelihood: Element):
+    '''Parse likelihood element.'''
+    if likelihood.text == 'usually':
+        return 16.0
+    elif likelihood.text == 'unlikely':
+        return -16.0
+    elif likelihood.text == 'probably':
+        return 4.0
+    elif likelihood.text == 'possibly':
+        return 8.0
+    else:
+        print("Unknown likelihood:", likelihood.text)
+        exit(2)
+
+
+def parse_depname(depname: Element):
+    '''Parse depname element.'''
+    return depname.text
+
+
+def parse_context(context: Element):
+    '''Parse context element.'''
+    c = dict()
+    for child in context:
+        if child.tag == 'location':
+            c['location'] = parse_location(child)
+        elif child.tag == 'upos':
+            c['upos'] = parse_upos(child)
+        elif child.tag == 'ufeats':
+            c['ufeats'] = parse_ufeats(child)
+        elif child.tag == 'context':
+            c['context'] = parse_context(child)
+        elif child.tag == 'barrier':
+            c['barrier'] = parse_barrier(child)
+        else:
+            print("Unknown child for context", child)
+            exit(2)
+    return c
+
+
+def parse_upos(upos: Element):
+    '''Parse upos element.'''
+    return upos.text
+
+
+def parse_location(location: Element):
+    '''Parse location element.'''
+    return location.text
+
+
+def parse_ufeats(ufeats: Element):
+    '''Parse ufeats element.'''
+    ufs = dict()
+    for child in ufeats:
+        if child.tag == 'ufeat':
+            name, value = parse_ufeat(child)
+            ufs[name] = value
+        else:
+            print("Unknown child for ufeats", child)
+            exit(2)
+    return ufs
+
+
+def parse_ufeat(ufeat: Element):
+    '''Parse ufeat element.'''
+    return ufeat.get('name'), ufeat.text
+
+
+def parse_barrier(barrier: Element):
+    '''Parse barrier element.'''
+    b = dict()
+    for child in barrier:
+        if child.tag == 'upos':
+            b['upos'] = parse_upos(child)
+        elif child.tag == 'ufeats':
+            b['ufeats'] = parse_ufeats(child)
+    return b
+
+
+def linguisticate(sentence: list, rules: list):
     '''Not a parsing function.'''
     #
-    rules = list()
-    insrule = Evidence()
-    insrule.name = "instructives unlikely"
-    insrule.target = {"ufeats": {"Case": "Ins"}}
-    insrule.unlikelihood = 16.0
-    rules.append(insrule)
-    punctrule = Evidence()
-    punctrule.name = "puncts to nearest main verb"
-    punctrule.target = {"upos": "PUNCT"}
-    punctrule.unlikelihood = -8.0
-    punctrule.depname = "punct"
-    punctrule.context = {"location": "any", "upos": "VERB"}
-    punctrule.barrier = {"upos": "PUNCT"}
-    rules.append(punctrule)
-    rootrule = Evidence()
-    rootrule.name = "verbs can be roots"
-    rootrule.target = {"upos": "VERB"}
-    rootrule.unlikelihood = -8.0
-    rootrule.depname = "root"
-    rootrule.context = {"location": "ROOT"}
-    rules.append(rootrule)
-    ccrule = Evidence()
-    ccrule.name = "cnjcoo coordinates +1"
-    ccrule.target = {"upos": "CCONJ"}
-    ccrule.unlikelihood = -1.0
-    ccrule.depname = "cc"
-    ccrule.context = {"location": "+1"}
-    rules.append(ccrule)
-    amodrule = Evidence()
-    amodrule.name = "adj agrees +1"
-    amodrule.target = {"upos": "ADJ", "ufeats": {"Case": "Ela"}}
-    amodrule.unlikelihood = -1.0
-    amodrule.depname = "amod"
-    amodrule.context = {"location": "+1", "ufeats": {"Case": "Ela"}}
-    rules.append(amodrule)
-    minärule = Evidence()
-    minärule.name = "I subjects agree verb"
-    minärule.target = {"upos": "PRON", "ufeats":
-                       {"PronType": "Prs", "Number": "Sing", "Person": "1",
-                        "Case": "Nom"}}
-    minärule.unlikelihood = -1.0
-    minärule.depname = "nsubj"
-    minärule.context = {"location": "any", "upos": "VERB", "ufeats":
-                        {"Person": "1", "Number": "Sing"}}
-    rules.append(minärule)
-    numprule = Evidence()
-    numprule.name = "Numeral phrase makes nom to par"
-    numprule.target = {"upos": "NUM", "ufeats":
-                       {"NumType": "Card", "Number": "Sing", "Case": "Nom"}}
-    numprule.unlikelihood = -1.0
-    numprule.depname = "nummod"
-    numprule.context = {"location": "+1", "upos": "NOUN", "ufeats":
-                        {"Number": "Sing", "Case": "Par"}}
-    rules.append(numprule)
-    objprule = Evidence()
-    objprule.name = "Partitives are objects"
-    objprule.target = {"upos": "NOUN", "ufeats":
-                       {"Case": "Par"}}
-    objprule.unlikelihood = -1.0
-    objprule.depname = "obj"
-    objprule.context = {"location": "left", "upos": "VERB"}
-    objprule.barrier = {"upos": "PUNCT"}
-    rules.append(objprule)
-    negrule = Evidence()
-    negrule.name = "Negation verb auxes conneg"
-    negrule.target = {"upos": "AUX", "ufeats":
-                      {"Polarity": "Neg"}}
-    negrule.unlikelihood = -1.0
-    negrule.depname = "aux"
-    negrule.context = {"location": "any", "upos": "VERB", "ufeats":
-                       {"Connegative": "Yes"}}
-    negrule.barrier = {"upos": "VERB"}
-    rules.append(negrule)
-    advmodrule = Evidence()
-    advmodrule.name = "adv mods v"
-    advmodrule.target = {"upos": "ADV"}
-    advmodrule.unlikelihood = -1.0
-    advmodrule.depname = "advmod"
-    advmodrule.context = {"location": "any", "upos": "VERB"}
-    rules.append(advmodrule)
     for token in sentence:
         for rule in rules:
             rule.apply(token, sentence)

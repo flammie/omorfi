@@ -9,23 +9,10 @@ from argparse import ArgumentParser, FileType
 from sys import stderr, stdin, stdout
 # statistics
 from time import perf_counter, process_time
-# stuff
-import xml.etree.ElementTree
-
 # omorfi
 from omorfi import Omorfi
 from omorfi.fileformats import next_conllu
-from omorfi.disamparsulate import linguisticate, Evidence
-
-
-def parse_rules(f):
-    xmltree = xml.etree.ElementTree.parse(f)
-    root = xmltree.getroot()
-    for child in root:
-        # parse stuff
-        pass
-    e = Evidence()
-    return [e]
+from omorfi.disamparsulate import linguisticate, frobblesnizz
 
 
 def get_reference_conllu_list(token):
@@ -127,10 +114,10 @@ def main():
     else:
         print("analyser is needed to conllu", file=stderr)
         exit(4)
-    if options.notrules:
+    if options.not_rules:
         if options.verbose:
-            print("Loading", options.notrules)
-        parse_rules(options.notrules)
+            print("Loading", options.not_rules)
+        rules = frobblesnizz(options.not_rules)
     if options.udpipe:
         if options.verbose:
             print("Loading udpipe", options.udpipe)
@@ -190,7 +177,7 @@ def main():
             if token.is_oov():
                 unknowns += 1
                 omorfi.guess(token)
-        linguisticate(sentplus)
+        linguisticate(sentplus, rules)
         print_analyses(sentplus, options)
     cpuend = process_time()
     realend = perf_counter()

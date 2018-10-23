@@ -13,7 +13,7 @@
       <upos>PUNCT</upos>
     </target>
     <likelihood>usually</likelihood>
-    <dep>punct</dep>
+    <depname>punct</depname>
     <context>
       <location>any</location>
       <upos>VERB</upos>
@@ -55,6 +55,80 @@
       <ufeats>
         <ufeat name="Case">Ela</ufeat>
       </ufeats>
+    </context>
+  </evidence>
+  <evidence name="1sg pronoung agrees with 1sg verb">
+    <target>
+      <upos>PRON</upos>
+      <ufeats>
+        <ufeat name="PronType">Prs</ufeat>
+        <ufeat name="Number">Sing</ufeat>
+        <ufeat name="Person">1</ufeat>
+      </ufeats>
+    </target>
+    <likelihood>usually</likelihood>
+    <depname>nsubj</depname>
+    <context>
+      <location>any</location>
+      <upos>VERB</upos>
+      <ufeats>
+        <ufeat name="Number">Sing</ufeat>
+        <ufeat name="Person">1</ufeat>
+      </ufeats>
+      <barrier>
+        <upos>VERB</upos>
+      </barrier>
+    </context>
+  </evidence>
+  <evidence name="Numeral modifier for nom takes par">
+    <target>
+      <upos>NUM</upos>
+      <ufeats>
+        <ufeat name="NumType">Card</ufeat>
+        <ufeat name="Number">Sing</ufeat>
+        <ufeat name="Case">Nom</ufeat>
+      </ufeats>
+    </target>
+    <likelihood>usually</likelihood>
+    <depname>nummod</depname>
+    <context>
+      <location>+1</location>
+      <upos>NOUN</upos>
+      <ufeats>
+        <ufeat name="Number">Sing</ufeat>
+        <ufeat name="Case">Par</ufeat>
+      </ufeats>
+    </context>
+  </evidence>
+  <evidence name="Partitives can be objects">
+    <target>
+      <upos>NOUN</upos>
+      <ufeats>
+        <ufeat name="Case">Par</ufeat>
+      </ufeats>
+    </target>
+    <likelihood>possibly</likelihood>
+    <depname>obj</depname>
+    <context>
+      <location>any</location>
+      <upos>VERB</upos>
+      <barrier>
+        <upos>PUNCT</upos>
+      </barrier>
+    </context>
+  </evidence>
+  <evidence name="Adverbs are ad verbs">
+    <target>
+      <upos>ADV</upos>
+    </target>
+    <likelihood>possibly</likelihood>
+    <depname>advmod</depname>
+    <context>
+      <location>any</location>
+      <upos>VERB</upos>
+      <barrier>
+        <upos>PUNCT</upos>
+      </barrier>
     </context>
   </evidence>
 </disamparsulations>
