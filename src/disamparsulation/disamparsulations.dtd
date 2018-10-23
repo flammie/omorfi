@@ -15,8 +15,10 @@
 -->
 <!ELEMENT disamparsulations (evidence*)>
 <!ATTLIST disamparsulations
-    version CDATA #REQUIRED>
-<!ELEMENT evidence (target, likelihood, depname?, context?)
+    version CDATA #REQUIRED
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT evidence (target, likelihood, depname?, context?)>
 <!ATTLIST evidence
     name CDATA #REQUIRED>
 <!ELEMENT target (upos?, ufeats?)>
