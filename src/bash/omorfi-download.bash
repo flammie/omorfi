@@ -3,6 +3,8 @@
 source $(dirname $0)/omorfi.bash
 args=$@
 
+downloadurl="https://github.com/flammie/omorfi/releases/download/${omorfiapi/_alpha/-alpha}/omorfi-hfst-models-${omorfiapi}.tar.xz"
+
 function print_version() {
     echo "omorfi-download 0.3 (Using omorfi bash API ${omorfiapi})"
     echo "Copyright (c) 2018 Tommi A Pirinen"
@@ -37,6 +39,11 @@ elif test x$1 == x-v -o x$1 == x--verbose ; then
     verbose=verbose
     shift 1
 fi
-
-${wget} https://github.com/flammie/omorfi/releases/${omorfiapi}/omorfi-hfst-models-${omorfiapi}.tar.xz
-${tar} xzvf omorfi-hfst-models-${omorfiapi}.tar.xz
+if ! ${wget} "${downloadurl}" ; then
+    echo "Download failed"
+    exit 1
+fi
+if ! ${tar} Jxvf omorfi-hfst-models-${omorfiapi}.tar.xz ; then
+    echo "Unpacking failed"
+    exit 1
+fi
