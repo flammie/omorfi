@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE disamparsulations SYSTEM "disamparsulations.dtd">
 <!--
-  Copyright (c) 2014 Omorfi contributors
+  Copyright (c) 2018 Omorfi contributors
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -17,137 +17,223 @@
 -->
 <disamparsulations version="0.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="disamparsulations.xsd">
-  <!-- {{{ Single word stuffs -->
-  <evidence name="instructives unlikely">
-    <target>
-      <ufeats>
-        <ufeat name="Case">Ins</ufeat>
-      </ufeats>
-    </target>
-    <likelihood>unlikely</likelihood>
-  </evidence>
-  <evidence name="puncts to nearest main verb">
-    <target>
-      <upos>PUNCT</upos>
-    </target>
-    <likelihood>usually</likelihood>
-    <depname>punct</depname>
-    <context>
-      <location>any</location>
-      <upos>VERB</upos>
-      <barrier>
-        <upos>PUNCT</upos>
-      </barrier>
-    </context>
-  </evidence>
-  <evidence name="verbs can be roots">
-    <target>
-      <upos>VERB</upos>
-    </target>
-    <likelihood>probably</likelihood>
-    <depname>root</depname>
-    <context>
-      <location>ROOT</location>
-    </context>
-  </evidence>
-  <evidence name="cconj coordinates its +1">
-    <target>
-      <upos>CCONJ</upos>
-    </target>
-    <likelihood>probably</likelihood>
-    <context>
-      <location>+1</location>
-    </context>
-  </evidence>
-  <evidence name="elative adj agrees its +1">
-    <target>
-      <upos>ADJ</upos>
-      <ufeats>
-        <ufeat name="Case">Ela</ufeat>
-      </ufeats>
-    </target>
-    <likelihood>usually</likelihood>
-    <depname>amod</depname>
-    <context>
-      <location>+1</location>
-      <ufeats>
-        <ufeat name="Case">Ela</ufeat>
-      </ufeats>
-    </context>
-  </evidence>
-  <evidence name="1sg pronoung agrees with 1sg verb">
-    <target>
-      <upos>PRON</upos>
-      <ufeats>
-        <ufeat name="PronType">Prs</ufeat>
-        <ufeat name="Number">Sing</ufeat>
-        <ufeat name="Person">1</ufeat>
-      </ufeats>
-    </target>
-    <likelihood>usually</likelihood>
-    <depname>nsubj</depname>
-    <context>
-      <location>any</location>
-      <upos>VERB</upos>
-      <ufeats>
-        <ufeat name="Number">Sing</ufeat>
-        <ufeat name="Person">1</ufeat>
-      </ufeats>
-      <barrier>
-        <upos>VERB</upos>
-      </barrier>
-    </context>
-  </evidence>
-  <evidence name="Numeral modifier for nom takes par">
-    <target>
-      <upos>NUM</upos>
-      <ufeats>
-        <ufeat name="NumType">Card</ufeat>
-        <ufeat name="Number">Sing</ufeat>
-        <ufeat name="Case">Nom</ufeat>
-      </ufeats>
-    </target>
-    <likelihood>usually</likelihood>
-    <depname>nummod</depname>
-    <context>
-      <location>+1</location>
-      <upos>NOUN</upos>
-      <ufeats>
-        <ufeat name="Number">Sing</ufeat>
-        <ufeat name="Case">Par</ufeat>
-      </ufeats>
-    </context>
-  </evidence>
-  <evidence name="Partitives can be objects">
-    <target>
-      <upos>NOUN</upos>
-      <ufeats>
-        <ufeat name="Case">Par</ufeat>
-      </ufeats>
-    </target>
-    <likelihood>possibly</likelihood>
-    <depname>obj</depname>
-    <context>
-      <location>any</location>
-      <upos>VERB</upos>
-      <barrier>
-        <upos>PUNCT</upos>
-      </barrier>
-    </context>
-  </evidence>
-  <evidence name="Adverbs are ad verbs">
-    <target>
-      <upos>ADV</upos>
-    </target>
-    <likelihood>possibly</likelihood>
-    <depname>advmod</depname>
-    <context>
-      <location>any</location>
-      <upos>VERB</upos>
-      <barrier>
-        <upos>PUNCT</upos>
-      </barrier>
-    </context>
-  </evidence>
+    xsi:noNamespaceSchemaLocation="disamparsulations.xsd"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+  <matchers>
+    <matcher name="nominal">
+      <match>
+        <upos>NOUN</upos>
+        <upos>ADJ</upos>
+        <upos>PRON</upos>
+        <upos>PROPN</upos>
+      </match>
+    </matcher>
+  </matchers>
+  <evidences>
+    <!-- {{{ Single word stuffs -->
+    <evidence name="instructives unlikely">
+      <documentation>
+        <example>hän oli ryhmänsä nopein</example>
+      </documentation>
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Ins</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <!-- }}}
+         {{{ deps -->
+    <evidence name="puncts to nearest main verb">
+      <target>
+        <match>
+          <upos>PUNCT</upos>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>punct</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="verbs can be roots">
+      <target>
+        <match>
+          <upos>VERB</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>root</depname>
+      <context>
+        <location>ROOT</location>
+      </context>
+    </evidence>
+    <evidence name="cconj coordinates its +1">
+      <target>
+        <match>
+          <upos>CCONJ</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>conj</depname>
+      <context>
+        <location>+1</location>
+      </context>
+    </evidence>
+    <evidence name="elative adj agrees its +1">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Ela</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Ela</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="1sg pronoung agrees with 1sg verb">
+      <target>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="PronType">Prs</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">1</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">1</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>VERB</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Numeral modifier for nom takes par">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case">Nom</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+        <ufeats>
+          <ufeat name="Number">Sing</ufeat>
+          <ufeat name="Case">Par</ufeat>
+        </ufeats>
+      </match>
+      </context>
+    </evidence>
+    <evidence name="Partitives can be objects">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Par</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>obj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Adverbs are ad verbs">
+      <target>
+        <match>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>advmod</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Genitive prn to possessive">
+      <target>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="PronType">Prs</ufeat>
+            <ufeat name="Case">Gen</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">2</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nmod:poss</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <ufeats>
+            <ufeat name="Number[psor]">Sing</ufeat>
+            <ufeat name="Person[psor]">2</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+  </evidences>
 </disamparsulations>

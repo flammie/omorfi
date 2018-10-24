@@ -13,23 +13,41 @@
    You should have received a copy of the GNU General Public License
    along with this program; if not <http://www.gnu.org/licenses/>.
 -->
-<!ELEMENT disamparsulations (evidence*)>
+<!ELEMENT disamparsulations (matchers?, evidences?)>
 <!ATTLIST disamparsulations
     version CDATA #REQUIRED
     xmlns:xsi CDATA #IMPLIED
+    xmlns:html CDATA #IMPLIED
     xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
-<!ELEMENT evidence (target, likelihood, depname?, context?)>
+<!ELEMENT matchers (matcher*)>
+<!ELEMENT matcher (match*)>
+<!ATTLIST matcher
+    name ID #REQUIRED>
+<!ELEMENT match (matchref | (lemma*, upos*, ufeats*))>
+<!ELEMENT matchref EMPTY>
+<!ATTLIST matchref 
+    matcher IDREF #REQUIRED>
+<!ELEMENT evidences (evidence*)>
+<!ELEMENT evidence (documentation?, target, likelihood, depname?, context?)>
 <!ATTLIST evidence
     name CDATA #REQUIRED>
-<!ELEMENT target (upos?, ufeats?)>
+<!ELEMENT documentation (example, html:div?)>
+<!ELEMENT example (#PCDATA)>
+<!ELEMENT html:div (#PCDATA)> 
+<!ELEMENT target (match)>
+<!ELEMENT lemma (#PCDATA)>
 <!ELEMENT upos (#PCDATA)>
 <!ELEMENT ufeats (ufeat*)>
-<!ELEMENT ufeat (#PCDATA)>
+<!ELEMENT ufeat (#PCDATA)*>
 <!ATTLIST ufeat
-    name CDATA #REQUIRED>
+    name CDATA #REQUIRED
+    agreement CDATA #IMPLIED>
+<!-- agreement means unify target with context by name -->
 <!ELEMENT likelihood (#PCDATA)>
 <!ELEMENT depname (#PCDATA)>
-<!ELEMENT context (location, upos?, ufeats?, barrier?)>
+<!ELEMENT context (location, match?, barrier?)>
+<!ATTLIST context
+    negated (yes | no) "no">
 <!ELEMENT location (#PCDATA)>
-<!ELEMENT barrier (upos?, ufeats?)>
+<!ELEMENT barrier (match)>
 
