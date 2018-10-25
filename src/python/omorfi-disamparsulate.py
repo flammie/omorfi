@@ -12,7 +12,7 @@ from time import perf_counter, process_time
 # omorfi
 from omorfi import Omorfi
 from omorfi.fileformats import next_conllu
-from omorfi.disamparsulate import linguisticate, frobblesnizz
+from omorfi.disamparsulate import Disamparsulator
 
 
 def get_reference_conllu_list(token):
@@ -59,8 +59,6 @@ def try_analyses_conllu(token, outfile, hacks=None):
 
 def debug_analyses_conllu(token, outfile, hacks=None):
     anals = token.analyses
-    print("# REFERENCE(python):", get_reference_conllu_list(token),
-          file=outfile)
     for i, anal in enumerate(anals):
         print(token.printable_conllu(hacks, i), file=outfile)
 
@@ -114,10 +112,11 @@ def main():
     else:
         print("analyser is needed to conllu", file=stderr)
         exit(4)
+    disamparsulator = Disamparsulator()
     if options.not_rules:
         if options.verbose:
             print("Loading", options.not_rules)
-        rules = frobblesnizz(options.not_rules)
+        disamparsulator.frobblesnizz(options.not_rules)
     if options.udpipe:
         if options.verbose:
             print("Loading udpipe", options.udpipe)
@@ -177,7 +176,7 @@ def main():
             if token.is_oov():
                 unknowns += 1
                 omorfi.guess(token)
-        linguisticate(sentplus, rules)
+        disamparsulator.linguisticate(sentplus)
         print_analyses(sentplus, options)
     cpuend = process_time()
     realend = perf_counter()

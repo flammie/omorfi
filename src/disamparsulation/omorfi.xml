@@ -19,16 +19,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="disamparsulations.xsd"
     xmlns:html="http://www.w3.org/1999/xhtml">
-  <matchers>
-    <matcher name="nominal">
-      <match>
-        <upos>NOUN</upos>
-        <upos>ADJ</upos>
-        <upos>PRON</upos>
-        <upos>PROPN</upos>
-      </match>
-    </matcher>
-  </matchers>
   <evidences>
     <!-- {{{ Single word stuffs -->
     <evidence name="instructives unlikely">
@@ -43,6 +33,136 @@
         </match>
       </target>
       <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="rather rare nouns that shadow common function words">
+      <documentation>
+        <example>vain elämää</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>edus</lemma>
+          <lemma>kos</lemma>
+          <lemma>kui</lemma>
+          <lemma>kuvi</lemma>
+          <lemma>lev</lemma>
+          <lemma>mon</lemma>
+          <lemma>pai</lemma>
+          <lemma>par</lemma>
+          <lemma>tai</lemma>
+          <lemma>taka</lemma>
+          <lemma>tule</lemma>
+          <lemma>vai</lemma>
+          <upos>NOUN</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="rather rare proper nouns that shadow common nouns etc.">
+      <documentation>
+        <example>Vanha Mies ja Pyhä Metsä</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>Vanha</lemma>
+          <lemma>Mei</lemma>
+          <lemma>Osa</lemma>
+          <lemma>Hanska</lemma>
+          <lemma>Osta</lemma>
+          <lemma>Leikkaa</lemma>
+          <lemma>Varo</lemma>
+          <lemma>Tarkki</lemma>
+          <lemma>Onkki</lemma>
+          <lemma>Ede</lemma>
+          <lemma>Mietti</lemma>
+          <lemma>Metsä</lemma>
+          <upos>PROPN</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="rare adverbs that have commoner adposition or noun versions">
+      <documentation>
+        <example>viisi pitkää tikkua</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>kuin</lemma>
+          <lemma>kun</lemma>
+          <lemma>tai</lemma>
+          <lemma>sen</lemma>
+          <lemma>viisi</lemma>
+          <lemma>kuuluu</lemma>
+          <lemma>koska</lemma>
+          <lemma>pitkää</lemma>
+          <lemma>sinut</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="rare verbs that partially overlap nouns">
+      <documentation>
+        <example>juuri nytkin siitä mennään</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>juuria</lemma>
+          <lemma>eritä</lemma>
+          <lemma>niittää</lemma>
+          <lemma>nytkiä</lemma>
+          <lemma>siitä</lemma>
+          <lemma>siittää</lemma>
+          <lemma>suomia</lemma>
+          <lemma>suoria</lemma>
+          <lemma>vastoa</lemma>
+          <lemma>oieta</lemma>
+          <lemma>niistää</lemma>
+          <upos>VERB</upos>
+        </match>
+      </target>
+      <likelihood>uncommonly</likelihood>
+    </evidence>
+    <evidence name="typically adverbs though sometimes noun etc. reading is ok">
+      <documentation>
+        <example>läpeensä paha</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>erikseen</lemma>
+          <lemma>erilleen</lemma>
+          <lemma>erillään</lemma>
+          <lemma>lainkaan</lemma>
+          <lemma>läpeensä</lemma>
+          <lemma>kaikkiaan</lemma>
+          <lemma>kumminkaan</lemma>
+          <lemma>kumminkin</lemma>
+          <lemma>kotoisin</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="typically adverbs though sometimes noun etc. reading is ok">
+      <documentation>
+        <example>käydään yhdessä sotaan</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>yhdessä</lemma>
+          <lemma>vinossa</lemma>
+          <lemma>pystyssä</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <context negated="yes">
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Ine</ufeat>
+          </ufeats>
+        </match>
+      </context>
     </evidence>
     <!-- }}}
          {{{ deps -->
@@ -66,10 +186,13 @@
         </barrier>
       </context>
     </evidence>
-    <evidence name="verbs can be roots">
+    <evidence name="finite verbs can be roots">
       <target>
         <match>
           <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
         </match>
       </target>
       <likelihood>probably</likelihood>
@@ -226,6 +349,49 @@
           <ufeats>
             <ufeat name="Number[psor]">Sing</ufeat>
             <ufeat name="Person[psor]">2</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Adps with genitive complement can be case">
+      <target>
+        <match>
+          <lemma>takana</lemma>
+          <lemma>mukaan</lemma>
+          <lemma>vuoksi</lemma>
+          <lemma>alla</lemma>
+          <lemma>kanssa</lemma>
+          <lemma>kautta</lemma>
+          <lemma>puolesta</lemma>
+          <lemma>läpi</lemma>
+          <lemma>johdolla</lemma>
+          <lemma>sisällä</lemma>
+          <lemma>perusteella</lemma>
+          <lemma>sijaan</lemma>
+          <lemma>suhteen</lemma>
+          <lemma>avulla</lemma>
+          <lemma>jälkeen</lemma>
+          <lemma>myötä</lemma>
+          <lemma>edessä</lemma>
+          <lemma>alle</lemma>
+          <upos>ADP</upos>
+          <ufeats>
+            <ufeat name="AdpType">Post</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>case</depname>
+      <context>
+        <location>left</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Gen</ufeat>
           </ufeats>
         </match>
         <barrier>

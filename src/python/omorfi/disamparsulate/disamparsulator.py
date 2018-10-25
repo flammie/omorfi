@@ -21,7 +21,6 @@ class Disamparsulator:
     """Disamparsulator is one such non-parser."""
 
     def __init__(self):
-        self.matchers = dict()
         self.rules = list()
 
     def frobblesnizz(self, f):
@@ -33,31 +32,12 @@ class Disamparsulator:
         rules = list()
         for child in root:
             # parse stuff
-            if child.tag == 'matchers':
-                self.parse_matchers(child)
-            elif child.tag == 'evidences':
+            if child.tag == 'evidences':
                 self.parse_evidences(child)
             else:
                 print("Unknown element disamparsulations:", child.tag)
                 exit(2)
         return rules
-
-    def parse_matchers(self, matchers: Element):
-        for child in matchers:
-            if child.tag == 'matcher':
-                matcher = self.parse_matcher(child)
-                self.matchers[child.get('name')] = matcher
-            else:
-                print("Unknown element in matchers", child.tag)
-                exit(2)
-
-    def parse_matcher(self, matcher: Element):
-        matches = list()
-        for child in matcher:
-            if child.tag == 'match':
-                m = self.parse_match(child)
-                matches.append(m)
-        return matches
 
     def parse_evidences(self, evidences: Element):
         for child in evidences:
@@ -105,6 +85,9 @@ class Disamparsulator:
             if child.tag == 'upos':
                 upos = self.parse_upos(child)
                 m.uposes.append(upos)
+            elif child.tag == 'lemma':
+                ufeats = self.parse_lemma(child)
+                m.lemmas.append(ufeats)
             elif child.tag == 'ufeats':
                 ufeats = self.parse_ufeats(child)
                 m.ufeatses.append(ufeats)
@@ -119,6 +102,8 @@ class Disamparsulator:
             return 16.0
         elif likelihood.text == 'unlikely':
             return -16.0
+        elif likelihood.text == 'uncommonly':
+            return -4.0
         elif likelihood.text == 'probably':
             return 4.0
         elif likelihood.text == 'possibly':
@@ -148,7 +133,15 @@ class Disamparsulator:
 
     def parse_upos(self, upos: Element):
         '''Parse upos element.'''
+        if upos.text not in ['NOUN', 'VERB', 'ADV', 'ADJ', 'ADP',
+                             'INTJ', 'PUNCT', 'SYM', 'CCONJ', 'SCONJ',
+                             'PRON', 'NUM']:
+            print("invalid upos in", xml.etree.ElementTree.tostring(upos))
         return upos.text
+
+    def parse_lemma(self, lemma: Element):
+        '''Parse upos element.'''
+        return lemma.text
 
     def parse_location(self, location: Element):
         '''Parse location element.'''

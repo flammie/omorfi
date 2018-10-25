@@ -20,6 +20,14 @@ class Matcher:
 
     def matches(self, analysis: Analysis):
         """Checks if token matches given params."""
+        if self.lemmas:
+            found = False
+            for lemma in self.lemmas:
+                if '#'.join(analysis.lemmas) == lemma:
+                    found = True
+                    break
+            if not found:
+                return False
         if self.uposes:
             found = False
             for upos in self.uposes:

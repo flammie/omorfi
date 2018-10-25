@@ -19,14 +19,7 @@
     xmlns:xsi CDATA #IMPLIED
     xmlns:html CDATA #IMPLIED
     xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
-<!ELEMENT matchers (matcher*)>
-<!ELEMENT matcher (match*)>
-<!ATTLIST matcher
-    name ID #REQUIRED>
-<!ELEMENT match (matchref | (lemma*, upos*, ufeats*))>
-<!ELEMENT matchref EMPTY>
-<!ATTLIST matchref 
-    matcher IDREF #REQUIRED>
+<!ELEMENT match (lemma*, upos*, ufeats*)>
 <!ELEMENT evidences (evidence*)>
 <!ELEMENT evidence (documentation?, target, likelihood, depname?, context?)>
 <!ATTLIST evidence
