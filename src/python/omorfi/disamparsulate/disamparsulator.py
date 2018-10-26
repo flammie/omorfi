@@ -135,7 +135,7 @@ class Disamparsulator:
         '''Parse upos element.'''
         if upos.text not in ['NOUN', 'VERB', 'ADV', 'ADJ', 'ADP',
                              'INTJ', 'PUNCT', 'SYM', 'CCONJ', 'SCONJ',
-                             'PRON', 'NUM']:
+                             'PRON', 'NUM', 'PROPN', 'DET']:
             print("invalid upos in", xml.etree.ElementTree.tostring(upos))
         return upos.text
 

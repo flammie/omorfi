@@ -164,6 +164,67 @@
         </match>
       </context>
     </evidence>
+    <evidence name="Second singular possessives unlikely unless proven">
+      <documentation>
+        <example>voisi olla</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>kuu</lemma>
+          <lemma>voi</lemma>
+          <lemma>tie</lemma>
+          <lemma>tunti</lemma>
+          <lemma>lupa</lemma>
+          <lemma>rupi</lemma>
+          <lemma>hai</lemma>
+          <lemma>taju</lemma>
+          <lemma>pyy</lemma>
+          <lemma>kerä</lemma>
+          <lemma>vasta</lemma>
+          <lemma>pää</lemma>
+          <lemma>harja</lemma>
+          <lemma>vuo</lemma>
+          <lemma>halu</lemma>
+          <lemma>tapa</lemma>
+          <lemma>tosi</lemma>
+          <lemma>pola</lemma>
+          <lemma>poli</lemma>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Number[psor]">Sing</ufeat>
+            <ufeat name="Person[psor]">2</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+      <context negated="yes">
+        <location>-1</location>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="PronType">Prs</ufeat>
+            <ufeat name="Case">Gen</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">2</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence>
+      <target>
+        <match>
+          <lemma>sekä</lemma>
+          <upos>CCONJ</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+      <context negated="yes">
+        <location>right</location>
+        <match>
+          <lemma>että</lemma>
+        </match>
+      </context>
+    </evidence>
     <!-- }}}
          {{{ deps -->
     <evidence name="puncts to nearest main verb">
@@ -358,7 +419,24 @@
         </barrier>
       </context>
     </evidence>
-    <evidence name="Adps with genitive complement can be case">
+    <evidence name="Genitive could be a possession">
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Gen</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nmod:poss</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="Postpositions with genitive complement can be case">
       <target>
         <match>
           <lemma>takana</lemma>
@@ -397,9 +475,93 @@
         <barrier>
           <match>
             <upos>PUNCT</upos>
+            <upos>ADP</upos>
           </match>
         </barrier>
       </context>
     </evidence>
+    <evidence name="Postpositions with partitive complement can be case">
+      <target>
+        <match>
+          <lemma>ylös</lemma>
+          <lemma>päin</lemma>
+          <lemma>vastaan</lemma>
+          <lemma>ilman</lemma>
+          <lemma>kautta</lemma>
+          <lemma>huolimatta</lemma>
+          <lemma>ennen</lemma>
+          <upos>ADP</upos>
+          <ufeats>
+            <ufeat name="AdpType">Post</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>case</depname>
+      <context>
+        <location>left</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Par</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>ADP</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <!-- agreements (I'll maybe make macro agreement later) -->
+    <evidence name="Adjective agreeing in inessive">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Ine</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Ine</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Determiner agreement in inessive">
+      <target>
+        <match>
+          <lemma>se</lemma>
+          <lemma>kaikki</lemma>
+          <lemma>tämä</lemma>
+          <upos>PRON</upos>
+          <upos>DET</upos>
+          <ufeats>
+            <ufeat name="Case">Ine</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>det</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+        </match>
+      </context>
+    </evidence>
+
   </evidences>
 </disamparsulations>

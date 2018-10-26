@@ -104,7 +104,7 @@ class Evidence:
         elif self.context['location'] == 'left':
             if not head.pos < target.pos:
                 return False
-            if self.context['barrier']:
+            if 'barrier' in self.context:
                 for blocker in sentence:
                     if blocker.pos < head.pos or blocker.pos > target.pos:
                         continue
@@ -115,7 +115,7 @@ class Evidence:
         elif self.context['location'] == 'right':
             if not head.pos > target.pos:
                 return False
-            if self.context['barrier']:
+            if 'barrier' in self.context:
                 for blocker in sentence:
                     if blocker.pos > head.pos or blocker.pos < target.pos:
                         continue
@@ -124,7 +124,7 @@ class Evidence:
                             return False
             return True
         elif self.context['location'] == 'any':
-            if self.context['barrier']:
+            if 'barrier' in self.context:
                 for blocker in sentence:
                     if blocker.pos < min(head.pos, target.pos) or \
                             blocker.pos > max(target.pos, head.pos) or \
