@@ -90,7 +90,8 @@ def main():
                                     strict=True)
         for tsv_parts in tsv_reader:
             if len(tsv_parts) < 2 or tsv_parts['lemma'] == None or \
-                    tsv_parts['homonym'] == None:
+                    tsv_parts['homonym'] == None or \
+                    tsv_parts['origin'] == None:
                 print("Too few tabs on line, skipping:", tsv_parts)
                 continue
             lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
@@ -98,7 +99,10 @@ def main():
                 reflex = lexdata[lexkey]
                 if reflex['new_para'] == tsv_parts['new_para']:
                     # add origin
-                    lexdata[lexkey]['origin'] += '|' + tsv_parts['origin']
+                    if lexdata[lexkey]['origin'] == 'unk':
+                        lexdata[lexkey]['origin'] = tsv_parts['origin']
+                    else:
+                        lexdata[lexkey]['origin'] += '|' + tsv_parts['origin']
                     merged += 1
                 else:
                     lexparas = tsv_parts['new_para'].split('_')
@@ -107,11 +111,14 @@ def main():
                         if args.verbose:
                             print("merging", lexkey, "fuzzy match", lexparas,
                                   refparas)
-                        lexdata[lexkey]['origin'] += '|' + \
-                                tsv_parts['origin']
+                        if lexdata[lexkey]['origin'] == 'unk':
+                            lexdata[lexkey]['origin'] = tsv_parts['origin']
+                        else:
+                            lexdata[lexkey]['origin'] += '|' +\
+                                                         tsv_parts['origin']
                     else:
                         print("cannot merge (new, old):", tsv_parts,
-                                lexdata[lexkey], sep='\n')
+                              lexdata[lexkey], sep='\n')
                         missed += 1
             else:
                 lexdata[lexkey] = tsv_parts

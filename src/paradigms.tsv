@@ -389,6 +389,7 @@ NOUN_HYLJE	NOUN	NOUN	48	L	False	strengthen	front	None	None	False	False	[ÄÖYIE�
 NOUN_HYLKY	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	ky	ky
 NOUN_HYNTTEET	NOUN	NOUN	48	C	obligatory	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tteet	teet
 NOUN_HYNTTYYT	NOUN	NOUN	17	None	obligatory	weaken	front	None	None	False	False	ttyyt	tyyt
+NOUN_VANTTUUT	NOUN	NOUN	17	None	obligatory	weaken	back	None	None	False	False	ttuut	tuut
 NOUN_HÄIRIÖ	NOUN	NOUN	3	None	False	weaken	front	None	None	False	False	ö
 NOUN_HÄKKI	NOUN	NOUN	5	A|D	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki	ki
 NOUN_HÄKKYRÄ	NOUN	NOUN	12	None	False	weaken	front	ä	None	False	False	ä	ä
@@ -541,6 +542,7 @@ NOUN_MÖMMÖ	NOUN	NOUN	1	None	False	weaken	front	None	None	False	False	ö
 NOUN_MÖRKÖ	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	kö	kö
 NOUN_NALLE	NOUN	NOUN	8	None	False	weaken	back	None	None	False	False	[Eeëěĕ]
 NOUN_NEITSYT	NOUN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
+PROPN_NEITSYT	PROPN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 NOUN_NEUVOTTELUT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 NOUN_NIHTI	NOUN	NOUN	5	F	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ti	ti
 NOUN_NIITUT	NOUN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
@@ -1831,6 +1833,7 @@ PROPN_MAKKARA	PROPN	NOUN	12	None	False	weaken	back	a	None	False	False	a	a
 PROPN_MAKU	PROPN	NOUN	1	D	False	weaken	back	None	None	False	False	ku	ku
 PROPN_MALKO	PROPN	NOUN	1	M	False	weaken	back	None	None	False	False	ko	ko
 PROPN_MALMÖ	PROPN	NOUN	21	None	False	weaken	front	ö	None	False	False	.
+PROPN_MANNER	PROPN	NOUN	49	J	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nner	ner
 PROPN_MARKKINAT	PROPN	NOUN	12	None	obligatory	weaken	back	None	None	False	False	at	at
 PROPN_MATEE	PROPN	NOUN	18	None	False	weaken	back	e	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 PROPN_MATKUET	PROPN	NOUN	43	None	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et	et
