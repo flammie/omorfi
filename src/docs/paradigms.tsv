@@ -751,6 +751,7 @@ NOUN_VALTA	Dictionary class 9 t~l
 NOUN_VANHEMMAT	Dictionary class xxx matt plurale tantum
 NOUN_VANHEMPI	Dictionary class 16
 NOUN_VANKI	Dictionary class 5 back k~g
+NOUN_VANTTUUT	Dictionary class ntyyaat plurale tantum
 NOUN_VANTUS	Dictionary class 41 tus
 NOUN_VARAS	Dictionary class 41 as
 NOUN_VARAT	Dictionary class xxx rrt plurale tantum
@@ -1831,6 +1832,7 @@ PROPN_MAKKARA	Dictionary class 12 back
 PROPN_MAKU	Dictionary class 1ku
 PROPN_MALKO	k:0
 PROPN_MALMÖ	inflects like NOUN_MÖMMÖ, hön illative possible
+PROPN_MANNER	Dictionary class 49 ner
 PROPN_MARKKINAT	Dictionary class xxx a front plurale tantum
 PROPN_MATEE
 PROPN_MATKUET
@@ -1854,6 +1856,7 @@ PROPN_MÄTTÄÄT
 PROPN_MÖMMÖ	Dictionary class 1ö
 PROPN_MÖRKÖ	Dictionary class 1rkö
 PROPN_NALLE	Dictionary class 8 back
+PROPN_NEITSYT	Dictionary class 43 front
 PROPN_NEUVOTTELUT	Dictionary class 3lut plurale tantum
 PROPN_NG	Vowelless foreign proper nouns, tentatively inflects like zen, punk
 PROPN_NIEMET
