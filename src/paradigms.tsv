@@ -389,7 +389,6 @@ NOUN_HYLJE	NOUN	NOUN	48	L	False	strengthen	front	None	None	False	False	[ÄÖYIE�
 NOUN_HYLKY	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	ky	ky
 NOUN_HYNTTEET	NOUN	NOUN	48	C	obligatory	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tteet	teet
 NOUN_HYNTTYYT	NOUN	NOUN	17	None	obligatory	weaken	front	None	None	False	False	ttyyt	tyyt
-NOUN_VANTTUUT	NOUN	NOUN	17	None	obligatory	weaken	back	None	None	False	False	ttuut	tuut
 NOUN_HÄIRIÖ	NOUN	NOUN	3	None	False	weaken	front	None	None	False	False	ö
 NOUN_HÄKKI	NOUN	NOUN	5	A|D	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki	ki
 NOUN_HÄKKYRÄ	NOUN	NOUN	12	None	False	weaken	front	ä	None	False	False	ä	ä
@@ -542,7 +541,6 @@ NOUN_MÖMMÖ	NOUN	NOUN	1	None	False	weaken	front	None	None	False	False	ö
 NOUN_MÖRKÖ	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	kö	kö
 NOUN_NALLE	NOUN	NOUN	8	None	False	weaken	back	None	None	False	False	[Eeëěĕ]
 NOUN_NEITSYT	NOUN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
-PROPN_NEITSYT	PROPN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 NOUN_NEUVOTTELUT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 NOUN_NIHTI	NOUN	NOUN	5	F	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ti	ti
 NOUN_NIITUT	NOUN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
@@ -753,6 +751,7 @@ NOUN_VALTA	NOUN	NOUN	9	I	False	weaken	back	a	None	False	False	lta	ta
 NOUN_VANHEMMAT	NOUN	NOUN	16	H	obligatory	weaken	back	None	None	False	False	mmat	mat
 NOUN_VANHEMPI	NOUN	NOUN	16	H	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi	pi
 NOUN_VANKI	NOUN	NOUN	5	G	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nki	ki
+NOUN_VANTTUUT	NOUN	NOUN	17	None	obligatory	weaken	back	None	None	False	False	ttuut	tuut
 NOUN_VANTUS	NOUN	NOUN	41	C	False	strengthen	back	None	None	False	False	tus	us
 NOUN_VARAS	NOUN	NOUN	41	D	False	strengthen	back	None	None	False	False	as	as
 NOUN_VARAT	NOUN	NOUN	9	None	obligatory	weaken	back	None	None	False	False	at	at
@@ -1526,7 +1525,7 @@ PRON_ERÄS	PRON	PRONOUN	41	None	False	strengthen	front	None	None	False	False	s	s
 PRON_HÄN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	hän
 PRON_HÄÄ	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	hää	ä
 PRON_IKINEN	PRON	PRONOUN	38	None	False	strengthen	front	None	None	False	False	nen	nen
-PRON_ITSE	PRON	PRONOUN	8	None	False	weaken	front	None	None	False	False	itse
+PRON_ITSE	PRON	PRONOUN	8	None	False	weaken	front	None	None	False	False	its?e	
 PRON_JOKA	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	ka	ka
 PRON_JOKAINEN	PRON	PRONOUN	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen	nen
 PRON_JOKIN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	kin	kin
@@ -1857,6 +1856,7 @@ PROPN_MÄTTÄÄT	PROPN	NOUN	41	C	obligatory	strengthen	front	None	None	False	Fal
 PROPN_MÖMMÖ	PROPN	NOUN	1	None	False	weaken	front	None	None	False	False	ö
 PROPN_MÖRKÖ	PROPN	NOUN	1	D	False	weaken	front	None	None	False	False	kö	kö
 PROPN_NALLE	PROPN	NOUN	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*[Eeëěĕ]
+PROPN_NEITSYT	PROPN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 PROPN_NEUVOTTELUT	PROPN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 PROPN_NG	PROPN	NOUN	5	None	False	weaken	both	None	None	False	False	.
 PROPN_NIEMET	PROPN	NOUN	25	None	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*et	t
