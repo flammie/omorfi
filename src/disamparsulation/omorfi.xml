@@ -21,6 +21,29 @@
     xmlns:html="http://www.w3.org/1999/xhtml">
   <evidences>
     <!-- {{{ Single word stuffs -->
+    <evidence name="Styles unlikely">
+      <documentation>
+        <example>myös hän oli siellä</example>
+      </documentation>
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Style">Coll</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="Typos unlikely">
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Typo">Yes</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
     <evidence name="instructives unlikely">
       <documentation>
         <example>hän oli ryhmänsä nopein</example>
@@ -210,7 +233,7 @@
         </match>
       </context>
     </evidence>
-    <evidence>
+    <evidence name="sekä is probably not cconj without että">
       <target>
         <match>
           <lemma>sekä</lemma>
@@ -419,6 +442,24 @@
         </barrier>
       </context>
     </evidence>
+    <evidence name="Adessive before copula for possession">
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Ade</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nmod:own</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <lemma>olla</lemma>
+          <upos>AUX</upos>
+        </match>
+      </context>
+    </evidence>
     <evidence name="Genitive could be a possession">
       <target>
         <match>
@@ -475,7 +516,6 @@
         <barrier>
           <match>
             <upos>PUNCT</upos>
-            <upos>ADP</upos>
           </match>
         </barrier>
       </context>
@@ -508,12 +548,32 @@
         <barrier>
           <match>
             <upos>PUNCT</upos>
-            <upos>ADP</upos>
           </match>
         </barrier>
       </context>
     </evidence>
     <!-- agreements (I'll maybe make macro agreement later) -->
+    <evidence name="Adjective agreeing in nominative">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
     <evidence name="Adjective agreeing in inessive">
       <target>
         <match>
@@ -533,11 +593,69 @@
             <ufeat name="Case">Ine</ufeat>
           </ufeats>
         </match>
-        <barrier>
-          <match>
-            <upos>PUNCT</upos>
-          </match>
-        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Adjective agreeing in illative">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Ill</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Ill</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="Adjective agreeing in illative">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Par</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Par</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="Adjective agreeing in allative">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">All</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">All</ufeat>
+          </ufeats>
+        </match>
       </context>
     </evidence>
     <evidence name="Determiner agreement in inessive">
