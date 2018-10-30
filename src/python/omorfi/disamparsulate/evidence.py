@@ -48,7 +48,8 @@ class Evidence:
                 if not heads:
                     matched = False
                     continue
-            if matched:
+            if (matched and "negated" not in self.context) or \
+                    (not matched and "negated" in self.context):
                 if self.unlikelihood > 0:
                     analysis.weight += self.unlikelihood
                 elif self.unlikelihood < 0:
@@ -57,21 +58,33 @@ class Evidence:
                             b.weight -= self.unlikelihood
                 for head in heads:
                     # we actually want to copy analysis per head
+                    distance = abs(token.pos - head['pos'])
+                    if distance == 0:
+                        distance = 1
                     if self.depname:
                         if analysis.udepname:
                             newdep = copy(analysis)
+                            oldd = abs(token.pos - newdep.udeppos)
+                            if oldd == 0:
+                                oldd = 1
+                            newdep.weight += self.unlikelihood * 0.1 * oldd
                             newdep.udepname = self.depname
                             newdep.udeppos = head['pos']
+                            newdep.weight -= self.unlikelihood * \
+                                0.1 * distance
                             newdeps.append(newdep)
                         else:
                             analysis.udepname = self.depname
                             analysis.udeppos = head['pos']
+                            analysis.weight -= self.unlikelihood * \
+                                0.1 * distance
                     # also reweight the head
                     for w in sentence:
                         if w.pos == head['pos']:
                             for a in w.analyses:
                                 if a != head['a']:
-                                    a.weight -= self.unlikelihood
+                                    a.weight -= self.unlikelihood / \
+                                        distance
         # append new stuff at the end to avoid eterbnal loops
         for anal in newdeps:
             token.analyses.append(anal)
@@ -120,7 +133,7 @@ class Evidence:
                     if blocker.pos > head.pos or blocker.pos < target.pos:
                         continue
                     for anal in blocker.analyses:
-                        if self.context['barrier'](anal):
+                        if self.context['barrier'].matches(anal):
                             return False
             return True
         elif self.context['location'] == 'any':

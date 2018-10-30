@@ -56,7 +56,7 @@ class Disamparsulator:
             if child.tag == 'target':
                 e.target = self.parse_target(child)
             elif child.tag == 'likelihood':
-                e.probability = self.parse_likelihood(child)
+                e.unlikelihood = -self.parse_likelihood(child)
             elif child.tag == 'depname':
                 e.depname = self.parse_depname(child)
             elif child.tag == 'context':
@@ -119,6 +119,8 @@ class Disamparsulator:
     def parse_context(self, context: Element):
         '''Parse context element.'''
         c = dict()
+        if "negated" in context:
+            c["negated"] = True
         for child in context:
             if child.tag == 'location':
                 c['location'] = self.parse_location(child)
@@ -135,7 +137,7 @@ class Disamparsulator:
         '''Parse upos element.'''
         if upos.text not in ['NOUN', 'VERB', 'ADV', 'ADJ', 'ADP',
                              'INTJ', 'PUNCT', 'SYM', 'CCONJ', 'SCONJ',
-                             'PRON', 'NUM', 'PROPN', 'DET']:
+                             'PRON', 'NUM', 'PROPN', 'DET', 'AUX']:
             print("invalid upos in", xml.etree.ElementTree.tostring(upos))
         return upos.text
 
