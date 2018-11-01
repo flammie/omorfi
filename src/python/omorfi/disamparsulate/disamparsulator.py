@@ -100,14 +100,14 @@ class Disamparsulator:
         '''Parse likelihood element.'''
         if likelihood.text == 'usually':
             return 16.0
+        elif likelihood.text == 'probably':
+            return 8.0
+        elif likelihood.text == 'possibly':
+            return 2.0
         elif likelihood.text == 'unlikely':
             return -16.0
         elif likelihood.text == 'uncommonly':
             return -4.0
-        elif likelihood.text == 'probably':
-            return 4.0
-        elif likelihood.text == 'possibly':
-            return 8.0
         else:
             print("Unknown likelihood:", likelihood.text)
             exit(2)
@@ -119,7 +119,7 @@ class Disamparsulator:
     def parse_context(self, context: Element):
         '''Parse context element.'''
         c = dict()
-        if "negated" in context:
+        if context.get("negated"):
             c["negated"] = True
         for child in context:
             if child.tag == 'location':

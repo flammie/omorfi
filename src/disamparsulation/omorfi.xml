@@ -80,6 +80,25 @@
       </target>
       <likelihood>unlikely</likelihood>
     </evidence>
+    <evidence name="Helsing is unlikely without van">
+      <documentation>
+        <example>Helsingin rautatieasema</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>Helsing</lemma>
+          <upos>PROPN</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+      <context negated="yes">
+        <location>-1</location>
+        <match>
+          <lemma>van</lemma>
+          <upos>PROPN</upos>
+        </match>
+      </context>
+    </evidence>
     <evidence name="rather rare proper nouns that shadow common nouns etc.">
       <documentation>
         <example>Vanha Mies ja Pyhä Metsä</example>
@@ -98,6 +117,7 @@
           <lemma>Ede</lemma>
           <lemma>Mietti</lemma>
           <lemma>Metsä</lemma>
+          <lemma>Asema</lemma>
           <upos>PROPN</upos>
         </match>
       </target>
@@ -248,6 +268,20 @@
         </match>
       </context>
     </evidence>
+    <evidence name="sconjs are likely after ,">
+      <target>
+        <match>
+          <upos>SCONJ</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <context>
+        <location>-1</location>
+        <match>
+          <lemma>,</lemma>
+        </match>
+      </context>
+    </evidence>
     <!-- }}}
          {{{ deps -->
     <evidence name="puncts to nearest main verb">
@@ -279,7 +313,7 @@
           </ufeats>
         </match>
       </target>
-      <likelihood>probably</likelihood>
+      <likelihood>possibly</likelihood>
       <depname>root</depname>
       <context>
         <location>ROOT</location>
@@ -341,7 +375,9 @@
         </match>
         <barrier>
           <match>
-            <upos>VERB</upos>
+            <upos>CCONJ</upos>
+            <upos>SCONJ</upos>
+            <upos>PUNCT</upos>
           </match>
         </barrier>
       </context>
@@ -370,6 +406,32 @@
       </match>
       </context>
     </evidence>
+    <evidence name="Genitives singulars can be objects">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case">Par</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>obj</depname>
+      <context>
+        <location>left</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>CCONJ</upos>
+            <upos>SCONJ</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
     <evidence name="Partitives can be objects">
       <target>
         <match>
@@ -382,13 +444,15 @@
       <likelihood>possibly</likelihood>
       <depname>obj</depname>
       <context>
-        <location>any</location>
+        <location>left</location>
         <match>
           <upos>VERB</upos>
         </match>
         <barrier>
           <match>
             <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
           </match>
         </barrier>
       </context>
@@ -396,6 +460,10 @@
     <evidence name="Adverbs are ad verbs">
       <target>
         <match>
+          <lemma>siis</lemma>
+          <lemma>sitten</lemma>
+          <lemma>jo</lemma>
+          <lemma>yleensä</lemma>
           <upos>ADV</upos>
         </match>
       </target>
@@ -681,5 +749,91 @@
       </context>
     </evidence>
 
+    <evidence name="negative verb with conneg">
+      <target>
+        <match>
+          <upos>AUX</upos>
+          <ufeats>
+            <ufeat name="Polarity">Neg</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>aux</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Connegative">Yes</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="nouns nominativs can be subjects for 3rd sg">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="nouns nominativs can be subjects for 3rd pl">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
   </evidences>
 </disamparsulations>

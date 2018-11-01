@@ -47,7 +47,6 @@ class Evidence:
                 heads = self.find_context(token, sentence)
                 if not heads:
                     matched = False
-                    continue
             if (matched and "negated" not in self.context) or \
                     (not matched and "negated" in self.context):
                 if self.unlikelihood > 0:
