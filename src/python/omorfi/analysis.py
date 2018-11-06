@@ -120,6 +120,7 @@ class Analysis:
         a.upos = OmorFormatter.get_upos(s)
         a.lemmas = OmorFormatter.get_lemmas(s)
         a.weight += len(a.lemmas) - 1
+        a.weight += s.count('DRV')
         feats = OmorFormatter.get_last_feats(s)
         if not feats:
             a.ufeats = None
