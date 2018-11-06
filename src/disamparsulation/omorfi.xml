@@ -270,6 +270,28 @@
         </barrier>
       </context>
     </evidence>
+    <evidence name="auxiliaries aux verbs">
+      <target>
+          <match>
+              <lemma>voida</lemma>
+          <upos>AUX</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>aux</depname>
+      <context>
+          <location>+1</location>
+          <match>
+              <upos>VERB</upos>
+              <ufeats>
+                <ufeat name="InfForm">1</ufeat>
+              </ufeats>
+          </match>
+      </context>
+    </evidence>
     <evidence name="finite verbs can be roots">
       <target>
         <match>
@@ -368,6 +390,54 @@
           <ufeat name="Case">Par</ufeat>
         </ufeats>
       </match>
+      </context>
+    </evidence>
+    <evidence name="Nominatives plur can be objects">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>obj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Genitives sing can be objects">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Gen</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>obj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
       </context>
     </evidence>
     <evidence name="Partitives can be objects">
@@ -511,6 +581,32 @@
         <match>
           <ufeats>
             <ufeat name="Case">Gen</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Prepositions with partitive complement can be case">
+      <target>
+        <match>
+          <lemma>ennen</lemma>
+          <upos>ADP</upos>
+          <ufeats>
+            <ufeat name="AdpType">Pre</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>case</depname>
+      <context>
+        <location>left</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Par</ufeat>
           </ufeats>
         </match>
         <barrier>
