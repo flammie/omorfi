@@ -21,6 +21,7 @@
     xmlns:html="http://www.w3.org/1999/xhtml">
   <evidences>
     <!-- {{{ Single word stuffs -->
+    <!-- {{{ rare tags extra penalties -->
     <evidence name="Styles unlikely">
       <documentation>
         <example>myös hän oli siellä</example>
@@ -50,6 +51,8 @@
       </documentation>
       <target>
         <match>
+          <upos>NOUN</upos>
+          <upos>ADJ</upos>
           <ufeats>
             <ufeat name="Case">Ins</ufeat>
           </ufeats>
@@ -57,6 +60,20 @@
       </target>
       <likelihood>unlikely</likelihood>
     </evidence>
+    <evidence name="abessives unlikely">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Abe</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <!-- }}}
+         {{{ rare words extra penalties -->
     <evidence name="rather rare nouns that shadow common function words">
       <documentation>
         <example>vain elämää</example>
@@ -75,29 +92,15 @@
           <lemma>taka</lemma>
           <lemma>tule</lemma>
           <lemma>vai</lemma>
+          <lemma>missouri</lemma>
+          <lemma>muutti</lemma>
+          <lemma>kanna</lemma>
+          <lemma>kerto</lemma>
+          <lemma>niisi</lemma>
           <upos>NOUN</upos>
         </match>
       </target>
       <likelihood>unlikely</likelihood>
-    </evidence>
-    <evidence name="Helsing is unlikely without van">
-      <documentation>
-        <example>Helsingin rautatieasema</example>
-      </documentation>
-      <target>
-        <match>
-          <lemma>Helsing</lemma>
-          <upos>PROPN</upos>
-        </match>
-      </target>
-      <likelihood>unlikely</likelihood>
-      <context negated="yes">
-        <location>-1</location>
-        <match>
-          <lemma>van</lemma>
-          <upos>PROPN</upos>
-        </match>
-      </context>
     </evidence>
     <evidence name="rather rare proper nouns that shadow common nouns etc.">
       <documentation>
@@ -105,19 +108,78 @@
       </documentation>
       <target>
         <match>
-          <lemma>Vanha</lemma>
-          <lemma>Mei</lemma>
-          <lemma>Osa</lemma>
-          <lemma>Hanska</lemma>
-          <lemma>Osta</lemma>
-          <lemma>Leikkaa</lemma>
-          <lemma>Varo</lemma>
-          <lemma>Tarkki</lemma>
-          <lemma>Onkki</lemma>
-          <lemma>Ede</lemma>
-          <lemma>Mietti</lemma>
-          <lemma>Metsä</lemma>
+          <lemma>Ainoa</lemma>
+          <lemma>Aino</lemma>
+          <lemma>Alku</lemma>
+          <lemma>Allekirjoittanut</lemma>
           <lemma>Asema</lemma>
+          <lemma>As</lemma>
+          <lemma>Ede</lemma>
+          <lemma>Eni</lemma>
+          <lemma>Erinomainen</lemma>
+          <lemma>Halunen</lemma>
+          <lemma>Hanska</lemma>
+          <lemma>Hauska</lemma>
+          <lemma>He</lemma>
+          <lemma>Ihana</lemma>
+          <lemma>Japan</lemma>
+          <lemma>Johan</lemma>
+          <lemma>Jo</lemma>
+          <lemma>Jyrkänne</lemma>
+          <lemma>Kauha</lemma>
+          <lemma>Kello</lemma>
+          <lemma>Koira</lemma>
+          <lemma>Koto</lemma>
+          <lemma>Lava</lemma>
+          <lemma>Leikkaa</lemma>
+          <lemma>Leikkaa</lemma>
+          <lemma>Lusikka</lemma>
+          <lemma>Lähdet</lemma>
+          <lemma>Lähellä</lemma>
+          <lemma>Makkara</lemma>
+          <lemma>Maku</lemma>
+          <lemma>Marilla</lemma>
+          <lemma>Marin</lemma>
+          <lemma>Markkina</lemma>
+          <lemma>Matka</lemma>
+          <lemma>Mei</lemma>
+          <lemma>Metsä</lemma>
+          <lemma>Miele</lemma>
+          <lemma>Mies</lemma>
+          <lemma>Mietti</lemma>
+          <lemma>Mutta</lemma>
+          <lemma>Muu</lemma>
+          <lemma>Muuri</lemma>
+          <lemma>Mörä</lemma>
+          <lemma>Ole</lemma>
+          <lemma>Olle</lemma>
+          <lemma>Onkki</lemma>
+          <lemma>Onni</lemma>
+          <lemma>Osa</lemma>
+          <lemma>Osta</lemma>
+          <lemma>Per</lemma>
+          <lemma>Piha</lemma>
+          <lemma>Pitkä</lemma>
+          <lemma>Puu</lemma>
+          <lemma>Pyhä</lemma>
+          <lemma>Sakko</lemma>
+          <lemma>Sen</lemma>
+          <lemma>Sen</lemma>
+          <lemma>Seuranen</lemma>
+          <lemma>Suo</lemma>
+          <lemma>Suora</lemma>
+          <lemma>Tarkki</lemma>
+          <lemma>Tietty</lemma>
+          <lemma>Tila</lemma>
+          <lemma>Tos</lemma>
+          <lemma>Tuli</lemma>
+          <lemma>Turu</lemma>
+          <lemma>Uutinen</lemma>
+          <lemma>Vanha</lemma>
+          <lemma>Varo</lemma>
+          <lemma>Viimeinen</lemma>
+          <lemma>Vuoksi</lemma>
+          <lemma>Yhtiö</lemma>
           <upos>PROPN</upos>
         </match>
       </target>
@@ -154,17 +216,23 @@
           <lemma>niittää</lemma>
           <lemma>nytkiä</lemma>
           <lemma>siitä</lemma>
+          <lemma>si’itä</lemma>
           <lemma>siittää</lemma>
           <lemma>suomia</lemma>
           <lemma>suoria</lemma>
           <lemma>vastoa</lemma>
           <lemma>oieta</lemma>
           <lemma>niistää</lemma>
+          <lemma>entää</lemma>
+          <lemma>uusia</lemma>
+          <lemma>pieniä</lemma>
           <upos>VERB</upos>
         </match>
       </target>
       <likelihood>uncommonly</likelihood>
     </evidence>
+    <!-- }}}
+         {{{ adverbs vs. nominals -->
     <evidence name="typically adverbs though sometimes noun etc. reading is ok">
       <documentation>
         <example>läpeensä paha</example>
@@ -180,12 +248,98 @@
           <lemma>kumminkaan</lemma>
           <lemma>kumminkin</lemma>
           <lemma>kotoisin</lemma>
+          <lemma>naimisiin</lemma>
+          <lemma>naimisissa</lemma>
+          <lemma>jäljelle</lemma>
+          <lemma>kerrassaan</lemma>
+          <lemma>oikeastaan</lemma>
+          <lemma>parhaimmillaan</lemma>
+          <lemma>pelkästään</lemma>
+          <lemma>tietenkin</lemma>
+          <lemma>tietenkään</lemma>
+          <lemma>toisinaan</lemma>
+          <lemma>tosiaan</lemma>
+          <lemma>usein</lemma>
+          <lemma>vanhastaan</lemma>
+          <lemma>vähintään</lemma>
+          <lemma>yhteensä</lemma>
+          <lemma>yhtään</lemma>
+          <lemma>yksinään</lemma>
+          <lemma>yksistään</lemma>
+          <lemma>öisin</lemma>
+          <lemma>varsin</lemma>
           <upos>ADV</upos>
         </match>
       </target>
       <likelihood>unlikely</likelihood>
     </evidence>
-    <evidence name="typically adverbs though sometimes noun etc. reading is ok">
+    <evidence name="typically adverbs, though adj ill reading can be">
+      <target>
+        <match>
+          <lemma>suoraan</lemma>
+          <lemma>yksiin</lemma>
+          <lemma>myöhään</lemma>
+          <lemma>turhaan</lemma>
+          <lemma>varmaan</lemma>
+          <lemma>täyteen</lemma>
+          <lemma>pitkään</lemma>
+          <lemma>pystyyn</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <context negated="yes">
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Ill</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="typically adverbs, though adj gen reading can be">
+      <target>
+        <match>
+          <lemma>vähän</lemma>
+          <lemma>paljon</lemma>
+          <lemma>vähemmän</lemma>
+          <lemma>enemmän</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <context negated="yes">
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Gen</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="typically adverbs, though noun tra reading can be">
+      <target>
+        <match>
+          <lemma>tarpeeksi</lemma>
+          <lemma>käsiksi</lemma>
+          <lemma>mieliksi</lemma>
+          <lemma>osaksi</lemma>
+          <lemma>periksi</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <context negated="yes">
+        <location>-1</location>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Tra</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="typically adverbs though sometimes inessive reading is ok">
       <documentation>
         <example>käydään yhdessä sotaan</example>
       </documentation>
@@ -207,6 +361,72 @@
         </match>
       </context>
     </evidence>
+    <evidence name="Helsing is unlikely without van">
+      <documentation>
+        <example>Helsingin rautatieasema</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>Helsing</lemma>
+          <upos>PROPN</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+      <context negated="yes">
+        <location>-1</location>
+        <match>
+          <lemma>van</lemma>
+          <upos>PROPN</upos>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="Propn prefixes with spaces">
+      <documentation>
+        <example>uusi van Helsing</example>
+      </documentation>
+      <target>
+        <match>
+          <lemma>van</lemma>
+          <lemma>von</lemma>
+          <lemma>af</lemma>
+          <upos>PROPN</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+      <context negated="yes">
+        <location>+1</location>
+        <match>
+          <upos>PROPN</upos>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="adv's unlikely...">
+      <target>
+        <match>
+          <lemma>ja</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <evidence name="intj's unlikely unless spoken after emphatic">
+      <target>
+        <match>
+          <lemma>että</lemma>
+          <upos>INTJ</upos>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+      <context negated="yes">
+        <location>-1</location>
+        <match>
+          <lemma>voi</lemma>
+          <upos>INTJ</upos>
+        </match>
+      </context>
+    </evidence>
+    <!-- }}}
+         {{{ possessives vs. verbs -->
     <evidence name="Second singular possessives unlikely unless proven">
       <documentation>
         <example>voisi olla</example>
@@ -253,6 +473,8 @@
         </match>
       </context>
     </evidence>
+    <!-- }}}
+         {{{ conjunctions -->
     <evidence name="sekä is probably not cconj without että">
       <target>
         <match>
@@ -283,6 +505,22 @@
       </context>
     </evidence>
     <!-- }}}
+         {{{ other word pairs -->
+    <evidence name="nainen is usually noun">
+      <target>
+        <match>
+          <lemma>naida</lemma>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Mood">Pot</ufeat>
+            <ufeat name="Person">1</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
+    <!-- }}}
          {{{ deps -->
     <evidence name="puncts to nearest main verb">
       <target>
@@ -304,7 +542,7 @@
         </barrier>
       </context>
     </evidence>
-    <evidence name="auxiliaries aux verbs">
+    <evidence name="auxiliaries with infa complement aux dep to verb">
       <target>
           <match>
               <lemma>voida</lemma>
@@ -353,26 +591,8 @@
         <location>+1</location>
       </context>
     </evidence>
-    <evidence name="elative adj agrees its +1">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Case">Ela</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <ufeats>
-            <ufeat name="Case">Ela</ufeat>
-          </ufeats>
-        </match>
-      </context>
-    </evidence>
+    <!-- }}}
+         {{{ subjects objects -->
     <evidence name="1sg pronoung agrees with 1sg verb">
       <target>
         <match>
@@ -404,28 +624,157 @@
         </barrier>
       </context>
     </evidence>
-    <evidence name="Numeral modifier for nom takes par">
+    <evidence name="2sg pronoung agrees with 2sg verb">
       <target>
         <match>
-          <upos>NUM</upos>
+          <upos>PRON</upos>
           <ufeats>
-            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="PronType">Prs</ufeat>
             <ufeat name="Number">Sing</ufeat>
-            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Person">2</ufeat>
           </ufeats>
         </match>
       </target>
       <likelihood>usually</likelihood>
-      <depname>nummod</depname>
+      <depname>nsubj</depname>
       <context>
-        <location>+1</location>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">2</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>CCONJ</upos>
+            <upos>SCONJ</upos>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="nouns nominativs can be subjects for 3rd sg">
+      <target>
         <match>
           <upos>NOUN</upos>
-        <ufeats>
-          <ufeat name="Number">Sing</ufeat>
-          <ufeat name="Case">Par</ufeat>
-        </ufeats>
-      </match>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="1pl pronoung agrees with 1pl verb">
+      <target>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="PronType">Prs</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Person">1</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Person">1</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>CCONJ</upos>
+            <upos>SCONJ</upos>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="2pl pronoung agrees with 2pl verb">
+      <target>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="PronType">Prs</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Person">2</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Person">2</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>CCONJ</upos>
+            <upos>SCONJ</upos>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="nouns nominativs can be subjects for 3rd pl">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
+          </match>
+        </barrier>
       </context>
     </evidence>
     <evidence name="Nominatives plur can be objects">
@@ -444,6 +793,9 @@
         <location>any</location>
         <match>
           <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
         </match>
         <barrier>
           <match>
@@ -468,6 +820,9 @@
         <location>any</location>
         <match>
           <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
         </match>
         <barrier>
           <match>
@@ -491,6 +846,9 @@
         <location>left</location>
         <match>
           <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
         </match>
         <barrier>
           <match>
@@ -501,12 +859,16 @@
         </barrier>
       </context>
     </evidence>
+    <!-- advmods -->
     <evidence name="Adverbs are ad verbs">
       <target>
         <match>
+          <lemma>aina</lemma>
+          <lemma>jo</lemma>
+          <lemma>joskus</lemma>
+          <lemma>silloin</lemma>
           <lemma>siis</lemma>
           <lemma>sitten</lemma>
-          <lemma>jo</lemma>
           <lemma>yleensä</lemma>
           <upos>ADV</upos>
         </match>
@@ -525,6 +887,7 @@
         </barrier>
       </context>
     </evidence>
+    <!-- nmods possessions -->
     <evidence name="Genitive prn to possessive">
       <target>
         <match>
@@ -589,6 +952,7 @@
         </match>
       </context>
     </evidence>
+    <!-- adposition as cases -->
     <evidence name="Postpositions with genitive complement can be case">
       <target>
         <match>
@@ -754,7 +1118,7 @@
         </match>
       </context>
     </evidence>
-    <evidence name="Adjective agreeing in illative">
+    <evidence name="Adjective agreeing in partitive">
       <target>
         <match>
           <upos>ADJ</upos>
@@ -796,6 +1160,27 @@
         </match>
       </context>
     </evidence>
+    <evidence name="Adjective agreeing in elative">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Case">Ela</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Ela</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <!-- pron/det agreements -->
     <evidence name="Determiner agreement in inessive">
       <target>
         <match>
@@ -818,7 +1203,32 @@
         </match>
       </context>
     </evidence>
-
+    <!-- numeral agreement -->
+    <evidence name="Numeral modifier for nom takes par">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case">Nom</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+        <ufeats>
+          <ufeat name="Number">Sing</ufeat>
+          <ufeat name="Case">Par</ufeat>
+        </ufeats>
+      </match>
+      </context>
+    </evidence>
+    <!-- negations -->
     <evidence name="negative verb with conneg">
       <target>
         <match>
@@ -841,66 +1251,6 @@
         <barrier>
           <match>
             <upos>PUNCT</upos>
-          </match>
-        </barrier>
-      </context>
-    </evidence>
-    <evidence name="nouns nominativs can be subjects for 3rd sg">
-      <target>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Case">Nom</ufeat>
-            <ufeat name="Number">Sing</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>possibly</likelihood>
-      <depname>nsubj</depname>
-      <context>
-        <location>right</location>
-        <match>
-          <upos>VERB</upos>
-          <ufeats>
-            <ufeat name="Number">Sing</ufeat>
-            <ufeat name="Person">3</ufeat>
-          </ufeats>
-        </match>
-        <barrier>
-          <match>
-            <upos>PUNCT</upos>
-            <upos>SCONJ</upos>
-            <upos>CCONJ</upos>
-          </match>
-        </barrier>
-      </context>
-    </evidence>
-    <evidence name="nouns nominativs can be subjects for 3rd pl">
-      <target>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Case">Nom</ufeat>
-            <ufeat name="Number">Plur</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>possibly</likelihood>
-      <depname>nsubj</depname>
-      <context>
-        <location>right</location>
-        <match>
-          <upos>VERB</upos>
-          <ufeats>
-            <ufeat name="Number">Plur</ufeat>
-            <ufeat name="Person">3</ufeat>
-          </ufeats>
-        </match>
-        <barrier>
-          <match>
-            <upos>PUNCT</upos>
-            <upos>SCONJ</upos>
-            <upos>CCONJ</upos>
           </match>
         </barrier>
       </context>
