@@ -20,8 +20,7 @@ def get_reference_conllu_list(token):
     if not token.gold:
         print("Oracle data missing from", token, file=stderr)
         exit(2)
-    else:
-        return token.gold.split("\t")
+    return token.gold.split("\t")
 
 
 def try_analyses_conllu(token, outfile, hacks=None):
@@ -33,6 +32,8 @@ def try_analyses_conllu(token, outfile, hacks=None):
         upos = anal.get_upos()
         feats = anal.printable_ud_feats()
         lemmas = anal.get_lemmas()
+        dephead = anal.udeppos
+        depname = anal.udepname
         if lemmas:
             lemma = '#'.join(anal.get_lemmas())
         else:
@@ -52,6 +53,10 @@ def try_analyses_conllu(token, outfile, hacks=None):
             featset = set(feats.split("|"))
             refset = set(original[5].split("|"))
             score += len(featset.intersection(refset))
+        if dephead == original[6]:
+            score += 1
+        if depname == original[7]:
+            score += 1
         if score > highest:
             best = i
             highest = score
