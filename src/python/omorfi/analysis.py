@@ -61,6 +61,9 @@ class Analysis:
         if self.misc:
             s += '"misc": "' + str(self.misc) + '", '
         s += '"weight": "' + str(self.weight) + '"'
+        if self.udepname:
+            s += '"udep": "' + self.udepname + '"'
+            s += '"udephead": "' + str(self.udeppos) + '"'
         s += '}'
         return s
 

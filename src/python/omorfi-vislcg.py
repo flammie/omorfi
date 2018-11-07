@@ -12,6 +12,7 @@ from time import perf_counter, process_time
 # omorfi
 from omorfi import Omorfi
 from omorfi.fileformats import next_conllu, next_vislcg, next_plaintext
+from omorfi.disamparsulate import Disamparsulator
 
 
 def main():
@@ -30,6 +31,8 @@ def main():
                    choices=['text', 'vislcg', 'conllu'])
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
                    help="print statistics to STATFILE", type=FileType('w'))
+    a.add_argument('--not-rules', metavar="RULEFILE", type=open,
+                   help="read non-rules from RULEFILE")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.analyser:
@@ -39,6 +42,12 @@ def main():
     else:
         print("analyser is required to vislcg", file=stderr)
         exit(4)
+    disamparsulator = None
+    if options.not_rules:
+        if options.verbose:
+            print("Reading rulestuff", options.not_rules.name)
+        disamparsulator = Disamparsulator()
+        disamparsulator.frobblesnizz(options.not_rules)
     if not options.infile:
         options.infile = stdin
     if options.verbose:
@@ -72,30 +81,24 @@ def main():
         if not tokens:
             break
         for token in tokens:
-            if token.error:
-                print(token.error, file=stderr)
-                exit(2)
-            elif token.nontoken:
-                if token.nontoken == 'comment':
-                    print(token.comment, file=options.outfile)
-                elif token.nontoken == 'separator':
-                    print(file=options.outfile)
-                elif token.nontoken == 'eof':
-                    eoffed = True
-                    break
-                else:
-                    print("Unrecognised", token, file=stderr)
-                    exit(2)
-            elif token.surf:
+            if token.surf:
                 tokencount += 1
                 omorfi.analyse(token)
                 if token.is_oov():
                     unknowns += 1
                     omorfi.guess(token)
-                print(token.printable_vislcg(), file=options.outfile)
+            elif token.error or token.nontoken:
+                pass
             else:
                 print("Unrecognised", token, file=stderr)
                 exit(2)
+        if disamparsulator:
+            disamparsulator.linguisticate(tokens)
+        for token in tokens:
+            if token.nontoken and token.nontoken == "eof":
+                eoffed = True
+                break
+            print(token.printable_vislcg(), file=options.outfile)
     cpuend = process_time()
     realend = perf_counter()
     print("# Tokens:", tokencount, "\n# Unknown:", unknowns,

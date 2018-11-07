@@ -207,12 +207,26 @@ class Token:
 
     def printable_vislcg(self):
         '''Create VISL-CG 3 output based on token and its analyses.'''
-        vislcg = '"<' + self.surf + '>"\n'
-        newline = ""
-        for anal in self.analyses:
-            vislcg += newline + anal.printable_vislcg()
-            newline = "\n"
-        return vislcg
+        if self.error:
+            return "<ERROR>" + self.error + "</ERROR>"
+        elif self.nontoken:
+            if self.nontoken == 'comment':
+                return self.comment
+            elif self.nontoken == 'separator':
+                return '\n'
+            elif self.nontoken == 'eof':
+                return ""
+            else:
+                return "<ERROR>" + self.nontoken + "</ERROR>"
+        elif self.surf:
+            vislcg = '"<' + self.surf + '>"\n'
+            newline = ""
+            for anal in self.analyses:
+                vislcg += newline + anal.printable_vislcg()
+                newline = "\n"
+            return vislcg
+        else:
+            return "<ERROR>" + self + "</ERROR>"
 
     def printable_conllu(self, hacks=None, which="1best"):
         '''Create CONLL-U output based on token and selected analysis.'''
