@@ -45,6 +45,17 @@
       </target>
       <likelihood>unlikely</likelihood>
     </evidence>
+    <evidence name="adjectivs shouldn't get possessed unlikely">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Person[psor]"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
     <evidence name="instructives unlikely">
       <documentation>
         <example>hän oli ryhmänsä nopein</example>
@@ -74,6 +85,16 @@
     </evidence>
     <!-- }}}
          {{{ rare words extra penalties -->
+    <evidence name="clitics unlikely">
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Clitic"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>uncommonly</likelihood>
+    </evidence>
     <evidence name="rather rare nouns that shadow common function words">
       <documentation>
         <example>vain elämää</example>
@@ -775,6 +796,52 @@
             <upos>CCONJ</upos>
           </match>
         </barrier>
+      </context>
+    </evidence>
+    <evidence name="Numeral modifier agrees">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+        <ufeats>
+          <ufeat name="Number">Plur</ufeat>
+          <ufeat name="Case"/>
+        </ufeats>
+      </match>
+      </context>
+    </evidence>
+    <evidence name="Numeral modifier agrees">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+        <ufeats>
+          <ufeat name="Number">Sing</ufeat>
+          <ufeat name="Case"/>
+        </ufeats>
+      </match>
       </context>
     </evidence>
     <evidence name="Nominatives plur can be objects">
