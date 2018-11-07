@@ -1121,13 +1121,14 @@
         </barrier>
       </context>
     </evidence>
-    <!-- agreements (I'll maybe make macro agreement later) -->
-    <evidence name="Adjective agreeing in nominative">
+    <!-- agreements -->
+    <evidence name="Adjective agreeing singular">
       <target>
         <match>
           <upos>ADJ</upos>
           <ufeats>
-            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case"/>
           </ufeats>
         </match>
       </target>
@@ -1138,12 +1139,36 @@
         <match>
           <upos>NOUN</upos>
           <ufeats>
-            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case"/>
           </ufeats>
         </match>
       </context>
     </evidence>
-    <evidence name="Adjective agreeing in inessive">
+    <evidence name="Adjective agreeing plural">
+      <target>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>amod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <!--    <evidence name="Adjective agreeing in inessive">
       <target>
         <match>
           <upos>ADJ</upos>
@@ -1246,7 +1271,7 @@
           </ufeats>
         </match>
       </context>
-    </evidence>
+    </evidence> -->
     <!-- pron/det agreements -->
     <evidence name="Determiner agreement in inessive">
       <target>
