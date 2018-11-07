@@ -37,6 +37,7 @@ class Evidence:
     def apply(self, token: Token, sentence: list):
         '''If suggestion applies to token in context.'''
         newdeps = list()
+        depless = None
         for analysis in token.analyses:
             matched = True
             if not self.target.matches(analysis):
@@ -78,6 +79,7 @@ class Evidence:
                     if distance == 0:
                         distance = 1
                     if self.depname:
+                        depless = analysis
                         newdep = deepcopy(analysis)
                         analysis.weight -= self.unlikelihood * distance * 0.1
                         newdep.udepname = self.depname
@@ -96,6 +98,8 @@ class Evidence:
         # append new stuff at the end to avoid eterbnal loops
         for anal in newdeps:
             token.analyses.append(anal)
+        if depless:
+            token.analyses.remove(depless)
 
     def find_context(self, target: Token, sentence: list):
         '''Traverse sentence to find contexts that match.'''
