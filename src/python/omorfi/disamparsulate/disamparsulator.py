@@ -155,7 +155,10 @@ class Disamparsulator:
         for child in ufeats:
             if child.tag == 'ufeat':
                 name, value = self.parse_ufeat(child)
-                ufs[name] = value
+                if not value:
+                    ufs[name] = "*AGREEMENT*"
+                else:
+                    ufs[name] = value
             else:
                 print("Unknown child for ufeats", child)
                 exit(2)

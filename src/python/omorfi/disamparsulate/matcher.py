@@ -44,6 +44,8 @@ class Matcher:
                     if feat not in analysis.ufeats:
                         foundall = False
                         break
+                    elif self.is_ufeat_agreement(feat):
+                        pass
                     elif analysis.ufeats[feat] != value:
                         foundall = False
                         break
@@ -53,3 +55,34 @@ class Matcher:
             if not foundany:
                 return False
         return True
+
+    def is_ufeat_agreement(self, feat):
+        for ufeats in self.ufeatses:
+            if feat in ufeats:
+                if ufeats[feat] == "*AGREEMENT*":
+                    return True
+        return False
+
+    def get_agreement_ufeats(self, anal: Analysis):
+        agrs = dict()
+        if self.ufeatses:
+            for ufeats in self.ufeatses:
+                for feat, value in ufeats.items():
+                    if self.is_ufeat_agreement(feat):
+                        if feat in anal.ufeats:
+                            agrs[feat] = anal.ufeats[feat]
+                        else:
+                            # cannot return agreement for missing feat
+                            return None
+        return agrs
+
+    def __str__(self):
+        s = '"omorfi.disamparsulate.Matcher: {'
+        s += '"lemmas": [' + ', '.join(self.lemmas) + '], '
+        s += '"uposes": [' + ', '.join(self.uposes) + '], '
+        s += '"ufeatses": ['
+        for ufeats in self.ufeatses:
+            s += str(ufeats)
+        s += "]"
+        return s
+

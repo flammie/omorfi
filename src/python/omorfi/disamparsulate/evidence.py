@@ -7,7 +7,7 @@ Beta-testing a wack idea of not disambiguating and dependency parsing at the
 same time. Pay no attention to the man behind the curtains and move along.
 """
 
-from copy import copy
+from copy import deepcopy
 # stuff
 
 from ..token import Token
@@ -42,48 +42,57 @@ class Evidence:
             if not self.target.matches(analysis):
                 matched = False
                 continue
+            else:
+                agrs = self.target.get_agreement_ufeats(analysis)
+                if agrs and 'matcher' in self.context:
+                    for feat, val in agrs.items():
+                        if self.context['matcher'].is_ufeat_agreement(feat):
+                            for ufeats in self.context['matcher'].ufeatses:
+                                ufeats[feat] = val
+                        else:
+                            # context needs no agreement for this feat
+                            pass
             heads = []
             if self.context:
                 heads = self.find_context(token, sentence)
                 if not heads:
                     matched = False
-            if (matched and "negated" not in self.context) or \
-                    (not matched and "negated" in self.context):
+            if matched and "negated" not in self.context and not self.depname:
                 if self.unlikelihood > 0:
                     analysis.weight += self.unlikelihood
                 elif self.unlikelihood < 0:
                     for b in token.analyses:
                         if b != analysis:
                             b.weight -= self.unlikelihood
+            if not matched and "negated" in self.context and not self.depname:
+                if self.unlikelihood > 0:
+                    analysis.weight += self.unlikelihood
+                elif self.unlikelihood < 0:
+                    for b in token.analyses:
+                        if b != analysis:
+                            b.weight -= self.unlikelihood
+            if matched and heads:
                 for head in heads:
                     # we actually want to copy analysis per head
                     distance = abs(token.pos - head['pos'])
                     if distance == 0:
                         distance = 1
                     if self.depname:
-                        if analysis.udepname:
-                            newdep = copy(analysis)
-                            oldd = abs(token.pos - newdep.udeppos)
-                            if oldd == 0:
-                                oldd = 1
-                            newdep.weight += self.unlikelihood * 0.1 * oldd
-                            newdep.udepname = self.depname
-                            newdep.udeppos = head['pos']
-                            newdep.weight -= self.unlikelihood * \
-                                0.1 * distance
-                            newdeps.append(newdep)
-                        else:
-                            analysis.udepname = self.depname
-                            analysis.udeppos = head['pos']
-                            analysis.weight -= self.unlikelihood * \
-                                0.1 * distance
+                        newdep = deepcopy(analysis)
+                        analysis.weight -= self.unlikelihood * distance * 0.1
+                        newdep.udepname = self.depname
+                        newdep.udeppos = head['pos']
+                        newdeps.append(newdep)
+                        for b in token.analyses:
+                            if b != analysis and b.udepname != self.depname:
+                                b.weight -= self.unlikelihood * distance * 0.1
                     # also reweight the head
                     for w in sentence:
                         if w.pos == head['pos']:
                             for a in w.analyses:
                                 if a != head['a']:
-                                    a.weight -= self.unlikelihood / \
-                                        distance
+                                    a.weight -= self.unlikelihood * \
+                                        distance * 0.1
         # append new stuff at the end to avoid eterbnal loops
         for anal in newdeps:
             token.analyses.append(anal)
