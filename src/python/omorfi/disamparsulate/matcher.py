@@ -17,6 +17,7 @@ class Matcher:
         self.uposes = list()
         self.ufeatses = list()
         self.lemmas = list()
+        self.agrs = dict()
 
     def matches(self, analysis: Analysis):
         """Checks if token matches given params."""
@@ -45,7 +46,13 @@ class Matcher:
                         foundall = False
                         break
                     elif self.is_ufeat_agreement(feat):
-                        pass
+                        if feat in self.agrs and \
+                                self.agrs[feat] != analysis.ufeats[feat]:
+                            foundall = False
+                            break
+                        else:
+                            # OK, set agreement elsewhere
+                            pass
                     elif analysis.ufeats[feat] != value:
                         foundall = False
                         break
@@ -85,4 +92,3 @@ class Matcher:
             s += str(ufeats)
         s += "]"
         return s
-

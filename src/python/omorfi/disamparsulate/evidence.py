@@ -45,14 +45,8 @@ class Evidence:
                 continue
             else:
                 agrs = self.target.get_agreement_ufeats(analysis)
-                if agrs and 'matcher' in self.context:
-                    for feat, val in agrs.items():
-                        if self.context['matcher'].is_ufeat_agreement(feat):
-                            for ufeats in self.context['matcher'].ufeatses:
-                                ufeats[feat] = val
-                        else:
-                            # context needs no agreement for this feat
-                            pass
+                if 'matcher' in self.context:
+                    self.context['matcher'].agrs = agrs
             heads = []
             if self.context:
                 heads = self.find_context(token, sentence)
