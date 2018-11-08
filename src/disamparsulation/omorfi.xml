@@ -798,52 +798,7 @@
         </barrier>
       </context>
     </evidence>
-    <evidence name="Numeral modifier agrees">
-      <target>
-        <match>
-          <upos>NUM</upos>
-          <ufeats>
-            <ufeat name="NumType">Card</ufeat>
-            <ufeat name="Number">Plur</ufeat>
-            <ufeat name="Case"/>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>nummod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-        <ufeats>
-          <ufeat name="Number">Plur</ufeat>
-          <ufeat name="Case"/>
-        </ufeats>
-      </match>
-      </context>
-    </evidence>
-    <evidence name="Numeral modifier agrees">
-      <target>
-        <match>
-          <upos>NUM</upos>
-          <ufeats>
-            <ufeat name="NumType">Card</ufeat>
-            <ufeat name="Number">Sing</ufeat>
-            <ufeat name="Case"/>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>nummod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-        <ufeats>
-          <ufeat name="Number">Sing</ufeat>
-          <ufeat name="Case"/>
-        </ufeats>
-      </match>
-      </context>
-    </evidence>
+
     <evidence name="Nominatives plur can be objects">
       <target>
         <match>
@@ -911,6 +866,34 @@
       <depname>obj</depname>
       <context>
         <location>left</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Explicit accusatives must be objects">
+      <target>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="Case">Acc</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>obj</depname>
+      <context>
+        <location>any</location>
         <match>
           <upos>VERB</upos>
           <ufeats>
@@ -1320,6 +1303,52 @@
       </match>
       </context>
     </evidence>
+    <evidence name="Numeral modifier agrees in plur">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+        <ufeats>
+          <ufeat name="Number">Plur</ufeat>
+          <ufeat name="Case"/>
+        </ufeats>
+      </match>
+      </context>
+    </evidence>
+    <evidence name="Numeral modifier agrees in sing">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+        <ufeats>
+          <ufeat name="Number">Sing</ufeat>
+          <ufeat name="Case"/>
+        </ufeats>
+      </match>
+      </context>
+    </evidence>
     <!-- negations -->
     <evidence name="negative verb with conneg">
       <target>
@@ -1338,6 +1367,37 @@
           <upos>VERB</upos>
           <ufeats>
             <ufeat name="Connegative">Yes</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <!-- oblique? -->
+    <evidence name="locative obliques for verbes">
+      <target>
+        <match>
+          <upos>NOUN</upos>
+          <upos>PROPN</upos>
+          <ufeats>
+            <ufeat name="Case">All</ufeat>
+          </ufeats>
+          <ufeats>
+            <ufeat name="Case">Ill</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>meh</likelihood>
+      <depname>obl</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
           </ufeats>
         </match>
         <barrier>
