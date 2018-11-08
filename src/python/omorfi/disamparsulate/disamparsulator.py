@@ -104,6 +104,8 @@ class Disamparsulator:
             return 8.0
         elif likelihood.text == 'possibly':
             return 2.0
+        elif likelihood.text == 'meh':
+            return 0.001
         elif likelihood.text == 'unlikely':
             return -16.0
         elif likelihood.text == 'uncommonly':
@@ -189,7 +191,7 @@ def main():
     if len(argv) < 2:
         print("Usage:", argv[0], "ANALYSER INFILE")
         exit(1)
-    from .omorfi import Omorfi
+    from ..omorfi import Omorfi
     omorfi = Omorfi(True)
     omorfi.load_analyser(argv[1])
     infile = open(argv[2])

@@ -72,23 +72,24 @@ class Evidence:
                     distance = abs(token.pos - head['pos'])
                     if distance == 0:
                         distance = 1
+                    barriers = self.count_barriers(token, sentence, head)
+                    magic = (distance * 0.1) / (barriers + 1)
                     if self.depname:
                         depless = analysis
                         newdep = deepcopy(analysis)
-                        analysis.weight -= self.unlikelihood * distance * 0.1
+                        analysis.weight -= self.unlikelihood * magic
                         newdep.udepname = self.depname
                         newdep.udeppos = head['pos']
                         newdeps.append(newdep)
                         for b in token.analyses:
                             if b != analysis and b.udepname != self.depname:
-                                b.weight -= self.unlikelihood * distance * 0.1
+                                b.weight -= self.unlikelihood * magic
                     # also reweight the head
                     for w in sentence:
                         if w.pos == head['pos']:
                             for a in w.analyses:
                                 if a != head['a']:
-                                    a.weight -= self.unlikelihood * \
-                                        distance * 0.1
+                                    a.weight -= self.unlikelihood * magic
         # append new stuff at the end to avoid eterbnal loops
         for anal in newdeps:
             token.analyses.append(anal)
@@ -112,6 +113,22 @@ class Evidence:
                         heads.append({"pos": head.pos, "a": analysis})
         return heads
 
+    def count_barriers(self, target: Token, sentence: list, head: Token):
+        '''Count how many barriers are between token target and head if any.'''
+        if 'barrier' not in self.context:
+            return 0
+        # I cannot be bothered to deal with context direction blah here...
+        left = min(head['pos'], target.pos)
+        right = max(head['pos'], target.pos)
+        blockers = 0
+        for blocker in sentence:
+            if left < blocker.pos and blocker.pos < right:
+                continue
+            for anal in blocker.analyses:
+                if self.context['barrier'].matches(anal):
+                    blockers += 1
+        return blockers
+
     def in_context(self, target: Token, sentence: list, head: Token):
         '''Check if head is within context and no barrier blocks it.
 
@@ -123,36 +140,18 @@ class Evidence:
         elif self.context['location'] == 'left':
             if not head.pos < target.pos:
                 return False
-            if 'barrier' in self.context:
-                for blocker in sentence:
-                    if blocker.pos < head.pos or blocker.pos > target.pos:
-                        continue
-                    for anal in blocker.analyses:
-                        if self.context['barrier'].matches(anal):
-                            return False
             return True
         elif self.context['location'] == 'right':
             if not head.pos > target.pos:
                 return False
-            if 'barrier' in self.context:
-                for blocker in sentence:
-                    if blocker.pos > head.pos or blocker.pos < target.pos:
-                        continue
-                    for anal in blocker.analyses:
-                        if self.context['barrier'].matches(anal):
-                            return False
-            return True
+            else:
+                return True
         elif self.context['location'] == 'any':
-            if 'barrier' in self.context:
-                for blocker in sentence:
-                    if blocker.pos < min(head.pos, target.pos) or \
-                            blocker.pos > max(target.pos, head.pos) or \
-                            blocker.pos == target.pos:
-                        continue
-                    for anal in blocker.analyses:
-                        if self.context['barrier'].matches(anal):
-                            return False
-            return True
+            if head.pos == target.pos:
+                # XXX: should any match self?
+                return False
+            else:
+                return True
         elif self.context['location'].isdigit() or\
                 self.context['location'][0] in '+-' and \
                 self.context['location'][1:].isdigit():
