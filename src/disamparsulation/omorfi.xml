@@ -360,7 +360,7 @@
         </match>
       </context>
     </evidence>
-    <evidence name="typically adverbs though sometimes inessive reading is ok">
+    <evidence name="typically adverbs though sometimes adjective inessive reading is ok">
       <documentation>
         <example>käydään yhdessä sotaan</example>
       </documentation>
@@ -376,6 +376,24 @@
       <context negated="yes">
         <location>+1</location>
         <match>
+          <ufeats>
+            <ufeat name="Case">Ine</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="typically adverbs though sometimes noun inessive reading is ok">
+      <target>
+        <match>
+          <lemma>vastassa</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <context negated="yes">
+        <location>-1</location>
+        <match>
+          <upos>ADJ</upos>
           <ufeats>
             <ufeat name="Case">Ine</ufeat>
           </ufeats>
@@ -680,6 +698,7 @@
       <target>
         <match>
           <upos>NOUN</upos>
+          <upos>PROPN</upos>
           <ufeats>
             <ufeat name="Case">Nom</ufeat>
             <ufeat name="Number">Sing</ufeat>
@@ -772,6 +791,7 @@
       <target>
         <match>
           <upos>NOUN</upos>
+          <upos>PROPN</upos>
           <ufeats>
             <ufeat name="Case">Nom</ufeat>
             <ufeat name="Number">Plur</ufeat>
@@ -920,6 +940,7 @@
           <lemma>siis</lemma>
           <lemma>sitten</lemma>
           <lemma>yleensä</lemma>
+          <lemma>myös</lemma>
           <upos>ADV</upos>
         </match>
       </target>
@@ -1050,6 +1071,7 @@
       <target>
         <match>
           <lemma>ennen</lemma>
+          <lemma>kohti</lemma>
           <upos>ADP</upos>
           <ufeats>
             <ufeat name="AdpType">Pre</ufeat>
@@ -1388,6 +1410,12 @@
           <ufeats>
             <ufeat name="Case">Ill</ufeat>
           </ufeats>
+          <ufeats>
+            <ufeat name="Case">Ade</ufeat>
+          </ufeats>
+          <ufeats>
+            <ufeat name="Case">Ess</ufeat>
+          </ufeats>
         </match>
       </target>
       <likelihood>meh</likelihood>
@@ -1405,6 +1433,47 @@
             <upos>PUNCT</upos>
           </match>
         </barrier>
+      </context>
+    </evidence>
+    <!-- flat names -->
+    <evidence name="doubled propns are flat names">
+      <target>
+        <match>
+          <upos>PROPN</upos>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>flat:name</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>PROPN</upos>
+        </match>
+      </context>
+    </evidence>
+    <!-- acls -->
+    <evidence name="some agreeing deverbals are acls
+      XXX: the Part readig is missing because of decisions...">
+      <target>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Part</ufeat>
+            <ufeat name="Number"/>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>acl</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Number"/>
+            <ufeat name="Case"/>
+          </ufeats>
+        </match>
       </context>
     </evidence>
   </evidences>
