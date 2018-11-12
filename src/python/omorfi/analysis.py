@@ -61,6 +61,9 @@ class Analysis:
         if self.misc:
             s += '"misc": "' + str(self.misc) + '", '
         s += '"weight": "' + str(self.weight) + '"'
+        if self.udepname:
+            s += '"udep": "' + self.udepname + '"'
+            s += '"udephead": "' + str(self.udeppos) + '"'
         s += '}'
         return s
 
@@ -119,6 +122,8 @@ class Analysis:
         a.weight = weight
         a.upos = OmorFormatter.get_upos(s)
         a.lemmas = OmorFormatter.get_lemmas(s)
+        a.weight += (len(a.lemmas) - 1) * 10
+        a.weight += s.count('DRV') * 5
         feats = OmorFormatter.get_last_feats(s)
         if not feats:
             a.ufeats = None

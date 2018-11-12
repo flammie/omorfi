@@ -1,0 +1,46 @@
+<!--
+   Copyright 2018 Flammie A Pirinen, Omorfi contributors
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation; version 3 and not later,
+
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not <http://www.gnu.org/licenses/>.
+-->
+<!ELEMENT disamparsulations (matchers?, evidences?)>
+<!ATTLIST disamparsulations
+    version CDATA #REQUIRED
+    xmlns:xsi CDATA #IMPLIED
+    xmlns:html CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT match (lemma*, upos*, ufeats*)>
+<!ELEMENT evidences (evidence*)>
+<!ELEMENT evidence (documentation?, target, likelihood, depname?, context?)>
+<!ATTLIST evidence
+    name CDATA #REQUIRED>
+<!ELEMENT documentation (example, html:div?)>
+<!ELEMENT example (#PCDATA)>
+<!ELEMENT html:div (#PCDATA)> 
+<!ELEMENT target (match)>
+<!ELEMENT lemma (#PCDATA)>
+<!ELEMENT upos (#PCDATA)>
+<!ELEMENT ufeats (ufeat*)>
+<!ELEMENT ufeat (#PCDATA)*>
+<!ATTLIST ufeat
+    name CDATA #REQUIRED
+    agreement CDATA #IMPLIED>
+<!-- agreement means unify target with context by name -->
+<!ELEMENT likelihood (#PCDATA)>
+<!ELEMENT depname (#PCDATA)>
+<!ELEMENT context (location, match?, barrier?)>
+<!ATTLIST context
+    negated (yes | no) "no">
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT barrier (match)>
+

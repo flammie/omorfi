@@ -207,12 +207,26 @@ class Token:
 
     def printable_vislcg(self):
         '''Create VISL-CG 3 output based on token and its analyses.'''
-        vislcg = '"<' + self.surf + '>"\n'
-        newline = ""
-        for anal in self.analyses:
-            vislcg += newline + anal.printable_vislcg()
-            newline = "\n"
-        return vislcg
+        if self.error:
+            return "<ERROR>" + self.error + "</ERROR>"
+        elif self.nontoken:
+            if self.nontoken == 'comment':
+                return self.comment
+            elif self.nontoken == 'separator':
+                return '\n'
+            elif self.nontoken == 'eof':
+                return ""
+            else:
+                return "<ERROR>" + self.nontoken + "</ERROR>"
+        elif self.surf:
+            vislcg = '"<' + self.surf + '>"\n'
+            newline = ""
+            for anal in self.analyses:
+                vislcg += newline + anal.printable_vislcg()
+                newline = "\n"
+            return vislcg
+        else:
+            return "<ERROR>" + self + "</ERROR>"
 
     def printable_conllu(self, hacks=None, which="1best"):
         '''Create CONLL-U output based on token and selected analysis.'''
@@ -265,7 +279,7 @@ class Token:
         return "\t".join([str(self.pos), self.surf, lemma, upos, third,
                           ud_feats, dephead, depname, "_", ud_misc])
 
-    def get_nbest(self, n: int, name="omor"):
+    def get_nbest(self, n: int):
         """Get n most likely analyses of given type.
 
         Args:
@@ -279,24 +293,23 @@ class Token:
         if n == 0:
             n = 65535
         for anal in self.analyses:
-            if anal.rawtype == name:
-                if len(nbest) < n:
-                    nbest.append(anal)
-                    # when filling the queue find biggest
-                    if anal.weight > worst:
-                        worst = anal.weight
-                elif anal.weight < worst:
-                    # replace worst
-                    for i, a in enumerate(nbest):
-                        if a.weight == worst:
-                            nbest[i] = anal
-                    worst = 0
-                    for a in nbest:
-                        if a.weight > worst:
-                            worst = a.weight
+            if len(nbest) < n:
+                nbest.append(anal)
+                # when filling the queue find biggest
+                if anal.weight > worst:
+                    worst = anal.weight
+            elif anal.weight < worst:
+                # replace worst
+                for i, a in enumerate(nbest):
+                    if a.weight == worst:
+                        nbest[i] = anal
+                worst = -1.0
+                for a in nbest:
+                    if a.weight > worst:
+                        worst = a.weight
         return nbest
 
-    def get_best(self, name="omor"):
+    def get_best(self):
         """Get most likely analysis of given type.
 
         Args:
@@ -306,7 +319,7 @@ class Token:
             most probably analysis of given type, or None if analyses have not
             been made for the type.
         """
-        nbest1 = self.get_nbest(1, name)
+        nbest1 = self.get_nbest(1)
         if nbest1:
             return nbest1[0]
         else:

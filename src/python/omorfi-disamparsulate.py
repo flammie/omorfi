@@ -9,7 +9,6 @@ from argparse import ArgumentParser, FileType
 from sys import stderr, stdin, stdout
 # statistics
 from time import perf_counter, process_time
-
 # omorfi
 from omorfi import Omorfi
 from omorfi.fileformats import next_conllu
@@ -20,7 +19,8 @@ def get_reference_conllu_list(token):
     if not token.gold:
         print("Oracle data missing from", token, file=stderr)
         exit(2)
-    return token.gold.split("\t")
+    else:
+        return token.gold.split("\t")
 
 
 def try_analyses_conllu(token, outfile, hacks=None):
@@ -32,8 +32,6 @@ def try_analyses_conllu(token, outfile, hacks=None):
         upos = anal.get_upos()
         feats = anal.printable_ud_feats()
         lemmas = anal.get_lemmas()
-        dephead = anal.udeppos
-        depname = anal.udepname
         if lemmas:
             lemma = '#'.join(anal.get_lemmas())
         else:
@@ -53,10 +51,6 @@ def try_analyses_conllu(token, outfile, hacks=None):
             featset = set(feats.split("|"))
             refset = set(original[5].split("|"))
             score += len(featset.intersection(refset))
-        if dephead == original[6]:
-            score += 1
-        if depname == original[7]:
-            score += 1
         if score > highest:
             best = i
             highest = score
@@ -65,8 +59,6 @@ def try_analyses_conllu(token, outfile, hacks=None):
 
 def debug_analyses_conllu(token, outfile, hacks=None):
     anals = token.analyses
-    print("# REFERENCE(python):", get_reference_conllu_list(token),
-          file=outfile)
     for i, anal in enumerate(anals):
         print(token.printable_conllu(hacks, i), file=outfile)
 
@@ -105,7 +97,7 @@ def main():
                    choices=['ftb'])
     a.add_argument('-X', '--frequencies', metavar="FREQDIR",
                    help="read frequencies from FREQDIR/*.freqs")
-    a.add_argument('--not-rules', metavar="RULEFILE", type=open,
+    a.add_argument('--not-rules', metavar="RULEFILE", type=open, required=True,
                    help="read non-rules from RULEFILE")
     a.add_argument('--debug', action='store_true',
                    help="print lots of debug info while processing")
@@ -120,9 +112,8 @@ def main():
     else:
         print("analyser is needed to conllu", file=stderr)
         exit(4)
-    disamparsulator = None
+    disamparsulator = Disamparsulator()
     if options.not_rules:
-        disamparsulator = Disamparsulator()
         if options.verbose:
             print("Loading", options.not_rules)
         disamparsulator.frobblesnizz(options.not_rules)
@@ -185,8 +176,7 @@ def main():
             if token.is_oov():
                 unknowns += 1
                 omorfi.guess(token)
-        if disamparsulator:
-            disamparsulator.linguisticate(sentplus)
+        disamparsulator.linguisticate(sentplus)
         print_analyses(sentplus, options)
     cpuend = process_time()
     realend = perf_counter()
