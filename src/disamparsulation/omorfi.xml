@@ -139,7 +139,9 @@
           <lemma>Eni</lemma>
           <lemma>Erinomainen</lemma>
           <lemma>Halunen</lemma>
+          <lemma>Hakkuu</lemma>
           <lemma>Hanska</lemma>
+          <lemma>Hassu</lemma>
           <lemma>Hauska</lemma>
           <lemma>He</lemma>
           <lemma>Ihana</lemma>
@@ -159,6 +161,7 @@
           <lemma>Lähellä</lemma>
           <lemma>Makkara</lemma>
           <lemma>Maku</lemma>
+          <lemma>Malli</lemma>
           <lemma>Marilla</lemma>
           <lemma>Marin</lemma>
           <lemma>Markkina</lemma>
@@ -247,6 +250,8 @@
           <lemma>entää</lemma>
           <lemma>uusia</lemma>
           <lemma>pieniä</lemma>
+          <lemma>mieliä</lemma>
+          <lemma>tuottaa</lemma>
           <upos>VERB</upos>
         </match>
       </target>
@@ -585,6 +590,8 @@
       <target>
           <match>
               <lemma>voida</lemma>
+              <lemma>pitää</lemma>
+              <lemma>täytyä</lemma>
           <upos>AUX</upos>
           <ufeats>
             <ufeat name="VerbForm">Fin</ufeat>
@@ -625,9 +632,30 @@
         </match>
       </target>
       <likelihood>probably</likelihood>
-      <depname>conj</depname>
+      <depname>cc</depname>
       <context>
         <location>+1</location>
+      </context>
+    </evidence>
+    <evidence name="verb conjs that can ve lifted when >1 roots">
+      <target>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>meh</likelihood>
+      <depname>conj</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="VerbForm">Fin</ufeat>
+          </ufeats>
+        </match>
       </context>
     </evidence>
     <!-- }}}
@@ -690,6 +718,37 @@
             <upos>CCONJ</upos>
             <upos>SCONJ</upos>
             <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="prons can be subjects for 3rd sg">
+      <target>
+        <match>
+          <upos>PRON</upos>
+          <ufeats>
+            <ufeat name="PronType">Dem</ufeat>
+            <ufeat name="Case">Nom</ufeat>
+            <ufeat name="Number">Sing</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>nsubj</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+          <ufeats>
+            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+            <upos>SCONJ</upos>
+            <upos>CCONJ</upos>
           </match>
         </barrier>
       </context>
@@ -832,7 +891,7 @@
       <likelihood>possibly</likelihood>
       <depname>obj</depname>
       <context>
-        <location>any</location>
+        <location>left</location>
         <match>
           <upos>VERB</upos>
           <ufeats>
@@ -859,7 +918,7 @@
       <likelihood>possibly</likelihood>
       <depname>obj</depname>
       <context>
-        <location>any</location>
+        <location>left</location>
         <match>
           <upos>VERB</upos>
           <ufeats>
@@ -941,6 +1000,7 @@
           <lemma>sitten</lemma>
           <lemma>yleensä</lemma>
           <lemma>myös</lemma>
+          <lemma>heti</lemma>
           <upos>ADV</upos>
         </match>
       </target>
@@ -950,6 +1010,31 @@
         <location>any</location>
         <match>
           <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Adverbs are ad adj or noun or whatever">
+      <target>
+        <match>
+          <lemma>hieman</lemma>
+          <lemma>vähän</lemma>
+          <lemma>paljon</lemma>
+          <upos>ADV</upos>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>advmod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <ufeats>
+            <ufeat name="Case">Par</ufeat>
+          </ufeats>
         </match>
         <barrier>
           <match>
@@ -1074,14 +1159,14 @@
           <lemma>kohti</lemma>
           <upos>ADP</upos>
           <ufeats>
-            <ufeat name="AdpType">Pre</ufeat>
+            <ufeat name="AdpType">Prep</ufeat>
           </ufeats>
         </match>
       </target>
       <likelihood>probably</likelihood>
       <depname>case</depname>
       <context>
-        <location>left</location>
+        <location>right</location>
         <match>
           <ufeats>
             <ufeat name="Case">Par</ufeat>
@@ -1127,12 +1212,12 @@
       </context>
     </evidence>
     <!-- agreements -->
-    <evidence name="Adjective agreeing singular">
+    <evidence name="Adjective agreement">
       <target>
         <match>
           <upos>ADJ</upos>
           <ufeats>
-            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Number"/>
             <ufeat name="Case"/>
           </ufeats>
         </match>
@@ -1144,150 +1229,25 @@
         <match>
           <upos>NOUN</upos>
           <ufeats>
-            <ufeat name="Number">Sing</ufeat>
+            <ufeat name="Number"/>
             <ufeat name="Case"/>
           </ufeats>
         </match>
       </context>
     </evidence>
-    <evidence name="Adjective agreeing plural">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Number">Plur</ufeat>
-            <ufeat name="Case"/>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Number">Plur</ufeat>
-            <ufeat name="Case"/>
-          </ufeats>
-        </match>
-      </context>
-    </evidence>
-    <!--    <evidence name="Adjective agreeing in inessive">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Case">Ine</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Case">Ine</ufeat>
-          </ufeats>
-        </match>
-      </context>
-    </evidence>
-    <evidence name="Adjective agreeing in illative">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Case">Ill</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Case">Ill</ufeat>
-          </ufeats>
-        </match>
-      </context>
-    </evidence>
-    <evidence name="Adjective agreeing in partitive">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Case">Par</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Case">Par</ufeat>
-          </ufeats>
-        </match>
-      </context>
-    </evidence>
-    <evidence name="Adjective agreeing in allative">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Case">All</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <upos>NOUN</upos>
-          <ufeats>
-            <ufeat name="Case">All</ufeat>
-          </ufeats>
-        </match>
-      </context>
-    </evidence>
-    <evidence name="Adjective agreeing in elative">
-      <target>
-        <match>
-          <upos>ADJ</upos>
-          <ufeats>
-            <ufeat name="Case">Ela</ufeat>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>amod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-          <ufeats>
-            <ufeat name="Case">Ela</ufeat>
-          </ufeats>
-        </match>
-      </context>
-    </evidence> -->
     <!-- pron/det agreements -->
-    <evidence name="Determiner agreement in inessive">
+    <evidence name="Determiner agreement">
       <target>
         <match>
           <lemma>se</lemma>
           <lemma>kaikki</lemma>
           <lemma>tämä</lemma>
+          <lemma>tuo</lemma>
           <upos>PRON</upos>
           <upos>DET</upos>
           <ufeats>
-            <ufeat name="Case">Ine</ufeat>
+            <ufeat name="Number"/>
+            <ufeat name="Case"/>
           </ufeats>
         </match>
       </target>
@@ -1297,6 +1257,10 @@
         <location>+1</location>
         <match>
           <upos>NOUN</upos>
+          <ufeats>
+            <ufeat name="Number"/>
+            <ufeat name="Case"/>
+          </ufeats>
         </match>
       </context>
     </evidence>
@@ -1325,13 +1289,13 @@
       </match>
       </context>
     </evidence>
-    <evidence name="Numeral modifier agrees in plur">
+    <evidence name="Numeral modifier agrees">
       <target>
         <match>
           <upos>NUM</upos>
           <ufeats>
             <ufeat name="NumType">Card</ufeat>
-            <ufeat name="Number">Plur</ufeat>
+            <ufeat name="Number"/>
             <ufeat name="Case"/>
           </ufeats>
         </match>
@@ -1342,30 +1306,7 @@
         <location>+1</location>
         <match>
         <ufeats>
-          <ufeat name="Number">Plur</ufeat>
-          <ufeat name="Case"/>
-        </ufeats>
-      </match>
-      </context>
-    </evidence>
-    <evidence name="Numeral modifier agrees in sing">
-      <target>
-        <match>
-          <upos>NUM</upos>
-          <ufeats>
-            <ufeat name="NumType">Card</ufeat>
-            <ufeat name="Number">Sing</ufeat>
-            <ufeat name="Case"/>
-          </ufeats>
-        </match>
-      </target>
-      <likelihood>usually</likelihood>
-      <depname>nummod</depname>
-      <context>
-        <location>+1</location>
-        <match>
-        <ufeats>
-          <ufeat name="Number">Sing</ufeat>
+          <ufeat name="Number"/>
           <ufeat name="Case"/>
         </ufeats>
       </match>
@@ -1405,13 +1346,22 @@
           <upos>NOUN</upos>
           <upos>PROPN</upos>
           <ufeats>
+            <ufeat name="Case">Abl</ufeat>
+          </ufeats>
+          <ufeats>
+            <ufeat name="Case">Ade</ufeat>
+          </ufeats>
+          <ufeats>
+            <ufeat name="Case">Ine</ufeat>
+          </ufeats>
+          <ufeats>
             <ufeat name="Case">All</ufeat>
           </ufeats>
           <ufeats>
             <ufeat name="Case">Ill</ufeat>
           </ufeats>
           <ufeats>
-            <ufeat name="Case">Ade</ufeat>
+            <ufeat name="Case">Ela</ufeat>
           </ufeats>
           <ufeats>
             <ufeat name="Case">Ess</ufeat>
@@ -1440,6 +1390,9 @@
       <target>
         <match>
           <upos>PROPN</upos>
+          <ufeats>
+            <ufeat name="Case"/>
+          </ufeats>
         </match>
       </target>
       <likelihood>usually</likelihood>
@@ -1448,12 +1401,14 @@
         <location>+1</location>
         <match>
           <upos>PROPN</upos>
+          <ufeats>
+            <ufeat name="Case"/>
+          </ufeats>
         </match>
       </context>
     </evidence>
     <!-- acls -->
-    <evidence name="some agreeing deverbals are acls
-      XXX: the Part readig is missing because of decisions...">
+    <evidence name="some agreeing deverbals are acls">
       <target>
         <match>
           <upos>VERB</upos>
