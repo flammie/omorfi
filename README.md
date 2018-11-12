@@ -33,7 +33,7 @@ These are the obligatory stamps of the day:
 
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
 (stable master branch:
-[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
+[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
 )
 
 ## Documentation
@@ -61,10 +61,10 @@ for reporting bugs, and the stable releases as convenient packages.
 ## Dependencies
 
 *Before you start:* Apertium wiki has installation information for most
-dependencies on their [Apertium installation pages, look at section called
-pre-requisites](http://wiki.apertium.org/wiki/Installation), e.g., if you are
-looking to build *omorfi* on *Ubuntu*, go to: [Pre-requisites for
-Ubuntu](http://wiki.apertium.org/wiki/Prerequisites_for_Debian).
+dependencies on their [packaging-based installation instructions for
+Linux and WSL](http://wiki.apertium.org/wiki/Install_Apertium_core_using_packaging),
+these instructions are good for Debian- and Redhat-based distributions at the
+moment.
 
 Compilation of the morphological analyser, generation, lemmatisation or
 spell-checking requires [HFST](https://hfst.github.io/) tools or compatible
@@ -75,11 +75,12 @@ guaranteed to work at all with all ancient versions of GNU build tools, HFST or
 python. The versions that should work are as follows:
 
   * **hfst-3.15** or greater, with python bindings
-  * **python-3.2** or greater, with hfst python bindings available
     * Note! 3.15 has greatly improved efficiency of HFST python bindings, it is
       a hard requirement for build and use (memory usage is stable 100 megs
       instead of linearly rising from few gigs!)
-  * GNU **autoconf-2.64** and **automake-1.12**
+  * **python-3.2** or greater, with hfst python bindings available
+  * **C++** compiler and **libtool** (can be disabled?)
+  * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config** implementation
 
 The use of certain automata also requires additional tools:
 
