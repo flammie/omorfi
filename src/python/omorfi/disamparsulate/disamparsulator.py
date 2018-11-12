@@ -180,10 +180,44 @@ class Disamparsulator:
 
     def linguisticate(self, sentence: list):
         '''Not a parsing function.'''
-        #
+        # for each token for each rule apply
         for token in sentence:
+            if token.nontoken:
+                continue
             for rule in self.rules:
                 rule.apply(token, sentence)
+            # some things can be pruned
+            cleanups = list()
+            for analysis in token.analyses:
+                if not analysis.udepname:
+                    analysis.weight += 500
+                    cleanups.append(analysis)
+            if len(cleanups) < len(token.analyses):
+                for cleanup in cleanups:
+                    for analysis in token.analyses:
+                        if analysis.upos == cleanup.upos and \
+                                analysis.ufeats == cleanup.ufeats and \
+                                analysis.udepname:
+                            token.analyses.remove(cleanup)
+                            break
+        # we have to pull out multiple roots
+        toproot = None
+        minweight = float('inf')
+        for token in sentence:
+            if token.nontoken:
+                continue
+            analysis = token.get_best()
+            if analysis.udepname == 'root':
+                if analysis.weight < minweight:
+                    toproot = analysis
+                    minweight = analysis.weight
+        for token in sentence:
+            if token.nontoken:
+                continue
+            analysis = token.get_best()
+            if analysis.udepname == 'root':
+                if analysis != toproot:
+                    analysis.weight += 500
 
 
 def main():
