@@ -24,8 +24,14 @@ class Token:
 
     def __init__(self, surf=None):
         """Create token with surface string optionally."""
-        ## underlying raw omor analysis
+        ## all gathered analyses so far as Analysis objects
         self.analyses = []
+        ## all constructed morph segmentations
+        self.segmentations = []
+        ## all constructed morph labelsegmentations
+        self.labelsegmentations = []
+        ## all constructed lemmatisations
+        self.lemmatisations = []
         ## original surface form
         self.surf = surf
         ## word index in context, e.g. UD column 1
@@ -279,20 +285,12 @@ class Token:
         return "\t".join([str(self.pos), self.surf, lemma, upos, third,
                           ud_feats, dephead, depname, "_", ud_misc])
 
-    def get_nbest(self, n: int):
-        """Get n most likely analyses of given type.
-
-        Args:
-            n: number of analyses, use 0 to get all
-
-        Returns:
-            At most n analyses of given type or empty list if there aren't any.
-        """
+    def _get_nbest(self, n: int, anals: list):
         nbest = []
         worst = -1.0
         if n == 0:
             n = 65535
-        for anal in self.analyses:
+        for anal in anals:
             if len(nbest) < n:
                 nbest.append(anal)
                 # when filling the queue find biggest
@@ -309,17 +307,37 @@ class Token:
                         worst = a.weight
         return nbest
 
-    def get_best(self):
-        """Get most likely analysis of given type.
+    def get_nbest(self, n: int):
+        """Get n most likely analyses.
 
         Args:
-            name: type of analysis to look for.
+            n: number of analyses, use 0 to get all
+
+        Returns:
+            At most n analyses of given type or empty list if there aren't any.
+        """
+        return self._get_nbest(n, self.analyses)
+
+    def get_best(self):
+        """Get most likely analysis.
 
         Returns:
             most probably analysis of given type, or None if analyses have not
             been made for the type.
         """
         nbest1 = self.get_nbest(1)
+        if nbest1:
+            return nbest1[0]
+        else:
+            return None
+
+    def get_best_segments(self):
+        """Get most likely segmentation.
+
+        Returns:
+            list of strings each one being a morph or other sub-word segment.
+        """
+        nbest1 = self._get_nbest(1, self.segmentations)
         if nbest1:
             return nbest1[0]
         else:

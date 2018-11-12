@@ -8,7 +8,7 @@ from omorfi import Omorfi
 
 def print_moses_factor_segments(token, outfile, options):
     labelsegments = None
-    for anal in token.analyses:
+    for anal in token.labelsegmentations:
         if anal.rawtype == "labelsegments":
             labelsegments = anal
             break
@@ -21,7 +21,7 @@ def print_moses_factor_segments(token, outfile, options):
 
 def print_segments(token, outfile, options):
     segments = None
-    for anal in token.analyses:
+    for anal in token.segmentations:
         if anal.rawtype == "segments":
             segments = anal
             break

@@ -616,6 +616,7 @@ class Omorfi:
 
     def _lemmatise(self, token):
         res = self.lemmatiser.lookup(token.surf)
+        newlemmas = list()
         for r in res:
             lemma = r[0]
             weight = float(r[1])
@@ -623,8 +624,10 @@ class Omorfi:
             anal.raw = lemma
             anal.rawtype = "lemma"
             anal.weight = weight
-            token.analyses.append(anal)
-        return res
+            newlemmas.append(anal)
+        for lemma in newlemmas:
+            token.lemmatisations.append(lemma)
+        return newlemmas
 
     def lemmatise(self, token: Token):
         '''Lemmatise token, splitting it into valid word id's from lexical db.
@@ -638,8 +641,7 @@ class Omorfi:
             token: token to lemmatise
 
         Returns:
-            A HFST strucuture of possible lemmas or None if not found in the
-            dictionary.
+            New lemmas in analysis list
         '''
         lemmas = None
         lemmas = self._lemmatise(token)
@@ -651,12 +653,14 @@ class Omorfi:
             guess.rawtype = "lemma"
             guess.ewight = weight
             guess.manglers.append("GUESSER=SURFISLEMMA")
-            token.analyses.append(guess)
-        return token.analyses
+            token.lemmatisations.append(guess)
+            lemmas = [guess]
+        return lemmas
 
     def _segment(self, token: Token):
         '''Intenal segmenting using HFST automaton.'''
         res = self.segmenter.lookup(token.surf)
+        newsegs = list()
         for r in res:
             segments = r[0]
             weight = float(r[1])
@@ -664,8 +668,10 @@ class Omorfi:
             anal.raw = segments
             anal.weight = weight
             anal.rawtype = "segments"
-            token.analyses.append(anal)
-        return res
+            newsegs.append(anal)
+        for ns in newsegs:
+            token.segmentations.append(ns)
+        return newsegs
 
     def segment(self, token: Token):
         '''Segment token into morphs, words and other string pieces.
@@ -678,8 +684,7 @@ class Omorfi:
             token: token to segment
 
         Returns:
-            An HFST structure containing raw segmentation strings or None if
-            the dictionary couldn't segment the token.
+            New segmentations in analysis list
         '''
         segments = None
         segments = self._segment(token)
@@ -691,12 +696,14 @@ class Omorfi:
             guess.weight = weight
             guess.rawtype = "segments"
             guess.manglers.append("GUESSER=SURFISSEGMENT")
-            token.analyses.append(guess)
+            token.segmentations.append(guess)
+            segments = [guess]
         return segments
 
     def _labelsegment(self, token: Token):
         '''Internal implementation of segment label lookup with FSA.'''
         res = self.labelsegmenter.lookup(token.surf)
+        newlabels = list()
         for r in res:
             labelsegments = r[0]
             weight = float(r[1])
@@ -704,8 +711,10 @@ class Omorfi:
             anal.raw = labelsegments
             anal.weight = weight
             anal.rawtype = "labelsegments"
-            token.analyses.append(anal)
-        return res
+            newlabels.append(anal)
+        for ls in newlabels:
+            token.labelsegmentations.append(ls)
+        return newlabels
 
     def labelsegment(self, token: Token):
         '''Segment token into labelled morphs, words and other string pieces.
@@ -723,8 +732,7 @@ class Omorfi:
             token: token to segment with labels
 
         Returns:
-            HFST structure containing raw labelsegments or None if dictionary
-            couldn't segment the token.
+            New labeled segemntations in analysis list.
         '''
         labelsegments = None
         labelsegments = self._labelsegment(token)
@@ -736,7 +744,8 @@ class Omorfi:
             guess.weight = lsweight
             guess.rawtype = "labelsegments"
             guess.manglers.append("GUESSER=SURFISLABELS")
-            token.analyses.append(guess)
+            token.labelsegmentations.append(guess)
+            labelsegments = [guess]
         return labelsegments
 
     def _accept(self, token):
@@ -794,11 +803,8 @@ class Omorfi:
                 continue
             elif conllu.strip() == '':
                 continue
-            tokens += [self._conllu2token(conllu)]
+            tokens += [Token.fromconllu(conllu)]
         return tokens
-
-    def _conllu2token(self, conllu):
-        return Token.fromconllu(conllu)
 
     def tokenise_sentence(self, sentence):
         '''tokenise a sentence.

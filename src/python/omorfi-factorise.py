@@ -66,16 +66,19 @@ def main():
             mrds = ["?"]
             lemmas = [token.surf]
             if anals:
-                anal = token.get_best("omor")
+                anal = token.get_best()
                 pos = anal.get_upos()
                 mrds = anal.get_ufeats()
                 lemmas = anal.get_lemmas()
             segments = omorfi.segment(token)
             morphs = "0"
             if segments:
-                segment = token.get_best("segments")
-                parts = segment.get_segments()
-                morphs = ".".join(parts)
+                segment = token.get_best_segments()
+                if segment:
+                    parts = segment.get_segments()
+                    morphs = ".".join(parts)
+                else:
+                    morphs = token.surf
             print(token.surf, '+'.join(lemmas), pos, '.'.join(mrds),
                   morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)
