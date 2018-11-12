@@ -37,7 +37,6 @@ class Evidence:
     def apply(self, token: Token, sentence: list):
         '''If suggestion applies to token in context.'''
         newdeps = list()
-        depless = None
         for analysis in token.analyses:
             matched = True
             if not self.target.matches(analysis):
@@ -59,42 +58,52 @@ class Evidence:
                     for b in token.analyses:
                         if b != analysis:
                             b.weight -= self.unlikelihood
-            if not matched and "negated" in self.context and not self.depname:
+            elif not matched and "negated" in self.context and not self.depname:
                 if self.unlikelihood > 0:
                     analysis.weight += self.unlikelihood
                 elif self.unlikelihood < 0:
                     for b in token.analyses:
                         if b != analysis:
                             b.weight -= self.unlikelihood
-            if matched and heads:
+            elif matched and heads:
                 for head in heads:
                     # we actually want to copy analysis per head
                     distance = abs(token.pos - head['pos'])
+                    if head['pos'] == 0:
+                        distance = 0
                     if distance == 0:
                         distance = 1
                     barriers = self.count_barriers(token, sentence, head)
                     magic = (distance * 0.1) / (barriers + 1)
-                    if self.depname:
-                        depless = analysis
+                    magic2 = (distance * 0.01) / (barriers + 1)
+                    if self.depname and not analysis.udepname:
                         newdep = deepcopy(analysis)
-                        analysis.weight -= self.unlikelihood * magic
                         newdep.udepname = self.depname
                         newdep.udeppos = head['pos']
-                        newdeps.append(newdep)
+                        # deps within disance set reweight
+                        newdep.weight += magic2
                         for b in token.analyses:
-                            if b != analysis and b.udepname != self.depname:
+                            if b.udepname != self.depname and b != analysis:
+                                # other deps reweight but not the reference
+                                # undep!
                                 b.weight -= self.unlikelihood * magic
+                        newdeps.append(newdep)
                     # also reweight the head
-                    for w in sentence:
-                        if w.pos == head['pos']:
-                            for a in w.analyses:
-                                if a != head['a']:
-                                    a.weight -= self.unlikelihood * magic
+                    # maybe not...
+                    # for w in sentence:
+                    #    if w.pos == head['pos']:
+                    #        for a in w.analyses:
+                    #            if a != head['a']:
+                    #                a.weight -= self.unlikelihood * magic
         # append new stuff at the end to avoid eterbnal loops
+        addeds = set()
         for anal in newdeps:
-            token.analyses.append(anal)
-        if depless:
-            token.analyses.remove(depless)
+            # XXX: should be weighted uniq but meh
+            addkey = anal.udepname, anal.udeppos, anal.upos,\
+                "#".join(anal.lemmas)
+            if addkey not in addeds:
+                token.analyses.append(anal)
+                addeds.add(addkey)
 
     def find_context(self, target: Token, sentence: list):
         '''Traverse sentence to find contexts that match.'''
