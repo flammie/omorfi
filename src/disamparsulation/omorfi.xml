@@ -625,18 +625,6 @@
         <location>ROOT</location>
       </context>
     </evidence>
-    <evidence name="cconj coordinates its +1">
-      <target>
-        <match>
-          <upos>CCONJ</upos>
-        </match>
-      </target>
-      <likelihood>probably</likelihood>
-      <depname>cc</depname>
-      <context>
-        <location>+1</location>
-      </context>
-    </evidence>
     <evidence name="verb conjs that can ve lifted when >1 roots">
       <target>
         <match>
@@ -1431,5 +1419,39 @@
         </match>
       </context>
     </evidence>
+    <!-- conjunctions? -->
+    <evidence name="cconj coordinates its +1 often">
+      <target>
+        <match>
+          <upos>CCONJ</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>cc</depname>
+      <context>
+        <location>+1</location>
+      </context>
+    </evidence>
+    <evidence name="sconj marks something often">
+      <target>
+        <match>
+          <upos>SCONJ</upos>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>mark</depname>
+      <context>
+        <location>right</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+
   </evidences>
 </disamparsulations>
