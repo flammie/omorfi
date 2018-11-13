@@ -159,8 +159,11 @@ class Analysis:
                     a.ufeats['Mood'] = 'Cnd'
                 elif value == 'IMPV':
                     a.ufeats['Mood'] = 'Imp'
+                elif value == 'POTN':
+                    a.ufeats['Mood'] = 'Pot'
                 else:
-                    a.ufeats['Mood'] = value[0] + value[1:].lower()
+                    print(key, value, 'omor', file=stderr)
+                    exit(1)
             elif key == 'VOICE':
                 if value == 'PSS':
                     a.ufeats['Voice'] = 'Pass'
@@ -227,7 +230,7 @@ class Analysis:
                 elif value == 'NUT':
                     a.ufeats['PartForm'] = 'Past'
                 elif value in ["MA", "AGENT"]:
-                    a.ufeats['PartForm'] = 'Agent'
+                    a.ufeats['PartForm'] = 'Agt'
                 elif value in ["MATON", "NEG"]:
                     a.ufeats['PartForm'] = 'Neg'
                 else:
@@ -246,7 +249,7 @@ class Analysis:
                     # XXX
                     a.ufeats['Number'] = 'Sing'
                 elif value == 'MINEN':
-                    a.ufeats['InfForm'] = '4'
+                    a.ufeats['Derivation'] = 'Minen'
                 elif value == 'MAISILLA':
                     a.ufeats['InfForm'] = '5'
                 else:
@@ -269,7 +272,7 @@ class Analysis:
                 elif value == 'QUANTIFIER':
                     a.ufeats['PronType'] = 'Ind'
                 elif value == 'REFLEXIVE':
-                    a.ufeats['Reflexive'] = 'Yes'
+                    a.ufeats['Reflex'] = 'Yes'
                 elif value in ['COMMA', 'DASH', 'QUOTATION', 'BRACKET',
                                'ARROW']:
                     # not annotated in UD feats:
@@ -298,7 +301,7 @@ class Analysis:
             elif key == 'CLIT':
                 a.ufeats['Clitic'] = value[0] + value[1:].lower()
             elif key == 'FOREIGN':
-                a.ufeats['Foreign'] = value[0] + value[1:].lower()
+                a.ufeats['Foreign'] = 'Yes'
             elif key == 'STYLE':
                 if value in ['DIALECTAL', 'COLLOQUIAL']:
                     a.ufeats['Style'] = 'Coll'
@@ -776,7 +779,7 @@ class Analysis:
                     rvs += ['PRS', 'POS', 'COND']
                 elif value == 'Imp':
                     rvs += ['PRS', 'POS', 'IMP']
-                elif value == 'Potn':
+                elif value == 'Pot':
                     rvs += ['PRS', 'POS', 'POT']
                 else:
                     rvs += [value.upper()]
