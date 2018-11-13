@@ -537,16 +537,8 @@ class Analysis:
                 elif value == 'MAISILLA':
                     rvs += ['Inf5']
             elif key == 'PartForm':
-                if value == 'Pres':
-                    rvs += ['PrsPrc']
-                elif value == 'Past':
-                    rvs += ['PstPrc']
-                elif value == '3':
-                    rvs += ['Inf3']
-                elif value == 'MINEN':
-                    rvs += ['Inf4']
-                elif value == 'MAISILLA':
-                    rvs += ['Inf5']
+                # FTB participle is POS
+                pass
             elif key == 'Case':
                 rvs += [value]
             elif key == 'Degree':
@@ -1270,14 +1262,14 @@ class Analysis:
             return 'A'
         elif upos in ['VERB', 'AUX']:
             # this is inverse that I intended but oh well...
-            if 'Derivation' in self.misc:
-                if self.misc['Derivation'] in ['Nut', 'Tu']:
+            if 'PartForm' in self.ufeats:
+                if self.ufeats['PartForm'] == 'Past':
                     return 'PrfPrc'
-                elif self.misc['Derivation'] == 'Ma':
+                elif self.ufeats['PartForm'] == 'Agt':
                     return 'AgPrc'
-                elif self.misc['Derivation'] in ['Va', 'Tava']:
+                elif self.ufeats['PartForm'] == 'Pres':
                     return 'PrsPrc'
-                elif self.misc['Derivation'] == 'Maton':
+                elif self.ufeats['PartForm'] == 'Neg':
                     return 'NegPrc'
                 else:
                     return 'V'
