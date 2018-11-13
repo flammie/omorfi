@@ -106,7 +106,7 @@ def main():
         found_lemma = False
         rehashed = True
         permuted = True
-        for anal in token.get_nbest(0, "omor"):
+        for anal in token.analyses:
             if options.format == 'ftb3.1':
                 anal_ftb3 = ' '.join(anal.get_ftb_feats())
                 lemma_ftb3 = '#'.join(anal.get_lemmas())
