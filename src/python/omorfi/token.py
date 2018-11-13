@@ -245,7 +245,8 @@ class Token:
                 else:
                     return '# ' + self.comment
             elif self.nontoken == 'separator':
-                return '\n'
+                # not returning \n since the it's already printed on a line
+                return ''
             else:
                 # ignore other nontokens??
                 return ''
