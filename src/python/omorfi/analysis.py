@@ -161,6 +161,8 @@ class Analysis:
                     a.ufeats['Mood'] = 'Imp'
                 elif value == 'POTN':
                     a.ufeats['Mood'] = 'Pot'
+                elif value == 'OPT':
+                    a.misc['Mood'] = 'Opt'
                 else:
                     print(key, value, 'omor', file=stderr)
                     exit(1)
@@ -603,7 +605,7 @@ class Analysis:
                     rvs += ['Pass']
                 else:
                     continue
-            elif key == 'Reflexive':
+            elif key == 'Reflex':
                 rvs += ['Refl']
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                          'GUESS', 'PROPER', 'SEM', 'CONJ', 'BOUNDARY',
@@ -877,7 +879,7 @@ class Analysis:
                 rvs += ['???']
             elif key == 'Derivation':
                 rvs += ['???']
-            elif key == 'Reflexive':
+            elif key == 'Reflex':
                 rvs += ['???']
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                          'GUESS', 'PROPER', 'SEM', 'CONJ', 'BOUNDARY',
