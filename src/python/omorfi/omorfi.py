@@ -828,7 +828,7 @@ class Omorfi:
         return tokens
 
     def tokenise_plaintext(self, f):
-        '''tokenise a line of text.
+        '''tokenise a whole text.
 
         @todo should get sentence from plaintext in the future.'''
         tokens = list()
@@ -836,7 +836,7 @@ class Omorfi:
             tokens = self.tokenise(line.strip())
             pos = 1
             for token in tokens:
-                token.pos = pos
+                token.pos = post
                 pos += 1
             sep = Token()
             sep.nontoken = "separator"

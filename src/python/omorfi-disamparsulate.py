@@ -11,7 +11,7 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 # omorfi
 from omorfi import Omorfi
-from omorfi.fileformats import next_conllu
+from omorfi.formats.fileformats import next_conllu
 from omorfi.disamparsulate import Disamparsulator
 
 

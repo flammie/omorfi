@@ -19,10 +19,11 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .error_logging import fail_formatting_missing_for, just_fail
+from ..error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .settings import deriv_boundary, morph_boundary, stub_boundary, weak_boundary, word_boundary
-from .string_manglers import lexc_escape
+from ..settings import (deriv_boundary, morph_boundary, stub_boundary,
+                        weak_boundary, word_boundary)
+from ..string_manglers import lexc_escape
 
 
 class GiellaFormatter(Formatter):
@@ -421,11 +422,12 @@ class GiellaFormatter(Formatter):
         ## Verbosity
         self.verbosity = verbosity
         fail = False
-        for stuff, giella in self.stuff2giella.items():
+        for _, giella in self.stuff2giella.items():
             if len(giella) < 2:
                 continue
             elif giella not in self.giella_multichars:
-                just_fail("There are conflicting formattings in here!\n" + giella +
+                just_fail("There are conflicting formattings in here!\n" +
+                          giella +
                           " is not a valid defined giella multichar_symbol!")
                 fail = True
         if fail:
@@ -495,8 +497,8 @@ class GiellaFormatter(Formatter):
         if wordmap['is_proper']:
             wordmap['analysis'] += self.stuff2lexc('PROPER')
             if wordmap['proper_noun_class']:
-                wordmap[
-                    'analysis'] += self.stuff2lexc(wordmap['proper_noun_class'])
+                wordmap['analysis'] +=\
+                    self.stuff2lexc(wordmap['proper_noun_class'])
         if wordmap['particle']:
             for pclass in wordmap['particle'].split('|'):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
@@ -504,7 +506,8 @@ class GiellaFormatter(Formatter):
             for subcat in wordmap['symbol'].split('|'):
                 wordmap['analysis'] += self.stuff2lexc(subcat)
         lex_stub = lexc_escape(wordmap['stub'].replace(word_boundary, "")
-                               .replace(weak_boundary, "").replace(deriv_boundary, "»")
+                               .replace(weak_boundary, "")
+                               .replace(deriv_boundary, "»")
                                .replace(morph_boundary, ">"))
         lexc_line = "%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
                                       wordmap['new_para'])

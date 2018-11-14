@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stderr, stdin, stdout
@@ -10,44 +8,39 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi import Omorfi, Token
-
-
-
-
-
+from omorfi import Omorfi
 
 
 def try_analyses_ftb(original, wordn, surf, anals, outfile, hacks=None):
     for anal in anals:
-        pos = format_xpos_ftb(anal)
+        pos = anal.format_xpos_ftb()
         if pos == original[3]:
-            feats = format_feats_ftb(anal)
+            feats = anal.format_feats_ftb()
             if feats == original[5]:
-                lemmas = "#".join(get_lemmas(anal))
+                lemmas = "#".join(anal.get_lemmas())
                 if lemmas == original[2]:
                     return print_analyses_ftb(wordn, surf, anal, outfile)
     # no exact match found (re-try without lemma)
     for anal in anals:
-        upos = format_xpos_ftb(anal)
+        upos = anal.format_xpos_ftb()
         if upos == original[3]:
-            feats = format_feats_ftb(anal)
+            feats = anal.format_feats_ftb()
             if feats == original[5]:
                 return print_analyses_ftb(wordn, surf, anal, outfile)
     # and re-try without feats
     for anal in anals:
-        upos = format_xpos_ftb(anal)
+        upos = anal.format_xpos_ftb()
         if upos == original[3]:
             return print_analyses_ftb(wordn, surf, anal, outfile)
     return print_analyses_ftb(wordn, surf, anals[0], outfile)
 
 
 def print_analyses_ftb(wordn, surf, anal, outfile, hacks=None):
-    pos = format_xpos_ftb(anal)
-    print(wordn, surf, "#".join(get_lemmas(anal)),
+    pos = anal.format_xpos_ftb()
+    print(wordn, surf, "#".join(anal.get_lemmas()),
           pos,
           pos,
-          format_feats_ftb(anal),
+          anal.format_feats_ftb(),
           "_", "_", "_", "_", sep="\t", file=outfile)
 
 

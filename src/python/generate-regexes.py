@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf8 -*-
 """
-This script generates twolc files from database data.
+This script generates regexes for omorfi.
 """
 
 
@@ -22,17 +22,17 @@ This script generates twolc files from database data.
 #
 
 import argparse
-from sys import exit
 
-from omorfi.ftb3_formatter import Ftb3Formatter
-from omorfi.omor_formatter import OmorFormatter
-from omorfi.regex_formatter import format_rules_regex
+from omorfi.formats.ftb3_formatter import Ftb3Formatter
+from omorfi.formats.omor_formatter import OmorFormatter
+from omorfi.formats.regex_formatter import format_rules_regex
 
 
 # standard UI stuff
 
 
 def main():
+    """Command-line interface for regex generation in omorfi."""
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Generate Xerox twolcs for Finnish")
@@ -42,7 +42,8 @@ def main():
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
                     help="print each step to stdout while processing")
     ap.add_argument("--output", "-o", type=argparse.FileType("w"),
-                    required=True, metavar="OFILE", help="write output to OFILE")
+                    required=True, metavar="OFILE",
+                    help="write output to OFILE")
     ap.add_argument("--ruleset", "-r", required=True, action="store",
                     metavar="RULES", help="compile RULES ruleset")
 

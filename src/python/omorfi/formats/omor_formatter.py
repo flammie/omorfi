@@ -23,9 +23,9 @@
 
 import re
 
-from .error_logging import fail_formatting_missing_for, just_fail
+from ..error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
+from ..string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
 
 
 class OmorFormatter(Formatter):
@@ -893,6 +893,5 @@ class OmorFormatter(Formatter):
 
 # self test
 if __name__ == '__main__':
-    from sys import exit
     formatter = OmorFormatter()
     exit(0)

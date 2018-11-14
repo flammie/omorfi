@@ -9,7 +9,7 @@ Contains single hypothesis of single aspect of things.
 import re
 from sys import stderr
 
-from .omor_formatter import OmorFormatter
+from .formats.omor_formatter import OmorFormatter
 
 
 class Analysis:

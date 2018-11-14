@@ -19,12 +19,14 @@
 #
 # utils to format xerox regexes from omor's lexical data sources.
 
-from .settings import (deriv_boundary, fin_lowercase, fin_orth_pairs, fin_uppercase, morph_boundary, stub_boundary,
-                       weak_boundary, word_boundary)
+from ..settings import (deriv_boundary, fin_lowercase, fin_orth_pairs,
+                        fin_uppercase, morph_boundary, stub_boundary,
+                        weak_boundary, word_boundary)
 from .twolc_formatter import twolc_escape
 
 
 def format_rules_regex(formatter, ruleset):
+    """Generate omorfi rlues in Xerox regex format."""
     regexstring = ''
     if ruleset == 'orthographic-variations':
         regexstring += '[ '
@@ -40,13 +42,21 @@ def format_rules_regex(formatter, ruleset):
         regexstring += '# Remove before compounds:\n'
         regexstring += '[ '
         regexstring += ' -> 0,\n '.join([formatter.stuff2lexc(tag) for tag in
-                                         ['ADJ', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUM', 'PROPER', 'DIGIT', 'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill', 'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe', 'Xtra', 'Xcom', 'Nsg', 'Npl']])
+                                         ['ADJ', 'NOUN', 'VERB', 'ACRONYM',
+                                          'ABBREVIATION', 'NUM', 'PROPER',
+                                          'DIGIT', 'Xnom', 'Xpar', 'Xgen',
+                                          'Xine', 'Xela', 'Xill', 'Xade',
+                                          'Xabl', 'Xall', 'Xess', 'Xins',
+                                          'Xabe', 'Xtra', 'Xcom', 'Nsg',
+                                          'Npl']])
         regexstring += '-> 0 || _ ?* %# ]\n'
         regexstring += '.o.\n'
         regexstring += '# Remove V before Prc\n'
         regexstring += '[ ' + formatter.stuff2lexc('VERB') + ' -> 0 || _  [ '
         regexstring += ' | '.join([formatter.stuff2lexc(tag) for tag in
-                                   ['Cma', 'Cmaisilla', 'Cnut', 'Cva', 'Cmaton', 'Dma', 'Dnut', 'Dtu', 'Dva', 'Dtava']])
+                                   ['Cma', 'Cmaisilla', 'Cnut', 'Cva',
+                                    'Cmaton', 'Dma', 'Dnut', 'Dtu', 'Dva',
+                                    'Dtava']])
         regexstring += '] ]\n'
         regexstring += '.o.\n'
         regexstring += '# ftb3.1 all pr are optional po\n'
@@ -94,21 +104,37 @@ def format_rules_regex(formatter, ruleset):
         regexstring += '# Remove everything:\n'
         regexstring += '[ '
         regexstring += ' -> 0,\n'.join([formatter.stuff2lexc(tag) for tag in
-                                        ['ADJ', 'NOUN', 'VERB', 'ACRONYM', 'ABBREVIATION', 'NUM', 'PROPER', 'DIGIT', 'COORDINATING', 'ADVERBIAL', 'ORDINAL', 'DEMONSTRATIVE', 'PERSONAL', 'INDEFINITE', 'QUANTOR', 'INTERROGATIVE', 'REFLEXIVE', 'RELATIVE', 'PUNCTUATION', 'DASH', 'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1', 'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL', 'UNSPECIFIED', 'PRON', 'INTJ',
-                                         'Xnom', 'Xpar', 'Xgen', 'Xine', 'Xela', 'Xill',
-                                         'Xade', 'Xabl', 'Xall', 'Xess', 'Xins', 'Xabe',
+                                        ['ADJ', 'NOUN', 'VERB', 'ACRONYM',
+                                         'ABBREVIATION', 'NUM', 'PROPER',
+                                         'DIGIT', 'COORDINATING', 'ADVERBIAL',
+                                         'ORDINAL', 'DEMONSTRATIVE',
+                                         'PERSONAL', 'INDEFINITE', 'QUANTOR',
+                                         'INTERROGATIVE', 'REFLEXIVE',
+                                         'RELATIVE', 'PUNCTUATION', 'DASH',
+                                         'ROMAN', 'PL1', 'PL2', 'PL3', 'SG1',
+                                         'SG2', 'SG3', 'PE4', 'COMP', 'SUPERL',
+                                         'UNSPECIFIED', 'PRON', 'INTJ',
+                                         'Xnom', 'Xpar', 'Xgen', 'Xine',
+                                         'Xela', 'Xill',
+                                         'Xade', 'Xabl', 'Xall', 'Xess',
+                                         'Xins', 'Xabe',
                                          'Xtra', 'Xcom', 'Nsg', 'Npl',
                                          'Osg1', 'Osg2', 'O3', 'Opl1', 'Opl2',
-                                         'Qka', 'Qs', 'Qpa', 'Qko', 'Qkin', 'Qkaan', 'Qhan',
+                                         'Qka', 'Qs', 'Qpa', 'Qko', 'Qkin',
+                                         'Qkaan', 'Qhan',
                                          'Vact', 'Vpss',
-                                         'Ncon', 'Nneg', 'Dnut', 'Dtu', 'Dva', 'Dtava',
+                                         'Ncon', 'Nneg', 'Dnut', 'Dtu',
+                                         'Dva', 'Dtava',
                                          'Ia', 'Ie', 'Ima',
-                                         'Tcond', 'Timp', 'Tpast', 'Tpot', 'Tpres', 'Topt'] if formatter.stuff2lexc(tag)])
+                                         'Tcond', 'Timp', 'Tpast', 'Tpot',
+                                         'Tpres',
+                                         'Topt'] if formatter.stuff2lexc(tag)])
         regexstring += '-> 0 || _ ] ;\n'
     elif ruleset == 'remove-boundaries':
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in
-                                       [word_boundary, deriv_boundary, morph_boundary,
-                                        stub_boundary, weak_boundary]]) + '-> 0 || _ ;'
+                                       [word_boundary, deriv_boundary,
+                                        morph_boundary, stub_boundary,
+                                        weak_boundary]]) + '-> 0 || _ ;'
     elif ruleset == 'remove-boundaries-giella':
         regexstring += ' -> 0, '.join([twolc_escape(tag) for tag in
                                        [">", "»"]]) + '-> 0 || _ ;'

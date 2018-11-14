@@ -24,16 +24,18 @@ automatic guessing. The
 
 import argparse
 import csv
-from sys import exit, stderr
-from omorfi.guess_feats import guess_bound_morphs
-from omorfi.parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
-from omorfi.stub import stub_all_new_para
-from omorfi.wordmap import get_wordmap_fieldnames, init_wordmap
+from sys import stderr
+from omorfi.entryguessing.guess_feats import guess_bound_morphs
+from omorfi.entryguessing.parse_csv_data import parse_defaults_from_tsv,\
+    parse_extras_from_tsv
+from omorfi.entryguessing.stub import stub_all_new_para
+from omorfi.entryguessing.wordmap import get_wordmap_fieldnames, init_wordmap
 
 
 # standard UI stuff
 
 def main():
+    """Command-line interface for omorfi entry guessing for TSV data."""
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Guess more data for Finnish TSV databases")
@@ -54,7 +56,8 @@ def main():
     ap.add_argument("--separator", "-s", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    metavar="COMMENT",
+                    help="skip lines starting with COMMENT that"
                     "do not have SEPs")
     ap.add_argument("--strip", "-S", action="store",
                     metavar="STRIP", help="strip STRIP characters")
@@ -73,7 +76,8 @@ def main():
     # read joins from file if any
     with open(args.join, 'r', newline='') as joins:
         join_reader = csv.DictReader(joins, delimiter=args.separator,
-                                     quoting=quoting, escapechar='\\', strict=True)
+                                     quoting=quoting, escapechar='\\',
+                                     strict=True)
         for join_parts in join_reader:
             if len(join_parts) < 3:
                 print("Must have at leas N separators in joins; skipping",
@@ -88,11 +92,13 @@ def main():
         tsv_writer = csv.DictWriter(output,
                                     fieldnames=get_wordmap_fieldnames(),
                                     delimiter=args.separator, quoting=quoting,
-                                    escapechar='%', quotechar=quotechar, strict=True)
+                                    escapechar='%', quotechar=quotechar,
+                                    strict=True)
         tsv_writer.writeheader()
         with open(args.input, 'r', newline='') as infile:
             tsv_reader = csv.reader(infile, delimiter=args.separator,
-                                    quoting=quoting, escapechar='\\', strict=True)
+                                    quoting=quoting, escapechar='\\',
+                                    strict=True)
             linecount = 0
             for tsv_parts in tsv_reader:
                 linecount += 1
@@ -121,7 +127,7 @@ def main():
                             elif k == 'kotus_tn':
                                 try:
                                     wordmap[k] = int(v)
-                                except:
+                                except ValueError:
                                     print("FAIL", k, v, tsv_parts)
                                     exit(2)
                             else:
@@ -150,9 +156,6 @@ def main():
                 if wordmap['is_suffix']:
                     wordmap['real_pos'] = wordmap['pos']
                     wordmap['pos'] = 'SUFFIX'
-                if "PCLE_HAH" == wordmap['new_para']:
-                    wordmap['real_pos'] = wordmap['pos']
-                    wordmap['pos'] = 'INTERJECTION'
                 wordmaps = [wordmap]
                 for wordmap in wordmaps:
                     tsv_writer.writerow(wordmap)

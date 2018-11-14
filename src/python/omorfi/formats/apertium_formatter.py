@@ -20,10 +20,10 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .error_logging import fail_formatting_missing_for, just_fail
+from ..error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from .settings import optional_hyphen, weak_boundary, word_boundary
-from .string_manglers import lexc_escape
+from ..settings import optional_hyphen, weak_boundary, word_boundary
+from ..string_manglers import lexc_escape
 
 
 class ApertiumFormatter(Formatter):
@@ -408,7 +408,7 @@ class ApertiumFormatter(Formatter):
 
         @return str containing lexc formatted analysis tag(s)
         """
-        if len(stuff) == 0:
+        if not stuff:
             return ""
         elif stuff in self.stuff2apertium:
             if self.stuff2apertium[stuff] in ['+', '-', '#', '0', '']:

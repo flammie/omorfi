@@ -8,8 +8,8 @@ from argparse import ArgumentParser, FileType
 from sys import stdin, stdout, stderr
 
 # omorfi
-from omorfi.fileformats import next_vislcg, next_conllu, next_plaintext,\
-    next_omorfi
+from omorfi.formats.fileformats import (next_vislcg, next_conllu,
+                                        next_plaintext, next_omorfi)
 
 
 def main():

@@ -7,12 +7,10 @@ Beta-testing a wack idea of not disambiguating and dependency parsing at the
 same time. Pay no attention to the man behind the curtains and move along.
 """
 
-from sys import argv
 # stuff
 import xml.etree.ElementTree
 from xml.etree.ElementTree import Element
 
-from ..fileformats import next_conllu
 from .evidence import Evidence
 from .matcher import Matcher
 
@@ -222,28 +220,7 @@ class Disamparsulator:
 
 def main():
     """Invoke a simple CLI analyser."""
-    if len(argv) < 2:
-        print("Usage:", argv[0], "ANALYSER INFILE")
-        exit(1)
-    from ..omorfi import Omorfi
-    omorfi = Omorfi(True)
-    omorfi.load_analyser(argv[1])
-    infile = open(argv[2])
-    eoffed = False
-    while not eoffed:
-        sent = next_conllu(infile)
-        if not sent:
-            continue
-        for token in sent:
-            if token.error == "eof":
-                eoffed = True
-                break
-            omorfi.analyse(token)
-            omorfi.guess(token)
-        # linguisticate(sent)
-        for token in sent:
-            print(token.printable_conllu())
-    exit(0)
+    exit(1)
 
 
 if __name__ == "__main__":
