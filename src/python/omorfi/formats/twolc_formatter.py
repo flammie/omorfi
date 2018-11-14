@@ -159,7 +159,7 @@ def format_rules_twolc(_, ruleset):
         twolcstring += "0:%-4 <=> WordBoundary (Consonants) (Consonants) " +\
                        "[Vowels (Vowels) Consonants (Consonants)]+ Vx _ Vy ;\n"
         twolcstring += "\twhere Vx in (a e o u y ä ö a e i o ä ö u y i e i)\n"
-        twolcstring += "\t\tVy in (i i i i i i i u u u u" +\
+        twolcstring += "\t\tVy in (i i i i i i i u u u u " +\
                        "y y o ö y y e) matched ;\n"
     elif ruleset == 'apertium':
         twolcstring += '"Remove stuffs"\n'
