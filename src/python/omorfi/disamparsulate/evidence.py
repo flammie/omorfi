@@ -58,7 +58,8 @@ class Evidence:
                     for b in token.analyses:
                         if b != analysis:
                             b.weight -= self.unlikelihood
-            elif not matched and "negated" in self.context and not self.depname:
+            elif not matched and "negated" in self.context and \
+                    not self.depname:
                 if self.unlikelihood > 0:
                     analysis.weight += self.unlikelihood
                 elif self.unlikelihood < 0:
@@ -144,14 +145,20 @@ class Evidence:
         Does note check if head is valid head, just that it is in context
         position.
         '''
+        magic3 = 42
         if self.context['location'] == 'ROOT':
             return True
         elif self.context['location'] == 'left':
             if not head.pos < target.pos:
                 return False
-            return True
+            elif abs(head.pos - target.pos) > magic3:
+                return False
+            else:
+                return True
         elif self.context['location'] == 'right':
             if not head.pos > target.pos:
+                return False
+            elif abs(head.pos - target.pos) > magic3:
                 return False
             else:
                 return True
