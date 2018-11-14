@@ -650,6 +650,9 @@ class Analysis:
                     rvs += ["Act"]
                 else:
                     pass
+            elif key == "Mood":
+                if value == 'Opt':
+                    rvs += ["Opt"]
             elif key in ["Lexicalised", "Blacklisted"]:
                 continue
             else:
