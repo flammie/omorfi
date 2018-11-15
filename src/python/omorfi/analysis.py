@@ -68,12 +68,27 @@ class Analysis:
         return s
 
     def get_upos(self):
+        '''Finds UPOS from analyses.
+
+        Returns:
+            upos in a string
+        '''
         return self.upos
 
     def get_lemmas(self):
+        '''Finds lemmas from analyses.
+
+        Returns:
+            list of strings.
+        '''
         return self.lemmas
 
     def get_ufeats(self):
+        '''Finds UD Feats from analyses.
+
+        Returns:
+            dict of key value pairs of UD Feat column.
+        '''
         return self.ufeats
 
     @staticmethod
@@ -194,7 +209,6 @@ class Analysis:
                     a.ufeats['Person'] = '0'
                 elif '4' in value:
                     a.misc['Person'] = '4'
-                    pass
                 else:
                     print(key, value, 'omor', file=stderr)
                     exit(1)
@@ -1223,12 +1237,21 @@ class Analysis:
         return '|'.join(miscs)
 
     def printable_udepname(self):
+        '''Format udep as string for CONLL-U.
+        
+        Returns:
+            string of udep nam
+        '''
         if self.udepname:
             return self.udepname
         else:
             return '_'
 
     def printable_udephead(self):
+        '''Format udep head position for CONLL-U.
+        
+        Returns:
+            string of non-ngative integer or _'''
         if self.udepname and self.udepname == 'root' and self.udeppos == 0:
             return '0'
         if self.udeppos:
@@ -1242,6 +1265,9 @@ class Analysis:
         When the correct analysis is in question the result should be equal
         to the UFEAT field of the connl-u data downloadable from UD web site,
         in string format.
+
+        Returns:
+            string of |-separated key=value pairs in correct order or _
         '''
         rvs = self.ufeats
         if not rvs:

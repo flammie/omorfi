@@ -135,7 +135,8 @@ class Omorfi:
     def load_labelsegmenter(self, f):
         """Load labeled segments model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.labelsegmenter = self._load_hfst(f)
         self.can_labelsegment = True
@@ -143,7 +144,8 @@ class Omorfi:
     def load_segmenter(self, f):
         """Load segmentation model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.segmenter = self._load_hfst(f)
         self.can_segment = True
@@ -151,7 +153,8 @@ class Omorfi:
     def load_analyser(self, f):
         """Load analysis model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args
+            f: containing single hfst automaton binary.
         """
         self.analyser = self._load_hfst(f)
         self.can_analyse = True
@@ -161,7 +164,8 @@ class Omorfi:
     def load_generator(self, f):
         """Load generation model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.generator = self._load_hfst(f)
         self.can_generate = True
@@ -169,7 +173,8 @@ class Omorfi:
     def load_acceptor(self, f):
         """Load acceptor model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.acceptor = self._load_hfst(f)
         self.can_accept = True
@@ -177,7 +182,8 @@ class Omorfi:
     def load_tokeniser(self, f):
         """Load tokeniser model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.tokeniser = self._load_hfst(f)
         self.can_tokenise = True
@@ -185,7 +191,8 @@ class Omorfi:
     def load_lemmatiser(self, f):
         """Load lemmatiser model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.tokeniser = self._load_hfst(f)
         self.can_lemmatise = True
@@ -193,7 +200,8 @@ class Omorfi:
     def load_hyphenator(self, f):
         """Load hyphenator model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.hyphenator = self._load_hfst(f)
         self.can_hyphenate = True
@@ -201,12 +209,13 @@ class Omorfi:
     def load_guesser(self, f):
         """Load guesser model from a file.
 
-        @param f containing single hfst automaton binary.
+        Args:
+            f: containing single hfst automaton binary.
         """
         self.guesser = self._load_hfst(f)
         self.can_guess = True
 
-    def load_udpipe(self, filename):
+    def load_udpipe(self, filename: str):
         """Load UDPipe model for statistical parsing.
 
         UDPipe can be used as extra information source for OOV symbols
@@ -231,7 +240,8 @@ class Omorfi:
         """Load a frequency list for lemmas. Experimental.
         Currently in uniq -c format, subject to change.
 
-        @param filename path to file with frequencies.
+        Args:
+            lexfile: file with frequencies.
         """
         lextotal = 0
         lexcounts = dict()
@@ -252,7 +262,8 @@ class Omorfi:
         """Load a frequenc list for tags. Experimental.
         Currently in uniq -c format. Subject to change.
 
-        @param filename path to file with frequencies.
+        Args:
+            omorfile: path to file with frequencies.
         """
         omortotal = 0
         omorcounts = dict()
@@ -273,6 +284,12 @@ class Omorfi:
         """Checks if token is acceptable when case is ignored.
 
         Used case-ignorations depend on the settings.
+
+        Args:
+            token: token to recase
+
+        Returns:
+            recased token or False if no retoken is possible
         """
         if self.accept(token):
             return token
@@ -297,6 +314,12 @@ class Omorfi:
         """Finds list of acceptable sub-tokens from a token.
 
         Tries to strip punct tokens from left and right.
+
+        Args:
+            token: token to retokenise
+
+        Returns:
+            list of tokens giving best retokenisation
         """
         retoken = self._find_retoken_recase(token)
         if retoken:
@@ -338,10 +361,16 @@ class Omorfi:
         # no acceptable substring inside, just strip puncts
         return [token]
 
-    def _retokenise(self, tokens):
+    def _retokenise(self, tokens: list):
         """Takes list of string from and produces list of tokens.
 
         May change number of tokens. Should be used with result of split().
+
+        Args:
+            tokens: list of tokens to retokenise
+
+        Returns:
+            list of tokens representing best tokenisations of tokens
         """
         retokens = []
         for s in tokens:
@@ -355,6 +384,9 @@ class Omorfi:
 
         Args:
             line:  string to tokenise
+
+        Todo:
+            Not implemented (needs pmatch python support)
         """
         return None
 
@@ -395,7 +427,10 @@ class Omorfi:
         return tokens
 
     def _analyse(self, token: Token):
-        '''Analyse token using HFST and perform recasings.'''
+        '''Analyse token using HFST and perform recasings.
+
+        Args:
+            token: token to analyse'''
         # use real surface case
         newanals = list()
         res = self.analyser.lookup(token.surf)
@@ -475,8 +510,11 @@ class Omorfi:
                     analysis_lists[i] += [ud]
         return None
 
-    def _guess_token(self, token):
-        '''Use HFST guesser.'''
+    def _guess_token(self, token: Token):
+        '''Guess token reading using language models.
+
+        Args:
+            token: token to guess'''
         res = self.guesser.lookup(token.surf)
         for r in res:
             anal = r[0] + '[GUESS=FSA][WEIGHT=%f]' % (r[1])
@@ -491,6 +529,12 @@ class Omorfi:
 
         This is kind of last resort, but has some basic heuristics that may
         be always useful.
+
+        Args:
+            token: token to guess
+
+        Returns:
+            list: new analyses guessed
         '''
         # woo advanced heuristics!!
         newanals = list()
@@ -658,7 +702,10 @@ class Omorfi:
         return lemmas
 
     def _segment(self, token: Token):
-        '''Intenal segmenting using HFST automaton.'''
+        '''Intenal segmenting using HFST automaton.
+
+        Args:
+            token: token to segment.'''
         res = self.segmenter.lookup(token.surf)
         newsegs = list()
         for r in res:
@@ -676,7 +723,8 @@ class Omorfi:
     def segment(self, token: Token):
         '''Segment token into morphs, words and other string pieces.
 
-        **Side-effect:** this operation stores segments in the token for future
+        Side-effect:
+            this operation stores segments in the token for future
         use and only returns the HFST structures. To get pythonic data use
         Token's methods afterwards.
 
@@ -701,7 +749,13 @@ class Omorfi:
         return segments
 
     def _labelsegment(self, token: Token):
-        '''Internal implementation of segment label lookup with FSA.'''
+        '''Internal implementation of segment label lookup with FSA.
+
+        Args:
+            token: token to analyse
+
+        Returns:
+            list of new labelsegment analyses.'''
         res = self.labelsegmenter.lookup(token.surf)
         newlabels = list()
         for r in res:
@@ -724,7 +778,8 @@ class Omorfi:
         features for inflectional segments. This functionality is experimental
         due to hacky way it was patched together.
 
-        Note that this operation stores the labelsegments in the token for
+        Side-effect:
+            Note that this operation stores the labelsegments in the token for
         future use, and only returns raw HFST structures. To get pythonic
         you can use Token's methods afterwards.
 
@@ -748,8 +803,14 @@ class Omorfi:
             labelsegments = [guess]
         return labelsegments
 
-    def _accept(self, token):
-        """Look up token from acceptor model."""
+    def _accept(self, token: Token):
+        """Look up token from acceptor model.
+
+        Args:
+            token: token to accept
+
+        Returns:
+            analyses of token"""
         if self.acceptor:
             res = self.acceptor.lookup(token.surf)
         elif self.analyser:
@@ -761,12 +822,21 @@ class Omorfi:
     def accept(self, token):
         '''Check if the token is in the dictionary or not.
 
-        Returns False for OOVs, True otherwise. Note, that this is not
-        necessarily more efficient than analyse(token)
+        Returns:
+            False for OOVs, True otherwise. Note, that this is not
+        necessarily more efficient than bool(analyse(token))
         '''
         return bool(self._accept(token))
 
-    def _generate(self, s):
+    def _generate(self, s: str):
+        '''Generate surface forms from string using FSA model.
+
+        Args:
+            s: string matching raw omor analysis
+
+        Returns:
+            string containing surface forms
+        '''
         res = self.generator.lookup(s)
         generations = []
         for r in res:
@@ -793,7 +863,15 @@ class Omorfi:
                 return omorstring
         return generated
 
-    def _udpipe(self, udinput):
+    def _udpipe(self, udinput: str):
+        """Pipes input to  udpipe model.
+
+        Args:
+            udinput: input for udpipe
+
+        Returns:
+            tokens with udpipe analyses
+        """
         conllus = self.udpipeline.process(udinput, self.uderror)
         if self.uderror.occurred():
             return None
@@ -806,14 +884,18 @@ class Omorfi:
             tokens += [Token.fromconllu(conllu)]
         return tokens
 
-    def tokenise_sentence(self, sentence):
+    def tokenise_sentence(self, sentence: str):
         '''tokenise a sentence.
 
         To be used when text is already sentence-splitted. If the
         text is plain text with sentence boundaries within lines,
         use
 
-        @todo tokenise_text
+        Args:
+            sentence: a string containing one sentence
+
+        Returns:
+            list of tokens in sentence
         '''
         if not sentence or sentence == '':
             token = Token()
@@ -830,13 +912,18 @@ class Omorfi:
     def tokenise_plaintext(self, f):
         '''tokenise a whole text.
 
-        @todo should get sentence from plaintext in the future.'''
+        Args:
+            f: filelike object with iterable strings
+
+        Returns:
+            list of tokens
+        '''
         tokens = list()
         for line in f:
             tokens = self.tokenise(line.strip())
             pos = 1
             for token in tokens:
-                token.pos = post
+                token.pos = pos
                 pos += 1
             sep = Token()
             sep.nontoken = "separator"
@@ -851,7 +938,14 @@ class Omorfi:
         '''tokenise a conllu sentence or comment.
 
         Should be used a file-like iterable that has CONLL-U sentence or
-        comment or empty block coming up.'''
+        comment or empty block coming up.
+
+        Args:
+            f: filelike object with iterable strings
+
+        Returns:
+            list of tokens
+        '''
         tokens = list()
         for line in f:
             fields = line.strip().split('\t')
@@ -914,6 +1008,12 @@ class Omorfi:
 
         Returns a list of tokens when it hits first non-token block, including
         a token representing this non-token block.
+
+        Args:
+            f: filelike object to itrate strings of vislcg data
+
+        Returns:
+            list of tokens
         '''
         tokens = list()
         pos = 1
