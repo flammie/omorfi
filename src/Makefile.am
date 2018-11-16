@@ -43,20 +43,20 @@ TOKENS=tokeniser/omorfi.tokenise.pmatch
 # {{{Scripts
 # NB: (variable name = SCIRPTS cause automagic _SCRIPTS)
 # tag formats
-FORMAT_SCIRPTS=python/omorfi/apertium_formatter.py \
-			   python/omorfi/ftb3_formatter.py \
-			   python/omorfi/omor_formatter.py \
-			   python/omorfi/giella_formatter.py \
-			   python/omorfi/tdt_formatter.py \
-			   python/omorfi/lexc_formatter.py \
-			   python/omorfi/twolc_formatter.py \
-			   python/omorfi/regex_formatter.py \
-			   python/omorfi/monodix_formatter.py \
-			   python/omorfi/no_tags_formatter.py \
-			   python/omorfi/labeled_segments_formatter.py \
+FORMAT_SCIRPTS=python/omorfi/formats/apertium_formatter.py \
+			   python/omorfi/formats/ftb3_formatter.py \
+			   python/omorfi/formats/omor_formatter.py \
+			   python/omorfi/formats/giella_formatter.py \
+			   python/omorfi/formats/tdt_formatter.py \
+			   python/omorfi/formats/lexc_formatter.py \
+			   python/omorfi/formats/twolc_formatter.py \
+			   python/omorfi/formats/regex_formatter.py \
+			   python/omorfi/formats/monodix_formatter.py \
+			   python/omorfi/formats/no_tags_formatter.py \
+			   python/omorfi/formats/labeled_segments_formatter.py \
 			   python/omorfi/token.py \
-			   python/omorfi/formatter.py \
-			   python/omorfi/kotus_sanalista_formatter.py
+			   python/omorfi/formats/formatter.py \
+			   python/omorfi/formats/kotus_sanalista_formatter.py
 # file formats
 GENERATOR_SCIRPTS=python/generate-lexcs.py \
 				  python/generate-twolcs.py \
@@ -70,13 +70,13 @@ GENERATOR_SCIRPTS=python/generate-lexcs.py \
 DATABASE_SCIRPTS=python/tsvjoin.py \
 				 python/tsv_expand.py
 # Finnish specific lot
-FIN_SCIRPTS=python/omorfi/gradation.py \
-			python/omorfi/parse_csv_data.py \
-			python/omorfi/plurale_tantum.py \
-			python/omorfi/stub.py \
-			python/omorfi/guess_feats.py \
-			python/omorfi/guess_new_class.py \
-			python/omorfi/wordmap.py \
+FIN_SCIRPTS=python/omorfi/entryguessing/gradation.py \
+			python/omorfi/entryguessing/parse_csv_data.py \
+			python/omorfi/entryguessing/plurale_tantum.py \
+			python/omorfi/entryguessing/stub.py \
+			python/omorfi/entryguessing/guess_feats.py \
+			python/omorfi/entryguessing/guess_new_class.py \
+			python/omorfi/entryguessing/wordmap.py \
 			python/omorfi/string_manglers.py \
 			python/omorfi/error_logging.py \
 			python/omorfi/settings.py
@@ -201,9 +201,17 @@ pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/settings.py \
 				 python/omorfi/analysis.py \
 				 python/omorfi/doc.py \
-				 python/omorfi/fileformats.py \
-				 python/omorfi/disamparsulate.py \
 				 python/omorfi/token.py
+pkgpythonformatsdir=$(pkgpythondir)/formats/
+pkgpythonformats_PYTHON=\
+				 python/omorfi/formats/__init__.py \
+				 python/omorfi/formats/fileformats.py
+pkgpythondisamparsulatedir=$(pkgpythondir)/disamparsulate/
+pkgpythondisamparsulate_PYTHON=\
+				 python/omorfi/disamparsulate/__init__.py \
+				 python/omorfi/disamparsulate/disamparsulator.py \
+				 python/omorfi/disamparsulate/evidence.py \
+				 python/omorfi/disamparsulate/matcher.py
 
 
 # These go into dist tarballs... which we no longer make
