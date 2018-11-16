@@ -186,6 +186,7 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-conllu.bash \
 			bash/omorfi-ftb3.bash \
 			bash/omorfi-vislcg.bash \
+			bash/omorfi-download.bash \
 			bash/omorfi.bash \
 			python/omorfi-factorise.py \
 			python/omorfi-vislcg.py \
@@ -201,11 +202,15 @@ pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/settings.py \
 				 python/omorfi/analysis.py \
 				 python/omorfi/doc.py \
+				 python/omorfi/error_logging.py \
+				 python/omorfi/string_manglers.py \
 				 python/omorfi/token.py
 pkgpythonformatsdir=$(pkgpythondir)/formats/
 pkgpythonformats_PYTHON=\
 				 python/omorfi/formats/__init__.py \
-				 python/omorfi/formats/fileformats.py
+				 python/omorfi/formats/fileformats.py \
+				 python/omorfi/formats/formatter.py \
+				 python/omorfi/formats/omor_formatter.py
 pkgpythondisamparsulatedir=$(pkgpythondir)/disamparsulate/
 pkgpythondisamparsulate_PYTHON=\
 				 python/omorfi/disamparsulate/__init__.py \
@@ -241,6 +246,7 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   bash/omorfi-ftb3.bash \
 		   bash/omorfi-vislcg.bash \
 		   bash/omorfi-factorise.bash \
+		   bash/omorfi-download.bash \
 		   test-scripts/constraint-unique-keys.bash \
 		   test-scripts/consistent-attribute-keys.bash \
 		   test-scripts/valid-datatypes.bash \
