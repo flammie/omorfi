@@ -212,7 +212,8 @@ function omorfi_vislcg() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help $1
     fi
-    python_wrap omorfi-vislcg.py -a $omorfianalyser
+    python_wrap omorfi-tokenise.py -a $omorfianalyser |\
+        python_wrap omorfi-vislcg.py -a $omorfianalyser
 }
 
 function omorfi_disambiguate_text() {
