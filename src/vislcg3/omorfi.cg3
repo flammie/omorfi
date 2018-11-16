@@ -104,6 +104,7 @@ STRICT-TAGS +=
     Polarity=Neg
     PronType=Dem
     PronType=Pers
+    Style=Arch
     Style=Coll
     Tense=Past
     Tense=Pres
@@ -614,7 +615,7 @@ LIST MIN-WEIGHT = <W=MIN> ;
 ## we count compound boundaries
 LIST MIN-COMPOUND = <CMP=MIN> ;
 ## tags for known wrong or odd stuff
-LIST NONSTANDARDS = Style=Coll Typo=Yes ;
+LIST NONSTANDARDS = Style=Coll Typo=Yes Style=Arch ;
 ## derivations (apart from the near-inflectional)
 LIST DERIVATIONS = Derivation=Inen Derivation=Ja Derivation=U ;
 ## Any other guessers
