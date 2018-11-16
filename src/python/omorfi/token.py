@@ -234,6 +234,24 @@ class Token:
         else:
             return "<ERROR>" + self + "</ERROR>"
 
+    def _select_anal(self, which):
+        anal = None
+        if which == "1random":
+            if self.analyses:
+                anal = self.analyses[0]
+        elif which == "1best":
+            minw = float("inf")
+            for a in self.analyses:
+                if a.weight < minw:
+                    anal = a
+                    minw = a.weight
+        elif self.analyses[which]:
+            anal = self.analyses[which]
+        else:
+            print("Unknown which", which)
+            exit(1)
+        return anal
+
     def printable_conllu(self, hacks=None, which="1best"):
         '''Create CONLL-U output based on token and selected analysis.'''
         if self.nontoken:
@@ -255,21 +273,7 @@ class Token:
         third = '_'
         ud_feats = '_'
         ud_misc = '_'
-        anal = None
-        if which == "1random":
-            if self.analyses:
-                anal = self.analyses[0]
-        elif which == "1best":
-            minw = float("inf")
-            for a in self.analyses:
-                if a.weight < minw:
-                    anal = a
-                    minw = a.weight
-        elif self.analyses[which]:
-            anal = self.analyses[which]
-        else:
-            print("Unknown which", which)
-            exit(1)
+        anal = self._select_anal(which)
         if anal:
             upos = anal.get_upos()
             if hacks and hacks == 'ftb':
@@ -285,6 +289,35 @@ class Token:
             dephead = anal.printable_udephead()
         return "\t".join([str(self.pos), self.surf, lemma, upos, third,
                           ud_feats, dephead, depname, "_", ud_misc])
+
+    def printable_ftb3(self, which="1best"):
+        '''Create FTB-3 output based on token and selected analysis.'''
+        if self.nontoken:
+            if self.nontoken == 'error':
+                return "# ERROR:" + self.error
+            elif self.nontoken == 'comment':
+                if self.comment.startswith('#'):
+                    return self.comment
+                else:
+                    return '# ' + self.comment
+            elif self.nontoken == 'separator':
+                # not returning \n since the it's already printed on a line
+                return ''
+            else:
+                # ignore other nontokens??
+                return ''
+        lemma = self.surf
+        pos = '_'
+        feats = '_'
+        anal = self._select_anal(which)
+        if anal:
+            pos = anal.get_xpos_ftb()
+            lemmas = anal.get_lemmas()
+            if lemmas:
+                lemma = '#'.join(lemmas)
+            feats = anal.printable_ftb_feats()
+        return '\t'.join([str(self.pos), self.surf, lemma, pos, pos, feats,
+                          '_', '_', '_', '_'])
 
     def _get_nbest(self, n: int, anals: list):
         nbest = []

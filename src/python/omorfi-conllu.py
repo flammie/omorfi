@@ -74,8 +74,8 @@ def debug_analyses_conllu(token, outfile, hacks=None):
 def print_analyses(sent, options):
     for token in sent:
         if token.nontoken:
-            continue
-        if options.debug:
+            print(token.printable_conllu(options.hacks), file=options.outfile)
+        elif options.debug:
             debug_analyses_conllu(token, options.outfile, options.hacks)
         elif options.oracle:
             try_analyses_conllu(token, options.outfile, options.hacks)
@@ -163,13 +163,12 @@ def main():
         for token in sentplus:
             if token.nontoken:
                 if token.nontoken == 'comment':
-                    print(token.comment, file=options.outfile)
+                    pass
                 elif token.nontoken == 'eof':
                     eoffed = True
                     break
                 elif token.nontoken == 'separator':
                     sentences += 1
-                    print(file=options.outfile)
                 elif token.nontoken == 'error':
                     print("Unrecognisable line:", token.error, file=stderr)
                     exit(1)

@@ -20,17 +20,9 @@ def print_moses_factor_segments(token, outfile, options):
 
 
 def print_segments(token, outfile, options):
-    segments = None
-    for anal in token.segmentations:
-        if anal.rawtype == "segments":
-            segments = anal
-            break
-    if not segments:
-        print("Missing segments for token", file=stderr)
-        exit(1)
     if options.show_ambiguous:
         sep = ''
-        for segmenteds in segments:
+        for segmenteds in token.segmentations:
             print(sep, end='', file=outfile)
             print(options.segment_marker.join(
                 segmenteds.get_segments(
@@ -40,8 +32,16 @@ def print_segments(token, outfile, options):
                   end='', file=outfile)
             sep = options.show_ambiguous
     else:
+        segmented = None
+        for anal in token.segmentations:
+            if anal.rawtype == "segments":
+                segmented = anal
+                break
+        if not segmented:
+            print("Missing segments for token", file=stderr)
+            exit(1)
         print(options.segment_marker.join(
-            segments[0].get_segments(
+            segmented.get_segments(
                 options.split_morphs, options.split_words,
                 options.split_new_words, options.split_derivs,
                 options.split_nonwords)),

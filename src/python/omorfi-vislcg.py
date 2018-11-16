@@ -28,7 +28,7 @@ def main():
                    help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-F', '--format', metavar="INFORMAT", default='text',
                    help="read input using INFORMAT tokenisation",
-                   choices=['text', 'vislcg', 'conllu'])
+                   choices=['text', 'vislcg', 'conllu', 'sentences'])
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
                    help="print statistics to STATFILE", type=FileType('w'))
     a.add_argument('--not-rules', metavar="RULEFILE", type=open,
