@@ -17,8 +17,7 @@ cat $1 | while read l; do
         sed -e 's/\\:/@@@/g' |\
         cut -d : -f 1 |\
         sed -e 's/@@@/:/g' |\
-        uniq |\
-        tr -s '\n' ' ' >> $2
+        uniq >> $2
     echo >> $2
 done
 
