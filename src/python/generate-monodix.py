@@ -26,11 +26,11 @@ import csv
 import re
 from sys import stderr
 
-from omorfi.monodix_formatter import (format_monodix_alphabet,
-                                      format_monodix_entry,
-                                      format_monodix_licence,
-                                      format_monodix_pardef,
-                                      format_monodix_sdefs)
+from omorfi.formats.monodix_formatter import (format_monodix_alphabet,
+                                              format_monodix_entry,
+                                              format_monodix_licence,
+                                              format_monodix_pardef,
+                                              format_monodix_sdefs)
 
 
 # standard UI stuff
@@ -40,7 +40,8 @@ def main():
     """Main for command-line usage."""
     # initialise argument parser
     argp = argparse.ArgumentParser(
-        description="Convert Finnish dictionary TSV data into apertium monodix XML")
+        description="Convert Finnish dictionary TSV data " +
+                    "into apertium monodix XML")
     argp.add_argument("--quiet", "-q", action="store_false", dest="verbose",
                       default=False,
                       help="do not print output to stdout while processing")
@@ -59,10 +60,12 @@ def main():
     argp.add_argument("--separator", action="store", default="\t",
                       metavar="SEP", help="use SEP as separator")
     argp.add_argument("--comment", "-C", action="append", default=["#"],
-                      metavar="COMMENT", help="skip lines starting with COMMENT that"
+                      metavar="COMMENT",
+                      help="skip lines starting with COMMENT that"
                       "do not have SEPs")
     argp.add_argument("--strip", action="store",
-                      metavar="STRIP", help="strip STRIP from fields before using")
+                      metavar="STRIP",
+                      help="strip STRIP from fields before using")
 
     args = argp.parse_args()
 
@@ -118,10 +121,11 @@ def main():
                     curr_pardef = tsv_parts[0]
                 pardef_data += format_monodix_pardef(tsv_parts)
                 for outlex in tsv_parts[3:]:
-                    if outlex.lower().replace('_', '__') not in printed_pardefs:
+                    if outlex.lower().replace('_', '__') not \
+                            in printed_pardefs:
                         can_print = False
         break_out = False
-        while len(stacked_pardefs) > 0:
+        while stacked_pardefs:
             next_stack = stacked_pardefs
             for pardef in stacked_pardefs:
                 pardef_orig = pardef
@@ -133,9 +137,8 @@ def main():
                             pardef = pardef.replace('<par n="' +
                                                     outlex.group(1) + '"/>',
                                                     '<!-- loop: ' +
-                                                    outlex.group(1).replace("_",
-                                                                            "@")
-                                                    + '-->')
+                                                    outlex.group(1)
+                                                    .replace("_", "@") + '-->')
                             if outlex.group(1) + pardef_name not in \
                                     broken_pardefs:
                                 broken_pardefs.add(outlex.group(1) +

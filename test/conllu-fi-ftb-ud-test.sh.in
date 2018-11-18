@@ -19,7 +19,8 @@ if test ! -r $conllus ; then
     exit 77
 fi
 if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -a $analyser \
-        -i $conllus -o omor$conllus -O --hacks=ftb ; then
+        -i $conllus -o omor$conllus -O --hacks=ftb \
+        --not-rules $srcdir/../src/disamparsulation/omorfi.xml ; then
     echo analysis failed
     exit 2
 fi

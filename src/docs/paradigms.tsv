@@ -355,7 +355,7 @@ NOUN_COWBOY	Dictionary class 21 iy
 NOUN_ELIN	Dictionary class 33 front
 NOUN_ELÄMÄ	Dictionary class 11 front
 NOUN_EPÄILTY	Dictionary class 1lty
-NOUN_ESIM.	Abbreviated noun with final full stop and no morphology. At the moment covers all nominal cases, may be split in the future
+NOUN_ESIM.	Abbreviated noun with final full stop and no morphology. At the moment covers parts-of-speech, may be split in the future
 NOUN_ESQUIMAU	Dictionary class 21 o back
 NOUN_FARKUT	Dictionary class 1ku plurale tantum
 NOUN_FARMARIT	Dictionary class xxx it plurale tantum
@@ -420,6 +420,7 @@ NOUN_KANAALI
 NOUN_KANGAS	Dictionary class 41 gas
 NOUN_KANNEL	Dictionary class 49 nel
 NOUN_KANNET	Dictionary class xxx nnet plurale tantum
+NOUN_KARBOKSYLAATTI	gradating t:0 with both back and front harmonies
 NOUN_KASTANJETIT	Dictionary class xxx tit plurale tantum
 NOUN_KASTIKE	Dictionary class 48 back ke
 NOUN_KASTILJAT
@@ -547,6 +548,7 @@ NOUN_NIMETÖN	Dictionary class 34 tän
 NOUN_NISSE	Dictionary class 8 front
 NOUN_NOKI	Dictionary class 7 back k~0
 NOUN_NOUGAT	Dictionary class 22 a
+NOUN_NRO	Abbreviated noun without final full stop and no morphology. At the moment covers all nominal parts-of-speech, may be split in the future
 NOUN_NUGAA	Dictionary class 20 a
 NOUN_NUKKE	Dictionary class 8 k~0 back
 NOUN_NYLJIN	Dictionary class 33 front jin
@@ -595,6 +597,8 @@ NOUN_PONSI	Dictionary class 27 back t~n
 NOUN_PORRAS	Dictionary class 41 ras The word mies has special s:h variation pattern.
 NOUN_PORTAAT	Dictionary class rtaat plurale tantum
 NOUN_PROBLEEMA	Dictionary class 11 back
+NOUN_PROTOLYYSI	Dictionary class 5 both
+NOUN_PROTOLYYTTI	Dictionary class 5 both front and back harmony allowed
 NOUN_PUHELIN	Dictionary class 33 back
 NOUN_PUIN	Dictionary class 33 back k~in
 NOUN_PUKIMET	Dictionary class 31 puin plurale tantum
@@ -747,6 +751,7 @@ NOUN_VALTA	Dictionary class 9 t~l
 NOUN_VANHEMMAT	Dictionary class xxx matt plurale tantum
 NOUN_VANHEMPI	Dictionary class 16
 NOUN_VANKI	Dictionary class 5 back k~g
+NOUN_VANTTUUT	Dictionary class ntyyaat plurale tantum
 NOUN_VANTUS	Dictionary class 41 tus
 NOUN_VARAS	Dictionary class 41 as
 NOUN_VARAT	Dictionary class xxx rrt plurale tantum
@@ -1634,6 +1639,7 @@ PROPN_BIKINIT	Dictionary class xxx nit plurale tantum
 PROPN_BORDEAUX	Dictionary class 22 o
 PROPN_BRASSERIE	Dictionary class 21 i back
 PROPN_BRIE	Dictionary class 21 i front
+PROPN_BROOKLYN	Dictionary class 6 back no i with both vowel harmonies allowed
 PROPN_CAMUS	Dictionary class 22 y
 PROPN_CHACHACHA	Dictionary class 21 a The loan words that end in consonant when written but vowel when pronounced are inflected with an apostrophe ’. With half-vowels the rule is a bit shaky, but officially apostrophe is the only way.
 PROPN_COMPOUND	for bound proper noun particles, usually with hyphen, such as ‘Etelä-’
@@ -1821,10 +1827,12 @@ PROPN_LÄNSI	Dictionary class 27 front t~n
 PROPN_LÄÄKE	Dictionary class 48 front ke
 PROPN_LÖPÖ	Dictionary class 1pö
 PROPN_MAA	Dictionary class 18 a
+PROPN_MAJ	Dictionary class 22 j-final back
 PROPN_MAKKARA	Dictionary class 12 back
 PROPN_MAKU	Dictionary class 1ku
 PROPN_MALKO	k:0
 PROPN_MALMÖ	inflects like NOUN_MÖMMÖ, hön illative possible
+PROPN_MANNER	Dictionary class 49 ner
 PROPN_MARKKINAT	Dictionary class xxx a front plurale tantum
 PROPN_MATEE
 PROPN_MATKUET
@@ -1848,7 +1856,9 @@ PROPN_MÄTTÄÄT
 PROPN_MÖMMÖ	Dictionary class 1ö
 PROPN_MÖRKÖ	Dictionary class 1rkö
 PROPN_NALLE	Dictionary class 8 back
+PROPN_NEITSYT	Dictionary class 43 front
 PROPN_NEUVOTTELUT	Dictionary class 3lut plurale tantum
+PROPN_NG	Vowelless foreign proper nouns, tentatively inflects like zen, punk
 PROPN_NIEMET
 PROPN_NIHTI	Dictionary class 5 front t~d
 PROPN_NIITUT
@@ -1965,7 +1975,7 @@ PROPN_SEIVÄS	Dictionary class 41 väs
 PROPN_SELENE
 PROPN_SELJÄT
 PROPN_SEPPÄ	Dictionary class 10 front p~0
-PROPN_SERGEJ	Dictionary class 22 i front
+PROPN_SERGEJ	Dictionary class 22 j-final front
 PROPN_SERKUKSET	Dictionary class kset plurale tantum
 PROPN_SHOW	Dictionary class 22 u
 PROPN_SIEMEN	Dictionary class 32 front
@@ -2153,6 +2163,7 @@ VERB_KANTAA	Dictionary class56 back t~n
 VERB_KARHETA	Dictionary class72 back
 VERB_KARHUTA	Dictionary class74 back
 VERB_KASVAA	Dictionary class56 back
+VERB_KATSOA	The regular o stem with dialectally gradating ts variations
 VERB_KAUNISTUA	The u stems have no stem variation: Dictionary class52u
 VERB_KAVETA	Dictionary class72 back v~p
 VERB_KERETÄ	Dictionary class74 front 0~k e

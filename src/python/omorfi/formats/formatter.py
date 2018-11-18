@@ -25,7 +25,7 @@ An interface for formatting, deformatting etc. tags and stuff.
 
 from abc import ABCMeta, abstractmethod
 
-from .settings import common_multichars, version_id_easter_egg
+from ..settings import common_multichars, version_id_easter_egg
 
 
 class Formatter(metaclass=ABCMeta):
@@ -98,7 +98,7 @@ class Formatter(metaclass=ABCMeta):
 
     @abstractmethod
     def continuation2lexc(self, fields):
-        """Turn continuation record into lexc string valid for insides of LEXICON"""
+        """Turn continuation into lexc string valid for insides of LEXICON."""
         pass
 
 

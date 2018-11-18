@@ -3,6 +3,23 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20180111
+
+* Universal dependencies version 2.3 is a reference for recall tests
+* At least 18,380 new words: 340,931 insertions(+), 322,551 deletions(-)
+  * Imported enwikt data on top of re-importing fiwikt, joukahainen
+* New CG based on UD tags
+* Some universal dependencies guessed (analysers using dep guessing are slower
+  and process sentences instead of words)
+* Default processing mode for many analysers is now sentence-based
+* Slightly extended python API (somewhat modeled like SpaCy but not quite)
+* Ability to download compiled FST models from release instead of 
+  self-compiling (beta)
+* Unimorph used as new Recall / Precision reference gold test set
+* Probably some fixes to recasing
+* Gradle support for java stuff
+* renamed origin unihu → finer
+
 ## Significant changes in 20180511
 
 * Universal dependencies version 2.2 is now used as target

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Wiktionary dump is too big to store in version control, here's a script
 # to fetch it instead.
-FIWIKT_VERSION=20121220
+FIWIKT_VERSION=20180701
 if test $# -eq 1 ; then
     FIWIKT_VERSION=$1
 elif test $# -ge 2 ; then

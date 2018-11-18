@@ -1,44 +1,52 @@
 #!/usr/bin/env python3
 
-import re
 from argparse import ArgumentParser
 from sys import stderr, stdin, stdout
 
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_segments, get_moses_factor_segments
-
-def print_moses_factor_segments(segments, labelsegments, surf, outfile,
-                                options):
-    if float(labelsegments[0]['lsweight']) != float('inf'):
-        segs = get_moses_factor_segments(labelsegments[0])
-        print(options.segment_marker.join(segs), end=' ', file=outfile)
-    else:
-        print(surf['surf'], end='|UNK ', file=outfile)
+from omorfi import Omorfi
 
 
-
-def print_segments(segments, labelsegments, surf, outfile, options):
-    if segments:
-        if options.show_ambiguous:
-            sep = ''
-            for segmenteds in segments:
-                print(sep, end='', file=outfile)
-                print(options.segment_marker.join(get_segments(segmenteds,
-                    options.split_morphs, options.split_words, 
-                    options.split_new_words, options.split_derivs,
-                    options.split_nonwords)),
-                        end='', file=outfile)
-                sep = options.show_ambiguous
-        else:
-            print(options.segment_marker.join(get_segments(segments[0],
-                    options.split_morphs, options.split_words, 
-                    options.split_new_words, options.split_derivs,
-                    options.split_nonwords)),
-                    end='', file=outfile)
-        print(' ', end='', file=outfile)
-    else:
-        print("Missing segmenter", file=stderr)
+def print_moses_factor_segments(token, outfile, options):
+    labelsegments = None
+    for anal in token.labelsegmentations:
+        if anal.rawtype == "labelsegments":
+            labelsegments = anal
+            break
+    if not labelsegments:
+        print("Missing labelsegments for token", token, file=stderr)
         exit(1)
+    segs = labelsegments.get_moses_factor_segments()
+    print(options.segment_marker.join(segs), end=' ', file=outfile)
+
+
+def print_segments(token, outfile, options):
+    if options.show_ambiguous:
+        sep = ''
+        for segmenteds in token.segmentations:
+            print(sep, end='', file=outfile)
+            print(options.segment_marker.join(
+                segmenteds.get_segments(
+                    options.split_morphs, options.split_words,
+                    options.split_new_words, options.split_derivs,
+                    options.split_nonwords)),
+                  end='', file=outfile)
+            sep = options.show_ambiguous
+    else:
+        segmented = None
+        for anal in token.segmentations:
+            if anal.rawtype == "segments":
+                segmented = anal
+                break
+        if not segmented:
+            print("Missing segments for token", file=stderr)
+            exit(1)
+        print(options.segment_marker.join(
+            segmented.get_segments(
+                options.split_morphs, options.split_words,
+                options.split_new_words, options.split_derivs,
+                options.split_nonwords)),
+              end='', file=outfile)
+    print(' ', end='', file=outfile)
 
 
 def main():
@@ -63,7 +71,8 @@ def main():
                    help="split on word boundaries")
     a.add_argument('--no-split-new-words', action="store_false", default=True,
                    dest="split_new_words",
-                   help="split on new word boundaries (prev. unattested compounds)")
+                   help="split on new word boundaries " +
+                   "(prev. unattested compounds)")
     a.add_argument('--no-split-morphs', action="store_false", default=True,
                    dest="split_morphs",
                    help="split on morph boundaries")
@@ -88,7 +97,7 @@ def main():
         if options.verbose:
             print("Reading labelsegmenter", options.labeller)
         omorfi.load_labelsegmenter(options.labeller)
-    if not omorfi.can_segment:
+    if not omorfi.can_segment or not omorfi.can_labelsegment:
         print("Could not load segmenter(s), re-compile them or use -f option")
         print()
         print("To compile segmenter, use --enable-segmenter, and/or",
@@ -124,14 +133,12 @@ def main():
             continue
         tokens = omorfi.tokenise(line)
         for token in tokens:
-            segments = omorfi.segment(token)
-            labelsegments = omorfi.labelsegment(token)
+            omorfi.segment(token)
+            omorfi.labelsegment(token)
             if options.output_format == 'moses-factors':
-                print_moses_factor_segments(
-                    segments, labelsegments, token, outfile, options)
+                print_moses_factor_segments(token, outfile, options)
             elif options.output_format == 'segments':
-                print_segments(segments, labelsegments, token, outfile,
-                               options)
+                print_segments(token, outfile, options)
         print(file=outfile)
     exit(0)
 

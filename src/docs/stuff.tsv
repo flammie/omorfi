@@ -55,6 +55,7 @@ Bc	Compound boundary for generated compounds
 B-	Marker for co-ordinated compound hyphen
 B→	Marker for left co-ordinated compound hyphen
 B←	Marker for right co-ordinated compound hyphen
+Bxxx	Compound missing hyphen unjoined
 Cma	Agent participle
 Cmaisilla	Fifth infinitive
 Cnut	Nut participle

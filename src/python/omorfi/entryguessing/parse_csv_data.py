@@ -17,7 +17,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from .error_logging import just_fail
+from ..error_logging import just_fail
 
 
 def parse_defaults_from_tsv(wordmap, tsv_parts):

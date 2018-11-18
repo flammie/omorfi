@@ -17,7 +17,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from .error_logging import fail_guess_because
+from ..error_logging import fail_guess_because
 
 
 def guess_pos_from_newpara(wordmap):
@@ -43,8 +43,8 @@ def guess_grade_dir_from_ktn(wordmap):
     elif tn in [1007, 1008, 1009, 1010, 1024, 1026, 1067, 1099, 1101]:
         wordmap['grade_dir'] = 'weaken'
     else:
-        fail_guess_because(wordmap, [], ["0-78", 99, 101, 1007, 1008, 1009, 1010,
-                                         1024, 1026, 1067, 1099, 1101])
+        fail_guess_because(wordmap, [], ["0-78", 99, 101, 1007, 1008, 1009,
+                                         1010, 1024, 1026, 1067, 1099, 1101])
     return wordmap
 
 

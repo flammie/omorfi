@@ -20,8 +20,9 @@
 # utils to format apertium style data from omorfi database values
 
 from .apertium_formatter import ApertiumFormatter
-from .error_logging import fail_formatting_missing_for
-from .settings import word_boundary
+from ..error_logging import fail_formatting_missing_for
+from ..settings import (word_boundary, morph_boundary, deriv_boundary,
+                        weak_boundary, stub_boundary, optional_hyphen)
 
 monodix_sdefs = {
     'abbr',
@@ -152,6 +153,7 @@ stuff2monodix = {
     "ADVERBIAL": "cnjadv",
     "AINF_arg": "vaux",
     "ARTWORK": "",
+    "Bxxx": "-",
     "B-": "-",
     "B←": "-",
     "B→": "-",
@@ -357,7 +359,10 @@ def format_monodix_sdefs():
 
 def format_monodix_l(s):
     if s != '0':
-        return s.replace(' ', '<b/>').replace(word_boundary, '')
+        return s.replace(' ', '<b/>').replace(word_boundary, '') \
+            .replace(morph_boundary, '').replace(deriv_boundary, '')\
+            .replace(stub_boundary, '').replace(optional_hyphen, '')\
+            .replace(weak_boundary, '')
     else:
         return ''
 
@@ -409,7 +414,8 @@ def format_monodix_pardef(fields):
             pardef += '<i>' + format_monodix_l(fields[2]) + '</i>'
         else:
             pardef += '<p><l>' + format_monodix_l(fields[2]) + '</l>'
-            pardef += '<r>' + format_monodix_r(fields[1], fields[2]) + '</r></p>'
+            pardef += '<r>' + format_monodix_r(fields[1], fields[2]) + \
+                      '</r></p>'
         if cont != '#':
             pardef += format_monodix_par(cont)
         pardef += '</e>\n'
@@ -419,8 +425,8 @@ def format_monodix_pardef(fields):
 def format_monodix_entry(wordmap):
     if wordmap['new_para'] == 'X_IGNORE' or wordmap['lemma'] == ' ':
         return ''
-    e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;').replace('"',
-                                                                   '&quot;').replace("<", "&lt;") + '">'
+    e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;')\
+        .replace('"', '&quot;').replace("<", "&lt;") + '">'
     e += '<p><l>' + \
         wordmap['stub'].replace(word_boundary, '').replace(
             '&', '&amp;').replace('<', '&lt;') + '</l>'

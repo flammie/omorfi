@@ -10,8 +10,7 @@ from time import perf_counter, process_time
 import json
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import format_misc_ud
+from omorfi import Omorfi
 
 
 def main():
@@ -31,7 +30,9 @@ def main():
     a.add_argument('-O', '--output-format', metavar="OUTFORMAT",
                    default="moses",
                    help="format output for OUTFORMAT", choices=['moses',
-                       'conllu', 'json', 'ftb3'])
+                                                                'conllu',
+                                                                'json',
+                                                                'ftb3'])
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.analyser:
@@ -50,7 +51,7 @@ def main():
     if options.verbose:
         print("writing to", options.outfile.name)
     if not options.statfile:
-        options.statfile = stdout
+        options.statfile = stderr
     # statistics
     realstart = perf_counter()
     cpustart = process_time()
@@ -68,7 +69,8 @@ def main():
         surfs = omorfi.tokenise(line)
         tokens += len(surfs)
         if options.output_format == 'moses':
-            print(' '.join([surf['surf'] for surf in surfs]), file=options.outfile)
+            print(' '.join([surf.surf for surf in surfs]),
+                  file=options.outfile)
         elif options.output_format == 'json':
             print(json.encode(surfs))
         elif options.output_format == 'conllu':
@@ -76,17 +78,16 @@ def main():
             print("# text =", line.rstrip("\n"), file=options.outfile)
             i = 1
             for surf in surfs:
-                print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_",
-                      format_misc_ud(surf),
+                print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_", "_",
                       sep="\t", file=options.outfile)
                 i += 1
         elif options.output_format == 'ftb3':
             print("<s><loc file=\"", options.infile.name, "\" line=\"",
-                    lines, "\" />", file=options.outfile, sep="")
+                  lines, "\" />", file=options.outfile, sep="")
             i = 1
             for surf in surfs:
                 print(i, surf['surf'], "_", "_", "_", "_", "_", "_", "_", "_",
-                        sep="\t", file=options.outfile)
+                      sep="\t", file=options.outfile)
                 i += 1
             print("</s>", file=options.outfile)
         if options.output_format == 'conllu':

@@ -23,9 +23,13 @@
 #  include <config.h>
 #endif
 
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <iterator>
+
 #include <hfst/hfst.h>
-#include <glob.h>
-#include <dirent.h>
 
 #include "omorfi.hh"
 
@@ -41,55 +45,6 @@ namespace omorfi {
     Omorfi::~Omorfi() {
         if (analyser_ != nullptr) {
             delete analyser_;
-        }
-    }
-
-    void
-    Omorfi::loadAllFromDefaultDirs() {
-        std::vector<std::string> stdPaths = {"/usr/local/share/omorfi/",
-            "/usr/share/omorfi/"};
-        char* homepath = getenv("HOME");
-        if (homepath != nullptr) {
-            std::string homeomorfi = std::string(homepath) + "/.omorfi/";
-            stdPaths.push_back(homeomorfi);
-        }
-        for (auto path : stdPaths) {
-            DIR* dirp = opendir(path.c_str());
-            if (dirp != nullptr) {
-                loadFromDir(path);
-            }
-        }
-    }
-
-    void
-    Omorfi::loadFromDir(const std::string& dirname) {
-        glob_t* globs;
-#ifdef GLOB_TILDE
-        glob((dirname + "/omorfi*.hfst").c_str(), GLOB_TILDE, nullptr,
-             globs);
-#else
-	if (dirname[0] == '~')
-            fprintf(stderr,
-                    "GLOB_TILDE is not supported on your platform, "
-                    "the tilde in \"%s\" won't be expanded.",
-                    dirname.c_str());
-
-        glob((dirname + "/omorfi*.hfst").c_str(), 0, nullptr, globs);
-#endif
-        for (unsigned int i = 0; i < globs->gl_pathc; i++) {
-            std::string filepath(globs->gl_pathv[1]);
-            loadFile(filepath);
-        }
-        globfree(globs);
-    }
-
-    void
-    Omorfi::loadFile(const std::string& filename) {
-        if (filename.find(".analyse.")) {
-            loadAnalyser(filename);
-        }
-        else {
-            fprintf(stderr, "Unrecognised automaton %s", filename.c_str());
         }
     }
 
@@ -136,8 +91,12 @@ namespace omorfi {
      }
 
      std::vector<std::string>
-     Omorfi::tokenise(const std::string& /* text */) {
-         return std::vector<std::string>();
+     Omorfi::tokenise(const std::string& text) {
+        std::istringstream iss(text);
+        std::vector<std::string>
+          results((std::istream_iterator<std::string>(iss)),
+                  std::istream_iterator<std::string>());
+        return results;
      }
 
      bool
