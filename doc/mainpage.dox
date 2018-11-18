@@ -1,11 +1,15 @@
 /** \mainpage
 
-The omorfi has number of programming language bindings that are described
-in this doxygen site. As of current version of omorfi, you should only look
-at the Omorfi class/object/things and the functions load_analyser, 
-load_XXX, tokenise and analyse. Stuff outside these classes is not really
-part of the API while it is somewhat documented. For design, see
+Omorfi has some basic APIs for programmatic use of the generated language
+models. The APIs are provided for a number of programming languages, and in
+current version each API is provided separately from ground-up, i.e. we do
+not use swigs or such binding generators. The basic API design is the same
+for all languages:
+
 \sa https://flammie.github.io/omorfi/pages/API-design.html
+
+The python interface is the main development platform and contains lots of
+experimental stuff outside the basic API. None of the APIs are super stable.
 
 Since navigation of doxygen is not ideal for multi-programming-language stuff,
 see:
