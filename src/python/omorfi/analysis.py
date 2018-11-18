@@ -1238,7 +1238,7 @@ class Analysis:
 
     def printable_udepname(self):
         '''Format udep as string for CONLL-U.
-        
+
         Returns:
             string of udep nam
         '''
@@ -1249,7 +1249,7 @@ class Analysis:
 
     def printable_udephead(self):
         '''Format udep head position for CONLL-U.
-        
+
         Returns:
             string of non-ngative integer or _'''
         if self.udepname and self.udepname == 'root' and self.udeppos == 0:
