@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf8 -*-
-"""This script creates a reweighting rulesets that match the current tag format.
+"""This script creates a reweighting rulesets that match the current tag
+format.
 """
 
 
@@ -23,10 +24,10 @@
 import argparse
 from sys import exit
 
-from omorfi.apertium_formatter import ApertiumFormatter
-from omorfi.ftb3_formatter import Ftb3Formatter
-from omorfi.no_tags_formatter import NoTagsFormatter
-from omorfi.omor_formatter import OmorFormatter
+from omorfi.formats.apertium_formatter import ApertiumFormatter
+from omorfi.formats.ftb3_formatter import Ftb3Formatter
+from omorfi.formats.no_tags_formatter import NoTagsFormatter
+from omorfi.formats.omor_formatter import OmorFormatter
 from omorfi.settings import stuff_weights
 
 
@@ -50,10 +51,12 @@ def main():
     ap.add_argument("--separator", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    metavar="COMMENT", 
+                    help="skip lines starting with COMMENT that" +
                     "do not have SEPs")
     ap.add_argument("--strip", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP", 
+                    help="strip STRIP from fields before using")
 
     ap.add_argument("--format", "-f", action="store", default="omor",
                     help="use specific output format for lexc data",

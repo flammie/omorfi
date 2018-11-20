@@ -53,42 +53,6 @@ namespace omorfi {
       ~Omorfi();
 
       /**
-       * load all omorfi models found in the default directories:
-       *
-       * - $prefix/share/omorfi
-       * - $HOME/.omorfi
-       * - ./src/generated
-       * - ./generated
-       * - .
-       *
-       * @deprecated This is a convenience function and is indefinetely
-       * deprecated. Use specific loading functions instead.
-       */
-      void loadAllFromDefaultDirs();
-
-      /**
-       * load all omorfi models from a given directory.
-       *
-       * @param path the directory containing automata
-       *
-       * @deprecated This relies on standard filenames, which can change
-       * between versions. This convenience function is deprecated, it is
-       * preferred to use specific loading functions instead.
-       */
-      void loadFromDir(const std::string& path);
-
-      /**
-       * load an omorfi model from a file.
-       *
-       * @param filename  to an automaton, where basename follows old naming
-       *                  conventions.
-       * @deprecated Associating model to right functionality relies on
-       * standard filenames, that change between versions, this convenience
-       * function is deprecated. Use specific loading functions instead.
-       */
-      void loadFile(const std::string& filename);
-
-      /**
        * load analysis model from a file.
        *
        * @param filename path to an automaton file binary.

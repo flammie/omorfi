@@ -21,8 +21,8 @@
 # utils to format apertium style data from omorfi database values
 
 from .formatter import Formatter
-from .settings import optional_hyphen, word_boundary
-from .string_manglers import lexc_escape
+from ..settings import optional_hyphen, word_boundary
+from ..string_manglers import lexc_escape
 
 
 class NoTagsFormatter(Formatter):
@@ -30,8 +30,8 @@ class NoTagsFormatter(Formatter):
     lemmatisers, acceptors, and morph segmenters."""
 
     def __init__(self, verbose=True, **kwargs):
-        """Create omorfi tag converter for tagless automata with given verbosity
-        and options.
+        """Create omorfi tag converter for tagless automata with given
+        verbosity and options.
 
         @param verbose set to false to disable printing
         @param segment set to true to create segmenter
@@ -53,7 +53,7 @@ class NoTagsFormatter(Formatter):
 
         @return empty string unless relevant for lemmatiser or segmenter
         """
-        if 'Bc' == stuff:
+        if stuff == 'Bc':
             return word_boundary
         else:
             return ""

@@ -1,24 +1,5 @@
-=========================================
- TODO: Known bugs and future development
-=========================================
+# TODO: Known bugs and future development
 
-See wiki page ToDo for up-to-date list.
+See [TODO in github pages](//flammie.github.io/omorfi/pages/TODO.html)
 
-* Nouns should rarely compare
-
-* Thorough derivational system
-
-* Test suites, *test suites*, testing, *testing*, **testing**
-
-* Extending word lists
-
-* Broken vowel harmony should be allowed when harmony is over two syllables away
-
-* Foreign words may use either visual or pronunciation based harmony
-
-* Some verbs should have defective paradigms: *tuulla : ?tuulen*
-
-* Also implement morphology against joukahainen inflection classes and
-  gradations
-
-.. vim: set ft=rst:
+<!-- vim: set ft=markdown:  -->

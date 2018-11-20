@@ -31,7 +31,23 @@ developers and contributors and are GPLv3 like the rest of the package.
 
 These are the obligatory stamps of the day:
 
+[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
+(stable master branch:
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
+)
+
+## Documentation
+
+There is a [github-pages site for omorfi](//flammie.github.io/omorfi/), that
+contains both automatically generated information about omorfi and larger
+documentation, including some design rationale and historical remarks.
+
+### Academic works
+
+Some technical background is detailed also in academic papers, these are
+collected on the [articles page on
+gh-pages](//flammie.github.io/omorfi/pages/Articles.html), including
+citation information.
 
 ## Downloading and further information
 
@@ -40,17 +56,15 @@ These are the obligatory stamps of the day:
 Omorfi is currently hosted at github. [Omorfi's github
 repository](https://github.com/flammie/omorfi) contain most of the important
 information about omorfi: version control system for source codes, bug tracker
-for reporting bugs, and the stable releases as convenient packages. [Omorfi's
-gh-pages site](https://flammie.github.io/omorfi/) contain further information not
-found in this README.
+for reporting bugs, and the stable releases as convenient packages.
 
 ## Dependencies
 
 *Before you start:* Apertium wiki has installation information for most
-dependencies on their [Apertium installation pages, look at section called
-pre-requisites](http://wiki.apertium.org/wiki/Installation), e.g., if you are
-looking to build *omorfi* on *Ubuntu*, go to: [Pre-requisites for
-Ubuntu](http://wiki.apertium.org/wiki/Prerequisites_for_Debian).
+dependencies on their [packaging-based installation instructions for
+Linux and WSL](http://wiki.apertium.org/wiki/Install_Apertium_core_using_packaging),
+these instructions are good for Debian- and Redhat-based distributions at the
+moment.
 
 Compilation of the morphological analyser, generation, lemmatisation or
 spell-checking requires [HFST](https://hfst.github.io/) tools or compatible
@@ -60,9 +74,13 @@ well. You should have versions no older than one or two years. The build is not
 guaranteed to work at all with all ancient versions of GNU build tools, HFST or
 python. The versions that should work are as follows:
 
-  * **hfst-3.8** or greater, with python bindings
+  * **hfst-3.15** or greater, with python bindings
+    * Note! 3.15 has greatly improved efficiency of HFST python bindings, it is
+      a hard requirement for build and use (memory usage is stable 100 megs
+      instead of linearly rising from few gigs!)
   * **python-3.2** or greater, with hfst python bindings available
-  * GNU **autoconf-2.64** and **automake-1.12**
+  * **C++** compiler and **libtool** (can be disabled?)
+  * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config** implementation
 
 The use of certain automata also requires additional tools:
 
@@ -76,6 +94,22 @@ APIs require:
 * The C++ API uses C++-11, this is basically available on all modern platforms.
 
 ## Installation
+
+**NB:*** If you do not want to re-compile omorfi yourself, you can download the
+language models from previous release using omorfi-download.bash:*
+
+```
+./configure
+src/bash/omorfi-download.bash
+```
+
+This will download some of the pre-compiled dictionaries into your current
+working directory. You can then start using them and skip to [Usage](#Usage).
+For the current development version with latest updates it is advisable to
+compile your own, it is also necessary if you want to make any customisations to
+the dictionaries, etc.
+
+- - -
 
 Installation uses standard autotools system:
 
@@ -132,8 +166,8 @@ to enable or disable the API bindings for Java or other languages. The
     * giella: no
     * labeled segmenter: no
 * Limits:
-    * tiny lexicons: 
-    * big tests: 
+    * tiny lexicons:
+    * big tests:
 * Applications
     * Voikko speller: yes
     * segmenter: no
@@ -165,10 +199,12 @@ programs may require specific automata or language models.
   (FinnTreeBank, CONLL-X compatible)
 1. `omorfi-factorise.bash`: analyse text and print out Moses factored format
 1. `omorfi-vislcg.bash`: analyse text and print out VISL CG 3 output
-1. `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line 
+1. `omorfi-analyse-tokenised.sh`: analyse pre-tokenised word-forms one per line
    (unlike other functions, this takes word list and not text input)
 1. `omorfi-generate.sh`: generate word-forms from omor descriptions
    (unlike other functions, takes analysis list as input)
+1. `omorfi-download.bash`: downloads some pre-compiled models from latest
+   stable release (available from 20181111 onwards).
 
 Some functions come with lower-level interface, where you have to take care
 of full pipeline manually but have more control over parametres:
@@ -281,3 +317,7 @@ $ pre-commit install
 
 I (Flammie) also recommend syntastic, e.g. I use
 [vim-syntastic](https://github.com/vim-syntastic/syntastic)
+
+### Code of conduct
+
+Since I it's 2018 I just want to remind GNU has a (mostly) good description of what FLOSS hacking code of conduct should be https://www.gnu.org/philosophy/kind-communication.html. Omorfi is free and open source project that depends on user contributions and we aim to be maximally approachable and so on. Thanks.

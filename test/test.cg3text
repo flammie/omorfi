@@ -1,0 +1,54 @@
+"<Viikonlopun>"
+	"viikonloppu" NOUN SG GEN <*LOWERCASED> 
+;	"viikko#loppu" ADJ POS SG GEN <*LOWERCASED> 
+;	"viikko#loppu" NOUN SG GEN <*LOWERCASED> 
+"<pyöritys>"
+	"pyöritys" NOUN SG NOM 
+"<alkoi>"
+	"alkaa" VERB ACT INDV PAST SG3 
+"<H&M:n>"
+	"H&M" PROPN <ABBR_ACRONYM> SG GEN 
+"<järjestämällä>"
+	"järjestää" VERB ACT INFMA ADE 
+;	"järjestää" VERB <DRV_MA> POS SG ADE 
+"<bloggaajabrunssilla>"
+	"bloggaaja#brunssi" NOUN SG ADE 
+"<Helsingissä>"
+;	"Helsing" PROPN SG INE 
+	"Helsinki" PROPN SG INE 
+"<.>"
+	"." 
+
+"<Showroomilla>"
+	"showroom" NOUN SG ADE <*LOWERCASED> 
+"<esiteltiin>"
+	"esitellä" VERB PSS INDV PAST PE4 
+"<uusi>"
+	"uusi" ADJ POS SG NOM 
+;	"uusia" VERB ACT IMPV SG2 
+;	"uusia" VERB ACT INDV PAST SG3 
+;	"uusia" VERB ACT INDV PRESENT CONNEG 
+"<The>"
+	"the" X <FOREIGN_FOREIGN> <*LOWERCASED> 
+"<Garden>"
+	"Garden" PROPN SG NOM 
+"<Collection>"
+	"Collection" PROPN SG NOM 
+"<ja>"
+	"ja" CCONJ 
+;	"ja" ADV 
+"<tarjoiltiin>"
+	"tarjoilla" VERB PSS INDV PAST PE4 
+"<maukasta>"
+	"maukas" ADJ POS SG PAR 
+"<aamupalaa>"
+	"aamupala" NOUN SG PAR 
+;	"aamu#pala" NOUN SG PAR 
+"<aamu-unisille>"
+	"aamu-uninen" ADJ POS PL ALL 
+;	"aamu#uninen" ADJ POS PL ALL 
+"<muotibloggaajille>"
+	"muoti#bloggaaja" NOUN PL ALL 
+"<.>"
+	"." 
+

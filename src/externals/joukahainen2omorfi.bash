@@ -1,0 +1,397 @@
+#!/bin/bash
+
+awk '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
+    fgrep -v wordlist |\
+    tr -d '\n' |\
+    # XML to TSV
+    sed -e 's/<word /\n/g' |\
+    fgrep -v prefix |\
+    sed -e 's/>[[:space:]]*</></g' |\
+    sed -e 's/^id=.*<forms>//' \
+        -e 's:<form>::' \
+        -e 's:</form><form>:||:g' \
+        -e 's:</form>::' |\
+    sed -e 's:</forms>.*<classes>:\t:' \
+        -e 's:<wclass>::' \
+        -e 's:</wclass><wclass>:||:g' \
+        -e 's:</wclass>::' |\
+    sed -e 's:</classes>.*<inflection>:_:' \
+        -e 's:<infclass>::' \
+        -e 's:</infclass><infclass[^>]*>:||:g' \
+        -e 's:</infclass>::' |\
+    sed -e 's:</classes></word>::' \
+        -e 's:</classes>::' |\
+    sed -e 's:<vtype>:__:' \
+        -e 's:</vtype>::' \
+        -e 's:</style>::' \
+        -e 's:<usage>::' \
+        -e 's:</usage>::' \
+        -e 's:</derivation>::' \
+        -e 's:</compounding>::' \
+        -e 's:</grammar>::' \
+        -e 's:<info>.*</info>::' \
+        -e 's:<frequency>.*</frequency>::' \
+        -e 's:</application>::' \
+        -e 's:<flag>.*</flag>::' |\
+    sed -e 's:</inflection>.*</word>::'\
+        -e 's:<style>.*</word>::' \
+        -e 's:</word>::' |\
+    # JOU to new paras
+    sed -e 's/pnoun_\(misc\|lastname\|firstname\|place\)/PROPN/g' \
+        -e 's/noun/NOUN/g' \
+        -e 's/verb/VERB/g' \
+        -e 's/adjective/ADJ/g' \
+        -e 's/interjection___a/INTJ_HAH/' \
+        -e 's/interjection/INTJ_HAH/' \
+        -e 's/abbreviation___aä/NOUN_ACRO/' \
+        -e 's/abbreviation___a/NOUN_ACRO/' \
+        -e 's/abbreviation___ä/NOUN_ACRO/' \
+        -e 's/abbreviation/NOUN_ACRO/' \
+        -e 's/conjunction/SCONJ_ETTÄ/' |\
+    # nominals ~ alphabetically
+    sed -e 's/poikkeava$/XXX/' \
+        -e 's/alkeet$/ALKEET/' \
+        -e 's/autuas$/AUTUAS/' \
+        -e 's/apaja||kantaja$/PROBLEEMA/' \
+        -e 's/valo||arvelu$/TALO/' \
+        -e 's/valo-av1||arvelu-av1$/UKKO/' \
+        -e 's/arvelu-av1$/LEPAKKO/' \
+        -e 's/arvelu$/RUIPELO/' \
+        -e 's/kala-av1||asema-av1$/KUTSUNTA/' \
+        -e 's/asema-av1$/KUTSUNTA/' \
+        -e 's/asema||apaja$/VOIMA/' \
+        -e 's/asema||kantaja$/VOIMA/' \
+        -e 's/asema||karahka$/VOIMA/' \
+        -e 's/asema||matala$/VOIMA/' \
+        -e 's/koira||asema$/VOIMA/' \
+        -e 's/kala||asema$/VOIMA/' \
+        -e 's/asema$/VOIMA/' \
+        -e 's/matala||apaja$/PROBLEEMA/' \
+        -e 's/kulkija||herttua$/PROBLEEMA/' \
+        -e 's/kulkija||apaja$/PROBLEEMA/' \
+        -e 's/karahka||apaja$/PROBLEEMA/' \
+        -e 's/peruna||apaja$/PROBLEEMA/' \
+        -e 's/apaja$/PROBLEEMA/' \
+        -e 's/sisar||askel$/ASKAR/' \
+        -e 's/askel$/ASKAR/' \
+        -e 's/askel-av2$/MANNER/' \
+        -e 's/askel-av6$/SÄEN/' \
+        -e 's/autio$/TUOMIO/' \
+        -e 's/kalsium||edam__a$/STADION/' \
+        -e 's/kalsium||edam$/PUNK/' \
+        -e 's/edam||kalsium$/PUNK/' \
+        -e 's/edam$/STADION/' \
+        -e 's/edam__a$/STADION/' \
+        -e 's/edam__ä$/BESSERWISSER/' \
+        -e 's/hame||terve$/ASTE/' \
+        -e 's/hame$/ASTE/' \
+        -e 's/hame-av2$/OSOITE/' \
+        -e 's/hame-av4$/POHJE/' \
+        -e 's/hame-av6$/KOE/' \
+        -e 's/hapan$/HAPAN/' \
+        -e 's/hapsi$/HAPSI/' \
+        -e 's/huuli||nuori$/RUUHI/' \
+        -e 's/tuohi||huuli$/RUUHI/' \
+        -e 's/huuli$/RUUHI/' \
+        -e 's/iäkäs-av2$/ASUKAS/' \
+        -e 's/jumala$/JUMALA/' \
+        -e 's/kala-av1||asema-av1$/KUTSUNTA/' \
+        -e 's/kala-av1||veranta$/KUTSUNTA/' \
+        -e 's/kala-av1$/TIPPA/' \
+        -e 's/kala-av3$/AIKA/' \
+        -e 's/kala-av5$/VIKA/' \
+        -e 's/kala||karahka$/KIRJA/' \
+        -e 's/asema||kulkija$/VOIMA/' \
+        -e 's/kala||kulkija$/VOIMA/' \
+        -e 's/kala$/KIRJA/' \
+        -e 's/kaunis$/KAUNIS/' \
+        -e 's/kevät$/KEVÄT/' \
+        -e 's/kalleus$/AAKKOSELLISUUS/' \
+        -e 's/kalleus__ä$/KÖYHYYS/' \
+        -e 's/risti||kalsium$/RUUVI/' \
+        -e 's/kalsium__aä$/PUNK/' \
+        -e 's/kalsium__ä$/ZEN/' \
+        -e 's/kalsium__a$/PUNK/' \
+        -e 's/kalsium||edam__a$/PUNK/' \
+        -e 's/kalsium||edam__aä$/PUNK/' \
+        -e 's/kalsium$/PUNK/' \
+        -e 's/kamee$/BIDEE/' \
+        -e 's/kamee||bébé$/BIDEE/' \
+        -e 's/kala-av1||karahka-av1$/LUSIKKA/' \
+        -e 's/karahka-av1$/LUSIKKA/' \
+        -e 's/kulkija||karahka$/KIRJA/' \
+        -e 's/karahka$/KITARA/' \
+        -e 's/karahka||peruna$/KITARA/' \
+        -e 's/karahka||koira$/VOIMA/' \
+        -e 's/karahka||kulkija$/VOIMA/' \
+        -e 's/kala||pasuuna$/KITARA/' \
+        -e 's/karahka||pasuuna$/KITARA/' \
+        -e 's/kansi$/KANSI/' \
+        -e 's/lovi||kiiski$/KIVI/' \
+        -e 's/kiiski$/KIVI/' \
+        -e 's/koira-av1$/LUOKKA/' \
+        -e 's/koira-av5$/LOKA/' \
+        -e 's/koira||pasuuna$/PROBLEEMA/' \
+        -e 's/kala||koira$/VOIMA/' \
+        -e 's/koira$/VOIMA/' \
+        -e 's/korkea$/SOKEA/' \
+        -e 's/kulkija||pasuuna$/VOIMA/' \
+        -e 's/kulkija__a$/VOIMA/' \
+        -e 's/kulkija$/VOIMA/' \
+        -e 's/kuollut$/AIVOKUOLLUT/' \
+        -e 's/laidun$/LAIDUN/' \
+        -e 's/loppu$/ASU/' \
+        -e 's/toholampi||lovi-av1$/LAMPI/' \
+        -e 's/lapsi$/LAPSI/' \
+        -e 's/laupias$/AUTUAS/' \
+        -e 's/lovi-av1$/KUPPI/' \
+        -e 's/lovi-av3$/ARKI/' \
+        -e 's/lovi-av3||jälki$/JÄRKI/' \
+        -e 's/lovi-av5$/KÄKI/' \
+        -e 's/lovi$/ONNI/' \
+        -e 's/lovi__a$/ONNI/' \
+        -e 's/lovi__ä$/KIVI/' \
+        -e 's/lumi$/TAIMI/' \
+        -e 's/lämmin$/LÄMMIN/' \
+        -e 's/matala||matala$/PROBLEEMA/' \
+        -e 's/matala||pasuuna$/PROBLEEMA/' \
+        -e 's/kulkija||matala$/PROBLEEMA/' \
+        -e 's/peruna||matala$/PROBLEEMA/' \
+        -e 's/karahka||matala$/PROBLEEMA/' \
+        -e 's/matala__a$/PROBLEEMA/' \
+        -e 's/matala$/PROBLEEMA/' \
+        -e 's/meri$/MERI/' \
+        -e 's/mies$/MIES/' \
+        -e 's/nainen$/AAKKOSELLINEN/' \
+        -e 's/nainen__a$/AAKKOSELLINEN/' \
+        -e 's/nainen__aä$/AAKKOSELLINEN/' \
+        -e 's/nainen__ä$/KYLMÄJÄRKINEN/' \
+        -e 's/nalle__a$/NALLE/' \
+        -e 's/nalle-av1$/JEPPE/' \
+        -e 's/nalle__aä$/NALLE/' \
+        -e 's/nalle__ä$/NISSE/' \
+        -e 's/nalle$/NALLE/' \
+        -e 's/nahka$/VIKA/' \
+        -e 's/niemi||tuomi$/TAIMI/' \
+        -e 's/niemi$/TAIMI/' \
+        -e 's/niemi__ä$/NIEMI/' \
+        -e 's/ohut$/OLUT/' \
+        -e 's/onneton-av2$/VIATON/' \
+        -e 's/onneton$/VIATON/' \
+        -e 's/tuohi||pieni$/TUULI/' \
+        -e 's/poika$/POIKA/' \
+        -e 's/risti-av1||paperi-av1$/KORTTI/' \
+        -e 's/risti-av1$/KORTTI/' \
+        -e 's/paperi-av1$/LOKKI/' \
+        -e 's/paperi||banaali$/KANAALI/' \
+        -e 's/risti||paperi$/KANAALI/' \
+        -e 's/paperi$/KANAALI/' \
+        -e 's/paperi__aä$/TYYLI/' \
+        -e 's/paperi__ä$/KEHVELI/' \
+        -e 's/pieni$/PIENI/' \
+        -e 's/parfait$/PARFAIT/' \
+        -e 's/parfait__aä$/PARFAIT/' \
+        -e 's/kulkija||peruna$/MAKKARA/' \
+        -e 's/peruna$/MAKKARA/' \
+        -e 's/peruna||pasuuna$/KITARA/' \
+        -e 's/pitkä$/PITKÄ/' \
+        -e 's/pii$/HAI/' \
+        -e 's/pii__aä$/HAI/' \
+        -e 's/pii__ä$/PYY/' \
+        -e 's/risti__a$/RUUVI/' \
+        -e 's/risti-av1__aä$/KORTTI/' \
+        -e 's/risti-av1__a$/KORTTI/' \
+        -e 's/risti-av1__ä$/SKEITTI/' \
+        -e 's/risti-av1$/KORTTI/' \
+        -e 's/risti-av5$/LAKI/' \
+        -e 's/risti__aä$/RUUVI/' \
+        -e 's/risti__ä$/TYYLI/' \
+        -e 's/risti||banaali$/KANAALI/' \
+        -e 's/risti$/RUUVI/' \
+        -e 's/rosé__a$/ROSÉ/' \
+        -e 's/rosé__aä$/ROSÉ/' \
+        -e 's/rosé||bébé__a$/ROSÉ/' \
+        -e 's/rosé||bébé__aä$/ROSÉ/' \
+        -e 's/rosé||bébé$/ROSÉ/' \
+        -e 's/rosé$/ROSÉ/' \
+        -e 's/ruoka$/RUOKA/' \
+        -e 's/siisti$/STYDI/' \
+        -e 's/sisar||ahven$/JOUTSEN/' \
+        -e 's/sisar-av2$/AJATAR/' \
+        -e 's/sisar-av6$/IEN/' \
+        -e 's/sisar$/JOUTSEN/' \
+        -e 's/sisin$/KYLÄNVANHIN/' \
+        -e 's/spray||bébé$/GAY/' \
+        -e 's/spray$/GAY/' \
+        -e 's/spray__aä$/GAY/' \
+        -e 's/spray__a$/GAY/' \
+        -e 's/spray__ä$/GAY/' \
+        -e 's/suo$/VUO/' \
+        -e 's/suksi$/ONNI/' \
+        -e 's/susi$/KAUSI/' \
+        -e 's/susi__ä$/KÖYSI/' \
+        -e 's/suurempi$/LÄHEMPI/' \
+        -e 's/suurempi-av1$/LÄHEMPI/' \
+        -e 's/tie$/TIE/' \
+        -e 's/tosi$/UUSI/' \
+        -e 's/tuohi$/TUULI/' \
+        -e 's/uistin-av2$/VAADIN/' \
+        -e 's/uistin-av4$/POLJIN/' \
+        -e 's/uistin-av6$/PYYHIN/' \
+        -e 's/uistin$/PUHELIN/' \
+        -e 's/uistin||sydän$/SYDÄN/' \
+        -e 's/valo-av1$/UKKO/' \
+        -e 's/valo||valo-av5$/TALO/' \
+        -e 's/valo-av5$/TEKO/' \
+        -e 's/valo__aä$/TALO/' \
+        -e 's/valo__a$/TALO/' \
+        -e 's/valo__ä$/KÄRRY/' \
+        -e 's/valo$/TALO/' \
+        -e 's/video$/TUOMIO/' \
+        -e 's/vapaa$/PUU/' \
+        -e 's/vasen$/VASEN/' \
+        -e 's/vastaus||uros$/UROS/' \
+        -e 's/vastaus||koiras$/VAKUUTUS/' \
+        -e 's/vastaus$/VAKUUTUS/' \
+        -e 's/vastaus__a$/VAKUUTUS/' \
+        -e 's/vastaus__ä$/RÄJÄYTYS/' \
+        -e 's/veitsi$/VEITSI/' \
+        -e 's/veitsi||peitsi$/VEITSI/' \
+        -e 's/veli$/VELI/' \
+        -e 's/vieras-av2$/HIDAS/' \
+        -e 's/vieras-av2||altis$/ALTIS/' \
+        -e 's/vieras-av6$/IES/' \
+        -e 's/vieras||valmis$/VALMIS/' \
+        -e 's/vieras||patsas$/PATSAS/' \
+        -e 's/vieras||vieras$/PATSAS/' \
+        -e 's/vieras||koiras$/PATSAS/' \
+        -e 's/vieras$/PATSAS/' \
+        -e 's/ylkä$/YLKÄ/' |\
+    # verbs
+    sed -e 's/aaltoilla$/ARVAILLA/'\
+        -e 's/sulaa-av1||aavistaa-av1$/VIEROITTAA/' \
+        -e 's/aavistaa-av1$/VIEROITTAA/' \
+        -e 's/aavistaa$/MUTRISTAA/'\
+        -e 's/sulaa-av1||aiheuttaa-av1$/VIEROITTAA/' \
+        -e 's/aiheuttaa-av1$/VIEROITTAA/' \
+        -e 's/aleta$/KARHETA/'\
+        -e 's/aleta-av4$/ROHJETA/'\
+        -e 's/aleta-av6$/NIUKETA/'\
+        -e 's/aleta-av2$/SUPETA/'\
+        -e 's/haluta$/HALUTA/'\
+        -e 's/haluta-av2$/KIVUTA/'\
+        -e 's/haluta-av6$/KERITÄ/'\
+        -e 's/kanavoida-av2||haravoida-av2$/KOPIOIDA/'\
+        -e 's/voida-av2||haravoida-av2$/KOPIOIDA/'\
+        -e 's/haravoida-av2$/KOPIOIDA/'\
+        -e 's/sulaa-av1||heittää-av1$/VIEROITTAA/'\
+        -e 's/heittää-av1$/VIEROITTAA/'\
+        -e 's/hidastaa$/MUTRISTAA/' \
+        -e 's/hohtaa-av1$/MOJAHTAA/'\
+        -e 's/hujahtaa-av1$/MOJAHTAA/'\
+        -e 's/hujahtaa$/MOJAHTAA/'\
+        -e 's/huutaa-av1$/HIVENTÄÄ/'\
+        -e 's/inttää-av1$/VIEROITTAA/'\
+        -e 's/juoda$/TUODA/'\
+        -e 's/juosta$/JUOSTA/'\
+        -e 's/juoruta$/KARHUTA/'\
+        -e 's/juoruta-av2$/RYÖPYTÄ/'\
+        -e 's/juontaa-av1$/NÄPERTÄÄ/'\
+        -e 's/laskea-av1$/TUNKEA/'\
+        -e 's/laskea-av5$/PUKEA/'\
+        -e 's/kaikaa$/RAIKAA/'\
+        -e 's/kaivaa-av1||kaihtaa$/SATAA/'\
+        -e 's/kaivaa-av1$/SATAA/'\
+        -e 's/kaivaa-av1||virkkaa$/VIRKKAA/'\
+        -e 's/kaivaa-av5$/VIRKKAA/'\
+        -e 's/kaivaa-av1||paahtaa$/SATAA/'\
+        -e 's/kaivaa-av1||laittaa$/AUTTAA/'\
+        -e 's/kaivaa||muistaa$/KASVAA/'\
+        -e 's/kaivaa$/KASVAA/'\
+        -e 's/kaivaa||palaa$/KASVAA/'\
+        -e 's/kaivaa||paistaa$/KASVAA/'\
+        -e 's/kaivaa||haastaa$/KASVAA/'\
+        -e 's/voida-av2||kanavoida-av2$/KOPIOIDA/'\
+        -e 's/kanavoida-av2$/KOPIOIDA/'\
+        -e 's/aleta||katketa-av4$/KARHETA/'\
+        -e 's/katketa$/KARHUTA/'\
+        -e 's/katketa-av6$/POIKETA/'\
+        -e 's/katketa-av2$/AALLOTA/'\
+        -e 's/katketa-av4$/ILJETÄ/'\
+        -e 's/katsella-av2$/SULATELLA/'\
+        -e 's/katsella-av2||kirjoitella$/SULATELLA/'\
+        -e 's/katsella-av6$/NAKELLA/'\
+        -e 's/katsella$/ETUILLA/' \
+        -e 's/katsella||tulla$/ETUILLA/' \
+        -e 's/kevetä$/VÄHETÄ/' \
+        -e 's/kihistä$/ÄRISTÄ/' \
+        -e 's/laskea-av3$/SULKEA/'\
+        -e 's/sulaa-av1||kirjoittaa-av1$/VIEROITTAA/' \
+        -e 's/kaivaa-av1||taittaa$/AUTTAA/' \
+        -e 's/kirjoittaa-av1$/VIEROITTAA/' \
+        -e 's/kitistä$/MARISTA/' \
+        -e 's/kohota$/KARHUTA/'\
+        -e 's/kohota||siivota$/KARHUTA/'\
+        -e 's/kohota-av1$/KOUKUTA/'\
+        -e 's/kohota-av2$/KOUKUTA/'\
+        -e 's/kohota-av6$/KAIKOTA/'\
+        -e 's/käydä$/KÄYDÄ/'\
+        -e 's/laskea$/SOTKEA/'\
+        -e 's/loistaa$/KIVISTÄÄ/'\
+        -e 's/lähteä$/LÄHTEÄ/'\
+        -e 's/lähteä-av1$/LÄHTEÄ/'\
+        -e 's/mennä$/MENNÄ/'\
+        -e 's/muistaa$/MUTRISTAA/'\
+        -e 's/murtaa-av1$/KUHERTAA/'\
+        -e 's/nuolaista-av2||nuolaista$/MARISTA/'\
+        -e 's/nuolaista-av2$/RANGAISTA/'\
+        -e 's/nuolaista||nuolaista$/MARISTA/'\
+        -e 's/nuolaista$/MARISTA/'\
+        -e 's/pahentaa-av1$/HUONONTAA/'\
+        -e 's/paleltaa-av1$/SIVALTAA/'\
+        -e 's/paleltaa-av2$/SIVALTAA/'\
+        -e 's/punoa-av1||antautua$/ROHTUA/'\
+        -e 's/punoa-av1||antautua-av1$/ROHTUA/'\
+        -e 's/punoa-av1$/ROHTUA/'\
+        -e 's/punoa-av5$/TAKOA/'\
+        -e 's/punoa$/PUNOA/'\
+        -e 's/purra$/SURRA/'\
+        -e 's/saada$/SAADA/'\
+        -e 's/saartaa$/SARTAA/'\
+        -e 's/saneerata||salata$/ARVATA/'\
+        -e 's/salata$/ARVATA/'\
+        -e 's/salata-av2||levätä$/LEVÄTÄ/'\
+        -e 's/salata-av2$/JAHDATA/'\
+        -e 's/salata-av4$/HYLJÄTÄ/'\
+        -e 's/salata-av4||hyljätä$/HYLJÄTÄ/'\
+        -e 's/salata-av6$/MORKATA/'\
+        -e 's/salata-av6||hylätä$/YÖKÄTÄ/'\
+        -e 's/salata||palata$/ARVATA/'\
+        -e 's/sallia-av1$/AHNEHTIA/'\
+        -e 's/sallia-av3$/HYLKIÄ/'\
+        -e 's/sallia-av5$/HYLKIÄ/'\
+        -e 's/sallia$/KOSIA/'\
+        -e 's/saneerata$/ARVATA/'\
+        -e 's/soutaa-av1$/HIVENTÄÄ/'\
+        -e 's/sukeltaa-av1$/KUHERTAA/'\
+        -e 's/sukeltaa-av2$/KUHERTAA/'\
+        -e 's/sulaa$/MUTRISTAA/'\
+        -e 's/sulaa-av1||vuotaa-av1$/MOJAHTAA/'\
+        -e 's/sulaa-av1$/VIEROITTAA/'\
+        -e 's/sulaa-av5$/PURKAA/'\
+        -e 's/taitaa$/TAITAA/'\
+        -e 's/nähdä$/NÄHDÄ/'\
+        -e 's/tuntea-av1$/TUNTEA/'\
+        -e 's/valita$/PALKITA/'\
+        -e 's/voida-av2$/KOPIOIDA/' \
+        -e 's/vuotaa-av1$/HUONONTAA/'\
+        -e 's/poikkeava||kutiaa$/KUDITA/' |\
+    awk 'BEGIN {printf("%s\t%s\t%s\t%s\n", "lemma", "homonym", "new_para",
+                       "origin");}
+                       {
+                           wordcount = split($1, words, /\|\|/);
+                            for (i=0; i < wordcount; i++) {
+                                printf("%s\t1\t%s\tjoukahainen\n",
+                                    gensub(/[=]/, "", "g", words[i+1]), $2);
+                            }
+                        }'

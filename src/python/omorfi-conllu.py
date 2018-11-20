@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""A command-line interface for omorfi with CONLL-U I/O formats."""
+
 # string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stderr, stdin, stdout
@@ -10,66 +11,82 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_ud_feats, get_upos, get_lemmas, \
-        format_feats_ud, format_xpos_ftb, format_xpos_tdt, format_misc_ud
+from omorfi import Omorfi
+from omorfi.formats.fileformats import next_conllu
+from omorfi.disamparsulate import Disamparsulator
 
 
+def get_reference_conllu_list(token):
+    if not token.gold:
+        print("Oracle data missing from", token, file=stderr)
+        exit(2)
+    return token.gold.split("\t")
 
 
-
-
-
-def try_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
-    for anal in anals:
-        upos = get_upos(anal)
+def try_analyses_conllu(token, outfile, hacks=None):
+    anals = token.analyses
+    original = get_reference_conllu_list(token)
+    best = None
+    highest = -1
+    for i, anal in enumerate(anals):
+        upos = anal.get_upos()
+        feats = anal.printable_ud_feats()
+        lemmas = anal.get_lemmas()
+        dephead = anal.udeppos
+        depname = anal.udepname
+        if lemmas:
+            lemma = '#'.join(anal.get_lemmas())
+        else:
+            lemma = '_'
+        score = 0
         if upos == original[3]:
-            feats = format_feats_ud(anal)
-            if feats == original[5]:
-                lemmas = "#".join(get_lemmas(anal))
-                if lemmas == original[2]:
-                    return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-    # no exact match found (re-try without lemma)
-    for anal in anals:
-        upos = get_upos(anal)
-        if upos == original[3]:
-            feats = format_feats_ud(anal)
-            if feats == original[5]:
-                return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-    # and re-try without feats
-    for anal in anals:
-        upos = get_upos(anal)
-        if upos == original[3]:
-            return print_analyses_conllu(wordn, surf, anal, outfile, hacks)
-    return print_analyses_conllu(wordn, surf, anals[0], outfile, hacks)
+            score += 10
+        if lemma == original[2]:
+            score += 10
+        elif lemma.strip('#') == original[2].strip('#'):
+            score += 5
+        elif lemma.lower() == original[2].lower():
+            score += 5
+        if feats == original[5]:
+            score += 10
+        else:
+            featset = set(feats.split("|"))
+            refset = set(original[5].split("|"))
+            score += len(featset.intersection(refset))
+        if dephead == original[6]:
+            score += 1
+        if depname == original[7]:
+            score += 1
+        if score > highest:
+            best = i
+            highest = score
+    print(token.printable_conllu(hacks, best), file=outfile)
 
 
-def debug_analyses_conllu(original, wordn, surf, anals, outfile, hacks=None):
-    print("# REFERENCE(python):", original, file=outfile)
-    for anal in anals:
-        print_analyses_conllu(wordn, surf, anal, outfile, hacks)
+def debug_analyses_conllu(token, outfile, hacks=None):
+    anals = token.analyses
+    print("# REFERENCE(python):", get_reference_conllu_list(token),
+          file=outfile)
+    for i, anal in enumerate(anals):
+        print(token.printable_conllu(hacks, i), file=outfile)
 
 
-
-def print_analyses_conllu(wordn, surf, anal, outfile, hacks=None):
-    upos = get_upos(anal)
-    if not upos or upos == "":
-        upos = 'X'
-    if hacks == 'ftb':
-        third = format_xpos_ftb(anal)
-    else:
-        third = format_xpos_tdt(anal)
-    print(wordn, surf, "#".join(get_lemmas(anal)),
-          upos,
-          third,
-          format_feats_ud(anal, hacks),
-          "_", "_", "_", format_misc_ud(anal), sep="\t", file=outfile)
+def print_analyses(sent, options):
+    for token in sent:
+        if token.nontoken:
+            print(token.printable_conllu(options.hacks), file=options.outfile)
+        elif options.debug:
+            debug_analyses_conllu(token, options.outfile, options.hacks)
+        elif options.oracle:
+            try_analyses_conllu(token, options.outfile, options.hacks)
+        else:
+            print(token.printable_conllu(options.hacks), file=options.outfile)
 
 
 def main():
     """Invoke a simple CLI analyser."""
     a = ArgumentParser()
-    a.add_argument('-a', '--analyser', metavar='AFILE',
+    a.add_argument('-a', '--analyser', metavar='AFILE', required=True,
                    help="read analyser model from AFILE")
     a.add_argument('-i', '--input', metavar="INFILE", type=open,
                    dest="infile", help="source of analysis data")
@@ -88,6 +105,8 @@ def main():
                    choices=['ftb'])
     a.add_argument('-X', '--frequencies', metavar="FREQDIR",
                    help="read frequencies from FREQDIR/*.freqs")
+    a.add_argument('--not-rules', metavar="RULEFILE", type=open,
+                   help="read non-rules from RULEFILE")
     a.add_argument('--debug', action='store_true',
                    help="print lots of debug info while processing")
     options = a.parse_args()
@@ -99,8 +118,14 @@ def main():
             print("reading analyser model", options.analyser)
         omorfi.load_analyser(options.analyser)
     else:
-        print("analyser is needed to conllu", file=stdrr)
+        print("analyser is needed to conllu", file=stderr)
         exit(4)
+    disamparsulator = None
+    if options.not_rules:
+        disamparsulator = Disamparsulator()
+        if options.verbose:
+            print("Loading", options.not_rules)
+        disamparsulator.frobblesnizz(options.not_rules)
     if options.udpipe:
         if options.verbose:
             print("Loading udpipe", options.udpipe)
@@ -116,8 +141,6 @@ def main():
         print("writing to", options.outfile.name)
     if not options.statfile:
         options.statfile = stdout
-    lexprobs = None
-    tagprobs = None
 
     if options.frequencies:
         with open(options.frequencies + '/lexemes.freqs') as lexfile:
@@ -131,59 +154,39 @@ def main():
     tokens = 0
     unknowns = 0
     sentences = 0
-    recognised_comments = ['sent_id =', 'text =', 'doc-name:', 'sentence-text:']
-    for line in options.infile:
-        fields = line.strip().split('\t')
-        if len(fields) == 10:
-            # conllu is 10 field format
-            tokens += 1
-            try:
-                index = int(fields[0])
-            except ValueError:
-                if '-' in fields[0]:
-                    # MWE
-                    continue
-                elif '.' in fields[0]:
-                    # a ghost
-                    continue
-                else:
-                    print(
-                        "Cannot figure out token index", fields[0], file=stderr)
+    eoffed = False
+    while not eoffed:
+        sentplus = next_conllu(options.infile)
+        if not sentplus:
+            eoffed = True
+            break
+        for token in sentplus:
+            if token.nontoken:
+                if token.nontoken == 'comment':
+                    pass
+                elif token.nontoken == 'eof':
+                    eoffed = True
+                    break
+                elif token.nontoken == 'separator':
+                    sentences += 1
+                elif token.nontoken == 'error':
+                    print("Unrecognisable line:", token.error, file=stderr)
                     exit(1)
-            surf = fields[1]
-            anals = omorfi.analyse(surf)
-            if not anals or len(anals) == 0 or (len(anals) == 1 and
-                                                'OOV' in anals[0]):
-                unknowns += 1
-                anals = omorfi.guess(surf)
-            if anals and len(anals) > 0:
-                if options.debug:
-                    debug_analyses_conllu(
-                        fields, index, surf, anals, options.outfile, options.hacks)
-                elif options.oracle:
-                    try_analyses_conllu(fields, index, surf, anals,
-                                        options.outfile, options.hacks)
                 else:
-                    print_analyses_conllu(index, surf, anals[0],
-                                          options.outfile, options.hacks)
-            else:
-                print("Failed:", fields)
+                    print("Error:", token, file=stderr)
+                    exit(1)
+                continue
+            elif not token.surf:
+                print("No surface in CONLL-U?", token, file=stderr)
                 exit(1)
-        elif line.startswith('#'):
-            print(line.strip(), file=options.outfile)
-            recognised = False
-            for rec in recognised_comments:
-                if line.startswith('# ' + rec):
-                    recognised = True
-            if not recognised and options.verbose:
-                print("Warning! Unrecognised comment line:", line, sep='\n')
-        elif not line or line.strip() == '':
-            # retain exactly 1 empty line between sents
-            print(file=options.outfile)
-            sentences += 1
-        else:
-            print("Error in conllu format: '", line, "'", file=stderr)
-            exit(1)
+            tokens += 1
+            omorfi.analyse(token)
+            if token.is_oov():
+                unknowns += 1
+                omorfi.guess(token)
+        if disamparsulator:
+            disamparsulator.linguisticate(sentplus)
+        print_analyses(sentplus, options)
     cpuend = process_time()
     realend = perf_counter()
     print("Tokens:", tokens, "Sentences:", sentences,

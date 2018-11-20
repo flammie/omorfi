@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""Command-line interface for omorfi analysis in VISL CG-3 formats."""
 
 # string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stdin, stdout, stderr
@@ -10,14 +10,10 @@ from sys import stdin, stdout, stderr
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import get_lemmas, \
-        get_vislcg_feats, get_line_tokens, get_line_tokens_vislcg, \
-        get_line_tokens_conllu, format_analyses_vislcg
+from omorfi import Omorfi
+from omorfi.formats.fileformats import next_conllu, next_vislcg, next_plaintext
+from omorfi.disamparsulate import Disamparsulator
 
-
-def print_analyses_vislcg3(surf, anals, outfile):
-    print(format_analyses_vislcg(surf, anals), file=outfile)
 
 def main():
     """Invoke a simple CLI analyser."""
@@ -32,9 +28,11 @@ def main():
                    help="print output into OUTFILE", type=FileType('w'))
     a.add_argument('-F', '--format', metavar="INFORMAT", default='text',
                    help="read input using INFORMAT tokenisation",
-                   choices=['text', 'vislcg', 'conllu'])
+                   choices=['text', 'vislcg', 'conllu', 'sentences'])
     a.add_argument('-x', '--statistics', metavar="STATFILE", dest="statfile",
                    help="print statistics to STATFILE", type=FileType('w'))
+    a.add_argument('--not-rules', metavar="RULEFILE", type=open,
+                   help="read non-rules from RULEFILE")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     if options.analyser:
@@ -44,6 +42,12 @@ def main():
     else:
         print("analyser is required to vislcg", file=stderr)
         exit(4)
+    disamparsulator = None
+    if options.not_rules:
+        if options.verbose:
+            print("Reading rulestuff", options.not_rules.name)
+        disamparsulator = Disamparsulator()
+        disamparsulator.frobblesnizz(options.not_rules)
     if not options.infile:
         options.infile = stdin
     if options.verbose:
@@ -60,52 +64,50 @@ def main():
     # statistics
     realstart = perf_counter()
     cpustart = process_time()
-    tokens = 0
+    tokencount = 0
     unknowns = 0
-    last = None
-    for line in options.infile:
-        surfs = []
+    eoffed = False
+    while not eoffed:
         if options.format == 'vislcg':
-            surfs = get_line_tokens_vislcg(line, last)
+            tokens = next_vislcg(options.infile)
         elif options.format == 'text':
-            surfs = get_line_tokens(line, omorfi)
+            tokens = next_plaintext(options.infile)
         elif options.format == 'conllu':
-            surfs = get_line_tokens_conllu(line, last)
+            tokens = next_conllu(options.infile)
         else:
             print("input format missing implementation", options.format,
                   file=stderr)
             exit(2)
-        for surf in surfs:
-            if 'conllu_form' in surf:
-                # skip conllu special forms in input for now:
-                # (ellipsis and MWE magics)
-                continue
-            elif 'surf' in surf:
-                tokens += 1
-                anals = omorfi.analyse(surf)
-                if len(anals) == 0 or (len(anals) == 1 and
-                                       'UNKNOWN' in anals[0]['anal']):
+        if not tokens:
+            break
+        for token in tokens:
+            if token.surf:
+                tokencount += 1
+                omorfi.analyse(token)
+                if token.is_oov():
                     unknowns += 1
-                    anals = omorfi.guess(surf)
-                print_analyses_vislcg3(surf, anals, options.outfile)
-            elif 'comment' in surf:
-                if surf['comment'].startswith(';') or \
-                       surf['comment'].startswith('\t'):
-                    continue
-                else:
-                    print(surf['comment'], file=options.outfile)
-            elif 'error' in surf:
-                print(surf['error'], file=stderr)
+                    omorfi.guess(token)
+            elif token.error or token.nontoken:
+                pass
+            else:
+                print("Unrecognised", token, file=stderr)
                 exit(2)
-            last = surf
+        if disamparsulator:
+            disamparsulator.linguisticate(tokens)
+        for token in tokens:
+            if token.nontoken and token.nontoken == "eof":
+                eoffed = True
+                break
+            print(token.printable_vislcg(), file=options.outfile)
     cpuend = process_time()
     realend = perf_counter()
-    print("# Tokens:", tokens, "\n# Unknown:", unknowns,
-          unknowns / tokens * 100, "%", file=options.statfile)
+    print("# Tokens:", tokencount, "\n# Unknown:", unknowns,
+          unknowns / tokencount * 100 if tokencount > 0 else 0, "%",
+          file=options.statfile)
     print("# CPU time:", cpuend - cpustart,
           "\n# Real time:", realend - realstart,
           file=options.statfile)
-    print("# Tokens per timeunit:", tokens / (realend - realstart),
+    print("# Tokens per timeunit:", tokencount / (realend - realstart),
           file=options.statfile)
     exit(0)
 

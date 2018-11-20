@@ -20,11 +20,11 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .error_logging import fail_formatting_missing_for
+from ..error_logging import fail_formatting_missing_for
 from .formatter import Formatter
 from .no_tags_formatter import NoTagsFormatter
-from .settings import optional_hyphen, word_boundary
-from .string_manglers import lexc_escape
+from ..settings import optional_hyphen, word_boundary
+from ..string_manglers import lexc_escape
 
 
 class LabeledSegmentsFormatter(Formatter):
@@ -328,7 +328,7 @@ class LabeledSegmentsFormatter(Formatter):
         ## verbosity
         self.verbose = verbose
 
-    def stuff2lexc(self, stuff, stem):
+    def stuff2lexc(self, stuff, _):
         """Convert omorfi analysis into segment labels
 
         @return lexc-formatted string of labeled segments
@@ -380,7 +380,8 @@ class LabeledSegmentsFormatter(Formatter):
             word_boundary, optional_hyphen)
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         if 'BLACKLIST' in wordmap['new_para']:
-            return "! ! %s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],
+            return "! ! %s:%s\t%s\t;\n" % (wordmap['analysis'],
+                                           wordmap['stub'],
                                            wordmap['new_para'])
         else:
             return "%s:%s\t%s\t;\n" % (wordmap['analysis'], wordmap['stub'],

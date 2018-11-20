@@ -29,18 +29,21 @@ store additional data. The additional data needs to be in name=value format.
 
 import argparse
 import csv
-from sys import exit, stderr
+from sys import stderr
 
-from omorfi.kotus_sanalista_formatter import format_wordmap_kotus_sanalista
+from omorfi.formats.kotus_sanalista_formatter import\
+    format_wordmap_kotus_sanalista
 
 
 # standard UI stuff
 
 
 def main():
+    """Command-line interface for kotus-sanalista conversion."""
     # initialise argument parser
     ap = argparse.ArgumentParser(
-        description="Convert Finnish dictionary TSV data into kotus sanalista XML")
+        description="Convert Finnish dictionary TSV data " +
+        "into kotus sanalista XML")
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
                     default=False,
                     help="do not print output to stdout while processing")
@@ -57,10 +60,12 @@ def main():
     ap.add_argument("--separator", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    metavar="COMMENT",
+                    help="skip lines starting with COMMENT that" +
                     "do not have SEPs")
     ap.add_argument("--strip", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP",
+                    help="strip STRIP from fields before using")
 
     args = ap.parse_args()
 
@@ -77,7 +82,7 @@ def main():
           file=args.output)
     print('<!--\nCopyright © Kotimaisten kielten tutkimuskeskus 2006',
           file=args.output)
-    print('© Joukahainen, Wiktionary, Finnwordnet, omorfi contributors 2014',
+    print('© Joukahainen, Wiktionary, Finnwordnet, omorfi contributors 2018',
           file=args.output)
     print('Omorfiin koostettu laajennettu nykysuomen sanalista',
           file=args.output)
@@ -97,7 +102,8 @@ def main():
         # for each line
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                                        quoting=quoting, quotechar=quotechar, escapechar='%', strict=True)
+                                        quoting=quoting, quotechar=quotechar,
+                                        escapechar='%', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if len(tsv_parts) < 18:

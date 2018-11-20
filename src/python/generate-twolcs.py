@@ -22,16 +22,19 @@ This script generates twolc files from database data.
 #
 
 import argparse
-from sys import exit
 
-from omorfi.twolc_formatter import (format_alphabet_twolc, format_copyright_twolc, format_definitions_twolc,
-                                    format_rules_twolc, format_sets_twolc)
+from omorfi.formats.twolc_formatter import (format_alphabet_twolc,
+                                            format_copyright_twolc,
+                                            format_definitions_twolc,
+                                            format_rules_twolc,
+                                            format_sets_twolc)
 
 
 # standard UI stuff
 
 
 def main():
+    """Command-line interface for twolc generation for omorfi."""
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Generate Xerox twolcs for Finnish")
@@ -41,11 +44,13 @@ def main():
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
                     help="print each step to stdout while processing")
     ap.add_argument("--output", "-o", type=argparse.FileType("w"),
-                    required=True, metavar="OFILE", help="write output to OFILE")
+                    required=True, metavar="OFILE",
+                    help="write output to OFILE")
     ap.add_argument("--ruleset", "-r", required=True, action="store",
                     metavar="RULES", help="compile RULES ruleset")
 
     def format_arg_type(v):
+        """Complex format types generator."""
         baseformats = ["omor", "apertium",
                        "giellatekno", "ftb3", "segments", "google"]
         extras = ["propers", "semantics", "ktnkav", "newparas", "taggerhacks"]

@@ -24,13 +24,14 @@ Validates databases
 import argparse
 import csv
 import re
-from sys import exit, stderr
+from sys import stderr
 
 
 # standard UI stuff
 
 
 def main():
+    """Command-line interface for regex checking."""
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Guess more data for Finnish TSV databases")
@@ -42,45 +43,13 @@ def main():
     ap.add_argument("--input", "-i", action="store", required=True,
                     metavar="IFILE", help="read data from IFILE")
     ap.add_argument("--version", "-V", action="version")
-    ap.add_argument("--fields", "-f", action="store", default=2,
-                    metavar="N", help="read N fields from master")
-    ap.add_argument("--regex-file", "-r", action="store", required=True,
-                    metavar="SFILE", help="read stem regexes from SFILE")
-    ap.add_argument("--separator", "-s", action="store", default="\t",
-                    metavar="SEP", help="use SEP as separator")
-    ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
-                    "do not have SEPs")
-    ap.add_argument("--strip", "-S", action="store",
-                    metavar="STRIP", help="strip STRIP characters")
     args = ap.parse_args()
-
-    if args.strip == '"' or args.strip == "'":
-        quoting = csv.QUOTE_ALL
-    else:
-        quoting = csv.QUOTE_NONE
-
     errors = False
-    # read regexes from paradign definition file
-    regexmap = dict()
-    with open(args.regex_file, 'r', newline='') as regexes:
-        re_reader = csv.DictReader(regexes, delimiter=args.separator,
-                                   quoting=quoting, escapechar='\\', strict=True)
-        for re_parts in re_reader:
-            if len(re_parts) < 2:
-                print("Must have at least N separators in stubbings; skipping",
-                      re_parts)
-                continue
-            key = re_parts['new_para']
-            if re_parts['suffix_regex']:
-                regexmap[key] = re_parts['suffix_regex']
-            else:
-                regexmap[key] = ''
-
     # read lemmas from lexemes file
     with open(args.input, 'r', newline='') as infile:
-        tsv_reader = csv.DictReader(infile, delimiter=args.separator,
-                                    quoting=quoting, escapechar='\\', strict=True)
+        tsv_reader = csv.DictReader(infile, delimiter='\t',
+                                    quoting=csv.QUOTE_NONE, escapechar='\\',
+                                    strict=True)
         linecount = 0
         for tsv_parts in tsv_reader:
             linecount += 1
@@ -91,17 +60,23 @@ def main():
                       "non-comment non-empty line; skipping:",
                       tsv_parts, file=stderr)
                 continue
-            if tsv_parts['new_para'] in regexmap:
-                if not re.match('^.*' + regexmap[tsv_parts['new_para']] +
-                                '$', tsv_parts['lemma']):
-                    print(tsv_parts['lemma'], '!~ /^.*',
-                          regexmap[tsv_parts['new_para']], '$/',
+            if not tsv_parts['suffix_regex']:
+                continue
+            if not re.match('^.*' + tsv_parts['suffix_regex'] + '$',
+                            tsv_parts['lemma']):
+                if tsv_parts['boundaries']:
+                    if not re.match('^.*' + tsv_parts['suffix_regex'] + '$',
+                                    tsv_parts['boundaries']):
+                        print(tsv_parts['boundaries'], ' !~ /^.*',
+                              tsv_parts['suffix_regex'], sep='', file=stderr)
+                        errors = True
+                    else:
+                        pass
+                else:
+                    print(tsv_parts['lemma'], ' !~ /^.*',
+                          tsv_parts['suffix_regex'], '$/',
                           sep='', file=stderr)
                     errors = True
-            else:
-                print(tsv_parts['new_para'], "not found in", args.regex_file,
-                        ':\n', tsv_parts, file=stderr)
-                errors = True
     if errors:
         print("you must fix database integrity or hack the scripts",
               "before continuing")

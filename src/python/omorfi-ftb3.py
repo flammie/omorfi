@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# string munging
-import re
 from argparse import ArgumentParser, FileType
 # CLI stuff
 from sys import stderr, stdin, stdout
@@ -10,47 +8,30 @@ from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 # omorfi
-from omorfi.omorfi import Omorfi
-from omorfi.token import format_xpos_ftb, get_lemmas, \
-        format_feats_ftb
+from omorfi import Omorfi, Token
 
 
-
-
-
-
-
-def try_analyses_ftb(original, wordn, surf, anals, outfile, hacks=None):
-    for anal in anals:
-        pos = format_xpos_ftb(anal)
+def try_analyses_ftb(original, wordn, token, outfile, hacks=None):
+    best = None
+    highest = -1
+    for i, anal in enumerate(token.analyses):
+        pos = anal.format_xpos_ftb()
+        feats = anal.format_feats_ftb()
+        lemmas = "#".join(anal.get_lemmas())
+        score = 0
         if pos == original[3]:
-            feats = format_feats_ftb(anal)
-            if feats == original[5]:
-                lemmas = "#".join(get_lemmas(anal))
-                if lemmas == original[2]:
-                    return print_analyses_ftb(wordn, surf, anal, outfile)
-    # no exact match found (re-try without lemma)
-    for anal in anals:
-        upos = format_xpos_ftb(anal)
-        if upos == original[3]:
-            feats = format_feats_ftb(anal)
-            if feats == original[5]:
-                return print_analyses_ftb(wordn, surf, anal, outfile)
-    # and re-try without feats
-    for anal in anals:
-        upos = format_xpos_ftb(anal)
-        if upos == original[3]:
-            return print_analyses_ftb(wordn, surf, anal, outfile)
-    return print_analyses_ftb(wordn, surf, anals[0], outfile)
+            score += 10
+        if feats == original[5]:
+            score += 10
+        if lemmas == original[2]:
+            score += 10
+        if score > highest:
+            best = i
+    print(token.printable_ftb3(best), file=outfile)
 
 
-def print_analyses_ftb(wordn, surf, anal, outfile, hacks=None):
-    pos = format_xpos_ftb(anal)
-    print(wordn, surf, "#".join(get_lemmas(anal)),
-          pos,
-          pos,
-          format_feats_ftb(anal),
-          "_", "_", "_", "_", sep="\t", file=outfile)
+def print_analyses_ftb(wordn, token, outfile, hacks=None):
+    print(token.printable_ftb3(), file=outfile)
 
 
 def main():
@@ -95,8 +76,6 @@ def main():
         print("writing to", options.outfile.name)
     if not options.statfile:
         options.statfile = stdout
-    lexprobs = None
-    tagprobs = None
 
     if options.frequencies:
         with open(options.frequencies + '/lexemes.freqs') as lexfile:
@@ -120,22 +99,16 @@ def main():
             except ValueError:
                 print("Cannot figure out token index", fields[0], file=stderr)
                 exit(1)
-            surf = fields[1]
-            anals = omorfi.analyse(surf)
-            if not anals or len(anals) == 0 or (len(anals) == 1 and
-                                                'OOV' in anals[0]):
+            token = Token(fields[1])
+            token.pos = int(fields[0])
+            omorfi.analyse(token)
+            if token.is_oov():
                 unknowns += 1
-                anals = omorfi.guess(surf)
-            if anals and len(anals) > 0:
-                if options.oracle:
-                    try_analyses_ftb(fields, index, surf, anals,
-                                        options.outfile)
-                else:
-                    print_analyses_ftb(index, surf, anals[0],
-                                          options.outfile)
+                omorfi.guess(token)
+            if options.oracle:
+                try_analyses_ftb(fields, index, token, options.outfile)
             else:
-                print("Failed:", fields)
-                exit(1)
+                print_analyses_ftb(index, token, options.outfile)
         elif line.startswith('<') and line.rstrip().endswith('>'):
             print(line.strip(), file=options.outfile)
         elif not line or line.strip() == '':

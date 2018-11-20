@@ -19,10 +19,12 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
+from ..error_logging import (fail_formatting_missing_for, fail_guess_because,
+                             just_fail)
 from .formatter import Formatter
-from .settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
-from .string_manglers import lexc_escape
+from ..settings import (deriv_boundary, morph_boundary, optional_hyphen,
+                        word_boundary)
+from ..string_manglers import lexc_escape
 
 
 class Ftb3Formatter(Formatter):
@@ -505,17 +507,19 @@ class Ftb3Formatter(Formatter):
         wordmap['stub'] = lexc_escape(
             wordmap['stub'].replace(word_boundary, optional_hyphen))
         wordmap['analysis'] = "%s" % (
-            lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#') + '←<Del>'))
+            lexc_escape(wordmap['bracketstub'].replace(word_boundary, '#') +
+                        '←<Del>'))
         if (wordmap['pos'] == 'ACRONYM' and (len(wordmap['stub']) == 1 and
-                                             not wordmap['stub'].isalpha())) or wordmap['stub'] == '§§':
+                                             not wordmap['stub'].isalpha())) \
+                or wordmap['stub'] == '§§':
             wordmap['analysis'] += self.stuff2lexc('PUNCTUATION')
         elif wordmap['pos'] in ['NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN',
                                 'NUMERAL', 'ACRONYM', 'PUNCTUATION', 'SUFFIX']:
             wordmap['analysis'] += self.stuff2lexc(wordmap['pos'])
         elif wordmap['pos'] == 'CONJUNCTIONVERB':
             if wordmap['lemma'] == 'eikä':
-                wordmap['analysis'] = wordmap['lemma'] + self.stuff2lexc('CONJ') + \
-                    self.stuff2lexc('Nneg')
+                wordmap['analysis'] = wordmap['lemma'] + \
+                    self.stuff2lexc('CONJ') + self.stuff2lexc('Nneg')
             else:
                 wordmap['analysis'] += self.stuff2lexc('ADVERBIAL') + \
                     self.stuff2lexc('Nneg')
@@ -531,7 +535,8 @@ class Ftb3Formatter(Formatter):
             wordmap['analysis'] += self.stuff2lexc('NOUN')
         else:
             fail_guess_because(wordmap, [], ["PARTICLE", "PROPN",
-                                             'NOUN', 'VERB', 'ADJECTIVE', 'PRONOUN', 'NUMERAL',
+                                             'NOUN', 'VERB', 'ADJECTIVE',
+                                             'PRONOUN', 'NUMERAL',
                                              'ACRONYM', 'PUNCTUATION'],
                                "not in FTB3 known poses or particle!")
             exit(1)
@@ -567,7 +572,8 @@ class Ftb3Formatter(Formatter):
             retvals += ["%s:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
                                           wordmap['new_para'])]
         if wordmap['lemma'] in ['-', '–', '—', '(']:
-            retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" % (wordmap['analysis'], lex_stub,
+            retvals += ["%s%% %%>%%>%%>:%s\t%s\t;" % (wordmap['analysis'],
+                                                      lex_stub,
                                                       wordmap['new_para'])]
         return "\n".join(retvals)
 

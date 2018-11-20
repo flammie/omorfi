@@ -14,6 +14,8 @@ hfstlookup=@HLOOKUP@
 lookupflags="-x -t 15 -p"
 cgproc=@CGPROC@
 hfstospell=@HOSPELL@
+wget=@WGET@
+tar=@TAR@
 homeomorfidir="$HOME/.omorfi"
 localomorfidir0=.
 localomorfidir1=generated
@@ -210,7 +212,8 @@ function omorfi_vislcg() {
     if test -z "$omorfianalyser" ; then
         omorfi_find_help $1
     fi
-    python_wrap omorfi-vislcg.py -a $omorfianalyser
+    python_wrap omorfi-tokenise.py -a $omorfianalyser |\
+        python_wrap omorfi-vislcg.py -a $omorfianalyser
 }
 
 function omorfi_disambiguate_text() {

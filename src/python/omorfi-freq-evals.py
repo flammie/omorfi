@@ -9,10 +9,11 @@ from argparse import ArgumentParser, FileType
 from sys import stderr, stdout, stdin
 from time import perf_counter, process_time
 
-from omorfi.omorfi import Omorfi
-from omorfi.token import is_tokenlist_oov, format_feats_ftb, get_lemmas
+from omorfi import Omorfi, Token
+
 
 def main():
+    """Command-line interface for omorfi's sort | uniq -c tester."""
     a = ArgumentParser()
     a.add_argument('-a', '--analyser', metavar='FSAFILE', required=True,
                    help="load analyser from FSAFILE")
@@ -57,9 +58,15 @@ def main():
     full_matches = 0
     lemma_matches = 0
     anal_matches = 0
+    only_permuted = 0
+    only_rehashed = 0
     no_matches = 0
     no_results = 0
     lines = 0
+    # types
+    types_covered = 0
+    types_no_results = 0
+    types = 0
     # for make check target
     threshold = options.threshold
     realstart = perf_counter()
@@ -79,66 +86,92 @@ def main():
             lemma = fields[2]
             analysis = fields[3]
         lines += freq
+        types += 1
         if options.verbose:
             print(lines, '(', freq, ') ...', end='\r')
-        anals = omorfi.analyse(surf)
-        if not is_tokenlist_oov(anals):
+        token = Token(surf)
+        # pos 1 triggers acceptable detitlecasing
+        token.pos = 1
+        omorfi.analyse(token)
+        if token.is_oov():
+            omorfi.guess(token)
+        if not token.is_oov():
             covered += freq
+            types_covered += 1
         else:
             no_results += freq
-            print("OOV", surf, sep='\t', file=options.outfile)
+            types_no_results += 1
+            print(freq, "OOV", surf, sep='\t', file=options.outfile)
         found_anals = False
         found_lemma = False
-        for anal in anals:
+        rehashed = True
+        permuted = True
+        for anal in token.analyses:
             if options.format == 'ftb3.1':
-                anal_ftb3 = format_feats_ftb(anal)
-                lemma_ftb3 = '#'.join(get_lemmas(anal))
+                anal_ftb3 = ' '.join(anal.get_ftb_feats())
+                lemma_ftb3 = '#'.join(anal.get_lemmas())
                 # hacks ftb3:
                 analysis = analysis.replace(" >>>", "")
                 if analysis == anal_ftb3:
                     found_anals = True
-                    print("ANALHIT", analysis, anal_ftb3, file=options.outfile)
+                    permuted = False
                 elif set(anal_ftb3.split()) == set(analysis.split()):
                     found_anals = True
-                    print("PERMUTAHIT", analysis, anal_ftb3, file=options.outfile)
+                    print(freq, "PERMUTAHIT", analysis, anal_ftb3, sep='\t',
+                          file=options.outfile)
                 else:
-                    print("ANALMISS", analysis, anal_ftb3, file=options.outfile)
+                    print(freq, "ANALMISS", analysis, anal_ftb3, sep='\t',
+                          file=options.outfile)
                 if lemma == lemma_ftb3:
                     found_lemma = True
-                    print("LEMMAHIT", lemma, lemma_ftb3, file=options.outfile)
+                    rehashed = False
                 elif lemma.replace('#', '') == lemma_ftb3.replace('#', ''):
                     found_lemma = True
-                    print("LEMMARECOMP", lemma, lemma_ftb3, file=options.outfile)
+                    print(freq, "LEMMARECOMP", lemma, lemma_ftb3, sep='\t',
+                          file=options.outfile)
                 else:
-                    print("LEMMAMISS", lemma, lemma_ftb3, file=options.outfile)
+                    print(freq, "LEMMAMISS", lemma, lemma_ftb3, sep='\t',
+                          file=options.outfile)
         if options.format != 'coverage':
             if not found_anals and not found_lemma:
                 no_matches += freq
-                print("NOHITS!", surf, sep='\t', file=options.outfile)
+                print(freq, "NOHITS!", surf, sep='\t', file=options.outfile)
             elif found_anals and found_lemma:
-                print("HIT", surf, sep='\t', file=options.outfile)
                 full_matches += freq
             elif not found_anals:
                 anal_matches += freq
-                print("LEMMANOANAL", surf, sep='\t', file=options.outfile)
+                print(freq, "LEMMANOANAL", surf, sep='\t',
+                      file=options.outfile)
             elif not found_lemma:
                 lemma_matches += freq
-                print("ANALNOLEMMA", surf, sep='\t', file=options.outfile)
+                print(freq, "ANALNOLEMMA", surf, sep='\t',
+                      file=options.outfile)
             else:
                 print("Logical error, kill everyone")
                 exit(13)
+            if rehashed:
+                only_rehashed += freq
+            if permuted:
+                only_permuted += freq
     realend = perf_counter()
     cpuend = process_time()
     print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
     print("Lines", "Covered", "OOV", sep="\t", file=options.statfile)
-    print(lines, covered, lines-covered, sep="\t", file=options.statfile)
+    print(lines, covered, lines - covered, sep="\t", file=options.statfile)
     print(lines / lines * 100 if lines != 0 else 0,
           covered / lines * 100 if lines != 0 else 0,
-          (lines-covered) / lines * 100 if lines != 0 else 0,
+          (lines - covered) / lines * 100 if lines != 0 else 0,
+          sep="\t", file=options.statfile)
+    print("Types", "Covered", "OOV", sep="\t", file=options.statfile)
+    print(types, types_covered, types - types_covered, sep="\t",
+          file=options.statfile)
+    print(types / types * 100 if types != 0 else 0,
+          types_covered / types * 100 if types != 0 else 0,
+          (types - types_covered) / types * 100 if types != 0 else 0,
           sep="\t", file=options.statfile)
     if options.format == 'ftb3.1':
-        print("Lines", "Matches", "Lemma", "Anals", "Mismatch", "No results", sep="\t",
-              file=options.statfile)
+        print("Lines", "Matches", "Lemma", "Anals", "Mismatch",
+              "No results", sep="\t", file=options.statfile)
         print(lines, full_matches, lemma_matches, anal_matches, no_matches,
               no_results,
               sep="\t", file=options.statfile)
@@ -149,6 +182,12 @@ def main():
               no_matches / lines * 100 if lines != 0 else 0,
               no_results / lines * 100 if lines != 0 else 0,
               sep="\t", file=options.statfile)
+        print("Of which", "Tag permuations", "Lemma rehashing", sep='\t',
+              file=options.statfile)
+        print(lines / lines * 100 if lines != 0 else 0,
+              only_permuted / lines * 100 if lines != 0 else 0,
+              only_rehashed / lines * 100 if lines != 0 else 0, sep='\t',
+              file=options.statfile)
     if lines == 0:
         print("Needs more than 0 lines to determine something",
               file=stderr)
