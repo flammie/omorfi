@@ -18,20 +18,17 @@ The APIs are tied around concept of an omorfi object or handle, that can be
 used to load and apply the language models without dealing with too much of the
 FST internals. These are roughly the functionalities:
 
-* loading a model for specific task with specific file (recommended, probably
-  gonna be the more stable API)
-* loading all omorfi models from one of the default dirs ($prefix/share/omorfi,
-  current working dir, ...)
-* loading a model from automaton with standard name (e.g. given
-  ".../omorfi.analyse.hfst" loads an analyser)
+* loading a model for specific task from a specific file
 * applying a function supported by currently loaded model(s):
     * tokenise a multi-token string
     * analyse a token
-    * analyse a multi-token string as sentence
+    * analyse a multi-token sentence
+    * guess more analyses
     * check if word is OK without analysing
     * segment word into words, morphs or syllables
     * spell correction suggestions without context
     * ...
+* converting between different formats / getting printable information
 
 That is all.
 
@@ -60,41 +57,30 @@ also work on strings.
   * module omorfi:
     * class Omorfi:
       * init(self, verbosity)
-      * load\_filename(self, path)
-      * load\_from\_dir(self, path=None)
+      * load\_analyser(self, path)
       * tokenise(self, line)
       * analyse(self, token)
+      * guess(self, token)
       * ...
       * analyser: analysis automata
       * ...
-
-### load\_from\_dir(self, path=None) ##
-
-Loads omorfi automata into memory. If `path` is given it should point to the
-automaton, otherwise standard installation paths are tried, currently standard
-linux install paths are tried in order:
-
-  1. `/usr/local/share/omorfi/morphology.omor.hfst`
-  1. `/usr/share/omorfi/morphology.hfst`
-  1. `$HOME/.hfst/fi/morphology.omor.hfst`
-  1. `$HOME/.omorfi/morphology.omor.hfst`
-  1. `$(cwd)`/src/generated/
-  1. `$(cwd)`/generated/
-  1. `$(cwd)`/
-
-The last local look-around is because most of the time it is used from the git
-development directory anyways.
+    * class Token:
+      * get_nbest(self, i)
+      * printable_XXX(self, which="1best")
+    * class Analysis:
+      * printable_XXX(self)
 
 ### tokenise(self, string)
 
 Tokenises a string based on language models, with some punctuation-stripping
-heuristics. The result will be a list of token tuples.
+heuristics. The result will be a list of tokens.
 
-### analyse(self, token) ##
+### analyse(self, token)
 
 Look up `token` from morphological analyser(s) loaded. If `self.can_...case`
 do not evaluate to `False`, and the token cannot be analysed, the analysis
-will be retried with recasing. The results will be a list of token tuples.
+will be retried with recasing. Result will be provided as an ambiguous list of
+analyses.
 
 ## Java API
 
@@ -108,17 +94,12 @@ The Omorfi object holds the loaded models and can apply them to strings.
 The java code can perform minimal string munging.
 
 * Omorfi::Omorfi(): *construct empty omorfi holder.*
-* Omorfi::loadPath(String) *Load omorfi automaton from filename and guess
-  its use.*
-* Omorfi::loadAll(String) *load all recognisable automata in given path.*
-* Omorfi::loadAll() *load all automata in standard system locations.*
+* Omorfi::loadAnalyser(String) *Load omorfi analyser model.*
 * Omorfi::analyse(String) *Perform a simple morphological analysis
   lookup.* Performs case folding.
 * Omorfi::tokenise(String) *Perform tokenisation or split.*
-  If tokeniser is available, it is applied to input line and if result is
-  achieved, it is split to tokens according to tokenisation strategy and returned
-  as a list. If no tokeniser are present, or none give results, the line will be
-  tokenised using java's basic string functions.
+
+* * *
 
 ## Bash "API"
 
