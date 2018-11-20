@@ -1,27 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="18cm" height="15cm" viewBox="7 3 352 293" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="16cm" height="43cm" viewBox="7 3 314 853" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <rect style="fill: #ffffff" x="8.25" y="24.25" width="350" height="271"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="8.25" y="24.25" width="350" height="271"/>
-    <rect style="fill: #ffffff" x="8.25" y="4.25" width="50.2" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="8.25" y="4.25" width="50.2" height="20"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="10.25" y="18.25">omorfi</text>
+    <rect style="fill: #ffffff" x="8.25" y="24.25" width="311.502" height="830.75"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="8.25" y="24.25" width="311.502" height="830.75"/>
+    <rect style="fill: #ffffff" x="8.25" y="4.25" width="42.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="8.25" y="4.25" width="42.4" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="10.25" y="19.25">omorfi</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="20" y="40" width="302.6" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="20" y="40" width="302.6" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="171.3" y="59">Omorfi</text>
-    <rect style="fill: #ffffff" x="20" y="68" width="302.6" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="20" y="68" width="302.6" height="36"/>
+    <rect style="fill: #ffffff" x="20" y="40" width="253.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="20" y="40" width="253.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="146.6" y="59">Omorfi</text>
+    <rect style="fill: #ffffff" x="20" y="68" width="253.2" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="20" y="68" width="253.2" height="116"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="81.2">+analyser: HFST</text>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="97.2">+segmenter: HFST</text>
-    <rect style="fill: #ffffff" x="20" y="104" width="302.6" height="84"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="20" y="104" width="302.6" height="84"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="117.2">+tokenise(text:string): list of tokens</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="133.2">+load_analyser()</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="149.2">+analyse(token): list of tokens</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="165.2">+load_segmenter()</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="181.2">+segment(token): list of tokens</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="113.2">+tokeniser: HFST</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="129.2">+labelsegmenter: HFST</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="145.2">+lemmatiser: HFST</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="161.2">+udpiper: UDPipe</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="177.2">+can_recase: bool</text>
+    <rect style="fill: #ffffff" x="20" y="184" width="253.2" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="20" y="184" width="253.2" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="197.2">+tokenise(text:string): list of tokens</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="213.2">+load_analyser()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="229.2">+analyse(token): list of analysis</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="245.2">+load_segmenter()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="23" y="261.2">+segment(token): list of analysis</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="28.05" y="281" width="214.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="28.05" y="281" width="214.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="135.45" y="300">Token</text>
+    <rect style="fill: #ffffff" x="28.05" y="309" width="214.8" height="148"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="28.05" y="309" width="214.8" height="148"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="322.2">+pos: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="338.2">+surf: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="354.2">+analyses: set of Analysis</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="370.2">+nontoken: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="386.2">+comment: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="402.2">+error: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="418.2">+spacebefore: bool</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="434.2">+spaceafter: bool</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="450.2">+gold: str</text>
+    <rect style="fill: #ffffff" x="28.05" y="457" width="214.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="28.05" y="457" width="214.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="31.05" y="470.2">+get_nbest(n:int): list of token</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="41" y="498" width="157.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="41" y="498" width="157.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="119.6" y="517">Analysis</text>
+    <rect style="fill: #ffffff" x="41" y="526" width="157.2" height="148"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="41" y="526" width="157.2" height="148"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="539.2">+analsurf: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="555.2">+raw: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="571.2">+weight: float</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="587.2">+rawtype: str = omor</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="603.2">+misc: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="619.2">+upos: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="635.2">+ufeats: dict(str-&gt;str)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="651.2">+udepname: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="44" y="667.2">+udephead: int</text>
+    <rect style="fill: #ffffff" x="41" y="674" width="157.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="41" y="674" width="157.2" height="8"/>
   </g>
 </svg>
