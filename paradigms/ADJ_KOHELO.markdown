@@ -4,17 +4,17 @@ paradigm: ADJ_KOHELO
 ---
 ### ` ADJ_KOHELO `
 
-The o final trisyllabic stems are in class described here, and the old dictionaries used ². 
-* kotus_tn: 2
-* upos: ADJ
-* suffix_regex: o
-* kotus_av: None
+The o final trisyllabic stems are in class described here, and the old dictionaries used ².
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: o
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 2
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

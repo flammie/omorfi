@@ -5,16 +5,16 @@ paradigm: NOUN_APE
 ### ` NOUN_APE `
 
 Dictionary class 48 back pe
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: e
-* kotus_av: B
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: e

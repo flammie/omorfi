@@ -4,17 +4,17 @@ paradigm: PROPN_TÖLPÄKÖT
 ---
 ### ` PROPN_TÖLPÄKÖT `
 
-
-* kotus_tn: 4
-* upos: PROPN
-* suffix_regex: köt
-* kotus_av: A
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: öt
+* suffix_regex: köt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 4
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: öt

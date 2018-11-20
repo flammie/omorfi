@@ -7,5 +7,5 @@ lexeme: HTML
 
 Hyper-Text Markup Language
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  omorfi|joukahainen
 

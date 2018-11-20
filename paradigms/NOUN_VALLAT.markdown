@@ -5,16 +5,16 @@ paradigm: NOUN_VALLAT
 ### ` NOUN_VALLAT `
 
 Dictionary class xxx lat plurale tantum
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: llat
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: lat
+* suffix_regex: llat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: lat

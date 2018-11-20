@@ -4,17 +4,17 @@ paradigm: PROPN_NIEMET
 ---
 ### ` PROPN_NIEMET `
 
-
-* kotus_tn: 25
-* upos: PROPN
-* suffix_regex: et
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*et
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 25
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

@@ -5,16 +5,16 @@ paradigm: PROPN_KANNEL
 ### ` PROPN_KANNEL `
 
 Dictionary class 49 nel
-* kotus_tn: 49
-* upos: PROPN
-* suffix_regex: nnel
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nel
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnel
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 49
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nel

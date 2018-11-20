@@ -5,16 +5,16 @@ paradigm: ADJ_VIRKKU
 ### ` ADJ_VIRKKU `
 
 The quantitative k gradations with u bisyllabic o stem use class described here, and old dictionaries use classes ¹⁻A and ¹⁻D.
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: kku
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ku
+* suffix_regex: kku
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ku

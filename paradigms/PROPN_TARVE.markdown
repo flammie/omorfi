@@ -5,16 +5,16 @@ paradigm: PROPN_TARVE
 ### ` PROPN_TARVE `
 
 Dictionary class 48 back ve
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: ve
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ve
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ve
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: ve

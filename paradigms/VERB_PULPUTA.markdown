@@ -4,17 +4,17 @@ paradigm: VERB_PULPUTA
 ---
 ### ` VERB_PULPUTA `
 
-Dictionary class74 back 0~p 
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: puta
-* kotus_av: B
+Dictionary class74 back 0~p
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: uta
+* suffix_regex: puta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: uta

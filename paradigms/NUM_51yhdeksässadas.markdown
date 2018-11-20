@@ -5,16 +5,16 @@ paradigm: NUM_51yhdeksässadas
 ### ` NUM_51yhdeksässadas `
 
 Optimisation hack for exceptional compound ’yhdeksässadas’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: yhdeksässadas
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ssadas
+* suffix_regex: yhdeksässadas
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ssadas

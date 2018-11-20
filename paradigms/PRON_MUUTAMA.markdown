@@ -5,16 +5,16 @@ paradigm: PRON_MUUTAMA
 ### ` PRON_MUUTAMA `
 
 inflects like NOUN_ASEMA
-* kotus_tn: 10
-* upos: PRON
-* suffix_regex: muutama
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: muutama
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: a
+* kotus_tn: 10
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

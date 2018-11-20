@@ -5,16 +5,16 @@ paradigm: PROPN_PIPPALOT
 ### ` PROPN_PIPPALOT `
 
 Dictionary class 3iot plurale tantum
-* kotus_tn: 2
-* upos: PROPN
-* suffix_regex: ot
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: ot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 2
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

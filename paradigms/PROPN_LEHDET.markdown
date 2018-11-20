@@ -5,16 +5,16 @@ paradigm: PROPN_LEHDET
 ### ` PROPN_LEHDET `
 
 Dictionary class 7 front t~d plurale tantum
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: det
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: det
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*det
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: det

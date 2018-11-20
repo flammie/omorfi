@@ -5,16 +5,16 @@ paradigm: NOUN_POIUT
 ### ` NOUN_POIUT `
 
 exceptional stuff
-* kotus_tn: 43
-* upos: NOUN
-* suffix_regex: ut
-* kotus_av: D
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ut
+* suffix_regex: ut
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 43
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: ut

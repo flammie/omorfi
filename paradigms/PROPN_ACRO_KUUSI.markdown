@@ -4,17 +4,17 @@ paradigm: PROPN_ACRO_KUUSI
 ---
 ### ` PROPN_ACRO_KUUSI `
 
-
-* kotus_tn: 0
-* upos: PROPN
-* suffix_regex: 6
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: 6
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

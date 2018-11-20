@@ -5,16 +5,16 @@ paradigm: NOUN_PENGER
 ### ` NOUN_PENGER `
 
 Dictionary class 49 ger
-* kotus_tn: 49
-* upos: NOUN
-* suffix_regex: nger
-* kotus_av: G
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ger
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nger
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 49
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ger

@@ -7,5 +7,5 @@ lexeme: XML
 
 Extensible Markup Language
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

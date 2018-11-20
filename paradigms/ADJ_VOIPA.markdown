@@ -5,16 +5,16 @@ paradigm: ADJ_VOIPA
 ### ` ADJ_VOIPA `
 
 pa:va
-* kotus_tn: 10
-* upos: ADJ
-* suffix_regex: pa
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pa
+* suffix_regex: pa
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 10
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pa

@@ -5,16 +5,16 @@ paradigm: NUM_NELJÄ
 ### ` NUM_NELJÄ `
 
 Dictionary class10
-* kotus_tn: 10
-* upos: NUM
-* suffix_regex: neljä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: neljä
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

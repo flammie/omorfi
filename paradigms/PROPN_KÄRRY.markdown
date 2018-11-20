@@ -5,16 +5,16 @@ paradigm: PROPN_KÄRRY
 ### ` PROPN_KÄRRY `
 
 Dictionary class 1y
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: [YÜyÿü]
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [YÜyÿü]
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

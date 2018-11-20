@@ -5,16 +5,16 @@ paradigm: PROPN_SALPA
 ### ` PROPN_SALPA `
 
 Dictionary class 9 p~v
-* kotus_tn: 9
-* upos: PROPN
-* suffix_regex: pa
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pa
+* suffix_regex: pa
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pa

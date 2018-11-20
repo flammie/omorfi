@@ -5,16 +5,16 @@ paradigm: NOUN_TAIVAL
 ### ` NOUN_TAIVAL `
 
 Dictionary class 49 val
-* kotus_tn: 49
-* upos: NOUN
-* suffix_regex: val
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: val
+* suffix_regex: val
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 49
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: val

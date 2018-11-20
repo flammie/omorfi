@@ -5,16 +5,16 @@ paradigm: NOUN_HOKSOTTIMET
 ### ` NOUN_HOKSOTTIMET `
 
 Dictionary class 31 tin plurale tantum
-* kotus_tn: 33
-* upos: NOUN
-* suffix_regex: et
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: et

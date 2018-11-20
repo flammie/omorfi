@@ -4,17 +4,17 @@ paradigm: PROPN_KARRAT
 ---
 ### ` PROPN_KARRAT `
 
-
-* kotus_tn: 9
-* upos: PROPN
-* suffix_regex: rrat
-* kotus_av: K
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: rat
+* suffix_regex: rrat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: rat

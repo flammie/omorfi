@@ -4,17 +4,17 @@ paradigm: PROPN_LINGOT
 ---
 ### ` PROPN_LINGOT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ngot
-* kotus_av: G
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: got
+* suffix_regex: ngot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: got

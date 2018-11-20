@@ -4,17 +4,17 @@ paradigm: PROPN_RUOPPAAT
 ---
 ### ` PROPN_RUOPPAAT `
 
-
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: ppaat
-* kotus_av: B
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: paat
+* suffix_regex: ppaat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: paat

@@ -4,17 +4,17 @@ paradigm: NOUN_RUOKA
 ---
 ### ` NOUN_RUOKA `
 
-Like NOUN_LOKA but allows exceptional common spelling ruo’an ~ ruoan ̃~ ruuan 
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: uoka
-* kotus_av: D
+Like NOUN_LOKA but allows exceptional common spelling ruo’an ~ ruoan ̃~ ruuan
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: oka
+* suffix_regex: uoka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: oka

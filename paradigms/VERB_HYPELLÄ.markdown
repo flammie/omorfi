@@ -5,16 +5,16 @@ paradigm: VERB_HYPELLÄ
 ### ` VERB_HYPELLÄ `
 
 Dictionary class67 front l 0p
-* kotus_tn: 67
-* upos: VERB
-* suffix_regex: pellä
-* kotus_av: B
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ellä
+* suffix_regex: pellä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 67
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: ellä

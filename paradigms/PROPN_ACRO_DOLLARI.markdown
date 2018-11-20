@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_DOLLARI
 ### ` PROPN_ACRO_DOLLARI `
 
 The acronyms ending in a word that inflects like ‘dollari’ with i:e type stem
-* kotus_tn: 0
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

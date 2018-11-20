@@ -7,5 +7,5 @@ lexeme: jos
 
 if, as sconj, "jos voisit jäädä", see VISK § 818
 * UPOS:  SCONJ
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 

@@ -5,16 +5,16 @@ paradigm: NOUN_HAPPI
 ### ` NOUN_HAPPI `
 
 Dictionary class 7 back p~0
-* kotus_tn: 7
-* upos: NOUN
-* suffix_regex: ppi
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ppi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pi

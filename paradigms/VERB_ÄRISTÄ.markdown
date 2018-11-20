@@ -5,16 +5,16 @@ paradigm: VERB_ÄRISTÄ
 ### ` VERB_ÄRISTÄ `
 
 Dictionary class66 front
-* kotus_tn: 66
-* upos: VERB
-* suffix_regex: stä
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tä
+* suffix_regex: stä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 66
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: tä

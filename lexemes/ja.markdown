@@ -7,7 +7,7 @@ lexeme: ja
 
 and, as cconj, "kissoja ja koiria", see VISK § 817
 * UPOS:  CCONJ
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 
 
 ## ja (alternate reading 2 )

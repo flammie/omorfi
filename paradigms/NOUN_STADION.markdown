@@ -5,16 +5,16 @@ paradigm: NOUN_STADION
 ### ` NOUN_STADION `
 
 Dictionary class 6 back no i
-* kotus_tn: 6
-* upos: NOUN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: 
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 6
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

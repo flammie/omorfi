@@ -4,17 +4,17 @@ paradigm: VERB_KUMMUTA
 ---
 ### ` VERB_KUMMUTA `
 
-Dictionary class74 back m~p 
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: mmuta
-* kotus_av: H
+Dictionary class74 back m~p
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: muta
+* suffix_regex: mmuta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: H
+* deletion: muta

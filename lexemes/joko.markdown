@@ -7,7 +7,7 @@ lexeme: joko
 
 either, paired with tai in either-or structure, rarer sub-ordinating reading, see VISK § 815
 * UPOS:  SCONJ
-* Added from:  omorfi
+* Added from:  omorfi|joukahainen
 
 
 ## joko (alternate reading 2 )

@@ -4,17 +4,17 @@ paradigm: PROPN_JÄRVITAHDON
 ---
 ### ` PROPN_JÄRVITAHDON `
 
-
-* kotus_tn: 33
-* upos: PROPN
-* suffix_regex: don
-* kotus_av: F
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: don
+* suffix_regex: don
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: don

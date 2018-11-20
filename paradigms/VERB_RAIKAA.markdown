@@ -5,16 +5,16 @@ paradigm: VERB_RAIKAA
 ### ` VERB_RAIKAA `
 
 Dictionary class78 back
-* kotus_tn: 78
-* upos: VERB
-* suffix_regex: aa
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: aa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 78
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

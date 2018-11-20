@@ -7,7 +7,7 @@ lexeme: jotta
 
 so that, in order to, as sub-ordinating conjunction, "jotta pystyn valmistumaan",
 * UPOS:  SCONJ
-* Added from:  kotus
+* Added from:  kotus|joukahainen
 
 
 ## jotta (alternate reading 2 )

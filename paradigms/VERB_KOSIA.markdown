@@ -5,16 +5,16 @@ paradigm: VERB_KOSIA
 ### ` VERB_KOSIA `
 
 Dictionary class61 back
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: ia
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ia
+* suffix_regex: ia
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ia

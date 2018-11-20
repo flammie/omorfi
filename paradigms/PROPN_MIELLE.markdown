@@ -5,16 +5,16 @@ paradigm: PROPN_MIELLE
 ### ` PROPN_MIELLE `
 
 Dictionary class 48 front le
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: lle
-* kotus_av: I
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: le
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*lle
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: le

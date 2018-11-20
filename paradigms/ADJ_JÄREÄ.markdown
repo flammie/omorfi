@@ -4,17 +4,17 @@ paradigm: ADJ_JÄREÄ
 ---
 ### ` ADJ_JÄREÄ `
 
-ä:0 for 
-* kotus_tn: 15
-* upos: ADJ
-* suffix_regex: eä
-* kotus_av: None
+ä:0 for
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: eä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 15
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

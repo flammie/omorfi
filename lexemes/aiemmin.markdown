@@ -7,5 +7,5 @@ lexeme: aiemmin
 
 usually seen as adverb (earlier), but can be analysed as instructive of the adjective *aiempi* (early)
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 

@@ -5,16 +5,16 @@ paradigm: PRON_USEIMMAT
 ### ` PRON_USEIMMAT `
 
 partially inflects like NOUN_VANHIN
-* kotus_tn: 36
-* upos: PRON
-* suffix_regex: useimmat
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: mmat
+* suffix_regex: useimmat
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 36
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: mmat

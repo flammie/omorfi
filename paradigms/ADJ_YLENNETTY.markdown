@@ -5,16 +5,16 @@ paradigm: ADJ_YLENNETTY
 ### ` ADJ_YLENNETTY `
 
 The quantitative gradation of t before y is in class described here, which was ¹⁻C in the dictionary. The u stems with quantitative t gradation are commonest with nut participle passive derivation’s front (-tty).
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: tty
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ty
+* suffix_regex: tty
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: C
+* deletion: ty

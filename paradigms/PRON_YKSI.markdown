@@ -5,16 +5,16 @@ paradigm: PRON_YKSI
 ### ` PRON_YKSI `
 
 inflects like NUM_YKSI
-* kotus_tn: 31
-* upos: PRON
-* suffix_regex: yksi
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ksi
+* suffix_regex: yksi
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 31
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ksi

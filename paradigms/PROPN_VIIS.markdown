@@ -4,17 +4,17 @@ paradigm: PROPN_VIIS
 ---
 ### ` PROPN_VIIS `
 
-
-* kotus_tn: 27
-* upos: PROPN
-* suffix_regex: s
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: s
+* suffix_regex: s
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 27
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: s

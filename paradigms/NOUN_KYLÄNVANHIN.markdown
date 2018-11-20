@@ -4,17 +4,17 @@ paradigm: NOUN_KYLÄNVANHIN
 ---
 ### ` NOUN_KYLÄNVANHIN `
 
-
-* kotus_tn: 36
-* upos: NOUN
-* suffix_regex: n
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: n
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*n
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 36
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: n

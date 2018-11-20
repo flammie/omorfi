@@ -7,7 +7,7 @@ lexeme: päin
 
 adposition (towards) when can be attached to a partitive NP, otherwise noun form of *pää* (head)
 * UPOS:  ADP
-* Added from:  unihu
+* Added from:  finer
 * AdpType:  POSTPOSITION
 
 

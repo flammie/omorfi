@@ -5,16 +5,16 @@ paradigm: DET_SE
 ### ` DET_SE `
 
 determiner version of pronoun ‘se’
-* kotus_tn: 101
-* upos: DET
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: DET
 * stem_vowel: None
+* kotus_tn: 101
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: e

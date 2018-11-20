@@ -4,17 +4,17 @@ paradigm: PROPN_KAARRET
 ---
 ### ` PROPN_KAARRET `
 
-
-* kotus_tn: 44
-* upos: PROPN
-* suffix_regex: rret
-* kotus_av: K
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ret
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rret
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 44
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: ret

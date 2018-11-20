@@ -4,17 +4,17 @@ paradigm: PROPN_SILMÄKKEET
 ---
 ### ` PROPN_SILMÄKKEET `
 
-
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: keet
-* kotus_av: A
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: keet
+* suffix_regex: keet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: keet

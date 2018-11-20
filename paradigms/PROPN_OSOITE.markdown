@@ -4,17 +4,17 @@ paradigm: PROPN_OSOITE
 ---
 ### ` PROPN_OSOITE `
 
-
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: e
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: e

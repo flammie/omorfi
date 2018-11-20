@@ -5,16 +5,16 @@ paradigm: NOUN_PÖNTTÖ
 ### ` NOUN_PÖNTTÖ `
 
 Dictionary class 1tö
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: ttö
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tö
+* suffix_regex: ttö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tö

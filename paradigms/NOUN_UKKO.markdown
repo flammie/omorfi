@@ -5,16 +5,16 @@ paradigm: NOUN_UKKO
 ### ` NOUN_UKKO `
 
 Dictionary class 1ko
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: kko
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ko
+* suffix_regex: kko
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ko

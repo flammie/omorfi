@@ -5,16 +5,16 @@ paradigm: ADJ_VIHANTA
 ### ` ADJ_VIHANTA `
 
 The ta : na stem with a comparative and j plurals is described here, and the dictionary class is ⁹⁻J.
-* kotus_tn: 9
-* upos: ADJ
-* suffix_regex: nta
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: nta
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 9
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ta

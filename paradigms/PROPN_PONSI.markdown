@@ -5,16 +5,16 @@ paradigm: PROPN_PONSI
 ### ` PROPN_PONSI `
 
 Dictionary class 27 back t~n
-* kotus_tn: 28
-* upos: PROPN
-* suffix_regex: nsi
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: si
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nsi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 28
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: si

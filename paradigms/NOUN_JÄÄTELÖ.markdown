@@ -5,16 +5,16 @@ paradigm: NOUN_JÄÄTELÖ
 ### ` NOUN_JÄÄTELÖ `
 
 Dictionary class 2ö
-* kotus_tn: 2
-* upos: NOUN
-* suffix_regex: ö
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: ö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 2
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

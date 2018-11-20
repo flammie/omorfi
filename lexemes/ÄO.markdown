@@ -7,5 +7,5 @@ lexeme: ÄO
 
 Älykkyysosamäärä
 * UPOS:  NOUN
-* Added from:  kotus
+* Added from:  kotus|joukahainen
 

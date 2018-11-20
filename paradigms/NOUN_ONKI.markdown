@@ -5,16 +5,16 @@ paradigm: NOUN_ONKI
 ### ` NOUN_ONKI `
 
 Dictionary class 7 back k~g
-* kotus_tn: 7
-* upos: NOUN
-* suffix_regex: ki
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ki
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ki

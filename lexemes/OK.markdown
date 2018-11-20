@@ -7,5 +7,5 @@ lexeme: OK
 
 not pronounced in words
 * UPOS:  NOUN
-* Added from:  kotus
+* Added from:  kotus|joukahainen
 

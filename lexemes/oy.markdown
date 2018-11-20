@@ -7,5 +7,5 @@ lexeme: oy
 
 Osake-Yhtiö
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

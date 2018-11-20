@@ -5,16 +5,16 @@ paradigm: VERB_HYLKIÄ
 ### ` VERB_HYLKIÄ `
 
 Dictionary class61 back k~j
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: kiä
-* kotus_av: L
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kiä
+* suffix_regex: kiä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: L
+* deletion: kiä

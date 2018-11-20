@@ -4,17 +4,17 @@ paradigm: PROPN_VELJET
 ---
 ### ` PROPN_VELJET `
 
-
-* kotus_tn: 1007
-* upos: PROPN
-* suffix_regex: eljet
-* kotus_av: L
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: jet
+* suffix_regex: eljet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1007
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: L
+* deletion: jet

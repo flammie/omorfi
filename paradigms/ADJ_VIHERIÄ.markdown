@@ -5,16 +5,16 @@ paradigm: ADJ_VIHERIÄ
 ### ` ADJ_VIHERIÄ `
 
 archaic iä:iö thing
-* kotus_tn: 15
-* upos: ADJ
-* suffix_regex: iä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: iä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 15
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

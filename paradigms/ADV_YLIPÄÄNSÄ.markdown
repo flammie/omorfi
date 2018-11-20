@@ -5,16 +5,16 @@ paradigm: ADV_YLIPÄÄNSÄ
 ### ` ADV_YLIPÄÄNSÄ `
 
 None
-* kotus_tn: 99
-* upos: ADV
-* suffix_regex: .
-* kotus_av: None
+* clitics: True
 * grade_dir: False
 * harmony: front
-* possessive: obligatory
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: True
-* pos: PARTICLE
+* possessive: obligatory
+* upos: ADV
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

@@ -4,17 +4,17 @@ paradigm: PROPN_YLÖÖ
 ---
 ### ` PROPN_YLÖÖ `
 
-
-* kotus_tn: 17
-* upos: PROPN
-* suffix_regex: öö
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ö
+* suffix_regex: öö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ö
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ö

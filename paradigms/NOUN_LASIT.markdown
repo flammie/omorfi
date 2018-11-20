@@ -5,16 +5,16 @@ paradigm: NOUN_LASIT
 ### ` NOUN_LASIT `
 
 Dictionary class xxx sit plurale tantum
-* kotus_tn: 5
-* upos: NOUN
-* suffix_regex: t
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*t
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

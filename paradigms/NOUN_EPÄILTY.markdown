@@ -5,16 +5,16 @@ paradigm: NOUN_EPÄILTY
 ### ` NOUN_EPÄILTY `
 
 Dictionary class 1lty
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: lty
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ty
+* suffix_regex: lty
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: ty

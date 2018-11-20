@@ -5,16 +5,16 @@ paradigm: NUM_51yhdeskolmatta
 ### ` NUM_51yhdeskolmatta `
 
 Optimisation hack for exceptional compound ’yhdeskolmatta’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: yhdeskolmatta
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: skolmatta
+* suffix_regex: yhdeskolmatta
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: skolmatta

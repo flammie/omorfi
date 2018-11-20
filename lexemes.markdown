@@ -22,6 +22,7 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [...](lexemes/STOPSTOPSTOP.html) |  ellipsis |
 | ['](lexemes/SQUO.html) |  ASCII single quotation mark, still most common single quotation |
 | [’](lexemes/’.html) |  left single quotation in 9-shape, common and recommended  **or**  right single quotation in 9-shape, common and recommended |
+| [\"](lexemes/BACKSLASHDQUO.html) |  ASCII double quotation mark, still most common double quotation  **or**  ASCII double quotation mark, still most common double quotation |
 | [”](lexemes/”.html) |  left double quotation in 9-shape, common and recommended  **or**  right double quotation in 9-shape, common and recommended |
 | [(](lexemes/LBR.html) |  left bracket |
 | [)](lexemes/RBR.html) |  right bracket |
@@ -47,10 +48,12 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [aiemmin](lexemes/aiemmin.html) |  usually seen as adverb (earlier), but can be analysed as instructive of the adjective *aiempi* (early) |
 | [aikaan](lexemes/aikaan.html) |  done, accomplished, verb complement kind of, e.g., "saada aikaan"  **or**  during (around), adposition with genitive complement, e.g., "sen aikaan" |
 | [aikana](lexemes/aikana.html) |  during (while), adposition with genitive complement, e.g., "sen aikana" |
-| [aina](lexemes/aina.html) |  adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions  **or**  always, as adverb, "aina mun pitää" |
+| [aina](lexemes/aina.html) |  REMOVED adposition (send an example sentence if you need it back)  **or**  always, as adverb, "aina mun pitää" |
 | [Aino](lexemes/Aino.html) |  This proper noun overlaps forms of very common *ainoa* "only". |
 | [Ainoa](lexemes/Ainoa.html) |  This proper noun overlaps very common *ainoa* "only". |
 | [ajallaan](lexemes/ajallaan.html) |  adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions  **or**  in time, as adverb, "yritä tulla ajallaan" |
+| [ajalta](lexemes/ajalta.html) |  from time of smth as adposition, "ristiretkien ajalta" |
+| [ajoilta](lexemes/ajoilta.html) |  from times of smth as adposition, "ristiretkien ajoilta" |
 | [ajatuksissaan](lexemes/ajatuksissaan.html) |  in thought, as adverb, "olin ajatuksissaan ~ ajatuksissani", see VISK § 655 |
 | [alapuolella](lexemes/alapuolella.html) |  under, as adposition, genitive complement or possessive, "laiturin alapuolella" |
 | [alapuolelle](lexemes/alapuolelle.html) |  to under, as adposition, genitive complement or possessive, "laiturin alapuolelle" |
@@ -178,6 +181,8 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [kotoisin](lexemes/kotoisin.html) |  usually seen as adverb (from), but can be analysed as a form of *koto* (home) |
 | [kui](lexemes/kui.html) |  This noun means the Dravidian language spoken by the Kui in southeastern India (FinnWordNet) but overlaps forms of very common *kuin* "as". |
 | [kuin](lexemes/kuin.html) |  as ... as, sub-ordinating conj, comparative particle, "niin kauan kuin", "parempi kuin"  **or**  both ... and, paired with niin, co-ordinating conj, "niin kissoja kuin koiriakin" |
+| [kuivilla](lexemes/kuivilla.html) |  dry from smth (alcohol, drug etc.), elative complement "olen kuivilla viinasta kolme kuukautta"  **or**  dry also literally "olen kuivilla" |
+| [kuiville](lexemes/kuiville.html) |  into dry from smth. (alcohol, drug etc.) "pitää päästä kuiville viinasta"  **or**  getting dry from, also literally "päästä kuiville" |
 | [kumminkaan](lexemes/kumminkaan.html) |  usually seen as adverb (however, negative), but can be analysed as a form of *kumpi* (which) |
 | [kumminkin](lexemes/kumminkin.html) |  usually seen as adverb (however, affirmative), but can be analysed as a form of *kumpi* (which) |
 | [kun](lexemes/kun.html) |  when, sub-ordinating conj, "kun menen kotiin", see VISK § 818 |
@@ -186,6 +191,7 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [kuten](lexemes/kuten.html) |  like a, such, as adverb, "eläin kuten kärpänen", used like "kuin"  **or**  like, as sub-ordinating conjunction "tulkitse kuten pystyt" |
 | [Kutsu](lexemes/Kutsu.html) |  This proper noun overlaps forms of very common *kutsu* "invitation", *kutsua* "to invite" etc. |
 | [kuvi](lexemes/kuvi.html) |  This noun means a Dravidian language spoken in southeast India (FinnWordNet) but overlaps forms of very common *kuva* (picture). |
+| [käsin](lexemes/käsin.html) |  manually "by hand", as opposed to automatically "tee se käsin"  **or**  from smwh. ablative complement "mereltä käsin" |
 | [käsiksi](lexemes/käsiksi.html) |  usually seen as adverb (intervene), but can be analysed as translative of the noun *käsi* (hand) |
 | [lainkaan](lexemes/lainkaan.html) |  usually seen as adverb (at all), but can be analysed as a form of *laki* (law, hilltop) |
 | [Lava](lexemes/Lava.html) |  This proper noun overlaps very common *lava* (stage). |
@@ -219,11 +225,11 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [MTV](lexemes/MTV.html) |  Music TeleVision |
 | [MTV3](lexemes/MTV3.html) |  Mainos-Tele-Visio |
 | [mukaan](lexemes/mukaan.html) |  adposition (with) when can be attached to a genitive NP, otherwise adverb (along)  **or**  along, adv, verb complement, "lähde mukaan!" |
-| [mutta](lexemes/mutta.html) |  this adp is FIXME  **or**  ... but, co-ordinating conjunction, "ei hyvä, mutta ok" |
+| [mutta](lexemes/mutta.html) |  REMOVED non CC version, provide examples to get it back  **or**  co-ordinating conjunction, "ei hyvä, mutta ok" |
 | [Mutta](lexemes/Mutta.html) |  proper noun, rather rare but notably overlaps an everyday conjunction   This proper noun overlaps  very common *mutta* (but). |
 | [Muu](lexemes/Muu.html) |  This proper noun overlaps  very common *muu* (other). |
 | [Muuri](lexemes/Muuri.html) |  This proper noun overlaps forms of very common *muuri* (wall). |
-| [muutoin](lexemes/muutoin.html) |  usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move) |
+| [muutoin](lexemes/muutoin.html) | **or**  usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move) |
 | [muutti](lexemes/muutti.html) |  a noun meaning something I don't know, but overlaps forms of *muuttaa* (to move). |
 | [myöhemmin](lexemes/myöhemmin.html) |  usually seen as adverb (later), but can be analysed as instructive of the adjective *myöhä* (late) |
 | [myöhään](lexemes/myöhään.html) |  usually seen as adverb (late), but can be analysed as illative of the adjective *myöhä* (late) |
@@ -303,6 +309,8 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [SGML](lexemes/SGML.html) |  Standardised General Markup Language |
 | [sijaan](lexemes/sijaan.html) |  adposition (instead of) when can be attached to a genitive NP, otherwise noun forms of *sija* (place), verb *sijata* (make place)   adverv (instead) |
 | [silloin](lexemes/silloin.html) |  adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions  **or**  usually seen as adverb (then), but overlaps instructive of the noun *silta* (bridge) |
+| [siksi](lexemes/siksi.html) |  REMOVED, in lack of adpositional evidence  **or**  thus, therefore, that's why, notably also translative of *se* (it) |
+| [siten](lexemes/siten.html) |  REMOVED, in lack of adpositional evidence  **or**  so, thusly |
 | [sillä](lexemes/sillä.html) |  because, subordinating conj, "sillä tiedän paremmin" (NB ambig with many se adessives) |
 | [Silta](lexemes/Silta.html) |  This proper noun overlaps  very common *silta* (bridge). |
 | [sisällä](lexemes/sisällä.html) |  adverb  **or**  adposition (inside of) when can be attached to a genitive NP, otherwise adverb (inside) |
@@ -371,12 +379,13 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 | [vaan](lexemes/vaan.html) |  but rather, as cconj, see VISK § 1106  **or**  really indeed, as adverb, "ei nyt vaan pysty" |
 | [vai](lexemes/vai.html) |  This noun means a Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or).   Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunctions and adverbs  **or**  really so, as adverb, colloquial, "ai on vai"  **or**  or, as cconj, used in contrastive position only, "kissoja vai koiria" |
 | [vaikk](lexemes/vaikk.html) |  even though, as subordinating conjunction, colloquial "vaikka ärsyttäisikin", see VISK § 816 |
-| [vaikka](lexemes/vaikka.html) |  adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions  **or**  even, as adverb, "vaikka mitä", "vaikka kuinka paljon" see VISK § 841  **or**  even though, as subordinating conjunction, "vaikka ärsyttäisikin", see VISK § 816 |
+| [vaikka](lexemes/vaikka.html) |  REMOVED  **or**  even, as adverb, "vaikka mitä", "vaikka kuinka paljon" see VISK § 841  **or**  even though, as subordinating conjunction, "vaikka ärsyttäisikin", see VISK § 816 |
 | [Vanha](lexemes/Vanha.html) |  This proper noun overlaps  very common *vanha* (old) |
 | [vanhastaan](lexemes/vanhastaan.html) |  usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old) |
 | [varmaan](lexemes/varmaan.html) |  usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure) |
 | [Varo](lexemes/Varo.html) |  This proper noun overlaps forms of very common *varoa* (beware). |
 | [varsin](lexemes/varsin.html) |  usually seen as adverb (really), but can be analysed as a form of *varsi* (stem) |
+| [vallassa](lexemes/vallassa.html) |  in rule, "täällä on vallassa kuningas"  **or**  possessed by smth., genitive complement "pahan hengen vallassa"   dethroned, "kuningas syöstiin vallasta"  **or**  exorcised of smth., genitive complement "pahan hengen vallasta" |
 | [vastaan](lexemes/vastaan.html) |  adposition (against smth) when can be attached to a partitive NP, otherwise adverb (against)  **or**  adverb (against) |
 | [vihdoin](lexemes/vihdoin.html) |  usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig) |
 | [Viimeinen](lexemes/Viimeinen.html) |  This proper noun overlaps  very common *viimeinen* (last). |

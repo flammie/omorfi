@@ -5,16 +5,16 @@ paradigm: VERB_KUHERTAA
 ### ` VERB_KUHERTAA `
 
 Dictionary class54 back t~r
-* kotus_tn: 54
-* upos: VERB
-* suffix_regex: taa
-* kotus_av: K
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: taa
+* suffix_regex: taa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 54
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: K
+* deletion: taa

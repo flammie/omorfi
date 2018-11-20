@@ -5,16 +5,16 @@ paradigm: PROPN_MONSIEUR
 ### ` PROPN_MONSIEUR `
 
 Dictionary class 22 ö
-* kotus_tn: 22
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: 
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ö
+* kotus_tn: 22
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

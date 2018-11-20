@@ -5,16 +5,16 @@ paradigm: NOUN_MUUNNIN
 ### ` NOUN_MUUNNIN `
 
 Dictionary class 33 back nin
-* kotus_tn: 33
-* upos: NOUN
-* suffix_regex: nnin
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nin
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnin
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nin

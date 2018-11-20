@@ -5,16 +5,16 @@ paradigm: VERB_YÖKÄTÄ
 ### ` VERB_YÖKÄTÄ `
 
 Dictionary class73 front 0~k
-* kotus_tn: 73
-* upos: VERB
-* suffix_regex: ätä
-* kotus_av: A
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ätä
+* suffix_regex: ätä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 73
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ätä

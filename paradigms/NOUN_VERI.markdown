@@ -5,16 +5,16 @@ paradigm: NOUN_VERI
 ### ` NOUN_VERI `
 
 Non-Dictionary class veri
-* kotus_tn: 1026
-* upos: NOUN
-* suffix_regex: eri
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: eri
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1026
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

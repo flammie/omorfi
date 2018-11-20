@@ -5,16 +5,16 @@ paradigm: ADV_HYVILLÄÄN
 ### ` ADV_HYVILLÄÄN `
 
 None
-* kotus_tn: 99
-* upos: ADV
-* suffix_regex: än
-* kotus_av: None
+* clitics: True
 * grade_dir: False
 * harmony: front
-* possessive: obligatory
-* stem_diphthong: None
-* deletion: än
+* suffix_regex: än
 * plurale_tantum: False
-* clitics: True
-* pos: PARTICLE
+* possessive: obligatory
+* upos: ADV
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: än

@@ -5,16 +5,16 @@ paradigm: NOUN_51täysikuu
 ### ` NOUN_51täysikuu `
 
 Optimisation hack for exceptional compound ’täysikuu’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NOUN
-* suffix_regex: täysikuu
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sikuu
+* suffix_regex: täysikuu
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sikuu

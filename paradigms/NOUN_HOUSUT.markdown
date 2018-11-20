@@ -5,16 +5,16 @@ paradigm: NOUN_HOUSUT
 ### ` NOUN_HOUSUT `
 
 Dictionary class 1u plurale tantum
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: ut
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: ut
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

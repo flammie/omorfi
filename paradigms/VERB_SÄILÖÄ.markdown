@@ -5,16 +5,16 @@ paradigm: VERB_SÄILÖÄ
 ### ` VERB_SÄILÖÄ `
 
 The ö stems have no stem variation: Dictionary class52ö
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: öä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: öä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

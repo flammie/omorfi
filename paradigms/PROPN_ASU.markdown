@@ -5,16 +5,16 @@ paradigm: PROPN_ASU
 ### ` PROPN_ASU `
 
 The stems ending in u are also without variationm and the bisyllabic ones have the same simple allomorph pattern: Dictionary class 1u
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: [Uuú]
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [Uuú]
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: u
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

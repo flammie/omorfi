@@ -5,16 +5,16 @@ paradigm: VERB_RIIPIÄ
 ### ` VERB_RIIPIÄ `
 
 Dictionary class61 front p~v
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: piä
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: piä
+* suffix_regex: piä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: piä

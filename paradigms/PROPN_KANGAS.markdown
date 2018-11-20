@@ -5,16 +5,16 @@ paradigm: PROPN_KANGAS
 ### ` PROPN_KANGAS `
 
 Dictionary class 41 gas
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: ngas
-* kotus_av: G
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: gas
+* suffix_regex: ngas
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: gas

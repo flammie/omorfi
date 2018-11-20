@@ -5,16 +5,16 @@ paradigm: NOUN_JEPPE
 ### ` NOUN_JEPPE `
 
 Dictionary class 8 p~0 front
-* kotus_tn: 8
-* upos: NOUN
-* suffix_regex: ppe
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pe
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ppe
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 8
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pe

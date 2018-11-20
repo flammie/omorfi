@@ -5,16 +5,16 @@ paradigm: VERB_KOMENNELLA
 ### ` VERB_KOMENNELLA `
 
 Dictionary class67 back l n~t
-* kotus_tn: 67
-* upos: VERB
-* suffix_regex: nnella
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nella
+* suffix_regex: nnella
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 67
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nella

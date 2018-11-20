@@ -5,16 +5,16 @@ paradigm: NOUN_TALKOOT
 ### ` NOUN_TALKOOT `
 
 Dictionary class xxx kooot plurale tantum
-* kotus_tn: 17
-* upos: NOUN
-* suffix_regex: oot
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ot
+* suffix_regex: oot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ot

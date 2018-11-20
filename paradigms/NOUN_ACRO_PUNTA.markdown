@@ -5,16 +5,16 @@ paradigm: NOUN_ACRO_PUNTA
 ### ` NOUN_ACRO_PUNTA `
 
 The acronyms ending in a word that inflects like ‘punta’ with a:0 type stem
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 10
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

@@ -16,5 +16,4 @@ adposition (with) when can be attached to a genitive NP, otherwise adverb (along
 along, adv, verb complement, "lähde mukaan!"
 * UPOS:  ADV
 * Added from:  omorfi
-* AdpType:  PREPOSITION
 

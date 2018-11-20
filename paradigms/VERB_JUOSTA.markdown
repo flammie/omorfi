@@ -5,16 +5,16 @@ paradigm: VERB_JUOSTA
 ### ` VERB_JUOSTA `
 
 Dictionary class70 back
-* kotus_tn: 70
-* upos: VERB
-* suffix_regex: sta
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sta
+* suffix_regex: sta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 70
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sta

@@ -5,16 +5,16 @@ paradigm: NOUN_VAINAA
 ### ` NOUN_VAINAA `
 
 Dictionary class 17 a
-* kotus_tn: 17
-* upos: NOUN
-* suffix_regex: aa
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: aa
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

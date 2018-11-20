@@ -5,16 +5,16 @@ paradigm: NOUN_TOKEE
 ### ` NOUN_TOKEE `
 
 Dictionary class 20 e
-* kotus_tn: 17
-* upos: NOUN
-* suffix_regex: ee
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ee
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: e
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: e

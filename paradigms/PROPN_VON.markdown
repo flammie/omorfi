@@ -5,16 +5,16 @@ paradigm: PROPN_VON
 ### ` PROPN_VON `
 
 proper noun particle, no inflection, no compounding, for some foreign surname etc. patronymical constructs
-* kotus_tn: 99
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 99
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

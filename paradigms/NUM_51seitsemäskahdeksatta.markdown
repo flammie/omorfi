@@ -5,16 +5,16 @@ paradigm: NUM_51seitsemäskahdeksatta
 ### ` NUM_51seitsemäskahdeksatta `
 
 Optimisation hack for exceptional compound ’seitsemäskahdeksatta’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: seitsemäskahdeksatta
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: skahdeksatta
+* suffix_regex: seitsemäskahdeksatta
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: skahdeksatta

@@ -8,6 +8,7 @@ lexeme: tarpeeksi
 adposition (enough of it), partitive ocmplements
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 
 
 ## tarpeeksi (alternate reading 2 )

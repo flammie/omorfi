@@ -5,16 +5,16 @@ paradigm: VERB_PURKAA
 ### ` VERB_PURKAA `
 
 Dictionary class53 back k~0
-* kotus_tn: 53
-* upos: VERB
-* suffix_regex: kaa
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: kaa
+* suffix_regex: kaa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 53
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: D
+* deletion: kaa

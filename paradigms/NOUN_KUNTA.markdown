@@ -5,16 +5,16 @@ paradigm: NOUN_KUNTA
 ### ` NOUN_KUNTA `
 
 Dictionary class 10 back t~n
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: nta
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: nta
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ta

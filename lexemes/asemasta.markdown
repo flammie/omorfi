@@ -15,4 +15,5 @@ instead, as adv, ??
 instead of, as adposition, genitive complement or possessive, "tien asemasta", commonly used instead of 'asemesta'
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 

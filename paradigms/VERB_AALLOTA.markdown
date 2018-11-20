@@ -5,16 +5,16 @@ paradigm: VERB_AALLOTA
 ### ` VERB_AALLOTA `
 
 Dictionary class75 lota
-* kotus_tn: 75
-* upos: VERB
-* suffix_regex: llota
-* kotus_av: I
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: lota
+* suffix_regex: llota
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 75
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: I
+* deletion: lota

@@ -16,5 +16,4 @@ adposition (via) when can be attached to a genitive or partitive NP, otherwise n
 adverb, ?
 * UPOS:  ADV
 * Added from:  kotus
-* AdpType:  PREPOSITION
 

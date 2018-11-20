@@ -5,16 +5,16 @@ paradigm: VERB_TUNKEA
 ### ` VERB_TUNKEA `
 
 Dictionary class58 back k~g
-* kotus_tn: 58
-* upos: VERB
-* suffix_regex: nkea
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: kea
+* suffix_regex: nkea
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 58
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: G
+* deletion: kea

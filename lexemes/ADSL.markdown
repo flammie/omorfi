@@ -7,5 +7,5 @@ lexeme: ADSL
 
 Asymmetric Digital Subscriber Line
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

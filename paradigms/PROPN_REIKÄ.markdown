@@ -5,16 +5,16 @@ paradigm: PROPN_REIKÄ
 ### ` PROPN_REIKÄ `
 
 Dictionary class 10 back k~’~0
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: kä
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kä
+* suffix_regex: kä
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: kä

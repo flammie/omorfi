@@ -7,7 +7,7 @@ lexeme: kuin
 
 as ... as, sub-ordinating conj, comparative particle, "niin kauan kuin", "parempi kuin"
 * UPOS:  SCONJ
-* Added from:  kotus
+* Added from:  kotus|joukahainen
 
 
 ## kuin (alternate reading 4 )

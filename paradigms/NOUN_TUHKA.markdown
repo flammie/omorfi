@@ -5,16 +5,16 @@ paradigm: NOUN_TUHKA
 ### ` NOUN_TUHKA `
 
 Dictionary class 9 k~0 without optional k not gradating
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: hka
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ka
+* suffix_regex: hka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ka

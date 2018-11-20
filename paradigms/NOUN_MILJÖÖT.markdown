@@ -5,16 +5,16 @@ paradigm: NOUN_MILJÖÖT
 ### ` NOUN_MILJÖÖT `
 
 Dictionary class 20 ö plurale tantum
-* kotus_tn: 20
-* upos: NOUN
-* suffix_regex: ööt
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: öt
+* suffix_regex: ööt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 20
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: öt

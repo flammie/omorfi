@@ -7,5 +7,5 @@ lexeme: ISBN
 
 International Serial Book Number
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

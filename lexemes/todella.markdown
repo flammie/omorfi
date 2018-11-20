@@ -6,8 +6,8 @@ lexeme: todella
 ###  todella
 
 adposition?
-* UPOS:  ADP
-* Added from:  kotus
+* UPOS:  X
+* Added from:  omorfi
 
 
 ## todella (alternate reading 2 )

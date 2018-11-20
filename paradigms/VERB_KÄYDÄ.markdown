@@ -5,16 +5,16 @@ paradigm: VERB_KÄYDÄ
 ### ` VERB_KÄYDÄ `
 
 Dictionary class65
-* kotus_tn: 65
-* upos: VERB
-* suffix_regex: äydä
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ydä
+* suffix_regex: äydä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 65
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ydä

@@ -7,7 +7,7 @@ lexeme: mikä
 
 what, as interrogataive, "mikä tuo on?"
 * UPOS:  PRON
-* Added from:  kotus
+* Added from:  kotus|enwikt
 * PronType:  INTERROGATIVE
 
 

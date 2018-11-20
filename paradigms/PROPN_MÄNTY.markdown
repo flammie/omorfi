@@ -5,16 +5,16 @@ paradigm: PROPN_MÄNTY
 ### ` PROPN_MÄNTY `
 
 Dictionary class 1nty
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: nty
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ty
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nty
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ty

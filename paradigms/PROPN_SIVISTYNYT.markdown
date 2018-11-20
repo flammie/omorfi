@@ -5,16 +5,16 @@ paradigm: PROPN_SIVISTYNYT
 ### ` PROPN_SIVISTYNYT `
 
 Dictionary class 47 front
-* kotus_tn: 47
-* upos: PROPN
-* suffix_regex: nyt
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: yt
+* suffix_regex: nyt
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: y
+* kotus_tn: 47
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: yt

@@ -5,16 +5,16 @@ paradigm: PROPN_LEIKKUU
 ### ` PROPN_LEIKKUU `
 
 Dictionary class 17 u Monosyllabic long vowel stems have illative suffixes of form -hVn.
-* kotus_tn: 17
-* upos: PROPN
-* suffix_regex: uu
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: u
+* suffix_regex: uu
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: u
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: u

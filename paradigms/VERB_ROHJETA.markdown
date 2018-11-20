@@ -5,16 +5,16 @@ paradigm: VERB_ROHJETA
 ### ` VERB_ROHJETA `
 
 Dictionary class.. back j~k
-* kotus_tn: 72
-* upos: VERB
-* suffix_regex: jeta
-* kotus_av: L
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: jeta
+* suffix_regex: jeta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 72
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: L
+* deletion: jeta

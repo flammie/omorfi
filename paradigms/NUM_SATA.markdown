@@ -5,16 +5,16 @@ paradigm: NUM_SATA
 ### ` NUM_SATA `
 
 Dictionary class9
-* kotus_tn: 9
-* upos: NUM
-* suffix_regex: sata
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: sata
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: F
+* deletion: ta

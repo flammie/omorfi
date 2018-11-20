@@ -5,16 +5,16 @@ paradigm: VERB_HALJETA
 ### ` VERB_HALJETA `
 
 Dictionary class74 back j~ke
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: jeta
-* kotus_av: L
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: jeta
+* suffix_regex: jeta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: L
+* deletion: jeta

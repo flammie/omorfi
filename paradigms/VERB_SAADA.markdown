@@ -5,16 +5,16 @@ paradigm: VERB_SAADA
 ### ` VERB_SAADA `
 
 Dictionary class63 a
-* kotus_tn: 63
-* upos: VERB
-* suffix_regex: aada
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ada
+* suffix_regex: aada
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 63
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ada

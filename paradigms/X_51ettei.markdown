@@ -5,16 +5,16 @@ paradigm: X_51ettei
 ### ` X_51ettei `
 
 Verbal conjunction compounds of type ‘ettei’ («‘että+ei’) inflects from the end like ‘ei’
-* kotus_tn: 51
-* upos: CCONJ|VERB
-* suffix_regex: ei
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ei
+* suffix_regex: ei
 * plurale_tantum: False
-* clitics: False
-* pos: CONJUNCTIONVERB
+* possessive: False
+* upos: CCONJ|VERB
 * stem_vowel: None
+* kotus_tn: 51
+* pos: CONJUNCTIONVERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ei

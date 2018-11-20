@@ -5,16 +5,16 @@ paradigm: PROPN_MIELENGE
 ### ` PROPN_MIELENGE `
 
 k:0
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: nge
-* kotus_av: G
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ge
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nge
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ge

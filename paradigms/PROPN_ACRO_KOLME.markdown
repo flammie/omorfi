@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_KOLME
 ### ` PROPN_ACRO_KOLME `
 
 The acronyms ending in digit 3 pronounced as number
-* kotus_tn: 0
-* upos: PROPN
-* suffix_regex: 3
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: 3
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

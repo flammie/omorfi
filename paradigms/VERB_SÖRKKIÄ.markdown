@@ -5,16 +5,16 @@ paradigm: VERB_SÖRKKIÄ
 ### ` VERB_SÖRKKIÄ `
 
 Dictionary class61 front k~0
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: kiä
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kiä
+* suffix_regex: kiä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: A
+* deletion: kiä

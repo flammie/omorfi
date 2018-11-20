@@ -7,5 +7,5 @@ lexeme: MTV
 
 Music TeleVision
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

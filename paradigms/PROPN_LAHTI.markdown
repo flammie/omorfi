@@ -5,16 +5,16 @@ paradigm: PROPN_LAHTI
 ### ` PROPN_LAHTI `
 
 Dictionary class 7 back t~d
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: ti
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: ti

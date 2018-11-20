@@ -4,17 +4,17 @@ paradigm: PROPN_KYNNET
 ---
 ### ` PROPN_KYNNET `
 
-
-* kotus_tn: 28
-* upos: PROPN
-* suffix_regex: nnet
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: net
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nnet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 28
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: net

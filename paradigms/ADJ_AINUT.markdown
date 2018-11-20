@@ -5,16 +5,16 @@ paradigm: ADJ_AINUT
 ### ` ADJ_AINUT `
 
 defective paradigm for ainut
-* kotus_tn: 44
-* upos: ADJ
-* suffix_regex: ut
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: ut
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 44
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

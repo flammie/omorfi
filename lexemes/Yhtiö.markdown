@@ -8,7 +8,7 @@ lexeme: Yhtiö
 This proper noun overlaps  very common *yhtiö* (company).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  3
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 

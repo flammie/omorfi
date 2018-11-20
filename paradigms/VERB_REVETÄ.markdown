@@ -5,16 +5,16 @@ paradigm: VERB_REVETÄ
 ### ` VERB_REVETÄ `
 
 Dictionary class74 front v~pe
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: vetä
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: vetä
+* suffix_regex: vetä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: vetä

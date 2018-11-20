@@ -4,17 +4,17 @@ paradigm: PROPN_SYLI
 ---
 ### ` PROPN_SYLI `
 
-
-* kotus_tn: 23
-* upos: PROPN
-* suffix_regex: i
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 23
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

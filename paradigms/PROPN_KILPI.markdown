@@ -5,16 +5,16 @@ paradigm: PROPN_KILPI
 ### ` PROPN_KILPI `
 
 Dictionary class 7 front p~v
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: pi
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pi

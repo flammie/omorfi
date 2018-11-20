@@ -5,16 +5,16 @@ paradigm: PROPN_COMPOUND
 ### ` PROPN_COMPOUND `
 
 for bound proper noun particles, usually with hyphen, such as ‘Etelä-’
-* kotus_tn: 99
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: -
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 99
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: -

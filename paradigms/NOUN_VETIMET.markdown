@@ -5,16 +5,16 @@ paradigm: NOUN_VETIMET
 ### ` NOUN_VETIMET `
 
 Dictionary class 33 fron din plurale tantum
-* kotus_tn: 33
-* upos: NOUN
-* suffix_regex: timet
-* kotus_av: F
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: timet
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*timet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: timet

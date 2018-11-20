@@ -7,5 +7,5 @@ lexeme: kun
 
 when, sub-ordinating conj, "kun menen kotiin", see VISK § 818
 * UPOS:  SCONJ
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++|joukahainen
 

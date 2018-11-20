@@ -15,4 +15,5 @@ behind adverb,
 behind of, as adposition, genitive complement
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 

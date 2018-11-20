@@ -4,17 +4,17 @@ paradigm: PROPN_KANKAHAT
 ---
 ### ` PROPN_KANKAHAT `
 
-
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: hat
-* kotus_av: G
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: hat
+* suffix_regex: hat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: hat

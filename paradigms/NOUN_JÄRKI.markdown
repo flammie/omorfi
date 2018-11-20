@@ -5,16 +5,16 @@ paradigm: NOUN_JÄRKI
 ### ` NOUN_JÄRKI `
 
 Dictionary class 7 front k~j
-* kotus_tn: 7
-* upos: NOUN
-* suffix_regex: ki
-* kotus_av: L
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ki
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: L
+* deletion: ki

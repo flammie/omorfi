@@ -5,16 +5,16 @@ paradigm: PROPN_YÖKKÖ
 ### ` PROPN_YÖKKÖ `
 
 Dictionary class 1kö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: kkö
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kö
+* suffix_regex: kkö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: kö

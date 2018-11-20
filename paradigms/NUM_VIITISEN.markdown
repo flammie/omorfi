@@ -5,16 +5,16 @@ paradigm: NUM_VIITISEN
 ### ` NUM_VIITISEN `
 
 Approximative numerals, front suffixes, compounding with select multipliers
-* kotus_tn: 99
-* upos: NUM
-* suffix_regex: isen
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: isen
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 99
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

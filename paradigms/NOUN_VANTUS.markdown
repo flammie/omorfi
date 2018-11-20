@@ -5,16 +5,16 @@ paradigm: NOUN_VANTUS
 ### ` NOUN_VANTUS `
 
 Dictionary class 41 tus
-* kotus_tn: 41
-* upos: NOUN
-* suffix_regex: tus
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: us
+* suffix_regex: tus
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: us

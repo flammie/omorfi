@@ -5,16 +5,16 @@ paradigm: ADJ_MIETO
 ### ` ADJ_MIETO `
 
 The gradation of t ~ d after o is in class described here, the dictionary class for this is ¹⁻F.
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: to
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: to
+* suffix_regex: to
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: F
+* deletion: to

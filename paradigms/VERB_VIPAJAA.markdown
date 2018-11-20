@@ -4,17 +4,17 @@ paradigm: VERB_VIPAJAA
 ---
 ### ` VERB_VIPAJAA `
 
-Dictionary class77 back 
-* kotus_tn: 77
-* upos: VERB
-* suffix_regex: aa
-* kotus_av: None
+Dictionary class77 back
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: aa
+* suffix_regex: aa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 77
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: aa

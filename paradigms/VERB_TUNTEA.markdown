@@ -5,16 +5,16 @@ paradigm: VERB_TUNTEA
 ### ` VERB_TUNTEA `
 
 Dictionary class59
-* kotus_tn: 59
-* upos: VERB
-* suffix_regex: ntea
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: tea
+* suffix_regex: ntea
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 59
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: tea

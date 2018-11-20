@@ -5,16 +5,16 @@ paradigm: PROPN_VIENTI
 ### ` PROPN_VIENTI `
 
 Dictionary class 5 front t~n
-* kotus_tn: 5
-* upos: PROPN
-* suffix_regex: nti
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ti

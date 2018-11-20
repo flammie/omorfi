@@ -5,16 +5,16 @@ paradigm: PROPN_FARMARIT
 ### ` PROPN_FARMARIT `
 
 Dictionary class xxx it plurale tantum
-* kotus_tn: 6
-* upos: PROPN
-* suffix_regex: it
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: it
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*it
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 6
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: it

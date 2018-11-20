@@ -4,17 +4,17 @@ paradigm: PROPN_TOULAT
 ---
 ### ` PROPN_TOULAT `
 
-
-* kotus_tn: 40
-* upos: PROPN
-* suffix_regex: at
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: at
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 40
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: at

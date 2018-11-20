@@ -4,17 +4,17 @@ paradigm: NOUN_ACRO_YKSI
 ---
 ### ` NOUN_ACRO_YKSI `
 
-
-* kotus_tn: 0
-* upos: NOUN
-* suffix_regex: 1
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: 1
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

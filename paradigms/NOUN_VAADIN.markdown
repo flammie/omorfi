@@ -5,16 +5,16 @@ paradigm: NOUN_VAADIN
 ### ` NOUN_VAADIN `
 
 Dictionary class 33 back din
-* kotus_tn: 33
-* upos: NOUN
-* suffix_regex: din
-* kotus_av: F
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: din
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*din
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: din

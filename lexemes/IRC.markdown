@@ -7,5 +7,5 @@ lexeme: IRC
 
 Internet Relay Chat
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

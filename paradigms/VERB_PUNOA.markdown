@@ -5,16 +5,16 @@ paradigm: VERB_PUNOA
 ### ` VERB_PUNOA `
 
 The o stems have no stem variation: Dictionary class52o
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: oa
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: oa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

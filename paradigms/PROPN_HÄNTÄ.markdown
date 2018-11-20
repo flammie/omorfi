@@ -5,16 +5,16 @@ paradigm: PROPN_HÄNTÄ
 ### ` PROPN_HÄNTÄ `
 
 Dictionary class 10 front t~n
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: ntä
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tä
+* suffix_regex: ntä
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: tä

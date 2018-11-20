@@ -4,17 +4,17 @@ paradigm: PROPN_KALATOIN
 ---
 ### ` PROPN_KALATOIN `
 
-
-* kotus_tn: 34
-* upos: PROPN
-* suffix_regex: toin
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: oin
+* suffix_regex: toin
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 34
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: oin

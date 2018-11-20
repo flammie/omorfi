@@ -7,7 +7,8 @@ lexeme: paitsi
 
 except, as adposition, complement is partitive, see VISK § 708
 * UPOS:  ADP
-* Added from:  omorfi++
+* Added from:  omorfi++|fiwikt
+* AdpType:  POSTPOSITION
 
 
 ## paitsi (alternate reading 2 )

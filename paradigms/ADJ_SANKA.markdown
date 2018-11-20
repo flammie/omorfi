@@ -5,16 +5,16 @@ paradigm: ADJ_SANKA
 ### ` ADJ_SANKA `
 
 nka:ng variations
-* kotus_tn: 9
-* upos: ADJ
-* suffix_regex: nka
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ka
+* suffix_regex: nka
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 9
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ka

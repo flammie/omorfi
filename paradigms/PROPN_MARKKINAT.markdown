@@ -5,16 +5,16 @@ paradigm: PROPN_MARKKINAT
 ### ` PROPN_MARKKINAT `
 
 Dictionary class xxx a front plurale tantum
-* kotus_tn: 12
-* upos: PROPN
-* suffix_regex: at
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: at
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 12
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: at

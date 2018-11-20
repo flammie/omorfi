@@ -4,17 +4,17 @@ paradigm: PROPN_LOUET
 ---
 ### ` PROPN_LOUET `
 
-
-* kotus_tn: 44
-* upos: PROPN
-* suffix_regex: uet
-* kotus_av: D
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: uet
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 44
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: et

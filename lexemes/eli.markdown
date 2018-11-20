@@ -7,7 +7,7 @@ lexeme: eli
 
 that is, then, sometimes also or, co-ordinating conjunction, "kissa eli eläin", "kissa eli koira"
 * UPOS:  CCONJ
-* Added from:  unihu
+* Added from:  finer
 
 
 ## eli (alternate reading 2 )

@@ -5,16 +5,16 @@ paradigm: VERB_ÄHKÄÄ
 ### ` VERB_ÄHKÄÄ `
 
 Dictionary class78 front
-* kotus_tn: 78
-* upos: VERB
-* suffix_regex: ää
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: ää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 78
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

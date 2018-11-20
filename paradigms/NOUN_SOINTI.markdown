@@ -5,16 +5,16 @@ paradigm: NOUN_SOINTI
 ### ` NOUN_SOINTI `
 
 Dictionary class 5 back t~n
-* kotus_tn: 5
-* upos: NOUN
-* suffix_regex: nti
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ti

@@ -5,16 +5,16 @@ paradigm: AUX_JOUTUA
 ### ` AUX_JOUTUA `
 
 auxiliary version of tu:du verb stem
-* kotus_tn: 52
-* upos: AUX
-* suffix_regex: joutua
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: tua
+* suffix_regex: joutua
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tua

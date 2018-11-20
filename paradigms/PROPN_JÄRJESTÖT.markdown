@@ -4,17 +4,17 @@ paradigm: PROPN_JÄRJESTÖT
 ---
 ### ` PROPN_JÄRJESTÖT `
 
-
-* kotus_tn: 2
-* upos: PROPN
-* suffix_regex: öt
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: öt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 2
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

@@ -5,16 +5,16 @@ paradigm: AUX_TÄYTYÄ
 ### ` AUX_TÄYTYÄ `
 
 auxiliary version of ty:dy verb stem
-* kotus_tn: 52
-* upos: AUX
-* suffix_regex: täytyä
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tyä
+* suffix_regex: täytyä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tyä

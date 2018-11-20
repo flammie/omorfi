@@ -4,17 +4,17 @@ paradigm: PRON_MONI
 ---
 ### ` PRON_MONI `
 
-i:e inflects like 
-* kotus_tn: 23
-* upos: PRON
-* suffix_regex: moni
-* kotus_av: None
+i:e inflects like
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: moni
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 23
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

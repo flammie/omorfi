@@ -5,16 +5,16 @@ paradigm: SYM_$
 ### ` SYM_$ `
 
 symbols, inflection with : and compounding with -
-* kotus_tn: 99
-* upos: SYM
-* suffix_regex: .
-* kotus_av: None
+* clitics: True
 * grade_dir: None
 * harmony: back
-* possessive: True
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: True
-* pos: PUNCTUATION
+* possessive: True
+* upos: SYM
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PUNCTUATION
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

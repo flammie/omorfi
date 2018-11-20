@@ -5,16 +5,16 @@ paradigm: PRON_MIKÄ
 ### ` PRON_MIKÄ `
 
 pronoun mikä inflects from mi- stem
-* kotus_tn: 101
-* upos: PRON
-* suffix_regex: mikä
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kä
+* suffix_regex: mikä
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 101
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: kä

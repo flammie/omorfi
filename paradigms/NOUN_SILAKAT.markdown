@@ -5,16 +5,16 @@ paradigm: NOUN_SILAKAT
 ### ` NOUN_SILAKAT `
 
 Dictionary class 14 kat plurale tantum
-* kotus_tn: 14
-* upos: NOUN
-* suffix_regex: kat
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: kat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 14
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: at

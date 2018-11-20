@@ -5,16 +5,16 @@ paradigm: NOUN_RAUDAT
 ### ` NOUN_RAUDAT `
 
 Dictionary class xxx dat plurale tantum
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: dat
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: dat
+* suffix_regex: dat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: dat

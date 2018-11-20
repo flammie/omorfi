@@ -8,7 +8,7 @@ lexeme: Muuri
 This proper noun overlaps forms of very common *muuri* (wall).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  5
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 

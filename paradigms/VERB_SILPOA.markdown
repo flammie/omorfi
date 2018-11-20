@@ -5,16 +5,16 @@ paradigm: VERB_SILPOA
 ### ` VERB_SILPOA `
 
 Dictionary class52 p~v o
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: poa
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: poa
+* suffix_regex: poa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: poa

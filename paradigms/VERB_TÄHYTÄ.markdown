@@ -4,17 +4,17 @@ paradigm: VERB_TÄHYTÄ
 ---
 ### ` VERB_TÄHYTÄ `
 
-Dictionary class74 front 
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: tä
-* kotus_av: None
+Dictionary class74 front
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tä
+* suffix_regex: tä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: tä

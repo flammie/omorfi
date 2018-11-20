@@ -5,16 +5,16 @@ paradigm: VERB_OMMELLA
 ### ` VERB_OMMELLA `
 
 Dictionary class67 back l m~p
-* kotus_tn: 67
-* upos: VERB
-* suffix_regex: mmella
-* kotus_av: H
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: mella
+* suffix_regex: mmella
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 67
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: H
+* deletion: mella

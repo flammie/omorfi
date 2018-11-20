@@ -7,7 +7,7 @@ lexeme: vaan
 
 but rather, as cconj, see VISK § 1106
 * UPOS:  CCONJ
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 
 
 ## vaan (alternate reading 2 )

@@ -5,16 +5,16 @@ paradigm: ADJ_TIIVIS
 ### ` ADJ_TIIVIS `
 
 Dictionary class 41 is
-* kotus_tn: 41
-* upos: ADJ
-* suffix_regex: is
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: is
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*is
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 41
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: is

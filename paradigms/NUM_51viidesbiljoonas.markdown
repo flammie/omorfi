@@ -5,16 +5,16 @@ paradigm: NUM_51viidesbiljoonas
 ### ` NUM_51viidesbiljoonas `
 
 Optimisation hack for exceptional compound ’viidesbiljoonas’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: viidesbiljoonas
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sbiljoonas
+* suffix_regex: viidesbiljoonas
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sbiljoonas

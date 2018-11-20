@@ -4,17 +4,17 @@ paradigm: PROPN_MIEHET
 ---
 ### ` PROPN_MIEHET `
 
-
-* kotus_tn: 42
-* upos: PROPN
-* suffix_regex: iehet
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: het
+* suffix_regex: iehet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 42
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: het

@@ -4,17 +4,17 @@ paradigm: PRON_MUU
 ---
 ### ` PRON_MUU `
 
-inflects NOUN_PUU 
-* kotus_tn: 18
-* upos: PRON
-* suffix_regex: muu
-* kotus_av: None
+inflects NOUN_PUU
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: u
+* suffix_regex: muu
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: u
+* kotus_tn: 18
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: u

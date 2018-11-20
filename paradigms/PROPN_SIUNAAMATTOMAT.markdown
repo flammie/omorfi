@@ -4,17 +4,17 @@ paradigm: PROPN_SIUNAAMATTOMAT
 ---
 ### ` PROPN_SIUNAAMATTOMAT `
 
-
-* kotus_tn: 34
-* upos: PROPN
-* suffix_regex: ttomat
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: tomat
+* suffix_regex: ttomat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 34
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tomat

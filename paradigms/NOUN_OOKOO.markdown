@@ -5,16 +5,16 @@ paradigm: NOUN_OOKOO
 ### ` NOUN_OOKOO `
 
 Dictionary class 18 o
-* kotus_tn: 18
-* upos: NOUN
-* suffix_regex: oo
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: o
+* suffix_regex: oo
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: o
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: o

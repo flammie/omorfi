@@ -4,17 +4,17 @@ paradigm: PROPN_MÄNNYT
 ---
 ### ` PROPN_MÄNNYT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: nnyt
-* kotus_av: J
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: nyt
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nnyt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nyt

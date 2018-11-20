@@ -4,17 +4,17 @@ paradigm: ADJ_HARMAJA
 ---
 ### ` ADJ_HARMAJA `
 
-
-* kotus_tn: 12
-* upos: ADJ
-* suffix_regex: a
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: a
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 12
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

@@ -7,5 +7,5 @@ lexeme: SQL
 
 Structured Query Language
 * UPOS:  NOUN
-* Added from:  omorfi
+* Added from:  omorfi|joukahainen
 

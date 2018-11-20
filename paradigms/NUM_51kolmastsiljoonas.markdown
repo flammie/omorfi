@@ -5,16 +5,16 @@ paradigm: NUM_51kolmastsiljoonas
 ### ` NUM_51kolmastsiljoonas `
 
 Optimisation hack for exceptional compound ’kolmastsiljoonas’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: kolmastsiljoonas
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: stsiljoonas
+* suffix_regex: kolmastsiljoonas
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: stsiljoonas

@@ -5,16 +5,16 @@ paradigm: VERB_VARTOA
 ### ` VERB_VARTOA `
 
 Dictionary class52 t~r o
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: rtoa
-* kotus_av: K
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: toa
+* suffix_regex: rtoa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: K
+* deletion: toa

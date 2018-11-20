@@ -5,16 +5,16 @@ paradigm: PROPN_SISÄLTÖ
 ### ` PROPN_SISÄLTÖ `
 
 Dictionary class 1ltö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ltö
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tö
+* suffix_regex: ltö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: tö

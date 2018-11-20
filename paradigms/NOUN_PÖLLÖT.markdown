@@ -4,17 +4,17 @@ paradigm: NOUN_PÖLLÖT
 ---
 ### ` NOUN_PÖLLÖT `
 
-
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: öt
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: öt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

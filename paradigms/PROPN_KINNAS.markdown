@@ -5,16 +5,16 @@ paradigm: PROPN_KINNAS
 ### ` PROPN_KINNAS `
 
 Dictionary class 41 nas
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: nnas
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nas
+* suffix_regex: nnas
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nas

@@ -5,16 +5,16 @@ paradigm: NOUN_51pitkäkirkko
 ### ` NOUN_51pitkäkirkko `
 
 Optimisation hack for exceptional compound ’pitkäkirkko’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NOUN
-* suffix_regex: pitkäkirkko
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: äkirkko
+* suffix_regex: pitkäkirkko
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: äkirkko

@@ -7,7 +7,7 @@ lexeme: ennen
 
 in the old times, as adverb, "ennen oli kaikki paremmin"
 * UPOS:  ADV
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 
 
 ## ennen (alternate reading 2 )

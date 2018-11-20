@@ -5,16 +5,16 @@ paradigm: PROPN_BEIGNET
 ### ` PROPN_BEIGNET `
 
 Dictionary class 22 e front
-* kotus_tn: 22
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: e
+* kotus_tn: 22
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

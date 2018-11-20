@@ -7,6 +7,6 @@ lexeme: takia
 
 because of, as adpoistion, complement is genitive
 * UPOS:  ADP
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 * AdpType:  POSTPOSITION
 

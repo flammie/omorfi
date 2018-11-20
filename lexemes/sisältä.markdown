@@ -7,7 +7,7 @@ lexeme: sisältä
 
 adverb
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 
 
 ## sisältä (alternate reading 2 )
@@ -15,4 +15,5 @@ adverb
 from inside. as adposition, "talon sisältä"
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 

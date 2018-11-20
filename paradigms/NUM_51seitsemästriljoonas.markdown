@@ -5,16 +5,16 @@ paradigm: NUM_51seitsemästriljoonas
 ### ` NUM_51seitsemästriljoonas `
 
 Optimisation hack for exceptional compound ’seitsemästriljoonas’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: seitsemästriljoonas
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: striljoonas
+* suffix_regex: seitsemästriljoonas
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: striljoonas

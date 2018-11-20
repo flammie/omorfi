@@ -4,17 +4,17 @@ paradigm: NOUN_YHTIÖT
 ---
 ### ` NOUN_YHTIÖT `
 
-
-* kotus_tn: 3
-* upos: NOUN
-* suffix_regex: t
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: t
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 3
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

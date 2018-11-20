@@ -4,17 +4,17 @@ paradigm: ADJ_LÄNTÄ
 ---
 ### ` ADJ_LÄNTÄ `
 
-
-* kotus_tn: 10
-* upos: ADJ
-* suffix_regex: ntä
-* kotus_av: J
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tä
+* suffix_regex: ntä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: J
+* deletion: tä

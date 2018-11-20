@@ -7,7 +7,7 @@ lexeme: jälkeen
 
 adposition (after) when can be attached to a genitive NP, otherwise noun forms of *jälki* (trace)
 * UPOS:  ADP
-* Added from:  unihu
+* Added from:  finer|fiwikt
 * AdpType:  POSTPOSITION
 
 
@@ -16,5 +16,4 @@ adposition (after) when can be attached to a genitive NP, otherwise noun forms o
 adverb (afterhands) 
 * UPOS:  ADV
 * Added from:  unk
-* AdpType:  PREPOSITION
 

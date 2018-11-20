@@ -8,7 +8,7 @@ lexeme: Per
 This proper noun overlaps forms of very common *periä* (to inherit).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  5
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  FIRST
 * Blacklisted:  PROPN-BLOCKING
 

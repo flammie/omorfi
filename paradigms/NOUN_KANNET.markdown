@@ -5,16 +5,16 @@ paradigm: NOUN_KANNET
 ### ` NOUN_KANNET `
 
 Dictionary class xxx nnet plurale tantum
-* kotus_tn: 28
-* upos: NOUN
-* suffix_regex: nnet
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: net
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 28
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: net

@@ -5,16 +5,16 @@ paradigm: ADP_NÄKYVIIN
 ### ` ADP_NÄKYVIIN `
 
 adposition with optional possessive with -n assimilation, front harmony
-* kotus_tn: 99
-* upos: ADP
-* suffix_regex: n
-* kotus_av: None
+* clitics: True
 * grade_dir: False
 * harmony: front
-* possessive: optional
-* stem_diphthong: None
-* deletion: n
+* suffix_regex: n
 * plurale_tantum: False
-* clitics: True
-* pos: PARTICLE
+* possessive: optional
+* upos: ADP
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: n

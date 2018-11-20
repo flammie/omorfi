@@ -5,16 +5,16 @@ paradigm: AUX_PITÄÄ
 ### ` AUX_PITÄÄ `
 
 auxiliary version of tä:dä verb stem
-* kotus_tn: 53
-* upos: AUX
-* suffix_regex: pitää
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tää
+* suffix_regex: pitää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 53
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tää

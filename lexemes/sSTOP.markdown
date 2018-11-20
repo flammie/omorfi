@@ -7,5 +7,5 @@ lexeme: s.
 
 sivu, "p." or page
 * UPOS:  ADV
-* Added from:  omorfi++
+* Added from:  omorfi++|joukahainen
 

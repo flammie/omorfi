@@ -5,16 +5,16 @@ paradigm: NOUN_TIKKU
 ### ` NOUN_TIKKU `
 
 Dictionary class 1ku
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: kku
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ku
+* suffix_regex: kku
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ku

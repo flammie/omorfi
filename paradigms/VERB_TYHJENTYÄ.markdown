@@ -5,16 +5,16 @@ paradigm: VERB_TYHJENTYÄ
 ### ` VERB_TYHJENTYÄ `
 
 Dictionary class52 t~n y
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: ntyä
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tyä
+* suffix_regex: ntyä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: tyä

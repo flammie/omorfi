@@ -4,17 +4,17 @@ paradigm: PROPN_KITARA
 ---
 ### ` PROPN_KITARA `
 
-
-* kotus_tn: 13
-* upos: PROPN
-* suffix_regex: a
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: a
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 13
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

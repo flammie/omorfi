@@ -4,17 +4,17 @@ paradigm: NOUN_LUOLIKOT
 ---
 ### ` NOUN_LUOLIKOT `
 
-
-* kotus_tn: 4
-* upos: NOUN
-* suffix_regex: kot
-* kotus_av: A
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ot
+* suffix_regex: kot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 4
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ot

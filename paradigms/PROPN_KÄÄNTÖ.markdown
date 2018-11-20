@@ -5,16 +5,16 @@ paradigm: PROPN_KÄÄNTÖ
 ### ` PROPN_KÄÄNTÖ `
 
 Dictionary class 1ntö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ntö
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tö
+* suffix_regex: ntö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: tö

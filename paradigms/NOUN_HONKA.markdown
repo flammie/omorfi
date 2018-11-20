@@ -5,16 +5,16 @@ paradigm: NOUN_HONKA
 ### ` NOUN_HONKA `
 
 Dictionary class 10 back k~g
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: nka
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ka
+* suffix_regex: nka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ka

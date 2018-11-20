@@ -5,16 +5,16 @@ paradigm: PROPN_51Uusikaupunki
 ### ` PROPN_51Uusikaupunki `
 
 Optimisation hack for exceptional compound ’Uusikaupunki’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: PROPN
-* suffix_regex: Uusikaupunki
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sikaupunki
+* suffix_regex: Uusikaupunki
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sikaupunki

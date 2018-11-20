@@ -5,16 +5,16 @@ paradigm: VERB_KIVETTYÄ
 ### ` VERB_KIVETTYÄ `
 
 Dictionary class52 t~0 y
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: ttyä
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tyä
+* suffix_regex: ttyä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tyä

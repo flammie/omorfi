@@ -5,16 +5,16 @@ paradigm: NOUN_ITÄMAAT
 ### ` NOUN_ITÄMAAT `
 
 Dictionary class xxx maat plurale tantum
-* kotus_tn: 18
-* upos: NOUN
-* suffix_regex: aat
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: aat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: at

@@ -15,4 +15,5 @@ adverb
 adposition (with regards to) when can be attached to a genitive NP, otherwise noun forms of *suhde* (relation)
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 

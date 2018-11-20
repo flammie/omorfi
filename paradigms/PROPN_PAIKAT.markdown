@@ -5,16 +5,16 @@ paradigm: PROPN_PAIKAT
 ### ` PROPN_PAIKAT `
 
 Dictionary class xxx kAt plurale tantum
-* kotus_tn: 9
-* upos: PROPN
-* suffix_regex: at
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: at
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: at

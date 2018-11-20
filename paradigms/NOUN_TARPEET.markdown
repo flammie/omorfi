@@ -5,16 +5,16 @@ paradigm: NOUN_TARPEET
 ### ` NOUN_TARPEET `
 
 Dictionary class veat plurale tantum
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: peet
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: peet
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*peet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: peet

@@ -5,16 +5,16 @@ paradigm: PROPN_51Uusi-Seelanti
 ### ` PROPN_51Uusi-Seelanti `
 
 Optimisation hack for exceptional compound ’Uusi-Seelanti’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: PROPN
-* suffix_regex: Uusi-Seelanti
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: si-Seelanti
+* suffix_regex: Uusi-Seelanti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: si-Seelanti

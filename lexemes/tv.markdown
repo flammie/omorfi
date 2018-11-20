@@ -7,5 +7,5 @@ lexeme: tv
 
 tele-visio
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

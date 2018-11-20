@@ -5,16 +5,16 @@ paradigm: VERB_VIHELTÄÄ
 ### ` VERB_VIHELTÄÄ `
 
 Dictionary class54 front t~l
-* kotus_tn: 54
-* upos: VERB
-* suffix_regex: ltää
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tää
+* suffix_regex: ltää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 54
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: I
+* deletion: tää

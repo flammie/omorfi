@@ -4,17 +4,17 @@ paradigm: NOUN_RÄMEET
 ---
 ### ` NOUN_RÄMEET `
 
-
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: eet
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*eet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: et

@@ -5,16 +5,16 @@ paradigm: ADV_ISTUALLEEN
 ### ` ADV_ISTUALLEEN `
 
 None
-* kotus_tn: 99
-* upos: ADV
-* suffix_regex: en
-* kotus_av: None
+* clitics: True
 * grade_dir: False
 * harmony: back
-* possessive: obligatory
-* stem_diphthong: None
-* deletion: en
+* suffix_regex: en
 * plurale_tantum: False
-* clitics: True
-* pos: PARTICLE
+* possessive: obligatory
+* upos: ADV
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: en

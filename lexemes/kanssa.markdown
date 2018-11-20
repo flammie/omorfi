@@ -7,7 +7,7 @@ lexeme: kanssa
 
 adposition (with) when can be attached to a genitive NP, otherwise adverb (as well)
 * UPOS:  ADP
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 * AdpType:  POSTPOSITION
 
 

@@ -5,16 +5,16 @@ paradigm: PROPN_KUUS
 ### ` PROPN_KUUS `
 
 follows NUM_KUUSI pattern, except singular nominative
-* kotus_tn: 27
-* upos: PROPN
-* suffix_regex: s
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: s
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*s
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 27
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: s

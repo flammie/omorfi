@@ -5,16 +5,16 @@ paradigm: PROPN_KUPPI
 ### ` PROPN_KUPPI `
 
 Dictionary class 5 back p~0
-* kotus_tn: 5
-* upos: PROPN
-* suffix_regex: ppi
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ppi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pi

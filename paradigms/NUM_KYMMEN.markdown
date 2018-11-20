@@ -5,16 +5,16 @@ paradigm: NUM_KYMMEN
 ### ` NUM_KYMMEN `
 
 archaic form ‘kymmen’ inflects like NUM_KYMMENEN
-* kotus_tn: 32
-* upos: NUM
-* suffix_regex: kymmen
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: kymmen
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 32
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

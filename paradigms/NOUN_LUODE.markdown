@@ -4,17 +4,17 @@ paradigm: NOUN_LUODE
 ---
 ### ` NOUN_LUODE `
 
-
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: de
-* kotus_av: F
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: de
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*de
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: de

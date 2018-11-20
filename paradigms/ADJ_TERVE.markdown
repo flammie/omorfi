@@ -5,16 +5,16 @@ paradigm: ADJ_TERVE
 ### ` ADJ_TERVE `
 
 Dictionary class 48 front
-* kotus_tn: 48
-* upos: ADJ
-* suffix_regex: e
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 48
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

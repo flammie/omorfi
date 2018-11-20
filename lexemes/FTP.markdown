@@ -7,5 +7,5 @@ lexeme: FTP
 
 File Transfer Protocol
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

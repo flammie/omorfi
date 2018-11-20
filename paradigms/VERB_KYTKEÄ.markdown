@@ -5,16 +5,16 @@ paradigm: VERB_KYTKEÄ
 ### ` VERB_KYTKEÄ `
 
 Dictionary class58 front
-* kotus_tn: 58
-* upos: VERB
-* suffix_regex: eä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: eä
+* suffix_regex: eä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 58
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: eä

@@ -5,16 +5,16 @@ paradigm: VERB_PEITOTA
 ### ` VERB_PEITOTA `
 
 Dictionary class75 tota
-* kotus_tn: 75
-* upos: VERB
-* suffix_regex: tota
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ota
+* suffix_regex: tota
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 75
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: C
+* deletion: ota

@@ -4,17 +4,17 @@ paradigm: PRON_TÄMÄ
 ---
 ### ` PRON_TÄMÄ `
 
-inflects with ä stem, singulars only 
-* kotus_tn: 101
-* upos: PRON
-* suffix_regex: tämä
-* kotus_av: None
+inflects with ä stem, singulars only
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: mä
+* suffix_regex: tämä
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 101
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: mä

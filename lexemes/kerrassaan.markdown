@@ -7,5 +7,5 @@ lexeme: kerrassaan
 
 usually seen as adverb (indeed), but can be analysed as a form of *kerta* (one time)
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 

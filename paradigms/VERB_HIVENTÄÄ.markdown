@@ -5,16 +5,16 @@ paradigm: VERB_HIVENTÄÄ
 ### ` VERB_HIVENTÄÄ `
 
 Dictionary class54 front t~n
-* kotus_tn: 54
-* upos: VERB
-* suffix_regex: ntää
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tää
+* suffix_regex: ntää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 54
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: tää

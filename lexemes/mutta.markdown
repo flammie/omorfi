@@ -5,14 +5,14 @@ lexeme: mutta
 
 ###  mutta
 
-this adp is FIXME
-* UPOS:  ADP
-* Added from:  unihu
+REMOVED non CC version, provide examples to get it back
+* UPOS:  X
+* Added from:  finer
 
 
 ## mutta (alternate reading 2 )
 
-... but, co-ordinating conjunction, "ei hyvä, mutta ok"
+co-ordinating conjunction, "ei hyvä, mutta ok"
 * UPOS:  CCONJ
 * Added from:  kotus
 

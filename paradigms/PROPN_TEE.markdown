@@ -5,16 +5,16 @@ paradigm: PROPN_TEE
 ### ` PROPN_TEE `
 
 Dictionary class 18 e
-* kotus_tn: 18
-* upos: PROPN
-* suffix_regex: [ée]e
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [ée]e
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: e
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: e

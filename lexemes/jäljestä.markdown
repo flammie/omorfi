@@ -15,4 +15,5 @@ from behind, adverb
 from behind of, as adposition
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 

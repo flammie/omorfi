@@ -5,16 +5,16 @@ paradigm: NUM_51kahdestuhannes
 ### ` NUM_51kahdestuhannes `
 
 Optimisation hack for exceptional compound ’kahdestuhannes’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: kahdestuhannes
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: stuhannes
+* suffix_regex: kahdestuhannes
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: stuhannes

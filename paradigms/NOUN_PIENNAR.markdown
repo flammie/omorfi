@@ -5,16 +5,16 @@ paradigm: NOUN_PIENNAR
 ### ` NOUN_PIENNAR `
 
 Dictionary class 49 nar
-* kotus_tn: 49
-* upos: NOUN
-* suffix_regex: nnar
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nar
+* suffix_regex: nnar
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 49
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nar

@@ -5,16 +5,16 @@ paradigm: NOUN_VAATTEET
 ### ` NOUN_VAATTEET `
 
 Dictionary class teeeeet plurale tantum
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: tteet
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: teet
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tteet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: teet

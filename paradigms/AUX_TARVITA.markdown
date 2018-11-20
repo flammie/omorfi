@@ -5,16 +5,16 @@ paradigm: AUX_TARVITA
 ### ` AUX_TARVITA `
 
 auxiliary version of ta:tse verb stem
-* kotus_tn: 69
-* upos: AUX
-* suffix_regex: tarvita
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: tarvita
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 69
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ta

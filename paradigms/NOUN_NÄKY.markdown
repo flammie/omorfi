@@ -5,16 +5,16 @@ paradigm: NOUN_NÄKY
 ### ` NOUN_NÄKY `
 
 Dictionary class 1ky
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: ky
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ky
+* suffix_regex: ky
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: ky

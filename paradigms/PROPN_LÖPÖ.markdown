@@ -5,16 +5,16 @@ paradigm: PROPN_LÖPÖ
 ### ` PROPN_LÖPÖ `
 
 Dictionary class 1pö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: pö
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pö
+* suffix_regex: pö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pö

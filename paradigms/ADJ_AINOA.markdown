@@ -5,16 +5,16 @@ paradigm: ADJ_AINOA
 ### ` ADJ_AINOA `
 
 stem final a : 0 variation with colloquial a:o chance
-* kotus_tn: 15
-* upos: ADJ
-* suffix_regex: oa
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: oa
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 15
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

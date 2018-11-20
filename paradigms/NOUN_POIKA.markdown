@@ -5,16 +5,16 @@ paradigm: NOUN_POIKA
 ### ` NOUN_POIKA `
 
 Non-dictionary class poika
-* kotus_tn: 1010
-* upos: NOUN
-* suffix_regex: oika
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ika
+* suffix_regex: oika
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 1010
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: ika

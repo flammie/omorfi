@@ -5,16 +5,16 @@ paradigm: PROPN_HEPO
 ### ` PROPN_HEPO `
 
 Dictionary class 1po
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: po
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: po
+* suffix_regex: po
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: po

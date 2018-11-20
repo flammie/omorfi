@@ -4,17 +4,17 @@ paradigm: PROPN_KUMMUT
 ---
 ### ` PROPN_KUMMUT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: mmut
-* kotus_av: H
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: mut
+* suffix_regex: mmut
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: mut

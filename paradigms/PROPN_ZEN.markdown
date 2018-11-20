@@ -5,16 +5,16 @@ paradigm: PROPN_ZEN
 ### ` PROPN_ZEN `
 
 Dictionary class 5 front no i
-* kotus_tn: 5
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

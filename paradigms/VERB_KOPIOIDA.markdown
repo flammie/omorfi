@@ -5,16 +5,16 @@ paradigm: VERB_KOPIOIDA
 ### ` VERB_KOPIOIDA `
 
 Dictionary class62 back
-* kotus_tn: 62
-* upos: VERB
-* suffix_regex: ida
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ida
+* suffix_regex: ida
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 62
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ida

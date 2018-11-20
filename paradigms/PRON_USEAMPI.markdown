@@ -5,16 +5,16 @@ paradigm: PRON_USEAMPI
 ### ` PRON_USEAMPI `
 
 inflects like NOUN_VANHEMPI
-* kotus_tn: 16
-* upos: PRON
-* suffix_regex: mpi
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 16
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: pi

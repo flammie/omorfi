@@ -7,7 +7,7 @@ lexeme: ylös
 
 adverb (upwards)
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 
 
 ## ylös (alternate reading 2 )
@@ -15,4 +15,5 @@ adverb (upwards)
 adposition (up from) when can be attached to a partitive NP, otherwise adverb (upwards)
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 

@@ -5,16 +5,16 @@ paradigm: NOUN_NOUGAT
 ### ` NOUN_NOUGAT `
 
 Dictionary class 22 a
-* kotus_tn: 22
-* upos: NOUN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: 
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 22
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

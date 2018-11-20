@@ -5,14 +5,14 @@ lexeme: aina
 
 ###  aina
 
-adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
-* UPOS:  ADP
-* Added from:  unihu
+REMOVED adposition (send an example sentence if you need it back)
+* UPOS:  X
+* Added from:  finer
 
 
 ## aina (alternate reading 2 )
 
 always, as adverb, "aina mun pitää"
 * UPOS:  ADV
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 

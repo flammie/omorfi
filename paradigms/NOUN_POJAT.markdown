@@ -5,16 +5,16 @@ paradigm: NOUN_POJAT
 ### ` NOUN_POJAT `
 
 Dictionary class pojat plurale tantum
-* kotus_tn: 1010
-* upos: NOUN
-* suffix_regex: ojat
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: jat
+* suffix_regex: ojat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1010
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: jat

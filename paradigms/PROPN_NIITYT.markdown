@@ -4,17 +4,17 @@ paradigm: PROPN_NIITYT
 ---
 ### ` PROPN_NIITYT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: tyt
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: yt
+* suffix_regex: tyt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: yt

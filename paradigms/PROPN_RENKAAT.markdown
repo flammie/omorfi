@@ -5,16 +5,16 @@ paradigm: PROPN_RENKAAT
 ### ` PROPN_RENKAAT `
 
 Dictionary class gaat plurale tantum
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: kaat
-* kotus_av: G
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: kaat
+* suffix_regex: kaat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: kaat

@@ -5,16 +5,16 @@ paradigm: NOUN_TIET
 ### ` NOUN_TIET `
 
 Dictionary class 15 tiet plurale tantum
-* kotus_tn: 19
-* upos: NOUN
-* suffix_regex: iet
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: iet
+* suffix_regex: iet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 19
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: iet

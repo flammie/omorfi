@@ -4,17 +4,17 @@ paradigm: PROPN_MÄTTÄÄT
 ---
 ### ` PROPN_MÄTTÄÄT `
 
-
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: ttäät
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: täät
+* suffix_regex: ttäät
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: täät

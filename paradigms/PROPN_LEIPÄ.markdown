@@ -5,16 +5,16 @@ paradigm: PROPN_LEIPÄ
 ### ` PROPN_LEIPÄ `
 
 Dictionary class 10 front p~v
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: pä
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pä
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pä
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pä

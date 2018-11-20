@@ -5,16 +5,16 @@ paradigm: NOUN_RYNTTYYT
 ### ` NOUN_RYNTTYYT `
 
 Dictionary class ntyyt plurale tantum
-* kotus_tn: 41
-* upos: NOUN
-* suffix_regex: ttyyt
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tyyt
+* suffix_regex: ttyyt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tyyt

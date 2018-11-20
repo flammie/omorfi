@@ -5,16 +5,16 @@ paradigm: PROPN_KUULOKKEET
 ### ` PROPN_KUULOKKEET `
 
 Dictionary class kkkeeet plurale tantum
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: keet
-* kotus_av: A
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: keet
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*keet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: keet

@@ -4,17 +4,17 @@ paradigm: PROPN_RINTEET
 ---
 ### ` PROPN_RINTEET `
 
-
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: nteet
-* kotus_av: J
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: teet
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nteet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: teet

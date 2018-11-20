@@ -5,16 +5,16 @@ paradigm: NOUN_LÄMMIN
 ### ` NOUN_LÄMMIN `
 
 lexicalised ADJ_LÄMMIN, that is a noun, has min:mpimä variation
-* kotus_tn: 35
-* upos: NOUN
-* suffix_regex: min
-* kotus_av: H
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: min
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*min
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 35
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: min

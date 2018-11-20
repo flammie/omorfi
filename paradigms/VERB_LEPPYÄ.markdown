@@ -5,16 +5,16 @@ paradigm: VERB_LEPPYÄ
 ### ` VERB_LEPPYÄ `
 
 Dictionary class52 p~0 y
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: ppyä
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pyä
+* suffix_regex: ppyä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pyä

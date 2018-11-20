@@ -5,16 +5,16 @@ paradigm: NOUN_OSATON
 ### ` NOUN_OSATON `
 
 Dictionary class 34 ton
-* kotus_tn: 34
-* upos: NOUN
-* suffix_regex: ton
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: on
+* suffix_regex: ton
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 34
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: on

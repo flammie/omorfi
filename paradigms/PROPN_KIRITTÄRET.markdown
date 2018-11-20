@@ -4,17 +4,17 @@ paradigm: PROPN_KIRITTÄRET
 ---
 ### ` PROPN_KIRITTÄRET `
 
-
-* kotus_tn: 32
-* upos: PROPN
-* suffix_regex: ttäret
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: täret
+* suffix_regex: ttäret
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 32
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: täret

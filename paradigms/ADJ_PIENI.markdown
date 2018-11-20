@@ -5,16 +5,16 @@ paradigm: ADJ_PIENI
 ### ` ADJ_PIENI `
 
 Dictionary class 24~26 front
-* kotus_tn: 26
-* upos: ADJ
-* suffix_regex: i
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 26
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

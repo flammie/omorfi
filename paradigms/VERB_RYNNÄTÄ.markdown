@@ -5,16 +5,16 @@ paradigm: VERB_RYNNÄTÄ
 ### ` VERB_RYNNÄTÄ `
 
 Dictionary class73 front n~t
-* kotus_tn: 73
-* upos: VERB
-* suffix_regex: nnätä
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: nätä
+* suffix_regex: nnätä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 73
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nätä

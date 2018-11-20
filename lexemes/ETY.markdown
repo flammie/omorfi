@@ -7,6 +7,6 @@ lexeme: ETY
 
 Euroopan Turvallisuus-Yhteisö
 * UPOS:  PROPN
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  ORG
 

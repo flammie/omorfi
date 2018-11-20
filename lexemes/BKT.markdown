@@ -7,5 +7,5 @@ lexeme: BKT
 
 Brutto-Kansan-Tuote
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

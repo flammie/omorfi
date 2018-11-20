@@ -5,16 +5,16 @@ paradigm: PROPN_BRASSERIE
 ### ` PROPN_BRASSERIE `
 
 Dictionary class 21 i back
-* kotus_tn: 21
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: 
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: i
+* kotus_tn: 21
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

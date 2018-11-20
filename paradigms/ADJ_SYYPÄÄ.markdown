@@ -4,17 +4,17 @@ paradigm: ADJ_SYYPÄÄ
 ---
 ### ` ADJ_SYYPÄÄ `
 
-
-* kotus_tn: 18
-* upos: ADJ
-* suffix_regex: ää
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: ää
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 18
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

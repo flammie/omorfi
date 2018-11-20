@@ -7,5 +7,5 @@ lexeme: atk
 
 automaattinen tekstinkäsittely
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

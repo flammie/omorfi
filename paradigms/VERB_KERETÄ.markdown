@@ -4,17 +4,17 @@ paradigm: VERB_KERETÄ
 ---
 ### ` VERB_KERETÄ `
 
-Dictionary class74 front 0~k e 
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: etä
-* kotus_av: D
+Dictionary class74 front 0~k e
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: etä
+* suffix_regex: etä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: D
+* deletion: etä

@@ -4,17 +4,17 @@ paradigm: NOUN_ESIM.
 ---
 ### ` NOUN_ESIM. `
 
-Abbreviated noun with final full stop and no morphology. At the moment covers all nominal cases, may be split in the future
-* kotus_tn: 99
-* upos: ADV
-* suffix_regex: \.
-* kotus_av: None
+Abbreviated noun with final full stop and no morphology. At the moment covers parts-of-speech, may be split in the future
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: \.
 * plurale_tantum: False
-* clitics: False
-* pos: PARTICLE
+* possessive: False
+* upos: ADV
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

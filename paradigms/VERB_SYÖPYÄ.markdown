@@ -5,16 +5,16 @@ paradigm: VERB_SYÖPYÄ
 ### ` VERB_SYÖPYÄ `
 
 Dictionary class52 p~v y
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: pyä
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pyä
+* suffix_regex: pyä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pyä

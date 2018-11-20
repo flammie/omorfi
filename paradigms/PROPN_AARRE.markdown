@@ -5,16 +5,16 @@ paradigm: PROPN_AARRE
 ### ` PROPN_AARRE `
 
 Dictionary class 48 back re
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: rre
-* kotus_av: K
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: re
+* suffix_regex: rre
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: re

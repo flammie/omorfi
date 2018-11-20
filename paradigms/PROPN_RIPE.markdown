@@ -5,16 +5,16 @@ paradigm: PROPN_RIPE
 ### ` PROPN_RIPE `
 
 Dictionary class 48 front pe
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: pe
-* kotus_av: B
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pe
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: e

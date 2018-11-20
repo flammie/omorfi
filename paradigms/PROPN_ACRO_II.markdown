@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_II
 ### ` PROPN_ACRO_II `
 
 Acronyms that end in 'j' or 'i' pronoynced as letter
-* kotus_tn: 0
-* upos: PROPN
-* suffix_regex: [IJij]
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [IJij]
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

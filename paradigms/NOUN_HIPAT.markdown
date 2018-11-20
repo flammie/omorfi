@@ -5,16 +5,16 @@ paradigm: NOUN_HIPAT
 ### ` NOUN_HIPAT `
 
 Dictionary class xxx a front pp plurale tantum
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: pat
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: pat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: at

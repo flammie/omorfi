@@ -5,16 +5,16 @@ paradigm: AUX_TAITAA
 ### ` AUX_TAITAA `
 
 auxiliary version of ta:si verb stem
-* kotus_tn: 76
-* upos: AUX
-* suffix_regex: taitaa
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: taa
+* suffix_regex: taitaa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 76
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: F
+* deletion: taa

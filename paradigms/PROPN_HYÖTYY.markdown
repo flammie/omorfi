@@ -4,17 +4,17 @@ paradigm: PROPN_HYÖTYY
 ---
 ### ` PROPN_HYÖTYY `
 
-
-* kotus_tn: 17
-* upos: PROPN
-* suffix_regex: yy
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: y
+* suffix_regex: yy
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: y
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: y

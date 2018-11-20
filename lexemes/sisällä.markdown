@@ -7,7 +7,7 @@ lexeme: sisällä
 
 adverb
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 
 
 ## sisällä (alternate reading 2 )
@@ -15,4 +15,5 @@ adverb
 adposition (inside of) when can be attached to a genitive NP, otherwise adverb (inside)
 * UPOS:  ADP
 * Added from:  omorfi
+* AdpType:  POSTPOSITION
 

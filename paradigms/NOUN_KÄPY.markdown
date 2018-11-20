@@ -5,16 +5,16 @@ paradigm: NOUN_KÄPY
 ### ` NOUN_KÄPY `
 
 Dictionary class 1py
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: py
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: py
+* suffix_regex: py
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: py

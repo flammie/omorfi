@@ -5,16 +5,16 @@ paradigm: NOUN_VEMMEL
 ### ` NOUN_VEMMEL `
 
 Dictionary class 49 mel
-* kotus_tn: 49
-* upos: NOUN
-* suffix_regex: mmel
-* kotus_av: H
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: mel
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mmel
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 49
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: mel

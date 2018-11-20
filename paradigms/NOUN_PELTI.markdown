@@ -5,16 +5,16 @@ paradigm: NOUN_PELTI
 ### ` NOUN_PELTI `
 
 Dictionary class 5 front t~l
-* kotus_tn: 5
-* upos: NOUN
-* suffix_regex: lti
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*lti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: ti

@@ -5,16 +5,16 @@ paradigm: PROPN_KÖÖ
 ### ` PROPN_KÖÖ `
 
 Dictionary class 18 ö
-* kotus_tn: 18
-* upos: PROPN
-* suffix_regex: öö
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ö
+* suffix_regex: öö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ö
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ö

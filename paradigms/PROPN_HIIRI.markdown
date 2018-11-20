@@ -5,16 +5,16 @@ paradigm: PROPN_HIIRI
 ### ` PROPN_HIIRI `
 
 Dictionary class 24 front It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
-* kotus_tn: 24
-* upos: PROPN
-* suffix_regex: i
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 24
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

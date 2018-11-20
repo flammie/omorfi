@@ -5,16 +5,16 @@ paradigm: SYM_METRI
 ### ` SYM_METRI `
 
 symbols, inflection with : and compounding with -
-* kotus_tn: 0
-* upos: SYM
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: SYM
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

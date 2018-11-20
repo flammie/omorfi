@@ -7,6 +7,6 @@ lexeme: BMW
 
 Bayerische Motor W
 * UPOS:  PROPN
-* Added from:  unk
+* Added from:  omorfi
 * Possible NER class:  ORG
 

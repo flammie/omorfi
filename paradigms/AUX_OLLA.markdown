@@ -5,16 +5,16 @@ paradigm: AUX_OLLA
 ### ` AUX_OLLA `
 
 auxiliary version of ‘olla’
-* kotus_tn: 1067
-* upos: AUX
-* suffix_regex: olla
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: olla
+* suffix_regex: olla
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 1067
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: olla

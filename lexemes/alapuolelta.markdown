@@ -8,6 +8,7 @@ lexeme: alapuolelta
 from under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 
 
 ###  alapuolelta
@@ -15,4 +16,5 @@ from under, as adposition, genitive complement or possessive, "laiturin alapuole
 under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 

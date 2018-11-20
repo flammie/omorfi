@@ -5,16 +5,16 @@ paradigm: PROPN_VALJAAT
 ### ` PROPN_VALJAAT `
 
 Dictionary class jaat plurale tantum
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: aat
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: aat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: at

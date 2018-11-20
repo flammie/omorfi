@@ -5,16 +5,16 @@ paradigm: VERB_SÄRKEÄ
 ### ` VERB_SÄRKEÄ `
 
 Dictionary class58 front k~j
-* kotus_tn: 58
-* upos: VERB
-* suffix_regex: keä
-* kotus_av: L
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: keä
+* suffix_regex: keä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 58
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: L
+* deletion: keä

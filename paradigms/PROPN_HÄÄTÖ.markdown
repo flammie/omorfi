@@ -5,16 +5,16 @@ paradigm: PROPN_HÄÄTÖ
 ### ` PROPN_HÄÄTÖ `
 
 Dictionary class 1tö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: tö
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tö
+* suffix_regex: tö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tö

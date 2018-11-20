@@ -5,16 +5,16 @@ paradigm: PROPN_RUMPU
 ### ` PROPN_RUMPU `
 
 Dictionary class 1mpu
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: mpu
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pu
+* suffix_regex: mpu
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: pu

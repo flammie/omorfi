@@ -5,16 +5,16 @@ paradigm: PROPN_HÄMMINKI
 ### ` PROPN_HÄMMINKI `
 
 Dictionary class 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
-* kotus_tn: 5
-* upos: PROPN
-* suffix_regex: nki
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ki
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ki

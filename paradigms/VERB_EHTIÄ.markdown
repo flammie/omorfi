@@ -5,16 +5,16 @@ paradigm: VERB_EHTIÄ
 ### ` VERB_EHTIÄ `
 
 Dictionary class61 front t~d
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: tiä
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tiä
+* suffix_regex: tiä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tiä

@@ -7,5 +7,5 @@ lexeme: YK
 
 Yhdistyneet Kansakunnat
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

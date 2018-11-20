@@ -15,4 +15,5 @@ to / through underneath, as adverb, "täytyy mennä ali"
 to / through underneath, as adposition, genitive complement or possessive, "kölin ali"
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 

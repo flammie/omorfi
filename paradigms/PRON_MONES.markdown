@@ -5,16 +5,16 @@ paradigm: PRON_MONES
 ### ` PRON_MONES `
 
 inflects like NUM_KOLMAS
-* kotus_tn: 45
-* upos: PRON
-* suffix_regex: mones
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: s
+* suffix_regex: mones
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 45
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: s

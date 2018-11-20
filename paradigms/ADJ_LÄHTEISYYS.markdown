@@ -5,16 +5,16 @@ paradigm: ADJ_LÄHTEISYYS
 ### ` ADJ_LÄHTEISYYS `
 
 Dictionary class 40
-* kotus_tn: 40
-* upos: ADJ
-* suffix_regex: ys
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: s
+* suffix_regex: ys
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 40
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: s

@@ -5,16 +5,16 @@ paradigm: VERB_TAKOA
 ### ` VERB_TAKOA `
 
 Dictionary class52 k~0’ o
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: koa
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: koa
+* suffix_regex: koa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: D
+* deletion: koa

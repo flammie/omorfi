@@ -5,16 +5,16 @@ paradigm: VERB_VIEDÄ
 ### ` VERB_VIEDÄ `
 
 Dictionary class64 ie
-* kotus_tn: 64
-* upos: VERB
-* suffix_regex: iedä
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: iedä
+* suffix_regex: iedä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 64
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: iedä

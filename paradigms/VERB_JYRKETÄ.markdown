@@ -5,16 +5,16 @@ paradigm: VERB_JYRKETÄ
 ### ` VERB_JYRKETÄ `
 
 Dictionary class72 front 0~k
-* kotus_tn: 72
-* upos: VERB
-* suffix_regex: etä
-* kotus_av: A
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: etä
+* suffix_regex: etä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 72
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: A
+* deletion: etä

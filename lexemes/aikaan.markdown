@@ -14,5 +14,6 @@ done, accomplished, verb complement kind of, e.g., "saada aikaan"
 
 during (around), adposition with genitive complement, e.g., "sen aikaan"
 * UPOS:  ADP
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
+* AdpType:  POSTPOSITION
 

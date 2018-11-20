@@ -5,16 +5,16 @@ paradigm: ADV_ILKOSILLAAN
 ### ` ADV_ILKOSILLAAN `
 
 None
-* kotus_tn: 99
-* upos: ADV
-* suffix_regex: an
-* kotus_av: None
+* clitics: True
 * grade_dir: False
 * harmony: back
-* possessive: obligatory
-* stem_diphthong: None
-* deletion: an
+* suffix_regex: an
 * plurale_tantum: False
-* clitics: True
-* pos: PARTICLE
+* possessive: obligatory
+* upos: ADV
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: an

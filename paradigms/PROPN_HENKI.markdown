@@ -5,16 +5,16 @@ paradigm: PROPN_HENKI
 ### ` PROPN_HENKI `
 
 Dictionary class 7 front k~g
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: nki
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ki
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ki

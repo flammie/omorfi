@@ -5,16 +5,16 @@ paradigm: PROPN_PIIROA
 ### ` PROPN_PIIROA `
 
 dictionary class 15 oa, lexicalised ADJ_AINOA nouns
-* kotus_tn: 15
-* upos: PROPN
-* suffix_regex: [ôo]a
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: [ôo]a
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 15
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

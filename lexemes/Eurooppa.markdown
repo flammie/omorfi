@@ -8,6 +8,6 @@ lexeme: Eurooppa
 Europe, as proper noun for geographical area
 * UPOS:  PROPN
 * in KOTUS dictionary under:  10
-* Added from:  unihu|joukahainen|omorfi++
+* Added from:  finer|joukahainen|omorfi++
 * Possible NER class:  GEO
 

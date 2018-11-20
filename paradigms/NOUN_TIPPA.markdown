@@ -5,16 +5,16 @@ paradigm: NOUN_TIPPA
 ### ` NOUN_TIPPA `
 
 Dictionary class 9 p~0
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: ppa
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pa
+* suffix_regex: ppa
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pa

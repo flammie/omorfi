@@ -5,16 +5,16 @@ paradigm: NOUN_VANHEMMAT
 ### ` NOUN_VANHEMMAT `
 
 Dictionary class xxx matt plurale tantum
-* kotus_tn: 16
-* upos: NOUN
-* suffix_regex: mmat
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: mat
+* suffix_regex: mmat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 16
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: mat

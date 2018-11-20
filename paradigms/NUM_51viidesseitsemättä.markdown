@@ -5,16 +5,16 @@ paradigm: NUM_51viidesseitsemättä
 ### ` NUM_51viidesseitsemättä `
 
 Optimisation hack for exceptional compound ’viidesseitsemättä’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: viidesseitsemättä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sseitsemättä
+* suffix_regex: viidesseitsemättä
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sseitsemättä

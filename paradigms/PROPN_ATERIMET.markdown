@@ -5,16 +5,16 @@ paradigm: PROPN_ATERIMET
 ### ` PROPN_ATERIMET `
 
 Dictionary class 31 t plurale tantum
-* kotus_tn: 33
-* upos: PROPN
-* suffix_regex: met
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: met
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*met
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: met

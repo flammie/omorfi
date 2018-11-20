@@ -4,17 +4,17 @@ paradigm: ADJ_MYKKÄ
 ---
 ### ` ADJ_MYKKÄ `
 
-
-* kotus_tn: 10
-* upos: ADJ
-* suffix_regex: kkä
-* kotus_av: A
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kä
+* suffix_regex: kkä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: A
+* deletion: kä

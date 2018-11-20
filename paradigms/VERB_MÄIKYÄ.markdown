@@ -5,16 +5,16 @@ paradigm: VERB_MÄIKYÄ
 ### ` VERB_MÄIKYÄ `
 
 Dictionary class52 k~0’ y
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: kyä
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kyä
+* suffix_regex: kyä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: D
+* deletion: kyä

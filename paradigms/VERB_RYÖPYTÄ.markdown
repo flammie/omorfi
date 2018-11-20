@@ -5,16 +5,16 @@ paradigm: VERB_RYÖPYTÄ
 ### ` VERB_RYÖPYTÄ `
 
 Dictionary class75 pytä
-* kotus_tn: 75
-* upos: VERB
-* suffix_regex: pytä
-* kotus_av: B
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ytä
+* suffix_regex: pytä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 75
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: ytä

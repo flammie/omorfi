@@ -4,17 +4,17 @@ paradigm: VERB_ETUILLA
 ---
 ### ` VERB_ETUILLA `
 
-Dictionary class67 back i~e l 
-* kotus_tn: 67
-* upos: VERB
-* suffix_regex: lla
-* kotus_av: None
+Dictionary class67 back i~e l
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: la
+* suffix_regex: lla
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 67
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: la

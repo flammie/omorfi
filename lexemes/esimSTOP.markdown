@@ -7,5 +7,5 @@ lexeme: esim.
 
 esimerkiksi, "e.g." or for example
 * UPOS:  ADV
-* Added from:  omorfi++
+* Added from:  omorfi++|joukahainen
 

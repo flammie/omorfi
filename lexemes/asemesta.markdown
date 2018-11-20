@@ -8,4 +8,5 @@ lexeme: asemesta
 instead of, as adposition, genitive complement or possessive, "tien asemesta", grammar recommends instead of 'asemasta'
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 

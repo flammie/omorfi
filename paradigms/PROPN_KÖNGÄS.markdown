@@ -5,16 +5,16 @@ paradigm: PROPN_KÖNGÄS
 ### ` PROPN_KÖNGÄS `
 
 Dictionary class 41 gäs
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: ngäs
-* kotus_av: G
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: gäs
+* suffix_regex: ngäs
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: gäs

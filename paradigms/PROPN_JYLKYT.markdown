@@ -4,17 +4,17 @@ paradigm: PROPN_JYLKYT
 ---
 ### ` PROPN_JYLKYT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: kyt
-* kotus_av: A
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: yt
+* suffix_regex: kyt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: yt

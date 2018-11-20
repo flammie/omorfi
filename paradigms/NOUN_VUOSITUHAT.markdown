@@ -5,16 +5,16 @@ paradigm: NOUN_VUOSITUHAT
 ### ` NOUN_VUOSITUHAT `
 
 Non-dictionary class for numeral compounds ending 1000
-* kotus_tn: 46
-* upos: NOUN
-* suffix_regex: t
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*t
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 46
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

@@ -5,16 +5,16 @@ paradigm: NUM_51kuusikvadriljardia
 ### ` NUM_51kuusikvadriljardia `
 
 Optimisation hack for exceptional compound ’kuusikvadriljardia’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: kuusikvadriljardia
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sikvadriljardia
+* suffix_regex: kuusikvadriljardia
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sikvadriljardia

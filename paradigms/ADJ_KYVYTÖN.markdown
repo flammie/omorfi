@@ -5,16 +5,16 @@ paradigm: ADJ_KYVYTÖN
 ### ` ADJ_KYVYTÖN `
 
 Dictionary class 34 0~t front
-* kotus_tn: 34
-* upos: ADJ
-* suffix_regex: tön
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ön
+* suffix_regex: tön
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 34
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: C
+* deletion: ön

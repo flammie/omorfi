@@ -5,16 +5,16 @@ paradigm: VERB_VERRATA
 ### ` VERB_VERRATA `
 
 Dictionary class73 back r~t
-* kotus_tn: 73
-* upos: VERB
-* suffix_regex: rrata
-* kotus_av: K
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: rata
+* suffix_regex: rrata
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 73
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: K
+* deletion: rata

@@ -5,16 +5,16 @@ paradigm: NOUN_VIHKO
 ### ` NOUN_VIHKO `
 
 k:0 with optional k not gradating
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: hko
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ko
+* suffix_regex: hko
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: ko

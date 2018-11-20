@@ -5,16 +5,16 @@ paradigm: PRON_MUUAN
 ### ` PRON_MUUAN `
 
 no inflects
-* kotus_tn: 101
-* upos: PRON
-* suffix_regex: an
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: n
+* suffix_regex: an
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 101
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: n

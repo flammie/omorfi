@@ -5,16 +5,16 @@ paradigm: PROPN_VARVAS
 ### ` PROPN_VARVAS `
 
 Dictionary class 41 vas
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: vas
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: vas
+* suffix_regex: vas
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: vas

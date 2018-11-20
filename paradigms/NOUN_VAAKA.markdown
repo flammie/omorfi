@@ -5,16 +5,16 @@ paradigm: NOUN_VAAKA
 ### ` NOUN_VAAKA `
 
 Dictionary class 9 k~’ with obligatory ’
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: ka
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ka
+* suffix_regex: ka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: ka

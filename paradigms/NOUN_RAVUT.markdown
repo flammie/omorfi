@@ -5,16 +5,16 @@ paradigm: NOUN_RAVUT
 ### ` NOUN_RAVUT `
 
 Dictionary class 1vut plurale tantum
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: vut
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: vut
+* suffix_regex: vut
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: vut

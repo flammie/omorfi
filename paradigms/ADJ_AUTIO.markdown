@@ -4,17 +4,17 @@ paradigm: ADJ_AUTIO
 ---
 ### ` ADJ_AUTIO `
 
-The class for o final long vowel stems is described here, and old old dictionaries used ³. 
-* kotus_tn: 3
-* upos: ADJ
-* suffix_regex: io
-* kotus_av: None
+The class for o final long vowel stems is described here, and old old dictionaries used ³.
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: io
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 3
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

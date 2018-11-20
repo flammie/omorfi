@@ -4,17 +4,17 @@ paradigm: PROPN_KÄRJET
 ---
 ### ` PROPN_KÄRJET `
 
-
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: jet
-* kotus_av: L
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: jet
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*jet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: L
+* deletion: jet

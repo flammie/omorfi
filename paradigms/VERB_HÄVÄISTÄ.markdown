@@ -5,16 +5,16 @@ paradigm: VERB_HÄVÄISTÄ
 ### ` VERB_HÄVÄISTÄ `
 
 Dictionary class66 front v p
-* kotus_tn: 66
-* upos: VERB
-* suffix_regex: väistä
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: väistä
+* suffix_regex: väistä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 66
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: väistä

@@ -5,16 +5,16 @@ paradigm: PROPN_MYRKKY
 ### ` PROPN_MYRKKY `
 
 Dictionary class 1ky
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: kky
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ky
+* suffix_regex: kky
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ky

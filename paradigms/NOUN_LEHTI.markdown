@@ -5,16 +5,16 @@ paradigm: NOUN_LEHTI
 ### ` NOUN_LEHTI `
 
 Dictionary class 7 front t~d
-* kotus_tn: 7
-* upos: NOUN
-* suffix_regex: ti
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: ti

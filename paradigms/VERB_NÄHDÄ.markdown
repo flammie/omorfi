@@ -5,16 +5,16 @@ paradigm: VERB_NÄHDÄ
 ### ` VERB_NÄHDÄ `
 
 Dictionary class71
-* kotus_tn: 71
-* upos: VERB
-* suffix_regex: hdä
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: hdä
+* suffix_regex: hdä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 71
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: hdä

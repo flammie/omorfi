@@ -5,16 +5,16 @@ paradigm: NUM_51neljäspiljoonas
 ### ` NUM_51neljäspiljoonas `
 
 Optimisation hack for exceptional compound ’neljäspiljoonas’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: neljäspiljoonas
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: spiljoonas
+* suffix_regex: neljäspiljoonas
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: spiljoonas

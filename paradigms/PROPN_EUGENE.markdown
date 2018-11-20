@@ -4,17 +4,17 @@ paradigm: PROPN_EUGENE
 ---
 ### ` PROPN_EUGENE `
 
-
-* kotus_tn: 2
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: 
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 2
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

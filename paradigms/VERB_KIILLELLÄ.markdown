@@ -5,16 +5,16 @@ paradigm: VERB_KIILLELLÄ
 ### ` VERB_KIILLELLÄ `
 
 Dictionary class67 frpnt l l~t
-* kotus_tn: 67
-* upos: VERB
-* suffix_regex: lellä
-* kotus_av: I
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: lellä
+* suffix_regex: lellä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 67
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: I
+* deletion: lellä

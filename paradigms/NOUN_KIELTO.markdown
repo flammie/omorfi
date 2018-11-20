@@ -5,16 +5,16 @@ paradigm: NOUN_KIELTO
 ### ` NOUN_KIELTO `
 
 Dictionary class 1lto
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: lto
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: to
+* suffix_regex: lto
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: to

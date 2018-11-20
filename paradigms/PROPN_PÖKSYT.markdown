@@ -5,16 +5,16 @@ paradigm: PROPN_PÖKSYT
 ### ` PROPN_PÖKSYT `
 
 Dictionary class 1y plurale tantum
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: yt
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: yt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

@@ -4,17 +4,17 @@ paradigm: NOUN_ONNET
 ---
 ### ` NOUN_ONNET `
 
-
-* kotus_tn: 7
-* upos: NOUN
-* suffix_regex: net
-* kotus_av: J
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*net
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: et

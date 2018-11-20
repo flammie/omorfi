@@ -5,16 +5,16 @@ paradigm: AUX_EI
 ### ` AUX_EI `
 
 Negation verb ‘ei’ has heteroclitic inflection
-* kotus_tn: 1099
+* clitics: False
 * grade_dir: weaken
-* upos: AUX
-* stem_vowel: None
 * harmony: front
 * suffix_regex: ei
-* possessive: False
 * plurale_tantum: False
+* possessive: False
+* upos: AUX
+* stem_vowel: None
+* kotus_tn: 1099
 * pos: VERB
+* stem_diphthong: None
 * kotus_av: None
 * deletion: ei
-* stem_diphthong: None
-* clitics: False

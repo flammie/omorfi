@@ -5,16 +5,16 @@ paradigm: VERB_TAPPAA
 ### ` VERB_TAPPAA `
 
 Dictionary class56 back p~0
-* kotus_tn: 56
-* upos: VERB
-* suffix_regex: ppaa
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: paa
+* suffix_regex: ppaa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 56
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: paa

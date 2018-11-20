@@ -7,7 +7,7 @@ lexeme: että
 
 that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature "tiesin, että on yö"
 * UPOS:  SCONJ
-* Added from:  kotus
+* Added from:  kotus|joukahainen
 
 
 ## että (alternate reading 3 )

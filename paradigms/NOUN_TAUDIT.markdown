@@ -5,16 +5,16 @@ paradigm: NOUN_TAUDIT
 ### ` NOUN_TAUDIT `
 
 Dictionary class xxx dit plurale tantum
-* kotus_tn: 5
-* upos: NOUN
-* suffix_regex: dit
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: dit
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*dit
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: dit

@@ -5,16 +5,16 @@ paradigm: PROPN_BERNIE
 ### ` PROPN_BERNIE `
 
 This class includes a set of new proper nouns that get nativised a bit Dictionary class 3etä
-* kotus_tn: 3
-* upos: PROPN
-* suffix_regex: e
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 3
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

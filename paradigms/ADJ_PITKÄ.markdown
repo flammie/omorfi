@@ -5,16 +5,16 @@ paradigm: ADJ_PITKÄ
 ### ` ADJ_PITKÄ `
 
 Adjective pitkä
-* kotus_tn: 1010
-* upos: ADJ
-* suffix_regex: tkä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tkä
+* suffix_regex: tkä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 1010
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: tkä

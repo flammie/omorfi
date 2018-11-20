@@ -5,16 +5,16 @@ paradigm: NOUN_IES
 ### ` NOUN_IES `
 
 Dictionary class 41 ies
-* kotus_tn: 41
-* upos: NOUN
-* suffix_regex: es
-* kotus_av: D
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: es
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*es
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: es

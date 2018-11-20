@@ -4,17 +4,17 @@ paradigm: PROPN_VÄRTÖ
 ---
 ### ` PROPN_VÄRTÖ `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: rtö
-* kotus_av: K
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tö
+* suffix_regex: rtö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: tö

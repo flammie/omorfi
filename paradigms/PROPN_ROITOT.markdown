@@ -4,17 +4,17 @@ paradigm: PROPN_ROITOT
 ---
 ### ` PROPN_ROITOT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: tot
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ot
+* suffix_regex: tot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: ot

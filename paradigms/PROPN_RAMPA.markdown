@@ -5,16 +5,16 @@ paradigm: PROPN_RAMPA
 ### ` PROPN_RAMPA `
 
 Dictionary class 9 p~m
-* kotus_tn: 9
-* upos: PROPN
-* suffix_regex: mpa
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pa
+* suffix_regex: mpa
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: pa

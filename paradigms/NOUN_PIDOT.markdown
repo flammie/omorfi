@@ -5,16 +5,16 @@ paradigm: NOUN_PIDOT
 ### ` NOUN_PIDOT `
 
 Dictionary class 1ot plurale tantum
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: dot
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: dot
+* suffix_regex: dot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: dot

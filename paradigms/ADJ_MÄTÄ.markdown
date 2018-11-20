@@ -4,17 +4,17 @@ paradigm: ADJ_MÄTÄ
 ---
 ### ` ADJ_MÄTÄ `
 
-
-* kotus_tn: 10
-* upos: ADJ
-* suffix_regex: tä
-* kotus_av: F
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tä
+* suffix_regex: tä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tä

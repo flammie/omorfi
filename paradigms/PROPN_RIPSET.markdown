@@ -5,16 +5,16 @@ paradigm: PROPN_RIPSET
 ### ` PROPN_RIPSET `
 
 Dictionary class xxx ripset plurale tantum
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: et
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*et
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: et

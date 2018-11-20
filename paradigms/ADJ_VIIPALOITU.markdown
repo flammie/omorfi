@@ -5,16 +5,16 @@ paradigm: ADJ_VIIPALOITU
 ### ` ADJ_VIIPALOITU `
 
 The gradation of t ~ d after u is in class described here, the dictionary class for this is ¹⁻F. The commonest t ~ d variation in u stems comes from nut participle’s passive’s back form (-tu).
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: tu
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: tu
+* suffix_regex: tu
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tu

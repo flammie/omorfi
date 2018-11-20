@@ -5,16 +5,16 @@ paradigm: PROPN_PUU
 ### ` PROPN_PUU `
 
 Dictionary class 18 u
-* kotus_tn: 18
-* upos: PROPN
-* suffix_regex: u
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: u
+* suffix_regex: u
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: u
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: u

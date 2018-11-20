@@ -7,5 +7,5 @@ lexeme: myöhään
 
 usually seen as adverb (late), but can be analysed as illative of the adjective *myöhä* (late)
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 

@@ -4,17 +4,17 @@ paradigm: ADJ_LÄHEMPI
 ---
 ### ` ADJ_LÄHEMPI `
 
-
-* kotus_tn: 16
-* upos: ADJ
-* suffix_regex: mpi
-* kotus_av: H
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mpi
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 16
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: H
+* deletion: pi

@@ -5,16 +5,16 @@ paradigm: PROPN_VIRSI
 ### ` PROPN_VIRSI `
 
 Dictionary class 27 front t~r
-* kotus_tn: 28
-* upos: PROPN
-* suffix_regex: rsi
-* kotus_av: K
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: si
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*rsi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 28
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: si

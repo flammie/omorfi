@@ -5,16 +5,16 @@ paradigm: PROPN_RAKENNE
 ### ` PROPN_RAKENNE `
 
 Dictionary class 48 back ne
-* kotus_tn: 48
-* upos: PROPN
-* suffix_regex: ne
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ne
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ne
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ne

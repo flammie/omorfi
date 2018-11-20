@@ -4,17 +4,17 @@ paradigm: NOUN_PINSETIT
 ---
 ### ` NOUN_PINSETIT `
 
-
-* kotus_tn: 5
-* upos: NOUN
-* suffix_regex: tit
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: it
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tit
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: it

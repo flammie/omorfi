@@ -4,17 +4,17 @@ paradigm: PROPN_KAARROT
 ---
 ### ` PROPN_KAARROT `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: rrot
-* kotus_av: K
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: rot
+* suffix_regex: rrot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: rot

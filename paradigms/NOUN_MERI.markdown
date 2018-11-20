@@ -5,16 +5,16 @@ paradigm: NOUN_MERI
 ### ` NOUN_MERI `
 
 Non-Dictionary class meri
-* kotus_tn: 1024
-* upos: NOUN
-* suffix_regex: i
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: both
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1024
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

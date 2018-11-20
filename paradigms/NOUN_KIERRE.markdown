@@ -5,16 +5,16 @@ paradigm: NOUN_KIERRE
 ### ` NOUN_KIERRE `
 
 Dictionary class 48 fron re
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: rre
-* kotus_av: K
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: re
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*rre
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: re

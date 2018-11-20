@@ -5,16 +5,16 @@ paradigm: ADJ_KADE
 ### ` ADJ_KADE `
 
 Dictionary class 48 d~t back
-* kotus_tn: 48
-* upos: ADJ
-* suffix_regex: de
-* kotus_av: F
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: de
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*de
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 48
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: F
+* deletion: de

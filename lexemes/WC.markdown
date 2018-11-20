@@ -7,5 +7,5 @@ lexeme: WC
 
 Water Closet
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen|enwikt
 

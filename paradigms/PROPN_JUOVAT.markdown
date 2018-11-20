@@ -5,16 +5,16 @@ paradigm: PROPN_JUOVAT
 ### ` PROPN_JUOVAT `
 
 proper noun inflects like NOUN_PROBLEEMAT
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: vat
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: vat
+* suffix_regex: vat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: vat

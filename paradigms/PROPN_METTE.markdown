@@ -4,17 +4,17 @@ paradigm: PROPN_METTE
 ---
 ### ` PROPN_METTE `
 
-
-* kotus_tn: 8
-* upos: PROPN
-* suffix_regex: tte
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: te
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tte
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 8
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: te

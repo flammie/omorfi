@@ -5,16 +5,16 @@ paradigm: ADJ_NELJÄS
 ### ` ADJ_NELJÄS `
 
 the ordinals > 2 have s:nne stem variation, back vowel variant
-* kotus_tn: 45
-* upos: ADJ
-* suffix_regex: s
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: s
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 45
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: s

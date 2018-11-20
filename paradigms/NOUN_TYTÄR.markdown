@@ -5,16 +5,16 @@ paradigm: NOUN_TYTÄR
 ### ` NOUN_TYTÄR `
 
 Dictionary class 32 tär
-* kotus_tn: 32
-* upos: NOUN
-* suffix_regex: tär
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: är
+* suffix_regex: tär
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 32
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: är

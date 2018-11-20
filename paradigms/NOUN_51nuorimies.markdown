@@ -5,16 +5,16 @@ paradigm: NOUN_51nuorimies
 ### ` NOUN_51nuorimies `
 
 Optimisation hack for exceptional compound ’nuorimies’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NOUN
-* suffix_regex: nuorimies
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: imies
+* suffix_regex: nuorimies
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: imies

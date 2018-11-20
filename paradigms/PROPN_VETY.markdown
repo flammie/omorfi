@@ -5,16 +5,16 @@ paradigm: PROPN_VETY
 ### ` PROPN_VETY `
 
 Dictionary class 1ty
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ty
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ty
+* suffix_regex: ty
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: ty

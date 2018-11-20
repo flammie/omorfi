@@ -7,5 +7,5 @@ lexeme: DVD
 
 Digital Versatile Disc
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

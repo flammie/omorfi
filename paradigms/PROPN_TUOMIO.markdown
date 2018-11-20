@@ -5,16 +5,16 @@ paradigm: PROPN_TUOMIO
 ### ` PROPN_TUOMIO `
 
 The words with stem vowel o, u, y, ö preceded by vowels still have no more stem variation than other cases, but give yet another pattern of allomorphs for plural partitives and genitives Dictionary class 3o There's plenty of imaginable non-standard allomorph forms after long vowels
-* kotus_tn: 3
-* upos: PROPN
-* suffix_regex: o
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: o
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 3
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

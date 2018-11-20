@@ -4,17 +4,17 @@ paradigm: PROPN_LAMMET
 ---
 ### ` PROPN_LAMMET `
 
-
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: mmet
-* kotus_av: H
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: met
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mmet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: met

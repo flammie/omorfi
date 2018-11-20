@@ -5,16 +5,16 @@ paradigm: VERB_SUUNNATA
 ### ` VERB_SUUNNATA `
 
 Dictionary class73 back n~t
-* kotus_tn: 73
-* upos: VERB
-* suffix_regex: nata
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nata
+* suffix_regex: nata
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 73
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nata

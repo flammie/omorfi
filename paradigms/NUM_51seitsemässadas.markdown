@@ -5,16 +5,16 @@ paradigm: NUM_51seitsemässadas
 ### ` NUM_51seitsemässadas `
 
 Optimisation hack for exceptional compound ’seitsemässadas’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: seitsemässadas
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ssadas
+* suffix_regex: seitsemässadas
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ssadas

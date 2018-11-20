@@ -4,17 +4,17 @@ paradigm: VERB_LÄMMETÄ
 ---
 ### ` VERB_LÄMMETÄ `
 
-Dictionary class72 front m~p 
-* kotus_tn: 72
-* upos: VERB
-* suffix_regex: mmetä
-* kotus_av: H
+Dictionary class72 front m~p
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: metä
+* suffix_regex: mmetä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 72
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: H
+* deletion: metä

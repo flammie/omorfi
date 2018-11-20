@@ -5,16 +5,16 @@ paradigm: NOUN_51nuori-isäntä
 ### ` NOUN_51nuori-isäntä `
 
 Optimisation hack for exceptional compound ’nuori-isäntä’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NOUN
-* suffix_regex: nuori-isäntä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: i-isäntä
+* suffix_regex: nuori-isäntä
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i-isäntä

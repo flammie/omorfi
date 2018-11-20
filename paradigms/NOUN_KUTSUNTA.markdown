@@ -5,16 +5,16 @@ paradigm: NOUN_KUTSUNTA
 ### ` NOUN_KUTSUNTA `
 
 Dictionary class 9 t~n
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: nta
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: nta
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: ta

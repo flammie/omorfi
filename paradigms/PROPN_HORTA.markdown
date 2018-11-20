@@ -4,17 +4,17 @@ paradigm: PROPN_HORTA
 ---
 ### ` PROPN_HORTA `
 
-
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: rta
-* kotus_av: K
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: rta
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: ta

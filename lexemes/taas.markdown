@@ -7,7 +7,7 @@ lexeme: taas
 
 again, adverb, "taas myöhässä"
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 
 
 ## taas (alternate reading 2 )

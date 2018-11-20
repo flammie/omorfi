@@ -5,16 +5,16 @@ paradigm: PROPN_KERTA
 ### ` PROPN_KERTA `
 
 Dictionary class 9 t~r
-* kotus_tn: 9
-* upos: PROPN
-* suffix_regex: rta
-* kotus_av: K
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: rta
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: K
+* deletion: ta

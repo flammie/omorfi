@@ -5,16 +5,16 @@ paradigm: NOUN_MIES
 ### ` NOUN_MIES `
 
 Dictionary class 42
-* kotus_tn: 42
-* upos: NOUN
-* suffix_regex: ies
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: s
+* suffix_regex: ies
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 42
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: s

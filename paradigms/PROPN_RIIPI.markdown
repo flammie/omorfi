@@ -4,17 +4,17 @@ paradigm: PROPN_RIIPI
 ---
 ### ` PROPN_RIIPI `
 
-
-* kotus_tn: 5
-* upos: PROPN
-* suffix_regex: pi
-* kotus_av: E
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pi

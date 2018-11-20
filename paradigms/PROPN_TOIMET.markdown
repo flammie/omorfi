@@ -5,16 +5,16 @@ paradigm: PROPN_TOIMET
 ### ` PROPN_TOIMET `
 
 Dictionary class 25 t plurale tantum
-* kotus_tn: 25
-* upos: PROPN
-* suffix_regex: et
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 25
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: et

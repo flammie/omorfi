@@ -5,16 +5,16 @@ paradigm: NOUN_LÄÄKE
 ### ` NOUN_LÄÄKE `
 
 Dictionary class 48 front ke
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: ke
-* kotus_av: A
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: e

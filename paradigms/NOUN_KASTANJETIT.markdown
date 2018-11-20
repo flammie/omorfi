@@ -5,16 +5,16 @@ paradigm: NOUN_KASTANJETIT
 ### ` NOUN_KASTANJETIT `
 
 Dictionary class xxx tit plurale tantum
-* kotus_tn: 5
-* upos: NOUN
-* suffix_regex: tit
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: it
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tit
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: it

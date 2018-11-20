@@ -5,16 +5,16 @@ paradigm: ADJ_HARRAS
 ### ` ADJ_HARRAS `
 
 Dictionary class 41 ras
-* kotus_tn: 41
-* upos: ADJ
-* suffix_regex: rras
-* kotus_av: K
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ras
+* suffix_regex: rras
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 41
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: K
+* deletion: ras

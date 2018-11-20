@@ -5,16 +5,16 @@ paradigm: ADJ_MELTO
 ### ` ADJ_MELTO `
 
 The quantitative gradation of t after l in o stems is in class described here, which corresponds to dictionary class ¹⁻I.
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: lto
-* kotus_av: I
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: to
+* suffix_regex: lto
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: I
+* deletion: to

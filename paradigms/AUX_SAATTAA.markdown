@@ -5,16 +5,16 @@ paradigm: AUX_SAATTAA
 ### ` AUX_SAATTAA `
 
 auxiliary version of ttaa:to verb stem
-* kotus_tn: 56
-* upos: AUX
-* suffix_regex: saattaa
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: taa
+* suffix_regex: saattaa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: AUX
 * stem_vowel: None
+* kotus_tn: 56
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: C
+* deletion: taa

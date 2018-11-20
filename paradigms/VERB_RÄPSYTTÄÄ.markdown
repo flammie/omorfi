@@ -5,16 +5,16 @@ paradigm: VERB_RÄPSYTTÄÄ
 ### ` VERB_RÄPSYTTÄÄ `
 
 Dictionary class53 front t~0
-* kotus_tn: 53
-* upos: VERB
-* suffix_regex: ttää
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tää
+* suffix_regex: ttää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 53
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tää

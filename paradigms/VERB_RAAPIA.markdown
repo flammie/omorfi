@@ -5,16 +5,16 @@ paradigm: VERB_RAAPIA
 ### ` VERB_RAAPIA `
 
 Dictionary class61 back p~v
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: pia
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pia
+* suffix_regex: pia
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: pia

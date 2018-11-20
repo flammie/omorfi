@@ -5,16 +5,16 @@ paradigm: PROPN_SKEITTI
 ### ` PROPN_SKEITTI `
 
 Dictionary class 5 front t~0
-* kotus_tn: 5
-* upos: PROPN
-* suffix_regex: tti
-* kotus_av: C
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tti
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: ti

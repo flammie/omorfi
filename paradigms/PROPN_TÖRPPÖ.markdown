@@ -5,16 +5,16 @@ paradigm: PROPN_TÖRPPÖ
 ### ` PROPN_TÖRPPÖ `
 
 Dictionary class 1pö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ppö
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pö
+* suffix_regex: ppö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pö

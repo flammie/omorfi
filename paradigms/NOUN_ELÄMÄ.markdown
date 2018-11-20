@@ -5,16 +5,16 @@ paradigm: NOUN_ELÄMÄ
 ### ` NOUN_ELÄMÄ `
 
 Dictionary class 11 front
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: ä
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ä
+* suffix_regex: ä
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ä

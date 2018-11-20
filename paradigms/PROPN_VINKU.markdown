@@ -5,16 +5,16 @@ paradigm: PROPN_VINKU
 ### ` PROPN_VINKU `
 
 Dictionary class 1nku
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: nku
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ku
+* suffix_regex: nku
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: ku

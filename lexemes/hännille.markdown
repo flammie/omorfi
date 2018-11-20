@@ -8,4 +8,5 @@ lexeme: hännille
 to end, tails, as adposition, genitive complement or possessive, "jonon hännille"
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 

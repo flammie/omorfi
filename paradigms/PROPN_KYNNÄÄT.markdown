@@ -4,17 +4,17 @@ paradigm: PROPN_KYNNÄÄT
 ---
 ### ` PROPN_KYNNÄÄT `
 
-
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: äät
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ät
+* suffix_regex: äät
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ät

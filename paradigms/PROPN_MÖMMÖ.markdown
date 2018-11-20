@@ -5,16 +5,16 @@ paradigm: PROPN_MÖMMÖ
 ### ` PROPN_MÖMMÖ `
 
 Dictionary class 1ö
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ö
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: ö
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

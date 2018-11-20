@@ -5,16 +5,16 @@ paradigm: VERB_LÄMMITÄ
 ### ` VERB_LÄMMITÄ `
 
 Dictionary class75 mitä
-* kotus_tn: 75
-* upos: VERB
-* suffix_regex: mmitä
-* kotus_av: H
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: mitä
+* suffix_regex: mmitä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 75
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: H
+* deletion: mitä

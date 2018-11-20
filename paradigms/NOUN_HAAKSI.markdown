@@ -5,16 +5,16 @@ paradigm: NOUN_HAAKSI
 ### ` NOUN_HAAKSI `
 
 Dictionary class 27 ksi
-* kotus_tn: 31
-* upos: NOUN
-* suffix_regex: ksi
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ksi
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ksi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 31
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ksi

@@ -5,16 +5,16 @@ paradigm: NOUN_SERKUKSET
 ### ` NOUN_SERKUKSET `
 
 Dictionary class kset plurale tantum
-* kotus_tn: 39
-* upos: NOUN
-* suffix_regex: kset
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: kset
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kset
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 39
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: kset

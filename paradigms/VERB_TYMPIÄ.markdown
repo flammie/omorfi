@@ -5,16 +5,16 @@ paradigm: VERB_TYMPIÄ
 ### ` VERB_TYMPIÄ `
 
 Dictionary class61 frontp~m
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: mpiä
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: piä
+* suffix_regex: mpiä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: H
+* deletion: piä

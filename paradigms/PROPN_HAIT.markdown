@@ -4,17 +4,17 @@ paradigm: PROPN_HAIT
 ---
 ### ` PROPN_HAIT `
 
-
-* kotus_tn: 18
-* upos: PROPN
-* suffix_regex: it
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: it
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*it
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: it

@@ -5,16 +5,16 @@ paradigm: VERB_NÄPERTÄÄ
 ### ` VERB_NÄPERTÄÄ `
 
 Dictionary class54 front t~r
-* kotus_tn: 54
-* upos: VERB
-* suffix_regex: rtää
-* kotus_av: K
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tää
+* suffix_regex: rtää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 54
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: K
+* deletion: tää

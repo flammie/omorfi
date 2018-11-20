@@ -5,16 +5,16 @@ paradigm: VERB_KUKKIA
 ### ` VERB_KUKKIA `
 
 Dictionary class61 back k~0
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: kia
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: kia
+* suffix_regex: kia
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: A
+* deletion: kia

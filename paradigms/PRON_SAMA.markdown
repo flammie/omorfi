@@ -5,16 +5,16 @@ paradigm: PRON_SAMA
 ### ` PRON_SAMA `
 
 inflects like NOUN_OMENA
-* kotus_tn: 9
-* upos: PRON
-* suffix_regex: a
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: a
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: a
+* kotus_tn: 9
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

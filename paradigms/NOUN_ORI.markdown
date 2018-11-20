@@ -4,17 +4,17 @@ paradigm: NOUN_ORI
 ---
 ### ` NOUN_ORI `
 
-archaic i:ii class 
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: i
-* kotus_av: None
+archaic i:ii class
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: i
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

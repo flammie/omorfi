@@ -4,17 +4,17 @@ paradigm: PROPN_NIMETÖIN
 ---
 ### ` PROPN_NIMETÖIN `
 
-
-* kotus_tn: 34
-* upos: PROPN
-* suffix_regex: töin
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: töin
+* suffix_regex: töin
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 34
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: töin

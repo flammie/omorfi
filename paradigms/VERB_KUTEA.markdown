@@ -5,16 +5,16 @@ paradigm: VERB_KUTEA
 ### ` VERB_KUTEA `
 
 Dictionary class58 back t~d
-* kotus_tn: 58
-* upos: VERB
-* suffix_regex: tea
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: tea
+* suffix_regex: tea
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 58
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: F
+* deletion: tea

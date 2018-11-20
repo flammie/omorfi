@@ -5,16 +5,16 @@ paradigm: NOUN_LUKU
 ### ` NOUN_LUKU `
 
 Dictionary class 1cuku
-* kotus_tn: 1
-* upos: NOUN
-* suffix_regex: uku
-* kotus_av: M
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ku
+* suffix_regex: uku
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: M
+* deletion: ku

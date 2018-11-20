@@ -4,17 +4,17 @@ paradigm: ADJ_PEEAA
 ---
 ### ` ADJ_PEEAA `
 
-
-* kotus_tn: 18
-* upos: ADJ
-* suffix_regex: aa
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: aa
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 18
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

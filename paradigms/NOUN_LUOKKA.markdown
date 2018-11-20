@@ -5,16 +5,16 @@ paradigm: NOUN_LUOKKA
 ### ` NOUN_LUOKKA `
 
 Dictionary class 10 back k̃~0
-* kotus_tn: 10
-* upos: NOUN
-* suffix_regex: kka
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ka
+* suffix_regex: kka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ka

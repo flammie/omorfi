@@ -5,16 +5,16 @@ paradigm: NOUN_HÖYHENET
 ### ` NOUN_HÖYHENET `
 
 Dictionary class 32 t plurale tantum
-* kotus_tn: 32
-* upos: NOUN
-* suffix_regex: et
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: et
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 32
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: et

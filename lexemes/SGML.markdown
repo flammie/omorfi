@@ -7,5 +7,5 @@ lexeme: SGML
 
 Standardised General Markup Language
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

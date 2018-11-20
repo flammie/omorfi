@@ -5,16 +5,16 @@ paradigm: VERB_LOPPUA
 ### ` VERB_LOPPUA `
 
 Dictionary class52 p~0 u
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: ppua
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pua
+* suffix_regex: ppua
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pua

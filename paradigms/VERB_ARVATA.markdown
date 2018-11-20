@@ -5,16 +5,16 @@ paradigm: VERB_ARVATA
 ### ` VERB_ARVATA `
 
 Dictionary class73 back
-* kotus_tn: 73
-* upos: VERB
-* suffix_regex: ta
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: ta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 73
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ta

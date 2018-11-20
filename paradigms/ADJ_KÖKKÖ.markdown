@@ -5,16 +5,16 @@ paradigm: ADJ_KÖKKÖ
 ### ` ADJ_KÖKKÖ `
 
 The quantitative k gradations with o bisyllabic ö stem use class described here, and old dictionaries use classes ¹⁻A and ¹⁻D.
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: kkö
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kö
+* suffix_regex: kkö
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: A
+* deletion: kö

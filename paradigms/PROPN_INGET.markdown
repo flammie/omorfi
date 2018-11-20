@@ -4,17 +4,17 @@ paradigm: PROPN_INGET
 ---
 ### ` PROPN_INGET `
 
-
-* kotus_tn: 44
-* upos: NOUN
-* suffix_regex: nget
-* kotus_av: G
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: get
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nget
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 44
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: G
+* deletion: get

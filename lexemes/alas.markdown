@@ -15,4 +15,5 @@ to under, down, as adverb, "tule alas"
 down (the road or such), as adposition, partitive complement or possessive, "alas tietä pitkin"
 * UPOS:  ADP
 * Added from:  kotus
+* AdpType:  POSTPOSITION
 

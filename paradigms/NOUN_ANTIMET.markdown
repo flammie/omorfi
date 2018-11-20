@@ -5,16 +5,16 @@ paradigm: NOUN_ANTIMET
 ### ` NOUN_ANTIMET `
 
 Dictionary class 31 nnin plurale tantum
-* kotus_tn: 33
-* upos: NOUN
-* suffix_regex: ntimet
-* kotus_av: J
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: timet
+* suffix_regex: ntimet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 33
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: timet

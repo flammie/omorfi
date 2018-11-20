@@ -5,16 +5,16 @@ paradigm: VERB_RYPEÄ
 ### ` VERB_RYPEÄ `
 
 Dictionary class58 front p~v
-* kotus_tn: 58
-* upos: VERB
-* suffix_regex: peä
-* kotus_av: E
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: peä
+* suffix_regex: peä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 58
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: peä

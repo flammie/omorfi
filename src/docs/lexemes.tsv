@@ -9,13 +9,13 @@ lemma	homonym	doc
 /	2	slash, for division, URLs, etc.
 .	1	full stop
 ...	1	ellipsis
-'	1	ASCII single quotation mark, still most common single quotation
-’	1	left single quotation in 9-shape, common and recommended
-’	2	right single quotation in 9-shape, common and recommended
-"	1	ASCII double quotation mark, still most common double quotation
-"	2	ASCII double quotation mark, still most common double quotation
-”	1	left double quotation in 9-shape, common and recommended
-”	2	right double quotation in 9-shape, common and recommended
+'	1	"opening" ASCII single quotation mark, still most common single quotation, but not recommended
+’	1	"opening" curly single quotation in 9-shape, common and recommended
+’	2	"closing" curly single quotation in 9-shape, common and recommended
+\"	1	"opening" ASCII double quotation mark, still most common double quotation, but not recommended
+\"	2	"closing" ASCII double quotation mark, still most common double quotation, but not recommended
+”	1	"opening" double quotation in 9-shape, common and recommended
+”	2	"closing" double quotation in 9-shape, common and recommended
 (	1	left bracket
 )	1	right bracket
 [	1	left square bracket
@@ -445,8 +445,8 @@ Varo	1	This proper noun overlaps forms of very common *varoa* (beware).
 varsin	1	usually seen as adverb (really), but can be analysed as a form of *varsi* (stem)
 vallassa	1	in rule, "täällä on vallassa kuningas"
 vallassa	2	possessed by smth., genitive complement "pahan hengen vallassa"
-vallassa	1	dethroned, "kuningas syöstiin vallasta"
-vallassa	2	exorcised of smth., genitive complement "pahan hengen vallasta"
+vallasta	1	dethroned, "kuningas syöstiin vallasta"
+vallasta	2	exorcised of smth., genitive complement "pahan hengen vallasta"
 vastaan	1	adposition (against smth) when can be attached to a partitive NP, otherwise adverb (against)
 vastaan	2	adverb (against)
 vihdoin	1	usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig)

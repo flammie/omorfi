@@ -5,16 +5,16 @@ paradigm: VERB_MÖNKIÄ
 ### ` VERB_MÖNKIÄ `
 
 Dictionary class61 front k~g
-* kotus_tn: 61
-* upos: VERB
-* suffix_regex: nkiä
-* kotus_av: G
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kiä
+* suffix_regex: nkiä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 61
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: G
+* deletion: kiä

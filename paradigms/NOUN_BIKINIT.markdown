@@ -5,16 +5,16 @@ paradigm: NOUN_BIKINIT
 ### ` NOUN_BIKINIT `
 
 Dictionary class xxx nit plurale tantum
-* kotus_tn: 6
-* upos: NOUN
-* suffix_regex: it
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 6
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

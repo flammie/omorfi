@@ -5,16 +5,16 @@ paradigm: PROPN_51Iso-Britannia
 ### ` PROPN_51Iso-Britannia `
 
 Optimisation hack for exceptional compound ’Iso-Britannia’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: PROPN
-* suffix_regex: Iso-Britannia
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: -Britannia
+* suffix_regex: Iso-Britannia
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: -Britannia

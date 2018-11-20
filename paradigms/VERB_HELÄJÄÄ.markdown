@@ -5,16 +5,16 @@ paradigm: VERB_HELÄJÄÄ
 ### ` VERB_HELÄJÄÄ `
 
 Dictionary class77 front
-* kotus_tn: 77
-* upos: VERB
-* suffix_regex: äjää
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ää
+* suffix_regex: äjää
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 77
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ää

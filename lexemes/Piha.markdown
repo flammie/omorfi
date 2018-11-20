@@ -8,7 +8,7 @@ lexeme: Piha
 This proper noun overlaps  very common *piha* (yard).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  9
-* Added from:  unihu
+* Added from:  finer|fiwikt
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 

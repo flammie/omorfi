@@ -5,16 +5,16 @@ paradigm: NOUN_IMMYT
 ### ` NOUN_IMMYT `
 
 Dictionary class 43 myt Few t-final words have lengthening in singular stems
-* kotus_tn: 43
-* upos: NOUN
-* suffix_regex: mmyt
-* kotus_av: H
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: myt
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mmyt
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 43
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: myt

@@ -5,16 +5,16 @@ paradigm: PRON_MOLEMMAT
 ### ` PRON_MOLEMMAT `
 
 does not inflect more than clitics
-* kotus_tn: 16
-* upos: PRON
-* suffix_regex: molemmat
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: mat
+* suffix_regex: molemmat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 16
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: mat

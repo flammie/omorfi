@@ -5,16 +5,16 @@ paradigm: PRON_ITSE
 ### ` PRON_ITSE `
 
 inflects like NOUN_xxE
-* kotus_tn: 8
-* upos: PRON
-* suffix_regex: itse
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: its?e
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 8
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: 

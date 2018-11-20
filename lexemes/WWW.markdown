@@ -7,5 +7,5 @@ lexeme: WWW
 
 World Wide Web
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

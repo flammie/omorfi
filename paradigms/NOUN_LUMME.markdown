@@ -5,16 +5,16 @@ paradigm: NOUN_LUMME
 ### ` NOUN_LUMME `
 
 Dictionary class 48 back me
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: mme
-* kotus_av: H
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: me
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mme
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: H
+* deletion: me

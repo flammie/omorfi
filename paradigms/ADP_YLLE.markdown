@@ -5,16 +5,16 @@ paradigm: ADP_YLLE
 ### ` ADP_YLLE `
 
 adposition with optional possessive including -en allomorph, front harmony
-* kotus_tn: 99
-* upos: ADP
-* suffix_regex: e
-* kotus_av: None
+* clitics: True
 * grade_dir: False
 * harmony: front
-* possessive: optional
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: e
 * plurale_tantum: False
-* clitics: True
-* pos: PARTICLE
+* possessive: optional
+* upos: ADP
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PARTICLE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

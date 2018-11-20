@@ -5,16 +5,16 @@ paradigm: ADJ_MÄRKÄ
 ### ` ADJ_MÄRKÄ `
 
 kä:0 variation with obligatory kä:e for comparative
-* kotus_tn: 10
-* upos: ADJ
-* suffix_regex: kä
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: kä
+* suffix_regex: kä
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: ä
+* kotus_tn: 10
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: D
+* deletion: kä

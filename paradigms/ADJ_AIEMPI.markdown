@@ -5,16 +5,16 @@ paradigm: ADJ_AIEMPI
 ### ` ADJ_AIEMPI `
 
 lexicalised comparatives
-* kotus_tn: 16
-* upos: ADJ
-* suffix_regex: mpi
-* kotus_av: H
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 16
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: H
+* deletion: pi

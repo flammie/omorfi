@@ -8,7 +8,7 @@ lexeme: Mutta
 proper noun, rather rare but notably overlaps an everyday conjunction
 * UPOS:  PROPN
 * in KOTUS dictionary under:  10
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 
@@ -18,7 +18,7 @@ proper noun, rather rare but notably overlaps an everyday conjunction
 This proper noun overlaps  very common *mutta* (but).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  10
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 

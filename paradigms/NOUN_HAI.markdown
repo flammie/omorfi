@@ -5,16 +5,16 @@ paradigm: NOUN_HAI
 ### ` NOUN_HAI `
 
 Dictionary class 18 i back
-* kotus_tn: 18
-* upos: NOUN
-* suffix_regex: i
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: i
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: i
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: i

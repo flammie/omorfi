@@ -4,17 +4,17 @@ paradigm: PROPN_KÄRÄJÄT
 ---
 ### ` PROPN_KÄRÄJÄT `
 
-
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: ät
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: ät
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

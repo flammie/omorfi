@@ -5,16 +5,16 @@ paradigm: PROPN_51Uusimaa
 ### ` PROPN_51Uusimaa `
 
 Optimisation hack for exceptional compound ’Uusimaa’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: PROPN
-* suffix_regex: Uusimaa
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: simaa
+* suffix_regex: Uusimaa
 * plurale_tantum: False
-* clitics: False
-* pos: PROPN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: PROPN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: simaa

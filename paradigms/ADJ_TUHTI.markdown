@@ -5,16 +5,16 @@ paradigm: ADJ_TUHTI
 ### ` ADJ_TUHTI `
 
 Stems with t ~ d gradation, i final and back harmony are in class described here and dictionary class ⁵⁻F.
-* kotus_tn: 5
-* upos: ADJ
-* suffix_regex: ti
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ti
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 5
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: F
+* deletion: ti

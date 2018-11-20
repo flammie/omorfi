@@ -5,16 +5,16 @@ paradigm: PROPN_TYTÄR
 ### ` PROPN_TYTÄR `
 
 Dictionary class 32 tär
-* kotus_tn: 32
-* upos: PROPN
-* suffix_regex: tär
-* kotus_av: C
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: är
+* suffix_regex: tär
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 32
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: är

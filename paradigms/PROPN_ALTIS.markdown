@@ -4,17 +4,17 @@ paradigm: PROPN_ALTIS
 ---
 ### ` PROPN_ALTIS `
 
-
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: tis
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: is
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tis
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: is

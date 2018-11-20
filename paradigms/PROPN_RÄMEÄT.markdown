@@ -4,17 +4,17 @@ paradigm: PROPN_RÄMEÄT
 ---
 ### ` PROPN_RÄMEÄT `
 
-
-* kotus_tn: 15
-* upos: PROPN
-* suffix_regex: eät
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ät
+* suffix_regex: eät
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 15
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: ät

@@ -7,5 +7,5 @@ lexeme: HIV
 
 Human Immunodeficiency Virus
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

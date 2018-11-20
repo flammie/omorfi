@@ -5,16 +5,16 @@ paradigm: PROPN_TIENOO
 ### ` PROPN_TIENOO `
 
 Dictionary class 17 o
-* kotus_tn: 17
-* upos: PROPN
-* suffix_regex: oo
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: o
+* suffix_regex: oo
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: o
+* kotus_tn: 17
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: o

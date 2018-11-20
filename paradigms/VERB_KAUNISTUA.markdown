@@ -5,16 +5,16 @@ paradigm: VERB_KAUNISTUA
 ### ` VERB_KAUNISTUA `
 
 The u stems have no stem variation: Dictionary class52u
-* kotus_tn: 52
-* upos: VERB
-* suffix_regex: ua
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: ua
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 52
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

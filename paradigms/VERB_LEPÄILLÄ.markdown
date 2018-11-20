@@ -4,17 +4,17 @@ paradigm: VERB_LEPÄILLÄ
 ---
 ### ` VERB_LEPÄILLÄ `
 
-Dictionary class67 front i~e l 
-* kotus_tn: 67
-* upos: VERB
-* suffix_regex: illä
-* kotus_av: None
+Dictionary class67 front i~e l
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: illä
+* suffix_regex: illä
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 67
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: None
+* deletion: illä

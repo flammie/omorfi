@@ -7,6 +7,6 @@ lexeme: VR
 
 Valtion Rautatiet
 * UPOS:  PROPN
-* Added from:  unk
+* Added from:  omorfi
 * Possible NER class:  ORG
 

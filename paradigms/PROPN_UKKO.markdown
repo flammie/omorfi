@@ -4,17 +4,17 @@ paradigm: PROPN_UKKO
 ---
 ### ` PROPN_UKKO `
 
-
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: kko
-* kotus_av: A
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ko
+* suffix_regex: kko
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ko

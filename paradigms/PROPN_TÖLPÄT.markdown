@@ -4,17 +4,17 @@ paradigm: PROPN_TÖLPÄT
 ---
 ### ` PROPN_TÖLPÄT `
 
-
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: pät
-* kotus_av: B
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: ät
+* suffix_regex: pät
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: ät

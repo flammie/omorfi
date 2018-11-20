@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_ÖÖ
 ### ` PROPN_ACRO_ÖÖ `
 
 Acronyms that end in 'ö' pronounced as letter
-* kotus_tn: 0
-* upos: PROPN
-* suffix_regex: [Öö]
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [Öö]
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

@@ -5,16 +5,16 @@ paradigm: PROPN_KÄRSÄKÄS
 ### ` PROPN_KÄRSÄKÄS `
 
 Dictionary class 41 käs
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: käs
-* kotus_av: A
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: äs
+* suffix_regex: käs
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: äs

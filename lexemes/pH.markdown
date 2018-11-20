@@ -7,5 +7,5 @@ lexeme: pH
 
 per Hydrogen
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

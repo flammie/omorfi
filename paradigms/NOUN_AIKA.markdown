@@ -5,16 +5,16 @@ paradigm: NOUN_AIKA
 ### ` NOUN_AIKA `
 
 Non-dictionary class aika
-* kotus_tn: 1009
-* upos: NOUN
-* suffix_regex: ika
-* kotus_av: D
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ika
+* suffix_regex: ika
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 1009
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: D
+* deletion: ika

@@ -5,16 +5,16 @@ paradigm: PROPN_BORDEAUX
 ### ` PROPN_BORDEAUX `
 
 Dictionary class 22 o
-* kotus_tn: 22
-* upos: PROPN
-* suffix_regex: .
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: 
+* suffix_regex: .
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: o
+* kotus_tn: 22
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

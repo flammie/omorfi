@@ -4,17 +4,17 @@ paradigm: PROPN_MATEE
 ---
 ### ` PROPN_MATEE `
 
-
-* kotus_tn: 18
-* upos: PROPN
-* suffix_regex: e
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: e
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: e
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: e

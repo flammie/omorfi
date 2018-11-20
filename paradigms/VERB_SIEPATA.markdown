@@ -5,16 +5,16 @@ paradigm: VERB_SIEPATA
 ### ` VERB_SIEPATA `
 
 Dictionary class73 back 0~p
-* kotus_tn: 73
-* upos: VERB
-* suffix_regex: pata
-* kotus_av: B
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ata
+* suffix_regex: pata
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 73
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: B
+* deletion: ata

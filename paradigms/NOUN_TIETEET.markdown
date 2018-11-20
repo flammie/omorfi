@@ -5,16 +5,16 @@ paradigm: NOUN_TIETEET
 ### ` NOUN_TIETEET `
 
 Dictionary class xxx teet plurale tantum
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: teet
-* kotus_av: F
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: teet
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*teet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: teet

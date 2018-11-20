@@ -8,6 +8,6 @@ lexeme: Eni
 This proper noun overlaps forms of very common FIXME
 * UPOS:  PROPN
 * in KOTUS dictionary under:  5
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  ORG
 

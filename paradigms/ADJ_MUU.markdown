@@ -4,17 +4,17 @@ paradigm: ADJ_MUU
 ---
 ### ` ADJ_MUU `
 
-
-* kotus_tn: 18
-* upos: ADJ
-* suffix_regex: uu
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: u
+* suffix_regex: uu
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: u
+* kotus_tn: 18
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: u

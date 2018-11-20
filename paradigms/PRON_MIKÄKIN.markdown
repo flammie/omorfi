@@ -5,16 +5,16 @@ paradigm: PRON_MIKÄKIN
 ### ` PRON_MIKÄKIN `
 
 pronoun mikäkin does not inflects
-* kotus_tn: 101
-* upos: PRON
-* suffix_regex: mikäkin
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: käkin
+* suffix_regex: mikäkin
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 101
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: käkin

@@ -4,17 +4,17 @@ paradigm: VERB_KOUKUTA
 ---
 ### ` VERB_KOUKUTA `
 
-Dictionary class74 front 0~k u 
-* kotus_tn: 74
-* upos: VERB
-* suffix_regex: kuta
-* kotus_av: A
+Dictionary class74 front 0~k u
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: uta
+* suffix_regex: kuta
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 74
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: A
+* deletion: uta

@@ -4,17 +4,17 @@ paradigm: NOUN_KASTILJAT
 ---
 ### ` NOUN_KASTILJAT `
 
-
-* kotus_tn: 13
-* upos: NOUN
-* suffix_regex: at
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: at
+* suffix_regex: at
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 13
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: at

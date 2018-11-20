@@ -25,10 +25,10 @@ import argparse
 import csv
 from sys import exit, stderr
 
-from omorfi.apertium_formatter import ApertiumFormatter
-from omorfi.ftb3_formatter import Ftb3Formatter
-from omorfi.giella_formatter import GiellaFormatter
-from omorfi.omor_formatter import OmorFormatter
+from omorfi.formats.apertium_formatter import ApertiumFormatter
+from omorfi.formats.ftb3_formatter import Ftb3Formatter
+from omorfi.formats.giella_formatter import GiellaFormatter
+from omorfi.formats.omor_formatter import OmorFormatter
 
 
 # standard UI stuff
@@ -91,7 +91,7 @@ def main():
     # https://turkunlp.github.io/Finnish_PropBank/
     print("""<p>Stuffs:
 {% for page in site.pages %}{% if page.stuff %}
-<a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a>, 
+<a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a>,
 {% endif %}{% endfor %}
 </p>
 
@@ -122,7 +122,7 @@ The symbols are default output variants without context-sensitive filtering.
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfile=open(args.outdir + '/' + 
+                outfile=open(args.outdir + '/' +
                              tsv_parts['stuff'].replace('?', '_') +
                              '.markdown', 'w')
                 print('---', file=outfile)

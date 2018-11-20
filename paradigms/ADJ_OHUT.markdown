@@ -5,16 +5,16 @@ paradigm: ADJ_OHUT
 ### ` ADJ_OHUT `
 
 Dictionary class 43 back
-* kotus_tn: 43
-* upos: ADJ
-* suffix_regex: ut
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: t
+* suffix_regex: ut
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 43
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: t

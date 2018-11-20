@@ -5,16 +5,16 @@ paradigm: NOUN_ACRO_ZET
 ### ` NOUN_ACRO_ZET `
 
 Acronyms that end in 'z' pronounced as letter
-* kotus_tn: 0
-* upos: NOUN
-* suffix_regex: [ZŽzž]
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [ZŽzž]
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

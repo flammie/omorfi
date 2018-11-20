@@ -5,16 +5,16 @@ paradigm: NUM_KAHDEKSAN
 ### ` NUM_KAHDEKSAN `
 
 Dictionary class10n
-* kotus_tn: 10
-* upos: NUM
-* suffix_regex: kahdeksan
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: an
+* suffix_regex: kahdeksan
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 10
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: an

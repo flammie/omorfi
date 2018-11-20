@@ -4,17 +4,17 @@ paradigm: PROPN_YRITTÄ
 ---
 ### ` PROPN_YRITTÄ `
 
-
-* kotus_tn: 9
-* upos: PROPN
-* suffix_regex: ttä
-* kotus_av: C
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tä
+* suffix_regex: ttä
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: ä
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tä

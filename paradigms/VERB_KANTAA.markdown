@@ -5,16 +5,16 @@ paradigm: VERB_KANTAA
 ### ` VERB_KANTAA `
 
 Dictionary class56 back t~n
-* kotus_tn: 56
-* upos: VERB
-* suffix_regex: ntaa
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: taa
+* suffix_regex: ntaa
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 56
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: J
+* deletion: taa

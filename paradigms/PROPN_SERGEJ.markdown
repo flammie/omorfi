@@ -4,17 +4,17 @@ paradigm: PROPN_SERGEJ
 ---
 ### ` PROPN_SERGEJ `
 
-Dictionary class 22 i front
-* kotus_tn: 22
-* upos: PROPN
-* suffix_regex: j
-* kotus_av: None
-* grade_dir: weaken
-* harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
-* plurale_tantum: False
+Dictionary class 22 j-final front
 * clitics: False
-* pos: NOUN
+* grade_dir: weaken
+* harmony: front
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*j
+* plurale_tantum: False
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 22
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

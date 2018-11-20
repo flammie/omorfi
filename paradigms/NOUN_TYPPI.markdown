@@ -5,16 +5,16 @@ paradigm: NOUN_TYPPI
 ### ` NOUN_TYPPI `
 
 Dictionary class 7 front p~0
-* kotus_tn: 7
-* upos: NOUN
-* suffix_regex: ppi
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: pi
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ppi
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pi

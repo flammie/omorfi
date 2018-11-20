@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_OO
 ### ` PROPN_ACRO_OO `
 
 Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter
-* kotus_tn: 0
-* upos: PROPN
-* suffix_regex: [HKOÅhkoå]
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: [HKOÅhkoå]
 * plurale_tantum: False
-* clitics: False
-* pos: ACRONYM
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 0
+* pos: ACRONYM
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

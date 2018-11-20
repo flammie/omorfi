@@ -5,16 +5,16 @@ paradigm: NOUN_51lämminruoka
 ### ` NOUN_51lämminruoka `
 
 Optimisation hack for exceptional compound ’lämminruoka’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NOUN
-* suffix_regex: lämminruoka
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: minruoka
+* suffix_regex: lämminruoka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: minruoka

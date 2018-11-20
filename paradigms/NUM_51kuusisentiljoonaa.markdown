@@ -5,16 +5,16 @@ paradigm: NUM_51kuusisentiljoonaa
 ### ` NUM_51kuusisentiljoonaa `
 
 Optimisation hack for exceptional compound ’kuusisentiljoonaa’ that inflects in all parts with agreement
-* kotus_tn: 51
-* upos: NUM
-* suffix_regex: kuusisentiljoonaa
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: sisentiljoonaa
+* suffix_regex: kuusisentiljoonaa
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 51
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: sisentiljoonaa

@@ -5,16 +5,16 @@ paradigm: PROPN_SEIVÄS
 ### ` PROPN_SEIVÄS `
 
 Dictionary class 41 väs
-* kotus_tn: 41
-* upos: PROPN
-* suffix_regex: väs
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: väs
+* suffix_regex: väs
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 41
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: E
+* deletion: väs

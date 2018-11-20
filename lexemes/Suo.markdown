@@ -8,7 +8,7 @@ lexeme: Suo
 This proper noun overlaps  very common *suo* (swamp).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  19
-* Added from:  unihu
+* Added from:  finer
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 

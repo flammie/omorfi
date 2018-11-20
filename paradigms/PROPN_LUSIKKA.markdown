@@ -5,16 +5,16 @@ paradigm: PROPN_LUSIKKA
 ### ` PROPN_LUSIKKA `
 
 Dictionary class 14 back
-* kotus_tn: 14
-* upos: PROPN
-* suffix_regex: kka
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ka
+* suffix_regex: kka
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: a
+* kotus_tn: 14
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ka

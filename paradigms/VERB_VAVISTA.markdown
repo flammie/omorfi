@@ -5,16 +5,16 @@ paradigm: VERB_VAVISTA
 ### ` VERB_VAVISTA `
 
 Dictionary class66 back v~p
-* kotus_tn: 66
-* upos: VERB
-* suffix_regex: vista
-* kotus_av: E
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: vista
+* suffix_regex: vista
 * plurale_tantum: False
-* clitics: False
-* pos: VERB
+* possessive: False
+* upos: VERB
 * stem_vowel: None
+* kotus_tn: 66
+* pos: VERB
+* stem_diphthong: None
+* kotus_av: E
+* deletion: vista

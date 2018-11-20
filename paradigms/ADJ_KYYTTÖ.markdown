@@ -4,17 +4,17 @@ paradigm: ADJ_KYYTTÖ
 ---
 ### ` ADJ_KYYTTÖ `
 
-The quantitative gradation of t before y is in class described here, which was ¹⁻C in the dictionary. 
-* kotus_tn: 1
-* upos: ADJ
-* suffix_regex: ttö
-* kotus_av: C
+The quantitative gradation of t before y is in class described here, which was ¹⁻C in the dictionary.
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: tö
+* suffix_regex: ttö
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 1
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: C
+* deletion: tö

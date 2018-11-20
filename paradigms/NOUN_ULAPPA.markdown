@@ -5,16 +5,16 @@ paradigm: NOUN_ULAPPA
 ### ` NOUN_ULAPPA `
 
 Dictionary class 14 back p̃0
-* kotus_tn: 14
-* upos: NOUN
-* suffix_regex: ppa
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pa
+* suffix_regex: ppa
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 14
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pa

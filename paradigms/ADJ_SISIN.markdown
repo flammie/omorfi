@@ -5,16 +5,16 @@ paradigm: ADJ_SISIN
 ### ` ADJ_SISIN `
 
 Dictionary class 35 front
-* kotus_tn: 36
-* upos: ADJ
-* suffix_regex: in
-* kotus_av: None
+* clitics: False
 * grade_dir: strengthen
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: n
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*in
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: None
+* kotus_tn: 36
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: n

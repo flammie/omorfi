@@ -7,7 +7,7 @@ lexeme: ynnä
 
 plus, as an adverb
 * UPOS:  ADV
-* Added from:  unihu
+* Added from:  finer
 
 
 ## ynnä (alternate reading 2 )

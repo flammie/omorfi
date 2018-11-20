@@ -8,4 +8,5 @@ lexeme: perässä
 behind, as adposition
 * UPOS:  ADP
 * Added from:  omorfi++
+* AdpType:  POSTPOSITION
 

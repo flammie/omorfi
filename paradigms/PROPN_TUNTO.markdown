@@ -5,16 +5,16 @@ paradigm: PROPN_TUNTO
 ### ` PROPN_TUNTO `
 
 Dictionary class 1nto
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: nto
-* kotus_av: J
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: to
+* suffix_regex: nto
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: to

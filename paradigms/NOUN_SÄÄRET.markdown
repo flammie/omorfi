@@ -4,17 +4,17 @@ paradigm: NOUN_SÄÄRET
 ---
 ### ` NOUN_SÄÄRET `
 
-
-* kotus_tn: 26
-* upos: NOUN
-* suffix_regex: et
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: et
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*et
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 26
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: et

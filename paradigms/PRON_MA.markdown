@@ -5,16 +5,16 @@ paradigm: PRON_MA
 ### ` PRON_MA `
 
 dialectal forms of minä
-* kotus_tn: 99
-* upos: PRON
-* suffix_regex: a
-* kotus_av: None
+* clitics: False
 * grade_dir: False
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: None
+* suffix_regex: a
 * plurale_tantum: False
-* clitics: False
-* pos: PRONOUN
+* possessive: False
+* upos: PRON
 * stem_vowel: None
+* kotus_tn: 99
+* pos: PRONOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None

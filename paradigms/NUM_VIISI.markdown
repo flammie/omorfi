@@ -5,16 +5,16 @@ paradigm: NUM_VIISI
 ### ` NUM_VIISI `
 
 Dictionary class27 front
-* kotus_tn: 27
-* upos: NUM
-* suffix_regex: viisi
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: si
+* suffix_regex: viisi
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: None
+* kotus_tn: 27
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: si

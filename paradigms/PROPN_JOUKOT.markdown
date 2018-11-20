@@ -5,16 +5,16 @@ paradigm: PROPN_JOUKOT
 ### ` PROPN_JOUKOT `
 
 Dictionary class 1ko plurale tantum
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ot
-* kotus_av: A
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ot
+* suffix_regex: ot
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: A
+* deletion: ot

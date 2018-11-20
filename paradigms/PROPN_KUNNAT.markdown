@@ -4,17 +4,17 @@ paradigm: PROPN_KUNNAT
 ---
 ### ` PROPN_KUNNAT `
 
-
-* kotus_tn: 10
-* upos: PROPN
-* suffix_regex: nnat
-* kotus_av: J
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: nat
+* suffix_regex: nnat
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 10
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: J
+* deletion: nat

@@ -7,5 +7,5 @@ lexeme: URL
 
 Uniform Resource Locator
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

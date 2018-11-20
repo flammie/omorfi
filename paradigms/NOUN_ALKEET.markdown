@@ -5,16 +5,16 @@ paradigm: NOUN_ALKEET
 ### ` NOUN_ALKEET `
 
 Dictionary class jeet plurale tantum
-* kotus_tn: 48
-* upos: NOUN
-* suffix_regex: keet
-* kotus_av: L
+* clitics: False
 * grade_dir: strengthen
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: keet
+* suffix_regex: keet
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 48
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: L
+* deletion: keet

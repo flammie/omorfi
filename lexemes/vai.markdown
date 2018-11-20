@@ -8,7 +8,7 @@ lexeme: vai
 This noun means a Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or).
 * UPOS:  NOUN
 * in KOTUS dictionary under:  18
-* Added from:  unihu
+* Added from:  finer
 * Blacklisted:  FGK
 
 
@@ -17,7 +17,7 @@ This noun means a Mande language spoken by the Vai people (Wikipedia), or the pe
 Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunctions and adverbs
 * UPOS:  NOUN
 * in KOTUS dictionary under:  18
-* Added from:  unihu
+* Added from:  finer
 * Blacklisted:  FGK
 
 
@@ -25,12 +25,12 @@ Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunc
 
 really so, as adverb, colloquial, "ai on vai"
 * UPOS:  ADV
-* Added from:  unihu
+* Added from:  finer
 
 
 ## vai (alternate reading 3 )
 
 or, as cconj, used in contrastive position only, "kissoja vai koiria"
 * UPOS:  CCONJ
-* Added from:  unihu|omorfi++
+* Added from:  finer|omorfi++
 

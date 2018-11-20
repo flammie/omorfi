@@ -7,5 +7,5 @@ lexeme: cd
 
 compact disc
 * UPOS:  NOUN
-* Added from:  unk
+* Added from:  joukahainen
 

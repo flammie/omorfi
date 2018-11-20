@@ -5,16 +5,16 @@ paradigm: PROPN_LIPPU
 ### ` PROPN_LIPPU `
 
 Dictionary class 1pu
-* kotus_tn: 1
-* upos: PROPN
-* suffix_regex: ppu
-* kotus_av: B
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: pu
+* suffix_regex: ppu
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 1
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: B
+* deletion: pu

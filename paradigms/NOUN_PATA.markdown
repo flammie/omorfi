@@ -5,16 +5,16 @@ paradigm: NOUN_PATA
 ### ` NOUN_PATA `
 
 Dictionary class 9 t~d
-* kotus_tn: 9
-* upos: NOUN
-* suffix_regex: ta
-* kotus_av: F
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: ta
+* suffix_regex: ta
 * plurale_tantum: False
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: ta

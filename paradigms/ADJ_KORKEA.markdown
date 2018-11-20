@@ -4,17 +4,17 @@ paradigm: ADJ_KORKEA
 ---
 ### ` ADJ_KORKEA `
 
-
-* kotus_tn: 15
-* upos: ADJ
-* suffix_regex: ea
-* kotus_av: None
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: ea
 * plurale_tantum: False
-* clitics: False
-* pos: ADJECTIVE
+* possessive: False
+* upos: ADJ
 * stem_vowel: a
+* kotus_tn: 15
+* pos: ADJECTIVE
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a

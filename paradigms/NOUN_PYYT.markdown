@@ -5,16 +5,16 @@ paradigm: NOUN_PYYT
 ### ` NOUN_PYYT `
 
 Dictionary class 18 y plurale tantum
-* kotus_tn: 18
-* upos: NOUN
-* suffix_regex: yyt
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: front
-* possessive: False
-* stem_diphthong: None
-* deletion: yt
+* suffix_regex: yyt
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: NOUN
 * stem_vowel: None
+* kotus_tn: 18
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: yt

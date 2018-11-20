@@ -4,17 +4,17 @@ paradigm: PROPN_LAHDET
 ---
 ### ` PROPN_LAHDET `
 
-
-* kotus_tn: 7
-* upos: PROPN
-* suffix_regex: det
-* kotus_av: F
+None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: det
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det
 * plurale_tantum: obligatory
-* clitics: False
-* pos: NOUN
+* possessive: False
+* upos: PROPN
 * stem_vowel: None
+* kotus_tn: 7
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: F
+* deletion: det

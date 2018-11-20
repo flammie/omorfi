@@ -7,5 +7,5 @@ lexeme: osaksi
 
 usually seen as adverb (partially), but can be analysed as translative of the noun *osa* (part)
 * UPOS:  ADV
-* Added from:  kotus
+* Added from:  kotus|fiwikt
 

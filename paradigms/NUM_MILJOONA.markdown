@@ -5,16 +5,16 @@ paradigm: NUM_MILJOONA
 ### ` NUM_MILJOONA `
 
 Dictionary class10
-* kotus_tn: 10
-* upos: NUM
-* suffix_regex: a
-* kotus_av: None
+* clitics: False
 * grade_dir: weaken
 * harmony: back
-* possessive: False
-* stem_diphthong: None
-* deletion: a
+* suffix_regex: a
 * plurale_tantum: False
-* clitics: False
-* pos: NUMERAL
+* possessive: False
+* upos: NUM
 * stem_vowel: a
+* kotus_tn: 10
+* pos: NUMERAL
+* stem_diphthong: None
+* kotus_av: None
+* deletion: a
