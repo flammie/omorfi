@@ -1,16 +1,13 @@
 var searchData=
 [
-  ['old_5fposes',['old_poses',['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html#aa693c564da7a24b9389b258270044ca1',1,'omorfi::omor_formatter::OmorFormatter']]],
-  ['omorfi',['Omorfi',['../classomorfi_1_1Omorfi.html',1,'omorfi::Omorfi'],['../classomorfi_1_1omorfi_1_1Omorfi.html',1,'omorfi.omorfi.Omorfi'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html',1,'com.github.flammie.omorfi.Omorfi'],['../namespaceomorfi.html',1,'omorfi'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a04df9708e407fb9797291e7742a027f1',1,'com.github.flammie.omorfi.Omorfi.Omorfi()'],['../classomorfi_1_1Omorfi.html#af1b6dcd929133b8508152bae912ff4ae',1,'omorfi::Omorfi::Omorfi()']]],
-  ['omorfi_2dlookup_2ecc',['omorfi-lookup.cc',['../omorfi-lookup_8cc.html',1,'']]],
-  ['omorfi_2ecc',['omorfi.cc',['../omorfi_8cc.html',1,'']]],
-  ['omorfi_2ehh',['omorfi.hh',['../omorfi_8hh.html',1,'']]],
-  ['omorfi_2ejava',['Omorfi.java',['../Omorfi_8java.html',1,'']]],
-  ['omorfi_5flookup_5ftimeout',['OMORFI_LOOKUP_TIMEOUT',['../omorfi_8cc.html#ab0a6dd0cef9c71e3d4bfc92ed96ceba1',1,'omorfi.cc']]],
-  ['omorformatter',['OmorFormatter',['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html',1,'omorfi::omor_formatter']]],
-  ['op',['op',['../classnet_1_1sf_1_1hfst_1_1FlagDiacriticOperation.html#a901adb8697d098cffd4b94e1427ab899',1,'net::sf::hfst::FlagDiacriticOperation']]],
-  ['operations',['operations',['../classnet_1_1sf_1_1hfst_1_1TransducerAlphabet.html#aab009346ecc0ddf9123a66066ec41e15',1,'net.sf.hfst.TransducerAlphabet.operations()'],['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#a125458ac28e98bea59084bdd4424fb8e',1,'net.sf.hfst.UnweightedTransducer.operations()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#a177e8c083b986e8a120893cdf897b2d3',1,'net.sf.hfst.WeightedTransducer.operations()']]],
-  ['outputpointer',['outputPointer',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#a0b9fb505b4056497b8832e195116361d',1,'net.sf.hfst.UnweightedTransducer.outputPointer()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#a133df431313eb4d39feeb62aecbdd0eb',1,'net.sf.hfst.WeightedTransducer.outputPointer()']]],
-  ['outputstring',['outputString',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#addd9e54e95ea1bb21a685ff0ff721181',1,'net.sf.hfst.UnweightedTransducer.outputString()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#a78689c8e0b592eb9783c0f4f5501ddce',1,'net.sf.hfst.WeightedTransducer.outputString()']]],
-  ['outputsymbol',['outputSymbol',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer_1_1Transition.html#a75cb245a14360d23b8648514a41bba93',1,'net.sf.hfst.UnweightedTransducer.Transition.outputSymbol()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer_1_1Transition.html#a04aacd9042cc6eebe4f605d260d5d933',1,'net.sf.hfst.WeightedTransducer.Transition.outputSymbol()']]]
+  ['newparas',['newparas',['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#a6324fddd2257b0421475d0d0dba815f4',1,'omorfi::formats::omor_formatter::OmorFormatter']]],
+  ['next_5fconllu',['next_conllu',['../namespaceomorfi_1_1formats_1_1fileformats.html#a28f5559a08c1cadeeffb8cb6f713cd9e',1,'omorfi::formats::fileformats']]],
+  ['next_5fomorfi',['next_omorfi',['../namespaceomorfi_1_1formats_1_1fileformats.html#ad1a06fce0edaae349333257dc24481d8',1,'omorfi::formats::fileformats']]],
+  ['next_5fplaintext',['next_plaintext',['../namespaceomorfi_1_1formats_1_1fileformats.html#aba7fe06ff191b6580430968959e4b99a',1,'omorfi::formats::fileformats']]],
+  ['next_5fvislcg',['next_vislcg',['../namespaceomorfi_1_1formats_1_1fileformats.html#a855ecc0a81f1c95bb74d2b9377dc4403',1,'omorfi::formats::fileformats']]],
+  ['no_5fsymbol_5fnumber',['NO_SYMBOL_NUMBER',['../classnet_1_1sf_1_1hfst_1_1HfstOptimizedLookup.html#a08be2aea852df6b2c35e55ce431be13f',1,'net::sf::hfst::HfstOptimizedLookup']]],
+  ['no_5ftable_5findex',['NO_TABLE_INDEX',['../classnet_1_1sf_1_1hfst_1_1HfstOptimizedLookup.html#a4a97eb6fed53f170d5718ebaff105249',1,'net::sf::hfst::HfstOptimizedLookup']]],
+  ['nontoken',['nontoken',['../classomorfi_1_1token_1_1Token.html#a47bcc117e62fb5b46d99d2886bf32e54',1,'omorfi::token::Token']]],
+  ['notagsformatter',['NoTagsFormatter',['../classomorfi_1_1formats_1_1no__tags__formatter_1_1NoTagsFormatter.html',1,'omorfi::formats::no_tags_formatter']]],
+  ['notokenizationexception',['NoTokenizationException',['../classnet_1_1sf_1_1hfst_1_1NoTokenizationException.html',1,'net.sf.hfst.NoTokenizationException'],['../classnet_1_1sf_1_1hfst_1_1NoTokenizationException.html#a0e60ee53998fd2238694e9916fd7364f',1,'net.sf.hfst.NoTokenizationException.NoTokenizationException()']]]
 ];

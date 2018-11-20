@@ -1,6 +1,15 @@
 var searchData=
 [
-  ['read_5fhfst3_5fheader',['read_hfst3_header',['../classnet_1_1sf_1_1hfst_1_1TransducerHeader.html#aded6d449d817394cb04e1b71c2e8797b',1,'net::sf::hfst::TransducerHeader']]],
-  ['root_5flexicon_5flexc',['root_lexicon_lexc',['../classomorfi_1_1apertium__formatter_1_1ApertiumFormatter.html#a91e184b8b83762b2461ba5f813fd8d3c',1,'omorfi.apertium_formatter.ApertiumFormatter.root_lexicon_lexc()'],['../classomorfi_1_1formatter_1_1Formatter.html#a70995050055ab9a25bf166d404998bed',1,'omorfi.formatter.Formatter.root_lexicon_lexc()'],['../classomorfi_1_1ftb3__formatter_1_1Ftb3Formatter.html#ada315b4d64625589c64cd324fa24994e',1,'omorfi.ftb3_formatter.Ftb3Formatter.root_lexicon_lexc()'],['../classomorfi_1_1giella__formatter_1_1GiellaFormatter.html#ad78d73e4af445377096c9b14bac0cd9c',1,'omorfi.giella_formatter.GiellaFormatter.root_lexicon_lexc()'],['../classomorfi_1_1labeled__segments__formatter_1_1LabeledSegmentsFormatter.html#a9104db22130c49b55b87be1ee3317f81',1,'omorfi.labeled_segments_formatter.LabeledSegmentsFormatter.root_lexicon_lexc()'],['../classomorfi_1_1no__tags__formatter_1_1NoTagsFormatter.html#a8fa8b056b8f93f2ec3d58fbf1b9c1084',1,'omorfi.no_tags_formatter.NoTagsFormatter.root_lexicon_lexc()'],['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html#a86a3b63bd361290450215aceea4a0453',1,'omorfi.omor_formatter.OmorFormatter.root_lexicon_lexc()']]],
-  ['runtransducer',['runTransducer',['../classnet_1_1sf_1_1hfst_1_1HfstOptimizedLookup.html#a00bf4986a613c9092fd397e8527cc034',1,'net::sf::hfst::HfstOptimizedLookup']]]
+  ['pos',['pos',['../classomorfi_1_1token_1_1Token.html#aaccda0cbf15f2dcc855b6db3bb80027c',1,'omorfi::token::Token']]],
+  ['print_5fusage',['print_usage',['../omorfi-lookup_8cc.html#ac7608332d002ef2745359f4cada4afc8',1,'omorfi-lookup.cc']]],
+  ['printable_5fconllu',['printable_conllu',['../classomorfi_1_1token_1_1Token.html#a5a2370b2451b5d421b2db1cc671d54f9',1,'omorfi::token::Token']]],
+  ['printable_5fftb3',['printable_ftb3',['../classomorfi_1_1token_1_1Token.html#a207549d06b8f23dab8047db6ef68e360',1,'omorfi::token::Token']]],
+  ['printable_5fftb_5ffeats',['printable_ftb_feats',['../classomorfi_1_1analysis_1_1Analysis.html#a12afe73ffa326055e2de6698e0ed3f7b',1,'omorfi::analysis::Analysis']]],
+  ['printable_5fud_5ffeats',['printable_ud_feats',['../classomorfi_1_1analysis_1_1Analysis.html#ad1462258c723ef76466cf2b3d84693c9',1,'omorfi::analysis::Analysis']]],
+  ['printable_5fud_5fmisc',['printable_ud_misc',['../classomorfi_1_1analysis_1_1Analysis.html#a1a4fc814413cfbd50db03a9125d598f7',1,'omorfi::analysis::Analysis']]],
+  ['printable_5fudephead',['printable_udephead',['../classomorfi_1_1analysis_1_1Analysis.html#ac83196742aa21a64636732cd135b65ee',1,'omorfi::analysis::Analysis']]],
+  ['printable_5fudepname',['printable_udepname',['../classomorfi_1_1analysis_1_1Analysis.html#a4a4d9055ef65a7640faefe6d1d50ed3e',1,'omorfi::analysis::Analysis']]],
+  ['printable_5funimorph',['printable_unimorph',['../classomorfi_1_1analysis_1_1Analysis.html#a0c0e9d43883771c087e3db7e15d0815f',1,'omorfi::analysis::Analysis']]],
+  ['printable_5fvislcg',['printable_vislcg',['../classomorfi_1_1analysis_1_1Analysis.html#aacca99d94e9f771f62abff5aef9a9861',1,'omorfi.analysis.Analysis.printable_vislcg()'],['../classomorfi_1_1token_1_1Token.html#a6bc9ddb276b7ec12d9fe69737be5d402',1,'omorfi.token.Token.printable_vislcg()']]],
+  ['props',['props',['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#a68d96df084326d73aa9e45d18834cc1e',1,'omorfi::formats::omor_formatter::OmorFormatter']]]
 ];

@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['keytable',['keyTable',['../classnet_1_1sf_1_1hfst_1_1TransducerAlphabet.html#a4214599cd24c87a1d144f46a0479f8b1',1,'net::sf::hfst::TransducerAlphabet']]],
-  ['ktnkav',['ktnkav',['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html#adcd336ed90bc0983b56ac905e7d15fbe',1,'omorfi::omor_formatter::OmorFormatter']]],
-  ['ktnkav_5fmultichars',['ktnkav_multichars',['../classomorfi_1_1omor__formatter_1_1OmorFormatter.html#afbc040fb6659c4024cfd354e07e4e626',1,'omorfi::omor_formatter::OmorFormatter']]]
+  ['index',['index',['../classnet_1_1sf_1_1hfst_1_1IndexString.html#a446c9bf1aa75c7869b00a146b833422e',1,'net::sf::hfst::IndexString']]],
+  ['indextable',['indexTable',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#aa8a2dfaa15373517c072342fa723f058',1,'net.sf.hfst.UnweightedTransducer.indexTable()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#ad01b1ee9d409fe9d2b215760584802df',1,'net.sf.hfst.WeightedTransducer.indexTable()']]],
+  ['infinite_5fweight',['INFINITE_WEIGHT',['../classnet_1_1sf_1_1hfst_1_1HfstOptimizedLookup.html#a032ecaf08307b7bfb9b38e0987d28540',1,'net::sf::hfst::HfstOptimizedLookup']]],
+  ['inputpointer',['inputPointer',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#a904cfd025b6f85b2309e93f5bedd2f66',1,'net.sf.hfst.UnweightedTransducer.inputPointer()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#a7acab47758ef94265b753e087f7e2d67',1,'net.sf.hfst.WeightedTransducer.inputPointer()']]],
+  ['inputstring',['inputString',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer.html#ae9eb2e0eaeca919c49467b5779e55b19',1,'net.sf.hfst.UnweightedTransducer.inputString()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer.html#abe8794c62aa45d94d902a85c865a2029',1,'net.sf.hfst.WeightedTransducer.inputString()']]],
+  ['inputsymbol',['inputSymbol',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer_1_1TransitionIndex.html#a8f89294f8f70c06540023675bb41c581',1,'net.sf.hfst.UnweightedTransducer.TransitionIndex.inputSymbol()'],['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer_1_1Transition.html#aac2e3d10c7a42428b794a17e171183c7',1,'net.sf.hfst.UnweightedTransducer.Transition.inputSymbol()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer_1_1TransitionIndex.html#af4b0d99317f6a53f8a5a00118f300902',1,'net.sf.hfst.WeightedTransducer.TransitionIndex.inputSymbol()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer_1_1Transition.html#afed8e8f32a981d79837566d96881ed70',1,'net.sf.hfst.WeightedTransducer.Transition.inputSymbol()']]]
 ];

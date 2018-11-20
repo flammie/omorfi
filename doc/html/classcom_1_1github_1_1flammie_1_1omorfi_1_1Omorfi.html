@@ -87,15 +87,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2504f246c588ce0270d85b4db1357eb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a2504f246c588ce0270d85b4db1357eb8">loadAnalyser</a> (String path)  throws java.io.FileNotFoundException,            java.io.IOException, net.sf.hfst.FormatException     </td></tr>
 <tr class="memdesc:a2504f246c588ce0270d85b4db1357eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an omorfi analyser from the given file. The file should contain a single HFST automaton for omorfi style analyses.  <a href="#a2504f246c588ce0270d85b4db1357eb8">More...</a><br /></td></tr>
 <tr class="separator:a2504f246c588ce0270d85b4db1357eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa5ec5d974f57e5bcf5f381e4d0aac2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#afa5ec5d974f57e5bcf5f381e4d0aac2d">load</a> (String path)  throws java.io.FileNotFoundException,            java.io.IOException, net.sf.hfst.FormatException     </td></tr>
-<tr class="memdesc:afa5ec5d974f57e5bcf5f381e4d0aac2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load omorfi automaton from filename and guess its use.  <a href="#afa5ec5d974f57e5bcf5f381e4d0aac2d">More...</a><br /></td></tr>
-<tr class="separator:afa5ec5d974f57e5bcf5f381e4d0aac2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c28ad34af4f37fc4163eb72f67dbb2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a8c28ad34af4f37fc4163eb72f67dbb2b">loadAll</a> (String path)  throws java.io.FileNotFoundException,            java.io.IOException     </td></tr>
-<tr class="memdesc:a8c28ad34af4f37fc4163eb72f67dbb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">load all recognisable automata in given path.  <a href="#a8c28ad34af4f37fc4163eb72f67dbb2b">More...</a><br /></td></tr>
-<tr class="separator:a8c28ad34af4f37fc4163eb72f67dbb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9b4666bb561df76dbda7d09795c0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#aee9b4666bb561df76dbda7d09795c0b3">loadAll</a> ()  throws java.io.FileNotFoundException,            java.io.IOException     </td></tr>
-<tr class="memdesc:aee9b4666bb561df76dbda7d09795c0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">load all automata in standard system locations.  <a href="#aee9b4666bb561df76dbda7d09795c0b3">More...</a><br /></td></tr>
-<tr class="separator:aee9b4666bb561df76dbda7d09795c0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbae76f94795abf06e15f9118a4cd80c"><td class="memItemLeft" align="right" valign="top">Collection&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#abbae76f94795abf06e15f9118a4cd80c">analyse</a> (String wf)  throws net.sf.hfst.NoTokenizationException     </td></tr>
 <tr class="memdesc:abbae76f94795abf06e15f9118a4cd80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a simple morphological analysis lookup.  <a href="#abbae76f94795abf06e15f9118a4cd80c">More...</a><br /></td></tr>
 <tr class="separator:abbae76f94795abf06e15f9118a4cd80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,81 +138,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a collection of analyses for the token. </dd></dl>
-
-</div>
-</div>
-<a id="afa5ec5d974f57e5bcf5f381e4d0aac2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa5ec5d974f57e5bcf5f381e4d0aac2d">&#9670;&nbsp;</a></span>load()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void com.github.flammie.omorfi.Omorfi.load </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td> throws java.io.FileNotFoundException,            java.io.IOException, <a class="el" href="classnet_1_1sf_1_1hfst_1_1FormatException.html">net.sf.hfst.FormatException</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load omorfi automaton from filename and guess its use. </p>
-<p>A file name should consist of three parts separated by full stop. The second part must be a keyword describing the use of the automaton, first part must be "omorfi".</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>the path to analyser encoded as string. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>use loadXXX(String) versions instead </dd></dl>
-
-</div>
-</div>
-<a id="a8c28ad34af4f37fc4163eb72f67dbb2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c28ad34af4f37fc4163eb72f67dbb2b">&#9670;&nbsp;</a></span>loadAll() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void com.github.flammie.omorfi.Omorfi.loadAll </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td> throws java.io.FileNotFoundException,            java.io.IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>load all recognisable automata in given path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>the path to analyser encoded as string. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>use loadXXX(String) versions instead </dd></dl>
-
-</div>
-</div>
-<a id="aee9b4666bb561df76dbda7d09795c0b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee9b4666bb561df76dbda7d09795c0b3">&#9670;&nbsp;</a></span>loadAll() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void com.github.flammie.omorfi.Omorfi.loadAll </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws java.io.FileNotFoundException,            java.io.IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>load all automata in standard system locations. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>use loadXXX(String) versions instead </dd></dl>
 
 </div>
 </div>
@@ -320,7 +236,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 26 2018 17:45:58 for omorfi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 20 2018 18:07:48 for omorfi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
