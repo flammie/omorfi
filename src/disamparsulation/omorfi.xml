@@ -56,6 +56,16 @@
       </target>
       <likelihood>unlikely</likelihood>
     </evidence>
+    <evidence name="person=0 unlikely (XXX: except ?)">
+      <target>
+        <match>
+          <ufeats>
+            <ufeat name="Person">0</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>unlikely</likelihood>
+    </evidence>
     <evidence name="instructives unlikely">
       <documentation>
         <example>hän oli ryhmänsä nopein</example>
