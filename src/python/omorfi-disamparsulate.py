@@ -186,6 +186,8 @@ def main():
           file=options.statfile)
     print("Tokens per timeunit:", tokens / (realend - realstart),
           file=options.statfile)
+    print("Sentences per timeunit:", sentences / (realend - realstart),
+          file=options.statfile)
     exit(0)
 
 
