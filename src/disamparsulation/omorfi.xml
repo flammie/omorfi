@@ -997,8 +997,19 @@
           <lemma>siis</lemma>
           <lemma>sitten</lemma>
           <lemma>yleensä</lemma>
+          <lemma>hiljalleen</lemma>
+          <lemma>lopulta</lemma>
+          <lemma>vaan</lemma>
+          <lemma>hyvin</lemma>
+          <lemma>ehkäpä</lemma>
+          <lemma>sittenkin</lemma>
+          <lemma>todella</lemma>
           <lemma>myös</lemma>
+          <lemma>nyt</lemma>
+          <lemma>näin</lemma>
           <lemma>heti</lemma>
+          <lemma>ainakin</lemma>
+          <lemma>kauan</lemma>
           <upos>ADV</upos>
         </match>
       </target>
@@ -1016,12 +1027,36 @@
         </barrier>
       </context>
     </evidence>
-    <evidence name="Adverbs are ad adj or noun or whatever">
+    <evidence name="sti Adverbs are ad verbs">
+      <target>
+        <match>
+          <upos>ADV</upos>
+          <ufeats>
+            <ufeat name="Derivation">Sti</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>possibly</likelihood>
+      <depname>advmod</depname>
+      <context>
+        <location>any</location>
+        <match>
+          <upos>VERB</upos>
+        </match>
+        <barrier>
+          <match>
+            <upos>PUNCT</upos>
+          </match>
+        </barrier>
+      </context>
+    </evidence>
+    <evidence name="Range adverbs admod partitives">
       <target>
         <match>
           <lemma>hieman</lemma>
           <lemma>vähän</lemma>
           <lemma>paljon</lemma>
+          <lemma>lisää</lemma>
           <upos>ADV</upos>
         </match>
       </target>
@@ -1241,6 +1276,11 @@
           <lemma>kaikki</lemma>
           <lemma>tämä</lemma>
           <lemma>tuo</lemma>
+          <lemma>eräs</lemma>
+          <lemma>muu</lemma>
+          <lemma>moni</lemma>
+          <lemma>sama</lemma>
+          <lemma>jokin</lemma>
           <upos>PRON</upos>
           <upos>DET</upos>
           <ufeats>
@@ -1254,7 +1294,6 @@
       <context>
         <location>+1</location>
         <match>
-          <upos>NOUN</upos>
           <ufeats>
             <ufeat name="Number"/>
             <ufeat name="Case"/>
@@ -1308,6 +1347,30 @@
           <ufeat name="Case"/>
         </ufeats>
       </match>
+      </context>
+    </evidence>
+    <evidence name="Numeral modifier measurements">
+      <target>
+        <match>
+          <upos>NUM</upos>
+          <ufeats>
+            <ufeat name="NumType">Card</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>usually</likelihood>
+      <depname>nummod</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <lemma>%</lemma>
+          <lemma>€</lemma>
+          <lemma>$</lemma>
+          <lemma>m</lemma>
+          <lemma>cm</lemma>
+          <lemma>kg</lemma>
+          <lemma>g</lemma>
+        </match>
       </context>
     </evidence>
     <!-- negations -->
@@ -1462,6 +1525,55 @@
         </barrier>
       </context>
     </evidence>
-
+    <!-- copulas -->
+    <evidence name="equative adjective copula">
+      <target>
+        <match>
+          <lemma>olla</lemma>
+          <upos>AUX</upos>
+          <ufeats>
+            <ufeat name="Number"/>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>cop</depname>
+      <context>
+        <location>+1</location>
+        <match>
+          <upos>ADJ</upos>
+          <ufeats>
+            <ufeat name="Number"/>
+            <ufeat name="Case">Nom</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
+    <evidence name="owning copula comes after adessive">
+      <target>
+        <match>
+          <lemma>olla</lemma>
+          <upos>AUX</upos>
+          <ufeats>
+            <ufeat name="Number"/>
+            <ufeat name="Person">3</ufeat>
+          </ufeats>
+        </match>
+      </target>
+      <likelihood>probably</likelihood>
+      <depname>cop:own</depname>
+      <context>
+        <location>-1</location>
+        <match>
+          <upos>NOUN</upos>
+          <upos>PROPN</upos>
+          <ufeats>
+            <ufeat name="Number"/>
+            <ufeat name="Case">Ade</ufeat>
+          </ufeats>
+        </match>
+      </context>
+    </evidence>
   </evidences>
 </disamparsulations>
