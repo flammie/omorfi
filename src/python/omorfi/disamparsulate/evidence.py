@@ -101,7 +101,8 @@ class Evidence:
         for anal in newdeps:
             # XXX: should be weighted uniq but meh
             addkey = anal.udepname, anal.udeppos, anal.upos,\
-                "#".join(anal.lemmas)
+                "#".join(anal.lemmas),\
+                "|".join([k + v for k, v in anal.ufeats.items()])
             if addkey not in addeds:
                 token.analyses.append(anal)
                 addeds.add(addkey)
