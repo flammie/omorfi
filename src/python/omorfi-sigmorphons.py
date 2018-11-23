@@ -71,7 +71,7 @@ def unimorph2omor(unimorphstring):
             print("missing", unimorph)
             exit(1)
     for unimorph in unimorphs:
-        if 'mood' not in unimorph and 'aspect' not in  unimorph and 'finite' \
+        if 'mood' not in unimorph and 'aspect' not in unimorph and 'finite' \
                 not in unimorph:
             continue
         if unimorph in u2o:
