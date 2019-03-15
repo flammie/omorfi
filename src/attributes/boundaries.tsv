@@ -6362,10 +6362,10 @@ femtometri	1	femto{WB}metri
 femtosekunti	1	femto{WB}sekunti
 femtovoltti	1	femto{WB}voltti
 fenkolinsiemen	1	fenkolin{WB}siemen
-Fennoskandia	1	Fenno{WB}skandia
-fennougristi	1	fenno{WB}ugristi
-fennougristiikka	1	fenno{WB}ugristiikka
-fennoveganismi	1	fenno{WB}veganismi
+Fennoskandia	1	Fenno{XB}skandia
+fennougristi	1	fenno{XB}ugristi
+fennougristiikka	1	fenno{XB}ugristiikka
+fennoveganismi	1	fenno{XB}veganismi
 fenofibraatti	1	feno{WB}fibraatti
 fenoksimetyylipenisilliini	1	fenoksi{WB}metyyli{WB}penisilliini
 fenolihartsi	1	fenoli{WB}hartsi
@@ -48032,9 +48032,6 @@ ruissihtijauho	1	ruis{WB}sihti{WB}jauho
 ruisvehnä	1	ruis{WB}vehnä
 ruisvirna	1	ruis{WB}virna
 ruisviski	1	ruis{WB}viski
-Rukajärvi	1	Ruka{WB}järvi
-Rukatunturi	1	Ruka{WB}tunturi
-Rukavesi	1	Ruka{WB}vesi
 rukiinjyvä	1	rukiin{WB}jyvä
 rukiinolki	1	rukiin{WB}olki
 rukiinsiemen	1	rukiin{WB}siemen
