@@ -2081,6 +2081,7 @@ PROPN_VUODET	PROPN	NOUN	27	None	obligatory	weaken	back	None	None	False	False	det
 PROPN_VUOLLE	PROPN	NOUN	48	I	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*lle	le
 PROPN_VUOLLET	PROPN	NOUN	44	I	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*llet	let
 PROPN_VÄRTÖ	PROPN	NOUN	1	K	False	weaken	front	None	None	False	False	rtö	tö
+PROPN_WADA	PROPN	NOUN	9	None	False	weaken	back	a	None	False	False	A	A
 PROPN_YHTIÖT	PROPN	NOUN	3	None	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*t	t
 PROPN_YKSIKKÖ	PROPN	NOUN	4	A	False	weaken	front	None	None	False	False	kkö	kö
 PROPN_YLÄNKÖ	PROPN	NOUN	1	G	False	weaken	front	None	None	False	False	nkö	kö
