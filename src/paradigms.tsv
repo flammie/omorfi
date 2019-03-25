@@ -2342,8 +2342,8 @@ VERB_ÖYKKÄRÖIDÄ	VERB	VERB	62	None	False	strengthen	front	None	None	False	Fal
 X_51eikä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False	eikä	ikä
 X_51ettei	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False	ei	ei
 X_51äläkä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False	äläkä	äkä
-X_FORGN_DE	X	X	99	None	False	weaken	back	None	None	False	False	.
-X_FORGN_EN	X	X	99	None	False	weaken	back	None	None	False	False	.
-X_FORGN_SV	X	X	99	None	False	weaken	back	None	None	False	False	.
+X_FORGN_DE	PROPN	X	99	None	False	weaken	back	None	None	False	False	.
+X_FORGN_EN	PROPN	X	99	None	False	weaken	back	None	None	False	False	.
+X_FORGN_SV	PROPN	X	99	None	False	weaken	back	None	None	False	False	.
 X_IGNORE	X	X	99	None	False	weaken	back	None	None	False	False	.
 X_SUFFIX_GOESWITH	X	X	99	None	False	weaken	back	None	None	False	False	.
