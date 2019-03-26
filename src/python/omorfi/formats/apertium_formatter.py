@@ -291,6 +291,7 @@ class ApertiumFormatter(Formatter):
         "ORDINAL": "ord",
         "ORD": "ord",
         "ORG": "al",
+        "UNKNOWNPROPN": "al",
         "Osg1": "pxsg1",
         "Osg2": "pxsg2",
         "PARTICLE": "part",
@@ -465,6 +466,8 @@ class ApertiumFormatter(Formatter):
                     self.stuff2lexc(wordmap['proper_noun_class'])
                 if wordmap['sem'] in ['MALE', 'FEMALE']:
                     wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
+            else:
+                wordmap['analysis'] += self.stuff2lexc('UNKNOWNPROPN')
         elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
