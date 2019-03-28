@@ -140,7 +140,7 @@ ADP_LISÄKSI	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	ksi	
 ADP_LÄHELLÄ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	ä
 ADP_MUKAAN	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True	n	n
 ADP_MUKAISESTI	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True	.
-ADP_NÄHDEN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	den
+ADP_NÄHDEN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	den	den
 ADP_NÄKYVIIN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	n	n
 ADP_TYKÖ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	.
 ADP_VALTAAN	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True	n	n
