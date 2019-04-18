@@ -104,6 +104,7 @@ ADJ_TERVE	ADJ	ADJECTIVE	48	None	False	strengthen	front	None	None	False	False	[Ä
 ADJ_TERÄVÄ	ADJ	ADJECTIVE	10	None	False	weaken	front	ä	None	False	False	ä	ä
 ADJ_TIIVIS	ADJ	ADJECTIVE	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*is	is
 ADJ_TOOPE	ADJ	ADJECTIVE	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
+ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]	
 ADJ_TUHTI	ADJ	ADJECTIVE	5	F	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti	ti
 ADJ_TUMMAHKO	ADJ	ADJECTIVE	1	None	False	weaken	back	None	None	False	False	o
 ADJ_TURTA	ADJ	ADJECTIVE	10	K	False	weaken	back	a	None	False	False	rta	ta
