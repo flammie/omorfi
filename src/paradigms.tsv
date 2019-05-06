@@ -546,7 +546,7 @@ NOUN_NEUVOTTELUT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	u
 NOUN_NIHTI	NOUN	NOUN	5	F	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ti	ti
 NOUN_NIITUT	NOUN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
 NOUN_NIMETÖN	NOUN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	ön
-NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[Eeěë]
+NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[Eeěëéè]
 NOUN_NOKI	NOUN	NOUN	7	D	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki	ki
 NOUN_NOUGAT	NOUN	NOUN	22	None	False	weaken	back	a	None	False	False	.
 NOUN_NRO	NOUN	PARTICLE	99	None	False	False	back	None	None	False	False	.
@@ -1856,7 +1856,7 @@ PROPN_MÄNTY	PROPN	NOUN	1	J	False	weaken	front	None	None	False	False	[ÄÖYIEĒ�
 PROPN_MÄTTÄÄT	PROPN	NOUN	41	C	obligatory	strengthen	front	None	None	False	False	ttäät	täät
 PROPN_MÖMMÖ	PROPN	NOUN	1	None	False	weaken	front	None	None	False	False	ö
 PROPN_MÖRKÖ	PROPN	NOUN	1	D	False	weaken	front	None	None	False	False	kö	kö
-PROPN_NALLE	PROPN	NOUN	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*[Eeëěĕ]
+PROPN_NALLE	PROPN	NOUN	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*[Eeëěĕéè]
 PROPN_NEITSYT	PROPN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 PROPN_NEUVOTTELUT	PROPN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 PROPN_NG	PROPN	NOUN	5	None	False	weaken	both	None	None	False	False	.
@@ -1866,7 +1866,7 @@ PROPN_NIITUT	PROPN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
 PROPN_NIITYT	PROPN	NOUN	1	C	obligatory	weaken	front	None	None	False	False	tyt	yt
 PROPN_NIMETÖIN	PROPN	NOUN	34	C	False	strengthen	front	None	None	False	False	töin	töin
 PROPN_NIMETÖN	PROPN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	ön
-PROPN_NISSE	PROPN	NOUN	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*[Eeěë]
+PROPN_NISSE	PROPN	NOUN	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*[Eeěëéè]
 PROPN_NOKI	PROPN	NOUN	7	D	False	weaken	back	None	None	False	False	ki	ki
 PROPN_NOUGAT	PROPN	NOUN	22	None	False	weaken	back	a	None	False	False	.
 PROPN_NUGAA	PROPN	NOUN	20	None	False	weaken	back	a	None	False	False	aa	a
