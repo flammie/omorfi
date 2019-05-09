@@ -37,6 +37,8 @@ These are the obligatory stamps of the day:
 )
 <img src="http://img.shields.io/liberapay/patrons/Flammie.svg?logo=liberapay">
 
+<script src="https://liberapay.com/Flammie/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 
 ## Documentation
 
