@@ -35,6 +35,8 @@ These are the obligatory stamps of the day:
 (stable master branch:
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
 )
+<img src="http://img.shields.io/liberapay/patrons/Flammie.svg?logo=liberapay">
+
 
 ## Documentation
 
