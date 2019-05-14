@@ -12,6 +12,7 @@ ADJ_AUTIO	The class for o final long vowel stems is described here, and old old 
 ADJ_AUTUAS	Dictionary class 41 as
 ADJ_AVOIN	Dictionary class 33
 ADJ_BEIGE	The front variation of unchanging e stems is class described here, and in old dictionaries ⁸.
+ADJ_COOL	New consonant-final adjective loan word with 0:i stem
 ADJ_EHTA	The ta : da stem with a comparative and j plurals is described here, and the dictionary class is ⁹⁻F. None with k:g gradation.
 ADJ_EHYT	Dictionary class 43 front
 ADJ_GAY	Some loan words inflect irregularly, either more along the written form or the pronunciation. There are not many direct adjective loans in general.
@@ -2081,6 +2082,7 @@ PROPN_VUODET	Dictionary class 27 det plurale tantum
 PROPN_VUOLLE	Dictionary class 48 back le
 PROPN_VUOLLET
 PROPN_VÄRTÖ
+PROPN_WADA	An acronym that is also inflected like a-final noun without a colon, e.g. WADA ~ WADAn. Plurals only with colon.
 PROPN_YHTIÖT
 PROPN_YKSIKKÖ	Dictionary class 4 kkö
 PROPN_YLÄNKÖ	Dictionary class 1nkö

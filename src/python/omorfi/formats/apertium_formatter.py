@@ -22,7 +22,7 @@
 
 from ..error_logging import fail_formatting_missing_for, just_fail
 from .formatter import Formatter
-from ..settings import optional_hyphen, weak_boundary, word_boundary
+from ..settings import weak_boundary, word_boundary
 from ..string_manglers import lexc_escape
 
 
@@ -291,6 +291,7 @@ class ApertiumFormatter(Formatter):
         "ORDINAL": "ord",
         "ORD": "ord",
         "ORG": "al",
+        "UNKNOWNPROPN": "al",
         "Osg1": "pxsg1",
         "Osg2": "pxsg2",
         "PARTICLE": "part",
@@ -465,6 +466,8 @@ class ApertiumFormatter(Formatter):
                     self.stuff2lexc(wordmap['proper_noun_class'])
                 if wordmap['sem'] in ['MALE', 'FEMALE']:
                     wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
+            else:
+                wordmap['analysis'] += self.stuff2lexc('UNKNOWNPROPN')
         elif wordmap['upos'] == 'VERB':
             if wordmap['argument']:
                 wordmap[
@@ -513,8 +516,7 @@ class ApertiumFormatter(Formatter):
         # XXX: for now
         if wordmap['lemma'] in "¹²³½¼=≥µ#/%":
             wordmap['analysis'] += self.stuff2lexc("NOUN")
-        wordmap['stub'] = wordmap['stub'].replace(
-            word_boundary, optional_hyphen)
+        wordmap['stub'] = wordmap['stub']
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         if 'BLACKLIST' in wordmap['new_para']:
             return "!%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
