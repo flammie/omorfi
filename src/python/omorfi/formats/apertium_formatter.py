@@ -381,6 +381,7 @@ class ApertiumFormatter(Formatter):
         "": ""
     }
 
+
     def __init__(self, verbose=True):
         """Create an apertium formatter with given verbosity.
 

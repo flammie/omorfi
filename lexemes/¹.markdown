@@ -1,0 +1,11 @@
+---
+layout: lexeme
+lexeme: ¹
+---
+
+###  ¹
+
+superscript one
+* UPOS:  SYM
+* Added from:  omorfi++
+

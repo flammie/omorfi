@@ -1,0 +1,119 @@
+<!-- Creator     : groff version 1.22.2 -->
+<!-- CreationDate: Mon Apr  9 04:44:59 2018 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>OMORFI-FACTORISE</title>
+
+</head>
+<body>
+
+<h1 align="center">OMORFI-FACTORISE</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">omorfi-factorise
+&minus; Factorise running Finnish text with omorfi for
+moses</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>omorfi-factorise.py</b>
+[<i>OPTION</i>] [<i>FILENAME</i>...]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Factorises
+running text using omorfi automata and hfst python library.
+This script is mainly for moses pipelines between tokenise
+and training. <b><br>
+&minus;h</b>, <b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">show this help message and
+exit</p>
+
+<p style="margin-left:11%;"><b>&minus;f</b> FSAPATH,
+<b>&minus;&minus;fsa</b> FSAPATH</p>
+
+<p style="margin-left:22%;">Path to directory of HFST
+format automata</p>
+
+<p style="margin-left:11%;"><b>&minus;i</b> INFILE,
+<b>&minus;&minus;input</b> INFILE</p>
+
+<p style="margin-left:22%;">source of analysis data</p>
+
+<p style="margin-left:11%;"><b>&minus;v</b>,
+<b>&minus;&minus;verbose</b></p>
+
+<p style="margin-left:22%;">print verbosely while
+processing</p>
+
+<p style="margin-left:11%;"><b>&minus;o</b> OUTFILE,
+<b>&minus;&minus;output</b> OUTFILE</p>
+
+<p style="margin-left:22%;">print factors into OUTFILE</p>
+
+<p style="margin-left:11%; margin-top: 1em">If no INFILE is
+given, input is read from standard input. If no OUTFILE is
+given, output is written to standard output.</p>
+
+<h2>EXAMPLES
+<a name="EXAMPLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The following
+command</p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><b>omorfi-factorise.py
+&minus;i rautatie.tokens &minus;o rautatie.factors</b></p>
+
+<p style="margin-left:11%; margin-top: 1em">factorises a
+tokenised corpus</p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Copyright
+&copy; 2015 Omorfi contributors Licence GPLv3: GNU GPL
+version 3 &lt;http://gnu.org/licenses/gpl.html&gt; <br>
+This is free software: you are free to change and
+redistribute it. There is NO WARRANTY, to the extent
+permitted by law.</p>
+<hr>
+</body>
+</html>

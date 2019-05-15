@@ -1,0 +1,20 @@
+---
+layout: paradigm
+paradigm: PROPN_VALTA
+---
+### ` PROPN_VALTA `
+
+Dictionary class 9 t~l
+* clitics: False
+* grade_dir: weaken
+* harmony: back
+* suffix_regex: lta
+* plurale_tantum: False
+* possessive: False
+* upos: PROPN
+* stem_vowel: a
+* kotus_tn: 9
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: I
+* deletion: ta

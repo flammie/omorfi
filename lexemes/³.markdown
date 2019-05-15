@@ -1,0 +1,11 @@
+---
+layout: lexeme
+lexeme: ³
+---
+
+###  ³
+
+superscript three
+* UPOS:  SYM
+* Added from:  omorfi++
+

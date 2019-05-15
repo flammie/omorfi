@@ -1,0 +1,20 @@
+---
+layout: paradigm
+paradigm: PROPN_KORTTI
+---
+### ` PROPN_KORTTI `
+
+None
+* clitics: False
+* grade_dir: weaken
+* harmony: back
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tti
+* plurale_tantum: False
+* possessive: False
+* upos: PROPN
+* stem_vowel: None
+* kotus_tn: 5
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: C
+* deletion: ti

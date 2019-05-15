@@ -1,0 +1,20 @@
+---
+layout: paradigm
+paradigm: PROPN_BRIE
+---
+### ` PROPN_BRIE `
+
+Dictionary class 21 i front
+* clitics: False
+* grade_dir: weaken
+* harmony: front
+* suffix_regex: .
+* plurale_tantum: False
+* possessive: False
+* upos: PROPN
+* stem_vowel: i
+* kotus_tn: 21
+* pos: NOUN
+* stem_diphthong: None
+* kotus_av: None
+* deletion: None
