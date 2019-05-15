@@ -24,8 +24,8 @@ lemma	homonym	symbol
 '	2	initial-quote
 ’	1	final-quote
 ’	2	initial-quote
-"	1	final-quote
-"	2	initial-quote
+\"	1	final-quote
+\"	2	initial-quote
 ”	1	final-quote
 ”	2	initial-quote
 «	1	final-quote

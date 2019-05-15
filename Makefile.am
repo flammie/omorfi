@@ -3,7 +3,7 @@
 ## Licence: GPL v3 (not newer)
 
 ## N.B. GNU standards COPYING AUTHORS INSTALL README NEWS need not be declared
-SUBDIRS = src doc man docs
+SUBDIRS = src doc man test docs
 ACLOCAL_AMFLAGS = -I m4
 
 pkgconfigdir=$(datarootdir)/pkgconfig

@@ -336,7 +336,7 @@ AX_CXX_COMPILE_STDCXX_11
 
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  doc/Makefile test/Makefile test/test-header.yaml
-                 omorfi.pc man/Makefile])
+                 omorfi.pc man/Makefile docs/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi.bash])
 AC_CONFIG_FILES([test/unimorph-test.bash],
                 [chmod +x test/unimorph-test.bash])
