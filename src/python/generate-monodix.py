@@ -163,7 +163,7 @@ def main():
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                                         quoting=quoting, quotechar=quotechar,
-                                        escapechar='%', strict=True)
+                                        escapechar='\\', strict=True)
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
