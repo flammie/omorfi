@@ -9,8 +9,6 @@ ACLOCAL_AMFLAGS = -I m4
 pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
 
-.PHONY: doc
-
 conversions:
 	$(MAKE) -C src conversions
 
