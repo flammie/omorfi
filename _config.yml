@@ -1,0 +1,3 @@
+# Exclude non-site files
+exclude: ['bin', 'README.md', 'src', 'test']
+theme: jekyll-theme-midnight

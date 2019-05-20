@@ -24,8 +24,8 @@ lemma	homonym	symbol
 '	2	initial-quote
 ’	1	final-quote
 ’	2	initial-quote
-"	1	final-quote
-"	2	initial-quote
+\"	1	final-quote
+\"	2	initial-quote
 ”	1	final-quote
 ”	2	initial-quote
 «	1	final-quote
@@ -46,4 +46,3 @@ lemma	homonym	symbol
 ‹	1	initial-bracket
 ‥	1	sentence-boundary
 …	1	sentence-boundary
- 	1	space

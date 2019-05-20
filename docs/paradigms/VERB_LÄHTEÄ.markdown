@@ -1,0 +1,20 @@
+---
+layout: paradigm
+paradigm: VERB_LÄHTEÄ
+---
+### ` VERB_LÄHTEÄ `
+
+Dictionary class60
+* harmony: front
+* upos: VERB
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: hteä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: hteä
+* kotus_tn: 60

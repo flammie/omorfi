@@ -9,3 +9,7 @@ dist_man1_MANS=omorfi-analyse-text.1 omorfi-hyphenate.1 omorfi-generate.1\
 %.1:
 	help2man -s 1 -o $@ -N -S OMORFI `echo $@ | sed 's/.1/.sh/'`
 
+htmls:
+	for f in $(bootstrappable) $(broken) ; do \
+		groff -mandoc -Thtml $$f > $$f.html ;\
+	done

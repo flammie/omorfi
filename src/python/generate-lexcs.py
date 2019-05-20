@@ -175,7 +175,7 @@ def main():
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
-                                        quoting=quoting, escapechar='%',
+                                        quoting=quoting, escapechar='\\',
                                         quotechar=quotechar, strict=True)
             postponed_suffixes = list()
             postponed_abbrs = {'ABBREVIATION': list(), 'ACRONYM': list()}

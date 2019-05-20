@@ -1,145 +1,152 @@
 stuff	doc
-NOUN	Noun
-ADJECTIVE	Adjective (comparable)
-QUALIFIER	Qualifier (not comparable)
-VERB	Verb
-ADVERB	Adverb
-INTERJECTION	Interjection
-PRONOUN	Pronoun
-NUMERAL	Numeral
-ADPOSITION	Adposition
-PREPOSITION	Preposition
-POSTPOSITION	Postposition
-CONJUNCTION	Conjunction
-COORDINATING	Coordinating conjunction
-ADVERBIAL	Adverbial conjunction
-COMPARATIVE	Comparative conjunction
-ABBREVIATION	Abbreviation (non-inflecting, may end in full stop)
-ACRONYM	Acronym (inflects with colon)
-PROPER	Proper noun
-CARDINAL	Cardinal
-ORDINAL	Ordinal
-DEMONSTRATIVE	Demonstrative
-QUANTOR	Quantifier (pronoun)
-PERSONAL	Personal (pronoun)
-INDEFINITE	Indefinite (pronoun)
-INTERROGATIVE	Interrogative
-REFLEXIVE	Reflexive (pronoun)
-RELATIVE	Relative
-RECIPROCAL	Reciprocal
-PUNCTUATION	Punctuation
-DASH	Dash
-SPACE	Space
-DECIMAL	Decimal digits
-CLAUSE-BOUNDARY	Clause final
-SENTENCE-BOUNDARY	Sentence final
-INITIAL-QUOTE	Left quotation mark
-FINAL-QUOTE	Right quotation mark
-INITIAL-BRACKET	Left bracket
-FINAL-BRACKET	Right bracket
-DIGIT	Digits
-ROMAN	Roman numerals
-PL1	First plural" 
-PL2	Secod plural
-PL3	Third plural
-SG1	First singular" 
-SG2	Second singular
-SG3	Third singular
-PE4	Passive
-COMP	Comparative
-SUPERL	Superlative
-UNSPECIFIED	Unclassified particle
-LEMMA-START	Left marker for lemma
-Bc	Compound boundary for generated compounds
-.sent	Sentence ?
+ABBREVIATION	Abbreviation, shortening, non-inflecting, may end in full stop
+ACRONYM	Acronym, shortening that inflects with colon
+ADJ	Adjective, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/ADJ.html
+ADP	Adposition, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/ADP.html
+ADV	Adverb, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/ADV.html
+AUX	Auxiliary verb, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/AUX.html
+Bc	Compound boundary for generated (derivational-inflectional) compounds
 B-	Marker for co-ordinated compound hyphen
 B→	Marker for left co-ordinated compound hyphen
 B←	Marker for right co-ordinated compound hyphen
 Bxxx	Compound missing hyphen unjoined
-Cma	Agent participle
-Cmaisilla	Fifth infinitive
-Cnut	Nut participle
-Cva	Va participle
-Cmaton	Negation participle
+CARDINAL	Cardinal, lexical feature based on UD NumType, refer to http://universaldependencies.org/u/feat/NumType.html
+Ccmp	Comparative comparison, inflectional feature, refer to http://universaldependencies.org/u/feat/Degree.html
+CCONJ	Coordinating conjunction, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/CCONJ.html
+CLAUSE-BOUNDARY	Clause final, lexical feature of clause bounding tokens
+Cma	Agent participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
+Cmaisilla	Fifth infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
+Cmaton	Negation participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
+Cnut	Nut participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
+COMPARATIVE	Comparative conjunction, lexical feature based on the Finnish grammar, mainly for the lexeme 'kuin', refer to http://kaino.kotus.fi/visk/sisallys.php?p=819
+COMP	Comparative, lexicalised version for inflectional feature of adjectives, refer to http://universaldependencies.org/u/feat/Degree.html
 Cpos	Positive comparison
-Ccmp	Comparative comparison
+Cpos	Positive comparison, inflectional feature, refer to http://universaldependencies.org/u/feat/Degree.html
 Csup	Superlative comparison
+Csup	Superlative comparison, inflectional featurehttp://universaldependencies.org/u/feat/Degree.html, refer to http://universaldependencies.org/u/feat/Degree.html
+Cva	Va participle
+Cva	Va participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html
+DASH	Dash, lexical feature of SYM, apertium compatibility
+DECIMAL	Decimal digits, lexical feature of NUMs written in digits
+DEMONSTRATIVE	Demonstrative, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+DET	Determiner, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/DET.html
+DIGIT	Digits, lexical feature of NUMs written in digits
+Din	Derivation -in, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dinen	Derivation -inen, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dja	Derivation -jA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dma	Derivation -mA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
 Dmaisilla	Deverbal -mAisillA
-Dminen	Deverbal -minen
-Dnut	Deverbal -nUt
-Dtu	Deverbal -tU
-Dva	Deverbal -vA
-Dtava	Deverbal -tAvA
-Dmaton	Deverbal mAtOn
-Duus	Derivation -UUs
-Dttaa	Derivation -ttAA
-Dtattaa	Derivation -tAttAA
-Dtatuttaa	Derivation -tAtUttAA
-Dma	Derivation -mA
-Dinen	Derivation -inen
-Dja	Derivation -jA
-Dmpi	Derivation -mpi
-Din	Derivation -in
-Ds	Derivaiton -s
-Du	Derivation -u
-Dsti	Derivation -sti
+Dmaisilla	Deverbal -mAisillA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dmaton	Deverbal mAtOn, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dminen	Deverbal -minen, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dmpi	Derivation -mpi, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dnut	Deverbal -nUt, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Ds	Derivaiton -s, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dsti	Derivation -sti, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dtattaa	Derivation -tAttAA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dtatuttaa	Derivation -tAtUttAA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dtava	Deverbal -tAvA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dttaa	Derivation -ttAA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dtu	Deverbal -tU, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Du	Derivation -u, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Duus	Derivation -UUs, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+Dva	Deverbal -vA, derivational feature, refer to http://universaldependencies.org/fi/feat/Derivation.html
+FINAL-BRACKET	Right bracket, lexical feature of SYM, for apertium compatibility
+FINAL-QUOTE	Right quotation mark, lexical feature of SYM, for apertium compatibility
 FTB3man	Manner adverbial (analysis for legacy support)
-Ia	A infinitive
-Ie	E infinitive
-Ima	mA infinitive
-Iminen	Fourth infinitive
-Ncon	Conneg verb form (in negative constructions)
-Nneg	Negation verb
-Npl	Plural" 
-Nsg	Singular" 
-N??	Number to be determined
-Osg1	First person singular possessive
-Osg2	Second person singular possessive
-Osg3	Third person singular possessive
-O3	Third person ambiguous possessive
-Opl1	First person plural possessive
-Opl2	Second person plural possessive
-Opl3	Third person plural possessive
-Ppl1	First person plural actor
-Ppl2	Second person plural actor
-Ppl3	Third person plural actor
-Psg1	First person singular actor" 
-Psg2	Second person singular actor
-Psg3	Third person singular actor
-Ppe4	Passive" 
-Qka	Focus clitic particle -kA
-Qs	Focus clitic particle -s
-Qpa	Focus clitic particle -pA
-Qko	Focus clitic particle -kO (question)
-Qkin	Focus clitic particle -kin
-Qkaan	Focus clitic particle -kAAn
-Qhan	Focus clitic particle -hAn
-Tcond	Conditional
-Timp	Impertative" 
-Tpast	Indicative past
-Tpot	Potential" 
-Tpres	Indicative Present
-Topt	Optative
-Uarch	Archaic
-Udial	Dialect general
-Urare	Rare
-Unonstd	Non-standard
-Vact	Active
-Vpss	Passive
-Xabe	Abessive
-Xabl	Ablative
-Xade	Adessive
-Xall	Allative
-Xcom	Comitative
-Xela	Elative
-Xess	Essive
-Xgen	Genitive
-Xill	Illative" 
-Xine	Inessive
-Xins	Instructive
-Xnom	Nominative
-Xpar	Partitive" 
-Xtra	Transtlative" 
-Xlat	Lative
-Xacc	Accusative
-X???	Case to be determined
+FTB3man	Manner adverbial derivation (analysis for legacy support)
+Ia	A infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/InfForm.html
+Ie	E infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/InfForm.html
+Ima	mA infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/InfForm.html
+Iminen	Fourth infinitive, inflectional feature
+INDEFINITE	Indefinite (pronoun), lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+INITIAL-BRACKET	Left bracket, lexical feature of SYM, for apertium compatibility
+INITIAL-QUOTE	Left quotation mark, lexical feature of SYM, for apertium compatibility
+INTERROGATIVE	Interrogative, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+INTJ	Interjection, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/INTJ.html
+LEMMA-START	Left marker for lemma
+Ncon	Conneg verb form (in negative constructions), inflectional feature, refer to http://universaldependencies.org/fi/feat/Connegative.html 
+Nneg	Negation verb, lexical feature of the verbs that complent the conneg form verbs
+N??	Number to be determined, inflectional feature
+NOUN	Noun, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/NOUN.html
+Npl	Plural, inflectional feature, refer to http://universaldependencies.org/u/feat/Number.html
+Nsg	Singular, inflectional feature, refer to http://universaldependencies.org/u/feat/Number.html
+NUM	Numeral, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/NUM.html
+O3	Third person ambiguous possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+Opl1	First person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+Opl2	Second person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+Opl3	Third person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+ORDINAL	Ordinal, lexical feature based on UD NumType, refer to http://universaldependencies.org/u/feat/NumType.html
+Osg1	First person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+Osg2	Second person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+Osg3	Third person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+PE4	Passive / fourth persion, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+PERSONAL	Personal, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+PL1	First plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+PL2	Secod plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+PL3	Third plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+POSTPOSITION	Postposition, lexical feature based on UD-Finnish AdpType, an adposition that is after its complement
+Ppe4	Passive" , inflectional feature
+Ppl1	First person plural actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+Ppl2	Second person plural actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+Ppl3	Third person plural actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+PREPOSITION	Preposition, lexical feature based on UD-Finnish AdpType, an adposition that is before its complent, refer to http://universaldependencies.org/fi/feat/AdpType.html
+PRON	Pronoun, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/PRON.html
+PROPN	Proper noun, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/PROPN.html
+Psg1	First person singular actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+Psg2	Second person singular actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+Psg3	Third person singular actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+PUNCT	Punctuation, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/PUNCT.html
+Qhan	Focus clitic particle -hAn, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+Qkaan	Focus clitic particle -kAAn, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+Qka	Focus clitic particle -kA, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+Qkin	Focus clitic particle -kin, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+Qko	Focus clitic particle -kO (question), inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+Qpa	Focus clitic particle -pA, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+Qs	Focus clitic particle -s, inflectional feature. refer to http://universaldependencies.org/fi/feat/Clitic.html
+QUANTOR	Quantifier, lexical feature for non-inflecting adjective types, not used elsewhere(?)
+RECIPROCAL	Reciprocal, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+REFLEXIVE	Reflexive (pronoun), lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+RELATIVE	Relative, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html
+ROMAN	Roman numerals, lexical feature of NUMs written in roman numerals
+SCONJ	Adverbial conjunction, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/SCONJ.html
+SENTENCE-BOUNDARY	Sentence final, lexical feature of sentece bounding tokens
+.sent	Sentence marker, legacy support?
+SG1	First singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+SG2	Second singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+SG3	Third singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html
+SPACE	Space, lexical feature of SYM, needed for compatibility with many external systems that do not support space-as-a-token concept
+SUPERL	Superlative, lexicalised version for inflectional feature of adjectives, refer to http://universaldependencies.org/u/feat/Degree.html
+SYM	Symbol, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/SYM.html
+Tcond	Conditional, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
+Timp	Impertative, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
+Topt	Optative, inflectional feature, archaic
+Tpast	Indicative past, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
+Tpot	Potential, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
+Tpres	Indicative Present, inflectional feature, refer to http://universaldependencies.org/u/feat/Mood.html
+Uarch	Archaic form
+Udial	Dialectal (generic) form
+Unonstd	Non-standard form
+UNSPECIFIED	Unclassified particle, lexical feature for undecided particles
+Urare	Rare form
+Vact	Active mood, inflectional feature, refer to http://universaldependencies.org/u/feat/Voice.html
+VERB	Verb, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/VERB.html
+Vpss	Passive, inflectional feature, refer to http://universaldependencies.org/u/feat/Voice.html
+Xabe	Abessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xabl	Ablative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xacc	Accusative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xade	Adessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xall	Allative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+X???	Case to be determined, inflectional feature
+Xcom	Comitative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xela	Elative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xess	Essive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xgen	Genitive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xill	Illative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xine	Inessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xins	Instructive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xlat	Lative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xnom	Nominative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xpar	Partitive, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+Xtra	Transtlative, inflectional feature, refer to http://universaldependencies.org/u/feat/Case.html
+X	Unclassifiable lexeme, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/X.html

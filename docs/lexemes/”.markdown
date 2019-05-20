@@ -1,0 +1,18 @@
+---
+layout: lexeme
+lexeme: ”
+---
+
+###  ”
+
+left double quotation in 9-shape, common and recommended
+* UPOS:  PUNCT
+* Added from:  omorfi++
+
+
+## ” (alternate reading 2 )
+
+right double quotation in 9-shape, common and recommended
+* UPOS:  PUNCT
+* Added from:  omorfi++
+

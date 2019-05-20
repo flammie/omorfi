@@ -92,7 +92,7 @@ def main():
         tsv_writer = csv.DictWriter(output,
                                     fieldnames=get_wordmap_fieldnames(),
                                     delimiter=args.separator, quoting=quoting,
-                                    escapechar='%', quotechar=quotechar,
+                                    escapechar='', quotechar=quotechar,
                                     strict=True)
         tsv_writer.writeheader()
         with open(args.input, 'r', newline='') as infile:

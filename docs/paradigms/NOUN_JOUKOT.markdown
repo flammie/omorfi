@@ -1,0 +1,20 @@
+---
+layout: paradigm
+paradigm: NOUN_JOUKOT
+---
+### ` NOUN_JOUKOT `
+
+Dictionary class 1ko plurale tantum
+* harmony: back
+* upos: NOUN
+* kotus_av: A|D
+* possessive: False
+* clitics: False
+* deletion: ot
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ot
+* kotus_tn: 1

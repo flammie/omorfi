@@ -1,0 +1,11 @@
+---
+layout: lexeme
+lexeme: ½
+---
+
+###  ½
+
+half
+* UPOS:  SYM
+* Added from:  omorfi++
+

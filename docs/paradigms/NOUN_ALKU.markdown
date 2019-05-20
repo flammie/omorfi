@@ -1,0 +1,20 @@
+---
+layout: paradigm
+paradigm: NOUN_ALKU
+---
+### ` NOUN_ALKU `
+
+Dictionary class 1ku with k:0
+* harmony: back
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: ku
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ku
+* kotus_tn: 1

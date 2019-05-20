@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20181111], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20190511], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20181111
+VERSION=20190511
 
 # Options
 AC_ARG_WITH([hfst],
@@ -286,6 +286,7 @@ AC_PATH_PROGS([TAR], [tar gtar gnutar])
 AM_PATH_PYTHON([3.2])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
 AX_PYTHON_MODULE([libhfst], [true])
+AC_PATH_PROG([JEKYLL], [jekyll], [false])
 AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
@@ -334,8 +335,8 @@ AX_CXX_COMPILE_STDCXX_11
 # Checks for library functions
 
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
-                 doc/Makefile test/Makefile test/test-header.yaml
-                 omorfi.pc man/Makefile])
+                 test/Makefile test/test-header.yaml
+                 omorfi.pc man/Makefile docs/Makefile])
 AC_CONFIG_FILES([src/bash/omorfi.bash])
 AC_CONFIG_FILES([test/unimorph-test.bash],
                 [chmod +x test/unimorph-test.bash])

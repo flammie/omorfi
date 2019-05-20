@@ -3,11 +3,18 @@
 ## Licence: GPL v3 (not newer)
 
 ## N.B. GNU standards COPYING AUTHORS INSTALL README NEWS need not be declared
-SUBDIRS = src doc test man
+SUBDIRS = src man test docs
 ACLOCAL_AMFLAGS = -I m4
 
 pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
+
+omorfi-models-$(PACKAGE_VERSION).tar.xz:
+	tar -C src/generated -cJvf omorfi-models-$(PACKAGE_VERSION).tar.xz \
+		omorfi.accept.hfst omorfi.analyse.hfst omorfi.describe.hfst \
+		omorfi.generate.hfst omorfi_recased.analyse.hfst \
+		omorfi_recased.describe.hfst omorfi.segment.hfst \
+		omorfi.labelsegment.hfst
 
 
 conversions:

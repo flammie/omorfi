@@ -1,0 +1,12 @@
+---
+layout: stuff
+stuff: O3
+---
+# ` O3 `
+
+Third person ambiguous possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html
+
+## Default formats
+| Omorfi | Apertium | FTB 3.1 | Giella |
+|:------:|:--------:|:-------:|:------:|
+|  [POSS=3] |  %<pxsp3%> |  % Px3 |  +Px3  |
