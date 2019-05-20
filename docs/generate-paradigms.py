@@ -23,7 +23,7 @@ This script converts Finnish TSV-formatted lexicon to github wiki
 
 import argparse
 import csv
-from sys import exit, stderr
+from sys import stderr
 
 
 # standard UI stuff
@@ -41,7 +41,8 @@ def main():
     ap.add_argument("--paradigm-docs", "-P", action="append", required=True,
                     metavar="PDFILE", help="read paradigm docs from PDFILEs")
     ap.add_argument("--paradigms", "-A", required=True,
-                    metavar="PARAFILE", help="read paradigm data from PARAFILE")
+                    metavar="PARAFILE",
+                    help="read paradigm data from PARAFILE")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True,
                     type=argparse.FileType('w'),
@@ -54,10 +55,12 @@ def main():
     ap.add_argument("--separator", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    metavar="COMMENT",
+                    help="skip lines starting with COMMENT that"
                     "do not have SEPs")
     ap.add_argument("--strip", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP",
+                    help="strip STRIP from fields before using")
 
     args = ap.parse_args()
 
@@ -72,7 +75,8 @@ def main():
           "lexical database._", file=args.output)
     print(file=args.output)
     print("Paradigms are sub-groups of lexemes that have unique " +
-          "morpho-phonological features. In omorfi database there is a unique " +
+          "morpho-phonological features. " +
+          "In omorfi database there is a unique " +
           "paradigm for every possible combination of certain features:",
           file=args.output)
     print(file=args.output)
@@ -85,22 +89,7 @@ def main():
     print(file=args.output)
     # stolen from turku:
     # https://turkunlp.github.io/Finnish_PropBank/
-    print("""<table id="paradigmtable" class="display">
-<thead>
-<tr>
-<th>Paradigm</th>
-</tr>
-</thead>
-<tbody>
-{% for page in site.pages %}
-{% if page.paradigm %}
-<tr><td><a href="paradigms/{{page.paradigm}}.html">{{page.paradigm}}</a></td></tr>
-{% endif %}
-{% endfor %}
-</tbody>
-</table>
-
-""", file=args.output)
+    print("| **UPOS** | **Paradigm** | _Notes_ |", file=args.output)
 
     paradata = dict()
     with open(args.paradigms) as tsv_file:
@@ -127,9 +116,9 @@ def main():
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfile=open(args.outdir + '/' +
-                             tsv_parts['new_para'].replace('?', '_') +
-                             '.markdown', 'w')
+                outfilename = args.outdir + '/' + \
+                    tsv_parts['new_para'].replace('?', '_')
+                outfile = open(outfilename + '.markdown', 'w')
                 print('---', file=outfile)
                 print('layout: paradigm', file=outfile)
                 print('paradigm:', tsv_parts['new_para'], file=outfile)
@@ -140,15 +129,27 @@ def main():
                 print(tsv_parts['doc'], file=outfile)
                 if tsv_parts['new_para'] in paradata:
                     for key in paradata[tsv_parts['new_para']].keys():
-                        print("* ", key, ": ", paradata[tsv_parts['new_para']][key],
+                        print("* ", key, ": ",
+                              paradata[tsv_parts['new_para']][key],
                               sep='', file=outfile)
                     paradigms.remove(tsv_parts['new_para'])
                 else:
                     print("found in docs but not in data:",
-                            tsv_parts['new_para'], file=stderr)
-    if len(paradigms) > 0:
+                          tsv_parts['new_para'], file=stderr)
+                if not tsv_parts['doc']:
+                    print("missing DOC:", tsv_parts['new_para'])
+                    exit(1)
+                if len(tsv_parts['doc']) > 40:
+                    docshort = tsv_parts['doc'][:40] + '...'
+                else:
+                    docshort = tsv_parts['doc']
+                print("| " + paradata[tsv_parts['new_para']]['upos'] +
+                      " | [" + tsv_parts['new_para'] + "](" +
+                      outfilename + ".html) | " + docshort + " |",
+                      file=args.output)
+    if paradigms:
         print("Undocumented paradigms left:", ", ".join(paradigms),
-                file=stderr)
+              file=stderr)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 

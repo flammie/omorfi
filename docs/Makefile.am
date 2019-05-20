@@ -13,15 +13,15 @@ stuff.markdown:
 			   -S src/docs/stuff.tsv -o stuff.markdown -O stuffs/
 
 paradigms.markdown:
-	$(PYTHON) doc/generate-paradigms.py -P src/docs/paradigms.tsv \
-		-A src/paradigms.tsv -o paradigms.markdown -O paradigms/
+	$(PYTHON) generate-paradigms.py -P ../src/docs/paradigms.tsv \
+		-A ../src/paradigms.tsv -o paradigms.markdown -O paradigms/
 
-lexemes.markdown:
-	$(PYTHON) doc/generate-lexemes.py -L src/docs/lexemes.tsv \
-		-l src/generated/master.tsv -o lexemes.markdown -O lexemes/
+lexemes.markdown: generate-lexemes.py
+	$(PYTHON) generate-lexemes.py -L ../src/docs/lexemes.tsv \
+		-l ../src/generated/master.tsv -o lexemes.markdown -O lexemes/
 
 statistics.markdown:
-	doc/generate-statistics.bash test/
+	generate-statistics.bash ../test/
 
 clean-local:
 	if test -d com ; then \
