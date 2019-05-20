@@ -4,17 +4,17 @@ paradigm: ADJ_MATALA
 ---
 ### ` ADJ_MATALA `
 
-a:0 with optional a:e for comparative
-* clitics: False
-* grade_dir: weaken
+Adjectives with a:0 stem with optional a:e for comparative
 * harmony: back
-* suffix_regex: a
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: a
+* kotus_tn: 10

@@ -4,17 +4,17 @@ paradigm: PROPN_ACRO_YKSI
 ---
 ### ` PROPN_ACRO_YKSI `
 
-None
-* clitics: False
-* grade_dir: False
+Proper noun acronyms ending in 1
 * harmony: back
-* suffix_regex: 1
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 0
-* pos: ACRONYM
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: ACRONYM
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: 1
+* kotus_tn: 0

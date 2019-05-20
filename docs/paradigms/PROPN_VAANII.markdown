@@ -4,17 +4,17 @@ paradigm: PROPN_VAANII
 ---
 ### ` PROPN_VAANII `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper nouns with ii-stems
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: i
-* kotus_tn: 17
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: i
+* pos: NOUN
+* stem_vowel: i
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
+* kotus_tn: 17

@@ -4,17 +4,17 @@ paradigm: NOUN_KÄRÄJÄT
 ---
 ### ` NOUN_KÄRÄJÄT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plurale tantums for ä:0 variations
 * harmony: front
-* suffix_regex: ät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ät
+* kotus_tn: 10

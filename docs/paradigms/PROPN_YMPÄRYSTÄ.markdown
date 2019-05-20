@@ -4,17 +4,17 @@ paradigm: PROPN_YMPÄRYSTÄ
 ---
 ### ` PROPN_YMPÄRYSTÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper nouns with ä:0 stems
 * harmony: front
-* suffix_regex: ä
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: ä
-* kotus_tn: 9
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ä
+* kotus_tn: 9

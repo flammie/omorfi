@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_VIISI
 ### ` PROPN_ACRO_VIISI `
 
 The acronyms ending in digit 5 pronounced as number
-* clitics: False
-* grade_dir: False
 * harmony: back
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 0
-* pos: ACRONYM
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: ACRONYM
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 0

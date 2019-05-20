@@ -4,17 +4,17 @@ paradigm: ADJ_LAKO
 ---
 ### ` ADJ_LAKO `
 
-The class for o final bisyllabic stems with optional ’ is described here, this is a subset of dictionary class ¹⁻D.
-* clitics: False
-* grade_dir: weaken
+Adjectives with o final bisyllabic stems with optional ’ is described here, this is a subset of dictionary class ¹⁻D.
 * harmony: back
-* suffix_regex: ko
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 1
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: D
+* possessive: False
+* clitics: False
 * deletion: ko
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ko
+* kotus_tn: 1

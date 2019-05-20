@@ -4,17 +4,17 @@ paradigm: NOUN_ACRO_KUUSI
 ---
 ### ` NOUN_ACRO_KUUSI `
 
-None
-* clitics: False
-* grade_dir: False
+Acronyms ending in 6
 * harmony: front
-* suffix_regex: 6
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 0
-* pos: ACRONYM
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: ACRONYM
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: 6
+* kotus_tn: 0

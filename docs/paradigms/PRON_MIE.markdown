@@ -5,16 +5,16 @@ paradigm: PRON_MIE
 ### ` PRON_MIE `
 
 dialectal forms of minä, inflects with u stem
-* clitics: False
-* grade_dir: False
 * harmony: front
-* suffix_regex: ie
-* plurale_tantum: False
-* possessive: False
 * upos: PRON
-* stem_vowel: None
-* kotus_tn: 101
-* pos: PRONOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: e
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: ie
+* kotus_tn: 101

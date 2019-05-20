@@ -4,17 +4,17 @@ paradigm: NOUN_SANKARI
 ---
 ### ` NOUN_SANKARI `
 
-like NOUN_HIIRI with optional extra consonant stems
-* clitics: False
-* grade_dir: weaken
+like NOUN_HIIRI with optional extra consonant stems (sankar-)
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 6
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: i
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
+* kotus_tn: 6

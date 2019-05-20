@@ -4,17 +4,17 @@ paradigm: ADJ_VENTO
 ---
 ### ` ADJ_VENTO `
 
-The quantitative gradation of t after n in o stems is in class described here, which corresponds to dictionary class ¹⁻J.
-* clitics: False
-* grade_dir: weaken
+Adjectives with gradation of t after n in o stems is in class described here, which corresponds to dictionary class ¹⁻J.
 * harmony: back
-* suffix_regex: nto
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 1
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: to
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nto
+* kotus_tn: 1

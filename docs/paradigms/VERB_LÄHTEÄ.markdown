@@ -5,16 +5,16 @@ paradigm: VERB_LÄHTEÄ
 ### ` VERB_LÄHTEÄ `
 
 Dictionary class60
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: hteä
-* plurale_tantum: False
-* possessive: False
 * upos: VERB
-* stem_vowel: None
-* kotus_tn: 60
-* pos: VERB
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: hteä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: hteä
+* kotus_tn: 60

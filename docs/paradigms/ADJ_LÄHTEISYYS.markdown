@@ -4,17 +4,17 @@ paradigm: ADJ_LÄHTEISYYS
 ---
 ### ` ADJ_LÄHTEISYYS `
 
-Dictionary class 40
-* clitics: False
-* grade_dir: strengthen
+Adjectives with yys:yyde variations
 * harmony: front
-* suffix_regex: ys
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 40
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: s
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ys
+* kotus_tn: 40

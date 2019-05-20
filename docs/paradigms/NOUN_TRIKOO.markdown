@@ -5,16 +5,16 @@ paradigm: NOUN_TRIKOO
 ### ` NOUN_TRIKOO `
 
 Dictionary class 20 o
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: oo
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: o
-* kotus_tn: 20
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: o
+* pos: NOUN
+* stem_vowel: o
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: oo
+* kotus_tn: 20

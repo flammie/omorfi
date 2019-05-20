@@ -5,16 +5,16 @@ paradigm: NOUN_PYYHE
 ### ` NOUN_PYYHE `
 
 Dictionary class 48 front 0k
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 48
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: D
+* possessive: False
+* clitics: False
 * deletion: e
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
+* kotus_tn: 48

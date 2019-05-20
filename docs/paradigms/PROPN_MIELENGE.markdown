@@ -4,17 +4,17 @@ paradigm: PROPN_MIELENGE
 ---
 ### ` PROPN_MIELENGE `
 
-k:0
-* clitics: False
-* grade_dir: strengthen
+Proper nouns nge  stems
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nge
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 48
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: G
+* possessive: False
+* clitics: False
 * deletion: ge
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nge
+* kotus_tn: 48

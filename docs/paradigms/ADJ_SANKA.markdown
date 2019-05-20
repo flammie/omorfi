@@ -4,17 +4,17 @@ paradigm: ADJ_SANKA
 ---
 ### ` ADJ_SANKA `
 
-nka:ng variations
-* clitics: False
-* grade_dir: weaken
+Adjectives with nka:ng variations
 * harmony: back
-* suffix_regex: nka
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 9
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: G
+* possessive: False
+* clitics: False
 * deletion: ka
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nka
+* kotus_tn: 9

@@ -4,17 +4,17 @@ paradigm: PROPN_KANKAHAT
 ---
 ### ` PROPN_KANKAHAT `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: back
-* suffix_regex: hat
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: G
+* possessive: False
+* clitics: False
 * deletion: hat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: hat
+* kotus_tn: 41

@@ -5,16 +5,16 @@ paradigm: PROPN_ACRO_JÄRJESTÖ
 ### ` PROPN_ACRO_JÄRJESTÖ `
 
 The acronyms ending in a word that inflects like ‘järjestö’ with ö type stem
-* clitics: False
-* grade_dir: False
 * harmony: front
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 0
-* pos: ACRONYM
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: ACRONYM
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 0

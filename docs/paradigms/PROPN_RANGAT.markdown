@@ -4,17 +4,17 @@ paradigm: PROPN_RANGAT
 ---
 ### ` PROPN_RANGAT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: back
-* suffix_regex: ngat
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 9
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: G
+* possessive: False
+* clitics: False
 * deletion: gat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ngat
+* kotus_tn: 9

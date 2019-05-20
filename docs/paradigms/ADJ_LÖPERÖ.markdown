@@ -4,17 +4,17 @@ paradigm: ADJ_LÖPERÖ
 ---
 ### ` ADJ_LÖPERÖ `
 
-And the trisyllabic ö stem is classified described here.
-* clitics: False
-* grade_dir: weaken
+Adjectives with trisyllabic ö stem is classified described here.
 * harmony: front
-* suffix_regex: ö
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 2
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ö
+* kotus_tn: 2

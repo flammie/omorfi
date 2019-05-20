@@ -5,16 +5,16 @@ paradigm: NOUN_TYÖ
 ### ` NOUN_TYÖ `
 
 Dictionary class 19 yö
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: yö
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 19
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: yö
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: yö
+* kotus_tn: 19

@@ -4,17 +4,17 @@ paradigm: ADJ_MARTO
 ---
 ### ` ADJ_MARTO `
 
-The quantitative gradation of t after r in o stems is in class described here, which corresponds to dictionary class ¹⁻J.
-* clitics: False
-* grade_dir: weaken
+Adjectives with quantitative gradation of t after r in o stems is in class described here, which corresponds to dictionary class ¹⁻J.
 * harmony: back
-* suffix_regex: rto
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 1
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: K
+* possessive: False
+* clitics: False
 * deletion: to
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: rto
+* kotus_tn: 1

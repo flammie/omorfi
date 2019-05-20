@@ -4,17 +4,17 @@ paradigm: ADJ_SUURI
 ---
 ### ` ADJ_SUURI `
 
-Dictionary class 24~26 back
-* clitics: False
-* grade_dir: weaken
+Adjectives with i:e stems and consonant stemmed ta partitives
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 2426
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: i
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
+* kotus_tn: 2426

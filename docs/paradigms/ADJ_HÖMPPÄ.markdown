@@ -5,16 +5,16 @@ paradigm: ADJ_HÖMPPÄ
 ### ` ADJ_HÖMPPÄ `
 
 The quantitative k and t gradations are not found for adjectives with this a stem.
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: ppä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: B
+* possessive: False
+* clitics: False
 * deletion: pä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ppä
+* kotus_tn: 10

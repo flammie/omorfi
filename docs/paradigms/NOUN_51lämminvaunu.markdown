@@ -5,16 +5,16 @@ paradigm: NOUN_51lämminvaunu
 ### ` NOUN_51lämminvaunu `
 
 Optimisation hack for exceptional compound ’lämminvaunu’ that inflects in all parts with agreement
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: lämminvaunu
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 51
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: minvaunu
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: lämminvaunu
+* kotus_tn: 51

@@ -4,17 +4,17 @@ paradigm: ADJ_TÄYSI
 ---
 ### ` ADJ_TÄYSI `
 
-Dictionary class 27 front
-* clitics: False
-* grade_dir: weaken
+Adjectives with si:de stem variation, front
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*si
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 27
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: si
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*si
+* kotus_tn: 27

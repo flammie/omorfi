@@ -4,17 +4,17 @@ paradigm: ADJ_MÄTÄ
 ---
 ### ` ADJ_MÄTÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with ä:0 variation and t:d gradation
 * harmony: front
-* suffix_regex: tä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: tä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tä
+* kotus_tn: 10

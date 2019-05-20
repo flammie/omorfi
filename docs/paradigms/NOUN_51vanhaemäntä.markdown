@@ -5,16 +5,16 @@ paradigm: NOUN_51vanhaemäntä
 ### ` NOUN_51vanhaemäntä `
 
 Optimisation hack for exceptional compound ’vanhaemäntä’ that inflects in all parts with agreement
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: vanhaemäntä
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 51
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: aemäntä
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: vanhaemäntä
+* kotus_tn: 51

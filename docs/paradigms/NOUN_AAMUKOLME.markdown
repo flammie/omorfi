@@ -5,16 +5,16 @@ paradigm: NOUN_AAMUKOLME
 ### ` NOUN_AAMUKOLME `
 
 Non-dictionary class for numeral compounds ending kolme
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: kolme
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 3
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: e
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kolme
+* kotus_tn: 3

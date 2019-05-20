@@ -5,16 +5,16 @@ paradigm: NOUN_VUO
 ### ` NOUN_VUO `
 
 Dictionary class 19 uo
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: uo
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 19
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: uo
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: uo
+* kotus_tn: 19

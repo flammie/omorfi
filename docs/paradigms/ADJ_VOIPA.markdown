@@ -4,17 +4,17 @@ paradigm: ADJ_VOIPA
 ---
 ### ` ADJ_VOIPA `
 
-pa:va
-* clitics: False
-* grade_dir: weaken
+Adjectives with pa:va variation and a:0
 * harmony: back
-* suffix_regex: pa
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: E
+* possessive: False
+* clitics: False
 * deletion: pa
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pa
+* kotus_tn: 10

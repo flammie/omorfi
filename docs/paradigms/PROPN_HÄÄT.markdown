@@ -5,16 +5,16 @@ paradigm: PROPN_HÄÄT
 ### ` PROPN_HÄÄT `
 
 Dictionary class xxx äät plurale tantum
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: äät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 18
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: äät
+* kotus_tn: 18

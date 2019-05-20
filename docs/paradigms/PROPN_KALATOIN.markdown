@@ -4,17 +4,17 @@ paradigm: PROPN_KALATOIN
 ---
 ### ` PROPN_KALATOIN `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Proper nouns that have old caritive toin stem
 * harmony: back
-* suffix_regex: toin
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 34
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: oin
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: toin
+* kotus_tn: 34

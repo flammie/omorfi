@@ -4,17 +4,17 @@ paradigm: ADJ_RUMA
 ---
 ### ` ADJ_RUMA `
 
-For a:e comparatives in a:0 class use described here. No dictionary classification or ~¹⁰,
-* clitics: False
-* grade_dir: weaken
+Adjectives with a:e comparatives in a:0 class use described here. No dictionary classification or ~¹⁰,
 * harmony: back
-* suffix_regex: a
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: a
+* kotus_tn: 10

@@ -4,17 +4,17 @@ paradigm: PROPN_SPOTIFY
 ---
 ### ` PROPN_SPOTIFY `
 
-None
-* clitics: False
-* grade_dir: weaken
+New proper nouns with back and front harmonies, no stem variations
 * harmony: front
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: i
-* kotus_tn: 21
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: i
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 21

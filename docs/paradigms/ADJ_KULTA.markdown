@@ -4,17 +4,17 @@ paradigm: ADJ_KULTA
 ---
 ### ` ADJ_KULTA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with  lta:lla stems
 * harmony: back
-* suffix_regex: lta
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: I
+* possessive: False
+* clitics: False
 * deletion: ta
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: lta
+* kotus_tn: 10

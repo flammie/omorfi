@@ -5,16 +5,16 @@ paradigm: PROPN_PÖYTÄ
 ### ` PROPN_PÖYTÄ `
 
 Dictionary class 10 front t~d
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: tä
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: tä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tä
+* kotus_tn: 10

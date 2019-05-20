@@ -5,16 +5,16 @@ paradigm: PROPN_NIMETÖN
 ### ` PROPN_NIMETÖN `
 
 Dictionary class 34 tän
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: tön
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 34
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: ön
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: tön
+* kotus_tn: 34

@@ -4,17 +4,17 @@ paradigm: NOUN_KYLÄNVANHIN
 ---
 ### ` NOUN_KYLÄNVANHIN `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Lexicalised superlatives as nouns, front harmony
 * harmony: back
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*n
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 36
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: n
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*n
+* kotus_tn: 36

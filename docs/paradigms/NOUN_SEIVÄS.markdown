@@ -5,16 +5,16 @@ paradigm: NOUN_SEIVÄS
 ### ` NOUN_SEIVÄS `
 
 Dictionary class 41 väs
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: väs
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: E
+* possessive: False
+* clitics: False
 * deletion: väs
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: väs
+* kotus_tn: 41

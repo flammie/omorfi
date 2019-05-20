@@ -5,16 +5,16 @@ paradigm: VERB_RYSKIÄ
 ### ` VERB_RYSKIÄ `
 
 Dictionary class61 front
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: iä
-* plurale_tantum: False
-* possessive: False
 * upos: VERB
-* stem_vowel: None
-* kotus_tn: 61
-* pos: VERB
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: iä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: iä
+* kotus_tn: 61

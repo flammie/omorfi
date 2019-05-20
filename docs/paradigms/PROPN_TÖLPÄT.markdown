@@ -4,17 +4,17 @@ paradigm: PROPN_TÖLPÄT
 ---
 ### ` PROPN_TÖLPÄT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: front
-* suffix_regex: pät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: B
+* possessive: False
+* clitics: False
 * deletion: ät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pät
+* kotus_tn: 10

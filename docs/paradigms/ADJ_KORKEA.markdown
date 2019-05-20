@@ -4,17 +4,17 @@ paradigm: ADJ_KORKEA
 ---
 ### ` ADJ_KORKEA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectivest with ea finals with a:0 variation
 * harmony: back
-* suffix_regex: ea
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 15
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ea
+* kotus_tn: 15

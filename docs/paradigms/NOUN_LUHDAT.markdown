@@ -4,17 +4,17 @@ paradigm: NOUN_LUHDAT
 ---
 ### ` NOUN_LUHDAT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plurale tantums for a:0 and t:d variatiosn 
 * harmony: back
-* suffix_regex: dat
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: dat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: dat
+* kotus_tn: 10

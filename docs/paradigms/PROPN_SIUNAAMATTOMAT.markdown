@@ -4,17 +4,17 @@ paradigm: PROPN_SIUNAAMATTOMAT
 ---
 ### ` PROPN_SIUNAAMATTOMAT `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: back
-* suffix_regex: ttomat
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 34
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: tomat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ttomat
+* kotus_tn: 34

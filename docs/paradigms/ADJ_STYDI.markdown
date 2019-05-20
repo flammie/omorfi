@@ -4,17 +4,17 @@ paradigm: ADJ_STYDI
 ---
 ### ` ADJ_STYDI `
 
-The i finals with front vowel harmony go to class described here, where old dictionary classification was ⁵.
-* clitics: False
-* grade_dir: weaken
+Adjectives with i stems with front vowel harmony go to class described here, where old dictionary classification was ⁵.
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 5
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: i
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
+* kotus_tn: 5

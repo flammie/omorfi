@@ -4,17 +4,17 @@ paradigm: PROPN_EKKE
 ---
 ### ` PROPN_EKKE `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper noun with kke:ke stem
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 8
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: ke
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke
+* kotus_tn: 8

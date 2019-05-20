@@ -5,16 +5,16 @@ paradigm: PROPN_SEPPÄ
 ### ` PROPN_SEPPÄ `
 
 Dictionary class 10 front p~0
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: ppä
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: B
+* possessive: False
+* clitics: False
 * deletion: pä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ppä
+* kotus_tn: 10

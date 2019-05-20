@@ -4,17 +4,17 @@ paradigm: ADJ_LÄHEMPI
 ---
 ### ` ADJ_LÄHEMPI `
 
-None
-* clitics: False
-* grade_dir: weaken
+Lexicalised comparatives with front vowels
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mpi
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 16
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: H
+* possessive: False
+* clitics: False
 * deletion: pi
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mpi
+* kotus_tn: 16

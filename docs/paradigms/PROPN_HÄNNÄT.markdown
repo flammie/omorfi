@@ -4,17 +4,17 @@ paradigm: PROPN_HÄNNÄT
 ---
 ### ` PROPN_HÄNNÄT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plural-only proper noun with ä:0 stem and nt:nn gradation
 * harmony: front
-* suffix_regex: nnät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: ät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nnät
+* kotus_tn: 10

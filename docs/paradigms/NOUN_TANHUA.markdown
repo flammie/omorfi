@@ -4,17 +4,17 @@ paradigm: NOUN_TANHUA
 ---
 ### ` NOUN_TANHUA `
 
-a:o:0
-* clitics: False
-* grade_dir: weaken
+Nouns with a:o:0 variations
 * harmony: back
-* suffix_regex: ua
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: a
-* kotus_tn: 15
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ua
+* kotus_tn: 15

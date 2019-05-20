@@ -4,17 +4,17 @@ paradigm: ADJ_AUTUAS
 ---
 ### ` ADJ_AUTUAS `
 
-Dictionary class 41 as
-* clitics: False
-* grade_dir: strengthen
+Adjectival as : aa stems
 * harmony: back
-* suffix_regex: as
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 41
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: s
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: as
+* kotus_tn: 41

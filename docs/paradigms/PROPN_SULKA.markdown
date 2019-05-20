@@ -5,16 +5,16 @@ paradigm: PROPN_SULKA
 ### ` PROPN_SULKA `
 
 Dictionary class 9 k~0 without optional ’
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: ka
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: a
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: D
+* possessive: False
+* clitics: False
 * deletion: ka
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ka
+* kotus_tn: 10

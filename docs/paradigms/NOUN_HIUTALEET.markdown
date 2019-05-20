@@ -5,16 +5,16 @@ paradigm: NOUN_HIUTALEET
 ### ` NOUN_HIUTALEET `
 
 Dictionary class leat plurale tantum
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*eet
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 48
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: et
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*eet
+* kotus_tn: 48

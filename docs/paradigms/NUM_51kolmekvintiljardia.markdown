@@ -5,16 +5,16 @@ paradigm: NUM_51kolmekvintiljardia
 ### ` NUM_51kolmekvintiljardia `
 
 Optimisation hack for exceptional compound ’kolmekvintiljardia’ that inflects in all parts with agreement
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: kolmekvintiljardia
-* plurale_tantum: False
-* possessive: False
 * upos: NUM
-* stem_vowel: None
-* kotus_tn: 51
-* pos: NUMERAL
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ekvintiljardia
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kolmekvintiljardia
+* kotus_tn: 51

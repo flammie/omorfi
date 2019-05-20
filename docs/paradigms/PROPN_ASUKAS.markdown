@@ -5,16 +5,16 @@ paradigm: PROPN_ASUKAS
 ### ` PROPN_ASUKAS `
 
 Dictionary class 41 kas
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: kas
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: as
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: kas
+* kotus_tn: 41

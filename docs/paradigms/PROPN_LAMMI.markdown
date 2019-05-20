@@ -4,17 +4,17 @@ paradigm: PROPN_LAMMI
 ---
 ### ` PROPN_LAMMI `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 5
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: H
+* possessive: False
+* clitics: False
 * deletion: pi
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
+* kotus_tn: 5

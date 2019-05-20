@@ -4,17 +4,17 @@ paradigm: ADJ_OIKEE
 ---
 ### ` ADJ_OIKEE `
 
-colloquial versions of ea stem, lexicalised
-* clitics: False
-* grade_dir: weaken
+adjectives with colloquial versions of ea stem, lexicalised
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ee
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 15
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: e
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ee
+* kotus_tn: 15

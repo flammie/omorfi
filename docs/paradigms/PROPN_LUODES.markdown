@@ -4,17 +4,17 @@ paradigm: PROPN_LUODES
 ---
 ### ` PROPN_LUODES `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Proper nouns with des:tee stems
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*des
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: des
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*des
+* kotus_tn: 41

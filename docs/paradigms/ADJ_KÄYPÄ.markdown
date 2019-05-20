@@ -4,17 +4,17 @@ paradigm: ADJ_KÄYPÄ
 ---
 ### ` ADJ_KÄYPÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with ä:0 and p:v variations
 * harmony: front
-* suffix_regex: pä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: E
+* possessive: False
+* clitics: False
 * deletion: pä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pä
+* kotus_tn: 10

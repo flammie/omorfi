@@ -4,17 +4,17 @@ paradigm: ADJ_HARMAJA
 ---
 ### ` ADJ_HARMAJA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Trisyllabic old stems with archaic aa : ata variationws
 * harmony: back
-* suffix_regex: a
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 12
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: a
+* kotus_tn: 12

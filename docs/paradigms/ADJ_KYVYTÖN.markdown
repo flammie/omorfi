@@ -4,17 +4,17 @@ paradigm: ADJ_KYVYTÖN
 ---
 ### ` ADJ_KYVYTÖN `
 
-Dictionary class 34 0~t front
-* clitics: False
-* grade_dir: strengthen
+Adjective caritives with tön:ttömä variation
 * harmony: front
-* suffix_regex: tön
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 34
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: ön
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: tön
+* kotus_tn: 34

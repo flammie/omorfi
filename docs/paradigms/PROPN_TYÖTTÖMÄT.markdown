@@ -4,17 +4,17 @@ paradigm: PROPN_TYÖTTÖMÄT
 ---
 ### ` PROPN_TYÖTTÖMÄT `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: front
-* suffix_regex: ttömät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 34
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: tömät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ttömät
+* kotus_tn: 34

@@ -4,17 +4,17 @@ paradigm: ADJ_HÖPPÄNÄ
 ---
 ### ` ADJ_HÖPPÄNÄ `
 
-ä:0
-* clitics: False
-* grade_dir: weaken
+Adjectival ä:ö:0 variations stems
 * harmony: front
-* suffix_regex: ä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 12
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ä
+* kotus_tn: 12

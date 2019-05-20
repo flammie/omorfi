@@ -4,17 +4,17 @@ paradigm: NOUN_RÄMEET
 ---
 ### ` NOUN_RÄMEET `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Plurale tantums with e:ee stems, front harmony
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*eet
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 48
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: et
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*eet
+* kotus_tn: 48

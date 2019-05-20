@@ -5,16 +5,16 @@ paradigm: NOUN_BRIE
 ### ` NOUN_BRIE `
 
 Dictionary class 21 i front
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: i
-* kotus_tn: 21
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: i
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 21

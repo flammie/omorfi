@@ -5,16 +5,16 @@ paradigm: NOUN_SYNNYTTIMET
 ### ` NOUN_SYNNYTTIMET `
 
 Dictionary class 31 tin front plurale tantum
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ttimet
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 33
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: timet
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ttimet
+* kotus_tn: 33

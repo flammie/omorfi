@@ -4,17 +4,17 @@ paradigm: ADJ_KADE
 ---
 ### ` ADJ_KADE `
 
-Dictionary class 48 d~t back
-* clitics: False
-* grade_dir: strengthen
+Adjectives de:tee variation
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*de
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 48
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: de
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*de
+* kotus_tn: 48

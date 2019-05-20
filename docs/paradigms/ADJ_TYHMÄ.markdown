@@ -4,17 +4,17 @@ paradigm: ADJ_TYHMÄ
 ---
 ### ` ADJ_TYHMÄ `
 
-For ä:e comparatives in a:0 class use described here. No dictionary classification or ~¹⁰,
-* clitics: False
-* grade_dir: weaken
+Adjectives with ä:e comparatives in ä:0 class. No dictionary classification or ~¹⁰,
 * harmony: front
-* suffix_regex: ä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ä
+* kotus_tn: 10

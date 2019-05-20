@@ -5,16 +5,16 @@ paradigm: PROPN_LÄNSI
 ### ` PROPN_LÄNSI `
 
 Dictionary class 27 front t~n
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nsi
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 28
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: si
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nsi
+* kotus_tn: 28

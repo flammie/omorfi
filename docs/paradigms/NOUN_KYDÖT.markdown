@@ -4,17 +4,17 @@ paradigm: NOUN_KYDÖT
 ---
 ### ` NOUN_KYDÖT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plurale tantums for tö:dö stems
 * harmony: front
-* suffix_regex: döt
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 1
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: döt
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: döt
+* kotus_tn: 1

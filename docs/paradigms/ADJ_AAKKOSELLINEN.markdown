@@ -4,17 +4,17 @@ paradigm: ADJ_AAKKOSELLINEN
 ---
 ### ` ADJ_AAKKOSELLINEN `
 
-Dictionary class 38 back
-* clitics: False
-* grade_dir: strengthen
+Back-vowel nen:se variation for adjectives
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 38
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: nen
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen
+* kotus_tn: 38

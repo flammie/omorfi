@@ -4,17 +4,17 @@ paradigm: PROPN_ONNET
 ---
 ### ` PROPN_ONNET `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*net
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 7
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: et
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*net
+* kotus_tn: 7

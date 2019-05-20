@@ -5,16 +5,16 @@ paradigm: PUNCT_PILKKU
 ### ` PUNCT_PILKKU `
 
 punctuation, rare back inflection plausible
-* clitics: True
-* grade_dir: None
 * harmony: back
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: True
 * upos: PUNCT
-* stem_vowel: None
-* kotus_tn: 99
-* pos: PUNCTUATION
-* stem_diphthong: None
 * kotus_av: None
+* possessive: True
+* clitics: True
 * deletion: None
+* pos: PUNCTUATION
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: None
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 99

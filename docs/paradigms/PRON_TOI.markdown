@@ -5,16 +5,16 @@ paradigm: PRON_TOI
 ### ` PRON_TOI `
 
 dialectal forms of nuo
-* clitics: False
-* grade_dir: False
 * harmony: back
-* suffix_regex: toi
-* plurale_tantum: False
-* possessive: False
 * upos: PRON
-* stem_vowel: None
-* kotus_tn: 101
-* pos: PRONOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: i
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: toi
+* kotus_tn: 101

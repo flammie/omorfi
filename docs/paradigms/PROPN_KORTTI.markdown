@@ -4,17 +4,17 @@ paradigm: PROPN_KORTTI
 ---
 ### ` PROPN_KORTTI `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper noun with i:e stems and tt:t gradations
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tti
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 5
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: ti
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tti
+* kotus_tn: 5

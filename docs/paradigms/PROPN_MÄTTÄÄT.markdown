@@ -4,17 +4,17 @@ paradigm: PROPN_MÄTTÄÄT
 ---
 ### ` PROPN_MÄTTÄÄT `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: front
-* suffix_regex: ttäät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: täät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ttäät
+* kotus_tn: 41

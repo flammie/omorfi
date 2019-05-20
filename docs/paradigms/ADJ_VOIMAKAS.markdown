@@ -4,17 +4,17 @@ paradigm: ADJ_VOIMAKAS
 ---
 ### ` ADJ_VOIMAKAS `
 
-Dictionary class 41 kas
-* clitics: False
-* grade_dir: strengthen
+Adjectives with kas:kkaa variation
 * harmony: back
-* suffix_regex: kas
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 41
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: as
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: kas
+* kotus_tn: 41

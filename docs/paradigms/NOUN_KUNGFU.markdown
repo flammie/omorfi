@@ -5,16 +5,16 @@ paradigm: NOUN_KUNGFU
 ### ` NOUN_KUNGFU `
 
 Dictionary class 21 u back
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: U
-* kotus_tn: 21
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: U
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 21

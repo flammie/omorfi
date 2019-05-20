@@ -5,16 +5,16 @@ paradigm: PROPN_PORTAAT
 ### ` PROPN_PORTAAT `
 
 Dictionary class rtaat plurale tantum
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: rtaat
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: K
+* possessive: False
+* clitics: False
 * deletion: taat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rtaat
+* kotus_tn: 41

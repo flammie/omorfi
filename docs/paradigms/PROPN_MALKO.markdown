@@ -4,17 +4,17 @@ paradigm: PROPN_MALKO
 ---
 ### ` PROPN_MALKO `
 
-k:0
-* clitics: False
-* grade_dir: weaken
+Proper nouns with o stems and k:0 gradation
 * harmony: back
-* suffix_regex: ko
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 1
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: M
+* possessive: False
+* clitics: False
 * deletion: ko
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ko
+* kotus_tn: 1

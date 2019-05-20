@@ -5,16 +5,16 @@ paradigm: PROPN_ALLAS
 ### ` PROPN_ALLAS `
 
 Dictionary class 41 las
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: las
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: I
+* possessive: False
+* clitics: False
 * deletion: las
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: las
+* kotus_tn: 41

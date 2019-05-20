@@ -4,17 +4,17 @@ paradigm: NOUN_AIKA
 ---
 ### ` NOUN_AIKA `
 
-Non-dictionary class aika
-* clitics: False
-* grade_dir: weaken
+Nouns that inflect like aika:aja
 * harmony: back
-* suffix_regex: ika
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: a
-* kotus_tn: 1009
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: D
+* possessive: False
+* clitics: False
 * deletion: ika
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ika
+* kotus_tn: 1009

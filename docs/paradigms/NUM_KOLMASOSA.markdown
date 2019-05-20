@@ -5,16 +5,16 @@ paradigm: NUM_KOLMASOSA
 ### ` NUM_KOLMASOSA `
 
 Numerals for parts ‛-osa’ inflect like NOUN_ASEMA
-* clitics: False
-* grade_dir: False
 * harmony: back
-* suffix_regex: osa
-* plurale_tantum: False
-* possessive: False
 * upos: NUM
-* stem_vowel: a
-* kotus_tn: 10
-* pos: NUMERAL
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: NUMERAL
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: osa
+* kotus_tn: 10

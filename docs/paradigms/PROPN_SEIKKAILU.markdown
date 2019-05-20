@@ -5,16 +5,16 @@ paradigm: PROPN_SEIKKAILU
 ### ` PROPN_SEIKKAILU `
 
 Dictionary class 2u
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: u
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 2
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: u
+* kotus_tn: 2

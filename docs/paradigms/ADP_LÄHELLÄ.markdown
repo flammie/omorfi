@@ -5,16 +5,16 @@ paradigm: ADP_LÄHELLÄ
 ### ` ADP_LÄHELLÄ `
 
 adposition with optional possessive including -än allomorph
-* clitics: True
-* grade_dir: False
 * harmony: front
-* suffix_regex: ä
-* plurale_tantum: False
-* possessive: optional
 * upos: ADP
-* stem_vowel: None
-* kotus_tn: 99
-* pos: PARTICLE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: optional
+* clitics: True
 * deletion: None
+* pos: PARTICLE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: ä
+* kotus_tn: 99

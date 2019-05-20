@@ -5,16 +5,16 @@ paradigm: NOUN_TEHDAS
 ### ` NOUN_TEHDAS `
 
 Dictionary class 41 das
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: das
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: das
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: das
+* kotus_tn: 41

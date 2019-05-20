@@ -4,17 +4,17 @@ paradigm: ADJ_SISIN
 ---
 ### ` ADJ_SISIN `
 
-Dictionary class 35 front
-* clitics: False
-* grade_dir: strengthen
+Lexicalised superlatives front harmony
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*in
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 36
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: n
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*in
+* kotus_tn: 36

@@ -5,16 +5,16 @@ paradigm: PROPN_BROOKLYN
 ### ` PROPN_BROOKLYN `
 
 Dictionary class 6 back no i with both vowel harmonies allowed
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 5
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 5

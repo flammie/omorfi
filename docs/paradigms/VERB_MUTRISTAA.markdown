@@ -5,16 +5,16 @@ paradigm: VERB_MUTRISTAA
 ### ` VERB_MUTRISTAA `
 
 Dictionary class53 back
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: aa
-* plurale_tantum: False
-* possessive: False
 * upos: VERB
-* stem_vowel: None
-* kotus_tn: 53
-* pos: VERB
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: aa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: aa
+* kotus_tn: 53

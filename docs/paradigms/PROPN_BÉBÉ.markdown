@@ -5,16 +5,16 @@ paradigm: PROPN_BÉBÉ
 ### ` PROPN_BÉBÉ `
 
 Dictionary class 21 e front
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: .
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: e
-* kotus_tn: 21
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: e
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 21

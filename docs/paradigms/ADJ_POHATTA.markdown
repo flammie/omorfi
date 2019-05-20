@@ -4,17 +4,17 @@ paradigm: ADJ_POHATTA
 ---
 ### ` ADJ_POHATTA `
 
-A-final words with long vowels and syllable boundary
-* clitics: False
-* grade_dir: weaken
+Adjectives with a-stem and t:0 variations
 * harmony: back
-* suffix_regex: tta
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 14
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: ta
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tta
+* kotus_tn: 14

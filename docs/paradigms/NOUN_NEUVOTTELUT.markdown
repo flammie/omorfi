@@ -5,16 +5,16 @@ paradigm: NOUN_NEUVOTTELUT
 ### ` NOUN_NEUVOTTELUT `
 
 Dictionary class 3lut plurale tantum
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: ut
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 2
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: t
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ut
+* kotus_tn: 2

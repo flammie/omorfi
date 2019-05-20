@@ -4,17 +4,17 @@ paradigm: ADJ_VASEN
 ---
 ### ` ADJ_VASEN `
 
-Dictionary class 36
-* clitics: False
-* grade_dir: strengthen
+Adjectives with n:mma variations
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*n
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 37
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: n
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*n
+* kotus_tn: 37

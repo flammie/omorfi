@@ -4,17 +4,17 @@ paradigm: PROPN_YRITTÄ
 ---
 ### ` PROPN_YRITTÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper nouns with ttä stems
 * harmony: front
-* suffix_regex: ttä
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: ä
-* kotus_tn: 9
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: tä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ttä
+* kotus_tn: 9

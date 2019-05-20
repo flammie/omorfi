@@ -4,17 +4,17 @@ paradigm: ADJ_VIHERIÄ
 ---
 ### ` ADJ_VIHERIÄ `
 
-archaic iä:iö thing
-* clitics: False
-* grade_dir: weaken
+Archaic adjectives with iä:iö thing
 * harmony: front
-* suffix_regex: iä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 15
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: iä
+* kotus_tn: 15

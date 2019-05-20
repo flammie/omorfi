@@ -4,17 +4,17 @@ paradigm: ADJ_RAITIS
 ---
 ### ` ADJ_RAITIS `
 
-Dictionary class 41 tis
-* clitics: False
-* grade_dir: strengthen
+Adjectives with tis:ttii variations, back harmony
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tis
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 41
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: is
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tis
+* kotus_tn: 41

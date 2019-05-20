@@ -5,16 +5,16 @@ paradigm: PROPN_KENGÄT
 ### ` PROPN_KENGÄT `
 
 Dictionary class xxx a front kg plurale tantum
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: ngät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: G
+* possessive: False
+* clitics: False
 * deletion: gät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ngät
+* kotus_tn: 10

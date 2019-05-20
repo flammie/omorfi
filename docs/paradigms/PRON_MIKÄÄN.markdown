@@ -5,16 +5,16 @@ paradigm: PRON_MIKÄÄN
 ### ` PRON_MIKÄÄN `
 
 pronoun mikään inflects with mi- stem and clitic kään
-* clitics: False
-* grade_dir: False
 * harmony: front
-* suffix_regex: mikään
-* plurale_tantum: False
-* possessive: False
 * upos: PRON
-* stem_vowel: None
-* kotus_tn: 101
-* pos: PRONOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: kään
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: mikään
+* kotus_tn: 101

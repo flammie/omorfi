@@ -4,17 +4,17 @@ paradigm: ADJ_ALASTON
 ---
 ### ` ADJ_ALASTON `
 
-Dictionary class 34 back
-* clitics: False
-* grade_dir: strengthen
+Caritive ton:toma stems
 * harmony: back
-* suffix_regex: ton
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 34
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: n
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ton
+* kotus_tn: 34

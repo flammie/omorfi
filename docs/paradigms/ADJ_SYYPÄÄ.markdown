@@ -4,17 +4,17 @@ paradigm: ADJ_SYYPÄÄ
 ---
 ### ` ADJ_SYYPÄÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Monosyllabic adjectives with ää-stems
 * harmony: front
-* suffix_regex: ää
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 18
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ää
+* kotus_tn: 18

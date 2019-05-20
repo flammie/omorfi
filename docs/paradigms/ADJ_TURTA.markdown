@@ -4,17 +4,17 @@ paradigm: ADJ_TURTA
 ---
 ### ` ADJ_TURTA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with rta-stems and t:r variation
 * harmony: back
-* suffix_regex: rta
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: K
+* possessive: False
+* clitics: False
 * deletion: ta
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: rta
+* kotus_tn: 10

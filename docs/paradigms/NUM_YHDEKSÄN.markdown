@@ -5,16 +5,16 @@ paradigm: NUM_YHDEKSÄN
 ### ` NUM_YHDEKSÄN `
 
 Dictionary class10n front
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: än
-* plurale_tantum: False
-* possessive: False
 * upos: NUM
-* stem_vowel: None
-* kotus_tn: 10
-* pos: NUMERAL
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: än
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: än
+* kotus_tn: 10

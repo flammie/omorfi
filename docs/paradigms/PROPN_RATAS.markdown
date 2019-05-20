@@ -5,16 +5,16 @@ paradigm: PROPN_RATAS
 ### ` PROPN_RATAS `
 
 Dictionary class 41 tas
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: tas
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: as
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: tas
+* kotus_tn: 41

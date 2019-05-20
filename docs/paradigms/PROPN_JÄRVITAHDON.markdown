@@ -4,17 +4,17 @@ paradigm: PROPN_JÄRVITAHDON
 ---
 ### ` PROPN_JÄRVITAHDON `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Proper nouns that look like Järvitahdon(?)
 * harmony: back
-* suffix_regex: don
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 33
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: don
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: don
+* kotus_tn: 33

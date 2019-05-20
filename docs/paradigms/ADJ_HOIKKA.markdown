@@ -4,17 +4,17 @@ paradigm: ADJ_HOIKKA
 ---
 ### ` ADJ_HOIKKA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectial a:0 stems with k:0 gradations
 * harmony: back
-* suffix_regex: kka
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: ka
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kka
+* kotus_tn: 10

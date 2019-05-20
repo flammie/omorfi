@@ -4,17 +4,17 @@ paradigm: ADJ_AVOIN
 ---
 ### ` ADJ_AVOIN `
 
-Dictionary class 33
-* clitics: False
-* grade_dir: strengthen
+Adjectival n : me stems
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*n
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 33
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: n
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*n
+* kotus_tn: 33

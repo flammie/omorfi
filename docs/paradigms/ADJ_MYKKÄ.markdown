@@ -4,17 +4,17 @@ paradigm: ADJ_MYKKÄ
 ---
 ### ` ADJ_MYKKÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with ä:0 variation and k:0 gradation
 * harmony: front
-* suffix_regex: kkä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: kä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kkä
+* kotus_tn: 10

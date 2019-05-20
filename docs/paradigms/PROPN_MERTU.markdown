@@ -4,17 +4,17 @@ paradigm: PROPN_MERTU
 ---
 ### ` PROPN_MERTU `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper nouns with rtu-stems
 * harmony: back
-* suffix_regex: rtu
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 1
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: K
+* possessive: False
+* clitics: False
 * deletion: tu
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: rtu
+* kotus_tn: 1

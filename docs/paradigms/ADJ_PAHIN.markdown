@@ -4,17 +4,17 @@ paradigm: ADJ_PAHIN
 ---
 ### ` ADJ_PAHIN `
 
-Dictionary class 35 back
-* clitics: False
-* grade_dir: strengthen
+Lexicalised superlatives, back harmony
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*in
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 36
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: n
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*in
+* kotus_tn: 36

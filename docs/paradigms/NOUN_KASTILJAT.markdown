@@ -4,17 +4,17 @@ paradigm: NOUN_KASTILJAT
 ---
 ### ` NOUN_KASTILJAT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plurale tantums with a:o variations
 * harmony: back
-* suffix_regex: at
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 13
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: at
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: at
+* kotus_tn: 13

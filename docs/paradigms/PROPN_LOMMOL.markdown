@@ -4,17 +4,17 @@ paradigm: PROPN_LOMMOL
 ---
 ### ` PROPN_LOMMOL `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Proper nouns with mmol-stems
 * harmony: back
-* suffix_regex: mol
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 49
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: H
+* possessive: False
+* clitics: False
 * deletion: mol
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: mol
+* kotus_tn: 49

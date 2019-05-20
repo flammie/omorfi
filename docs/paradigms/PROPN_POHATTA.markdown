@@ -5,16 +5,16 @@ paradigm: PROPN_POHATTA
 ### ` PROPN_POHATTA `
 
 Dictionary class 14 back t0
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: tta
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: a
-* kotus_tn: 14
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: ta
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tta
+* kotus_tn: 14

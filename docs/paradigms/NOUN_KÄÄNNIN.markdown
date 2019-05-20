@@ -5,16 +5,16 @@ paradigm: NOUN_KÄÄNNIN
 ### ` NOUN_KÄÄNNIN `
 
 Dictionary class 33 frpnt nin
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nnin
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 33
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: nin
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nnin
+* kotus_tn: 33

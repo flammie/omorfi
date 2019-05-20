@@ -4,17 +4,17 @@ paradigm: PROPN_RAPPE
 ---
 ### ` PROPN_RAPPE `
 
-None
-* clitics: False
-* grade_dir: weaken
+Proper nouns with ppe:pe-stems
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ppe
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 8
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: B
+* possessive: False
+* clitics: False
 * deletion: pe
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ppe
+* kotus_tn: 8

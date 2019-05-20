@@ -5,16 +5,16 @@ paradigm: PROPN_LIVVADIEVÁT
 ### ` PROPN_LIVVADIEVÁT `
 
 Livvadievát
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: át
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: a
-* kotus_tn: 21
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: t
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: át
+* kotus_tn: 21

@@ -5,16 +5,16 @@ paradigm: PROPN_KUITU
 ### ` PROPN_KUITU `
 
 Dictionary class 1to
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: tu
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 1
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: tu
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tu
+* kotus_tn: 1

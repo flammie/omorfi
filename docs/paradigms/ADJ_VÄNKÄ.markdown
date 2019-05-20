@@ -4,17 +4,17 @@ paradigm: ADJ_VÄNKÄ
 ---
 ### ` ADJ_VÄNKÄ `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with nkä:ng variation
 * harmony: front
-* suffix_regex: nkä
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: G
+* possessive: False
+* clitics: False
 * deletion: kä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nkä
+* kotus_tn: 10

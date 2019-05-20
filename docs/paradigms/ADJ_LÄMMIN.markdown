@@ -4,17 +4,17 @@ paradigm: ADJ_LÄMMIN
 ---
 ### ` ADJ_LÄMMIN `
 
-Dictionary class 34 m~p front
-* clitics: False
-* grade_dir: strengthen
+Adjectives with mmin:mpimä variations
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mmin
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 35
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: H
+* possessive: False
+* clitics: False
 * deletion: min
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mmin
+* kotus_tn: 35

@@ -5,16 +5,16 @@ paradigm: PROPN_AJATAR
 ### ` PROPN_AJATAR `
 
 Dictionary class 32 tar
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: tar
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 32
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: ar
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: tar
+* kotus_tn: 32

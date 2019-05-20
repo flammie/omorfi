@@ -4,17 +4,17 @@ paradigm: ADJ_PARAS
 ---
 ### ` ADJ_PARAS `
 
-the superlative paras relexicalised
-* clitics: False
-* grade_dir: strengthen
+irregular superlative 'paras' relexicalised (for parhaampi : parhain)
 * harmony: back
-* suffix_regex: as
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 41
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: as
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: as
+* kotus_tn: 41

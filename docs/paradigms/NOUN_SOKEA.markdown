@@ -5,16 +5,16 @@ paradigm: NOUN_SOKEA
 ### ` NOUN_SOKEA `
 
 The a-final words ending in long vowels with syllable boundary have a:0 variation and more allomorphs for plyral genitive or illative. Dictionary class 15 ea
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: ea
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: a
-* kotus_tn: 15
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ea
+* kotus_tn: 15

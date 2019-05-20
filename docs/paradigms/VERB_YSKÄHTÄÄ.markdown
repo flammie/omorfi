@@ -5,16 +5,16 @@ paradigm: VERB_YSKÄHTÄÄ
 ### ` VERB_YSKÄHTÄÄ `
 
 Dictionary class53 front t~d
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: tää
-* plurale_tantum: False
-* possessive: False
 * upos: VERB
-* stem_vowel: None
-* kotus_tn: 53
-* pos: VERB
-* stem_diphthong: None
 * kotus_av: F
+* possessive: False
+* clitics: False
 * deletion: tää
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tää
+* kotus_tn: 53

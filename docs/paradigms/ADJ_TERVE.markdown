@@ -4,17 +4,17 @@ paradigm: ADJ_TERVE
 ---
 ### ` ADJ_TERVE `
 
-Dictionary class 48 front
-* clitics: False
-* grade_dir: strengthen
+Adjectives with e:ee variation front harmony
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 48
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
+* kotus_tn: 48

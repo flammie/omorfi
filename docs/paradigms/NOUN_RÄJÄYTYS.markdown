@@ -5,16 +5,16 @@ paradigm: NOUN_RÄJÄYTYS
 ### ` NOUN_RÄJÄYTYS `
 
 Dictionary class 39 front Some of the s final stems have additional s:t:d variation in singular stems. Most notably, the UUs derivations are in this class.
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 39
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: s
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s
+* kotus_tn: 39

@@ -5,16 +5,16 @@ paradigm: NOUN_SÄÄNNÖT
 ### ` NOUN_SÄÄNNÖT `
 
 Dictionary class 1nöt plurale tantum
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: nnöt
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 1
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: nöt
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nnöt
+* kotus_tn: 1

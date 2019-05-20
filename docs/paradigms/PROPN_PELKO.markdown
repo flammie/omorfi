@@ -5,16 +5,16 @@ paradigm: PROPN_PELKO
 ### ` PROPN_PELKO `
 
 k:0 without optional ’
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: ko
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 1
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: D
+* possessive: False
+* clitics: False
 * deletion: ko
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ko
+* kotus_tn: 1

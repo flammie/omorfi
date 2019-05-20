@@ -4,17 +4,17 @@ paradigm: ADJ_PANTU
 ---
 ### ` ADJ_PANTU `
 
-The quantitative gradation of t after n in u stems is in class described here, which corresponds to dictionary class ¹⁻I. The common u stem after n is in nut participle’s passive’s back form (-tu):
-* clitics: False
-* grade_dir: weaken
+Adjectives with qualitative gradation of t after n in u stems is in class described here, which corresponds to dictionary class ¹⁻I. The common u stem after n is in nut participle’s passive’s back form (-tu):
 * harmony: back
-* suffix_regex: ntu
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: None
-* kotus_tn: 1
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: J
+* possessive: False
+* clitics: False
 * deletion: tu
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ntu
+* kotus_tn: 1

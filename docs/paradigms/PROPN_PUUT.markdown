@@ -5,16 +5,16 @@ paradigm: PROPN_PUUT
 ### ` PROPN_PUUT `
 
 Dictionary class xx puu t plurale tantum
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: uut
-* plurale_tantum: obligatory
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 18
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: ut
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: uut
+* kotus_tn: 18

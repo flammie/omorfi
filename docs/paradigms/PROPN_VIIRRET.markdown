@@ -4,17 +4,17 @@ paradigm: PROPN_VIIRRET
 ---
 ### ` PROPN_VIIRRET `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Plural-only proper noun with i:e stem and kk:k gradation
 * harmony: front
-* suffix_regex: rret
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 44
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: K
+* possessive: False
+* clitics: False
 * deletion: ret
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rret
+* kotus_tn: 44

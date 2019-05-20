@@ -5,16 +5,16 @@ paradigm: NOUN_PORRAS
 ### ` NOUN_PORRAS `
 
 Dictionary class 41 ras The word mies has special s:h variation pattern.
-* clitics: False
-* grade_dir: strengthen
 * harmony: back
-* suffix_regex: rras
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: K
+* possessive: False
+* clitics: False
 * deletion: ras
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rras
+* kotus_tn: 41

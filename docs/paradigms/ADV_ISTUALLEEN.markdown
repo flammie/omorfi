@@ -4,17 +4,17 @@ paradigm: ADV_ISTUALLEEN
 ---
 ### ` ADV_ISTUALLEEN `
 
-None
-* clitics: True
-* grade_dir: False
+Adverbs with obligatory possessives in e stem, back harmony
 * harmony: back
-* suffix_regex: en
-* plurale_tantum: False
-* possessive: obligatory
 * upos: ADV
-* stem_vowel: None
-* kotus_tn: 99
-* pos: PARTICLE
-* stem_diphthong: None
 * kotus_av: None
+* possessive: obligatory
+* clitics: True
 * deletion: en
+* pos: PARTICLE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: en
+* kotus_tn: 99

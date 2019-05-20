@@ -5,16 +5,16 @@ paradigm: NOUN_KILPIKKÄÄT
 ### ` NOUN_KILPIKKÄÄT `
 
 Dictionary class 41 käs plurale tantum
-* clitics: False
-* grade_dir: strengthen
 * harmony: front
-* suffix_regex: kkäät
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: käät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: kkäät
+* kotus_tn: 41

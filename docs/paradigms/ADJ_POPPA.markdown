@@ -4,17 +4,17 @@ paradigm: ADJ_POPPA
 ---
 ### ` ADJ_POPPA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Adjectives with a-stem and p:0 variations 
 * harmony: back
-* suffix_regex: ppa
-* plurale_tantum: False
-* possessive: False
 * upos: ADJ
-* stem_vowel: a
-* kotus_tn: 10
-* pos: ADJECTIVE
-* stem_diphthong: None
 * kotus_av: B
+* possessive: False
+* clitics: False
 * deletion: pa
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ppa
+* kotus_tn: 10

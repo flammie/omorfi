@@ -5,16 +5,16 @@ paradigm: NOUN_51kuivamuona
 ### ` NOUN_51kuivamuona `
 
 Optimisation hack for exceptional compound ’kuivamuona’ that inflects in all parts with agreement
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: kuivamuona
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 51
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: amuona
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kuivamuona
+* kotus_tn: 51

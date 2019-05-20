@@ -4,17 +4,17 @@ paradigm: NOUN_KITARA
 ---
 ### ` NOUN_KITARA `
 
-None
-* clitics: False
-* grade_dir: weaken
+Nouns with a:o variations
 * harmony: back
-* suffix_regex: a
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: a
-* kotus_tn: 13
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: a
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: a
+* kotus_tn: 13

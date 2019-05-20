@@ -4,17 +4,17 @@ paradigm: PROPN_KORTES
 ---
 ### ` PROPN_KORTES `
 
-None
-* clitics: False
-* grade_dir: strengthen
+Proper nouns with tes:ttee stems
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tes
-* plurale_tantum: False
-* possessive: False
 * upos: PROPN
-* stem_vowel: None
-* kotus_tn: 41
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: C
+* possessive: False
+* clitics: False
 * deletion: es
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tes
+* kotus_tn: 41

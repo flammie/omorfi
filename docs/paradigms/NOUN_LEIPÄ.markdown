@@ -5,16 +5,16 @@ paradigm: NOUN_LEIPÄ
 ### ` NOUN_LEIPÄ `
 
 Dictionary class 10 front p~v
-* clitics: False
-* grade_dir: weaken
 * harmony: front
-* suffix_regex: pä
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: ä
-* kotus_tn: 10
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: E
+* possessive: False
+* clitics: False
 * deletion: pä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pä
+* kotus_tn: 10

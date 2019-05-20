@@ -4,17 +4,17 @@ paradigm: NOUN_PANKIT
 ---
 ### ` NOUN_PANKIT `
 
-None
-* clitics: False
-* grade_dir: weaken
+Plurale tantums with kk:k and i:e variations
 * harmony: back
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kit
-* plurale_tantum: obligatory
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 5
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: A
+* possessive: False
+* clitics: False
 * deletion: it
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kit
+* kotus_tn: 5

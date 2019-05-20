@@ -5,16 +5,16 @@ paradigm: NOUN_NALLE
 ### ` NOUN_NALLE `
 
 Dictionary class 8 back
-* clitics: False
-* grade_dir: weaken
 * harmony: back
-* suffix_regex: [Eeëěĕ]
-* plurale_tantum: False
-* possessive: False
 * upos: NOUN
-* stem_vowel: None
-* kotus_tn: 8
-* pos: NOUN
-* stem_diphthong: None
 * kotus_av: None
+* possessive: False
+* clitics: False
 * deletion: None
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [Eeëěĕ]
+* kotus_tn: 8
