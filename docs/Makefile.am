@@ -23,6 +23,12 @@ lexemes.markdown: generate-lexemes.py
 statistics.markdown:
 	./generate-statistics.bash ..
 
+NEWS.markdown: ../NEWS
+	cp -v $< $@
+
+README.markdown: ../README
+	cp -v $< $@
+
 clean-local:
 	if test -d com ; then \
 		find com/github/flammie/omorfi -name '*.class' -delete ;\
