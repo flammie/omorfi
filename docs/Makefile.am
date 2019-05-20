@@ -21,7 +21,7 @@ lexemes.markdown: generate-lexemes.py
 		-l ../src/generated/master.tsv -o lexemes.markdown -O lexemes/
 
 statistics.markdown:
-	generate-statistics.bash ../test/
+	./generate-statistics.bash ..
 
 clean-local:
 	if test -d com ; then \

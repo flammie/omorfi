@@ -1,12 +1,12 @@
 #!/bin/bash
 #set -x
 INDEX=statistics.markdown
+if test $# != 1 ; then
+    echo Usage: $0 TOPSRCDIR
+    exit 1
+fi
 
 # build index page
-echo "---" > $INDEX
-echo "layout: default" >> $INDEX
-echo "title: Statistics" >> $INDEX
-echo "---" >> $INDEX
 echo >> $INDEX
 echo "# Statistics" >> $INDEX
 echo >> $INDEX
@@ -16,7 +16,7 @@ and the versions of whole analysed corpora and tools on this date." >> $INDEX
 echo >> $INDEX
 echo "Generation time was \`$(date --iso=hours)\`:" >> $INDEX
 echo "\`\`\`" >> $INDEX
-head -n 8 config.log | tail -n 6 >> $INDEX
+head -n 8 $1/config.log | tail -n 6 >> $INDEX
 echo "\`\`\`" >> $INDEX
 echo "This is a released version, and can be downloaded from github." >> $INDEX
 echo >> $INDEX
@@ -25,7 +25,7 @@ echo >> $INDEX
 echo "The numbers are counted from the database, unique lexical items.
 Depending on your definitions there may be ±1 % difference, e.g. with homonyms,
 defective and doubled paradigms, etc." >> $INDEX
-echo "There are total of \*$(wc -l < src/lexemes.tsv)\* lexemes." \
+echo "There are total of *$(wc -l < $1/src/lexemes.tsv)* lexemes." \
     >> $INDEX
 echo >> $INDEX
 echo "### Per universal POS" >> $INDEX
@@ -37,11 +37,12 @@ definitions](http://universaldependencies.org/fi/pos/index.html)." >> $INDEX
 echo >> $INDEX
 echo "| Frequency | UPOS |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
-cut -f 1 src/generated/master.tsv | sort | uniq -c | sort -nr | fgrep -v upos |\
+cut -f 1 $1/src/generated/master.tsv |\
+    sort | uniq -c | sort -nr | fgrep -v upos |\
     tr '|' ',' | sed -e 's/,/, /g' |\
     sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]$//' |\
     sed -e 's/ / | /' -e 's/^/| /' -e 's/$/ |/' >> $INDEX
-echo "| $(wc -l < src/lexemes.tsv) | *TOTAL* |" >> $INDEX
+echo "| $(wc -l < $1/src/lexemes.tsv) | *TOTAL* |" >> $INDEX
 echo >> $INDEX
 echo "### Per sources of origin" >> $INDEX
 echo >> $INDEX
@@ -52,12 +53,12 @@ echo "* *omorfi*: curated by omorfi project itself" >> $INDEX
 echo "* *omorfi++*: ...and documented in detail" >> $INDEX
 echo "* *ftb3*: collected in [FinnTreeBank project]()" >> $INDEX
 echo "* *finnwordnet*: collected in [FinnWordNet project]()" >> $INDEX
-echo "* *unihu*: collected in University of Helsinki outside abovementioned
+echo "* *finer*: collected in University of Helsinki outside abovementioned
 projects" >> $INDEX
 echo >> $INDEX
 echo "| Frequency | origin |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
-cut -f 4 src/lexemes.tsv | sort | uniq -c | sort -nr | fgrep -v origin |\
+cut -f 4 $1/src/lexemes.tsv | sort | uniq -c | sort -nr | fgrep -v origin |\
     tr '|' ',' | sed -e 's/,/, /g' |\
     sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]$//' |\
     sed -e 's/ / | /' -e 's/^/| /' -e 's/$/ |/' >> $INDEX
@@ -71,7 +72,7 @@ automatically gathered details about each paradigm." >> $INDEX
 echo >> $INDEX
 echo "| Paradigms per | UPOS |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
-cut -f 3 src/lexemes.tsv |\
+cut -f 3 $1/src/lexemes.tsv |\
     fgrep -v 'new_para' |\
     fgrep -v '51' |\
     sort | uniq | cut -f 1 -d _ |\
@@ -128,14 +129,14 @@ echo "For list of common tokens not covered by the lexicon, see [the
 most frequent missing tokens per
 corpus](#Most-frequent-missing-tokens-per-corpus)." >> ${INDEX}
 echo >> $INDEX
-convert_coveragelog test/coverage-short.log "Combined coverages" \
-    test/coverage-fast-alls.freqs >> $INDEX
+convert_coveragelog $1/test/coverage-short.log "Combined coverages" \
+    $1/test/coverage-fast-alls.freqs >> $INDEX
 echo "The coverages were measured with full lexicon, if you use the [smaller
 lexicon coverages are slightly worse](#Smaller-lexicon-coverage)." >> $INDEX
 echo >> $INDEX
-convert_coveragelog test/coverage-blort.log "Smaller lexicon coverage" \
-    test/coverage-fast-alls.freqs >> $INDEX
-for f in test/*.coveragelog ; do
+convert_coveragelog $1/test/coverage-blort.log "Smaller lexicon coverage" \
+    $1/test/coverage-fast-alls.freqs >> $INDEX
+for f in $1/test/*.coveragelog ; do
     convert_coveragelog $f "$(echo $f |\
         sed -e 's:test/::' -e 's/.coveragelog//')" \
         ${f%.coveragelog}.uniq.freqs >> $INDEX
@@ -149,7 +150,7 @@ echo "These are the most common tokens still left unrecognised by the
 lexicon. Most of them should be foreign languages, codes and rubbish. These
 are used from time to time improve the lexical coverage." >> $INDEX
 echo >> $INDEX
-for f in test/*coveragelog ; do
+for f in $1/test/*coveragelog ; do
     corpus=${f%.coveragelog}
     echo "### ${corpus}" >> ${INDEX}
     echo >> ${INDEX}
@@ -168,7 +169,7 @@ echo "The underlying language models are mostly represented by
 automaton). The figures may give some indication of the speed and size of the
 models in practical applications." >> $INDEX
 echo >> $INDEX
-for f in src/generated/omorfi.*.hfst ; do
+for f in $1/src/generated/omorfi.*.hfst ; do
     purpose=$(echo $f | sed -e 's:^.*omorfi\.::' -e 's/\.hfst$//')
     echo "### $purpose" >> $INDEX
     echo >> $INDEX
