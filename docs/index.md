@@ -15,9 +15,9 @@ The main components of this repository are:
    upstream NLP tools (c.f. [lexical processing](pages/Database-processing))
 3. an _autotools setup_ to build and install (or package, or deploy): the
    scripts, the database, and simple APIs / convenience processing tools
-3. a collection of relatively _simple APIs_ with bindings for a selection of
-   programming languages and scripts to apply the NLP tools and access the
-   database
+3. a collection of relatively [simple APIs](apis/html/) with bindings for a
+   selection of programming languages and scripts to apply the NLP tools and
+   access the database
 
 The formats we produce are (links to free open source implementations
 included):
@@ -26,6 +26,8 @@ included):
    [foma](//code.google.com/p/foma), to be used for *morphological analysis*,
    *stemming*, *segmentation*, *natural language generation*, *hyphenation* and
    as a basis for *language models*,
+   1. we provide [pre-built automata binaries for each release as a convenient
+   download](https://github.com/flammie/omorfi/releases)
 2. [apertium](//sf.net/p/apertium), to be used for *machine translation*
 3. [voikko](//voikko.puimula.org), to be used for *spell-checking* and
    *correction* (also experimental _hunspell_ for legacy spell-checking)
@@ -34,14 +36,15 @@ included):
 
 ## Documentation
 
-The main point of up-to-date documentation is these webpages.
+The most recent version of this documentation is online on github pages at
+https://flammie.github.io/omorfi/
 
 ### Basics
 
 Everyone should read at least versioning information and readme:
 
 1. [Versions and download info](pages/Releases.html)
-1. [README](https://github.com/flammie/omorfi#omorfiopen-morphology-of-finnish)
+1. [README](README.html)
 1. [Usage examples](pages/usage-examples.html)
 
 ### Bindings
@@ -49,8 +52,8 @@ Everyone should read at least versioning information and readme:
 If you wish to use omorfi in a serious application you probably found out from
 the README that a python or java API is the way to go:
 
-1. [API design ](pages/API-design.html)
-1. [doxygen apidocs](doc/html/)
+1. [API design](pages/API-design.html)
+1. [doxygen apidocs](apis/html/)
 
 ### Statistics
 
