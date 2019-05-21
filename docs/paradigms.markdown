@@ -13,6 +13,7 @@ Paradigms are sub-groups of lexemes that have unique morpho-phonological feature
 * Other morphotactic limitations, such as: only plurals allowed,  obligatory possessive suffixes, etc.
 
 | **UPOS** | **Paradigm** | _Notes_ |
+|---------:|:-------------|:--------|
 | ADJ | [ADJ_AAKKOSELLINEN](paradigms//ADJ_AAKKOSELLINEN.html) | Back-vowel nen:se variation for adjectiv... |
 | ADJ | [ADJ_AAVA](paradigms//ADJ_AAVA.html) | Bisyllabic a stems with e comparative an... |
 | ADJ | [ADJ_ABNORMAALI](paradigms//ADJ_ABNORMAALI.html) | The i stems with trisyllabic allomorph s... |
