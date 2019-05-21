@@ -90,6 +90,7 @@ def main():
     # stolen from turku:
     # https://turkunlp.github.io/Finnish_PropBank/
     print("| **UPOS** | **Paradigm** | _Notes_ |", file=args.output)
+    print("|---------:|:-------------|:--------|", file=args.output)
 
     paradata = dict()
     with open(args.paradigms) as tsv_file:
