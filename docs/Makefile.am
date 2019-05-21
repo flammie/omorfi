@@ -26,7 +26,7 @@ statistics.markdown:
 NEWS.markdown: ../NEWS
 	cp -v $< $@
 
-README.markdown: ../README
+README.markdown: ../README.md
 	cp -v $< $@
 
 clean-local:
