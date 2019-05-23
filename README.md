@@ -324,3 +324,8 @@ I (Flammie) also recommend syntastic, e.g. I use
 ### Code of conduct
 
 Since I it's 2018 I just want to remind GNU has a (mostly) good description of what FLOSS hacking code of conduct should be https://www.gnu.org/philosophy/kind-communication.html. Omorfi is free and open source project that depends on user contributions and we aim to be maximally approachable and so on. Thanks.
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/flammie/omorfi/badge.svg?style=beer-square)](https://beerpay.io/flammie/omorfi)  [![Beerpay](https://beerpay.io/flammie/omorfi/make-wish.svg?style=flat-square)](https://beerpay.io/flammie/omorfi?focus=wish)
