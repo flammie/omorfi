@@ -181,7 +181,6 @@ Aukio	1	propn-blocking
 Aula	1	propn-blocking
 Aulis	1	propn-blocking
 Auma	1	propn-blocking
-Aunus	1	propn-blocking
 Aura	1	propn-blocking
 Aurankurki	1	propn-blocking
 Aurinko	1	propn-blocking
@@ -1123,8 +1122,6 @@ Karikko	1	propn-blocking
 Karinen	1	propn-blocking
 Karista	1	propn-blocking
 Kariste	1	propn-blocking
-Karjala	1	propn-blocking
-Karjalainen	1	propn-blocking
 Karjamaja	1	propn-blocking
 Karjola	1	propn-blocking
 Karju	1	propn-blocking
@@ -1483,7 +1480,6 @@ Kolo	1	propn-blocking
 Koloinen	1	propn-blocking
 kom	1	tooshortforcompound
 Komero	1	propn-blocking
-Komi	1	propn-blocking
 Komori	1	propn-blocking
 Kompleksi	1	propn-blocking
 Komppi	1	propn-blocking
@@ -3670,6 +3666,7 @@ Saarto	1	propn-blocking
 sac	1	tooshortforcompound
 Sade	1	propn-blocking
 Saha	1	propn-blocking
+Saha	2	propn-blocking
 Sahiainen	1	propn-blocking
 Sahuri	1	propn-blocking
 Saikka	1	propn-blocking
