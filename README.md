@@ -35,9 +35,6 @@ These are the obligatory stamps of the day:
 (stable master branch:
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
 )
-<img src="http://img.shields.io/liberapay/patrons/Flammie.svg?logo=liberapay">
-
-<a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 ## Documentation
 
@@ -325,7 +322,13 @@ I (Flammie) also recommend syntastic, e.g. I use
 
 Since I it's 2018 I just want to remind GNU has a (mostly) good description of what FLOSS hacking code of conduct should be https://www.gnu.org/philosophy/kind-communication.html. Omorfi is free and open source project that depends on user contributions and we aim to be maximally approachable and so on. Thanks.
 
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
+## Donations
+
+A lot of omorfi development has been done on spare time and by volunteers, if you want to support [Flammie](https://flammie.github.io) you can use the github's ❤️Sponsor button, or any of the services below:
 
 [![Beerpay](https://beerpay.io/flammie/omorfi/badge.svg?style=beer-square)](https://beerpay.io/flammie/omorfi)  [![Beerpay](https://beerpay.io/flammie/omorfi/make-wish.svg?style=flat-square)](https://beerpay.io/flammie/omorfi?focus=wish)
+
+<script src="https://liberapay.com/Flammie/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+
+<a href="https://www.patreon.com/bePatron?u=9479606" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
