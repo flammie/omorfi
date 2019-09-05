@@ -328,7 +328,6 @@ A lot of omorfi development has been done on spare time and by volunteers, if yo
 
 [![Beerpay](https://beerpay.io/flammie/omorfi/badge.svg?style=beer-square)](https://beerpay.io/flammie/omorfi)  [![Beerpay](https://beerpay.io/flammie/omorfi/make-wish.svg?style=flat-square)](https://beerpay.io/flammie/omorfi?focus=wish)
 
-<script src="https://liberapay.com/Flammie/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+<a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
-<a href="https://www.patreon.com/bePatron?u=9479606" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+<a href="https://www.patreon.com/bePatron?u=9479606" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
