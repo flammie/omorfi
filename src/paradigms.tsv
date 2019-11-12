@@ -12,8 +12,10 @@ ADJ_AUTIO	ADJ	ADJECTIVE	3	None	False	weaken	back	None	None	False	False	io
 ADJ_AUTUAS	ADJ	ADJECTIVE	41	None	False	strengthen	back	None	None	False	False	as	s
 ADJ_AVOIN	ADJ	ADJECTIVE	33	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*n	n
 ADJ_BEIGE	ADJ	ADJECTIVE	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
+ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]	
 ADJ_EHTA	ADJ	ADJECTIVE	9	F	False	weaken	back	a	None	False	False	ta	ta
 ADJ_EHYT	ADJ	ADJECTIVE	43	None	False	strengthen	front	None	None	False	False	yt	t
+ADJ_ENSIMMÄINEN	ADJ	NUMERAL	38	None	False	strengthen	front	None	None	False	False	inen	nen
 ADJ_GAY	ADJ	ADJECTIVE	21	None	False	weaken	front	None	None	False	False	ay
 ADJ_HAILAKKA	ADJ	ADJECTIVE	14	A	False	weaken	back	a	None	False	False	kka	ka
 ADJ_HALPA	ADJ	ADJECTIVE	9	E	False	weaken	back	a	None	False	False	pa	pa
@@ -41,6 +43,7 @@ ADJ_KORKEA	ADJ	ADJECTIVE	15	None	False	weaken	back	a	None	False	False	ea	a
 ADJ_KULTA	ADJ	ADJECTIVE	10	I	False	weaken	back	a	None	False	False	lta	ta
 ADJ_KULUNUT	ADJ	ADJECTIVE	47	None	False	strengthen	back	u	None	False	False	ut	ut
 ADJ_KYLMÄJÄRKINEN	ADJ	ADJECTIVE	38	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen	nen
+ADJ_KYMMENTÄ	ADJ	NUMERAL	99	None	False	False	front	None	None	False	False	.
 ADJ_KYVYTÖN	ADJ	ADJECTIVE	34	C	False	strengthen	front	None	None	False	False	tön	ön
 ADJ_KYYTTÖ	ADJ	ADJECTIVE	1	C	False	weaken	front	None	None	False	False	ttö	tö
 ADJ_KÄYPÄ	ADJ	ADJECTIVE	10	E	False	weaken	front	ä	None	False	False	pä	pä
@@ -103,8 +106,8 @@ ADJ_TARKKA	ADJ	ADJECTIVE	9	A|D	False	weaken	back	a	None	False	False	ka	ka
 ADJ_TERVE	ADJ	ADJECTIVE	48	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
 ADJ_TERÄVÄ	ADJ	ADJECTIVE	10	None	False	weaken	front	ä	None	False	False	ä	ä
 ADJ_TIIVIS	ADJ	ADJECTIVE	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*is	is
+ADJ_TOINEN	ADJ	NUMERAL	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*inen	nen
 ADJ_TOOPE	ADJ	ADJECTIVE	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
-ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]	
 ADJ_TUHTI	ADJ	ADJECTIVE	5	F	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti	ti
 ADJ_TUMMAHKO	ADJ	ADJECTIVE	1	None	False	weaken	back	None	None	False	False	o
 ADJ_TURTA	ADJ	ADJECTIVE	10	K	False	weaken	back	a	None	False	False	rta	ta
