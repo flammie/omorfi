@@ -133,7 +133,7 @@ ADJ_VÄNKÄ	Adjectives with nkä:ng variation
 ADJ_VÄÄRTTI	Stems with quantitative t gradation, i final and front harmony are in class described here and dictionary class ⁵⁻C. There are no bisyllabic adjectives ending in vowel and gradating -pi.
 ADJ_YKSILÖITY	The gradation of t ~ d after u is in class described here, the dictionary class for this is ¹⁻F. The commonest t ~ d variation in u stems comes from nut participle’s passive’s front form (-ty).
 ADJ_YLENNETTY	The quantitative gradation of t before y is in class described here, which was ¹⁻C in the dictionary. The u stems with quantitative t gradation are commonest with nut participle passive derivation’s front (-tty).
-ADJ_ÄLLISTYNYT	Dictionary class 47 front
+ADJ_ÄLLISTYNYT	Adjectives with -nyt stem and nyt : nee variation, mostly lexicalised nut participles
 ADJ_ÖYKKÄRI	The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶. There are no adjectives acting like nouns where i-final nominatives have singular e stems.
 ADP_ALLE	adposition with optional possessive including -en allomorph, back harmony
 ADP_KOTONA	adposition with optional possessive including -an allomorph
@@ -171,11 +171,11 @@ AUX_SAATTAA	auxiliary version of ttaa:to verb stem
 AUX_TAITAA	auxiliary version of ta:si verb stem
 AUX_TARVITA	auxiliary version of ta:tse verb stem
 AUX_TÄYTYÄ	auxiliary version of ty:dy verb stem
-AUX_VOIDA	auxiliary version of
+AUX_VOIDA	auxiliary version of voida verb stem
 CCONJ_JA	co-ordinating conjunction, no morphology
 DET_SE	determiner version of pronoun ‘se’
 DET_YKSI	determiner version of pronoun/numeral ‘yksi’
-INTJ_HAH	interjection that does not participate in interjection compounding
+INTJ_HAH	interjection that does *not* participate in interjection compounding
 INTJ_OO	interjection that participates in interjection compounding
 NOUN_51aavameri	Optimisation hack for exceptional compound ’aavameri’ that inflects in all parts with agreement
 NOUN_51hienosokeri	Optimisation hack for exceptional compound ’hienosokeri’ that inflects in all parts with agreement
@@ -270,15 +270,15 @@ NOUN_51vanhakaupunki	Optimisation hack for exceptional compound ’vanhakaupunki
 NOUN_51vanhapiika	Optimisation hack for exceptional compound ’vanhapiika’ that inflects in all parts with agreement
 NOUN_51vanhapoika	Optimisation hack for exceptional compound ’vanhapoika’ that inflects in all parts with agreement
 NOUN_51vierasmies	Optimisation hack for exceptional compound ’vierasmies’ that inflects in all parts with agreement
-NOUN_AAKKOSELLISUUS	Dictionary class 40 back
-NOUN_AAKKOSTAMINEN	Dictionary class 38 back
-NOUN_AALLOT	Dictionary class 1lot plurale tantum
-NOUN_AAMUKAHDEKSAN	Non-dictionary class for numeral compounds ending 8
-NOUN_AAMUKOLME	Non-dictionary class for numeral compounds ending kolme
-NOUN_AAMUKYMMENEN	Non-dictionary class for numeral compounds ending 10
-NOUN_AAMUYHDEKSÄN	Non-dictionary class for numeral compounds ending 9
-NOUN_AAMUYKSI	Non-dictionary class for numeral compounds ending yksi
-NOUN_AARRE	Dictionary class 48 back re
+NOUN_AAKKOSELLISUUS	Nouns with s stem and s:de:te variation
+NOUN_AAKKOSTAMINEN	Nouns with nen stem and nen:se variation
+NOUN_AALLOT	Plurale tantums with llot:lto variation
+NOUN_AAMUKAHDEKSAN	Nouns inflecting like 'kahdeksan', e.g. noun-numeral compounds
+NOUN_AAMUKOLME	Nouns inflecting like 'kolme', e.g. noun-numeral compounds
+NOUN_AAMUKYMMENEN	Nouns inflecting like 'kolme', e.g. noun-numeral compounds
+NOUN_AAMUYHDEKSÄN	Nouns inflecting like 'yhdeksän', e.g. noun-numeral compounds
+NOUN_AAMUYKSI	Nouns inflecting like 'yksi', e.g. noun-numeral compounds
+NOUN_AARRE	Nouns with rre-stem and rre:rtee variation back harmony
 NOUN_ACRO_AA	acronyms ending in 'a' pronounced as a letter
 NOUN_ACRO_CELSIUS	The acronyms ending in a word that inflects like ‘celsius’ with s:kse type stem
 NOUN_ACRO_DOLLARI	The acronyms ending in a word that inflects like ‘dollari’ with i:e type stem
@@ -321,109 +321,109 @@ NOUN_ACRO_ÄÄ	Acronyms that end in 'ä' pronounced as letter
 NOUN_ACRO_ÖÖ	Acronyms that end in 'ö' pronounced as letter
 NOUN_ACRO_Ω	Acronyms that end in ‘oomega’
 NOUN_AIKA	Nouns that inflect like aika:aja
-NOUN_AIVOKUOLLUT	Dictionary class 47 back
-NOUN_AIVOT	Dictionary class 1o plurale tantum
-NOUN_AJATAR	Dictionary class 32 tar
-NOUN_ALKEET	Dictionary class jeet plurale tantum
-NOUN_ALKU	Dictionary class 1ku with k:0
-NOUN_ALLAS	Dictionary class 41 las
-NOUN_ANTIMET	Dictionary class 31 nnin plurale tantum
-NOUN_APE	Dictionary class 48 back pe
-NOUN_APU	Dictionary class 1pu
-NOUN_ARISTOTELES	Dictionary class 41 es back
-NOUN_ARKI	Dictionary class 7 back k~j
-NOUN_ARKKITEHTI	Dictionary class 5 t~d with front and back harmony acceptable
-NOUN_ASEMA	Dictionary class 11 back
-NOUN_ASKAR	Dictionary class 49 ar
-NOUN_ASKELLIN	Dictionary class 33 back lin
-NOUN_ASTE	Dictionary class 48 back
-NOUN_ASU	The stems ending in u are also without variationm and the bisyllabic ones have the same simple allomorph pattern: Dictionary class 1u
-NOUN_ASUKAS	Dictionary class 41 kas
-NOUN_ATERIMET	Dictionary class 31 t plurale tantum
-NOUN_AUER	Dictionary class 49 auer
-NOUN_BÉBÉ	Dictionary class 21 e front
-NOUN_BEIGNET	Dictionary class 22 e front
-NOUN_BERNIE	This class includes a set of new proper nouns that get nativised a bit Dictionary class 3etä
-NOUN_BESSERWISSER	Dictionary class 6 front no i
-NOUN_BIDEE	Dictionary class 20 e front There’s a gap in -ii final loan stems.
-NOUN_BIKINIT	Dictionary class xxx nit plurale tantum
-NOUN_BORDEAUX	Dictionary class 22 o
-NOUN_BRASSERIE	Dictionary class 21 i back
-NOUN_BRIE	Dictionary class 21 i front
-NOUN_BÄNET	Dictionary class 8 front plurale tantum
-NOUN_CHACHACHA	Dictionary class 21 a The loan words that end in consonant when written but vowel when pronounced are inflected with an apostrophe ’. With half-vowels the rule is a bit shaky, but officially apostrophe is the only way.
-NOUN_COWBOY	Dictionary class 21 iy
-NOUN_ELIN	Dictionary class 33 front
-NOUN_ELÄMÄ	Dictionary class 11 front
-NOUN_EPÄILTY	Dictionary class 1lty
-NOUN_ESIM.	Abbreviated noun with final full stop and no morphology. At the moment covers parts-of-speech, may be split in the future
-NOUN_ESQUIMAU	Dictionary class 21 o back
-NOUN_FARKUT	Dictionary class 1ku plurale tantum
-NOUN_FARMARIT	Dictionary class xxx it plurale tantum
-NOUN_FONDUE	Dictionary class 21 ye
-NOUN_FONDYY	Dictionary class 20 y
-NOUN_FÄNRIKIT	Plurale tantum nouns that inflect with kit:kke
-NOUN_GAY	Dictionary class 21 yi
-NOUN_HAAKSI	Dictionary class 27 ksi
-NOUN_HAI	Dictionary class 18 i back
+NOUN_AIVOKUOLLUT	Nouns with llut stem that inflect with llut : llee variation
+NOUN_AIVOT	Plurale tantums with ot stem that inflect without variation (o stem)
+NOUN_AJATAR	Nouns with tar stem that inflect with tar : ttare variation
+NOUN_ALKEET	Plurale tantums with lkeet stem that inflects with lkeet : lje variation
+NOUN_ALKU	Nouns with ku stem with ku : u variation
+NOUN_ALLAS	Nousn with llas stem and llas : ltaa variation
+NOUN_ANTIMET	Plurale tantums with ntimet stem with ntimet : nnin variation
+NOUN_APE	Nouns with pe stem and pe : ppee variation
+NOUN_APU	Nouns with pu stem and pu : vu variation
+NOUN_ARISTOTELES	Nouns with es stem and es : ee variation back hamrony
+NOUN_ARKI	Nouns with rki stem and rki : rje variation
+NOUN_ARKKITEHTI	Nouns with ti stem and ti : di variation both harmonious accepted
+NOUN_ASEMA	Nouns with a stem and a : 0 variation
+NOUN_ASKAR	Nouns with r stem and r : re : ree variations back harmony
+NOUN_ASKELLIN	Nouns with llin stem and llin : ltime variation back harmony
+NOUN_ASTE	Nouns with e stem and e : ee variation back harmony
+NOUN_ASU	Nouns ending in u without variation and the bisyllabic ones have the same simple allomorph pattern
+NOUN_ASUKAS	Nouns with kas stem and kas : kkaa variation
+NOUN_ATERIMET	Plurale tantums with met : n variation back harmony
+NOUN_AUER	Noun(s) with er stem and er : tere variation
+NOUN_BÉBÉ	Nouns with é stem front harmony
+NOUN_BEIGNET	loan word nouns with consonant stem and ’ inflection, e stem and front harmony
+NOUN_BERNIE	Nouns with ie stems and front harmony
+NOUN_BESSERWISSER	loan word nouns with consonant stem and x : xi inflection
+NOUN_BIDEE	Nouns with ee stem and more syllables with ee : e variation
+NOUN_BIKINIT	Nouns with it stem and it : i variation front harmony
+NOUN_BORDEAUX	Loan word nouns with ’ inflection, o stem back harmony
+NOUN_BRASSERIE	Loan word nouns with e stems, front harmony
+NOUN_BRIE	Loan word nouns with e stems, front harmony
+NOUN_BÄNET	Plurale tantums with et stems et : e variation and front harmony
+NOUN_CHACHACHA	Loan words with a stem
+NOUN_COWBOY	Nouns with oy stem, both harmonies
+NOUN_ELIN	Nouns with n stem and n : me variation front harmony
+NOUN_ELÄMÄ	Nouns with ä stem and ä : 0 variation
+NOUN_EPÄILTY	Nouns with lty stem and lty : lly variation, mostly l-stem passive participles lexicalised
+NOUN_ESIM.	Abbreviated nouns with final full stop and no morphology. At the moment covers parts-of-speech, may be split in the future
+NOUN_ESQUIMAU	Loan words with o stem
+NOUN_FARKUT	Plurale tantums with kut stem and kut :kku variation
+NOUN_FARMARIT	Plurale tantums with it stem and it : i variation and back harmony
+NOUN_FONDUE	Loan words wit y stem and stuff
+NOUN_FONDYY	Nouns with yy stem and more syllables
+NOUN_FÄNRIKIT	Nouns with it stem and it : i variation, front harmony
+NOUN_GAY	Loan words with y stem and front harmony
+NOUN_HAAKSI	Nouns with ksi stem and ksi : ht variations
+NOUN_HAI	Nouns with i stem and i : 0 variation, back harmony
 NOUN_HAIT	Plurale tantum monosyllabic nouns ending in i, back harmony
-NOUN_HAMMAS	Dictionary class 41 mas
-NOUN_HAPAN	lexicalised noun of adjective hapan with n:ma variation
-NOUN_HAPPI	Dictionary class 7 back p~0
-NOUN_HAPPO	Dictionary class 1po
-NOUN_HAPSI	Dictionary class 27 psi
-NOUN_HARMAAT	Dictionary class 17 a plurale tantum
-NOUN_HEITIN	Dictionary class 33 front tin
-NOUN_HENKI	Dictionary class 7 front k~g
-NOUN_HEPO	Dictionary class 1po
-NOUN_HIIRI	Dictionary class 24 front It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
-NOUN_HIPAT	Dictionary class xxx a front pp plurale tantum
-NOUN_HIRTTO	Dictionary class 1to
-NOUN_HIUTALEET	Dictionary class leat plurale tantum
-NOUN_HOKSOTTIMET	Dictionary class 31 tin plurale tantum
-NOUN_HONKA	Dictionary class 10 back k~g
-NOUN_HOPEAT	Dictionary class xxx eat plurale tantum
-NOUN_HOUSUT	Dictionary class 1u plurale tantum
-NOUN_HUOLITELTU	Dictionary class 1ltu
-NOUN_HUPI	Dictionary class 5 back p~v There is a gap in i final words for p:v variation and front harmony
-NOUN_HYLJE	Dictionary class 48 front je
-NOUN_HYLKY	Dictionary class 1ky
-NOUN_HYNTTEET	Dictionary class ntteet plurale tantum
-NOUN_HYNTTYYT	Dictionary class ntyyaat plurale tantum
-NOUN_HÄIRIÖ	Dictionary class 3ö
-NOUN_HÄKKI	Dictionary class 5 front k~0
-NOUN_HÄKKYRÄ	Dictionary class 12 front There is a possible class for further variation of a:o in the old dictionary dictionary that is worth re-evaluating. There’s one more allomorph pattern.
-NOUN_HÄMMINKI	Dictionary class 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
-NOUN_HÄNTÄ	Dictionary class 10 front t~n
+NOUN_HAMMAS	Nouns with mas stem and mmas : mpaa variation
+NOUN_HAPAN	Nouns with n stem and n:ma variation, e.g. noun compounds with 'hapan'
+NOUN_HAPPI	Nouns with ppi stem and ppi : pe variations, back harmony
+NOUN_HAPPO	Nouns with ppo stem and ppo : po variations
+NOUN_HAPSI	Nouns with psi stem and psi : pse variations back harmony
+NOUN_HARMAAT	Plurale tantums with aat stem and aat : aa variations
+NOUN_HEITIN	Nouns with tin stem and tin : ttime variation, front harmony
+NOUN_HENKI	Nouns with nki stem and nki : nge variations
+NOUN_HEPO	Nouns with po stem and po : vo variations
+NOUN_HIIRI	Nouns with i stem and i : e variations. It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
+NOUN_HIPAT	Plurale tantums with pat stem and pat : ppa variations
+NOUN_HIRTTO	Nouns with tto stem and tto : to variations
+NOUN_HIUTALEET	Plurale tantums with leet stem and leet : lee : le variations
+NOUN_HOKSOTTIMET	Plurale tantums with timet stem and timet : tin variations
+NOUN_HONKA	Nouns with nka stem and nka : ng variations 
+NOUN_HOPEAT	Plurale tantums with eat stem and eat : e variations
+NOUN_HOUSUT	Plurale tantums with ut stem and ut : u variations
+NOUN_HUOLITELTU	Nousn with ltu stem and ltu : llu variations, mostly lexicalised passive participles
+NOUN_HUPI	Nouns with pi stem and pi : vi variations, back harmony
+NOUN_HYLJE	Nouns with je stem and je : ke variations, front harmony
+NOUN_HYLKY	Nouns with ky stem and ky : y variations 
+NOUN_HYNTTEET	Plurale tantums with ntteet stem and ntteet : nte variation, front harmony
+NOUN_HYNTTYYT	Plurale tantums with nttyyt stem and nttyyt : nty variation
+NOUN_HÄIRIÖ	Nouns with iö stem, no variations
+NOUN_HÄKKI	Nouns with ki stem, kki : ki variations
+NOUN_HÄKKYRÄ	Nouns with ä stem and ä : ö : 0 variations
+NOUN_HÄMMINKI	Nouns with nki stem and nki : ng variations front harmony
+NOUN_HÄNTÄ	Nouns with ntä stems, ntä : nnä variations
 NOUN_HÄRKIN	Nouns with kin:kkime variation, front
-NOUN_HÄVINNEET	Dictionary class nut plurale tantum
-NOUN_HÄÄT	Dictionary class xxx äät plurale tantum
-NOUN_HÄÄTÖ	Dictionary class 1tö
-NOUN_HÖLKKÄ	Dictionary class 10 front k̃~0
-NOUN_HÖPÖTTÄJÄ	Dictionary class 10 front
-NOUN_HÖYHENET	Dictionary class 32 t plurale tantum
-NOUN_IEN	Dictionary class 32 ien Some of the n-final stems have n:m variation.
-NOUN_IES	Dictionary class 41 ies
-NOUN_IKENET	Dictionary class 31 ien plurale tantum
-NOUN_IMMYT	Dictionary class 43 myt Few t-final words have lengthening in singular stems
-NOUN_ITÄMAAT	Dictionary class xxx maat plurale tantum
-NOUN_JEPPE	Dictionary class 8 p~0 front
-NOUN_JOCKEY	Dictionary class 21 yi
-NOUN_JOUKOT	Dictionary class 1ko plurale tantum
-NOUN_JOUTSEN	Dictionary class 32 back
-NOUN_JUHLAT	Dictionary class xxx t plurale tantum
-NOUN_JUMALA	a:0 with consonant stem ten genitive
-NOUN_JÄLSI	Dictionary class 27 front t~l A few -psi, -ksi, -tsi stems have consonant simplification for consonant stems. Other variation with these stems is the selection of plural genitive allomorphs.
-NOUN_JÄRKI	Dictionary class 7 front k~j
-NOUN_JÄÄTELÖ	Dictionary class 2ö
-NOUN_KAMPPEET	Dictionary class mppt plurale tantum
-NOUN_KANAALI	Nouns with i:e variation
-NOUN_KANGAS	Dictionary class 41 gas
-NOUN_KANNEL	Dictionary class 49 nel
-NOUN_KANNET	Dictionary class xxx nnet plurale tantum
-NOUN_KARBOKSYLAATTI	gradating t:0 with both back and front harmonies
-NOUN_KASTANJETIT	Dictionary class xxx tit plurale tantum
-NOUN_KASTIKE	Dictionary class 48 back ke
+NOUN_HÄVINNEET	Plurale tantusm wit nneet stem and nneet : nyt variations
+NOUN_HÄÄT	Plurale tantums with äät stem and äät : ää : ä variations
+NOUN_HÄÄTÖ	Nouns with tö stem and tö : dö variations
+NOUN_HÖLKKÄ	Nouns with kkä stem and kkä : k variations
+NOUN_HÖPÖTTÄJÄ	Nouns with ä stem and ä : 0 variations
+NOUN_HÖYHENET	Plurale tantums with et stem and et : 0 variations, front harmony
+NOUN_IEN	Nouns with en stem and en : kene variations 
+NOUN_IES	Nouns with es stem and es : kee variations
+NOUN_IKENET	Nouns with kenet stem and kenet : en variations
+NOUN_IMMYT	Nouns with myt stem and myt :  py variations
+NOUN_ITÄMAAT	Plurale taantums with aat stems and aat : aa : a variations
+NOUN_JEPPE	Nouns with ppe stem and ppe : pe variations
+NOUN_JOCKEY	Loan words with ey stems and both harmonies
+NOUN_JOUKOT	Plurale tantums with kot stem and kot :kko varaitions 
+NOUN_JOUTSEN	Nouns with consonant stem and x : xe variations
+NOUN_JUHLAT	Plurale tantums with at stem and at : a : 0 variations
+NOUN_JUMALA	Nouns with a stem a:0 variations, with a consonant stem ten genitive
+NOUN_JÄLSI	Nouns with lsi stem and lsi : lle variations, front harmony
+NOUN_JÄRKI	Nouns with rki stem and rki : rje  variations, front harmony
+NOUN_JÄÄTELÖ	Nouns with ö stem and no variations
+NOUN_KAMPPEET	Plurale tantums with ppeet stem and ppeet : pe variations
+NOUN_KANAALI	Nouns with i stem and i:e variation back harmony
+NOUN_KANGAS	Nouns with gas stem and gas : kaa variations
+NOUN_KANNEL	Nouns with nel stem and nel : tele variations
+NOUN_KANNET	Plurale tantums with nnet stem and nnet : nsi variations
+NOUN_KARBOKSYLAATTI	Nouns with tti stem, tti : t variations and with both back and front harmonies
+NOUN_KASTANJETIT	Pluarale tantums with tit stem and tit : tti variations
+NOUN_KASTIKE	Nouns with ke stem and ke : kkee variations, back harmony
 NOUN_KASTILJAT	Plurale tantums with a:o variations
 NOUN_KAUSI	Dictionary class 27 back
 NOUN_KEHVELI	Dictionary class 6 front
@@ -1496,6 +1496,7 @@ NUM_51yksiseitsemättä	Optimisation hack for exceptional compound ’yksiseitse
 NUM_51yksitoista	Optimisation hack for exceptional compound ’yksitoista’ that inflects in all parts with agreement
 NUM_51yksiviidettä	Optimisation hack for exceptional compound ’yksiviidettä’ that inflects in all parts with agreement
 NUM_51yksiyhdeksättä	Optimisation hack for exceptional compound ’yksiyhdeksättä’ that inflects in all parts with agreement
+ADJ_ENSIMMÄINEN	Dictionary class38
 NUM_ENSIMMÄINEN	Dictionary class38
 NUM_KAHDEKSAN	Dictionary class10n
 NUM_KAKSI	Dictionary class31 back§
@@ -1507,6 +1508,7 @@ NUM_KUUTISEN	Approximative numerals, back suffixes, compounding with select mult
 NUM_KYMMEN	archaic form ‘kymmen’ inflects like NUM_KYMMENEN
 NUM_KYMMENEN	Dictionary class32
 NUM_KYMMENKUNTA	Approximative numerals, no inflection
+ADJ_KYMMENTÄ	bound numeral multiplier
 NUM_KYMMENTÄ	bound numeral multiplier
 NUM_MILJARDI	Dictionary class5
 NUM_MILJOONA	Dictionary class10
@@ -1516,6 +1518,7 @@ NUM_PARI	Dictionary class5 moremore
 NUM_PUOLI	numeral puoli inflects like
 NUM_SATA	Dictionary class9
 NUM_TOINEN	Dictionary class38 back
+ADJ_TOINEN	Dictionary class38 back
 NUM_TUHAT	Dictionary class46
 NUM_VIISI	Dictionary class27 front
 NUM_VIITISEN	Approximative numerals, front suffixes, compounding with select multipliers
