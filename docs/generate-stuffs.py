@@ -23,7 +23,7 @@ This script converts Finnish TSV-formatted lexicon to github wiki
 
 import argparse
 import csv
-from sys import exit, stderr
+from sys import stderr
 
 from omorfi.formats.apertium_formatter import ApertiumFormatter
 from omorfi.formats.ftb3_formatter import Ftb3Formatter
@@ -57,18 +57,15 @@ def main():
     ap.add_argument("--separator", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
-                    "do not have SEPs")
+                    metavar="COMMENT", help="skip lines starting with COMMENT" +
+                    "that do not have SEPs")
     ap.add_argument("--strip", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
+                    metavar="STRIP", help="strip STRIP from fields " +
+                    "before using")
 
     args = ap.parse_args()
 
-    # write preamble to wiki page
-    print('---', file=args.output)
-    print('layout: default', file=args.output)
-    print('title: Omor stuff–Internal codes', file=args.output)
-    print('---', file=args.output)
+    # write preamble to wiki pag +e
     print('# omor stuff: some internal short-hand codes in omorfi databases',
             file=args.output)
     print(file=args.output)
@@ -89,24 +86,21 @@ def main():
     print(file=args.output)
     # stolen from turku:
     # https://turkunlp.github.io/Finnish_PropBank/
-    print("""<p>Stuffs:
-{% for page in site.pages %}{% if page.stuff %}
-<a href="stuffs/{{page.stuff}}.html">{{page.stuff}}</a>,
-{% endif %}{% endfor %}
-</p>
-
+    print("""
 ## Stuffs in tabular format
 
 The symbols are default output variants without context-sensitive filtering.
+This means that some symbols may be further modified in python code of the
+outpyt formatter.
 
 
 """, file=args.output)
     formatters = [OmorFormatter(args.verbose), ApertiumFormatter(args.verbose),
                   Ftb3Formatter(args.verbose), GiellaFormatter(args.verbose)]
     print("| Stuff | Doc | Omorfi | Apertium | FTB 3.1 | Giella |",
-            file=args.output)
+          file=args.output)
     print("|:-----:|:---:|:------:|:--------:|:-------:|:------:|",
-            file=args.output)
+          file=args.output)
     for tsv_filename in args.stuff_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
@@ -122,17 +116,17 @@ The symbols are default output variants without context-sensitive filtering.
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfile=open(args.outdir + '/' +
-                             tsv_parts['stuff'].replace('?', '_') +
-                             '.markdown', 'w')
+                outfilename = tsv_parts['stuff'].replace('?', '_')
+                outfile = open(args.outdir + '/' + outfilename + '.markdown',
+                               'w')
                 print('---', file=outfile)
                 print('layout: stuff', file=outfile)
-                print('stuff:', tsv_parts['stuff'].replace('?', '_'),
-                        file=outfile)
+                print('stuff:', outfilename,
+                      file=outfile)
                 print('---', file=outfile)
                 print("# `", tsv_parts['stuff'], "`", file=outfile)
-                print("| ", tsv_parts['stuff'], " |", file=args.output,
-                        end=' ', sep='')
+                print("| [", tsv_parts['stuff'], "](stuffs/" + outfilename +
+                      ".html) |", file=args.output, end=' ', sep='')
                 print(file=outfile)
                 print(tsv_parts['doc'], file=outfile)
                 print(tsv_parts['doc'], file=args.output, end=' ')
@@ -142,9 +136,9 @@ The symbols are default output variants without context-sensitive filtering.
                 print("|:------:|:--------:|:-------:|:------:|", file=outfile)
                 for formatter in formatters:
                     print("| ", formatter.stuff2lexc(tsv_parts['stuff']),
-                            file=outfile, end=' ')
+                          file=outfile, end=' ')
                     print("| ", formatter.stuff2lexc(tsv_parts['stuff']),
-                            file=args.output, end=' ')
+                          file=args.output, end=' ')
                 print(" |", file=outfile)
                 print(" |", file=args.output)
 

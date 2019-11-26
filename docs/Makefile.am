@@ -10,7 +10,7 @@ update: stuff.markdown paradigms.markdown lexemes.markdown statistics.markdown
 
 stuff.markdown:
 	PYTHONPATH=$(srcdir)/../src/python $(PYTHON) generate-stuffs.py \
-			   -S src/docs/stuff.tsv -o stuff.markdown -O stuffs/
+			   -S $(srcdir)/../src/docs/stuff.tsv -o stuff.markdown -O stuffs/
 
 paradigms.markdown:
 	$(PYTHON) generate-paradigms.py -P ../src/docs/paradigms.tsv \
