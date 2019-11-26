@@ -9,4 +9,4 @@ Positive comparison, inflectional feature, refer to http://universaldependencies
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-|  [CMP=POS] |  %<pos%> |  % Pos |  +Pos  |
+|  [CMP=POS] |  %<pst%> |  % Pos |  +Pos  |
