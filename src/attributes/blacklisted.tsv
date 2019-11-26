@@ -44,7 +44,6 @@ Ailakki	1	propn-blocking
 Aimo	1	propn-blocking
 Aina	1	propn-blocking
 Aine	1	propn-blocking
-Aino	1	propn-blocking
 Ainoa	1	propn-blocking
 Ainokainen	1	propn-blocking
 Airo	1	propn-blocking
@@ -181,7 +180,6 @@ Aukio	1	propn-blocking
 Aula	1	propn-blocking
 Aulis	1	propn-blocking
 Auma	1	propn-blocking
-Aunus	1	propn-blocking
 Aura	1	propn-blocking
 Aurankurki	1	propn-blocking
 Aurinko	1	propn-blocking
@@ -541,7 +539,6 @@ Hiippakunta	1	propn-blocking
 Hiirakko	1	propn-blocking
 Hiirenhäntä	1	propn-blocking
 Hiiri	1	propn-blocking
-Hiisi	1	propn-blocking
 Hiitti	1	propn-blocking
 Hiiva	1	propn-blocking
 Hikka	1	propn-blocking
@@ -747,7 +744,6 @@ Ilma	1	propn-blocking
 Ilmainen	1	propn-blocking
 Ilmarata	1	propn-blocking
 Ilmasto	1	propn-blocking
-Ilmatar	1	propn-blocking
 Ilmavaara	1	propn-blocking
 Ilmavirta	1	propn-blocking
 Ilmetty	1	propn-blocking
@@ -1123,8 +1119,6 @@ Karikko	1	propn-blocking
 Karinen	1	propn-blocking
 Karista	1	propn-blocking
 Kariste	1	propn-blocking
-Karjala	1	propn-blocking
-Karjalainen	1	propn-blocking
 Karjamaja	1	propn-blocking
 Karjola	1	propn-blocking
 Karju	1	propn-blocking
@@ -1483,7 +1477,6 @@ Kolo	1	propn-blocking
 Koloinen	1	propn-blocking
 kom	1	tooshortforcompound
 Komero	1	propn-blocking
-Komi	1	propn-blocking
 Komori	1	propn-blocking
 Kompleksi	1	propn-blocking
 Komppi	1	propn-blocking
@@ -2111,7 +2104,6 @@ Lotja	1	propn-blocking
 Lotta	1	propn-blocking
 Lotto	1	propn-blocking
 Louhe	1	propn-blocking
-Louhi	1	propn-blocking
 Louhija	1	propn-blocking
 Louhikko	1	propn-blocking
 Louhimo	1	propn-blocking
@@ -2280,8 +2272,6 @@ Malto	1	propn-blocking
 mam	1	tooshortforcompound
 Mamba	1	propn-blocking
 Mamo	1	propn-blocking
-Mana	1	propn-blocking
-Manala	1	propn-blocking
 Manaus	1	propn-blocking
 Maneesi	1	propn-blocking
 Manga	1	propn-blocking
@@ -3670,6 +3660,7 @@ Saarto	1	propn-blocking
 sac	1	tooshortforcompound
 Sade	1	propn-blocking
 Saha	1	propn-blocking
+Saha	2	propn-blocking
 Sahiainen	1	propn-blocking
 Sahuri	1	propn-blocking
 Saikka	1	propn-blocking
@@ -3718,7 +3709,6 @@ Sammalisto	1	propn-blocking
 Sammas	1	propn-blocking
 Sammio	1	propn-blocking
 Samoa	1	propn-blocking
-Sampo	1	propn-blocking
 san	1	tooshortforcompound
 Sana	1	propn-blocking
 Sanasto	1	propn-blocking
