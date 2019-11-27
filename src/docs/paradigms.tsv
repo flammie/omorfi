@@ -1665,84 +1665,84 @@ PROPN_HAAKSI	Proper nouns with ksi stem and ksi : ht varioants
 PROPN_HAI	Proper nouns with i stem and i : 0 variations
 PROPN_HAIT	Plural-only proper noun with monosyllabic ai stem
 PROPN_HAMMAS	Proper nouns with mas stem and mas : mpaa variations
-PROPN_HAPPI	Proper noun 7 back p~0
-PROPN_HAPPO	Proper noun 1po
-PROPN_HEITIN	Proper noun 33 front tin
-PROPN_HENKI	Proper noun 7 front k~g
-PROPN_HEPO	Proper noun 1po
-PROPN_HIIRI	Proper noun 24 front It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
-PROPN_HIRTTO	Proper noun 1to
-PROPN_HIUTALEET	Proper noun leat plurale tantum
-PROPN_HONKA	Proper noun 10 back k~g
-PROPN_HOPEAT	Proper noun xxx eat plurale tantum
-PROPN_HORTA	Proper noun wita a:0 stem and rt:rr gradation
-PROPN_HOUSUT	Proper noun 1u plurale tantum
-PROPN_HUOLITELTU	Proper noun 1ltu
-PROPN_HUPI	Proper noun 5 back p~v There is a gap in i final words for p:v variation and front harmony
-PROPN_HYLKY	Proper noun 1ky
-PROPN_HYÖTYY	Proper nouns with yy-stem
-PROPN_HÄIRIÖ	Proper noun 3ö
-PROPN_HÄKKI	Proper noun 5 front k~0
-PROPN_HÄKKYRÄ	Proper noun 12 front There is a possible class for further variation of a:o in the old dictionary dictionary that is worth re-evaluating. There’s one more allomorph pattern.
-PROPN_HÄMET	Proper nouns with et-stem
-PROPN_HÄMMINKI	Proper noun 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
-PROPN_HÄNNÄT	Plural-only proper noun with ä:0 stem and nt:nn gradation
-PROPN_HÄNTÄ	Proper noun 10 front t~n
-PROPN_HÄRKIN	Proper nouns with in:ime stems
-PROPN_HÄÄT	Proper noun xxx äät plurale tantum
-PROPN_HÄÄTÖ	Proper noun 1tö
-PROPN_HÖLKKÄ	Proper noun 10 front k̃~0
-PROPN_HÖPÖTTÄJÄ	Proper noun 10 front
-PROPN_HÖYHENET	Proper noun 32 t plurale tantum
+PROPN_HAPPI	Proper nouns with ppi stem and ppi : pe variations
+PROPN_HAPPO	Proper nouns with ppo stem and ppo : po variations
+PROPN_HEITIN	Proper nouns with tin stem and tin : ttime variations front harmony
+PROPN_HENKI	Proper nouns with nki stem and nki : nge variations
+PROPN_HEPO	Proper nouns with po stem and po : vo variations
+PROPN_HIIRI	Proper nouns with i stem and i : e variations and consonant stems
+PROPN_HIRTTO	Proper nouns with tto stem and tto : to variations
+PROPN_HIUTALEET	Proper nouns with eet stem and eet : e variations plurale tantum back harmony
+PROPN_HONKA	Proper nouns with nka stem and nka : ng variations
+PROPN_HOPEAT	Proper nouns with eat stem and eat : e variations plurale tantum
+PROPN_HORTA	Proper nouns with  rta stem and rta:rr variations
+PROPN_HOUSUT	Proper nouns with ut stem no variations plurale tantum
+PROPN_HUOLITELTU	Proper nouns with ltu stem and ltu : llu variations
+PROPN_HUPI	Proper nouns with pi stem and pi : ve variations
+PROPN_HYLKY	Proper nouns with ky stem and ky : y variations
+PROPN_HYÖTYY	Proper nouns with yy stem and yy : y variations
+PROPN_HÄIRIÖ	Proper nouns with ö stem no variations
+PROPN_HÄKKI	Proper nouns with kki  stem and kki : ke variations front harmony
+PROPN_HÄKKYRÄ	Proper nouns with ä stem and ä : ö variastions
+PROPN_HÄMET	Proper nouns with et stem
+PROPN_HÄMMINKI	Proper nouns with nki stem and nki : nge variations
+PROPN_HÄNNÄT	Plural-only proper nouns with nnät:ntä variations
+PROPN_HÄNTÄ	Proper nouns with with ntä stem and ntä : nn variations
+PROPN_HÄRKIN	Proper nouns with in:ime stems front harmony
+PROPN_HÄÄT	Proper nouns with äät stem, plurale tantum
+PROPN_HÄÄTÖ	Proper nouns with tö stem, tö : dö variation
+PROPN_HÖLKKÄ	Proper nouns with kkä stem, kkä : k variaitns
+PROPN_HÖPÖTTÄJÄ	Proper nouns with ä stem, ä : 0 variations
+PROPN_HÖYHENET	Proper nouns with et stem, et : 0 variations, front harmony, plurals
 PROPN_INGET	Plural-only proper noun with i:e stem and nk:ng gradation
-PROPN_ITÄMAAT	Proper noun xxx maat plurale tantum
-PROPN_JEPPE	Proper noun 8 p~0 front
-PROPN_JOCKEY	Proper noun 21 yi
-PROPN_JOUKOT	Proper noun 1ko plurale tantum
-PROPN_JOUTSEN	Proper noun 32 back
-PROPN_JUHLAT	Proper noun xxx t plurale tantum
-PROPN_JUOVAT	proper noun inflects like NOUN_PROBLEEMAT
-PROPN_JYLKYT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_JÄRJESTÖT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_JÄRKI	Proper noun 7 front k~j
-PROPN_JÄRVITAHDON	Proper nouns that look like Järvitahdon(?)
-PROPN_JÄÄTELÖ	Proper noun 2ö
-PROPN_KAARET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KAARRET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KAARROT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KALATOIN	Proper nouns that have old caritive toin stem
-PROPN_KANAALI	Proper nouns that have i:e stems
-PROPN_KANGAS	Proper noun 41 gas
-PROPN_KANGASALA	inflects like NOUN_OMENA except for adessive which is ‘kangasalla’
-PROPN_KANKAHAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KANNEL	Proper noun 49 nel
-PROPN_KARRAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KASTANJETIT	Proper noun xxx tit plurale tantum
-PROPN_KASTIKE	Proper noun 48 back ke
-PROPN_KASTILJAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KAUSI	Proper noun 27 back
-PROPN_KEHVELI	Proper noun 6 front
-PROPN_KENGÄT	Proper noun xxx a front kg plurale tantum
-PROPN_KENKÄ	Proper noun 10 frot k~g
-PROPN_KENTTÄ	Proper noun 10 front t~0
-PROPN_KENTÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KERITSIMET	Proper noun 31 t fr plurale tantum
-PROPN_KERTA	Proper noun 9 t~r
-PROPN_KEVÄT	Proper noun 44 Nominalised nut participles have special inflection just as well.
-PROPN_KIDE	Proper noun 48 front de
-PROPN_KIELTO	Proper noun 1lto
-PROPN_KIERRE	Proper noun 48 fron re
-PROPN_KIHARAT	Proper noun xxxihi t plurale tantum
-PROPN_KIINNE	Proper noun 48 front ne
-PROPN_KILPI	Proper noun 7 front p~v
-PROPN_KINNAS	Proper noun 41 nas
-PROPN_KIRITTÄRET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KIRJA	Proper noun 9 Notably, the basic a:o paradigm does not support many ä:ö cases.
-PROPN_KIRVES	Proper noun 41 es front
-PROPN_KITARA	Proper noun with a:o stem
-PROPN_KIVI	Proper noun 7 front
-PROPN_KLUMPIT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KOE	Proper noun 48 back 0k
+PROPN_ITÄMAAT	Proper nouns with aat stem and aat : a variations plurale tantum
+PROPN_JEPPE	Proper nouns with pe stem and ppe: pe variations
+PROPN_JOCKEY	Proper nouns with y stem no variations and both harmonies
+PROPN_JOUKOT	Proper noun with kot stems and kot : o variations plurale tantum
+PROPN_JOUTSEN	Proper nouns with consonant stems and X : xe variations
+PROPN_JUHLAT	Proper nouns with at stem and at : 0 variations plurale tantum
+PROPN_JUOVAT	proper nouns with vat stem and at : p variations plurale tantum
+PROPN_JYLKYT	Proper nouns with kyt stem and kyt : y variations Plurals only
+PROPN_JÄRJESTÖT	Proper nouns with öt stem and öt : ö variations plurale tantum
+PROPN_JÄRKI	Proper nouns with ki stem and ki : je variations
+PROPN_JÄRVITAHDON	Proper nouns with tahdon stem
+PROPN_JÄÄTELÖ	Proper nouns with ö stem no variations
+PROPN_KAARET	Plural-only proper nouns with i:e stem and kk:k gradation
+PROPN_KAARRET	Plural-only proper nouns with i:e stem and kk:k gradation
+PROPN_KAARROT	Plural-only proper nouns with i:e stem and kk:k gradation
+PROPN_KALATOIN	Proper nouns with toin stem and toin : tome variaitons, archaic
+PROPN_KANAALI	Proper nouns with i stems and i:E variations
+PROPN_KANGAS	Proper nouns with ngas stems and ngas:nkaa variations
+PROPN_KANGASALA	Proper nouns with a stems and a : o variation and a : 0 for adessive
+PROPN_KANKAHAT	Plural-only proper nouns with nkahat stems and nka : ngas variations
+PROPN_KANNEL	Proper nouns with nel stem and nel : nele : nelee variaitons
+PROPN_KARRAT	Plural-only proper nouns with at stems and a : o variatiosn
+PROPN_KASTANJETIT	Proper nouns with tit stems and tit : ti variations plurale tantum
+PROPN_KASTIKE	Proper nouns with ke stem and ke : kkee variationsa
+PROPN_KASTILJAT	Plural-only proper nouns with at stem and at : o variations
+PROPN_KAUSI	Proper nouns with si stem and si : te variations
+PROPN_KEHVELI	Proper nouns with i stem and i :e variations front harmony
+PROPN_KENGÄT	Proper nouns with ngät stem and ngät : nk variations
+PROPN_KENKÄ	Proper nouns wit nkä stem and nkä : ng variatiosn
+PROPN_KENTTÄ	Proper nouns with ttä stems and ttä : t variations
+PROPN_KENTÄT	Plural-only proper nouns with ät stem and tät : ttä variations
+PROPN_KERITSIMET	Proper nouns with imet stem and imet : in variations plurale tantum
+PROPN_KERTA	Proper nouns with rta stem and rta :rra variations
+PROPN_KEVÄT	Proper nouns with ät stem and ät : ää variations
+PROPN_KIDE	Proper nouns with de stem and de : tee variatisotn front harmony
+PROPN_KIELTO	Proper nouns with lto stem and lto : llo variations
+PROPN_KIERRE	Proper nouns with rre stem and rre : rtee variations
+PROPN_KIHARAT	Proper nouns with at stem and at : o variations plurale tantum
+PROPN_KIINNE	Proper nouns with nne stem and nne : ntee variations
+PROPN_KILPI	Proper nouns with pi stem and pi : ve variations
+PROPN_KINNAS	Proper nouns with nnas stem and nnas : ntaa varitions
+PROPN_KIRITTÄRET	Plural-only proper noun with ttäret stems and ttäret : tär variations
+PROPN_KIRJA	Proper nouns with a stem and a : o variations
+PROPN_KIRVES	Proper nouns with es stem and es : ee variations front harmn y
+PROPN_KITARA	Proper nouns with a stem and a : o variations
+PROPN_KIVI	Proper nouns with i stem and i : e variations
+PROPN_KLUMPIT	Plural-only proper noun with pit stem and pit : ppi variations
+PROPN_KOE	Proper nouns with e stem and e : kee variatins back harmony
 PROPN_KOKO	k:’ should be obligatory but new rules allow k:0 for ‘koko’
 PROPN_KOMPA	Proper noun 10 back p~m
 PROPN_KORPI	Proper noun 7 back p~v
