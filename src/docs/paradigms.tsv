@@ -424,373 +424,373 @@ NOUN_KANNET	Plurale tantums with nnet stem and nnet : nsi variations
 NOUN_KARBOKSYLAATTI	Nouns with tti stem, tti : t variations and with both back and front harmonies
 NOUN_KASTANJETIT	Pluarale tantums with tit stem and tit : tti variations
 NOUN_KASTIKE	Nouns with ke stem and ke : kkee variations, back harmony
-NOUN_KASTILJAT	Plurale tantums with a:o variations
-NOUN_KAUSI	Dictionary class 27 back
-NOUN_KEHVELI	Dictionary class 6 front
-NOUN_KELTIS	Dictionary class 41 tis
-NOUN_KENGÄT	Dictionary class xxx a front kg plurale tantum
-NOUN_KENKÄ	Dictionary class 10 frot k~g
-NOUN_KENTTÄ	Dictionary class 10 front t~0
-NOUN_KERITSIMET	Dictionary class 31 t fr plurale tantum
-NOUN_KERROIN	Dictionary class 33 back roin
-NOUN_KERTA	Dictionary class 9 t~r
-NOUN_KEVÄT	Dictionary class 44 Nominalised nut participles have special inflection just as well.
-NOUN_KIDE	Dictionary class 48 front de
-NOUN_KIELTO	Dictionary class 1lto
-NOUN_KIERRE	Dictionary class 48 fron re
-NOUN_KIERRIN	Dictionary class 33 fron rin
-NOUN_KIHARAT	Dictionary class xxxihi t plurale tantum
-NOUN_KIHARRIN	Dictionary class 33 back rin
-NOUN_KIINNE	Dictionary class 48 front ne
-NOUN_KIIRU	archaic u:uu class c.f., s.v kiiruusti etc.
-NOUN_KILPI	Dictionary class 7 front p~v
-NOUN_KILPIKKÄÄT	Dictionary class 41 käs plurale tantum
-NOUN_KINNAS	Dictionary class 41 nas
-NOUN_KINNER	Dictionary class 49 ner
-NOUN_KIRJA	Dictionary class 9 Notably, the basic a:o paradigm does not support many ä:ö cases.
-NOUN_KIRVES	Dictionary class 41 es front
-NOUN_KITARA	Nouns with a:o variations
-NOUN_KIVI	Dictionary class 7 front
-NOUN_KOE	Dictionary class 48 back 0k
-NOUN_KOKO	k:’ should be obligatory but new rules allow k:0 for ‘koko’
-NOUN_KOMPA	Dictionary class 10 back p~m
-NOUN_KORPI	Dictionary class 7 back p~v
-NOUN_KORTTI	Nouns with tti:te variations
-NOUN_KUITU	Dictionary class 1to
-NOUN_KUNGFU	Dictionary class 21 u back
-NOUN_KUNTA	Dictionary class 10 back t~n
-NOUN_KUOPAT	Dictionary class xxx a back p plurale tantum
-NOUN_KUOPPA	Dictionary class 10 back p~0
-NOUN_KUPPI	Dictionary class 5 back p~0
-NOUN_KUTSUNTA	Dictionary class 9 t~n
-NOUN_KUULOKKEET	Dictionary class kkkeeet plurale tantum
-NOUN_KYDÖT	Plurale tantums for tö:dö stems
-NOUN_KYKY	Dictionary class 1cyky
-NOUN_KYLKIÄINEN	Dictionary class 38 front
-NOUN_KYLÄNVANHIN	Lexicalised superlatives as nouns, front harmony
-NOUN_KYSYNTÄ	Dictionary class 9 t~n front
-NOUN_KYYNEL	Dictionary class 49 el
-NOUN_KÄKI	Dictionary class 7 front k~0
-NOUN_KÄMMEKKÄ	Dictionary class 14 front
-NOUN_KÄPY	Dictionary class 1py
-NOUN_KÄPÄLÄ	Dictionary class 11 front Some a stems with a:o variation have slightly different set of allomorphs
-NOUN_KÄRRY	Dictionary class 1y
-NOUN_KÄRSÄKÄS	Dictionary class 41 käs
-NOUN_KÄRÄJÄT	Plurale tantums for ä:0 variations
-NOUN_KÄSITE	Dictionary class 48 front te
-NOUN_KÄÄDYT	Dictionary class 1dyt plurale tantum
-NOUN_KÄÄNNIN	Dictionary class 33 frpnt nin
-NOUN_KÄÄNTÖ	Dictionary class 1ntö
-NOUN_KÖNGÄS	Dictionary class 41 gäs
-NOUN_KÖYHYYS	Dictionary class 40 front Some s final words have special lengthening inflection.
-NOUN_KÖYSI	Dictionary class 27 front
-NOUN_KÖÖ	Dictionary class 18 ö
-NOUN_LAHTI	Dictionary class 7 back t~d
-NOUN_LAIDUN	Dictionary class 33 back dun
-NOUN_LAKI	Dictionary class 5 back k~’~0
-NOUN_LANKA	Dictionary class 9 k~g
-NOUN_LAPSI	Dictionary class 27 psi
-NOUN_LASIT	Dictionary class xxx sit plurale tantum
-NOUN_LEHTI	Dictionary class 7 front t~d
-NOUN_LEIKKUU	Dictionary class 17 u Monosyllabic long vowel stems have illative suffixes of form -hVn.
-NOUN_LEIPÄ	Dictionary class 10 front p~v
-NOUN_LEPAKKO	Dictionary class 4 kko
-NOUN_LIEMI	Dictionary class 25 front The -si words that originate from old -te stems have the consonant gradation patterns left in their stems. The si is only in nominative stem and this class mainly concerns stems that are old enough to have undergone ti>si transformation.
-NOUN_LIITTOUTUNEET	Dictionary class nut plurale tantum
-NOUN_LIIVIT	Dictionary class xxx iiiit plurale tantum
-NOUN_LINTU	Dictionary class 1ntu
-NOUN_LIPEÄ	Dictionary class 15 eä
-NOUN_LIPPU	Dictionary class 1pu
-NOUN_LIUKU	Dictionary class 1ku with obligatory apostrophe k:’
-NOUN_LOKA	Dictionary class 9 k~0 with optional ’
-NOUN_LOKKI	Dictionary class 5 back k~0
-NOUN_LUHDAT	Plurale tantums for a:0 and t:d variatiosn 
-NOUN_LUKU	Dictionary class 1cuku
-NOUN_LUMME	Dictionary class 48 back me
-NOUN_LUODE	Nouns with de:tee variations back
-NOUN_LUOKKA	Dictionary class 10 back k̃~0
-NOUN_LUOLIKOT	Plurale tantums with kko:ko variations
-NOUN_LUPA	Dictionary class 10 back p~v
-NOUN_LUSIKKA	Dictionary class 14 back
-NOUN_LÄHIN	Dictionary class 35 front
-NOUN_LÄMMIN	lexicalised ADJ_LÄMMIN, that is a noun, has min:mpimä variation
-NOUN_LÄMPÖ	Dictionary class 1mpö
-NOUN_LÄNGET	Dictionary class xxx get plurale tantum
-NOUN_LÄNSI	Dictionary class 27 front t~n
-NOUN_LÄÄKE	Dictionary class 48 front ke
-NOUN_LÖPÖ	Dictionary class 1pö
-NOUN_MAA	Dictionary class 18 a
-NOUN_MAKKARA	Dictionary class 12 back
-NOUN_MAKU	Dictionary class 1ku
-NOUN_MALTAAT	Dictionary class ltaat plurale tantum
-NOUN_MANNER	Dictionary class 49 ner
-NOUN_MARKKINAT	Dictionary class xxx a front plurale tantum
-NOUN_MATEE	Nouns with long e stem and back harmony
-NOUN_MERI	Non-Dictionary class meri
-NOUN_MIELLE	Dictionary class 48 front le
-NOUN_MIES	Dictionary class 42
-NOUN_MILJÖÖ	Dictionary class 20 ö
-NOUN_MILJÖÖT	Dictionary class 20 ö plurale tantum
-NOUN_MITTA	Dictionary class 9 t~0
-NOUN_MONSIEUR	Dictionary class 22 ö
-NOUN_MULTA	Dictionary class 10 back t~l
-NOUN_MUUNNIN	Dictionary class 33 back nin
-NOUN_MYRKKY	Dictionary class 1ky
-NOUN_MÄNTY	Dictionary class 1nty
-NOUN_MÄTÄS	Dictionary class 41 täs
-NOUN_MÖMMÖ	Dictionary class 1ö
-NOUN_MÖRKÖ	Dictionary class 1rkö
-NOUN_NALLE	Dictionary class 8 back
-NOUN_NEITSYT	Dictionary class 43 front
-NOUN_NEUVOTTELUT	Dictionary class 3lut plurale tantum
-NOUN_NIHTI	Dictionary class 5 front t~d
-NOUN_NIITUT	Plurale tantums with ttu:tut stems
-NOUN_NIMETÖN	Dictionary class 34 tän
-NOUN_NISSE	Dictionary class 8 front
-NOUN_NOKI	Dictionary class 7 back k~0
-NOUN_NOUGAT	Dictionary class 22 a
-NOUN_NRO	Abbreviated noun without final full stop and no morphology. At the moment covers all nominal parts-of-speech, may be split in the future
-NOUN_NUGAA	Dictionary class 20 a
-NOUN_NUKKE	Dictionary class 8 k~0 back
-NOUN_NYLJIN	Dictionary class 33 front jin
-NOUN_NÄKY	Dictionary class 1ky
-NOUN_NÄKÖ	Dictionary class 1kö
-NOUN_NÄLKÄ	Dictionary class 10 front k~0
-NOUN_OIKEUDET	Dictionary class sdet plurale tantum
-NOUN_OLKA	Dictionary class 9 k~0 without optional ’
-NOUN_OLUT	Dictionary class 43 back
-NOUN_OMMEL	Dictionary class 49 mel
-NOUN_ONKI	Dictionary class 7 back k~g
-NOUN_ONNET	Plurale tantums with i:e variation
-NOUN_ONNI	Dictionary class 7 back
-NOUN_OOKOO	Dictionary class 18 o
-NOUN_OPINNOT	Dictionary class 1not plurale tantum
-NOUN_ORI	archaic i:ii class
-NOUN_OSATON	Dictionary class 34 ton
-NOUN_OSOITE	Nouns with te:ttee stems
-NOUN_PAIKAT	Dictionary class xxx kAt plurale tantum
+NOUN_KASTILJAT	Plurale tantums with at stem and a:o variations
+NOUN_KAUSI	Nouns with si stem and si : de variations
+NOUN_KEHVELI	Nouns with i stem and i : e variations
+NOUN_KELTIS	Nouns with tis stem and tis : ttii variations
+NOUN_KENGÄT	Plurale tantums with ngät stems and ngät : nkä  variations
+NOUN_KENKÄ	Nouns with nkä stems and nkä : ng variations
+NOUN_KENTTÄ	Nouns with ttä stems and ttä : t  variations
+NOUN_KERITSIMET	Plurale tantums with imet stem and imet : in variations
+NOUN_KERROIN	Nouns with rroin stem and rroin : rtoime variations
+NOUN_KERTA	Nouns with rta stem and rta : rro variations
+NOUN_KEVÄT	Nouns with ät stem and ät : ää variations
+NOUN_KIDE	Nouns with de stem and de : tee variations
+NOUN_KIELTO	Nouns with lto stem and lto : llo variations
+NOUN_KIERRE	Nouns with rre stem and rre : rtee variations front harmony
+NOUN_KIERRIN	Nouns with rrin stem and rrin : rtime variations front harmony
+NOUN_KIHARAT	Plurale tantums with at stem and at : 0 : o variations
+NOUN_KIHARRIN	Nouns with rrin stem and rrin :rtime variations back harmony
+NOUN_KIINNE	Nouns with nne stem and nne : ntee variations front harmony
+NOUN_KIIRU	Nouns with u stem and u : uu variations, archaic, c.f., s.v kiiruusti etc.
+NOUN_KILPI	Nouns with pi stems and pi : ve variations
+NOUN_KILPIKKÄÄT	Plurale tantums with kkäät stem and kkäät : käs variations
+NOUN_KINNAS	Nouns with nnas stem and nnas : ntaa variations.
+NOUN_KINNER	Nouns with nner stem and nner : ntere : nteree variations front harmony
+NOUN_KIRJA	Nouns with a stem and a : o variations
+NOUN_KIRVES	Nouns with es stem and es : ee ( : ekse ) variations
+NOUN_KITARA	Nouns with a stem and a : o variations
+NOUN_KIVI	Nouns with i stem and i : e variations
+NOUN_KOE	Nouns with e stem and e : kee variations back harmony
+NOUN_KOKO	Nouns with koko stem and k : ’ : 0 variations, N.B. should be obligatory k : ’ but new rules allow k:0 for ‘koko’
+NOUN_KOMPA	Nouns with mpa stem and mpa : mm variations
+NOUN_KORPI	Nouns with pi stem and pi : ve variations back harmony
+NOUN_KORTTI	Nouns with tti stem and tti : te variations
+NOUN_KUITU	Nouns with tu stem and tu : du variations
+NOUN_KUNGFU	Loan word nouns with u stem 
+NOUN_KUNTA	Nouns with nta stem and nta : nna variations
+NOUN_KUOPAT	Plurale tantums with pat stem and pat : ppa variations
+NOUN_KUOPPA	Nouns with ppa stem and ppa : pa variations
+NOUN_KUPPI	Nouns with ppi stem and ppi : pe variations
+NOUN_KUTSUNTA	Nouns with nta stem and nta : nna variations
+NOUN_KUULOKKEET	Plurale tantums with kkeet stems and kkeet : kee variations
+NOUN_KYDÖT	Plurale tantums with döt stems and döt : tö variations
+NOUN_KYKY	Nouns with yky stems and yky : yvy variations
+NOUN_KYLKIÄINEN	Nouns with nen stem and nen : se variations front harmony
+NOUN_KYLÄNVANHIN	Nouns with in stem and in : imma variations, mainly lexicalised superlatives as nouns, front harmony
+NOUN_KYSYNTÄ	Nouns with ntä stem and ntä : nnä variations
+NOUN_KYYNEL	Nouns with el stem and el : ele : elee variations front harmony
+NOUN_KÄKI	Nouns with ki stem and ki : e variation front harmony
+NOUN_KÄMMEKKÄ	Nouns with kkä stem and kkä : kö variation
+NOUN_KÄPY	Nouns with py stem and py : vy variatons
+NOUN_KÄPÄLÄ	Nouns with ä stem and ä : ö : 0 variations
+NOUN_KÄRRY	Nouns with y stem no variations
+NOUN_KÄRSÄKÄS	Nouns with käs stem and käs : kkää variations
+NOUN_KÄRÄJÄT	Plurale tantums with ät stems and ät : 0 variations
+NOUN_KÄSITE	Nouns with te stem and te : ttee variations
+NOUN_KÄÄDYT	Plurale tantums with dyt stem and dyt : ty variatons
+NOUN_KÄÄNNIN	Nouns with nnin stems and nnin : ntime variations, front harmony
+NOUN_KÄÄNTÖ	Nouns with ntö stem and ntö : nnö variations
+NOUN_KÖNGÄS	Nouns with ngäs stem and ngäs : nkää variations
+NOUN_KÖYHYYS	Nouns with s stem and s : de 
+NOUN_KÖYSI	Nouns with si stem and si : de variations
+NOUN_KÖÖ	Nouns with öö stem and öö : ö variations
+NOUN_LAHTI	Nouns with ti stem and ti : de variations
+NOUN_LAIDUN	Nouns with dun stem and dun : tume variations
+NOUN_LAKI	Nouns with ki stem and ki : i variations
+NOUN_LANKA	Nouns with nka stem and nka : ngo variations
+NOUN_LAPSI	Nouns with psi stem and psi : s variations
+NOUN_LASIT	Plurale tantums with sit stem and sit : se variations
+NOUN_LEHTI	Nouns with ti stem and ti : de variations
+NOUN_LEIKKUU	Nouns with uu stem and uu : u variations
+NOUN_LEIPÄ	Nouns with pä stem and pä : v variations
+NOUN_LEPAKKO	Nouns with kko stems and kko : ko variations
+NOUN_LIEMI	Nouns with mi stems and mi : n variations, front harmony
+NOUN_LIITTOUTUNEET	Plurale tantums with neet stem and neet : nut variations
+NOUN_LIIVIT	Plurale tantums with it stem and it : e varaitions
+NOUN_LINTU	Nouns with ntu stems and ntu : nnu variations
+NOUN_LIPEÄ	Nouns with eä stems and eä : e variations
+NOUN_LIPPU	Nouns with ppu stems and ppu : pu variations
+NOUN_LIUKU	Nouns with uku stems and and uku : u’u variations
+NOUN_LOKA	Nouns with ka stems and ka : 0 variations
+NOUN_LOKKI	Nouns with kki stems and kki : ke variations
+NOUN_LUHDAT	Plurale tantums with dat stems and dat:t variatiosn 
+NOUN_LUKU	Nouns with uku stems and uku : uvu variations
+NOUN_LUMME	Nouns with mme stems and mme : mpee variations
+NOUN_LUODE	Nouns with de stems and de : tee variations back harmonu
+NOUN_LUOKKA	Nouns with kka stems and kka : k varaitions
+NOUN_LUOLIKOT	Plurale tantums with kko stems and kko : ko variations
+NOUN_LUPA	Nouns with pa stems and pa : v variations
+NOUN_LUSIKKA	Nouns with kka stems and kka : ko variations
+NOUN_LÄHIN	Nouns with in stem and in : immä variations, mostly lexicalised superlatives and compounds thereof
+NOUN_LÄMMIN	Nouns with mmin stem and mmin : mpimä variations, ostly lexicalised superlatives and compounsds thereof
+NOUN_LÄMPÖ	Nouns with mpö stems and mpö : mmö variations 
+NOUN_LÄNGET	Nouns with nget stems and nget : nki variations front harmony
+NOUN_LÄNSI	Nouns with nsi stems and nsi : nne variations front harmony
+NOUN_LÄÄKE	Nouns with ke stem and ke : kkee variations front harmony
+NOUN_LÖPÖ	Nouns with pö stems and pö : vö variations
+NOUN_MAA	Nouns with aa stems and aa : a variations
+NOUN_MAKKARA	Nouns with a stems and a : o  variations
+NOUN_MAKU	Nouns with ku stems and ku : u variations 
+NOUN_MALTAAT	Plurale tantums with ltaat stems and ltaat : llas variations
+NOUN_MANNER	Nouns with nner stems and nner : ntere : nteree variations
+NOUN_MARKKINAT	Plurale tantums with at stems and at : o variations
+NOUN_MATEE	Nouns with long ee stem and back harmony
+NOUN_MERI	Nouns with meri stems and i : e variations and tä partitive
+NOUN_MIELLE	Nouns with lle stems  and lle : ltee variations front harmony
+NOUN_MIES	Nouns with s stem and s : he variations
+NOUN_MILJÖÖ	Nouns with öö stems and öö : ö variations
+NOUN_MILJÖÖT	Plurale tantums with ööt stems and ööt : ö variations
+NOUN_MITTA	Nouns with tta stems and tta : to variations
+NOUN_MONSIEUR	Nouns with consonant stem and ’ inflection, front harmony
+NOUN_MULTA	Nouns with lta stem and lta : lla variation
+NOUN_MUUNNIN	Nouns with nnin stem and nnin : ntime variations, back harmony
+NOUN_MYRKKY	Nouns with kky stems and kky : ky variations
+NOUN_MÄNTY	Nouns with nty stems and nty : nny variations
+NOUN_MÄTÄS	Nouns with täs stems and täs : ttää variations
+NOUN_MÖMMÖ	Nouns with ö stem and no variations
+NOUN_MÖRKÖ	Nouns with kö stem and kö : ö variations
+NOUN_NALLE	Nouns with e stem and no variations, back harmony
+NOUN_NEITSYT	Nouns with yt stem and yt : ye variations
+NOUN_NEUVOTTELUT	Plurale tantums with ut stem and ut : u variations
+NOUN_NIHTI	Nouns with ti stem and ti : de variations
+NOUN_NIITUT	Plurale tantums with tut stem and ttut : tu variations
+NOUN_NIMETÖN	Nouns with tön stem and tön : ttömä variations
+NOUN_NISSE	Nouns with e stem and no variations front harmony
+NOUN_NOKI	Nouns with ki stem and ki : e variations back harmony
+NOUN_NOUGAT	Nouns with consonant stem and ’ inflection back harmony
+NOUN_NRO	Abbreviated nouns without final full stop and no inflection. At the moment covers all nominal parts-of-speech, may be split in the future
+NOUN_NUGAA	Nouns with aa stems and aa : a variations
+NOUN_NUKKE	Nouns with kke stems and kke : ke variations
+NOUN_NYLJIN	Nouns with jin stem and jin : kime variations front harmony
+NOUN_NÄKY	Nouns with ky stem and ky : y variations
+NOUN_NÄKÖ	Nouns with kö stem and kö : ö variations
+NOUN_NÄLKÄ	Nouns with kä stem and kä : ä variations
+NOUN_OIKEUDET	Plurale tantums with det stem and det : s variations
+NOUN_OLKA	Nouns with ka stem and ka : a variations
+NOUN_OLUT	Nouns with t stem and t : e variations
+NOUN_OMMEL	Nouns with mmel stem and mmel : mpele : mpelee variations
+NOUN_ONKI	Nouns with nki stem and nki : nge variations back harmony
+NOUN_ONNET	Plurale tantums with et stem et : i variation
+NOUN_ONNI	Nouns with i stem and i : e variations
+NOUN_OOKOO	Nouns with oo stem and oo : o variations
+NOUN_OPINNOT	Plurale tantums with nnot stem and nnot : nto variations
+NOUN_ORI	Nouns with i stem and i : ii variation, archaic, back harmony
+NOUN_OSATON	Nouns with ton stem and ton : ttoma variations
+NOUN_OSOITE	Nouns with te stem and te : ttee variations back harmony
+NOUN_PAIKAT	Plurale tantums with kat stem and kat : kko variations
 NOUN_PANKIT	Plurale tantums with kk:k and i:e variations
-NOUN_PARFAIT	Dictionary class 22 e
-NOUN_PATA	Dictionary class 9 t~d
-NOUN_PATEE	Dictionary class 20 e
-NOUN_PATSAS	Dictionary class 41 as
-NOUN_PEIPOT	Plurale tantums with o-stems and pp:p gradation
-NOUN_PELKO	k:0 without optional ’
-NOUN_PELTI	Dictionary class 5 front t~l
-NOUN_PENGER	Dictionary class 49 ger
-NOUN_PERKEET	Dictionary class jeat plurale tantum
-NOUN_PIDOT	Dictionary class 1ot plurale tantum
-NOUN_PIENNAR	Dictionary class 49 nar
-NOUN_PIHDIT	Dictionary class xxx dit front plurale tantum
-NOUN_PII	Dictionary class 18 i
-NOUN_PIIROA	dictionary class 15 oa, lexicalised ADJ_AINOA nouns
-NOUN_PINSETIT	Plurale tantums with i:e stems and tt:t gradations
-NOUN_PIPPALOT	Dictionary class 3iot plurale tantum
-NOUN_PISTE	Dictionary class 48 Front
-NOUN_POHATTA	Dictionary class 14 back t0
-NOUN_POHJE	Dictionary class 48 back je
-NOUN_POIKA	Non-dictionary class poika
-NOUN_POIUT	exceptional stuff
-NOUN_POJAT	Dictionary class pojat plurale tantum
-NOUN_POLITIIKKA	Dictionary class 9 k~0
-NOUN_POLJIN	Dictionary class 33 back jin
-NOUN_PONSI	Dictionary class 27 back t~n
-NOUN_PORRAS	Dictionary class 41 ras The word mies has special s:h variation pattern.
-NOUN_PORTAAT	Dictionary class rtaat plurale tantum
-NOUN_PROBLEEMA	Dictionary class 11 back
-NOUN_PROTOLYYSI	Dictionary class 5 both
-NOUN_PROTOLYYTTI	Dictionary class 5 both front and back harmony allowed
-NOUN_PUHELIN	Dictionary class 33 back
-NOUN_PUIN	Dictionary class 33 back k~in
-NOUN_PUKIMET	Dictionary class 31 puin plurale tantum
-NOUN_PUNK	New loan words ending in consonant may be inflected as i stem words Dictionary class 5 back no i
-NOUN_PUU	Dictionary class 18 u
-NOUN_PUUT	Dictionary class xx puu t plurale tantum
-NOUN_PYRAMIDI	i:e with front and back harmony acceptable
-NOUN_PYTTY	Dictionary class 1ty
-NOUN_PYY	Dictionary class 18 y
-NOUN_PYYHE	Dictionary class 48 front 0k
-NOUN_PYYHIN	Dictionary class 33 front k~in
-NOUN_PYYT	Dictionary class 18 y plurale tantum
-NOUN_PÄÄ	Dictionary class 18 ä
-NOUN_PÖKSYT	Dictionary class 1y plurale tantum
-NOUN_PÖLLÖT	Plurale tantums with ö-stems
-NOUN_PÖNTTÖ	Dictionary class 1tö
-NOUN_PÖYTÄ	Dictionary class 10 front t~d
-NOUN_RAAVIN	Dictionary class 33 front p~vin
-NOUN_RAGUU	Dictionary class 20 u
-NOUN_RAKENNE	Dictionary class 48 back ne
-NOUN_RAMPA	Dictionary class 9 p~m
-NOUN_RANGAT	Plurale tantums with nka:nga stems
-NOUN_RAPPUSET	Dictionary class 38 nen plurale tantum
-NOUN_RAPUT	Dictionary class 1put plurale tantum
-NOUN_RATAS	Dictionary class 41 tas
-NOUN_RATTAAT	Dictionary class taat plurale tantum
-NOUN_RAUDAT	Dictionary class xxx dat plurale tantum
-NOUN_RAUNIOT	Dictionary class 2iot plurale tantum
-NOUN_RAVET	Dictionary class 8 plurale tantum
-NOUN_RAVUT	Dictionary class 1vut plurale tantum
-NOUN_REGGAE	class 21 with
-NOUN_REIKÄ	Dictionary class 10 back k~’~0
-NOUN_RENKAAT	Dictionary class gaat plurale tantum
-NOUN_RIMPI	Dictionary class 7 front p~m
-NOUN_RIPE	Dictionary class 48 front pe
-NOUN_RIPSET	Dictionary class xxx ripset plurale tantum
-NOUN_RIUTAT	Plurale tantums with a:o stems and tt:t gradation
-NOUN_ROHTIMET	Dictionary class 33 fron din plurale tantum
-NOUN_ROSÉ	Dictionary class 21 e back
-NOUN_ROTAT	Dictionary class 9 t~0 plurale tantum
-NOUN_ROTTA	Dictionary class 10 back t~0
-NOUN_RUIPELO	Dictionary class 2o
-NOUN_RUIS	Dictionary class 41 is
-NOUN_RUMPU	Dictionary class 1mpu
-NOUN_RUNKO	Dictionary class 1nko
-NOUN_RUOKA	Like NOUN_LOKA but allows exceptional common spelling ruo’an ~ ruoan ̃~ ruuan
-NOUN_RUOKO	Between three vowels where k is surrounded by same vowels the k becomes obligatorily ’. When the vowels are different, it becomes optionally ’ (as in N_TEKO), and after consonant other than s it is k ~ 0 (as in N_UKKO). Dictionary class 1ko
-NOUN_RUUHI	Dictionary class 24 back
-NOUN_RUUMIS	Dictionary class 41 is
-NOUN_RUUVI	Dictionary class 5 back
-NOUN_RYNNÄS	Dictionary class 41 näs
-NOUN_RYNTTYYT	Dictionary class ntyyt plurale tantum
-NOUN_RYNTÄÄT	Dictionary class ntääaat plurale tantum
-NOUN_RYPÄS	Dictionary class 41 päs
-NOUN_RYYPPY	Dictionary class 1py
-NOUN_RÄJÄYTYS	Dictionary class 39 front Some of the s final stems have additional s:t:d variation in singular stems. Most notably, the UUs derivations are in this class.
-NOUN_RÄMEET	Plurale tantums with e:ee stems, front harmony
-NOUN_RÄMIÄT	Plurale tantums with iä-stem
-NOUN_SAAPAS	Dictionary class 41 pas
-NOUN_SAKSET	Dictionary class xxx sakset plurale tantum
-NOUN_SALPA	Dictionary class 9 p~v
-NOUN_SAMPI	Dictionary class 7 back p~m
-NOUN_SAMPO	Dictionary class 1mpo
-NOUN_SANKARI	like NOUN_HIIRI with optional extra consonant stems (sankar-)
-NOUN_SEIKKAILU	Dictionary class 2u
-NOUN_SEIVÄS	Dictionary class 41 väs
-NOUN_SEPPÄ	Dictionary class 10 front p~0
-NOUN_SERKUKSET	Dictionary class kset plurale tantum
-NOUN_SHOW	Dictionary class 22 u
-NOUN_SIEMEN	Dictionary class 32 front
-NOUN_SIIRTO	Dictionary class 1rto
-NOUN_SIIVILÄ	Dictionary class 12++ front
-NOUN_SILAKAT	Dictionary class 14 kat plurale tantum
-NOUN_SISÄLTÖ	Dictionary class 1ltö
-NOUN_SIVELLIN	Dictionary class 33 frontlin
-NOUN_SIVISTYNYT	Dictionary class 47 front
-NOUN_SKEITTI	Dictionary class 5 front t~0
-NOUN_SOINTI	Dictionary class 5 back t~n
-NOUN_SOKEA	The a-final words ending in long vowels with syllable boundary have a:0 variation and more allomorphs for plyral genitive or illative. Dictionary class 15 ea
-NOUN_SOTA	Dictionary class 10 back t~d
-NOUN_STADION	Dictionary class 6 back no i
-NOUN_SUHTEET	Dictionary class taad plurale tantum
-NOUN_SUKAT	Dictionary class xxx a front k0 plurale tantum
-NOUN_SULKA	Dictionary class 9 k~0 without optional ’
-NOUN_SUODATIN	Dictionary class 33 back tin
-NOUN_SUOMALAINEN	Dictionary class 38 back for the nationality ADJ/NOUN dual case
-NOUN_SYDÄN	Like NOUN_ELIN, allows common non-standards of type: sydämmen, sytämen
-NOUN_SYLI	Nouns with i:e stem and extra consonant stem stufff
-NOUN_SYLTÄ	Dictionary class 10 front t~l
-NOUN_SYNNYTTIMET	Dictionary class 31 tin front plurale tantum
-NOUN_SYÖMINGIT	Dictionary class xxx git fornt plurale tantum
-NOUN_SÄEN	Dictionary class 49 en
-NOUN_SÄNKY	Dictionary class 1nky
-NOUN_SÄRKÄT	Plurale tantums with ä:0 and kk:k gradation
-NOUN_SÄRVIN	Dictionary class 33 front vin
-NOUN_SÄÄDIN	Dictionary class 33 fron din
-NOUN_SÄÄNNÖT	Dictionary class 1nöt plurale tantum
+NOUN_PARFAIT	Nouns with consonant stem and ’ inflections, back harmony
+NOUN_PATA	Nouns with ta stem, and ta : do variations
+NOUN_PATEE	Nouns with ee stem and ee : e variations
+NOUN_PATSAS	Nouns with as stem and as : aa variations
+NOUN_PEIPOT	Plurale tantums with ot stems and pot : ppo variations
+NOUN_PELKO	Nouns with ko stem and ko : o variations
+NOUN_PELTI	Nouns with lti stem and lti : lle vaariations front harmony
+NOUN_PENGER	Nouns with nger stem and nger : nkere : nkeree variations
+NOUN_PERKEET	Plurale tantums with keet stem and keet : je variations
+NOUN_PIDOT	Plurale tantums with dot stem and dot : to variations
+NOUN_PIENNAR	Nouns with nnar stem and nnar : ntare : ntaree variations
+NOUN_PIHDIT	Plurale tantums with dit stems and dit : te variations front harmony
+NOUN_PII	Nouns with ii stem and ii : i variations?
+NOUN_PIIROA	Nouns with oa stem and oa : o variations
+NOUN_PINSETIT	Plurale tantums with tit stem and tit:te variations
+NOUN_PIPPALOT	Plurale tantums with ot stem and ot : o variations
+NOUN_PISTE	Nouns with e stem and e : ee variations front harmony
+NOUN_POHATTA	Nouns with tta stem and tta : to variations
+NOUN_POHJE	Nouns with je stem and je : kee variations
+NOUN_POIKA	Nouns with ika stem and ika : j variations
+NOUN_POIUT	Nouns with poiut stem and 
+NOUN_POJAT	Plurale tantums with jat stem and jat : ika variations
+NOUN_POLITIIKKA	Nouns with kka stem and kka : ko variations
+NOUN_POLJIN	Nouns with jin stem and jin : kime variations back variations
+NOUN_PONSI	Nouns with nsi stem and nsi : nne variations back harmony
+NOUN_PORRAS	Nouns with rras stem and rras : rtaa variations
+NOUN_PORTAAT	Plurale tantums with rtaat stem and rtaat : ras variations
+NOUN_PROBLEEMA	Nouns with a stem and a : 0 variations
+NOUN_PROTOLYYSI	Nouns with i stem and i : e variations both harmonies
+NOUN_PROTOLYYTTI	Nouns with tti stem and tti : te variations both front and back harmony allowed
+NOUN_PUHELIN	Nouns with n stem and n : me variations back harmony
+NOUN_PUIN	Nouns with in stem and in : kime variations
+NOUN_PUKIMET	Plurale tantums with kimet stem and  kimet : in variations
+NOUN_PUNK	Nouns with consonnat stems and x : xe variations, mainly new loan words, back harmony
+NOUN_PUU	Nouns with uu stem and uu : u variations
+NOUN_PUUT	Plurale tantums with uut stem and uut : u variations
+NOUN_PYRAMIDI	Nouns with i stem and i : e variations both harmonies
+NOUN_PYTTY	Nouns with ty stem and tty : ty variations
+NOUN_PYY	Nouns with yy stem and yy : y variations
+NOUN_PYYHE	Nouns with e stem and e : kee variations, front harmony
+NOUN_PYYHIN	Nouns with in stem and in : kime variations, front harmonu
+NOUN_PYYT	Plurale tantums with yyt stem and yyt : y variiations
+NOUN_PÄÄ	Nousn with ää stem and ää : ä variations
+NOUN_PÖKSYT	Plurale tantums with yt stems with no variations
+NOUN_PÖLLÖT	Plurale tantums with öt stems and no variatins 
+NOUN_PÖNTTÖ	Nouns with ttö stem and ttö : tö variations
+NOUN_PÖYTÄ	Nouns with tä stem and tä : t variations
+NOUN_RAAVIN	Nouns with vin stem and vin : pime variations
+NOUN_RAGUU	Nouns with uu stem and uu : u variations
+NOUN_RAKENNE	Nouns with nne stem nne : ntee variations back harmony
+NOUN_RAMPA	Nouns with mpa stem mpa : mma variations
+NOUN_RANGAT	Plurale tantums with ngat stems and ngat : nka variations
+NOUN_RAPPUSET	Plurale tantums with set stem and set : nen variations back harmony
+NOUN_RAPUT	Plurale tantums with put stem and put : ppu variations
+NOUN_RATAS	Nouns with tas stem and tas : ttaa variations
+NOUN_RATTAAT	Plurale tantums with ttaat stem and ttaat : tas variations
+NOUN_RAUDAT	Plurale tantums with dat stem and dat : ta variations
+NOUN_RAUNIOT	Plurale tantums with ot stem and no varioatns
+NOUN_RAVET	Plurale tantums with et stems and no variaitons back harmony
+NOUN_RAVUT	PLurale tantums with vut stems and vut : pu variations
+NOUN_REGGAE	Nouns with ae stems
+NOUN_REIKÄ	Nouns with kä stem and kä : 0 : ’ variations
+NOUN_RENKAAT	Plurale tantums with nkaat stems and nkaat: ngas variations
+NOUN_RIMPI	Nouns with mpi stems and mpi : mm variations
+NOUN_RIPE	Nouns with pe stem and pe : ppee variations
+NOUN_RIPSET	Plurale tantums with et stem and et : i variations
+NOUN_RIUTAT	Plurale tantums with tat stems and tat : tto variations
+NOUN_ROHTIMET	Plurale tantums with timet stems and timet : din variations
+NOUN_ROSÉ	Nouns with é stems no variations
+NOUN_ROTAT	Plurale tantums with tat stem and tat : tt variations
+NOUN_ROTTA	Nouns with tta stem and tta : t variations
+NOUN_RUIPELO	Nouns with o stem and no variations
+NOUN_RUIS	Nouns with is stem and is : kii variations back harmony
+NOUN_RUMPU	Nouns with mpu stem and mpu : mmu variatons
+NOUN_RUNKO	Nouns with nko stem and nko : ngo variatins
+NOUN_RUOKA	Nouns with uoka stem and uoka : uo’a : uoa : uu variations
+NOUN_RUOKO	Nouns with uoko stem and uoko : uo’o variations
+NOUN_RUUHI	Nouns with i stem and i : e variations back harmony
+NOUN_RUUMIS	Nouns with is stem and is : ii variations back harmony
+NOUN_RUUVI	Nouns with i stem and i : e variations back harmony
+NOUN_RYNNÄS	Nouns with nnäs stem and nnäs : ntää variations
+NOUN_RYNTTYYT	Plurale tantums with ttyyt stem and ttyyt : tys variations
+NOUN_RYNTÄÄT	Plurale tantums with ntäät stem and ntäät : nnäs variatinos
+NOUN_RYPÄS	Nouns with päs stem and päs : ppää variations
+NOUN_RYYPPY	Nouns with ppy stem and ppy : py variations
+NOUN_RÄJÄYTYS	Nouns with s stem and s : kse variation front harmony
+NOUN_RÄMEET	Plurale tantums with eet stem and e : ee variations, front harmony
+NOUN_RÄMIÄT	Plurale tantums with iät stem and iät : iä variaitons
+NOUN_SAAPAS	Nouns with pas stem and pas : ppaa variations
+NOUN_SAKSET	Nouns with et stem and et : i variations
+NOUN_SALPA	Nouns with pa stem and pa : va variations
+NOUN_SAMPI	Nouns with mpi stem and mpi : mme variations back harmony
+NOUN_SAMPO	Nouns with mpo stem and mpo : mmo variations
+NOUN_SANKARI	Nouns with i stem and i : e variations and consonant stem ta partitive
+NOUN_SEIKKAILU	Nouns with u stem no variations
+NOUN_SEIVÄS	Nouns with väs stems and väs : pää variations
+NOUN_SEPPÄ	Nouns with ppä stems and ppä : p variations
+NOUN_SERKUKSET	Plurale tantums with kset stem and kset : s variations
+NOUN_SHOW	Nouns with consonant stem and ’ inflections
+NOUN_SIEMEN	Nouns with consonant stem and x : xe variations front harmony
+NOUN_SIIRTO	Nouns with rto stem and rto : rro variatnons
+NOUN_SIIVILÄ	Nouns with ä stem and ä : ö variations
+NOUN_SILAKAT	Plurale tantums with kat stem and kat : kko variations
+NOUN_SISÄLTÖ	Nouns with ltö stem and ltö : llö variations
+NOUN_SIVELLIN	Nouns with llin stem and llin : ltime variations front harmony
+NOUN_SIVISTYNYT	Nouns with yt stem and yt : ee variations, mostly participles
+NOUN_SKEITTI	Nouns with tti stem and tti : te variations, front harmony
+NOUN_SOINTI	Nouns with nti stem and nti : nne variations
+NOUN_SOKEA	Nouns with ea stem and ea : e variations, mostly adjectives compounded or lexicalised 
+NOUN_SOTA	Nouns with ta stem and ta : d variations
+NOUN_STADION	Nouns with consnonant stem and X : xe variations back harmony
+NOUN_SUHTEET	Plurale tantums with teet stem and teet :de variations back harmony
+NOUN_SUKAT	Plurale tantums with kat stem and kat : kk variatons
+NOUN_SULKA	Nouns with ka stem and ka : 0 variations
+NOUN_SUODATIN	Nouns with tin stem and tin : ttime variations back harmony
+NOUN_SUOMALAINEN	Nouns / adjectives with nen stem and nen : se variation
+NOUN_SYDÄN	Nouns eith dän stem and n : me variations and dän : dämme : täme 
+NOUN_SYLI	Nouns with i stem and i : e variations and extra consonant stem stufff
+NOUN_SYLTÄ	Nouns with ltä stem and ltä : llä variations
+NOUN_SYNNYTTIMET	Plurale tantums with timet stem and timet : tin variations front harmony
+NOUN_SYÖMINGIT	Plurale tantums with ngit stem and ngit : nki variations
+NOUN_SÄEN	Nouns with en stem and en : kene variations
+NOUN_SÄNKY	Nouns with nky stem and nky : ngy variations
+NOUN_SÄRKÄT	Plurale tantums with ät stem and kät:kk variations
+NOUN_SÄRVIN	Nouns with vin stem and vin : pime variations front harmony
+NOUN_SÄÄDIN	Nouns with din stem and din : time variations and front harmony
+NOUN_SÄÄNNÖT	Plurale tantums with nnöt stem and nnöt : ntö variations
 NOUN_SÄÄRET	Plurale tantums with i:e variation
-NOUN_TAIMI	Dictionary class 25 back
-NOUN_TAIVAL	Dictionary class 49 val
-NOUN_TALKOOT	Dictionary class xxx kooot plurale tantum
-NOUN_TALO	The most basic noun stem does not have any stem internal variation and uses few commonest allomorphs. The words in this class are either bisyllabic or have one of common derivational suffixes: sto, .... The nouns in this class end in o, u, y or ö, which determines their illative suffix and therefore exact classification:
-NOUN_TANHUA	Nouns with a:o:0 variations
-NOUN_TARPEET	Dictionary class veat plurale tantum
-NOUN_TARVE	Dictionary class 48 back ve
-NOUN_TAUDIT	Dictionary class xxx dit plurale tantum
-NOUN_TAUTI	Dictionary class 5 back t~d
-NOUN_TAVAT	Dictionary class xxx vat plurale tantum
-NOUN_TEE	Dictionary class 18 e
-NOUN_TEHDAS	Dictionary class 41 das
-NOUN_TEKO	Between two vowels, the weak grade of k is optionally an apostrophe instead. For k that is not optionally ’, for example when it is after a consonant other than s, the variation is k ~ 0 instead (e.g. N_UKKO). Dictionary class 1ko
-NOUN_TIE	Dictionary class 19 ie
-NOUN_TIENOO	Dictionary class 17 o
-NOUN_TIET	Dictionary class 15 tiet plurale tantum
-NOUN_TIETEET	Dictionary class xxx teet plurale tantum
-NOUN_TIKKAAT	Dictionary class kaat plurale tantum
-NOUN_TIKKU	Dictionary class 1ku
-NOUN_TIPPA	Dictionary class 9 p~0
-NOUN_TOIMET	Dictionary class 25 t plurale tantum
-NOUN_TOKEE	Dictionary class 20 e
-NOUN_TONGIT	Dictionary class xxx git plurale tantum
-NOUN_TORTTU	Dictionary class 1tu
-NOUN_TRIKOO	Dictionary class 20 o
-NOUN_TUHKA	Dictionary class 9 k~0 without optional k not gradating
-NOUN_TULI	Dictionary class 23
-NOUN_TUNNIT	Dictionary class 7 back t~n plurale tantum
-NOUN_TUNTO	Dictionary class 1nto
-NOUN_TUOMIO	The words with stem vowel o, u, y, ö preceded by vowels still have no more stem variation than other cases, but give yet another pattern of allomorphs for plural partitives and genitives Dictionary class 3o There's plenty of imaginable non-standard allomorph forms after long vowels
-NOUN_TYPPI	Dictionary class 7 front p~0
-NOUN_TYTÄR	Dictionary class 32 tär
-NOUN_TYTÖT	Dictionary class 1töt plurale tantum
-NOUN_TYYLI	Dictionary class 5 front
-NOUN_TYYPPI	Dictionary class 5 front p~0
-NOUN_TYÖ	Dictionary class 19 yö
-NOUN_TYÖT	Dictionary class xxx työt plurale tantum
-NOUN_TÖRPPÖ	Dictionary class 1pö
-NOUN_UDAR	Dictionary class 49 dar
-NOUN_UKKO	Dictionary class 1ko
-NOUN_UKSI	Dictionary class 27 ksi
-NOUN_ULAPPA	Dictionary class 14 back p̃0
-NOUN_UROS	Non-Dictionary class uros
-NOUN_VAADIN	Dictionary class 33 back din
-NOUN_VAAKA	Dictionary class 9 k~’ with obligatory ’
-NOUN_VAATTEET	Dictionary class teeeeet plurale tantum
-NOUN_VAINAA	Dictionary class 17 a
-NOUN_VAKUUTUS	Dictionary class 39 back
-NOUN_VALJAAT	Dictionary class jaat plurale tantum
-NOUN_VALLAT	Dictionary class xxx lat plurale tantum
-NOUN_VALTA	Dictionary class 9 t~l
-NOUN_VANHEMMAT	Dictionary class xxx matt plurale tantum
-NOUN_VANHEMPI	Dictionary class 16
-NOUN_VANKI	Dictionary class 5 back k~g
-NOUN_VANTTUUT	Dictionary class ntyyaat plurale tantum
-NOUN_VANTUS	Dictionary class 41 tus
-NOUN_VARAS	Dictionary class 41 as
-NOUN_VARAT	Dictionary class xxx rrt plurale tantum
-NOUN_VARSI	Dictionary class 27 back t~r
-NOUN_VARVAS	Dictionary class 41 vas
-NOUN_VASEN	Dictionary class 35
-NOUN_VEHKEILY	Dictionary class 2y
-NOUN_VEITSI	Dictionary class 27 tsi front The -ksi stem in haaksi includes k:h variation.
-NOUN_VELI	Non-dictionary class veli
-NOUN_VEMMEL	Dictionary class 49 mel
-NOUN_VERI	Non-Dictionary class veri
-NOUN_VETIMET	Dictionary class 33 fron din plurale tantum
-NOUN_VETO	Dictionary class 1to
-NOUN_VETY	Dictionary class 1ty
-NOUN_VIENTI	Dictionary class 5 front t~n
-NOUN_VIHKIÄISET	Dictionary class 38 nen fornt plurale tantum
-NOUN_VIHKO	k:0 with optional k not gradating
-NOUN_VIIVE	Dictionary class 48 front ve
-NOUN_VIKA	Dictionary class 9 k~’~0
-NOUN_VINKU	Dictionary class 1nku
-NOUN_VIRRET	Dictionary class 27 front t~r plurale tantum
-NOUN_VIRSI	Dictionary class 27 front t~r
-NOUN_VOIMA	Dictionary class 11 back
-NOUN_VUO	Dictionary class 19 uo
-NOUN_VUODET	Dictionary class 27 det plurale tantum
-NOUN_VUOLLE	Dictionary class 48 back le
-NOUN_VUOSITUHAT	Non-dictionary class for numeral compounds ending 1000
-NOUN_YHTIÖT	Plurale tantum with iö-stem
-NOUN_YKSIKKÖ	Dictionary class 4 kkö
+NOUN_TAIMI	Nouns with mi stem and mi : n variations back harmony
+NOUN_TAIVAL	Nouns with val stem and val : pale : palee variations
+NOUN_TALKOOT	Plurale tantums with oot stem and oot : o variations
+NOUN_TALO	Nouns with o stems and no variations
+NOUN_TANHUA	Nouns with a stems and a : o : 0 variations
+NOUN_TARPEET	Plurale tantums with peet stem and peet : ve variations and back harmony
+NOUN_TARVE	Nouns with ve stems and ve : pe variations back harmony
+NOUN_TAUDIT	Plurale tantums with dit stem and dit : ti variations back harmony
+NOUN_TAUTI	Nouns with ti stem and ti : de variations back harmony
+NOUN_TAVAT	plurale tantums with vat stem and vat : pa variations
+NOUN_TEE	Nouns with ee stem and ee : e variations
+NOUN_TEHDAS	Nouns with das stem and das : taa variations
+NOUN_TEKO	Nouns with ko stem and ko : o : ’o variations
+NOUN_TIE	Nouns with ie stem and ie : e variation
+NOUN_TIENOO	Nouns with oo stem and oo : o variations
+NOUN_TIET	Plurale tantums with iet stem and iet : ie : e variations
+NOUN_TIETEET	Plurale tantums with teet stem and teet : de variations
+NOUN_TIKKAAT	Plurale tantums with kaat steem and kaat : kas variations
+NOUN_TIKKU	Nouns with ku stem and kku : ku variations
+NOUN_TIPPA	Nouns with pa stem and ppa : po variations
+NOUN_TOIMET	Plurale tantums with met stem and met : mi variations
+NOUN_TOKEE	Nouns with ee stem and ee : e variations
+NOUN_TONGIT	Nouns with ngit stem and ngit : nki variations
+NOUN_TORTTU	Nouns with ttu stem and ttu : tu variations
+NOUN_TRIKOO	Nouns with oo stem and oo : o variations
+NOUN_TUHKA	Nouns with hka stem and hka : h ~ hk variations
+NOUN_TULI	Nouns with i stem and i : e variations back harmony
+NOUN_TUNNIT	Nouns with nnit stem and nnit : nti variations baack harmony
+NOUN_TUNTO	Nouns with nto stem and nto : nnot variations 
+NOUN_TUOMIO	Nouns with o stem no variations
+NOUN_TYPPI	Nouns with ppi stem and ppi : pe variations
+NOUN_TYTÄR	Nouns with tär stem and tär : ttäre variations
+NOUN_TYTÖT	Plurale tantums with töt stems and töt : ttö variations
+NOUN_TYYLI	Nouns with i stems and i : e variations front harmony
+NOUN_TYYPPI	Nouns with ppi stem and ppi : pe variations front harmony
+NOUN_TYÖ	Nouns with yö stem and yö : ö variatons
+NOUN_TYÖT	Plurale tantums with yöt stem and yöt : yö : ö variations
+NOUN_TÖRPPÖ	Nouns with ppö stem and ppö : pö variations
+NOUN_UDAR	Nouns with dar stem and dar : taree variations
+NOUN_UKKO	Nouns with kko stem and kko : ko variations
+NOUN_UKSI	Nouns with ksi stem and ksi : s variations
+NOUN_ULAPPA	Nouns with ppa stem and ppa : po variations
+NOUN_UROS	Nouns with s stem and s : kse ~ o variations
+NOUN_VAADIN	Nouns with din stem and din : time variations
+NOUN_VAAKA	Nouns with aka stem and aka : a’ variations
+NOUN_VAATTEET	Plurale tantums with teet stem and tteet: te variations
+NOUN_VAINAA	Nouns with aa stem and aa : a variations
+NOUN_VAKUUTUS	Nouns with s stem and s : ks variations back harmony
+NOUN_VALJAAT	Plurale tantums with aat stem and aat : as variation
+NOUN_VALLAT	Plurale tantums with llat stem and llat : lta variations
+NOUN_VALTA	Nouns with lta stem and lta : lla variations
+NOUN_VANHEMMAT	PLurale tantums with mmat and mmat : mp variations
+NOUN_VANHEMPI	Nouns with mpi stem and mpi : mma variations
+NOUN_VANKI	Nouns with nki stem and nki : nge variations back harmony
+NOUN_VANTTUUT	Plurale tantums with ttuut stem and ttuut : tus variations
+NOUN_VANTUS	Nouns with tus stem and tus : ttuu variations
+NOUN_VARAS	Nouns with as stem and as : kaa variatons
+NOUN_VARAT	PLurale tantums with at stem and at : o variations
+NOUN_VARSI	Nouns with rsi stem and rsi : rre variations
+NOUN_VARVAS	Nouns with vas stem and vas : paa variations
+NOUN_VASEN	Nouns with n stem and n : mma variations
+NOUN_VEHKEILY	Nouns with y stem and no variations
+NOUN_VEITSI	Nouns with tsi stem and tsi : s variations front harmony
+NOUN_VELI	Nouns with veli stem and li : lj variations
+NOUN_VEMMEL	Nouns with mmel stem and mmel : mpelee variations
+NOUN_VERI	Nouns with veri stem and i : e variations and tä partitive
+NOUN_VETIMET	Plurale tantums with timet stem and timet : din variations
+NOUN_VETO	Nouns with to stem and to : do variations
+NOUN_VETY	Nouns with ty stem and ty : dy variations
+NOUN_VIENTI	Nouns with nti stem and nti : nni variations front harmony
+NOUN_VIHKIÄISET	Plurale tantums with set stem and set : nen harmony front harmony
+NOUN_VIHKO	Nouns with hko stem and hko : h ~ hk variations
+NOUN_VIIVE	Nouns with ve stem and ve : pe variations front harmony
+NOUN_VIKA	Nouns with ka stem and ka : o variations
+NOUN_VINKU	Nouns with nku stem and nku : ngu varitioant
+NOUN_VIRRET	Nouns with rret stem and rret : rs variations
+NOUN_VIRSI	Nouns with rsi stem and rsi : rre variations
+NOUN_VOIMA	Nouns with a stem and a : 0 variations
+NOUN_VUO	Nouns with uo stem and uo : o ariationt
+NOUN_VUODET	Plurale tantums with det stem and det :si variations back harmony
+NOUN_VUOLLE	Nouns with lle stem and lle : ltee variaotns back harmonu
+NOUN_VUOSITUHAT	Nouns with tuhat stem and t : nne variations usually from compounded 1000s
+NOUN_YHTIÖT	Plurale tantum with iö stem and no varitionst
+NOUN_YKSIKKÖ	Nouns with kkö stem and kkö : kö variations
 NOUN_YLEIS	Bound nominal stems, that require compounding or hyphen
-NOUN_YLKÄ	Dictionary class 9 k~0 without optional ’
-NOUN_YLÄNKÖ	Dictionary class 1nkö
-NOUN_YMPÄRYSTÄ	Nouns with ä:0 variations
-NOUN_YSTÄVYKSET	Dictionary class kset fr plurale tantum
-NOUN_YÖKKÖ	Dictionary class 1kö
-NOUN_ZEN	Dictionary class 5 front no i
-NOUN_ZOMBIE	Similar inflection exists in limited amounts in new loan words that are written as pronounced (thus taking no stem variation but still ending with long vowels with a syllable boundary) Dictionary class 3eta
-NOUN_ÄYRÄS	Dictionary class 41 äs
+NOUN_YLKÄ	Nouns with kä stems and kä : 0 variations
+NOUN_YLÄNKÖ	Nouns with nkö stem and nkö : ngö variations
+NOUN_YMPÄRYSTÄ	Nouns with ä stem and ä : 0 variations
+NOUN_YSTÄVYKSET	Plurale tantums with kset stem and kset : s variations front harmony
+NOUN_YÖKKÖ	Nouns with kö stem and kkö : kö variations
+NOUN_ZEN	Nouns with consonant stem and X : Xe variations front harmony
+NOUN_ZOMBIE	Nouns with ie stem and no variations back harmony
+NOUN_ÄYRÄS	Nouns with äs stem and äs : ää variations
 NUM_51kahdeksanbiljardia	Optimisation hack for exceptional compound ’kahdeksanbiljardia’ that inflects in all parts with agreement
 NUM_51kahdeksanbiljoonaa	Optimisation hack for exceptional compound ’kahdeksanbiljoonaa’ that inflects in all parts with agreement
 NUM_51kahdeksandekiljardia	Optimisation hack for exceptional compound ’kahdeksandekiljardia’ that inflects in all parts with agreement
@@ -1496,87 +1496,87 @@ NUM_51yksiseitsemättä	Optimisation hack for exceptional compound ’yksiseitse
 NUM_51yksitoista	Optimisation hack for exceptional compound ’yksitoista’ that inflects in all parts with agreement
 NUM_51yksiviidettä	Optimisation hack for exceptional compound ’yksiviidettä’ that inflects in all parts with agreement
 NUM_51yksiyhdeksättä	Optimisation hack for exceptional compound ’yksiyhdeksättä’ that inflects in all parts with agreement
-ADJ_ENSIMMÄINEN	Dictionary class38
-NUM_ENSIMMÄINEN	Dictionary class38
-NUM_KAHDEKSAN	Dictionary class10n
-NUM_KAKSI	Dictionary class31 back§
-NUM_KOLMAS	Dictionary class45
+ADJ_ENSIMMÄINEN	Ordinal numerals with nen stem front harmony
+NUM_ENSIMMÄINEN	Ordinal numerals with nen stem front harmony (OBSOLETE)
+NUM_KAHDEKSAN	Numerals with an stem and an : ann : ans variations
+NUM_KAKSI	Numerals wth ksi stem and ksi : ht variations back harmony
+NUM_KOLMAS	Ordinals with as stem and as : ann : ans variations
 NUM_KOLMASOSA	Numerals for parts ‛-osa’ inflect like NOUN_ASEMA
-NUM_KOLME	Dictionary class8~5
-NUM_KUUSI	Dictionary class27 back
+NUM_KOLME	Numerals with e stem and e : 0 variations
+NUM_KUUSI	Numerals with si stem and si : te variations back harmony
 NUM_KUUTISEN	Approximative numerals, back suffixes, compounding with select multipliers
-NUM_KYMMEN	archaic form ‘kymmen’ inflects like NUM_KYMMENEN
-NUM_KYMMENEN	Dictionary class32
+NUM_KYMMEN	Numerals with en stem no variations
+NUM_KYMMENEN	Numerals with en stem en : 0 variations
 NUM_KYMMENKUNTA	Approximative numerals, no inflection
 ADJ_KYMMENTÄ	bound numeral multiplier
 NUM_KYMMENTÄ	bound numeral multiplier
-NUM_MILJARDI	Dictionary class5
-NUM_MILJOONA	Dictionary class10
-NUM_NELJÄ	Dictionary class10
-NUM_NELJÄS	Dictionary class45 fron
-NUM_PARI	Dictionary class5 moremore
-NUM_PUOLI	numeral puoli inflects like
-NUM_SATA	Dictionary class9
-NUM_TOINEN	Dictionary class38 back
-ADJ_TOINEN	Dictionary class38 back
-NUM_TUHAT	Dictionary class46
-NUM_VIISI	Dictionary class27 front
+NUM_MILJARDI	Numerals with i stem i : e variations back harmony
+NUM_MILJOONA	Numerals with a stem a : 0 variatons
+NUM_NELJÄ	Mumerals with ä stem and ä : 0 variations
+NUM_NELJÄS	Numerals with äs stem 
+NUM_PARI	Numerals with i stem i : e variations back haqrmony
+NUM_PUOLI	Numerals with i stem i : e variations back harmoby
+NUM_SATA	Numerals with ta stem ta : do variations
+NUM_TOINEN	Ordinals with nen stem nen : se variations back harmony (OLD)
+ADJ_TOINEN	Ordinals wiht nen ste and nen : se variations back hamrony
+NUM_TUHAT	Numerals with t stem and t : ns variations back harmony
+NUM_VIISI	Numerals with si stem and si : de variations front harmony
 NUM_VIITISEN	Approximative numerals, front suffixes, compounding with select multipliers
-NUM_YHDEKSÄN	Dictionary class10n front
-NUM_YKSI	Dictionary class31
-PRON_AINOA	non-inflectin pronuns with optional possessive suffixes, back
-PRON_ERÄS	pronoun s:ä inflection like NOUN_XXX
+NUM_YHDEKSÄN	Numerals with än stem and än : änn : äns variations
+NUM_YKSI	Numerals with ksi stem and ksi : ht variations front harmony
+PRON_AINOA	non-inflectin pronuns with optional possessive suffixes, back harmony
+PRON_ERÄS	pronoun with s stem and s : ä variations
 PRON_HÄN	personal pronoun ‘hän’ inflects with e stem, singular only
 PRON_HÄÄ	dialectal forms of hän
-PRON_IKINEN	pronouns inen inflect like NOUN_AAKKOSTAMINEN
-PRON_ITSE	inflects like NOUN_xxE
+PRON_IKINEN	pronouns with inen stem and nen : se variations front harmony
+PRON_ITSE	pronoun itse with no variatinos
 PRON_JOKA	pronoun joka inflects from jo stem with optionally ka clitic for most forms
-PRON_JOKAINEN	inflects like NOUN_JOKAINEN
-PRON_JOKIN	pronoun jokin, mikin inflect before kin clitic
+PRON_JOKAINEN	pronouns with nen stem nen : se variations back harmony
+PRON_JOKIN	pronoun jokin inflect before kin clitic
 PRON_JOKU	pronoun joku inflects with agreement like compound 51 jo+ku
 PRON_JOMPIKUMPI	pronoun jompikumpi inflects with agreement like compound 51 jompi+kumpi c.f. PRON_KUMPI
-PRON_KAIKKI	prnoun kaikki inflects like NOUN_
+PRON_KAIKKI	prnoun kaikki with ki : ke variations
 PRON_KOKO	pronouns without inflections or even clitics
 PRON_KUKA	pronoun kuka has heteroclitic ke stem for inflection as well as more rare or diaectal ku- etc.
 PRON_KUKAAN	pronoun kukaan inflects like PRON_KUKA before kaan clitic
 PRON_KUKAKIN	pronoun kukakin inflects like PRON_KUKAKIN before kin clitic
 PRON_KUKIN	pronoun kukin inflects before kin clitic with only ku stem
-PRON_KUMPI	pronoun kumpi inflects like comparatives, see NOUN_VANHEMPI
+PRON_KUMPI	pronoun kumpi with mpi : mma variaitons
 PRON_KUMPIKAAN	pronoun kumpikaan inflects like PRON_KUMPI before kaan clitic
 PRON_KUMPIKIN	pronoun kumpikaan inflects like PRON_KUMPI before kin clitic
 PRON_MA	dialectal forms of minä
 PRON_ME	personal pronouns ‘me, te, he’ inflect with e stems, plural only
 PRON_MIE	dialectal forms of minä, inflects with u stem
-PRON_MIKIN	no inflection?
+PRON_MIKIN	pronoun mikin inflects before kin clitic
 PRON_MIKÄ	pronoun mikä inflects from mi- stem
 PRON_MIKÄKIN	pronoun mikäkin does not inflects
 PRON_MIKÄÄN	pronoun mikään inflects with mi- stem and clitic kään
 PRON_MINÄ	personal pronouns ‘minä, sinä’ inflect with u stem, singular nly
-PRON_MOLEMMAT	does not inflect more than clitics
-PRON_MONES	inflects like NUM_KOLMAS
-PRON_MONI	i:e inflects like
-PRON_MONIAS	as:aa archaic, inflects like ADJ_AUTUAS
-PRON_MONTA	accounts special monta:montaa inflections
+PRON_MOLEMMAT	pronouns that do not inflect
+PRON_MONES	pronouns with s stem and s : nne variaitns
+PRON_MONI	pronouns with i stem and i : e variations
+PRON_MONIAS	pronouns with as stem and as : aa variations
+PRON_MONTA	pronoun monta inflects montaa
 PRON_MONTAKO	partitive with clitic lexicalised, no inflections
-PRON_MUU	inflects NOUN_PUU
-PRON_MUUAN	no inflects
-PRON_MUUTAMA	inflects like NOUN_ASEMA
+PRON_MUU	pronouns with uu stem and uu : u variaotns
+PRON_MUUAN	pronouns with no inflects
+PRON_MUUTAMA	pronouns with a stems and a : 0 variations
 PRON_MÄ	dialectal forms of minä
 PRON_MÄÄ	dialectal forms of minä
-PRON_NE	inflects with e:i stems, plurals only
+PRON_NE	demonstrative pronouns with e stem and e : i plurals only
 PRON_NOI	dialectal forms of nuo
-PRON_NUO	inflects like NOUN_SUO, plurals only
-PRON_NÄMÄ	inflects with ä stem, plurals only
-PRON_SAMA	inflects like NOUN_OMENA
-PRON_SE	inflects with e:i stems, singulars only
+PRON_NUO	pronouns with uo stem and uo : o variationt, plurals only
+PRON_NÄMÄ	pronouns with ä stem and mä : 0 variations, plurals only
+PRON_SAMA	pronouns with a stem and a : o variations
+PRON_SE	pronouns with e stem and e : ii variations singulars only
 PRON_TOI	dialectal forms of nuo
-PRON_TOINEN	inflects like NUM_TOINEN
-PRON_TUO	inflects like NOUN_SUO, singulars only
-PRON_TÄMÄ	inflects with ä stem, singulars only
-PRON_USEA	a:0 inflects like ADJ_xxEA
-PRON_USEAMPI	inflects like NOUN_VANHEMPI
-PRON_USEIMMAT	partially inflects like NOUN_VANHIN
-PRON_YKSI	inflects like NUM_YKSI
+PRON_TOINEN	pronouns with nen stem nen : se variations back harmoy
+PRON_TUO	pronouns with uo stem and uo : o variations singulars only
+PRON_TÄMÄ	pronouns with ä stem mä : 0 variations, singulars only
+PRON_USEA	pronouns with ea stem and a : 0 variations
+PRON_USEAMPI	pronouns with mpi stem mpi : mm variations
+PRON_USEIMMAT	pronouns with mmat stem  mmat : mm variations plurals only
+PRON_YKSI	pronouns with ksi stem and ksi : ht variatons
 PROPN_51Iso-Britannia	Optimisation hack for exceptional compound ’Iso-Britannia’ that inflects in all parts with agreement
 PROPN_51Mustameri	Optimisation hack for exceptional compound ’Mustameri’ that inflects in all parts with agreement
 PROPN_51Punainenmeri	Optimisation hack for exceptional compound ’Punainenmeri’ that inflects in all parts with agreement
@@ -1585,518 +1585,518 @@ PROPN_51Uusikaupunki	Optimisation hack for exceptional compound ’Uusikaupunki�
 PROPN_51Uusimaa	Optimisation hack for exceptional compound ’Uusimaa’ that inflects in all parts with agreement
 PROPN_51Uusi-Seelanti	Optimisation hack for exceptional compound ’Uusi-Seelanti’ that inflects in all parts with agreement
 PROPN_A.	Middle initials don't inflect or compound
-PROPN_AAKKOSELLISUUS	inflects like NOUN_AAKKOSELLISUUS Dictionary class 40 back
-PROPN_AAKKOSTAMINEN	Dictionary class 38 back
-PROPN_AALLOT	Dictionary class 1lot plurale tantum
-PROPN_AARRE	Dictionary class 48 back re
-PROPN_ACRO_AA	acronyms ending in 'a' pronounced as a letter
-PROPN_ACRO_DOLLARI	The acronyms ending in a word that inflects like ‘dollari’ with i:e type stem
-PROPN_ACRO_EE	acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced as a letter
-PROPN_ACRO_GRAMMA	The acronyms ending in a word that inflects like ‘gramma’ with a:o type stem
-PROPN_ACRO_II	Acronyms that end in 'j' or 'i' pronoynced as letter
-PROPN_ACRO_JÄRJESTÖ	The acronyms ending in a word that inflects like ‘järjestö’ with ö type stem
+PROPN_AAKKOSELLISUUS	Proper nouns with s stem and s : de variations back harmony
+PROPN_AAKKOSTAMINEN	Proper nouns with nen stem and nen : se variations back harmony
+PROPN_AALLOT	Proper nouns with llot stem and llot : lto variations
+PROPN_AARRE	Proper nouns with rre stem and rre : rtee variations back harmony
+PROPN_ACRO_AA	Proper acronyms ending in 'a' pronounced as a letter
+PROPN_ACRO_DOLLARI	Proper acronyms ending in a word that inflects like ‘dollari’ with i:e type stem
+PROPN_ACRO_EE	Proper acronyms ending in 'b', 'c', 'd', 'e', 'g', 'p', 'v', 'w' or 't' pronounced as a letter
+PROPN_ACRO_GRAMMA	Proper acronyms ending in a word that inflects like ‘gramma’ with a:o type stem
+PROPN_ACRO_II	Proper Acronyms that end in 'j' or 'i' pronoynced as letter
+PROPN_ACRO_JÄRJESTÖ	Proper acronyms ending in a word that inflects like ‘järjestö’ with ö type stem
 PROPN_ACRO_KAHDEKSAN	Proper noun acronyms ending in 8
 PROPN_ACRO_KAKSI	Proper noun acronyms ending in 2
-PROPN_ACRO_KANDELA	The acronyms ending in a word that inflects like ‘kandela’ with a:0 type stem
-PROPN_ACRO_KOLME	The acronyms ending in digit 3 pronounced as number
+PROPN_ACRO_KANDELA	Proper acronyms ending in a word that inflects like ‘kandela’ with a:0 type stem
+PROPN_ACRO_KOLME	Proper acronyms ending in digit 3 pronounced as number
 PROPN_ACRO_KUUSI	Proper noun acronyms ending in 6
-PROPN_ACRO_LEHTI	The acronyms ending in a word that inflects like ‘lehti’ with i:e type stem
-PROPN_ACRO_METRI	The acronyms ending in a word that inflects like ‘metri’ with i:e type stem
+PROPN_ACRO_LEHTI	Proper acronyms ending in a word that inflects like ‘lehti’ with i:e type stem
+PROPN_ACRO_METRI	Proper acronyms ending in a word that inflects like ‘metri’ with i:e type stem
 PROPN_ACRO_NELJÄ	Proper noun acronyms ending in 4
-PROPN_ACRO_NOLLA	The acronyms ending in digit 0 pronounced as a number
-PROPN_ACRO_OO	Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter
-PROPN_ACRO_PUNTA	The acronyms ending in a word that inflects like ‘punta’ with a:0 type stem
+PROPN_ACRO_NOLLA	Proper acronyms ending in digit 0 pronounced as a number
+PROPN_ACRO_OO	Proper Acronyms that end in 'h', 'k' or 'o' that is pronounced as a letter
+PROPN_ACRO_PUNTA	Proper acronyms ending in a word that inflects like ‘punta’ with a:0 type stem
 PROPN_ACRO_SEITSEMÄN	Proper noun acronyms ending in 7
-PROPN_ACRO_UU	Acronyms that end in 'q', or 'u' pronounced as a letter
-PROPN_ACRO_VIISI	The acronyms ending in digit 5 pronounced as number
-PROPN_ACRO_WEBER	The acronyms ending in a word that inflects like ‘weber’ with r:re type stem
+PROPN_ACRO_UU	Proper Acronyms that end in 'q', or 'u' pronounced as a letter
+PROPN_ACRO_VIISI	Proper acronyms ending in digit 5 pronounced as number
+PROPN_ACRO_WEBER	Proper acronyms ending in a word that inflects like ‘weber’ with r:re type stem
 PROPN_ACRO_YHDEKSÄN	Proper noun acronyms ending in 9
 PROPN_ACRO_YKSI	Proper noun acronyms ending in 1
-PROPN_ACRO_YY	Acronym that ends in 'y' pronounced as letter
-PROPN_ACRO_ZET	Acronyms that end in 'z' pronounced as letter
-PROPN_ACRO_ÄKS	Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as a letter
-PROPN_ACRO_ÖÖ	Acronyms that end in 'ö' pronounced as letter
-PROPN_ACRO_Ω	Acronyms that end in ‘oomega’
-PROPN_AHDET	some det final proper nouns have special variation:
-PROPN_AIVOKUOLLUT	Dictionary class 47 back
-PROPN_AIVOT	Dictionary class 1o plurale tantum
-PROPN_AJATAR	Dictionary class 32 tar
-PROPN_ALKU	Dictionary class 1ku with k:0
-PROPN_ALLAS	Dictionary class 41 las
-PROPN_ALTIS	Proper noun with is:ii variation, back harmony
-PROPN_APE	Dictionary class 48 back pe
-PROPN_APU	Dictionary class 1pu
-PROPN_ARISTOTELES	Dictionary class 41 es back
-PROPN_ARKI	Dictionary class 7 back k~j
-PROPN_ASEMA	Dictionary class 11 back
-PROPN_ASKAR	Dictionary class 49 ar
-PROPN_ASTE	Dictionary class 48 back
-PROPN_ASU	The stems ending in u are also without variationm and the bisyllabic ones have the same simple allomorph pattern: Dictionary class 1u
-PROPN_ASUKAS	Dictionary class 41 kas
-PROPN_ATERIMET	Dictionary class 31 t plurale tantum
-PROPN_BÉBÉ	Dictionary class 21 e front
-PROPN_BEIGNET	Dictionary class 22 e front
-PROPN_BERNIE	This class includes a set of new proper nouns that get nativised a bit Dictionary class 3etä
-PROPN_BESSERWISSER	Dictionary class 6 front no i
-PROPN_BIDEE	Dictionary class 20 e front There’s a gap in -ii final loan stems.
-PROPN_BIKINIT	Dictionary class xxx nit plurale tantum
-PROPN_BORDEAUX	Dictionary class 22 o
-PROPN_BRASSERIE	Dictionary class 21 i back
-PROPN_BRIE	Dictionary class 21 i front
-PROPN_BROOKLYN	Dictionary class 6 back no i with both vowel harmonies allowed
-PROPN_CAMUS	Dictionary class 22 y
-PROPN_CHACHACHA	Dictionary class 21 a The loan words that end in consonant when written but vowel when pronounced are inflected with an apostrophe ’. With half-vowels the rule is a bit shaky, but officially apostrophe is the only way.
-PROPN_COMPOUND	for bound proper noun particles, usually with hyphen, such as ‘Etelä-’
-PROPN_COWBOY	Dictionary class 21 iy
-PROPN_DIMITRIS	Dictionary class 41 is front
-PROPN_EKKE	Proper noun with kke:ke stem
-PROPN_ELIN	Dictionary class 33 front
-PROPN_ELÄMÄ	Dictionary class 11 front
-PROPN_EPÄILTY	Dictionary class 1lty
-PROPN_ESQUIMAU	Dictionary class 21 o back
-PROPN_EUGENE	Proper noun with e stem and back harmony
-PROPN_FARKUT	Dictionary class 1ku plurale tantum
-PROPN_FARMARIT	Dictionary class xxx it plurale tantum
-PROPN_FIFA	initialism treated like word inflecting like NOUN_OMENA
-PROPN_FONDUE	Dictionary class 21 ye
-PROPN_FÄNRIKIT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_GAY	Dictionary class 21 yi
-PROPN_HAAKSI	Dictionary class 27 ksi
-PROPN_HAI	Dictionary class 18 i back
+PROPN_ACRO_YY	PRoper Acronym that ends in 'y' pronounced as letter
+PROPN_ACRO_ZET	Proper Acronyms that end in 'z' pronounced as letter
+PROPN_ACRO_ÄKS	Proper Acronym that ends in 'f', 'l', 'm', 'n', 'r', 's', 'š' or 'x' pronounced as a letter
+PROPN_ACRO_ÖÖ	Proper Acronyms that end in 'ö' pronounced as letter
+PROPN_ACRO_Ω	Proper Acronyms that end in ‘oomega’
+PROPN_AHDET	Proper nouns with det stem 
+PROPN_AIVOKUOLLUT	Proper nouns with llut stem and llut : llee variations
+PROPN_AIVOT	Proper nouns with ot  stem 
+PROPN_AJATAR	Proper nouns with tar stem and tar : ttare variations
+PROPN_ALKU	Proper nouns with ku stem and ku : u variations
+PROPN_ALLAS	Proper nouns with llas stem and llas : ltaa variatons
+PROPN_ALTIS	Proper noun with is stem and is : ii variation, back harmony
+PROPN_APE	Proper nouns with pe stem and pe : ppee variations
+PROPN_APU	Proper nouns with pu stem and pu : vu variations
+PROPN_ARISTOTELES	Proper nouns with es stem and es : ee variaitons back hrmony
+PROPN_ARKI	Proper nouns with ki stem and ki : je variaitons back harmony
+PROPN_ASEMA	Proper nouns with a stem and a : 0 variations
+PROPN_ASKAR	Proper nouns with ar stem and ar : aree variaitons
+PROPN_ASTE	Proper nouns with e stem and e : ee variations
+PROPN_ASU	Proper nouns with u stem and no variations
+PROPN_ASUKAS	Proper nouns with kas stem and kas : kkaa variations
+PROPN_ATERIMET	Proper noun plurale tantum met stem and met : n variation back harmony
+PROPN_BÉBÉ	Proper nouns with é stem 
+PROPN_BEIGNET	Proper nouns with consonat stem and ’ inflections
+PROPN_BERNIE	Proper nouns with ie stem and no variations front harmony
+PROPN_BESSERWISSER	Proper nouns with consonant stem and X : Xe varioants
+PROPN_BIDEE	Proper nouns with ee stems ee : e variaotns
+PROPN_BIKINIT	Proper nouns with it stem and plurale tantum
+PROPN_BORDEAUX	Proper nouns with consonant stem and ’ inflection
+PROPN_BRASSERIE	Proper nouns with e stem no variatons back harmony
+PROPN_BRIE	Proper nouns with e stem front harmony
+PROPN_BROOKLYN	Proper nouns with consonant stem and no variations both harmonies
+PROPN_CAMUS	Proper nouns with consonat stem and ’ inflection
+PROPN_CHACHACHA	Proper nouns with no variatiosn 
+PROPN_COMPOUND	bound proper noun particles, usually with hyphen, such as ‘Etelä-’
+PROPN_COWBOY	Proper nouns with y stem and no variations both harmonies
+PROPN_DIMITRIS	Proper nouns with is stem and  is : ii variations front harmony
+PROPN_EKKE	Proper noun with kke stem and kke : ke variations
+PROPN_ELIN	Proper nouns with in stem and n : me variostna front harmony
+PROPN_ELÄMÄ	Proper nouns with ä stem and ä : 0 varionts
+PROPN_EPÄILTY	Proper nouns with lty stem and lty :lly variaoitns
+PROPN_ESQUIMAU	Proper nouns with o stem no variotatnos
+PROPN_EUGENE	Proper nouns with e stem back harmony
+PROPN_FARKUT	Proper nouns with ku stem plurale tantum
+PROPN_FARMARIT	Proper nouns with it stem plurale tantum
+PROPN_FIFA	Proper noun initialisms treated like word inflecting like NOUN_OMENA
+PROPN_FONDUE	Proper nouns with ue stem and no variations both harmonies
+PROPN_FÄNRIKIT	Proper nouns with it stem and it : e varioations
+PROPN_GAY	Proper nouns with y stem and both harmonies
+PROPN_HAAKSI	Proper nouns with ksi stem and ksi : ht varioants
+PROPN_HAI	Proper nouns with i stem and i : 0 variations
 PROPN_HAIT	Plural-only proper noun with monosyllabic ai stem
-PROPN_HAMMAS	Dictionary class 41 mas
-PROPN_HAPPI	Dictionary class 7 back p~0
-PROPN_HAPPO	Dictionary class 1po
-PROPN_HEITIN	Dictionary class 33 front tin
-PROPN_HENKI	Dictionary class 7 front k~g
-PROPN_HEPO	Dictionary class 1po
-PROPN_HIIRI	Dictionary class 24 front It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
-PROPN_HIRTTO	Dictionary class 1to
-PROPN_HIUTALEET	Dictionary class leat plurale tantum
-PROPN_HONKA	Dictionary class 10 back k~g
-PROPN_HOPEAT	Dictionary class xxx eat plurale tantum
+PROPN_HAMMAS	Proper nouns with mas stem and mas : mpaa variations
+PROPN_HAPPI	Proper noun 7 back p~0
+PROPN_HAPPO	Proper noun 1po
+PROPN_HEITIN	Proper noun 33 front tin
+PROPN_HENKI	Proper noun 7 front k~g
+PROPN_HEPO	Proper noun 1po
+PROPN_HIIRI	Proper noun 24 front It is noteworthy of the official dictionary classification, that classes with numbers 24 and 26 are identical. The distinction should probably not be retained in future versions.
+PROPN_HIRTTO	Proper noun 1to
+PROPN_HIUTALEET	Proper noun leat plurale tantum
+PROPN_HONKA	Proper noun 10 back k~g
+PROPN_HOPEAT	Proper noun xxx eat plurale tantum
 PROPN_HORTA	Proper noun wita a:0 stem and rt:rr gradation
-PROPN_HOUSUT	Dictionary class 1u plurale tantum
-PROPN_HUOLITELTU	Dictionary class 1ltu
-PROPN_HUPI	Dictionary class 5 back p~v There is a gap in i final words for p:v variation and front harmony
-PROPN_HYLKY	Dictionary class 1ky
+PROPN_HOUSUT	Proper noun 1u plurale tantum
+PROPN_HUOLITELTU	Proper noun 1ltu
+PROPN_HUPI	Proper noun 5 back p~v There is a gap in i final words for p:v variation and front harmony
+PROPN_HYLKY	Proper noun 1ky
 PROPN_HYÖTYY	Proper nouns with yy-stem
-PROPN_HÄIRIÖ	Dictionary class 3ö
-PROPN_HÄKKI	Dictionary class 5 front k~0
-PROPN_HÄKKYRÄ	Dictionary class 12 front There is a possible class for further variation of a:o in the old dictionary dictionary that is worth re-evaluating. There’s one more allomorph pattern.
+PROPN_HÄIRIÖ	Proper noun 3ö
+PROPN_HÄKKI	Proper noun 5 front k~0
+PROPN_HÄKKYRÄ	Proper noun 12 front There is a possible class for further variation of a:o in the old dictionary dictionary that is worth re-evaluating. There’s one more allomorph pattern.
 PROPN_HÄMET	Proper nouns with et-stem
-PROPN_HÄMMINKI	Dictionary class 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
+PROPN_HÄMMINKI	Proper noun 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
 PROPN_HÄNNÄT	Plural-only proper noun with ä:0 stem and nt:nn gradation
-PROPN_HÄNTÄ	Dictionary class 10 front t~n
+PROPN_HÄNTÄ	Proper noun 10 front t~n
 PROPN_HÄRKIN	Proper nouns with in:ime stems
-PROPN_HÄÄT	Dictionary class xxx äät plurale tantum
-PROPN_HÄÄTÖ	Dictionary class 1tö
-PROPN_HÖLKKÄ	Dictionary class 10 front k̃~0
-PROPN_HÖPÖTTÄJÄ	Dictionary class 10 front
-PROPN_HÖYHENET	Dictionary class 32 t plurale tantum
+PROPN_HÄÄT	Proper noun xxx äät plurale tantum
+PROPN_HÄÄTÖ	Proper noun 1tö
+PROPN_HÖLKKÄ	Proper noun 10 front k̃~0
+PROPN_HÖPÖTTÄJÄ	Proper noun 10 front
+PROPN_HÖYHENET	Proper noun 32 t plurale tantum
 PROPN_INGET	Plural-only proper noun with i:e stem and nk:ng gradation
-PROPN_ITÄMAAT	Dictionary class xxx maat plurale tantum
-PROPN_JEPPE	Dictionary class 8 p~0 front
-PROPN_JOCKEY	Dictionary class 21 yi
-PROPN_JOUKOT	Dictionary class 1ko plurale tantum
-PROPN_JOUTSEN	Dictionary class 32 back
-PROPN_JUHLAT	Dictionary class xxx t plurale tantum
+PROPN_ITÄMAAT	Proper noun xxx maat plurale tantum
+PROPN_JEPPE	Proper noun 8 p~0 front
+PROPN_JOCKEY	Proper noun 21 yi
+PROPN_JOUKOT	Proper noun 1ko plurale tantum
+PROPN_JOUTSEN	Proper noun 32 back
+PROPN_JUHLAT	Proper noun xxx t plurale tantum
 PROPN_JUOVAT	proper noun inflects like NOUN_PROBLEEMAT
 PROPN_JYLKYT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_JÄRJESTÖT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_JÄRKI	Dictionary class 7 front k~j
+PROPN_JÄRKI	Proper noun 7 front k~j
 PROPN_JÄRVITAHDON	Proper nouns that look like Järvitahdon(?)
-PROPN_JÄÄTELÖ	Dictionary class 2ö
+PROPN_JÄÄTELÖ	Proper noun 2ö
 PROPN_KAARET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_KAARRET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_KAARROT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_KALATOIN	Proper nouns that have old caritive toin stem
 PROPN_KANAALI	Proper nouns that have i:e stems
-PROPN_KANGAS	Dictionary class 41 gas
+PROPN_KANGAS	Proper noun 41 gas
 PROPN_KANGASALA	inflects like NOUN_OMENA except for adessive which is ‘kangasalla’
 PROPN_KANKAHAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KANNEL	Dictionary class 49 nel
+PROPN_KANNEL	Proper noun 49 nel
 PROPN_KARRAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KASTANJETIT	Dictionary class xxx tit plurale tantum
-PROPN_KASTIKE	Dictionary class 48 back ke
+PROPN_KASTANJETIT	Proper noun xxx tit plurale tantum
+PROPN_KASTIKE	Proper noun 48 back ke
 PROPN_KASTILJAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KAUSI	Dictionary class 27 back
-PROPN_KEHVELI	Dictionary class 6 front
-PROPN_KENGÄT	Dictionary class xxx a front kg plurale tantum
-PROPN_KENKÄ	Dictionary class 10 frot k~g
-PROPN_KENTTÄ	Dictionary class 10 front t~0
+PROPN_KAUSI	Proper noun 27 back
+PROPN_KEHVELI	Proper noun 6 front
+PROPN_KENGÄT	Proper noun xxx a front kg plurale tantum
+PROPN_KENKÄ	Proper noun 10 frot k~g
+PROPN_KENTTÄ	Proper noun 10 front t~0
 PROPN_KENTÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KERITSIMET	Dictionary class 31 t fr plurale tantum
-PROPN_KERTA	Dictionary class 9 t~r
-PROPN_KEVÄT	Dictionary class 44 Nominalised nut participles have special inflection just as well.
-PROPN_KIDE	Dictionary class 48 front de
-PROPN_KIELTO	Dictionary class 1lto
-PROPN_KIERRE	Dictionary class 48 fron re
-PROPN_KIHARAT	Dictionary class xxxihi t plurale tantum
-PROPN_KIINNE	Dictionary class 48 front ne
-PROPN_KILPI	Dictionary class 7 front p~v
-PROPN_KINNAS	Dictionary class 41 nas
+PROPN_KERITSIMET	Proper noun 31 t fr plurale tantum
+PROPN_KERTA	Proper noun 9 t~r
+PROPN_KEVÄT	Proper noun 44 Nominalised nut participles have special inflection just as well.
+PROPN_KIDE	Proper noun 48 front de
+PROPN_KIELTO	Proper noun 1lto
+PROPN_KIERRE	Proper noun 48 fron re
+PROPN_KIHARAT	Proper noun xxxihi t plurale tantum
+PROPN_KIINNE	Proper noun 48 front ne
+PROPN_KILPI	Proper noun 7 front p~v
+PROPN_KINNAS	Proper noun 41 nas
 PROPN_KIRITTÄRET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KIRJA	Dictionary class 9 Notably, the basic a:o paradigm does not support many ä:ö cases.
-PROPN_KIRVES	Dictionary class 41 es front
+PROPN_KIRJA	Proper noun 9 Notably, the basic a:o paradigm does not support many ä:ö cases.
+PROPN_KIRVES	Proper noun 41 es front
 PROPN_KITARA	Proper noun with a:o stem
-PROPN_KIVI	Dictionary class 7 front
+PROPN_KIVI	Proper noun 7 front
 PROPN_KLUMPIT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KOE	Dictionary class 48 back 0k
+PROPN_KOE	Proper noun 48 back 0k
 PROPN_KOKO	k:’ should be obligatory but new rules allow k:0 for ‘koko’
-PROPN_KOMPA	Dictionary class 10 back p~m
-PROPN_KORPI	Dictionary class 7 back p~v
+PROPN_KOMPA	Proper noun 10 back p~m
+PROPN_KORPI	Proper noun 7 back p~v
 PROPN_KORTES	Proper nouns with tes:ttee stems
 PROPN_KORTET	Proper nouns with tet: stems
 PROPN_KORTTI	Proper noun with i:e stems and tt:t gradations
 PROPN_KORVET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_KOUVOT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_KREUS	proper noun s:0 or NOUN_PUNK possible
-PROPN_KUITU	Dictionary class 1to
+PROPN_KUITU	Proper noun 1to
 PROPN_KUMMUT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KUNGFU	Dictionary class 21 u back
+PROPN_KUNGFU	Proper noun 21 u back
 PROPN_KUNNAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KUNTA	Dictionary class 10 back t~n
-PROPN_KUOPAT	Dictionary class xxx a back p plurale tantum
-PROPN_KUOPPA	Dictionary class 10 back p~0
-PROPN_KUPPI	Dictionary class 5 back p~0
-PROPN_KUTSUNTA	Dictionary class 9 t~n
-PROPN_KUULOKKEET	Dictionary class kkkeeet plurale tantum
+PROPN_KUNTA	Proper noun 10 back t~n
+PROPN_KUOPAT	Proper noun xxx a back p plurale tantum
+PROPN_KUOPPA	Proper noun 10 back p~0
+PROPN_KUPPI	Proper noun 5 back p~0
+PROPN_KUTSUNTA	Proper noun 9 t~n
+PROPN_KUULOKKEET	Proper noun kkkeeet plurale tantum
 PROPN_KUUS	follows NUM_KUUSI pattern, except singular nominative
 PROPN_KYDÖT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KYKY	Dictionary class 1cyky
-PROPN_KYLKIÄINEN	Dictionary class 38 front
+PROPN_KYKY	Proper noun 1cyky
+PROPN_KYLKIÄINEN	Proper noun 38 front
 PROPN_KYLÄNVANHIN	Proper nouns with superlative-like stems
 PROPN_KYNNET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_KYNNÄÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KÄKI	Dictionary class 7 front k~0
-PROPN_KÄMMEKKÄ	Dictionary class 14 front
-PROPN_KÄPY	Dictionary class 1py
-PROPN_KÄPÄLÄ	Dictionary class 11 front Some a stems with a:o variation have slightly different set of allomorphs
+PROPN_KÄKI	Proper noun 7 front k~0
+PROPN_KÄMMEKKÄ	Proper noun 14 front
+PROPN_KÄPY	Proper noun 1py
+PROPN_KÄPÄLÄ	Proper noun 11 front Some a stems with a:o variation have slightly different set of allomorphs
 PROPN_KÄRJET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KÄRRY	Dictionary class 1y
-PROPN_KÄRSÄKÄS	Dictionary class 41 käs
+PROPN_KÄRRY	Proper noun 1y
+PROPN_KÄRSÄKÄS	Proper noun 41 käs
 PROPN_KÄRÄJÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_KÄSITE	Dictionary class 48 front te
-PROPN_KÄÄNTÖ	Dictionary class 1ntö
-PROPN_KÖNGÄS	Dictionary class 41 gäs
-PROPN_KÖYHYYS	Dictionary class 40 front Some s final words have special lengthening inflection.
-PROPN_KÖYSI	Dictionary class 27 front
-PROPN_KÖÖ	Dictionary class 18 ö
+PROPN_KÄSITE	Proper noun 48 front te
+PROPN_KÄÄNTÖ	Proper noun 1ntö
+PROPN_KÖNGÄS	Proper noun 41 gäs
+PROPN_KÖYHYYS	Proper noun 40 front Some s final words have special lengthening inflection.
+PROPN_KÖYSI	Proper noun 27 front
+PROPN_KÖÖ	Proper noun 18 ö
 PROPN_LAET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_LAHDET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LAHTI	Dictionary class 7 back t~d
-PROPN_LAIDUN	Dictionary class 33 back dun
-PROPN_LAKI	Dictionary class 5 back k~’~0
+PROPN_LAHTI	Proper noun 7 back t~d
+PROPN_LAIDUN	Proper noun 33 back dun
+PROPN_LAKI	Proper noun 5 back k~’~0
 PROPN_LAMMET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_LAMMI	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_LAMMIT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LANKA	Dictionary class 9 k~g
+PROPN_LANKA	Proper noun 9 k~g
 PROPN_LANNET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LASIT	Dictionary class xxx sit plurale tantum
-PROPN_LEHDET	Dictionary class 7 front t~d plurale tantum
-PROPN_LEHTI	Dictionary class 7 front t~d
-PROPN_LEIKKUU	Dictionary class 17 u Monosyllabic long vowel stems have illative suffixes of form -hVn.
-PROPN_LEIPÄ	Dictionary class 10 front p~v
+PROPN_LASIT	Proper noun xxx sit plurale tantum
+PROPN_LEHDET	Proper noun 7 front t~d plurale tantum
+PROPN_LEHTI	Proper noun 7 front t~d
+PROPN_LEIKKUU	Proper noun 17 u Monosyllabic long vowel stems have illative suffixes of form -hVn.
+PROPN_LEIPÄ	Proper noun 10 front p~v
 PROPN_LENTTEE	Proper nouns with tee-stems
-PROPN_LEPAKKO	Dictionary class 4 kko
-PROPN_LIEMI	Dictionary class 25 front The -si words that originate from old -te stems have the consonant gradation patterns left in their stems. The si is only in nominative stem and this class mainly concerns stems that are old enough to have undergone ti>si transformation.
-PROPN_LIITTOUTUNEET	Dictionary class nut plurale tantum
-PROPN_LIIVIT	Dictionary class xxx iiiit plurale tantum
+PROPN_LEPAKKO	Proper noun 4 kko
+PROPN_LIEMI	Proper noun 25 front The -si words that originate from old -te stems have the consonant gradation patterns left in their stems. The si is only in nominative stem and this class mainly concerns stems that are old enough to have undergone ti>si transformation.
+PROPN_LIITTOUTUNEET	Proper noun nut plurale tantum
+PROPN_LIIVIT	Proper noun xxx iiiit plurale tantum
 PROPN_LINGOT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LINTU	Dictionary class 1ntu
-PROPN_LIPEÄ	Dictionary class 15 eä
+PROPN_LINTU	Proper noun 1ntu
+PROPN_LIPEÄ	Proper noun 15 eä
 PROPN_LIPOTTARET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LIPPU	Dictionary class 1pu
-PROPN_LIUKU	Dictionary class 1ku with obligatory apostrophe k:’
+PROPN_LIPPU	Proper noun 1pu
+PROPN_LIUKU	Proper noun 1ku with obligatory apostrophe k:’
 PROPN_LIVVADIEVÁT	Livvadievát
-PROPN_LOKA	Dictionary class 9 k~0 with optional ’
-PROPN_LOKKI	Dictionary class 5 back k~0
+PROPN_LOKA	Proper noun 9 k~0 with optional ’
+PROPN_LOKKI	Proper noun 5 back k~0
 PROPN_LOMMOL	Proper nouns with mmol-stems
-PROPN_LOTTE	Dictionary class 8 t~0 back
+PROPN_LOTTE	Proper noun 8 t~0 back
 PROPN_LOUET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_LUHDAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LUKU	Dictionary class 1cuku
-PROPN_LUMME	Dictionary class 48 back me
+PROPN_LUKU	Proper noun 1cuku
+PROPN_LUMME	Proper noun 48 back me
 PROPN_LUODE	Proper nouns with de:tee stens
 PROPN_LUODES	Proper nouns with des:tee stems
-PROPN_LUOKKA	Dictionary class 10 back k̃~0
+PROPN_LUOKKA	Proper noun 10 back k̃~0
 PROPN_LUOLIKOT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LUPA	Dictionary class 10 back p~v
-PROPN_LUSIKKA	Dictionary class 14 back
+PROPN_LUPA	Proper noun 10 back p~v
+PROPN_LUSIKKA	Proper noun 14 back
 PROPN_LÄHDES	Proper nouns with des:tee stems
 PROPN_LÄHDET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_LÄHIN	Dictionary class 35 front
-PROPN_LÄNSI	Dictionary class 27 front t~n
-PROPN_LÄÄKE	Dictionary class 48 front ke
-PROPN_LÖPÖ	Dictionary class 1pö
-PROPN_MAA	Dictionary class 18 a
-PROPN_MAJ	Dictionary class 22 j-final back
-PROPN_MAKKARA	Dictionary class 12 back
-PROPN_MAKU	Dictionary class 1ku
+PROPN_LÄHIN	Proper noun 35 front
+PROPN_LÄNSI	Proper noun 27 front t~n
+PROPN_LÄÄKE	Proper noun 48 front ke
+PROPN_LÖPÖ	Proper noun 1pö
+PROPN_MAA	Proper noun 18 a
+PROPN_MAJ	Proper noun 22 j-final back
+PROPN_MAKKARA	Proper noun 12 back
+PROPN_MAKU	Proper noun 1ku
 PROPN_MALKO	Proper nouns with o stems and k:0 gradation
 PROPN_MALMÖ	inflects like NOUN_MÖMMÖ, hön illative possible
-PROPN_MANNER	Dictionary class 49 ner
-PROPN_MARKKINAT	Dictionary class xxx a front plurale tantum
+PROPN_MANNER	Proper noun 49 ner
+PROPN_MARKKINAT	Proper noun xxx a front plurale tantum
 PROPN_MATEE	Proper nouns with ee-stems
 PROPN_MATKUET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_MC	proper noun bound particle, mostly foreign surname prefixes, compounds with propers without hyphen
-PROPN_MERI	Non-Dictionary class meri
+PROPN_MERI	Non-Proper noun meri
 PROPN_MERTU	Proper nouns with rtu-stems
 PROPN_METTE	Proper nouns with tte:te stems
 PROPN_MIEHET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_MIELENGE	Proper nouns nge  stems
-PROPN_MIELLE	Dictionary class 48 front le
-PROPN_MIES	Dictionary class 42
-PROPN_MITTA	Dictionary class 9 t~0
-PROPN_MONSIEUR	Dictionary class 22 ö
-PROPN_MULTA	Dictionary class 10 back t~l
+PROPN_MIELLE	Proper noun 48 front le
+PROPN_MIES	Proper noun 42
+PROPN_MITTA	Proper noun 9 t~0
+PROPN_MONSIEUR	Proper noun 22 ö
+PROPN_MULTA	Proper noun 10 back t~l
 PROPN_MURTEET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_MYRKKY	Dictionary class 1ky
+PROPN_MYRKKY	Proper noun 1ky
 PROPN_MÄET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_MÄNNYT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_MÄNTY	Dictionary class 1nty
+PROPN_MÄNTY	Proper noun 1nty
 PROPN_MÄTTÄÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_MÖMMÖ	Dictionary class 1ö
-PROPN_MÖRKÖ	Dictionary class 1rkö
-PROPN_NALLE	Dictionary class 8 back
-PROPN_NEITSYT	Dictionary class 43 front
-PROPN_NEUVOTTELUT	Dictionary class 3lut plurale tantum
+PROPN_MÖMMÖ	Proper noun 1ö
+PROPN_MÖRKÖ	Proper noun 1rkö
+PROPN_NALLE	Proper noun 8 back
+PROPN_NEITSYT	Proper noun 43 front
+PROPN_NEUVOTTELUT	Proper noun 3lut plurale tantum
 PROPN_NG	Vowelless foreign proper nouns, tentatively inflects like zen, punk
 PROPN_NIEMET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_NIHTI	Dictionary class 5 front t~d
+PROPN_NIHTI	Proper noun 5 front t~d
 PROPN_NIITUT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_NIITYT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_NIMETÖIN	Proper nouns with old caritive töin stems
-PROPN_NIMETÖN	Dictionary class 34 tän
-PROPN_NISSE	Dictionary class 8 front
-PROPN_NOKI	Dictionary class 7 back k~0
-PROPN_NOUGAT	Dictionary class 22 a
-PROPN_NUGAA	Dictionary class 20 a
-PROPN_NUKKE	Dictionary class 8 k~0 back
-PROPN_NÄKY	Dictionary class 1ky
-PROPN_NÄLKÄ	Dictionary class 10 front k~0
-PROPN_OLUT	Dictionary class 43 back
-PROPN_ONKI	Dictionary class 7 back k~g
+PROPN_NIMETÖN	Proper noun 34 tän
+PROPN_NISSE	Proper noun 8 front
+PROPN_NOKI	Proper noun 7 back k~0
+PROPN_NOUGAT	Proper noun 22 a
+PROPN_NUGAA	Proper noun 20 a
+PROPN_NUKKE	Proper noun 8 k~0 back
+PROPN_NÄKY	Proper noun 1ky
+PROPN_NÄLKÄ	Proper noun 10 front k~0
+PROPN_OLUT	Proper noun 43 back
+PROPN_ONKI	Proper noun 7 back k~g
 PROPN_ONNET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_ONNI	Dictionary class 7 back
-PROPN_OOKOO	Dictionary class 18 o
-PROPN_OPINNOT	Dictionary class 1not plurale tantum
-PROPN_OSATON	Dictionary class 34 ton
+PROPN_ONNI	Proper noun 7 back
+PROPN_OOKOO	Proper noun 18 o
+PROPN_OPINNOT	Proper noun 1not plurale tantum
+PROPN_OSATON	Proper noun 34 ton
 PROPN_OSOITE	Proper nouns with te:ttee stems
-PROPN_PAIKAT	Dictionary class xxx kAt plurale tantum
+PROPN_PAIKAT	Proper noun xxx kAt plurale tantum
 PROPN_PANKIT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_PARFAIT	Dictionary class 22 e
-PROPN_PATA	Dictionary class 9 t~d
-PROPN_PATEE	Dictionary class 20 e
-PROPN_PATSAS	Dictionary class 41 as
+PROPN_PARFAIT	Proper noun 22 e
+PROPN_PATA	Proper noun 9 t~d
+PROPN_PATEE	Proper noun 20 e
+PROPN_PATSAS	Proper noun 41 as
 PROPN_PEIPOT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_PELKO	k:0 without optional ’
-PROPN_PELTI	Dictionary class 5 front t~l
-PROPN_PENGER	Dictionary class 49 ger
-PROPN_PIDOT	Dictionary class 1ot plurale tantum
-PROPN_PII	Dictionary class 18 i
+PROPN_PELTI	Proper noun 5 front t~l
+PROPN_PENGER	Proper noun 49 ger
+PROPN_PIDOT	Proper noun 1ot plurale tantum
+PROPN_PII	Proper noun 18 i
 PROPN_PIIROA	dictionary class 15 oa, lexicalised ADJ_AINOA nouns
-PROPN_PIPPALOT	Dictionary class 3iot plurale tantum
-PROPN_PISTE	Dictionary class 48 Front
-PROPN_POHATTA	Dictionary class 14 back t0
-PROPN_POHJE	Dictionary class 48 back je
+PROPN_PIPPALOT	Proper noun 3iot plurale tantum
+PROPN_PISTE	Proper noun 48 Front
+PROPN_POHATTA	Proper noun 14 back t0
+PROPN_POHJE	Proper noun 48 back je
 PROPN_POIKA	Non-dictionary class poika
-PROPN_POJAT	Dictionary class pojat plurale tantum
-PROPN_POLITIIKKA	Dictionary class 9 k~0
-PROPN_PONSI	Dictionary class 27 back t~n
-PROPN_PORRAS	Dictionary class 41 ras The word mies has special s:h variation pattern.
-PROPN_PORTAAT	Dictionary class rtaat plurale tantum
-PROPN_PROBLEEMA	Dictionary class 11 back
-PROPN_PUHELIN	Dictionary class 33 back
-PROPN_PUNK	New loan words ending in consonant may be inflected as i stem words Dictionary class 5 back no i
-PROPN_PUU	Dictionary class 18 u
-PROPN_PUUT	Dictionary class xx puu t plurale tantum
+PROPN_POJAT	Proper noun pojat plurale tantum
+PROPN_POLITIIKKA	Proper noun 9 k~0
+PROPN_PONSI	Proper noun 27 back t~n
+PROPN_PORRAS	Proper noun 41 ras The word mies has special s:h variation pattern.
+PROPN_PORTAAT	Proper noun rtaat plurale tantum
+PROPN_PROBLEEMA	Proper noun 11 back
+PROPN_PUHELIN	Proper noun 33 back
+PROPN_PUNK	New loan words ending in consonant may be inflected as i stem words Proper noun 5 back no i
+PROPN_PUU	Proper noun 18 u
+PROPN_PUUT	Proper noun xx puu t plurale tantum
 PROPN_PYHTÄÄ	Proper nouns with ää-stems
-PROPN_PYTTY	Dictionary class 1ty
-PROPN_PYY	Dictionary class 18 y
-PROPN_PÄÄ	Dictionary class 18 ä
-PROPN_PÖKSYT	Dictionary class 1y plurale tantum
+PROPN_PYTTY	Proper noun 1ty
+PROPN_PYY	Proper noun 18 y
+PROPN_PÄÄ	Proper noun 18 ä
+PROPN_PÖKSYT	Proper noun 1y plurale tantum
 PROPN_PÖLHÄÄT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_PÖLLÖT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_PÖNTTÖ	Dictionary class 1tö
-PROPN_PÖYTÄ	Dictionary class 10 front t~d
-PROPN_RAGUU	Dictionary class 20 u
-PROPN_RAKENNE	Dictionary class 48 back ne
-PROPN_RAMPA	Dictionary class 9 p~m
+PROPN_PÖNTTÖ	Proper noun 1tö
+PROPN_PÖYTÄ	Proper noun 10 front t~d
+PROPN_RAGUU	Proper noun 20 u
+PROPN_RAKENNE	Proper noun 48 back ne
+PROPN_RAMPA	Proper noun 9 p~m
 PROPN_RANGAT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_RANNAT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_RAPPE	Proper nouns with ppe:pe-stems
-PROPN_RAPPUSET	Dictionary class 38 nen plurale tantum
-PROPN_RAPUT	Dictionary class 1put plurale tantum
-PROPN_RATAS	Dictionary class 41 tas
-PROPN_RAUDAT	Dictionary class xxx dat plurale tantum
-PROPN_RAUNIOT	Dictionary class 2iot plurale tantum
+PROPN_RAPPUSET	Proper noun 38 nen plurale tantum
+PROPN_RAPUT	Proper noun 1put plurale tantum
+PROPN_RATAS	Proper noun 41 tas
+PROPN_RAUDAT	Proper noun xxx dat plurale tantum
+PROPN_RAUNIOT	Proper noun 2iot plurale tantum
 PROPN_RAVUT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_REGGAE	class 21 with
-PROPN_REIKÄ	Dictionary class 10 back k~’~0
+PROPN_REIKÄ	Proper noun 10 back k~’~0
 PROPN_REIÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_RENKAAT	Dictionary class gaat plurale tantum
+PROPN_RENKAAT	Proper noun gaat plurale tantum
 PROPN_RIIPI	Proper nouns with i:e and p:v 
 PROPN_RIIVET	Plural-only proper nouns with i:e and p:v
 PROPN_RIMMI	Proper nouns with mmi:mmit variations
 PROPN_RIMMIT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_RIMPI	Dictionary class 7 front p~m
+PROPN_RIMPI	Proper noun 7 front p~m
 PROPN_RINNET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_RINTEET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_RIPE	Dictionary class 48 front pe
-PROPN_RIPSET	Dictionary class xxx ripset plurale tantum
+PROPN_RIPE	Proper noun 48 front pe
+PROPN_RIPSET	Proper noun xxx ripset plurale tantum
 PROPN_RIUTAT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_ROITOT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_ROMPAAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_ROSÉ	Dictionary class 21 e back
-PROPN_ROTTA	Dictionary class 10 back t~0
-PROPN_RUIPELO	Dictionary class 2o
-PROPN_RUIS	Dictionary class 41 is
-PROPN_RUMPU	Dictionary class 1mpu
-PROPN_RUNKO	Dictionary class 1nko
-PROPN_RUOKO	Between three vowels where k is surrounded by same vowels the k becomes obligatorily ’. When the vowels are different, it becomes optionally ’ (as in N_TEKO), and after consonant other than s it is k ~ 0 (as in N_UKKO). Dictionary class 1ko
+PROPN_ROSÉ	Proper noun 21 e back
+PROPN_ROTTA	Proper noun 10 back t~0
+PROPN_RUIPELO	Proper noun 2o
+PROPN_RUIS	Proper noun 41 is
+PROPN_RUMPU	Proper noun 1mpu
+PROPN_RUNKO	Proper noun 1nko
+PROPN_RUOKO	Between three vowels where k is surrounded by same vowels the k becomes obligatorily ’. When the vowels are different, it becomes optionally ’ (as in N_TEKO), and after consonant other than s it is k ~ 0 (as in N_UKKO). Proper noun 1ko
 PROPN_RUOPPAAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_RUUHI	Dictionary class 24 back
-PROPN_RUUMIS	Dictionary class 41 is back
-PROPN_RUUVI	Dictionary class 5 back
-PROPN_RYPÄS	Dictionary class 41 päs
-PROPN_RYYPPY	Dictionary class 1py
-PROPN_RÄJÄYTYS	Dictionary class 39 front Some of the s final stems have additional s:t:d variation in singular stems. Most notably, the UUs derivations are in this class.
+PROPN_RUUHI	Proper noun 24 back
+PROPN_RUUMIS	Proper noun 41 is back
+PROPN_RUUVI	Proper noun 5 back
+PROPN_RYPÄS	Proper noun 41 päs
+PROPN_RYYPPY	Proper noun 1py
+PROPN_RÄJÄYTYS	Proper noun 39 front Some of the s final stems have additional s:t:d variation in singular stems. Most notably, the UUs derivations are in this class.
 PROPN_RÄMEET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_RÄMEÄT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_RÄMIÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SAAPAS	Dictionary class 41 pas
+PROPN_SAAPAS	Proper noun 41 pas
 PROPN_SAARET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SAKSET	Dictionary class xxx sakset plurale tantum
+PROPN_SAKSET	Proper noun xxx sakset plurale tantum
 PROPN_SALONTEET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SALPA	Dictionary class 9 p~v
+PROPN_SALPA	Proper noun 9 p~v
 PROPN_SAMMALET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SAMPI	Dictionary class 7 back p~m
-PROPN_SAMPO	Dictionary class 1mpo
-PROPN_SEIKKAILU	Dictionary class 2u
-PROPN_SEIVÄS	Dictionary class 41 väs
+PROPN_SAMPI	Proper noun 7 back p~m
+PROPN_SAMPO	Proper noun 1mpo
+PROPN_SEIKKAILU	Proper noun 2u
+PROPN_SEIVÄS	Proper noun 41 väs
 PROPN_SELENE	Proper nouns with new e stems and front harmony
 PROPN_SELJÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SEPPÄ	Dictionary class 10 front p~0
-PROPN_SERGEJ	Dictionary class 22 j-final front
-PROPN_SERKUKSET	Dictionary class kset plurale tantum
-PROPN_SHOW	Dictionary class 22 u
-PROPN_SIEMEN	Dictionary class 32 front
-PROPN_SIIRTO	Dictionary class 1rto
-PROPN_SIIVILÄ	Dictionary class 12++ front
-PROPN_SILAKAT	Dictionary class 14 kat plurale tantum
+PROPN_SEPPÄ	Proper noun 10 front p~0
+PROPN_SERGEJ	Proper noun 22 j-final front
+PROPN_SERKUKSET	Proper noun kset plurale tantum
+PROPN_SHOW	Proper noun 22 u
+PROPN_SIEMEN	Proper noun 32 front
+PROPN_SIIRTO	Proper noun 1rto
+PROPN_SIIVILÄ	Proper noun 12++ front
+PROPN_SILAKAT	Proper noun 14 kat plurale tantum
 PROPN_SILMÄKKEET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SISÄLTÖ	Dictionary class 1ltö
+PROPN_SISÄLTÖ	Proper noun 1ltö
 PROPN_SIUNAAMATTOMAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SIVISTYNYT	Dictionary class 47 front
-PROPN_SKEITTI	Dictionary class 5 front t~0
-PROPN_SOINTI	Dictionary class 5 back t~n
-PROPN_SOKEA	The a-final words ending in long vowels with syllable boundary have a:0 variation and more allomorphs for plyral genitive or illative. Dictionary class 15 ea
-PROPN_SOTA	Dictionary class 10 back t~d
+PROPN_SIVISTYNYT	Proper noun 47 front
+PROPN_SKEITTI	Proper noun 5 front t~0
+PROPN_SOINTI	Proper noun 5 back t~n
+PROPN_SOKEA	The a-final words ending in long vowels with syllable boundary have a:0 variation and more allomorphs for plyral genitive or illative. Proper noun 15 ea
+PROPN_SOTA	Proper noun 10 back t~d
 PROPN_SPOTIFY	New proper nouns with back and front harmonies, no stem variations
-PROPN_STADION	Dictionary class 6 back no i
-PROPN_SUHTEET	Dictionary class taad plurale tantum
-PROPN_SUKAT	Dictionary class xxx a front k0 plurale tantum
-PROPN_SULKA	Dictionary class 9 k~0 without optional ’
-PROPN_SUODATIN	Dictionary class 33 back tin
+PROPN_STADION	Proper noun 6 back no i
+PROPN_SUHTEET	Proper noun taad plurale tantum
+PROPN_SUKAT	Proper noun xxx a front k0 plurale tantum
+PROPN_SULKA	Proper noun 9 k~0 without optional ’
+PROPN_SUODATIN	Proper noun 33 back tin
 PROPN_SUOT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_SYDÄN	Like NOUN_ELIN, allows common non-standards of type: sydämmen, sytämen
 PROPN_SYLI	Proper nouns with i:e variations and
-PROPN_SYÖMINGIT	Dictionary class xxx git fornt plurale tantum
-PROPN_SÄNKY	Dictionary class 1nky
+PROPN_SYÖMINGIT	Proper noun xxx git fornt plurale tantum
+PROPN_SÄNKY	Proper noun 1nky
 PROPN_SÄRKÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_SÄÄDIN	Dictionary class 33 fron din
+PROPN_SÄÄDIN	Proper noun 33 fron din
 PROPN_SÄÄRET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_TAIMI	Dictionary class 25 back
-PROPN_TAIVAL	Dictionary class 49 val
-PROPN_TALKOOT	Dictionary class xxx kooot plurale tantum
+PROPN_TAIMI	Proper noun 25 back
+PROPN_TAIVAL	Proper noun 49 val
+PROPN_TALKOOT	Proper noun xxx kooot plurale tantum
 PROPN_TALO	The most basic noun stem does not have any stem internal variation and uses few commonest allomorphs. The words in this class are either bisyllabic or have one of common derivational suffixes: sto, .... The nouns in this class end in o, u, y or ö, which determines their illative suffix and therefore exact classification:
-PROPN_TARVE	Dictionary class 48 back ve
-PROPN_TAUDIT	Dictionary class xxx dit plurale tantum
-PROPN_TAUTI	Dictionary class 5 back t~d
-PROPN_TAVAT	Dictionary class xxx vat plurale tantum
-PROPN_TEE	Dictionary class 18 e
-PROPN_TEHDAS	Dictionary class 41 das
+PROPN_TARVE	Proper noun 48 back ve
+PROPN_TAUDIT	Proper noun xxx dit plurale tantum
+PROPN_TAUTI	Proper noun 5 back t~d
+PROPN_TAVAT	Proper noun xxx vat plurale tantum
+PROPN_TEE	Proper noun 18 e
+PROPN_TEHDAS	Proper noun 41 das
 PROPN_TEHTAAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_TEKO	Between two vowels, the weak grade of k is optionally an apostrophe instead. For k that is not optionally ’, for example when it is after a consonant other than s, the variation is k ~ 0 instead (e.g. N_UKKO). Dictionary class 1ko
-PROPN_TIE	Dictionary class 19 ie
-PROPN_TIENOO	Dictionary class 17 o
-PROPN_TIETEET	Dictionary class xxx teet plurale tantum
+PROPN_TEKO	Between two vowels, the weak grade of k is optionally an apostrophe instead. For k that is not optionally ’, for example when it is after a consonant other than s, the variation is k ~ 0 instead (e.g. N_UKKO). Proper noun 1ko
+PROPN_TIE	Proper noun 19 ie
+PROPN_TIENOO	Proper noun 17 o
+PROPN_TIETEET	Proper noun xxx teet plurale tantum
 PROPN_TIHVII	Proper nouns with ii-stems
-PROPN_TIKKAAT	Dictionary class kaat plurale tantum
-PROPN_TIKKU	Dictionary class 1ku
-PROPN_TIPPA	Dictionary class 9 p~0
-PROPN_TOIMET	Dictionary class 25 t plurale tantum
-PROPN_TOKEE	Dictionary class 20 e
-PROPN_TONGIT	Dictionary class xxx git plurale tantum
-PROPN_TORTTU	Dictionary class 1tu
+PROPN_TIKKAAT	Proper noun kaat plurale tantum
+PROPN_TIKKU	Proper noun 1ku
+PROPN_TIPPA	Proper noun 9 p~0
+PROPN_TOIMET	Proper noun 25 t plurale tantum
+PROPN_TOKEE	Proper noun 20 e
+PROPN_TONGIT	Proper noun xxx git plurale tantum
+PROPN_TORTTU	Proper noun 1tu
 PROPN_TOULAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_TRIKOO	Dictionary class 20 o
-PROPN_TULI	Dictionary class 23
-PROPN_TUNTO	Dictionary class 1nto
-PROPN_TUOMIO	The words with stem vowel o, u, y, ö preceded by vowels still have no more stem variation than other cases, but give yet another pattern of allomorphs for plural partitives and genitives Dictionary class 3o There's plenty of imaginable non-standard allomorph forms after long vowels
-PROPN_TYTÄR	Dictionary class 32 tär
-PROPN_TYTÖT	Dictionary class 1töt plurale tantum
-PROPN_TYYLI	Dictionary class 5 front
-PROPN_TYYPPI	Dictionary class 5 front p~0
-PROPN_TYÖ	Dictionary class 19 yö
+PROPN_TRIKOO	Proper noun 20 o
+PROPN_TULI	Proper noun 23
+PROPN_TUNTO	Proper noun 1nto
+PROPN_TUOMIO	The words with stem vowel o, u, y, ö preceded by vowels still have no more stem variation than other cases, but give yet another pattern of allomorphs for plural partitives and genitives Proper noun 3o There's plenty of imaginable non-standard allomorph forms after long vowels
+PROPN_TYTÄR	Proper noun 32 tär
+PROPN_TYTÖT	Proper noun 1töt plurale tantum
+PROPN_TYYLI	Proper noun 5 front
+PROPN_TYYPPI	Proper noun 5 front p~0
+PROPN_TYÖ	Proper noun 19 yö
 PROPN_TYÖTTÖMÄT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_TÖLPÄKÖT	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_TÖLPÄT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_TÖRPPÖ	Dictionary class 1pö
+PROPN_TÖRPPÖ	Proper noun 1pö
 PROPN_UKKO	Proper nouns with o stem and  kk:k gradations
-PROPN_ULAPPA	Dictionary class 14 back p̃0
-PROPN_VAADIN	Dictionary class 33 back din
-PROPN_VAAKA	Dictionary class 9 k~’ with obligatory ’
+PROPN_ULAPPA	Proper noun 14 back p̃0
+PROPN_VAADIN	Proper noun 33 back din
+PROPN_VAAKA	Proper noun 9 k~’ with obligatory ’
 PROPN_VAANII	Proper nouns with ii-stems
 PROPN_VAASAN	non-inflecting proper nouns
-PROPN_VAINAA	Dictionary class 17 a
-PROPN_VAKUUTUS	Dictionary class 39 back
-PROPN_VALJAAT	Dictionary class jaat plurale tantum
-PROPN_VALLAT	Dictionary class xxx lat plurale tantum
-PROPN_VALTA	Dictionary class 9 t~l
-PROPN_VANHEMMAT	Dictionary class xxx matt plurale tantum
-PROPN_VANKI	Dictionary class 5 back k~g
-PROPN_VARAS	Dictionary class 41 as
-PROPN_VARAT	Dictionary class xxx rrt plurale tantum
+PROPN_VAINAA	Proper noun 17 a
+PROPN_VAKUUTUS	Proper noun 39 back
+PROPN_VALJAAT	Proper noun jaat plurale tantum
+PROPN_VALLAT	Proper noun xxx lat plurale tantum
+PROPN_VALTA	Proper noun 9 t~l
+PROPN_VANHEMMAT	Proper noun xxx matt plurale tantum
+PROPN_VANKI	Proper noun 5 back k~g
+PROPN_VARAS	Proper noun 41 as
+PROPN_VARAT	Proper noun xxx rrt plurale tantum
 PROPN_VARPAAT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_VARSI	Dictionary class 27 back t~r
-PROPN_VARVAS	Dictionary class 41 vas
-PROPN_VEHKEILY	Dictionary class 2y
-PROPN_VEITSI	Dictionary class 27 tsi front The -ksi stem in haaksi includes k:h variation.
+PROPN_VARSI	Proper noun 27 back t~r
+PROPN_VARVAS	Proper noun 41 vas
+PROPN_VEHKEILY	Proper noun 2y
+PROPN_VEITSI	Proper noun 27 tsi front The -ksi stem in haaksi includes k:h variation.
 PROPN_VELJET	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_VERSAILLES	Dictionary class 22 i back
-PROPN_VETO	Dictionary class 1to
-PROPN_VETY	Dictionary class 1ty
-PROPN_VIENTI	Dictionary class 5 front t~n
-PROPN_VIHKIÄISET	Dictionary class 38 nen fornt plurale tantum
+PROPN_VERSAILLES	Proper noun 22 i back
+PROPN_VETO	Proper noun 1to
+PROPN_VETY	Proper noun 1ty
+PROPN_VIENTI	Proper noun 5 front t~n
+PROPN_VIHKIÄISET	Proper noun 38 nen fornt plurale tantum
 PROPN_VIIRRET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_VIIS	Proper nouns with iis:iide stems (from numeral 5)
-PROPN_VIIVE	Dictionary class 48 front ve
-PROPN_VIKA	Dictionary class 9 k~’~0
-PROPN_VINKU	Dictionary class 1nku
-PROPN_VIRSI	Dictionary class 27 front t~r
+PROPN_VIIVE	Proper noun 48 front ve
+PROPN_VIKA	Proper noun 9 k~’~0
+PROPN_VINKU	Proper noun 1nku
+PROPN_VIRSI	Proper noun 27 front t~r
 PROPN_VODĂ	for foreign words ending in ǎ that inflects like a
-PROPN_VOIMA	Dictionary class 11 back
+PROPN_VOIMA	Proper noun 11 back
 PROPN_VON	proper noun particle, no inflection, no compounding, for some foreign surname etc. patronymical constructs
-PROPN_VUO	Dictionary class 19 uo
-PROPN_VUODET	Dictionary class 27 det plurale tantum
-PROPN_VUOLLE	Dictionary class 48 back le
+PROPN_VUO	Proper noun 19 uo
+PROPN_VUODET	Proper noun 27 det plurale tantum
+PROPN_VUOLLE	Proper noun 48 back le
 PROPN_VUOLLET	Plural-only proper noun with i:e stem and kk:k gradation
 PROPN_VÄRTÖ	Proper nouns with ö stems and rt:rr gradations
 PROPN_WADA	An acronym that is also inflected like a-final noun without a colon, e.g. WADA ~ WADAn. Plurals only with colon.
 PROPN_YHTIÖT	Plural-only proper noun with i:e stem and kk:k gradation
-PROPN_YKSIKKÖ	Dictionary class 4 kkö
-PROPN_YLÄNKÖ	Dictionary class 1nkö
+PROPN_YKSIKKÖ	Proper noun 4 kkö
+PROPN_YLÄNKÖ	Proper noun 1nkö
 PROPN_YLÖÖ	Proper nouns with öö stems
 PROPN_YMPÄRYSTÄ	Proper nouns with ä:0 stems
 PROPN_YRITTÄ	Proper nouns with ttä stems
-PROPN_YSTÄVYKSET	Dictionary class kset fr plurale tantum
-PROPN_YÖKKÖ	Dictionary class 1kö
-PROPN_ZEN	Dictionary class 5 front no i
-PROPN_ZOMBIE	Similar inflection exists in limited amounts in new loan words that are written as pronounced (thus taking no stem variation but still ending with long vowels with a syllable boundary) Dictionary class 3eta
-PROPN_ÄYRÄS	Dictionary class 41 äs
+PROPN_YSTÄVYKSET	Proper noun kset fr plurale tantum
+PROPN_YÖKKÖ	Proper noun 1kö
+PROPN_ZEN	Proper noun 5 front no i
+PROPN_ZOMBIE	Similar inflection exists in limited amounts in new loan words that are written as pronounced (thus taking no stem variation but still ending with long vowels with a syllable boundary) Proper noun 3eta
+PROPN_ÄYRÄS	Proper noun 41 äs
 PUNCT_NONSTD_DASH_LOOP	accounts for repeated hyphen-like characters
 PUNCT_NONSTD_EXCL_LOOP	accounts for repeated exclamation-like characters
 PUNCT_PILKKU	punctuation, rare back inflection plausible
@@ -2116,234 +2116,234 @@ SYM_METRI	symbols, inflection with : and compounding with -
 SYM_TUOTE	symbols, inflection with : and compounding with -
 SYM_WEBER	symbols, inflection with : and compounding with -
 SYM_Ω	symbols, inflection with : and compounding with -
-VERB_AALLOTA	Dictionary class75 lota
-VERB_AHNEHTIA	Dictionary class61 back t~d
-VERB_AMPUA	Dictionary class52 p~m u
-VERB_ARVAILLA	Dictionary class67 back i~e l
-VERB_ARVATA	Dictionary class73 back
-VERB_AUTTAA	Dictionary class56 back t~0
-VERB_DIGATA	Dictionary class73 back 0~g
-VERB_EHTIÄ	Dictionary class61 front t~d
+VERB_AALLOTA	Verbs with 75 lota
+VERB_AHNEHTIA	Verbs with 61 back t~d
+VERB_AMPUA	Verbs with 52 p~m u
+VERB_ARVAILLA	Verbs with 67 back i~e l
+VERB_ARVATA	Verbs with 73 back
+VERB_AUTTAA	Verbs with 56 back t~0
+VERB_DIGATA	Verbs with 73 back 0~g
+VERB_EHTIÄ	Verbs with 61 front t~d
 VERB_EI	Negation verb ‘ei’ has heteroclitic inflection
-VERB_ENTÄÄ	Dictionary class55 front t~n
-VERB_ERATA	Dictionary class72 back 0~k
-VERB_ETUILLA	Dictionary class67 back i~e l
-VERB_HALAJAA	Dictionary class77 back
-VERB_HALJETA	Dictionary class74 back j~ke
-VERB_HALUTA	Dictionary class74 back with uu dial
-VERB_HAPATA	Dictionary class72 back 0~p
-VERB_HARPPOA	Dictionary class52 p~0 o
-VERB_HAUKKOA	Dictionary class52 k~0 o
-VERB_HELLITÄ	Dictionary class75 litä
-VERB_HELPOTA	Dictionary class72 back 0~p o
-VERB_HELÄJÄÄ	Dictionary class77 front
-VERB_HERMOTTUA	Dictionary class52 t~0 u
-VERB_HERÄTELLÄ	Dictionary class67 front l 0t
-VERB_HIIPUA	Dictionary class52 p~v u
-VERB_HIVENTÄÄ	Dictionary class54 front t~n
-VERB_HUMALTUA	Dictionary class52 t~l u
-VERB_HUONONTAA	Dictionary class54 back t~n
-VERB_HUUTAA	Dictionary class54 back
-VERB_HYLJÄTÄ	Dictionary class73 front j~k
-VERB_HYLKIÄ	Dictionary class61 back k~j
-VERB_HYPELLÄ	Dictionary class67 front l 0p
-VERB_HYPPIÄ	Dictionary class61 front p~0
-VERB_HÄVÄISTÄ	Dictionary class66 front v p
-VERB_ILJETÄ	Dictionary class74 front j~k
-VERB_INNOTA	Dictionary class74 back t~no
-VERB_IRROTA	Dictionary class74 back t~to
-VERB_ISÄNNÖIDÄ	Dictionary class68 front
-VERB_JAHDATA	Dictionary class73 back d~r
-VERB_JOUTAA	Dictionary class55 back
-VERB_JUOSTA	Dictionary class70 back
-VERB_JYRKETÄ	Dictionary class72 front 0~k
-VERB_JÄÄDÄ	Dictionary class63 ä
-VERB_KAATAA	Dictionary class57 back
-VERB_KAIKOTA	Dictionary class74 back 0~k
-VERB_KAIPAELLA	Dictionary class67 back e~i l
-VERB_KAIVATA	Dictionary class73 back v~p
-VERB_KALPPIA	Dictionary class61 back p~0
-VERB_KAMMETA	Dictionary class74 back p~mu
-VERB_KANTAA	Dictionary class56 back t~n
-VERB_KARHETA	Dictionary class72 back
-VERB_KARHUTA	Dictionary class74 back
-VERB_KASVAA	Dictionary class56 back
+VERB_ENTÄÄ	Verbs with 55 front t~n
+VERB_ERATA	Verbs with 72 back 0~k
+VERB_ETUILLA	Verbs with 67 back i~e l
+VERB_HALAJAA	Verbs with 77 back
+VERB_HALJETA	Verbs with 74 back j~ke
+VERB_HALUTA	Verbs with 74 back with uu dial
+VERB_HAPATA	Verbs with 72 back 0~p
+VERB_HARPPOA	Verbs with 52 p~0 o
+VERB_HAUKKOA	Verbs with 52 k~0 o
+VERB_HELLITÄ	Verbs with 75 litä
+VERB_HELPOTA	Verbs with 72 back 0~p o
+VERB_HELÄJÄÄ	Verbs with 77 front
+VERB_HERMOTTUA	Verbs with 52 t~0 u
+VERB_HERÄTELLÄ	Verbs with 67 front l 0t
+VERB_HIIPUA	Verbs with 52 p~v u
+VERB_HIVENTÄÄ	Verbs with 54 front t~n
+VERB_HUMALTUA	Verbs with 52 t~l u
+VERB_HUONONTAA	Verbs with 54 back t~n
+VERB_HUUTAA	Verbs with 54 back
+VERB_HYLJÄTÄ	Verbs with 73 front j~k
+VERB_HYLKIÄ	Verbs with 61 back k~j
+VERB_HYPELLÄ	Verbs with 67 front l 0p
+VERB_HYPPIÄ	Verbs with 61 front p~0
+VERB_HÄVÄISTÄ	Verbs with 66 front v p
+VERB_ILJETÄ	Verbs with 74 front j~k
+VERB_INNOTA	Verbs with 74 back t~no
+VERB_IRROTA	Verbs with 74 back t~to
+VERB_ISÄNNÖIDÄ	Verbs with 68 front
+VERB_JAHDATA	Verbs with 73 back d~r
+VERB_JOUTAA	Verbs with 55 back
+VERB_JUOSTA	Verbs with 70 back
+VERB_JYRKETÄ	Verbs with 72 front 0~k
+VERB_JÄÄDÄ	Verbs with 63 ä
+VERB_KAATAA	Verbs with 57 back
+VERB_KAIKOTA	Verbs with 74 back 0~k
+VERB_KAIPAELLA	Verbs with 67 back e~i l
+VERB_KAIVATA	Verbs with 73 back v~p
+VERB_KALPPIA	Verbs with 61 back p~0
+VERB_KAMMETA	Verbs with 74 back p~mu
+VERB_KANTAA	Verbs with 56 back t~n
+VERB_KARHETA	Verbs with 72 back
+VERB_KARHUTA	Verbs with 74 back
+VERB_KASVAA	Verbs with 56 back
 VERB_KATSOA	The regular o stem with dialectally gradating ts variations
-VERB_KAUNISTUA	The u stems have no stem variation: Dictionary class52u
-VERB_KAVETA	Dictionary class72 back v~p
-VERB_KERETÄ	Dictionary class74 front 0~k e
-VERB_KERITÄ	Dictionary class75 itä
-VERB_KIERTYÄ	Dictionary class52 t~r y
-VERB_KIETOA	Dictionary class52 t~d o
-VERB_KIHERRELLÄ	Dictionary class67 front l r~t
-VERB_KIILLELLÄ	Dictionary class67 frpnt l l~t
-VERB_KIINNETÄ	Dictionary class72 front n~t
-VERB_KIITÄÄ	Dictionary class55 front
-VERB_KIRVOTA	Dictionary class74 back v~po
-VERB_KIVETTYÄ	Dictionary class52 t~0 y
-VERB_KIVETÄ	Dictionary class74 front
-VERB_KIVISTÄÄ	Dictionary class53 front
-VERB_KIVUTA	Dictionary class74 back v~p
-VERB_KOMENNELLA	Dictionary class67 back l n~t
-VERB_KONTIA	Dictionary class61 back t~n
-VERB_KOPIOIDA	Dictionary class62 back
-VERB_KORVETA	Dictionary class74 back v~pe
-VERB_KOSIA	Dictionary class61 back
-VERB_KOUKUTA	Dictionary class74 front 0~k u
-VERB_KUHERTAA	Dictionary class54 back t~r
-VERB_KUKKIA	Dictionary class61 back k~0
-VERB_KUMMUTA	Dictionary class74 back m~p
-VERB_KUTEA	Dictionary class58 back t~d
-VERB_KYNTÄÄ	Dictionary class53 front t~n
-VERB_KYTKEÄ	Dictionary class58 front
-VERB_KÄRKKYÄ	Dictionary class52 k~0 y
-VERB_KÄYDÄ	Dictionary class65
-VERB_KÄÄNNELLÄ	Dictionary class67 front l n~t
-VERB_LASSOTA	Dictionary class75 back
-VERB_LEIKELLÄ	Dictionary class67 front l 0k
-VERB_LEPPYÄ	Dictionary class52 p~0 y
-VERB_LEPÄILLÄ	Dictionary class67 front i~e l
-VERB_LEUDOTA	Dictionary class72 back d~t
-VERB_LEVÄTÄ	Dictionary class73 front v~p
-VERB_LIIDUTA	Dictionary class74 back d~tu
-VERB_LOBATA	Dictionary class73 back 0~b
-VERB_LOITOTA	Dictionary class72 back 0~t
-VERB_LOPPUA	Dictionary class52 p~0 u
-VERB_LOTOTA	Dictionary class74 back 0~to
-VERB_LUNTATA	Dictionary class73 back 0~t
-VERB_LUUTUTA	Dictionary class74 back 0~tu
-VERB_LÄHTEÄ	Dictionary class60
-VERB_LÄMMETÄ	Dictionary class72 front m~p
-VERB_LÄMMITÄ	Dictionary class75 mitä
-VERB_LÄNTÄTÄ	Dictionary class73 front 0~t
-VERB_MARISTA	Dictionary class66 back
-VERB_MAUKUA	Dictionary class52 k~0’ u
-VERB_MELLAKOIDA	Dictionary class68 back
-VERB_MENNÄ	Dictionary class67 front n
-VERB_MERKITÄ	Dictionary class69 front
-VERB_MIELTYÄ	Dictionary class52 t~l y
-VERB_MIETTIÄ	Dictionary class61 front t~0
-VERB_MOITTIA	Dictionary class61 back t~0
-VERB_MOJAHTAA	Dictionary class53 back t~d
-VERB_MORKATA	Dictionary class73 back 0~k
-VERB_MULLATA	Dictionary class73 back l~t
-VERB_MUODOTA	Dictionary class75 dota
-VERB_MUTRISTAA	Dictionary class53 back
-VERB_MYYDÄ	Dictionary class63 y
-VERB_MÄDÄTÄ	Dictionary class72 front d~t
-VERB_MÄIKYÄ	Dictionary class52 k~0’ y
-VERB_MÖNKIÄ	Dictionary class61 front k~g
-VERB_NAKELLA	Dictionary class67 back l 0k
-VERB_NAKERRELLA	Dictionary class67 back l r~t
-VERB_NIUKETA	Dictionary class72 back 0~k
-VERB_NUOKKUA	Dictionary class52 k~0 u
-VERB_NÄHDÄ	Dictionary class71
-VERB_NÄPERTÄÄ	Dictionary class54 front t~r
+VERB_KAUNISTUA	The u stems have no stem variation: Verbs with 52u
+VERB_KAVETA	Verbs with 72 back v~p
+VERB_KERETÄ	Verbs with 74 front 0~k e
+VERB_KERITÄ	Verbs with 75 itä
+VERB_KIERTYÄ	Verbs with 52 t~r y
+VERB_KIETOA	Verbs with 52 t~d o
+VERB_KIHERRELLÄ	Verbs with 67 front l r~t
+VERB_KIILLELLÄ	Verbs with 67 frpnt l l~t
+VERB_KIINNETÄ	Verbs with 72 front n~t
+VERB_KIITÄÄ	Verbs with 55 front
+VERB_KIRVOTA	Verbs with 74 back v~po
+VERB_KIVETTYÄ	Verbs with 52 t~0 y
+VERB_KIVETÄ	Verbs with 74 front
+VERB_KIVISTÄÄ	Verbs with 53 front
+VERB_KIVUTA	Verbs with 74 back v~p
+VERB_KOMENNELLA	Verbs with 67 back l n~t
+VERB_KONTIA	Verbs with 61 back t~n
+VERB_KOPIOIDA	Verbs with 62 back
+VERB_KORVETA	Verbs with 74 back v~pe
+VERB_KOSIA	Verbs with 61 back
+VERB_KOUKUTA	Verbs with 74 front 0~k u
+VERB_KUHERTAA	Verbs with 54 back t~r
+VERB_KUKKIA	Verbs with 61 back k~0
+VERB_KUMMUTA	Verbs with 74 back m~p
+VERB_KUTEA	Verbs with 58 back t~d
+VERB_KYNTÄÄ	Verbs with 53 front t~n
+VERB_KYTKEÄ	Verbs with 58 front
+VERB_KÄRKKYÄ	Verbs with 52 k~0 y
+VERB_KÄYDÄ	Verbs with 65
+VERB_KÄÄNNELLÄ	Verbs with 67 front l n~t
+VERB_LASSOTA	Verbs with 75 back
+VERB_LEIKELLÄ	Verbs with 67 front l 0k
+VERB_LEPPYÄ	Verbs with 52 p~0 y
+VERB_LEPÄILLÄ	Verbs with 67 front i~e l
+VERB_LEUDOTA	Verbs with 72 back d~t
+VERB_LEVÄTÄ	Verbs with 73 front v~p
+VERB_LIIDUTA	Verbs with 74 back d~tu
+VERB_LOBATA	Verbs with 73 back 0~b
+VERB_LOITOTA	Verbs with 72 back 0~t
+VERB_LOPPUA	Verbs with 52 p~0 u
+VERB_LOTOTA	Verbs with 74 back 0~to
+VERB_LUNTATA	Verbs with 73 back 0~t
+VERB_LUUTUTA	Verbs with 74 back 0~tu
+VERB_LÄHTEÄ	Verbs with 60
+VERB_LÄMMETÄ	Verbs with 72 front m~p
+VERB_LÄMMITÄ	Verbs with 75 mitä
+VERB_LÄNTÄTÄ	Verbs with 73 front 0~t
+VERB_MARISTA	Verbs with 66 back
+VERB_MAUKUA	Verbs with 52 k~0’ u
+VERB_MELLAKOIDA	Verbs with 68 back
+VERB_MENNÄ	Verbs with 67 front n
+VERB_MERKITÄ	Verbs with 69 front
+VERB_MIELTYÄ	Verbs with 52 t~l y
+VERB_MIETTIÄ	Verbs with 61 front t~0
+VERB_MOITTIA	Verbs with 61 back t~0
+VERB_MOJAHTAA	Verbs with 53 back t~d
+VERB_MORKATA	Verbs with 73 back 0~k
+VERB_MULLATA	Verbs with 73 back l~t
+VERB_MUODOTA	Verbs with 75 dota
+VERB_MUTRISTAA	Verbs with 53 back
+VERB_MYYDÄ	Verbs with 63 y
+VERB_MÄDÄTÄ	Verbs with 72 front d~t
+VERB_MÄIKYÄ	Verbs with 52 k~0’ y
+VERB_MÖNKIÄ	Verbs with 61 front k~g
+VERB_NAKELLA	Verbs with 67 back l 0k
+VERB_NAKERRELLA	Verbs with 67 back l r~t
+VERB_NIUKETA	Verbs with 72 back 0~k
+VERB_NUOKKUA	Verbs with 52 k~0 u
+VERB_NÄHDÄ	Verbs with 71
+VERB_NÄPERTÄÄ	Verbs with 54 front t~r
 VERB_OLLA	The verb olla has very peculiar and heteroclitic inflection with lot of common short forms in standard spoken Finnish
-VERB_OMMELLA	Dictionary class67 back l m~p
-VERB_ONKIA	Dictionary class61 back k~g
-VERB_PALKITA	Dictionary class69 back
-VERB_PANNA	Dictionary class67 back n
-VERB_PEITOTA	Dictionary class75 tota
-VERB_PENKOA	Dictionary class52 k~g o
-VERB_PIDETÄ	Dictionary class72 front d~t e
-VERB_PIERRÄ	Dictionary class67 front r
-VERB_PIESTÄ	Dictionary class70 front
-VERB_PINGOTA	Dictionary class74 back g~ko
-VERB_POIKETA	Dictionary class74 back 0~k e
-VERB_POLKEA	Dictionary class58 back k~j
-VERB_PUKEA	Dictionary class58 back k~0
-VERB_PULPUTA	Dictionary class74 back 0~p
-VERB_PUNOA	The o stems have no stem variation: Dictionary class52o
-VERB_PURKAA	Dictionary class53 back k~0
-VERB_PUSERTUA	Dictionary class52 t~r u
-VERB_PYYTÄÄ	Dictionary class54 front
-VERB_PÄTEÄ	Dictionary class58 front t~d
-VERB_RAAPIA	Dictionary class61 back p~v
-VERB_RAIKAA	Dictionary class78 back
-VERB_RANGAISTA	Dictionary class66 back k~g
-VERB_RENNOTA	Dictionary class74 back t~no
-VERB_REVETÄ	Dictionary class74 front v~pe
-VERB_RIIPIÄ	Dictionary class61 front p~v
-VERB_ROHJETA	Dictionary class.. back j~k
-VERB_ROHTUA	Dictionary class52 t~d u
-VERB_RYNNÄTÄ	Dictionary class73 front n~t
-VERB_RYPEÄ	Dictionary class58 front p~v
-VERB_RYSKIÄ	Dictionary class61 front
-VERB_RYÖPYTÄ	Dictionary class75 pytä
-VERB_RÄPSYTTÄÄ	Dictionary class53 front t~0
-VERB_SAADA	Dictionary class63 a
-VERB_SAARTAA	Dictionary class57 back t~r
-VERB_SAMMOTA	Dictionary class74 back p~mu
-VERB_SATAA	Dictionary class56 back t~d
-VERB_SELVITÄ	Dictionary class75 itä
-VERB_SIEPATA	Dictionary class73 back 0~p
-VERB_SI’ITÄ	Dictionary class75 itä oblig ’
-VERB_SILIYTYÄ	Dictionary class52 t~d y
-VERB_SILPOA	Dictionary class52 p~v o
-VERB_SIVALTAA	Dictionary class54 back t~l
-VERB_SORTAA	Dictionary class53 back t~r
-VERB_SOTKEA	Dictionary class58 back
-VERB_SULATELLA	Dictionary class67 back l 0t
-VERB_SUPETA	Dictionary class72 front 0~p
-VERB_SURRA	Dictionary class67 back r
-VERB_SUUNNATA	Dictionary class73 back n~t
-VERB_SYÖDÄ	Dictionary class64 yö In past and conditional forms of käydä, the glide before suffix is marked even in normative orthography.
-VERB_SYÖPYÄ	Dictionary class52 p~v y
-VERB_SÄILÖÄ	The ö stems have no stem variation: Dictionary class52ö
-VERB_SÄPSÄHDELLÄ	Dictionary class67 front l d~t
-VERB_SÄRKEÄ	Dictionary class58 front k~j
-VERB_SÖRKKIÄ	Dictionary class61 front k~0
-VERB_TAITAA	Dictionary class76 back
-VERB_TAKOA	Dictionary class52 k~0’ o
-VERB_TAPELLA	Dictionary class67 back l 0p
-VERB_TAPPAA	Dictionary class56 back p~0
-VERB_TEMMATA	Dictionary class73 back m~p
-VERB_TEMPOA	Dictionary class52 p~m o
-VERB_TIETÄÄ	Dictionary class76 front
-VERB_TIPAHDELLA	Dictionary class67 back l d~t
-VERB_TODETA	Dictionary class74 back t~de
-VERB_TUIKKAA	Dictionary class77 back
+VERB_OMMELLA	Verbs with 67 back l m~p
+VERB_ONKIA	Verbs with 61 back k~g
+VERB_PALKITA	Verbs with 69 back
+VERB_PANNA	Verbs with 67 back n
+VERB_PEITOTA	Verbs with 75 tota
+VERB_PENKOA	Verbs with 52 k~g o
+VERB_PIDETÄ	Verbs with 72 front d~t e
+VERB_PIERRÄ	Verbs with 67 front r
+VERB_PIESTÄ	Verbs with 70 front
+VERB_PINGOTA	Verbs with 74 back g~ko
+VERB_POIKETA	Verbs with 74 back 0~k e
+VERB_POLKEA	Verbs with 58 back k~j
+VERB_PUKEA	Verbs with 58 back k~0
+VERB_PULPUTA	Verbs with 74 back 0~p
+VERB_PUNOA	The o stems have no stem variation: Verbs with 52o
+VERB_PURKAA	Verbs with 53 back k~0
+VERB_PUSERTUA	Verbs with 52 t~r u
+VERB_PYYTÄÄ	Verbs with 54 front
+VERB_PÄTEÄ	Verbs with 58 front t~d
+VERB_RAAPIA	Verbs with 61 back p~v
+VERB_RAIKAA	Verbs with 78 back
+VERB_RANGAISTA	Verbs with 66 back k~g
+VERB_RENNOTA	Verbs with 74 back t~no
+VERB_REVETÄ	Verbs with 74 front v~pe
+VERB_RIIPIÄ	Verbs with 61 front p~v
+VERB_ROHJETA	Verbs with .. back j~k
+VERB_ROHTUA	Verbs with 52 t~d u
+VERB_RYNNÄTÄ	Verbs with 73 front n~t
+VERB_RYPEÄ	Verbs with 58 front p~v
+VERB_RYSKIÄ	Verbs with 61 front
+VERB_RYÖPYTÄ	Verbs with 75 pytä
+VERB_RÄPSYTTÄÄ	Verbs with 53 front t~0
+VERB_SAADA	Verbs with 63 a
+VERB_SAARTAA	Verbs with 57 back t~r
+VERB_SAMMOTA	Verbs with 74 back p~mu
+VERB_SATAA	Verbs with 56 back t~d
+VERB_SELVITÄ	Verbs with 75 itä
+VERB_SIEPATA	Verbs with 73 back 0~p
+VERB_SI’ITÄ	Verbs with 75 itä oblig ’
+VERB_SILIYTYÄ	Verbs with 52 t~d y
+VERB_SILPOA	Verbs with 52 p~v o
+VERB_SIVALTAA	Verbs with 54 back t~l
+VERB_SORTAA	Verbs with 53 back t~r
+VERB_SOTKEA	Verbs with 58 back
+VERB_SULATELLA	Verbs with 67 back l 0t
+VERB_SUPETA	Verbs with 72 front 0~p
+VERB_SURRA	Verbs with 67 back r
+VERB_SUUNNATA	Verbs with 73 back n~t
+VERB_SYÖDÄ	Verbs with 64 yö In past and conditional forms of käydä, the glide before suffix is marked even in normative orthography.
+VERB_SYÖPYÄ	Verbs with 52 p~v y
+VERB_SÄILÖÄ	The ö stems have no stem variation: Verbs with 52ö
+VERB_SÄPSÄHDELLÄ	Verbs with 67 front l d~t
+VERB_SÄRKEÄ	Verbs with 58 front k~j
+VERB_SÖRKKIÄ	Verbs with 61 front k~0
+VERB_TAITAA	Verbs with 76 back
+VERB_TAKOA	Verbs with 52 k~0’ o
+VERB_TAPELLA	Verbs with 67 back l 0p
+VERB_TAPPAA	Verbs with 56 back p~0
+VERB_TEMMATA	Verbs with 73 back m~p
+VERB_TEMPOA	Verbs with 52 p~m o
+VERB_TIETÄÄ	Verbs with 76 front
+VERB_TIPAHDELLA	Verbs with 67 back l d~t
+VERB_TODETA	Verbs with 74 back t~de
+VERB_TUIKKAA	Verbs with 77 back
 VERB_TULLA	like XXX but with short tuun style non-standards
-VERB_TUNGETA	Dictionary class74 back g~ke
-VERB_TUNKEA	Dictionary class58 back k~g
-VERB_TUNTEA	Dictionary class59
-VERB_TUODA	Dictionary class64 uo
-VERB_TYHJENTYÄ	Dictionary class52 t~n y
-VERB_TYLPETÄ	Dictionary class72 front 0~p
-VERB_TYMPIÄ	Dictionary class61 frontp~m
-VERB_TÄHDÄTÄ	Dictionary class73 front d~t
-VERB_TÄHYTÄ	Dictionary class74 front
-VERB_ULOTA	Dictionary class72 back 0~k o
-VERB_UPOTA	Dictionary class74 back 0~p o
-VERB_VAAHDOTA	Dictionary class74 back d~t
-VERB_VAELLELLA	Dictionary class67 back l l~t
-VERB_VAKAANTUA	Dictionary class52 t~n u
-VERB_VARTOA	Dictionary class52 t~r o
-VERB_VAVISTA	Dictionary class66 back v~p
-VERB_VERRATA	Dictionary class73 back r~t
-VERB_VIEDÄ	Dictionary class64 ie
-VERB_VIEROITTAA	Dictionary class53 back t~0
-VERB_VIHELTÄÄ	Dictionary class54 front t~l
-VERB_VIITTOA	Dictionary class52 t~0 o
-VERB_VINKUA	Dictionary class52 k~g u
-VERB_VIPAJAA	Dictionary class77 back
-VERB_VIRKKAA	Dictionary class56 back k~0
-VERB_VONGATA	Dictionary class73 back g~k
-VERB_VYYHDETÄ	Dictionary class74 front t~de
-VERB_VÄHETÄ	Dictionary class72 rfont
-VERB_VÄLPÄTÄ	Dictionary class73 frot 0~p
-VERB_VÄNGÄTÄ	Dictionary class73 front g~k
-VERB_YLTÄÄ	Dictionary class55 front t~l
-VERB_YNNÄTÄ	Dictionary class73 front
-VERB_YSKÄHTÄÄ	Dictionary class53 front t~d
-VERB_YÖKÄTÄ	Dictionary class73 front 0~k
-VERB_ÄHKÄÄ	Dictionary class78 front
-VERB_ÄKSYILLÄ	Dictionary class67 frot l
-VERB_ÄLLISTYÄ	The y stems have no stem variation: Dictionary class52y
-VERB_ÄNGETÄ	Dictionary class74 front g~ke
-VERB_ÄRISTÄ	Dictionary class66 front
-VERB_ÖYKKÄRÖIDÄ	Dictionary class62 front
+VERB_TUNGETA	Verbs with 74 back g~ke
+VERB_TUNKEA	Verbs with 58 back k~g
+VERB_TUNTEA	Verbs with 59
+VERB_TUODA	Verbs with 64 uo
+VERB_TYHJENTYÄ	Verbs with 52 t~n y
+VERB_TYLPETÄ	Verbs with 72 front 0~p
+VERB_TYMPIÄ	Verbs with 61 frontp~m
+VERB_TÄHDÄTÄ	Verbs with 73 front d~t
+VERB_TÄHYTÄ	Verbs with 74 front
+VERB_ULOTA	Verbs with 72 back 0~k o
+VERB_UPOTA	Verbs with 74 back 0~p o
+VERB_VAAHDOTA	Verbs with 74 back d~t
+VERB_VAELLELLA	Verbs with 67 back l l~t
+VERB_VAKAANTUA	Verbs with 52 t~n u
+VERB_VARTOA	Verbs with 52 t~r o
+VERB_VAVISTA	Verbs with 66 back v~p
+VERB_VERRATA	Verbs with 73 back r~t
+VERB_VIEDÄ	Verbs with 64 ie
+VERB_VIEROITTAA	Verbs with 53 back t~0
+VERB_VIHELTÄÄ	Verbs with 54 front t~l
+VERB_VIITTOA	Verbs with 52 t~0 o
+VERB_VINKUA	Verbs with 52 k~g u
+VERB_VIPAJAA	Verbs with 77 back
+VERB_VIRKKAA	Verbs with 56 back k~0
+VERB_VONGATA	Verbs with 73 back g~k
+VERB_VYYHDETÄ	Verbs with 74 front t~de
+VERB_VÄHETÄ	Verbs with 72 rfont
+VERB_VÄLPÄTÄ	Verbs with 73 frot 0~p
+VERB_VÄNGÄTÄ	Verbs with 73 front g~k
+VERB_YLTÄÄ	Verbs with 55 front t~l
+VERB_YNNÄTÄ	Verbs with 73 front
+VERB_YSKÄHTÄÄ	Verbs with 53 front t~d
+VERB_YÖKÄTÄ	Verbs with 73 front 0~k
+VERB_ÄHKÄÄ	Verbs with 78 front
+VERB_ÄKSYILLÄ	Verbs with 67 frot l
+VERB_ÄLLISTYÄ	The y stems have no stem variation: Verbs with 52y
+VERB_ÄNGETÄ	Verbs with 74 front g~ke
+VERB_ÄRISTÄ	Verbs with 66 front
+VERB_ÖYKKÄRÖIDÄ	Verbs with 62 front
 X_51eikä	Verbal conjunction compound ‘eikä’ («‘ja+ei’ and not) inflects from the first part like ‘ei’
 X_51ettei	Verbal conjunction compounds of type ‘ettei’ («‘että+ei’) inflects from the end like ‘ei’
 X_51äläkä	Partial inflection of imperative negation verb ‘älä’ and conjunction ‘ja’ inflects from first part like ‘ei’
