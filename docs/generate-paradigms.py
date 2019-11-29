@@ -68,7 +68,7 @@ def main():
     print('# Paradigms', file=args.output)
     print(file=args.output)
     print("_This is an automatically generated documentation based on omorfi" +
-          "lexical database._", file=args.output)
+          " lexical database._", file=args.output)
     print(file=args.output)
     print("Paradigms are sub-groups of lexemes that have unique " +
           "morpho-phonological features. " +
@@ -126,7 +126,8 @@ def main():
                     print(tsv_parts, file=stderr)
                     continue
                 outfilename = args.outdir + '/' + \
-                    tsv_parts['new_para'].replace('?', '_')
+                    tsv_parts['new_para'].replace('?', '_').replace('_', '/',
+                                                                    1)
                 outfile = open(outfilename + '.markdown', 'w')
                 print('---', file=outfile)
                 print('layout: paradigm', file=outfile)
