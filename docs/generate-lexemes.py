@@ -23,19 +23,65 @@ This script converts Finnish TSV-formatted lexicon to github wiki
 
 import argparse
 import csv
-from sys import exit, stderr
+from sys import stderr
 
 
 def filenamify(s):
     repls = {'!': 'EXCL', '?': 'QQ', '"': 'DQUO', "'": 'SQUO', '/': 'SLASH',
-            '\\': 'BACKSLASH', '<': 'LEFT', '>': 'RIGHT', ':': 'COLON',
-            ' ': 'SPACE', '|': 'PIPE', '.': 'STOP', ',': 'COMMA',
-            ';': 'SC', '(': 'LBR', ')': 'RBR', '[': 'LSQ',
-            ']': 'RSQ', '{': 'LCURL', '}': 'RCURL', '$': 'DORA',
-            '\t': 'TAB'}
+             '\\': 'BACKSLASH', '<': 'LEFT', '>': 'RIGHT', ':': 'COLON',
+             ' ': 'SPACE', '|': 'PIPE', '.': 'STOP', ',': 'COMMA',
+             ';': 'SC', '(': 'LBR', ')': 'RBR', '[': 'LSQ',
+             ']': 'RSQ', '{': 'LCURL', '}': 'RCURL', '$': 'DORA',
+             '\t': 'TAB'}
     for needl, subst in repls.items():
         s = s.replace(needl, subst)
     return s
+
+
+def markdownify(s):
+    repls = {']': '(right square bracket)', '|': '(pipe symbol)',
+             '[': '(left square bracket)'}
+    for needl, subst in repls.items():
+        s = s.replace(needl, subst)
+    return s
+
+
+def homonymify(s):
+    # ₀₁₂₃₄₅₆₇₈₉
+    if s == '1':
+        return '₁'
+    elif s == '2':
+        return '₂'
+    elif s == '3':
+        return '₃'
+    elif s == '4':
+        return '₄'
+    elif s == '5':
+        return '₅'
+    elif s == '6':
+        return '₆'
+    elif s == '7':
+        return '₇'
+    elif s == '8':
+        return '₈'
+    elif s == '9':
+        return '₉'
+    elif s == '10':
+        return '₁₀'
+    elif s == '11':
+        return '₁₁'
+    elif s == '12':
+        return '₁₂'
+    elif s == '13':
+        return '₁₃'
+    elif s == '14':
+        return '₁₄'
+    elif s == '15':
+        return '₁₅'
+    elif s == '16':
+        return '₁₆'
+    else:
+        return s
 
 # standard UI stuff
 
@@ -73,10 +119,6 @@ def main():
     args = ap.parse_args()
 
     # write preamble to wiki page
-    print('---', file=args.output)
-    print('layout: default', file=args.output)
-    print('title: Lexemes', file=args.output)
-    print('---', file=args.output)
     print('# Lexemes', file=args.output)
     print(file=args.output)
     print("_This is an automatically generated documentation based on omorfi" +
@@ -90,16 +132,16 @@ def main():
     print(file=args.output)
     # read from csv files
 
-    print("| Lexeme | Short note |", file=args.output)
-    print("|:------:|:----------:", end='', file=args.output)
+    print("| Lexeme | Short notes | Attributes |", file=args.output)
+    print("|:------:|:-----------:|:----------:|", file=args.output)
 
     lexdata = dict()
     with open(args.lexemes, 'r', newline='') as tsv_file:
         tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                                     strict=True)
         for tsv_parts in tsv_reader:
-            if len(tsv_parts) < 2 or tsv_parts['lemma'] == None or \
-                    tsv_parts['homonym'] == None:
+            if len(tsv_parts) < 2 or tsv_parts['lemma'] is None or \
+                    tsv_parts['homonym'] is None:
                 print("Too few tabs on line, skipping:", tsv_parts)
                 continue
             lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
@@ -118,31 +160,26 @@ def main():
                 continue
             if '\t' in tsv_parts['lemma']:
                 print("ARGH python tsv fail on line:",
-                        tsv_parts, file=stderr)
+                      tsv_parts, file=stderr)
                 continue
+            print("| [%s](lexemes/%s.html) |" %
+                  (markdownify(tsv_parts['lemma']) +
+                   homonymify(tsv_parts['homonym']),
+                   filenamify(tsv_parts['lemma'])), end='',
+                  file=args.output)
             if tsv_parts['lemma'] != prev_lemma:
-                print("|\n| [%s](lexemes/%s.html) |" %(
-                    tsv_parts['lemma'].replace("]", "(right square " +\
-                        "bracket)").replace("|", "(pipe " +\
-                        "symbol)").replace("[", "(left square bracket)"),
-                        filenamify(tsv_parts['lemma'])), end='',
-                        file=args.output)
-                outfile=open(args.outdir + '/' +
-                         filenamify(tsv_parts['lemma']) +
-                         '.markdown', 'w')
+                outfile = open(args.outdir + '/' +
+                           filenamify(tsv_parts['lemma']) +
+                           '.markdown', 'w')
                 prev_lemma = tsv_parts['lemma']
                 print('---', file=outfile)
                 print('layout: lexeme', file=outfile)
                 print('lexeme:', tsv_parts['lemma'], file=outfile)
                 print('---', file=outfile)
             print(file=outfile)
-            if tsv_parts['homonym'] == '1':
-                print("### ", tsv_parts['lemma'], file=outfile)
-                print(" ", tsv_parts['doc'], end=' ', file=args.output)
-            else:
-                print("##", tsv_parts['lemma'], "(alternate reading",
-                        tsv_parts['homonym'], ")", file=outfile)
-                print(" **or** ", tsv_parts['doc'], end=' ', file=args.output)
+            print("### ", tsv_parts['lemma'] +
+                  homonymify(tsv_parts['homonym']), file=outfile)
+            print(" ", tsv_parts['doc'], end=' | ', file=args.output)
             print(file=outfile)
             print(tsv_parts['doc'], file=outfile)
             lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
@@ -169,7 +206,9 @@ def main():
                 if lexdata[lexkey]['blacklist']:
                     print("* Blacklisted: ",
                           lexdata[lexkey]['blacklist'], file=outfile)
+                    print(" ☢ ", file=args.output, end='')
             print(file=outfile)
+            print(" |", file=args.output)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 
