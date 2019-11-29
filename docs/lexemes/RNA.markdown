@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: RNA
 ---
 
-###  RNA
+###  RNA₁
 
 Ribonucleic Acid
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

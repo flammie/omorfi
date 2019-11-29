@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: siksi
 ---
 
-###  siksi
+###  siksi₁
 
 REMOVED, in lack of adpositional evidence
 * UPOS:  X
-* Added from:  finer
+* Origin:  finer
 
 
-## siksi (alternate reading 2 )
+###  siksi₂
 
 thus, therefore, that's why, notably also translative of *se* (it)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

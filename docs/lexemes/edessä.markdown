@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: edessä
 ---
 
-###  edessä
+###  edessä₁
 
 in way as adverb
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## edessä (alternate reading 2 )
+###  edessä₂
 
-in front of, as adp, complement is genitive or possessive, "talon edessä"
+in front of, as adp, complement is genitive or possessive, “talon edessä“
 * UPOS:  ADP
-* Added from:  kotus|omorfi++
+* Origin:  kotus|omorfi++
 * AdpType:  POSTPOSITION
 

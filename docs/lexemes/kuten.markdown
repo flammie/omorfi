@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: kuten
 ---
 
-###  kuten
+###  kuten₁
 
-like a, such, as adverb, "eläin kuten kärpänen", used like "kuin"
+like a, such, as adverb, “eläin kuten kärpänen“, used like "kuin"
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## kuten (alternate reading 2 )
+###  kuten₂
 
-like, as sub-ordinating conjunction "tulkitse kuten pystyt"
+like, as sub-ordinating conjunction “tulkitse kuten pystyt“
 * UPOS:  SCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

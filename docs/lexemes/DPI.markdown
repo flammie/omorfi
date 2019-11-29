@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: DPI
 ---
 
-###  DPI
+###  DPI₁
 
 Dots Per Inch
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

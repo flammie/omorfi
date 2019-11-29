@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: PPI
 ---
 
-###  PPI
+###  PPI₁
 
 Points Per Inch
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

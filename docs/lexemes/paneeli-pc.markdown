@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: paneeli-pc
 ---
 
-###  paneeli-pc
+###  paneeli-pc₁
 
 (Panel) Personal Computer??
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

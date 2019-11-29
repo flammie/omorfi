@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: WWF
 ---
 
-###  WWF
+###  WWF₁
 
 World Wildlife Foundation
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: vaan
 ---
 
-###  vaan
+###  vaan₁
 
 but rather, as cconj, see VISK § 1106
 * UPOS:  CCONJ
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 
 
-## vaan (alternate reading 2 )
+###  vaan₂
 
-really indeed, as adverb, "ei nyt vaan pysty"
+really indeed, as adverb, “ei nyt vaan pysty“
 * UPOS:  ADV
-* Added from:  omorfi
+* Origin:  omorfi
 

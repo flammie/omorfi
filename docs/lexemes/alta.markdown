@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: alta
 ---
 
-###  alta
+###  alta₁
 
-from under, as adposition, genitive complement or possessive, "laiturin alta"
+from under, as adposition, genitive complement or possessive, “laiturin alta“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

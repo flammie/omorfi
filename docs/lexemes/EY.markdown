@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: EY
 ---
 
-## EY (alternate reading 2 )
+###  EY₂
 
 Euroopan Yhteisö
 * UPOS:  PROPN
-* Added from:  omorfi++
+* Origin:  omorfi++
 * Possible NER class:  ORG
 

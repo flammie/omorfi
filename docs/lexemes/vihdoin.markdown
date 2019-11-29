@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: vihdoin
 ---
 
-###  vihdoin
+###  vihdoin₁
 
 usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

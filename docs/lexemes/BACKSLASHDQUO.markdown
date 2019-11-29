@@ -3,12 +3,16 @@ layout: lexeme
 lexeme: \"
 ---
 
-###  \"
+###  \"₁
 
-ASCII double quotation mark, still most common double quotation
+“opening” ASCII double quotation mark, still most common double quotation, but not recommended
+* UPOS:  PUNCT
+* Origin:  omorfi++
 
 
-## \" (alternate reading 2 )
+###  \"₂
 
-ASCII double quotation mark, still most common double quotation
+“closing” ASCII double quotation mark, still most common double quotation, but not recommended
+* UPOS:  PUNCT
+* Origin:  omorfi++
 

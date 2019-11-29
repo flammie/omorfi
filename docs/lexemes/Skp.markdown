@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: Skp
 ---
 
-###  Skp
+###  Skp₁
 
 Suomen keskuspankki
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

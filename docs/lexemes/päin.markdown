@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: päin
 ---
 
-###  päin
+###  päin₁
 
 adposition (towards) when can be attached to a partitive NP, otherwise noun form of *pää* (head)
 * UPOS:  ADP
-* Added from:  finer
+* Origin:  finer
 * AdpType:  POSTPOSITION
 
 
-## päin (alternate reading 2 )
+###  päin₂
 
 adverb
 * UPOS:  ADV
-* Added from:  unk
+* Origin:  unk
 

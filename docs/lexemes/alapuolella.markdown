@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: alapuolella
 ---
 
-###  alapuolella
+###  alapuolella₁
 
-under, as adposition, genitive complement or possessive, "laiturin alapuolella"
+under, as adposition, genitive complement or possessive, “laiturin alapuolella“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

@@ -3,11 +3,12 @@ layout: lexeme
 lexeme: Pia
 ---
 
-###  Pia
+###  Pia₁
 
 This proper noun overlaps forms of very common *pian* (soon).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  9
-* Added from:  finer|joukahainen
+* Origin:  finer|joukahainen
 * Possible NER class:  FIRST
+* Semantic tags:  FEMALE
 

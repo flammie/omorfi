@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ajatuksissaan
 ---
 
-###  ajatuksissaan
+###  ajatuksissaan₁
 
-in thought, as adverb, "olin ajatuksissaan ~ ajatuksissani", see VISK § 655
+in thought, as adverb, “olin ajatuksissaan ~ ajatuksissani“, see VISK § 655
 * UPOS:  ADV
-* Added from:  omorfi++
+* Origin:  omorfi++
 

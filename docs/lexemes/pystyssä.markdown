@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: pystyssä
 ---
 
-###  pystyssä
+###  pystyssä₁
 
 usually seen as adverb (upright), but can be analysed as inessive of the adjective *pysty* (vertical)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

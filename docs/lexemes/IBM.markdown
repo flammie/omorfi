@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: IBM
 ---
 
-###  IBM
+###  IBM₁
 
 International Business Machines
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

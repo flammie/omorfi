@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: BKT
 ---
 
-###  BKT
+###  BKT₁
 
 Brutto-Kansan-Tuote
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

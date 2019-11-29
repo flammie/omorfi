@@ -3,10 +3,11 @@ layout: lexeme
 lexeme: STT
 ---
 
-###  STT
+###  STT₁
 
 Suomen Tieto-Toimisto
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
+* Semantic tags:  MEDIA
 

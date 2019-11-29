@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: puolesta
 ---
 
-###  puolesta
+###  puolesta₁
 
 adposition (behalf of) when can be attached to a genitive NP, otherwise noun forms of *puoli* (side)
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: SPR
 ---
 
-###  SPR
+###  SPR₁
 
 Suomen Punainen Risti
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  omorfi
 * Possible NER class:  ORG
 

@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: alkaen
 ---
 
-###  alkaen
+###  alkaen₁
 
-onwards, to start, as adverb, "alun alkaen"
+onwards, to start, as adverb, “alun alkaen“
 * UPOS:  ADV
-* Added from:  omorfi|fiwikt
+* Origin:  omorfi|fiwikt
 
 
-## alkaen (alternate reading 2 )
+###  alkaen₂
 
-beginning from timepoint, as adposition, elative complement, "maanantaista alkaen"
+beginning from timepoint, as adposition, elative complement, “maanantaista alkaen“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

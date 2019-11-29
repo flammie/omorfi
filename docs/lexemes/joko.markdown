@@ -3,23 +3,23 @@ layout: lexeme
 lexeme: joko
 ---
 
-###  joko
+###  joko₁
 
 either, paired with tai in either-or structure, rarer sub-ordinating reading, see VISK § 815
 * UPOS:  SCONJ
-* Added from:  omorfi|joukahainen
+* Origin:  omorfi|joukahainen
 
 
-## joko (alternate reading 2 )
+###  joko₂
 
-already? (from jo+ko), adverb, "joko taas?"
+already? (from jo+ko), adverb, “joko taas?“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## joko (alternate reading 3 )
+###  joko₃
 
-either, paired with tai in either-or structure, perhaps (this) co-ordinating is more common interpretation, "joko minä tai sinä", see VISK § 815
+either, paired with tai in either-or structure, perhaps (this) co-ordinating is more common interpretation, “joko minä tai sinä“, see VISK § 815
 * UPOS:  CCONJ
-* Added from:  kotus
+* Origin:  kotus
 

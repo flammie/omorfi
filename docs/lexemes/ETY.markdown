@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: ETY
 ---
 
-###  ETY
+###  ETY₁
 
 Euroopan Turvallisuus-Yhteisö
 * UPOS:  PROPN
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  ORG
 

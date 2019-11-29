@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ?
 ---
 
-## ? (alternate reading 2 )
+###  ?₂
 
 question mark
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

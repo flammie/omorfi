@@ -3,32 +3,17 @@ layout: lexeme
 lexeme: vallassa
 ---
 
-###  vallassa
+###  vallassa₁
 
-in rule, "täällä on vallassa kuningas"
+in rule, “täällä on vallassa kuningas“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## vallassa (alternate reading 2 )
+###  vallassa₂
 
-possessed by smth., genitive complement "pahan hengen vallassa"
+possessed by smth., genitive complement “pahan hengen vallassa“
 * UPOS:  ADP
-* Added from:  omorfi
-* AdpType:  POSTPOSITION
-
-
-###  vallassa
-
-dethroned, "kuningas syöstiin vallasta"
-* UPOS:  ADV
-* Added from:  kotus
-
-
-## vallassa (alternate reading 2 )
-
-exorcised of smth., genitive complement "pahan hengen vallasta"
-* UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: he
 ---
 
-###  he
+###  he₁
 
-This interjection overlaps very common pronoun *he* "they".
+This interjection overlaps very common pronoun *he* “they“.
 * UPOS:  INTJ
-* Added from:  kotus
+* Origin:  kotus
 

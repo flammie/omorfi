@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: aikana
 ---
 
-###  aikana
+###  aikana₁
 
-during (while), adposition with genitive complement, e.g., "sen aikana"
+during (while), adposition with genitive complement, e.g., “sen aikana“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

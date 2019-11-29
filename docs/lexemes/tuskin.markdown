@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: tuskin
 ---
 
-###  tuskin
+###  tuskin₁
 
 usually seen as adverb (hardly), but can be analysed as instructive of the noun *tuska* (pain)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

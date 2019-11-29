@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: WAP
 ---
 
-###  WAP
+###  WAP₁
 
 Wireles Application Protocol
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

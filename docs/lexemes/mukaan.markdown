@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: mukaan
 ---
 
-###  mukaan
+###  mukaan₁
 
 adposition (with) when can be attached to a genitive NP, otherwise adverb (along)
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 
 
-## mukaan (alternate reading 2 )
+###  mukaan₂
 
-along, adv, verb complement, "lähde mukaan!"
+along, adv, verb complement, “lähde mukaan!“
 * UPOS:  ADV
-* Added from:  omorfi
+* Origin:  omorfi
 

@@ -3,9 +3,10 @@ layout: lexeme
 lexeme: oyj
 ---
 
-###  oyj
+###  oyj₁
 
 Julkinen Osake-Yhtiö
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
+* Semantic tags:  ORG
 

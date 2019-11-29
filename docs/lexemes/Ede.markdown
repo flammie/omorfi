@@ -3,11 +3,11 @@ layout: lexeme
 lexeme: Ede
 ---
 
-###  Ede
+###  Ede₁
 
-This proper noun overlaps forms of very common *edellä* "front, etc.
+This proper noun overlaps forms of very common *edellä* “front, etc.
 * UPOS:  PROPN
 * in KOTUS dictionary under:  8
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  GEO
 

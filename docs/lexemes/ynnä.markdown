@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: ynnä
 ---
 
-###  ynnä
+###  ynnä₁
 
 plus, as an adverb
 * UPOS:  ADV
-* Added from:  finer
+* Origin:  finer
 
 
-## ynnä (alternate reading 2 )
+###  ynnä₂
 
 and, as co-ordinating conjunction, rare
 * UPOS:  CCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

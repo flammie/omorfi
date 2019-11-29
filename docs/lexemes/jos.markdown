@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: jos
 ---
 
-## jos (alternate reading 2 )
+###  jos₂
 
-if, as sconj, "jos voisit jäädä", see VISK § 818
+if, as sconj, “jos voisit jäädä“, see VISK § 818
 * UPOS:  SCONJ
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 

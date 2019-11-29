@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: ääriin
 ---
 
-###  ääriin
+###  ääriin₁
 
 to the end of the, genitive argument for destination, usually e.g. earth or world
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 
 
-## ääriin (alternate reading 2 )
+###  ääriin₂
 
 adverb ?
 * UPOS:  ADV
-* Added from:  omorfi
+* Origin:  omorfi
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: DVD
 ---
 
-###  DVD
+###  DVD₁
 
 Digital Versatile Disc
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

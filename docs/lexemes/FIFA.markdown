@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: FIFA
 ---
 
-###  FIFA
+###  FIFA₁
 
 Football
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

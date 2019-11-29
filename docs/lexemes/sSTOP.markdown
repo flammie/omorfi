@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: s.
 ---
 
-###  s.
+###  s.₁
 
-sivu, "p." or page
+sivu, “p.“ or page
 * UPOS:  ADV
-* Added from:  omorfi++|joukahainen
+* Origin:  omorfi++|joukahainen
 

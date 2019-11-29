@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: edus
 ---
 
-###  edus
+###  edus₁
 
-This noun means "frontside" but overlaps forms of *etu*, *edusta* etc.
+This noun means “frontside“ but overlaps forms of *etu*, *edusta* etc.
 * UPOS:  NOUN
 * in KOTUS dictionary under:  39
-* Added from:  kotus|joukahainen|enwikt
+* Origin:  kotus|joukahainen|enwikt
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: WWW
 ---
 
-###  WWW
+###  WWW₁
 
 World Wide Web
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

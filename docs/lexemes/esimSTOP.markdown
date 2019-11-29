@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: esim.
 ---
 
-###  esim.
+###  esim.₁
 
-esimerkiksi, "e.g." or for example
+esimerkiksi, “e.g.“ or for example
 * UPOS:  ADV
-* Added from:  omorfi++|joukahainen
+* Origin:  omorfi++|joukahainen
 

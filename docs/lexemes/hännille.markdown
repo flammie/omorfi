@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: hännille
 ---
 
-## hännille (alternate reading 2 )
+###  hännille₂
 
-to end, tails, as adposition, genitive complement or possessive, "jonon hännille"
+to end, tails, as adposition, genitive complement or possessive, “jonon hännille“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

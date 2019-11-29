@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: -
 ---
 
-###  -
+###  -₁
 
 ASCII minus-hyphen, still most common dash
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

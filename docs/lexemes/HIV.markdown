@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: HIV
 ---
 
-###  HIV
+###  HIV₁
 
 Human Immunodeficiency Virus
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

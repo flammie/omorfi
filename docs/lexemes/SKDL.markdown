@@ -3,10 +3,11 @@ layout: lexeme
 lexeme: SKDL
 ---
 
-###  SKDL
+###  SKDL₁
 
 Suomen Kristillis-Demokraattien Liitto
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
+* Semantic tags:  POLIT
 

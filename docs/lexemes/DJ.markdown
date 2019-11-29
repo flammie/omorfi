@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: DJ
 ---
 
-###  DJ
+###  DJ₁
 
 Disc Jockey
 * UPOS:  NOUN
-* Added from:  omorfi
+* Origin:  omorfi
 

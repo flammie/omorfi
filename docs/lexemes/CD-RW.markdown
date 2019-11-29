@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: CD-RW
 ---
 
-###  CD-RW
+###  CD-RW₁
 
 Compact Disc Read-Write
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

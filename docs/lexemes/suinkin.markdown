@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: suinkin
 ---
 
-###  suinkin
+###  suinkin₁
 
 usually seen as adverb (at all, affirmative), but overlaps instructive of the noun *suu* (mouth)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: pystyyn
 ---
 
-###  pystyyn
+###  pystyyn₁
 
 usually seen as adverb (abrupt end), but can be analysed as illative of the adjective *pysty* (vertical)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

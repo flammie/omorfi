@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: atk
 ---
 
-###  atk
+###  atk₁
 
 automaattinen tekstinkäsittely
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

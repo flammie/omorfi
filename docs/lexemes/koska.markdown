@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: koska
 ---
 
-###  koska
+###  koska₁
 
-when, as adverb, "koska tulet?"
+when, as adverb, “koska tulet?“
 * UPOS:  ADV
-* Added from:  unk
+* Origin:  unk
 
 
-## koska (alternate reading 3 )
+###  koska₃
 
-because, sub-ordinating conj, "koska olen hyvä"
+because, sub-ordinating conj, “koska olen hyvä“
 * UPOS:  SCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

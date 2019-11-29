@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: SOK
 ---
 
-###  SOK
+###  SOK₁
 
 Suomen Osuus-Kauppa
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: sillä
 ---
 
-###  sillä
+###  sillä₁
 
-because, subordinating conj, "sillä tiedän paremmin" (NB ambig with many se adessives)
+because, subordinating conj, “sillä tiedän paremmin“ (NB ambig with many se adessives)
 * UPOS:  SCONJ
-* Added from:  kotus
+* Origin:  kotus
 

@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: HIFK
 ---
 
-###  HIFK
+###  HIFK₁
 
 Helsingfors
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

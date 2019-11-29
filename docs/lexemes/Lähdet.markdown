@@ -3,11 +3,11 @@ layout: lexeme
 lexeme: Lähdet
 ---
 
-###  Lähdet
+###  Lähdet₁
 
 This proper noun overlaps forms of very common *lähde* (source).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  44
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  LAST
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: toisinaan
 ---
 
-###  toisinaan
+###  toisinaan₁
 
 usually seen as adverb (every once in a while), but can be analysed as a form of *toinen* (second)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

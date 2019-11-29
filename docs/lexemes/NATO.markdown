@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: NATO
 ---
 
-###  NATO
+###  NATO₁
 
 North-Atlantic T Organisation
 * UPOS:  PROPN
-* Added from:  omorfi
+* Origin:  omorfi
 * Possible NER class:  ORG
 

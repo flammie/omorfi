@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: tarpeeksi
 ---
 
-###  tarpeeksi
+###  tarpeeksi₁
 
 adposition (enough of it), partitive ocmplements
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 
 
-## tarpeeksi (alternate reading 2 )
+###  tarpeeksi₂
 
 usually seen as adverb (enough), but can be analysed as translative of the noun *tarve* (greater)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

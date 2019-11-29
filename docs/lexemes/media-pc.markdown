@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: media-pc
 ---
 
-###  media-pc
+###  media-pc₁
 
 Personal Computer
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

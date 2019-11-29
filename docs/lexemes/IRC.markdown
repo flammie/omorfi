@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: IRC
 ---
 
-###  IRC
+###  IRC₁
 
 Internet Relay Chat
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

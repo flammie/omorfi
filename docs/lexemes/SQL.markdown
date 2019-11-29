@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: SQL
 ---
 
-###  SQL
+###  SQL₁
 
 Structured Query Language
 * UPOS:  NOUN
-* Added from:  omorfi|joukahainen
+* Origin:  omorfi|joukahainen
 

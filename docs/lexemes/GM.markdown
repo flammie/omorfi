@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: GM
 ---
 
-###  GM
+###  GM₁
 
 General Motors
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

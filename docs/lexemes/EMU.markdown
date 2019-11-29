@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: EMU
 ---
 
-###  EMU
+###  EMU₁
 
 European Monetary Union
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  MISC
 

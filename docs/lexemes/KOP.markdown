@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: KOP
 ---
 
-###  KOP
+###  KOP₁
 
 Kansallis-Osake-Pankki
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

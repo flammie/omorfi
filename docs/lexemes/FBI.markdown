@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: FBI
 ---
 
-###  FBI
+###  FBI₁
 
 Federal Bureau of Investigation
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

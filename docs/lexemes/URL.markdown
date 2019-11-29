@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: URL
 ---
 
-###  URL
+###  URL₁
 
 Uniform Resource Locator
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

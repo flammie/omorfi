@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: tv
 ---
 
-###  tv
+###  tv₁
 
 tele-visio
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

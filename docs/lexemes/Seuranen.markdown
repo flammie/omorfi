@@ -3,11 +3,11 @@ layout: lexeme
 lexeme: Seuranen
 ---
 
-###  Seuranen
+###  Seuranen₁
 
 This proper noun overlaps forms of very common *seura* (company).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  38
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  GEO
 

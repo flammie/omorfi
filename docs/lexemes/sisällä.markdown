@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: sisällä
 ---
 
-###  sisällä
+###  sisällä₁
 
 adverb
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## sisällä (alternate reading 2 )
+###  sisällä₂
 
 adposition (inside of) when can be attached to a genitive NP, otherwise adverb (inside)
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

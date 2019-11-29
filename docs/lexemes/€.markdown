@@ -3,9 +3,10 @@ layout: lexeme
 lexeme: €
 ---
 
-###  €
+###  €₁
 
 euro
 * UPOS:  SYM
-* Added from:  omorfi++
+* Origin:  omorfi++
+* Semantic tags:  CURRENCY
 

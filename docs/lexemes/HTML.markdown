@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: HTML
 ---
 
-###  HTML
+###  HTML₁
 
 Hyper-Text Markup Language
 * UPOS:  NOUN
-* Added from:  omorfi|joukahainen
+* Origin:  omorfi|joukahainen
 

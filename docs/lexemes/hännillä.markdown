@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: hännillä
 ---
 
-## hännillä (alternate reading 2 )
+###  hännillä₂
 
-end, "tails", as adposition, genitive complement or possessive, "jonon hännillä"
+end, “tails“, as adposition, genitive complement or possessive, "jonon hännillä"
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

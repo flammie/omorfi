@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: kotoisin
 ---
 
-###  kotoisin
+###  kotoisin₁
 
 usually seen as adverb (from), but can be analysed as a form of *koto* (home)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

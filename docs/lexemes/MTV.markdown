@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: MTV
 ---
 
-###  MTV
+###  MTV₁
 
 Music TeleVision
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

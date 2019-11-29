@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: nähden
 ---
 
-###  nähden
+###  nähden₁
 
 adposition (regarding) when can be attached to a illative NP, otherwise verb forms of *nähdä* (see)
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 
 
-## nähden (alternate reading 2 )
+###  nähden₂
 
 adverb, ?
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

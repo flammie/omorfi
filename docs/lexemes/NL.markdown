@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: NL
 ---
 
-###  NL
+###  NL₁
 
 Neuvosto-Liitto
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  GEO
 

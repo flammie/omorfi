@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: IT
 ---
 
-###  IT
+###  IT₁
 
 Informaatio-Teknologia
 * UPOS:  NOUN
-* Added from:  kotus|joukahainen
+* Origin:  kotus|joukahainen
 

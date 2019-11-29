@@ -3,11 +3,11 @@ layout: lexeme
 lexeme: Asi
 ---
 
-###  Asi
+###  Asi₁
 
-This proper noun overlaps forms of very common *asia* "thing"
+This proper noun overlaps forms of very common *asia* “thing“
 * UPOS:  PROPN
 * in KOTUS dictionary under:  5
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  GEO
 

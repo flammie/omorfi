@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: VR
 ---
 
-###  VR
+###  VR₁
 
 Valtion Rautatiet
 * UPOS:  PROPN
-* Added from:  omorfi
+* Origin:  omorfi
 * Possible NER class:  ORG
 

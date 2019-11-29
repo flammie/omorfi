@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: takia
 ---
 
-###  takia
+###  takia₁
 
 because of, as adpoistion, complement is genitive
 * UPOS:  ADP
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 * AdpType:  POSTPOSITION
 

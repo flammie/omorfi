@@ -3,12 +3,12 @@ layout: lexeme
 lexeme: Aino
 ---
 
-###  Aino
+###  Aino₁
 
-This proper noun overlaps forms of very common *ainoa* "only".
+This proper noun overlaps forms of very common *ainoa* “only“.
 * UPOS:  PROPN
 * in KOTUS dictionary under:  1
-* Added from:  finer|joukahainen
+* Origin:  finer|joukahainen
 * Possible NER class:  FIRST
-* Blacklisted:  PROPN-BLOCKING
+* Semantic tags:  FEMALE
 

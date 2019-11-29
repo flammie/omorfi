@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: XML
 ---
 
-###  XML
+###  XML₁
 
 Extensible Markup Language
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: EU
 ---
 
-## EU (alternate reading 2 )
+###  EU₂
 
 Euroopan Unioni
 * UPOS:  PROPN
-* Added from:  omorfi++
+* Origin:  omorfi++
 * Possible NER class:  ORG
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: jäljelle
 ---
 
-###  jäljelle
+###  jäljelle₁
 
 usually seen as adverb (left), but can be analysed as a form of *jälki* (trace)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: EEC
 ---
 
-###  EEC
+###  EEC₁
 
 European Economy Council
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  MISC
 

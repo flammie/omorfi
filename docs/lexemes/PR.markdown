@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: PR
 ---
 
-###  PR
+###  PR₁
 
 Public Relations
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

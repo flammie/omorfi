@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: SUL
 ---
 
-###  SUL
+###  SUL₁
 
 Suomen Urheilu-Liitto
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

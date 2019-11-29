@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: ja
 ---
 
-###  ja
+###  ja₁
 
-and, as cconj, "kissoja ja koiria", see VISK § 817
+and, as cconj, “kissoja ja koiria“, see VISK § 817
 * UPOS:  CCONJ
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 
 
-## ja (alternate reading 2 )
+###  ja₂
 
-as well, as adverb, colloquial-ish, "mentiin sinne ja"
+as well, as adverb, colloquial-ish, “mentiin sinne ja“
 * UPOS:  ADV
-* Added from:  omorfi
+* Origin:  omorfi
 

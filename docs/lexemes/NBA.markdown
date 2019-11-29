@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: NBA
 ---
 
-###  NBA
+###  NBA₁
 
 National Basketball Association
 * UPOS:  PROPN
-* Added from:  omorfi
+* Origin:  omorfi
 
