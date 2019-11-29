@@ -1,0 +1,11 @@
+---
+layout: paradigm
+paradigm: NUM_51kuusiduodekiljoonaa
+---
+### ` NUM_51kuusiduodekiljoonaa `
+
+* _Optimisation hack for exceptional compound ’kuusiduodekiljoonaa’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * siduodekiljoonaa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuusiduodekiljoonaa `
