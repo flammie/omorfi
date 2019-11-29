@@ -83,8 +83,18 @@ def homonymify(s):
     else:
         return s
 
-# standard UI stuff
 
+def stuff2icon(s):
+    if s == 'org':
+        return 'org'
+    elif s == 'geo':
+        return '🌍'
+    elif s == 'first':
+        return '🧑¹'
+    elif s == 'last':
+        return '🧑²'
+
+# standard UI stuff
 
 def main():
     # initialise argument parser
@@ -190,10 +200,13 @@ def main():
                         int(lexdata[lexkey]['kotus_tn']) < 99:
                     print("* in KOTUS dictionary under: ",
                           lexdata[lexkey]['kotus_tn'], file=outfile)
-                print("* Added from: ", lexdata[lexkey]['origin'], file=outfile)
+                print("* Origin: ", lexdata[lexkey]['origin'],
+                      file=outfile)
                 if lexdata[lexkey]['proper_noun_class']:
                     print("* Possible NER class: ",
                           lexdata[lexkey]['proper_noun_class'], file=outfile)
+                    print(stuff2icon(lexdata[lexkey]['proper_noun_class']),
+                          file=args.output)
                 if lexdata[lexkey]['prontype']:
                     print("* PronType: ",
                           lexdata[lexkey]['prontype'], file=outfile)
@@ -206,7 +219,12 @@ def main():
                 if lexdata[lexkey]['blacklist']:
                     print("* Blacklisted: ",
                           lexdata[lexkey]['blacklist'], file=outfile)
-                    print(" ☢ ", file=args.output, end='')
+                    print("☢", file=args.output, end='')
+                if lexdata[lexkey]['sem']:
+                    print("* Semantic tags: ",
+                          lexdata[lexkey]['sem'], file=outfile)
+                    print(stuff2icon(lexdata[lexkey]['sem']),
+                          file=args.output, end='')
             print(file=outfile)
             print(" |", file=args.output)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
