@@ -9,13 +9,13 @@ lemma	homonym	doc
 /	2	slash, for division, URLs, etc.
 .	1	full stop
 ...	1	ellipsis
-'	1	"opening" ASCII single quotation mark, still most common single quotation, but not recommended
-’	1	"opening" curly single quotation in 9-shape, common and recommended
-’	2	"closing" curly single quotation in 9-shape, common and recommended
-\"	1	"opening" ASCII double quotation mark, still most common double quotation, but not recommended
-\"	2	"closing" ASCII double quotation mark, still most common double quotation, but not recommended
-”	1	"opening" double quotation in 9-shape, common and recommended
-”	2	"closing" double quotation in 9-shape, common and recommended
+'	1	“opening” ASCII single quotation mark, still most common single quotation, but not recommended
+’	1	“opening” curly single quotation in 9-shape, common and recommended
+’	2	“closing” curly single quotation in 9-shape, common and recommended
+\"	1	“opening” ASCII double quotation mark, still most common double quotation, but not recommended
+\"	2	“closing” ASCII double quotation mark, still most common double quotation, but not recommended
+”	1	“opening” double quotation in 9-shape, common and recommended
+”	2	“closing” double quotation in 9-shape, common and recommended
 (	1	left bracket
 )	1	right bracket
 [	1	left square bracket
@@ -38,45 +38,45 @@ $	1	dollar
 ³	1	superscript three
 ADSL	1	Asymmetric Digital Subscriber Line
 aiemmin	1	usually seen as adverb (earlier), but can be analysed as instructive of the adjective *aiempi* (early)
-aikaan	1	done, accomplished, verb complement kind of, e.g., "saada aikaan"
-aikaan	2	during (around), adposition with genitive complement, e.g., "sen aikaan"
-aikana	1	during (while), adposition with genitive complement, e.g., "sen aikana"
+aikaan	1	done, accomplished, verb complement kind of, e.g., “saada aikaan”
+aikaan	2	during (around), adposition with genitive complement, e.g., “sen aikaan”
+aikana	1	during (while), adposition with genitive complement, e.g., “sen aikana”
 aina	1	REMOVED adposition (send an example sentence if you need it back)
-aina	2	always, as adverb, "aina mun pitää"
-Aino	1	This proper noun overlaps forms of very common *ainoa* "only".
-Ainoa	1	This proper noun overlaps very common *ainoa* "only".
+aina	2	always, as adverb, “aina mun pitää”
+Aino	1	This proper noun overlaps forms of very common *ainoa* “only”.
+Ainoa	1	This proper noun overlaps very common *ainoa* “only”.
 ajallaan	1	adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
-ajallaan	2	in time, as adverb, "yritä tulla ajallaan"
-ajalta	1	from time of smth as adposition, "ristiretkien ajalta"
-ajoilta	1	from times of smth as adposition, "ristiretkien ajoilta"
-ajatuksissaan	1	in thought, as adverb, "olin ajatuksissaan ~ ajatuksissani", see VISK § 655
-alapuolella	1	under, as adposition, genitive complement or possessive, "laiturin alapuolella"
-alapuolelle	1	to under, as adposition, genitive complement or possessive, "laiturin alapuolelle"
-alapuolelta	1	from under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
-alapuolelta	1	under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
-alas	1	to under, down, as adverb, "tule alas"
-alas	2	down (the road or such), as adposition, partitive complement or possessive, "alas tietä pitkin"
-ali	1	to / through underneath, as adverb, "täytyy mennä ali"
-ali	2	to / through underneath, as adposition, genitive complement or possessive, "kölin ali"
-alitse	1	via under, as adposition, genitive complement or possessive, "kölin alitse"
-alkaen	1	onwards, to start, as adverb, "alun alkaen"
-alkaen	2	beginning from timepoint, as adposition, elative complement, "maanantaista alkaen"
-Alku	1	This proper noun overlaps very common *alku* "beginning".
-alkupuolella	1	in the beginning, as adposition, genitive complement or possessive, "tarinan alkupuolella"
-alla	1	under, as adposition, genitive complement or possessive, "laiturin alla"
-alle	1	to under, as adposition, genitive complement or possessive, "laiturin alle"
+ajallaan	2	in time, as adverb, “yritä tulla ajallaan”
+ajalta	1	from time of smth as adposition, “ristiretkien ajalta”
+ajoilta	1	from times of smth as adposition, “ristiretkien ajoilta”
+ajatuksissaan	1	in thought, as adverb, “olin ajatuksissaan ~ ajatuksissani”, see VISK § 655
+alapuolella	1	under, as adposition, genitive complement or possessive, “laiturin alapuolella”
+alapuolelle	1	to under, as adposition, genitive complement or possessive, “laiturin alapuolelle”
+alapuolelta	1	from under, as adposition, genitive complement or possessive, “laiturin alapuolelta”
+alapuolelta	1	under, as adposition, genitive complement or possessive, “laiturin alapuolelta”
+alas	1	to under, down, as adverb, “tule alas”
+alas	2	down (the road or such), as adposition, partitive complement or possessive, “alas tietä pitkin”
+ali	1	to / through underneath, as adverb, “täytyy mennä ali”
+ali	2	to / through underneath, as adposition, genitive complement or possessive, “kölin ali”
+alitse	1	via under, as adposition, genitive complement or possessive, “kölin alitse”
+alkaen	1	onwards, to start, as adverb, “alun alkaen”
+alkaen	2	beginning from timepoint, as adposition, elative complement, “maanantaista alkaen”
+Alku	1	This proper noun overlaps very common *alku* “beginning”.
+alkupuolella	1	in the beginning, as adposition, genitive complement or possessive, “tarinan alkupuolella”
+alla	1	under, as adposition, genitive complement or possessive, “laiturin alla”
+alle	1	to under, as adposition, genitive complement or possessive, “laiturin alle”
 Allekirjoittanut	1	This proper noun overlaps very common *allekirjoittanut*
-alta	1	from under, as adposition, genitive complement or possessive, "laiturin alta"
-alussa	1	in the beginning, as adposition, genitive complement or possessive, "tarinan alussa"
+alta	1	from under, as adposition, genitive complement or possessive, “laiturin alta”
+alussa	1	in the beginning, as adposition, genitive complement or possessive, “tarinan alussa”
 API	1	Application Programming Interface
-As	1	This proper noun overlaps forms of very common *asia* "thing", among others
-Asema	1	This proper noun overlaps very common *asema* "station".
+As	1	This proper noun overlaps forms of very common *asia* “thing”, among others
+Asema	1	This proper noun overlaps very common *asema* “station”.
 asemasta	1	instead, as adv, ??
-asemasta	2	instead of, as adposition, genitive complement or possessive, "tien asemasta", commonly used instead of 'asemesta'
-asemesta	2	instead of, as adposition, genitive complement or possessive, "tien asemesta", grammar recommends instead of 'asemasta'
-Asi	1	This proper noun overlaps forms of very common *asia* "thing"
+asemasta	2	instead of, as adposition, genitive complement or possessive, “tien asemasta”, commonly used instead of 'asemesta'
+asemesta	2	instead of, as adposition, genitive complement or possessive, “tien asemesta”, grammar recommends instead of 'asemasta'
+Asi	1	This proper noun overlaps forms of very common *asia* “thing”
 asti	1	adverb is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
-asti	2	adposition (until) when can be attached to a partitive NP, "siitä asti", complent is genitive, "loppuun asti"
+asti	2	adposition (until) when can be attached to a partitive NP, “siitä asti”, complent is genitive, "loppuun asti"
 atk	1	automaattinen tekstinkäsittely
 avulla	1	adposition (with help of) when can be attached to a genitive NP, otherwise noun forms of *apu* (help)
 BBC	1	British Broadcasting Company
@@ -93,28 +93,28 @@ dna	1	deoxyribonucleic acid
 DNA	1	Deoxyribo-Nucleic Acid
 DPI	1	Dots Per Inch
 DVD	1	Digital Versatile Disc
-Ede	1	This proper noun overlaps forms of very common *edellä* "front, etc.
+Ede	1	This proper noun overlaps forms of very common *edellä* “front, etc.
 edessä	1	in way as adverb
-edessä	2	in front of, as adp, complement is genitive or possessive, "talon edessä"
-editse	1	via front of, as adp, complement is genitive or possessive, "talon editse"
-edus	1	This noun means "frontside" but overlaps forms of *etu*, *edusta* etc.
+edessä	2	in front of, as adp, complement is genitive or possessive, “talon edessä”
+editse	1	via front of, as adp, complement is genitive or possessive, “talon editse”
+edus	1	This noun means “frontside” but overlaps forms of *etu*, *edusta* etc.
 EEC	1	European Economy Council
 EKP	1	Euroopan Keskus-Pankki
-eli	1	that is, then, sometimes also or, co-ordinating conjunction, "kissa eli eläin", "kissa eli koira"
-eli	2	so, discourse particle, to be mumbled turn-initially or pausing, "eli eli, mitäs sit"
+eli	1	that is, then, sometimes also or, co-ordinating conjunction, “kissa eli eläin”, "kissa eli koira"
+eli	2	so, discourse particle, to be mumbled turn-initially or pausing, “eli eli, mitäs sit”
 EMU	1	European Monetary Union
 enemmän	1	usually seen as adverb (more), but can be analysed as genetive of the adjective *enempi* (greater)
 Eni	1	This proper noun overlaps forms of very common FIXME
-ennen	1	in the old times, as adverb, "ennen oli kaikki paremmin"
-ennen	2	before, as adposition, complement in partitive, "ennen kaikkea"
+ennen	1	in the old times, as adverb, “ennen oli kaikki paremmin”
+ennen	2	before, as adposition, complement in partitive, “ennen kaikkea”
 erikseen	1	usually seen as adverb (separately), but can be analysed as a form of *erä* (lap, round)
 erilleen	1	usually seen as adverb (separate), but can be analysed as a form of *erä* (lap, round)
 erillään	1	usually seen as adverb (separate), but can be analysed as a form of *erä* (lap, round)
-Erinomainen	1	This proper noun overlaps very common *erinomainen* "excellent".
-Erä	1	This proper noun overlaps very common *erä* "round, lap"
-esim.	1	esimerkiksi, "e.g." or for example
+Erinomainen	1	This proper noun overlaps very common *erinomainen* “excellent”.
+Erä	1	This proper noun overlaps very common *erä* “round, lap”
+esim.	1	esimerkiksi, “e.g.” or for example
 ettei	1	compound of että+ei with inflection (technically part of the dictionary, but as a non-inflecting particle set)
-että	1	that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature "tiesin, että on yö"
+että	1	that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature “tiesin, että on yö”
 että	3	that, co-ordinating conjunction, one of the more generic conjunctions, sometimes co-ordinating, refer to VISK § 819
 ETY	1	Euroopan Turvallisuus-Yhteisö
 EU	2	Euroopan Unioni
@@ -125,12 +125,12 @@ FBI	1	Federal Bureau of Investigation
 FIFA	1	Football
 FTP	1	File Transfer Protocol
 GM	1	General Motors
-Hakkuu	1	This proper noun overlaps very common *hakkuu* "felling of trees"
-Halunen	1	This proper noun overlaps forms of very common *halu* "will".
-Hanska	1	This proper noun overlaps very common *hanska* "glove".
-Hauska	1	This proper noun overlaps very common *hauska* "funny".
-he	1	This interjection overlaps very common pronoun *he* "they".
-He	1	This proper noun overlaps very common pronoun *he* "they".
+Hakkuu	1	This proper noun overlaps very common *hakkuu* “felling of trees”
+Halunen	1	This proper noun overlaps forms of very common *halu* “will”.
+Hanska	1	This proper noun overlaps very common *hanska* “glove”.
+Hauska	1	This proper noun overlaps very common *hauska* “funny”.
+he	1	This interjection overlaps very common pronoun *he* “they”.
+He	1	This proper noun overlaps very common pronoun *he* “they”.
 HIFK	1	Helsingfors
 HIV	1	Human Immunodeficiency Virus
 HJK	1	Helsingin Jalkapallo-Klubi
@@ -139,11 +139,11 @@ HS	1	Helsingin Sanomat
 HTML	1	Hyper-Text Markup Language
 HTTP	1	Hyper-Text Transfer Protocol
 huolimatta	1	adposition (regardless) when can be attached to a partitive NP, otherwise form of *huolia* (icare, concenr of)
-hännille	2	to end, tails, as adposition, genitive complement or possessive, "jonon hännille"
-hännillä	2	end, "tails", as adposition, genitive complement or possessive, "jonon hännillä"
-hänniltä	2	from end, tails, as adposition, genitive complement or possessive, "jonon hänniltä"
+hännille	2	to end, tails, as adposition, genitive complement or possessive, “jonon hännille”
+hännillä	2	end, “tails”, as adposition, genitive complement or possessive, "jonon hännillä"
+hänniltä	2	from end, tails, as adposition, genitive complement or possessive, “jonon hänniltä”
 IBM	1	International Business Machines
-Ihana	1	This proper noun overlaps very common *ihana* "lovely".
+Ihana	1	This proper noun overlaps very common *ihana* “lovely”.
 ilman	1	adposition (without) when can be attached to a partitive NP, otherwise adverb (without)
 internet-tv	1	Tele-Visio
 IP	1	Internet Protocol
@@ -152,20 +152,20 @@ ISBN	1	International Serial Book Number
 IT	1	Informaatio-Teknologia
 itse	1	self, as the reflexive pronoun, see VISK §769
 itse	2	self as reflexive pronoun (c.f. VISK § 104)
-ja	1	and, as cconj, "kissoja ja koiria", see VISK § 817
-ja	2	as well, as adverb, colloquial-ish, "mentiin sinne ja"
-Jo	1	This proper noun overlaps very common *jo* "already".
-Johan	1	This proper noun overlaps forms of very common *jo* "already".
+ja	1	and, as cconj, “kissoja ja koiria”, see VISK § 817
+ja	2	as well, as adverb, colloquial-ish, “mentiin sinne ja”
+Jo	1	This proper noun overlaps very common *jo* “already”.
+Johan	1	This proper noun overlaps forms of very common *jo* “already”.
 johdolla	1	adposition (lead by) when can be attached to a genitive NP, otherwise noun forms of *johto* (lead, cord)
-Joki	1	This proper noun overlaps very common *joki* "river".
+Joki	1	This proper noun overlaps very common *joki* “river”.
 joko	1	either, paired with tai in either-or structure, rarer sub-ordinating reading, see VISK § 815
-joko	2	already? (from jo+ko), adverb, "joko taas?"
-joko	3	either, paired with tai in either-or structure, perhaps (this) co-ordinating is more common interpretation, "joko minä tai sinä", see VISK § 815
-jos	2	if, as sconj, "jos voisit jäädä", see VISK § 818
-jotta	1	so that, in order to, as sub-ordinating conjunction, "jotta pystyn valmistumaan",
+joko	2	already? (from jo+ko), adverb, “joko taas?”
+joko	3	either, paired with tai in either-or structure, perhaps (this) co-ordinating is more common interpretation, “joko minä tai sinä”, see VISK § 815
+jos	2	if, as sconj, “jos voisit jäädä”, see VISK § 818
+jotta	1	so that, in order to, as sub-ordinating conjunction, “jotta pystyn valmistumaan”,
 jotta	2	yota, noun prefix SI unit, rare
 jumissa	1	usually seen as adverb (stuck), but can be analysed as an inessive of the noun *jumi* (bind)
-Jyrkänne	1	This proper noun overlaps very common *jyrkänne* "cliff".
+Jyrkänne	1	This proper noun overlaps very common *jyrkänne* “cliff”.
 jäljelle	1	usually seen as adverb (left), but can be analysed as a form of *jälki* (trace)
 jäljellä	1	usually seen as adverb (left), but overlaps adessive of the noun *jälki* (trace)
 jäljessä	1	behind adverb,
@@ -174,53 +174,53 @@ jäljestä	1	from behind, adverb
 jäljestä	2	from behind of, as adposition
 jälkeen	1	adposition (after) when can be attached to a genitive NP, otherwise noun forms of *jälki* (trace)
 jälkeen	2	adverb (afterhands) 
-ka	1	This noun is SI unit "ka" or abbreviation "avg." but overlaps forms of very common stuff
+ka	1	This noun is SI unit “ka” or abbreviation "avg." but overlaps forms of very common stuff
 Ka	1	This proper noun overlaps forms of very common some very common stuff
 kaikkiaan	1	usually seen as adverb (all in all), but can be analysed as a form of *kaikki* (all)
 kanna	1	a noun refering to any plant of the genus Canna having large sheathing leaves and clusters of large showy flowers (FinnWordNet) but overlaps forms of *kantaa* (to carry).
 kanssa	1	adposition (with) when can be attached to a genitive NP, otherwise adverb (as well)
-kanssa	2	also as well, adverb, perhaps rather limited, "tuletko kanssa?"
-Karta	1	This proper noun overlaps forms of very common *kartta* "map" and *karttaa* "avoid".
-Kauha	1	This proper noun overlaps very common *kauha* "ladle".
+kanssa	2	also as well, adverb, perhaps rather limited, “tuletko kanssa?”
+Karta	1	This proper noun overlaps forms of very common *kartta* “map” and *karttaa* "avoid".
+Kauha	1	This proper noun overlaps very common *kauha* “ladle”.
 kautta	1	adposition (via) when can be attached to a genitive or partitive NP, otherwise noun forms of *kausi* (season)
 kautta	2	adverb, ?
-Kello	1	This proper noun overlaps very common *kello* "clock".
+Kello	1	This proper noun overlaps very common *kello* “clock”.
 kerrassaan	1	usually seen as adverb (indeed), but can be analysed as a form of *kerta* (one time)
 KHO	1	Korkein Hovi-Oikeus
-Kiva	1	This proper noun overlaps very common *kiva* "nice".
+Kiva	1	This proper noun overlaps very common *kiva* “nice”.
 kohta	1	place, spot, noun
 kohta	2	soon, adverb
 kohta	3	if not really, paired sub-ordinating conjunction jos ... kohta
 KOP	1	Kansallis-Osake-Pankki
-kos	1	This noun means a unit of length in India (FinnWordNet) but overlaps forms of very common *koska* "because" etc.
-koska	1	when, as adverb, "koska tulet?"
-koska	3	because, sub-ordinating conj, "koska olen hyvä"
-Koto	1	This proper noun overlaps forms of very common *kotona* "at home", etc.
+kos	1	This noun means a unit of length in India (FinnWordNet) but overlaps forms of very common *koska* “because” etc.
+koska	1	when, as adverb, “koska tulet?”
+koska	3	because, sub-ordinating conj, “koska olen hyvä”
+Koto	1	This proper noun overlaps forms of very common *kotona* “at home”, etc.
 kotoisin	1	usually seen as adverb (from), but can be analysed as a form of *koto* (home)
-kui	1	This noun means the Dravidian language spoken by the Kui in southeastern India (FinnWordNet) but overlaps forms of very common *kuin* "as".
-kuin	1	as ... as, sub-ordinating conj, comparative particle, "niin kauan kuin", "parempi kuin"
-kuin	4	both ... and, paired with niin, co-ordinating conj, "niin kissoja kuin koiriakin"
-kuivilla	1	dry from smth (alcohol, drug etc.), elative complement "olen kuivilla viinasta kolme kuukautta"
-kuivilla	2	dry also literally "olen kuivilla"
-kuiville	1	into dry from smth. (alcohol, drug etc.) "pitää päästä kuiville viinasta"
-kuiville	2	getting dry from, also literally "päästä kuiville"
+kui	1	This noun means the Dravidian language spoken by the Kui in southeastern India (FinnWordNet) but overlaps forms of very common *kuin* “as”.
+kuin	1	as ... as, sub-ordinating conj, comparative particle, “niin kauan kuin”, "parempi kuin"
+kuin	4	both ... and, paired with niin, co-ordinating conj, “niin kissoja kuin koiriakin”
+kuivilla	1	dry from smth (alcohol, drug etc.), elative complement “olen kuivilla viinasta kolme kuukautta”
+kuivilla	2	dry also literally “olen kuivilla”
+kuiville	1	into dry from smth. (alcohol, drug etc.) “pitää päästä kuiville viinasta”
+kuiville	2	getting dry from, also literally “päästä kuiville”
 kumminkaan	1	usually seen as adverb (however, negative), but can be analysed as a form of *kumpi* (which)
 kumminkin	1	usually seen as adverb (however, affirmative), but can be analysed as a form of *kumpi* (which)
-kun	1	when, sub-ordinating conj, "kun menen kotiin", see VISK § 818
-kunnes	2	until, sub-ordinating conjunction, "kunnes olet valmis"
-Kuppi	1	This proper noun overlaps very common *kuppi* "cup".
-kuten	1	like a, such, as adverb, "eläin kuten kärpänen", used like "kuin"
-kuten	2	like, as sub-ordinating conjunction "tulkitse kuten pystyt"
-Kutsu	1	This proper noun overlaps forms of very common *kutsu* "invitation", *kutsua* "to invite" etc.
+kun	1	when, sub-ordinating conj, “kun menen kotiin”, see VISK § 818
+kunnes	2	until, sub-ordinating conjunction, “kunnes olet valmis”
+Kuppi	1	This proper noun overlaps very common *kuppi* “cup”.
+kuten	1	like a, such, as adverb, “eläin kuten kärpänen”, used like "kuin"
+kuten	2	like, as sub-ordinating conjunction “tulkitse kuten pystyt”
+Kutsu	1	This proper noun overlaps forms of very common *kutsu* “invitation”, *kutsua* "to invite" etc.
 kuvi	1	This noun means a Dravidian language spoken in southeast India (FinnWordNet) but overlaps forms of very common *kuva* (picture).
-käsin	1	manually "by hand", as opposed to automatically "tee se käsin"
-käsin	2	from smwh. ablative complement "mereltä käsin"
+käsin	1	manually “by hand”, as opposed to automatically "tee se käsin"
+käsin	2	from smwh. ablative complement “mereltä käsin”
 käsiksi	1	usually seen as adverb (intervene), but can be analysed as translative of the noun *käsi* (hand)
 lainkaan	1	usually seen as adverb (at all), but can be analysed as a form of *laki* (law, hilltop)
 Lava	1	This proper noun overlaps very common *lava* (stage).
 lehtiö-pc	1	Personal Computer
 Leikkaa	1	This proper noun overlaps forms of very common *leikata* (to cut).
-lev	1	This noun is alternate form of Bulgarien currency lev, but overlaps forms of very common *lepo* "rest".
+lev	1	This noun is alternate form of Bulgarien currency lev, but overlaps forms of very common *lepo* “rest”.
 Lusikka	1	This proper noun overlaps  very common *lusikka* (spoon).
 Lähdet	1	This proper noun overlaps forms of very common *lähde* (source).
 Lähellä	1	This proper noun overlaps forms of very common *lähellä* (close).
@@ -239,23 +239,23 @@ mielellään	1	usually seen as adverb (gladly), but can be analysed as possessiv
 mieliksi	1	usually seen as adverb (enjoy), but can be analysed as translative of the noun *mieli* (mind)
 Mies	1	This proper noun overlaps  very common *mies* (man).
 Mietti	1	This proper noun overlaps forms of very common *miettiä* (to think).
-mikä	1	what, as interrogataive, "mikä tuo on?"
-mikä	2	what a, quantifier, "mikä mainio esimerkkilause"
-mikä	3	that, which, as relative pronoun, "se meni, mikä tuli"
+mikä	1	what, as interrogataive, “mikä tuo on?”
+mikä	2	what a, quantifier, “mikä mainio esimerkkilause”
+mikä	3	that, which, as relative pronoun, “se meni, mikä tuli”
 mikä	4	that, which, as conjunction
-mikäli	1	if, given that, sub-ordinating conjunction, "mikäli voidaan"
+mikäli	1	if, given that, sub-ordinating conjunction, “mikäli voidaan”
 missouri	1	A language (FinnWordNet) but overlaps more common proper noun.
-mitä	1	what, interrogative adverb "mitä haluat"
+mitä	1	what, interrogative adverb “mitä haluat”
 mitä	2	that, relative FIXME
-mitä	3	than, as sub-ordinating conjuction "aikaisemmin mitä ajattelin" used like "kuin", maybe also paired conjunction sitä-mitä?
-mm.	1	muun muassa, "incl." or among others
+mitä	3	than, as sub-ordinating conjuction “aikaisemmin mitä ajattelin” used like "kuin", maybe also paired conjunction sitä-mitä?
+mm.	1	muun muassa, “incl.” or among others
 mon	1	This noun means the Mon-Khmer language spoken by the Mon (FinnWordNet) but overlaps forms of very common *moni* (many).
 MTV	1	Music TeleVision
 MTV3	1	Mainos-Tele-Visio
 mukaan	1	adposition (with) when can be attached to a genitive NP, otherwise adverb (along)
-mukaan	2	along, adv, verb complement, "lähde mukaan!"
+mukaan	2	along, adv, verb complement, “lähde mukaan!”
 mutta	1	REMOVED non CC version, provide examples to get it back
-mutta	2	co-ordinating conjunction, "ei hyvä, mutta ok"
+mutta	2	co-ordinating conjunction, “ei hyvä, mutta ok”
 Mutta	1	proper noun, rather rare but notably overlaps an everyday conjunction
 Mutta	1	This proper noun overlaps  very common *mutta* (but).
 Muu	1	This proper noun overlaps  very common *muu* (other).
@@ -274,8 +274,8 @@ NATO	1	North-Atlantic T Organisation
 NBA	1	National Basketball Association
 netti-tv	1	Tele-visio
 NHL	1	National Hockey League
-niin	1	so, such, adverb, "tehtiin niin"
-niin	2	as well as, paired co-ordinating conjunction with kuin, "niin kissoja kuin koiriakin"
+niin	1	so, such, adverb, “tehtiin niin”
+niin	2	as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin”
 NL	1	Neuvosto-Liitto
 n:o	1	abbreviation for number, chiefly europarl language etc.
 NPC	1	Non-Player Character
@@ -293,15 +293,15 @@ Osa	1	This proper noun overlaps  very common *osa* (part).
 osaksi	1	usually seen as adverb (partially), but can be analysed as translative of the noun *osa* (part)
 Osta	1	This proper noun overlaps forms of very common *ostaa* (to buy).
 Ota	1	This proper noun overlaps forms of very common *ottaa* (to take).
-ottamatta	1	excepting, as adposition, illative complement, mainly "lukuun ottamatta"
+ottamatta	1	excepting, as adposition, illative complement, mainly “lukuun ottamatta”
 oy	1	Osake-Yhtiö
 OY	1	Osake-Yhtiö
 oyj	1	Julkinen Osake-Yhtiö
 pai	1	This noun means a pie but overlaps forms of very common *paikka* (place) among others.
 paikoin	1	usually seen as adverb (in places), but can be analysed as instructive of the noun *paikka* (place)
 paitsi	1	except, as adposition, complement is partitive, see VISK § 708
-paitsi	2	but not, as adverb, "jään paitsi"
-paitsi	3	except, as sub-ordinating conjunction, "kerroin kaiken muun, paitsi en totuutta" UD Finnish, see also VISK § 708 examples d)
+paitsi	2	but not, as adverb, “jään paitsi”
+paitsi	3	except, as sub-ordinating conjunction, “kerroin kaiken muun, paitsi en totuutta” UD Finnish, see also VISK § 708 examples d)
 paneeli-pc	1	(Panel) Personal Computer??
 par	1	This noun means a par in e.g., golf but overlaps forms of very common *paras* (best) among others.
 parhaimmillaan	1	usually seen as adverb (best), but can be analysed as a form of *paras* (best)
@@ -333,13 +333,13 @@ pystyyn	1	usually seen as adverb (abrupt end), but can be analysed as illative o
 päin	1	adposition (towards) when can be attached to a partitive NP, otherwise noun form of *pää* (head)
 päin	2	adverb
 RNA	1	Ribonucleic Acid
-s.	1	sivu, "p." or page
-saati	3	also not even, coordinating conj, "ei kissoja saati koiria", see VISK § 816
+s.	1	sivu, “p.” or page
+saati	3	also not even, coordinating conj, “ei kissoja saati koiria”, see VISK § 816
 SAK	1	Suomen Ammattiliittojen Keskusjärjestö
 Sakko	1	This proper noun overlaps  very common *sakko* (a fine).
 samalla	1	usually seen as adverb (meanwhile), but can be analysed as possessive elative of the adjective *sama* (same)
 SDP	1	Sosiali-Demokraattinen Puolue
-sekä	1	and too, coordinating conj, "kissat sekä koirat"
+sekä	1	and too, coordinating conj, “kissat sekä koirat”
 selin	1	usually seen as adverb (back facing), but can be analysed as instructive of the noun *selkä* (back)
 Sen	1	This proper noun overlaps forms of very common *se* (that).
 Seuranen	1	This proper noun overlaps forms of very common *seura* (company).
@@ -352,12 +352,12 @@ siksi	1	REMOVED, in lack of adpositional evidence
 siksi	2	thus, therefore, that's why, notably also translative of *se* (it)
 siten	1	REMOVED, in lack of adpositional evidence
 siten	2	so, thusly
-sillä	1	because, subordinating conj, "sillä tiedän paremmin" (NB ambig with many se adessives)
+sillä	1	because, subordinating conj, “sillä tiedän paremmin” (NB ambig with many se adessives)
 Silta	1	This proper noun overlaps  very common *silta* (bridge).
 sisällä	1	adverb
 sisällä	2	adposition (inside of) when can be attached to a genitive NP, otherwise adverb (inside)
 sisältä	1	adverb
-sisältä	2	from inside. as adposition, "talon sisältä"
+sisältä	2	from inside. as adposition, “talon sisältä”
 sitten	1	adposition (since) when can be attached to a partitive NP, otherwise adverb or conjunction (then)
 SKDL	1	Suomen Kristillis-Demokraattien Liitto
 Skp	1	Suomen keskuspankki
@@ -379,9 +379,9 @@ suunnilleen	1	adverb?
 suunnilleen	2	usually seen as adverb (approximately), but overlaps allative of the noun *suunta* (direction)
 suunnitteilla	1	usually seen as adverb (planned), but can be analysed as adessive of the noun *suunnite* (FIXME)
 syvällä	1	usually seen as adverb (deep), but can be analysed as possessive elative of the adjective *syvä* (deep)
-taas	1	again, adverb, "taas myöhässä"
-taas	2	when again, as paired sub-ordinating conjunction with kun, "kun taas huomenna ei"
-tai	1	or, coordinating conjunction, "kissat tai koirat"
+taas	1	again, adverb, “taas myöhässä”
+taas	2	when again, as paired sub-ordinating conjunction with kun, “kun taas huomenna ei”
+tai	1	or, coordinating conjunction, “kissat tai koirat”
 tai	2	a Kadai language, noun, rather rare but ambiguous with common conjunction
 tai	2	This noun means the most widespread and best known of the Kadai family of languages (FinnWordNet) but overlaps  very common *tai* (or).
 taka	1	This noun means backside but overlaps forms of very common *takana* (behind) etc.
@@ -400,11 +400,11 @@ tietenkin	1	usually seen as adverb (of course), but can be analysed as a form of
 tietenkään	1	usually seen as adverb (of course not), but can be analysed as a form of *tieten* (knowingly)
 Tieto	1	This proper noun overlaps  very common *tieto* (knowledge).
 Tietty	1	This proper noun overlaps  very common *tietty* (specific).
-Tila	1	This proper noun overlaps very common *tila* "space".
+Tila	1	This proper noun overlaps very common *tila* “space”.
 TM	1	Tekniikan Maailma
 todella	1	adposition?
 todella	2	usually seen as adverb (really), but can be analysed as adessive of the noun *tosi* (truth)
-toisaalta	1	on the other hand, as adverb, "toisaalta ei kiinnosta"
+toisaalta	1	on the other hand, as adverb, “toisaalta ei kiinnosta”
 toisaalta	2	and otoh, as paired conjunction with ja
 toisinaan	1	usually seen as adverb (every once in a while), but can be analysed as a form of *toinen* (second)
 Toivo	1	This proper noun overlaps  very common *toivo* (hope).
@@ -429,24 +429,24 @@ uudelleen	1	usually seen as adverb (again), but can be analysed as possessive al
 uudestaan	1	usually seen as adverb (again), but can be analysed as possessive elative of the adjective *uusi* (new)
 Uutinen	1	This proper noun overlaps  very common *uutinen* (news).
 vaan	1	but rather, as cconj, see VISK § 1106
-vaan	2	really indeed, as adverb, "ei nyt vaan pysty"
+vaan	2	really indeed, as adverb, “ei nyt vaan pysty”
 vai	1	This noun means a Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or).
 vai	1	Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunctions and adverbs
-vai	2	really so, as adverb, colloquial, "ai on vai"
-vai	3	or, as cconj, used in contrastive position only, "kissoja vai koiria"
-vaikk	1	even though, as subordinating conjunction, colloquial "vaikka ärsyttäisikin", see VISK § 816
+vai	2	really so, as adverb, colloquial, “ai on vai”
+vai	3	or, as cconj, used in contrastive position only, “kissoja vai koiria”
+vaikk	1	even though, as subordinating conjunction, colloquial “vaikka ärsyttäisikin”, see VISK § 816
 vaikka	1	REMOVED
-vaikka	2	even, as adverb, "vaikka mitä", "vaikka kuinka paljon" see VISK § 841
-vaikka	3	even though, as subordinating conjunction, "vaikka ärsyttäisikin", see VISK § 816
+vaikka	2	even, as adverb, “vaikka mitä”, "vaikka kuinka paljon" see VISK § 841
+vaikka	3	even though, as subordinating conjunction, “vaikka ärsyttäisikin”, see VISK § 816
 Vanha	1	This proper noun overlaps  very common *vanha* (old)
 vanhastaan	1	usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old)
 varmaan	1	usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure)
 Varo	1	This proper noun overlaps forms of very common *varoa* (beware).
 varsin	1	usually seen as adverb (really), but can be analysed as a form of *varsi* (stem)
-vallassa	1	in rule, "täällä on vallassa kuningas"
-vallassa	2	possessed by smth., genitive complement "pahan hengen vallassa"
-vallasta	1	dethroned, "kuningas syöstiin vallasta"
-vallasta	2	exorcised of smth., genitive complement "pahan hengen vallasta"
+vallassa	1	in rule, “täällä on vallassa kuningas”
+vallassa	2	possessed by smth., genitive complement “pahan hengen vallassa”
+vallasta	1	dethroned, “kuningas syöstiin vallasta”
+vallasta	2	exorcised of smth., genitive complement “pahan hengen vallasta”
 vastaan	1	adposition (against smth) when can be attached to a partitive NP, otherwise adverb (against)
 vastaan	2	adverb (against)
 vihdoin	1	usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig)
