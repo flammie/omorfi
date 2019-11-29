@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: PDF
 ---
 
-###  PDF
+###  PDF₁
 
 Portable Document Format
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

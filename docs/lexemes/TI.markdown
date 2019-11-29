@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: TI
 ---
 
-###  TI
+###  TI₁
 
 Texas Instruments
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  MISC
 

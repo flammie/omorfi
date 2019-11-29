@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: ennen
 ---
 
-###  ennen
+###  ennen₁
 
-in the old times, as adverb, "ennen oli kaikki paremmin"
+in the old times, as adverb, “ennen oli kaikki paremmin“
 * UPOS:  ADV
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 
 
-## ennen (alternate reading 2 )
+###  ennen₂
 
-before, as adposition, complement in partitive, "ennen kaikkea"
+before, as adposition, complement in partitive, “ennen kaikkea“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

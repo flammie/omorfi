@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: WHO
 ---
 
-###  WHO
+###  WHO₁
 
 World Health Organisation
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  omorfi
 * Possible NER class:  ORG
 

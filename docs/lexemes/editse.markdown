@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: editse
 ---
 
-###  editse
+###  editse₁
 
-via front of, as adp, complement is genitive or possessive, "talon editse"
+via front of, as adp, complement is genitive or possessive, “talon editse“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

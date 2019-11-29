@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: DDR
 ---
 
-###  DDR
+###  DDR₁
 
 Deutsches Democratische Republic
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  GEO
 

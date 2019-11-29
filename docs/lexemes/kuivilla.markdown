@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: kuivilla
 ---
 
-###  kuivilla
+###  kuivilla₁
 
-dry from smth (alcohol, drug etc.), elative complement "olen kuivilla viinasta kolme kuukautta"
+dry from smth (alcohol, drug etc.), elative complement “olen kuivilla viinasta kolme kuukautta“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  PREPOSITION
 
 
-## kuivilla (alternate reading 2 )
+###  kuivilla₂
 
-dry also literally "olen kuivilla"
+dry also literally “olen kuivilla“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

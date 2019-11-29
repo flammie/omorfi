@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: VIP
 ---
 
-###  VIP
+###  VIP₁
 
 Very Important Person
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

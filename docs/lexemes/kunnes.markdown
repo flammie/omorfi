@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: kunnes
 ---
 
-## kunnes (alternate reading 2 )
+###  kunnes₂
 
-until, sub-ordinating conjunction, "kunnes olet valmis"
+until, sub-ordinating conjunction, “kunnes olet valmis“
 * UPOS:  SCONJ
-* Added from:  kotus|omorfi++
+* Origin:  kotus|omorfi++
 

@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: suhteen
 ---
 
-###  suhteen
+###  suhteen₁
 
 adverb
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## suhteen (alternate reading 2 )
+###  suhteen₂
 
 adposition (with regards to) when can be attached to a genitive NP, otherwise noun forms of *suhde* (relation)
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

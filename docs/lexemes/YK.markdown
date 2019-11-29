@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: YK
 ---
 
-###  YK
+###  YK₁
 
 Yhdistyneet Kansakunnat
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

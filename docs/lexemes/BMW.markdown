@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: BMW
 ---
 
-###  BMW
+###  BMW₁
 
 Bayerische Motor W
 * UPOS:  PROPN
-* Added from:  omorfi
+* Origin:  omorfi
 * Possible NER class:  ORG
 

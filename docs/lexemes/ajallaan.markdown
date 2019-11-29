@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: ajallaan
 ---
 
-###  ajallaan
+###  ajallaan₁
 
 adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
 * UPOS:  ADV
-* Added from:  omorfi|fiwikt
+* Origin:  omorfi|fiwikt
 
 
-## ajallaan (alternate reading 2 )
+###  ajallaan₂
 
-in time, as adverb, "yritä tulla ajallaan"
+in time, as adverb, “yritä tulla ajallaan“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

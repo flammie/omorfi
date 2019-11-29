@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: :
 ---
 
-###  :
+###  :₁
 
 colon
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

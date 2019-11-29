@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: myötä
 ---
 
-###  myötä
+###  myötä₁
 
 adverb 
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## myötä (alternate reading 2 )
+###  myötä₂
 
 adposition (along) when can be attached to a genitive NP, otherwise adverb
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

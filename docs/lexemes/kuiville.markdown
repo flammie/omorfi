@@ -3,15 +3,15 @@ layout: lexeme
 lexeme: kuiville
 ---
 
-###  kuiville
+###  kuiville₁
 
-into dry from smth. (alcohol, drug etc.) "pitää päästä kuiville viinasta"
+into dry from smth. (alcohol, drug etc.) “pitää päästä kuiville viinasta“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 
 
-## kuiville (alternate reading 2 )
+###  kuiville₂
 
-getting dry from, also literally "päästä kuiville"
+getting dry from, also literally “päästä kuiville“
 

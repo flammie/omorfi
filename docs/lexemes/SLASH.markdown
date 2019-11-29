@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: /
 ---
 
-## / (alternate reading 2 )
+###  /₂
 
 slash, for division, URLs, etc.
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

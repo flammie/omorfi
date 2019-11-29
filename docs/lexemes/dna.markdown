@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: dna
 ---
 
-###  dna
+###  dna₁
 
 deoxyribonucleic acid
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

@@ -3,10 +3,11 @@ layout: lexeme
 lexeme: TM
 ---
 
-###  TM
+###  TM₁
 
 Tekniikan Maailma
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  MISC
+* Semantic tags:  ORG
 

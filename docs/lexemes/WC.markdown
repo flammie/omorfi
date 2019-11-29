@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: WC
 ---
 
-###  WC
+###  WC₁
 
 Water Closet
 * UPOS:  NOUN
-* Added from:  joukahainen|enwikt
+* Origin:  joukahainen|enwikt
 

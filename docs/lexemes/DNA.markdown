@@ -3,10 +3,11 @@ layout: lexeme
 lexeme: DNA
 ---
 
-###  DNA
+###  DNA₁
 
 Deoxyribo-Nucleic Acid
 * UPOS:  PROPN
-* Added from:  omorfi
+* Origin:  omorfi
 * Possible NER class:  ORG
+* Semantic tags:  MEDIA
 

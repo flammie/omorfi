@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: WTO
 ---
 
-###  WTO
+###  WTO₁
 
 World Trade Organisation
 * UPOS:  PROPN
-* Added from:  omorfi
+* Origin:  omorfi
 * Possible NER class:  ORG
 

@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: USA
 ---
 
-###  USA
+###  USA₁
 
 United States of America
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  GEO
 

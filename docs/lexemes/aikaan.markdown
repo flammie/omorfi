@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: aikaan
 ---
 
-###  aikaan
+###  aikaan₁
 
-done, accomplished, verb complement kind of, e.g., "saada aikaan"
+done, accomplished, verb complement kind of, e.g., “saada aikaan“
 * UPOS:  ADV
-* Added from:  omorfi++
+* Origin:  omorfi++
 
 
-## aikaan (alternate reading 2 )
+###  aikaan₂
 
-during (around), adposition with genitive complement, e.g., "sen aikaan"
+during (around), adposition with genitive complement, e.g., “sen aikaan“
 * UPOS:  ADP
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 * AdpType:  POSTPOSITION
 

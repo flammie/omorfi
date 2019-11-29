@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: jäljessä
 ---
 
-###  jäljessä
+###  jäljessä₁
 
 behind adverb,
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## jäljessä (alternate reading 2 )
+###  jäljessä₂
 
 behind of, as adposition, genitive complement
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

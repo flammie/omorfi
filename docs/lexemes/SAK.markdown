@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: SAK
 ---
 
-###  SAK
+###  SAK₁
 
 Suomen Ammattiliittojen Keskusjärjestö
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

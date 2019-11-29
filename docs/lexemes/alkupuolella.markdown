@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: alkupuolella
 ---
 
-###  alkupuolella
+###  alkupuolella₁
 
-in the beginning, as adposition, genitive complement or possessive, "tarinan alkupuolella"
+in the beginning, as adposition, genitive complement or possessive, “tarinan alkupuolella“
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

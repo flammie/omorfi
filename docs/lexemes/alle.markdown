@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: alle
 ---
 
-###  alle
+###  alle₁
 
-to under, as adposition, genitive complement or possessive, "laiturin alle"
+to under, as adposition, genitive complement or possessive, “laiturin alle“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: yhteensä
 ---
 
-###  yhteensä
+###  yhteensä₁
 
 usually seen as adverb (altogether), but can be analysed as a form of *yksi* (one)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

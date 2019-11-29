@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: asemasta
 ---
 
-###  asemasta
+###  asemasta₁
 
 instead, as adv, ??
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## asemasta (alternate reading 2 )
+###  asemasta₂
 
-instead of, as adposition, genitive complement or possessive, "tien asemasta", commonly used instead of 'asemesta'
+instead of, as adposition, genitive complement or possessive, “tien asemasta“, commonly used instead of 'asemesta'
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

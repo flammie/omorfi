@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ...
 ---
 
-###  ...
+###  ...₁
 
 ellipsis
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

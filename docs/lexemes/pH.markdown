@@ -3,9 +3,10 @@ layout: lexeme
 lexeme: pH
 ---
 
-###  pH
+###  pH₁
 
 per Hydrogen
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
+* Semantic tags:  MEASURE
 

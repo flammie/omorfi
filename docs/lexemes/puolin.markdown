@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: puolin
 ---
 
-###  puolin
+###  puolin₁
 
 usually seen as adverb (sides), but can be analysed as instructive of the noun *puoli* (half, side)
 * UPOS:  ADV
-* Added from:  omorfi|fiwikt
+* Origin:  omorfi|fiwikt
 

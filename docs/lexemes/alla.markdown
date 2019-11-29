@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: alla
 ---
 
-###  alla
+###  alla₁
 
-under, as adposition, genitive complement or possessive, "laiturin alla"
+under, as adposition, genitive complement or possessive, “laiturin alla“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

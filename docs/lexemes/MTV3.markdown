@@ -3,10 +3,11 @@ layout: lexeme
 lexeme: MTV3
 ---
 
-###  MTV3
+###  MTV3₁
 
 Mainos-Tele-Visio
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
+* Semantic tags:  MEDIA
 

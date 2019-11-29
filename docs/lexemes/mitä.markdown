@@ -3,23 +3,23 @@ layout: lexeme
 lexeme: mitä
 ---
 
-###  mitä
+###  mitä₁
 
-what, interrogative adverb "mitä haluat"
+what, interrogative adverb “mitä haluat“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## mitä (alternate reading 2 )
+###  mitä₂
 
 that, relative FIXME
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## mitä (alternate reading 3 )
+###  mitä₃
 
-than, as sub-ordinating conjuction "aikaisemmin mitä ajattelin" used like "kuin", maybe also paired conjunction sitä-mitä?
+than, as sub-ordinating conjuction “aikaisemmin mitä ajattelin“ used like "kuin", maybe also paired conjunction sitä-mitä?
 * UPOS:  SCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

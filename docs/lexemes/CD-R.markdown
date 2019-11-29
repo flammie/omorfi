@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: CD-R
 ---
 
-###  CD-R
+###  CD-R₁
 
 Compact Disc Read-Only
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

@@ -3,10 +3,11 @@ layout: lexeme
 lexeme: KHO
 ---
 
-###  KHO
+###  KHO₁
 
 Korkein Hovi-Oikeus
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
+* Semantic tags:  ORG
 

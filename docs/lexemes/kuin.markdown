@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: kuin
 ---
 
-###  kuin
+###  kuin₁
 
-as ... as, sub-ordinating conj, comparative particle, "niin kauan kuin", "parempi kuin"
+as ... as, sub-ordinating conj, comparative particle, “niin kauan kuin“, "parempi kuin"
 * UPOS:  SCONJ
-* Added from:  kotus|joukahainen
+* Origin:  kotus|joukahainen
 
 
-## kuin (alternate reading 4 )
+###  kuin₄
 
-both ... and, paired with niin, co-ordinating conj, "niin kissoja kuin koiriakin"
+both ... and, paired with niin, co-ordinating conj, “niin kissoja kuin koiriakin“
 * UPOS:  CCONJ
-* Added from:  kotus
+* Origin:  kotus
 

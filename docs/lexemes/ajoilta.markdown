@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: ajoilta
 ---
 
-###  ajoilta
+###  ajoilta₁
 
-from times of smth as adposition, "ristiretkien ajoilta"
+from times of smth as adposition, “ristiretkien ajoilta“
 * UPOS:  ADP
-* Added from:  unk
+* Origin:  unk
 * AdpType:  POSTPOSITION
 

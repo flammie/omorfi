@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: {
 ---
 
-###  {
+###  {₁
 
 left curly bracket
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

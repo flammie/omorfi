@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: sekä
 ---
 
-###  sekä
+###  sekä₁
 
-and too, coordinating conj, "kissat sekä koirat"
+and too, coordinating conj, “kissat sekä koirat“
 * UPOS:  CCONJ
-* Added from:  kotus
+* Origin:  kotus
 

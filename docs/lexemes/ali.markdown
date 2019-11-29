@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: ali
 ---
 
-###  ali
+###  ali₁
 
-to / through underneath, as adverb, "täytyy mennä ali"
+to / through underneath, as adverb, “täytyy mennä ali“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## ali (alternate reading 2 )
+###  ali₂
 
-to / through underneath, as adposition, genitive complement or possessive, "kölin ali"
+to / through underneath, as adposition, genitive complement or possessive, “kölin ali“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

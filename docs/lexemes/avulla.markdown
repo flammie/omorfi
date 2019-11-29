@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: avulla
 ---
 
-###  avulla
+###  avulla₁
 
 adposition (with help of) when can be attached to a genitive NP, otherwise noun forms of *apu* (help)
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

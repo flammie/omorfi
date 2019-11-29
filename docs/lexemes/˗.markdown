@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ˗
 ---
 
-###  ˗
+###  ˗₁
 
 minus sign, rare
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

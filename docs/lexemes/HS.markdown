@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: HS
 ---
 
-###  HS
+###  HS₁
 
 Helsingin Sanomat
 * UPOS:  NOUN
 * in KOTUS dictionary under:  10
-* Added from:  joukahainen
+* Origin:  joukahainen
 

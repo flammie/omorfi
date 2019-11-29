@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: pinta-WWW
 ---
 
-###  pinta-WWW
+###  pinta-WWW₁
 
 World Wide Web
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: CIA
 ---
 
-###  CIA
+###  CIA₁
 
 Central Intelligence Agency
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

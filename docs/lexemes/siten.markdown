@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: siten
 ---
 
-###  siten
+###  siten₁
 
 REMOVED, in lack of adpositional evidence
 * UPOS:  X
-* Added from:  finer
+* Origin:  finer
 
 
-## siten (alternate reading 2 )
+###  siten₂
 
 so, thusly
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

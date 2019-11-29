@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: niin
 ---
 
-###  niin
+###  niin₁
 
-so, such, adverb, "tehtiin niin"
+so, such, adverb, “tehtiin niin“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## niin (alternate reading 2 )
+###  niin₂
 
-as well as, paired co-ordinating conjunction with kuin, "niin kissoja kuin koiriakin"
+as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin“
 * UPOS:  CCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

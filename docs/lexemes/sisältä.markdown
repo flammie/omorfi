@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: sisältä
 ---
 
-###  sisältä
+###  sisältä₁
 
 adverb
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## sisältä (alternate reading 2 )
+###  sisältä₂
 
-from inside. as adposition, "talon sisältä"
+from inside. as adposition, “talon sisältä“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

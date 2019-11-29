@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: yhdessä
 ---
 
-###  yhdessä
+###  yhdessä₁
 
 usually seen as adverb (together), but can be analysed as inessive of the adjective *yksi* (one)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

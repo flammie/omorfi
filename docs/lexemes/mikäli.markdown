@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: mikäli
 ---
 
-###  mikäli
+###  mikäli₁
 
-if, given that, sub-ordinating conjunction, "mikäli voidaan"
+if, given that, sub-ordinating conjunction, “mikäli voidaan“
 * UPOS:  SCONJ
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

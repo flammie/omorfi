@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: OK
 ---
 
-###  OK
+###  OK₁
 
 not pronounced in words
 * UPOS:  NOUN
-* Added from:  kotus|joukahainen
+* Origin:  kotus|joukahainen
 

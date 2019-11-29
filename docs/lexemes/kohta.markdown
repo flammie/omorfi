@@ -3,24 +3,24 @@ layout: lexeme
 lexeme: kohta
 ---
 
-###  kohta
+###  kohta₁
 
 place, spot, noun
 * UPOS:  NOUN
 * in KOTUS dictionary under:  10
-* Added from:  kotus|joukahainen
+* Origin:  kotus|joukahainen
 
 
-## kohta (alternate reading 2 )
+###  kohta₂
 
 soon, adverb
 * UPOS:  ADV
-* Added from:  kotus|joukahainen
+* Origin:  kotus|joukahainen
 
 
-## kohta (alternate reading 3 )
+###  kohta₃
 
 if not really, paired sub-ordinating conjunction jos ... kohta
 * UPOS:  SCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

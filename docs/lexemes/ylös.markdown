@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: ylös
 ---
 
-###  ylös
+###  ylös₁
 
 adverb (upwards)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## ylös (alternate reading 2 )
+###  ylös₂
 
 adposition (up from) when can be attached to a partitive NP, otherwise adverb (upwards)
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

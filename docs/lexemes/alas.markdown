@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: alas
 ---
 
-###  alas
+###  alas₁
 
-to under, down, as adverb, "tule alas"
+to under, down, as adverb, “tule alas“
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## alas (alternate reading 2 )
+###  alas₂
 
-down (the road or such), as adposition, partitive complement or possessive, "alas tietä pitkin"
+down (the road or such), as adposition, partitive complement or possessive, “alas tietä pitkin“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 

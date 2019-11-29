@@ -3,11 +3,11 @@ layout: lexeme
 lexeme: Mietti
 ---
 
-###  Mietti
+###  Mietti₁
 
 This proper noun overlaps forms of very common *miettiä* (to think).
 * UPOS:  PROPN
 * in KOTUS dictionary under:  5
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  GEO
 

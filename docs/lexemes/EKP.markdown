@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: EKP
 ---
 
-###  EKP
+###  EKP₁
 
 Euroopan Keskus-Pankki
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

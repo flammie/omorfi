@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: FTP
 ---
 
-###  FTP
+###  FTP₁
 
 File Transfer Protocol
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

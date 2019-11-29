@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ÄO
 ---
 
-###  ÄO
+###  ÄO₁
 
 Älykkyysosamäärä
 * UPOS:  NOUN
-* Added from:  kotus|joukahainen
+* Origin:  kotus|joukahainen
 

@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: silloin
 ---
 
-###  silloin
+###  silloin₁
 
 adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
 * UPOS:  X
-* Added from:  finer
+* Origin:  finer
 
 
-## silloin (alternate reading 2 )
+###  silloin₂
 
 usually seen as adverb (then), but overlaps instructive of the noun *silta* (bridge)
 * UPOS:  ADV
-* Added from:  omorfi
+* Origin:  omorfi
 

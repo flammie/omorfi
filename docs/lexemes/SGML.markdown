@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: SGML
 ---
 
-###  SGML
+###  SGML₁
 
 Standardised General Markup Language
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

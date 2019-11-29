@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: jäljellä
 ---
 
-###  jäljellä
+###  jäljellä₁
 
 usually seen as adverb (left), but overlaps adessive of the noun *jälki* (trace)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

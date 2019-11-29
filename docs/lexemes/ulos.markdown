@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: ulos
 ---
 
-###  ulos
+###  ulos₁
 
 adverb (out)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## ulos (alternate reading 2 )
+###  ulos₂
 
 adposition (out of) when can be attached to a elative NP, otherwise adverb (out)
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

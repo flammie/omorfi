@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: mutta
 ---
 
-###  mutta
+###  mutta₁
 
 REMOVED non CC version, provide examples to get it back
 * UPOS:  X
-* Added from:  finer
+* Origin:  finer
 
 
-## mutta (alternate reading 2 )
+###  mutta₂
 
-co-ordinating conjunction, "ei hyvä, mutta ok"
+co-ordinating conjunction, “ei hyvä, mutta ok“
 * UPOS:  CCONJ
-* Added from:  kotus
+* Origin:  kotus
 

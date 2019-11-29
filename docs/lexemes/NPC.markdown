@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: NPC
 ---
 
-###  NPC
+###  NPC₁
 
 Non-Player Character
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  MISC
 

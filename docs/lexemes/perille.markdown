@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: perille
 ---
 
-###  perille
+###  perille₁
 
 usually seen as adverb (into destination), but overlaps allative of the noun *perä* (rear)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

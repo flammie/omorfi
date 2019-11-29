@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: suunnitteilla
 ---
 
-###  suunnitteilla
+###  suunnitteilla₁
 
 usually seen as adverb (planned), but can be analysed as adessive of the noun *suunnite* (FIXME)
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 

@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: käsin
 ---
 
-###  käsin
+###  käsin₁
 
-manually "by hand", as opposed to automatically "tee se käsin"
+manually “by hand“, as opposed to automatically "tee se käsin"
 * UPOS:  ADV
-* Added from:  finer
+* Origin:  finer
 
 
-## käsin (alternate reading 2 )
+###  käsin₂
 
-from smwh. ablative complement "mereltä käsin"
+from smwh. ablative complement “mereltä käsin“
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

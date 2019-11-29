@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: mm.
 ---
 
-###  mm.
+###  mm.₁
 
-muun muassa, "incl." or among others
+muun muassa, “incl.“ or among others
 * UPOS:  ADV
-* Added from:  omorfi++|joukahainen
+* Origin:  omorfi++|joukahainen
 

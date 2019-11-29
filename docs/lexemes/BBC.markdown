@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: BBC
 ---
 
-###  BBC
+###  BBC₁
 
 British Broadcasting Company
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

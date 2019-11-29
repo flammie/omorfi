@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: ottamatta
 ---
 
-###  ottamatta
+###  ottamatta₁
 
-excepting, as adposition, illative complement, mainly "lukuun ottamatta"
+excepting, as adposition, illative complement, mainly “lukuun ottamatta“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

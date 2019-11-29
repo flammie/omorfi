@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: NHL
 ---
 
-###  NHL
+###  NHL₁
 
 National Hockey League
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  omorfi
 * Possible NER class:  ORG
 

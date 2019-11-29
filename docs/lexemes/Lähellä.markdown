@@ -3,7 +3,7 @@ layout: lexeme
 lexeme: Lähellä
 ---
 
-###  Lähellä
+###  Lähellä₁
 
 This proper noun overlaps forms of very common *lähellä* (close).
 

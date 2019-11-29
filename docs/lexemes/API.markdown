@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: API
 ---
 
-###  API
+###  API₁
 
 Application Programming Interface
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
 

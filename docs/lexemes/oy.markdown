@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: oy
 ---
 
-###  oy
+###  oy₁
 
 Osake-Yhtiö
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

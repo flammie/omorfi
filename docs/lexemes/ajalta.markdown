@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: ajalta
 ---
 
-###  ajalta
+###  ajalta₁
 
-from time of smth as adposition, "ristiretkien ajalta"
+from time of smth as adposition, “ristiretkien ajalta“
 * UPOS:  ADP
-* Added from:  omorfi
+* Origin:  omorfi
 * AdpType:  POSTPOSITION
 

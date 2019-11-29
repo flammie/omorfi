@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: HJK
 ---
 
-###  HJK
+###  HJK₁
 
 Helsingin Jalkapallo-Klubi
 * UPOS:  PROPN
-* Added from:  unk
+* Origin:  unk
 * Possible NER class:  ORG
 

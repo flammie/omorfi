@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: taas
 ---
 
-###  taas
+###  taas₁
 
-again, adverb, "taas myöhässä"
+again, adverb, “taas myöhässä“
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 
 
-## taas (alternate reading 2 )
+###  taas₂
 
-when again, as paired sub-ordinating conjunction with kun, "kun taas huomenna ei"
+when again, as paired sub-ordinating conjunction with kun, “kun taas huomenna ei“
 * UPOS:  SCONJ
-* Added from:  omorfi++
+* Origin:  omorfi++
 

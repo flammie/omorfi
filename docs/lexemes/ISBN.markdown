@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ISBN
 ---
 
-###  ISBN
+###  ISBN₁
 
 International Serial Book Number
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

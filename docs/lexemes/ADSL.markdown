@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ADSL
 ---
 
-###  ADSL
+###  ADSL₁
 
 Asymmetric Digital Subscriber Line
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

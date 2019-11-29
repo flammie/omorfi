@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: cd
 ---
 
-###  cd
+###  cd₁
 
 compact disc
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

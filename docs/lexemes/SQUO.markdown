@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: '
 ---
 
-###  '
+###  '₁
 
-ASCII single quotation mark, still most common single quotation
+“opening” ASCII single quotation mark, still most common single quotation, but not recommended
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origin:  omorfi++
 

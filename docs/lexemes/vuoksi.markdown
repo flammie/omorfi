@@ -3,18 +3,18 @@ layout: lexeme
 lexeme: vuoksi
 ---
 
-###  vuoksi
+###  vuoksi₁
 
 noun (high tide)
 * UPOS:  NOUN
 * in KOTUS dictionary under:  7
-* Added from:  finer|joukahainen
+* Origin:  finer|joukahainen
 
 
-## vuoksi (alternate reading 2 )
+###  vuoksi₂
 
 adposition (because of) when can be attached to a genitive NP, otherwise noun forms of *vuo* (stream), *vuoksi* (high tide)
 * UPOS:  ADP
-* Added from:  finer|joukahainen
+* Origin:  finer|joukahainen
 * AdpType:  POSTPOSITION
 

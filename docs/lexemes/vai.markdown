@@ -3,34 +3,46 @@ layout: lexeme
 lexeme: vai
 ---
 
-###  vai
+###  vai₁
+
+fgk
+* UPOS:  NOUN
+* in KOTUS dictionary under:  18
+* Origin:  finer
+* Blacklisted:  FGK
+* Semantic tags:  LANGUAGE
+
+
+###  vai₁
 
 This noun means a Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or).
 * UPOS:  NOUN
 * in KOTUS dictionary under:  18
-* Added from:  finer
+* Origin:  finer
 * Blacklisted:  FGK
+* Semantic tags:  LANGUAGE
 
 
-###  vai
+###  vai₁
 
 Vai people, a Manden ethnic group, rather rare, but overlaps with common conjunctions and adverbs
 * UPOS:  NOUN
 * in KOTUS dictionary under:  18
-* Added from:  finer
+* Origin:  finer
 * Blacklisted:  FGK
+* Semantic tags:  LANGUAGE
 
 
-## vai (alternate reading 2 )
+###  vai₂
 
-really so, as adverb, colloquial, "ai on vai"
+really so, as adverb, colloquial, “ai on vai“
 * UPOS:  ADV
-* Added from:  finer
+* Origin:  finer
 
 
-## vai (alternate reading 3 )
+###  vai₃
 
-or, as cconj, used in contrastive position only, "kissoja vai koiria"
+or, as cconj, used in contrastive position only, “kissoja vai koiria“
 * UPOS:  CCONJ
-* Added from:  finer|omorfi++
+* Origin:  finer|omorfi++
 

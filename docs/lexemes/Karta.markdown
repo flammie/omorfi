@@ -3,11 +3,11 @@ layout: lexeme
 lexeme: Karta
 ---
 
-###  Karta
+###  Karta₁
 
-This proper noun overlaps forms of very common *kartta* "map" and *karttaa* "avoid".
+This proper noun overlaps forms of very common *kartta* “map“ and *karttaa* "avoid".
 * UPOS:  PROPN
 * in KOTUS dictionary under:  9
-* Added from:  finer
+* Origin:  finer
 * Possible NER class:  LAST
 

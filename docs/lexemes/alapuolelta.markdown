@@ -3,18 +3,18 @@ layout: lexeme
 lexeme: alapuolelta
 ---
 
-###  alapuolelta
+###  alapuolelta₁
 
-from under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
+from under, as adposition, genitive complement or possessive, “laiturin alapuolelta“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 
 
-###  alapuolelta
+###  alapuolelta₁
 
-under, as adposition, genitive complement or possessive, "laiturin alapuolelta"
+under, as adposition, genitive complement or possessive, “laiturin alapuolelta“
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

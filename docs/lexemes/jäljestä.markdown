@@ -3,17 +3,17 @@ layout: lexeme
 lexeme: jäljestä
 ---
 
-###  jäljestä
+###  jäljestä₁
 
 from behind, adverb
 * UPOS:  ADV
-* Added from:  kotus
+* Origin:  kotus
 
 
-## jäljestä (alternate reading 2 )
+###  jäljestä₂
 
 from behind of, as adposition
 * UPOS:  ADP
-* Added from:  omorfi++
+* Origin:  omorfi++
 * AdpType:  POSTPOSITION
 

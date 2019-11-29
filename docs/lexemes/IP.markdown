@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: IP
 ---
 
-###  IP
+###  IP₁
 
 Internet Protocol
 * UPOS:  NOUN
-* Added from:  joukahainen
+* Origin:  joukahainen
 

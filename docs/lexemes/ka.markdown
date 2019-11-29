@@ -3,9 +3,10 @@ layout: lexeme
 lexeme: ka
 ---
 
-###  ka
+###  ka₁
 
-This noun is SI unit "ka" or abbreviation "avg." but overlaps forms of very common stuff
+This noun is SI unit “ka“ or abbreviation "avg." but overlaps forms of very common stuff
 * UPOS:  NOUN
-* Added from:  unk
+* Origin:  unk
+* Semantic tags:  MEASURE
 

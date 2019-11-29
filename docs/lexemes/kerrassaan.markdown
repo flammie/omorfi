@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: kerrassaan
 ---
 
-###  kerrassaan
+###  kerrassaan₁
 
 usually seen as adverb (indeed), but can be analysed as a form of *kerta* (one time)
 * UPOS:  ADV
-* Added from:  kotus|fiwikt
+* Origin:  kotus|fiwikt
 

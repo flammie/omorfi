@@ -3,10 +3,10 @@ layout: lexeme
 lexeme: alitse
 ---
 
-###  alitse
+###  alitse₁
 
-via under, as adposition, genitive complement or possessive, "kölin alitse"
+via under, as adposition, genitive complement or possessive, “kölin alitse“
 * UPOS:  ADP
-* Added from:  kotus
+* Origin:  kotus
 * AdpType:  POSTPOSITION
 
