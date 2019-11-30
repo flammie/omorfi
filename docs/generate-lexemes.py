@@ -85,14 +85,28 @@ def homonymify(s):
 
 
 def stuff2icon(s):
-    if s == 'org':
+    if s == 'ORG':
         return 'org'
-    elif s == 'geo':
+    elif s == 'GEO':
         return '🌍'
-    elif s == 'first':
+    elif s == 'FIRST':
         return '🧑¹'
-    elif s == 'last':
+    elif s == 'LAST':
         return '🧑²'
+    elif s == 'FEMALE':
+        return '♀'
+    elif s == 'MALE':
+        return '♂'
+    elif s == 'CURRENCY':
+        return '💱'
+    elif s == 'MEDIA':
+        return '📺'
+    elif s == 'MISC':
+        return '⁈'
+    elif s == 'CULTGRP':
+        return '🎶'
+    else:
+        return s
 
 # standard UI stuff
 
@@ -206,7 +220,7 @@ def main():
                     print("* Possible NER class: ",
                           lexdata[lexkey]['proper_noun_class'], file=outfile)
                     print(stuff2icon(lexdata[lexkey]['proper_noun_class']),
-                          file=args.output)
+                          file=args.output,end='')
                 if lexdata[lexkey]['prontype']:
                     print("* PronType: ",
                           lexdata[lexkey]['prontype'], file=outfile)
