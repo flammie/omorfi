@@ -105,6 +105,10 @@ def stuff2icon(s):
         return '⁈'
     elif s == 'CULTGRP':
         return '🎶'
+    elif s == 'LANGUAGE':
+        return '🗪'
+    elif s == 'COUNTRY':
+        return '⚐'
     else:
         return s
 
