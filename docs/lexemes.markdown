@@ -19,7 +19,9 @@ In attributes column we use following emoji shorthands:
 * org for organisations
 * 📏 for unit of measurement
 * ⁈ for proper noun not suitable for other categories of proper nouns
+
 We link to all original sources for reference.
+
 | Lexeme | Short notes | Attributes | Links |
 |:------:|:-----------:|:----------:|:------|
 | [!₁](lexemes/EXCL.html) |  exclamation mark |  |  |

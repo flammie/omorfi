@@ -197,7 +197,9 @@ def main():
           file=args.output)
     print("*", stuff2icon("MISC"), "for proper noun not suitable for other",
           "categories of proper nouns", file=args.output)
+    print(file=args.output)
     print("We link to all original sources for reference.", file=args.output)
+    print(file=args.output)
     print("| Lexeme | Short notes | Attributes | Links |", file=args.output)
     print("|:------:|:-----------:|:----------:|:------|", file=args.output)
 
@@ -247,7 +249,7 @@ def main():
                   homonymify(tsv_parts['homonym']), file=outfile)
             print(" ", tsv_parts['doc'], end=' | ', file=args.output)
             print(file=outfile)
-            print(tsv_parts['doc'], file=outfile)
+            print('* _', tsv_parts['doc'], sep='', end='_\n', file=outfile)
             lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
             if lexkey in lexdata:
 
@@ -256,8 +258,26 @@ def main():
                         int(lexdata[lexkey]['kotus_tn']) < 99:
                     print("* in KOTUS dictionary under: ",
                           lexdata[lexkey]['kotus_tn'], file=outfile)
-                print("* Origin: ", lexdata[lexkey]['origin'],
-                      file=outfile)
+                print("* Origins: ", end='', file=outfile)
+                if 'enwikt' in lexdata[lexkey]['origin']:
+                    print("[enwikt](https://en.wiktionary.org/wiki/",
+                          wiktify(tsv_parts['lemma']), end=') ', sep='',
+                          file=outfile)
+                if 'fiwikt' in lexdata[lexkey]['origin']:
+                    print("[fiwikt](https://fi.wiktionary.org/wiki/",
+                          wiktify(tsv_parts['lemma']), end=') ', sep='',
+                          file=outfile)
+                if 'finnwordnet' in lexdata[lexkey]['origin']:
+                    print("[finnwn](https://sanat.csc.fi/w/index.php?search=",
+                          wiktify(tsv_parts['lemma']), end=') ', sep='',
+                          file=outfile)
+                if 'finer' in lexdata[lexkey]['origin']:
+                    print("finer", end=' ', file=outfile)
+                if 'omorfi' in lexdata[lexkey]['origin']:
+                    print("omorfi", end=' ', file=outfile)
+                if 'joukahainen' in lexdata[lexkey]['origin']:
+                    print("joukahainen", end=' ', file=outfile)
+                print(file=outfile)
                 if lexdata[lexkey]['proper_noun_class']:
                     print("* Possible NER class: ",
                           lexdata[lexkey]['proper_noun_class'], file=outfile)
@@ -287,7 +307,7 @@ def main():
                           wiktify(tsv_parts['lemma']), end=') ', sep='',
                           file=args.output)
                 if 'enwikt' in lexdata[lexkey]['origin']:
-                    print("[enwikt](https://fi.wiktionary.org/wiki/",
+                    print("[enwikt](https://en.wiktionary.org/wiki/",
                           wiktify(tsv_parts['lemma']), end=') ', sep='',
                           file=args.output)
                 if 'finnwordnet' in lexdata[lexkey]['origin']:
