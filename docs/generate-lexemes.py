@@ -46,6 +46,14 @@ def markdownify(s):
     return s
 
 
+def wiktify(s):
+    repls = {']': '(right square bracket)', '|': '(pipe symbol)',
+             '[': '(left square bracket)'}
+    for needl, subst in repls.items():
+        s = s.replace(needl, subst)
+    return s
+
+
 def homonymify(s):
     # ₀₁₂₃₄₅₆₇₈₉
     if s == '1':
@@ -109,6 +117,8 @@ def stuff2icon(s):
         return '🗪'
     elif s == 'COUNTRY':
         return '⚐'
+    elif s == 'MEASURE':
+        return '📏'
     else:
         return s
 
@@ -150,18 +160,46 @@ def main():
     print('# Lexemes', file=args.output)
     print(file=args.output)
     print("_This is an automatically generated documentation based on omorfi" +
-          "lexical database._", file=args.output)
+          " lexical database._", file=args.output)
     print(file=args.output)
     print("Lexemes are the word-entries of omorfi, currently we have only " +
-            "documented the ones that are commonly problematic, in terms of " +
-            "unexpected ambiguity, exceptional spelling or anything otherwise " +
-            "worth noting. Full dictionary can be found for the time being " +
-            "in wiktionary, or other such services.", file=args.output)
+          "documented the ones that are commonly problematic, in terms of " +
+          "unexpected ambiguity, exceptional spelling or anything otherwise " +
+          "worth noting.", file=args.output)
     print(file=args.output)
-    # read from csv files
-
-    print("| Lexeme | Short notes | Attributes |", file=args.output)
-    print("|:------:|:-----------:|:----------:|", file=args.output)
+    print("In attributes column we use following emoji shorthands:",
+          file=args.output)
+    print("* ☢ for lexemes listed as unlikely for disambiguation purposes",
+          file=args.output)
+    print("*", stuff2icon("FIRSTNAME"), "for first name of a person",
+          file=args.output)
+    print("*", stuff2icon("MALE"), "for primarily male names",
+          file=args.output)
+    print("*", stuff2icon("FEMALE"), "for primarily female names",
+          file=args.output)
+    print("*", stuff2icon("LASTNAME"), "for surname of a person",
+          file=args.output)
+    print("*", stuff2icon("GEO"), "for geographic location",
+          file=args.output)
+    print("*", stuff2icon("COUNTRY"), "for a country",
+          file=args.output)
+    print("*", stuff2icon("CURRENCY"), "for currencies",
+          file=args.output)
+    print("*", stuff2icon("MEDIA"), "for media",
+          file=args.output)
+    print("*", stuff2icon("CULTGRP"), "for band or artists",
+          file=args.output)
+    print("*", stuff2icon("LANGUAGE"), "for languages",
+          file=args.output)
+    print("*", stuff2icon("ORG"), "for organisations",
+          file=args.output)
+    print("*", stuff2icon("MEASURE"), "for unit of measurement",
+          file=args.output)
+    print("*", stuff2icon("MISC"), "for proper noun not suitable for other",
+          "categories of proper nouns", file=args.output)
+    print("We link to all original sources for reference.", file=args.output)
+    print("| Lexeme | Short notes | Attributes | Links |", file=args.output)
+    print("|:------:|:-----------:|:----------:|:------|", file=args.output)
 
     lexdata = dict()
     with open(args.lexemes, 'r', newline='') as tsv_file:
@@ -181,7 +219,7 @@ def main():
         linecount = 0
         for tsv_parts in tsv_reader:
             linecount += 1
-            if len(tsv_parts) < 2 or tsv_parts['doc'] == None:
+            if len(tsv_parts) < 2 or tsv_parts['doc'] is None:
                 print("Too few tabs on line", linecount,
                       "skipping following line completely:", file=stderr)
                 print(tsv_parts, file=stderr)
@@ -197,8 +235,8 @@ def main():
                   file=args.output)
             if tsv_parts['lemma'] != prev_lemma:
                 outfile = open(args.outdir + '/' +
-                           filenamify(tsv_parts['lemma']) +
-                           '.markdown', 'w')
+                               filenamify(tsv_parts['lemma']) +
+                               '.markdown', 'w')
                 prev_lemma = tsv_parts['lemma']
                 print('---', file=outfile)
                 print('layout: lexeme', file=outfile)
@@ -224,7 +262,7 @@ def main():
                     print("* Possible NER class: ",
                           lexdata[lexkey]['proper_noun_class'], file=outfile)
                     print(stuff2icon(lexdata[lexkey]['proper_noun_class']),
-                          file=args.output,end='')
+                          file=args.output, end='')
                 if lexdata[lexkey]['prontype']:
                     print("* PronType: ",
                           lexdata[lexkey]['prontype'], file=outfile)
@@ -243,6 +281,19 @@ def main():
                           lexdata[lexkey]['sem'], file=outfile)
                     print(stuff2icon(lexdata[lexkey]['sem']),
                           file=args.output, end='')
+                print(' | ', end='', file=args.output)
+                if 'fiwikt' in lexdata[lexkey]['origin']:
+                    print("[fiwikt](https://fi.wiktionary.org/wiki/",
+                          wiktify(tsv_parts['lemma']), end=') ', sep='',
+                          file=args.output)
+                if 'enwikt' in lexdata[lexkey]['origin']:
+                    print("[enwikt](https://fi.wiktionary.org/wiki/",
+                          wiktify(tsv_parts['lemma']), end=') ', sep='',
+                          file=args.output)
+                if 'finnwordnet' in lexdata[lexkey]['origin']:
+                    print("[finnwn](https://sanat.csc.fi/w/index.php?search=",
+                          wiktify(tsv_parts['lemma']), end=') ', sep='',
+                          file=args.output)
             print(file=outfile)
             print(" |", file=args.output)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
