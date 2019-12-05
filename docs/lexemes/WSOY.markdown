@@ -5,8 +5,16 @@ lexeme: WSOY
 
 ###  WSOY₁
 
-Werner-Söderström Osake-Yhtiö
+* _Werner-Söderström Osake-Yhtiö_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### WSOY wordforms
+
+WSOY-
+WSOY‐
+WSOY‑
+WSOY
 

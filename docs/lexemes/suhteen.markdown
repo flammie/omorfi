@@ -5,15 +5,46 @@ lexeme: suhteen
 
 ###  suhteen₁
 
-adverb
+* _adverb_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
 
 
 ###  suhteen₂
 
-adposition (with regards to) when can be attached to a genitive NP, otherwise noun forms of *suhde* (relation)
+* _adposition (with regards to) when can be attached to a genitive NP, otherwise noun forms of *suhde* (relation)_
 * UPOS:  ADP
-* Origin:  kotus
+* Origins: 
 * AdpType:  POSTPOSITION
+
+
+### suhteen wordforms
+
+suhteen
+suhteenhanko
+suhteenhankaan
+suhteenhanpa
+suhteenhan
+suhteenkohan
+suhteenkokin
+suhteenkokaan
+suhteenkos
+suhteenkopa
+suhteenko
+suhteenkinhan
+suhteenkinko
+suhteenkinkaan
+suhteenkinpa
+suhteenkin
+suhteenkaanhan
+suhteenkaanko
+suhteenkaankin
+suhteenkaanpa
+suhteenkaan
+suhteenpahan
+suhteenpako
+suhteenpakin
+suhteenpakaan
+suhteenpas
+suhteenpa
 

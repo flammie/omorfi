@@ -5,7 +5,38 @@ lexeme: suoraan
 
 ###  suoraan₁
 
-usually seen as adverb (directly), but can be analysed as illative of the adjective *suora* (straight, a flush in e.g. poker)
+* _usually seen as adverb (directly), but can be analysed as illative of the adjective *suora* (straight, a flush in e.g. poker)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### suoraan wordforms
+
+suoraan
+suoraanhanko
+suoraanhankaan
+suoraanhanpa
+suoraanhan
+suoraankohan
+suoraankokin
+suoraankokaan
+suoraankos
+suoraankopa
+suoraanko
+suoraankinhan
+suoraankinko
+suoraankinkaan
+suoraankinpa
+suoraankin
+suoraankaanhan
+suoraankaanko
+suoraankaankin
+suoraankaanpa
+suoraankaan
+suoraanpahan
+suoraanpako
+suoraanpakin
+suoraanpakaan
+suoraanpas
+suoraanpa
 

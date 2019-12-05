@@ -5,7 +5,11 @@ lexeme: media-pc
 
 ###  media-pc₁
 
-Personal Computer
+* _Personal Computer_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### media-pc wordforms
+
 

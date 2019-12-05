@@ -5,9 +5,17 @@ lexeme: STT
 
 ###  STT₁
 
-Suomen Tieto-Toimisto
+* _Suomen Tieto-Toimisto_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
 * Semantic tags:  MEDIA
+
+
+### STT wordforms
+
+STT-
+STT‐
+STT‑
+STT
 

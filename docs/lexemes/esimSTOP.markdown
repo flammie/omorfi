@@ -5,7 +5,18 @@ lexeme: esim.
 
 ###  esim.₁
 
-esimerkiksi, “e.g.“ or for example
+* _esimerkiksi, “e.g.“ or for example_
 * UPOS:  ADV
-* Origin:  omorfi++|joukahainen
+* Origins: omorfi joukahainen 
+
+
+###  esim.₁
+
+* _esimerkiksi, “e.g.” or for example_
+* UPOS:  ADV
+* Origins: omorfi joukahainen 
+
+
+### esimSTOP wordforms
+
 

@@ -5,7 +5,11 @@ lexeme: ;
 
 ###  ;₁
 
-semicolon
+* _semicolon_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### SC wordforms
+
 

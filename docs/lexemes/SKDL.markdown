@@ -5,9 +5,17 @@ lexeme: SKDL
 
 ###  SKDL₁
 
-Suomen Kristillis-Demokraattien Liitto
+* _Suomen Kristillis-Demokraattien Liitto_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
 * Semantic tags:  POLIT
+
+
+### SKDL wordforms
+
+SKDL-
+SKDL‐
+SKDL‑
+SKDL
 

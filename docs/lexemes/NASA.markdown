@@ -5,8 +5,16 @@ lexeme: NASA
 
 ###  NASA₁
 
-National Air and Space A
+* _National Air and Space A_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### NASA wordforms
+
+NASA-
+NASA‐
+NASA‑
+NASA
 

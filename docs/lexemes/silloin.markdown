@@ -5,14 +5,18 @@ lexeme: silloin
 
 ###  silloin₁
 
-adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions
+* _adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
 
 
 ###  silloin₂
 
-usually seen as adverb (then), but overlaps instructive of the noun *silta* (bridge)
+* _usually seen as adverb (then), but overlaps instructive of the noun *silta* (bridge)_
 * UPOS:  ADV
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+### silloin wordforms
+
 

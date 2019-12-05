@@ -5,8 +5,16 @@ lexeme: FBI
 
 ###  FBI₁
 
-Federal Bureau of Investigation
+* _Federal Bureau of Investigation_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### FBI wordforms
+
+FBI-
+FBI‐
+FBI‑
+FBI
 

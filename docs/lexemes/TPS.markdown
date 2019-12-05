@@ -5,8 +5,16 @@ lexeme: TPS
 
 ###  TPS₁
 
-Turun Pallo-Seura
+* _Turun Pallo-Seura_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### TPS wordforms
+
+TPS-
+TPS‐
+TPS‑
+TPS
 

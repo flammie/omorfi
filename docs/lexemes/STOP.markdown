@@ -5,7 +5,11 @@ lexeme: .
 
 ###  .₁
 
-full stop
+* _full stop_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### STOP wordforms
+
 

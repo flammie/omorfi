@@ -5,7 +5,15 @@ lexeme: OK
 
 ###  OK₁
 
-not pronounced in words
+* _not pronounced in words_
 * UPOS:  NOUN
-* Origin:  kotus|joukahainen
+* Origins: joukahainen 
+
+
+### OK wordforms
+
+OK-
+OK‐
+OK‑
+OK
 

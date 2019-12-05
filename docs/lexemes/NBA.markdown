@@ -5,7 +5,15 @@ lexeme: NBA
 
 ###  NBA₁
 
-National Basketball Association
+* _National Basketball Association_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+### NBA wordforms
+
+NBA-
+NBA‐
+NBA‑
+NBA
 

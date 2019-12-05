@@ -5,7 +5,15 @@ lexeme: HTML
 
 ###  HTML₁
 
-Hyper-Text Markup Language
+* _Hyper-Text Markup Language_
 * UPOS:  NOUN
-* Origin:  omorfi|joukahainen
+* Origins: omorfi joukahainen 
+
+
+### HTML wordforms
+
+HTML-
+HTML‐
+HTML‑
+HTML
 

@@ -5,15 +5,61 @@ lexeme: alas
 
 ###  alas₁
 
-to under, down, as adverb, “tule alas“
+* _to under, down, as adverb, “tule alas“_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+###  alas₁
+
+* _to under, down, as adverb, “tule alas”_
+* UPOS:  ADV
+* Origins: 
 
 
 ###  alas₂
 
-down (the road or such), as adposition, partitive complement or possessive, “alas tietä pitkin“
+* _down (the road or such), as adposition, partitive complement or possessive, “alas tietä pitkin“_
 * UPOS:  ADP
-* Origin:  kotus
+* Origins: 
 * AdpType:  POSTPOSITION
+
+
+###  alas₂
+
+* _down (the road or such), as adposition, partitive complement or possessive, “alas tietä pitkin”_
+* UPOS:  ADP
+* Origins: 
+* AdpType:  POSTPOSITION
+
+
+### alas wordforms
+
+alas
+alashanko
+alashankaan
+alashanpa
+alashan
+alaskohan
+alaskokin
+alaskokaan
+alaskos
+alaskopa
+alasko
+alaskinhan
+alaskinko
+alaskinkaan
+alaskinpa
+alaskin
+alaskaanhan
+alaskaanko
+alaskaankin
+alaskaanpa
+alaskaan
+alaspahan
+alaspako
+alaspakin
+alaspakaan
+alaspas
+alaspa
 

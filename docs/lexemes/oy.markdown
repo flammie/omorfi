@@ -5,7 +5,15 @@ lexeme: oy
 
 ###  oy₁
 
-Osake-Yhtiö
+* _Osake-Yhtiö_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### oy wordforms
+
+oy-
+oy‐
+oy‑
+oy
 

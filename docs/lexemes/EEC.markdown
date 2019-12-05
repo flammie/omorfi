@@ -5,8 +5,16 @@ lexeme: EEC
 
 ###  EEC₁
 
-European Economy Council
+* _European Economy Council_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  MISC
+
+
+### EEC wordforms
+
+EEC-
+EEC‐
+EEC‑
+EEC
 

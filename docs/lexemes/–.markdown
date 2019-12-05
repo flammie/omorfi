@@ -5,7 +5,12 @@ lexeme: –
 
 ###  –₁
 
-en dash, relatively common, recommended for hyphens
+* _en dash, relatively common, recommended for hyphens_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### – wordforms
+
+–
 

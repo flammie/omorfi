@@ -5,7 +5,15 @@ lexeme: PDF
 
 ###  PDF₁
 
-Portable Document Format
+* _Portable Document Format_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### PDF wordforms
+
+PDF-
+PDF‐
+PDF‑
+PDF
 

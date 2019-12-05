@@ -5,8 +5,12 @@ lexeme: n:o
 
 ###  n:o₁
 
-abbreviation for number, chiefly europarl language etc.
+* _abbreviation for number, chiefly europarl language etc._
 * UPOS:  NOUN
 * in KOTUS dictionary under:  2
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### nCOLONo wordforms
+
 

@@ -5,7 +5,11 @@ lexeme: mm.
 
 ###  mm.₁
 
-muun muassa, “incl.“ or among others
+* _muun muassa, “incl.” or among others_
 * UPOS:  ADV
-* Origin:  omorfi++|joukahainen
+* Origins: omorfi joukahainen 
+
+
+### mmSTOP wordforms
+
 

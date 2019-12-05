@@ -5,8 +5,16 @@ lexeme: EMU
 
 ###  EMU₁
 
-European Monetary Union
+* _European Monetary Union_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  MISC
+
+
+### EMU wordforms
+
+EMU-
+EMU‐
+EMU‑
+EMU
 

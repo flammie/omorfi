@@ -5,8 +5,16 @@ lexeme: EY
 
 ###  EY₂
 
-Euroopan Yhteisö
+* _Euroopan Yhteisö_
 * UPOS:  PROPN
-* Origin:  omorfi++
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### EY wordforms
+
+EY-
+EY‐
+EY‑
+EY
 

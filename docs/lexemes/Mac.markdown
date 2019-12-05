@@ -11,3 +11,8 @@ This rare proper noun overlaps more common *Mac* (FIXME)
 * Possible NER class:  MISC
 * Blacklisted:  PROPN-BLOCKING
 
+
+### Mac wordforms
+
+Mac
+

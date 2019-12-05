@@ -5,7 +5,11 @@ lexeme: lehtiö-pc
 
 ###  lehtiö-pc₁
 
-Personal Computer
+* _notebook–Personal Computer_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### lehtiö-pc wordforms
+
 

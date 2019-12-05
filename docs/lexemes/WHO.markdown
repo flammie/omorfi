@@ -5,8 +5,16 @@ lexeme: WHO
 
 ###  WHO₁
 
-World Health Organisation
+* _World Health Organisation_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### WHO wordforms
+
+WHO-
+WHO‐
+WHO‑
+WHO
 

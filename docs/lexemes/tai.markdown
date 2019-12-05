@@ -5,42 +5,36 @@ lexeme: tai
 
 ###  tai₁
 
-or, coordinating conjunction, “kissat tai koirat“
+* _or, coordinating conjunction, “kissat tai koirat“_
 * UPOS:  CCONJ
-* Origin:  kotus
+* Origins: 
+
+
+###  tai₁
+
+* _or, coordinating conjunction, “kissat tai koirat”_
+* UPOS:  CCONJ
+* Origins: 
 
 
 ###  tai₂
 
-a Kadai language, noun, rather rare but ambiguous with common conjunction
+* _a Kadai language, noun, rather rare but ambiguous with common conjunction_
 * UPOS:  NOUN
 * in KOTUS dictionary under:  18
-* Origin:  finer
-* Blacklisted:  FGK
-
-
-###  tai₂
-
-fgk
-* UPOS:  NOUN
-* in KOTUS dictionary under:  18
-* Origin:  finer
-* Blacklisted:  FGK
-
-
-###  tai₂
-
-This noun means the most widespread and best known of the Kadai family of languages (FinnWordNet) but overlaps  very common *tai* (or).
-* UPOS:  NOUN
-* in KOTUS dictionary under:  18
-* Origin:  finer
+* Origins: finer 
 * Blacklisted:  FGK
 
 
 ###  tai₃
 
-fgk
+* _This noun means the most widespread and best known of the Kadai family of languages (FinnWordNet) but overlaps  very common *tai* (or)._
 * UPOS:  ADV
-* Origin:  finer
+* Origins: finer 
 * Blacklisted:  FGK
+
+
+### tai wordforms
+
+tai
 

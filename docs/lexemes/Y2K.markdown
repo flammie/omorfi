@@ -5,8 +5,16 @@ lexeme: Y2K
 
 ###  Y2K₁
 
-Year 2000
+* _Year 2000_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
 * Semantic tags:  TIME
+
+
+### Y2K wordforms
+
+Y2K-
+Y2K‐
+Y2K‑
+Y2K
 

@@ -5,7 +5,15 @@ lexeme: SOK
 
 ###  SOK₁
 
-Suomen Osuus-Kauppa
+* _Suomen Osuus-Kauppa_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### SOK wordforms
+
+SOK-
+SOK‐
+SOK‑
+SOK
 

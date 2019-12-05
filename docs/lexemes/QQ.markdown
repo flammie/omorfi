@@ -5,7 +5,11 @@ lexeme: ?
 
 ###  ?₂
 
-question mark
+* _question mark_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### QQ wordforms
+
 

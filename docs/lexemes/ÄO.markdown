@@ -5,7 +5,15 @@ lexeme: ÄO
 
 ###  ÄO₁
 
-Älykkyysosamäärä
+* _Älykkyysosamäärä_
 * UPOS:  NOUN
-* Origin:  kotus|joukahainen
+* Origins: joukahainen 
+
+
+### ÄO wordforms
+
+ÄO-
+ÄO‐
+ÄO‑
+ÄO
 

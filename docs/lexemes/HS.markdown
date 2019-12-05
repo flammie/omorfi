@@ -5,8 +5,16 @@ lexeme: HS
 
 ###  HS₁
 
-Helsingin Sanomat
+* _Helsingin Sanomat_
 * UPOS:  NOUN
 * in KOTUS dictionary under:  10
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### HS wordforms
+
+HS-
+HS‐
+HS‑
+HS
 

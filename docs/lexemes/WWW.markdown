@@ -5,7 +5,15 @@ lexeme: WWW
 
 ###  WWW₁
 
-World Wide Web
+* _World Wide Web_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### WWW wordforms
+
+WWW-
+WWW‐
+WWW‑
+WWW
 

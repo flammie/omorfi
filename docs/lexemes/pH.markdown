@@ -5,8 +5,16 @@ lexeme: pH
 
 ###  pH₁
 
-per Hydrogen
+* _per Hydrogen_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
 * Semantic tags:  MEASURE
+
+
+### pH wordforms
+
+pH-
+pH‐
+pH‑
+pH
 

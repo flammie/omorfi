@@ -5,8 +5,16 @@ lexeme: GM
 
 ###  GM₁
 
-General Motors
+* _General Motors_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### GM wordforms
+
+GM-
+GM‐
+GM‑
+GM
 

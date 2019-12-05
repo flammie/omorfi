@@ -5,7 +5,15 @@ lexeme: ADSL
 
 ###  ADSL₁
 
-Asymmetric Digital Subscriber Line
+* _Asymmetric Digital Subscriber Line_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### ADSL wordforms
+
+ADSL-
+ADSL‐
+ADSL‑
+ADSL
 

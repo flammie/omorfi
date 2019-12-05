@@ -5,14 +5,26 @@ lexeme: vaan
 
 ###  vaan₁
 
-but rather, as cconj, see VISK § 1106
+* _but rather, as cconj, see VISK § 1106_
 * UPOS:  CCONJ
-* Origin:  finer|omorfi++
+* Origins: finer omorfi 
 
 
 ###  vaan₂
 
-really indeed, as adverb, “ei nyt vaan pysty“
+* _really indeed, as adverb, “ei nyt vaan pysty“_
 * UPOS:  ADV
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+###  vaan₂
+
+* _really indeed, as adverb, “ei nyt vaan pysty”_
+* UPOS:  ADV
+* Origins: omorfi 
+
+
+### vaan wordforms
+
+vaan
 

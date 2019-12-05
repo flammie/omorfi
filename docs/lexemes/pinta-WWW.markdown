@@ -5,7 +5,11 @@ lexeme: pinta-WWW
 
 ###  pinta-WWW₁
 
-World Wide Web
+* _World Wide Web_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### pinta-WWW wordforms
+
 

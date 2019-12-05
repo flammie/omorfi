@@ -5,7 +5,15 @@ lexeme: IRC
 
 ###  IRC₁
 
-Internet Relay Chat
+* _Internet Relay Chat_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### IRC wordforms
+
+IRC-
+IRC‐
+IRC‑
+IRC
 

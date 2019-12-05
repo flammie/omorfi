@@ -5,7 +5,15 @@ lexeme: TS
 
 ###  TS₁
 
-Turun Sanomat
+* _Turun Sanomat_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### TS wordforms
+
+TS-
+TS‐
+TS‑
+TS
 

@@ -5,8 +5,16 @@ lexeme: NATO
 
 ###  NATO₁
 
-North-Atlantic T Organisation
+* _North-Atlantic Terror Organisation_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### NATO wordforms
+
+NATO-
+NATO‐
+NATO‑
+NATO
 

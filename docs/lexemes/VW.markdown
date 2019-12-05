@@ -5,8 +5,16 @@ lexeme: VW
 
 ###  VW₁
 
-Volks Wagen
+* _Volks Wagen_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  PRODUCT
+
+
+### VW wordforms
+
+VW-
+VW‐
+VW‑
+VW
 

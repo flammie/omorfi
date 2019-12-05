@@ -5,15 +5,181 @@ lexeme: päin
 
 ###  päin₁
 
-adposition (towards) when can be attached to a partitive NP, otherwise noun form of *pää* (head)
+* _adposition (towards) when can be attached to a partitive NP, otherwise noun form of *pää* (head)_
 * UPOS:  ADP
-* Origin:  finer
+* Origins: finer 
 * AdpType:  POSTPOSITION
 
 
 ###  päin₂
 
-adverb
+* _adverb_
 * UPOS:  ADV
-* Origin:  unk
+* Origins: 
+
+
+### päin wordforms
+
+päimme
+päimmehänkään
+päimmehänkö
+päimmehänpä
+päimmehän
+päimmekinhän
+päimmekinkään
+päimmekinkö
+päimmekinpä
+päimmekin
+päimmekäänhän
+päimmekäänkin
+päimmekäänkö
+päimmekäänpä
+päimmekään
+päimmeköhän
+päimmekökin
+päimmekökään
+päimmekös
+päimmeköpä
+päimmekö
+päimmepähän
+päimmepäkin
+päimmepäkään
+päimmepäkö
+päimmepäs
+päimmepä
+päisi
+päisihänkään
+päisihänkö
+päisihänpä
+päisihän
+päisikinhän
+päisikinkään
+päisikinkö
+päisikinpä
+päisikin
+päisikäänhän
+päisikäänkin
+päisikäänkö
+päisikäänpä
+päisikään
+päisiköhän
+päisikökin
+päisikökään
+päisikös
+päisiköpä
+päisikö
+päisipähän
+päisipäkin
+päisipäkään
+päisipäkö
+päisipäs
+päisipä
+päin
+päinhänkään
+päinhänkö
+päinhänpä
+päinhän
+päini
+päinihänkään
+päinihänkö
+päinihänpä
+päinihän
+päinikinhän
+päinikinkään
+päinikinkö
+päinikinpä
+päinikin
+päinikäänhän
+päinikäänkin
+päinikäänkö
+päinikäänpä
+päinikään
+päiniköhän
+päinikökin
+päinikökään
+päinikös
+päiniköpä
+päinikö
+päinipähän
+päinipäkin
+päinipäkään
+päinipäkö
+päinipäs
+päinipä
+päinkinhän
+päinkinkään
+päinkinkö
+päinkinpä
+päinkin
+päinkäänhän
+päinkäänkin
+päinkäänkö
+päinkäänpä
+päinkään
+päinköhän
+päinkökin
+päinkökään
+päinkös
+päinköpä
+päinkö
+päinsä
+päinsähänkään
+päinsähänkö
+päinsähänpä
+päinsähän
+päinsäkinhän
+päinsäkinkään
+päinsäkinkö
+päinsäkinpä
+päinsäkin
+päinsäkäänhän
+päinsäkäänkin
+päinsäkäänkö
+päinsäkäänpä
+päinsäkään
+päinsäköhän
+päinsäkökin
+päinsäkökään
+päinsäkös
+päinsäköpä
+päinsäkö
+päinsäpähän
+päinsäpäkin
+päinsäpäkään
+päinsäpäkö
+päinsäpäs
+päinsäpä
+päinne
+päinnehänkään
+päinnehänkö
+päinnehänpä
+päinnehän
+päinnekinhän
+päinnekinkään
+päinnekinkö
+päinnekinpä
+päinnekin
+päinnekäänhän
+päinnekäänkin
+päinnekäänkö
+päinnekäänpä
+päinnekään
+päinneköhän
+päinnekökin
+päinnekökään
+päinnekös
+päinneköpä
+päinnekö
+päinnepähän
+päinnepäkin
+päinnepäkään
+päinnepäkö
+päinnepäs
+päinnepä
+päinpähän
+päinpäkin
+päinpäkään
+päinpäkö
+päinpäs
+päinpä
 

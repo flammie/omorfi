@@ -5,7 +5,11 @@ lexeme: (
 
 ###  (₁
 
-left bracket
+* _left bracket_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### LBR wordforms
+
 

@@ -5,15 +5,208 @@ lexeme: kuivilla
 
 ###  kuivilla₁
 
-dry from smth (alcohol, drug etc.), elative complement “olen kuivilla viinasta kolme kuukautta“
+* _dry from smth (alcohol, drug etc.), elative complement “olen kuivilla viinasta kolme kuukautta”_
 * UPOS:  ADP
-* Origin:  kotus
+* Origins: 
 * AdpType:  PREPOSITION
 
 
 ###  kuivilla₂
 
-dry also literally “olen kuivilla“
+* _dry also literally “olen kuivilla”_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### kuivilla wordforms
+
+kuivilla
+kuivillahanko
+kuivillahankaan
+kuivillahanpa
+kuivillahan
+kuivillamme
+kuivillammehanko
+kuivillammehankaan
+kuivillammehanpa
+kuivillammehan
+kuivillammekohan
+kuivillammekokin
+kuivillammekokaan
+kuivillammekos
+kuivillammekopa
+kuivillammeko
+kuivillammekinhan
+kuivillammekinko
+kuivillammekinkaan
+kuivillammekinpa
+kuivillammekin
+kuivillammekaanhan
+kuivillammekaanko
+kuivillammekaankin
+kuivillammekaanpa
+kuivillammekaan
+kuivillammepahan
+kuivillammepako
+kuivillammepakin
+kuivillammepakaan
+kuivillammepas
+kuivillammepa
+kuivillakohan
+kuivillakokin
+kuivillakokaan
+kuivillakos
+kuivillakopa
+kuivillako
+kuivillakinhan
+kuivillakinko
+kuivillakinkaan
+kuivillakinpa
+kuivillakin
+kuivillakaanhan
+kuivillakaanko
+kuivillakaankin
+kuivillakaanpa
+kuivillakaan
+kuivillasi
+kuivillasihanko
+kuivillasihankaan
+kuivillasihanpa
+kuivillasihan
+kuivillasikohan
+kuivillasikokin
+kuivillasikokaan
+kuivillasikos
+kuivillasikopa
+kuivillasiko
+kuivillasikinhan
+kuivillasikinko
+kuivillasikinkaan
+kuivillasikinpa
+kuivillasikin
+kuivillasikaanhan
+kuivillasikaanko
+kuivillasikaankin
+kuivillasikaanpa
+kuivillasikaan
+kuivillasipahan
+kuivillasipako
+kuivillasipakin
+kuivillasipakaan
+kuivillasipas
+kuivillasipa
+kuivillani
+kuivillanihanko
+kuivillanihankaan
+kuivillanihanpa
+kuivillanihan
+kuivillanikohan
+kuivillanikokin
+kuivillanikokaan
+kuivillanikos
+kuivillanikopa
+kuivillaniko
+kuivillanikinhan
+kuivillanikinko
+kuivillanikinkaan
+kuivillanikinpa
+kuivillanikin
+kuivillanikaanhan
+kuivillanikaanko
+kuivillanikaankin
+kuivillanikaanpa
+kuivillanikaan
+kuivillanipahan
+kuivillanipako
+kuivillanipakin
+kuivillanipakaan
+kuivillanipas
+kuivillanipa
+kuivillansa
+kuivillansahanko
+kuivillansahankaan
+kuivillansahanpa
+kuivillansahan
+kuivillansakohan
+kuivillansakokin
+kuivillansakokaan
+kuivillansakos
+kuivillansakopa
+kuivillansako
+kuivillansakinhan
+kuivillansakinko
+kuivillansakinkaan
+kuivillansakinpa
+kuivillansakin
+kuivillansakaanhan
+kuivillansakaanko
+kuivillansakaankin
+kuivillansakaanpa
+kuivillansakaan
+kuivillansapahan
+kuivillansapako
+kuivillansapakin
+kuivillansapakaan
+kuivillansapas
+kuivillansapa
+kuivillanne
+kuivillannehanko
+kuivillannehankaan
+kuivillannehanpa
+kuivillannehan
+kuivillannekohan
+kuivillannekokin
+kuivillannekokaan
+kuivillannekos
+kuivillannekopa
+kuivillanneko
+kuivillannekinhan
+kuivillannekinko
+kuivillannekinkaan
+kuivillannekinpa
+kuivillannekin
+kuivillannekaanhan
+kuivillannekaanko
+kuivillannekaankin
+kuivillannekaanpa
+kuivillannekaan
+kuivillannepahan
+kuivillannepako
+kuivillannepakin
+kuivillannepakaan
+kuivillannepas
+kuivillannepa
+kuivillapahan
+kuivillapako
+kuivillapakin
+kuivillapakaan
+kuivillapas
+kuivillapa
+kuivillaan
+kuivillaanhanko
+kuivillaanhankaan
+kuivillaanhanpa
+kuivillaanhan
+kuivillaankohan
+kuivillaankokin
+kuivillaankokaan
+kuivillaankos
+kuivillaankopa
+kuivillaanko
+kuivillaankinhan
+kuivillaankinko
+kuivillaankinkaan
+kuivillaankinpa
+kuivillaankin
+kuivillaankaanhan
+kuivillaankaanko
+kuivillaankaankin
+kuivillaankaanpa
+kuivillaankaan
+kuivillaanpahan
+kuivillaanpako
+kuivillaanpakin
+kuivillaanpakaan
+kuivillaanpas
+kuivillaanpa
 

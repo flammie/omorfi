@@ -5,22 +5,53 @@ lexeme: paitsi
 
 ###  paitsi₁
 
-except, as adposition, complement is partitive, see VISK § 708
+* _except, as adposition, complement is partitive, see VISK § 708_
 * UPOS:  ADP
-* Origin:  omorfi++|fiwikt
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
 
 
 ###  paitsi₂
 
-but not, as adverb, “jään paitsi“
+* _but not, as adverb, “jään paitsi”_
 * UPOS:  ADV
-* Origin:  omorfi++
+* Origins: omorfi 
 
 
 ###  paitsi₃
 
-except, as sub-ordinating conjunction, “kerroin kaiken muun, paitsi en totuutta“ UD Finnish, see also VISK § 708 examples d)
+* _except, as sub-ordinating conjunction, “kerroin kaiken muun, paitsi en totuutta” UD Finnish, see also VISK § 708 examples d)_
 * UPOS:  SCONJ
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### paitsi wordforms
+
+paitsi
+paitsihanko
+paitsihankaan
+paitsihanpa
+paitsihan
+paitsikohan
+paitsikokin
+paitsikokaan
+paitsikos
+paitsikopa
+paitsiko
+paitsikinhan
+paitsikinko
+paitsikinkaan
+paitsikinpa
+paitsikin
+paitsikaanhan
+paitsikaanko
+paitsikaankin
+paitsikaanpa
+paitsikaan
+paitsipahan
+paitsipako
+paitsipakin
+paitsipakaan
+paitsipas
+paitsipa
 

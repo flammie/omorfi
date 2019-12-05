@@ -5,7 +5,11 @@ lexeme: paneeli-pc
 
 ###  paneeli-pc₁
 
-(Panel) Personal Computer??
+* _(Panel) Personal Computer??_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### paneeli-pc wordforms
+
 

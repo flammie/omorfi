@@ -5,7 +5,38 @@ lexeme: paikoin
 
 ###  paikoin₁
 
-usually seen as adverb (in places), but can be analysed as instructive of the noun *paikka* (place)
+* _usually seen as adverb (in places), but can be analysed as instructive of the noun *paikka* (place)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### paikoin wordforms
+
+paikoin
+paikoinhanko
+paikoinhankaan
+paikoinhanpa
+paikoinhan
+paikoinkohan
+paikoinkokin
+paikoinkokaan
+paikoinkos
+paikoinkopa
+paikoinko
+paikoinkinhan
+paikoinkinko
+paikoinkinkaan
+paikoinkinpa
+paikoinkin
+paikoinkaanhan
+paikoinkaanko
+paikoinkaankin
+paikoinkaanpa
+paikoinkaan
+paikoinpahan
+paikoinpako
+paikoinpakin
+paikoinpakaan
+paikoinpas
+paikoinpa
 

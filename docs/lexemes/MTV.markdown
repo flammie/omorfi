@@ -5,7 +5,15 @@ lexeme: MTV
 
 ###  MTV₁
 
-Music TeleVision
+* _Music TeleVision_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### MTV wordforms
+
+MTV-
+MTV‐
+MTV‑
+MTV
 

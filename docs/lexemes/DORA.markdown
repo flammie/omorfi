@@ -5,8 +5,12 @@ lexeme: $
 
 ###  $₁
 
-dollar
+* _dollar_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
 * Semantic tags:  CURRENCY
+
+
+### DORA wordforms
+
 

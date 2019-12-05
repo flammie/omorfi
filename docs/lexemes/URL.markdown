@@ -5,7 +5,15 @@ lexeme: URL
 
 ###  URL₁
 
-Uniform Resource Locator
+* _Uniform Resource Locator_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### URL wordforms
+
+URL-
+URL‐
+URL‑
+URL
 

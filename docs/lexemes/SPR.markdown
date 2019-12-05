@@ -5,8 +5,16 @@ lexeme: SPR
 
 ###  SPR₁
 
-Suomen Punainen Risti
+* _Suomen Punainen Risti_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### SPR wordforms
+
+SPR-
+SPR‐
+SPR‑
+SPR
 

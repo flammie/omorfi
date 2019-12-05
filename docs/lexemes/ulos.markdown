@@ -5,15 +5,46 @@ lexeme: ulos
 
 ###  ulos₁
 
-adverb (out)
+* _adverb (out)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
 
 
 ###  ulos₂
 
-adposition (out of) when can be attached to a elative NP, otherwise adverb (out)
+* _adposition (out of) when can be attached to a elative NP, otherwise adverb (out)_
 * UPOS:  ADP
-* Origin:  omorfi
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
+
+
+### ulos wordforms
+
+ulos
+uloshanko
+uloshankaan
+uloshanpa
+uloshan
+uloskohan
+uloskokin
+uloskokaan
+uloskos
+uloskopa
+ulosko
+uloskinhan
+uloskinko
+uloskinkaan
+uloskinpa
+uloskin
+uloskaanhan
+uloskaanko
+uloskaankin
+uloskaanpa
+uloskaan
+ulospahan
+ulospako
+ulospakin
+ulospakaan
+ulospas
+ulospa
 

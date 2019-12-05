@@ -5,7 +5,15 @@ lexeme: ISBN
 
 ###  ISBN₁
 
-International Serial Book Number
+* _International Serial Book Number_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### ISBN wordforms
+
+ISBN-
+ISBN‐
+ISBN‑
+ISBN
 

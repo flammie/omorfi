@@ -5,8 +5,16 @@ lexeme: BBC
 
 ###  BBC₁
 
-British Broadcasting Company
+* _British Broadcasting Company_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### BBC wordforms
+
+BBC-
+BBC‐
+BBC‑
+BBC
 

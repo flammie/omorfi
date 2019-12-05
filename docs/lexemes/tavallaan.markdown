@@ -5,7 +5,11 @@ lexeme: tavallaan
 
 ###  tavallaan₁
 
-usually seen as adverb (in their way), but can be analysed as possessive adessive of the noun *tosi* (truth)
+* _usually seen as adverb (in their way), but can be analysed as possessive adessive of the noun *tosi* (truth)_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
+
+
+### tavallaan wordforms
+
 

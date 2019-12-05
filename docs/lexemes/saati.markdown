@@ -5,7 +5,12 @@ lexeme: saati
 
 ###  saati₃
 
-also not even, coordinating conj, “ei kissoja saati koiria“, see VISK § 816
+* _also not even, coordinating conj, “ei kissoja saati koiria”, see VISK § 816_
 * UPOS:  CCONJ
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### saati wordforms
+
+saati
 

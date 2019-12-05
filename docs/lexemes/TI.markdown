@@ -5,8 +5,16 @@ lexeme: TI
 
 ###  TI₁
 
-Texas Instruments
+* _Texas Instruments_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  MISC
+
+
+### TI wordforms
+
+TI-
+TI‐
+TI‑
+TI
 

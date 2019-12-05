@@ -5,7 +5,38 @@ lexeme: perillä
 
 ###  perillä₁
 
-usually seen as adverb (at goal point), but can be analysed as adessive of the noun *perä* (rear)
+* _usually seen as adverb (at goal point), but can be analysed as adessive of the noun *perä* (rear)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### perillä wordforms
+
+perillä
+perillähänkään
+perillähänkö
+perillähänpä
+perillähän
+perilläkinhän
+perilläkinkään
+perilläkinkö
+perilläkinpä
+perilläkin
+perilläkäänhän
+perilläkäänkin
+perilläkäänkö
+perilläkäänpä
+perilläkään
+perilläköhän
+perilläkökin
+perilläkökään
+perilläkös
+perilläköpä
+perilläkö
+perilläpähän
+perilläpäkin
+perilläpäkään
+perilläpäkö
+perilläpäs
+perilläpä
 

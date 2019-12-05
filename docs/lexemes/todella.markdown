@@ -5,14 +5,18 @@ lexeme: todella
 
 ###  todella₁
 
-adposition?
+* _adposition?_
 * UPOS:  X
-* Origin:  omorfi
+* Origins: omorfi 
 
 
 ###  todella₂
 
-usually seen as adverb (really), but can be analysed as adessive of the noun *tosi* (truth)
+* _usually seen as adverb (really), but can be analysed as adessive of the noun *tosi* (truth)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### todella wordforms
+
 

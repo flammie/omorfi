@@ -5,8 +5,16 @@ lexeme: NHL
 
 ###  NHL₁
 
-National Hockey League
+* _National Hockey League_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### NHL wordforms
+
+NHL-
+NHL‐
+NHL‑
+NHL
 

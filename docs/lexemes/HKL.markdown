@@ -5,7 +5,15 @@ lexeme: HKL
 
 ###  HKL₁
 
-Helsingin Kaupungin Liikenne
+* _Helsingin Kaupungin Liikenne_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### HKL wordforms
+
+HKL-
+HKL‐
+HKL‑
+HKL
 

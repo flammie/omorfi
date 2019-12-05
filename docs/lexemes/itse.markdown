@@ -5,16 +5,47 @@ lexeme: itse
 
 ###  itse₁
 
-self, as the reflexive pronoun, see VISK §769
+* _self, as the reflexive pronoun, see VISK §769_
 * UPOS:  ADV
-* Origin:  finer|joukahainen
+* Origins: finer joukahainen 
 
 
 ###  itse₂
 
-self as reflexive pronoun (c.f. VISK § 104)
+* _self as reflexive pronoun (c.f. VISK § 104)_
 * UPOS:  PRON
 * in KOTUS dictionary under:  8
-* Origin:  finer|joukahainen|omorfi++
+* Origins: finer omorfi joukahainen 
 * PronType:  REFLEXIVE
+
+
+### itse wordforms
+
+itse
+itsehänkään
+itsehänkö
+itsehänpä
+itsehän
+itsekinhän
+itsekinkään
+itsekinkö
+itsekinpä
+itsekin
+itsekäänhän
+itsekäänkin
+itsekäänkö
+itsekäänpä
+itsekään
+itseköhän
+itsekökin
+itsekökään
+itsekös
+itseköpä
+itsekö
+itsepähän
+itsepäkin
+itsepäkään
+itsepäkö
+itsepäs
+itsepä
 

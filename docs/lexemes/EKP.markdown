@@ -5,8 +5,16 @@ lexeme: EKP
 
 ###  EKP₁
 
-Euroopan Keskus-Pankki
+* _Euroopan Keskus-Pankki_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### EKP wordforms
+
+EKP-
+EKP‐
+EKP‑
+EKP
 

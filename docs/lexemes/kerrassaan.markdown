@@ -5,7 +5,12 @@ lexeme: kerrassaan
 
 ###  kerrassaan₁
 
-usually seen as adverb (indeed), but can be analysed as a form of *kerta* (one time)
+* _usually seen as adverb (indeed), but can be analysed as a form of *kerta* (one time)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### kerrassaan wordforms
+
+kerrassaan
 

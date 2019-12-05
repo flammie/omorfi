@@ -5,15 +5,54 @@ lexeme: asemasta
 
 ###  asemasta₁
 
-instead, as adv, ??
+* _instead, as adv, ??_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
 
 
 ###  asemasta₂
 
-instead of, as adposition, genitive complement or possessive, “tien asemasta“, commonly used instead of 'asemesta'
+* _instead of, as adposition, genitive complement or possessive, “tien asemasta“, commonly used instead of 'asemesta'_
 * UPOS:  ADP
-* Origin:  kotus
+* Origins: 
 * AdpType:  POSTPOSITION
+
+
+###  asemasta₂
+
+* _instead of, as adposition, genitive complement or possessive, “tien asemasta”, commonly used instead of 'asemesta'_
+* UPOS:  ADP
+* Origins: 
+* AdpType:  POSTPOSITION
+
+
+### asemasta wordforms
+
+asemasta
+asemastahanko
+asemastahankaan
+asemastahanpa
+asemastahan
+asemastakohan
+asemastakokin
+asemastakokaan
+asemastakos
+asemastakopa
+asemastako
+asemastakinhan
+asemastakinko
+asemastakinkaan
+asemastakinpa
+asemastakin
+asemastakaanhan
+asemastakaanko
+asemastakaankin
+asemastakaanpa
+asemastakaan
+asemastapahan
+asemastapako
+asemastapakin
+asemastapakaan
+asemastapas
+asemastapa
 

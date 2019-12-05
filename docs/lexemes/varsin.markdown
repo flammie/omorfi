@@ -5,7 +5,12 @@ lexeme: varsin
 
 ###  varsin₁
 
-usually seen as adverb (really), but can be analysed as a form of *varsi* (stem)
+* _usually seen as adverb (really), but can be analysed as a form of *varsi* (stem)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### varsin wordforms
+
+varsin
 

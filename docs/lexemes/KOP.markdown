@@ -5,8 +5,16 @@ lexeme: KOP
 
 ###  KOP₁
 
-Kansallis-Osake-Pankki
+* _Kansallis-Osake-Pankki_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### KOP wordforms
+
+KOP-
+KOP‐
+KOP‑
+KOP
 

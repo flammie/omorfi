@@ -5,7 +5,38 @@ lexeme: naimisissa
 
 ###  naimisissa₁
 
-usually seen as adverb (married), but can be analysed as a form of *naiminen* (marriage)
+* _usually seen as adverb (married), but can be analysed as a form of *naiminen* (marriage)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### naimisissa wordforms
+
+naimisissa
+naimisissahanko
+naimisissahankaan
+naimisissahanpa
+naimisissahan
+naimisissakohan
+naimisissakokin
+naimisissakokaan
+naimisissakos
+naimisissakopa
+naimisissako
+naimisissakinhan
+naimisissakinko
+naimisissakinkaan
+naimisissakinpa
+naimisissakin
+naimisissakaanhan
+naimisissakaanko
+naimisissakaankin
+naimisissakaanpa
+naimisissakaan
+naimisissapahan
+naimisissapako
+naimisissapakin
+naimisissapakaan
+naimisissapas
+naimisissapa
 

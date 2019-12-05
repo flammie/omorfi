@@ -5,8 +5,16 @@ lexeme: USA
 
 ###  USA₁
 
-United States of America
+* _United States of America_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  GEO
+
+
+### USA wordforms
+
+USA-
+USA‐
+USA‑
+USA
 

@@ -5,15 +5,215 @@ lexeme: kanssa
 
 ###  kanssa₁
 
-adposition (with) when can be attached to a genitive NP, otherwise adverb (as well)
+* _adposition (with) when can be attached to a genitive NP, otherwise adverb (as well)_
 * UPOS:  ADP
-* Origin:  finer|omorfi++
+* Origins: finer omorfi 
 * AdpType:  POSTPOSITION
 
 
 ###  kanssa₂
 
-also as well, adverb, perhaps rather limited, “tuletko kanssa?“
+* _also as well, adverb, perhaps rather limited, “tuletko kanssa?“_
 * UPOS:  ADV
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+###  kanssa₂
+
+* _also as well, adverb, perhaps rather limited, “tuletko kanssa?”_
+* UPOS:  ADV
+* Origins: omorfi 
+
+
+### kanssa wordforms
+
+kanssa
+kanssahanko
+kanssahankaan
+kanssahanpa
+kanssahan
+kanssamme
+kanssammehanko
+kanssammehankaan
+kanssammehanpa
+kanssammehan
+kanssammekohan
+kanssammekokin
+kanssammekokaan
+kanssammekos
+kanssammekopa
+kanssammeko
+kanssammekinhan
+kanssammekinko
+kanssammekinkaan
+kanssammekinpa
+kanssammekin
+kanssammekaanhan
+kanssammekaanko
+kanssammekaankin
+kanssammekaanpa
+kanssammekaan
+kanssammepahan
+kanssammepako
+kanssammepakin
+kanssammepakaan
+kanssammepas
+kanssammepa
+kanssakohan
+kanssakokin
+kanssakokaan
+kanssakos
+kanssakopa
+kanssako
+kanssakinhan
+kanssakinko
+kanssakinkaan
+kanssakinpa
+kanssakin
+kanssakaanhan
+kanssakaanko
+kanssakaankin
+kanssakaanpa
+kanssakaan
+kanssasi
+kanssasihanko
+kanssasihankaan
+kanssasihanpa
+kanssasihan
+kanssasikohan
+kanssasikokin
+kanssasikokaan
+kanssasikos
+kanssasikopa
+kanssasiko
+kanssasikinhan
+kanssasikinko
+kanssasikinkaan
+kanssasikinpa
+kanssasikin
+kanssasikaanhan
+kanssasikaanko
+kanssasikaankin
+kanssasikaanpa
+kanssasikaan
+kanssasipahan
+kanssasipako
+kanssasipakin
+kanssasipakaan
+kanssasipas
+kanssasipa
+kanssani
+kanssanihanko
+kanssanihankaan
+kanssanihanpa
+kanssanihan
+kanssanikohan
+kanssanikokin
+kanssanikokaan
+kanssanikos
+kanssanikopa
+kanssaniko
+kanssanikinhan
+kanssanikinko
+kanssanikinkaan
+kanssanikinpa
+kanssanikin
+kanssanikaanhan
+kanssanikaanko
+kanssanikaankin
+kanssanikaanpa
+kanssanikaan
+kanssanipahan
+kanssanipako
+kanssanipakin
+kanssanipakaan
+kanssanipas
+kanssanipa
+kanssansa
+kanssansahanko
+kanssansahankaan
+kanssansahanpa
+kanssansahan
+kanssansakohan
+kanssansakokin
+kanssansakokaan
+kanssansakos
+kanssansakopa
+kanssansako
+kanssansakinhan
+kanssansakinko
+kanssansakinkaan
+kanssansakinpa
+kanssansakin
+kanssansakaanhan
+kanssansakaanko
+kanssansakaankin
+kanssansakaanpa
+kanssansakaan
+kanssansapahan
+kanssansapako
+kanssansapakin
+kanssansapakaan
+kanssansapas
+kanssansapa
+kanssanne
+kanssannehanko
+kanssannehankaan
+kanssannehanpa
+kanssannehan
+kanssannekohan
+kanssannekokin
+kanssannekokaan
+kanssannekos
+kanssannekopa
+kanssanneko
+kanssannekinhan
+kanssannekinko
+kanssannekinkaan
+kanssannekinpa
+kanssannekin
+kanssannekaanhan
+kanssannekaanko
+kanssannekaankin
+kanssannekaanpa
+kanssannekaan
+kanssannepahan
+kanssannepako
+kanssannepakin
+kanssannepakaan
+kanssannepas
+kanssannepa
+kanssapahan
+kanssapako
+kanssapakin
+kanssapakaan
+kanssapas
+kanssapa
+kanssaan
+kanssaanhanko
+kanssaanhankaan
+kanssaanhanpa
+kanssaanhan
+kanssaankohan
+kanssaankokin
+kanssaankokaan
+kanssaankos
+kanssaankopa
+kanssaanko
+kanssaankinhan
+kanssaankinko
+kanssaankinkaan
+kanssaankinpa
+kanssaankin
+kanssaankaanhan
+kanssaankaanko
+kanssaankaankin
+kanssaankaanpa
+kanssaankaan
+kanssaanpahan
+kanssaanpako
+kanssaanpakin
+kanssaanpakaan
+kanssaanpas
+kanssaanpa
 

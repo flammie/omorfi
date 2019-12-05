@@ -5,7 +5,12 @@ lexeme: vihdoin
 
 ###  vihdoin₁
 
-usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig)
+* _usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### vihdoin wordforms
+
+vihdoin
 

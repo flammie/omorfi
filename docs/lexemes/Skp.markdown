@@ -5,8 +5,16 @@ lexeme: Skp
 
 ###  Skp₁
 
-Suomen keskuspankki
+* _Suomen keskuspankki_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### Skp wordforms
+
+Skp-
+Skp‐
+Skp‑
+Skp
 

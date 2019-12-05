@@ -5,9 +5,17 @@ lexeme: min
 
 ###  min₁
 
-fgk
+* _any of the forms of Chinese spoken in Fukien province (FinnWordNet); this causes some compounding problems_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
 * Blacklisted:  FGK
 * Semantic tags:  MEASURE
+
+
+### min wordforms
+
+min-
+min‐
+min‑
+min
 

@@ -5,14 +5,52 @@ lexeme: toisaalta
 
 ###  toisaalta₁
 
-on the other hand, as adverb, “toisaalta ei kiinnosta“
+* _on the other hand, as adverb, “toisaalta ei kiinnosta“_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+###  toisaalta₁
+
+* _on the other hand, as adverb, “toisaalta ei kiinnosta”_
+* UPOS:  ADV
+* Origins: 
 
 
 ###  toisaalta₂
 
-and otoh, as paired conjunction with ja
+* _and otoh, as paired conjunction with ja_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### toisaalta wordforms
+
+toisaalta
+toisaaltahanko
+toisaaltahankaan
+toisaaltahanpa
+toisaaltahan
+toisaaltakohan
+toisaaltakokin
+toisaaltakokaan
+toisaaltakos
+toisaaltakopa
+toisaaltako
+toisaaltakinhan
+toisaaltakinko
+toisaaltakinkaan
+toisaaltakinpa
+toisaaltakin
+toisaaltakaanhan
+toisaaltakaanko
+toisaaltakaankin
+toisaaltakaanpa
+toisaaltakaan
+toisaaltapahan
+toisaaltapako
+toisaaltapakin
+toisaaltapakaan
+toisaaltapas
+toisaaltapa
 

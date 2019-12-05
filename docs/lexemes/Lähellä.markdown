@@ -5,5 +5,9 @@ lexeme: Lähellä
 
 ###  Lähellä₁
 
-This proper noun overlaps forms of very common *lähellä* (close).
+* _This proper noun overlaps forms of very common *lähellä* (close)._
+
+
+### Lähellä wordforms
+
 

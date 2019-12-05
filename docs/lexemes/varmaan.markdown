@@ -5,7 +5,38 @@ lexeme: varmaan
 
 ###  varmaan₁
 
-usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure)
+* _usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### varmaan wordforms
+
+varmaan
+varmaanhanko
+varmaanhankaan
+varmaanhanpa
+varmaanhan
+varmaankohan
+varmaankokin
+varmaankokaan
+varmaankos
+varmaankopa
+varmaanko
+varmaankinhan
+varmaankinko
+varmaankinkaan
+varmaankinpa
+varmaankin
+varmaankaanhan
+varmaankaanko
+varmaankaankin
+varmaankaanpa
+varmaankaan
+varmaanpahan
+varmaanpako
+varmaanpakin
+varmaanpakaan
+varmaanpas
+varmaanpa
 

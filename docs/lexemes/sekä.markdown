@@ -5,7 +5,19 @@ lexeme: sekä
 
 ###  sekä₁
 
-and too, coordinating conj, “kissat sekä koirat“
+* _and too, coordinating conj, “kissat sekä koirat“_
 * UPOS:  CCONJ
-* Origin:  kotus
+* Origins: 
+
+
+###  sekä₁
+
+* _and too, coordinating conj, “kissat sekä koirat”_
+* UPOS:  CCONJ
+* Origins: 
+
+
+### sekä wordforms
+
+sekä
 

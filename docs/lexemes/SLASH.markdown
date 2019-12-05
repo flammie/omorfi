@@ -5,7 +5,11 @@ lexeme: /
 
 ###  /₂
 
-slash, for division, URLs, etc.
+* _slash, for division, URLs, etc._
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### SLASH wordforms
+
 

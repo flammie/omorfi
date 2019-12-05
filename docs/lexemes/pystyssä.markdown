@@ -5,7 +5,38 @@ lexeme: pystyssä
 
 ###  pystyssä₁
 
-usually seen as adverb (upright), but can be analysed as inessive of the adjective *pysty* (vertical)
+* _usually seen as adverb (upright), but can be analysed as inessive of the adjective *pysty* (vertical)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### pystyssä wordforms
+
+pystyssä
+pystyssähänkään
+pystyssähänkö
+pystyssähänpä
+pystyssähän
+pystyssäkinhän
+pystyssäkinkään
+pystyssäkinkö
+pystyssäkinpä
+pystyssäkin
+pystyssäkäänhän
+pystyssäkäänkin
+pystyssäkäänkö
+pystyssäkäänpä
+pystyssäkään
+pystyssäköhän
+pystyssäkökin
+pystyssäkökään
+pystyssäkös
+pystyssäköpä
+pystyssäkö
+pystyssäpähän
+pystyssäpäkin
+pystyssäpäkään
+pystyssäpäkö
+pystyssäpäs
+pystyssäpä
 

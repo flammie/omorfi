@@ -5,8 +5,16 @@ lexeme: ETY
 
 ###  ETY₁
 
-Euroopan Turvallisuus-Yhteisö
+* _Euroopan Turvallisuus-Yhteisö_
 * UPOS:  PROPN
-* Origin:  finer
+* Origins: finer 
 * Possible NER class:  ORG
+
+
+### ETY wordforms
+
+ETY-
+ETY‐
+ETY‑
+ETY
 

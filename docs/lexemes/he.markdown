@@ -5,7 +5,12 @@ lexeme: he
 
 ###  he₁
 
-This interjection overlaps very common pronoun *he* “they“.
+* _This interjection overlaps very common pronoun *he* “they”._
 * UPOS:  INTJ
-* Origin:  kotus
+* Origins: 
+
+
+### he wordforms
+
+he
 

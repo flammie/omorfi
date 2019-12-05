@@ -5,7 +5,15 @@ lexeme: YK
 
 ###  YK₁
 
-Yhdistyneet Kansakunnat
+* _Yhdistyneet Kansakunnat_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### YK wordforms
+
+YK-
+YK‐
+YK‑
+YK
 

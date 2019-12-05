@@ -5,8 +5,16 @@ lexeme: VR
 
 ###  VR₁
 
-Valtion Rautatiet
+* _Valtion Rautatiet_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### VR wordforms
+
+VR-
+VR‐
+VR‑
+VR
 

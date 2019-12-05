@@ -5,14 +5,45 @@ lexeme: niin
 
 ###  niin₁
 
-so, such, adverb, “tehtiin niin“
+* _so, such, adverb, “tehtiin niin”_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
 
 
 ###  niin₂
 
-as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin“
+* _as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin”_
 * UPOS:  CCONJ
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### niin wordforms
+
+niin
+niinhänkään
+niinhänkö
+niinhänpä
+niinhän
+niinkinhän
+niinkinkään
+niinkinkö
+niinkinpä
+niinkin
+niinkäänhän
+niinkäänkin
+niinkäänkö
+niinkäänpä
+niinkään
+niinköhän
+niinkökin
+niinkökään
+niinkös
+niinköpä
+niinkö
+niinpähän
+niinpäkin
+niinpäkään
+niinpäkö
+niinpäs
+niinpä
 

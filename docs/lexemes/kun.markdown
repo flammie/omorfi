@@ -5,7 +5,19 @@ lexeme: kun
 
 ###  kun₁
 
-when, sub-ordinating conj, “kun menen kotiin“, see VISK § 818
+* _when, sub-ordinating conj, “kun menen kotiin“, see VISK § 818_
 * UPOS:  SCONJ
-* Origin:  finer|omorfi++|joukahainen
+* Origins: finer omorfi joukahainen 
+
+
+###  kun₁
+
+* _when, sub-ordinating conj, “kun menen kotiin”, see VISK § 818_
+* UPOS:  SCONJ
+* Origins: finer omorfi joukahainen 
+
+
+### kun wordforms
+
+kun
 

@@ -5,8 +5,16 @@ lexeme: FIFA
 
 ###  FIFA₁
 
-Football
+* _Football_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### FIFA wordforms
+
+FIFA-
+FIFA‐
+FIFA‑
+FIFA
 

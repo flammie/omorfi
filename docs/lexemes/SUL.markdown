@@ -5,8 +5,16 @@ lexeme: SUL
 
 ###  SUL₁
 
-Suomen Urheilu-Liitto
+* _Suomen Urheilu-Liitto_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### SUL wordforms
+
+SUL-
+SUL‐
+SUL‑
+SUL
 

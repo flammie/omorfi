@@ -5,15 +5,216 @@ lexeme: sisältä
 
 ###  sisältä₁
 
-adverb
+* _adverb_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
 
 
 ###  sisältä₂
 
-from inside. as adposition, “talon sisältä“
+* _from inside. as adposition, “talon sisältä“_
 * UPOS:  ADP
-* Origin:  omorfi++
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
+
+
+###  sisältä₂
+
+* _from inside. as adposition, “talon sisältä”_
+* UPOS:  ADP
+* Origins: omorfi 
+* AdpType:  POSTPOSITION
+
+
+### sisältä wordforms
+
+sisältä
+sisältähänkään
+sisältähänkö
+sisältähänpä
+sisältähän
+sisältämme
+sisältämmehänkään
+sisältämmehänkö
+sisältämmehänpä
+sisältämmehän
+sisältämmekinhän
+sisältämmekinkään
+sisältämmekinkö
+sisältämmekinpä
+sisältämmekin
+sisältämmekäänhän
+sisältämmekäänkin
+sisältämmekäänkö
+sisältämmekäänpä
+sisältämmekään
+sisältämmeköhän
+sisältämmekökin
+sisältämmekökään
+sisältämmekös
+sisältämmeköpä
+sisältämmekö
+sisältämmepähän
+sisältämmepäkin
+sisältämmepäkään
+sisältämmepäkö
+sisältämmepäs
+sisältämmepä
+sisältään
+sisältäänhänkään
+sisältäänhänkö
+sisältäänhänpä
+sisältäänhän
+sisältäänkinhän
+sisältäänkinkään
+sisältäänkinkö
+sisältäänkinpä
+sisältäänkin
+sisältäänkäänhän
+sisältäänkäänkin
+sisältäänkäänkö
+sisältäänkäänpä
+sisältäänkään
+sisältäänköhän
+sisältäänkökin
+sisältäänkökään
+sisältäänkös
+sisältäänköpä
+sisältäänkö
+sisältäänpähän
+sisältäänpäkin
+sisältäänpäkään
+sisältäänpäkö
+sisältäänpäs
+sisältäänpä
+sisältäkinhän
+sisältäkinkään
+sisältäkinkö
+sisältäkinpä
+sisältäkin
+sisältäkäänhän
+sisältäkäänkin
+sisältäkäänkö
+sisältäkäänpä
+sisältäkään
+sisältäköhän
+sisältäkökin
+sisältäkökään
+sisältäkös
+sisältäköpä
+sisältäkö
+sisältäsi
+sisältäsihänkään
+sisältäsihänkö
+sisältäsihänpä
+sisältäsihän
+sisältäsikinhän
+sisältäsikinkään
+sisältäsikinkö
+sisältäsikinpä
+sisältäsikin
+sisältäsikäänhän
+sisältäsikäänkin
+sisältäsikäänkö
+sisältäsikäänpä
+sisältäsikään
+sisältäsiköhän
+sisältäsikökin
+sisältäsikökään
+sisältäsikös
+sisältäsiköpä
+sisältäsikö
+sisältäsipähän
+sisältäsipäkin
+sisältäsipäkään
+sisältäsipäkö
+sisältäsipäs
+sisältäsipä
+sisältäni
+sisältänihänkään
+sisältänihänkö
+sisältänihänpä
+sisältänihän
+sisältänikinhän
+sisältänikinkään
+sisältänikinkö
+sisältänikinpä
+sisältänikin
+sisältänikäänhän
+sisältänikäänkin
+sisältänikäänkö
+sisältänikäänpä
+sisältänikään
+sisältäniköhän
+sisältänikökin
+sisältänikökään
+sisältänikös
+sisältäniköpä
+sisältänikö
+sisältänipähän
+sisältänipäkin
+sisältänipäkään
+sisältänipäkö
+sisältänipäs
+sisältänipä
+sisältänsä
+sisältänsähänkään
+sisältänsähänkö
+sisältänsähänpä
+sisältänsähän
+sisältänsäkinhän
+sisältänsäkinkään
+sisältänsäkinkö
+sisältänsäkinpä
+sisältänsäkin
+sisältänsäkäänhän
+sisältänsäkäänkin
+sisältänsäkäänkö
+sisältänsäkäänpä
+sisältänsäkään
+sisältänsäköhän
+sisältänsäkökin
+sisältänsäkökään
+sisältänsäkös
+sisältänsäköpä
+sisältänsäkö
+sisältänsäpähän
+sisältänsäpäkin
+sisältänsäpäkään
+sisältänsäpäkö
+sisältänsäpäs
+sisältänsäpä
+sisältänne
+sisältännehänkään
+sisältännehänkö
+sisältännehänpä
+sisältännehän
+sisältännekinhän
+sisältännekinkään
+sisältännekinkö
+sisältännekinpä
+sisältännekin
+sisältännekäänhän
+sisältännekäänkin
+sisältännekäänkö
+sisältännekäänpä
+sisältännekään
+sisältänneköhän
+sisältännekökin
+sisältännekökään
+sisältännekös
+sisältänneköpä
+sisältännekö
+sisältännepähän
+sisältännepäkin
+sisältännepäkään
+sisältännepäkö
+sisältännepäs
+sisältännepä
+sisältäpähän
+sisältäpäkin
+sisältäpäkään
+sisältäpäkö
+sisältäpäs
+sisältäpä
 

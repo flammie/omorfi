@@ -5,9 +5,17 @@ lexeme: TM
 
 ###  TM₁
 
-Tekniikan Maailma
+* _Tekniikan Maailma_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  MISC
 * Semantic tags:  ORG
+
+
+### TM wordforms
+
+TM-
+TM‐
+TM‑
+TM
 

@@ -5,7 +5,20 @@ lexeme: cd
 
 ###  cd₁
 
-compact disc
+* _compact disc_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### cd wordforms
+
+cd
+cd-
+cd‐
+cd‑
+cd
+cd-
+cd‐
+cd‑
+cd
 

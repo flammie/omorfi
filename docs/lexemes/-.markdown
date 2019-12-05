@@ -5,7 +5,11 @@ lexeme: -
 
 ###  -₁
 
-ASCII minus-hyphen, still most common dash
+* _ASCII minus-hyphen, still most common dash_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### - wordforms
+
 

@@ -5,7 +5,12 @@ lexeme: mikäli
 
 ###  mikäli₁
 
-if, given that, sub-ordinating conjunction, “mikäli voidaan“
+* _if, given that, sub-ordinating conjunction, “mikäli voidaan”_
 * UPOS:  SCONJ
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### mikäli wordforms
+
+mikäli
 

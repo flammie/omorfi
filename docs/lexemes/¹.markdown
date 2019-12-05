@@ -5,7 +5,15 @@ lexeme: ¹
 
 ###  ¹₁
 
-superscript one
+* _superscript one_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ¹ wordforms
+
+¹-
+¹‐
+¹‑
+¹
 

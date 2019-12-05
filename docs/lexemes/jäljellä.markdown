@@ -5,7 +5,38 @@ lexeme: jäljellä
 
 ###  jäljellä₁
 
-usually seen as adverb (left), but overlaps adessive of the noun *jälki* (trace)
+* _usually seen as adverb (left), but overlaps adessive of the noun *jälki* (trace)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### jäljellä wordforms
+
+jäljellä
+jäljellähänkään
+jäljellähänkö
+jäljellähänpä
+jäljellähän
+jäljelläkinhän
+jäljelläkinkään
+jäljelläkinkö
+jäljelläkinpä
+jäljelläkin
+jäljelläkäänhän
+jäljelläkäänkin
+jäljelläkäänkö
+jäljelläkäänpä
+jäljelläkään
+jäljelläköhän
+jäljelläkökin
+jäljelläkökään
+jäljelläkös
+jäljelläköpä
+jäljelläkö
+jäljelläpähän
+jäljelläpäkin
+jäljelläpäkään
+jäljelläpäkö
+jäljelläpäs
+jäljelläpä
 

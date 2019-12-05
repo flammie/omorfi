@@ -5,9 +5,17 @@ lexeme: SDP
 
 ###  SDP₁
 
-Sosiali-Demokraattinen Puolue
+* _Sosiali-Demokraattinen Puolue_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
 * Semantic tags:  POLIT
+
+
+### SDP wordforms
+
+SDP-
+SDP‐
+SDP‑
+SDP
 

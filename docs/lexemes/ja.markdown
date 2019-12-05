@@ -5,14 +5,33 @@ lexeme: ja
 
 ###  ja₁
 
-and, as cconj, “kissoja ja koiria“, see VISK § 817
+* _and, as cconj, “kissoja ja koiria“, see VISK § 817_
 * UPOS:  CCONJ
-* Origin:  finer|omorfi++
+* Origins: finer omorfi 
+
+
+###  ja₁
+
+* _and, as cconj, “kissoja ja koiria”, see VISK § 817_
+* UPOS:  CCONJ
+* Origins: finer omorfi 
 
 
 ###  ja₂
 
-as well, as adverb, colloquial-ish, “mentiin sinne ja“
+* _as well, as adverb, colloquial-ish, “mentiin sinne ja“_
 * UPOS:  ADV
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+###  ja₂
+
+* _as well, as adverb, colloquial-ish, “mentiin sinne ja”_
+* UPOS:  ADV
+* Origins: omorfi 
+
+
+### ja wordforms
+
+ja
 

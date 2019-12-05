@@ -5,7 +5,16 @@ lexeme: ½
 
 ###  ½₁
 
-half
+* _half_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ½ wordforms
+
+½
+½-
+½‐
+½‑
+½
 

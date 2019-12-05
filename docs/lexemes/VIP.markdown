@@ -5,7 +5,15 @@ lexeme: VIP
 
 ###  VIP₁
 
-Very Important Person
+* _Very Important Person_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### VIP wordforms
+
+VIP-
+VIP‐
+VIP‑
+VIP
 

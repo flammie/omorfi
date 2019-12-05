@@ -5,7 +5,11 @@ lexeme: ]
 
 ###  ]₁
 
-right square bracket
+* _right square bracket_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### RSQ wordforms
+
 

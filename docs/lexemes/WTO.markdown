@@ -5,8 +5,16 @@ lexeme: WTO
 
 ###  WTO₁
 
-World Trade Organisation
+* _World Trade Organisation_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### WTO wordforms
+
+WTO-
+WTO‐
+WTO‑
+WTO
 

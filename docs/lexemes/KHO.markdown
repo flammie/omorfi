@@ -5,9 +5,17 @@ lexeme: KHO
 
 ###  KHO₁
 
-Korkein Hovi-Oikeus
+* _Korkein Hovi-Oikeus_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
 * Semantic tags:  ORG
+
+
+### KHO wordforms
+
+KHO-
+KHO‐
+KHO‑
+KHO
 

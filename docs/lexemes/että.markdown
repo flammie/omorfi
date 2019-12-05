@@ -5,14 +5,26 @@ lexeme: että
 
 ###  että₁
 
-that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature “tiesin, että on yö“
+* _that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature “tiesin, että on yö“_
 * UPOS:  SCONJ
-* Origin:  kotus|joukahainen
+* Origins: joukahainen 
+
+
+###  että₁
+
+* _that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature “tiesin, että on yö”_
+* UPOS:  SCONJ
+* Origins: joukahainen 
 
 
 ###  että₃
 
-that, co-ordinating conjunction, one of the more generic conjunctions, sometimes co-ordinating, refer to VISK § 819
+* _that, co-ordinating conjunction, one of the more generic conjunctions, sometimes co-ordinating, refer to VISK § 819_
 * UPOS:  CCONJ
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+### että wordforms
+
+että
 

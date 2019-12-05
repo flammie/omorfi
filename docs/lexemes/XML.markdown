@@ -5,7 +5,15 @@ lexeme: XML
 
 ###  XML₁
 
-Extensible Markup Language
+* _Extensible Markup Language_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### XML wordforms
+
+XML-
+XML‐
+XML‑
+XML
 

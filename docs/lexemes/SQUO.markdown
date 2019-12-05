@@ -5,7 +5,11 @@ lexeme: '
 
 ###  '₁
 
-“opening” ASCII single quotation mark, still most common single quotation, but not recommended
+* _“opening” ASCII single quotation mark, still most common single quotation, but not recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### SQUO wordforms
+
 

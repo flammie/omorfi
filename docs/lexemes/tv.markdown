@@ -5,7 +5,15 @@ lexeme: tv
 
 ###  tv₁
 
-tele-visio
+* _tele-visio_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### tv wordforms
+
+tv-
+tv‐
+tv‑
+tv
 

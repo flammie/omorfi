@@ -5,7 +5,16 @@ lexeme: ¼
 
 ###  ¼₁
 
-quarter
+* _quarter_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ¼ wordforms
+
+¼
+¼-
+¼‐
+¼‑
+¼
 

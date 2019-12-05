@@ -5,21 +5,39 @@ lexeme: vaikka
 
 ###  vaikka₁
 
-REMOVED
+* _REMOVED_
 * UPOS:  X
-* Origin:  omorfi
+* Origins: omorfi 
 
 
 ###  vaikka₂
 
-even, as adverb, “vaikka mitä“, "vaikka kuinka paljon" see VISK § 841
+* _even, as adverb, “vaikka mitä“, "vaikka kuinka paljon" see VISK § 841_
 * UPOS:  ADV
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+###  vaikka₂
+
+* _even, as adverb, “vaikka mitä”, "vaikka kuinka paljon" see VISK § 841_
+* UPOS:  ADV
+* Origins: omorfi 
 
 
 ###  vaikka₃
 
-even though, as subordinating conjunction, “vaikka ärsyttäisikin“, see VISK § 816
+* _even though, as subordinating conjunction, “vaikka ärsyttäisikin“, see VISK § 816_
 * UPOS:  SCONJ
-* Origin:  kotus
+* Origins: 
+
+
+###  vaikka₃
+
+* _even though, as subordinating conjunction, “vaikka ärsyttäisikin”, see VISK § 816_
+* UPOS:  SCONJ
+* Origins: 
+
+
+### vaikka wordforms
+
 

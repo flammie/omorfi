@@ -5,14 +5,25 @@ lexeme: aina
 
 ###  aina₁
 
-REMOVED adposition (send an example sentence if you need it back)
+* _REMOVED adposition (send an example sentence if you need it back)_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
 
 
 ###  aina₂
 
-always, as adverb, “aina mun pitää“
+* _always, as adverb, “aina mun pitää“_
 * UPOS:  ADV
-* Origin:  finer|omorfi++
+* Origins: finer omorfi 
+
+
+###  aina₂
+
+* _always, as adverb, “aina mun pitää”_
+* UPOS:  ADV
+* Origins: finer omorfi 
+
+
+### aina wordforms
+
 

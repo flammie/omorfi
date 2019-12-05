@@ -5,8 +5,16 @@ lexeme: HJK
 
 ###  HJK₁
 
-Helsingin Jalkapallo-Klubi
+* _Helsingin Jalkapallo-Klubi_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### HJK wordforms
+
+HJK-
+HJK‐
+HJK‑
+HJK
 

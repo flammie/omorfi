@@ -5,7 +5,15 @@ lexeme: SAK
 
 ###  SAK₁
 
-Suomen Ammattiliittojen Keskusjärjestö
+* _Suomen Ammattiliittojen Keskusjärjestö_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### SAK wordforms
+
+SAK-
+SAK‐
+SAK‑
+SAK
 

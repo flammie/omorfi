@@ -5,7 +5,11 @@ lexeme: |
 
 ###  |₁
 
-pipe used in computer systems, logics etc.
+* _pipe used in computer systems, logics etc._
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### PIPE wordforms
+
 

@@ -5,7 +5,11 @@ lexeme: ...
 
 ###  ...₁
 
-ellipsis
+* _ellipsis_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### STOPSTOPSTOP wordforms
+
 

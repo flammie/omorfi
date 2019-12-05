@@ -5,7 +5,15 @@ lexeme: FTP
 
 ###  FTP₁
 
-File Transfer Protocol
+* _File Transfer Protocol_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### FTP wordforms
+
+FTP-
+FTP‐
+FTP‑
+FTP
 

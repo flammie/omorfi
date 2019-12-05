@@ -5,15 +5,46 @@ lexeme: käsin
 
 ###  käsin₁
 
-manually “by hand“, as opposed to automatically "tee se käsin"
+* _manually “by hand”, as opposed to automatically "tee se käsin"_
 * UPOS:  ADV
-* Origin:  finer
+* Origins: finer 
 
 
 ###  käsin₂
 
-from smwh. ablative complement “mereltä käsin“
+* _from smwh. ablative complement “mereltä käsin”_
 * UPOS:  ADP
-* Origin:  omorfi
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
+
+
+### käsin wordforms
+
+käsin
+käsinhänkään
+käsinhänkö
+käsinhänpä
+käsinhän
+käsinkinhän
+käsinkinkään
+käsinkinkö
+käsinkinpä
+käsinkin
+käsinkäänhän
+käsinkäänkin
+käsinkäänkö
+käsinkäänpä
+käsinkään
+käsinköhän
+käsinkökin
+käsinkökään
+käsinkös
+käsinköpä
+käsinkö
+käsinpähän
+käsinpäkin
+käsinpäkään
+käsinpäkö
+käsinpäs
+käsinpä
 

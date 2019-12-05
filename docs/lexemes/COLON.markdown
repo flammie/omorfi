@@ -5,7 +5,11 @@ lexeme: :
 
 ###  :₁
 
-colon
+* _colon_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### COLON wordforms
+
 

@@ -5,14 +5,52 @@ lexeme: koska
 
 ###  koska₁
 
-when, as adverb, “koska tulet?“
+* _when, as adverb, “koska tulet?”_
 * UPOS:  ADV
-* Origin:  unk
+* Origins: 
 
 
 ###  koska₃
 
-because, sub-ordinating conj, “koska olen hyvä“
+* _because, sub-ordinating conj, “koska olen hyvä”_
 * UPOS:  SCONJ
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### koska wordforms
+
+koska
+koskahanko
+koskahankaan
+koskahanpa
+koskahan
+koskakohan
+koskakokin
+koskakokaan
+koskakos
+koskakopa
+koskako
+koskakinhan
+koskakinko
+koskakinkaan
+koskakinpa
+koskakin
+koskakahan
+koskakas
+koskakapahan
+koskakapas
+koskakapa
+koskakaanhan
+koskakaanko
+koskakaankin
+koskakaanpa
+koskakaan
+koskaka
+koskas
+koskapahan
+koskapako
+koskapakin
+koskapakaan
+koskapas
+koskapa
 

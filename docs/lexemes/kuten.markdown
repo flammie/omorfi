@@ -5,14 +5,19 @@ lexeme: kuten
 
 ###  kuten₁
 
-like a, such, as adverb, “eläin kuten kärpänen“, used like "kuin"
+* _like a, such, as adverb, “eläin kuten kärpänen”, used like "kuin"_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
 
 
 ###  kuten₂
 
-like, as sub-ordinating conjunction “tulkitse kuten pystyt“
+* _like, as sub-ordinating conjunction “tulkitse kuten pystyt”_
 * UPOS:  SCONJ
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### kuten wordforms
+
+kuten
 

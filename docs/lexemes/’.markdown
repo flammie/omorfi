@@ -5,14 +5,22 @@ lexeme: ’
 
 ###  ’₁
 
-“opening” curly single quotation in 9-shape, common and recommended
+* _“opening” curly single quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
 
 
 ###  ’₂
 
-“closing” curly single quotation in 9-shape, common and recommended
+* _“closing” curly single quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ’ wordforms
+
+’
+'
+′
+´
 

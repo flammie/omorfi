@@ -11,3 +11,7 @@ This rare proper noun overlaps more common *N.* (FIXME)
 * Possible NER class:  FIRST
 * Blacklisted:  PROPN-BLOCKING
 
+
+### NSTOP wordforms
+
+

@@ -5,7 +5,15 @@ lexeme: WC
 
 ###  WC₁
 
-Water Closet
+* _Water Closet_
 * UPOS:  NOUN
-* Origin:  joukahainen|enwikt
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/WC) [enwikt](https://fi.wiktionary.org/wiki/WC) joukahainen 
+
+
+### WC wordforms
+
+WC-
+WC‐
+WC‑
+WC
 

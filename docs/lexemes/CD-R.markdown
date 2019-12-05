@@ -5,7 +5,11 @@ lexeme: CD-R
 
 ###  CD-R₁
 
-Compact Disc Read-Only
+* _Compact Disc Read-Only_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### CD-R wordforms
+
 

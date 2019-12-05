@@ -5,21 +5,59 @@ lexeme: mitä
 
 ###  mitä₁
 
-what, interrogative adverb “mitä haluat“
+* _what, interrogative adverb “mitä haluat”_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
 
 
 ###  mitä₂
 
-that, relative FIXME
+* _that, relative FIXME_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
 
 
 ###  mitä₃
 
-than, as sub-ordinating conjuction “aikaisemmin mitä ajattelin“ used like "kuin", maybe also paired conjunction sitä-mitä?
+* _than, as sub-ordinating conjuction “aikaisemmin mitä ajattelin” used like "kuin", maybe also paired conjunction sitä-mitä?_
 * UPOS:  SCONJ
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### mitä wordforms
+
+mitä
+mitähänkään
+mitähänkö
+mitähänpä
+mitähän
+mitäkinhän
+mitäkinkään
+mitäkinkö
+mitäkinpä
+mitäkin
+mitäkähän
+mitäkäänhän
+mitäkäänkin
+mitäkäänkö
+mitäkäänpä
+mitäkään
+mitäkäs
+mitäkäpähän
+mitäkäpäs
+mitäkäpä
+mitäkä
+mitäköhän
+mitäkökin
+mitäkökään
+mitäkös
+mitäköpä
+mitäkö
+mitäs
+mitäpähän
+mitäpäkin
+mitäpäkään
+mitäpäkö
+mitäpäs
+mitäpä
 

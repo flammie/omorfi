@@ -5,7 +5,12 @@ lexeme: kumminkin
 
 ###  kumminkin₁
 
-usually seen as adverb (however, affirmative), but can be analysed as a form of *kumpi* (which)
+* _usually seen as adverb (however, affirmative), but can be analysed as a form of *kumpi* (which)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### kumminkin wordforms
+
+kumminkin
 

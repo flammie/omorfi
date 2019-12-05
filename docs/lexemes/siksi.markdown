@@ -5,14 +5,18 @@ lexeme: siksi
 
 ###  siksi₁
 
-REMOVED, in lack of adpositional evidence
+* _REMOVED, in lack of adpositional evidence_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
 
 
 ###  siksi₂
 
-thus, therefore, that's why, notably also translative of *se* (it)
+* _thus, therefore, that's why, notably also translative of *se* (it)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### siksi wordforms
+
 

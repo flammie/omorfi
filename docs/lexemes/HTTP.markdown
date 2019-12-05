@@ -5,7 +5,15 @@ lexeme: HTTP
 
 ###  HTTP₁
 
-Hyper-Text Transfer Protocol
+* _Hyper-Text Transfer Protocol_
 * UPOS:  NOUN
-* Origin:  omorfi|joukahainen
+* Origins: omorfi joukahainen 
+
+
+### HTTP wordforms
+
+HTTP-
+HTTP‐
+HTTP‑
+HTTP
 

@@ -5,7 +5,15 @@ lexeme: PPI
 
 ###  PPI₁
 
-Points Per Inch
+* _Points Per Inch_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### PPI wordforms
+
+PPI-
+PPI‐
+PPI‑
+PPI
 

@@ -5,15 +5,61 @@ lexeme: vallassa
 
 ###  vallassa₁
 
-in rule, “täällä on vallassa kuningas“
+* _in rule, “täällä on vallassa kuningas“_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+###  vallassa₁
+
+* _in rule, “täällä on vallassa kuningas”_
+* UPOS:  ADV
+* Origins: 
 
 
 ###  vallassa₂
 
-possessed by smth., genitive complement “pahan hengen vallassa“
+* _possessed by smth., genitive complement “pahan hengen vallassa“_
 * UPOS:  ADP
-* Origin:  omorfi
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
+
+
+###  vallassa₂
+
+* _possessed by smth., genitive complement “pahan hengen vallassa”_
+* UPOS:  ADP
+* Origins: omorfi 
+* AdpType:  POSTPOSITION
+
+
+### vallassa wordforms
+
+vallassa
+vallassahanko
+vallassahankaan
+vallassahanpa
+vallassahan
+vallassakohan
+vallassakokin
+vallassakokaan
+vallassakos
+vallassakopa
+vallassako
+vallassakinhan
+vallassakinko
+vallassakinkaan
+vallassakinpa
+vallassakin
+vallassakaanhan
+vallassakaanko
+vallassakaankin
+vallassakaanpa
+vallassakaan
+vallassapahan
+vallassapako
+vallassapakin
+vallassapakaan
+vallassapas
+vallassapa
 

@@ -5,8 +5,16 @@ lexeme: oyj
 
 ###  oyj₁
 
-Julkinen Osake-Yhtiö
+* _Julkinen Osake-Yhtiö_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
 * Semantic tags:  ORG
+
+
+### oyj wordforms
+
+oyj-
+oyj‐
+oyj‑
+oyj
 

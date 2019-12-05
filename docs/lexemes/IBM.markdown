@@ -5,8 +5,16 @@ lexeme: IBM
 
 ###  IBM₁
 
-International Business Machines
+* _International Business Machines_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### IBM wordforms
+
+IBM-
+IBM‐
+IBM‑
+IBM
 

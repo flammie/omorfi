@@ -5,7 +5,11 @@ lexeme: CD-RW
 
 ###  CD-RW₁
 
-Compact Disc Read-Write
+* _Compact Disc Read-Write_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### CD-RW wordforms
+
 

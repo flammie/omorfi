@@ -5,8 +5,16 @@ lexeme: BMW
 
 ###  BMW₁
 
-Bayerische Motor W
+* _Bayerische Motor Werkschaft_
 * UPOS:  PROPN
-* Origin:  omorfi
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### BMW wordforms
+
+BMW-
+BMW‐
+BMW‑
+BMW
 

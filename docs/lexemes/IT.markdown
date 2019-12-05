@@ -5,7 +5,15 @@ lexeme: IT
 
 ###  IT₁
 
-Informaatio-Teknologia
+* _Informaatio-Teknologia_
 * UPOS:  NOUN
-* Origin:  kotus|joukahainen
+* Origins: joukahainen 
+
+
+### IT wordforms
+
+IT-
+IT‐
+IT‑
+IT
 

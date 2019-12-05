@@ -5,7 +5,15 @@ lexeme: DJ
 
 ###  DJ₁
 
-Disc Jockey
+* _Disc Jockey_
 * UPOS:  NOUN
-* Origin:  omorfi
+* Origins: omorfi 
+
+
+### DJ wordforms
+
+DJ-
+DJ‐
+DJ‑
+DJ
 

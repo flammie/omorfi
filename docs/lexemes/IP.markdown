@@ -5,7 +5,15 @@ lexeme: IP
 
 ###  IP₁
 
-Internet Protocol
+* _Internet Protocol_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### IP wordforms
+
+IP-
+IP‐
+IP‑
+IP
 

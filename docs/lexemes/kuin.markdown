@@ -5,14 +5,33 @@ lexeme: kuin
 
 ###  kuin₁
 
-as ... as, sub-ordinating conj, comparative particle, “niin kauan kuin“, "parempi kuin"
+* _as ... as, sub-ordinating conj, comparative particle, “niin kauan kuin“, "parempi kuin"_
 * UPOS:  SCONJ
-* Origin:  kotus|joukahainen
+* Origins: joukahainen 
+
+
+###  kuin₁
+
+* _as ... as, sub-ordinating conj, comparative particle, “niin kauan kuin”, "parempi kuin"_
+* UPOS:  SCONJ
+* Origins: joukahainen 
 
 
 ###  kuin₄
 
-both ... and, paired with niin, co-ordinating conj, “niin kissoja kuin koiriakin“
+* _both ... and, paired with niin, co-ordinating conj, “niin kissoja kuin koiriakin“_
 * UPOS:  CCONJ
-* Origin:  kotus
+* Origins: 
+
+
+###  kuin₄
+
+* _both ... and, paired with niin, co-ordinating conj, “niin kissoja kuin koiriakin”_
+* UPOS:  CCONJ
+* Origins: 
+
+
+### kuin wordforms
+
+kuin
 

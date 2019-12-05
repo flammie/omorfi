@@ -5,7 +5,15 @@ lexeme: PR
 
 ###  PR₁
 
-Public Relations
+* _Public Relations_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### PR wordforms
+
+PR-
+PR‐
+PR‑
+PR
 

@@ -5,7 +5,15 @@ lexeme: HIV
 
 ###  HIV₁
 
-Human Immunodeficiency Virus
+* _Human Immunodeficiency Virus_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### HIV wordforms
+
+HIV-
+HIV‐
+HIV‑
+HIV
 

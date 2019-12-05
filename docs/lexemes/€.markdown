@@ -5,8 +5,16 @@ lexeme: €
 
 ###  €₁
 
-euro
+* _euro_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
 * Semantic tags:  CURRENCY
+
+
+### € wordforms
+
+€-
+€‐
+€‑
+€
 

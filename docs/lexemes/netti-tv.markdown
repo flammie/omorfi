@@ -5,7 +5,11 @@ lexeme: netti-tv
 
 ###  netti-tv₁
 
-Tele-visio
+* _net Tele-visio_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### netti-tv wordforms
+
 

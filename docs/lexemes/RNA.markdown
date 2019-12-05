@@ -5,7 +5,15 @@ lexeme: RNA
 
 ###  RNA₁
 
-Ribonucleic Acid
+* _Ribonucleic Acid_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### RNA wordforms
+
+RNA-
+RNA‐
+RNA‑
+RNA
 

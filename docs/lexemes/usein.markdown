@@ -5,7 +5,38 @@ lexeme: usein
 
 ###  usein₁
 
-usually seen as adverb (often), but can be analysed as a form of *usea* (many)
+* _usually seen as adverb (often), but can be analysed as a form of *usea* (many)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### usein wordforms
+
+usein
+useinhanko
+useinhankaan
+useinhanpa
+useinhan
+useinkohan
+useinkokin
+useinkokaan
+useinkos
+useinkopa
+useinko
+useinkinhan
+useinkinko
+useinkinkaan
+useinkinpa
+useinkin
+useinkaanhan
+useinkaanko
+useinkaankin
+useinkaanpa
+useinkaan
+useinpahan
+useinpako
+useinpakin
+useinpakaan
+useinpas
+useinpa
 

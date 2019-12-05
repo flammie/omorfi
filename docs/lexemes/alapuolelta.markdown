@@ -5,16 +5,225 @@ lexeme: alapuolelta
 
 ###  alapuolelta₁
 
-from under, as adposition, genitive complement or possessive, “laiturin alapuolelta“
+* _from under, as adposition, genitive complement or possessive, “laiturin alapuolelta“_
 * UPOS:  ADP
-* Origin:  omorfi++
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
 
 
 ###  alapuolelta₁
 
-under, as adposition, genitive complement or possessive, “laiturin alapuolelta“
+* _from under, as adposition, genitive complement or possessive, “laiturin alapuolelta”_
 * UPOS:  ADP
-* Origin:  omorfi++
+* Origins: omorfi 
 * AdpType:  POSTPOSITION
+
+
+###  alapuolelta₁
+
+* _under, as adposition, genitive complement or possessive, “laiturin alapuolelta“_
+* UPOS:  ADP
+* Origins: omorfi 
+* AdpType:  POSTPOSITION
+
+
+###  alapuolelta₁
+
+* _under, as adposition, genitive complement or possessive, “laiturin alapuolelta”_
+* UPOS:  ADP
+* Origins: omorfi 
+* AdpType:  POSTPOSITION
+
+
+### alapuolelta wordforms
+
+alapuolelta
+alapuoleltahanko
+alapuoleltahankaan
+alapuoleltahanpa
+alapuoleltahan
+alapuoleltamme
+alapuoleltammehanko
+alapuoleltammehankaan
+alapuoleltammehanpa
+alapuoleltammehan
+alapuoleltammekohan
+alapuoleltammekokin
+alapuoleltammekokaan
+alapuoleltammekos
+alapuoleltammekopa
+alapuoleltammeko
+alapuoleltammekinhan
+alapuoleltammekinko
+alapuoleltammekinkaan
+alapuoleltammekinpa
+alapuoleltammekin
+alapuoleltammekaanhan
+alapuoleltammekaanko
+alapuoleltammekaankin
+alapuoleltammekaanpa
+alapuoleltammekaan
+alapuoleltammepahan
+alapuoleltammepako
+alapuoleltammepakin
+alapuoleltammepakaan
+alapuoleltammepas
+alapuoleltammepa
+alapuoleltakohan
+alapuoleltakokin
+alapuoleltakokaan
+alapuoleltakos
+alapuoleltakopa
+alapuoleltako
+alapuoleltakinhan
+alapuoleltakinko
+alapuoleltakinkaan
+alapuoleltakinpa
+alapuoleltakin
+alapuoleltakaanhan
+alapuoleltakaanko
+alapuoleltakaankin
+alapuoleltakaanpa
+alapuoleltakaan
+alapuoleltasi
+alapuoleltasihanko
+alapuoleltasihankaan
+alapuoleltasihanpa
+alapuoleltasihan
+alapuoleltasikohan
+alapuoleltasikokin
+alapuoleltasikokaan
+alapuoleltasikos
+alapuoleltasikopa
+alapuoleltasiko
+alapuoleltasikinhan
+alapuoleltasikinko
+alapuoleltasikinkaan
+alapuoleltasikinpa
+alapuoleltasikin
+alapuoleltasikaanhan
+alapuoleltasikaanko
+alapuoleltasikaankin
+alapuoleltasikaanpa
+alapuoleltasikaan
+alapuoleltasipahan
+alapuoleltasipako
+alapuoleltasipakin
+alapuoleltasipakaan
+alapuoleltasipas
+alapuoleltasipa
+alapuoleltani
+alapuoleltanihanko
+alapuoleltanihankaan
+alapuoleltanihanpa
+alapuoleltanihan
+alapuoleltanikohan
+alapuoleltanikokin
+alapuoleltanikokaan
+alapuoleltanikos
+alapuoleltanikopa
+alapuoleltaniko
+alapuoleltanikinhan
+alapuoleltanikinko
+alapuoleltanikinkaan
+alapuoleltanikinpa
+alapuoleltanikin
+alapuoleltanikaanhan
+alapuoleltanikaanko
+alapuoleltanikaankin
+alapuoleltanikaanpa
+alapuoleltanikaan
+alapuoleltanipahan
+alapuoleltanipako
+alapuoleltanipakin
+alapuoleltanipakaan
+alapuoleltanipas
+alapuoleltanipa
+alapuoleltansa
+alapuoleltansahanko
+alapuoleltansahankaan
+alapuoleltansahanpa
+alapuoleltansahan
+alapuoleltansakohan
+alapuoleltansakokin
+alapuoleltansakokaan
+alapuoleltansakos
+alapuoleltansakopa
+alapuoleltansako
+alapuoleltansakinhan
+alapuoleltansakinko
+alapuoleltansakinkaan
+alapuoleltansakinpa
+alapuoleltansakin
+alapuoleltansakaanhan
+alapuoleltansakaanko
+alapuoleltansakaankin
+alapuoleltansakaanpa
+alapuoleltansakaan
+alapuoleltansapahan
+alapuoleltansapako
+alapuoleltansapakin
+alapuoleltansapakaan
+alapuoleltansapas
+alapuoleltansapa
+alapuoleltanne
+alapuoleltannehanko
+alapuoleltannehankaan
+alapuoleltannehanpa
+alapuoleltannehan
+alapuoleltannekohan
+alapuoleltannekokin
+alapuoleltannekokaan
+alapuoleltannekos
+alapuoleltannekopa
+alapuoleltanneko
+alapuoleltannekinhan
+alapuoleltannekinko
+alapuoleltannekinkaan
+alapuoleltannekinpa
+alapuoleltannekin
+alapuoleltannekaanhan
+alapuoleltannekaanko
+alapuoleltannekaankin
+alapuoleltannekaanpa
+alapuoleltannekaan
+alapuoleltannepahan
+alapuoleltannepako
+alapuoleltannepakin
+alapuoleltannepakaan
+alapuoleltannepas
+alapuoleltannepa
+alapuoleltapahan
+alapuoleltapako
+alapuoleltapakin
+alapuoleltapakaan
+alapuoleltapas
+alapuoleltapa
+alapuoleltaan
+alapuoleltaanhanko
+alapuoleltaanhankaan
+alapuoleltaanhanpa
+alapuoleltaanhan
+alapuoleltaankohan
+alapuoleltaankokin
+alapuoleltaankokaan
+alapuoleltaankos
+alapuoleltaankopa
+alapuoleltaanko
+alapuoleltaankinhan
+alapuoleltaankinko
+alapuoleltaankinkaan
+alapuoleltaankinpa
+alapuoleltaankin
+alapuoleltaankaanhan
+alapuoleltaankaanko
+alapuoleltaankaankin
+alapuoleltaankaanpa
+alapuoleltaankaan
+alapuoleltaanpahan
+alapuoleltaanpako
+alapuoleltaanpakin
+alapuoleltaanpakaan
+alapuoleltaanpas
+alapuoleltaanpa
 

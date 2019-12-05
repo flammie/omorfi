@@ -5,14 +5,26 @@ lexeme: jotta
 
 ###  jotta₁
 
-so that, in order to, as sub-ordinating conjunction, “jotta pystyn valmistumaan“,
+* _so that, in order to, as sub-ordinating conjunction, “jotta pystyn valmistumaan“,_
 * UPOS:  SCONJ
-* Origin:  kotus|joukahainen
+* Origins: joukahainen 
+
+
+###  jotta₁
+
+* _so that, in order to, as sub-ordinating conjunction, “jotta pystyn valmistumaan”,_
+* UPOS:  SCONJ
+* Origins: joukahainen 
 
 
 ###  jotta₂
 
-yota, noun prefix SI unit, rare
+* _yota, noun prefix SI unit, rare_
 * UPOS:  NOUN
-* Origin:  kotus
+* Origins: 
+
+
+### jotta wordforms
+
+jotta
 

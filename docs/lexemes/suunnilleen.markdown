@@ -5,14 +5,18 @@ lexeme: suunnilleen
 
 ###  suunnilleen₁
 
-adverb?
+* _adverb?_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
 
 
 ###  suunnilleen₂
 
-usually seen as adverb (approximately), but overlaps allative of the noun *suunta* (direction)
+* _usually seen as adverb (approximately), but overlaps allative of the noun *suunta* (direction)_
 * UPOS:  ADV
-* Origin:  finer
+* Origins: finer 
+
+
+### suunnilleen wordforms
+
 

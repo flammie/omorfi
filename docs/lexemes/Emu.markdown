@@ -5,9 +5,17 @@ lexeme: Emu
 
 ###  Emu₁
 
-This rare proper noun overlaps more common *Emu* (FIXME)
+* _This rare proper noun overlaps more common *Emu* (emu)_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
 * Blacklisted:  PROPN-BLOCKING
+
+
+### Emu wordforms
+
+Emu-
+Emu‐
+Emu‑
+Emu
 

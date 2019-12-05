@@ -5,7 +5,38 @@ lexeme: läpeensä
 
 ###  läpeensä₁
 
-usually seen as adverb (thoroughly), but can be analysed as a form of *läpi* (hole)
+* _usually seen as adverb (thoroughly), but can be analysed as a form of *läpi* (hole)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### läpeensä wordforms
+
+läpeensä
+läpeensähänkään
+läpeensähänkö
+läpeensähänpä
+läpeensähän
+läpeensäkinhän
+läpeensäkinkään
+läpeensäkinkö
+läpeensäkinpä
+läpeensäkin
+läpeensäkäänhän
+läpeensäkäänkin
+läpeensäkäänkö
+läpeensäkäänpä
+läpeensäkään
+läpeensäköhän
+läpeensäkökin
+läpeensäkökään
+läpeensäkös
+läpeensäköpä
+läpeensäkö
+läpeensäpähän
+läpeensäpäkin
+läpeensäpäkään
+läpeensäpäkö
+läpeensäpäs
+läpeensäpä
 

@@ -5,7 +5,38 @@ lexeme: suunnitteilla
 
 ###  suunnitteilla₁
 
-usually seen as adverb (planned), but can be analysed as adessive of the noun *suunnite* (FIXME)
+* _usually seen as adverb (planned), but can be analysed as adessive of the noun *suunnite* (FIXME)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### suunnitteilla wordforms
+
+suunnitteilla
+suunnitteillahanko
+suunnitteillahankaan
+suunnitteillahanpa
+suunnitteillahan
+suunnitteillakohan
+suunnitteillakokin
+suunnitteillakokaan
+suunnitteillakos
+suunnitteillakopa
+suunnitteillako
+suunnitteillakinhan
+suunnitteillakinko
+suunnitteillakinkaan
+suunnitteillakinpa
+suunnitteillakin
+suunnitteillakaanhan
+suunnitteillakaanko
+suunnitteillakaankin
+suunnitteillakaanpa
+suunnitteillakaan
+suunnitteillapahan
+suunnitteillapako
+suunnitteillapakin
+suunnitteillapakaan
+suunnitteillapas
+suunnitteillapa
 

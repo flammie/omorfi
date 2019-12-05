@@ -5,7 +5,15 @@ lexeme: TCP
 
 ###  TCP₁
 
-Transmission Control Protocol
+* _Transmission Control Protocol_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### TCP wordforms
+
+TCP-
+TCP‐
+TCP‑
+TCP
 

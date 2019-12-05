@@ -5,8 +5,16 @@ lexeme: WWF
 
 ###  WWF₁
 
-World Wildlife Foundation
+* _World Wildlife Foundation_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### WWF wordforms
+
+WWF-
+WWF‐
+WWF‑
+WWF
 

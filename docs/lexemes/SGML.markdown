@@ -5,7 +5,15 @@ lexeme: SGML
 
 ###  SGML₁
 
-Standardised General Markup Language
+* _Standardised General Markup Language_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### SGML wordforms
+
+SGML-
+SGML‐
+SGML‑
+SGML
 

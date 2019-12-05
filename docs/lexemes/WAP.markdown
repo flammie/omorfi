@@ -5,7 +5,15 @@ lexeme: WAP
 
 ###  WAP₁
 
-Wireles Application Protocol
+* _Wireles Application Protocol_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### WAP wordforms
+
+WAP-
+WAP‐
+WAP‑
+WAP
 

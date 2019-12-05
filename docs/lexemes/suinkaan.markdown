@@ -5,7 +5,12 @@ lexeme: suinkaan
 
 ###  suinkaan₁
 
-usually seen as adverb (at all, negative), but overlaps instructive of the noun *suu* (mouth)
+* _usually seen as adverb (at all, negative), but overlaps instructive of the noun *suu* (mouth)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### suinkaan wordforms
+
+suinkaan
 

@@ -5,7 +5,12 @@ lexeme: suinkin
 
 ###  suinkin₁
 
-usually seen as adverb (at all, affirmative), but overlaps instructive of the noun *suu* (mouth)
+* _usually seen as adverb (at all, affirmative), but overlaps instructive of the noun *suu* (mouth)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### suinkin wordforms
+
+suinkin
 

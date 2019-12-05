@@ -5,8 +5,16 @@ lexeme: CIA
 
 ###  CIA₁
 
-Central Intelligence Agency
+* _Central Intelligence Agency_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### CIA wordforms
+
+CIA-
+CIA‐
+CIA‑
+CIA
 

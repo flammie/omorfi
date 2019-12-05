@@ -5,7 +5,15 @@ lexeme: atk
 
 ###  atk₁
 
-automaattinen tekstinkäsittely
+* _automaattinen tekstinkäsittely_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### atk wordforms
+
+atk-
+atk‐
+atk‑
+atk
 

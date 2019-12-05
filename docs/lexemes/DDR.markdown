@@ -5,8 +5,16 @@ lexeme: DDR
 
 ###  DDR₁
 
-Deutsches Democratische Republic
+* _Deutsches Democratische Republic_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  GEO
+
+
+### DDR wordforms
+
+DDR-
+DDR‐
+DDR‑
+DDR
 

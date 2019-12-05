@@ -3,9 +3,20 @@ layout: lexeme
 lexeme: !
 ---
 
+###  !₁
+
+* _exclamation mark_
+* UPOS:  PUNCT
+* Origins: omorfi 
+
+
 ###  !₂
 
-exclamation mark
+* _exclamation mark_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### EXCL wordforms
+
 

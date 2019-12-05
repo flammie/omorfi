@@ -5,7 +5,12 @@ lexeme: kaikkiaan
 
 ###  kaikkiaan₁
 
-usually seen as adverb (all in all), but can be analysed as a form of *kaikki* (all)
+* _usually seen as adverb (all in all), but can be analysed as a form of *kaikki* (all)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### kaikkiaan wordforms
+
+kaikkiaan
 

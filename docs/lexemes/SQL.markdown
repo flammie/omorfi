@@ -5,7 +5,15 @@ lexeme: SQL
 
 ###  SQL₁
 
-Structured Query Language
+* _Structured Query Language_
 * UPOS:  NOUN
-* Origin:  omorfi|joukahainen
+* Origins: omorfi joukahainen 
+
+
+### SQL wordforms
+
+SQL-
+SQL‐
+SQL‑
+SQL
 

@@ -5,7 +5,19 @@ lexeme: sillä
 
 ###  sillä₁
 
-because, subordinating conj, “sillä tiedän paremmin“ (NB ambig with many se adessives)
+* _because, subordinating conj, “sillä tiedän paremmin“ (NB ambig with many se adessives)_
 * UPOS:  SCONJ
-* Origin:  kotus
+* Origins: 
+
+
+###  sillä₁
+
+* _because, subordinating conj, “sillä tiedän paremmin” (NB ambig with many se adessives)_
+* UPOS:  SCONJ
+* Origins: 
+
+
+### sillä wordforms
+
+sillä
 

@@ -5,14 +5,18 @@ lexeme: mutta
 
 ###  mutta₁
 
-REMOVED non CC version, provide examples to get it back
+* _REMOVED non CC version, provide examples to get it back_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
 
 
 ###  mutta₂
 
-co-ordinating conjunction, “ei hyvä, mutta ok“
+* _co-ordinating conjunction, “ei hyvä, mutta ok”_
 * UPOS:  CCONJ
-* Origin:  kotus
+* Origins: 
+
+
+### mutta wordforms
+
 

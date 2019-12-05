@@ -5,7 +5,11 @@ lexeme: internet-tv
 
 ###  internet-tv₁
 
-Tele-Visio
+* _Tele-Visio_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### internet-tv wordforms
+
 

@@ -5,7 +5,11 @@ lexeme: pien-pc
 
 ###  pien-pc₁
 
-Personal Computer
+* _little Personal Computer_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### pien-pc wordforms
+
 

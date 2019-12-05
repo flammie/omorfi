@@ -5,14 +5,19 @@ lexeme: ”
 
 ###  ”₁
 
-“opening” double quotation in 9-shape, common and recommended
+* _“opening” double quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
 
 
 ###  ”₂
 
-“closing” double quotation in 9-shape, common and recommended
+* _“closing” double quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ” wordforms
+
+”
 

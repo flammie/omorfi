@@ -5,8 +5,16 @@ lexeme: NPC
 
 ###  NPC₁
 
-Non-Player Character
+* _Non-Player Character_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  MISC
+
+
+### NPC wordforms
+
+NPC-
+NPC‐
+NPC‑
+NPC
 

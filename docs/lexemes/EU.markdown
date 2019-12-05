@@ -5,8 +5,16 @@ lexeme: EU
 
 ###  EU₂
 
-Euroopan Unioni
+* _Euroopan Unioni_
 * UPOS:  PROPN
-* Origin:  omorfi++
+* Origins: omorfi 
 * Possible NER class:  ORG
+
+
+### EU wordforms
+
+EU-
+EU‐
+EU‑
+EU
 

@@ -5,7 +5,15 @@ lexeme: DPI
 
 ###  DPI₁
 
-Dots Per Inch
+* _Dots Per Inch_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### DPI wordforms
+
+DPI-
+DPI‐
+DPI‑
+DPI
 

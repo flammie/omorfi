@@ -5,7 +5,15 @@ lexeme: ‰
 
 ###  ‰₁
 
-permille
+* _permille_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ‰ wordforms
+
+‰-
+‰‐
+‰‑
+‰
 

@@ -5,7 +5,16 @@ lexeme: ³
 
 ###  ³₁
 
-superscript three
+* _superscript three_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ³ wordforms
+
+³
+³-
+³‐
+³‑
+³
 

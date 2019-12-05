@@ -10,3 +10,11 @@ Neuvosto-Liitto
 * Origin:  unk
 * Possible NER class:  GEO
 
+
+### NL wordforms
+
+NL-
+NL‐
+NL‑
+NL
+

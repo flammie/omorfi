@@ -5,7 +5,12 @@ lexeme: +
 
 ###  +₁
 
-plus
+* _plus_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### + wordforms
+
+]
 

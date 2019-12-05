@@ -5,7 +5,15 @@ lexeme: dna
 
 ###  dna₁
 
-deoxyribonucleic acid
+* _deoxyribonucleic acid_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### dna wordforms
+
+dna-
+dna‐
+dna‑
+dna
 

@@ -5,7 +5,15 @@ lexeme: DVD
 
 ###  DVD₁
 
-Digital Versatile Disc
+* _Digital Versatile Disc_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### DVD wordforms
+
+DVD-
+DVD‐
+DVD‑
+DVD
 

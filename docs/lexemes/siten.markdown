@@ -5,14 +5,18 @@ lexeme: siten
 
 ###  siten₁
 
-REMOVED, in lack of adpositional evidence
+* _REMOVED, in lack of adpositional evidence_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
 
 
 ###  siten₂
 
-so, thusly
+* _so, thusly_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### siten wordforms
+
 

@@ -5,7 +5,11 @@ lexeme: ,
 
 ###  ,₁
 
-comma
+* _comma_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### COMMA wordforms
+
 

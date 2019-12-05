@@ -5,7 +5,12 @@ lexeme: kunnes
 
 ###  kunnes₂
 
-until, sub-ordinating conjunction, “kunnes olet valmis“
+* _until, sub-ordinating conjunction, “kunnes olet valmis”_
 * UPOS:  SCONJ
-* Origin:  kotus|omorfi++
+* Origins: omorfi 
+
+
+### kunnes wordforms
+
+kunnes
 

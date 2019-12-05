@@ -5,7 +5,12 @@ lexeme: ˗
 
 ###  ˗₁
 
-minus sign, rare
+* _minus sign, rare_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ˗ wordforms
+
+˗
 

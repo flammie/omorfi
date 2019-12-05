@@ -5,8 +5,16 @@ lexeme: HIFK
 
 ###  HIFK₁
 
-Helsingfors
+* _Helsingfors International Football Klubben_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
+
+
+### HIFK wordforms
+
+HIFK-
+HIFK‐
+HIFK‑
+HIFK
 

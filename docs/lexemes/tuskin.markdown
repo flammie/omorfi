@@ -5,7 +5,12 @@ lexeme: tuskin
 
 ###  tuskin₁
 
-usually seen as adverb (hardly), but can be analysed as instructive of the noun *tuska* (pain)
+* _usually seen as adverb (hardly), but can be analysed as instructive of the noun *tuska* (pain)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### tuskin wordforms
+
+tuskin
 

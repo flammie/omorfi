@@ -5,7 +5,11 @@ lexeme: {
 
 ###  {₁
 
-left curly bracket
+* _left curly bracket_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### LCURL wordforms
+
 

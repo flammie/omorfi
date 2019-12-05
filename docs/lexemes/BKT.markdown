@@ -5,7 +5,15 @@ lexeme: BKT
 
 ###  BKT₁
 
-Brutto-Kansan-Tuote
+* _Brutto-Kansan-Tuote_
 * UPOS:  NOUN
-* Origin:  joukahainen
+* Origins: joukahainen 
+
+
+### BKT wordforms
+
+BKT-
+BKT‐
+BKT‑
+BKT
 

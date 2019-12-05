@@ -5,7 +5,11 @@ lexeme: TCP/IP
 
 ###  TCP/IP₁
 
-Transmission Control Protocol / Internet Protocol
+* _Transmission Control Protocol / Internet Protocol_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### TCPSLASHIP wordforms
+
 

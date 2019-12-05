@@ -5,7 +5,38 @@ lexeme: tosiaan
 
 ###  tosiaan₁
 
-usually seen as adverb (real), but can be analysed as a form of *tosi* (true, truth)
+* _usually seen as adverb (real), but can be analysed as a form of *tosi* (true, truth)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### tosiaan wordforms
+
+tosiaan
+tosiaanhanko
+tosiaanhankaan
+tosiaanhanpa
+tosiaanhan
+tosiaankohan
+tosiaankokin
+tosiaankokaan
+tosiaankos
+tosiaankopa
+tosiaanko
+tosiaankinhan
+tosiaankinko
+tosiaankinkaan
+tosiaankinpa
+tosiaankin
+tosiaankaanhan
+tosiaankaanko
+tosiaankaankin
+tosiaankaanpa
+tosiaankaan
+tosiaanpahan
+tosiaanpako
+tosiaanpakin
+tosiaanpakaan
+tosiaanpas
+tosiaanpa
 

@@ -5,7 +5,15 @@ lexeme: API
 
 ###  API₁
 
-Application Programming Interface
+* _Application Programming Interface_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### API wordforms
+
+API-
+API‐
+API‑
+API
 

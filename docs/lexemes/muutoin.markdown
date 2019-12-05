@@ -5,7 +5,11 @@ lexeme: muutoin
 
 ###  muutoin₂
 
-usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move)
+* _usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move)_
 * UPOS:  ADV
-* Origin:  kotus
+* Origins: 
+
+
+### muutoin wordforms
+
 

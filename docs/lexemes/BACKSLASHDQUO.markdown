@@ -5,14 +5,18 @@ lexeme: \"
 
 ###  \"₁
 
-“opening” ASCII double quotation mark, still most common double quotation, but not recommended
+* _“opening” ASCII double quotation mark, still most common double quotation, but not recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
 
 
 ###  \"₂
 
-“closing” ASCII double quotation mark, still most common double quotation, but not recommended
+* _“closing” ASCII double quotation mark, still most common double quotation, but not recommended_
 * UPOS:  PUNCT
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### BACKSLASHDQUO wordforms
+
 

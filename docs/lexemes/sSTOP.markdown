@@ -5,7 +5,11 @@ lexeme: s.
 
 ###  s.₁
 
-sivu, “p.“ or page
+* _sivu, “p.” or page_
 * UPOS:  ADV
-* Origin:  omorfi++|joukahainen
+* Origins: omorfi joukahainen 
+
+
+### sSTOP wordforms
+
 

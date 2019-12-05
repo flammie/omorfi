@@ -5,7 +5,11 @@ lexeme: pelkästään
 
 ###  pelkästään₁
 
-usually seen as adverb (only), but can be analysed as a form of *pelkkä* (sole)
+* _usually seen as adverb (only), but can be analysed as a form of *pelkkä* (sole)_
 * UPOS:  X
-* Origin:  finer
+* Origins: finer 
+
+
+### pelkästään wordforms
+
 

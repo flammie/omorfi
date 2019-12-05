@@ -5,9 +5,17 @@ lexeme: MTV3
 
 ###  MTV3₁
 
-Mainos-Tele-Visio
+* _Mainos-Tele-Visio_
 * UPOS:  PROPN
-* Origin:  unk
+* Origins: 
 * Possible NER class:  ORG
 * Semantic tags:  MEDIA
+
+
+### MTV3 wordforms
+
+MTV3-
+MTV3‐
+MTV3‑
+MTV3
 

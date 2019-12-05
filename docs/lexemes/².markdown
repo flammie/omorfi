@@ -5,7 +5,16 @@ lexeme: ²
 
 ###  ²₁
 
-superscript two
+* _superscript two_
 * UPOS:  SYM
-* Origin:  omorfi++
+* Origins: omorfi 
+
+
+### ² wordforms
+
+²
+²-
+²‐
+²‑
+²
 

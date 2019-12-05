@@ -5,7 +5,38 @@ lexeme: vinossa
 
 ###  vinossa₁
 
-usually seen as adverb (tilted), but can be analysed as inessive of the adjective *vino* (diagonal)
+* _usually seen as adverb (tilted), but can be analysed as inessive of the adjective *vino* (diagonal)_
 * UPOS:  ADV
-* Origin:  kotus|fiwikt
+* Origins: 
+
+
+### vinossa wordforms
+
+vinossa
+vinossahanko
+vinossahankaan
+vinossahanpa
+vinossahan
+vinossakohan
+vinossakokin
+vinossakokaan
+vinossakos
+vinossakopa
+vinossako
+vinossakinhan
+vinossakinko
+vinossakinkaan
+vinossakinpa
+vinossakin
+vinossakaanhan
+vinossakaanko
+vinossakaankin
+vinossakaanpa
+vinossakaan
+vinossapahan
+vinossapako
+vinossapakin
+vinossapakaan
+vinossapas
+vinossapa
 

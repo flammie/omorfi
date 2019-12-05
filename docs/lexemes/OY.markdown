@@ -5,7 +5,15 @@ lexeme: OY
 
 ###  OY₁
 
-Osake-Yhtiö
+* _Osake-Yhtiö_
 * UPOS:  NOUN
-* Origin:  unk
+* Origins: 
+
+
+### OY wordforms
+
+OY-
+OY‐
+OY‑
+OY
 
