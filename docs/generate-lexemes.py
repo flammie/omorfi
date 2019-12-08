@@ -171,13 +171,13 @@ def main():
           file=args.output)
     print("* ☢ for lexemes listed as unlikely for disambiguation purposes",
           file=args.output)
-    print("*", stuff2icon("FIRSTNAME"), "for first name of a person",
+    print("*", stuff2icon("FIRST"), "for first name of a person",
           file=args.output)
     print("*", stuff2icon("MALE"), "for primarily male names",
           file=args.output)
     print("*", stuff2icon("FEMALE"), "for primarily female names",
           file=args.output)
-    print("*", stuff2icon("LASTNAME"), "for surname of a person",
+    print("*", stuff2icon("LAST"), "for surname of a person",
           file=args.output)
     print("*", stuff2icon("GEO"), "for geographic location",
           file=args.output)

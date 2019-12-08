@@ -6,10 +6,10 @@ Lexemes are the word-entries of omorfi, currently we have only documented the on
 
 In attributes column we use following emoji shorthands:
 * ☢ for lexemes listed as unlikely for disambiguation purposes
-* FIRSTNAME for first name of a person
+* 🧑¹ for first name of a person
 * ♂ for primarily male names
 * ♀ for primarily female names
-* LASTNAME for surname of a person
+* 🧑² for surname of a person
 * 🌍 for geographic location
 * ⚐ for a country
 * 💱 for currencies
@@ -64,8 +64,8 @@ We link to all original sources for reference.
 | [³₁](lexemes/³.html) |  superscript three |  |  |
 | [Aallokko₁](lexemes/Aallokko.html) |  This rare proper noun overlaps more common noun *aallokko* (waves) | 🧑²☢ |  |
 | [Aallonharja₁](lexemes/Aallonharja.html) |  This rare proper noun overlaps more common noun *aallonharja* (wavetip) | 🧑²☢ |  |
-| [Aalto₁](lexemes/Aalto.html) |  This rare proper noun overlaps more common noun *aalto* (wave) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Aalto)  |
-| [Aaltonen₁](lexemes/Aaltonen.html) |  This rare proper noun overlaps more common adjective *aaltonen* (wavy) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Aaltonen)  |
+| [Aalto₁](lexemes/Aalto.html) |  This rare proper noun overlaps more common noun *aalto* (wave) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Aalto)  |
+| [Aaltonen₁](lexemes/Aaltonen.html) |  This rare proper noun overlaps more common adjective *aaltonen* (wavy) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Aaltonen)  |
 | [Aamu₁](lexemes/Aamu.html) |  This rare proper noun overlaps more common *aamu* (morning) | 🧑¹☢♀ |  |
 | [Aamunkoitto₁](lexemes/Aamunkoitto.html) |  This rare proper noun overlaps more common *aamunkoitto* (dawn) | 🌍☢ |  |
 | [Aamutähti₁](lexemes/Aamutähti.html) |  This rare proper noun overlaps more common *aamutähti* (morning star) | 🧑²☢ |  |
@@ -73,12 +73,12 @@ We link to all original sources for reference.
 | [Aaria₁](lexemes/Aaria.html) |  This rare proper noun overlaps more common *aaria* (aria) | 🌍☢ |  |
 | [Aarni₁](lexemes/Aarni.html) |  This rare proper noun overlaps more common *aarni* (treasure, loot) | 🧑¹☢♂ |  |
 | [Aarnio₁](lexemes/Aarnio.html) |  This rare proper noun overlaps more common *aarnio* (thicket) | 🌍☢ |  |
-| [Aarre₁](lexemes/Aarre.html) |  This rare proper noun overlaps more common *aarre* (treasure) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Aarre)  |
+| [Aarre₁](lexemes/Aarre.html) |  This rare proper noun overlaps more common *aarre* (treasure) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aarre)  |
 | [Aarrehauta₁](lexemes/Aarrehauta.html) |  This rare proper noun overlaps more common *aarrehauta* (tomb) | 🌍☢ |  |
 | [Aate₁](lexemes/Aate.html) |  This rare proper noun overlaps more common *aate* (idea) | 🧑²☢ |  |
-| [Aatos₁](lexemes/Aatos.html) |  This rare proper noun overlaps more common *aatos* (thought) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Aatos)  |
-| [Aatto₁](lexemes/Aatto.html) |  This rare proper noun overlaps more common *aatto* (eve) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Aatto)  |
-| [Aava₁](lexemes/Aava.html) |  This rare proper noun overlaps more common *aava* (open) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Aava)  |
+| [Aatos₁](lexemes/Aatos.html) |  This rare proper noun overlaps more common *aatos* (thought) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aatos)  |
+| [Aatto₁](lexemes/Aatto.html) |  This rare proper noun overlaps more common *aatto* (eve) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aatto)  |
+| [Aava₁](lexemes/Aava.html) |  This rare proper noun overlaps more common *aava* (open) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Aava)  |
 | [Aave₁](lexemes/Aave.html) |  This rare proper noun overlaps more common *aave* (ghost) | 🧑¹☢ |  |
 | [Aavikko₁](lexemes/Aavikko.html) |  This rare proper noun overlaps more common *aavikko* (desert) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aavikko)  |
 | [ADSL₁](lexemes/ADSL.html) |  Asymmetric Digital Subscriber Line |  |  |
@@ -96,7 +96,7 @@ We link to all original sources for reference.
 | [aikaan₂](lexemes/aikaan.html) |  during (around), adposition with genitive complement, e.g., “sen aikaan” |  |  |
 | [aikana₁](lexemes/aikana.html) |  during (while), adposition with genitive complement, e.g., “sen aikana“ |  |  |
 | [aikana₁](lexemes/aikana.html) |  during (while), adposition with genitive complement, e.g., “sen aikana” |  |  |
-| [Aimo₁](lexemes/Aimo.html) |  This rare proper noun overlaps more common *aimo* (grand) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Aimo)  |
+| [Aimo₁](lexemes/Aimo.html) |  This rare proper noun overlaps more common *aimo* (grand) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aimo)  |
 | [aina₁](lexemes/aina.html) |  REMOVED adposition (send an example sentence if you need it back) |  |  |
 | [aina₂](lexemes/aina.html) |  always, as adverb, “aina mun pitää“ |  |  |
 | [aina₂](lexemes/aina.html) |  always, as adverb, “aina mun pitää” |  |  |
@@ -126,13 +126,13 @@ We link to all original sources for reference.
 | [ajoilta₁](lexemes/ajoilta.html) |  from times of smth as adposition, “ristiretkien ajoilta” |  |  |
 | [Akka₁](lexemes/Akka.html) |  This rare proper noun overlaps more common *Akka* (old lady) | 🌍☢ |  |
 | [Akku₁](lexemes/Akku.html) |  This rare proper noun overlaps more common *Akku* (accumulator) | 🌍☢ |  |
-| [Akseli₁](lexemes/Akseli.html) |  This rare proper noun overlaps more common *Akseli* (axis) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Akseli)  |
+| [Akseli₁](lexemes/Akseli.html) |  This rare proper noun overlaps more common *Akseli* (axis) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Akseli)  |
 | [Ala₁](lexemes/Ala.html) |  This rare proper noun overlaps more common *Ala* (field) | 🌍☢ |  |
 | [Alainen₁](lexemes/Alainen.html) |  This rare proper noun overlaps more common *Alainen* (underling) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Alainen)  |
 | [Alajakso₁](lexemes/Alajakso.html) |  This rare proper noun overlaps more common *Alajakso* (subsequence) | 🌍☢ |  |
 | [Alamaa₁](lexemes/Alamaa.html) |  This rare proper noun overlaps more common *Alamaa* (lowlands) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Alamaa)  |
 | [Alamainen₁](lexemes/Alamainen.html) |  This rare proper noun overlaps more common *Alamainen* (underling) | 🌍☢ |  |
-| [Alamäki₁](lexemes/Alamäki.html) |  This rare proper noun overlaps more common *Alamäki* (downhill) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Alamäki) [enwikt](https://fi.wiktionary.org/wiki/Alamäki)  |
+| [Alamäki₁](lexemes/Alamäki.html) |  This rare proper noun overlaps more common *Alamäki* (downhill) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Alamäki) [enwikt](https://en.wiktionary.org/wiki/Alamäki)  |
 | [alapuolella₁](lexemes/alapuolella.html) |  under, as adposition, genitive complement or possessive, “laiturin alapuolella“ |  |  |
 | [alapuolella₁](lexemes/alapuolella.html) |  under, as adposition, genitive complement or possessive, “laiturin alapuolella” |  |  |
 | [alapuolelle₁](lexemes/alapuolelle.html) |  to under, as adposition, genitive complement or possessive, “laiturin alapuolelle“ |  |  |
@@ -151,7 +151,7 @@ We link to all original sources for reference.
 | [Alasin₁](lexemes/Alasin.html) |  This rare proper noun overlaps more common *Alasin* (anvil) | 🌍☢ |  |
 | [Alava₁](lexemes/Alava.html) |  This rare proper noun overlaps more common *Alava* (low) | 🌍☢ |  |
 | [Alavirta₁](lexemes/Alavirta.html) |  This rare proper noun overlaps more common *Alavirta* (downstream) | 🌍☢ |  |
-| [Ale₁](lexemes/Ale.html) |  This rare proper noun overlaps more common *Ale* (discount) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Ale)  |
+| [Ale₁](lexemes/Ale.html) |  This rare proper noun overlaps more common *Ale* (discount) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Ale)  |
 | [Alfa₁](lexemes/Alfa.html) |  This rare proper noun overlaps more common *Alfa* (alpha) | 🧑¹☢♀ |  |
 | [Alhainen₁](lexemes/Alhainen.html) |  This rare proper noun overlaps more common *Alhainen* (peasant) | 🌍☢ |  |
 | [ali₁](lexemes/ali.html) |  to / through underneath, as adverb, “täytyy mennä ali“ |  |  |
@@ -211,13 +211,13 @@ We link to all original sources for reference.
 | [Apuri₁](lexemes/Apuri.html) |  This rare proper noun overlaps more common *Apuri* (helper) | 🌍☢ |  |
 | [Ara₁](lexemes/Ara.html) |  This rare proper noun overlaps more common *Ara* (FIXME) | 🌍☢ |  |
 | [Arkki₁](lexemes/Arkki.html) |  This rare proper noun overlaps more common *Arkki* (ark) | 🌍☢ |  |
-| [Armas₁](lexemes/Armas.html) |  This rare proper noun overlaps more common *Armas* (dear) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Armas)  |
+| [Armas₁](lexemes/Armas.html) |  This rare proper noun overlaps more common *Armas* (dear) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Armas)  |
 | [Armo₁](lexemes/Armo.html) |  This rare proper noun overlaps more common *Armo* (grace) | 🧑¹☢ |  |
 | [Aro₁](lexemes/Aro.html) |  This rare proper noun overlaps more common *Aro* (grassland) | 🌍☢ |  |
 | [Arpi₁](lexemes/Arpi.html) |  This rare proper noun overlaps more common *Arpi* (scar) | 🌍☢ |  |
 | [Arvanheitto₁](lexemes/Arvanheitto.html) |  This rare proper noun overlaps more common *Arvanheitto* (gamble) | 🌍☢ |  |
 | [Arvio₁](lexemes/Arvio.html) |  This rare proper noun overlaps more common *Arvio* (estimate) | 🌍☢ |  |
-| [Arvo₁](lexemes/Arvo.html) |  This rare proper noun overlaps more common *Arvo* (value) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Arvo)  |
+| [Arvo₁](lexemes/Arvo.html) |  This rare proper noun overlaps more common *Arvo* (value) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Arvo)  |
 | [As₁](lexemes/As.html) |  This proper noun overlaps forms of very common *asia* “thing”, among others | 🌍☢ |  |
 | [Asema₁](lexemes/Asema.html) |  This proper noun overlaps very common *asema* “station”. | 🌍☢ |  |
 | [asemasta₁](lexemes/asemasta.html) |  instead, as adv, ?? |  |  |
@@ -248,11 +248,11 @@ We link to all original sources for reference.
 | [Auki₁](lexemes/Auki.html) |  This rare proper noun overlaps more common *Auki* (open) | 🌍☢ |  |
 | [Aukio₁](lexemes/Aukio.html) |  This rare proper noun overlaps more common *Aukio* (square) | 🌍☢ |  |
 | [Aula₁](lexemes/Aula.html) |  This rare proper noun overlaps more common *Aula* (lobby) | 🌍☢ |  |
-| [Aulis₁](lexemes/Aulis.html) |  This rare proper noun overlaps more common *Aulis* (willing) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Aulis)  |
+| [Aulis₁](lexemes/Aulis.html) |  This rare proper noun overlaps more common *Aulis* (willing) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aulis)  |
 | [Auma₁](lexemes/Auma.html) |  This rare proper noun overlaps more common *Auma* (hip) | 🌍☢ |  |
-| [Aura₁](lexemes/Aura.html) |  This rare proper noun overlaps more common *Aura* (aura, plow) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Aura)  |
+| [Aura₁](lexemes/Aura.html) |  This rare proper noun overlaps more common *Aura* (aura, plow) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Aura)  |
 | [Aurankurki₁](lexemes/Aurankurki.html) |  This rare proper noun overlaps more common *Aurankurki* (plow crane) | 🌍☢ |  |
-| [Aurinko₁](lexemes/Aurinko.html) |  This rare proper noun overlaps more common *Aurinko* (sun) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aurinko) [enwikt](https://fi.wiktionary.org/wiki/Aurinko)  |
+| [Aurinko₁](lexemes/Aurinko.html) |  This rare proper noun overlaps more common *Aurinko* (sun) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aurinko) [enwikt](https://en.wiktionary.org/wiki/Aurinko)  |
 | [Autio₁](lexemes/Autio.html) |  This rare proper noun overlaps more common *Autio* (desert) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Autio)  |
 | [Autiomaa₁](lexemes/Autiomaa.html) |  This rare proper noun overlaps more common *Autiomaa* (desertlands) | 🌍☢ |  |
 | [Avara₁](lexemes/Avara.html) |  This rare proper noun overlaps more common *Avara* (wide open) | 🌍☢ |  |
@@ -268,9 +268,9 @@ We link to all original sources for reference.
 | [BKT₁](lexemes/BKT.html) |  Brutto-Kansan-Tuote |  |  |
 | [BMW₁](lexemes/BMW.html) |  Bayerische Motor Werkschaft | org |  |
 | [Boomi₁](lexemes/Boomi.html) |  This rare proper noun overlaps more common *Boomi* (boom) | org☢ |  |
-| [Burgundi₁](lexemes/Burgundi.html) |  This rare proper noun overlaps more common *Burgundi* (burgundy) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Burgundi) [enwikt](https://fi.wiktionary.org/wiki/Burgundi)  |
+| [Burgundi₁](lexemes/Burgundi.html) |  This rare proper noun overlaps more common *Burgundi* (burgundy) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Burgundi) [enwikt](https://en.wiktionary.org/wiki/Burgundi)  |
 | [cd₁](lexemes/cd.html) |  compact disc |  |  |
-| [CD₁](lexemes/CD.html) |  Compact Disc |  | [enwikt](https://fi.wiktionary.org/wiki/CD)  |
+| [CD₁](lexemes/CD.html) |  Compact Disc |  | [enwikt](https://en.wiktionary.org/wiki/CD)  |
 | [CD-R₁](lexemes/CD-R.html) |  Compact Disc Read-Only |  |  |
 | [CD-RW₁](lexemes/CD-RW.html) |  Compact Disc Read-Write |  |  |
 | [CIA₁](lexemes/CIA.html) |  Central Intelligence Agency | org |  |
@@ -295,12 +295,12 @@ We link to all original sources for reference.
 | [edessä₂](lexemes/edessä.html) |  in front of, as adp, complement is genitive or possessive, “talon edessä” |  |  |
 | [editse₁](lexemes/editse.html) |  via front of, as adp, complement is genitive or possessive, “talon editse“ |  |  |
 | [editse₁](lexemes/editse.html) |  via front of, as adp, complement is genitive or possessive, “talon editse” |  |  |
-| [edus₁](lexemes/edus.html) |  This noun means “frontside“ but overlaps forms of *etu*, *edusta* etc. |  | [enwikt](https://fi.wiktionary.org/wiki/edus)  |
-| [edus₁](lexemes/edus.html) |  This noun means “frontside” but overlaps forms of *etu*, *edusta* etc. |  | [enwikt](https://fi.wiktionary.org/wiki/edus)  |
+| [edus₁](lexemes/edus.html) |  This noun means “frontside“ but overlaps forms of *etu*, *edusta* etc. |  | [enwikt](https://en.wiktionary.org/wiki/edus)  |
+| [edus₁](lexemes/edus.html) |  This noun means “frontside” but overlaps forms of *etu*, *edusta* etc. |  | [enwikt](https://en.wiktionary.org/wiki/edus)  |
 | [EEC₁](lexemes/EEC.html) |  European Economy Council | ⁈ |  |
 | [Ego₁](lexemes/Ego.html) |  This rare proper noun overlaps more common *Ego* (ego) | org☢ |  |
 | [Ehto₁](lexemes/Ehto.html) |  This rare proper noun overlaps more common *Ehto* (condition) | 🌍☢ |  |
-| [Eine₁](lexemes/Eine.html) |  This rare proper noun overlaps more common *Eine* (foodstuff) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Eine)  |
+| [Eine₁](lexemes/Eine.html) |  This rare proper noun overlaps more common *Eine* (foodstuff) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Eine)  |
 | [EKP₁](lexemes/EKP.html) |  Euroopan Keskus-Pankki | org |  |
 | [Eksymä₁](lexemes/Eksymä.html) |  This rare proper noun overlaps more common *Eksymä* (lost) | 🌍☢ |  |
 | [Ele₁](lexemes/Ele.html) |  This rare proper noun overlaps more common *Ele* (gesture) | 🧑¹☢ |  |
@@ -311,7 +311,7 @@ We link to all original sources for reference.
 | [eli₂](lexemes/eli.html) |  so, discourse particle, to be mumbled turn-initially or pausing, “eli eli, mitäs sit” |  |  |
 | [Eli₁](lexemes/Eli.html) |  This rare proper noun overlaps more common *Eli* (therefore) | 🧑¹☢ |  |
 | [Elin₁](lexemes/Elin.html) |  This rare proper noun overlaps more common *Elin* (organ) | 🧑¹☢♀ |  |
-| [Elo₁](lexemes/Elo.html) |  This rare proper noun overlaps more common *Elo* (crop) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Elo)  |
+| [Elo₁](lexemes/Elo.html) |  This rare proper noun overlaps more common *Elo* (crop) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Elo)  |
 | [Elokuva-arkisto₁](lexemes/Elokuva-arkisto.html) |  This rare proper noun overlaps more common *Elokuva-arkisto* (movie archive) | org☢ |  |
 | [Elopelto₁](lexemes/Elopelto.html) |  This rare proper noun overlaps more common *Elopelto* (crop field) | 🌍☢ |  |
 | [Eläinpuisto₁](lexemes/Eläinpuisto.html) |  This rare proper noun overlaps more common *Eläinpuisto* (zoo) | 🌍☢ |  |
@@ -369,7 +369,7 @@ We link to all original sources for reference.
 | [Etuselkä₁](lexemes/Etuselkä.html) |  This rare proper noun overlaps more common *Etuselkä* (front back) | 🌍☢ |  |
 | [ETY₁](lexemes/ETY.html) |  Euroopan Turvallisuus-Yhteisö | org |  |
 | [EU₂](lexemes/EU.html) |  Euroopan Unioni | org |  |
-| [euro₁](lexemes/euro.html) |  euro, european currency from 2001- | 💱 | [enwikt](https://fi.wiktionary.org/wiki/euro)  |
+| [euro₁](lexemes/euro.html) |  euro, european currency from 2001- | 💱 | [enwikt](https://en.wiktionary.org/wiki/euro)  |
 | [Euro₁](lexemes/Euro.html) |  This rare proper noun overlaps more common *Euro* (euro) | 🧑²☢ |  |
 | [Eurooppa₂](lexemes/Eurooppa.html) |  Europe, as proper noun for geographical area | 🌍 |  |
 | [Euroviisu₁](lexemes/Euroviisu.html) |  This rare proper noun overlaps more common *Euroviisu* (eurovision) | ⁈☢ |  |
@@ -440,8 +440,8 @@ We link to all original sources for reference.
 | [Hani₁](lexemes/Hani.html) |  This rare proper noun overlaps more common *Hani* (honey) | 🌍☢ |  |
 | [Hanka₁](lexemes/Hanka.html) |  This rare proper noun overlaps more common *Hanka* (crotch) | 🌍☢ |  |
 | [Hankala₁](lexemes/Hankala.html) |  This rare proper noun overlaps more common *Hankala* (difficult) | 🌍☢ |  |
-| [Hanko₁](lexemes/Hanko.html) |  This rare proper noun overlaps more common *Hanko* (pitchfork) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Hanko)  |
-| [Hansaliitto₁](lexemes/Hansaliitto.html) |  This rare proper noun overlaps more common *Hansaliitto* (FIXME) | org☢ | [enwikt](https://fi.wiktionary.org/wiki/Hansaliitto)  |
+| [Hanko₁](lexemes/Hanko.html) |  This rare proper noun overlaps more common *Hanko* (pitchfork) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hanko)  |
+| [Hansaliitto₁](lexemes/Hansaliitto.html) |  This rare proper noun overlaps more common *Hansaliitto* (FIXME) | org☢ | [enwikt](https://en.wiktionary.org/wiki/Hansaliitto)  |
 | [Hanska₁](lexemes/Hanska.html) |  This proper noun overlaps very common *hanska* “glove“. | 🌍☢ |  |
 | [Hanska₁](lexemes/Hanska.html) |  This proper noun overlaps very common *hanska* “glove”. | 🌍☢ |  |
 | [Hanska₁](lexemes/Hanska.html) |  This rare proper noun overlaps more common *Hanska* (glove) | 🌍☢ |  |
@@ -452,7 +452,7 @@ We link to all original sources for reference.
 | [Harja₁](lexemes/Harja.html) |  This rare proper noun overlaps more common *Harja* (brush) | 🌍☢ |  |
 | [Harjakivi₁](lexemes/Harjakivi.html) |  This rare proper noun overlaps more common *Harjakivi* (brush stone) | 🌍☢ |  |
 | [Harjanne₁](lexemes/Harjanne.html) |  This rare proper noun overlaps more common *Harjanne* (FIXME) | 🌍☢ |  |
-| [Harju₁](lexemes/Harju.html) |  This rare proper noun overlaps more common *Harju* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Harju)  |
+| [Harju₁](lexemes/Harju.html) |  This rare proper noun overlaps more common *Harju* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Harju)  |
 | [Harjus₁](lexemes/Harjus.html) |  This rare proper noun overlaps more common *Harjus* (FIXME) | 🧑²☢ |  |
 | [Harkko₁](lexemes/Harkko.html) |  This rare proper noun overlaps more common *Harkko* (bar) | 🌍☢ |  |
 | [Harmaa₁](lexemes/Harmaa.html) |  This rare proper noun overlaps more common *Harmaa* (gray) | 🌍☢ |  |
@@ -502,12 +502,12 @@ We link to all original sources for reference.
 | [Helinä₁](lexemes/Helinä.html) |  This rare proper noun overlaps more common *Helinä* (cling) | 🧑¹☢♀ |  |
 | [Hella₁](lexemes/Hella.html) |  This rare proper noun overlaps more common *Hella* (stove) | 🧑¹☢ |  |
 | [Helle₁](lexemes/Helle.html) |  This rare proper noun overlaps more common *Helle* (heat) | 🧑¹☢♀ |  |
-| [Hellä₁](lexemes/Hellä.html) |  This rare proper noun overlaps more common *Hellä* (tender) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Hellä)  |
-| [Helmi₁](lexemes/Helmi.html) |  This rare proper noun overlaps more common *Helmi* (pearl) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Helmi) [enwikt](https://fi.wiktionary.org/wiki/Helmi)  |
+| [Hellä₁](lexemes/Hellä.html) |  This rare proper noun overlaps more common *Hellä* (tender) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Hellä)  |
+| [Helmi₁](lexemes/Helmi.html) |  This rare proper noun overlaps more common *Helmi* (pearl) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Helmi) [enwikt](https://en.wiktionary.org/wiki/Helmi)  |
 | [Helminauha₁](lexemes/Helminauha.html) |  This rare proper noun overlaps more common *Helminauha* (pearls) | 🎶☢ |  |
 | [Helvetti₁](lexemes/Helvetti.html) |  This rare proper noun overlaps more common *Helvetti* (hell) | 🌍☢ |  |
-| [Hely₁](lexemes/Hely.html) |  This rare proper noun overlaps more common *Hely* (tchatchke) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Hely)  |
-| [Hemmo₁](lexemes/Hemmo.html) |  This rare proper noun overlaps more common *Hemmo* (guy) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Hemmo)  |
+| [Hely₁](lexemes/Hely.html) |  This rare proper noun overlaps more common *Hely* (tchatchke) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Hely)  |
+| [Hemmo₁](lexemes/Hemmo.html) |  This rare proper noun overlaps more common *Hemmo* (guy) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Hemmo)  |
 | [Hemppo₁](lexemes/Hemppo.html) |  This rare proper noun overlaps more common *Hemppo* (FIXME) | 🌍☢ |  |
 | [Hento₁](lexemes/Hento.html) |  This rare proper noun overlaps more common *Hento* (fragile) | 🌍☢ |  |
 | [Hepo₁](lexemes/Hepo.html) |  This rare proper noun overlaps more common *Hepo* (horse) | 🌍☢ |  |
@@ -515,7 +515,7 @@ We link to all original sources for reference.
 | [Herkkä₁](lexemes/Herkkä.html) |  This rare proper noun overlaps more common *Herkkä* (fragile) | 🌍☢ |  |
 | [Hermo₁](lexemes/Hermo.html) |  This rare proper noun overlaps more common *Hermo* (nerve) | 🌍☢ |  |
 | [Herne₁](lexemes/Herne.html) |  This rare proper noun overlaps more common *Herne* (pea) | 🌍☢ |  |
-| [Herra₁](lexemes/Herra.html) |  This rare proper noun overlaps more common *Herra* (mister) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Herra) [enwikt](https://fi.wiktionary.org/wiki/Herra)  |
+| [Herra₁](lexemes/Herra.html) |  This rare proper noun overlaps more common *Herra* (mister) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Herra) [enwikt](https://en.wiktionary.org/wiki/Herra)  |
 | [Herttaässä₁](lexemes/Herttaässä.html) |  This rare proper noun overlaps more common *Herttaässä* (ace of hearts) | org☢ |  |
 | [Herttua₁](lexemes/Herttua.html) |  This rare proper noun overlaps more common *Herttua* (count) | 🌍☢ |  |
 | [Herukka₁](lexemes/Herukka.html) |  This rare proper noun overlaps more common *Herukka* (berry) | 🌍☢ |  |
@@ -550,8 +550,8 @@ We link to all original sources for reference.
 | [Hiiva₁](lexemes/Hiiva.html) |  This rare proper noun overlaps more common *Hiiva* (yeast) | 🌍☢ |  |
 | [Hikka₁](lexemes/Hikka.html) |  This rare proper noun overlaps more common *Hikka* (hiccouhg) | 🌍☢ |  |
 | [Hila₁](lexemes/Hila.html) |  This rare proper noun overlaps more common *Hila* (FIXME) | 🌍☢ |  |
-| [Hilkka₁](lexemes/Hilkka.html) |  This rare proper noun overlaps more common *Hilkka* (FIXME) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Hilkka)  |
-| [Hilla₁](lexemes/Hilla.html) |  This rare proper noun overlaps more common *Hilla* (cloudberry) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Hilla) [enwikt](https://fi.wiktionary.org/wiki/Hilla)  |
+| [Hilkka₁](lexemes/Hilkka.html) |  This rare proper noun overlaps more common *Hilkka* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Hilkka)  |
+| [Hilla₁](lexemes/Hilla.html) |  This rare proper noun overlaps more common *Hilla* (cloudberry) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Hilla) [enwikt](https://en.wiktionary.org/wiki/Hilla)  |
 | [Hilleri₁](lexemes/Hilleri.html) |  This rare proper noun overlaps more common *Hilleri* (animal) | 🌍☢ |  |
 | [Hillo₁](lexemes/Hillo.html) |  This rare proper noun overlaps more common *Hillo* (jam) | 🌍☢ |  |
 | [Himmeli₁](lexemes/Himmeli.html) |  This rare proper noun overlaps more common *Himmeli* (FIXME) | 🌍☢ |  |
@@ -709,7 +709,7 @@ We link to all original sources for reference.
 | [Ihme₁](lexemes/Ihme.html) |  This rare proper noun overlaps more common *Ihme* (miracle) | 🌍☢ |  |
 | [Iho₁](lexemes/Iho.html) |  This rare proper noun overlaps more common *Iho* (skin) | 🧑²☢ |  |
 | [Illansuu₁](lexemes/Illansuu.html) |  This rare proper noun overlaps more common *Illansuu* (evening) | 🌍☢ |  |
-| [Ilma₁](lexemes/Ilma.html) |  This rare proper noun overlaps more common *Ilma* (air) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Ilma)  |
+| [Ilma₁](lexemes/Ilma.html) |  This rare proper noun overlaps more common *Ilma* (air) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ilma)  |
 | [Ilmainen₁](lexemes/Ilmainen.html) |  This rare proper noun overlaps more common *Ilmainen* (free) | org☢ |  |
 | [ilman₁](lexemes/ilman.html) |  adposition (without) when can be attached to a partitive NP, otherwise adverb (without) |  |  |
 | [Ilmarata₁](lexemes/Ilmarata.html) |  This rare proper noun overlaps more common *Ilmarata* (airways) | 🌍☢ |  |
@@ -717,21 +717,21 @@ We link to all original sources for reference.
 | [Ilmavaara₁](lexemes/Ilmavaara.html) |  This rare proper noun overlaps more common *Ilmavaara* (airhill) | 🌍☢ |  |
 | [Ilmavirta₁](lexemes/Ilmavirta.html) |  This rare proper noun overlaps more common *Ilmavirta* (airstream) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ilmavirta)  |
 | [Ilmetty₁](lexemes/Ilmetty.html) |  This rare proper noun overlaps more common *Ilmetty* (apparent) | 🌍☢ |  |
-| [Ilmi₁](lexemes/Ilmi.html) |  This rare proper noun overlaps more common *Ilmi* (published) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Ilmi)  |
+| [Ilmi₁](lexemes/Ilmi.html) |  This rare proper noun overlaps more common *Ilmi* (published) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ilmi)  |
 | [Ilmiö₁](lexemes/Ilmiö.html) |  This rare proper noun overlaps more common *Ilmiö* (phenomenon) | 🌍☢ |  |
 | [Ilo₁](lexemes/Ilo.html) |  This rare proper noun overlaps more common *Ilo* (joy) | 🧑¹☢ |  |
-| [Ilta₁](lexemes/Ilta.html) |  This rare proper noun overlaps more common *Ilta* (evening) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Ilta)  |
+| [Ilta₁](lexemes/Ilta.html) |  This rare proper noun overlaps more common *Ilta* (evening) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ilta)  |
 | [Iltalehti₁](lexemes/Iltalehti.html) |  This rare proper noun overlaps more common *Iltalehti* (evening) | org☢📺 |  |
 | [Iltanen₁](lexemes/Iltanen.html) |  This rare proper noun overlaps more common *Iltanen* (dinner) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Iltanen)  |
 | [Iltarusko₁](lexemes/Iltarusko.html) |  This rare proper noun overlaps more common *Iltarusko* (dusk) | 🌍☢ |  |
-| [Ilves₁](lexemes/Ilves.html) |  This rare proper noun overlaps more common *Ilves* (bobcat) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Ilves)  |
+| [Ilves₁](lexemes/Ilves.html) |  This rare proper noun overlaps more common *Ilves* (bobcat) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ilves)  |
 | [Imago₁](lexemes/Imago.html) |  This rare proper noun overlaps more common *Imago* (image) | org☢ |  |
 | [Imelä₁](lexemes/Imelä.html) |  This rare proper noun overlaps more common *Imelä* (oversweet) | 🌍☢ |  |
-| [Impi₁](lexemes/Impi.html) |  This rare proper noun overlaps more common *Impi* (virgin) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Impi)  |
+| [Impi₁](lexemes/Impi.html) |  This rare proper noun overlaps more common *Impi* (virgin) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Impi)  |
 | [Info₁](lexemes/Info.html) |  This rare proper noun overlaps more common *Info* (info) | org☢ |  |
 | [Inha₁](lexemes/Inha.html) |  This rare proper noun overlaps more common *Inha* (icky) | 🌍☢ |  |
 | [internet-tv₁](lexemes/internet-tv.html) |  Tele-Visio |  |  |
-| [Into₁](lexemes/Into.html) |  This rare proper noun overlaps more common *Into* (excote,emt) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Into) [enwikt](https://fi.wiktionary.org/wiki/Into)  |
+| [Into₁](lexemes/Into.html) |  This rare proper noun overlaps more common *Into* (excote,emt) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Into) [enwikt](https://en.wiktionary.org/wiki/Into)  |
 | [Intra₁](lexemes/Intra.html) |  This rare proper noun overlaps more common *Intra* (intra) | 🌍☢ |  |
 | [Intti₁](lexemes/Intti.html) |  This rare proper noun overlaps more common *Intti* (army) | 🌍☢ |  |
 | [IP₁](lexemes/IP.html) |  Internet Protocol |  |  |
@@ -759,7 +759,7 @@ We link to all original sources for reference.
 | [ja₁](lexemes/ja.html) |  and, as cconj, “kissoja ja koiria”, see VISK § 817 |  |  |
 | [ja₂](lexemes/ja.html) |  as well, as adverb, colloquial-ish, “mentiin sinne ja“ |  |  |
 | [ja₂](lexemes/ja.html) |  as well, as adverb, colloquial-ish, “mentiin sinne ja” |  |  |
-| [Jade₁](lexemes/Jade.html) |  This rare proper noun overlaps more common *Jade* (jade) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Jade) [enwikt](https://fi.wiktionary.org/wiki/Jade)  |
+| [Jade₁](lexemes/Jade.html) |  This rare proper noun overlaps more common *Jade* (jade) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Jade) [enwikt](https://en.wiktionary.org/wiki/Jade)  |
 | [Jakaja₁](lexemes/Jakaja.html) |  This rare proper noun overlaps more common *Jakaja* (divider) | 🌍☢ |  |
 | [Jakku₁](lexemes/Jakku.html) |  This rare proper noun overlaps more common *Jakku* (jacket) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jakku)  |
 | [Jako₁](lexemes/Jako.html) |  This rare proper noun overlaps more common *Jako* (split) | 🌍☢ |  |
@@ -769,7 +769,7 @@ We link to all original sources for reference.
 | [Jalkamaa₁](lexemes/Jalkamaa.html) |  This rare proper noun overlaps more common *Jalkamaa* (footland) | 🌍☢ |  |
 | [Jalkapuu₁](lexemes/Jalkapuu.html) |  This rare proper noun overlaps more common *Jalkapuu* (FIXME) | 🌍☢ |  |
 | [Jalkasilta₁](lexemes/Jalkasilta.html) |  This rare proper noun overlaps more common *Jalkasilta* (FIXM-e) | 🌍☢ |  |
-| [Jalo₁](lexemes/Jalo.html) |  This rare proper noun overlaps more common *Jalo* (noble) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Jalo)  |
+| [Jalo₁](lexemes/Jalo.html) |  This rare proper noun overlaps more common *Jalo* (noble) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Jalo)  |
 | [Jama₁](lexemes/Jama.html) |  This rare proper noun overlaps more common *Jama* (sticky wicket) | 🌍☢ |  |
 | [Jana₁](lexemes/Jana.html) |  This rare proper noun overlaps more common *Jana* (segment) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jana)  |
 | [Jano₁](lexemes/Jano.html) |  This rare proper noun overlaps more common *Jano* (thirst) | org☢ |  |
@@ -779,7 +779,7 @@ We link to all original sources for reference.
 | [Jauhaja₁](lexemes/Jauhaja.html) |  This rare proper noun overlaps more common *Jauhaja* (grinder) | 🌍☢ |  |
 | [Jauho₁](lexemes/Jauho.html) |  This rare proper noun overlaps more common *Jauho* (flour) | 🌍☢ |  |
 | [Jee₁](lexemes/Jee.html) |  This rare proper noun overlaps more common *Jee* (yay) | 🧑²☢ |  |
-| [Jeesus₁](lexemes/Jeesus.html) |  This rare proper noun overlaps more common *Jeesus* (jesus) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Jeesus)  |
+| [Jeesus₁](lexemes/Jeesus.html) |  This rare proper noun overlaps more common *Jeesus* (jesus) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Jeesus)  |
 | [Jin₁](lexemes/Jin.html) |  This rare proper noun overlaps more common *Jin* (FIXME) | 🧑¹☢ |  |
 | [Jo₁](lexemes/Jo.html) |  This proper noun overlaps very common *jo* “already“. | 🧑¹☢ |  |
 | [Jo₁](lexemes/Jo.html) |  This proper noun overlaps very common *jo* “already”. | 🧑¹☢ |  |
@@ -816,7 +816,7 @@ We link to all original sources for reference.
 | [Jouhi₁](lexemes/Jouhi.html) |  This rare proper noun overlaps more common *Jouhi* (hair) | 🧑²☢ |  |
 | [Jouhikko₁](lexemes/Jouhikko.html) |  This rare proper noun overlaps more common *Jouhikko* (FIXME) | 🌍☢ |  |
 | [Jousi₁](lexemes/Jousi.html) |  This rare proper noun overlaps more common *Jousi* (bow) | 🧑²☢ |  |
-| [Jousimies₁](lexemes/Jousimies.html) |  This rare proper noun overlaps more common *Jousimies* (archer) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Jousimies)  |
+| [Jousimies₁](lexemes/Jousimies.html) |  This rare proper noun overlaps more common *Jousimies* (archer) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jousimies)  |
 | [Joutava₁](lexemes/Joutava.html) |  This rare proper noun overlaps more common *Joutava* (useless) | 🌍☢ |  |
 | [Joutsen₁](lexemes/Joutsen.html) |  This rare proper noun overlaps more common *Joutsen* (swan) | 🌍☢ |  |
 | [Julma₁](lexemes/Julma.html) |  This rare proper noun overlaps more common *Julma* (evel) | 🌍☢ |  |
@@ -873,7 +873,7 @@ We link to all original sources for reference.
 | [jälkeen₁](lexemes/jälkeen.html) |  adposition (after) when can be attached to a genitive NP, otherwise noun forms of *jälki* (trace) |  | [fiwikt](https://fi.wiktionary.org/wiki/jälkeen)  |
 | [jälkeen₂](lexemes/jälkeen.html) |  adverb (afterhands)  |  |  |
 | [Jämerä₁](lexemes/Jämerä.html) |  This rare proper noun overlaps more common *Jämerä* (tough) | 🌍☢ |  |
-| [Jänis₁](lexemes/Jänis.html) |  This rare proper noun overlaps more common *Jänis* (bunny) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Jänis)  |
+| [Jänis₁](lexemes/Jänis.html) |  This rare proper noun overlaps more common *Jänis* (bunny) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jänis)  |
 | [Jänkä₁](lexemes/Jänkä.html) |  This rare proper noun overlaps more common *Jänkä* (FIXME) | 🌍☢ |  |
 | [Jänne₁](lexemes/Jänne.html) |  This rare proper noun overlaps more common *Jänne* (arc) | 🧑²☢ |  |
 | [Jäntere₁](lexemes/Jäntere.html) |  This rare proper noun overlaps more common *Jäntere* (FIXME) | 🧑²☢ |  |
@@ -887,7 +887,7 @@ We link to all original sources for reference.
 | [Jättiläinen₁](lexemes/Jättiläinen.html) |  This rare proper noun overlaps more common *Jättiläinen* (giant) | 🌍☢ |  |
 | [Jäykkä₁](lexemes/Jäykkä.html) |  This rare proper noun overlaps more common *Jäykkä* (stiff) | 🌍☢ |  |
 | [Jääkäri₁](lexemes/Jääkäri.html) |  This rare proper noun overlaps more common *Jääkäri* (soldier) | 🌍☢ |  |
-| [Jäämeri₁](lexemes/Jäämeri.html) |  This rare proper noun overlaps more common *Jäämeri* (frozen sea) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Jäämeri)  |
+| [Jäämeri₁](lexemes/Jäämeri.html) |  This rare proper noun overlaps more common *Jäämeri* (frozen sea) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jäämeri)  |
 | [Jäärä₁](lexemes/Jäärä.html) |  This rare proper noun overlaps more common *Jäärä* (stubborn) | 🌍☢ |  |
 | [Jäävuori₁](lexemes/Jäävuori.html) |  This rare proper noun overlaps more common *Jäävuori* (ice mountain) | 🌍☢ |  |
 | [ka₁](lexemes/ka.html) |  This noun is SI unit “ka“ or abbreviation "avg." but overlaps forms of very common stuff | 📏 |  |
@@ -914,7 +914,7 @@ We link to all original sources for reference.
 | [Kahdeksikko₁](lexemes/Kahdeksikko.html) |  This rare proper noun overlaps more common *Kahdeksikko* (eight) | 🌍☢ |  |
 | [Kahiseva₁](lexemes/Kahiseva.html) |  This rare proper noun overlaps more common *Kahiseva* (wooshy) | 🌍☢ |  |
 | [Kahju₁](lexemes/Kahju.html) |  This rare proper noun overlaps more common *Kahju* (crazy) | 🧑²☢ |  |
-| [Kai₁](lexemes/Kai.html) |  This rare proper noun overlaps more common *Kai* (maybe) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Kai)  |
+| [Kai₁](lexemes/Kai.html) |  This rare proper noun overlaps more common *Kai* (maybe) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Kai)  |
 | [Kaide₁](lexemes/Kaide.html) |  This rare proper noun overlaps more common *Kaide* (rail) | 🌍☢ |  |
 | [Kaihi₁](lexemes/Kaihi.html) |  This rare proper noun overlaps more common *Kaihi* (cataract) | 🌍☢ |  |
 | [Kaiho₁](lexemes/Kaiho.html) |  This rare proper noun overlaps more common *Kaiho* (somber) | 🧑¹☢ |  |
@@ -924,9 +924,9 @@ We link to all original sources for reference.
 | [Kaiku₁](lexemes/Kaiku.html) |  This rare proper noun overlaps more common *Kaiku* (echo) | 🧑¹☢ |  |
 | [Kainalo₁](lexemes/Kainalo.html) |  This rare proper noun overlaps more common *Kainalo* (armpit) | 🌍☢ |  |
 | [Kainaloinen₁](lexemes/Kainaloinen.html) |  This rare proper noun overlaps more common *Kainaloinen* (FIXME) | 🌍☢ |  |
-| [Kaino₁](lexemes/Kaino.html) |  This rare proper noun overlaps more common *Kaino* (shy) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Kaino)  |
+| [Kaino₁](lexemes/Kaino.html) |  This rare proper noun overlaps more common *Kaino* (shy) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kaino)  |
 | [Kainulainen₁](lexemes/Kainulainen.html) |  This rare proper noun overlaps more common *Kainulainen* (FIXME) | 🧑²☢ |  |
-| [Kaisla₁](lexemes/Kaisla.html) |  This rare proper noun overlaps more common *Kaisla* (grassblade) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Kaisla)  |
+| [Kaisla₁](lexemes/Kaisla.html) |  This rare proper noun overlaps more common *Kaisla* (grassblade) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kaisla)  |
 | [Kaislikko₁](lexemes/Kaislikko.html) |  This rare proper noun overlaps more common *Kaislikko* (FIXME) | 🌍☢ |  |
 | [Kaista₁](lexemes/Kaista.html) |  This rare proper noun overlaps more common *Kaista* (lane) | 🌍☢ |  |
 | [Kaistale₁](lexemes/Kaistale.html) |  This rare proper noun overlaps more common *Kaistale* (splinter) | 🌍☢ |  |
@@ -962,7 +962,7 @@ We link to all original sources for reference.
 | [Kalkkikivi₁](lexemes/Kalkkikivi.html) |  This rare proper noun overlaps more common *Kalkkikivi* (calcium stone) | 🌍☢ |  |
 | [Kalkkimaa₁](lexemes/Kalkkimaa.html) |  This rare proper noun overlaps more common *Kalkkimaa* (calcium lands) | 🌍☢ |  |
 | [Kalkkinen₁](lexemes/Kalkkinen.html) |  This rare proper noun overlaps more common *Kalkkinen* (calciumy) | 🌍☢ |  |
-| [Kallio₁](lexemes/Kallio.html) |  This rare proper noun overlaps more common *Kallio* (baserock) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallio) [enwikt](https://fi.wiktionary.org/wiki/Kallio)  |
+| [Kallio₁](lexemes/Kallio.html) |  This rare proper noun overlaps more common *Kallio* (baserock) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallio) [enwikt](https://en.wiktionary.org/wiki/Kallio)  |
 | [Kallioinen₁](lexemes/Kallioinen.html) |  This rare proper noun overlaps more common *Kallioinen* (rocky) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallioinen)  |
 | [Kallioluoto₁](lexemes/Kallioluoto.html) |  This rare proper noun overlaps more common *Kallioluoto* (rocky island) | 🌍☢ |  |
 | [Kallionhalkeama₁](lexemes/Kallionhalkeama.html) |  This rare proper noun overlaps more common *Kallionhalkeama* (base rock crack) | 🌍☢ |  |
@@ -1004,7 +1004,7 @@ We link to all original sources for reference.
 | [Kaneli₁](lexemes/Kaneli.html) |  This rare proper noun overlaps more common *Kaneli* (FIXME) | 🌍☢ |  |
 | [Kanervikko₁](lexemes/Kanervikko.html) |  This rare proper noun overlaps more common *Kanervikko* (FIXME) | 🌍☢ |  |
 | [Kanervisto₁](lexemes/Kanervisto.html) |  This rare proper noun overlaps more common *Kanervisto* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kanervisto)  |
-| [Kangas₁](lexemes/Kangas.html) |  This rare proper noun overlaps more common *Kangas* (fabric) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangas) [enwikt](https://fi.wiktionary.org/wiki/Kangas)  |
+| [Kangas₁](lexemes/Kangas.html) |  This rare proper noun overlaps more common *Kangas* (fabric) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangas) [enwikt](https://en.wiktionary.org/wiki/Kangas)  |
 | [Kangaskorpi₁](lexemes/Kangaskorpi.html) |  This rare proper noun overlaps more common *Kangaskorpi* (grass forest) | 🌍☢ |  |
 | [Kangasmaa₁](lexemes/Kangasmaa.html) |  This rare proper noun overlaps more common *Kangasmaa* (grasslands) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangasmaa)  |
 | [Kangasmetsä₁](lexemes/Kangasmetsä.html) |  This rare proper noun overlaps more common *Kangasmetsä* (grass forest) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangasmetsä)  |
@@ -1105,7 +1105,7 @@ We link to all original sources for reference.
 | [Katara₁](lexemes/Katara.html) |  This rare proper noun overlaps more common *Katara* (FIXME) | 🌍☢ |  |
 | [Kate₁](lexemes/Kate.html) |  This rare proper noun overlaps more common *Kate* (profit) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kate)  |
 | [Katharsis₁](lexemes/Katharsis.html) |  This rare proper noun overlaps more common *Katharsis* (catharsis) | org☢ |  |
-| [Kati₁](lexemes/Kati.html) |  This rare proper noun overlaps more common *Kati* (FIXME) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Kati)  |
+| [Kati₁](lexemes/Kati.html) |  This rare proper noun overlaps more common *Kati* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kati)  |
 | [Katinkulta₁](lexemes/Katinkulta.html) |  This rare proper noun overlaps more common *Katinkulta* (fool’s gold) | 🌍☢ |  |
 | [Katiska₁](lexemes/Katiska.html) |  This rare proper noun overlaps more common *Katiska* (fish trap) | 🌍☢ |  |
 | [Katkelma₁](lexemes/Katkelma.html) |  This rare proper noun overlaps more common *Katkelma* (FIXME) | 🌍☢ |  |
@@ -1127,11 +1127,11 @@ We link to all original sources for reference.
 | [Kaukomaa₁](lexemes/Kaukomaa.html) |  This rare proper noun overlaps more common *Kaukomaa* (faraway lands) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaukomaa)  |
 | [Kaula₁](lexemes/Kaula.html) |  This rare proper noun overlaps more common *Kaula* (neck) | 🧑²☢ |  |
 | [Kaulin₁](lexemes/Kaulin.html) |  This rare proper noun overlaps more common *Kaulin* (rolling pin) | 🧑²☢ |  |
-| [Kauno₁](lexemes/Kauno.html) |  This rare proper noun overlaps more common *Kauno* (cursive) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Kauno)  |
+| [Kauno₁](lexemes/Kauno.html) |  This rare proper noun overlaps more common *Kauno* (cursive) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Kauno)  |
 | [Kauppala₁](lexemes/Kauppala.html) |  This rare proper noun overlaps more common *Kauppala* (village) | 🌍☢ |  |
 | [Kaura₁](lexemes/Kaura.html) |  This rare proper noun overlaps more common *Kaura* (crop) | 🌍☢ |  |
 | [Kaurapelto₁](lexemes/Kaurapelto.html) |  This rare proper noun overlaps more common *Kaurapelto* (oatfield) | 🌍☢ |  |
-| [Kauris₁](lexemes/Kauris.html) |  This rare proper noun overlaps more common *Kauris* (capricorn) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Kauris)  |
+| [Kauris₁](lexemes/Kauris.html) |  This rare proper noun overlaps more common *Kauris* (capricorn) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kauris)  |
 | [Kautsu₁](lexemes/Kautsu.html) |  This rare proper noun overlaps more common *Kautsu* (rubber) | 🌍☢ |  |
 | [kautta₁](lexemes/kautta.html) |  adposition (via) when can be attached to a genitive or partitive NP, otherwise noun forms of *kausi* (season) |  |  |
 | [kautta₂](lexemes/kautta.html) |  adverb, ? |  |  |
@@ -1139,7 +1139,7 @@ We link to all original sources for reference.
 | [Kavala₁](lexemes/Kavala.html) |  This rare proper noun overlaps more common *Kavala* (evil) | 🌍☢ |  |
 | [Kavi₁](lexemes/Kavi.html) |  This rare proper noun overlaps more common *Kavi* (FIXME) | 🌍☢ |  |
 | [Kavio₁](lexemes/Kavio.html) |  This rare proper noun overlaps more common *Kavio* (hoof) | 🌍☢ |  |
-| [kea₁](lexemes/kea.html) |  Nestor notabilis, a parrot of New Zealand; this rare noun is problematic with compounding | ☢ | [enwikt](https://fi.wiktionary.org/wiki/kea) [finnwn](https://sanat.csc.fi/w/index.php?search=kea)  |
+| [kea₁](lexemes/kea.html) |  Nestor notabilis, a parrot of New Zealand; this rare noun is problematic with compounding | ☢ | [enwikt](https://en.wiktionary.org/wiki/kea) [finnwn](https://sanat.csc.fi/w/index.php?search=kea)  |
 | [Keho₁](lexemes/Keho.html) |  This rare proper noun overlaps more common *Keho* (body) | 🌍☢ |  |
 | [Kehä₁](lexemes/Kehä.html) |  This rare proper noun overlaps more common *Kehä* (circle) | 🌍☢ |  |
 | [Keidassuo₁](lexemes/Keidassuo.html) |  This rare proper noun overlaps more common *Keidassuo* (FIXME) | 🌍☢ |  |
@@ -1155,7 +1155,7 @@ We link to all original sources for reference.
 | [Kekkuli₁](lexemes/Kekkuli.html) |  This rare proper noun overlaps more common *Kekkuli* (FIXME) | 🌍☢ |  |
 | [Keko₁](lexemes/Keko.html) |  This rare proper noun overlaps more common *Keko* (pile) | 🌍☢ |  |
 | [Kekäle₁](lexemes/Kekäle.html) |  This rare proper noun overlaps more common *Kekäle* (ember) | 🌍☢ |  |
-| [Kela₁](lexemes/Kela.html) |  This rare proper noun overlaps more common *Kela* (roll) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kela)  |
+| [Kela₁](lexemes/Kela.html) |  This rare proper noun overlaps more common *Kela* (roll) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kela)  |
 | [Kelju₁](lexemes/Kelju.html) |  This rare proper noun overlaps more common *Kelju* (nasty) | 🌍☢ |  |
 | [Kelkka₁](lexemes/Kelkka.html) |  This rare proper noun overlaps more common *Kelkka* (sled) | 🌍☢ |  |
 | [Kelkkamäki₁](lexemes/Kelkkamäki.html) |  This rare proper noun overlaps more common *Kelkkamäki* (sledhill) | 🌍☢ |  |
@@ -1217,7 +1217,7 @@ We link to all original sources for reference.
 | [Kide₁](lexemes/Kide.html) |  This rare proper noun overlaps more common *Kide* (crystal) | 🌍☢ |  |
 | [Kiekko₁](lexemes/Kiekko.html) |  This rare proper noun overlaps more common *Kiekko* (puck) | 🌍☢ |  |
 | [Kieli₁](lexemes/Kieli.html) |  This rare proper noun overlaps more common *Kieli* (language) | 🧑²☢ |  |
-| [Kielo₁](lexemes/Kielo.html) |  This rare proper noun overlaps more common *Kielo* (flower) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Kielo)  |
+| [Kielo₁](lexemes/Kielo.html) |  This rare proper noun overlaps more common *Kielo* (flower) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kielo)  |
 | [Kieltola₁](lexemes/Kieltola.html) |  This rare proper noun overlaps more common *Kieltola* (FIXME) | 🌍☢ |  |
 | [Kiemura₁](lexemes/Kiemura.html) |  This rare proper noun overlaps more common *Kiemura* (squiggle) | 🌍☢ |  |
 | [Kiero₁](lexemes/Kiero.html) |  This rare proper noun overlaps more common *Kiero* (cunning) | 🌍☢ |  |
@@ -1245,7 +1245,7 @@ We link to all original sources for reference.
 | [Kiljuva₁](lexemes/Kiljuva.html) |  This rare proper noun overlaps more common *Kiljuva* (screaming) | 🌍☢ |  |
 | [Killinki₁](lexemes/Killinki.html) |  This rare proper noun overlaps more common *Killinki* (coin) | 🌍☢ |  |
 | [Kilo₁](lexemes/Kilo.html) |  This rare proper noun overlaps more common *Kilo* (kilogram) | 🌍☢ |  |
-| [Kilpi₁](lexemes/Kilpi.html) |  This rare proper noun overlaps more common *Kilpi* (shield) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kilpi)  |
+| [Kilpi₁](lexemes/Kilpi.html) |  This rare proper noun overlaps more common *Kilpi* (shield) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kilpi)  |
 | [Kilsa₁](lexemes/Kilsa.html) |  This rare proper noun overlaps more common *Kilsa* (kilometre) | 🌍☢ |  |
 | [Kilta₁](lexemes/Kilta.html) |  This rare proper noun overlaps more common *Kilta* (guild) | 🌍☢ |  |
 | [Kiltti₁](lexemes/Kiltti.html) |  This rare proper noun overlaps more common *Kiltti* (nice) | 🌍☢ |  |
@@ -1283,7 +1283,7 @@ We link to all original sources for reference.
 | [Kissa₁](lexemes/Kissa.html) |  This rare proper noun overlaps more common *Kissa* (cat) | 🌍☢ |  |
 | [Kissanhäntä₁](lexemes/Kissanhäntä.html) |  This rare proper noun overlaps more common *Kissanhäntä* (cattail) | 🌍☢ |  |
 | [Kita₁](lexemes/Kita.html) |  This rare proper noun overlaps more common *Kita* (mouth) | 🌍☢ |  |
-| [Kitka₁](lexemes/Kitka.html) |  This rare proper noun overlaps more common *Kitka* (friction) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kitka)  |
+| [Kitka₁](lexemes/Kitka.html) |  This rare proper noun overlaps more common *Kitka* (friction) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kitka)  |
 | [Kitsi₁](lexemes/Kitsi.html) |  This rare proper noun overlaps more common *Kitsi* (FIXME) | 🌍☢ |  |
 | [Kitti₁](lexemes/Kitti.html) |  This rare proper noun overlaps more common *Kitti* (speckle) | 🌍☢ |  |
 | [Kiukku₁](lexemes/Kiukku.html) |  This rare proper noun overlaps more common *Kiukku* (anger) | 🌍☢ |  |
@@ -1293,7 +1293,7 @@ We link to all original sources for reference.
 | [Kiva₁](lexemes/Kiva.html) |  This proper noun overlaps very common *kiva* “nice“. | 🌍☢ |  |
 | [Kiva₁](lexemes/Kiva.html) |  This proper noun overlaps very common *kiva* “nice”. | 🌍☢ |  |
 | [Kiva₁](lexemes/Kiva.html) |  This rare proper noun overlaps more common *Kiva* (nice) | 🌍☢ |  |
-| [Kivi₁](lexemes/Kivi.html) |  This rare proper noun overlaps more common *Kivi* (stone) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kivi) [enwikt](https://fi.wiktionary.org/wiki/Kivi)  |
+| [Kivi₁](lexemes/Kivi.html) |  This rare proper noun overlaps more common *Kivi* (stone) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kivi) [enwikt](https://en.wiktionary.org/wiki/Kivi)  |
 | [Kiviaita₁](lexemes/Kiviaita.html) |  This rare proper noun overlaps more common *Kiviaita* (stonefence) | 🌍☢ |  |
 | [Kivikirkko₁](lexemes/Kivikirkko.html) |  This rare proper noun overlaps more common *Kivikirkko* (stonechurch) | 🌍☢ |  |
 | [Kivikko₁](lexemes/Kivikko.html) |  This rare proper noun overlaps more common *Kivikko* (stones) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kivikko)  |
@@ -1323,14 +1323,14 @@ We link to all original sources for reference.
 | [Kohtalo₁](lexemes/Kohtalo.html) |  This rare proper noun overlaps more common *Kohtalo* (destiny) | 🌍☢ |  |
 | [Koillinen₁](lexemes/Koillinen.html) |  This rare proper noun overlaps more common *Koillinen* (northeast) | 🧑²☢ |  |
 | [Koipi₁](lexemes/Koipi.html) |  This rare proper noun overlaps more common *Koipi* (leg) | 🌍☢ |  |
-| [Koira₁](lexemes/Koira.html) |  This rare proper noun overlaps more common *Koira* (dog) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Koira)  |
+| [Koira₁](lexemes/Koira.html) |  This rare proper noun overlaps more common *Koira* (dog) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Koira)  |
 | [Koirankieli₁](lexemes/Koirankieli.html) |  This rare proper noun overlaps more common *Koirankieli* (dog’s tongue) | 🌍☢ |  |
 | [Koirankorva₁](lexemes/Koirankorva.html) |  This rare proper noun overlaps more common *Koirankorva* (dog’s ear) | 🌍☢ |  |
 | [Koiso₁](lexemes/Koiso.html) |  This rare proper noun overlaps more common *Koiso* (FIXME) | 🌍☢ |  |
 | [Koitto₁](lexemes/Koitto.html) |  This rare proper noun overlaps more common *Koitto* (dawn) | 🌍☢ |  |
 | [Koivikko₁](lexemes/Koivikko.html) |  This rare proper noun overlaps more common *Koivikko* (birches) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koivikko)  |
 | [Koivisto₁](lexemes/Koivisto.html) |  This rare proper noun overlaps more common *Koivisto* (birches) | 🌍☢ |  |
-| [Koivu₁](lexemes/Koivu.html) |  This rare proper noun overlaps more common *Koivu* (birch) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Koivu)  |
+| [Koivu₁](lexemes/Koivu.html) |  This rare proper noun overlaps more common *Koivu* (birch) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Koivu)  |
 | [Koivuinen₁](lexemes/Koivuinen.html) |  This rare proper noun overlaps more common *Koivuinen* (birchy) | 🌍☢ |  |
 | [Koivukuja₁](lexemes/Koivukuja.html) |  This rare proper noun overlaps more common *Koivukuja* (birchpath) | 🌍☢ |  |
 | [Koivumetsä₁](lexemes/Koivumetsä.html) |  This rare proper noun overlaps more common *Koivumetsä* (birchforest) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koivumetsä)  |
@@ -1341,8 +1341,8 @@ We link to all original sources for reference.
 | [Kokkari₁](lexemes/Kokkari.html) |  This rare proper noun overlaps more common *Kokkari* (meeting) | 🌍☢ |  |
 | [Kokkarit₁](lexemes/Kokkarit.html) |  This rare proper noun overlaps more common *Kokkarit* (meeting) | 🌍☢ |  |
 | [Kokki₁](lexemes/Kokki.html) |  This rare proper noun overlaps more common *Kokki* (cook) | 🌍☢ |  |
-| [Kokko₁](lexemes/Kokko.html) |  This rare proper noun overlaps more common *Kokko* (bonfire) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kokko)  |
-| [Kokoomus₁](lexemes/Kokoomus.html) |  This rare proper noun overlaps more common *Kokoomus* (coalition) | org☢ | [enwikt](https://fi.wiktionary.org/wiki/Kokoomus)  |
+| [Kokko₁](lexemes/Kokko.html) |  This rare proper noun overlaps more common *Kokko* (bonfire) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kokko)  |
+| [Kokoomus₁](lexemes/Kokoomus.html) |  This rare proper noun overlaps more common *Kokoomus* (coalition) | org☢ | [enwikt](https://en.wiktionary.org/wiki/Kokoomus)  |
 | [Kola₁](lexemes/Kola.html) |  This rare proper noun overlaps more common *Kola* (plow) | 🌍☢ |  |
 | [Kolari₁](lexemes/Kolari.html) |  This rare proper noun overlaps more common *Kolari* (crash) | 🌍☢ |  |
 | [Kolea₁](lexemes/Kolea.html) |  This rare proper noun overlaps more common *Kolea* (cold) | 🌍☢ |  |
@@ -1354,7 +1354,7 @@ We link to all original sources for reference.
 | [Kolmihaarainen₁](lexemes/Kolmihaarainen.html) |  This rare proper noun overlaps more common *Kolmihaarainen* (threeprong) | 🌍☢ |  |
 | [Kolmikko₁](lexemes/Kolmikko.html) |  This rare proper noun overlaps more common *Kolmikko* (triplet) | 🌍☢ |  |
 | [Kolminainen₁](lexemes/Kolminainen.html) |  This rare proper noun overlaps more common *Kolminainen* (threeway) | 🌍☢ |  |
-| [Kolmio₁](lexemes/Kolmio.html) |  This rare proper noun overlaps more common *Kolmio* (triangle) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kolmio)  |
+| [Kolmio₁](lexemes/Kolmio.html) |  This rare proper noun overlaps more common *Kolmio* (triangle) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kolmio)  |
 | [Kolmiodraama₁](lexemes/Kolmiodraama.html) |  This rare proper noun overlaps more common *Kolmiodraama* (triangle drama) | 🎶☢ |  |
 | [Kolmipäinen₁](lexemes/Kolmipäinen.html) |  This rare proper noun overlaps more common *Kolmipäinen* (three-head) | 🌍☢ |  |
 | [Kolmonen₁](lexemes/Kolmonen.html) |  This rare proper noun overlaps more common *Kolmonen* (three) | 🌍☢ |  |
@@ -1390,7 +1390,7 @@ We link to all original sources for reference.
 | [Koppari₁](lexemes/Koppari.html) |  This rare proper noun overlaps more common *Koppari* (catcher) | 🌍☢ |  |
 | [Koppi₁](lexemes/Koppi.html) |  This rare proper noun overlaps more common *Koppi* (catch) | 🌍☢ |  |
 | [Kopula₁](lexemes/Kopula.html) |  This rare proper noun overlaps more common *Kopula* (copula) | 🌍☢ |  |
-| [Korintti₁](lexemes/Korintti.html) |  This rare proper noun overlaps more common *Korintti* (corinthean) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korintti) [enwikt](https://fi.wiktionary.org/wiki/Korintti)  |
+| [Korintti₁](lexemes/Korintti.html) |  This rare proper noun overlaps more common *Korintti* (corinthean) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korintti) [enwikt](https://en.wiktionary.org/wiki/Korintti)  |
 | [Koriseva₁](lexemes/Koriseva.html) |  This rare proper noun overlaps more common *Koriseva* (gurgly) | 🌍☢ |  |
 | [Korkea₁](lexemes/Korkea.html) |  This rare proper noun overlaps more common *Korkea* (high) | 🌍☢ |  |
 | [Korkki₁](lexemes/Korkki.html) |  This rare proper noun overlaps more common *Korkki* (cork) | 🌍☢ |  |
@@ -1418,8 +1418,8 @@ We link to all original sources for reference.
 | [Kos₁](lexemes/Kos.html) |  This rare proper noun overlaps more common *Kos* (kos) | 🌍☢ |  |
 | [koska₁](lexemes/koska.html) |  when, as adverb, “koska tulet?” |  |  |
 | [koska₃](lexemes/koska.html) |  because, sub-ordinating conj, “koska olen hyvä” |  |  |
-| [Koski₁](lexemes/Koski.html) |  This rare proper noun overlaps more common *Koski* (rapids) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koski) [enwikt](https://fi.wiktionary.org/wiki/Koski)  |
-| [Koskinen₁](lexemes/Koskinen.html) |  This rare proper noun overlaps more common *Koskinen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Koskinen)  |
+| [Koski₁](lexemes/Koski.html) |  This rare proper noun overlaps more common *Koski* (rapids) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koski) [enwikt](https://en.wiktionary.org/wiki/Koski)  |
+| [Koskinen₁](lexemes/Koskinen.html) |  This rare proper noun overlaps more common *Koskinen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Koskinen)  |
 | [Kosminen₁](lexemes/Kosminen.html) |  This rare proper noun overlaps more common *Kosminen* (cosmic) | 🧑²☢ |  |
 | [Koste₁](lexemes/Koste.html) |  This rare proper noun overlaps more common *Koste* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koste)  |
 | [Kosteikko₁](lexemes/Kosteikko.html) |  This rare proper noun overlaps more common *Kosteikko* (FIXME) | 🌍☢ |  |
@@ -1456,7 +1456,7 @@ We link to all original sources for reference.
 | [Kranaatti₁](lexemes/Kranaatti.html) |  This rare proper noun overlaps more common *Kranaatti* (grenate) | 🌍☢ |  |
 | [Kranssi₁](lexemes/Kranssi.html) |  This rare proper noun overlaps more common *Kranssi* (twigs) | 🌍☢ |  |
 | [Krappi₁](lexemes/Krappi.html) |  This rare proper noun overlaps more common *Krappi* (FIXME) | 🌍☢ |  |
-| [Krapu₁](lexemes/Krapu.html) |  This rare proper noun overlaps more common *Krapu* (crab) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Krapu)  |
+| [Krapu₁](lexemes/Krapu.html) |  This rare proper noun overlaps more common *Krapu* (crab) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Krapu)  |
 | [Kreivi₁](lexemes/Kreivi.html) |  This rare proper noun overlaps more common *Kreivi* (count) | 🌍☢ |  |
 | [Kriisi₁](lexemes/Kriisi.html) |  This rare proper noun overlaps more common *Kriisi* (crisis) | 🌍☢ |  |
 | [Kritiikki₁](lexemes/Kritiikki.html) |  This rare proper noun overlaps more common *Kritiikki* (critique) | org☢ |  |
@@ -1489,8 +1489,8 @@ We link to all original sources for reference.
 | [Kukkaro₁](lexemes/Kukkaro.html) |  This rare proper noun overlaps more common *Kukkaro* (purse) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkaro)  |
 | [Kukkatarha₁](lexemes/Kukkatarha.html) |  This rare proper noun overlaps more common *Kukkatarha* (flowergarden) | 🌍☢ |  |
 | [Kukkia₁](lexemes/Kukkia.html) |  This rare proper noun overlaps more common *Kukkia* (bloom) | 🌍☢ |  |
-| [Kukko₁](lexemes/Kukko.html) |  This rare proper noun overlaps more common *Kukko* (cock) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kukko)  |
-| [Kukkonen₁](lexemes/Kukkonen.html) |  This rare proper noun overlaps more common *Kukkonen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kukkonen)  |
+| [Kukko₁](lexemes/Kukko.html) |  This rare proper noun overlaps more common *Kukko* (cock) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kukko)  |
+| [Kukkonen₁](lexemes/Kukkonen.html) |  This rare proper noun overlaps more common *Kukkonen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kukkonen)  |
 | [Kukkopilli₁](lexemes/Kukkopilli.html) |  This rare proper noun overlaps more common *Kukkopilli* (whistle) | 🌍☢ |  |
 | [Kukkula₁](lexemes/Kukkula.html) |  This rare proper noun overlaps more common *Kukkula* (hill) | 🌍☢ |  |
 | [Kukkulainen₁](lexemes/Kukkulainen.html) |  This rare proper noun overlaps more common *Kukkulainen* (FIXME) | 🌍☢ |  |
@@ -1554,7 +1554,7 @@ We link to all original sources for reference.
 | [Kurjenmiekka₁](lexemes/Kurjenmiekka.html) |  This rare proper noun overlaps more common *Kurjenmiekka* (flower) | 🌍☢ |  |
 | [Kurjennokka₁](lexemes/Kurjennokka.html) |  This rare proper noun overlaps more common *Kurjennokka* (FIXME) | 🌍☢ |  |
 | [Kurjenpolvi₁](lexemes/Kurjenpolvi.html) |  This rare proper noun overlaps more common *Kurjenpolvi* (FIXME) | 🌍☢ |  |
-| [Kurki₁](lexemes/Kurki.html) |  This rare proper noun overlaps more common *Kurki* (crane) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kurki) [enwikt](https://fi.wiktionary.org/wiki/Kurki)  |
+| [Kurki₁](lexemes/Kurki.html) |  This rare proper noun overlaps more common *Kurki* (crane) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kurki) [enwikt](https://en.wiktionary.org/wiki/Kurki)  |
 | [Kurkku₁](lexemes/Kurkku.html) |  This rare proper noun overlaps more common *Kurkku* (throat, cucumber) | 🌍☢ |  |
 | [Kurko₁](lexemes/Kurko.html) |  This rare proper noun overlaps more common *Kurko* (king) | 🧑²☢ |  |
 | [Kurssi₁](lexemes/Kurssi.html) |  This rare proper noun overlaps more common *Kurssi* (course) | 🌍☢ |  |
@@ -1571,7 +1571,7 @@ We link to all original sources for reference.
 | [Kutka₁](lexemes/Kutka.html) |  This rare proper noun overlaps more common *Kutka* (itch) | 🌍☢ |  |
 | [Kutsu₁](lexemes/Kutsu.html) |  This proper noun overlaps forms of very common *kutsu* “invitation”, *kutsua* "to invite" etc. | 🌍☢ |  |
 | [Kutsu₁](lexemes/Kutsu.html) |  This rare proper noun overlaps more common *Kutsu* (invite) | 🌍☢ |  |
-| [Kuu₁](lexemes/Kuu.html) |  This rare proper noun overlaps more common *Kuu* (moon) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kuu) [enwikt](https://fi.wiktionary.org/wiki/Kuu)  |
+| [Kuu₁](lexemes/Kuu.html) |  This rare proper noun overlaps more common *Kuu* (moon) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kuu) [enwikt](https://en.wiktionary.org/wiki/Kuu)  |
 | [Kuukkeli₁](lexemes/Kuukkeli.html) |  This rare proper noun overlaps more common *Kuukkeli* (bird) | 🌍☢ |  |
 | [Kuuliainen₁](lexemes/Kuuliainen.html) |  This rare proper noun overlaps more common *Kuuliainen* (honest) | 🌍☢ |  |
 | [Kuultava₁](lexemes/Kuultava.html) |  This rare proper noun overlaps more common *Kuultava* (translucent) | 🌍☢ |  |
@@ -1590,7 +1590,7 @@ We link to all original sources for reference.
 | [Kuusimetsä₁](lexemes/Kuusimetsä.html) |  This rare proper noun overlaps more common *Kuusimetsä* (pine forest) | 🌍☢ |  |
 | [Kuusinen₁](lexemes/Kuusinen.html) |  This rare proper noun overlaps more common *Kuusinen* (six) | 🌍☢ |  |
 | [Kuusio₁](lexemes/Kuusio.html) |  This rare proper noun overlaps more common *Kuusio* (six room apt.) | 🌍☢ |  |
-| [Kuusisto₁](lexemes/Kuusisto.html) |  This rare proper noun overlaps more common *Kuusisto* (pines) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kuusisto)  |
+| [Kuusisto₁](lexemes/Kuusisto.html) |  This rare proper noun overlaps more common *Kuusisto* (pines) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kuusisto)  |
 | [Kuutamo₁](lexemes/Kuutamo.html) |  This rare proper noun overlaps more common *Kuutamo* (moon) | 🌍☢ |  |
 | [Kuutonen₁](lexemes/Kuutonen.html) |  This rare proper noun overlaps more common *Kuutonen* (six) | 🌍☢📺 |  |
 | [Kuutti₁](lexemes/Kuutti.html) |  This rare proper noun overlaps more common *Kuutti* (baby seal) | 🌍☢ |  |
@@ -1640,7 +1640,7 @@ We link to all original sources for reference.
 | [Kärki₁](lexemes/Kärki.html) |  This rare proper noun overlaps more common *Kärki* (head) | 🌍☢ |  |
 | [Kärkäs₁](lexemes/Kärkäs.html) |  This rare proper noun overlaps more common *Kärkäs* (eager) | 🧑²☢ |  |
 | [Kärppä₁](lexemes/Kärppä.html) |  This rare proper noun overlaps more common *Kärppä* (badger) | 🌍☢ |  |
-| [Kärpänen₁](lexemes/Kärpänen.html) |  This rare proper noun overlaps more common *Kärpänen* (fly) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Kärpänen)  |
+| [Kärpänen₁](lexemes/Kärpänen.html) |  This rare proper noun overlaps more common *Kärpänen* (fly) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kärpänen)  |
 | [Kärri₁](lexemes/Kärri.html) |  This rare proper noun overlaps more common *Kärri* (cart) | 🌍☢ |  |
 | [Kärry₁](lexemes/Kärry.html) |  This rare proper noun overlaps more common *Kärry* (cart) | 🌍☢ |  |
 | [Kärsä₁](lexemes/Kärsä.html) |  This rare proper noun overlaps more common *Kärsä* (snout) | 🌍☢ |  |
@@ -1662,7 +1662,7 @@ We link to all original sources for reference.
 | [Kääntöpiiri₁](lexemes/Kääntöpiiri.html) |  This rare proper noun overlaps more common *Kääntöpiiri* (tropic) | org☢ |  |
 | [Kääpä₁](lexemes/Kääpä.html) |  This rare proper noun overlaps more common *Kääpä* (FIXME) | 🌍☢ |  |
 | [Kääriä₁](lexemes/Kääriä.html) |  This rare proper noun overlaps more common *Kääriä* (roll) | 🌍☢ |  |
-| [Kääriäinen₁](lexemes/Kääriäinen.html) |  This rare proper noun overlaps more common *Kääriäinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kääriäinen) [enwikt](https://fi.wiktionary.org/wiki/Kääriäinen)  |
+| [Kääriäinen₁](lexemes/Kääriäinen.html) |  This rare proper noun overlaps more common *Kääriäinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kääriäinen) [enwikt](https://en.wiktionary.org/wiki/Kääriäinen)  |
 | [Käärmekuusi₁](lexemes/Käärmekuusi.html) |  This rare proper noun overlaps more common *Käärmekuusi* (snake fir) | 🌍☢ |  |
 | [Kökkö₁](lexemes/Kökkö.html) |  This rare proper noun overlaps more common *Kökkö* (clunky) | 🌍☢ |  |
 | [Köngäs₁](lexemes/Köngäs.html) |  This rare proper noun overlaps more common *Köngäs* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Köngäs)  |
@@ -1677,7 +1677,7 @@ We link to all original sources for reference.
 | [Laaka₁](lexemes/Laaka.html) |  This rare proper noun overlaps more common *Laaka* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Laaka)  |
 | [Laakeri₁](lexemes/Laakeri.html) |  This rare proper noun overlaps more common *Laakeri* (FIXME) | 🌍☢ |  |
 | [Laakerikivi₁](lexemes/Laakerikivi.html) |  This rare proper noun overlaps more common *Laakerikivi* (FIXME) | 🌍☢ |  |
-| [Laakso₁](lexemes/Laakso.html) |  This rare proper noun overlaps more common *Laakso* (valley) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Laakso)  |
+| [Laakso₁](lexemes/Laakso.html) |  This rare proper noun overlaps more common *Laakso* (valley) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Laakso)  |
 | [Laama₁](lexemes/Laama.html) |  This rare proper noun overlaps more common *Laama* (llama) | 🌍☢ |  |
 | [Laamanni₁](lexemes/Laamanni.html) |  This rare proper noun overlaps more common *Laamanni* (layman) | 🌍☢ |  |
 | [Laari₁](lexemes/Laari.html) |  This rare proper noun overlaps more common *Laari* (lair) | 🌍☢ |  |
@@ -1691,7 +1691,7 @@ We link to all original sources for reference.
 | [Lahdeke₁](lexemes/Lahdeke.html) |  This rare proper noun overlaps more common *Lahdeke* (FIXME) | 🌍☢ |  |
 | [Lahdelma₁](lexemes/Lahdelma.html) |  This rare proper noun overlaps more common *Lahdelma* (FIXME) | 🌍☢ |  |
 | [Lahdenpohja₁](lexemes/Lahdenpohja.html) |  This rare proper noun overlaps more common *Lahdenpohja* (FIXME) | 🌍☢ |  |
-| [Lahja₁](lexemes/Lahja.html) |  This rare proper noun overlaps more common *Lahja* (gift) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lahja) [enwikt](https://fi.wiktionary.org/wiki/Lahja)  |
+| [Lahja₁](lexemes/Lahja.html) |  This rare proper noun overlaps more common *Lahja* (gift) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lahja) [enwikt](https://en.wiktionary.org/wiki/Lahja)  |
 | [Lahje₁](lexemes/Lahje.html) |  This rare proper noun overlaps more common *Lahje* (pant) | 🌍☢ |  |
 | [Lahna₁](lexemes/Lahna.html) |  This rare proper noun overlaps more common *Lahna* (fish) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lahna)  |
 | [Laho₁](lexemes/Laho.html) |  This rare proper noun overlaps more common *Laho* (rotten) | 🌍☢ |  |
@@ -1700,8 +1700,8 @@ We link to all original sources for reference.
 | [Laidunmaa₁](lexemes/Laidunmaa.html) |  This rare proper noun overlaps more common *Laidunmaa* (FIXME) | 🌍☢ |  |
 | [Laiha₁](lexemes/Laiha.html) |  This rare proper noun overlaps more common *Laiha* (thin) | 🌍☢ |  |
 | [Laikka₁](lexemes/Laikka.html) |  This rare proper noun overlaps more common *Laikka* (FIXME) | 🌍☢ |  |
-| [Laina₁](lexemes/Laina.html) |  This rare proper noun overlaps more common *Laina* (loan) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Laina)  |
-| [Laine₁](lexemes/Laine.html) |  This rare proper noun overlaps more common *Laine* (wave) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Laine) [enwikt](https://fi.wiktionary.org/wiki/Laine)  |
+| [Laina₁](lexemes/Laina.html) |  This rare proper noun overlaps more common *Laina* (loan) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Laina)  |
+| [Laine₁](lexemes/Laine.html) |  This rare proper noun overlaps more common *Laine* (wave) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Laine) [enwikt](https://en.wiktionary.org/wiki/Laine)  |
 | [lainkaan₁](lexemes/lainkaan.html) |  usually seen as adverb (at all), but can be analysed as a form of *laki* (law, hilltop) |  | [fiwikt](https://fi.wiktionary.org/wiki/lainkaan)  |
 | [Laiska₁](lexemes/Laiska.html) |  This rare proper noun overlaps more common *Laiska* (lazy) | 🌍☢ |  |
 | [Laita₁](lexemes/Laita.html) |  This rare proper noun overlaps more common *Laita* (side) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Laita)  |
@@ -1735,8 +1735,8 @@ We link to all original sources for reference.
 | [Lantinki₁](lexemes/Lantinki.html) |  This rare proper noun overlaps more common *Lantinki* (FIXME) | 🌍☢ |  |
 | [Lapinkylä₁](lexemes/Lapinkylä.html) |  This rare proper noun overlaps more common *Lapinkylä* (FIXME) | 🌍☢ |  |
 | [Lapio₁](lexemes/Lapio.html) |  This rare proper noun overlaps more common *Lapio* (shovel) | 🌍☢ |  |
-| [Lappalainen₁](lexemes/Lappalainen.html) |  This rare proper noun overlaps more common *Lappalainen* (lapp) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Lappalainen)  |
-| [Lappi₁](lexemes/Lappi.html) |  This rare proper noun overlaps more common *Lappi* (lapland) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lappi) [enwikt](https://fi.wiktionary.org/wiki/Lappi)  |
+| [Lappalainen₁](lexemes/Lappalainen.html) |  This rare proper noun overlaps more common *Lappalainen* (lapp) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lappalainen)  |
+| [Lappi₁](lexemes/Lappi.html) |  This rare proper noun overlaps more common *Lappi* (lapland) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lappi) [enwikt](https://en.wiktionary.org/wiki/Lappi)  |
 | [Lappo₁](lexemes/Lappo.html) |  This rare proper noun overlaps more common *Lappo* (FIXME) | 🌍☢ |  |
 | [Lappunen₁](lexemes/Lappunen.html) |  This rare proper noun overlaps more common *Lappunen* (post-it note) | 🌍☢ |  |
 | [Larva₁](lexemes/Larva.html) |  This rare proper noun overlaps more common *Larva* (FIXME) | 🌍☢ |  |
@@ -1772,15 +1772,15 @@ We link to all original sources for reference.
 | [Lehmä₁](lexemes/Lehmä.html) |  This rare proper noun overlaps more common *Lehmä* (cow) | 🌍☢ |  |
 | [Lehmänen₁](lexemes/Lehmänen.html) |  This rare proper noun overlaps more common *Lehmänen* (FIXME) | 🌍☢ |  |
 | [Lehteri₁](lexemes/Lehteri.html) |  This rare proper noun overlaps more common *Lehteri* (FIXME) | 🌍☢ |  |
-| [Lehti₁](lexemes/Lehti.html) |  This rare proper noun overlaps more common *Lehti* (leaf) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehti) [enwikt](https://fi.wiktionary.org/wiki/Lehti)  |
+| [Lehti₁](lexemes/Lehti.html) |  This rare proper noun overlaps more common *Lehti* (leaf) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehti) [enwikt](https://en.wiktionary.org/wiki/Lehti)  |
 | [Lehtikanta₁](lexemes/Lehtikanta.html) |  This rare proper noun overlaps more common *Lehtikanta* (FIXME) | 🌍☢ |  |
 | [Lehtikuva₁](lexemes/Lehtikuva.html) |  This rare proper noun overlaps more common *Lehtikuva* (press picture) | org☢ |  |
 | [Lehtimaja₁](lexemes/Lehtimaja.html) |  This rare proper noun overlaps more common *Lehtimaja* (treehouse) | 🌍☢ |  |
-| [Lehtinen₁](lexemes/Lehtinen.html) |  This rare proper noun overlaps more common *Lehtinen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Lehtinen)  |
+| [Lehtinen₁](lexemes/Lehtinen.html) |  This rare proper noun overlaps more common *Lehtinen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lehtinen)  |
 | [Lehtipuu₁](lexemes/Lehtipuu.html) |  This rare proper noun overlaps more common *Lehtipuu* (leafy tree) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehtipuu)  |
 | [Lehtiö₁](lexemes/Lehtiö.html) |  This rare proper noun overlaps more common *Lehtiö* (leaflet) | 🌍☢ |  |
 | [lehtiö-pc₁](lexemes/lehtiö-pc.html) |  notebook–Personal Computer |  |  |
-| [Lehto₁](lexemes/Lehto.html) |  This rare proper noun overlaps more common *Lehto* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Lehto)  |
+| [Lehto₁](lexemes/Lehto.html) |  This rare proper noun overlaps more common *Lehto* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lehto)  |
 | [Lehtomaa₁](lexemes/Lehtomaa.html) |  This rare proper noun overlaps more common *Lehtomaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehtomaa)  |
 | [Lehtoniitty₁](lexemes/Lehtoniitty.html) |  This rare proper noun overlaps more common *Lehtoniitty* (FIXME) | 🌍☢ |  |
 | [Lehvistö₁](lexemes/Lehvistö.html) |  This rare proper noun overlaps more common *Lehvistö* (FIXME) | 🌍☢ |  |
@@ -1800,10 +1800,10 @@ We link to all original sources for reference.
 | [Leka₁](lexemes/Leka.html) |  This rare proper noun overlaps more common *Leka* (hammer) | 🧑²☢ |  |
 | [Lekkeri₁](lexemes/Lekkeri.html) |  This rare proper noun overlaps more common *Lekkeri* (FIXME) | 🌍☢ |  |
 | [Lelu₁](lexemes/Lelu.html) |  This rare proper noun overlaps more common *Lelu* (toy) | 🌍☢ |  |
-| [Lemmikki₁](lexemes/Lemmikki.html) |  This rare proper noun overlaps more common *Lemmikki* (pet) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Lemmikki)  |
-| [Lemmitty₁](lexemes/Lemmitty.html) |  This rare proper noun overlaps more common *Lemmitty* (loved) | 🧑¹☢ | [enwikt](https://fi.wiktionary.org/wiki/Lemmitty)  |
+| [Lemmikki₁](lexemes/Lemmikki.html) |  This rare proper noun overlaps more common *Lemmikki* (pet) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Lemmikki)  |
+| [Lemmitty₁](lexemes/Lemmitty.html) |  This rare proper noun overlaps more common *Lemmitty* (loved) | 🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Lemmitty)  |
 | [Lempeä₁](lexemes/Lempeä.html) |  This rare proper noun overlaps more common *Lempeä* (nice) | 🌍☢ |  |
-| [Lempi₁](lexemes/Lempi.html) |  This rare proper noun overlaps more common *Lempi* (love) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lempi) [enwikt](https://fi.wiktionary.org/wiki/Lempi)  |
+| [Lempi₁](lexemes/Lempi.html) |  This rare proper noun overlaps more common *Lempi* (love) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lempi) [enwikt](https://en.wiktionary.org/wiki/Lempi)  |
 | [Lemu₁](lexemes/Lemu.html) |  This rare proper noun overlaps more common *Lemu* (smell) | 🌍☢ |  |
 | [Lento₁](lexemes/Lento.html) |  This rare proper noun overlaps more common *Lento* (flight) | 🌍☢ |  |
 | [Lentokenttä₁](lexemes/Lentokenttä.html) |  This rare proper noun overlaps more common *Lentokenttä* (airport) | 🌍☢ |  |
@@ -1811,7 +1811,7 @@ We link to all original sources for reference.
 | [Lepakko₁](lexemes/Lepakko.html) |  This rare proper noun overlaps more common *Lepakko* (bat) | 🌍☢ |  |
 | [Lepikko₁](lexemes/Lepikko.html) |  This rare proper noun overlaps more common *Lepikko* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepikko)  |
 | [Lepikkö₁](lexemes/Lepikkö.html) |  This rare proper noun overlaps more common *Lepikkö* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepikkö)  |
-| [Lepistö₁](lexemes/Lepistö.html) |  This rare proper noun overlaps more common *Lepistö* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Lepistö)  |
+| [Lepistö₁](lexemes/Lepistö.html) |  This rare proper noun overlaps more common *Lepistö* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lepistö)  |
 | [Lepo₁](lexemes/Lepo.html) |  This rare proper noun overlaps more common *Lepo* (rest) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepo)  |
 | [Lepopaikka₁](lexemes/Lepopaikka.html) |  This rare proper noun overlaps more common *Lepopaikka* (resting place) | 🌍☢ |  |
 | [Leppä₁](lexemes/Leppä.html) |  This rare proper noun overlaps more common *Leppä* (tree) | 🌍☢ |  |
@@ -1840,7 +1840,7 @@ We link to all original sources for reference.
 | [Lihava₁](lexemes/Lihava.html) |  This rare proper noun overlaps more common *Lihava* (fat) | 🌍☢ |  |
 | [Liila₁](lexemes/Liila.html) |  This rare proper noun overlaps more common *Liila* (lila) | 🌍☢ |  |
 | [Liima₁](lexemes/Liima.html) |  This rare proper noun overlaps more common *Liima* (glue) | 🧑²☢ |  |
-| [Liina₁](lexemes/Liina.html) |  This rare proper noun overlaps more common *Liina* (cloth) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Liina)  |
+| [Liina₁](lexemes/Liina.html) |  This rare proper noun overlaps more common *Liina* (cloth) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Liina)  |
 | [Liinaharja₁](lexemes/Liinaharja.html) |  This rare proper noun overlaps more common *Liinaharja* (FIXME) | 🌍☢ |  |
 | [Liite₁](lexemes/Liite.html) |  This rare proper noun overlaps more common *Liite* (appendix) | 🌍☢ |  |
 | [Liiteri₁](lexemes/Liiteri.html) |  This rare proper noun overlaps more common *Liiteri* (hut) | 🌍☢ |  |
@@ -1858,10 +1858,10 @@ We link to all original sources for reference.
 | [Linkku₁](lexemes/Linkku.html) |  This rare proper noun overlaps more common *Linkku* (bus) | 🌍☢ |  |
 | [Linko₁](lexemes/Linko.html) |  This rare proper noun overlaps more common *Linko* (sling) | 🧑²☢ |  |
 | [Linkomies₁](lexemes/Linkomies.html) |  This rare proper noun overlaps more common *Linkomies* (slingman) | 🧑²☢ |  |
-| [Linna₁](lexemes/Linna.html) |  This rare proper noun overlaps more common *Linna* (castle) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linna) [enwikt](https://fi.wiktionary.org/wiki/Linna)  |
+| [Linna₁](lexemes/Linna.html) |  This rare proper noun overlaps more common *Linna* (castle) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linna) [enwikt](https://en.wiktionary.org/wiki/Linna)  |
 | [Linnavuori₁](lexemes/Linnavuori.html) |  This rare proper noun overlaps more common *Linnavuori* (castle mountain) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linnavuori)  |
 | [Linnunlaulu₁](lexemes/Linnunlaulu.html) |  This rare proper noun overlaps more common *Linnunlaulu* (birdsong) | 🌍☢ |  |
-| [Linnunrata₁](lexemes/Linnunrata.html) |  This rare proper noun overlaps more common *Linnunrata* (milky way) | ⁈☢ | [enwikt](https://fi.wiktionary.org/wiki/Linnunrata)  |
+| [Linnunrata₁](lexemes/Linnunrata.html) |  This rare proper noun overlaps more common *Linnunrata* (milky way) | ⁈☢ | [enwikt](https://en.wiktionary.org/wiki/Linnunrata)  |
 | [Lintu₁](lexemes/Lintu.html) |  This rare proper noun overlaps more common *Lintu* (bird) | 🌍☢ |  |
 | [Lintujärvi₁](lexemes/Lintujärvi.html) |  This rare proper noun overlaps more common *Lintujärvi* (birdlake) | 🌍☢ |  |
 | [Lintukoto₁](lexemes/Lintukoto.html) |  This rare proper noun overlaps more common *Lintukoto* (birdhome) | 🌍☢ |  |
@@ -1913,7 +1913,7 @@ We link to all original sources for reference.
 | [Lukki₁](lexemes/Lukki.html) |  This rare proper noun overlaps more common *Lukki* (spider) | 🌍☢ |  |
 | [Lukko₁](lexemes/Lukko.html) |  This rare proper noun overlaps more common *Lukko* (lock) | 🌍☢ |  |
 | [Lume₁](lexemes/Lume.html) |  This rare proper noun overlaps more common *Lume* (fake) | 🧑²☢ |  |
-| [Lumi₁](lexemes/Lumi.html) |  This rare proper noun overlaps more common *Lumi* (snow) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lumi) [enwikt](https://fi.wiktionary.org/wiki/Lumi)  |
+| [Lumi₁](lexemes/Lumi.html) |  This rare proper noun overlaps more common *Lumi* (snow) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lumi) [enwikt](https://en.wiktionary.org/wiki/Lumi)  |
 | [Lumikko₁](lexemes/Lumikko.html) |  This rare proper noun overlaps more common *Lumikko* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lumikko)  |
 | [Lumme₁](lexemes/Lumme.html) |  This rare proper noun overlaps more common *Lumme* (FIXME) | 🧑²☢ |  |
 | [Lumous₁](lexemes/Lumous.html) |  This rare proper noun overlaps more common *Lumous* (enchantment) | 🧑²☢ |  |
@@ -1922,7 +1922,7 @@ We link to all original sources for reference.
 | [Lunni₁](lexemes/Lunni.html) |  This rare proper noun overlaps more common *Lunni* (bird) | 🌍☢ |  |
 | [Luo₁](lexemes/Luo.html) |  This rare proper noun overlaps more common *Luo* (to nearby) | 🧑²☢ |  |
 | [Luode₁](lexemes/Luode.html) |  This rare proper noun overlaps more common *Luode* (northwest) | 🌍☢ |  |
-| [Luoja₁](lexemes/Luoja.html) |  This rare proper noun overlaps more common *Luoja* (creator) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Luoja)  |
+| [Luoja₁](lexemes/Luoja.html) |  This rare proper noun overlaps more common *Luoja* (creator) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Luoja)  |
 | [Luokka₁](lexemes/Luokka.html) |  This rare proper noun overlaps more common *Luokka* (class) | 🌍☢ |  |
 | [Luola₁](lexemes/Luola.html) |  This rare proper noun overlaps more common *Luola* (cave) | 🌍☢ |  |
 | [Luomi₁](lexemes/Luomi.html) |  This rare proper noun overlaps more common *Luomi* (mole) | 🌍☢ |  |
@@ -1949,7 +1949,7 @@ We link to all original sources for reference.
 | [Lyhty₁](lexemes/Lyhty.html) |  This rare proper noun overlaps more common *Lyhty* (stormlight) | 🌍☢ |  |
 | [Lyhykäinen₁](lexemes/Lyhykäinen.html) |  This rare proper noun overlaps more common *Lyhykäinen* (short) | 🧑²☢ |  |
 | [Lysti₁](lexemes/Lysti.html) |  This rare proper noun overlaps more common *Lysti* (fun) | 🌍☢ |  |
-| [Lyyli₁](lexemes/Lyyli.html) |  This rare proper noun overlaps more common *Lyyli* (lady) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Lyyli)  |
+| [Lyyli₁](lexemes/Lyyli.html) |  This rare proper noun overlaps more common *Lyyli* (lady) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Lyyli)  |
 | [Lyyra₁](lexemes/Lyyra.html) |  This rare proper noun overlaps more common *Lyyra* (lire) | 🌍☢ |  |
 | [Lähde₁](lexemes/Lähde.html) |  This rare proper noun overlaps more common *Lähde* (source) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lähde)  |
 | [Lähdejärvi₁](lexemes/Lähdejärvi.html) |  This rare proper noun overlaps more common *Lähdejärvi* (source lake) | 🌍☢ |  |
@@ -1965,11 +1965,11 @@ We link to all original sources for reference.
 | [Länsiauto₁](lexemes/Länsiauto.html) |  This rare proper noun overlaps more common *Länsiauto* (westcar) | org☢ |  |
 | [Länsimaa₁](lexemes/Länsimaa.html) |  This rare proper noun overlaps more common *Länsimaa* (western country) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Länsimaa)  |
 | [Länsipuoli₁](lexemes/Länsipuoli.html) |  This rare proper noun overlaps more common *Länsipuoli* (FIXME) | 🌍☢ |  |
-| [Länsiranta₁](lexemes/Länsiranta.html) |  This rare proper noun overlaps more common *Länsiranta* (westcoast) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Länsiranta)  |
+| [Länsiranta₁](lexemes/Länsiranta.html) |  This rare proper noun overlaps more common *Länsiranta* (westcoast) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Länsiranta)  |
 | [Länsirinne₁](lexemes/Länsirinne.html) |  This rare proper noun overlaps more common *Länsirinne* (westhill) | 🌍☢ |  |
 | [Läntinen₁](lexemes/Läntinen.html) |  This rare proper noun overlaps more common *Läntinen* (western) | 🌍☢ |  |
 | [läpeensä₁](lexemes/läpeensä.html) |  usually seen as adverb (thoroughly), but can be analysed as a form of *läpi* (hole) |  | [fiwikt](https://fi.wiktionary.org/wiki/läpeensä)  |
-| [läpi₁](lexemes/läpi.html) |  adposition (through) when can be attached to a genitive NP, otherwise adverb (through) |  | [enwikt](https://fi.wiktionary.org/wiki/läpi)  |
+| [läpi₁](lexemes/läpi.html) |  adposition (through) when can be attached to a genitive NP, otherwise adverb (through) |  | [enwikt](https://en.wiktionary.org/wiki/läpi)  |
 | [Läski₁](lexemes/Läski.html) |  This rare proper noun overlaps more common *Läski* (fat) | 🌍☢ |  |
 | [Läskinen₁](lexemes/Läskinen.html) |  This rare proper noun overlaps more common *Läskinen* (fatty) | 🌍☢ |  |
 | [Lätsä₁](lexemes/Lätsä.html) |  This rare proper noun overlaps more common *Lätsä* (cap) | 🌍☢ |  |
@@ -1989,7 +1989,7 @@ We link to all original sources for reference.
 | [Lööperi₁](lexemes/Lööperi.html) |  This rare proper noun overlaps more common *Lööperi* (lie) | 🌍☢ |  |
 | [Lööppi₁](lexemes/Lööppi.html) |  This rare proper noun overlaps more common *Lööppi* (scoop) | org☢ |  |
 | [Ma₁](lexemes/Ma.html) |  This rare proper noun overlaps more common *Ma* (me) | 🧑²☢ |  |
-| [Maa₁](lexemes/Maa.html) |  This rare proper noun overlaps more common *Maa* (earth) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Maa) [enwikt](https://fi.wiktionary.org/wiki/Maa)  |
+| [Maa₁](lexemes/Maa.html) |  This rare proper noun overlaps more common *Maa* (earth) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Maa) [enwikt](https://en.wiktionary.org/wiki/Maa)  |
 | [Maaherra₁](lexemes/Maaherra.html) |  This rare proper noun overlaps more common *Maaherra* (county major) | 🌍☢ |  |
 | [Maahinen₁](lexemes/Maahinen.html) |  This rare proper noun overlaps more common *Maahinen* (ghoul) | 🧑²☢ |  |
 | [Maailmanloppu₁](lexemes/Maailmanloppu.html) |  This rare proper noun overlaps more common *Maailmanloppu* (end of the world) | 🌍☢ |  |
@@ -2001,7 +2001,7 @@ We link to all original sources for reference.
 | [Maakunta₁](lexemes/Maakunta.html) |  This rare proper noun overlaps  very common *maakunta* (county). | org☢ |  |
 | [Maakuntaliitto₁](lexemes/Maakuntaliitto.html) |  This rare proper noun overlaps more common *Maakuntaliitto* (county union) | org☢ |  |
 | [Maalaisliitto₁](lexemes/Maalaisliitto.html) |  This rare proper noun overlaps more common *Maalaisliitto* (farmer union) | org☢ |  |
-| [Maalari₁](lexemes/Maalari.html) |  This rare proper noun overlaps more common *Maalari* (painter) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Maalari)  |
+| [Maalari₁](lexemes/Maalari.html) |  This rare proper noun overlaps more common *Maalari* (painter) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Maalari)  |
 | [Maamies₁](lexemes/Maamies.html) |  This rare proper noun overlaps more common *Maamies* (countryman) | 🧑²☢ |  |
 | [Maantie₁](lexemes/Maantie.html) |  This rare proper noun overlaps more common *Maantie* (country road) | 🌍☢ |  |
 | [Maapohja₁](lexemes/Maapohja.html) |  This rare proper noun overlaps more common *Maapohja* (ground ground) | 🌍☢ |  |
@@ -2016,7 +2016,7 @@ We link to all original sources for reference.
 | [Magna₁](lexemes/Magna.html) |  This rare proper noun overlaps more common *Magna* (magna) | 🧑¹☢♀ |  |
 | [Mahla₁](lexemes/Mahla.html) |  This rare proper noun overlaps more common *Mahla* (tree stuff) | 🌍☢ |  |
 | [Maho₁](lexemes/Maho.html) |  This rare proper noun overlaps more common *Maho* (barren) | 🌍☢ |  |
-| [Maila₁](lexemes/Maila.html) |  This rare proper noun overlaps more common *Maila* (bat) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Maila)  |
+| [Maila₁](lexemes/Maila.html) |  This rare proper noun overlaps more common *Maila* (bat) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Maila)  |
 | [Maili₁](lexemes/Maili.html) |  This rare proper noun overlaps more common *Maili* (mile) | 🧑¹☢♀ |  |
 | [Maina₁](lexemes/Maina.html) |  This rare proper noun overlaps more common *Maina* (FIXME) | 🧑²☢ |  |
 | [Maine₁](lexemes/Maine.html) |  This rare proper noun overlaps more common *Maine* (reputation) | 🌍☢ |  |
@@ -2032,7 +2032,7 @@ We link to all original sources for reference.
 | [Makkara₁](lexemes/Makkara.html) |  This rare proper noun overlaps  very common *makkara* (sausage). | 🌍☢ |  |
 | [Maksa₁](lexemes/Maksa.html) |  This rare proper noun overlaps more common *Maksa* (liver) | 🧑²☢ |  |
 | [Maku₁](lexemes/Maku.html) |  This rare proper noun overlaps  very common *maku* (taste). | 🌍☢ |  |
-| [Malja₁](lexemes/Malja.html) |  This rare proper noun overlaps more common *Malja* (bowl) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Malja)  |
+| [Malja₁](lexemes/Malja.html) |  This rare proper noun overlaps more common *Malja* (bowl) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Malja)  |
 | [Mallas₁](lexemes/Mallas.html) |  This rare proper noun overlaps more common *Mallas* (malt) | 🧑²☢ |  |
 | [Mallasjuoma₁](lexemes/Mallasjuoma.html) |  This rare proper noun overlaps more common *Mallasjuoma* (malt drink) | org☢ |  |
 | [Malli₁](lexemes/Malli.html) |  This rare proper noun overlaps more common *Malli* (model) | 🌍☢ |  |
@@ -2044,7 +2044,7 @@ We link to all original sources for reference.
 | [Mankeli₁](lexemes/Mankeli.html) |  This rare proper noun overlaps more common *Mankeli* (drier) | 🌍☢ |  |
 | [Mankka₁](lexemes/Mankka.html) |  This rare proper noun overlaps more common *Mankka* (radio) | 🌍☢ |  |
 | [Manna₁](lexemes/Manna.html) |  This rare proper noun overlaps more common *Manna* (mana) | 🧑¹☢ |  |
-| [Manne₁](lexemes/Manne.html) |  This rare proper noun overlaps more common *Manne* (gypsy) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Manne)  |
+| [Manne₁](lexemes/Manne.html) |  This rare proper noun overlaps more common *Manne* (gypsy) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Manne)  |
 | [Manner₁](lexemes/Manner.html) |  This rare proper noun overlaps more common *Manner* (continent) | 🧑²☢ |  |
 | [Mannermaa₁](lexemes/Mannermaa.html) |  This rare proper noun overlaps more common *Mannermaa* (continental land) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mannermaa)  |
 | [Mansikka₁](lexemes/Mansikka.html) |  This rare proper noun overlaps more common *Mansikka* (strawberry) | 🌍☢ |  |
@@ -2057,7 +2057,7 @@ We link to all original sources for reference.
 | [Marina₁](lexemes/Marina.html) |  This rare proper noun overlaps more common *Marina* (whine) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Marina)  |
 | [Marjalevä₁](lexemes/Marjalevä.html) |  This rare proper noun overlaps more common *Marjalevä* (berryseaweed) | 🌍☢ |  |
 | [Markka₁](lexemes/Markka.html) |  This rare proper noun overlaps more common *Markka* (mark) | 🌍☢ |  |
-| [Markkanen₁](lexemes/Markkanen.html) |  This rare proper noun overlaps more common *Markkanen* (marks) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Markkanen)  |
+| [Markkanen₁](lexemes/Markkanen.html) |  This rare proper noun overlaps more common *Markkanen* (marks) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Markkanen)  |
 | [Markkina₁](lexemes/Markkina.html) |  This rare proper noun overlaps  very common *markkina* (market). | 🌍☢ |  |
 | [Marras₁](lexemes/Marras.html) |  This rare proper noun overlaps more common *Marras* (death) | 🧑²☢ |  |
 | [Massa₁](lexemes/Massa.html) |  This rare proper noun overlaps more common *Massa* (mass) | 🌍☢ |  |
@@ -2093,7 +2093,7 @@ We link to all original sources for reference.
 | [Meridiaani₁](lexemes/Meridiaani.html) |  This rare proper noun overlaps more common *Meridiaani* (meridian) | org☢ |  |
 | [Merihiekka₁](lexemes/Merihiekka.html) |  This rare proper noun overlaps more common *Merihiekka* (sea sand) | 🌍☢ |  |
 | [Merihirviö₁](lexemes/Merihirviö.html) |  This rare proper noun overlaps more common *Merihirviö* (sea monster) | 🌍☢ |  |
-| [Meriläinen₁](lexemes/Meriläinen.html) |  This rare proper noun overlaps more common *Meriläinen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Meriläinen)  |
+| [Meriläinen₁](lexemes/Meriläinen.html) |  This rare proper noun overlaps more common *Meriläinen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Meriläinen)  |
 | [Merisatama₁](lexemes/Merisatama.html) |  This rare proper noun overlaps more common *Merisatama* (sea docks) | 🌍☢ |  |
 | [Meritie₁](lexemes/Meritie.html) |  This rare proper noun overlaps more common *Meritie* (sea road) | 🌍☢ |  |
 | [Merituuli₁](lexemes/Merituuli.html) |  This rare proper noun overlaps more common *Merituuli* (sea wind) | 🧑¹☢♀ |  |
@@ -2135,15 +2135,15 @@ We link to all original sources for reference.
 | [Mieto₁](lexemes/Mieto.html) |  This rare proper noun overlaps more common *Mieto* (mild) | 🌍☢ |  |
 | [Mietti₁](lexemes/Mietti.html) |  This proper noun overlaps forms of very common *miettiä* (to think). | 🌍 |  |
 | [Mikro₁](lexemes/Mikro.html) |  This rare proper noun overlaps more common *Mikro* (micro) | 🌍☢ |  |
-| [mikä₁](lexemes/mikä.html) |  what, as interrogataive, “mikä tuo on?” |  | [enwikt](https://fi.wiktionary.org/wiki/mikä)  |
+| [mikä₁](lexemes/mikä.html) |  what, as interrogataive, “mikä tuo on?” |  | [enwikt](https://en.wiktionary.org/wiki/mikä)  |
 | [mikä₂](lexemes/mikä.html) |  what a, quantifier, “mikä mainio esimerkkilause” |  |  |
 | [mikä₃](lexemes/mikä.html) |  that, which, as relative pronoun, “se meni, mikä tuli” |  |  |
 | [mikä₄](lexemes/mikä.html) |  that, which, as conjunction |  |  |
 | [mikäli₁](lexemes/mikäli.html) |  if, given that, sub-ordinating conjunction, “mikäli voidaan” |  | [fiwikt](https://fi.wiktionary.org/wiki/mikäli)  |
 | [Miljoona₁](lexemes/Miljoona.html) |  This rare proper noun overlaps more common *Miljoona* (million) | 🧑²☢ |  |
 | [Milli₁](lexemes/Milli.html) |  This rare proper noun overlaps more common *Milli* (millimetre) | 🧑¹☢♀ |  |
-| [Mimmi₁](lexemes/Mimmi.html) |  This rare proper noun overlaps more common *Mimmi* (gal) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Mimmi)  |
-| [Mimosa₁](lexemes/Mimosa.html) |  This rare proper noun overlaps more common *Mimosa* (mimosa) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Mimosa)  |
+| [Mimmi₁](lexemes/Mimmi.html) |  This rare proper noun overlaps more common *Mimmi* (gal) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Mimmi)  |
+| [Mimosa₁](lexemes/Mimosa.html) |  This rare proper noun overlaps more common *Mimosa* (mimosa) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Mimosa)  |
 | [min₁](lexemes/min.html) |  any of the forms of Chinese spoken in Fukien province (FinnWordNet); this causes some compounding problems | ☢📏 |  |
 | [Mineraali₁](lexemes/Mineraali.html) |  This rare proper noun overlaps more common *Mineraali* (mineral) | 🌍☢ |  |
 | [Missi₁](lexemes/Missi.html) |  This rare proper noun overlaps more common *Missi* (miss) | 🧑²☢ |  |
@@ -2242,9 +2242,9 @@ We link to all original sources for reference.
 | [Myötäinen₁](lexemes/Myötäinen.html) |  This rare proper noun overlaps more common *Myötäinen* (downwind) | 🌍☢ |  |
 | [Myötämäki₁](lexemes/Myötämäki.html) |  This rare proper noun overlaps more common *Myötämäki* (downhill) | 🌍☢ |  |
 | [Mäenrinne₁](lexemes/Mäenrinne.html) |  This rare proper noun overlaps more common *Mäenrinne* (hill) | 🌍☢ |  |
-| [Mäki₁](lexemes/Mäki.html) |  This rare proper noun overlaps more common *Mäki* (hill) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Mäki)  |
+| [Mäki₁](lexemes/Mäki.html) |  This rare proper noun overlaps more common *Mäki* (hill) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Mäki)  |
 | [Mäkimaa₁](lexemes/Mäkimaa.html) |  This rare proper noun overlaps more common *Mäkimaa* (hill land) | 🌍☢ |  |
-| [Mäkinen₁](lexemes/Mäkinen.html) |  This rare proper noun overlaps more common *Mäkinen* (hilly) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Mäkinen)  |
+| [Mäkinen₁](lexemes/Mäkinen.html) |  This rare proper noun overlaps more common *Mäkinen* (hilly) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Mäkinen)  |
 | [Mäkitupa₁](lexemes/Mäkitupa.html) |  This rare proper noun overlaps more common *Mäkitupa* (hill hut) | 🌍☢ |  |
 | [Mäkitupalainen₁](lexemes/Mäkitupalainen.html) |  This rare proper noun overlaps more common *Mäkitupalainen* (hill hutter) | 🌍☢ |  |
 | [Mäkärä₁](lexemes/Mäkärä.html) |  This rare proper noun overlaps more common *Mäkärä* (mosquito) | 🌍☢ |  |
@@ -2330,7 +2330,7 @@ We link to all original sources for reference.
 | [Niemenkärki₁](lexemes/Niemenkärki.html) |  This rare proper noun overlaps more common *Niemenkärki* (tip of peninsula) | 🌍☢ |  |
 | [Niemennenä₁](lexemes/Niemennenä.html) |  This rare proper noun overlaps more common *Niemennenä* (nose of peninsula) | 🌍☢ |  |
 | [Niemennokka₁](lexemes/Niemennokka.html) |  This rare proper noun overlaps more common *Niemennokka* (tip of peninsula) | 🌍☢ |  |
-| [Niemi₁](lexemes/Niemi.html) |  This rare proper noun overlaps more common *Niemi* (peninsula) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niemi) [enwikt](https://fi.wiktionary.org/wiki/Niemi)  |
+| [Niemi₁](lexemes/Niemi.html) |  This rare proper noun overlaps more common *Niemi* (peninsula) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niemi) [enwikt](https://en.wiktionary.org/wiki/Niemi)  |
 | [Niemimaa₁](lexemes/Niemimaa.html) |  This rare proper noun overlaps more common *Niemimaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niemimaa)  |
 | [niin₁](lexemes/niin.html) |  so, such, adverb, “tehtiin niin” |  |  |
 | [niin₂](lexemes/niin.html) |  as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin” |  |  |
@@ -2386,9 +2386,9 @@ We link to all original sources for reference.
 | [Nurina₁](lexemes/Nurina.html) |  This rare proper noun overlaps more common *Nurina* (murmur) | 🌍☢ |  |
 | [Nurja₁](lexemes/Nurja.html) |  This rare proper noun overlaps more common *Nurja* (wrong side) | 🌍☢ |  |
 | [Nurkka₁](lexemes/Nurkka.html) |  This rare proper noun overlaps more common *Nurkka* (corner) | 🌍☢ |  |
-| [Nurmi₁](lexemes/Nurmi.html) |  This rare proper noun overlaps more common *Nurmi* (grass) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nurmi) [enwikt](https://fi.wiktionary.org/wiki/Nurmi)  |
+| [Nurmi₁](lexemes/Nurmi.html) |  This rare proper noun overlaps more common *Nurmi* (grass) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nurmi) [enwikt](https://en.wiktionary.org/wiki/Nurmi)  |
 | [Nurmikko₁](lexemes/Nurmikko.html) |  This rare proper noun overlaps more common *Nurmikko* (grass) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nurmikko)  |
-| [Nurminen₁](lexemes/Nurminen.html) |  This rare proper noun overlaps more common *Nurminen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Nurminen)  |
+| [Nurminen₁](lexemes/Nurminen.html) |  This rare proper noun overlaps more common *Nurminen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Nurminen)  |
 | [Nuttura₁](lexemes/Nuttura.html) |  This rare proper noun overlaps more common *Nuttura* (FIXME) | 🌍☢ |  |
 | [nykyisin₁](lexemes/nykyisin.html) |  usually seen as adverb (nowadays), but can be analysed as instructive of the adjective *nykyinen* (current) |  | [fiwikt](https://fi.wiktionary.org/wiki/nykyisin)  |
 | [Nykypäivä₁](lexemes/Nykypäivä.html) |  This rare proper noun overlaps more common *Nykypäivä* (today) | org☢📺 |  |
@@ -2418,8 +2418,8 @@ We link to all original sources for reference.
 | [oikeastaan₁](lexemes/oikeastaan.html) |  usually seen as adverb (actually), but can be analysed as a form of *oikea* (right) |  | [fiwikt](https://fi.wiktionary.org/wiki/oikeastaan)  |
 | [Oikeusministeriö₁](lexemes/Oikeusministeriö.html) |  This rare proper noun overlaps more common *Oikeusministeriö* (ministry of justice) | org☢ |  |
 | [Oikotie₁](lexemes/Oikotie.html) |  This rare proper noun overlaps more common *Oikotie* (shortcut) | 🌍☢ |  |
-| [Oinas₁](lexemes/Oinas.html) |  This rare proper noun overlaps more common *Oinas* (cancer) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Oinas)  |
-| [Oiva₁](lexemes/Oiva.html) |  This rare proper noun overlaps more common *Oiva* (great) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Oiva)  |
+| [Oinas₁](lexemes/Oinas.html) |  This rare proper noun overlaps more common *Oinas* (cancer) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Oinas)  |
+| [Oiva₁](lexemes/Oiva.html) |  This rare proper noun overlaps more common *Oiva* (great) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Oiva)  |
 | [Oja₁](lexemes/Oja.html) |  This rare proper noun overlaps more common *Oja* (ditch) | 🌍☢ |  |
 | [Ojanvarsi₁](lexemes/Ojanvarsi.html) |  This rare proper noun overlaps more common *Ojanvarsi* (ditch) | 🌍☢ |  |
 | [Ojasto₁](lexemes/Ojasto.html) |  This rare proper noun overlaps more common *Ojasto* (FIXME) | 🌍☢ |  |
@@ -2447,7 +2447,7 @@ We link to all original sources for reference.
 | [Onnela₁](lexemes/Onnela.html) |  This rare proper noun overlaps more common *Onnela* (FIXME) | 🌍☢ |  |
 | [Onnenmaa₁](lexemes/Onnenmaa.html) |  This rare proper noun overlaps more common *Onnenmaa* (FIXME) | 🌍☢ |  |
 | [Onneton₁](lexemes/Onneton.html) |  This rare proper noun overlaps more common *Onneton* (unhappy) | 🌍☢ |  |
-| [Onni₁](lexemes/Onni.html) |  This proper noun overlaps  very common *onni* (happiness). | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Onni) [enwikt](https://fi.wiktionary.org/wiki/Onni)  |
+| [Onni₁](lexemes/Onni.html) |  This proper noun overlaps  very common *onni* (happiness). | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Onni) [enwikt](https://en.wiktionary.org/wiki/Onni)  |
 | [Ontto₁](lexemes/Ontto.html) |  This rare proper noun overlaps more common *Ontto* (hollow) | 🌍☢ |  |
 | [Opas₁](lexemes/Opas.html) |  This rare proper noun overlaps more common *Opas* (guide) | 🧑²☢ |  |
 | [Opus₁](lexemes/Opus.html) |  This rare proper noun overlaps more common *Opus* (book) | org☢ |  |
@@ -2457,13 +2457,13 @@ We link to all original sources for reference.
 | [Orava₁](lexemes/Orava.html) |  This rare proper noun overlaps more common *Orava* (squirrel) | 🌍☢ |  |
 | [Ori₁](lexemes/Ori.html) |  This rare proper noun overlaps more common *Ori* (stud) | 🌍☢ |  |
 | [Orpo₁](lexemes/Orpo.html) |  This rare proper noun overlaps more common *Orpo* (orphan) | 🧑²☢ |  |
-| [Orvokki₁](lexemes/Orvokki.html) |  This rare proper noun overlaps more common *Orvokki* (flower) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Orvokki)  |
+| [Orvokki₁](lexemes/Orvokki.html) |  This rare proper noun overlaps more common *Orvokki* (flower) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Orvokki)  |
 | [Osa₁](lexemes/Osa.html) |  This proper noun overlaps  very common *osa* (part). | 🧑²☢ |  |
 | [osaksi₁](lexemes/osaksi.html) |  usually seen as adverb (partially), but can be analysed as translative of the noun *osa* (part) |  | [fiwikt](https://fi.wiktionary.org/wiki/osaksi)  |
 | [Osta₁](lexemes/Osta.html) |  This proper noun overlaps forms of very common *ostaa* (to buy). | 🌍 |  |
 | [Osuuspankki₁](lexemes/Osuuspankki.html) |  This rare proper noun overlaps more common *Osuuspankki* (bank) | org☢ |  |
 | [Otsa₁](lexemes/Otsa.html) |  This rare proper noun overlaps more common *Otsa* (forehead) | 🧑²☢ |  |
-| [Otso₁](lexemes/Otso.html) |  This rare proper noun overlaps more common *Otso* (bear) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Otso)  |
+| [Otso₁](lexemes/Otso.html) |  This rare proper noun overlaps more common *Otso* (bear) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Otso)  |
 | [Otsoni₁](lexemes/Otsoni.html) |  This rare proper noun overlaps more common *Otsoni* (ozone) | org☢ |  |
 | [ottamatta₁](lexemes/ottamatta.html) |  excepting, as adposition, illative complement, mainly “lukuun ottamatta“ |  |  |
 | [ottamatta₁](lexemes/ottamatta.html) |  excepting, as adposition, illative complement, mainly “lukuun ottamatta” |  |  |
@@ -2481,7 +2481,7 @@ We link to all original sources for reference.
 | [Pahkurainen₁](lexemes/Pahkurainen.html) |  This rare proper noun overlaps more common *Pahkurainen* (FIXME) | 🌍☢ |  |
 | [Pahlavi₁](lexemes/Pahlavi.html) |  This rare proper noun overlaps more common *Pahlavi* (FIXME) | 🧑²☢ |  |
 | [Pahna₁](lexemes/Pahna.html) |  This rare proper noun overlaps more common *Pahna* (FIXME) | 🌍☢ |  |
-| [pai₁](lexemes/pai.html) |  This noun means a pie but overlaps forms of very common *paikka* (place) among others. | ☢ | [enwikt](https://fi.wiktionary.org/wiki/pai)  |
+| [pai₁](lexemes/pai.html) |  This noun means a pie but overlaps forms of very common *paikka* (place) among others. | ☢ | [enwikt](https://en.wiktionary.org/wiki/pai)  |
 | [Paikka₁](lexemes/Paikka.html) |  This rare proper noun overlaps more common *Paikka* (place) | 🌍☢ |  |
 | [paikoin₁](lexemes/paikoin.html) |  usually seen as adverb (in places), but can be analysed as instructive of the noun *paikka* (place) |  |  |
 | [Paimen₁](lexemes/Paimen.html) |  This rare proper noun overlaps more common *Paimen* (shepherd) | 🌍☢ |  |
@@ -2519,7 +2519,7 @@ We link to all original sources for reference.
 | [Palko₁](lexemes/Palko.html) |  This rare proper noun overlaps more common *Palko* (pea) | 🌍☢ |  |
 | [Pallo₁](lexemes/Pallo.html) |  This rare proper noun overlaps more common *Pallo* (ball) | 🌍☢ |  |
 | [Palmu₁](lexemes/Palmu.html) |  This rare proper noun overlaps more common *Palmu* (palm) | 🌍☢ |  |
-| [Palo₁](lexemes/Palo.html) |  This rare proper noun overlaps more common *Palo* (burn) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Palo)  |
+| [Palo₁](lexemes/Palo.html) |  This rare proper noun overlaps more common *Palo* (burn) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Palo)  |
 | [Palokaivo₁](lexemes/Palokaivo.html) |  This rare proper noun overlaps more common *Palokaivo* (FIXME) | 🌍☢ |  |
 | [Palokärki₁](lexemes/Palokärki.html) |  This rare proper noun overlaps more common *Palokärki* (FIXME) | 🌍☢ |  |
 | [Palopaikka₁](lexemes/Palopaikka.html) |  This rare proper noun overlaps more common *Palopaikka* (FIXME) | 🌍☢ |  |
@@ -2622,7 +2622,7 @@ We link to all original sources for reference.
 | [Petäjäinen₁](lexemes/Petäjäinen.html) |  This rare proper noun overlaps more common *Petäjäinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Petäjäinen)  |
 | [Peukalo₁](lexemes/Peukalo.html) |  This rare proper noun overlaps more common *Peukalo* (thumb) | 🌍☢ |  |
 | [Peukalohanka₁](lexemes/Peukalohanka.html) |  This rare proper noun overlaps more common *Peukalohanka* (FIXME) | 🌍☢ |  |
-| [Peukaloinen₁](lexemes/Peukaloinen.html) |  This rare proper noun overlaps more common *Peukaloinen* (thumbella) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Peukaloinen)  |
+| [Peukaloinen₁](lexemes/Peukaloinen.html) |  This rare proper noun overlaps more common *Peukaloinen* (thumbella) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Peukaloinen)  |
 | [Peura₁](lexemes/Peura.html) |  This rare proper noun overlaps more common *Peura* (deer) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Peura)  |
 | [pH₁](lexemes/pH.html) |  per Hydrogen | 📏 |  |
 | [Pia₁](lexemes/Pia.html) |  This proper noun overlaps forms of very common *pian* (soon). | 🧑¹♀ |  |
@@ -2704,14 +2704,14 @@ We link to all original sources for reference.
 | [Pohjalainen₁](lexemes/Pohjalainen.html) |  This rare proper noun overlaps more common *Pohjalainen* (FIXME) | 🌍☢📺 | [fiwikt](https://fi.wiktionary.org/wiki/Pohjalainen)  |
 | [Pohjanmies₁](lexemes/Pohjanmies.html) |  This rare proper noun overlaps more common *Pohjanmies* (FIXME) | 🧑²☢ |  |
 | [Pohjanpalo₁](lexemes/Pohjanpalo.html) |  This rare proper noun overlaps more common *Pohjanpalo* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pohjanpalo)  |
-| [Pohjantähti₁](lexemes/Pohjantähti.html) |  This rare proper noun overlaps more common *Pohjantähti* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Pohjantähti)  |
+| [Pohjantähti₁](lexemes/Pohjantähti.html) |  This rare proper noun overlaps more common *Pohjantähti* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pohjantähti)  |
 | [Pohjaton₁](lexemes/Pohjaton.html) |  This rare proper noun overlaps more common *Pohjaton* (bottomless) | 🌍☢ |  |
 | [Pohjatuuli₁](lexemes/Pohjatuuli.html) |  This rare proper noun overlaps more common *Pohjatuuli* (northwind) | 🌍☢ |  |
 | [Pohjoinen₁](lexemes/Pohjoinen.html) |  This rare proper noun overlaps more common *Pohjoinen* (north) | 🌍☢ |  |
 | [Pohjoismaa₁](lexemes/Pohjoismaa.html) |  This rare proper noun overlaps more common *Pohjoismaa* (nordic country) | 🌍☢ |  |
 | [Pohjoisnapa₁](lexemes/Pohjoisnapa.html) |  This rare proper noun overlaps more common *Pohjoisnapa* (north pole) | 🌍☢ |  |
 | [Pohjoisrinne₁](lexemes/Pohjoisrinne.html) |  This rare proper noun overlaps more common *Pohjoisrinne* (north hill) | 🌍☢ |  |
-| [Pohjola₁](lexemes/Pohjola.html) |  This rare proper noun overlaps more common *Pohjola* (nordic) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Pohjola)  |
+| [Pohjola₁](lexemes/Pohjola.html) |  This rare proper noun overlaps more common *Pohjola* (nordic) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pohjola)  |
 | [Poika₁](lexemes/Poika.html) |  This rare proper noun overlaps more common *Poika* (boy) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Poika)  |
 | [Poikanen₁](lexemes/Poikanen.html) |  This rare proper noun overlaps more common *Poikanen* (offspring) | 🌍☢ |  |
 | [Poikkeus₁](lexemes/Poikkeus.html) |  This rare proper noun overlaps more common *Poikkeus* (exception) | 🧑²☢ |  |
@@ -2743,7 +2743,7 @@ We link to all original sources for reference.
 | [Portti₁](lexemes/Portti.html) |  This rare proper noun overlaps more common *Portti* (gate) | 🌍☢ |  |
 | [Porvari₁](lexemes/Porvari.html) |  This rare proper noun overlaps more common *Porvari* (bourgeois) | 🌍☢ |  |
 | [Poskiparta₁](lexemes/Poskiparta.html) |  This rare proper noun overlaps more common *Poskiparta* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Poskiparta)  |
-| [Posti₁](lexemes/Posti.html) |  This rare proper noun overlaps more common *Posti* (post) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Posti)  |
+| [Posti₁](lexemes/Posti.html) |  This rare proper noun overlaps more common *Posti* (post) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Posti)  |
 | [Potaska₁](lexemes/Potaska.html) |  This rare proper noun overlaps more common *Potaska* (potassium) | 🌍☢ |  |
 | [Potero₁](lexemes/Potero.html) |  This rare proper noun overlaps more common *Potero* (FIXME) | 🌍☢ |  |
 | [Potka₁](lexemes/Potka.html) |  This rare proper noun overlaps more common *Potka* (bacon) | 🌍☢ |  |
@@ -2775,14 +2775,14 @@ We link to all original sources for reference.
 | [Pukinparta₁](lexemes/Pukinparta.html) |  This rare proper noun overlaps more common *Pukinparta* (goat beard) | 🌍☢ |  |
 | [Pukinsarvi₁](lexemes/Pukinsarvi.html) |  This rare proper noun overlaps more common *Pukinsarvi* (FIXME) | 🌍☢ |  |
 | [Pukkari₁](lexemes/Pukkari.html) |  This rare proper noun overlaps more common *Pukkari* (FIXME) | 🌍☢ |  |
-| [Pukki₁](lexemes/Pukki.html) |  This rare proper noun overlaps more common *Pukki* (goat) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Pukki)  |
+| [Pukki₁](lexemes/Pukki.html) |  This rare proper noun overlaps more common *Pukki* (goat) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pukki)  |
 | [Pula₁](lexemes/Pula.html) |  This rare proper noun overlaps more common *Pula* (trouble) | 🌍☢ |  |
 | [Pulju₁](lexemes/Pulju.html) |  This rare proper noun overlaps more common *Pulju* (shop) | 🌍☢ |  |
 | [Pulkka₁](lexemes/Pulkka.html) |  This rare proper noun overlaps more common *Pulkka* (sled) | 🌍☢ |  |
 | [Pulkkamäki₁](lexemes/Pulkkamäki.html) |  This rare proper noun overlaps more common *Pulkkamäki* (FIXME) | 🌍☢ |  |
 | [Pulla₁](lexemes/Pulla.html) |  This rare proper noun overlaps more common *Pulla* (bun) | 🧑²☢ |  |
 | [Pullero₁](lexemes/Pullero.html) |  This rare proper noun overlaps more common *Pullero* (FIXME) | 🌍☢ |  |
-| [Pulliainen₁](lexemes/Pulliainen.html) |  This rare proper noun overlaps more common *Pulliainen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Pulliainen)  |
+| [Pulliainen₁](lexemes/Pulliainen.html) |  This rare proper noun overlaps more common *Pulliainen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pulliainen)  |
 | [Pullo₁](lexemes/Pullo.html) |  This rare proper noun overlaps more common *Pullo* (bottle) | 🌍☢ |  |
 | [Pullukka₁](lexemes/Pullukka.html) |  This rare proper noun overlaps more common *Pullukka* (FIXME) | 🌍☢ |  |
 | [Pulma₁](lexemes/Pulma.html) |  This rare proper noun overlaps more common *Pulma* (crux) | 🧑²☢ |  |
@@ -2808,7 +2808,7 @@ We link to all original sources for reference.
 | [Puomi₁](lexemes/Puomi.html) |  This rare proper noun overlaps more common *Puomi* (beam) | 🌍☢ |  |
 | [Puoskari₁](lexemes/Puoskari.html) |  This rare proper noun overlaps more common *Puoskari* (quack) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puoskari)  |
 | [Pupu₁](lexemes/Pupu.html) |  This rare proper noun overlaps more common *Pupu* (bunny) | 🧑¹☢ |  |
-| [Purje₁](lexemes/Purje.html) |  This rare proper noun overlaps more common *Purje* (sail) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Purje)  |
+| [Purje₁](lexemes/Purje.html) |  This rare proper noun overlaps more common *Purje* (sail) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Purje)  |
 | [Purnu₁](lexemes/Purnu.html) |  This rare proper noun overlaps more common *Purnu* (FIXME) | 🌍☢ |  |
 | [Purnukka₁](lexemes/Purnukka.html) |  This rare proper noun overlaps more common *Purnukka* (FIXME) | 🌍☢ |  |
 | [Puro₁](lexemes/Puro.html) |  This rare proper noun overlaps more common *Puro* (stream) | 🌍☢ |  |
@@ -2847,7 +2847,7 @@ We link to all original sources for reference.
 | [Pylpyrä₁](lexemes/Pylpyrä.html) |  This rare proper noun overlaps more common *Pylpyrä* (circle) | 🌍☢ |  |
 | [Pylväs₁](lexemes/Pylväs.html) |  This rare proper noun overlaps more common *Pylväs* (pillar) | 🧑²☢ |  |
 | [Pyrintö₁](lexemes/Pyrintö.html) |  This rare proper noun overlaps more common *Pyrintö* (try) | 🌍☢ |  |
-| [Pyry₁](lexemes/Pyry.html) |  This rare proper noun overlaps more common *Pyry* (flurry) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Pyry)  |
+| [Pyry₁](lexemes/Pyry.html) |  This rare proper noun overlaps more common *Pyry* (flurry) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Pyry)  |
 | [Pyssy₁](lexemes/Pyssy.html) |  This rare proper noun overlaps more common *Pyssy* (gun) | 🌍☢ |  |
 | [Pyssynperä₁](lexemes/Pyssynperä.html) |  This rare proper noun overlaps more common *Pyssynperä* (FIXME) | 🌍☢ |  |
 | [Pysty₁](lexemes/Pysty.html) |  This rare proper noun overlaps more common *Pysty* (vertical) | 🌍☢ |  |
@@ -2872,7 +2872,7 @@ We link to all original sources for reference.
 | [päin₁](lexemes/päin.html) |  adposition (towards) when can be attached to a partitive NP, otherwise noun form of *pää* (head) |  |  |
 | [päin₂](lexemes/päin.html) |  adverb |  |  |
 | [Päiste₁](lexemes/Päiste.html) |  This rare proper noun overlaps more common *Päiste* (FIXME) | 🌍☢ |  |
-| [Päivikki₁](lexemes/Päivikki.html) |  This rare proper noun overlaps more common *Päivikki* (FIXME) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Päivikki)  |
+| [Päivikki₁](lexemes/Päivikki.html) |  This rare proper noun overlaps more common *Päivikki* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Päivikki)  |
 | [Päivittäistavarakauppa₁](lexemes/Päivittäistavarakauppa.html) |  This rare proper noun overlaps more common *Päivittäistavarakauppa* (FIXME) | org☢ |  |
 | [Päivä₁](lexemes/Päivä.html) |  This rare proper noun overlaps more common *Päivä* (day) | 🧑¹☢♀ |  |
 | [Päivänen₁](lexemes/Päivänen.html) |  This rare proper noun overlaps more common *Päivänen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Päivänen)  |
@@ -2917,7 +2917,7 @@ We link to all original sources for reference.
 | [Raaka₁](lexemes/Raaka.html) |  This rare proper noun overlaps more common *Raaka* (raw) | 🌍☢ |  |
 | [Raakki₁](lexemes/Raakki.html) |  This rare proper noun overlaps more common *Raakki* (FIXME) | 🌍☢ |  |
 | [Raakku₁](lexemes/Raakku.html) |  This rare proper noun overlaps more common *Raakku* (FIXME) | 🌍☢ |  |
-| [Raamattu₁](lexemes/Raamattu.html) |  This rare proper noun overlaps more common *Raamattu* (bible) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Raamattu) [enwikt](https://fi.wiktionary.org/wiki/Raamattu)  |
+| [Raamattu₁](lexemes/Raamattu.html) |  This rare proper noun overlaps more common *Raamattu* (bible) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Raamattu) [enwikt](https://en.wiktionary.org/wiki/Raamattu)  |
 | [Raami₁](lexemes/Raami.html) |  This rare proper noun overlaps more common *Raami* (frame) | 🌍☢ |  |
 | [Raaste₁](lexemes/Raaste.html) |  This rare proper noun overlaps more common *Raaste* (slaw) | 🧑²☢ |  |
 | [Raasu₁](lexemes/Raasu.html) |  This rare proper noun overlaps more common *Raasu* (FIXME) | 🌍☢ |  |
@@ -2937,9 +2937,9 @@ We link to all original sources for reference.
 | [Railo₁](lexemes/Railo.html) |  This rare proper noun overlaps more common *Railo* (FIXME) | 🌍☢ |  |
 | [Raina₁](lexemes/Raina.html) |  This rare proper noun overlaps more common *Raina* (story) | 🌍☢ |  |
 | [Raippa₁](lexemes/Raippa.html) |  This rare proper noun overlaps more common *Raippa* (FIXME) | 🌍☢ |  |
-| [Raita₁](lexemes/Raita.html) |  This rare proper noun overlaps more common *Raita* (stripe) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Raita)  |
+| [Raita₁](lexemes/Raita.html) |  This rare proper noun overlaps more common *Raita* (stripe) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Raita)  |
 | [Raitio₁](lexemes/Raitio.html) |  This rare proper noun overlaps more common *Raitio* (tram) | 🌍☢ |  |
-| [Raitis₁](lexemes/Raitis.html) |  This rare proper noun overlaps more common *Raitis* (sober) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Raitis)  |
+| [Raitis₁](lexemes/Raitis.html) |  This rare proper noun overlaps more common *Raitis* (sober) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Raitis)  |
 | [Raivo₁](lexemes/Raivo.html) |  This rare proper noun overlaps more common *Raivo* (rage) | 🌍☢ |  |
 | [Raja₁](lexemes/Raja.html) |  This rare proper noun overlaps more common *Raja* (border) | 🌍☢ |  |
 | [Rajajoki₁](lexemes/Rajajoki.html) |  This rare proper noun overlaps more common *Rajajoki* (border river) | 🌍☢ |  |
@@ -2966,7 +2966,7 @@ We link to all original sources for reference.
 | [Ranne₁](lexemes/Ranne.html) |  This rare proper noun overlaps more common *Ranne* (wrist) | 🌍☢ |  |
 | [Rannikko₁](lexemes/Rannikko.html) |  This rare proper noun overlaps more common *Rannikko* (coast) | 🌍☢ |  |
 | [Rannikkoseutu₁](lexemes/Rannikkoseutu.html) |  This rare proper noun overlaps more common *Rannikkoseutu* (FIXME) | org☢📺 |  |
-| [Ranta₁](lexemes/Ranta.html) |  This rare proper noun overlaps more common *Ranta* (beach) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ranta) [enwikt](https://fi.wiktionary.org/wiki/Ranta)  |
+| [Ranta₁](lexemes/Ranta.html) |  This rare proper noun overlaps more common *Ranta* (beach) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ranta) [enwikt](https://en.wiktionary.org/wiki/Ranta)  |
 | [Rantakallio₁](lexemes/Rantakallio.html) |  This rare proper noun overlaps more common *Rantakallio* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantakallio)  |
 | [Rantakivi₁](lexemes/Rantakivi.html) |  This rare proper noun overlaps more common *Rantakivi* (beach rock) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantakivi)  |
 | [Rantakoivikko₁](lexemes/Rantakoivikko.html) |  This rare proper noun overlaps more common *Rantakoivikko* (FIXME) | 🌍☢ |  |
@@ -2994,7 +2994,7 @@ We link to all original sources for reference.
 | [Rata₁](lexemes/Rata.html) |  This rare proper noun overlaps more common *Rata* (rail) | 🧑²☢ |  |
 | [Ratas₁](lexemes/Ratas.html) |  This rare proper noun overlaps more common *Ratas* (cog) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ratas)  |
 | [Ratina₁](lexemes/Ratina.html) |  This rare proper noun overlaps more common *Ratina* (rattle) | 🌍☢ |  |
-| [Rauha₁](lexemes/Rauha.html) |  This rare proper noun overlaps more common *Rauha* (peace) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Rauha)  |
+| [Rauha₁](lexemes/Rauha.html) |  This rare proper noun overlaps more common *Rauha* (peace) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Rauha)  |
 | [Rauhanen₁](lexemes/Rauhanen.html) |  This rare proper noun overlaps more common *Rauhanen* (FIXME) | 🌍☢ |  |
 | [Raukka₁](lexemes/Raukka.html) |  This rare proper noun overlaps more common *Raukka* (poor) | 🌍☢ |  |
 | [Raunio₁](lexemes/Raunio.html) |  This rare proper noun overlaps more common *Raunio* (ruin) | 🌍☢ |  |
@@ -3015,7 +3015,7 @@ We link to all original sources for reference.
 | [Rentukka₁](lexemes/Rentukka.html) |  This rare proper noun overlaps more common *Rentukka* (flower) | 🌍☢ |  |
 | [Repale₁](lexemes/Repale.html) |  This rare proper noun overlaps more common *Repale* (FIXME) | 🌍☢ |  |
 | [Repliikki₁](lexemes/Repliikki.html) |  This rare proper noun overlaps more common *Repliikki* (line) | org☢ |  |
-| [Repo₁](lexemes/Repo.html) |  This rare proper noun overlaps more common *Repo* (fox) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Repo)  |
+| [Repo₁](lexemes/Repo.html) |  This rare proper noun overlaps more common *Repo* (fox) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Repo)  |
 | [Reservi₁](lexemes/Reservi.html) |  This rare proper noun overlaps more common *Reservi* (reserve) | 🌍☢ |  |
 | [Resonanssi₁](lexemes/Resonanssi.html) |  This rare proper noun overlaps more common *Resonanssi* (resonance) | org☢ |  |
 | [Retku₁](lexemes/Retku.html) |  This rare proper noun overlaps more common *Retku* (FIXME) | 🌍☢ |  |
@@ -3108,7 +3108,7 @@ We link to all original sources for reference.
 | [Ruoko₁](lexemes/Ruoko.html) |  This rare proper noun overlaps more common *Ruoko* (straw) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruoko)  |
 | [Ruoska₁](lexemes/Ruoska.html) |  This rare proper noun overlaps more common *Ruoska* (whip) | 🌍☢ |  |
 | [Ruoste₁](lexemes/Ruoste.html) |  This rare proper noun overlaps more common *Ruoste* (rust) | 🌍☢ |  |
-| [Ruotsalainen₁](lexemes/Ruotsalainen.html) |  This rare proper noun overlaps more common *Ruotsalainen* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Ruotsalainen)  |
+| [Ruotsalainen₁](lexemes/Ruotsalainen.html) |  This rare proper noun overlaps more common *Ruotsalainen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Ruotsalainen)  |
 | [Rupinen₁](lexemes/Rupinen.html) |  This rare proper noun overlaps more common *Rupinen* (FIXME) | 🌍☢ |  |
 | [Rupla₁](lexemes/Rupla.html) |  This rare proper noun overlaps more common *Rupla* (ruble) | org☢ |  |
 | [Rusakko₁](lexemes/Rusakko.html) |  This rare proper noun overlaps more common *Rusakko* (hare) | 🧑²☢ |  |
@@ -3127,7 +3127,7 @@ We link to all original sources for reference.
 | [Ryhmä₁](lexemes/Ryhmä.html) |  This rare proper noun overlaps more common *Ryhmä* (groupwork) | 🌍☢ |  |
 | [Ryhmätyö₁](lexemes/Ryhmätyö.html) |  This rare proper noun overlaps more common *Ryhmätyö* (groupwork) | org☢ |  |
 | [Ryhti₁](lexemes/Ryhti.html) |  This rare proper noun overlaps more common *Ryhti* (FIXME) | 🌍☢ |  |
-| [Ryssä₁](lexemes/Ryssä.html) |  This rare proper noun overlaps more common *Ryssä* (russian) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Ryssä)  |
+| [Ryssä₁](lexemes/Ryssä.html) |  This rare proper noun overlaps more common *Ryssä* (russian) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Ryssä)  |
 | [Ryyppy₁](lexemes/Ryyppy.html) |  This rare proper noun overlaps more common *Ryyppy* (drink) | 🌍☢ |  |
 | [Ryysy₁](lexemes/Ryysy.html) |  This rare proper noun overlaps more common *Ryysy* (FIXME) | 🌍☢ |  |
 | [Ryysyläinen₁](lexemes/Ryysyläinen.html) |  This rare proper noun overlaps more common *Ryysyläinen* (FIXME) | 🧑²☢ |  |
@@ -3156,10 +3156,10 @@ We link to all original sources for reference.
 | [Saali₁](lexemes/Saali.html) |  This rare proper noun overlaps more common *Saali* (shale) | 🌍☢ |  |
 | [Saanti₁](lexemes/Saanti.html) |  This rare proper noun overlaps more common *Saanti* (input) | 🌍☢ |  |
 | [Saareke₁](lexemes/Saareke.html) |  This rare proper noun overlaps more common *Saareke* (isle) | 🌍☢ |  |
-| [Saarelainen₁](lexemes/Saarelainen.html) |  This rare proper noun overlaps more common *Saarelainen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saarelainen) [enwikt](https://fi.wiktionary.org/wiki/Saarelainen)  |
+| [Saarelainen₁](lexemes/Saarelainen.html) |  This rare proper noun overlaps more common *Saarelainen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saarelainen) [enwikt](https://en.wiktionary.org/wiki/Saarelainen)  |
 | [Saarelma₁](lexemes/Saarelma.html) |  This rare proper noun overlaps more common *Saarelma* (FIXME) | 🌍☢ |  |
 | [Saarento₁](lexemes/Saarento.html) |  This rare proper noun overlaps more common *Saarento* (FIXME) | 🌍☢ |  |
-| [Saari₁](lexemes/Saari.html) |  This rare proper noun overlaps more common *Saari* (island) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saari) [enwikt](https://fi.wiktionary.org/wiki/Saari)  |
+| [Saari₁](lexemes/Saari.html) |  This rare proper noun overlaps more common *Saari* (island) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saari) [enwikt](https://en.wiktionary.org/wiki/Saari)  |
 | [Saarinen₁](lexemes/Saarinen.html) |  This rare proper noun overlaps more common *Saarinen* (FIXME) | 🌍☢ |  |
 | [Saaristo₁](lexemes/Saaristo.html) |  This rare proper noun overlaps more common *Saaristo* (FIXME) | 🌍☢ |  |
 | [Saarnastuoli₁](lexemes/Saarnastuoli.html) |  This rare proper noun overlaps more common *Saarnastuoli* (FIXME) | 🌍☢ |  |
@@ -3176,21 +3176,21 @@ We link to all original sources for reference.
 | [Sakeus₁](lexemes/Sakeus.html) |  This rare proper noun overlaps more common *Sakeus* (FIXME) | 🧑¹☢ |  |
 | [Sakki₁](lexemes/Sakki.html) |  This rare proper noun overlaps more common *Sakki* (chess, group) | 🌍☢ |  |
 | [Sakko₁](lexemes/Sakko.html) |  This proper noun overlaps  very common *sakko* (a fine). | 🌍☢ |  |
-| [Saksi₁](lexemes/Saksi.html) |  This rare proper noun overlaps more common *Saksi* (scissor) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Saksi)  |
+| [Saksi₁](lexemes/Saksi.html) |  This rare proper noun overlaps more common *Saksi* (scissor) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Saksi)  |
 | [Saksi₂](lexemes/Saksi.html) |  This rare proper noun overlaps more common *Saksi* (scissor) | 🧑²☢ |  |
-| [Saku₁](lexemes/Saku.html) |  This rare proper noun overlaps more common *Saku* (FIXME) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Saku)  |
+| [Saku₁](lexemes/Saku.html) |  This rare proper noun overlaps more common *Saku* (FIXME) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Saku)  |
 | [Salainen₁](lexemes/Salainen.html) |  This rare proper noun overlaps more common *Salainen* (secret) | 🌍☢ |  |
 | [Salakari₁](lexemes/Salakari.html) |  This rare proper noun overlaps more common *Salakari* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salakari)  |
 | [Salakavala₁](lexemes/Salakavala.html) |  This rare proper noun overlaps more common *Salakavala* (FIXME) | 🌍☢ |  |
-| [Salama₁](lexemes/Salama.html) |  This rare proper noun overlaps more common *Salama* (lighting) | 🧑¹☢ | [enwikt](https://fi.wiktionary.org/wiki/Salama)  |
+| [Salama₁](lexemes/Salama.html) |  This rare proper noun overlaps more common *Salama* (lighting) | 🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Salama)  |
 | [Salaoja₁](lexemes/Salaoja.html) |  This rare proper noun overlaps more common *Salaoja* (ditch) | 🌍☢ |  |
 | [Sali₁](lexemes/Sali.html) |  This rare proper noun overlaps more common *Sali* (hall) | 🌍☢ |  |
 | [Salko₁](lexemes/Salko.html) |  This rare proper noun overlaps more common *Salko* (FIXME) | 🌍☢ |  |
 | [Salmeke₁](lexemes/Salmeke.html) |  This rare proper noun overlaps more common *Salmeke* (FIXME) | 🌍☢ |  |
 | [Salmensuu₁](lexemes/Salmensuu.html) |  This rare proper noun overlaps more common *Salmensuu* (FIXME) | 🌍☢ |  |
-| [Salmi₁](lexemes/Salmi.html) |  This rare proper noun overlaps more common *Salmi* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salmi) [enwikt](https://fi.wiktionary.org/wiki/Salmi)  |
+| [Salmi₁](lexemes/Salmi.html) |  This rare proper noun overlaps more common *Salmi* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salmi) [enwikt](https://en.wiktionary.org/wiki/Salmi)  |
 | [Salmisto₁](lexemes/Salmisto.html) |  This rare proper noun overlaps more common *Salmisto* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salmisto)  |
-| [Salo₁](lexemes/Salo.html) |  This rare proper noun overlaps more common *Salo* (FIXME) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Salo)  |
+| [Salo₁](lexemes/Salo.html) |  This rare proper noun overlaps more common *Salo* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Salo)  |
 | [Salokylä₁](lexemes/Salokylä.html) |  This rare proper noun overlaps more common *Salokylä* (FIXME) | 🌍☢ |  |
 | [Salolainen₁](lexemes/Salolainen.html) |  This rare proper noun overlaps more common *Salolainen* (FIXME) | 🧑²☢ |  |
 | [Salomaa₁](lexemes/Salomaa.html) |  This rare proper noun overlaps more common *Salomaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salomaa)  |
@@ -3237,7 +3237,7 @@ We link to all original sources for reference.
 | [Savimaa₁](lexemes/Savimaa.html) |  This rare proper noun overlaps more common *Savimaa* (clayland) | 🌍☢ |  |
 | [Savinen₁](lexemes/Savinen.html) |  This rare proper noun overlaps more common *Savinen* (clay) | 🌍☢ |  |
 | [Savipohja₁](lexemes/Savipohja.html) |  This rare proper noun overlaps more common *Savipohja* (clay base) | 🌍☢ |  |
-| [Savolainen₁](lexemes/Savolainen.html) |  This rare proper noun overlaps more common *Savolainen* (savonian) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Savolainen)  |
+| [Savolainen₁](lexemes/Savolainen.html) |  This rare proper noun overlaps more common *Savolainen* (savonian) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Savolainen)  |
 | [SDP₁](lexemes/SDP.html) |  Sosiali-Demokraattinen Puolue | orgPOLIT |  |
 | [Seikka₁](lexemes/Seikka.html) |  This rare proper noun overlaps more common *Seikka* (thing) | 🌍☢ |  |
 | [Seili₁](lexemes/Seili.html) |  This rare proper noun overlaps more common *Seili* (sail) | 🌍☢ |  |
@@ -3308,7 +3308,7 @@ We link to all original sources for reference.
 | [Sirpale₁](lexemes/Sirpale.html) |  This rare proper noun overlaps more common *Sirpale* (shard) | 🌍☢ |  |
 | [Sirppi₁](lexemes/Sirppi.html) |  This rare proper noun overlaps more common *Sirppi* (crescent) | 🌍☢ |  |
 | [Siru₁](lexemes/Siru.html) |  This rare proper noun overlaps more common *Siru* (shard) | 🧑¹☢♀ |  |
-| [Sisko₁](lexemes/Sisko.html) |  This rare proper noun overlaps more common *Sisko* (sister) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Sisko)  |
+| [Sisko₁](lexemes/Sisko.html) |  This rare proper noun overlaps more common *Sisko* (sister) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Sisko)  |
 | [Sissi₁](lexemes/Sissi.html) |  This rare proper noun overlaps more common *Sissi* (guerilla) | 🧑¹☢♀ |  |
 | [Sisu₁](lexemes/Sisu.html) |  This rare proper noun overlaps more common *Sisu* (guts) | 🧑¹☢♂ |  |
 | [sisällä₁](lexemes/sisällä.html) |  adverb |  | [fiwikt](https://fi.wiktionary.org/wiki/sisällä)  |
@@ -3332,7 +3332,7 @@ We link to all original sources for reference.
 | [Sohva₁](lexemes/Sohva.html) |  This rare proper noun overlaps more common *Sohva* (sofa) | 🌍☢ |  |
 | [Soi₁](lexemes/Soi.html) |  This proper noun overlaps forms of very common *soida* (to play). | 🌍 |  |
 | [Soikko₁](lexemes/Soikko.html) |  This rare proper noun overlaps more common *Soikko* (bucket) | 🌍☢ |  |
-| [Sointu₁](lexemes/Sointu.html) |  This rare proper noun overlaps more common *Sointu* (chord) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Sointu)  |
+| [Sointu₁](lexemes/Sointu.html) |  This rare proper noun overlaps more common *Sointu* (chord) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Sointu)  |
 | [Soittaja₁](lexemes/Soittaja.html) |  This rare proper noun overlaps more common *Soittaja* (player) | 🌍☢ |  |
 | [Soiva₁](lexemes/Soiva.html) |  This rare proper noun overlaps more common *Soiva* (playing) | 🧑²☢ |  |
 | [SOK₁](lexemes/SOK.html) |  Suomen Osuus-Kauppa |  |  |
@@ -3359,7 +3359,7 @@ We link to all original sources for reference.
 | [Sorja₁](lexemes/Sorja.html) |  This rare proper noun overlaps more common *Sorja* (FIXME) | 🧑¹☢♀ |  |
 | [Sorkka₁](lexemes/Sorkka.html) |  This rare proper noun overlaps more common *Sorkka* (hoof) | 🌍☢ |  |
 | [Sormio₁](lexemes/Sormio.html) |  This rare proper noun overlaps more common *Sormio* (piano) | 🧑²☢ |  |
-| [Sorsa₁](lexemes/Sorsa.html) |  This rare proper noun overlaps more common *Sorsa* (duck) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Sorsa)  |
+| [Sorsa₁](lexemes/Sorsa.html) |  This rare proper noun overlaps more common *Sorsa* (duck) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Sorsa)  |
 | [Sorsimo₁](lexemes/Sorsimo.html) |  This rare proper noun overlaps more common *Sorsimo* (FIXME) | 🌍☢ |  |
 | [Sorto₁](lexemes/Sorto.html) |  This rare proper noun overlaps more common *Sorto* (oppression) | 🌍☢ |  |
 | [Sortti₁](lexemes/Sortti.html) |  This rare proper noun overlaps more common *Sortti* (kind of) | 🌍☢ |  |
@@ -3371,7 +3371,7 @@ We link to all original sources for reference.
 | [Spitaali₁](lexemes/Spitaali.html) |  This rare proper noun overlaps more common *Spitaali* (leprosy) | 🌍☢ |  |
 | [SPR₁](lexemes/SPR.html) |  Suomen Punainen Risti | org |  |
 | [SQL₁](lexemes/SQL.html) |  Structured Query Language |  |  |
-| [Stadi₁](lexemes/Stadi.html) |  This rare proper noun overlaps more common *Stadi* (city) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Stadi)  |
+| [Stadi₁](lexemes/Stadi.html) |  This rare proper noun overlaps more common *Stadi* (city) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Stadi)  |
 | [Status₁](lexemes/Status.html) |  This rare proper noun overlaps more common *Status* (status) | org☢ |  |
 | [STT₁](lexemes/STT.html) |  Suomen Tieto-Toimisto | org📺 |  |
 | [Stydi₁](lexemes/Stydi.html) |  This rare proper noun overlaps more common *Stydi* (strong) | org☢ |  |
@@ -3453,7 +3453,7 @@ We link to all original sources for reference.
 | [Suurmäki₁](lexemes/Suurmäki.html) |  This rare proper noun overlaps more common *Suurmäki* (big hill) | 🌍☢ |  |
 | [Suutari₁](lexemes/Suutari.html) |  This rare proper noun overlaps more common *Suutari* (shoe maker) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suutari)  |
 | [Suvanto₁](lexemes/Suvanto.html) |  This rare proper noun overlaps more common *Suvanto* (FIXME) | 🌍☢ |  |
-| [Suvi₁](lexemes/Suvi.html) |  This rare proper noun overlaps more common *Suvi* (summer) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Suvi) [enwikt](https://fi.wiktionary.org/wiki/Suvi)  |
+| [Suvi₁](lexemes/Suvi.html) |  This rare proper noun overlaps more common *Suvi* (summer) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Suvi) [enwikt](https://en.wiktionary.org/wiki/Suvi)  |
 | [Suvinen₁](lexemes/Suvinen.html) |  This rare proper noun overlaps more common *Suvinen* (summery) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suvinen)  |
 | [Suvituuli₁](lexemes/Suvituuli.html) |  This rare proper noun overlaps more common *Suvituuli* (summerwind) | 🌍☢ |  |
 | [Sydänkäpy₁](lexemes/Sydänkäpy.html) |  This rare proper noun overlaps more common *Sydänkäpy* (beloved) | 🌍☢ |  |
@@ -3470,7 +3470,7 @@ We link to all original sources for reference.
 | [Syvä₁](lexemes/Syvä.html) |  This rare proper noun overlaps more common *Syvä* (deep) | 🌍☢ |  |
 | [syvällä₁](lexemes/syvällä.html) |  usually seen as adverb (deep), but can be analysed as possessive elative of the adjective *syvä* (deep) |  |  |
 | [Syvänne₁](lexemes/Syvänne.html) |  This rare proper noun overlaps more common *Syvänne* (depth) | 🧑²☢ |  |
-| [Säde₁](lexemes/Säde.html) |  This rare proper noun overlaps more common *Säde* (ray) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Säde) [enwikt](https://fi.wiktionary.org/wiki/Säde)  |
+| [Säde₁](lexemes/Säde.html) |  This rare proper noun overlaps more common *Säde* (ray) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Säde) [enwikt](https://en.wiktionary.org/wiki/Säde)  |
 | [Säilä₁](lexemes/Säilä.html) |  This rare proper noun overlaps more common *Säilä* (sword) | 🌍☢ |  |
 | [Säilö₁](lexemes/Säilö.html) |  This rare proper noun overlaps more common *Säilö* (locker) | 🌍☢ |  |
 | [Säkki₁](lexemes/Säkki.html) |  This rare proper noun overlaps more common *Säkki* (bag) | 🌍☢ |  |
@@ -3503,12 +3503,12 @@ We link to all original sources for reference.
 | [Taika₁](lexemes/Taika.html) |  This rare proper noun overlaps more common *Taika* (spell) | 🧑¹☢♀ |  |
 | [Taikina₁](lexemes/Taikina.html) |  This rare proper noun overlaps more common *Taikina* (dough) | 🌍☢ |  |
 | [Taikinainen₁](lexemes/Taikinainen.html) |  This rare proper noun overlaps more common *Taikinainen* (doughy) | 🌍☢ |  |
-| [Taimi₁](lexemes/Taimi.html) |  This rare proper noun overlaps more common *Taimi* (seedling) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Taimi)  |
+| [Taimi₁](lexemes/Taimi.html) |  This rare proper noun overlaps more common *Taimi* (seedling) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Taimi)  |
 | [Taimikko₁](lexemes/Taimikko.html) |  This rare proper noun overlaps more common *Taimikko* (seedlings) | 🌍☢ |  |
 | [Taimisto₁](lexemes/Taimisto.html) |  This rare proper noun overlaps more common *Taimisto* (seedlings) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Taimisto)  |
 | [Taimitarha₁](lexemes/Taimitarha.html) |  This rare proper noun overlaps more common *Taimitarha* (seedling garden) | 🌍☢ |  |
 | [Taipua₁](lexemes/Taipua.html) |  This rare proper noun overlaps more common *Taipua* (bend) | 🌍☢ |  |
-| [Taito₁](lexemes/Taito.html) |  This rare proper noun overlaps more common *Taito* (skill) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Taito)  |
+| [Taito₁](lexemes/Taito.html) |  This rare proper noun overlaps more common *Taito* (skill) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Taito)  |
 | [Taivaannapa₁](lexemes/Taivaannapa.html) |  This rare proper noun overlaps more common *Taivaannapa* (sky pole) | 🌍☢ |  |
 | [Taivaanranta₁](lexemes/Taivaanranta.html) |  This rare proper noun overlaps more common *Taivaanranta* (sky beach, horizon) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Taivaanranta)  |
 | [Taivaanvuohi₁](lexemes/Taivaanvuohi.html) |  This rare proper noun overlaps more common *Taivaanvuohi* (sky goat) | 🌍☢ |  |
@@ -3547,13 +3547,13 @@ We link to all original sources for reference.
 | [Talvi₁](lexemes/Talvi.html) |  This rare proper noun overlaps more common *Talvi* (winter) | 🌍☢ |  |
 | [Talvilampare₁](lexemes/Talvilampare.html) |  This rare proper noun overlaps more common *Talvilampare* (winterhill) | 🌍☢ |  |
 | [Talvitie₁](lexemes/Talvitie.html) |  This rare proper noun overlaps more common *Talvitie* (winterroad) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talvitie)  |
-| [Tammi₁](lexemes/Tammi.html) |  This rare proper noun overlaps more common *Tammi* (oak) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tammi) [enwikt](https://fi.wiktionary.org/wiki/Tammi)  |
+| [Tammi₁](lexemes/Tammi.html) |  This rare proper noun overlaps more common *Tammi* (oak) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tammi) [enwikt](https://en.wiktionary.org/wiki/Tammi)  |
 | [Tammilehto₁](lexemes/Tammilehto.html) |  This rare proper noun overlaps more common *Tammilehto* (oak grove) | 🌍☢ |  |
 | [Tammimetsä₁](lexemes/Tammimetsä.html) |  This rare proper noun overlaps more common *Tammimetsä* (oak forest) | org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tammimetsä)  |
-| [Tamminen₁](lexemes/Tamminen.html) |  This rare proper noun overlaps more common *Tamminen* (oaky) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Tamminen)  |
+| [Tamminen₁](lexemes/Tamminen.html) |  This rare proper noun overlaps more common *Tamminen* (oaky) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Tamminen)  |
 | [Tammisto₁](lexemes/Tammisto.html) |  This rare proper noun overlaps more common *Tammisto* (oak forest) | 🌍☢ |  |
 | [Tanhua₁](lexemes/Tanhua.html) |  This rare proper noun overlaps more common *Tanhua* (FIXME) | 🌍☢ |  |
-| [Tanner₁](lexemes/Tanner.html) |  This rare proper noun overlaps more common *Tanner* (ground) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Tanner)  |
+| [Tanner₁](lexemes/Tanner.html) |  This rare proper noun overlaps more common *Tanner* (ground) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tanner)  |
 | [Tantere₁](lexemes/Tantere.html) |  This rare proper noun overlaps more common *Tantere* (ground) | 🌍☢ |  |
 | [Tapa₁](lexemes/Tapa.html) |  This rare proper noun overlaps more common *Tapa* (habit) | 🌍☢ |  |
 | [Tappara₁](lexemes/Tappara.html) |  This rare proper noun overlaps more common *Tappara* (ax) | org☢ |  |
@@ -3655,14 +3655,14 @@ We link to all original sources for reference.
 | [todella₂](lexemes/todella.html) |  usually seen as adverb (really), but can be analysed as adessive of the noun *tosi* (truth) |  |  |
 | [Tohtori₁](lexemes/Tohtori.html) |  This rare proper noun overlaps more common *Tohtori* (doctor) | 🌍☢ |  |
 | [Tohveli₁](lexemes/Tohveli.html) |  This rare proper noun overlaps more common *Tohveli* (slipper) | 🌍☢ |  |
-| [Toimi₁](lexemes/Toimi.html) |  This rare proper noun overlaps more common *Toimi* (position) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Toimi)  |
+| [Toimi₁](lexemes/Toimi.html) |  This rare proper noun overlaps more common *Toimi* (position) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Toimi)  |
 | [toisaalta₁](lexemes/toisaalta.html) |  on the other hand, as adverb, “toisaalta ei kiinnosta“ |  | [fiwikt](https://fi.wiktionary.org/wiki/toisaalta)  |
 | [toisaalta₁](lexemes/toisaalta.html) |  on the other hand, as adverb, “toisaalta ei kiinnosta” |  | [fiwikt](https://fi.wiktionary.org/wiki/toisaalta)  |
 | [toisaalta₂](lexemes/toisaalta.html) |  and otoh, as paired conjunction with ja |  |  |
 | [toisinaan₁](lexemes/toisinaan.html) |  usually seen as adverb (every once in a while), but can be analysed as a form of *toinen* (second) |  | [fiwikt](https://fi.wiktionary.org/wiki/toisinaan)  |
 | [Toive₁](lexemes/Toive.html) |  This rare proper noun overlaps more common *Toive* (wish) | 🧑¹☢ |  |
-| [Toivo₁](lexemes/Toivo.html) |  This proper noun overlaps  very common *toivo* (hope). | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Toivo)  |
-| [Toivo₁](lexemes/Toivo.html) |  This rare proper noun overlaps more common *Toivo* (hope) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Toivo)  |
+| [Toivo₁](lexemes/Toivo.html) |  This proper noun overlaps  very common *toivo* (hope). | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Toivo)  |
+| [Toivo₁](lexemes/Toivo.html) |  This rare proper noun overlaps more common *Toivo* (hope) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Toivo)  |
 | [Toki₁](lexemes/Toki.html) |  This rare proper noun overlaps more common *Toki* (sure) | 🌍☢ |  |
 | [Tollo₁](lexemes/Tollo.html) |  This rare proper noun overlaps more common *Tollo* (idiot) | 🌍☢ |  |
 | [Tolppa₁](lexemes/Tolppa.html) |  This rare proper noun overlaps more common *Tolppa* (balkon) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tolppa)  |
@@ -3767,9 +3767,9 @@ We link to all original sources for reference.
 | [Tyvi₁](lexemes/Tyvi.html) |  This rare proper noun overlaps more common *Tyvi* (FIXME) | 🌍☢ |  |
 | [Tyyni₁₀](lexemes/Tyyni.html) |  This rare proper noun overlaps more common *Tyyni* (FIXME) | 🧑¹☢ |  |
 | [Tähkä₁](lexemes/Tähkä.html) |  This rare proper noun overlaps more common *Tähkä* (corn) | 🌍☢ |  |
-| [Tähkäpää₁](lexemes/Tähkäpää.html) |  This rare proper noun overlaps more common *Tähkäpää* (cornrow) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tähkäpää) [enwikt](https://fi.wiktionary.org/wiki/Tähkäpää)  |
+| [Tähkäpää₁](lexemes/Tähkäpää.html) |  This rare proper noun overlaps more common *Tähkäpää* (cornrow) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tähkäpää) [enwikt](https://en.wiktionary.org/wiki/Tähkäpää)  |
 | [Tähti₁](lexemes/Tähti.html) |  This rare proper noun overlaps more common *Tähti* (star) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tähti)  |
-| [Tähtinen₁](lexemes/Tähtinen.html) |  This rare proper noun overlaps more common *Tähtinen* (starred) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Tähtinen)  |
+| [Tähtinen₁](lexemes/Tähtinen.html) |  This rare proper noun overlaps more common *Tähtinen* (starred) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Tähtinen)  |
 | [Täkäläinen₁](lexemes/Täkäläinen.html) |  This rare proper noun overlaps more common *Täkäläinen* (them there) | 🌍☢ |  |
 | [Tälli₁](lexemes/Tälli.html) |  This rare proper noun overlaps more common *Tälli* (hit) | 🌍☢ |  |
 | [Täpärä₁](lexemes/Täpärä.html) |  This rare proper noun overlaps more common *Täpärä* (near) | 🌍☢ |  |
@@ -3792,7 +3792,7 @@ We link to all original sources for reference.
 | [Uittoyhdistys₁](lexemes/Uittoyhdistys.html) |  This rare proper noun overlaps more common *Uittoyhdistys* (fishery) | org☢ |  |
 | [Ukki₁](lexemes/Ukki.html) |  This rare proper noun overlaps more common *Ukki* (grandpa) | 🌍☢ |  |
 | [Ukko₁](lexemes/Ukko.html) |  This rare proper noun overlaps more common *Ukko* (old man) | 🧑¹☢♂ |  |
-| [Ukkonen₁](lexemes/Ukkonen.html) |  This rare proper noun overlaps more common *Ukkonen* (thunder) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Ukkonen)  |
+| [Ukkonen₁](lexemes/Ukkonen.html) |  This rare proper noun overlaps more common *Ukkonen* (thunder) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Ukkonen)  |
 | [Ukonhattu₁](lexemes/Ukonhattu.html) |  This rare proper noun overlaps more common *Ukonhattu* (flower) | 🌍☢ |  |
 | [Ulappa₁](lexemes/Ulappa.html) |  This rare proper noun overlaps more common *Ulappa* (horizon) | 🌍☢ |  |
 | [Ulkoluoto₁](lexemes/Ulkoluoto.html) |  This rare proper noun overlaps more common *Ulkoluoto* (outer rock) | 🌍☢ |  |
@@ -3809,7 +3809,7 @@ We link to all original sources for reference.
 | [Umpiperä₁](lexemes/Umpiperä.html) |  This rare proper noun overlaps more common *Umpiperä* (deadend) | 🌍☢ |  |
 | [Umpisolmu₁](lexemes/Umpisolmu.html) |  This rare proper noun overlaps more common *Umpisolmu* (knot) | 🌍☢ |  |
 | [Umpisuoli₁](lexemes/Umpisuoli.html) |  This rare proper noun overlaps more common *Umpisuoli* (appendix) | 🌍☢ |  |
-| [Unelma₁](lexemes/Unelma.html) |  This rare proper noun overlaps more common *Unelma* (deream) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Unelma)  |
+| [Unelma₁](lexemes/Unelma.html) |  This rare proper noun overlaps more common *Unelma* (deream) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Unelma)  |
 | [Uneton₁](lexemes/Uneton.html) |  This rare proper noun overlaps more common *Uneton* (sleepless) | 🌍☢ |  |
 | [Unhola₁](lexemes/Unhola.html) |  This rare proper noun overlaps more common *Unhola* (FIXME) | 🌍☢ |  |
 | [Unikko₁](lexemes/Unikko.html) |  This rare proper noun overlaps more common *Unikko* (poppy) | 🌍☢ |  |
@@ -3897,14 +3897,14 @@ We link to all original sources for reference.
 | [vanhastaan₁](lexemes/vanhastaan.html) |  usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old) |  | [fiwikt](https://fi.wiktionary.org/wiki/vanhastaan)  |
 | [Vankka₁](lexemes/Vankka.html) |  This rare proper noun overlaps more common *Vankka* (sturdy) | 🌍☢ |  |
 | [Vanne₁](lexemes/Vanne.html) |  This rare proper noun overlaps more common *Vanne* (hoop) | 🌍☢ |  |
-| [Vappu₁](lexemes/Vappu.html) |  This rare proper noun overlaps more common *Vappu* (may day) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Vappu)  |
+| [Vappu₁](lexemes/Vappu.html) |  This rare proper noun overlaps more common *Vappu* (may day) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Vappu)  |
 | [Vara₁](lexemes/Vara.html) |  This rare proper noun overlaps more common *Vara* (spare) | 🧑²☢ |  |
 | [Varakas₁](lexemes/Varakas.html) |  This rare proper noun overlaps more common *Varakas* (rich) | 🧑²☢ |  |
 | [Varaton₁](lexemes/Varaton.html) |  This rare proper noun overlaps more common *Varaton* (broke) | 🌍☢ |  |
 | [Varikko₁](lexemes/Varikko.html) |  This rare proper noun overlaps more common *Varikko* (pit stop) | 🌍☢ |  |
-| [Varis₁](lexemes/Varis.html) |  This rare proper noun overlaps more common *Varis* (raven) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Varis)  |
+| [Varis₁](lexemes/Varis.html) |  This rare proper noun overlaps more common *Varis* (raven) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Varis)  |
 | [Varjo₁](lexemes/Varjo.html) |  This rare proper noun overlaps more common *Varjo* (shadow) | 🌍☢ |  |
-| [Varma₁](lexemes/Varma.html) |  This rare proper noun overlaps more common *Varma* (sure) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Varma)  |
+| [Varma₁](lexemes/Varma.html) |  This rare proper noun overlaps more common *Varma* (sure) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Varma)  |
 | [varmaan₁](lexemes/varmaan.html) |  usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure) |  | [fiwikt](https://fi.wiktionary.org/wiki/varmaan)  |
 | [Varo₁](lexemes/Varo.html) |  This proper noun overlaps forms of very common *varoa* (beware). | 🌍 |  |
 | [Varova₁](lexemes/Varova.html) |  This rare proper noun overlaps more common *Varova* (wary) | org☢ |  |
@@ -3944,7 +3944,7 @@ We link to all original sources for reference.
 | [Vekara₁](lexemes/Vekara.html) |  This rare proper noun overlaps more common *Vekara* (kid) | 🌍☢ |  |
 | [Vekseli₁](lexemes/Vekseli.html) |  This rare proper noun overlaps more common *Vekseli* (iou) | 🌍☢ |  |
 | [Velho₁](lexemes/Velho.html) |  This rare proper noun overlaps more common *Velho* (wizard) | 🌍☢ |  |
-| [Veli₁](lexemes/Veli.html) |  This rare proper noun overlaps more common *Veli* (brother) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Veli) [enwikt](https://fi.wiktionary.org/wiki/Veli)  |
+| [Veli₁](lexemes/Veli.html) |  This rare proper noun overlaps more common *Veli* (brother) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Veli) [enwikt](https://en.wiktionary.org/wiki/Veli)  |
 | [Velkainen₁](lexemes/Velkainen.html) |  This rare proper noun overlaps more common *Velkainen* (debtful) | 🌍☢ |  |
 | [Velkoja₁](lexemes/Velkoja.html) |  This rare proper noun overlaps more common *Velkoja* (debtor) | 🌍☢ |  |
 | [Veltto₁](lexemes/Veltto.html) |  This rare proper noun overlaps more common *Veltto* (floppy) | 🧑¹☢ |  |
@@ -3954,7 +3954,7 @@ We link to all original sources for reference.
 | [Ventti₁](lexemes/Ventti.html) |  This rare proper noun overlaps more common *Ventti* (blackjack) | 🌍☢ |  |
 | [Venymä₁](lexemes/Venymä.html) |  This rare proper noun overlaps more common *Venymä* (stretch) | 🌍☢ |  |
 | [Verho₁](lexemes/Verho.html) |  This rare proper noun overlaps more common *Verho* (curtain) | 🌍☢ |  |
-| [Verkko₁](lexemes/Verkko.html) |  This rare proper noun overlaps more common *Verkko* (net) | 🧑²☢ | [enwikt](https://fi.wiktionary.org/wiki/Verkko)  |
+| [Verkko₁](lexemes/Verkko.html) |  This rare proper noun overlaps more common *Verkko* (net) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Verkko)  |
 | [Verohallinto₁](lexemes/Verohallinto.html) |  This rare proper noun overlaps more common *Verohallinto* (tax ministry) | org☢ |  |
 | [Verohallitus₁](lexemes/Verohallitus.html) |  This rare proper noun overlaps more common *Verohallitus* (tax ministry) | ⁈☢ |  |
 | [Verta₁](lexemes/Verta.html) |  This rare proper noun overlaps more common *Verta* (FIXME) | 🧑²☢ |  |
@@ -3989,7 +3989,7 @@ We link to all original sources for reference.
 | [Vihne₁](lexemes/Vihne.html) |  This rare proper noun overlaps more common *Vihne* (FIXME) | 🧑²☢ |  |
 | [Viholainen₁](lexemes/Viholainen.html) |  This rare proper noun overlaps more common *Viholainen* (enemy) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Viholainen)  |
 | [Vihollinen₁](lexemes/Vihollinen.html) |  This rare proper noun overlaps more common *Vihollinen* (enemy) | 🌍☢ |  |
-| [Vihtori₁](lexemes/Vihtori.html) |  This rare proper noun overlaps more common *Vihtori* (FIXME) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Vihtori)  |
+| [Vihtori₁](lexemes/Vihtori.html) |  This rare proper noun overlaps more common *Vihtori* (FIXME) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Vihtori)  |
 | [Viidakko₁](lexemes/Viidakko.html) |  This rare proper noun overlaps more common *Viidakko* (jungle) | 🌍☢ |  |
 | [Viikari₁](lexemes/Viikari.html) |  This rare proper noun overlaps more common *Viikari* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Viikari)  |
 | [Viikate₁](lexemes/Viikate.html) |  This rare proper noun overlaps more common *Viikate* (reap) | 🎶☢ |  |
@@ -4012,7 +4012,7 @@ We link to all original sources for reference.
 | [Viivyttäjä₁](lexemes/Viivyttäjä.html) |  This rare proper noun overlaps more common *Viivyttäjä* (delayer) | 🌍☢ |  |
 | [Vika₁](lexemes/Vika.html) |  This rare proper noun overlaps more common *Vika* (fault) | 🌍☢ |  |
 | [Vikkelä₁](lexemes/Vikkelä.html) |  This rare proper noun overlaps more common *Vikkelä* (fast) | 🌍☢ |  |
-| [Vilja₁](lexemes/Vilja.html) |  This rare proper noun overlaps more common *Vilja* (grain) | 🧑¹☢♀ | [enwikt](https://fi.wiktionary.org/wiki/Vilja)  |
+| [Vilja₁](lexemes/Vilja.html) |  This rare proper noun overlaps more common *Vilja* (grain) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Vilja)  |
 | [Viljava₁](lexemes/Viljava.html) |  This rare proper noun overlaps more common *Viljava* (grainy) | 🌍☢ |  |
 | [Viljavarasto₁](lexemes/Viljavarasto.html) |  This rare proper noun overlaps more common *Viljavarasto* (grain silo) | 🌍☢ |  |
 | [Viljavuori₁](lexemes/Viljavuori.html) |  This rare proper noun overlaps more common *Viljavuori* (grainmountain) | 🌍☢ |  |
@@ -4041,14 +4041,14 @@ We link to all original sources for reference.
 | [Virkatie₁](lexemes/Virkatie.html) |  This rare proper noun overlaps more common *Virkatie* (FIXME) | 🌍☢ |  |
 | [Virkku₁](lexemes/Virkku.html) |  This rare proper noun overlaps more common *Virkku* (woke) | 🌍☢ |  |
 | [Virsi₁](lexemes/Virsi.html) |  This rare proper noun overlaps more common *Virsi* (hymn) | 🌍☢ |  |
-| [Virta₁](lexemes/Virta.html) |  This rare proper noun overlaps more common *Virta* (stream) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Virta) [enwikt](https://fi.wiktionary.org/wiki/Virta)  |
+| [Virta₁](lexemes/Virta.html) |  This rare proper noun overlaps more common *Virta* (stream) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Virta) [enwikt](https://en.wiktionary.org/wiki/Virta)  |
 | [Virtainen₁](lexemes/Virtainen.html) |  This rare proper noun overlaps more common *Virtainen* (streamy) | 🌍☢ |  |
 | [Virveli₁](lexemes/Virveli.html) |  This rare proper noun overlaps more common *Virveli* (snare) | 🌍☢ |  |
 | [Vispilä₁](lexemes/Vispilä.html) |  This rare proper noun overlaps more common *Vispilä* (whisk) | 🌍☢ |  |
 | [Voima₁](lexemes/Voima.html) |  This rare proper noun overlaps more common *Voima* (power) | 🌍☢ |  |
 | [Voimala₁](lexemes/Voimala.html) |  This rare proper noun overlaps more common *Voimala* (powerplant) | 🌍☢ |  |
 | [Voirasia₁](lexemes/Voirasia.html) |  This rare proper noun overlaps more common *Voirasia* (butter box) | 🌍☢ |  |
-| [Voitto₁](lexemes/Voitto.html) |  This rare proper noun overlaps more common *Voitto* (victory) | 🧑¹☢♂ | [enwikt](https://fi.wiktionary.org/wiki/Voitto)  |
+| [Voitto₁](lexemes/Voitto.html) |  This rare proper noun overlaps more common *Voitto* (victory) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Voitto)  |
 | [Voivuori₁](lexemes/Voivuori.html) |  This rare proper noun overlaps more common *Voivuori* (butter mountain) | 🌍☢ |  |
 | [Voltti₁](lexemes/Voltti.html) |  This rare proper noun overlaps more common *Voltti* (volt) | 🌍☢ |  |
 | [Votka₁](lexemes/Votka.html) |  This rare proper noun overlaps more common *Votka* (vodka) | 🌍☢ |  |
@@ -4061,7 +4061,7 @@ We link to all original sources for reference.
 | [vuoksi₂](lexemes/vuoksi.html) |  adposition (because of) when can be attached to a genitive NP, otherwise noun forms of *vuo* (stream), *vuoksi* (high tide) |  |  |
 | [Vuono₁](lexemes/Vuono.html) |  This rare proper noun overlaps more common *Vuono* (fjord) | 🌍☢ |  |
 | [Vuorenrinne₁](lexemes/Vuorenrinne.html) |  This rare proper noun overlaps more common *Vuorenrinne* (mountain hill) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vuorenrinne)  |
-| [Vuori₁](lexemes/Vuori.html) |  This rare proper noun overlaps more common *Vuori* (mountain) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vuori) [enwikt](https://fi.wiktionary.org/wiki/Vuori)  |
+| [Vuori₁](lexemes/Vuori.html) |  This rare proper noun overlaps more common *Vuori* (mountain) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vuori) [enwikt](https://en.wiktionary.org/wiki/Vuori)  |
 | [Vuoripuro₁](lexemes/Vuoripuro.html) |  This rare proper noun overlaps more common *Vuoripuro* (mountain stream) | 🌍☢ |  |
 | [Vuoristo₁](lexemes/Vuoristo.html) |  This rare proper noun overlaps more common *Vuoristo* (mountain range) | 🌍☢ |  |
 | [Vuoristolampi₁](lexemes/Vuoristolampi.html) |  This rare proper noun overlaps more common *Vuoristolampi* (mountain pond) | 🌍☢ |  |
@@ -4072,7 +4072,7 @@ We link to all original sources for reference.
 | [Vä₁](lexemes/Vä.html) |  This proper noun overlaps forms of very common *vähän* (some, a little). | 🌍 |  |
 | [vähintään₁](lexemes/vähintään.html) |  usually seen as adverb (at least), but can be analysed as a form of *vähän* (a little) |  | [fiwikt](https://fi.wiktionary.org/wiki/vähintään)  |
 | [vähän₁](lexemes/vähän.html) |  usually seen as adverb (less), but can be analysed as genetive of the adjective *vähempi* (lesser) |  |  |
-| [Väistö₁](lexemes/Väistö.html) |  This rare proper noun overlaps more common *Väistö* (dodge) | 🌍☢ | [enwikt](https://fi.wiktionary.org/wiki/Väistö)  |
+| [Väistö₁](lexemes/Väistö.html) |  This rare proper noun overlaps more common *Väistö* (dodge) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Väistö)  |
 | [Väkevä₁](lexemes/Väkevä.html) |  This rare proper noun overlaps more common *Väkevä* (strong) | 🌍☢ |  |
 | [Väkinäinen₁](lexemes/Väkinäinen.html) |  This rare proper noun overlaps more common *Väkinäinen* (forced) | 🌍☢ |  |
 | [Väli₁](lexemes/Väli.html) |  This rare proper noun overlaps more common *Väli* (space) | 🧑²☢ |  |
@@ -4099,7 +4099,7 @@ We link to all original sources for reference.
 | [Väärtti₁](lexemes/Väärtti.html) |  This rare proper noun overlaps more common *Väärtti* (worth) | 🌍☢ |  |
 | [Väärä₁](lexemes/Väärä.html) |  This rare proper noun overlaps more common *Väärä* (wrong) | 🌍☢ |  |
 | [WAP₁](lexemes/WAP.html) |  Wireles Application Protocol |  |  |
-| [WC₁](lexemes/WC.html) |  Water Closet |  | [enwikt](https://fi.wiktionary.org/wiki/WC)  |
+| [WC₁](lexemes/WC.html) |  Water Closet |  | [enwikt](https://en.wiktionary.org/wiki/WC)  |
 | [WHO₁](lexemes/WHO.html) |  World Health Organisation | org |  |
 | [WSOY₁](lexemes/WSOY.html) |  Werner-Söderström Osake-Yhtiö | org |  |
 | [WTO₁](lexemes/WTO.html) |  World Trade Organisation | org |  |
