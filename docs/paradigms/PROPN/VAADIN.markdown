@@ -4,8 +4,17 @@ paradigm: PROPN_VAADIN
 ---
 ### ` PROPN_VAADIN `
 
-* _din stem, din : time variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 33-F
-* The lemmas must end in * din * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*din `
+Dictionary class 33 back din
+* harmony: back
+* upos: PROPN
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: din
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*din
+* kotus_tn: 33

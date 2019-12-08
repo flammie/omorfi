@@ -4,8 +4,17 @@ paradigm: NOUN_PENGER
 ---
 ### ` NOUN_PENGER `
 
-* _nger stem, nger : nkere : nkeree variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 49-G
-* The lemmas must end in * ger * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nger `
+Dictionary class 49 ger
+* harmony: front
+* upos: NOUN
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: ger
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nger
+* kotus_tn: 49

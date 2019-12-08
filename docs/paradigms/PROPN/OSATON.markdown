@@ -4,8 +4,17 @@ paradigm: PROPN_OSATON
 ---
 ### ` PROPN_OSATON `
 
-* _ton stem, ton : ttoma variatons_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 34-C
-* The lemmas must end in * ton * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ton `
+Dictionary class 34 ton
+* harmony: back
+* upos: PROPN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: ton
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ton
+* kotus_tn: 34

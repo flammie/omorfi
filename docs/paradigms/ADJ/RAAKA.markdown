@@ -4,8 +4,17 @@ paradigm: ADJ_RAAKA
 ---
 ### ` ADJ_RAAKA `
 
-* _a stem, ka : ’a variation, obligatory apostrophe_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 9-D
-* The lemmas must end in * ka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ka `
+Adjectives with a-stem and k:’ variation, obligatory apostrophe
+* harmony: back
+* upos: ADJ
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: ka
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ka
+* kotus_tn: 9

@@ -4,8 +4,17 @@ paradigm: PROPN_ASUKAS
 ---
 ### ` PROPN_ASUKAS `
 
-* _kas stem, kas : kkaa variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-A
-* The lemmas must end in * as * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kas `
+Dictionary class 41 kas
+* harmony: back
+* upos: PROPN
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: as
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: kas
+* kotus_tn: 41

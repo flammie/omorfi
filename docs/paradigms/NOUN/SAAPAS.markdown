@@ -4,8 +4,17 @@ paradigm: NOUN_SAAPAS
 ---
 ### ` NOUN_SAAPAS `
 
-* _pas stem, pas : ppaa variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-B
-* The lemmas must end in * as * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pas `
+Dictionary class 41 pas
+* harmony: back
+* upos: NOUN
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: as
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: pas
+* kotus_tn: 41

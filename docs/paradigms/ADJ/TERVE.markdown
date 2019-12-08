@@ -4,8 +4,17 @@ paradigm: ADJ_TERVE
 ---
 ### ` ADJ_TERVE `
 
-* _e stems, e : ee variation, front harmony_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 48
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e `
+Adjectives with e:ee variation front harmony
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
+* kotus_tn: 48

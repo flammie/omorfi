@@ -4,8 +4,17 @@ paradigm: NOUN_51pitkähousu
 ---
 ### ` NOUN_51pitkähousu `
 
-* _Optimisation hack for exceptional compound ’pitkähousu’_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * ähousu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pitkähousu `
+Optimisation hack for exceptional compound ’pitkähousu’ that inflects in all parts with agreement
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ähousu
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pitkähousu
+* kotus_tn: 51

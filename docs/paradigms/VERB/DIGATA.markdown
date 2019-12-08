@@ -4,8 +4,17 @@ paradigm: VERB_DIGATA
 ---
 ### ` VERB_DIGATA `
 
-* _gata stem, gata : gga variatons_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 73-O
-* The lemmas must end in * ata * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` gata `
+Dictionary class73 back 0~g
+* harmony: back
+* upos: VERB
+* kotus_av: O
+* possessive: False
+* clitics: False
+* deletion: ata
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: gata
+* kotus_tn: 73

@@ -4,8 +4,17 @@ paradigm: NOUN_VAINAA
 ---
 ### ` NOUN_VAINAA `
 
-* _aa stem, aa : a variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 17
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` aa `
+Dictionary class 17 a
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: aa
+* kotus_tn: 17

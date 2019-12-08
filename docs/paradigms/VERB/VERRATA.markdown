@@ -4,8 +4,17 @@ paradigm: VERB_VERRATA
 ---
 ### ` VERB_VERRATA `
 
-* _rrata stem, rrata : rta variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 73-K
-* The lemmas must end in * rata * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rrata `
+Dictionary class73 back r~t
+* harmony: back
+* upos: VERB
+* kotus_av: K
+* possessive: False
+* clitics: False
+* deletion: rata
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rrata
+* kotus_tn: 73

@@ -4,8 +4,17 @@ paradigm: VERB_PURKAA
 ---
 ### ` VERB_PURKAA `
 
-* _kaa stem, kaa : a variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 53-D
-* The lemmas must end in * kaa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kaa `
+Dictionary class53 back k~0
+* harmony: back
+* upos: VERB
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: kaa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kaa
+* kotus_tn: 53

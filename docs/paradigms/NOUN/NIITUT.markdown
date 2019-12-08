@@ -4,9 +4,17 @@ paradigm: NOUN_NIITUT
 ---
 ### ` NOUN_NIITUT `
 
-* _Plurale tantums, tut stem, ttut : tu variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1-C
-* The lemmas must end in * ut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tut `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plurale tantums with ttu:tut stems
+* harmony: back
+* upos: NOUN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: ut
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tut
+* kotus_tn: 1

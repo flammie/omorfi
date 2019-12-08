@@ -4,8 +4,17 @@ paradigm: ADJ_TUMMAHKO
 ---
 ### ` ADJ_TUMMAHKO `
 
-* _o stem, no variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` o `
+Adjectives with o-stem belong here, the old dictionaries use class ¹. This class includes back vowel moderative derivations. N.B. the comparative derivation of moderatives is semantically awkward, but morphologically plausible.
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: o
+* kotus_tn: 1

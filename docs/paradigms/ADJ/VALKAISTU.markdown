@@ -4,8 +4,17 @@ paradigm: ADJ_VALKAISTU
 ---
 ### ` ADJ_VALKAISTU `
 
-* _u stems, no variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` u `
+Adjectives ending in u are in class described here, and in old dictionaries the class is ¹. Common part of this class is formed by nut participle passive’s _back_ vowel versions after s stem verbs
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: u
+* kotus_tn: 1

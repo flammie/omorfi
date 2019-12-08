@@ -4,8 +4,17 @@ paradigm: VERB_KERETÄ
 ---
 ### ` VERB_KERETÄ `
 
-* _retä stem, retä : keä variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 74-D
-* The lemmas must end in * etä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` etä `
+Dictionary class74 front 0~k e
+* harmony: front
+* upos: VERB
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: etä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: etä
+* kotus_tn: 74

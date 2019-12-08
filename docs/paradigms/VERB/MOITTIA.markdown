@@ -4,8 +4,17 @@ paradigm: VERB_MOITTIA
 ---
 ### ` VERB_MOITTIA `
 
-* _ttia stem, ttia : ti variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 61-C
-* The lemmas must end in * tia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttia `
+Dictionary class61 back t~0
+* harmony: back
+* upos: VERB
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: tia
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ttia
+* kotus_tn: 61

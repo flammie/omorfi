@@ -4,8 +4,17 @@ paradigm: ADJ_IKÄLOPPU
 ---
 ### ` ADJ_IKÄLOPPU `
 
-* _ppu stem, ppu : pu variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1-B
-* The lemmas must end in * pu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppu `
+The quantitative gradation of p before u is in class described here and old dictionaries would use ¹⁻B. It is only a nominal compound based adjective that ends in u and has p ~ 0 gradation here:
+* harmony: back
+* upos: ADJ
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: pu
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ppu
+* kotus_tn: 1

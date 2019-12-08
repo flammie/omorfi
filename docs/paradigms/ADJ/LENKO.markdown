@@ -4,8 +4,17 @@ paradigm: ADJ_LENKO
 ---
 ### ` ADJ_LENKO `
 
-* _nko stem, nko : ngo variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1-G
-* The lemmas must end in * ko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nko `
+The adjectives with -nko stem belong to class described here, and the dictionary class was ¹⁻G.
+* harmony: back
+* upos: ADJ
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: ko
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nko
+* kotus_tn: 1

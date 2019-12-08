@@ -4,8 +4,17 @@ paradigm: AUX_SAATTAA
 ---
 ### ` AUX_SAATTAA `
 
-* _auxiliary version of ttaa:to verb stem_
-* Universal POS is AUX and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 56-C
-* The lemmas must end in * taa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` saattaa `
+auxiliary version of ttaa:to verb stem
+* harmony: back
+* upos: AUX
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: taa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: saattaa
+* kotus_tn: 56

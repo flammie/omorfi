@@ -4,8 +4,17 @@ paradigm: NOUN_RYYPPY
 ---
 ### ` NOUN_RYYPPY `
 
-* _ppy stem, ppy : py variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1-B
-* The lemmas must end in * py * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppy `
+Dictionary class 1py
+* harmony: front
+* upos: NOUN
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: py
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ppy
+* kotus_tn: 1

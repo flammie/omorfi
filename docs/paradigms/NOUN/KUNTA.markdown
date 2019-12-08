@@ -4,8 +4,17 @@ paradigm: NOUN_KUNTA
 ---
 ### ` NOUN_KUNTA `
 
-* _nta stem, nta : nna variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10-J
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nta `
+Dictionary class 10 back t~n
+* harmony: back
+* upos: NOUN
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nta
+* kotus_tn: 10

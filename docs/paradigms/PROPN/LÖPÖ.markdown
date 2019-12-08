@@ -4,8 +4,17 @@ paradigm: PROPN_LÖPÖ
 ---
 ### ` PROPN_LÖPÖ `
 
-* _Proper nouns pö stem, pö : vo variations _
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1-E
-* The lemmas must end in * pö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pö `
+Dictionary class 1pö
+* harmony: front
+* upos: PROPN
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: pö
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pö
+* kotus_tn: 1

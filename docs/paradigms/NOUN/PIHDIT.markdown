@@ -4,9 +4,17 @@ paradigm: NOUN_PIHDIT
 ---
 ### ` NOUN_PIHDIT `
 
-* _Plurale tantums, dit stems, dit : te variations front harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 5-F
-* The lemmas must end in * dit * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*dit `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class xxx dit front plurale tantum
+* harmony: front
+* upos: NOUN
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: dit
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*dit
+* kotus_tn: 5

@@ -4,9 +4,17 @@ paradigm: NOUN_ATERIMET
 ---
 ### ` NOUN_ATERIMET `
 
-* _Plurale tantums, met : n variation back harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 33
-* The lemmas must end in * met * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*met `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class 31 t plurale tantum
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: met
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*met
+* kotus_tn: 33

@@ -4,9 +4,17 @@ paradigm: NOUN_RAVET
 ---
 ### ` NOUN_RAVET `
 
-* _Plurale tantums, et stems, no variaitons back harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 8
-* The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class 8 plurale tantum
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: t
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et
+* kotus_tn: 8

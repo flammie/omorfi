@@ -4,8 +4,17 @@ paradigm: NOUN_VEITSI
 ---
 ### ` NOUN_VEITSI `
 
-* _tsi stem, tsi : s variations front harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 30
-* The lemmas must end in * tsi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tsi `
+Dictionary class 27 tsi front The -ksi stem in haaksi includes k:h variation.
+* harmony: front
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: tsi
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tsi
+* kotus_tn: 30

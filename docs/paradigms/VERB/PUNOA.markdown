@@ -4,8 +4,17 @@ paradigm: VERB_PUNOA
 ---
 ### ` VERB_PUNOA `
 
-* _oa stem, oa : o variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` oa `
+The o stems have no stem variation: Dictionary class52o
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: oa
+* kotus_tn: 52

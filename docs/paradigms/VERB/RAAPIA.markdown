@@ -4,8 +4,17 @@ paradigm: VERB_RAAPIA
 ---
 ### ` VERB_RAAPIA `
 
-* _pia stem, pia : vi variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 61-E
-* The lemmas must end in * pia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pia `
+Dictionary class61 back p~v
+* harmony: back
+* upos: VERB
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: pia
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pia
+* kotus_tn: 61

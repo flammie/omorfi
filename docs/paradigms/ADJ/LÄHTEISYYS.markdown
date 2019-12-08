@@ -4,8 +4,17 @@ paradigm: ADJ_LÄHTEISYYS
 ---
 ### ` ADJ_LÄHTEISYYS `
 
-* _yys stems, yys : yyde variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 40
-* The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ys `
+Adjectives with yys:yyde variations
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: s
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ys
+* kotus_tn: 40

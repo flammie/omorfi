@@ -4,8 +4,17 @@ paradigm: NUM_51viideskuudetta
 ---
 ### ` NUM_51viideskuudetta `
 
-* _Optimisation hack for exceptional compound ’viideskuudetta’_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * skuudetta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` viideskuudetta `
+Optimisation hack for exceptional compound ’viideskuudetta’ that inflects in all parts with agreement
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: skuudetta
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: viideskuudetta
+* kotus_tn: 51

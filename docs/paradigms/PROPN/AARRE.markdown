@@ -4,8 +4,17 @@ paradigm: PROPN_AARRE
 ---
 ### ` PROPN_AARRE `
 
-* _rre stem, rre : rtee variations back harmony_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 48-K
-* The lemmas must end in * re * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rre `
+Dictionary class 48 back re
+* harmony: back
+* upos: PROPN
+* kotus_av: K
+* possessive: False
+* clitics: False
+* deletion: re
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rre
+* kotus_tn: 48

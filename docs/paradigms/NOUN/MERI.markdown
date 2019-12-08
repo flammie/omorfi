@@ -4,8 +4,17 @@ paradigm: NOUN_MERI
 ---
 ### ` NOUN_MERI `
 
-* _meri stems, i : e variations and tä partitive_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes can use both vowel harmonies
-* KOTUS paradigm used in their dictionary is 1024
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i `
+Non-Dictionary class meri
+* harmony: both
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
+* kotus_tn: 1024

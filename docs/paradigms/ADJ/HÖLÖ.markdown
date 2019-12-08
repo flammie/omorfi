@@ -4,8 +4,17 @@ paradigm: ADJ_HÖLÖ
 ---
 ### ` ADJ_HÖLÖ `
 
-* _ö stems, no variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ö `
+The words in this class ending in ö belong to described here, the old dictionaries use class ¹. This class includes front vowel moderative derivations.
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ö
+* kotus_tn: 1

@@ -4,8 +4,17 @@ paradigm: VERB_TUODA
 ---
 ### ` VERB_TUODA `
 
-* _uoda stem, uoda : oi variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 64
-* The lemmas must end in * uoda * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` uoda `
+Dictionary class64 uo
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: uoda
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: uoda
+* kotus_tn: 64

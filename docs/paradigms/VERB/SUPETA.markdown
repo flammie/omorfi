@@ -4,8 +4,17 @@ paradigm: VERB_SUPETA
 ---
 ### ` VERB_SUPETA `
 
-* _peta stem, peta : ppene variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 72-B
-* The lemmas must end in * eta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` peta `
+Dictionary class72 front 0~p
+* harmony: back
+* upos: VERB
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: eta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: peta
+* kotus_tn: 72

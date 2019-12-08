@@ -4,8 +4,17 @@ paradigm: NOUN_51vierasmies
 ---
 ### ` NOUN_51vierasmies `
 
-* _Optimisation hack for exceptional compound ’vierasmies’_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * vierasmies * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vierasmies `
+Optimisation hack for exceptional compound ’vierasmies’ that inflects in all parts with agreement
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: vierasmies
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: vierasmies
+* kotus_tn: 51

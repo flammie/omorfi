@@ -4,8 +4,17 @@ paradigm: VERB_POIKETA
 ---
 ### ` VERB_POIKETA `
 
-* _keta stem, keta : kkea variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-A
-* The lemmas must end in * eta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` eta `
+Dictionary class74 back 0~k e
+* harmony: back
+* upos: VERB
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: eta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: eta
+* kotus_tn: 74

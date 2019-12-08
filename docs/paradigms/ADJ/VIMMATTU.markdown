@@ -4,8 +4,17 @@ paradigm: ADJ_VIMMATTU
 ---
 ### ` ADJ_VIMMATTU `
 
-* _ttu stems, ttu : tu variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1-C
-* The lemmas must end in * tu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttu `
+Adjectives with gradation t before u is in class described here, which was ¹⁻C in the dictionary. The u stems with quantitative t gradation are commonest with nut participle passive derivation’s back form (-ttu).
+* harmony: back
+* upos: ADJ
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: tu
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ttu
+* kotus_tn: 1

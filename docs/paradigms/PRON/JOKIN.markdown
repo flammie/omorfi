@@ -4,8 +4,17 @@ paradigm: PRON_JOKIN
 ---
 ### ` PRON_JOKIN `
 
-* _‘jokin’ inflect before kin clitic_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 101
-* The lemmas must end in * kin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kin `
+pronoun jokin, mikin inflect before kin clitic
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: kin
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: kin
+* kotus_tn: 101

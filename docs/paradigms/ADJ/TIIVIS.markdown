@@ -4,8 +4,17 @@ paradigm: ADJ_TIIVIS
 ---
 ### ` ADJ_TIIVIS `
 
-* _is stems, is : ii variation, front_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 41
-* The lemmas must end in * is * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*is `
+Adjectives with is:ii stem variation front
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: is
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*is
+* kotus_tn: 41

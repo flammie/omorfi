@@ -4,8 +4,17 @@ paradigm: NOUN_MATEE
 ---
 ### ` NOUN_MATEE `
 
-* _long ee stem, back harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 18
-* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e `
+Nouns with long e stem and back harmony
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: e
+* pos: NOUN
+* stem_vowel: e
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
+* kotus_tn: 18

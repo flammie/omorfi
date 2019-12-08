@@ -4,8 +4,17 @@ paradigm: ADJ_ÄLLISTYNYT
 ---
 ### ` ADJ_ÄLLISTYNYT `
 
-* _-yt stem, yt : ee variation, mostly lexicalised nut participles_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 47
-* The lemmas must end in * yt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yt `
+Dictionary class 47 front
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: yt
+* pos: ADJECTIVE
+* stem_vowel: y
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: yt
+* kotus_tn: 47

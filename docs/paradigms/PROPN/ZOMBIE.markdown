@@ -4,8 +4,17 @@ paradigm: PROPN_ZOMBIE
 ---
 ### ` PROPN_ZOMBIE `
 
-* _e stem, no variations back hamronu_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 3
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e `
+Similar inflection exists in limited amounts in new loan words that are written as pronounced (thus taking no stem variation but still ending with long vowels with a syllable boundary) Dictionary class 3eta
+* harmony: back
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
+* kotus_tn: 3

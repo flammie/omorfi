@@ -4,8 +4,17 @@ paradigm: ADJ_REIPAS
 ---
 ### ` ADJ_REIPAS `
 
-* _pas stems, pas : ppaa variation_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-B
-* The lemmas must end in * as * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pas `
+Adjectives with pas:ppaa variation
+* harmony: back
+* upos: ADJ
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: as
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: pas
+* kotus_tn: 41

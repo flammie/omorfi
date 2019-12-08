@@ -4,8 +4,17 @@ paradigm: VERB_SURRA
 ---
 ### ` VERB_SURRA `
 
-* _rra stem, rra : re variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 67
-* The lemmas must end in * ra * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rra `
+Dictionary class67 back r
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ra
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rra
+* kotus_tn: 67

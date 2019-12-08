@@ -4,8 +4,17 @@ paradigm: VERB_TYHJENTYÄ
 ---
 ### ` VERB_TYHJENTYÄ `
 
-* _ntyä stem, ntyä : nny variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 52-J
-* The lemmas must end in * tyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntyä `
+Dictionary class52 t~n y
+* harmony: front
+* upos: VERB
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: tyä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ntyä
+* kotus_tn: 52

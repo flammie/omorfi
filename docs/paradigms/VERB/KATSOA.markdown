@@ -4,8 +4,17 @@ paradigm: VERB_KATSOA
 ---
 ### ` VERB_KATSOA `
 
-* _The regular o stem, dialectally gradating ts variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52
-* The lemmas must end in * tsoa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` oa `
+The regular o stem with dialectally gradating ts variations
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: tsoa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: oa
+* kotus_tn: 52

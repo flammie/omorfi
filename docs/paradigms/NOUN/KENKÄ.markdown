@@ -4,8 +4,17 @@ paradigm: NOUN_KENKÄ
 ---
 ### ` NOUN_KENKÄ `
 
-* _nkä stems, nkä : ng variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 10-G
-* The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkä `
+Dictionary class 10 frot k~g
+* harmony: front
+* upos: NOUN
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: kä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nkä
+* kotus_tn: 10

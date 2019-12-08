@@ -4,9 +4,17 @@ paradigm: NOUN_IKENET
 ---
 ### ` NOUN_IKENET `
 
-* _kenet stem, kenet : en variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 32-D
-* The lemmas must end in * kenet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*kenet `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class 31 ien plurale tantum
+* harmony: front
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: kenet
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*kenet
+* kotus_tn: 32

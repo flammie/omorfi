@@ -4,8 +4,17 @@ paradigm: NOUN_ESQUIMAU
 ---
 ### ` NOUN_ESQUIMAU `
 
-* _Loan words, o stem_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 21
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+Dictionary class 21 o back
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: NOUN
+* stem_vowel: o
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 21

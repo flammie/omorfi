@@ -4,8 +4,17 @@ paradigm: VERB_VARTOA
 ---
 ### ` VERB_VARTOA `
 
-* _rtoa stem, rtoa : rro variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52-K
-* The lemmas must end in * toa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rtoa `
+Dictionary class52 t~r o
+* harmony: back
+* upos: VERB
+* kotus_av: K
+* possessive: False
+* clitics: False
+* deletion: toa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: rtoa
+* kotus_tn: 52

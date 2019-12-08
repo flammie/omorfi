@@ -4,8 +4,17 @@ paradigm: NOUN_ONKI
 ---
 ### ` NOUN_ONKI `
 
-* _nki stem, nki : nge variations back harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 7-G
-* The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki `
+Dictionary class 7 back k~g
+* harmony: back
+* upos: NOUN
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: ki
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki
+* kotus_tn: 7

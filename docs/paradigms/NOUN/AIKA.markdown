@@ -4,8 +4,17 @@ paradigm: NOUN_AIKA
 ---
 ### ` NOUN_AIKA `
 
-* _Nouns that inflect like aika:aja_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1009-D
-* The lemmas must end in * ika * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ika `
+Nouns that inflect like aika:aja
+* harmony: back
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: ika
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ika
+* kotus_tn: 1009

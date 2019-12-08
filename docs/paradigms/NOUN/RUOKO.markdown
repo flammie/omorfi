@@ -4,8 +4,17 @@ paradigm: NOUN_RUOKO
 ---
 ### ` NOUN_RUOKO `
 
-* _uoko stem, uoko : uo’o variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1-D
-* The lemmas must end in * ko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` oko `
+Between three vowels where k is surrounded by same vowels the k becomes obligatorily ’. When the vowels are different, it becomes optionally ’ (as in N_TEKO), and after consonant other than s it is k ~ 0 (as in N_UKKO). Dictionary class 1ko
+* harmony: back
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: ko
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: oko
+* kotus_tn: 1

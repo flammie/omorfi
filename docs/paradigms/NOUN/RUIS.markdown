@@ -4,8 +4,17 @@ paradigm: NOUN_RUIS
 ---
 ### ` NOUN_RUIS `
 
-* _is stem, is : kii variations back harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-D
-* The lemmas must end in * is * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` is `
+Dictionary class 41 is
+* harmony: back
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: is
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: is
+* kotus_tn: 41

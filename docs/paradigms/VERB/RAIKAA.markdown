@@ -4,8 +4,17 @@ paradigm: VERB_RAIKAA
 ---
 ### ` VERB_RAIKAA `
 
-* _kaa stem, defective inflection_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 78
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` aa `
+Dictionary class78 back
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: aa
+* kotus_tn: 78

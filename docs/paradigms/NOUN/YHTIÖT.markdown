@@ -4,9 +4,17 @@ paradigm: NOUN_YHTIÖT
 ---
 ### ` NOUN_YHTIÖT `
 
-* _Plurale tantum, iö stem, no varitionst_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 3
-* The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` t `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plurale tantum with iö-stem
+* harmony: front
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: t
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: t
+* kotus_tn: 3

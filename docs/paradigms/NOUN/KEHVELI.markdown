@@ -4,8 +4,17 @@ paradigm: NOUN_KEHVELI
 ---
 ### ` NOUN_KEHVELI `
 
-* _i stem, i : e variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 6
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i `
+Dictionary class 6 front
+* harmony: front
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
+* kotus_tn: 6

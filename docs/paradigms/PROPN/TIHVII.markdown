@@ -4,8 +4,17 @@ paradigm: PROPN_TIHVII
 ---
 ### ` PROPN_TIHVII `
 
-* _ii stem, ii : i variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 17
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ii `
+Proper nouns with ii-stems
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: NOUN
+* stem_vowel: i
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ii
+* kotus_tn: 17

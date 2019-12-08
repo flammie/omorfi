@@ -4,8 +4,17 @@ paradigm: NOUN_51raskasvety
 ---
 ### ` NOUN_51raskasvety `
 
-* _Optimisation hack for exceptional compound ’raskasvety’_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * svety * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` raskasvety `
+Optimisation hack for exceptional compound ’raskasvety’ that inflects in all parts with agreement
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: svety
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: raskasvety
+* kotus_tn: 51

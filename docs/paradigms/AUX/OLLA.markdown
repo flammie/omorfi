@@ -4,8 +4,17 @@ paradigm: AUX_OLLA
 ---
 ### ` AUX_OLLA `
 
-* _auxiliary version of ‘olla’_
-* Universal POS is AUX and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1067
-* The lemmas must end in * olla * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` olla `
+auxiliary version of ‘olla’
+* harmony: back
+* upos: AUX
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: olla
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: olla
+* kotus_tn: 1067

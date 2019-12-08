@@ -4,8 +4,17 @@ paradigm: PROPN_COWBOY
 ---
 ### ` PROPN_COWBOY `
 
-* _y stem, no variations both harmonies_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 21
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+Dictionary class 21 iy
+* harmony: back
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: NOUN
+* stem_vowel: i
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 21

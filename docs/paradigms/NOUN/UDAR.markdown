@@ -4,8 +4,17 @@ paradigm: NOUN_UDAR
 ---
 ### ` NOUN_UDAR `
 
-* _dar stem, dar : taree variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 49-F
-* The lemmas must end in * dar * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dar `
+Dictionary class 49 dar
+* harmony: back
+* upos: NOUN
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: dar
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: dar
+* kotus_tn: 49

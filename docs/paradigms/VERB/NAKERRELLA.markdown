@@ -4,8 +4,17 @@ paradigm: VERB_NAKERRELLA
 ---
 ### ` VERB_NAKERRELLA `
 
-* _rrella stem, rrella : rtele variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 67-K
-* The lemmas must end in * rella * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rrella `
+Dictionary class67 back l r~t
+* harmony: back
+* upos: VERB
+* kotus_av: K
+* possessive: False
+* clitics: False
+* deletion: rella
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rrella
+* kotus_tn: 67

@@ -4,8 +4,17 @@ paradigm: PRON_ME
 ---
 ### ` PRON_ME `
 
-* _‘me, te, he’ inflect, e stems, plural only_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 101
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` e `
+personal pronouns ‘me, te, he’ inflect with e stems, plural only
+* harmony: front
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: e
+* kotus_tn: 101

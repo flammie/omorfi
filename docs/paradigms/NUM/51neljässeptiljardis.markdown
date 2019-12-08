@@ -4,8 +4,17 @@ paradigm: NUM_51neljässeptiljardis
 ---
 ### ` NUM_51neljässeptiljardis `
 
-* _Optimisation hack for exceptional compound ’neljässeptiljardis’_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * sseptiljardis * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` neljässeptiljardis `
+Optimisation hack for exceptional compound ’neljässeptiljardis’ that inflects in all parts with agreement
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: sseptiljardis
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: neljässeptiljardis
+* kotus_tn: 51

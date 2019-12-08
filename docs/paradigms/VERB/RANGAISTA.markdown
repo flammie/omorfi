@@ -4,8 +4,17 @@ paradigm: VERB_RANGAISTA
 ---
 ### ` VERB_RANGAISTA `
 
-* _gaista stem, gaista : kaise variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 66-G
-* The lemmas must end in * gaista * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngaista `
+Dictionary class66 back k~g
+* harmony: back
+* upos: VERB
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: gaista
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ngaista
+* kotus_tn: 66

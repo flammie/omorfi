@@ -4,8 +4,17 @@ paradigm: ADJ_LÄHEMPI
 ---
 ### ` ADJ_LÄHEMPI `
 
-* _mpi stems, mpi : mmä variatios, Lexicalised comparatives, front vowels_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 16-H
-* The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mpi `
+Lexicalised comparatives with front vowels
+* harmony: front
+* upos: ADJ
+* kotus_av: H
+* possessive: False
+* clitics: False
+* deletion: pi
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mpi
+* kotus_tn: 16

@@ -4,8 +4,17 @@ paradigm: NOUN_TUHKA
 ---
 ### ` NOUN_TUHKA `
 
-* _hka stem, hka : h ~ hk variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * ka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hka `
+Dictionary class 9 k~0 without optional k not gradating
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ka
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: hka
+* kotus_tn: 10

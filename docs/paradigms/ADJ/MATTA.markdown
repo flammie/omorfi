@@ -4,8 +4,17 @@ paradigm: ADJ_MATTA
 ---
 ### ` ADJ_MATTA `
 
-* _ta stem,  tta : to variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 9-C
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tta `
+The ta stem with j plurals is described here, and the dictionary class is ⁹-C.
+* harmony: back
+* upos: ADJ
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tta
+* kotus_tn: 9

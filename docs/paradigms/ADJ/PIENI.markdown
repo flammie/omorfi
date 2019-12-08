@@ -4,8 +4,17 @@ paradigm: ADJ_PIENI
 ---
 ### ` ADJ_PIENI `
 
-* _i stems, i : e variation, consonant stemmed ntä partitives_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 26
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i `
+Adjectives with i:e variation and consonant stemmed ntä partitives
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
+* kotus_tn: 26

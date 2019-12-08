@@ -4,8 +4,17 @@ paradigm: NOUN_PROTOLYYSI
 ---
 ### ` NOUN_PROTOLYYSI `
 
-* _i stem, i : e variations both harmonies_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes can use both vowel harmonies
-* KOTUS paradigm used in their dictionary is 5
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` i `
+Dictionary class 5 both
+* harmony: both
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: i
+* kotus_tn: 5

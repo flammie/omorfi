@@ -4,8 +4,17 @@ paradigm: VERB_TUNKEA
 ---
 ### ` VERB_TUNKEA `
 
-* _nkea stem, nkea : nge variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 58-G
-* The lemmas must end in * kea * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkea `
+Dictionary class58 back k~g
+* harmony: back
+* upos: VERB
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: kea
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nkea
+* kotus_tn: 58

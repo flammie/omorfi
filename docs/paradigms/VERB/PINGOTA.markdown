@@ -4,8 +4,17 @@ paradigm: VERB_PINGOTA
 ---
 ### ` VERB_PINGOTA `
 
-* _ngota stem, ngota : nkoa variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-G
-* The lemmas must end in * gota * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` gota `
+Dictionary class74 back g~ko
+* harmony: back
+* upos: VERB
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: gota
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: gota
+* kotus_tn: 74

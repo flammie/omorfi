@@ -4,9 +4,17 @@ paradigm: PROPN_RANGAT
 ---
 ### ` PROPN_RANGAT `
 
-* _Plural-only proper noun, ngat stem, ngat : nka variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 9-G
-* The lemmas must end in * gat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngat `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plural-only proper noun with i:e stem and kk:k gradation
+* harmony: back
+* upos: PROPN
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: gat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ngat
+* kotus_tn: 9

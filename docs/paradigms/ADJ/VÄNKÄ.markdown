@@ -4,8 +4,17 @@ paradigm: ADJ_VÄNKÄ
 ---
 ### ` ADJ_VÄNKÄ `
 
-* _nkä stems, nkä : ng variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 10-G
-* The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkä `
+Adjectives with nkä:ng variation
+* harmony: front
+* upos: ADJ
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: kä
+* pos: ADJECTIVE
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nkä
+* kotus_tn: 10

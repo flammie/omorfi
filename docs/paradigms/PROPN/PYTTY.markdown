@@ -4,8 +4,17 @@ paradigm: PROPN_PYTTY
 ---
 ### ` PROPN_PYTTY `
 
-* _ty stem, tty : ty variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1-C
-* The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tty `
+Dictionary class 1ty
+* harmony: front
+* upos: PROPN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: ty
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tty
+* kotus_tn: 1

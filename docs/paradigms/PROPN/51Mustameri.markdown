@@ -4,8 +4,17 @@ paradigm: PROPN_51Mustameri
 ---
 ### ` PROPN_51Mustameri `
 
-* _Optimisation hack for exceptional compound ’Mustameri’_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * ameri * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` Mustameri `
+Optimisation hack for exceptional compound ’Mustameri’ that inflects in all parts with agreement
+* harmony: back
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ameri
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: Mustameri
+* kotus_tn: 51

@@ -4,8 +4,17 @@ paradigm: ADJ_TURTA
 ---
 ### ` ADJ_TURTA `
 
-* _rta stems, rta : rr variation_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10-K
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rta `
+Adjectives with rta-stems and t:r variation
+* harmony: back
+* upos: ADJ
+* kotus_av: K
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: rta
+* kotus_tn: 10

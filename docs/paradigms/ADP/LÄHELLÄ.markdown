@@ -4,8 +4,17 @@ paradigm: ADP_LÄHELLÄ
 ---
 ### ` ADP_LÄHELLÄ `
 
-* _optional possessive including -än allomorph_
-* Universal POS is ADP and legacy POS is PARTICLE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 99
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ä `
+adposition with optional possessive including -än allomorph
+* harmony: front
+* upos: ADP
+* kotus_av: None
+* possessive: optional
+* clitics: True
+* deletion: None
+* pos: PARTICLE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: ä
+* kotus_tn: 99

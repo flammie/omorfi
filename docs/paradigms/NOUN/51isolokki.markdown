@@ -4,8 +4,17 @@ paradigm: NOUN_51isolokki
 ---
 ### ` NOUN_51isolokki `
 
-* _Optimisation hack for exceptional compound ’isolokki’_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * lokki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isolokki `
+Optimisation hack for exceptional compound ’isolokki’ that inflects in all parts with agreement
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: lokki
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: isolokki
+* kotus_tn: 51

@@ -4,8 +4,17 @@ paradigm: NOUN_POLJIN
 ---
 ### ` NOUN_POLJIN `
 
-* _jin stem, jin : kime variations back variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 33-L
-* The lemmas must end in * jin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*jin `
+Dictionary class 33 back jin
+* harmony: back
+* upos: NOUN
+* kotus_av: L
+* possessive: False
+* clitics: False
+* deletion: jin
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*jin
+* kotus_tn: 33

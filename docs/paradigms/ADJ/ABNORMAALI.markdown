@@ -4,8 +4,17 @@ paradigm: ADJ_ABNORMAALI
 ---
 ### ` ADJ_ABNORMAALI `
 
-* _i stem, i : e_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 6
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i `
+The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶.
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
+* kotus_tn: 6

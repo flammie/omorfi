@@ -4,8 +4,17 @@ paradigm: VERB_MIETTIÄ
 ---
 ### ` VERB_MIETTIÄ `
 
-* _ttiä stem, ttiä : ti variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 61-C
-* The lemmas must end in * tiä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttiä `
+Dictionary class61 front t~0
+* harmony: front
+* upos: VERB
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: tiä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ttiä
+* kotus_tn: 61

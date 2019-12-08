@@ -4,8 +4,17 @@ paradigm: PRON_JOKU
 ---
 ### ` PRON_JOKU `
 
-* _‘joku’ inflects, agreement like compound 51 jo+ku_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 101
-* The lemmas must end in * ku * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` joku `
+pronoun joku inflects with agreement like compound 51 jo+ku
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ku
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: joku
+* kotus_tn: 101

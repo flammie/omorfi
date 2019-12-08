@@ -4,8 +4,17 @@ paradigm: ADJ_TOOPE
 ---
 ### ` ADJ_TOOPE `
 
-* _e stems, no variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 8
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e `
+New adjectives with e stem have same allomorph selection as old short unchanging bisyllabic u, y, o and ö stems, and no stem-internal variation. The classification for the back vowel variant of this class is described here, and old dictionaries used the class ⁸. They also have slightly greater probability for archaic form of plural genitive
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
+* kotus_tn: 8

@@ -4,8 +4,17 @@ paradigm: ADJ_RIETAS
 ---
 ### ` ADJ_RIETAS `
 
-* _tas stems, tas : ttaa variation_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-C
-* The lemmas must end in * as * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tas `
+Adjectives with tas:ttaa variation
+* harmony: back
+* upos: ADJ
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: as
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: tas
+* kotus_tn: 41

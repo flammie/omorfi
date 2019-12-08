@@ -4,8 +4,17 @@ paradigm: VERB_PENKOA
 ---
 ### ` VERB_PENKOA `
 
-* _nkoa stem, nkoa : ngo variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52-G
-* The lemmas must end in * koa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkoa `
+Dictionary class52 k~g o
+* harmony: back
+* upos: VERB
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: koa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nkoa
+* kotus_tn: 52

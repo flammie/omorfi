@@ -4,8 +4,17 @@ paradigm: NOUN_HYLJE
 ---
 ### ` NOUN_HYLJE `
 
-* _je stem, je : ke variations, front harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 48-L
-* The lemmas must end in * je * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*je `
+Dictionary class 48 front je
+* harmony: front
+* upos: NOUN
+* kotus_av: L
+* possessive: False
+* clitics: False
+* deletion: je
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*je
+* kotus_tn: 48

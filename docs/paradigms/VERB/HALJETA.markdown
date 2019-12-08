@@ -4,8 +4,17 @@ paradigm: VERB_HALJETA
 ---
 ### ` VERB_HALJETA `
 
-* _jeta stema, jeta : kea variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-L
-* The lemmas must end in * jeta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` jeta `
+Dictionary class74 back j~ke
+* harmony: back
+* upos: VERB
+* kotus_av: L
+* possessive: False
+* clitics: False
+* deletion: jeta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: jeta
+* kotus_tn: 74

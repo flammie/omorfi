@@ -4,9 +4,17 @@ paradigm: PROPN_SYÖMINGIT
 ---
 ### ` PROPN_SYÖMINGIT `
 
-* _ngit stem, git : nki variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 5-G
-* The lemmas must end in * git * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ngit `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class xxx git fornt plurale tantum
+* harmony: front
+* upos: PROPN
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: git
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ngit
+* kotus_tn: 5

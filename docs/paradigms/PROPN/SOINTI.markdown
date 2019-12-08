@@ -4,8 +4,17 @@ paradigm: PROPN_SOINTI
 ---
 ### ` PROPN_SOINTI `
 
-* _nti stem, nti : nne variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 5-J
-* The lemmas must end in * ti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nti `
+Dictionary class 5 back t~n
+* harmony: back
+* upos: PROPN
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: ti
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nti
+* kotus_tn: 5

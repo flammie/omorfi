@@ -4,8 +4,17 @@ paradigm: PRON_MONES
 ---
 ### ` PRON_MONES `
 
-* _s stem, s : nne variaitns_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 45
-* The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mones `
+inflects like NUM_KOLMAS
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: s
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: mones
+* kotus_tn: 45

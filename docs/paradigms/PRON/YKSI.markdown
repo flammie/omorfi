@@ -4,8 +4,17 @@ paradigm: PRON_YKSI
 ---
 ### ` PRON_YKSI `
 
-* _ksi stem, ksi : ht variatons_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 31
-* The lemmas must end in * ksi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yksi `
+inflects like NUM_YKSI
+* harmony: front
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ksi
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: yksi
+* kotus_tn: 31

@@ -4,8 +4,17 @@ paradigm: PROPN_MÖMMÖ
 ---
 ### ` PROPN_MÖMMÖ `
 
-* _ö stem no variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ö `
+Dictionary class 1ö
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ö
+* kotus_tn: 1

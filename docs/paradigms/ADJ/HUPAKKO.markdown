@@ -4,8 +4,17 @@ paradigm: ADJ_HUPAKKO
 ---
 ### ` ADJ_HUPAKKO `
 
-* _kko stems, kko : ko variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 4-A
-* The lemmas must end in * ko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kko `
+The class for trisyllabic -kko stems is described here, the corresponding dictionary class is ⁴⁻D.
+* harmony: back
+* upos: ADJ
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: ko
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kko
+* kotus_tn: 4

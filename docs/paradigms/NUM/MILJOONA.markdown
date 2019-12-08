@@ -4,8 +4,17 @@ paradigm: NUM_MILJOONA
 ---
 ### ` NUM_MILJOONA `
 
-* _a stem a : 0 variatons_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` a `
+Dictionary class10
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: NUMERAL
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: a
+* kotus_tn: 10

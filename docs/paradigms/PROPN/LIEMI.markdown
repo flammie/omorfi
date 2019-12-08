@@ -4,8 +4,17 @@ paradigm: PROPN_LIEMI
 ---
 ### ` PROPN_LIEMI `
 
-* _mi stem, mi : n variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 25
-* The lemmas must end in * mi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mi `
+Dictionary class 25 front The -si words that originate from old -te stems have the consonant gradation patterns left in their stems. The si is only in nominative stem and this class mainly concerns stems that are old enough to have undergone ti>si transformation.
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: mi
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mi
+* kotus_tn: 25

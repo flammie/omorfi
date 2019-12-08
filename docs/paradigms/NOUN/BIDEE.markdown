@@ -4,8 +4,17 @@ paradigm: NOUN_BIDEE
 ---
 ### ` NOUN_BIDEE `
 
-* _ee stem, more syllables, ee : e variation_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 20
-* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ee `
+Dictionary class 20 e front There’s a gap in -ii final loan stems.
+* harmony: front
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: e
+* pos: NOUN
+* stem_vowel: e
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ee
+* kotus_tn: 20

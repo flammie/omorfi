@@ -4,9 +4,17 @@ paradigm: PROPN_SERKUKSET
 ---
 ### ` PROPN_SERKUKSET `
 
-* _kset stem, kset :s variation back harony_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 39
-* The lemmas must end in * kset * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kset `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class kset plurale tantum
+* harmony: back
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: kset
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kset
+* kotus_tn: 39

@@ -4,8 +4,17 @@ paradigm: NOUN_SUOMALAINEN
 ---
 ### ` NOUN_SUOMALAINEN `
 
-* _Nouns / adjectives, nen stem, nen : se variation_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 38
-* The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen `
+Dictionary class 38 back for the nationality ADJ/NOUN dual case
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: nen
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen
+* kotus_tn: 38

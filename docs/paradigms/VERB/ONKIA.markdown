@@ -4,8 +4,17 @@ paradigm: VERB_ONKIA
 ---
 ### ` VERB_ONKIA `
 
-* _nkia stem, nkia : ngi variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 61-G
-* The lemmas must end in * kia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkia `
+Dictionary class61 back k~g
+* harmony: back
+* upos: VERB
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: kia
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nkia
+* kotus_tn: 61

@@ -4,8 +4,17 @@ paradigm: VERB_VAKAANTUA
 ---
 ### ` VERB_VAKAANTUA `
 
-* _ntua stem, ntua : nnu variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52-J
-* The lemmas must end in * tua * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntua `
+Dictionary class52 t~n u
+* harmony: back
+* upos: VERB
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: tua
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ntua
+* kotus_tn: 52

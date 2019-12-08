@@ -4,8 +4,17 @@ paradigm: ADJ_OIKEE
 ---
 ### ` ADJ_OIKEE `
 
-* _ee stems, colloquial versions of ea stem, lexicalised_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 15
-* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ee `
+adjectives with colloquial versions of ea stem, lexicalised
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: e
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ee
+* kotus_tn: 15

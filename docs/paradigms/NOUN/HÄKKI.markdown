@@ -4,8 +4,17 @@ paradigm: NOUN_HÄKKI
 ---
 ### ` NOUN_HÄKKI `
 
-* _ki stem, kki : ki variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 5-A|D
-* The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki `
+Dictionary class 5 front k~0
+* harmony: front
+* upos: NOUN
+* kotus_av: A|D
+* possessive: False
+* clitics: False
+* deletion: ki
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki
+* kotus_tn: 5

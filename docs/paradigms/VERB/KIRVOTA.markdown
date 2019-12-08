@@ -4,8 +4,17 @@ paradigm: VERB_KIRVOTA
 ---
 ### ` VERB_KIRVOTA `
 
-* _vota stem, vota : poa variatons_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-E
-* The lemmas must end in * vota * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vota `
+Dictionary class74 back v~po
+* harmony: back
+* upos: VERB
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: vota
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: vota
+* kotus_tn: 74

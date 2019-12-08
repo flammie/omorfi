@@ -4,8 +4,17 @@ paradigm: PROPN_LUSIKKA
 ---
 ### ` PROPN_LUSIKKA `
 
-* _kka stem, kka : ko variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 14-A
-* The lemmas must end in * ka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kka `
+Dictionary class 14 back
+* harmony: back
+* upos: PROPN
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: ka
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kka
+* kotus_tn: 14

@@ -4,8 +4,17 @@ paradigm: PRON_JOMPIKUMPI
 ---
 ### ` PRON_JOMPIKUMPI `
 
-* _‘jompikumpi’ inflects, agreement like compound 51 jompi+kumpi c.f. PRON_KUMPI_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 101
-* The lemmas must end in * pikumpi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` jompikumpi `
+pronoun jompikumpi inflects with agreement like compound 51 jompi+kumpi c.f. PRON_KUMPI
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: pikumpi
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: jompikumpi
+* kotus_tn: 101

@@ -4,8 +4,17 @@ paradigm: NOUN_TARVE
 ---
 ### ` NOUN_TARVE `
 
-* _ve stems, ve : pe variations back harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 48-E
-* The lemmas must end in * ve * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ve `
+Dictionary class 48 back ve
+* harmony: back
+* upos: NOUN
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: ve
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ve
+* kotus_tn: 48

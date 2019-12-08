@@ -4,8 +4,17 @@ paradigm: PROPN_VUOLLET
 ---
 ### ` PROPN_VUOLLET `
 
-* _Plural-only proper noun, llet stem, llet :_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 44-I
-* The lemmas must end in * let * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*llet `
+Plural-only proper noun with i:e stem and kk:k gradation
+* harmony: back
+* upos: PROPN
+* kotus_av: I
+* possessive: False
+* clitics: False
+* deletion: let
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*llet
+* kotus_tn: 44

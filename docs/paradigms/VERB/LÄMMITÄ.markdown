@@ -4,8 +4,17 @@ paradigm: VERB_LÄMMITÄ
 ---
 ### ` VERB_LÄMMITÄ `
 
-* _mitä stem, mmitä : mpiä variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 75-H
-* The lemmas must end in * mitä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mmitä `
+Dictionary class75 mitä
+* harmony: front
+* upos: VERB
+* kotus_av: H
+* possessive: False
+* clitics: False
+* deletion: mitä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: mmitä
+* kotus_tn: 75

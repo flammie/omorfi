@@ -4,8 +4,17 @@ paradigm: NOUN_AAMUKOLME
 ---
 ### ` NOUN_AAMUKOLME `
 
-* _Nouns inflecting like 'kolme', e.g. noun-numeral compounds_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 3
-* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kolme `
+Non-dictionary class for numeral compounds ending kolme
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: e
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kolme
+* kotus_tn: 3

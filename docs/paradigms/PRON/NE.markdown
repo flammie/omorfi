@@ -4,8 +4,17 @@ paradigm: PRON_NE
 ---
 ### ` PRON_NE `
 
-* _e stem, e : i, plurals only_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 101
-* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ne `
+inflects with e:i stems, plurals only
+* harmony: front
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: e
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: ne
+* kotus_tn: 101

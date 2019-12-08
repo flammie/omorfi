@@ -4,8 +4,17 @@ paradigm: VERB_TULLA
 ---
 ### ` VERB_TULLA `
 
-* _lla stem, lla : le variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 67
-* The lemmas must end in * lla * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` lla `
+like XXX but with short tuun style non-standards
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: lla
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: lla
+* kotus_tn: 67

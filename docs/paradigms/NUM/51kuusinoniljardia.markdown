@@ -4,8 +4,17 @@ paradigm: NUM_51kuusinoniljardia
 ---
 ### ` NUM_51kuusinoniljardia `
 
-* _Optimisation hack for exceptional compound ’kuusinoniljardia’_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * sinoniljardia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuusinoniljardia `
+Optimisation hack for exceptional compound ’kuusinoniljardia’ that inflects in all parts with agreement
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: sinoniljardia
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kuusinoniljardia
+* kotus_tn: 51

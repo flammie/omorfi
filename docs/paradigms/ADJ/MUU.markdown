@@ -4,8 +4,17 @@ paradigm: ADJ_MUU
 ---
 ### ` ADJ_MUU `
 
-* _uu stem, uu : u variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 18
-* The lemmas must end in * u * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` uu `
+Monosyllabic uu-final adjectives
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: u
+* pos: ADJECTIVE
+* stem_vowel: u
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: uu
+* kotus_tn: 18

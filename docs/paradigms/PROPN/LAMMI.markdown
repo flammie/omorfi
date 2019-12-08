@@ -4,8 +4,17 @@ paradigm: PROPN_LAMMI
 ---
 ### ` PROPN_LAMMI `
 
-* _Plural-only proper nouns, mmi stem, mmi : mp variatiosn_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 5-H
-* The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi `
+Plural-only proper noun with i:e stem and kk:k gradation
+* harmony: back
+* upos: PROPN
+* kotus_av: H
+* possessive: False
+* clitics: False
+* deletion: pi
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
+* kotus_tn: 5

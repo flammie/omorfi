@@ -4,8 +4,17 @@ paradigm: NUM_YHDEKSÄN
 ---
 ### ` NUM_YHDEKSÄN `
 
-* _än stem, än : änn : äns variations_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * än * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` än `
+Dictionary class10n front
+* harmony: front
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: än
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: än
+* kotus_tn: 10

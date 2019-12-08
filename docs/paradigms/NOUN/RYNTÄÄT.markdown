@@ -4,9 +4,17 @@ paradigm: NOUN_RYNTÄÄT
 ---
 ### ` NOUN_RYNTÄÄT `
 
-* _Plurale tantums, ntäät stem, ntäät : nnäs variatinos_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 41-J
-* The lemmas must end in * täät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` täät `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class ntääaat plurale tantum
+* harmony: front
+* upos: NOUN
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: täät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: täät
+* kotus_tn: 41

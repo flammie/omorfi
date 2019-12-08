@@ -4,8 +4,17 @@ paradigm: NOUN_VETY
 ---
 ### ` NOUN_VETY `
 
-* _ty stem, ty : dy variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1-F
-* The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ty `
+Dictionary class 1ty
+* harmony: front
+* upos: NOUN
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: ty
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ty
+* kotus_tn: 1

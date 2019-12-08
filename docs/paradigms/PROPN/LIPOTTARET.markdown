@@ -4,9 +4,17 @@ paradigm: PROPN_LIPOTTARET
 ---
 ### ` PROPN_LIPOTTARET `
 
-* _Plural-only proper noun, ttaret stem, ttaret : tar variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 32-C
-* The lemmas must end in * taret * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttaret `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plural-only proper noun with i:e stem and kk:k gradation
+* harmony: back
+* upos: PROPN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: taret
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ttaret
+* kotus_tn: 32

@@ -4,8 +4,17 @@ paradigm: NUM_51kolmassadas
 ---
 ### ` NUM_51kolmassadas `
 
-* _Optimisation hack for exceptional compound ’kolmassadas’_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * ssadas * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kolmassadas `
+Optimisation hack for exceptional compound ’kolmassadas’ that inflects in all parts with agreement
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ssadas
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kolmassadas
+* kotus_tn: 51

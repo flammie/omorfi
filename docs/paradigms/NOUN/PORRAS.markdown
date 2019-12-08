@@ -4,8 +4,17 @@ paradigm: NOUN_PORRAS
 ---
 ### ` NOUN_PORRAS `
 
-* _rras stem, rras : rtaa variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-K
-* The lemmas must end in * ras * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rras `
+Dictionary class 41 ras The word mies has special s:h variation pattern.
+* harmony: back
+* upos: NOUN
+* kotus_av: K
+* possessive: False
+* clitics: False
+* deletion: ras
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: rras
+* kotus_tn: 41

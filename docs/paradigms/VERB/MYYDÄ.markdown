@@ -4,8 +4,17 @@ paradigm: VERB_MYYDÄ
 ---
 ### ` VERB_MYYDÄ `
 
-* _ydä stem, ydä : 0 variations _
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 63
-* The lemmas must end in * ydä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yydä `
+Dictionary class63 y
+* harmony: front
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ydä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: yydä
+* kotus_tn: 63

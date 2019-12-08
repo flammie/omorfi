@@ -4,8 +4,17 @@ paradigm: NOUN_KILPI
 ---
 ### ` NOUN_KILPI `
 
-* _pi stems, pi : ve variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 7-E
-* The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pi `
+Dictionary class 7 front p~v
+* harmony: front
+* upos: NOUN
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: pi
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pi
+* kotus_tn: 7

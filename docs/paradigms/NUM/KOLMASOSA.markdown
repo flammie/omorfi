@@ -4,8 +4,17 @@ paradigm: NUM_KOLMASOSA
 ---
 ### ` NUM_KOLMASOSA `
 
-* _Numerals for parts ‛-osa’ inflect like NOUN_ASEMA_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` osa `
+Numerals for parts ‛-osa’ inflect like NOUN_ASEMA
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: NUMERAL
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: osa
+* kotus_tn: 10

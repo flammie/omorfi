@@ -4,8 +4,17 @@ paradigm: NUM_51seitsemäntuhatta
 ---
 ### ` NUM_51seitsemäntuhatta `
 
-* _Optimisation hack for exceptional compound ’seitsemäntuhatta’_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * äntuhatta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` seitsemäntuhatta `
+Optimisation hack for exceptional compound ’seitsemäntuhatta’ that inflects in all parts with agreement
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: äntuhatta
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: seitsemäntuhatta
+* kotus_tn: 51

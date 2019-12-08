@@ -4,8 +4,17 @@ paradigm: PRON_MUU
 ---
 ### ` PRON_MUU `
 
-* _uu stem, uu : u variaotns_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 18
-* The lemmas must end in * u * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` muu `
+inflects NOUN_PUU
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: u
+* pos: PRONOUN
+* stem_vowel: u
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: muu
+* kotus_tn: 18

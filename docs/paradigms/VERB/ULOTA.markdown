@@ -4,8 +4,17 @@ paradigm: VERB_ULOTA
 ---
 ### ` VERB_ULOTA `
 
-* _ota stem, ota : kone variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 72-D
-* The lemmas must end in * ota * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ota `
+Dictionary class72 back 0~k o
+* harmony: back
+* upos: VERB
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: ota
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ota
+* kotus_tn: 72

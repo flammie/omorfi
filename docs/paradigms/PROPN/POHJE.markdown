@@ -4,8 +4,17 @@ paradigm: PROPN_POHJE
 ---
 ### ` PROPN_POHJE `
 
-* _je stem, je : kee variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 48-L
-* The lemmas must end in * je * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*je `
+Dictionary class 48 back je
+* harmony: back
+* upos: PROPN
+* kotus_av: L
+* possessive: False
+* clitics: False
+* deletion: je
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*je
+* kotus_tn: 48

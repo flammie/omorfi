@@ -4,8 +4,17 @@ paradigm: VERB_HELLITÄ
 ---
 ### ` VERB_HELLITÄ `
 
-* _llitä stem, llitä : ltiä variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 75-I
-* The lemmas must end in * litä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` litä `
+Dictionary class75 litä
+* harmony: front
+* upos: VERB
+* kotus_av: I
+* possessive: False
+* clitics: False
+* deletion: litä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: litä
+* kotus_tn: 75

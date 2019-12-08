@@ -4,8 +4,17 @@ paradigm: VERB_HYPELLÄ
 ---
 ### ` VERB_HYPELLÄ `
 
-* _pellä stem, pellä : ppele variaton_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 67-B
-* The lemmas must end in * ellä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pellä `
+Dictionary class67 front l 0p
+* harmony: front
+* upos: VERB
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: ellä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: pellä
+* kotus_tn: 67

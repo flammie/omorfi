@@ -4,9 +4,17 @@ paradigm: PROPN_LIIVIT
 ---
 ### ` PROPN_LIIVIT `
 
-* _it stem, it : i variations plurale tantum_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 5
-* The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class xxx iiiit plurale tantum
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: t
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it
+* kotus_tn: 5

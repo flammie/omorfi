@@ -4,8 +4,17 @@ paradigm: ADJ_POHATTA
 ---
 ### ` ADJ_POHATTA `
 
-* _a stem, tta : t variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 14-C
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tta `
+Adjectives with a-stem and t:0 variations
+* harmony: back
+* upos: ADJ
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tta
+* kotus_tn: 14

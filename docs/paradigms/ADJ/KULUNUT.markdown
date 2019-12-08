@@ -4,8 +4,17 @@ paradigm: ADJ_KULUNUT
 ---
 ### ` ADJ_KULUNUT `
 
-* _ut stem, ut : ee variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 47
-* The lemmas must end in * ut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ut `
+Lexicalised nut participles, back vowels (also for assimilated n)
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ut
+* pos: ADJECTIVE
+* stem_vowel: u
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ut
+* kotus_tn: 47

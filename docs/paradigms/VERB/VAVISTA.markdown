@@ -4,8 +4,17 @@ paradigm: VERB_VAVISTA
 ---
 ### ` VERB_VAVISTA `
 
-* _vista stem, vista : pisee variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 66-E
-* The lemmas must end in * vista * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vista `
+Dictionary class66 back v~p
+* harmony: back
+* upos: VERB
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: vista
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: vista
+* kotus_tn: 66

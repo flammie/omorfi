@@ -4,8 +4,17 @@ paradigm: VERB_TUNGETA
 ---
 ### ` VERB_TUNGETA `
 
-* _ngeta stem, ngeta : nkea variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-G
-* The lemmas must end in * geta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngeta `
+Dictionary class74 back g~ke
+* harmony: back
+* upos: VERB
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: geta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ngeta
+* kotus_tn: 74

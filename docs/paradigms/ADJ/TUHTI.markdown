@@ -4,8 +4,17 @@ paradigm: ADJ_TUHTI
 ---
 ### ` ADJ_TUHTI `
 
-* _ti stems, ti : de variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 5-F
-* The lemmas must end in * ti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti `
+Adjectives with t ~ d gradation, i final and back harmony are in class described here and dictionary class ⁵⁻F.
+* harmony: back
+* upos: ADJ
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: ti
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti
+* kotus_tn: 5

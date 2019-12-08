@@ -4,8 +4,17 @@ paradigm: NOUN_ACRO_UU
 ---
 ### ` NOUN_ACRO_UU `
 
-* _Acronyms that end in 'q', or 'u' pronounced as a letter_
-* Universal POS is NOUN and legacy POS is ACRONYM
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 0
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [QUquúùû] `
+Acronyms that end in 'q', or 'u' pronounced as a letter
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: ACRONYM
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: [QUquúùû]
+* kotus_tn: 0

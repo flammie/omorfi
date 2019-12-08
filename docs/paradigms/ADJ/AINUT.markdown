@@ -4,8 +4,17 @@ paradigm: ADJ_AINUT
 ---
 ### ` ADJ_AINUT `
 
-* _defective paradigm for ainut_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 44
-* The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ut `
+defective paradigm for ainut
+* harmony: back
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: t
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ut
+* kotus_tn: 44

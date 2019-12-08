@@ -4,8 +4,17 @@ paradigm: NOUN_VOIMA
 ---
 ### ` NOUN_VOIMA `
 
-* _a stem, a : 0 variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` a `
+Dictionary class 11 back
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: a
+* kotus_tn: 10

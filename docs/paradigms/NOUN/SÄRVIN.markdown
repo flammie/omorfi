@@ -4,8 +4,17 @@ paradigm: NOUN_SÄRVIN
 ---
 ### ` NOUN_SÄRVIN `
 
-* _vin stem, vin : pime variations front harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 33-E
-* The lemmas must end in * vin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*vin `
+Dictionary class 33 front vin
+* harmony: front
+* upos: NOUN
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: vin
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*vin
+* kotus_tn: 33

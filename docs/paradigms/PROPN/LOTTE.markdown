@@ -4,8 +4,17 @@ paradigm: PROPN_LOTTE
 ---
 ### ` PROPN_LOTTE `
 
-* _tte stem, tte : te variations back harmony_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 8-C
-* The lemmas must end in * te * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tte `
+Dictionary class 8 t~0 back
+* harmony: back
+* upos: PROPN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: te
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tte
+* kotus_tn: 8

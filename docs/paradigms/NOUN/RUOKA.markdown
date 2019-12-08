@@ -4,8 +4,17 @@ paradigm: NOUN_RUOKA
 ---
 ### ` NOUN_RUOKA `
 
-* _uoka stem, uoka : uo’a : uoa : uu variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10-D
-* The lemmas must end in * oka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` uoka `
+Like NOUN_LOKA but allows exceptional common spelling ruo’an ~ ruoan ̃~ ruuan
+* harmony: back
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: oka
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: uoka
+* kotus_tn: 10

@@ -4,9 +4,17 @@ paradigm: NOUN_PANKIT
 ---
 ### ` NOUN_PANKIT `
 
-* _Plurale tantums, kk:k, i:e variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 5-A
-* The lemmas must end in * it * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kit `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plurale tantums with kk:k and i:e variations
+* harmony: back
+* upos: NOUN
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: it
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kit
+* kotus_tn: 5

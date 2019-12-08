@@ -4,8 +4,17 @@ paradigm: PROPN_LEPAKKO
 ---
 ### ` PROPN_LEPAKKO `
 
-* _kko stem, kko : ko variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 4-A
-* The lemmas must end in * ko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kko `
+Dictionary class 4 kko
+* harmony: back
+* upos: PROPN
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: ko
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kko
+* kotus_tn: 4

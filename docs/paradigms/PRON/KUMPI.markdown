@@ -4,8 +4,17 @@ paradigm: PRON_KUMPI
 ---
 ### ` PRON_KUMPI `
 
-* _‘kumpi’, mpi : mma variaitons_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 16-H
-* The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi `
+pronoun kumpi inflects like comparatives, see NOUN_VANHEMPI
+* harmony: back
+* upos: PRON
+* kotus_av: H
+* possessive: False
+* clitics: False
+* deletion: pi
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
+* kotus_tn: 16

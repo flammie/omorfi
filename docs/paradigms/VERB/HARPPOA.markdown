@@ -4,8 +4,17 @@ paradigm: VERB_HARPPOA
 ---
 ### ` VERB_HARPPOA `
 
-* _ppoa stem, ppoa : po variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52-B
-* The lemmas must end in * poa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppoa `
+Dictionary class52 p~0 o
+* harmony: back
+* upos: VERB
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: poa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ppoa
+* kotus_tn: 52

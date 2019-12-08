@@ -4,8 +4,17 @@ paradigm: VERB_MAUKUA
 ---
 ### ` VERB_MAUKUA `
 
-* _ukua stem, ukua : u’u variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 52-D
-* The lemmas must end in * kua * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ukua `
+Dictionary class52 k~0’ u
+* harmony: back
+* upos: VERB
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: kua
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ukua
+* kotus_tn: 52

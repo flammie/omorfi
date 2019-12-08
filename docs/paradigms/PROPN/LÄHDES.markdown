@@ -4,8 +4,17 @@ paradigm: PROPN_LÄHDES
 ---
 ### ` PROPN_LÄHDES `
 
-* _des stem, des : tee variations front hrmony_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 41-F
-* The lemmas must end in * des * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*des `
+Proper nouns with des:tee stems
+* harmony: front
+* upos: PROPN
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: des
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*des
+* kotus_tn: 41

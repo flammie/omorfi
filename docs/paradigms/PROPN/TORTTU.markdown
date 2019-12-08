@@ -4,8 +4,17 @@ paradigm: PROPN_TORTTU
 ---
 ### ` PROPN_TORTTU `
 
-* _ttu stem, ttu : tu variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1-C
-* The lemmas must end in * tu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tu `
+Dictionary class 1tu
+* harmony: back
+* upos: PROPN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: tu
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tu
+* kotus_tn: 1

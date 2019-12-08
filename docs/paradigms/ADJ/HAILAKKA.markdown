@@ -4,8 +4,17 @@ paradigm: ADJ_HAILAKKA
 ---
 ### ` ADJ_HAILAKKA `
 
-* _kka stem, kka : ko variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 14-A
-* The lemmas must end in * ka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kka `
+The a : o stem variation combines with trisyllabic class of special illatives
+* harmony: back
+* upos: ADJ
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: ka
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kka
+* kotus_tn: 14

@@ -4,8 +4,17 @@ paradigm: PROPN_KAUSI
 ---
 ### ` PROPN_KAUSI `
 
-* _si stem, si : te variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 27
-* The lemmas must end in * si * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*si `
+Dictionary class 27 back
+* harmony: back
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: si
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*si
+* kotus_tn: 27

@@ -4,8 +4,17 @@ paradigm: NOUN_NUKKE
 ---
 ### ` NOUN_NUKKE `
 
-* _kke stems, kke : ke variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 8-A
-* The lemmas must end in * ke * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kke `
+Dictionary class 8 k~0 back
+* harmony: back
+* upos: NOUN
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: ke
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kke
+* kotus_tn: 8

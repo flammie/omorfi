@@ -4,8 +4,17 @@ paradigm: PRON_MINÄ
 ---
 ### ` PRON_MINÄ `
 
-* _‘minä, sinä’ inflect, u stem, singular only_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 101
-* The lemmas must end in * nä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` inä `
+personal pronouns ‘minä, sinä’ inflect with u stem, singular nly
+* harmony: front
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: nä
+* pos: PRONOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: False
+* stem_diphthong: None
+* suffix_regex: inä
+* kotus_tn: 101

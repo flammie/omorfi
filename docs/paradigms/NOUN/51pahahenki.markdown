@@ -4,8 +4,17 @@ paradigm: NOUN_51pahahenki
 ---
 ### ` NOUN_51pahahenki `
 
-* _Optimisation hack for exceptional compound ’pahahenki’_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * ahenki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pahahenki `
+Optimisation hack for exceptional compound ’pahahenki’ that inflects in all parts with agreement
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ahenki
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pahahenki
+* kotus_tn: 51

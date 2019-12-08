@@ -4,8 +4,17 @@ paradigm: PRON_MUUTAMA
 ---
 ### ` PRON_MUUTAMA `
 
-* _a stems, a : 0 variations_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` muutama `
+inflects like NOUN_ASEMA
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: PRONOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: muutama
+* kotus_tn: 10

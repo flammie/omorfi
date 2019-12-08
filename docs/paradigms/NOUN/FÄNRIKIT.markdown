@@ -4,9 +4,17 @@ paradigm: NOUN_FÄNRIKIT
 ---
 ### ` NOUN_FÄNRIKIT `
 
-* _it stem, it : i variation, front harmony_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 5-A
-* The lemmas must end in * it * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plurale tantum nouns that inflect with kit:kke
+* harmony: front
+* upos: NOUN
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: it
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it
+* kotus_tn: 5

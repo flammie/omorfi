@@ -4,8 +4,17 @@ paradigm: PROPN_TEE
 ---
 ### ` PROPN_TEE `
 
-* _Proper noun, ee stem, ee : e variation_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 18
-* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ée]e `
+Dictionary class 18 e
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: e
+* pos: NOUN
+* stem_vowel: e
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ée]e
+* kotus_tn: 18

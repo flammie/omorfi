@@ -4,8 +4,17 @@ paradigm: NUM_51kahdeksastredekiljoonas
 ---
 ### ` NUM_51kahdeksastredekiljoonas `
 
-* _Optimisation hack for exceptional compound ’kahdeksastredekiljoonas’_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 51
-* The lemmas must end in * astredekiljoonas * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kahdeksastredekiljoonas `
+Optimisation hack for exceptional compound ’kahdeksastredekiljoonas’ that inflects in all parts with agreement
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: astredekiljoonas
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: kahdeksastredekiljoonas
+* kotus_tn: 51

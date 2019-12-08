@@ -4,8 +4,17 @@ paradigm: ADJ_SANKA
 ---
 ### ` ADJ_SANKA `
 
-* _nka stems, nka : ng variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 9-G
-* The lemmas must end in * ka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nka `
+Adjectives with nka:ng variations
+* harmony: back
+* upos: ADJ
+* kotus_av: G
+* possessive: False
+* clitics: False
+* deletion: ka
+* pos: ADJECTIVE
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: nka
+* kotus_tn: 9

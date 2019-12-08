@@ -4,9 +4,17 @@ paradigm: NOUN_RATTAAT
 ---
 ### ` NOUN_RATTAAT `
 
-* _Plurale tantums, ttaat stem, ttaat : tas variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 41-C
-* The lemmas must end in * taat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttaat `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Dictionary class taat plurale tantum
+* harmony: back
+* upos: NOUN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: taat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ttaat
+* kotus_tn: 41

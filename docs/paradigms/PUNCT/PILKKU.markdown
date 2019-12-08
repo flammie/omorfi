@@ -4,8 +4,17 @@ paradigm: PUNCT_PILKKU
 ---
 ### ` PUNCT_PILKKU `
 
-* _punctuation, rare back inflection plausible_
-* Universal POS is PUNCT and legacy POS is PUNCTUATION
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 99
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+punctuation, rare back inflection plausible
+* harmony: back
+* upos: PUNCT
+* kotus_av: None
+* possessive: True
+* clitics: True
+* deletion: None
+* pos: PUNCTUATION
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: None
+* stem_diphthong: None
+* suffix_regex: .
+* kotus_tn: 99

@@ -4,8 +4,17 @@ paradigm: NOUN_KARBOKSYLAATTI
 ---
 ### ` NOUN_KARBOKSYLAATTI `
 
-* _tti stem, tti : t variations and, both back, front harmonies_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes can use both vowel harmonies
-* KOTUS paradigm used in their dictionary is 5-C
-* The lemmas must end in * ti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tti `
+gradating t:0 with both back and front harmonies
+* harmony: both
+* upos: NOUN
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: ti
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: tti
+* kotus_tn: 5

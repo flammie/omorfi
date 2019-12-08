@@ -4,8 +4,17 @@ paradigm: VERB_KOPIOIDA
 ---
 ### ` VERB_KOPIOIDA `
 
-* _oida stem, oida : oi variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 62
-* The lemmas must end in * ida * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ida `
+Dictionary class62 back
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ida
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ida
+* kotus_tn: 62

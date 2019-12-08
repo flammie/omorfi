@@ -4,8 +4,17 @@ paradigm: AUX_TARVITA
 ---
 ### ` AUX_TARVITA `
 
-* _auxiliary version of ta:tse verb stem_
-* Universal POS is AUX and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 69
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tarvita `
+auxiliary version of ta:tse verb stem
+* harmony: back
+* upos: AUX
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: tarvita
+* kotus_tn: 69

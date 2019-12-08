@@ -4,8 +4,17 @@ paradigm: PRON_USEA
 ---
 ### ` PRON_USEA `
 
-* _ea stem, a : 0 variations_
-* Universal POS is PRON and legacy POS is PRONOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 15
-* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` usea `
+a:0 inflects like ADJ_xxEA
+* harmony: back
+* upos: PRON
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: a
+* pos: PRONOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: usea
+* kotus_tn: 15

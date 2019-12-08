@@ -4,8 +4,17 @@ paradigm: NOUN_SYLI
 ---
 ### ` NOUN_SYLI `
 
-* _i stem, i : e variations and extra consonant stem stufff_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 23
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i `
+Nouns with i:e stem and extra consonant stem stufff
+* harmony: front
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
+* kotus_tn: 23

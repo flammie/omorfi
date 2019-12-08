@@ -4,8 +4,17 @@ paradigm: VERB_TYMPIÄ
 ---
 ### ` VERB_TYMPIÄ `
 
-* _mpiä stem, mpiä : mmi variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 61-H
-* The lemmas must end in * piä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mpiä `
+Dictionary class61 frontp~m
+* harmony: front
+* upos: VERB
+* kotus_av: H
+* possessive: False
+* clitics: False
+* deletion: piä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: mpiä
+* kotus_tn: 61

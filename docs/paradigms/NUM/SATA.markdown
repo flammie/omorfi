@@ -4,8 +4,17 @@ paradigm: NUM_SATA
 ---
 ### ` NUM_SATA `
 
-* _ta stem ta : do variations_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 9-F
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` sata `
+Dictionary class9
+* harmony: back
+* upos: NUM
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: NUMERAL
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: sata
+* kotus_tn: 9

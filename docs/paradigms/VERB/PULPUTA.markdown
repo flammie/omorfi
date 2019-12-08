@@ -4,8 +4,17 @@ paradigm: VERB_PULPUTA
 ---
 ### ` VERB_PULPUTA `
 
-* _puta stem, puta : ppua variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-B
-* The lemmas must end in * uta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` puta `
+Dictionary class74 back 0~p
+* harmony: back
+* upos: VERB
+* kotus_av: B
+* possessive: False
+* clitics: False
+* deletion: uta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: puta
+* kotus_tn: 74

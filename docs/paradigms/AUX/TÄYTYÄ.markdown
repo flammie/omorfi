@@ -4,8 +4,17 @@ paradigm: AUX_TÄYTYÄ
 ---
 ### ` AUX_TÄYTYÄ `
 
-* _auxiliary version of ty:dy verb stem_
-* Universal POS is AUX and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 52-F
-* The lemmas must end in * tyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` täytyä `
+auxiliary version of ty:dy verb stem
+* harmony: front
+* upos: AUX
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: tyä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: täytyä
+* kotus_tn: 52

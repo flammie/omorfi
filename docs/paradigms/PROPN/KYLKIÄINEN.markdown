@@ -4,8 +4,17 @@ paradigm: PROPN_KYLKIÄINEN
 ---
 ### ` PROPN_KYLKIÄINEN `
 
-* _nen stems, nen : se variations front harmony_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 38
-* The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen `
+Dictionary class 38 front
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: nen
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen
+* kotus_tn: 38

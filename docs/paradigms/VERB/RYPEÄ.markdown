@@ -4,8 +4,17 @@ paradigm: VERB_RYPEÄ
 ---
 ### ` VERB_RYPEÄ `
 
-* _peä stem, peä : ve variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 58-E
-* The lemmas must end in * peä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` peä `
+Dictionary class58 front p~v
+* harmony: front
+* upos: VERB
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: peä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: peä
+* kotus_tn: 58

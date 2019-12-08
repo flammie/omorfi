@@ -4,8 +4,17 @@ paradigm: VERB_MENNÄ
 ---
 ### ` VERB_MENNÄ `
 
-* _nnä stem, nnä : ne variations _
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 67
-* The lemmas must end in * nnä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnä `
+Dictionary class67 front n
+* harmony: front
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: nnä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: nnä
+* kotus_tn: 67

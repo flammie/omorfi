@@ -4,8 +4,17 @@ paradigm: ADJ_ÖYKKÄRI
 ---
 ### ` ADJ_ÖYKKÄRI `
 
-* _i stems, i : e variations_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 6
-* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i `
+The i stems with trisyllabic allomorph sets have class described here, and dictionary class of ⁶. There are no adjectives acting like nouns where i-final nominatives have singular e stems.
+* harmony: front
+* upos: ADJ
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: i
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i
+* kotus_tn: 6

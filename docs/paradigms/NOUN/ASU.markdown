@@ -4,8 +4,17 @@ paradigm: NOUN_ASU
 ---
 ### ` NOUN_ASU `
 
-* _Nouns ending in u without variation, the bisyllabic ones have the same simple allomorph pattern_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [Uuú] `
+The stems ending in u are also without variationm and the bisyllabic ones have the same simple allomorph pattern: Dictionary class 1u
+* harmony: back
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: NOUN
+* stem_vowel: u
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [Uuú]
+* kotus_tn: 1

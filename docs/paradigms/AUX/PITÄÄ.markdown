@@ -4,8 +4,17 @@ paradigm: AUX_PITÄÄ
 ---
 ### ` AUX_PITÄÄ `
 
-* _auxiliary version of tä:dä verb stem_
-* Universal POS is AUX and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 53-F
-* The lemmas must end in * tää * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pitää `
+auxiliary version of tä:dä verb stem
+* harmony: front
+* upos: AUX
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: tää
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pitää
+* kotus_tn: 53

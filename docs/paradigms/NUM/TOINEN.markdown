@@ -4,8 +4,17 @@ paradigm: NUM_TOINEN
 ---
 ### ` NUM_TOINEN `
 
-* _Ordinal nen stem, nen : se variations back harmony (OLD)_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 38
-* The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*inen `
+Dictionary class38 back
+* harmony: back
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: nen
+* pos: NUMERAL
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*inen
+* kotus_tn: 38

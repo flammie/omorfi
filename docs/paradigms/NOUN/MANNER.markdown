@@ -4,8 +4,17 @@ paradigm: NOUN_MANNER
 ---
 ### ` NOUN_MANNER `
 
-* _nner stems, nner : ntere : nteree variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 49-J
-* The lemmas must end in * ner * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nner `
+Dictionary class 49 ner
+* harmony: back
+* upos: NOUN
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: ner
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nner
+* kotus_tn: 49

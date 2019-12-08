@@ -4,8 +4,17 @@ paradigm: NUM_NELJÄ
 ---
 ### ` NUM_NELJÄ `
 
-* _ä stem, ä : 0 variations_
-* Universal POS is NUM and legacy POS is NUMERAL
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 10
-* The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` neljä `
+Dictionary class10
+* harmony: front
+* upos: NUM
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ä
+* pos: NUMERAL
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: neljä
+* kotus_tn: 10

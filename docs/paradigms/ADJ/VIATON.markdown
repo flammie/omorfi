@@ -4,8 +4,17 @@ paradigm: ADJ_VIATON
 ---
 ### ` ADJ_VIATON `
 
-* _ton stems, ton:ttoma variations, derivations mostl_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 34-C
-* The lemmas must end in * on * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ton `
+Adjectives with caritive ton:ttoma variations
+* harmony: back
+* upos: ADJ
+* kotus_av: C
+* possessive: False
+* clitics: False
+* deletion: on
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ton
+* kotus_tn: 34

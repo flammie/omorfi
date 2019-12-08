@@ -4,9 +4,17 @@ paradigm: PROPN_RÄMEÄT
 ---
 ### ` PROPN_RÄMEÄT `
 
-* _Plural-only proper noun, eät stem, eät : e variation_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 15
-* The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` eät `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plural-only proper noun with i:e stem and kk:k gradation
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ät
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: eät
+* kotus_tn: 15

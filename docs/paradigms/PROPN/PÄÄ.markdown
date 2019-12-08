@@ -4,8 +4,17 @@ paradigm: PROPN_PÄÄ
 ---
 ### ` PROPN_PÄÄ `
 
-* _ää stem, ää : ä variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 18
-* The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ää `
+Dictionary class 18 ä
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ä
+* pos: NOUN
+* stem_vowel: ä
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ää
+* kotus_tn: 18

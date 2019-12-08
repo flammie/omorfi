@@ -4,8 +4,17 @@ paradigm: VERB_MARISTA
 ---
 ### ` VERB_MARISTA `
 
-* _sta stem, sta : se variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 66
-* The lemmas must end in * ta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` sta `
+Dictionary class66 back
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: ta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: sta
+* kotus_tn: 66

@@ -4,8 +4,17 @@ paradigm: PROPN_NÄKY
 ---
 ### ` PROPN_NÄKY `
 
-* _Proper noun, ky stems, ky : y variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 1-D
-* The lemmas must end in * ky * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ky `
+Dictionary class 1ky
+* harmony: front
+* upos: PROPN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: ky
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: ky
+* kotus_tn: 1

@@ -4,8 +4,17 @@ paradigm: VERB_KOUKUTA
 ---
 ### ` VERB_KOUKUTA `
 
-* _kuya sytem, kuta : kkua variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 74-A
-* The lemmas must end in * uta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuta `
+Dictionary class74 front 0~k u
+* harmony: back
+* upos: VERB
+* kotus_av: A
+* possessive: False
+* clitics: False
+* deletion: uta
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: kuta
+* kotus_tn: 74

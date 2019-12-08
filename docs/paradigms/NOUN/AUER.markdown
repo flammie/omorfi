@@ -4,8 +4,17 @@ paradigm: NOUN_AUER
 ---
 ### ` NOUN_AUER `
 
-* _Noun(s), er stem, er : tere variation_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 49-T
-* The lemmas must end in * er * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*er `
+Dictionary class 49 auer
+* harmony: back
+* upos: NOUN
+* kotus_av: T
+* possessive: False
+* clitics: False
+* deletion: er
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*er
+* kotus_tn: 49

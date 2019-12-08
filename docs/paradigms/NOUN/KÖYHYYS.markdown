@@ -4,8 +4,17 @@ paradigm: NOUN_KÖYHYYS
 ---
 ### ` NOUN_KÖYHYYS `
 
-* _s stem, s : de _
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 40
-* The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ys `
+Dictionary class 40 front Some s final words have special lengthening inflection.
+* harmony: front
+* upos: NOUN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: s
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: ys
+* kotus_tn: 40

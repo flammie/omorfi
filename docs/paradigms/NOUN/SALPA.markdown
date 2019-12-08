@@ -4,8 +4,17 @@ paradigm: NOUN_SALPA
 ---
 ### ` NOUN_SALPA `
 
-* _pa stem, pa : va variations_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 9-E
-* The lemmas must end in * pa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pa `
+Dictionary class 9 p~v
+* harmony: back
+* upos: NOUN
+* kotus_av: E
+* possessive: False
+* clitics: False
+* deletion: pa
+* pos: NOUN
+* stem_vowel: a
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: pa
+* kotus_tn: 9

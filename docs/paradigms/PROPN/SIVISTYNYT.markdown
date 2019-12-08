@@ -4,8 +4,17 @@ paradigm: PROPN_SIVISTYNYT
 ---
 ### ` PROPN_SIVISTYNYT `
 
-* _nyt stem, nyt : nee varionts_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 47
-* The lemmas must end in * yt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nyt `
+Dictionary class 47 front
+* harmony: front
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: yt
+* pos: NOUN
+* stem_vowel: y
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: nyt
+* kotus_tn: 47

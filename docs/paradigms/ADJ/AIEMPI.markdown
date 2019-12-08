@@ -4,8 +4,17 @@ paradigm: ADJ_AIEMPI
 ---
 ### ` ADJ_AIEMPI `
 
-* _mpi stem, mpi : mma lexicalised comparatives_
-* Universal POS is ADJ and legacy POS is ADJECTIVE
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 16-H
-* The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi `
+lexicalised comparatives
+* harmony: back
+* upos: ADJ
+* kotus_av: H
+* possessive: False
+* clitics: False
+* deletion: pi
+* pos: ADJECTIVE
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mpi
+* kotus_tn: 16

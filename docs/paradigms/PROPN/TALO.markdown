@@ -4,8 +4,17 @@ paradigm: PROPN_TALO
 ---
 ### ` PROPN_TALO `
 
-* _o stem no variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 1
-* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [Oo] `
+The most basic noun stem does not have any stem internal variation and uses few commonest allomorphs. The words in this class are either bisyllabic or have one of common derivational suffixes: sto, .... The nouns in this class end in o, u, y or ö, which determines their illative suffix and therefore exact classification:
+* harmony: back
+* upos: PROPN
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: None
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: [Oo]
+* kotus_tn: 1

@@ -4,8 +4,17 @@ paradigm: VERB_KIINNETÄ
 ---
 ### ` VERB_KIINNETÄ `
 
-* _nnetä stem, nnetä : nteä variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 72-J
-* The lemmas must end in * netä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnetä `
+Dictionary class72 front n~t
+* harmony: front
+* upos: VERB
+* kotus_av: J
+* possessive: False
+* clitics: False
+* deletion: netä
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: nnetä
+* kotus_tn: 72

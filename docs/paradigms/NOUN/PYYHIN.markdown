@@ -4,8 +4,17 @@ paradigm: NOUN_PYYHIN
 ---
 ### ` NOUN_PYYHIN `
 
-* _in stem, in : kime variations, front harmonu_
-* Universal POS is NOUN and legacy POS is NOUN
-* suffixes use front vowel harmony
-* KOTUS paradigm used in their dictionary is 33-D
-* The lemmas must end in * in * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*in `
+Dictionary class 33 front k~in
+* harmony: front
+* upos: NOUN
+* kotus_av: D
+* possessive: False
+* clitics: False
+* deletion: in
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: strengthen
+* stem_diphthong: None
+* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*in
+* kotus_tn: 33

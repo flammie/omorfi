@@ -4,8 +4,17 @@ paradigm: VERB_MUTRISTAA
 ---
 ### ` VERB_MUTRISTAA `
 
-* _taa stem, taa : ti variations_
-* Universal POS is VERB and legacy POS is VERB
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 53
-* The lemmas must end in * aa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` aa `
+Dictionary class53 back
+* harmony: back
+* upos: VERB
+* kotus_av: None
+* possessive: False
+* clitics: False
+* deletion: aa
+* pos: VERB
+* stem_vowel: None
+* plurale_tantum: False
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: aa
+* kotus_tn: 53

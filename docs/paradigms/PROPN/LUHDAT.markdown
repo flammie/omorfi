@@ -4,9 +4,17 @@ paradigm: PROPN_LUHDAT
 ---
 ### ` PROPN_LUHDAT `
 
-* _Plural-only proper nouns dat stem, dat : ta variations_
-* Universal POS is PROPN and legacy POS is NOUN
-* suffixes use back vowel harmony
-* KOTUS paradigm used in their dictionary is 10-F
-* The lemmas must end in * dat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dat `
-* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+Plural-only proper noun with i:e stem and kk:k gradation
+* harmony: back
+* upos: PROPN
+* kotus_av: F
+* possessive: False
+* clitics: False
+* deletion: dat
+* pos: NOUN
+* stem_vowel: None
+* plurale_tantum: obligatory
+* grade_dir: weaken
+* stem_diphthong: None
+* suffix_regex: dat
+* kotus_tn: 10
