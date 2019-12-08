@@ -35,6 +35,8 @@ def filenamify(s):
              '\t': 'TAB'}
     for needl, subst in repls.items():
         s = s.replace(needl, subst)
+    if s[0].upper() in 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖŠŽ':
+        s = s[0].upper() + '/' + s
     return s
 
 
