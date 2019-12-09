@@ -4,17 +4,13 @@ paradigm: PROPN_VIHKIÄISET
 ---
 ### ` PROPN_VIHKIÄISET `
 
-Dictionary class 38 nen fornt plurale tantum
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: set
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: set
-* kotus_tn: 38
+* _set stem, set : nen varioants front harmonby_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 38
+* The lemmas must end in * set * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` set `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### vihkiÄiset wordforms
+
+

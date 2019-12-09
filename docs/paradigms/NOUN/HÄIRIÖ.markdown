@@ -4,17 +4,12 @@ paradigm: NOUN_HÄIRIÖ
 ---
 ### ` NOUN_HÄIRIÖ `
 
-Dictionary class 3ö
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ö
-* kotus_tn: 3
+* _iö stem, no variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 3
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ö `
+
+### hÄiriÖ wordforms
+
+

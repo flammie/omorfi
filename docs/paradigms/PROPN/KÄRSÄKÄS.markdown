@@ -4,17 +4,12 @@ paradigm: PROPN_KÄRSÄKÄS
 ---
 ### ` PROPN_KÄRSÄKÄS `
 
-Dictionary class 41 käs
-* harmony: front
-* upos: PROPN
-* kotus_av: A
-* possessive: False
-* clitics: False
-* deletion: äs
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: käs
-* kotus_tn: 41
+* _käs stem, käs : kkää variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 41-A
+* The lemmas must end in * äs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` käs `
+
+### kÄrsÄkÄs wordforms
+
+

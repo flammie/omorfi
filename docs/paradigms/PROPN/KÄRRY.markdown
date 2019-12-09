@@ -4,17 +4,12 @@ paradigm: PROPN_KÄRRY
 ---
 ### ` PROPN_KÄRRY `
 
-Dictionary class 1y
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [YÜyÿü]
-* kotus_tn: 1
+* _y stem no variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [YÜyÿü] `
+
+### kÄrry wordforms
+
+

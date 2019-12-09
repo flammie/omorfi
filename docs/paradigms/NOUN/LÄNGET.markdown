@@ -4,17 +4,13 @@ paradigm: NOUN_LÄNGET
 ---
 ### ` NOUN_LÄNGET `
 
-Dictionary class xxx get plurale tantum
-* harmony: front
-* upos: NOUN
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: get
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nget
-* kotus_tn: 7
+* _nget stems, nget : nki variations front harmony_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 7-G
+* The lemmas must end in * get * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nget `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### lÄnget wordforms
+
+

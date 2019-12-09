@@ -4,17 +4,12 @@ paradigm: NUM_51kahdeksanseitsemättä
 ---
 ### ` NUM_51kahdeksanseitsemättä `
 
-Optimisation hack for exceptional compound ’kahdeksanseitsemättä’ that inflects in all parts with agreement
-* harmony: back
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: anseitsemättä
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kahdeksanseitsemättä
-* kotus_tn: 51
+* _Optimisation hack for exceptional compound ’kahdeksanseitsemättä’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * anseitsemättä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kahdeksanseitsemättä `
+
+### 51kahdeksanseitsemättä wordforms
+
+

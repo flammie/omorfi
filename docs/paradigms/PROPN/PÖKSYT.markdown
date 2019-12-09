@@ -4,17 +4,13 @@ paradigm: PROPN_PÖKSYT
 ---
 ### ` PROPN_PÖKSYT `
 
-Dictionary class 1y plurale tantum
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: t
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: yt
-* kotus_tn: 1
+* _yt stem, yt : y variations plurale tantum_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1
+* The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yt `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### pÖksyt wordforms
+
+

@@ -4,17 +4,13 @@ paradigm: NOUN_KÄRÄJÄT
 ---
 ### ` NOUN_KÄRÄJÄT `
 
-Plurale tantums for ä:0 variations
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ät
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ät
-* kotus_tn: 10
+* _Plurale tantums, ät stems, ät : 0 variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 10
+* The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ät `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### kÄrÄjÄt wordforms
+
+

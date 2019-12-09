@@ -4,17 +4,12 @@ paradigm: PROPN_ACRO_KAHDEKSAN
 ---
 ### ` PROPN_ACRO_KAHDEKSAN `
 
-Proper noun acronyms ending in 8
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: ACRONYM
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: 8
-* kotus_tn: 0
+* _acronyms ending in 8_
+* Universal POS is PROPN and legacy POS is ACRONYM
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 0
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` 8 `
+
+### acro_kahdeksan wordforms
+
+

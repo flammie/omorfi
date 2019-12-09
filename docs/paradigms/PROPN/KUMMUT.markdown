@@ -4,17 +4,13 @@ paradigm: PROPN_KUMMUT
 ---
 ### ` PROPN_KUMMUT `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: back
-* upos: PROPN
-* kotus_av: H
-* possessive: False
-* clitics: False
-* deletion: mut
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: mmut
-* kotus_tn: 1
+* _Plural-only proper nouns, mmut stem, mmut : mpu variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 1-H
+* The lemmas must end in * mut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mmut `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### kummut wordforms
+
+

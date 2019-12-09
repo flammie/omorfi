@@ -4,17 +4,13 @@ paradigm: NOUN_SÄÄNNÖT
 ---
 ### ` NOUN_SÄÄNNÖT `
 
-Dictionary class 1nöt plurale tantum
-* harmony: front
-* upos: NOUN
-* kotus_av: J
-* possessive: False
-* clitics: False
-* deletion: nöt
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: nnöt
-* kotus_tn: 1
+* _Plurale tantums, nnöt stem, nnöt : ntö variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-J
+* The lemmas must end in * nöt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnöt `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### sÄÄnnÖt wordforms
+
+

@@ -4,17 +4,13 @@ paradigm: PROPN_KANKAHAT
 ---
 ### ` PROPN_KANKAHAT `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: back
-* upos: PROPN
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: hat
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: hat
-* kotus_tn: 41
+* _Plural-only proper nouns, nkahat stems, nka : ngas variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 41-G
+* The lemmas must end in * hat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hat `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### kankahat wordforms
+
+

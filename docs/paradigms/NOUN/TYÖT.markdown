@@ -4,17 +4,13 @@ paradigm: NOUN_TYÖT
 ---
 ### ` NOUN_TYÖT `
 
-Dictionary class xxx työt plurale tantum
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: yöt
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: yöt
-* kotus_tn: 19
+* _Plurale tantums, yöt stem, yöt : yö : ö variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 19
+* The lemmas must end in * yöt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yöt `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### tyÖt wordforms
+
+

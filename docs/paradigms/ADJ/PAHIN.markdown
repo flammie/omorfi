@@ -4,17 +4,12 @@ paradigm: ADJ_PAHIN
 ---
 ### ` ADJ_PAHIN `
 
-Lexicalised superlatives, back harmony
-* harmony: back
-* upos: ADJ
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: n
-* pos: ADJECTIVE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*in
-* kotus_tn: 36
+* _n stems, n : mma variations, lexicalised superlatives, back harmony_
+* Universal POS is ADJ and legacy POS is ADJECTIVE
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 36
+* The lemmas must end in * n * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*in `
+
+### pahin wordforms
+
+

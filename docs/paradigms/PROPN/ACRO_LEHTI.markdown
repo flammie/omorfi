@@ -4,17 +4,12 @@ paradigm: PROPN_ACRO_LEHTI
 ---
 ### ` PROPN_ACRO_LEHTI `
 
-The acronyms ending in a word that inflects like ‘lehti’ with i:e type stem
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: ACRONYM
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: .
-* kotus_tn: 0
+* _acronyms ending in a word that inflects like ‘lehti’, i:e type stem_
+* Universal POS is PROPN and legacy POS is ACRONYM
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 0
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+### acro_lehti wordforms
+
+

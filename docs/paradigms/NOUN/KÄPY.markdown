@@ -4,17 +4,12 @@ paradigm: NOUN_KÄPY
 ---
 ### ` NOUN_KÄPY `
 
-Dictionary class 1py
-* harmony: front
-* upos: NOUN
-* kotus_av: E
-* possessive: False
-* clitics: False
-* deletion: py
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: py
-* kotus_tn: 1
+* _py stem, py : vy variatons_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-E
+* The lemmas must end in * py * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` py `
+
+### kÄpy wordforms
+
+

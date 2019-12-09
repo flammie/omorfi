@@ -4,17 +4,12 @@ paradigm: VERB_LÄMMETÄ
 ---
 ### ` VERB_LÄMMETÄ `
 
-Dictionary class72 front m~p
-* harmony: front
-* upos: VERB
-* kotus_av: H
-* possessive: False
-* clitics: False
-* deletion: metä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: mmetä
-* kotus_tn: 72
+* _metä stem, mmetä : mpeä variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 72-H
+* The lemmas must end in * metä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mmetä `
+
+### lÄmmetÄ wordforms
+
+

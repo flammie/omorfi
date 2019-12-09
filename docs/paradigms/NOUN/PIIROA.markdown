@@ -4,17 +4,12 @@ paradigm: NOUN_PIIROA
 ---
 ### ` NOUN_PIIROA `
 
-dictionary class 15 oa, lexicalised ADJ_AINOA nouns
-* harmony: back
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: a
-* pos: NOUN
-* stem_vowel: a
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ôo]a
-* kotus_tn: 15
+* _oa stem, oa : o variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 15
+* The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ôo]a `
+
+### piiroa wordforms
+
+

@@ -4,17 +4,13 @@ paradigm: PROPN_VUODET
 ---
 ### ` PROPN_VUODET `
 
-Dictionary class 27 det plurale tantum
-* harmony: back
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: det
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: det
-* kotus_tn: 27
+* _det stem_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 27
+* The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` det `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### vuodet wordforms
+
+

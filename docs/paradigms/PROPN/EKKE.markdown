@@ -4,17 +4,12 @@ paradigm: PROPN_EKKE
 ---
 ### ` PROPN_EKKE `
 
-Proper noun with kke:ke stem
-* harmony: front
-* upos: PROPN
-* kotus_av: A
-* possessive: False
-* clitics: False
-* deletion: ke
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke
-* kotus_tn: 8
+* _Proper noun, kke stem, kke : ke variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 8-A
+* The lemmas must end in * ke * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke `
+
+### ekke wordforms
+
+

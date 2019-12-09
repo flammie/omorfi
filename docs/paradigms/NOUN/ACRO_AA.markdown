@@ -4,17 +4,12 @@ paradigm: NOUN_ACRO_AA
 ---
 ### ` NOUN_ACRO_AA `
 
-acronyms ending in 'a' pronounced as a letter
-* harmony: back
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: ACRONYM
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: [Aaáàâã]
-* kotus_tn: 0
+* _acronyms ending in 'a' pronounced as a letter_
+* Universal POS is NOUN and legacy POS is ACRONYM
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 0
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [Aaáàâã] `
+
+### acro_aa wordforms
+
+

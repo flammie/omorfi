@@ -4,17 +4,13 @@ paradigm: PROPN_KIRITTÄRET
 ---
 ### ` PROPN_KIRITTÄRET `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: front
-* upos: PROPN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: täret
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: ttäret
-* kotus_tn: 32
+* _Plural-only proper noun, ttäret stems, ttäret : tär variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 32-C
+* The lemmas must end in * täret * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttäret `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### kirittÄret wordforms
+
+

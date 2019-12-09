@@ -4,17 +4,13 @@ paradigm: PROPN_RAUNIOT
 ---
 ### ` PROPN_RAUNIOT `
 
-Dictionary class 2iot plurale tantum
-* harmony: back
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: t
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ot
-* kotus_tn: 3
+* _ot stem, ot : o variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 3
+* The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ot `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### rauniot wordforms
+
+

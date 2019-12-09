@@ -4,17 +4,12 @@ paradigm: NOUN_KÄSITE
 ---
 ### ` NOUN_KÄSITE `
 
-Dictionary class 48 front te
-* harmony: front
-* upos: NOUN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: e
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
-* kotus_tn: 48
+* _te stem, te : ttee variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 48-C
+* The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e `
+
+### kÄsite wordforms
+
+

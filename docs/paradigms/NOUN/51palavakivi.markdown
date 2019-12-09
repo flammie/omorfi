@@ -4,17 +4,12 @@ paradigm: NOUN_51palavakivi
 ---
 ### ` NOUN_51palavakivi `
 
-Optimisation hack for exceptional compound ’palavakivi’ that inflects in all parts with agreement
-* harmony: back
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: akivi
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: palavakivi
-* kotus_tn: 51
+* _Optimisation hack for exceptional compound ’palavakivi’_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * akivi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` palavakivi `
+
+### 51palavakivi wordforms
+
+

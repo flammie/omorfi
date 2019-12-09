@@ -9,3 +9,7 @@ paradigm: ADJ_ENSIMMÄINEN
 * suffixes use front vowel harmony
 * KOTUS paradigm used in their dictionary is 38
 * The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` inen `
+
+### ensimmÄinen wordforms
+
+

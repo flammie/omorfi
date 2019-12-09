@@ -4,17 +4,13 @@ paradigm: PROPN_RIIVET
 ---
 ### ` PROPN_RIIVET `
 
-Plural-only proper nouns with i:e and p:v
-* harmony: front
-* upos: PROPN
-* kotus_av: E
-* possessive: False
-* clitics: False
-* deletion: vet
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*vet
-* kotus_tn: 7
+* _Plural-only proper nouns, vet stem, vet : pi variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 7-E
+* The lemmas must end in * vet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*vet `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### riivet wordforms
+
+

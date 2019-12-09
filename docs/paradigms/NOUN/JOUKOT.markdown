@@ -4,17 +4,13 @@ paradigm: NOUN_JOUKOT
 ---
 ### ` NOUN_JOUKOT `
 
-Dictionary class 1ko plurale tantum
-* harmony: back
-* upos: NOUN
-* kotus_av: A|D
-* possessive: False
-* clitics: False
-* deletion: ot
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ot
-* kotus_tn: 1
+* _Plurale tantums, kot stem, kot :kko varaitions _
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 1-A|D
+* The lemmas must end in * ot * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ot `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### joukot wordforms
+
+

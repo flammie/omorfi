@@ -4,17 +4,12 @@ paradigm: NOUN_NIMETÖN
 ---
 ### ` NOUN_NIMETÖN `
 
-Dictionary class 34 tän
-* harmony: front
-* upos: NOUN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: ön
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: tön
-* kotus_tn: 34
+* _tön stem, tön : ttömä variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 34-C
+* The lemmas must end in * ön * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tön `
+
+### nimetÖn wordforms
+
+

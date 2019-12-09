@@ -4,17 +4,12 @@ paradigm: VERB_JÄÄDÄ
 ---
 ### ` VERB_JÄÄDÄ `
 
-Dictionary class63 ä
-* harmony: front
-* upos: VERB
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ädä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: äädä
-* kotus_tn: 63
+* _ädä stem, ädä : ä variatons_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 63
+* The lemmas must end in * ädä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` äädä `
+
+### jÄÄdÄ wordforms
+
+

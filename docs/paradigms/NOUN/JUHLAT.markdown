@@ -4,17 +4,13 @@ paradigm: NOUN_JUHLAT
 ---
 ### ` NOUN_JUHLAT `
 
-Dictionary class xxx t plurale tantum
-* harmony: back
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: at
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: at
-* kotus_tn: 10
+* _Plurale tantums, at stem, at : a : 0 variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 10
+* The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` at `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### juhlat wordforms
+
+

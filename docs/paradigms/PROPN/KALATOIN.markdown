@@ -4,17 +4,12 @@ paradigm: PROPN_KALATOIN
 ---
 ### ` PROPN_KALATOIN `
 
-Proper nouns that have old caritive toin stem
-* harmony: back
-* upos: PROPN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: oin
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: toin
-* kotus_tn: 34
+* _toin stem, toin : tome variaitons, archaic_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 34-C
+* The lemmas must end in * oin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` toin `
+
+### kalatoin wordforms
+
+

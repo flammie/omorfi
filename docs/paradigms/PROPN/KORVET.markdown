@@ -4,17 +4,13 @@ paradigm: PROPN_KORVET
 ---
 ### ` PROPN_KORVET `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: back
-* upos: PROPN
-* kotus_av: E
-* possessive: False
-* clitics: False
-* deletion: vet
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*vet
-* kotus_tn: 7
+* _Plural-only proper noun, et stem, vet : pi variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 7-E
+* The lemmas must end in * vet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*vet `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### korvet wordforms
+
+

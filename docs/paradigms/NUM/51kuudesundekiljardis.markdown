@@ -4,17 +4,12 @@ paradigm: NUM_51kuudesundekiljardis
 ---
 ### ` NUM_51kuudesundekiljardis `
 
-Optimisation hack for exceptional compound ’kuudesundekiljardis’ that inflects in all parts with agreement
-* harmony: back
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: sundekiljardis
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kuudesundekiljardis
-* kotus_tn: 51
+* _Optimisation hack for exceptional compound ’kuudesundekiljardis’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * sundekiljardis * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuudesundekiljardis `
+
+### 51kuudesundekiljardis wordforms
+
+

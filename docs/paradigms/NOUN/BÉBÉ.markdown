@@ -4,17 +4,12 @@ paradigm: NOUN_BÉBÉ
 ---
 ### ` NOUN_BÉBÉ `
 
-Dictionary class 21 e front
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: NOUN
-* stem_vowel: e
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: .
-* kotus_tn: 21
+* _é stem front harmony_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 21
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+### bÉbÉ wordforms
+
+

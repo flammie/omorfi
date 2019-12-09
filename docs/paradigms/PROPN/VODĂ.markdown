@@ -4,17 +4,12 @@ paradigm: PROPN_VODĂ
 ---
 ### ` PROPN_VODĂ `
 
-for foreign words ending in ǎ that inflects like a
-* harmony: back
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ă
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ă
-* kotus_tn: 10
+* _Proper nonus, ǎ stem_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 10
+* The lemmas must end in * ă * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ă `
+
+### vodĂ wordforms
+
+

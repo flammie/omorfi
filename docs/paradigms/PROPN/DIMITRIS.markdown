@@ -4,17 +4,12 @@ paradigm: PROPN_DIMITRIS
 ---
 ### ` PROPN_DIMITRIS `
 
-Dictionary class 41 is front
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: s
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s
-* kotus_tn: 41
+* _is stem,  is : ii variations front harmony_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 41
+* The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s `
+
+### dimitris wordforms
+
+

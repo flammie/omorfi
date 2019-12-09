@@ -4,17 +4,12 @@ paradigm: PROPN_PYHTÄÄ
 ---
 ### ` PROPN_PYHTÄÄ `
 
-Proper nouns with ää-stems
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ä
-* pos: NOUN
-* stem_vowel: ä
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ää
-* kotus_tn: 17
+* _ää stem,  ää : 0 vatiatons_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 17
+* The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ää `
+
+### pyhtÄÄ wordforms
+
+

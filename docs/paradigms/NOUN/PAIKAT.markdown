@@ -4,17 +4,13 @@ paradigm: NOUN_PAIKAT
 ---
 ### ` NOUN_PAIKAT `
 
-Dictionary class xxx kAt plurale tantum
-* harmony: back
-* upos: NOUN
-* kotus_av: A
-* possessive: False
-* clitics: False
-* deletion: at
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: at
-* kotus_tn: 9
+* _Plurale tantums, kat stem, kat : kko variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 9-A
+* The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` at `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### paikat wordforms
+
+

@@ -4,17 +4,46 @@ paradigm: ADV_KUHUN
 ---
 ### ` ADV_KUHUN `
 
-Adverbs with optional clitics, including kas
-* harmony: back
-* upos: ADV
-* kotus_av: None
-* possessive: False
-* clitics: True
-* deletion: None
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: .
-* kotus_tn: 99
+* _optional clitics, including kas_
+* Universal POS is ADV and legacy POS is PARTICLE
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+### kuhun wordforms
+
+kuhun
+kuhunhanko
+kuhunhankaan
+kuhunhanpa
+kuhunhan
+kuhunkohan
+kuhunkokin
+kuhunkokaan
+kuhunkos
+kuhunkopa
+kuhunko
+kuhunkinhan
+kuhunkinko
+kuhunkinkaan
+kuhunkinpa
+kuhunkin
+kuhunkahan
+kuhunkas
+kuhunkapahan
+kuhunkapas
+kuhunkapa
+kuhunkaanhan
+kuhunkaanko
+kuhunkaankin
+kuhunkaanpa
+kuhunkaan
+kuhunka
+kuhuns
+kuhunpahan
+kuhunpako
+kuhunpakin
+kuhunpakaan
+kuhunpas
+kuhunpa
+

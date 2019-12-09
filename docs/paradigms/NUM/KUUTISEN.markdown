@@ -4,17 +4,42 @@ paradigm: NUM_KUUTISEN
 ---
 ### ` NUM_KUUTISEN `
 
-Approximative numerals, back suffixes, compounding with select multipliers
-* harmony: back
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: isen
-* kotus_tn: 99
+* _Approximative numerals, back suffixes, compounding, select multipliers_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isen `
+
+### kuutisen wordforms
+
+kuutisen
+kuutisen-
+kuutisen‐
+kuutisen‑
+kuutisenhanko
+kuutisenhankaan
+kuutisenhanpa
+kuutisenhan
+kuutisenkohan
+kuutisenkokin
+kuutisenkokaan
+kuutisenkos
+kuutisenkopa
+kuutisenko
+kuutisenkinhan
+kuutisenkinko
+kuutisenkinkaan
+kuutisenkinpa
+kuutisenkin
+kuutisenkaanhan
+kuutisenkaanko
+kuutisenkaankin
+kuutisenkaanpa
+kuutisenkaan
+kuutisenpahan
+kuutisenpako
+kuutisenpakin
+kuutisenpakaan
+kuutisenpas
+kuutisenpa
+

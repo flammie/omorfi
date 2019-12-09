@@ -4,17 +4,12 @@ paradigm: PRON_MIKÄ
 ---
 ### ` PRON_MIKÄ `
 
-pronoun mikä inflects from mi- stem
-* harmony: front
-* upos: PRON
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: kä
-* pos: PRONOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: mikä
-* kotus_tn: 101
+* _mikä inflects from mi- stem, before kä clitic_
+* Universal POS is PRON and legacy POS is PRONOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 101
+* The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mikä `
+
+### mikÄ wordforms
+
+

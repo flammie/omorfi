@@ -4,17 +4,13 @@ paradigm: NOUN_HÄVINNEET
 ---
 ### ` NOUN_HÄVINNEET `
 
-Dictionary class nut plurale tantum
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: et
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*neet
-* kotus_tn: 47
+* _Plurale tantusm wit nneet stem, nneet : nyt variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 47
+* The lemmas must end in * et * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*neet `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### hÄvinneet wordforms
+
+

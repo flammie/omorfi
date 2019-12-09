@@ -4,17 +4,12 @@ paradigm: PROPN_METTE
 ---
 ### ` PROPN_METTE `
 
-Proper nouns with tte:te stems
-* harmony: front
-* upos: PROPN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: te
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tte
-* kotus_tn: 8
+* _tte stem, tte:te variations front harmony_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 8-C
+* The lemmas must end in * te * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tte `
+
+### mette wordforms
+
+

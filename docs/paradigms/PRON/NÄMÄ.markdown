@@ -4,17 +4,12 @@ paradigm: PRON_NÄMÄ
 ---
 ### ` PRON_NÄMÄ `
 
-inflects with ä stem, plurals only
-* harmony: front
-* upos: PRON
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: mä
-* pos: PRONOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: nämä
-* kotus_tn: 101
+* _ä stem, mä : 0 variations, plurals only_
+* Universal POS is PRON and legacy POS is PRONOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 101
+* The lemmas must end in * mä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nämä `
+
+### nÄmÄ wordforms
+
+

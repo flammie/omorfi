@@ -4,17 +4,12 @@ paradigm: NOUN_ACRO_OPPILAS
 ---
 ### ` NOUN_ACRO_OPPILAS `
 
-The acronyms ending in a word that inflects like ‘oppilas’ with s:a type stem
-* harmony: back
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: ACRONYM
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: .
-* kotus_tn: 0
+* _The acronyms ending in a word that inflects like ‘oppilas’, s:a type stem_
+* Universal POS is NOUN and legacy POS is ACRONYM
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 0
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+### acro_oppilas wordforms
+
+

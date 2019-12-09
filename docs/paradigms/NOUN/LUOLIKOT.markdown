@@ -4,17 +4,13 @@ paradigm: NOUN_LUOLIKOT
 ---
 ### ` NOUN_LUOLIKOT `
 
-Plurale tantums with kko:ko variations
-* harmony: back
-* upos: NOUN
-* kotus_av: A
-* possessive: False
-* clitics: False
-* deletion: ot
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kot
-* kotus_tn: 4
+* _Plurale tantums, kko stems, kko : ko variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 4-A
+* The lemmas must end in * ot * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kot `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### luolikot wordforms
+
+

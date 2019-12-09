@@ -4,17 +4,12 @@ paradigm: NOUN_TÖRPPÖ
 ---
 ### ` NOUN_TÖRPPÖ `
 
-Dictionary class 1pö
-* harmony: front
-* upos: NOUN
-* kotus_av: B
-* possessive: False
-* clitics: False
-* deletion: pö
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ppö
-* kotus_tn: 1
+* _ppö stem, ppö : pö variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-B
+* The lemmas must end in * pö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppö `
+
+### tÖrppÖ wordforms
+
+

@@ -4,17 +4,174 @@ paradigm: ADV_ISTUALLEEN
 ---
 ### ` ADV_ISTUALLEEN `
 
-Adverbs with obligatory possessives in e stem, back harmony
-* harmony: back
-* upos: ADV
-* kotus_av: None
-* possessive: obligatory
-* clitics: True
-* deletion: en
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: en
-* kotus_tn: 99
+* _obligatory possessives in e stem, back harmony_
+* Universal POS is ADV and legacy POS is PARTICLE
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * en * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` en `
+
+### istualleen wordforms
+
+istuallemme
+istuallemmehanko
+istuallemmehankaan
+istuallemmehanpa
+istuallemmehan
+istuallemmekohan
+istuallemmekokin
+istuallemmekokaan
+istuallemmekos
+istuallemmekopa
+istuallemmeko
+istuallemmekinhan
+istuallemmekinko
+istuallemmekinkaan
+istuallemmekinpa
+istuallemmekin
+istuallemmekaanhan
+istuallemmekaanko
+istuallemmekaankin
+istuallemmekaanpa
+istuallemmekaan
+istuallemmepahan
+istuallemmepako
+istuallemmepakin
+istuallemmepakaan
+istuallemmepas
+istuallemmepa
+istualleen
+istualleenhanko
+istualleenhankaan
+istualleenhanpa
+istualleenhan
+istualleenkohan
+istualleenkokin
+istualleenkokaan
+istualleenkos
+istualleenkopa
+istualleenko
+istualleenkinhan
+istualleenkinko
+istualleenkinkaan
+istualleenkinpa
+istualleenkin
+istualleenkaanhan
+istualleenkaanko
+istualleenkaankin
+istualleenkaanpa
+istualleenkaan
+istualleenpahan
+istualleenpako
+istualleenpakin
+istualleenpakaan
+istualleenpas
+istualleenpa
+istuallesi
+istuallesihanko
+istuallesihankaan
+istuallesihanpa
+istuallesihan
+istuallesikohan
+istuallesikokin
+istuallesikokaan
+istuallesikos
+istuallesikopa
+istuallesiko
+istuallesikinhan
+istuallesikinko
+istuallesikinkaan
+istuallesikinpa
+istuallesikin
+istuallesikaanhan
+istuallesikaanko
+istuallesikaankin
+istuallesikaanpa
+istuallesikaan
+istuallesipahan
+istuallesipako
+istuallesipakin
+istuallesipakaan
+istuallesipas
+istuallesipa
+istualleni
+istuallenihanko
+istuallenihankaan
+istuallenihanpa
+istuallenihan
+istuallenikohan
+istuallenikokin
+istuallenikokaan
+istuallenikos
+istuallenikopa
+istualleniko
+istuallenikinhan
+istuallenikinko
+istuallenikinkaan
+istuallenikinpa
+istuallenikin
+istuallenikaanhan
+istuallenikaanko
+istuallenikaankin
+istuallenikaanpa
+istuallenikaan
+istuallenipahan
+istuallenipako
+istuallenipakin
+istuallenipakaan
+istuallenipas
+istuallenipa
+istuallensa
+istuallensahanko
+istuallensahankaan
+istuallensahanpa
+istuallensahan
+istuallensakohan
+istuallensakokin
+istuallensakokaan
+istuallensakos
+istuallensakopa
+istuallensako
+istuallensakinhan
+istuallensakinko
+istuallensakinkaan
+istuallensakinpa
+istuallensakin
+istuallensakaanhan
+istuallensakaanko
+istuallensakaankin
+istuallensakaanpa
+istuallensakaan
+istuallensapahan
+istuallensapako
+istuallensapakin
+istuallensapakaan
+istuallensapas
+istuallensapa
+istuallenne
+istuallennehanko
+istuallennehankaan
+istuallennehanpa
+istuallennehan
+istuallennekohan
+istuallennekokin
+istuallennekokaan
+istuallennekos
+istuallennekopa
+istuallenneko
+istuallennekinhan
+istuallennekinko
+istuallennekinkaan
+istuallennekinpa
+istuallennekin
+istuallennekaanhan
+istuallennekaanko
+istuallennekaankin
+istuallennekaanpa
+istuallennekaan
+istuallennepahan
+istuallennepako
+istuallennepakin
+istuallennepakaan
+istuallennepas
+istuallennepa
+

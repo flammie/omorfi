@@ -4,17 +4,12 @@ paradigm: PROPN_WADA
 ---
 ### ` PROPN_WADA `
 
-An acronym that is also inflected like a-final noun without a colon, e.g. WADA ~ WADAn. Plurals only with colon.
-* harmony: back
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: A
-* pos: NOUN
-* stem_vowel: a
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: A
-* kotus_tn: 9
+* _Proper noun acronyms inflected like a-final noun without a colon, e.g. WADA ~ WADAn. Plurals only, colon._
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 9
+* The lemmas must end in * A * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` A `
+
+### wada wordforms
+
+

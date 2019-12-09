@@ -4,17 +4,13 @@ paradigm: PROPN_KENGÄT
 ---
 ### ` PROPN_KENGÄT `
 
-Dictionary class xxx a front kg plurale tantum
-* harmony: front
-* upos: PROPN
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: gät
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ngät
-* kotus_tn: 10
+* _ngät stem, ngät : nk variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 10-G
+* The lemmas must end in * gät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngät `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### kengÄt wordforms
+
+

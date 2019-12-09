@@ -4,17 +4,39 @@ paradigm: ADP_MUKAISESTI
 ---
 ### ` ADP_MUKAISESTI `
 
-adposition without possessives, clitic with back harmony
-* harmony: back
-* upos: ADP
-* kotus_av: None
-* possessive: optional
-* clitics: True
-* deletion: None
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: .
-* kotus_tn: 99
+* _adposition without possessives, clitic, back harmony_
+* Universal POS is ADP and legacy POS is PARTICLE
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+### mukaisesti wordforms
+
+mukaisesti
+mukaisestihanko
+mukaisestihankaan
+mukaisestihanpa
+mukaisestihan
+mukaisestikohan
+mukaisestikokin
+mukaisestikokaan
+mukaisestikos
+mukaisestikopa
+mukaisestiko
+mukaisestikinhan
+mukaisestikinko
+mukaisestikinkaan
+mukaisestikinpa
+mukaisestikin
+mukaisestikaanhan
+mukaisestikaanko
+mukaisestikaankin
+mukaisestikaanpa
+mukaisestikaan
+mukaisestipahan
+mukaisestipako
+mukaisestipakin
+mukaisestipakaan
+mukaisestipas
+mukaisestipa
+

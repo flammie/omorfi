@@ -4,17 +4,12 @@ paradigm: VERB_ÖYKKÄRÖIDÄ
 ---
 ### ` VERB_ÖYKKÄRÖIDÄ `
 
-Dictionary class62 front
-* harmony: front
-* upos: VERB
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: idä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: öidä
-* kotus_tn: 62
+* _öidä stem, öidä : öi ~ öise variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 62
+* The lemmas must end in * idä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` öidä `
+
+### ÖykkÄrÖidÄ wordforms
+
+

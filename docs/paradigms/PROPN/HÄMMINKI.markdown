@@ -4,17 +4,12 @@ paradigm: PROPN_HÄMMINKI
 ---
 ### ` PROPN_HÄMMINKI `
 
-Dictionary class 5 front k~g There is a gap in i final paradigm with t:l variation and back vowels.
-* harmony: front
-* upos: PROPN
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: ki
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki
-* kotus_tn: 5
+* _nki stem, nki : nge variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 5-G
+* The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki `
+
+### hÄmminki wordforms
+
+

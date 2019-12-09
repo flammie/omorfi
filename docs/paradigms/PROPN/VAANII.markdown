@@ -4,17 +4,12 @@ paradigm: PROPN_VAANII
 ---
 ### ` PROPN_VAANII `
 
-Proper nouns with ii-stems
-* harmony: back
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: i
-* pos: NOUN
-* stem_vowel: i
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i
-* kotus_tn: 17
+* _ii stem, ii : i variationt_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 17
+* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i `
+
+### vaanii wordforms
+
+

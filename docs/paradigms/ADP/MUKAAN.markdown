@@ -4,17 +4,174 @@ paradigm: ADP_MUKAAN
 ---
 ### ` ADP_MUKAAN `
 
-adposition with optional possessive with -n assimilation, back harmony
-* harmony: back
-* upos: ADP
-* kotus_av: None
-* possessive: optional
-* clitics: True
-* deletion: n
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: n
-* kotus_tn: 99
+* _optional possessive, -n assimilation, back harmony_
+* Universal POS is ADP and legacy POS is PARTICLE
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * n * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` n `
+
+### mukaan wordforms
+
+mukaamme
+mukaammehanko
+mukaammehankaan
+mukaammehanpa
+mukaammehan
+mukaammekohan
+mukaammekokin
+mukaammekokaan
+mukaammekos
+mukaammekopa
+mukaammeko
+mukaammekinhan
+mukaammekinko
+mukaammekinkaan
+mukaammekinpa
+mukaammekin
+mukaammekaanhan
+mukaammekaanko
+mukaammekaankin
+mukaammekaanpa
+mukaammekaan
+mukaammepahan
+mukaammepako
+mukaammepakin
+mukaammepakaan
+mukaammepas
+mukaammepa
+mukaasi
+mukaasihanko
+mukaasihankaan
+mukaasihanpa
+mukaasihan
+mukaasikohan
+mukaasikokin
+mukaasikokaan
+mukaasikos
+mukaasikopa
+mukaasiko
+mukaasikinhan
+mukaasikinko
+mukaasikinkaan
+mukaasikinpa
+mukaasikin
+mukaasikaanhan
+mukaasikaanko
+mukaasikaankin
+mukaasikaanpa
+mukaasikaan
+mukaasipahan
+mukaasipako
+mukaasipakin
+mukaasipakaan
+mukaasipas
+mukaasipa
+mukaan
+mukaanhanko
+mukaanhankaan
+mukaanhanpa
+mukaanhan
+mukaani
+mukaanihanko
+mukaanihankaan
+mukaanihanpa
+mukaanihan
+mukaanikohan
+mukaanikokin
+mukaanikokaan
+mukaanikos
+mukaanikopa
+mukaaniko
+mukaanikinhan
+mukaanikinko
+mukaanikinkaan
+mukaanikinpa
+mukaanikin
+mukaanikaanhan
+mukaanikaanko
+mukaanikaankin
+mukaanikaanpa
+mukaanikaan
+mukaanipahan
+mukaanipako
+mukaanipakin
+mukaanipakaan
+mukaanipas
+mukaanipa
+mukaankohan
+mukaankokin
+mukaankokaan
+mukaankos
+mukaankopa
+mukaanko
+mukaankinhan
+mukaankinko
+mukaankinkaan
+mukaankinpa
+mukaankin
+mukaankaanhan
+mukaankaanko
+mukaankaankin
+mukaankaanpa
+mukaankaan
+mukaansa
+mukaansahanko
+mukaansahankaan
+mukaansahanpa
+mukaansahan
+mukaansakohan
+mukaansakokin
+mukaansakokaan
+mukaansakos
+mukaansakopa
+mukaansako
+mukaansakinhan
+mukaansakinko
+mukaansakinkaan
+mukaansakinpa
+mukaansakin
+mukaansakaanhan
+mukaansakaanko
+mukaansakaankin
+mukaansakaanpa
+mukaansakaan
+mukaansapahan
+mukaansapako
+mukaansapakin
+mukaansapakaan
+mukaansapas
+mukaansapa
+mukaanne
+mukaannehanko
+mukaannehankaan
+mukaannehanpa
+mukaannehan
+mukaannekohan
+mukaannekokin
+mukaannekokaan
+mukaannekos
+mukaannekopa
+mukaanneko
+mukaannekinhan
+mukaannekinko
+mukaannekinkaan
+mukaannekinpa
+mukaannekin
+mukaannekaanhan
+mukaannekaanko
+mukaannekaankin
+mukaannekaanpa
+mukaannekaan
+mukaannepahan
+mukaannepako
+mukaannepakin
+mukaannepakaan
+mukaannepas
+mukaannepa
+mukaanpahan
+mukaanpako
+mukaanpakin
+mukaanpakaan
+mukaanpas
+mukaanpa
+

@@ -4,17 +4,12 @@ paradigm: PROPN_HÄÄTÖ
 ---
 ### ` PROPN_HÄÄTÖ `
 
-Dictionary class 1tö
-* harmony: front
-* upos: PROPN
-* kotus_av: F
-* possessive: False
-* clitics: False
-* deletion: tö
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: tö
-* kotus_tn: 1
+* _tö stem, tö : dö variation_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-F
+* The lemmas must end in * tö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tö `
+
+### hÄÄtÖ wordforms
+
+

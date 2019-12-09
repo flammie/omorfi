@@ -4,17 +4,25 @@ paradigm: PRON_MIKIN
 ---
 ### ` PRON_MIKIN `
 
-no inflection?
-* harmony: front
-* upos: PRON
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: kin
-* pos: PRONOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: mikin
-* kotus_tn: 101
+* _mikin inflects before kin clitic_
+* Universal POS is PRON and legacy POS is PRONOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 101
+* The lemmas must end in * kin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mikin `
+
+### mikin wordforms
+
+mihinkin
+mikin
+miksikin
+missäkin
+mistäkin
+milläkin
+millekin
+miltäkin
+minäkin
+minkin
+minnekin
+mitäkin
+mitkin
+

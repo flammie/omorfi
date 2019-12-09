@@ -4,17 +4,12 @@ paradigm: PROPN_SÄNKY
 ---
 ### ` PROPN_SÄNKY `
 
-Dictionary class 1nky
-* harmony: front
-* upos: PROPN
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: ky
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: nky
-* kotus_tn: 1
+* _nky stem, nky :ngy variaitons_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-G
+* The lemmas must end in * ky * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nky `
+
+### sÄnky wordforms
+
+

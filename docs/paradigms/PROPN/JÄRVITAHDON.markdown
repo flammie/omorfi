@@ -4,17 +4,12 @@ paradigm: PROPN_JÄRVITAHDON
 ---
 ### ` PROPN_JÄRVITAHDON `
 
-Proper nouns that look like Järvitahdon(?)
-* harmony: back
-* upos: PROPN
-* kotus_av: F
-* possessive: False
-* clitics: False
-* deletion: don
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: don
-* kotus_tn: 33
+* _tahdon stem_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 33-F
+* The lemmas must end in * don * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` don `
+
+### jÄrvitahdon wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: VERB_MÄDÄTÄ
 ---
 ### ` VERB_MÄDÄTÄ `
 
-Dictionary class72 front d~t
-* harmony: front
-* upos: VERB
-* kotus_av: F
-* possessive: False
-* clitics: False
-* deletion: dätä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: dätä
-* kotus_tn: 72
+* _dätä stem, dätä : täne variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 72-F
+* The lemmas must end in * dätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dätä `
+
+### mÄdÄtÄ wordforms
+
+

@@ -4,17 +4,201 @@ paradigm: ADP_YLLE
 ---
 ### ` ADP_YLLE `
 
-adposition with optional possessive including -en allomorph, front harmony
-* harmony: front
-* upos: ADP
-* kotus_av: None
-* possessive: optional
-* clitics: True
-* deletion: None
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: e
-* kotus_tn: 99
+* _optional possessive including -en allomorph, front harmony_
+* Universal POS is ADP and legacy POS is PARTICLE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` e `
+
+### ylle wordforms
+
+ylle
+yllehänkään
+yllehänkö
+yllehänpä
+yllehän
+yllemme
+yllemmehänkään
+yllemmehänkö
+yllemmehänpä
+yllemmehän
+yllemmekinhän
+yllemmekinkään
+yllemmekinkö
+yllemmekinpä
+yllemmekin
+yllemmekäänhän
+yllemmekäänkin
+yllemmekäänkö
+yllemmekäänpä
+yllemmekään
+yllemmeköhän
+yllemmekökin
+yllemmekökään
+yllemmekös
+yllemmeköpä
+yllemmekö
+yllemmepähän
+yllemmepäkin
+yllemmepäkään
+yllemmepäkö
+yllemmepäs
+yllemmepä
+ylleen
+ylleenhänkään
+ylleenhänkö
+ylleenhänpä
+ylleenhän
+ylleenkinhän
+ylleenkinkään
+ylleenkinkö
+ylleenkinpä
+ylleenkin
+ylleenkäänhän
+ylleenkäänkin
+ylleenkäänkö
+ylleenkäänpä
+ylleenkään
+ylleenköhän
+ylleenkökin
+ylleenkökään
+ylleenkös
+ylleenköpä
+ylleenkö
+ylleenpähän
+ylleenpäkin
+ylleenpäkään
+ylleenpäkö
+ylleenpäs
+ylleenpä
+yllekinhän
+yllekinkään
+yllekinkö
+yllekinpä
+yllekin
+yllekäänhän
+yllekäänkin
+yllekäänkö
+yllekäänpä
+yllekään
+ylleköhän
+yllekökin
+yllekökään
+yllekös
+ylleköpä
+yllekö
+yllesi
+yllesihänkään
+yllesihänkö
+yllesihänpä
+yllesihän
+yllesikinhän
+yllesikinkään
+yllesikinkö
+yllesikinpä
+yllesikin
+yllesikäänhän
+yllesikäänkin
+yllesikäänkö
+yllesikäänpä
+yllesikään
+yllesiköhän
+yllesikökin
+yllesikökään
+yllesikös
+yllesiköpä
+yllesikö
+yllesipähän
+yllesipäkin
+yllesipäkään
+yllesipäkö
+yllesipäs
+yllesipä
+ylleni
+yllenihänkään
+yllenihänkö
+yllenihänpä
+yllenihän
+yllenikinhän
+yllenikinkään
+yllenikinkö
+yllenikinpä
+yllenikin
+yllenikäänhän
+yllenikäänkin
+yllenikäänkö
+yllenikäänpä
+yllenikään
+ylleniköhän
+yllenikökin
+yllenikökään
+yllenikös
+ylleniköpä
+yllenikö
+yllenipähän
+yllenipäkin
+yllenipäkään
+yllenipäkö
+yllenipäs
+yllenipä
+yllensä
+yllensähänkään
+yllensähänkö
+yllensähänpä
+yllensähän
+yllensäkinhän
+yllensäkinkään
+yllensäkinkö
+yllensäkinpä
+yllensäkin
+yllensäkäänhän
+yllensäkäänkin
+yllensäkäänkö
+yllensäkäänpä
+yllensäkään
+yllensäköhän
+yllensäkökin
+yllensäkökään
+yllensäkös
+yllensäköpä
+yllensäkö
+yllensäpähän
+yllensäpäkin
+yllensäpäkään
+yllensäpäkö
+yllensäpäs
+yllensäpä
+yllenne
+yllennehänkään
+yllennehänkö
+yllennehänpä
+yllennehän
+yllennekinhän
+yllennekinkään
+yllennekinkö
+yllennekinpä
+yllennekin
+yllennekäänhän
+yllennekäänkin
+yllennekäänkö
+yllennekäänpä
+yllennekään
+yllenneköhän
+yllennekökin
+yllennekökään
+yllennekös
+yllenneköpä
+yllennekö
+yllennepähän
+yllennepäkin
+yllennepäkään
+yllennepäkö
+yllennepäs
+yllennepä
+yllepähän
+yllepäkin
+yllepäkään
+yllepäkö
+yllepäs
+yllepä
+

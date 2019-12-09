@@ -4,17 +4,12 @@ paradigm: NOUN_KÖÖ
 ---
 ### ` NOUN_KÖÖ `
 
-Dictionary class 18 ö
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ö
-* pos: NOUN
-* stem_vowel: ö
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: öö
-* kotus_tn: 18
+* _öö stem, öö : ö variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 18
+* The lemmas must end in * ö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` öö `
+
+### kÖÖ wordforms
+
+

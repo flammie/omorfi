@@ -4,17 +4,12 @@ paradigm: NUM_51yhdeksäntsiljardia
 ---
 ### ` NUM_51yhdeksäntsiljardia `
 
-Optimisation hack for exceptional compound ’yhdeksäntsiljardia’ that inflects in all parts with agreement
-* harmony: back
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: äntsiljardia
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: yhdeksäntsiljardia
-* kotus_tn: 51
+* _Optimisation hack for exceptional compound ’yhdeksäntsiljardia’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * äntsiljardia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yhdeksäntsiljardia `
+
+### 51yhdeksäntsiljardia wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: PRON_HÄN
 ---
 ### ` PRON_HÄN `
 
-personal pronoun ‘hän’ inflects with e stem, singular only
-* harmony: front
-* upos: PRON
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: PRONOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: hän
-* kotus_tn: 101
+* _personal pronoun ‘hän’ inflects, e stem, singular only_
+* Universal POS is PRON and legacy POS is PRONOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 101
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hän `
+
+### hÄn wordforms
+
+

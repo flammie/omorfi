@@ -4,17 +4,13 @@ paradigm: PROPN_VIIS
 ---
 ### ` PROPN_VIIS `
 
-Proper nouns with iis:iide stems (from numeral 5)
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: s
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: s
-* kotus_tn: 27
+* _iis stem, s : de  variatinst front harmony_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 27
+* The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` s `
+
+### viis wordforms
+
+viis
+

@@ -4,17 +4,12 @@ paradigm: VERB_RYÖPYTÄ
 ---
 ### ` VERB_RYÖPYTÄ `
 
-Dictionary class75 pytä
-* harmony: front
-* upos: VERB
-* kotus_av: B
-* possessive: False
-* clitics: False
-* deletion: ytä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: pytä
-* kotus_tn: 75
+* _pytä stem, pytä : ppyä variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 75-B
+* The lemmas must end in * ytä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pytä `
+
+### ryÖpytÄ wordforms
+
+

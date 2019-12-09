@@ -4,17 +4,12 @@ paradigm: VERB_LEPPYÄ
 ---
 ### ` VERB_LEPPYÄ `
 
-Dictionary class52 p~0 y
-* harmony: front
-* upos: VERB
-* kotus_av: B
-* possessive: False
-* clitics: False
-* deletion: pyä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ppyä
-* kotus_tn: 52
+* _ppyä stem, ppyä : py variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 52-B
+* The lemmas must end in * pyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppyä `
+
+### leppyÄ wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: NUM_51kuusitriljoonaa
 ---
 ### ` NUM_51kuusitriljoonaa `
 
-Optimisation hack for exceptional compound ’kuusitriljoonaa’ that inflects in all parts with agreement
-* harmony: back
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: sitriljoonaa
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kuusitriljoonaa
-* kotus_tn: 51
+* _Optimisation hack for exceptional compound ’kuusitriljoonaa’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * sitriljoonaa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuusitriljoonaa `
+
+### 51kuusitriljoonaa wordforms
+
+

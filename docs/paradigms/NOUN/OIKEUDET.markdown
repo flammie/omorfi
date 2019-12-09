@@ -4,17 +4,13 @@ paradigm: NOUN_OIKEUDET
 ---
 ### ` NOUN_OIKEUDET `
 
-Dictionary class sdet plurale tantum
-* harmony: back
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: det
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det
-* kotus_tn: 40
+* _Plurale tantums, det stem, det : s variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 40
+* The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### oikeudet wordforms
+
+

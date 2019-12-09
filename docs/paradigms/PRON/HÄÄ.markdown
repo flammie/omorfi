@@ -4,17 +4,12 @@ paradigm: PRON_HÄÄ
 ---
 ### ` PRON_HÄÄ `
 
-dialectal forms of hän
-* harmony: front
-* upos: PRON
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ä
-* pos: PRONOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: hää
-* kotus_tn: 101
+* _dialectal forms of ‘hän’_
+* Universal POS is PRON and legacy POS is PRONOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 101
+* The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hää `
+
+### hÄÄ wordforms
+
+

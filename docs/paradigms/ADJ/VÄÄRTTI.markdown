@@ -4,17 +4,12 @@ paradigm: ADJ_VÄÄRTTI
 ---
 ### ` ADJ_VÄÄRTTI `
 
-Stems with quantitative t gradation, i final and front harmony are in class described here and dictionary class ⁵⁻C. There are no bisyllabic adjectives ending in vowel and gradating -pi.
-* harmony: front
-* upos: ADJ
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: ti
-* pos: ADJECTIVE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: tti
-* kotus_tn: 5
+* _tti stems, tti : te variations_
+* Universal POS is ADJ and legacy POS is ADJECTIVE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 5-C
+* The lemmas must end in * ti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tti `
+
+### vÄÄrtti wordforms
+
+

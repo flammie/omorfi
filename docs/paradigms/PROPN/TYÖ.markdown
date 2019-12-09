@@ -4,17 +4,12 @@ paradigm: PROPN_TYÖ
 ---
 ### ` PROPN_TYÖ `
 
-Dictionary class 19 yö
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: yö
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: yö
-* kotus_tn: 19
+* _yö stem, yö : ö variation_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 19
+* The lemmas must end in * yö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yö `
+
+### tyÖ wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: NOUN_RYNNÄS
 ---
 ### ` NOUN_RYNNÄS `
 
-Dictionary class 41 näs
-* harmony: front
-* upos: NOUN
-* kotus_av: J
-* possessive: False
-* clitics: False
-* deletion: näs
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: nnäs
-* kotus_tn: 41
+* _nnäs stem, nnäs : ntää variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 41-J
+* The lemmas must end in * näs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnäs `
+
+### rynnÄs wordforms
+
+

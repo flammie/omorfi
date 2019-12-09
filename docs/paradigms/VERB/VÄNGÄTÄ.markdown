@@ -4,17 +4,12 @@ paradigm: VERB_VÄNGÄTÄ
 ---
 ### ` VERB_VÄNGÄTÄ `
 
-Dictionary class73 front g~k
-* harmony: front
-* upos: VERB
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: gätä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: gätä
-* kotus_tn: 73
+* _ngätä stem, gätä : kää variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 73-G
+* The lemmas must end in * gätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` gätä `
+
+### vÄngÄtÄ wordforms
+
+

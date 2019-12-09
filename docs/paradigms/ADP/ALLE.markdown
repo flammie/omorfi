@@ -4,17 +4,201 @@ paradigm: ADP_ALLE
 ---
 ### ` ADP_ALLE `
 
-adposition with optional possessive including -en allomorph, back harmony
-* harmony: back
-* upos: ADP
-* kotus_av: None
-* possessive: optional
-* clitics: True
-* deletion: None
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: e
-* kotus_tn: 99
+* _optional possessive including -en allomorph, back harmony_
+* Universal POS is ADP and legacy POS is PARTICLE
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` e `
+
+### alle wordforms
+
+alle
+allehanko
+allehankaan
+allehanpa
+allehan
+allemme
+allemmehanko
+allemmehankaan
+allemmehanpa
+allemmehan
+allemmekohan
+allemmekokin
+allemmekokaan
+allemmekos
+allemmekopa
+allemmeko
+allemmekinhan
+allemmekinko
+allemmekinkaan
+allemmekinpa
+allemmekin
+allemmekaanhan
+allemmekaanko
+allemmekaankin
+allemmekaanpa
+allemmekaan
+allemmepahan
+allemmepako
+allemmepakin
+allemmepakaan
+allemmepas
+allemmepa
+alleen
+alleenhanko
+alleenhankaan
+alleenhanpa
+alleenhan
+alleenkohan
+alleenkokin
+alleenkokaan
+alleenkos
+alleenkopa
+alleenko
+alleenkinhan
+alleenkinko
+alleenkinkaan
+alleenkinpa
+alleenkin
+alleenkaanhan
+alleenkaanko
+alleenkaankin
+alleenkaanpa
+alleenkaan
+alleenpahan
+alleenpako
+alleenpakin
+alleenpakaan
+alleenpas
+alleenpa
+allekohan
+allekokin
+allekokaan
+allekos
+allekopa
+alleko
+allekinhan
+allekinko
+allekinkaan
+allekinpa
+allekin
+allekaanhan
+allekaanko
+allekaankin
+allekaanpa
+allekaan
+allesi
+allesihanko
+allesihankaan
+allesihanpa
+allesihan
+allesikohan
+allesikokin
+allesikokaan
+allesikos
+allesikopa
+allesiko
+allesikinhan
+allesikinko
+allesikinkaan
+allesikinpa
+allesikin
+allesikaanhan
+allesikaanko
+allesikaankin
+allesikaanpa
+allesikaan
+allesipahan
+allesipako
+allesipakin
+allesipakaan
+allesipas
+allesipa
+alleni
+allenihanko
+allenihankaan
+allenihanpa
+allenihan
+allenikohan
+allenikokin
+allenikokaan
+allenikos
+allenikopa
+alleniko
+allenikinhan
+allenikinko
+allenikinkaan
+allenikinpa
+allenikin
+allenikaanhan
+allenikaanko
+allenikaankin
+allenikaanpa
+allenikaan
+allenipahan
+allenipako
+allenipakin
+allenipakaan
+allenipas
+allenipa
+allensa
+allensahanko
+allensahankaan
+allensahanpa
+allensahan
+allensakohan
+allensakokin
+allensakokaan
+allensakos
+allensakopa
+allensako
+allensakinhan
+allensakinko
+allensakinkaan
+allensakinpa
+allensakin
+allensakaanhan
+allensakaanko
+allensakaankin
+allensakaanpa
+allensakaan
+allensapahan
+allensapako
+allensapakin
+allensapakaan
+allensapas
+allensapa
+allenne
+allennehanko
+allennehankaan
+allennehanpa
+allennehan
+allennekohan
+allennekokin
+allennekokaan
+allennekos
+allennekopa
+allenneko
+allennekinhan
+allennekinko
+allennekinkaan
+allennekinpa
+allennekin
+allennekaanhan
+allennekaanko
+allennekaankin
+allennekaanpa
+allennekaan
+allennepahan
+allennepako
+allennepakin
+allennepakaan
+allennepas
+allennepa
+allepahan
+allepako
+allepakin
+allepakaan
+allepas
+allepa
+

@@ -4,17 +4,12 @@ paradigm: VERB_LEVÄTÄ
 ---
 ### ` VERB_LEVÄTÄ `
 
-Dictionary class73 front v~p
-* harmony: front
-* upos: VERB
-* kotus_av: E
-* possessive: False
-* clitics: False
-* deletion: vätä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: vätä
-* kotus_tn: 73
+* _vätä stem, vätä : pää variatons_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 73-E
+* The lemmas must end in * vätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vätä `
+
+### levÄtÄ wordforms
+
+

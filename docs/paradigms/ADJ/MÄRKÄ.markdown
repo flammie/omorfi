@@ -4,17 +4,12 @@ paradigm: ADJ_MÄRKÄ
 ---
 ### ` ADJ_MÄRKÄ `
 
-Adjectives with kä:0 variation with obligatory kä:e for comparative
-* harmony: front
-* upos: ADJ
-* kotus_av: D
-* possessive: False
-* clitics: False
-* deletion: kä
-* pos: ADJECTIVE
-* stem_vowel: ä
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kä
-* kotus_tn: 10
+* _kä stem, kä : 0 : empi variations_
+* Universal POS is ADJ and legacy POS is ADJECTIVE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 10-D
+* The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kä `
+
+### mÄrkÄ wordforms
+
+

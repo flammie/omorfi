@@ -4,17 +4,12 @@ paradigm: PROPN_JÄÄTELÖ
 ---
 ### ` PROPN_JÄÄTELÖ `
 
-Dictionary class 2ö
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ö
-* kotus_tn: 2
+* _ö stem no variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 2
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ö `
+
+### jÄÄtelÖ wordforms
+
+

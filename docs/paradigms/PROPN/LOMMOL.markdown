@@ -4,17 +4,12 @@ paradigm: PROPN_LOMMOL
 ---
 ### ` PROPN_LOMMOL `
 
-Proper nouns with mmol-stems
-* harmony: back
-* upos: PROPN
-* kotus_av: H
-* possessive: False
-* clitics: False
-* deletion: mol
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: mol
-* kotus_tn: 49
+* _mmol stem and_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 49-H
+* The lemmas must end in * mol * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mol `
+
+### lommol wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: NOUN_MÄTÄS
 ---
 ### ` NOUN_MÄTÄS `
 
-Dictionary class 41 täs
-* harmony: front
-* upos: NOUN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: äs
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: täs
-* kotus_tn: 41
+* _täs stems, täs : ttää variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 41-C
+* The lemmas must end in * äs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` täs `
+
+### mÄtÄs wordforms
+
+

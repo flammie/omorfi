@@ -4,17 +4,13 @@ paradigm: PROPN_LAHDET
 ---
 ### ` PROPN_LAHDET `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: back
-* upos: PROPN
-* kotus_av: F
-* possessive: False
-* clitics: False
-* deletion: det
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det
-* kotus_tn: 7
+* _Plural-only proper nouns, det stem, det : ti variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 7-F
+* The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### lahdet wordforms
+
+

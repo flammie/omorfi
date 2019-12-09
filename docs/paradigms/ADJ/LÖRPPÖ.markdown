@@ -4,17 +4,12 @@ paradigm: ADJ_LÖRPPÖ
 ---
 ### ` ADJ_LÖRPPÖ `
 
-Adjectives with quantitative gradation of p before ö is in class described here and old dictionaries would use ¹⁻B.
-* harmony: front
-* upos: ADJ
-* kotus_av: B
-* possessive: False
-* clitics: False
-* deletion: pö
-* pos: ADJECTIVE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ppö
-* kotus_tn: 1
+* _ppö stem, ppö : pö variations_
+* Universal POS is ADJ and legacy POS is ADJECTIVE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-B
+* The lemmas must end in * pö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppö `
+
+### lÖrppÖ wordforms
+
+

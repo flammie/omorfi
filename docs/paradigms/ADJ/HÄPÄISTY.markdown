@@ -4,17 +4,12 @@ paradigm: ADJ_HÄPÄISTY
 ---
 ### ` ADJ_HÄPÄISTY `
 
-The stems ending in y are in class described here, and in old dictionaries the class is ¹. Common part of this class is formed by nut participle passive’s _front_ vowel versions after s stem verbs
-* harmony: front
-* upos: ADJ
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: ADJECTIVE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: y
-* kotus_tn: 1
+* _y stems, no variations_
+* Universal POS is ADJ and legacy POS is ADJECTIVE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` y `
+
+### hÄpÄisty wordforms
+
+

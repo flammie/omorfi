@@ -4,17 +4,12 @@ paradigm: PROPN_KÖYSI
 ---
 ### ` PROPN_KÖYSI `
 
-Dictionary class 27 front
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: si
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*si
-* kotus_tn: 27
+* _si stem, si : de variations front harmony_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 27
+* The lemmas must end in * si * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*si `
+
+### kÖysi wordforms
+
+

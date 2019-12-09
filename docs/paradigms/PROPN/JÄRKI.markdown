@@ -4,17 +4,12 @@ paradigm: PROPN_JÄRKI
 ---
 ### ` PROPN_JÄRKI `
 
-Dictionary class 7 front k~j
-* harmony: front
-* upos: PROPN
-* kotus_av: L
-* possessive: False
-* clitics: False
-* deletion: ki
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki
-* kotus_tn: 7
+* _ki stem, ki : je variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 7-L
+* The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki `
+
+### jÄrki wordforms
+
+

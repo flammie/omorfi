@@ -4,17 +4,13 @@ paradigm: NOUN_RÄMIÄT
 ---
 ### ` NOUN_RÄMIÄT `
 
-Plurale tantums with iä-stem
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ät
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ät
-* kotus_tn: 12
+* _Plurale tantums, iät stem, iät : iä variaitons_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 12
+* The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ät `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### rÄmiÄt wordforms
+
+

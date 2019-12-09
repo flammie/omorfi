@@ -4,17 +4,12 @@ paradigm: PROPN_TOULAT
 ---
 ### ` PROPN_TOULAT `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: back
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: at
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: at
-* kotus_tn: 40
+* _Plural-only proper noun, at stem, at : a variaton_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 40
+* The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` at `
+
+### toulat wordforms
+
+

@@ -4,17 +4,13 @@ paradigm: PROPN_RENKAAT
 ---
 ### ` PROPN_RENKAAT `
 
-Dictionary class gaat plurale tantum
-* harmony: back
-* upos: PROPN
-* kotus_av: G
-* possessive: False
-* clitics: False
-* deletion: kaat
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: kaat
-* kotus_tn: 41
+* _kaat stem, kaat : gas variation plurale tantum_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 41-G
+* The lemmas must end in * kaat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kaat `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### renkaat wordforms
+
+

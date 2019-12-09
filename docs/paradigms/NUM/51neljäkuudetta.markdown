@@ -4,17 +4,12 @@ paradigm: NUM_51neljäkuudetta
 ---
 ### ` NUM_51neljäkuudetta `
 
-Optimisation hack for exceptional compound ’neljäkuudetta’ that inflects in all parts with agreement
-* harmony: back
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: äkuudetta
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: neljäkuudetta
-* kotus_tn: 51
+* _Optimisation hack for exceptional compound ’neljäkuudetta’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * äkuudetta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` neljäkuudetta `
+
+### 51neljäkuudetta wordforms
+
+

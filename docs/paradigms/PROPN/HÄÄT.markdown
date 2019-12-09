@@ -4,17 +4,13 @@ paradigm: PROPN_HÄÄT
 ---
 ### ` PROPN_HÄÄT `
 
-Dictionary class xxx äät plurale tantum
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ät
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: äät
-* kotus_tn: 18
+* _äät stem, plurale tantum_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 18
+* The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` äät `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### hÄÄt wordforms
+
+

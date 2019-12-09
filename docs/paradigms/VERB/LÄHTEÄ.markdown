@@ -4,17 +4,12 @@ paradigm: VERB_LÄHTEÄ
 ---
 ### ` VERB_LÄHTEÄ `
 
-Dictionary class60
-* harmony: front
-* upos: VERB
-* kotus_av: F
-* possessive: False
-* clitics: False
-* deletion: hteä
-* pos: VERB
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: hteä
-* kotus_tn: 60
+* _hteä stem, hteä : hde : ks variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 60-F
+* The lemmas must end in * hteä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hteä `
+
+### lÄhteÄ wordforms
+
+

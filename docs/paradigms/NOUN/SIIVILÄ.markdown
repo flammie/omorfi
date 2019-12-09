@@ -4,17 +4,12 @@ paradigm: NOUN_SIIVILÄ
 ---
 ### ` NOUN_SIIVILÄ `
 
-Dictionary class 12++ front
-* harmony: front
-* upos: NOUN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: ä
-* pos: NOUN
-* stem_vowel: ä
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ä
-* kotus_tn: 13
+* _ä stem, ä : ö variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 13
+* The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ä `
+
+### siivilÄ wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: PROPN_KENTTÄ
 ---
 ### ` PROPN_KENTTÄ `
 
-Dictionary class 10 front t~0
-* harmony: front
-* upos: PROPN
-* kotus_av: C
-* possessive: False
-* clitics: False
-* deletion: tä
-* pos: NOUN
-* stem_vowel: ä
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ttä
-* kotus_tn: 10
+* _ttä stems, ttä : t variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 10-C
+* The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttä `
+
+### kenttÄ wordforms
+
+

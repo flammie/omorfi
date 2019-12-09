@@ -4,17 +4,13 @@ paradigm: PROPN_YSTÄVYKSET
 ---
 ### ` PROPN_YSTÄVYKSET `
 
-Dictionary class kset fr plurale tantum
-* harmony: front
-* upos: PROPN
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: kset
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: kset
-* kotus_tn: 39
+* _kste stem, kset : s variation front harmony plurale tantum_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 39
+* The lemmas must end in * kset * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kset `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### ystÄvykset wordforms
+
+

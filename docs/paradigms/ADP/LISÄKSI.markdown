@@ -4,17 +4,12 @@ paradigm: ADP_LISÄKSI
 ---
 ### ` ADP_LISÄKSI `
 
-adposition with i:e stem variation beore optional possessive and -en allomorph, front harmony
-* harmony: front
-* upos: ADP
-* kotus_av: None
-* possessive: optional
-* clitics: True
-* deletion: i
-* pos: PARTICLE
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: ksi
-* kotus_tn: 99
+* _i:e stem variation beore optional possessive, -en allomorph, front harmony_
+* Universal POS is ADP and legacy POS is PARTICLE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ksi `
+
+### lisÄksi wordforms
+
+

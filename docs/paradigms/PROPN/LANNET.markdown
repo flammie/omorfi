@@ -4,17 +4,12 @@ paradigm: PROPN_LANNET
 ---
 ### ` PROPN_LANNET `
 
-Plural-only proper noun with i:e stem and kk:k gradation
-* harmony: back
-* upos: PROPN
-* kotus_av: J
-* possessive: False
-* clitics: False
-* deletion: net
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet
-* kotus_tn: 44
+* _Plural-only proper nouns, nnet stem, _
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 44-J
+* The lemmas must end in * net * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet `
+
+### lannet wordforms
+
+

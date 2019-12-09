@@ -4,17 +4,12 @@ paradigm: PROPN_SEIVÄS
 ---
 ### ` PROPN_SEIVÄS `
 
-Dictionary class 41 väs
-* harmony: front
-* upos: PROPN
-* kotus_av: E
-* possessive: False
-* clitics: False
-* deletion: väs
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: väs
-* kotus_tn: 41
+* _Proper noun, väs stem, väs : pää variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 41-E
+* The lemmas must end in * väs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` väs `
+
+### seivÄs wordforms
+
+

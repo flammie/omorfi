@@ -4,17 +4,42 @@ paradigm: NUM_VIITISEN
 ---
 ### ` NUM_VIITISEN `
 
-Approximative numerals, front suffixes, compounding with select multipliers
-* harmony: front
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: False
-* stem_diphthong: None
-* suffix_regex: isen
-* kotus_tn: 99
+* _approximative numerals, front suffixes, compounding, select multipliers_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isen `
+
+### viitisen wordforms
+
+viitisen
+viitisen-
+viitisen‐
+viitisen‑
+viitisenhänkään
+viitisenhänkö
+viitisenhänpä
+viitisenhän
+viitisenkinhän
+viitisenkinkään
+viitisenkinkö
+viitisenkinpä
+viitisenkin
+viitisenkäänhän
+viitisenkäänkin
+viitisenkäänkö
+viitisenkäänpä
+viitisenkään
+viitisenköhän
+viitisenkökin
+viitisenkökään
+viitisenkös
+viitisenköpä
+viitisenkö
+viitisenpähän
+viitisenpäkin
+viitisenpäkään
+viitisenpäkö
+viitisenpäs
+viitisenpä
+

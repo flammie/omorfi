@@ -4,17 +4,12 @@ paradigm: PROPN_MÖRKÖ
 ---
 ### ` PROPN_MÖRKÖ `
 
-Dictionary class 1rkö
-* harmony: front
-* upos: PROPN
-* kotus_av: D
-* possessive: False
-* clitics: False
-* deletion: kö
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kö
-* kotus_tn: 1
+* _kö stem, kö : ö variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-D
+* The lemmas must end in * kö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kö `
+
+### mÖrkÖ wordforms
+
+

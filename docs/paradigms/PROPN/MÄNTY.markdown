@@ -4,17 +4,12 @@ paradigm: PROPN_MÄNTY
 ---
 ### ` PROPN_MÄNTY `
 
-Dictionary class 1nty
-* harmony: front
-* upos: PROPN
-* kotus_av: J
-* possessive: False
-* clitics: False
-* deletion: ty
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nty
-* kotus_tn: 1
+* _nty stem, nty : nnyt variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-J
+* The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nty `
+
+### mÄnty wordforms
+
+

@@ -4,17 +4,12 @@ paradigm: PROPN_HÄNTÄ
 ---
 ### ` PROPN_HÄNTÄ `
 
-Dictionary class 10 front t~n
-* harmony: front
-* upos: PROPN
-* kotus_av: J
-* possessive: False
-* clitics: False
-* deletion: tä
-* pos: NOUN
-* stem_vowel: ä
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: ntä
-* kotus_tn: 10
+* _with ntä stem, ntä : nn variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 10-J
+* The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntä `
+
+### hÄntÄ wordforms
+
+

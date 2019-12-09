@@ -4,17 +4,12 @@ paradigm: NUM_ENSIMMÄINEN
 ---
 ### ` NUM_ENSIMMÄINEN `
 
-Dictionary class38
-* harmony: front
-* upos: NUM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: nen
-* pos: NUMERAL
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: strengthen
-* stem_diphthong: None
-* suffix_regex: inen
-* kotus_tn: 38
+* _Ordinal nen stem front harmony (OBSOLETE)_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 38
+* The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` inen `
+
+### ensimmÄinen wordforms
+
+

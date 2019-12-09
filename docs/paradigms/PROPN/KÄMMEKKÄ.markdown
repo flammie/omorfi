@@ -4,17 +4,12 @@ paradigm: PROPN_KÄMMEKKÄ
 ---
 ### ` PROPN_KÄMMEKKÄ `
 
-Dictionary class 14 front
-* harmony: front
-* upos: PROPN
-* kotus_av: A
-* possessive: False
-* clitics: False
-* deletion: kä
-* pos: NOUN
-* stem_vowel: ä
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: kkä
-* kotus_tn: 14
+* _kkä stem, kkä : kö variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 14-A
+* The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kkä `
+
+### kÄmmekkÄ wordforms
+
+

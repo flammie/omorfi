@@ -4,17 +4,13 @@ paradigm: PROPN_LEHDET
 ---
 ### ` PROPN_LEHDET `
 
-Dictionary class 7 front t~d plurale tantum
-* harmony: front
-* upos: PROPN
-* kotus_av: F
-* possessive: False
-* clitics: False
-* deletion: det
-* pos: NOUN
-* stem_vowel: None
-* plurale_tantum: obligatory
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*det
-* kotus_tn: 7
+* _det stem, det: ti variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 7-F
+* The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*det `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+### lehdet wordforms
+
+

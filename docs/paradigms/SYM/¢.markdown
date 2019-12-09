@@ -4,17 +4,16 @@ paradigm: SYM_¢
 ---
 ### ` SYM_¢ `
 
-symbols, inflection with : and compounding with -
-* harmony: front
-* upos: SYM
-* kotus_av: None
-* possessive: False
-* clitics: False
-* deletion: None
-* pos: ACRONYM
-* stem_vowel: None
-* plurale_tantum: False
-* grade_dir: weaken
-* stem_diphthong: None
-* suffix_regex: .
-* kotus_tn: 99
+* _symbols, inflection, :, compounding, -_
+* Universal POS is SYM and legacy POS is ACRONYM
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+### ¢ wordforms
+
+¢-
+¢‐
+¢‑
+¢
+
