@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['generate',['generate',['../classomorfi_1_1omorfi_1_1Omorfi.html#afc3c31fed3a30f07d3ec35c539f7589e',1,'omorfi::omorfi::Omorfi']]],
   ['get',['get',['../classnet_1_1sf_1_1hfst_1_1ByteArray.html#abf6903ccb9935b93979cfba9bf86d1a6',1,'net::sf::hfst::ByteArray']]],
   ['get_5fbest',['get_best',['../classomorfi_1_1token_1_1Token.html#a1cd87bbee05dc4a9c046e9885c2e62b5',1,'omorfi::token::Token']]],
   ['get_5fbest_5fsegments',['get_best_segments',['../classomorfi_1_1token_1_1Token.html#ad0b6baabbde033106ebf10f82c13a771',1,'omorfi::token::Token']]],
@@ -8,6 +9,7 @@ var searchData=
   ['get_5flast_5ffeats',['get_last_feats',['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#ad92083493ec0d22c144569cded9df213',1,'omorfi::formats::omor_formatter::OmorFormatter']]],
   ['get_5flemmas',['get_lemmas',['../classomorfi_1_1analysis_1_1Analysis.html#ac69ea6f1a262c37567f197021049deb4',1,'omorfi.analysis.Analysis.get_lemmas()'],['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#a66e91898b4d5b17d09dbc55b043f1244',1,'omorfi.formats.omor_formatter.OmorFormatter.get_lemmas()']]],
   ['get_5fmoses_5ffactor_5fsegments',['get_moses_factor_segments',['../classomorfi_1_1analysis_1_1Analysis.html#ace7d9f2aafb29e9c3f27ca50bb919abf',1,'omorfi::analysis::Analysis']]],
+  ['get_5fnbest',['get_nbest',['../classomorfi_1_1token_1_1Token.html#a9dc6958225d3534df039eabebc65447d',1,'omorfi::token::Token']]],
   ['get_5fsegments',['get_segments',['../classomorfi_1_1analysis_1_1Analysis.html#adf6b11b33cb6fe34396f8704749822a4',1,'omorfi::analysis::Analysis']]],
   ['get_5fsentence',['get_sentence',['../classomorfi_1_1doc_1_1Doc.html#a18d5b18d8d709e827d87e90e4c372389',1,'omorfi::doc::Doc']]],
   ['get_5fud_5fmisc',['get_ud_misc',['../classomorfi_1_1analysis_1_1Analysis.html#a9f8c6453c2f70ce895747347bd38c96a',1,'omorfi::analysis::Analysis']]],
@@ -32,5 +34,6 @@ var searchData=
   ['getuint',['getUInt',['../classnet_1_1sf_1_1hfst_1_1ByteArray.html#a2652f654f3172d0ea4932cb0b6880416',1,'net.sf.hfst.ByteArray.getUInt()'],['../classnet_1_1sf_1_1hfst_1_1TransducerStream.html#a3170f6328b7a4e057bce670705a247b6',1,'net.sf.hfst.TransducerStream.getUInt()']]],
   ['getushort',['getUShort',['../classnet_1_1sf_1_1hfst_1_1ByteArray.html#ab116d032ab036f20e113ef2227cbf8d9',1,'net.sf.hfst.ByteArray.getUShort()'],['../classnet_1_1sf_1_1hfst_1_1TransducerStream.html#a781471fb21eb33afe4c6af2f02f6aebb',1,'net.sf.hfst.TransducerStream.getUShort()']]],
   ['getweight',['getWeight',['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer_1_1Transition.html#aee16960e5f341b3ef3db223bb76fabae',1,'net::sf::hfst::WeightedTransducer::Transition']]],
+  ['guess',['guess',['../classomorfi_1_1omorfi_1_1Omorfi.html#a6bd6ce000fa0d0fda2ea68e7a7bb07d7',1,'omorfi::omorfi::Omorfi']]],
   ['guesser2lexc',['guesser2lexc',['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#a9f1ab78a54e9c4ef6b95c90c4384a1e3',1,'omorfi::formats::omor_formatter::OmorFormatter']]]
 ];

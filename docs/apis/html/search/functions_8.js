@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['labelsegment',['labelsegment',['../classomorfi_1_1omorfi_1_1Omorfi.html#a3d7c9e69ea5a44a2dcebc365914a63f2',1,'omorfi::omorfi::Omorfi']]],
+  ['lemmatise',['lemmatise',['../classomorfi_1_1omorfi_1_1Omorfi.html#a66ca95de858a72c76b5a3fc064fae695',1,'omorfi::omorfi::Omorfi']]],
   ['lettertrie',['LetterTrie',['../classnet_1_1sf_1_1hfst_1_1LetterTrie.html#ac0f94c29ed5ed19b094240bb99e7154c',1,'net::sf::hfst::LetterTrie']]],
   ['lettertrienode',['LetterTrieNode',['../classnet_1_1sf_1_1hfst_1_1LetterTrie_1_1LetterTrieNode.html#a11df628cc8c70378df1d49fb4a84535f',1,'net::sf::hfst::LetterTrie::LetterTrieNode']]],
+  ['linguisticate',['linguisticate',['../classomorfi_1_1disamparsulate_1_1disamparsulator_1_1Disamparsulator.html#a9b140ae38c4a74d38e628b82ca0a0483',1,'omorfi::disamparsulate::disamparsulator::Disamparsulator']]],
   ['load_5facceptor',['load_acceptor',['../classomorfi_1_1omorfi_1_1Omorfi.html#ad956ea24cd469025cc3479df4d3d8931',1,'omorfi::omorfi::Omorfi']]],
   ['load_5fanalyser',['load_analyser',['../classomorfi_1_1omorfi_1_1Omorfi.html#a601a769b2deafadfa6b9702619c53dfc',1,'omorfi::omorfi::Omorfi']]],
   ['load_5fgenerator',['load_generator',['../classomorfi_1_1omorfi_1_1Omorfi.html#afe203402a964e6d59719717e0a95b5c6',1,'omorfi::omorfi::Omorfi']]],
@@ -13,5 +16,6 @@ var searchData=
   ['load_5fomortag_5ffrequencies',['load_omortag_frequencies',['../classomorfi_1_1omorfi_1_1Omorfi.html#a2216b0a7fec27ef1bb2e8859ed4fadc2',1,'omorfi::omorfi::Omorfi']]],
   ['load_5fsegmenter',['load_segmenter',['../classomorfi_1_1omorfi_1_1Omorfi.html#a63c5eb4da589824e23693381767e3926',1,'omorfi::omorfi::Omorfi']]],
   ['load_5ftokeniser',['load_tokeniser',['../classomorfi_1_1omorfi_1_1Omorfi.html#a10b83d4d16501d93cbbc67ae71950ff6',1,'omorfi::omorfi::Omorfi']]],
+  ['load_5fudpipe',['load_udpipe',['../classomorfi_1_1omorfi_1_1Omorfi.html#a8f6a6f9d9c04150596b90d68db274fec',1,'omorfi::omorfi::Omorfi']]],
   ['loadanalyser',['loadAnalyser',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a2504f246c588ce0270d85b4db1357eb8',1,'com.github.flammie.omorfi.Omorfi.loadAnalyser()'],['../classomorfi_1_1Omorfi.html#a36f8a817621eed09cc68171ae7348289',1,'omorfi::Omorfi::loadAnalyser()']]]
 ];
