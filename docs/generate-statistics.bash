@@ -7,8 +7,7 @@ if test $# != 1 ; then
 fi
 
 # build index page
-echo >> $INDEX
-echo "# Statistics" >> $INDEX
+echo "# Statistics" > $INDEX
 echo >> $INDEX
 echo "_These are semi-automatically generated statistics from omorfi
 database._ The statistics are based on the actual data in the database tables
@@ -47,14 +46,16 @@ echo >> $INDEX
 echo "### Per sources of origin" >> $INDEX
 echo >> $INDEX
 echo "Sources of origin are:" >> $INDEX
-echo "* *kotus*: [Nykysuomen sanalista]()" >> $INDEX
-echo "* *joukahainen*: [Joukahainen]()" >> $INDEX
-echo "* *omorfi*: curated by omorfi project itself" >> $INDEX
-echo "* *omorfi++*: ...and documented in detail" >> $INDEX
-echo "* *ftb3*: collected in [FinnTreeBank project]()" >> $INDEX
-echo "* *finnwordnet*: collected in [FinnWordNet project]()" >> $INDEX
+echo "* *enwikt*: harvested from [English wiktionary](//en.wiktionary.org)" >> $INDEX
 echo "* *finer*: collected in University of Helsinki outside abovementioned
 projects" >> $INDEX
+echo "* *finnwordnet*: collected in [FinnWordNet project]()" >> $INDEX
+echo "* *fiwikt*: harvested from [Finnish wiktionary](//fi.wiktionary.org)" >> $INDEX
+echo "* *ftb3*: collected in [FinnTreeBank project]()" >> $INDEX
+echo "* *joukahainen*: [Joukahainen](//joukahainen.puimula.org)" >> $INDEX
+echo "* *kotus*: [Nykysuomen sanalista](//kaino.kotus.fi/sanat/nykysuomi)" >> $INDEX
+echo "* *omorfi++*: ...and documented in detail" >> $INDEX
+echo "* *omorfi*: curated by omorfi project itself" >> $INDEX
 echo >> $INDEX
 echo "| Frequency | origin |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
@@ -90,13 +91,13 @@ function convert_coveragelog {
     HAPAX=1
     case $3 in
         *5grams*)
-            HAPAX=8;;
+            HAPAX=1;;
         *jrc-fi*)
-            HAPAX=2;;
+            HAPAX=1;;
         *OpenSubtitles2016.fi*)
-            HAPAX=2;;
+            HAPAX=1;;
         *fiwiki*)
-            HAPAX=2;;
+            HAPAX=1;;
         *coverage-fast*)
             HAPAX=1000;;
         *)
@@ -137,7 +138,7 @@ echo >> $INDEX
 convert_coveragelog $1/test/coverage-blort.log "Smaller lexicon coverage" \
     $1/test/coverage-fast-alls.freqs >> $INDEX
 for f in $1/test/*.coveragelog ; do
-    convert_coveragelog $f "$(echo $f |\
+    convert_coveragelog $f "$(basename $f |\
         sed -e 's:test/::' -e 's/.coveragelog//')" \
         ${f%.coveragelog}.uniq.freqs >> $INDEX
 done
@@ -151,7 +152,7 @@ lexicon. Most of them should be foreign languages, codes and rubbish. These
 are used from time to time improve the lexical coverage." >> $INDEX
 echo >> $INDEX
 for f in $1/test/*coveragelog ; do
-    corpus=${f%.coveragelog}
+    corpus=$(basename $f | sed -e 's/.coveragelog//')
     echo "### ${corpus}" >> ${INDEX}
     echo >> ${INDEX}
     echo "| Frequency | Word-form |" >> ${INDEX}
