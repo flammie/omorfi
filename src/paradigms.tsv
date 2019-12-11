@@ -172,7 +172,7 @@ AUX_OLLA	AUX	VERB	1067	None	False	weaken	back	None	None	False	False	olla	olla
 AUX_PITÄÄ	AUX	VERB	53	F	False	weaken	front	None	None	False	False	pitää	tää
 AUX_SAATTAA	AUX	VERB	56	C	False	weaken	back	None	None	False	False	saattaa	taa
 AUX_TAITAA	AUX	VERB	76	F	False	weaken	back	None	None	False	False	taitaa	taa
-AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False	tarvita	ta
+AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False	tarvita	vita
 AUX_TÄYTYÄ	AUX	VERB	52	F	False	weaken	front	None	None	False	False	täytyä	tyä
 AUX_VOIDA	AUX	VERB	62	None	False	strengthen	back	None	None	False	False	voida	ida
 CCONJ_JA	CCONJ	PARTICLE	99	None	False	False	front	None	None	False	False	.
@@ -1994,7 +1994,7 @@ PROPN_SKEITTI	PROPN	NOUN	5	C	False	weaken	front	None	None	False	False	[ÄÖYIEĒ
 PROPN_SOINTI	PROPN	NOUN	5	J	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nti	ti
 PROPN_SOKEA	PROPN	NOUN	15	None	False	weaken	back	a	None	False	False	ea	a
 PROPN_SOTA	PROPN	NOUN	10	F	False	weaken	back	a	None	False	False	ta	ta
-PROPN_SPOTIFY	PROPN	NOUN	21	None	False	weaken	front	i	None	False	False	.
+PROPN_SPOTIFY	PROPN	NOUN	21	None	False	weaken	both	i	None	False	False	.
 PROPN_STADION	PROPN	NOUN	6	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*
 PROPN_SUHTEET	PROPN	NOUN	48	F	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*teet	teet
 PROPN_SUKAT	PROPN	NOUN	10	A	obligatory	weaken	back	None	None	False	False	kat	at
@@ -2300,7 +2300,7 @@ VERB_TAPELLA	VERB	VERB	67	B	False	strengthen	back	None	None	False	False	pella	el
 VERB_TAPPAA	VERB	VERB	56	B	False	weaken	back	None	None	False	False	ppaa	paa
 VERB_TEMMATA	VERB	VERB	73	H	False	strengthen	back	None	None	False	False	mmata	mata
 VERB_TEMPOA	VERB	VERB	52	H	False	weaken	back	None	None	False	False	mpoa	poa
-VERB_TIETÄÄ	VERB	VERB	76	F	False	weaken	front	None	None	False	False	tää	tää
+VERB_TIETÄÄ	VERB	VERB	76	F	False	weaken	front	None	None	False	False	etää	etää
 VERB_TIPAHDELLA	VERB	VERB	67	F	False	strengthen	back	None	None	False	False	della	della
 VERB_TODETA	VERB	VERB	74	F	False	strengthen	back	None	None	False	False	deta	deta
 VERB_TUIKKAA	VERB	VERB	78	A	False	weaken	back	None	None	False	False	kkaa	kaa
