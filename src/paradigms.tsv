@@ -277,6 +277,7 @@ NOUN_AAKKOSELLISUUS	NOUN	NOUN	40	None	False	strengthen	back	None	None	False	Fals
 NOUN_AAKKOSTAMINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False	nen	nen
 NOUN_AALLOT	NOUN	NOUN	1	I	obligatory	weaken	back	None	None	False	False	lot	lot
 NOUN_AAMUKAHDEKSAN	NOUN	NOUN	10	None	False	weaken	back	None	None	False	False	kahdeksan	an
+NOUN_AAMUKAKSI	NOUN	NOUN	31	None	False	weaken	back	None	None	False	False	kaksi	ksi
 NOUN_AAMUKOLME	NOUN	NOUN	3	None	False	weaken	back	None	None	False	False	kolme	e
 NOUN_AAMUKYMMENEN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	kymmenen	en
 NOUN_AAMUYHDEKSÄN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	än	än
@@ -376,6 +377,7 @@ NOUN_HAPPI	NOUN	NOUN	7	B	False	weaken	back	None	None	False	False	[AOUŌÓÅaouå
 NOUN_HAPPO	NOUN	NOUN	1	B	False	weaken	back	None	None	False	False	ppo	po
 NOUN_HAPSI	NOUN	NOUN	29	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*psi	psi
 NOUN_HARMAAT	NOUN	NOUN	17	None	obligatory	weaken	back	None	None	False	False	aat	at
+NOUN_HAŠIŠ	NOUN	NOUN	39	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*š	š
 NOUN_HEITIN	NOUN	NOUN	33	C	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tin	in
 NOUN_HENKI	NOUN	NOUN	7	G	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki	ki
 NOUN_HEPO	NOUN	NOUN	1	E	False	weaken	back	None	None	False	False	po	po
@@ -454,6 +456,7 @@ NOUN_KIRJA	NOUN	NOUN	9	None	False	weaken	back	a	None	False	False	a	a
 NOUN_KIRVES	NOUN	NOUN	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*es	s
 NOUN_KITARA	NOUN	NOUN	13	None	False	weaken	back	a	None	False	False	a	a
 NOUN_KIVI	NOUN	NOUN	7	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
+NOUN_KLUMPIT	NOUN	NOUN	5	B	obligatory	weaken	back	None	None	False	False	pit	it
 NOUN_KOE	NOUN	NOUN	48	D	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 NOUN_KOKO	NOUN	NOUN	1	D	False	weaken	back	None	None	False	False	ko	ko
 NOUN_KOMPA	NOUN	NOUN	10	H	False	weaken	back	a	None	False	False	mpa	pa
