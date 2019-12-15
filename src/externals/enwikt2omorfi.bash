@@ -325,11 +325,11 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Proper-noun_maa	/\1PROPN_OOKOO	/' \
         -e 's/\(ä	1	\)Proper-noun_maa	/\1PROPN_PÄÄ	/' \
         -e 's/\(ie	1	\)Noun_suo	/\1NOUN_TIE	/' \
-        -e 's/\(uo	1	\)Noun_suo	/\1NOUN_SUO	/' \
+        -e 's/\(uo	1	\)Noun_suo	/\1NOUN_VUO	/' \
         -e 's/\(yö	1	\)Noun_suo	/\1NOUN_TYÖ	/' \
         -e 's/\(yöt	1	\)Noun_suo	/\1NOUN_TYÖT	/' \
         -e 's/\(ie	1	\)Proper-noun_suo	/\1PROPN_TIE	/' \
-        -e 's/\(uo	1	\)Proper-noun_suo	/\1PROPN_SUO	/' \
+        -e 's/\(uo	1	\)Proper-noun_suo	/\1PROPN_VUO	/' \
         -e 's/\(uu	1	\)Noun_vapaa	/\1NOUN_LEIKKUU	/' \
         -e 's/\(oo	1	\)Noun_vapaa	/\1NOUN_TIENOO	/' \
         -e 's/\(oot	1	\)Noun_vapaa	/\1NOUN_TALKOOT	/' \

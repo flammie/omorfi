@@ -242,7 +242,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Erisnimi_18	/\1PROPN_OOKOO	/' \
         -e 's/\(ä	1	\)Erisnimi_18	/\1PROPN_PÄÄ	/' \
         -e 's/\(ie	1	\)Erisnimi_19	/\1PROPN_TIE	/' \
-        -e 's/\(uo	1	\)Erisnimi_19	/\1PROPN_SUO	/' \
+        -e 's/\(uo	1	\)Erisnimi_19	/\1PROPN_VUO	/' \
         -e 's/\(e	1	\)Substantiivi_20	/\1NOUN_PATEE	/' \
         -e 's/\(ä	1	\)Erisnimi_20	/\1PROPN_HYVINKÄÄ	/' \
         -e 's/\(	1	\)Substantiivi_21	/\1NOUN_ROSÉ	/' \
