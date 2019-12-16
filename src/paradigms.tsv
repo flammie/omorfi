@@ -180,6 +180,8 @@ DET_SE	DET	PRONOUN	101	None	False	False	front	None	None	False	False	.	e
 DET_YKSI	DET	PRONOUN	31	None	False	weaken	front	None	None	False	False	.	ksi
 INTJ_HAH	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False	.
 INTJ_OO	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False	.
+NOUN_51aamukaksitoista	NOUN	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksitoista	ksitoista
+NOUN_51aamuyksitoista	NOUN	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksitoista	ksitoista
 NOUN_51aavameri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	aavameri	ameri
 NOUN_51hienosokeri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	hienosokeri	sokeri
 NOUN_51isojako	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isojako	jako
@@ -1586,6 +1588,8 @@ PROPN_51Punainenmeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	
 PROPN_51Tyynimeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Tyynimeri	imeri
 PROPN_51Uusikaupunki	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusikaupunki	sikaupunki
 PROPN_51Uusimaa	PROPN	PROPN	51	None	False	weaken	back	None	None	False	False	Uusimaa	simaa
+PROPN_51Uusi-Guinea	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Guinea	si-Guinea
+PROPN_51Uusi-Englanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Englanti	si-Englanti
 PROPN_51Uusi-Seelanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Seelanti	si-Seelanti
 PROPN_A.	PROPN	NOUN	99	None	False	False	back	None	None	False	False	\.
 PROPN_AAKKOSELLISUUS	PROPN	NOUN	40	None	False	strengthen	back	None	None	False	False	us	s

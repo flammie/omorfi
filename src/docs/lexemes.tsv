@@ -2,6 +2,7 @@ lemma	homonym	doc
 !	1	exclamation mark
 !	2	exclamation mark
 '	1	“opening” ASCII single quotation mark, still most common single quotation, but not recommended
+'	2	“closing” ASCII single quotation mark, still most common single quotation, but not recommended
 (	1	left bracket
 )	1	right bracket
 +	1	plus

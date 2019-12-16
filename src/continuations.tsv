@@ -2758,6 +2758,56 @@ INTJ_COMPOUND_INTJ	Bc		INTJ
 INTJ_COMPOUND_INTJ	Bc	-	INTJ
 INTJ_HAH			INTJ_COMPOUND_INTJ	#
 INTJ_OO			#
+NOUN_51aamukaksitoista	Npl|Xabe	ksittatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xabl	ksiltatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xade	ksillatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xall	ksilletoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xcom	ksinetoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xela	ksistatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xess	ksinatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xgen	ksientoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xill	ksiintoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xine	ksissatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xnom	ksitoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xpar	ksiatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Npl|Xtra	ksiksitoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xabe	hdettatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xabl	hdeltatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xade	hdellatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xall	hdelletoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xela	hdestatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xess	htenatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xgen	hdentoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xill	hteentoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xine	hdessatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xnom	ksitoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xpar	htatoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamukaksitoista	Nsg|Xtra	hdeksitoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xabe	ksittätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xabl	ksiltätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xade	ksillätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xall	ksilletoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xcom	ksinetoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xela	ksistätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xess	ksinätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xgen	ksientoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xill	ksiintoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xine	ksissätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xnom	hdettoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xpar	ksiätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Npl|Xtra	ksiksitoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xabe	hdettätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xabl	hdeltätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xade	hdellätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xall	hdelletoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xela	hdestätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xess	htenätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xgen	hdentoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xill	hteentoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xine	hdessätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xnom	ksitoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xpar	htätoista	NOUN_BACK_CLIT_OPT
+NOUN_51aamuyksitoista	Nsg|Xtra	hdeksitoista	NOUN_BACK_CLIT_OPT
 NOUN_51aavameri	Npl|Xabe	oitta{hyph?}merittä	NOUN_FRONT_POSS_ÄN_OPT
 NOUN_51aavameri	Npl|Xabl	oilta{hyph?}meriltä	NOUN_FRONT_POSS_ÄN_OPT
 NOUN_51aavameri	Npl|Xade	oilla{hyph?}merillä	NOUN_FRONT_POSS_ÄN_OPT
@@ -5976,11 +6026,11 @@ NOUN_JÄRKI		ke	NOUN_FRONT_STRONG_SINGULARS	NOUN_FRONT_PARTITIVE_Ä_ÄN	NOUN_FRO
 NOUN_JÄRKI		ki	NOUN_FRONT_NOMINATIVE	NOUN_COMPOUND_0
 NOUN_JÄRKI		k	NOUN_FRONT_STRONG_PLURALS	NOUN_FRONT_PARTITIVE_IÄ	NOUN_FRONT_GENITIVE_IEN	NOUN_FRONT_ILLATIVE_IIN	NOUN_COMPOUND_IEN
 NOUN_JÄÄTELÖ			NOUN_FRONT_NOMINATIVE	NOUN_FRONT_SINGULARS	NOUN_FRONT_PLURALS	NOUN_FRONT_PARTITIVE_Ä_ÄN	NOUN_FRONT_ILLATIVE_ÖN	NOUN_FRONT_PARTITIVE_ITÄ	NOUN_FRONT_PARTITIVE_JÄ	NOUN_FRONT_GENITIVE_JEN	NOUN_FRONT_GENITIVE_IDEN	NOUN_FRONT_GENITIVE_ITTEN	NOUN_FRONT_ILLATIVE_IHIN	NOUN_COMPOUND_0	NOUN_COMPOUND_N	NOUN_COMPOUND_JEN	NOUN_COMPOUND_IDEN	NOUN_COMPOUND_ITTEN	NOUN_FRONT_DERIV_TÄR
-NOUN_KAKSI		hde	NOUN_BACK_WEAK_SINGULARS
-NOUN_KAKSI		h	NOUN_BACK_PARTITIVE_TA
-NOUN_KAKSI		hte	NOUN_BACK_ILLATIVE_EN	NOUN_BACK_STRONG_SINGULARS
-NOUN_KAKSI		ksi	NOUN_BACK_NOMINATIVE
-NOUN_KAKSI		ks	NOUN_BACK_PARTITIVE_IA	NOUN_BACK_GENITIVE_IEN	NOUN_BACK_ILLATIVE_IIN	NOUN_BACK_PLURALS
+NOUN_AAMUKAKSI		hde	NOUN_BACK_WEAK_SINGULARS
+NOUN_AAMUKAKSI		h	NOUN_BACK_PARTITIVE_TA
+NOUN_AAMUKAKSI		hte	NOUN_BACK_ILLATIVE_EN	NOUN_BACK_STRONG_SINGULARS
+NOUN_AAMUKAKSI		ksi	NOUN_BACK_NOMINATIVE
+NOUN_AAMUKAKSI		ks	NOUN_BACK_PARTITIVE_IA	NOUN_BACK_GENITIVE_IEN	NOUN_BACK_ILLATIVE_IIN	NOUN_BACK_PLURALS
 NOUN_KAMPPEET		e	NOUN_COMPOUND_0
 NOUN_KAMPPEET		pee	NOUN_BACK_PLNOM_CLIT	NOUN_BACK_PLNOM_POSS	NOUN_COMPOUND_N
 NOUN_KAMPPEET		pehe	NOUN_BACK_PLNOM_ARCHAIC_CLIT	NOUN_BACK_PLNOM_ARCHAIC_POSS
@@ -26591,6 +26641,62 @@ PROPN_51Tyynimeri	Nsg|Xpar	tämerta	PROPN_BACK_POSS_AN_OPT
 PROPN_51Tyynimeri	Nsg|Xtra	eksimerekse	PROPN_BACK_POSS_EN_OBL
 PROPN_51Tyynimeri	Nsg|Xtra	eksimereksi	PROPN_BACK_CLIT_OPT
 PROPN_51Tyynimeri	Xcom	inemerine	PROPN_BACK_POSS_EN_OPT
+PROPN_51Uusi-Englanti	Npl|Xabe	sitta-Englanneitta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Npl|Xabl	silta-Englanneilta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Npl|Xade	silla-Englanneilla	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Npl|Xall	sille-Englanneille	PROPN_BACK_POSS_EN_OPT
+PROPN_51Uusi-Englanti	Npl|Xela	sista-Englanneista	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Npl|Xess	sina-Englanteina	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Npl|Xgen	sien-Englantien	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Npl|Xill	siin-Englanteihin	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Npl|Xine	sissa-Englanneissa	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Npl|Xnom	det-Englannit	PROPN_BACK_POSS
+PROPN_51Uusi-Englanti	Npl|Xpar	sia-Englanteja	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Npl|Xtra	siksi-Englanneikse	PROPN_BACK_POSS_EN_OBL
+PROPN_51Uusi-Englanti	Npl|Xtra	siksi-Englanneiksi	PROPN_BACK_CLIT_OPT
+PROPN_51Uusi-Englanti	Nsg|Xabe	detta-Englannitta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xabl	delta-Englannilta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xade	della-Englannilla	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xall	delle-Englannille	PROPN_BACK_POSS_EN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xela	desta-Englannista	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xess	tena-Englantina	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xgen	den-Englannin	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Nsg|Xill	teen-Englantiin	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Nsg|Xine	dessa-Englannissa	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Englanti	Nsg|Xnom	sienglanti	PROPN_BACK_DERIV_LAINEN
+PROPN_51Uusi-Englanti	Nsg|Xnom	si-Englanti	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Nsg|Xpar	tta-Englantia	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Englanti	Nsg|Xtra	deksi-Englannikse	PROPN_BACK_POSS_EN_OBL
+PROPN_51Uusi-Englanti	Nsg|Xtra	deksi-Englanniksi	PROPN_BACK_CLIT_OPT
+PROPN_51Uusi-Englanti	Xcom	sine-Englanteine	PROPN_BACK_POSS_EN_OPT
+PROPN_51Uusi-Guinea	Npl|Xabe	sitta-Guineoitta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Npl|Xabl	silta-Guineoilta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Npl|Xade	silla-Guineoilla	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Npl|Xall	sille-Guineoille	PROPN_BACK_POSS_EN_OPT
+PROPN_51Uusi-Guinea	Npl|Xela	sista-Guineoista	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Npl|Xess	sina-Guineoina	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Npl|Xgen	sien-Guineoiden	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Npl|Xill	siin-Guineoihin	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Npl|Xine	sissa-Guineoissa	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Npl|Xnom	det-Guineat	PROPN_BACK_POSS
+PROPN_51Uusi-Guinea	Npl|Xpar	sia-Guineoita	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Npl|Xtra	siksi-Guineoikse	PROPN_BACK_POSS_EN_OBL
+PROPN_51Uusi-Guinea	Npl|Xtra	siksi-Guineoiksi	PROPN_BACK_CLIT_OPT
+PROPN_51Uusi-Guinea	Nsg|Xabe	detta-Guineatta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xabl	delta-Guinealta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xade	della-Guinealla	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xall	delle-Guinealle	PROPN_BACK_POSS_EN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xela	desta-Guineasta	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xess	tena-Guineana	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xgen	den-Guinean	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Nsg|Xill	teen-Guineaan	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Nsg|Xine	dessa-Guineassa	PROPN_BACK_POSS_AN_OPT
+PROPN_51Uusi-Guinea	Nsg|Xnom	siguinea	PROPN_BACK_DERIV_LAINEN
+PROPN_51Uusi-Guinea	Nsg|Xnom	si-Guinea	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Nsg|Xpar	tta-Guineaa	PROPN_BACK_POSS_OPT
+PROPN_51Uusi-Guinea	Nsg|Xtra	deksi-Guineakse	PROPN_BACK_POSS_EN_OBL
+PROPN_51Uusi-Guinea	Nsg|Xtra	deksi-Guineaksi	PROPN_BACK_CLIT_OPT
+PROPN_51Uusi-Guinea	Xcom	sine-Guineoine	PROPN_BACK_POSS_EN_OPT
 PROPN_51Uusikaupunki	Npl|Xabe	sittakaupungeitta	PROPN_BACK_POSS_AN_OPT
 PROPN_51Uusikaupunki	Npl|Xabl	siltakaupungeilta	PROPN_BACK_POSS_AN_OPT
 PROPN_51Uusikaupunki	Npl|Xade	sillakaupungeilla	PROPN_BACK_POSS_AN_OPT

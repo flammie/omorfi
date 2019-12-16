@@ -180,6 +180,8 @@ DET_SE	determiner version of pronoun ‘se’
 DET_YKSI	determiner version of pronoun/numeral ‘yksi’
 INTJ_HAH	interjection that does *not* participate in interjection compounding
 INTJ_OO	interjection that participates in interjection compounding
+NOUN_51aamukaksitoista	Nouns inflecting like 'kaksitoista', e.g. noun-numeral compounds
+NOUN_51aamuyksitoista	Nouns inflecting like 'yksitoista', e.g. noun-numeral compounds
 NOUN_51aavameri	Optimisation hack for exceptional compound ’aavameri’
 NOUN_51hienosokeri	Optimisation hack for exceptional compound ’hienosokeri’
 NOUN_51isojako	Optimisation hack for exceptional compound ’isojako’
@@ -277,6 +279,7 @@ NOUN_AAKKOSELLISUUS	s stem, s:de:te variation
 NOUN_AAKKOSTAMINEN	nen stem, nen:se variation
 NOUN_AALLOT	Plurale tantums, llot:lto variation
 NOUN_AAMUKAHDEKSAN	Nouns inflecting like 'kahdeksan', e.g. noun-numeral compounds
+NOUN_AAMUKAKSI	Nouns inflecting like 'kaksi', e.g. noun-numeral compounds
 NOUN_AAMUKOLME	Nouns inflecting like 'kolme', e.g. noun-numeral compounds
 NOUN_AAMUKYMMENEN	Nouns inflecting like 'kolme', e.g. noun-numeral compounds
 NOUN_AAMUYHDEKSÄN	Nouns inflecting like 'yhdeksän', e.g. noun-numeral compounds
@@ -376,6 +379,7 @@ NOUN_HAPPI	ppi stem, ppi : pe variations, back harmony
 NOUN_HAPPO	ppo stem, ppo : po variations
 NOUN_HAPSI	psi stem, psi : pse variations back harmony
 NOUN_HARMAAT	Plurale tantums, aat stem, aat : aa variations
+NOUN_HAŠIŠ	š stem, š : ks variations back harmony
 NOUN_HEITIN	tin stem, tin : ttime variation, front harmony
 NOUN_HENKI	nki stem, nki : nge variations
 NOUN_HEPO	po stem, po : vo variations
@@ -454,6 +458,7 @@ NOUN_KIRJA	a stem, a : o variations
 NOUN_KIRVES	es stem, es : ee ( : ekse ) variations
 NOUN_KITARA	a stem, a : o variations
 NOUN_KIVI	i stem, i : e variations
+NOUN_KLUMPIT	Plural-only noun, pit stem, pit : ppi variations
 NOUN_KOE	e stem, e : kee variations back harmony
 NOUN_KOKO	koko stem, k : ’ : 0 variations, N.B. should be obligatory k : ’ but new rules allow k:0 for ‘koko’
 NOUN_KOMPA	mpa stem, mpa : mm variations
@@ -1581,6 +1586,8 @@ PROPN_51Iso-Britannia	Optimisation hack for exceptional compound ’Iso-Britanni
 PROPN_51Mustameri	Optimisation hack for exceptional compound ’Mustameri’
 PROPN_51Punainenmeri	Optimisation hack for exceptional compound ’Punainenmeri’
 PROPN_51Tyynimeri	Optimisation hack for exceptional compound ’Tyynimeri’
+PROPN_51Uusi-Englanti	Optimisation hack for exceptional compound ’Uusi-Guinea’
+PROPN_51Uusi-Guinea	Optimisation hack for exceptional compound ’Uusi-Englanti’
 PROPN_51Uusikaupunki	Optimisation hack for exceptional compound ’Uusikaupunki’
 PROPN_51Uusimaa	Optimisation hack for exceptional compound ’Uusimaa’
 PROPN_51Uusi-Seelanti	Optimisation hack for exceptional compound ’Uusi-Seelanti’
