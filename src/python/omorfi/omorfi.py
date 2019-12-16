@@ -991,11 +991,12 @@ class Omorfi:
                     elif k in ['Alt', 'FTB-PronType', 'FTB-Rel',
                                'Missed-Rel', 'FTB-rel', 'Join',
                                'Missed-SUBCAT', 'FTB-Sub', 'Prefix',
-                               'FTB1-InfForm', 'Missed-POSITION']:
+                               'FTB1-InfForm', 'Missed-POSITION',
+                               'Was18']:
                         # FTB stuff
                         pass
                     else:
-                        print("Unknown MISC", k, file=stderr)
+                        print("Unkonown MISC", k, file=stderr)
                         exit(1)
             tokens.append(token)
         eoft = Token()
