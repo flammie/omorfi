@@ -73,7 +73,6 @@ aikaan	2	during (around), adposition with genitive complement, e.g., “sen aika
 aikana	1	during (while), adposition with genitive complement, e.g., “sen aikana“
 aikana	1	during (while), adposition with genitive complement, e.g., “sen aikana”
 Aimo	1	This rare proper noun overlaps more common *aimo* (grand)
-ais	1	A-sharp in music notation, rare and causes compounding problems
 aina	1	REMOVED adposition (send an example sentence if you need it back)
 aina	2	always, as adverb, “aina mun pitää“
 aina	2	always, as adverb, “aina mun pitää”
@@ -85,6 +84,7 @@ Ainoa	1	This proper noun overlaps very common *ainoa* “only”.
 Ainokainen	1	This rare proper noun overlaps more common *ainokainen* (singleton)
 Airo	1	This rare proper noun overlaps more common *airo* (FIXME)
 Airut	1	This rare proper noun overlaps more common *airut* (FIXME)
+ais	1	A-sharp in music notation, rare and causes compounding problems
 Aisti	1	This rare proper noun overlaps more common *aisti* (sense)
 Aistimus	1	This rare proper noun overlaps more common *aistimus* (sensation)
 Aitio	1	This rare proper noun overlaps more common *aitio* (box)
@@ -482,6 +482,7 @@ Helle	1	This rare proper noun overlaps more common *Helle* (heat)
 Hellä	1	This rare proper noun overlaps more common *Hellä* (tender)
 Helmi	1	This rare proper noun overlaps more common *Helmi* (pearl)
 Helminauha	1	This rare proper noun overlaps more common *Helminauha* (pearls)
+Helsinki	1	PROPN_HÄMMINKI	Helsinki, capital of Finland, a high frequency proper noun
 Helvetti	1	This rare proper noun overlaps more common *Helvetti* (hell)
 Hely	1	This rare proper noun overlaps more common *Hely* (tchatchke)
 Hemmo	1	This rare proper noun overlaps more common *Hemmo* (guy)
@@ -766,6 +767,7 @@ Joenmutka	1	This rare proper noun overlaps more common *Joenmutka* (river should
 Joenniska	1	This rare proper noun overlaps more common *Joenniska* (river neck)
 Joenpolvi	1	This rare proper noun overlaps more common *Joenpolvi* (river knee)
 Joenranta	1	This rare proper noun overlaps more common *Joenranta* (river coast)
+Joensuu	1	PROPN_PUU	finer|joukahainen|omorfi++
 Joenvarsi	1	This rare proper noun overlaps more common *Joenvarsi* (riverside)
 Johan	1	This proper noun overlaps forms of very common *jo* “already”.
 Johde	1	This rare proper noun overlaps more common *Johde* (inducer)
@@ -2444,6 +2446,7 @@ Otso	1	This rare proper noun overlaps more common *Otso* (bear)
 Otsoni	1	This rare proper noun overlaps more common *Otsoni* (ozone)
 ottamatta	1	excepting, as adposition, illative complement, mainly “lukuun ottamatta“
 ottamatta	1	excepting, as adposition, illative complement, mainly “lukuun ottamatta”
+Oulu	1	PROPN_ASU	Oulu, a large city in North Finland, a high frequency proper noun
 oy	1	Osake-Yhtiö
 OY	1	Osake-Yhtiö
 oyj	1	Julkinen Osake-Yhtiö
@@ -3398,6 +3401,7 @@ Suolampi	1	This rare proper noun overlaps more common *Suolampi* (swamp pond)
 Suolaton	1	This rare proper noun overlaps more common *Suolaton* (saltless)
 Suolisto	1	This rare proper noun overlaps more common *Suolisto* (guts)
 Suometsä	1	This rare proper noun overlaps more common *Suometsä* (swamp forest)
+Suomi	1	PROPN_ONNI	Finland, a high frequency proper noun
 Suoni	1	This rare proper noun overlaps more common *Suoni* (vein)
 Suoniitty	1	This rare proper noun overlaps more common *Suoniitty* (swamp grass)
 Suonsilmä	1	This rare proper noun overlaps more common *Suonsilmä* (swamp eye)
@@ -3874,6 +3878,7 @@ Vanha	1	This rare proper noun overlaps more common *Vanha* (old)
 vanhastaan	1	usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old)
 Vankka	1	This rare proper noun overlaps more common *Vankka* (sturdy)
 Vanne	1	This rare proper noun overlaps more common *Vanne* (hoop)
+Vantaa	1	PROPN_VAINAA	Vantaa, a city in South Finland, a high frequency proper noun
 Vappu	1	This rare proper noun overlaps more common *Vappu* (may day)
 Vara	1	This rare proper noun overlaps more common *Vara* (spare)
 Varakas	1	This rare proper noun overlaps more common *Varakas* (rich)
