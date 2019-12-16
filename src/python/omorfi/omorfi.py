@@ -472,7 +472,7 @@ class Omorfi:
             token = Token(token)
         anals = self._analyse(token)
         if not anals:
-            omor = '[WORD_ID=' + token.surf + '][UPOS=X]' +\
+            omor = '[WORD_ID=' + token.surf.replace("=", ".EQ.") + '][UPOS=X]' +\
                    '[GUESS=UNKNOWN][WEIGHT=inf]'
             weight = float('inf')
             anal = Analysis.fromomor(omor, weight)
