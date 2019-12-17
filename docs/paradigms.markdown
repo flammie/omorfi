@@ -198,6 +198,8 @@ The _Harmony_ column is vowel harmony; back, front, both or N/A
 |  [DET_YKSI](paradigms//DET/YKSI.html) | DET | determiner version of pronoun/numeral ‘y... | 31 | front |
 |  [INTJ_HAH](paradigms//INTJ/HAH.html) | INTJ | interjection that does *not* participate... | 99 | back |
 |  [INTJ_OO](paradigms//INTJ/OO.html) | INTJ | interjection that participates in interj... | 99 | back |
+|  [NOUN_51aamukaksitoista](paradigms//NOUN/51aamukaksitoista.html) | NOUN | Nouns inflecting like 'kaksitoista', e.g... | 51 | back |
+|  [NOUN_51aamuyksitoista](paradigms//NOUN/51aamuyksitoista.html) | NOUN | Nouns inflecting like 'yksitoista', e.g.... | 51 | back |
 |  [NOUN_51aavameri](paradigms//NOUN/51aavameri.html) | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  [NOUN_51hienosokeri](paradigms//NOUN/51hienosokeri.html) | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  [NOUN_51isojako](paradigms//NOUN/51isojako.html) | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -295,6 +297,7 @@ The _Harmony_ column is vowel harmony; back, front, both or N/A
 |  [NOUN_AAKKOSTAMINEN](paradigms//NOUN/AAKKOSTAMINEN.html) | NOUN | nen stem, nen:se variation | 38 | back |
 |  [NOUN_AALLOT](paradigms//NOUN/AALLOT.html) | NOUN | Plurale tantums, llot:lto variation | 1-I | back |
 |  [NOUN_AAMUKAHDEKSAN](paradigms//NOUN/AAMUKAHDEKSAN.html) | NOUN | Nouns inflecting like 'kahdeksan', e.g. ... | 10 | back |
+|  [NOUN_AAMUKAKSI](paradigms//NOUN/AAMUKAKSI.html) | NOUN | Nouns inflecting like 'kaksi', e.g. noun... | 31 | back |
 |  [NOUN_AAMUKOLME](paradigms//NOUN/AAMUKOLME.html) | NOUN | Nouns inflecting like 'kolme', e.g. noun... | 3 | back |
 |  [NOUN_AAMUKYMMENEN](paradigms//NOUN/AAMUKYMMENEN.html) | NOUN | Nouns inflecting like 'kolme', e.g. noun... | 8 | front |
 |  [NOUN_AAMUYHDEKSÄN](paradigms//NOUN/AAMUYHDEKSÄN.html) | NOUN | Nouns inflecting like 'yhdeksän', e.g. n... | 8 | front |
@@ -394,6 +397,7 @@ The _Harmony_ column is vowel harmony; back, front, both or N/A
 |  [NOUN_HAPPO](paradigms//NOUN/HAPPO.html) | NOUN | ppo stem, ppo : po variations | 1-B | back |
 |  [NOUN_HAPSI](paradigms//NOUN/HAPSI.html) | NOUN | psi stem, psi : pse variations back harm... | 29 | back |
 |  [NOUN_HARMAAT](paradigms//NOUN/HARMAAT.html) | NOUN | Plurale tantums, aat stem, aat : aa vari... | 17 | back |
+|  [NOUN_HAŠIŠ](paradigms//NOUN/HAŠIŠ.html) | NOUN | š stem, š : ks variations back harmony | 39 | back |
 |  [NOUN_HEITIN](paradigms//NOUN/HEITIN.html) | NOUN | tin stem, tin : ttime variation, front h... | 33-C | front |
 |  [NOUN_HENKI](paradigms//NOUN/HENKI.html) | NOUN | nki stem, nki : nge variations | 7-G | front |
 |  [NOUN_HEPO](paradigms//NOUN/HEPO.html) | NOUN | po stem, po : vo variations | 1-E | back |
@@ -472,6 +476,7 @@ The _Harmony_ column is vowel harmony; back, front, both or N/A
 |  [NOUN_KIRVES](paradigms//NOUN/KIRVES.html) | NOUN | es stem, es : ee ( : ekse ) variations | 41 | front |
 |  [NOUN_KITARA](paradigms//NOUN/KITARA.html) | NOUN | a stem, a : o variations | 13 | back |
 |  [NOUN_KIVI](paradigms//NOUN/KIVI.html) | NOUN | i stem, i : e variations | 7 | front |
+|  [NOUN_KLUMPIT](paradigms//NOUN/KLUMPIT.html) | NOUN | Plural-only noun, pit stem, pit : ppi va... | 5-B | back |
 |  [NOUN_KOE](paradigms//NOUN/KOE.html) | NOUN | e stem, e : kee variations back harmony | 48-D | back |
 |  [NOUN_KOKO](paradigms//NOUN/KOKO.html) | NOUN | koko stem, k : ’ : 0 variations, N.B. sh... | 1-D | back |
 |  [NOUN_KOMPA](paradigms//NOUN/KOMPA.html) | NOUN | mpa stem, mpa : mm variations | 10-H | back |
@@ -1599,6 +1604,8 @@ The _Harmony_ column is vowel harmony; back, front, both or N/A
 |  [PROPN_51Mustameri](paradigms//PROPN/51Mustameri.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  [PROPN_51Punainenmeri](paradigms//PROPN/51Punainenmeri.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  [PROPN_51Tyynimeri](paradigms//PROPN/51Tyynimeri.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
+|  [PROPN_51Uusi-Englanti](paradigms//PROPN/51Uusi-Englanti.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
+|  [PROPN_51Uusi-Guinea](paradigms//PROPN/51Uusi-Guinea.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  [PROPN_51Uusikaupunki](paradigms//PROPN/51Uusikaupunki.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  [PROPN_51Uusimaa](paradigms//PROPN/51Uusimaa.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  [PROPN_51Uusi-Seelanti](paradigms//PROPN/51Uusi-Seelanti.html) | PROPN | Optimisation hack for exceptional compou... | 51 | back |
@@ -2012,7 +2019,7 @@ The _Harmony_ column is vowel harmony; back, front, both or N/A
 |  [PROPN_SOINTI](paradigms//PROPN/SOINTI.html) | PROPN | nti stem, nti : nne variations | 5-J | back |
 |  [PROPN_SOKEA](paradigms//PROPN/SOKEA.html) | PROPN | ea stem, ea: e variations | 15 | back |
 |  [PROPN_SOTA](paradigms//PROPN/SOTA.html) | PROPN | ta stem, ta : d variations | 10-F | back |
-|  [PROPN_SPOTIFY](paradigms//PROPN/SPOTIFY.html) | PROPN | New proper nouns, back, front harmonies,... | 21 | front |
+|  [PROPN_SPOTIFY](paradigms//PROPN/SPOTIFY.html) | PROPN | New proper nouns, back, front harmonies,... | 21 | both |
 |  [PROPN_STADION](paradigms//PROPN/STADION.html) | PROPN | Proper nound, consonant stem, and X : Xe... | 6 | back |
 |  [PROPN_SUHTEET](paradigms//PROPN/SUHTEET.html) | PROPN | teet stem, teet : de variations | 48-F | back |
 |  [PROPN_SUKAT](paradigms//PROPN/SUKAT.html) | PROPN | kat stem, kat : kka variations | 10-A | back |
