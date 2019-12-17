@@ -47,15 +47,14 @@ echo "### Per sources of origin" >> $INDEX
 echo >> $INDEX
 echo "Sources of origin are:" >> $INDEX
 echo "* *enwikt*: harvested from [English wiktionary](//en.wiktionary.org)" >> $INDEX
-echo "* *finer*: collected in University of Helsinki outside abovementioned
-projects" >> $INDEX
-echo "* *finnwordnet*: collected in [FinnWordNet project]()" >> $INDEX
+echo "* *finer*: collected in University of Helsinki (undocumented)" >> $INDEX
+echo "* *finnwordnet*: collected in [FinnWordNet project](//www.kielipankki.fi/corpora/finnwordnet/)" >> $INDEX
 echo "* *fiwikt*: harvested from [Finnish wiktionary](//fi.wiktionary.org)" >> $INDEX
-echo "* *ftb3*: collected in [FinnTreeBank project]()" >> $INDEX
+echo "* *ftb3*: collected in [FinnTreeBank project](http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/index.shtml)" >> $INDEX
 echo "* *joukahainen*: [Joukahainen](//joukahainen.puimula.org)" >> $INDEX
 echo "* *kotus*: [Nykysuomen sanalista](//kaino.kotus.fi/sanat/nykysuomi)" >> $INDEX
-echo "* *omorfi++*: ...and documented in detail" >> $INDEX
-echo "* *omorfi*: curated by omorfi project itself" >> $INDEX
+echo "* *omorfi*: curated within omorfi project" >> $INDEX
+echo "  * *omorfi++*: and included in the smaller *gold* dictionary" >> $INDEX
 echo >> $INDEX
 echo "| Frequency | origin |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
