@@ -401,14 +401,14 @@ def print_infinites(omorfi, word, upos, outfile):
           file=outfile)
     print("| _infinitive E inessive_ | " +
           generate(omorfi, word, upos,
-                   "[VOICE=ACT][INF=E][CASE=INE]") + " | " +
+                   "[VOICE=ACT][INF=E][NUM=SG][CASE=INE]") + " | " +
           generate(omorfi, word, upos,
-                   "[VOICE=PSS][INF=E][CASE=INE]") + " | " +
+                   "[VOICE=PSS][INF=E][NUM=SG][CASE=INE]") + " | " +
           generate(omorfi, word, upos,
-                   "[VOICE=ACT][INF=E][CASE=INE][POSS=SG1]") +
+                   "[VOICE=ACT][INF=E][NUM=SG][CASE=INE][POSS=SG1]") +
           " | " +
           generate(omorfi, word, upos,
-                   "[VOICE=PSS][INF=E][CASE=INE][CLIT=KO]") + " |",
+                   "[VOICE=PSS][INF=E][NUM=SG][CASE=INE][CLIT=KO]") + " |",
           file=outfile)
     print("| _infinitive E instructive_ | " +
           generate(omorfi, word, upos,
@@ -509,6 +509,58 @@ def print_infinites(omorfi, word, upos, outfile):
           generate(omorfi, word, upos,
                    "[VOICE=PSS][DRV=MAISILLA][CLIT=KO]") + " |",
           file=outfile)
+    print("| _participle NUT_ | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=ACT][PCP=NUT][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=PSS][PCP=NUT][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=ACT][PCP=NUT][CMP=POS][NUM=SG][CASE=INE]" +
+                   "[POSS=SG1]") + " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=PSS][PCP=NUT][CMP=POS][NUM=SG][CASE=ADE][" +
+                   "CLIT=KO]") + " |", file=outfile)
+    print("| _participle VA_ | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=ACT][PCP=VA][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=PSS][PCP=VA][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=ACT][PCP=VA][CMP=POS][NUM=SG][CASE=ELA]" +
+                   "[POSS=SG1]") + " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=PSS][PCP=VA][CMP=POS][NUM=SG][CASE=ABL][" +
+                   "CLIT=KO]") + " |", file=outfile)
+    print("| _participle MA_ | " +
+          generate(omorfi, word, upos,
+                   "[PCP=AGENT][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=PSS][PCP=AGENT][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[PCP=AGENT][CMP=POS][NUM=SG][CASE=ELA]" +
+                   "[POSS=SG1]") + " | " +
+          generate(omorfi, word, upos,
+                   "[PCP=AGENT][CMP=POS][NUM=SG][CASE=ABL][" +
+                   "CLIT=KO]") + " |", file=outfile)
+    print("| _participle MATON_ | " +
+          generate(omorfi, word, upos,
+                   "[PCP=NEG][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[VOICE=PSS][PCP=NEG][CMP=POS][NUM=SG][CASE=NOM]") +
+          " | " +
+          generate(omorfi, word, upos,
+                   "[PCP=NEG][CMP=POS][NUM=SG][CASE=ELA]" +
+                   "[POSS=SG1]") + " | " +
+          generate(omorfi, word, upos,
+                   "[PCP=NEG][CMP=POS][NUM=SG][CASE=ABL][" +
+                   "CLIT=KO]") + " |", file=outfile)
 
 
 def main():
@@ -569,6 +621,12 @@ def main():
         print_finites(omorfi, options.word, options.upos, options.outfile)
         print(file=options.outfile)
         print_infinites(omorfi, options.word, options.upos, options.outfile)
+    print(file=options.outfile)
+    print("_Note:_ the inflection tables cover small percentage of the " +
+          "whole inflectional paradigm, for full list, see [" +
+          options.word + " full form list](" + options.word + ".html)",
+          file=options.outfile)
+    print(file=options.outfile)
     realend = perf_counter()
     cpuend = process_time()
     print("CPU time:", cpuend - cpustart, "real time:", realend - realstart)
