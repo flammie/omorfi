@@ -331,10 +331,12 @@ class Omorfi:
                 if len(token.surf) > (i + j):
                     if j == 0:
                         resurf = token.surf[i:]
+                        presurfs = token.surf[:i]
+                        postsurfs = ""
                     else:
                         resurf = token.surf[i:-j]
-                    presurfs = token.surf[:i]
-                    postsurfs = token.surf[-j:]
+                        presurfs = token.surf[:i]
+                        postsurfs = token.surf[-j:]
                     pretrailpuncts = True
                     for c in presurfs:
                         if c in fin_punct_leading:
@@ -860,7 +862,7 @@ class Omorfi:
         if self.can_generate:
             generated = self._generate(omorstring)
             if not generated:
-                return omorstring
+                return []
         return generated
 
     def _udpipe(self, udinput: str):
