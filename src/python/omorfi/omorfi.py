@@ -860,7 +860,7 @@ class Omorfi:
         if self.can_generate:
             generated = self._generate(omorstring)
             if not generated:
-                return omorstring
+                return []
         return generated
 
     def _udpipe(self, udinput: str):
