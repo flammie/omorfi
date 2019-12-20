@@ -23,6 +23,27 @@ lexemes.markdown: generate-lexemes.py
 statistics.markdown:
 	./generate-statistics.bash ..
 
+inflection-lists.markdown: generations.list
+	while read w ; do \
+		echo $w;\
+		echo $w > word;\
+		bash ../src/bash/generate-wordlist.sh word \
+			gen/`echo $w | sed -e 's/^\(.\).*$/\1/' |\
+					  tr '[:lower:]' '[:upper:]' |\
+					  sed -e 's/ä/Ä/' -e 's/ö/Ö/'`/$w.markdown;\
+	done < $<
+	touch $@
+
+noun-tables.markdown: generations.noun
+	while read w ; do \
+		$(PYTHON) ../src/omorfi-wikitable.py -u NOUN \
+			-g ../src/generated/omorfi.generate.hfst \
+			-i $w -o gen/`echo $w | sed -e 's/^\(.\).*$/\1/' |\
+					  tr '[:lower:]' '[:upper:]' |\
+					  sed -e 's/ä/Ä/' -e 's/ö/Ö/'`/$w_wikt.markdown; \
+	done < $<
+	touch $@
+
 NEWS.markdown: ../NEWS
 	cp -v $< $@
 
