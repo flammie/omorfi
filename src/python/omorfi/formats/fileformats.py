@@ -89,7 +89,9 @@ def next_conllu(f):
                 elif k in ['Alt', 'FTB-PronType', 'FTB-Rel',
                            'Missed-Rel', 'FTB-rel', 'Join',
                            'Missed-SUBCAT', 'FTB-Sub', 'Prefix',
-                           'FTB1-InfForm', 'Missed-POSITION']:
+                           'FTB1-InfForm', 'Missed-POSITION',
+                           'Was18', 'Was18punct', 'Was18punch',
+                           'Was18propnum', 'Was18mark']:
                     # FTB stuff
                     pass
                 else:

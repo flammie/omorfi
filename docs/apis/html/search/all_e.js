@@ -2,7 +2,7 @@ var searchData=
 [
   ['fileformats',['fileformats',['../namespaceomorfi_1_1formats_1_1fileformats.html',1,'omorfi::formats']]],
   ['old_5fposes',['old_poses',['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#aee6f4c3635b2015d029495ad88ff917b',1,'omorfi::formats::omor_formatter::OmorFormatter']]],
-  ['omorfi',['Omorfi',['../classomorfi_1_1omorfi_1_1Omorfi.html',1,'omorfi.omorfi.Omorfi'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html',1,'com.github.flammie.omorfi.Omorfi'],['../classomorfi_1_1Omorfi.html',1,'omorfi::Omorfi'],['../namespaceomorfi.html',1,'omorfi'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a04df9708e407fb9797291e7742a027f1',1,'com.github.flammie.omorfi.Omorfi.Omorfi()'],['../classomorfi_1_1Omorfi.html#af1b6dcd929133b8508152bae912ff4ae',1,'omorfi::Omorfi::Omorfi()']]],
+  ['omorfi',['Omorfi',['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html',1,'com.github.flammie.omorfi.Omorfi'],['../classomorfi_1_1Omorfi.html',1,'omorfi::Omorfi'],['../classomorfi_1_1omorfi_1_1Omorfi.html',1,'omorfi.omorfi.Omorfi'],['../namespaceomorfi.html',1,'omorfi'],['../classcom_1_1github_1_1flammie_1_1omorfi_1_1Omorfi.html#a04df9708e407fb9797291e7742a027f1',1,'com.github.flammie.omorfi.Omorfi.Omorfi()'],['../classomorfi_1_1Omorfi.html#af1b6dcd929133b8508152bae912ff4ae',1,'omorfi::Omorfi::Omorfi()']]],
   ['omorfi_2dlookup_2ecc',['omorfi-lookup.cc',['../omorfi-lookup_8cc.html',1,'']]],
   ['omorfi_2ecc',['omorfi.cc',['../omorfi_8cc.html',1,'']]],
   ['omorfi_2ehh',['omorfi.hh',['../omorfi_8hh.html',1,'']]],

@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: ”
 ---
 
-###  ”
+###  ”₁
 
-left double quotation in 9-shape, common and recommended
+* _“opening” double quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 
 
-## ” (alternate reading 2 )
+###  ”₂
 
-right double quotation in 9-shape, common and recommended
+* _“closing” double quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 

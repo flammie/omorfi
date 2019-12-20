@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NUM_KAKSI
+---
+### ` NUM_KAKSI `
+
+* _ksi stem, ksi : ht variations back harmony_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 31
+* The lemmas must end in * ksi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kaksi `
+
+## See also
+
+* Inflection tables: [full](gen/K/kaksi.html), [short](gen/K/kaksi_wikt.html)
+

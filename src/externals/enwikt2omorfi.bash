@@ -325,11 +325,11 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Proper-noun_maa	/\1PROPN_OOKOO	/' \
         -e 's/\(ä	1	\)Proper-noun_maa	/\1PROPN_PÄÄ	/' \
         -e 's/\(ie	1	\)Noun_suo	/\1NOUN_TIE	/' \
-        -e 's/\(uo	1	\)Noun_suo	/\1NOUN_SUO	/' \
+        -e 's/\(uo	1	\)Noun_suo	/\1NOUN_VUO	/' \
         -e 's/\(yö	1	\)Noun_suo	/\1NOUN_TYÖ	/' \
         -e 's/\(yöt	1	\)Noun_suo	/\1NOUN_TYÖT	/' \
         -e 's/\(ie	1	\)Proper-noun_suo	/\1PROPN_TIE	/' \
-        -e 's/\(uo	1	\)Proper-noun_suo	/\1PROPN_SUO	/' \
+        -e 's/\(uo	1	\)Proper-noun_suo	/\1PROPN_VUO	/' \
         -e 's/\(uu	1	\)Noun_vapaa	/\1NOUN_LEIKKUU	/' \
         -e 's/\(oo	1	\)Noun_vapaa	/\1NOUN_TIENOO	/' \
         -e 's/\(oot	1	\)Noun_vapaa	/\1NOUN_TALKOOT	/' \
@@ -356,7 +356,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ie	1	\)Pronomini_21	/\1PRON_MIE	/' \
         -e 's/\(	1	\)Proper-noun_rosé	/\1PROPN_ROSÉ	/' \
         -e 's/\(w	1	\)Proper-noun_show	/\1PROPN_SHOW	/' \
-        -e 's/\(i	1	\)Adjective_ovi	/\1ADJ_LÄHEMPI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Adjective_ovi	/\1ADJ_LÄHEMPI	/' \
+        -e 's/\(i	1	\)Adjective_ovi	/\1ADJ_AIEMPI	/' \
         -e 's/\(i	1	\)Noun_ovi	/\1NOUN_RUUHI	/' \
         -e 's/\(et	1	\)Noun_ovi	/\1NOUN_RIPSET	/' \
         -e 's/\(i	1	\)Noun_pieni	/\1NOUN_RUUHI	/' \
@@ -414,8 +415,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(nen	1	\)Pronomini_38	/\1PRON_JOKAINEN	/' \
         -e 's/\(set	1	\)Proper-noun_nainen	/\1PROPN_RAPPUSET	/' \
         -e 's/\(nen	1	\)Proper-noun_nainen	/\1PROPN_AAKKOSTAMINEN	/' \
+        -e 's/\([äöyÄÖY].*nen	1	\)Adjective_nainen	/\1ADJ_KYLMÄJÄRKINEN	/' \
         -e 's/\(nen	1	\)Adjective_nainen	/\1ADJ_AAKKOSELLINEN	/' \
-        -e 's/\(nen	1	\)Adjective_nainen	/\1ADJ_KYLMÄJÄRKINEN	/' \
         -e 's/\(nen	1	\)Pronoun_nainen	/\1ADJ_KYLMÄJÄRKINEN	/' \
         -e 's/\(äs	1	\)Adjective_kahdeksas	/\1NUM_NELJÄS	/' \
         -e 's/\(as	1	\)Numeral_kahdeksas	/\1NUM_KOLMAS	/' \
@@ -424,6 +425,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(as	1	\)Adjective_kahdeksas	/\1NUM_KOLMAS	/' \
         -e 's/\(s	1	\)Adjective_kahdeksas	/\1NUM_KOLMAS	/' \
         -e 's/\(s	1	\)Proper-noun_vastaus	/\1PROPN_VAKUUTUS	/' \
+        -e 's/\(ys	1	\)Noun_vastaus	/\1NOUN_RÄJÄYTYS	/' \
         -e 's/\(s	1	\)Noun_vastaus	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(s	1	\)Verb_vastaus	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(kset	1	\)Noun_vastaus	/\1NOUN_SERKUKSET	/' \

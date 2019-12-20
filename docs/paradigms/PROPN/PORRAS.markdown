@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: PROPN_PORRAS
+---
+### ` PROPN_PORRAS `
+
+* _ras stem, rras : rtaa variaitno_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 41-K
+* The lemmas must end in * ras * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rras `
+
+## See also
+
+* Inflection tables: [full](gen/P/Porras.html), [short](gen/P/Porras_wikt.html)
+

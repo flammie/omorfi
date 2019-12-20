@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NUM_51kaksinoniljoonaa
+---
+### ` NUM_51kaksinoniljoonaa `
+
+* _Optimisation hack for exceptional compound ’kaksinoniljoonaa’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * ksinoniljoonaa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kaksinoniljoonaa `
+
+## See also
+
+* Inflection tables: [full](gen/5/kaksinoniljoonaa.html), [short](gen/5/kaksinoniljoonaa_wikt.html)
+

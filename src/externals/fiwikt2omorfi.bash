@@ -106,6 +106,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Erisnimi_1C	/\1PROPN_HIRTTO	/' \
         -e 's/\(u	1	\)Adjektiivi_1C	/\1ADJ_TORTTU	/' \
         -e 's/\(y	1	\)Adjektiivi_1C	/\1ADJ_YLENNETTY	/' \
+        -e 's/\(u	1	\)Substantiivi_1C	/\1NOUN_TORTTU	/' \
         -e 's/\(u	1	\)Erisnimi_1C	/\1PROPN_TORTTU	/' \
         -e 's/\(y	1	\)Erisnimi_1C	/\1PROPN_PYTTY	/' \
         -e 's/\(ö	1	\)Erisnimi_1C	/\1PROPN_PÖNTTÖ	/' \
@@ -131,6 +132,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Substantiivi_3	/\1NOUN_TUOMIO	/' \
         -e 's/\(o	1	\)Erisnimi_3	/\1PROPN_TUOMIO	/' \
         -e 's/\(e	1	\)Erisnimi_3	/\1PROPN_ZOMBIE	/' \
+        -e 's/\(ö	1	\)Erisnimi_3	/\1PROPN_HÄIRIÖ	/' \
         -e 's/\(o	1	\)Erisnimi_4A	/\1PROPN_LEPAKKO	/' \
         -e 's/\(ö	1	\)Erisnimi_4A	/\1PROPN_YKSIKKÖ	/' \
         -e 's/\(o	1	\)Substantiivi_4C	/\1NOUN_HIRTTO	/' \
@@ -172,6 +174,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(e	1	\)Substantiivi_8	/\1NOUN_NALLE	/' \
         -e 's/\(e	1	\)Erisnimi_8A	/\1PROPN_EKKE	/' \
         -e 's/\(a	1	\)Substantiivi_9	/\1NOUN_KIRJA	/' \
+        -e 's/\(a	1	\)Substantiivi_9A	/\1NOUN_POLITIIKKA	/' \
         -e 's/\(a	1	\)Pronomini_9	/\1PRON_SAMA	/' \
         -e 's/\(a	1	\)Erisnimi_9	/\1PROPN_KIRJA	/' \
         -e 's/\(a	1	\)Erisnimi_9A	/\1PROPN_POLITIIKKA	/' \
@@ -181,6 +184,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Substantiivi_9F	/\1NOUN_PATA	/' \
         -e 's/\(a	1	\)Erisnimi_9F	/\1PROPN_PATA	/' \
         -e 's/\(a	1	\)Erisnimi_9I	/\1PROPN_VALTA	/' \
+        -e 's/\(a	1	\)Substantiivi_9J	/\1NOUN_KUTSUNTA	/' \
         -e 's/\(a	1	\)Erisnimi_9J	/\1PROPN_KUTSUNTA	/' \
         -e 's/\(a	1	\)Erisnimi_9K	/\1PROPN_KERTA	/' \
         -e 's/\(a	1	\)Adjektiivi_9L	/\1ADJ_ARKA	/' \
@@ -193,6 +197,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Numeraali_10	/\1NUM_MILJOONA	/' \
         -e 's/\(än	1	\)Numeraali_10	/\1NUM_YHDEKSÄN	/' \
         -e 's/\(ä	1	\)Erisnimi_10	/\1PROPN_HÖPÖTTÄJÄ	/' \
+        -e 's/\(a	1	\)Substantiivi_10A	/\1NOUN_KUKKA	/' \
+        -e 's/\(ä	1	\)Substantiivi_10A	/\1NOUN_HÖLKKÄ	/' \
         -e 's/\(a	1	\)Erisnimi_10A	/\1PROPN_KUKKA	/' \
         -e 's/\(ä	1	\)Erisnimi_10A	/\1PROPN_HÖLKKÄ	/' \
         -e 's/\(ä	1	\)Erisnimi_10B	/\1PROPN_SEPPÄ	/' \
@@ -206,6 +212,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Erisnimi_10E	/\1PROPN_LUPA	/' \
         -e 's/\(a	1	\)Substantiivi_10F	/\1NOUN_SOTA	/' \
         -e 's/\(ä	1	\)Substantiivi_10F	/\1NOUN_PÖYTÄ	/' \
+        -e 's/\(ä	1	\)Substantiivi_10G	/\1NOUN_KENKÄ	/' \
         -e 's/\(a	1	\)Erisnimi_10F	/\1PROPN_SOTA	/' \
         -e 's/\(a	1	\)Erisnimi_10G	/\1PROPN_HONKA	/' \
         -e 's/\(ä	1	\)Erisnimi_10G	/\1PROPN_KENKÄ	/' \
@@ -235,7 +242,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Erisnimi_18	/\1PROPN_OOKOO	/' \
         -e 's/\(ä	1	\)Erisnimi_18	/\1PROPN_PÄÄ	/' \
         -e 's/\(ie	1	\)Erisnimi_19	/\1PROPN_TIE	/' \
-        -e 's/\(uo	1	\)Erisnimi_19	/\1PROPN_SUO	/' \
+        -e 's/\(uo	1	\)Erisnimi_19	/\1PROPN_VUO	/' \
         -e 's/\(e	1	\)Substantiivi_20	/\1NOUN_PATEE	/' \
         -e 's/\(ä	1	\)Erisnimi_20	/\1PROPN_HYVINKÄÄ	/' \
         -e 's/\(	1	\)Substantiivi_21	/\1NOUN_ROSÉ	/' \
@@ -258,7 +265,10 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(tön	1	\)Verbi_34C	/\1ADJ_KYVYTÖN	/' \
         -e 's/\(n	1	\)Adjektiivi_33B	/\1ADJ_HAPAN	/' \
         -e 's/\([äöyÄÖY].*nen	1	\)Erisnimi_38	/\1PROPN_KYLKIÄINEN	/' \
+        -e 's/\([äöyÄÖY].*nen	1	\)Substantiivi_38	/\1NOUN_KYLKIÄINEN	/' \
+        -e 's/\([äöyÄÖY].*nen	1	\)Verbi_38	/\1NOUN_KYLKIÄINEN	/' \
         -e 's/\(nen	1	\)Substantiivi_38	/\1NOUN_AAKKOSTAMINEN	/' \
+        -e 's/\(set	1	\)Substantiivi_38	/\1NOUN_RAPPUSET	/' \
         -e 's/\(nen	1	\)Pronomini_38	/\1PRON_JOKAINEN	/' \
         -e 's/\(nen	1	\)Erisnimi_38	/\1PROPN_AAKKOSTAMINEN	/' \
         -e 's/\(nen	1	\)Adjektiivi_38	/\1ADJ_AAKKOSELLINEN	/' \
@@ -275,6 +285,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(as	1	\)Erisnimi_41C	/\1PROPN_RATAS	/' \
         -e 's/\(is	1	\)Erisnimi_41C	/\1PROPN_ALTIS	/' \
         -e 's/\(as	1	\)Substantiivi_41D	/\1NOUN_VARAS	/' \
+        -e 's/\(as	1	\)Substantiivi_41G	/\1NOUN_KANGAS	/' \
         -e 's/\(äs	1	\)Erisnimi_41G	/\1PROPN_KÖNGÄS	/' \
         -e 's/\(as	1	\)Erisnimi_41G	/\1PROPN_KANGAS	/' \
         -e 's/\(as	1	\)Substantiivi_41H	/\1NOUN_HAMMAS	/' \
@@ -296,6 +307,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(e	1	\)Substantiivi_48A	/\1NOUN_LÄÄKE	/' \
         -e 's/\(e	1	\)Erisnimi_48A	/\1PROPN_LÄÄKE	/' \
         -e 's/\(e	1	\)Substantiivi_48D	/\1NOUN_KOE	/' \
+        -e 's/\(e	1	\)Substantiivi_48F	/\1NOUN_LUODE	/' \
         -e 's/\(e	1	\)Erisnimi_48F	/\1PROPN_LUODE	/' \
         -e 's/\(e	1	\)Erisnimi_48J	/\1PROPN_RAKENNE	/' \
         -e 's/\(e	1	\)Erisnimi_48K	/\1PROPN_KIERRE	/' \
@@ -307,13 +319,16 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(.	1	\)Pronomini_51	/\1PRON_51XXX	/' \
         -e 's/\(.	1	\)Erisnimi_51	/\1PROPN_51XXX	/' |\
     sed -e 's/\(a	1	\)Verbi_53	/\1VERB_KASVAA	/' \
+        -e 's/\(ä	1	\)Verbi_52F	/\1VERB_SILIYTYÄ	/' \
         -e 's/\(a	1	\)Verbi_53C	/\1VERB_VIEROITTAA	/' \
+        -e 's/\(a	1	\)Verbi_53F	/\1VERB_MOJAHTAA	/' \
         -e 's/\(ä	1	\)Verbi_53F	/\1VERB_YSKÄHTÄÄ	/' \
         -e 's/\(ä	1	\)Verbi_54J	/\1VERB_HIVENTÄÄ	/' \
         -e 's/\(a	1	\)Verbi_55F	/\1VERB_KAATAA	/' \
         -e 's/\(ä	1	\)Verbi_55	/\1VERB_PYYTÄÄ	/' \
         -e 's/\(a	1	\)Verbi_56C	/\1VERB_AUTTAA	/' \
         -e 's/\(a	1	\)Verbi_56F	/\1VERB_SATAA	/' \
+        -e 's/\(ä	1	\)Verbi_67C	/\1VERB_HERÄTELLÄ	/' \
         -e 's/\(a	1	\)Verbi_72D	/\1VERB_POIKETA	/' \
         -e 's/\(a	1	\)Verbi_73	/\1VERB_ARVATA	/' \
         -e 's/\(a	1	\)Verbi_74D	/\1VERB_POIKETA	/'

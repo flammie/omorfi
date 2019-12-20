@@ -9,4 +9,4 @@ Second person plural possessive, inflectional feature, refer to http://universal
 ## Default formats
 | Omorfi | Apertium | FTB 3.1 | Giella |
 |:------:|:--------:|:-------:|:------:|
-|  [POSS=PL2] |  %<pxpl2%> |  % PxPl2 |  +PxPl2  |
+|  [POSS=PL2] |  %<px2pl%> |  % PxPl2 |  +PxPl2  |

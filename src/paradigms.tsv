@@ -12,8 +12,10 @@ ADJ_AUTIO	ADJ	ADJECTIVE	3	None	False	weaken	back	None	None	False	False	io
 ADJ_AUTUAS	ADJ	ADJECTIVE	41	None	False	strengthen	back	None	None	False	False	as	s
 ADJ_AVOIN	ADJ	ADJECTIVE	33	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*n	n
 ADJ_BEIGE	ADJ	ADJECTIVE	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
+ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]	
 ADJ_EHTA	ADJ	ADJECTIVE	9	F	False	weaken	back	a	None	False	False	ta	ta
 ADJ_EHYT	ADJ	ADJECTIVE	43	None	False	strengthen	front	None	None	False	False	yt	t
+ADJ_ENSIMMÄINEN	ADJ	NUMERAL	38	None	False	strengthen	front	None	None	False	False	inen	nen
 ADJ_GAY	ADJ	ADJECTIVE	21	None	False	weaken	front	None	None	False	False	ay
 ADJ_HAILAKKA	ADJ	ADJECTIVE	14	A	False	weaken	back	a	None	False	False	kka	ka
 ADJ_HALPA	ADJ	ADJECTIVE	9	E	False	weaken	back	a	None	False	False	pa	pa
@@ -41,6 +43,7 @@ ADJ_KORKEA	ADJ	ADJECTIVE	15	None	False	weaken	back	a	None	False	False	ea	a
 ADJ_KULTA	ADJ	ADJECTIVE	10	I	False	weaken	back	a	None	False	False	lta	ta
 ADJ_KULUNUT	ADJ	ADJECTIVE	47	None	False	strengthen	back	u	None	False	False	ut	ut
 ADJ_KYLMÄJÄRKINEN	ADJ	ADJECTIVE	38	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen	nen
+ADJ_KYMMENTÄ	ADJ	NUMERAL	99	None	False	False	front	None	None	False	False	.
 ADJ_KYVYTÖN	ADJ	ADJECTIVE	34	C	False	strengthen	front	None	None	False	False	tön	ön
 ADJ_KYYTTÖ	ADJ	ADJECTIVE	1	C	False	weaken	front	None	None	False	False	ttö	tö
 ADJ_KÄYPÄ	ADJ	ADJECTIVE	10	E	False	weaken	front	ä	None	False	False	pä	pä
@@ -103,8 +106,8 @@ ADJ_TARKKA	ADJ	ADJECTIVE	9	A|D	False	weaken	back	a	None	False	False	ka	ka
 ADJ_TERVE	ADJ	ADJECTIVE	48	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e
 ADJ_TERÄVÄ	ADJ	ADJECTIVE	10	None	False	weaken	front	ä	None	False	False	ä	ä
 ADJ_TIIVIS	ADJ	ADJECTIVE	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*is	is
+ADJ_TOINEN	ADJ	NUMERAL	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*inen	nen
 ADJ_TOOPE	ADJ	ADJECTIVE	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
-ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]	
 ADJ_TUHTI	ADJ	ADJECTIVE	5	F	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti	ti
 ADJ_TUMMAHKO	ADJ	ADJECTIVE	1	None	False	weaken	back	None	None	False	False	o
 ADJ_TURTA	ADJ	ADJECTIVE	10	K	False	weaken	back	a	None	False	False	rta	ta
@@ -169,7 +172,7 @@ AUX_OLLA	AUX	VERB	1067	None	False	weaken	back	None	None	False	False	olla	olla
 AUX_PITÄÄ	AUX	VERB	53	F	False	weaken	front	None	None	False	False	pitää	tää
 AUX_SAATTAA	AUX	VERB	56	C	False	weaken	back	None	None	False	False	saattaa	taa
 AUX_TAITAA	AUX	VERB	76	F	False	weaken	back	None	None	False	False	taitaa	taa
-AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False	tarvita	ta
+AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False	tarvita	vita
 AUX_TÄYTYÄ	AUX	VERB	52	F	False	weaken	front	None	None	False	False	täytyä	tyä
 AUX_VOIDA	AUX	VERB	62	None	False	strengthen	back	None	None	False	False	voida	ida
 CCONJ_JA	CCONJ	PARTICLE	99	None	False	False	front	None	None	False	False	.
@@ -177,6 +180,8 @@ DET_SE	DET	PRONOUN	101	None	False	False	front	None	None	False	False	.	e
 DET_YKSI	DET	PRONOUN	31	None	False	weaken	front	None	None	False	False	.	ksi
 INTJ_HAH	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False	.
 INTJ_OO	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False	.
+NOUN_51aamukaksitoista	NOUN	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksitoista	ksitoista
+NOUN_51aamuyksitoista	NOUN	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksitoista	ksitoista
 NOUN_51aavameri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	aavameri	ameri
 NOUN_51hienosokeri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	hienosokeri	sokeri
 NOUN_51isojako	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isojako	jako
@@ -274,6 +279,7 @@ NOUN_AAKKOSELLISUUS	NOUN	NOUN	40	None	False	strengthen	back	None	None	False	Fals
 NOUN_AAKKOSTAMINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False	nen	nen
 NOUN_AALLOT	NOUN	NOUN	1	I	obligatory	weaken	back	None	None	False	False	lot	lot
 NOUN_AAMUKAHDEKSAN	NOUN	NOUN	10	None	False	weaken	back	None	None	False	False	kahdeksan	an
+NOUN_AAMUKAKSI	NOUN	NOUN	31	None	False	weaken	back	None	None	False	False	kaksi	ksi
 NOUN_AAMUKOLME	NOUN	NOUN	3	None	False	weaken	back	None	None	False	False	kolme	e
 NOUN_AAMUKYMMENEN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	kymmenen	en
 NOUN_AAMUYHDEKSÄN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	än	än
@@ -373,6 +379,7 @@ NOUN_HAPPI	NOUN	NOUN	7	B	False	weaken	back	None	None	False	False	[AOUŌÓÅaouå
 NOUN_HAPPO	NOUN	NOUN	1	B	False	weaken	back	None	None	False	False	ppo	po
 NOUN_HAPSI	NOUN	NOUN	29	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*psi	psi
 NOUN_HARMAAT	NOUN	NOUN	17	None	obligatory	weaken	back	None	None	False	False	aat	at
+NOUN_HAŠIŠ	NOUN	NOUN	39	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*š	š
 NOUN_HEITIN	NOUN	NOUN	33	C	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tin	in
 NOUN_HENKI	NOUN	NOUN	7	G	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki	ki
 NOUN_HEPO	NOUN	NOUN	1	E	False	weaken	back	None	None	False	False	po	po
@@ -451,6 +458,7 @@ NOUN_KIRJA	NOUN	NOUN	9	None	False	weaken	back	a	None	False	False	a	a
 NOUN_KIRVES	NOUN	NOUN	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*es	s
 NOUN_KITARA	NOUN	NOUN	13	None	False	weaken	back	a	None	False	False	a	a
 NOUN_KIVI	NOUN	NOUN	7	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
+NOUN_KLUMPIT	NOUN	NOUN	5	B	obligatory	weaken	back	None	None	False	False	pit	it
 NOUN_KOE	NOUN	NOUN	48	D	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 NOUN_KOKO	NOUN	NOUN	1	D	False	weaken	back	None	None	False	False	ko	ko
 NOUN_KOMPA	NOUN	NOUN	10	H	False	weaken	back	a	None	False	False	mpa	pa
@@ -1580,6 +1588,8 @@ PROPN_51Punainenmeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	
 PROPN_51Tyynimeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Tyynimeri	imeri
 PROPN_51Uusikaupunki	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusikaupunki	sikaupunki
 PROPN_51Uusimaa	PROPN	PROPN	51	None	False	weaken	back	None	None	False	False	Uusimaa	simaa
+PROPN_51Uusi-Guinea	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Guinea	si-Guinea
+PROPN_51Uusi-Englanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Englanti	si-Englanti
 PROPN_51Uusi-Seelanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Seelanti	si-Seelanti
 PROPN_A.	PROPN	NOUN	99	None	False	False	back	None	None	False	False	\.
 PROPN_AAKKOSELLISUUS	PROPN	NOUN	40	None	False	strengthen	back	None	None	False	False	us	s
@@ -1991,7 +2001,7 @@ PROPN_SKEITTI	PROPN	NOUN	5	C	False	weaken	front	None	None	False	False	[ÄÖYIEĒ
 PROPN_SOINTI	PROPN	NOUN	5	J	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nti	ti
 PROPN_SOKEA	PROPN	NOUN	15	None	False	weaken	back	a	None	False	False	ea	a
 PROPN_SOTA	PROPN	NOUN	10	F	False	weaken	back	a	None	False	False	ta	ta
-PROPN_SPOTIFY	PROPN	NOUN	21	None	False	weaken	front	i	None	False	False	.
+PROPN_SPOTIFY	PROPN	NOUN	21	None	False	weaken	both	i	None	False	False	.
 PROPN_STADION	PROPN	NOUN	6	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*
 PROPN_SUHTEET	PROPN	NOUN	48	F	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*teet	teet
 PROPN_SUKAT	PROPN	NOUN	10	A	obligatory	weaken	back	None	None	False	False	kat	at
@@ -2297,7 +2307,7 @@ VERB_TAPELLA	VERB	VERB	67	B	False	strengthen	back	None	None	False	False	pella	el
 VERB_TAPPAA	VERB	VERB	56	B	False	weaken	back	None	None	False	False	ppaa	paa
 VERB_TEMMATA	VERB	VERB	73	H	False	strengthen	back	None	None	False	False	mmata	mata
 VERB_TEMPOA	VERB	VERB	52	H	False	weaken	back	None	None	False	False	mpoa	poa
-VERB_TIETÄÄ	VERB	VERB	76	F	False	weaken	front	None	None	False	False	tää	tää
+VERB_TIETÄÄ	VERB	VERB	76	F	False	weaken	front	None	None	False	False	etää	etää
 VERB_TIPAHDELLA	VERB	VERB	67	F	False	strengthen	back	None	None	False	False	della	della
 VERB_TODETA	VERB	VERB	74	F	False	strengthen	back	None	None	False	False	deta	deta
 VERB_TUIKKAA	VERB	VERB	78	A	False	weaken	back	None	None	False	False	kkaa	kaa

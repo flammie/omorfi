@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: ADJ_LÖRPPÖ
+---
+### ` ADJ_LÖRPPÖ `
+
+* _ppö stem, ppö : pö variations_
+* Universal POS is ADJ and legacy POS is ADJECTIVE
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-B
+* The lemmas must end in * pö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppö `
+
+## See also
+
+* Inflection tables: [full](gen/L/lörppö.html), [short](gen/L/lörppö_wikt.html)
+

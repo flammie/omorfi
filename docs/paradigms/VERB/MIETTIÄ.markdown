@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: VERB_MIETTIÄ
+---
+### ` VERB_MIETTIÄ `
+
+* _ttiä stem, ttiä : ti variations_
+* Universal POS is VERB and legacy POS is VERB
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 61-C
+* The lemmas must end in * tiä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttiä `
+
+## See also
+
+* Inflection tables: [full](gen/M/miettiä.html), [short](gen/M/miettiä_wikt.html)
+

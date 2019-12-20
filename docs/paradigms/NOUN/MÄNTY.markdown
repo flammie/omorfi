@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NOUN_MÄNTY
+---
+### ` NOUN_MÄNTY `
+
+* _nty stems, nty : nny variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-J
+* The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nty `
+
+## See also
+
+* Inflection tables: [full](gen/M/mänty.html), [short](gen/M/mänty_wikt.html)
+

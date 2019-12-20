@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NOUN_KANGAS
+---
+### ` NOUN_KANGAS `
+
+* _gas stem, gas : kaa variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 41-G
+* The lemmas must end in * gas * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngas `
+
+## See also
+
+* Inflection tables: [full](gen/K/kangas.html), [short](gen/K/kangas_wikt.html)
+

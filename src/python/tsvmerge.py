@@ -101,6 +101,8 @@ def main():
                     # add origin
                     if lexdata[lexkey]['origin'] == 'unk':
                         lexdata[lexkey]['origin'] = tsv_parts['origin']
+                    elif tsv_parts['origin'] in lexdata[lexkey]['origin']:
+                        pass
                     else:
                         lexdata[lexkey]['origin'] += '|' + tsv_parts['origin']
                     merged += 1
@@ -113,6 +115,8 @@ def main():
                                   refparas)
                         if lexdata[lexkey]['origin'] == 'unk':
                             lexdata[lexkey]['origin'] = tsv_parts['origin']
+                        elif tsv_parts['origin'] in lexdata[lexkey]['origin']:
+                            pass
                         else:
                             lexdata[lexkey]['origin'] += '|' +\
                                                          tsv_parts['origin']

@@ -1,0 +1,17 @@
+---
+layout: paradigm
+paradigm: PROPN_KARRAT
+---
+### ` PROPN_KARRAT `
+
+* _Plural-only proper nouns, at stems, a : o variatiosn_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 9-K
+* The lemmas must end in * rat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rrat `
+* This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
+
+## See also
+
+* Inflection tables: [full](gen/K/Karrat.html), [short](gen/K/Karrat_wikt.html)
+
