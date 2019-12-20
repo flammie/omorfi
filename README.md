@@ -288,6 +288,15 @@ overlong tokens out. Or processing texts in smaller pieces.
 
 Get more RAM or swap space.
 
+### This word is missing! I don't like this word!
+
+Omorfi includes two analysers: one based on KOTUS-approved Nykysuomen sanalista
+and one based on _a lot of lexical databases_, if you do not like some rarer
+words, use the smaller one, if some words seem to be missing, try the larger one
+first, if it's really missing, you can file a bug report, or add it to
+e.g. Wiktionary. See [notes on lexicon
+sizes](//flammie.github.io/omorfi/pages/Smaller_lexicons.html).
+
 ## Contributing
 
 Omorfi code and data are free and libre open source, modifiable and
