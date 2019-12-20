@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: …
 ---
 
-###  …
+###  …₁
 
-single symbol for ellipsis, rare but seen in some official corpora
+* _single symbol for ellipsis, rare but seen in some official corpora_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 

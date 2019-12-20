@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: PROPN_LAHTI
+---
+### ` PROPN_LAHTI `
+
+* _ti stem, ti : de variations_
+* Universal POS is PROPN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 7-F
+* The lemmas must end in * ti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ti `
+
+## See also
+
+* Inflection tables: [full](gen/L/Lahti.html), [short](gen/L/Lahti_wikt.html)
+

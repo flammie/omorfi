@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: ―
 ---
 
-###  ―
+###  ―₁
 
-quotation dash, rare but seen in some official corpora
+* _quotation dash, rare but seen in some official corpora_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 

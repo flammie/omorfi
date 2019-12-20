@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NOUN_HAPAN
+---
+### ` NOUN_HAPAN `
+
+* _n stem, n:ma variation, e.g. noun compounds, 'hapan'_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 34-B
+* The lemmas must end in * an * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pan `
+
+## See also
+
+* Inflection tables: [full](gen/H/hapan.html), [short](gen/H/hapan_wikt.html)
+

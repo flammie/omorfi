@@ -3,9 +3,9 @@ layout: lexeme
 lexeme: –
 ---
 
-###  –
+###  –₁
 
-en dash, relatively common, recommended for hyphens
+* _en dash, relatively common, recommended for hyphens_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 

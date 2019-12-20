@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NUM_51neljäneljättä
+---
+### ` NUM_51neljäneljättä `
+
+* _Optimisation hack for exceptional compound ’neljäneljättä’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * äneljättä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` neljäneljättä `
+
+## See also
+
+* Inflection tables: [full](gen/5/neljäneljättä.html), [short](gen/5/neljäneljättä_wikt.html)
+

@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NOUN_HÄÄTÖ
+---
+### ` NOUN_HÄÄTÖ `
+
+* _tö stem, tö : dö variations_
+* Universal POS is NOUN and legacy POS is NOUN
+* suffixes use front vowel harmony
+* KOTUS paradigm used in their dictionary is 1-F
+* The lemmas must end in * tö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tö `
+
+## See also
+
+* Inflection tables: [full](gen/H/häätö.html), [short](gen/H/häätö_wikt.html)
+

@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: NUM_51seitsemässeitsemättä
+---
+### ` NUM_51seitsemässeitsemättä `
+
+* _Optimisation hack for exceptional compound ’seitsemässeitsemättä’_
+* Universal POS is NUM and legacy POS is NUMERAL
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 51
+* The lemmas must end in * sseitsemättä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` seitsemässeitsemättä `
+
+## See also
+
+* Inflection tables: [full](gen/5/seitsemässeitsemättä.html), [short](gen/5/seitsemässeitsemättä_wikt.html)
+

@@ -340,11 +340,11 @@ class Analysis:
                 elif value in ['S', 'MAISILLA', 'VA', 'MATON', 'UUS', 'ADE',
                                'INE', 'ELA', 'ILL', 'NEN', 'MPI', 'IN', 'IN²',
                                'HKO', 'ISA', 'MAINEN', 'NUT', 'TU', 'VA',
-                               'TAVA', 'MA', 'LOC', 'LA']:
+                               'TAVA', 'MA', 'LOC', 'LA', 'TUTTAA']:
                     # valuse not found in UD finnish Derivs
                     a.misc['Derivation'] = value[0] + value[1:].lower()
                 else:
-                    print(key, value, 'UD')
+                    print(key, value, 'DRV', 'UD')
                     exit(1)
             elif key == 'LEX':
                 a.misc['Lexicalised'] = value[0] + value[1:].lower()

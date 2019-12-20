@@ -3,16 +3,16 @@ layout: lexeme
 lexeme: ’
 ---
 
-###  ’
+###  ’₁
 
-left single quotation in 9-shape, common and recommended
+* _“opening” curly single quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 
 
-## ’ (alternate reading 2 )
+###  ’₂
 
-right single quotation in 9-shape, common and recommended
+* _“closing” curly single quotation in 9-shape, common and recommended_
 * UPOS:  PUNCT
-* Added from:  omorfi++
+* Origins: omorfi 
 

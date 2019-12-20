@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['segment',['segment',['../classomorfi_1_1formats_1_1no__tags__formatter_1_1NoTagsFormatter.html#aa9bcb94a101e02c25f81ccc9ce67abce',1,'omorfi::formats::no_tags_formatter::NoTagsFormatter']]],
+  ['segment',['segment',['../classomorfi_1_1formats_1_1no__tags__formatter_1_1NoTagsFormatter.html#aa9bcb94a101e02c25f81ccc9ce67abce',1,'omorfi.formats.no_tags_formatter.NoTagsFormatter.segment()'],['../classomorfi_1_1omorfi_1_1Omorfi.html#a932384803c94f427c2f9a248150c62cd',1,'omorfi.omorfi.Omorfi.segment()']]],
   ['segmentations',['segmentations',['../classomorfi_1_1token_1_1Token.html#acb3af902febd164abe085683c0086a0d',1,'omorfi::token::Token']]],
   ['segmenter',['segmenter',['../classomorfi_1_1omorfi_1_1Omorfi.html#a733071faa85b38863cb4da86deb07853',1,'omorfi::omorfi::Omorfi']]],
   ['semantics',['semantics',['../classomorfi_1_1formats_1_1omor__formatter_1_1OmorFormatter.html#a8d9ebd31d26c4905e8c6b9837e1770af',1,'omorfi::formats::omor_formatter::OmorFormatter']]],

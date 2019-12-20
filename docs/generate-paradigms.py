@@ -65,14 +65,10 @@ def main():
     args = ap.parse_args()
 
     # write preamble to wiki page
-    print('---', file=args.output)
-    print('layout: default', file=args.output)
-    print('title: Paradigms', file=args.output)
-    print('---', file=args.output)
     print('# Paradigms', file=args.output)
     print(file=args.output)
     print("_This is an automatically generated documentation based on omorfi" +
-          "lexical database._", file=args.output)
+          " lexical database._", file=args.output)
     print(file=args.output)
     print("Paradigms are sub-groups of lexemes that have unique " +
           "morpho-phonological features. " +
@@ -85,12 +81,27 @@ def main():
           " stem variations and allomorph selection", file=args.output)
     print("* Other morphotactic limitations, such as: only plurals allowed, " +
           " obligatory possessive suffixes, etc.", file=args.output)
+    print(file=args.output)
+    print("All other lexical information is coded on per lexeme basis",
+          file=args.output)
+    print("## Paradigms in alphabetical order", file=args.output)
+    print(file=args.output)
+    print("* The _Notes_ column is informal hints for lexicographers to " +
+          "discriminate the classes, for further details each paradigm has " +
+          "their own page with details and exampels linked ", file=args.output)
+    print("* The _KOTUS_ column is official dictionary class, if you are  " +
+          "familiar with Finnish dictionaries. ", file=args.output)
+    print("* The _Harmony_ column is vowel harmony; back, front, both or N/A",
+          file=args.output)
+    print("* The _Inflection tables_ column links to inflection tables of the" +
+          " example word, *full* for full-form list and *short* for " +
+          "wiktionary-style inflection tables.", file=args.output)
     # read from csv files
     print(file=args.output)
-    # stolen from turku:
-    # https://turkunlp.github.io/Finnish_PropBank/
-    print("| **UPOS** | **Paradigm** | _Notes_ |", file=args.output)
-    print("|---------:|:-------------|:--------|", file=args.output)
+    print("| **Paradigm** | **UPOS** | _Notes_ | KOTUS | Harmony | Infl. " +
+          "Tables |", file=args.output)
+    print("|:-------------|---------:|:--------|------:|:-------:|:------" +
+          "-------|", file=args.output)
 
     paradata = dict()
     with open(args.paradigms) as tsv_file:
@@ -117,8 +128,9 @@ def main():
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfilename = args.outdir + '/' + \
-                    tsv_parts['new_para'].replace('?', '_')
+                outfilename = args.outdir + \
+                    tsv_parts['new_para'].replace('?', '_').replace('_', '/',
+                                                                    1)
                 outfile = open(outfilename + '.markdown', 'w')
                 print('---', file=outfile)
                 print('layout: paradigm', file=outfile)
@@ -127,27 +139,94 @@ def main():
                 print("### `", tsv_parts['new_para'], "`",
                       file=outfile)
                 print(file=outfile)
-                print(tsv_parts['doc'], file=outfile)
+                print('* _' + tsv_parts['doc'] + '_', file=outfile)
                 if tsv_parts['new_para'] in paradata:
-                    for key in paradata[tsv_parts['new_para']].keys():
-                        print("* ", key, ": ",
-                              paradata[tsv_parts['new_para']][key],
-                              sep='', file=outfile)
+                    if not tsv_parts['doc']:
+                        print("missing DOC:", tsv_parts['new_para'])
+                        exit(1)
+                    if len(tsv_parts['doc']) > 40:
+                        docshort = tsv_parts['doc'][:40] + '...'
+                    else:
+                        docshort = tsv_parts['doc']
+                    if paradata[tsv_parts['new_para']]['kotus_tn'] == 99:
+                        kotus = '[N/A](#kotus_exceptions)'
+                    else:
+                        kotus = paradata[tsv_parts['new_para']]['kotus_tn']
+                        if paradata[tsv_parts['new_para']]['kotus_av'] !=\
+                                'None':
+                            kotus = kotus + "-" + \
+                                paradata[tsv_parts['new_para']]['kotus_av']
+                    if paradata[tsv_parts['new_para']]['harmony'] == 'None':
+                        harmony = 'N/A'
+                    else:
+                        harmony = paradata[tsv_parts['new_para']]['harmony']
+                    # organise non-doc values as doc:
+                    print("* Universal POS is",
+                          paradata[tsv_parts['new_para']]['upos'],
+                          "and legacy POS is",
+                          paradata[tsv_parts['new_para']]['pos'],
+                          file=outfile)
+                    if harmony == 'both':
+                        print("* suffixes can use " +
+                              "both vowel harmonies", file=outfile)
+                    elif harmony == 'N/A':
+                        print("* no vowel harmony applies to this paradigm",
+                              file=outfile)
+                    else:
+                        print("* suffixes use", harmony, "vowel harmony",
+                              file=outfile)
+                    if 'N/A' not in kotus:
+                        print("* KOTUS paradigm used in",
+                              "their dictionary is", kotus, file=outfile)
+                    else:
+                        print("* This paradigm could not be mapped to",
+                              "dictionary's classification scheme",
+                              file=outfile)
+                    if paradata[tsv_parts['new_para']]['deletion'] != 'None':
+                        print("* The lemmas must end in *",
+                              paradata[tsv_parts['new_para']]['deletion'],
+                              "* (which will be deleted to form an",
+                              "invariant stub) and the regex matching the",
+                              "lemma is `",
+                              paradata[tsv_parts['new_para']]['suffix_regex'],
+                              "`", file=outfile)
+                    else:
+                        print("* There is no lemma suffix pattern",
+                              "for this paradigm", file=outfile)
+                    if paradata[tsv_parts['new_para']]['plurale_tantum'] != \
+                            'False':
+                        print("* This is a [plurale tantum](" +
+                              "https://en.wikipedia.org/wiki/Plurale_tantum" +
+                              ") paradigm for plural only nominals.",
+                              file=outfile)
+                    # something XXX:
                     paradigms.remove(tsv_parts['new_para'])
                 else:
                     print("found in docs but not in data:",
                           tsv_parts['new_para'], file=stderr)
-                if not tsv_parts['doc']:
-                    print("missing DOC:", tsv_parts['new_para'])
                     exit(1)
-                if len(tsv_parts['doc']) > 40:
-                    docshort = tsv_parts['doc'][:40] + '...'
+                print(file=outfile)
+                print("## See also", file=outfile)
+                print(file=outfile)
+                genfilename = outfilename.split("/")[-1]
+                if 'PROPN' not in outfilename:
+                    genfilename = genfilename[0].upper() + '/' + \
+                        genfilename.lower()
                 else:
-                    docshort = tsv_parts['doc']
-                print("| " + paradata[tsv_parts['new_para']]['upos'] +
-                      " | [" + tsv_parts['new_para'] + "](" +
-                      outfilename + ".html) | " + docshort + " |",
-                      file=args.output)
+                    genfilename = genfilename[0].upper() + '/' + \
+                        genfilename[0] + genfilename[1:].lower()
+                genfilename = "gen/" + genfilename
+                genfilename = genfilename.replace("51", "")
+                print("* Inflection tables: " +
+                      "[full](" + genfilename + ".html), [short](" +
+                      genfilename + "_wikt.html)", file=outfile)
+                print(file=outfile)
+                print("| " + " [" + tsv_parts['new_para'] + "](" +
+                      outfilename + ".html) | " +
+                      paradata[tsv_parts['new_para']]['upos'] + " | " +
+                      docshort + " | " + kotus + " | " + harmony + " | " +
+                      "[full](" + genfilename + ".html) [short](" +
+                      genfilename + "_wikt.html) |", file=args.output)
     if paradigms:
         print("Undocumented paradigms left:", ", ".join(paradigms),
               file=stderr)

@@ -1,0 +1,16 @@
+---
+layout: paradigm
+paradigm: SYM_Ω
+---
+### ` SYM_Ω `
+
+* _symbols, inflection, :, compounding, -_
+* Universal POS is SYM and legacy POS is PUNCTUATION
+* suffixes use back vowel harmony
+* KOTUS paradigm used in their dictionary is 99
+* The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
+
+## See also
+
+* Inflection tables: [full](gen/Ω/ω.html), [short](gen/Ω/ω_wikt.html)
+

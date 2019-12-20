@@ -1,0 +1,18 @@
+---
+layout: lexeme
+lexeme: niin
+---
+
+###  niin₁
+
+* _so, such, adverb, “tehtiin niin”_
+* UPOS:  ADV
+* Origins: 
+
+
+###  niin₂
+
+* _as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin”_
+* UPOS:  CCONJ
+* Origins: omorfi 
+

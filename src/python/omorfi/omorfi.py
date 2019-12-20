@@ -331,10 +331,12 @@ class Omorfi:
                 if len(token.surf) > (i + j):
                     if j == 0:
                         resurf = token.surf[i:]
+                        presurfs = token.surf[:i]
+                        postsurfs = ""
                     else:
                         resurf = token.surf[i:-j]
-                    presurfs = token.surf[:i]
-                    postsurfs = token.surf[-j:]
+                        presurfs = token.surf[:i]
+                        postsurfs = token.surf[-j:]
                     pretrailpuncts = True
                     for c in presurfs:
                         if c in fin_punct_leading:
@@ -472,7 +474,7 @@ class Omorfi:
             token = Token(token)
         anals = self._analyse(token)
         if not anals:
-            omor = '[WORD_ID=' + token.surf + '][UPOS=X]' +\
+            omor = '[WORD_ID=' + token.surf.replace("=", ".EQ.") + '][UPOS=X]' +\
                    '[GUESS=UNKNOWN][WEIGHT=inf]'
             weight = float('inf')
             anal = Analysis.fromomor(omor, weight)
@@ -860,7 +862,7 @@ class Omorfi:
         if self.can_generate:
             generated = self._generate(omorstring)
             if not generated:
-                return omorstring
+                return []
         return generated
 
     def _udpipe(self, udinput: str):
@@ -991,11 +993,12 @@ class Omorfi:
                     elif k in ['Alt', 'FTB-PronType', 'FTB-Rel',
                                'Missed-Rel', 'FTB-rel', 'Join',
                                'Missed-SUBCAT', 'FTB-Sub', 'Prefix',
-                               'FTB1-InfForm', 'Missed-POSITION']:
+                               'FTB1-InfForm', 'Missed-POSITION',
+                               'Was18']:
                         # FTB stuff
                         pass
                     else:
-                        print("Unknown MISC", k, file=stderr)
+                        print("Unkonown MISC", k, file=stderr)
                         exit(1)
             tokens.append(token)
         eoft = Token()

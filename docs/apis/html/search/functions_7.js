@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['in_5fcontext',['in_context',['../classomorfi_1_1disamparsulate_1_1evidence_1_1Evidence.html#a3988bfa25dd7ccd7f2f334b364be1f9d',1,'omorfi::disamparsulate::evidence::Evidence']]],
   ['indexstring',['IndexString',['../classnet_1_1sf_1_1hfst_1_1IndexString.html#a6a2cf7808255c2fb61af194f0fbfc18c',1,'net::sf::hfst::IndexString']]],
   ['indextable',['IndexTable',['../classnet_1_1sf_1_1hfst_1_1UnweightedTransducer_1_1IndexTable.html#af7d6505261de122ff1b65be5850e1b78',1,'net.sf.hfst.UnweightedTransducer.IndexTable.IndexTable()'],['../classnet_1_1sf_1_1hfst_1_1WeightedTransducer_1_1IndexTable.html#a32ad74764a5c85528b48487d6fe71a9d',1,'net.sf.hfst.WeightedTransducer.IndexTable.IndexTable()']]],
   ['is_5foov',['is_oov',['../classomorfi_1_1analysis_1_1Analysis.html#a6b968bc63f2df55b9fb57a24633a6639',1,'omorfi.analysis.Analysis.is_oov()'],['../classomorfi_1_1token_1_1Token.html#a5d7818aba2676501ccad2621e1581b37',1,'omorfi.token.Token.is_oov()']]],

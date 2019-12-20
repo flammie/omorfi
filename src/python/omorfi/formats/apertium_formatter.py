@@ -107,7 +107,7 @@ class ApertiumFormatter(Formatter):
         "pers",
         "pl",
         "pneg",
-        "pos",
+        "pst",
         "post",
         "pot",
         "pp",
@@ -211,7 +211,7 @@ class ApertiumFormatter(Formatter):
         "CONJ": "cnjcoo",
         "CCONJ": "cnjcoo",
         "COORDINATING": "cnjcoo",
-        "Cpos": "pos",
+        "Cpos": "pst",
         "Csup": "sup",
         "CULTGRP": "al",
         "Cva": "pprs",
@@ -275,8 +275,8 @@ class ApertiumFormatter(Formatter):
         "LEMMA-END": "",
         "MALE": "m",
         "MAINF_arg": "vaux",
-        "MEDIA": "",
-        "MISC": "",
+        "MEDIA": "al",
+        "MISC": "al",
         "MULTIPLICATIVE": "",
         "Ncon": "conneg",
         "N??": "sp",
@@ -305,7 +305,7 @@ class ApertiumFormatter(Formatter):
         "Ppl2": "p2><pl",
         "Ppl3": "p3><pl",
         "PRON": "prn",
-        "PRODUCT": "",
+        "PRODUCT": "al",
         "PROPN": "np",
         "PROPER": "np",
         "Psg1": "p1><sg",
@@ -381,13 +381,13 @@ class ApertiumFormatter(Formatter):
         "": ""
     }
 
-
     def __init__(self, verbose=True):
         """Create an apertium formatter with given verbosity.
 
         @param verbose  set to false to disable stdout logging
         """
         ## verbosity, i.e. print while translating
+        super().__init__(verbose)
         self.verbose = verbose
         for _, ape in self.stuff2apertium.items():
             if len(ape) < 2:
@@ -545,6 +545,8 @@ class ApertiumFormatter(Formatter):
         @return str containing lexc Root lexicon for apertium"""
         root = Formatter.root_lexicon_lexc(self)
         root += '\t'.join(['0', 'SUFFIX', ';']) + '\n'
+        root += '\t'.join(['-', 'NOUN', ';']) + '\n'
+        root += '\t'.join(['-', 'ADJ', ';']) + '\n'
         return root
 
 
