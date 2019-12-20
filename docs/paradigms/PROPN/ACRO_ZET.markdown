@@ -10,6 +10,7 @@ paradigm: PROPN_ACRO_ZET
 * KOTUS paradigm used in their dictionary is 0
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ZŽzž] `
 
-### acro_zet wordforms
+## See also
 
+* Inflection tables: [full](gen/A/Acro_zet.html), [short](gen/A/Acro_zet_wikt.html)
 

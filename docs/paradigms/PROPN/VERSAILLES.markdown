@@ -10,6 +10,7 @@ paradigm: PROPN_VERSAILLES
 * KOTUS paradigm used in their dictionary is 22
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### versailles wordforms
+## See also
 
+* Inflection tables: [full](gen/V/Versailles.html), [short](gen/V/Versailles_wikt.html)
 

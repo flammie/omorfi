@@ -10,6 +10,7 @@ paradigm: PROPN_KORTET
 * KOTUS paradigm used in their dictionary is 44-C
 * The lemmas must end in * et * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tet `
 
-### kortet wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kortet.html), [short](gen/K/Kortet_wikt.html)
 

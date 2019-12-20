@@ -9,8 +9,3 @@ lexeme: saati
 * UPOS:  CCONJ
 * Origins: omorfi 
 
-
-### saati wordforms
-
-saati
-

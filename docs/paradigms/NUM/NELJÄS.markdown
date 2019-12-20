@@ -10,6 +10,7 @@ paradigm: NUM_NELJÄS
 * KOTUS paradigm used in their dictionary is 45
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` s `
 
-### neljÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/N/neljäs.html), [short](gen/N/neljäs_wikt.html)
 

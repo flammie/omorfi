@@ -10,6 +10,7 @@ paradigm: NUM_51puolitoista
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * itoista * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` puolitoista `
 
-### 51puolitoista wordforms
+## See also
 
+* Inflection tables: [full](gen/5/puolitoista.html), [short](gen/5/puolitoista_wikt.html)
 

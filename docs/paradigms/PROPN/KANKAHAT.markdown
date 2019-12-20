@@ -11,6 +11,7 @@ paradigm: PROPN_KANKAHAT
 * The lemmas must end in * hat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kankahat wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kankahat.html), [short](gen/K/Kankahat_wikt.html)
 

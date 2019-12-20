@@ -10,6 +10,7 @@ paradigm: VERB_MIELTYÄ
 * KOTUS paradigm used in their dictionary is 52-I
 * The lemmas must end in * tyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ltyä `
 
-### mieltyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mieltyä.html), [short](gen/M/mieltyä_wikt.html)
 

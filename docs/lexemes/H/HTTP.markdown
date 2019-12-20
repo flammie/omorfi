@@ -9,11 +9,3 @@ lexeme: HTTP
 * UPOS:  NOUN
 * Origins: omorfi joukahainen 
 
-
-### HTTP wordforms
-
-HTTP-
-HTTP‐
-HTTP‑
-HTTP
-

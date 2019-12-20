@@ -9,34 +9,3 @@ lexeme: suunnitteilla
 * UPOS:  ADV
 * Origins: 
 
-
-### suunnitteilla wordforms
-
-suunnitteilla
-suunnitteillahanko
-suunnitteillahankaan
-suunnitteillahanpa
-suunnitteillahan
-suunnitteillakohan
-suunnitteillakokin
-suunnitteillakokaan
-suunnitteillakos
-suunnitteillakopa
-suunnitteillako
-suunnitteillakinhan
-suunnitteillakinko
-suunnitteillakinkaan
-suunnitteillakinpa
-suunnitteillakin
-suunnitteillakaanhan
-suunnitteillakaanko
-suunnitteillakaankin
-suunnitteillakaanpa
-suunnitteillakaan
-suunnitteillapahan
-suunnitteillapako
-suunnitteillapakin
-suunnitteillapakaan
-suunnitteillapas
-suunnitteillapa
-

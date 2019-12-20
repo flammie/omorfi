@@ -12,7 +12,3 @@ lexeme: Murto-osa
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 
-
-### Murto-osa wordforms
-
-

@@ -7,13 +7,5 @@ lexeme: WC
 
 * _Water Closet_
 * UPOS:  NOUN
-* Origins: [fiwikt](https://fi.wiktionary.org/wiki/WC) [enwikt](https://fi.wiktionary.org/wiki/WC) joukahainen 
-
-
-### WC wordforms
-
-WC-
-WC‐
-WC‑
-WC
+* Origins: [enwikt](https://en.wiktionary.org/wiki/WC) joukahainen 
 

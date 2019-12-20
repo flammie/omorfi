@@ -10,6 +10,7 @@ paradigm: NOUN_SEPPÄ
 * KOTUS paradigm used in their dictionary is 10-B
 * The lemmas must end in * pä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppä `
 
-### seppÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/seppä.html), [short](gen/S/seppä_wikt.html)
 

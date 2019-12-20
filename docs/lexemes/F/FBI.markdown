@@ -10,11 +10,3 @@ lexeme: FBI
 * Origins: 
 * Possible NER class:  ORG
 
-
-### FBI wordforms
-
-FBI-
-FBI‐
-FBI‑
-FBI
-

@@ -11,11 +11,3 @@ lexeme: TM
 * Possible NER class:  MISC
 * Semantic tags:  ORG
 
-
-### TM wordforms
-
-TM-
-TM‐
-TM‑
-TM
-

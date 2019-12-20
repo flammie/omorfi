@@ -9,34 +9,3 @@ lexeme: suoraan
 * UPOS:  ADV
 * Origins: 
 
-
-### suoraan wordforms
-
-suoraan
-suoraanhanko
-suoraanhankaan
-suoraanhanpa
-suoraanhan
-suoraankohan
-suoraankokin
-suoraankokaan
-suoraankos
-suoraankopa
-suoraanko
-suoraankinhan
-suoraankinko
-suoraankinkaan
-suoraankinpa
-suoraankin
-suoraankaanhan
-suoraankaanko
-suoraankaankin
-suoraankaanpa
-suoraankaan
-suoraanpahan
-suoraanpako
-suoraanpakin
-suoraanpakaan
-suoraanpas
-suoraanpa
-

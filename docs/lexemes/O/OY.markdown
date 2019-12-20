@@ -9,11 +9,3 @@ lexeme: OY
 * UPOS:  NOUN
 * Origins: 
 
-
-### OY wordforms
-
-OY-
-OY‐
-OY‑
-OY
-

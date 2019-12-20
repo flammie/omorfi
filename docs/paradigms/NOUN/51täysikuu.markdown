@@ -10,6 +10,7 @@ paradigm: NOUN_51täysikuu
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * sikuu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` täysikuu `
 
-### 51täysikuu wordforms
+## See also
 
+* Inflection tables: [full](gen/5/täysikuu.html), [short](gen/5/täysikuu_wikt.html)
 

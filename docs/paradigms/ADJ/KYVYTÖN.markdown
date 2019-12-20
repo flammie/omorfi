@@ -10,6 +10,7 @@ paradigm: ADJ_KYVYTÖN
 * KOTUS paradigm used in their dictionary is 34-C
 * The lemmas must end in * ön * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tön `
 
-### kyvytÖn wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kyvytön.html), [short](gen/K/kyvytön_wikt.html)
 

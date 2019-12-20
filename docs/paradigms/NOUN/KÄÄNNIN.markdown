@@ -10,6 +10,7 @@ paradigm: NOUN_KÄÄNNIN
 * KOTUS paradigm used in their dictionary is 33-J
 * The lemmas must end in * nin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nnin `
 
-### kÄÄnnin wordforms
+## See also
 
+* Inflection tables: [full](gen/K/käännin.html), [short](gen/K/käännin_wikt.html)
 

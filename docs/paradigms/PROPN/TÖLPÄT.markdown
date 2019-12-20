@@ -11,6 +11,7 @@ paradigm: PROPN_TÖLPÄT
 * The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### tÖlpÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/T/Tölpät.html), [short](gen/T/Tölpät_wikt.html)
 

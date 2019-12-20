@@ -10,6 +10,7 @@ paradigm: NOUN_JÄRKI
 * KOTUS paradigm used in their dictionary is 7-L
 * The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki `
 
-### jÄrki wordforms
+## See also
 
+* Inflection tables: [full](gen/J/järki.html), [short](gen/J/järki_wikt.html)
 

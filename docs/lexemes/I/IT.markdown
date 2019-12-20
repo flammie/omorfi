@@ -9,11 +9,3 @@ lexeme: IT
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### IT wordforms
-
-IT-
-IT‐
-IT‑
-IT
-

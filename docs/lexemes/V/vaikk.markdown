@@ -16,8 +16,3 @@ lexeme: vaikk
 * UPOS:  SCONJ
 * Origins: omorfi 
 
-
-### vaikk wordforms
-
-vaikk
-

@@ -10,6 +10,7 @@ paradigm: NOUN_ÄYRÄS
 * KOTUS paradigm used in their dictionary is 41
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` äs `
 
-### ÄyrÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/Ä/äyräs.html), [short](gen/Ä/äyräs_wikt.html)
 

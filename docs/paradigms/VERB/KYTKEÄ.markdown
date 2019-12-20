@@ -10,6 +10,7 @@ paradigm: VERB_KYTKEÄ
 * KOTUS paradigm used in their dictionary is 58
 * The lemmas must end in * eä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` eä `
 
-### kytkeÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kytkeä.html), [short](gen/K/kytkeä_wikt.html)
 

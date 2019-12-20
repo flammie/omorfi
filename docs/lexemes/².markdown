@@ -9,12 +9,3 @@ lexeme: ²
 * UPOS:  SYM
 * Origins: omorfi 
 
-
-### ² wordforms
-
-²
-²-
-²‐
-²‑
-²
-

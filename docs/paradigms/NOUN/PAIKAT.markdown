@@ -11,6 +11,7 @@ paradigm: NOUN_PAIKAT
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` at `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### paikat wordforms
+## See also
 
+* Inflection tables: [full](gen/P/paikat.html), [short](gen/P/paikat_wikt.html)
 

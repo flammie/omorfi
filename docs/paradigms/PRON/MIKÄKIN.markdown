@@ -10,6 +10,7 @@ paradigm: PRON_MIKÄKIN
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * käkin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mikäkin `
 
-### mikÄkin wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mikäkin.html), [short](gen/M/mikäkin_wikt.html)
 

@@ -9,11 +9,3 @@ lexeme: ISBN
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### ISBN wordforms
-
-ISBN-
-ISBN‐
-ISBN‑
-ISBN
-

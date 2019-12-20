@@ -10,6 +10,7 @@ paradigm: PROPN_VÄRTÖ
 * KOTUS paradigm used in their dictionary is 1-K
 * The lemmas must end in * tö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rtö `
 
-### vÄrtÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/Värtö.html), [short](gen/V/Värtö_wikt.html)
 

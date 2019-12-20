@@ -10,6 +10,7 @@ paradigm: PROPN_SISÄLTÖ
 * KOTUS paradigm used in their dictionary is 1-I
 * The lemmas must end in * tö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ltö `
 
-### sisÄltÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Sisältö.html), [short](gen/S/Sisältö_wikt.html)
 

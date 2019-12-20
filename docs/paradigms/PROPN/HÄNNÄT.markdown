@@ -11,6 +11,7 @@ paradigm: PROPN_HÄNNÄT
 * The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### hÄnnÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/H/Hännät.html), [short](gen/H/Hännät_wikt.html)
 

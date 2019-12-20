@@ -10,6 +10,7 @@ paradigm: ADJ_HÖMPPÄ
 * KOTUS paradigm used in their dictionary is 10-B
 * The lemmas must end in * pä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppä `
 
-### hÖmppÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hömppä.html), [short](gen/H/hömppä_wikt.html)
 

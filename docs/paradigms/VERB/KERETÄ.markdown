@@ -10,6 +10,7 @@ paradigm: VERB_KERETÄ
 * KOTUS paradigm used in their dictionary is 74-D
 * The lemmas must end in * etä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` etä `
 
-### keretÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/keretä.html), [short](gen/K/keretä_wikt.html)
 

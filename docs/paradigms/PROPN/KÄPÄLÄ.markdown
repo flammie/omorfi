@@ -10,6 +10,7 @@ paradigm: PROPN_KÄPÄLÄ
 * KOTUS paradigm used in their dictionary is 11
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ä `
 
-### kÄpÄlÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Käpälä.html), [short](gen/K/Käpälä_wikt.html)
 

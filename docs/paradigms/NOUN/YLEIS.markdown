@@ -10,10 +10,7 @@ paradigm: NOUN_YLEIS
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### yleis wordforms
+## See also
 
-yleis-
-yleis‐
-yleis‑
-yleis
+* Inflection tables: [full](gen/Y/yleis.html), [short](gen/Y/yleis_wikt.html)
 

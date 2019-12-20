@@ -16,7 +16,3 @@ lexeme: silloin
 * UPOS:  ADV
 * Origins: omorfi 
 
-
-### silloin wordforms
-
-

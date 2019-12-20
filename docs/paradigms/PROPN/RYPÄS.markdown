@@ -10,6 +10,7 @@ paradigm: PROPN_RYPÄS
 * KOTUS paradigm used in their dictionary is 41-B
 * The lemmas must end in * äs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` päs `
 
-### rypÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rypäs.html), [short](gen/R/Rypäs_wikt.html)
 

@@ -10,11 +10,3 @@ lexeme: TI
 * Origins: 
 * Possible NER class:  MISC
 
-
-### TI wordforms
-
-TI-
-TI‐
-TI‑
-TI
-

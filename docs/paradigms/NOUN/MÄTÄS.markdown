@@ -10,6 +10,7 @@ paradigm: NOUN_MÄTÄS
 * KOTUS paradigm used in their dictionary is 41-C
 * The lemmas must end in * äs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` täs `
 
-### mÄtÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mätäs.html), [short](gen/M/mätäs_wikt.html)
 

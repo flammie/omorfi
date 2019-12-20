@@ -9,7 +9,3 @@ lexeme: CD-RW
 * UPOS:  NOUN
 * Origins: 
 
-
-### CD-RW wordforms
-
-

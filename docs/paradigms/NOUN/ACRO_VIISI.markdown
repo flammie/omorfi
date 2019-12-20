@@ -10,6 +10,7 @@ paradigm: NOUN_ACRO_VIISI
 * KOTUS paradigm used in their dictionary is 0
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` 5 `
 
-### acro_viisi wordforms
+## See also
 
+* Inflection tables: [full](gen/A/acro_viisi.html), [short](gen/A/acro_viisi_wikt.html)
 

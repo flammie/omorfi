@@ -10,36 +10,7 @@ paradigm: NUM_KYMMEN
 * KOTUS paradigm used in their dictionary is 32
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kymmen `
 
-### kymmen wordforms
+## See also
 
-kymmen
-kymmen-
-kymmen‐
-kymmen‑
-kymmenhänkään
-kymmenhänkö
-kymmenhänpä
-kymmenhän
-kymmenkinhän
-kymmenkinkään
-kymmenkinkö
-kymmenkinpä
-kymmenkin
-kymmenkäänhän
-kymmenkäänkin
-kymmenkäänkö
-kymmenkäänpä
-kymmenkään
-kymmenköhän
-kymmenkökin
-kymmenkökään
-kymmenkös
-kymmenköpä
-kymmenkö
-kymmenpähän
-kymmenpäkin
-kymmenpäkään
-kymmenpäkö
-kymmenpäs
-kymmenpä
+* Inflection tables: [full](gen/K/kymmen.html), [short](gen/K/kymmen_wikt.html)
 

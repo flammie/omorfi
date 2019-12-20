@@ -10,6 +10,7 @@ paradigm: NOUN_KYLKIÄINEN
 * KOTUS paradigm used in their dictionary is 38
 * The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen `
 
-### kylkiÄinen wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kylkiäinen.html), [short](gen/K/kylkiäinen_wikt.html)
 

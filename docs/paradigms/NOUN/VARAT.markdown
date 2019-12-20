@@ -11,6 +11,7 @@ paradigm: NOUN_VARAT
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` at `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### varat wordforms
+## See also
 
+* Inflection tables: [full](gen/V/varat.html), [short](gen/V/varat_wikt.html)
 

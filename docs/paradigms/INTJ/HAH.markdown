@@ -10,7 +10,7 @@ paradigm: INTJ_HAH
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### hah wordforms
+## See also
 
-hah
+* Inflection tables: [full](gen/H/hah.html), [short](gen/H/hah_wikt.html)
 

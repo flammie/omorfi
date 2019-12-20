@@ -9,34 +9,3 @@ lexeme: naimisiin
 * UPOS:  ADV
 * Origins: 
 
-
-### naimisiin wordforms
-
-naimisiin
-naimisiinhanko
-naimisiinhankaan
-naimisiinhanpa
-naimisiinhan
-naimisiinkohan
-naimisiinkokin
-naimisiinkokaan
-naimisiinkos
-naimisiinkopa
-naimisiinko
-naimisiinkinhan
-naimisiinkinko
-naimisiinkinkaan
-naimisiinkinpa
-naimisiinkin
-naimisiinkaanhan
-naimisiinkaanko
-naimisiinkaankin
-naimisiinkaanpa
-naimisiinkaan
-naimisiinpahan
-naimisiinpako
-naimisiinpakin
-naimisiinpakaan
-naimisiinpas
-naimisiinpa
-

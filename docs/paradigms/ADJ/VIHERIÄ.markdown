@@ -10,6 +10,7 @@ paradigm: ADJ_VIHERIÄ
 * KOTUS paradigm used in their dictionary is 15
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` iä `
 
-### viheriÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/viheriä.html), [short](gen/V/viheriä_wikt.html)
 

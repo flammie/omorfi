@@ -10,6 +10,7 @@ paradigm: PRON_TÄMÄ
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * mä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tämä `
 
-### tÄmÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tämä.html), [short](gen/T/tämä_wikt.html)
 

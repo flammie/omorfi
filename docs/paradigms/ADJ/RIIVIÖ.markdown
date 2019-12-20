@@ -10,6 +10,7 @@ paradigm: ADJ_RIIVIÖ
 * KOTUS paradigm used in their dictionary is 3
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` iö `
 
-### riiviÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/R/riiviö.html), [short](gen/R/riiviö_wikt.html)
 

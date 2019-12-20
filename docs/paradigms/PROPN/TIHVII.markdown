@@ -10,6 +10,7 @@ paradigm: PROPN_TIHVII
 * KOTUS paradigm used in their dictionary is 17
 * The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ii `
 
-### tihvii wordforms
+## See also
 
+* Inflection tables: [full](gen/T/Tihvii.html), [short](gen/T/Tihvii_wikt.html)
 

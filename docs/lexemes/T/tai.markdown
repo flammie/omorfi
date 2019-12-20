@@ -33,8 +33,3 @@ lexeme: tai
 * Origins: finer 
 * Blacklisted:  FGK
 
-
-### tai wordforms
-
-tai
-

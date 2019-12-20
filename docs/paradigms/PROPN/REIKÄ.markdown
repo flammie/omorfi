@@ -10,6 +10,7 @@ paradigm: PROPN_REIKÄ
 * KOTUS paradigm used in their dictionary is 10-D
 * The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kä `
 
-### reikÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Reikä.html), [short](gen/R/Reikä_wikt.html)
 

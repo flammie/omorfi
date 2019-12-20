@@ -10,6 +10,7 @@ paradigm: VERB_NÄHDÄ
 * KOTUS paradigm used in their dictionary is 71
 * The lemmas must end in * hdä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hdä `
 
-### nÄhdÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/N/nähdä.html), [short](gen/N/nähdä_wikt.html)
 

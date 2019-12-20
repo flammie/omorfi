@@ -56,3 +56,6 @@
 | _Abessive_ | uusimmatta | uusimmitta | uusimmattaan/uusimmattansa | uusimmittakaan |
 | _Instructive_ | --- | uusimmin | --- | uusimminko |
 | _Comitative_ | uusimpine | uusimpine | uusimpinesi | uusimpinehan |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [uusi full form list](uusi.html)
+

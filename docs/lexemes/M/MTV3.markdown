@@ -11,11 +11,3 @@ lexeme: MTV3
 * Possible NER class:  ORG
 * Semantic tags:  MEDIA
 
-
-### MTV3 wordforms
-
-MTV3-
-MTV3‐
-MTV3‑
-MTV3
-

@@ -9,11 +9,3 @@ lexeme: NBA
 * UPOS:  PROPN
 * Origins: omorfi 
 
-
-### NBA wordforms
-
-NBA-
-NBA‐
-NBA‑
-NBA
-

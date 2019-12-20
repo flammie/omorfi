@@ -10,6 +10,7 @@ paradigm: X_IGNORE
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### ignore wordforms
+## See also
 
+* Inflection tables: [full](gen/I/ignore.html), [short](gen/I/ignore_wikt.html)
 

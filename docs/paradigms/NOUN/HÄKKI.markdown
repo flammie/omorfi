@@ -10,6 +10,7 @@ paradigm: NOUN_HÄKKI
 * KOTUS paradigm used in their dictionary is 5-A|D
 * The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ki `
 
-### hÄkki wordforms
+## See also
 
+* Inflection tables: [full](gen/H/häkki.html), [short](gen/H/häkki_wikt.html)
 

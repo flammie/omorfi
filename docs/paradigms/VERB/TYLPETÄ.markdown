@@ -10,6 +10,7 @@ paradigm: VERB_TYLPETÄ
 * KOTUS paradigm used in their dictionary is 72-B
 * The lemmas must end in * etä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` petä `
 
-### tylpetÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tylpetä.html), [short](gen/T/tylpetä_wikt.html)
 

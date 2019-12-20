@@ -11,6 +11,7 @@ paradigm: NOUN_NIITUT
 * The lemmas must end in * ut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tut `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### niitut wordforms
+## See also
 
+* Inflection tables: [full](gen/N/niitut.html), [short](gen/N/niitut_wikt.html)
 

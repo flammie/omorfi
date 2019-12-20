@@ -10,11 +10,3 @@ lexeme: USA
 * Origins: 
 * Possible NER class:  GEO
 
-
-### USA wordforms
-
-USA-
-USA‐
-USA‑
-USA
-

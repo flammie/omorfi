@@ -9,11 +9,3 @@ lexeme: DVD
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### DVD wordforms
-
-DVD-
-DVD‐
-DVD‑
-DVD
-

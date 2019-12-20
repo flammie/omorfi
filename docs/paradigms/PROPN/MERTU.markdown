@@ -10,6 +10,7 @@ paradigm: PROPN_MERTU
 * KOTUS paradigm used in their dictionary is 1-K
 * The lemmas must end in * tu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rtu `
 
-### mertu wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Mertu.html), [short](gen/M/Mertu_wikt.html)
 

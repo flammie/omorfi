@@ -9,34 +9,3 @@ lexeme: pitkään
 * UPOS:  ADV
 * Origins: 
 
-
-### pitkään wordforms
-
-pitkään
-pitkäänhänkään
-pitkäänhänkö
-pitkäänhänpä
-pitkäänhän
-pitkäänkinhän
-pitkäänkinkään
-pitkäänkinkö
-pitkäänkinpä
-pitkäänkin
-pitkäänkäänhän
-pitkäänkäänkin
-pitkäänkäänkö
-pitkäänkäänpä
-pitkäänkään
-pitkäänköhän
-pitkäänkökin
-pitkäänkökään
-pitkäänkös
-pitkäänköpä
-pitkäänkö
-pitkäänpähän
-pitkäänpäkin
-pitkäänpäkään
-pitkäänpäkö
-pitkäänpäs
-pitkäänpä
-

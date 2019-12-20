@@ -10,6 +10,7 @@ paradigm: ADJ_SÄKKÄRÄ
 * KOTUS paradigm used in their dictionary is 11
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ä `
 
-### sÄkkÄrÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/säkkärä.html), [short](gen/S/säkkärä_wikt.html)
 

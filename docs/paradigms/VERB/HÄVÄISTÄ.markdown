@@ -10,6 +10,7 @@ paradigm: VERB_HÄVÄISTÄ
 * KOTUS paradigm used in their dictionary is 66-E
 * The lemmas must end in * väistä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` väistä `
 
-### hÄvÄistÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/häväistä.html), [short](gen/H/häväistä_wikt.html)
 

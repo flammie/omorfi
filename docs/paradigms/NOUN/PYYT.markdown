@@ -11,6 +11,7 @@ paradigm: NOUN_PYYT
 * The lemmas must end in * yt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yyt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### pyyt wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pyyt.html), [short](gen/P/pyyt_wikt.html)
 

@@ -10,11 +10,3 @@ lexeme: VW
 * Origins: 
 * Possible NER class:  PRODUCT
 
-
-### VW wordforms
-
-VW-
-VW‐
-VW‑
-VW
-

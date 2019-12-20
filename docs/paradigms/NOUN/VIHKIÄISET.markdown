@@ -11,6 +11,7 @@ paradigm: NOUN_VIHKIÄISET
 * The lemmas must end in * set * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*set `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### vihkiÄiset wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vihkiäiset.html), [short](gen/V/vihkiäiset_wikt.html)
 

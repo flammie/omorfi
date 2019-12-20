@@ -11,6 +11,7 @@ paradigm: PROPN_LAHDET
 * The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### lahdet wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Lahdet.html), [short](gen/L/Lahdet_wikt.html)
 

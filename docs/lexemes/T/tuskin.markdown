@@ -9,8 +9,3 @@ lexeme: tuskin
 * UPOS:  ADV
 * Origins: 
 
-
-### tuskin wordforms
-
-tuskin
-

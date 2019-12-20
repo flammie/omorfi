@@ -9,7 +9,3 @@ lexeme: s.
 * UPOS:  ADV
 * Origins: omorfi joukahainen 
 
-
-### sSTOP wordforms
-
-

@@ -10,11 +10,3 @@ lexeme: WWF
 * Origins: 
 * Possible NER class:  ORG
 
-
-### WWF wordforms
-
-WWF-
-WWF‐
-WWF‑
-WWF
-

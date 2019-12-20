@@ -9,8 +9,3 @@ lexeme: kunnes
 * UPOS:  SCONJ
 * Origins: omorfi 
 
-
-### kunnes wordforms
-
-kunnes
-

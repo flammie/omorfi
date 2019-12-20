@@ -9,11 +9,3 @@ lexeme: RNA
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### RNA wordforms
-
-RNA-
-RNA‐
-RNA‑
-RNA
-

@@ -9,7 +9,3 @@ lexeme: lehtiö-pc
 * UPOS:  NOUN
 * Origins: 
 
-
-### lehtiö-pc wordforms
-
-

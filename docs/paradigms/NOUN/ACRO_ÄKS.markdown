@@ -10,6 +10,7 @@ paradigm: NOUN_ACRO_ÄKS
 * KOTUS paradigm used in their dictionary is 0
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [FLMNRŠSXŽflmnršsxž²³23ńñß] `
 
-### acro_Äks wordforms
+## See also
 
+* Inflection tables: [full](gen/A/acro_äks.html), [short](gen/A/acro_äks_wikt.html)
 

@@ -10,6 +10,7 @@ paradigm: NOUN_51vanhapoika
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * apoika * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vanhapoika `
 
-### 51vanhapoika wordforms
+## See also
 
+* Inflection tables: [full](gen/5/vanhapoika.html), [short](gen/5/vanhapoika_wikt.html)
 

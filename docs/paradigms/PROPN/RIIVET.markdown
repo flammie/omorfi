@@ -11,6 +11,7 @@ paradigm: PROPN_RIIVET
 * The lemmas must end in * vet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*vet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### riivet wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Riivet.html), [short](gen/R/Riivet_wikt.html)
 

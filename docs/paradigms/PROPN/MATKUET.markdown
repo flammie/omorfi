@@ -11,6 +11,7 @@ paradigm: PROPN_MATKUET
 * The lemmas must end in * et * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### matkuet wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Matkuet.html), [short](gen/M/Matkuet_wikt.html)
 

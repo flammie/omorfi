@@ -10,11 +10,3 @@ lexeme: SUL
 * Origins: 
 * Possible NER class:  ORG
 
-
-### SUL wordforms
-
-SUL-
-SUL‐
-SUL‑
-SUL
-

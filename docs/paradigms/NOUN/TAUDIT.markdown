@@ -11,6 +11,7 @@ paradigm: NOUN_TAUDIT
 * The lemmas must end in * dit * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*dit `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### taudit wordforms
+## See also
 
+* Inflection tables: [full](gen/T/taudit.html), [short](gen/T/taudit_wikt.html)
 

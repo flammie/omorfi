@@ -10,6 +10,7 @@ paradigm: ADP_KOTONA
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### kotona wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kotona.html), [short](gen/K/kotona_wikt.html)
 

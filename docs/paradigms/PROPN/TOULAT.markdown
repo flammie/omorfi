@@ -10,6 +10,7 @@ paradigm: PROPN_TOULAT
 * KOTUS paradigm used in their dictionary is 40
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` at `
 
-### toulat wordforms
+## See also
 
+* Inflection tables: [full](gen/T/Toulat.html), [short](gen/T/Toulat_wikt.html)
 

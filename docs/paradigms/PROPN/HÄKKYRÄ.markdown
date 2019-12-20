@@ -10,6 +10,7 @@ paradigm: PROPN_HÄKKYRÄ
 * KOTUS paradigm used in their dictionary is 12
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ä `
 
-### hÄkkyrÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/Häkkyrä.html), [short](gen/H/Häkkyrä_wikt.html)
 

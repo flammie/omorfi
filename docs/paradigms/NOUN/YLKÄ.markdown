@@ -10,6 +10,7 @@ paradigm: NOUN_YLKÄ
 * KOTUS paradigm used in their dictionary is 10-L
 * The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kä `
 
-### ylkÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/Y/ylkä.html), [short](gen/Y/ylkä_wikt.html)
 

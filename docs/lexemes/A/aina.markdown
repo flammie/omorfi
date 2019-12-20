@@ -23,7 +23,3 @@ lexeme: aina
 * UPOS:  ADV
 * Origins: finer omorfi 
 
-
-### aina wordforms
-
-

@@ -9,11 +9,3 @@ lexeme: YK
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### YK wordforms
-
-YK-
-YK‐
-YK‑
-YK
-

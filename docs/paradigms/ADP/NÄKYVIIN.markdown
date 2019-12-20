@@ -10,6 +10,7 @@ paradigm: ADP_NÄKYVIIN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * n * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` n `
 
-### nÄkyviin wordforms
+## See also
 
+* Inflection tables: [full](gen/N/näkyviin.html), [short](gen/N/näkyviin_wikt.html)
 

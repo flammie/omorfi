@@ -10,6 +10,7 @@ paradigm: ADJ_PAHIN
 * KOTUS paradigm used in their dictionary is 36
 * The lemmas must end in * n * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*in `
 
-### pahin wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pahin.html), [short](gen/P/pahin_wikt.html)
 

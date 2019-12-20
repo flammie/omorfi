@@ -10,11 +10,3 @@ lexeme: NHL
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### NHL wordforms
-
-NHL-
-NHL‐
-NHL‑
-NHL
-

@@ -10,6 +10,7 @@ paradigm: ADJ_SÄIKKY
 * KOTUS paradigm used in their dictionary is 1-A
 * The lemmas must end in * ky * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kky `
 
-### sÄikky wordforms
+## See also
 
+* Inflection tables: [full](gen/S/säikky.html), [short](gen/S/säikky_wikt.html)
 

@@ -9,11 +9,3 @@ lexeme: FTP
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### FTP wordforms
-
-FTP-
-FTP‐
-FTP‑
-FTP
-

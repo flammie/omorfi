@@ -9,7 +9,3 @@ lexeme: pinta-WWW
 * UPOS:  NOUN
 * Origins: 
 
-
-### pinta-WWW wordforms
-
-

@@ -10,6 +10,7 @@ paradigm: VERB_VÄNGÄTÄ
 * KOTUS paradigm used in their dictionary is 73-G
 * The lemmas must end in * gätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` gätä `
 
-### vÄngÄtÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vängätä.html), [short](gen/V/vängätä_wikt.html)
 

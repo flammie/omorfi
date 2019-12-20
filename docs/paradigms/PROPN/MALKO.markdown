@@ -10,6 +10,7 @@ paradigm: PROPN_MALKO
 * KOTUS paradigm used in their dictionary is 1-M
 * The lemmas must end in * ko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ko `
 
-### malko wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Malko.html), [short](gen/M/Malko_wikt.html)
 

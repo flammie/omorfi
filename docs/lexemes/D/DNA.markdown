@@ -11,11 +11,3 @@ lexeme: DNA
 * Possible NER class:  ORG
 * Semantic tags:  MEDIA
 
-
-### DNA wordforms
-
-DNA-
-DNA‐
-DNA‑
-DNA
-

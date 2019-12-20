@@ -11,6 +11,7 @@ paradigm: PROPN_LASIT
 * The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*t `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### lasit wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Lasit.html), [short](gen/L/Lasit_wikt.html)
 

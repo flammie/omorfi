@@ -9,8 +9,3 @@ lexeme: +
 * UPOS:  SYM
 * Origins: omorfi 
 
-
-### + wordforms
-
-]
-

@@ -10,6 +10,7 @@ paradigm: PRON_HÄÄ
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hää `
 
-### hÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hää.html), [short](gen/H/hää_wikt.html)
 

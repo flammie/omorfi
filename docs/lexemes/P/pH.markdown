@@ -10,11 +10,3 @@ lexeme: pH
 * Origins: joukahainen 
 * Semantic tags:  MEASURE
 
-
-### pH wordforms
-
-pH-
-pH‐
-pH‑
-pH
-

@@ -16,7 +16,3 @@ lexeme: !
 * UPOS:  PUNCT
 * Origins: omorfi 
 
-
-### EXCL wordforms
-
-

@@ -10,7 +10,7 @@ paradigm: PRON_MONTAKO
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * ko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` montako `
 
-### montako wordforms
+## See also
 
-montako
+* Inflection tables: [full](gen/M/montako.html), [short](gen/M/montako_wikt.html)
 

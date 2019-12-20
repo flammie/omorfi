@@ -10,33 +10,7 @@ paradigm: ADV_AIKANSA
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### aikansa wordforms
+## See also
 
-aikansa
-aikansahanko
-aikansahankaan
-aikansahanpa
-aikansahan
-aikansakohan
-aikansakokin
-aikansakokaan
-aikansakos
-aikansakopa
-aikansako
-aikansakinhan
-aikansakinko
-aikansakinkaan
-aikansakinpa
-aikansakin
-aikansakaanhan
-aikansakaanko
-aikansakaankin
-aikansakaanpa
-aikansakaan
-aikansapahan
-aikansapako
-aikansapakin
-aikansapakaan
-aikansapas
-aikansapa
+* Inflection tables: [full](gen/A/aikansa.html), [short](gen/A/aikansa_wikt.html)
 

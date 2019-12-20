@@ -10,6 +10,7 @@ paradigm: PROPN_LEIPÄ
 * KOTUS paradigm used in their dictionary is 10-E
 * The lemmas must end in * pä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pä `
 
-### leipÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Leipä.html), [short](gen/L/Leipä_wikt.html)
 

@@ -7,14 +7,6 @@ lexeme: EKP
 
 * _Euroopan Keskus-Pankki_
 * UPOS:  PROPN
-* Origins: 
+* Origins: [enwikt](https://en.wiktionary.org/wiki/EKP) 
 * Possible NER class:  ORG
-
-
-### EKP wordforms
-
-EKP-
-EKP‐
-EKP‑
-EKP
 

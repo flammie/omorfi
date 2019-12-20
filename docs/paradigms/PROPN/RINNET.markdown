@@ -10,6 +10,7 @@ paradigm: PROPN_RINNET
 * KOTUS paradigm used in their dictionary is 44-J
 * The lemmas must end in * net * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nnet `
 
-### rinnet wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rinnet.html), [short](gen/R/Rinnet_wikt.html)
 

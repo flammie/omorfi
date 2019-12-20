@@ -7,36 +7,5 @@ lexeme: uudestaan
 
 * _usually seen as adverb (again), but can be analysed as possessive elative of the adjective *uusi* (new)_
 * UPOS:  ADV
-* Origins: 
-
-
-### uudestaan wordforms
-
-uudestaan
-uudestaanhanko
-uudestaanhankaan
-uudestaanhanpa
-uudestaanhan
-uudestaankohan
-uudestaankokin
-uudestaankokaan
-uudestaankos
-uudestaankopa
-uudestaanko
-uudestaankinhan
-uudestaankinko
-uudestaankinkaan
-uudestaankinpa
-uudestaankin
-uudestaankaanhan
-uudestaankaanko
-uudestaankaankin
-uudestaankaanpa
-uudestaankaan
-uudestaanpahan
-uudestaanpako
-uudestaanpakin
-uudestaanpakaan
-uudestaanpas
-uudestaanpa
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/uudestaan) 
 

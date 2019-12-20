@@ -10,6 +10,7 @@ paradigm: NOUN_51pahaputki
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * aputki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pahaputki `
 
-### 51pahaputki wordforms
+## See also
 
+* Inflection tables: [full](gen/5/pahaputki.html), [short](gen/5/pahaputki_wikt.html)
 

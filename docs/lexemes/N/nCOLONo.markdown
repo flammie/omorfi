@@ -10,7 +10,3 @@ lexeme: n:o
 * in KOTUS dictionary under:  2
 * Origins: omorfi 
 
-
-### nCOLONo wordforms
-
-

@@ -23,8 +23,3 @@ lexeme: jotta
 * UPOS:  NOUN
 * Origins: 
 
-
-### jotta wordforms
-
-jotta
-

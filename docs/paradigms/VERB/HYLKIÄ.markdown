@@ -10,6 +10,7 @@ paradigm: VERB_HYLKIÄ
 * KOTUS paradigm used in their dictionary is 61-L
 * The lemmas must end in * kiä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kiä `
 
-### hylkiÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hylkiä.html), [short](gen/H/hylkiä_wikt.html)
 

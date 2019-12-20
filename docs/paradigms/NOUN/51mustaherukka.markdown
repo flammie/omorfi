@@ -10,6 +10,7 @@ paradigm: NOUN_51mustaherukka
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * aherukka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mustaherukka `
 
-### 51mustaherukka wordforms
+## See also
 
+* Inflection tables: [full](gen/5/mustaherukka.html), [short](gen/5/mustaherukka_wikt.html)
 

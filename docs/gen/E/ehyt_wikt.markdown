@@ -56,3 +56,6 @@
 | _Abessive_ | ehyimmättä | ehyimmittä | ehyimmättänsä/ehyimmättään | ehyimmittäkään |
 | _Instructive_ | --- | ehyimmin | --- | ehyimminkö |
 | _Comitative_ | ehyimpine | ehyimpine | ehyimpinesi | ehyimpinehän |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [ehyt full form list](ehyt.html)
+

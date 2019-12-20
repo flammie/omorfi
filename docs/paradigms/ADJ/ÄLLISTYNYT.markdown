@@ -10,6 +10,7 @@ paradigm: ADJ_ÄLLISTYNYT
 * KOTUS paradigm used in their dictionary is 47
 * The lemmas must end in * yt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yt `
 
-### Ällistynyt wordforms
+## See also
 
+* Inflection tables: [full](gen/Ä/ällistynyt.html), [short](gen/Ä/ällistynyt_wikt.html)
 

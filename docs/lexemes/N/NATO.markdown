@@ -10,11 +10,3 @@ lexeme: NATO
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### NATO wordforms
-
-NATO-
-NATO‐
-NATO‑
-NATO
-

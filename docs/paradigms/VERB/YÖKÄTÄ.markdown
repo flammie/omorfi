@@ -10,6 +10,7 @@ paradigm: VERB_YÖKÄTÄ
 * KOTUS paradigm used in their dictionary is 73-A
 * The lemmas must end in * ätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ätä `
 
-### yÖkÄtÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/Y/yökätä.html), [short](gen/Y/yökätä_wikt.html)
 

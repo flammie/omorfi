@@ -10,6 +10,7 @@ paradigm: VERB_ÄNGETÄ
 * KOTUS paradigm used in their dictionary is 74-G
 * The lemmas must end in * getä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngetä `
 
-### ÄngetÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/Ä/ängetä.html), [short](gen/Ä/ängetä_wikt.html)
 

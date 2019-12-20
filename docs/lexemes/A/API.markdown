@@ -9,11 +9,3 @@ lexeme: API
 * UPOS:  NOUN
 * Origins: 
 
-
-### API wordforms
-
-API-
-API‐
-API‑
-API
-

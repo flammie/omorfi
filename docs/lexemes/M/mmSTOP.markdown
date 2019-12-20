@@ -9,7 +9,3 @@ lexeme: mm.
 * UPOS:  ADV
 * Origins: omorfi joukahainen 
 
-
-### mmSTOP wordforms
-
-

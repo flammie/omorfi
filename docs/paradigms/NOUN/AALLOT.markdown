@@ -11,6 +11,7 @@ paradigm: NOUN_AALLOT
 * The lemmas must end in * lot * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` lot `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### aallot wordforms
+## See also
 
+* Inflection tables: [full](gen/A/aallot.html), [short](gen/A/aallot_wikt.html)
 

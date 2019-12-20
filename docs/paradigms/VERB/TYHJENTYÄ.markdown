@@ -10,6 +10,7 @@ paradigm: VERB_TYHJENTYÄ
 * KOTUS paradigm used in their dictionary is 52-J
 * The lemmas must end in * tyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntyä `
 
-### tyhjentyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tyhjentyä.html), [short](gen/T/tyhjentyä_wikt.html)
 

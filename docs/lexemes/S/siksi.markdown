@@ -16,7 +16,3 @@ lexeme: siksi
 * UPOS:  ADV
 * Origins: 
 
-
-### siksi wordforms
-
-

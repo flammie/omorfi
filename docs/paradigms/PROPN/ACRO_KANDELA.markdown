@@ -10,6 +10,7 @@ paradigm: PROPN_ACRO_KANDELA
 * KOTUS paradigm used in their dictionary is 0
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### acro_kandela wordforms
+## See also
 
+* Inflection tables: [full](gen/A/Acro_kandela.html), [short](gen/A/Acro_kandela_wikt.html)
 

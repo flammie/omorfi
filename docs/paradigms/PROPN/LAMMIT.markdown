@@ -11,6 +11,7 @@ paradigm: PROPN_LAMMIT
 * The lemmas must end in * mit * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*mmit `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### lammit wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Lammit.html), [short](gen/L/Lammit_wikt.html)
 

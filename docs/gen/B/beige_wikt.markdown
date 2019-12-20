@@ -56,3 +56,6 @@
 | _Abessive_ | beigeimmättä | beigeimmittä | beigeimmättänsä/beigeimmättään | beigeimmittäkään |
 | _Instructive_ | --- | beigeimmin | --- | beigeimminkö |
 | _Comitative_ | beigeimpine | beigeimpine | beigeimpinesi | beigeimpinehän |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [beige full form list](beige.html)
+

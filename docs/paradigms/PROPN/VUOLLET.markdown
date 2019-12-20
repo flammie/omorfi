@@ -10,6 +10,7 @@ paradigm: PROPN_VUOLLET
 * KOTUS paradigm used in their dictionary is 44-I
 * The lemmas must end in * let * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*llet `
 
-### vuollet wordforms
+## See also
 
+* Inflection tables: [full](gen/V/Vuollet.html), [short](gen/V/Vuollet_wikt.html)
 

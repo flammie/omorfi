@@ -10,6 +10,7 @@ paradigm: PROPN_LÄHDET
 * KOTUS paradigm used in their dictionary is 44-F
 * The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*det `
 
-### lÄhdet wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Lähdet.html), [short](gen/L/Lähdet_wikt.html)
 

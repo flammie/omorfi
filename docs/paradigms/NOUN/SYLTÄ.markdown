@@ -10,6 +10,7 @@ paradigm: NOUN_SYLTÄ
 * KOTUS paradigm used in their dictionary is 10-I
 * The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tä `
 
-### syltÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/syltä.html), [short](gen/S/syltä_wikt.html)
 

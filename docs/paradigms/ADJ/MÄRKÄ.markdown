@@ -10,6 +10,7 @@ paradigm: ADJ_MÄRKÄ
 * KOTUS paradigm used in their dictionary is 10-D
 * The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kä `
 
-### mÄrkÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/märkä.html), [short](gen/M/märkä_wikt.html)
 

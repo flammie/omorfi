@@ -9,7 +9,3 @@ lexeme: media-pc
 * UPOS:  NOUN
 * Origins: 
 
-
-### media-pc wordforms
-
-

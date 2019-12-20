@@ -9,12 +9,3 @@ lexeme: ³
 * UPOS:  SYM
 * Origins: omorfi 
 
-
-### ³ wordforms
-
-³
-³-
-³‐
-³‑
-³
-

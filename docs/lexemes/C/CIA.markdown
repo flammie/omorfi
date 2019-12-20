@@ -10,11 +10,3 @@ lexeme: CIA
 * Origins: 
 * Possible NER class:  ORG
 
-
-### CIA wordforms
-
-CIA-
-CIA‐
-CIA‑
-CIA
-

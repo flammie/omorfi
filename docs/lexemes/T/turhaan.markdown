@@ -9,34 +9,3 @@ lexeme: turhaan
 * UPOS:  ADV
 * Origins: 
 
-
-### turhaan wordforms
-
-turhaan
-turhaanhanko
-turhaanhankaan
-turhaanhanpa
-turhaanhan
-turhaankohan
-turhaankokin
-turhaankokaan
-turhaankos
-turhaankopa
-turhaanko
-turhaankinhan
-turhaankinko
-turhaankinkaan
-turhaankinpa
-turhaankin
-turhaankaanhan
-turhaankaanko
-turhaankaankin
-turhaankaanpa
-turhaankaan
-turhaanpahan
-turhaanpako
-turhaanpakin
-turhaanpakaan
-turhaanpas
-turhaanpa
-

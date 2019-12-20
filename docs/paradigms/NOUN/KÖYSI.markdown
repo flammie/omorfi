@@ -10,6 +10,7 @@ paradigm: NOUN_KÖYSI
 * KOTUS paradigm used in their dictionary is 27
 * The lemmas must end in * si * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*si `
 
-### kÖysi wordforms
+## See also
 
+* Inflection tables: [full](gen/K/köysi.html), [short](gen/K/köysi_wikt.html)
 

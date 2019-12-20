@@ -11,6 +11,7 @@ paradigm: PROPN_LAET
 * The lemmas must end in * et * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### laet wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Laet.html), [short](gen/L/Laet_wikt.html)
 

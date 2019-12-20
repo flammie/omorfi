@@ -10,6 +10,7 @@ paradigm: PROPN_KÄRSÄKÄS
 * KOTUS paradigm used in their dictionary is 41-A
 * The lemmas must end in * äs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` käs `
 
-### kÄrsÄkÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kärsäkäs.html), [short](gen/K/Kärsäkäs_wikt.html)
 

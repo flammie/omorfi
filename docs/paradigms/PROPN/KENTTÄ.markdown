@@ -10,6 +10,7 @@ paradigm: PROPN_KENTTÄ
 * KOTUS paradigm used in their dictionary is 10-C
 * The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttä `
 
-### kenttÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kenttä.html), [short](gen/K/Kenttä_wikt.html)
 

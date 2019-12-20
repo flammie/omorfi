@@ -10,7 +10,3 @@ lexeme: $
 * Origins: omorfi 
 * Semantic tags:  CURRENCY
 
-
-### DORA wordforms
-
-

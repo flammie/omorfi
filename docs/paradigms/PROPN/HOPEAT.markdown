@@ -11,6 +11,7 @@ paradigm: PROPN_HOPEAT
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` eat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### hopeat wordforms
+## See also
 
+* Inflection tables: [full](gen/H/Hopeat.html), [short](gen/H/Hopeat_wikt.html)
 

@@ -10,6 +10,7 @@ paradigm: PROPN_PYHTÄÄ
 * KOTUS paradigm used in their dictionary is 17
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ää `
 
-### pyhtÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/P/Pyhtää.html), [short](gen/P/Pyhtää_wikt.html)
 

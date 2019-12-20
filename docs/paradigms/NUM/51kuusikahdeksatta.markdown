@@ -10,6 +10,7 @@ paradigm: NUM_51kuusikahdeksatta
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * sikahdeksatta * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuusikahdeksatta `
 
-### 51kuusikahdeksatta wordforms
+## See also
 
+* Inflection tables: [full](gen/5/kuusikahdeksatta.html), [short](gen/5/kuusikahdeksatta_wikt.html)
 

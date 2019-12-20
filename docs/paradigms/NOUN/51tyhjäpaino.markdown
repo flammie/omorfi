@@ -10,6 +10,7 @@ paradigm: NOUN_51tyhjäpaino
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * äpaino * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tyhjäpaino `
 
-### 51tyhjäpaino wordforms
+## See also
 
+* Inflection tables: [full](gen/5/tyhjäpaino.html), [short](gen/5/tyhjäpaino_wikt.html)
 

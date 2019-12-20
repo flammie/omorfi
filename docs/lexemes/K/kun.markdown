@@ -16,8 +16,3 @@ lexeme: kun
 * UPOS:  SCONJ
 * Origins: finer omorfi joukahainen 
 
-
-### kun wordforms
-
-kun
-

@@ -10,11 +10,3 @@ lexeme: KOP
 * Origins: 
 * Possible NER class:  ORG
 
-
-### KOP wordforms
-
-KOP-
-KOP‐
-KOP‑
-KOP
-

@@ -11,6 +11,7 @@ paradigm: NOUN_MILJÖÖT
 * The lemmas must end in * öt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ööt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### miljÖÖt wordforms
+## See also
 
+* Inflection tables: [full](gen/M/miljööt.html), [short](gen/M/miljööt_wikt.html)
 

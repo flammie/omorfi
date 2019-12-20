@@ -9,11 +9,3 @@ lexeme: ÄO
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### ÄO wordforms
-
-ÄO-
-ÄO‐
-ÄO‑
-ÄO
-

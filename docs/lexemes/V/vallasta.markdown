@@ -32,34 +32,3 @@ lexeme: vallasta
 * Origins: omorfi 
 * AdpType:  POSTPOSITION
 
-
-### vallasta wordforms
-
-vallasta
-vallastahanko
-vallastahankaan
-vallastahanpa
-vallastahan
-vallastakohan
-vallastakokin
-vallastakokaan
-vallastakos
-vallastakopa
-vallastako
-vallastakinhan
-vallastakinko
-vallastakinkaan
-vallastakinpa
-vallastakin
-vallastakaanhan
-vallastakaanko
-vallastakaankin
-vallastakaanpa
-vallastakaan
-vallastapahan
-vallastapako
-vallastapakin
-vallastapakaan
-vallastapas
-vallastapa
-

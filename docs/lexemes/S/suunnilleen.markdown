@@ -16,7 +16,3 @@ lexeme: suunnilleen
 * UPOS:  ADV
 * Origins: finer 
 
-
-### suunnilleen wordforms
-
-

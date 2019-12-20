@@ -10,6 +10,7 @@ paradigm: NOUN_51isorokko
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * rokko * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isorokko `
 
-### 51isorokko wordforms
+## See also
 
+* Inflection tables: [full](gen/5/isorokko.html), [short](gen/5/isorokko_wikt.html)
 

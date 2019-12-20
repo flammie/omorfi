@@ -9,8 +9,3 @@ lexeme: tietenkään
 * UPOS:  ADV
 * Origins: 
 
-
-### tietenkään wordforms
-
-tietenkään
-

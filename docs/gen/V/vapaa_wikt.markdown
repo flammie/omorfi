@@ -56,3 +56,6 @@
 | _Abessive_ | vapaimmatta | vapaimmitta | vapaimmattaan/vapaimmattansa | vapaimmittakaan |
 | _Instructive_ | --- | vapaimmin | --- | vapaimminko |
 | _Comitative_ | vapaimpine | vapaimpine | vapaimpinesi | vapaimpinehan |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [vapaa full form list](vapaa.html)
+

@@ -10,6 +10,7 @@ paradigm: ADV_LEVÄLLEEN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### levÄlleen wordforms
+## See also
 
+* Inflection tables: [full](gen/L/levälleen.html), [short](gen/L/levälleen_wikt.html)
 

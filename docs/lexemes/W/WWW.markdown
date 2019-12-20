@@ -9,11 +9,3 @@ lexeme: WWW
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### WWW wordforms
-
-WWW-
-WWW‐
-WWW‑
-WWW
-

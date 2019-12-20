@@ -10,6 +10,7 @@ paradigm: ADJ_PANTU
 * KOTUS paradigm used in their dictionary is 1-J
 * The lemmas must end in * tu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntu `
 
-### pantu wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pantu.html), [short](gen/P/pantu_wikt.html)
 

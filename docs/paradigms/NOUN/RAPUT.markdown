@@ -11,6 +11,7 @@ paradigm: NOUN_RAPUT
 * The lemmas must end in * ut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` put `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### raput wordforms
+## See also
 
+* Inflection tables: [full](gen/R/raput.html), [short](gen/R/raput_wikt.html)
 

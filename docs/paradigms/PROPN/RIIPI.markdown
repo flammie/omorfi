@@ -10,6 +10,7 @@ paradigm: PROPN_RIIPI
 * KOTUS paradigm used in their dictionary is 5-E
 * The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pi `
 
-### riipi wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Riipi.html), [short](gen/R/Riipi_wikt.html)
 

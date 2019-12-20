@@ -10,6 +10,7 @@ paradigm: NUM_ENSIMMÄINEN
 * KOTUS paradigm used in their dictionary is 38
 * The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` inen `
 
-### ensimmÄinen wordforms
+## See also
 
+* Inflection tables: [full](gen/E/ensimmäinen.html), [short](gen/E/ensimmäinen_wikt.html)
 

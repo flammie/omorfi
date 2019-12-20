@@ -10,6 +10,7 @@ paradigm: ADP_LISÄKSI
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * i * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ksi `
 
-### lisÄksi wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lisäksi.html), [short](gen/L/lisäksi_wikt.html)
 

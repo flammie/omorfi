@@ -10,11 +10,3 @@ lexeme: HJK
 * Origins: 
 * Possible NER class:  ORG
 
-
-### HJK wordforms
-
-HJK-
-HJK‐
-HJK‑
-HJK
-

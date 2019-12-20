@@ -10,11 +10,3 @@ lexeme: EMU
 * Origins: 
 * Possible NER class:  MISC
 
-
-### EMU wordforms
-
-EMU-
-EMU‐
-EMU‑
-EMU
-

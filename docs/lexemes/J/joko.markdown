@@ -30,8 +30,3 @@ lexeme: joko
 * UPOS:  CCONJ
 * Origins: 
 
-
-### joko wordforms
-
-joko
-

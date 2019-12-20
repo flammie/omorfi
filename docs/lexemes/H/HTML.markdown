@@ -9,11 +9,3 @@ lexeme: HTML
 * UPOS:  NOUN
 * Origins: omorfi joukahainen 
 
-
-### HTML wordforms
-
-HTML-
-HTML‐
-HTML‑
-HTML
-

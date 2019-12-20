@@ -7,10 +7,5 @@ lexeme: oikeastaan
 
 * _usually seen as adverb (actually), but can be analysed as a form of *oikea* (right)_
 * UPOS:  ADV
-* Origins: 
-
-
-### oikeastaan wordforms
-
-oikeastaan
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/oikeastaan) 
 

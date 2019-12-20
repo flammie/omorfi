@@ -10,6 +10,7 @@ paradigm: VERB_KYNTÄÄ
 * KOTUS paradigm used in their dictionary is 53-J
 * The lemmas must end in * tää * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntää `
 
-### kyntÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kyntää.html), [short](gen/K/kyntää_wikt.html)
 

@@ -16,8 +16,3 @@ lexeme: sillä
 * UPOS:  SCONJ
 * Origins: 
 
-
-### sillä wordforms
-
-sillä
-

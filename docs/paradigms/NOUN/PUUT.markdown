@@ -11,6 +11,7 @@ paradigm: NOUN_PUUT
 * The lemmas must end in * ut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` uut `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### puut wordforms
+## See also
 
+* Inflection tables: [full](gen/P/puut.html), [short](gen/P/puut_wikt.html)
 

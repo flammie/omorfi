@@ -10,6 +10,7 @@ paradigm: VERB_RYÖPYTÄ
 * KOTUS paradigm used in their dictionary is 75-B
 * The lemmas must end in * ytä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pytä `
 
-### ryÖpytÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/R/ryöpytä.html), [short](gen/R/ryöpytä_wikt.html)
 

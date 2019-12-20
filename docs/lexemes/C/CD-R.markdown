@@ -9,7 +9,3 @@ lexeme: CD-R
 * UPOS:  NOUN
 * Origins: 
 
-
-### CD-R wordforms
-
-

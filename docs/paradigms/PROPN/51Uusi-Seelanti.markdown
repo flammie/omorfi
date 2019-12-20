@@ -10,6 +10,7 @@ paradigm: PROPN_51Uusi-Seelanti
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * si-Seelanti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` Uusi-Seelanti `
 
-### 51uusi-seelanti wordforms
+## See also
 
+* Inflection tables: [full](gen/5/uusi-seelanti.html), [short](gen/5/uusi-seelanti_wikt.html)
 

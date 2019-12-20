@@ -56,3 +56,6 @@
 | _Abessive_ | raaimmatta/raaoimmatta | raaimmitta/raaoimmitta | raaimmattaan/raaimmattansa/raaoimmattaan/raaoimmattansa | raaimmittakaan/raaoimmittakaan |
 | _Instructive_ | --- | raaimmin/raaoimmin | --- | raaimminko/raaoimminko |
 | _Comitative_ | raaimpine/raaoimpine | raaimpine/raaoimpine | raaimpinesi/raaoimpinesi | raaimpinehan/raaoimpinehan |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [raaka full form list](raaka.html)
+

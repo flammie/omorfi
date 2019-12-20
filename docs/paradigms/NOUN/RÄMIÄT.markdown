@@ -11,6 +11,7 @@ paradigm: NOUN_RÄMIÄT
 * The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rÄmiÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/R/rämiät.html), [short](gen/R/rämiät_wikt.html)
 

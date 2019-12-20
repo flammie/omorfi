@@ -11,6 +11,7 @@ paradigm: NOUN_OIKEUDET
 * The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### oikeudet wordforms
+## See also
 
+* Inflection tables: [full](gen/O/oikeudet.html), [short](gen/O/oikeudet_wikt.html)
 

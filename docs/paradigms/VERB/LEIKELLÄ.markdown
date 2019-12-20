@@ -10,6 +10,7 @@ paradigm: VERB_LEIKELLÄ
 * KOTUS paradigm used in their dictionary is 67-A
 * The lemmas must end in * ellä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kellä `
 
-### leikellÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/leikellä.html), [short](gen/L/leikellä_wikt.html)
 

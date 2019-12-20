@@ -18,34 +18,3 @@ lexeme: hännillä
 * Origins: omorfi 
 * AdpType:  POSTPOSITION
 
-
-### hännillä wordforms
-
-hännillä
-hännillähänkään
-hännillähänkö
-hännillähänpä
-hännillähän
-hännilläkinhän
-hännilläkinkään
-hännilläkinkö
-hännilläkinpä
-hännilläkin
-hännilläkäänhän
-hännilläkäänkin
-hännilläkäänkö
-hännilläkäänpä
-hännilläkään
-hännilläköhän
-hännilläkökin
-hännilläkökään
-hännilläkös
-hännilläköpä
-hännilläkö
-hännilläpähän
-hännilläpäkin
-hännilläpäkään
-hännilläpäkö
-hännilläpäs
-hännilläpä
-

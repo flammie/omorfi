@@ -10,6 +10,7 @@ paradigm: NUM_51neljäyhdeksättä
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * äyhdeksättä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` neljäyhdeksättä `
 
-### 51neljäyhdeksättä wordforms
+## See also
 
+* Inflection tables: [full](gen/5/neljäyhdeksättä.html), [short](gen/5/neljäyhdeksättä_wikt.html)
 

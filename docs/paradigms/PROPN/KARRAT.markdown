@@ -11,6 +11,7 @@ paradigm: PROPN_KARRAT
 * The lemmas must end in * rat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rrat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### karrat wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Karrat.html), [short](gen/K/Karrat_wikt.html)
 

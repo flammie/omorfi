@@ -9,7 +9,3 @@ lexeme: |
 * UPOS:  SYM
 * Origins: omorfi 
 
-
-### PIPE wordforms
-
-

@@ -10,6 +10,7 @@ paradigm: VERB_MÄIKYÄ
 * KOTUS paradigm used in their dictionary is 52-D
 * The lemmas must end in * kyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kyä `
 
-### mÄikyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mäikyä.html), [short](gen/M/mäikyä_wikt.html)
 

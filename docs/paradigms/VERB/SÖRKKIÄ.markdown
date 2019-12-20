@@ -10,6 +10,7 @@ paradigm: VERB_SÖRKKIÄ
 * KOTUS paradigm used in their dictionary is 61-A
 * The lemmas must end in * kiä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kiä `
 
-### sÖrkkiÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/sörkkiä.html), [short](gen/S/sörkkiä_wikt.html)
 

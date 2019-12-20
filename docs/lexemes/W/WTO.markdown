@@ -10,11 +10,3 @@ lexeme: WTO
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### WTO wordforms
-
-WTO-
-WTO‐
-WTO‑
-WTO
-

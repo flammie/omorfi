@@ -9,11 +9,3 @@ lexeme: SGML
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### SGML wordforms
-
-SGML-
-SGML‐
-SGML‑
-SGML
-

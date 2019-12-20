@@ -11,6 +11,7 @@ paradigm: NOUN_VALLAT
 * The lemmas must end in * lat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` llat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### vallat wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vallat.html), [short](gen/V/vallat_wikt.html)
 

@@ -11,6 +11,7 @@ paradigm: NOUN_KÄÄDYT
 * The lemmas must end in * dyt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dyt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kÄÄdyt wordforms
+## See also
 
+* Inflection tables: [full](gen/K/käädyt.html), [short](gen/K/käädyt_wikt.html)
 

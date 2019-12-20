@@ -11,6 +11,7 @@ paradigm: PROPN_SILAKAT
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### silakat wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Silakat.html), [short](gen/S/Silakat_wikt.html)
 

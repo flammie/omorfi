@@ -10,6 +10,7 @@ paradigm: NOUN_51isolokki
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * lokki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isolokki `
 
-### 51isolokki wordforms
+## See also
 
+* Inflection tables: [full](gen/5/isolokki.html), [short](gen/5/isolokki_wikt.html)
 

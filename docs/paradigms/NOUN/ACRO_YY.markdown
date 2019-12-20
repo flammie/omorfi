@@ -10,6 +10,7 @@ paradigm: NOUN_ACRO_YY
 * KOTUS paradigm used in their dictionary is 0
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [YÜyüýÿ] `
 
-### acro_yy wordforms
+## See also
 
+* Inflection tables: [full](gen/A/acro_yy.html), [short](gen/A/acro_yy_wikt.html)
 

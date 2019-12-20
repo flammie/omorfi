@@ -7,10 +7,5 @@ lexeme: kerrassaan
 
 * _usually seen as adverb (indeed), but can be analysed as a form of *kerta* (one time)_
 * UPOS:  ADV
-* Origins: 
-
-
-### kerrassaan wordforms
-
-kerrassaan
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/kerrassaan) 
 

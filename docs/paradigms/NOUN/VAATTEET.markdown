@@ -11,6 +11,7 @@ paradigm: NOUN_VAATTEET
 * The lemmas must end in * teet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tteet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### vaatteet wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vaatteet.html), [short](gen/V/vaatteet_wikt.html)
 

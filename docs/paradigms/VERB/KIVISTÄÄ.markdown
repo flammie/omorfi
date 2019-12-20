@@ -10,6 +10,7 @@ paradigm: VERB_KIVISTÄÄ
 * KOTUS paradigm used in their dictionary is 53
 * The lemmas must end in * ää * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ää `
 
-### kivistÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kivistää.html), [short](gen/K/kivistää_wikt.html)
 

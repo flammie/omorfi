@@ -10,6 +10,7 @@ paradigm: ADJ_PITKÄ
 * KOTUS paradigm used in their dictionary is 1010
 * The lemmas must end in * tkä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tkä `
 
-### pitkÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pitkä.html), [short](gen/P/pitkä_wikt.html)
 

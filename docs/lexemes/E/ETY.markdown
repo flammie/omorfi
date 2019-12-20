@@ -10,11 +10,3 @@ lexeme: ETY
 * Origins: finer 
 * Possible NER class:  ORG
 
-
-### ETY wordforms
-
-ETY-
-ETY‐
-ETY‑
-ETY
-

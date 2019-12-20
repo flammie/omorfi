@@ -11,6 +11,7 @@ paradigm: PROPN_KUNNAT
 * The lemmas must end in * nat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kunnat wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kunnat.html), [short](gen/K/Kunnat_wikt.html)
 

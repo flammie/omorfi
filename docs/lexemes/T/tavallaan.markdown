@@ -9,7 +9,3 @@ lexeme: tavallaan
 * UPOS:  X
 * Origins: finer 
 
-
-### tavallaan wordforms
-
-

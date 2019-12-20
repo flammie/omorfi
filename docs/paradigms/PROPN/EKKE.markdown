@@ -10,6 +10,7 @@ paradigm: PROPN_EKKE
 * KOTUS paradigm used in their dictionary is 8-A
 * The lemmas must end in * ke * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke `
 
-### ekke wordforms
+## See also
 
+* Inflection tables: [full](gen/E/Ekke.html), [short](gen/E/Ekke_wikt.html)
 

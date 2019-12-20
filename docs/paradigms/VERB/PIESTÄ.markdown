@@ -10,6 +10,7 @@ paradigm: VERB_PIESTÄ
 * KOTUS paradigm used in their dictionary is 70
 * The lemmas must end in * stä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` stä `
 
-### piestÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/P/piestä.html), [short](gen/P/piestä_wikt.html)
 

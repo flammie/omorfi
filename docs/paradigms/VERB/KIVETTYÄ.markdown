@@ -10,6 +10,7 @@ paradigm: VERB_KIVETTYÄ
 * KOTUS paradigm used in their dictionary is 52-C
 * The lemmas must end in * tyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttyä `
 
-### kivettyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kivettyä.html), [short](gen/K/kivettyä_wikt.html)
 

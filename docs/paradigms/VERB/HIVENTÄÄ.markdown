@@ -10,6 +10,7 @@ paradigm: VERB_HIVENTÄÄ
 * KOTUS paradigm used in their dictionary is 54-J
 * The lemmas must end in * tää * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntää `
 
-### hiventÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hiventää.html), [short](gen/H/hiventää_wikt.html)
 

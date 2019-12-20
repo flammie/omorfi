@@ -10,6 +10,7 @@ paradigm: PRON_MÄÄ
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### mÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mää.html), [short](gen/M/mää_wikt.html)
 

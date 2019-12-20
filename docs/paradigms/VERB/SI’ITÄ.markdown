@@ -10,6 +10,7 @@ paradigm: VERB_SI’ITÄ
 * KOTUS paradigm used in their dictionary is 75-D
 * The lemmas must end in * ’itä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ’itä `
 
-### si’itÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/si’itä.html), [short](gen/S/si’itä_wikt.html)
 

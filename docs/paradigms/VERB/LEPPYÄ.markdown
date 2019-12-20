@@ -10,6 +10,7 @@ paradigm: VERB_LEPPYÄ
 * KOTUS paradigm used in their dictionary is 52-B
 * The lemmas must end in * pyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppyä `
 
-### leppyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/leppyä.html), [short](gen/L/leppyä_wikt.html)
 

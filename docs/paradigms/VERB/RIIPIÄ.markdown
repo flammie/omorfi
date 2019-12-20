@@ -10,6 +10,7 @@ paradigm: VERB_RIIPIÄ
 * KOTUS paradigm used in their dictionary is 61-E
 * The lemmas must end in * piä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` piä `
 
-### riipiÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/R/riipiä.html), [short](gen/R/riipiä_wikt.html)
 

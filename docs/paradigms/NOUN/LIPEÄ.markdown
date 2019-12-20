@@ -10,6 +10,7 @@ paradigm: NOUN_LIPEÄ
 * KOTUS paradigm used in their dictionary is 15
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` eä `
 
-### lipeÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lipeä.html), [short](gen/L/lipeä_wikt.html)
 

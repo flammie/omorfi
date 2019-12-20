@@ -16,8 +16,3 @@ lexeme: sekä
 * UPOS:  CCONJ
 * Origins: 
 
-
-### sekä wordforms
-
-sekä
-

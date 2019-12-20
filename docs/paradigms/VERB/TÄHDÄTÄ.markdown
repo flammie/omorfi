@@ -10,6 +10,7 @@ paradigm: VERB_TÄHDÄTÄ
 * KOTUS paradigm used in their dictionary is 73-F
 * The lemmas must end in * dätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dätä `
 
-### tÄhdÄtÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tähdätä.html), [short](gen/T/tähdätä_wikt.html)
 

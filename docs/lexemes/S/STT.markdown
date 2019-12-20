@@ -11,11 +11,3 @@ lexeme: STT
 * Possible NER class:  ORG
 * Semantic tags:  MEDIA
 
-
-### STT wordforms
-
-STT-
-STT‐
-STT‑
-STT
-

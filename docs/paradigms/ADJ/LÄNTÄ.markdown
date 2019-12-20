@@ -10,6 +10,7 @@ paradigm: ADJ_LÄNTÄ
 * KOTUS paradigm used in their dictionary is 10-J
 * The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ntä `
 
-### lÄntÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/läntä.html), [short](gen/L/läntä_wikt.html)
 

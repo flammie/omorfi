@@ -11,6 +11,7 @@ paradigm: PROPN_JUOVAT
 * The lemmas must end in * vat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### juovat wordforms
+## See also
 
+* Inflection tables: [full](gen/J/Juovat.html), [short](gen/J/Juovat_wikt.html)
 

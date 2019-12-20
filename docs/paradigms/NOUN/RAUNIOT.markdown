@@ -11,6 +11,7 @@ paradigm: NOUN_RAUNIOT
 * The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ot `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rauniot wordforms
+## See also
 
+* Inflection tables: [full](gen/R/rauniot.html), [short](gen/R/rauniot_wikt.html)
 

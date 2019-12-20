@@ -10,6 +10,7 @@ paradigm: ADJ_KYYTTÖ
 * KOTUS paradigm used in their dictionary is 1-C
 * The lemmas must end in * tö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttö `
 
-### kyyttÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kyyttö.html), [short](gen/K/kyyttö_wikt.html)
 

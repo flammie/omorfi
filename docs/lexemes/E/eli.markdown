@@ -30,8 +30,3 @@ lexeme: eli
 * UPOS:  INTJ
 * Origins: omorfi 
 
-
-### eli wordforms
-
-eli
-

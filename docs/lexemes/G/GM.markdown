@@ -10,11 +10,3 @@ lexeme: GM
 * Origins: 
 * Possible NER class:  ORG
 
-
-### GM wordforms
-
-GM-
-GM‐
-GM‑
-GM
-

@@ -16,7 +16,3 @@ lexeme: siten
 * UPOS:  ADV
 * Origins: 
 
-
-### siten wordforms
-
-

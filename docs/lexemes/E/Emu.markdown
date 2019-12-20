@@ -11,11 +11,3 @@ lexeme: Emu
 * Possible NER class:  ORG
 * Blacklisted:  PROPN-BLOCKING
 
-
-### Emu wordforms
-
-Emu-
-Emu‐
-Emu‑
-Emu
-

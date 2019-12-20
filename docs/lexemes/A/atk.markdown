@@ -9,11 +9,3 @@ lexeme: atk
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### atk wordforms
-
-atk-
-atk‐
-atk‑
-atk
-

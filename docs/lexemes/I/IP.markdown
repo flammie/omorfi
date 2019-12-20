@@ -9,11 +9,3 @@ lexeme: IP
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### IP wordforms
-
-IP-
-IP‐
-IP‑
-IP
-

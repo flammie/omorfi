@@ -11,6 +11,7 @@ paradigm: NOUN_VUODET
 * The lemmas must end in * det * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### vuodet wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vuodet.html), [short](gen/V/vuodet_wikt.html)
 

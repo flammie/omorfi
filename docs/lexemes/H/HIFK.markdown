@@ -10,11 +10,3 @@ lexeme: HIFK
 * Origins: 
 * Possible NER class:  ORG
 
-
-### HIFK wordforms
-
-HIFK-
-HIFK‐
-HIFK‑
-HIFK
-

@@ -11,6 +11,7 @@ paradigm: PROPN_SALONTEET
 * The lemmas must end in * teet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nteet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### salonteet wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Salonteet.html), [short](gen/S/Salonteet_wikt.html)
 

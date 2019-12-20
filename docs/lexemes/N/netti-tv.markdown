@@ -9,7 +9,3 @@ lexeme: netti-tv
 * UPOS:  NOUN
 * Origins: 
 
-
-### netti-tv wordforms
-
-

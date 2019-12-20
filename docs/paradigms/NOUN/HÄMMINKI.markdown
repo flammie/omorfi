@@ -10,6 +10,7 @@ paradigm: NOUN_HÄMMINKI
 * KOTUS paradigm used in their dictionary is 5-G
 * The lemmas must end in * ki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nki `
 
-### hÄmminki wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hämminki.html), [short](gen/H/hämminki_wikt.html)
 

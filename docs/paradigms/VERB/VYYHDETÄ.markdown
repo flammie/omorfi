@@ -10,6 +10,7 @@ paradigm: VERB_VYYHDETÄ
 * KOTUS paradigm used in their dictionary is 74-F
 * The lemmas must end in * detä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` detä `
 
-### vyyhdetÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vyyhdetä.html), [short](gen/V/vyyhdetä_wikt.html)
 

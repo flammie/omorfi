@@ -10,6 +10,7 @@ paradigm: ADP_NÄHDEN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * den * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` den `
 
-### nÄhden wordforms
+## See also
 
+* Inflection tables: [full](gen/N/nähden.html), [short](gen/N/nähden_wikt.html)
 

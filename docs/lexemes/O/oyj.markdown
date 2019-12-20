@@ -10,11 +10,3 @@ lexeme: oyj
 * Origins: joukahainen 
 * Semantic tags:  ORG
 
-
-### oyj wordforms
-
-oyj-
-oyj‐
-oyj‑
-oyj
-

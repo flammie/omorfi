@@ -9,11 +9,3 @@ lexeme: TS
 * UPOS:  NOUN
 * Origins: 
 
-
-### TS wordforms
-
-TS-
-TS‐
-TS‑
-TS
-

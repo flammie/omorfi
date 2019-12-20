@@ -17,34 +17,3 @@ lexeme: suhteen
 * Origins: 
 * AdpType:  POSTPOSITION
 
-
-### suhteen wordforms
-
-suhteen
-suhteenhanko
-suhteenhankaan
-suhteenhanpa
-suhteenhan
-suhteenkohan
-suhteenkokin
-suhteenkokaan
-suhteenkos
-suhteenkopa
-suhteenko
-suhteenkinhan
-suhteenkinko
-suhteenkinkaan
-suhteenkinpa
-suhteenkin
-suhteenkaanhan
-suhteenkaanko
-suhteenkaankin
-suhteenkaanpa
-suhteenkaan
-suhteenpahan
-suhteenpako
-suhteenpakin
-suhteenpakaan
-suhteenpas
-suhteenpa
-

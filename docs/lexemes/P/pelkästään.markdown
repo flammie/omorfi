@@ -9,7 +9,3 @@ lexeme: pelkästään
 * UPOS:  X
 * Origins: finer 
 
-
-### pelkästään wordforms
-
-

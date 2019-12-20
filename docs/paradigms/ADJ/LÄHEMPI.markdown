@@ -10,6 +10,7 @@ paradigm: ADJ_LÄHEMPI
 * KOTUS paradigm used in their dictionary is 16-H
 * The lemmas must end in * pi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mpi `
 
-### lÄhempi wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lähempi.html), [short](gen/L/lähempi_wikt.html)
 

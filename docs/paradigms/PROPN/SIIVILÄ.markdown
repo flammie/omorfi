@@ -10,6 +10,7 @@ paradigm: PROPN_SIIVILÄ
 * KOTUS paradigm used in their dictionary is 13
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ä `
 
-### siivilÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Siivilä.html), [short](gen/S/Siivilä_wikt.html)
 

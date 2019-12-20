@@ -10,33 +10,7 @@ paradigm: PRON_NOI
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` noi `
 
-### noi wordforms
+## See also
 
-noi
-noihanko
-noihankaan
-noihanpa
-noihan
-noikohan
-noikokin
-noikokaan
-noikos
-noikopa
-noiko
-noikinhan
-noikinko
-noikinkaan
-noikinpa
-noikin
-noikaanhan
-noikaanko
-noikaankin
-noikaanpa
-noikaan
-noipahan
-noipako
-noipakin
-noipakaan
-noipas
-noipa
+* Inflection tables: [full](gen/N/noi.html), [short](gen/N/noi_wikt.html)
 

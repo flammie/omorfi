@@ -10,6 +10,7 @@ paradigm: PROPN_KAARRET
 * KOTUS paradigm used in their dictionary is 44-K
 * The lemmas must end in * ret * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rret `
 
-### kaarret wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kaarret.html), [short](gen/K/Kaarret_wikt.html)
 

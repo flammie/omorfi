@@ -10,6 +10,7 @@ paradigm: PROPN_EUGENE
 * KOTUS paradigm used in their dictionary is 2
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### eugene wordforms
+## See also
 
+* Inflection tables: [full](gen/E/Eugene.html), [short](gen/E/Eugene_wikt.html)
 

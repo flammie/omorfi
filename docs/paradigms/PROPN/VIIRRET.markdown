@@ -10,6 +10,7 @@ paradigm: PROPN_VIIRRET
 * KOTUS paradigm used in their dictionary is 44-K
 * The lemmas must end in * ret * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rret `
 
-### viirret wordforms
+## See also
 
+* Inflection tables: [full](gen/V/Viirret.html), [short](gen/V/Viirret_wikt.html)
 

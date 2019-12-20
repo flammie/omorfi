@@ -10,6 +10,7 @@ paradigm: VERB_SÄPSÄHDELLÄ
 * KOTUS paradigm used in their dictionary is 67-F
 * The lemmas must end in * dellä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dellä `
 
-### sÄpsÄhdellÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/säpsähdellä.html), [short](gen/S/säpsähdellä_wikt.html)
 

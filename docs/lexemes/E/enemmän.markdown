@@ -9,34 +9,3 @@ lexeme: enemmän
 * UPOS:  ADV
 * Origins: 
 
-
-### enemmän wordforms
-
-enemmän
-enemmänhänkään
-enemmänhänkö
-enemmänhänpä
-enemmänhän
-enemmänkinhän
-enemmänkinkään
-enemmänkinkö
-enemmänkinpä
-enemmänkin
-enemmänkäänhän
-enemmänkäänkin
-enemmänkäänkö
-enemmänkäänpä
-enemmänkään
-enemmänköhän
-enemmänkökin
-enemmänkökään
-enemmänkös
-enemmänköpä
-enemmänkö
-enemmänpähän
-enemmänpäkin
-enemmänpäkään
-enemmänpäkö
-enemmänpäs
-enemmänpä
-

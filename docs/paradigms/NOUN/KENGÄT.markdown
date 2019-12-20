@@ -11,6 +11,7 @@ paradigm: NOUN_KENGÄT
 * The lemmas must end in * gät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kengÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kengät.html), [short](gen/K/kengät_wikt.html)
 

@@ -11,11 +11,3 @@ lexeme: SKDL
 * Possible NER class:  ORG
 * Semantic tags:  POLIT
 
-
-### SKDL wordforms
-
-SKDL-
-SKDL‐
-SKDL‑
-SKDL
-

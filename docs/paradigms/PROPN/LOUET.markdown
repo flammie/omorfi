@@ -10,6 +10,7 @@ paradigm: PROPN_LOUET
 * KOTUS paradigm used in their dictionary is 44-D
 * The lemmas must end in * et * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` uet `
 
-### louet wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Louet.html), [short](gen/L/Louet_wikt.html)
 

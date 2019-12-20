@@ -9,7 +9,3 @@ lexeme: paneeli-pc
 * UPOS:  NOUN
 * Origins: 
 
-
-### paneeli-pc wordforms
-
-

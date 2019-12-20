@@ -10,6 +10,7 @@ paradigm: NOUN_CHACHACHA
 * KOTUS paradigm used in their dictionary is 21
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### chachacha wordforms
+## See also
 
+* Inflection tables: [full](gen/C/chachacha.html), [short](gen/C/chachacha_wikt.html)
 

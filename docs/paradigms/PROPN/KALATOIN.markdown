@@ -10,6 +10,7 @@ paradigm: PROPN_KALATOIN
 * KOTUS paradigm used in their dictionary is 34-C
 * The lemmas must end in * oin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` toin `
 
-### kalatoin wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kalatoin.html), [short](gen/K/Kalatoin_wikt.html)
 

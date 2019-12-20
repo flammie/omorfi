@@ -10,6 +10,7 @@ paradigm: PROPN_MALMÖ
 * KOTUS paradigm used in their dictionary is 21
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### malmÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Malmö.html), [short](gen/M/Malmö_wikt.html)
 

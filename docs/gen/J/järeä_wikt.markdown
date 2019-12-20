@@ -56,3 +56,6 @@
 | _Abessive_ | järeimmättä | järeimmittä | järeimmättänsä/järeimmättään | järeimmittäkään |
 | _Instructive_ | --- | järeimmin | --- | järeimminkö |
 | _Comitative_ | järeimpine | järeimpine | järeimpinesi | järeimpinehän |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [järeä full form list](järeä.html)
+

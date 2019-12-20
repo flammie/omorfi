@@ -10,7 +10,7 @@ paradigm: PROPN_VIIS
 * KOTUS paradigm used in their dictionary is 27
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` s `
 
-### viis wordforms
+## See also
 
-viis
+* Inflection tables: [full](gen/V/Viis.html), [short](gen/V/Viis_wikt.html)
 

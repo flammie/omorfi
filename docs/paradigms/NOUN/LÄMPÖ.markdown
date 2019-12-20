@@ -10,6 +10,7 @@ paradigm: NOUN_LÄMPÖ
 * KOTUS paradigm used in their dictionary is 1-H
 * The lemmas must end in * pö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mpö `
 
-### lÄmpÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lämpö.html), [short](gen/L/lämpö_wikt.html)
 

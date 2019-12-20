@@ -11,6 +11,7 @@ paradigm: NOUN_RAUDAT
 * The lemmas must end in * dat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` dat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### raudat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/raudat.html), [short](gen/R/raudat_wikt.html)
 

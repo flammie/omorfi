@@ -56,3 +56,6 @@
 | _Abessive_ | matalimmatta | matalimmitta | matalimmattaan/matalimmattansa | matalimmittakaan |
 | _Instructive_ | --- | matalimmin | --- | matalimminko |
 | _Comitative_ | matalimpine | matalimpine | matalimpinesi | matalimpinehan |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [matala full form list](matala.html)
+

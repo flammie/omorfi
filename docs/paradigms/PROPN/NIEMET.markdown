@@ -11,6 +11,7 @@ paradigm: PROPN_NIEMET
 * The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*et `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### niemet wordforms
+## See also
 
+* Inflection tables: [full](gen/N/Niemet.html), [short](gen/N/Niemet_wikt.html)
 

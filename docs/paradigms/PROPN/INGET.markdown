@@ -10,6 +10,7 @@ paradigm: PROPN_INGET
 * KOTUS paradigm used in their dictionary is 44-G
 * The lemmas must end in * get * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nget `
 
-### inget wordforms
+## See also
 
+* Inflection tables: [full](gen/I/Inget.html), [short](gen/I/Inget_wikt.html)
 

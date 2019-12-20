@@ -10,6 +10,7 @@ paradigm: ADJ_LÖRPPÖ
 * KOTUS paradigm used in their dictionary is 1-B
 * The lemmas must end in * pö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppö `
 
-### lÖrppÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lörppö.html), [short](gen/L/lörppö_wikt.html)
 

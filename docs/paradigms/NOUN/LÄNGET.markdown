@@ -11,6 +11,7 @@ paradigm: NOUN_LÄNGET
 * The lemmas must end in * get * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nget `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### lÄnget wordforms
+## See also
 
+* Inflection tables: [full](gen/L/länget.html), [short](gen/L/länget_wikt.html)
 

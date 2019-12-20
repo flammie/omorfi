@@ -16,7 +16,3 @@ lexeme: mutta
 * UPOS:  CCONJ
 * Origins: 
 
-
-### mutta wordforms
-
-

@@ -10,11 +10,3 @@ lexeme: EY
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### EY wordforms
-
-EY-
-EY‐
-EY‑
-EY
-

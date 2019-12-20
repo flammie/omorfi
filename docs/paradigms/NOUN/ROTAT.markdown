@@ -11,6 +11,7 @@ paradigm: NOUN_ROTAT
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rotat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/rotat.html), [short](gen/R/rotat_wikt.html)
 

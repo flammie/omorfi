@@ -10,6 +10,7 @@ paradigm: VERB_MERKITÄ
 * KOTUS paradigm used in their dictionary is 69
 * The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` itä `
 
-### merkitÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/merkitä.html), [short](gen/M/merkitä_wikt.html)
 

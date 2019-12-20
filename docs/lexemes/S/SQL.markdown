@@ -9,11 +9,3 @@ lexeme: SQL
 * UPOS:  NOUN
 * Origins: omorfi joukahainen 
 
-
-### SQL wordforms
-
-SQL-
-SQL‐
-SQL‑
-SQL
-

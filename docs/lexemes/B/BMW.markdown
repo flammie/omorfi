@@ -10,11 +10,3 @@ lexeme: BMW
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### BMW wordforms
-
-BMW-
-BMW‐
-BMW‑
-BMW
-

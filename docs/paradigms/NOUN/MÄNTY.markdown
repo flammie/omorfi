@@ -10,6 +10,7 @@ paradigm: NOUN_MÄNTY
 * KOTUS paradigm used in their dictionary is 1-J
 * The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nty `
 
-### mÄnty wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mänty.html), [short](gen/M/mänty_wikt.html)
 

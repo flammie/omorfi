@@ -10,11 +10,3 @@ lexeme: NPC
 * Origins: 
 * Possible NER class:  MISC
 
-
-### NPC wordforms
-
-NPC-
-NPC‐
-NPC‑
-NPC
-

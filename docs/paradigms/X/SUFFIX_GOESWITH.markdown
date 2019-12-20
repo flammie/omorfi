@@ -10,6 +10,7 @@ paradigm: X_SUFFIX_GOESWITH
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### suffix_goeswith wordforms
+## See also
 
+* Inflection tables: [full](gen/S/suffix_goeswith.html), [short](gen/S/suffix_goeswith_wikt.html)
 

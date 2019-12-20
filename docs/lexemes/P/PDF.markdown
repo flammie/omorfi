@@ -9,11 +9,3 @@ lexeme: PDF
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### PDF wordforms
-
-PDF-
-PDF‐
-PDF‑
-PDF
-

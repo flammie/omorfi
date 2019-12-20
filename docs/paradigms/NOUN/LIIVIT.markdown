@@ -11,6 +11,7 @@ paradigm: NOUN_LIIVIT
 * The lemmas must end in * it * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### liivit wordforms
+## See also
 
+* Inflection tables: [full](gen/L/liivit.html), [short](gen/L/liivit_wikt.html)
 

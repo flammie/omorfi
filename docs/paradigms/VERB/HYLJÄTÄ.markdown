@@ -10,6 +10,7 @@ paradigm: VERB_HYLJÄTÄ
 * KOTUS paradigm used in their dictionary is 73-L
 * The lemmas must end in * jätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` jätä `
 
-### hyljÄtÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hyljätä.html), [short](gen/H/hyljätä_wikt.html)
 

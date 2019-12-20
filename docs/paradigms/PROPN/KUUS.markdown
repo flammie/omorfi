@@ -10,6 +10,7 @@ paradigm: PROPN_KUUS
 * KOTUS paradigm used in their dictionary is 27
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*s `
 
-### kuus wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kuus.html), [short](gen/K/Kuus_wikt.html)
 

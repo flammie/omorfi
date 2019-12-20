@@ -12,7 +12,3 @@ lexeme: Nuotta-apaja
 * Possible NER class:  GEO
 * Blacklisted:  PROPN-BLOCKING
 
-
-### Nuotta-apaja wordforms
-
-

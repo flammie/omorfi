@@ -11,6 +11,7 @@ paradigm: PROPN_KIRITTÄRET
 * The lemmas must end in * täret * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttäret `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kirittÄret wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kirittäret.html), [short](gen/K/Kirittäret_wikt.html)
 

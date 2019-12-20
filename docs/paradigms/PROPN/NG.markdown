@@ -10,10 +10,7 @@ paradigm: PROPN_NG
 * KOTUS paradigm used in their dictionary is 5
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### ng wordforms
+## See also
 
-ng-
-ng‐
-ng‑
-ng
+* Inflection tables: [full](gen/N/Ng.html), [short](gen/N/Ng_wikt.html)
 

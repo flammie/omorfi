@@ -10,6 +10,7 @@ paradigm: NUM_51seitsemänsentiljardia
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * änsentiljardia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` seitsemänsentiljardia `
 
-### 51seitsemänsentiljardia wordforms
+## See also
 
+* Inflection tables: [full](gen/5/seitsemänsentiljardia.html), [short](gen/5/seitsemänsentiljardia_wikt.html)
 

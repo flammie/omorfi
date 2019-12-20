@@ -23,8 +23,3 @@ lexeme: vaan
 * UPOS:  ADV
 * Origins: omorfi 
 
-
-### vaan wordforms
-
-vaan
-

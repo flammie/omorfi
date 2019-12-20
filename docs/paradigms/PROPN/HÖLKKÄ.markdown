@@ -10,6 +10,7 @@ paradigm: PROPN_HÖLKKÄ
 * KOTUS paradigm used in their dictionary is 10-A
 * The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kkä `
 
-### hÖlkkÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/Hölkkä.html), [short](gen/H/Hölkkä_wikt.html)
 

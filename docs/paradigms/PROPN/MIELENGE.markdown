@@ -10,6 +10,7 @@ paradigm: PROPN_MIELENGE
 * KOTUS paradigm used in their dictionary is 48-G
 * The lemmas must end in * ge * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nge `
 
-### mielenge wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Mielenge.html), [short](gen/M/Mielenge_wikt.html)
 

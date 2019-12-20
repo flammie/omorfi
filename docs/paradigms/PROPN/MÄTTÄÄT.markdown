@@ -11,6 +11,7 @@ paradigm: PROPN_MÄTTÄÄT
 * The lemmas must end in * täät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttäät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### mÄttÄÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Mättäät.html), [short](gen/M/Mättäät_wikt.html)
 

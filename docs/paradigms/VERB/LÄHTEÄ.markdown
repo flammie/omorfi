@@ -10,6 +10,7 @@ paradigm: VERB_LÄHTEÄ
 * KOTUS paradigm used in their dictionary is 60-F
 * The lemmas must end in * hteä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` hteä `
 
-### lÄhteÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lähteä.html), [short](gen/L/lähteä_wikt.html)
 

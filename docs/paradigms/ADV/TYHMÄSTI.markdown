@@ -10,6 +10,7 @@ paradigm: ADV_TYHMÄSTI
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### tyhmÄsti wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tyhmästi.html), [short](gen/T/tyhmästi_wikt.html)
 

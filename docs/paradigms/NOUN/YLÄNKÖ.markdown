@@ -10,6 +10,7 @@ paradigm: NOUN_YLÄNKÖ
 * KOTUS paradigm used in their dictionary is 1-G
 * The lemmas must end in * kö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkö `
 
-### ylÄnkÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/Y/ylänkö.html), [short](gen/Y/ylänkö_wikt.html)
 

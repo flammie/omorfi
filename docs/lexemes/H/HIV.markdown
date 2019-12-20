@@ -9,11 +9,3 @@ lexeme: HIV
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### HIV wordforms
-
-HIV-
-HIV‐
-HIV‑
-HIV
-

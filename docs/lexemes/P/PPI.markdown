@@ -9,11 +9,3 @@ lexeme: PPI
 * UPOS:  NOUN
 * Origins: 
 
-
-### PPI wordforms
-
-PPI-
-PPI‐
-PPI‑
-PPI
-

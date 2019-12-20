@@ -10,11 +10,3 @@ lexeme: BBC
 * Origins: 
 * Possible NER class:  ORG
 
-
-### BBC wordforms
-
-BBC-
-BBC‐
-BBC‑
-BBC
-

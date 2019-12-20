@@ -9,12 +9,3 @@ lexeme: ¼
 * UPOS:  SYM
 * Origins: omorfi 
 
-
-### ¼ wordforms
-
-¼
-¼-
-¼‐
-¼‑
-¼
-

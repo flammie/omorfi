@@ -9,16 +9,3 @@ lexeme: cd
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### cd wordforms
-
-cd
-cd-
-cd‐
-cd‑
-cd
-cd-
-cd‐
-cd‑
-cd
-

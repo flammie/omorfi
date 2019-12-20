@@ -10,33 +10,7 @@ paradigm: ADP_MUKAISESTI
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### mukaisesti wordforms
+## See also
 
-mukaisesti
-mukaisestihanko
-mukaisestihankaan
-mukaisestihanpa
-mukaisestihan
-mukaisestikohan
-mukaisestikokin
-mukaisestikokaan
-mukaisestikos
-mukaisestikopa
-mukaisestiko
-mukaisestikinhan
-mukaisestikinko
-mukaisestikinkaan
-mukaisestikinpa
-mukaisestikin
-mukaisestikaanhan
-mukaisestikaanko
-mukaisestikaankin
-mukaisestikaanpa
-mukaisestikaan
-mukaisestipahan
-mukaisestipako
-mukaisestipakin
-mukaisestipakaan
-mukaisestipas
-mukaisestipa
+* Inflection tables: [full](gen/M/mukaisesti.html), [short](gen/M/mukaisesti_wikt.html)
 

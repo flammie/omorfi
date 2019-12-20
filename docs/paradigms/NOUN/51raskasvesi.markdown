@@ -10,6 +10,7 @@ paradigm: NOUN_51raskasvesi
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * svesi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` raskasvesi `
 
-### 51raskasvesi wordforms
+## See also
 
+* Inflection tables: [full](gen/5/raskasvesi.html), [short](gen/5/raskasvesi_wikt.html)
 

@@ -11,6 +11,7 @@ paradigm: NOUN_KILPIKKÄÄT
 * The lemmas must end in * käät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kkäät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kilpikkÄÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kilpikkäät.html), [short](gen/K/kilpikkäät_wikt.html)
 

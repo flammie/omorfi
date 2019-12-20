@@ -11,6 +11,7 @@ paradigm: NOUN_HÄVINNEET
 * The lemmas must end in * et * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*neet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### hÄvinneet wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hävinneet.html), [short](gen/H/hävinneet_wikt.html)
 

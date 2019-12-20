@@ -10,6 +10,7 @@ paradigm: NOUN_MILJÖÖ
 * KOTUS paradigm used in their dictionary is 20
 * The lemmas must end in * ö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` öö `
 
-### miljÖÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/miljöö.html), [short](gen/M/miljöö_wikt.html)
 

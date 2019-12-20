@@ -9,11 +9,3 @@ lexeme: oy
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### oy wordforms
-
-oy-
-oy‐
-oy‑
-oy
-

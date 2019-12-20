@@ -9,11 +9,3 @@ lexeme: dna
 * UPOS:  NOUN
 * Origins: 
 
-
-### dna wordforms
-
-dna-
-dna‐
-dna‑
-dna
-

@@ -10,6 +10,7 @@ paradigm: NOUN_51isoveli
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * veli * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isoveli `
 
-### 51isoveli wordforms
+## See also
 
+* Inflection tables: [full](gen/5/isoveli.html), [short](gen/5/isoveli_wikt.html)
 

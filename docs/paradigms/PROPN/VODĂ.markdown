@@ -10,6 +10,7 @@ paradigm: PROPN_VODĂ
 * KOTUS paradigm used in their dictionary is 10
 * The lemmas must end in * ă * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ă `
 
-### vodĂ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/Vodă.html), [short](gen/V/Vodă_wikt.html)
 

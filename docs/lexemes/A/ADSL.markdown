@@ -9,11 +9,3 @@ lexeme: ADSL
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### ADSL wordforms
-
-ADSL-
-ADSL‐
-ADSL‑
-ADSL
-

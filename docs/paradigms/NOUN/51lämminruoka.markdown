@@ -10,6 +10,7 @@ paradigm: NOUN_51lämminruoka
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * minruoka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` lämminruoka `
 
-### 51lämminruoka wordforms
+## See also
 
+* Inflection tables: [full](gen/5/lämminruoka.html), [short](gen/5/lämminruoka_wikt.html)
 

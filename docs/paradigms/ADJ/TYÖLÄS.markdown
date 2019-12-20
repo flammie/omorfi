@@ -10,6 +10,7 @@ paradigm: ADJ_TYÖLÄS
 * KOTUS paradigm used in their dictionary is 41
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` äs `
 
-### tyÖlÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/T/työläs.html), [short](gen/T/työläs_wikt.html)
 

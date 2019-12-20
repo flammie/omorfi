@@ -10,6 +10,7 @@ paradigm: ADJ_KYLMÄJÄRKINEN
 * KOTUS paradigm used in their dictionary is 38
 * The lemmas must end in * nen * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen `
 
-### kylmÄjÄrkinen wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kylmäjärkinen.html), [short](gen/K/kylmäjärkinen_wikt.html)
 

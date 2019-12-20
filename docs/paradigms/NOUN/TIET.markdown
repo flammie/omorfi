@@ -11,6 +11,7 @@ paradigm: NOUN_TIET
 * The lemmas must end in * iet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` iet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### tiet wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tiet.html), [short](gen/T/tiet_wikt.html)
 

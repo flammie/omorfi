@@ -11,6 +11,7 @@ paradigm: PROPN_KUMMUT
 * The lemmas must end in * mut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mmut `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kummut wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kummut.html), [short](gen/K/Kummut_wikt.html)
 

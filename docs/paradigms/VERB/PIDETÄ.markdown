@@ -10,6 +10,7 @@ paradigm: VERB_PIDETÄ
 * KOTUS paradigm used in their dictionary is 72-F
 * The lemmas must end in * detä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` detä `
 
-### pidetÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pidetä.html), [short](gen/P/pidetä_wikt.html)
 

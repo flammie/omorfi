@@ -9,11 +9,3 @@ lexeme: SAK
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### SAK wordforms
-
-SAK-
-SAK‐
-SAK‑
-SAK
-

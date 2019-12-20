@@ -11,6 +11,7 @@ paradigm: PROPN_RANNAT
 * The lemmas must end in * nat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rannat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rannat.html), [short](gen/R/Rannat_wikt.html)
 

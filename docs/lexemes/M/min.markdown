@@ -11,11 +11,3 @@ lexeme: min
 * Blacklisted:  FGK
 * Semantic tags:  MEASURE
 
-
-### min wordforms
-
-min-
-min‐
-min‑
-min
-

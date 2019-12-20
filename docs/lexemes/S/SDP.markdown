@@ -11,11 +11,3 @@ lexeme: SDP
 * Possible NER class:  ORG
 * Semantic tags:  POLIT
 
-
-### SDP wordforms
-
-SDP-
-SDP‐
-SDP‑
-SDP
-

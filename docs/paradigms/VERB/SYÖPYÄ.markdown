@@ -10,6 +10,7 @@ paradigm: VERB_SYÖPYÄ
 * KOTUS paradigm used in their dictionary is 52-E
 * The lemmas must end in * pyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pyä `
 
-### syÖpyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/syöpyä.html), [short](gen/S/syöpyä_wikt.html)
 

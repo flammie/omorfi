@@ -56,3 +56,6 @@
 | _Abessive_ | pienimmättä | pienimmittä | pienimmättänsä/pienimmättään | pienimmittäkään |
 | _Instructive_ | --- | pienimmin | --- | pienimminkö |
 | _Comitative_ | pienimpine | pienimpine | pienimpinesi | pienimpinehän |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [pieni full form list](pieni.html)
+

@@ -10,6 +10,7 @@ paradigm: VERB_HELLITÄ
 * KOTUS paradigm used in their dictionary is 75-I
 * The lemmas must end in * litä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` litä `
 
-### hellitÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/hellitä.html), [short](gen/H/hellitä_wikt.html)
 

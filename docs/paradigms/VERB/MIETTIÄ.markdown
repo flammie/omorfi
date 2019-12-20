@@ -10,6 +10,7 @@ paradigm: VERB_MIETTIÄ
 * KOTUS paradigm used in their dictionary is 61-C
 * The lemmas must end in * tiä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttiä `
 
-### miettiÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/miettiä.html), [short](gen/M/miettiä_wikt.html)
 

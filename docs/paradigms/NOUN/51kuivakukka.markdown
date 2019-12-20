@@ -10,6 +10,7 @@ paradigm: NOUN_51kuivakukka
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * akukka * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuivakukka `
 
-### 51kuivakukka wordforms
+## See also
 
+* Inflection tables: [full](gen/5/kuivakukka.html), [short](gen/5/kuivakukka_wikt.html)
 

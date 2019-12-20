@@ -10,11 +10,3 @@ lexeme: Y2K
 * Origins: 
 * Semantic tags:  TIME
 
-
-### Y2K wordforms
-
-Y2K-
-Y2K‐
-Y2K‑
-Y2K
-

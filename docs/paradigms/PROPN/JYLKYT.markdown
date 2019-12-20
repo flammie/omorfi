@@ -11,6 +11,7 @@ paradigm: PROPN_JYLKYT
 * The lemmas must end in * yt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kyt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### jylkyt wordforms
+## See also
 
+* Inflection tables: [full](gen/J/Jylkyt.html), [short](gen/J/Jylkyt_wikt.html)
 

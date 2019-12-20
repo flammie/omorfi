@@ -10,11 +10,3 @@ lexeme: EU
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### EU wordforms
-
-EU-
-EU‐
-EU‑
-EU
-

@@ -10,6 +10,7 @@ paradigm: PROPN_YRITTÄ
 * KOTUS paradigm used in their dictionary is 9-C
 * The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttä `
 
-### yrittÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/Y/Yrittä.html), [short](gen/Y/Yrittä_wikt.html)
 

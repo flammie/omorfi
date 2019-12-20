@@ -10,6 +10,7 @@ paradigm: NOUN_BERNIE
 * KOTUS paradigm used in their dictionary is 3
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*e `
 
-### bernie wordforms
+## See also
 
+* Inflection tables: [full](gen/B/bernie.html), [short](gen/B/bernie_wikt.html)
 

@@ -7,10 +7,5 @@ lexeme: kumminkaan
 
 * _usually seen as adverb (however, negative), but can be analysed as a form of *kumpi* (which)_
 * UPOS:  ADV
-* Origins: 
-
-
-### kumminkaan wordforms
-
-kumminkaan
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/kumminkaan) 
 

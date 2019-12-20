@@ -11,6 +11,7 @@ paradigm: NOUN_TYÖT
 * The lemmas must end in * yöt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yöt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### tyÖt wordforms
+## See also
 
+* Inflection tables: [full](gen/T/työt.html), [short](gen/T/työt_wikt.html)
 

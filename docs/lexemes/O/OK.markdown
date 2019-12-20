@@ -9,11 +9,3 @@ lexeme: OK
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### OK wordforms
-
-OK-
-OK‐
-OK‑
-OK
-

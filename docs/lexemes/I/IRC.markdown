@@ -9,11 +9,3 @@ lexeme: IRC
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### IRC wordforms
-
-IRC-
-IRC‐
-IRC‑
-IRC
-

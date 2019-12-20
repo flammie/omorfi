@@ -10,60 +10,7 @@ paradigm: PRON_MONTA
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` monta `
 
-### monta wordforms
+## See also
 
-montaa
-montaahanko
-montaahankaan
-montaahanpa
-montaahan
-montaakohan
-montaakokin
-montaakokaan
-montaakos
-montaakopa
-montaako
-montaakinhan
-montaakinko
-montaakinkaan
-montaakinpa
-montaakin
-montaakaanhan
-montaakaanko
-montaakaankin
-montaakaanpa
-montaakaan
-montaapahan
-montaapako
-montaapakin
-montaapakaan
-montaapas
-montaapa
-monta
-montahanko
-montahankaan
-montahanpa
-montahan
-montakohan
-montakokin
-montakokaan
-montakos
-montakopa
-montako
-montakinhan
-montakinko
-montakinkaan
-montakinpa
-montakin
-montakaanhan
-montakaanko
-montakaankin
-montakaanpa
-montakaan
-montapahan
-montapako
-montapakin
-montapakaan
-montapas
-montapa
+* Inflection tables: [full](gen/M/monta.html), [short](gen/M/monta_wikt.html)
 

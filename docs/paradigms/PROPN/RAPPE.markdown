@@ -10,6 +10,7 @@ paradigm: PROPN_RAPPE
 * KOTUS paradigm used in their dictionary is 8-B
 * The lemmas must end in * pe * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ppe `
 
-### rappe wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rappe.html), [short](gen/R/Rappe_wikt.html)
 

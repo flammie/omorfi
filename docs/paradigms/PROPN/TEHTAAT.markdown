@@ -11,6 +11,7 @@ paradigm: PROPN_TEHTAAT
 * The lemmas must end in * taat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` taat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### tehtaat wordforms
+## See also
 
+* Inflection tables: [full](gen/T/Tehtaat.html), [short](gen/T/Tehtaat_wikt.html)
 

@@ -11,6 +11,7 @@ paradigm: PROPN_KYDÖT
 * The lemmas must end in * döt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` döt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kydÖt wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kydöt.html), [short](gen/K/Kydöt_wikt.html)
 

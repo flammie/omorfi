@@ -23,8 +23,3 @@ lexeme: että
 * UPOS:  CCONJ
 * Origins: omorfi 
 
-
-### että wordforms
-
-että
-

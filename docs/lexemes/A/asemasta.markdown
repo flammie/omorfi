@@ -25,34 +25,3 @@ lexeme: asemasta
 * Origins: 
 * AdpType:  POSTPOSITION
 
-
-### asemasta wordforms
-
-asemasta
-asemastahanko
-asemastahankaan
-asemastahanpa
-asemastahan
-asemastakohan
-asemastakokin
-asemastakokaan
-asemastakos
-asemastakopa
-asemastako
-asemastakinhan
-asemastakinko
-asemastakinkaan
-asemastakinpa
-asemastakin
-asemastakaanhan
-asemastakaanko
-asemastakaankin
-asemastakaanpa
-asemastakaan
-asemastapahan
-asemastapako
-asemastapakin
-asemastapakaan
-asemastapas
-asemastapa
-

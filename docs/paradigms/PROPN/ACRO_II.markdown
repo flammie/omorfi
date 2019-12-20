@@ -10,6 +10,7 @@ paradigm: PROPN_ACRO_II
 * KOTUS paradigm used in their dictionary is 0
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [IJij] `
 
-### acro_ii wordforms
+## See also
 
+* Inflection tables: [full](gen/A/Acro_ii.html), [short](gen/A/Acro_ii_wikt.html)
 

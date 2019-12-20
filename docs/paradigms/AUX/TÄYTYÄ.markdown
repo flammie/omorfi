@@ -10,6 +10,7 @@ paradigm: AUX_TÄYTYÄ
 * KOTUS paradigm used in their dictionary is 52-F
 * The lemmas must end in * tyä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` täytyä `
 
-### tÄytyÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/T/täytyä.html), [short](gen/T/täytyä_wikt.html)
 

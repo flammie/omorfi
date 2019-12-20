@@ -10,6 +10,7 @@ paradigm: NOUN_NÄKY
 * KOTUS paradigm used in their dictionary is 1-D
 * The lemmas must end in * ky * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ky `
 
-### nÄky wordforms
+## See also
 
+* Inflection tables: [full](gen/N/näky.html), [short](gen/N/näky_wikt.html)
 

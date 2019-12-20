@@ -10,6 +10,7 @@ paradigm: ADJ_VÄNKÄ
 * KOTUS paradigm used in their dictionary is 10-G
 * The lemmas must end in * kä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nkä `
 
-### vÄnkÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vänkä.html), [short](gen/V/vänkä_wikt.html)
 

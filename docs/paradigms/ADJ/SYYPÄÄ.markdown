@@ -10,6 +10,7 @@ paradigm: ADJ_SYYPÄÄ
 * KOTUS paradigm used in their dictionary is 18
 * The lemmas must end in * ä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ää `
 
-### syypÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/syypää.html), [short](gen/S/syypää_wikt.html)
 

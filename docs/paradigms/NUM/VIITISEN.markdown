@@ -10,36 +10,7 @@ paradigm: NUM_VIITISEN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isen `
 
-### viitisen wordforms
+## See also
 
-viitisen
-viitisen-
-viitisen‐
-viitisen‑
-viitisenhänkään
-viitisenhänkö
-viitisenhänpä
-viitisenhän
-viitisenkinhän
-viitisenkinkään
-viitisenkinkö
-viitisenkinpä
-viitisenkin
-viitisenkäänhän
-viitisenkäänkin
-viitisenkäänkö
-viitisenkäänpä
-viitisenkään
-viitisenköhän
-viitisenkökin
-viitisenkökään
-viitisenkös
-viitisenköpä
-viitisenkö
-viitisenpähän
-viitisenpäkin
-viitisenpäkään
-viitisenpäkö
-viitisenpäs
-viitisenpä
+* Inflection tables: [full](gen/V/viitisen.html), [short](gen/V/viitisen_wikt.html)
 

@@ -37,7 +37,3 @@ lexeme: vaikka
 * UPOS:  SCONJ
 * Origins: 
 
-
-### vaikka wordforms
-
-

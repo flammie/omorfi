@@ -10,6 +10,7 @@ paradigm: VERB_SYÖDÄ
 * KOTUS paradigm used in their dictionary is 64
 * The lemmas must end in * yödä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yödä `
 
-### syÖdÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/syödä.html), [short](gen/S/syödä_wikt.html)
 

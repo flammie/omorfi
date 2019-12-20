@@ -10,6 +10,7 @@ paradigm: VERB_HELÄJÄÄ
 * KOTUS paradigm used in their dictionary is 77
 * The lemmas must end in * ää * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` äjää `
 
-### helÄjÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/H/heläjää.html), [short](gen/H/heläjää_wikt.html)
 

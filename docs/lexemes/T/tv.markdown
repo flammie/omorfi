@@ -9,11 +9,3 @@ lexeme: tv
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### tv wordforms
-
-tv-
-tv‐
-tv‑
-tv
-

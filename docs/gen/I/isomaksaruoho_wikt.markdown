@@ -1,0 +1,23 @@
+### Inflection of isomaksaruoho
+
+#### Nominal cases
+
+| *Case* | _Singular_ | _Plural_ | _Possessive_ | _Clitic_ |
+|:-------|:-----------|:---------|:-------------|:---------|
+| _Nominative_ | iso-maksa-ruoho/iso-maksaruoho/isomaksa-ruoho/isomaksaruoho | isot-maksa-ruohot/isot-maksaruohot/isotmaksa-ruohot/isotmaksaruohot | --- | isot-maksa-ruohothan/isot-maksaruohothan/isotmaksa-ruohothan/isotmaksaruohothan |
+| _Genitive_ | ison-maksa-ruohon/ison-maksaruohon/isonmaksa-ruohon/isonmaksaruohon | isojen-maksa-ruohojen/isojen-maksaruohojen/isojenmaksa-ruohojen/isojenmaksaruohojen | --- | isojen-maksa-ruohojenko/isojen-maksaruohojenko/isojenmaksa-ruohojenko/isojenmaksaruohojenko |
+| _Partitive_ | isoa-maksa-ruohoa/isoa-maksaruohoa/isoamaksa-ruohoa/isoamaksaruohoa | isoja-maksa-ruohoja/isoja-maksaruohoja/isojamaksa-ruohoja/isojamaksaruohoja | isoa-maksa-ruohoansa/isoa-maksaruohoansa/isoamaksa-ruohoansa/isoamaksaruohoansa | isoja-maksa-ruohojapa/isoja-maksaruohojapa/isojamaksa-ruohojapa/isojamaksaruohojapa |
+| _Inessive_ | isossa-maksa-ruohossa/isossa-maksaruohossa/isossamaksa-ruohossa/isossamaksaruohossa | isoissa-maksa-ruohoissa/isoissa-maksaruohoissa/isoissamaksa-ruohoissa/isoissamaksaruohoissa | isossa-maksa-ruohossamme/isossa-maksaruohossamme/isossamaksa-ruohossamme/isossamaksaruohossamme | isoissa-maksa-ruohoissakaan/isoissa-maksaruohoissakaan/isoissamaksa-ruohoissakaan/isoissamaksaruohoissakaan |
+| _Elative_ | isosta-maksa-ruohosta/isosta-maksaruohosta/isostamaksa-ruohosta/isostamaksaruohosta | isoista-maksa-ruohoista/isoista-maksaruohoista/isoistamaksa-ruohoista/isoistamaksaruohoista | isosta-maksa-ruohostanne/isosta-maksaruohostanne/isostamaksa-ruohostanne/isostamaksaruohostanne | isoista-maksa-ruohoistakin/isoista-maksaruohoistakin/isoistamaksa-ruohoistakin/isoistamaksaruohoistakin |
+| _Illative_ | --- | --- | --- | --- |
+| _Adessive_ | isolla-maksa-ruoholla/isolla-maksaruoholla/isollamaksa-ruoholla/isollamaksaruoholla | isoilla-maksa-ruohoilla/isoilla-maksaruohoilla/isoillamaksa-ruohoilla/isoillamaksaruohoilla | isolla-maksa-ruohollani/isolla-maksaruohollani/isollamaksa-ruohollani/isollamaksaruohollani | isoilla-maksa-ruohoillapa/isoilla-maksaruohoillapa/isoillamaksa-ruohoillapa/isoillamaksaruohoillapa |
+| _Ablative_ | isolta-maksa-ruoholta/isolta-maksaruoholta/isoltamaksa-ruoholta/isoltamaksaruoholta | isoilta-maksa-ruohoilta/isoilta-maksaruohoilta/isoiltamaksa-ruohoilta/isoiltamaksaruohoilta | isolta-maksa-ruoholtasi/isolta-maksaruoholtasi/isoltamaksa-ruoholtasi/isoltamaksaruoholtasi | isoilta-maksa-ruohoiltakaan/isoilta-maksaruohoiltakaan/isoiltamaksa-ruohoiltakaan/isoiltamaksaruohoiltakaan |
+| _Allative_ | isolle-maksa-ruoholle/isolle-maksaruoholle/isollemaksa-ruoholle/isollemaksaruoholle | isoille-maksa-ruohoille/isoille-maksaruohoille/isoillemaksa-ruohoille/isoillemaksaruohoille | isolle-maksa-ruoholleen/isolle-maksa-ruohollensa/isolle-maksaruoholleen/isolle-maksaruohollensa/isollemaksa-ruoholleen/isollemaksa-ruohollensa/isollemaksaruoholleen/isollemaksaruohollensa | isoille-maksa-ruohoillehan/isoille-maksaruohoillehan/isoillemaksa-ruohoillehan/isoillemaksaruohoillehan |
+| _Essive_ | isona-maksa-ruohona/isona-maksaruohona/isonamaksa-ruohona/isonamaksaruohona | isoina-maksa-ruohoina/isoina-maksaruohoina/isoinamaksa-ruohoina/isoinamaksaruohoina | isona-maksa-ruohonamme/isona-maksaruohonamme/isonamaksa-ruohonamme/isonamaksaruohonamme | isoina-maksa-ruohoinako/isoina-maksaruohoinako/isoinamaksa-ruohoinako/isoinamaksaruohoinako |
+| _Translative_ | isoksi-maksa-ruohoksi/isoksi-maksaruohoksi/isoksimaksa-ruohoksi/isoksimaksaruohoksi | isoiksi-maksa-ruohoiksi/isoiksi-maksaruohoiksi/isoiksimaksa-ruohoiksi/isoiksimaksaruohoiksi | isoksi-maksa-ruohoksenne/isoksi-maksaruohoksenne/isoksimaksa-ruohoksenne/isoksimaksaruohoksenne | isoiksi-maksa-ruohoiksipa/isoiksi-maksaruohoiksipa/isoiksimaksa-ruohoiksipa/isoiksimaksaruohoiksipa |
+| _Abessive_ | isotta-maksa-ruohotta/isotta-maksaruohotta/isottamaksa-ruohotta/isottamaksaruohotta | isoitta-maksa-ruohoitta/isoitta-maksaruohoitta/isoittamaksa-ruohoitta/isoittamaksaruohoitta | isotta-maksa-ruohottaan/isotta-maksa-ruohottansa/isotta-maksaruohottaan/isotta-maksaruohottansa/isottamaksa-ruohottaan/isottamaksa-ruohottansa/isottamaksaruohottaan/isottamaksaruohottansa | isoitta-maksa-ruohoittakaan/isoitta-maksaruohoittakaan/isoittamaksa-ruohoittakaan/isoittamaksaruohoittakaan |
+| _Instructive_ | --- | --- | --- | --- |
+| _Comitative_ | --- | --- | --- | --- |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [isomaksaruoho full form list](isomaksaruoho.html)
+

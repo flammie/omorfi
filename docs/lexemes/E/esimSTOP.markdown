@@ -16,7 +16,3 @@ lexeme: esim.
 * UPOS:  ADV
 * Origins: omorfi joukahainen 
 
-
-### esimSTOP wordforms
-
-

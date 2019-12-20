@@ -10,6 +10,7 @@ paradigm: ADJ_KYMMENTÄ
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### kymmentÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kymmentä.html), [short](gen/K/kymmentä_wikt.html)
 

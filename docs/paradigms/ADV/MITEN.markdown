@@ -10,40 +10,7 @@ paradigm: ADV_MITEN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### miten wordforms
+## See also
 
-miten
-mitenhänkään
-mitenhänkö
-mitenhänpä
-mitenhän
-mitenkinhän
-mitenkinkään
-mitenkinkö
-mitenkinpä
-mitenkin
-mitenkähän
-mitenkäänhän
-mitenkäänkin
-mitenkäänkö
-mitenkäänpä
-mitenkään
-mitenkäs
-mitenkäpähän
-mitenkäpäs
-mitenkäpä
-mitenkä
-mitenköhän
-mitenkökin
-mitenkökään
-mitenkös
-mitenköpä
-mitenkö
-mitens
-mitenpähän
-mitenpäkin
-mitenpäkään
-mitenpäkö
-mitenpäs
-mitenpä
+* Inflection tables: [full](gen/M/miten.html), [short](gen/M/miten_wikt.html)
 

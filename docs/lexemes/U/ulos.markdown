@@ -7,7 +7,7 @@ lexeme: ulos
 
 * _adverb (out)_
 * UPOS:  ADV
-* Origins: 
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/ulos) 
 
 
 ###  ulos₂
@@ -16,35 +16,4 @@ lexeme: ulos
 * UPOS:  ADP
 * Origins: omorfi 
 * AdpType:  POSTPOSITION
-
-
-### ulos wordforms
-
-ulos
-uloshanko
-uloshankaan
-uloshanpa
-uloshan
-uloskohan
-uloskokin
-uloskokaan
-uloskos
-uloskopa
-ulosko
-uloskinhan
-uloskinko
-uloskinkaan
-uloskinpa
-uloskin
-uloskaanhan
-uloskaanko
-uloskaankin
-uloskaanpa
-uloskaan
-ulospahan
-ulospako
-ulospakin
-ulospakaan
-ulospas
-ulospa
 

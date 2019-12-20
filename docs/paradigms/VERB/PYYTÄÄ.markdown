@@ -10,6 +10,7 @@ paradigm: VERB_PYYTÄÄ
 * KOTUS paradigm used in their dictionary is 54-F
 * The lemmas must end in * tää * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tää `
 
-### pyytÄÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pyytää.html), [short](gen/P/pyytää_wikt.html)
 

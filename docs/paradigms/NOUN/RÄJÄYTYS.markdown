@@ -10,6 +10,7 @@ paradigm: NOUN_RÄJÄYTYS
 * KOTUS paradigm used in their dictionary is 39
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s `
 
-### rÄjÄytys wordforms
+## See also
 
+* Inflection tables: [full](gen/R/räjäytys.html), [short](gen/R/räjäytys_wikt.html)
 

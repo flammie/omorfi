@@ -11,6 +11,7 @@ paradigm: PROPN_TYÖTTÖMÄT
 * The lemmas must end in * tömät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ttömät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### tyÖttÖmÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/T/Työttömät.html), [short](gen/T/Työttömät_wikt.html)
 

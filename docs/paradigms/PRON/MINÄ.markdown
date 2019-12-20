@@ -10,6 +10,7 @@ paradigm: PRON_MINÄ
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * nä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` inä `
 
-### minÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/minä.html), [short](gen/M/minä_wikt.html)
 

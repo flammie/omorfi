@@ -11,6 +11,7 @@ paradigm: PROPN_KOUVOT
 * The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ot `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kouvot wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Kouvot.html), [short](gen/K/Kouvot_wikt.html)
 

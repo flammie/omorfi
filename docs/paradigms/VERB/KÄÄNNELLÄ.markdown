@@ -10,6 +10,7 @@ paradigm: VERB_KÄÄNNELLÄ
 * KOTUS paradigm used in their dictionary is 67-J
 * The lemmas must end in * nellä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnellä `
 
-### kÄÄnnellÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/käännellä.html), [short](gen/K/käännellä_wikt.html)
 

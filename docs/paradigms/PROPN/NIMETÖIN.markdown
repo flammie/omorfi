@@ -10,6 +10,7 @@ paradigm: PROPN_NIMETÖIN
 * KOTUS paradigm used in their dictionary is 34-C
 * The lemmas must end in * töin * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` töin `
 
-### nimetÖin wordforms
+## See also
 
+* Inflection tables: [full](gen/N/Nimetöin.html), [short](gen/N/Nimetöin_wikt.html)
 

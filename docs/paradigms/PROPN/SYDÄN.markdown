@@ -10,6 +10,7 @@ paradigm: PROPN_SYDÄN
 * KOTUS paradigm used in their dictionary is 33
 * The lemmas must end in * n * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*n `
 
-### sydÄn wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Sydän.html), [short](gen/S/Sydän_wikt.html)
 

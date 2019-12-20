@@ -10,6 +10,7 @@ paradigm: NOUN_ACRO_PUNTA
 * KOTUS paradigm used in their dictionary is 10
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### acro_punta wordforms
+## See also
 
+* Inflection tables: [full](gen/A/acro_punta.html), [short](gen/A/acro_punta_wikt.html)
 

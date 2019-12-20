@@ -10,11 +10,3 @@ lexeme: WHO
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### WHO wordforms
-
-WHO-
-WHO‐
-WHO‑
-WHO
-

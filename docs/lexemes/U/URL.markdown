@@ -9,11 +9,3 @@ lexeme: URL
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### URL wordforms
-
-URL-
-URL‐
-URL‑
-URL
-

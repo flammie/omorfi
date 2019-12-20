@@ -9,8 +9,3 @@ lexeme: suinkaan
 * UPOS:  ADV
 * Origins: 
 
-
-### suinkaan wordforms
-
-suinkaan
-

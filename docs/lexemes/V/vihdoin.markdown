@@ -9,8 +9,3 @@ lexeme: vihdoin
 * UPOS:  ADV
 * Origins: 
 
-
-### vihdoin wordforms
-
-vihdoin
-

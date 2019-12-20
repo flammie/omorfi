@@ -10,6 +10,7 @@ paradigm: NOUN_LÄNSI
 * KOTUS paradigm used in their dictionary is 28-J
 * The lemmas must end in * si * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nsi `
 
-### lÄnsi wordforms
+## See also
 
+* Inflection tables: [full](gen/L/länsi.html), [short](gen/L/länsi_wikt.html)
 

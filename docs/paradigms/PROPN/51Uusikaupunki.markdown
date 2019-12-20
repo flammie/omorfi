@@ -10,6 +10,7 @@ paradigm: PROPN_51Uusikaupunki
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * sikaupunki * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` Uusikaupunki `
 
-### 51uusikaupunki wordforms
+## See also
 
+* Inflection tables: [full](gen/5/uusikaupunki.html), [short](gen/5/uusikaupunki_wikt.html)
 

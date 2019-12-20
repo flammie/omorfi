@@ -9,11 +9,3 @@ lexeme: XML
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### XML wordforms
-
-XML-
-XML‐
-XML‑
-XML
-

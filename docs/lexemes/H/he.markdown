@@ -9,8 +9,3 @@ lexeme: he
 * UPOS:  INTJ
 * Origins: 
 
-
-### he wordforms
-
-he
-

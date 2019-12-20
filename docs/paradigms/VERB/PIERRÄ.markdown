@@ -10,6 +10,7 @@ paradigm: VERB_PIERRÄ
 * KOTUS paradigm used in their dictionary is 67
 * The lemmas must end in * rä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rrä `
 
-### pierrÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/P/pierrä.html), [short](gen/P/pierrä_wikt.html)
 

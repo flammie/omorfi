@@ -7,36 +7,5 @@ lexeme: myöhään
 
 * _usually seen as adverb (late), but can be analysed as illative of the adjective *myöhä* (late)_
 * UPOS:  ADV
-* Origins: 
-
-
-### myöhään wordforms
-
-myöhään
-myöhäänhänkään
-myöhäänhänkö
-myöhäänhänpä
-myöhäänhän
-myöhäänkinhän
-myöhäänkinkään
-myöhäänkinkö
-myöhäänkinpä
-myöhäänkin
-myöhäänkäänhän
-myöhäänkäänkin
-myöhäänkäänkö
-myöhäänkäänpä
-myöhäänkään
-myöhäänköhän
-myöhäänkökin
-myöhäänkökään
-myöhäänkös
-myöhäänköpä
-myöhäänkö
-myöhäänpähän
-myöhäänpäkin
-myöhäänpäkään
-myöhäänpäkö
-myöhäänpäs
-myöhäänpä
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/myöhään) 
 

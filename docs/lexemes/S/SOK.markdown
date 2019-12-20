@@ -9,11 +9,3 @@ lexeme: SOK
 * UPOS:  NOUN
 * Origins: 
 
-
-### SOK wordforms
-
-SOK-
-SOK‐
-SOK‑
-SOK
-

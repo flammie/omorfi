@@ -11,6 +11,7 @@ paradigm: PROPN_NIITYT
 * The lemmas must end in * yt * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tyt `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### niityt wordforms
+## See also
 
+* Inflection tables: [full](gen/N/Niityt.html), [short](gen/N/Niityt_wikt.html)
 

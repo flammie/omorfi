@@ -10,11 +10,3 @@ lexeme: IBM
 * Origins: 
 * Possible NER class:  ORG
 
-
-### IBM wordforms
-
-IBM-
-IBM‐
-IBM‑
-IBM
-

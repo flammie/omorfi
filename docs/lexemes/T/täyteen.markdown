@@ -9,34 +9,3 @@ lexeme: täyteen
 * UPOS:  ADV
 * Origins: 
 
-
-### täyteen wordforms
-
-täyteen
-täyteenhänkään
-täyteenhänkö
-täyteenhänpä
-täyteenhän
-täyteenkinhän
-täyteenkinkään
-täyteenkinkö
-täyteenkinpä
-täyteenkin
-täyteenkäänhän
-täyteenkäänkin
-täyteenkäänkö
-täyteenkäänpä
-täyteenkään
-täyteenköhän
-täyteenkökin
-täyteenkökään
-täyteenkös
-täyteenköpä
-täyteenkö
-täyteenpähän
-täyteenpäkin
-täyteenpäkään
-täyteenpäkö
-täyteenpäs
-täyteenpä
-

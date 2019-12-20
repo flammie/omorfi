@@ -11,6 +11,7 @@ paradigm: NOUN_PEIPOT
 * The lemmas must end in * ot * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pot `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### peipot wordforms
+## See also
 
+* Inflection tables: [full](gen/P/peipot.html), [short](gen/P/peipot_wikt.html)
 

@@ -9,11 +9,3 @@ lexeme: PR
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### PR wordforms
-
-PR-
-PR‐
-PR‑
-PR
-

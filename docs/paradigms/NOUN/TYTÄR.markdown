@@ -10,6 +10,7 @@ paradigm: NOUN_TYTÄR
 * KOTUS paradigm used in their dictionary is 32-C
 * The lemmas must end in * är * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tär `
 
-### tytÄr wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tytär.html), [short](gen/T/tytär_wikt.html)
 

@@ -11,6 +11,7 @@ paradigm: PROPN_RIUTAT
 * The lemmas must end in * at * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### riutat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Riutat.html), [short](gen/R/Riutat_wikt.html)
 

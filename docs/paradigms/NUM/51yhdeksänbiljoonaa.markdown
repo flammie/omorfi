@@ -10,6 +10,7 @@ paradigm: NUM_51yhdeksänbiljoonaa
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * änbiljoonaa * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yhdeksänbiljoonaa `
 
-### 51yhdeksänbiljoonaa wordforms
+## See also
 
+* Inflection tables: [full](gen/5/yhdeksänbiljoonaa.html), [short](gen/5/yhdeksänbiljoonaa_wikt.html)
 

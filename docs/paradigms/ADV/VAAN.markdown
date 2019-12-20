@@ -10,7 +10,7 @@ paradigm: ADV_VAAN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### vaan wordforms
+## See also
 
-vaan
+* Inflection tables: [full](gen/V/vaan.html), [short](gen/V/vaan_wikt.html)
 

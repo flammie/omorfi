@@ -18,11 +18,3 @@ lexeme: ka
 * Origins: 
 * Semantic tags:  MEASURE
 
-
-### ka wordforms
-
-ka-
-ka‐
-ka‑
-ka
-

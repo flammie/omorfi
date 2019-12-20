@@ -10,11 +10,3 @@ lexeme: WSOY
 * Origins: 
 * Possible NER class:  ORG
 
-
-### WSOY wordforms
-
-WSOY-
-WSOY‐
-WSOY‑
-WSOY
-

@@ -10,6 +10,7 @@ paradigm: ADJ_YKSILÖITY
 * KOTUS paradigm used in their dictionary is 1-F
 * The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ty `
 
-### yksilÖity wordforms
+## See also
 
+* Inflection tables: [full](gen/Y/yksilöity.html), [short](gen/Y/yksilöity_wikt.html)
 

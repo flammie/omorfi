@@ -56,3 +56,6 @@
 | _Abessive_ | yksilöidyimmättä | yksilöidyimmittä | yksilöidyimmättänsä/yksilöidyimmättään | yksilöidyimmittäkään |
 | _Instructive_ | --- | yksilöidyimmin | --- | yksilöidyimminkö |
 | _Comitative_ | yksilöidyimpine | yksilöidyimpine | yksilöidyimpinesi | yksilöidyimpinehän |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [yksilöity full form list](yksilöity.html)
+

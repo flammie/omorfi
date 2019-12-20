@@ -10,11 +10,3 @@ lexeme: FIFA
 * Origins: 
 * Possible NER class:  ORG
 
-
-### FIFA wordforms
-
-FIFA-
-FIFA‐
-FIFA‑
-FIFA
-

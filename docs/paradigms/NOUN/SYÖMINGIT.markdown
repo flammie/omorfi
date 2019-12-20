@@ -11,6 +11,7 @@ paradigm: NOUN_SYÖMINGIT
 * The lemmas must end in * git * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ngit `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### syÖmingit wordforms
+## See also
 
+* Inflection tables: [full](gen/S/syömingit.html), [short](gen/S/syömingit_wikt.html)
 

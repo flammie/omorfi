@@ -7,7 +7,3 @@ lexeme: Lähellä
 
 * _This proper noun overlaps forms of very common *lähellä* (close)._
 
-
-### Lähellä wordforms
-
-

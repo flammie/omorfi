@@ -10,6 +10,7 @@ paradigm: VERB_TYMPIÄ
 * KOTUS paradigm used in their dictionary is 61-H
 * The lemmas must end in * piä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mpiä `
 
-### tympiÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tympiä.html), [short](gen/T/tympiä_wikt.html)
 

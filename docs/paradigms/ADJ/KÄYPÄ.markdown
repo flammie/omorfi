@@ -10,6 +10,7 @@ paradigm: ADJ_KÄYPÄ
 * KOTUS paradigm used in their dictionary is 10-E
 * The lemmas must end in * pä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pä `
 
-### kÄypÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/käypä.html), [short](gen/K/käypä_wikt.html)
 

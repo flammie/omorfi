@@ -9,7 +9,3 @@ lexeme: TCP/IP
 * UPOS:  NOUN
 * Origins: 
 
-
-### TCPSLASHIP wordforms
-
-

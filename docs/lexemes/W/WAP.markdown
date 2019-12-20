@@ -9,11 +9,3 @@ lexeme: WAP
 * UPOS:  NOUN
 * Origins: 
 
-
-### WAP wordforms
-
-WAP-
-WAP‐
-WAP‑
-WAP
-

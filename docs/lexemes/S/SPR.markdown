@@ -10,11 +10,3 @@ lexeme: SPR
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### SPR wordforms
-
-SPR-
-SPR‐
-SPR‑
-SPR
-

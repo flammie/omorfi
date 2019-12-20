@@ -9,11 +9,3 @@ lexeme: HKL
 * UPOS:  NOUN
 * Origins: 
 
-
-### HKL wordforms
-
-HKL-
-HKL‐
-HKL‑
-HKL
-

@@ -10,11 +10,7 @@ paradigm: PROPN_MC
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### mc wordforms
+## See also
 
-mc
-mc-
-mc‐
-mc‑
-mc
+* Inflection tables: [full](gen/M/Mc.html), [short](gen/M/Mc_wikt.html)
 

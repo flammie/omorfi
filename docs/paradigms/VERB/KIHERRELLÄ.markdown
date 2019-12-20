@@ -10,6 +10,7 @@ paradigm: VERB_KIHERRELLÄ
 * KOTUS paradigm used in their dictionary is 67-K
 * The lemmas must end in * rellä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` rrellä `
 
-### kiherrellÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kiherrellä.html), [short](gen/K/kiherrellä_wikt.html)
 

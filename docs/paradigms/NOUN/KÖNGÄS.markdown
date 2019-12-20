@@ -10,6 +10,7 @@ paradigm: NOUN_KÖNGÄS
 * KOTUS paradigm used in their dictionary is 41-G
 * The lemmas must end in * gäs * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngäs `
 
-### kÖngÄs wordforms
+## See also
 
+* Inflection tables: [full](gen/K/köngäs.html), [short](gen/K/köngäs_wikt.html)
 

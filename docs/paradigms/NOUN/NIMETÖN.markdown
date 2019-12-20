@@ -10,6 +10,7 @@ paradigm: NOUN_NIMETÖN
 * KOTUS paradigm used in their dictionary is 34-C
 * The lemmas must end in * ön * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tön `
 
-### nimetÖn wordforms
+## See also
 
+* Inflection tables: [full](gen/N/nimetön.html), [short](gen/N/nimetön_wikt.html)
 

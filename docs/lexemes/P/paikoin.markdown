@@ -9,34 +9,3 @@ lexeme: paikoin
 * UPOS:  ADV
 * Origins: 
 
-
-### paikoin wordforms
-
-paikoin
-paikoinhanko
-paikoinhankaan
-paikoinhanpa
-paikoinhan
-paikoinkohan
-paikoinkokin
-paikoinkokaan
-paikoinkos
-paikoinkopa
-paikoinko
-paikoinkinhan
-paikoinkinko
-paikoinkinkaan
-paikoinkinpa
-paikoinkin
-paikoinkaanhan
-paikoinkaanko
-paikoinkaankin
-paikoinkaanpa
-paikoinkaan
-paikoinpahan
-paikoinpako
-paikoinpakin
-paikoinpakaan
-paikoinpas
-paikoinpa
-

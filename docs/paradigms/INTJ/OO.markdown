@@ -10,7 +10,7 @@ paradigm: INTJ_OO
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### oo wordforms
+## See also
 
-oo
+* Inflection tables: [full](gen/O/oo.html), [short](gen/O/oo_wikt.html)
 

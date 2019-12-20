@@ -10,6 +10,7 @@ paradigm: NUM_51kaksibiljardia
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * ksibiljardia * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kaksibiljardia `
 
-### 51kaksibiljardia wordforms
+## See also
 
+* Inflection tables: [full](gen/5/kaksibiljardia.html), [short](gen/5/kaksibiljardia_wikt.html)
 

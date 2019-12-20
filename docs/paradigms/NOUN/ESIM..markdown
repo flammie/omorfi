@@ -10,6 +10,7 @@ paradigm: NOUN_ESIM.
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` \. `
 
-### esim. wordforms
+## See also
 
+* Inflection tables: [full](gen/E/esim..html), [short](gen/E/esim._wikt.html)
 

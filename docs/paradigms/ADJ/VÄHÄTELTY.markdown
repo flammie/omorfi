@@ -10,6 +10,7 @@ paradigm: ADJ_VÄHÄTELTY
 * KOTUS paradigm used in their dictionary is 1-I
 * The lemmas must end in * ty * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` lty `
 
-### vÄhÄtelty wordforms
+## See also
 
+* Inflection tables: [full](gen/V/vähätelty.html), [short](gen/V/vähätelty_wikt.html)
 

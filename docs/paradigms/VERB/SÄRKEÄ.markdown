@@ -10,6 +10,7 @@ paradigm: VERB_SÄRKEÄ
 * KOTUS paradigm used in their dictionary is 58-L
 * The lemmas must end in * keä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` keä `
 
-### sÄrkeÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/S/särkeä.html), [short](gen/S/särkeä_wikt.html)
 

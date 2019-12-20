@@ -10,11 +10,3 @@ lexeme: DDR
 * Origins: 
 * Possible NER class:  GEO
 
-
-### DDR wordforms
-
-DDR-
-DDR‐
-DDR‑
-DDR
-

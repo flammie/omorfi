@@ -10,6 +10,7 @@ paradigm: VERB_MYYDÄ
 * KOTUS paradigm used in their dictionary is 63
 * The lemmas must end in * ydä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` yydä `
 
-### myydÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/myydä.html), [short](gen/M/myydä_wikt.html)
 

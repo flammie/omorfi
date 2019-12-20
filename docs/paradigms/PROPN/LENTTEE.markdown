@@ -10,6 +10,7 @@ paradigm: PROPN_LENTTEE
 * KOTUS paradigm used in their dictionary is 17
 * The lemmas must end in * e * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ee `
 
-### lenttee wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Lenttee.html), [short](gen/L/Lenttee_wikt.html)
 

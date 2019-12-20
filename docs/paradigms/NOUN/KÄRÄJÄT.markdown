@@ -11,6 +11,7 @@ paradigm: NOUN_KÄRÄJÄT
 * The lemmas must end in * ät * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ät `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kÄrÄjÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/K/käräjät.html), [short](gen/K/käräjät_wikt.html)
 

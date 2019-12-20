@@ -12,7 +12,3 @@ lexeme: Elokuva-arkisto
 * Possible NER class:  ORG
 * Blacklisted:  PROPN-BLOCKING
 
-
-### Elokuva-arkisto wordforms
-
-

@@ -10,11 +10,3 @@ lexeme: VR
 * Origins: omorfi 
 * Possible NER class:  ORG
 
-
-### VR wordforms
-
-VR-
-VR‐
-VR‑
-VR
-

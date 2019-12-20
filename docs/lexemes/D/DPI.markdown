@@ -9,11 +9,3 @@ lexeme: DPI
 * UPOS:  NOUN
 * Origins: 
 
-
-### DPI wordforms
-
-DPI-
-DPI‐
-DPI‑
-DPI
-

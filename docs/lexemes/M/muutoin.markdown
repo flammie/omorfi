@@ -9,7 +9,3 @@ lexeme: muutoin
 * UPOS:  ADV
 * Origins: 
 
-
-### muutoin wordforms
-
-

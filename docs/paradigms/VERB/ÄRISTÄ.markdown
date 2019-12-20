@@ -10,6 +10,7 @@ paradigm: VERB_ÄRISTÄ
 * KOTUS paradigm used in their dictionary is 66
 * The lemmas must end in * tä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` stä `
 
-### ÄristÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/Ä/äristä.html), [short](gen/Ä/äristä_wikt.html)
 

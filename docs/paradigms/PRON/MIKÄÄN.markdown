@@ -10,6 +10,7 @@ paradigm: PRON_MIKÄÄN
 * KOTUS paradigm used in their dictionary is 101
 * The lemmas must end in * kään * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` mikään `
 
-### mikÄÄn wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mikään.html), [short](gen/M/mikään_wikt.html)
 

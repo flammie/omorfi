@@ -11,6 +11,7 @@ paradigm: NOUN_RAVUT
 * The lemmas must end in * vut * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` vut `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### ravut wordforms
+## See also
 
+* Inflection tables: [full](gen/R/ravut.html), [short](gen/R/ravut_wikt.html)
 

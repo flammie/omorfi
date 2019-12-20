@@ -11,6 +11,7 @@ paradigm: NOUN_KUULOKKEET
 * The lemmas must end in * keet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*keet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kuulokkeet wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kuulokkeet.html), [short](gen/K/kuulokkeet_wikt.html)
 

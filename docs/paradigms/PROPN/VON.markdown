@@ -10,33 +10,7 @@ paradigm: PROPN_VON
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### von wordforms
+## See also
 
-von
-vonhanko
-vonhankaan
-vonhanpa
-vonhan
-vonkohan
-vonkokin
-vonkokaan
-vonkos
-vonkopa
-vonko
-vonkinhan
-vonkinko
-vonkinkaan
-vonkinpa
-vonkin
-vonkaanhan
-vonkaanko
-vonkaankin
-vonkaanpa
-vonkaan
-vonpahan
-vonpako
-vonpakin
-vonpakaan
-vonpas
-vonpa
+* Inflection tables: [full](gen/V/Von.html), [short](gen/V/Von_wikt.html)
 

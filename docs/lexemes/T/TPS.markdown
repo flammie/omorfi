@@ -10,11 +10,3 @@ lexeme: TPS
 * Origins: 
 * Possible NER class:  ORG
 
-
-### TPS wordforms
-
-TPS-
-TPS‐
-TPS‑
-TPS
-

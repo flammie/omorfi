@@ -11,6 +11,7 @@ paradigm: NOUN_RENKAAT
 * The lemmas must end in * kaat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kaat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### renkaat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/renkaat.html), [short](gen/R/renkaat_wikt.html)
 

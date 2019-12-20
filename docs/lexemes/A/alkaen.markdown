@@ -7,14 +7,14 @@ lexeme: alkaen
 
 * _onwards, to start, as adverb, “alun alkaen“_
 * UPOS:  ADV
-* Origins: omorfi 
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/alkaen) omorfi 
 
 
 ###  alkaen₁
 
 * _onwards, to start, as adverb, “alun alkaen”_
 * UPOS:  ADV
-* Origins: omorfi 
+* Origins: [fiwikt](https://fi.wiktionary.org/wiki/alkaen) omorfi 
 
 
 ###  alkaen₂
@@ -31,35 +31,4 @@ lexeme: alkaen
 * UPOS:  ADP
 * Origins: 
 * AdpType:  POSTPOSITION
-
-
-### alkaen wordforms
-
-alkaen
-alkaenhanko
-alkaenhankaan
-alkaenhanpa
-alkaenhan
-alkaenkohan
-alkaenkokin
-alkaenkokaan
-alkaenkos
-alkaenkopa
-alkaenko
-alkaenkinhan
-alkaenkinko
-alkaenkinkaan
-alkaenkinpa
-alkaenkin
-alkaenkaanhan
-alkaenkaanko
-alkaenkaankin
-alkaenkaanpa
-alkaenkaan
-alkaenpahan
-alkaenpako
-alkaenpakin
-alkaenpakaan
-alkaenpas
-alkaenpa
 

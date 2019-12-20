@@ -30,8 +30,3 @@ lexeme: kuin
 * UPOS:  CCONJ
 * Origins: 
 
-
-### kuin wordforms
-
-kuin
-

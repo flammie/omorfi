@@ -11,6 +11,7 @@ paradigm: PROPN_RANGAT
 * The lemmas must end in * gat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ngat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rangat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rangat.html), [short](gen/R/Rangat_wikt.html)
 

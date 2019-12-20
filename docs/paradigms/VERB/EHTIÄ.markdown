@@ -10,6 +10,7 @@ paradigm: VERB_EHTIÄ
 * KOTUS paradigm used in their dictionary is 61-F
 * The lemmas must end in * tiä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tiä `
 
-### ehtiÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/E/ehtiä.html), [short](gen/E/ehtiä_wikt.html)
 

@@ -10,6 +10,7 @@ paradigm: PROPN_KÖÖ
 * KOTUS paradigm used in their dictionary is 18
 * The lemmas must end in * ö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` öö `
 
-### kÖÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/K/Köö.html), [short](gen/K/Köö_wikt.html)
 

@@ -18,34 +18,3 @@ lexeme: hännille
 * Origins: omorfi 
 * AdpType:  POSTPOSITION
 
-
-### hännille wordforms
-
-hännille
-hännillehänkään
-hännillehänkö
-hännillehänpä
-hännillehän
-hännillekinhän
-hännillekinkään
-hännillekinkö
-hännillekinpä
-hännillekin
-hännillekäänhän
-hännillekäänkin
-hännillekäänkö
-hännillekäänpä
-hännillekään
-hännilleköhän
-hännillekökin
-hännillekökään
-hännillekös
-hännilleköpä
-hännillekö
-hännillepähän
-hännillepäkin
-hännillepäkään
-hännillepäkö
-hännillepäs
-hännillepä
-

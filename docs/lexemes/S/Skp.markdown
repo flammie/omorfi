@@ -10,11 +10,3 @@ lexeme: Skp
 * Origins: 
 * Possible NER class:  ORG
 
-
-### Skp wordforms
-
-Skp-
-Skp‐
-Skp‑
-Skp
-

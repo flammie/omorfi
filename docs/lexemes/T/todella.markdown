@@ -16,7 +16,3 @@ lexeme: todella
 * UPOS:  ADV
 * Origins: 
 
-
-### todella wordforms
-
-

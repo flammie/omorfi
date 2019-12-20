@@ -10,6 +10,7 @@ paradigm: NOUN_51kuivamuona
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * amuona * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kuivamuona `
 
-### 51kuivamuona wordforms
+## See also
 
+* Inflection tables: [full](gen/5/kuivamuona.html), [short](gen/5/kuivamuona_wikt.html)
 

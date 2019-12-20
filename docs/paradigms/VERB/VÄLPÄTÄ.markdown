@@ -10,6 +10,7 @@ paradigm: VERB_VÄLPÄTÄ
 * KOTUS paradigm used in their dictionary is 73-B
 * The lemmas must end in * ätä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` pätä `
 
-### vÄlpÄtÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/V/välpätä.html), [short](gen/V/välpätä_wikt.html)
 

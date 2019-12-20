@@ -10,6 +10,7 @@ paradigm: VERB_ISÄNNÖIDÄ
 * KOTUS paradigm used in their dictionary is 68
 * The lemmas must end in * idä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` öidä `
 
-### isÄnnÖidÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/I/isännöidä.html), [short](gen/I/isännöidä_wikt.html)
 

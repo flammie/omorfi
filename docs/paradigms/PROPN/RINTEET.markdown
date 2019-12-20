@@ -11,6 +11,7 @@ paradigm: PROPN_RINTEET
 * The lemmas must end in * teet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nteet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rinteet wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rinteet.html), [short](gen/R/Rinteet_wikt.html)
 

@@ -11,6 +11,7 @@ paradigm: NOUN_KANNET
 * The lemmas must end in * net * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### kannet wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kannet.html), [short](gen/K/kannet_wikt.html)
 

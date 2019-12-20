@@ -10,6 +10,7 @@ paradigm: PROPN_PIIROA
 * KOTUS paradigm used in their dictionary is 15
 * The lemmas must end in * a * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ôo]a `
 
-### piiroa wordforms
+## See also
 
+* Inflection tables: [full](gen/P/Piiroa.html), [short](gen/P/Piiroa_wikt.html)
 

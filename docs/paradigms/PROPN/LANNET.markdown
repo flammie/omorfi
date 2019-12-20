@@ -10,6 +10,7 @@ paradigm: PROPN_LANNET
 * KOTUS paradigm used in their dictionary is 44-J
 * The lemmas must end in * net * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnet `
 
-### lannet wordforms
+## See also
 
+* Inflection tables: [full](gen/L/Lannet.html), [short](gen/L/Lannet_wikt.html)
 

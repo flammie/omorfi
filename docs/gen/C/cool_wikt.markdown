@@ -56,3 +56,6 @@
 | _Abessive_ | cooleimmatta | cooleimmitta | cooleimmattaan/cooleimmattansa | cooleimmittakaan |
 | _Instructive_ | --- | cooleimmin | --- | cooleimminko |
 | _Comitative_ | cooleimpine | cooleimpine | cooleimpinesi | cooleimpinehan |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [cool full form list](cool.html)
+

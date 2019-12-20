@@ -56,3 +56,6 @@
 | _Abessive_ | suurimmatta | suurimmitta | suurimmattaan/suurimmattansa | suurimmittakaan |
 | _Instructive_ | --- | suurimmin | --- | suurimminko |
 | _Comitative_ | suurimpine | suurimpine | suurimpinesi | suurimpinehan |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [suuri full form list](suuri.html)
+

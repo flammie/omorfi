@@ -10,6 +10,7 @@ paradigm: VERB_ILJETÄ
 * KOTUS paradigm used in their dictionary is 7274-L
 * The lemmas must end in * jetä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` jetä `
 
-### iljetÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/I/iljetä.html), [short](gen/I/iljetä_wikt.html)
 

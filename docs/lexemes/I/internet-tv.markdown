@@ -9,7 +9,3 @@ lexeme: internet-tv
 * UPOS:  NOUN
 * Origins: 
 
-
-### internet-tv wordforms
-
-

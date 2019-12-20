@@ -10,6 +10,7 @@ paradigm: NOUN_51sepiväpeippi
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * äpeippi * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` sepiväpeippi `
 
-### 51sepiväpeippi wordforms
+## See also
 
+* Inflection tables: [full](gen/5/sepiväpeippi.html), [short](gen/5/sepiväpeippi_wikt.html)
 

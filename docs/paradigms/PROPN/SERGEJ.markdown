@@ -10,6 +10,7 @@ paradigm: PROPN_SERGEJ
 * KOTUS paradigm used in their dictionary is 22
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*j `
 
-### sergej wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Sergej.html), [short](gen/S/Sergej_wikt.html)
 

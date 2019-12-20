@@ -10,6 +10,7 @@ paradigm: NOUN_KEVÄT
 * KOTUS paradigm used in their dictionary is 44
 * The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*t `
 
-### kevÄt wordforms
+## See also
 
+* Inflection tables: [full](gen/K/kevät.html), [short](gen/K/kevät_wikt.html)
 

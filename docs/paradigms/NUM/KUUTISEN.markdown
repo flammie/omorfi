@@ -10,36 +10,7 @@ paradigm: NUM_KUUTISEN
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` isen `
 
-### kuutisen wordforms
+## See also
 
-kuutisen
-kuutisen-
-kuutisen‐
-kuutisen‑
-kuutisenhanko
-kuutisenhankaan
-kuutisenhanpa
-kuutisenhan
-kuutisenkohan
-kuutisenkokin
-kuutisenkokaan
-kuutisenkos
-kuutisenkopa
-kuutisenko
-kuutisenkinhan
-kuutisenkinko
-kuutisenkinkaan
-kuutisenkinpa
-kuutisenkin
-kuutisenkaanhan
-kuutisenkaanko
-kuutisenkaankin
-kuutisenkaanpa
-kuutisenkaan
-kuutisenpahan
-kuutisenpako
-kuutisenpakin
-kuutisenpakaan
-kuutisenpas
-kuutisenpa
+* Inflection tables: [full](gen/K/kuutisen.html), [short](gen/K/kuutisen_wikt.html)
 

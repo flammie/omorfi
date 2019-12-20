@@ -30,8 +30,3 @@ lexeme: ja
 * UPOS:  ADV
 * Origins: omorfi 
 
-
-### ja wordforms
-
-ja
-

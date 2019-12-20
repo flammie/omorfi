@@ -56,3 +56,6 @@
 | _Abessive_ | tyhmimmättä | tyhmimmittä | tyhmimmättänsä/tyhmimmättään | tyhmimmittäkään |
 | _Instructive_ | --- | tyhmimmin | --- | tyhmimminkö |
 | _Comitative_ | tyhmimpine | tyhmimpine | tyhmimpinesi | tyhmimpinehän |
+
+_Note:_ the inflection tables cover small percentage of the whole inflectional paradigm, for full list, see [tyhmä full form list](tyhmä.html)
+

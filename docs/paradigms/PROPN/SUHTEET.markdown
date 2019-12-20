@@ -11,6 +11,7 @@ paradigm: PROPN_SUHTEET
 * The lemmas must end in * teet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*teet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### suhteet wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Suhteet.html), [short](gen/S/Suhteet_wikt.html)
 

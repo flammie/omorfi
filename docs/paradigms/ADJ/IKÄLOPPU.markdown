@@ -10,6 +10,7 @@ paradigm: ADJ_IKÄLOPPU
 * KOTUS paradigm used in their dictionary is 1-B
 * The lemmas must end in * pu * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ppu `
 
-### ikÄloppu wordforms
+## See also
 
+* Inflection tables: [full](gen/I/ikäloppu.html), [short](gen/I/ikäloppu_wikt.html)
 

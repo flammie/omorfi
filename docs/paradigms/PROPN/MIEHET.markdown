@@ -11,6 +11,7 @@ paradigm: PROPN_MIEHET
 * The lemmas must end in * het * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` iehet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### miehet wordforms
+## See also
 
+* Inflection tables: [full](gen/M/Miehet.html), [short](gen/M/Miehet_wikt.html)
 

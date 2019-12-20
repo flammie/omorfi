@@ -16,8 +16,3 @@ lexeme: kuten
 * UPOS:  SCONJ
 * Origins: omorfi 
 
-
-### kuten wordforms
-
-kuten
-

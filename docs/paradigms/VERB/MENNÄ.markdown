@@ -10,6 +10,7 @@ paradigm: VERB_MENNÄ
 * KOTUS paradigm used in their dictionary is 67
 * The lemmas must end in * nnä * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nnä `
 
-### mennÄ wordforms
+## See also
 
+* Inflection tables: [full](gen/M/mennä.html), [short](gen/M/mennä_wikt.html)
 

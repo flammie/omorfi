@@ -32,34 +32,3 @@ lexeme: vallassa
 * Origins: omorfi 
 * AdpType:  POSTPOSITION
 
-
-### vallassa wordforms
-
-vallassa
-vallassahanko
-vallassahankaan
-vallassahanpa
-vallassahan
-vallassakohan
-vallassakokin
-vallassakokaan
-vallassakos
-vallassakopa
-vallassako
-vallassakinhan
-vallassakinko
-vallassakinkaan
-vallassakinpa
-vallassakin
-vallassakaanhan
-vallassakaanko
-vallassakaankin
-vallassakaanpa
-vallassakaan
-vallassapahan
-vallassapako
-vallassapakin
-vallassapakaan
-vallassapas
-vallassapa
-

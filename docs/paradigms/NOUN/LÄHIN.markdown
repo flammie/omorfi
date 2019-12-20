@@ -10,6 +10,7 @@ paradigm: NOUN_LÄHIN
 * KOTUS paradigm used in their dictionary is 36
 * The lemmas must end in * n * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*in `
 
-### lÄhin wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lähin.html), [short](gen/L/lähin_wikt.html)
 

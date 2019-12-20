@@ -9,7 +9,3 @@ lexeme: .
 * UPOS:  PUNCT
 * Origins: omorfi 
 
-
-### STOP wordforms
-
-

@@ -10,11 +10,3 @@ lexeme: NASA
 * Origins: 
 * Possible NER class:  ORG
 
-
-### NASA wordforms
-
-NASA-
-NASA‐
-NASA‑
-NASA
-

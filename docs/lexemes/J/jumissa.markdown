@@ -9,34 +9,3 @@ lexeme: jumissa
 * UPOS:  ADV
 * Origins: 
 
-
-### jumissa wordforms
-
-jumissa
-jumissahanko
-jumissahankaan
-jumissahanpa
-jumissahan
-jumissakohan
-jumissakokin
-jumissakokaan
-jumissakos
-jumissakopa
-jumissako
-jumissakinhan
-jumissakinko
-jumissakinkaan
-jumissakinpa
-jumissakin
-jumissakaanhan
-jumissakaanko
-jumissakaankin
-jumissakaanpa
-jumissakaan
-jumissapahan
-jumissapako
-jumissapakin
-jumissapakaan
-jumissapas
-jumissapa
-

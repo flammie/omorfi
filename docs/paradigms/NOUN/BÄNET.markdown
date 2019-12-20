@@ -11,6 +11,7 @@ paradigm: NOUN_BÄNET
 * The lemmas must end in * t * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*et `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### bÄnet wordforms
+## See also
 
+* Inflection tables: [full](gen/B/bänet.html), [short](gen/B/bänet_wikt.html)
 

@@ -10,6 +10,7 @@ paradigm: ADJ_VÄÄRTTI
 * KOTUS paradigm used in their dictionary is 5-C
 * The lemmas must end in * ti * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` tti `
 
-### vÄÄrtti wordforms
+## See also
 
+* Inflection tables: [full](gen/V/väärtti.html), [short](gen/V/väärtti_wikt.html)
 

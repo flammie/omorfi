@@ -10,6 +10,7 @@ paradigm: NOUN_51raskassarja
 * KOTUS paradigm used in their dictionary is 51
 * The lemmas must end in * ssarja * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` raskassarja `
 
-### 51raskassarja wordforms
+## See also
 
+* Inflection tables: [full](gen/5/raskassarja.html), [short](gen/5/raskassarja_wikt.html)
 

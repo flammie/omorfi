@@ -11,6 +11,7 @@ paradigm: PROPN_YSTÄVYKSET
 * The lemmas must end in * kset * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kset `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### ystÄvykset wordforms
+## See also
 
+* Inflection tables: [full](gen/Y/Ystävykset.html), [short](gen/Y/Ystävykset_wikt.html)
 

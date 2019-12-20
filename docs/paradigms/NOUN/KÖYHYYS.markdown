@@ -10,6 +10,7 @@ paradigm: NOUN_KÖYHYYS
 * KOTUS paradigm used in their dictionary is 40
 * The lemmas must end in * s * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` ys `
 
-### kÖyhyys wordforms
+## See also
 
+* Inflection tables: [full](gen/K/köyhyys.html), [short](gen/K/köyhyys_wikt.html)
 

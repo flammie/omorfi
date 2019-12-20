@@ -9,11 +9,3 @@ lexeme: TCP
 * UPOS:  NOUN
 * Origins: 
 
-
-### TCP wordforms
-
-TCP-
-TCP‐
-TCP‑
-TCP
-

@@ -9,7 +9,3 @@ lexeme: pien-pc
 * UPOS:  NOUN
 * Origins: 
 
-
-### pien-pc wordforms
-
-

@@ -9,11 +9,3 @@ lexeme: VIP
 * UPOS:  NOUN
 * Origins: 
 
-
-### VIP wordforms
-
-VIP-
-VIP‐
-VIP‑
-VIP
-

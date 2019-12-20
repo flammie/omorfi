@@ -10,6 +10,7 @@ paradigm: PROPN_SELENE
 * KOTUS paradigm used in their dictionary is 2
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]* `
 
-### selene wordforms
+## See also
 
+* Inflection tables: [full](gen/S/Selene.html), [short](gen/S/Selene_wikt.html)
 

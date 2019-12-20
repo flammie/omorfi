@@ -7,18 +7,5 @@ lexeme: CD
 
 * _Compact Disc_
 * UPOS:  NOUN
-* Origins: [fiwikt](https://fi.wiktionary.org/wiki/CD) [enwikt](https://fi.wiktionary.org/wiki/CD) joukahainen 
-
-
-### CD wordforms
-
-CD
-CD-
-CD‐
-CD‑
-CD
-CD-
-CD‐
-CD‑
-CD
+* Origins: [enwikt](https://en.wiktionary.org/wiki/CD) joukahainen 
 

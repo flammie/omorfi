@@ -10,33 +10,7 @@ paradigm: ADV_NOPEASTI
 * KOTUS paradigm used in their dictionary is 99
 * The lemmas must end in * None * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` . `
 
-### nopeasti wordforms
+## See also
 
-nopeasti
-nopeastihanko
-nopeastihankaan
-nopeastihanpa
-nopeastihan
-nopeastikohan
-nopeastikokin
-nopeastikokaan
-nopeastikos
-nopeastikopa
-nopeastiko
-nopeastikinhan
-nopeastikinko
-nopeastikinkaan
-nopeastikinpa
-nopeastikin
-nopeastikaanhan
-nopeastikaanko
-nopeastikaankin
-nopeastikaanpa
-nopeastikaan
-nopeastipahan
-nopeastipako
-nopeastipakin
-nopeastipakaan
-nopeastipas
-nopeastipa
+* Inflection tables: [full](gen/N/nopeasti.html), [short](gen/N/nopeasti_wikt.html)
 

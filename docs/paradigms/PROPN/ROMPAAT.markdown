@@ -11,6 +11,7 @@ paradigm: PROPN_ROMPAAT
 * The lemmas must end in * paat * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` paat `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### rompaat wordforms
+## See also
 
+* Inflection tables: [full](gen/R/Rompaat.html), [short](gen/R/Rompaat_wikt.html)
 

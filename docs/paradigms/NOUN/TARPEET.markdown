@@ -11,6 +11,7 @@ paradigm: NOUN_TARPEET
 * The lemmas must end in * peet * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*peet `
 * This is a [plurale tantum](https://en.wikipedia.org/wiki/Plurale_tantum) paradigm for plural only nominals.
 
-### tarpeet wordforms
+## See also
 
+* Inflection tables: [full](gen/T/tarpeet.html), [short](gen/T/tarpeet_wikt.html)
 

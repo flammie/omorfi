@@ -10,6 +10,7 @@ paradigm: NOUN_SÄNKY
 * KOTUS paradigm used in their dictionary is 1-G
 * The lemmas must end in * ky * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` nky `
 
-### sÄnky wordforms
+## See also
 
+* Inflection tables: [full](gen/S/sänky.html), [short](gen/S/sänky_wikt.html)
 

@@ -10,11 +10,3 @@ lexeme: EEC
 * Origins: 
 * Possible NER class:  MISC
 
-
-### EEC wordforms
-
-EEC-
-EEC‐
-EEC‑
-EEC
-

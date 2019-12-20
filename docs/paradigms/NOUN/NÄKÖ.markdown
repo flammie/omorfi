@@ -10,6 +10,7 @@ paradigm: NOUN_NÄKÖ
 * KOTUS paradigm used in their dictionary is 1-D
 * The lemmas must end in * kö * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` kö `
 
-### nÄkÖ wordforms
+## See also
 
+* Inflection tables: [full](gen/N/näkö.html), [short](gen/N/näkö_wikt.html)
 

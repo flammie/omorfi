@@ -9,11 +9,3 @@ lexeme: MTV
 * UPOS:  NOUN
 * Origins: joukahainen 
 
-
-### MTV wordforms
-
-MTV-
-MTV‐
-MTV‑
-MTV
-

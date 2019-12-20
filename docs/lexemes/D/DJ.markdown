@@ -9,11 +9,3 @@ lexeme: DJ
 * UPOS:  NOUN
 * Origins: omorfi 
 
-
-### DJ wordforms
-
-DJ-
-DJ‐
-DJ‑
-DJ
-

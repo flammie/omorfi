@@ -10,6 +10,7 @@ paradigm: ADJ_LÄMMIN
 * KOTUS paradigm used in their dictionary is 35-H
 * The lemmas must end in * min * (which will be deleted to form an invariant stub) and the regex matching the lemma is ` [ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mmin `
 
-### lÄmmin wordforms
+## See also
 
+* Inflection tables: [full](gen/L/lämmin.html), [short](gen/L/lämmin_wikt.html)
 
