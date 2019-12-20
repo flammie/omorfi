@@ -11,8 +11,8 @@ Paradigms are sub-groups of lexemes that have unique morpho-phonological feature
 All other lexical information is coded on per lexeme basis
 ## Paradigms in alphabetical order
 
-* The _Notes_ column is informal hints for lexicographers to discriminate the classes, for further details each paradigm has their own page with details and exampels linked 
-* The _KOTUS_ column is official dictionary class, if you are  familiar with Finnish dictionaries. 
+* The _Notes_ column is informal hints for lexicographers to discriminate the classes, for further details each paradigm has their own page with details and exampels linked
+* The _KOTUS_ column is official dictionary class, if you are  familiar with Finnish dictionaries.
 * The _Harmony_ column is vowel harmony; back, front, both or N/A
 * The _Inflection tables_ column links to inflection tables of the example word, *full* for full-form list and *short* for wiktionary-style inflection tables.
 
@@ -2378,4 +2378,5 @@ All other lexical information is coded on per lexeme basis
 |  [X_FORGN_SV](paradigms/X/FORGN_SV.html) | PROPN | new particles of Swedish origin; used of... | 99 | back | [full](gen/F/forgn_sv.html) [short](gen/F/forgn_sv_wikt.html) |
 |  [X_IGNORE](paradigms/X/IGNORE.html) | X | words that need to be in lexicon for leg... | 99 | back | [full](gen/I/ignore.html) [short](gen/I/ignore_wikt.html) |
 |  [X_SUFFIX_GOESWITH](paradigms/X/SUFFIX_GOESWITH.html) | X | some suffixes that appear mistokenised, ... | 99 | back | [full](gen/S/suffix_goeswith.html) [short](gen/S/suffix_goeswith_wikt.html) |
+
 <!-- vim: set ft=markdown:-->

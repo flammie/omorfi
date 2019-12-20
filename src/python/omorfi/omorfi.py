@@ -331,10 +331,12 @@ class Omorfi:
                 if len(token.surf) > (i + j):
                     if j == 0:
                         resurf = token.surf[i:]
+                        presurfs = token.surf[:i]
+                        postsurfs = ""
                     else:
                         resurf = token.surf[i:-j]
-                    presurfs = token.surf[:i]
-                    postsurfs = token.surf[-j:]
+                        presurfs = token.surf[:i]
+                        postsurfs = token.surf[-j:]
                     pretrailpuncts = True
                     for c in presurfs:
                         if c in fin_punct_leading:
@@ -991,11 +993,12 @@ class Omorfi:
                     elif k in ['Alt', 'FTB-PronType', 'FTB-Rel',
                                'Missed-Rel', 'FTB-rel', 'Join',
                                'Missed-SUBCAT', 'FTB-Sub', 'Prefix',
-                               'FTB1-InfForm', 'Missed-POSITION']:
+                               'FTB1-InfForm', 'Missed-POSITION',
+                               'Was18']:
                         # FTB stuff
                         pass
                     else:
-                        print("Unknown MISC", k, file=stderr)
+                        print("Unkonown MISC", k, file=stderr)
                         exit(1)
             tokens.append(token)
         eoft = Token()

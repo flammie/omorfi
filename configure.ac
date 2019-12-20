@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT([omorfi], [20190511], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_INIT([omorfi], [20191111], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -11,7 +11,7 @@ AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
 AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
-VERSION=20190511
+VERSION=20191111
 
 # Options
 AC_ARG_WITH([hfst],

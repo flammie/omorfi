@@ -5,7 +5,8 @@ function preprocess() {
     cat $@ > .tokenise
     split -l 500000 .tokenise
     for f in x?? ; do
-        ../src/python/omorfi-tokenise.py -i $f |\
+        ../src/python/omorfi-tokenise.py -i $f -a\
+            ../src/generated/omorfi.describe.hfst |\
         tr -s ' ' '\n'
     done
     rm -f .tokenise x??
