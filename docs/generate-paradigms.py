@@ -86,19 +86,22 @@ def main():
           file=args.output)
     print("## Paradigms in alphabetical order", file=args.output)
     print(file=args.output)
-    print("The _Notes_ column is informal hints for lexicographers to " +
+    print("* The _Notes_ column is informal hints for lexicographers to " +
           "discriminate the classes, for further details each paradigm has " +
           "their own page with details and exampels linked ", file=args.output)
-    print("The _KOTUS_ column is official dictionary class, if you are  " +
+    print("* The _KOTUS_ column is official dictionary class, if you are  " +
           "familiar with Finnish dictionaries. ", file=args.output)
-    print("The _Harmony_ column is vowel harmony; back, front, both or N/A",
+    print("* The _Harmony_ column is vowel harmony; back, front, both or N/A",
           file=args.output)
+    print("* The _Inflection tables_ column links to inflection tables of the" +
+          " example word, *full* for full-form list and *short* for " +
+          "wiktionary-style inflection tables.", file=args.output)
     # read from csv files
     print(file=args.output)
-    print("| **Paradigm** | **UPOS** | _Notes_ | KOTUS | Harmony |",
-          file=args.output)
-    print("|:-------------|---------:|:--------|------:|:-------:|",
-          file=args.output)
+    print("| **Paradigm** | **UPOS** | _Notes_ | KOTUS | Harmony | Infl. " +
+          "Tables |", file=args.output)
+    print("|:-------------|---------:|:--------|------:|:-------:|:------" +
+          "-------|", file=args.output)
 
     paradata = dict()
     with open(args.paradigms) as tsv_file:
@@ -125,7 +128,7 @@ def main():
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfilename = args.outdir + '/' + \
+                outfilename = args.outdir + \
                     tsv_parts['new_para'].replace('?', '_').replace('_', '/',
                                                                     1)
                 outfile = open(outfilename + '.markdown', 'w')
@@ -193,20 +196,37 @@ def main():
                     if paradata[tsv_parts['new_para']]['plurale_tantum'] != \
                             'False':
                         print("* This is a [plurale tantum](" +
-                               "https://en.wikipedia.org/wiki/Plurale_tantum" +
-                               ") paradigm for plural only nominals.",
-                               file=outfile)
+                              "https://en.wikipedia.org/wiki/Plurale_tantum" +
+                              ") paradigm for plural only nominals.",
+                              file=outfile)
                     # something XXX:
                     paradigms.remove(tsv_parts['new_para'])
                 else:
                     print("found in docs but not in data:",
                           tsv_parts['new_para'], file=stderr)
                     exit(1)
+                print(file=outfile)
+                print("## See also", file=outfile)
+                print(file=outfile)
+                genfilename = outfilename.split("/")[-1]
+                if 'PROPN' not in outfilename:
+                    genfilename = genfilename[0].upper() + '/' + \
+                        genfilename.lower()
+                else:
+                    genfilename = genfilename[0].upper() + '/' + \
+                        genfilename[0] + genfilename[1:].lower()
+                genfilename = "gen/" + genfilename
+                genfilename = genfilename.replace("51", "")
+                print("* Inflection tables: " +
+                      "[full](" + genfilename + ".html), [short](" +
+                      genfilename + "_wikt.html)", file=outfile)
+                print(file=outfile)
                 print("| " + " [" + tsv_parts['new_para'] + "](" +
                       outfilename + ".html) | " +
                       paradata[tsv_parts['new_para']]['upos'] + " | " +
-                      docshort + " | " + kotus + " | " + harmony + " |",
-                      file=args.output)
+                      docshort + " | " + kotus + " | " + harmony + " | " +
+                      "[full](" + genfilename + ".html) [short](" +
+                      genfilename + "_wikt.html) |", file=args.output)
     if paradigms:
         print("Undocumented paradigms left:", ", ".join(paradigms),
               file=stderr)
