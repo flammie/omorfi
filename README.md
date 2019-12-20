@@ -324,8 +324,9 @@ $ pip install pre-commit
 $ pre-commit install
 ```
 
-I (Flammie) also recommend syntastic, e.g. I use
-[ale](https://github.com/w0rp/ale)
+I (Flammie) also recommend using editor that supports
+[editor-config](//editorconfig.org) as well as automatic syntax checking, , e.g.
+I use [ale](//github.com/w0rp/ale) with [vim](//vim.org)
 
 ### Code of conduct
 
