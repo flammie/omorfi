@@ -1,4 +1,0 @@
-
-### Ahdet wordforms
-
-

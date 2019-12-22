@@ -1,5 +1,0 @@
-
-### kunnes wordforms
-
-kunnes
-

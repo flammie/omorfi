@@ -1,5 +1,0 @@
-
-### kumminkaan wordforms
-
-kumminkaan
-

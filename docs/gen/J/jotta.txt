@@ -1,5 +1,0 @@
-
-### jotta wordforms
-
-jotta
-

@@ -1,4 +1,0 @@
-
-### Nuotta-apaja wordforms
-
-

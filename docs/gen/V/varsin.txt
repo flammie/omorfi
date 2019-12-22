@@ -1,5 +1,0 @@
-
-### varsin wordforms
-
-varsin
-
