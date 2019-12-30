@@ -1,4 +1,0 @@
-
-### pinta-WWW wordforms
-
-

@@ -1,5 +1,0 @@
-
-### kuten wordforms
-
-kuten
-

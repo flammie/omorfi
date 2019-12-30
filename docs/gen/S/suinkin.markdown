@@ -1,5 +1,0 @@
-
-### suinkin wordforms
-
-suinkin
-

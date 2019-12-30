@@ -1,4 +1,0 @@
-
-### yhtiöt wordforms
-
-

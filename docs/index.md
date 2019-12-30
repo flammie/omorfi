@@ -1,8 +1,3 @@
----
-layout: default
-title: "Omorfi"
----
-
 # Omorfi–Open morphology of Finnish
 
 Omorfi is a free and open source project containing various tools and data for

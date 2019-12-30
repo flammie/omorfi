@@ -1,5 +1,0 @@
-
-### kuin wordforms
-
-kuin
-

@@ -3,8 +3,8 @@
 This is a free/libre open source morphology of Finnish: a database, tools and
 APIs. This package is licenced under [GNU GPL version
 3](https://gnu.org/licenses/gpl.html), but *not necessarily later*. Licence can
-also be found in the `COPYING` file in the root directory of this package.
-Other licences are possible by *all* the authors named in the `AUTHORS` file.
+also be found in the [COPYING]() file in the root directory of this package.
+Other licences are possible by *all* the authors named in the [AUTHORS]() file.
 
 Omorfi has been used for a number of tasks:
 
@@ -21,11 +21,12 @@ Omorfi has been used for a number of tasks:
 
 The lexical data of omorfi has been acquired from various sources with
 different original licences.  The dictionaries used in omorfi are [Nykysuomen
-sanalista](http://kaino.kotus.fi) (LGPL),
-[Joukahainen](http://joukahainen.lokalisointi.org) (GPL) and
-[FinnWordNet](http://www.ling.helsinki.fi/research/finnwordnet) (Princeton
+sanalista](//kaino.kotus.fi) (LGPL),
+[Joukahainen](//joukahainen.lokalisointi.org) (GPL) and
+[FinnWordNet](//www.ling.helsinki.fi/research/finnwordnet) (Princeton
 Wordnet licence / GPL; relicenced with kind permission from University of
-Helsinki), and [Finnish Wiktionary](http://fi.Wiktionary.org) (Creative Commons
+Helsinki), [Finnish Wiktionary](//fi.Wiktionary.org) and [English
+Wiktionary](//en.wiktionary.org) (Creative Commons
 Attribution–ShareAlike). Some words have also been collected by omorfi
 developers and contributors and are GPLv3 like the rest of the package.
 
@@ -35,9 +36,6 @@ These are the obligatory stamps of the day:
 (stable master branch:
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
 )
-<img src="http://img.shields.io/liberapay/patrons/Flammie.svg?logo=liberapay">
-
-<a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 ## Documentation
 
@@ -78,10 +76,7 @@ guaranteed to work at all with all ancient versions of GNU build tools, HFST or
 python. The versions that should work are as follows:
 
   * **hfst-3.15** or greater, with python bindings
-    * Note! 3.15 has greatly improved efficiency of HFST python bindings, it is
-      a hard requirement for build and use (memory usage is stable 100 megs
-      instead of linearly rising from few gigs!)
-  * **python-3.2** or greater, with hfst python bindings available
+  * **python-3.5** or greater, with hfst python bindings available
   * **C++** compiler and **libtool** (can be disabled?)
   * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config** implementation
 
@@ -91,7 +86,7 @@ The use of certain automata also requires additional tools:
 
 APIs require:
 
-* *Python 3.2* for python API
+* *Python 3.5* for python API
 * *Java 7* for Java API
 * *Bash 3*, *coreutils* for bash API
 * The C++ API uses C++-11, this is basically available on all modern platforms.
@@ -291,6 +286,18 @@ overlong tokens out. Or processing texts in smaller pieces.
 
 Get more RAM or swap space.
 
+### This word is missing! I don't like this word!
+
+Omorfi includes two analysers: one based on KOTUS-approved Nykysuomen sanalista
+and one based on _a lot of lexical databases_, if you do not like some rarer
+words, use the smaller one, if some words seem to be missing, try the larger one
+first, if it's really missing, you can file a bug report, or add it to
+e.g. Wiktionary. See [notes on lexicon
+sizes](//flammie.github.io/omorfi/pages/Smaller_lexicons.html), you can likewise
+report suspicious words as github issues, but please review first the
+[lexemes page](//flammie.github.io/omorfi/lexemes.html) for readily explained
+oddities.
+
 ## Contributing
 
 Omorfi code and data are free and libre open source, modifiable and
@@ -310,7 +317,7 @@ it out.
 Python code should pass the flake8 style checker and imports should be sorted
 in accordance with isort. Ideally, you should integrate these into your editor,
 [the development environment section of the python guide has instructions for a
-few editors](docs.python-guide.org/en/latest/dev/env/). In addition, you can
+few editors](//docs.python-guide.org/en/latest/dev/env/). In addition, you can
 install a pre-commit hook to run the checks like so:
 
 ```
@@ -318,9 +325,21 @@ $ pip install pre-commit
 $ pre-commit install
 ```
 
-I (Flammie) also recommend syntastic, e.g. I use
-[vim-syntastic](https://github.com/vim-syntastic/syntastic)
+I (Flammie) also recommend using editor that supports
+[editor-config](//editorconfig.org) as well as automatic syntax checking, , e.g.
+I use [ale](//github.com/w0rp/ale) with [vim](//vim.org)
 
 ### Code of conduct
 
-Since I it's 2018 I just want to remind GNU has a (mostly) good description of what FLOSS hacking code of conduct should be https://www.gnu.org/philosophy/kind-communication.html. Omorfi is free and open source project that depends on user contributions and we aim to be maximally approachable and so on. Thanks.
+See [our code of conduct](//flammie.github.io/omorfi/CODE_OF_CONDUCT.html).
+
+## Donations
+
+A lot of omorfi development has been done on spare time and by volunteers, if
+you want to support [Flammie](https://flammie.github.io) you can use the
+github's ❤️Sponsor button, or any of the services below:
+
+<a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay"
+src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
+<a href="https://www.patreon.com/bePatron?u=9479606" data-patreon-widget-type="become-patron-button">Become a Patron!</a>

@@ -1,5 +1,0 @@
-
-### pikku wordforms
-
-pikku
-

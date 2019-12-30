@@ -1,4 +1,0 @@
-
-### oikeudet wordforms
-
-
