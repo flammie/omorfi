@@ -3,13 +3,23 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20191111
+
+* Universal dependencies version 2.5 is a reference for recall tests
+* 11,343 new words
+* Fixed ordinals as adjectives
+* Minor overhaul of documentation
+* Fixed injection vuln. in python OOV handling
+* Fixed tokeniser regression related to initial punctuations
+* No other big changes and no API changes
+
 ## Significant changes in 20190511
 
 * Universal dependencies version 2.4 is a reference for recall tests
 * 2879 new words
 * No other big changes and no API changes
 
-## Significant changes in 20180111
+## Significant changes in 20181111
 
 * Universal dependencies version 2.3 is a reference for recall tests
 * At least 18,380 new words: 340,931 insertions(+), 322,551 deletions(-)
