@@ -1,4 +1,0 @@
-
-### Uusi-Guinea wordforms
-
-

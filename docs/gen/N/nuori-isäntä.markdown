@@ -1,4 +1,0 @@
-
-### nuori-isäntä wordforms
-
-

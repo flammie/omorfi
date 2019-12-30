@@ -1,5 +1,0 @@
-
-### kun wordforms
-
-kun
-
