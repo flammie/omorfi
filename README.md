@@ -36,6 +36,7 @@ These are the obligatory stamps of the day:
 (stable master branch:
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
 )
+![CI](https://github.com/flammie/omorfi/workflows/CI/badge.svg)
 
 ## Documentation
 
