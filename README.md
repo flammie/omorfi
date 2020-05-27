@@ -301,36 +301,22 @@ oddities.
 
 ## Contributing
 
-Omorfi code and data are free and libre open source, modifiable and
-redistributable by anyone. IRC channel [#omorfi on
-Freenode](irc://Freenode/#omorfi) is particularly good for immediate discussion
-about contributions. Any data or code contributed must be compatible with our
-licencing policy, i.e. GNU compatible free licence. In the github, you may use
-the "fork this project" button to contribute, read github's documentation for
-more information about this work-flow.
+Omorfi code and data are free and libre open source, and community-driven, to
+participate, read further information in [CONTRIBUTING]()
 
-We are currently using [git-flow](http://nvie.com/posts/a-successful-git-branching-model/),
-but feel free to just send pull-requests as you find comfortable and we'll sort
-it out.
+## Contact
 
-### Coding standards
+* Issues and problems may be filed in github issue tracker, including support
+  questions
+* [IRC channel #omorfi on Freenode](irc://Freenode/#omorfi) is particularly good
+  for live chat for support questions, suggestions and discussions
+* [omorfi-devel mailing
+  list](https://groups.google.com/forum/#!forum/omorfi-devel) is good for longer
+  more involved discussions
 
-Python code should pass the flake8 style checker and imports should be sorted
-in accordance with isort. Ideally, you should integrate these into your editor,
-[the development environment section of the python guide has instructions for a
-few editors](//docs.python-guide.org/en/latest/dev/env/). In addition, you can
-install a pre-commit hook to run the checks like so:
+You can always discuss in English or Finnish on any of the channels.
 
-```
-$ pip install pre-commit
-$ pre-commit install
-```
-
-I (Flammie) also recommend using editor that supports
-[editor-config](//editorconfig.org) as well as automatic syntax checking, , e.g.
-I use [ale](//github.com/w0rp/ale) with [vim](//vim.org)
-
-### Code of conduct
+## Code of conduct
 
 See [our code of conduct](//flammie.github.io/omorfi/CODE_OF_CONDUCT.html).
 
