@@ -1,5 +1,7 @@
 # Omorfi–Open morphology of Finnish
 
+![open morphology of finnish](https://flammie.github.io/omorfi/omorfi.png)
+
 Omorfi is a free and open source project containing various tools and data for
 natural language processing of Finnish based on knowledge driven paradigm.
 The main components of this repository are:
