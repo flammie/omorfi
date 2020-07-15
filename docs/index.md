@@ -8,11 +8,13 @@ The main components of this repository are:
 
 1. _a lexical database_ containing hundreds of thousands of words (c.f.
    [lexical statistics](statistics.html))
-2. a collection of _scripts_ to convert lexical database into formats used by
+2. a collection of _conversion scripts_ to convert lexical database into formats
    upstream NLP tools (c.f. [lexical processing](pages/Database-processing))
-3. an _autotools setup_ to build and install (or package, or deploy): the
+3. a collection of _utility scripts_ to process Finnish texts on command-line
+   (c.f. [usage examples](pages/usage-examples.html))
+4. an _autotools setup_ to build and install (or package, or deploy): the
    scripts, the database, and simple APIs / convenience processing tools
-3. a collection of relatively [simple APIs](apis/html/) with bindings for a
+5. a collection of relatively [simple APIs](apis/html/) with bindings for a
    selection of programming languages and scripts to apply the NLP tools and
    access the database
 
@@ -26,6 +28,7 @@ included):
    1. we provide [pre-built automata binaries for each release as a convenient
    download](https://github.com/flammie/omorfi/releases)
 2. [apertium](//sf.net/p/apertium), to be used for *machine translation*
+    * See [apertium-fin](//github.com/apertium/apertium-fin)
 3. [voikko](//voikko.puimula.org), to be used for *spell-checking* and
    *correction* (also experimental _hunspell_ for legacy spell-checking)
 4. _kotus-sanalista_, _lexical markup framework_, _tab-separated values_, etc.
