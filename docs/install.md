@@ -1,8 +1,8 @@
 # Installing omorfi
 
 The NLP analysers / language models are based on finite-state automata
-technology and require some special tools to be installed before use.
-
+technology and require some special tools to be installed before compilation and
+use.
 
 ## Dependencies
 
@@ -11,9 +11,11 @@ Required for compilation and use:
 * **hfst-3.15** or greater,
 * **python-3.5** or greater,
 * **libhfst-python**,
-* **C++** compiler and **libtool**
-* GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config**
-  implementation
+* **C++** compiler (gcc or clang)
+* **libtool**
+* **autoconf-2.64**
+* **automake-1.12**
+* **pkg-config** (or pkgconf)
 
 Optionally:
 
@@ -21,10 +23,11 @@ Optionally:
 * hfst-ospell
 * java
 
-### Installing dependencies on Debian / Ubuntu or compatible
+### Installing dependencies on Debian / Ubuntu / Redhat or compatible
 
-It is recommended to follow [instructions by Apertium
-project](http://wiki.apertium.org/wiki/Install_Apertium_core_using_packaging).
+It is recommended to follow the [Installing grammar
+libraries](https://wiki.apertium.org/wiki/Installation_of_grammar_libraries)
+instructions provided by apertium project.
 
 ### Installing dependencies on other systems
 
