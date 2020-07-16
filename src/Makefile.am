@@ -1437,5 +1437,13 @@ conversions: $(DB_GENERTED) $(GENERIC_GENERATED) $(OMOR_GENERATED) \
 
 # }}}
 
+pip:
+	pushd python
+	$(PYTHON) setup.py sdist bdist_wheel
+	popd
+	echo "Now do:"
+	echo "  cd python"
+	echo "	$(PYTHON) -m twine upload dist/*"
+
 #
 # vim: set foldmethod=marker:

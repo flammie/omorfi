@@ -1,3 +1,4 @@
+
 *.class
 *.coveragelog
 *.hfst
@@ -230,17 +231,20 @@ Makefile
 Makefile.in
 aclocal.m4
 autom4te.cache
+build/
 config-aux
 config.h
 config.h.in
 config.log
 config.status
 configure
+dist/
 fiwiki-latest-pages-articles.xml.bz2
 libtool
 omorfi-*.gz
 omorfi-*.xz
 omorfi-20*
+omorfi.egg-info/
 omorfi.pc
 speller-omorfi.zhfst
 speller.zhfst
