@@ -17,30 +17,34 @@ from sys import stderr, stdin, stdout
 # statistics
 from time import perf_counter, process_time
 
-from requests import get
-from tarfile import tarfile
-from io import BytesIO
+import requests
+import tarfile
+import io
 
 import omorfi
 
 def main():
-    parser = ArgumentParser(description='grab models')
-    parser.add_argument('modelname', help='which model to grab'
-                        default='omorfi-hfst-models-' +
-                                str(omorfi.__version__) +
-                                '.tar.xz')
+    parser = ArgumentParser(description='download omorfi binaries')
+    parser.add_argument('-m', '--model-version',  metavar="MFILE",
+                        help='download models MFILE',
+                        default=str(omorfi.__version__))
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help='print verbosely')
     args = parser.parse_args()
-    downloadurl="https://github.com/flammie/omorfi/releases/download/" +
-                omorfi.__version__ +
-                "/omorfi-hfst-models-"
-                omorfi.__version__ +
+    downloadurl="https://github.com/flammie/omorfi/releases/download/" + \
+                args.model_version + \
+                "/omorfi-hfst-models-" + \
+                args.model_version + \
                 ".tar.xz"
+    print("Downloading from", downloadurl, "and unpacking to .")
     if args.verbose:
-        print("Downloading from", downloadurl)
-    r = requests.get(zip_file_url, stream=True)
+        print("Downloading...")
+    r = requests.get(downloadurl, stream=True)
     if args.verbose:
-        print("... and unpacking")
+        print("opening...")
     z = tarfile.open(mode="r|xz", fileobj=io.BytesIO(r.content))
+    if args.verbose:
+        print("unpackin...")
     z.extractall()
 
 if __name__ == "__main__":
