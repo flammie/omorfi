@@ -16,6 +16,12 @@ function frequency_list() {
     cat $@ | sort | uniq -c | sort -nr
 }
 
+if ! which fetch-europarl.bash ; then
+    echo missing bash-corpora, get:
+    echo git clone git@github.com:flammie/bash-corpora.git
+    echo make and install.
+    exit 1
+fi
 # europarl
 echo europarl... corpus 1/$nc
 if ! test -f "europarl-v7.fi-en.fi.uniq.freqs" ; then
