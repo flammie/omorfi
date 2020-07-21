@@ -249,3 +249,9 @@ omorfi.pc
 speller-omorfi.zhfst
 speller.zhfst
 stamp-h1
+test/.gutenberglist.tmp
+test/OpenSubtitles2018.raw.fi.gz
+test/aleph.gutenberg.org/
+test/europarl.tgz
+test/fin.1
+test/fin.2
