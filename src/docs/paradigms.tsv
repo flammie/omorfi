@@ -231,9 +231,9 @@ NOUN_51mustapippuri	Optimisation hack for exceptional compound ’mustapippuri�
 NOUN_51mustaraamattu	Optimisation hack for exceptional compound ’mustaraamattu’
 NOUN_51mustatorvisieni	Optimisation hack for exceptional compound ’mustatorvisieni’
 NOUN_51mustaviinimarja	Optimisation hack for exceptional compound ’mustaviinimarja’
+NOUN_51nuori-isäntä	Optimisation hack for exceptional compound ’nuori-isäntä’
 NOUN_51nuoriemäntä	Optimisation hack for exceptional compound ’nuoriemäntä’
 NOUN_51nuoriherra	Optimisation hack for exceptional compound ’nuoriherra’
-NOUN_51nuori-isäntä	Optimisation hack for exceptional compound ’nuori-isäntä’
 NOUN_51nuorikarja	Optimisation hack for exceptional compound ’nuorikarja’
 NOUN_51nuorimies	Optimisation hack for exceptional compound ’nuorimies’
 NOUN_51nuoripari	Optimisation hack for exceptional compound ’nuoripari’
@@ -347,7 +347,6 @@ NOUN_ASU	Nouns ending in u without variation, the bisyllabic ones have the same 
 NOUN_ASUKAS	kas stem, kas : kkaa variation
 NOUN_ATERIMET	Plurale tantums, met : n variation back harmony
 NOUN_AUER	Noun(s), er stem, er : tere variation
-NOUN_BÉBÉ	é stem front harmony
 NOUN_BEIGNET	loan word nouns, consonant stem, ’ inflection, e stem and front harmony
 NOUN_BERNIE	ie stems, front harmony
 NOUN_BESSERWISSER	loan word nouns, consonant stem, x : xi inflection
@@ -357,6 +356,7 @@ NOUN_BORDEAUX	Loan word nouns, ’ inflection, o stem back harmony
 NOUN_BRASSERIE	Loan word nouns, e stems, front harmony
 NOUN_BRIE	Loan word nouns, e stems, front harmony
 NOUN_BÄNET	Plurale tantums, et stems et : e variation, front harmony
+NOUN_BÉBÉ	é stem front harmony
 NOUN_CHACHACHA	Loan words, a stem
 NOUN_COWBOY	oy stem, both harmonies
 NOUN_ELIN	n stem, n : me variation front harmony
@@ -373,6 +373,7 @@ NOUN_GAY	Loan words, y stem, front harmony
 NOUN_HAAKSI	ksi stem, ksi : ht variations
 NOUN_HAI	i stem, i : 0 variation, back harmony
 NOUN_HAIT	Plurale tantum monosyllabic nouns ending in i, back harmony
+NOUN_HAKKUUT	Plurale tantums, kkuut stem, kkuut : tuu variations
 NOUN_HAMMAS	mas stem, mmas : mpaa variation
 NOUN_HAPAN	n stem, n:ma variation, e.g. noun compounds, 'hapan'
 NOUN_HAPPI	ppi stem, ppi : pe variations, back harmony
@@ -486,6 +487,7 @@ NOUN_KÄRRY	y stem no variations
 NOUN_KÄRSÄKÄS	käs stem, käs : kkää variations
 NOUN_KÄRÄJÄT	Plurale tantums, ät stems, ät : 0 variations
 NOUN_KÄSITE	te stem, te : ttee variations
+NOUN_KÄTTÄPIDEMPI	mpi stem, mpi : mmä variations
 NOUN_KÄÄDYT	Plurale tantums, dyt stem, dyt : ty variatons
 NOUN_KÄÄNNIN	nnin stems, nnin : ntime variations, front harmony
 NOUN_KÄÄNTÖ	ntö stem, ntö : nnö variations
@@ -1588,9 +1590,9 @@ PROPN_51Punainenmeri	Optimisation hack for exceptional compound ’Punainenmeri�
 PROPN_51Tyynimeri	Optimisation hack for exceptional compound ’Tyynimeri’
 PROPN_51Uusi-Englanti	Optimisation hack for exceptional compound ’Uusi-Guinea’
 PROPN_51Uusi-Guinea	Optimisation hack for exceptional compound ’Uusi-Englanti’
+PROPN_51Uusi-Seelanti	Optimisation hack for exceptional compound ’Uusi-Seelanti’
 PROPN_51Uusikaupunki	Optimisation hack for exceptional compound ’Uusikaupunki’
 PROPN_51Uusimaa	Optimisation hack for exceptional compound ’Uusimaa’
-PROPN_51Uusi-Seelanti	Optimisation hack for exceptional compound ’Uusi-Seelanti’
 PROPN_A.	Middle initials don't inflect or compound
 PROPN_AAKKOSELLISUUS	s stem, s : de variations back harmony
 PROPN_AAKKOSTAMINEN	nen stem, nen : se variations back harmony
@@ -1641,7 +1643,6 @@ PROPN_ASTE	e stem, e : ee variations
 PROPN_ASU	u stem, no variations
 PROPN_ASUKAS	kas stem, kas : kkaa variations
 PROPN_ATERIMET	Proper noun plurale tantum met stem, met : n variation back harmony
-PROPN_BÉBÉ	é stem 
 PROPN_BEIGNET	consonat stem, ’ inflections
 PROPN_BERNIE	ie stem, no variations front harmony
 PROPN_BESSERWISSER	consonant stem, X : Xe varioants
@@ -1651,6 +1652,7 @@ PROPN_BORDEAUX	consonant stem, ’ inflection
 PROPN_BRASSERIE	e stem no variatons back harmony
 PROPN_BRIE	e stem front harmony
 PROPN_BROOKLYN	consonant stem, no variations both harmonies
+PROPN_BÉBÉ	é stem 
 PROPN_CAMUS	consonat stem, ’ inflection
 PROPN_CHACHACHA	no variatiosn 
 PROPN_COMPOUND	bound proper noun particles, usually, hyphen, such as ‘Etelä-’
@@ -2109,20 +2111,20 @@ PUNCT_NONSTD_EXCL_LOOP	accounts for repeated exclamation-like characters
 PUNCT_PILKKU	punctuation, rare back inflection plausible
 PUNCT_PISTE	punctuation, rare front inflection plausible
 SCONJ_ETTÄ	sub-ordinating conjunction, no inflections
+SYM_$	symbols, inflection, :, compounding, -
 SYM_,	symbol, back inflection, :, compounding, -
 SYM_.	symbols, front inflection, :, compounding, -
-SYM_§	symbols, inflection, :, compounding, -
-SYM_¢	symbols, inflection, :, compounding, -
-SYM_$	symbols, inflection, :, compounding, -
-SYM_£	symbols, inflection, :, compounding, -
-SYM_€	symbols, inflection, :, compounding, -
 SYM_CELSIUS	symbols, inflection, :, compounding, -
 SYM_GRAMMA	symbols, inflection, :, compounding, -
 SYM_JOULE	symbols, inflection, :, compounding, -
 SYM_METRI	symbols, inflection, :, compounding, -
 SYM_TUOTE	symbols, inflection, :, compounding, -
 SYM_WEBER	symbols, inflection, :, compounding, -
+SYM_¢	symbols, inflection, :, compounding, -
+SYM_£	symbols, inflection, :, compounding, -
+SYM_§	symbols, inflection, :, compounding, -
 SYM_Ω	symbols, inflection, :, compounding, -
+SYM_€	symbols, inflection, :, compounding, -
 VERB_AALLOTA	llota stem, llota : ltoa variaton
 VERB_AHNEHTIA	tia stem, tia : di variations
 VERB_AMPUA	mpua stem, mpua : mmu variations
@@ -2285,10 +2287,10 @@ VERB_SAMMOTA	mmota stems, mmota : mpoa variations
 VERB_SATAA	taa stem defective inflection
 VERB_SELVITÄ	vitä stem, vitä : piä variations
 VERB_SIEPATA	pata stem, pata : ppaa variations
-VERB_SI’ITÄ	’itä stem, ’itä : kiä variations
 VERB_SILIYTYÄ	ytyä stem, ytyä : ydy variations
 VERB_SILPOA	poa stem, poa : vo variations
 VERB_SIVALTAA	ltaa stem, ltaa : lla variations
+VERB_SI’ITÄ	’itä stem, ’itä : kiä variations
 VERB_SORTAA	rtaa stem, rtaa : rra variations
 VERB_SOTKEA	ea stem, ea : i variations
 VERB_SULATELLA	tella stem, tella : ttele variations
