@@ -1,27 +1,30 @@
 #!/bin/bash
 
-awk '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
+GAWK=gawk
+SED=gsed
+
+$GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
     fgrep -v wordlist |\
     tr -d '\n' |\
     # XML to TSV
-    sed -e 's/<word /\n/g' |\
+    $SED -e 's/<word /\n/g' |\
     fgrep -v prefix |\
-    sed -e 's/>[[:space:]]*</></g' |\
-    sed -e 's/^id=.*<forms>//' \
+    $SED -e 's/>[[:space:]]*</></g' |\
+    $SED -e 's/^id=.*<forms>//' \
         -e 's:<form>::' \
         -e 's:</form><form>:||:g' \
         -e 's:</form>::' |\
-    sed -e 's:</forms>.*<classes>:\t:' \
+    $SED -e 's:</forms>.*<classes>:\t:' \
         -e 's:<wclass>::' \
         -e 's:</wclass><wclass>:||:g' \
         -e 's:</wclass>::' |\
-    sed -e 's:</classes>.*<inflection>:_:' \
+    $SED -e 's:</classes>.*<inflection>:_:' \
         -e 's:<infclass>::' \
         -e 's:</infclass><infclass[^>]*>:||:g' \
         -e 's:</infclass>::' |\
-    sed -e 's:</classes></word>::' \
+    $SED -e 's:</classes></word>::' \
         -e 's:</classes>::' |\
-    sed -e 's:<vtype>:__:' \
+    $SED -e 's:<vtype>:__:' \
         -e 's:</vtype>::' \
         -e 's:</style>::' \
         -e 's:<usage>::' \
@@ -33,13 +36,13 @@ awk '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's:<frequency>.*</frequency>::' \
         -e 's:</application>::' \
         -e 's:<flag>.*</flag>::' |\
-    sed -e 's:</inflection>.*</word>::'\
+    $SED -e 's:</inflection>.*</word>::'\
         -e 's:<style>.*</word>::' \
         -e 's:</word>::' |\
     # JOU to new paras
-    sed -e 's/pnoun_\(misc\|lastname\|firstname\|place\)/PROPN/g' \
+    $SED -e 's/pnoun_\(misc\|lastname\|firstname\|place\)/PROPN/g' \
         -e 's/noun/NOUN/g' \
-        -e 's/verb/VERB/g' \
+        -e 's/verb\([^i]\)/VERB\1/g' \
         -e 's/adjective/ADJ/g' \
         -e 's/interjection___a/INTJ_HAH/' \
         -e 's/interjection/INTJ_HAH/' \
@@ -49,7 +52,7 @@ awk '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's/abbreviation/NOUN_ACRO/' \
         -e 's/conjunction/SCONJ_ETTÄ/' |\
     # nominals ~ alphabetically
-    sed -e 's/poikkeava$/XXX/' \
+    $SED -e 's/poikkeava$/XXX/' \
         -e 's/alkeet$/ALKEET/' \
         -e 's/autuas$/AUTUAS/' \
         -e 's/apaja||kantaja$/PROBLEEMA/' \
@@ -268,7 +271,7 @@ awk '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's/vieras$/PATSAS/' \
         -e 's/ylkä$/YLKÄ/' |\
     # verbs
-    sed -e 's/aaltoilla$/ARVAILLA/'\
+    $SED -e 's/aaltoilla$/ARVAILLA/'\
         -e 's/sulaa-av1||aavistaa-av1$/VIEROITTAA/' \
         -e 's/aavistaa-av1$/VIEROITTAA/' \
         -e 's/aavistaa$/MUTRISTAA/'\
@@ -386,12 +389,14 @@ awk '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's/voida-av2$/KOPIOIDA/' \
         -e 's/vuotaa-av1$/HUONONTAA/'\
         -e 's/poikkeava||kutiaa$/KUDITA/' |\
-    awk 'BEGIN {printf("%s\t%s\t%s\t%s\n", "lemma", "homonym", "new_para",
+    $SED -e 's/ADJ_RUUVI/ADJ_ABNORMI/' \
+        -e 's/PROPN_AAKKOSELLINEN/PROPN_AAKKOSTAMINEN/' |\
+    $GAWK 'BEGIN {printf("%s\t%s\t%s\t%s\n", "lemma", "homonym", "new_para",
                        "origin");}
                        {
                            wordcount = split($1, words, /\|\|/);
                             for (i=0; i < wordcount; i++) {
                                 printf("%s\t1\t%s\tjoukahainen\n",
-                                    gensub(/[=]/, "", "g", words[i+1]), $2);
+                                    gensub(/[=|]/, "", "g", words[i+1]), $2);
                             }
                         }'
