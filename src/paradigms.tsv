@@ -276,7 +276,7 @@ NOUN_51vanhapiika	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanh
 NOUN_51vanhapoika	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanhapoika	apoika
 NOUN_51vierasmies	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vierasmies	vierasmies
 NOUN_AAKKOSELLISUUS	NOUN	NOUN	40	None	False	strengthen	back	None	None	False	False	us	s
-NOUN_AAKKOSTAMINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False	nen	nen
+NOUN_AAKKOSTAMINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen	nen
 NOUN_AALLOT	NOUN	NOUN	1	I	obligatory	weaken	back	None	None	False	False	lot	lot
 NOUN_AAMUKAHDEKSAN	NOUN	NOUN	10	None	False	weaken	back	None	None	False	False	kahdeksan	an
 NOUN_AAMUKAKSI	NOUN	NOUN	31	None	False	weaken	back	None	None	False	False	kaksi	ksi
@@ -284,7 +284,7 @@ NOUN_AAMUKOLME	NOUN	NOUN	3	None	False	weaken	back	None	None	False	False	kolme	e
 NOUN_AAMUKYMMENEN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	kymmenen	en
 NOUN_AAMUYHDEKSÄN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	än	än
 NOUN_AAMUYKSI	NOUN	NOUN	31	None	False	weaken	front	None	None	False	False	yksi	ksi
-NOUN_AARRE	NOUN	NOUN	48	K	False	strengthen	back	None	None	False	False	rre	re
+NOUN_AARRE	NOUN	NOUN	48	K	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rre	re
 NOUN_ACRO_AA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aaáàâã]
 NOUN_ACRO_CELSIUS	NOUN	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
 NOUN_ACRO_DOLLARI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
@@ -448,7 +448,7 @@ NOUN_KIELTO	NOUN	NOUN	1	I	False	weaken	back	None	None	False	False	lto	to
 NOUN_KIERRE	NOUN	NOUN	48	K	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*rre	re
 NOUN_KIERRIN	NOUN	NOUN	33	K	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*rrin	rin
 NOUN_KIHARAT	NOUN	NOUN	11	None	obligatory	weaken	back	None	None	False	False	at	t
-NOUN_KIHARRIN	NOUN	NOUN	33	K	False	strengthen	back	None	None	False	False	rrin	rin
+NOUN_KIHARRIN	NOUN	NOUN	33	K	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rrin	rin
 NOUN_KIINNE	NOUN	NOUN	48	J	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nne	ne
 NOUN_KIIRU	NOUN	NOUN	48	None	False	strengthen	back	u	None	False	False	u
 NOUN_KILPI	NOUN	NOUN	7	E	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*pi	pi
@@ -459,7 +459,7 @@ NOUN_KIRJA	NOUN	NOUN	9	None	False	weaken	back	a	None	False	False	a	a
 NOUN_KIRVES	NOUN	NOUN	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*es	s
 NOUN_KITARA	NOUN	NOUN	13	None	False	weaken	back	a	None	False	False	a	a
 NOUN_KIVI	NOUN	NOUN	7	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
-NOUN_KLUMPIT	NOUN	NOUN	5	B	obligatory	weaken	back	None	None	False	False	pit	it
+NOUN_KLUMPIT	NOUN	NOUN	5	B	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*pit	it
 NOUN_KOE	NOUN	NOUN	48	D	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 NOUN_KOKO	NOUN	NOUN	1	D	False	weaken	back	None	None	False	False	ko	ko
 NOUN_KOMPA	NOUN	NOUN	10	H	False	weaken	back	a	None	False	False	mpa	pa
@@ -506,7 +506,7 @@ NOUN_LEIKKUU	NOUN	NOUN	17	None	False	weaken	back	u	None	False	False	uu	u
 NOUN_LEIPÄ	NOUN	NOUN	10	E	False	weaken	front	ä	None	False	False	pä	pä
 NOUN_LEPAKKO	NOUN	NOUN	4	A	False	weaken	back	None	None	False	False	kko	ko
 NOUN_LIEMI	NOUN	NOUN	25	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*mi	mi
-NOUN_LIITTOUTUNEET	NOUN	NOUN	47	None	obligatory	strengthen	back	None	None	False	False	neet	et
+NOUN_LIITTOUTUNEET	NOUN	NOUN	47	None	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*neet	et
 NOUN_LIIVIT	NOUN	NOUN	5	None	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it	it
 NOUN_LINTU	NOUN	NOUN	1	J	False	weaken	back	None	None	False	False	ntu	tu
 NOUN_LIPEÄ	NOUN	NOUN	15	None	False	weaken	front	ä	None	False	False	eä	ä
@@ -538,7 +538,7 @@ NOUN_MARKKINAT	NOUN	NOUN	12	None	obligatory	weaken	back	None	None	False	False	at
 NOUN_MATEE	NOUN	NOUN	18	None	False	weaken	back	e	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 NOUN_MERI	NOUN	NOUN	1024	None	False	weaken	both	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
 NOUN_MIELLE	NOUN	NOUN	48	I	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*lle	le
-NOUN_MIES	NOUN	NOUN	42	None	False	strengthen	front	None	None	False	False	ies	s
+NOUN_MIES	NOUN	NOUN	42	None	False	strengthen	front	None	None	False	False	[Mm]ies	s
 NOUN_MILJÖÖ	NOUN	NOUN	20	None	False	weaken	front	ö	None	False	False	öö	ö
 NOUN_MILJÖÖT	NOUN	NOUN	20	None	obligatory	weaken	front	None	None	False	False	ööt	öt
 NOUN_MITTA	NOUN	NOUN	9	C	False	weaken	back	a	None	False	False	tta	ta
@@ -550,13 +550,13 @@ NOUN_MÄNTY	NOUN	NOUN	1	J	False	weaken	front	None	None	False	False	nty	ty
 NOUN_MÄTÄS	NOUN	NOUN	41	C	False	strengthen	front	None	None	False	False	täs	äs
 NOUN_MÖMMÖ	NOUN	NOUN	1	None	False	weaken	front	None	None	False	False	ö
 NOUN_MÖRKÖ	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	kö	kö
-NOUN_NALLE	NOUN	NOUN	8	None	False	weaken	back	None	None	False	False	[Eeëěĕ]
+NOUN_NALLE	NOUN	NOUN	8	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*[Eeëěĕ]
 NOUN_NEITSYT	NOUN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 NOUN_NEUVOTTELUT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 NOUN_NIHTI	NOUN	NOUN	5	F	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ti	ti
 NOUN_NIITUT	NOUN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
 NOUN_NIMETÖN	NOUN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	ön
-NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[Eeěëéè]
+NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýêéőèěęøæõ][^aou]*[Eeěëéè]
 NOUN_NOKI	NOUN	NOUN	7	D	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki	ki
 NOUN_NOUGAT	NOUN	NOUN	22	None	False	weaken	back	a	None	False	False	.
 NOUN_NRO	NOUN	PARTICLE	99	None	False	False	back	None	None	False	False	.
@@ -592,7 +592,7 @@ NOUN_PERKEET	NOUN	NOUN	48	L	obligatory	strengthen	front	None	None	False	False	[�
 NOUN_PIDOT	NOUN	NOUN	1	F	obligatory	weaken	back	None	None	False	False	dot	dot
 NOUN_PIENNAR	NOUN	NOUN	49	J	False	strengthen	back	None	None	False	False	nnar	nar
 NOUN_PIHDIT	NOUN	NOUN	5	F	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*dit	dit
-NOUN_PII	NOUN	NOUN	18	None	False	weaken	front	i	None	False	False	i	i
+NOUN_PII	NOUN	NOUN	18	None	False	weaken	front	i	None	False	False	[^aou]i	i
 NOUN_PIIROA	NOUN	NOUN	15	None	False	weaken	back	a	None	False	False	[ôo]a	a
 NOUN_PINSETIT	NOUN	NOUN	5	C	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tit	it
 NOUN_PIPPALOT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ot	t
@@ -652,7 +652,7 @@ NOUN_ROSÉ	NOUN	NOUN	21	None	False	weaken	back	é	None	False	False	.
 NOUN_ROTAT	NOUN	NOUN	10	C	obligatory	weaken	back	None	None	False	False	tat	at
 NOUN_ROTTA	NOUN	NOUN	10	C	False	weaken	back	a	None	False	False	tta	ta
 NOUN_RUIPELO	NOUN	NOUN	2	None	False	weaken	back	None	None	False	False	o
-NOUN_RUIS	NOUN	NOUN	41	D	False	strengthen	back	None	None	False	False	is	is
+NOUN_RUIS	NOUN	NOUN	41	D	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*is	is
 NOUN_RUMPU	NOUN	NOUN	1	H	False	weaken	back	None	None	False	False	mpu	pu
 NOUN_RUNKO	NOUN	NOUN	1	G	False	weaken	back	None	None	False	False	nko	ko
 NOUN_RUOKA	NOUN	NOUN	10	D	False	weaken	back	a	None	False	False	uoka	oka
@@ -790,13 +790,13 @@ NOUN_VUO	NOUN	NOUN	19	None	False	weaken	back	None	None	False	False	uo	uo
 NOUN_VUODET	NOUN	NOUN	27	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det	det
 NOUN_VUOLLE	NOUN	NOUN	48	I	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*lle	le
 NOUN_VUOSITUHAT	NOUN	NOUN	46	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*t	t
-NOUN_YHTIÖT	NOUN	NOUN	3	None	obligatory	weaken	front	None	None	False	False	t	t
+NOUN_YHTIÖT	NOUN	NOUN	3	None	obligatory	weaken	front	None	None	False	False	öt	t
 NOUN_YKSIKKÖ	NOUN	NOUN	4	A	False	weaken	front	None	None	False	False	kkö	kö
 NOUN_YLEIS	NOUN	NOUN	99	None	False	False	front	None	None	False	False	.
 NOUN_YLKÄ	NOUN	NOUN	10	L	False	weaken	front	ä	None	False	False	kä	kä
 NOUN_YLÄNKÖ	NOUN	NOUN	1	G	False	weaken	front	None	None	False	False	nkö	kö
 NOUN_YMPÄRYSTÄ	NOUN	NOUN	9	None	False	weaken	front	ä	None	False	False	ä	ä
-NOUN_YSTÄVYKSET	NOUN	NOUN	39	None	obligatory	strengthen	front	None	None	False	False	kset	kset
+NOUN_YSTÄVYKSET	NOUN	NOUN	39	None	obligatory	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*kset	kset
 NOUN_YÖKKÖ	NOUN	NOUN	1	A	False	weaken	front	None	None	False	False	kkö	kö
 NOUN_ZEN	NOUN	NOUN	5	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*
 NOUN_ZOMBIE	NOUN	NOUN	3	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
@@ -1595,9 +1595,9 @@ PROPN_51Uusikaupunki	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	
 PROPN_51Uusimaa	PROPN	PROPN	51	None	False	weaken	back	None	None	False	False	Uusimaa	simaa
 PROPN_A.	PROPN	NOUN	99	None	False	False	back	None	None	False	False	\.
 PROPN_AAKKOSELLISUUS	PROPN	NOUN	40	None	False	strengthen	back	None	None	False	False	us	s
-PROPN_AAKKOSTAMINEN	PROPN	NOUN	38	None	False	strengthen	back	None	None	False	False	nen	nen
+PROPN_AAKKOSTAMINEN	PROPN	NOUN	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen	nen
 PROPN_AALLOT	PROPN	NOUN	1	I	obligatory	weaken	back	None	None	False	False	lot	lot
-PROPN_AARRE	PROPN	NOUN	48	K	False	strengthen	back	None	None	False	False	rre	re
+PROPN_AARRE	PROPN	NOUN	48	K	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rre	re
 PROPN_ACRO_AA	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aa]
 PROPN_ACRO_DOLLARI	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	.
 PROPN_ACRO_EE	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[BCDEGPTVWbcdegptvw]
@@ -1626,7 +1626,7 @@ PROPN_ACRO_ZET	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[ZŽz
 PROPN_ACRO_ÄKS	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]
 PROPN_ACRO_ÖÖ	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	[Öö]
 PROPN_ACRO_Ω	PROPN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
-PROPN_AHDET	PROPN	NOUN	44	F	False	strengthen	back	None	None	False	False	det	det
+PROPN_AHDET	PROPN	NOUN	44	F	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det	det
 PROPN_AIVOKUOLLUT	PROPN	NOUN	47	None	False	strengthen	back	u	None	False	False	ut	ut
 PROPN_AIVOT	PROPN	NOUN	1	None	obligatory	weaken	back	None	None	False	False	ot	t
 PROPN_AJATAR	PROPN	NOUN	32	C	False	strengthen	back	None	None	False	False	tar	ar
@@ -1635,11 +1635,11 @@ PROPN_ALLAS	PROPN	NOUN	41	I	False	strengthen	back	None	None	False	False	las	las
 PROPN_ALTIS	PROPN	NOUN	41	C	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*tis	is
 PROPN_APE	PROPN	NOUN	48	B	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 PROPN_APU	PROPN	NOUN	1	E	False	weaken	back	None	None	False	False	pu	pu
-PROPN_ARISTOTELES	PROPN	NOUN	41	None	False	strengthen	both	None	None	False	False	es	s
-PROPN_ARKI	PROPN	NOUN	7	L	False	weaken	back	None	None	False	False	ki	ki
+PROPN_ARISTOTELES	PROPN	NOUN	41	None	False	strengthen	both	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*es	s
+PROPN_ARKI	PROPN	NOUN	7	L	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki	ki
 PROPN_ASEMA	PROPN	NOUN	10	None	False	weaken	back	a	None	False	False	a	a
-PROPN_ASKAR	PROPN	NOUN	49	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*
-PROPN_ASTE	PROPN	NOUN	48	None	False	strengthen	back	None	None	False	False	e
+PROPN_ASKAR	PROPN	NOUN	49	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*[rl]
+PROPN_ASTE	PROPN	NOUN	48	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
 PROPN_ASU	PROPN	NOUN	1	None	False	weaken	back	u	None	False	False	[Uuú]
 PROPN_ASUKAS	PROPN	NOUN	41	A	False	strengthen	back	None	None	False	False	kas	as
 PROPN_ATERIMET	PROPN	NOUN	33	None	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*met	met
@@ -1663,7 +1663,7 @@ PROPN_ELIN	PROPN	NOUN	33	None	False	strengthen	front	None	None	False	False	[ÄÖ
 PROPN_ELÄMÄ	PROPN	NOUN	10	None	False	weaken	front	ä	None	False	False	ä	ä
 PROPN_EPÄILTY	PROPN	NOUN	1	I	False	weaken	front	None	None	False	False	lty	ty
 PROPN_ESQUIMAU	PROPN	NOUN	21	None	False	weaken	back	o	None	False	False	.
-PROPN_EUGENE	PROPN	NOUN	2	None	False	weaken	back	None	None	False	False	.
+PROPN_EUGENE	PROPN	NOUN	2	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
 PROPN_FARKUT	PROPN	NOUN	1	A	obligatory	weaken	back	None	None	False	False	ut	ut
 PROPN_FARMARIT	PROPN	NOUN	6	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*it	it
 PROPN_FIFA	PROPN	NOUN	10	None	False	weaken	back	None	None	False	False	.
@@ -1750,7 +1750,7 @@ PROPN_KIRJA	PROPN	NOUN	9	None	False	weaken	back	a	None	False	False	a	a
 PROPN_KIRVES	PROPN	NOUN	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*es	s
 PROPN_KITARA	PROPN	NOUN	13	None	False	weaken	back	a	None	False	False	a	a
 PROPN_KIVI	PROPN	NOUN	7	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
-PROPN_KLUMPIT	PROPN	NOUN	5	B	obligatory	weaken	back	None	None	False	False	pit	it
+PROPN_KLUMPIT	PROPN	NOUN	5	B	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*pit	it
 PROPN_KOE	PROPN	NOUN	48	D	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 PROPN_KOKO	PROPN	NOUN	1	D	False	weaken	back	None	None	False	False	ko	ko
 PROPN_KOMPA	PROPN	NOUN	10	H	False	weaken	back	a	None	False	False	mpa	pa
@@ -1853,7 +1853,7 @@ PROPN_MC	PROPN	NOUN	99	None	False	False	back	None	None	False	False	.
 PROPN_MERI	PROPN	NOUN	1024	None	False	weaken	back	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
 PROPN_MERTU	PROPN	NOUN	1	K	False	weaken	back	None	None	False	False	rtu	tu
 PROPN_METTE	PROPN	NOUN	8	C	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tte	te
-PROPN_MIEHET	PROPN	NOUN	42	None	obligatory	strengthen	back	None	None	False	False	iehet	het
+PROPN_MIEHET	PROPN	NOUN	42	None	obligatory	strengthen	back	None	None	False	False	[Mm]iehet	het
 PROPN_MIELENGE	PROPN	NOUN	48	G	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nge	ge
 PROPN_MIELLE	PROPN	NOUN	48	I	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*lle	le
 PROPN_MIES	PROPN	NOUN	42	None	False	strengthen	back	None	None	False	False	ies	s
