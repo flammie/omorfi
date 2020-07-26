@@ -142,7 +142,8 @@ participate, read further information in
 
 ## Contact
 
-* Issues and problems may be filed in github issue tracker, including support
+* Issues and problems may be filed in [our github issue
+  tracker](https://github.com/flammie/omorfi/issues), including support
   questions
 * [IRC channel #omorfi on Freenode](irc://Freenode/#omorfi) is particularly good
   for live chat for support questions, suggestions and discussions
@@ -160,7 +161,8 @@ See [our code of conduct](//flammie.github.io/omorfi/CODE_OF_CONDUCT.html).
 
 A lot of omorfi development has been done on spare time and by volunteers, if
 you want to support [Flammie](https://flammie.github.io) you can use the
-github's ❤️Sponsor button, or any of the services below:
+github's [❤️Sponsor](https://github.com/sponsors/flammie) button, or any of the
+services below:
 
 <a href="https://liberapay.com/Flammie/donate"><img alt="Donate using Liberapay"
 src="https://liberapay.com/assets/widgets/donate.svg"></a>

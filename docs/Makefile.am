@@ -50,6 +50,34 @@ NEWS.markdown: ../NEWS
 README.markdown: ../README.md
 	cp -v $< $@
 
+AUTHORS.markdown: ../AUTHORS
+	cp -v $< $@
+
+CITATION.markdown: ../CITATION
+	cp -v $< $@
+
+CODE_OF_CONDUCT.markdown: ../CODE_OF_CONDUCT.md
+	cp -v $< $@
+
+CONTRIBUTING.markdown: ../CONTRIBUTING.md
+	cp -v $< $@
+
+COPYING.markdown: ../COPYING
+	cp -v $< $@
+
+ChangeLog.markdown: 
+	git log > ChangeLog.new
+	cat ChangeLog.new ../ChangeLog.old > $@
+
+INSTALL.markdown: ../INSTALL
+	cp -v $< $@
+
+THANKS.markdown: ../THANKS
+	cp -v $< $@
+
+TODO.markdown: ../TODO
+	cp -v $< $@
+
 clean-local:
 	if test -d com ; then \
 		find com/github/flammie/omorfi -name '*.class' -delete ;\

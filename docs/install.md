@@ -4,6 +4,12 @@ The NLP analysers / language models are based on finite-state automata
 technology and require some special tools to be installed before compilation and
 use.
 
+## Downloading
+
+[Download a release tarball from
+ github](https://github.com/flammie/omorfi/releases) or [clone
+the bleeding edge version with git](https://github.com/flammie/omorfi/)
+
 ## Dependencies
 
 Required for compilation and use:
@@ -27,12 +33,62 @@ Optionally:
 
 It is recommended to follow the [Installing grammar
 libraries](https://wiki.apertium.org/wiki/Installation_of_grammar_libraries)
-instructions provided by apertium project.
+instructions provided by apertium project. In summary:
+
+```
+wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+sudo apt-get install cg3 hfst
+```
+
+But check the apertium wiki for updates.
+
+### Installing with pip (python only)
+
+Omorfi has preliminary python packaging on pip, it can be used to install
+some of the relevant dependencies and run parts of omorfi without installing
+extra software. This installation lacks tools like spell-checking and
+correction or morphological disambiguation, which require non-python
+dependencies.
+
+```
+pip install omorfi
+```
 
 ### Installing dependencies on other systems
 
 Follow the instructions by [HFST](https://hfst.github.io) and [VISL CG
 3](https://visl.sdu.dk/cg3.html) projects.
+
+## Using omorfi without full compilation
+
+It is possible to download pre-compiled omorfi models and use them without going
+through the compilation process. If you have downloaded and installed all the
+dependencies, you can run the configuration script:
+
+```
+./configure
+```
+
+To check that all necessary tools are installed and usable, it also sets up some
+details of the convenience scripts. Then:
+
+```
+omorfi-download.bash
+```
+
+found in `src/bash` folder will fetch the language models.
+
+Note that if you downloaded pip version, you can only use:
+
+```
+omorfi-download.py
+```
+
+instead of the bash version.
+
+If the downloading worked you can proceed to [usage examples](usage.html). Be
+aware that some of the examples may not work depending on which depdendencies
+you installed and version downloaded.
 
 ## Compiling omorfi
 
@@ -104,4 +160,5 @@ to enable or disable the API bindings for Java or other languages. The
     * run tests on SLURM cluster: false → mailto: no
 ```
 
-
+If you have ran `configure`, `make` and `make install`, you can carry on to
+[usage examples](usage.html).

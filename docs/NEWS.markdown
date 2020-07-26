@@ -3,6 +3,15 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 20200511
+
+* Universal dependencies version 2.6 compatible
+* 3021 new words, some related to 2020
+* preliminary support for pip / pypi / venv
+* new logo
+* next version will be in semantic versioning scheme, and few breaks in API 
+  are to be expected
+
 ## Significant changes in 20191111
 
 * Universal dependencies version 2.5 is a reference for recall tests
