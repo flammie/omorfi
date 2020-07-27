@@ -1,12 +1,4 @@
----
-layout: default
-title: "Analyses and Morphosyntax FAQ"
-category: design
-date: 2016-02-08 18:23:58
----
-
-
-# Finnish morphosyntax
+# Finnish morphosyntax (FAQ)
 
 This is one of many documents describing linguistic aspects of omorfi’s
 morphological analysis part. I have written it as an FAQ related to common
@@ -125,30 +117,33 @@ limited vocabulary analysers.
 
 ## Adjective or noun?
 
-There are groups of words that can be used both as adjectives and nouns. The most common
-examples of this include inhabitants of region: *suomalainen* (a Finn, Finnish), 
-*helsinkiläinen* (from Helsinki), etc. Also many colour words have this duality:
-*punainen* (red), *purppura* (purple), but some have more or less strict divide between
-a noun lexeme and adjectival one: *sini* (blue N) ~ *sininen* (blue N/A), *kulta* (gold N),
-*kultainen* (golden A). To recognise adjectives, ...
+There are groups of words that can be used both as adjectives and nouns. The
+most common examples of this include inhabitants of region: *suomalainen* (a
+Finn, Finnish), *helsinkiläinen* (from Helsinki), etc. Also many colour words
+have this duality: *punainen* (red), *purppura* (purple), but some have more or
+less strict divide between a noun lexeme and adjectival one: *sini* (blue N) ~
+*sininen* (blue N/A), *kulta* (gold N), *kultainen* (golden A). To recognise
+adjectives, ...
 
 ## Proper noun as noun too?
 
-There are also groups of proper nouns that systematically double as nouns. Most commonly,
-names of languages: *Kiina* (China) and *kiina* (chinese), *Suomi* (Finland) and *suomi*
-(Finnish). It is also true, that in the world at large, pretty much any combination of
-characters will be used as a proper noun, and many of these found their way to omorfi
-database. We have some manual annotations for worst overlaps, but it is always a good
-thing to keep in mind, that most words can be proper nouns, especially when they end
-in title-case position (however, some modern proper nouns are not even title-cased!).
+There are also groups of proper nouns that systematically double as nouns. Most
+commonly, names of languages: *Kiina* (China) and *kiina* (chinese), *Suomi*
+(Finland) and *suomi* (Finnish). It is also true, that in the world at large,
+pretty much any combination of characters will be used as a proper noun, and
+many of these found their way to omorfi database. We have some manual
+annotations for worst overlaps, but it is always a good thing to keep in mind,
+that most words can be proper nouns, especially when they end in title-case
+position (however, some modern proper nouns are not even title-cased!).
 
 ## Adposition or adverb?
 
-There is a large number of adpositions that can be treated as adverb, and vice versa. The
-rules for telling the two apart are not too clear in the end. The main test should be, an
-adposition has a compulsory nominal complement, and you should be able to tell what its case
-is, e.g. usually genitive or partitive, but some take other cases. Many adpositions can also
-have their possessive suffix as a complement, however, some lexemes with obvious possessive
-suffixes that could not be imagined as a noun complement must be adverbs. It is especially
-important when changing and adding ADV or ADP lexemes to document the rationale with example
-sentence and the description. These examples can be found in [TODO]
+There is a large number of adpositions that can be treated as adverb, and vice
+versa. The rules for telling the two apart are not too clear in the end. The
+main test should be, an adposition has a compulsory nominal complement, and you
+should be able to tell what its case is, e.g. usually genitive or partitive, but
+some take other cases. Many adpositions can also have their possessive suffix as
+a complement, however, some lexemes with obvious possessive suffixes that could
+not be imagined as a noun complement must be adverbs. It is especially important
+when changing and adding ADV or ADP lexemes to document the rationale with
+example sentence and the description. These examples can be found in [TODO]

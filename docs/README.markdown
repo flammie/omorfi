@@ -19,7 +19,7 @@ omorfi](//flammie.github.io/omorfi/).
 
 Citation information can be found in file
 [CITATION](https://github.com/flammie/omorfi/blob/develop/CITATION). For further
-details, see [omorfi articles](//flammie.github.io/omorfi/pages/Articles.html).
+details, see [omorfi articles](//flammie.github.io/omorfi/articles.html).
 
 ## Downloading and further information
 
@@ -28,7 +28,7 @@ Omorfi packages can be downloaded from github:
 * [omorfi releases](https://github.com/flammie/omorfi/releases)
 
 or the most current version using git. For more information, see
-[Release policy](https://flammie.github.io/omorfi/pages/Releases.html)
+[Release policy](https://flammie.github.io/omorfi/releases.html)
 
 ## Dependencies
 
@@ -96,24 +96,24 @@ Omorfi can be used from command line using following commands:
 
 For further details please refer to:
 * [omorfi usage examples in github
-   pages](https://flammie.github.io/omorfi/pages/usage-examples.html)
+   pages](https://flammie.github.io/omorfi/usage.html)
 * [omorfi man pages](https://flammie.github.io/omorfi/man/)
 
 ## Programming APIs
 
 Omorfi can be used via very simple programming APIs, the design is detailed in
-[omorfi API design](https://flammie.github.io/omorfi/pages/API-design)
+[omorfi API design](https://flammie.github.io/omorfi/API-design.html)
 
 ## Using binary models
 
 There are various binaries for language models that can be used with specialised
 tools like HFST. For further details, see [our usage
-examples](https://flammie.github.io/omorfi/pages/usage-examples.html).
+examples](https://flammie.github.io/omorfi/usage.html).
 
 ## Troubleshooting
 
 For full descriptions and archived problems, see: [Troubleshooting in github
-pages](https://flammie.github.io/omorfi/pages/troubleshooting.html)
+pages](https://flammie.github.io/omorfi/troubleshooting.html)
 
 ### hfst-lexc: Unknown option
 
@@ -138,7 +138,7 @@ Get more RAM or swap space.
 
 Omorfi code and data are free and libre open source, and community-driven, to
 participate, read further information in
-[CONTRIBUTING](https://github.com/flammie/omorfi/blob/develop/CONTRIBUTING.md)
+[CONTRIBUTING](https://flammie.github.io/omorfi/CONTRIBUTING.html)
 
 ## Contact
 

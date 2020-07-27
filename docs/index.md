@@ -9,9 +9,9 @@ The main components of this repository are:
 1. _a lexical database_ containing hundreds of thousands of words (c.f.
    [lexical statistics](statistics.html))
 2. a collection of _conversion scripts_ to convert lexical database into formats
-   upstream NLP tools (c.f. [lexical processing](pages/Database-processing))
+   upstream NLP tools (c.f. [lexical processing](database-processing))
 3. a collection of _utility scripts_ to process Finnish texts on command-line
-   (c.f. [usage examples](pages/usage-examples.html))
+   (c.f. [usage examples](usage.html))
 4. an _autotools setup_ to build and install (or package, or deploy): the
    scripts, the database, and simple APIs / convenience processing tools
 5. a collection of relatively [simple APIs](apis/html/) with bindings for a
@@ -37,13 +37,13 @@ included):
 ## Documentation
 
 The most recent version of this documentation is online on github pages at
-https://flammie.github.io/omorfi/
+[https://flammie.github.io/omorfi/]()
 
 ### Basics
 
 1. [README](README.html)
 1. [Installation](install.html)
-1. [Usage examples](usage-examples.html)
+1. [Usage examples](usage.html)
 
 ### Bindings
 
@@ -71,11 +71,10 @@ paradigms or noteworthy words:
 
 Some notes about design and development
 
-1. [Analysis tags](tag-formats.html)
-1. [Design "principles" for tags](Tagging-possibilities.html)
-1. [Directory layout](Directory-layout.html)
-1. [Database structure](Database-processing.html)
-1. [Testing](Regression-testing.html)
+1. [Design "principles" for tags](tagging-possibilities.html)
+1. [Directory layout](directory-layout.html)
+1. [Database structure](database-processing.html)
+1. [Testing](regression-testing.html)
 
 ## Contact
 

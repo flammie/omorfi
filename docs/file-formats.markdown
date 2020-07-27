@@ -1,13 +1,13 @@
----
-layout: default
-title: Omorfi I/O file formats
----
+# Omorfi file formats
+
+*Outdated*
 
 # Introduction
 
-Handling file formats and taggings in NLP programs is troublesome.
-In omorfi we have used a lot of small python scripts and snippets for this.
-Eventually we will converge towards doing conversions n:1 and 1:m  formats, instead of n:m directly pairwise...
+Handling file formats and taggings in NLP programs is troublesome.  In omorfi we
+have used a lot of small python scripts and snippets for this.  Eventually we
+will converge towards doing conversions n:1 and 1:m  formats, instead of n:m
+directly pairwise...
 
 Formats already found in real world and need to be supported are following:
 

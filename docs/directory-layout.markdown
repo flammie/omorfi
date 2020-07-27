@@ -1,14 +1,11 @@
----
-layout: default
-title: "Directory layout"
-category: design
-date: 2016-02-08 18:23:58
----
+# Directory layout in omorfi
 
+*Outdated*
 
 # Introduction #
 
-This document is for developers and contributors of omorfi to understand the directory structure of the code, and the files contained.
+This document is for developers and contributors of omorfi to understand the
+directory structure of the code, and the files contained.
 
 
 # Details #
@@ -27,7 +24,7 @@ Directory `tree`:
 │   ├── continuations # Morphology as modeled in morph-concatenation model
 │   ├── docs # in-source documents and wiki pages generated from these
 │   ├── examples # examples for tests and documentation
-│   ├── externals # lexical data outside omorfi and scripts to handle it 
+│   ├── externals # lexical data outside omorfi and scripts to handle it
 │   ├── generated # holds build process generated files
 │   ├── java # java API
 │   │   └── com # obligatory JAVA dir struct.
@@ -36,7 +33,7 @@ Directory `tree`:
 │   │       │       └── omorfi # obligatory JAVA dir struct.
 │   ├── paradigms # paradigm data (per paradigm joins)
 │   ├── perl # perl scripts
-│   ├── python # python scripts 
+│   ├── python # python scripts
 │   │   └── omorfi # python API
 │   │       └── __pycache__ # python may generate these
 │   ├── scripts # installable scripts for end-user applications
@@ -65,7 +62,7 @@ File `tree`:
 ├── config.log # autoconf log, read when configure fails
 ├── config.status # autoconf status, run to remake current settings
 ├── configure # configure script, run to initialise or change settings
-├── configure.ac # autoconf configuration of configure 
+├── configure.ac # autoconf configuration of configure
 ├── COPYING # GNU GPL licence
 ├── doc # doc tree
 │   ├── Makefile # generated makefile, ignore
@@ -148,7 +145,7 @@ File `tree`:
 │   │   ├── omorfi-remove-boundaries.regex # generated special symbol cleanup
 │   │   ├── omorfi-remove-boundaries.regex.hfst # compiled special symbol cleanup
 │   │   ├── omorfi.segment.hfst # compiled segmentation automaton
-│   │   ├── omorfi-sh.regex # rules for š 
+│   │   ├── omorfi-sh.regex # rules for š
 │   │   ├── omorfi-sh.regex.hfst # compiled rules for š
 │   │   ├── omorfi.tokenise.hfst # compiled tokeniser
 │   │   ├── omorfi-token-joiner.hfst # compiled token-medial symbols
@@ -157,11 +154,11 @@ File `tree`:
 │   │   ├── omorfi.token-separator.hfst # compiled token splitters
 │   │   ├── omorfi-uppercase-first.twolc # generated uppercasing rule for initial uppercase
 │   │   ├── omorfi-uppercase-first.twolc.hfst # compiled initial uppercasing
-│   │   ├── omorfi-zh.regex # generated rules for ž 
+│   │   ├── omorfi-zh.regex # generated rules for ž
 │   │   ├── omorfi-zh.regex.hfst # compiled rules for z
 │   │   ├── stemparts.tsv # generated database for stem variants
 │   │   ├── temporary.ftb3.hfst # final step for ftb3.1 compilation
-│   │   ├── temporary-ftb3.hyphenated.hfst 
+│   │   ├── temporary-ftb3.hyphenated.hfst
 │   │   ├── temporary-ftb3.orth.hfst
 │   │   ├── temporary-ftb3.relaxed.hfst
 │   │   ├── temporary-ftb3.tagged.hfst
@@ -289,11 +286,11 @@ File `tree`:
 │   ├── tsv_expand.py # script for guessing missing data in lexical database
 │   ├── tsvjoin.py # script for tsv database joins for lexemes and ancillary databases
 │   ├── twolc_formatter.py # functions for formatting twol rules
-│   ├── voikko # generated spell-checker 
+│   ├── voikko # generated spell-checker
 │   │   ├── acceptor.default.hfst # default dictionary
 │   │   ├── errmodel.default.hfst # default error model
 │   │   ├── index.xml # generated metadara
-│   │   ├── index.xml.in # metadata source 
+│   │   ├── index.xml.in # metadata source
 │   │   └── speller-omorfi.zhfst # generated spell-checker package
 │   └── wordmap.py # functions for python dict version of database
 ├── test # test scripts
@@ -304,10 +301,10 @@ File `tree`:
 │   ├── count_tsv.awk #
 │   ├── europarl-coverage.sh # generated europarl coverage script
 │   ├── europarl-coverage.sh.in # sources for europarl coverage measure
-│   ├── find_errs.awk # 
+│   ├── find_errs.awk #
 │   ├── fiwiki-coverage.sh # generated fi.wiki coverage script
 │   ├── fiwiki-coverage.sh.in # sources for fi.wiki coverage measure
-│   ├── ftb31-coverage.sh # generated ftb3.1 coverage script 
+│   ├── ftb31-coverage.sh # generated ftb3.1 coverage script
 │   ├── ftb31-coverage.sh.in # sources for ftb3.1 coverage script
 │   ├── ftb-test.py # ftb3.1 faithfulness script
 │   ├── ftb-test.sh # ftb3.1 faithfulness wrapper script
@@ -323,7 +320,7 @@ File `tree`:
 │   ├── prop-corpus-tests.py # script for lexical data errors on proper nouns
 │   ├── rough-tests.sh # fast simple tests for workability of analysers
 │   ├── scripts-runnable.sh # test script for workability of end-user scripts
-│   ├── speed-test.sh # generated speed test script 
+│   ├── speed-test.sh # generated speed test script
 │   ├── speed-test.sh.in # sources for speed test script
 │   ├── test-header.yaml # generated headers for yam testing
 │   ├── test-header.yaml.in # sources for yaml test headers

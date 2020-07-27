@@ -1,86 +1,166 @@
----
-layout: default
-title: "Inflection paper dictionaries"
-category: stats
-date: 2016-02-08 18:23:58
----
+# Omorfi inflection v. other dictionaries
 
+*Outdated*
 
 # Introduction #
 
-> _This is a technical documentation, for people who want to understand omorfi's implementation of morphology and contribute word-lists that are not suitable for omorfi's lexical sources. The general audience should use wiktionary and joukahainen instead._
+> _This is a technical documentation, for people who want to understand omorfi's
+> implementation of morphology and contribute word-lists that are not suitable
+> for omorfi's lexical sources. The general audience should use wiktionary and
+> joukahainen instead._
 
-Omorfi is implementation of _morphology_, and it relies on large amount of available word lists, currently it supports following open source word lists:
+Omorfi is implementation of _morphology_, and it relies on large amount of
+available word lists, currently it supports following open source word lists:
 
-  * [Nykysuomen sanalista, \_nssl\_ in short](http://kaino.kotus.fi/sanat/nykysuomi)
-  * [Joukahainen](http://joukahainen.puimula.org)
-  * [Finnish wiktionary, \_fiwikt\_ in short](http://fi.wiktionary.org/)
-    * In future we may peruse the Finnish words of English wiktionary as well
+* [Nykysuomen sanalista, *nssl* in short](http://kaino.kotus.fi/sanat/nykysuomi)
+* [Joukahainen](http://joukahainen.puimula.org)
+* [Finnish wiktionary, *fiwikt* in short](http://fi.wiktionary.org/)
 
-If you think that words are missing from omorfi, you should first contribute them into one of the above sources.
+If you think that words are missing from omorfi, you should first contribute
+them into one of the above sources.
 
-In top of that we need to collect and extend our word lists whenever there is need for words, that do not fit in the requirements of above resources. This happens for example with _rare_ proper nouns or not very lexicalised _compound forms_, which are useful for many applications but are not allowed in any of abovementioned lists.
+In top of that we need to collect and extend our word lists whenever there is
+need for words, that do not fit in the requirements of above resources. This
+happens for example with _rare_ proper nouns or not very lexicalised _compound
+forms_, which are useful for many applications but are not allowed in any of
+abovementioned lists.
 
-For those word lists it would be ideal to have them classified so that we can use them more or less directly. This document specifies both the ideal classification and the process of automatically guessing the classification from non-ideal data.
+For those word lists it would be ideal to have them classified so that we can
+use them more or less directly. This document specifies both the ideal
+classification and the process of automatically guessing the classification from
+non-ideal data.
 
 # Short background #
 
-In order to use words in omorfi, they need to be classified. Assume a new loan word or neologism _xaxös_ is about to enter the language, we cannot use it in omorfi before we know:
+In order to use words in omorfi, they need to be classified. Assume a new loan
+word or neologism _xaxös_ is about to enter the language, we cannot use it in
+omorfi before we know:
 
-  * (whether it's a verb or nominal, though verb stems end in a or ä so this one's nominal here)
-  * whether its genitive singular is _xaxösin_, _xaxöksen_, or _xaxöden_ or _xaxöön_. (or something more unexpected)
-  * whether it typically has comparatives (_xaxöksempi_, _xaxöksin_), i.e. is adjective rather than noun
-  * whether its vowel harmony really is front (_xaxöstä_) or not (_xaxösta_)
-  * whether it'll have consonant gradation in the stem
-  * etc. etc.
+* (whether it's a verb or nominal, though verb stems end in a or ä so this
+  one's nominal here)
+* whether its genitive singular is _xaxösin_, _xaxöksen_, or _xaxöden_ or
+_xaxöön_. (or something more unexpected)
+* whether it typically has comparatives (_xaxöksempi_, _xaxöksin_), i.e. is
+  adjective rather than noun
+* whether its vowel harmony really is front (_xaxöstä_) or not (_xaxösta_)
+* whether it'll have consonant gradation in the stem
+* etc. etc.
 
-Lot of this can be guessed, the guesses will go right 99 % of the time. But... we shouldn't guess things that are easy to know. A native speaker, without any special education in linguistics, who knows the word can tell us this immediately. We just need a way to gather people's opinions here. One such a way is [Finnish wiktionary](http://fi.wiktionary.org). Notably though, neologisms are not allowed in wiktionary :-/
+Lot of this can be guessed, the guesses will go right 99 % of the time. But...
+we shouldn't guess things that are easy to know. A native speaker, without any
+special education in linguistics, who knows the word can tell us this
+immediately. We just need a way to gather people's opinions here. One such a way
+is [Finnish wiktionary](http://fi.wiktionary.org). Notably though, neologisms
+are not allowed in wiktionary :-/
 
-Why it is problematic is, that everyone has different idea of what the classes should be, what features should be combined and how and when, or if. As a basis, omorfi will support all reasonable classifications and tries to guess missing facts if possible. The below tables show the allowed class names and the guessing algorithms in lack of those. We have adapted a classification that is based on current dictionaries plus so that the classification tells everything needed for inflectional morphology. Other classifications leave more or less to be guessed, which we also will try if needed.
+Why it is problematic is, that everyone has different idea of what the classes
+should be, what features should be combined and how and when, or if. As a basis,
+omorfi will support all reasonable classifications and tries to guess missing
+facts if possible. The below tables show the allowed class names and the
+guessing algorithms in lack of those. We have adapted a classification that is
+based on current dictionaries plus so that the classification tells everything
+needed for inflectional morphology. Other classifications leave more or less to
+be guessed, which we also will try if needed.
 
 ## The official dictionary system–_nssl_ ##
 
-Official dictionary uses numbers for classes, which should tell something of stem variation and a bit of suffix allomorph selection, then a letter to tell a bit more about gradation. Numbers 1 to 49 for nominals (no distinction made between adjectives and nouns), 50 for hiding the real inflection class of regular compounds, 51 for compounds with agreeing inflection pattern for each part, 52 to 78 for verbs and orthogonally A to M for the additional gradation. In some classes this classification ~~hides~~ generalises over few features, such as nasal assimilation or triphtong simplification so you have to guess it from the stem, also, vowel harmony is unmarked.
+Official dictionary uses numbers for classes, which should tell something of
+stem variation and a bit of suffix allomorph selection, then a letter to tell a
+bit more about gradation. Numbers 1 to 49 for nominals (no distinction made
+between adjectives and nouns), 50 for hiding the real inflection class of
+regular compounds, 51 for compounds with agreeing inflection pattern for each
+part, 52 to 78 for verbs and orthogonally A to M for the additional gradation.
+In some classes this classification ~~hides~~ generalises over few features,
+such as nasal assimilation or triphtong simplification so you have to guess it
+from the stem, also, vowel harmony is unmarked.
 
 ### The older official system-_nssk_ ###
 
-The first(?) official dictionary, _nykysuomen sanakirja_ in early 1900's had a few more classes and less generalisations, but it also has few that have become obsolete. And the inflection tables have numerous unusual forms from modern standard pov.
+The first(?) official dictionary, _nykysuomen sanakirja_ in early 1900's had a
+few more classes and less generalisations, but it also has few that have become
+obsolete. And the inflection tables have numerous unusual forms from modern
+standard pov.
 
 ## Joukahainen system ##
 
-Joukahainen uses system based on example words instead of numbers, but it's more or less mixture of classification of the official dictionaries. The example words are a good system, way better than code numbers, however, the gradation that is coded separately is slightly confusing. For example, the word _iäkäs_ is not in class _iäkäs_, but _iäkäs-av1_.
+Joukahainen uses system based on example words instead of numbers, but it's more
+or less mixture of classification of the official dictionaries. The example
+words are a good system, way better than code numbers, however, the gradation
+that is coded separately is slightly confusing. For example, the word _iäkäs_ is
+not in class _iäkäs_, but _iäkäs-av1_.
 
 ## Finnish Wiktionary system ##
 
-Finnish wiktionary is still evolving, breathing, living crowd-sourced project, we currently use some sort of mishmash of the official systems and example words as well. Check the rules and examples when you start.
+Finnish wiktionary is still evolving, breathing, living crowd-sourced project,
+we currently use some sort of mishmash of the official systems and example words
+as well. Check the rules and examples when you start.
 
 ## The final classification in omorfi ##
 
-Omorfi uses even more explicit classification, that spells out the part-of-speech, the stem changes (including gradation type), the allomorph selection, the vowel harmony, the lenghtening stem vowel, and other features of inflectional morphology. We provide both code for this and proper uniquely identifying example word that actually reflects the class. This means that each combination of stem changes and suffix sets gets its own class here,  e.g. _talo_ and _asu_ have different classes since illative suffixes are _-on_ and _-un_ respectively; so are _kivi_ and _ravi_ as their partitives are _ä_ and _a_ respectively. So just to be clear here, we make **no morphophonological generalisations** whatsoever.
+Omorfi uses even more explicit classification, that spells out the
+part-of-speech, the stem changes (including gradation type), the allomorph
+selection, the vowel harmony, the lenghtening stem vowel, and other features of
+inflectional morphology. We provide both code for this and proper uniquely
+identifying example word that actually reflects the class. This means that each
+combination of stem changes and suffix sets gets its own class here,  e.g.
+_talo_ and _asu_ have different classes since illative suffixes are _-on_ and
+_-un_ respectively; so are _kivi_ and _ravi_ as their partitives are _ä_ and _a_
+respectively. So just to be clear here, we make **no morphophonological
+generalisations** whatsoever.
 
-The system we use will get rid of all the classifications where words kind of belong into two or even three classes in other systems, if word has forms of two inflection patterns then it is a new inflection pattern, not two separate words. Also the class 49 which kind of has two sets of stems and inflections is broken a bit, since it has two dictionary entries per word, one of which is could be in class 48 and other is just defective.
+The system we use will get rid of all the classifications where words kind of
+belong into two or even three classes in other systems, if word has forms of two
+inflection patterns then it is a new inflection pattern, not two separate words.
+Also the class 49 which kind of has two sets of stems and inflections is broken
+a bit, since it has two dictionary entries per word, one of which is could be in
+class 48 and other is just defective.
 
-If you compare this system to the _nssl_ one, we add stem vowel as classifier, as it selects the vowel harmony and illative vowel, thus paradigm class 1 is now 4 times more classes 1o, 1u, 1y and 1y. On gradation side, D consists really of three different gradations: after consonant it is the same as A, between single vowels it is `k~0~’`, and between vowel triplets with equal vowels on sides it's `k~’`, this is orthographical convention but since it must be implemented in morphology we must classify this.
+If you compare this system to the _nssl_ one, we add stem vowel as classifier,
+as it selects the vowel harmony and illative vowel, thus paradigm class 1 is now
+4 times more classes 1o, 1u, 1y and 1y. On gradation side, D consists really of
+three different gradations: after consonant it is the same as A, between single
+vowels it is `k~0~’`, and between vowel triplets with equal vowels on sides it's
+`k~’`, this is orthographical convention but since it must be implemented in
+morphology we must classify this.
 
-But all of the old systems are also recognised. If you provide your contributed words in whatever format we can surely make use of it.
+But all of the old systems are also recognised. If you provide your contributed
+words in whatever format we can surely make use of it.
 
 
 # Exact, full classification #
 
-The classification shown here assigns separate class for each different combination of five features of the word, shown in the first five columns of the table:
+The classification shown here assigns separate class for each different
+combination of five features of the word, shown in the first five columns of the
+table:
 
-  * Suffix allomorph set number. Variants are detailed in a table on another wiki page, but based on kotus classes atm.
-  * The gradating pair in form of _X~Y_ where _X_ is the form in dictionary form, _Y_ an inflected form. 0 if no gradation.
-  * The stem variations and stem vowel in form of _(V)_ _A~B..._, where _V_ is the stem vowel if relevant, and _A_, _B_ a set of variations.
-  * vowel harmony class, F for front and B for back, for other classes it is 0.
+* Suffix allomorph set number. Variants are detailed in a table on another wiki
+  page, but based on kotus classes atm.
+* The gradating pair in form of _X~Y_ where _X_ is the form in dictionary form,
+  _Y_ an inflected form. 0 if no gradation.
+* The stem variations and stem vowel in form of _(V)_ _A~B..._, where _V_ is the
+  stem vowel if relevant, and _A_, _B_ a set of variations.
+* vowel harmony class, F for front and B for back, for other classes it is 0.
 
-The uniqueness of the combinations of these is what determines whether we have a unique paradigm or not.
+The uniqueness of the combinations of these is what determines whether we have a
+unique paradigm or not.
 
-The suffix allomorphs are partially dependent on stem variation, the vowel harmony can be defined by stem variations and so on, so the features are not independent except for few cases (if they were independent, the number of classes would directly be number of all combinations of values).
+The suffix allomorphs are partially dependent on stem variation, the vowel
+harmony can be defined by stem variations and so on, so the features are not
+independent except for few cases (if they were independent, the number of
+classes would directly be number of all combinations of values).
 
-In the below table, the first columns are abovementioned classification features (you can use them as a shorthand for the class if you don't remember the example word) . The class to use is the example word from the last column, e.g. _talo_ for the first class.
+In the below table, the first columns are abovementioned classification features
+(you can use them as a shorthand for the class if you don't remember the example
+word) . The class to use is the example word from the last column, e.g. _talo_
+for the first class.
 
-The middle columns of the table show the classification class that might be the closest in the other systems. The last column is our example word, which should be usd as the classification. The example words prefixed with question marks are subject to change in the future, since they are not most typical examples (e.g. because they are two-syllable words in primarily three syllable classe) of their respective classes or are easily confused (e.g. they are more likely to be adjectives than nouns).
+The middle columns of the table show the classification class that might be the
+closest in the other systems. The last column is our example word, which should
+be usd as the classification. The example words prefixed with question marks are
+subject to change in the future, since they are not most typical examples (e.g.
+because they are two-syllable words in primarily three syllable classe) of their
+respective classes or are easily confused (e.g. they are more likely to be
+adjectives than nouns).
 
 ## Nouns (and proper nouns) ##
 
@@ -968,9 +1048,11 @@ When the last letter determines inflection pattern:
 | ÖÖ | 0 | 0 ~ : | F | - | - | - | - | - | Ö |
 | **suffix set** | **gradation** | **stem(s)** | **harmony** | _Nssl_ | - example | _Jou_ | Nssk | - example | omorfi **Class name** example word |
 
-Word-by-word inflection patterns corresponding to the whole-word readings of the acronyms are optionally used in conjunction with the letter-reading based ones. The paradigms are currently only partly implemented.
-In general they use class names representing an example word,
-e.g. **gramma** for acronym ending in a word that inflects like _gramma_.
+Word-by-word inflection patterns corresponding to the whole-word readings of the
+acronyms are optionally used in conjunction with the letter-reading based ones.
+The paradigms are currently only partly implemented.  In general they use class
+names representing an example word, e.g. **gramma** for acronym ending in a word
+that inflects like _gramma_.
 
 | **suffix set** | **gradation** | **stem(s)** | **harmony** | _Nssl_ | - example | _Jou_ | Nssk | - example | omorfi **Class name** example word |
 |:---------------|:--------------|:------------|:------------|:-------|:----------|:------|:-----|:----------|:-----------------------------------|
@@ -1004,7 +1086,9 @@ e.g. **gramma** for acronym ending in a word that inflects like _gramma_.
 
 ## Particles ##
 
-Particles in general do not inflect, but sometimes they are classified as having possessives or clitics. It seems to be preferred in many sources to treat each actually used possessive or clitic with its root as a separate lexeme.
+Particles in general do not inflect, but sometimes they are classified as having
+possessives or clitics. It seems to be preferred in many sources to treat each
+actually used possessive or clitic with its root as a separate lexeme.
 
 | **suffix set** | **gradation** | **stem(s)** | **harmony** | _Nssl_ | - example | _Jou_ | Nssk | - example | omorfi **Class name** example word |
 |:---------------|:--------------|:------------|:------------|:-------|:----------|:------|:-----|:----------|:-----------------------------------|
@@ -1033,11 +1117,13 @@ Particles in general do not inflect, but sometimes they are classified as having
 
 ## Obsoleted, archaic, collapsed and wrong classes ##
 
-Mainly, the tables above ended up being a super set of existing classifications. The following classes are however deprecated for:
+Mainly, the tables above ended up being a super set of existing classifications.
+The following classes are however deprecated for:
 
-  1. not being unique (by oversight in original classification) or
-  1. all unique forms are sufficiently archaic or
-  1. the missing forms have been adapted from neighboring classes to standard language.
+1. not being unique (by oversight in original classification) or
+1. all unique forms are sufficiently archaic or
+1. the missing forms have been adapted from neighboring classes to standard
+   language.
 
 | **suffix set** | **gradation** | **stem(s)** | **harmony** | _Nssl_ | - example | _Jou_ | Nssk | - example |
 |:---------------|:--------------|:------------|:------------|:-------|:----------|:------|:-----|:----------|
@@ -1058,19 +1144,34 @@ Mainly, the tables above ended up being a super set of existing classifications.
 | - | - | - | – | – | – | – | 45 | kaata |
 | **suffix set** | **gradation** | **stem(s)** | **harmony** | _Nssl_ | - example | _Jou_ | Nssk | - example |
 
-The _nssk_ class 6 _banaali_ differs from class 5 _paperi_ only by saying that plural genitive allomorphs _-eiden_, _-eitten_ are unlikely. This is no longer accurate description, and all words in both classes are commonly using both forms. More fine-grained probabilities are made in our systems using real corpus training data per word form.
+The _nssk_ class 6 _banaali_ differs from class 5 _paperi_ only by saying that
+plural genitive allomorphs _-eiden_, _-eitten_ are unlikely. This is no longer
+accurate description, and all words in both classes are commonly using both
+forms. More fine-grained probabilities are made in our systems using real corpus
+training data per word form.
 
-The _nssk_ class 34 for lahti has additional consnant stem singular essives and partitivies _lahta_, _neittä_ that are most likely beyond contemporary use.
+The _nssk_ class 34 for lahti has additional consnant stem singular essives and
+partitivies _lahta_, _neittä_ that are most likely beyond contemporary use.
 
-The _nssk_ classes 37 _niemi_, and 36 _tuomi_ differ from 35 _lumi_ by probability of consonant and vowel stem variants of singular partitive and plural genitive, this distinction is no longer recognisable in contemporary language use.
+The _nssk_ classes 37 _niemi_, and 36 _tuomi_ differ from 35 _lumi_ by
+probability of consonant and vowel stem variants of singular partitive and
+plural genitive, this distinction is no longer recognisable in contemporary
+language use.
 
-The _nssk_ class 61 _muudan_ is now considered to be an adverb and its paradigm defective (s.v. _muutama_ << analogically from genitive stem).
+The _nssk_ class 61 _muudan_ is now considered to be an adverb and its paradigm
+defective (s.v. _muutama_ << analogically from genitive stem).
 
-The classes 24 and 26 of _nssl_ are equals, except by ordering of the allomorphs _-ien_ and _-ten_, our system does not make use of such a priori probability information and I'm very doubtful that people classifying their words will make good judgements on this case; the better information of probabilities of these allomorphs per wordform can be acquired by simple unigram training.
+The classes 24 and 26 of _nssl_ are equals, except by ordering of the allomorphs
+_-ien_ and _-ten_, our system does not make use of such a priori probability
+information and I'm very doubtful that people classifying their words will make
+good judgements on this case; the better information of probabilities of these
+allomorphs per wordform can be acquired by simple unigram training.
 
-The dual paradigm class 49 of _nssl_ contains words ending in e, which inflect as words in class 48 instead. It is unclear if these words should be analysed under their consonant stem variant or not.
+The dual paradigm class 49 of _nssl_ contains words ending in e, which inflect
+as words in class 48 instead. It is unclear if these words should be analysed
+under their consonant stem variant or not.
 
-The verb paradigms 42 _rakentaa_, 44 _antautua_ and 45 _kaata_ of _nssk_ are obsoleted for the parts that differ from their regular counter parts.
+The verb paradigms 42 _rakentaa_, 44 _antautua_ and 45 _kaata_ of _nssk_ are
+obsoleted for the parts that differ from their regular counter parts.
 
 
-<a href='Hidden comment:  vim: set ft=googlecodewiki:'></a>
