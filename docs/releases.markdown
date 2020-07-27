@@ -1,26 +1,39 @@
----
-layout: default
-title: "Releases"
-category: meta
-date: 2016-02-08 18:23:58
----
+# Omorfi release policy (and citing)
 
+Omorfi has approximately two releases a year, following the [universal
+dependency](//universaldependencies.org) schedule at the moment. We will sart
+using [semantic versioning](//semver.org) in 2020. When referring to omorfi in
+academic works, please include specific version, and URL, also consider citing
+one of the fine [omorfi articles](articles.html).
 
-# Introduction
+# Stable releases
 
-In order to cite omorfi in scientific context you need to refer to a version
-that can be used to reproduce the exact results. This page details the release
-process and gives information about citing omorfi in your research. This page
-may also be useful to you if you are a distribution packager seeking for stable
-point releases, though last I heard Linux distros are also steering towards
-using version control systems as packaging targets. Even in this case you may
-want to know about the stability criteria.
+Releases are considered stable when they fill following criteria:
+
+1. No regressions in naive coverage over main corpora (c.f.
+   [statistics](statistics.html)
+1. No regressions in recall over corpora: UD, FTB-3, unimorph
+1. Passes `make distcheck`
+1. spell-checker installation works with voikko, enchant
+1. pip installation works in virtual env.
+
+If you have further requirements for stability, please submit an automated test
+case that can be run using the command `make check` or `make distcheck` during
+the release process. For examples, see `test/ftb-test.py`,
+`test/europarl-coverage.sh`, etc. *Anything that is not covered by an automated
+test case that is ran by `make check` may and will change between releases. If
+you rely on a feature, annotation or other stuff, create your test case asap.*
+
+# Releases tagged in git
+
+Each stable release is tagged in git. The version numbers 2015–2020 are dates
+in YYYYMMDD format.
 
 # Unstable / development versions
 
 Development is carried on github's version control system, you can always find
 the latest and greatest by cloning the git repo and building it from there.
-Follow the instructions on the  front page or google for git(hub) tutorial.
+Follow the instructions on the front page or google for git(hub) tutorial.
 Read the ReadMe. Here's an example:
 
 ```
@@ -30,30 +43,10 @@ less README.md
 [follow instructions]
 ```
 
-# Stable releases
+When citing a development version, try to include the versioning system info in
+some footnote, e.g. a git hash.
 
-Releases are considered stable when they fill following criteria:
-
-  * No regressions in naive coverage over main corpora: Wikipedia (91 %),
-    Gutenberg (96 %), FinnTreeBank (97 %), Europarl (98 %), JRC Acquis (93 %)
-  * No regressions in the recall of FinnTreeBank 3 tagging (> 90 %)
-  * Passes make check
-  * spell-checker installation works with voikko, enchant
-
-If you have further requirements for stability, please submit an automated test
-case that can be run using the command `make check` or `make distcheck` during
-the release process. For examples, see `test/ftb-test.py`,
-`test/europarl-coverage.sh`, etc. *Anything that is not covered by an automated
-test case that is ran by `make check` may and will change between releases. If
-you rely on a feature, annotation or other stuff, create your test case asap.*
-
-## Releases tagged in git ##
-
-Each stable release is tagged in git with a date identifier. There will also be a
-github "release" for each release newer than 20150000, to get the older ones
-you may need to dig Internet archive for whatever's left of google code.
-
-## Releases before 2014 ##
+# Releases before 2014 (GoogleCode, GNA, CVS at Uni. Helsinki...)
 
 **This is for seriously outdated versions, for reproducibility.**
 
