@@ -1,26 +1,37 @@
----
-layout: default
-title: "Inflection tables nominals"
-category: stats
-date: 2016-02-08 18:23:58
----
+# Inflection tables for nominals
 
+*Outdated*
 
 # Introduction #
 
-The classification of nominals in Finnish morphology is based on three things: the stem variations they take, the suffix variants they use and ... This page shows a table of possible suffix variants and their class numbers.
+The classification of nominals in Finnish morphology is based on three things:
+the stem variations they take, the suffix variants they use and ... This page
+shows a table of possible suffix variants and their class numbers.
 
 ### Nominal allomorph tables ###
 
-The nominals differ in classification on one side by the suffix allomorphs they select. The possible allomorphs apply for following cases:
+The nominals differ in classification on one side by the suffix allomorphs they
+select. The possible allomorphs apply for following cases:
 
-  * singular partitive can be: a, ä, ta, or tä (some segmentations include also allomorphs tta, ttä, which in our case is just ta, tä attached to consonant stem)
-  * singular illative can be: an, en, in, on, un, yn, än, ön, han, hen, hin, hon, hun, hyn, hän, hön, or seen
-  * plural genitive can be: ien, jen, iden, itten, ten, in
-  * plural partitive can be: ia, iä, ja, jä, ita, itä
-  * plural illative can be: iin, ihin, isiin.
+* singular partitive can be: a, ä, ta, or tä (some segmentations include also
+  allomorphs tta, ttä, which in our case is just ta, tä attached to consonant
+stem)
+* singular illative can be: an, en, in, on, un, yn, än, ön, han, hen, hin, hon,
+  hun, hyn, hän, hön, or seen
+* plural genitive can be: ien, jen, iden, itten, ten, in
+* plural partitive can be: ia, iä, ja, jä, ita, itä
+* plural illative can be: iin, ihin, isiin.
 
-In following table, _Our ID_ is a running number that is used internally in some parts of omorfi, the _nssl_ is list of dictionary classes it applies to. The rest of the columns are the allomorphs, here plus sign ’+’ means that allomorph is regularly and normatively used, minus sign means ’-’ it is not used and would sound strange for natives, a question mark ’?’ is limited use, and a plus-minus sign ’±’ is not normative in current dictionaries, but may appear in old dictionaries, and minus-plus ’∓’ for typical sub-standard and dialectal forms that may be common enough that it needed to be implemented in our systems and is not really deemed even strange by native speakers. We have identified following combinations (this is the full table without phonemic collapsing):
+In following table, _Our ID_ is a running number that is used internally in some
+parts of omorfi, the _nssl_ is list of dictionary classes it applies to. The
+rest of the columns are the allomorphs, here plus sign ’+’ means that allomorph
+is regularly and normatively used, minus sign means ’-’ it is not used and would
+sound strange for natives, a question mark ’?’ is limited use, and a plus-minus
+sign ’±’ is not normative in current dictionaries, but may appear in old
+dictionaries, and minus-plus ’∓’ for typical sub-standard and dialectal forms
+that may be common enough that it needed to be implemented in our systems and is
+not really deemed even strange by native speakers. We have identified following
+combinations (this is the full table without phonemic collapsing):
 
 | **Our ID** | _nssl_ | a | ä | ta | tä | an | en | in | on | un | yn | än | ön | han | hen | hin | hon | hun | hyn | hän | hön | seen | ien | jen | iden | itten | ten | in | ia | iä | ja | jä | ita | itä | iin | ihin | isiin |
 |:-----------|:-------|:--|:---|:---|:----|:---|:---|:---|:---|:---|:---|:----|:----|:----|:----|:----|:----|:----|:----|:-----|:-----|:-----|:----|:----|:-----|:------|:----|:---|:---|:----|:---|:----|:----|:-----|:----|:-----|:------|

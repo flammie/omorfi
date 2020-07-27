@@ -66,7 +66,7 @@ verified by omorfi contributors.
 
 Omorfi has been used in number of research projects and applications, some of
 which are listed in the [official documentation under
-articles](//flammie.github.io/omorfi/pages/Articles.html). Few of the more
+articles](//flammie.github.io/omorfi/articles.html). Few of the more
 notable recent research include: machine translation [@rubino:2015],
 OCR [@silfverberg:2015], semantic web [@makela:2014], named
 entity resolution [@ruokolainen:2019] and spell-checking and correction
@@ -111,6 +111,9 @@ In chronological order of the project history:
 - Anssi Yli-Jyrä
 - Inari Listenmaa
 - Sjur Moshagen
+- Ryan Johnson
+- Francis Tyers
+- Juha Kuokkala
 - The students and staff ast Uni. Helsinki for extensive testing.
 - University of Turku bio-NLP group (a lot of resources have been exchanged
   back and forth)

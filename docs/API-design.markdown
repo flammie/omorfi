@@ -1,8 +1,3 @@
----
-layout: default
-title: "API Design"
----
-
 # Omorfi language binding APIs
 
 Omorfi provides very simple bindings for using the language models without
@@ -34,13 +29,13 @@ That is all.
 
 Here is a UML chart I drew about the design:
 
-![UML chart of omorfi API]({{ site.baseurl }}/doc/omorfi-API.svg)
+![UML chart of omorfi API](omorfi-API.svg)
 
 # Language specific APIs
 
 The language specific APIs are generated with doc comment system of the host
 language, e.g. javadoc, doxygen or docutils. You may find them from the [omorfi
-doxygen pages]({{ site.baseurl }}/doc/html/). Except for bash, that doesn't
+doxygen pages](apis/html/). Except for bash, that doesn't
 really have a doxygen or real API stuff.
 
 

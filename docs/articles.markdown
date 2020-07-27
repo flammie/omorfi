@@ -1,9 +1,3 @@
----
-layout: "default"
-title: "Articles"
----
-
-
 # Publications of work that use omorfi
 
 This is a collection of scientific work describing or using omorfi. If you find
@@ -42,7 +36,7 @@ If your publication allows modern style software citations, please use the one
 deposited to LINDAT repository:
 
 1. **Pirinen, Tommi A ; Listenmaa, Inari ; Johnson, Ryan ; Tyers, Francis M. ;
-   Kuokkala, Juha** [Open morphology of 
+   Kuokkala, Juha** [Open morphology of
    Finnish](https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-1992),
    (2017) PID: http://hdl.handle.net/11372/LRT-1992
 
@@ -52,16 +46,19 @@ In bibtex:
 {% raw %}
 @misc{11372/LRT-1992,
  title = {Open morphology of Finnish},
- author = {Pirinen, Tommi A and Listenmaa, Inari and Johnson, Ryan and Tyers, Francis M. and Kuokkala, Juha},
+ author = {Pirinen, Tommi A and Listenmaa, Inari and Johnson, Ryan and Tyers,
+Francis M. and Kuokkala, Juha},
  url = {http://hdl.handle.net/11372/LRT-1992},
- note = {{LINDAT}/{CLARIN} digital library at the Institute of Formal and Applied Linguistics, Charles University},
+ note = {{LINDAT}/{CLARIN} digital library at the Institute of Formal and
+Applied Linguistics, Charles University},
  copyright = {{GNU} General Public Licence, version 3},
- year = {2017} 
+ year = {2017}
 }
 {% endraw %}
 ```
 
-If you are writing a paper in LREC or such, the ISLRN to use is [887-124-499-095-1](http://islrn.org/resources/887-124-499-095-1/).
+If you are writing a paper in LREC or such, the ISLRN to use is
+[887-124-499-095-1](http://islrn.org/resources/887-124-499-095-1/).
 
 # Publications about omorfi specifically
 
@@ -89,9 +86,15 @@ This list is most likely not complete, please suggest additions (or removals) if
 
 ## Machine Translation
 
-1. **Raphael Rubino, Tommi Pirinen, Miquel Esplà-Gomis, Nikola Ljubešić, Sergio Ortiz Rojas, Vassilis Papavassiliou, Prokopis Prokopidis and Antonio Toral** (2015), _Abu-MaTran at WMT 2015 Translation Task: Morphological Segmentation and Web Crawling_ at WMT2015
-1. **Lane Schwartz, Bill Bryce, Chase Geigle, Sean Massung, Yisi Liu, Haoruo Peng, Vignesh Raja, Subhro Roy and Shyam Upadhyay** (2015), _The University of Illinois submission to the WMT 2015 Shared Translation Task_ at WMT2015
-1. **Jörg Tiedemann, Filip Ginter and Jenna Kanerva** (2015) _Morphological Segmentation and OPUS for Finnish-English Machine Translation_ at WMT2015
+1. **Raphael Rubino, Tommi Pirinen, Miquel Esplà-Gomis, Nikola Ljubešić, Sergio
+   Ortiz Rojas, Vassilis Papavassiliou, Prokopis Prokopidis and Antonio Toral**
+(2015), _Abu-MaTran at WMT 2015 Translation Task: Morphological Segmentation and
+Web Crawling_ at WMT2015
+1. **Lane Schwartz, Bill Bryce, Chase Geigle, Sean Massung, Yisi Liu, Haoruo
+   Peng, Vignesh Raja, Subhro Roy and Shyam Upadhyay** (2015), _The University
+of Illinois submission to the WMT 2015 Shared Translation Task_ at WMT2015
+1. **Jörg Tiedemann, Filip Ginter and Jenna Kanerva** (2015) _Morphological
+   Segmentation and OPUS for Finnish-English Machine Translation_ at WMT2015
 1. **Ann Clifton, Anoop Sarkar (2011)**. _Combining morpheme-based machine
    translation with post-processing morpheme prediction_, in Proceedings of
    the 49th Annual Meeting of the Association for Computational Linguistics:
@@ -104,8 +107,11 @@ This list is most likely not complete, please suggest additions (or removals) if
 
 ## Universal Dependencies, syntax, treebanking
 
-1. **Sampo Pyysalo** (2015) _Universal Dependencies for Finnish_, In: Nordic Conference of Computational Linguistics NODALIDA
-1. **Jenna Kanerva** et al. (2014), _Syntactic n-gram collection from a large-scale corpus of internet Finnish_, Proceedings of the Sixth International Conference Baltic HLT.
+1. **Sampo Pyysalo** (2015) _Universal Dependencies for Finnish_, In: Nordic
+   Conference of Computational Linguistics NODALIDA
+1. **Jenna Kanerva** et al. (2014), _Syntactic n-gram collection from a
+   large-scale corpus of internet Finnish_, Proceedings of the Sixth
+   International Conference Baltic HLT.
 1. **Bernd Bohnet, Joakim Nivre, Igor Boguslavsky, Filip Ginter and Jan Hajič**
   (2013), _Joint Morphological and Syntactic Analysis for Richly Inflected
   Languages_ in Transactions of the Association for Computational Linguistics
@@ -113,18 +119,24 @@ This list is most likely not complete, please suggest additions (or removals) if
    Clausal Coordinate Ellipsis_ in LREC 2012
 1. **Kristiina Muhonen, Tanja Purtonen (2012)**, _Detecting Semantic Ambiguity:
    Alternative Readings in Treebanks_
-1. **Mozgovoy, Maxim** (2010) _Extensible dependency grammar for education: ideas and experiments_, J Converg (JoC) 1.1
+1. **Mozgovoy, Maxim** (2010) _Extensible dependency grammar for education:
+   ideas and experiments_, J Converg (JoC) 1.1
 
 ## OCR
 
-1. **Silfverberg, Miikka, and Jack Rueter** (2015) _Can Morphological Analyzers Improve the Quality of Optical Character Recognition?._ in: First International Workshop of Computational Linguistics for Uralic Languages, Septentrio Conference Series. No. 2, 2015.
+1. **Silfverberg, Miikka, and Jack Rueter** (2015) _Can Morphological Analyzers
+   Improve the Quality of Optical Character Recognition?._ in: First
+   International Workshop of Computational Linguistics for Uralic Languages,
+   Septentrio Conference Series. No. 2, 2015.
 
 ## Semantic Web
 
-1. **Eetu Mäkelä**. (2014) _Combining a rest lexical analysis web service with sparql for mashup semantic annotation from text_. In: The Semantic Web: ESWC 2014 Satellite Events.
-1. **Reetta Sinkkilä, O. Suominen, E. Hyvönen (2011)**, _Automatic semantic subject
-   indexing of web documents in highly inflected languages_, The Semantic Web:
-   Research and …, 2011
+1. **Eetu Mäkelä**. (2014) _Combining a rest lexical analysis web service with
+   sparql for mashup semantic annotation from text_. In: The Semantic Web: ESWC
+   2014 Satellite Events.
+1. **Reetta Sinkkilä, O. Suominen, E. Hyvönen (2011)**, _Automatic semantic
+   subject indexing of web documents in highly inflected languages_, The
+   Semantic Web: Research and …, 2011
 1. **E. Ahonen, Eero Hyvönen (2009)**, _Publishing Historical Texts on the
    Semantic Web-A Case Study_, in Semantic Computing, 2009. ICSC'09.
 

@@ -1,38 +1,57 @@
----
-layout: default
-title: "Inflection paradigms by example"
-category: stats
-date: 2016-02-08 18:23:58
----
-
-
 # Inflection tables of example words #
 
-In the tables below we give key forms showing all the differences of each class.The key forms are designed so that they will show all the possible stems that word class can have, and they are used in end user applications such as guesser to help the classifier to see if the class is right. In the examples we use following notations:
+*Outdated*
 
-  * the bars | tell boundaries of stub, stem and suffix, this should make it clear that each class has unique set of stems and suffixes.
-    * if the first column has no bars, there is no stem variation and whole word form is the _stem_
-    * if latter columns have only one bar, the stem is formed by deleting whole varying part, and the part before the bar is the _stem_ and the part after the bar is the _suffix_
-    * if any of the columns have two bars in a word form, the first and second parts comprise the _stem_, the second part shows the _stem variation_, and third part is the _suffix_
-  * _emphasis_ calls attention to subtle differences, even ones that official classification has neglected
-  * (parentheses) old, obsolete or otherwise rare form (see source code for exact classification),
-  * ?question mark prefix for potentially strange forms, and ??double question mark for ones that sound awkward
-  * ~~strikethrough~~ for forms that are deemed ungrammatical, though allowed in the most permissive forms of omorfi, such as comparatives for (nouns and) adjectives that won't really compare.
+In the tables below we give key forms showing all the differences of each
+class.The key forms are designed so that they will show all the possible stems
+that word class can have, and they are used in end user applications such as
+guesser to help the classifier to see if the class is right. In the examples we
+use following notations:
+
+* the bars | tell boundaries of stub, stem and suffix, this should make it
+  clear that each class has unique set of stems and suffixes.
+    * if the first column has no bars, there is no stem variation and whole word
+      form is the _stem_
+    * if latter columns have only one bar, the stem is formed by deleting whole
+      varying part, and the part before the bar is the _stem_ and the part after
+      the bar is the _suffix_
+    * if any of the columns have two bars in a word form, the first and second
+      parts comprise the _stem_, the second part shows the _stem variation_, and
+      third part is the _suffix_
+* _emphasis_ calls attention to subtle differences, even ones that official
+  classification has neglected
+* (parentheses) old, obsolete or otherwise rare form (see source code for exact
+  classification),
+* ?question mark prefix for potentially strange forms, and ??double question
+  mark for ones that sound awkward
+* ~~strikethrough~~ for forms that are deemed ungrammatical, though allowed in
+  the most permissive forms of omorfi, such as comparatives for (nouns and)
+  adjectives that won't really compare.
 
 ### Noun examples ###
 
 The word form set of examples for nouns is:
 
-  * singular nominative - which is dictionary entry, and strong stem for vowel final words and class 48, weak stem for consonant final words
-  * singular genitive - which gives _weak singular stem_ for vowel final words and _strong singular stem_ for others
-  * singular partitive - which gives _consonant stem_ for some words, and the variants of _singular partitive allomorphs_ that apply
-  * singular illative - which gives us the variants of _singular illative allomorphs_ that applies, and usually reveals the _stem vowel_
-  * singular essive - which gives _consonant stem_ for some words (others than singular partitive does, it is needed)
-  * plural inessive - which gives us _weak plural stem_ for vowel final words and _strong plural stem_ for others
-  * plural genitive - which gives us set of _plural genitive allomorphs_
-  * plural partitive - which gives us set of _plural partitive allomorphs_
-  * plural illative - which gives us set of _plural illative allomorphs_ potentially revealing lemma, weak singular stem, consonant stem or partitive allomorph, strong singular stem or illative allomorph, weak plural stem, allomorph, allomorph, strong plural stem or allomorph.
-  * ~~plural nominative~~ - is not given unlike in nssl, it does not contribute anything singular genitive does not already do
+* singular nominative - which is dictionary entry, and strong stem for vowel
+  final words and class 48, weak stem for consonant final words
+* singular genitive - which gives _weak singular stem_ for vowel final words and
+  _strong singular stem_ for others
+* singular partitive - which gives _consonant stem_ for some words, and the
+  variants of _singular partitive allomorphs_ that apply
+* singular illative - which gives us the variants of _singular illative
+  allomorphs_ that applies, and usually reveals the _stem vowel_
+* singular essive - which gives _consonant stem_ for some words (others than
+  singular partitive does, it is needed)
+* plural inessive - which gives us _weak plural stem_ for vowel final words and
+  _strong plural stem_ for others
+* plural genitive - which gives us set of _plural genitive allomorphs_
+* plural partitive - which gives us set of _plural partitive allomorphs_
+* plural illative - which gives us set of _plural illative allomorphs_
+  potentially revealing lemma, weak singular stem, consonant stem or partitive
+allomorph, strong singular stem or illative allomorph, weak plural stem,
+allomorph, allomorph, strong plural stem or allomorph.
+* ~~plural nominative~~ - is not given unlike in nssl, it does not contribute
+  anything singular genitive does not already do
 
 Noun example table:
 
@@ -732,4 +751,3 @@ The verbs are given in following forms:
 | heläj|ä|ä | heläjän| heläj|i | heläj|ä|isi | heläjänee | heläjänut | heläjettiin|
 | raika|a | raian | raikoi| raika|isi | raikanee | raikanut | raiettiin|
 
-<a href='Hidden comment:  vim: set ft=googlecodewiki:'></a>
