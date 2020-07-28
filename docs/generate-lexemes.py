@@ -143,9 +143,6 @@ def main():
     ap.add_argument("--output", "-o", action="store", required=True,
                     type=argparse.FileType('w'),
                     metavar="OFILE", help="write docs OFILE")
-    ap.add_argument("--outdir", "-O", action="store", required=True,
-                    metavar="ODIR", help="write individual paradigms to " +
-                    "ODIR/paradigm.md")
     ap.add_argument("--fields", "-F", action="store", default=2,
                     metavar="N", help="read N fields from master")
     ap.add_argument("--separator", action="store", default="\t",
@@ -232,75 +229,22 @@ def main():
                 print("ARGH python tsv fail on line:",
                       tsv_parts, file=stderr)
                 continue
-            print("| [%s](lexemes/%s.html) |" %
+            print("| %s |" %
                   (markdownify(tsv_parts['lemma']) +
-                   homonymify(tsv_parts['homonym']),
-                   filenamify(tsv_parts['lemma'])), end='',
-                  file=args.output)
+                   homonymify(tsv_parts['homonym'])),
+                   end='', file=args.output)
             if tsv_parts['lemma'] != prev_lemma:
-                outfile = open(args.outdir + '/' +
-                               filenamify(tsv_parts['lemma']) +
-                               '.markdown', 'w')
                 prev_lemma = tsv_parts['lemma']
-                print('---', file=outfile)
-                print('layout: lexeme', file=outfile)
-                print('lexeme:', tsv_parts['lemma'], file=outfile)
-                print('---', file=outfile)
-            print(file=outfile)
-            print("### ", tsv_parts['lemma'] +
-                  homonymify(tsv_parts['homonym']), file=outfile)
             print(" ", tsv_parts['doc'], end=' | ', file=args.output)
-            print(file=outfile)
-            print('* _', tsv_parts['doc'], sep='', end='_\n', file=outfile)
             lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
             if lexkey in lexdata:
 
-                print("* UPOS: ", lexdata[lexkey]['upos'], file=outfile)
-                if 0 < int(lexdata[lexkey]['kotus_tn']) and\
-                        int(lexdata[lexkey]['kotus_tn']) < 99:
-                    print("* in KOTUS dictionary under: ",
-                          lexdata[lexkey]['kotus_tn'], file=outfile)
-                print("* Origins: ", end='', file=outfile)
-                if 'enwikt' in lexdata[lexkey]['origin']:
-                    print("[enwikt](https://en.wiktionary.org/wiki/",
-                          wiktify(tsv_parts['lemma']), end=') ', sep='',
-                          file=outfile)
-                if 'fiwikt' in lexdata[lexkey]['origin']:
-                    print("[fiwikt](https://fi.wiktionary.org/wiki/",
-                          wiktify(tsv_parts['lemma']), end=') ', sep='',
-                          file=outfile)
-                if 'finnwordnet' in lexdata[lexkey]['origin']:
-                    print("[finnwn](https://sanat.csc.fi/w/index.php?search=",
-                          wiktify(tsv_parts['lemma']), end=') ', sep='',
-                          file=outfile)
-                if 'finer' in lexdata[lexkey]['origin']:
-                    print("finer", end=' ', file=outfile)
-                if 'omorfi' in lexdata[lexkey]['origin']:
-                    print("omorfi", end=' ', file=outfile)
-                if 'joukahainen' in lexdata[lexkey]['origin']:
-                    print("joukahainen", end=' ', file=outfile)
-                print(file=outfile)
                 if lexdata[lexkey]['proper_noun_class']:
-                    print("* Possible NER class: ",
-                          lexdata[lexkey]['proper_noun_class'], file=outfile)
                     print(stuff2icon(lexdata[lexkey]['proper_noun_class']),
                           file=args.output, end='')
-                if lexdata[lexkey]['prontype']:
-                    print("* PronType: ",
-                          lexdata[lexkey]['prontype'], file=outfile)
-                if lexdata[lexkey]['adptype']:
-                    print("* AdpType: ",
-                          lexdata[lexkey]['adptype'], file=outfile)
-                if lexdata[lexkey]['numtype']:
-                    print("* NumType: ",
-                          lexdata[lexkey]['numtype'], file=outfile)
                 if lexdata[lexkey]['blacklist']:
-                    print("* Blacklisted: ",
-                          lexdata[lexkey]['blacklist'], file=outfile)
                     print("☢", file=args.output, end='')
                 if lexdata[lexkey]['sem']:
-                    print("* Semantic tags: ",
-                          lexdata[lexkey]['sem'], file=outfile)
                     print(stuff2icon(lexdata[lexkey]['sem']),
                           file=args.output, end='')
                 print(' | ', end='', file=args.output)
@@ -316,7 +260,6 @@ def main():
                     print("[finnwn](https://sanat.csc.fi/w/index.php?search=",
                           wiktify(tsv_parts['lemma']), end=') ', sep='',
                           file=args.output)
-            print(file=outfile)
             print(" |", file=args.output)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
