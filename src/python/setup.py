@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="omorfi", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Flammie A Pirinen",
     author_email="flammie@iki.fi",
     description="Open morphology for Finnish, python bindings",
