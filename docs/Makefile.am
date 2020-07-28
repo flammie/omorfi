@@ -10,15 +10,15 @@ update: stuff.markdown paradigms.markdown lexemes.markdown statistics.markdown
 
 stuff.markdown:
 	PYTHONPATH=$(srcdir)/../src/python $(PYTHON) generate-stuffs.py \
-			   -S $(srcdir)/../src/docs/stuff.tsv -o stuff.markdown -O stuffs/
+			   -S $(srcdir)/../src/docs/stuff.tsv -o stuff.markdown
 
 paradigms.markdown:
 	$(PYTHON) generate-paradigms.py -P ../src/docs/paradigms.tsv \
-		-A ../src/paradigms.tsv -o paradigms.markdown -O paradigms/
+		-A ../src/paradigms.tsv -o paradigms.markdown 
 
 lexemes.markdown: generate-lexemes.py
 	$(PYTHON) generate-lexemes.py -L ../src/docs/lexemes.tsv \
-		-l ../src/generated/master.tsv -o lexemes.markdown -O lexemes/
+		-l ../src/generated/master.tsv -o lexemes.markdown
 
 statistics.markdown:
 	./generate-statistics.bash ..
@@ -48,6 +48,34 @@ NEWS.markdown: ../NEWS
 	cp -v $< $@
 
 README.markdown: ../README.md
+	cp -v $< $@
+
+AUTHORS.markdown: ../AUTHORS
+	cp -v $< $@
+
+CITATION.markdown: ../CITATION
+	cp -v $< $@
+
+CODE_OF_CONDUCT.markdown: ../CODE_OF_CONDUCT.md
+	cp -v $< $@
+
+CONTRIBUTING.markdown: ../CONTRIBUTING.md
+	cp -v $< $@
+
+COPYING.markdown: ../COPYING
+	cp -v $< $@
+
+ChangeLog.markdown: 
+	git log > ChangeLog.new
+	cat ChangeLog.new ../ChangeLog.old > $@
+
+INSTALL.markdown: ../INSTALL
+	cp -v $< $@
+
+THANKS.markdown: ../THANKS
+	cp -v $< $@
+
+TODO.markdown: ../TODO
 	cp -v $< $@
 
 clean-local:

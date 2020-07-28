@@ -1,0 +1,25 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: |
+        wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+        sudo apt-get install hfst python3-hfst libhfst-dev cg3
+    - name: autogen
+      run: ./autogen.sh
+    - name: configure
+      run: ./configure --enable-segmenter --enable-labeled-segments --enable-lemmatiser --enable-hyphenator --enable-ftb3 --with-java
+    - name: make
+      run: make
+    - name: test
+      run: make check
+    - name: install
+      run: sudo make install

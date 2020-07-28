@@ -25,7 +25,8 @@ for d in $PARAFILE $DOCFILE ; do
 done
 if test -e ${WORK}/fails.paradigms ; then
     echo
-    echo there are missing paradigms, see ${WORK}/fails.paradigms
+    echo there are missing paradigms:
+    cat ${WORK}/fails.paradigms
     exit 1
 fi
 rm -rf ${WORK}

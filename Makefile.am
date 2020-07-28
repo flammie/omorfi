@@ -9,7 +9,7 @@ ACLOCAL_AMFLAGS = -I m4
 pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
 
-omorfi-models-$(PACKAGE_VERSION).tar.xz:
+omorfi-hfst-models-$(PACKAGE_VERSION).tar.xz:
 	tar -C src/generated -cJvf omorfi-models-$(PACKAGE_VERSION).tar.xz \
 		omorfi.accept.hfst omorfi.analyse.hfst omorfi.describe.hfst \
 		omorfi.generate.hfst omorfi_recased.analyse.hfst \

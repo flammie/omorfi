@@ -6,6 +6,8 @@ if test $# != 1 ; then
     exit 1
 fi
 
+WC=gwc
+
 # build index page
 echo "# Statistics" > $INDEX
 echo >> $INDEX
@@ -13,7 +15,7 @@ echo "_These are semi-automatically generated statistics from omorfi
 database._ The statistics are based on the actual data in the database tables
 and the versions of whole analysed corpora and tools on this date." >> $INDEX
 echo >> $INDEX
-echo "Generation time was \`$(date --iso=hours)\`:" >> $INDEX
+echo "Generation time was \`$(gdate --iso=hours)\`:" >> $INDEX
 echo "\`\`\`" >> $INDEX
 head -n 8 $1/config.log | tail -n 6 >> $INDEX
 echo "\`\`\`" >> $INDEX
@@ -24,7 +26,7 @@ echo >> $INDEX
 echo "The numbers are counted from the database, unique lexical items.
 Depending on your definitions there may be ±1 % difference, e.g. with homonyms,
 defective and doubled paradigms, etc." >> $INDEX
-echo "There are total of *$(wc -l < $1/src/lexemes.tsv)* lexemes." \
+echo "There are total of *$($WC -l < $1/src/lexemes.tsv)* lexemes." \
     >> $INDEX
 echo >> $INDEX
 echo "### Per universal POS" >> $INDEX
@@ -41,7 +43,7 @@ cut -f 1 $1/src/generated/master.tsv |\
     tr '|' ',' | sed -e 's/,/, /g' |\
     sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]$//' |\
     sed -e 's/ / | /' -e 's/^/| /' -e 's/$/ |/' >> $INDEX
-echo "| $(wc -l < $1/src/lexemes.tsv) | *TOTAL* |" >> $INDEX
+echo "| $($WC -l < $1/src/lexemes.tsv) | *TOTAL* |" >> $INDEX
 echo >> $INDEX
 echo "### Per sources of origin" >> $INDEX
 echo >> $INDEX
@@ -57,6 +59,15 @@ echo "* *omorfi*: curated within omorfi project" >> $INDEX
 echo "  * *omorfi++*: and included in the smaller *gold* dictionary" >> $INDEX
 echo >> $INDEX
 echo "| Frequency | origin |" >> $INDEX
+echo "|----------:|:-----|" >> $INDEX
+for o in enwikt finer finnwordnet fiwikt ftb3 joukahainen kotus omorfi ; do
+    fgrep -c $o < $1/src/lexemes.tsv |\
+    sed -e 's/^ */| /' -e "s/ *\$/ | $o |/" >> $INDEX
+done
+echo >> $INDEX
+echo "...or split across lexemes:" >> $INDEX
+echo >> $INDEX
+echo "| Frequency | origin(s) |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
 cut -f 4 $1/src/lexemes.tsv | sort | uniq -c | sort -nr | fgrep -v origin |\
     tr '|' ',' | sed -e 's/,/, /g' |\
@@ -105,9 +116,9 @@ function convert_coveragelog {
     echo "### $2"
     echo
     tokens=$(awk "\$1 >= $HAPAX"' {SUM+=$1;} END {print SUM;}' < ${3})
-    types=$(wc -l < ${3})
+    types=$($WC -l < ${3})
     tokenmisses=$(awk '{SUM+=$1;} END {print SUM;}' < ${1})
-    typemisses=$(wc -l < ${1})
+    typemisses=$($WC -l < ${1})
     echo "| Feature | Coverage # | Coverage % | All |"
     echo "|:--------|-----------:|-----------:|----:|"
     echo "| Tokens  | $(($tokens - $tokenmisses)) | " \

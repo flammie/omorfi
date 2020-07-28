@@ -482,7 +482,7 @@ generated/omorfi.dix: generated/master.tsv generated/continuations.tsv
 generated/omorfi-giella.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
-		-i generated/continuations.tsv -o $@ -f=giella
+		-c generated/continuations.tsv -o $@ -f=giella
 
 generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
@@ -1436,6 +1436,14 @@ conversions: $(DB_GENERTED) $(GENERIC_GENERATED) $(OMOR_GENERATED) \
 	$(FTB3_GENERATED) $(APE_GENERATED)
 
 # }}}
+
+pip:
+	pushd python
+	$(PYTHON) setup.py sdist bdist_wheel
+	popd
+	echo "Now do:"
+	echo "  cd python"
+	echo "	$(PYTHON) -m twine upload dist/*"
 
 #
 # vim: set foldmethod=marker:

@@ -16,6 +16,12 @@ function frequency_list() {
     cat $@ | sort | uniq -c | sort -nr
 }
 
+if ! which fetch-europarl.bash ; then
+    echo missing bash-corpora, get:
+    echo git clone git@github.com:flammie/bash-corpora.git
+    echo make and install.
+    exit 1
+fi
 # europarl
 echo europarl... corpus 1/$nc
 if ! test -f "europarl-v7.fi-en.fi.uniq.freqs" ; then
@@ -170,22 +176,22 @@ if ! test -f "fi_ftb-ud.uniq.freqs" ; then
 fi
 
 # Open subtitles
-echo Open Subtitle 2016... corpus 9/$nc
-if ! test -f "OpenSubtitles2016.fi.uniq.freqs" ; then
-    if ! test -f "OpenSubtitles2016.fi.tokens" ; then
-        if ! test -f "OpenSubtitles2016.fi.text" ; then
-            if ! test -f "OpenSubtitles2016.raw.fi.gz" ; then
+echo Open Subtitle 2018... corpus 9/$nc
+if ! test -f "OpenSubtitles2018.fi.uniq.freqs" ; then
+    if ! test -f "OpenSubtitles2018.fi.tokens" ; then
+        if ! test -f "OpenSubtitles2018.fi.text" ; then
+            if ! test -f "OpenSubtitles2018.raw.fi.gz" ; then
                 echo fetch
                 fetch-opensubtitles.bash "fi"
             fi
             echo unpack
-            unpack-opensubtitles.bash "fi" > "OpenSubtitles2016.fi.text"
+            unpack-opensubtitles.bash "fi" > "OpenSubtitles2018.fi.text"
         fi
         echo tokenise
-        preprocess < "OpenSubtitles2016.fi.text" > "OpenSubtitles2016.fi.tokens"
+        preprocess < "OpenSubtitles2018.fi.text" > "OpenSubtitles2018.fi.tokens"
     fi
     echo count
-    frequency_list OpenSubtitles2016.fi.tokens > OpenSubtitles2016.fi.uniq.freqs
+    frequency_list OpenSubtitles2018.fi.tokens > OpenSubtitles2018.fi.uniq.freqs
 fi
 # tatoeba
 echo Tatoeba fi... corpus 10/$nc
@@ -228,7 +234,7 @@ if ! test -f "5grams.uniq.freqs" ; then
                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.04.txt.gz
             fi
             echo unpack
-            zcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
+            gzcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
         fi
         echo tokenise
         cat 5grams.text | tr ' ' '\n' | cut -d/ -f1 > 5grams.tokens
@@ -249,8 +255,8 @@ if ! test -f "vks.uniq.freqs" ; then
         unzip vks_frek.zip
     fi
     echo count
-    recode l1..u8 vks_frek.txt
-    cut -d ' ' -f 2,3 vks_frek.txt > vks.uniq.freqs
+    iconv -f iso-8859-1 -t utf-8//IGNORE vks_frek.txt |\
+        cut -d ' ' -f 2,3 > vks.uniq.freqs
 fi
 echo Varhaisnykysuomen sanojen taajuuksia... corpus 13/$nc
 if ! test -f "vns.uniq.freqs" ; then
@@ -263,8 +269,8 @@ if ! test -f "vns.uniq.freqs" ; then
         unzip vns_frek.zip
     fi
     echo count
-    recode l1..u8 vns_frek.txt
-    cut -d ' ' -f 2,3 vns_frek.txt > vns.uniq.freqs
+    iconv -f iso-8859-1 -t utf-8//IGNORE vns_frek.txt |\
+        cut -d ' ' -f 2,3  > vns.uniq.freqs
 fi
 # Unimorph-fin
 echo Unimorph fin ... 14/$nc

@@ -2,11 +2,13 @@
 # This script takes an English wiktionary xml dump and converts it to omorfi
 # it was at c/p from fiwikt2omorfi.bash
 
+SED=gsed
+
 print_usage() {
     echo "Usage: $0 [enwikt-pages-articles.xml]"
     echo
     echo "enwikt-pages-articles.xml must point to unzipped en.wiktionary dump."
-    echo "If omitted, stdin is used"
+    echo "If omitted, stdin is uSED"
 }
 
 if test $# -ge 2 ; then
@@ -21,67 +23,70 @@ wc='(Noun|Adjective|Pronoun|Numeral|Preposition|Adverb|Interjection|Conjunction|
 
 # Fetchs  only relevant lines from the xml dump (NOTE: This assumes relevant
 # lines are between <page> & </page> tags)
-cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
+cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
 # Remove all line-initial whitespaces
-    sed -e 's/^[ \t]*//g' |\
+    $SED -e 's/^[ \t]*//g' |\
 # Remove unwanted xml tags
-    sed -ne '/\(<page>\|<title>\)/p' -ne '/<text/,/<\/page>/p' |\
+    $SED -ne '/\(<page>\|<title>\)/p' -ne '/<text/,/<\/page>/p' |\
 # Remove unwanted xml tag (NOTE: The </revision> tag is found between </text>
 # & </page>)
-    sed '/<\/revision>/d' |\
+    $SED '/<\/revision>/d' |\
 # Remove linebreaks
     tr -d '\n' |\
 # Place linebreak infront of each <page>
-    sed -re "s/<page>/\n\0/g" |\
+    $SED -re "s/<page>/\n\0/g" |\
 # Retain only those lines which contain relevant content (in this case ==Suomi== which is the heading of Finnish words)
     fgrep "==Finnish==" |\
 # Remove certain MediaWiki pages
-    sed -r "/<title>(Class:)|(Template:)|(Wiktionary:)/d" |\
+    $SED -r "/<title>(Class:)|(Template:)|(Wiktionary:)/d" |\
 # Remove word forms
-    fgrep -v '{{fi-form' |
+    fgrep -v '{{fi-form' | fgrep -v 'possessive form' |\
+    fgrep -v 'proper noun form' |\
+# Remove some MWEs
+    egrep '<title>[^ ]*</title>' |\
 # Place tags and content on separate lines
-    sed -re "s/(<\/page>)/\n\1/g" \
+    $SED -re "s/(<\/page>)/\n\1/g" \
     -e "s/(<title>)/\n\1/g" \
     -e "s/(<\/title>)/\1\n/g" \
     -e "s/(<text [^>]*>)/\1\n/g" \
     -e "s/(<\/text>)/\n\1/g" |\
 # Place relevant content markup characters on seperate lines
-    sed -re "s/(==*[[:alpha:] ]+==)/\n\1/g" \
+    $SED -re "s/(==*[[:alpha:] ]+==)/\n\1/g" \
     -e "s/((\(\{\{)|(\{\{fi))/\n\1/g" |\
 # Parse lines and tag word classes in headings (example: ===Substantiivi===)
-    sed -re "s/===$wc===/<wordclass>\1<\/wordclass>/g" |\
+    $SED -re "s/===$wc===/<wordclass>\1<\/wordclass>/g" |\
 # {{fi-decl-nalle|nonsens|||a}}
-    sed -re 's/\{\{fi-(decl|conj)-([a-z]*).*\}\}/<paradigm>\2<\/paradigm>/' |\
+    $SED -re 's/\{\{fi-(decl|conj)-([a-z]*).*\}\}/<paradigm>\2<\/paradigm>/' |\
 # definitions in enwikt are like transatlations usually
-#    sed -re "s/^\{\{fi-noun.*# (.*)$/<definition>\1<\/definition>/g" |\
+#    $SED -re "s/^\{\{fi-noun.*# (.*)$/<definition>\1<\/definition>/g" |\
 # Place tags on separate lines
-    sed -re \
+    $SED -re \
     "s/(<(wordclass|paradigm|definition|example)>.*<\/(wordclass|paradigm|definition|example)>)/\n\1\n/g" |\
 # recodr languages
-     sed -e 's/^==\([A-Z].*\)==/<lang>\1<\/lang>/' |\
+     $SED -e 's/^==\([A-Z].*\)==/<lang>\1<\/lang>/' |\
 # Remove all  non-tagged lines
-    sed -rn "/^<.*>$/p" |\
+    $SED -rn "/^<.*>$/p" |\
 # Remove linebreaks
     tr -d '\n' |\
 # Split per word again
-    sed -e 's/<page>/\n/g' |\
+    $SED -e 's/<page>/\n/g' |\
 # Remve non-finnish parts
-    sed -e 's:<text.*<lang>Finnish</lang>::' \
+    $SED -e 's:<text.*<lang>Finnish</lang>::' \
         -e 's:<lang>.*$::' \
         -e 's:</text>.*::' \
         -e 's:<text.*::' |\
 # replace space in propn for easy
-    sed -e 's/Proper noun/Proper-noun/' |\
+    $SED -e 's/Proper noun/Proper-noun/' |\
 # Place entries in alphabetical order (due to uniform xml strucuture sort
 # command works normally) and write as .xml file
     sort |\
 # make csv
-    sed -re \
+    $SED -re \
     's/^.*<title>([^<]*).*<wordclass>([^<]*).*<paradigm>([^<]*).*$/\1,\2,\3/' |\
 # remove missing lemmas or classes shown as leftover tags from ^^
     tr '|' ',' |\
     gawk -F , 'NF == 3 {printf("%s\t1\t%s_%s\tenwikt\n", $1, $2, $3);}' |\
-    sed -e 's/Adverb_99/ADV_NOPEASTI/' \
+    $SED -e 's/Adverb_99/ADV_NOPEASTI/' \
         -e 's/Interjection_[^	]*/INTJ_HAH/' \
         -e 's/\(kko	1	\)Proper-noun_valo	/\1PROPN_UKKO	/' \
         -e 's/\(kko	1	\)Noun_valo	/\1NOUN_UKKO	/' \
@@ -97,6 +102,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(tty	1	\)Proper-noun_valo	/\1PROPN_PYTTY	/' \
         -e 's/\(ttö	1	\)Proper-noun_valo	/\1PROPN_PÖNTTÖ	/' \
         -e 's/\(ku	1	\)Proper-noun_valo	/\1PROPN_ALKU	/' \
+        -e 's/\([st]ko	1	\)Noun_valo	/\1NOUN_TALO	/' \
+        -e 's/\(nko	1	\)Noun_valo	/\1NOUN_RUNKO	/' \
         -e 's/\(oko	1	\)Noun_valo	/\1NOUN_RUOKO	/' \
         -e 's/\(oko	1	\)Proper-noun_valo	/\1PROPN_RUOKO	/' \
         -e 's/\(to	1	\)Proper-noun_valo	/\1PROPN_VETO	/' \
@@ -112,7 +119,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(nto	1	\)Proper-noun_valo	/\1PROPN_TUNTO	/' \
         -e 's/\(rto	1	\)Proper-noun_valo	/\1PROPN_SIIRTO	/' \
         -e 's/\(ky	1	\)Noun_valo	/\1NOUN_NÄKY	/' \
-        -e 's/\(ko	1	\)Noun_valo	/\1NOUN_RUOKO	/' \
+        -e 's/\(ko	1	\)Noun_valo	/\1NOUN_TEKO	/' \
         -e 's/\(uku	1	\)Noun_valo	/\1NOUN_SUKU	/' \
         -e 's/\(o	1	\)Noun_valo	/\1NOUN_TALO	/' \
         -e 's/\(ot	1	\)Noun_valo	/\1NOUN_AIVOT	/' \
@@ -162,6 +169,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([äöyÄÖY].*i	1	\)Noun_risti	/\1NOUN_TYYLI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Pronoun_risti	/\1NOUN_TYYLI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Adjective_risti	/\1ADJ_STYDI	/' \
+        -e 's/\([äöyÄÖY].*[mnhcflrktbvpsšžxzgwdMNHFLRKTPBSXGD]	1	\)Noun_risti/\1NOUN_ZEN	/' \
         -e 's/\([mnhcflrktbvpsšžxzgwdMNHFLRKTPBSXGD]	1	\)Noun_risti	/\1NOUN_PUNK	/' \
         -e 's/\([mnhcflrktbpvsšžgdxwz]	1	\)Proper-noun_risti	/\1PROPN_PUNK	/' \
         -e 's/\(i	1	\)Proper-noun_risti	/\1PROPN_RUUVI	/' \
@@ -180,8 +188,9 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Noun_5F	/\1NOUN_LEHTI	/' \
         -e 's/\(i	1	\)Proper-noun_5F	/\1PROPN_TAUTI	/' \
         -e 's/\(i	1	\)Proper-noun_5J	/\1PROPN_SOINTI	/' \
-        -e 's/\([äöyÄÖY].*i	1	\)Proper-noun_6	/\1PROPN_KÄNÄÄLI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Proper-noun_6	/\1PROPN_KEHVELI	/' \
         -e 's/\(.*i	1	\)Proper-noun_paperi	/\1PROPN_KANAALI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Noun_paperi	/\1NOUN_KEHVELI	/' \
         -e 's/\(.*i	1	\)Noun_paperi	/\1NOUN_KANAALI	/' \
         -e 's/\(.*i	1	\)Adjective_paperi	/\1ADJ_ABNORMAALI	/' \
         -e 's/\([mnlhfkrtpdbgsv]	1	\)Noun_paperi	/\1NOUN_STADION	/' \
@@ -303,7 +312,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Pronomini_15	/\1PRON_USEA	/' \
         -e 's/\(i	1	\)Noun_vanhempi	/\1NOUN_VANHEMPI	/' \
         -e 's/\(mat	1	\)Noun_vanhempi	/\1NOUN_VANHEMMAT	/' \
-        -e 's/\(i	1	\)Adjective_vanhempi	/\1ADJ_YLEMPI	/' \
+        -e 's/\(i	1	\)Adjective_vanhempi	/\1ADJ_LÄHEMPI	/' \
         -e 's/\(i	1	\)Pronomini_16	/\1PRON_KUMPI	/' \
         -e 's/\(ikin	1	\)Pronomini_16	/\1PRON_KUMPIKIN	/' \
         -e 's/\([aA]	1	\)Noun_maa	/\1NOUN_MAA	/' \
@@ -358,6 +367,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(w	1	\)Proper-noun_show	/\1PROPN_SHOW	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Adjective_ovi	/\1ADJ_LÄHEMPI	/' \
         -e 's/\(i	1	\)Adjective_ovi	/\1ADJ_AIEMPI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Noun_ovi	/\1NOUN_KIVI	/' \
         -e 's/\(i	1	\)Noun_ovi	/\1NOUN_RUUHI	/' \
         -e 's/\(et	1	\)Noun_ovi	/\1NOUN_RIPSET	/' \
         -e 's/\(i	1	\)Noun_pieni	/\1NOUN_RUUHI	/' \
@@ -366,7 +376,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(meri	1	\)Noun_ovi	/\1NOUN_MERI	/' \
         -e 's/\(meri	1	\)Noun_uni	/\1NOUN_MERI	/' \
         -e 's/\(meri	1	\)Proper-noun_uni	/\1PROPN_MERI	/' \
-        -e 's/\(i	1	\)Noun_tiili	/\1NOUN_SYLI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Noun_tiili	/\1NOUN_SYLI	/' \
+        -e 's/\(i	1	\)Noun_tiili	/\1NOUN_TULI	/' \
         -e 's/\(i	1	\)Noun_uni	/\1NOUN_HIIRI	/' \
         -e 's/\(et	1	\)Noun_uni	/\1NOUN_ONNET	/' \
         -e 's/\(i	1	\)Noun_nuori	/\1NOUN_HIIRI	/' \
@@ -411,6 +422,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([äöyÄÖY].*nen	1	\)Proper-noun_38	/\1PROPN_KYLKIÄINEN	/' \
         -e 's/\(nen	1	\)Noun_nainen	/\1NOUN_AAKKOSTAMINEN	/' \
         -e 's/\(nen	1	\)Verb_nainen	/\1NOUN_AAKKOSTAMINEN	/' \
+        -e 's/\([äöyÄÖY].*]set	1	\)Noun_nainen	/\1NOUN_RAPPUSET	/' \
         -e 's/\(set	1	\)Noun_nainen	/\1NOUN_RAPPUSET	/' \
         -e 's/\(nen	1	\)Pronomini_38	/\1PRON_JOKAINEN	/' \
         -e 's/\(set	1	\)Proper-noun_nainen	/\1PROPN_RAPPUSET	/' \
@@ -425,7 +437,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(as	1	\)Adjective_kahdeksas	/\1NUM_KOLMAS	/' \
         -e 's/\(s	1	\)Adjective_kahdeksas	/\1NUM_KOLMAS	/' \
         -e 's/\(s	1	\)Proper-noun_vastaus	/\1PROPN_VAKUUTUS	/' \
-        -e 's/\(ys	1	\)Noun_vastaus	/\1NOUN_RÄJÄYTYS	/' \
+        -e 's/\([äöyÄÖY].*s	1	\)Noun_vastaus	/\1NOUN_RÄJÄYTYS	/' \
         -e 's/\(s	1	\)Noun_vastaus	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(s	1	\)Verb_vastaus	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(kset	1	\)Noun_vastaus	/\1NOUN_SERKUKSET	/' \
@@ -433,8 +445,8 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(us	1	\)Noun_kalleus	/\1NOUN_AAKKOSELLISUUS	/' \
         -e 's/\(udet	1	\)Noun_kalleus	/\1NOUN_OIKEUDET	/' \
         -e 's/\(us	1	\)Proper-noun_kalleus	/\1PROPN_AAKKOSELLISUUS	/' \
-        -e 's/\(ys	1	\)Noun_kauneus	/\1NOUN_KYLMÄJÄRKISYYS	/' \
-        -e 's/\(ys	1	\)Noun_kalleus	/\1NOUN_KYLMÄJÄRKISYYS	/' \
+        -e 's/\(ys	1	\)Noun_kauneus	/\1NOUN_KÖYHYYS	/' \
+        -e 's/\(ys	1	\)Noun_kalleus	/\1NOUN_KÖYHYYS	/' \
         -e 's/\(ys	1	\)Adjective_kalleus	/\1ADJ_LÄHTEISYYS	/' \
         -e 's/\(us	1	\)Adjective_kalleus	/\1ADJ_LÄHTEISYYS	/' \
         -e 's/\(kas	1	\)Proper-noun_vieras	/\1PROPN_ASUKAS	/' \
@@ -499,6 +511,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(rre	1	\)Proper-noun_hame	/\1PROPN_KIERRE	/' \
         -e 's/\(i	1	\)Noun_hame	/\1NOUN_ORI	/' \
         -e 's/\(keet	1	\)Noun_hame	/\1NOUN_ALKEET	/' \
+        -e 's/\([äöyÄÖY].*e	1	\)Noun_hame	/\1NOUN_PISTE	/' \
         -e 's/\(e	1	\)Noun_hame	/\1NOUN_ASTE	/' \
         -e 's/\(e	1	\)Adjective_hame	/\1ADJ_AHEN	/' \
         -e 's/\(e	1	\)Proper-noun_hame	/\1PROPN_ASTE	/' \
@@ -511,7 +524,7 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(.	1	\)Numeral_51	/\1NUM_51XXX	/' \
         -e 's/\(.	1	\)Pronoun_51	/\1PRON_51XXX	/' \
         -e 's/\(.	1	\)Proper-noun_51	/\1PROPN_51XXX	/' |\
-    sed -e 's/\(a	1	\)Verb_muistaa	/\1VERB_MUTRISTAA	/' \
+    $SED -e 's/\(a	1	\)Verb_muistaa	/\1VERB_MUTRISTAA	/' \
         -e 's/\(ä	1	\)Verb_muistaa	/\1VERB_KIVISTÄÄ	/' \
         -e 's/\(a	1	\)Verb_kaivaa	/\1VERB_KASVAA	/' \
         -e 's/\(ttaa	1	\)Verb_muistaa	/\1VERB_VIEROITTAA	/' \
@@ -595,13 +608,13 @@ cat $@ | sed -ne '/<page>/,/<\/page>/p' |\
 #    egrep -v 'Verbi|Substantiivi|Adjektiivi|Pronomini|Numeraali' |\
 #    fgrep -v 'lemma>-' |\
 # make csv
-#    sed -re 's/^.*<lemma>([^<]*).*<wordclass>([^<]*).*$/\1,\2/' |\
+#    $SED -re 's/^.*<lemma>([^<]*).*<wordclass>([^<]*).*$/\1,\2/' |\
 # remove missing lemmas or classes shown as leftover tags from ^^
 #    fgrep -v '<entry>' |\
 #    tr '|' ',' |\
-#    sed -re 's/([[:digit:]]+)-([[:upper:]])/\1,\2/' |\
+#    $SED -re 's/([[:digit:]]+)-([[:upper:]])/\1,\2/' |\
 #    gawk -F , 'NF == 2 {printf("%s\t1\t%s\tfiwikt\n", $1, $2);}' |\
-#    sed -e 's/Adverbi_99/ADV_NOPEASTI/' \
+#    $SED -e 's/Adverbi_99/ADV_NOPEASTI/' \
 #        -e 's/Adverbi/ADV_NOPEASTI/' \
 #        -e 's/Prepositio/ADP_MUKAISESTI/' \
 #        -e 's/Interjektio/INTJ_HAH/' \
