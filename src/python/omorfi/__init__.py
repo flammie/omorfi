@@ -21,7 +21,7 @@
 
 __all__ = ['Omorfi', 'Token']
 
-__version__ = "20191111"
+__version__ = "20200511"
 __author__ = "Omorfi contributors"
 __author_email__ = "omorfi-development@googlegroups.com"
 
