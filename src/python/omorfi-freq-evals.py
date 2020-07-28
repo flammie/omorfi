@@ -36,6 +36,8 @@ def main():
                    help="test only word-forms with frequency higher than FREQ")
     a.add_argument('-t', '--threshold', metavar="THOLD", default=99,
                    help="if coverage is less than THOLD exit with error")
+    a.add_argument('-O', '--no-workaround', default=False, action="store_true",
+                   help="do not skip suspicious strings (that may break)")
     options = a.parse_args()
     omorfi = Omorfi(options.verbose)
     try:
@@ -80,6 +82,9 @@ def main():
         if freq < int(options.count):
             break
         surf = fields[1]
+        if len(surf) > 120 and not options.no_workaround:
+            print("WARN: Skipping line", fields, file=stderr)
+            continue
         lemma = surf
         analysis = surf
         if options.format != 'coverage':
