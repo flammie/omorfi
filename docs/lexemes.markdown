@@ -102,8 +102,8 @@ We link to all original sources for reference.
 | aina₂ |  always, as adverb, “aina mun pitää“ |  |  |
 | aina₂ |  always, as adverb, “aina mun pitää” |  |  |
 | Aina₁ |  This rare proper noun overlaps more common *aina* (forever) | 🧑¹☢♀ |  |
-| Aino₁ |  This proper noun overlaps forms of very common *ainoa* “only“. | 🧑¹♀ |  |
-| Aino₁ |  This proper noun overlaps forms of very common *ainoa* “only”. | 🧑¹♀ |  |
+| Aino₁ |  This proper noun overlaps forms of very common *ainoa* “only“. | 🧑¹♀ | [fiwikt](https://fi.wiktionary.org/wiki/Aino)  |
+| Aino₁ |  This proper noun overlaps forms of very common *ainoa* “only”. | 🧑¹♀ | [fiwikt](https://fi.wiktionary.org/wiki/Aino)  |
 | Ainoa₁ |  This proper noun overlaps very common *ainoa* “only“. | 🧑²☢ |  |
 | Ainoa₁ |  This proper noun overlaps very common *ainoa* “only”. | 🧑²☢ |  |
 | Ainokainen₁ |  This rare proper noun overlaps more common *ainokainen* (singleton) | org☢ |  |
@@ -213,7 +213,7 @@ We link to all original sources for reference.
 | Apuri₁ |  This rare proper noun overlaps more common *Apuri* (helper) | 🌍☢ |  |
 | Ara₁ |  This rare proper noun overlaps more common *Ara* (FIXME) | 🌍☢ |  |
 | Arkki₁ |  This rare proper noun overlaps more common *Arkki* (ark) | 🌍☢ |  |
-| Armas₁ |  This rare proper noun overlaps more common *Armas* (dear) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Armas)  |
+| Armas₁ |  This rare proper noun overlaps more common *Armas* (dear) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Armas) [enwikt](https://en.wiktionary.org/wiki/Armas)  |
 | Armo₁ |  This rare proper noun overlaps more common *Armo* (grace) | 🧑¹☢ |  |
 | Aro₁ |  This rare proper noun overlaps more common *Aro* (grassland) | 🌍☢ |  |
 | Arpi₁ |  This rare proper noun overlaps more common *Arpi* (scar) | 🌍☢ |  |
@@ -250,7 +250,7 @@ We link to all original sources for reference.
 | Auki₁ |  This rare proper noun overlaps more common *Auki* (open) | 🌍☢ |  |
 | Aukio₁ |  This rare proper noun overlaps more common *Aukio* (square) | 🌍☢ |  |
 | Aula₁ |  This rare proper noun overlaps more common *Aula* (lobby) | 🌍☢ |  |
-| Aulis₁ |  This rare proper noun overlaps more common *Aulis* (willing) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aulis)  |
+| Aulis₁ |  This rare proper noun overlaps more common *Aulis* (willing) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Aulis) [enwikt](https://en.wiktionary.org/wiki/Aulis)  |
 | Auma₁ |  This rare proper noun overlaps more common *Auma* (hip) | 🌍☢ |  |
 | Aura₁ |  This rare proper noun overlaps more common *Aura* (aura, plow) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Aura)  |
 | Aurankurki₁ |  This rare proper noun overlaps more common *Aurankurki* (plow crane) | 🌍☢ |  |
@@ -577,7 +577,7 @@ We link to all original sources for reference.
 | Hissi₁ |  This rare proper noun overlaps more common *Hissi* (lift) | 🌍☢ |  |
 | Hiukka₁ |  This rare proper noun overlaps more common *Hiukka* (little) | 🌍☢ |  |
 | Hiukkanen₁ |  This rare proper noun overlaps more common *Hiukkanen* (bit) | 🌍☢ |  |
-| HIV₁ |  Human Immunodeficiency Virus |  |  |
+| HIV₁ |  Human Immunodeficiency Virus |  | [enwikt](https://en.wiktionary.org/wiki/HIV)  |
 | HJK₁ |  Helsingin Jalkapallo-Klubi | org |  |
 | HKL₁ |  Helsingin Kaupungin Liikenne |  |  |
 | Hohka₁ |  This rare proper noun overlaps more common *Hohka* (FIXME) | 🌍☢ |  |
@@ -994,7 +994,7 @@ We link to all original sources for reference.
 | Kammi₁ |  This rare proper noun overlaps more common *Kammi* (FIXME) | 🌍☢ |  |
 | Kammio₁ |  This rare proper noun overlaps more common *Kammio* (chamber) | org☢ |  |
 | Kampela₁ |  This rare proper noun overlaps more common *Kampela* (cray) | 🌍☢ |  |
-| Kamppi₁ |  This rare proper noun overlaps more common *Kamppi* (tackle) | 🌍☢ |  |
+| Kamppi₁ |  This rare proper noun overlaps more common *Kamppi* (tackle) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kamppi)  |
 | Kampsu₁ |  This rare proper noun overlaps more common *Kampsu* (FIXME) | 🌍☢ |  |
 | Kampura₁ |  This rare proper noun overlaps more common *Kampura* (FIXME) | 🌍☢ |  |
 | Kamu₁ |  This rare proper noun overlaps more common *Kamu* (bud) | 🌍☢ |  |
@@ -1338,7 +1338,7 @@ We link to all original sources for reference.
 | Koivuinen₁ |  This rare proper noun overlaps more common *Koivuinen* (birchy) | 🌍☢ |  |
 | Koivukuja₁ |  This rare proper noun overlaps more common *Koivukuja* (birchpath) | 🌍☢ |  |
 | Koivumetsä₁ |  This rare proper noun overlaps more common *Koivumetsä* (birchforest) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koivumetsä)  |
-| Koivuniemi₁ |  This rare proper noun overlaps more common *Koivuniemi* (birch peninsula) | 🌍☢ |  |
+| Koivuniemi₁ |  This rare proper noun overlaps more common *Koivuniemi* (birch peninsula) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Koivuniemi)  |
 | Koivunoksa₁ |  This rare proper noun overlaps more common *Koivunoksa* (birch branch) | 🌍☢ |  |
 | Koje₁ |  This rare proper noun overlaps more common *Koje* (machine) | 🌍☢ |  |
 | Kokkare₁ |  This rare proper noun overlaps more common *Kokkare* (clump) | 🌍☢ |  |
@@ -1487,7 +1487,7 @@ We link to all original sources for reference.
 | kuiville₂ |  getting dry from, also literally “päästä kuiville” |  |
 | Kuja₁ |  This rare proper noun overlaps more common *Kuja* (alley) | 🌍☢ |  |
 | Kukinto₁ |  This rare proper noun overlaps more common *Kukinto* (bloom) | 🧑²☢ |  |
-| Kukka₁ |  This rare proper noun overlaps more common *Kukka* (flower) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Kukka)  |
+| Kukka₁ |  This rare proper noun overlaps more common *Kukka* (flower) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Kukka) [enwikt](https://en.wiktionary.org/wiki/Kukka)  |
 | Kukkamaa₁ |  This rare proper noun overlaps more common *Kukkamaa* (flowerlands) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkamaa)  |
 | Kukkanen₁ |  This rare proper noun overlaps more common *Kukkanen* (flowerling) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkanen)  |
 | Kukkaro₁ |  This rare proper noun overlaps more common *Kukkaro* (purse) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkaro)  |
@@ -2441,7 +2441,7 @@ We link to all original sources for reference.
 | Olla₁ |  This rare proper noun overlaps more common *Olla* (to be) | 🌍☢ |  |
 | Olle₁ |  This proper noun overlaps forms of very common *olla* (to be). | 🧑¹♂ |  |
 | Olo₁ |  This rare proper noun overlaps more common *Olo* (being) | org☢ |  |
-| Olympia₁ |  This rare proper noun overlaps more common *Olympia* (olympia) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Olympia)  |
+| Olympia₁ |  This rare proper noun overlaps more common *Olympia* (olympia) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Olympia) [enwikt](https://en.wiktionary.org/wiki/Olympia)  |
 | Olympiakylä₁ |  This rare proper noun overlaps more common *Olympiakylä* (FIXME) | 🌍☢ |  |
 | Oma₁ |  This rare proper noun overlaps more common *Oma* (own) | 🧑¹☢ |  |
 | Ominainen₁ |  This rare proper noun overlaps more common *Ominainen* (natural) | 🌍☢ |  |
@@ -2472,7 +2472,7 @@ We link to all original sources for reference.
 | ottamatta₁ |  excepting, as adposition, illative complement, mainly “lukuun ottamatta“ |  |  |
 | ottamatta₁ |  excepting, as adposition, illative complement, mainly “lukuun ottamatta” |  |  |
 | Oulu₁ |  PROPN_ASU | 🌍 |  |
-| oy₁ |  Osake-Yhtiö |  |  |
+| oy₁ |  Osake-Yhtiö |  | [enwikt](https://en.wiktionary.org/wiki/oy)  |
 | OY₁ |  Osake-Yhtiö |  |  |
 | oyj₁ |  Julkinen Osake-Yhtiö | org |  |
 | Paakari₁ |  This rare proper noun overlaps more common *Paakari* (baker) | 🌍☢ |  |
