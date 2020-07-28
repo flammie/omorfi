@@ -49,9 +49,6 @@ def main():
     ap.add_argument("--output", "-o", action="store", required=True,
                     type=argparse.FileType('w'),
                     metavar="OFILE", help="write index page to OFILE")
-    ap.add_argument("--outdir", "-O", action="store", required=True,
-                    metavar="ODIR", help="write individual stuffs to " +
-                    "ODIR/stuff.md")
     ap.add_argument("--fields", "-F", action="store", default=2,
                     metavar="N", help="read N fields from master")
     ap.add_argument("--separator", action="store", default="\t",
@@ -116,30 +113,11 @@ outpyt formatter.
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                outfilename = tsv_parts['stuff'].replace('?', '_')
-                outfile = open(args.outdir + '/' + outfilename + '.markdown',
-                               'w')
-                print('---', file=outfile)
-                print('layout: stuff', file=outfile)
-                print('stuff:', outfilename,
-                      file=outfile)
-                print('---', file=outfile)
-                print("# `", tsv_parts['stuff'], "`", file=outfile)
-                print("| [", tsv_parts['stuff'], "](stuffs/" + outfilename +
-                      ".html) |", file=args.output, end=' ', sep='')
-                print(file=outfile)
-                print(tsv_parts['doc'], file=outfile)
-                print(tsv_parts['doc'], file=args.output, end=' ')
-                print(file=outfile)
-                print("## Default formats", file=outfile)
-                print("| Omorfi | Apertium | FTB 3.1 | Giella |", file=outfile)
-                print("|:------:|:--------:|:-------:|:------:|", file=outfile)
+                print("|", tsv_parts['stuff'], "|", tsv_parts['doc'],
+                      file=args.output, end=' ')
                 for formatter in formatters:
                     print("| ", formatter.stuff2lexc(tsv_parts['stuff']),
-                          file=outfile, end=' ')
-                    print("| ", formatter.stuff2lexc(tsv_parts['stuff']),
                           file=args.output, end=' ')
-                print(" |", file=outfile)
                 print(" |", file=args.output)
 
     print(file=args.output)
