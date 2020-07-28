@@ -176,22 +176,22 @@ if ! test -f "fi_ftb-ud.uniq.freqs" ; then
 fi
 
 # Open subtitles
-echo Open Subtitle 2016... corpus 9/$nc
-if ! test -f "OpenSubtitles2016.fi.uniq.freqs" ; then
-    if ! test -f "OpenSubtitles2016.fi.tokens" ; then
-        if ! test -f "OpenSubtitles2016.fi.text" ; then
-            if ! test -f "OpenSubtitles2016.raw.fi.gz" ; then
+echo Open Subtitle 2018... corpus 9/$nc
+if ! test -f "OpenSubtitles2018.fi.uniq.freqs" ; then
+    if ! test -f "OpenSubtitles2018.fi.tokens" ; then
+        if ! test -f "OpenSubtitles2018.fi.text" ; then
+            if ! test -f "OpenSubtitles2018.raw.fi.gz" ; then
                 echo fetch
                 fetch-opensubtitles.bash "fi"
             fi
             echo unpack
-            unpack-opensubtitles.bash "fi" > "OpenSubtitles2016.fi.text"
+            unpack-opensubtitles.bash "fi" > "OpenSubtitles2018.fi.text"
         fi
         echo tokenise
-        preprocess < "OpenSubtitles2016.fi.text" > "OpenSubtitles2016.fi.tokens"
+        preprocess < "OpenSubtitles2018.fi.text" > "OpenSubtitles2018.fi.tokens"
     fi
     echo count
-    frequency_list OpenSubtitles2016.fi.tokens > OpenSubtitles2016.fi.uniq.freqs
+    frequency_list OpenSubtitles2018.fi.tokens > OpenSubtitles2018.fi.uniq.freqs
 fi
 # tatoeba
 echo Tatoeba fi... corpus 10/$nc
@@ -234,7 +234,7 @@ if ! test -f "5grams.uniq.freqs" ; then
                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.04.txt.gz
             fi
             echo unpack
-            zcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
+            gzcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
         fi
         echo tokenise
         cat 5grams.text | tr ' ' '\n' | cut -d/ -f1 > 5grams.tokens
