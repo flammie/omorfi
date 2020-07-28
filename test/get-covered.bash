@@ -255,8 +255,8 @@ if ! test -f "vks.uniq.freqs" ; then
         unzip vks_frek.zip
     fi
     echo count
-    recode l1..u8 vks_frek.txt
-    cut -d ' ' -f 2,3 vks_frek.txt > vks.uniq.freqs
+    iconv -f iso-8859-1 -t utf-8//IGNORE vks_frek.txt |\
+        cut -d ' ' -f 2,3 > vks.uniq.freqs
 fi
 echo Varhaisnykysuomen sanojen taajuuksia... corpus 13/$nc
 if ! test -f "vns.uniq.freqs" ; then
@@ -269,8 +269,8 @@ if ! test -f "vns.uniq.freqs" ; then
         unzip vns_frek.zip
     fi
     echo count
-    recode l1..u8 vns_frek.txt
-    cut -d ' ' -f 2,3 vns_frek.txt > vns.uniq.freqs
+    iconv -f iso-8859-1 -t utf-8//IGNORE vns_frek.txt |\
+        cut -d ' ' -f 2,3  > vns.uniq.freqs
 fi
 # Unimorph-fin
 echo Unimorph fin ... 14/$nc
