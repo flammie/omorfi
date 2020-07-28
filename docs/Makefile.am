@@ -10,15 +10,15 @@ update: stuff.markdown paradigms.markdown lexemes.markdown statistics.markdown
 
 stuff.markdown:
 	PYTHONPATH=$(srcdir)/../src/python $(PYTHON) generate-stuffs.py \
-			   -S $(srcdir)/../src/docs/stuff.tsv -o stuff.markdown -O stuffs/
+			   -S $(srcdir)/../src/docs/stuff.tsv -o stuff.markdown
 
 paradigms.markdown:
 	$(PYTHON) generate-paradigms.py -P ../src/docs/paradigms.tsv \
-		-A ../src/paradigms.tsv -o paradigms.markdown -O paradigms/
+		-A ../src/paradigms.tsv -o paradigms.markdown 
 
 lexemes.markdown: generate-lexemes.py
 	$(PYTHON) generate-lexemes.py -L ../src/docs/lexemes.tsv \
-		-l ../src/generated/master.tsv -o lexemes.markdown -O lexemes/
+		-l ../src/generated/master.tsv -o lexemes.markdown
 
 statistics.markdown:
 	./generate-statistics.bash ..
