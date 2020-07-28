@@ -9,7 +9,6 @@ Paradigms are sub-groups of lexemes that have unique morpho-phonological feature
 * Other morphotactic limitations, such as: only plurals allowed,  obligatory possessive suffixes, etc.
 
 All other lexical information is coded on per lexeme basis
-
 ## Paradigms in alphabetical order
 
 * The _Notes_ column is informal hints for lexicographers to discriminate the classes, for further details each paradigm has their own page with details and exampels linked
@@ -250,9 +249,9 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_51mustaraamattu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustatorvisieni | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustaviinimarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51nuori-isäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuoriemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuoriherra | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuori-isäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuorikarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuorimies | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuoripari | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -366,7 +365,6 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_ASUKAS | NOUN | kas stem, kas : kkaa variation | 41-A | back |
 |  NOUN_ATERIMET | NOUN | Plurale tantums, met : n variation back ... | 33 | back |
 |  NOUN_AUER | NOUN | Noun(s), er stem, er : tere variation | 49-T | back |
-|  NOUN_BÉBÉ | NOUN | é stem front harmony | 21 | front |
 |  NOUN_BEIGNET | NOUN | loan word nouns, consonant stem, ’ infle... | 22 | front |
 |  NOUN_BERNIE | NOUN | ie stems, front harmony | 3 | front |
 |  NOUN_BESSERWISSER | NOUN | loan word nouns, consonant stem, x : xi ... | 6 | front |
@@ -376,12 +374,13 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_BRASSERIE | NOUN | Loan word nouns, e stems, front harmony | 21 | back |
 |  NOUN_BRIE | NOUN | Loan word nouns, e stems, front harmony | 21 | front |
 |  NOUN_BÄNET | NOUN | Plurale tantums, et stems et : e variati... | 8 | front |
+|  NOUN_BÉBÉ | NOUN | é stem front harmony | 21 | front |
 |  NOUN_CHACHACHA | NOUN | Loan words, a stem | 21 | back |
 |  NOUN_COWBOY | NOUN | oy stem, both harmonies | 21 | both |
 |  NOUN_ELIN | NOUN | n stem, n : me variation front harmony | 33 | front |
 |  NOUN_ELÄMÄ | NOUN | ä stem, ä : 0 variation | 10 | front |
 |  NOUN_EPÄILTY | NOUN | lty stem, lty : lly variation, mostly l-... | 1-I | front |
-|  NOUN_ESIM. | ADV | Abbreviated nouns, fina
+|  NOUN_ESIM. | ADV | Abbreviated nouns, final full stop, no m... | 99 | back |
 |  NOUN_ESQUIMAU | NOUN | Loan words, o stem | 21 | back |
 |  NOUN_FARKUT | NOUN | Plurale tantums, kut stem, kut :kku vari... | 1-A|D | back |
 |  NOUN_FARMARIT | NOUN | Plurale tantums, it stem, it : i variati... | 6 | back |
@@ -392,6 +391,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_HAAKSI | NOUN | ksi stem, ksi : ht variations | 31 | back |
 |  NOUN_HAI | NOUN | i stem, i : 0 variation, back harmony | 18 | back |
 |  NOUN_HAIT | NOUN | Plurale tantum monosyllabic nouns ending... | 18 | back |
+|  NOUN_HAKKUUT | NOUN | Plurale tantums, kkuut stem, kkuut : tuu... | 17 | back |
 |  NOUN_HAMMAS | NOUN | mas stem, mmas : mpaa variation | 41-H | back |
 |  NOUN_HAPAN | NOUN | n stem, n:ma variation, e.g. noun compou... | 34-B | back |
 |  NOUN_HAPPI | NOUN | ppi stem, ppi : pe variations, back harm... | 7-B | back |
@@ -505,6 +505,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_KÄRSÄKÄS | NOUN | käs stem, käs : kkää variations | 41-A | front |
 |  NOUN_KÄRÄJÄT | NOUN | Plurale tantums, ät stems, ät : 0 variat... | 10 | front |
 |  NOUN_KÄSITE | NOUN | te stem, te : ttee variations | 48-C | front |
+|  NOUN_KÄTTÄPIDEMPI | NOUN | mpi stem, mpi : mmä variations | 16-H | front |
 |  NOUN_KÄÄDYT | NOUN | Plurale tantums, dyt stem, dyt : ty vari... | 1-F | front |
 |  NOUN_KÄÄNNIN | NOUN | nnin stems, nnin : ntime variations, fro... | 33-J | front |
 |  NOUN_KÄÄNTÖ | NOUN | ntö stem, ntö : nnö variations | 1-J | front |
@@ -576,7 +577,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_NISSE | NOUN | e stem, no variations front harmony | 8 | front |
 |  NOUN_NOKI | NOUN | ki stem, ki : e variations back harmony | 7-D | back |
 |  NOUN_NOUGAT | NOUN | consonant stem, ’ inflection back harmon... | 22 | back |
-|  NOUN_NRO | NOUN | Abbreviated nouns without fina
+|  NOUN_NRO | NOUN | Abbreviated nouns without final full sto... | 99 | back |
 |  NOUN_NUGAA | NOUN | aa stems, aa : a variations | 20 | back |
 |  NOUN_NUKKE | NOUN | kke stems, kke : ke variations | 8-A | back |
 |  NOUN_NYLJIN | NOUN | jin stem, jin : kime variations front ha... | 33-L | front |
@@ -1607,9 +1608,9 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_51Tyynimeri | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusi-Englanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusi-Guinea | PROPN | Optimisation hack for exceptional compou... | 51 | back |
+|  PROPN_51Uusi-Seelanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusikaupunki | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusimaa | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Uusi-Seelanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_A. | PROPN | Middle initials don't inflect or compoun... | 99 | back |
 |  PROPN_AAKKOSELLISUUS | PROPN | s stem, s : de variations back harmony | 40 | back |
 |  PROPN_AAKKOSTAMINEN | PROPN | nen stem, nen : se variations back harmo... | 38 | back |
@@ -1660,7 +1661,6 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_ASU | PROPN | u stem, no variations | 1 | back |
 |  PROPN_ASUKAS | PROPN | kas stem, kas : kkaa variations | 41-A | back |
 |  PROPN_ATERIMET | PROPN | Proper noun plurale tantum met stem, met... | 33 | back |
-|  PROPN_BÉBÉ | PROPN | é stem  | 21 | front |
 |  PROPN_BEIGNET | PROPN | consonat stem, ’ inflections | 22 | front |
 |  PROPN_BERNIE | PROPN | ie stem, no variations front harmony | 3 | front |
 |  PROPN_BESSERWISSER | PROPN | consonant stem, X : Xe varioants | 6 | front |
@@ -1670,6 +1670,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_BRASSERIE | PROPN | e stem no variatons back harmony | 21 | back |
 |  PROPN_BRIE | PROPN | e stem front harmony | 21 | front |
 |  PROPN_BROOKLYN | PROPN | consonant stem, no variations both harmo... | 5 | front |
+|  PROPN_BÉBÉ | PROPN | é stem  | 21 | front |
 |  PROPN_CAMUS | PROPN | consonat stem, ’ inflection | 22 | back |
 |  PROPN_CHACHACHA | PROPN | no variatiosn  | 21 | back |
 |  PROPN_COMPOUND | PROPN | bound proper noun particles, usually, hy... | 99 | front |
@@ -2128,20 +2129,20 @@ All other lexical information is coded on per lexeme basis
 |  PUNCT_PILKKU | PUNCT | punctuation, rare back inflection plausi... | 99 | back |
 |  PUNCT_PISTE | PUNCT | punctuation, rare front inflection plaus... | 99 | front |
 |  SCONJ_ETTÄ | SCONJ | sub-ordinating conjunction, no inflectio... | 99 | front |
+|  SYM_$ | SYM | symbols, inflection, :, compounding, - | 99 | back |
 |  SYM_, | SYM | symbol, back inflection, :, compounding,... | 99 | back |
 |  SYM_. | SYM | symbols, front inflection, :, compoundin... | 99 | front |
-|  SYM_§ | SYM | symbols, inflection, :, compounding, - | 99 | front |
-|  SYM_¢ | SYM | symbols, inflection, :, compounding, - | 99 | front |
-|  SYM_$ | SYM | symbols, inflection, :, compounding, - | 99 | back |
-|  SYM_£ | SYM | symbols, inflection, :, compounding, - | 99 | back |
-|  SYM_€ | SYM | symbols, inflection, :, compounding, - | 0 | back |
 |  SYM_CELSIUS | SYM | symbols, inflection, :, compounding, - | 0 | back |
 |  SYM_GRAMMA | SYM | symbols, inflection, :, compounding, - | 0 | back |
 |  SYM_JOULE | SYM | symbols, inflection, :, compounding, - | 0 | back |
 |  SYM_METRI | SYM | symbols, inflection, :, compounding, - | 0 | front |
 |  SYM_TUOTE | SYM | symbols, inflection, :, compounding, - | 0 | back |
 |  SYM_WEBER | SYM | symbols, inflection, :, compounding, - | 0 | front |
+|  SYM_¢ | SYM | symbols, inflection, :, compounding, - | 99 | front |
+|  SYM_£ | SYM | symbols, inflection, :, compounding, - | 99 | back |
+|  SYM_§ | SYM | symbols, inflection, :, compounding, - | 99 | front |
 |  SYM_Ω | SYM | symbols, inflection, :, compounding, - | 99 | back |
+|  SYM_€ | SYM | symbols, inflection, :, compounding, - | 0 | back |
 |  VERB_AALLOTA | VERB | llota stem, llota : ltoa variaton | 75-I | back |
 |  VERB_AHNEHTIA | VERB | tia stem, tia : di variations | 61-F | back |
 |  VERB_AMPUA | VERB | mpua stem, mpua : mmu variations | 52-H | back |
@@ -2304,10 +2305,10 @@ All other lexical information is coded on per lexeme basis
 |  VERB_SATAA | VERB | taa stem defective inflection | 56-F | back |
 |  VERB_SELVITÄ | VERB | vitä stem, vitä : piä variations | 75 | front |
 |  VERB_SIEPATA | VERB | pata stem, pata : ppaa variations | 73-B | back |
-|  VERB_SI’ITÄ | VERB | ’itä stem, ’itä : kiä variations | 75-D | front |
 |  VERB_SILIYTYÄ | VERB | ytyä stem, ytyä : ydy variations | 52-F | front |
 |  VERB_SILPOA | VERB | poa stem, poa : vo variations | 52-E | back |
 |  VERB_SIVALTAA | VERB | ltaa stem, ltaa : lla variations | 54-I | back |
+|  VERB_SI’ITÄ | VERB | ’itä stem, ’itä : kiä variations | 75-D | front |
 |  VERB_SORTAA | VERB | rtaa stem, rtaa : rra variations | 53-K | back |
 |  VERB_SOTKEA | VERB | ea stem, ea : i variations | 58 | back |
 |  VERB_SULATELLA | VERB | tella stem, tella : ttele variations | 67-C | back |
@@ -2378,5 +2379,4 @@ All other lexical information is coded on per lexeme basis
 |  X_FORGN_SV | PROPN | new particles of Swedish origin; used of... | 99 | back |
 |  X_IGNORE | X | words that need to be in lexicon for leg... | 99 | back |
 |  X_SUFFIX_GOESWITH | X | some suffixes that appear mistokenised, ... | 99 | back |
-
 <!-- vim: set ft=markdown:-->
