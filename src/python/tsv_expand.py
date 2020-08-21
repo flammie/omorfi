@@ -125,11 +125,7 @@ def main():
                             elif v == "None":
                                 wordmap[k] = None
                             elif k == 'kotus_tn':
-                                try:
-                                    wordmap[k] = int(v)
-                                except ValueError:
-                                    print("FAIL", k, v, tsv_parts)
-                                    exit(2)
+                                wordmap[k] = v
                             else:
                                 wordmap[k] = v
                 else:

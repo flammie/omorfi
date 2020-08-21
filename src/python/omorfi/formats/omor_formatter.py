@@ -714,12 +714,9 @@ class OmorFormatter(Formatter):
             # do not include normal white space for now
             return ""
         wordmap['stub'] = lexc_escape(wordmap['stub'])
-        if int(wordmap['homonym']) == 1:
-            wordmap['analysis'] = "[WORD_ID=%s]" % (
-                lexc_escape(wordmap['lemma']))
-        else:
-            wordmap['analysis'] = "[WORD_ID=%s_%s]" % (
-                lexc_escape(wordmap['lemma']), wordmap['homonym'])
+        wordmap['analysis'] = "[WORD_ID=%s]" % (lexc_escape(wordmap['lemma']))
+        if wordmap['homonym'][-1].isdigit():
+            wordmap['analysis'] += "[HOMONYM=%s]" % (wordmap['homonym'][-1])
         if wordmap['numtype'] and wordmap['numtype'] == 'ORD':
             wordmap['analysis'] += self.stuff2lexc('ADJ')
         else:
