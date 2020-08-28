@@ -220,6 +220,7 @@ class OmorFormatter(Formatter):
         '[SUBCAT=NEG]',
         "[SUBCAT=NEG]",
         '[SUBCAT=OPERATION]',
+        '[ADPTYPE=ANY]',
         '[ADPTYPE=POST]',
         '[SUBCAT=PREFIX]',
         '[ADPTYPE=PREP]',
@@ -579,6 +580,7 @@ class OmorFormatter(Formatter):
         "SPACE": "[SUBCAT=SPACE]",
         "COMMA": "[SUBCAT=COMMA]",
         "ARROW": "[SUBCAT=ARROW]",
+        "BOTH": "[ADPTYPE=ANY]",
         "PREPOSITION": "[ADPTYPE=PREP]",
         "POSTPOSITION": "[ADPTYPE=POST]",
         "MULTIPLICATIVE": "[NUMTYPE=MULT]",
@@ -756,10 +758,12 @@ class OmorFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
 
         if self.props and wordmap['proper_noun_class']:
-            wordmap['analysis'] += \
-                self.stuff2lexc(wordmap['proper_noun_class'])
+            for stuff in wordmap['proper_noun_class'].split("|"):
+                wordmap['analysis'] += \
+                    self.stuff2lexc(stuff)
         if self.semantics and wordmap['sem']:
-            wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
+            for stuff in wordmap['sem'].split("|"):
+                wordmap['analysis'] += self.stuff2lexc(stuff)
 
         if wordmap['style']:
             wordmap['analysis'] += self.stuff2lexc(wordmap['style'])
