@@ -21,7 +21,8 @@ for f in attributes/*.tsv ; do
     done < ${WORK}/missing-keys.$(basename $f)
     if test -e ${WORK}/fails.$(basename $f) ; then
         echo
-        echo there were inconsistencies in ${f}, see ${WORK}/fails.$(basename $f)
+        echo there were inconsistencies in ${f}:
+        cat ${WORK}/fails.$(basename $f)
         exit 1
     fi
 done

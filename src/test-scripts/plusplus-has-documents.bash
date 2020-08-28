@@ -15,7 +15,8 @@ while read k ; do
 done < ${WORK}/missing-keys.$(basename $DOCFILE)
 if test -e ${WORK}/fails.$(basename $DOCFILE) ; then
     echo
-    echo there are missing docs in ${DOCFILE}, see ${WORK}/fails.$(basename $DOCFILE)
+    echo there are missing docs in ${DOCFILE}:
+    cat ${WORK}/fails.$(basename $DOCFILE)
     exit 1
 fi
 rm -rf ${WORK}
