@@ -7,7 +7,7 @@ they contain at least following information for each word:
     * the word inflection classification in one of the known format.
 Additional data may be available in the database and can be deduced from the
 lemma or classification as needed. The current database reader is based
-on the python's csv module, but may change in the future.
+on the python's csv module
 """
 
 
@@ -111,6 +111,10 @@ def main():
                     help="include segments in raw analyses")
     ap.add_argument("--break-loops", action="store_true", default=False,
                     help="skip continuations that may loop, comp/der/etc.")
+    ap.add_argument("--splits", action="append", default=["prontype"],
+                    metavar="COMMENT",
+                    help="skip lines starting with COMMENT that"
+                    "do not have SEPs")
     args = ap.parse_args()
 
     formatter = None
@@ -118,6 +122,10 @@ def main():
         formatter = OmorFormatter(args.verbose, newparas=args.omor_new_para,
                                   allo=args.omor_allo, props=args.omor_props,
                                   sem=args.omor_sem)
+        if args.omor_sem:
+            args.splits.append("sem")
+        if args.omor_props:
+            args.splits.append("proper_noun_class")
     elif args.format == 'ftb3':
         formatter = Ftb3Formatter(args.verbose)
     elif args.format == 'apertium':
@@ -226,9 +234,21 @@ def main():
                 # selected
                 if wordmap['real_pos']:
                     wordmap['pos'] = wordmap['real_pos']
+                # multiply by all ored | features that are enabled
+                variants = [wordmap]
+                for splitfeat in args.splits:
+                    if "|" in wordmap[splitfeat]:
+                        newvariants = []
+                        for variant in variants:
+                            for split in variant[splitfeat].split("|"):
+                                newword = variant.copy()
+                                newword[splitfeat] = split
+                                newvariants.append(newword)
+                        variants = newvariants
+                for variant in variants:
+                    print(formatter.wordmap2lexc(variant),
+                          file=args.output)
                 # format output
-                print(formatter.wordmap2lexc(wordmap),
-                      file=args.output)
             if postponed_suffixes:
                 print("\nLEXICON SUFFIX\n\n", file=args.output)
                 for suffix in postponed_suffixes:
