@@ -358,6 +358,8 @@ class Analysis:
                 a.misc['SemType'] = value[0] + value[1:].lower()
             elif key == 'COMPOUND_FORM':
                 a.misc['GoesWith'] = value[0] + value[1:].lower()
+            elif key == 'HOMONYM':
+                a.misc['HomonymIndex'] = value
             elif key in ['UPOS', 'ALLO', 'WEIGHT', 'CASECHANGE', 'NEWPARA',
                          'GUESS', 'CONJ', 'BOUNDARY']:
                 # Not feats in UD:
@@ -602,6 +604,8 @@ class Analysis:
                     rvs += ['Po']
                 elif value == 'Prep':
                     rvs += ['Pr']
+                elif value == 'Any':
+                    pass
                 else:
                     print(key, value, 'ADPTYPE', 'FTB3')
                     exit(1)
@@ -667,7 +671,7 @@ class Analysis:
             elif key == "Mood":
                 if value == 'Opt':
                     rvs += ["Opt"]
-            elif key in ["Lexicalised", "Blacklisted"]:
+            elif key in ["Lexicalised", "Blacklisted", "HomonymIndex"]:
                 continue
             else:
                 print(key, value, 'FTB3miscelse', file=stderr)

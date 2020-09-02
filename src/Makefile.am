@@ -265,6 +265,7 @@ TESTS=test-scripts/constraint-unique-keys.bash \
 	  test-scripts/paradigm-coverage.bash \
 	  test-scripts/plusplus-has-documents.bash \
 	  test-scripts/lexc-errors.bash \
+	  test-scripts/lemmas-match-harmony.bash \
 	  test-scripts/lemmas-match-regexes.bash
 
 XFAIL_TESTS=

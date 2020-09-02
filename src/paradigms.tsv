@@ -16,7 +16,7 @@ ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]
 ADJ_EHTA	ADJ	ADJECTIVE	9	F	False	weaken	back	a	None	False	False	ta	ta
 ADJ_EHYT	ADJ	ADJECTIVE	43	None	False	strengthen	front	None	None	False	False	yt	t
 ADJ_ENSIMMÄINEN	ADJ	NUMERAL	38	None	False	strengthen	front	None	None	False	False	inen	nen
-ADJ_GAY	ADJ	ADJECTIVE	21	None	False	weaken	front	None	None	False	False	ay
+ADJ_GAY	ADJ	ADJECTIVE	21	None	False	weaken	both	None	None	False	False	ay
 ADJ_HAILAKKA	ADJ	ADJECTIVE	14	A	False	weaken	back	a	None	False	False	kka	ka
 ADJ_HALPA	ADJ	ADJECTIVE	9	E	False	weaken	back	a	None	False	False	pa	pa
 ADJ_HAPAN	ADJ	ADJECTIVE	33	B	False	strengthen	back	None	None	False	False	pan	an
@@ -43,7 +43,7 @@ ADJ_KORKEA	ADJ	ADJECTIVE	15	None	False	weaken	back	a	None	False	False	ea	a
 ADJ_KULTA	ADJ	ADJECTIVE	10	I	False	weaken	back	a	None	False	False	lta	ta
 ADJ_KULUNUT	ADJ	ADJECTIVE	47	None	False	strengthen	back	u	None	False	False	ut	ut
 ADJ_KYLMÄJÄRKINEN	ADJ	ADJECTIVE	38	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nen	nen
-ADJ_KYMMENTÄ	ADJ	NUMERAL	99	None	False	False	front	None	None	False	False	.
+ADJ_KYMMENTÄ	ADJ	NUMERAL	99	None	False	False	both	None	None	False	False	.
 ADJ_KYVYTÖN	ADJ	ADJECTIVE	34	C	False	strengthen	front	None	None	False	False	tön	ön
 ADJ_KYYTTÖ	ADJ	ADJECTIVE	1	C	False	weaken	front	None	None	False	False	ttö	tö
 ADJ_KÄYPÄ	ADJ	ADJECTIVE	10	E	False	weaken	front	ä	None	False	False	pä	pä
@@ -77,7 +77,7 @@ ADJ_PARANNELTU	ADJ	ADJECTIVE	1	I	False	weaken	back	None	None	False	False	ltu	tu
 ADJ_PARAS	ADJ	ADJECTIVE	41	None	False	strengthen	back	None	None	False	False	as	as
 ADJ_PEEAA	ADJ	ADJECTIVE	18	None	False	weaken	back	a	None	False	False	aa	a
 ADJ_PIENI	ADJ	ADJECTIVE	26	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
-ADJ_PIKKU	ADJ	ADJECTIVE	99	None	False	strengthen	back	None	None	False	False	.
+ADJ_PIKKU	ADJ	ADJECTIVE	99	None	False	strengthen	both	None	None	False	False	.
 ADJ_PINKKI	ADJ	ADJECTIVE	5	A	False	weaken	front	None	None	False	False	kki	ki
 ADJ_PITKÄ	ADJ	ADJECTIVE	1010	None	False	weaken	front	ä	None	False	False	tkä	tkä
 ADJ_POHATTA	ADJ	ADJECTIVE	14	C	False	weaken	back	a	None	False	False	tta	ta
@@ -143,7 +143,7 @@ ADP_KOTONA	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True	.
 ADP_LISÄKSI	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	ksi	i
 ADP_LÄHELLÄ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	ä
 ADP_MUKAAN	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True	n	n
-ADP_MUKAISESTI	ADP	PARTICLE	99	None	False	False	back	None	None	optional	True	.
+ADP_MUKAISESTI	ADP	PARTICLE	99	None	False	False	both	None	None	optional	True	.
 ADP_NÄHDEN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	den	den
 ADP_NÄKYVIIN	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	n	n
 ADP_TYKÖ	ADP	PARTICLE	99	None	False	False	front	None	None	optional	True	.
@@ -162,7 +162,7 @@ ADV_LEVÄLLEEN	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True	
 ADV_MITEN	ADV	PARTICLE	99	None	False	False	front	None	None	False	True	.
 ADV_NOPEASTI	ADV	PARTICLE	99	None	False	False	back	None	None	False	True	.
 ADV_TYHMÄSTI	ADV	PARTICLE	99	None	False	False	front	None	None	False	True	.
-ADV_VAAN	ADV	PARTICLE	99	None	False	False	back	None	None	False	False	.
+ADV_VAAN	ADV	PARTICLE	99	None	False	False	both	None	None	False	False	.
 ADV_YLIPÄÄNSÄ	ADV	PARTICLE	99	None	False	False	front	None	None	obligatory	True	.
 AUX_AIKOA	AUX	VERB	52	D	False	weaken	back	None	None	False	False	aikoa	koa
 AUX_EI	AUX	VERB	1099	None	False	weaken	front	None	None	False	False	ei	ei
@@ -175,11 +175,11 @@ AUX_TAITAA	AUX	VERB	76	F	False	weaken	back	None	None	False	False	taitaa	taa
 AUX_TARVITA	AUX	VERB	69	None	False	strengthen	back	None	None	False	False	tarvita	vita
 AUX_TÄYTYÄ	AUX	VERB	52	F	False	weaken	front	None	None	False	False	täytyä	tyä
 AUX_VOIDA	AUX	VERB	62	None	False	strengthen	back	None	None	False	False	voida	ida
-CCONJ_JA	CCONJ	PARTICLE	99	None	False	False	front	None	None	False	False	.
+CCONJ_JA	CCONJ	PARTICLE	99	None	False	False	both	None	None	False	False	.
 DET_SE	DET	PRONOUN	101	None	False	False	front	None	None	False	False	.	e
 DET_YKSI	DET	PRONOUN	31	None	False	weaken	front	None	None	False	False	.	ksi
-INTJ_HAH	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False	.
-INTJ_OO	INTJ	PARTICLE	99	None	False	False	back	None	None	False	False	.
+INTJ_HAH	INTJ	PARTICLE	99	None	False	False	both	None	None	False	False	.
+INTJ_OO	INTJ	PARTICLE	99	None	False	False	both	None	None	False	False	.
 NOUN_51aamukaksitoista	NOUN	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksitoista	ksitoista
 NOUN_51aamuyksitoista	NOUN	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksitoista	ksitoista
 NOUN_51aavameri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	aavameri	ameri
@@ -188,7 +188,7 @@ NOUN_51isojako	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isojako
 NOUN_51isokoskelo	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isokoskelo	koskelo
 NOUN_51isokuovi	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isokuovi	kuovi
 NOUN_51isokäpylintu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isokäpylintu	käpylintu
-NOUN_51isolepinkäinen	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isolepinkäinen	lepinkäinen
+NOUN_51isolepinkäinen	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	isolepinkäinen	lepinkäinen
 NOUN_51isolokki	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isolokki	lokki
 NOUN_51isomaksaruoho	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isomaksaruoho	maksaruoho
 NOUN_51isomasto	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	isomasto	masto
@@ -219,7 +219,7 @@ NOUN_51lämminvarasto	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	
 NOUN_51lämminvaunu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	lämminvaunu	minvaunu
 NOUN_51matalameri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	matalameri	ameri
 NOUN_51mustaherukka	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustaherukka	aherukka
-NOUN_51mustaleipä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustaleipä	aleipä
+NOUN_51mustaleipä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	mustaleipä	aleipä
 NOUN_51mustaleski	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustaleski	aleski
 NOUN_51mustalintu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustalintu	alintu
 NOUN_51mustamaija	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustamaija	amaija
@@ -231,8 +231,8 @@ NOUN_51mustapippuri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mu
 NOUN_51mustaraamattu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustaraamattu	araamattu
 NOUN_51mustatorvisieni	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustatorvisieni	atorvisieni
 NOUN_51mustaviinimarja	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	mustaviinimarja	aviinimarja
-NOUN_51nuori-isäntä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	nuori-isäntä	i-isäntä
-NOUN_51nuoriemäntä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	nuoriemäntä	iemäntä
+NOUN_51nuori-isäntä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	nuori-isäntä	i-isäntä
+NOUN_51nuoriemäntä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	nuoriemäntä	iemäntä
 NOUN_51nuoriherra	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	nuoriherra	iherra
 NOUN_51nuorikarja	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	nuorikarja	ikarja
 NOUN_51nuorimies	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	nuorimies	imies
@@ -247,34 +247,34 @@ NOUN_51palavarakkaus	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	p
 NOUN_51pitkähousu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkähousu	ähousu
 NOUN_51pitkäkirkko	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkäkirkko	äkirkko
 NOUN_51pitkäperjantai	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkäperjantai	äperjantai
-NOUN_51pitkäpiimä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkäpiimä	äpiimä
+NOUN_51pitkäpiimä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	pitkäpiimä	äpiimä
 NOUN_51pitkäsiima	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkäsiima	äsiima
 NOUN_51pitkätakki	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkätakki	ätakki
 NOUN_51pitkäthousut	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	pitkäthousut	äthousut
 NOUN_51puolikuu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	puolikuu	ikuu
 NOUN_51puolimatka	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	puolimatka	imatka
-NOUN_51puolipäivä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	puolipäivä	ipäivä
-NOUN_51puoliväli	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	puoliväli	iväli
-NOUN_51puoliyö	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	puoliyö	iyö
+NOUN_51puolipäivä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	puolipäivä	ipäivä
+NOUN_51puoliväli	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	puoliväli	iväli
+NOUN_51puoliyö	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	puoliyö	iyö
 NOUN_51raitisilma	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	raitisilma	isilma
 NOUN_51raskassarja	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	raskassarja	ssarja
 NOUN_51raskasvesi	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	raskasvesi	svesi
-NOUN_51raskasvety	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	raskasvety	svety
-NOUN_51sepiväpeippi	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	sepiväpeippi	äpeippi
+NOUN_51raskasvety	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	raskasvety	svety
+NOUN_51sepiväpeippi	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	sepiväpeippi	äpeippi
 NOUN_51suorakulma	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	suorakulma	akulma
 NOUN_51suoraommel	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	suoraommel	aommel
-NOUN_51syvämeri	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	syvämeri	ämeri
-NOUN_51särkynytsydän	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	särkynytsydän	ytsydän
+NOUN_51syvämeri	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	syvämeri	ämeri
+NOUN_51särkynytsydän	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	särkynytsydän	ytsydän
 NOUN_51tyhjäpaino	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	tyhjäpaino	äpaino
 NOUN_51täysikuu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	täysikuu	sikuu
 NOUN_51uusikuu	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	uusikuu	sikuu
 NOUN_51uusivuosi	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	uusivuosi	sivuosi
-NOUN_51vanhaemäntä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanhaemäntä	aemäntä
-NOUN_51vanhaisäntä	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanhaisäntä	aisäntä
+NOUN_51vanhaemäntä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	vanhaemäntä	aemäntä
+NOUN_51vanhaisäntä	NOUN	NOUN	51	None	False	weaken	front	None	None	False	False	vanhaisäntä	aisäntä
 NOUN_51vanhakaupunki	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanhakaupunki	akaupunki
 NOUN_51vanhapiika	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanhapiika	apiika
 NOUN_51vanhapoika	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vanhapoika	apoika
-NOUN_51vierasmies	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vierasmies	vierasmies
+NOUN_51vierasmies	NOUN	NOUN	51	None	False	weaken	back	None	None	False	False	vierasmies	smies
 NOUN_AAKKOSELLISUUS	NOUN	NOUN	40	None	False	strengthen	back	None	None	False	False	us	s
 NOUN_AAKKOSTAMINEN	NOUN	NOUN	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen	nen
 NOUN_AALLOT	NOUN	NOUN	1	I	obligatory	weaken	back	None	None	False	False	lot	lot
@@ -285,46 +285,46 @@ NOUN_AAMUKYMMENEN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	kymm
 NOUN_AAMUYHDEKSÄN	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	än	än
 NOUN_AAMUYKSI	NOUN	NOUN	31	None	False	weaken	front	None	None	False	False	yksi	ksi
 NOUN_AARRE	NOUN	NOUN	48	K	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rre	re
-NOUN_ACRO_AA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aaáàâã]
-NOUN_ACRO_CELSIUS	NOUN	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
-NOUN_ACRO_DOLLARI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_EE	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvwéèêëçðþ]
-NOUN_ACRO_GRAMMA	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
-NOUN_ACRO_GRAY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_II	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[IJijíìïî]
-NOUN_ACRO_JOULE	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
-NOUN_ACRO_JÄRJESTÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_KAHDEKSAN	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	8
-NOUN_ACRO_KAKSI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	2
-NOUN_ACRO_KANDELA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_KOLMAS	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_KOLME	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	3
-NOUN_ACRO_KUUSI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	6
-NOUN_ACRO_LEHTI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_LUSIKKA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_METRI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_NELJÄ	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	4
-NOUN_ACRO_NOLLA	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	0
-NOUN_ACRO_OIKEUS	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_OK	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_OO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[HKOÅhkoåóòô]
-NOUN_ACRO_OPISTO	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_PUNTA	NOUN	ACRONYM	10	None	False	weaken	front	None	None	False	False	.
-NOUN_ACRO_SAIRAALA	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_SEITSEMÄN	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_TUOTE	NOUN	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
-NOUN_ACRO_UU	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[QUquúùû]
-NOUN_ACRO_VIISI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	5
-NOUN_ACRO_VUOSI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-NOUN_ACRO_WEBER	NOUN	ACRONYM	0	None	False	weaken	front	None	None	False	False	.
-NOUN_ACRO_YHDISTYS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-NOUN_ACRO_YKSI	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	1
-NOUN_ACRO_YY	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[YÜyüýÿ]
-NOUN_ACRO_ZET	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	[ZŽzž]
-NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³23ńñß]
-NOUN_ACRO_ÄÄ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ääæ]
-NOUN_ACRO_ÖÖ	NOUN	ACRONYM	0	None	False	False	front	None	None	False	False	[Ööøõ]
-NOUN_ACRO_Ω	NOUN	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
+NOUN_ACRO_AA	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[Aaáàâã]
+NOUN_ACRO_CELSIUS	NOUN	ACRONYM	0	None	False	strengthen	both	None	None	False	False	.
+NOUN_ACRO_DOLLARI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_EE	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[BCDEGPTVWbcdegptvwéèêëçðþ]
+NOUN_ACRO_GRAMMA	NOUN	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
+NOUN_ACRO_GRAY	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_II	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[IJijíìïî]
+NOUN_ACRO_JOULE	NOUN	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
+NOUN_ACRO_JÄRJESTÖ	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_KAHDEKSAN	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	8
+NOUN_ACRO_KAKSI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	2
+NOUN_ACRO_KANDELA	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_KOLMAS	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_KOLME	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	3
+NOUN_ACRO_KUUSI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	6
+NOUN_ACRO_LEHTI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_LUSIKKA	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_METRI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_NELJÄ	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	4
+NOUN_ACRO_NOLLA	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	0
+NOUN_ACRO_OIKEUS	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_OK	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_OO	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[HKOÅhkoåóòô]
+NOUN_ACRO_OPISTO	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_PUNTA	NOUN	ACRONYM	10	None	False	weaken	both	None	None	False	False	.
+NOUN_ACRO_SAIRAALA	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_SEITSEMÄN	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_TUOTE	NOUN	ACRONYM	0	None	False	strengthen	both	None	None	False	False	.
+NOUN_ACRO_UU	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[QUquúùû]
+NOUN_ACRO_VIISI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	5
+NOUN_ACRO_VUOSI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_WEBER	NOUN	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
+NOUN_ACRO_YHDISTYS	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+NOUN_ACRO_YKSI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	1
+NOUN_ACRO_YY	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[YÜyüýÿ]
+NOUN_ACRO_ZET	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[ZŽzž]
+NOUN_ACRO_ÄKS	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³23ńñß]
+NOUN_ACRO_ÄÄ	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[Ääæ]
+NOUN_ACRO_ÖÖ	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	[Ööøõ]
+NOUN_ACRO_Ω	NOUN	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
 NOUN_AIKA	NOUN	NOUN	1009	D	False	weaken	back	a	None	False	False	ika	ika
 NOUN_AIVOKUOLLUT	NOUN	NOUN	47	None	False	strengthen	back	u	None	False	False	ut	ut
 NOUN_AIVOT	NOUN	NOUN	1	None	obligatory	weaken	back	None	None	False	False	ot	t
@@ -360,14 +360,14 @@ NOUN_COWBOY	NOUN	NOUN	21	None	False	weaken	both	i	None	False	False	.
 NOUN_ELIN	NOUN	NOUN	33	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*n	n
 NOUN_ELÄMÄ	NOUN	NOUN	10	None	False	weaken	front	ä	None	False	False	ä	ä
 NOUN_EPÄILTY	NOUN	NOUN	1	I	False	weaken	front	None	None	False	False	lty	ty
-NOUN_ESIM.	ADV	PARTICLE	99	None	False	False	back	None	None	False	False	\.
+NOUN_ESIM.	ADV	PARTICLE	99	None	False	False	both	None	None	False	False	\.
 NOUN_ESQUIMAU	NOUN	NOUN	21	None	False	weaken	back	o	None	False	False	.
 NOUN_FARKUT	NOUN	NOUN	1	A|D	obligatory	weaken	back	None	None	False	False	ut	ut
 NOUN_FARMARIT	NOUN	NOUN	6	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*it	it
 NOUN_FONDUE	NOUN	NOUN	21	None	False	weaken	front	y	None	False	False	.
 NOUN_FONDYY	NOUN	NOUN	20	None	False	weaken	front	y	None	False	False	yy	y
 NOUN_FÄNRIKIT	NOUN	NOUN	5	A	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it	it
-NOUN_GAY	NOUN	NOUN	21	None	False	weaken	front	i	None	False	False	.
+NOUN_GAY	NOUN	NOUN	21	None	False	weaken	both	i	None	False	False	.
 NOUN_HAAKSI	NOUN	NOUN	31	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ksi	ksi
 NOUN_HAI	NOUN	NOUN	18	None	False	weaken	back	i	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i	i
 NOUN_HAIT	NOUN	NOUN	18	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*it	it
@@ -540,7 +540,7 @@ NOUN_MIES	NOUN	NOUN	42	None	False	strengthen	front	None	None	False	False	[Mm]ies
 NOUN_MILJÖÖ	NOUN	NOUN	20	None	False	weaken	front	ö	None	False	False	öö	ö
 NOUN_MILJÖÖT	NOUN	NOUN	20	None	obligatory	weaken	front	None	None	False	False	ööt	öt
 NOUN_MITTA	NOUN	NOUN	9	C	False	weaken	back	a	None	False	False	tta	ta
-NOUN_MONSIEUR	NOUN	NOUN	22	None	False	weaken	front	ö	None	False	False	.
+NOUN_MONSIEUR	NOUN	NOUN	22	None	False	weaken	both	ö	None	False	False	.
 NOUN_MULTA	NOUN	NOUN	10	I	False	weaken	back	a	None	False	False	lta	ta
 NOUN_MUUNNIN	NOUN	NOUN	33	J	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nnin	nin
 NOUN_MYRKKY	NOUN	NOUN	1	A	False	weaken	front	None	None	False	False	kky	ky
@@ -557,7 +557,7 @@ NOUN_NIMETÖN	NOUN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	�
 NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýêéőèěęøæõ][^aou]*[Eeěëéè]
 NOUN_NOKI	NOUN	NOUN	7	D	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ki	ki
 NOUN_NOUGAT	NOUN	NOUN	22	None	False	weaken	back	a	None	False	False	.
-NOUN_NRO	NOUN	PARTICLE	99	None	False	False	back	None	None	False	False	.
+NOUN_NRO	NOUN	PARTICLE	99	None	False	False	both	None	None	False	False	.
 NOUN_NUGAA	NOUN	NOUN	20	None	False	weaken	back	a	None	False	False	aa	a
 NOUN_NUKKE	NOUN	NOUN	8	A	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*kke	ke
 NOUN_NYLJIN	NOUN	NOUN	33	L	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*jin	jin
@@ -792,7 +792,7 @@ NOUN_VUOLLE	NOUN	NOUN	48	I	False	strengthen	back	None	None	False	False	[AOUŌÓ�
 NOUN_VUOSITUHAT	NOUN	NOUN	46	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*t	t
 NOUN_YHTIÖT	NOUN	NOUN	3	None	obligatory	weaken	front	None	None	False	False	öt	t
 NOUN_YKSIKKÖ	NOUN	NOUN	4	A	False	weaken	front	None	None	False	False	kkö	kö
-NOUN_YLEIS-	NOUN	NOUN	99	None	False	False	front	None	None	False	False	-	-
+NOUN_YLEIS-	NOUN	NOUN	99	None	False	False	both	None	None	False	False	-	-
 NOUN_YLKÄ	NOUN	NOUN	10	L	False	weaken	front	ä	None	False	False	kä	kä
 NOUN_YLÄNKÖ	NOUN	NOUN	1	G	False	weaken	front	None	None	False	False	nkö	kö
 NOUN_YMPÄRYSTÄ	NOUN	NOUN	9	None	False	weaken	front	ä	None	False	False	ä	ä
@@ -818,10 +818,10 @@ NUM_51kahdeksankvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fal
 NUM_51kahdeksankvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksankvadriljoonaa	ankvadriljoonaa
 NUM_51kahdeksankvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksankvintiljardia	ankvintiljardia
 NUM_51kahdeksankvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksankvintiljoonaa	ankvintiljoonaa
-NUM_51kahdeksankymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksankymmentä	ankymmentä
+NUM_51kahdeksankymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksankymmentä	ankymmentä
 NUM_51kahdeksanmiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanmiljardia	anmiljardia
 NUM_51kahdeksanmiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanmiljoonaa	anmiljoonaa
-NUM_51kahdeksanneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanneljättä	anneljättä
+NUM_51kahdeksanneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksanneljättä	anneljättä
 NUM_51kahdeksannoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksannoniljardia	annoniljardia
 NUM_51kahdeksannoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksannoniljoonaa	annoniljoonaa
 NUM_51kahdeksanoktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanoktiljardia	anoktiljardia
@@ -829,7 +829,7 @@ NUM_51kahdeksanoktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51kahdeksanpiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanpiljardia	anpiljardia
 NUM_51kahdeksanpiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanpiljoonaa	anpiljoonaa
 NUM_51kahdeksansataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksansataa	ansataa
-NUM_51kahdeksanseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanseitsemättä	anseitsemättä
+NUM_51kahdeksanseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksanseitsemättä	anseitsemättä
 NUM_51kahdeksansentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksansentiljardia	ansentiljardia
 NUM_51kahdeksansentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksansentiljoonaa	ansentiljoonaa
 NUM_51kahdeksanseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanseptiljardia	anseptiljardia
@@ -844,8 +844,8 @@ NUM_51kahdeksantsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51kahdeksantuhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksantuhatta	antuhatta
 NUM_51kahdeksanundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanundekiljardia	anundekiljardia
 NUM_51kahdeksanundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanundekiljoonaa	anundekiljoonaa
-NUM_51kahdeksanviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanviidettä	anviidettä
-NUM_51kahdeksanyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksanyhdeksättä	anyhdeksättä
+NUM_51kahdeksanviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksanviidettä	anviidettä
+NUM_51kahdeksanyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksanyhdeksättä	anyhdeksättä
 NUM_51kahdeksasbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasbiljardis	asbiljardis
 NUM_51kahdeksasbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasbiljoonas	asbiljoonas
 NUM_51kahdeksasdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasdekiljardis	asdekiljardis
@@ -861,10 +861,10 @@ NUM_51kahdeksaskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fal
 NUM_51kahdeksaskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksaskvadriljoonas	askvadriljoonas
 NUM_51kahdeksaskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksaskvintiljardis	askvintiljardis
 NUM_51kahdeksaskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksaskvintiljoonas	askvintiljoonas
-NUM_51kahdeksaskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksaskymmenes	askymmenes
+NUM_51kahdeksaskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksaskymmenes	askymmenes
 NUM_51kahdeksasmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasmiljardis	asmiljardis
 NUM_51kahdeksasmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasmiljoonas	asmiljoonas
-NUM_51kahdeksasneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasneljästtä	asneljästtä
+NUM_51kahdeksasneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksasneljättä	asneljättä
 NUM_51kahdeksasnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasnoniljardis	asnoniljardis
 NUM_51kahdeksasnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasnoniljoonas	asnoniljoonas
 NUM_51kahdeksasoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasoktiljardis	asoktiljardis
@@ -872,7 +872,7 @@ NUM_51kahdeksasoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51kahdeksaspiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksaspiljardis	aspiljardis
 NUM_51kahdeksaspiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksaspiljoonas	aspiljoonas
 NUM_51kahdeksassadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksassadas	assadas
-NUM_51kahdeksasseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasseitsemättä	asseitsemättä
+NUM_51kahdeksasseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksasseitsemättä	asseitsemättä
 NUM_51kahdeksassentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksassentiljardis	assentiljardis
 NUM_51kahdeksassentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksassentiljoonas	assentiljoonas
 NUM_51kahdeksasseptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasseptiljardis	asseptiljardis
@@ -887,8 +887,8 @@ NUM_51kahdeksastsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51kahdeksastuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksastuhannes	astuhannes
 NUM_51kahdeksasundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasundekiljardis	asundekiljardis
 NUM_51kahdeksasundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasundekiljoonas	asundekiljoonas
-NUM_51kahdeksasviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasviidettä	asviidettä
-NUM_51kahdeksasyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeksasyhdeksättä	asyhdeksättä
+NUM_51kahdeksasviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksasviidettä	asviidettä
+NUM_51kahdeksasyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeksasyhdeksättä	asyhdeksättä
 NUM_51kahdesbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesbiljardis	sbiljardis
 NUM_51kahdesbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesbiljoonas	sbiljoonas
 NUM_51kahdesdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesdekiljardis	sdekiljardis
@@ -904,10 +904,10 @@ NUM_51kahdeskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51kahdeskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeskvadriljoonas	skvadriljoonas
 NUM_51kahdeskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeskvintiljardis	skvintiljardis
 NUM_51kahdeskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeskvintiljoonas	skvintiljoonas
-NUM_51kahdeskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdeskymmenes	skymmenes
+NUM_51kahdeskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdeskymmenes	skymmenes
 NUM_51kahdesmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesmiljardis	smiljardis
 NUM_51kahdesmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesmiljoonas	smiljoonas
-NUM_51kahdesneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesneljästtä	sneljästtä
+NUM_51kahdesneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdesneljättä	sneljättä
 NUM_51kahdesnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesnoniljardis	snoniljardis
 NUM_51kahdesnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesnoniljoonas	snoniljoonas
 NUM_51kahdesoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesoktiljardis	soktiljardis
@@ -915,7 +915,7 @@ NUM_51kahdesoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fa
 NUM_51kahdespiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdespiljardis	spiljardis
 NUM_51kahdespiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdespiljoonas	spiljoonas
 NUM_51kahdessadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdessadas	ssadas
-NUM_51kahdesseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesseitsemättä	sseitsemättä
+NUM_51kahdesseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdesseitsemättä	sseitsemättä
 NUM_51kahdessentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdessentiljardis	ssentiljardis
 NUM_51kahdessentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdessentiljoonas	ssentiljoonas
 NUM_51kahdesseptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesseptiljardis	sseptiljardis
@@ -930,8 +930,8 @@ NUM_51kahdestsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51kahdestuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdestuhannes	stuhannes
 NUM_51kahdesundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesundekiljardis	sundekiljardis
 NUM_51kahdesundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesundekiljoonas	sundekiljoonas
-NUM_51kahdesviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesviidettä	sviidettä
-NUM_51kahdesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kahdesyhdeksättä	syhdeksättä
+NUM_51kahdesviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdesviidettä	sviidettä
+NUM_51kahdesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kahdesyhdeksättä	syhdeksättä
 NUM_51kaksibiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksibiljardia	ksibiljardia
 NUM_51kaksibiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksibiljoonaa	ksibiljoonaa
 NUM_51kaksidekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksidekiljardia	ksidekiljardia
@@ -947,10 +947,10 @@ NUM_51kaksikvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51kaksikvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksikvadriljoonaa	ksikvadriljoonaa
 NUM_51kaksikvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksikvintiljardia	ksikvintiljardia
 NUM_51kaksikvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksikvintiljoonaa	ksikvintiljoonaa
-NUM_51kaksikymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksikymmentä	ksikymmentä
+NUM_51kaksikymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kaksikymmentä	ksikymmentä
 NUM_51kaksimiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksimiljardia	ksimiljardia
 NUM_51kaksimiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksimiljoonaa	ksimiljoonaa
-NUM_51kaksineljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksineljättä	ksineljättä
+NUM_51kaksineljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kaksineljättä	ksineljättä
 NUM_51kaksinoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksinoniljardia	ksinoniljardia
 NUM_51kaksinoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksinoniljoonaa	ksinoniljoonaa
 NUM_51kaksioktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksioktiljardia	ksioktiljardia
@@ -958,7 +958,7 @@ NUM_51kaksioktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51kaksipiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksipiljardia	ksipiljardia
 NUM_51kaksipiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksipiljoonaa	ksipiljoonaa
 NUM_51kaksisataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksisataa	ksisataa
-NUM_51kaksiseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksiseitsemättä	ksiseitsemättä
+NUM_51kaksiseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kaksiseitsemättä	ksiseitsemättä
 NUM_51kaksisentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksisentiljardia	ksisentiljardia
 NUM_51kaksisentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksisentiljoonaa	ksisentiljoonaa
 NUM_51kaksiseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksiseptiljardia	ksiseptiljardia
@@ -973,8 +973,8 @@ NUM_51kaksitsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fals
 NUM_51kaksituhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksituhatta	ksituhatta
 NUM_51kaksiundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksiundekiljardia	ksiundekiljardia
 NUM_51kaksiundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksiundekiljoonaa	ksiundekiljoonaa
-NUM_51kaksiviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksiviidettä	ksiviidettä
-NUM_51kaksiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kaksiyhdeksättä	ksiyhdeksättä
+NUM_51kaksiviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kaksiviidettä	ksiviidettä
+NUM_51kaksiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kaksiyhdeksättä	ksiyhdeksättä
 NUM_51kolmasbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasbiljardis	sbiljardis
 NUM_51kolmasbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasbiljoonas	sbiljoonas
 NUM_51kolmasdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasdekiljardis	sdekiljardis
@@ -990,10 +990,10 @@ NUM_51kolmaskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51kolmaskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmaskvadriljoonas	skvadriljoonas
 NUM_51kolmaskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmaskvintiljardis	skvintiljardis
 NUM_51kolmaskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmaskvintiljoonas	skvintiljoonas
-NUM_51kolmaskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmaskymmenes	skymmenes
+NUM_51kolmaskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmaskymmenes	skymmenes
 NUM_51kolmasmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasmiljardis	smiljardis
 NUM_51kolmasmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasmiljoonas	smiljoonas
-NUM_51kolmasneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasneljättä	sneljättä
+NUM_51kolmasneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmasneljättä	sneljättä
 NUM_51kolmasnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasnoniljardis	snoniljardis
 NUM_51kolmasnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasnoniljoonas	snoniljoonas
 NUM_51kolmasoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasoktiljardis	soktiljardis
@@ -1001,7 +1001,7 @@ NUM_51kolmasoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fa
 NUM_51kolmaspiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmaspiljardis	spiljardis
 NUM_51kolmaspiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmaspiljoonas	spiljoonas
 NUM_51kolmassadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmassadas	ssadas
-NUM_51kolmasseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasseitsemättä	sseitsemättä
+NUM_51kolmasseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmasseitsemättä	sseitsemättä
 NUM_51kolmassentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmassentiljardis	ssentiljardis
 NUM_51kolmassentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmassentiljoonas	ssentiljoonas
 NUM_51kolmasseptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasseptiljardis	sseptiljardis
@@ -1016,8 +1016,8 @@ NUM_51kolmastsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51kolmastuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmastuhannes	stuhannes
 NUM_51kolmasundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasundekiljardis	sundekiljardis
 NUM_51kolmasundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasundekiljoonas	sundekiljoonas
-NUM_51kolmasviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasviidettä	sviidettä
-NUM_51kolmasyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmasyhdeksättä	syhdeksättä
+NUM_51kolmasviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmasviidettä	sviidettä
+NUM_51kolmasyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmasyhdeksättä	syhdeksättä
 NUM_51kolmebiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmebiljardia	ebiljardia
 NUM_51kolmebiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmebiljoonaa	ebiljoonaa
 NUM_51kolmedekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmedekiljardia	edekiljardia
@@ -1033,10 +1033,10 @@ NUM_51kolmekvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51kolmekvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmekvadriljoonaa	ekvadriljoonaa
 NUM_51kolmekvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmekvintiljardia	ekvintiljardia
 NUM_51kolmekvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmekvintiljoonaa	ekvintiljoonaa
-NUM_51kolmekymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmekymmentä	ekymmentä
+NUM_51kolmekymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmekymmentä	ekymmentä
 NUM_51kolmemiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmemiljardia	emiljardia
 NUM_51kolmemiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmemiljoonaa	emiljoonaa
-NUM_51kolmeneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeneljättä	eneljättä
+NUM_51kolmeneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmeneljättä	eneljättä
 NUM_51kolmenoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmenoniljardia	enoniljardia
 NUM_51kolmenoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmenoniljoonaa	enoniljoonaa
 NUM_51kolmeoktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeoktiljardia	eoktiljardia
@@ -1044,7 +1044,7 @@ NUM_51kolmeoktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51kolmepiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmepiljardia	epiljardia
 NUM_51kolmepiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmepiljoonaa	epiljoonaa
 NUM_51kolmesataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmesataa	esataa
-NUM_51kolmeseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeseitsemättä	eseitsemättä
+NUM_51kolmeseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmeseitsemättä	eseitsemättä
 NUM_51kolmesentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmesentiljardia	esentiljardia
 NUM_51kolmesentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmesentiljoonaa	esentiljoonaa
 NUM_51kolmeseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeseptiljardia	eseptiljardia
@@ -1059,8 +1059,8 @@ NUM_51kolmetsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fals
 NUM_51kolmetuhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmetuhatta	etuhatta
 NUM_51kolmeundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeundekiljardia	eundekiljardia
 NUM_51kolmeundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeundekiljoonaa	eundekiljoonaa
-NUM_51kolmeviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeviidettä	eviidettä
-NUM_51kolmeyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kolmeyhdeksättä	eyhdeksättä
+NUM_51kolmeviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmeviidettä	eviidettä
+NUM_51kolmeyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kolmeyhdeksättä	eyhdeksättä
 NUM_51kuudesbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesbiljardis	sbiljardis
 NUM_51kuudesbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesbiljoonas	sbiljoonas
 NUM_51kuudesdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesdekiljardis	sdekiljardis
@@ -1076,10 +1076,10 @@ NUM_51kuudeskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51kuudeskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudeskvadriljoonas	skvadriljoonas
 NUM_51kuudeskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudeskvintiljardis	skvintiljardis
 NUM_51kuudeskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudeskvintiljoonas	skvintiljoonas
-NUM_51kuudeskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudeskymmenes	skymmenes
+NUM_51kuudeskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuudeskymmenes	skymmenes
 NUM_51kuudesmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesmiljardis	smiljardis
 NUM_51kuudesmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesmiljoonas	smiljoonas
-NUM_51kuudesneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesneljästtä	sneljästtä
+NUM_51kuudesneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuudesneljättä	sneljättä
 NUM_51kuudesnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesnoniljardis	snoniljardis
 NUM_51kuudesnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesnoniljoonas	snoniljoonas
 NUM_51kuudesoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesoktiljardis	soktiljardis
@@ -1087,7 +1087,7 @@ NUM_51kuudesoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fa
 NUM_51kuudespiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudespiljardis	spiljardis
 NUM_51kuudespiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudespiljoonas	spiljoonas
 NUM_51kuudessadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudessadas	ssadas
-NUM_51kuudesseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesseitsemättä	sseitsemättä
+NUM_51kuudesseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuudesseitsemättä	sseitsemättä
 NUM_51kuudessentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudessentiljardis	ssentiljardis
 NUM_51kuudessentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudessentiljoonas	ssentiljoonas
 NUM_51kuudesseptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesseptiljardis	sseptiljardis
@@ -1102,8 +1102,8 @@ NUM_51kuudestsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51kuudestuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudestuhannes	stuhannes
 NUM_51kuudesundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesundekiljardis	sundekiljardis
 NUM_51kuudesundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesundekiljoonas	sundekiljoonas
-NUM_51kuudesviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesviidettä	sviidettä
-NUM_51kuudesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuudesyhdeksättä	syhdeksättä
+NUM_51kuudesviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuudesviidettä	sviidettä
+NUM_51kuudesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuudesyhdeksättä	syhdeksättä
 NUM_51kuusibiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusibiljardia	sibiljardia
 NUM_51kuusibiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusibiljoonaa	sibiljoonaa
 NUM_51kuusidekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusidekiljardia	sidekiljardia
@@ -1119,10 +1119,10 @@ NUM_51kuusikvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51kuusikvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusikvadriljoonaa	sikvadriljoonaa
 NUM_51kuusikvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusikvintiljardia	sikvintiljardia
 NUM_51kuusikvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusikvintiljoonaa	sikvintiljoonaa
-NUM_51kuusikymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusikymmentä	sikymmentä
+NUM_51kuusikymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuusikymmentä	sikymmentä
 NUM_51kuusimiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusimiljardia	similjardia
 NUM_51kuusimiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusimiljoonaa	similjoonaa
-NUM_51kuusineljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusineljättä	sineljättä
+NUM_51kuusineljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuusineljättä	sineljättä
 NUM_51kuusinoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusinoniljardia	sinoniljardia
 NUM_51kuusinoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusinoniljoonaa	sinoniljoonaa
 NUM_51kuusioktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusioktiljardia	sioktiljardia
@@ -1130,7 +1130,7 @@ NUM_51kuusioktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51kuusipiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusipiljardia	sipiljardia
 NUM_51kuusipiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusipiljoonaa	sipiljoonaa
 NUM_51kuusisataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusisataa	sisataa
-NUM_51kuusiseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusiseitsemättä	siseitsemättä
+NUM_51kuusiseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuusiseitsemättä	siseitsemättä
 NUM_51kuusisentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusisentiljardia	sisentiljardia
 NUM_51kuusisentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusisentiljoonaa	sisentiljoonaa
 NUM_51kuusiseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusiseptiljardia	siseptiljardia
@@ -1145,8 +1145,8 @@ NUM_51kuusitsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fals
 NUM_51kuusituhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusituhatta	situhatta
 NUM_51kuusiundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusiundekiljardia	siundekiljardia
 NUM_51kuusiundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusiundekiljoonaa	siundekiljoonaa
-NUM_51kuusiviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusiviidettä	siviidettä
-NUM_51kuusiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	kuusiyhdeksättä	siyhdeksättä
+NUM_51kuusiviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuusiviidettä	siviidettä
+NUM_51kuusiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	kuusiyhdeksättä	siyhdeksättä
 NUM_51neljäbiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäbiljardia	äbiljardia
 NUM_51neljäbiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäbiljoonaa	äbiljoonaa
 NUM_51neljädekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljädekiljardia	ädekiljardia
@@ -1162,10 +1162,10 @@ NUM_51neljäkvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51neljäkvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäkvadriljoonaa	äkvadriljoonaa
 NUM_51neljäkvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäkvintiljardia	äkvintiljardia
 NUM_51neljäkvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäkvintiljoonaa	äkvintiljoonaa
-NUM_51neljäkymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäkymmentä	äkymmentä
+NUM_51neljäkymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäkymmentä	äkymmentä
 NUM_51neljämiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljämiljardia	ämiljardia
 NUM_51neljämiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljämiljoonaa	ämiljoonaa
-NUM_51neljäneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäneljättä	äneljättä
+NUM_51neljäneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäneljättä	äneljättä
 NUM_51neljänoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljänoniljardia	änoniljardia
 NUM_51neljänoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljänoniljoonaa	änoniljoonaa
 NUM_51neljäoktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäoktiljardia	äoktiljardia
@@ -1179,7 +1179,7 @@ NUM_51neljäsdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51neljäsdekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsdekiljoonas	sdekiljoonas
 NUM_51neljäsduodekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsduodekiljardis	sduodekiljardis
 NUM_51neljäsduodekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsduodekiljoonas	sduodekiljoonas
-NUM_51neljäseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäseitsemättä	seitsemättä
+NUM_51neljäseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäseitsemättä	seitsemättä
 NUM_51neljäsentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsentiljardia	sentiljardia
 NUM_51neljäsentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsentiljoonaa	sentiljoonaa
 NUM_51neljäseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäseptiljardia	septiljardia
@@ -1193,10 +1193,10 @@ NUM_51neljäskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51neljäskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäskvadriljoonas	skvadriljoonas
 NUM_51neljäskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäskvintiljardis	skvintiljardis
 NUM_51neljäskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäskvintiljoonas	skvintiljoonas
-NUM_51neljäskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäskymmenes	skymmenes
+NUM_51neljäskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäskymmenes	skymmenes
 NUM_51neljäsmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsmiljardis	smiljardis
 NUM_51neljäsmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsmiljoonas	smiljoonas
-NUM_51neljäsneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsneljättä	sneljättä
+NUM_51neljäsneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäsneljättä	sneljättä
 NUM_51neljäsnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsnoniljardis	snoniljardis
 NUM_51neljäsnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsnoniljoonas	snoniljoonas
 NUM_51neljäsoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsoktiljardis	soktiljardis
@@ -1204,7 +1204,7 @@ NUM_51neljäsoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51neljäspiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäspiljardis	spiljardis
 NUM_51neljäspiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäspiljoonas	spiljoonas
 NUM_51neljässadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljässadas	ssadas
-NUM_51neljässeitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljässeitsemättä	sseitsemättä
+NUM_51neljässeitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljässeitsemättä	sseitsemättä
 NUM_51neljässentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljässentiljardis	ssentiljardis
 NUM_51neljässentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljässentiljoonas	ssentiljoonas
 NUM_51neljässeptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljässeptiljardis	sseptiljardis
@@ -1219,8 +1219,8 @@ NUM_51neljästsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fa
 NUM_51neljästuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljästuhannes	stuhannes
 NUM_51neljäsundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsundekiljardis	sundekiljardis
 NUM_51neljäsundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsundekiljoonas	sundekiljoonas
-NUM_51neljäsviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsviidettä	sviidettä
-NUM_51neljäsyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäsyhdeksättä	syhdeksättä
+NUM_51neljäsviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäsviidettä	sviidettä
+NUM_51neljäsyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäsyhdeksättä	syhdeksättä
 NUM_51neljätoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljätoista	ätoista
 NUM_51neljätredekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljätredekiljardia	ätredekiljardia
 NUM_51neljätredekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljätredekiljoonaa	ätredekiljoonaa
@@ -1231,8 +1231,8 @@ NUM_51neljätsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51neljätuhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljätuhatta	ätuhatta
 NUM_51neljäundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäundekiljardia	äundekiljardia
 NUM_51neljäundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäundekiljoonaa	äundekiljoonaa
-NUM_51neljäviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäviidettä	äviidettä
-NUM_51neljäyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	neljäyhdeksättä	äyhdeksättä
+NUM_51neljäviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäviidettä	äviidettä
+NUM_51neljäyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	neljäyhdeksättä	äyhdeksättä
 NUM_51puolitoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	puolitoista	itoista
 NUM_51seitsemänbiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänbiljardia	änbiljardia
 NUM_51seitsemänbiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänbiljoonaa	änbiljoonaa
@@ -1249,10 +1249,10 @@ NUM_51seitsemänkvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fa
 NUM_51seitsemänkvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänkvadriljoonaa	änkvadriljoonaa
 NUM_51seitsemänkvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänkvintiljardia	änkvintiljardia
 NUM_51seitsemänkvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänkvintiljoonaa	änkvintiljoonaa
-NUM_51seitsemänkymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänkymmentä	änkymmentä
+NUM_51seitsemänkymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemänkymmentä	änkymmentä
 NUM_51seitsemänmiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänmiljardia	änmiljardia
 NUM_51seitsemänmiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänmiljoonaa	änmiljoonaa
-NUM_51seitsemänneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänneljättä	änneljättä
+NUM_51seitsemänneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemänneljättä	änneljättä
 NUM_51seitsemännoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemännoniljardia	ännoniljardia
 NUM_51seitsemännoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemännoniljoonaa	ännoniljoonaa
 NUM_51seitsemänoktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänoktiljardia	änoktiljardia
@@ -1260,7 +1260,7 @@ NUM_51seitsemänoktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fals
 NUM_51seitsemänpiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänpiljardia	änpiljardia
 NUM_51seitsemänpiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänpiljoonaa	änpiljoonaa
 NUM_51seitsemänsataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänsataa	änsataa
-NUM_51seitsemänseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänseitsemättä	änseitsemättä
+NUM_51seitsemänseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemänseitsemättä	änseitsemättä
 NUM_51seitsemänsentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänsentiljardia	änsentiljardia
 NUM_51seitsemänsentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänsentiljoonaa	änsentiljoonaa
 NUM_51seitsemänseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänseptiljardia	änseptiljardia
@@ -1275,8 +1275,8 @@ NUM_51seitsemäntsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51seitsemäntuhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäntuhatta	äntuhatta
 NUM_51seitsemänundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänundekiljardia	änundekiljardia
 NUM_51seitsemänundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänundekiljoonaa	änundekiljoonaa
-NUM_51seitsemänviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänviidettä	änviidettä
-NUM_51seitsemänyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemänyhdeksättä	änyhdeksättä
+NUM_51seitsemänviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemänviidettä	änviidettä
+NUM_51seitsemänyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemänyhdeksättä	änyhdeksättä
 NUM_51seitsemäsbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsbiljardis	sbiljardis
 NUM_51seitsemäsbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsbiljoonas	sbiljoonas
 NUM_51seitsemäsdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsdekiljardis	sdekiljardis
@@ -1292,10 +1292,10 @@ NUM_51seitsemäskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fa
 NUM_51seitsemäskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäskvadriljoonas	skvadriljoonas
 NUM_51seitsemäskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäskvintiljardis	skvintiljardis
 NUM_51seitsemäskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäskvintiljoonas	skvintiljoonas
-NUM_51seitsemäskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäskymmenes	skymmenes
+NUM_51seitsemäskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemäskymmenes	skymmenes
 NUM_51seitsemäsmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsmiljardis	smiljardis
 NUM_51seitsemäsmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsmiljoonas	smiljoonas
-NUM_51seitsemäsneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsneljästtä	sneljästtä
+NUM_51seitsemäsneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemäsneljättä	sneljättä
 NUM_51seitsemäsnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsnoniljardis	snoniljardis
 NUM_51seitsemäsnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsnoniljoonas	snoniljoonas
 NUM_51seitsemäsoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsoktiljardis	soktiljardis
@@ -1303,7 +1303,7 @@ NUM_51seitsemäsoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fals
 NUM_51seitsemäspiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäspiljardis	spiljardis
 NUM_51seitsemäspiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäspiljoonas	spiljoonas
 NUM_51seitsemässadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemässadas	ssadas
-NUM_51seitsemässeitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemässeitsemättä	sseitsemättä
+NUM_51seitsemässeitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemässeitsemättä	sseitsemättä
 NUM_51seitsemässentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemässentiljardis	ssentiljardis
 NUM_51seitsemässentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemässentiljoonas	ssentiljoonas
 NUM_51seitsemässeptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemässeptiljardis	sseptiljardis
@@ -1318,8 +1318,8 @@ NUM_51seitsemästsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51seitsemästuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemästuhannes	stuhannes
 NUM_51seitsemäsundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsundekiljardis	sundekiljardis
 NUM_51seitsemäsundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsundekiljoonas	sundekiljoonas
-NUM_51seitsemäsviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsviidettä	sviidettä
-NUM_51seitsemäsyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	seitsemäsyhdeksättä	syhdeksättä
+NUM_51seitsemäsviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemäsviidettä	sviidettä
+NUM_51seitsemäsyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	seitsemäsyhdeksättä	syhdeksättä
 NUM_51viidesbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesbiljardis	sbiljardis
 NUM_51viidesbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesbiljoonas	sbiljoonas
 NUM_51viidesdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesdekiljardis	sdekiljardis
@@ -1335,10 +1335,10 @@ NUM_51viideskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51viideskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viideskvadriljoonas	skvadriljoonas
 NUM_51viideskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viideskvintiljardis	skvintiljardis
 NUM_51viideskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viideskvintiljoonas	skvintiljoonas
-NUM_51viideskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viideskymmenes	skymmenes
+NUM_51viideskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viideskymmenes	skymmenes
 NUM_51viidesmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesmiljardis	smiljardis
 NUM_51viidesmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesmiljoonas	smiljoonas
-NUM_51viidesneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesneljästtä	sneljästtä
+NUM_51viidesneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viidesneljättä	sneljättä
 NUM_51viidesnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesnoniljardis	snoniljardis
 NUM_51viidesnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesnoniljoonas	snoniljoonas
 NUM_51viidesoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesoktiljardis	soktiljardis
@@ -1346,7 +1346,7 @@ NUM_51viidesoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fa
 NUM_51viidespiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidespiljardis	spiljardis
 NUM_51viidespiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidespiljoonas	spiljoonas
 NUM_51viidessadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidessadas	ssadas
-NUM_51viidesseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesseitsemättä	sseitsemättä
+NUM_51viidesseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viidesseitsemättä	sseitsemättä
 NUM_51viidessentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidessentiljardis	ssentiljardis
 NUM_51viidessentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidessentiljoonas	ssentiljoonas
 NUM_51viidesseptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesseptiljardis	sseptiljardis
@@ -1361,8 +1361,8 @@ NUM_51viidestsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51viidestuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidestuhannes	stuhannes
 NUM_51viidesundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesundekiljardis	sundekiljardis
 NUM_51viidesundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesundekiljoonas	sundekiljoonas
-NUM_51viidesviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesviidettä	sviidettä
-NUM_51viidesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viidesyhdeksättä	syhdeksättä
+NUM_51viidesviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viidesviidettä	sviidettä
+NUM_51viidesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viidesyhdeksättä	syhdeksättä
 NUM_51viisibiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisibiljardia	sibiljardia
 NUM_51viisibiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisibiljoonaa	sibiljoonaa
 NUM_51viisidekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisidekiljardia	sidekiljardia
@@ -1378,10 +1378,10 @@ NUM_51viisikvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	F
 NUM_51viisikvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisikvadriljoonaa	sikvadriljoonaa
 NUM_51viisikvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisikvintiljardia	sikvintiljardia
 NUM_51viisikvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisikvintiljoonaa	sikvintiljoonaa
-NUM_51viisikymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisikymmentä	sikymmentä
+NUM_51viisikymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viisikymmentä	sikymmentä
 NUM_51viisimiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisimiljardia	similjardia
 NUM_51viisimiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisimiljoonaa	similjoonaa
-NUM_51viisineljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisineljättä	sineljättä
+NUM_51viisineljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viisineljättä	sineljättä
 NUM_51viisinoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisinoniljardia	sinoniljardia
 NUM_51viisinoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisinoniljoonaa	sinoniljoonaa
 NUM_51viisioktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisioktiljardia	sioktiljardia
@@ -1389,7 +1389,7 @@ NUM_51viisioktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fal
 NUM_51viisipiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisipiljardia	sipiljardia
 NUM_51viisipiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisipiljoonaa	sipiljoonaa
 NUM_51viisisataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisisataa	sisataa
-NUM_51viisiseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisiseitsemättä	siseitsemättä
+NUM_51viisiseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viisiseitsemättä	siseitsemättä
 NUM_51viisisentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisisentiljardia	sisentiljardia
 NUM_51viisisentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisisentiljoonaa	sisentiljoonaa
 NUM_51viisiseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisiseptiljardia	siseptiljardia
@@ -1404,8 +1404,8 @@ NUM_51viisitsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	Fals
 NUM_51viisituhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisituhatta	situhatta
 NUM_51viisiundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisiundekiljardia	siundekiljardia
 NUM_51viisiundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisiundekiljoonaa	siundekiljoonaa
-NUM_51viisiviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisiviidettä	siviidettä
-NUM_51viisiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	viisiyhdeksättä	siyhdeksättä
+NUM_51viisiviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viisiviidettä	siviidettä
+NUM_51viisiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	viisiyhdeksättä	siyhdeksättä
 NUM_51yhdeksänbiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänbiljardia	änbiljardia
 NUM_51yhdeksänbiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänbiljoonaa	änbiljoonaa
 NUM_51yhdeksändekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksändekiljardia	ändekiljardia
@@ -1421,10 +1421,10 @@ NUM_51yhdeksänkvadriljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fal
 NUM_51yhdeksänkvadriljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänkvadriljoonaa	änkvadriljoonaa
 NUM_51yhdeksänkvintiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänkvintiljardia	änkvintiljardia
 NUM_51yhdeksänkvintiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänkvintiljoonaa	änkvintiljoonaa
-NUM_51yhdeksänkymmentä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänkymmentä	änkymmentä
+NUM_51yhdeksänkymmentä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksänkymmentä	änkymmentä
 NUM_51yhdeksänmiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänmiljardia	änmiljardia
 NUM_51yhdeksänmiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänmiljoonaa	änmiljoonaa
-NUM_51yhdeksänneljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänneljättä	änneljättä
+NUM_51yhdeksänneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksänneljättä	änneljättä
 NUM_51yhdeksännoniljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksännoniljardia	ännoniljardia
 NUM_51yhdeksännoniljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksännoniljoonaa	ännoniljoonaa
 NUM_51yhdeksänoktiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänoktiljardia	änoktiljardia
@@ -1432,7 +1432,7 @@ NUM_51yhdeksänoktiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51yhdeksänpiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänpiljardia	änpiljardia
 NUM_51yhdeksänpiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänpiljoonaa	änpiljoonaa
 NUM_51yhdeksänsataa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänsataa	änsataa
-NUM_51yhdeksänseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänseitsemättä	änseitsemättä
+NUM_51yhdeksänseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksänseitsemättä	änseitsemättä
 NUM_51yhdeksänsentiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänsentiljardia	änsentiljardia
 NUM_51yhdeksänsentiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänsentiljoonaa	änsentiljoonaa
 NUM_51yhdeksänseptiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänseptiljardia	änseptiljardia
@@ -1447,8 +1447,8 @@ NUM_51yhdeksäntsiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51yhdeksäntuhatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäntuhatta	äntuhatta
 NUM_51yhdeksänundekiljardia	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänundekiljardia	änundekiljardia
 NUM_51yhdeksänundekiljoonaa	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänundekiljoonaa	änundekiljoonaa
-NUM_51yhdeksänviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänviidettä	änviidettä
-NUM_51yhdeksänyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksänyhdeksättä	änyhdeksättä
+NUM_51yhdeksänviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksänviidettä	änviidettä
+NUM_51yhdeksänyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksänyhdeksättä	änyhdeksättä
 NUM_51yhdeksäsbiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsbiljardis	sbiljardis
 NUM_51yhdeksäsbiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsbiljoonas	sbiljoonas
 NUM_51yhdeksäsdekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsdekiljardis	sdekiljardis
@@ -1464,10 +1464,10 @@ NUM_51yhdeksäskvadriljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	Fal
 NUM_51yhdeksäskvadriljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäskvadriljoonas	skvadriljoonas
 NUM_51yhdeksäskvintiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäskvintiljardis	skvintiljardis
 NUM_51yhdeksäskvintiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäskvintiljoonas	skvintiljoonas
-NUM_51yhdeksäskymmenes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäskymmenes	skymmenes
+NUM_51yhdeksäskymmenes	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksäskymmenes	skymmenes
 NUM_51yhdeksäsmiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsmiljardis	smiljardis
 NUM_51yhdeksäsmiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsmiljoonas	smiljoonas
-NUM_51yhdeksäsneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsneljästtä	sneljästtä
+NUM_51yhdeksäsneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksäsneljättä	sneljättä
 NUM_51yhdeksäsnoniljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsnoniljardis	snoniljardis
 NUM_51yhdeksäsnoniljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsnoniljoonas	snoniljoonas
 NUM_51yhdeksäsoktiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsoktiljardis	soktiljardis
@@ -1475,7 +1475,7 @@ NUM_51yhdeksäsoktiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False
 NUM_51yhdeksäspiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäspiljardis	spiljardis
 NUM_51yhdeksäspiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäspiljoonas	spiljoonas
 NUM_51yhdeksässadas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksässadas	ssadas
-NUM_51yhdeksässeitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksässeitsemättä	sseitsemättä
+NUM_51yhdeksässeitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksässeitsemättä	sseitsemättä
 NUM_51yhdeksässentiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksässentiljardis	ssentiljardis
 NUM_51yhdeksässentiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksässentiljoonas	ssentiljoonas
 NUM_51yhdeksässeptiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksässeptiljardis	sseptiljardis
@@ -1490,24 +1490,24 @@ NUM_51yhdeksästsiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	
 NUM_51yhdeksästuhannes	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksästuhannes	stuhannes
 NUM_51yhdeksäsundekiljardis	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsundekiljardis	sundekiljardis
 NUM_51yhdeksäsundekiljoonas	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsundekiljoonas	sundekiljoonas
-NUM_51yhdeksäsviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsviidettä	sviidettä
-NUM_51yhdeksäsyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeksäsyhdeksättä	syhdeksättä
+NUM_51yhdeksäsviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksäsviidettä	sviidettä
+NUM_51yhdeksäsyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdeksäsyhdeksättä	syhdeksättä
 NUM_51yhdeskahdeksatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeskahdeksatta	skahdeksatta
 NUM_51yhdeskolmatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeskolmatta	skolmatta
 NUM_51yhdeskuudetta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdeskuudetta	skuudetta
-NUM_51yhdesneljästtä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdesneljästtä	sneljästtä
-NUM_51yhdesseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdesseitsemättä	sseitsemättä
+NUM_51yhdesneljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdesneljättä	sneljättä
+NUM_51yhdesseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdesseitsemättä	sseitsemättä
 NUM_51yhdestoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdestoista	stoista
-NUM_51yhdesviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdesviidettä	sviidettä
-NUM_51yhdesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yhdesyhdeksättä	syhdeksättä
+NUM_51yhdesviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdesviidettä	sviidettä
+NUM_51yhdesyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yhdesyhdeksättä	syhdeksättä
 NUM_51yksikahdeksatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksikahdeksatta	ksikahdeksatta
 NUM_51yksikolmatta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksikolmatta	ksikolmatta
 NUM_51yksikuudetta	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksikuudetta	ksikuudetta
-NUM_51yksineljättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksineljättä	ksineljättä
-NUM_51yksiseitsemättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksiseitsemättä	ksiseitsemättä
+NUM_51yksineljättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yksineljättä	ksineljättä
+NUM_51yksiseitsemättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yksiseitsemättä	ksiseitsemättä
 NUM_51yksitoista	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksitoista	ksitoista
-NUM_51yksiviidettä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksiviidettä	ksiviidettä
-NUM_51yksiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	back	None	None	False	False	yksiyhdeksättä	ksiyhdeksättä
+NUM_51yksiviidettä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yksiviidettä	ksiviidettä
+NUM_51yksiyhdeksättä	NUM	NUMERAL	51	None	False	weaken	front	None	None	False	False	yksiyhdeksättä	ksiyhdeksättä
 NUM_ENSIMMÄINEN	NUM	NUMERAL	38	None	False	strengthen	front	None	None	False	False	inen	nen
 NUM_KAHDEKSAN	NUM	NUMERAL	10	None	False	weaken	back	None	None	False	False	kahdeksan	an
 NUM_KAKSI	NUM	NUMERAL	31	None	False	weaken	back	None	None	False	False	kaksi	ksi
@@ -1519,7 +1519,7 @@ NUM_KUUTISEN	NUM	NUMERAL	99	None	False	False	back	None	None	False	False	isen
 NUM_KYMMEN	NUM	NUMERAL	32	None	False	strengthen	front	None	None	False	False	kymmen
 NUM_KYMMENEN	NUM	NUMERAL	32	None	False	strengthen	front	None	None	False	False	kymmenen	en
 NUM_KYMMENKUNTA	NUM	NUMERAL	10	J	False	weaken	back	a	None	False	False	kunta	a
-NUM_KYMMENTÄ	NUM	NUMERAL	99	None	False	False	front	None	None	False	False	.
+NUM_KYMMENTÄ	NUM	NUMERAL	99	None	False	False	both	None	None	False	False	.
 NUM_MILJARDI	NUM	NUMERAL	6	None	False	weaken	back	None	None	False	False	iljardi	i
 NUM_MILJOONA	NUM	NUMERAL	10	None	False	weaken	back	a	None	False	False	a	a
 NUM_NELJÄ	NUM	NUMERAL	10	None	False	weaken	front	ä	None	False	False	neljä	ä
@@ -1545,7 +1545,7 @@ PRON_JOKIN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	kin	kin
 PRON_JOKU	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	joku	ku
 PRON_JOMPIKUMPI	PRON	PRONOUN	101	None	False	weaken	back	None	None	False	False	jompikumpi	pikumpi
 PRON_KAIKKI	PRON	PRONOUN	7	A	False	weaken	back	None	None	False	False	kaikki	ki
-PRON_KOKO	PRON	PRONOUN	99	None	False	False	back	None	None	False	False	.
+PRON_KOKO	PRON	PRONOUN	99	None	False	False	both	None	None	False	False	.
 PRON_KUKA	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	kuka	uka
 PRON_KUKAAN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	kukaan	ukaan
 PRON_KUKAKIN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	kukakin	ukakin
@@ -1589,40 +1589,41 @@ PRON_YKSI	PRON	PRONOUN	31	None	False	weaken	front	None	None	False	False	yksi	ksi
 PROPN_51Iso-Britannia	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Iso-Britannia	-Britannia
 PROPN_51Mustameri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Mustameri	ameri
 PROPN_51Punainenmeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Punainenmeri	nenmeri
-PROPN_51Tyynimeri	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Tyynimeri	imeri
+PROPN_51Tyynimeri	PROPN	NOUN	51	None	False	weaken	front	None	None	False	False	Tyynimeri	imeri
 PROPN_51Uusi-Englanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Englanti	si-Englanti
 PROPN_51Uusi-Guinea	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Guinea	si-Guinea
 PROPN_51Uusi-Seelanti	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusi-Seelanti	si-Seelanti
 PROPN_51Uusikaupunki	PROPN	NOUN	51	None	False	weaken	back	None	None	False	False	Uusikaupunki	sikaupunki
 PROPN_51Uusimaa	PROPN	PROPN	51	None	False	weaken	back	None	None	False	False	Uusimaa	simaa
-PROPN_A.	PROPN	NOUN	99	None	False	False	back	None	None	False	False	\.
+PROPN_A.	PROPN	NOUN	99	None	False	False	both	None	None	False	False	\.
 PROPN_AAKKOSELLISUUS	PROPN	NOUN	40	None	False	strengthen	back	None	None	False	False	us	s
 PROPN_AAKKOSTAMINEN	PROPN	NOUN	38	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*nen	nen
 PROPN_AALLOT	PROPN	NOUN	1	I	obligatory	weaken	back	None	None	False	False	lot	lot
 PROPN_AARRE	PROPN	NOUN	48	K	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rre	re
-PROPN_ACRO_AA	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[Aa]
-PROPN_ACRO_DOLLARI	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-PROPN_ACRO_EE	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[BCDEGPTVWbcdegptvw]
-PROPN_ACRO_II	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[IJij]
-PROPN_ACRO_KAHDEKSAN	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	8
-PROPN_ACRO_KAKSI	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	2
-PROPN_ACRO_KOLME	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	3
-PROPN_ACRO_KUUSI	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	6
-PROPN_ACRO_LEHTI	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-PROPN_ACRO_METRI	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	.
-PROPN_ACRO_NELJÄ	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	4
-PROPN_ACRO_NOLLA	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	0
-PROPN_ACRO_OO	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[HKOÅhkoå]
-PROPN_ACRO_PUNTA	PROPN	ACRONYM	10	None	False	weaken	front	None	None	False	False	.
-PROPN_ACRO_SEITSEMÄN	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-PROPN_ACRO_UU	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[QUqu]
-PROPN_ACRO_VIISI	NOUN	ACRONYM	0	None	False	False	back	None	None	False	False	.
-PROPN_ACRO_YHDEKSÄN	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	9
-PROPN_ACRO_YKSI	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	1
-PROPN_ACRO_YY	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[YÜyü]
-PROPN_ACRO_ZET	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[ZŽzž]
-PROPN_ACRO_ÄKS	PROPN	ACRONYM	0	None	False	False	back	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]
-PROPN_ACRO_ÖÖ	PROPN	ACRONYM	0	None	False	False	front	None	None	False	False	[Öö]
+PROPN_ACRO_AA	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[Aa]
+PROPN_ACRO_DOLLARI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+PROPN_ACRO_EE	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[BCDEGPTVWbcdegptvw]
+PROPN_ACRO_II	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[IJij]
+PROPN_HKI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	ki	ki
+PROPN_ACRO_KAHDEKSAN	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	8
+PROPN_ACRO_KAKSI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	2
+PROPN_ACRO_KOLME	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	3
+PROPN_ACRO_KUUSI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	6
+PROPN_ACRO_LEHTI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+PROPN_ACRO_METRI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+PROPN_ACRO_NELJÄ	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	4
+PROPN_ACRO_NOLLA	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	0
+PROPN_ACRO_OO	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[HKOÅhkoå]
+PROPN_ACRO_PUNTA	PROPN	ACRONYM	10	None	False	weaken	both	None	None	False	False	.
+PROPN_ACRO_SEITSEMÄN	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+PROPN_ACRO_UU	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[QUqu]
+PROPN_ACRO_VIISI	NOUN	ACRONYM	0	None	False	False	both	None	None	False	False	.
+PROPN_ACRO_YHDEKSÄN	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	9
+PROPN_ACRO_YKSI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	1
+PROPN_ACRO_YY	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[YÜyü]
+PROPN_ACRO_ZET	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[ZŽzž]
+PROPN_ACRO_ÄKS	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]
+PROPN_ACRO_ÖÖ	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[Öö]
 PROPN_AHDET	PROPN	NOUN	44	F	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*det	det
 PROPN_AIVOKUOLLUT	PROPN	NOUN	47	None	False	strengthen	back	u	None	False	False	ut	ut
 PROPN_AIVOT	PROPN	NOUN	1	None	obligatory	weaken	back	None	None	False	False	ot	t
@@ -1657,8 +1658,8 @@ PROPN_BROOKLYN	PROPN	NOUN	5	None	False	weaken	front	None	None	False	False	.
 PROPN_BÉBÉ	PROPN	NOUN	21	None	False	weaken	front	e	None	False	False	.
 PROPN_CAMUS	PROPN	NOUN	22	None	False	weaken	back	None	None	False	False	.
 PROPN_CHACHACHA	PROPN	NOUN	21	None	False	weaken	back	a	None	False	False	.
-PROPN_COMPOUND	PROPN	NOUN	99	None	False	False	front	None	None	False	False	.	-
-PROPN_COWBOY	PROPN	NOUN	21	None	False	weaken	back	i	None	False	False	.
+PROPN_COMPOUND	PROPN	NOUN	99	None	False	False	both	None	None	False	False	.	-
+PROPN_COWBOY	PROPN	NOUN	21	None	False	weaken	both	i	None	False	False	.
 PROPN_DIMITRIS	PROPN	NOUN	41	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s	s
 PROPN_EKKE	PROPN	NOUN	8	A	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ke	ke
 PROPN_ELIN	PROPN	NOUN	33	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*n	n
@@ -1671,7 +1672,7 @@ PROPN_FARMARIT	PROPN	NOUN	6	None	obligatory	weaken	back	None	None	False	False	[A
 PROPN_FIFA	PROPN	NOUN	10	None	False	weaken	back	None	None	False	False	.
 PROPN_FONDUE	PROPN	NOUN	21	None	False	weaken	front	y	None	False	False	.
 PROPN_FÄNRIKIT	PROPN	NOUN	5	A	obligatory	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*it	it
-PROPN_GAY	PROPN	NOUN	21	None	False	weaken	back	None	None	False	False	.
+PROPN_GAY	PROPN	NOUN	21	None	False	weaken	both	None	None	False	False	.
 PROPN_HAAKSI	PROPN	NOUN	31	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*ksi	ksi
 PROPN_HAI	PROPN	NOUN	18	None	False	weaken	back	i	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i	i
 PROPN_HAIT	PROPN	NOUN	18	None	obligatory	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*it	it
@@ -1709,7 +1710,7 @@ PROPN_HÖYHENET	PROPN	NOUN	32	None	obligatory	strengthen	front	None	None	False	F
 PROPN_INGET	NOUN	NOUN	44	G	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nget	get
 PROPN_ITÄMAAT	PROPN	NOUN	18	None	obligatory	weaken	back	None	None	False	False	aat	at
 PROPN_JEPPE	PROPN	NOUN	8	B	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*ppe	pe
-PROPN_JOCKEY	PROPN	NOUN	21	None	False	weaken	back	i	None	False	False	.
+PROPN_JOCKEY	PROPN	NOUN	21	None	False	weaken	both	i	None	False	False	.
 PROPN_JOUKOT	PROPN	NOUN	1	A	obligatory	weaken	back	None	None	False	False	ot	ot
 PROPN_JOUTSEN	PROPN	NOUN	32	None	False	strengthen	back	None	None	False	False	.
 PROPN_JUHLAT	PROPN	NOUN	10	None	obligatory	weaken	back	None	None	False	False	at	at
@@ -1859,16 +1860,16 @@ PROPN_MANNER	PROPN	NOUN	49	J	False	strengthen	back	None	None	False	False	[AOUŌ�
 PROPN_MARKKINAT	PROPN	NOUN	12	None	obligatory	weaken	back	None	None	False	False	at	at
 PROPN_MATEE	PROPN	NOUN	18	None	False	weaken	back	e	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e	e
 PROPN_MATKUET	PROPN	NOUN	43	None	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*et	et
-PROPN_MC	PROPN	NOUN	99	None	False	False	back	None	None	False	False	.
-PROPN_MERI	PROPN	NOUN	1024	None	False	weaken	back	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
+PROPN_MC	PROPN	NOUN	99	None	False	False	both	None	None	False	False	.
+PROPN_MERI	PROPN	NOUN	1024	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*i	i
 PROPN_MERTU	PROPN	NOUN	1	K	False	weaken	back	None	None	False	False	rtu	tu
 PROPN_METTE	PROPN	NOUN	8	C	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*tte	te
-PROPN_MIEHET	PROPN	NOUN	42	None	obligatory	strengthen	back	None	None	False	False	[Mm]iehet	het
+PROPN_MIEHET	PROPN	NOUN	42	None	obligatory	strengthen	front	None	None	False	False	[Mm]iehet	het
 PROPN_MIELENGE	PROPN	NOUN	48	G	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*nge	ge
 PROPN_MIELLE	PROPN	NOUN	48	I	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*lle	le
-PROPN_MIES	PROPN	NOUN	42	None	False	strengthen	back	None	None	False	False	ies	s
+PROPN_MIES	PROPN	NOUN	42	None	False	strengthen	front	None	None	False	False	ies	s
 PROPN_MITTA	PROPN	NOUN	9	C	False	weaken	back	a	None	False	False	tta	ta
-PROPN_MONSIEUR	PROPN	NOUN	22	None	False	weaken	front	ö	None	False	False	.
+PROPN_MONSIEUR	PROPN	NOUN	22	None	False	weaken	both	ö	None	False	False	.
 PROPN_MULTA	PROPN	NOUN	10	I	False	weaken	back	a	None	False	False	lta	ta
 PROPN_MURTEET	PROPN	NOUN	48	K	obligatory	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*rteet	teet
 PROPN_MYRKKY	PROPN	NOUN	1	A	False	weaken	front	None	None	False	False	kky	ky
@@ -2097,10 +2098,10 @@ PROPN_ULAPPA	PROPN	NOUN	14	B	False	weaken	back	a	None	False	False	ppa	pa
 PROPN_VAADIN	PROPN	NOUN	33	F	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*din	din
 PROPN_VAAKA	PROPN	NOUN	9	D	False	weaken	back	a	None	False	False	ka	ka
 PROPN_VAANII	PROPN	NOUN	17	None	False	weaken	back	i	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*i	i
-PROPN_VAASAN	PROPN	NOUN	99	None	False	False	back	None	None	False	False	.
+PROPN_VAASAN	PROPN	NOUN	99	None	False	False	both	None	None	False	False	.
 PROPN_VAINAA	PROPN	NOUN	17	None	False	weaken	back	a	None	False	False	aa	a
 PROPN_VAKUUTUS	PROPN	NOUN	39	None	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*s	s
-PROPN_LEVIS	PROPN	NOUN	5|39	None	False	strengthen	back	None	None	False	False	s	s
+PROPN_LEVIS	PROPN	NOUN	5|39	None	False	strengthen	both	None	None	False	False	s	s
 PROPN_ELIAS	PROPN	NOUN	39|41	None	False	strengthen	back	None	None	False	False	as	s
 PROPN_FRANCIS	PROPN	NOUN	5|39	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*s	s
 PROPN_VALJAAT	PROPN	NOUN	41	None	obligatory	strengthen	back	None	None	False	False	aat	at
@@ -2131,7 +2132,7 @@ PROPN_VIRSI	PROPN	NOUN	28	K	False	weaken	front	None	None	False	False	[ÄÖYIEĒ�
 PROPN_VODĂ	PROPN	NOUN	10	None	False	weaken	back	None	None	False	False	ă	ă
 PROPN_VOIMA	PROPN	NOUN	10	None	False	weaken	back	a	None	False	False	a	a
 PROPN_YLVA	PROPN	NOUN	9|10	None	False	weaken	back	a	None	False	False	a	a
-PROPN_VON	PROPN	NOUN	99	None	False	False	back	None	None	False	False	.
+PROPN_VON	PROPN	NOUN	99	None	False	False	both	None	None	False	False	.
 PROPN_VUO	PROPN	NOUN	19	None	False	weaken	back	None	None	False	False	uo	uo
 PROPN_VUODET	PROPN	NOUN	27	None	obligatory	weaken	back	None	None	False	False	det	det
 PROPN_VUOLLE	PROPN	NOUN	48	I	False	strengthen	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*lle	le
@@ -2149,29 +2150,29 @@ PROPN_YÖKKÖ	PROPN	NOUN	1	A	False	weaken	front	None	None	False	False	kkö	kö
 PROPN_ZEN	PROPN	NOUN	5	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*
 PROPN_ELIS	PROPN	NOUN	5|39	None	False	strengthen	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*s	s
 PROPN_CEP	PROPN	ACRONYM	5	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvw]
-PROPN_CERN	PROPN	ACRONYM	5	None	False	False	back	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]
+PROPN_CERN	PROPN	ACRONYM	5	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]
 PROPN_ZOMBIE	PROPN	NOUN	3	None	False	weaken	back	None	None	False	False	[AOUŌÓÅaouåôąáăâāóōúūû][^äöy]*e
 PROPN_MARIE	PROPN	NOUN	3|21	None	False	weaken	back	i	None	False	False	.
 PROPN_ÄYRÄS	PROPN	NOUN	41	None	False	strengthen	front	None	None	False	False	äs	s
-PUNCT_NONSTD_DASH_LOOP	PUNCT	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
-PUNCT_NONSTD_EXCL_LOOP	PUNCT	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
-PUNCT_PILKKU	PUNCT	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
-PUNCT_PISTE	PUNCT	PUNCTUATION	99	None	False	None	front	None	None	True	True	.
-SCONJ_ETTÄ	SCONJ	PARTICLE	99	None	False	False	front	None	None	False	False	.
-SYM_$	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
-SYM_,	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
-SYM_.	SYM	PUNCTUATION	99	None	False	None	front	None	None	True	True	.
-SYM_CELSIUS	SYM	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
-SYM_GRAMMA	SYM	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
-SYM_JOULE	SYM	ACRONYM	0	None	False	weaken	back	None	None	False	False	.
-SYM_METRI	SYM	ACRONYM	0	None	False	False	front	None	None	False	False	.
-SYM_TUOTE	SYM	ACRONYM	0	None	False	strengthen	back	None	None	False	False	.
-SYM_WEBER	SYM	ACRONYM	0	None	False	weaken	front	None	None	False	False	.
-SYM_¢	SYM	ACRONYM	99	None	False	weaken	front	None	None	False	False	.
-SYM_£	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
-SYM_§	SYM	PUNCTUATION	99	None	False	None	front	None	None	True	True	.
-SYM_€	SYM	ACRONYM	0	None	False	False	back	None	None	False	False	.
-SYM_Ω	SYM	PUNCTUATION	99	None	False	None	back	None	None	True	True	.
+PUNCT_NONSTD_DASH_LOOP	PUNCT	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+PUNCT_NONSTD_EXCL_LOOP	PUNCT	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+PUNCT_PILKKU	PUNCT	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+PUNCT_PISTE	PUNCT	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+SCONJ_ETTÄ	SCONJ	PARTICLE	99	None	False	False	both	None	None	False	False	.
+SYM_$	SYM	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+SYM_,	SYM	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+SYM_.	SYM	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+SYM_CELSIUS	SYM	ACRONYM	0	None	False	strengthen	both	None	None	False	False	.
+SYM_GRAMMA	SYM	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
+SYM_JOULE	SYM	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
+SYM_METRI	SYM	ACRONYM	0	None	False	False	both	None	None	False	False	.
+SYM_TUOTE	SYM	ACRONYM	0	None	False	strengthen	both	None	None	False	False	.
+SYM_WEBER	SYM	ACRONYM	0	None	False	weaken	both	None	None	False	False	.
+SYM_¢	SYM	ACRONYM	99	None	False	weaken	both	None	None	False	False	.
+SYM_£	SYM	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+SYM_§	SYM	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
+SYM_€	SYM	ACRONYM	0	None	False	False	both	None	None	False	False	.
+SYM_Ω	SYM	PUNCTUATION	99	None	False	None	both	None	None	True	True	.
 VERB_AALLOTA	VERB	VERB	75	I	False	strengthen	back	None	None	False	False	llota	lota
 VERB_AHNEHTIA	VERB	VERB	61	F	False	weaken	back	None	None	False	False	tia	tia
 VERB_AMPUA	VERB	VERB	52	H	False	weaken	back	None	None	False	False	pua	pua
@@ -2400,11 +2401,11 @@ VERB_ÄLLISTYÄ	VERB	VERB	52	None	False	weaken	front	None	None	False	False	yä	�
 VERB_ÄNGETÄ	VERB	VERB	74	G	False	strengthen	front	None	None	False	False	ngetä	getä
 VERB_ÄRISTÄ	VERB	VERB	66	None	False	strengthen	front	None	None	False	False	stä	tä
 VERB_ÖYKKÄRÖIDÄ	VERB	VERB	62	None	False	strengthen	front	None	None	False	False	öidä	idä
-X_51eikä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False	eikä	ikä
-X_51ettei	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False	ei	ei
-X_51äläkä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	back	None	None	False	False	äläkä	äkä
-X_FORGN_DE	PROPN	X	99	None	False	weaken	back	None	None	False	False	.
-X_FORGN_EN	PROPN	X	99	None	False	weaken	back	None	None	False	False	.
-X_FORGN_SV	PROPN	X	99	None	False	weaken	back	None	None	False	False	.
-X_IGNORE	X	X	99	None	False	weaken	back	None	None	False	False	.
-X_SUFFIX_GOESWITH	X	X	99	None	False	weaken	back	None	None	False	False	.
+X_51eikä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	both	None	None	False	False	eikä	ikä
+X_51ettei	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	both	None	None	False	False	ei	ei
+X_51äläkä	CCONJ|VERB	CONJUNCTIONVERB	51	None	False	weaken	both	None	None	False	False	äläkä	äkä
+X_FORGN_DE	PROPN	X	99	None	False	weaken	both	None	None	False	False	.
+X_FORGN_EN	PROPN	X	99	None	False	weaken	both	None	None	False	False	.
+X_FORGN_SV	PROPN	X	99	None	False	weaken	both	None	None	False	False	.
+X_IGNORE	X	X	99	None	False	weaken	both	None	None	False	False	.
+X_SUFFIX_GOESWITH	X	X	99	None	False	weaken	both	None	None	False	False	.

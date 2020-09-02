@@ -865,7 +865,7 @@ NUM_51kahdeksaskvintiljoonas	Optimisation hack for exceptional compound ’kahde
 NUM_51kahdeksaskymmenes	Optimisation hack for exceptional compound ’kahdeksaskymmenes’
 NUM_51kahdeksasmiljardis	Optimisation hack for exceptional compound ’kahdeksasmiljardis’
 NUM_51kahdeksasmiljoonas	Optimisation hack for exceptional compound ’kahdeksasmiljoonas’
-NUM_51kahdeksasneljästtä	Optimisation hack for exceptional compound ’kahdeksasneljästtä’
+NUM_51kahdeksasneljättä	Optimisation hack for exceptional compound ’kahdeksasneljättä’
 NUM_51kahdeksasnoniljardis	Optimisation hack for exceptional compound ’kahdeksasnoniljardis’
 NUM_51kahdeksasnoniljoonas	Optimisation hack for exceptional compound ’kahdeksasnoniljoonas’
 NUM_51kahdeksasoktiljardis	Optimisation hack for exceptional compound ’kahdeksasoktiljardis’
@@ -908,7 +908,7 @@ NUM_51kahdeskvintiljoonas	Optimisation hack for exceptional compound ’kahdeskv
 NUM_51kahdeskymmenes	Optimisation hack for exceptional compound ’kahdeskymmenes’
 NUM_51kahdesmiljardis	Optimisation hack for exceptional compound ’kahdesmiljardis’
 NUM_51kahdesmiljoonas	Optimisation hack for exceptional compound ’kahdesmiljoonas’
-NUM_51kahdesneljästtä	Optimisation hack for exceptional compound ’kahdesneljästtä’
+NUM_51kahdesneljättä	Optimisation hack for exceptional compound ’kahdesneljättä’
 NUM_51kahdesnoniljardis	Optimisation hack for exceptional compound ’kahdesnoniljardis’
 NUM_51kahdesnoniljoonas	Optimisation hack for exceptional compound ’kahdesnoniljoonas’
 NUM_51kahdesoktiljardis	Optimisation hack for exceptional compound ’kahdesoktiljardis’
@@ -1080,7 +1080,7 @@ NUM_51kuudeskvintiljoonas	Optimisation hack for exceptional compound ’kuudeskv
 NUM_51kuudeskymmenes	Optimisation hack for exceptional compound ’kuudeskymmenes’
 NUM_51kuudesmiljardis	Optimisation hack for exceptional compound ’kuudesmiljardis’
 NUM_51kuudesmiljoonas	Optimisation hack for exceptional compound ’kuudesmiljoonas’
-NUM_51kuudesneljästtä	Optimisation hack for exceptional compound ’kuudesneljästtä’
+NUM_51kuudesneljättä	Optimisation hack for exceptional compound ’kuudesneljättä’
 NUM_51kuudesnoniljardis	Optimisation hack for exceptional compound ’kuudesnoniljardis’
 NUM_51kuudesnoniljoonas	Optimisation hack for exceptional compound ’kuudesnoniljoonas’
 NUM_51kuudesoktiljardis	Optimisation hack for exceptional compound ’kuudesoktiljardis’
@@ -1296,7 +1296,7 @@ NUM_51seitsemäskvintiljoonas	Optimisation hack for exceptional compound ’seit
 NUM_51seitsemäskymmenes	Optimisation hack for exceptional compound ’seitsemäskymmenes’
 NUM_51seitsemäsmiljardis	Optimisation hack for exceptional compound ’seitsemäsmiljardis’
 NUM_51seitsemäsmiljoonas	Optimisation hack for exceptional compound ’seitsemäsmiljoonas’
-NUM_51seitsemäsneljästtä	Optimisation hack for exceptional compound ’seitsemäsneljästtä’
+NUM_51seitsemäsneljättä	Optimisation hack for exceptional compound ’seitsemäsneljättä’
 NUM_51seitsemäsnoniljardis	Optimisation hack for exceptional compound ’seitsemäsnoniljardis’
 NUM_51seitsemäsnoniljoonas	Optimisation hack for exceptional compound ’seitsemäsnoniljoonas’
 NUM_51seitsemäsoktiljardis	Optimisation hack for exceptional compound ’seitsemäsoktiljardis’
@@ -1339,7 +1339,7 @@ NUM_51viideskvintiljoonas	Optimisation hack for exceptional compound ’viideskv
 NUM_51viideskymmenes	Optimisation hack for exceptional compound ’viideskymmenes’
 NUM_51viidesmiljardis	Optimisation hack for exceptional compound ’viidesmiljardis’
 NUM_51viidesmiljoonas	Optimisation hack for exceptional compound ’viidesmiljoonas’
-NUM_51viidesneljästtä	Optimisation hack for exceptional compound ’viidesneljästtä’
+NUM_51viidesneljättä	Optimisation hack for exceptional compound ’viidesneljättä’
 NUM_51viidesnoniljardis	Optimisation hack for exceptional compound ’viidesnoniljardis’
 NUM_51viidesnoniljoonas	Optimisation hack for exceptional compound ’viidesnoniljoonas’
 NUM_51viidesoktiljardis	Optimisation hack for exceptional compound ’viidesoktiljardis’
@@ -1468,7 +1468,7 @@ NUM_51yhdeksäskvintiljoonas	Optimisation hack for exceptional compound ’yhdek
 NUM_51yhdeksäskymmenes	Optimisation hack for exceptional compound ’yhdeksäskymmenes’
 NUM_51yhdeksäsmiljardis	Optimisation hack for exceptional compound ’yhdeksäsmiljardis’
 NUM_51yhdeksäsmiljoonas	Optimisation hack for exceptional compound ’yhdeksäsmiljoonas’
-NUM_51yhdeksäsneljästtä	Optimisation hack for exceptional compound ’yhdeksäsneljästtä’
+NUM_51yhdeksäsneljättä	Optimisation hack for exceptional compound ’yhdeksäsneljättä’
 NUM_51yhdeksäsnoniljardis	Optimisation hack for exceptional compound ’yhdeksäsnoniljardis’
 NUM_51yhdeksäsnoniljoonas	Optimisation hack for exceptional compound ’yhdeksäsnoniljoonas’
 NUM_51yhdeksäsoktiljardis	Optimisation hack for exceptional compound ’yhdeksäsoktiljardis’
@@ -1496,7 +1496,7 @@ NUM_51yhdeksäsyhdeksättä	Optimisation hack for exceptional compound ’yhdeks
 NUM_51yhdeskahdeksatta	Optimisation hack for exceptional compound ’yhdeskahdeksatta’
 NUM_51yhdeskolmatta	Optimisation hack for exceptional compound ’yhdeskolmatta’
 NUM_51yhdeskuudetta	Optimisation hack for exceptional compound ’yhdeskuudetta’
-NUM_51yhdesneljästtä	Optimisation hack for exceptional compound ’yhdesneljästtä’
+NUM_51yhdesneljättä	Optimisation hack for exceptional compound ’yhdesneljättä’
 NUM_51yhdesseitsemättä	Optimisation hack for exceptional compound ’yhdesseitsemättä’
 NUM_51yhdestoista	Optimisation hack for exceptional compound ’yhdestoista’
 NUM_51yhdesviidettä	Optimisation hack for exceptional compound ’yhdesviidettä’
@@ -1597,6 +1597,7 @@ PROPN_51Uusi-Seelanti	Optimisation hack for exceptional compound ’Uusi-Seelant
 PROPN_51Uusikaupunki	Optimisation hack for exceptional compound ’Uusikaupunki’
 PROPN_51Uusimaa	Optimisation hack for exceptional compound ’Uusimaa’
 PROPN_A.	Middle initials don't inflect or compound
+PROPN_HKI	Abbreviated Helsinki inflects like *Hki* : *Hgissä*
 PROPN_AAKKOSELLISUUS	s stem, s : de variations back harmony
 PROPN_AAKKOSTAMINEN	nen stem, nen : se variations back harmony
 PROPN_AALLOT	llot stem, llot : lto variations
