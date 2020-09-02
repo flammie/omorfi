@@ -10,7 +10,7 @@ script:
     - ./configure --enable-segmenter --enable-labeled-segments --enable-lemmatiser --enable-hyphenator --enable-ftb3 --with-java
     - make
     - make check
-    - cat test/test-suite.log
+    - cat src/test-suite.log test/test-suite.log
 notifications:
     irc:
         channels:
