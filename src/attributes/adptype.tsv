@@ -25,13 +25,13 @@ asemesta	ADP	postposition
 asti	ADP	postposition
 avuksi	ADP	postposition
 avulla	ADP	postposition
-edelle	ADP	both	
+edelle	ADP	preposition|postposition	
 edellä	ADP	postposition
 edessä	ADP	postposition
 edestä	ADP	postposition
 editse	ADP	postposition
 edustalla	ADP	postposition
-ennen	ADP	both
+ennen	ADP	preposition|postposition
 eteen	ADP	postposition
 eteläpuolitse	ADP	postposition
 etupuolitse	ADP	postposition
@@ -51,7 +51,7 @@ hyväksi	ADP	postposition
 hännille	ADP	postposition
 hännillä	ADP	postposition
 hänniltä	ADP	postposition
-ilman	ADP	both
+ilman	ADP	preposition|postposition
 itäpuolitse	ADP	postposition
 jaloissa	ADP	postposition
 jaloista	ADP	postposition
@@ -99,7 +99,7 @@ kohdalle	ADP	postposition
 kohdalta	ADP	postposition
 kohden	ADP	postposition
 kohtaan	ADP	postposition
-kohti	ADP	both
+kohti	ADP	preposition|postposition
 koskien	ADP	postposition
 kourissa	ADP	postposition
 kourista	ADP	postposition
