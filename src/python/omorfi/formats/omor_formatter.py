@@ -260,6 +260,7 @@ class OmorFormatter(Formatter):
         '[WORD_ID=',
         '[NEWPARA=',
         '[BLACKLIST=',
+        '[HOMONYM=',
         "[FOREIGN=FOREIGN]"
     }
 
@@ -657,6 +658,9 @@ class OmorFormatter(Formatter):
                 if "NEWPARA=" in v:
                     self.stuff2omor[k] = ""
             self.newparas = False
+        self.homonyms = True
+        if 'homonyms' not in kwargs or not kwargs['homonyms']:
+            self.homonyms = False
 
     def stuff2lexc(self, stuff):
         """Convert omorfi internal tag to omorfi lexc analysis tag
@@ -717,7 +721,7 @@ class OmorFormatter(Formatter):
             return ""
         wordmap['stub'] = lexc_escape(wordmap['stub'])
         wordmap['analysis'] = "[WORD_ID=%s]" % (lexc_escape(wordmap['lemma']))
-        if wordmap['homonym'][-1].isdigit():
+        if wordmap['homonym'][-1].isdigit() and self.homonyms:
             wordmap['analysis'] += "[HOMONYM=%s]" % (wordmap['homonym'][-1])
         if wordmap['numtype'] and wordmap['numtype'] == 'ORD':
             wordmap['analysis'] += self.stuff2lexc('ADJ')

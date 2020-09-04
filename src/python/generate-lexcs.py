@@ -105,13 +105,15 @@ def main():
                     help="include PROPER= in raw analyses")
     ap.add_argument("--omor-sem", action="store_true", default=False,
                     help="include SEM= in raw analyses")
+    ap.add_argument("--homonyms", action="store_false", default=True,
+                    help="include HOMONYM= in raw analyses")
     ap.add_argument("--none-lemmas", action="store_true", default=False,
                     help="include lemmas in raw analyses")
     ap.add_argument("--none-segments", action="store_true", default=False,
                     help="include segments in raw analyses")
     ap.add_argument("--break-loops", action="store_true", default=False,
                     help="skip continuations that may loop, comp/der/etc.")
-    ap.add_argument("--splits", action="append", default=["prontype"],
+    ap.add_argument("--splits", action="append", default=["prontype", "adptype"],
                     metavar="COMMENT",
                     help="skip lines starting with COMMENT that"
                     "do not have SEPs")
@@ -121,7 +123,7 @@ def main():
     if args.format == 'omor':
         formatter = OmorFormatter(args.verbose, newparas=args.omor_new_para,
                                   allo=args.omor_allo, props=args.omor_props,
-                                  sem=args.omor_sem)
+                                  sem=args.omor_sem, homonyms=args.homonyms)
         if args.omor_sem:
             args.splits.append("sem")
         if args.omor_props:
