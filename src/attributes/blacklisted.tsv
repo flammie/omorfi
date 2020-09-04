@@ -1258,7 +1258,7 @@ Kosminen	PROPN	propn-blocking
 Koste	PROPN	propn-blocking
 Kosteikko	PROPN	propn-blocking
 Kosto	PROPN	propn-blocking
-Kota	PROPN4	propn-blocking
+Kota	PROPN	propn-blocking
 Koti	PROPN	propn-blocking
 Kotikontu	PROPN	propn-blocking
 Kotikulma	PROPN	propn-blocking
@@ -1272,7 +1272,7 @@ Kotipiha	PROPN	propn-blocking
 Kotitalo	PROPN	propn-blocking
 Kotkannenä	PROPN	propn-blocking
 Kotkanpesä	PROPN	propn-blocking
-Koto	PROPN4	propn-blocking
+Koto	PROPN	propn-blocking
 Kotomaa	PROPN	propn-blocking
 Kottero	PROPN	propn-blocking
 Koukero	PROPN	propn-blocking
@@ -2188,7 +2188,7 @@ Nälkämaa	PROPN	propn-blocking
 Näppi	PROPN	propn-blocking
 Näppärä	PROPN	propn-blocking
 Näpsä	PROPN	propn-blocking
-Närhi	PROPN4	propn-blocking
+Närhi	PROPN	propn-blocking
 Närä	PROPN	propn-blocking
 Näsiä	PROPN	propn-blocking
 Nätkelmä	PROPN	propn-blocking
@@ -2228,7 +2228,7 @@ Onkalo	PROPN	propn-blocking
 Onnela	PROPN	propn-blocking
 Onnenmaa	PROPN	propn-blocking
 Onneton	PROPN	propn-blocking
-Onni	PROPN4	propn-blocking
+Onni	PROPN	propn-blocking
 Ontto	PROPN	propn-blocking
 Opas	PROPN	propn-blocking
 ope	NOUN	tooshortforcompound
@@ -2438,7 +2438,7 @@ Pilleri	PROPN	propn-blocking
 Pilli	PROPN	propn-blocking
 Pillistö	PROPN	propn-blocking
 Piltti	PROPN	propn-blocking
-Pilvi	PROPN4	propn-blocking
+Pilvi	PROPN	propn-blocking
 Pilvilinna	PROPN	propn-blocking
 Pilvinen	PROPN	propn-blocking
 Pinni	PROPN	propn-blocking
@@ -2894,7 +2894,7 @@ Ruukki	PROPN	propn-blocking
 Ruuna	PROPN	propn-blocking
 Ruusu	PROPN	propn-blocking
 Ruutana	PROPN	propn-blocking
-Ruuti	PROPN4	propn-blocking
+Ruuti	PROPN	propn-blocking
 Ruutikuiva	PROPN	propn-blocking
 Ruutu	PROPN	propn-blocking
 rva	NOUN	tooshortforcompound
@@ -3476,7 +3476,7 @@ Typpi	PROPN	propn-blocking
 Tyrmä	PROPN	propn-blocking
 Tyrni	PROPN	propn-blocking
 Tyvi	PROPN	propn-blocking
-Tyyni	PROPN4	propn-blocking
+Tyyni	PROPN	propn-blocking
 työ	NOUN	tooshortforcompound
 Tähkä	PROPN	propn-blocking
 Tähkäpää	PROPN	propn-blocking
