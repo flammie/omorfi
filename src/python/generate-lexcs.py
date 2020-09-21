@@ -304,7 +304,7 @@ def main():
                     print("\nLEXICON", tsv_parts[0], end="\n\n",
                           file=args.output)
                     curr_lexicon = tsv_parts[0]
-                for cont in tsv_parts[3:]:
+                for cont in tsv_parts[3].split("|"):
                     print(formatter.continuation2lexc(tsv_parts[1],
                                                       tsv_parts[2], cont),
                           file=args.output)
