@@ -15,15 +15,12 @@ Aarresaaret	PROPN	obligatory
 Aarresärkät	PROPN	obligatory
 Aartokummut	PROPN	obligatory
 Aartosaaret	PROPN	obligatory
-Aatamin ja Eevan kivet	PROPN	obligatory
 Aataminkalliot	PROPN	obligatory
 Aataminsaaret	PROPN	obligatory
 Aatsinginjärvet	PROPN	obligatory
 Aattokalliot	PROPN	obligatory
-Aavasaksan Urheilijat	PROPN	obligatory
 ABC-asemat	PROPN	obligatory
 Adoptioperheet	PROPN	obligatory
-Agronomivirkamiehet ja toimihenkilöt	PROPN	obligatory
 ahdassuusammakko	NOUN	common
 ahdin	NOUN	common
 ahdinmalluainen	NOUN	common
@@ -40,7 +37,6 @@ Ahoinvuoret	PROPN	obligatory
 Ahokoskentievat	PROPN	obligatory
 Aholammit	PROPN	obligatory
 Aholankalliot	PROPN	obligatory
-Ahon Matin saaret	PROPN	obligatory
 Ahonalaset	PROPN	obligatory
 Ahoniitunkalliot	PROPN	obligatory
 Ahoniitut	PROPN	obligatory
@@ -55,7 +51,6 @@ Ahosaaret	PROPN	obligatory
 Ahoset	PROPN	obligatory
 Ahot	PROPN	obligatory
 Ahtastenkankaat	PROPN	obligatory
-Ahtaus- ja Huolinta-alan Tekniset	PROPN	obligatory
 Ahterinkalliot	PROPN	obligatory
 Ahtimäet	PROPN	obligatory
 Ahvenaiset	PROPN	obligatory
@@ -128,7 +123,6 @@ Aittakankaankalliot	PROPN	obligatory
 Aittaluodot	PROPN	obligatory
 Aittanivat	PROPN	obligatory
 Aittanummenpellot	PROPN	obligatory
-Aittaojan seljänteet	PROPN	obligatory
 Aittariutat	PROPN	obligatory
 Aittasaarekkeet	PROPN	obligatory
 Aittasaaret	PROPN	obligatory
@@ -164,9 +158,6 @@ Akanpaskanivat	PROPN	obligatory
 Akansaaret	PROPN	obligatory
 Akantörmät	PROPN	obligatory
 Akanviidanniityt	PROPN	obligatory
-Akava Erityisalat	PROPN	obligatory
-Akavan Erityisalat	PROPN	obligatory
-Akavan kirkolliset ammattiliitot	PROPN	obligatory
 Akharamankummut	PROPN	obligatory
 Akkalammit	PROPN	obligatory
 Akkalanluodot	PROPN	obligatory
@@ -178,13 +169,10 @@ akselivaltio	NOUN	common
 Aksijärvet	PROPN	obligatory
 Aksunharjut	PROPN	obligatory
 aktiivat	NOUN	obligatory
-Aku-Jounin Aitasijajärvet	PROPN	obligatory
-Ala-Antin kentät	PROPN	obligatory
 alahengitystiet	NOUN	obligatory
 Alaistenniitut	PROPN	obligatory
 Alajoensärkät	PROPN	obligatory
 Alajängänpalot	PROPN	obligatory
-Alajärven Ankkurit	PROPN	obligatory
 Alajärvenharjut	PROPN	obligatory
 Alakankaat	PROPN	obligatory
 Ala-Karpaatit	PROPN	obligatory
@@ -204,7 +192,6 @@ Alangonniityt	PROPN	obligatory
 Alaniitynkalliot	PROPN	obligatory
 Alaniityt	PROPN	obligatory
 Alankomaat	PROPN	obligatory
-Alankomaiden Antillit	PROPN	obligatory
 Alankoniityt	PROPN	obligatory
 Alanokat	PROPN	obligatory
 Alanteenlammit	PROPN	obligatory
@@ -230,10 +217,7 @@ Alasuonlammit	PROPN	obligatory
 Alasuonsaarekkeet	PROPN	obligatory
 Alasuot	PROPN	obligatory
 Alatalonahot	PROPN	obligatory
-Alatornion Pirkat	PROPN	obligatory
 Alavankankaat	PROPN	obligatory
-Alavuden Peli-Veikot	PROPN	obligatory
-Alavuden Urheilijat	PROPN	obligatory
 A-lehdet	PROPN	obligatory
 Aleksentievat	PROPN	obligatory
 Aleksinsaaret	PROPN	obligatory
@@ -280,7 +264,6 @@ Ampiaisliat	PROPN	obligatory
 Ampiaissuot	PROPN	obligatory
 ampiaisyrtti	NOUN	common
 Ampupäät	PROPN	obligatory
-Andamaanit ja Nikobaarit	PROPN	obligatory
 Anellinkorvat	PROPN	obligatory
 Angalasjärvet	PROPN	obligatory
 Angasmuotkanharjut	PROPN	obligatory
@@ -288,12 +271,10 @@ Angelharjunlammit	PROPN	obligatory
 Angelharjut	PROPN	obligatory
 Anionpellot	PROPN	obligatory
 Ankkuriletot	PROPN	obligatory
-Anna Greetan järvet	PROPN	obligatory
 Annankalliot	PROPN	obligatory
 Annastiinanautiot	PROPN	obligatory
 Annikinsaaret	PROPN	obligatory
 Anninniitut	PROPN	obligatory
-Anonyymit Ylensyöjät	PROPN	obligatory
 anopikset	NOUN	obligatory
 Ansakummut	PROPN	obligatory
 Ansasaaret	PROPN	obligatory
@@ -303,7 +284,6 @@ Anterustievat	PROPN	obligatory
 Antikaisahot	PROPN	obligatory
 Antillit	PROPN	obligatory
 antimet	NOUN	obligatory
-Antin Pyytämäjärvet	PROPN	obligatory
 Antinjängänkummut	PROPN	obligatory
 Antinjärventievat	PROPN	obligatory
 Antinkalliot	PROPN	obligatory
@@ -413,7 +393,6 @@ Autionpellot	PROPN	obligatory
 Autionvuoret	PROPN	obligatory
 Autiopellot	PROPN	obligatory
 Autiosaaret	PROPN	obligatory
-Automatia Pankkiautomaatit	PROPN	obligatory
 Autotuojat	PROPN	obligatory
 Autsinsuunivat	PROPN	obligatory
 Autto-ojankummut	PROPN	obligatory
@@ -446,7 +425,6 @@ baronetit	NOUN	obligatory
 beatnikki	NOUN	common
 beetasäteet	NOUN	obligatory
 behemot	NOUN	obligatory
-Bella Veneet	PROPN	obligatory
 Bella-Veneet	PROPN	obligatory
 belugat	NOUN	obligatory
 beringinhylkeet	NOUN	obligatory
@@ -464,25 +442,18 @@ Blommankivet	PROPN	obligatory
 B-oikeudet	NOUN	obligatory
 boiotialainen	ADJ	common
 Branderinkarit	PROPN	obligatory
-Brittiläiset Neitsytsaaret	PROPN	obligatory
 Bruumosanlammit	PROPN	obligatory
 Brännasviikinraklit	PROPN	obligatory
-Budolajien suomalaiset kattojärjestöt	PROPN	obligatory
 bänet	NOUN	obligatory
 bänät	NOUN	obligatory
 Caicossaaret	PROPN	obligatory
-Capris Keittiöt	PROPN	obligatory
 Caymansaaret	PROPN	obligatory
 chukka-kengät	NOUN	obligatory
 cocktailkutsut	NOUN	obligatory
 collegehousut	NOUN	obligatory
 Cookinsaaret	PROPN	obligatory
 damaski	NOUN	common
-Demokratian Pioneerit	PROPN	obligatory
-Dennis Yhtiöt	PROPN	obligatory
-Depp Työpsykologiset palvelut	PROPN	obligatory
 desimetriaallot	NOUN	obligatory
-Diacor Terveyspalvelut	PROPN	obligatory
 dicynodontit	NOUN	obligatory
 dimensio	NOUN	common
 diplomaattisuhteet	NOUN	obligatory
@@ -499,7 +470,6 @@ eebenpuukasvi	NOUN	common
 Eekinkankaat	PROPN	obligatory
 Eeleksenlammit	PROPN	obligatory
 Eelinlammit	PROPN	obligatory
-Eeliskerin Pohjakarit	PROPN	obligatory
 Eemelinkalliot	PROPN	obligatory
 Eerokivet	PROPN	obligatory
 Eerola-yhtiöt	PROPN	obligatory
@@ -515,14 +485,12 @@ Ehkittämäharjut	PROPN	obligatory
 ehtoollisastiat	NOUN	obligatory
 Ekhammarinpellot	PROPN	obligatory
 Ekokalliot	PROPN	obligatory
-Ekologinen puolue Vihreät	PROPN	obligatory
 Ekruutinmäet	PROPN	obligatory
 Eksymäkukkulat	PROPN	obligatory
 Eksymälammit	PROPN	obligatory
 Eksyttäjänkalliot	PROPN	obligatory
 elamilainen	NOUN	common
 ele	NOUN	common
-Elektroniikan tukkukauppiaat	PROPN	obligatory
 Eliaksensalmenluolikot	PROPN	obligatory
 Elianlamminahot	PROPN	obligatory
 Elianlammit	PROPN	obligatory
@@ -577,13 +545,10 @@ Eskelisennivat	PROPN	obligatory
 Eskonkalliot	PROPN	obligatory
 Eskonlammit	PROPN	obligatory
 Eskonluodot	PROPN	obligatory
-Espoon Moottorilentäjät	PROPN	obligatory
-Espoon Tapiot	PROPN	obligatory
 ES-Projektit	PROPN	obligatory
 Etanakummut	PROPN	obligatory
 Eteissaaret	PROPN	obligatory
 eteläamerikanisohylkeet	NOUN	obligatory
-Eteläiset Sandwichsaaret	PROPN	obligatory
 Eteläkaistot	PROPN	obligatory
 Eteläkorvet	PROPN	obligatory
 Etelälahdenkalliot	PROPN	obligatory
@@ -592,11 +557,8 @@ Etelämäenpellot	PROPN	obligatory
 etelänkeiju	NOUN	common
 etelänpyökki	NOUN	common
 Etelänsaaret	PROPN	obligatory
-Etelä-Pohjanmaan Yrittäjät	PROPN	obligatory
 Etelä-Rodopit	PROPN	obligatory
-Etelä-Suomen Sanomat	PROPN	obligatory
 Eteläsuonsaarekkeet	PROPN	obligatory
-Etelä-Vantaan Urheilijat	PROPN	obligatory
 Eteläviidat	PROPN	obligatory
 Etolansaaret	PROPN	obligatory
 Etseojanpalot	PROPN	obligatory
@@ -612,9 +574,6 @@ Eurooppanuoret	PROPN	obligatory
 Eurosinkut	PROPN	obligatory
 eurovaalit	NOUN	obligatory
 Eussaaret	PROPN	obligatory
-Evankeliset opiskelijat	PROPN	obligatory
-Evankeliset ystävät	PROPN	obligatory
-Evijärven Urheilijat	PROPN	obligatory
 Evijärvenkankaat	PROPN	obligatory
 Evilahdenkalliot	PROPN	obligatory
 eväjalkalisko	NOUN	common
@@ -627,13 +586,10 @@ farmarihousut	NOUN	obligatory
 farmarit	NOUN	obligatory
 fasaanipyy	NOUN	common
 Fattiharjut	PROPN	obligatory
-Fazer Leipomot	PROPN	obligatory
-Fazer Makeiset	PROPN	obligatory
 festivaali	NOUN	common
 Filippiinit	PROPN	obligatory
 filmifestivaalit	NOUN	obligatory
 filmijuhlat	NOUN	obligatory
-Filosofian ja elämänkatsomustiedon opettajat	PROPN	obligatory
 finanssit	NOUN	obligatory
 Finninkankaat	PROPN	obligatory
 Finnmatkat	PROPN	obligatory
@@ -643,7 +599,6 @@ Flegmaatikot	PROPN	obligatory
 Fleininkalliot	PROPN	obligatory
 floridanvesimyyrät	NOUN	obligatory
 Formusaaret	PROPN	obligatory
-Forssan Koripojat	PROPN	obligatory
 fossat	NOUN	obligatory
 fot	NOUN	obligatory
 Frakaninkalliot	PROPN	obligatory
@@ -666,7 +621,6 @@ grillauspihdit	NOUN	obligatory
 grillijuhla	NOUN	common
 grillipihdit	NOUN	obligatory
 grönlanninhylje	NOUN	common
-GWS Yhtiöt	PROPN	obligatory
 Haalankalliot	PROPN	obligatory
 Haalansaaret	PROPN	obligatory
 haalari	NOUN	common
@@ -676,8 +630,6 @@ Haanperänkarit	PROPN	obligatory
 Haanperänvuoret	PROPN	obligatory
 Haanvuoret	PROPN	obligatory
 Haapajoenniityt	PROPN	obligatory
-Haapajärven Kiilat	PROPN	obligatory
-Haapajärven Pesä-Kiilat	PROPN	obligatory
 Haapajärvet	PROPN	obligatory
 Haapakalliot	PROPN	obligatory
 Haapakankaansaaret	PROPN	obligatory
@@ -769,7 +721,6 @@ haiven	NOUN	common
 Haivuorenkalliot	PROPN	obligatory
 hajotusvaalit	NOUN	obligatory
 hajuaivot	NOUN	obligatory
-Haka-Heikin saaret	PROPN	obligatory
 Hakakalliot	PROPN	obligatory
 Hakalanlammit	PROPN	obligatory
 Hakankalliot	PROPN	obligatory
@@ -788,13 +739,11 @@ Hakosaaret	PROPN	obligatory
 Hakulisenlössät	PROPN	obligatory
 hakupaperit	NOUN	obligatory
 Halikinkankaat	PROPN	obligatory
-Halikon Hakoniskat	PROPN	obligatory
 Halimaankalliot	PROPN	obligatory
 Halisenromput	PROPN	obligatory
 Halkikivet	PROPN	obligatory
 Halkiskivet	PROPN	obligatory
 halko	NOUN	common
-Halkokarin Ulkomatalat	PROPN	obligatory
 Halkokarit	PROPN	obligatory
 Halkokivet	PROPN	obligatory
 Halkokorvenkalliot	PROPN	obligatory
@@ -812,7 +761,6 @@ Hallakansaaret	PROPN	obligatory
 Hallakivet	PROPN	obligatory
 Hallalammit	PROPN	obligatory
 Hallaniityt	PROPN	obligatory
-Hallinto-opin kandidaatit	PROPN	obligatory
 Hallitusammattilaiset	PROPN	obligatory
 hallitusneuvottelut	NOUN	obligatory
 hallitustunnustelut	NOUN	obligatory
@@ -833,7 +781,6 @@ Haminaharjut	PROPN	obligatory
 Haminakarit	PROPN	obligatory
 Haminalammit	PROPN	obligatory
 Haminaluodot	PROPN	obligatory
-Haminan Palloilijat	PROPN	obligatory
 Haminanharjut	PROPN	obligatory
 Haminapuljut	PROPN	obligatory
 hammasjuuri	NOUN	common
@@ -1008,7 +955,6 @@ Haukisenmäet	PROPN	obligatory
 Haukisuonjärvet	PROPN	obligatory
 Haukisuonsaarekkeet	PROPN	obligatory
 Haukisuot	PROPN	obligatory
-Haukivuoren Kisailijat	PROPN	obligatory
 Haukivuoret	PROPN	obligatory
 Haukkakalliot	PROPN	obligatory
 Haukkalammit	PROPN	obligatory
@@ -1065,11 +1011,8 @@ Havukkasaaret	PROPN	obligatory
 Havukkaviidansaaret	PROPN	obligatory
 Havuluodot	PROPN	obligatory
 Havuniityt	PROPN	obligatory
-HCK Salamat	PROPN	obligatory
-Heard and McDonaldinsaaret	PROPN	obligatory
 Hebenkrunnit	PROPN	obligatory
 hedelmöintiosa	NOUN	common
-Heikin Juomusjärvet	PROPN	obligatory
 Heikinjärvet	PROPN	obligatory
 Heikinkalliot	PROPN	obligatory
 Heikinkivet	PROPN	obligatory
@@ -1089,7 +1032,6 @@ Heinihaarankankaat	PROPN	obligatory
 Heinijärvenniemet	PROPN	obligatory
 Heinijärvet	PROPN	obligatory
 Heinikarit	PROPN	obligatory
-Heinikko- Patolammit	PROPN	obligatory
 Heinilammit	PROPN	obligatory
 Heiniluomankydöt	PROPN	obligatory
 Heinimaankalliot	PROPN	obligatory
@@ -1103,7 +1045,6 @@ Heinlamminkalliot	PROPN	obligatory
 Heinniemet	PROPN	obligatory
 Heinojankalliot	PROPN	obligatory
 Heinojansaaret	PROPN	obligatory
-Heinolan Peliitat	PROPN	obligatory
 Heinossaaret	PROPN	obligatory
 Heinussaaret	PROPN	obligatory
 Heinäahot	PROPN	obligatory
@@ -1156,19 +1097,6 @@ helokuoriainen	NOUN	common
 helokämmekkä	NOUN	common
 Helosaaret	PROPN	obligatory
 helovahakas	NOUN	common
-Helsingin aineenopettajiksi opiskelevat	PROPN	obligatory
-Helsingin Ekonomit	PROPN	obligatory
-Helsingin kauppatieteiden ylioppilaat	PROPN	obligatory
-Helsingin Kisa-Toverit	PROPN	obligatory
-Helsingin Kisa-Veikot	PROPN	obligatory
-Helsingin Kojootit	PROPN	obligatory
-Helsingin Poliisi-Voimailijat	PROPN	obligatory
-Helsingin Sanomat	PROPN	obligatory
-Helsingin Suunnistajat	PROPN	obligatory
-Helsingin vapaa-ajattelijat	PROPN	obligatory
-Helsingin yliopiston jatko-opiskelijat	PROPN	obligatory
-Helsingin Yliopiston Kemistit	PROPN	obligatory
-Helsingin yliopiston polymeeri- ja puukemistit	PROPN	obligatory
 helsinkiläismiljööt	NOUN	obligatory
 helttaminttu	NOUN	common
 Helunalammit	PROPN	obligatory
@@ -1189,7 +1117,6 @@ henkisavut	NOUN	obligatory
 henkonen	NOUN	common
 henkselit	NOUN	obligatory
 Henriikat	PROPN	obligatory
-Hentin Matin Tupalammet	PROPN	obligatory
 Hentonsuonlammit	PROPN	obligatory
 hepene	NOUN	common
 hepoasteet	NOUN	obligatory
@@ -1214,7 +1141,6 @@ Herasaaret	PROPN	obligatory
 Heraseljänlammit	PROPN	obligatory
 Herasensärkät	PROPN	obligatory
 Herlevinkivet	PROPN	obligatory
-Hermalan kettuluolat	PROPN	obligatory
 Hermanninlammit	PROPN	obligatory
 hermo	NOUN	common
 hermosavut	NOUN	obligatory
@@ -1363,7 +1289,6 @@ Hilmolankalliot	PROPN	obligatory
 Hilponsärkät	PROPN	obligatory
 Hiltulankukkulat	PROPN	obligatory
 hilut	NOUN	obligatory
-Himangan Urheilijat	PROPN	obligatory
 Himanpellot	PROPN	obligatory
 Himmerkinniityt	PROPN	obligatory
 Himoistenvuoret	PROPN	obligatory
@@ -1401,7 +1326,6 @@ Hirvelänkalliot	PROPN	obligatory
 hirvenjäkälä	NOUN	common
 Hirvenkalliot	PROPN	obligatory
 Hirvenleuat	PROPN	obligatory
-Hirvensalon patterit	PROPN	obligatory
 Hirvijärvenkalliot	PROPN	obligatory
 Hirvikalliot	PROPN	obligatory
 Hirvikarinkarit	PROPN	obligatory
@@ -1473,7 +1397,6 @@ Holminkarit	PROPN	obligatory
 Homettomaanluolikot	PROPN	obligatory
 Hongikkoaukeenlammit	PROPN	obligatory
 Hongikkovaarantyvet	PROPN	obligatory
-Hongikon Nuorisoseuran Urheilijat	PROPN	obligatory
 Hongistonlammit	PROPN	obligatory
 Hongistonnevat	PROPN	obligatory
 Honkainlammit	PROPN	obligatory
@@ -1544,7 +1467,6 @@ Hovilansuot	PROPN	obligatory
 Hovinpellot	PROPN	obligatory
 Hovinvaarat	PROPN	obligatory
 hovitavat	NOUN	obligatory
-HPK Naiset	PROPN	obligatory
 Huhanniitut	PROPN	obligatory
 Huhdanarot	PROPN	obligatory
 Huhdankalliot	PROPN	obligatory
@@ -1594,7 +1516,6 @@ Hukankankaat	PROPN	obligatory
 Hukanpesäharjut	PROPN	obligatory
 Hukanpesänkummut	PROPN	obligatory
 Hukanpuskat	PROPN	obligatory
-Huki-Tuomon saaret	PROPN	obligatory
 Hukkahaudat	PROPN	obligatory
 Hukkajärvet	PROPN	obligatory
 Hukkakaarrot	PROPN	obligatory
@@ -1683,7 +1604,6 @@ huuli	NOUN	common
 huuri	NOUN	common
 Huusiluodot	PROPN	obligatory
 Huuskonlammit	PROPN	obligatory
-Huuto-Antin lammit	PROPN	obligatory
 Huutohiekat	PROPN	obligatory
 Huutokalliot	PROPN	obligatory
 Huutoniemet	PROPN	obligatory
@@ -1718,7 +1638,6 @@ Hytinlammit	PROPN	obligatory
 Hyttysensaaret	PROPN	obligatory
 Hytösaaret	PROPN	obligatory
 Hytösenkalliot	PROPN	obligatory
-Hyvinkään Urheilutoverit	PROPN	obligatory
 Hyvänapajanniitut	PROPN	obligatory
 hyvästi	NOUN	common
 Hyvätjärvet	PROPN	obligatory
@@ -1742,14 +1661,11 @@ Häikänniemet	PROPN	obligatory
 Häikänsaaret	PROPN	obligatory
 Häinsaaret	PROPN	obligatory
 häiveperhonen	NOUN	common
-Häjyt Rauhasaaret	PROPN	obligatory
 Häkinniemet	PROPN	obligatory
 Häkinsaaret	PROPN	obligatory
 Häkkilänsaaret	PROPN	obligatory
 Häkkisensaaret	PROPN	obligatory
-Hämeenkyrön Urheiluautoilijat	PROPN	obligatory
 Hämeenlammit	PROPN	obligatory
-Hämeenlinnan Suunnistajat	PROPN	obligatory
 Hämeenpuronniityt	PROPN	obligatory
 Hämeensaaret	PROPN	obligatory
 Hämähäkit	PROPN	obligatory
@@ -1837,7 +1753,6 @@ ihmekukkakasvi	NOUN	common
 ihmisaivot	NOUN	obligatory
 ihmiskasvot	NOUN	obligatory
 ihmistavat	NOUN	obligatory
-Ihmisyyden tunnustajat	PROPN	obligatory
 ihoaisti	NOUN	common
 iibishaikara	NOUN	common
 Iikanniityt	PROPN	obligatory
@@ -1845,8 +1760,6 @@ Iilijärvet	PROPN	obligatory
 Iilinjärvenkalliot	PROPN	obligatory
 Iilivuoret	PROPN	obligatory
 Iiljärvenpellot	PROPN	obligatory
-Iin Urheilijat	PROPN	obligatory
-Iisakin Tupajärvet	PROPN	obligatory
 Iisakinlammit	PROPN	obligatory
 Iisakinputaat	PROPN	obligatory
 Iisakinrimmit	PROPN	obligatory
@@ -1859,7 +1772,6 @@ Iivanansaaret	PROPN	obligatory
 Iivarinkarit	PROPN	obligatory
 Iivarinlaassat	PROPN	obligatory
 Ijäksenkalliot	PROPN	obligatory
-Ikaalisten Urheilijat	PROPN	obligatory
 Ikamonmäet	PROPN	obligatory
 ikenet	NOUN	obligatory
 Ikolanroikat	PROPN	obligatory
@@ -1882,7 +1794,6 @@ illatsut	NOUN	obligatory
 Illinkijärvet	PROPN	obligatory
 Illinojanniityt	PROPN	obligatory
 ilmahautajaiset	NOUN	obligatory
-Ilmajoen Kisailijat	PROPN	obligatory
 Ilmakkasaaret	PROPN	obligatory
 Ilmakkasuot	PROPN	obligatory
 Ilmalammit	PROPN	obligatory
@@ -1913,14 +1824,11 @@ Ilvesjoenluhdat	PROPN	obligatory
 Ilveskivet	PROPN	obligatory
 Ilveslammit	PROPN	obligatory
 Ilvessaaret	PROPN	obligatory
-Imatran Pallo-Salamat	PROPN	obligatory
-Imatran Pallo-Veikot	PROPN	obligatory
 Impeleenmäet	PROPN	obligatory
 imukala	NOUN	common
 imukarppi	NOUN	common
 Inakarit	PROPN	obligatory
 Ingansaaret	PROPN	obligatory
-Inhan tehtaat	PROPN	obligatory
 initiaatiomenot	NOUN	obligatory
 inkaliljakasvi	NOUN	common
 inkerikko	NOUN	common
@@ -1949,11 +1857,9 @@ Isokorvenkalliot	PROPN	obligatory
 isolimaska	NOUN	common
 Isonaavankummut	PROPN	obligatory
 Isonaihkintievat	PROPN	obligatory
-Ison-Antin kalliot	PROPN	obligatory
 Isonhaanholmat	PROPN	obligatory
 Isonhaudanniitut	PROPN	obligatory
 Isoniitut	PROPN	obligatory
-Ison-Jussin pellot	PROPN	obligatory
 Isonkankaankalliot	PROPN	obligatory
 Isonkaskenvuoret	PROPN	obligatory
 Isonkivensaaret	PROPN	obligatory
@@ -1987,8 +1893,6 @@ Isottulet	PROPN	obligatory
 isovanhemmat	NOUN	obligatory
 isovyötiäinen	NOUN	common
 Ispinänkankaat	PROPN	obligatory
-Israelin Ystävät	PROPN	obligatory
-ISS Palvelut	PROPN	obligatory
 Istalansaaret	PROPN	obligatory
 istujaiset	NOUN	obligatory
 istukkanisäkäs	NOUN	common
@@ -2069,7 +1973,6 @@ Jatkolammit	PROPN	obligatory
 Jatkonlammit	PROPN	obligatory
 jatko-opinnot	NOUN	obligatory
 Jatkoslammit	PROPN	obligatory
-Jatkosodan siviiliveteraanit	PROPN	obligatory
 Jatkot	PROPN	obligatory
 jatkotikas	NOUN	common
 Jatuninselät	PROPN	obligatory
@@ -2094,7 +1997,6 @@ Joenmäet	PROPN	obligatory
 Joenniityt	PROPN	obligatory
 Joenniskankalliot	PROPN	obligatory
 Joensivunpellot	PROPN	obligatory
-Joensuun Prihat	PROPN	obligatory
 Joensuunkalliot	PROPN	obligatory
 Joensuunmetsät	PROPN	obligatory
 Joensuunniitut	PROPN	obligatory
@@ -2116,7 +2018,6 @@ Jokilamminahot	PROPN	obligatory
 Jokilamminkosket	PROPN	obligatory
 Jokilammit	PROPN	obligatory
 Jokiniitut	PROPN	obligatory
-Jokioisten kartanot	PROPN	obligatory
 Jokipellot	PROPN	obligatory
 Jokiperänsaaret	PROPN	obligatory
 Jokipohjankosket	PROPN	obligatory
@@ -2197,7 +2098,6 @@ juhlavalmistelut	NOUN	obligatory
 Jukkaranmäet	PROPN	obligatory
 Jukolanpellot	PROPN	obligatory
 Jukurit	PROPN	obligatory
-Julkisen hallinnon ekonomit	PROPN	obligatory
 Julkkakummut	PROPN	obligatory
 Julkusluodot	PROPN	obligatory
 Jullikat	PROPN	obligatory
@@ -2251,8 +2151,6 @@ Jursulat	PROPN	obligatory
 Jurvaalanniityt	PROPN	obligatory
 Jurvankankaat	PROPN	obligatory
 Jurvanniityt	PROPN	obligatory
-Jusalan Mustatlammet	PROPN	obligatory
-Jussan Kotalantot	PROPN	obligatory
 Jussilankarit	PROPN	obligatory
 Jussilanpellot	PROPN	obligatory
 Jussinhuhdankalliot	PROPN	obligatory
@@ -2278,7 +2176,6 @@ Juurikkaniemet	PROPN	obligatory
 Juurikkasaaret	PROPN	obligatory
 Juurikkasuot	PROPN	obligatory
 Juurkunnansaaret	PROPN	obligatory
-Juuson Kotasijajärvet	PROPN	obligatory
 Juusonmaat	PROPN	obligatory
 Juusto-ojansaajot	PROPN	obligatory
 Juustotievat	PROPN	obligatory
@@ -2315,7 +2212,6 @@ Jyrkänsaaret	PROPN	obligatory
 Jyrkätmäet	PROPN	obligatory
 jyrsijäkorento	NOUN	common
 Jysmänsaaret	PROPN	obligatory
-Jyväskylän Kenttäurheilijat	PROPN	obligatory
 Jäkäläharjut	PROPN	obligatory
 Jäkälälammit	PROPN	obligatory
 Jäkäläsaaret	PROPN	obligatory
@@ -2435,7 +2331,6 @@ Kaaponlammit	PROPN	obligatory
 Kaapronsaaret	PROPN	obligatory
 Kaarantojärvet	PROPN	obligatory
 Kaarikankaat	PROPN	obligatory
-Kaarinan Yrittäjät	PROPN	obligatory
 Kaarisaaret	PROPN	obligatory
 Kaarkokosket	PROPN	obligatory
 Kaarlonsaaret	PROPN	obligatory
@@ -2450,7 +2345,6 @@ Kaatronlammit	PROPN	obligatory
 Kaavitsalammit	PROPN	obligatory
 Kadonneenlähteet	PROPN	obligatory
 kadotetut	NOUN	obligatory
-Kahden Uulan Haukkumalammet	PROPN	obligatory
 Kahdenhaaraset	PROPN	obligatory
 Kahelammit	PROPN	obligatory
 Kahilatievat	PROPN	obligatory
@@ -2469,7 +2363,6 @@ Kahvisaaret	PROPN	obligatory
 Kaidanluodot	PROPN	obligatory
 Kaidanvuoret	PROPN	obligatory
 Kaidat	PROPN	obligatory
-Kaidat Soukanlahdet	PROPN	obligatory
 Kaidatvedet	PROPN	obligatory
 Kaidonlammit	PROPN	obligatory
 Kaihianlatvanluolat	PROPN	obligatory
@@ -2512,7 +2405,6 @@ Kainalosarat	PROPN	obligatory
 Kainijärvet	PROPN	obligatory
 kairapalmumaiset	NOUN	obligatory
 Kairlammit	PROPN	obligatory
-Kaisaniemen Tiikerit	PROPN	obligatory
 kaislakorento	NOUN	common
 Kaislalammet	PROPN	obligatory
 Kaislankankaat	PROPN	obligatory
@@ -2536,7 +2428,6 @@ Kaivannonsaaret	PROPN	obligatory
 Kaivanteenpellot	PROPN	obligatory
 Kaivantosaaret	PROPN	obligatory
 kaivaus	NOUN	common
-Kaivo-Kolkon harjut	PROPN	obligatory
 Kaivolamminsuot	PROPN	obligatory
 Kaivolammit	PROPN	obligatory
 Kaivosjärvet	PROPN	obligatory
@@ -2548,9 +2439,7 @@ Kaivosvuomansaajot	PROPN	obligatory
 Kaivulamminpalot	PROPN	obligatory
 Kaivulammit	PROPN	obligatory
 kaivuutulos	NOUN	common
-Kajaanin Suunnistajat	PROPN	obligatory
 Kajaansaaret	PROPN	obligatory
-Kajaansuon lammit	PROPN	obligatory
 Kajakanmäet	PROPN	obligatory
 Kajakarit	PROPN	obligatory
 Kajakkakarit	PROPN	obligatory
@@ -2627,7 +2516,6 @@ Kakssalmiset	PROPN	obligatory
 Kaktsajärvet	PROPN	obligatory
 kalaasi	NOUN	common
 Kalahelmansaaret	PROPN	obligatory
-Kalajoen Junkkarit	PROPN	obligatory
 Kalajärvenkalliot	PROPN	obligatory
 Kalajärvenkankaat	PROPN	obligatory
 Kalakivenpellot	PROPN	obligatory
@@ -2674,10 +2562,7 @@ Kalkujärvet	PROPN	obligatory
 Kalkulompolot	PROPN	obligatory
 Kalkut	PROPN	obligatory
 Kallajärvet	PROPN	obligatory
-Kallan sillat	PROPN	obligatory
-Kalle-Erkin jängät	PROPN	obligatory
 Kalleinsaaret	PROPN	obligatory
-Kalle-Kustaan kalliot	PROPN	obligatory
 Kallenlammet	PROPN	obligatory
 Kallenmunat	PROPN	obligatory
 Kalliiset	PROPN	obligatory
@@ -2741,7 +2626,6 @@ Kaltonharjut	PROPN	obligatory
 Kaltonkankaat	PROPN	obligatory
 kaluste	NOUN	common
 Kaluvuoret	PROPN	obligatory
-Kalvitsan Urheilijat	PROPN	obligatory
 Kamalansaaret	PROPN	obligatory
 Kamalasaaret	PROPN	obligatory
 kamelieläin	NOUN	common
@@ -2779,7 +2663,6 @@ Kangaslahdet	PROPN	obligatory
 Kangaslammit	PROPN	obligatory
 Kangasluodot	PROPN	obligatory
 Kangasniityt	PROPN	obligatory
-Kangas-Ollin saaret	PROPN	obligatory
 kangaspuut	NOUN	obligatory
 Kangaspäänrannat	PROPN	obligatory
 Kangas-Rakitsat	PROPN	obligatory
@@ -2819,13 +2702,10 @@ Kannusojanvitikot	PROPN	obligatory
 Kannussaaret	PROPN	obligatory
 Kannusvuoret	PROPN	obligatory
 Kansakoulunmäet	PROPN	obligatory
-Kansalais- ja Työväenopistojen Rehtorit	PROPN	obligatory
 kansalaisillalliset	NOUN	obligatory
 kansalaispäivälliset	NOUN	obligatory
-Kansallinen koululaisliitto – Minit	PROPN	obligatory
 kansankäräjät	NOUN	obligatory
 Kansanpellot	PROPN	obligatory
-Kansantaloustieteen opiskelijat	PROPN	obligatory
 Kansselkivet	PROPN	obligatory
 Kanssoinpellot	PROPN	obligatory
 kantaosake	NOUN	common
@@ -2896,11 +2776,6 @@ Karhukurut	PROPN	obligatory
 Karhulahdenniityt	PROPN	obligatory
 Karhulamminkankaat	PROPN	obligatory
 Karhulammit	PROPN	obligatory
-Karhulan Katajaiset	PROPN	obligatory
-Karhulan Lamposaaret	PROPN	obligatory
-Karhulan Urheilijat	PROPN	obligatory
-Karhulan Veikot	PROPN	obligatory
-Karhun Pojat	PROPN	obligatory
 Karhunkivet	PROPN	obligatory
 Karhunkukkulat	PROPN	obligatory
 Karhunkämmenet	PROPN	obligatory
@@ -2958,8 +2833,6 @@ Karkeikkolammit	PROPN	obligatory
 Karkeisenlaivat	PROPN	obligatory
 Karkiaislammit	PROPN	obligatory
 Karkianmäet	PROPN	obligatory
-Karkkilan Pojat	PROPN	obligatory
-Karkkilan Urheilijat	PROPN	obligatory
 Karkkulammit	PROPN	obligatory
 Karklamminniityt	PROPN	obligatory
 Karkonsaaret	PROPN	obligatory
@@ -2970,7 +2843,6 @@ Karkumaankalliot	PROPN	obligatory
 Karkurinteet	PROPN	obligatory
 Karkusaaret	PROPN	obligatory
 Karlssonit	PROPN	obligatory
-Karoliinan portaat	PROPN	obligatory
 Karpanlammit	PROPN	obligatory
 Karpinivat	PROPN	obligatory
 karppikala	NOUN	common
@@ -3008,7 +2880,6 @@ Kasarmit	PROPN	obligatory
 Kasessaaret	PROPN	obligatory
 kasikit	NOUN	obligatory
 Kaskamosaaret	PROPN	obligatory
-Kasken Pokkuvittikot	PROPN	obligatory
 Kaskilamminkalliot	PROPN	obligatory
 Kaskiniemenniityt	PROPN	obligatory
 Kaskistenkarit	PROPN	obligatory
@@ -3028,7 +2899,6 @@ kasvatusvanhemmat	NOUN	obligatory
 kasvis	NOUN	common
 kasvo	NOUN	common
 kasvot	NOUN	obligatory
-Kasvun ja vanhenemisen tutkijat	PROPN	obligatory
 Kataislammit	PROPN	obligatory
 Katajajärvet	PROPN	obligatory
 Katajakankaat	PROPN	obligatory
@@ -3125,8 +2995,6 @@ Kavionniityt	PROPN	obligatory
 Kaviosaaret	PROPN	obligatory
 Kedonpellot	PROPN	obligatory
 Keelingsaaret	PROPN	obligatory
-Kehitysmaatutkimuksen opiskelijat	PROPN	obligatory
-Kehitysmaayhdistys Pääskyt	PROPN	obligatory
 Kehrookalliot	PROPN	obligatory
 kehruu	NOUN	common
 kehruukset	NOUN	obligatory
@@ -3173,7 +3041,6 @@ Kellaritievat	PROPN	obligatory
 Kellojoensärkät	PROPN	obligatory
 Kellokaarronkankaat	PROPN	obligatory
 Kellolammit	PROPN	obligatory
-Kellon Työväen Urheilijat	PROPN	obligatory
 Kellonivat	PROPN	obligatory
 kellonperät	NOUN	obligatory
 kellonvitjat	NOUN	obligatory
@@ -3216,7 +3083,6 @@ Kentänniityt	PROPN	obligatory
 Keppervaarat	PROPN	obligatory
 Kepsansaaret	PROPN	obligatory
 Keravalammit	PROPN	obligatory
-Keravan Urheilijat	PROPN	obligatory
 Kerihtimenperät	PROPN	obligatory
 kerinpuut	NOUN	obligatory
 keritsemisjuhla	NOUN	common
@@ -3244,14 +3110,12 @@ Keskimetsänkalliot	PROPN	obligatory
 Keskiniemenjärvet	PROPN	obligatory
 Keskipakat	PROPN	obligatory
 Keskipalot	PROPN	obligatory
-Keskipohjalaiset Kylät	PROPN	obligatory
 Keskirovat	PROPN	obligatory
 Keskisaajot	PROPN	obligatory
 Keskisaaret	PROPN	obligatory
 Keskiseljänmatalat	PROPN	obligatory
 Keskisenkalliot	PROPN	obligatory
 Keskiskoovit	PROPN	obligatory
-Keski-Suomen Voimailijat	PROPN	obligatory
 Keskisuot	PROPN	obligatory
 Keskitekoiset	PROPN	obligatory
 Keski-Tervalammit	PROPN	obligatory
@@ -3333,7 +3197,6 @@ keuhkokala	NOUN	common
 Keukosenkalliot	PROPN	obligatory
 keulankärki	NOUN	common
 Keurunlammit	PROPN	obligatory
-Keuruun Kisailijat	PROPN	obligatory
 Keuvasaaret	PROPN	obligatory
 Keyritinkukkulat	PROPN	obligatory
 khakihousut	NOUN	obligatory
@@ -3420,8 +3283,6 @@ Kiimasuot	PROPN	obligatory
 Kiimasärkät	PROPN	obligatory
 Kiimavaaranhännät	PROPN	obligatory
 Kiimavaarat	PROPN	obligatory
-Kiimingin Kiekko-Pojat	PROPN	obligatory
-Kiimingin Urheilijat	PROPN	obligatory
 kiinankellosammakko	NOUN	common
 Kiinteistöpalvelut	PROPN	obligatory
 kiipijäkala	NOUN	common
@@ -3434,7 +3295,6 @@ Kiiskisharjut	PROPN	obligatory
 Kiiskiskarit	PROPN	obligatory
 Kiissellammit	PROPN	obligatory
 Kiistosaaret	PROPN	obligatory
-Kiitos Henkilöstöpalvelut	PROPN	obligatory
 kiittimet	NOUN	obligatory
 kiitäjälintu	NOUN	common
 kiivilintu	NOUN	common
@@ -3522,7 +3382,6 @@ Kirkkokivet	PROPN	obligatory
 Kirkkolahdet	PROPN	obligatory
 Kirkkoluodot	PROPN	obligatory
 Kirkkoniityt	PROPN	obligatory
-Kirkkonummen Urheilijat	PROPN	obligatory
 kirkkopäivät	NOUN	obligatory
 Kirkkosaaret	PROPN	obligatory
 Kirkkosalmet	PROPN	obligatory
@@ -3530,7 +3389,6 @@ Kirkkosärkät	PROPN	obligatory
 Kirkkotievat	PROPN	obligatory
 Kirkkovuoret	PROPN	obligatory
 kirkollisvaalit	NOUN	obligatory
-Kirkon Nuorisotyöntekijät	PROPN	obligatory
 Kirkonkarit	PROPN	obligatory
 kirkonkymmenykset	NOUN	obligatory
 kirkupöllöt	NOUN	obligatory
@@ -3585,7 +3443,6 @@ Kissavuoret	PROPN	obligatory
 Kisselinkalliot	PROPN	obligatory
 kistukset	NOUN	obligatory
 Kitasaaret	PROPN	obligatory
-Kiteen Urheilijat	PROPN	obligatory
 Kitinkalliot	PROPN	obligatory
 Kitinäinsaaret	PROPN	obligatory
 Kitisenahot	PROPN	obligatory
@@ -3690,7 +3547,6 @@ Kivivaarat	PROPN	obligatory
 Kiviveräjät	PROPN	obligatory
 Kivivuopajaharjut	PROPN	obligatory
 Kivivuopajanjängät	PROPN	obligatory
-Kivi-Värriön kummut	PROPN	obligatory
 Kivojankalliot	PROPN	obligatory
 Kivoonsaaret	PROPN	obligatory
 Klanunkalliot	PROPN	obligatory
@@ -3826,8 +3682,6 @@ Kokkokarit	PROPN	obligatory
 Kokkokummut	PROPN	obligatory
 Kokkolammet	PROPN	obligatory
 Kokkolammit	PROPN	obligatory
-Kokkolan Tiikerit	PROPN	obligatory
-Kokkolan Veikot	PROPN	obligatory
 Kokkoluodot	PROPN	obligatory
 Kokkomeret	PROPN	obligatory
 Kokkomäet	PROPN	obligatory
@@ -3858,7 +3712,6 @@ Koliahteenuhrit	PROPN	obligatory
 Kolijänkät	PROPN	obligatory
 Kolisevankalliot	PROPN	obligatory
 Kolisevansaaret	PROPN	obligatory
-Koliston Leppäkarit	PROPN	obligatory
 Kolisuonsaarekkeet	PROPN	obligatory
 Kolivuoret	PROPN	obligatory
 Koljosenahot	PROPN	obligatory
@@ -3876,7 +3729,6 @@ Kolleenlammit	PROPN	obligatory
 Kollonkalliot	PROPN	obligatory
 Kollumit	PROPN	obligatory
 Kolmekanttilammet	PROPN	obligatory
-Kolmen Aapon tievat	PROPN	obligatory
 Kolmenjuurakonkummut	PROPN	obligatory
 Kolmenkannanluodot	PROPN	obligatory
 Kolmetkarit	PROPN	obligatory
@@ -3973,7 +3825,6 @@ Konnalammit	PROPN	obligatory
 Konnankalliot	PROPN	obligatory
 Konnasaaret	PROPN	obligatory
 konnasammakko	NOUN	common
-Konneveden Urheilijat	PROPN	obligatory
 Konnikonpellot	PROPN	obligatory
 Konnot	PROPN	obligatory
 Konnunlammit	PROPN	obligatory
@@ -3989,7 +3840,6 @@ Kontinsaarekkeet	PROPN	obligatory
 Kontinsaaret	PROPN	obligatory
 Kontioharjut	PROPN	obligatory
 Kontiokurut	PROPN	obligatory
-Kontiolahden Urheilijat	PROPN	obligatory
 Kontiolammit	PROPN	obligatory
 Kontioluodot	PROPN	obligatory
 Kontiomäenrämeet	PROPN	obligatory
@@ -4119,10 +3969,8 @@ Korppiniemet	PROPN	obligatory
 Korppisaaret	PROPN	obligatory
 Korppistensaaret	PROPN	obligatory
 Korrilompolot	PROPN	obligatory
-Korson Palloilijat	PROPN	obligatory
 Korteaavankummut	PROPN	obligatory
 Korteaavanlammit	PROPN	obligatory
-Kortejängän puljut	PROPN	obligatory
 Kortejärvet	PROPN	obligatory
 Kortekallionvaarat	PROPN	obligatory
 kortekasvi	NOUN	common
@@ -4137,7 +3985,6 @@ Korteniityt	PROPN	obligatory
 Korteojanniityt	PROPN	obligatory
 Korteperänkankaat	PROPN	obligatory
 Kortesaaret	PROPN	obligatory
-Kortesjärven Järvi-Veikot	PROPN	obligatory
 Kortesjärvet	PROPN	obligatory
 Kortesnevankalliot	PROPN	obligatory
 Kortesnevankydöt	PROPN	obligatory
@@ -4187,9 +4034,7 @@ Koskelankalliot	PROPN	obligatory
 Koskelankydöt	PROPN	obligatory
 Koskelolammit	PROPN	obligatory
 Koskelosaaret	PROPN	obligatory
-Kosken Hautamaat	PROPN	obligatory
 Koskenalussaaret	PROPN	obligatory
-Koskenkorvan Urheilijat	PROPN	obligatory
 Koskenmäet	PROPN	obligatory
 Koskenniityt	PROPN	obligatory
 Koskenojankankaat	PROPN	obligatory
@@ -4229,10 +4074,8 @@ Kotiosaaret	PROPN	obligatory
 Kotipellot	PROPN	obligatory
 Kotisaaret	PROPN	obligatory
 Kotiseutu-uutiset	PROPN	obligatory
-Kotitalouden Kandidaatit	PROPN	obligatory
 Kotitalouspedagogiopiskelijat	PROPN	obligatory
 Kotkalammit	PROPN	obligatory
-Kotkan Työväen Palloilijat	PROPN	obligatory
 Kotkankalliot	PROPN	obligatory
 Kotkanlammit	PROPN	obligatory
 Kotkanluodot	PROPN	obligatory
@@ -4262,7 +4105,6 @@ Koukkulanlukot	PROPN	obligatory
 Koukkulanpellot	PROPN	obligatory
 Koukkusuot	PROPN	obligatory
 Kouklastunkivet	PROPN	obligatory
-Koulujen Musiikinopettajat	PROPN	obligatory
 Koulunkalliot	PROPN	obligatory
 Koulunsaaret	PROPN	obligatory
 kouluopinnot	NOUN	obligatory
@@ -4286,8 +4128,6 @@ Kouteroharjut	PROPN	obligatory
 Koutosenkalliot	PROPN	obligatory
 Kouverahot	PROPN	obligatory
 Kouvinkivet	PROPN	obligatory
-Kouvolan Pallonlyöjät	PROPN	obligatory
-Kouvolan Urheilijat	PROPN	obligatory
 Kouvot	PROPN	obligatory
 Kovankivet	PROPN	obligatory
 Kovanlamminharjut	PROPN	obligatory
@@ -4300,7 +4140,6 @@ kraitit	NOUN	obligatory
 Kramsunkalliot	PROPN	obligatory
 Kranninmaankalliot	PROPN	obligatory
 krassulat	NOUN	obligatory
-Kreikan Rodopit	PROPN	obligatory
 Kreuksenkalliot	PROPN	obligatory
 Kreunkalliot	PROPN	obligatory
 kriisinhallintajoukot	NOUN	obligatory
@@ -4559,9 +4398,6 @@ kuomuvaunu	NOUN	common
 Kuonansaaret	PROPN	obligatory
 kuonovalas	NOUN	common
 Kuopinpellot	PROPN	obligatory
-Kuopion laskuvarjourheilijat	PROPN	obligatory
-Kuopion Sisu-Veikot	PROPN	obligatory
-Kuopion urheilusukeltajat	PROPN	obligatory
 Kuopionlukot	PROPN	obligatory
 Kuoppajärventievat	PROPN	obligatory
 Kuoppalammit	PROPN	obligatory
@@ -4579,7 +4415,6 @@ Kuortiskummut	PROPN	obligatory
 Kuortisrimmet	PROPN	obligatory
 Kuortisrämeet	PROPN	obligatory
 kuorukka	NOUN	common
-Kuorvusseljän Männikkömuristat	PROPN	obligatory
 Kuosnuskarit	PROPN	obligatory
 Kuotmuttijärvet	PROPN	obligatory
 Kuotmuttipalot	PROPN	obligatory
@@ -4611,7 +4446,6 @@ Kurikkaniityt	PROPN	obligatory
 Kurikkapuronlammit	PROPN	obligatory
 Kurikkarämeet	PROPN	obligatory
 Kurinsuunpalot	PROPN	obligatory
-Kurisijan ja Keijitsan kentät	PROPN	obligatory
 Kurituksensaaret	PROPN	obligatory
 Kurjalankalliot	PROPN	obligatory
 Kurjalanpellot	PROPN	obligatory
@@ -4689,8 +4523,6 @@ kuuroleguaani	NOUN	common
 Kuuronkalliot	PROPN	obligatory
 Kuurosaaret	PROPN	obligatory
 kuusamakasvi	NOUN	common
-Kuusamon Erä-Veikot	PROPN	obligatory
-Kuusamon Pallo-Karhut	PROPN	obligatory
 Kuusanjoenkummut	PROPN	obligatory
 Kuusenojaharjut	PROPN	obligatory
 Kuusenojamaat	PROPN	obligatory
@@ -4706,12 +4538,10 @@ Kuusimäenkummut	PROPN	obligatory
 Kuusimäenlammit	PROPN	obligatory
 Kuusiniemet	PROPN	obligatory
 Kuusinivat	PROPN	obligatory
-Kuusi-Peuran kurut	PROPN	obligatory
 Kuusisaajot	PROPN	obligatory
 Kuusisaaret	PROPN	obligatory
 Kuusiseljänojat	PROPN	obligatory
 Kuusisenkarit	PROPN	obligatory
-Kuusiston linnanrauniot	PROPN	obligatory
 Kuusistonkalliot	PROPN	obligatory
 Kuusistonniitut	PROPN	obligatory
 Kuusistonpellot	PROPN	obligatory
@@ -4779,9 +4609,6 @@ Kyläntaustanjärvet	PROPN	obligatory
 Kylänvuomansaariot	PROPN	obligatory
 Kyläsaaret	PROPN	obligatory
 Kyläsavut	PROPN	obligatory
-Kymen yrittäjät	PROPN	obligatory
-Kymin Koskenpojat	PROPN	obligatory
-Kymin Suunnistajat	PROPN	obligatory
 Kyminkalliot	PROPN	obligatory
 Kyminkankaat	PROPN	obligatory
 Kymmenvuotiset	PROPN	obligatory
@@ -4974,7 +4801,6 @@ Köröttäjälammit	PROPN	obligatory
 kössimaila	NOUN	common
 Köykenelammit	PROPN	obligatory
 Köylinkalliot	PROPN	obligatory
-Köyliön Lallit	PROPN	obligatory
 Köysilammit	PROPN	obligatory
 köysiportaat	NOUN	obligatory
 köysitikapuut	NOUN	obligatory
@@ -5006,7 +4832,6 @@ Laavitsanlammit	PROPN	obligatory
 Laavulammit	PROPN	obligatory
 Laavurenkaanlammet	PROPN	obligatory
 Laesuonkalliot	PROPN	obligatory
-Lahden Laatuneliöt	PROPN	obligatory
 Lahdenkalliot	PROPN	obligatory
 Lahdenkarit	PROPN	obligatory
 Lahdenniitut	PROPN	obligatory
@@ -5040,7 +4865,6 @@ Laidonsaarekkeet	PROPN	obligatory
 Laihajoenpellot	PROPN	obligatory
 Laihatlammit	PROPN	obligatory
 Laihatsaaret	PROPN	obligatory
-Laihian Lujattaret	PROPN	obligatory
 Laijonsaarekkeet	PROPN	obligatory
 Laikonlammit	PROPN	obligatory
 lainahöyhenet	NOUN	obligatory
@@ -5170,7 +4994,6 @@ Lanttusaaret	PROPN	obligatory
 Lapalammit	PROPN	obligatory
 lapasampi	NOUN	common
 lapetikkaat	NOUN	obligatory
-Lapin Lomamatkat	PROPN	obligatory
 Lapinahot	PROPN	obligatory
 Lapinharjunkankaat	PROPN	obligatory
 Lapinhaudat	PROPN	obligatory
@@ -5191,10 +5014,8 @@ Lapiojärvet	PROPN	obligatory
 Lapiopäät	PROPN	obligatory
 Lapiosaaret	PROPN	obligatory
 Lapioselät	PROPN	obligatory
-Lappajärven Veikot	PROPN	obligatory
 Lappalaisenmellat	PROPN	obligatory
 Lappalakivet	PROPN	obligatory
-Lappeenrannan Urheilu-Miehet	PROPN	obligatory
 Lapsisaaret	PROPN	obligatory
 Lasarettikarit	PROPN	obligatory
 Lasarus-veljet	PROPN	obligatory
@@ -5208,10 +5029,8 @@ laskuportaat	NOUN	obligatory
 laskusiiveke	NOUN	common
 laskuvarjojoukot	NOUN	obligatory
 Lassilanniityt	PROPN	obligatory
-Lassin Joululammit	PROPN	obligatory
 Lassinsalmensaaret	PROPN	obligatory
 Lassinsuonkalliot	PROPN	obligatory
-Lastenklinikoiden Kummit	PROPN	obligatory
 lastenkutsut	NOUN	obligatory
 lastenrattaat	NOUN	obligatory
 lastenvaunut	NOUN	obligatory
@@ -5271,7 +5090,6 @@ Launaset	PROPN	obligatory
 Launaskukkulat	PROPN	obligatory
 Launionkankaat	PROPN	obligatory
 Launiovuoret	PROPN	obligatory
-Laurean alumnit	PROPN	obligatory
 Laurikaiset	PROPN	obligatory
 Laurinkalliot	PROPN	obligatory
 Laurinkylät	PROPN	obligatory
@@ -5584,7 +5402,6 @@ Likopuronniityt	PROPN	obligatory
 Likosaaret	PROPN	obligatory
 Likoset	PROPN	obligatory
 liljapuu	NOUN	common
-Lillbackan kuljetus- ja huolintayhtiöt	PROPN	obligatory
 limaajakala	NOUN	common
 limaajat	NOUN	obligatory
 limabakteeri	NOUN	common
@@ -5658,11 +5475,9 @@ Litmankalliot	PROPN	obligatory
 Litmasenkankaat	PROPN	obligatory
 Litmonlammit	PROPN	obligatory
 Litmonpellot	PROPN	obligatory
-Littoisten Työväen Urheilijat	PROPN	obligatory
 Littukalliot	PROPN	obligatory
 Littuniityt	PROPN	obligatory
 Litukanlahdet	PROPN	obligatory
-Liturgiset veljet	PROPN	obligatory
 litutilli	NOUN	common
 Liuhanpellot	PROPN	obligatory
 Liukkuniemet	PROPN	obligatory
@@ -5686,8 +5501,6 @@ Lohisarriot	PROPN	obligatory
 Lohisensaaret	PROPN	obligatory
 Lohkonkalliot	PROPN	obligatory
 Loikkalanvuoret	PROPN	obligatory
-Loimaan Korikonkarit	PROPN	obligatory
-Loimaan Palloilijat	PROPN	obligatory
 loiskimalaiset	NOUN	obligatory
 Loislammit	PROPN	obligatory
 loistokardinaali	NOUN	common
@@ -5798,7 +5611,6 @@ Luhtasensaaret	PROPN	obligatory
 Luhtatiikit	PROPN	obligatory
 Luhtiisniemensaaret	PROPN	obligatory
 Luhtilaksot	PROPN	obligatory
-Luikon Välikankaat	PROPN	obligatory
 Luikonlammit	PROPN	obligatory
 Luiskinkarit	PROPN	obligatory
 luistin	NOUN	common
@@ -5955,7 +5767,6 @@ Länkimäenkalliot	PROPN	obligatory
 Länkisaaret	PROPN	obligatory
 länkisääri	NOUN	common
 Länkivaarat	PROPN	obligatory
-Lännen Tehtaat	PROPN	obligatory
 Lännenkarit	PROPN	obligatory
 Lännenkivet	PROPN	obligatory
 Lännenluhdat	PROPN	obligatory
@@ -5967,7 +5778,6 @@ Länsipellot	PROPN	obligatory
 Länsiriutat	PROPN	obligatory
 Länsisaarenmatalat	PROPN	obligatory
 länsisuhteet	NOUN	obligatory
-Länsi-Uudenmaan Urheilijat	PROPN	obligatory
 länsivallat	NOUN	obligatory
 Länskalliot	PROPN	obligatory
 Läntänniitut	PROPN	obligatory
@@ -6024,20 +5834,16 @@ Maalatkarit	PROPN	obligatory
 Maaliskuulaiset	PROPN	obligatory
 maalisvaalit	NOUN	obligatory
 Maamasuonniitut	PROPN	obligatory
-Maan ystävät	PROPN	obligatory
-Maan Ystävät	PROPN	obligatory
 Maaninkasaaret	PROPN	obligatory
 Maankaulamaat	PROPN	obligatory
 Maannenänniityt	PROPN	obligatory
 Maannokkalammit	PROPN	obligatory
 Maanpäänkalliot	PROPN	obligatory
-Maanrakennus Katupojat	PROPN	obligatory
 Maanselänkalliot	PROPN	obligatory
 Maantiejärvet	PROPN	obligatory
 Maantiekalliot	PROPN	obligatory
 Maantiekummut	PROPN	obligatory
 Maantielammit	PROPN	obligatory
-Maantieteen Opiskelijat	PROPN	obligatory
 maaorava	NOUN	common
 maapäivät	NOUN	obligatory
 maapäivävaalit	NOUN	obligatory
@@ -6200,7 +6006,6 @@ marskiheinä	NOUN	common
 Marskinkarit	PROPN	obligatory
 Marssimalammit	PROPN	obligatory
 Marstavinpellot	PROPN	obligatory
-Martin Kotajärvet	PROPN	obligatory
 Martinkalliot	PROPN	obligatory
 Martinkankaat	PROPN	obligatory
 Martinkarit	PROPN	obligatory
@@ -6211,7 +6016,6 @@ Martinniityt	PROPN	obligatory
 Martinsaaret	PROPN	obligatory
 Marttilot	PROPN	obligatory
 marunakana	NOUN	common
-Maskaseljän Soklomat	PROPN	obligatory
 Massisaaret	PROPN	obligatory
 Mastolamminkummut	PROPN	obligatory
 Mastonkalliot	PROPN	obligatory
@@ -6241,10 +6045,8 @@ Matinsaajot	PROPN	obligatory
 Matinsaaret	PROPN	obligatory
 Matinsuonsaaret	PROPN	obligatory
 Matinsuot	PROPN	obligatory
-Matka-aavan lammit	PROPN	obligatory
 Matka-ahot	PROPN	obligatory
 Matkaharjut	PROPN	obligatory
-Matkailu- ja Ravintolapalvelut	PROPN	obligatory
 matkailutulot	NOUN	obligatory
 Matkakankaat	PROPN	obligatory
 Matkalammit	PROPN	obligatory
@@ -6286,7 +6088,6 @@ Maurunkalliot	PROPN	obligatory
 Mehtosenniityt	PROPN	obligatory
 Mehtostenniitut	PROPN	obligatory
 Mehtälänniityt	PROPN	obligatory
-Meijerialan Ammattilaiset	PROPN	obligatory
 meikkilasit	NOUN	obligatory
 Meiningit	PROPN	obligatory
 Meisvuorenpellot	PROPN	obligatory
@@ -6344,7 +6145,6 @@ mesiheinä	NOUN	common
 Mesiönlammit	PROPN	obligatory
 Meskensaaret	PROPN	obligatory
 messu	NOUN	common
-Messukylän Toverit	PROPN	obligatory
 Messusaaret	PROPN	obligatory
 messut	NOUN	obligatory
 Mestarinikkarit	PROPN	obligatory
@@ -6359,7 +6159,6 @@ Metsolammit	PROPN	obligatory
 Metsonlaulukankaat	PROPN	obligatory
 Metsosaaret	PROPN	obligatory
 Metsovuoret	PROPN	obligatory
-Metsäalan Asiantuntijat	PROPN	obligatory
 Metsäjärvenkankaat	PROPN	obligatory
 Metsäkurut	PROPN	obligatory
 Metsäkäälyt	PROPN	obligatory
@@ -6368,7 +6167,6 @@ Metsälappalaisojanlammit	PROPN	obligatory
 Metsämäenkalliot	PROPN	obligatory
 Metsäpellot	PROPN	obligatory
 Metsäpirtinkalliot	PROPN	obligatory
-Metsä-Ruonan lammit	PROPN	obligatory
 Metsäsiankivet	PROPN	obligatory
 Metsäsianlouhet	PROPN	obligatory
 Metsäsianrounikot	PROPN	obligatory
@@ -6406,16 +6204,12 @@ miinuslasit	NOUN	obligatory
 mikaniat	NOUN	obligatory
 Mikenti-Yhtiöt	PROPN	obligatory
 Mikinsaaret	PROPN	obligatory
-Mikkelin Hiihtäjät	PROPN	obligatory
-Mikkelin Kilpa-Veikot	PROPN	obligatory
-Mikkelin Passarit	PROPN	obligatory
 Mikkelinkarit	PROPN	obligatory
 Mikkelinsaaret	PROPN	obligatory
 Mikkelinsuot	PROPN	obligatory
 Mikkellammit	PROPN	obligatory
 Mikkolankalliot	PROPN	obligatory
 Mikkolansaaret	PROPN	obligatory
-Mikon Jaakon Ahvenjärvet	PROPN	obligatory
 Mikonkarit	PROPN	obligatory
 Mikonojanvuoret	PROPN	obligatory
 Mikonsaaret	PROPN	obligatory
@@ -6432,7 +6226,6 @@ Misolannurmet	PROPN	obligatory
 Mittametsänsaaret	PROPN	obligatory
 mittasakset	NOUN	obligatory
 mittasuhteet	NOUN	obligatory
-Moikan Harrijärvet	PROPN	obligatory
 Moikkelosaaret	PROPN	obligatory
 mokkasiini	NOUN	common
 molemmat	PRON	obligatory
@@ -6470,8 +6263,6 @@ Mouruvaarat	PROPN	obligatory
 Mudaistenluodot	PROPN	obligatory
 Mudastenniitut	PROPN	obligatory
 Muhkuranniitut	PROPN	obligatory
-Muhoksen Pallo-Salamat	PROPN	obligatory
-Muhoksen Urheilijat	PROPN	obligatory
 Muhonvuoret	PROPN	obligatory
 Muhostenniityt	PROPN	obligatory
 Muikkukarit	PROPN	obligatory
@@ -6533,7 +6324,6 @@ Munttilanpurnut	PROPN	obligatory
 munuainen	NOUN	common
 muodostamiskulu	NOUN	common
 muonavarat	NOUN	obligatory
-Muonion Tunturi-Veikot	PROPN	obligatory
 Muotkahaudanharjut	PROPN	obligatory
 Muotkalammit	PROPN	obligatory
 Muotkankummut	PROPN	obligatory
@@ -6673,7 +6463,6 @@ Muuraiskivet	PROPN	obligatory
 Muuraisluodot	PROPN	obligatory
 Muuraissaaret	PROPN	obligatory
 Muuraisvuoret	PROPN	obligatory
-Muuramen Urheilijat	PROPN	obligatory
 Muurametalot	PROPN	obligatory
 Muuramsuot	PROPN	obligatory
 Muuranlammit	PROPN	obligatory
@@ -6741,7 +6530,6 @@ myskisorsa	NOUN	common
 Myssylammit	PROPN	obligatory
 myssymaneetti	NOUN	common
 myyjäiset	NOUN	obligatory
-Myynnin ja markkinoinnin ammattilaiset	PROPN	obligatory
 myyntikulu	NOUN	common
 myyntitulot	NOUN	obligatory
 Myyränmättäät	PROPN	obligatory
@@ -6781,7 +6569,6 @@ Männikönkydöt	PROPN	obligatory
 Männikönlammit	PROPN	obligatory
 Männistönsaajot	PROPN	obligatory
 Männistönsillanniityt	PROPN	obligatory
-Mäntsälän Urheilijat	PROPN	obligatory
 Mäntyharjunkankaat	PROPN	obligatory
 Mäntykarit	PROPN	obligatory
 mäntykasvi	NOUN	common
@@ -6836,7 +6623,6 @@ Naalinkalliot	PROPN	obligatory
 naamakukkaiskasvi	NOUN	common
 naamiaiset	NOUN	obligatory
 naamiaisjuhla	NOUN	common
-Naantalin Koripalloilijat	PROPN	obligatory
 Naapinkalliot	PROPN	obligatory
 Naapurisaaret	PROPN	obligatory
 naapurukset	NOUN	obligatory
@@ -6860,14 +6646,12 @@ Nahkiaislehdot	PROPN	obligatory
 Naimansaaret	PROPN	obligatory
 Naimasaaret	PROPN	obligatory
 naistentanssit	NOUN	obligatory
-Nakkilan Paterit	PROPN	obligatory
 Nallatievat	PROPN	obligatory
 Nallitievat	PROPN	obligatory
 namu	NOUN	common
 nandut	NOUN	obligatory
 Napakivet	PROPN	obligatory
 Napalankalliot	PROPN	obligatory
-Napapiirin Palloketut	PROPN	obligatory
 Napavuoret	PROPN	obligatory
 Nappavaarat	PROPN	obligatory
 Nappiahot	PROPN	obligatory
@@ -6901,7 +6685,6 @@ Navettakankaat	PROPN	obligatory
 Navettomankalliot	PROPN	obligatory
 neidonkieli	NOUN	common
 Neihtyensaaret	PROPN	obligatory
-Neitijärven kämpät	PROPN	obligatory
 Neitikoskensaaret	PROPN	obligatory
 Neitiniemenniityt	PROPN	obligatory
 Neitivaarat	PROPN	obligatory
@@ -7015,9 +6798,7 @@ Nikittäjänharjut	PROPN	obligatory
 Nikkarinkalliot	PROPN	obligatory
 Nikkilänkalliot	PROPN	obligatory
 Nikobaarit	PROPN	obligatory
-Nikolain Kenkäheinälammet	PROPN	obligatory
 Nikolainrakat	PROPN	obligatory
-Nikolan Pitkätkorvet	PROPN	obligatory
 Nikosensaaret	PROPN	obligatory
 Nikovaltosenpellot	PROPN	obligatory
 Nikulilammit	PROPN	obligatory
@@ -7030,7 +6811,6 @@ Nilkunkalliot	PROPN	obligatory
 Nillunkankaat	PROPN	obligatory
 Niloskalliot	PROPN	obligatory
 Nilottupetäjäjärvet	PROPN	obligatory
-Nilsiän Pallo-Haukat	PROPN	obligatory
 Nimettömänlammit	PROPN	obligatory
 Nimettömänsuonlammit	PROPN	obligatory
 Nimettömät	PROPN	obligatory
@@ -7063,7 +6843,6 @@ nitraattibakteeri	NOUN	common
 nitriittibakteeri	NOUN	common
 Niuransaaret	PROPN	obligatory
 Nivajärvet	PROPN	obligatory
-Nivalan Urheilijat	PROPN	obligatory
 Nivanniityt	PROPN	obligatory
 Nivarinsaaret	PROPN	obligatory
 nivelkotilo	NOUN	common
@@ -7081,9 +6860,6 @@ Noivioharjut	PROPN	obligatory
 nojapuut	NOUN	obligatory
 Nojostinkummut	PROPN	obligatory
 Nojostinpuljut	PROPN	obligatory
-Nokian Profiilit	PROPN	obligatory
-Nokian Renkaat	PROPN	obligatory
-Nokian Urheilijat	PROPN	obligatory
 Nokiharjut	PROPN	obligatory
 Nokilammet	PROPN	obligatory
 nokkaeläin	NOUN	common
@@ -7128,12 +6904,9 @@ Nuolilammit	PROPN	obligatory
 Nuolinginlammit	PROPN	obligatory
 Nuolismaat	PROPN	obligatory
 Nuolisärkät	PROPN	obligatory
-Nuolivaaran Pohjassuot	PROPN	obligatory
 Nuoluskankaat	PROPN	obligatory
 Nuoluslammit	PROPN	obligatory
 Nuolusrovat	PROPN	obligatory
-Nuoret Kotkat	PROPN	obligatory
-Nuoret Lakimiehet	PROPN	obligatory
 Nuoretahot	PROPN	obligatory
 Nuorgaminnivat	PROPN	obligatory
 Nuorikonlammit	PROPN	obligatory
@@ -7143,7 +6916,6 @@ nuorisotila	NOUN	common
 nuorisotilat	NOUN	obligatory
 Nuorliberaalit	PROPN	obligatory
 Nuorsuomalaiset	PROPN	obligatory
-Nuorten Ystävät	PROPN	obligatory
 Nuotanperäkummut	PROPN	obligatory
 Nuottajärvensuot	PROPN	obligatory
 Nuottakotaluodot	PROPN	obligatory
@@ -7160,7 +6932,6 @@ Nurkanpellot	PROPN	obligatory
 Nurkkaluolat	PROPN	obligatory
 Nurkkavaarankalliot	PROPN	obligatory
 Nurmaanniitut	PROPN	obligatory
-Nurmeksen Sepot	PROPN	obligatory
 Nurmelaisensaaret	PROPN	obligatory
 Nurmensaaret	PROPN	obligatory
 Nurmisaaret	PROPN	obligatory
@@ -7178,7 +6949,6 @@ Nuutilansuot	PROPN	obligatory
 Nuutinkullaanahteet	PROPN	obligatory
 Nuutisenlammit	PROPN	obligatory
 Nuuvinsaaret	PROPN	obligatory
-Nygrenin Teyrilammit	PROPN	obligatory
 nykyolot	NOUN	obligatory
 Nypönniityt	PROPN	obligatory
 Nyrkiänkalliot	PROPN	obligatory
@@ -7230,7 +7000,6 @@ Ohramaankaarat	PROPN	obligatory
 Ohtalammit	PROPN	obligatory
 Ohtaojanhaarat	PROPN	obligatory
 Oijosvuorenkalliot	PROPN	obligatory
-Oijärven Matkakummut	PROPN	obligatory
 oikeasilmäkampela	NOUN	common
 oikeistovoimat	NOUN	obligatory
 oikeudenkäyntikulut	NOUN	obligatory
@@ -7308,14 +7077,12 @@ oopperafestivaalit	NOUN	obligatory
 oopperajuhlat	NOUN	obligatory
 Opatanniitut	PROPN	obligatory
 Opatanniityt	PROPN	obligatory
-open house -kutsut	NOUN	obligatory
 opinnot	NOUN	obligatory
 opiskelutoverukset	NOUN	obligatory
 OP-Palvelut	PROPN	obligatory
 oppirahat	NOUN	obligatory
 optiomarkkinat	NOUN	obligatory
 orakot	NOUN	obligatory
-Oral Hammaslääkärit	PROPN	obligatory
 Orankijoensaajot	PROPN	obligatory
 Orankisaaret	PROPN	obligatory
 Oravaharjut	PROPN	obligatory
@@ -7370,7 +7137,6 @@ Oudonpääsuot	PROPN	obligatory
 Oudonrimmit	PROPN	obligatory
 Oulanganlatvakummut	PROPN	obligatory
 Ouloukonkalliot	PROPN	obligatory
-Oulun Kärpät	PROPN	obligatory
 Oulunvuoret	PROPN	obligatory
 Ourankalliot	PROPN	obligatory
 Ourit	PROPN	obligatory
@@ -7429,7 +7195,6 @@ Pahanojanpalot	PROPN	obligatory
 Pahanojansaaret	PROPN	obligatory
 Pahanojanvaarat	PROPN	obligatory
 Pahanpuronniityt	PROPN	obligatory
-Pahanropakon Saukkolammit	PROPN	obligatory
 Pahansillanniitut	PROPN	obligatory
 Pahansillanpellot	PROPN	obligatory
 Pahansuonlammit	PROPN	obligatory
@@ -7504,7 +7269,6 @@ Pakajärvet	PROPN	obligatory
 pakara	NOUN	common
 Pakarisaaret	PROPN	obligatory
 Pakinkarinpauhat	PROPN	obligatory
-Pakinkylän Veljet	PROPN	obligatory
 Pakkaslammit	PROPN	obligatory
 pakkauskulut	NOUN	obligatory
 pakkauskustannukset	NOUN	obligatory
@@ -7694,7 +7458,6 @@ Parilammit	PROPN	obligatory
 Pariluodot	PROPN	obligatory
 Parinkosket	PROPN	obligatory
 Parisaaret	PROPN	obligatory
-Parkanon Urheilijat	PROPN	obligatory
 parkettilaatta	NOUN	common
 Parkkikalliot	PROPN	obligatory
 Parkkisaaret	PROPN	obligatory
@@ -7765,13 +7528,11 @@ Patinkalliot	PROPN	obligatory
 Patojärvet	PROPN	obligatory
 Patokosket	PROPN	obligatory
 Patoluodot	PROPN	obligatory
-Patoniemen saajot	PROPN	obligatory
 Patonivat	PROPN	obligatory
 Patopäänsaaret	PROPN	obligatory
 Patosaaret	PROPN	obligatory
 Patramonlammit	PROPN	obligatory
 Patrikansaaret	PROPN	obligatory
-Pattijoen Urheilijat	PROPN	obligatory
 Pattijärvet	PROPN	obligatory
 Pattoonlammit	PROPN	obligatory
 Patvistonsuot	PROPN	obligatory
@@ -7804,7 +7565,6 @@ Pekinniityt	PROPN	obligatory
 Pekkalankalliot	PROPN	obligatory
 Pekkalansaaret	PROPN	obligatory
 Pekkaojankankaat	PROPN	obligatory
-Pekka-äijän tievat	PROPN	obligatory
 Pekkosaarensalmet	PROPN	obligatory
 Pekkusenlammit	PROPN	obligatory
 Pekonsaaret	PROPN	obligatory
@@ -7821,7 +7581,6 @@ Pelmanninkarit	PROPN	obligatory
 peltisakset	NOUN	obligatory
 Peltlahdensuot	PROPN	obligatory
 Peltoalasenkarit	PROPN	obligatory
-Pelto-Heikin niitut	PROPN	obligatory
 Pelto-Juutit	PROPN	obligatory
 Peltojärvenpalot	PROPN	obligatory
 Peltokedot	PROPN	obligatory
@@ -7885,7 +7644,6 @@ Perkkiönsuot	PROPN	obligatory
 Perluodot	PROPN	obligatory
 Permosankalliot	PROPN	obligatory
 Pernalammit	PROPN	obligatory
-Perniön Urheilijat	PROPN	obligatory
 Pernunlammit	PROPN	obligatory
 persaukset	NOUN	obligatory
 Persauslammit	PROPN	obligatory
@@ -7897,12 +7655,10 @@ Perssilmänlammit	PROPN	obligatory
 persukset	NOUN	obligatory
 persuukset	NOUN	obligatory
 Pertanojanniityt	PROPN	obligatory
-Perttelin Peikot	PROPN	obligatory
 Perttulinsuot	PROPN	obligatory
 Perttupuronrimmit	PROPN	obligatory
 Pertunkarit	PROPN	obligatory
 peru	NOUN	common
-Perungan Pojat	PROPN	obligatory
 Perusaaret	PROPN	obligatory
 perushankinnat	NOUN	obligatory
 Perussuomalaiset	PROPN	obligatory
@@ -7945,7 +7701,6 @@ pestimarkkinat	NOUN	obligatory
 pestuumarkkinat	NOUN	obligatory
 Pesuankalliot	PROPN	obligatory
 pesutarvike	NOUN	common
-Pesä Ysit	PROPN	obligatory
 Pesäkivet	PROPN	obligatory
 Pesälamminaavat	PROPN	obligatory
 Pesälammit	PROPN	obligatory
@@ -8009,7 +7764,6 @@ Peuravuoret	PROPN	obligatory
 Peurolammit	PROPN	obligatory
 pidot	NOUN	obligatory
 Piekanasaaret	PROPN	obligatory
-Pieksämäen Pallo-Sepot	PROPN	obligatory
 Pielislammit	PROPN	obligatory
 Pienajänkänharjut	PROPN	obligatory
 Pienenlahdenvuoret	PROPN	obligatory
@@ -8142,7 +7896,6 @@ Pikkukovankalliot	PROPN	obligatory
 Pikkukummut	PROPN	obligatory
 Pikku-Kutkut	PROPN	obligatory
 Pikkukydöt	PROPN	obligatory
-Pikku-Köyrisen saaret	PROPN	obligatory
 Pikkulaentievat	PROPN	obligatory
 Pikkulamminaavanmaat	PROPN	obligatory
 Pikkulamminkankaat	PROPN	obligatory
@@ -8203,13 +7956,10 @@ pippuriköynnös	NOUN	common
 Piraattinuoret	PROPN	obligatory
 Piransärkät	PROPN	obligatory
 Pirilänkedot	PROPN	obligatory
-Pirin Koukolammit	PROPN	obligatory
 Pirinkuvelammit	PROPN	obligatory
 Pirisaaret	PROPN	obligatory
 Pirjonniityt	PROPN	obligatory
-Pirkanmaan Yrittäjät	PROPN	obligatory
 Pirkkalaiskirjailijat	PROPN	obligatory
-Pirkkalan Hiihtäjät	PROPN	obligatory
 Pirkonkalliot	PROPN	obligatory
 Pirkonsaajot	PROPN	obligatory
 Pirkonsaaret	PROPN	obligatory
@@ -8227,7 +7977,6 @@ Pirtintakaset	PROPN	obligatory
 Pirttijärvenkalliot	PROPN	obligatory
 Pirttikaaranrämeet	PROPN	obligatory
 Pirttikankaat	PROPN	obligatory
-Pirttilammen lehtokorvet	PROPN	obligatory
 Pirttilammit	PROPN	obligatory
 Pirttilehdonkankaat	PROPN	obligatory
 Pirttimänniköt	PROPN	obligatory
@@ -8284,7 +8033,6 @@ Pitkänmännynpellot	PROPN	obligatory
 Pitkänniemensaaret	PROPN	obligatory
 pitkänokkatikka	NOUN	common
 Pitkänpalot	PROPN	obligatory
-Pitkän-Partasen selkoset	PROPN	obligatory
 Pitkänpervonkalliot	PROPN	obligatory
 Pitkänperänkankaat	PROPN	obligatory
 Pitkänperänlammit	PROPN	obligatory
@@ -8348,13 +8096,11 @@ Pohjat	PROPN	obligatory
 pohjatiedot	NOUN	obligatory
 Pohjattomanlammit	PROPN	obligatory
 Pohjoisenniityt	PROPN	obligatory
-Pohjoiset Sporadit	PROPN	obligatory
 Pohjoiskalliot	PROPN	obligatory
 Pohjoislahdenkankaat	PROPN	obligatory
 Pohjoislammit	PROPN	obligatory
 Pohjois-Mariaanit	PROPN	obligatory
 Pohjoissalmensaaret	PROPN	obligatory
-Pohjois-Suomen Rautatieharrastajat	PROPN	obligatory
 Pohjoistenniitut	PROPN	obligatory
 Pohjois-Vogeesit	PROPN	obligatory
 Pohjolanmökinpellot	PROPN	obligatory
@@ -8383,8 +8129,6 @@ Pojannonmäet	PROPN	obligatory
 Pojansuonsaaret	PROPN	obligatory
 poka	NOUN	common
 Poleluolikot	PROPN	obligatory
-Poliisihallinnon Päälliköt ja Asiantuntijat	PROPN	obligatory
-Politiikan toimittajat	PROPN	obligatory
 Politimankuusikot	PROPN	obligatory
 polkupyöräjoukot	NOUN	obligatory
 Polkusaaret	PROPN	obligatory
@@ -8416,8 +8160,6 @@ Poralinmäet	PROPN	obligatory
 pore	NOUN	common
 Porhonsaaret	PROPN	obligatory
 Porhot	PROPN	obligatory
-Porin Pesäkarhut	PROPN	obligatory
-Porin teekkarit	PROPN	obligatory
 Porkansaaret	PROPN	obligatory
 Porkkakylät	PROPN	obligatory
 Porkkalammit	PROPN	obligatory
@@ -8494,7 +8236,6 @@ preeriavaunu	NOUN	common
 preeriaviklo	NOUN	common
 priiniat	NOUN	obligatory
 prillit	NOUN	obligatory
-Primula Ravintolat	PROPN	obligatory
 promootio	NOUN	common
 Propaganda-Aseveljet	PROPN	obligatory
 protestivaalit	NOUN	obligatory
@@ -8552,8 +8293,6 @@ Pulasteenniityt	PROPN	obligatory
 pulisonki	NOUN	common
 Pulituurilammet	PROPN	obligatory
 Puljerinriutat	PROPN	obligatory
-Puljukosken puljut	PROPN	obligatory
-Puljun Kiimatievat	PROPN	obligatory
 Puljunpalonlammit	PROPN	obligatory
 Puljunsaaret	PROPN	obligatory
 Puljut	PROPN	obligatory
@@ -8620,7 +8359,6 @@ Puppelit	PROPN	obligatory
 Puralanpellot	PROPN	obligatory
 Purat	PROPN	obligatory
 Purenpellot	PROPN	obligatory
-Purhan Ruskiat	PROPN	obligatory
 purjekala	NOUN	common
 Purjeluodot	PROPN	obligatory
 Purkajärvet	PROPN	obligatory
@@ -8721,7 +8459,6 @@ Pyhäkurunharjut	PROPN	obligatory
 pyhäkuteet	NOUN	obligatory
 Pyhälamminkankaat	PROPN	obligatory
 Pyhänpäänsaaret	PROPN	obligatory
-Pyhäselän Urheilijat	PROPN	obligatory
 pyhätamineet	NOUN	obligatory
 pyhävaatteet	NOUN	obligatory
 pyjamabileet	NOUN	obligatory
@@ -8789,12 +8526,10 @@ Pyötikönkosket	PROPN	obligatory
 Pyövelinluodot	PROPN	obligatory
 pähkinähiiri	NOUN	common
 pähkinäsakset	NOUN	obligatory
-Päijät-Hämeen Kylät	PROPN	obligatory
 päitset	NOUN	obligatory
 Päivilänkummut	PROPN	obligatory
 Päiväkarit	PROPN	obligatory
 Päiväkarrat	PROPN	obligatory
-Päivän Nuoret	PROPN	obligatory
 Päiväniemenkarit	PROPN	obligatory
 päivänkorento	NOUN	common
 päivänliljakasvi	NOUN	common
@@ -8804,7 +8539,6 @@ päivätanssit	NOUN	obligatory
 Päivättömänmäet	PROPN	obligatory
 Päkinkankaansaaret	PROPN	obligatory
 Päkinlähteet	PROPN	obligatory
-Päksholman sisähellit	PROPN	obligatory
 Pälvisaaret	PROPN	obligatory
 Pännärikalliot	PROPN	obligatory
 Pärekalliot	PROPN	obligatory
@@ -8856,7 +8590,6 @@ pääsylipputulot	NOUN	obligatory
 päättäjäiset	NOUN	obligatory
 Päätylammit	PROPN	obligatory
 päätössanat	NOUN	obligatory
-Pää-Äljyn lammit	PROPN	obligatory
 Pöhlökönkydöt	PROPN	obligatory
 Pöhriäisensaaret	PROPN	obligatory
 Pöhvinkalliot	PROPN	obligatory
@@ -8908,7 +8641,6 @@ Pöykynsaaret	PROPN	obligatory
 Pöyrykummut	PROPN	obligatory
 Pöyrynmaansaaret	PROPN	obligatory
 Pöyrysenkankaat	PROPN	obligatory
-Pöytyän Urheilijat	PROPN	obligatory
 pöytähopeat	NOUN	obligatory
 Pöytäkalliot	PROPN	obligatory
 Pöytäkivenvuoret	PROPN	obligatory
@@ -8950,7 +8682,6 @@ Raesärkät	PROPN	obligatory
 raffiapalmut	NOUN	obligatory
 raha-arpajaiset	NOUN	obligatory
 rahamarkkinat	NOUN	obligatory
-Raha-Matin saaret	PROPN	obligatory
 Rahasaaret	PROPN	obligatory
 rahavarat	NOUN	obligatory
 Rahikaisenkarit	PROPN	obligatory
@@ -8989,7 +8720,6 @@ Raistamonvuoret	PROPN	obligatory
 Raitaluodot	PROPN	obligatory
 Raitiosaaret	PROPN	obligatory
 Raittinaarantievat	PROPN	obligatory
-Raittiuden Ystävät	PROPN	obligatory
 Raittiuskalliot	PROPN	obligatory
 Raivaussaaret	PROPN	obligatory
 Raivioluodonkivet	PROPN	obligatory
@@ -9027,12 +8757,9 @@ Rajavaarat	PROPN	obligatory
 Rajavuorenluhdat	PROPN	obligatory
 Rajavuoret	PROPN	obligatory
 Rajosaaret	PROPN	obligatory
-Rakennusinsinöörit ja -arkkitehdit	PROPN	obligatory
 Rakennuskankaat	PROPN	obligatory
 rakennuskustannukset	NOUN	obligatory
-Rakennusperinteen Ystävät	PROPN	obligatory
 Rakennussaaret	PROPN	obligatory
-Rakin Kotkan luodot	PROPN	obligatory
 Rakitsat	PROPN	obligatory
 Rakkakummut	PROPN	obligatory
 Rakkalammit	PROPN	obligatory
@@ -9074,7 +8801,6 @@ Rantaniityt	PROPN	obligatory
 Rantapellot	PROPN	obligatory
 Rantapeltoinsärkät	PROPN	obligatory
 Rantariutat	PROPN	obligatory
-Rantasalmen Urheilijat	PROPN	obligatory
 Rantatievat	PROPN	obligatory
 rantavaate	NOUN	common
 Rantosuonvuoret	PROPN	obligatory
@@ -9152,7 +8878,6 @@ rauhanturvajoukot	NOUN	obligatory
 Rauhasaaret	PROPN	obligatory
 Rauhastonsaaret	PROPN	obligatory
 Rauhionniityt	PROPN	obligatory
-Rauman Työväen Urheilijat	PROPN	obligatory
 Raumankalliot	PROPN	obligatory
 Rauniosaaret	PROPN	obligatory
 Rauniovedenluodot	PROPN	obligatory
@@ -9179,7 +8904,6 @@ Rautusaarennivat	PROPN	obligatory
 Raututunturit	PROPN	obligatory
 Ravalinlammit	PROPN	obligatory
 ravet	NOUN	obligatory
-Raviikin Itähellit	PROPN	obligatory
 ravikilpailut	NOUN	obligatory
 ravinnevarat	NOUN	obligatory
 raviratas	NOUN	common
@@ -9202,7 +8926,6 @@ Rekilammit	PROPN	obligatory
 Rekiluodot	PROPN	obligatory
 Rekisaaret	PROPN	obligatory
 Rekkorilammit	PROPN	obligatory
-Rekolan Urheilijat	PROPN	obligatory
 Rekolanvuoret	PROPN	obligatory
 Rekoolilammit	PROPN	obligatory
 Rekoolinkarit	PROPN	obligatory
@@ -9292,7 +9015,6 @@ Riihikosket	PROPN	obligatory
 Riihilamminkalliot	PROPN	obligatory
 Riihilammit	PROPN	obligatory
 Riihilomat	PROPN	obligatory
-Riihimäen Kiekko-Nikkarit	PROPN	obligatory
 Riihiniitunvuoret	PROPN	obligatory
 Riihipellot	PROPN	obligatory
 Riihisaaret	PROPN	obligatory
@@ -9390,7 +9112,6 @@ Ristikalliot	PROPN	obligatory
 Ristikivenpellot	PROPN	obligatory
 Ristikurunnotkonkalliot	PROPN	obligatory
 Ristikurunrämeet	PROPN	obligatory
-Ristilammin Harjut	PROPN	obligatory
 Ristilamminahot	PROPN	obligatory
 Ristilammit	PROPN	obligatory
 Ristiluodot	PROPN	obligatory
@@ -9479,7 +9200,6 @@ Roitot	PROPN	obligatory
 Rojottiharjut	PROPN	obligatory
 Rojottilammit	PROPN	obligatory
 Rojunpellot	PROPN	obligatory
-Rokamovaaran lammit	PROPN	obligatory
 Rokasenniityt	PROPN	obligatory
 Rokkalammit	PROPN	obligatory
 Rokkalanniityt	PROPN	obligatory
@@ -9545,7 +9265,6 @@ Rovapäänlammit	PROPN	obligatory
 Rovasenletot	PROPN	obligatory
 Roviosaaret	PROPN	obligatory
 Rovit	PROPN	obligatory
-Royal Ravintolat	PROPN	obligatory
 rubiinityranni	NOUN	common
 Rudonniityt	PROPN	obligatory
 Ruhmut	PROPN	obligatory
@@ -9557,7 +9276,6 @@ Ruinunkalliot	PROPN	obligatory
 ruismaltaat	NOUN	obligatory
 Ruisniemet	PROPN	obligatory
 Ruissaaret	PROPN	obligatory
-Ruissalon patterit	PROPN	obligatory
 Rukapuronahot	PROPN	obligatory
 Rukkikalliot	PROPN	obligatory
 Rukkistenluhdat	PROPN	obligatory
@@ -9623,9 +9341,7 @@ Ruotasenlammit	PROPN	obligatory
 Ruotikydöt	PROPN	obligatory
 Ruotinkosket	PROPN	obligatory
 Ruotojärventievat	PROPN	obligatory
-Ruotsulan vallit	PROPN	obligatory
 Ruottinkivet	PROPN	obligatory
-Ruoveden Pirkat	PROPN	obligatory
 Rupijärvet	PROPN	obligatory
 Rupisuolijärvet	PROPN	obligatory
 Rupusaaret	PROPN	obligatory
@@ -9634,7 +9350,6 @@ Ruskiatniemet	PROPN	obligatory
 ruskomaljakas	NOUN	common
 Ruskosaaret	PROPN	obligatory
 Ruskovuoret	PROPN	obligatory
-Rustholli Remontit	PROPN	obligatory
 rustojäkälä	NOUN	common
 rustokit	NOUN	obligatory
 Rutkanluodot	PROPN	obligatory
@@ -9839,7 +9554,6 @@ Saari-Papulammit	PROPN	obligatory
 Saaripounujärvet	PROPN	obligatory
 Saarisensaaret	PROPN	obligatory
 Saariset	PROPN	obligatory
-Saarisuon Välikummut	PROPN	obligatory
 Saarisärkät	PROPN	obligatory
 Saarnakivet	PROPN	obligatory
 Saarnastoolit	PROPN	obligatory
@@ -9878,7 +9592,6 @@ sailiot	NOUN	obligatory
 Saimaanlammit	PROPN	obligatory
 Saimonlammit	PROPN	obligatory
 Sainsaarenrämeet	PROPN	obligatory
-Saint Vincent ja Grenadiinit	PROPN	obligatory
 Saintienkaarrot	PROPN	obligatory
 saippuahiutale	NOUN	common
 saippuamarjakasvi	NOUN	common
@@ -9952,7 +9665,6 @@ Salmilamminharjut	PROPN	obligatory
 Salmilamminkalliot	PROPN	obligatory
 Salmilamminkankaat	PROPN	obligatory
 Salmilammit	PROPN	obligatory
-Salmin Laatit	PROPN	obligatory
 Salminkalliot	PROPN	obligatory
 Salmisaaret	PROPN	obligatory
 Salmisenlammit	PROPN	obligatory
@@ -9965,8 +9677,6 @@ Salmunniityt	PROPN	obligatory
 Salohaat	PROPN	obligatory
 Salolammit	PROPN	obligatory
 Salomonsaaret	PROPN	obligatory
-Salon Palloilijat	PROPN	obligatory
-Salon Seudun Sanomat	PROPN	obligatory
 Salonahonniityt	PROPN	obligatory
 Salonkalliot	PROPN	obligatory
 Salonkankaat	PROPN	obligatory
@@ -9979,7 +9689,6 @@ Salonteet	PROPN	obligatory
 Salosenkalliot	PROPN	obligatory
 Salot	PROPN	obligatory
 salpat	NOUN	obligatory
-Salpausselän luonnonystävät	PROPN	obligatory
 salusiini	NOUN	common
 Salvatinvirrat	PROPN	obligatory
 samettifarkut	NOUN	obligatory
@@ -10026,9 +9735,7 @@ Sankarit	PROPN	obligatory
 Sannonkarrat	PROPN	obligatory
 sanomakellot	NOUN	obligatory
 sanomat	NOUN	obligatory
-Sant Henrikin vuoret	PROPN	obligatory
 Santakarit	PROPN	obligatory
-Santalan peräniityt	PROPN	obligatory
 Santamättäät	PROPN	obligatory
 Santankarit	PROPN	obligatory
 Santapakat	PROPN	obligatory
@@ -10073,7 +9780,6 @@ sarvinaama	NOUN	common
 Sarvinivansaaret	PROPN	obligatory
 sarvinokka	NOUN	common
 Sarvivaarat	PROPN	obligatory
-Sarviviidan Saviprunnit	PROPN	obligatory
 Sarvivuoret	PROPN	obligatory
 Sarvonmäet	PROPN	obligatory
 Sasinklopit	PROPN	obligatory
@@ -10110,7 +9816,6 @@ Saukkolammit	PROPN	obligatory
 Saukkolankalliot	PROPN	obligatory
 Saukkolompolat	PROPN	obligatory
 Saukkonivat	PROPN	obligatory
-Saukko-ojan Latvarämeät	PROPN	obligatory
 Saukkoriivinkankaat	PROPN	obligatory
 Saukkosaaret	PROPN	obligatory
 Saukonkankaankalliot	PROPN	obligatory
@@ -10170,8 +9875,6 @@ Savitievat	PROPN	obligatory
 Savojärvet	PROPN	obligatory
 Savolaisensaaret	PROPN	obligatory
 Savolanahonnevat	PROPN	obligatory
-Savon Sanomat	PROPN	obligatory
-Savon Yrittäjät	PROPN	obligatory
 Savonmäenniityt	PROPN	obligatory
 Savonsaaret	PROPN	obligatory
 Savottasaaret	PROPN	obligatory
@@ -10183,10 +9886,6 @@ Sehvankalliot	PROPN	obligatory
 Seigajärvet	PROPN	obligatory
 Seikanharjut	PROPN	obligatory
 Seilinriutat	PROPN	obligatory
-Seinäjoen Kuutoset	PROPN	obligatory
-Seinäjoen Maila-Jussit	PROPN	obligatory
-Seinäjoen Seudun Urheilijat	PROPN	obligatory
-Seinäjoen Yrittäjät	PROPN	obligatory
 seinälukki	NOUN	common
 Seipislammet	PROPN	obligatory
 Seitainseljät	PROPN	obligatory
@@ -10231,9 +9930,7 @@ Selkärannanvuoret	PROPN	obligatory
 Selkäsaaret	PROPN	obligatory
 Selliluodot	PROPN	obligatory
 Seloslammit	PROPN	obligatory
-Selän Hoikat	PROPN	obligatory
 Selänluodot	PROPN	obligatory
-Selänpään Jäykät	PROPN	obligatory
 Selänteenkalliot	PROPN	obligatory
 Selänteenmäet	PROPN	obligatory
 Selänteenpellot	PROPN	obligatory
@@ -10261,7 +9958,6 @@ Shetlandinsaaret	PROPN	obligatory
 shortsit	NOUN	obligatory
 Sianniemensaaret	PROPN	obligatory
 Sianselkäkankaat	PROPN	obligatory
-Sibelius-Akatemian Opettajat ja Virkailijat	PROPN	obligatory
 sidekalvolaskimo	NOUN	common
 sielunkellot	NOUN	obligatory
 sienisääski	NOUN	common
@@ -10397,7 +10093,6 @@ Simlammit	PROPN	obligatory
 simmarit	NOUN	obligatory
 Simosaaret	PROPN	obligatory
 Simoskanaavanlammet	PROPN	obligatory
-Simpeleen Urheilijat	PROPN	obligatory
 simppukala	NOUN	common
 Simpsonit	PROPN	obligatory
 simpukanpaistokekkerit	NOUN	obligatory
@@ -10476,7 +10171,6 @@ Sivistystyönantajat	PROPN	obligatory
 sivuelin	NOUN	common
 Sivulammit	PROPN	obligatory
 Sivulankalliot	PROPN	obligatory
-SK Ravintolat	PROPN	obligatory
 skinkit	NOUN	obligatory
 skorpionikorento	NOUN	common
 SKS-nuoret	PROPN	obligatory
@@ -10524,7 +10218,6 @@ sokkojuoksiainen	NOUN	common
 Sokkosaaret	PROPN	obligatory
 sokkotreffit	NOUN	obligatory
 Sokolmalammit	PROPN	obligatory
-SOL Palvelut	PROPN	obligatory
 Solaisvuoret	PROPN	obligatory
 Soljastenkankaat	PROPN	obligatory
 Solleronsaaret	PROPN	obligatory
@@ -10588,7 +10281,6 @@ Sortankalliot	PROPN	obligatory
 Sortojärvet	PROPN	obligatory
 Sortolammit	PROPN	obligatory
 Sortopuljut	PROPN	obligatory
-Sortoseljän Pikkulammit	PROPN	obligatory
 Sortoseljänlammit	PROPN	obligatory
 sortovuodet	NOUN	obligatory
 sortsit	NOUN	obligatory
@@ -10612,7 +10304,6 @@ Sotasaaret	PROPN	obligatory
 sotavalmistelut	NOUN	obligatory
 sotavaunut	NOUN	obligatory
 sotavoimat	NOUN	obligatory
-Sotiemme Veteraanit	PROPN	obligatory
 sotilasmenot	NOUN	obligatory
 Sotilaspojat	PROPN	obligatory
 Sotilouhut	PROPN	obligatory
@@ -10637,8 +10328,6 @@ Sporadit	PROPN	obligatory
 spot-markkinat	NOUN	obligatory
 Spraykaalit	PROPN	obligatory
 sprintterikisat	NOUN	obligatory
-SR Ravintolat	PROPN	obligatory
-SRV Yhtiöt	PROPN	obligatory
 SS-Aseveljet	PROPN	obligatory
 statuutti	NOUN	common
 stellerinmerileijonat	NOUN	obligatory
@@ -10648,7 +10337,6 @@ Storholmankydöt	PROPN	obligatory
 stretch-housut	NOUN	obligatory
 Strukankalliot	PROPN	obligatory
 strutsilintu	NOUN	common
-STS Alppimatkat	PROPN	obligatory
 STTK-Opiskelijat	PROPN	obligatory
 Stålberginkivet	PROPN	obligatory
 Stäävit	PROPN	obligatory
@@ -10716,7 +10404,6 @@ Sulku-Valkoslammit	PROPN	obligatory
 Sulo-ojanmaat	PROPN	obligatory
 sulotar	NOUN	common
 Sulunniityt	PROPN	obligatory
-Summan Laatit	PROPN	obligatory
 Summinkiluodot	PROPN	obligatory
 Sumpunsaaret	PROPN	obligatory
 Sumupuljut	PROPN	obligatory
@@ -10759,49 +10446,7 @@ suolilja	NOUN	common
 Suolinevankalliot	PROPN	obligatory
 Suolisaaret	PROPN	obligatory
 Suomajärvet	PROPN	obligatory
-Suomalaisen kansakoulun ystävät	PROPN	obligatory
-Suomen Asumisoikeusyhteisöt	PROPN	obligatory
-Suomen asunto-osakkeenomistajat	PROPN	obligatory
-Suomen Asuntopalvelut	PROPN	obligatory
-Suomen Atlantti-Seuran Nuoret	PROPN	obligatory
-Suomen Erillisverkot	PROPN	obligatory
-Suomen Hammashoitajat	PROPN	obligatory
-Suomen Jääkiekkoilijat	PROPN	obligatory
-Suomen Kansallissosialistit	PROPN	obligatory
-Suomen Kansan Sinivalkoiset	PROPN	obligatory
-Suomen kaupunkiautot	PROPN	obligatory
-Suomen Keittiömestarit	PROPN	obligatory
-Suomen Keskustanuoret	PROPN	obligatory
-Suomen kirjailijanimikkoseurat	PROPN	obligatory
-Suomen kirjastonhoitajat	PROPN	obligatory
-Suomen Kristillisdemokraatit	PROPN	obligatory
-Suomen Kristillisen Liiton Nuoret	PROPN	obligatory
-Suomen Kuurosokeat	PROPN	obligatory
-Suomen lautamiehet	PROPN	obligatory
-Suomen maajoukkueen kannattajat	PROPN	obligatory
-Suomen Messut	PROPN	obligatory
-Suomen musiikkikustantajat	PROPN	obligatory
-Suomen Palveluasunnot	PROPN	obligatory
-Suomen Partiolaiset	PROPN	obligatory
-Suomen pienkustantajat	PROPN	obligatory
-Suomen Pienyrittäjät	PROPN	obligatory
-Suomen Rauhanpuolustajat	PROPN	obligatory
-Suomen Russ-ponien Ystävät	PROPN	obligatory
-Suomen Säveltäjät	PROPN	obligatory
-Suomen Taidegraafikot	PROPN	obligatory
-Suomen Taikurit	PROPN	obligatory
-Suomen Teatterit	PROPN	obligatory
-Suomen Tehtäväniekat	PROPN	obligatory
-Suomen tieteiskirjoittajat	PROPN	obligatory
-Suomen tietokirjailijat	PROPN	obligatory
-Suomen Turvaprojektit	PROPN	obligatory
-Suomen urheilutietäjät	PROPN	obligatory
-Suomen Yhteiskunta-alan Ylioppilaat	PROPN	obligatory
-Suomen Yksinelävät	PROPN	obligatory
-Suomen Yrittäjät	PROPN	obligatory
 Suomenniemenkankaat	PROPN	obligatory
-Suomenruotsalaiset kansankäräjät	PROPN	obligatory
-Suominen Kuitukankaat	PROPN	obligatory
 Suomujärvet	PROPN	obligatory
 Suomunniemivaarat	PROPN	obligatory
 Suomurinivat	PROPN	obligatory
@@ -10855,7 +10500,6 @@ Supinmäet	PROPN	obligatory
 Suppulamminpäävuoret	PROPN	obligatory
 Suput	PROPN	obligatory
 Surkanlammit	PROPN	obligatory
-Surkeanlammin kalliot	PROPN	obligatory
 Surmakivet	PROPN	obligatory
 Surmalammit	PROPN	obligatory
 Surmaluodot	PROPN	obligatory
@@ -10866,7 +10510,6 @@ surmatut	NOUN	obligatory
 Surmavuoret	PROPN	obligatory
 Surnupäät	PROPN	obligatory
 Sursapalot	PROPN	obligatory
-Surunauha – Itsemurhan tehneiden läheiset	PROPN	obligatory
 Suruvuoret	PROPN	obligatory
 Survaanvuoret	PROPN	obligatory
 Susihaudankankaat	PROPN	obligatory
@@ -11010,7 +10653,6 @@ Säkkisenlammit	PROPN	obligatory
 Säkkisillankydöt	PROPN	obligatory
 Säkkäränniityt	PROPN	obligatory
 Säksärinsaaret	PROPN	obligatory
-Säkylän Urheilijat	PROPN	obligatory
 säly	NOUN	common
 Sängenlammit	PROPN	obligatory
 sängynjousi	NOUN	common
@@ -11094,7 +10736,6 @@ Tahkokalliot	PROPN	obligatory
 Tahkosaaret	PROPN	obligatory
 Tahkurinlammit	PROPN	obligatory
 Tahvinkorkeat	PROPN	obligatory
-Taideteollisen korkeakoulun ylioppilaat	PROPN	obligatory
 taikamenot	NOUN	obligatory
 Taikinakalliot	PROPN	obligatory
 Taimenjärvet	PROPN	obligatory
@@ -11187,7 +10828,6 @@ Talsverinniityt	PROPN	obligatory
 Talusojanniitut	PROPN	obligatory
 Talviaislammit	PROPN	obligatory
 Talviaissaaret	PROPN	obligatory
-Talvian hiidenkirnut	PROPN	obligatory
 talvifarkut	NOUN	obligatory
 talvifarmarit	NOUN	obligatory
 talvikisat	NOUN	obligatory
@@ -11219,9 +10859,6 @@ Tammisärkät	PROPN	obligatory
 Tammukkajoenjänkät	PROPN	obligatory
 Tammukkalammet	PROPN	obligatory
 Tammukkavaarat	PROPN	obligatory
-Tampereen Kisatoverit	PROPN	obligatory
-Tampereen Tradenomiopiskelijat	PROPN	obligatory
-Tampereen vapaa-ajattelijat	PROPN	obligatory
 Tanelinkarit	PROPN	obligatory
 tangarat	NOUN	obligatory
 tangat	NOUN	obligatory
@@ -11255,7 +10892,6 @@ Tarkinkeitaat	PROPN	obligatory
 Tarmanluodot	PROPN	obligatory
 Tarot	PROPN	obligatory
 Tarvantojärvet	PROPN	obligatory
-Tarvasjoen Urheilijat	PROPN	obligatory
 Tarveasunnot	PROPN	obligatory
 tarvike	NOUN	common
 Tasansuonsärkät	PROPN	obligatory
@@ -11326,7 +10962,6 @@ Tempastenpellot	PROPN	obligatory
 Temppelisaaret	PROPN	obligatory
 Tenholanlukot	PROPN	obligatory
 Tenhusmäet	PROPN	obligatory
-Tennas-Matin niemet	PROPN	obligatory
 Tennilammit	PROPN	obligatory
 Tenniökuusikot	PROPN	obligatory
 Teponniityt	PROPN	obligatory
@@ -11368,7 +11003,6 @@ Tervaniemensaaret	PROPN	obligatory
 tervas	NOUN	common
 Tervasaaret	PROPN	obligatory
 Tervaskorvenkydöt	PROPN	obligatory
-Tervasmäen Saukkolammit	PROPN	obligatory
 Tervasseljänrämeet	PROPN	obligatory
 Tervastulisaaret	PROPN	obligatory
 Tervasuot	PROPN	obligatory
@@ -11393,7 +11027,6 @@ Teyrimäet	PROPN	obligatory
 Tiaiskalliot	PROPN	obligatory
 Tiaisniemensaaret	PROPN	obligatory
 Tiaissaaret	PROPN	obligatory
-Tiaisten Tielammit	PROPN	obligatory
 Tiakkasaaret	PROPN	obligatory
 tiedustelutieto	NOUN	common
 Tiekalliot	PROPN	obligatory
@@ -11404,7 +11037,6 @@ tienoo	NOUN	common
 Tiensuulammet	PROPN	obligatory
 Tiermaskaarrot	PROPN	obligatory
 Tiesaaret	PROPN	obligatory
-Tietoalan toimihenkilöt	PROPN	obligatory
 tietokonelaite	NOUN	common
 Tietymättömänkalliot	PROPN	obligatory
 Tievankummut	PROPN	obligatory
@@ -11489,18 +11121,14 @@ Tiukupuljut	PROPN	obligatory
 Tiukurakat	PROPN	obligatory
 Tiurankedot	PROPN	obligatory
 Tobbakskrunninkarit	PROPN	obligatory
-Tohmajärven Urheilijat	PROPN	obligatory
-Toholammin Urheilijat	PROPN	obligatory
 Tohverilammit	PROPN	obligatory
 Toijalansupit	PROPN	obligatory
 Toijonsaaret	PROPN	obligatory
 toilaus	NOUN	common
 toimituskulut	NOUN	obligatory
 Toivakkaanniitut	PROPN	obligatory
-Toivalan Urheilijat	PROPN	obligatory
 Toivarinpellot	PROPN	obligatory
 toive	NOUN	common
-TOK Ravintolat	PROPN	obligatory
 Tokonkivet	PROPN	obligatory
 Toljamonkummut	PROPN	obligatory
 Tollankalliot	PROPN	obligatory
@@ -11540,14 +11168,12 @@ Tornikalliot	PROPN	obligatory
 Torninkalliot	PROPN	obligatory
 Tornionkalliot	PROPN	obligatory
 Torolehdontyvet	PROPN	obligatory
-Torpan Pojat	PROPN	obligatory
 Torpanniitut	PROPN	obligatory
 Torpanpellot	PROPN	obligatory
 Torpanvuoret	PROPN	obligatory
 torut	NOUN	obligatory
 Torvensaaret	PROPN	obligatory
 Torvisaaret	PROPN	obligatory
-Torvisen Salmilammit	PROPN	obligatory
 tosiolot	NOUN	obligatory
 Tosonniityt	PROPN	obligatory
 Tosonsuot	PROPN	obligatory
@@ -11692,7 +11318,6 @@ Turanpellot	PROPN	obligatory
 Turasenlammit	PROPN	obligatory
 Turjalaiset	PROPN	obligatory
 Turjanpellot	PROPN	obligatory
-Turkama & kumppanit	PROPN	obligatory
 Turkinkaarrot	PROPN	obligatory
 Turkinpellot	PROPN	obligatory
 Turkinsaaret	PROPN	obligatory
@@ -11701,23 +11326,10 @@ Turkistuottajat	PROPN	obligatory
 Turkkikuusikot	PROPN	obligatory
 Turkkiniemenkankaat	PROPN	obligatory
 Turkkisaaret	PROPN	obligatory
-Turks- ja Caicossaaret	PROPN	obligatory
 turnajaiset	NOUN	obligatory
 turpakäräjät	NOUN	obligatory
 Turpeisenlammit	PROPN	obligatory
 Tursansaaret	PROPN	obligatory
-Turun Auskultantit	PROPN	obligatory
-Turun kauppatieteiden ylioppilaat	PROPN	obligatory
-Turun Kisa-Veikot	PROPN	obligatory
-Turun Sanomat	PROPN	obligatory
-Turun Seudun Työttömät	PROPN	obligatory
-Turun Suunnistajat	PROPN	obligatory
-Turun Toverit	PROPN	obligatory
-Turun Weikot	PROPN	obligatory
-Turun Yliopiston Kemistit	PROPN	obligatory
-Turun yliopiston luonnontieteiden ylioppilaat	PROPN	obligatory
-Turun yliopiston tieteentekijät	PROPN	obligatory
-Turun Yrittäjät	PROPN	obligatory
 Turusenlammit	PROPN	obligatory
 Turvakkokönkäänlammit	PROPN	obligatory
 Turvakkolammit	PROPN	obligatory
@@ -11737,14 +11349,11 @@ Tuuhansaaret	PROPN	obligatory
 Tuulenpesänmäet	PROPN	obligatory
 Tuulispäät	PROPN	obligatory
 Tuulvedenkarit	PROPN	obligatory
-Tuupovaaran Urheilijat	PROPN	obligatory
 Tuurajärvenkalliot	PROPN	obligatory
 Tuurinkalliot	PROPN	obligatory
 Tuusanpöölinarot	PROPN	obligatory
-Tuusulan Voima-Veikot	PROPN	obligatory
 Tuuttilankalliot	PROPN	obligatory
 tvillikangashousut	NOUN	obligatory
-TV-Ohjaajat ja Toimittajat	PROPN	obligatory
 tweedhousut	NOUN	obligatory
 Tykkikarit	PROPN	obligatory
 Tykkimiehet	PROPN	obligatory
@@ -11782,7 +11391,6 @@ työolot	NOUN	obligatory
 Työsiönvuoret	PROPN	obligatory
 työtoverukset	NOUN	obligatory
 työvoimaresurssi	NOUN	common
-Työväen Maila-Pojat	PROPN	obligatory
 tähtianis	NOUN	common
 tähtihyasintti	NOUN	common
 tähtikuonokontiaiset	NOUN	obligatory
@@ -11861,7 +11469,6 @@ ukkohousut	NOUN	obligatory
 Ukkolankalliot	PROPN	obligatory
 Ukkosaaret	PROPN	obligatory
 Ukkosenniityt	PROPN	obligatory
-Ukon Salmiset	PROPN	obligatory
 Ukonharjut	PROPN	obligatory
 Ukonhaudat	PROPN	obligatory
 Ukonhautoinniitut	PROPN	obligatory
@@ -11890,7 +11497,6 @@ ula-aallot	NOUN	obligatory
 ulappakeiju	NOUN	common
 ulappalintu	NOUN	common
 Uljanluolat	PROPN	obligatory
-Ulkan Valkeat	PROPN	obligatory
 Ulkkalammit	PROPN	obligatory
 Ulkkasärkät	PROPN	obligatory
 ulkoasiat	NOUN	obligatory
@@ -11898,10 +11504,8 @@ ulkoiluvarusteet	NOUN	obligatory
 Ulkoistenkalliot	PROPN	obligatory
 ulkomaanmarkkinat	NOUN	obligatory
 ulkomaansuhteet	NOUN	obligatory
-Ulko-Merkkivaaran kummut	PROPN	obligatory
 Ulkoset	PROPN	obligatory
 ulkosynnyttimet	NOUN	obligatory
-Ulko-Tammion koput	PROPN	obligatory
 ulkovarustus	NOUN	common
 Ulkukarit	PROPN	obligatory
 Ulkusaaret	PROPN	obligatory
@@ -11916,7 +11520,6 @@ Ulmastenkivet	PROPN	obligatory
 Ulppaankankaat	PROPN	obligatory
 Ulpukkalammit	PROPN	obligatory
 Ulvilammit	PROPN	obligatory
-Ulvilan Pesä-Veikot	PROPN	obligatory
 Umpilamminkalliot	PROPN	obligatory
 Umpilamminkummut	PROPN	obligatory
 Umpilamminnevat	PROPN	obligatory
@@ -11968,11 +11571,7 @@ Uudenaituunkalliot	PROPN	obligatory
 Uudenjänkänjärvet	PROPN	obligatory
 Uudenjänkänkalliot	PROPN	obligatory
 Uudenjänkänsaajot	PROPN	obligatory
-Uudenkaupungin Jää-Kotkat	PROPN	obligatory
-Uudenkaupungin Urheilijat	PROPN	obligatory
 Uudenlaitumensaaret	PROPN	obligatory
-Uudenmaan Autourheilijat	PROPN	obligatory
-Uudenmaan Insinööriopiskelijat	PROPN	obligatory
 Uudenniitynkalliot	PROPN	obligatory
 Uudenniitynlammit	PROPN	obligatory
 Uudenniitynpellot	PROPN	obligatory
@@ -11986,7 +11585,6 @@ uudin	NOUN	common
 Uudismaat	PROPN	obligatory
 Uudispellot	PROPN	obligatory
 Uukalliot	PROPN	obligatory
-Uulan Kotajärvet	PROPN	obligatory
 uumen	NOUN	common
 Uumännynharjut	PROPN	obligatory
 Uuniluodot	PROPN	obligatory
@@ -12021,7 +11619,6 @@ Vaaranmäet	PROPN	obligatory
 Vaaranpellot	PROPN	obligatory
 Vaaranperät	PROPN	obligatory
 Vaaranpäällyssuot	PROPN	obligatory
-Vaaranpään Pikkulammit	PROPN	obligatory
 Vaaranpäänlammit	PROPN	obligatory
 Vaaransaaret	PROPN	obligatory
 Vaarantakasenlammit	PROPN	obligatory
@@ -12078,7 +11675,6 @@ Valkamonpellot	PROPN	obligatory
 Valkeaisenpäänsuot	PROPN	obligatory
 Valkeaislammit	PROPN	obligatory
 Valkeajärvenharjut	PROPN	obligatory
-Valkeakosken Isku-Veikot	PROPN	obligatory
 Valkeanjärvenkankaat	PROPN	obligatory
 Valkeatlammit	PROPN	obligatory
 Valkeavetiset	PROPN	obligatory
@@ -12116,9 +11712,6 @@ valokuvausväline	NOUN	common
 valourut	NOUN	obligatory
 valtimoverikaasu	NOUN	common
 Valtinkalliot	PROPN	obligatory
-Valtion alueellisen sivistyshallinnon virkamiehet	PROPN	obligatory
-Valtio-opin opiskelijat	PROPN	obligatory
-Valtio-opin seniorit	PROPN	obligatory
 valtiopäivät	NOUN	obligatory
 valtuus	NOUN	common
 valuuttamarkkinat	NOUN	obligatory
@@ -12147,8 +11740,6 @@ Vanhuhdanlukot	PROPN	obligatory
 vanhuudenpäivät	NOUN	obligatory
 vankkurit	NOUN	obligatory
 Vannesaaret	PROPN	obligatory
-Vantaan Pussihukat	PROPN	obligatory
-Vantaan Salamat	PROPN	obligatory
 Vantuslammit	PROPN	obligatory
 vapaaehtoisjoukko	NOUN	common
 vapaakiduskotilo	NOUN	common
@@ -12167,7 +11758,6 @@ Vareslammit	PROPN	obligatory
 Varesojanniitut	PROPN	obligatory
 Varessaaret	PROPN	obligatory
 Varestievat	PROPN	obligatory
-Varhaisnuorisoliitto Haukat	PROPN	obligatory
 varhaisuutiset	NOUN	obligatory
 variksenkukka	NOUN	common
 variksenmarjakasvi	NOUN	common
@@ -12205,7 +11795,6 @@ Varsakalliot	PROPN	obligatory
 Varsalammit	PROPN	obligatory
 Varsaluodot	PROPN	obligatory
 Varsanpolvet	PROPN	obligatory
-Varsinais-Suomen Yrittäjät	PROPN	obligatory
 Vartialansaaret	PROPN	obligatory
 Vartiavuoret	PROPN	obligatory
 Vartinkalliot	PROPN	obligatory
@@ -12280,7 +11869,6 @@ Vehkaharjut	PROPN	obligatory
 Vehkakalliot	PROPN	obligatory
 Vehkakivet	PROPN	obligatory
 Vehkakukkulat	PROPN	obligatory
-Vehkalahden Veikot	PROPN	obligatory
 Vehkalammet	PROPN	obligatory
 Vehkalamminmäet	PROPN	obligatory
 Vehkalamminsaarekkeet	PROPN	obligatory
@@ -12305,8 +11893,6 @@ Vehmaslammit	PROPN	obligatory
 Vehnäahonkalliot	PROPN	obligatory
 Vehnälammit	PROPN	obligatory
 vehnämuro	NOUN	common
-Veho Autotalot	PROPN	obligatory
-Veho Hyötyajoneuvot	PROPN	obligatory
 veikkausvarat	NOUN	obligatory
 veikkausvoittovarat	NOUN	obligatory
 Veikkolammit	PROPN	obligatory
@@ -12340,7 +11926,6 @@ Venevaaranlammit	PROPN	obligatory
 Vennakalliot	PROPN	obligatory
 Venäihenlammit	PROPN	obligatory
 Venäinniitut	PROPN	obligatory
-Venäjän Naavalammit	PROPN	obligatory
 Venäjänsaaret	PROPN	obligatory
 Venäläislammit	PROPN	obligatory
 Venäänkosket	PROPN	obligatory
@@ -12361,7 +11946,6 @@ verkkosiipiset	NOUN	obligatory
 Vermatkalliot	PROPN	obligatory
 verovarat	NOUN	obligatory
 verryttelyhousut	NOUN	obligatory
-Verskerin Lounakarit	PROPN	obligatory
 Verstankydöt	PROPN	obligatory
 Veräjäsaaret	PROPN	obligatory
 Vesaiset	PROPN	obligatory
@@ -12374,7 +11958,6 @@ Vesaluodot	PROPN	obligatory
 Vesanenänpellot	PROPN	obligatory
 Vesankarit	PROPN	obligatory
 Vesanniityt	PROPN	obligatory
-Vesi- ja Kalatalousmiehet	PROPN	obligatory
 Vesiaronkankaat	PROPN	obligatory
 Vesihaudankankaat	PROPN	obligatory
 vesihome	NOUN	common
@@ -12424,7 +12007,6 @@ Vihdassaaret	PROPN	obligatory
 Vihellyssaaret	PROPN	obligatory
 Viheriäisniityt	PROPN	obligatory
 Viheriätluodot	PROPN	obligatory
-Viherlaakson Veikot	PROPN	obligatory
 Vihersaaret	PROPN	obligatory
 vihersilmäkala	NOUN	common
 vihertikka	NOUN	common
@@ -12433,7 +12015,6 @@ Vihkiölammit	PROPN	obligatory
 vihollisuus	NOUN	common
 vihollisvoimat	NOUN	obligatory
 Vihreät	PROPN	obligatory
-Vihreät Nuoret ja Opiskelijat	PROPN	obligatory
 Vihtaluodot	PROPN	obligatory
 Vihtamäet	PROPN	obligatory
 Vihtaniemensaaret	PROPN	obligatory
@@ -12476,12 +12057,9 @@ viinakset	NOUN	obligatory
 Viinapatit	PROPN	obligatory
 Viinasaaret	PROPN	obligatory
 Viinasalmet	PROPN	obligatory
-Viinijärven Urheilijat	PROPN	obligatory
 Viinilamminkalliot	PROPN	obligatory
 viininlehtikääryle	NOUN	common
 Viipassaaret	PROPN	obligatory
-Viipurin Pallonlyöjät	PROPN	obligatory
-Viipurin Urheilijat	PROPN	obligatory
 Viipustunturit	PROPN	obligatory
 Viirinkalliot	PROPN	obligatory
 Viisankalliot	PROPN	obligatory
@@ -12682,7 +12260,6 @@ vuoriminttu	NOUN	common
 Vuoripäänkankaat	PROPN	obligatory
 Vuorisaaret	PROPN	obligatory
 Vuorkujärvet	PROPN	obligatory
-Vuorovaikeutus - Ympäristöekonomistit	PROPN	obligatory
 Vuortenvuoret	PROPN	obligatory
 Vuortenvälinkalliot	PROPN	obligatory
 Vuorttusenkalliot	PROPN	obligatory
@@ -12704,15 +12281,11 @@ Vähkyränperänsuot	PROPN	obligatory
 Vähäheidinkalliot	PROPN	obligatory
 Vähäjärvenkalliot	PROPN	obligatory
 Vähäjärvenniitut	PROPN	obligatory
-Vähä-Maatian kalliot	PROPN	obligatory
-Vähän Maisaaren karit	PROPN	obligatory
-Vähän Sumuojan palot	PROPN	obligatory
 Vähänjärvensaajot	PROPN	obligatory
 Vähänkoskensaaret	PROPN	obligatory
 Vähänkuruntievat	PROPN	obligatory
 Vähänniitynvuoret	PROPN	obligatory
 Vähänvuorenpellot	PROPN	obligatory
-Vähän-Väikin mäet	PROPN	obligatory
 Vähäojanmetsät	PROPN	obligatory
 Vähäsaaret	PROPN	obligatory
 Vähäsuonkalliot	PROPN	obligatory
@@ -12798,13 +12371,9 @@ Väätäisenkummut	PROPN	obligatory
 Vörstinsaaret	PROPN	obligatory
 Wulff-Yhtiöt	PROPN	obligatory
 Ydinenergianuoret	PROPN	obligatory
-Yhdistyneet arabiemiirikunnat	PROPN	obligatory
-Yhdistyneet kansakunnat	PROPN	obligatory
 Yhdysvallat	PROPN	obligatory
-Yhdysvaltain Neitsytsaaret	PROPN	obligatory
 Yhteisetahot	PROPN	obligatory
 Yhteisetkarit	PROPN	obligatory
-Yhteiskunta-alan korkeakoulutetut	PROPN	obligatory
 yhteismarkkinat	NOUN	obligatory
 yhteispisteet	NOUN	obligatory
 yhteystiedot	NOUN	obligatory
@@ -12816,11 +12385,8 @@ Ykspuiset	PROPN	obligatory
 Ykspuisetluodot	PROPN	obligatory
 yleiskulu	NOUN	common
 yleisopinnot	NOUN	obligatory
-Ylemmät Toimihenkilöt	PROPN	obligatory
 Ylhäistenkalliot	PROPN	obligatory
 Yliaavanlammit	PROPN	obligatory
-Ylihärmän Junkkarit	PROPN	obligatory
-Ylihärmän Pesis-Junkkarit	PROPN	obligatory
 Ylijoenniityt	PROPN	obligatory
 Ylijängänpalot	PROPN	obligatory
 Ylikosket	PROPN	obligatory
@@ -12828,21 +12394,17 @@ Ylikrunninmatalat	PROPN	obligatory
 Ylilamminkummut	PROPN	obligatory
 Ylilammit	PROPN	obligatory
 Yli-Lismanpuljut	PROPN	obligatory
-Ylimmäisen Suolammit	PROPN	obligatory
 Ylimmäisenkankaat	PROPN	obligatory
 Ylimmäisensuonsaarekkeet	PROPN	obligatory
 Ylimmäisetlompolat	PROPN	obligatory
-Yli-Naarman lammit	PROPN	obligatory
 Ylinenät	PROPN	obligatory
 Ylinevansaaret	PROPN	obligatory
 Yliniittylammit	PROPN	obligatory
 yliopisto-opinnot	NOUN	obligatory
 ylioppilaskirjoitukset	NOUN	obligatory
 Ylirakat	PROPN	obligatory
-Ylisen Paulasuon vuoret	PROPN	obligatory
 yliset	NOUN	obligatory
 Ylisetalat	PROPN	obligatory
-Ylistaron Kilpa-Veljet	PROPN	obligatory
 Ylistenniityt	PROPN	obligatory
 Ylisuvannonkankaat	PROPN	obligatory
 Ylitalot	PROPN	obligatory
@@ -12865,7 +12427,6 @@ Ympyräisenkalliot	PROPN	obligatory
 ympyräsuiset	NOUN	obligatory
 ympäristöolosuhteet	NOUN	obligatory
 ympäristöseutu	NOUN	common
-Ympäristötieteiden Opiskelijat	PROPN	obligatory
 Ypykänsuonlammit	PROPN	obligatory
 Ypylammit	PROPN	obligatory
 Ypyrälammit	PROPN	obligatory
@@ -12883,7 +12444,6 @@ Yrttirovankalliot	PROPN	obligatory
 ystävykset	NOUN	obligatory
 Ystävät	PROPN	obligatory
 Ytinsaaret	PROPN	obligatory
-YTY & Valmentajat	PROPN	obligatory
 Yyrinkalliot	PROPN	obligatory
 Yysaaret	PROPN	obligatory
 Yyterinsannat	PROPN	obligatory
@@ -12897,14 +12457,12 @@ Yölammit	PROPN	obligatory
 yöpukeet	NOUN	obligatory
 Yöpuunkalliot	PROPN	obligatory
 Yösaaret	PROPN	obligatory
-Ähtärin Urheilijat	PROPN	obligatory
 äidinkasvot	NOUN	obligatory
 Äijäinsarat	PROPN	obligatory
 Äijäjärvet	PROPN	obligatory
 Äijäkallaanharjut	PROPN	obligatory
 äijäkemut	NOUN	obligatory
 Äijälahdenniitut	PROPN	obligatory
-Äijän Tulisijajärvet	PROPN	obligatory
 Äijänjänkät	PROPN	obligatory
 Äijänpuljut	PROPN	obligatory
 Äijänsalonkalliot	PROPN	obligatory
@@ -12922,7 +12480,6 @@ Yösaaret	PROPN	obligatory
 Ämmänsaaret	PROPN	obligatory
 Ämmäntievat	PROPN	obligatory
 Ämmäsaaret	PROPN	obligatory
-Ämmäsennevan Isotsaaret	PROPN	obligatory
 Ämpyrinmatalat	PROPN	obligatory
 Ämpärikummut	PROPN	obligatory
 Ämpärinivat	PROPN	obligatory
@@ -12937,7 +12494,6 @@ Yösaaret	PROPN	obligatory
 äyrämöismurre	NOUN	common
 Ääkönrinteet	PROPN	obligatory
 Äältövittikot	PROPN	obligatory
-Äänekosken Urheilijat	PROPN	obligatory
 äänivarat	NOUN	obligatory
 ääriolot	NOUN	obligatory
 ääripiirteet	NOUN	obligatory

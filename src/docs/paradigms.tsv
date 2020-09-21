@@ -297,7 +297,6 @@ NOUN_ACRO_JÄRJESTÖ	The acronyms ending in a word that inflects like ‘järjes
 NOUN_ACRO_KAHDEKSAN	Acronyms ending in 8
 NOUN_ACRO_KAKSI	Acronyms ending in 2
 NOUN_ACRO_KANDELA	The acronyms ending in a word that inflects like ‘kandela’, a:0 type stem
-NOUN_ACRO_KOLMAS	The acronyms ending in a word that inflects like ‘kolmas’, s:nne type stem
 NOUN_ACRO_KOLME	The acronyms ending in digit 3 pronounced as number
 NOUN_ACRO_KUUSI	Acronyms ending in 6
 NOUN_ACRO_LEHTI	The acronyms ending in a word that inflects like ‘lehti’, i:e type stem
@@ -1534,11 +1533,9 @@ NUM_VIISI	si stem, si : de variations front harmony
 NUM_VIITISEN	approximative numerals, front suffixes, compounding, select multipliers
 NUM_YHDEKSÄN	än stem, än : änn : äns variations
 NUM_YKSI	ksi stem, ksi : ht variations front harmony
-PRON_AINOA	no inflection, optional possessive suffixes, back harmony
 PRON_ERÄS	s stem, s : ä variations
 PRON_HÄN	personal pronoun ‘hän’ inflects, e stem, singular only
 PRON_HÄÄ	dialectal forms of ‘hän’
-PRON_IKINEN	inen stem, nen : se variations front harmony
 PRON_ITSE	‘itse’, no variatinos
 PRON_JOKA	‘joka’ inflects from jo stem, optionally ka clitic for most forms
 PRON_JOKAINEN	nen stem nen : se variations back harmony
@@ -1597,7 +1594,6 @@ PROPN_51Uusi-Seelanti	Optimisation hack for exceptional compound ’Uusi-Seelant
 PROPN_51Uusikaupunki	Optimisation hack for exceptional compound ’Uusikaupunki’
 PROPN_51Uusimaa	Optimisation hack for exceptional compound ’Uusimaa’
 PROPN_A.	Middle initials don't inflect or compound
-PROPN_HKI	Abbreviated Helsinki inflects like *Hki* : *Hgissä*
 PROPN_AAKKOSELLISUUS	s stem, s : de variations back harmony
 PROPN_AAKKOSTAMINEN	nen stem, nen : se variations back harmony
 PROPN_AALLOT	llot stem, llot : lto variations
@@ -1610,7 +1606,6 @@ PROPN_ACRO_II	Acronyms that end in 'j' or 'i' pronoynced as letter
 PROPN_ACRO_KAHDEKSAN	acronyms ending in 8
 PROPN_ACRO_KAKSI	acronyms ending in 2
 PROPN_ACRO_KOLME	acronyms ending in digit 3 pronounced as number
-PROPN_ACRO_KUUSI	acronyms ending in 6
 PROPN_ACRO_LEHTI	acronyms ending in a word that inflects like ‘lehti’, i:e type stem
 PROPN_ACRO_METRI	acronyms ending in a word that inflects like ‘metri’, i:e type stem
 PROPN_ACRO_NELJÄ	acronyms ending in 4
@@ -1637,7 +1632,6 @@ PROPN_ALTIS	Proper noun, is stem, is : ii variation, back harmony
 PROPN_APE	pe stem, pe : ppee variations
 PROPN_APU	pu stem, pu : vu variations
 PROPN_ARISTOTELES	es stem, es : ee variaitons back hrmony
-PROPN_HERAKLES	es stem, es : ee and es : esin variaitons back hrmony
 PROPN_ARKI	ki stem, ki : je variaitons back harmony
 PROPN_ASEMA	a stem, a : 0 variations
 PROPN_ASKAR	ar stem, ar : aree variaitons
@@ -1654,6 +1648,7 @@ PROPN_BIAUDET	consonat stem, ’ and i stem inflections
 PROPN_BIDEE	ee stems ee : e variaotns
 PROPN_BIKINIT	it stem, plurale tantum
 PROPN_BORDEAUX	consonant stem, ’ inflection
+PROPN_BOTSWANA	a stems, a : o and a : 0 variations
 PROPN_BRASSERIE	e stem no variatons back harmony
 PROPN_BRIE	e stem front harmony
 PROPN_BROOKLYN	consonant stem, no variations both harmonies
@@ -1683,7 +1678,6 @@ PROPN_FRANCIS	s stem, s : si ~ kse variations back harmony
 PROPN_FUUG	inflects both normally and as an acronym ending in N or such
 PROPN_FÄNRIKIT	it stem, it : e varioations
 PROPN_GALILEO	o stem no variations all allomorphs
-PROPN_INDIEGOGO	o stem no variations all allomorphs
 PROPN_GAY	y stem, both harmonies
 PROPN_HAAKSI	ksi stem, ksi : ht varioants
 PROPN_HAI	i stem, i : 0 variations
@@ -1697,9 +1691,11 @@ PROPN_HELLE	optional lte : lle gradation
 PROPN_HELPI	optional lpi : lvi gradation
 PROPN_HENKI	nki stem, nki : nge variations
 PROPN_HEPO	po stem, po : vo variations
+PROPN_HERAKLES	es stem, es : ee and es : esin variaitons back hrmony
 PROPN_HIIRI	i stem, i : e variations and consonant stems
 PROPN_HIRTTO	tto stem, tto : to variations
 PROPN_HIUTALEET	eet stem, eet : e variations plurale tantum back harmony
+PROPN_HKI	Abbreviated Helsinki inflects like *Hki* : *Hgissä*
 PROPN_HONKA	nka stem, nka : ng variations
 PROPN_HOPEAT	eat stem, eat : e variations plurale tantum
 PROPN_HORTA	 rta stem, rta:rr variations
@@ -1726,6 +1722,7 @@ PROPN_HÄÄTÖ	tö stem, tö : dö variation
 PROPN_HÖLKKÄ	kkä stem, kkä : k variaitns
 PROPN_HÖPÖTTÄJÄ	ä stem, ä : 0 variations
 PROPN_HÖYHENET	et stem, et : 0 variations, front harmony, plurals
+PROPN_INDIEGOGO	o stem no variations all allomorphs
 PROPN_INDIEGOGO	on and hon illatives
 PROPN_INGET	Plural-only proper noun, i:e stem, nk:ng gradation
 PROPN_INKA	optional nka : nga gradation
@@ -1750,7 +1747,6 @@ PROPN_KALATOIN	toin stem, toin : tome variaitons, archaic
 PROPN_KANAALI	i stems, i:E variations
 PROPN_KANGAS	ngas stems, ngas:nkaa variations
 PROPN_KANGASALA	a stems, a : o variation and a : 0 for adessive
-PROPN_BOTSWANA	a stems, a : o and a : 0 variations
 PROPN_KANKAHAT	Plural-only proper nouns, nkahat stems, nka : ngas variations
 PROPN_KANNEL	nel stem, nel : nele : nelee variaitons
 PROPN_KARRAT	Plural-only proper nouns, at stems, a : o variatiosn
@@ -1762,7 +1758,6 @@ PROPN_KEHVELI	i stem, i :e variations front harmony
 PROPN_KENGÄT	ngät stem, ngät : nk variations
 PROPN_KENKÄ	Proper nouns wit nkä stem, nkä : ng variatiosn
 PROPN_KENTTÄ	ttä stems, ttä : t variations
-PROPN_KENTÄT	Plural-only proper nouns, ät stem, tät : ttä variations
 PROPN_KERITSIMET	imet stem, imet : in variations plurale tantum
 PROPN_KERTA	rta stem, rta :rra variations
 PROPN_KEVÄT	ät stem, ät : ää variations
@@ -1772,12 +1767,12 @@ PROPN_KIERRE	rre stem, rre : rtee variations
 PROPN_KIHARAT	at stem, at : o variations plurale tantum
 PROPN_KIINNE	nne stem, nne : ntee variations
 PROPN_KILPI	pi stem, pi : ve variations
-PROPN_KINNAS	nnas stem, nnas : ntaa varitions
 PROPN_KIRITTÄRET	Plural-only proper noun, ttäret stems, ttäret : tär variations
 PROPN_KIRJA	a stem, a : o variations
 PROPN_KIRVES	es stem, es : ee variations front harmn y
 PROPN_KITARA	a stem, a : o variations
 PROPN_KIVI	i stem, i : e variations
+PROPN_KIVILAMPI	mpi stem, mpi : mm variation back harmony
 PROPN_KIVILAMPI	opitional mpi : mmi  gradation
 PROPN_KLUMPIT	Plural-only proper noun, pit stem, pit : ppi variations
 PROPN_KOE	e stem, e : kee variatins back harmony
@@ -1902,6 +1897,7 @@ PROPN_MÄNTY	nty stem, nty : nnyt variations
 PROPN_MÄTTÄÄT	Plural-only proper noun, ttäät stem, ttäät : täs variations
 PROPN_MÖMMÖ	ö stem no variations
 PROPN_MÖRKÖ	kö stem, kö : ö variations
+PROPN_NAHKA	ka stem, optional ka : a gradaitons
 PROPN_NALLE	e stem, no variations back harmony
 PROPN_NATO	both word and acronym inflections
 PROPN_NEITSYT	yt stem, yt : ye variations
@@ -2021,7 +2017,6 @@ PROPN_SALONTEET	Plural-only proper noun, nteet stem, nnteet : nne variatino fron
 PROPN_SALPA	lpa stem, lpa : lv variations
 PROPN_SAMMALET	Plural-only proper noun, et stem, et : 0 variation back harmony
 PROPN_SAMPI	mpi stem, mpi : mm variation back harmony
-PROPN_KIVILAMPI	mpi stem, mpi : mm variation back harmony
 PROPN_SAMPO	mpo stem, mpo : mmo variations
 PROPN_SATU	optional tu : du gradation
 PROPN_SAVI	both i and e stems
@@ -2050,7 +2045,6 @@ PROPN_STADION	Proper nound, consonant stem, and X : Xe variations bavk harmny
 PROPN_SUHTEET	teet stem, teet : de variations
 PROPN_SUKAT	kat stem, kat : kka variations
 PROPN_SULKA	ka stem, ka : a variatons
-PROPN_NAHKA	ka stem, optional ka : a gradaitons
 PROPN_SUODATIN	tin stem, tin : ttime varioants
 PROPN_SUOT	Plural-only proper noun, uot stem, uot : o variations
 PROPN_SYDÄN	sydän stem, n : me variation and

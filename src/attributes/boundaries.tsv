@@ -586,7 +586,6 @@ aivovienti	NOUN	aivo{WB}vienti
 aivovoimistelu	NOUN	aivo{WB}voimistelu
 aivovuoto	NOUN	aivo{WB}vuoto
 aivoödeema	NOUN	aivo{WB}ödeema
-ajan mittaan	ADV	ajan mittaan
 ajanhaaskaus	NOUN	ajan{WB}haaskaus
 ajanhukka	NOUN	ajan{WB}hukka
 ajanjako	NOUN	ajan{WB}jako
@@ -958,7 +957,6 @@ alavireisyys	NOUN	ala{WB}vireisyys
 alavirta	NOUN	ala{WB}virta
 alayksikkö	NOUN	ala{WB}yksikkö
 alaääni	NOUN	ala{WB}ääni
-albanian kieli	NOUN	albanian kieli
 aldehydialkoholi	NOUN	aldehydi{WB}alkoholi
 aldehydiradikaali	NOUN	aldehydi{WB}radikaali
 aldehydiryhmä	NOUN	aldehydi{WB}ryhmä
@@ -1296,9 +1294,6 @@ alkydimaali	NOUN	alkydi{WB}maali
 alkyylihalidi	NOUN	alkyyli{WB}halidi
 alkyyliradikaali	NOUN	alkyyli{WB}radikaali
 alkyyliryhmä	NOUN	alkyyli{WB}ryhmä
-all stars -joukkue	NOUN	all stars -joukkue
-alla mainittu	NOUN	alla mainittu
-alla oleva	NOUN	alla oleva
 allaoleva	NOUN	alla{WB}oleva
 allaskaappi	NOUN	allas{WB}kaappi
 allaskatto	NOUN	allas{WB}katto
@@ -1379,7 +1374,6 @@ alsikeapila	NOUN	alsike{WB}apila
 altavastaaja	NOUN	alta{WB}vastaaja
 Altavista	PROPN	Alta{WB}vista
 alteplaasi	NOUN	alte{WB}plaasi
-alter ego	NOUN	alter ego
 altimetri	NOUN	alti{WB}metri
 altistumisvaara	NOUN	altistumis{WB}vaara
 altistusaika	NOUN	altistus{WB}aika
@@ -1460,9 +1454,6 @@ alumiiniseos	NOUN	alumiini{WB}seos
 alumiiniteollisuus	NOUN	alumiini{WB}teollisuus
 alumiinivene	NOUN	alumiini{WB}vene
 alumiinivuoka	NOUN	alumiini{WB}vuoka
-alun alkaen	ADV	alun alkaen
-alun perin	ADV	alun perin
-alun pitäen	ADV	alun pitäen
 alunaliuos	NOUN	aluna{WB}liuos
 alunapitoinen	ADJ	aluna{WB}pitoinen
 alusastia	NOUN	alus{WB}astia
@@ -1486,7 +1477,6 @@ aluspielus	NOUN	alus{WB}pielus
 aluspiimä	NOUN	alus{WB}piimä
 alusrakenne	NOUN	alus{WB}rakenne
 alusrimoitus	NOUN	alus{WB}rimoitus
-alussa mainittu	NOUN	alussa mainittu
 alusvaate	NOUN	alus{WB}vaate
 alusvaatekerta	NOUN	alus{WB}vaate{WB}kerta
 alusvaatteisillaan	ADV	alus{WB}vaatteisillaan
@@ -1753,7 +1743,6 @@ anestesiahoitaja	NOUN	anestesia{WB}hoitaja
 anestesialääkäri	NOUN	anestesia{WB}lääkäri
 Angerkoski	PROPN	Anger{WB}koski
 angiinamyrkytys	NOUN	angiina{WB}myrkytys
-angina pectoris	NOUN	angina pectoris
 angioedeema	NOUN	angio{WB}edeema
 angiogeneesi	NOUN	angio{WB}geneesi
 angiografia	NOUN	angio{WB}grafia
@@ -2113,7 +2102,6 @@ apuviiva	NOUN	apu{WB}viiva
 apuvoima	NOUN	apu{WB}voima
 apuväline	NOUN	apu{WB}väline
 arabiakumi	NOUN	arabia{WB}kumi
-arabian kieli	NOUN	arabian kieli
 arabianhevonen	NOUN	arabian{WB}hevonen
 arabianjasmiini	NOUN	arabian{WB}jasmiini
 arabiankahvi	NOUN	arabian{WB}kahvi
@@ -2271,7 +2259,6 @@ arseenihybridi	NOUN	arseeni{WB}hybridi
 arseenikiisu	NOUN	arseeni{WB}kiisu
 arsenikkimyrkytys	NOUN	arsenikki{WB}myrkytys
 arsenikkiryhmä	NOUN	arsenikki{WB}ryhmä
-art director	NOUN	art director
 arterioskleroosi	NOUN	arterio{WB}skleroosi
 artikkelisarja	NOUN	artikkeli{WB}sarja
 artikkelitoimittaja	NOUN	artikkeli{WB}toimittaja
@@ -2794,7 +2781,6 @@ attraktio	NOUN	at{WB}traktio
 attribuoida	VERB	at{WB}tribuoida
 attribuutio	NOUN	at{WB}tribuutio
 attribuutti	NOUN	at{WB}tribuutti
-au pair -tyttö	NOUN	au pair -tyttö
 audiofiili	NOUN	audio{WB}fiili
 audiogrammi	NOUN	audio{WB}grammi
 audiojärjestelmä	NOUN	audio{WB}järjestelmä
@@ -3219,8 +3205,6 @@ avustustyöntekijä	NOUN	avustus{WB}työntekijä
 avuttomuuslisä	NOUN	avuttomuus{WB}lisä
 ayrshirelehmä	NOUN	ayrshire{WB}lehmä
 ayrshirerotu	NOUN	ayrshire{WB}rotu
-azerbaidžanin kieli	NOUN	azerbaidžanin kieli
-azerin kieli	NOUN	azerin kieli
 baariapulainen	NOUN	baari{WB}apulainen
 baaribiljardi	NOUN	baari{WB}biljardi
 baarijakkara	NOUN	baari{WB}jakkara
@@ -3337,9 +3321,7 @@ béarnaisekastike	NOUN	béarnaise{WB}kastike
 bearninkastike	NOUN	bearnin{WB}kastike
 beatmusiikki	NOUN	beat{WB}musiikki
 beaujolaisviini	NOUN	beaujolais{WB}viini
-beauty box	NOUN	beauty box
 béchamelkastike	NOUN	béchamel{WB}kastike
-bed and breakfast	NOUN	bed and breakfast
 bedlingtoninterrieri	NOUN	bedlingtonin{WB}terrieri
 beduiiniheimo	NOUN	beduiini{WB}heimo
 beetaendorfiini	NOUN	beeta{WB}endorfiini
@@ -3406,7 +3388,6 @@ bernhardinkoira	NOUN	bernhardin{WB}koira
 berylliumkupari	NOUN	beryllium{WB}kupari
 berylliumpronssi	NOUN	beryllium{WB}pronssi
 besserwisser	NOUN	besser{WB}wisser
-best man	NOUN	best man
 bestman	NOUN	best{WB}man
 bestseller	NOUN	best{WB}seller
 betahistiini	NOUN	beta{WB}histiini
@@ -3434,7 +3415,6 @@ bibliografi	NOUN	biblio{WB}grafi
 bibliografia	NOUN	biblio{WB}grafia
 biedermeierkalusto	NOUN	biedermeier{WB}kalusto
 biedermeiervuode	NOUN	biedermeier{WB}vuode
-big band	NOUN	big band
 biisonihärkä	NOUN	biisoni{WB}härkä
 biisoninliha	NOUN	biisonin{WB}liha
 bikarbonaatti	NOUN	bi{WB}karbonaatti
@@ -3567,7 +3547,6 @@ Blombqvist	PROPN	Blomb{WB}qvist
 Blomqvist	PROPN	Blom{WB}qvist
 blueslaulaja	NOUN	blues{WB}laulaja
 boakäärme	NOUN	boa{WB}käärme
-body stocking	NOUN	body stocking
 boforiasteikko	NOUN	bofori{WB}asteikko
 boheemielämä	NOUN	boheemi{WB}elämä
 bokserimoottori	NOUN	bokseri{WB}moottori
@@ -3586,7 +3565,6 @@ bordellialue	NOUN	bordelli{WB}alue
 bordellinpitäjä	NOUN	bordellin{WB}pitäjä
 borderterrieri	NOUN	border{WB}terrieri
 borssikeitto	NOUN	borssi{WB}keitto
-bossa nova	NOUN	bossa nova
 bostoninterrieri	NOUN	bostonin{WB}terrieri
 bostonkakku	NOUN	boston{WB}kakku
 botuliinitoksiini	NOUN	botuliini{WB}toksiini
@@ -3716,7 +3694,6 @@ cdrecord	PROPN	cd{WB}record
 celsiusaste	NOUN	celsius{WB}aste
 celsiusasteikko	NOUN	celsius{WB}asteikko
 cesiumatomikello	NOUN	cesium{WB}atomikello
-charlotte russe	NOUN	charlotte russe
 charmikampanja	NOUN	charmi{WB}kampanja
 charterlento	NOUN	charter{WB}lento
 cheddarinjuusto	NOUN	cheddarin{WB}juusto
@@ -3757,11 +3734,6 @@ copyright	NOUN	copy{WB}right
 Cornwell	PROPN	Corn{WB}well
 countrymusiikki	NOUN	country{WB}musiikki
 cowboyhattu	NOUN	cowboy{WB}hattu
-crème fraîche	NOUN	crème fraîche
-cum laude	NOUN	cum laude
-cum laude approbatur	NOUN	cum laude approbatur
-cum laude -arvosana	NOUN	cum laude -arvosana
-cum laude -tentti	NOUN	cum laude -tentti
 cumuluspilvi	NOUN	cumulus{WB}pilvi
 cupvoittaja	NOUN	cup{WB}voittaja
 curryjauhe	NOUN	curry{WB}jauhe
@@ -3890,7 +3862,6 @@ desimetriaallot	NOUN	desi{WB}metri{WB}aallot
 desinfektiokammio	NOUN	desinfektio{WB}kammio
 desinfiointiaine	NOUN	desinfiointi{WB}aine
 desinfiointilaite	NOUN	desinfiointi{WB}laite
-desktop publishing	NOUN	desktop publishing
 deskvamaatio	NOUN	de{XB}skvamaatio
 desloratadiini	NOUN	des{WB}loratadiini
 desoksimetasoni	NOUN	des{WB}oksi{WB}metasoni
@@ -4012,11 +3983,8 @@ dipolimomentti	NOUN	dipoli{WB}momentti
 dippauskastike	NOUN	dippaus{WB}kastike
 dippikastike	NOUN	dippi{WB}kastike
 dipropionaatti	NOUN	di{WB}propionaatti
-director cantus	NOUN	director cantus
-director musices	NOUN	director musices
 disakkaridi	NOUN	di{WB}sakkaridi
 disassosiaatio	NOUN	dis{WB}assosiaatio
-disc jockey	NOUN	disc jockey
 Discworld	PROPN	Disc{WB}world
 disharmonia	NOUN	dis{WB}harmonia
 disinformaatio	NOUN	dis{WB}informaatio
@@ -4070,8 +4038,6 @@ dopingaine	NOUN	doping{WB}aine
 dopingtesti	NOUN	doping{WB}testi
 draamakirjailija	NOUN	draama{WB}kirjailija
 draamakirjallisuus	NOUN	draama{WB}kirjallisuus
-drag racing	NOUN	drag racing
-drag show	NOUN	drag show
 Dragsfjärd	PROPN	Drags{WB}fjärd
 dravidakieli	NOUN	dravida{WB}kieli
 drillipora	NOUN	drilli{WB}pora
@@ -4110,19 +4076,15 @@ dysproteinemia	NOUN	dys{WB}proteinemia
 dystrofia	NOUN	dys{WB}trofia
 dystrofinen	ADJ	dys{WB}trofinen
 dysuria	NOUN	dys{WB}uria
-eau de Cologne	NOUN	eau de Cologne
 edaminjuusto	NOUN	edamin{WB}juusto
 edamjuusto	NOUN	edam{WB}juusto
 edelleenkuljetus	NOUN	edelleen{WB}kuljetus
 edelleenvuokraus	NOUN	edelleen{WB}vuokraus
-edellisen kaltainen	ADJ	edellisen kaltainen
 edellisilta	NOUN	edellis{WB}ilta
 edelliskertainen	ADJ	edellis{WB}kertainen
 edelliskesäinen	ADJ	edellis{WB}kesäinen
 edellisvuosi	NOUN	edellis{WB}vuosi
 edellisvuotinen	ADJ	edellis{WB}vuotinen
-edellä esitetty	NOUN	edellä esitetty
-edellä mainittu	NOUN	edellä mainittu
 edelläajaja	NOUN	edellä{WB}ajaja
 edelläjuoksija	NOUN	edellä{WB}juoksija
 edelläjuoksu	NOUN	edellä{WB}juoksu
@@ -4215,7 +4177,6 @@ eebenpuukasvi	NOUN	eebenpuu{WB}kasvi
 eekkerijalka	NOUN	eekkeri{WB}jalka
 eekkerituuma	NOUN	eekkeri{WB}tuuma
 Eerikinpoika	PROPN	Eerikin{WB}poika
-eestin kieli	NOUN	eestin kieli
 eetterimedia	NOUN	eetteri{WB}media
 eetterinarkoosi	NOUN	eetteri{WB}narkoosi
 eetterinukutus	NOUN	eetteri{WB}nukutus
@@ -4224,7 +4185,6 @@ egosentrinen	ADJ	ego{WB}sentrinen
 egosentrisesti	ADV	ego{WB}sentrisesti
 egotrippi	NOUN	ego{WB}trippi
 egyptinparru	NOUN	egyptin{WB}parru
-ehdoin tahdoin	ADV	ehdoin tahdoin
 ehdokasasettelu	NOUN	ehdokas{WB}asettelu
 ehdokaslista	NOUN	ehdokas{WB}lista
 ehdokkuuspuhe	NOUN	ehdokkuus{WB}puhe
@@ -4834,7 +4794,6 @@ energiatila	NOUN	energia{WB}tila
 energiatuotanto	NOUN	energia{WB}tuotanto
 energiavarasto	NOUN	energia{WB}varasto
 energiayksikkö	NOUN	energia{WB}yksikkö
-englannin kieli	NOUN	englannin kieli
 englanninbulldoggi	NOUN	englannin{WB}bulldoggi
 englanninjalava	NOUN	englannin{WB}jalava
 englanninkettukoira	NOUN	englanninkettu{WB}koira
@@ -4931,7 +4890,6 @@ ennakkoääni	NOUN	ennakko{WB}ääni
 ennakonkanto	NOUN	ennakon{WB}kanto
 ennakonpidätys	NOUN	ennakon{WB}pidätys
 ennakonpidätystodistus	NOUN	ennakon{WB}pidätys{WB}todistus
-ennalta ehkäisevä	ADJ	ennalta ehkäisevä
 ennalta-arvattavuus	NOUN	ennalta-arvattavuus
 ennaltaehkäiseminen	NOUN	ennalta{WB}ehkäiseminen
 ennaltaehkäisevä	ADJ	ennalta{WB}ehkäisevä
@@ -4939,12 +4897,6 @@ ennaltaehkäistä	VERB	ennalta{WB}ehkäistä
 ennaltaehkäisy	NOUN	ennalta{WB}ehkäisy
 ennaltamäärätty	ADJ	ennalta{WB}määrätty
 ennaltatietäminen	NOUN	ennalta{WB}tietäminen
-ennen aikaan	ADV	ennen aikaan
-ennen kaikkea	ADV	ennen kaikkea
-ennen kuin	ADV	ennen kuin
-ennen muinoin	ADV	ennen muinoin
-ennen pitkää	ADV	ennen pitkää
-ennen vanhaan	ADV	ennen vanhaan
 ennenaikainen	ADJ	ennen{WB}aikainen
 ennenkuulumaton	ADJ	ennen{WB}kuulumaton
 ennenmainittu	ADJ	ennen{WB}mainittu
@@ -4971,8 +4923,6 @@ Enonvesi	PROPN	Enon{WB}vesi
 enopuoli	NOUN	eno{WB}puoli
 Enovesi	PROPN	Eno{WB}vesi
 Enqvist	PROPN	En{WB}qvist
-ensi kädessä	ADV	ensi kädessä
-ensi sijassa	ADV	ensi sijassa
 ensiapuasema	NOUN	ensiapu{WB}asema
 ensiapukurssi	NOUN	ensiapu{WB}kurssi
 ensiapulaukku	NOUN	ensiapu{WB}laukku
@@ -4985,7 +4935,6 @@ ensi-isku	NOUN	ensi-isku
 ensikertalainen	NOUN	ensi{WB}kertalainen
 ensiksimainittu	NOUN	ensiksi{WB}mainittu
 ensiksituleva	ADJ	ensiksi{WB}tuleva
-ensin mainittu	NOUN	ensin mainittu
 ensinmainittu	NOUN	ensin{WB}mainittu
 ensipidettävä	ADJ	ensi{WB}pidettävä
 ensituleva	ADJ	ensi{WB}tuleva
@@ -5646,7 +5595,6 @@ erotuskynnys	NOUN	erotus{WB}kynnys
 erotusosamäärä	NOUN	erotus{WB}osa{WB}määrä
 erovuoro	NOUN	ero{WB}vuoro
 erovuoroinen	ADJ	ero{WB}vuoroinen
-ersän kieli	NOUN	ersän kieli
 erytrodermia	NOUN	erytro{WB}dermia
 erytromysiini	NOUN	erytro{WB}mysiini
 erytrosytopenia	NOUN	erytro{WB}sytopenia
@@ -5856,7 +5804,6 @@ eskimopyörähdys	NOUN	eskimo{WB}pyörähdys
 esofagoskopia	NOUN	esofago{WB}skopia
 esofagospasmi	NOUN	esofago{WB}spasmi
 esomepratsoli	NOUN	esome{WB}pratsoli
-espanjan kieli	NOUN	espanjan kieli
 espanjanilves	NOUN	espanjan{WB}ilves
 espanjankielinen	ADJ	espanjan{WB}kielinen
 espanjankilpikonna	NOUN	espanjan{WB}kilpikonna
@@ -6214,8 +6161,6 @@ eväsreppu	NOUN	eväs{WB}reppu
 eväsruoka	NOUN	eväs{WB}ruoka
 eväsvoileipä	NOUN	eväs{WB}voi{WB}leipä
 evävakain	NOUN	evä{WB}vakain
-ex tempore	ADV	ex tempore
-eximia cum laude approbatur	NOUN	eximia cum laude approbatur
 Faagerholm	PROPN	Faager{WB}holm
 faaraomuurahainen	NOUN	faarao{WB}muurahainen
 faaraorotta	NOUN	faarao{WB}rotta
@@ -6232,7 +6177,6 @@ faktorianalyysi	NOUN	faktori{WB}analyysi
 fallossymboli	NOUN	fallos{WB}symboli
 Fallqvist	PROPN	Fall{WB}qvist
 falsettiääni	NOUN	falsetti{WB}ääni
-fan club	NOUN	fan club
 fanklubi	NOUN	fan{WB}klubi
 fantasiaelämä	NOUN	fantasia{WB}elämä
 fantasiakappale	NOUN	fantasia{WB}kappale
@@ -6267,7 +6211,6 @@ fasaanikukko	NOUN	fasaani{WB}kukko
 fasaanipyy	NOUN	fasaani{WB}pyy
 fasaaniruoka	NOUN	fasaani{WB}ruoka
 fasistipuolue	NOUN	fasisti{WB}puolue
-fast food	NOUN	fast food
 feijoapensas	NOUN	feijoa{WB}pensas
 felypressiini	NOUN	fely{WB}pressiini
 feminiinimuoto	NOUN	feminiini{WB}muoto
@@ -6375,14 +6318,12 @@ fissiokelpoinen	ADJ	fissio{WB}kelpoinen
 fissiopommi	NOUN	fissio{WB}pommi
 fissioreaktio	NOUN	fissio{WB}reaktio
 fissioreaktori	NOUN	fissio{WB}reaktori
-flaamin kieli	NOUN	flaamin kieli
 flaaminkielinen	ADJ	flaamin{WB}kielinen
 flamingokukka	NOUN	flamingo{WB}kukka
 flamingonnokka	NOUN	flamingon{WB}nokka
 flanellihousut	NOUN	flanelli{WB}housut
 flanellipaita	NOUN	flanelli{WB}paita
 flavivirus	NOUN	flavi{WB}virus
-floor show	NOUN	floor show
 floppityyli	NOUN	floppi{WB}tyyli
 florettimiekkailu	NOUN	floretti{WB}miekkailu
 floridankilli	NOUN	floridan{WB}killi
@@ -6425,7 +6366,6 @@ foneemijärjestelmä	NOUN	foneemi{WB}järjestelmä
 fonografi	NOUN	fono{WB}grafi
 fonttikasetti	NOUN	fontti{WB}kasetti
 foolihappo	NOUN	fooli{WB}happo
-force majeure	NOUN	force majeure
 formaldehydi	NOUN	form{WB}aldehydi
 formonitriili	NOUN	formo{WB}nitriili
 formoterolifumaraatti	NOUN	formoteroli{WB}fumaraatti
@@ -6514,11 +6454,9 @@ fysostigmiini	NOUN	fyso{WB}stigmiini
 fytomenadioni	NOUN	fyto{WB}menadioni
 färsaarelainen	NOUN	fär{WB}saarelainen
 Färsaari	PROPN	Fär{WB}saari
-fäärin kieli	NOUN	fäärin kieli
 förvalttari	NOUN	för{WB}valttari
 gaalailta	NOUN	gaala{WB}ilta
 gabardiinihousut	NOUN	gabardiini{WB}housut
-gaelin kieli	NOUN	gaelin kieli
 gaelinkielinen	ADJ	gaelin{WB}kielinen
 galatalaiskirje	NOUN	galatalais{WB}kirje
 gallupkysely	NOUN	gallup{WB}kysely
@@ -6585,7 +6523,6 @@ gigabitti	NOUN	giga{WB}bitti
 gigahertsi	NOUN	giga{WB}hertsi
 gigatavu	NOUN	giga{WB}tavu
 gigawatti	NOUN	giga{WB}watti
-ginger ale	NOUN	ginger ale
 ginikääre	NOUN	gini{WB}kääre
 ginirommi	NOUN	gini{WB}rommi
 ginsengjuuri	NOUN	ginseng{WB}juuri
@@ -7343,7 +7280,6 @@ hansaliitto	NOUN	hansa{WB}liitto
 hansikashalvaus	NOUN	hansikas{WB}halvaus
 hansikaslokero	NOUN	hansikas{WB}lokero
 hantavirus	NOUN	hanta{WB}virus
-hantin kieli	NOUN	hantin kieli
 Hanttavaara	PROPN	Hantta{WB}vaara
 hanttihomma	NOUN	hantti{WB}homma
 hanttikortti	NOUN	hantti{WB}kortti
@@ -7406,7 +7342,6 @@ happorock	NOUN	happo{WB}rock
 happosade	NOUN	happo{WB}sade
 happotesti	NOUN	happo{WB}testi
 happoveikko	NOUN	happo{WB}veikko
-happy hour	NOUN	happy hour
 hapsihirssi	NOUN	hapsi{WB}hirssi
 hapsijukka	NOUN	hapsi{WB}jukka
 hapsiluikka	NOUN	hapsi{WB}luikka
@@ -7921,7 +7856,6 @@ heikkovaloinen	ADJ	heikko{WB}valoinen
 heikkovartinen	ADJ	heikko{WB}vartinen
 heikkovointisuus	NOUN	heikko{WB}vointisuus
 heikkoälyisyys	NOUN	heikko{WB}älyisyys
-heikun keikun	ADV	heikun keikun
 heilahdusaika	NOUN	heilahdus{WB}aika
 heilahduskulma	NOUN	heilahdus{WB}kulma
 heilahduslaajuus	NOUN	heilahdus{WB}laajuus
@@ -8408,7 +8342,6 @@ hepatosellulaarinen	ADJ	hepato{WB}sellulaarinen
 hepoasteet	NOUN	hepo{WB}asteet
 hepokatti	NOUN	hepo{WB}katti
 heprealaiskirje	NOUN	heprealais{WB}kirje
-heprean kieli	NOUN	heprean kieli
 hepreankielinen	ADJ	heprean{WB}kielinen
 hepsankeikka	NOUN	hepsan{WB}keikka
 heptahydraatti	NOUN	hepta{WB}hydraatti
@@ -8819,7 +8752,6 @@ Hietavesi	PROPN	Hieta{WB}vesi
 hietikkonata	NOUN	hietikko{WB}nata
 hietikkopyy	NOUN	hietikko{WB}pyy
 hifilaite	NOUN	hifi{WB}laite
-high tech	NOUN	high tech
 hiha-aukko	NOUN	hiha-aukko
 hihalauta	NOUN	hiha{WB}lauta
 hihalyönti	NOUN	hiha{WB}lyönti
@@ -9043,7 +8975,6 @@ hinausauto	NOUN	hinaus{WB}auto
 hinausköysi	NOUN	hinaus{WB}köysi
 hinauspolku	NOUN	hinaus{WB}polku
 hinausvaijeri	NOUN	hinaus{WB}vaijeri
-hindin kieli	NOUN	hindin kieli
 hindujumala	NOUN	hindu{WB}jumala
 hindukalenteri	NOUN	hindu{WB}kalenteri
 Hinkanvesi	PROPN	Hinkan{WB}vesi
@@ -9198,7 +9129,6 @@ hissinkäyttäjä	NOUN	hissin{WB}käyttäjä
 hissipoika	NOUN	hissi{WB}poika
 hissityttö	NOUN	hissi{WB}tyttö
 hissivalaisin	NOUN	hissi{WB}valaisin
-hissun kissun	ADV	hissun kissun
 histamiinipäänsärky	NOUN	histamiini{WB}päänsärky
 histogrammi	NOUN	histo{WB}grammi
 histopatologia	NOUN	histo{WB}patologia
@@ -9384,7 +9314,6 @@ holhousvaltio	NOUN	holhous{WB}valtio
 holkkihiha	NOUN	holkki{WB}hiha
 holkkinasta	NOUN	holkki{WB}nasta
 hollandaisekastike	NOUN	hollandaise{WB}kastike
-hollannin kieli	NOUN	hollannin kieli
 hollanninkastike	NOUN	hollannin{WB}kastike
 hollitupa	NOUN	holli{WB}tupa
 Hollolantie	PROPN	Hollolan{WB}tie
@@ -9446,7 +9375,6 @@ Honkajoki	PROPN	Honka{WB}joki
 honkalauta	NOUN	honka{WB}lauta
 honkapuu	NOUN	honka{WB}puu
 Honkaranta	PROPN	Honka{WB}ranta
-honoris causa	ADV	honoris causa
 hopeabromidi	NOUN	hopea{WB}bromidi
 hopeadollari	NOUN	hopea{WB}dollari
 hopeaesine	NOUN	hopea{WB}esine
@@ -9563,7 +9491,6 @@ horrostila	NOUN	horros{WB}tila
 horsmakasvi	NOUN	horsma{WB}kasvi
 horsmakiitäjä	NOUN	horsma{WB}kiitäjä
 hortensiakasvi	NOUN	hortensia{WB}kasvi
-hot dog	NOUN	hot dog
 hotellietsivä	NOUN	hotelli{WB}etsivä
 hotellihuone	NOUN	hotelli{WB}huone
 hotellikasino	NOUN	hotelli{WB}kasino
@@ -9626,7 +9553,6 @@ huhtikuu	NOUN	huhti{WB}kuu
 huhukampanja	NOUN	huhu{WB}kampanja
 huhumylly	NOUN	huhu{WB}mylly
 huhupuhe	NOUN	huhu{WB}puhe
-hui hai	INTJ	hui hai
 huijausyritys	NOUN	huijaus{WB}yritys
 huikopala	NOUN	huiko{WB}pala
 huilukorppi	NOUN	huilu{WB}korppi
@@ -9704,12 +9630,10 @@ huippu-urheilu	NOUN	huippu-urheilu
 huippuyksilö	NOUN	huippu{WB}yksilö
 huippuälykäs	ADJ	huippu{WB}älykäs
 huiputustemppu	NOUN	huiputus{WB}temppu
-huiskin haiskin	ADV	huiskin haiskin
 huiskupurkaus	NOUN	huisku{WB}purkaus
 Huistinvaara	PROPN	Huistin{WB}vaara
 huivikaulus	NOUN	huivi{WB}kaulus
 huivipäinen	ADJ	huivi{WB}päinen
-hujan hajan	ADV	hujan hajan
 hukanputki	NOUN	hukan{WB}putki
 hukka-aika	NOUN	hukka-aika
 hukkaamiskielto	NOUN	hukkaamis{WB}kielto
@@ -9840,7 +9764,6 @@ huomionhakuinen	ADJ	huomion{WB}hakuinen
 huomionhakuisuus	NOUN	huomion{WB}hakuisuus
 huomionkipeä	ADJ	huomion{WB}kipeä
 huomionosoitus	NOUN	huomion{WB}osoitus
-huomioon ottaen	ADV	huomioon ottaen
 huomioonottaa	VERB	huomioon{WB}ottaa
 huomioonotto	NOUN	huomioon{WB}otto
 huomiovalot	NOUN	huomio{WB}valot
@@ -10362,8 +10285,6 @@ hyvätuottoinen	ADJ	hyvä{WB}tuottoinen
 hyväuskoinen	ADJ	hyvä{WB}uskoinen
 hyväuskoisesti	ADV	hyvä{WB}uskoisesti
 hyväuskoisuus	NOUN	hyvä{WB}uskoisuus
-hyvää tarkoittava	ADJ	hyvää tarkoittava
-hyvää tekevä	ADJ	hyvää tekevä
 hyvä-ääninen	ADJ	hyvä-ääninen
 hyydepato	NOUN	hyyde{WB}pato
 hyydytysaine	NOUN	hyydytys{WB}aine
@@ -10427,7 +10348,6 @@ hyötyreaktori	NOUN	hyöty{WB}reaktori
 hyötysuhde	NOUN	hyöty{WB}suhde
 hyötyteho	NOUN	hyöty{WB}teho
 hyötöreaktori	NOUN	hyötö{WB}reaktori
-hädin tuskin	ADV	hädin tuskin
 hädänalainen	ADJ	hädän{WB}alainen
 häijynilkinen	ADJ	häijyn{WB}ilkinen
 häikäisysuoja	NOUN	häikäisy{WB}suoja
@@ -11012,7 +10932,6 @@ Iijoki	PROPN	Ii{WB}joki
 Iijärvi	PROPN	Ii{WB}järvi
 iilimato	NOUN	iili{WB}mato
 Iinalampi	PROPN	Iina{WB}lampi
-iirin kieli	NOUN	iirin kieli
 iirishimmennin	NOUN	iiris{WB}himmennin
 iirispainanta	NOUN	iiris{WB}painanta
 iirispainatus	NOUN	iiris{WB}painatus
@@ -11135,7 +11054,6 @@ ikäsidonnainen	ADJ	ikä{WB}sidonnainen
 ikäsyrjintä	NOUN	ikä{WB}syrjintä
 ikätoveri	NOUN	ikä{WB}toveri
 ikävuosi	NOUN	ikä{WB}vuosi
-ikään kuin	ADV	ikään kuin
 Ilaskivi	PROPN	Ilas{WB}kivi
 Ilkantie	PROPN	Ilkan{WB}tie
 ilkeäluonteinen	ADJ	ilkeä{WB}luonteinen
@@ -11953,7 +11871,6 @@ iskuvoima	NOUN	isku{WB}voima
 iskuvoimainen	ADJ	isku{WB}voimainen
 islaminusko	NOUN	islamin{WB}usko
 islaminuskoinen	ADJ	islamin{WB}uskoinen
-islannin kieli	NOUN	islannin kieli
 islanninjäkälä	NOUN	islannin{WB}jäkälä
 islanninsälpä	NOUN	islannin{WB}sälpä
 islannintelkkä	NOUN	islannin{WB}telkkä
@@ -12171,7 +12088,6 @@ isäpappa	NOUN	isä{WB}pappa
 isäpuoli	NOUN	isä{WB}puoli
 isäukko	NOUN	isä{WB}ukko
 isävainaja	NOUN	isä{WB}vainaja
-italian kieli	NOUN	italian kieli
 italiankastike	NOUN	italian{WB}kastike
 italiankielinen	ADJ	italian{WB}kielinen
 italiankumina	NOUN	italian{WB}kumina
@@ -12203,7 +12119,6 @@ itkunsekaisuus	NOUN	itkun{WB}sekaisuus
 itkupilli	NOUN	itku{WB}pilli
 itkusilmin	ADV	itku{WB}silmin
 itkuvirsi	NOUN	itku{WB}virsi
-itse kukin	PRON	itse kukin
 itsehallintoalue	NOUN	itse{WB}hallinto{WB}alue
 itsehallinto-oikeus	NOUN	itse{WB}hallinto-oikeus
 itsehoitolääke	NOUN	itse{WB}hoito{WB}lääke
@@ -12335,7 +12250,6 @@ iäisyysarvo	NOUN	iäisyys{WB}arvo
 iäisyyskaipuu	NOUN	iäisyys{WB}kaipuu
 iäisyyskutsu	NOUN	iäisyys{WB}kutsu
 iäisyystoivo	NOUN	iäisyys{WB}toivo
-iän kaiken	ADV	iän kaiken
 iänikuinen	ADJ	iän{WB}ikuinen
 iänikuisesti	ADV	iän{WB}ikuisesti
 iänmääritys	NOUN	iän{WB}määritys
@@ -12582,7 +12496,6 @@ jalusraksi	NOUN	jalus{WB}raksi
 jalussolmu	NOUN	jalus{WB}solmu
 jalustimenmuotoinen	ADJ	jalustimen{WB}muotoinen
 jalustinhihna	NOUN	jalustin{WB}hihna
-jam session	NOUN	jam session
 janakaavio	NOUN	jana{WB}kaavio
 Jangesjärvi	PROPN	Janges{WB}järvi
 jankkoaura	NOUN	jankko{WB}aura
@@ -12590,7 +12503,6 @@ janojuoma	NOUN	jano{WB}juoma
 janontunne	NOUN	janon{WB}tunne
 janssoninkiusaus	NOUN	janssonin{WB}kiusaus
 jaostopäällikkö	NOUN	jaosto{WB}päällikkö
-japanin kieli	NOUN	japanin kieli
 japaninaprikoosi	NOUN	japanin{WB}aprikoosi
 japaninhappomarja	NOUN	japanin{WB}happomarja
 japaninhirssi	NOUN	japanin{WB}hirssi
@@ -12740,8 +12652,6 @@ jesuiittaluostari	NOUN	jesuiitta{WB}luostari
 jesuiittamainen	ADJ	jesuiitta{WB}mainen
 jesuiittamunkki	NOUN	jesuiitta{WB}munkki
 jesuiittaveljestö	NOUN	jesuiitta{WB}veljestö
-jet lag	NOUN	jet lag
-jet set	NOUN	jet set
 jiirilaatikko	NOUN	jiiri{WB}laatikko
 jiujitsu	NOUN	jiu{WB}jitsu
 jobinposti	NOUN	jobin{WB}posti
@@ -12827,9 +12737,7 @@ johtosääntö	NOUN	johto{WB}sääntö
 johtoteema	NOUN	johto{WB}teema
 johtotroikka	NOUN	johto{WB}troikka
 johtotähti	NOUN	johto{WB}tähti
-joint venture -yritys	NOUN	joint venture -yritys
 jojolaihduttaminen	NOUN	jojo{WB}laihduttaminen
-joka ainoa	PRON	joka ainoa
 joka-aamuinen	ADJ	joka-aamuinen
 jokahetkinen	ADJ	joka{WB}hetkinen
 jokaikinen	ADJ	joka{WB}ikinen
@@ -13323,7 +13231,6 @@ junioriasema	NOUN	juniori{WB}asema
 juniorijoukkue	NOUN	juniori{WB}joukkue
 junioritoiminta	NOUN	juniori{WB}toiminta
 junioriurheilu	NOUN	juniori{WB}urheilu
-junk food	NOUN	junk food
 Junkuantie	PROPN	Junkuan{WB}tie
 junttapulla	NOUN	juntta{WB}pulla
 Juojärvi	PROPN	Juo{WB}järvi
@@ -13503,8 +13410,6 @@ juurisikuri	NOUN	juuri{WB}sikuri
 juuritäyte	NOUN	juuri{WB}täyte
 juuriverso	NOUN	juuri{WB}verso
 juurivesa	NOUN	juuri{WB}vesa
-juurta jaksaen	ADV	juurta jaksaen
-juurta jaksain	ADV	juurta jaksain
 juurtumahapsi	NOUN	juurtuma{WB}hapsi
 Juurusvesi	PROPN	Juurus{WB}vesi
 juustoaine	NOUN	juusto{WB}aine
@@ -14367,7 +14272,6 @@ kahdeksasosaneekeri	NOUN	kahdeksasosa{WB}neekeri
 kahdeksasosanuotti	NOUN	kahdeksas{WB}osa{WB}nuotti
 kahdeksassadas	ADJ	kahdeksas{WB}sadas
 kahdeksisenkymmentä	NUM	kahdeksisen{WB}kymmentä
-kahden kesken	ADV	kahden kesken
 kahdenistuttava	ADJ	kahden{WB}istuttava
 kahdenlainen	ADJ	kahden{WB}lainen
 kahdenmaattava	ADJ	kahden{WB}maattava
@@ -14466,7 +14370,6 @@ kaihileikkaus	NOUN	kaihi{WB}leikkaus
 kaihomieli	NOUN	kaiho{WB}mieli
 kaihomielinen	ADJ	kaiho{WB}mielinen
 Kaijantie	PROPN	Kaijan{WB}tie
-kaiken kaikkiaan	ADV	kaiken kaikkiaan
 kaikenlainen	ADJ	kaiken{WB}lainen
 kaikinpuolinen	ADJ	kaikin{WB}puolinen
 kaikkivaltias	NOUN	kaikki{WB}valtias
@@ -15775,7 +15678,6 @@ kapriskastike	NOUN	kapris{WB}kastike
 kapriskasvi	NOUN	kapris{WB}kasvi
 kaprispensas	NOUN	kapris{WB}pensas
 kapteeniluutnantti	NOUN	kapteeni{WB}luutnantti
-Kapteenin kärrytie	PROPN	Kapteenin kärry{WB}tie
 kaptopriili	NOUN	kapto{WB}priili
 kapulahissi	NOUN	kapula{WB}hissi
 kapulakieli	NOUN	kapula{WB}kieli
@@ -15916,7 +15818,6 @@ karjakeittiö	NOUN	karja{WB}keittiö
 karjakuume	NOUN	karja{WB}kuume
 karjala-aunus	NOUN	karjala-aunus
 karjalaiva	NOUN	karja{WB}laiva
-karjalan kieli	NOUN	karjalan kieli
 karjalankarhukoira	NOUN	karjalan{WB}karhu{WB}koira
 karjalanneito	NOUN	karjalan{WB}neito
 karjalanpaisti	NOUN	karjalan{WB}paisti
@@ -16264,7 +16165,6 @@ kastanjanruostesieni	NOUN	kastanjan{WB}ruostesieni
 kastanjanruskea	NOUN	kastanjan{WB}ruskea
 kastanjapuu	NOUN	kastanja{WB}puu
 kastanjasädekaisla	NOUN	kastanja{WB}sädekaisla
-Kastarin kärrytie	PROPN	Kastarin kärry{WB}tie
 kasteallas	NOUN	kaste{WB}allas
 kasteenraikas	ADJ	kasteen{WB}raikas
 kastehelmi	NOUN	kaste{WB}helmi
@@ -16891,9 +16791,6 @@ kaunosielu	NOUN	kauno{WB}sielu
 kaunosieluinen	ADJ	kauno{WB}sieluinen
 kaunosilmä	NOUN	kauno{WB}silmä
 kaunotaide	NOUN	kauno{WB}taide
-kaupaksi käymätön	ADJ	kaupaksi käymätön
-kaupaksi käyvä	ADJ	kaupaksi käyvä
-kaupaksi menevä	ADJ	kaupaksi menevä
 kaupanhieronta	NOUN	kaupan{WB}hieronta
 kaupankävijä	NOUN	kaupan{WB}kävijä
 kaupankäynti	NOUN	kaupan{WB}käynti
@@ -17080,7 +16977,6 @@ kausivaihtelu	NOUN	kausi{WB}vaihtelu
 Kaustajärvi	PROPN	Kausta{WB}järvi
 kautokenkä	NOUN	kauto{WB}kenkä
 kautsukasvi	NOUN	kautsu{WB}kasvi
-kautta rantain	ADV	kautta rantain
 kautta-ajo	NOUN	kautta-ajo
 kauttakuljetus	NOUN	kautta{WB}kuljetus
 kauttakulku	NOUN	kautta{WB}kulku
@@ -17771,7 +17667,6 @@ kerrosvoileipä	NOUN	kerros{WB}voileipä
 kerrotunlainen	ADJ	kerrotun{WB}lainen
 kerskakulutus	NOUN	kerska{WB}kulutus
 kerskarakentaminen	NOUN	kerska{WB}rakentaminen
-kerta kaikkiaan	ADV	kerta kaikkiaan
 kerta-annos	NOUN	kerta-annos
 kerta-astia	NOUN	kerta-astia
 kertaheitolla	ADV	kerta{WB}heitolla
@@ -18791,7 +18686,6 @@ kiikkastuoli	NOUN	kiikkas{WB}tuoli
 Kiikkulantie	PROPN	Kiikkulan{WB}tie
 kiikkulauta	NOUN	kiikku{WB}lauta
 kiikkutuoli	NOUN	kiikku{WB}tuoli
-kiikun kaakun	ADV	kiikun kaakun
 kiilahihna	NOUN	kiila{WB}hihna
 kiilakivi	NOUN	kiila{WB}kivi
 kiilakorko	NOUN	kiila{WB}korko
@@ -18840,13 +18734,11 @@ kiilupistiäisalalaji	NOUN	kiilupistiäis{WB}alalaji
 kiilusilmä	NOUN	kiilu{WB}silmä
 kiilusilmäinen	ADJ	kiilu{WB}silmäinen
 kiima-aika	NOUN	kiima-aika
-Kiimakallion metsätie	PROPN	Kiima{WB}kallion metsä{WB}tie
 kiina-alkaloidi	NOUN	kiina-alkaloidi
 kiinailmiö	NOUN	kiina{WB}ilmiö
 kiinakuori	NOUN	kiina{WB}kuori
 kiinalaiskaulus	NOUN	kiinalais{WB}kaulus
 kiinalaiskortteli	NOUN	kiinalais{WB}kortteli
-kiinan kieli	NOUN	kiinan kieli
 kiinanalligaattori	NOUN	kiinan{WB}alligaattori
 kiinanasteri	NOUN	kiinan{WB}asteri
 kiinanjalava	NOUN	kiinan{WB}jalava
@@ -19199,7 +19091,6 @@ kinkunpala	NOUN	kinkun{WB}pala
 kinnaspari	NOUN	kinnas{WB}pari
 kinnerjänne	NOUN	kinner{WB}jänne
 kinnernivel	NOUN	kinner{WB}nivel
-Kinnun Maijan huoltotie	PROPN	Kinnun Maijan huolto{WB}tie
 kinofilmi	NOUN	kino{WB}filmi
 kinofilmikamera	NOUN	kino{WB}filmi{WB}kamera
 kinttupolku	NOUN	kinttu{WB}polku
@@ -19213,7 +19104,6 @@ kioskikirjallisuus	NOUN	kioski{WB}kirjallisuus
 kioskiruoka	NOUN	kioski{WB}ruoka
 kioskiviihde	NOUN	kioski{WB}viihde
 kipeäjalkainen	ADJ	kipeä{WB}jalkainen
-kipin kapin	ADV	kipin kapin
 kipinäkammio	NOUN	kipinä{WB}kammio
 kipinälähetin	NOUN	kipinä{WB}lähetin
 kipinämikko	NOUN	kipinä{WB}mikko
@@ -20662,7 +20552,6 @@ koloratuurisopraano	NOUN	koloratuuri{WB}sopraano
 koloruuvi	NOUN	kolo{WB}ruuvi
 kolossalaiskirje	NOUN	kolossalais{WB}kirje
 Kolovesi	PROPN	Kolo{WB}vesi
-koltan kieli	NOUN	koltan kieli
 koltankielinen	ADJ	koltan{WB}kielinen
 koltanlappalainen	NOUN	koltan{WB}lappalainen
 koltanlappi	NOUN	koltan{WB}lappi
@@ -20706,7 +20595,6 @@ komentotorni	NOUN	komento{WB}torni
 komentotulkki	NOUN	komento{WB}tulkki
 komentovyö	NOUN	komento{WB}vyö
 komentoääni	NOUN	komento{WB}ääni
-komin kieli	NOUN	komin kieli
 komissiokauppa	NOUN	komissio{WB}kauppa
 komissionsaaja	NOUN	komission{WB}saaja
 komissionääri	NOUN	komission{WB}ääri
@@ -21004,7 +20892,6 @@ korallipuu	NOUN	koralli{WB}puu
 koralliriutta	NOUN	koralli{WB}riutta
 korallisaari	NOUN	koralli{WB}saari
 korallisammal	NOUN	koralli{WB}sammal
-korean kieli	NOUN	korean kieli
 koreanvärinen	ADJ	korean{WB}värinen
 koreatörmäkukka	NOUN	korea{WB}törmäkukka
 koreografi	NOUN	koreo{WB}grafi
@@ -21914,9 +21801,7 @@ krappilakka	NOUN	krappi{WB}lakka
 krapula-aamu	NOUN	krapula-aamu
 krapularyyppy	NOUN	krapula{WB}ryyppy
 krassikanankaali	NOUN	krassi{WB}kanankaali
-Kravin metsäautotie	PROPN	Kravin metsäauto{WB}tie
 kreatiinifosfokinaasi	NOUN	kreatiini{WB}fosfo{WB}kinaasi
-kreikan kieli	NOUN	kreikan kieli
 kreikanakantti	NOUN	kreikan{WB}akantti
 kreikankielinen	ADJ	kreikan{WB}kielinen
 kreikanlohikäärmevehka	NOUN	kreikanlohikäärme{WB}vehka
@@ -23982,7 +23867,6 @@ kymmenysvaaka	NOUN	kymmenys{WB}vaaka
 kymppiluokka	NOUN	kymppi{WB}luokka
 kymppiluokkalainen	NOUN	kymppi{WB}luokkalainen
 kymppitonni	NOUN	kymppi{WB}tonni
-kymrin kieli	NOUN	kymrin kieli
 kynnenalus	NOUN	kynnen{WB}alus
 kynnenjuuri	NOUN	kynnen{WB}juuri
 kynnenmustuainen	NOUN	kynnen{WB}mustuainen
@@ -24071,12 +23955,10 @@ kypäräpäinen	ADJ	kypärä{WB}päinen
 kypärätemppu	NOUN	kypärä{WB}temppu
 kyrmyniska	NOUN	kyrmy{WB}niska
 kyrmyniskainen	ADJ	kyrmy{WB}niskainen
-Kyrönkankaan kesätie	PROPN	Kyrönkankaan kesä{WB}tie
 kyseenalainen	ADJ	kyseen{WB}alainen
 kyseenalaistaa	VERB	kyseen{WB}alaistaa
 kyseenalaisuus	NOUN	kyseen{WB}alaisuus
 kyseenomainen	ADJ	kyseen{WB}omainen
-kyseessä oleva	ADJ	kyseessä oleva
 kyselyikä	NOUN	kysely{WB}ikä
 kyselyikäinen	ADJ	kysely{WB}ikäinen
 kyselykaavake	NOUN	kysely{WB}kaavake
@@ -24181,7 +24063,6 @@ kyömynenä	NOUN	kyömy{WB}nenä
 kyömynenäinen	ADJ	kyömy{WB}nenäinen
 kyöpelinvuori	NOUN	kyöpelin{WB}vuori
 kädellistutkimus	NOUN	kädellis{WB}tutkimus
-käden käänteessä	ADV	käden käänteessä
 kädenanto	NOUN	käden{WB}anto
 kädenheilautus	NOUN	käden{WB}heilautus
 kädenjatko	NOUN	käden{WB}jatko
@@ -25458,7 +25339,6 @@ laparoskopia	NOUN	laparo{WB}skopia
 lapasampi	NOUN	lapa{WB}sampi
 lapasorsa	NOUN	lapa{WB}sorsa
 lapasotka	NOUN	lapa{WB}sotka
-lapin kieli	NOUN	lapin kieli
 lapinhauta	NOUN	lapin{WB}hauta
 lapinhullu	NOUN	lapin{WB}hullu
 Lapinjärvi	PROPN	Lapin{WB}järvi
@@ -25813,7 +25693,6 @@ latinalaisamerikkalainen	NOUN	latinalais{WB}amerikkalainen
 latinalaisperäinen	ADJ	latinalais{WB}peräinen
 latinalaispurje	NOUN	latinalais{WB}purje
 latinalaistanssi	NOUN	latinalais{WB}tanssi
-latinan kieli	NOUN	latinan kieli
 latinankielinen	ADJ	latinan{WB}kielinen
 latinomusiikki	NOUN	latino{WB}musiikki
 latomahaka	NOUN	latoma{WB}haka
@@ -25884,7 +25763,6 @@ latvapermanentti	NOUN	latva{WB}permanentti
 latvapiirto	NOUN	latva{WB}piirto
 latvatuli	NOUN	latva{WB}tuli
 latvavesi	NOUN	latva{WB}vesi
-latvian kieli	NOUN	latvian kieli
 lauantaiaamu	NOUN	lauantai{WB}aamu
 lauantai-ilta	NOUN	lauantai-ilta
 lauantaimakkara	NOUN	lauantai{WB}makkara
@@ -26915,7 +26793,6 @@ lietelanta	NOUN	liete{WB}lanta
 lietelantala	NOUN	liete{WB}lantala
 lietemaa	NOUN	liete{WB}maa
 lieterappaus	NOUN	liete{WB}rappaus
-liettuan kieli	NOUN	liettuan kieli
 lievealue	NOUN	lieve{WB}alue
 lieveilmiö	NOUN	lieve{WB}ilmiö
 Lievestuore	PROPN	Lieves{WB}tuore
@@ -27365,7 +27242,6 @@ liitäntärasia	NOUN	liitäntä{WB}rasia
 liivatejauhe	NOUN	liivate{WB}jauhe
 liivatelehti	NOUN	liivate{WB}lehti
 liivihame	NOUN	liivi{WB}hame
-liivin kieli	NOUN	liivin kieli
 liivinkielinen	ADJ	liivin{WB}kielinen
 liivinmaalainen	NOUN	liivin{WB}maalainen
 liivintasku	NOUN	liivin{WB}tasku
@@ -27980,7 +27856,6 @@ lomasijainen	NOUN	loma{WB}sijainen
 lomasijaisuus	NOUN	loma{WB}sijaisuus
 lomasävel	NOUN	loma{WB}sävel
 lomatodistus	NOUN	loma{WB}todistus
-long drink	NOUN	long drink
 lonkerojalkainen	NOUN	lonkero{WB}jalkainen
 lonkkaheitto	NOUN	lonkka{WB}heitto
 lonkkahermo	NOUN	lonkka{WB}hermo
@@ -28145,7 +28020,6 @@ lounatuuli	NOUN	louna{WB}tuuli
 lovastatiini	NOUN	lova{WB}statiini
 Lovecraft	PROPN	Love{XB}craft
 Lovejoy	PROPN	Love{XB}joy
-lubenter approbatur	NOUN	lubenter approbatur
 luentohuone	NOUN	luento{WB}huone
 luentokalvo	NOUN	luento{WB}kalvo
 luentokurssi	NOUN	luento{WB}kurssi
@@ -28300,7 +28174,6 @@ lukutiedosto	NOUN	luku{WB}tiedosto
 lukutila	NOUN	luku{WB}tila
 lukutottumus	NOUN	luku{WB}tottumus
 lukutoukka	NOUN	luku{WB}toukka
-lukuun ottamatta	ADP	lukuun ottamatta
 lukuvalaisin	NOUN	luku{WB}valaisin
 lukuvalo	NOUN	luku{WB}valo
 lukuvirhe	NOUN	luku{WB}virhe
@@ -30368,7 +30241,6 @@ mafiapomo	NOUN	mafia{WB}pomo
 magmakivi	NOUN	magma{WB}kivi
 magmakivilaji	NOUN	magma{WB}kivi{WB}laji
 magmapesäke	NOUN	magma{WB}pesäke
-magna cum laude approbatur	NOUN	magna cum laude approbatur
 magneettidipoli	NOUN	magneetti{WB}dipoli
 magneettidipolimomentti	NOUN	magneettidipoli{WB}momentti
 magneettijuova	NOUN	magneetti{WB}juova
@@ -30880,7 +30752,6 @@ makuvirhe	NOUN	maku{WB}virhe
 makuvivahde	NOUN	maku{WB}vivahde
 malabsorptio	NOUN	mal{WB}absorptio
 malagaviini	NOUN	malaga{WB}viini
-malaijin kieli	NOUN	malaijin kieli
 malariahyttynen	NOUN	malaria{WB}hyttynen
 malarialoinen	NOUN	malaria{WB}loinen
 malarialääke	NOUN	malaria{WB}lääke
@@ -31032,7 +30903,6 @@ mansikkapelto	NOUN	mansikka{WB}pelto
 mansikkapuu	NOUN	mansikka{WB}puu
 mansikkasäilyke	NOUN	mansikka{WB}säilyke
 mansikkaviljelys	NOUN	mansikka{WB}viljelys
-mansin kieli	NOUN	mansin kieli
 mantelikeksi	NOUN	manteli{WB}keksi
 mantelikermaleivos	NOUN	manteli{WB}kermaleivos
 mantelikivi	NOUN	manteli{WB}kivi
@@ -31076,7 +30946,6 @@ marginaalivero	NOUN	marginaali{WB}vero
 marihuanasavuke	NOUN	marihuana{WB}savuke
 mariininsini	NOUN	mariinin{WB}sini
 Marimekko	PROPN	Mari{WB}mekko
-marin kieli	NOUN	marin kieli
 marionettihallitus	NOUN	marionetti{WB}hallitus
 marionettiteatteri	NOUN	marionetti{WB}teatteri
 mariviljelmä	NOUN	mari{WB}viljelmä
@@ -31949,7 +31818,6 @@ merivuokko	NOUN	meri{WB}vuokko
 meriväki	NOUN	meri{WB}väki
 meriyhteys	NOUN	meri{WB}yhteys
 merkelikivi	NOUN	merkeli{WB}kivi
-merkille pantava	ADJ	merkille pantava
 merkillepano	NOUN	merkille{WB}pano
 merkillepantava	ADJ	merkille{WB}pantava
 merkinanto	NOUN	merkin{WB}anto
@@ -32229,7 +32097,6 @@ metsälauha	NOUN	metsä{WB}lauha
 metsälehmus	NOUN	metsä{WB}lehmus
 metsälintu	NOUN	metsä{WB}lintu
 metsäluonto	NOUN	metsä{WB}luonto
-Metsälän kesätie	PROPN	Metsälän kesä{WB}tie
 metsämaa	NOUN	metsä{WB}maa
 metsämaasto	NOUN	metsä{WB}maasto
 metsämaisema	NOUN	metsä{WB}maisema
@@ -32491,8 +32358,6 @@ mielikuvitushenkilö	NOUN	mielikuvitus{WB}henkilö
 mielikuvitusleikki	NOUN	mielikuvitus{WB}leikki
 mielikuvitusmaailma	NOUN	mieli{WB}kuvitus{WB}maa{XB}ilma
 mielikuvitusolento	NOUN	mielikuvitus{WB}olento
-mielin kielin	ADV	mielin kielin
-mielin määrin	ADV	mielin määrin
 mielipaha	NOUN	mieli{WB}paha
 mielipaikka	NOUN	mieli{WB}paikka
 mielipide	NOUN	mieli{WB}pide
@@ -32752,7 +32617,6 @@ miljoonatalo	NOUN	miljoona{WB}talo
 Miljoonatie	PROPN	Miljoona{WB}tie
 miljoonavahinko	NOUN	miljoona{WB}vahinko
 miljöökuvaus	NOUN	miljöö{WB}kuvaus
-milk shake	NOUN	milk shake
 milliampeeri	NOUN	milli{WB}ampeeri
 milliampeerimittari	NOUN	milli{WB}ampeerimittari
 milliaste	NOUN	milli{WB}aste
@@ -32845,9 +32709,6 @@ minkkihattu	NOUN	minkki{WB}hattu
 minkkitarha	NOUN	minkki{WB}tarha
 minkkitarhaaja	NOUN	minkki{WB}tarhaaja
 minkkiturkki	NOUN	minkki{WB}turkki
-minkä takia	ADV	minkä takia
-minkä tähden	ADV	minkä tähden
-minkä vuoksi	ADV	minkä vuoksi
 minkähintainen	ADJ	minkä{WB}hintainen
 minkäikäinen	ADJ	minkä{WB}ikäinen
 minkäkaltainen	ADJ	minkä{WB}kaltainen
@@ -32895,7 +32756,6 @@ mitalitaiteilija	NOUN	mitali{WB}taiteilija
 mitalitili	NOUN	mitali{WB}tili
 mitanpitävyys	NOUN	mitan{WB}pitävyys
 mitanpitävä	NOUN	mitan{WB}pitävä
-miten päin	ADV	miten päin
 mitokondrio	NOUN	mito{WB}kondrio
 mitraalistenoosi	NOUN	mitraali{WB}stenoosi
 mittaamisväline	NOUN	mittaamis{WB}väline
@@ -32982,7 +32842,6 @@ mokkatakki	NOUN	mokka{WB}takki
 mokkaturkis	NOUN	mokka{WB}turkis
 mokkaturkki	NOUN	mokka{WB}turkki
 moklobemidi	NOUN	mo{WB}klo{WB}be{WB}midi
-mokšan kieli	NOUN	mokšan kieli
 moksifloksasiini	NOUN	moksi{WB}floksasiini
 molekyylibiologi	NOUN	molekyyli{WB}biologi
 molekyylibiologia	NOUN	molekyyli{WB}biologia
@@ -33007,7 +32866,6 @@ monenlainen	ADJ	monen{WB}lainen
 moneusoppi	NOUN	moneus{WB}oppi
 mongolianjirdi	NOUN	mongolian{WB}jirdi
 mongolilainen	ADJ	mongolilainen
-mongolin kieli	NOUN	mongolin kieli
 mongolinkielinen	ADJ	mongolin{WB}kielinen
 mongolinpoimu	NOUN	mongolin{WB}poimu
 monialaistua	VERB	moni{WB}alaistua
@@ -33289,8 +33147,6 @@ muistosanat	NOUN	muisto{WB}sanat
 muistosäe	NOUN	muisto{WB}säe
 muistotilaisuus	NOUN	muisto{WB}tilaisuus
 muistovärssy	NOUN	muisto{WB}värssy
-mukaan luettuna	ADV	mukaan luettuna
-mukaan lukien	ADP	mukaan lukien
 mukaanlaskettu	ADJ	mukaan{WB}laskettu
 mukaanotettu	ADJ	mukaan{WB}otettu
 mukaanottaminen	NOUN	mukaan{WB}ottaminen
@@ -33319,7 +33175,6 @@ mukavuuslaitos	NOUN	mukavuus{WB}laitos
 mukavuuslippu	NOUN	mukavuus{WB}lippu
 mukavuuslippulaiva	NOUN	mukavuus{WB}lippu{WB}laiva
 mukiinmenevä	ADJ	mukiin{WB}menevä
-mukkelis makkelis	ADV	mukkelis makkelis
 mukopolysakkaridi	NOUN	muko{WB}poly{WB}sakkaridi
 mukula-artisokka	NOUN	mukula-artisokka
 mukulabegonia	NOUN	mukula{WB}begonia
@@ -33336,7 +33191,6 @@ mukulavarsi	NOUN	mukula{WB}varsi
 mulkosilmä	NOUN	mulko{WB}silmä
 mulkosilmäinen	ADJ	mulko{WB}silmäinen
 mullanvärinen	ADJ	mullan{WB}värinen
-mullin mallin	ADV	mullin mallin
 mullinpaisti	NOUN	mullin{WB}paisti
 mulperikasvi	NOUN	mulperi{WB}kasvi
 mulperipuu	NOUN	mulperi{WB}puu
@@ -33923,7 +33777,6 @@ muukalaisvoittoinen	ADJ	muukalais{WB}voittoinen
 muuliaasi	NOUN	muuli{WB}aasi
 muulinajaja	NOUN	muulin{WB}ajaja
 muumiotauti	NOUN	muumio{WB}tauti
-muun muassa	ADV	muun muassa
 muunkaltainen	ADJ	muun{WB}kaltainen
 muunkielinen	ADJ	muun{WB}kielinen
 muunkuntalainen	ADJ	muun{WB}kuntalainen
@@ -35263,12 +35116,6 @@ niemennokka	NOUN	niemen{WB}nokka
 niemimaa	NOUN	niemi{WB}maa
 nietospensas	NOUN	nietos{WB}pensas
 niidenmarja	NOUN	niiden{WB}marja
-niin ikään	ADV	niin ikään
-niin kuin	ADV	niin kuin
-niin kutsuttu	ADJ	niin kutsuttu
-niin päin	ADV	niin päin
-niin sanottu	ADJ	niin sanottu
-niin sanotusti	ADV	niin sanotusti
 Niinikkosaari	PROPN	Niinikko{WB}saari
 Niinikonsaari	PROPN	Niinikon{WB}saari
 niinikori	NOUN	niini{WB}kori
@@ -35425,8 +35272,6 @@ nimivakuus	NOUN	nimi{WB}vakuus
 nimiölehti	NOUN	nimiö{WB}lehti
 nimiösivu	NOUN	nimiö{WB}sivu
 Nipasenmäki	PROPN	Nipasen{WB}mäki
-nipin napin	ADV	nipin napin
-nippa nappa	ADV	nippa nappa
 nippelihullu	NOUN	nippeli{WB}hullu
 nippelitieto	NOUN	nippeli{WB}tieto
 nippulautta	NOUN	nippu{WB}lautta
@@ -35483,7 +35328,6 @@ nitroglyseroli	NOUN	nitro{WB}glyseroli
 nitroryhmä	NOUN	nitro{WB}ryhmä
 nitroselluloosa	NOUN	nitro{WB}selluloosa
 Nitsijärvi	PROPN	Nitsi{WB}järvi
-niukin naukin	ADV	niukin naukin
 niukkaeleinen	ADJ	niukka{WB}eleinen
 niukkalajinen	ADJ	niukka{WB}lajinen
 niukkaluminen	ADJ	niukka{WB}luminen
@@ -35540,7 +35384,6 @@ noidankattila	NOUN	noidan{WB}kattila
 noidankehä	NOUN	noidan{WB}kehä
 noidanlukko	NOUN	noidan{WB}lukko
 noidannuoli	NOUN	noidan{WB}nuoli
-noin päin	ADV	noin päin
 noita-akka	NOUN	noita-akka
 noitakonsti	NOUN	noita{WB}konsti
 noitarovio	NOUN	noita{WB}rovio
@@ -35663,7 +35506,6 @@ Nordland	PROPN	Nord{XB}land
 noretisteroni	NOUN	noreti{WB}steroni
 norfloksasiini	NOUN	nor{WB}floksasiini
 norfolkinterrieri	NOUN	norfolkin{WB}terrieri
-norjan kieli	NOUN	norjan kieli
 norjankielinen	ADJ	norjan{WB}kielinen
 norjantanska	NOUN	norjan{WB}tanska
 norkkokasvi	NOUN	norkko{WB}kasvi
@@ -36021,7 +35863,6 @@ nupukiveys	NOUN	nupu{WB}kiveys
 nupukivi	NOUN	nupu{WB}kivi
 nupukivikatu	NOUN	nupu{WB}kivi{WB}katu
 nupukkinahka	NOUN	nupukki{WB}nahka
-nurin päin	ADV	nurin päin
 nurinajo	NOUN	nurin{WB}ajo
 nurinkurinen	ADJ	nurin{WB}kurinen
 nurinmeno	NOUN	nurin{WB}meno
@@ -36580,7 +36421,6 @@ oikeasilmäinen	ADJ	oikea{WB}silmäinen
 oikeasilmäkampela	NOUN	oikeasilmä{WB}kampela
 oikeataittoisuus	NOUN	oikea{WB}taittoisuus
 oikeauskoinen	ADJ	oikea{WB}uskoinen
-oikein päin	ADV	oikein päin
 oikeinkirjoitus	NOUN	oikein{WB}kirjoitus
 oikeinkirjoituskilpailu	NOUN	oikeinkirjoitus{WB}kilpailu
 oikeinkirjoitusopas	NOUN	oikeinkirjoitus{WB}opas
@@ -37047,8 +36887,6 @@ opasvahti	NOUN	opas{WB}vahti
 opasvartija	NOUN	opas{WB}vartija
 opasvihko	NOUN	opas{WB}vihko
 opasvihkonen	NOUN	opas{WB}vihkonen
-open house	NOUN	open house
-open house -kutsut	NOUN	open house -kutsut
 OpenOffice	PROPN	Open{XB}Office
 operaatioanalyysi	NOUN	operaatio{WB}analyysi
 operaatiokoodi	NOUN	operaatio{WB}koodi
@@ -37323,7 +37161,6 @@ osittaisvärisokea	NOUN	osittais{WB}värisokea
 oskilloskooppi	NOUN	oskillo{WB}skooppi
 osmankäämi	NOUN	osman{WB}käämi
 osoitekone	NOUN	osoite{WB}kone
-osso buco	NOUN	osso buco
 ostajaosapuoli	NOUN	ostaja{WB}osapuoli
 osteoartriitti	NOUN	osteo{WB}artriitti
 osteoartroosi	NOUN	osteo{WB}artroosi
@@ -37614,7 +37451,6 @@ paikannussatelliitti	NOUN	paikannus{WB}satelliitti
 paikannäyttäjä	NOUN	paikan{WB}näyttäjä
 paikanvaihdos	NOUN	paikan{WB}vaihdos
 paikanvaraus	NOUN	paikan{WB}varaus
-paikka paikoin	ADV	paikka paikoin
 paikka-arvo	NOUN	paikka-arvo
 paikkaefekti	NOUN	paikka{WB}efekti
 paikkajako	NOUN	paikka{WB}jako
@@ -38770,7 +38606,6 @@ papusoppa	NOUN	papu{WB}soppa
 papyruskaisla	NOUN	papyrus{WB}kaisla
 papyruskäärö	NOUN	papyrus{WB}käärö
 papyrusteksti	NOUN	papyrus{WB}teksti
-par avion	ADV	par avion
 paraatikatselmus	NOUN	paraati{WB}katselmus
 paraatikenttä	NOUN	paraati{WB}kenttä
 paraatikunto	NOUN	paraati{WB}kunto
@@ -39614,8 +39449,6 @@ perimyssota	NOUN	perimys{WB}sota
 perimätapa	NOUN	perimä{WB}tapa
 perimätieto	NOUN	perimä{WB}tieto
 perimätyyppi	NOUN	perimä{WB}tyyppi
-perin juurin	ADV	perin juurin
-perin pohjin	ADV	perin pohjin
 perinataaliaika	NOUN	perinataali{WB}aika
 perinnemaisema	NOUN	perinne{WB}maisema
 perinneruoka	NOUN	perinne{WB}ruoka
@@ -39681,7 +39514,6 @@ peroksidiblondi	NOUN	peroksidi{WB}blondi
 peroraalinen	ADJ	per{WB}oraalinen
 perseennuolija	NOUN	perseen{WB}nuolija
 persereikä	NOUN	perse{WB}reikä
-persian kieli	NOUN	persian kieli
 persiankielinen	ADJ	persian{WB}kielinen
 persiankissa	NOUN	persian{WB}kissa
 persikankivi	NOUN	persikan{WB}kivi
@@ -41655,7 +41487,6 @@ pokerihai	NOUN	pokeri{WB}hai
 pokerimerkki	NOUN	pokeri{WB}merkki
 pokerinaama	NOUN	pokeri{WB}naama
 pokerinaamainen	ADJ	pokeri{WB}naamainen
-Pokin kirkkotie	PROPN	Pokin kirkko{WB}tie
 polaari-ilma	NOUN	polaari-ilma
 polakoukku	NOUN	pola{WB}koukku
 polarisaatiosuodatin	NOUN	polarisaatio{WB}suodatin
@@ -42035,7 +41866,6 @@ porsasmainen	ADJ	porsas{WB}mainen
 porsasmaisesti	ADV	porsas{WB}maisesti
 porsasmurisija	NOUN	porsas{WB}murisija
 porsasskunkki	NOUN	porsas{WB}skunkki
-port salut	NOUN	port salut
 portaalinosturi	NOUN	portaali{WB}nosturi
 portinpieli	NOUN	portin{WB}pieli
 portinvartija	NOUN	portin{WB}vartija
@@ -42050,7 +41880,6 @@ porttikäytävä	NOUN	portti{WB}käytävä
 porttilaskimo	NOUN	portti{WB}laskimo
 Porttipahta	PROPN	Portti{WB}pahta
 porttivahti	NOUN	portti{WB}vahti
-portugalin kieli	NOUN	portugalin kieli
 portugalinsotalaiva	NOUN	portugalin{WB}sotalaiva
 portviini	NOUN	port{WB}viini
 porvaripuolue	NOUN	porvari{WB}puolue
@@ -42095,8 +41924,6 @@ possunliha	NOUN	possun{WB}liha
 postalveolaarinen	ADJ	post{WB}alveolaarinen
 postanalyyttinen	ADJ	post{WB}analyyttinen
 postapokalyptinen	ADJ	post{WB}apokalyptinen
-poste restante	NOUN	poste restante
-poste restante -lähetys	NOUN	poste restante -lähetys
 posteriesitelmä	NOUN	posteri{WB}esitelmä
 postfeminismi	NOUN	post{WB}feminismi
 postformaali	NOUN	post{WB}formaali
@@ -42311,8 +42138,6 @@ priimustohtori	NOUN	priimus{WB}tohtori
 prikaatikenraali	NOUN	prikaati{WB}kenraali
 prikaatinkenraali	NOUN	prikaatin{WB}kenraali
 prikaatinkomentaja	NOUN	prikaatin{WB}komentaja
-prima ballerina	NOUN	prima ballerina
-prima vista	NOUN	prima vista
 primaariaineisto	NOUN	primaari{WB}aineisto
 primaarikasvain	NOUN	primaari{WB}kasvain
 primaarikuppa	NOUN	primaari{WB}kuppa
@@ -42322,7 +42147,6 @@ primaaripreventio	NOUN	primaari{WB}preventio
 primekorko	NOUN	prime{WB}korko
 primitiivireaktio	NOUN	primitiivi{WB}reaktio
 primitiivisyys	NOUN	primitiivi{WB}syys
-primus motor	NOUN	primus motor
 prinsessalilja	NOUN	prinsessa{WB}lilja
 prinsessalinja	NOUN	prinsessa{WB}linja
 prinsessalinjainen	ADJ	prinsessa{WB}linjainen
@@ -42332,7 +42156,6 @@ printtiliuska	NOUN	printti{WB}liuska
 priorisointi	NOUN	priori{WB}sointi
 prioriteettikäsittely	NOUN	prioriteetti{WB}käsittely
 prismakiikari	NOUN	prisma{WB}kiikari
-pro gradu	NOUN	pro gradu
 probiootti	NOUN	pro{WB}biootti
 professorinvirka	NOUN	professorin{WB}virka
 profiilikuva	NOUN	profiili{WB}kuva
@@ -42578,7 +42401,6 @@ puhdistusvoide	NOUN	puhdistus{WB}voide
 puhdistusväline	NOUN	puhdistus{WB}väline
 puheakti	NOUN	puhe{WB}akti
 puhe-elin	NOUN	puhe-elin
-puheena oleva	ADJ	puheena oleva
 puheenaihe	NOUN	puheen{WB}aihe
 puheenaoleva	NOUN	puheena{WB}oleva
 puheenjohtaja	NOUN	puheen{WB}johtaja
@@ -43140,7 +42962,6 @@ punontatyö	NOUN	punonta{WB}työ
 punospisto	NOUN	punos{WB}pisto
 puntamääräinen	ADJ	punta{WB}määräinen
 punttisali	NOUN	puntti{WB}sali
-puolan kieli	NOUN	puolan kieli
 puolankielinen	ADJ	puolan{WB}kielinen
 puolanminttu	NOUN	puolan{WB}minttu
 puolapuu	NOUN	puola{WB}puu
@@ -44071,7 +43892,6 @@ pyhäkoululainen	NOUN	pyhä{WB}koululainen
 pyhäkoululapsi	NOUN	pyhä{WB}koulu{WB}lapsi
 pyhäkoulunopettaja	NOUN	pyhä{WB}koulun{WB}opettaja
 pyhäkuteet	NOUN	pyhä{WB}kuteet
-Pyhän Henrikin tie	PROPN	Pyhän Henrikin {WB}tie
 pyhänseutu	NOUN	pyhän{WB}seutu
 pyhänvietto	NOUN	pyhän{WB}vietto
 pyhäpillerinpyörittäjä	NOUN	pyhä{WB}pillerinpyörittäjä
@@ -44926,7 +44746,6 @@ päätyraja	NOUN	pääty{WB}raja
 päätyseinä	NOUN	pääty{WB}seinä
 päätyyppi	NOUN	pää{WB}tyyppi
 päätyö	NOUN	pää{WB}työ
-päätä pahkaa	ADV	päätä pahkaa
 päätähti	NOUN	pää{WB}tähti
 päätäi	NOUN	pää{WB}täi
 päätäitartunta	NOUN	päätäi{WB}tartunta
@@ -45898,7 +45717,6 @@ rannikkoväestö	NOUN	rannikko{WB}väestö
 rannikkoväylä	NOUN	rannikko{WB}väylä
 rannikonlaukkaneilikka	NOUN	rannikon{WB}laukkaneilikka
 ranskalaisamerikkalainen	NOUN	ranskalais{WB}amerikkalainen
-ranskan kieli	NOUN	ranskan kieli
 ranskanbulldoggi	NOUN	ranskan{WB}bulldoggi
 ranskankerma	NOUN	ranskan{WB}kerma
 ranskankielinen	ADJ	ranskan{WB}kielinen
@@ -46709,7 +46527,6 @@ retinoblastooma	NOUN	retino{WB}blastooma
 retkeilyteltta	NOUN	retkeily{WB}teltta
 retkituoli	NOUN	retki{WB}tuoli
 retoromaani	NOUN	reto{WB}romaani
-retoromaanin kieli	NOUN	retoromaanin kieli
 retrobulbaarineuriitti	NOUN	retro{WB}bulbaari{WB}neuriitti
 retrogradinen	ADJ	retro{WB}gradinen
 retrolentaalinen	ADJ	retro{WB}lentaalinen
@@ -47098,7 +46915,6 @@ ristiholvi	NOUN	risti{WB}holvi
 ristihuuli	NOUN	risti{WB}huuli
 ristihyppely	NOUN	risti{WB}hyppely
 ristihämähäkki	NOUN	risti{WB}hämähäkki
-ristiin rastiin	ADV	ristiin rastiin
 ristiinnaulita	VERB	ristiin{WB}naulita
 ristiinnaulitunkuva	NOUN	ristiinnaulitun{WB}kuva
 ristiinpukeutuminen	NOUN	ristiin{WB}pukeutuminen
@@ -47263,7 +47079,6 @@ rivosuinen	ADJ	rivo{WB}suinen
 robottimainen	ADJ	robotti{WB}mainen
 robottiohjaus	NOUN	robotti{WB}ohjaus
 robottitekniikka	NOUN	robotti{WB}tekniikka
-rock and roll	NOUN	rock and roll
 rockelokuva	NOUN	rock{WB}elo{WB}kuva
 rockmusiikki	NOUN	rock{WB}musiikki
 rockmuusikko	NOUN	rock{WB}muusikko
@@ -47353,11 +47168,9 @@ romaanitrilogia	NOUN	romaani{WB}trilogia
 romaanituotanto	NOUN	romaani{WB}tuotanto
 romadurjuusto	NOUN	romadur{WB}juusto
 romainesalaatti	NOUN	romaine{WB}salaatti
-romanian kieli	NOUN	romanian kieli
 romanikieli	NOUN	romani{WB}kieli
 romanikulttuuri	NOUN	romani{WB}kulttuuri
 romanimies	NOUN	romani{WB}mies
-romanin kieli	NOUN	romanin kieli
 romaninainen	NOUN	romani{WB}nainen
 romaninkielinen	ADJ	romanin{WB}kielinen
 romaniväestö	NOUN	romani{WB}väestö
@@ -47976,7 +47789,6 @@ ruotsalaisperäinen	ADJ	ruotsalais{WB}peräinen
 ruotsalaisseutu	NOUN	ruotsalais{WB}seutu
 ruotsalaissyntyinen	ADJ	ruotsalais{WB}syntyinen
 ruotsalaisväestö	NOUN	ruotsalais{WB}väestö
-ruotsin kieli	NOUN	ruotsin kieli
 ruotsinkielinen	ADJ	ruotsin{WB}kielinen
 ruotsinköynnöskuusama	NOUN	ruotsin{WB}köynnöskuusama
 ruotsinlaiva	NOUN	ruotsin{WB}laiva
@@ -48530,7 +48342,6 @@ saamavekseli	NOUN	saama{WB}vekseli
 saamelaiskieli	NOUN	saamelais{WB}kieli
 saamelaiskäräjät	NOUN	saamelais{WB}käräjät
 saamelaisnainen	NOUN	saamelais{WB}nainen
-saamen kieli	NOUN	saamen kieli
 saamenkielinen	ADJ	saamen{WB}kielinen
 Saanajärvi	PROPN	Saana{WB}järvi
 Saanatunturi	PROPN	Saana{WB}tunturi
@@ -48825,7 +48636,6 @@ sakonalainen	ADJ	sakon{WB}alainen
 sakonsovittaja	NOUN	sakon{WB}sovittaja
 sakraalitaide	NOUN	sakraali{WB}taide
 saksalaisamerikkalainen	NOUN	saksalais{WB}amerikkalainen
-saksan kieli	NOUN	saksan kieli
 saksanheisi	NOUN	saksan{WB}heisi
 saksanhirvi	NOUN	saksan{WB}hirvi
 saksanjalokuusi	NOUN	saksan{WB}jalokuusi
@@ -49000,8 +48810,6 @@ salviamaruna	NOUN	salvia{WB}maruna
 salvumies	NOUN	salvu{WB}mies
 salvutyö	NOUN	salvu{WB}työ
 samalämpömääräinen	ADJ	sama{WB}lämpömääräinen
-saman tien	ADV	saman tien
-saman verran	ADV	saman verran
 samanaikaisopetus	NOUN	saman{WB}aikais{WB}opetus
 samankaltaistaa	VERB	saman{WB}kaltaistaa
 samankulmainen	ADJ	saman{WB}kulmainen
@@ -49027,7 +48835,6 @@ sammastulehdus	NOUN	sammas{WB}tulehdus
 sammumiskulma	NOUN	sammumis{WB}kulma
 sammutusvesi	NOUN	sammutus{WB}vesi
 samojedinkoira	NOUN	samojedin{WB}koira
-Samperin veturitie	PROPN	Samperin veturi{WB}tie
 samppakalja	NOUN	samppa{WB}kalja
 Samppalinna	PROPN	Samppa{WB}linna
 samppanjabooli	NOUN	samppanja{WB}booli
@@ -49064,7 +48871,6 @@ sankarikultti	NOUN	sankari{WB}kultti
 sankarileijona	NOUN	sankari{WB}leijona
 sanmarinolainen	NOUN	san{WB}marinolainen
 Sannasvesi	PROPN	Sannas{WB}vesi
-sanoin kuvaamaton	ADJ	sanoin kuvaamaton
 sanoinkuvaamaton	ADJ	sanoin{WB}kuvaamaton
 sanojenpalvonta	NOUN	sanojen{WB}palvonta
 sanomalehtiartikkeli	NOUN	sanomalehti{WB}artikkeli
@@ -49473,7 +49279,6 @@ savuvahinko	NOUN	savu{WB}vahinko
 savuverho	NOUN	savu{WB}verho
 savuvero	NOUN	savu{WB}vero
 Schwarzschild	PROPN	Schwarz{XB}schild
-science fiction	NOUN	science fiction
 sealyhaminterrieri	NOUN	sealyhamin{WB}terrieri
 sedimenttikivi	NOUN	sedimentti{WB}kivi
 sedimenttikivilaji	NOUN	sedimentti{WB}kivi{WB}laji
@@ -49756,7 +49561,6 @@ selailukuva	NOUN	selailu{WB}kuva
 selailutaulu	NOUN	selailu{WB}taulu
 seleenihappo	NOUN	seleeni{WB}happo
 seleenivalokenno	NOUN	seleeni{WB}valokenno
-self-made man	NOUN	self-made man
 selitysteos	NOUN	selitys{WB}teos
 seljanmarja	NOUN	seljan{WB}marja
 seljapensas	NOUN	selja{WB}pensas
@@ -49933,11 +49737,6 @@ semikooma	NOUN	semi{WB}kooma
 seminaariesitelmä	NOUN	seminaari{WB}esitelmä
 seminaariharjoitus	NOUN	seminaari{WB}harjoitus
 seminaarityö	NOUN	seminaari{WB}työ
-sen sijaan	ADV	sen sijaan
-sen takia	ADV	sen takia
-sen tähden	ADV	sen tähden
-sen verran	ADV	sen verran
-sen vuoksi	ADV	sen vuoksi
 senaikainen	ADJ	sen{WB}aikainen
 senaikuinen	ADJ	sen{WB}aikuinen
 senhetkinen	ADJ	sen{WB}hetkinen
@@ -50000,7 +49799,6 @@ seppelenauha	NOUN	seppele{WB}nauha
 seppelepäinen	ADJ	seppele{WB}päinen
 seppeltenlasku	NOUN	seppelten{WB}lasku
 serbokroaatti	NOUN	serbo{WB}kroaatti
-serbokroatian kieli	NOUN	serbokroatian kieli
 seremoniamestari	NOUN	seremonia{WB}mestari
 seripainokuva	NOUN	seripaino{WB}kuva
 serkkupoika	NOUN	serkku{WB}poika
@@ -50595,7 +50393,6 @@ sikasiisti	NOUN	sika{WB}siisti
 sikatalous	NOUN	sika{WB}talous
 sikatarha	NOUN	sika{WB}tarha
 sikatila	NOUN	sika{WB}tila
-sikin sokin	ADV	sikin sokin
 sikiöaika	NOUN	sikiö{WB}aika
 sikiöaikainen	ADJ	sikiö{WB}aikainen
 sikiöasento	NOUN	sikiö{WB}asento
@@ -50740,10 +50537,6 @@ sillisalaatti	NOUN	silli{WB}salaatti
 sillisiika	NOUN	silli{WB}siika
 sillivalas	NOUN	silli{WB}valas
 sillivoileipä	NOUN	silli{WB}voi{WB}leipä
-sillä lailla	ADV	sillä lailla
-sillä tapaa	ADV	sillä tapaa
-sillä tavoin	ADV	sillä tavoin
-sillä välin	ADV	sillä välin
 silmiensuojain	NOUN	silmien{WB}suojain
 silmiinpistävä	ADJ	silmiin{WB}pistävä
 silminnähtävä	ADJ	silmin{WB}nähtävä
@@ -50776,7 +50569,6 @@ silmäleikkaus	NOUN	silmä{WB}leikkaus
 silmälevä	NOUN	silmä{WB}levä
 silmälihas	NOUN	silmä{WB}lihas
 silmälihashalvaus	NOUN	silmälihas{WB}halvaus
-silmällä pitäen	ADV	silmällä pitäen
 silmälläpidettävä	ADJ	silmällä{WB}pidettävä
 silmälläpito	NOUN	silmällä{WB}pito
 silmäluku	NOUN	silmä{WB}luku
@@ -51642,10 +51434,7 @@ slapstick	NOUN	slap{WB}stick
 slapstickelokuva	NOUN	slapstick{WB}elo{WB}kuva
 slapstickkomedia	NOUN	slapstick{WB}komedia
 slavofiili	NOUN	slavo{WB}fiili
-slovakin kieli	NOUN	slovakin kieli
-sloveenin kieli	NOUN	sloveenin kieli
 slummialue	NOUN	slummi{WB}alue
-small talk	NOUN	small talk
 smaragdinvihreä	NOUN	smaragdin{WB}vihreä
 smaragdisormus	NOUN	smaragdi{WB}sormus
 smirgelikangas	NOUN	smirgeli{WB}kangas
@@ -51671,7 +51460,6 @@ sodanvaara	NOUN	sodan{WB}vaara
 sodanvastainen	ADJ	sodan{WB}vastainen
 sodanvastaisuus	NOUN	sodan{WB}vastaisuus
 sodanvastustaja	NOUN	sodan{WB}vastustaja
-soft ice	NOUN	soft ice
 sohjokeli	NOUN	sohjo{WB}keli
 sohjoliirto	NOUN	sohjo{WB}liirto
 sohjolumi	NOUN	sohjo{WB}lumi
@@ -52515,8 +52303,6 @@ stadionyleisö	NOUN	stadion{WB}yleisö
 staffordshirenterrieri	NOUN	staffordshiren{WB}terrieri
 stagflaatio	NOUN	stag{WB}flaatio
 Stalingrad	PROPN	Stalin{XB}grad
-stand up -komedia	NOUN	stand up -komedia
-stand up -koomikko	NOUN	stand up -koomikko
 standardihuonekalu	NOUN	standardi{WB}huone{WB}kalu
 standardikivääri	NOUN	standardi{WB}kivääri
 standardikoko	NOUN	standardi{WB}koko
@@ -52565,7 +52351,6 @@ steriilivaate	NOUN	steriili{WB}vaate
 steroidihormoni	NOUN	steroidi{WB}hormoni
 stetoskooppi	NOUN	steto{WB}skooppi
 stilisointiohje	NOUN	stilisointi{WB}ohje
-still drink	NOUN	still drink
 stiltonjuusto	NOUN	stilton{WB}juusto
 stipendimatka	NOUN	stipendi{WB}matka
 stipendirahasto	NOUN	stipendi{WB}rahasto
@@ -52719,7 +52504,6 @@ suikaleliha	NOUN	suikale{WB}liha
 suikalepaisti	NOUN	suikale{WB}paisti
 suikalepata	NOUN	suikale{WB}pata
 suikerosammal	NOUN	suikero{WB}sammal
-suin päin	ADV	suin päin
 suippohuulisarvikuono	NOUN	suippohuuli{WB}sarvikuono
 suippohärkylä	NOUN	suippo{WB}härkylä
 suippokaari	NOUN	suippo{WB}kaari
@@ -53066,7 +52850,6 @@ sulttaanikunta	NOUN	sulttaani{WB}kunta
 sulttaanirusina	NOUN	sulttaani{WB}rusina
 sulunvartija	NOUN	sulun{WB}vartija
 sumeasilmäinen	ADJ	sumea{WB}silmäinen
-sumerin kieli	NOUN	sumerin kieli
 sumopaini	NOUN	sumo{WB}paini
 sumopainija	NOUN	sumo{WB}painija
 sumopainikehä	NOUN	sumopaini{WB}kehä
@@ -53357,7 +53140,6 @@ suomalaisuusliike	NOUN	suomalaisuus{WB}liike
 suomalaisväestö	NOUN	suomalais{WB}väestö
 suomalaisväri	NOUN	suomalais{WB}väri
 suomalmi	NOUN	suo{WB}malmi
-suomen kieli	NOUN	suomen kieli
 suomenajokoira	NOUN	suomen{WB}ajo{WB}koira
 suomenhevonen	NOUN	suomen{WB}hevonen
 suomenhevoslähtö	NOUN	suomen{WB}hevos{WB}lähtö
@@ -53425,7 +53207,6 @@ suopeukaloinen	NOUN	suo{WB}peukaloinen
 suopursu	NOUN	suo{WB}pursu
 suoputki	NOUN	suo{WB}putki
 suopöllö	NOUN	suo{WB}pöllö
-suoraa päätä	ADV	suoraa päätä
 suora-ammunta	NOUN	suora-ammunta
 suorahampainen	ADJ	suora{WB}hampainen
 suorahiuksinen	ADJ	suora{WB}hiuksinen
@@ -53783,7 +53564,6 @@ suurimittainen	ADJ	suuri{WB}mittainen
 suurimittakaavainen	ADJ	suuri{WB}mittakaavainen
 suurimolekyylinen	ADJ	suuri{WB}molekyylinen
 suurimuotoinen	ADJ	suuri{WB}muotoinen
-suurin piirtein	ADV	suurin piirtein
 suurinumeroinen	ADJ	suuri{WB}numeroinen
 suuripainoisuus	NOUN	suuri{WB}painoisuus
 suuripalkkainen	ADJ	suuri{WB}palkkainen
@@ -53942,7 +53722,6 @@ sveitsiläiskaarti	NOUN	sveitsiläis{WB}kaarti
 sveitsinjuusto	NOUN	sveitsin{WB}juusto
 sveitsinleike	NOUN	sveitsin{WB}leike
 sveitsinsaksalainen	NOUN	sveitsin{WB}saksalainen
-swahilin kieli	NOUN	swahilin kieli
 Swazimaa	PROPN	Swazi{WB}maa
 syaaniamidi	NOUN	syaani{WB}amidi
 syaanihappo	NOUN	syaani{WB}happo
@@ -55616,7 +55395,6 @@ talitintti	NOUN	tali{WB}tintti
 taliöljy	NOUN	tali{WB}öljy
 taljajousi	NOUN	talja{WB}jousi
 taljaköysi	NOUN	talja{WB}köysi
-talk show	NOUN	talk show
 talkkijauhe	NOUN	talkki{WB}jauhe
 talkkiliuske	NOUN	talkki{WB}liuske
 talkkunajauho	NOUN	talkkuna{WB}jauho
@@ -55878,7 +55656,6 @@ tankokirjoitin	NOUN	tanko{WB}kirjoitin
 tankomagneetti	NOUN	tanko{WB}magneetti
 tankoparsa	NOUN	tanko{WB}parsa
 tanniinihappo	NOUN	tanniini{WB}happo
-tanskan kieli	NOUN	tanskan kieli
 tanssiaisväki	NOUN	tanssiais{WB}väki
 tanssipartneri	NOUN	tanssi{WB}partneri
 Tanssitie	PROPN	Tanssi{WB}tie
@@ -56220,7 +55997,6 @@ tasoryhmitys	NOUN	taso{WB}ryhmitys
 tasoryhmä	NOUN	taso{WB}ryhmä
 tasoupotuspora	NOUN	taso{WB}upotuspora
 tasoylikäytävä	NOUN	taso{WB}ylikäytävä
-tataarin kieli	NOUN	tataarin kieli
 tatarkasvi	NOUN	tatar{WB}kasvi
 tatinriesa	NOUN	tatin{WB}riesa
 tattarijauho	NOUN	tattari{WB}jauho
@@ -56293,7 +56069,6 @@ tautioppi	NOUN	tauti{WB}oppi
 tautipesäke	NOUN	tauti{WB}pesäke
 tautitapaus	NOUN	tauti{WB}tapaus
 tautivuode	NOUN	tauti{WB}vuode
-tavan takaa	ADV	tavan takaa
 tavanmukainen	ADJ	tavan{WB}mukainen
 tavanmukaisesti	ADV	tavan{WB}mukaisesti
 tavanmukaisuus	NOUN	tavan{WB}mukaisuus
@@ -57228,7 +57003,6 @@ teutonijumala	NOUN	teutoni{WB}jumala
 Teyrivaara	PROPN	Teyri{WB}vaara
 Thaimaa	PROPN	Thai{WB}maa
 thaimaalainen	NOUN	thai{WB}maalainen
-thain kieli	NOUN	thain kieli
 thaisilkki	NOUN	thai{WB}silkki
 theetarytmi	NOUN	theeta{WB}rytmi
 theravadabuddhalainen	NOUN	theravada{WB}bud{WB}dhalainen
@@ -57561,7 +57335,6 @@ tihrusilmä	NOUN	tihru{WB}silmä
 tihrusilmäinen	ADJ	tihru{WB}silmäinen
 tihurotta	NOUN	tihu{WB}rotta
 tihutyö	NOUN	tihu{WB}työ
-tiibetin kieli	NOUN	tiibetin kieli
 tiibetinkoirankieli	NOUN	tiibetin{WB}koirankieli
 tiibetinspanieli	NOUN	tiibetin{WB}spanieli
 tiibetinterrieri	NOUN	tiibetin{WB}terrieri
@@ -58224,7 +57997,6 @@ tomupyörre	NOUN	tomu{WB}pyörre
 tomuriepu	NOUN	tomu{WB}riepu
 tomurätti	NOUN	tomu{WB}rätti
 tomusokeri	NOUN	tomu{WB}sokeri
-tonic water	NOUN	tonic water
 tonnikala	NOUN	tonni{WB}kala
 tonnikalapurilainen	NOUN	tonnikala{WB}purilainen
 tonnikalasalaatti	NOUN	tonni{WB}kalasalaatti
@@ -58489,10 +58261,8 @@ trypsinogeeni	NOUN	trypsino{XB}geeni
 tsaarinaika	NOUN	tsaarin{WB}aika
 tsaarinaikainen	ADJ	tsaarin{WB}aikainen
 tsaarivalta	NOUN	tsaari{WB}valta
-tšekin kieli	NOUN	tšekin kieli
 tšekinmaalainen	NOUN	tšekin{WB}maalainen
 Tšekkoslovakia	PROPN	Tšekko{WB}slovakia
-tšetšeenin kieli	NOUN	tšetšeenin kieli
 tsetsekärpänen	NOUN	tsetse{WB}kärpänen
 Tshekkoslovakia	PROPN	Tshekko{WB}slovakia
 Tsilinjärvi	PROPN	Tsilin{WB}järvi
@@ -59438,7 +59208,6 @@ turistiripuli	NOUN	turisti{WB}ripuli
 turistirysä	NOUN	turisti{WB}rysä
 turistiviisumi	NOUN	turisti{WB}viisumi
 turjansaame	NOUN	turjan{WB}saame
-turkin kieli	NOUN	turkin kieli
 turkinkielinen	ADJ	turkin{WB}kielinen
 turkinkyyhky	NOUN	turkin{WB}kyyhky
 turkinpensaskuisma	NOUN	turkinpensas{WB}kuisma
@@ -60492,7 +60261,6 @@ töyhtöruoho	NOUN	töyhtö{WB}ruoho
 töyhtösarvihai	NOUN	töyhtö{WB}sarvi{WB}hai
 töyhtötiainen	NOUN	töyhtö{WB}tiainen
 uagent	PROPN	u{WB}agent
-udmurtin kieli	NOUN	udmurtin kieli
 ufohavainto	NOUN	ufo{WB}havainto
 uhkakuva	NOUN	uhka{WB}kuva
 uhkapeli	NOUN	uhka{WB}peli
@@ -60636,7 +60404,6 @@ ukonsieni	NOUN	ukon{WB}sieni
 ukontulikukka	NOUN	ukon{WB}tulikukka
 Ukonvesi	PROPN	Ukon{WB}vesi
 ukonvirva	NOUN	ukon{WB}virva
-ukrainan kieli	NOUN	ukrainan kieli
 ula-aallot	NOUN	ula-aallot
 ula-alue	NOUN	ula-alue
 ula-asema	NOUN	ula-asema
@@ -61034,7 +60801,6 @@ universaalijoukko	NOUN	universaali{WB}joukko
 universaalikoje	NOUN	universaali{WB}koje
 universaalitiede	NOUN	uni{WB}versaali{WB}tiede
 univormupukuinen	ADJ	uni{WB}vormu{WB}pukuinen
-unkarin kieli	NOUN	unkarin kieli
 unkarinkielinen	ADJ	unkarin{WB}kielinen
 unkarinsyreeni	NOUN	unkarin{WB}syreeni
 untuvaheinä	NOUN	untuva{WB}heinä
@@ -62387,7 +62153,6 @@ valkotähkäisyys	NOUN	valko{WB}tähkä{WB}isyys
 valkovaseliini	NOUN	valko{WB}vaseliini
 valkovatukka	NOUN	valko{WB}vatukka
 valkovenäjä	NOUN	valko{WB}venäjä
-valkovenäjän kieli	NOUN	valkovenäjän kieli
 valkovenäläinen	NOUN	valko{WB}venäläinen
 valkoviini	NOUN	valko{WB}viini
 valkoviinilasi	NOUN	valko{WB}viini{WB}lasi
@@ -63385,7 +63150,6 @@ varsisandaali	NOUN	varsi{WB}sandaali
 varsiselleri	NOUN	varsi{WB}selleri
 varsiyökkönen	NOUN	varsi{WB}yökkönen
 varstasara	NOUN	varsta{WB}sara
-varta vasten	ADV	varta vasten
 vartaloemulsio	NOUN	vartalo{WB}emulsio
 vartalonmukainen	ADJ	vartalon{WB}mukainen
 vartalonmyötäinen	ADJ	vartalon{WB}myötäinen
@@ -63785,7 +63549,6 @@ vastuuvapaus	NOUN	vastuu{WB}vapaus
 vastuuvelvollinen	NOUN	vastuu{WB}velvollinen
 vastuuvelvollisuus	NOUN	vastuu{WB}velvollisuus
 Vatavesi	PROPN	Vata{WB}vesi
-vatjan kieli	NOUN	vatjan kieli
 vatsa-aortta	NOUN	vatsa-aortta
 vatsaevä	NOUN	vatsa{WB}evä
 vatsaflunssa	NOUN	vatsa{WB}flunssa
@@ -64146,10 +63909,8 @@ venytyspenkki	NOUN	venytys{WB}penkki
 venytyspyörä	NOUN	venytys{WB}pyörä
 venytysrefleksi	NOUN	venytys{WB}refleksi
 venytysreseptori	NOUN	venytys{WB}reseptori
-venäjän kieli	NOUN	venäjän kieli
 venäjänkielinen	ADJ	venäjän{WB}kielinen
 venäjänvinttikoira	NOUN	venäjän{WB}vintti{WB}koira
-vepsän kieli	NOUN	vepsän kieli
 verbaaliakrobaatti	NOUN	verbaali{WB}akrobaatti
 verbaaliakrobatia	NOUN	verbaali{WB}akrobatia
 verbaalisubstantiivi	NOUN	verbaali{WB}substantiivi
@@ -64846,7 +64607,6 @@ vetotanko	NOUN	veto{WB}tanko
 vetovarjo	NOUN	veto{WB}varjo
 vetovoimaton	ADJ	veto{WB}voimaton
 Vetsijärvi	PROPN	Vetsi{WB}järvi
-vettä läpäisemätön	ADJ	vettä läpäisemätön
 vettähylkivä	ADJ	vettä{WB}hylkivä
 vettäläpäisevä	ADJ	vettä{WB}läpäisevä
 vetyatomi	NOUN	vety{WB}atomi
@@ -65009,7 +64769,6 @@ viimeistelyharjoitus	NOUN	viimeistely{WB}harjoitus
 viimeistelyleiri	NOUN	viimeistely{WB}leiri
 viimeistelytyö	NOUN	viimeistely{WB}työ
 viimeistelyvaihe	NOUN	viimeistely{WB}vaihe
-viimeksi mainittu	ADJ	viimeksi mainittu
 viimeksimainittu	NOUN	viimeksi{WB}mainittu
 viimemainittu	NOUN	viime{WB}mainittu
 viimevuotinen	ADJ	viime{WB}vuotinen
@@ -65389,7 +65148,6 @@ vilustumistauti	NOUN	vilustumis{WB}tauti
 vilutauti	NOUN	vilu{WB}tauti
 vilutautinen	ADJ	vilu{WB}tautinen
 vinkinantaja	NOUN	vinkin{WB}antaja
-vinksin vonksin	ADV	vinksin vonksin
 vinohampainen	ADJ	vino{WB}hampainen
 vinokaari	NOUN	vino{WB}kaari
 vinokaide	NOUN	vino{WB}kaide
@@ -65524,7 +65282,6 @@ viritysnuppi	NOUN	viritys{WB}nuppi
 virityspilli	NOUN	viritys{WB}pilli
 viritystaso	NOUN	viritys{WB}taso
 viritystila	NOUN	viritys{WB}tila
-virkaa toimittava	ADJ	virkaa toimittava
 virka-aika	NOUN	virka-aika
 virkaanasettajainen	NOUN	virkaan{WB}asettajainen
 virkaanastujainen	NOUN	virkaan{WB}astujainen
@@ -65621,7 +65378,6 @@ virkkuutyö	NOUN	virkkuu{WB}työ
 virmajuuri	NOUN	virma{WB}juuri
 Virmasvesi	PROPN	Virmas{WB}vesi
 Virolahti	PROPN	Viro{WB}lahti
-viron kieli	NOUN	viron kieli
 vironkielinen	ADJ	viron{WB}kielinen
 virranjakaja	NOUN	virran{WB}jakaja
 virrankatkaisin	NOUN	virran{WB}katkaisin
@@ -66249,7 +66005,6 @@ vuorokäsittely	NOUN	vuoro{WB}käsittely
 vuorolaiva	NOUN	vuoro{WB}laiva
 vuorolaulu	NOUN	vuoro{WB}laulu
 vuoroluku	NOUN	vuoro{WB}luku
-vuoron perään	ADV	vuoron perään
 vuoronvaihto	NOUN	vuoron{WB}vaihto
 vuoro-ote	NOUN	vuoro-ote
 vuoropaikoitus	NOUN	vuoro{WB}paikoitus
@@ -66491,7 +66246,6 @@ Vähämaantie	PROPN	Vähämaan{WB}tie
 vähämerkityksinen	ADJ	vähä{WB}merkityksinen
 vähämielinen	ADJ	vähä{WB}mielinen
 vähämielisyys	NOUN	vähä{WB}mielisyys
-vähän väliä	ADV	vähän väliä
 vähänasuttu	ADJ	vähän{WB}asuttu
 vähäosainen	NOUN	vähä{WB}osainen
 vähäpuheinen	ADJ	vähä{WB}puheinen
@@ -66882,7 +66636,6 @@ vääntökanki	NOUN	vääntö{WB}kanki
 vääntöliike	NOUN	vääntö{WB}liike
 vääntömomentti	NOUN	vääntö{WB}momentti
 vääntövarsi	NOUN	vääntö{WB}varsi
-väärin päin	ADV	väärin päin
 väärinkirjoittaa	VERB	väärin{WB}kirjoittaa
 väärinkohdeltu	ADJ	väärin{WB}kohdeltu
 väärinkäsittää	VERB	väärin{WB}käsittää
@@ -67266,12 +67019,6 @@ yhtiövastike	NOUN	yhtiö{WB}vastike
 yhtymispaino	NOUN	yhtymis{WB}paino
 yhtymisreaktio	NOUN	yhtymis{WB}reaktio
 yhtymäkohta	NOUN	yhtymä{WB}kohta
-yhtä aikaa	ADV	yhtä aikaa
-yhtä kaikki	ADV	yhtä kaikki
-yhtä kuin	ADV	yhtä kuin
-yhtä lailla	ADV	yhtä lailla
-yhtä mittaa	ADV	yhtä mittaa
-yhtä päätä	ADV	yhtä päätä
 yhtäaikainen	ADJ	yhtä{WB}aikainen
 yhtäjaksoinen	ADJ	yhtä{WB}jaksoinen
 yhtäkkinen	ADJ	yht{WB}äkkinen
@@ -67322,7 +67069,6 @@ yksilöpsykologinen	ADJ	yksilö{WB}psykologinen
 yksilötaso	NOUN	yksilö{WB}taso
 yksilöterapia	NOUN	yksilö{WB}terapia
 yksimielinen	ADJ	yksi{WB}mielinen
-yksin tein	ADV	yksin tein
 yksinedustaja	NOUN	yksin{WB}edustaja
 yksineläjä	NOUN	yksin{WB}eläjä
 yksinhuoltaja	NOUN	yksin{WB}huoltaja
@@ -67554,7 +67300,6 @@ ylemmyydentunto	NOUN	ylemmyyden{WB}tunto
 ylemmyydentuntoinen	ADJ	ylemmyyden{WB}tuntoinen
 ylemmyyskompleksi	NOUN	ylemmyys{WB}kompleksi
 ylempiarvoinen	ADJ	ylempi{WB}arvoinen
-ylen määrin	ADV	ylen määrin
 ylenannattaa	VERB	ylen{WB}annattaa
 ylenantaa	VERB	ylen{WB}antaa
 ylenkatse	NOUN	ylen{WB}katse
@@ -67871,7 +67616,6 @@ yliäänikone	NOUN	yli{WB}ääni{WB}kone
 yliääninen	ADJ	yli{WB}ääninen
 yliäänitaajuus	NOUN	yliääni{WB}taajuus
 ylkämies	NOUN	ylkä{WB}mies
-yllin kyllin	ADV	yllin kyllin
 yllytyshullu	NOUN	yllytys{WB}hullu
 ylläkköhyökkäys	NOUN	ylläkkö{WB}hyökkäys
 ylläoleva	ADJ	yllä{WB}oleva
@@ -67898,7 +67642,6 @@ yltiöisänmaallisuus	NOUN	yltiö{WB}isän{WB}maallisuus
 yltiöpäinen	ADJ	yltiö{WB}päinen
 yltiöpäisesti	ADV	yltiö{WB}päisesti
 yltiöpää	NOUN	yltiö{WB}pää
-yltä päältä	ADV	yltä päältä
 yltäkylläinen	ADJ	yltä{WB}kylläinen
 ylväsryhtinen	ADJ	ylväs{WB}ryhtinen
 yläarvoinen	ADJ	ylä{WB}arvoinen

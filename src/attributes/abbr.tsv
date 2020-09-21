@@ -2,7 +2,6 @@ lemma	NOUN	abbr
 /	PUNCT	abbreviation
 &	SYM	abbreviation
 +	SYM	abbreviation
-3 Step IT	PROPN	acronym
 358	PROPN	acronym
 4F	PROPN	acronym
 a	NOUN	acronym
@@ -27,7 +26,6 @@ ab	NOUN	acronym
 Ab	ADV	abbreviation
 ABB	PROPN	acronym
 ABC	PROPN	acronym
-ABN AMRO	PROPN	acronym
 abp	NOUN	acronym
 aBq	NOUN	acronym
 ABS	NOUN	acronym
@@ -71,7 +69,6 @@ AIECE	PROPN	acronym
 AIESEC	PROPN	acronym
 AIG	PROPN	acronym
 aik.	NOUN	abbreviation
-Air France-KLM	PROPN	acronym
 Air100	PROPN	acronym
 Airbnb	PROPN	acronym
 AIV	NOUN	acronym
@@ -196,7 +193,6 @@ AZN	NOUN	acronym
 aΩ	NOUN	acronym
 b	NOUN	acronym
 B	NOUN	acronym
-B & B	NOUN	acronym
 B9	PROPN	acronym
 BA	NOUN	acronym
 B.A.	NOUN	abbreviation
@@ -206,8 +202,6 @@ BAE	PROPN	acronym
 BAIC	PROPN	acronym
 BAM	NOUN	acronym
 BAN	NOUN	acronym
-Banco BPI	PROPN	acronym
-Bank Zadhodni WBK	PROPN	acronym
 bar	ADV	abbreviation
 BASF	PROPN	acronym
 BATS	PROPN	acronym
@@ -276,7 +270,6 @@ BT	PROPN	acronym
 BTIG	PROPN	acronym
 BTN	NOUN	acronym
 BUK	NOUN	acronym
-Bureau ICE	PROPN	acronym
 BWP	NOUN	acronym
 BYB	NOUN	acronym
 BYD	PROPN	acronym
@@ -299,7 +292,6 @@ Call99577	NOUN	acronym
 CAM	NOUN	acronym
 Can$	NOUN	acronym
 Canal+	PROPN	acronym
-Carl’s Jr	PROPN	acronym
 CAT	NOUN	acronym
 cBq	NOUN	acronym
 CBS	PROPN	acronym
@@ -359,7 +351,6 @@ clm	NOUN	acronym
 CLP	NOUN	acronym
 clx	NOUN	acronym
 cm	NOUN	acronym
-CMA CGM	PROPN	acronym
 cmol	NOUN	acronym
 cN	NOUN	acronym
 CN	NOUN	acronym
@@ -375,7 +366,6 @@ Co.	NOUN	abbreviation
 CO	NOUN	acronym
 COD	NOUN	acronym
 Col$	NOUN	acronym
-Commerce Guys S.A.S	PROPN	acronym
 COMP	NOUN	acronym
 COP	NOUN	acronym
 Corp	NOUN	acronym
@@ -438,7 +428,6 @@ dam	NOUN	acronym
 DAMA	PROPN	acronym
 damol	NOUN	acronym
 daN	NOUN	acronym
-Daniel Stewart & Co	PROPN	acronym
 daPa	NOUN	acronym
 darad	NOUN	acronym
 das	NOUN	acronym
@@ -486,7 +475,6 @@ dipl.kielenk.	NOUN	abbreviation
 dipl.kirjeenv.	NOUN	abbreviation
 dipl.kosm.	NOUN	abbreviation
 dipl.urk.	NOUN	abbreviation
-dir. cant.	NOUN	abbreviation
 div.	NOUN	abbreviation
 dj	NOUN	acronym
 dJ	NOUN	acronym
@@ -506,7 +494,6 @@ dmol	NOUN	acronym
 dN	NOUN	acronym
 dna	NOUN	acronym
 DNA	PROPN	acronym
-DnB NOR	PROPN	acronym
 DNB	PROPN	acronym
 dnro	NOUN	abbreviation
 do	NOUN	acronym
@@ -519,12 +506,10 @@ DPI	NOUN	acronym
 Dr.	NOUN	abbreviation
 drad	NOUN	acronym
 DRAM	NOUN	acronym
-Dream Works SKG	PROPN	acronym
 ds	NOUN	acronym
 dS	NOUN	acronym
 dsr	NOUN	acronym
 dSv	NOUN	acronym
-DSV Air & Sea SAS	PROPN	acronym
 dT	NOUN	acronym
 DU	NOUN	acronym
 dV	NOUN	acronym
@@ -639,7 +624,6 @@ eQ	PROPN	acronym
 EQ	PROPN	acronym
 EQT	PROPN	acronym
 Erad	NOUN	acronym
-Eräjärven SP	PROPN	acronym
 erikoiseläinl.	NOUN	abbreviation
 erikoishammasl.	NOUN	abbreviation
 erikoisl.	NOUN	abbreviation
@@ -665,7 +649,6 @@ est.	NOUN	abbreviation
 ESTIEM	PROPN	acronym
 ESv	NOUN	acronym
 ESY	NOUN	acronym
-et al.	NOUN	abbreviation
 et.	NOUN	abbreviation
 ET	NOUN	acronym
 ETA	PROPN	acronym
@@ -684,10 +667,8 @@ ETY	PROPN	acronym
 ETYJ	PROPN	acronym
 ETYK	PROPN	acronym
 EU	PROPN	acronym
-EU 27	PROPN	acronym
 EU27	PROPN	acronym
 EUR	NOUN	acronym
-Euro RSCG	PROPN	acronym
 EUSTORY	PROPN	acronym
 EUVL	NOUN	acronym
 ev.	NOUN	abbreviation
@@ -729,7 +710,6 @@ F&C	PROPN	acronym
 fcd	NOUN	acronym
 FCMA	PROPN	acronym
 FDIC	PROPN	acronym
-FEPCO 1	PROPN	acronym
 fF	NOUN	acronym
 fg	NOUN	acronym
 FGBMFI	PROPN	acronym
@@ -738,7 +718,6 @@ fH	NOUN	acronym
 fHz	NOUN	acronym
 FI	PROPN	acronym
 FIA	PROPN	acronym
-Fiat SpA	PROPN	acronym
 FICIX	PROPN	acronym
 FIFA	PROPN	acronym
 fil.	NOUN	abbreviation
@@ -765,7 +744,6 @@ FM	NOUN	acronym
 fmol	NOUN	acronym
 fN	NOUN	acronym
 Fonderie47	PROPN	acronym
-Forum 18	PROPN	acronym
 fPa	NOUN	acronym
 fr	NOUN	acronym
 FR	NOUN	acronym
@@ -807,7 +785,6 @@ GCHQ	PROPN	acronym
 GEA	NOUN	acronym
 GEK	NOUN	acronym
 GEL	NOUN	acronym
-General Motors Co	PROPN	acronym
 GEYSIR	PROPN	acronym
 GF	NOUN	acronym
 GfK	PROPN	acronym
@@ -824,7 +801,6 @@ Gkat	NOUN	acronym
 GL	PROPN	acronym
 GLG	PROPN	acronym
 Glm	NOUN	acronym
-Global Gaming Factory X	PROPN	acronym
 Glx	NOUN	acronym
 gm	NOUN	acronym
 Gm	NOUN	acronym
@@ -846,7 +822,6 @@ GPRS	NOUN	acronym
 GQE	NOUN	acronym
 Grad	NOUN	acronym
 GRD	NOUN	acronym
-Groupe BPCE	PROPN	acronym
 Gs	NOUN	acronym
 GS	NOUN	acronym
 GSM	NOUN	acronym
@@ -876,7 +851,6 @@ hallinton.	NOUN	abbreviation
 hallintot.	NOUN	abbreviation
 hammaslääket.	NOUN	abbreviation
 HAO	NOUN	acronym
-Harri Savunen & Co	PROPN	acronym
 HAUS	PROPN	acronym
 Hb	NOUN	acronym
 HBL	PROPN	acronym
@@ -890,11 +864,6 @@ hcd	NOUN	acronym
 HCL	PROPN	acronym
 hdtv	NOUN	acronym
 HE	NOUN	acronym
-Heinolan Palloilijat -47	PROPN	acronym
-Helsingin Kiri -60	PROPN	acronym
-Helsingin NMKY	PROPN	acronym
-Helsingin OP	PROPN	acronym
-Helsingin OPKK	PROPN	acronym
 HEPA	NOUN	acronym
 HETKY	PROPN	acronym
 HEUNI	PROPN	acronym
@@ -942,7 +911,6 @@ HOAS	PROPN	acronym
 HögforsGST	PROPN	acronym
 hojks	NOUN	acronym
 HOK	NOUN	acronym
-Hollolan Urheilijat -46	PROPN	acronym
 HOP	PROPN	acronym
 HOPS	NOUN	acronym
 hovioik.	NOUN	abbreviation
@@ -1117,8 +1085,6 @@ JOD	NOUN	acronym
 joht.	NOUN	abbreviation
 JOT	NOUN	acronym
 JoY	PROPN	acronym
-JP Morgan Chase & Co	PROPN	acronym
-JPMorgan Chase & Co	PROPN	acronym
 JPY	NOUN	acronym
 jr.	NOUN	abbreviation
 JS	NOUN	acronym
@@ -1133,7 +1099,6 @@ JYP	PROPN	acronym
 k	NOUN	acronym
 k.	NOUN	abbreviation
 K	NOUN	acronym
-K Sh	NOUN	acronym
 K1	PROPN	acronym
 K12	NOUN	acronym
 K13	NOUN	acronym
@@ -1149,7 +1114,6 @@ KadK	PROPN	acronym
 kal.	NOUN	abbreviation
 kamr.	NOUN	abbreviation
 kand.	NOUN	abbreviation
-Kangasala SK	PROPN	acronym
 kansaned.	NOUN	abbreviation
 kantt.	NOUN	abbreviation
 KäO	NOUN	acronym
@@ -1183,12 +1147,10 @@ kenr.luutn.	NOUN	abbreviation
 kenr.maj.	NOUN	abbreviation
 Kenttäurheilijat-58	PROPN	acronym
 KEPA	PROPN	acronym
-Keravan Kori-80	PROPN	acronym
 kers.	NOUN	abbreviation
 KES	NOUN	acronym
 kesk.	ADV	abbreviation
 Kesk.	NOUN	abbreviation
-KeuPa HT	PROPN	acronym
 kF	NOUN	acronym
 KFC	PROPN	acronym
 KFOR	PROPN	acronym
@@ -1214,7 +1176,6 @@ kir.	NOUN	abbreviation
 kirj.	NOUN	abbreviation
 kirjeenv.	NOUN	abbreviation
 KiSV	PROPN	acronym
-Kiteen Pallo -90	PROPN	acronym
 KIVI	PROPN	acronym
 kj.	NOUN	abbreviation
 kJ	NOUN	acronym
@@ -1247,7 +1208,6 @@ KMN	PROPN	acronym
 kmol	NOUN	acronym
 kN	NOUN	acronym
 kni	NOUN	abbreviation
-Knight Frank LLP	PROPN	acronym
 ko.	NOUN	abbreviation
 KO	PROPN	acronym
 kok.	ADV	abbreviation
@@ -1259,7 +1219,6 @@ KOM	NOUN	acronym
 kom.kapt.	NOUN	abbreviation
 komm.	NOUN	abbreviation
 kompp.	NOUN	abbreviation
-KoMu HT	PROPN	acronym
 konst.	NOUN	abbreviation
 kop	INTJ	acronym
 KOP	PROPN	acronym
@@ -1311,10 +1270,7 @@ KU	PROPN	acronym
 KUA	NOUN	acronym
 Kultarahaksi.fi	PROPN	acronym
 kumpp.	NOUN	abbreviation
-Kuntien Tekniset KTK	PROPN	acronym
 KuPS	PROPN	acronym
-Kurikan OP	PROPN	acronym
-Kustaa III	NOUN	acronym
 kuv.	NOUN	abbreviation
 KUV	PROPN	acronym
 KuvA	PROPN	acronym
@@ -1348,13 +1304,11 @@ lääk.	NOUN	abbreviation
 lääket.	NOUN	abbreviation
 LAFTA	PROPN	acronym
 läh.	NOUN	abbreviation
-Lahden Suunnistajat -37	PROPN	acronym
 LaK	NOUN	acronym
 LAK	NOUN	acronym
 lakit.	NOUN	abbreviation
 LaL	NOUN	acronym
 länt.	NOUN	abbreviation
-Lappeenrannan NMKY	PROPN	acronym
 lastent.op.	NOUN	abbreviation
 LaT	NOUN	acronym
 LBP	NOUN	acronym
@@ -1363,7 +1317,6 @@ leht.	NOUN	abbreviation
 lehtiö-pc	NOUN	acronym
 LEL	NOUN	acronym
 LEOPS	NOUN	acronym
-Levi Strauss & Co	PROPN	acronym
 LG	PROPN	acronym
 LGT	PROPN	acronym
 LH	NOUN	acronym
@@ -1394,7 +1347,6 @@ ll	NOUN	acronym
 ll.	NOUN	abbreviation
 LL	NOUN	acronym
 LLC	PROPN	acronym
-Lloyds TSB	PROPN	acronym
 lm	NOUN	acronym
 lm.	NOUN	abbreviation
 Lm	NOUN	acronym
@@ -1459,13 +1411,11 @@ MAD	NOUN	acronym
 MAF	NOUN	acronym
 MAI	NOUN	acronym
 Mail.ru	PROPN	acronym
-Mainostoimisto 96	PROPN	acronym
 maist.	NOUN	abbreviation
 maj.	NOUN	abbreviation
 maks.	NOUN	abbreviation
 MAMU	NOUN	acronym
 MAN	PROPN	acronym
-Manse PP	PROPN	acronym
 MaO	NOUN	acronym
 MAOL	PROPN	acronym
 MAT	NOUN	acronym
@@ -1513,7 +1463,6 @@ MEUR	NOUN	acronym
 MEX$	NOUN	acronym
 mF	NOUN	acronym
 MF	NOUN	acronym
-MF Global Finance USA	PROPN	acronym
 mg	NOUN	acronym
 Mg	NOUN	acronym
 MG	PROPN	acronym
@@ -1535,11 +1484,8 @@ MIKES	PROPN	acronym
 milj.	NOUN	abbreviation
 min	NOUN	acronym
 min.	NOUN	abbreviation
-Mirgor SACIFIA	PROPN	acronym
 Miss	ADV	abbreviation
 MIT	PROPN	acronym
-Mitsubishi UFJ	PROPN	acronym
-Mitsui & Co	PROPN	acronym
 mJ	NOUN	acronym
 MJ	NOUN	acronym
 mk	NOUN	acronym
@@ -1580,7 +1526,6 @@ mN	NOUN	acronym
 MN	NOUN	acronym
 MNT	NOUN	acronym
 MO	NOUN	acronym
-MOEX Offshore 2007	PROPN	acronym
 mol	NOUN	acronym
 mom.	NOUN	abbreviation
 MOP	NOUN	acronym
@@ -1643,12 +1588,10 @@ MTV3	PROPN	acronym
 MuK	NOUN	acronym
 MuL	NOUN	acronym
 MuM	NOUN	acronym
-Munsala IK	PROPN	acronym
 MUR	NOUN	acronym
 mus.	NOUN	abbreviation
 mus.op.	NOUN	abbreviation
 MuT	NOUN	acronym
-Muutos 2011	PROPN	acronym
 mv.	NOUN	abbreviation
 mV	NOUN	acronym
 MV	NOUN	acronym
@@ -1664,7 +1607,6 @@ MXN	NOUN	acronym
 MXP	NOUN	acronym
 MXV	NOUN	acronym
 MYEL	NOUN	acronym
-Mynämäen Suunnistajat -52	PROPN	acronym
 myöh.	NOUN	abbreviation
 MYR	NOUN	acronym
 MySQL	PROPN	acronym
@@ -1679,11 +1621,9 @@ n.	NOUN	abbreviation
 N	NOUN	acronym
 N$	NOUN	acronym
 nA	NOUN	acronym
-NA f.	NOUN	abbreviation
 NAD	NOUN	acronym
 NAFTA	PROPN	acronym
 NASA	PROPN	acronym
-Nasdaq OMX	PROPN	acronym
 NATO	PROPN	acronym
 N.B.	NOUN	abbreviation
 NBC	PROPN	acronym
@@ -1738,7 +1678,6 @@ n:o	NOUN	abbreviation
 NOK	NOUN	acronym
 Norcar-BSB	PROPN	acronym
 NordLB	PROPN	acronym
-Nova KBM	PROPN	acronym
 nPa	NOUN	acronym
 NPC	PROPN	acronym
 NPR	NOUN	acronym
@@ -1761,7 +1700,6 @@ NTB	PROPN	acronym
 nti	ADV	abbreviation
 NTP	PROPN	acronym
 Nu	NOUN	acronym
-Nurmon Urheilijat -99	PROPN	acronym
 NUVA	PROPN	acronym
 nV	NOUN	acronym
 NV	NOUN	acronym
@@ -1837,7 +1775,6 @@ oto	NOUN	acronym
 oto.	NOUN	abbreviation
 OTT	NOUN	acronym
 OÜ	NOUN	acronym
-Oulun NMKY	PROPN	acronym
 ov	NOUN	acronym
 ovh	NOUN	acronym
 ovh.	NOUN	abbreviation
@@ -1869,7 +1806,6 @@ past.	NOUN	abbreviation
 pat.	NOUN	abbreviation
 patl.	NOUN	abbreviation
 PAU	PROPN	acronym
-Paulson & Co	PROPN	acronym
 PAV	NOUN	acronym
 PAY	PROPN	acronym
 pBq	NOUN	acronym
@@ -1892,7 +1828,6 @@ PDVSA	PROPN	acronym
 pe	ADV	abbreviation
 PE	NOUN	acronym
 PEI	NOUN	acronym
-Pellervon taloustutkimus PTT	PROPN	acronym
 PEN	NOUN	acronym
 per.	NOUN	abbreviation
 perj.	NOUN	abbreviation
@@ -1912,7 +1847,6 @@ pH	NOUN	acronym
 PH	NOUN	acronym
 PhD	NOUN	acronym
 Ph.D.	NOUN	abbreviation
-Phillips 66	PROPN	acronym
 PHP	NOUN	acronym
 PHS	PROPN	acronym
 PHS/TBWA	PROPN	acronym
@@ -1969,7 +1903,6 @@ po.	NOUN	abbreviation
 pohj.	NOUN	abbreviation
 Polamk	PROPN	acronym
 POP	PROPN	acronym
-Pöyry CM	PROPN	acronym
 pp.	NOUN	abbreviation
 PP	NOUN	acronym
 pPa	NOUN	acronym
@@ -2025,7 +1958,6 @@ PTS	NOUN	acronym
 PTT	PROPN	acronym
 puh.	NOUN	abbreviation
 puh.joht.	NOUN	abbreviation
-Purcell & Co	PROPN	acronym
 pursim.	NOUN	abbreviation
 puutarhaop.	NOUN	abbreviation
 pv	NOUN	acronym
@@ -2053,9 +1985,7 @@ R	NOUN	acronym
 R$	NOUN	acronym
 RAC	PROPN	acronym
 rad	NOUN	acronym
-Rahastoyhtiö Seligson & Co	PROPN	acronym
 rak.	NOUN	abbreviation
-Rakennusteollisuus RT	PROPN	acronym
 RAKLI	PROPN	acronym
 rak.mest.	NOUN	abbreviation
 RAM	NOUN	acronym
@@ -2076,7 +2006,6 @@ res.	NOUN	abbreviation
 RFSU	PROPN	acronym
 RHD	NOUN	acronym
 RHJ	PROPN	acronym
-Rhythm Watch Co	PROPN	acronym
 RI	PROPN	acronym
 R&I	NOUN	acronym
 RIM	PROPN	acronym
@@ -2131,7 +2060,6 @@ ry.	NOUN	abbreviation
 rykm.	NOUN	abbreviation
 s	NOUN	acronym
 s.	NOUN	abbreviation
-s. d.	NOUN	abbreviation
 S	NOUN	acronym
 S$	NOUN	acronym
 š	NOUN	acronym
@@ -2139,10 +2067,8 @@ S$	NOUN	acronym
 s2	NOUN	acronym
 s:a	ADV	abbreviation
 SA	NOUN	acronym
-Saab Parts GB	PROPN	acronym
 SAAB	PROPN	acronym
 SaaS	NOUN	acronym
-sacr. min. kand.	NOUN	abbreviation
 SAE	PROPN	acronym
 SAFA	PROPN	acronym
 sähköp.	NOUN	abbreviation
@@ -2153,7 +2079,6 @@ SAJ	PROPN	acronym
 SAK	PROPN	acronym
 S.A.L.I	PROPN	acronym
 SAMOK	PROPN	acronym
-Santander BR	PROPN	acronym
 SAP	PROPN	acronym
 SAR	NOUN	acronym
 SAS	PROPN	acronym
@@ -2182,7 +2107,6 @@ SEC	PROPN	acronym
 SEFE	PROPN	acronym
 SEK	NOUN	acronym
 SEL	PROPN	acronym
-Seligson & Co	PROPN	acronym
 SELMU	PROPN	acronym
 SEPA	NOUN	acronym
 SESKO	PROPN	acronym
@@ -2221,7 +2145,6 @@ SKr	NOUN	acronym
 SKS	PROPN	acronym
 SKV	PROPN	acronym
 sl.	NOUN	abbreviation
-SL Re	NOUN	acronym
 SLA	NOUN	acronym
 SLL	PROPN	acronym
 SLS	PROPN	acronym
@@ -2238,7 +2161,6 @@ SNT	NOUN	acronym
 SNTL	PROPN	acronym
 so	ADV	acronym
 so.	NOUN	abbreviation
-So. Sh.	NOUN	abbreviation
 SOA	PROPN	acronym
 SOAP	NOUN	acronym
 SOK	NOUN	acronym
@@ -2288,7 +2210,6 @@ STTK	PROPN	acronym
 STTV	PROPN	acronym
 STUK	PROPN	acronym
 STX	PROPN	acronym
-STX OSV	PROPN	acronym
 su	ADV	abbreviation
 SUB	PROPN	acronym
 SubTV	PROPN	acronym
@@ -2296,8 +2217,6 @@ SUKOL	PROPN	acronym
 SUL	PROPN	acronym
 sunn.	NOUN	abbreviation
 suom.	ADV	abbreviation
-Suomen UNICEF	PROPN	acronym
-Suomi-Soffa SSF	PROPN	acronym
 SuomiTV	PROPN	acronym
 SUPO	NOUN	acronym
 SUR	NOUN	acronym
@@ -2315,7 +2234,6 @@ SVT	PROPN	acronym
 SVUL	PROPN	acronym
 SVVK	PROPN	acronym
 SWE	PROPN	acronym
-Sweco PM	PROPN	acronym
 SwF	NOUN	acronym
 SYKE	PROPN	acronym
 SYL	PROPN	acronym
@@ -2326,7 +2244,6 @@ SZL	NOUN	acronym
 t	NOUN	acronym
 t.	NOUN	abbreviation
 T	NOUN	acronym
-T Sh	NOUN	acronym
 T$	NOUN	acronym
 TA	NOUN	acronym
 T/A	NOUN	acronym
@@ -2339,7 +2256,6 @@ tal.hoit.	NOUN	abbreviation
 TALK	NOUN	acronym
 taloust.	NOUN	abbreviation
 TaM	NOUN	acronym
-Tampereen Urheilijat -38	PROPN	acronym
 TANE	PROPN	acronym
 tanssit.	NOUN	abbreviation
 TAO	NOUN	acronym
@@ -2370,7 +2286,6 @@ TeK	NOUN	acronym
 TEK	PROPN	acronym
 TEKEL	PROPN	acronym
 tekn.	NOUN	abbreviation
-Teknologian tutkimuskeskus VTT	PROPN	acronym
 TeL	NOUN	acronym
 TEL	NOUN	acronym
 TELA	PROPN	acronym
@@ -2378,7 +2293,6 @@ Tele2	PROPN	acronym
 TeM	NOUN	acronym
 TEM	PROPN	acronym
 TEO	PROPN	acronym
-TEO LT	PROPN	acronym
 teol.	NOUN	abbreviation
 teoll.	NOUN	abbreviation
 terveydenh.	NOUN	abbreviation
@@ -2402,14 +2316,12 @@ ti	ADV	abbreviation
 TI	PROPN	acronym
 TIF	NOUN	acronym
 TIFF	NOUN	acronym
-Tiffany & Co	PROPN	acronym
 tiist.	NOUN	abbreviation
 TIKE	PROPN	acronym
 til.	NOUN	abbreviation
 TIR	NOUN	acronym
 TIVIT	PROPN	acronym
 tj.	NOUN	abbreviation
-TJ	NOUN   	acronym
 TJR	NOUN	acronym
 tjs	ADV	abbreviation
 tjs.	NOUN	abbreviation
@@ -2444,7 +2356,6 @@ tmi	ADV	abbreviation
 tmk	NOUN	acronym
 TMK	NOUN	acronym
 TMM	NOUN	acronym
-T-Mobile USA	PROPN	acronym
 Tmol	NOUN	acronym
 tms	ADV	abbreviation
 tms.	NOUN	abbreviation
@@ -2465,7 +2376,6 @@ toim.siht.	NOUN	abbreviation
 TOKYO	PROPN	acronym
 TOP	NOUN	acronym
 TopK	PROPN	acronym
-Tornion Lentis –88	PROPN	acronym
 torst.	NOUN	abbreviation
 tp.	NOUN	abbreviation
 TPa	NOUN	acronym
@@ -2508,7 +2418,6 @@ TuKKK	PROPN	acronym
 TUL	PROPN	acronym
 TULE	NOUN	acronym
 tuom.	NOUN	abbreviation
-Turun NMKY	PROPN	acronym
 tus	NOUN	acronym
 tv	NOUN	acronym
 TV	NOUN	acronym
@@ -2530,7 +2439,6 @@ TZS	NOUN	acronym
 TΩ	NOUN	acronym
 u	NOUN	acronym
 U	NOUN	acronym
-U Sh	NOUN	acronym
 U2	PROPN	acronym
 uä	NOUN	acronym
 UAH	NOUN	acronym
@@ -2636,8 +2544,6 @@ VHL	NOUN	acronym
 vht	ADV	abbreviation
 VHT	NOUN	acronym
 VI	NOUN	acronym
-Viestintäyhdistys A&O	PROPN	acronym
-Vihdin Lentopallo-90	PROPN	acronym
 vihr.	NOUN	abbreviation
 Vihr.	NOUN	abbreviation
 VIP	NOUN	acronym
@@ -2661,10 +2567,7 @@ VNN	NOUN	acronym
 VNp.	NOUN	abbreviation
 VO	NOUN	acronym
 V.O.	NOUN	abbreviation
-Voimaosakeyhtiö SF	PROPN	acronym
 voim.op.	NOUN	abbreviation
-Vola.ro Student Adventure SRL	PROPN	acronym
-Volvo IT	PROPN	acronym
 VOO	PROPN	acronym
 Vp.	NOUN	abbreviation
 vpj	NOUN	acronym
@@ -2703,20 +2606,17 @@ VYO	NOUN	acronym
 w	NOUN	acronym
 W	NOUN	acronym
 WADA	PROPN	acronym
-Walt Disney Co	PROPN	acronym
 WAP	NOUN	acronym
 Wb	NOUN	acronym
 wc	NOUN	acronym
 WC	NOUN	acronym
 WCC	PROPN	acronym
 WELMU	PROPN	acronym
-Westend ICT	PROPN	acronym
 WestLB	PROPN	acronym
 WEU	PROPN	acronym
 Wh	NOUN	acronym
 WHO	PROPN	acronym
 WIDER	PROPN	acronym
-Windows 95	NOUN	acronym
 WiO	PROPN	acronym
 WIPO	PROPN	acronym
 WLAN	NOUN	acronym
@@ -2780,7 +2680,6 @@ YGy	NOUN	acronym
 yH	NOUN	acronym
 YH	NOUN	acronym
 yhd.	NOUN	abbreviation
-Yhdistys 9	PROPN	acronym
 yht.	NOUN	abbreviation
 yhteiskuntat.	NOUN	abbreviation
 yHz	NOUN	acronym

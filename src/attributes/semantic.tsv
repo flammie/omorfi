@@ -123,7 +123,6 @@ Alan	PROPN	male
 alankomaalainen	NOUN	inhabitant
 alankomaalainen	ADJ	country
 Alankomaat	PROPN	country
-Alankomaiden Antillit	PROPN	country
 Alarik	PROPN	male
 alasaksa	NOUN	language
 Alasatakunta	PROPN	media
@@ -208,7 +207,6 @@ Amanda	PROPN	female
 AMD	PROPN	org
 Amelia	PROPN	female
 Amelie	PROPN	female
-Amerikan Samoa	PROPN	country
 amerikanenglanti	NOUN	language
 amerikanespanja	NOUN	language
 amerikansamoalainen	NOUN	inhabitant
@@ -303,7 +301,6 @@ Ante	PROPN	male
 Antero	PROPN	male
 Anthony	PROPN	male
 Antigua	PROPN	country
-Antigua ja Barbuda	PROPN	country
 antiguabarbudalainen	NOUN	inhabitant
 antiguabarbudalainen	ADJ	country
 Anton	PROPN	male
@@ -627,7 +624,6 @@ Borgåbladet	PROPN	media
 Boris	PROPN	male
 bosnia	NOUN	language
 Bosnia	PROPN	country
-Bosnia ja Hertsegovina	PROPN	country
 bosniahertsegovinalainen	NOUN	inhabitant
 bosniahertsegovinalainen	ADJ	country
 Botswana	PROPN	country
@@ -645,7 +641,6 @@ Brasilia	PROPN	country
 brasilialainen	NOUN	inhabitant
 brasilialainen	ADJ	country
 brasilianportugali	NOUN	language
-Brazzavillen Kongo	PROPN	country
 brazzavillenkongolainen	NOUN	inhabitant
 brazzavillenkongolainen	ADJ	country
 BRB	NOUN	currency
@@ -664,7 +659,6 @@ Britta	PROPN	female
 britti	NOUN	inhabitant
 brittiläinen	NOUN	inhabitant
 brittiläinen	ADJ	country
-Brittiläiset Neitsytsaaret	PROPN	country
 BRL	NOUN	currency
 BRN	NOUN	currency
 Brooklyn	PROPN	female
@@ -696,7 +690,6 @@ bulgarialainen	ADJ	country
 bulu	NOUN	language
 burjaatti	NOUN	language
 Burkina	PROPN	country
-Burkina Faso	PROPN	country
 burkinalainen	NOUN	inhabitant
 burkinalainen	ADJ	country
 burma	NOUN	language
@@ -816,7 +809,6 @@ COP	NOUN	currency
 Cornelia	PROPN	female
 Corp	NOUN	org
 Corp.	NOUN	org
-Costa Rica	PROPN	country
 costaricalainen	NOUN	inhabitant
 costaricalainen	ADJ	country
 COU	NOUN	currency
@@ -936,8 +928,6 @@ diplomikirjeenvaihtaja	NOUN	title
 diplomikosmetologi	NOUN	title
 diplomiurkuri	NOUN	title
 dipl.urk.	NOUN	title
-dir. cant.	NOUN	title
-dir. mus.	NOUN	title
 director	NOUN	title
 dirhami	NOUN	currency
 Disa	PROPN	female
@@ -972,7 +962,6 @@ dominicalainen	ADJ	country
 Dominik	PROPN	male
 dominikaanilainen	NOUN	inhabitant
 dominikaanilainen	ADJ	country
-Dominikaaninen tasavalta	PROPN	country
 Don	PROPN	male
 Donald	PROPN	male
 DOP	NOUN	currency
@@ -1084,7 +1073,6 @@ Ekku	PROPN	male
 ekon.	NOUN	title
 ekonomi	NOUN	title
 eKr.	NOUN	time
-El Salvador	PROPN	country
 EL	PROPN	title
 elami	NOUN	language
 Elea	PROPN	female
@@ -1257,7 +1245,6 @@ Etelä-Afrikka	PROPN	country
 eteläafrikkalainen	NOUN	inhabitant
 eteläafrikkalainen	ADJ	country
 Etelä-Georgia	PROPN	country
-Eteläiset Sandwichsaaret	PROPN	country
 Etelä-Korea	PROPN	country
 eteläkorealainen	NOUN	inhabitant
 eteläkorealainen	ADJ	country
@@ -1669,7 +1656,6 @@ h.c.	NOUN	title
 h°C	NOUN	measure
 hC	NOUN	measure
 hcd	NOUN	measure
-Heard and McDonaldinsaaret	PROPN	country
 Heather	PROPN	female
 Hedda	PROPN	female
 Hedvig	PROPN	female
@@ -1701,7 +1687,6 @@ Helinä	PROPN	female
 Heljä	PROPN	female
 Helka	PROPN	female
 Helle	PROPN	female
-Helleenien tasavalta	PROPN	country
 Hellen	PROPN	female
 Hellevi	PROPN	female
 Helli	PROPN	female
@@ -1853,7 +1838,6 @@ Hufvudstadsbladet	PROPN	media
 Hugh	PROPN	male
 Hugo	PROPN	male
 Huippuvuoret	PROPN	country
-Huippuvuoret ja Jan Mayen	PROPN	country
 huittislainen	NOUN	inhabitant
 huittislainen	ADJ	country
 HuK	NOUN	title
@@ -2356,7 +2340,6 @@ Jöran	PROPN	male
 Jörgen	PROPN	male
 Jörn	PROPN	male
 K	NOUN	measure
-K Sh	NOUN	currency
 ka	NOUN	measure
 kA	NOUN	measure
 kaakkois-	NOUN	geo
@@ -2457,7 +2440,6 @@ kantoninkiina	NOUN	language
 kantt.	NOUN	title
 kanttori	NOUN	title
 kanuri	NOUN	language
-Kap Verde	PROPN	country
 kappal.	NOUN	title
 kappalainen	NOUN	title
 kapt.	NOUN	title
@@ -2627,7 +2609,6 @@ Kerttuli	PROPN	female
 KES	NOUN	currency
 kesk.	NOUN	polit|time
 Kesk.	NOUN	org|polit
-Keski-Afrikan tasavalta	PROPN	country
 Keski-Afrikka	PROPN	country
 keskiafrikkalainen	NOUN	inhabitant
 keskiafrikkalainen	ADJ	country
@@ -2708,7 +2689,6 @@ Kimsdotter	PROPN	female
 kingwana	NOUN	language
 kinnulalainen	NOUN	inhabitant
 kinnulalainen	ADJ	country
-Kinshasan Kongo	PROPN	country
 kinshasankongolainen	NOUN	inhabitant
 kinshasankongolainen	ADJ	country
 kir.	NOUN	title
@@ -2829,7 +2809,6 @@ Kongo-Brazzaville	PROPN	country
 Kongo-Kinshasa	PROPN	country
 kongolainen	NOUN	inhabitant
 kongolainen	ADJ	country
-Kongon demokraattinen tasavalta	PROPN	country
 konkani	NOUN	language
 konneveteläinen	NOUN	inhabitant
 konneveteläinen	ADJ	country
@@ -2854,8 +2833,6 @@ korea	NOUN	language
 Korea	PROPN	country
 korealainen	NOUN	inhabitant
 korealainen	ADJ	country
-Korean demokraattinen kansantasavalta	PROPN	country
-Korean tasavalta	PROPN	country
 korni	NOUN	language
 korpilahtelainen	NOUN	inhabitant
 korpilahtelainen	ADJ	country
@@ -4019,7 +3996,6 @@ MΩ	NOUN	measure
 N	NOUN	currency|measure|title
 N$	NOUN	currency
 nA	NOUN	measure
-NA f.	NOUN	currency
 naantalilainen	NOUN	inhabitant
 naantalilainen	ADJ	country
 NAD	NOUN	currency
@@ -4695,7 +4671,6 @@ PTE	NOUN	currency
 PTO	NOUN	title
 pudasjärveläinen	NOUN	inhabitant
 pudasjärveläinen	ADJ	country
-Puerto Rico	PROPN	country
 puertoricolainen	NOUN	inhabitant
 puertoricolainen	ADJ	country
 puheenjohtaja	NOUN	title
@@ -4773,7 +4748,6 @@ Päivi	PROPN	female
 Päivikki	PROPN	female
 Päiviö	PROPN	male
 Päivä	PROPN	female
-Päiväntasaajan Guinea	PROPN	country
 päiväntasaajanguinealainen	NOUN	inhabitant
 päiväntasaajanguinealainen	ADJ	country
 Päivö	PROPN	male
@@ -4841,8 +4815,6 @@ ranska	NOUN	language
 Ranska	PROPN	country
 ranskalainen	NOUN	inhabitant
 ranskalainen	ADJ	country
-Ranskan Guayana	PROPN	country
-Ranskan Polynesia	PROPN	country
 ranskanguayanalainen	NOUN	inhabitant
 ranskanguayanalainen	ADJ	country
 ranskanpolynesialainen	NOUN	inhabitant
@@ -5075,7 +5047,6 @@ saarijärveläinen	ADJ	country
 saarijärvinen	NOUN	inhabitant
 saarijärvinen	ADJ	country
 Sabina	PROPN	female
-sacr. min. kand.	NOUN	title
 Sade	PROPN	female
 Saga	PROPN	female
 sahalahtelainen	NOUN	inhabitant
@@ -5086,11 +5057,6 @@ Saila	PROPN	female
 Saima	PROPN	female
 Saimi	PROPN	female
 Saini	PROPN	female
-Saint Helena	PROPN	country
-Saint Kitts ja Nevis	PROPN	country
-Saint Lucia	PROPN	country
-Saint Vincent	PROPN	country
-Saint Vincent ja Grenadiinit	PROPN	country
 Saint-Barthélemy	PROPN	country
 saintbarthélemylainen	NOUN	inhabitant
 saintbarthélemylainen	ADJ	country
@@ -5104,7 +5070,6 @@ Saint-Martin	PROPN	country
 saintmartinilainen	NOUN	inhabitant
 saintmartinilainen	ADJ	country
 Saint-Pierre	PROPN	country
-Saint-Pierre ja Miquelon	PROPN	country
 sairaalaneuvos	NOUN	title
 sairaanhoidonopettaja	NOUN	title
 sairaanhoitaja	NOUN	title
@@ -5158,7 +5123,6 @@ Sampsa	PROPN	male
 Samu	PROPN	male
 Samuel	PROPN	male
 Samuli	PROPN	male
-San Marino	PROPN	country
 sanctus	NOUN	title
 sandawe	NOUN	language
 Sandra	PROPN	female
@@ -5180,8 +5144,6 @@ sanskrit	NOUN	language
 santali	NOUN	language
 Santeri	PROPN	male
 Santtu	PROPN	male
-São Tomé	PROPN	country
-São Tomé ja Príncipe	PROPN	country
 sãotomépríncipeläinen	NOUN	inhabitant
 sãotomépríncipeläinen	ADJ	country
 SAR	NOUN	currency
@@ -5291,7 +5253,6 @@ SI$	NOUN	currency
 sia	NOUN	org
 sichuanin-yi	NOUN	language
 sidamo	NOUN	language
-Sierra Leone	PROPN	country
 sierraleonelainen	NOUN	inhabitant
 sierraleonelainen	ADJ	country
 sieviläinen	NOUN	inhabitant
@@ -5351,7 +5312,6 @@ Sinikka	PROPN	female
 Sini-Maaria	PROPN	female
 Sini-Tuulia	PROPN	female
 Sinna	PROPN	female
-Sint Maarten	PROPN	country
 sintmaartenilainen	NOUN	inhabitant
 sintmaartenilainen	ADJ	country
 siouxkieli	NOUN	language
@@ -5392,7 +5352,6 @@ skotti	NOUN	language
 SKP	PROPN	polit
 SKr	NOUN	currency
 sl.	NOUN	time
-SL Re	NOUN	currency
 slevi	NOUN	language
 SLL	NOUN	currency
 Slovakia	PROPN	country
@@ -5406,7 +5365,6 @@ slovenialainen	ADJ	country
 SMP	NOUN	polit
 snt	NOUN	currency
 SNT	NOUN	geo
-So. Sh.	NOUN	currency
 sodankyläläinen	NOUN	inhabitant
 sodankyläläinen	ADJ	country
 Sofia	PROPN	female
@@ -5465,7 +5423,6 @@ SR	NOUN	currency
 sranan	NOUN	language
 SRD	NOUN	currency
 SRG	NOUN	currency
-Sri Lanka	PROPN	country
 srilankalainen	NOUN	inhabitant
 srilankalainen	ADJ	country
 srk	NOUN	org
@@ -5557,7 +5514,6 @@ Suvi-Maria	PROPN	female
 Suvi-Tuulikki	PROPN	female
 Sv	NOUN	measure
 Svalbard	PROPN	country
-Svalbard ja Jan Mayen	PROPN	country
 svalbardjanmayenilainen	NOUN	inhabitant
 svalbardjanmayenilainen	ADJ	country
 Svante	PROPN	male
@@ -5606,7 +5562,6 @@ säynätsalolainen	ADJ	country
 Sören	PROPN	male
 t	NOUN	time|measure
 T	NOUN	currency
-T Sh	NOUN	currency
 T$	NOUN	currency
 TA	NOUN	measure
 taaleri	NOUN	currency
@@ -5924,7 +5879,6 @@ TPK	PROPN	org
 tri	NOUN	title
 Trine	PROPN	female
 Trinidad	PROPN	country
-Trinidad ja Tobago	PROPN	country
 trinidadtobagolainen	NOUN	inhabitant
 trinidadtobagolainen	ADJ	country
 TRL	NOUN	currency
@@ -5990,7 +5944,6 @@ turkmeeni	NOUN	language
 Turkmenistan	PROPN	country
 turkmenistanilainen	NOUN	inhabitant
 turkmenistanilainen	ADJ	country
-Turks- ja Caicossaaret	PROPN	country
 turkulainen	NOUN	inhabitant
 turkulainen	ADJ	country
 Turo	PROPN	male
@@ -6047,7 +6000,6 @@ töysäläinen	NOUN	inhabitant
 töysäläinen	ADJ	country
 TΩ	NOUN	measure
 u	NOUN	measure
-U Sh	NOUN	currency
 UAH	NOUN	currency
 UAK	NOUN	currency
 udmurtti	NOUN	language
@@ -6435,7 +6387,6 @@ W	NOUN	measure
 Wagner	PROPN	male
 wakashkieli	NOUN	language
 Waldemar	PROPN	male
-Wallis ja Futuna	PROPN	country
 wallisfutunalainen	NOUN	inhabitant
 wallisfutunalainen	ADJ	country
 walser	NOUN	language
@@ -6510,11 +6461,8 @@ Yg	NOUN	measure
 yH	NOUN	measure
 YH	NOUN	measure
 yhd.	NOUN	org
-Yhdistyneet arabiemiirikunnat	PROPN	country
-Yhdistynyt kuningaskunta	PROPN	country
 yhdyskuntasuunnittelija	NOUN	title
 Yhdysvallat	PROPN	country
-Yhdysvaltain Neitsytsaaret	PROPN	country
 yhdysvaltalainen	NOUN	inhabitant
 yhdysvaltalainen	ADJ	country
 yhteiskuntat.	NOUN	title
