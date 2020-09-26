@@ -555,6 +555,7 @@ NOUN_NALLE	NOUN	NOUN	8	None	False	weaken	back	None	None	False	False	[Eeëěĕ]
 NOUN_NEITSYT	NOUN	NOUN	43	None	False	strengthen	front	None	None	False	False	yt	t
 NOUN_NEUVOTTELUT	NOUN	NOUN	2	None	obligatory	weaken	back	None	None	False	False	ut	t
 NOUN_NIHTI	NOUN	NOUN	5	F	False	weaken	front	None	None	False	False	ti	ti
+NOUN_ÄITI	NOUN	NOUN	5	F?	False	weaken	front	None	None	False	False	ti	ti
 NOUN_NIITUT	NOUN	NOUN	1	C	obligatory	weaken	back	None	None	False	False	tut	ut
 NOUN_NIMETÖN	NOUN	NOUN	34	C	False	strengthen	front	None	None	False	False	tön	ön
 NOUN_NISSE	NOUN	NOUN	8	None	False	weaken	front	None	None	False	False	[ÄÖYIEĒÉÍäöyieíüýêéőèěęøæõ][^aou]*[Eeěëéè]

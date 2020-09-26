@@ -555,6 +555,7 @@ NOUN_NALLE	e stem, no variations, back harmony
 NOUN_NEITSYT	yt stem, yt : ye variations
 NOUN_NEUVOTTELUT	Plurale tantums, ut stem, ut : u variations
 NOUN_NIHTI	ti stem, ti : de variations
+NOUN_ÄITI	ti stem, optional t : d
 NOUN_NIITUT	Plurale tantums, tut stem, ttut : tu variations
 NOUN_NIMETÖN	tön stem, tön : ttömä variations
 NOUN_NISSE	e stem, no variations front harmony
