@@ -51,3 +51,33 @@ hienostokaupunginosissa.* =
 ;	"hiki#osto#kaupunginosa" NOUN PL INE <W=0> <CMP=3> SELECT:83:least-compounds
 ;	"hiki#osto#kaupunki#osa" NOUN PL INE <W=0> <CMP=4> SELECT:83:least-compounds
 ```
+
+## voimakassanainen
+
+Ambiguity of:
+
+1. voimakas+sanainen, adj: strongly worded
+1. voima+kassa+nainen, n: power cashier lady
+
+from Finnish internet parsebank: *istumaan tuolloin voimakassanainen feministi*:
+
+1. sitting then a strongly worded feminist
+1. sitting then a power cashier lady feminist
+
+```
+
+```
+
+
+## suorastaan
+
+Ambiguity of:
+
+1. suorastaan, adv: directly, precisely (~usually just emphatic)
+1. suo+rastas, n: swamp bird (I don't know the correct bird name)
+
+gutenberg-fi: *huomautuksesi on suorastaan nerokas -- sanoi Lauri* (I am gussing
+*7 Veljestä*, by A. Kivi)
+
+1. your remark is absolutely brilliant, Lauri said
+1. your remark is swamp bird's smart, Lauri said
