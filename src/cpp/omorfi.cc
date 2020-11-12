@@ -82,6 +82,7 @@ namespace omorfi {
                 }
                 anals.push_back(a);
             }
+            delete results;
             return anals;
         } else {
             // XXX: error
