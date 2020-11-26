@@ -12,7 +12,8 @@ ADJ_AUTIO	o stem no variations
 ADJ_AUTUAS	as stem, as : aa variations
 ADJ_AVOIN	n stem, n : me variations
 ADJ_BEIGE	e stem, no variations, front harmony
-ADJ_COOL	consonant stems, X : Xe variations
+ADJ_CHIC	consonant stems, X : Xe variations, front harmony
+ADJ_COOL	consonant stems, X : Xe variations, back harmony
 ADJ_EHTA	ta stem, ta : da  variations
 ADJ_EHYT	yt stem, yt : ye variations
 ADJ_ENSIMMÄINEN	nen stem, nen : se variations, front harmony, ordinals

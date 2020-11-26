@@ -2,7 +2,7 @@
 # This script takes an English wiktionary xml dump and converts it to omorfi
 # it was at c/p from fiwikt2omorfi.bash
 
-SED=gsed
+SED=sed
 
 print_usage() {
     echo "Usage: $0 [enwikt-pages-articles.xml]"
@@ -76,7 +76,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's:</text>.*::' \
         -e 's:<text.*::' |\
 # replace space in propn for easy
-    $SED -e 's/Proper noun/Proper-noun/' |\
+    $SED -e 's/Proper noun/Proper-noun/g' |\
 # Place entries in alphabetical order (due to uniform xml strucuture sort
 # command works normally) and write as .xml file
     sort |\
@@ -96,7 +96,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ppo	1	\)Proper-noun_valo	/\1PROPN_HAPPO	/' \
         -e 's/\(tto	1	\)Noun_valo	/\1NOUN_HIRTTO	/' \
         -e 's/\(tto	1	\)Proper-noun_valo	/\1PROPN_HIRTTO	/' \
-        -e 's/\(ttu	1	\)Adjective_valo	/\1ADJ_TORTTU	/' \
+        -e 's/\(ttu	1	\)Adjective_valo	/\1ADJ_VIMMATTU	/' \
         -e 's/\(tty	1	\)Adjective_valo	/\1ADJ_YLENNETTY	/' \
         -e 's/\(ttu	1	\)Proper-noun_valo	/\1PROPN_TORTTU	/' \
         -e 's/\(tty	1	\)Proper-noun_valo	/\1PROPN_PYTTY	/' \
@@ -120,7 +120,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(rto	1	\)Proper-noun_valo	/\1PROPN_SIIRTO	/' \
         -e 's/\(ky	1	\)Noun_valo	/\1NOUN_NÄKY	/' \
         -e 's/\(ko	1	\)Noun_valo	/\1NOUN_TEKO	/' \
-        -e 's/\(uku	1	\)Noun_valo	/\1NOUN_SUKU	/' \
+        -e 's/\(uku	1	\)Noun_valo	/\1NOUN_LUKU	/' \
         -e 's/\(o	1	\)Noun_valo	/\1NOUN_TALO	/' \
         -e 's/\(ot	1	\)Noun_valo	/\1NOUN_AIVOT	/' \
         -e 's/\(o	1	\)Adjective_valo	/\1ADJ_TUMMAHKO	/' \
@@ -276,7 +276,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Adjective_10J	/\1ADJ_VIHANTA	/' \
         -e 's/\(ä	1	\)Noun_10L	/\1NOUN_NÄLKÄ	/' \
         -e 's/\(ä	1	\)Proper-noun_11	/\1PROPN_HÄKKYRÄ	/' \
-        -e 's/\(a	1	\)Adjective_katiska	/\1NOUN_KIKKARA	/' \
+        -e 's/\(a	1	\)Adjective_katiska	/\1ADJ_RUMA	/' \
         -e 's/\(a	1	\)Noun_katiska	/\1NOUN_MAKKARA	/' \
         -e 's/\(at	1	\)Noun_katiska	/\1NOUN_VARAT	/' \
         -e 's/\(ä	1	\)Noun_katiska	/\1NOUN_SIIVILÄ	/' \
@@ -362,16 +362,18 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(u	1	\)Proper-noun_vapaa	/\1PROPN_LEIKKUU	/' \
         -e 's/\(ä	1	\)Proper-noun_vapaa	/\1PROPN_HYVINKÄÄ	/' \
         -e 's/\(	1	\)Noun_rosé	/\1NOUN_ROSÉ	/' \
+        -e 's/\(	1	\)Noun_ros	/\1NOUN_ROSÉ	/' \
         -e 's/\(ie	1	\)Pronomini_21	/\1PRON_MIE	/' \
         -e 's/\(	1	\)Proper-noun_rosé	/\1PROPN_ROSÉ	/' \
         -e 's/\(w	1	\)Proper-noun_show	/\1PROPN_SHOW	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Adjective_ovi	/\1ADJ_LÄHEMPI	/' \
         -e 's/\(i	1	\)Adjective_ovi	/\1ADJ_AIEMPI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Noun_ovi	/\1NOUN_KIVI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Noun_pieni	/\1NOUN_HIIRI	/' \
         -e 's/\(i	1	\)Noun_ovi	/\1NOUN_RUUHI	/' \
         -e 's/\(et	1	\)Noun_ovi	/\1NOUN_RIPSET	/' \
         -e 's/\(i	1	\)Noun_pieni	/\1NOUN_RUUHI	/' \
-        -e 's/\(i	1	\)Adjective_pieni	/\1NOUN_SUURI	/' \
+        -e 's/\(i	1	\)Adjective_pieni	/\1ADJ_SUURI	/' \
         -e 's/\(i	1	\)Proper-noun_ovi	/\1PROPN_RUUHI	/' \
         -e 's/\(meri	1	\)Noun_ovi	/\1NOUN_MERI	/' \
         -e 's/\(meri	1	\)Noun_uni	/\1NOUN_MERI	/' \
@@ -410,7 +412,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(n	1	\)Proper-noun_33A	/\1PROPN_HÄRKIN	/' \
         -e 's/\(kevät	1	\)Noun_kev	/\1NOUN_KEVÄT	/' \
         -e 's/\(venät	1	\)Noun_kev	/\1NOUN_KEVÄT	/' \
-        -e 's/\(ton	1	\)Noun_onneton	/\1NOUN_KALATON	/' \
+        -e 's/\(ton	1	\)Noun_onneton	/\1NOUN_OSATON	/' \
         -e 's/\(tön	1	\)Noun_onneton	/\1NOUN_NIMETÖN	/' \
         -e 's/\(ton	1	\)Adjective_onneton	/\1ADJ_VIATON	/' \
         -e 's/\(tön	1	\)Adjective_onneton	/\1ADJ_KYVYTÖN	/' \
@@ -420,6 +422,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(n	1	\)Adjective_vasen	/\1ADJ_VASEN	/' \
         -e 's/\(n	1	\)Adjective_sisin	/\1ADJ_SISIN	/' \
         -e 's/\([äöyÄÖY].*nen	1	\)Proper-noun_38	/\1PROPN_KYLKIÄINEN	/' \
+        -e 's/\([äöyÄÖY].*nen	1	\)Noun_nainen	/\1NOUN_KYLKIÄINEN	/' \
         -e 's/\(nen	1	\)Noun_nainen	/\1NOUN_AAKKOSTAMINEN	/' \
         -e 's/\(nen	1	\)Verb_nainen	/\1NOUN_AAKKOSTAMINEN	/' \
         -e 's/\([äöyÄÖY].*]set	1	\)Noun_nainen	/\1NOUN_RAPPUSET	/' \
@@ -437,7 +440,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(as	1	\)Adjective_kahdeksas	/\1NUM_KOLMAS	/' \
         -e 's/\(s	1	\)Adjective_kahdeksas	/\1NUM_KOLMAS	/' \
         -e 's/\(s	1	\)Proper-noun_vastaus	/\1PROPN_VAKUUTUS	/' \
+        -e 's/\(š	1	\)Noun_vastaus	/\1NOUN_HAŠIŠ	/' \
         -e 's/\([äöyÄÖY].*s	1	\)Noun_vastaus	/\1NOUN_RÄJÄYTYS	/' \
+        -e 's/\([äöyÄÖY].*s	1	\)Verb_vastaus	/\1NOUN_RÄJÄYTYS	/' \
         -e 's/\(s	1	\)Noun_vastaus	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(s	1	\)Verb_vastaus	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(kset	1	\)Noun_vastaus	/\1NOUN_SERKUKSET	/' \
@@ -461,8 +466,8 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(aat	1	\)Noun_vieras	/\1NOUN_VALJAAT	/' \
         -e 's/\(ies	1	\)Noun_vieras	/\1NOUN_IES	/' \
         -e 's/\(äes	1	\)Noun_vieras	/\1NOUN_IES	/' \
-        -e 's/\(is	1	\)Adjective_vieras	/\1ADJECTIVE_VALMIS	/' \
-        -e 's/\(äs	1	\)Adjective_vieras	/\1ADJECTIVE_TYÖLÄS	/' \
+        -e 's/\(is	1	\)Adjective_vieras	/\1ADJ_VALMIS	/' \
+        -e 's/\(äs	1	\)Adjective_vieras	/\1ADJ_TYÖLÄS	/' \
         -e 's/\(ngäs	1	\)Proper-noun_vieras	/\1PROPN_KÖNGÄS	/' \
         -e 's/\(ngas	1	\)Proper-noun_vieras	/\1PROPN_KANGAS	/' \
         -e 's/\(mmas	1	\)Noun_vieras	/\1NOUN_HAMMAS	/' \
@@ -471,9 +476,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(äs	1	\)Noun_vieras	/\1NOUN_ÄYRÄS	/' \
         -e 's/\(eräs	1	\)Pronoun_vieras	/\1PRON_ERÄS	/' \
         -e 's/\(os	1	\)Noun_vieras	/\1NOUN_UROS	/' \
-        -e 's/\(kas	1	\)Adjective_vieras	/\1NOUN_VOIMAKAS	/' \
-        -e 's/\(käs	1	\)Adjective_vieras	/\1NOUN_TYYLIKÄS	/' \
-        -e 's/\(as	1	\)Adjective_vieras	/\1NOUN_AUTUAS	/' \
+        -e 's/\(kas	1	\)Adjective_vieras	/\1ADJ_VOIMAKAS	/' \
+        -e 's/\(käs	1	\)Adjective_vieras	/\1ADJ_TYYLIKÄS	/' \
+        -e 's/\(as	1	\)Adjective_vieras	/\1ADJ_AUTUAS	/' \
         -e 's/\(as	1	\)Proper-noun_vieras	/\1PROPN_PATSAS	/' \
         -e 's/\(es	1	\)Proper-noun_vieras	/\1PROPN_ARISTOTELES	/' \
         -e 's/\(äs	1	\)Proper-noun_vieras	/\1PROPN_ÄYRÄS	/' \
@@ -490,6 +495,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(et	1	\)Proper-noun_44K	/\1PROPN_VIIRRET	/' \
         -e 's/\(et	1	\)Proper-noun_44I	/\1PROPN_VUOLLET	/' \
         -e 's/\(et	1	\)Proper-noun_44J	/\1PROPN_RINNET	/' \
+        -e 's/\(äs	1	\)Noun_kahdeksas	/\1ADJ_NELJAS	/' \
         -e 's/\(as	1	\)Numeral_45	/\1ADJ_KOLMAS	/' \
         -e 's/\(äs	1	\)Numeral_45	/\1ADJ_NELJÄS	/' \
         -e 's/\(tuhat	1	\)Noun_tuhat	/\1NOUN_VUOSITUHAT	/' \
@@ -513,7 +519,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(keet	1	\)Noun_hame	/\1NOUN_ALKEET	/' \
         -e 's/\([äöyÄÖY].*e	1	\)Noun_hame	/\1NOUN_PISTE	/' \
         -e 's/\(e	1	\)Noun_hame	/\1NOUN_ASTE	/' \
-        -e 's/\(e	1	\)Adjective_hame	/\1ADJ_AHEN	/' \
+        -e 's/\(e	1	\)Adjective_hame	/\1ADJ_TERVE	/' \
         -e 's/\(e	1	\)Proper-noun_hame	/\1PROPN_ASTE	/' \
         -e 's/\(säen	1	\)Noun_askel	/\1NOUN_SÄEN	/' \
         -e 's/\([lrn]	1	\)Noun_askel	/\1NOUN_SIEMEN	/' \
@@ -582,6 +588,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(aa	1	\)Verb_kaikaa	/\1VERB_RAIKAA	/' \
         -e 's/\(aa	1	\)Verb_kumajaa	/\1VERB_VIPAJAA	/' \
         -e 's/\(ää	1	\)Verb_kumajaa	/\1VERB_HELÄJÄÄ	/' \
+        -e 's/\(	1	\)Verb_ei	/\1X_IGNORE	/' \
         -e 's/\(	1	\)Adjective_pron	/\1PRON_XXX	/' \
         -e 's/\(	1	\)Adverb_pron	/\1PRON_XXX	/' \
         -e 's/\(	1	\)Adverb_pred	/\1ADV_NOPEASTI	/' \
@@ -598,7 +605,16 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(	1	\)Noun_k	/\1NOUN_XXX	/' \
         -e 's/\(	1	\)Proper-noun_k	/\1NOUN_XXX	/' \
         -e 's/\([[:upper:]]	1	\)Proper-noun_[a-z]*	/\1PROPN_ACRO_XXX	/' \
-        -e 's/\([[:upper:]]	1	\)Noun_[a-z]*	/\1NOUN_ACRO_XXX	/'
+        -e 's/\([[:upper:]]	1	\)Noun_[a-z]*	/\1NOUN_ACRO_XXX	/' |\
+    $SED -e 's/1	NOUN/NOUN	NOUN/' \
+        -e 's/1	PROPN/PROPN	PROPN/' \
+        -e 's/1	VERB/VERB	VERB/' \
+        -e 's/1	ADJ/ADJ	ADJ/' \
+        -e 's/1	NUM/NUM	NUM/' \
+        -e 's/1	PRON/PRON	PRON/' \
+        -e 's/1	ADP/ADP	ADP/' \
+        -e 's/1	ADV/ADV	ADV/' |\
+    $SED -e 's/		/	/'
 
 # see what else we can
 #cat fiwikt.tempxml |\

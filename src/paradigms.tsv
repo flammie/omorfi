@@ -12,7 +12,8 @@ ADJ_AUTIO	ADJ	ADJECTIVE	3	None	False	weaken	back	None	None	False	False	io
 ADJ_AUTUAS	ADJ	ADJECTIVE	41	None	False	strengthen	back	None	None	False	False	as	s
 ADJ_AVOIN	ADJ	ADJECTIVE	33	None	False	strengthen	back	None	None	False	False	n	n
 ADJ_BEIGE	ADJ	ADJECTIVE	8	None	False	weaken	front	None	None	False	False	e
-ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[lkhm]	
+ADJ_COOL	ADJ	ADJECTIVE	5	None	False	weaken	back	None	None	False	False	[clkhm]	
+ADJ_CHIC	ADJ	ADJECTIVE	5	None	False	weaken	front	None	None	False	False	[clkhm]	
 ADJ_EHTA	ADJ	ADJECTIVE	9	F	False	weaken	back	a	None	False	False	ta	ta
 ADJ_EHYT	ADJ	ADJECTIVE	43	None	False	strengthen	front	None	None	False	False	yt	t
 ADJ_ENSIMMÄINEN	ADJ	NUMERAL	38	None	False	strengthen	front	None	None	False	False	inen	nen
