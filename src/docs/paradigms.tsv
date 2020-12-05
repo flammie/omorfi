@@ -614,7 +614,8 @@ NOUN_PROBLEEMA	a stem, a : 0 variations
 NOUN_PROTOLYYSI	i stem, i : e variations both harmonies
 NOUN_PROTOLYYTTI	tti stem, tti : te variations both front and back harmony allowed
 NOUN_PUHELIN	n stem, n : me variations back harmony
-NOUN_PUIN	in stem, in : kime variations
+NOUN_TEIN	in stem, in : kime variations front
+NOUN_PUIN	in stem, in : kime variations back
 NOUN_PUKIMET	Plurale tantums, kimet stem,  kimet : in variations
 NOUN_PUNK	consonnat stems, x : xe variations, mainly new loan words, back harmony
 NOUN_PUU	uu stem, uu : u variations
@@ -714,6 +715,7 @@ NOUN_SÄÄNNÖT	Plurale tantums, nnöt stem, nnöt : ntö variations
 NOUN_SÄÄRET	Plurale tantums, i:e variation
 NOUN_TAIMI	mi stem, mi : n variations back harmony
 NOUN_TAIVAL	val stem, val : pale : palee variations
+NOUN_HEVEN	ven stem, ven : pene : penee variations
 NOUN_TALKOOT	Plurale tantums, oot stem, oot : o variations
 NOUN_TALO	o stems, no variations
 NOUN_TANHUA	a stems, a : o : 0 variations
@@ -751,6 +753,7 @@ NOUN_TYÖ	yö stem, yö : ö variatons
 NOUN_TYÖT	Plurale tantums, yöt stem, yöt : yö : ö variations
 NOUN_TÖRPPÖ	ppö stem, ppö : pö variations
 NOUN_UDAR	dar stem, dar : taree variations
+NOUN_ÄVÄR	vär stem, vär : päree variations
 NOUN_UKKO	kko stem, kko : ko variations
 NOUN_UKSI	ksi stem, ksi : s variations
 NOUN_ULAPPA	ppa stem, ppa : po variations
@@ -2232,6 +2235,7 @@ VERB_KIETOA	toa stem, toa : do variations
 VERB_KIHERRELLÄ	rrellä stem rrellä : rtele variations
 VERB_KIILLELLÄ	llellä stem, llellä : ltele variationys
 VERB_KIINNETÄ	nnetä stem, nnetä : nteä variations
+VERB_KANNETA	nneta stem, nneta : ntea variations
 VERB_KIITÄÄ	tää stem, tää : dä : si variations
 VERB_KIRVOTA	vota stem, vota : poa variatons
 VERB_KIVETTYÄ	ttyä stem, ttyä : ty variations
@@ -2361,6 +2365,7 @@ VERB_TUIKKAA	kkaa stem, kkaa : ki variations
 VERB_TULLA	lla stem, lla : le variations
 VERB_TUNGETA	ngeta stem, ngeta : nkea variations
 VERB_TUNKEA	nkea stem, nkea : nge variations
+VERB_ÄNKEÄ	nkeä stem, nkeä : nge variations
 VERB_TUNTEA	ntea stem, ntea : nne variations
 VERB_TUODA	uoda stem, uoda : oi variations
 VERB_TYHJENTYÄ	ntyä stem, ntyä : nny variations
