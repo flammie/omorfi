@@ -11,5 +11,15 @@ elif test $# -ge 2 ; then
     echo "$ENWIKT_VERSION is used"
     exit 1
 fi
-wget http://dumps.wikimedia.org/enwiktionary/$ENWIKT_VERSION/enwiktionary-$ENWIKT_VERSION-pages-articles.xml.bz2
-bunzip enwiktionary-$ENWIKT_VERSION-pages-articles.xml.bz2
+EWPREFIX=fiwiktionary-$ENWIKT_VERSION-pages-articles
+wget http://dumps.wikimedia.org/fiwiktionary/$ENWIKT_VERSION/$EWPREFIX.xml.bz2
+bunzip $EWPREFIX.xml.bz2
+bash fiwikt2omorfi.bash $EWPREFIX.articles.xml  > $EWPREFIX.tsv.unsort
+python ../python/tsvsort.py -i $EWPREFIX.tsv.unsort -o $EWPREFIX.tsv.noheaders
+echo "lemma\thomonym\tnew_para\torigin" | cat - $EWPREFIX.tsv.noheaders \
+    > $EWPREFIX.tsv
+python ../python/tsvmerge.py -m ../lexemes.tsv -i $EWPREFIX.tsv \
+    -o ../lexemes+enwikt.tsv
+diff ../lexemes.tsv ../lexemes+enwikt.tsv
+echo if nothing broke just cp ../lexemes+enwikt.tsv ../lexemes.tsv and
+echo do cd .. and make check

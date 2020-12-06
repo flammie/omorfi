@@ -1,7 +1,7 @@
 #!/bin/bash
 # Wiktionary dump is too big to store in version control, here's a script
 # to fetch it instead.
-FIWIKT_VERSION=20180701
+FIWIKT_VERSION=20201120
 if test $# -eq 1 ; then
     FIWIKT_VERSION=$1
 elif test $# -ge 2 ; then
@@ -11,5 +11,15 @@ elif test $# -ge 2 ; then
     echo "$FIWIKT_VERSION is used"
     exit 1
 fi
-wget http://dumps.wikimedia.org/fiwiktionary/$FIWIKT_VERSION/fiwiktionary-$FIWIKT_VERSION-pages-articles.xml.bz2
-bunzip fiwiktionary-$FIWIKT_VERSION-pages-articles.xml.bz2
+FWPREFIX=fiwiktionary-$FIWIKT_VERSION-pages-articles
+wget http://dumps.wikimedia.org/fiwiktionary/$FIWIKT_VERSION/$FWPREFIX.xml.bz2
+bunzip $FWPREFIX.xml.bz2
+bash fiwikt2omorfi.bash $FWPREFIX.articles.xml  > $FWPREFIX.tsv.unsort
+python ../python/tsvsort.py -i $FWPREFIX.tsv.unsort -o $FWPREFIX.tsv.noheaders
+echo "lemma\thomonym\tnew_para\torigin" | cat - $FWPREFIX.tsv.noheaders \
+    > $FWPREFIX.tsv
+python ../python/tsvmerge.py -m ../lexemes.tsv -i $FWPREFIX.tsv \
+    -o ../lexemes+fiwikt.tsv
+diff ../lexemes.tsv ../lexemes+fiwikt.tsv
+echo if nothing broke just cp ../lexemes+fiwikt.tsv ../lexemes.tsv and
+echo do cd .. and make check
