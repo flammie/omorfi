@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GAWK=gawk
-SED=gsed
+SED=sed
 
 $GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
     fgrep -v wordlist |\
@@ -34,6 +34,7 @@ $GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's:</grammar>::' \
         -e 's:<info>.*</info>::' \
         -e 's:<frequency>.*</frequency>::' \
+        -e 's:<application>::' \
         -e 's:</application>::' \
         -e 's:<flag>.*</flag>::' |\
     $SED -e 's:</inflection>.*</word>::'\
@@ -388,6 +389,8 @@ $GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's/valita$/PALKITA/'\
         -e 's/voida-av2$/KOPIOIDA/' \
         -e 's/vuotaa-av1$/HUONONTAA/'\
+        -e 's/adverb/ADV/' \
+        -e 's/adVERB_/ADV/' \
         -e 's/poikkeava||kutiaa$/KUDITA/' |\
     $SED -e 's/ADJ_RUUVI/ADJ_ABNORMI/' \
         -e 's/PROPN_AAKKOSELLINEN/PROPN_AAKKOSTAMINEN/' |\
@@ -399,4 +402,14 @@ $GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
                                 printf("%s\t1\t%s\tjoukahainen\n",
                                     gensub(/[=|]/, "", "g", words[i+1]), $2);
                             }
-                        }'
+                        }' |
+    $SED -e 's/1	NOUN/NOUN	NOUN/' \
+        -e 's/1	PROPN/PROPN	PROPN/' \
+        -e 's/1	VERB/VERB	VERB/' \
+        -e 's/1	ADJ/ADJ	ADJ/' \
+        -e 's/1	NUM/NUM	NUM/' \
+        -e 's/1	PRON/PRON	PRON/' \
+        -e 's/1	ADP/ADP	ADP/' \
+        -e 's/1	SCONJ/SCONJ	SCONJ/' \
+        -e 's/1	INTJ/INTJ	INTJ/' \
+        -e 's/1	ADV/ADV	ADV/'
