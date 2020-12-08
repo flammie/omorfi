@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     exit 1
 fi
 analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
-conllus="fi_ftb-ud-dev.conllu"
+conllus="corpora/fi_ftb-ud-dev.conllu"
 cs="get-covered.bash"
 if test ! -r "$analyser" ; then
     echo Missing $analyser
@@ -19,12 +19,12 @@ if test ! -r $conllus ; then
     exit 77
 fi
 if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -a $analyser \
-        -i $conllus -o omor$conllus -O --hacks=ftb \
+        -i $conllus -o $conllus.omorfi -O --hacks=ftb \
         --not-rules $srcdir/../src/disamparsulation/omorfi.xml ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/conllu-compare.py -H omor$conllus -r $conllus \
+if ! @PYTHON@ $srcdir/conllu-compare.py -H $conllus.omorfi -r $conllus \
         -l omorfi_ftb-ud.log -t 75 ; then
     echo We missed the target of 75 % conllu matches
     exit 1

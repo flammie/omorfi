@@ -42,18 +42,18 @@ if CAN_YAML_TEST
 endif
 
 
-coverage-fast-alls.freqs: 5grams.uniq.freqs \
-						  fiwiki-latest-pages-articles.uniq.freqs \
-						  OpenSubtitles2016.fi.uniq.freqs \
-						  ftb1-2014.uniq.freqs \
-						  tatoeba-fi.uniq.freqs \
-						  europarl-v7.fi-en.fi.uniq.freqs \
-						  ftb3.1.uniq.freqs \
-						  fi_ftb-ud.uniq.freqs \
-						  gutenberg-fi.uniq.freqs \
-						  vks.uniq.freqs \
-						  fi-ud.uniq.freqs \
-						  jrc-fi.uniq.freqs \
-						  vns.uniq.freqs
+coverage-fast-alls.freqs: corpora/5grams.uniq.freqs \
+						  corpora/fiwiki-latest-pages-articles.uniq.freqs \
+						  corpora/OpenSubtitles2016.fi.uniq.freqs \
+						  corpora/ftb1-2014.uniq.freqs \
+						  corpora/tatoeba-fi.uniq.freqs \
+						  corpora/europarl-v7.fi-en.fi.uniq.freqs \
+						  corpora/ftb3.1.uniq.freqs \
+						  corpora/fi_ftb-ud.uniq.freqs \
+						  corpora/gutenberg-fi.uniq.freqs \
+						  corpora/vks.uniq.freqs \
+						  corpora/fi_tdt-ud.uniq.freqs \
+						  corpora/jrc-fi.uniq.freqs \
+						  corpora/vns.uniq.freqs
 	$(PYTHON) sum-uniq-freqs.py -o $@ -t 1000 $^
 

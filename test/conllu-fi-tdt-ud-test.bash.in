@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     exit 1
 fi
 analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
-conllus="fi_tdt-ud-dev.conllu"
+conllus="corpora/fi_tdt-ud-dev.conllu"
 cs="get-covered.bash"
 thold=84
 if test ! -r "$analyser" ; then
@@ -20,12 +20,12 @@ if test ! -r $conllus ; then
     exit 77
 fi
 if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -a $analyser \
-        -i $conllus -o omor$conllus -O \
+        -i $conllus -o $conllus.omorfi -O \
         --not-rules $srcdir/../src/disamparsulation/omorfi.xml ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/conllu-compare.py -H omor$conllus -r $conllus \
+if ! @PYTHON@ $srcdir/conllu-compare.py -H $conllus.omorfi -r $conllus \
         -l omorfi_tdt-ud-dev.log -t $thold ; then
     echo We missed the target of $thold % conllu matches
     exit 1

@@ -5,8 +5,8 @@ function preprocess() {
     cat $@ > .tokenise
     split -l 500000 .tokenise
     for f in x?? ; do
-        ../src/python/omorfi-tokenise.py -i $f -a\
-            ../src/generated/omorfi.describe.hfst |\
+        ../../src/python/omorfi-tokenise.py -i $f -a\
+            ../../src/generated/omorfi.describe.hfst |\
         tr -s ' ' '\n'
     done
     rm -f .tokenise x??
@@ -22,6 +22,10 @@ if ! which fetch-europarl.bash ; then
     echo make and install.
     exit 1
 fi
+if ! test -d corpora ; then
+    mkdir -v corpora
+fi
+pushd corpora
 # europarl
 echo europarl... corpus 1/$nc
 if ! test -f "europarl-v7.fi-en.fi.uniq.freqs" ; then
@@ -234,7 +238,7 @@ if ! test -f "5grams.uniq.freqs" ; then
                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.04.txt.gz
             fi
             echo unpack
-            gzcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
+            zcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
         fi
         echo tokenise
         cat 5grams.text | tr ' ' '\n' | cut -d/ -f1 > 5grams.tokens
@@ -284,4 +288,4 @@ if ! test -f "unimorph-fin.uniq.freqs" ; then
     echo count
     frequency_list "unimorph-fin.tokens" > "unimorph-fin.uniq.freqs"
 fi
-
+popd

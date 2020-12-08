@@ -1,6 +1,6 @@
 #!/bin/bash
 analyser=@top_builddir@/src/generated/omorfi.analyse.hfst
-freqs=coverage-fast-alls.freqs
+freqs=corpora/coverage-fast-alls.freqs
 if test -z $srcdir ; then
     echo Use make check or define srcdir
     exit 1

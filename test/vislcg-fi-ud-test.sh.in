@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     exit 1
 fi
 analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
-vislcgs="fi-ud-test.cg3text"
+vislcgs="corpora/fi-ud-test.cg3text"
 cs="get-covered.bash"
 thold=88
 if test ! -r "$analyser" ; then
@@ -30,7 +30,7 @@ if ! @CGPROC@ -f 0 @top_builddir@/src/generated/omorfi.cg3bin < \
     exit 2
 fi
 if ! @PYTHON@ $srcdir/vislcg-compare.py -H omorfi-ud-test.cg3disam -r\
-        fi-ud-test.cg3text -l fi-ud-test.cg3log -t $thold ; then
+        $vislcgs -l fi-ud-test.cg3log -t $thold ; then
     echo We missed the target of $thold % vislcg matches
     exit 1
 fi

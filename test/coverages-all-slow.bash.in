@@ -16,11 +16,11 @@ fi
 
 
 function coverage_check() {
-    if ! test -f "$1.uniq.freqs" ; then
-        echo missing corpus data $1.uniq.freqs, run get-covered.bash and retry
+    if ! test -f corpora/"$1.uniq.freqs" ; then
+        echo missing corpus data corpora/$1.uniq.freqs, run get-covered.bash and retry
         exit 77
     fi
-    echo Looking up $1.uniq.freqs for at least $2 % coverage
+    echo Looking up corpora/$1.uniq.freqs for at least $2 % coverage
     if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
             @top_builddir@/src/python/omorfi-freq-evals.py -a $fsa \
             -i $1.uniq.freqs -c $hapax\

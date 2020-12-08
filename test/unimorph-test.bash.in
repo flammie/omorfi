@@ -4,7 +4,7 @@ if test -z $srcdir ; then
     exit 1
 fi
 fsa="@top_builddir@/src/generated/omorfi.describe.hfst"
-cuf="unimorph-fin.unimorphs"
+cuf="corpora/unimorph-fin.unimorphs"
 cs="get-covered.bash"
 if test ! -r "$fsa" ; then
     echo Missing $fsa
