@@ -6,7 +6,9 @@ if test $# != 1 ; then
     exit 1
 fi
 
-WC=gwc
+WC=@WC@
+DATE=@DATE@
+AWK=@AWK@
 
 # build index page
 echo "# Statistics" > $INDEX
@@ -15,7 +17,7 @@ echo "_These are semi-automatically generated statistics from omorfi
 database._ The statistics are based on the actual data in the database tables
 and the versions of whole analysed corpora and tools on this date." >> $INDEX
 echo >> $INDEX
-echo "Generation time was \`$(gdate --iso=hours)\`:" >> $INDEX
+echo "Generation time was \`$(${DATE} --iso=hours)\`:" >> $INDEX
 echo "\`\`\`" >> $INDEX
 head -n 8 $1/config.log | tail -n 6 >> $INDEX
 echo "\`\`\`" >> $INDEX
@@ -115,9 +117,9 @@ function convert_coveragelog {
     esac
     echo "### $2"
     echo
-    tokens=$(awk "\$1 >= $HAPAX"' {SUM+=$1;} END {print SUM;}' < ${3})
+    tokens=$($AWK "\$1 >= $HAPAX"' {SUM+=$1;} END {print SUM;}' < ${3})
     types=$($WC -l < ${3})
-    tokenmisses=$(awk '{SUM+=$1;} END {print SUM;}' < ${1})
+    tokenmisses=$($AWK '{SUM+=$1;} END {print SUM;}' < ${1})
     typemisses=$($WC -l < ${1})
     echo "| Feature | Coverage # | Coverage % | All |"
     echo "|:--------|-----------:|-----------:|----:|"
@@ -141,13 +143,13 @@ most frequent missing tokens per
 corpus](#Most-frequent-missing-tokens-per-corpus)." >> ${INDEX}
 echo >> $INDEX
 convert_coveragelog $1/test/coverage-short.log "Combined coverages" \
-    $1/test/coverage-fast-alls.freqs >> $INDEX
+    $1/test/corpora/coverage-fast-alls.freqs >> $INDEX
 echo "The coverages were measured with full lexicon, if you use the [smaller
 lexicon coverages are slightly worse](#Smaller-lexicon-coverage)." >> $INDEX
 echo >> $INDEX
 convert_coveragelog $1/test/coverage-blort.log "Smaller lexicon coverage" \
-    $1/test/coverage-fast-alls.freqs >> $INDEX
-for f in $1/test/*.coveragelog ; do
+    $1/test/corpora/coverage-fast-alls.freqs >> $INDEX
+for f in $1/test/corpora/*.coveragelog ; do
     convert_coveragelog $f "$(basename $f |\
         sed -e 's:test/::' -e 's/.coveragelog//')" \
         ${f%.coveragelog}.uniq.freqs >> $INDEX
@@ -161,14 +163,14 @@ echo "These are the most common tokens still left unrecognised by the
 lexicon. Most of them should be foreign languages, codes and rubbish. These
 are used from time to time improve the lexical coverage." >> $INDEX
 echo >> $INDEX
-for f in $1/test/*coveragelog ; do
+for f in $1/test/corpora/*coveragelog ; do
     corpus=$(basename $f | sed -e 's/.coveragelog//')
     echo "### ${corpus}" >> ${INDEX}
     echo >> ${INDEX}
     echo "| Frequency | Word-form |" >> ${INDEX}
     echo "|----------:|:----------|" >> ${INDEX}
     head -n 100 $f |\
-        awk '{printf("| %s | %s |\n", $1, $3);}' >> ${INDEX}
+        $AWK '{printf("| %s | %s |\n", $1, $3);}' >> ${INDEX}
     echo >> ${INDEX}
 done
 echo >> $INDEX

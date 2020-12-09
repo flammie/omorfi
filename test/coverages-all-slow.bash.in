@@ -23,8 +23,8 @@ function coverage_check() {
     echo Looking up corpora/$1.uniq.freqs for at least $2 % coverage
     if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
             @top_builddir@/src/python/omorfi-freq-evals.py -a $fsa \
-            -i $1.uniq.freqs -c $hapax\
-            -o $1.coveragelog -t $2 ; then
+            -i corpora/$1.uniq.freqs -c $hapax\
+            -o corpora/$1.coveragelog -t $2 ; then
         exit 1
     fi
     return 0

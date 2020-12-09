@@ -280,7 +280,10 @@ AS_IF([test "x$enable_voikko" = "xyes"],
              [AC_MSG_ERROR([zip is required for voikko speller packages])])])
 AC_PATH_PROGS([THEREARENOEASTEREGGS], [toilet figlet cowsay], [echo])
 AC_PATH_PROGS([WGET], [wget])
-AC_PATH_PROGS([TAR], [tar gtar gnutar])
+# insist on gnu stuff on mac :-/
+AC_PATH_PROGS([TAR], [gtar gnutar tar])
+AC_PATH_PROGS([WC], [gwc wc])
+AC_PATH_PROGS([DATE], [gdate date])
 
 # require python for stuff
 AM_PATH_PYTHON([3.2])
@@ -360,6 +363,8 @@ AC_CONFIG_FILES([test/coverages-all-slow.bash],
                 [chmod +x test/coverages-all-slow.bash])
 AC_CONFIG_FILES([test/tools-python.bash],
                 [chmod +x test/tools-python.bash])
+AC_CONFIG_FILES([docs/generate-statistics.bash],
+                [chmod +x docs/generate-statistics.bash])
 AS_IF([test x$with_pbs_mail != xno],
       [AC_CONFIG_FILES([test/clusterstuff.pbs])])
 AS_IF([test x$with_slurm_mail != xno],
