@@ -2216,7 +2216,7 @@ SubTV	PROPN	acronym
 SUKOL	PROPN	acronym
 SUL	PROPN	acronym
 sunn.	NOUN	abbreviation
-suom.	ADV	abbreviation
+suom.	NOUN	abbreviation
 SuomiTV	PROPN	acronym
 SUPO	NOUN	acronym
 SUR	NOUN	acronym
@@ -2227,7 +2227,6 @@ Sv	NOUN	acronym
 SV	NOUN	acronym
 SVAL	PROPN	acronym
 SVC	NOUN	acronym
-Svenska.nu	PROPN	acronym
 svh.	NOUN	abbreviation
 SVL	NOUN	acronym
 SVT	PROPN	acronym

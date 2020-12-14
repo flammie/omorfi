@@ -806,6 +806,7 @@ NOUN_YMPÄRYSTÄ	ä stem, ä : 0 variations
 NOUN_YSTÄVYKSET	Plurale tantums, kset stem, kset : s variations front harmony
 NOUN_YÖKKÖ	kö stem, kkö : kö variations
 NOUN_ZEN	consonant stem, X : Xe variations front harmony
+NOUN_DESIGN	consonant stem, X : Xe variations both harmonies
 NOUN_ZOMBIE	ie stem, no variations back harmony
 NOUN_ÄYRÄS	äs stem, äs : ää variations
 NUM_51kahdeksanbiljardia	Optimisation hack for exceptional compound ’kahdeksanbiljardia’

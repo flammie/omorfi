@@ -343,7 +343,7 @@ NOUN_ASKAR	NOUN	NOUN	49	None	False	strengthen	back	None	None	False	False
 NOUN_ASKELLIN	NOUN	NOUN	33	I	False	strengthen	back	None	None	False	False	llin	lin
 NOUN_ASTE	NOUN	NOUN	48	None	False	strengthen	back	None	None	False	False	e
 NOUN_ASUKAS	NOUN	NOUN	41	A	False	strengthen	back	None	None	False	False	kas	as
-NOUN_ASU	NOUN	NOUN	1	None	False	weaken	back	u	None	False	False	[Uuú]
+NOUN_ASU	NOUN	NOUN	1	None	False	weaken	back	u	None	False	False	[Uuúūù]
 NOUN_ATERIMET	NOUN	NOUN	33	None	obligatory	strengthen	back	None	None	False	False	met	met
 NOUN_AUER	NOUN	NOUN	49	T	False	strengthen	back	None	None	False	False	er	er
 NOUN_BÉBÉ	NOUN	NOUN	21	None	False	weaken	front	e	None	False	False	.
@@ -804,6 +804,7 @@ NOUN_YMPÄRYSTÄ	NOUN	NOUN	9	None	False	weaken	front	ä	None	False	False	ä	ä
 NOUN_YSTÄVYKSET	NOUN	NOUN	39	None	obligatory	strengthen	front	None	None	False	False	kset	kset
 NOUN_YÖKKÖ	NOUN	NOUN	1	A	False	weaken	front	None	None	False	False	kkö	kö
 NOUN_ZEN	NOUN	NOUN	5	None	False	weaken	front	None	None	False	False	
+NOUN_DESIGN	NOUN	NOUN	5	None	False	weaken	both	None	None	False	False	
 NOUN_ZOMBIE	NOUN	NOUN	3	None	False	weaken	back	None	None	False	False	e
 NOUN_ÄITI	NOUN	NOUN	5	F?	False	weaken	front	None	None	False	False	ti	ti
 NOUN_ÄVÄR	NOUN	NOUN	49	E	False	strengthen	front	None	None	False	False	vär	vär
@@ -1642,7 +1643,7 @@ PROPN_ASEMA	PROPN	NOUN	10	None	False	weaken	back	a	None	False	False	a	a
 PROPN_ASKAR	PROPN	NOUN	49	None	False	strengthen	back	None	None	False	False	[rl]
 PROPN_ASTE	PROPN	NOUN	48	None	False	strengthen	back	None	None	False	False	e
 PROPN_ASUKAS	PROPN	NOUN	41	A	False	strengthen	back	None	None	False	False	kas	as
-PROPN_ASU	PROPN	NOUN	1	None	False	weaken	back	u	None	False	False	[Uuú]
+PROPN_ASU	PROPN	NOUN	1	None	False	weaken	back	u	None	False	False	[Uuuúūù]
 PROPN_ATERIMET	PROPN	NOUN	33	None	obligatory	strengthen	back	None	None	False	False	met	met
 PROPN_AULANKO	PROPN	NOUN	1	G?	False	weaken	back	None	None	False	False	nko	ko
 PROPN_BÉBÉ	PROPN	NOUN	21	None	False	weaken	front	e	None	False	False	.
