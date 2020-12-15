@@ -1,21 +1,20 @@
 #!/bin/bash
 LEXFILE=lexemes.tsv
-DOCFILE=docs/lexemes.tsv
+DOCFILE=../docs/lexemes.markdown
 WORK=$(mktemp -d -t omorfi-validate-database.XXXXXXXXXX)
 
-echo checking for missing docs for omorfi++ in ${LEXFILE}...
+echo checking for undocumented for omorfi++ in ${LEXFILE}...
 fgrep 'omorfi++' ${LEXFILE} | cut -f 1,2 > ${WORK}/keys
-sort < ${WORK}/keys > ${WORK}/lc-sort-keys
-cut -f 1,2 ${DOCFILE} | sort > ${WORK}/keys.$(basename $DOCFILE)
-comm -13 ${WORK}/keys.$(basename $DOCFILE) ${WORK}/lc-sort-keys > ${WORK}/missing-keys.$(basename $DOCFILE)
-while read k ; do
-    echo MISSING $k is found in ${LEXFILE} but is not in $DOCFILE >> ${WORK}/fails.$(basename $DOCFILE)
-    fgrep -- "${k}	" $LEXFILE | fgrep 'omorfi++' >> ${WORK}/fails.$(basename $DOCFILE)
-    echo ADD $k into ${DOCFILE} >> ${WORK}/fails.$(basename $DOCFILE)
-done < ${WORK}/missing-keys.$(basename $DOCFILE)
+while read w hn ; do
+    if ! fgrep -m 1 -- $w $DOCFILE > /dev/null ; then
+        echo MISSING $w is found in ${LEXFILE} but is not in $DOCFILE >> ${WORK}/fails.$(basename $DOCFILE)
+        fgrep -- "${k}	" $LEXFILE | fgrep 'omorfi++' >> ${WORK}/fails.$(basename $DOCFILE)
+        echo ADD $k into ${DOCFILE} >> ${WORK}/fails.$(basename $DOCFILE)
+    fi
+done < ${WORK}/keys
 if test -e ${WORK}/fails.$(basename $DOCFILE) ; then
     echo
-    echo there are missing docs in ${DOCFILE}:
+    echo there are undocumented ++ lexemes in ${DOCFILE}:
     cat ${WORK}/fails.$(basename $DOCFILE)
     exit 1
 fi
