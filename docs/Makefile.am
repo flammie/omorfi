@@ -20,6 +20,10 @@ lexemes.markdown: generate-lexemes.py
 	$(PYTHON) generate-lexemes.py -L ../src/docs/lexemes.tsv \
 		-l ../src/generated/master.tsv -o lexemes.markdown
 
+mwes.markdown: generate-mwes.py
+	$(PYTHON) generate-mwes.py -m ../src/generated/master.tsv \
+		-o lexemes.markdown
+
 statistics.markdown:
 	./generate-statistics.bash ..
 
