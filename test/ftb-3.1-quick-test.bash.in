@@ -14,8 +14,8 @@ if ! test -x @PYTHON@ ; then
     echo Missing python
     exit 77
 fi
-if test ! -r $cuf ; then
-    echo missing $cuf, use $cs and re-try
+if test ! -r $cf ; then
+    echo missing $cf, use $cs and re-try
     exit 77
 fi
 if ! @PYTHON@ @top_builddir@/src/python/omorfi-freq-evals.py -a $fsa -i $cf \
