@@ -32,13 +32,21 @@ LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/style.tsv \
 			attributes/symbol-classes.tsv \
 			attributes/verb-arguments.tsv
+MWE_JOINS=attributes/mwe/abbr.tsv \
+		  attributes/mwe/adptype.tsv \
+		  attributes/mwe/boundaries.tsv \
+		  attributes/mwe/clitics.tsv \
+		  attributes/mwe/plurale-tantum.tsv \
+		  attributes/mwe/pronunciation.tsv \
+		  attributes/mwe/proper-classes.tsv \
+		  attributes/mwe/semantic.tsv
 # paradigm features
 PARADIGM_JOINS=paradigms.tsv
 CONTINUATIONS=continuations.tsv
 
 # Tokenisation
 TOKENS=tokeniser/omorfi.tokenise.pmatch
-# }}}
+# }}} 
 #
 # {{{Scripts
 # NB: (variable name = SCIRPTS cause automagic _SCRIPTS)
@@ -158,7 +166,8 @@ LABELSEGMENT_GENERATED=generated/omorfi-labelsegments.lexc
 endif
 
 endif
-DB_GENERATED=generated/master.tsv generated/joint.tsv
+DB_GENERATED=generated/master.tsv generated/joint.tsv \
+			 generated/mwe-master.tsv generated/mwe-joint.tsv
 if CAN_VISLCG3
 VISLCG3_GENERATED=generated/omorfi.cg3bin
 endif
@@ -289,7 +298,7 @@ generated/timestamp:
 	mkdir -p generated
 	touch $@
 
-# database to database
+# right(?) join(lexemes, attributes)
 generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 	$(PYTHON) $(srcdir)/python/tsvjoin.py -i $< \
 		-j $(srcdir)/attributes/abbr.tsv \
@@ -307,8 +316,20 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/symbol-classes.tsv \
 		-j $(srcdir)/attributes/style.tsv \
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
-#
+# right(?) join(mwe, mwe/attributes)
+generated/mwe-joint.tsv: mwe.tsv $(LEMMA_JOINS) generated/timestamp
+	$(PYTHON) $(srcdir)/python/tsvjoin.py -i $< \
+		-j $(srcdir)/attributes/mwe/proper-classes.tsv \
+		-j $(srcdir)/attributes/mwe/semantic.tsv -o $@
+# inner(?) join(lexemes, paradigms)
 generated/master.tsv: generated/joint.tsv paradigms.tsv
+	$(PYTHON) $(srcdir)/python/tsv_expand.py \
+		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
+	head -n 1 < $@.unsrt > $@
+	tail -n +2 < $@.unsrt | sort -k 1,1 >> $@
+	-rm -f $@.unsrt
+# inner(?) join(mwes, paradigms)
+generated/mwe-master.tsv: generated/mwe-joint.tsv paradigms.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@

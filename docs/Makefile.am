@@ -17,12 +17,10 @@ paradigms.markdown:
 		-A ../src/paradigms.tsv -o paradigms.markdown 
 
 lexemes.markdown: generate-lexemes.py
-	$(PYTHON) generate-lexemes.py -L ../src/docs/lexemes.tsv \
-		-l ../src/generated/master.tsv -o lexemes.markdown
+	$(PYTHON) $< -L ../src/docs/lexemes.tsv -l ../src/generated/master.tsv -o $@
 
-mwes.markdown: generate-mwes.py
-	$(PYTHON) generate-mwes.py -m ../src/generated/master.tsv \
-		-o lexemes.markdown
+mwe.markdown: generate-mwe.py
+	$(PYTHON) $< -m ../src/generated/mwe-master.tsv -o $@
 
 statistics.markdown:
 	./generate-statistics.bash ..

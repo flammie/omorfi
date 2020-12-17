@@ -50,7 +50,7 @@ def markdownify(s):
 
 def wiktify(s):
     repls = {']': '(right square bracket)', '|': '(pipe symbol)',
-             '[': '(left square bracket)'}
+             '[': '(left square bracket)', ' ': '%20'}
     for needl, subst in repls.items():
         s = s.replace(needl, subst)
     return s
@@ -80,7 +80,7 @@ def homonymify(s):
 
 def stuff2icon(s):
     if s == 'ORG':
-        return 'org'
+        return '🗄️' # 1st hit for google "emoji org" ;-)
     elif s == 'GEO':
         return '🌍'
     elif s == 'FIRST':
@@ -177,8 +177,16 @@ def main():
                    end='', file=args.output)
             if tsv_parts['lemma'] != prev_lemma:
                 prev_lemma = tsv_parts['lemma']
-            print(" ...", end=' | ', file=args.output)
-            print(" ...", end=' | ', file=args.output)
+            if tsv_parts['origin'] == 'finer':
+                print(" finer only", end=" | ", file=args.output)
+            else:
+                print(" ...", end=' | ', file=args.output)
+            if tsv_parts['proper_noun_class']:
+                print(stuff2icon(tsv_parts['proper_noun_class']), end='',
+                      file=args.output)
+            if tsv_parts['sem']:
+                print(stuff2icon(tsv_parts['sem']), end='', file=args.output)
+            print(" ", end=' | ', file=args.output)
             lexkey = tsv_parts['lemma'] + '\t' + tsv_parts['homonym']
             if 'fiwikt' in tsv_parts['origin']:
                 print("[fiwikt](https://fi.wiktionary.org/wiki/",
