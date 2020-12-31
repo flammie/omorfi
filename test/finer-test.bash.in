@@ -1,0 +1,33 @@
+#!/bin/bash
+if test -z $srcdir ; then
+    echo Use make check or define srcdir
+    exit 1
+fi
+analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
+mwedata="@top_builddir@/src/generated/mwe-master.tsv"
+finers="corpora/digitoday.2015.test.csv"
+cs="get-covered.bash"
+thold=84
+if test ! -r "$analyser" ; then
+    echo Missing $analyser
+    exit 77
+fi
+if ! test -x @PYTHON@ ; then
+    echo Missing python
+    exit 77
+fi
+if test ! -r $finers ; then
+    echo missing $finers, use $cs and re-try
+    exit 77
+fi
+if ! @PYTHON@ @top_builddir@/src/python/omorfi-ner.py -a $analyser \
+        -i $finers -o $finers.omorfi -M $mwedata  ; then
+    echo analysis failed
+    exit 2
+fi
+if ! @PYTHON@ $srcdir/finer-compare.py -H $finers.omorfi -r $finers \
+        -l omorfi_tdt-ud-dev.log -t $thold ; then
+    echo We missed the target of $thold % finer matches
+    exit 1
+fi
+exit 0

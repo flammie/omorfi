@@ -13,6 +13,7 @@ TESTS=rough-tests.sh \
 	  conllu-fi-tdt-ud-test.bash \
 	  conllu-fi-ftb-ud-test.sh \
 	  vislcg-fi-ud-test.sh \
+	  finer-test.bash \
 	  unimorph-test.bash
 XFAIL_TESTS=
 if WANT_BIG_TESTS
@@ -54,6 +55,7 @@ coverage-fast-alls.freqs: corpora/5grams.uniq.freqs \
 						  corpora/vks.uniq.freqs \
 						  corpora/fi_tdt-ud.uniq.freqs \
 						  corpora/jrc-fi.uniq.freqs \
-						  corpora/vns.uniq.freqs
+						  corpora/vns.uniq.freqs \
+						  corpora/finer.uniq.freqs
 	$(PYTHON) sum-uniq-freqs.py -o $@ -t 1000 $^
 

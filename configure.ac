@@ -353,6 +353,8 @@ AC_CONFIG_FILES([test/conllu-fi-tdt-ud-test.bash],
                 [chmod +x test/conllu-fi-tdt-ud-test.bash])
 AC_CONFIG_FILES([test/conllu-fi-ftb-ud-test.sh],
                 [chmod +x test/conllu-fi-ftb-ud-test.sh])
+AC_CONFIG_FILES([test/finer-test.bash],
+                [chmod +x test/finer-test.bash])
 AC_CONFIG_FILES([test/speed-test.sh],
                 [chmod +x test/speed-test.sh])
 AC_CONFIG_FILES([test/coverages-all-quick.bash],

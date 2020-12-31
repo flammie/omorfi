@@ -40,7 +40,7 @@ def next_plaintext(f):
 def next_conllu(f):
     '''tokenise a conllu sentence or comment.
 
-    Should be used a file-like iterable that has CONLL-U sentence or
+    Should be used on a file-like iterable that has CONLL-U sentence or
     comment or empty block coming up.'''
     tokens = list()
     for line in f:
@@ -102,6 +102,46 @@ def next_conllu(f):
     eoft.nontoken = "eof"
     tokens.append(eoft)
     return tokens
+
+
+def next_finer(f):
+    '''tokenise a finer sentence.
+
+    Should be used on a file-like iterable that has finer sentence.
+    '''
+    tokens = list()
+    index = 1
+    for line in f:
+        fields = line.strip().split('\t')
+        token = Token()
+        if len(fields) != 2 and len(fields) != 3:
+            if line.strip() == '':
+                token.nontoken = "separator"
+                token.comment = ''
+                tokens.append(token)
+                return tokens
+            elif line.startswith('<') and line.strip().endswith('>'):
+                token.nontoken = "markup?"
+                token.comment = line.strip()
+                tokens.append(token)
+                return tokens
+            else:
+                token.nontoken = "error"
+                token.error = line.strip()
+                tokens = [token]
+                return tokens
+        token.gold = line.strip()
+        token.pos = index
+        if index == 1:
+            token.firstinsent = True
+        token.surf = fields[0]
+        index += 1
+        tokens.append(token)
+    eoft = Token()
+    eoft.nontoken = "eof"
+    tokens.append(eoft)
+    return tokens
+
 
 
 def next_vislcg(f, isgold=True):

@@ -1,6 +1,6 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=14
+nc=15
 function preprocess() {
     cat $@ > .tokenise
     split -l 500000 .tokenise
@@ -281,11 +281,23 @@ echo Unimorph fin ... 14/$nc
 if ! test -f "unimorph-fin.uniq.freqs" ; then
     if ! test -d fin ; then
         git clone git@github.com:unimorph/fin.git
-        cp fin/fin.? .
     fi
     cat fin/fin.? > unimorph-fin.unimorphs
     cat unimorph-fin.unimorphs | cut -f 2 | fgrep -v ' ' > "unimorph-fin.tokens"
     echo count
     frequency_list "unimorph-fin.tokens" > "unimorph-fin.uniq.freqs"
 fi
+# finer
+echo finer ... 14/$nc
+if ! test -f "finer.uniq.freqs" ; then
+    if ! test -d finer-data ; then
+        git clone git@github.com:mpsilfve/finer-data.git
+    fi
+    cut -f 1 finer-data/data/*.csv > finer.tokens
+    echo count
+    frequency_list "finer.tokens" > "finer.uniq.fregs"
+    cp -v finer-data/data/*csv .
+fi
+
 popd
+
