@@ -26,7 +26,7 @@ if ! @PYTHON@ @top_builddir@/src/python/omorfi-ner.py -a $analyser \
     exit 2
 fi
 if ! @PYTHON@ $srcdir/finer-compare.py -H $finers.omorfi -r $finers \
-        -l omorfi_tdt-ud-dev.log -t $thold ; then
+        -l corpora/digitoday.2015.test.nerlog -t $thold ; then
     echo We missed the target of $thold % finer matches
     exit 1
 fi
