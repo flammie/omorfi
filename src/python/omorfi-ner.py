@@ -28,20 +28,20 @@ def propntype2ner(s):
     elif s == "Product":
         return "PRO"
     elif s == "Cultgrp":
-        return "ORG" # XXX
+        return "ORG"  # XXX
     elif s == "Misc":
-        return "ORG" # XXX
+        return "ORG"  # XXX
     else:
         print("PropnType missing:", s)
         sys.exit(1)
-        return "PRO" # XXX
+        return "PRO"  # XXX
 
 
 def get_ner_b(analysis):
     if "PropnType" in analysis.misc:
         return "B-" + propntype2ner(analysis.misc["PropnType"])
     else:
-        return "O" # XXX
+        return "O"  # XXX
 
 
 def main():
@@ -102,6 +102,7 @@ def main():
     previous_anal = list()
     insidemwe = False
     mwefinished = False
+    reported_already = list()
     while not eoffed:
         sentplus = next_finer(options.infile)
         if not sentplus:
@@ -120,7 +121,9 @@ def main():
                     print("Error at line:", token.error, file=stderr)
                     sys.exit(1)
                 elif token.nontoken == 'markup?':
-                    print("Ignoring markup?", token, file=stderr)
+                    if token.comment not in reported_already:
+                        print("Ignoring markup?", token.comment, file=stderr)
+                        reported_already.append(token.comment)
                     print(token.comment, file=options.outfile)
                     continue
                 else:
@@ -175,6 +178,33 @@ def main():
                         previous_anal.append(get_ner_b(analysis))
                         propnfound = True
                     break
+                if token.surf in ["vuonna",
+                                  "tammikuussa", "helmikuussa",
+                                  "maaliskuussa", "huhtikuussa", "toukokuussa",
+                                  "kesäkuussa", "heinäkuussa", "elokuussa",
+                                  "syyskuussa", "lokakuussa", "marraskuussa",
+                                  "joulukuussa",
+                                  "tammikuun", "helmikuun",
+                                  "maaliskuun", "huhtikuun", "toukokuun",
+                                  "kesäkuun", "heinäkuun", "elokuun",
+                                  "syyskuun", "lokakuun", "marraskuun",
+                                  "joulukuun"
+                                  ]:
+                    propnfound = True  # "PROPN" lol
+                    previous_ner.append(token.surf)
+                    previous_anal.append("B-DATE")
+                    break
+                if token.surf.isdigit():
+                    if len(previous_anal) == 1 and previous_anal[-1] == 'B-DATE':
+                        previous_anal.append("I-DATE")
+                        previous_ner.append(token.surf)
+                        propnfound = True
+                        break
+                    elif len(previous_anal) == 0 or previous_anal[-1] == 'O':
+                        previous_anal.append("B-DATE")
+                        previous_ner.append(token.surf)
+                        propnfound = True
+                        break
             if not propnfound and not insidemwe:
                 previous_ner.append(token.surf)
                 previous_anal.append("O")
