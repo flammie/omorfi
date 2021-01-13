@@ -132,6 +132,7 @@ def main():
         formatter = Ftb3Formatter(args.verbose)
     elif args.format == 'apertium':
         formatter = ApertiumFormatter(args.verbose)
+        args.splits.append("proper_noun_class")
     elif args.format == 'giella':
         formatter = GiellaFormatter(args.verbose)
     elif args.format == 'none':
