@@ -66,6 +66,7 @@
 /src/test-scripts/valid-datatypes.bash.log
 /src/test-suite.log
 /src/voikko/index.xml
+/test/corpora
 /test/5grams.01.txt.gz
 /test/5grams.02.txt.gz
 /test/5grams.03.txt.gz
