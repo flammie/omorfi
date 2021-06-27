@@ -1,53 +1,46 @@
 # Omorfi language binding APIs
 
-Omorfi provides very simple bindings for using the language models without
-having to write your own shell scripts around e.g. HFST shell commands. The APIs
-provide typically some minor additional features, such as case folding or
-heuristic word-tokenisations based on the dictionary, depending on the features
-of the API host language (python has more advanced string mangling than C or
-bash).
+Omorfi provides programming interfaces for those who want to use Finnish
+language models without dealing directly with HFST finite state automata and
+their command-line tools.
 
-# Design
+## Design
 
-The APIs are tied around concept of an omorfi object or handle, that can be
-used to load and apply the language models without dealing with too much of the
-FST internals. These are roughly the functionalities:
+The basic design idea is to have at least one easy to use native-like
+programming interface for most programming languages. The ideal is to have no
+more than few commands or operations to load the language model and feed it
+strings:
 
-* loading a model for specific task from a specific file
-* applying a function supported by currently loaded model(s):
-    * tokenise a multi-token string
-    * analyse a token
-    * analyse a multi-token sentence
-    * guess more analyses
-    * check if word is OK without analysing
-    * segment word into words, morphs or syllables
-    * spell correction suggestions without context
-    * ...
-* converting between different formats / getting printable information
+* load(file)
+* analyse(string)
 
-That is all.
+Any more complicated functionality may be hidden behind more complex operations:
 
-Here is a UML chart I drew about the design:
+* tokenise sentence(str)
+* analyse tokens(list of tokens)
+* disambiguate sentence(list of sets of analyses)
+* ...
 
-![UML chart of omorfi API](omorfi-API.svg)
+and this is encoded with language specific data structues. As of 2021 I've also
+moved less core functions: generation, hyphenation and morph splitting to such
+modules.
 
-# Language specific APIs
+## Language specific APIs
 
 The language specific APIs are generated with doc comment system of the host
 language, e.g. javadoc, doxygen or docutils. You may find them from the [omorfi
 doxygen pages](apis/html/). Except for bash, that doesn't
 really have a doxygen or real API stuff.
 
+**Rest of the page may be more out of date than the abovementioned
+doxygen manuals**
 
-**Rest of the page may be more out of date than the doxygen manuals**
+- - -
 
-## Python API specialties
+### Python API specialties
 
-I have used a module omorfi, which exposes class Omorfi. The other omorfi
-related stuff lives in the same package, but is not meant for public consumption
-yet. Eventually the access to lexical database and conversions will be used more
-efficiently too. The tokens are currently handled as tuples, but some functions
-also work on strings.
+I have used a module omorfi, which exposes class Omorfi, usable as main entry
+point. You can load it with convenience function though.
 
   * module omorfi:
     * class Omorfi:
