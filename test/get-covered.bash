@@ -299,5 +299,16 @@ if ! test -f "finer.uniq.freqs" ; then
     cp -v finer-data/data/*csv .
 fi
 
+# Turku ONE
+echo turku ono ... 15/$nc
+if ! test -f "turku-one.freqs" ; then
+    if ! test -d turku-one ; then
+        git clone git@github.com:Turku-NLP/turku-one
+    fi
+    cut -f 1 turku-one/data/conll/train.tsv > turku-one.tokens
+    echo count
+    frequency_list turku-one.tokens > turku-one.uniq.freqs
+    cp -v turku-one/data/conll/*.csv .
+fi
 popd
 
