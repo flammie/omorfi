@@ -97,7 +97,7 @@ def main():
             if '\\' in fields['lemma']:
                 # There's no other way around python's broken TSV escaping
                 fields['lemma'] = fields['lemma']\
-                        .replace('\\"', '"').replace('\\\\', '\\')
+                    .replace('\\"', '"').replace('\\\\', '\\')
             tsv_writer.writerow(fields)
             # print(fields['lemma'], fields['homonym'], fields['new_para'],
             #        fields['origin'], sep='\t', file=output)
