@@ -23,7 +23,7 @@ Because editors and OSes sort differently.
 
 import argparse
 import csv
-from sys import exit, stderr
+from sys import exit
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
                     help="print each step to stdout while processing")
     ap.add_argument("--version", "-V", action="version")
-    ap.add_argument("--input", "-i", required=True,dest='infilename',
+    ap.add_argument("--input", "-i", required=True, dest='infilename',
                     metavar="IFILE", help="read dictionary data from IFILE")
     ap.add_argument("--output", "-o", action="store", required=True,
                     dest='outfilename',
@@ -75,7 +75,7 @@ def main():
             if len(tsv_parts) < 2:
                 print("Too few tabs on line, skipping:", tsv_parts)
                 continue
-            lexkey = str(tsv_parts) # simply use data repr as sort key
+            lexkey = str(tsv_parts)  # simply use data repr as sort key
             fields = tsv_parts.keys()
             lexdata[lexkey] = tsv_parts
         if args.verbose:
@@ -86,16 +86,20 @@ def main():
             print("Sorting")
         linecount = 0
         tsv_writer = csv.DictWriter(output, fields, delimiter=args.separator,
-                               quoting=quoting, escapechar='\\', strict=True,
-                               lineterminator='\n')
+                                    quoting=quoting, escapechar='\\',
+                                    strict=True, lineterminator='\n')
         tsv_writer.writeheader()
-        #print("lemma", "homonym", "new_para", "origin", sep='\t', file=output)
+        # print("lemma", "homonym", "new_para", "origin", sep='\t', file=output)
         for (line, fields) in sorted(lexdata.items()):
             linecount += 1
             if args.verbose and ((linecount % 10000) == 0 or linecount == 1):
                 print(linecount, "...", end='\r')
+            if '\\' in fields['lemma']:
+                # There's no other way around python's broken TSV escaping
+                fields['lemma'] = fields['lemma']\
+                        .replace('\\"', '"').replace('\\\\', '\\')
             tsv_writer.writerow(fields)
-            #print(fields['lemma'], fields['homonym'], fields['new_para'],
+            # print(fields['lemma'], fields['homonym'], fields['new_para'],
             #        fields['origin'], sep='\t', file=output)
         if args.verbose:
             print()
