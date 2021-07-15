@@ -1,0 +1,43 @@
+{% set name = "omorfi" %}
+{% set version = "0.0.2" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: 5aa3b97c31038e2d5bb70e7d5aeceedb4501ab86e3dc27f2d5930baaf91a7e41
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - hfst
+    - pip
+    - python
+  run:
+    - hfst
+    - python
+
+test:
+  imports:
+    - omorfi
+    - omorfi.disamparsulate
+    - omorfi.entryguessing
+    - omorfi.formats
+
+about:
+  home: "https://github.com/flammie/omorfi"
+  license: "GNU General Public v3 (GPLv3)"
+  license_family: GPL3
+  license_file: 
+  summary: "Open morphology for Finnish, python bindings"
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - flammie
