@@ -37,10 +37,11 @@ instructions provided by apertium project. In summary:
 
 ```
 wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
-sudo apt-get install cg3 hfst
+sudo apt-get install hfst python3-hfst libhfst-dev cg3
 ```
 
-But check the apertium wiki for updates.
+But also check the apertium wiki for updates e.g. if the package names may
+change.
 
 ### Installing with pip (python only)
 
