@@ -287,6 +287,14 @@ class Token:
             ud_misc = anal.printable_ud_misc()
             depname = anal.printable_udepname()
             dephead = anal.printable_udephead()
+        else:
+            upos = 'X'
+            lemma = self.surf
+            third = upos
+            ud_feats = '_'
+            dephead = '0'
+            depname = 'dep'
+            ud_misc = '_'
         return "\t".join([str(self.pos), self.surf, lemma, upos, third,
                           ud_feats, dephead, depname, "_", ud_misc])
 

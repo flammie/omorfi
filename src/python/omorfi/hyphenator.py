@@ -18,7 +18,11 @@ class Hyphenator:
     An object for omorfi’s hyphenateation.
     """
 
-    def __init__(self, hfstfile: str):
+    def __init__(self):
+        """Initialise empty hyphenator."""
+        self.hyphenator = None
+
+    def load_hyphenator(self, hfstfile: str):
         """Load analysis model from a file.
 
         Args

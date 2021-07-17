@@ -18,7 +18,11 @@ class LabelSegmenter:
     An object for omorfi’s segmentation.
     """
 
-    def __init__(self, hfstfile: str):
+    def __init__(self):
+        """Initialise empty labeller."""
+        self.labelsegmenter = None
+
+    def load_labeller(self, hfstfile: str):
         """Load analysis model from a file.
 
         Args

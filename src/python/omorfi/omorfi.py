@@ -56,23 +56,23 @@ class Omorfi:
         """Construct Omorfi with given verbosity for printouts."""
         self._verbosity = verbosity
         ## analyser model
-        self.analyser = None
+        self.analyser = Analyser()
         ## tokeniser
-        self.tokeniser = None
+        self.tokeniser = Tokeniser()
         ## generator model
-        self.generator = None
+        self.generator = Generator()
         ## lemmatising model
-        self.lemmatiser = None
+        self.lemmatiser = Lemmatiser()
         ## hyphenating model
-        self.hyphenator = None
+        self.hyphenator = Hyphenator()
         ## segmenting model
-        self.segmenter = None
+        self.segmenter = Segmenter()
         ## label-segment model
-        self.labelsegmenter = None
+        self.labelsegmenter = LabelSegmenter()
         ## acceptor
         self.acceptor = None
         ## guesser model
-        self.guesser = None
+        self.guesser = Guesser()
         ## UDPipe model
         self.udpiper = None
         ## UDPipeline object :-(
@@ -120,7 +120,7 @@ class Omorfi:
         Args:
             f: containing single hfst automaton binary.
         """
-        self.labelsegmenter = LabelSegmenter(f)
+        self.labelsegmenter.load_labeller(f)
         self.can_labelsegment = True
 
     def load_segmenter(self, f):
@@ -129,19 +129,24 @@ class Omorfi:
         Args:
             f: containing single hfst automaton binary.
         """
-        self.segmenter = Segmenter(f)
+        self.segmenter.load_segmenter(f)
         self.can_segment = True
 
     def load_analyser(self, f):
-        """Load analysis model from a file.
+        """Load analysis model from a file. Also sets up a basic tokeniser and
+        lemmatiser using the analyser.
 
         Args
             f: containing single hfst automaton binary.
         """
-        self.analyser = Analyser(f)
+        self.analyser.load_analyser(f)
         self.can_analyse = True
         self.can_accept = True
+        self.lemmatiser.use_analyser(self.analyser)
         self.can_lemmatise = True
+        self.tokeniser.use_analyser(self.analyser)
+        self.can_tokenise = True
+        self.guesser.use_analyser(self.analyser)
 
     def load_generator(self, f):
         """Load generation model from a file.
@@ -176,7 +181,7 @@ class Omorfi:
         Args:
             f: containing single hfst automaton binary.
         """
-        self.tokeniser = Lemmatiser(f)
+        self.lemmatiser = Lemmatiser(f)
         self.can_lemmatise = True
 
     def load_hyphenator(self, f):

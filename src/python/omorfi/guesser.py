@@ -86,63 +86,42 @@ class Guesser:
                 self.try_titlecase:
             tcs = s[0].upper() + s[1:].lower()
             if tcs not in trieds:
-                tcres = self.analyser.lookup(tcs)
-                for r in tcres:
-                    mangler = 'Titlecased'
-                    omor = r[0] + \
-                        '[CASECHANGE=TITLECASED]' + \
-                        '[WEIGHT=%f]' % (r[1] + self.PENALTY)
-                    weight = r[1] + self.PENALTY
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
+                tcres = self.analyser.analyse(tcs)
+                for anal in tcres:
+                    anal.manglers.append('Titlecased')
                     anal.analsurf = tcs
+                    anal.weight = anal.weight + self.PENALTY
                     newanals.append(anal)
                 trieds.add(tcs)
         if len(s) > 2 and s[0].isupper() and self.try_detitlecase:
             dts = s[0].lower() + s[1:]
             if dts not in trieds:
-                dtres = self.analyser.lookup(dts)
-                for r in dtres:
-                    mangler = 'dETITLECASED'
-                    omor = r[0] + \
-                        '[CASECHANGE=DETITLECASED]' + \
-                        '[WEIGHT=%f]' % (r[1] + self.PENALTY)
-                    weight = r[1]
-                    if token.pos != 1:
-                        weight += self.PENALTY
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
+                dtres = self.analyser.analyse(dts)
+                for anal in dtres:
+                    anal.manglers.append('dETITLECASED')
                     anal.analsurf = dts
+                    if token.pos != 1:
+                        anal.weight = anal.weight + self.PENALTY
                     newanals.append(anal)
                 trieds.add(dts)
         if not s.isupper() and self.try_uppercase:
             ups = s.upper()
             if ups not in trieds:
-                upres = self.analyser.lookup(ups)
-                for r in upres:
-                    mangler = 'UPPERCASED'
-                    omor = r[0] + \
-                        '[CASECHANGE=UPPERCASED]' + \
-                        '[WEIGHT=%f]' % (r[1] + self.PENALTY)
-                    weight = r[1] + self.PENALTY
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
+                upres = self.analyser.analyse(ups)
+                for anal in upres:
+                    anal.manglers.append('UPPERCASED')
                     anal.analsurf = ups
+                    anal.weight = anal.weight + self.PENALTY
                     newanals.append(anal)
                 trieds.add(ups)
         if not s.islower() and self.try_lowercase:
             lows = s.lower()
             if lows not in trieds:
-                lowres = self.analyser.lookup(lows)
-                for r in lowres:
-                    mangler = 'lowercased'
-                    omor = r[0] +\
-                        '[CASECHANGE=LOWERCASED]' + \
-                        '[WEIGHT=%f]' % (r[1] + self.PENALTY)
-                    weight = r[1] + self.PENALTY
-                    anal = Analysis.fromomor(omor, weight)
-                    anal.manglers.append(mangler)
+                lowres = self.analyser.analyse(lows)
+                for anal in lowres:
+                    anal.manglers.append('lowercased')
                     anal.analsurf = lows
+                    anal.weight = anal.weight + self.PENALTY
                     newanals.append(anal)
                 trieds.add(lows)
         return newanals

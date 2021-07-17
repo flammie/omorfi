@@ -15,7 +15,11 @@ class Generator:
     An object for omorfi’s morphological generation.
     """
 
-    def __init__(self, hfstfile: str):
+    def __init__(self):
+        """Initialise empty generator."""
+        self.generator = None
+
+    def load_generator(self, hfstfile: str):
         """Load analysis model from a file.
 
         Args

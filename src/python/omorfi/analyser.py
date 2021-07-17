@@ -30,19 +30,23 @@ class Analyser:
     #: magic number for penalty weights
     PENALTY = 28021984
 
-    def __init__(self, hfstfile: str):
-        """Load analysis model from a file.
-
-        Args
-            f: containing single hfst automaton binary.
-        """
-        self.analyser = load_hfst(hfstfile)
+    def __init__(self):
+        """Initialise an empty analyser."""
+        self.analyser = None
         self.udpiper = None
         self.udpipeline = None
         self.uderror = None
         self.can_udpipe = False
         self.lexlogprobs = dict()
         self.taglogprobs = dict()
+
+    def load_analyser(self, hfstfile: str):
+        """Load analyser model from a file.
+
+        Args
+            f: containing single hfst automaton binary.
+        """
+        self.analyser = load_hfst(hfstfile)
 
     def load_udpipe(self, filename: str):
         """Load UDPipe model for statistical parsing.
@@ -110,7 +114,7 @@ class Analyser:
                 self.taglogprobs[omor] = log(1 / (omortotal + 1))
 
     def _analyse(self, token: Token):
-        '''Analyse token using HFST and perform recasings.
+        '''Analyse token using HFST, detitle-cases if token is first in sent.
 
         Args:
             token: token to analyse'''

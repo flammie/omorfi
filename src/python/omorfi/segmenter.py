@@ -18,7 +18,11 @@ class Segmenter:
     An object for omorfi’s segmentation.
     """
 
-    def __init__(self, hfstfile: str):
+    def __init__(self):
+        """Initialise empty segmenter."""
+        self.segmenter = None
+
+    def load_segmenter(self, hfstfile: str):
         """Load analysis model from a file.
 
         Args
