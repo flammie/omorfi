@@ -71,8 +71,8 @@ def main():
                    help="split on word boundaries")
     a.add_argument('--no-split-new-words', action="store_false", default=True,
                    dest="split_new_words",
-                   help="split on new word boundaries " +
-                   "(prev. unattested compounds)")
+                   help="split on new word boundaries "
+                   + "(prev. unattested compounds)")
     a.add_argument('--no-split-morphs', action="store_false", default=True,
                    dest="split_morphs",
                    help="split on morph boundaries")

@@ -197,7 +197,10 @@ class Tokeniser:
             False for OOVs, True otherwise. Note, that this is not
         necessarily more efficient than bool(analyse(token))
         '''
-        return self.analyser.accept(token)
+        if self.analyser:
+            return self.analyser.accept(token)
+        else:
+            return False
 
     def tokenise_sentence(self, sentence: str):
         '''tokenise a sentence.
