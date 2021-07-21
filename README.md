@@ -55,6 +55,17 @@ internet (Minimal installation) or compile them from the database (Normal
 installation), the former is recommended for new users and latter for advanced
 users.
 
+### Normal installation (recommended)
+
+```
+./configure
+make
+make install
+```
+
+For further instructions, see [Intallation
+instructions](//flammie.github.io/omorfi/install.html).
+
 ### Minimal installation
 
 ```
@@ -66,16 +77,14 @@ src/bash/omorfi-download.bash
 This will download some of the pre-compiled dictionaries into your current
 working directory.
 
-### Normal installation
+### Python-bindings only
 
-```
-./configure
-make
-make install
-```
+It is possible to install only python bindings via pip or anaconda. The
+dependencies that are not available in pip or anaconda will not be used, e.g.
+syntactic analysis and disambiguation using VISL CG 3.
 
-For further instructions, see [Intallation
-instructions](//flammie.github.io/omorfi/install.html).
+![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
+
 
 ## Usage
 

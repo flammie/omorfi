@@ -49,11 +49,21 @@ Omorfi has preliminary python packaging on pip, it can be used to install
 some of the relevant dependencies and run parts of omorfi without installing
 extra software. This installation lacks tools like spell-checking and
 correction or morphological disambiguation, which require non-python
-dependencies.
+dependencies not found in pip repositories.
 
 ```
 pip install omorfi
 ```
+
+### Installing with anaconda (python only)
+
+Omorfi has preliminary python pacakging on anaconda, it can be used to install
+some of the relevant dependencies and run parts of omorfi without installing
+extra software. This installation lacks tools like spell-checking and correction
+or morphological disambiguation, which require non-python dependencies not found
+in anaconda repositories.
+
+![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
 
 ### Installing dependencies on other systems
 
