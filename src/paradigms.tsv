@@ -1542,7 +1542,7 @@ NUM_YKSI	NUM	NUMERAL	31	None	False	weaken	front	None	None	False	False	yksi	ksi
 PRON_ERÄS	PRON	PRONOUN	41	None	False	strengthen	front	None	None	False	False	s	s
 PRON_HÄN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	hän
 PRON_HÄÄ	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	hää	ä
-PRON_ITSE	PRON	PRONOUN	8	None	False	weaken	front	None	None	False	False	its?e	
+PRON_ITSE	PRON	PRONOUN	8	None	False	weaken	front	None	None	False	False	it.?e	
 PRON_JOKAINEN	PRON	PRONOUN	38	None	False	strengthen	back	None	None	False	False	nen	nen
 PRON_JOKA	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	ka	ka
 PRON_JOKIN	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	kin	kin
