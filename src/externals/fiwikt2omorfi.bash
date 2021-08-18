@@ -112,6 +112,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ut	1	\)Substantiivi_1	/\1NOUN_HOUSUT	/' \
         -e 's/\(y	1	\)Substantiivi_1	/\1NOUN_KÄRRY	/' \
         -e 's/\(ö	1	\)Substantiivi_1	/\1NOUN_MÖMMÖ	/' \
+        -e 's/\(öt	1	\)Substantiivi_1	/\1NOUN_PÖLLÖT	/' \
         -e 's/\(y	1	\)Erisnimi_1	/\1PROPN_KÄRRY	/' \
         -e 's/\(u	1	\)Erisnimi_1	/\1PROPN_ASU	/' \
         -e 's/\(ö	1	\)Erisnimi_1	/\1PROPN_MÖMMÖ	/' \
@@ -119,6 +120,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(o	1	\)Adjektiivi_1A	/\1ADJ_KOLKKO	/' \
         -e 's/\(ö	1	\)Adjektiivi_1A	/\1ADJ_KÖKKÖ	/' \
         -e 's/\(o	1	\)Substantiivi_1A	/\1NOUN_UKKO	/' \
+        -e 's/\(ot	1	\)Substantiivi_1A	/\1NOUN_JOUKOT	/' \
         -e 's/\(u	1	\)Substantiivi_1A	/\1NOUN_TIKKU	/' \
         -e 's/\(ut	1	\)Substantiivi_1A	/\1NOUN_FARKUT	/' \
         -e 's/\(y	1	\)Substantiivi_1A	/\1NOUN_MYRKKY	/' \
@@ -157,7 +159,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(u	1	\)Substantiivi_1F	/\1NOUN_KUITU	/' \
         -e 's/\(y	1	\)Substantiivi_1F	/\1NOUN_VETY	/' \
         -e 's/\(ö	1	\)Substantiivi_1F	/\1NOUN_HÄÄTÖ	/' \
+        -e 's/\(ot	1	\)Substantiivi_1F	/\1NOUN_PIDOT	/' \
         -e 's/\(o	1	\)Erisnimi_1F	/\1PROPN_VETO	/' \
+        -e 's/\(u	1	\)Erisnimi_1F	/\1PROPN_KUITU	/' \
         -e 's/\(o	1	\)Substantiivi_1G	/\1NOUN_RUNKO	/' \
         -e 's/\(u	1	\)Substantiivi_1G	/\1NOUN_VINKU	/' \
         -e 's/\(y	1	\)Substantiivi_1G	/\1NOUN_SÄNKY	/' \
@@ -189,8 +193,10 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(y	1	\)Erisnimi_2	/\1PROPN_VEHKEILY	/' \
         -e 's/\(o	1	\)Erisnimi_2	/\1PROPN_RUIPELO	/' \
         -e 's/\(o	1	\)Substantiivi_3	/\1NOUN_TUOMIO	/' \
+        -e 's/\(u	1	\)Substantiivi_3	/\1NOUN_SEIKKAILU	/' \
         -e 's/\(ö	1	\)Substantiivi_3	/\1NOUN_HÄIRIÖ	/' \
         -e 's/\(e	1	\)Substantiivi_3	/\1NOUN_ZOMBIE	/' \
+        -e 's/\(ot	1	\)Substantiivi_3	/\1NOUN_RAUNIOT	/' \
         -e 's/\(o	1	\)Erisnimi_3	/\1PROPN_TUOMIO	/' \
         -e 's/\(e	1	\)Erisnimi_3	/\1PROPN_ZOMBIE	/' \
         -e 's/\(ö	1	\)Erisnimi_3	/\1PROPN_HÄIRIÖ	/' \
@@ -210,6 +216,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([kptsvdx]	1	\)Adjektiivi_5	/\1ADJ_COOL	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Erisnimi_5	/\1PROPN_TYYLI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Substantiivi_5	/\1NOUN_TYYLI	/' \
+        -e 's/\(kasvit	1	\)Substantiivi_5	/\1NOUN_LASIT	/' \
         -e 's/\([äöyÄÖY].*[cmnrhflrktbpvsxgdšzž]	1	\)Substantiivi_5	/\1NOUN_ZEN	/' \
         -e 's/\([äöyÄÖY].*[cmrnhflrktbpsvxgdšzž]	1	\)Erisnimi_5	/\1PROPN_ZEN	/' \
         -e 's/\([cmnhflrktvbrpsxšgdzž]	1	\)Substantiivi_5	/\1NOUN_PUNK	/' \
@@ -234,7 +241,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Substantiivi_5E	/\1NOUN_KUPPI	/' \
         -e 's/\(i	1	\)Adjektiivi_5F	/\1NOUN_TUHTI	/' \
         -e 's/\(i	1	\)Substantiivi_5G	/\1NOUN_VANKI	/' \
+        -e 's/\(it	1	\)Substantiivi_5G	/\1NOUN_TONGIT	/' \
         -e 's/\(i	1	\)Erisnimi_5G	/\1PROPN_VANKI	/' \
+        -e 's/\(i	1	\)Substantiivi_5H	/\1NOUN_SOINTI	/' \
         -e 's/\(i	1	\)Substantiivi_5F	/\1NOUN_LEHTI	/' \
         -e 's/\(i	1	\)Erisnimi_5F	/\1PROPN_TAUTI	/' \
         -e 's/\(i	1	\)Substantiivi_5I	/\1NOUN_PELTI	/' \
@@ -254,6 +263,8 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Erisnimi_7	/\1PROPN_KIVI	/' \
         -e 's/\([aou].*i	1	\)Substantiivi_7	/\1NOUN_ONNI	/' \
         -e 's/\(i	1	\)Substantiivi_7	/\1NOUN_KIVI	/' \
+        -e 's/\(et	1	\)Substantiivi_7	/\1NOUN_SAKSET	/' \
+        -e 's/\(a	1	\)Substantiivi_7	/\1NOUN_KIRJA	/' \
         -e 's/\(i	1	\)Substantiivi_7B	/\1NOUN_HAPPI	/' \
         -e 's/\([äöy].*i	1	\)Erisnimi_7D	/\1PROPN_KÄKI	/' \
         -e 's/\(i	1	\)Substantiivi_7D	/\1NOUN_NOKI	/' \
@@ -270,6 +281,8 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Substantiivi_7L	/\1NOUN_ARKI	/' \
         -e 's/\(i	1	\)Erisnimi_7L	/\1PROPN_ARKI	/' \
         -e 's/\(e	1	\)Erisnimi_8	/\1PROPN_NALLE	/' \
+        -e 's/\(e	1	\)Substantiivi_2	/\1NOUN_NALLE	/' \
+        -e 's/\(e	1	\)Adjektiivi_8	/\1ADJ_TERVE	/' \
         -e 's/\(e	1	\)Substantiivi_8	/\1NOUN_NALLE	/' \
         -e 's/\(e	1	\)Substantiivi_8A	/\1NOUN_HIKKE	/' \
         -e 's/\(e	1	\)Erisnimi_8A	/\1PROPN_EKKE	/' \
@@ -359,7 +372,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Adjektiivi_10J	/\1ADJ_VIHANTA	/' \
         -e 's/\(a	1	\)Substantiivi_10L	/\1NOUN_OLKA	/' \
         -e 's/\(ä	1	\)Substantiivi_10L	/\1NOUN_NÄLKÄ	/' \
-        -e 's/\(ä	1	\)Adjektiivi_11	/\1NOUN_SÄKKÄRÄ	/' \
+        -e 's/\(a	1	\)Adjektiivi_11	/\1ADJ_AAVA	/' \
+        -e 's/\(ä	1	\)Adjektiivi_11	/\1ADJ_SÄKKÄRÄ	/' \
+        -e 's/\(a	1	\)Substantiivi_5	/\1NOUN_MAKKARA	/' \
         -e 's/\(a	1	\)Substantiivi_11	/\1NOUN_MAKKARA	/' \
         -e 's/\(ä	1	\)Substantiivi_11	/\1NOUN_KÄPÄLÄ	/' \
         -e 's/\(a	1	\)Erisnimi_11	/\1PROPN_MAKKARA	/' \
@@ -370,10 +385,12 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ä	1	\)Adjektiivi_12	/\1ADJ_VIHERIÄ	/' \
         -e 's/\(a	1	\)Substantiivi_12	/\1NOUN_KITARA	/' \
         -e 's/\(ä	1	\)Substantiivi_12	/\1NOUN_HÄKKYRÄ	/' \
+        -e 's/\(at	1	\)Substantiivi_12	/\1NOUN_VARAT	/' \
         -e 's/\(a	1	\)Erisnimi_12	/\1PROPN_KITARA	/' \
         -e 's/\(ä	1	\)Erisnimi_12	/\1PROPN_HÄKKYRÄ	/' \
         -e 's/\(a	1	\)Substantiivi_13	/\1NOUN_KIRJA	/' \
         -e 's/\(ä	1	\)Substantiivi_13	/\1NOUN_SIIVILÄ	/' \
+        -e 's/\(a	1	\)Adjektiivi_13	/\1NOUN_MATALA	/' \
         -e 's/\(a	1	\)Erisnimi_13	/\1PROPN_KIRJA	/' \
         -e 's/\(a	1	\)Erisnimi_14	/\1PROPN_LUSIKKA	/' \
         -e 's/\(a	1	\)Adjektiivi_14A	/\1NOUN_HAILAKKA	/' \
@@ -409,6 +426,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Substantiivi_18	/\1NOUN_MAA	/' \
         -e 's/\(e	1	\)Substantiivi_18	/\1NOUN_TEE	/' \
         -e 's/\(i	1	\)Substantiivi_18	/\1NOUN_HAI	/' \
+        -e 's/\(ai	1	\)Erisnimi_1	/\1PROPN_HAI	/' \
         -e 's/\(o	1	\)Substantiivi_18	/\1NOUN_OOKOO	/' \
         -e 's/\(u	1	\)Substantiivi_18	/\1NOUN_PUU	/' \
         -e 's/\(ut	1	\)Substantiivi_18	/\1NOUN_PUUT	/' \
@@ -451,7 +469,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Erisnimi_26	/\1PROPN_RUUHI	/' \
         -e 's/\(et	1	\)Erisnimi_26	/\1PROPN_SAARET	/' \
         -e 's/\(i	1	\)Adjektiivi_27	/\1ADJ_UUSI	/' \
-        -e 's/\([äöyÄÖY].*i	1	\)Substantiivi_27	/\1PROPN_KÖYSI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Substantiivi_27	/\1NOUN_KÖYSI	/' \
         -e 's/\(i	1	\)Substantiivi_27	/\1NOUN_KAUSI	/' \
         -e 's/\(i	1	\)Substantiivi_27F	/\1NOUN_KAUSI	/' \
         -e 's/\(i	1	\)Erisnimi_27	/\1PROPN_KÖYSI	/' \
@@ -509,7 +527,10 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(nen	1	\)Pronomini_38	/\1PRON_JOKAINEN	/' \
         -e 's/\(nen	1	\)Erisnimi_38	/\1PROPN_AAKKOSTAMINEN	/' \
         -e 's/\(nen	1	\)Adjektiivi_38	/\1ADJ_AAKKOSELLINEN	/' \
+        -e 's/\(nen	1	\)Adjektiivi_18	/\1ADJ_AAKKOSELLINEN	/' \
+        -e 's/\(tty	1	\)Adjektiivi_38	/\1ADJ_YLENNETTY	/' \
         -e 's/\(s	1	\)Numeraali_38	/\1NUM_NELJÄS	/' \
+        -e 's/\(s	1	\)Substantiivi_38	/\1NOUN_VAKUUTUS	/' \
         -e 's/\(s	1	\)Erisnimi_39	/\1PROPN_VAKUUTUS	/' \
         -e 's/\(s	1	\)Adjektiivi_39	/\1ADJ_SYMPPIS	/' \
         -e 's/\(s	1	\)Substantiivi_39	/\1NOUN_VAKUUTUS	/' \
@@ -521,11 +542,13 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(as	1	\)Adjektiivi_41	/\1ADJ_AUTUAS	/' \
         -e 's/\(is	1	\)Adjektiivi_41	/\1ADJ_VALMIS	/' \
         -e 's/\(käs	1	\)Adjektiivi_41	/\1ADJ_TYYLIKÄS	/' \
+        -e 's/\(us	1	\)Substantiivi_41	/\1NOUN_KIIRUS	/' \
         -e 's/\(os	1	\)Substantiivi_41	/\1NOUN_UROS	/' \
         -e 's/\(as	1	\)Substantiivi_41	/\1NOUN_PATSAS	/' \
         -e 's/\(is	1	\)Substantiivi_41	/\1NOUN_RUUMIS	/' \
         -e 's/\(es	1	\)Substantiivi_41	/\1NOUN_KIRVES	/' \
         -e 's/\(äs	1	\)Substantiivi_41	/\1NOUN_ÄYRÄS	/' \
+        -e 's/\(aat	1	\)Substantiivi_41	/\1NOUN_VALJAAT	/' \
         -e 's/\(as	1	\)Erisnimi_41	/\1PROPN_PATSAS	/' \
         -e 's/\(es	1	\)Erisnimi_41	/\1PROPN_ARISTOTELES	/' \
         -e 's/\(äs	1	\)Erisnimi_41	/\1PROPN_ÄYRÄS	/' \
@@ -554,8 +577,10 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(as	1	\)Erisnimi_41G	/\1PROPN_KANGAS	/' \
         -e 's/\(as	1	\)Substantiivi_41H	/\1NOUN_HAMMAS	/' \
         -e 's/\(as	1	\)Substantiivi_41I	/\1NOUN_ALLAS	/' \
+        -e 's/\(as	1	\)Substantiivi_41J	/\1NOUN_KINNAS	/' \
         -e 's/\(äs	1	\)Substantiivi_41J	/\1NOUN_RYNNÄS	/' \
         -e 's/\(as	1	\)Substantiivi_41K	/\1NOUN_PORRAS	/' \
+        -e 's/\(at	1	\)Substantiivi_41K	/\1NOUN_PORTAAT	/' \
         -e 's/\(as	1	\)Erisnimi_41K	/\1PROPN_PORRAS	/' \
         -e 's/\(es	1	\)Substantiivi_42	/\1NOUN_MIES	/' \
         -e 's/\(es	1	\)Erisnimi_42	/\1PROPN_MIES	/' \
@@ -590,6 +615,8 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(e	1	\)Substantiivi_48E	/\1NOUN_TARVE	/' \
         -e 's/\([aou].*e	1	\)Substantiivi_48F	/\1NOUN_LUODE	/' \
         -e 's/\(e	1	\)Substantiivi_48F	/\1NOUN_KIDE	/' \
+        -e 's/\(et	1	\)Substantiivi_48F	/\1NOUN_SUHTEET	/' \
+        -e 's/\(e	1	\)Substantiivi_48H	/\1NOUN_LUMME	/' \
         -e 's/\([aou].*e	1	\)Erisnimi_48F	/\1PROPN_LUODE	/' \
         -e 's/\(e	1	\)Erisnimi_48F	/\1PROPN_KIDE	/' \
         -e 's/\(e	1	\)Erisnimi_48H	/\1PROPN_LUMME	/' \
@@ -612,6 +639,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(r	1	\)Substantiivi_49	/\1NOUN_SIEMEN	/' \
         -e 's/\(n	1	\)Substantiivi_49D	/\1NOUN_SÄEN	/' \
         -e 's/\(l	1	\)Substantiivi_49E	/\1NOUN_TAIVAL	/' \
+        -e 's/\(n	1	\)Substantiivi_49E	/\1NOUN_HEVEN	/' \
         -e 's/\(r	1	\)Substantiivi_49E	/\1NOUN_ÄVÄR	/' \
         -e 's/\(r	1	\)Substantiivi_49F	/\1NOUN_UDAR	/' \
         -e 's/\(r	1	\)Substantiivi_49G	/\1NOUN_PENGER	/' \
@@ -659,6 +687,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ä	1	\)Verbi_54F	/\1VERB_PYYTÄÄ	/' \
         -e 's/\(a	1	\)Verbi_53J	/\1VERB_HUONONTAA	/' \
         -e 's/\(ä	1	\)Verbi_53J	/\1VERB_HIVENTÄÄ	/' \
+        -e 's/\(ä	1	\)Verbi_54	/\1VERB_HIVENTÄÄ	/' \
         -e 's/\(a	1	\)Verbi_54K	/\1VERB_KUHERTAA	/' \
         -e 's/\(ä	1	\)Verbi_54K	/\1VERB_NÄPERTÄÄ	/' \
         -e 's/\(a	1	\)Verbi_54I	/\1VERB_SIVALTAA	/' \
@@ -722,6 +751,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Verbi_64	/\1VERB_TUODA	/' \
         -e 's/\(ä	1	\)Verbi_64	/\1VERB_KÄYDÄ	/' \
         -e 's/\(ä	1	\)Verbi_64	/\1VERB_SYÖDÄ	/' \
+        -e 's/\(ä	1	\)Verbi_65	/\1VERB_KÄYDÄ	/' \
         -e 's/\(a	1	\)Verbi_66	/\1VERB_MARISTA	/' \
         -e 's/\(ä	1	\)Verbi_66	/\1VERB_ÄRISTÄ	/' \
         -e 's/\(a	1	\)Verbi_66E	/\1VERB_HÄVÄISTÄ	/' \
@@ -757,6 +787,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ä	1	\)Verbi_72D	/\1VERB_JYRKETÄ	/' \
         -e 's/\(a	1	\)Verbi_72E	/\1VERB_KAVETA	/' \
         -e 's/\(ä	1	\)Verbi_72F	/\1VERB_PIDETÄ	/' \
+        -e 's/\(ä	1	\)Verbi_72H	/\1VERB_LÄMMETÄ	/' \
         -e 's/\(a	1	\)Verbi_72L	/\1VERB_ROHJETA	/' \
         -e 's/\(ä	1	\)Verbi_72L	/\1VERB_ILJETÄ	/' \
         -e 's/\(a	1	\)Verbi_72J	/\1VERB_INNOTA	/' \
@@ -795,6 +826,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Verbi_74G	/\1VERB_PINGOTA	/' \
         -e 's/\(ä	1	\)Verbi_74G	/\1VERB_ÄNGETÄ	/' \
         -e 's/\(a	1	\)Verbi_74H	/\1VERB_KAMMETA	/' \
+        -e 's/\(a	1	\)Verbi_74J	/\1VERB_KANNETA	/' \
         -e 's/\(a	1	\)Verbi_74K	/\1VERB_IRROTA	/' \
         -e 's/\(a	1	\)Verbi_74L	/\1VERB_HALJETA	/' \
         -e 's/\(ä	1	\)Verbi_74L	/\1VERB_ILJETÄ	/' \
@@ -803,9 +835,11 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ä	1	\)Verbi_75B	/\1VERB_RYÖPYTÄ	/' \
         -e 's/\(a	1	\)Verbi_75C	/\1VERB_PEITOTA	/' \
         -e 's/\(ä	1	\)Verbi_75D	/\1VERB_KERITÄ	/' \
+        -e 's/\(ä	1	\)Verbi_75H	/\1VERB_LÄMMITÄ	/' \
         -e 's/\(a	1	\)Verbi_75I	/\1VERB_AALLOTA	/' \
         -e 's/\(a	1	\)Verbi_75I	/\1VERB_AALLOTA	/' \
         -e 's/\(ä	1	\)Verbi_75I	/\1VERB_HELLITÄ	/' \
+        -e 's/\(ä	1	\)Verbi_75J	/\1VERB_LENNITÄ	/' \
         -e 's/\(a	1	\)Verbi_76F	/\1VERB_TAITAA	/' \
         -e 's/\(ä	1	\)Verbi_76F	/\1VERB_TIETÄÄ	/' \
         -e 's/\(a	1	\)Verbi_77	/\1VERB_VIPAJAA	/' \
