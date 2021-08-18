@@ -23,8 +23,7 @@ Because editors and OSes sort differently.
 
 import argparse
 import csv
-from sys import exit
-
+import sys
 
 def main():
     ap = argparse.ArgumentParser(
@@ -36,10 +35,10 @@ def main():
     ap.add_argument("--verbose", "-v", action="store_true", default=False,
                     help="print each step to stdout while processing")
     ap.add_argument("--version", "-V", action="version")
-    ap.add_argument("--input", "-i", required=True, dest='infilename',
+    ap.add_argument("--input", "-i", required=True, dest="infilename",
                     metavar="IFILE", help="read dictionary data from IFILE")
     ap.add_argument("--output", "-o", action="store", required=True,
-                    dest='outfilename',
+                    dest="outfilename",
                     metavar="OFILE",
                     help="write resulting data to OFILE")
     ap.add_argument("--fields", "-f", action="store", type=int, default=3,
@@ -47,12 +46,14 @@ def main():
     ap.add_argument("--separator", "-s", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
-                    "do not have SEPs")
-    ap.add_argument("--strip", "-S", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
-    ap.add_argument("--ignore-errors", "-I", action="store_true", default=False,
-                    help="silently ignore references to entries missing from master file")
+                    metavar="COMMENT",
+                    help="skip lines starting with COMMENT that"
+                    + "do not have SEPs")
+    ap.add_argument("--strip", "-S", action="store", metavar="STRIP",
+                    help="strip STRIP from fields before using")
+    ap.add_argument("--ignore-errors", "-I", action="store_true",
+                    default=False, help="silently ignore references "
+                    + "to entries missing from master file")
     args = ap.parse_args()
 
     if args.strip == '"' or args.strip == "'":
@@ -63,7 +64,7 @@ def main():
     linecount = 0
     lexdata = dict()
     fields = dict()
-    with open(args.infilename, 'r', newline='') as tsv_file:
+    with open(args.infilename, "r", newline="") as tsv_file:
         if args.verbose:
             print("Reading dictionary from", args.infilename)
         tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
@@ -71,7 +72,7 @@ def main():
         for tsv_parts in tsv_reader:
             linecount += 1
             if args.verbose and ((linecount % 10000) == 0 or linecount == 1):
-                print(linecount, "...", end='\r')
+                print(linecount, "...", end="\r")
             if len(tsv_parts) < 2:
                 print("Too few tabs on line, skipping:", tsv_parts)
                 continue
@@ -86,24 +87,23 @@ def main():
             print("Sorting")
         linecount = 0
         tsv_writer = csv.DictWriter(output, fields, delimiter=args.separator,
-                                    quoting=quoting, escapechar='\\',
-                                    strict=True, lineterminator='\n')
+                                    quoting=quoting, escapechar="\\",
+                                    strict=True, lineterminator="\n")
         tsv_writer.writeheader()
-        # print("lemma", "homonym", "new_para", "origin", sep='\t', file=output)
-        for (line, fields) in sorted(lexdata.items()):
+        for (_, fields) in sorted(lexdata.items()):
             linecount += 1
             if args.verbose and ((linecount % 10000) == 0 or linecount == 1):
-                print(linecount, "...", end='\r')
-            if '\\' in fields['lemma']:
+                print(linecount, "...", end="\r")
+            if "lemma" in fields and "\\" in fields["lemma"]:
                 # There's no other way around python's broken TSV escaping
-                fields['lemma'] = fields['lemma']\
-                    .replace('\\"', '"').replace('\\\\', '\\')
+                fields["lemma"] = fields["lemma"]\
+                    .replace("\\\"", "\"").replace("\\\\", "\\")
             tsv_writer.writerow(fields)
             # print(fields['lemma'], fields['homonym'], fields['new_para'],
             #        fields['origin'], sep='\t', file=output)
         if args.verbose:
             print()
-    exit()
+    sys.exit()
 
 
 if __name__ == "__main__":
