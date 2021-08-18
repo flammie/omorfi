@@ -144,7 +144,7 @@ $GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's/kulkija$/VOIMA/' \
         -e 's/kuollut$/AIVOKUOLLUT/' \
         -e 's/laidun$/LAIDUN/' \
-        -e 's/loppu$/ASU/' \
+        -e 's/loppu$/YLEIS-/' \
         -e 's/toholampi||lovi-av1$/LAMPI/' \
         -e 's/lapsi$/LAPSI/' \
         -e 's/laupias$/AUTUAS/' \
@@ -394,6 +394,7 @@ $GAWK '/<wordlist/,/<\/wordlist/ {print;}' < joukahainen.xml |\
         -e 's/poikkeava||kutiaa$/KUDITA/' |\
     $SED -e 's/ADJ_RUUVI/ADJ_ABNORMI/' \
         -e 's/PROPN_AAKKOSELLINEN/PROPN_AAKKOSTAMINEN/' |\
+    $SED -e "s/'/’/g" |\
     $GAWK 'BEGIN {printf("%s\t%s\t%s\t%s\n", "lemma", "homonym", "new_para",
                        "origin");}
                        {
