@@ -13,7 +13,6 @@ keywords:
   - nlp
   - morphology
   - dictionary
-license: Apache-2.0
 message: If you use this software, please cite it using these metadata.
 repository-code: "https://github.com/flammie/omorfi"
 title: Open morphology of Finnish
@@ -22,7 +21,7 @@ preferred-citation:
   authors:
     - family-names: Pirinen
       given-names: Flammie A
-  title: Development and Use of Computational Morphology of Finnish in the Open Source and Open Science Era: Notes on Experiences with Omorfi Development.
+  title: "Development and Use of Computational Morphology of Finnish in the Open Source and Open Science Era: Notes on Experieces with Omorfi Development."
   type: article
 license: GPL-3.0
 url: https://flammie.github.io/omorfi/
