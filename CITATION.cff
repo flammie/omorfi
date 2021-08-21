@@ -1,0 +1,28 @@
+authors:
+  - family-names: Pirinen
+    given-names: Flammie A
+    orcid: "https://orcid.org/0000-0003-1207-5395"
+cff-version: 1.2.0
+date-released: "2020-11-11"
+identifiers:
+  - description: This is CLARIN identifier
+    type: url
+    value: http://hdl.handle.net/11372/LRT-1992
+keywords:
+  - Finnish
+  - nlp
+  - morphology
+  - dictionary
+license: Apache-2.0
+message: If you use this software, please cite it using these metadata.
+repository-code: "https://github.com/flammie/omorfi"
+title: Open morphology of Finnish
+version: 20201111
+preferred-citation:
+  authors:
+    - family-names: Pirinen
+      given-names: Flammie A
+  title: Development and Use of Computational Morphology of Finnish in the Open Source and Open Science Era: Notes on Experiences with Omorfi Development.
+  type: article
+license: GPL-3.0
+url: https://flammie.github.io/omorfi/
