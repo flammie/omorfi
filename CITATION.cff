@@ -8,6 +8,9 @@ identifiers:
   - description: This is CLARIN identifier
     type: url
     value: http://hdl.handle.net/11372/LRT-1992
+  - description: This is LREC / ISLRN identifier
+    type: url
+    value: http://islrn.org/resources/887-124-499-095-1/
 keywords:
   - Finnish
   - nlp
