@@ -2,7 +2,9 @@
 
 Omorfi can be used with convenience command-line scripts, manually, using
 programming language bindings / APIs, etc. This page gives you few basic
-examples to get going.
+examples to get going. We assume here you have done [full
+installation](install.html), if you did a *python only* installation you can
+only use python examples.
 
 ## Bash-based tools
 
@@ -54,7 +56,7 @@ taloussuhteita maailman kolmanneksi suurimpaan talouteen.
 ```
 
 This newspaper text originates from [Shared task of 1st International Conference
-on Machine Translation](http://statmt.org/wmt16 )
+on Machine Translation](http://statmt.org/wmt16/)
 
 **NB:** The examples below use the extended dictionary, `-X`, for more
 information of this, see the [Notes about lexicon sizes](Smaller-lexicons.html).
