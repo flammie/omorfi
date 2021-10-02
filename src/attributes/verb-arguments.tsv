@@ -1,4 +1,6 @@
 lemma	homonym	argument
+-kertaistaa	VERB	intransitive
+-kertaistua	VERB	intransitive
 aakkostaa	VERB	intransitive
 aallota	VERB	intransitive
 aallottaa	VERB	intransitive
@@ -2082,9 +2084,9 @@ jarrutella	VERB	intransitive
 jarruttaa	VERB	intransitive
 jarruuntua	VERB	intransitive
 jatkaa	VERB	intransitive
+jatko-opiskella	VERB	intransitive
 jatkojalostaa	VERB	intransitive
 jatkokouluttaa	VERB	intransitive
-jatko-opiskella	VERB	intransitive
 jatkua	VERB	intransitive
 jauhaa	VERB	intransitive
 jauhaantua	VERB	intransitive
@@ -2275,8 +2277,8 @@ jäljestää	VERB	intransitive
 jäljitellä	VERB	intransitive
 jäljittää	VERB	intransitive
 jälkeenjäädä	VERB	intransitive
-jälkiasentaa	VERB	intransitive
 jälki-ilmoittautua	VERB	intransitive
+jälkiasentaa	VERB	intransitive
 jälkikylvää	VERB	intransitive
 jälkikypsyttää	VERB	intransitive
 jälkikypsyä	VERB	intransitive
@@ -2841,8 +2843,6 @@ kerskata	VERB	intransitive
 kerskua	VERB	intransitive
 kertaantua	VERB	intransitive
 kertaistaa	VERB	intransitive
--kertaistaa	VERB	intransitive
--kertaistua	VERB	intransitive
 kertautua	VERB	intransitive
 kertoa	VERB	intransitive
 kertoilla	VERB	intransitive
@@ -2857,8 +2857,8 @@ kesiä	VERB	intransitive
 keskenmennä	VERB	intransitive
 keskeyttää	VERB	intransitive
 keskeytyä	VERB	intransitive
-keskiarvottaa	VERB	intransitive
 keski-ikäistyä	VERB	intransitive
+keskiarvottaa	VERB	intransitive
 keskiluokkaistua	VERB	intransitive
 keskittyä	VERB	intransitive
 keskittää	VERB	intransitive
@@ -6015,12 +6015,12 @@ pakkaantua	VERB	intransitive
 pakkauttaa	VERB	intransitive
 pakkautua	VERB	intransitive
 pakkeloida	VERB	intransitive
+pakko-ottaa	VERB	intransitive
 pakkojuottaa	VERB	intransitive
 pakkolaskeutua	VERB	intransitive
 pakkolomauttaa	VERB	intransitive
 pakkolunastaa	VERB	intransitive
 pakkoluovuttaa	VERB	intransitive
-pakko-ottaa	VERB	intransitive
 pakkosiirtää	VERB	intransitive
 pakkosyöttää	VERB	intransitive
 paklata	VERB	intransitive
@@ -6458,7 +6458,6 @@ pohjautua	VERB	intransitive
 pohjittaa	VERB	intransitive
 pohjustaa	VERB	intransitive
 pohtia	VERB	intransitive
-poi’ittaa	VERB	intransitive
 poijuttaa	VERB	intransitive
 poiketa	VERB	intransitive
 poikia	VERB	intransitive
@@ -6475,6 +6474,7 @@ poissulkea	VERB	intransitive
 poistaa	VERB	intransitive
 poistattaa	VERB	intransitive
 poistua	VERB	intransitive
+poi’ittaa	VERB	intransitive
 pokata	VERB	intransitive
 pokata	VERB2	intransitive
 pokkailla	VERB	intransitive
@@ -7231,7 +7231,6 @@ rehkiä	VERB	intransitive
 rehottaa	VERB	intransitive
 rehustaa	VERB	intransitive
 rehvastella	VERB	intransitive
-rei’ittää	VERB	intransitive
 reikiintyä	VERB	intransitive
 reilata	VERB	intransitive
 reinkarnoitua	VERB	intransitive
@@ -7244,6 +7243,7 @@ reistailla	VERB	intransitive
 reistata	VERB	intransitive
 reitittää	VERB	intransitive
 reivata	VERB	intransitive
+rei’ittää	VERB	intransitive
 rekattaa	VERB	intransitive
 rekisteröidä	VERB	intransitive
 reklamoida	VERB	intransitive
@@ -7823,7 +7823,6 @@ sairastua	VERB	intransitive
 sairastuttaa	VERB	intransitive
 saivarrella	VERB	intransitive
 sakata	VERB	intransitive
-šakata	VERB	intransitive
 sakeuttaa	VERB	intransitive
 sakeutua	VERB	intransitive
 sakkaantua	VERB	intransitive
@@ -7854,7 +7853,6 @@ samankaltaistaa	VERB	intransitive
 samankaltaistua	VERB	intransitive
 samanlaistaa	VERB	intransitive
 samanlaistua	VERB	intransitive
-šamanoida	VERB	intransitive
 samansuuntaistaa	VERB	intransitive
 samansuuntaistua	VERB	intransitive
 samastaa	VERB	intransitive
@@ -7877,7 +7875,6 @@ samoilla	VERB	intransitive
 samota	VERB	intransitive
 samplata	VERB	intransitive
 samponoida	VERB	intransitive
-šamponoida	VERB	intransitive
 sanailla	VERB	intransitive
 sanallistaa	VERB	intransitive
 sanastaa	VERB	intransitive
@@ -8262,7 +8259,6 @@ sokaista	VERB	intransitive
 sokaistua	VERB	intransitive
 sokeentua	VERB	intransitive
 sokeerata	VERB	intransitive
-šokeerata	VERB	intransitive
 sokeltaa	VERB	intransitive
 sokeristua	VERB	intransitive
 sokerisuolata	VERB	intransitive
@@ -8959,10 +8955,10 @@ tarrautua	VERB	intransitive
 tarttua	VERB	intransitive
 tartuttaa	VERB	intransitive
 tarvita	VERB	intransitive
-tasaannuttaa	VERB	intransitive
-tasaantua	VERB	intransitive
 tasa-arvoistaa	VERB	intransitive
 tasa-arvoistua	VERB	intransitive
+tasaannuttaa	VERB	intransitive
+tasaantua	VERB	intransitive
 tasapainoilla	VERB	intransitive
 tasapainotella	VERB	intransitive
 tasapainottaa	VERB	intransitive
@@ -10721,6 +10717,7 @@ yletä	VERB	intransitive
 ylevöidä	VERB	intransitive
 ylevöittää	VERB	intransitive
 ylevöityä	VERB	intransitive
+yli-ikäistyä	VERB	intransitive
 yliarvioida	VERB	intransitive
 yliarvostaa	VERB	intransitive
 ylibuukata	VERB	intransitive
@@ -10728,7 +10725,6 @@ ylideterminoida	VERB	intransitive
 ylidramatisoida	VERB	intransitive
 ylihedelmöittää	VERB	intransitive
 ylihinnoitella	VERB	intransitive
-yli-ikäistyä	VERB	intransitive
 ylikansoittua	VERB	intransitive
 ylikeittää	VERB	intransitive
 ylikellottaa	VERB	intransitive
@@ -10877,3 +10873,7 @@ zoomata	VERB	intransitive
 örähtää	VERB	intransitive
 öykkäröidä	VERB	intransitive
 öykätä	VERB	intransitive
+šakata	VERB	intransitive
+šamanoida	VERB	intransitive
+šamponoida	VERB	intransitive
+šokeerata	VERB	intransitive

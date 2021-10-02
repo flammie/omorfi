@@ -1,4 +1,35 @@
 lemma	homonym	lex
+-ehtoisesti	ADV	dersti
+-eleisesti	ADV	dersti
+-hakuisesti	ADV	dersti
+-kertaisesti	ADV	dersti
+-kohtaisesti	ADV	dersti
+-kätisesti	ADV	dersti
+-mielisesti	ADV	dersti
+-omaisesti	ADV	dersti
+-painoisesti	ADV	dersti
+-painotteisesti	ADV	dersti
+-pohjaisesti	ADV	dersti
+-puoleisesti	ADV	dersti
+-sanaisesti	ADV	dersti
+-selkäisesti	ADV	dersti
+-silmäisesti	ADV	dersti
+-syntyisesti	ADV	dersti
+-säätöisesti	ADV	dersti
+-tehoisesti	ADV	dersti
+-tekoisesti	ADV	dersti
+-tunteisesti	ADV	dersti
+-tuntoisesti	ADV	dersti
+-uskoisesti	ADV	dersti
+-vaikutteisesti	ADV	dersti
+-vaistoisesti	ADV	dersti
+-valtaisesti	ADV	dersti
+-varaisesti	ADV	dersti
+-vastuisesti	ADV	dersti
+-viivaisesti	ADV	dersti
+-voimaisesti	ADV	dersti
+-voittoisesti	ADV	dersti
+-äänisesti	ADV	dersti
 aakkosellisesti	ADV	dersti
 aakkosittain	ADV	derttain
 aalloittain	ADV	derttain
@@ -240,7 +271,6 @@ ehdottomasti	ADV	dersti
 eheästi	ADV	dersti
 ehjästi	ADV	dersti
 ehommin	ADV	Comp
--ehtoisesti	ADV	dersti
 ei-leksikaalisesti	ADV	dersti
 ekologisesti	ADV	dersti
 ekonometrisesti	ADV	dersti
@@ -258,7 +288,6 @@ elastisesti	ADV	dersti
 eleettömästi	ADV	dersti
 elegantisti	ADV	dersti
 elegisesti	ADV	dersti
--eleisesti	ADV	dersti
 elektrolyyttisesti	ADV	dersti
 elektronisesti	ADV	dersti
 elementaarisesti	ADV	dersti
@@ -508,7 +537,6 @@ haitattomasti	ADV	dersti
 hajamielisesti	ADV	dersti
 hajanaisesti	ADV	dersti
 hajuttomasti	ADV	dersti
--hakuisesti	ADV	dersti
 hallinnollisesti	ADV	dersti
 hallitusti	ADV	dersti
 halpamaisesti	ADV	dersti
@@ -889,7 +917,6 @@ kepulisti	ADV	dersti
 kerkeästi	ADV	dersti
 kernaasti	ADV	dersti
 kerroksittain	ADV	derttain
--kertaisesti	ADV	dersti
 kertakaikkisesti	ADV	dersti
 kesemmäksi	ADV	Comp
 kesemmälle	ADV	Comp
@@ -988,7 +1015,6 @@ klassisesti	ADV	dersti
 kliinisesti	ADV	dersti
 kodikkaasti	ADV	dersti
 kohdittain	ADV	derttain
--kohtaisesti	ADV	dersti
 kohtalaisesti	ADV	dersti
 kohtalokkaasti	ADV	dersti
 kohtauksittain	ADV	derttain
@@ -1102,8 +1128,8 @@ kymmenittäin	ADV	derttain
 kypsästi	ADV	dersti
 kysyvästi	ADV	dersti
 kyynisesti	ADV	dersti
-käheästi	ADV	dersti
 käheä-äänisesti	ADV	dersti
+käheästi	ADV	dersti
 kärjekkäästi	ADV	dersti
 kärkevästi	ADV	dersti
 kärkkäästi	ADV	dersti
@@ -1115,7 +1141,6 @@ käsitteellisesti	ADV	dersti
 käsittämättömästi	ADV	dersti
 käsivaraisesti	ADV	dersti
 kätevästi	ADV	dersti
--kätisesti	ADV	dersti
 käytännöllisesti	ADV	dersti
 käyvästi	ADV	dersti
 käänteentekevästi	ADV	dersti
@@ -1378,7 +1403,6 @@ mielettömästi	ADV	dersti
 mielevästi	ADV	dersti
 mielikuvituksekkaasti	ADV	dersti
 mielipuolisesti	ADV	dersti
--mielisesti	ADV	dersti
 mielivaltaisesti	ADV	dersti
 miellyttävästi	ADV	dersti
 mieluimmin	ADV	Superl
@@ -1556,7 +1580,6 @@ oletettavasti	ADV	dersti
 oma-aloitteisesti	ADV	dersti
 omaehtoisesti	ADV	dersti
 omahyväisesti	ADV	dersti
--omaisesti	ADV	dersti
 omakohtaisesti	ADV	dersti
 omakätisesti	ADV	dersti
 omalaatuisesti	ADV	dersti
@@ -1615,9 +1638,7 @@ paikallisesti	ADV	dersti
 paikkakunnittain	ADV	derttain
 paikoittain	ADV	derttain
 painavasti	ADV	dersti
--painoisesti	ADV	dersti
 painokkaasti	ADV	dersti
--painotteisesti	ADV	dersti
 pakanasti	ADV	dersti
 pakottomasti	ADV	dersti
 paksusti	ADV	dersti
@@ -1746,7 +1767,6 @@ pitkäveteisesti	ADV	dersti
 piukasti	ADV	dersti
 plastisesti	ADV	dersti
 pneumaattisesti	ADV	dersti
--pohjaisesti	ADV	dersti
 pohjalaisittain	ADV	derttain
 pohjattomasti	ADV	dersti
 pohjemmaksi	ADV	Comp
@@ -1808,7 +1828,6 @@ puisevasti	ADV	dersti
 pulloittain	ADV	derttain
 pulskasti	ADV	dersti
 puoleensavetävästi	ADV	dersti
--puoleisesti	ADV	dersti
 puoliautomaattisesti	ADV	dersti
 puolihuolimattomasti	ADV	dersti
 puolikuukausittain	ADV	derttain
@@ -2034,7 +2053,6 @@ samankaltaisesti	ADV	dersti
 samankeskisesti	ADV	dersti
 samansuuntaisesti	ADV	dersti
 samperisti	ADV	dersti
--sanaisesti	ADV	dersti
 sanallisesti	ADV	dersti
 sananmukaisesti	ADV	dersti
 sanatarkasti	ADV	dersti
@@ -2076,7 +2094,6 @@ selittäin	ADV	derttain
 selittämättömästi	ADV	dersti
 selkeämmin	ADV	Comp
 selkeästi	ADV	dersti
--selkäisesti	ADV	dersti
 selkärangattomasti	ADV	dersti
 selvimmin	ADV	Superl
 selväkielisesti	ADV	dersti
@@ -2109,7 +2126,6 @@ sileästi	ADV	dersti
 silmiinpistävästi	ADV	dersti
 silminnähtävästi	ADV	dersti
 silmittömästi	ADV	dersti
--silmäisesti	ADV	dersti
 silmämääräisesti	ADV	dersti
 siloisesti	ADV	dersti
 simppelisti	ADV	dersti
@@ -2277,7 +2293,6 @@ synnillisesti	ADV	dersti
 synnynnäisesti	ADV	dersti
 synteettisesti	ADV	dersti
 syntisesti	ADV	dersti
--syntyisesti	ADV	dersti
 syrjemmäksi	ADV	Comp
 syrjemmälle	ADV	Comp
 syrjemmällä	ADV	Comp
@@ -2322,7 +2337,6 @@ säännönmukaisesti	ADV	dersti
 säännöttömästi	ADV	dersti
 säästeliäästi	ADV	dersti
 säästäväisesti	ADV	dersti
--säätöisesti	ADV	dersti
 söpösti	ADV	dersti
 söötisti	ADV	dersti
 taaemma	ADV	Comp
@@ -2425,13 +2439,11 @@ teatraalisesti	ADV	dersti
 teennäisesti	ADV	dersti
 teeskentelemättömästi	ADV	dersti
 tehdasmaisesti	ADV	dersti
--tehoisesti	ADV	dersti
 tehokkaasti	ADV	dersti
 tehottomasti	ADV	dersti
 teikäläisittäin	ADV	derttain
 teknisesti	ADV	dersti
 tekohurskaasti	ADV	dersti
--tekoisesti	ADV	dersti
 tekopyhästi	ADV	dersti
 teleskooppisesti	ADV	dersti
 teollisesti	ADV	dersti
@@ -2441,13 +2453,13 @@ terhakkaasti	ADV	dersti
 terveellisesti	ADV	dersti
 terveesti	ADV	dersti
 tervehenkisesti	ADV	dersti
+terävä-älyisesti	ADV	dersti
 teräväjärkisesti	ADV	dersti
 teräväkatseisesti	ADV	dersti
 teräväkielisesti	ADV	dersti
 terävänäköisesti	ADV	dersti
 teräväsanaisesti	ADV	dersti
 terävästi	ADV	dersti
-terävä-älyisesti	ADV	dersti
 tiedottomasti	ADV	dersti
 tieteellisesti	ADV	dersti
 tietoisemmin	ADV	Comp
@@ -2540,8 +2552,6 @@ tunteellisesti	ADV	dersti
 tunteenomaisesti	ADV	dersti
 tunteettomasti	ADV	dersti
 tunteikkaasti	ADV	dersti
--tunteisesti	ADV	dersti
--tuntoisesti	ADV	dersti
 tuntuisesti	ADV	dersti
 tuntuvasti	ADV	dersti
 tuonnemma	ADV	Demonstrative|Comp
@@ -2682,7 +2692,6 @@ useasti	ADV	dersti|Quantor
 useimmin	ADV	Quantor|Superl
 useimmiten	ADV	Quantor|Superl
 uskaliaasti	ADV	dersti
--uskoisesti	ADV	dersti
 uskollisesti	ADV	dersti
 uskomattomasti	ADV	dersti
 uskonnollisesti	ADV	dersti
@@ -2707,9 +2716,7 @@ vaikeasti	ADV	dersti
 vaikeatajuisesti	ADV	dersti
 vaikeiten	ADV	Superl
 vaikuttavasti	ADV	dersti
--vaikutteisesti	ADV	dersti
 vaillinaisesti	ADV	dersti
--vaistoisesti	ADV	dersti
 vaistomaisesti	ADV	dersti
 vaistonvaraisesti	ADV	dersti
 vaisusti	ADV	dersti
@@ -2741,7 +2748,6 @@ valoisasti	ADV	dersti
 valokuvauksellisesti	ADV	dersti
 valppaasti	ADV	dersti
 valtaisasti	ADV	dersti
--valtaisesti	ADV	dersti
 valtakunnallisesti	ADV	dersti
 valtavasti	ADV	dersti
 valtioviisaasti	ADV	dersti
@@ -2755,7 +2761,6 @@ vapaaehtoisesti	ADV	dersti
 vapaamielisesti	ADV	dersti
 vapaamuotoisesti	ADV	dersti
 vapaasti	ADV	dersti
--varaisesti	ADV	dersti
 varakkaasti	ADV	dersti
 varauksellisesti	ADV	dersti
 varauksettomasti	ADV	dersti
@@ -2780,7 +2785,6 @@ vastakkaisesti	ADV	dersti
 vastavuoroisesti	ADV	dersti
 vastenmielisesti	ADV	dersti
 vastentahtoisesti	ADV	dersti
--vastuisesti	ADV	dersti
 vastuksellisesti	ADV	dersti
 vastustamattomasti	ADV	dersti
 vastustushaluisesti	ADV	dersti
@@ -2835,7 +2839,6 @@ viisaimmillaan	ADV	Superl
 viistosti	ADV	dersti
 viitseliäästi	ADV	dersti
 viitteellisesti	ADV	dersti
--viivaisesti	ADV	dersti
 viivasuorasti	ADV	dersti
 vikkelästi	ADV	dersti
 viktoriaanisesti	ADV	dersti
@@ -2868,7 +2871,6 @@ vitusti	ADV	dersti
 viuhkamaisesti	ADV	dersti
 vivahteettomasti	ADV	dersti
 vivahteikkaasti	ADV	dersti
--voimaisesti	ADV	dersti
 voimakkaasti	ADV	dersti
 voimallisesti	ADV	dersti
 voimaperäisesti	ADV	dersti
@@ -2878,7 +2880,6 @@ voitollisesti	ADV	dersti
 voitonriemuisesti	ADV	dersti
 voitonvarmasti	ADV	dersti
 voittoisasti	ADV	dersti
--voittoisesti	ADV	dersti
 voittopuolisesti	ADV	dersti
 vuodenajoittain	ADV	derttain
 vuolaasti	ADV	dersti
@@ -3030,7 +3031,6 @@ ytimekkäästi	ADV	dersti
 äänekkäästi	ADV	dersti
 äänenpitävästi	ADV	dersti
 äänettömästi	ADV	dersti
--äänisesti	ADV	dersti
 äärettömästi	ADV	dersti
 äärimmilleen	ADV	Superl
 äärimmillään	ADV	Superl

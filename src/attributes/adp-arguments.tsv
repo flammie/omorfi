@@ -34,7 +34,6 @@ edestä	ADP	genitive
 editse	ADP	genitive
 edustalla	ADP	genitive
 ennen	ADP	partitive
-ennen	ADP	partitive
 eteen	ADP	genitive
 eteläpuolitse	ADP	genitive
 etupuolitse	ADP	genitive
@@ -51,11 +50,9 @@ huostaan	ADP	genitive
 huostassa	ADP	genitive
 huostasta	ADP	genitive
 hyväksi	ADP	genitive
-hyväksi	ADP	genitive
 hännille	ADP	genitive
 hännillä	ADP	genitive
 hänniltä	ADP	genitive
-ilman	ADP	partitive
 ilman	ADP	partitive
 itäpuolitse	ADP	genitive
 jaloissa	ADP	genitive
@@ -85,7 +82,6 @@ kautta	ADP	genitive
 keinoin	ADP	genitive
 kera	ADP	genitive
 keralla	ADP	genitive
-keralla	ADP	genitive
 keralle	ADP	genitive
 keskeen	ADP	genitive
 keskelle	ADP	genitive
@@ -104,9 +100,8 @@ kohdalla	ADP	genitive
 kohdalle	ADP	genitive
 kohdalta	ADP	genitive
 kohden	ADP	partitive
-kohtaan	ADP	partitive
 kohtaan	ADP	genitive
-kohti	ADP	partitive
+kohtaan	ADP	partitive
 kohti	ADP	partitive
 koskien	ADP	partitive
 kourissa	ADP	genitive
@@ -142,12 +137,10 @@ lomassa	ADP	genitive
 lomasta	ADP	genitive
 lomitse	ADP	genitive
 loppupuolella	ADP	genitive
-loppupuolella	ADP	genitive
 lopulla	ADP	genitive
 lukien	ADP	genitive
 lukuunottamatta	ADP	partitive
 luo	ADP	genitive
-luokse	ADP	genitive
 luokse	ADP	genitive
 luona	ADP	genitive
 luota	ADP	genitive
@@ -181,7 +174,6 @@ myöten	ADP	partitive
 myötä	ADP	partitive
 nenitse	ADP	genitive
 nojalla	ADP	genitive
-nojalla	ADP	genitive
 nurkitse	ADP	genitive
 nähden	ADP	illative
 näkökulmasta	ADP	genitive
@@ -193,11 +185,9 @@ ohitse	ADP	genitive
 osalta	ADP	genitive
 ottamatta	ADP	partitive
 paikalla	ADP	genitive
-paikalla	ADP	genitive
 paikalle	ADP	genitive
 paikalta	ADP	genitive
 paitsi	ADP	partitive
-pariin	ADP	genitive
 pariin	ADP	genitive
 parissa	ADP	genitive
 parista	ADP	genitive
@@ -227,7 +217,6 @@ puolella	ADP	genitive
 puolelle	ADP	genitive
 puolelta	ADP	genitive
 puolessa	ADP	genitive
-puolesta	ADP	genitive
 puolesta	ADP	genitive
 puolitse	ADP	genitive
 päin	ADP	partitive
@@ -282,10 +271,7 @@ takia	ADP	genitive
 tapauksessa	ADP	inessive
 tarpeeksi	ADP	partitive
 tasalla	ADP	genitive
-tasalla	ADP	genitive
 tasalle	ADP	genitive
-tasalle	ADP	genitive
-tasalta	ADP	genitive
 tasalta	ADP	genitive
 tautta	ADP	genitive
 tavalla	ADP	genitive
@@ -293,7 +279,6 @@ tielle	ADP	genitive
 tienoilla	ADP	genitive
 tieten	ADP	partitive
 tiimoilta	ADP	genitive
-tilalle	ADP	genitive
 tilalle	ADP	genitive
 toimesta	ADP	genitive
 tuella	ADP	genitive
@@ -339,7 +324,6 @@ verran	ADP	genitive
 verrattuna	ADP	illative
 viereen	ADP	genitive
 vierelle	ADP	genitive
-vierelle	ADP	genitive
 vierellä	ADP	genitive
 viereltä	ADP	genitive
 vieressä	ADP	genitive
@@ -350,12 +334,10 @@ voimasta	ADP	genitive
 vuoksi	ADP	genitive
 väliin	ADP	genitive
 välille	ADP	genitive
-välille	ADP	genitive
 välillä	ADP	genitive
 väliltä	ADP	genitive
 välissä	ADP	genitive
 välistä	ADP	genitive
-välitse	ADP	genitive
 välitse	ADP	genitive
 välttämättä	ADP	partitive
 vängällä	ADP	genitive

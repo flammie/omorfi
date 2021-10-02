@@ -1,4 +1,35 @@
 lemma	homonym	clitics
+-ehtoisesti	ADV	opt
+-eleisesti	ADV	opt
+-hakuisesti	ADV	opt
+-kertaisesti	ADV	opt
+-kohtaisesti	ADV	opt
+-kätisesti	ADV	opt
+-mielisesti	ADV	opt
+-omaisesti	ADV	opt
+-painoisesti	ADV	opt
+-painotteisesti	ADV	opt
+-pohjaisesti	ADV	opt
+-puoleisesti	ADV	opt
+-sanaisesti	ADV	opt
+-selkäisesti	ADV	opt
+-silmäisesti	ADV	opt
+-syntyisesti	ADV	opt
+-säätöisesti	ADV	opt
+-tehoisesti	ADV	opt
+-tekoisesti	ADV	opt
+-tunteisesti	ADV	opt
+-tuntoisesti	ADV	opt
+-uskoisesti	ADV	opt
+-vaikutteisesti	ADV	opt
+-vaistoisesti	ADV	opt
+-valtaisesti	ADV	opt
+-varaisesti	ADV	opt
+-vastuisesti	ADV	opt
+-viivaisesti	ADV	opt
+-voimaisesti	ADV	opt
+-voittoisesti	ADV	opt
+-äänisesti	ADV	opt
 aakkosellisesti	ADV	opt
 aakkosittain	ADV	opt
 aalloittain	ADV	opt
@@ -216,7 +247,6 @@ ehdollisesti	ADV	opt
 ehdottomasti	ADV	opt
 eheästi	ADV	opt
 ehjästi	ADV	opt
--ehtoisesti	ADV	opt
 ei-leksikaalisesti	ADV	opt
 ekologisesti	ADV	opt
 ekonometrisesti	ADV	opt
@@ -234,7 +264,6 @@ elastisesti	ADV	opt
 eleettömästi	ADV	opt
 elegantisti	ADV	opt
 elegisesti	ADV	opt
--eleisesti	ADV	opt
 elektrolyyttisesti	ADV	opt
 elektronisesti	ADV	opt
 elementaarisesti	ADV	opt
@@ -464,7 +493,6 @@ haitattomasti	ADV	opt
 hajamielisesti	ADV	opt
 hajanaisesti	ADV	opt
 hajuttomasti	ADV	opt
--hakuisesti	ADV	opt
 hallinnollisesti	ADV	opt
 hallitusti	ADV	opt
 halpamaisesti	ADV	opt
@@ -809,7 +837,6 @@ kepulisti	ADV	opt
 kerkeästi	ADV	opt
 kernaasti	ADV	opt
 kerroksittain	ADV	opt
--kertaisesti	ADV	opt
 kertakaikkisesti	ADV	opt
 keskeisesti	ADV	opt
 keskihakuisesti	ADV	opt
@@ -884,7 +911,6 @@ klassisesti	ADV	opt
 kliinisesti	ADV	opt
 kodikkaasti	ADV	opt
 kohdittain	ADV	opt
--kohtaisesti	ADV	opt
 kohtalaisesti	ADV	opt
 kohtalokkaasti	ADV	opt
 kohtauksittain	ADV	opt
@@ -1001,8 +1027,8 @@ kymmenittäin	ADV	opt
 kypsästi	ADV	opt
 kysyvästi	ADV	opt
 kyynisesti	ADV	opt
-käheästi	ADV	opt
 käheä-äänisesti	ADV	opt
+käheästi	ADV	opt
 kärjekkäästi	ADV	opt
 kärkevästi	ADV	opt
 kärkkäästi	ADV	opt
@@ -1015,7 +1041,6 @@ käsitteellisesti	ADV	opt
 käsittämättömästi	ADV	opt
 käsivaraisesti	ADV	opt
 kätevästi	ADV	opt
--kätisesti	ADV	opt
 käytännöllisesti	ADV	opt
 käyvästi	ADV	opt
 käänteentekevästi	ADV	opt
@@ -1233,7 +1258,6 @@ mielettömästi	ADV	opt
 mielevästi	ADV	opt
 mielikuvituksekkaasti	ADV	opt
 mielipuolisesti	ADV	opt
--mielisesti	ADV	opt
 mielivaltaisesti	ADV	opt
 miellyttävästi	ADV	opt
 mieluisasti	ADV	opt
@@ -1408,7 +1432,6 @@ oletettavasti	ADV	opt
 oma-aloitteisesti	ADV	opt
 omaehtoisesti	ADV	opt
 omahyväisesti	ADV	opt
--omaisesti	ADV	opt
 omakohtaisesti	ADV	opt
 omakätisesti	ADV	opt
 omalaatuisesti	ADV	opt
@@ -1460,9 +1483,7 @@ paikallisesti	ADV	opt
 paikkakunnittain	ADV	opt
 paikoittain	ADV	opt
 painavasti	ADV	opt
--painoisesti	ADV	opt
 painokkaasti	ADV	opt
--painotteisesti	ADV	opt
 paitsi	ADV	opt
 pakanasti	ADV	opt
 pakottomasti	ADV	opt
@@ -1559,7 +1580,6 @@ pitkäveteisesti	ADV	opt
 piukasti	ADV	opt
 plastisesti	ADV	opt
 pneumaattisesti	ADV	opt
--pohjaisesti	ADV	opt
 pohjalaisittain	ADV	opt
 pohjattomasti	ADV	opt
 poikamaisesti	ADV	opt
@@ -1606,7 +1626,6 @@ puitteissa	ADP	opt
 pulloittain	ADV	opt
 pulskasti	ADV	opt
 puoleensavetävästi	ADV	opt
--puoleisesti	ADV	opt
 puoliautomaattisesti	ADV	opt
 puolihuolimattomasti	ADV	opt
 puolikuukausittain	ADV	opt
@@ -1797,7 +1816,6 @@ samankaltaisesti	ADV	opt
 samankeskisesti	ADV	opt
 samansuuntaisesti	ADV	opt
 samperisti	ADV	opt
--sanaisesti	ADV	opt
 sanallisesti	ADV	opt
 sananmukaisesti	ADV	opt
 sanatarkasti	ADV	opt
@@ -1833,7 +1851,6 @@ selektiivisesti	ADV	opt
 selittäin	ADV	opt
 selittämättömästi	ADV	opt
 selkeästi	ADV	opt
--selkäisesti	ADV	opt
 selkärangattomasti	ADV	opt
 selväkielisesti	ADV	opt
 selvänäköisesti	ADV	opt
@@ -1869,7 +1886,6 @@ silloin	ADV	opt
 silmiinpistävästi	ADV	opt
 silminnähtävästi	ADV	opt
 silmittömästi	ADV	opt
--silmäisesti	ADV	opt
 silmämääräisesti	ADV	opt
 siloisesti	ADV	opt
 simppelisti	ADV	opt
@@ -2000,7 +2016,6 @@ synnillisesti	ADV	opt
 synnynnäisesti	ADV	opt
 synteettisesti	ADV	opt
 syntisesti	ADV	opt
--syntyisesti	ADV	opt
 syrjittäin	ADV	opt
 systeemisesti	ADV	opt
 systemaattisesti	ADV	opt
@@ -2027,7 +2042,6 @@ säännönmukaisesti	ADV	opt
 säännöttömästi	ADV	opt
 säästeliäästi	ADV	opt
 säästäväisesti	ADV	opt
--säätöisesti	ADV	opt
 söpösti	ADV	opt
 söötisti	ADV	opt
 taajasti	ADV	opt
@@ -2106,13 +2120,11 @@ teatraalisesti	ADV	opt
 teennäisesti	ADV	opt
 teeskentelemättömästi	ADV	opt
 tehdasmaisesti	ADV	opt
--tehoisesti	ADV	opt
 tehokkaasti	ADV	opt
 tehottomasti	ADV	opt
 teikäläisittäin	ADV	opt
 teknisesti	ADV	opt
 tekohurskaasti	ADV	opt
--tekoisesti	ADV	opt
 tekopyhästi	ADV	opt
 teleskooppisesti	ADV	opt
 teollisesti	ADV	opt
@@ -2122,13 +2134,13 @@ terhakkaasti	ADV	opt
 terveellisesti	ADV	opt
 terveesti	ADV	opt
 tervehenkisesti	ADV	opt
+terävä-älyisesti	ADV	opt
 teräväjärkisesti	ADV	opt
 teräväkatseisesti	ADV	opt
 teräväkielisesti	ADV	opt
 terävänäköisesti	ADV	opt
 teräväsanaisesti	ADV	opt
 terävästi	ADV	opt
-terävä-älyisesti	ADV	opt
 tiedottomasti	ADV	opt
 tieteellisesti	ADV	opt
 tietoisesti	ADV	opt
@@ -2222,8 +2234,6 @@ tunteellisesti	ADV	opt
 tunteenomaisesti	ADV	opt
 tunteettomasti	ADV	opt
 tunteikkaasti	ADV	opt
--tunteisesti	ADV	opt
--tuntoisesti	ADV	opt
 tuntuisesti	ADV	opt
 tuntuvasti	ADV	opt
 tuopeittain	ADV	opt
@@ -2328,7 +2338,6 @@ urheasti	ADV	opt
 urhoollisesti	ADV	opt
 useasti	ADV	opt
 uskaliaasti	ADV	opt
--uskoisesti	ADV	opt
 uskollisesti	ADV	opt
 uskomattomasti	ADV	opt
 uskonnollisesti	ADV	opt
@@ -2354,9 +2363,7 @@ vaikeasti	ADV	opt
 vaikeatajuisesti	ADV	opt
 vaikka	ADV	opt
 vaikuttavasti	ADV	opt
--vaikutteisesti	ADV	opt
 vaillinaisesti	ADV	opt
--vaistoisesti	ADV	opt
 vaistomaisesti	ADV	opt
 vaistonvaraisesti	ADV	opt
 vaisusti	ADV	opt
@@ -2389,7 +2396,6 @@ valokuvauksellisesti	ADV	opt
 valossa	ADP	opt
 valppaasti	ADV	opt
 valtaisasti	ADV	opt
--valtaisesti	ADV	opt
 valtakunnallisesti	ADV	opt
 valtavasti	ADV	opt
 valtioviisaasti	ADV	opt
@@ -2403,7 +2409,6 @@ vapaaehtoisesti	ADV	opt
 vapaamielisesti	ADV	opt
 vapaamuotoisesti	ADV	opt
 vapaasti	ADV	opt
--varaisesti	ADV	opt
 varakkaasti	ADV	opt
 varauksellisesti	ADV	opt
 varauksettomasti	ADV	opt
@@ -2426,7 +2431,6 @@ vastakkaisesti	ADV	opt
 vastavuoroisesti	ADV	opt
 vastenmielisesti	ADV	opt
 vastentahtoisesti	ADV	opt
--vastuisesti	ADV	opt
 vastuksellisesti	ADV	opt
 vastustamattomasti	ADV	opt
 vastustushaluisesti	ADV	opt
@@ -2483,7 +2487,6 @@ viisaasti	ADV	opt
 viistosti	ADV	opt
 viitseliäästi	ADV	opt
 viitteellisesti	ADV	opt
--viivaisesti	ADV	opt
 viivasuorasti	ADV	opt
 vikkelästi	ADV	opt
 viktoriaanisesti	ADV	opt
@@ -2515,7 +2518,6 @@ vittumaisesti	ADV	opt
 viuhkamaisesti	ADV	opt
 vivahteettomasti	ADV	opt
 vivahteikkaasti	ADV	opt
--voimaisesti	ADV	opt
 voimakkaasti	ADV	opt
 voimallisesti	ADV	opt
 voimaperäisesti	ADV	opt
@@ -2525,7 +2527,6 @@ voitollisesti	ADV	opt
 voitonriemuisesti	ADV	opt
 voitonvarmasti	ADV	opt
 voittoisasti	ADV	opt
--voittoisesti	ADV	opt
 voittopuolisesti	ADV	opt
 vuodenajoittain	ADV	opt
 vuokseen	ADV	opt
@@ -2667,7 +2668,6 @@ ytimekkäästi	ADV	opt
 äänekkäästi	ADV	opt
 äänenpitävästi	ADV	opt
 äänettömästi	ADV	opt
--äänisesti	ADV	opt
 äärettömästi	ADV	opt
 ääriin	ADV	opt
 öykkärimäisesti	ADV	opt
