@@ -79,7 +79,17 @@ int main(int argc, char** argv) {
         std::string fsafilename(argv[optind]);
         printf("Opening %s for omorfi\n", fsafilename.c_str());
         omorfi::Omorfi omorfi;
-        omorfi.loadAnalyser(fsafilename);
+        try {
+            omorfi.loadAnalyser(fsafilename);
+        } catch(TransducerHasWrongTypeException& thwte) {
+            printf("%s was not an omorfi analyser automaton binary\n",
+                   fsafilename.c_str());
+            exit(1);
+        } catch(NotTransducerStreamException& thwte) {
+            printf("%s was not an omorfi analyser automaton binary\n",
+                   fsafilename.c_str());
+            exit(1);
+        }
         printf("Reading one token per line:\n");
         char* line = nullptr;
         size_t len = 0;
@@ -87,7 +97,7 @@ int main(int argc, char** argv) {
         while ((read = getline(&line, &len, stdin)) != -1) {
             std::string token(line);
             // getline includes \n; should never have more than one \n
-            if (token.find("\n")) {
+            if (token.find("\n") != string::npos) {
                 token = token.substr(0, token.rfind("\n"));
             }
             std::vector<std::string> analyses = omorfi.analyse(token);
