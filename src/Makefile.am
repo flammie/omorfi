@@ -210,6 +210,15 @@ pkgpython_PYTHON=python/omorfi/__init__.py \
 				 python/omorfi/omorfi.py \
 				 python/omorfi/settings.py \
 				 python/omorfi/analysis.py \
+				 python/omorfi/analyser.py \
+				 python/omorfi/generator.py \
+				 python/omorfi/segmenter.py \
+				 python/omorfi/tokeniser.py \
+				 python/omorfi/labelsegmenter.py \
+				 python/omorfi/lemmatiser.py \
+				 python/omorfi/hyphenator.py \
+				 python/omorfi/guesser.py \
+				 python/omorfi/hfst.py \
 				 python/omorfi/doc.py \
 				 python/omorfi/error_logging.py \
 				 python/omorfi/string_manglers.py \
@@ -259,6 +268,8 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   test-scripts/constraint-unique-keys.bash \
 		   test-scripts/consistent-attribute-keys.bash \
 		   test-scripts/valid-datatypes.bash \
+		   test-scripts/lemmas-match-harmony.bash \
+		   test-scripts/lemmas-match-harmony.py \
 		   test-scripts/lemmas-match-regexes.bash \
 		   test-scripts/lemmas-match-regexes.py \
 		   test-scripts/paradigm-coverage.bash \
