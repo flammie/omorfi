@@ -4,12 +4,12 @@ Omorfi can be used with convenience command-line scripts, manually, using
 programming language bindings / APIs, etc. This page gives you few basic
 examples to get going. We assume here you have done [full
 installation](install.html), if you did a *python only* installation you can
-only use python examples.
+only use python examples (skip the bash section).
 
 ## Bash-based tools
 
 The bash-based command line tools are easiest to use, as they combine multiple
-operations into pipeline, select language models automatically and so forth.The
+operations into pipeline, select language models automatically and so forth. The
 following pipelines are described in this document:
 
 1. omorfi-download.bash
@@ -33,7 +33,14 @@ $
 ```
 
 When following the instructions, please do not copy/paste the dollar sign, it is
-not a part of the command, but a command-line prompt indicator!
+not a part of the command, but a command-line prompt indicator! Furthermore, a
+line-wrap symbol '↲' is used to soft-wrap the lines for this web-page, this is not a
+part of console output:
+
+```
+123456789 123456789 123456789 123456789 123456789 123456789 123456789 ↲
+  123456789 123456789
+```
 
 The example texts used here are part of omorfi distribution:
 
@@ -65,7 +72,7 @@ The output in examples is re-wrapped to fit browser windows and editors, some of
 the lines in the real world output will be very long. I use the ↲ symbol to
 indicate such wraps.
 
-### Download models
+### omorfi-download.bash
 
 If you haven't built omorfi manually with `./configure && make && make install`,
 it is possible to get some of the models for analysis from the internet (the
@@ -106,49 +113,48 @@ The binaries are unpacked in current directory and are from the previous
 release. If you work within the omorfi git directory, you may want to download
 the binaries in the directory called `src/generated/`.
 
-### Analyse and disambiguate
+### omorfi-disambiguate-text.sh
 
 This is probably what most users want.
 
 ```
 $ omorfi-disambiguate-text.sh -X test/test.text
 Lines: 10 Tokens: 110 Ratio: 11.0 tokens/line
-CPU time: 0.034928154000000045 Real time: 0.03501545637845993
-Tokens per timeunit: 3141.469835808494 Lines per timeunit: 285.5881668916813
+CPU time: 0.005696905999999988 Real time: 0.005708508950192481
+Tokens per timeunit: 19269.480167196896 Lines per timeunit: 1751.7709242906271
 "<Juankosken>"
-	"Juankoski" UPOS=PROPN Case=Gen Number=Sing <PropnType=Geo> <CMP=1> <W=0>
+  "Juankoski" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 "<kaupunki>"
-	"kaupunki" UPOS=NOUN Case=Nom Number=Sing <CMP=1> <W=0>
+	"kaupunki" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
 "<liittyy>"
-	"liittyä" UPOS=VERB Number=Sing Person=3 Voice=Act VerbForm=Fin Tense=Pres↲
-              Mood=Ind <CMP=1> <W=0>
+	"liittyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Pres Number=Sing ↲
+ Person=3 <CMP=1> <W=0>
 "<Kuopion>"
-	"Kuopio" UPOS=PROPN Case=Gen Number=Sing <PropnType=Geo> <CMP=1> <W=0>
+	"Kuopio" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 "<kaupunkiin>"
-	"kaupunki" UPOS=NOUN Case=Ill Number=Sing <CMP=1> <W=0>
+	"kaupunki" UPOS=NOUN Number=Sing Case=Ill <CMP=1> <W=0>
 "<vuoden>"
 	"vuoden" UPOS=ADV <CMP=1> <W=0>
-	"vuosi" UPOS=NOUN Case=Gen Number=Sing <CMP=1> <W=0>
+	"vuosi" UPOS=NOUN Number=Sing Case=Gen <CMP=1> <W=0>
 "<2017>"
 	"2017" UPOS=NUM NumType=Card <NumType=Digit> <CMP=1> <W=0>
-	"2017" UPOS=NUM Case=Nom Number=Sing NumType=Card <NumType=Digit> ↲
-           <CMP=1> <W=0>
+	"2017" UPOS=NUM NumType=Card Number=Sing Case=Nom <NumType=Digit> <CMP=1> <W=0>
 "<alussa>"
-	"alku" UPOS=NOUN Case=Ine Number=Sing <CMP=1> <W=0>
-	"alussa" UPOS=ADV <CMP=1> <W=0>
+	"alku" UPOS=NOUN Number=Sing Case=Ine <CMP=1> <W=0>
 	"alussa" UPOS=ADP AdpType=Post <CMP=1> <W=0>
+	"alussa" UPOS=ADV <CMP=1> <W=0>
 "<.>"
 	"." UPOS=PUNCT <CMP=1> <W=0>
 
 "<Kuopion>"
-	"Kuopio" UPOS=PROPN Case=Gen Number=Sing <PropnType=Geo> <CMP=1> <W=0>
+	"Kuopio" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 "<kaupunginvaltuusto>"
-	"kaupunginvaltuusto" UPOS=NOUN Case=Nom Number=Sing <CMP=1> <W=0>
+	"kaupunginvaltuusto" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
 "<hyväksyi>"
-	"hyväksyä" UPOS=VERB Number=Sing Person=3 Voice=Act VerbForm=Fin ↲
-               Tense=Past Mood=Ind <CMP=1> <W=0>
+	"hyväksyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Past Number=Sing ↲
+ Person=3 <CMP=1> <W=0>
 "<liitoksen>"
-	"liitos" UPOS=NOUN Case=Gen Number=Sing <CMP=1> <W=0>
+	"liitos" UPOS=NOUN Number=Sing Case=Gen <CMP=1> <W=0>
 "<yksimielisesti>"
 	"yksimielisesti" UPOS=ADV <Lexicalised=Sti> <CMP=1> <W=0>
 "<maanantaina>"
@@ -157,28 +163,27 @@ Tokens per timeunit: 3141.469835808494 Lines per timeunit: 285.5881668916813
 	"." UPOS=PUNCT <CMP=1> <W=0>
 
 "<Juankosken>"
-	"Juankoski" UPOS=PROPN Case=Gen Number=Sing <PropnType=Geo> <CMP=1> <W=0>
+	"Juankoski" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 "<kaupunginvaltuusto>"
-	"kaupunginvaltuusto" UPOS=NOUN Case=Nom Number=Sing <CMP=1> <W=0>
+	"kaupunginvaltuusto" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
 "<hyväksyi>"
-	"hyväksyä" UPOS=VERB Number=Sing Person=3 Voice=Act VerbForm=Fin ↲
-               Tense=Past Mood=Ind <CMP=1> <W=0>
+	"hyväksyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Past Number=Sing ↲
+ Person=3 <CMP=1> <W=0>
 "<liitoksen>"
-	"liitos" UPOS=NOUN Case=Gen Number=Sing <CMP=1> <W=0>
+	"liitos" UPOS=NOUN Number=Sing Case=Gen <CMP=1> <W=0>
 "<viime>"
+	"viime" UPOS=ADJ Degree=Pos Number=Sing Case=Nom <CMP=1> <W=0>
 	"viime" UPOS=ADV <CMP=1> <W=0>
-	"viime" UPOS=ADJ Case=Nom Number=Sing Degree=Pos <CMP=1> <W=0>
 "<viikolla>"
-	"viikko" UPOS=NOUN Case=Ade Number=Sing <CMP=1> <W=0>
+	"viikko" UPOS=NOUN Number=Sing Case=Ade <CMP=1> <W=0>
 "<.>"
 	"." UPOS=PUNCT <CMP=1> <W=0>
-...
-# Tokens: 110
-# Unknown: 3 2.727272727272727 %
-# CPU time: 0.15221513399999997
-# Real time: 0.20484047383069992
-# Tokens per timeunit: 537.003249127976
 
+# Tokens: 110
+# Unknown: 1 0.9090909090909091 %
+# CPU time: 0.014630929999999986
+# Real time: 0.018005268997512758
+# Tokens per timeunit: 6109.32277741562
 ```
 
 Compare this to the [Analyses without disambiguation](#Analyses without
@@ -187,7 +192,7 @@ for your research.
 
 For advanced usage options there is `omorfi-vislcg.py` python script.
 
-#### Analysis without disambiguation (VISL-CG3 format)
+#### omorfi-vislcg.bash
 
 It is possible to view the full ambiguous analyses in this format as well, i.e.
 before the CG rules try to remove most unlikely things. To do so, use
@@ -202,10 +207,10 @@ $ omorfi-vislcg.bash -X test/test.text
 "<kaupunki>"
 	"kaupunki" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
 "<liittyy>"
-	"liittyä" UPOS=VERB Mood=Ind Number=Sing Tense=Pres Person=0 Voice=Act ↲
-              VerbForm=Fin <CMP=1> <W=0>
-	"liittyä" UPOS=VERB Mood=Ind Number=Sing Tense=Pres Person=3 Voice=Act ↲
-              VerbForm=Fin <CMP=1> <W=0>
+	"liittyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Pres Number=Sing ↲
+ Person=0 <CMP=1> <W=0>
+	"liittyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Pres Number=Sing ↲
+ Person=3 <CMP=1> <W=0>
 "<Kuopion>"
 	"Kuopio" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 "<kaupunkiin>"
@@ -215,11 +220,11 @@ $ omorfi-vislcg.bash -X test/test.text
 	"vuosi" UPOS=NOUN Number=Sing Case=Gen <CMP=1> <W=0>
 "<2017>"
 	"2017" UPOS=NUM NumType=Card <NumType=Digit> <CMP=1> <W=0>
-	"2017" UPOS=NUM Number=Sing NumType=Card Case=Nom <NumType=Digit> ↲
-           <CMP=1> <W=0>
+	"2017" UPOS=NUM NumType=Card Number=Sing Case=Nom <NumType=Digit> ↲
+ <CMP=1> <W=0>
 "<alussa>"
 	"alku" UPOS=NOUN Number=Sing Case=Ine <CMP=1> <W=0>
-	"alunen" UPOS=NOUN Style=Arch Number=Sing Case=Ess <CMP=1> <W=0>
+	"alunen" UPOS=NOUN Number=Sing Case=Ess Style=Arch <CMP=1> <W=0>
 	"alussa" UPOS=ADP AdpType=Post <CMP=1> <W=0>
 	"alussa" UPOS=ADV <CMP=1> <W=0>
 "<.>"
@@ -228,24 +233,29 @@ $ omorfi-vislcg.bash -X test/test.text
 
 "<Kuopion>"
 	"Kuopio" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
-	"kuopia" UPOS=VERB Style=Arch Number=Sing Person=1 Voice=Act ↲
-             VerbForm=Fin <Mood=Opt> <CMP=1> <W=0>
+	"kuopia" UPOS=VERB Voice=Act VerbForm=Fin Number=Sing Person=1 Style=Arch ↲
+ <Mood=Opt> <CMP=1> <W=0>
 "<kaupunginvaltuusto>"
 	"kaupunginvaltuusto" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
+	"kaupunki#valtuus#to" UPOS=NOUN Number=Sing Case=Nom <CMP=3> <W=20000>
 	"kaupunki#valtuusto" UPOS=NOUN Number=Sing Case=Nom <CMP=2> <W=10000>
 "<hyväksyi>"
-	"hyväksyä" UPOS=VERB Mood=Ind Number=Sing Tense=Past Person=0 ↲
-               Voice=Act VerbForm=Fin <CMP=1> <W=0>
-	"hyväksyä" UPOS=VERB Mood=Ind Number=Sing Tense=Past Person=3 ↲
-               Voice=Act VerbForm=Fin <CMP=1> <W=0>
+	"hyväksyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Past Number=Sing ↲
+ Person=0 <CMP=1> <W=0>
+	"hyväksyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Past Number=Sing ↲
+ Person=3 <CMP=1> <W=0>
 "<liitoksen>"
 	"liitos" UPOS=NOUN Number=Sing Case=Gen <CMP=1> <W=0>
 "<yksimielisesti>"
 	"yksi#-mielinen" UPOS=ADJ Degree=Pos Derivation=Sti <AffixType=Suffix> ↲
-                     <CMP=2> <W=15000>
-	"yksi#-mielisesti" UPOS=ADV <Lexicalised=Sti> <AffixType=Suffix> ↲
-                       <CMP=2> <W=10000>
+ <CMP=2> <W=15000>
+	"yksi#-mielinen#es#ti" UPOS=NOUN Number=Sing Case=Nom <SemType=Time> ↲
+ <CMP=4> <W=35000>
+	"yksi#-mielisesti" UPOS=ADV <AffixType=Suffix> <Lexicalised=Sti> ↲
+ <CMP=2> <W=10000>
 	"yksimielinen" UPOS=ADJ Degree=Pos Derivation=Sti <CMP=1> <W=5000>
+	"yksimielinen#es#ti" UPOS=NOUN Number=Sing Case=Nom <SemType=Time> ↲
+ <CMP=3> <W=25000>
 	"yksimielisesti" UPOS=ADV <Lexicalised=Sti> <CMP=1> <W=0>
 "<maanantaina>"
 	"maanantai" UPOS=NOUN Number=Plur Case=Ess <CMP=1> <W=0>
@@ -260,17 +270,18 @@ $ omorfi-vislcg.bash -X test/test.text
 	"juan#koski" UPOS=NOUN Number=Sing Case=Gen <CMP=2> <W=10000>
 "<kaupunginvaltuusto>"
 	"kaupunginvaltuusto" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
+	"kaupunki#valtuus#to" UPOS=NOUN Number=Sing Case=Nom <CMP=3> <W=20000>
 	"kaupunki#valtuusto" UPOS=NOUN Number=Sing Case=Nom <CMP=2> <W=10000>
 "<hyväksyi>"
-	"hyväksyä" UPOS=VERB Mood=Ind Number=Sing Tense=Past Person=0 ↲
-               Voice=Act VerbForm=Fin <CMP=1> <W=0>
-	"hyväksyä" UPOS=VERB Mood=Ind Number=Sing Tense=Past Person=3 ↲
-               Voice=Act VerbForm=Fin <CMP=1> <W=0>
+	"hyväksyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Past Number=Sing ↲
+ Person=0 <CMP=1> <W=0>
+	"hyväksyä" UPOS=VERB Voice=Act VerbForm=Fin Mood=Ind Tense=Past Number=Sing ↲
+ Person=3 <CMP=1> <W=0>
 "<liitoksen>"
 	"liitos" UPOS=NOUN Number=Sing Case=Gen <CMP=1> <W=0>
 "<viime>"
-	"viime" UPOS=ADV <CMP=1> <W=0>
 	"viime" UPOS=ADJ Degree=Pos Number=Sing Case=Nom <CMP=1> <W=0>
+	"viime" UPOS=ADV <CMP=1> <W=0>
 "<viikolla>"
 	"viikko" UPOS=NOUN Number=Sing Case=Ade <CMP=1> <W=0>
 "<.>"
@@ -278,7 +289,7 @@ $ omorfi-vislcg.bash -X test/test.text
 ...
 ```
 
-### Xerox / Finite-State Morphology style analysis
+### omorfi-analyse-text.sh
 
 Traditional Finite-State Morphology produces all possible hypotheses of each
 input token in tabular format. This format uses so-called raw omorfi style
@@ -371,6 +382,8 @@ viikolla	[WORD_ID=viikko][UPOS=NOUN][NUM=SG][CASE=ADE]
 .	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]
 ```
 
+### omorfi-analyse-tokenised.sh
+
 If your text is already split into word-forms (one word-form per line), it can
 be analysed faster with `omorfi-analyse-tokenised.sh` tool:
 
@@ -391,13 +404,13 @@ $ omorfi-analyse-tokenised.sh -X test/wordforms.list
 	0,000000
 ...
 Strings	Found	Missing	Results
-6285	6285	0	10866
+6285	6285	0	11307
 Coverage	Ambiguity
-1,000000	1,728878
+1,000000	1,799045
 ```
 
 
-### Analysis into CONLL-U / Universal Dependencies format
+### omorfi-conllu.bash
 
 [Universal Dependencies](http://universaldependencies.org) are the up-and-coming
 standard for all your morpho-syntactic needs! Omorfi is currently scheduled to
@@ -462,7 +475,7 @@ Tense=Past|VerbForm=Fin|Voice=Act   _	_	_	Weight=0.0
 
 For more options there is a python script `omorfi-conllu.py`.
 
-### FTB3.1 analysis
+### omorfi-ftb3.bash
 
 Omorfi can output FTB3.1-compatible format with `omorfi-ftb3.bash`:
 
@@ -500,7 +513,7 @@ reading from <stdin>
 </s>
 ```
 
-### Coverage analysis
+### omorfi-freq-evals.bash
 
 It is possible to get naïve coverage estimates with `omorfi-freq-evals.bash`:
 
@@ -508,22 +521,19 @@ It is possible to get naïve coverage estimates with `omorfi-freq-evals.bash`:
 $ omorfi-freq-evals.bash -X test/test.text
 reading from <stdin>
 1	OOV	Shinzo
-1	OOV	Narendra
-CPU time: 0.112268327 real time: 0.13999610301107168
+CPU time: 0.01207244099999999 real time: 0.025647345988545567
 Lines	Covered	OOV
-110	108	2
-100.0	98.18181818181819	1.8181818181818181
+110	109	1
+100.0	99.0909090909091	0.9090909090909091
 Types	Covered	OOV
-87	85	2
-100.0	97.70114942528735	2.2988505747126435
-needs to have 99 % coverage to pass regress test
- please examine <stdout> for regressions
+87	86	1
+100.0	98.85057471264368	1.1494252873563218
 ```
 
 The python script `omorfi-freq-evals.py` has further options including
 Precision/Recall analysis over string matches.
 
-### Raw text tokenisation
+### omorfi-tokenise.bash
 
 Most tools will handle tokenisation internally, if you want to see the
 intermediate steps for example, you can invoke `omorfi-tokenise.bash` directly:
@@ -582,9 +592,7 @@ $ omorfi-tokenise.py -a /usr/local/share/omorfi/omorfi.describe.hfst \
 ...
 ```
 
-
-
-### Morphological segmentation
+### omorfi-segment.bash
 
 Omorfi can be used to segment word-forms into sub-word units with
 `omorfi-segment.bash`:
@@ -603,7 +611,7 @@ For further options there is a `omorfi-segment.py` python script.
 **Preliminary** support for labeled segmentation is also available but not
 guaranteed to work.
 
-### Spell-Checking and correction
+### omorfi-spell.sh
 
 Spelling correction may be done if hfst-ospell is installed using
 `omorfi-spell.sh`:
@@ -628,7 +636,7 @@ spell-checking whereas omorfi is large-coverage dictionary so ymmv, I (Flammie)
 like my spell-checker to recognise and suggest obscure and obscene terms but
 pit's not for everyone.
 
-### Morphological generation
+### omorfi-generate.sh
 
 Generating word-forms can be done using `omorfi-generate.sh`:
 
@@ -662,7 +670,7 @@ hfst-lookup src/generated/omorfi.describe.hfst -q < kauppa.wordforms |\
 The third step is to regenerate the analyses and select only forms that we feel
 are part of inflection and not derivation or compounding.
 
-### Moses factored format
+### omorfi-factorise.sh
 
 *NB:* _This format is not actively developed any more as moses is getting kind
 of obsolete in favor of neural machine translation platforms._
@@ -703,69 +711,47 @@ viikolla|viikko|NOUN|Number.Case|viiko.lla↲
 
 ## Python scripts and pipeline building
 
-The python versions of the scripts are for more advanced usage. Their
-invocations  all follow approximately the same format as the bash scripts',
-however, the input is always given with `-i INFILE` switch, the output is always
-specified with the `-o OUTFILE` switch, and you must provide the language model
-with the `-a MODELFILE` switch.  For the small model, use `omorfi.analyse.hfst`
-and for the larger model `omorfi.describe.hfst`.  You must also always build
-your whole pipeline, including tokenisation and selecting correct formats. E.g.:
-
-```
-omorfi-tokenise.py -a src/generated/omorfi.describe.hfst \
-  -i test/test.text -O conllu |\
-	omorfi-conllu.py -a src/generated/omorfi.describe.hfst
-reading from <stdin>
-Lines: 10 Tokens: 110 Ratio: 11.0 tokens/line
-CPU time: 0.006683539000000002 Real time: 0.006686871871352196
-Tokens per timeunit: 16450.14322335986 Lines per timeunit: 1495.4675657599873
-# new doc id= test/test.text
-# sent_id = 1
-# text = Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa.
-1	Juankosken	Juankoski	PROPN	N	Case=Gen|Number=Sing	_	_	_↲
-	Weight=0.0
-2	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	_	_	_↲
-	Weight=0.0
-3	liittyy	liittyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|↲
-VerbForm=Fin|Voice=Act  _	_	_	Weight=0.0
-4	Kuopion	Kuopio	PROPN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
-5	kaupunkiin	kaupunki	NOUN	N	Case=Ill|Number=Sing	_	_	_↲
-	Weight=0.0
-6	vuoden	vuoden	ADV	Adv	_	_	_	_	Weight=0.0
-7	2017	2017	NUM	Num	NumType=Card	_	_	_	Weight=0.0
-8	alussa	alku	NOUN	N	Case=Ine|Number=Sing	_	_	_	Weight=0.0
-9	.	.	PUNCT	Punct	_	_	_	_	Weight=0.0
-
-# sent_id = 2
-# text = Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti↲
-# maanantaina.
-1	Kuopion	Kuopio	PROPN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
-2	kaupunginvaltuusto	kaupunginvaltuusto	NOUN	N	Case=Nom|Number=Sing↲
-	_	_	_	Weight=0.0
-3	hyväksyi	hyväksyä	VERB	V	Mood=Ind|Number=Sing|Person=0|↲
-Tense=Past|VerbForm=Fin|Voice=Act   _	_	_	Weight=0.0
-4	liitoksen	liitos	NOUN	N	Case=Gen|Number=Sing	_	_	_↲
-	Weight=0.0
-5	yksimielisesti	yksimielisesti	ADV	Adv	_	_	_	_	Weight=0.0
-6	maanantaina	maanantai	NOUN	N	Case=Ess|Number=Plur	_	_	_↲
-	Weight=0.0
-7	.	.	PUNCT	Punct	_	_	_	_	Weight=0.0
-...
-```
-
 The following scripts are included:
 
-1. src/python/omorfi-conllu.py
 1. src/python/omorfi-download.py
+1. src/python/omorfi-conllu.py
 1. src/python/omorfi-factorise.py
 1. src/python/omorfi-freq-evals.py
 1. src/python/omorfi-ftb3.py
+1. src/python/omorfi-ner.py
 1. src/python/omorfi-segment.py
 1. src/python/omorfi-sigmorphons.py
 1. src/python/omorfi-tokenise.py
 1. src/python/omorfi-unimorph.py
 1. src/python/omorfi-vislcg.py
-1. src/python/omorfi-wikitable.py
+
+The python versions of the scripts are for more advanced usage. Their
+invocations  all follow approximately the same format as the bash scripts',
+however, the input is always given with `-i INFILE` switch, the output is always
+specified with the `-o OUTFILE` switch, and you must provide the language model
+with the `-a MODELFILE` switch.  For the small model, use `omorfi.analyse.hfst`
+and for the larger model `omorfi.describe.hfst`.
+
+With python scripts, you need to always build the whole pipeline, including
+tokenisation and selecting correct formats. E.g.:
+
+```
+omorfi-tokenise.py -a src/generated/omorfi.describe.hfst \
+  -i test/test.text -O conllu |\
+	omorfi-conllu.py -a src/generated/omorfi.describe.hfst
+```
+
+### omorfi-tokenise.py
+
+Most python pipelines must start from tokenisation:
+
+```
+omorfi-tokenise.py -a src/generated/omorfi.describe.hfst \
+  -i test/test.text -O conllu
+```
+
+The format to use is dependent on the task usually, e.g. conllu for dependency
+analysis and ftb3 for legacy data.
 
 # Programming interfaces / bindings
 
@@ -778,21 +764,32 @@ written for, for any other uses, there are programming language bindings
 available as well as the language models themselves, which you can use and
 manipulate with suitable tools.
 
+One main design choice I have in the APIs is that I want to provide a simple API
+first, that basically works like:
+
+1. find language model file
+1. open and load language model
+1. analyse wordform
+1. iterate analyses
+
+anything beyond that is hidden on more complex data structures and functions,
+but the basic ~5 lines of code should work in any programming language like that
+for the most common use case.
+
 ## Python
 
-Python interface:
+Python interface is in package `omorfi`, the base interface contains `load`
+function and `find_omorfi` convenience function; the loaded object should always
+have an analyse method that returns iterable analyses with more information:
 
 ```
 $ python
 Python 3.5.7 (default, Nov 25 2019, 07:48:48)
 [GCC 8.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> from omorfi.omorfi import Omorfi
->>> omorfi = Omorfi()
->>> omorfi.load_analyser("/usr/local/share/omorfi/omorfi.describe.hfst")
->>> omorfi.analyse("koira")
-[<omorfi.analysis.Analysis object at 0x7fe9ce361c18>]
->>> analyses = omorfi.analyse("alusta")
+>>> import omorfi
+>>> analyser = omorfi.load("/usr/local/share/omorfi/omorfi.describe.hfst")
+>>> analyses = analyser.analyse("alusta")
 >>> for analysis in analyses:
 ...     print(analysis.get_lemmas(), analysis.get_upos(),
               analysis.printable_ud_feats())
@@ -808,6 +805,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
+
+
 ## Java
 
 Java class `com.github.flammie.omorfi.Omorfi` has an example implementation with
@@ -816,15 +815,53 @@ a simple input loop.
 ```
 $ java com.github.flammie.omorfi.Omorfi
 ```
-I am not a big fan of Java but acknowledge that some times there are no easy way
-to avoid it (Android, Servlets, legacy code base), so this may be more useful
-than native interfacing or other hacks.
+
+The basic interface is based on the class methods `loadAnalyser` and `analyse`,
+which returns an iterable collection of analyses (Strings at the moment).
+
+```java
+
+import com.github.flammie.omorfi.Omorfi;
+
+...
+
+Omorfi omorfi = new Omorfi();
+omorfi.loadAnalyser("/usr/share/omorfi/omorfi.describe.hfstol");
+Collection<String> analyses = omorfi.analyse("talossa");
+for (String analysis : analyses) {
+    System.out.println(analysis);
+}
+```
 
 ## C++
 
 The header `omorfi.hh` and the library `libomorfi` has basic interface for
 loading and running omorfi language models. There is an example command-line
-tool with input loop in `omorfi-lookup.cc`.
+tool with input loop in `omorfi-lookup.cc`:
+
+```
+$ ./omorfi-lookup /usr/share/omorfi/omorfi.describe.hfst
+```
+
+The basic interface is based on `omorfi::Omorfi` class and methods
+`loadAnalyser` and `analyse` which returns a data structure containing analyses
+that can be iterated with foreach:
+
+```c++
+#include "omorfi.hh"
+...
+omorfi::omorfi Omorfi;
+omorfi.loadAnalyser("/usr/share/omorfi/omorfi.describe.hfst");
+auto& analyse = omorfi.analyse("talossa");
+for (auto& analysis : analyses) {
+  std::cout << analysis << std::endl;
+}
+```
+
+## Other programming language bindings
+
+I would be happy to have more programming language bindings, most are dependent
+on what HFST has been ported to since we depend on it for our language models.
 
 ## Raw automata
 
@@ -854,9 +891,6 @@ omorfi_recased.analyse.hfst
 omorfi_recased.describe.hfst
 omorfi.segment.hfst
 omorfi.tokenise.hfst
-omorfi.tokenise.pmatchfst
-omorfi.tokenise.pmatchfst.debug1
-omorfi.tokenise.pmatchfst.debug2
 speller-omorfi.zhfst
 ```
 

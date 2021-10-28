@@ -6,9 +6,15 @@ use.
 
 ## Downloading
 
-[Download a release tarball from
- github](https://github.com/flammie/omorfi/releases) or [clone
+Choose one:
+
+1. [Download a release tarball from
+ github](https://github.com/flammie/omorfi/releases)
+    wget https://github.com/flammie/omorfi/releases/download/20200511/omorfi-20200511.tar.xz
+    tar Jxvf omorfi-2020511.tar.xz
+1. or [clone
 the bleeding edge version with git](https://github.com/flammie/omorfi/)
+    git clone git@github.com:flammie/omorfi
 
 ## Dependencies
 
@@ -29,7 +35,9 @@ Optionally:
 * hfst-ospell
 * java
 
-### Installing dependencies on Debian / Ubuntu / Redhat or compatible
+Choose only one of the methods of installing dependencies!
+
+### Option 1) Installing dependencies on Debian / Ubuntu / Redhat or compatible
 
 It is recommended to follow the [Installing grammar
 libraries](https://wiki.apertium.org/wiki/Installation_of_grammar_libraries)
@@ -43,7 +51,7 @@ sudo apt-get install hfst python3-hfst libhfst-dev cg3
 But also check the apertium wiki for updates e.g. if the package names may
 change.
 
-### Installing with pip (python only)
+### Option 2a) Installing everything with pip or conda (python only)
 
 Omorfi has preliminary python packaging on pip, it can be used to install
 some of the relevant dependencies and run parts of omorfi without installing
@@ -55,7 +63,7 @@ dependencies not found in pip repositories.
 pip install omorfi
 ```
 
-### Installing with anaconda (python only)
+### Option 2b) Installing with anaconda (python only)
 
 Omorfi has preliminary python pacakging on anaconda, it can be used to install
 some of the relevant dependencies and run parts of omorfi without installing
@@ -65,12 +73,16 @@ in anaconda repositories.
 
 ![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
 
-### Installing dependencies on other systems
+### Option 3) Installing dependencies on other systems
 
 Follow the instructions by [HFST](https://hfst.github.io) and [VISL CG
 3](https://visl.sdu.dk/cg3.html) projects.
 
-## Using omorfi without full compilation
+## Installing omorfi
+
+Choose only one of the methods of installing omorfi language models!
+
+### Option 1) Using stable omorfi without full compilation
 
 It is possible to download pre-compiled omorfi models and use them without going
 through the compilation process. If you have downloaded and installed all the
@@ -101,7 +113,7 @@ If the downloading worked you can proceed to [usage examples](usage.html). Be
 aware that some of the examples may not work depending on which depdendencies
 you installed and version downloaded.
 
-## Compiling omorfi
+### Option 2) Compiling omorfi
 
 Installation uses standard autotools system (see the contents of
 [INSTALL](https://github.com/flammie/omorfi/blob/develop/INSTALL) from GNU
