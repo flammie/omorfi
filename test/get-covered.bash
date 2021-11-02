@@ -295,7 +295,7 @@ if ! test -f "finer.uniq.freqs" ; then
     fi
     cut -f 1 finer-data/data/*.csv > finer.tokens
     echo count
-    frequency_list "finer.tokens" > "finer.uniq.fregs"
+    frequency_list "finer.tokens" > "finer.uniq.freqs"
     cp -v finer-data/data/*csv .
 fi
 
