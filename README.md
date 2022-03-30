@@ -1,8 +1,12 @@
-# Omorfi–Open morphology of Finnish
+# 🇫🇮Omorfi–Open morphology of Finnish
 
 This is a free/libre open source morphology of Finnish: a database, tools and
 APIs. Everything you need to build NLP applications processing Finnish language
 words and texts.
+
+* 🇫🇮 high-quality Finnish text analysis and generation
+* 🩸 bleeding edge
+* ⚡ blazing fast
 
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
 (stable master branch:
@@ -17,8 +21,9 @@ omorfi](//flammie.github.io/omorfi/).
 
 ## Citing and academic works
 
-Citation information can be found in file
-[CITATION](https://github.com/flammie/omorfi/blob/develop/CITATION). For further
+Citation information is available in github's *cite this repository* function,
+backed by the
+[CITATION.cff](https://github.com/flammie/omorfi/blob/CITATION.cff). For further
 details, see [omorfi articles](//flammie.github.io/omorfi/articles.html).
 
 ## Downloading and further information
@@ -85,6 +90,10 @@ syntactic analysis and disambiguation using VISL CG 3.
 
 ![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
 
+### Docker
+
+It is possible to use omorfi with a ready-made docker container, there is a
+Dockerfile in `src/docker/Dockerfile` for that.
 
 ## Usage
 
@@ -154,7 +163,7 @@ participate, read further information in
 * Issues and problems may be filed in [our github issue
   tracker](https://github.com/flammie/omorfi/issues), including support
   questions
-* [IRC channel #omorfi on Freenode](irc://Freenode/#omorfi) is particularly good
+* [IRC channel #omorfi on OFTC](irc://OFTC/#omorfi) is particularly good
   for live chat for support questions, suggestions and discussions
 * [omorfi-devel mailing
   list](https://groups.google.com/forum/#!forum/omorfi-devel) is good for longer
