@@ -3,6 +3,29 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 0.9.9
+
+* Changed to semver and not so bi-yearly schedule
+* nearly 10,000 words moved from main lexicon to MWE; added MWE fragments that
+  were previously not in main lexicon (e.g. "Records", "Air", "Las", "Agia",
+  "Group", "Air", ...)
+* few thousands of words from fiwkikt, enwikt and joukahainen including new
+  paradigms for cool and chic (i.e. loan consonant final adjectives), galanga
+  root, cisgender, genetic scissors, gay drumming, hybrid influencing,
+  spike protein and a lot of birds, mice and compounds
+* preliminary support for conda
+* homonyms dropped cross part-of-speech, only lemmas within same pos get 
+  homonym number now
+* Removed multi-words from main lexicon, if a lexeme has space in it all parts
+  are analysed separately
+* canonic sort order for TSV files based on python sort (since bash sort is
+  not portable across OSes or stable)
+* minor fixes for c++ demo and api
+* updated words from wiktionaries, joukahainen...
+* basic NER parser (~90 % of finer covered)
+* improvements in documentation based on feedback
+* big thanks to **Patreons** and **GitHub sponsors** for continued support
+
 ## Significant changes in 20200511
 
 * Universal dependencies version 2.6 compatible
