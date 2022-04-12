@@ -1,8 +1,8 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ(2.64)
-AC_INIT([omorfi], [0.9.9], [https://github.com/flammie/omorfi/issues], [https://github.com/flammie/omorfi/])
+AC_PREREQ([2.71])
+AC_INIT([omorfi],[0.9.9],[https://github.com/flammie/omorfi/issues],[https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
@@ -297,14 +297,14 @@ AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
 
 # check java when not disabled
 AS_IF([test "x$with_java" != xno], [
-    AC_CHECK_CLASSPATH
+    AX_CHECK_CLASSPATH
     AX_PROG_JAVA
     AX_PROG_JAVAC
     AX_CHECK_CLASS([net.sf.hfst.Transducer])
     ])
 AS_IF([test "x$with_java" = xyes], [
     AS_IF([test "x$HAVE_net_sf_hfst_Transducer" = xno],
-          [AC_WARN([Building java with bundled hfst then])
+          [AC_MSG_WARN(Building java with bundled hfst then)
           AC_SUBST([HFSTCLASSPATH], [java])
           ])
     ], [AC_SUBST([HFSTCLASSPATH], [$with_java])])
