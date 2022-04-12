@@ -151,6 +151,7 @@ APE_AUTOMATA=generated/fin-automorf.hfst generated/fin-autogen.hfst
 APE_GENERATED=generated/apertium-fin.fin.lexc \
 			  generated/apertium-fin.fin.twolc \
 			  generated/apertium-fin.fin.reweight \
+			  generated/apertium-fin.fin.rlx \
 			  generated/apertium-fin.fin.yaml
 endif
 if WANT_GIELLA
@@ -505,6 +506,12 @@ generated/apertium-fin.fin.yaml: $(top_srcdir)/test/gtd-tests.tsv
 
 generated/apertium-fin.fin.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=apertium -o $@
+
+generated/apertium-fin.fin.rlx: vislcg3/omorfi.cg3 vislcg3/omorfi2apertium.sed
+	echo "## AUTOMATICALLY GENERATED from omorfi" > $@
+	date --iso-8601=hours | sed -e 's/^/##/' >> $@
+	echo >> $@
+	$(SED) -f vislcg3/omorfi2apertium.sed < vislcg3/omorfi.cg3 >> $@
 
 # database to monodix
 generated/omorfi.dix: generated/master.tsv generated/continuations.tsv
