@@ -181,7 +181,7 @@ pkgdata_DATA=$(GENERIC_AUTOMATA) $(FTB3_AUTOMATA) $(OMOR_AUTOMATA) \
 				$(GIELLA_AUTOMATA)
 voikkoshare_DATA=voikko/speller-omorfi.zhfst
 pkgdata_DATA+=$(voikkoshare_DATA)
-pkgdata_DATA+=generated/master.tsv
+pkgdata_DATA+=generated/master.tsv generated/mwe-master.tsv
 
 bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-analyse-tokenised.sh \
