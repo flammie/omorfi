@@ -27,8 +27,9 @@ from sys import exit, stderr
 
 
 def main():
+    """Command-line tool interface for tsv joining."""
     ap = argparse.ArgumentParser(
-        description="Join N field master CSV or TSV file with others having N+1 fields")
+        description="Join N field master TSV with others having N+1 fields")
 
     ap.add_argument("--quiet", "-q", action="store_false", dest="verbose",
                     default=False,
@@ -37,14 +38,14 @@ def main():
                     help="print each step to stdout while processing")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--input", "-i", action="append", required=True,
-                    dest='infilenames',
+                    dest="infilenames",
                     metavar="IFILE", help="read dictionary data from IFILEs")
     ap.add_argument("--join", "-j", action="append", required=True,
-                    dest='joinfilenames',
+                    dest="joinfilenames",
                     metavar="JFILE",
                     help="read auxiliary data from JFILEs")
     ap.add_argument("--output", "-o", action="store", required=True,
-                    dest='outfilename',
+                    dest="outfilename",
                     metavar="OFILE",
                     help="write resulting data to OFILE")
     ap.add_argument("--fields", "-f", action="store", type=int, default=3,
@@ -52,26 +53,29 @@ def main():
     ap.add_argument("--separator", "-s", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", help="skip lines starting with COMMENT that"
+                    metavar="COMMENT",
+                    help="skip lines starting with COMMENT that"
                     "do not have SEPs")
     ap.add_argument("--strip", "-S", action="store",
-                    metavar="STRIP", help="strip STRIP from fields before using")
-    ap.add_argument("--ignore-errors", "-I", action="store_true", default=False,
-                    help="silently ignore references to entries missing from master file")
+                    metavar="STRIP",
+                    help="strip STRIP from fields before using")
+    ap.add_argument("--ignore-errors", "-I", action="store_true",
+                    default=False, help="silently ignore references to "
+                    "entries missing from master file")
     args = ap.parse_args()
 
-    if args.strip == '"' or args.strip == "'":
+    if args.strip in ('"', "'"):
         quoting = csv.QUOTE_ALL
     else:
         quoting = csv.QUOTE_NONE
 
-    words = dict()
+    words = {}
     for csv_filename in args.infilenames:
         if args.verbose:
             print("Reading dictionary from", csv_filename)
         linecount = 0
         entry_count = 0
-        with open(csv_filename, 'r', newline='') as csv_file:
+        with open(csv_filename, "r", newline="", encoding="UTF-8") as csv_file:
             csv_reader = csv.reader(csv_file,
                                     delimiter=args.separator, quoting=quoting,
                                     strict=True)
@@ -79,13 +83,14 @@ def main():
             for csv_parts in csv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000) == 0:
-                    print(linecount, "...", end='\r')
+                    print(linecount, "...", end="\r")
                 if len(csv_parts) < args.fields - 1:
-                    print("Must have at least", args.fields - 2, "separators on each "
+                    print("Must have at least", args.fields - 2,
+                          "separators on each "
                           "non-comment non-empty line. Skipping:", csv_parts,
                           file=stderr)
                     continue
-                if csv_parts[-1].endswith('<-HEADERS'):
+                if csv_parts[-1].endswith("<-HEADERS"):
                     # skip header line
                     continue
                 key = args.separator.join(csv_parts[0:args.fields - 1])
@@ -101,7 +106,8 @@ def main():
         linecount = 0
         joincount = 0
         dedupe = set()
-        with open(join_filename, 'r', newline='') as join_file:
+        with open(join_filename, "r",
+                  newline="", encoding="UTF-8") as join_file:
             join_reader = csv.reader(join_file,
                                      delimiter=args.separator, quoting=quoting,
                                      strict=True)
@@ -111,24 +117,27 @@ def main():
             for join_parts in join_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000) == 0:
-                    print(linecount, "...", end='\r')
-                join_on = ''
+                    print(linecount, "...", end="\r")
+                join_on = ""
                 if len(join_parts) < args.fields:
-                    print("Must have at least", args.fields - 1, "separators on each",
+                    print("Must have at least", args.fields - 1,
+                          "separators on each",
                           "non-comment non-empty line of join; Skipping:\n",
                           args.separator.join(join_parts),
                           file=stderr)
                     continue
                 join_on = args.separator.join(join_parts[0:args.fields - 1])
-                if join_parts[-1].endswith('<-HEADERS'):
+                if join_parts[-1].endswith("<-HEADERS"):
                     # skip header line
                     continue
+                # pylint false positive here:
                 if join_on not in words.keys():
                     if not args.ignore_errors:
                         print("\033[93mMissing!\033[0m "
                               "Could not find the key",
                               join_on, "used in\033[91m", join_file.name,
-                              "\033[0mline\033[91m", linecount, "\033[0min any of",
+                              "\033[0mline\033[91m", linecount,
+                              "\033[0min any of",
                               " ".join(args.infilenames), file=stderr)
                         errors = True
                 elif join_on in dedupe:
@@ -143,7 +152,7 @@ def main():
                     dedupe.add(join_on)
                     this_entry = words[join_on]
                     this_entry += [headers[args.fields - 1] +
-                                   '=' + join_parts[args.fields - 1]]
+                                   "=" + join_parts[args.fields - 1]]
                     words[join_on] = this_entry
                     joincount += 1
         if args.verbose:
@@ -155,21 +164,20 @@ def main():
               "before continuing")
         exit(1)
 
-    with open(args.outfilename, "w", newline='') as output:
+    with open(args.outfilename, "w", newline="", encoding="UTF-8") as output:
         if args.verbose:
             print("Writing master database to", args.outfilename)
             print("Sorting")
         linecount = 0
         tsv_writer = csv.writer(output, delimiter=args.separator,
-                                quoting=quoting, escapechar='\\', strict=True)
-        for (line, fields) in sorted(words.items()):
+                                quoting=quoting, escapechar="\\", strict=True)
+        for (_, fields) in sorted(words.items()):
             linecount += 1
             if args.verbose and ((linecount % 10000) == 0 or linecount == 1):
-                print(linecount, "...", end='\r')
+                print(linecount, "...", end="\r")
             tsv_writer.writerow(fields)
         if args.verbose:
             print()
-    exit()
 
 
 if __name__ == "__main__":

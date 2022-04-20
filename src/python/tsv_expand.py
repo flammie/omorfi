@@ -24,7 +24,7 @@ automatic guessing. The
 
 import argparse
 import csv
-from sys import stderr
+from sys import stderr, exit
 from omorfi.entryguessing.guess_feats import guess_bound_morphs
 from omorfi.entryguessing.parse_csv_data import parse_defaults_from_tsv,\
     parse_extras_from_tsv
@@ -63,7 +63,7 @@ def main():
                     metavar="STRIP", help="strip STRIP characters")
     args = ap.parse_args()
 
-    if args.strip == '"' or args.strip == "'":
+    if args.strip in ('"', "'"):
         quoting = csv.QUOTE_ALL
         quotechar = args.strip
     else:
@@ -71,39 +71,39 @@ def main():
         quotechar = None
 
     errors = False
-    joinmap = dict()
-    stubmap = dict()
+    joinmap = {}
+    stubmap = {}
     # read joins from file if any
-    with open(args.join, 'r', newline='') as joins:
+    with open(args.join, "r", newline="", encoding="UTF-8") as joins:
         join_reader = csv.DictReader(joins, delimiter=args.separator,
-                                     quoting=quoting, escapechar='\\',
+                                     quoting=quoting, escapechar="\\",
                                      strict=True)
         for join_parts in join_reader:
             if len(join_parts) < 3:
                 print("Must have at leas N separators in joins; skipping",
                       join_parts)
                 continue
-            key = join_parts['new_para']
+            key = join_parts["new_para"]
             joinmap[key] = join_parts
-            stubmap[key] = join_parts['deletion']
+            stubmap[key] = join_parts["deletion"]
 
     # read from csv files
-    with open(args.output, 'w', newline='') as output:
+    with open(args.output, "w", newline="", encoding="UTF-8") as output:
         tsv_writer = csv.DictWriter(output,
                                     fieldnames=get_wordmap_fieldnames(),
                                     delimiter=args.separator, quoting=quoting,
-                                    escapechar='', quotechar=quotechar,
+                                    escapechar="", quotechar=quotechar,
                                     strict=True)
         tsv_writer.writeheader()
-        with open(args.input, 'r', newline='') as infile:
+        with open(args.input, "r", newline="", encoding="UTF-8") as infile:
             tsv_reader = csv.reader(infile, delimiter=args.separator,
-                                    quoting=quoting, escapechar='\\',
+                                    quoting=quoting, escapechar="\\",
                                     strict=True)
             linecount = 0
             for tsv_parts in tsv_reader:
                 linecount += 1
                 if args.verbose and (linecount % 10000 == 0):
-                    print(linecount, "...", sep='', end='\r')
+                    print(linecount, "...", sep='', end="\r")
                 if len(tsv_parts) < args.fields:
                     print("Must have at least N separators on each",
                           "non-comment non-empty line; skipping:",
@@ -116,15 +116,15 @@ def main():
                 wordmap = parse_defaults_from_tsv(wordmap, tsv_parts)
                 wordmap = parse_extras_from_tsv(wordmap, tsv_parts)
                 # Extend from known new paras
-                joinkey = wordmap['new_para']
+                joinkey = wordmap["new_para"]
                 if joinkey in joinmap:
                     for k, v in joinmap[joinkey].items():
-                        if k != 'new_para':
+                        if k != "new_para":
                             if v == "False":
                                 wordmap[k] = False
                             elif v == "None":
                                 wordmap[k] = None
-                            elif k == 'kotus_tn':
+                            elif k == "kotus_tn":
                                 wordmap[k] = v
                             else:
                                 wordmap[k] = v
@@ -149,9 +149,9 @@ def main():
                 # suffixes can be id'd by the - in beginning. They need an own
                 # lexicon
                 wordmap = guess_bound_morphs(wordmap)
-                if wordmap['is_suffix']:
-                    wordmap['real_pos'] = wordmap['pos']
-                    wordmap['pos'] = 'SUFFIX'
+                if wordmap["is_suffix"]:
+                    wordmap["real_pos"] = wordmap["pos"]
+                    wordmap["pos"] = "SUFFIX"
                 wordmaps = [wordmap]
                 for wordmap in wordmaps:
                     tsv_writer.writerow(wordmap)
@@ -159,8 +159,6 @@ def main():
         print("you must fix database integrity or hack the scripts",
               "before continuing")
         exit(1)
-
-    exit()
 
 
 if __name__ == "__main__":
