@@ -1,34 +1,40 @@
 #!/bin/bash
 LEXFILE=lexemes.tsv
+MWEFILE=mwe.tsv
 PARAFILE=paradigms.tsv
 
 WORK=$(mktemp -d -t omorfi-validate-database.XXXXXXXXXX)
 
-echo checking for missing paradigms of ${LEXFILE} in $PARAFILE...
-cut -f 3 ${LEXFILE} | sort | uniq > "${WORK}"/paradigms
-cut -f 1 $PARAFILE | sort | uniq > "${WORK}/$(basename $PARAFILE).paradigms"
-comm -23 "${WORK}"/paradigms "${WORK}/$(basename $PARAFILE).paradigms" > \
-    "${WORK}/missing-para-$(basename $PARAFILE)"
+LEXEMES="${WORK}/lexemes"
+LPARADIGMS="${WORK}/lexemes.paradigms"
+RPARADIGMS="${WORK}/paradigms.paradigms"
+MISSPARAS="${WORK}/missing.paradigms"
+EXTRAPARAS="${WORK}/extra.paradigms"
+FAILS="{WORK}/fails.paradigms"
+cat ${LEXFILE} ${MWEFILE} > "${LEXEMES}"
+echo checking for missing paradigms of ${LEXFILE} and ${MWEFILE} \
+    in $PARAFILE...
+cut -f 3 ${LEXEMES} | sort | uniq > "${LPARADIGMS}"
+cut -f 1 ${PARAFILE} | sort | uniq > "${RPARADIGMS}"
+comm -23 "${LPARADIGMS}" "${RPARADIGMS}" > "${MISSPARAS}"
 while read -r k ; do
-    echo MISSING "$k" is found in ${LEXFILE} but is not in $PARAFILE >> \
-        "${WORK}"/fails.paradigms
-    grep -F -m 1 -- "${k}	" $LEXFILE |\
+    echo MISSING "$k" is found in databases but is not in $PARAFILE >> \
+        "${FAILS}"
+    grep -F -m 1 -- "${k}	" "${LEXEMES}" |\
         awk -F '\t' '{printf("%s\tfor example: %s\n", $3, $1);}' \
-        >> "${WORK}"/fails.paradigms
-    echo ADD "$k" into ${PARAFILE} >> "${WORK}"/fails.paradigms
-done < "${WORK}/missing-para-$(basename $PARAFILE)"
-comm -13 "${WORK}/paradigms" "${WORK}/$(basename $PARAFILE).paradigms" > \
-    "${WORK}/extra-para-$(basename $PARAFILE)"
+        >> "${FAILS}"
+    echo ADD "$k" into ${PARAFILE} >> "${FAILS}"
+done < "${MISSPARAS}"
+comm -13 "${LPARADIGMS}" "${RPARADIGMS}" > "${EXTRAPARAS}"
 while read -r k ; do
-    echo EXTRA "$k" is found in ${PARAFILE} but is not in $LEXFILE >> \
-        "${WORK}"/fails.paradigms
-    echo REMOVE "$k" from ${PARAFILE} >> \
-        "${WORK}"/fails.paradigms
-done < "${WORK}/extra-para-$(basename $PARAFILE)"
-if test -e "${WORK}"/fails.paradigms ; then
+    echo EXTRA "$k" is found in ${PARAFILE} but is not in databases >> \
+        "${FAILS}"
+    echo REMOVE "$k" from ${PARAFILE} >> "${FAILS}"
+done < "${EXTRAPARAS}"
+if test -e "${FAILS}" ; then
     echo
-    echo there are missing paradigms:
-    cat "${WORK}"/fails.paradigms
+    echo there are missing or extra paradigms:
+    cat "${FAILS}"
     exit 1
 fi
 rm -rf "${WORK}"
