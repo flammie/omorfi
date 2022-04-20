@@ -1540,9 +1540,11 @@ NUM_VIISI	NUM	NUMERAL	27	None	False	weaken	front	None	None	False	False	viisi	si
 NUM_VIITISEN	NUM	NUMERAL	99	None	False	False	front	None	None	False	False	isen	
 NUM_YHDEKSÄN	NUM	NUMERAL	10	None	False	weaken	front	None	None	False	False	än	än
 NUM_YKSI	NUM	NUMERAL	31	None	False	weaken	front	None	None	False	False	yksi	ksi
+PRON_AINOA	PRON	PRONOUN	15	None	False	weaken	back	a	None	False	False	oa	a
 PRON_ERÄS	PRON	PRONOUN	41	None	False	strengthen	front	None	None	False	False	s	s
 PRON_HÄN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	hän	
 PRON_HÄÄ	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	hää	ä
+PRON_IKINEN	PRON	PRONOUN	38	None	False	strengthen	front	None	None	False	False	nen	nen
 PRON_ITSE	PRON	PRONOUN	8	None	False	weaken	front	None	None	False	False	it.?e	
 PRON_JOKA	PRON	PRONOUN	101	None	False	False	back	None	None	False	False	ka	ka
 PRON_JOKAINEN	PRON	PRONOUN	38	None	False	strengthen	back	None	None	False	False	nen	nen
@@ -1614,6 +1616,8 @@ PROPN_ACRO_II	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	[IJij]
 PROPN_ACRO_KAHDEKSAN	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	8	
 PROPN_ACRO_KAKSI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	2	
 PROPN_ACRO_KOLME	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	3	
+PROPN_ACRO_KOLMAS	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	III	
+PROPN_ACRO_KUUSI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	6	
 PROPN_ACRO_LEHTI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	.	
 PROPN_ACRO_METRI	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	.	
 PROPN_ACRO_NELJÄ	PROPN	ACRONYM	0	None	False	False	both	None	None	False	False	4	
@@ -1765,6 +1769,7 @@ PROPN_KAUSI	PROPN	NOUN	27	None	False	weaken	back	None	None	False	False	si	si
 PROPN_KEHVELI	PROPN	NOUN	6	None	False	weaken	front	None	None	False	False	i	i
 PROPN_KENGÄT	PROPN	NOUN	10	G	obligatory	weaken	front	None	None	False	False	ngät	gät
 PROPN_KENKÄ	PROPN	NOUN	10	G	False	weaken	front	ä	None	False	False	nkä	kä
+PROPN_KENTÄT	PROPN	NOUN	10	C	obligatory	weaken	front	None	None	False	False	ntät	tät
 PROPN_KENTTÄ	PROPN	NOUN	10	C	False	weaken	front	ä	None	False	False	ttä	tä
 PROPN_KERITSIMET	PROPN	NOUN	33	None	obligatory	strengthen	front	None	None	False	False	met	met
 PROPN_KERTA	PROPN	NOUN	9	K	False	weaken	back	a	None	False	False	rta	ta
@@ -1775,6 +1780,7 @@ PROPN_KIERRE	PROPN	NOUN	48	K	False	strengthen	front	None	None	False	False	rre	re
 PROPN_KIHARAT	PROPN	NOUN	11	None	obligatory	weaken	back	None	None	False	False	at	t
 PROPN_KIINNE	PROPN	NOUN	48	J	False	strengthen	front	None	None	False	False	nne	ne
 PROPN_KILPI	PROPN	NOUN	7	E	False	weaken	front	None	None	False	False	pi	pi
+PROPN_KINNAS	PROPN	NOUN	41	J	False	strengthen	back	None	None	False	False	nnas	nas
 PROPN_KIRITTÄRET	PROPN	NOUN	32	C	obligatory	strengthen	front	None	None	False	False	ttäret	täret
 PROPN_KIRJA	PROPN	NOUN	9	None	False	weaken	back	a	None	False	False	a	a
 PROPN_KIRVES	PROPN	NOUN	41	None	False	strengthen	front	None	None	False	False	es	s

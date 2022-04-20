@@ -3669,7 +3669,7 @@ Kurun satama	PROPN	PROPN_VOIMA	finer
 Kurupään Taimenjärvi	PROPN	PROPN_KIVI	finer
 Kurvin Hautamaa	PROPN	PROPN_MAA	finer
 Kustaa Aadolfin kari	PROPN	PROPN_RUUVI	finer
-Kustaa III	NOUN	NOUN_ACRO_KOLMAS	unk
+Kustaa III	PROPN	PROPN_ACRO_KOLMAS	omorfi
 Kustannus Oy Duodecim	PROPN	PROPN_PUNK	finer
 Kustannusosakeyhtiö Tammi	PROPN	PROPN_ONNI	finer
 Kustavin Kehäsaari	PROPN	PROPN_RUUHI	finer
