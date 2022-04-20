@@ -7,7 +7,7 @@ lemma	homonym	symbol
 (	PUNCT	initial-bracket
 (?)	PUNCT	sentence-boundary
 )	PUNCT	final-bracket
-,	PUNCT	clause-boundary|comma
+,	PUNCT	clause-boundary,comma
 -	PUNCT	dash
 --	PUNCT	dash
 .	PUNCT	sentence-boundary

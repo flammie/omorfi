@@ -742,14 +742,14 @@ class OmorFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
 
         if wordmap['symbol']:
-            for subcat in wordmap['symbol'].split('|'):
+            for subcat in wordmap['symbol'].split(','):
                 wordmap['analysis'] += self.stuff2lexc(subcat)
 
         if wordmap['prontype']:
-            for stuff in wordmap['prontype'].split("|"):
+            for stuff in wordmap['prontype'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['lex']:
-            for stuff in wordmap['lex'].split("|"):
+            for stuff in wordmap['lex'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['abbr']:
             for stuff in wordmap['abbr'].split("|"):
