@@ -103,7 +103,8 @@ STRICT-TAGS +=
     Person[psor]=3
     Polarity=Neg
     PronType=Dem
-    PronType=Pers
+    PronType=Prs
+    PronType=Rel
     Style=Arch
     Style=Coll
     Tense=Past
@@ -123,6 +124,10 @@ STRICT-TAGS +=
     <*dETITLECASED>
     <Blacklisted=FGK>
     <Blacklisted=PROPN-BLOCKING>
+    <GoesWith=Missing->
+    <AffixType=Prefix>
+    <PropnType=First>
+    <PropnType=Last>
     ;
 OPTIONS += no-inline-sets ;
 
@@ -160,7 +165,7 @@ LIST LOCATIVE-IN = Case=Ine Case=Ade ;
 LIST LOCATIVE-TO = Case=Ill Case=All ;
 LIST LOCATIVE-FROM = Case=Ela Case=Abl ;
 LIST ILL/ALL/PAR = Case=Ill Case=All Case=Par ;
-LIST PERS-PRON-SG = (PronType=Pers Number=Sing) ;
+LIST PERS-PRON-SG = (PronType=Prs Number=Sing) ;
 # ordinals XXX: adj doesn't have ord yet...
 LIST NUM-ORD = (UPOS=NUM NumType=Ord) ;
 LIST ADJ-ORD = (UPOS=ADJ NumType=Ord) ;
@@ -181,6 +186,15 @@ LIST ADJ-ESS = (UPOS=ADJ Case=Ess) (UPOS=DET Case=Ess) (UPOS=PRON PronType=Dem C
 # inmpv sg2 is systematically indv pres sg3
 LIST IMPV-SG2 = (Mood=Imp Person=2 Number=Sing) ;
 LIST INDV-SG3 = (Mood=Ind Person=3 Number=Sing) ;
+# Negation
+LIST NEG-AUX = (UPOS=AUX Polarity=Neg) ;
+# Personals
+LIST PRS-1SG = (UPOS=PRON Person=1 Number=Sing) ;
+LIST PRS-2SG = (UPOS=PRON Person=2 Number=Sing) ;
+LIST PRS-3SG = (UPOS=PRON Person=3 Number=Sing) ;
+LIST PRS-1PL = (UPOS=PRON Person=1 Number=Plur) ;
+LIST PRS-2PL = (UPOS=PRON Person=2 Number=Plur) ;
+LIST PRS-3PL = (UPOS=PRON Person=3 Number=Plur) ;
 # }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
@@ -195,7 +209,12 @@ LIST BADEVIL_WORDS =
     ("par" UPOS=NOUN) ("tule" UPOS=NOUN) ("kuvi" UPOS=NOUN) ("kos" UPOS=NOUN)
     ("mon" UPOS=NOUN) ("lev" UPOS=NOUN) ("ka" UPOS=NOUN)
     ("taka" UPOS=NOUN) ("edus" UPOS=NOUN)
-    ("he" UPOS=INTJ) ;
+    ("he" UPOS=INTJ) ("ja" UPOS=NOUN) ("es" UPOS=NOUN) ("näin" UPOS=NOUN)
+    ("pistin" UPOS=NOUN) ("to" UPOS=NOUN) ("luo" UPOS=NOUN)
+    ("aa" UPOS=NOUN) ("ee" UPOS=NOUN) ("ii" UPOS=NOUN) ("oo" UPOS=NOUN)
+    ("uu" UPOS=NOUN) ("yy" UPOS=NOUN) ("ää" UPOS=NOUN) ("öö" UPOS=NOUN)
+    ("tui" UPOS=NOUN) ("kapi" UPOS=NOUN) ("nim" UPOS=NOUN) ("ma" UPOS=NOUN)
+    ("su" UPOS=NOUN) ("määri" UPOS=NOUN) ;
 
 ## propns that overlap commoner words
 LIST RARER-PROPN =
@@ -225,24 +244,36 @@ LIST RARER-PROPN =
     ("Maakunta" UPOS=PROPN) ("Pia" UPOS=PROPN) ("Per" UPOS=PROPN) ("Olle" UPOS=PROPN)
     ("Johan" UPOS=PROPN) ("Aino" UPOS=PROPN) ("Halunen" UPOS=PROPN) ("Eni" UPOS=PROPN)
     ("Seuranen" UPOS=PROPN) ("Koiranen" UPOS=PROPN) ("Marilla" UPOS=PROPN)
-    ("Marin" UPOS=PROPN) ("Sarja" UPOS=PROPN) ;
-## also some cases where a rare noun blocks commoner propn
+    ("Marin" UPOS=PROPN) ("Sarja" UPOS=PROPN) ("Sen" UPOS=PROPN)
+    ("Tus" UPOS=PROPN) ("Ole" UPOS=PROPN) ("huopa" UPOS=PROPN)
+    ("Huo" UPOS=PROPN) ("Ku" UPOS=PROPN) ("Mar" UPOS=PROPN)
+    ("Mo" UPOS=PROPN) ("On" UPOS=PROPN) ;
+
+## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
 LIST RARER-NOUN =
     ("missouri" UPOS=NOUN) ("tai" UPOS=NOUN) ("vai" UPOS=NOUN)
-    ("muutti" UPOS=NOUN) ("kanna" UPOS=NOUN) ("kerto" UPOS=NOUN) ;
+    ("muutti" UPOS=NOUN) ("kanna" UPOS=NOUN) ("kerto" UPOS=NOUN)
+    ("taita" UPOS=NOUN) ("viisi" UPOS=NOUN) ("koto" UPOS=NOUN)
+    ("suura" UPOS=NOUN) ("sai" UPOS=NOUN) ("saava" UPOS=NOUN)
+    ("pitkänen" UPOS=NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
-## questionable advs that should've been intjs
+## questionable advs that should've been intjs, and some fixed expressions
 LIST RARER-ADV =
     ("kuin" UPOS=ADV) ("kun" UPOS=ADV) ("tai" UPOS=ADV) ("sen" UPOS=ADV)
     ("viisi" UPOS=ADV) ("kuuluu" UPOS=ADV) ("koska" UPOS=ADV)
-    ("pitkää" UPOS=ADV) ("sinut" UPOS=ADV) ;
+    ("pitkää" UPOS=ADV) ("sinut" UPOS=ADV) ("jos" UPOS=ADV)
+    ("sattuu" UPOS=ADV) ("sitä" UPOS=ADV) ;
 ## verbs that shadow some noun forms etc.
 LIST RARER-VERB =
     ("juuria" UPOS=VERB) ("eritä" UPOS=VERB) ("niittää" UPOS=VERB)
     ("nytkiä" UPOS=VERB) ("siitä" UPOS=VERB) ("siittää" UPOS=VERB)
     ("suomia" UPOS=VERB) ("suoria" UPOS=VERB) ("taata" UPOS=VERB)
-    ("vastoa" UPOS=VERB) ("oieta" UPOS=VERB) ("niistää" UPOS=VERB) ;
+    ("vastoa" UPOS=VERB) ("oieta" UPOS=VERB) ("niistää" UPOS=VERB)
+    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ;
+## some adjectives that shadow probably a commoner noun
+LIST RARER-ADJ =
+    ("ehta" UPOS=ADJ) ;
 ## adverbs that are much commoner than nominal counterparts
 LIST DEFAULT-ADV =
     ("erikseen" UPOS=ADV) ("erilleen" UPOS=ADV) ("erillään" UPOS=ADV)
@@ -308,7 +339,8 @@ LIST RARER-ADP =
 LIST ADPS-WITH-PAR =
     ("ylös" UPOS=ADP) ("päin" UPOS=ADP) ("vastaan" UPOS=ADP)
     ("ilman" UPOS=ADP) ("kautta" UPOS=ADP) ("huolimatta" UPOS=ADP)
-    ("asti" UPOS=ADP) ("sitten" UPOS=ADP) ("ennen" UPOS=ADP) ;
+    ("asti" UPOS=ADP) ("sitten" UPOS=ADP) ("ennen" UPOS=ADP)
+    ("varten" UPOS=ADP) ("kohden" UPOS=ADP) ;
 ## adositions with genitive complement
 LIST ADPS-WITH-GEN =
     ("takana" UPOS=ADP) ("mukaan" UPOS=ADP) ("vuoksi" UPOS=ADP)
@@ -316,16 +348,20 @@ LIST ADPS-WITH-GEN =
     ("puolesta" UPOS=ADP) ("läpi" UPOS=ADP) ("johdolla" UPOS=ADP)
     ("sisällä" UPOS=ADP) ("perusteella" UPOS=ADP) ("sijaan" UPOS=ADP)
     ("suhteen" UPOS=ADP) ("avulla" UPOS=ADP) ("jälkeen" UPOS=ADP)
-    ("myötä" UPOS=ADP) ("edessä" UPOS=ADP) ("alle" UPOS=ADP) ;
+    ("myötä" UPOS=ADP) ("edessä" UPOS=ADP) ("alle" UPOS=ADP)
+    ("aikana" UPOS=ADP) ("joukossa" UPOS=ADP) ("alapuolella" UPOS=ADP)
+    ("lisäksi" UPOS=ADP) ("alussa" UPOS=ADP) ("päälle" UPOS=ADP)
+    ("ohi" UPOS=ADP) ("mukana" UPOS=ADP) ;
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" UPOS=ADP) ;
 ## adpositions with illative complement
-LIST ADPS-WITH-ELA = ("ulos" UPOS=ADP) ;
+LIST ADPS-WITH-ELA = ("ulos" UPOS=ADP) ("riippuen" UPOS=ADP) ;
 ## Verbs with inf complements
 ## ... infa
 LIST VERBS-WITH-INFA =
     ("alkaa" UPOS=AUX) ("haluta" UPOS=AUX) ("tahtoa" UPOS=AUX)
-    ("saattaa" UPOS=AUX) ("aikoa" UPOS=AUX) ("pitää" UPOS=AUX) ;
+    ("saattaa" UPOS=AUX) ("aikoa" UPOS=AUX) ("pitää" UPOS=AUX)
+    ("voida" UPOS=AUX) ;
 ## ... inf maan
 LIST VERBS-WITH-INFMAAN =
     ("alkaa" UPOS=AUX) ("päästä" UPOS=AUX) ("ruveta" UPOS=AUX)
@@ -349,7 +385,7 @@ LIST TIME-ADV =
     ("sunnuntaina" UPOS=ADV) ;
 ## curse words that go after voi
 LIST VITTUSAATANA =
-    ("vittu" UPOS=INTJ) ("saatana" UPOS=INTJ)
+    ("vittu" UPOS=INTJ) ("saatana" UPOS=INTJ) ("kiitos" UPOS=INTJ)
     ("hitto" UPOS=INTJ) ("perkele" UPOS=INTJ) ("!" UPOS=PUNCT) ;
 ## the words where 2nd person singular possessives overlap with e.g. past
 ## 3rd person singular e.g. "voisi" = {your butter(s), he could},
@@ -375,14 +411,20 @@ LIST SG2POSS-CONFUSION =
     ("tapa" Number[psor]=Sing Person[psor]=2)
     ("tosi" Number[psor]=Sing Person[psor]=2)
     ("pola" Number[psor]=Sing Person[psor]=2 Case=Ill)
-    ("poli" Number[psor]=Sing Person[psor]=2 Case=Ill);
+    ("poli" Number[psor]=Sing Person[psor]=2 Case=Ill)
+    ("kohta" Number[psor]=Sing Person[psor]=2)
+    ("ohja" Number[psor]=Sing Person[psor]=2)
+    ("mana" Number[psor]=Sing Person[psor]=2) ;
+LIST ADJ-RARELY-NOUN = ("kauhea" UPOS=NOUN) ("komea" UPOS=NOUN) ;
+LIST WHAT-THE-ADJ = ("pelko" UPOS=ADJ) ("koko" UPOS=ADJ) ;
 ## }}}
 ## {{{ words
 ## "siitä" = {to conceive, from it}
-LIST SIITTÄÄ-VERBS =
+LIST SIITÄ-VERBS =
     ("siittää" UPOS=VERB) ("siitä" UPOS=VERB) ("si’itä" UPOS=VERB) ;
 LIST SIITÄ-DEM =
     ("se" UPOS=PRON) ("se" UPOS=DET) ;
+LIST SIITÄ-NOUN = ("sii" UPOS=NOUN) ;
 ## "sinun" = yours
 LIST SINUN = ("sinä" Number=Sing Case=Gen) ;
 ## ja ADV is spoken
@@ -400,6 +442,9 @@ LIST ETTÄ-CCONJ = ("että" UPOS=CCONJ) ;
 ## niin - kuin is paired cconj
 LIST NIIN-CCONJ = ("niin" UPOS=CCONJ) ;
 LIST KUIN-CCONJ = ("kuin" UPOS=CCONJ) ;
+## kun - taas is paired sconj?
+LIST KUN-SCONJ = ("kun" UPOS=SCONJ) ;
+LIST TAAS-SCONJ = ("taas" UPOS=SCONJ) ;
 ## niiden {niisi’s, theirs} (I dunno what niisi is)
 LIST NIISI-NOUN = ("niisi" UPOS=NOUN) ;
 ## ensin {first, some odd verb that doesn't really go with 1sg}
@@ -412,7 +457,7 @@ LIST VÄHÄN-ADV = ("vähän" UPOS=ADV) ;
 LIST VÄHÄN-ADJ = ("vähä" UPOS=ADJ Case=Gen) ;
 ## vaikka mitä
 LIST VAIKKA-ADV = ("vaikka" UPOS=ADV) ;
-LIST MIKÄ-PRON = ("mikä" UPOS=PRON) ;
+LIST ITG = ("mikä" UPOS=PRON) ("kuinka" UPOS=ADV) ;
 ## häntä {tail, him}
 LIST HÄNTÄ-NOUN = ("häntä" UPOS=NOUN) ;
 LIST HÄNTÄ-PRON = ("hän" UPOS=PRON Case=Par) ;
@@ -466,6 +511,11 @@ LIST ARVOINEN-ADJ = ("arvoinen" UPOS=ADJ) ;
 LIST KALLIS-ADJ = ("kallis" UPOS=ADJ) ;
 ## pieniä = {make smaller, small}
 LIST PIENIÄ-ADJ = ("pieni" UPOS=ADJ Case=Par) ;
+LIST PIENI-ADJ = ("pieni" UPOS=ADJ) ;
+LIST PIENIÄ-VERB = ("pieniä" UPOS=VERB) ;
+LIST PIENI-VERB = ("pieniä" UPOS=VERB Mood=Imp)
+                  ("pieniä" UPOS=VERB Tense=Past)
+                  ("pieniä" UPOS=VERB Connegative=Yes) ;
 ## vaaleissa etc. {elections, blondes}
 LIST VAALEISSA-ADJ = ("vaalea" UPOS=ADJ Number=Plur Case=Ine) ;
 LIST VAALEISTA-ADJ = ("vaalea" UPOS=ADJ Number=Plur Case=Ela) ;
@@ -604,6 +654,29 @@ LIST JOISSA-NOUN = ("joki" UPOS=NOUN Number=Plur) ;
 ## apu, avu
 LIST AVU-NOUN = ("apu" UPOS=NOUN) ;
 LIST APU-NOUN = ("avu" UPOS=NOUN) ;
+# aa, aina
+LIST AINA-ADV = ("aina" UPOS=ADV) ;
+LIST AINA-NOUN = ("aa" UPOS=NOUN Number=Plur Case=Ess) ;
+# löytää, löysä
+LIST LÖYSIN-VERB = ("löytää" UPOS=VERB Tense=Past) ;
+LIST LÖYSIN-NOUNADJ = ("löysä" UPOS=ADJ Degree=Sup)
+                      ("löysä" UPOS=NOUN Case=Ins)
+                      ("Löysä" UPOS=PROPN Case=Ins) ;
+# maa, maittaa
+LIST MAITA-NOUN = ("maa" UPOS=NOUN Case=Par Number=Plur) ;
+LIST MAITA-VERB = ("maittaa" UPOS=VERB) ;
+# vietti, viettää
+LIST VIETTI-NOUN = ("vietti" UPOS=NOUN) ;
+LIST VIETTI-VERB = ("viettää" UPOS=VERB) ;
+# päivää, päivätä
+LIST PÄIVÄÄ-NOUN = ("päivä" UPOS=NOUN) ;
+LIST PÄIVÄÄ-VERB = ("päivätä" UPOS=VERB) ;
+# muun muassa
+LIST MUUN-ADV = ("muun" UPOS=ADV) ("muiden" UPOS=ADV) ;
+LIST MUASSA-ADV = ("muassa" UPOS=ADV) ;
+# huutaa, huusi
+LIST HUUSIN-NOUN = ("huusi" UPOS=NOUN) ;
+LIST HUUSIN-VERB = ("huutaa" UPOS=VERB) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -618,6 +691,8 @@ LIST MIN-COMPOUND = <CMP=MIN> ;
 LIST NONSTANDARDS = Style=Coll Typo=Yes Style=Arch ;
 ## derivations (apart from the near-inflectional)
 LIST DERIVATIONS = Derivation=Inen Derivation=Ja Derivation=U ;
+## Missing hyphen from compound
+LIST MISSING-HYPHEN = <GoesWith=Missing-> <AffixType=Prefix> ;
 ## Any other guessers
 LIST GUESSED = <Guesser> ;
 # }}}
@@ -635,7 +710,6 @@ REMOVE:UD-ordinal-is-adjective NUM-ORD (0 ADJ-ORD) ;
 ## (two is needed for different standards / treebanks)
 REMOVE:infa-is-sg INFA-PL (0 INFA-SG) ;
 # }}}
-
 SECTION # {{{ words minimal context
 
 # trad. possessives
@@ -653,7 +727,10 @@ REMOVE:että-intj ETTÄ-INTJ (NOT -1 UPOS=INTJ) ;
 REMOVE:sekä-että-cconj ETTÄ-CCONJ (NOT -1* SEKÄ-CCONJ) ;
 ##! € oli siellä niin kaljaa kuin apinoitakin.
 REMOVE:niin-kuin-cconj NIIN-CCONJ (NOT 1* KUIN-CCONJ) ;
-
+##! € oli siellä sekä kaljaa että apinoita.
+REMOVE:kun-taas-sconj TAAS-SCONJ (NOT -1* KUN-SCONJ) ;
+##! € muun muassa pähkinöitä
+REMOVE:muun-muassa MUUN-ADV (NOT 1 MUASSA-ADV) ;
 ##! $ Helsingissä on lunta.
 ##! € näitkö sen uuden van Helsingin episodin?
 REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
@@ -669,14 +746,27 @@ REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 UPOS=NOUN) ;
 
 ##! € kun rahaa ei ole, löytää vaikka mitä.
 ##! $ vaikka rahaa ei ole, löytää sitä.
-REMOVE:vaikka-mitä VAIKKA-ADV (NEGATE 1 MIKÄ-PRON) ;
+REMOVE:vaikka-mitä VAIKKA-ADV (NEGATE 1 ITG) ;
 
 ##! $ niiden pitää tulla myös.
 REMOVE:niisi-niiden NIISI-NOUN (0 UPOS=PRON) ;
 
+##
+REMOVE:päivätä-päivää PÄIVÄÄ-VERB (0 PÄIVÄÄ-NOUN) ;
+
+##! $ löysin sinut!
+REMOVE:löysä-löytää LÖYSIN-NOUNADJ (0 LÖYSIN-VERB) ;
+
+##! $ useita maita koetelleessa myrskyssä
+REMOVE:maa-maittaa MAITA-VERB (0 MAITA-NOUN) ;
+
+##! $ parlamentti vietti minuutin hiljaisuuden
+REMOVE:viettää-vietti VIETTI-NOUN (0 VIETTI-VERB) ;
+
 ##! $ siitä en tiedä mitään.
 ##! € siitä maailma täyteen lapsia.
-REMOVE:siittää-siitä SIITTÄÄ-VERBS (0 SIITÄ-DEM) ;
+REMOVE:siittää-siitä SIITÄ-VERBS (0 SIITÄ-DEM) ;
+REMOVE:sii-siitä SIITÄ-NOUN (0 SIITÄ-DEM) ;
 
 ##! $ ensin syödään sitten vasta mennään.
 REMOVE:entää-ensin ENTÄÄ-VERB (0 ENSIN-ADV) ;
@@ -721,13 +811,20 @@ REMOVE:merkittävä-over-merkittää MERKITTÄVÄ-DRV-VA (0 MERKITTÄVÄ-ADJ) ;
 SELECT:ei-vaan-adv VAAN-ADV (-1 Polarity=Neg) ;
 ##! $ ulkopolitiikka ei tehdä pressan johdolla, vaan pressasta huolimatta
 SELECT:ei-blah-vaan-cconj VAAN-CCONJ (-2* Polarity=Neg BARRIER BEGINSENT) ;
+##! $ heitä pidetään viisaina
+REMOVE:pitää-over-pidetä PIDETÄ-PASS (0 PITÄÄ-PASS) ;
+##! € jotta voisi keksiä esimerkin
+REMOVE:missing-hyphen-compounds MISSING-HYPHEN ;
+
 # }}}
-SECTION # {{{ FGK-word-specific
+SECTION # {{{ Fred Karlsson's CG1
 # I have only selected the ones I can explain and fidn examples of:
 # I also skipped:
 # * adps that already have case bindings
 # * and advs too
 # * nouns that have generic poss solution (kuusi, voisi, ...)
+# in general a lot of things also relate to the lexicon / analyser used and
+# aren't so directly portable.
 # ––Flammie
 
 ##! $ emme ratkaise pitkän ajan ongelmia.
@@ -773,8 +870,11 @@ SELECT:kallis-adj KALLIS-ADJ (0 KALLIS-NOUN) ;
 
 
 ##! $ pieniä sieviä sieniä.
-SELECT:pieniä-adj PIENIÄ-ADJ (1 Case=Par) ;
+REMOVE:pieniä-adj PIENIÄ-VERB (0 PIENIÄ-ADJ) ;
 
+##! $ pieni poika on hänen siskonsa.
+##! € pieni porkkana keittoa varten.
+REMOVE:pieni-adj PIENI-VERB (0 PIENI-ADJ) ;
 
 ##! € presidentti Trump voitti vaaleissa.
 ##! $ vaaleissa munkeissa on enemmän makua.
@@ -953,6 +1053,15 @@ SELECT:lähtien-after-from-case LÄHTIEN-ADP (-1* LOCATIVE-FROM BARRIER UPOS=VER
 ##! € avun tarpeessa
 REMOVE:apu-over-avu AVU-NOUN (0 AVU-NOUN) ;
 
+##! € aina pitää jaksaa
+REMOVE:aina-over-aa AINA-NOUN (0 AINA-ADV) ;
+
+## potentially bad
+SELECT:joka-over-joki JOISSA-PRON (0 JOISSA-NOUN) ;
+
+##! $ huusin lujaa.
+SELECT:huutaa-over-huusi HUUSIN-VERB (0 HUUSIN-NOUN) ;
+
 #
 # selected words from original Karlsson's cg-1 end here }}}
 SECTION # {{{ grammar and context
@@ -961,16 +1070,17 @@ SECTION # {{{ grammar and context
 ##! € en tule.
 ##! € ole hiljaa.
 IFF:conneg-when-neg Connegative=Yes (-1* Polarity=Neg BARRIER Connegative=Yes) ;
-SELECT:neg-when-conneg Polarity=Neg (1* Connegative=Yes BARRIER UPOS=VERB) ;
+SELECT:neg-when-conneg NEG-AUX (1* Connegative=Yes BARRIER UPOS=VERB) ;
 ##! € poliisilla on ollut etsintäatehtävä.
 ##! € katoamisilmoitus on levinnyt sosiaalisessa mediassa.
-SELECT:perfect-tense PartForm=Past (-1* COPULA BARRIER VERBAUX) ;
+SELECT:perfect-participle PartForm=Past (-1* COPULA BARRIER VERBAUX) ;
+SELECT:perfect-copula COPULA (1* PartForm=Past BARRIER VERBAUX) ;
 
 ##! €
-SELECT:adp-gen-complements ADPS-WITH-GEN (0* Case=Gen BARRIER UPOS=ADP) ;
-SELECT:adp-par-complements ADPS-WITH-PAR (0* Case=Par BARRIER UPOS=ADP) ;
-SELECT:adp-ill-complements ADPS-WITH-ILL (0* Case=Ill BARRIER UPOS=ADP) ;
-SELECT:adp-ela-complements ADPS-WITH-ELA (0* Case=Ela BARRIER UPOS=ADP) ;
+IFF:adp-gen-complements ADPS-WITH-GEN (0* Case=Gen BARRIER UPOS=ADP) ;
+IFF:adp-par-complements ADPS-WITH-PAR (0* Case=Par BARRIER UPOS=ADP) ;
+IFF:adp-ill-complements ADPS-WITH-ILL (0* Case=Ill BARRIER UPOS=ADP) ;
+IFF:adp-ela-complements ADPS-WITH-ELA (0* Case=Ela BARRIER UPOS=ADP) ;
 
 ##! omorfi det is ~pron dem
 ##! €
@@ -1012,6 +1122,19 @@ SELECT:final-needs-initial <Position=Final> (-2* <Position=Initial> BARRIER <Pos
 ##! $ sanoja "lainattuja sanoja".
 SELECT:initial-needs-final <Position=Initial> (2* <Position=Final> BARRIER <Position=Initial>) ;
 
+##! $ minä unelmoin
+SELECT:subject-1sg PRS-1SG (1 UPOS=VERB + Person=1 + Number=Sing) ;
+##! $ sinä tiedät
+SELECT:subject-2sg PRS-2SG (1 UPOS=VERB + Person=2 + Number=Sing) ;
+##! $ me näemme
+SELECT:subject-1pl PRS-1PL (1 UPOS=VERB + Person=1 + Number=Plur) ;
+##! $ te tiedätte
+SELECT:subject-2pl PRS-2PL (1 UPOS=VERB + Person=2 + Number=Plur) ;
+##! $ Alankomaiden suurin kaupunki
+REMOVE:superlative-over-instructive Case=Ins (0 Degree=Sup) ;
+##! firstname lastname
+SELECT:firstname-lastname <PropnType=First> (1 <PropnType=Last>) ;
+SELECT:lastname-after-firstname <PropnType=Last> (-1 <PropnType=First>) ;
 # }}}
 AFTER-SECTIONS # {{{ last-resorts
 
@@ -1086,9 +1209,14 @@ REMOVE:adj-over-drv-va Derivation=Va (0 UPOS=ADJ) ;
 REMOVE:prefer-pri-sg3-over-imp-sg2 IMPV-SG2 (0 INDV-SG3) ;
 REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 
-SELECT:joka-over-joki JOISSA-PRON (0 JOISSA-NOUN) ;
-##! $ heitä pidetään viisaina
-REMOVE:pitää-over-pidetä PIDETÄ-PASS (0 PITÄÄ-PASS) ;
+REMOVE:odd-adjs WHAT-THE-ADJ ;
+
+# not all lines sent to disambiguator are sentences with a verb but
+# if a user inputs verbless sentence they can expect such parses
+SELECT:try-to-find-one-verb-per-sentence UPOS=VERB (NOT 0*C UPOS=VERB) ;
+
+SELECT:adverb-last-resort UPOS=ADV (-1C UPOS=VERB) ;
+
 # }}}
 
 # vim: set ft=vislcg3 foldmethod=marker:
