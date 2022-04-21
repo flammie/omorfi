@@ -13,7 +13,8 @@ from ..analysis import Analysis
 def next_plaintext(f):
     '''tokenise a line of text.
 
-    @todo should get sentence from plaintext in the future.'''
+    This tokenisation only uses split and only considers tokens '?', '!', and
+    '.' as the end of a sentence.'''
     tokens = list()
     for line in f:
         surfs = line.strip().split()
@@ -25,7 +26,10 @@ def next_plaintext(f):
             else:
                 token.firstinsent = False
             token.pos = pos
-            pos += 1
+            if surf in ".?!":
+                pos = 1
+            else:
+                pos += 1
             tokens.append(token)
         sep = Token()
         sep.nontoken = "separator"
