@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.71])
+AC_PREREQ([2.69])
 AC_INIT([omorfi],[0.9.9],[https://github.com/flammie/omorfi/issues],[https://github.com/flammie/omorfi/])
 LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
