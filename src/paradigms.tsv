@@ -2051,7 +2051,7 @@ PROPN_SIUNAAMATTOMAT	PROPN	NOUN	34	C	obligatory	strengthen	back	None	None	False	
 PROPN_SIVISTYNYT	PROPN	NOUN	47	None	False	strengthen	front	y	None	False	False	nyt	yt
 PROPN_SKEITTI	PROPN	NOUN	5	C	False	weaken	front	None	None	False	False	tti	ti
 PROPN_SOINTI	PROPN	NOUN	5	J	False	weaken	back	None	None	False	False	nti	ti
-PROPN_SOKEA	PROPN	NOUN	15	None	False	weaken	back	a	None	False	False	ea	a
+PROPN_SOKEA	PROPN	NOUN	15	None	False	weaken	back	a	None	False	False	[ée]a	a
 PROPN_SOTA	PROPN	NOUN	10	F	False	weaken	back	a	None	False	False	ta	ta
 PROPN_SPOTIFY	PROPN	NOUN	21	None	False	weaken	both	i	None	False	False	.	
 PROPN_STADION	PROPN	NOUN	6	None	False	weaken	back	None	None	False	False		

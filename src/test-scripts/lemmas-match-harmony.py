@@ -65,9 +65,9 @@ def main():
             if tsv_parts['harmony'] == 'both':
                 continue
             if tsv_parts['harmony'] == 'back':
-                harmony_regex = '[AOUŌÓÅaouůåôąáăâāóōúūû][^äöy]*'
+                harmony_regex = '[AÁOUŌÓÅaouůåôąáàăâāóōúūû][^äöy]*'
             elif tsv_parts['harmony'] == 'front':
-                harmony_regex = '[ÄÖYIEĒÉÍäöyieíüýéőèěęøæõ][^aou]*'
+                harmony_regex = '[ÄÖYIEĒÉÍäöyieíüýéőèêěęøæõ][^aou]*'
             else:
                 print("Unknown harmony:", tsv_parts['harmony'], file=stderr)
                 errors=True
