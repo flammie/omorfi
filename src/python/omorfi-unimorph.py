@@ -73,8 +73,52 @@ def main():
         if options.verbose and lines % 1000 == 0:
             print(lines, '...')
         lemma = fields[0]
+        unimorph = fields[2]
+        # replace known bugs unimorph 3
+        unimorph = unimorph.replace('ACC', 'NOM').replace('GEADJ', 'GEN') # 3
+        # replace known bugs unimorph 4
+        if unimorph == 'N;PSS1S':
+            unimorph = 'N;NOM;SG;PSS1S'
+        elif unimorph == 'N;PSS2S':
+            unimorph = 'N;NOM;SG;PSS2S'
+        elif unimorph == 'N;PSS3':
+            unimorph = 'N;NOM;SG;PSS3'
+        elif unimorph == 'N;PSS1P':
+            unimorph = 'N;NOM;SG;PSS1P'
+        elif unimorph == 'N;PSS2P':
+            unimorph = 'N;NOM;SG;PSS2P'
+        # known bugs?
+        if 'GEN;PL;PSS' in unimorph:
+            continue
+        elif 'PRT;SG;PSS' in unimorph:
+            continue
+        elif 'PRT;PL;PSS' in unimorph:
+            continue
+        elif 'IN+ESS;SG;PSS' in unimorph:
+            continue
+        elif 'IN+ESS;PL;PSS' in unimorph:
+            continue
+        elif 'IN+ABL;SG;PSS' in unimorph:
+            continue
+        elif 'IN+ABL;PL;PSS' in unimorph:
+            continue
+        elif 'IN+ALL;SG;PSS' in unimorph:
+            continue
+        elif 'IN+ALL;PL;PSS' in unimorph:
+            continue
+        elif 'AT+ESS;SG;PSS' in unimorph:
+            continue
+        elif 'AT+ESS;PL;PSS' in unimorph:
+            continue
+        elif 'AT+ABL;SG;PSS' in unimorph:
+            continue
+        elif 'AT+ABL;PL;PSS' in unimorph:
+            continue
+        elif 'AT+ALL;SG;PSS' in unimorph:
+            continue
+        elif 'AT+ALL;PL;PSS' in unimorph:
+            continue
         surf = fields[1]
-        unimorph = fields[2].replace('ACC', 'NOM').replace('GEADJ', 'GEN')
         token = Token(surf)
         omorfi.analyse(token)
         if not token.is_oov():
@@ -89,6 +133,7 @@ def main():
         for anal in token.analyses:
             analhyp = anal.printable_unimorph()
             lemmahyp = ''.join(anal.get_lemmas())
+            lemmahackhyp = ''.join([x.strip('-') for x in anal.get_lemmas()])
             if analhyp == unimorph:
                 found_anals = True
                 permuted = False
@@ -101,6 +146,11 @@ def main():
                 # print("ANALMISS", analhyp, unimorph, sep='\t',
                 #      file=options.outfile)
             if lemma == lemmahyp:
+                found_lemma = True
+            elif lemma == lemmahackhyp:
+                found_lemma = True
+            elif lemma == lemmahyp.replace("š", "s") or \
+                    lemma == lemmahackhyp.replace("š", "s"):
                 found_lemma = True
             else:
                 pass

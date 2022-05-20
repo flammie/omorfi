@@ -775,7 +775,7 @@ class Analysis:
     def get_unimorph_feats(self):
         '''Get Unimorph analyses from token data.'''
         rvs = list()
-        if self.upos == 'NOUN':
+        if self.upos == 'NOUN' or self.upos == 'PROPN':
             rvs += ['N']
         elif self.upos == 'VERB':
             if 'PartForm' in self.ufeats:
@@ -823,11 +823,23 @@ class Analysis:
                     print(key, value, "for unimorph", file=stderr)
                     exit(1)
             elif key == 'Number[psor]':
-                # ignored in unimroph
-                pass
+                if value == 'Sing':
+                    rvs += ['PSS_S']
+                elif value == 'Plur':
+                    rvs += ['PSS_P']
+                else:
+                    print(key, value, "for unimorph", file=stderr)
+                    exit(1)
             elif key == 'Person[psor]':
-                # ignored in unimroph
-                pass
+                if value == '1':
+                    rvs += ['PSS1']
+                elif value == '2':
+                    rvs += ['PSS2']
+                elif value == '3':
+                    rvs += ['PSS3']
+                else:
+                    print(key, value, "for unimorph", file=stderr)
+                    exit(1)
             elif key == 'Polarity':
                 rvs += ['???']
             elif key == 'Connegative':
@@ -922,6 +934,33 @@ class Analysis:
             rvs = ['V.PTCP', 'PASS', 'PST']
         elif 'NFIN' in rvs:
             rvs = ['V', 'NFIN']
+        # hack combinations
+        if 'COM' in rvs and 'PSS3' in rvs:
+            # ???
+            rvs.remove('PSS3')
+        # merge possessive readings and hac
+        if 'PSS_S' in rvs:
+            if 'PSS1' in rvs:
+                rvs.append('PSS1S')
+                rvs.remove('PSS1')
+            elif 'PSS2' in rvs:
+                rvs.append('PSS2S')
+                rvs.remove('PSS2')
+            elif 'PSS3' in rvs:
+                rvs.append('PSS3S')
+                rvs.remove('PSS3')
+            rvs.remove('PSS_S')
+        elif 'PSS_P' in rvs:
+            if 'PSS1' in rvs:
+                rvs.append('PSS1P')
+                rvs.remove('PSS1')
+            elif 'PSS2' in rvs:
+                rvs.append('PSS2P')
+                rvs.remove('PSS2')
+            elif 'PSS3' in rvs:
+                rvs.append('PSS3P')
+                rvs.remove('PSS3')
+            rvs.remove('PSS_P')
         # re-order as use
         revs = []
         for r in rvs:
