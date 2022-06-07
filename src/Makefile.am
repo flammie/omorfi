@@ -14,6 +14,7 @@ XML_SRCS=externals/kotus-sanalista_v1.xml externals/joukahainen.xml
 # Lexicography
 #
 LEXEMES=lexemes.tsv
+MEWS=mwe.tsv
 # lexical features
 LEMMA_JOINS=attributes/abbr.tsv \
 			attributes/adptype.tsv \
@@ -241,7 +242,7 @@ pkgpythondisamparsulate_PYTHON=\
 # These go into dist tarballs... which we no longer make
 # N.B. for distcheck anyways
 EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
-		   $(TOKENS) \
+		   $(TOKENS) $(MEWS) $(MWE_JOINS) \
 		   $(SCIRPTS) \
 		   $(CONTINUATIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
