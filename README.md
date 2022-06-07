@@ -9,9 +9,6 @@ words and texts.
 * ⚡ blazing fast
 
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
-(stable master branch:
-[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
-)
 ![CI](https://github.com/flammie/omorfi/workflows/CI/badge.svg)
 
 ## Documentation
@@ -28,7 +25,7 @@ details, see [omorfi articles](//flammie.github.io/omorfi/articles.html).
 
 ## Downloading and further information
 
-Omorfi packages can be downloaded from github:
+Omorfi source packages can be downloaded from github:
 
 * [omorfi releases](https://github.com/flammie/omorfi/releases)
 
@@ -84,7 +81,7 @@ working directory.
 
 ### Python-bindings only
 
-It is possible to install only python bindings via pip or anaconda. The
+It is possible to install only python bindings via `pip` or `anaconda`. The
 dependencies that are not available in pip or anaconda will not be used, e.g.
 syntactic analysis and disambiguation using VISL CG 3.
 
