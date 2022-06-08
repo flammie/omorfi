@@ -28,7 +28,7 @@ following pipelines are described in this document:
 The following examples have been run in the omorfi source dir after succesful
 installation. The command lines look like this:
 
-```
+```console
 $
 ```
 
@@ -44,7 +44,7 @@ part of console output:
 
 The example texts used here are part of omorfi distribution:
 
-```
+```console
 $ cat test/test.text
 Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa.
 Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti maanantaina.
@@ -65,8 +65,10 @@ taloussuhteita maailman kolmanneksi suurimpaan talouteen.
 This newspaper text originates from [Shared task of 1st International Conference
 on Machine Translation](http://statmt.org/wmt16/)
 
-**NB:** The examples below use the extended dictionary, `-X`, for more
+**NB:** The examples below use the extended dictionary, for more
 information of this, see the [Notes about lexicon sizes](Smaller-lexicons.html).
+If you are looking for limited dictionary analyses add `-Z` to every bash
+command or replace `describe` with `analyse` in langauge model file names.
 
 The output in examples is re-wrapped to fit browser windows and editors, some of
 the lines in the real world output will be very long. I use the ↲ symbol to
@@ -79,7 +81,7 @@ it is possible to get some of the models for analysis from the internet (the
 long URLs redacted from output, note this was on pre-release version so your
 output should be slightly different):
 
-```
+```console
 $ omorfi-download.bash
 --2018-11-16 12:57:07--
 https://github.com/flammie/omorfi/releases/download/...
@@ -117,8 +119,8 @@ the binaries in the directory called `src/generated/`.
 
 This is probably what most users want.
 
-```
-$ omorfi-disambiguate-text.sh -X test/test.text
+```console
+$ omorfi-disambiguate-text.sh test/test.text
 Lines: 10 Tokens: 110 Ratio: 11.0 tokens/line
 CPU time: 0.005696905999999988 Real time: 0.005708508950192481
 Tokens per timeunit: 19269.480167196896 Lines per timeunit: 1751.7709242906271
@@ -198,8 +200,8 @@ It is possible to view the full ambiguous analyses in this format as well, i.e.
 before the CG rules try to remove most unlikely things. To do so, use
 omorfi-vislcg3.bash script:
 
-```
-$ omorfi-vislcg.bash -X test/test.text
+```console
+$ omorfi-vislcg.bash test/test.text
 ...
 "<Juankosken>"
 	"Juankoski" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
@@ -295,8 +297,8 @@ Traditional Finite-State Morphology produces all possible hypotheses of each
 input token in tabular format. This format uses so-called raw omorfi style
 analysis strings. This can be created with `omorfi-analyse-text.sh`:
 
-```
-$ omorfi-analyse-text.sh -X test/test.text
+```console
+$ omorfi-analyse-text.sh test/test.text
 Juankosken	[WORD_ID=Juankoski][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
 Juankosken	[WORD_ID=juan][UPOS=NOUN][SEM=CURRENCY][NUM=SG][CASE=NOM]↲
             [BOUNDARY=COMPOUND][WORD_ID=koski][UPOS=NOUN][NUM=SG][CASE=GEN]
@@ -388,7 +390,7 @@ If your text is already split into word-forms (one word-form per line), it can
 be analysed faster with `omorfi-analyse-tokenised.sh` tool:
 
 ```
-$ omorfi-analyse-tokenised.sh -X test/wordforms.list
+$ omorfi-analyse-tokenised.sh test/wordforms.list
 .	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]	0,000000
 
 1	[WORD_ID=1][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD]	0,000000
@@ -421,8 +423,8 @@ CONLL-U.
 
 Use `omorfi-conllu.bash` for basic parsing:
 
-```
-$ omorfi-conllu.bash -X test/test.text
+```console
+$ omorfi-conllu.bash test/test.text
 reading from <stdin>
 # new doc id= <stdin>
 # sent_id = 1
@@ -479,8 +481,8 @@ For more options there is a python script `omorfi-conllu.py`.
 
 Omorfi can output FTB3.1-compatible format with `omorfi-ftb3.bash`:
 
-```
-$ omorfi-ftb3.bash -X test/test.text
+```console
+$ omorfi-ftb3.bash test/test.text
 reading from <stdin>
 <s><loc file="<stdin>" line="1" />
 1	Juankosken	Juankoski	N	N	N Prop Sg Gen Prop	_	_	_	_
@@ -517,8 +519,8 @@ reading from <stdin>
 
 It is possible to get naïve coverage estimates with `omorfi-freq-evals.bash`:
 
-```
-$ omorfi-freq-evals.bash -X test/test.text
+```console
+$ omorfi-freq-evals.bash test/test.text
 reading from <stdin>
 1	OOV	Shinzo
 CPU time: 0.01207244099999999 real time: 0.025647345988545567
@@ -536,9 +538,10 @@ Precision/Recall analysis over string matches.
 ### omorfi-tokenise.bash
 
 Most tools will handle tokenisation internally, if you want to see the
-intermediate steps for example, you can invoke `omorfi-tokenise.bash` directly:
+intermediate steps or just tokenise, you can invoke
+`omorfi-tokenise.bash` directly:
 
-```
+```console
 $ omorfi-tokenise.bash -X test/test.text
 Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa .
 Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti maanantaina .
@@ -549,55 +552,12 @@ Juankosken kaupunginvaltuusto hyväksyi liitoksen viime viikolla .
 For more output formats and options, the python script `omorfi-tokenise.py` is
 available.
 
-E.g. for CONLL-U and so Universal dependencies, you can use `omorfi-tokenise.py
--O conllu`:
-
-```
-$ omorfi-tokenise.py -a /usr/local/share/omorfi/omorfi.describe.hfst \
-  -i test/test.text -O conllu
-# new doc id= test/test.text
-# sent_id = 1
-# text = Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa.
-1	Juankosken	_	_	_	_	_	_	_	_
-2	kaupunki	_	_	_	_	_	_	_	_
-3	liittyy	_	_	_	_	_	_	_	_
-4	Kuopion	_	_	_	_	_	_	_	_
-5	kaupunkiin	_	_	_	_	_	_	_	_
-6	vuoden	_	_	_	_	_	_	_	_
-7	2017	_	_	_	_	_	_	_	_
-8	alussa	_	_	_	_	_	_	_	_
-9	.	_	_	_	_	_	_	_	_
-
-# sent_id = 2
-# text = Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti↲
-# maanantaina.
-1	Kuopion	_	_	_	_	_	_	_	_
-2	kaupunginvaltuusto	_	_	_	_	_	_	_	_
-3	hyväksyi	_	_	_	_	_	_	_	_
-4	liitoksen	_	_	_	_	_	_	_	_
-5	yksimielisesti	_	_	_	_	_	_	_	_
-6	maanantaina	_	_	_	_	_	_	_	_
-7	.	_	_	_	_	_	_	_	_
-
-# sent_id = 3
-# text = Juankosken kaupunginvaltuusto hyväksyi liitoksen viime viikolla.
-1	Juankosken	_	_	_	_	_	_	_	_
-2	kaupunginvaltuusto	_	_	_	_	_	_	_	_
-3	hyväksyi	_	_	_	_	_	_	_	_
-4	liitoksen	_	_	_	_	_	_	_	_
-5	viime	_	_	_	_	_	_	_	_
-6	viikolla	_	_	_	_	_	_	_	_
-7	.	_	_	_	_	_	_	_	_
-
-...
-```
-
 ### omorfi-segment.bash
 
 Omorfi can be used to segment word-forms into sub-word units with
-`omorfi-segment.bash`:
+`omorfi-segment.sh`:
 
-```
+```console
 $ omorfi-segment.sh test/test.text
 Juankosken kaupunki liitty→ ←y Kuopion kaupunki→ ←in vuode→ ←n 2017 alussa.
 Kuopion kaupungin→ ←valtuusto hyväksy→ ←i liitokse→ ←n yksi→ ←mielisesti↲
@@ -616,7 +576,7 @@ guaranteed to work.
 Spelling correction may be done if hfst-ospell is installed using
 `omorfi-spell.sh`:
 
-```
+```console
 $ omorfi-spell.sh test/wordforms.list | tail
 "äristä" is in the lexicon...
 "äyräs" is in the lexicon...
@@ -630,17 +590,13 @@ $ omorfi-spell.sh test/wordforms.list | tail
 "öykkäröidä" is in the lexicon...
 ```
 
-The omorfi.zhfst that is built in omorfi could be a drop-in replacement for
-voikko and giellatekno, but theirs is curated for specific purpose of
-spell-checking whereas omorfi is large-coverage dictionary so ymmv, I (Flammie)
-like my spell-checker to recognise and suggest obscure and obscene terms but
-pit's not for everyone.
+For more functionality you should use `hfst-ospell` directly.
 
 ### omorfi-generate.sh
 
 Generating word-forms can be done using `omorfi-generate.sh`:
 
-```
+```console
 $ omorfi-generate.sh
 
 [WORD_ID=kissa][UPOS=NOUN][NUM=SG][CASE=INE]
@@ -670,7 +626,7 @@ hfst-lookup src/generated/omorfi.describe.hfst -q < kauppa.wordforms |\
 The third step is to regenerate the analyses and select only forms that we feel
 are part of inflection and not derivation or compounding.
 
-### omorfi-factorise.sh
+### omorfi-factorise.bash
 
 *NB:* _This format is not actively developed any more as moses is getting kind
 of obsolete in favor of neural machine translation platforms._
@@ -680,31 +636,16 @@ with [https://statmt.org/moses/] to create morphologically informed statistical
 machine translation. Use omorfi-factorise.bash for this:
 
 ```
-$ bash src/bash/omorfi-factorise.bash -X test/test.text
-Juankosken|Juankoski|PROPN|Number.Case|Juankosken↲
-kaupunki|kaupunki|NOUN|Number.Case|kaupunki↲
-liittyy|liittyä|VERB|Number.Person.Tense.Voice.Mood.VerbForm|liitty.y↲
-Kuopion|Kuopio|PROPN|Number.Case|Kuopion↲
-kaupunkiin|kaupunki|NOUN|Number.Case|kaupunki.in↲
+$ bash src/bash/omorfi-factorise.bash test/test.text
+Juankosken|Juankoski|PROPN|Number=Sing.Case=Gen|Juankosken↲
+kaupunki|kaupunki|NOUN|Number=Sing.Case=Nom|kaupunki↲
+liittyy|liittyä|VERB|Voice=Act.↲
+VerbForm=Fin.Mood=Ind.Tense=Pres.Number=Sing.Person=0|liitty.y↲
+Kuopion|Kuopio|PROPN|Number=Sing.Case=Gen|Kuopion↲
+kaupunkiin|kaupunki|NOUN|Number=Sing.Case=Ill|kaupunki.in↲
 vuoden|vuoden|ADV||vuode.n↲
-2017|2017|NUM|NumType|2017↲
-alussa|alku|NOUN|Number.Case|alus.sa↲
-.|.|PUNCT||.↲
-
-Kuopion|Kuopio|PROPN|Number.Case|Kuopion↲
-kaupunginvaltuusto|kaupunginvaltuusto|NOUN|Number.Case|kaupungin.valtuusto↲
-hyväksyi|hyväksyä|VERB|Number.Person.Tense.Voice.Mood.VerbForm|hyväksy.i↲
-liitoksen|liitos|NOUN|Number.Case|liitokse.n↲
-yksimielisesti|yksimielisesti|ADV||yksi.mielisesti↲
-maanantaina|maanantai|NOUN|Number.Case|maanantai.na↲
-.|.|PUNCT||.↲
-
-Juankosken|Juankoski|PROPN|Number.Case|Juankosken↲
-kaupunginvaltuusto|kaupunginvaltuusto|NOUN|Number.Case|kaupungin.valtuusto↲
-hyväksyi|hyväksyä|VERB|Number.Person.Tense.Voice.Mood.VerbForm|hyväksy.i↲
-liitoksen|liitos|NOUN|Number.Case|liitokse.n↲
-viime|viime|ADV||viime↲
-viikolla|viikko|NOUN|Number.Case|viiko.lla↲
+2017|2017|NUM|NumType=Card|2017↲
+alussa|alku|NOUN|Number=Sing.Case=Ine|alus.sa↲
 .|.|PUNCT||.↲
 
 ```
@@ -752,6 +693,49 @@ omorfi-tokenise.py -a src/generated/omorfi.describe.hfst \
 
 The format to use is dependent on the task usually, e.g. conllu for dependency
 analysis and ftb3 for legacy data.
+
+E.g. for CONLL-U and so Universal dependencies, you can use `omorfi-tokenise.py
+-O conllu`:
+
+```
+$ omorfi-tokenise.py -a /usr/local/share/omorfi/omorfi.describe.hfst \
+  -i test/test.text -O conllu
+# new doc id= test/test.text
+# sent_id = 1
+# text = Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa.
+1	Juankosken	_	_	_	_	_	_	_	_
+2	kaupunki	_	_	_	_	_	_	_	_
+3	liittyy	_	_	_	_	_	_	_	_
+4	Kuopion	_	_	_	_	_	_	_	_
+5	kaupunkiin	_	_	_	_	_	_	_	_
+6	vuoden	_	_	_	_	_	_	_	_
+7	2017	_	_	_	_	_	_	_	_
+8	alussa	_	_	_	_	_	_	_	_
+9	.	_	_	_	_	_	_	_	_
+
+# sent_id = 2
+# text = Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti↲
+# maanantaina.
+1	Kuopion	_	_	_	_	_	_	_	_
+2	kaupunginvaltuusto	_	_	_	_	_	_	_	_
+3	hyväksyi	_	_	_	_	_	_	_	_
+4	liitoksen	_	_	_	_	_	_	_	_
+5	yksimielisesti	_	_	_	_	_	_	_	_
+6	maanantaina	_	_	_	_	_	_	_	_
+7	.	_	_	_	_	_	_	_	_
+
+# sent_id = 3
+# text = Juankosken kaupunginvaltuusto hyväksyi liitoksen viime viikolla.
+1	Juankosken	_	_	_	_	_	_	_	_
+2	kaupunginvaltuusto	_	_	_	_	_	_	_	_
+3	hyväksyi	_	_	_	_	_	_	_	_
+4	liitoksen	_	_	_	_	_	_	_	_
+5	viime	_	_	_	_	_	_	_	_
+6	viikolla	_	_	_	_	_	_	_	_
+7	.	_	_	_	_	_	_	_	_
+
+...
+```
 
 # Programming interfaces / bindings
 
@@ -805,7 +789,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-
+Any other part of the omorfi API is subject to change...
 
 ## Java
 
