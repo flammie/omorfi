@@ -69,6 +69,9 @@ def main():
                 anal = token.get_best()
                 pos = anal.get_upos()
                 mrds = anal.get_ufeats()
+                mrdstuff = []
+                for feat, val in mrds.items():
+                    mrdstuff += [feat + "=" + val]
                 lemmas = anal.get_lemmas()
             segments = omorfi.segment(token)
             morphs = "0"
@@ -79,7 +82,7 @@ def main():
                     morphs = ".".join(parts)
                 else:
                     morphs = token.surf
-            print(token.surf, '+'.join(lemmas), pos, '.'.join(mrds),
+            print(token.surf, '+'.join(lemmas), pos, ".".join(mrdstuff),
                   morphs, sep='|', end=' ', file=outfile)
         print(file=outfile)
     exit(0)
