@@ -5,19 +5,6 @@ args=$@
 
 downloadurl="https://github.com/flammie/omorfi/releases/download/${omorfiapi/_alpha/-alpha}/omorfi-hfst-models-${omorfiapi}.tar.xz"
 
-function print_version() {
-    echo "omorfi-download 0.3 (Using omorfi bash API ${omorfiapi})"
-    echo "Copyright (c) 2018 Tommi A Pirinen"
-    echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
-    echo "This is free software: you are free to change and redistribute it."
-    echo "There is NO WARRANTY, to the extent permitted by law."
-
-}
-
-function print_usage() {
-    echo "Usage: $0 [OPTION] [FILENAME...]"
-}
-
 function print_help() {
     echo "Download or update omorfi binary models"
     echo
@@ -29,11 +16,11 @@ function print_help() {
 }
 
 if test x$1 == x-h -o x$1 == x--help ; then
-    print_usage
+    omorfi_print_usage $0
     print_help
     exit 0
 elif test x$1 == x-V -o x$1 == x--version ; then
-    print_version
+    omorfi_print_version $0 0.9
     exit 0
 elif test x$1 == x-v -o x$1 == x--verbose ; then
     verbose=verbose

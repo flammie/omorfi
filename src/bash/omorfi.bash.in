@@ -281,4 +281,31 @@ function omorfi_spell() {
     fi
 }
 
+function omorfi_print_version() {
+    echo "$1 $2 (Using omorfi bash API ${omorfiapi})"
+    echo "Copyright (c) 2022 Flammie A Pirinen"
+    echo "Licence GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>"
+    echo "This is free software: you are free to change and redistribute it."
+    echo "There is NO WARRANTY, to the extent permitted by law."
 
+}
+
+function omorfi_print_usage() {
+    echo "Usage: $1 [OPTION] [FILENAME...]"
+}
+
+function omorfi_print_help() {
+    echo $1
+    echo
+    echo "  -h, --help        Print this help dialog"
+    echo "  -V, --version     Print version info"
+    echo "  -v, --verbose     Print verbosely while processing"
+    echo "  -X, --all-words   Use large-coverage dictionary (default)"
+    echo "  -Z, --mini        Use tiny dictionary"
+    echo
+    echo "If no FILENAMEs are given, input is read from standard input."
+}
+
+function omorfi_deprecated_x {
+    echo "deprecated: $1 is the default, use -Z to negate"
+}
