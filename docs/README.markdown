@@ -1,34 +1,40 @@
-# Omorfi–Open morphology of Finnish
+# 🇫🇮Omorfi–Open morphology of Finnish
 
 This is a free/libre open source morphology of Finnish: a database, tools and
 APIs. Everything you need to build NLP applications processing Finnish language
 words and texts.
 
+* 🇫🇮 high-quality Finnish text analysis and generation
+* 🩸 bleeding edge
+* ⚡ blazing fast
+
 [![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=develop)](https://travis-ci.org/flammie/omorfi)
-(stable master branch:
-[![Build Status](https://travis-ci.org/flammie/omorfi.svg?branch=master)](https://travis-ci.org/flammie/omorfi)
-)
 ![CI](https://github.com/flammie/omorfi/workflows/CI/badge.svg)
 
 ## Documentation
 
+I try to keep this `README` very condensed for github.
 For more detailed information, see [github pages for
 omorfi](//flammie.github.io/omorfi/).
 
 ## Citing and academic works
 
-Citation information can be found in file
-[CITATION](https://github.com/flammie/omorfi/blob/develop/CITATION). For further
+Citation information is available in github's *cite this repository* function,
+backed by the
+[CITATION.cff](https://github.com/flammie/omorfi/blob/CITATION.cff). For further
 details, see [omorfi articles](//flammie.github.io/omorfi/articles.html).
 
 ## Downloading and further information
 
-Omorfi packages can be downloaded from github:
+Omorfi source packages can be downloaded from github:
 
 * [omorfi releases](https://github.com/flammie/omorfi/releases)
 
 or the most current version using git. For more information, see
 [Release policy](https://flammie.github.io/omorfi/releases.html)
+
+For quick installation under restricted environments, see Python or Docker
+instructions below.
 
 ## Dependencies
 
@@ -45,17 +51,28 @@ Optionally:
 * *hfst-ospell-0.2.0* or greater needed for spell-checking
 * *Java 7*, or greater, for Java bindings
 
-For further information, see [Installation
-instructions](//flammie.github.io/omorfi/install.html)
-
 ## Installation
 
-It is possible to download the language models from previous release from the
-internet (Minimal installation) or compile them from the database (Normal
-installation), the former is recommended for new users and latter for advanced
-users.
+For detailed instructions and explanations of different options, see
+[Installation instructions](//flammie.github.io/omorfi/install.html) on the
+github pages site. This readme is a quick reference.
 
-### Minimal installation
+### Full installation
+
+Requires *all* dependencies to be installed.
+
+```
+autoreconf -i
+./configure
+make
+make install
+```
+
+Will install binaries and scripts for all users on typical environments
+
+### Minimal "installation"
+
+To skip language model building and use some of the scripts locally.
 
 ```
 autoreconf -i
@@ -66,16 +83,31 @@ src/bash/omorfi-download.bash
 This will download some of the pre-compiled dictionaries into your current
 working directory.
 
-### Normal installation
+### Python installation
+
+It is possible to install within python via `pip` or `anaconda`. The
+dependencies that are not available in pip or anaconda will not be usable, e.g.
+syntactic analysis and disambiguation using VISL CG 3.
 
 ```
-./configure
-make
-make install
+pip install omorfi
 ```
 
-For further instructions, see [Intallation
-instructions](//flammie.github.io/omorfi/install.html).
+![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
+
+```
+conda install -c flammie omorfi
+```
+
+### Docker
+
+It is possible to use omorfi with a ready-made docker container, there is a
+Dockerfile in `src/docker/Dockerfile` for that.
+
+```
+docker build -t omorfi Dockerfile
+docker run -it omorfi bash
+```
 
 ## Usage
 
@@ -145,7 +177,7 @@ participate, read further information in
 * Issues and problems may be filed in [our github issue
   tracker](https://github.com/flammie/omorfi/issues), including support
   questions
-* [IRC channel #omorfi on Freenode](irc://Freenode/#omorfi) is particularly good
+* [IRC channel #omorfi on OFTC](irc://OFTC/#omorfi) is particularly good
   for live chat for support questions, suggestions and discussions
 * [omorfi-devel mailing
   list](https://groups.google.com/forum/#!forum/omorfi-devel) is good for longer
