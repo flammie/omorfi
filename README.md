@@ -13,6 +13,7 @@ words and texts.
 
 ## Documentation
 
+I try to keep this `README` very condensed for github.
 For more detailed information, see [github pages for
 omorfi](//flammie.github.io/omorfi/).
 
@@ -32,6 +33,9 @@ Omorfi source packages can be downloaded from github:
 or the most current version using git. For more information, see
 [Release policy](https://flammie.github.io/omorfi/releases.html)
 
+For quick installation under restricted environments, see Python or Docker
+instructions below.
+
 ## Dependencies
 
 * **hfst-3.15** or greater,
@@ -47,28 +51,28 @@ Optionally:
 * *hfst-ospell-0.2.0* or greater needed for spell-checking
 * *Java 7*, or greater, for Java bindings
 
-For further information, see [Installation
-instructions](//flammie.github.io/omorfi/install.html)
-
 ## Installation
 
-It is possible to download the language models from previous release from the
-internet (Minimal installation) or compile them from the database (Normal
-installation), the former is recommended for new users and latter for advanced
-users.
+For detailed instructions and explanations of different options, see
+[Installation instructions](//flammie.github.io/omorfi/install.html) on the
+github pages site. This readme is a quick reference.
 
-### Normal installation (recommended)
+### Full installation
+
+Requires *all* dependencies to be installed.
 
 ```
+autoreconf -i
 ./configure
 make
 make install
 ```
 
-For further instructions, see [Intallation
-instructions](//flammie.github.io/omorfi/install.html).
+Will install binaries and scripts for all users on typical environments
 
-### Minimal installation
+### Minimal "installation"
+
+To skip language model building and use some of the scripts locally.
 
 ```
 autoreconf -i
@@ -79,18 +83,31 @@ src/bash/omorfi-download.bash
 This will download some of the pre-compiled dictionaries into your current
 working directory.
 
-### Python-bindings only
+### Python installation
 
-It is possible to install only python bindings via `pip` or `anaconda`. The
-dependencies that are not available in pip or anaconda will not be used, e.g.
+It is possible to install within python via `pip` or `anaconda`. The
+dependencies that are not available in pip or anaconda will not be usable, e.g.
 syntactic analysis and disambiguation using VISL CG 3.
 
+```
+pip install omorfi
+```
+
 ![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
+
+```
+conda install -c flammie omorfi
+```
 
 ### Docker
 
 It is possible to use omorfi with a ready-made docker container, there is a
 Dockerfile in `src/docker/Dockerfile` for that.
+
+```
+docker build -t omorfi Dockerfile
+docker run -it omorfi bash
+```
 
 ## Usage
 
