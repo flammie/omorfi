@@ -43,6 +43,8 @@ I have used a module omorfi, which exposes class Omorfi, usable as main entry
 point. You can load it with convenience function though.
 
   * module omorfi:
+    * load (str filename)
+    * find\_omorfi (large\_coverage=False)
     * class Omorfi:
       * init(self, verbosity)
       * load\_analyser(self, path)
@@ -58,12 +60,23 @@ point. You can load it with convenience function though.
     * class Analysis:
       * printable_XXX(self)
 
-### tokenise(self, string)
+#### load(filename)
+
+Constructs omorfi with given analyser and no other components. This is what most
+users likely want to start with.
+
+#### find\_omorfi(large\_coverage=False)
+
+Searches for a filename for an omorfi analyser language model binary nearby or
+normal installation paths. Resulting `str` can be used with `load(filename)` or
+`Omorfi.load_analyser(self, path)`.
+
+#### Omorfi.tokenise(self, string)
 
 Tokenises a string based on language models, with some punctuation-stripping
 heuristics. The result will be a list of tokens.
 
-### analyse(self, token)
+#### Omorfi.analyse(self, token)
 
 Look up `token` from morphological analyser(s) loaded. If `self.can_...case`
 do not evaluate to `False`, and the token cannot be analysed, the analysis
