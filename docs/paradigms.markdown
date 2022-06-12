@@ -15,6 +15,8 @@ All other lexical information is coded on per lexeme basis
 * The _KOTUS_ column is official dictionary class, if you are  familiar with Finnish dictionaries.
 * The _Harmony_ column is vowel harmony; back, front, both or N/A
 
+**NB:** all classes with 51 are not in the table since they are just optimisation hacks to implement multi-class inflection of compounds
+
 | **Paradigm** | **UPOS** | _Notes_ | KOTUS | Harmony |
 |:-------------|---------:|:--------|------:|:-------:|
 |  ADJ_AAKKOSELLINEN | ADJ | nen stem, nen : se variation, back harmo... | 38 | back |
@@ -199,101 +201,6 @@ All other lexical information is coded on per lexeme basis
 |  DET_YKSI | DET | determiner version of pronoun/numeral ‘y... | 31 | front |
 |  INTJ_HAH | INTJ | interjection that does *not* participate... | 99 | both |
 |  INTJ_OO | INTJ | interjection that participates in interj... | 99 | both |
-|  NOUN_51aamukaksitoista | NOUN | Nouns inflecting like 'kaksitoista', e.g... | 51 | back |
-|  NOUN_51aamuyksitoista | NOUN | Nouns inflecting like 'yksitoista', e.g.... | 51 | back |
-|  NOUN_51aavameri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51hienosokeri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isojako | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isokoskelo | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isokuovi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isokäpylintu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isolepinkäinen | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51isolokki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isomaksaruoho | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isomasto | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isopanda | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isopistooli | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isopurje | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isorokko | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isorumpu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isosisar | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isosisko | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isotaivot | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isovarvas | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isoveli | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isoviha | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51karkearehu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kevytsarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kirjavapillike | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kuivakakku | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kuivakukka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kuivamuona | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kuivapaino | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kuivapari | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kuivarehu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51kultainennoutaja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51laiskakoira | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51lämminruoka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51lämminvarasto | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51lämminvaunu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51matalameri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustaherukka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustaleipä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51mustaleski | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustalintu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustamaija | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustamakkara | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustamies | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustamulta | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustapekka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustapippuri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustaraamattu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustatorvisieni | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustaviinimarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuori-isäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51nuoriemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51nuoriherra | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuorikarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuorimies | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuoripari | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51omakuva | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51omatunto | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pahahenki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pahaputki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51palavakivi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51palavapensas | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51palavarakkaus | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkähousu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkäkirkko | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkäperjantai | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkäpiimä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51pitkäsiima | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkätakki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkäthousut | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51puolikuu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51puolimatka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51puolipäivä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51puoliväli | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51puoliyö | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51raitisilma | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51raskassarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51raskasvesi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51raskasvety | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51sepiväpeippi | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51suorakulma | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51suoraommel | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51syvämeri | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51särkynytsydän | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51tyhjäpaino | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51täysikuu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51uusikuu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51uusivuosi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51vanhaemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51vanhaisäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
-|  NOUN_51vanhakaupunki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51vanhapiika | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51vanhapoika | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51vierasmies | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_AAKKOSELLISUUS | NOUN | s stem, s:de:te variation | 40 | back |
 |  NOUN_AAKKOSTAMINEN | NOUN | nen stem, nen:se variation | 38 | back |
 |  NOUN_AALLOT | NOUN | Plurale tantums, llot:lto variation | 1-I | back |
@@ -696,7 +603,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_SAMPI | NOUN | mpi stem, mpi : mme variations back harm... | 7-H | back |
 |  NOUN_SAMPO | NOUN | mpo stem, mpo : mmo variations | 1-H | back |
 |  NOUN_SANKARI | NOUN | i stem, i : e variations and consonant s... | 6 | back |
-|  NOUN_SAVI | NOUN | i stems, i : e and i: 0 variations both,... | 5|6 | back |
+|  NOUN_SAVI | NOUN | i stems, i : e and i: 0 variations both,... | 5 *or* 6 | back |
 |  NOUN_SEIKKAILU | NOUN | u stem no variations | 2 | back |
 |  NOUN_SEIVÄS | NOUN | väs stems, väs : pää variations | 41-E | front |
 |  NOUN_SEPPÄ | NOUN | ppä stems, ppä : p variations | 10-B | front |
@@ -827,711 +734,6 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_DESIGN | NOUN | consonant stem, X : Xe variations both h... | 5 | both |
 |  NOUN_ZOMBIE | NOUN | ie stem, no variations back harmony | 3 | back |
 |  NOUN_ÄYRÄS | NOUN | äs stem, äs : ää variations | 41 | front |
-|  NUM_51kahdeksanbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksandekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksandekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksanmiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanmiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksannoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksannoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanoktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksansataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksansentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksansentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksantuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksanyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksasbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksasmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksasnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksassadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksassentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksassentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasseptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksastuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdeksasyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdesbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdesmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdesnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdespiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdespiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdessadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdessentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdessentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesseptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdestuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kahdesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kaksibiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksibiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksidekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksidekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kaksimiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksimiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kaksinoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksinoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksioktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksioktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksipiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksipiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksisataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kaksisentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksisentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksitsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksituhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kaksiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmasbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmasmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmasnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmassadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmassentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmassentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasseptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmastuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmasyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmebiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmebiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmedekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmedekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmemiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmemiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmenoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmenoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeoktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmepiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmepiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmesataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmesentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmesentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmetuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kolmeyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuudesbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuudesmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuudesnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudespiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudespiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudessadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuudessentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudessentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesseptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudestuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuudesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuusibiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusibiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusidekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusidekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuusimiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusimiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuusinoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusinoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusioktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusioktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusipiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusipiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusisataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuusisentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusisentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusitsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusituhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51kuusiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljäbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljädekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljädekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljämiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljämiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljänoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljänoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäoktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljäsentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljäsmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljäsnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljässadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljässentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljässentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljässeptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljässeptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljästuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljätoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljätuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51neljäyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51puolitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemändekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemändekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemänmiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänmiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemännoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemännoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänoktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänsataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemänsentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänsentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäntuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemänyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemäsbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemäsmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemäsnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemässadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemässentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemässentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemässeptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemässeptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemästuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51seitsemäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viidesbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viidesmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viidesnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidespiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidespiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidessadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viidessentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidessentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesseptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidestuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viidesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viisibiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisibiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisidekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisidekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viisimiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisimiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viisinoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisinoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisioktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisioktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisipiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisipiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisisataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viisisentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisisentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisitsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisituhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51viisiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksänbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksändekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksändekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänduodekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänduodekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkvadriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksänmiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänmiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksännoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksännoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänoktiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänsataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksänsentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänsentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänseptiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntriljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntsiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntsiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäntuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksänyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksäsbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskvadriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksäsmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksäsnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsoktiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksässadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksässentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksässentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksässeptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksässeptiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästredekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästredekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästriljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästsiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästsiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksästuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeksäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdeskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdestoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yhdesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yksikahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksikolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksikuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yksiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yksitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
-|  NUM_51yksiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_ENSIMMÄINEN | NUM | Ordinal nen stem front harmony (OBSOLETE... | 38 | front |
 |  NUM_KAHDEKSAN | NUM | an stem, an : ann : ans variations | 10 | back |
 |  NUM_KAKSI | NUM | ksi stem, ksi : ht variations back harmo... | 31 | back |
@@ -1608,15 +810,6 @@ All other lexical information is coded on per lexeme basis
 |  PRON_USEAMPI | PRON | mpi stem mpi : mm variations | 16-H | back |
 |  PRON_USEIMMAT | PRON | mmat stem  mmat : mm variations plurals ... | 36 | back |
 |  PRON_YKSI | PRON | ksi stem, ksi : ht variatons | 31 | front |
-|  PROPN_51Iso-Britannia | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Mustameri | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Punainenmeri | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Tyynimeri | PROPN | Optimisation hack for exceptional compou... | 51 | front |
-|  PROPN_51Uusi-Englanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Uusi-Guinea | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Uusi-Seelanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Uusikaupunki | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Uusimaa | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_A. | PROPN | Middle initials don't inflect or compoun... | 99 | both |
 |  PROPN_AAKKOSELLISUUS | PROPN | s stem, s : de variations back harmony | 40 | back |
 |  PROPN_AAKKOSTAMINEN | PROPN | nen stem, nen : se variations back harmo... | 38 | back |
@@ -1667,8 +860,8 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_BEIGNET | PROPN | consonat stem, ’ inflections | 22 | front |
 |  PROPN_BERNIE | PROPN | ie stem, no variations front harmony | 3 | front |
 |  PROPN_BESSERWISSER | PROPN | consonant stem, X : Xe varioants | 6 | front |
-|  PROPN_BESSET | PROPN | consonat stem, ’ and i stem inflections | 5|22 | front |
-|  PROPN_BIAUDET | PROPN | consonat stem, ’ and i stem inflections | 5|22 | front |
+|  PROPN_BESSET | PROPN | consonat stem, ’ and i stem inflections | 5 *or* 22 | front |
+|  PROPN_BIAUDET | PROPN | consonat stem, ’ and i stem inflections | 5 *or* 22 | front |
 |  PROPN_BIDEE | PROPN | ee stems ee : e variaotns | 20 | front |
 |  PROPN_BIKINIT | PROPN | it stem, plurale tantum | 6 | front |
 |  PROPN_BORDEAUX | PROPN | consonant stem, ’ inflection | 22 | back |
@@ -1683,13 +876,13 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_CHACHACHA | PROPN | no variatiosn  | 21 | back |
 |  PROPN_COMPOUND | PROPN | bound proper noun particles, usually, hy... | 99 | both |
 |  PROPN_COWBOY | PROPN | y stem, no variations both harmonies | 21 | both |
-|  PROPN_CROIX | PROPN | consonant stem, ’ and i stem inflections... | 5|22 | back |
+|  PROPN_CROIX | PROPN | consonant stem, ’ and i stem inflections... | 5 *or* 22 | back |
 |  PROPN_DIMITRIS | PROPN | is stem,  is : ii variations front harmo... | 41 | front |
-|  PROPN_EDDIE | PROPN | ie stem, large allomorph set | 3|21 | front |
+|  PROPN_EDDIE | PROPN | ie stem, large allomorph set | 3 *or* 21 | front |
 |  PROPN_EKKE | PROPN | Proper noun, kke stem, kke : ke variatio... | 8-A | front |
-|  PROPN_ELIAS | PROPN | as stem, as : aa ~ akse variaitons back ... | 39|41 | back |
+|  PROPN_ELIAS | PROPN | as stem, as : aa ~ akse variaitons back ... | 39 *or* 41 | back |
 |  PROPN_ELIN | PROPN | in stem, n : me variostna front harmony | 33 | front |
-|  PROPN_ELIS | PROPN | s stem, s : i ~ kse variaitons back hrmo... | 5|39 | front |
+|  PROPN_ELIS | PROPN | s stem, s : i ~ kse variaitons back hrmo... | 5 *or* 39 | front |
 |  PROPN_ELÄMÄ | PROPN | ä stem, ä : 0 varionts | 10 | front |
 |  PROPN_EPÄILTY | PROPN | lty stem, lty :lly variaoitns | 1-I | front |
 |  PROPN_ESQUIMAU | PROPN | o stem no variotatnos | 21 | back |
@@ -1698,10 +891,10 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_FARMARIT | PROPN | it stem plurale tantum | 6 | back |
 |  PROPN_FIFA | PROPN | Proper noun initialisms treated like wor... | 10 | back |
 |  PROPN_FONDUE | PROPN | ue stem, no variations both harmonies | 21 | front |
-|  PROPN_FRANCIS | PROPN | s stem, s : si ~ kse variations back har... | 5|39 | back |
+|  PROPN_FRANCIS | PROPN | s stem, s : si ~ kse variations back har... | 5 *or* 39 | back |
 |  PROPN_FUUG | PROPN | inflects both normally and as an acronym... | 5 | back |
 |  PROPN_FÄNRIKIT | PROPN | it stem, it : e varioations | 5-A | front |
-|  PROPN_GALILEO | PROPN | o stem no variations all allomorphs | 1|3 | back |
+|  PROPN_GALILEO | PROPN | o stem no variations all allomorphs | 1 *or* 3 | back |
 |  PROPN_GAY | PROPN | y stem, both harmonies | 21 | both |
 |  PROPN_HAAKSI | PROPN | ksi stem, ksi : ht varioants | 31 | back |
 |  PROPN_HAI | PROPN | i stem, i : 0 variations | 18 | back |
@@ -1709,13 +902,13 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_HAMMAS | PROPN | mas stem, mas : mpaa variations | 41-H | back |
 |  PROPN_HAPPI | PROPN | ppi stem, ppi : pe variations | 7-B | back |
 |  PROPN_HAPPO | PROPN | ppo stem, ppo : po variations | 1-B | back |
-|  PROPN_HEATHROW | PROPN | Proper noun w, consonant stem inflection... | 5|22 | back |
+|  PROPN_HEATHROW | PROPN | Proper noun w, consonant stem inflection... | 5 *or* 22 | back |
 |  PROPN_HEITIN | PROPN | tin stem, tin : ttime variations front h... | 33-C | front |
-|  PROPN_HELLE | PROPN | optional lte : lle gradation | 8|48-I | front |
+|  PROPN_HELLE | PROPN | optional lte : lle gradation | 8 *or* 48-I | front |
 |  PROPN_HELPI | PROPN | optional lpi : lvi gradation | 7-E? | front |
 |  PROPN_HENKI | PROPN | nki stem, nki : nge variations | 7-G | front |
 |  PROPN_HEPO | PROPN | po stem, po : vo variations | 1-E? | back |
-|  PROPN_HERAKLES | PROPN | es stem, es : ee and es : esin variaiton... | 5|41 | both |
+|  PROPN_HERAKLES | PROPN | es stem, es : ee and es : esin variaiton... | 5 *or* 41 | both |
 |  PROPN_HIIRI | PROPN | i stem, i : e variations and consonant s... | 24 | front |
 |  PROPN_HIRTTO | PROPN | tto stem, tto : to variations | 1-C | back |
 |  PROPN_HIUTALEET | PROPN | eet stem, eet : e variations plurale tan... | 48 | back |
@@ -1723,14 +916,14 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_HONKA | PROPN | nka stem, nka : ng variations | 10-G | back |
 |  PROPN_HOPEAT | PROPN | eat stem, eat : e variations plurale tan... | 15 | back |
 |  PROPN_HORTA | PROPN |  rta stem, rta:rr variations | 10-K | back |
-|  PROPN_HORTE | PROPN | optional te : ttee gradation | 8|48-C | back |
-|  PROPN_HOSIKE | PROPN | allomorphs | 8|48-A | back |
+|  PROPN_HORTE | PROPN | optional te : ttee gradation | 8 *or* 48-C | back |
+|  PROPN_HOSIKE | PROPN | allomorphs | 8 *or* 48-A | back |
 |  PROPN_HOUSUT | PROPN | ut stem no variations plurale tantum | 1 | back |
 |  PROPN_HUIKU | PROPN | optional ku : u gradation | 1-D? | back |
 |  PROPN_HUOLITELTU | PROPN | ltu stem, ltu : llu variations | 1-I | back |
 |  PROPN_HUPI | PROPN | pi stem, pi : ve variations | 5-E | back |
 |  PROPN_HYLKY | PROPN | ky stem, ky : y variations | 1-D | front |
-|  PROPN_HYRKÄS | PROPN | optional käs : kkää gradation | 39|41-A | front |
+|  PROPN_HYRKÄS | PROPN | optional käs : kkää gradation | 39 *or* 41-A | front |
 |  PROPN_HYÖKY | PROPN | optional ky : y gradation | 1-D? | front |
 |  PROPN_HYÖTYY | PROPN | yy stem, yy : y variations | 17 | front |
 |  PROPN_HÄIRIÖ | PROPN | ö stem no variations | 3 | front |
@@ -1746,8 +939,8 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_HÖLKKÄ | PROPN | kkä stem, kkä : k variaitns | 10-A | front |
 |  PROPN_HÖPÖTTÄJÄ | PROPN | ä stem, ä : 0 variations | 10 | front |
 |  PROPN_HÖYHENET | PROPN | et stem, et : 0 variations, front harmon... | 32 | front |
-|  PROPN_INDIEGOGO | PROPN | o stem no variations all allomorphs | 1|21 | back |
-|  PROPN_INDIEGOGO | PROPN | on and hon illatives | 1|21 | back |
+|  PROPN_INDIEGOGO | PROPN | o stem no variations all allomorphs | 1 *or* 21 | back |
+|  PROPN_INDIEGOGO | PROPN | on and hon illatives | 1 *or* 21 | back |
 |  PROPN_INGET | NOUN | Plural-only proper noun, i:e stem, nk:ng... | 44-G | front |
 |  PROPN_INKA | PROPN | optional nka : nga gradation | 9-G? | back |
 |  PROPN_ITÄMAAT | PROPN | aat stem, aat : a variations plurale tan... | 18 | back |
@@ -1796,8 +989,8 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_KIRVES | PROPN | es stem, es : ee variations front harmn ... | 41 | front |
 |  PROPN_KITARA | PROPN | a stem, a : o variations | 13 | back |
 |  PROPN_KIVI | PROPN | i stem, i : e variations | 7 | front |
-|  PROPN_KIVILAMPI | PROPN | mpi stem, mpi : mm variation back harmon... | 5|7-H | back |
-|  PROPN_KIVILAMPI | PROPN | opitional mpi : mmi  gradation | 5|7-H | back |
+|  PROPN_KIVILAMPI | PROPN | mpi stem, mpi : mm variation back harmon... | 5 *or* 7-H | back |
+|  PROPN_KIVILAMPI | PROPN | opitional mpi : mmi  gradation | 5 *or* 7-H | back |
 |  PROPN_KLUMPIT | PROPN | Plural-only proper noun, pit stem, pit :... | 5-B | back |
 |  PROPN_KOE | PROPN | e stem, e : kee variatins back harmony | 48-D | back |
 |  PROPN_KOKO | PROPN | koko stem,  ko : oo : o : ’ o variations | 1-D | back |
@@ -1842,7 +1035,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_KÖÖ | PROPN | öö stem, öö : ö variations | 18 | front |
 |  PROPN_LAET | PROPN | Plural-only proper nouns, et stem, et : ... | 7-D | back |
 |  PROPN_LAHDET | PROPN | Plural-only proper nouns, det stem, det ... | 7-F | back |
-|  PROPN_LAHELMA | PROPN | both a : o and a : 0 stems | 10|13 | back |
+|  PROPN_LAHELMA | PROPN | both a : o and a : 0 stems | 10 *or* 13 | back |
 |  PROPN_LAHTI | PROPN | ti stem, ti : de variations | 7-F | back |
 |  PROPN_LAIDUN | PROPN | dun stem, dun : tume variations | 33-F | back |
 |  PROPN_LAKI | PROPN | ki stem, ki : i variations | 5-D | back |
@@ -1859,7 +1052,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_LEIVANTI | PROPN | optional nti : nni gradation | 5-J? | back |
 |  PROPN_LENTTEE | PROPN | ee stem, ee : variaitons | 17 | front |
 |  PROPN_LEPAKKO | PROPN | kko stem, kko : ko variations | 4-A | back |
-|  PROPN_LEVIS | PROPN | both s : kse and s : si inflections | 5|39 | both |
+|  PROPN_LEVIS | PROPN | both s : kse and s : si inflections | 5 *or* 39 | both |
 |  PROPN_LIEMI | PROPN | mi stem, mi : n variations | 25 | front |
 |  PROPN_LIITTOUTUNEET | PROPN | nneet stem, nneet : nut variations plura... | 47 | back |
 |  PROPN_LIIVIT | PROPN | it stem, it : i variations plurale tantu... | 5 | front |
@@ -1897,7 +1090,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_MALKO | PROPN | ko stem, lko : o variations | 1-M | back |
 |  PROPN_MALMÖ | PROPN | ö stem no variations, hön illative | 21 | front |
 |  PROPN_MANNER | PROPN | ner stem, ner : tere : teree variations ... | 49-J | back |
-|  PROPN_MARIE | PROPN | some allomorphs | 3|21 | back |
+|  PROPN_MARIE | PROPN | some allomorphs | 3 *or* 21 | back |
 |  PROPN_MARKKINAT | PROPN | at stem, at : a variations plurale tantu... | 12 | back |
 |  PROPN_MATEE | PROPN | ee stem, ee : e variatons | 18 | back |
 |  PROPN_MATKUET | PROPN | Plural-only proper nouns, uet stems,  | 43 | back |
@@ -1909,7 +1102,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_MIELENGE | PROPN | Proper nouns nge  stem, nge : nke variat... | 48-G | front |
 |  PROPN_MIELLE | PROPN | lle stem, lle : ltee variations | 48-I | front |
 |  PROPN_MIES | PROPN | mies stem, s : he variations | 42 | front |
-|  PROPN_MINERVA | PROPN | both a : o and a: 0 stems | 9|10 | back |
+|  PROPN_MINERVA | PROPN | both a : o and a: 0 stems | 9 *or* 10 | back |
 |  PROPN_MITTA | PROPN | tta stem, tta : to variations | 9-C | back |
 |  PROPN_MONSIEUR | PROPN | consonant stem, ’ inflections both harmo... | 22 | both |
 |  PROPN_MULTA | PROPN | lta stem, lta : ll variations | 10-I | back |
@@ -2035,7 +1228,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_RÄMIÄT | PROPN | Plural-only proper noun, iät stem, iät :... | 12 | front |
 |  PROPN_SAAPAS | PROPN | pas stem, pas : ppaa variations | 41-B | back |
 |  PROPN_SAARET | PROPN | Plural-only proper nouns, et stem, et : ... | 24 | back |
-|  PROPN_SAINT_TROPEZ | PROPN | both ’ and i stem inflection | 5|22 | back |
+|  PROPN_SAINT_TROPEZ | PROPN | both ’ and i stem inflection | 5 *or* 22 | back |
 |  PROPN_SAKSET | PROPN | Proper noun, et stem, et : i varioatn pl... | 7 | back |
 |  PROPN_SALONTEET | PROPN | Plural-only proper noun, nteet stem, nnt... | 48-J | back |
 |  PROPN_SALPA | PROPN | lpa stem, lpa : lv variations | 9-E | back |
@@ -2043,7 +1236,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_SAMPI | PROPN | mpi stem, mpi : mm variation back harmon... | 7-H | back |
 |  PROPN_SAMPO | PROPN | mpo stem, mpo : mmo variations | 1-H | back |
 |  PROPN_SATU | PROPN | optional tu : du gradation | 1-F? | back |
-|  PROPN_SAVI | PROPN | both i and e stems | 5|7 | back |
+|  PROPN_SAVI | PROPN | both i and e stems | 5 *or* 7 | back |
 |  PROPN_SEIKKAILU | PROPN | Proper noun u stem, no variations | 2 | back |
 |  PROPN_SEIVÄS | PROPN | Proper noun, väs stem, väs : pää variati... | 41-E | front |
 |  PROPN_SELENE | PROPN | new e stems, no variatinos front harmmun | 2 | front |
@@ -2078,7 +1271,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_SÄRKÄT | PROPN | Plural-only proper noun, kät stem, kät :... | 10-A | front |
 |  PROPN_SÄÄDIN | PROPN | din stem, din : time variations | 33-F | front |
 |  PROPN_SÄÄRET | PROPN | Plural-only proper noun, et stem, et : i... | 26 | front |
-|  PROPN_SÄÄSKI | PROPN | both i and e stems | 5|7 | front |
+|  PROPN_SÄÄSKI | PROPN | both i and e stems | 5 *or* 7 | front |
 |  PROPN_TAIMI | PROPN | mi stem, mi : n varinoats | 25 | back |
 |  PROPN_TAIVAL | PROPN | val stem val : pale : palee variiostn | 49-E | back |
 |  PROPN_TALKOOT | PROPN | oot stem, oot : oo variations pluarle ta... | 17 | back |
@@ -2090,7 +1283,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_TEE | PROPN | Proper noun, ee stem, ee : e variation | 18 | front |
 |  PROPN_TEHDAS | PROPN | das stem, das : ta variations | 41-F | back |
 |  PROPN_TEHTAAT | PROPN | Plural-only proper noun, taat stem, taat... | 41-F | back |
-|  PROPN_TEISTE | PROPN | both a and tta partitives | 8|48 | front |
+|  PROPN_TEISTE | PROPN | both a and tta partitives | 8 *or* 48 | front |
 |  PROPN_TEKO | PROPN | ko stem, ko : o variations | 1-D | back |
 |  PROPN_TIE | PROPN | ie stem, ie : e variations front hamronu | 19 | front |
 |  PROPN_TIENOO | PROPN | oo stem, oo : o variaitnos | 17 | back |
@@ -2163,7 +1356,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_WADA | PROPN | Proper noun acronyms inflected like a-fi... | 9 | back |
 |  PROPN_YHTIÖT | PROPN | Plural-only proper noun, ö stem no varia... | 3 | front |
 |  PROPN_YKSIKKÖ | PROPN | Proper noun, kkö stem, kkö : kö variaton | 4-A | front |
-|  PROPN_YLVA | PROPN | both a :o  adn A : 0variations | 9|10 | back |
+|  PROPN_YLVA | PROPN | both a :o  adn A : 0variations | 9 *or* 10 | back |
 |  PROPN_YLÄNKÖ | PROPN | Proper noun, nkö stem, nkö : ngö variatn... | 1-G | front |
 |  PROPN_YLÖÖ | PROPN | öö stem, öö : ö variation | 17 | front |
 |  PROPN_YMPÄRYSTÄ | PROPN | ä stem, ä : 0 variation | 9 | front |
@@ -2422,9 +1615,6 @@ All other lexical information is coded on per lexeme basis
 |  VERB_ÄNGETÄ | VERB | getä stem, getä : keä variations | 74-G | front |
 |  VERB_ÄRISTÄ | VERB | stä stem, stä : se variations | 66 | front |
 |  VERB_ÖYKKÄRÖIDÄ | VERB | öidä stem, öidä : öi ~ öise variations | 62 | front |
-|  X_51eikä | CCONJ|VERB | Verbal conjunction compound ‘eikä’ («‘ja... | 51 | both |
-|  X_51ettei | CCONJ|VERB | Verbal conjunction compounds of type ‘et... | 51 | both |
-|  X_51äläkä | CCONJ|VERB | Partial inflection of imperative negatio... | 51 | both |
 |  X_FORGN_DE | PROPN | new particles of German origin, such as:... | 99 | both |
 |  X_FORGN_EN | PROPN | new particles of English origin, such as... | 99 | both |
 |  X_FORGN_SV | PROPN | new particles of Swedish origin; used of... | 99 | both |

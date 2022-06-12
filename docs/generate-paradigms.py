@@ -92,6 +92,10 @@ def main():
           "familiar with Finnish dictionaries.", file=args.output)
     print("* The _Harmony_ column is vowel harmony; back, front, both or N/A",
           file=args.output)
+    print(file=args.output)
+    print("**NB:** all classes with 51 are not in the table since they are "
+          "just optimisation hacks to implement multi-class inflection of "
+          "compounds", file=args.output)
     # read from csv files
     print(file=args.output)
     print("| **Paradigm** | **UPOS** | _Notes_ | KOTUS | Harmony |",
@@ -135,7 +139,14 @@ def main():
                     if paradata[tsv_parts["new_para"]]["kotus_tn"] == 99:
                         kotus = "[N/A](#kotus_exceptions)"
                     else:
-                        kotus = paradata[tsv_parts["new_para"]]["kotus_tn"]
+                        kotus_tn = paradata[tsv_parts["new_para"]]["kotus_tn"]
+                        if "51" in kotus_tn:
+                            paradigms.remove(tsv_parts["new_para"])
+                            continue
+                        elif "|" in kotus_tn:
+                            kotus = kotus_tn.replace("|", " *or* ")
+                        else:
+                            kotus = kotus_tn
                         if paradata[tsv_parts["new_para"]]["kotus_av"] !=\
                                 "None":
                             kotus = kotus + "-" + \
