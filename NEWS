@@ -6,6 +6,8 @@ see git log and then `ChangeLog.old`.
 ## Significant changes in 0.9.9
 
 * slight updates to convenience bash scripts
+  * bash scripts default to large coverage analyser now, use -Z for old 
+   behaviour
 * Unimorph 4 compatible
 * added the name database from Finnish governments open data repository:
   approx. 20,000 new names and 20,000 existing names verified
