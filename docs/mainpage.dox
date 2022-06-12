@@ -16,7 +16,7 @@ see:
 
 <dl>
 <dt>Python</dt>
-<dd>\link omorfi.omorfi.Omorfi \endlink</dd>
+<dd>\link omorfi \endlink</dd>
 <dt>Java</dt>
 <dd>\link com.github.flammie.omorfi.Omorfi \endlink</dd>
 <dt>C++</dt>
