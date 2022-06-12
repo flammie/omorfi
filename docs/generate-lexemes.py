@@ -58,40 +58,28 @@ def wiktify(s):
 
 def homonymify(s):
     # ₀₁₂₃₄₅₆₇₈₉
-    if s == '1':
-        return '₁'
-    elif s == '2':
+    if '2' in s:
         return '₂'
-    elif s == '3':
+    elif '3' in s:
         return '₃'
-    elif s == '4':
+    elif '4' in s:
         return '₄'
-    elif s == '5':
+    elif '5' in s:
         return '₅'
-    elif s == '6':
+    elif '6' in s:
         return '₆'
-    elif s == '7':
+    elif '7' in s:
         return '₇'
-    elif s == '8':
+    elif '8' in s:
         return '₈'
-    elif s == '9':
+    elif '9' in s:
         return '₉'
-    elif s == '10':
+    elif '0' in s:
         return '₁₀'
-    elif s == '11':
+    elif '1' in s:
         return '₁₁'
-    elif s == '12':
-        return '₁₂'
-    elif s == '13':
-        return '₁₃'
-    elif s == '14':
-        return '₁₄'
-    elif s == '15':
-        return '₁₅'
-    elif s == '16':
-        return '₁₆'
     else:
-        return s
+        return ''
 
 
 def stuff2icon(s):
@@ -121,8 +109,16 @@ def stuff2icon(s):
         return '⚐'
     elif s == 'MEASURE':
         return '📏'
+    elif s == 'TIME':
+        return '⏰'
     else:
         return s
+
+def stuffs2icon(s):
+    rv = ''
+    for stuff in s.split('|'):
+        rv += stuff2icon(stuff)
+    return rv
 
 # standard UI stuff
 
@@ -194,6 +190,8 @@ def main():
           file=args.output)
     print("*", stuff2icon("MEASURE"), "for unit of measurement",
           file=args.output)
+    print("*", stuff2icon("TIME"), "for point in time or span of time",
+          file=args.output)
     print("*", stuff2icon("MISC"), "for proper noun not suitable for other",
           "categories of proper nouns", file=args.output)
     print(file=args.output)
@@ -240,12 +238,12 @@ def main():
             if lexkey in lexdata:
 
                 if lexdata[lexkey]['proper_noun_class']:
-                    print(stuff2icon(lexdata[lexkey]['proper_noun_class']),
+                    print(stuffs2icon(lexdata[lexkey]['proper_noun_class']),
                           file=args.output, end='')
                 if lexdata[lexkey]['blacklist']:
                     print("☢", file=args.output, end='')
                 if lexdata[lexkey]['sem']:
-                    print(stuff2icon(lexdata[lexkey]['sem']),
+                    print(stuffs2icon(lexdata[lexkey]['sem']),
                           file=args.output, end='')
                 print(' | ', end='', file=args.output)
                 if 'fiwikt' in lexdata[lexkey]['origin']:
@@ -261,7 +259,7 @@ def main():
                           wiktify(tsv_parts['lemma']), end=') ', sep='',
                           file=args.output)
             print(" |", file=args.output)
-    print('''<!-- vim: set ft=markdown:-->''', file=args.output)
+    print('''\n<!-- vim: set ft=markdown:-->''', file=args.output)
     exit()
 
 
