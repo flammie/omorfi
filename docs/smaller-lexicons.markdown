@@ -1,20 +1,19 @@
----
-title: Smaller lexicon
-layout: default
----
-
 # Notes about the smaller lexicon version of omorfi
 
 From 2017 onwards omorfi has included support for optional smaller, higher
-quality word list lexicon. This version contains only the words found in the
+quality word list lexicon. From 2022 onwards the default dictionary is the
+high-coverage one. This version contains only the words found in the
 *Nykysuomen sanalista* and a handful of high frequency tokens verified by omorfi
 team. This version is also suitable for limited memory and processing power
-devices, e.g. I (flammie) use it on my Asus eee mini laptop when travelling and
+devices, e.g. I (flammie) use it on my Raspberry Pi when travelling and
 developing; the compilation of large lexicon requires over 2 Gigabytes of RAM.
 
-**This version is also suitable for users who oppose the inclusion of Kadai
-languages (such as "tai"), south american fishes (such as "tule) or Dravidian
-languages (such as "kui" or "kuvi) as plausible lexemes.**
+**This version is also suitable for applications where inclusion of low
+frequency lexemes that overlap common Finnish words cannot be handled easily,
+such as for example Kadai languages (such as "tai"), south american fishes (such
+as "tule) or Dravidian languages (such as "kui" or "kuvi") as plausible
+lexemes. If you use the default disambiguation scripts with omorfi these words
+are handled automatically.**
 
 If you use the smaller lexicon in your scientific work, you must state that
 clearly in any publications.
