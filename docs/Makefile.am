@@ -85,6 +85,9 @@ THANKS.markdown: ../THANKS
 TODO.markdown: ../TODO
 	cp -v $< $@
 
+doxygen:
+	doxygen
+
 clean-local:
 	if test -d com ; then \
 		find com/github/flammie/omorfi -name '*.class' -delete ;\

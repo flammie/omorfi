@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]]
+  ['omorfi_0',['omorfi',['../index.html',1,'']]]
 ];
