@@ -143,7 +143,11 @@ def main():
                     else:
                         harmony = paradata[tsv_parts['new_para']]['harmony']
                     # something XXX:
-                    paradigms.remove(tsv_parts['new_para'])
+                    if tsv_parts['new_para'] not in paradigms:
+                        print('found in data but not docs:',
+                              tsv_parts['new_para'], file=stderr)
+                    else:
+                        paradigms.remove(tsv_parts['new_para'])
                 else:
                     print("found in docs but not in data:",
                           tsv_parts['new_para'], file=stderr)

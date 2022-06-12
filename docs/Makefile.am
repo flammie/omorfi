@@ -4,15 +4,20 @@
 
 ## N.B. GNU standards COPYING AUTHORS INSTALL README NEWS need not be declared
 
-.PHONY: update
+.PHONY: update always-update
 
-update: stuff.markdown paradigms.markdown lexemes.markdown statistics.markdown
+update: stuff.markdown paradigms.markdown lexemes.markdown statistics.markdown\
+		mwe.markdown \
+		NEWS.markdown README.markdown AUTHORS.markdown CITATION.markdown \
+		CODE_OF_CONDUCT.markdown CONTRIBUTING.markdown COPYING.markdown \
+		ChangeLog.markdown INSTALL.markdown THANKS.markdown \
+		TODO.markdown
 
-stuff.markdown:
+stuff.markdown: always-update
 	PYTHONPATH=$(srcdir)/../src/python $(PYTHON) generate-stuffs.py \
 			   -S $(srcdir)/../src/docs/stuff.tsv -o stuff.markdown
 
-paradigms.markdown:
+paradigms.markdown: always-update
 	$(PYTHON) generate-paradigms.py -P ../src/docs/paradigms.tsv \
 		-A ../src/paradigms.tsv -o paradigms.markdown 
 
@@ -22,7 +27,7 @@ lexemes.markdown: generate-lexemes.py
 mwe.markdown: generate-mwe.py
 	$(PYTHON) $< -m ../src/generated/mwe-master.tsv -o $@
 
-statistics.markdown:
+statistics.markdown: always-update
 	./generate-statistics.bash ..
 
 inflection-lists.markdown: generations.list

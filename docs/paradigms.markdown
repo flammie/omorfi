@@ -30,11 +30,12 @@ All other lexical information is coded on per lexeme basis
 |  ADJ_AUTUAS | ADJ | as stem, as : aa variations | 41 | back |
 |  ADJ_AVOIN | ADJ | n stem, n : me variations | 33 | back |
 |  ADJ_BEIGE | ADJ | e stem, no variations, front harmony | 8 | front |
-|  ADJ_COOL | ADJ | consonant stems, X : Xe variations | 5 | back |
+|  ADJ_CHIC | ADJ | consonant stems, X : Xe variations, fron... | 5 | front |
+|  ADJ_COOL | ADJ | consonant stems, X : Xe variations, back... | 5 | back |
 |  ADJ_EHTA | ADJ | ta stem, ta : da  variations | 9-F | back |
 |  ADJ_EHYT | ADJ | yt stem, yt : ye variations | 43 | front |
 |  ADJ_ENSIMMÄINEN | ADJ | nen stem, nen : se variations, front har... | 38 | front |
-|  ADJ_GAY | ADJ | y stems, no variations, loan word stuff | 21 | front |
+|  ADJ_GAY | ADJ | y stems, no variations, loan word stuff | 21 | both |
 |  ADJ_HAILAKKA | ADJ | kka stem, kka : ko variations | 14-A | back |
 |  ADJ_HALPA | ADJ | pa stem, pa : va : vempi variations | 9-E | back |
 |  ADJ_HAPAN | ADJ | ‘hapan’, pan : ppama variations | 33-B | back |
@@ -61,7 +62,7 @@ All other lexical information is coded on per lexeme basis
 |  ADJ_KULTA | ADJ | lta stem, lta : lla variations | 10-I | back |
 |  ADJ_KULUNUT | ADJ | ut stem, ut : ee variations | 47 | back |
 |  ADJ_KYLMÄJÄRKINEN | ADJ | nen stem, nen : se variations, front har... | 38 | front |
-|  ADJ_KYMMENTÄ | ADJ | bound numeral multiplier | 99 | front |
+|  ADJ_KYMMENTÄ | ADJ | bound numeral multiplier | 99 | both |
 |  ADJ_KYVYTÖN | ADJ | tön stem, tön : ttömä variation, usually... | 34-C | front |
 |  ADJ_KYYTTÖ | ADJ | ttö stems, ttö : tö variations | 1-C | front |
 |  ADJ_KÄYPÄ | ADJ | pä stems, pä : v variations | 10-E | front |
@@ -95,7 +96,7 @@ All other lexical information is coded on per lexeme basis
 |  ADJ_PARAS | ADJ | 'paras' relexicalised (for parhaampi : p... | 41 | back |
 |  ADJ_PEEAA | ADJ | aa stems, aa : a variations | 18 | back |
 |  ADJ_PIENI | ADJ | i stems, i : e variation, consonant stem... | 26 | front |
-|  ADJ_PIKKU | ADJ | no inflections, like pikku, eri etc. | 99 | back |
+|  ADJ_PIKKU | ADJ | no inflections, like pikku, eri etc. | 99 | both |
 |  ADJ_PINKKI | ADJ | kki stem, kki : ke variations | 5-A | front |
 |  ADJ_PITKÄ | ADJ | ‘pitkä’, tkä : de variations | 1010 | front |
 |  ADJ_POHATTA | ADJ | a stem, tta : t variations | 14-C | back |
@@ -161,7 +162,7 @@ All other lexical information is coded on per lexeme basis
 |  ADP_LISÄKSI | ADP | i:e stem variation beore optional posses... | 99 | front |
 |  ADP_LÄHELLÄ | ADP | optional possessive including -än allomo... | 99 | front |
 |  ADP_MUKAAN | ADP | optional possessive, -n assimilation, ba... | 99 | back |
-|  ADP_MUKAISESTI | ADP | adposition without possessives, clitic, ... | 99 | back |
+|  ADP_MUKAISESTI | ADP | adposition without possessives, clitic, ... | 99 | both |
 |  ADP_NÄHDEN | ADP | de:te variation before optional possessi... | 99 | front |
 |  ADP_NÄKYVIIN | ADP | optional possessive, -n assimilation, fr... | 99 | front |
 |  ADP_TYKÖ | ADP | optional possessive, front harmony | 99 | front |
@@ -180,7 +181,7 @@ All other lexical information is coded on per lexeme basis
 |  ADV_MITEN | ADV | optional clitics, including käs | 99 | front |
 |  ADV_NOPEASTI | ADV | optional clitics, back harmony | 99 | back |
 |  ADV_TYHMÄSTI | ADV | optional clitics, front harmony | 99 | front |
-|  ADV_VAAN | ADV | no clitics | 99 | back |
+|  ADV_VAAN | ADV | no clitics | 99 | both |
 |  ADV_YLIPÄÄNSÄ | ADV | optional clitics, front harmony | 99 | front |
 |  AUX_AIKOA | AUX | auxiliary version of ko:o verb stem | 52-D | back |
 |  AUX_EI | AUX | Negation verb ‘ei’ has heteroclitic infl... | 1099 | front |
@@ -193,11 +194,11 @@ All other lexical information is coded on per lexeme basis
 |  AUX_TARVITA | AUX | auxiliary version of ta:tse verb stem | 69 | back |
 |  AUX_TÄYTYÄ | AUX | auxiliary version of ty:dy verb stem | 52-F | front |
 |  AUX_VOIDA | AUX | auxiliary version of voida verb stem | 62 | back |
-|  CCONJ_JA | CCONJ | co-ordinating conjunction, no morphology | 99 | front |
+|  CCONJ_JA | CCONJ | co-ordinating conjunction, no morphology | 99 | both |
 |  DET_SE | DET | determiner version of pronoun ‘se’ | 101 | front |
 |  DET_YKSI | DET | determiner version of pronoun/numeral ‘y... | 31 | front |
-|  INTJ_HAH | INTJ | interjection that does *not* participate... | 99 | back |
-|  INTJ_OO | INTJ | interjection that participates in interj... | 99 | back |
+|  INTJ_HAH | INTJ | interjection that does *not* participate... | 99 | both |
+|  INTJ_OO | INTJ | interjection that participates in interj... | 99 | both |
 |  NOUN_51aamukaksitoista | NOUN | Nouns inflecting like 'kaksitoista', e.g... | 51 | back |
 |  NOUN_51aamuyksitoista | NOUN | Nouns inflecting like 'yksitoista', e.g.... | 51 | back |
 |  NOUN_51aavameri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -206,7 +207,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_51isokoskelo | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51isokuovi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51isokäpylintu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51isolepinkäinen | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51isolepinkäinen | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51isolokki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51isomaksaruoho | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51isomasto | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -237,7 +238,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_51lämminvaunu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51matalameri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustaherukka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51mustaleipä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51mustaleipä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51mustaleski | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustalintu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustamaija | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -249,8 +250,8 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_51mustaraamattu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustatorvisieni | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51mustaviinimarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuori-isäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51nuoriemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51nuori-isäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
+|  NOUN_51nuoriemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51nuoriherra | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuorikarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51nuorimies | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -265,30 +266,30 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_51pitkähousu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51pitkäkirkko | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51pitkäperjantai | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51pitkäpiimä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51pitkäpiimä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51pitkäsiima | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51pitkätakki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51pitkäthousut | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51puolikuu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51puolimatka | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51puolipäivä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51puoliväli | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51puoliyö | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51puolipäivä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
+|  NOUN_51puoliväli | NOUN | Optimisation hack for exceptional compou... | 51 | front |
+|  NOUN_51puoliyö | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51raitisilma | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51raskassarja | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51raskasvesi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51raskasvety | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51sepiväpeippi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51raskasvety | NOUN | Optimisation hack for exceptional compou... | 51 | front |
+|  NOUN_51sepiväpeippi | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51suorakulma | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51suoraommel | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51syvämeri | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51särkynytsydän | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51syvämeri | NOUN | Optimisation hack for exceptional compou... | 51 | front |
+|  NOUN_51särkynytsydän | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51tyhjäpaino | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51täysikuu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51uusikuu | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51uusivuosi | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51vanhaemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
-|  NOUN_51vanhaisäntä | NOUN | Optimisation hack for exceptional compou... | 51 | back |
+|  NOUN_51vanhaemäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
+|  NOUN_51vanhaisäntä | NOUN | Optimisation hack for exceptional compou... | 51 | front |
 |  NOUN_51vanhakaupunki | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51vanhapiika | NOUN | Optimisation hack for exceptional compou... | 51 | back |
 |  NOUN_51vanhapoika | NOUN | Optimisation hack for exceptional compou... | 51 | back |
@@ -303,47 +304,46 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_AAMUYHDEKSÄN | NOUN | Nouns inflecting like 'yhdeksän', e.g. n... | 8 | front |
 |  NOUN_AAMUYKSI | NOUN | Nouns inflecting like 'yksi', e.g. noun-... | 31 | front |
 |  NOUN_AARRE | NOUN | rre-stem, rre:rtee variation back harmon... | 48-K | back |
-|  NOUN_ACRO_AA | NOUN | acronyms ending in 'a' pronounced as a l... | 0 | back |
-|  NOUN_ACRO_CELSIUS | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_DOLLARI | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_EE | NOUN | acronyms ending in 'b', 'c', 'd', 'e', '... | 0 | front |
-|  NOUN_ACRO_GRAMMA | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_GRAY | NOUN | The acronyms ending in a word that infle... | 0 | front |
-|  NOUN_ACRO_II | NOUN | Acronyms that end in 'j' or 'i' pronoync... | 0 | front |
-|  NOUN_ACRO_JOULE | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_JÄRJESTÖ | NOUN | The acronyms ending in a word that infle... | 0 | front |
-|  NOUN_ACRO_KAHDEKSAN | NOUN | Acronyms ending in 8 | 0 | front |
-|  NOUN_ACRO_KAKSI | NOUN | Acronyms ending in 2 | 0 | front |
-|  NOUN_ACRO_KANDELA | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_KOLMAS | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_KOLME | NOUN | The acronyms ending in digit 3 pronounce... | 0 | back |
-|  NOUN_ACRO_KUUSI | NOUN | Acronyms ending in 6 | 0 | front |
-|  NOUN_ACRO_LEHTI | NOUN | The acronyms ending in a word that infle... | 0 | front |
-|  NOUN_ACRO_LUSIKKA | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_METRI | NOUN | The acronyms ending in a word that infle... | 0 | front |
-|  NOUN_ACRO_NELJÄ | NOUN | Acronyms ending in 4 | 0 | back |
-|  NOUN_ACRO_NOLLA | NOUN | The acronyms ending in digit 0 pronounce... | 0 | front |
-|  NOUN_ACRO_OIKEUS | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_OK | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_OO | NOUN | Acronyms that end in 'h', 'k' or 'o' tha... | 0 | back |
-|  NOUN_ACRO_OPISTO | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_OPPILAS | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_PUNTA | NOUN | The acronyms ending in a word that infle... | 10 | front |
-|  NOUN_ACRO_SAIRAALA | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_SEITSEMÄN | NOUN | Acronyms ending in 7 | 0 | front |
-|  NOUN_ACRO_TUOTE | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_UU | NOUN | Acronyms that end in 'q', or 'u' pronoun... | 0 | back |
-|  NOUN_ACRO_VIISI | NOUN | The acronyms ending in digit 5 pronounce... | 0 | front |
-|  NOUN_ACRO_VUOSI | NOUN | The acronyms ending in a word that infle... | 0 | back |
-|  NOUN_ACRO_WEBER | NOUN | The acronyms ending in a word that infle... | 0 | front |
-|  NOUN_ACRO_YHDISTYS | NOUN | The acronyms ending in a word that infle... | 0 | front |
-|  NOUN_ACRO_YKSI | NOUN | Acronyms ending in 1 | 0 | front |
-|  NOUN_ACRO_YY | NOUN | Acronym that ends in 'y' pronounced as l... | 0 | front |
-|  NOUN_ACRO_ZET | NOUN | Acronyms that end in 'z' pronounced as l... | 0 | back |
-|  NOUN_ACRO_ÄKS | NOUN | Acronym that ends in 'f', 'l', 'm', 'n',... | 0 | front |
-|  NOUN_ACRO_ÄÄ | NOUN | Acronyms that end in 'ä' pronounced as l... | 0 | front |
-|  NOUN_ACRO_ÖÖ | NOUN | Acronyms that end in 'ö' pronounced as l... | 0 | front |
-|  NOUN_ACRO_Ω | NOUN | Acronyms that end in ‘oomega’ | 0 | back |
+|  NOUN_ACRO_AA | NOUN | acronyms ending in 'a' pronounced as a l... | 0 | both |
+|  NOUN_ACRO_CELSIUS | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_DOLLARI | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_EE | NOUN | acronyms ending in 'b', 'c', 'd', 'e', '... | 0 | both |
+|  NOUN_ACRO_GRAMMA | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_GRAY | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_II | NOUN | Acronyms that end in 'j' or 'i' pronoync... | 0 | both |
+|  NOUN_ACRO_JOULE | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_JÄRJESTÖ | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_KAHDEKSAN | NOUN | Acronyms ending in 8 | 0 | both |
+|  NOUN_ACRO_KAKSI | NOUN | Acronyms ending in 2 | 0 | both |
+|  NOUN_ACRO_KANDELA | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_KOLME | NOUN | The acronyms ending in digit 3 pronounce... | 0 | both |
+|  NOUN_ACRO_KUUSI | NOUN | Acronyms ending in 6 | 0 | both |
+|  NOUN_ACRO_LEHTI | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_LUSIKKA | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_METRI | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_NELJÄ | NOUN | Acronyms ending in 4 | 0 | both |
+|  NOUN_ACRO_NOLLA | NOUN | The acronyms ending in digit 0 pronounce... | 0 | both |
+|  NOUN_ACRO_OIKEUS | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_OK | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_OO | NOUN | Acronyms that end in 'h', 'k' or 'o' tha... | 0 | both |
+|  NOUN_ACRO_OPISTO | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_PUNTA | NOUN | The acronyms ending in a word that infle... | 10 | both |
+|  NOUN_ACRO_SAIRAALA | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_SEITSEMÄN | NOUN | Acronyms ending in 7 | 0 | both |
+|  NOUN_ACRO_TUOTE | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_UU | NOUN | Acronyms that end in 'q', or 'u' pronoun... | 0 | both |
+|  NOUN_ACRO_VIISI | NOUN | The acronyms ending in digit 5 pronounce... | 0 | both |
+|  NOUN_ACRO_VUOSI | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_WEBER | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_YHDISTYS | NOUN | The acronyms ending in a word that infle... | 0 | both |
+|  NOUN_ACRO_YKSI | NOUN | Acronyms ending in 1 | 0 | both |
+|  NOUN_ACRO_YY | NOUN | Acronym that ends in 'y' pronounced as l... | 0 | both |
+|  NOUN_ACRO_ZET | NOUN | Acronyms that end in 'z' pronounced as l... | 0 | both |
+|  NOUN_ACRO_ÄKS | NOUN | Acronym that ends in 'f', 'l', 'm', 'n',... | 0 | both |
+|  NOUN_ACRO_ÄÄ | NOUN | Acronyms that end in 'ä' pronounced as l... | 0 | both |
+|  NOUN_ACRO_ÖÖ | NOUN | Acronyms that end in 'ö' pronounced as l... | 0 | both |
+|  NOUN_ACRO_Ω | NOUN | Acronyms that end in ‘oomega’ | 0 | both |
+|  NOUN_AIDS | NOUN | inflects both normally and as an acronym... | 5 | both |
 |  NOUN_AIKA | NOUN | Nouns that inflect like aika:aja | 1009-D | back |
 |  NOUN_AIVOKUOLLUT | NOUN | llut stem that inflect, llut : llee vari... | 47 | back |
 |  NOUN_AIVOT | NOUN | Plurale tantums, ot stem that inflect wi... | 1 | back |
@@ -354,7 +354,6 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_ANTIMET | NOUN | Plurale tantums, ntimet stem, ntimet : n... | 33-J | back |
 |  NOUN_APE | NOUN | pe stem, pe : ppee variation | 48-B | back |
 |  NOUN_APU | NOUN | pu stem, pu : vu variation | 1-E | back |
-|  NOUN_ARISTOTELES | NOUN | es stem, es : ee variation back hamrony | 41 | back |
 |  NOUN_ARKI | NOUN | rki stem, rki : rje variation | 7-L | back |
 |  NOUN_ARKKITEHTI | NOUN | ti stem, ti : di variation both harmonio... | 5-F | both |
 |  NOUN_ASEMA | NOUN | a stem, a : 0 variation | 10 | back |
@@ -380,14 +379,15 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_ELIN | NOUN | n stem, n : me variation front harmony | 33 | front |
 |  NOUN_ELÄMÄ | NOUN | ä stem, ä : 0 variation | 10 | front |
 |  NOUN_EPÄILTY | NOUN | lty stem, lty : lly variation, mostly l-... | 1-I | front |
-|  NOUN_ESIM. | ADV | Abbreviated nouns, final full stop, no m... | 99 | back |
+|  NOUN_ESIM. | ADV | Abbreviated nouns, final full stop, no m... | 99 | both |
 |  NOUN_ESQUIMAU | NOUN | Loan words, o stem | 21 | back |
 |  NOUN_FARKUT | NOUN | Plurale tantums, kut stem, kut :kku vari... | 1-A|D | back |
 |  NOUN_FARMARIT | NOUN | Plurale tantums, it stem, it : i variati... | 6 | back |
+|  NOUN_FIM | NOUN | inflects both normally and as an acronym... | 5 | front |
 |  NOUN_FONDUE | NOUN | Loan words wit y stem, stuff | 21 | front |
 |  NOUN_FONDYY | NOUN | yy stem, more syllables | 20 | front |
 |  NOUN_FÄNRIKIT | NOUN | it stem, it : i variation, front harmony | 5-A | front |
-|  NOUN_GAY | NOUN | Loan words, y stem, front harmony | 21 | front |
+|  NOUN_GAY | NOUN | Loan words, y stem, front harmony | 21 | both |
 |  NOUN_HAAKSI | NOUN | ksi stem, ksi : ht variations | 31 | back |
 |  NOUN_HAI | NOUN | i stem, i : 0 variation, back harmony | 18 | back |
 |  NOUN_HAIT | NOUN | Plurale tantum monosyllabic nouns ending... | 18 | back |
@@ -406,6 +406,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_HIPAT | NOUN | Plurale tantums, pat stem, pat : ppa var... | 9-B | back |
 |  NOUN_HIRTTO | NOUN | tto stem, tto : to variations | 1-C | back |
 |  NOUN_HIUTALEET | NOUN | Plurale tantums, leet stem, leet : lee :... | 48 | back |
+|  NOUN_HIV | NOUN | inflects both normally and as an acronym... | 5 | front |
 |  NOUN_HOKSOTTIMET | NOUN | Plurale tantums, timet stem, timet : tin... | 33-C | back |
 |  NOUN_HONKA | NOUN | nka stem, nka : ng variations  | 10-G | back |
 |  NOUN_HOPEAT | NOUN | Plurale tantums, eat stem, eat : e varia... | 15 | back |
@@ -560,7 +561,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_MILJÖÖ | NOUN | öö stems, öö : ö variations | 20 | front |
 |  NOUN_MILJÖÖT | NOUN | Plurale tantums, ööt stems, ööt : ö vari... | 20 | front |
 |  NOUN_MITTA | NOUN | tta stems, tta : to variations | 9-C | back |
-|  NOUN_MONSIEUR | NOUN | consonant stem, ’ inflection, front harm... | 22 | front |
+|  NOUN_MONSIEUR | NOUN | consonant stem, ’ inflection, front harm... | 22 | both |
 |  NOUN_MULTA | NOUN | lta stem, lta : lla variation | 10-I | back |
 |  NOUN_MUUNNIN | NOUN | nnin stem, nnin : ntime variations, back... | 33-J | back |
 |  NOUN_MYRKKY | NOUN | kky stems, kky : ky variations | 1-A | front |
@@ -568,16 +569,18 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_MÄTÄS | NOUN | täs stems, täs : ttää variations | 41-C | front |
 |  NOUN_MÖMMÖ | NOUN | ö stem, no variations | 1 | front |
 |  NOUN_MÖRKÖ | NOUN | kö stem, kö : ö variations | 1-D | front |
+|  NOUN_NAHKA | NOUN | hka stems, both hka : h0 and hka : hk va... | 9-D? | back |
 |  NOUN_NALLE | NOUN | e stem, no variations, back harmony | 8 | back |
 |  NOUN_NEITSYT | NOUN | yt stem, yt : ye variations | 43 | front |
 |  NOUN_NEUVOTTELUT | NOUN | Plurale tantums, ut stem, ut : u variati... | 2 | back |
 |  NOUN_NIHTI | NOUN | ti stem, ti : de variations | 5-F | front |
+|  NOUN_ÄITI | NOUN | ti stem, optional t : d | 5-F? | front |
 |  NOUN_NIITUT | NOUN | Plurale tantums, tut stem, ttut : tu var... | 1-C | back |
 |  NOUN_NIMETÖN | NOUN | tön stem, tön : ttömä variations | 34-C | front |
 |  NOUN_NISSE | NOUN | e stem, no variations front harmony | 8 | front |
 |  NOUN_NOKI | NOUN | ki stem, ki : e variations back harmony | 7-D | back |
 |  NOUN_NOUGAT | NOUN | consonant stem, ’ inflection back harmon... | 22 | back |
-|  NOUN_NRO | NOUN | Abbreviated nouns without final full sto... | 99 | back |
+|  NOUN_NRO | NOUN | Abbreviated nouns without final full sto... | 99 | both |
 |  NOUN_NUGAA | NOUN | aa stems, aa : a variations | 20 | back |
 |  NOUN_NUKKE | NOUN | kke stems, kke : ke variations | 8-A | back |
 |  NOUN_NYLJIN | NOUN | jin stem, jin : kime variations front ha... | 33-L | front |
@@ -629,7 +632,8 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_PROTOLYYSI | NOUN | i stem, i : e variations both harmonies | 5 | both |
 |  NOUN_PROTOLYYTTI | NOUN | tti stem, tti : te variations both front... | 5-C | both |
 |  NOUN_PUHELIN | NOUN | n stem, n : me variations back harmony | 33 | back |
-|  NOUN_PUIN | NOUN | in stem, in : kime variations | 33-D | back |
+|  NOUN_TEIN | NOUN | in stem, in : kime variations front | 33-D | front |
+|  NOUN_PUIN | NOUN | in stem, in : kime variations back | 33-D | back |
 |  NOUN_PUKIMET | NOUN | Plurale tantums, kimet stem,  kimet : in... | 33-D | back |
 |  NOUN_PUNK | NOUN | consonnat stems, x : xe variations, main... | 5 | back |
 |  NOUN_PUU | NOUN | uu stem, uu : u variations | 18 | back |
@@ -692,6 +696,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_SAMPI | NOUN | mpi stem, mpi : mme variations back harm... | 7-H | back |
 |  NOUN_SAMPO | NOUN | mpo stem, mpo : mmo variations | 1-H | back |
 |  NOUN_SANKARI | NOUN | i stem, i : e variations and consonant s... | 6 | back |
+|  NOUN_SAVI | NOUN | i stems, i : e and i: 0 variations both,... | 5|6 | back |
 |  NOUN_SEIKKAILU | NOUN | u stem no variations | 2 | back |
 |  NOUN_SEIVÄS | NOUN | väs stems, väs : pää variations | 41-E | front |
 |  NOUN_SEPPÄ | NOUN | ppä stems, ppä : p variations | 10-B | front |
@@ -728,6 +733,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_SÄÄRET | NOUN | Plurale tantums, i:e variation | 26 | front |
 |  NOUN_TAIMI | NOUN | mi stem, mi : n variations back harmony | 25 | back |
 |  NOUN_TAIVAL | NOUN | val stem, val : pale : palee variations | 49-E | back |
+|  NOUN_HEVEN | NOUN | ven stem, ven : pene : penee variations | 49-E | front |
 |  NOUN_TALKOOT | NOUN | Plurale tantums, oot stem, oot : o varia... | 17 | back |
 |  NOUN_TALO | NOUN | o stems, no variations | 1 | back |
 |  NOUN_TANHUA | NOUN | a stems, a : o : 0 variations | 15 | back |
@@ -765,6 +771,7 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_TYÖT | NOUN | Plurale tantums, yöt stem, yöt : yö : ö ... | 19 | front |
 |  NOUN_TÖRPPÖ | NOUN | ppö stem, ppö : pö variations | 1-B | front |
 |  NOUN_UDAR | NOUN | dar stem, dar : taree variations | 49-F | back |
+|  NOUN_ÄVÄR | NOUN | vär stem, vär : päree variations | 49-E | front |
 |  NOUN_UKKO | NOUN | kko stem, kko : ko variations | 1-A | back |
 |  NOUN_UKSI | NOUN | ksi stem, ksi : s variations | 29 | back |
 |  NOUN_ULAPPA | NOUN | ppa stem, ppa : po variations | 14-B | back |
@@ -810,13 +817,14 @@ All other lexical information is coded on per lexeme basis
 |  NOUN_VUOSITUHAT | NOUN | tuhat stem, t : nne variations usually f... | 46 | back |
 |  NOUN_YHTIÖT | NOUN | Plurale tantum, iö stem, no varitionst | 3 | front |
 |  NOUN_YKSIKKÖ | NOUN | kkö stem, kkö : kö variations | 4-A | front |
-|  NOUN_YLEIS | NOUN | Bound nominal stems, that require compou... | 99 | front |
+|  NOUN_YLEIS- | NOUN | Bound nominal stems, that require compou... | 99 | both |
 |  NOUN_YLKÄ | NOUN | kä stems, kä : 0 variations | 10-L | front |
 |  NOUN_YLÄNKÖ | NOUN | nkö stem, nkö : ngö variations | 1-G | front |
 |  NOUN_YMPÄRYSTÄ | NOUN | ä stem, ä : 0 variations | 9 | front |
 |  NOUN_YSTÄVYKSET | NOUN | Plurale tantums, kset stem, kset : s var... | 39 | front |
 |  NOUN_YÖKKÖ | NOUN | kö stem, kkö : kö variations | 1-A | front |
 |  NOUN_ZEN | NOUN | consonant stem, X : Xe variations front ... | 5 | front |
+|  NOUN_DESIGN | NOUN | consonant stem, X : Xe variations both h... | 5 | both |
 |  NOUN_ZOMBIE | NOUN | ie stem, no variations back harmony | 3 | back |
 |  NOUN_ÄYRÄS | NOUN | äs stem, äs : ää variations | 41 | front |
 |  NUM_51kahdeksanbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -834,10 +842,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeksankvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksankvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksankvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksankymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksankymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksanmiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksanmiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksanneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksannoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksannoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksanoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -845,7 +853,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeksanpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksanpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksansataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksanseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksansentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksansentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksanseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -860,8 +868,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeksantuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksanundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksanundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksanyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksanviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kahdeksanyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksasbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -877,10 +885,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeksaskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksaskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksaskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksaskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksaskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksasmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksasneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksasnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -888,7 +896,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeksaspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksaspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksassadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksasseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdeksassentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksassentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -903,8 +911,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeksastuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeksasundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeksasyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeksasviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kahdeksasyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdesbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -920,10 +928,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdeskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdeskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdeskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdeskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdesmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdesnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -931,7 +939,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdespiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdespiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdessadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kahdessentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdessentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -946,8 +954,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kahdestuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kahdesundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kahdesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kahdesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kahdesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kaksibiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksibiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksidekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -963,10 +971,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kaksikvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksikvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksikvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kaksikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kaksimiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksimiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksineljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kaksineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kaksinoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksinoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksioktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -974,7 +982,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kaksipiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksipiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksisataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kaksiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kaksisentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksisentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksiseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -989,8 +997,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kaksituhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksiundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kaksiundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kaksiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kaksiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kaksiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmasbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1006,10 +1014,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kolmaskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmaskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmaskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmaskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmaskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmasmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmasneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmasnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1017,7 +1025,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kolmaspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmaspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmassadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmasseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmassentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmassentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1032,8 +1040,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kolmastuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmasundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmasyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmasviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kolmasyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmebiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmebiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmedekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1049,10 +1057,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kolmekvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmekvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmekvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmekymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmekymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmemiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmemiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmeneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmenoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmenoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmeoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1060,7 +1068,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kolmepiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmepiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmesataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmeseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kolmesentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmesentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmeseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1075,8 +1083,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kolmetuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmeundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kolmeundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kolmeyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kolmeviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kolmeyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuudesbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1092,10 +1100,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kuudeskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudeskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudeskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudeskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuudeskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuudesmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuudesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuudesnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1103,7 +1111,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kuudespiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudespiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudessadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuudesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuudessentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudessentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1118,8 +1126,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kuudestuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuudesundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuudesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuudesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kuudesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuusibiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusibiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusidekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1135,10 +1143,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kuusikvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusikvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusikvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuusikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuusimiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusimiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusineljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuusineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuusinoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusinoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusioktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1146,7 +1154,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kuusipiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusipiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusisataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuusiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51kuusisentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusisentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusiseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1161,8 +1169,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51kuusituhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusiundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51kuusiundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51kuusiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51kuusiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51kuusiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljäbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljädekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1178,10 +1186,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51neljäkvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäkvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäkvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljämiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljämiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljänoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljänoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1195,7 +1203,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51neljäsdekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsduodekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsduodekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljäsentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1209,10 +1217,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51neljäskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljäsmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljäsnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1220,7 +1228,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51neljäspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljässadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljässentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljässentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljässeptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1235,8 +1243,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51neljästuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäsundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51neljäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51neljätoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljätredekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljätredekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1247,8 +1255,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51neljätuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51neljäundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51neljäyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51neljäviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51neljäyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51puolitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1265,10 +1273,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51seitsemänkvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänkvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänkvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemänkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemänmiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänmiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemänneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemännoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemännoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1276,7 +1284,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51seitsemänpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänsataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemänseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemänsentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänsentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1291,8 +1299,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51seitsemäntuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemänundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemänyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemänviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51seitsemänyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemäsbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1308,10 +1316,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51seitsemäskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemäsmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemäsnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1319,7 +1327,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51seitsemäspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemässadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51seitsemässentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemässentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemässeptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1334,8 +1342,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51seitsemästuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51seitsemäsundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51seitsemäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51seitsemäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51seitsemäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viidesbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1351,10 +1359,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51viideskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viideskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viideskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viideskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viideskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viidesmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viidesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viidesnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1362,7 +1370,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51viidespiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidespiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidessadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viidesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viidessentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidessentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesseptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1377,8 +1385,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51viidestuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viidesundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viidesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viidesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51viidesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viisibiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisibiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisidekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1394,10 +1402,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51viisikvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisikvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisikvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viisikymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viisimiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisimiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisineljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viisineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viisinoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisinoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisioktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1405,7 +1413,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51viisipiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisipiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisisataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viisiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51viisisentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisisentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisiseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1420,8 +1428,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51viisituhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisiundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51viisiundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51viisiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51viisiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51viisiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksänbiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänbiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksändekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1437,10 +1445,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51yhdeksänkvadriljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänkvintiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänkvintiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksänkymmentä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksänmiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänmiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänneljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksänneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksännoniljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksännoniljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänoktiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1448,7 +1456,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51yhdeksänpiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänpiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänsataa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksänseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksänsentiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänsentiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänseptiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1463,8 +1471,8 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51yhdeksäntuhatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänundekiljardia | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksänundekiljoonaa | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksänyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksänviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51yhdeksänyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksäsbiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsbiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsdekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1480,10 +1488,10 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51yhdeksäskvadriljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäskvintiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäskvintiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksäskymmenes | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksäsmiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsmiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksäsneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksäsnoniljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsnoniljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsoktiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1491,7 +1499,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51yhdeksäspiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäspiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksässadas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksässeitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeksässentiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksässentiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksässeptiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
@@ -1506,24 +1514,24 @@ All other lexical information is coded on per lexeme basis
 |  NUM_51yhdeksästuhannes | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsundekiljardis | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeksäsundekiljoonas | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdeksäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdeksäsviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51yhdeksäsyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdeskahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeskolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yhdeskuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdesneljästtä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdesneljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51yhdesseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yhdestoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yhdesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yhdesviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51yhdesyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yksikahdeksatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yksikolmatta | NUM | Optimisation hack for exceptional compou... | 51 | back |
 |  NUM_51yksikuudetta | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksineljättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yksineljättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51yksiseitsemättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_51yksitoista | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | back |
-|  NUM_51yksiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | back |
+|  NUM_51yksiviidettä | NUM | Optimisation hack for exceptional compou... | 51 | front |
+|  NUM_51yksiyhdeksättä | NUM | Optimisation hack for exceptional compou... | 51 | front |
 |  NUM_ENSIMMÄINEN | NUM | Ordinal nen stem front harmony (OBSOLETE... | 38 | front |
 |  NUM_KAHDEKSAN | NUM | an stem, an : ann : ans variations | 10 | back |
 |  NUM_KAKSI | NUM | ksi stem, ksi : ht variations back harmo... | 31 | back |
@@ -1535,7 +1543,7 @@ All other lexical information is coded on per lexeme basis
 |  NUM_KYMMEN | NUM | en stem no variations | 32 | front |
 |  NUM_KYMMENEN | NUM | en stem en : 0 variations | 32 | front |
 |  NUM_KYMMENKUNTA | NUM | Approximative numerals, no inflection | 10-J | back |
-|  NUM_KYMMENTÄ | NUM | bound numeral multiplier | 99 | front |
+|  NUM_KYMMENTÄ | NUM | bound numeral multiplier | 99 | both |
 |  NUM_MILJARDI | NUM | i stem i : e variations back harmony | 6 | back |
 |  NUM_MILJOONA | NUM | a stem a : 0 variatons | 10 | back |
 |  NUM_NELJÄ | NUM | ä stem, ä : 0 variations | 10 | front |
@@ -1549,11 +1557,9 @@ All other lexical information is coded on per lexeme basis
 |  NUM_VIITISEN | NUM | approximative numerals, front suffixes, ... | 99 | front |
 |  NUM_YHDEKSÄN | NUM | än stem, än : änn : äns variations | 10 | front |
 |  NUM_YKSI | NUM | ksi stem, ksi : ht variations front harm... | 31 | front |
-|  PRON_AINOA | PRON | no inflection, optional possessive suffi... | 101 | back |
 |  PRON_ERÄS | PRON | s stem, s : ä variations | 41 | front |
 |  PRON_HÄN | PRON | personal pronoun ‘hän’ inflects, e stem,... | 101 | front |
 |  PRON_HÄÄ | PRON | dialectal forms of ‘hän’ | 101 | front |
-|  PRON_IKINEN | PRON | inen stem, nen : se variations front har... | 38 | front |
 |  PRON_ITSE | PRON | ‘itse’, no variatinos | 8 | front |
 |  PRON_JOKA | PRON | ‘joka’ inflects from jo stem, optionally... | 101 | back |
 |  PRON_JOKAINEN | PRON | nen stem nen : se variations back harmon... | 38 | back |
@@ -1561,7 +1567,7 @@ All other lexical information is coded on per lexeme basis
 |  PRON_JOKU | PRON | ‘joku’ inflects, agreement like compound... | 101 | back |
 |  PRON_JOMPIKUMPI | PRON | ‘jompikumpi’ inflects, agreement like co... | 101 | back |
 |  PRON_KAIKKI | PRON | ‘kaikki’, kki : ke variations | 7-A | back |
-|  PRON_KOKO | PRON | no inflections or even clitics | 99 | back |
+|  PRON_KOKO | PRON | no inflections or even clitics | 99 | both |
 |  PRON_KUKA | PRON | ‘kuka’ has heteroclitic ke stem for infl... | 101 | back |
 |  PRON_KUKAAN | PRON | ‘kukaan’ inflects like PRON_KUKA before ... | 101 | back |
 |  PRON_KUKAKIN | PRON | ‘kukakin’ inflects like PRON_KUKA before... | 101 | back |
@@ -1605,46 +1611,42 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_51Iso-Britannia | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Mustameri | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Punainenmeri | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_51Tyynimeri | PROPN | Optimisation hack for exceptional compou... | 51 | back |
+|  PROPN_51Tyynimeri | PROPN | Optimisation hack for exceptional compou... | 51 | front |
 |  PROPN_51Uusi-Englanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusi-Guinea | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusi-Seelanti | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusikaupunki | PROPN | Optimisation hack for exceptional compou... | 51 | back |
 |  PROPN_51Uusimaa | PROPN | Optimisation hack for exceptional compou... | 51 | back |
-|  PROPN_A. | PROPN | Middle initials don't inflect or compoun... | 99 | back |
+|  PROPN_A. | PROPN | Middle initials don't inflect or compoun... | 99 | both |
 |  PROPN_AAKKOSELLISUUS | PROPN | s stem, s : de variations back harmony | 40 | back |
 |  PROPN_AAKKOSTAMINEN | PROPN | nen stem, nen : se variations back harmo... | 38 | back |
 |  PROPN_AALLOT | PROPN | llot stem, llot : lto variations | 1-I | back |
 |  PROPN_AARRE | PROPN | rre stem, rre : rtee variations back har... | 48-K | back |
-|  PROPN_ACRO_AA | PROPN | acronyms ending in 'a' pronounced as a l... | 0 | back |
-|  PROPN_ACRO_DOLLARI | PROPN | acronyms ending in a word that inflects ... | 0 | back |
-|  PROPN_ACRO_EE | PROPN | acronyms ending in 'b', 'c', 'd', 'e', '... | 0 | back |
-|  PROPN_ACRO_GRAMMA | PROPN | acronyms ending in a word that inflects ... | 0 | back |
-|  PROPN_ACRO_II | PROPN | Acronyms that end in 'j' or 'i' pronoync... | 0 | back |
-|  PROPN_ACRO_JÄRJESTÖ | PROPN | acronyms ending in a word that inflects ... | 0 | front |
-|  PROPN_ACRO_KAHDEKSAN | PROPN | acronyms ending in 8 | 0 | front |
-|  PROPN_ACRO_KAKSI | PROPN | acronyms ending in 2 | 0 | back |
-|  PROPN_ACRO_KANDELA | PROPN | acronyms ending in a word that inflects ... | 0 | back |
-|  PROPN_ACRO_KOLME | PROPN | acronyms ending in digit 3 pronounced as... | 0 | back |
-|  PROPN_ACRO_KUUSI | PROPN | acronyms ending in 6 | 0 | front |
-|  PROPN_ACRO_LEHTI | PROPN | acronyms ending in a word that inflects ... | 0 | front |
-|  PROPN_ACRO_METRI | PROPN | acronyms ending in a word that inflects ... | 0 | front |
-|  PROPN_ACRO_NELJÄ | PROPN | acronyms ending in 4 | 0 | back |
-|  PROPN_ACRO_NOLLA | PROPN | acronyms ending in digit 0 pronounced as... | 0 | back |
-|  PROPN_ACRO_OO | PROPN | Acronyms that end in 'h', 'k' or 'o' tha... | 0 | back |
-|  PROPN_ACRO_PUNTA | PROPN | acronyms ending in a word that inflects ... | 10 | front |
-|  PROPN_ACRO_SEITSEMÄN | PROPN | acronyms ending in 7 | 0 | back |
-|  PROPN_ACRO_UU | PROPN | acronyms that end in 'q', or 'u' pronoun... | 0 | back |
-|  PROPN_ACRO_VIISI | NOUN | acronyms ending in digit 5 pronounced as... | 0 | back |
-|  PROPN_ACRO_WEBER | PROPN | acronyms ending in a word that inflects ... | 0 | front |
-|  PROPN_ACRO_YHDEKSÄN | PROPN | acronyms ending in 9 | 0 | front |
-|  PROPN_ACRO_YKSI | PROPN | acronyms ending in 1 | 0 | back |
-|  PROPN_ACRO_YY | PROPN | Acronyms that ends in 'y' pronounced as ... | 0 | back |
-|  PROPN_ACRO_ZET | PROPN | Acronyms that end in 'z' pronounced as l... | 0 | back |
-|  PROPN_ACRO_ÄKS | PROPN | Acronyms that ends in 'f', 'l', 'm', 'n'... | 0 | back |
-|  PROPN_ACRO_ÖÖ | PROPN | Acronyms that end in 'ö' pronounced as l... | 0 | front |
-|  PROPN_ACRO_Ω | PROPN | Acronyms that end in ‘oomega’ | 0 | back |
+|  PROPN_AARTO | PROPN | rto stem, rto : rro and rto variations | 1-K | back |
+|  PROPN_ACRO_AA | PROPN | acronyms ending in 'a' pronounced as a l... | 0 | both |
+|  PROPN_ACRO_DOLLARI | PROPN | acronyms ending in a word that inflects ... | 0 | both |
+|  PROPN_ACRO_EE | PROPN | acronyms ending in 'b', 'c', 'd', 'e', '... | 0 | both |
+|  PROPN_ACRO_II | PROPN | Acronyms that end in 'j' or 'i' pronoync... | 0 | both |
+|  PROPN_ACRO_KAHDEKSAN | PROPN | acronyms ending in 8 | 0 | both |
+|  PROPN_ACRO_KAKSI | PROPN | acronyms ending in 2 | 0 | both |
+|  PROPN_ACRO_KOLME | PROPN | acronyms ending in digit 3 pronounced as... | 0 | both |
+|  PROPN_ACRO_LEHTI | PROPN | acronyms ending in a word that inflects ... | 0 | both |
+|  PROPN_ACRO_METRI | PROPN | acronyms ending in a word that inflects ... | 0 | both |
+|  PROPN_ACRO_NELJÄ | PROPN | acronyms ending in 4 | 0 | both |
+|  PROPN_ACRO_NOLLA | PROPN | acronyms ending in digit 0 pronounced as... | 0 | both |
+|  PROPN_ACRO_OO | PROPN | Acronyms that end in 'h', 'k' or 'o' tha... | 0 | both |
+|  PROPN_ACRO_PUNTA | PROPN | acronyms ending in a word that inflects ... | 10 | both |
+|  PROPN_ACRO_SEITSEMÄN | PROPN | acronyms ending in 7 | 0 | both |
+|  PROPN_ACRO_UU | PROPN | acronyms that end in 'q', or 'u' pronoun... | 0 | both |
+|  PROPN_ACRO_VIISI | NOUN | acronyms ending in digit 5 pronounced as... | 0 | both |
+|  PROPN_ACRO_YHDEKSÄN | PROPN | acronyms ending in 9 | 0 | both |
+|  PROPN_ACRO_YKSI | PROPN | acronyms ending in 1 | 0 | both |
+|  PROPN_ACRO_YY | PROPN | Acronyms that ends in 'y' pronounced as ... | 0 | both |
+|  PROPN_ACRO_ZET | PROPN | Acronyms that end in 'z' pronounced as l... | 0 | both |
+|  PROPN_ACRO_ÄKS | PROPN | Acronyms that ends in 'f', 'l', 'm', 'n'... | 0 | both |
+|  PROPN_ACRO_ÖÖ | PROPN | Acronyms that end in 'ö' pronounced as l... | 0 | both |
 |  PROPN_AHDET | PROPN | det stem and | 44-F | back |
+|  PROPN_AHTO | PROPN | to stem, to : do ~ to variations | 1-F? | back |
 |  PROPN_AIVOKUOLLUT | PROPN | llut stem, llut : llee variations | 47 | back |
 |  PROPN_AIVOT | PROPN | ot stem, ot : o variations | 1 | back |
 |  PROPN_AJATAR | PROPN | tar stem, tar : ttare variations | 32-C | back |
@@ -1661,23 +1663,33 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_ASU | PROPN | u stem, no variations | 1 | back |
 |  PROPN_ASUKAS | PROPN | kas stem, kas : kkaa variations | 41-A | back |
 |  PROPN_ATERIMET | PROPN | Proper noun plurale tantum met stem, met... | 33 | back |
+|  PROPN_AULANKO | PROPN | nko stem, nko : ngo ~ nko variations | 1-G? | back |
 |  PROPN_BEIGNET | PROPN | consonat stem, ’ inflections | 22 | front |
 |  PROPN_BERNIE | PROPN | ie stem, no variations front harmony | 3 | front |
 |  PROPN_BESSERWISSER | PROPN | consonant stem, X : Xe varioants | 6 | front |
+|  PROPN_BESSET | PROPN | consonat stem, ’ and i stem inflections | 5|22 | front |
+|  PROPN_BIAUDET | PROPN | consonat stem, ’ and i stem inflections | 5|22 | front |
 |  PROPN_BIDEE | PROPN | ee stems ee : e variaotns | 20 | front |
 |  PROPN_BIKINIT | PROPN | it stem, plurale tantum | 6 | front |
 |  PROPN_BORDEAUX | PROPN | consonant stem, ’ inflection | 22 | back |
+|  PROPN_BOTSWANA | PROPN | a stems, a : o and a : 0 variations | 13 | back |
 |  PROPN_BRASSERIE | PROPN | e stem no variatons back harmony | 21 | back |
 |  PROPN_BRIE | PROPN | e stem front harmony | 21 | front |
 |  PROPN_BROOKLYN | PROPN | consonant stem, no variations both harmo... | 5 | front |
 |  PROPN_BÉBÉ | PROPN | é stem  | 21 | front |
 |  PROPN_CAMUS | PROPN | consonat stem, ’ inflection | 22 | back |
+|  PROPN_CEP | PROPN | inflects both normally and as an acronym... | 5 | front |
+|  PROPN_CERN | PROPN | inflects both normally and as an acronym... | 5 | front |
 |  PROPN_CHACHACHA | PROPN | no variatiosn  | 21 | back |
-|  PROPN_COMPOUND | PROPN | bound proper noun particles, usually, hy... | 99 | front |
-|  PROPN_COWBOY | PROPN | y stem, no variations both harmonies | 21 | back |
+|  PROPN_COMPOUND | PROPN | bound proper noun particles, usually, hy... | 99 | both |
+|  PROPN_COWBOY | PROPN | y stem, no variations both harmonies | 21 | both |
+|  PROPN_CROIX | PROPN | consonant stem, ’ and i stem inflections... | 5|22 | back |
 |  PROPN_DIMITRIS | PROPN | is stem,  is : ii variations front harmo... | 41 | front |
+|  PROPN_EDDIE | PROPN | ie stem, large allomorph set | 3|21 | front |
 |  PROPN_EKKE | PROPN | Proper noun, kke stem, kke : ke variatio... | 8-A | front |
+|  PROPN_ELIAS | PROPN | as stem, as : aa ~ akse variaitons back ... | 39|41 | back |
 |  PROPN_ELIN | PROPN | in stem, n : me variostna front harmony | 33 | front |
+|  PROPN_ELIS | PROPN | s stem, s : i ~ kse variaitons back hrmo... | 5|39 | front |
 |  PROPN_ELÄMÄ | PROPN | ä stem, ä : 0 varionts | 10 | front |
 |  PROPN_EPÄILTY | PROPN | lty stem, lty :lly variaoitns | 1-I | front |
 |  PROPN_ESQUIMAU | PROPN | o stem no variotatnos | 21 | back |
@@ -1686,27 +1698,40 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_FARMARIT | PROPN | it stem plurale tantum | 6 | back |
 |  PROPN_FIFA | PROPN | Proper noun initialisms treated like wor... | 10 | back |
 |  PROPN_FONDUE | PROPN | ue stem, no variations both harmonies | 21 | front |
+|  PROPN_FRANCIS | PROPN | s stem, s : si ~ kse variations back har... | 5|39 | back |
+|  PROPN_FUUG | PROPN | inflects both normally and as an acronym... | 5 | back |
 |  PROPN_FÄNRIKIT | PROPN | it stem, it : e varioations | 5-A | front |
-|  PROPN_GAY | PROPN | y stem, both harmonies | 21 | back |
+|  PROPN_GALILEO | PROPN | o stem no variations all allomorphs | 1|3 | back |
+|  PROPN_GAY | PROPN | y stem, both harmonies | 21 | both |
 |  PROPN_HAAKSI | PROPN | ksi stem, ksi : ht varioants | 31 | back |
 |  PROPN_HAI | PROPN | i stem, i : 0 variations | 18 | back |
 |  PROPN_HAIT | PROPN | Plural-only proper noun, monosyllabic ai... | 18 | back |
 |  PROPN_HAMMAS | PROPN | mas stem, mas : mpaa variations | 41-H | back |
 |  PROPN_HAPPI | PROPN | ppi stem, ppi : pe variations | 7-B | back |
 |  PROPN_HAPPO | PROPN | ppo stem, ppo : po variations | 1-B | back |
+|  PROPN_HEATHROW | PROPN | Proper noun w, consonant stem inflection... | 5|22 | back |
 |  PROPN_HEITIN | PROPN | tin stem, tin : ttime variations front h... | 33-C | front |
+|  PROPN_HELLE | PROPN | optional lte : lle gradation | 8|48-I | front |
+|  PROPN_HELPI | PROPN | optional lpi : lvi gradation | 7-E? | front |
 |  PROPN_HENKI | PROPN | nki stem, nki : nge variations | 7-G | front |
-|  PROPN_HEPO | PROPN | po stem, po : vo variations | 1-E | back |
+|  PROPN_HEPO | PROPN | po stem, po : vo variations | 1-E? | back |
+|  PROPN_HERAKLES | PROPN | es stem, es : ee and es : esin variaiton... | 5|41 | both |
 |  PROPN_HIIRI | PROPN | i stem, i : e variations and consonant s... | 24 | front |
 |  PROPN_HIRTTO | PROPN | tto stem, tto : to variations | 1-C | back |
 |  PROPN_HIUTALEET | PROPN | eet stem, eet : e variations plurale tan... | 48 | back |
+|  PROPN_HKI | PROPN | Abbreviated Helsinki inflects like *Hki*... | 0 | both |
 |  PROPN_HONKA | PROPN | nka stem, nka : ng variations | 10-G | back |
 |  PROPN_HOPEAT | PROPN | eat stem, eat : e variations plurale tan... | 15 | back |
 |  PROPN_HORTA | PROPN |  rta stem, rta:rr variations | 10-K | back |
+|  PROPN_HORTE | PROPN | optional te : ttee gradation | 8|48-C | back |
+|  PROPN_HOSIKE | PROPN | allomorphs | 8|48-A | back |
 |  PROPN_HOUSUT | PROPN | ut stem no variations plurale tantum | 1 | back |
+|  PROPN_HUIKU | PROPN | optional ku : u gradation | 1-D? | back |
 |  PROPN_HUOLITELTU | PROPN | ltu stem, ltu : llu variations | 1-I | back |
 |  PROPN_HUPI | PROPN | pi stem, pi : ve variations | 5-E | back |
 |  PROPN_HYLKY | PROPN | ky stem, ky : y variations | 1-D | front |
+|  PROPN_HYRKÄS | PROPN | optional käs : kkää gradation | 39|41-A | front |
+|  PROPN_HYÖKY | PROPN | optional ky : y gradation | 1-D? | front |
 |  PROPN_HYÖTYY | PROPN | yy stem, yy : y variations | 17 | front |
 |  PROPN_HÄIRIÖ | PROPN | ö stem no variations | 3 | front |
 |  PROPN_HÄKKI | PROPN | kki  stem, kki : ke variations front har... | 5-A | front |
@@ -1721,13 +1746,18 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_HÖLKKÄ | PROPN | kkä stem, kkä : k variaitns | 10-A | front |
 |  PROPN_HÖPÖTTÄJÄ | PROPN | ä stem, ä : 0 variations | 10 | front |
 |  PROPN_HÖYHENET | PROPN | et stem, et : 0 variations, front harmon... | 32 | front |
+|  PROPN_INDIEGOGO | PROPN | o stem no variations all allomorphs | 1|21 | back |
+|  PROPN_INDIEGOGO | PROPN | on and hon illatives | 1|21 | back |
 |  PROPN_INGET | NOUN | Plural-only proper noun, i:e stem, nk:ng... | 44-G | front |
+|  PROPN_INKA | PROPN | optional nka : nga gradation | 9-G? | back |
 |  PROPN_ITÄMAAT | PROPN | aat stem, aat : a variations plurale tan... | 18 | back |
+|  PROPN_JALTA | PROPN | optional lta : lla gradation | 9-I? | back |
 |  PROPN_JEPPE | PROPN | pe stem, ppe: pe variations | 8-B | front |
-|  PROPN_JOCKEY | PROPN | y stem no variations, both harmonies | 21 | back |
+|  PROPN_JOCKEY | PROPN | y stem no variations, both harmonies | 21 | both |
 |  PROPN_JOUKOT | PROPN | Proper noun, kot stems, kot : o variatio... | 1-A | back |
 |  PROPN_JOUTSEN | PROPN | consonant stems, X : xe variations | 32 | back |
 |  PROPN_JUHLAT | PROPN | at stem, at : 0 variations plurale tantu... | 10 | back |
+|  PROPN_JULKU | PROPN | optional ku : u gradation | 1-A? | back |
 |  PROPN_JUOVAT | PROPN | proper nouns, vat stem, at : p variation... | 10-E | back |
 |  PROPN_JYLKYT | PROPN | kyt stem, kyt : y variations Plurals onl... | 1-A | front |
 |  PROPN_JÄRJESTÖT | PROPN | öt stem, öt : ö variations plurale tantu... | 2 | front |
@@ -1752,7 +1782,6 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_KENGÄT | PROPN | ngät stem, ngät : nk variations | 10-G | front |
 |  PROPN_KENKÄ | PROPN | Proper nouns wit nkä stem, nkä : ng vari... | 10-G | front |
 |  PROPN_KENTTÄ | PROPN | ttä stems, ttä : t variations | 10-C | front |
-|  PROPN_KENTÄT | PROPN | Plural-only proper nouns, ät stem, tät :... | 10-C | front |
 |  PROPN_KERITSIMET | PROPN | imet stem, imet : in variations plurale ... | 33 | front |
 |  PROPN_KERTA | PROPN | rta stem, rta :rra variations | 9-K | back |
 |  PROPN_KEVÄT | PROPN | ät stem, ät : ää variations | 44 | front |
@@ -1762,12 +1791,13 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_KIHARAT | PROPN | at stem, at : o variations plurale tantu... | 11 | back |
 |  PROPN_KIINNE | PROPN | nne stem, nne : ntee variations | 48-J | front |
 |  PROPN_KILPI | PROPN | pi stem, pi : ve variations | 7-E | front |
-|  PROPN_KINNAS | PROPN | nnas stem, nnas : ntaa varitions | 41-J | back |
 |  PROPN_KIRITTÄRET | PROPN | Plural-only proper noun, ttäret stems, t... | 32-C | front |
 |  PROPN_KIRJA | PROPN | a stem, a : o variations | 9 | back |
 |  PROPN_KIRVES | PROPN | es stem, es : ee variations front harmn ... | 41 | front |
 |  PROPN_KITARA | PROPN | a stem, a : o variations | 13 | back |
 |  PROPN_KIVI | PROPN | i stem, i : e variations | 7 | front |
+|  PROPN_KIVILAMPI | PROPN | mpi stem, mpi : mm variation back harmon... | 5|7-H | back |
+|  PROPN_KIVILAMPI | PROPN | opitional mpi : mmi  gradation | 5|7-H | back |
 |  PROPN_KLUMPIT | PROPN | Plural-only proper noun, pit stem, pit :... | 5-B | back |
 |  PROPN_KOE | PROPN | e stem, e : kee variatins back harmony | 48-D | back |
 |  PROPN_KOKO | PROPN | koko stem,  ko : oo : o : ’ o variations | 1-D | back |
@@ -1812,6 +1842,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_KÖÖ | PROPN | öö stem, öö : ö variations | 18 | front |
 |  PROPN_LAET | PROPN | Plural-only proper nouns, et stem, et : ... | 7-D | back |
 |  PROPN_LAHDET | PROPN | Plural-only proper nouns, det stem, det ... | 7-F | back |
+|  PROPN_LAHELMA | PROPN | both a : o and a : 0 stems | 10|13 | back |
 |  PROPN_LAHTI | PROPN | ti stem, ti : de variations | 7-F | back |
 |  PROPN_LAIDUN | PROPN | dun stem, dun : tume variations | 33-F | back |
 |  PROPN_LAKI | PROPN | ki stem, ki : i variations | 5-D | back |
@@ -1825,8 +1856,10 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_LEHTI | PROPN | ti stem, ti : de variaons | 7-F | front |
 |  PROPN_LEIKKUU | PROPN | uu stem, uu : u variations | 17 | back |
 |  PROPN_LEIPÄ | PROPN | pä stem, pä : v variations | 10-E | front |
+|  PROPN_LEIVANTI | PROPN | optional nti : nni gradation | 5-J? | back |
 |  PROPN_LENTTEE | PROPN | ee stem, ee : variaitons | 17 | front |
 |  PROPN_LEPAKKO | PROPN | kko stem, kko : ko variations | 4-A | back |
+|  PROPN_LEVIS | PROPN | both s : kse and s : si inflections | 5|39 | both |
 |  PROPN_LIEMI | PROPN | mi stem, mi : n variations | 25 | front |
 |  PROPN_LIITTOUTUNEET | PROPN | nneet stem, nneet : nut variations plura... | 47 | back |
 |  PROPN_LIIVIT | PROPN | it stem, it : i variations plurale tantu... | 5 | front |
@@ -1864,19 +1897,21 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_MALKO | PROPN | ko stem, lko : o variations | 1-M | back |
 |  PROPN_MALMÖ | PROPN | ö stem no variations, hön illative | 21 | front |
 |  PROPN_MANNER | PROPN | ner stem, ner : tere : teree variations ... | 49-J | back |
+|  PROPN_MARIE | PROPN | some allomorphs | 3|21 | back |
 |  PROPN_MARKKINAT | PROPN | at stem, at : a variations plurale tantu... | 12 | back |
 |  PROPN_MATEE | PROPN | ee stem, ee : e variatons | 18 | back |
 |  PROPN_MATKUET | PROPN | Plural-only proper nouns, uet stems,  | 43 | back |
-|  PROPN_MC | PROPN | proper noun bound particle, mostly forei... | 99 | back |
-|  PROPN_MERI | PROPN | meri stem, consonant stem partitive tä | 1024 | back |
+|  PROPN_MC | PROPN | proper noun bound particle, mostly forei... | 99 | both |
+|  PROPN_MERI | PROPN | meri stem, consonant stem partitive tä | 1024 | front |
 |  PROPN_MERTU | PROPN | rtu stem, rtu : rru variations | 1-K | back |
 |  PROPN_METTE | PROPN | tte stem, tte:te variations front harmon... | 8-C | front |
-|  PROPN_MIEHET | PROPN | Plural-only proper noun, het stem, het :... | 42 | back |
+|  PROPN_MIEHET | PROPN | Plural-only proper noun, het stem, het :... | 42 | front |
 |  PROPN_MIELENGE | PROPN | Proper nouns nge  stem, nge : nke variat... | 48-G | front |
 |  PROPN_MIELLE | PROPN | lle stem, lle : ltee variations | 48-I | front |
-|  PROPN_MIES | PROPN | mies stem, s : he variations | 42 | back |
+|  PROPN_MIES | PROPN | mies stem, s : he variations | 42 | front |
+|  PROPN_MINERVA | PROPN | both a : o and a: 0 stems | 9|10 | back |
 |  PROPN_MITTA | PROPN | tta stem, tta : to variations | 9-C | back |
-|  PROPN_MONSIEUR | PROPN | consonant stem, ’ inflections both harmo... | 22 | front |
+|  PROPN_MONSIEUR | PROPN | consonant stem, ’ inflections both harmo... | 22 | both |
 |  PROPN_MULTA | PROPN | lta stem, lta : ll variations | 10-I | back |
 |  PROPN_MURTEET | PROPN | Plural-only proper noun, rteet stem, rte... | 48-K | back |
 |  PROPN_MYRKKY | PROPN | kky stem, kky : ky variations | 1-A | front |
@@ -1886,7 +1921,9 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_MÄTTÄÄT | PROPN | Plural-only proper noun, ttäät stem, ttä... | 41-C | front |
 |  PROPN_MÖMMÖ | PROPN | ö stem no variations | 1 | front |
 |  PROPN_MÖRKÖ | PROPN | kö stem, kö : ö variations | 1-D | front |
+|  PROPN_NAHKA | PROPN | ka stem, optional ka : a gradaitons | 9-D? | back |
 |  PROPN_NALLE | PROPN | e stem, no variations back harmony | 8 | back |
+|  PROPN_NATO | PROPN | both word and acronym inflections | 1 | back |
 |  PROPN_NEITSYT | PROPN | yt stem, yt : ye variations | 43 | front |
 |  PROPN_NEUVOTTELUT | PROPN | ut stem, ut : u variations | 2 | back |
 |  PROPN_NG | PROPN | Vowelless foreign proper nouns, tentativ... | 5 | both |
@@ -1901,8 +1938,8 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_NOUGAT | PROPN | consonant stem, ’ inflections | 22 | back |
 |  PROPN_NUGAA | PROPN | aa stems, aa : a variations | 20 | back |
 |  PROPN_NUKKE | PROPN | Proper noun, kke stems, kke : ke ariatio... | 8-A | back |
-|  PROPN_NÄKY | PROPN | Proper noun, ky stems, ky : y variations | 1-D | front |
 |  PROPN_NÄLKÄ | PROPN | kä stems, kä : 0 variatins | 10-D | front |
+|  PROPN_OIVE | PROPN | optional ve : pe gradation | 48 | back |
 |  PROPN_OLUT | PROPN | t stem, t : e variations | 43 | back |
 |  PROPN_ONKI | PROPN | nki stem, nki : ng variaotns | 7-G | back |
 |  PROPN_ONNET | PROPN | Plural-only proper et stems, et : i vari... | 7-J | back |
@@ -1973,9 +2010,11 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_RINTEET | PROPN | Plural-only proper noun, nteet stem, nte... | 48-J | front |
 |  PROPN_RIPE | PROPN | pe stem, pe : ppee variations | 48-B | front |
 |  PROPN_RIPSET | PROPN | et stem, et : i variations front harmony | 7 | front |
+|  PROPN_RITA | PROPN | optional ta : da gradation | 9-F? | back |
 |  PROPN_RIUTAT | PROPN | Plural-only proper noun, tat stem, tat :... | 9-C | back |
 |  PROPN_ROITOT | PROPN | Plural-only proper noun, tot stem, tot :... | 1-C | back |
 |  PROPN_ROMPAAT | PROPN | Plural-only proper noun, mpaat stem, mpa... | 41-H | back |
+|  PROPN_ROPO | PROPN | optional po : vo gradation | 1-E? | back |
 |  PROPN_ROSÉ | PROPN | é stem | 21 | back |
 |  PROPN_ROTTA | PROPN | tta stem, tta : t varitions | 10-C | back |
 |  PROPN_RUIPELO | PROPN | o stem no variations | 2 | back |
@@ -1989,18 +2028,22 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_RUUVI | PROPN | i stem, i : e variation | 5 | back |
 |  PROPN_RYPÄS | PROPN | päs stem, päs : ppää variaitno | 41-B | front |
 |  PROPN_RYYPPY | PROPN | ppy stem, ppy : py variations | 1-B | front |
+|  PROPN_RYYTI | PROPN | optional ti : di gradation | 5-F? | front |
 |  PROPN_RÄJÄYTYS | PROPN | s stem, s : ks variations front harmony | 39 | front |
 |  PROPN_RÄMEET | PROPN | Plural-only proper noun, eet stem, eet :... | 48 | front |
 |  PROPN_RÄMEÄT | PROPN | Plural-only proper noun, eät stem, eät :... | 15 | front |
 |  PROPN_RÄMIÄT | PROPN | Plural-only proper noun, iät stem, iät :... | 12 | front |
 |  PROPN_SAAPAS | PROPN | pas stem, pas : ppaa variations | 41-B | back |
 |  PROPN_SAARET | PROPN | Plural-only proper nouns, et stem, et : ... | 24 | back |
+|  PROPN_SAINT_TROPEZ | PROPN | both ’ and i stem inflection | 5|22 | back |
 |  PROPN_SAKSET | PROPN | Proper noun, et stem, et : i varioatn pl... | 7 | back |
 |  PROPN_SALONTEET | PROPN | Plural-only proper noun, nteet stem, nnt... | 48-J | back |
 |  PROPN_SALPA | PROPN | lpa stem, lpa : lv variations | 9-E | back |
 |  PROPN_SAMMALET | PROPN | Plural-only proper noun, et stem, et : 0... | 49 | back |
 |  PROPN_SAMPI | PROPN | mpi stem, mpi : mm variation back harmon... | 7-H | back |
 |  PROPN_SAMPO | PROPN | mpo stem, mpo : mmo variations | 1-H | back |
+|  PROPN_SATU | PROPN | optional tu : du gradation | 1-F? | back |
+|  PROPN_SAVI | PROPN | both i and e stems | 5|7 | back |
 |  PROPN_SEIKKAILU | PROPN | Proper noun u stem, no variations | 2 | back |
 |  PROPN_SEIVÄS | PROPN | Proper noun, väs stem, väs : pää variati... | 41-E | front |
 |  PROPN_SELENE | PROPN | new e stems, no variatinos front harmmun | 2 | front |
@@ -2008,7 +2051,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_SEPPÄ | PROPN | ppä stem, ppä : pä variation | 10-B | front |
 |  PROPN_SERGEJ | PROPN | j stem | 22 | front |
 |  PROPN_SERKUKSET | PROPN | kset stem, kset :s variation back harony | 39 | back |
-|  PROPN_SHOW | PROPN | Proper noun s, consonant stem inflection... | 22 | back |
+|  PROPN_SHOW | PROPN | Proper noun w, consonant stem inflection... | 22 | back |
 |  PROPN_SIEMEN | PROPN | consonant stem, X : Xe variaotn front ha... | 32 | front |
 |  PROPN_SIIRTO | PROPN | rto stem, rto :rro variations | 1-K | back |
 |  PROPN_SIIVILÄ | PROPN | ä stem, ä : ö variations | 13 | front |
@@ -2035,6 +2078,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_SÄRKÄT | PROPN | Plural-only proper noun, kät stem, kät :... | 10-A | front |
 |  PROPN_SÄÄDIN | PROPN | din stem, din : time variations | 33-F | front |
 |  PROPN_SÄÄRET | PROPN | Plural-only proper noun, et stem, et : i... | 26 | front |
+|  PROPN_SÄÄSKI | PROPN | both i and e stems | 5|7 | front |
 |  PROPN_TAIMI | PROPN | mi stem, mi : n varinoats | 25 | back |
 |  PROPN_TAIVAL | PROPN | val stem val : pale : palee variiostn | 49-E | back |
 |  PROPN_TALKOOT | PROPN | oot stem, oot : oo variations pluarle ta... | 17 | back |
@@ -2046,6 +2090,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_TEE | PROPN | Proper noun, ee stem, ee : e variation | 18 | front |
 |  PROPN_TEHDAS | PROPN | das stem, das : ta variations | 41-F | back |
 |  PROPN_TEHTAAT | PROPN | Plural-only proper noun, taat stem, taat... | 41-F | back |
+|  PROPN_TEISTE | PROPN | both a and tta partitives | 8|48 | front |
 |  PROPN_TEKO | PROPN | ko stem, ko : o variations | 1-D | back |
 |  PROPN_TIE | PROPN | ie stem, ie : e variations front hamronu | 19 | front |
 |  PROPN_TIENOO | PROPN | oo stem, oo : o variaitnos | 17 | back |
@@ -2074,10 +2119,13 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_TÖRPPÖ | PROPN | Proper noun, ppö stem, ppö : pö variatio... | 1-B | front |
 |  PROPN_UKKO | PROPN | ko ste, kko : ko variaitons | 1-A | back |
 |  PROPN_ULAPPA | PROPN | ppa stem, ppa : po variaytion | 14-B | back |
+|  PROPN_UNICEF | PROPN | both word and acronymb inglections | 5 | back |
+|  PROPN_UNTO | PROPN | optional nto : nno gradations | 1-J? | back |
+|  PROPN_UOTI | PROPN | optional ti : di gradation | 5-F? | back |
 |  PROPN_VAADIN | PROPN | din stem, din : time variations | 33-F | back |
 |  PROPN_VAAKA | PROPN | aka stem, aka : a’a variations | 9-D | back |
 |  PROPN_VAANII | PROPN | ii stem, ii : i variationt | 17 | back |
-|  PROPN_VAASAN | PROPN | non-inflecting proper nouns | 99 | back |
+|  PROPN_VAASAN | PROPN | non-inflecting proper nouns | 99 | both |
 |  PROPN_VAINAA | PROPN | aa stem, aa : a variations | 17 | back |
 |  PROPN_VAKUUTUS | PROPN | s stem, s : kse variation back harmonu | 39 | back |
 |  PROPN_VALJAAT | PROPN | Proper noun jaat stem, aat: as variation... | 41 | back |
@@ -2085,7 +2133,6 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_VALTA | PROPN | lta stem, lta : llo variatin | 9-I | back |
 |  PROPN_VANHEMMAT | PROPN | mmat stem, mmat : mp variation plurale t... | 16-H | back |
 |  PROPN_VANKI | PROPN | nki stem, nki : nge variaitnos | 5-G | back |
-|  PROPN_VARAS | PROPN | as stem, as : kaa variations | 41-D | back |
 |  PROPN_VARAT | PROPN | at stem, at  : a variations plurale tanu... | 9 | back |
 |  PROPN_VARPAAT | PROPN | Plural-only proper noun, paat stem, paat... | 41-E | back |
 |  PROPN_VARSI | PROPN | rsi stem, rsi : rre variationst front ha... | 28-K | back |
@@ -2098,6 +2145,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_VETY | PROPN | ty stem, ty : dy variatons | 1-F | front |
 |  PROPN_VIENTI | PROPN | nti stem, nti : nne variatinost fron har... | 5-J | front |
 |  PROPN_VIHKIÄISET | PROPN | set stem, set : nen varioants front harm... | 38 | front |
+|  PROPN_VIHKO | PROPN | optional ko : o gradation | 1-D? | back |
 |  PROPN_VIIRRET | PROPN | Plural-only proper noun withr rret stem,... | 44-K | front |
 |  PROPN_VIIS | PROPN | iis stem, s : de  variatinst front harmo... | 27 | front |
 |  PROPN_VIIVE | PROPN | ve stem, ve : pe variations | 48-E | front |
@@ -2106,7 +2154,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_VIRSI | PROPN | rsi stem, rsi :rre variatons  front harm... | 28-K | front |
 |  PROPN_VODĂ | PROPN | Proper nonus, ǎ stem | 10 | back |
 |  PROPN_VOIMA | PROPN | a stem, a : 0 variatins | 10 | back |
-|  PROPN_VON | PROPN | proper noun particle, no inflection, no ... | 99 | back |
+|  PROPN_VON | PROPN | proper noun particle, no inflection, no ... | 99 | both |
 |  PROPN_VUO | PROPN | uo stem, uo : o variationst | 19 | back |
 |  PROPN_VUODET | PROPN | det stem | 27 | back |
 |  PROPN_VUOLLE | PROPN | lle stem, lle : ltee variations | 48-I | back |
@@ -2115,6 +2163,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_WADA | PROPN | Proper noun acronyms inflected like a-fi... | 9 | back |
 |  PROPN_YHTIÖT | PROPN | Plural-only proper noun, ö stem no varia... | 3 | front |
 |  PROPN_YKSIKKÖ | PROPN | Proper noun, kkö stem, kkö : kö variaton | 4-A | front |
+|  PROPN_YLVA | PROPN | both a :o  adn A : 0variations | 9|10 | back |
 |  PROPN_YLÄNKÖ | PROPN | Proper noun, nkö stem, nkö : ngö variatn... | 1-G | front |
 |  PROPN_YLÖÖ | PROPN | öö stem, öö : ö variation | 17 | front |
 |  PROPN_YMPÄRYSTÄ | PROPN | ä stem, ä : 0 variation | 9 | front |
@@ -2124,25 +2173,25 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_ZEN | PROPN | consonant stem, X : Xe variation front h... | 5 | front |
 |  PROPN_ZOMBIE | PROPN | e stem, no variations back hamronu | 3 | back |
 |  PROPN_ÄYRÄS | PROPN | äs stem, äs : ää variations | 41 | front |
-|  PUNCT_NONSTD_DASH_LOOP | PUNCT | accounts for repeated hyphen-like charac... | 99 | back |
-|  PUNCT_NONSTD_EXCL_LOOP | PUNCT | accounts for repeated exclamation-like c... | 99 | back |
-|  PUNCT_PILKKU | PUNCT | punctuation, rare back inflection plausi... | 99 | back |
-|  PUNCT_PISTE | PUNCT | punctuation, rare front inflection plaus... | 99 | front |
-|  SCONJ_ETTÄ | SCONJ | sub-ordinating conjunction, no inflectio... | 99 | front |
-|  SYM_$ | SYM | symbols, inflection, :, compounding, - | 99 | back |
-|  SYM_, | SYM | symbol, back inflection, :, compounding,... | 99 | back |
-|  SYM_. | SYM | symbols, front inflection, :, compoundin... | 99 | front |
-|  SYM_CELSIUS | SYM | symbols, inflection, :, compounding, - | 0 | back |
-|  SYM_GRAMMA | SYM | symbols, inflection, :, compounding, - | 0 | back |
-|  SYM_JOULE | SYM | symbols, inflection, :, compounding, - | 0 | back |
-|  SYM_METRI | SYM | symbols, inflection, :, compounding, - | 0 | front |
-|  SYM_TUOTE | SYM | symbols, inflection, :, compounding, - | 0 | back |
-|  SYM_WEBER | SYM | symbols, inflection, :, compounding, - | 0 | front |
-|  SYM_¢ | SYM | symbols, inflection, :, compounding, - | 99 | front |
-|  SYM_£ | SYM | symbols, inflection, :, compounding, - | 99 | back |
-|  SYM_§ | SYM | symbols, inflection, :, compounding, - | 99 | front |
-|  SYM_Ω | SYM | symbols, inflection, :, compounding, - | 99 | back |
-|  SYM_€ | SYM | symbols, inflection, :, compounding, - | 0 | back |
+|  PUNCT_NONSTD_DASH_LOOP | PUNCT | accounts for repeated hyphen-like charac... | 99 | both |
+|  PUNCT_NONSTD_EXCL_LOOP | PUNCT | accounts for repeated exclamation-like c... | 99 | both |
+|  PUNCT_PILKKU | PUNCT | punctuation, rare back inflection plausi... | 99 | both |
+|  PUNCT_PISTE | PUNCT | punctuation, rare front inflection plaus... | 99 | both |
+|  SCONJ_ETTÄ | SCONJ | sub-ordinating conjunction, no inflectio... | 99 | both |
+|  SYM_$ | SYM | symbols, inflection, :, compounding, - | 99 | both |
+|  SYM_, | SYM | symbol, back inflection, :, compounding,... | 99 | both |
+|  SYM_. | SYM | symbols, front inflection, :, compoundin... | 99 | both |
+|  SYM_CELSIUS | SYM | symbols, inflection, :, compounding, - | 0 | both |
+|  SYM_GRAMMA | SYM | symbols, inflection, :, compounding, - | 0 | both |
+|  SYM_JOULE | SYM | symbols, inflection, :, compounding, - | 0 | both |
+|  SYM_METRI | SYM | symbols, inflection, :, compounding, - | 0 | both |
+|  SYM_TUOTE | SYM | symbols, inflection, :, compounding, - | 0 | both |
+|  SYM_WEBER | SYM | symbols, inflection, :, compounding, - | 0 | both |
+|  SYM_¢ | SYM | symbols, inflection, :, compounding, - | 99 | both |
+|  SYM_£ | SYM | symbols, inflection, :, compounding, - | 99 | both |
+|  SYM_§ | SYM | symbols, inflection, :, compounding, - | 99 | both |
+|  SYM_Ω | SYM | symbols, inflection, :, compounding, - | 99 | both |
+|  SYM_€ | SYM | symbols, inflection, :, compounding, - | 0 | both |
 |  VERB_AALLOTA | VERB | llota stem, llota : ltoa variaton | 75-I | back |
 |  VERB_AHNEHTIA | VERB | tia stem, tia : di variations | 61-F | back |
 |  VERB_AMPUA | VERB | mpua stem, mpua : mmu variations | 52-H | back |
@@ -2205,6 +2254,7 @@ All other lexical information is coded on per lexeme basis
 |  VERB_KIHERRELLÄ | VERB | rrellä stem rrellä : rtele variations | 67-K | front |
 |  VERB_KIILLELLÄ | VERB | llellä stem, llellä : ltele variationys | 67-I | front |
 |  VERB_KIINNETÄ | VERB | nnetä stem, nnetä : nteä variations | 72-J | front |
+|  VERB_KANNETA | VERB | nneta stem, nneta : ntea variations | 72-J | back |
 |  VERB_KIITÄÄ | VERB | tää stem, tää : dä : si variations | 55-F | front |
 |  VERB_KIRVOTA | VERB | vota stem, vota : poa variatons | 74-E | back |
 |  VERB_KIVETTYÄ | VERB | ttyä stem, ttyä : ty variations | 52-C | front |
@@ -2334,6 +2384,7 @@ All other lexical information is coded on per lexeme basis
 |  VERB_TULLA | VERB | lla stem, lla : le variations | 67 | back |
 |  VERB_TUNGETA | VERB | ngeta stem, ngeta : nkea variations | 74-G | back |
 |  VERB_TUNKEA | VERB | nkea stem, nkea : nge variations | 58-G | back |
+|  VERB_ÄNKEÄ | VERB | nkeä stem, nkeä : nge variations | 58-G | front |
 |  VERB_TUNTEA | VERB | ntea stem, ntea : nne variations | 59-J | back |
 |  VERB_TUODA | VERB | uoda stem, uoda : oi variations | 64 | back |
 |  VERB_TYHJENTYÄ | VERB | ntyä stem, ntyä : nny variations | 52-J | front |
@@ -2371,12 +2422,12 @@ All other lexical information is coded on per lexeme basis
 |  VERB_ÄNGETÄ | VERB | getä stem, getä : keä variations | 74-G | front |
 |  VERB_ÄRISTÄ | VERB | stä stem, stä : se variations | 66 | front |
 |  VERB_ÖYKKÄRÖIDÄ | VERB | öidä stem, öidä : öi ~ öise variations | 62 | front |
-|  X_51eikä | CCONJ|VERB | Verbal conjunction compound ‘eikä’ («‘ja... | 51 | back |
-|  X_51ettei | CCONJ|VERB | Verbal conjunction compounds of type ‘et... | 51 | back |
-|  X_51äläkä | CCONJ|VERB | Partial inflection of imperative negatio... | 51 | back |
-|  X_FORGN_DE | PROPN | new particles of German origin, such as:... | 99 | back |
-|  X_FORGN_EN | PROPN | new particles of English origin, such as... | 99 | back |
-|  X_FORGN_SV | PROPN | new particles of Swedish origin; used of... | 99 | back |
-|  X_IGNORE | X | words that need to be in lexicon for leg... | 99 | back |
-|  X_SUFFIX_GOESWITH | X | some suffixes that appear mistokenised, ... | 99 | back |
+|  X_51eikä | CCONJ|VERB | Verbal conjunction compound ‘eikä’ («‘ja... | 51 | both |
+|  X_51ettei | CCONJ|VERB | Verbal conjunction compounds of type ‘et... | 51 | both |
+|  X_51äläkä | CCONJ|VERB | Partial inflection of imperative negatio... | 51 | both |
+|  X_FORGN_DE | PROPN | new particles of German origin, such as:... | 99 | both |
+|  X_FORGN_EN | PROPN | new particles of English origin, such as... | 99 | both |
+|  X_FORGN_SV | PROPN | new particles of Swedish origin; used of... | 99 | both |
+|  X_IGNORE | X | words that need to be in lexicon for leg... | 99 | both |
+|  X_SUFFIX_GOESWITH | X | some suffixes that appear mistokenised, ... | 99 | both |
 <!-- vim: set ft=markdown:-->
