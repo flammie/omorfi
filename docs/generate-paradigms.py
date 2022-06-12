@@ -21,6 +21,7 @@ This script converts Finnish TSV-formatted lexicon to github wiki
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+import sys
 import argparse
 import csv
 from sys import stderr
@@ -30,6 +31,7 @@ from sys import stderr
 
 
 def main():
+    """CLI for generating paradigm documentations."""
     # initialise argument parser
     ap = argparse.ArgumentParser(
         description="Convert omorfi database to github pages")
@@ -45,7 +47,7 @@ def main():
                     help="read paradigm data from PARAFILE")
     ap.add_argument("--version", "-V", action="version")
     ap.add_argument("--output", "-o", action="store", required=True,
-                    type=argparse.FileType('w'),
+                    type=argparse.FileType("w"),
                     metavar="OFILE", help="write docs OFILE")
     ap.add_argument("--fields", "-F", action="store", default=2,
                     metavar="N", help="read N fields from master")
@@ -62,31 +64,31 @@ def main():
     args = ap.parse_args()
 
     # write preamble to wiki page
-    print('# Paradigms', file=args.output)
+    print("# Paradigms", file=args.output)
     print(file=args.output)
-    print("_This is an automatically generated documentation based on omorfi" +
+    print("_This is an automatically generated documentation based on omorfi"
           " lexical database._", file=args.output)
     print(file=args.output)
-    print("Paradigms are sub-groups of lexemes that have unique " +
-          "morpho-phonological features. " +
-          "In omorfi database there is a unique " +
+    print("Paradigms are sub-groups of lexemes that have unique "
+          "morpho-phonological features. "
+          "In omorfi database there is a unique "
           "paradigm for every possible combination of certain features:",
           file=args.output)
     print(file=args.output)
     print("* Universal Part-of-speech", file=args.output)
-    print("* Morphophonology, such as: vowel harmony, gradation pattern, " +
+    print("* Morphophonology, such as: vowel harmony, gradation pattern, "
           " stem variations and allomorph selection", file=args.output)
-    print("* Other morphotactic limitations, such as: only plurals allowed, " +
+    print("* Other morphotactic limitations, such as: only plurals allowed, "
           " obligatory possessive suffixes, etc.", file=args.output)
     print(file=args.output)
     print("All other lexical information is coded on per lexeme basis",
           file=args.output)
     print("## Paradigms in alphabetical order", file=args.output)
     print(file=args.output)
-    print("* The _Notes_ column is informal hints for lexicographers to " +
-          "discriminate the classes, for further details each paradigm has " +
+    print("* The _Notes_ column is informal hints for lexicographers to "
+          "discriminate the classes, for further details each paradigm has "
           "their own page with details and exampels linked", file=args.output)
-    print("* The _KOTUS_ column is official dictionary class, if you are  " +
+    print("* The _KOTUS_ column is official dictionary class, if you are  "
           "familiar with Finnish dictionaries.", file=args.output)
     print("* The _Harmony_ column is vowel harmony; back, front, both or N/A",
           file=args.output)
@@ -97,22 +99,22 @@ def main():
     print("|:-------------|---------:|:--------|------:|:-------:|",
           file=args.output)
 
-    paradata = dict()
-    with open(args.paradigms) as tsv_file:
+    paradata = {}
+    with open(args.paradigms, encoding="utf-8") as tsv_file:
         tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                                     strict=True)
         for tsv_parts in tsv_reader:
-            paradata[tsv_parts['new_para']] = dict()
+            paradata[tsv_parts["new_para"]] = {}
             for key in tsv_parts.keys():
-                if key != 'new_para':
-                    paradata[tsv_parts['new_para']][key] = tsv_parts[key]
+                if key != "new_para":
+                    paradata[tsv_parts["new_para"]][key] = tsv_parts[key]
     paradigms = set(paradata.keys())
     for tsv_filename in args.paradigm_docs:
         if args.verbose:
             print("Reading from", tsv_filename)
         linecount = 0
         # for each line
-        with open(tsv_filename, 'r', newline='') as tsv_file:
+        with open(tsv_filename, "r", encoding="utf-8", newline="") as tsv_file:
             tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
                                         strict=True)
             for tsv_parts in tsv_reader:
@@ -122,45 +124,44 @@ def main():
                           "skipping following line completely:", file=stderr)
                     print(tsv_parts, file=stderr)
                     continue
-                if tsv_parts['new_para'] in paradata:
-                    if not tsv_parts['doc']:
-                        print("missing DOC:", tsv_parts['new_para'])
-                        exit(1)
-                    if len(tsv_parts['doc']) > 40:
-                        docshort = tsv_parts['doc'][:40] + '...'
+                if tsv_parts["new_para"] in paradata:
+                    if not tsv_parts["doc"]:
+                        print("missing DOC:", tsv_parts["new_para"])
+                        sys.exit(1)
+                    if len(tsv_parts["doc"]) > 40:
+                        docshort = tsv_parts["doc"][:40] + "..."
                     else:
-                        docshort = tsv_parts['doc']
-                    if paradata[tsv_parts['new_para']]['kotus_tn'] == 99:
-                        kotus = '[N/A](#kotus_exceptions)'
+                        docshort = tsv_parts["doc"]
+                    if paradata[tsv_parts["new_para"]]["kotus_tn"] == 99:
+                        kotus = "[N/A](#kotus_exceptions)"
                     else:
-                        kotus = paradata[tsv_parts['new_para']]['kotus_tn']
-                        if paradata[tsv_parts['new_para']]['kotus_av'] !=\
-                                'None':
+                        kotus = paradata[tsv_parts["new_para"]]["kotus_tn"]
+                        if paradata[tsv_parts["new_para"]]["kotus_av"] !=\
+                                "None":
                             kotus = kotus + "-" + \
-                                paradata[tsv_parts['new_para']]['kotus_av']
-                    if paradata[tsv_parts['new_para']]['harmony'] == 'None':
-                        harmony = 'N/A'
+                                paradata[tsv_parts["new_para"]]["kotus_av"]
+                    if paradata[tsv_parts["new_para"]]["harmony"] == "None":
+                        harmony = "N/A"
                     else:
-                        harmony = paradata[tsv_parts['new_para']]['harmony']
-                    # something XXX:
-                    if tsv_parts['new_para'] not in paradigms:
-                        print('found in data but not docs:',
-                              tsv_parts['new_para'], file=stderr)
+                        harmony = paradata[tsv_parts["new_para"]]["harmony"]
+                    if tsv_parts["new_para"] not in paradigms:
+                        print("found in data but not docs:",
+                              tsv_parts["new_para"], file=stderr)
                     else:
-                        paradigms.remove(tsv_parts['new_para'])
+                        paradigms.remove(tsv_parts["new_para"])
                 else:
                     print("found in docs but not in data:",
-                          tsv_parts['new_para'], file=stderr)
-                    exit(1)
-                print("|  " + tsv_parts['new_para'] + " | " +
-                      paradata[tsv_parts['new_para']]['upos'] + " | " +
-                      docshort + " | " + kotus + " | " + harmony + " |",
+                          tsv_parts["new_para"], file=stderr)
+                    sys.exit(1)
+                print("|  " + tsv_parts["new_para"] + " | "
+                      + paradata[tsv_parts["new_para"]]["upos"] + " | "
+                      + docshort + " | " + kotus + " | " + harmony + " |",
                       file=args.output)
     if paradigms:
         print("Undocumented paradigms left:", ", ".join(paradigms),
               file=stderr)
     print('''<!-- vim: set ft=markdown:-->''', file=args.output)
-    exit()
+    sys.exit()
 
 
 if __name__ == "__main__":
