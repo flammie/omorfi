@@ -4,21 +4,31 @@
 
 Omorfi is a free and open source project containing various tools and data for
 natural language processing of Finnish based on knowledge driven paradigm.
+Some of the potential use cases it may be suitable for are:
+
+* morphosyntactic analysis, e.g. generate [unimorph](//unimorph.github.io) or
+  [universal dependencies](//universaldependencies.org) analyses from word-forms
+  or text
+* building named entity recognisers, sentiment analysis or other high level
+  apps
+* building rule-based machine translation, e.g.
+  [apertium-fin](//github.com/apertium/apertium-fin)
+
 The main components of this repository are:
 
 1. _a lexical database_ containing hundreds of thousands of words (c.f.
    [lexical statistics](statistics.html))
-2. a collection of _conversion scripts_ to convert lexical database into formats
-   upstream NLP tools (c.f. [lexical processing](database-processing))
-3. a collection of _utility scripts_ to process Finnish texts on command-line
+1. a collection of _utility scripts_ to process Finnish texts on command-line
    (c.f. [usage examples](usage.html))
-4. an _autotools setup_ to build and install (or package, or deploy): the
+1. a collection of _conversion scripts_ to convert lexical database into formats
+   upstream NLP tools (c.f. [lexical processing](database-processing))
+1. an _autotools setup_ to build and install (or package, or deploy): the
    scripts, the database, and simple APIs / convenience processing tools
-5. a collection of relatively [simple APIs](apis/html/) with bindings for a
+1. a collection of relatively [simple APIs](apis/html/) with bindings for a
    selection of programming languages and scripts to apply the NLP tools and
    access the database
 
-The formats we produce are (links to free open source implementations
+The fileformats we produce are (links to free open source implementations
 included):
 
 1. lexc, as processed by [HFST](//hfst.sf.net) and
@@ -36,10 +46,13 @@ included):
 
 ## Documentation
 
-The most recent version of this documentation is online on github pages at
-[https://flammie.github.io/omorfi/]()
+The most recent version of this documentation is online on [github pages at
+https://flammie.github.io/omorfi/](https://flammie.github.io/omorfi/) (should be
+this page).
 
 ### Basics
+
+Read this first:
 
 1. [README](README.html)
 1. [Installation](install.html)
@@ -47,8 +60,7 @@ The most recent version of this documentation is online on github pages at
 
 ### Bindings
 
-If you wish to use omorfi in a serious application you probably found out from
-the README that a python or java API is the way to go:
+Using omorfi language models from a programming language (python, C++ or java):
 
 1. [API design](API-design.html)
 1. [doxygen apidocs](apis/html/)
@@ -95,6 +107,8 @@ If omorfi doesn’t suit your needs, you may want to try other similar products:
 morphological analyser of Finnish. [Grammatical
 Framework](http://www.grammaticalframework.org/) also has NLP components for
 Finnish, and it’s written in _haskell_.
+For modern neural network approaches, see [TurkuNLP and their
+parsers](https://turkunlp.org/finnish_nlp.html#parser)
 
 If you want to use commercial products, there are surely some available
 somewhere.
