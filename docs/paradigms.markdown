@@ -2430,4 +2430,5 @@ All other lexical information is coded on per lexeme basis
 |  X_FORGN_SV | PROPN | new particles of Swedish origin; used of... | 99 | both |
 |  X_IGNORE | X | words that need to be in lexicon for leg... | 99 | both |
 |  X_SUFFIX_GOESWITH | X | some suffixes that appear mistokenised, ... | 99 | both |
+
 <!-- vim: set ft=markdown:-->

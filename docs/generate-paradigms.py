@@ -160,7 +160,7 @@ def main():
     if paradigms:
         print("Undocumented paradigms left:", ", ".join(paradigms),
               file=stderr)
-    print('''<!-- vim: set ft=markdown:-->''', file=args.output)
+    print('''\n<!-- vim: set ft=markdown:-->''', file=args.output)
     sys.exit()
 
 
