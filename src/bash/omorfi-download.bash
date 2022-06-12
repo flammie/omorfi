@@ -3,7 +3,7 @@
 source $(dirname $0)/omorfi.bash
 args=$@
 
-downloadurl="https://github.com/flammie/omorfi/releases/download/${omorfiapi/_alpha/-alpha}/omorfi-hfst-models-${omorfiapi}.tar.xz"
+downloadurl="https://github.com/flammie/omorfi/releases/download/v${omorfiapi/_alpha/-alpha}/omorfi-hfst-models-${omorfiapi}.tar.xz"
 
 function print_help() {
     echo "Download or update omorfi binary models"
