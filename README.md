@@ -93,7 +93,7 @@ syntactic analysis and disambiguation using VISL CG 3.
 pip install omorfi
 ```
 
-![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
+[![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)](https://anaconda.org/flammie/omorfi/)
 
 ```
 conda install -c flammie omorfi
