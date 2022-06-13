@@ -1,5 +1,5 @@
 {% set name = "omorfi" %}
-{% set version = "0.0.2" %}
+{% set version = "0.9.9" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 5aa3b97c31038e2d5bb70e7d5aeceedb4501ab86e3dc27f2d5930baaf91a7e41
+  sha256: c4f8bc269473712d9f450e571d6c8e0534e3f589f0a11834d04f3a5c54516534
 
 build:
   number: 0
