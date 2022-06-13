@@ -1,10 +1,9 @@
 # Omorfi release policy (and citing)
 
-Omorfi has approximately two releases a year, following the [universal
-dependency](//universaldependencies.org) schedule at the moment. We will sart
-using [semantic versioning](//semver.org) in 2020. When referring to omorfi in
-academic works, please include specific version, and URL, also consider citing
-one of the fine [omorfi articles](articles.html).
+Omorfi gets updated sporadically, depending on my spare time (and the amount of
+contributions I get via github sponsors and patreon j/k ;-). Please cite omorfi
+if you use it in an academic context, for details see [omorfi
+publications](articles.html).
 
 # Stable releases
 
@@ -17,6 +16,10 @@ Releases are considered stable when they fill following criteria:
 1. spell-checker installation works with voikko, enchant
 1. pip installation works in virtual env.
 
+IF you are interested in these criteria please see [making
+releases](making-release.html), it's a check-list I wrote for myself on how
+to check release-readiness.
+
 If you have further requirements for stability, please submit an automated test
 case that can be run using the command `make check` or `make distcheck` during
 the release process. For examples, see `test/ftb-test.py`,
@@ -27,7 +30,8 @@ you rely on a feature, annotation or other stuff, create your test case asap.*
 # Releases tagged in git
 
 Each stable release is tagged in git. The version numbers 2015–2020 are dates
-in YYYYMMDD format.
+in YYYYMMDD format. Versions after 2022 are tagged with [semantic
+versioning](https://semver.org) strategy.
 
 # Unstable / development versions
 
@@ -41,6 +45,7 @@ git clone https://github.com/flammie/omorfi.git
 cd omorfi
 less README.md
 [follow instructions]
+autoreconf -i && ./configure && make && make check
 ```
 
 When citing a development version, try to include the versioning system info in
