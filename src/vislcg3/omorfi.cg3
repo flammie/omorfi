@@ -55,6 +55,7 @@ STRICT-TAGS +=
     Case=Nom
     Case=Par
     Case=Tra
+    Case=Com
     Clitic=Han
     Clitic=Ka
     Clitic=Kaan
@@ -172,6 +173,9 @@ LIST ADJ-ORD = (UPOS=ADJ NumType=Ord) ;
 # Infintive a
 LIST INFA-SG = (InfForm=1 Number=Sing) ;
 LIST INFA-PL = (InfForm=1 Number=Plur) ;
+LIST INFA = (InfForm=1) ;
+# Infinitive ma + ill
+LIST INFMAAN = (InfForm=1 Number=Sing Case=Ill) ;
 # adj cases (and other agreement stuffs)
 LIST ADJ-PAR = (UPOS=ADJ Case=Par) (UPOS=DET Case=Par) (UPOS=PRON PronType=Dem Case=Par) (UPOS=NUM Case=Par) ;
 LIST ADJ-INE = (UPOS=ADJ Case=Ine) (UPOS=DET Case=Ine) (UPOS=PRON PronType=Dem Case=Ine) (UPOS=NUM Case=Ine) ;
@@ -214,9 +218,10 @@ LIST BADEVIL_WORDS =
     ("aa" UPOS=NOUN) ("ee" UPOS=NOUN) ("ii" UPOS=NOUN) ("oo" UPOS=NOUN)
     ("uu" UPOS=NOUN) ("yy" UPOS=NOUN) ("ää" UPOS=NOUN) ("öö" UPOS=NOUN)
     ("tui" UPOS=NOUN) ("kapi" UPOS=NOUN) ("nim" UPOS=NOUN) ("ma" UPOS=NOUN)
-    ("su" UPOS=NOUN) ("määri" UPOS=NOUN) ;
+    ("su" UPOS=NOUN) ("määri" UPOS=NOUN) ("muu" UPOS=INTJ);
 
 ## propns that overlap commoner words
+## NB: since omorfi 
 LIST RARER-PROPN =
     ("Vanha" UPOS=PROPN) ("Mei" UPOS=PROPN) ("Osa" UPOS=PROPN) ("Hanska" UPOS=PROPN)
     ("Osta" UPOS=PROPN) ("Leikkaa" UPOS=PROPN) ("Varo" UPOS=PROPN) ("Tarkki" UPOS=PROPN)
@@ -247,7 +252,11 @@ LIST RARER-PROPN =
     ("Marin" UPOS=PROPN) ("Sarja" UPOS=PROPN) ("Sen" UPOS=PROPN)
     ("Tus" UPOS=PROPN) ("Ole" UPOS=PROPN) ("huopa" UPOS=PROPN)
     ("Huo" UPOS=PROPN) ("Ku" UPOS=PROPN) ("Mar" UPOS=PROPN)
-    ("Mo" UPOS=PROPN) ("On" UPOS=PROPN) ;
+    ("Mo" UPOS=PROPN) ("On" UPOS=PROPN) ("Tunne" UPOS=PROPN)
+    ("Mee" UPOS=PROPN) ("Mi" UPOS=PROPN) ("Emme" UPOS=PROPN) ("En" UPOS=PROPN)
+    ("To" UPOS=PROPN) ("Toa" UPOS=PROPN) ("Ai" UPOS=PROPN)
+    ("Polve" UPOS=PROPN) ("Polve" UPOS=PROPN) ("On" UPOS=PROPN)
+    ("Pi" UPOS=PROPN) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
@@ -256,7 +265,8 @@ LIST RARER-NOUN =
     ("muutti" UPOS=NOUN) ("kanna" UPOS=NOUN) ("kerto" UPOS=NOUN)
     ("taita" UPOS=NOUN) ("viisi" UPOS=NOUN) ("koto" UPOS=NOUN)
     ("suura" UPOS=NOUN) ("sai" UPOS=NOUN) ("saava" UPOS=NOUN)
-    ("pitkänen" UPOS=NOUN) ;
+    ("pitkänen" UPOS=NOUN) ("niisi" UPOS=NOUN) ("valin" UPOS=NOUN) 
+    ("talossa" UPOS=NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs, and some fixed expressions
 LIST RARER-ADV =
@@ -355,7 +365,8 @@ LIST ADPS-WITH-GEN =
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" UPOS=ADP) ;
 ## adpositions with illative complement
-LIST ADPS-WITH-ELA = ("ulos" UPOS=ADP) ("riippuen" UPOS=ADP) ;
+LIST ADPS-WITH-ELA = ("ulos" UPOS=ADP) ("riippuen" UPOS=ADP) 
+                     ("alkaen" UPOS=ADP) ;
 ## Verbs with inf complements
 ## ... infa
 LIST VERBS-WITH-INFA =
@@ -414,6 +425,8 @@ LIST SG2POSS-CONFUSION =
     ("poli" Number[psor]=Sing Person[psor]=2 Case=Ill)
     ("kohta" Number[psor]=Sing Person[psor]=2)
     ("ohja" Number[psor]=Sing Person[psor]=2)
+    ("pala" Number[psor]=Sing Person[psor]=2)
+    ("tuho" Number[psor]=Sing Person[psor]=2)
     ("mana" Number[psor]=Sing Person[psor]=2) ;
 LIST ADJ-RARELY-NOUN = ("kauhea" UPOS=NOUN) ("komea" UPOS=NOUN) ;
 LIST WHAT-THE-ADJ = ("pelko" UPOS=ADJ) ("koko" UPOS=ADJ) ;
@@ -677,6 +690,19 @@ LIST MUASSA-ADV = ("muassa" UPOS=ADV) ;
 # huutaa, huusi
 LIST HUUSIN-NOUN = ("huusi" UPOS=NOUN) ;
 LIST HUUSIN-VERB = ("huutaa" UPOS=VERB) ;
+# kokonaan
+LIST KOKONAAN-ADV = ("kokonaan" UPOS=ADV) ;
+LIST KOKONAAN-NOUN = ("koko" UPOS=NOUN Case=Ess) ;
+# ainoastaan
+LIST AINOASTAAN-ADV = ("ainoastaan" UPOS=ADV) ;
+LIST AINOASTAAN-NOUNADJ = ("ainoa" Case=Ela) ;
+# yli etc.
+LIST YLI-ADV = ("yli" UPOS=ADV) ;
+# olla päällä
+LIST PÄÄLLÄ-ADV = ("päällä" UPOS=ADV) ;
+# kylmää
+LIST KYLMÄÄ-VERB = ("kylmätä" UPOS=VERB) ;
+LIST KYLMÄÄ-ADJNOUN = ("kylmä" UPOS=ADJ) ("kylmä" UPOS=NOUN) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -695,6 +721,9 @@ LIST DERIVATIONS = Derivation=Inen Derivation=Ja Derivation=U ;
 LIST MISSING-HYPHEN = <GoesWith=Missing-> <AffixType=Prefix> ;
 ## Any other guessers
 LIST GUESSED = <Guesser> ;
+## 
+LIST TITLECASED = "<\p[Lu].+>"r ;
+LIST BOS = >>> ;
 # }}}
 
 BEFORE-SECTIONS # {{{ preprocess worst stuff away and select options
@@ -711,6 +740,10 @@ REMOVE:UD-ordinal-is-adjective NUM-ORD (0 ADJ-ORD) ;
 REMOVE:infa-is-sg INFA-PL (0 INFA-SG) ;
 # }}}
 SECTION # {{{ words minimal context
+
+# If someone writes word with initial uppercaase mid-sentence they should
+# mean PROPN (those who break this rule get what they deserve ;-)
+SELECT:uppercased-midsent-propn UPOS=PROPN (NOT -1 BOS) (NOT -1 UPOS=PUNCT) ;
 
 # trad. possessives
 # sinun {kuusi, voisi, tiesi}
@@ -738,6 +771,15 @@ REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 ##! $ pulloissa on vanhan näköiset etiketit.
 REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 UPOS=PROPN) ;
 
+##! yli viisi tuhatta
+##! sillan yli
+SELECT:yli-num YLI-ADV (1 UPOS=NUM) ;
+
+##! tietokone on päällä
+##! pöydän päällä on tietokone
+##! hän puski palloa päällään
+REMOVE:on-päällä-adv PÄÄLLÄ-ADV (NOT -1 COPULA) ;
+
 ##! $ Japaniin suuntautuva vierailu.
 REMOVE:Japan-not-country JAPAN-PROPN (0 JAPANI-PROPN) ;
 
@@ -762,6 +804,11 @@ REMOVE:maa-maittaa MAITA-VERB (0 MAITA-NOUN) ;
 
 ##! $ parlamentti vietti minuutin hiljaisuuden
 REMOVE:viettää-vietti VIETTI-NOUN (0 VIETTI-VERB) ;
+
+##! kyse ei ole kokonaan uudesta toiminnasta
+REMOVE:kokonaan KOKONAAN-NOUN (0 KOKONAAN-ADV) ;
+##! ainoastaan putket ja viemärit ovat
+REMOVE:ainoastaan AINOASTAAN-NOUNADJ (0 AINOASTAAN-ADV) ;
 
 ##! $ siitä en tiedä mitään.
 ##! € siitä maailma täyteen lapsia.
@@ -791,6 +838,9 @@ SELECT:uusi-adj UUSI-ADJ (0 UUSI-VERB) ;
 
 ##! $ hän ei ole ollenkaan rehellinen.
 SELECT:ollenkaan-adv OLLENKAAN-ADV (0 OLLENKAAN-VERB) ;
+
+##! ulkona oli eilen kylmää
+REMOVE:kylmää-verb KYLMÄÄ-VERB (0 KYLMÄÄ-ADJNOUN) ;
 
 ##! $ oikeus omaan kehoon
 ##! $ minä omaan kehoni
@@ -1095,6 +1145,7 @@ SELECT:measurep-partitive Case=Par (-1 UPOS=NUM) ;
 ##! € pääministerit tapaavat Intiassa.
 SELECT:verb-pl3-agree-left VERB-PL3 (-1 UPOS=NOUN + Number=Plur) ;
 SELECT:verb-pl3-agree-left-coord VERB-PL3 (-1 UPOS=NOUN) (-2 UPOS=CCONJ) (-3 UPOS=NOUN) ;
+SELECT:verb-pl3-agree-left VERB-PL3 (-1 UPOS=PRON + Number=Plur) ;
 
 ##! omorfi infminen is limited to cop´+ tekeminen c.f. Iso suomen kielioppi
 ##! $ ei ole lahjahevosta suuhin katsomineb
@@ -1121,6 +1172,13 @@ SELECT:adj-ess-agreement ADJ-ESS (1 Case=Ess) ;
 SELECT:final-needs-initial <Position=Final> (-2* <Position=Initial> BARRIER <Position=Final>) ;
 ##! $ sanoja "lainattuja sanoja".
 SELECT:initial-needs-final <Position=Initial> (2* <Position=Final> BARRIER <Position=Initial>) ;
+
+##! laiminlyönti voidaan usein todistaa
+SELECT:verbs-with-infa VERBS-WITH-INFA (1* INFA BARRIER CLB) ;
+SELECT:infa-with-verbs INFA (-1* VERBS-WITH-INFA BARRIER CLB) ;
+##! 
+SELECT:verbs-with-infma VERBS-WITH-INFMAAN (1* INFMAAN BARRIER CLB) ;
+SELECT:infma-with-verbs INFMAAN (-1* VERBS-WITH-INFMAAN BARRIER CLB) ;
 
 ##! $ minä unelmoin
 SELECT:subject-1sg PRS-1SG (1 UPOS=VERB + Person=1 + Number=Sing) ;
@@ -1189,20 +1247,22 @@ SELECT:adverbs-with-rarer-nominals DEFAULT-ADV ;
 REMOVE:adjectives-rarely-possessed UPOS=ADJ + POSS ;
 REMOVE:unusual-plurals NOUNS-RARELY-PLURAL ;
 REMOVE:lexicalised-over-derived-sti Derivation=Sti (0 <Lexicalised=Sti>) ;
-REMOVE:rare-verb-shadows-commons RARER-VERB ;
-REMOVE:rare-propn-shadows-commons RARER-PROPN ;
-REMOVE:rare-noun-shadows-commons RARER-NOUN ;
-REMOVE:rare-adp-shadows-commons RARER-ADP ;
-REMOVE:rare-adv-shadows-commons RARER-ADV ;
+REMOVE:rare-verb-shadows-commons SUB:* RARER-VERB ;
+REMOVE:rare-propn-shadows-commons SUB:* RARER-PROPN ;
+REMOVE:rare-noun-shadows-commons SUB:* RARER-NOUN ;
+REMOVE:rare-adp-shadows-commons SUB:* RARER-ADP ;
+REMOVE:rare-adv-shadows-commons SUB:* RARER-ADV ;
+REMOVE:rare-adj-shadows-commons SUB:* RARER-ADJ ;
 SELECT:prefer-punct-over-sym UPOS=PUNCT (0 UPOS=SYM);
-REMOVE:prefer-standard NONSTANDARDS ;
-REMOVE:least-derivations DERIVATIONS ;
+REMOVE:prefer-standard SUB:* NONSTANDARDS ;
+REMOVE:least-derivations SUB:* DERIVATIONS ;
 SELECT:least-compounds MIN-COMPOUND ;
 SELECT:probably MIN-WEIGHT ;
 REMOVE:avoid-instructives Case=Ins (NOT 0 UPOS=VERB + InfForm=2) ;
 REMOVE:avoid-abessives Case=Abe (NOT 0 UPOS=VERB + InfForm=3) ;
-REMOVE:avoid-clitics CLITIC ;
-REMOVE:blacklists BLACKLISTED ;
+REMOVE:avoid-comitatives Case=Com ;
+REMOVE:avoid-clitics SUB:* CLITIC ;
+REMOVE:blacklists SUB:* BLACKLISTED ;
 REMOVE:avoid-sg0 Person=0 ;
 REMOVE:rare-pers-pron-forms Number=Plur (0 PERS-PRON-SG) ;
 REMOVE:adj-over-drv-va Derivation=Va (0 UPOS=ADJ) ;
