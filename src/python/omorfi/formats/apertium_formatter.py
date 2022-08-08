@@ -425,7 +425,7 @@ class ApertiumFormatter(Formatter):
                 return '%<' + lexc_escape(self.stuff2apertium[stuff]) + '%>'
         else:
             fail_formatting_missing_for(stuff, "apertium")
-            return ""
+            return "%<error%>"
 
     def analyses2lexc(self, anals, surf):
         """Get full analysis string in lexc for omorfi analyses.
@@ -491,7 +491,7 @@ class ApertiumFormatter(Formatter):
                     '+' + wordmap['lemma'][-2:] + \
                     self.stuff2lexc('Nneg')
         elif wordmap['particle']:
-            for pclass in wordmap['particle'].split('|'):
+            for pclass in wordmap['particle'].split(','):
                 wordmap['analysis'] += self.stuff2lexc(pclass)
         else:
             wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
@@ -500,19 +500,19 @@ class ApertiumFormatter(Formatter):
                 wordmap['analysis'] += self.stuff2lexc('BLACKLISTED')
 
         if wordmap['pronoun']:
-            for stuff in wordmap['pronoun'].split("|"):
+            for stuff in wordmap['pronoun'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['lex']:
-            for stuff in wordmap['lex'].split("|"):
+            for stuff in wordmap['lex'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['abbr']:
-            for stuff in wordmap['abbr'].split("|"):
+            for stuff in wordmap['abbr'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['numtype']:
-            for stuff in wordmap['numtype'].split("|"):
+            for stuff in wordmap['numtype'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['symbol']:
-            for subcat in wordmap['symbol'].split('|'):
+            for subcat in wordmap['symbol'].split(','):
                 wordmap['analysis'] += self.stuff2lexc(subcat)
             if wordmap['stub'] in ";:":
                 wordmap['analysis'] += self.stuff2lexc("SENTENCE-BOUNDARY")
@@ -545,7 +545,7 @@ class ApertiumFormatter(Formatter):
 
         @return str containing lexc Root lexicon for apertium"""
         root = Formatter.root_lexicon_lexc(self)
-        root += '\t'.join(['0', 'SUFFIX', ';']) + '\n'
+        root += '\t'.join(['-', 'SUFFIX', ';']) + '\n'
         root += '\t'.join(['-', 'NOUN', ';']) + '\n'
         root += '\t'.join(['-', 'ADJ', ';']) + '\n'
         return root
