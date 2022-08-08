@@ -132,6 +132,7 @@ def main():
         formatter = Ftb3Formatter(args.verbose)
     elif args.format == 'apertium':
         formatter = ApertiumFormatter(args.verbose)
+        args.splits.append("sem")
         args.splits.append("proper_noun_class")
     elif args.format == 'giella':
         formatter = GiellaFormatter(args.verbose)
@@ -261,8 +262,19 @@ def main():
                 if words:
                     print("\nLEXICON", key, "\n\n", file=args.output)
                     for word in words:
-                        print(formatter.wordmap2lexc(word),
-                              file=args.output)
+                        variants = [word]
+                        for splitfeat in args.splits:
+                            if "|" in word[splitfeat]:
+                                newvariants = []
+                                for variant in variants:
+                                    for split in variant[splitfeat].split("|"):
+                                        newword = variant.copy()
+                                        newword[splitfeat] = split
+                                        newvariants.append(newword)
+                                variants = newvariants
+                        for variant in variants:
+                            print(formatter.wordmap2lexc(variant),
+                                  file=args.output)
         if args.verbose:
             print("\n", linecount, " entries in master db")
     # print continuation parts
