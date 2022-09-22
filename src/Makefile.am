@@ -1486,5 +1486,9 @@ pip:
 	echo "  cd python"
 	echo "	$(PYTHON) -m twine upload dist/*"
 
+sorted:
+	$(PYTHON) python/tsvsort.py -i lexemes.tsv -o lexemes.tsv.sort
+	mv -v lexemes.tsv.sort lexemes.tsv
+
 #
 # vim: set foldmethod=marker:
