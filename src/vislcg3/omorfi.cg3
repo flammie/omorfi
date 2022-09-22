@@ -221,7 +221,8 @@ LIST BADEVIL_WORDS =
     ("su" UPOS=NOUN) ("määri" UPOS=NOUN) ("muu" UPOS=INTJ);
 
 ## propns that overlap commoner words
-## NB: since omorfi 
+## NB: the large coverage omorfi uses all names in Finnish census so lots
+## are foreign, "rare" but over 5 hits in the census, so not non-existent
 LIST RARER-PROPN =
     ("Vanha" UPOS=PROPN) ("Mei" UPOS=PROPN) ("Osa" UPOS=PROPN) ("Hanska" UPOS=PROPN)
     ("Osta" UPOS=PROPN) ("Leikkaa" UPOS=PROPN) ("Varo" UPOS=PROPN) ("Tarkki" UPOS=PROPN)
@@ -256,7 +257,7 @@ LIST RARER-PROPN =
     ("Mee" UPOS=PROPN) ("Mi" UPOS=PROPN) ("Emme" UPOS=PROPN) ("En" UPOS=PROPN)
     ("To" UPOS=PROPN) ("Toa" UPOS=PROPN) ("Ai" UPOS=PROPN)
     ("Polve" UPOS=PROPN) ("Polve" UPOS=PROPN) ("On" UPOS=PROPN)
-    ("Pi" UPOS=PROPN) ;
+    ("Pi" UPOS=PROPN) ("Noi" UPOS=PROPN) ("Eri" UPOS=PROPN) ("Vuohi" UPOS=PROPN) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
@@ -430,6 +431,8 @@ LIST SG2POSS-CONFUSION =
     ("mana" Number[psor]=Sing Person[psor]=2) ;
 LIST ADJ-RARELY-NOUN = ("kauhea" UPOS=NOUN) ("komea" UPOS=NOUN) ;
 LIST WHAT-THE-ADJ = ("pelko" UPOS=ADJ) ("koko" UPOS=ADJ) ;
+LIST NUMNOMGENS = ("seitsemän" UPOS=NUM) ("kahdeksan" UPOS=NUM)
+                  ("yhdeksän" UPOS=NUM) ("kymmenen" UPOS=NUM) ;
 ## }}}
 ## {{{ words
 ## "siitä" = {to conceive, from it}
@@ -1271,11 +1274,16 @@ REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 
 REMOVE:odd-adjs WHAT-THE-ADJ ;
 
+
+
 # not all lines sent to disambiguator are sentences with a verb but
 # if a user inputs verbless sentence they can expect such parses
 SELECT:try-to-find-one-verb-per-sentence UPOS=VERB (NOT 0*C UPOS=VERB) ;
 
 SELECT:adverb-last-resort UPOS=ADV (-1C UPOS=VERB) ;
+
+
+SELECT:numnom-last-resort Case=Nom (0 NUMNOMGENS) ;
 
 # }}}
 
