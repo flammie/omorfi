@@ -223,6 +223,10 @@ LIST BADEVIL_WORDS =
 ## propns that overlap commoner words
 ## NB: the large coverage omorfi uses all names in Finnish census so lots
 ## are foreign, "rare" but over 5 hits in the census, so not non-existent
+## also presented are parts of multiword names
+## This is only used in last resort removals so there is no harm in listing
+## lots of stuff here, it only affects sentence-initial uppercase
+## ambiguities
 LIST RARER-PROPN =
     ("Vanha" UPOS=PROPN) ("Mei" UPOS=PROPN) ("Osa" UPOS=PROPN) ("Hanska" UPOS=PROPN)
     ("Osta" UPOS=PROPN) ("Leikkaa" UPOS=PROPN) ("Varo" UPOS=PROPN) ("Tarkki" UPOS=PROPN)
@@ -257,7 +261,35 @@ LIST RARER-PROPN =
     ("Mee" UPOS=PROPN) ("Mi" UPOS=PROPN) ("Emme" UPOS=PROPN) ("En" UPOS=PROPN)
     ("To" UPOS=PROPN) ("Toa" UPOS=PROPN) ("Ai" UPOS=PROPN)
     ("Polve" UPOS=PROPN) ("Polve" UPOS=PROPN) ("On" UPOS=PROPN)
-    ("Pi" UPOS=PROPN) ("Noi" UPOS=PROPN) ("Eri" UPOS=PROPN) ("Vuohi" UPOS=PROPN) ;
+    ("Pi" UPOS=PROPN) ("Noi" UPOS=PROPN) ("Eri" UPOS=PROPN) ("Vuohi" UPOS=PROPN)
+    ("Ämpäri" UPOS=PROPN) ("Yrittä" UPOS=PROPN) ("Yhtiö" UPOS=PROPN)
+    ("Ylen" UPOS=PROPN) ("Viisi" UPOS=PROPN) ("Viesti" UPOS=PROPN) 
+    ("Vaali" UPOS=PROPN) ("Tähti" UPOS=PROPN) ("Tyttö" UPOS=PROPN)
+    ("Turma" UPOS=PROPN) ("Tarina" UPOS=PRON) ("Taitto" UPOS=PROPN)
+    ("Suuri" UPOS=PROPN) ("Sama" UPOS=PROPN) ("Sanoma" UPOS=PROPN)
+    ("Sato" UPOS=PROPN) ("Saksanen" UPOS=PROPN) ("Sai" UPOS=PROPN) 
+    ("Saare" UPOS=PROPN) ("Ritvanen" UPOS=PROPN) ("Rahat" UPOS=PROPN) 
+    ("Päivä" UPOS=PROPN) ("Pyhä" UPOS=PROPN) ("Prinssi" UPOS=PROPN)
+    ("Prinssessa" UPOS=PROPN) ("Pisimpi" UPOS=PROPN) ("Pi" UPOS=PROPN)
+    ("Perhe" UPOS=PROPN) ("Paulista" UPOS=PROPN) ("Pankki" UPOS=PROPN)
+    ("Paikka" UPOS=PROPN) ("Osa" UPOS=PROPN) ("Onnea" UPOS=PROPN)
+    ("Omena" UPOS=PROPN) ("Nii" UPOS=PROPN) ("Kansanen" UPOS=PROPN)
+    ("Lähe" UPOS=PROPN) ("Säästö" UPOS=PROPN) ("Pian" UPOS=PROPN) 
+    ("Na" UPOS=PROPN) ("Pola" UPOS=PROPN) ("Kuva" UPOS=PROPN)
+    ("Ky" UPOS=PROPN) ("Valkoinen" UPOS=PROPN) ("Pilvi" UPOS=PROPN)
+    ("Ku" UPOS=PROPN) ("Huijari" UPOS=PROPN) ("Venäläinen" UPOS=PROPN)
+    ("Kuo" UPOS=PROPN) ("Kuolema" UPOS=PROPN) ("Aiko" UPOS=PROPN) 
+    ("Ranto" UPOS=PROPN) ("Mere" UPOS=PROPN) ("Rinna" UPOS=PROPN)
+    ("Eränen" UPOS=PROPN) ("Meres" UPOS=PROPN) ("Osa" UPOS=PROPN)
+    ("Aiva" UPOS=PROPN) ("Poika" UPOS=PROPN) ("Silla" UPOS=PROPN)
+    ("Tulonen" UPOS=PROPN) ("Tai" UPOS=PROPN) ("Aiko" UPOS=PROPN)
+    ("Mi" UPOS=PROPN) ("Tee" UPOS=PROPN) ("Joen" UPOS=PROPN) 
+    ("Ni" UPOS=PROPN) ("Pol" UPOS=PROPN) ("Hei" UPOS=PROPN)
+    ("Toveri" UPOS=PROPN) ("Yli" UPOS=PROPN) ("Myrsky" UPOS=PROPN)
+    ("Vatka" UPOS=PROPN) ("En" UPOS=PROPN) ("Kiitos" UPOS=PROPN)
+    ("Viide" UPOS=PROPN) ("Merelle" UPOS=PROPN) ("Ku" UPOS=PROPN) 
+    ("Illa" UPOS=PROPN) ("Naapuri" UPOS=PROPN) ("Aihe" UPOS=PROPN)
+    ("Kota" UPOS=PROPN) ("Valon" UPOS=PROPN) ("Herra" UPOS=PROPN) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
