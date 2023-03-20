@@ -1,0 +1,13 @@
+# Omorfi man pages (automatically generated from sources)
+
+ * [omorfi-analyse-text.1](omorfi-analyse-text.1.html)
+ * [omorfi-analyse-tokenised.1](omorfi-analyse-tokenised.1.html)
+ * [omorfi-conllu.1](omorfi-conllu.1.html)
+ * [omorfi-disambiguate-text.1](omorfi-disambiguate-text.1.html)
+ * [omorfi-factorise.1](omorfi-factorise.1.html)
+ * [omorfi-generate.1](omorfi-generate.1.html)
+ * [omorfi-hyphenate.1](omorfi-hyphenate.1.html)
+ * [omorfi-segment.1](omorfi-segment.1.html)
+ * [omorfi-spell.1](omorfi-spell.1.html)
+ * [omorfi-tokenise.1](omorfi-tokenise.1.html)
+ * [omorfi-vislcg.1](omorfi-vislcg.1.html)
