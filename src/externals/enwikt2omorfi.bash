@@ -2,7 +2,7 @@
 # This script takes an English wiktionary xml dump and converts it to omorfi
 # it was at c/p from fiwikt2omorfi.bash
 
-SED=sed
+SED="sed"
 
 print_usage() {
     echo "Usage: $0 [enwikt-pages-articles.xml]"
@@ -20,10 +20,9 @@ wc='(Noun|Adjective|Pronoun|Numeral|Preposition|Adverb|Interjection|Conjunction|
 
 # enwikt is too big
 # split
-
 # Fetchs  only relevant lines from the xml dump (NOTE: This assumes relevant
 # lines are between <page> & </page> tags)
-cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
+cat "$@" | $SED -ne '/<page>/,/<\/page>/p' |\
 # Remove all line-initial whitespaces
     $SED -e 's/^[ \t]*//g' |\
 # Remove unwanted xml tags
@@ -36,14 +35,14 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
 # Place linebreak infront of each <page>
     $SED -re "s/<page>/\n\0/g" |\
 # Retain only those lines which contain relevant content (in this case ==Suomi== which is the heading of Finnish words)
-    fgrep "==Finnish==" |\
+    grep -F "==Finnish==" |\
 # Remove certain MediaWiki pages
     $SED -r "/<title>(Class:)|(Template:)|(Wiktionary:)/d" |\
 # Remove word forms
-    fgrep -v '{{fi-form' | fgrep -v 'possessive form' |\
-    fgrep -v 'proper noun form' |\
+    grep -F -v '{{fi-form' | grep -F -v 'possessive form' |\
+    grep -F -v 'proper noun form' |\
 # Remove some MWEs
-    egrep '<title>[^ ]*</title>' |\
+    grep '<title>[^ ]*</title>' |\
 # Place tags and content on separate lines
     $SED -re "s/(<\/page>)/\n\1/g" \
     -e "s/(<title>)/\n\1/g" \
@@ -641,7 +640,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/1	ADV/ADV	ADV/' |\
     $SED -e 's/		/	/' \
         -e "s/'/’/g" \
-        -e 's[[:space:]]*$//'
+        -e 's/[[:space:]]*$//'
 
 # see what else we can
 #cat fiwikt.tempxml |\

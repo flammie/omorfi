@@ -12,15 +12,17 @@ elif test $# -ge 2 ; then
     exit 1
 fi
 EWPREFIX=enwiktionary-$ENWIKT_VERSION-pages-articles
-wget "http://dumps.wikimedia.org/enwiktionary/$ENWIKT_VERSION/$EWPREFIX.xml.bz2"
-bunzip "$EWPREFIX.xml.bz2"
+if ! wget "https://dumps.wikimedia.org/enwiktionary/$ENWIKT_VERSION/$EWPREFIX.xml.bz2" ; then
+    echo Download failed
+fi
+bunzip2 "$EWPREFIX.xml.bz2"
 bash enwikt2omorfi.bash "$EWPREFIX.articles.xml"  > "$EWPREFIX.tsv.unsort"
 printf "lemma\thomonym\tnew_para\torigin\n" | cat - "$EWPREFIX.tsv.noheaders" \
     > "$EWPREFIX.tsv.headers"
 python ../python/tsvsort.py -i "$EWPREFIX.tsv.headers" \
     -o "$EWPREFIX.tsv"
-python ../merge.py -i ../lexemes.tsv -m "$EWPREFIX.tsv" \
+python ../python/tsvmerge.py -i ../lexemes.tsv -m "$EWPREFIX.tsv" \
     -o ../lexemes+enwikt.tsv
-diff ../lexemes.tsv ../lexemes+enwikt.tsv
+diff -u ../lexemes.tsv ../lexemes+enwikt.tsv
 echo if nothing broke just cp ../lexemes+enwikt.tsv ../lexemes.tsv and
 echo "do cd .. and make check"
