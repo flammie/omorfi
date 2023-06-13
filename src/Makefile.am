@@ -1364,9 +1364,11 @@ voikko/acceptor.default.hfst: generated/omorfi.accept.hfst
 voikko/errmodel.default.hfst: generated/errmodel.edit-distance-2.hfst
 	$(HF2F) -f olw < $< > $@
 
+if WANT_VOIKKO
 voikko/speller-omorfi.zhfst: voikko/index.xml \
 	voikko/acceptor.default.hfst voikko/errmodel.default.hfst
 	$(ZIP) -j -v -9 $@  $?
+endif
 
 # }}}
 #
