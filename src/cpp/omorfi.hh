@@ -22,7 +22,7 @@
 #define _OMORFI_HH 1
 
 #ifdef HAVE_CONFIG_H
-#  include <config.h>
+#include <config.h>
 #endif
 
 #include <hfst/hfst.h>
@@ -30,93 +30,90 @@
 /**
  * Namespace for omorfi stuff.
  */
-namespace omorfi {
+namespace omorfi
+{
+
+/**
+ * An object that can load and use omorfi language models.
+ */
+class Omorfi
+{
+
+  private:
+    hfst::HfstTransducer *analyser_;
+    bool can_analyse_;
+    hfst::HfstTransducer *hyphenator_;
+    bool can_hyphenate_;
+
+    hfst::HfstTransducer *openHFST_(const std::string &filename);
+
+  public:
+    /** Construct omorfi with no models loaded. */
+    Omorfi();
+
+    /** Destroy omorfi and unload all models. */
+    ~Omorfi();
 
     /**
-     * An object that can load and use omorfi language models.
+     * load analysis model from a file.
+     *
+     * @param filename path to an automaton file binary.
      */
-    class Omorfi {
+    void loadAnalyser(const std::string &filename);
 
-    private:
+    /**
+     * load hyphenation model from a file.
+     *
+     * @param filename path to an automaton file binary.
+     */
+    void loadHyphenator(const std::string &filename);
 
-      hfst::HfstTransducer* analyser_;
-      bool can_analyse_;
-      hfst::HfstTransducer* hyphenator_;
-      bool can_hyphenate_;
+    /**
+     * analyse a string as a single input token.
+     *
+     * @param token  word to analys as string
+     *
+     * @return an unordered vector of strings giving all known analyses. May
+     * be an empty list if no analyses are found, but this behaviour cannot
+     * be trusted upon: many models will back-off giving at least one analysis
+     * for any given input.
+     */
+    std::vector<std::string> analyse(const std::string &token);
 
-      hfst::HfstTransducer* openHFST_(const std::string& filename);
+    /**
+     * hyphenate a string as a single input token.
+     *
+     * @param token  word to analys as string
+     *
+     * @return an unordered vector of strings giving all known hyphenations.
+     * May be an empty list if no analyses are found, but this behaviour
+     * cannot be trusted upon: many models will back-off giving at least one
+     * hyphrnation for any given input.
+     */
+    std::vector<std::string> hyphenate(const std::string &token);
 
-    public:
+    /**
+     * tokenise a string for analysis.
+     *
+     * @param text  text to split into tokens.
+     *
+     * @return a vector of tokens given as strings, in order they should
+     * appear in the analyses. The return value does not need to be a
+     * split of  source @c text.
+     */
+    std::vector<std::string> tokenise(const std::string &text);
 
-      /** Construct omorfi with no models loaded. */
-      Omorfi();
-
-      /** Destroy omorfi and unload all models. */
-      ~Omorfi();
-
-      /**
-       * load analysis model from a file.
-       *
-       * @param filename path to an automaton file binary.
-       */
-      void loadAnalyser(const std::string& filename);
-
-      /**
-       * load hyphenation model from a file.
-       *
-       * @param filename path to an automaton file binary.
-       */
-      void loadHyphenator(const std::string& filename);
-
-      /**
-       * analyse a string as a single input token.
-       *
-       * @param token  word to analys as string
-       *
-       * @return an unordered vector of strings giving all known analyses. May
-       * be an empty list if no analyses are found, but this behaviour cannot
-       * be trusted upon: many models will back-off giving at least one analysis
-       * for any given input.
-       */
-      std::vector<std::string> analyse(const std::string& token);
-
-      /**
-       * hyphenate a string as a single input token.
-       *
-       * @param token  word to analys as string
-       *
-       * @return an unordered vector of strings giving all known hyphenations.
-       * May be an empty list if no analyses are found, but this behaviour
-       * cannot be trusted upon: many models will back-off giving at least one
-       * hyphrnation for any given input.
-       */
-      std::vector<std::string> hyphenate(const std::string& token);
-
-      /**
-       * tokenise a string for analysis.
-       *
-       * @param text  text to split into tokens.
-       *
-       * @return a vector of tokens given as strings, in order they should
-       * appear in the analyses. The return value does not need to be a
-       * split of  source @c text.
-       */
-      std::vector<std::string> tokenise(const std::string& text);
-
-      /**
-       * Test if string is a valid word-form and in the lexicon.
-       * Note that this function is not any faster than @c analyse, but it
-       * resolves some internal codings of guessed analyses.
-       *
-       * @param token  a word to test
-       * @return true if token is in dictionary, false otherwise
-       */
-      bool accept(const std::string& token);
-
-
-    };
+    /**
+     * Test if string is a valid word-form and in the lexicon.
+     * Note that this function is not any faster than @c analyse, but it
+     * resolves some internal codings of guessed analyses.
+     *
+     * @param token  a word to test
+     * @return true if token is in dictionary, false otherwise
+     */
+    bool accept(const std::string &token);
+};
 
 }
 
 #endif // OMORFI_HH
-
