@@ -39,12 +39,16 @@
 namespace omorfi {
 
     Omorfi::Omorfi() :
-        can_analyse_(false)
+        can_analyse_(false),
+        can_hyphenate_(false)
     {}
 
     Omorfi::~Omorfi() {
         if (analyser_ != nullptr) {
             delete analyser_;
+        }
+        if (hyphenator_ != nullptr) {
+            delete hyphenator_;
         }
     }
 
@@ -64,6 +68,16 @@ namespace omorfi {
               can_analyse_ = true;
           } else {
               can_analyse_ = false;
+          }
+    }
+
+    void
+    Omorfi::loadHyphenator(const std::string& filename) {
+          hyphenator_ = openHFST_(filename);
+          if (hyphenator_ != nullptr) {
+              can_hyphenate_ = true;
+          } else {
+              can_hyphenate_ = false;
           }
     }
 
@@ -87,6 +101,40 @@ namespace omorfi {
         } else {
             // XXX: error
             throw std::runtime_error("analyser not loaded");
+        }
+        return std::vector<std::string>();
+     }
+
+    std::vector<std::string>
+    Omorfi::hyphenate(const std::string& token) {
+        std::vector<std::string> hyphens;
+        if (can_hyphenate_) {
+            // do it
+            hfst::HfstOneLevelPaths* results =
+                hyphenator_->lookup_fd(token, -1, OMORFI_LOOKUP_TIMEOUT);
+            for (hfst::HfstOneLevelPath hyphen : *results) {
+                hfst::StringVector analysis = hyphen.second;
+                std::string a;
+                for (std::string c : analysis) {
+                    if (c == "-1") {
+                        a += "-";
+                    } else if (c == "-2") {
+                        a += "-";
+                    } else if (c == "-3") {
+                        a += "-";
+                    } else if (c == "-4") {
+                        a += "-";
+                    } else {
+                        a += c;
+                    }
+                }
+                hyphens.push_back(a);
+            }
+            delete results;
+            return hyphens;
+        } else {
+            // XXX: error
+            throw std::runtime_error("hyphenator not loaded");
         }
         return std::vector<std::string>();
      }

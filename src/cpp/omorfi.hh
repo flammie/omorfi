@@ -41,6 +41,8 @@ namespace omorfi {
 
       hfst::HfstTransducer* analyser_;
       bool can_analyse_;
+      hfst::HfstTransducer* hyphenator_;
+      bool can_hyphenate_;
 
       hfst::HfstTransducer* openHFST_(const std::string& filename);
 
@@ -60,6 +62,13 @@ namespace omorfi {
       void loadAnalyser(const std::string& filename);
 
       /**
+       * load hyphenation model from a file.
+       *
+       * @param filename path to an automaton file binary.
+       */
+      void loadHyphenator(const std::string& filename);
+
+      /**
        * analyse a string as a single input token.
        *
        * @param token  word to analys as string
@@ -70,6 +79,18 @@ namespace omorfi {
        * for any given input.
        */
       std::vector<std::string> analyse(const std::string& token);
+
+      /**
+       * hyphenate a string as a single input token.
+       *
+       * @param token  word to analys as string
+       *
+       * @return an unordered vector of strings giving all known hyphenations.
+       * May be an empty list if no analyses are found, but this behaviour
+       * cannot be trusted upon: many models will back-off giving at least one
+       * hyphrnation for any given input.
+       */
+      std::vector<std::string> hyphenate(const std::string& token);
 
       /**
        * tokenise a string for analysis.
