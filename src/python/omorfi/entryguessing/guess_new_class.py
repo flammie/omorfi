@@ -17,8 +17,8 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from .error_logging import fail_guess_because
-from .string_manglers import three_syllable
+from omorfi.error_logging import fail_guess_because
+from omorfi.string_manglers import three_syllable
 
 
 def guess_new_class(wordmap):
