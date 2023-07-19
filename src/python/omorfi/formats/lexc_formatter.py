@@ -19,8 +19,8 @@
 
 # functions for formatting the database data to lexc
 
-from .settings import deriv_boundary, morph_boundary, newword_boundary, optional_hyphen, stub_boundary, word_boundary
-from .string_manglers import lexc_escape
+from omorfi.settings import deriv_boundary, morph_boundary, newword_boundary, optional_hyphen, stub_boundary, word_boundary
+from omorfi.string_manglers import lexc_escape
 
 
 def format_copyright_lexc():

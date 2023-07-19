@@ -19,9 +19,9 @@
 
 from xml.sax.saxutils import escape as xml_escape
 
-from ftb3_formatter import Ftb3Formatter
+from .ftb3_formatter import Ftb3Formatter
 
-from .settings import version_id_easter_egg
+from omorfi.settings import version_id_easter_egg
 
 
 def make_xmlid(s):
