@@ -21,9 +21,9 @@
 # utils to format apertium style data from omorfi database values
 
 from ..error_logging import fail_formatting_missing_for, just_fail
-from .formatter import Formatter
 from ..settings import weak_boundary, word_boundary
 from ..string_manglers import lexc_escape
+from .formatter import Formatter
 
 
 class ApertiumFormatter(Formatter):
@@ -298,9 +298,9 @@ class ApertiumFormatter(Formatter):
         "Osg2": "px2sg",
         "PARTICLE": "part",
         "PERSONAL": "pers",
-        "PL1": "p1",
-        "PL2": "p2",
-        "PL3": "p3",
+        "PL1": "p1><pl",
+        "PL2": "p2><pl",
+        "PL3": "p3><pl",
         "Ppe4": "impers",
         "Ppl1": "p1><pl",
         "Ppl2": "p2><pl",
@@ -323,14 +323,15 @@ class ApertiumFormatter(Formatter):
         "Qs": "+s<enc",
         "QUALIFIER": "adj",
         "QUANTOR": "qu",
+        "QUANTIFIER": "qu",
         "RECIPROCAL": "rec",
         "REFLEXIVE": "reflex",
         "RELATIVE": "rel",
         "ROMAN": "",
         ".sent": "",
-        "SG1": "p1",
-        "SG2": "p2",
-        "SG3": "p3",
+        "SG1": "p1><sg",
+        "SG2": "p2><sg",
+        "SG3": "p3><sg",
         "SG0": "p3",
         "SENTENCE-BOUNDARY": "",
         "SPACE": "",
@@ -499,8 +500,8 @@ class ApertiumFormatter(Formatter):
             if wordmap['blacklist'] != "TOOSHORTFORCOMPOUND":
                 wordmap['analysis'] += self.stuff2lexc('BLACKLISTED')
 
-        if wordmap['pronoun']:
-            for stuff in wordmap['pronoun'].split(","):
+        if wordmap['prontype']:
+            for stuff in wordmap['prontype'].split(","):
                 wordmap['analysis'] += self.stuff2lexc(stuff)
         if wordmap['lex']:
             for stuff in wordmap['lex'].split(","):
