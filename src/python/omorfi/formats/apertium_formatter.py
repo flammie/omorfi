@@ -394,15 +394,15 @@ class ApertiumFormatter(Formatter):
         for _, ape in self.stuff2apertium.items():
             if len(ape) < 2:
                 continue
-            elif ape.startswith('+'):
-                if not ape[ape.find('+'):]:
+            elif ape.startswith("+"):
+                if not ape[ape.find("+"):]:
                     just_fail("There are conflicting formattings in here! " +
-                              ape[ape.find('+'):] +
+                              ape[ape.find("+"):] +
                               " is not a valid apertium multichar_symbol!")
-            elif ape.endswith('+'):
-                if not ape[:ape.find('+')]:
+            elif ape.endswith("+"):
+                if not ape[:ape.find("+")]:
                     just_fail("There are conflicting formattings in here! " +
-                              ape[ape.find('+'):] +
+                              ape[ape.find("+"):] +
                               " is not a valid apertium multichar_symbol!")
             elif ape not in self.apertium_multichars:
                 just_fail("There are conflicting formattings in here! " + ape +
@@ -416,14 +416,14 @@ class ApertiumFormatter(Formatter):
         if not stuff:
             return ""
         elif stuff in self.stuff2apertium:
-            if self.stuff2apertium[stuff] in ['+', '-', '#', '0', '']:
+            if self.stuff2apertium[stuff] in ["+", "-", "#", "0", ""]:
                 return self.stuff2apertium[stuff]
-            elif self.stuff2apertium[stuff].startswith('+'):
-                return lexc_escape(self.stuff2apertium[stuff]) + '%>'
-            elif self.stuff2apertium[stuff].endswith('+'):
-                return '%<' + lexc_escape(self.stuff2apertium[stuff])
+            elif self.stuff2apertium[stuff].startswith("+"):
+                return lexc_escape(self.stuff2apertium[stuff]) + "%>"
+            elif self.stuff2apertium[stuff].endswith("+"):
+                return "%<" + lexc_escape(self.stuff2apertium[stuff])
             else:
-                return '%<' + lexc_escape(self.stuff2apertium[stuff]) + '%>'
+                return "%<" + lexc_escape(self.stuff2apertium[stuff]) + "%>"
         else:
             fail_formatting_missing_for(stuff, "apertium")
             return "%<error%>"
@@ -434,12 +434,12 @@ class ApertiumFormatter(Formatter):
         @return str containing lexc-formatted analysi tags and potential lemma
                 fragments
         """
-        apestring = ''
-        for i in anals.split('|'):
-            if i == '@@COPY-STEM@@':
+        apestring = ""
+        for i in anals.split("|"):
+            if i == "@@COPY-STEM@@":
                 apestring += lexc_escape(surf)
-            elif i.startswith('@@LITERAL') and i.endswith('@@'):
-                apestring += lexc_escape(i[len('@@LITERAL'):-len('@@')])
+            elif i.startswith("@@LITERAL") and i.endswith("@@"):
+                apestring += lexc_escape(i[len("@@LITERAL"):-len("@@")])
             else:
                 apestring += self.stuff2lexc(i)
         return apestring
@@ -448,86 +448,86 @@ class ApertiumFormatter(Formatter):
         """Get lexc representation for omorfi continuation lexicon."""
         analstring = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
-        return "%s:%s\t%s ;\n" % (analstring, surf, cont)
+        return f"{analstring}:{surf}\t{cont} ;\n"
 
     def wordmap2lexc(self, wordmap):
         """Get lexc representation of omorfi lexeme in a wordmap.
 
         @return lexc-formatted entries for the word
         """
-        if wordmap['lemma'] == ' ':
+        if wordmap["lemma"] == " ":
             # apertium fails when surf == ' '
-            return ''
-        wordmap['analysis'] = lexc_escape(wordmap['lemma'])
-        wordmap['analysis'] = wordmap['analysis'].replace(
-            word_boundary, '+').replace(weak_boundary, '')
-        if wordmap['is_prefix']:
-            wordmap['analysis'] += "+"
-        elif wordmap['upos'] == 'PROPN':
-            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
-            if wordmap['proper_noun_class']:
-                wordmap['analysis'] +=\
-                    self.stuff2lexc(wordmap['proper_noun_class'])
-                if wordmap['sem'] in ['MALE', 'FEMALE']:
-                    wordmap['analysis'] += self.stuff2lexc(wordmap['sem'])
+            return ""
+        wordmap["analysis"] = lexc_escape(wordmap["lemma"])
+        wordmap["analysis"] = wordmap["analysis"].replace(
+            word_boundary, "+").replace(weak_boundary, "")
+        if wordmap["is_prefix"]:
+            wordmap["analysis"] += "+"
+        elif wordmap["upos"] == "PROPN":
+            wordmap["analysis"] += self.stuff2lexc(wordmap["upos"])
+            if wordmap["proper_noun_class"]:
+                wordmap["analysis"] +=\
+                    self.stuff2lexc(wordmap["proper_noun_class"])
+                if wordmap["sem"] in ["MALE", "FEMALE"]:
+                    wordmap["analysis"] += self.stuff2lexc(wordmap["sem"])
             else:
-                wordmap['analysis'] += self.stuff2lexc('UNKNOWNPROPN')
-        elif wordmap['upos'] == 'VERB':
-            if wordmap['argument']:
+                wordmap["analysis"] += self.stuff2lexc("UNKNOWNPROPN")
+        elif wordmap["upos"] == "VERB":
+            if wordmap["argument"]:
                 wordmap[
-                    'analysis'] += self.stuff2lexc(wordmap['argument'] +
-                                                   '_arg')
+                    "analysis"] += self.stuff2lexc(wordmap["argument"] +
+                                                   "_arg")
             else:
-                wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
-        elif wordmap['upos'] == 'CCONJ|VERB':
-            if wordmap['lemma'] == 'eikä':
-                wordmap['lemma'] = 'ei'
-                wordmap['analysis'] = 'ja' + \
-                    self.stuff2lexc('COORDINATING') + \
-                    '+ei' + \
-                    self.stuff2lexc('Nneg')
+                wordmap["analysis"] += self.stuff2lexc(wordmap["upos"])
+        elif wordmap["upos"] == "CCONJ|VERB":
+            if wordmap["lemma"] == "eikä":
+                wordmap["lemma"] = "ei"
+                wordmap["analysis"] = "ja" + \
+                    self.stuff2lexc("COORDINATING") + \
+                    "+ei" + \
+                    self.stuff2lexc("Nneg")
             else:
-                wordmap['analysis'] = wordmap['lemma'][:-2] + \
-                    self.stuff2lexc('ADVERBIAL') + \
-                    '+' + wordmap['lemma'][-2:] + \
-                    self.stuff2lexc('Nneg')
-        elif wordmap['particle']:
-            for pclass in wordmap['particle'].split(','):
-                wordmap['analysis'] += self.stuff2lexc(pclass)
+                wordmap["analysis"] = wordmap["lemma"][:-2] + \
+                    self.stuff2lexc("ADVERBIAL") + \
+                    "+" + wordmap["lemma"][-2:] + \
+                    self.stuff2lexc("Nneg")
+        elif wordmap["particle"]:
+            for pclass in wordmap["particle"].split(","):
+                wordmap["analysis"] += self.stuff2lexc(pclass)
         else:
-            wordmap['analysis'] += self.stuff2lexc(wordmap['upos'])
-        if wordmap['blacklist']:
-            if wordmap['blacklist'] != "TOOSHORTFORCOMPOUND":
-                wordmap['analysis'] += self.stuff2lexc('BLACKLISTED')
+            wordmap["analysis"] += self.stuff2lexc(wordmap["upos"])
+        if wordmap["blacklist"]:
+            if wordmap["blacklist"] != "TOOSHORTFORCOMPOUND":
+                wordmap["analysis"] += self.stuff2lexc("BLACKLISTED")
 
-        if wordmap['prontype']:
-            for stuff in wordmap['prontype'].split(","):
-                wordmap['analysis'] += self.stuff2lexc(stuff)
-        if wordmap['lex']:
-            for stuff in wordmap['lex'].split(","):
-                wordmap['analysis'] += self.stuff2lexc(stuff)
-        if wordmap['abbr']:
-            for stuff in wordmap['abbr'].split(","):
-                wordmap['analysis'] += self.stuff2lexc(stuff)
-        if wordmap['numtype']:
-            for stuff in wordmap['numtype'].split(","):
-                wordmap['analysis'] += self.stuff2lexc(stuff)
-        if wordmap['symbol']:
-            for subcat in wordmap['symbol'].split(','):
-                wordmap['analysis'] += self.stuff2lexc(subcat)
-            if wordmap['stub'] in ";:":
-                wordmap['analysis'] += self.stuff2lexc("SENTENCE-BOUNDARY")
+        if wordmap["prontype"]:
+            for stuff in wordmap["prontype"].split(","):
+                wordmap["analysis"] += self.stuff2lexc(stuff)
+        if wordmap["lex"]:
+            for stuff in wordmap["lex"].split(","):
+                wordmap["analysis"] += self.stuff2lexc(stuff)
+        if wordmap["abbr"]:
+            for stuff in wordmap["abbr"].split(","):
+                wordmap["analysis"] += self.stuff2lexc(stuff)
+        if wordmap["numtype"]:
+            for stuff in wordmap["numtype"].split(","):
+                wordmap["analysis"] += self.stuff2lexc(stuff)
+        if wordmap["symbol"]:
+            for subcat in wordmap["symbol"].split(","):
+                wordmap["analysis"] += self.stuff2lexc(subcat)
+            if wordmap["stub"] in ";:":
+                wordmap["analysis"] += self.stuff2lexc("SENTENCE-BOUNDARY")
         # XXX: for now
-        if wordmap['lemma'] in "¹²³½¼=≥µ#/%":
-            wordmap['analysis'] += self.stuff2lexc("NOUN")
-        wordmap['stub'] = wordmap['stub']
-        wordmap['stub'] = lexc_escape(wordmap['stub'])
-        if 'BLACKLIST' in wordmap['new_para']:
-            return "!%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
-                                      wordmap['new_para'])
+        if wordmap["lemma"] in "¹²³½¼=≥µ#/%":
+            wordmap["analysis"] += self.stuff2lexc("NOUN")
+        wordmap["stub"] = wordmap["stub"]
+        wordmap["stub"] = lexc_escape(wordmap["stub"])
+        if "BLACKLIST" in wordmap["new_para"]:
+            return f"!{wordmap['analysis']}:{wordmap['stub']}" + \
+                   f"\t{wordmap['new_para']}\t;"
         else:
-            return "%s:%s\t%s\t;" % (wordmap['analysis'], wordmap['stub'],
-                                     wordmap['new_para'])
+            return f"{wordmap['analysis']}:{wordmap['stub']}" + \
+                   f"\t{wordmap['new_para']}\t;"
 
     def multichars_lexc(self):
         """Get apertium compatible lexc multichars.
@@ -536,8 +536,8 @@ class ApertiumFormatter(Formatter):
         """
         multichars = "Multichar_Symbols\n!! Apertium standard tags:\n"
         for mcs in sorted(self.apertium_multichars):
-            if '><' not in mcs and mcs not in ['', '+', '-', '#', '0']:
-                multichars += '%<' + lexc_escape(mcs) + "%>\n"
+            if "><" not in mcs and mcs not in ["", "+", "-", "#", "0"]:
+                multichars += "%<" + lexc_escape(mcs) + "%>\n"
         multichars += Formatter.multichars_lexc(self)
         return multichars
 
@@ -546,13 +546,13 @@ class ApertiumFormatter(Formatter):
 
         @return str containing lexc Root lexicon for apertium"""
         root = Formatter.root_lexicon_lexc(self)
-        root += '\t'.join(['-', 'SUFFIX', ';']) + '\n'
-        root += '\t'.join(['-', 'NOUN', ';']) + '\n'
-        root += '\t'.join(['-', 'ADJ', ';']) + '\n'
+        root += "\t".join(["-", "SUFFIX", ";"]) + "\n"
+        root += "\t".join(["-", "NOUN", ";"]) + "\n"
+        root += "\t".join(["-", "ADJ", ";"]) + "\n"
         return root
 
 
 # self test
-if __name__ == '__main__':
+if __name__ == "__main__":
     formatter = ApertiumFormatter()
     exit(0)
