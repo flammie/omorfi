@@ -145,6 +145,7 @@ Dumppi	PROPN	propn-blocking
 Ebola	PROPN	propn-blocking
 Ego	PROPN	propn-blocking
 Ehto	PROPN	propn-blocking
+Eile	PROPN	propn-blocking
 Eine	PROPN	propn-blocking
 Eksymä	PROPN	propn-blocking
 Ele	PROPN	propn-blocking
@@ -289,6 +290,7 @@ Havu	PROPN	propn-blocking
 He	PROPN	propn-blocking
 Hede	PROPN	propn-blocking
 Hedelmätarha	PROPN	propn-blocking
+Hee	PROPN	propn-blocking
 Heila	PROPN	propn-blocking
 Heiluva	PROPN	propn-blocking
 Heinikko	PROPN	propn-blocking
@@ -579,6 +581,7 @@ Jokisuu	PROPN	propn-blocking
 Jokitasanko	PROPN	propn-blocking
 Jokitörmä	PROPN	propn-blocking
 Jokivarsi	PROPN	propn-blocking
+Jokki	PROPN	propn-blocking
 Jolla	PROPN	propn-blocking
 Jorpakko	PROPN	propn-blocking
 Jouhi	PROPN	propn-blocking
@@ -750,6 +753,7 @@ Kamppi	PROPN	propn-blocking
 Kampsu	PROPN	propn-blocking
 Kampura	PROPN	propn-blocking
 Kamu	PROPN	propn-blocking
+Kan	PROPN	propn-blocking
 Kanaali	PROPN	propn-blocking
 Kanala	PROPN	propn-blocking
 Kananen	PROPN	propn-blocking
@@ -862,6 +866,7 @@ Katkelma	PROPN	propn-blocking
 Katkera	PROPN	propn-blocking
 Katko	PROPN	propn-blocking
 Katku	PROPN	propn-blocking
+Kato	PROPN	propn-blocking
 Katoton	PROPN	propn-blocking
 Katsomo	PROPN	propn-blocking
 Katti	PROPN	propn-blocking
@@ -1378,6 +1383,7 @@ Kääntöpiiri	PROPN	propn-blocking
 Kääpä	PROPN	propn-blocking
 Kääriä	PROPN	propn-blocking
 Kääriäinen	PROPN	propn-blocking
+Käärme	PROPN	propn-blocking
 Käärmekuusi	PROPN	propn-blocking
 Kökkö	PROPN	propn-blocking
 Köngäs	PROPN	propn-blocking
@@ -1538,6 +1544,7 @@ Levoton	PROPN	propn-blocking
 Levy	PROPN	propn-blocking
 Levä	PROPN	propn-blocking
 Leväkkö	PROPN	propn-blocking
+Lie	PROPN	propn-blocking
 Liehuva	PROPN	propn-blocking
 Lieju	PROPN	propn-blocking
 Liejukko	PROPN	propn-blocking
@@ -1855,7 +1862,9 @@ Mora	PROPN	propn-blocking
 Moro	PROPN	propn-blocking
 Motto	PROPN	propn-blocking
 Moukka	PROPN	propn-blocking
+Mu	PROPN	propn-blocking
 Muhkura	PROPN	propn-blocking
+Mui	PROPN	propn-blocking
 Muikku	PROPN	propn-blocking
 Muisto	PROPN	propn-blocking
 Mukula	PROPN	propn-blocking
@@ -2084,7 +2093,9 @@ Ojennus	PROPN	propn-blocking
 Ojikko	PROPN	propn-blocking
 Oka	PROPN	propn-blocking
 Oksa	PROPN	propn-blocking
+Ola	PROPN	propn-blocking
 Olento	PROPN	propn-blocking
+Olka	PROPN	propn-blocking
 Olkapää	PROPN	propn-blocking
 Olkikatto	PROPN	propn-blocking
 Olkinen	PROPN	propn-blocking
@@ -2209,6 +2220,7 @@ Peippo	PROPN	propn-blocking
 Peipponen	PROPN	propn-blocking
 Peitsi	PROPN	propn-blocking
 Pelimanni	PROPN	propn-blocking
+Pelin	PROPN	propn-blocking
 Pellava	PROPN	propn-blocking
 Pelle	PROPN	propn-blocking
 Pelto	PROPN	propn-blocking
@@ -2527,6 +2539,7 @@ Pörssi	PROPN	propn-blocking
 Pössy	PROPN	propn-blocking
 Pösö	PROPN	propn-blocking
 Pöyhiä	PROPN	propn-blocking
+Pöytä	PROPN	propn-blocking
 Pöytäkannu	PROPN	propn-blocking
 Pöytävuori	PROPN	propn-blocking
 Raaja	PROPN	propn-blocking
@@ -2933,6 +2946,7 @@ Sonni	PROPN	propn-blocking
 Sontiainen	PROPN	propn-blocking
 Soppa	PROPN	propn-blocking
 Soppi	PROPN	propn-blocking
+Sopu	PROPN	propn-blocking
 Sopukka	PROPN	propn-blocking
 Sora	PROPN	propn-blocking
 Soraharju	PROPN	propn-blocking
@@ -3066,6 +3080,7 @@ Taimikko	PROPN	propn-blocking
 Taimisto	PROPN	propn-blocking
 Taimitarha	PROPN	propn-blocking
 Taipua	PROPN	propn-blocking
+Tais	PROPN	propn-blocking
 Taito	PROPN	propn-blocking
 Taivaannapa	PROPN	propn-blocking
 Taivaanranta	PROPN	propn-blocking
@@ -3195,6 +3210,7 @@ Toimi	PROPN	propn-blocking
 Toive	PROPN	propn-blocking
 Toivo	PROPN	propn-blocking
 Toki	PROPN	propn-blocking
+Tokko	PROPN	propn-blocking
 Tollo	PROPN	propn-blocking
 Tolppa	PROPN	propn-blocking
 Tonni	PROPN	propn-blocking
@@ -3230,6 +3246,7 @@ Tulisija	PROPN	propn-blocking
 Tulivuori	PROPN	propn-blocking
 Tulkki	PROPN	propn-blocking
 Tulla	PROPN	propn-blocking
+Tulle	PROPN	propn-blocking
 Tulli	PROPN	propn-blocking
 Tulliliitto	PROPN	propn-blocking
 Tulliportti	PROPN	propn-blocking
@@ -3366,6 +3383,7 @@ Valimo	PROPN	propn-blocking
 Valju	PROPN	propn-blocking
 Valkki	PROPN	propn-blocking
 Valkoinen	PROPN	propn-blocking
+Valla	PROPN	propn-blocking
 Valli	PROPN	propn-blocking
 Valmis	PROPN	propn-blocking
 Valo	PROPN	propn-blocking
@@ -3522,6 +3540,7 @@ Virta	PROPN	propn-blocking
 Virtainen	PROPN	propn-blocking
 Virveli	PROPN	propn-blocking
 Vispilä	PROPN	propn-blocking
+Vo	PROPN	propn-blocking
 Voima	PROPN	propn-blocking
 Voimala	PROPN	propn-blocking
 Voirasia	PROPN	propn-blocking
@@ -3794,6 +3813,7 @@ tiu	NOUN	tooshortforcompound
 tiv	NOUN	tooshortforcompound
 tri	NOUN	tooshortforcompound
 tule	NOUN	omorfi
+turpa	PROPN	propn-blocking
 twi	NOUN	tooshortforcompound
 työ	NOUN	tooshortforcompound
 täi	NOUN	tooshortforcompound

@@ -289,7 +289,14 @@ LIST RARER-PROPN =
     ("Vatka" UPOS=PROPN) ("En" UPOS=PROPN) ("Kiitos" UPOS=PROPN)
     ("Viide" UPOS=PROPN) ("Merelle" UPOS=PROPN) ("Ku" UPOS=PROPN) 
     ("Illa" UPOS=PROPN) ("Naapuri" UPOS=PROPN) ("Aihe" UPOS=PROPN)
-    ("Kota" UPOS=PROPN) ("Valon" UPOS=PROPN) ("Herra" UPOS=PROPN) ;
+    ("Kota" UPOS=PROPN) ("Valon" UPOS=PROPN) ("Herra" UPOS=PROPN) 
+    ("Eile" UPOS=PROPN) ("Hee" UPOS=PROPN) ("Jokki" UPOS=PROPN)
+    ("Kan" UPOS=PROPN) ("Kato" UPOS=PROPN) ("Käärme" UPOS=PROPN)
+    ("Lie" UPOS=PROPN) ("Mu" UPOS=PROPN) ("Mui" UPOS=PROPN)
+    ("Ola" UPOS=PROPN) ("Olka" UPOS=PROPN) ("Pelin" UPOS=PROPN)
+    ("Pöytä" UPOS=PROPN) ("Sopu" UPOS=PROPN) ("Sopu" UPOS=PROPN)
+    ("Tais" UPOS=PROPN) ("Tokko" UPOS=PROPN) ("Tulle" UPOS=PROPN)
+    ("Valla" UPOS=PROPN) ("Vo" UPOS=PROPN) ("turpa" UPOS=PROPN) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
