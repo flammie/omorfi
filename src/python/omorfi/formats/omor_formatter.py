@@ -22,6 +22,7 @@
 # utils to format apertium style data from omorfi database values
 
 import re
+import sys
 
 from ..error_logging import fail_formatting_missing_for, just_fail
 from ..string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
@@ -694,7 +695,7 @@ class OmorFormatter(Formatter):
         """
         tags = self.analyses2lexc(anals, surf)
         surf = lexc_escape(surf)
-        return "%s:%s\t%s ;\n" % (tags, surf, cont)
+        return f"{tags}:{surf}\t{cont} ;\n"
 
     def guesser2lexc(self, regex, deletion, cont):
         """Create a lexc guesser entry from omorfi continuation data
@@ -705,7 +706,7 @@ class OmorFormatter(Formatter):
             regex = ""
         regex = egrep2xerox(regex)
         regex = regex_delete_surface(regex, deletion)
-        return "< ?* %s >\t%s ;\n" % (regex, cont)
+        return f"< ?* {regex} >\t{cont} ;\n"
 
     def wordmap2lexc(self, wordmap):
         """
@@ -717,9 +718,10 @@ class OmorFormatter(Formatter):
             # do not include normal white space for now
             return ""
         wordmap["stub"] = lexc_escape(wordmap["stub"])
-        wordmap["analysis"] = "[WORD_ID=%s]" % (lexc_escape(wordmap["lemma"]))
+        lexc_lemma = lexc_escape(wordmap["lemma"])
+        wordmap["analysis"] = f"[WORD_ID={lexc_lemma}]"
         if wordmap["homonym"][-1].isdigit() and self.homonyms:
-            wordmap["analysis"] += "[HOMONYM=%s]" % (wordmap["homonym"][-1])
+            wordmap["analysis"] += f"[HOMONYM={wordmap['homonym'][-1]}"
         if wordmap["numtype"] and wordmap["numtype"] == "ORD":
             wordmap["analysis"] += self.stuff2lexc("ADJ")
         else:
@@ -770,19 +772,19 @@ class OmorFormatter(Formatter):
             wordmap["analysis"] += self.stuff2lexc(wordmap["style"])
 
         if self.ktnkav and wordmap["upos"] != "ACRONYM":
-            tag = "[KTN=%s]" % (lexc_escape(wordmap["kotus_tn"]))
+            ktn = lexc_escape(wordmap["kotus_tn"])
+            tag = f"[KTN={ktn}]"
             if tag in self.ktnkav_multichars:
                 wordmap["analysis"] += tag
                 if wordmap["kotus_av"]:
-                    wordmap["analysis"] += "[KAV=%(kotus_av)s]" % (wordmap)
+                    wordmap["analysis"] += f"[KAV={wordmap['kotus_av']}]"
         if self.newparas:
-            wordmap["analysis"] += "[NEWPARA=%s]" % (wordmap["new_para"],)
+            wordmap["analysis"] += f"[NEWPARA={wordmap['new_para']}]"
 
         # match WORD_ID= with epsilon, then stub and lemma might match
         lex_stub = "0" + wordmap["stub"]
 
-        lexc_line = "%s:%s\t%s\t;" % (wordmap["analysis"], lex_stub,
-                                      wordmap["new_para"])
+        lexc_line = f"{wordmap['analysis']}:{lex_stub}\t{wordmap['new_para']}\t;"
         if "BLACKLISTED" in wordmap["new_para"]:
             return "! ! !" + lexc_line
         else:
@@ -872,12 +874,12 @@ class OmorFormatter(Formatter):
         derivations the most relevant ones for the whole token.
         """
         re_feats = re.compile(r"\[[A-Z_]*=[^]]*\]")
-        rvs = list()
+        rvs = []
         feats = re_feats.finditer(s)
         for feat in feats:
             if "WORD_ID=" in feat.group(0):
                 # feats reset on word boundary
-                rvs = list()
+                rvs = []
             else:
                 rvs.append(feat.group(0))
         return rvs
@@ -896,4 +898,4 @@ class OmorFormatter(Formatter):
 # self test
 if __name__ == "__main__":
     formatter = OmorFormatter()
-    exit(0)
+    sys.exit(0)
