@@ -24,8 +24,8 @@
 import re
 
 from ..error_logging import fail_formatting_missing_for, just_fail
-from .formatter import Formatter
 from ..string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
+from .formatter import Formatter
 
 
 class OmorFormatter(Formatter):
@@ -128,6 +128,7 @@ class OmorFormatter(Formatter):
         "[LEX=LAT]",
         "[LEX=LOC]",
         "[LEX=SEP]",
+        "[LEX=TRA]",
         "[LEX=TTAIN]",
         '[MOOD=COND]',
         '[MOOD=EVNV]',
@@ -511,6 +512,7 @@ class OmorFormatter(Formatter):
         "INSTRUCTIVE": "[LEX=INS]",
         "PARTITIVE": "[LEX=PAR]",
         "SEPARATIVE": "[LEX=SEP]",
+        "TRANSLATIVE": "[LEX=TRA]",
         "LATIVE": "[LEX=LAT]",
         "DERSTI": "[LEX=STI]",
         "DERTTAIN": "[LEX=TTAIN]",
