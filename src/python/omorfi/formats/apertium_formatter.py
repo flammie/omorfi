@@ -19,6 +19,7 @@
 #
 #
 # utils to format apertium style data from omorfi database values
+import sys
 
 from ..error_logging import fail_formatting_missing_for, just_fail
 from ..settings import weak_boundary, word_boundary
@@ -126,6 +127,7 @@ class ApertiumFormatter(Formatter):
         "rec",
         "reflex",
         "rel",
+        "sep",
         "sg",
         "sp",
         "sup",
@@ -254,7 +256,8 @@ class ApertiumFormatter(Formatter):
         "Dtatuttaa": "+tatuttaa<vblex",
         "Dtuttaa": "+tuttaa<vblex",
         "Dsti": "+sti<adv",
-        "EVENT": "",
+        "ELATIVE": "ela",
+        "EVENT": "al",
         "FEMALE": "f",
         "FINAL-BRACKET": "",
         "FINAL-QUOTE": "",
@@ -271,6 +274,7 @@ class ApertiumFormatter(Formatter):
         "INTRANSITIVE_arg": "vblex",
         "INTJ": "ij",
         "INTERROGATIVE": "itg",
+        "LATIVE": "lat",
         "LAST": "cog",
         "LEMMA-START": "",
         "LEMMA-END": "",
@@ -334,6 +338,7 @@ class ApertiumFormatter(Formatter):
         "SG3": "p3><sg",
         "SG0": "p3",
         "SENTENCE-BOUNDARY": "",
+        "SEPARATIVE": "sep",
         "SPACE": "",
         "SUFFIX": "",
         "SUPERL": "sup",
@@ -344,6 +349,7 @@ class ApertiumFormatter(Formatter):
         "Tpast": "past",
         "Tpot": "pot",
         "Tpres": "pri",
+        "TRANSLATIVE": "tra",
         "Uarch": "use_archaic",
         "Udial": "use_nonstd",
         "Unonstd": "use_nonstd",
@@ -485,11 +491,20 @@ class ApertiumFormatter(Formatter):
                 wordmap["analysis"] = "ja" + \
                     self.stuff2lexc("COORDINATING") + \
                     "+ei" + \
+                    self.stuff2lexc("AUX") + \
+                    self.stuff2lexc("Nneg")
+            elif wordmap["lemma"] == "äläkä":
+                wordmap["lemma"] = "äl"
+                wordmap["analysis"] = "ja" + \
+                    self.stuff2lexc("COORDINATING") + \
+                    "+ei" + \
+                    self.stuff2lexc("AUX") + \
                     self.stuff2lexc("Nneg")
             else:
                 wordmap["analysis"] = wordmap["lemma"][:-2] + \
                     self.stuff2lexc("ADVERBIAL") + \
                     "+" + wordmap["lemma"][-2:] + \
+                    self.stuff2lexc("AUX") + \
                     self.stuff2lexc("Nneg")
         elif wordmap["particle"]:
             for pclass in wordmap["particle"].split(","):
@@ -555,4 +570,4 @@ class ApertiumFormatter(Formatter):
 # self test
 if __name__ == "__main__":
     formatter = ApertiumFormatter()
-    exit(0)
+    sys.exit(0)
