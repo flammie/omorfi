@@ -19,92 +19,93 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .apertium_formatter import ApertiumFormatter
+import sys
+
 from ..error_logging import fail_formatting_missing_for
-from ..settings import (word_boundary, morph_boundary, deriv_boundary,
-                        weak_boundary, stub_boundary, optional_hyphen)
+from ..settings import deriv_boundary, morph_boundary, optional_hyphen, stub_boundary, weak_boundary, word_boundary
+from .apertium_formatter import ApertiumFormatter
 
 monodix_sdefs = {
-    'abbr',
-    'abe',
-    'abl',
-    'acc',
-    'actv',
-    'ade',
-    'adj',
-    'adv',
-    'agent',
-    'all',
-    'ant',
-    'card',
-    'cmp',
-    'cnjcoo',
-    'cnjsub',
-    'com',
-    'comp',
-    'cond',
-    'conneg',
-    'dem',
-    'ela',
-    'enc',
-    'ess',
-    'f',
-    'gen',
-    'ij',
-    'ill',
-    'imp',
-    'impers',
-    'ind',
-    'indv',
-    'ine',
-    'infa',
-    'infe',
-    'infma',
-    'infminen',
-    'ins',
-    'itg',
-    'lat',
-    'm',
-    'mf',
-    'n',
-    'neg',
-    'nom',
-    'np',
-    'nt',
-    'num',
-    'ord',
-    'p1',
-    'p2',
-    'p3',
-    'par',
-    'part',
-    'past',
-    'pasv',
-    'pl',
-    'pneg',
-    'pos',
-    'post',
-    'pot',
-    'pp',
-    'pprs',
-    'pr',
-    'pri',
-    'prn',
-    'pxpl1',
-    'pxpl2',
-    'pxsg1',
-    'pxsg2',
-    'pxsp3',
-    'qst',
-    'rec',
-    'reflex',
-    'rel',
-    'sg',
-    'sup',
-    'top',
-    'tra',
-    'vblex',
-    'ND', 'ERROR'}
+    "abbr",
+    "abe",
+    "abl",
+    "acc",
+    "actv",
+    "ade",
+    "adj",
+    "adv",
+    "agent",
+    "all",
+    "ant",
+    "card",
+    "cmp",
+    "cnjcoo",
+    "cnjsub",
+    "com",
+    "comp",
+    "cond",
+    "conneg",
+    "dem",
+    "ela",
+    "enc",
+    "ess",
+    "f",
+    "gen",
+    "ij",
+    "ill",
+    "imp",
+    "impers",
+    "ind",
+    "indv",
+    "ine",
+    "infa",
+    "infe",
+    "infma",
+    "infminen",
+    "ins",
+    "itg",
+    "lat",
+    "m",
+    "mf",
+    "n",
+    "neg",
+    "nom",
+    "np",
+    "nt",
+    "num",
+    "ord",
+    "p1",
+    "p2",
+    "p3",
+    "par",
+    "part",
+    "past",
+    "pasv",
+    "pl",
+    "pneg",
+    "pos",
+    "post",
+    "pot",
+    "pp",
+    "pprs",
+    "pr",
+    "pri",
+    "prn",
+    "pxpl1",
+    "pxpl2",
+    "pxsg1",
+    "pxsg2",
+    "pxsp3",
+    "qst",
+    "rec",
+    "reflex",
+    "rel",
+    "sg",
+    "sup",
+    "top",
+    "tra",
+    "vblex",
+    "ND", "ERROR"}
 
 stuff2monodix = {
     "Aiden": "",
@@ -350,105 +351,105 @@ def format_monodix_alphabet():
 
 
 def format_monodix_sdefs():
-    sdefs = '  <sdefs>\n'
+    sdefs = "  <sdefs>\n"
     for sdef in monodix_sdefs:
-        sdefs += '    <sdef n="' + sdef + '"/>\n'
-    sdefs += '  </sdefs>\n'
+        sdefs += "    <sdef n=\"" + sdef + "\"/>\n"
+    sdefs += "  </sdefs>\n"
     return sdefs
 
 
 def format_monodix_l(s):
-    if s != '0':
-        return s.replace(' ', '<b/>').replace(word_boundary, '') \
-            .replace(morph_boundary, '').replace(deriv_boundary, '')\
-            .replace(stub_boundary, '').replace(optional_hyphen, '')\
-            .replace(weak_boundary, '')
+    if s != "0":
+        return s.replace(" ", "<b/>").replace(word_boundary, "") \
+            .replace(morph_boundary, "").replace(deriv_boundary, "")\
+            .replace(stub_boundary, "").replace(optional_hyphen, "")\
+            .replace(weak_boundary, "")
     else:
-        return ''
+        return ""
 
 
 def format_monodix_r(anals, stem):
-    r = ''
-    if anals != '0':
-        for anal in anals.split('|'):
-            if anal == '@@COPY-STEM@@':
+    r = ""
+    if anals != "0":
+        for anal in anals.split("|"):
+            if anal == "@@COPY-STEM@@":
                 r += stem
-            elif anal.startswith('@@LITERAL') and anal.endswith('@@'):
-                r += anal[len('@@LITERAL'):-len('@@')]
+            elif anal.startswith("@@LITERAL") and anal.endswith("@@"):
+                r += anal[len("@@LITERAL"):-len("@@")]
             else:
                 r += format_monodix_s(anal)
     return r
 
 
 def format_monodix_s(stuff):
-    s = ''
+    s = ""
     if stuff in stuff2monodix:
-        s += '<s n="' + stuff2monodix[stuff] + '"/>'
+        s += "<s n="" + stuff2monodix[stuff] + ""/>"
     else:
         fail_formatting_missing_for(stuff, "monodix")
-        s = '<s n="ERROR"/>'
-    if '><' in s:
-        s = s.replace('><', '"/><s n="')
-    elif '<s n="+' in s:
-        s = s.replace('<s n="', '').replace('<', '<s n="')
-    elif '"+"' in s:
-        s = '+'
-    elif '""' in s:
-        s = ''
-    elif '"-"' in s:
-        s = '-'
+        s = "<s n=\"ERROR\"/>"
+    if "><" in s:
+        s = s.replace("><", "\"/><s n=\"")
+    elif "<s n=\"+" in s:
+        s = s.replace("<s n=\"", "").replace("<", "<s n=\"")
+    elif "\"+\"" in s:
+        s = "+"
+    elif "\"\"" in s:
+        s = ""
+    elif "\"-\"" in s:
+        s = "-"
     return s
 
 
 def format_monodix_par(cont):
     if cont.startswith("X_FORGN"):
-        return ''
-    return '<par n="' + cont.lower().replace('_', '__') + '"/>'
+        return ""
+    return "<par n=\"" + cont.lower().replace("_", "__") + "\"/>"
 
 
 def format_monodix_pardef(fields):
-    pardef = ''
+    pardef = ""
     for cont in fields[3:]:
-        pardef += '      <e>'
+        pardef += "      <e>"
         if fields[1] == fields[2]:
-            pardef += '<i>' + format_monodix_l(fields[2]) + '</i>'
+            pardef += "<i>" + format_monodix_l(fields[2]) + "</i>"
         else:
-            pardef += '<p><l>' + format_monodix_l(fields[2]) + '</l>'
-            pardef += '<r>' + format_monodix_r(fields[1], fields[2]) + \
-                      '</r></p>'
-        if cont != '#':
+            pardef += "<p><l>" + format_monodix_l(fields[2]) + "</l>"
+            pardef += "<r>" + format_monodix_r(fields[1], fields[2]) + \
+                      "</r></p>"
+        if cont != "#":
             pardef += format_monodix_par(cont)
-        pardef += '</e>\n'
+        pardef += "</e>\n"
     return pardef
 
 
 def format_monodix_entry(wordmap):
-    if wordmap['new_para'] == 'X_IGNORE' or wordmap['lemma'] == ' ':
-        return ''
-    e = '<e lm="' + wordmap['lemma'].replace('&', '&amp;')\
-        .replace('"', '&quot;').replace("<", "&lt;") + '">'
-    e += '<p><l>' + \
-        wordmap['stub'].replace(word_boundary, '').replace(
-            '&', '&amp;').replace('<', '&lt;') + '</l>'
-    e += '<r>'
-    e += wordmap['lemma'].replace('&', '&amp;').replace("<", "&lt;")
-    e += format_monodix_s(wordmap['real_pos'] or wordmap['pos'])
-    e += '</r></p>'
-    e += format_monodix_par(wordmap['new_para'])
-    e += '</e>'
+    if wordmap["new_para"] == "X_IGNORE" or wordmap["lemma"] == " ":
+        return ""
+    e = "<e lm=\"" + wordmap["lemma"].replace("&", "&amp;")\
+        .replace("\"", "&quot;").replace("<", "&lt;") + "\">"
+    e += "<p><l>" + \
+        wordmap["stub"].replace(word_boundary, "").replace(
+            "&", "&amp;").replace("<", "&lt;") + "</l>"
+    e += "<r>"
+    e += wordmap["lemma"].replace("&", "&amp;").replace("<", "&lt;")
+    e += format_monodix_s(wordmap["real_pos"] or wordmap["pos"])
+    e += "</r></p>"
+    e += format_monodix_par(wordmap["new_para"])
+    e += "</e>"
     return e
 
 
 # self test
-if __name__ == '__main__':
+if __name__ == "__main__":
     fail = False
     for stuff, ape in ApertiumFormatter.stuff2apertium.items():
         if len(ape) < 2:
             continue
-        elif ape.startswith('+'):
-            if not ape[ape.find('+'):]:
+        elif ape.startswith("+"):
+            if not ape[ape.find("+"):]:
                 print("There are conflicting formattings in here!",
-                      ape[ape.find('+'):],
+                      ape[ape.find("+"):],
                       "is not a valid apertium multichar_symbol!")
                 fail = True
         elif ape not in ApertiumFormatter.apertium_multichars:
@@ -456,4 +457,4 @@ if __name__ == '__main__':
                   "is not a valid apertium multichar_symbol!")
             fail = True
     if fail:
-        exit(1)
+        sys.exit(1)
