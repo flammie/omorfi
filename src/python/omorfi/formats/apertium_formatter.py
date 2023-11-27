@@ -69,6 +69,7 @@ class ApertiumFormatter(Formatter):
         "enc",
         "ess",
         "f",
+        "frm",
         "gen",
         "ij",
         "ill",
@@ -383,6 +384,10 @@ class ApertiumFormatter(Formatter):
         "LOCATIVE": "loc",
         "FTB3MAN": "",
         "FTB3man": "",
+        "NONSTANDARD": "use_nonstd",
+        "ARCHAIC": "use_archaic",
+        "DIALECTAL": "use_dialect",
+        "FORMAL": "frm",
         ".": "",
         "XForeign": "use_foreign",
         "X": "x",
@@ -532,6 +537,8 @@ class ApertiumFormatter(Formatter):
                 wordmap["analysis"] += self.stuff2lexc(subcat)
             if wordmap["stub"] in ";:":
                 wordmap["analysis"] += self.stuff2lexc("SENTENCE-BOUNDARY")
+        if wordmap["style"]:
+            wordmap["analysis"] += self.stuff2lexc(wordmap["style"])
         # XXX: for now
         if wordmap["lemma"] in "¹²³½¼=≥µ#/%":
             wordmap["analysis"] += self.stuff2lexc("NOUN")
