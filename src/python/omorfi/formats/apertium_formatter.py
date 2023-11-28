@@ -141,7 +141,8 @@ class ApertiumFormatter(Formatter):
         "use_foreign",
         "use_blacklist",
         "vaux",
-        "vblex"
+        "vblex",
+        "x"
     }
     ## a mapping from omorfi stuff to apertium symbols
     stuff2apertium = {
