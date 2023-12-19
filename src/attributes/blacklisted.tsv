@@ -533,6 +533,7 @@ Istukka	PROPN	propn-blocking
 Isänmaa	PROPN	propn-blocking
 Isännätön	PROPN	propn-blocking
 Isäntä	PROPN	propn-blocking
+Isä	PROPN	propn-blocking
 Itara	PROPN	propn-blocking
 Itikka	PROPN	propn-blocking
 Itäinen	PROPN	propn-blocking
@@ -3068,6 +3069,7 @@ Sääski	PROPN	propn-blocking
 Säästö	PROPN	propn-blocking
 Säästöpankki	PROPN	propn-blocking
 Säästöpankkiryhmä	PROPN	propn-blocking
+Ta	PROPN	propn-blocking
 Taatto	PROPN	propn-blocking
 Tahi	PROPN	propn-blocking
 Tahko	PROPN	propn-blocking
@@ -3469,6 +3471,7 @@ Vesitammi	PROPN	propn-blocking
 Vesitie	PROPN	propn-blocking
 Vesuri	PROPN	propn-blocking
 Vetelä	PROPN	propn-blocking
+Vie	PROPN	propn-blocking
 Viemäri	PROPN	propn-blocking
 Vientiluotto	PROPN	propn-blocking
 Vieras	PROPN	propn-blocking

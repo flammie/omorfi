@@ -296,7 +296,8 @@ LIST RARER-PROPN =
     ("Ola" UPOS=PROPN) ("Olka" UPOS=PROPN) ("Pelin" UPOS=PROPN)
     ("Pöytä" UPOS=PROPN) ("Sopu" UPOS=PROPN) ("Sopu" UPOS=PROPN)
     ("Tais" UPOS=PROPN) ("Tokko" UPOS=PROPN) ("Tulle" UPOS=PROPN)
-    ("Valla" UPOS=PROPN) ("Vo" UPOS=PROPN) ("turpa" UPOS=PROPN) ;
+    ("Valla" UPOS=PROPN) ("Vo" UPOS=PROPN) ("turpa" UPOS=PROPN) 
+    ("Isä" UPOS=PROPN) ("Ta" UPOS=PROPN) ("Vie" UPOS=PROPN) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
@@ -306,7 +307,7 @@ LIST RARER-NOUN =
     ("taita" UPOS=NOUN) ("viisi" UPOS=NOUN) ("koto" UPOS=NOUN)
     ("suura" UPOS=NOUN) ("sai" UPOS=NOUN) ("saava" UPOS=NOUN)
     ("pitkänen" UPOS=NOUN) ("niisi" UPOS=NOUN) ("valin" UPOS=NOUN) 
-    ("talossa" UPOS=NOUN) ;
+    ("talossa" UPOS=NOUN) ("juko" UPOS=NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs, and some fixed expressions
 LIST RARER-ADV =
@@ -320,7 +321,7 @@ LIST RARER-VERB =
     ("nytkiä" UPOS=VERB) ("siitä" UPOS=VERB) ("siittää" UPOS=VERB)
     ("suomia" UPOS=VERB) ("suoria" UPOS=VERB) ("taata" UPOS=VERB)
     ("vastoa" UPOS=VERB) ("oieta" UPOS=VERB) ("niistää" UPOS=VERB)
-    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ;
+    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ("sietä" UPOS=VERB) ;
 ## some adjectives that shadow probably a commoner noun
 LIST RARER-ADJ =
     ("ehta" UPOS=ADJ) ;
@@ -745,6 +746,13 @@ LIST PÄÄLLÄ-ADV = ("päällä" UPOS=ADV) ;
 # kylmää
 LIST KYLMÄÄ-VERB = ("kylmätä" UPOS=VERB) ;
 LIST KYLMÄÄ-ADJNOUN = ("kylmä" UPOS=ADJ) ("kylmä" UPOS=NOUN) ;
+# kirjaan
+LIST KIRJAAN-VERB = ("kirjata" UPOS=VERB) ;
+LIST KIRJAAN-NOUN = ("kirja" UPOS=NOUN) ;
+# juosta
+LIST JUOSTA-VERB = ("juosta" UPOS=VERB) ;
+LIST JUOSTA-NOUN = ("juko" UPOS=NOUN) ;
+
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -883,6 +891,10 @@ SELECT:ollenkaan-adv OLLENKAAN-ADV (0 OLLENKAAN-VERB) ;
 
 ##! ulkona oli eilen kylmää
 REMOVE:kylmää-verb KYLMÄÄ-VERB (0 KYLMÄÄ-ADJNOUN) ;
+##! Pari kertaa hän kurkisti sisarensa kirjaan
+REMOVE:kirjaa-verb KIRJAAN-VERB (0 KIRJAAN-NOUN) ;
+##! Hänen täytyi juosta kotiin
+REMOVE:juosta-noun JUOSTA-NOUN (0 JUOSTA-VERB) ;
 
 ##! $ oikeus omaan kehoon
 ##! $ minä omaan kehoni
