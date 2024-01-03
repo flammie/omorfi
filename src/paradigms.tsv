@@ -2122,6 +2122,7 @@ PROPN_VALLAT	PROPN	NOUN	9	I	obligatory	weaken	back	None	None	False	False	llat	la
 PROPN_VALTA	PROPN	NOUN	9	I	False	weaken	back	a	None	False	False	lta	ta
 PROPN_VANHEMMAT	PROPN	NOUN	16	H	obligatory	weaken	back	None	None	False	False	mmat	mat
 PROPN_VANKI	PROPN	NOUN	5	G	False	weaken	back	None	None	False	False	nki	ki
+PROPN_VARAS	PROPN	NOUN	41	D	False	strengthen	back	None	None	False	False	as	as
 PROPN_VARAT	PROPN	NOUN	9	None	obligatory	weaken	back	None	None	False	False	at	at
 PROPN_VARPAAT	PROPN	NOUN	41	E	obligatory	strengthen	back	None	None	False	False	paat	paat
 PROPN_VARSI	PROPN	NOUN	28	K	False	weaken	back	None	None	False	False	rsi	si
