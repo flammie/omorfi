@@ -12,14 +12,20 @@ elif test $# -ge 2 ; then
     exit 1
 fi
 EWPREFIX=enwiktionary-$ENWIKT_VERSION-pages-articles
-if ! wget "https://dumps.wikimedia.org/enwiktionary/$ENWIKT_VERSION/$EWPREFIX.xml.bz2" ; then
+if test -f "$EWPREFIX.xml.bz2" ; then
+    echo "NB! using existing $EWPREFIX.xml.bz2"
+elif ! wget "https://dumps.wikimedia.org/enwiktionary/$ENWIKT_VERSION/$EWPREFIX.xml.bz2" ; then
     echo Download failed
 fi
-bunzip2 "$EWPREFIX.xml.bz2"
-bash enwikt2omorfi.bash "$EWPREFIX.articles.xml"  > "$EWPREFIX.tsv.unsort"
+if test -f "$EWPREFIX.xml" ; then
+    echo "Using exitsing $EWPREFIX.xml"
+else
+    bunzip2 -k -p "$EWPREFIX.xml.bz2"
+fi
+bash enwikt2omorfi.bash "$EWPREFIX.xml"  > "$EWPREFIX.tsv.noheaders"
 printf "lemma\thomonym\tnew_para\torigin\n" | cat - "$EWPREFIX.tsv.noheaders" \
-    > "$EWPREFIX.tsv.headers"
-python ../python/tsvsort.py -i "$EWPREFIX.tsv.headers" \
+    > "$EWPREFIX.tsv.unsort"
+python ../python/tsvsort.py -i "$EWPREFIX.tsv.unsort" \
     -o "$EWPREFIX.tsv"
 python ../python/tsvmerge.py -i ../lexemes.tsv -m "$EWPREFIX.tsv" \
     -o ../lexemes+enwikt.tsv

@@ -1527,6 +1527,7 @@ NUM_KYMMEN	NUM	NUMERAL	32	None	False	strengthen	front	None	None	False	False	kymm
 NUM_KYMMENEN	NUM	NUMERAL	32	None	False	strengthen	front	None	None	False	False	kymmenen	en
 NUM_KYMMENKUNTA	NUM	NUMERAL	10	J	False	weaken	back	a	None	False	False	kunta	a
 NUM_KYMMENTÄ	NUM	NUMERAL	99	None	False	False	both	None	None	False	False	.	
+NUM_GOOGOL	NUM	NUMERAL	5	None	False	weaken	back	None	None	False	False		
 NUM_MILJARDI	NUM	NUMERAL	6	None	False	weaken	back	None	None	False	False	iljardi	i
 NUM_MILJOONA	NUM	NUMERAL	10	None	False	weaken	back	a	None	False	False	a	a
 NUM_NELJÄ	NUM	NUMERAL	10	None	False	weaken	front	ä	None	False	False	neljä	ä
@@ -1568,6 +1569,7 @@ PRON_MIKÄ	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	mikä	k
 PRON_MIKÄKIN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	mikäkin	käkin
 PRON_MIKÄÄN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	mikään	kään
 PRON_MINÄ	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	inä	nä
+PRON_MOLEMPI	PRON	PRONOUN	16	H	obligatory	weaken	back	None	None	False	False	molempi	mpi
 PRON_MOLEMMAT	PRON	PRONOUN	16	H	obligatory	weaken	back	None	None	False	False	molemmat	mat
 PRON_MONES	PRON	PRONOUN	45	None	False	strengthen	back	None	None	False	False	mones	s
 PRON_MONI	PRON	PRONOUN	23	None	False	weaken	back	None	None	False	False	moni	i
