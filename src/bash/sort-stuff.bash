@@ -5,3 +5,4 @@ for f in lexemes.tsv attributes/*.tsv ; do
     sed -e 's/\\\\\\/\\/' $f.sort > $f
 done
 
+python/tsvfixstuff.py -i lexemes.tsv -o lexemes.tsv.sort --sort-field origin
