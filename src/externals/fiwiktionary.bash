@@ -12,9 +12,20 @@ elif test $# -ge 2 ; then
     exit 1
 fi
 FWPREFIX=fiwiktionary-$FIWIKT_VERSION-pages-articles
-wget "http://dumps.wikimedia.org/fiwiktionary/$FIWIKT_VERSION/$FWPREFIX.xml.bz2"
-bunzip2 "$FWPREFIX.xml.bz2"
-bash fiwikt2omorfi.bash "$FWPREFIX.articles.xml"  > "$FWPREFIX.tsv.noheaders"
+if ! test -f "$FWPREFIX.xml.bz2" ; then
+    if ! wget "http://dumps.wikimedia.org/fiwiktionary/$FIWIKT_VERSION/$FWPREFIX.xml.bz2" ; then
+        echo failed to dl
+        exit 1
+    fi
+else
+    echo "using existing $FWPREFIX.xml.bz2"
+fi
+if ! test -f "$FWPREFIX.xml" ; then
+    bunzip2 -k -p "$FWPREFIX.xml.bz2"
+else
+    echo "using existing $FWPREFIX.xml"
+fi
+bash fiwikt2omorfi.bash "$FWPREFIX.xml"  > "$FWPREFIX.tsv.noheaders"
 printf "lemma\thomonym\tnew_para\torigin\n" | cat - "$FWPREFIX.tsv.noheaders" \
     > "$FWPREFIX.tsv.unsort"
 python ../python/tsvsort.py -i "$FWPREFIX.tsv.unsort" -o "$FWPREFIX.tsv"
