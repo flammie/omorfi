@@ -1672,7 +1672,7 @@ PROPN_BORDEAUX	PROPN	NOUN	22	None	False	weaken	back	o	None	False	False	.
 PROPN_BOTSWANA	PROPN	NOUN	13	None	False	weaken	back	a	None	False	False	a	a
 PROPN_BRASSERIE	PROPN	NOUN	21	None	False	weaken	back	i	None	False	False	.	
 PROPN_BRIE	PROPN	NOUN	21	None	False	weaken	front	i	None	False	False	.	
-PROPN_BROOKLYN	PROPN	NOUN	5	None	False	weaken	front	None	None	False	False	.	
+PROPN_BROOKLYN	PROPN	NOUN	5	None	False	weaken	both	None	None	False	False	.	
 PROPN_CAMUS	PROPN	NOUN	22	None	False	weaken	back	None	None	False	False	.	
 PROPN_CEP	PROPN	ACRONYM	5	None	False	False	front	None	None	False	False	[BCDEGPTVWbcdegptvw]	
 PROPN_CERN	PROPN	ACRONYM	5	None	False	False	front	None	None	False	False	[FLMNRŠSXŽflmnršsxž²³]	
