@@ -4,8 +4,10 @@
 SED="sed"
 
 for f in nimisto_oapif/places/etrs89/gml/places_202*; do
-    mkdir "$(basename "$f")"
-    unzip -d "$(basename "$f")" "$f"
+    if ! test -d "$(basename "$f")" ; then
+        mkdir "$(basename "$f")"
+        unzip -d "$(basename "$f")" "$f"
+    fi
 done
 for d in places_* ; do
     saxon9-transform -s:"$d/places.xml" gml2omorfi.xslt
@@ -393,7 +395,6 @@ done |\
          -e 's/arkivet_swe$/arkivet	PROPN	PROPN_PUNK/' \
          -e 's/bad_swe$/bad	PROPN	PROPN_PUNK/' \
          -e 's/hamn_swe$/hamn	PROPN	PROPN_PUNK/' \
-         -e 's/llet_swe$/llet	PROPN	PROPN_PUNK/' \
          -e 's/ubers_swe$/ubers	PROPN	PROPN_PUNK/' \
          -e 's/kan_swe$/kan	PROPN	PROPN_PUNK/' \
          -e 's/san_swe$/san	PROPN	PROPN_PUNK/' \
