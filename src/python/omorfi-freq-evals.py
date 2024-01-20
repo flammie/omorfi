@@ -6,7 +6,7 @@ Test sort | uniq -c | sort -nr'd gold analysis data for faithfulness
 
 
 from argparse import ArgumentParser, FileType
-from sys import stderr, stdout, stdin
+from sys import stderr, stdin, stdout
 from time import perf_counter, process_time
 
 from omorfi import Omorfi, Token

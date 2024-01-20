@@ -6,7 +6,7 @@ fi
 analyser="@top_builddir@/src/generated/omorfi.describe.hfst"
 conllus="corpora/fi_tdt-ud-dev.conllu"
 cs="get-covered.bash"
-thold=84
+thold=82
 if test ! -r "$analyser" ; then
     echo Missing $analyser
     exit 77

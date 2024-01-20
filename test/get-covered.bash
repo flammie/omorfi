@@ -1,11 +1,11 @@
 #!/bin/bash
 # fetch omorfi coverage corpus data
-nc=15
+nc=16
 function preprocess() {
     cat $@ > .tokenise
     split -l 500000 .tokenise
     for f in x?? ; do
-        ../../src/python/omorfi-tokenise.py -i $f -a\
+        ../../src/python/omorfi-tokenise.py -i "$f" -a\
             ../../src/generated/omorfi.describe.hfst |\
         tr -s ' ' '\n'
     done
@@ -25,7 +25,7 @@ fi
 if ! test -d corpora ; then
     mkdir -v corpora
 fi
-pushd corpora
+pushd corpora || exit 1
 # europarl
 echo europarl... corpus 1/$nc
 if ! test -f "europarl-v7.fi-en.fi.uniq.freqs" ; then
@@ -68,38 +68,41 @@ if ! test -f ftb3.1.uniq.freqs ; then
     if ! test -f ftb3.1.conllx ; then
         if ! test -f ftb3.1.conllx.gz ; then
             echo fetch
-            wget "http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/ftb3.1.conllx.gz"
+            wget "https://korp.csc.fi/download/finntreebank/finntreebank3-src/finntreebank3-src.zip"
         fi
         echo unpack
-        gunzip ftb3.1.conllx.gz
+        unzip finntreebank3-src.zip
+        mv finntreebank3-src/ftb3.1.conllx .
     fi
     echo tokenise
-    egrep -v '^<' < ftb3.1.conllx |\
+    grep -E -v '^<' < ftb3.1.conllx |\
         cut -f 2 > ftb3.1.tokens
     echo count
     frequency_list ftb3.1.tokens > ftb3.1.uniq.freqs
 fi
 if ! test -f ftb3.1.cutted.freqs ; then
-    egrep -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb3.1.cutted.freqs
+    grep -E -v '^<' < ftb3.1.conllx | cut -f 2,3,6 | sort | uniq -c |\
+        sort -nr > ftb3.1.cutted.freqs
 fi
 
 # gutenberg
 echo gutenberg... corpus 4/$nc
-if ! test -f "gutenberg-fi.uniq.freqs" ; then
-    if ! test -f "gutenberg-fi.tokens" ; then
-        if ! test -f "gutenberg-fi.text" ; then
-            echo fetch
-            fetch-gutenberg.bash "fi" txt
-            echo unpack
-            unpack-gutenbergs.bash  > "gutenberg-fi.text"
-        fi
-        echo tokenise
-        preprocess  "gutenberg-fi.text" > "gutenberg-fi.tokens"
-    fi
-    echo count
-    frequency_list gutenberg-fi.tokens > gutenberg-fi.uniq.freqs
-
-fi
+echo "disabled since gutenberg has blocked their download access :-("
+## if ! test -f "gutenberg-fi.uniq.freqs" ; then
+##     if ! test -f "gutenberg-fi.tokens" ; then
+##         if ! test -f "gutenberg-fi.text" ; the
+##             echo fetch
+##             fetch-gutenberg.bash "fi" txt
+##             echo unpack
+##             unpack-gutenbergs.bash  > "gutenberg-fi.text"
+##         fi
+##         echo tokenise
+##         preprocess  "gutenberg-fi.text" > "gutenberg-fi.tokens"
+##     fi
+##     echo count
+##     frequency_list gutenberg-fi.tokens > gutenberg-fi.uniq.freqs
+##
+## fi
 # JRC acquis
 echo JRC acquis... corpus 5/$nc
 if ! test -f "jrc-fi.uniq.freqs" ; then
@@ -120,25 +123,25 @@ if ! test -f "jrc-fi.uniq.freqs" ; then
 fi
 
 # FTB 1
-echo FTB-1 2014 ... corpus 6/$nc
-if ! test -f "ftb1-2014.uniq.freqs" ; then
-    if ! test -f ftb1-2014.tsv ; then
+echo FTB-1  ... corpus 6/$nc
+if ! test -f "ftb1.uniq.freqs" ; then
+    if ! test -f visk-sent_tab.txt ; then
         echo fetch
-        wget "http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/ftb1-2014-beta.zip"
+        wget "https://korp.csc.fi/download/finntreebank/finntreebank1-src/finntreebank1-src.zip"
         echo unpack
-        unzip ftb1-2014-beta.zip
-        cp ftb1-2014-beta/ftb1-2014.tsv .
+        unzip finntreebank1-src.zip
+        cp finntreebank1-src/visk-sent_tab.txt .
     fi
     echo tokenise
-    egrep -v '^#' < ftb1-2014.tsv |\
+    grep -E -v '^#' < visk-sent_tab.txt |\
         tr -s '\n' |\
-        cut -f 2 > ftb1-2014.tokens
+        cut -f 2 > ftb1.tokens
     echo count
-    frequency_list ftb1-2014.tokens > ftb1-2014.uniq.freqs
+    frequency_list ftb1.tokens > ftb1.uniq.freqs
 fi
-if ! test -f ftb1-2014.cutted.freqs ; then
-    egrep -v '^#' < ftb1-2014.tsv | tr -s '\n' |\
-        cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb1-2014.cutted.freqs
+if ! test -f ftb1.cutted.freqs ; then
+    grep -E -v '^#' < visk-sent_tab.txt | tr -s '\n' |\
+        cut -f 2,3,6 | sort | uniq -c | sort -nr > ftb1.cutted.freqs
 fi
 
 # UD-finnish
@@ -148,14 +151,14 @@ if ! test -f "fi_tdt-ud.uniq.freqs" ; then
         if ! test -d UD_Finnish-TDT ; then
             git clone git@github.com:UniversalDependencies/UD_Finnish-TDT.git
         else
-            pushd UD_Finnish-TDT
+            pushd UD_Finnish-TDT || exit 1
             git pull
-            popd
+            popd || exit 1
         fi
         cp UD_Finnish-TDT/fi_tdt-ud-{train,dev,test}.conllu .
     fi
     echo tokenise
-    cat fi_tdt-ud-{train,dev}.conllu | egrep -v '^#' | tr -s '\n' |\
+    cat fi_tdt-ud-{train,dev}.conllu | grep -E -v '^#' | tr -s '\n' |\
         cut -f 2 > "fi_tdt-ud.tokens"
     echo count
     frequency_list "fi_tdt-ud.tokens" > "fi_tdt-ud.uniq.freqs"
@@ -166,14 +169,14 @@ if ! test -f "fi_ftb-ud.uniq.freqs" ; then
         if ! test -d UD_Finnish-ftb ; then
             git clone git@github.com:UniversalDependencies/UD_Finnish-ftb.git
         else
-            pushd UD_Finnish-ftb
+            pushd UD_Finnish-ftb || exit 1
             git pull
-            popd
+            popd || exit 1
         fi
         cp UD_Finnish-ftb/fi_ftb-ud-{train,dev,test}.conllu .
     fi
     echo tokenise
-    cat fi_ftb-ud-{train,dev}.conllu | egrep -v '^#' | tr -s '\n' |\
+    cat fi_ftb-ud-{train,dev}.conllu | grep -E -v '^#' | tr -s '\n' |\
         cut -f 2 > "fi_ftb-ud.tokens"
     echo count
     frequency_list "fi_ftb-ud.tokens" > "fi_ftb-ud.uniq.freqs"
@@ -218,64 +221,41 @@ fi
 
 # Turku Internet Parse Bank
 echo Internet parse bank... corpus 11/$nc
-if ! test -f "5grams.uniq.freqs" ; then
-    if ! test -f "5grams.tokens" ; then
-        if ! test -f 5grams.text ; then
-            if ! test -f 5grams.01.txt.gz ; then
-                echo fetch 1/4
-                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.01.txt.gz
-            fi
-            if ! test -f 5grams.02.txt.gz ; then
-                echo fetch 2/4
-                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.02.txt.gz
-            fi
-            if ! test -f 5grams.03.txt.gz ; then
-                echo fetch 3/4
-                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.03.txt.gz
-            fi
-            if ! test -f 5grams.04.txt.gz ; then
-                echo fetch 4/4
-                wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.04.txt.gz
-            fi
-            echo unpack
-            zcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
-        fi
-        echo tokenise
-        cat 5grams.text | tr ' ' '\n' | cut -d/ -f1 > 5grams.tokens
-    fi
-    echo count
-    frequency_list 5grams.tokens > 5grams.uniq.freqs
-fi
+echo "disabled since UTU has just removed internet parsebank"
+## if ! test -f "5grams.uniq.freqs" ; then
+##     if ! test -f "5grams.tokens" ; then
+##         if ! test -f 5grams.text ; then
+##             if ! test -f 5grams.01.txt.gz ; then
+##                 echo fetch 1/4
+##                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.01.txt.gz
+##             fi
+##             if ! test -f 5grams.02.txt.gz ; then
+##                 echo fetch 2/4
+##                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.02.txt.gz
+##             fi
+##             if ! test -f 5grams.03.txt.gz ; then
+##                 echo fetch 3/4
+##                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.03.txt.gz
+##             fi
+##             if ! test -f 5grams.04.txt.gz ; then
+##                 echo fetch 4/4
+##                 wget http://bionlp-www.utu.fi/fin-ngrams/fin-flat-ngrams/5grams.04.txt.gz
+##             fi
+##             echo unpack
+##             zcat 5grams.0{1,2,3,4}.txt.gz > 5grams.text
+##         fi
+##         echo tokenise
+##         cat 5grams.text | tr ' ' '\n' | cut -d/ -f1 > 5grams.tokens
+##     fi
+##     echo count
+##     frequency_list 5grams.tokens > 5grams.uniq.freqs
+## fi
 
 # Old language frequency lists
 echo Vanhan kirjasuomen sanojen taajuuksia... corpus 12/$nc
-if ! test -f "vks.uniq.freqs" ; then
-    if ! test -f "vks_frek.txt" ; then
-        if ! test -f vks_frek.zip ; then
-            echo fetch 1/4
-            wget http://kaino.kotus.fi/sanat/taajuuslista/vks_frek.zip
-        fi
-        echo unpack
-        unzip vks_frek.zip
-    fi
-    echo count
-    iconv -f iso-8859-1 -t utf-8//IGNORE vks_frek.txt |\
-        cut -d ' ' -f 2,3 > vks.uniq.freqs
-fi
 echo Varhaisnykysuomen sanojen taajuuksia... corpus 13/$nc
-if ! test -f "vns.uniq.freqs" ; then
-    if ! test -f "vns_frek.txt" ; then
-        if ! test -f vns_frek.zip ; then
-            echo fetch 1/4
-            wget http://kaino.kotus.fi/sanat/taajuuslista/vns_frek.zip
-        fi
-        echo unpack
-        unzip vns_frek.zip
-    fi
-    echo count
-    iconv -f iso-8859-1 -t utf-8//IGNORE vns_frek.txt |\
-        cut -d ' ' -f 2,3  > vns.uniq.freqs
-fi
+echo "gone?"
+
 # Unimorph-fin
 echo Unimorph fin ... 14/$nc
 if ! test -f "unimorph-fin.uniq.freqs" ; then
@@ -283,12 +263,13 @@ if ! test -f "unimorph-fin.uniq.freqs" ; then
         git clone git@github.com:unimorph/fin.git
     fi
     cat fin/fin.? > unimorph-fin.unimorphs
-    cat unimorph-fin.unimorphs | cut -f 2 | fgrep -v ' ' > "unimorph-fin.tokens"
+    cat unimorph-fin.unimorphs | cut -f 2 |\
+        grep -F -v ' ' > "unimorph-fin.tokens"
     echo count
     frequency_list "unimorph-fin.tokens" > "unimorph-fin.uniq.freqs"
 fi
 # finer
-echo finer ... 14/$nc
+echo finer ... 15/$nc
 if ! test -f "finer.uniq.freqs" ; then
     if ! test -d finer-data ; then
         git clone git@github.com:mpsilfve/finer-data.git
@@ -300,15 +281,15 @@ if ! test -f "finer.uniq.freqs" ; then
 fi
 
 # Turku ONE
-echo turku ono ... 15/$nc
-if ! test -f "turku-one.freqs" ; then
-    if ! test -d turku-one ; then
-        git clone git@github.com:Turku-NLP/turku-one
+echo turku ner corpse ... 16/$nc
+if ! test -f "turku-ner.freqs" ; then
+    if ! test -d turku-ner-corpus ; then
+        git clone git@github.com:TurkuNLP/turku-ner-corpus
     fi
-    cut -f 1 turku-one/data/conll/train.tsv > turku-one.tokens
+    cut -f 1 turku-ner-corpus/data/conll/train.tsv > turku-ner.tokens
     echo count
-    frequency_list turku-one.tokens > turku-one.uniq.freqs
-    cp -v turku-one/data/conll/*.csv .
+    frequency_list turku-ner.tokens > turku-ner.uniq.freqs
+    cp -v turku-ner-corpus/data/conll/*.tsv .
 fi
-popd
+popd || exit 1
 

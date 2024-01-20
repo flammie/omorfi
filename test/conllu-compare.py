@@ -4,26 +4,26 @@
 Compare two conllu files for matches on each field.
 """
 
-
+import sys
 from argparse import ArgumentParser, FileType
 from sys import stderr
 
 
 def main():
     a = ArgumentParser()
-    a.add_argument('-H', '--hypothesis', metavar="HYPFILE", type=open,
+    a.add_argument("-H", "--hypothesis", metavar="HYPFILE", type=open,
                    required=True, dest="hypfile", help="analysis results")
-    a.add_argument('-r', '--reference', metavar="REFFILE", type=open,
+    a.add_argument("-r", "--reference", metavar="REFFILE", type=open,
                    required=True,
                    dest="reffile", help="reference data")
-    a.add_argument('-l', '--log', metavar="LOGFILE", required=True,
-                   type=FileType('w'),
+    a.add_argument("-l", "--log", metavar="LOGFILE", required=True,
+                   type=FileType("w"),
                    dest="logfile", help="result file")
-    a.add_argument('-X', '--realign', action="store_true", default=False,
+    a.add_argument("-X", "--realign", action="store_true", default=False,
                    help="Allow fuzzy matches if tokenisation differs")
-    a.add_argument('-v', '--verbose', action="store_true", default=False,
+    a.add_argument("-v", "--verbose", action="store_true", default=False,
                    help="Print verbosely while processing")
-    a.add_argument('-t', '--thresholds', metavar='THOLDS', default=99,
+    a.add_argument("-t", "--thresholds", metavar="THOLDS", default=99,
                    type=int, help="require THOLD % for lemma, UPOS and " +
                    "UFEATs or exit 1 (for testing)")
     options = a.parse_args()
@@ -52,28 +52,28 @@ def main():
             break
         reflines += 1
         hyplines += 1
-        infields = hypline.strip().split('\t')
-        reffields = refline.strip().split('\t')
+        infields = hypline.strip().split("\t")
+        reffields = refline.strip().split("\t")
         while len(infields) < 4:
-            if hypline.startswith('#') or hypline.strip() == "":
+            if hypline.startswith("#") or hypline.strip() == "":
                 pass
             else:
                 print("mismatched unknown non-content! HYP:", hypline,
-                      "REF:", refline, sep='\n')
-                exit(1)
+                      "REF:", refline, sep="\n")
+                sys.exit(1)
             try:
                 hypline = next(options.hypfile)
             except StopIteration:
                 eoffed = True
                 break
             hyplines += 1
-            infields = hypline.strip().split('\t')
+            infields = hypline.strip().split("\t")
         while len(reffields) < 4:
-            if refline.startswith('#') or refline.strip() == "":
+            if refline.startswith("#") or refline.strip() == "":
                 pass
             else:
                 print("mismatched unknown non-content! REF:", refline,
-                      "HYP:", hypline, sep='\n')
+                      "HYP:", hypline, sep="\n")
                 exit(1)
             try:
                 refline = next(options.reffile)
@@ -81,16 +81,16 @@ def main():
                 eoffed = True
                 break
             reflines += 1
-            reffields = refline.strip().split('\t')
+            reffields = refline.strip().split("\t")
         if eoffed:
             break
         if infields[0] != reffields[0]:
-            if '-' in reffields[0]:
+            if "-" in reffields[0]:
                 refline = next(options.reffile)
-                reffields = refline.strip().split('\t')
-            elif '.' in reffields[0]:
+                reffields = refline.strip().split("\t")
+            elif "." in reffields[0]:
                 refline = next(options.reffile)
-                reffields = refline.strip().split('\t')
+                reffields = refline.strip().split("\t")
             else:
                 skiplines += 1
                 print("misaligned (index)! IN:", infields[0], "REF:",
@@ -104,7 +104,7 @@ def main():
                         refline = next(options.reffile).strip()
                     continue
                 else:
-                    exit(1)
+                    sys.exit(1)
         if infields[1] != reffields[1]:
             skiplines += 1
             print("misaligned (surface)! IN:", infields[1], "REF:",
@@ -117,7 +117,7 @@ def main():
                     refline = next(options.reffile).strip()
                 continue
             else:
-                exit(1)
+                sys.exit(1)
         if infields[2] != reffields[2]:
             missed_lemmas += 1
             print("LEMMA", infields[2], reffields[2], file=options.logfile)
@@ -171,13 +171,13 @@ def main():
           sep="\t")
     print(deplines / deplines * 100,
           (deplines - missed_lemmas) / deplines * 100 if deplines != 0 else 0,
-          (deplines - missed_uposes) / deplines * 100if deplines != 0 else 0,
-          (deplines - missed_feats) / deplines * 100if deplines != 0 else 0,
-          (deplines - missed_tdtposes) / deplines * 100if deplines != 0 else 0,
-          (deplines - missed_uds) / deplines * 100if deplines != 0 else 0,
-          (deplines - missed_udlabs) / deplines * 100if deplines != 0 else 0,
-          (deplines - missed_deps2) / deplines * 100if deplines != 0 else 0,
-          (deplines - missed_misc) / deplines * 100if deplines != 0 else 0,
+          (deplines - missed_uposes) / deplines * 100 if deplines != 0 else 0,
+          (deplines - missed_feats) / deplines * 100 if deplines != 0 else 0,
+          (deplines - missed_tdtposes) / deplines * 100 if deplines != 0 else 0,
+          (deplines - missed_uds) / deplines * 100 if deplines != 0 else 0,
+          (deplines - missed_udlabs) / deplines * 100 if deplines != 0 else 0,
+          (deplines - missed_deps2) / deplines * 100 if deplines != 0 else 0,
+          (deplines - missed_misc) / deplines * 100 if deplines != 0 else 0,
           sep="\t")
     print("Skipped due to tokenisation etc. (no fuzz):", skiplines)
     if deplines == 0 or \
@@ -189,9 +189,9 @@ def main():
         print("needs to have", options.thresholds,
               "% matches to pass regress test\n",
               file=stderr)
-        exit(1)
+        sys.exit(1)
     else:
-        exit(0)
+        sys.exit(0)
 
 
 if __name__ == "__main__":
