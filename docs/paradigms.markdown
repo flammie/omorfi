@@ -868,7 +868,7 @@ All other lexical information is coded on per lexeme basis
 |  PROPN_BOTSWANA | PROPN | a stems, a : o and a : 0 variations | 13 | back |
 |  PROPN_BRASSERIE | PROPN | e stem no variatons back harmony | 21 | back |
 |  PROPN_BRIE | PROPN | e stem front harmony | 21 | front |
-|  PROPN_BROOKLYN | PROPN | consonant stem, no variations both harmo... | 5 | front |
+|  PROPN_BROOKLYN | PROPN | consonant stem, no variations both harmo... | 5 | both |
 |  PROPN_BÉBÉ | PROPN | é stem  | 21 | front |
 |  PROPN_CAMUS | PROPN | consonat stem, ’ inflection | 22 | back |
 |  PROPN_CEP | PROPN | inflects both normally and as an acronym... | 5 | front |

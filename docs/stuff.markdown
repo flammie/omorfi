@@ -33,7 +33,7 @@ outpyt formatter.
 | CCONJ | Coordinating conjunction, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/CCONJ.html |  [UPOS=CCONJ] |  %<cnjcoo%> |   |    |
 | CLAUSE-BOUNDARY | Clause final, lexical feature of clause bounding tokens |  [BOUNDARY=CLAUSE] |   |   |    |
 | Cma | Agent participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html |  [PCP=AGENT] |  %<agent%> |  % AgPrc |  +AgPrc  |
-| Cmaisilla | Fifth infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html |  ERRORMACRO |   |  % Adv |  +Der/maisilla  |
+| Cmaisilla | Fifth infinitive, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html |  ERRORMACRO |  %<error%> |  % Adv |  +Der/maisilla  |
 | Cmaton | Negation participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html |  [PCP=NEG] |  %<pneg%> |  % NegPrc |  +NegPrc  |
 | Cnut | Nut participle, inflectional feature, refer to http://universaldependencies.org/fi/feat/PartForm.html |  [PCP=NUT] |  %<pp%> |  % PrfPrc |  +PrfPrc  |
 | COMPARATIVE | Comparative conjunction, lexical feature based on the Finnish grammar, mainly for the lexeme 'kuin', refer to http://kaino.kotus.fi/visk/sisallys.php?p=819 |  [UPOS=SCONJ][CONJ=COMPARATIVE] |  %<cnjsub%> |   |  +CS  |
@@ -93,22 +93,22 @@ outpyt formatter.
 | O3 | Third person ambiguous possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  [POSS=3] |  %<px3sp%> |  % Px3 |  +Px3  |
 | Opl1 | First person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  [POSS=PL1] |  %<px1pl%> |  % PxPl1 |  +PxPl1  |
 | Opl2 | Second person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  [POSS=PL2] |  %<px2pl%> |  % PxPl2 |  +PxPl2  |
-| Opl3 | Third person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  ERRORMACRO |   |   |    |
+| Opl3 | Third person plural possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  ERRORMACRO |  %<error%> |   |    |
 | ORDINAL | Ordinal, lexical feature based on UD NumType, refer to http://universaldependencies.org/u/feat/NumType.html |  [NUMTYPE=ORD] |  %<ord%> |  % Ord |  +Ord  |
 | Osg1 | First person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  [POSS=SG1] |  %<px1sg%> |  % PxSg1 |  +PxSg1  |
 | Osg2 | Second person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  [POSS=SG2] |  %<px2sg%> |  % PxSg2 |  +PxSg2  |
-| Osg3 | Third person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  ERRORMACRO |   |   |    |
-| PE4 | Passive / fourth persion, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PE4] |   |  % Pe4 |  +Pe4  |
+| Osg3 | Third person singular possessive, inflectional feature, refer to http://universaldependencies.org/u/feat/Person-psor.html and http://universaldependencies.org/u/feat/Number-psor.html |  ERRORMACRO |  %<error%> |   |    |
+| PE4 | Passive / fourth persion, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PE4] |  %<error%> |  % Pe4 |  +Pe4  |
 | PERSONAL | Personal, lexical feature based on UD PronType, refer to http://universaldependencies.org/u/feat/PronType.html |  [PRONTYPE=PRS] |  %<pers%> |  % Pers |  +Pers  |
-| PL1 | First plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL1] |  %<p1%> |  % Pl1 |  +Pl1  |
-| PL2 | Secod plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL2] |  %<p2%> |  % Pl2 |  +Pl2  |
-| PL3 | Third plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL3] |  %<p3%> |  % Pl3 |  +Pl3  |
-| POSTPOSITION | Postposition, lexical feature based on UD-Finnish AdpType, an adposition that is after its complement |  [ADPTYPE=POST] |   |   |    |
+| PL1 | First plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL1] |  %<p1%>%<pl%> |  % Pl1 |  +Pl1  |
+| PL2 | Secod plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL2] |  %<p2%>%<pl%> |  % Pl2 |  +Pl2  |
+| PL3 | Third plural, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL3] |  %<p3%>%<pl%> |  % Pl3 |  +Pl3  |
+| POSTPOSITION | Postposition, lexical feature based on UD-Finnish AdpType, an adposition that is after its complement |  [ADPTYPE=POST] |  %<error%> |   |    |
 | Ppe4 | Passive" , inflectional feature |  [PERS=PE4] |  %<impers%> |  % Pe4 |  +Pe4  |
 | Ppl1 | First person plural actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL1] |  %<p1%>%<pl%> |  % Pl1 |  +Pl1  |
 | Ppl2 | Second person plural actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL2] |  %<p2%>%<pl%> |  % Pl2 |  +Pl2  |
 | Ppl3 | Third person plural actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=PL3] |  %<p3%>%<pl%> |  % Pl3 |  +Pl3  |
-| PREPOSITION | Preposition, lexical feature based on UD-Finnish AdpType, an adposition that is before its complent, refer to http://universaldependencies.org/fi/feat/AdpType.html |  [ADPTYPE=PREP] |   |  % Adp% Pr |  +Adp+Pr  |
+| PREPOSITION | Preposition, lexical feature based on UD-Finnish AdpType, an adposition that is before its complent, refer to http://universaldependencies.org/fi/feat/AdpType.html |  [ADPTYPE=PREP] |  %<error%> |  % Adp% Pr |  +Adp+Pr  |
 | PRON | Pronoun, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/PRON.html |  [UPOS=PRON] |  %<prn%> |  % Pron |    |
 | PROPN | Proper noun, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/PROPN.html |  [UPOS=PROPN] |  %<np%> |   |  +Prop  |
 | Psg1 | First person singular actor, inflectional feature, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG1] |  %<p1%>%<sg%> |  % Sg1 |  +Sg1  |
@@ -130,9 +130,9 @@ outpyt formatter.
 | SCONJ | Adverbial conjunction, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/SCONJ.html |  [UPOS=SCONJ] |  %<cnjsub%> |  % CS |    |
 | SENTENCE-BOUNDARY | Sentence final, lexical feature of sentece bounding tokens |  [BOUNDARY=SENTENCE] |   |   |    |
 | .sent | Sentence marker, legacy support? |  [BOUNDARY=SENTENCE] |   |   |    |
-| SG1 | First singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG1] |  %<p1%> |  % Sg1 |  +Sg1  |
-| SG2 | Second singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG2] |  %<p2%> |  % Sg2 |  +Sg2  |
-| SG3 | Third singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG3] |  %<p3%> |  % Sg3 |  +Sg3  |
+| SG1 | First singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG1] |  %<p1%>%<sg%> |  % Sg1 |  +Sg1  |
+| SG2 | Second singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG2] |  %<p2%>%<sg%> |  % Sg2 |  +Sg2  |
+| SG3 | Third singular, lexicalised version for inflectional feature of verbs, refer to http://universaldependencies.org/u/feat/Person.html and http://universaldependencies.org/u/feat/Number.html |  [PERS=SG3] |  %<p3%>%<sg%> |  % Sg3 |  +Sg3  |
 | SPACE | Space, lexical feature of SYM, needed for compatibility with many external systems that do not support space-as-a-token concept |  [SUBCAT=SPACE] |   |   |    |
 | SUPERL | Superlative, lexicalised version for inflectional feature of adjectives, refer to http://universaldependencies.org/u/feat/Degree.html |  [CMP=SUP] |  %<sup%> |  % Superl |  +Superl  |
 | SYM | Symbol, lexical feature, based on UPOS, refer to http://universaldependencies.org/u/pos/SYM.html |  [UPOS=SYM] |  %<sym%> |   |    |

@@ -51,7 +51,8 @@ echo >> $INDEX
 echo "### Per sources of origin" >> $INDEX
 echo >> $INDEX
 echo "Sources of origin are:" >> $INDEX
-echo "* *dvvfi*: government published open data set in [avoindata](https://avoindata.fi) e.g. Census name database" >> $INDEX
+echo "* *dvvfi*: open source person name database from government census data (c.f. [dvv.fi](https://dvv.fi) and [avoindata](https://avoindata.fi)" >> $INDEX
+echo "* *nimistö*: open source place name databas from government cartography data (c.f. [maanmittauslaitos](https://maanmittauslaitos.fi)" >> $INDEX
 echo "* *enwikt*: harvested from [English wiktionary](//en.wiktionary.org)" >> $INDEX
 echo "* *finer*: collected in University of Helsinki (undocumented)" >> $INDEX
 echo "* *finnwordnet*: collected in [FinnWordNet project](//www.kielipankki.fi/corpora/finnwordnet/)" >> $INDEX
@@ -64,7 +65,7 @@ echo "  * *omorfi++*: and included in the smaller *gold* dictionary" >> $INDEX
 echo >> $INDEX
 echo "| Frequency | origin |" >> $INDEX
 echo "|----------:|:-----|" >> $INDEX
-for o in dvvfi enwikt finer finnwordnet fiwikt ftb3 joukahainen kotus omorfi ; do
+for o in nimistö finer enwikt kotus fiwikt joukahainen dvvfi finnwordnet omorfi ftb3 ; do
     grep -F -c $o < "$1/src/lexemes.tsv" |\
     sed -e 's/^ */| /' -e "s/ *\$/ | $o |/" >> $INDEX
 done
@@ -153,9 +154,9 @@ convert_coveragelog "$1/test/coverage-blort.log" "Smaller lexicon coverage" \
     "$1/test/corpora/coverage-fast-alls.freqs" >> $INDEX
 for f in "$1"/test/corpora/*.coveragelog ; do
     convert_coveragelog "$f" "$(basename "$f" |\
-        sed -e 's:test/::' -e 's/.coveragelog//')" \
-        "${f%.coveragelog}.uniq.freqs" >> $INDEX
-done
+        sed -e 's:test/corpora/::' -e 's/.coveragelog//')" \
+        ${f/.coveragelog/.uniq.freqs} >> ${INDEX}
+    done
 echo >> $INDEX
 
 # generate list of most common missing words
@@ -165,7 +166,7 @@ echo "These are the most common tokens still left unrecognised by the
 lexicon. Most of them should be foreign languages, codes and rubbish. These
 are used from time to time improve the lexical coverage." >> $INDEX
 echo >> $INDEX
-for f in "$1"/test/corpora/*coveragelog ; do
+for f in "$1"/test/corpora/*.coveragelog ; do
     corpus=$(basename "$f" | sed -e 's/.coveragelog//')
     echo "### ${corpus}" >> ${INDEX}
     echo >> ${INDEX}
