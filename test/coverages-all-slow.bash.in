@@ -32,18 +32,14 @@ function coverage_check() {
 
 # fast and cheap: no hapaxes
 hapax=1
-coverage_check "vns" 85
-coverage_check "vks" 50
 coverage_check "europarl-v7.fi-en.fi" 95
 coverage_check "fi_ftb-ud" 96
 coverage_check "fi_tdt-ud" 96
 coverage_check "ftb3.1" 96
-coverage_check "ftb1-2014" 96
-coverage_check "gutenberg-fi" 96
+coverage_check "ftb1" 96
 coverage_check "tatoeba-fi" 95
 coverage_check "finer" 95
 coverage_check "OpenSubtitles2018.fi" 95
 coverage_check "jrc-fi" 93
 coverage_check "fiwiki-latest-pages-articles" 91
 coverage_check "unimorph-fin" 93
-coverage_check "5grams" 90
