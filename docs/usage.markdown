@@ -99,7 +99,7 @@ Wird in »omorfi-hfst-models-20191111.tar.xz« gespeichert.
 
 omorfi-hfst-models-20191111.t 100%[===========>]  13,12M  4,86MB/s    in 2,7s
 
-2019-11-16 12:57:11 (4,86 MB/s) - »omorfi-hfst-models-2019111.tar.xz«↲
+2019-11-16 12:57:11 (4,86 MB/s) - »omorfi-hfst-models-0.9.9.tar.xz«↲
 gespeichert [13756036/13756036]
 
 omorfi.accept.hfst
@@ -120,12 +120,12 @@ the binaries in the directory called `src/generated/`.
 This is probably what most users want.
 
 ```console
-$ omorfi-disambiguate-text.sh test/test.text
+omorfi-disambiguate-text.sh test/test.text
 Lines: 10 Tokens: 110 Ratio: 11.0 tokens/line
-CPU time: 0.005696905999999988 Real time: 0.005708508950192481
-Tokens per timeunit: 19269.480167196896 Lines per timeunit: 1751.7709242906271
+CPU time: 0.004719331000000007 Real time: 0.004726123996078968
+Tokens per timeunit: 23274.886585976496 Lines per timeunit: 2115.8987805433176
 "<Juankosken>"
-  "Juankoski" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
+	"Juankoski" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 "<kaupunki>"
 	"kaupunki" UPOS=NOUN Number=Sing Case=Nom <CMP=1> <W=0>
 "<liittyy>"
@@ -142,9 +142,7 @@ Tokens per timeunit: 19269.480167196896 Lines per timeunit: 1751.7709242906271
 	"2017" UPOS=NUM NumType=Card <NumType=Digit> <CMP=1> <W=0>
 	"2017" UPOS=NUM NumType=Card Number=Sing Case=Nom <NumType=Digit> <CMP=1> <W=0>
 "<alussa>"
-	"alku" UPOS=NOUN Number=Sing Case=Ine <CMP=1> <W=0>
 	"alussa" UPOS=ADP AdpType=Post <CMP=1> <W=0>
-	"alussa" UPOS=ADV <CMP=1> <W=0>
 "<.>"
 	"." UPOS=PUNCT <CMP=1> <W=0>
 
@@ -183,9 +181,9 @@ Tokens per timeunit: 19269.480167196896 Lines per timeunit: 1751.7709242906271
 
 # Tokens: 110
 # Unknown: 1 0.9090909090909091 %
-# CPU time: 0.014630929999999986
-# Real time: 0.018005268997512758
-# Tokens per timeunit: 6109.32277741562
+# CPU time: 0.009266657000000011
+# Real time: 0.010430676979012787
+# Tokens per timeunit: 10545.815983116656
 ```
 
 Compare this to the [Analyses without disambiguation](#Analyses without
@@ -202,7 +200,9 @@ omorfi-vislcg3.bash script:
 
 ```console
 $ omorfi-vislcg.bash test/test.text
-...
+Lines: 10 Tokens: 110 Ratio: 11.0 tokens/line
+CPU time: 0.004739562000000003 Real time: 0.004747250990476459
+Tokens per timeunit: 23171.304871108114 Lines per timeunit: 2106.4822610098286
 "<Juankosken>"
 	"Juankoski" UPOS=PROPN Number=Sing Case=Gen <PropnType=Geo> <CMP=1> <W=0>
 	"juan#koski" UPOS=NOUN Number=Sing Case=Gen <CMP=2> <W=10000>
@@ -226,6 +226,7 @@ $ omorfi-vislcg.bash test/test.text
  <CMP=1> <W=0>
 "<alussa>"
 	"alku" UPOS=NOUN Number=Sing Case=Ine <CMP=1> <W=0>
+	"alu" UPOS=NOUN Number=Sing Case=Ine <CMP=1> <W=0>
 	"alunen" UPOS=NOUN Number=Sing Case=Ess Style=Arch <CMP=1> <W=0>
 	"alussa" UPOS=ADP AdpType=Post <CMP=1> <W=0>
 	"alussa" UPOS=ADV <CMP=1> <W=0>
@@ -289,6 +290,12 @@ $ omorfi-vislcg.bash test/test.text
 "<.>"
 	"." UPOS=PUNCT <CMP=1> <W=0>
 ...
+
+# Tokens: 110
+# Unknown: 1 0.9090909090909091 %
+# CPU time: 0.009727566000000007
+# Real time: 0.01052462199004367
+# Tokens per timeunit: 10451.681790002567
 ```
 
 ### omorfi-analyse-text.sh
@@ -301,18 +308,18 @@ analysis strings. This can be created with `omorfi-analyse-text.sh`:
 $ omorfi-analyse-text.sh test/test.text
 Juankosken	[WORD_ID=Juankoski][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
 Juankosken	[WORD_ID=juan][UPOS=NOUN][SEM=CURRENCY][NUM=SG][CASE=NOM]↲
-            [BOUNDARY=COMPOUND][WORD_ID=koski][UPOS=NOUN][NUM=SG][CASE=GEN]
+    [BOUNDARY=COMPOUND][WORD_ID=koski][UPOS=NOUN][NUM=SG][CASE=GEN]
 
 kaupunki	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=NOM]
 
 liittyy	[WORD_ID=liittyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PRESENT]↲
-        [PERS=SG0]
+    [PERS=SG0]
 liittyy	[WORD_ID=liittyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PRESENT]↲
-        [PERS=SG3]
+    [PERS=SG3]
 
 Kuopion	[WORD_ID=Kuopio][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
 Kuopion	[WORD_ID=kuopia][UPOS=VERB][VOICE=ACT][MOOD=OPT][PERS=SG1]↲
-        [STYLE=ARCHAIC]
+    [STYLE=ARCHAIC]
 
 kaupunkiin	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=ILL]
 
@@ -323,35 +330,49 @@ vuoden	[WORD_ID=vuosi][UPOS=NOUN][NUM=SG][CASE=GEN]
 2017	[WORD_ID=2017][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD][NUM=SG][CASE=NOM]
 
 alussa	[WORD_ID=alku][UPOS=NOUN][NUM=SG][CASE=INE]
+alussa	[WORD_ID=alu][UPOS=NOUN][NUM=SG][CASE=INE]
 alussa	[WORD_ID=alunen][UPOS=NOUN][NUM=SG][CASE=ESS][STYLE=ARCHAIC]
 alussa	[WORD_ID=alussa][UPOS=ADP][ADPTYPE=POST]
-alussa	[WORD_ID=alussa_2][UPOS=ADV]
+alussa	[WORD_ID=alussa][UPOS=ADV]
 
 .	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]
 
+[	[WORD_ID=[][UPOS=PUNCT][SUBCAT=BRACKET][POSITION=INITIAL]
+
+]	[WORD_ID=]][UPOS=PUNCT][SUBCAT=BRACKET][POSITION=FINAL]
+
 Kuopion	[WORD_ID=Kuopio][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
 Kuopion	[WORD_ID=kuopia][UPOS=VERB][VOICE=ACT][MOOD=OPT][PERS=SG1]↲
-        [STYLE=ARCHAIC]
+    [STYLE=ARCHAIC]
 
 kaupunginvaltuusto	[WORD_ID=kaupunginvaltuusto][UPOS=NOUN][NUM=SG][CASE=NOM]
 kaupunginvaltuusto	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=GEN]↲
-                    [BOUNDARY=COMPOUND][WORD_ID=valtuusto][UPOS=NOUN]↲
-                    [NUM=SG][CASE=NOM]
+    [BOUNDARY=COMPOUND][WORD_ID=valtuus][UPOS=NOUN][NUM=SG][CASE=NOM]↲
+    [BOUNDARY=COMPOUND][WORD_ID=to][UPOS=NOUN][NUM=SG][CASE=NOM]
+kaupunginvaltuusto	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=GEN]↲
+    [BOUNDARY=COMPOUND][WORD_ID=valtuusto][UPOS=NOUN][NUM=SG][CASE=NOM]
 
 hyväksyi	[WORD_ID=hyväksyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PAST]↲
-            [PERS=SG0]
+    [PERS=SG0]
 hyväksyi	[WORD_ID=hyväksyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PAST]↲
-            [PERS=SG3]
+    [PERS=SG3]
 
 liitoksen	[WORD_ID=liitos][UPOS=NOUN][NUM=SG][CASE=GEN]
 
 yksimielisesti	[WORD_ID=yksi][UPOS=NUM][NUMTYPE=CARD][NUM=SG][CASE=NOM]↲
-                [BOUNDARY=COMPOUND][WORD_ID=-mielinen][UPOS=ADJ]↲
-                [SUBCAT=SUFFIX][CMP=POS][CMP=POS][DRV=STI]
+    [BOUNDARY=COMPOUND][WORD_ID=-mielinen][UPOS=ADJ][SUBCAT=SUFFIX]↲
+    [CMP=POS][CMP=POS][DRV=STI]
 yksimielisesti	[WORD_ID=yksi][UPOS=NUM][NUMTYPE=CARD][NUM=SG][CASE=NOM]↲
-                [BOUNDARY=COMPOUND][WORD_ID=-mielisesti][UPOS=ADV]↲
-                [SUBCAT=SUFFIX][LEX=STI]
+    [BOUNDARY=COMPOUND][WORD_ID=-mielinen][UPOS=ADJ][SUBCAT=SUFFIX]↲
+    [CMP=POS][DRV=S][BOUNDARY=COMPOUND][WORD_ID=es][UPOS=NOUN][NUM=SG]↲
+    [CASE=NOM][BOUNDARY=COMPOUND][WORD_ID=ti][UPOS=NOUN][SEM=TIME]↲
+    [NUM=SG][CASE=NOM]
+yksimielisesti	[WORD_ID=yksi][UPOS=NUM][NUMTYPE=CARD][NUM=SG][CASE=NOM]↲
+    [BOUNDARY=COMPOUND][WORD_ID=-mielisesti][UPOS=ADV][SUBCAT=SUFFIX][LEX=STI]
 yksimielisesti	[WORD_ID=yksimielinen][UPOS=ADJ][CMP=POS][CMP=POS][DRV=STI]
+yksimielisesti	[WORD_ID=yksimielinen][UPOS=ADJ][CMP=POS][DRV=S]↲
+    [BOUNDARY=COMPOUND][WORD_ID=es][UPOS=NOUN][NUM=SG][CASE=NOM]↲
+    [BOUNDARY=COMPOUND][WORD_ID=ti][UPOS=NOUN][SEM=TIME][NUM=SG][CASE=NOM]
 yksimielisesti	[WORD_ID=yksimielisesti][UPOS=ADV][LEX=STI]
 
 maanantaina	[WORD_ID=maanantai][UPOS=NOUN][NUM=PL][CASE=ESS]
@@ -360,24 +381,30 @@ maanantaina	[WORD_ID=maanantaina][UPOS=ADV]
 
 .	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]
 
+[	[WORD_ID=[][UPOS=PUNCT][SUBCAT=BRACKET][POSITION=INITIAL]
+
+]	[WORD_ID=]][UPOS=PUNCT][SUBCAT=BRACKET][POSITION=FINAL]
+
 Juankosken	[WORD_ID=Juankoski][UPOS=PROPN][PROPER=GEO][NUM=SG][CASE=GEN]
 Juankosken	[WORD_ID=juan][UPOS=NOUN][SEM=CURRENCY][NUM=SG][CASE=NOM]↲
-            [BOUNDARY=COMPOUND][WORD_ID=koski][UPOS=NOUN][NUM=SG][CASE=GEN]
+    [BOUNDARY=COMPOUND][WORD_ID=koski][UPOS=NOUN][NUM=SG][CASE=GEN]
 
 kaupunginvaltuusto	[WORD_ID=kaupunginvaltuusto][UPOS=NOUN][NUM=SG][CASE=NOM]
 kaupunginvaltuusto	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=GEN]↲
-                    [BOUNDARY=COMPOUND][WORD_ID=valtuusto][UPOS=NOUN]↲
-                    [NUM=SG][CASE=NOM]
+    [BOUNDARY=COMPOUND][WORD_ID=valtuus][UPOS=NOUN][NUM=SG][CASE=NOM]↲
+    [BOUNDARY=COMPOUND][WORD_ID=to][UPOS=NOUN][NUM=SG][CASE=NOM]
+kaupunginvaltuusto	[WORD_ID=kaupunki][UPOS=NOUN][NUM=SG][CASE=GEN]↲
+    [BOUNDARY=COMPOUND][WORD_ID=valtuusto][UPOS=NOUN][NUM=SG][CASE=NOM]
 
 hyväksyi	[WORD_ID=hyväksyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PAST]↲
-            [PERS=SG0]
+    [PERS=SG0]
 hyväksyi	[WORD_ID=hyväksyä][UPOS=VERB][VOICE=ACT][MOOD=INDV][TENSE=PAST]↲
-            [PERS=SG3]
+    [PERS=SG3]
 
 liitoksen	[WORD_ID=liitos][UPOS=NOUN][NUM=SG][CASE=GEN]
 
+viime	[WORD_ID=viime][UPOS=ADJ][CMP=POS][NUM=SG][CASE=NOM]
 viime	[WORD_ID=viime][UPOS=ADV]
-viime	[WORD_ID=viime_2][UPOS=ADJ][CMP=POS][NUM=SG][CASE=NOM]
 
 viikolla	[WORD_ID=viikko][UPOS=NOUN][NUM=SG][CASE=ADE]
 
@@ -394,8 +421,7 @@ $ omorfi-analyse-tokenised.sh test/wordforms.list
 .	[WORD_ID=.][UPOS=PUNCT][BOUNDARY=SENTENCE]	0,000000
 
 1	[WORD_ID=1][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD]	0,000000
-1	[WORD_ID=1][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD][NUM=SG][CASE=NOM]↲
-	0,000000
+1	[WORD_ID=1][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD][NUM=SG][CASE=NOM]	0,000000
 
 10	[WORD_ID=10][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD]	0,000000
 10	[WORD_ID=10][UPOS=NUM][SUBCAT=DIGIT][NUMTYPE=CARD][NUM=SG][CASE=NOM]↲
@@ -429,50 +455,36 @@ reading from <stdin>
 # new doc id= <stdin>
 # sent_id = 1
 # text = Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa.
-1	Juankosken	Juankoski	PROPN	N	Case=Gen|Number=Sing	_	_	_↲
-	Weight=0.0
-2	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	_	_	_↲
-	Weight=0.0
-3	liittyy	liittyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|↲
-VerbForm=Fin|Voice=Act  _	_	_	Weight=0.0
+1	Juankosken	Juankoski	PROPN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
+2	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	_	_	_	Weight=0.0
+3	liittyy	liittyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	_Weight=0.0
 4	Kuopion	Kuopio	PROPN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
-5	kaupunkiin	kaupunki	NOUN	N	Case=Ill|Number=Sing	_	_	_↲
-	Weight=0.0
+5	kaupunkiin	kaupunki	NOUN	N	Case=Ill|Number=Sing	_	_	_	Weight=0.0
 6	vuoden	vuoden	ADV	Adv	_	_	_	_	Weight=0.0
 7	2017	2017	NUM	Num	NumType=Card	_	_	_	Weight=0.0
 8	alussa	alku	NOUN	N	Case=Ine|Number=Sing	_	_	_	Weight=0.0
 9	.	.	PUNCT	Punct	_	_	_	_	Weight=0.0
 
 # sent_id = 2
-# text = Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti↲
-# maanantaina.
+# text = Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti maanantaina.
 1	Kuopion	Kuopio	PROPN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
-2	kaupunginvaltuusto	kaupunginvaltuusto	NOUN	N	Case=Nom|Number=Sing↲
-	_	_	_	Weight=0.0
-3	hyväksyi	hyväksyä	VERB	V	Mood=Ind|Number=Sing|Person=0|↲
-Tense=Past|VerbForm=Fin|Voice=Act\
-_	_	_	Weight=0.0
-4	liitoksen	liitos	NOUN	N	Case=Gen|Number=Sing	_	_	_↲
-	Weight=0.0
+2	kaupunginvaltuusto	kaupunginvaltuusto	NOUN	N	Case=Nom|Number=Sing	_	_Weight=0.0
+3	hyväksyi	hyväksyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	_	_	_	Weight=0.0
+4	liitoksen	liitos	NOUN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
 5	yksimielisesti	yksimielisesti	ADV	Adv	_	_	_	_	Weight=0.0
-6	maanantaina	maanantai	NOUN	N	Case=Ess|Number=Plur	_	_	_↲
-	Weight=0.0
+6	maanantaina	maanantai	NOUN	N	Case=Ess|Number=Plur	_	_	_	Weight=0.0
 7	.	.	PUNCT	Punct	_	_	_	_	Weight=0.0
 
 # sent_id = 3
 # text = Juankosken kaupunginvaltuusto hyväksyi liitoksen viime viikolla.
-1	Juankosken	Juankoski	PROPN	N	Case=Gen|Number=Sing	_	_	_↲
-	Weight=0.0
-2	kaupunginvaltuusto	kaupunginvaltuusto	NOUN	N	Case=Nom|Number=Sing↲
-	_	_	_	Weight=0.0
-3	hyväksyi	hyväksyä	VERB	V	Mood=Ind|Number=Sing|Person=0|↲
-Tense=Past|VerbForm=Fin|Voice=Act   _	_	_	Weight=0.0
-4	liitoksen	liitos	NOUN	N	Case=Gen|Number=Sing	_	_	_↲
-	Weight=0.0
-5	viime	viime	ADV	Adv	_	_	_	_	Weight=0.0
-6	viikolla	viikko	NOUN	N	Case=Ade|Number=Sing	_	_	_↲
-	Weight=0.0
+1	Juankosken	Juankoski	PROPN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
+2	kaupunginvaltuusto	kaupunginvaltuusto	NOUN	N	Case=Nom|Number=Sing	_	_Weight=0.0
+3	hyväksyi	hyväksyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	_	_	_	Weight=0.0
+4	liitoksen	liitos	NOUN	N	Case=Gen|Number=Sing	_	_	_	Weight=0.0
+5	viime	viime	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	_	_	_	Weight=0.0
+6	viikolla	viikko	NOUN	N	Case=Ade|Number=Sing	_	_	_	Weight=0.0
 7	.	.	PUNCT	Punct	_	_	_	_	Weight=0.0
+
 ```
 
 For more options there is a python script `omorfi-conllu.py`.
@@ -497,7 +509,7 @@ reading from <stdin>
 </s>
 <s><loc file="<stdin>" line="2" />
 1	Kuopion	Kuopio	N	N	N Prop Sg Gen Prop	_	_	_	_
-2	kaupunginvaltuusto	kaupunginvaltuusto	N	N	N Sg Nom	_	_	_	_
+2	kaupunginvaltuusto	kaupunginvaltuusto	N	N	N Sg Nom	_	_	__
 3	hyväksyi	hyväksyä	V	V	V Act Prt Sg3	_	_	_	_
 4	liitoksen	liitos	N	N	N Sg Gen	_	_	_	_
 5	yksimielisesti	yksimielisesti	Adv	Adv	Adv Pos Man	_	_	_	_
@@ -506,10 +518,10 @@ reading from <stdin>
 </s>
 <s><loc file="<stdin>" line="3" />
 1	Juankosken	Juankoski	N	N	N Prop Sg Gen Prop	_	_	_	_
-2	kaupunginvaltuusto	kaupunginvaltuusto	N	N	N Sg Nom	_	_	_	_
+2	kaupunginvaltuusto	kaupunginvaltuusto	N	N	N Sg Nom	_	_	__
 3	hyväksyi	hyväksyä	V	V	V Act Prt Sg3	_	_	_	_
 4	liitoksen	liitos	N	N	N Sg Gen	_	_	_	_
-5	viime	viime	Adv	Adv	Adv	_	_	_	_
+5	viime	viime	A	A	A Pos Sg Nom	_	_	_	_
 6	viikolla	viikko	N	N	N Sg Ade	_	_	_	_
 7	.	.	Punct	Punct	Punct	_	_	_	_
 </s>
@@ -542,7 +554,7 @@ intermediate steps or just tokenise, you can invoke
 `omorfi-tokenise.bash` directly:
 
 ```console
-$ omorfi-tokenise.bash -X test/test.text
+$ omorfi-tokenise.bash test/test.text
 Juankosken kaupunki liittyy Kuopion kaupunkiin vuoden 2017 alussa .
 Kuopion kaupunginvaltuusto hyväksyi liitoksen yksimielisesti maanantaina .
 Juankosken kaupunginvaltuusto hyväksyi liitoksen viime viikolla .

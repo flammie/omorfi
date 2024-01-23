@@ -3,7 +3,7 @@
 ![open morphology of finnish](https://flammie.github.io/omorfi/omorfi.png)
 
 Omorfi is a free and open source project containing various tools and data for
-natural language processing of Finnish based on knowledge driven paradigm.
+natural language processing of Finnish based on a knowledge driven paradigm.
 Some of the potential use cases it may be suitable for are:
 
 * morphosyntactic analysis, e.g. generate [unimorph](//unimorph.github.io) or
@@ -90,17 +90,19 @@ Some notes about design and development
 
 ## Contact
 
-If you want to discuss about omorfi in Finnish or English, the IRC channels
-[#omorfi](irc://Freenode/#omorfi) and [#hfst](irc://Freenode/#hfst) on Freenode
-are available for immediate chats ([Freenode webchat
-here](https://webchat.freenode.net/)). The google group discussion list
-omorfi-devel@groups.google.com ([Google groups web interface
+If you want to discuss about omorfi in Finnish or English, there is a [matrix
+chatroom](https://matrix.to/#/#omorfi:matrix.org). The google group discussion
+list omorfi-devel@groups.google.com ([Google groups web interface
 here](https://groups.google.com/forum/#!forum/omorfi-devel)) can also be used,
 it may require subscription but is very low volume. Suggestions, bug reports,
 corrections and new lexical data can be sent using [github's omorfi issue
 tracker](//github.com/flammie/omorfi/issues). Pull requests are accepted.
 
 ## Alternatives of omorfi
+
+For many NLP tasks a neural language model may be more suitable and they are
+relatively easy to use and customise these days. Check 🤗HuggingFace or
+Turku-NLP for examples.
 
 If omorfi doesn’t suit your needs, you may want to try other similar products:
 [suomi-malaga](http://voikko.puimula.org) of voikko fame is another

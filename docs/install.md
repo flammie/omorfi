@@ -2,7 +2,11 @@
 
 The NLP analysers / language models are based on finite-state automata
 technology and require some special tools to be installed before compilation and
-use.
+use:
+
+1. Download
+2. Install dependencies
+3. Install language models and other stuff
 
 ## Downloading
 
@@ -10,8 +14,8 @@ Choose one:
 
 1. [Download a release tarball from
  github](https://github.com/flammie/omorfi/releases)
-    wget https://github.com/flammie/omorfi/releases/download/20200511/omorfi-20200511.tar.xz
-    tar Jxvf omorfi-2020511.tar.xz
+    wget https://github.com/flammie/omorfi/releases/download/v0.9.9/omorfi-0.9.9.tar.xz
+    tar Jxvf omorfi-0.9.9.tar.xz
 1. or [clone
 the bleeding edge version with git](https://github.com/flammie/omorfi/)
     git clone git@github.com:flammie/omorfi
@@ -51,7 +55,7 @@ sudo apt-get install hfst python3-hfst libhfst-dev cg3
 But also check the apertium wiki for updates e.g. if the package names may
 change.
 
-### Option 2a) Installing everything with pip or conda (python only)
+### Option 2a) Installing everything with pip (python only)
 
 Omorfi has preliminary python packaging on pip, it can be used to install
 some of the relevant dependencies and run parts of omorfi without installing
@@ -63,7 +67,10 @@ dependencies not found in pip repositories.
 pip install omorfi
 ```
 
-### Option 2b) Installing with anaconda (python only)
+This installs everything needed to run omorfi, but not the language models
+themselves. They need to be downloaded separately.
+
+### Option 2b) Installing everything with anaconda (python only)
 
 Omorfi has preliminary python pacakging on anaconda, it can be used to install
 some of the relevant dependencies and run parts of omorfi without installing
@@ -72,6 +79,9 @@ or morphological disambiguation, which require non-python dependencies not found
 in anaconda repositories.
 
 ![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
+
+This installs everything needed to run omorfi, but not the language models
+themselves. They need to be downloaded separately.
 
 ### Option 3) Installing dependencies on other systems
 
@@ -82,7 +92,15 @@ Follow the instructions by [HFST](https://hfst.github.io) and [VISL CG
 
 Choose only one of the methods of installing omorfi language models!
 
+### Option 0) Downloading just the models
+
+The binary models are available in [omorfi github
+releases](https://github.com/flammie/omorfi/releases), you can jump right to
+using them with the installed dependencies.
+
 ### Option 1) Using stable omorfi without full compilation
+
+[Unpack a release from github.](https://github.com/flammie/omorfi/releases)
 
 It is possible to download pre-compiled omorfi models and use them without going
 through the compilation process. If you have downloaded and installed all the
@@ -101,7 +119,7 @@ omorfi-download.bash
 
 found in `src/bash` folder will fetch the language models.
 
-Note that if you downloaded pip version, you can only use:
+Note that if you downloaded a python-only version, you can only use:
 
 ```
 omorfi-download.py

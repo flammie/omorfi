@@ -33,9 +33,6 @@ Omorfi source packages can be downloaded from github:
 or the most current version using git. For more information, see
 [Release policy](https://flammie.github.io/omorfi/releases.html)
 
-For quick installation under restricted environments, see Python or Docker
-instructions below.
-
 ## Dependencies
 
 * **hfst-3.15** or greater,
@@ -155,7 +152,7 @@ Update HFST.
 
 In order for python scripts to work you need to install them to same prefix as
 python, or define PYTHONPATH, e.g. `export
-PYTHONPATH=/usr/local/lib/python3.4/site-packages/`
+PYTHONPATH=/usr/local/lib/python3.11/site-packages/`
 
 ### Processing text gets stuck / takes long
 

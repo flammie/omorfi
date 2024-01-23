@@ -3,6 +3,23 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 0.9.10
+
+* new words from wiktionaries and open name databases: 77,000 new lexemes,
+  mostly proper nouns from the two government's open access name databases:
+  * all first names and surnames used in Finland from dvv.fi name registry
+  * all place names from the GML data by maanmittauslaitos
+* minor fixes to tags and formats, disambiguation and words:
+    * apertium format has more subcategories
+    * more words from wiktionaries have better paradigms (mainly consonant-final
+      nouns)
+    * few minor tweaks to prevent odd plurals and singulars for personal
+      pronouns that do not have them in normal ue
+* test results show same compatibility as always, except:
+    * FTB-3.1 is down to 88 % from 90 % and
+    * UD vs. Finnish DTD is down to 92 % from 94 %
+* big thanks to **Patreons** and **Github Sponsors** for continued support
+
 ## Significant changes in 0.9.9
 
 * slight updates to convenience bash scripts
