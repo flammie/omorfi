@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="omorfi",
-    version="0.9.9",
+    version="0.9.10",
     author="Flammie A Pirinen",
     author_email="flammie@iki.fi",
     description="Open morphology for Finnish, python bindings",
