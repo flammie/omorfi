@@ -6,7 +6,7 @@
 HFST utils.
 """
 
-import libhfst
+import hfst
 
 
 def load_hfst(f):
@@ -19,7 +19,7 @@ def load_hfst(f):
         FileNotFoundError if file is not found
     """
     try:
-        his = libhfst.HfstInputStream(f)
+        his = hfst.HfstInputStream(f)
         return his.read()
-    except libhfst.NotTransducerStreamException:
+    except hfst.exceptions.NotTransducerStreamException:
         raise IOError(2, f) from None
