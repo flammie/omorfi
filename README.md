@@ -102,8 +102,8 @@ It is possible to use omorfi with a ready-made docker container, there is a
 Dockerfile in `src/docker/Dockerfile` for that.
 
 ```
-docker build -t omorfi Dockerfile
-docker run -it omorfi bash
+docker build -t "omorfi:Dockerfile" .
+docker run -it "omorfi:Dockerfile" bash
 ```
 
 ## Usage
