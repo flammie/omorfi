@@ -321,7 +321,8 @@ LIST RARER-VERB =
     ("nytkiä" UPOS=VERB) ("siitä" UPOS=VERB) ("siittää" UPOS=VERB)
     ("suomia" UPOS=VERB) ("suoria" UPOS=VERB) ("taata" UPOS=VERB)
     ("vastoa" UPOS=VERB) ("oieta" UPOS=VERB) ("niistää" UPOS=VERB)
-    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ("sietä" UPOS=VERB) ;
+    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ("sietä" UPOS=VERB) 
+    ("datata" UPOS=VERB) ;
 ## some adjectives that shadow probably a commoner noun
 LIST RARER-ADJ =
     ("ehta" UPOS=ADJ) ;
