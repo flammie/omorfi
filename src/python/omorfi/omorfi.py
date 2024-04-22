@@ -154,7 +154,7 @@ class Omorfi:
         Args:
             f: containing single hfst automaton binary.
         """
-        self.generator = Generator(f)
+        self.generator.load_generator(f)
         self.can_generate = True
 
     def load_acceptor(self, f):
