@@ -37,7 +37,7 @@ or the most current version using git. For more information, see
 
 * **hfst-3.15** or greater,
 * **python-3.5** or greater,
-* **libhfst-python**,
+* **hfst-python**,
 * **C++** compiler and **libtool**
 * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config**
   implementation
@@ -95,6 +95,9 @@ pip install omorfi
 ```
 conda install -c flammie omorfi
 ```
+
+**NB: since conda does not have new version of hfst buildable with recent
+pythons or something, only older versions are available on conda.**
 
 ### Docker
 
@@ -174,8 +177,9 @@ participate, read further information in
 * Issues and problems may be filed in [our github issue
   tracker](https://github.com/flammie/omorfi/issues), including support
   questions
-* [IRC channel #omorfi on OFTC](irc://OFTC/#omorfi) is particularly good
-  for live chat for support questions, suggestions and discussions
+* [Matrix channel omorfi](https://matrix.to/#/#omorfi:matrix.org) is
+  particularly good for live chat for support questions, suggestions and
+  discussions
 * [omorfi-devel mailing
   list](https://groups.google.com/forum/#!forum/omorfi-devel) is good for longer
   more involved discussions
