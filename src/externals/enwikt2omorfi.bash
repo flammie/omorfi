@@ -434,7 +434,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([aouAOU].*i	1	\)Noun_ovi	/\1NOUN_RUUHI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Noun_ovi	/\1NOUN_KIVI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Noun_pieni	/\1NOUN_HIIRI	/' \
-        -e 's/\i	1	\)Noun_ovi	/\1NOUN_KIVI	/' \
+        -e 's/\(i	1	\)Noun_ovi	/\1NOUN_KIVI	/' \
         -e 's/\(et	1	\)Noun_ovi	/\1NOUN_RIPSET	/' \
         -e 's/\(i	1	\)Noun_pieni	/\1NOUN_RUUHI	/' \
         -e 's/\(i	1	\)Adjective_pieni	/\1ADJ_SUURI	/' \
