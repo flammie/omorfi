@@ -149,6 +149,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(mpö	1	\)Noun_valo	/\1NOUN_LÄMPÖ	/' \
         -e 's/\(kkö	1	\)Noun_valo	/\1NOUN_YÖKKÖ	/' \
         -e 's/\(ttö	1	\)Noun_valo	/\1NOUN_PÖNTTÖ	/' \
+        -e 's/\(tö	1	\)Noun_valo	/\1NOUN_HÄÄTÖ	/' \
         -e 's/\(ö	1	\)Noun_valo	/\1NOUN_MÖMMÖ	/' \
         -e 's/\(öt	1	\)Noun_valo	/\1NOUN_TYTÖT	/' \
         -e 's/\(ö	1	\)Adjective_valo	/\1ADJ_HÖLÖ	/' \
@@ -186,7 +187,9 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([aouAOU].*nki	1	\)Noun_risti	/\1NOUN_VANKI	/' \
         -e 's/\([aouAOU].*nti	1	\)Noun_risti	/\1NOUN_SOINTI	/' \
         -e 's/\([äöyÄÖY].*nti	1	\)Noun_risti	/\1NOUN_VIENTI	/' \
+        -e 's/\([aouAOU].*tti	1	\)Noun_risti	/\1NOUN_KORTTI	/' \
         -e 's/\([aouAOU].*ti	1	\)Noun_risti	/\1NOUN_TAUTI	/' \
+        -e 's/\([aouAOU].*ppi	1	\)Noun_risti	/\1NOUN_KUPPI	/' \
         -e 's/\([aouAOU].*kki	1	\)Noun_risti	/\1NOUN_LOKKI	/' \
         -e 's/\([äöyÄÖY].*kki	1	\)Noun_risti	/\1NOUN_HÄKKI	/' \
         -e 's/\([aouAOU].*i	1	\)Proper-noun_risti	/\1PROPN_RUUVI	/' \
@@ -345,6 +348,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(kä	1	\)Noun_solakka	/\1NOUN_KÄMMEKKÄ	/' \
         -e 's/\(kä	1	\)Adjective_solakka	/\1ADJ_RÄVÄKKÄ	/' \
         -e 's/\(ka	1	\)Adjective_solakka	/\1ADJ_HAILAKKA	/' \
+        -e 's/\(pa	1	\)Proper-noun_solakka	/\1PROPN_ULAPPA	/' \
         -e 's/\(ka	1	\)Proper-noun_solakka	/\1PROPN_LUSIKKA	/' \
         -e 's/\(kä	1	\)Proper-noun_solakka	/\1PROPN_HÖLKKÄ	/' \
         -e 's/\(ta	1	\)Proper-noun_solakka	/\1PROPN_MITTA	/' \
@@ -353,6 +357,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Noun_korkea	/\1NOUN_SOKEA	/' \
         -e 's/\(at	1	\)Noun_korkea	/\1NOUN_HOPEAT	/' \
         -e 's/\(ä	1	\)Noun_korkea	/\1NOUN_LIPEÄ	/' \
+        -e 's/\(ät	1	\)Proper-noun_korkea	/\1PROPN_RÄMEÄT	/' \
         -e 's/\(ä	1	\)Proper-noun_korkea	/\1PROPN_LIPEÄ	/' \
         -e 's/\(a	1	\)Adjective_korkea	/\1ADJ_KORKEA	/' \
         -e 's/\(ä	1	\)Adjective_korkea	/\1ADJ_JÄREÄ	/' \
@@ -365,6 +370,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Pronomini_16	/\1PRON_KUMPI	/' \
         -e 's/\(ikin	1	\)Pronomini_16	/\1PRON_KUMPIKIN	/' \
         -e 's/\([aA]	1	\)Noun_maa	/\1NOUN_MAA	/' \
+        -e 's/\(aat	1	\)Noun_maa	/\1NOUN_ITÄMAAT	/' \
         -e 's/\([aA]	1	\)Adjective_maa	/\1NOUN_PEEAA	/' \
         -e 's/\(i	1	\)Noun_maa	/\1NOUN_HAI	/' \
         -e 's/\(e	1	\)Noun_maa	/\1NOUN_TEE	/' \
@@ -392,6 +398,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(uu	1	\)Noun_vapaa	/\1NOUN_LEIKKUU	/' \
         -e 's/\(oo	1	\)Noun_vapaa	/\1NOUN_TIENOO	/' \
         -e 's/\(oot	1	\)Noun_vapaa	/\1NOUN_TALKOOT	/' \
+        -e 's/\(aat	1	\)Noun_vapaa	/\1NOUN_HARMAAT	/' \
         -e 's/\(yyt	1	\)Noun_vapaa	/\1NOUN_RYNTTYYT	/' \
         -e 's/\(e	1	\)Noun_vapaa	/\1NOUN_PATEE	/' \
         -e 's/\(a	1	\)Noun_vapaa	/\1NOUN_VAINAA	/' \
@@ -401,6 +408,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(eet	1	\)Noun_filee	/\1NOUN_RÄMEET	/' \
         -e 's/\(a	1	\)Noun_filee	/\1NOUN_VAINAA	/' \
         -e 's/\(oi	1	\)Proper-noun_filee	/\1PROPN_HAI	/' \
+        -e 's/\(ei	1	\)Proper-noun_filee	/\1PROPN_PII	/' \
         -e 's/\(a	1	\)Proper-noun_filee	/\1PROPN_NUGAA	/' \
         -e 's/\(eet	1	\)Proper-noun_filee	/\1PROPN_RÄMEET	/' \
         -e 's/\(kee	1	\)Proper-noun_filee	/\1PROPN_TOKEE	/' \
@@ -410,7 +418,9 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(y	1	\)Noun_filee	/\1NOUN_FONDYY	/' \
         -e 's/\(ö	1	\)Noun_filee	/\1NOUN_MILJÖÖ	/' \
         -e 's/\(ö	1	\)Proper-noun_filee	/\1PROPN_MILJÖÖ	/' \
+        -e 's/\(s	1	\)Proper-noun_parfait	/\1NOUN_PARFAIT	/' \
         -e 's/\(t	1	\)Noun_parfait	/\1NOUN_PARFAIT	/' \
+        -e 's/\(s	1	\)Noun_parfait	/\1NOUN_PARFAIT	/' \
         -e 's/\([xw]	1	\)Noun_parfait	/\1NOUN_SHOW	/' \
         -e 's/\(ee	1	\)Proper-noun_vapaa	/\1PROPN_TOKEE	/' \
         -e 's/\(a	1	\)Proper-noun_vapaa	/\1PROPN_VAINAA	/' \
@@ -443,8 +453,10 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(meri	1	\)Noun_uni	/\1NOUN_MERI	/' \
         -e 's/\(meri	1	\)Proper-noun_uni	/\1PROPN_MERI	/' \
         -e 's/\([äöyÄÖY].*i	1	\)Noun_tiili	/\1NOUN_SYLI	/' \
+        -e 's/\([äöyÄÖY].*i	1	\)Proper-oun_tiili	/\1PROPN_SYLI	/' \
         -e 's/\(i	1	\)Proper-noun_uni	/\1PROPN_TULI	/' \
         -e 's/\(i	1	\)Noun_tiili	/\1NOUN_TULI	/' \
+        -e 's/\(i	1	\)Proper-noun_tiili	/\1PROPN_TULI	/' \
         -e 's/\(i	1	\)Noun_uni	/\1NOUN_HIIRI	/' \
         -e 's/\(et	1	\)Noun_uni	/\1NOUN_ONNET	/' \
         -e 's/\(i	1	\)Noun_nuori	/\1NOUN_HIIRI	/' \
@@ -462,10 +474,12 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Noun_kaksi	/\1NOUN_HAAKSI	/' \
         -e 's/\(i	1	\)Noun_31	/\1NOUN_HAAKSI	/' \
         -e 's/\(i	1	\)Noun_kynsi	/\1NOUN_LÄNSI	/' \
+        -e 's/\(i	1	\)Proper-noun_kynsi	/\1NOUN_LÄNSI	/' \
         -e 's/\(arsi	1	\)Proper-noun_kynsi	/\1PROPN_VARSI	/' \
         -e 's/\(rret	1	\)Proper-noun_kynsi	/\1PROPN_VIIRRET	/' \
         -e 's/\(nnet	1	\)Noun_kynsi	/\1NOUN_KANNET	/' \
         -e 's/\(i	1	\)Noun_lapsi	/\1NOUN_LAPSI	/' \
+        -e 's/\(et	1	\)Noun_lapsi	/\1NOUN_RAPPUSET	/' \
         -e 's/\([rnl]	1	\)Adjective_sisar	/\1ADJ_TYVEN	/' \
         -e 's/\([rnl]	1	\)Noun_sisar	/\1NOUN_JOUTSEN	/' \
         -e 's/\([rnl]et	1	\)Noun_sisar	/\1NOUN_HÖYHENET	/' \
@@ -509,6 +523,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(nen	1	\)Proper-noun_nainen	/\1PROPN_AAKKOSTAMINEN	/' \
         -e 's/\([aouAOU].*nen	1	\)Adjective_nainen	/\1ADJ_AAKKOSELLINEN	/' \
         -e 's/\([äöyÄÖY].*nen	1	\)Adjective_nainen	/\1ADJ_KYLMÄJÄRKINEN	/' \
+        -e 's/\(nen	1	\)Adjective_nainen	/\1ADJ_KYLMÄJÄRKINEN	/' \
         -e 's/\(nen	1	\)Pronoun_nainen	/\1ADJ_KYLMÄJÄRKINEN	/' \
         -e 's/\(äs	1	\)Adjective_kahdeksas	/\1NUM_NELJÄS	/' \
         -e 's/\(as	1	\)Numeral_kahdeksas	/\1NUM_KOLMAS	/' \
@@ -546,6 +561,8 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(äes	1	\)Noun_vieras	/\1NOUN_IES	/' \
         -e 's/\(is	1	\)Adjective_vieras	/\1ADJ_VALMIS	/' \
         -e 's/\(äs	1	\)Adjective_vieras	/\1ADJ_TYÖLÄS	/' \
+        -e 's/\(us	1	\)Adjective_vieras	/\1ADJ_KIIRUS	/' \
+        -e 's/\(es	1	\)Adjective_vieras	/\1ADJ_SYMPPIS	/' \
         -e 's/\(ngäs	1	\)Proper-noun_vieras	/\1PROPN_KÖNGÄS	/' \
         -e 's/\(ngas	1	\)Proper-noun_vieras	/\1PROPN_KANGAS	/' \
         -e 's/\(mmas	1	\)Noun_vieras	/\1NOUN_HAMMAS	/' \
@@ -600,17 +617,22 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(de	1	\)Proper-noun_hame	/\1PROPN_LUODE	/' \
         -e 's/\(nne	1	\)Proper-noun_hame	/\1PROPN_RAKENNE	/' \
         -e 's/\(rre	1	\)Proper-noun_hame	/\1PROPN_KIERRE	/' \
+        -e 's/\(rret	1	\)Proper-noun_hame	/\1PROPN_VIIRRET	/' \
+        -e 's/\(llet	1	\)Proper-noun_hame	/\1PROPN_VUOLLET	/' \
         -e 's/\(i	1	\)Noun_hame	/\1NOUN_ORI	/' \
         -e 's/\(keet	1	\)Noun_hame	/\1NOUN_ALKEET	/' \
         -e 's/\(ylje	1	\)Noun_hame	/\1NOUN_HYLJE	/' \
         -e 's/\([aouAOU].*de	1	\)Noun_hame	/\1NOUN_LUODE	/' \
+        -e 's/\([aouAOU].*rre	1	\)Noun_hame	/\1NOUN_AARRE	/' \
         -e 's/\([aouAOU].*nne	1	\)Noun_hame	/\1NOUN_RAKENNE	/' \
         -e 's/\([aouAOU].*te	1	\)Noun_hame	/\1NOUN_OSOITE	/' \
         -e 's/\([äöyÄÖY].*de	1	\)Noun_hame	/\1NOUN_KIDE	/' \
         -e 's/\([äöyÄÖY].*nne	1	\)Noun_hame	/\1NOUN_KIINNE	/' \
+        -e 's/\([äöyÄÖY].*rre	1	\)Noun_hame	/\1NOUN_KIERRE	/' \
         -e 's/\([aouAOU].*e	1	\)Noun_hame	/\1NOUN_ASTE	/' \
         -e 's/\([äöyÄÖY].*e	1	\)Noun_hame	/\1NOUN_PISTE	/' \
         -e 's/\(e	1	\)Noun_hame	/\1NOUN_PISTE	/' \
+        -e 's/\(u	1	\)Noun_hame	/\1NOUN_KIIRU	/' \
         -e 's/\(e	1	\)Adjective_hame	/\1ADJ_TERVE	/' \
         -e 's/\(e	1	\)Proper-noun_hame	/\1PROPN_ASTE	/' \
         -e 's/\(säen	1	\)Noun_askel	/\1NOUN_SÄEN	/' \
@@ -640,7 +662,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(ua	1	\)Verb_sanoa	/\1VERB_KAUNISTUA	/' \
         -e 's/\(yä	1	\)Verb_sanoa	/\1VERB_ÄLLISTYÄ	/' \
         -e 's/\(ata	1	\)Noun_salata	/\1VERB_ARVATA	/' \
-        -e 's/\(aa	1	\)Verb_salata	/\1VERB_ARVATA	/' \
+        -e 's/a\(a	1	\)Verb_salata	/at\1VERB_ARVATA	/' \
         -e 's/\(ata	1	\)Verb_salata	/\1VERB_ARVATA	/' \
         -e 's/\(ätä	1	\)Verb_salata	/\1VERB_YNNÄTÄ	/' \
         -e 's/\(ltaa	1	\)Verb_huutaa	/\1VERB_SIVALTAA	/' \
@@ -680,6 +702,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Adjective_selvit	/\1VERB_KARHUTA	/' \
         -e 's/\(ä	1	\)Verb_vanheta	/\1VERB_LÄMMETÄ	/' \
         -e 's/\(a	1	\)Verb_vanheta	/\1VERB_POIKETA	/' \
+        -e 's/\(a	1	\)Verb_tuntea	/\1VERB_TUNTEA	/' \
         -e 's/\(rkeä	1	\)Verb_laskea	/\1VERB_SÄRKEÄ	/' \
         -e 's/\(keä	1	\)Verb_laskea	/\1VERB_KYTKEÄ	/' \
         -e 's/\(peä	1	\)Verb_laskea	/\1VERB_RYPEÄ	/' \
@@ -709,6 +732,7 @@ cat "$f" | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(	1	\)Adjective_k	/\1ADJ_XXX	/' \
         -e 's/\(	1	\)Verb_l	/\1VERB_XXX	/' \
         -e 's/\(	1	\)Verb_k	/\1VERB_XXX	/' \
+        -e 's/\(	1	\)Verb_irreg	/\1VERB_XXX	/' \
         -e 's/\(	1	\)Noun_k	/\1NOUN_XXX	/' \
         -e 's/\(	1	\)Proper-noun_k	/\1PROPN_XXX	/' \
         -e 's/\([[:upper:]]	1	\)Proper-noun_[a-z]*	/\1PROPN_ACRO_XXX	/' \

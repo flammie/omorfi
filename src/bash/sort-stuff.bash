@@ -6,3 +6,4 @@ for f in lexemes.tsv attributes/*.tsv ; do
 done
 
 python/tsvfixstuff.py -i lexemes.tsv -o lexemes.tsv.sort --sort-field origin
+cp lexemes.tsv.sort lexemes.tsv
