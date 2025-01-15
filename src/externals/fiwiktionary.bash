@@ -31,6 +31,6 @@ printf "lemma\thomonym\tnew_para\torigin\n" | cat - "$FWPREFIX.tsv.noheaders" \
 python ../python/tsvsort.py -i "$FWPREFIX.tsv.unsort" -o "$FWPREFIX.tsv"
 python ../python/tsvmerge.py -i ../lexemes.tsv -m "$FWPREFIX.tsv" \
     -o ../lexemes+fiwikt.tsv
-diff ../lexemes.tsv ../lexemes+fiwikt.tsv
+diff -u ../lexemes.tsv ../lexemes+fiwikt.tsv
 echo if nothing broke just cp ../lexemes+fiwikt.tsv ../lexemes.tsv and
 echo "do cd .. and make check"
