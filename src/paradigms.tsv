@@ -70,6 +70,7 @@ ADJ_MÄRKÄ	ADJ	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False	kä	kä
 ADJ_MÄTÄ	ADJ	ADJECTIVE	10	F	False	weaken	front	ä	None	False	False	tä	tä
 ADJ_NELJÄS	ADJ	ADJECTIVE	45	None	False	strengthen	front	None	None	False	False	s	s
 ADJ_OHUT	ADJ	ADJECTIVE	43	None	False	strengthen	back	None	None	False	False	ut	t
+ADJ_LEVEE	ADJ	ADJECTIVE	15	None	False	weaken	front	None	None	False	False	ee	e
 ADJ_OIKEE	ADJ	ADJECTIVE	15	None	False	weaken	back	None	None	False	False	ee	e
 ADJ_OPAAKKI	ADJ	ADJECTIVE	5	A	False	weaken	back	None	None	False	False	kki	ki
 ADJ_PAHIN	ADJ	ADJECTIVE	36	None	False	strengthen	back	None	None	False	False	in	n
@@ -432,6 +433,7 @@ NOUN_KANAALI	NOUN	NOUN	6	None	False	weaken	back	None	None	False	False	i	i
 NOUN_KANGAS	NOUN	NOUN	41	G	False	strengthen	back	None	None	False	False	ngas	gas
 NOUN_KANNEL	NOUN	NOUN	49	J	False	strengthen	back	None	None	False	False	nnel	nel
 NOUN_KANNET	NOUN	NOUN	28	None	obligatory	weaken	back	None	None	False	False	nnet	net
+NOUN_HAPET	NOUN	NOUN	7	B	obligatory	weaken	back	None	None	False	False	pet	et
 NOUN_KARBOKSYLAATTI	NOUN	NOUN	5	C	False	weaken	both	None	None	False	False	tti	ti
 NOUN_KASTANJETIT	NOUN	NOUN	5	C	obligatory	weaken	back	None	None	False	False	tit	it
 NOUN_KASTIKE	NOUN	NOUN	48	A	False	strengthen	back	None	None	False	False	ke	e
