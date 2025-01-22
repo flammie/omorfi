@@ -33,14 +33,11 @@ Omorfi source packages can be downloaded from github:
 or the most current version using git. For more information, see
 [Release policy](https://flammie.github.io/omorfi/releases.html)
 
-For quick installation under restricted environments, see Python or Docker
-instructions below.
-
 ## Dependencies
 
 * **hfst-3.15** or greater,
 * **python-3.5** or greater,
-* **libhfst-python**,
+* **hfst-python**,
 * **C++** compiler and **libtool**
 * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config**
   implementation
@@ -93,11 +90,14 @@ syntactic analysis and disambiguation using VISL CG 3.
 pip install omorfi
 ```
 
-![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)
+[![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)](https://anaconda.org/flammie/omorfi/)
 
 ```
 conda install -c flammie omorfi
 ```
+
+**NB: since conda does not have new version of hfst buildable with recent
+pythons or something, only older versions are available on conda.**
 
 ### Docker
 
@@ -105,8 +105,8 @@ It is possible to use omorfi with a ready-made docker container, there is a
 Dockerfile in `src/docker/Dockerfile` for that.
 
 ```
-docker build -t omorfi Dockerfile
-docker run -it omorfi bash
+docker build -t "omorfi:Dockerfile" .
+docker run -it "omorfi:Dockerfile" bash
 ```
 
 ## Usage
@@ -155,7 +155,7 @@ Update HFST.
 
 In order for python scripts to work you need to install them to same prefix as
 python, or define PYTHONPATH, e.g. `export
-PYTHONPATH=/usr/local/lib/python3.4/site-packages/`
+PYTHONPATH=/usr/local/lib/python3.11/site-packages/`
 
 ### Processing text gets stuck / takes long
 
@@ -177,8 +177,9 @@ participate, read further information in
 * Issues and problems may be filed in [our github issue
   tracker](https://github.com/flammie/omorfi/issues), including support
   questions
-* [IRC channel #omorfi on OFTC](irc://OFTC/#omorfi) is particularly good
-  for live chat for support questions, suggestions and discussions
+* [Matrix channel omorfi](https://matrix.to/#/#omorfi:matrix.org) is
+  particularly good for live chat for support questions, suggestions and
+  discussions
 * [omorfi-devel mailing
   list](https://groups.google.com/forum/#!forum/omorfi-devel) is good for longer
   more involved discussions

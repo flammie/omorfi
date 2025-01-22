@@ -3,6 +3,12 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 0.9.11
+
+* New words from open sources: 7000 new lexemes
+* minor fixes
+* huge thanks to **Patreons** and **Github Sponsors** for their support
+
 ## Significant changes in 0.9.10
 
 * new words from wiktionaries and open name databases: 77,000 new lexemes,
