@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[options]
+prerelease-mode = "allow"
+
+[[package]]
+name = "hfst"
+version = "3.12.2.4b0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0e/33/4a584b5b79723469089be4b6322606e9e923febac54f8a7e3ede0f613a8a/hfst-3.12.2.4b0.tar.gz", hash = "sha256:05cafc8d7383e261ca4f02c8e50a32ce9bdd0c0ad8021a6c1ad99da1b7b31e97", size = 1524016 }
+
+[[package]]
+name = "omorfi"
+version = "0.9.11"
+source = { virtual = "." }
+dependencies = [
+    { name = "hfst" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "hfst", specifier = ">=3.12.2.4b0" }]
