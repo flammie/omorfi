@@ -45,6 +45,7 @@ omorfi.egg-info/
 omorfi.pc
 stamp-h1
 # automade stuff
+/docs/Doxyfile
 /docs/generate-statistics.bash
 /src/bash/omorfi.bash
 /src/bash/validate-database.bash.log
@@ -72,7 +73,28 @@ stamp-h1
 /src/externals/joukahainen.xml.gz
 /src/externals/sukunimet
 /src/externals/sukunimitilasto-*
+/src/externals/LiberationSansNLSF/
+/src/externals/Maanmittauslaitos_Tiedostopalvelu_REST-20231219T172033410205562.zip
+/src/externals/Nimiston_GML-tiedostotuotteet_OAPIF-skeema.pdf
+/src/externals/enwiktionary-latest-pages-articles.tsv.noheaders
+/src/externals/enwiktionary-latest-pages-articles.xml.bz2
+/src/externals/fiwiktionary-latest-pages-articles.xml.bz2
+/src/externals/nimisto_oapif/
+/src/externals/paikat.tsv
+/src/externals/paikat.tsv.headers
+/src/externals/paikat.tsv.noheaders
+/src/externals/paikat.tsv.unsort
+/src/externals/places.list
+/src/externals/places.xml
+/src/externals/places_????_??.zip/
+/src/externals/x??
+/src/lexemes+enwikt.tsv
+/src/lexemes+fiwikt.tsv
+/src/lexemes+joukahainen.tsv
+/src/lexemes+paikat.tsv
+/src/lexemes.tsv.sort
 # built stuffs
+/src/attributes/*.tsv.sort
 /src/generated/
 /src/index.xml
 /src/scripts/omorfi-analyse.sh
