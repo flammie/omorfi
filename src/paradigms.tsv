@@ -1571,6 +1571,7 @@ PRON_KUMPIKIN	PRON	PRONOUN	101	None	False	weaken	back	None	None	False	False	mpik
 PRON_KUMPI	PRON	PRONOUN	16	H	False	weaken	back	None	None	False	False	mpi	pi
 PRON_MA	PRON	PRONOUN	99	None	False	False	back	None	None	False	False	a	
 PRON_ME	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	e	
+PRON_MI	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	.	
 PRON_MIE	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	ie	e
 PRON_MIKIN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	mikin	kin
 PRON_MIKÄKIN	PRON	PRONOUN	101	None	False	False	front	None	None	False	False	mikäkin	käkin
