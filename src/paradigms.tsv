@@ -1529,7 +1529,7 @@ NUM_KAHDEKSAN	NUM	NUMERAL	10	None	False	weaken	back	None	None	False	False	kahdek
 NUM_KAKSI	NUM	NUMERAL	31	None	False	weaken	back	None	None	False	False	kaksi	ksi
 NUM_KOLMAS	NUM	NUMERAL	45	None	False	strengthen	back	None	None	False	False	s	s
 NUM_KOLMASOSA	NUM	NUMERAL	10	None	False	False	back	a	None	False	False	osa	a
-NUM_KOLME	NUM	NUMERAL	1008	None	False	weaken	back	None	None	False	False	kolme	e
+NUM_KOLME	NUM	NUMERAL	1008	None	False	weaken	back	None	None	False	False	kolo?me	e
 NUM_KUUSI	NUM	NUMERAL	27	None	False	weaken	back	None	None	False	False	kuusi	si
 NUM_KUUTISEN	NUM	NUMERAL	99	None	False	False	back	None	None	False	False	isen	
 NUM_KYMMENEN	NUM	NUMERAL	32	None	False	strengthen	front	None	None	False	False	kymmenen	en

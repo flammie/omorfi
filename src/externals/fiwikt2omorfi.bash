@@ -257,7 +257,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(i	1	\)Erisnimi_5C	/\1PROPN_KORTTI	/' \
         -e 's/\(i	1	\)Adjektiivi_5C	/\1ADJ_HURTTI	/' \
         -e 's/\(i	1	\)Substantiivi_5C	/\1NOUN_KORTTI	/' \
-        -e 's/\(it	1	\)Substantiivi_5C	/\1NOUN_KASTENJETIT	/' \
+        -e 's/\(it	1	\)Substantiivi_5C	/\1NOUN_KASTANJETIT	/' \
         -e 's/\(i	1	\)Substantiivi_5D	/\1NOUN_LAKI	/' \
         -e 's/\(i	1	\)Substantiivi_5E	/\1NOUN_KUPPI	/' \
         -e 's/\(i	1	\)Adjektiivi_5F	/\1NOUN_TUHTI	/' \
@@ -522,7 +522,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([aou].*i	1	\)Erisnimi_25	/\1PROPN_TAIMI	/' \
         -e 's/\(i	1	\)Erisnimi_25	/\1PROPN_LIEMI	/' \
         -e 's/\(i	1	\)Adjektiivi_26	/\1ADJ_SUURI	/' \
-        -e 's/\(et	1	\)Substantiivi_26	/\1NOUN_KIELET	/' \
+        -e 's/\(et	1	\)Substantiivi_26	/\1NOUN_RIPSET	/' \
         -e 's/\(i	1	\)Substantiivi_26	/\1NOUN_RUUHI	/' \
         -e 's/\(i	1	\)Erisnimi_26	/\1PROPN_RUUHI	/' \
         -e 's/\(et	1	\)Erisnimi_26	/\1PROPN_SAARET	/' \
@@ -550,7 +550,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\([äöyÄÖY].*n	1	\)Substantiivi_33	/\1NOUN_ELIN	/' \
         -e 's/\(n	1	\)Adjektiivi_33	/\1NOUN_AVOIN	/' \
         -e 's/\(n	1	\)Substantiivi_33	/\1NOUN_PUHELIN	/' \
-        -e 's/\(met	1	\)Substantiivi_33	/\1NOUN_ATERIMET	/' \
+        -e 's/\([äöyÄÖY].*met	1	\)Substantiivi_33	/\1NOUN_KERITSIMET	/' \
+        -e 's/\([aouAOU].*met	1	\)Substantiivi_33	/\1NOUN_ATERIMET	/' \
+        -e 's/\(met	1	\)Substantiivi_33	/\1NOUN_KERITSIMET	/' \
         -e 's/\([äöyÄÖY].*n	1	\)Erisnimi_33	/\1PROPN_ELIN	/' \
         -e 's/\(n	1	\)Erisnimi_33	/\1PROPN_PUHELIN	/' \
         -e 's/\(n	1	\)Erisnimi_33A	/\1PROPN_HÄRKIN	/' \
@@ -619,6 +621,7 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(aat	1	\)Substantiivi_41	/\1NOUN_VALJAAT	/' \
         -e 's/\(as	1	\)Erisnimi_41	/\1PROPN_PATSAS	/' \
         -e 's/\(es	1	\)Erisnimi_41	/\1PROPN_ARISTOTELES	/' \
+        -e 's/\(is	1	\)Erisnimi_41	/\1PROPN_RUUMIS	/' \
         -e 's/\(äs	1	\)Erisnimi_41	/\1PROPN_ÄYRÄS	/' \
         -e 's/\(as	1	\)Adjektiivi_41A	/\1ADJ_VOIMAKAS	/' \
         -e 's/\(äs	1	\)Adjektiivi_41A	/\1ADJ_TYYLIKÄS	/' \
@@ -930,9 +933,9 @@ cat $@ | $SED -ne '/<page>/,/<\/page>/p' |\
         -e 's/\(a	1	\)Verbi_78	/\1VERB_RAIKAA	/' \
         -e 's/\(ä	1	\)Verbi_78	/\1VERB_ÄHKÄÄ	/' \
         -e 's/\(a	1	\)Verbi_78A	/\1VERB_RAIKAA	/' |\
-    $SED -e 's/\(	1	\)Substantiivi_[^[:space:]]*	/\1NOUN_XXXFAIL/' \
-        -e 's/\(	1	\)Adjektiivi_[^[:space:]]*	/\1ADJ_XXXFAIL/' \
-        -e 's/\(	1	\)Verbi_[^[:space:]]*	/\1VERB_XXXFAIL/' |\
+    $SED -e 's/\(	1	\)Substantiivi_[^[:space:]]*	/\1NOUN_XXXFAIL	/' \
+        -e 's/\(	1	\)Adjektiivi_[^[:space:]]*	/\1ADJ_XXXFAIL	/' \
+        -e 's/\(	1	\)Verbi_[^[:space:]]*	/\1VERB_XXXFAIL	/' |\
     $SED -e 's/1	NOUN/NOUN	NOUN/' \
         -e 's/1	PROPN/PROPN	PROPN/' \
         -e 's/1	VERB/VERB	VERB/' \
