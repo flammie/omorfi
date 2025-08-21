@@ -146,6 +146,7 @@ ADP_LÄHELLÄ	optional possessive including -än allomorph
 ADP_MUKAAN	optional possessive, -n assimilation, back harmony
 ADP_MUKAISESTI	adposition without possessives, clitic, back harmony
 ADP_NÄHDEN	de:te variation before optional possessive, front harmony
+ADP_KUULLEN	le:te variation before optional possessive, front harmony
 ADP_NÄKYVIIN	optional possessive, -n assimilation, front harmony
 ADP_TYKÖ	optional possessive, front harmony
 ADP_VALTAAN	optional possessive, -n assimilation, back harmony
@@ -2411,4 +2412,5 @@ X_FORGN_DE	new particles of German origin, such as: der, zu; used often in prope
 X_FORGN_EN	new particles of English origin, such as: the, and, of; used often in proper nouns like particles
 X_FORGN_SV	new particles of Swedish origin; used often in proper nouns like particles
 X_IGNORE	words that need to be in lexicon for legacy reasons (stability, etc.) but shall not appear in real applications
+X_PREFIX_GOESWITH	some prefixes are mistakenly spelled separately, such as ‘tipo tiessään’.
 X_SUFFIX_GOESWITH	some suffixes that appear mistokenised, such as ‘XXX:llä’ tokenised as XXX : llä
