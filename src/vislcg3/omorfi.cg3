@@ -103,6 +103,7 @@ STRICT-TAGS +=
     Person[psor]=2
     Person[psor]=3
     Polarity=Neg
+    PronType=Int
     PronType=Dem
     PronType=Prs
     PronType=Rel
@@ -205,13 +206,14 @@ LIST PRS-3SG-SUBJECT = (UPOS=PRON Person=3 Number=Sing Case=Nom) ;
 LIST PRS-1PL-SUBJECT = (UPOS=PRON Person=1 Number=Plur Case=Nom) ;
 LIST PRS-2PL-SUBJECT = (UPOS=PRON Person=2 Number=Plur Case=Nom) ;
 LIST PRS-3PL-SUBJECT = (UPOS=PRON Person=3 Number=Plur Case=Nom) ;
-# }}} 
+# }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
 LIST ENDSENT = "<.>" "<!>" "<?>" ;
 LIST CLB = "<,>" ;
+LIST QMARK = "<?>" ;
 # }}}
-# {{{ word groups 
+# {{{ word groups
 
 ## short words that many find problems with. This is a strong filter, for more
 ## careful filters use other groups like RARER-NOUN
@@ -225,7 +227,7 @@ LIST BADEVIL_WORDS =
     ("aa" UPOS=NOUN) ("ee" UPOS=NOUN) ("ii" UPOS=NOUN) ("oo" UPOS=NOUN)
     ("uu" UPOS=NOUN) ("yy" UPOS=NOUN) ("ää" UPOS=NOUN) ("öö" UPOS=NOUN)
     ("tui" UPOS=NOUN) ("kapi" UPOS=NOUN) ("nim" UPOS=NOUN) ("ma" UPOS=NOUN)
-    ("su" UPOS=NOUN) ("määri" UPOS=NOUN) ("muu" UPOS=INTJ) ("hän" UPOS=NOUN) 
+    ("su" UPOS=NOUN) ("määri" UPOS=NOUN) ("muu" UPOS=INTJ) ("hän" UPOS=NOUN)
     ("tari" UPOS=NOUN) ("kom" UPOS=NOUN) ("para" UPOS=NOUN) ;
 
 ## propns that overlap commoner words
@@ -271,33 +273,33 @@ LIST RARER-PROPN =
     ("Polve" UPOS=PROPN) ("Polve" UPOS=PROPN) ("On" UPOS=PROPN)
     ("Pi" UPOS=PROPN) ("Noi" UPOS=PROPN) ("Eri" UPOS=PROPN) ("Vuohi" UPOS=PROPN)
     ("Ämpäri" UPOS=PROPN) ("Yrittä" UPOS=PROPN) ("Yhtiö" UPOS=PROPN)
-    ("Ylen" UPOS=PROPN) ("Viisi" UPOS=PROPN) ("Viesti" UPOS=PROPN) 
+    ("Ylen" UPOS=PROPN) ("Viisi" UPOS=PROPN) ("Viesti" UPOS=PROPN)
     ("Vaali" UPOS=PROPN) ("Tähti" UPOS=PROPN) ("Tyttö" UPOS=PROPN)
     ("Turma" UPOS=PROPN) ("Tarina" UPOS=PRON) ("Taitto" UPOS=PROPN)
     ("Suuri" UPOS=PROPN) ("Sama" UPOS=PROPN) ("Sanoma" UPOS=PROPN)
-    ("Sato" UPOS=PROPN) ("Saksanen" UPOS=PROPN) ("Sai" UPOS=PROPN) 
-    ("Saare" UPOS=PROPN) ("Ritvanen" UPOS=PROPN) ("Rahat" UPOS=PROPN) 
+    ("Sato" UPOS=PROPN) ("Saksanen" UPOS=PROPN) ("Sai" UPOS=PROPN)
+    ("Saare" UPOS=PROPN) ("Ritvanen" UPOS=PROPN) ("Rahat" UPOS=PROPN)
     ("Päivä" UPOS=PROPN) ("Pyhä" UPOS=PROPN) ("Prinssi" UPOS=PROPN)
     ("Prinssessa" UPOS=PROPN) ("Pisimpi" UPOS=PROPN) ("Pi" UPOS=PROPN)
     ("Perhe" UPOS=PROPN) ("Paulista" UPOS=PROPN) ("Pankki" UPOS=PROPN)
     ("Paikka" UPOS=PROPN) ("Osa" UPOS=PROPN) ("Onnea" UPOS=PROPN)
     ("Omena" UPOS=PROPN) ("Nii" UPOS=PROPN) ("Kansanen" UPOS=PROPN)
-    ("Lähe" UPOS=PROPN) ("Säästö" UPOS=PROPN) ("Pian" UPOS=PROPN) 
+    ("Lähe" UPOS=PROPN) ("Säästö" UPOS=PROPN) ("Pian" UPOS=PROPN)
     ("Na" UPOS=PROPN) ("Pola" UPOS=PROPN) ("Kuva" UPOS=PROPN)
     ("Ky" UPOS=PROPN) ("Valkoinen" UPOS=PROPN) ("Pilvi" UPOS=PROPN)
     ("Ku" UPOS=PROPN) ("Huijari" UPOS=PROPN) ("Venäläinen" UPOS=PROPN)
-    ("Kuo" UPOS=PROPN) ("Kuolema" UPOS=PROPN) ("Aiko" UPOS=PROPN) 
+    ("Kuo" UPOS=PROPN) ("Kuolema" UPOS=PROPN) ("Aiko" UPOS=PROPN)
     ("Ranto" UPOS=PROPN) ("Mere" UPOS=PROPN) ("Rinna" UPOS=PROPN)
     ("Eränen" UPOS=PROPN) ("Meres" UPOS=PROPN) ("Osa" UPOS=PROPN)
     ("Aiva" UPOS=PROPN) ("Poika" UPOS=PROPN) ("Silla" UPOS=PROPN)
     ("Tulonen" UPOS=PROPN) ("Tai" UPOS=PROPN) ("Aiko" UPOS=PROPN)
-    ("Mi" UPOS=PROPN) ("Tee" UPOS=PROPN) ("Joen" UPOS=PROPN) 
+    ("Mi" UPOS=PROPN) ("Tee" UPOS=PROPN) ("Joen" UPOS=PROPN)
     ("Ni" UPOS=PROPN) ("Pol" UPOS=PROPN) ("Hei" UPOS=PROPN)
     ("Toveri" UPOS=PROPN) ("Yli" UPOS=PROPN) ("Myrsky" UPOS=PROPN)
     ("Vatka" UPOS=PROPN) ("En" UPOS=PROPN) ("Kiitos" UPOS=PROPN)
-    ("Viide" UPOS=PROPN) ("Merelle" UPOS=PROPN) ("Ku" UPOS=PROPN) 
+    ("Viide" UPOS=PROPN) ("Merelle" UPOS=PROPN) ("Ku" UPOS=PROPN)
     ("Illa" UPOS=PROPN) ("Naapuri" UPOS=PROPN) ("Aihe" UPOS=PROPN)
-    ("Kota" UPOS=PROPN) ("Valon" UPOS=PROPN) ("Herra" UPOS=PROPN) 
+    ("Kota" UPOS=PROPN) ("Valon" UPOS=PROPN) ("Herra" UPOS=PROPN)
     ("Eile" UPOS=PROPN) ("Hee" UPOS=PROPN) ("Jokki" UPOS=PROPN)
     ("Kan" UPOS=PROPN) ("Kato" UPOS=PROPN) ("Käärme" UPOS=PROPN)
     ("Lie" UPOS=PROPN) ("Mu" UPOS=PROPN) ("Mui" UPOS=PROPN)
@@ -316,7 +318,7 @@ LIST RARER-NOUN =
     ("muutti" UPOS=NOUN) ("kanna" UPOS=NOUN) ("kerto" UPOS=NOUN)
     ("taita" UPOS=NOUN) ("viisi" UPOS=NOUN) ("koto" UPOS=NOUN)
     ("suura" UPOS=NOUN) ("sai" UPOS=NOUN) ("saava" UPOS=NOUN)
-    ("pitkänen" UPOS=NOUN) ("niisi" UPOS=NOUN) ("valin" UPOS=NOUN) 
+    ("pitkänen" UPOS=NOUN) ("niisi" UPOS=NOUN) ("valin" UPOS=NOUN)
     ("talossa" UPOS=NOUN) ("juko" UPOS=NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs, and some fixed expressions
@@ -331,7 +333,7 @@ LIST RARER-VERB =
     ("nytkiä" UPOS=VERB) ("siitä" UPOS=VERB) ("siittää" UPOS=VERB)
     ("suomia" UPOS=VERB) ("suoria" UPOS=VERB) ("taata" UPOS=VERB)
     ("vastoa" UPOS=VERB) ("oieta" UPOS=VERB) ("niistää" UPOS=VERB)
-    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ("sietä" UPOS=VERB) 
+    ("paapia" UPOS=VERB) ("entää" UPOS=VERB) ("sietä" UPOS=VERB)
     ("datata" UPOS=VERB) ("maattaa" UPOS=VERB) ;
 ## some adjectives that shadow probably a commoner noun
 LIST RARER-ADJ =
@@ -402,8 +404,8 @@ LIST ADPS-WITH-PAR =
     ("ylös" UPOS=ADP) ("päin" UPOS=ADP) ("vastaan" UPOS=ADP)
     ("ilman" UPOS=ADP) ("kautta" UPOS=ADP) ("huolimatta" UPOS=ADP)
     ("asti" UPOS=ADP) ("sitten" UPOS=ADP) ("ennen" UPOS=ADP)
-    ("varten" UPOS=ADP) ("kohden" UPOS=ADP) ("pitkin" UPOS=ADP) 
-    ("myöten" UPOS=ADP) ;
+    ("varten" UPOS=ADP) ("kohden" UPOS=ADP) ("pitkin" UPOS=ADP)
+    ("myöten" UPOS=ADP) ("pitkin" UPOS=ADP) ;
 ## adositions with genitive complement
 LIST ADPS-WITH-GEN =
     ("takana" UPOS=ADP) ("mukaan" UPOS=ADP) ("vuoksi" UPOS=ADP)
@@ -414,14 +416,14 @@ LIST ADPS-WITH-GEN =
     ("myötä" UPOS=ADP) ("edessä" UPOS=ADP) ("alle" UPOS=ADP)
     ("aikana" UPOS=ADP) ("joukossa" UPOS=ADP) ("alapuolella" UPOS=ADP)
     ("lisäksi" UPOS=ADP) ("alussa" UPOS=ADP) ("päälle" UPOS=ADP)
-    ("ohi" UPOS=ADP) ("mukana" UPOS=ADP) ("rinnalla" UPOS=ADP) 
+    ("ohi" UPOS=ADP) ("mukana" UPOS=ADP) ("rinnalla" UPOS=ADP)
     ("lävitse" UPOS=ADP) ("taa" UPOS=ADP) ("eteen" UPOS=ADP)
-    ("päässä" UPOS=ADP) ("luo" UPOS=ADP) ("alitse" UPOS=ADP) 
+    ("päässä" UPOS=ADP) ("luo" UPOS=ADP) ("alitse" UPOS=ADP)
     ("kuluttua" UPOS=ADP) ("ääressä" UPOS=ADP) ("johdosta" UPOS=ADP) ;
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" UPOS=ADP) ;
 ## adpositions with elative complement
-LIST ADPS-WITH-ELA = ("ulos" UPOS=ADP) ("riippuen" UPOS=ADP) 
+LIST ADPS-WITH-ELA = ("ulos" UPOS=ADP) ("riippuen" UPOS=ADP)
                      ("alkaen" UPOS=ADP) ;
 ## Verbs with inf complements
 ## ... infa
@@ -485,7 +487,8 @@ LIST SG2POSS-CONFUSION =
     ("tuho" Number[psor]=Sing Person[psor]=2)
     ("mana" Number[psor]=Sing Person[psor]=2)
     ("huoma" Number[psor]=Sing Person[psor]=2)
-    ("suo" Number[psor]=Sing Person[psor]=2) ;
+    ("suo" Number[psor]=Sing Person[psor]=2)
+    ("lakka" Number[psor]=Sing Person[psor]=2) ;
 LIST ADJ-RARELY-NOUN = ("kauhea" UPOS=NOUN) ("komea" UPOS=NOUN) ;
 LIST WHAT-THE-ADJ = ("pelko" UPOS=ADJ) ;
 LIST NUMNOMGENS = ("seitsemän" UPOS=NUM) ("kahdeksan" UPOS=NUM)
@@ -494,7 +497,7 @@ LIST NONPAST-ADV = ("huomenna" UPOS=ADV) ("nyt" UPOS=ADV) ;
 LIST PAST-ADV = ("eilen" UPOS=ADV) ;
 
 ## }}}
-## {{{ words 
+## {{{ words
 ## "siitä" = {to conceive, from it}
 LIST SIITÄ-VERBS =
     ("siittää" UPOS=VERB) ("siitä" UPOS=VERB) ("si’itä" UPOS=VERB) ;
@@ -793,7 +796,7 @@ LIST DERIVATIONS = Derivation=Inen Derivation=Ja Derivation=U ;
 LIST MISSING-HYPHEN = <GoesWith=Missing-> <AffixType=Prefix> ;
 ## Any other guessers
 LIST GUESSED = <Guesser> ;
-## 
+##
 LIST TITLECASED = "<\p[Lu].+>"r ;
 LIST BOS = >>> ;
 # }}}
@@ -1255,7 +1258,7 @@ SELECT:initial-needs-final <Position=Initial> (2* <Position=Final> BARRIER <Posi
 ##! laiminlyönti voidaan usein todistaa
 SELECT:verbs-with-infa VERBS-WITH-INFA (1* INFA BARRIER CLB) ;
 SELECT:infa-with-verbs INFA (-1* VERBS-WITH-INFA BARRIER CLB) ;
-##! 
+##!
 SELECT:verbs-with-infma VERBS-WITH-INFMAAN (1* INFMAAN BARRIER CLB) ;
 SELECT:infma-with-verbs INFMAAN (-1* VERBS-WITH-INFMAAN BARRIER CLB) ;
 
@@ -1284,6 +1287,10 @@ SELECT:relative-pron-starts-clause PronType=Rel (-1 CLB) ;
 ##! $ kuinka voit nyt?
 SELECT:present-before-now Tense=Pres (1 NONPAST-ADV) (0 Tense=Past) ;
 SELECT:past-before-yesteray Tense=Past (1 PAST-ADV) (0 Tense=Pres) ;
+
+##! $ kuka voitti?
+##! € en tiedä, kuka olet.
+SELECT:interrogative-pronoun-with-question-mark PronType=Int (1* QMARK) ;
 # }}}
 AFTER-SECTIONS # {{{ last-resorts
 
