@@ -6,7 +6,7 @@
 HFST utils.
 """
 
-import hfst
+import pyhfst
 
 
 def load_hfst(f):
@@ -18,8 +18,5 @@ def load_hfst(f):
     Throws:
         FileNotFoundError if file is not found
     """
-    try:
-        his = hfst.HfstInputStream(f)
-        return his.read()
-    except hfst.exceptions.NotTransducerStreamException:
-        raise IOError(2, f) from None
+    his = pyhfst.HfstInputStream(f)
+    return his.read()

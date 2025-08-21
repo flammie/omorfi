@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="omorfi",
-    version="0.9.10",
+    version="0.9.12",
     author="Flammie A Pirinen",
     author_email="flammie@iki.fi",
     description="Open morphology for Finnish, python bindings",
@@ -36,5 +36,5 @@ setuptools.setup(
              "omorfi-unimorph.py",
              "omorfi-vislcg.py",
              "omorfi-wikitable.py"],
-    install_requires=["hfst"],
+    install_requires=["pyhfst"],
 )

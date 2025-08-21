@@ -1,8 +1,8 @@
 [project]
 name = "omorfi"
-version = "0.9.11"
+version = "0.9.12"
 dependencies = [
-    "hfst>=3.12.2.4b0",
+    "pyhfst",
 ]
 license = "GPL-3.0-only"
 authors = [{ name = "Flammie A Pirinen", email = "flammie@iki.fi" }]
