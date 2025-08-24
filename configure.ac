@@ -288,7 +288,7 @@ AC_PATH_PROGS([DATE], [gdate date])
 # require python for stuff
 AM_PATH_PYTHON([3.2])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
-AX_PYTHON_MODULE([libhfst], [true])
+AX_PYTHON_MODULE([pyhfst], [true])
 AC_PATH_PROG([JEKYLL], [jekyll], [false])
 AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
@@ -330,6 +330,13 @@ AC_LANG([C++])
 # Checks for libraries
 PKG_CHECK_MODULES([LIBHFST], [hfst >= 3.15],
                   [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
+AC_MSG_CHECKING([can compile libhfst stufffs with c++])
+AC_COMPILE_IFELSE([#include <hfst/hfst.h>
+		   
+		   void main(void) {return;}], 
+		   [AC_MSG_RESULT([yes])],
+		   [AC_MSG_RESULT([no])
+		    with_cpp=no])
 AM_CONDITIONAL([WANT_CPP], [test x$with_cpp != xno])
 
 # Checks for header files
