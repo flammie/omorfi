@@ -331,9 +331,9 @@ AC_LANG([C++])
 PKG_CHECK_MODULES([LIBHFST], [hfst >= 3.15],
                   [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
 AC_MSG_CHECKING([can compile libhfst stufffs with c++])
-AC_COMPILE_IFELSE([#include <hfst/hfst.h>
+AC_COMPILE_IFELSE([AC_LANG_SOURCE([#include <hfst/hfst.h>
 		   
-		   void main(void) {return;}], 
+		   void main(void) {return;}])], 
 		   [AC_MSG_RESULT([yes])],
 		   [AC_MSG_RESULT([no])
 		    with_cpp=no])
