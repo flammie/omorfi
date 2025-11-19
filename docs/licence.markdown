@@ -37,8 +37,9 @@ stricter licencing:
    wiktionary](https://en.wiktionary.org), CC BY-SA
 1. open data from Finnish government:
    [maanmittauslaitos](https://www.avoindata.fi/data/fi/dataset/nimisto)
-   (Cartography(?) institute) and [dvv.fi name
-   database](https://www.avoindata.fi/data/fi/dataset/none), CC BY
+   (National land survey of Finland) and [dvv.fi name
+   database](https://www.avoindata.fi/data/fi/dataset/none) (Digital and
+   Population Data Services Agency), CC BY
 1. *additional words from omorfi contributors*, GPLv3
 
 
