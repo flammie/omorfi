@@ -17,6 +17,14 @@ I try to keep this `README` very condensed for github.
 For more detailed information, see [github pages for
 omorfi](//flammie.github.io/omorfi/).
 
+## Licence
+
+Omorfi is licenced [GNU GPLv3](COPYING) (not later). The bundled HFST in the
+java API demo is [Apache](COPYING-hfst-java).
+
+* [Further information about licence and copyright in
+  documentation](//flammie.github.io/omorfi/licence.html)
+
 ## Citing and academic works
 
 Citation information is available in github's *cite this repository* function,
