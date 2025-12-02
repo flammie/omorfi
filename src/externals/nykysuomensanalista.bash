@@ -1,0 +1,1134 @@
+#!/bin/bash
+URL="https://kaino.kotus.fi/lataa/nykysuomensanalista2024.txt"
+SED="sed"
+if ! test -f nykysuomensanalista2024.txt ; then
+    echo "use a browser to get $URL"
+    echo "(it has some strong crawling protections :-("
+    exit 1
+fi
+# Hakusana\tHomonymia?\tSanaluokka\tkotus_luokka
+B="[aouAOU][^äöyÄÖY]*"
+F="[äöyÄÖY][^aouAOU]*"
+C="[bcdfghjklmnpqrstšvwxzžMTS]"
+# the order matters: longest match first (gradation first, then harmony, then
+# default harmony)
+# TODO: something to do with multipossing? vs. homonyms multiline poses?
+< nykysuomensanalista2024.txt \
+    $SED -e "s/substantiivi, adjektiivi/substantiivi/" \
+    -e "s/adjektiivi, substantiivi/adjektiivi/" |\
+    $SED -e "s/\(.\)	\([^	]*\)	interjektio	99/\1	INTJ\2	INTJ_HAH	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	interjektio	9\*B/\1	INTJ\2	INTJ_HAH	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	interjektio	5/\1	INTJ\2	INTJ_HAH	kotus/" \
+    -e "s/\(${B}\)	\([^	]*\)	adverbi	99/\1	ADV\2	ADV_NOPEASTI	kotus/" \
+    -e "s/\(${F}\)	\([^	]*\)	adverbi	99/\1	ADV\2	ADV_TYHMÄSTI	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi	100/\1	NOUN\2	NOUN_100XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi	99/\1	NOUN\2	NOUN_99XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi	51/\1	NOUN\2	NOUN_51XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi	50/\1	NOUN\2	NOUN_50XXX	kotus/" \
+    -e "s/\(${F}mmel\)	\([^	]*\)	substantiivi	49\*H/\1	NOUN\2	NOUN_VEMMEL	kotus/" \
+    -e "s/\(mmel\)	\([^	]*\)	substantiivi	49\*H/\1	NOUN\2	NOUN_VEMMEL	kotus/" \
+    -e "s/\(${F}nner\)	\([^	]*\)	substantiivi	49\*J/\1	NOUN\2	NOUN_KINNER	kotus/" \
+    -e "s/\(nnel\)	\([^	]*\)	substantiivi	49\*J/\1	NOUN\2	NOUN_KANNEL	kotus/" \
+    -e "s/\(nner\)	\([^	]*\)	substantiivi	49\*J/\1	NOUN\2	NOUN_KINNER	kotus/" \
+    -e "s/\(nnar\)	\([^	]*\)	substantiivi	49\*J/\1	NOUN\2	NOUN_PIENNAR	kotus/" \
+    -e "s/\(nger\)	\([^	]*\)	substantiivi	49\*G/\1	NOUN\2	NOUN_PENGER	kotus/" \
+    -e "s/\(dar\)	\([^	]*\)	substantiivi	49\*F/\1	NOUN\2	NOUN_UDAR	kotus/" \
+    -e "s/\(val\)	\([^	]*\)	substantiivi	49\*E/\1	NOUN\2	NOUN_TAIVAL	kotus/" \
+    -e "s/\(en\)	\([^	]*\)	substantiivi	49\*D/\1	NOUN\2	NOUN_SÄEN	kotus/" \
+    -e "s/\(${F}[lrn]\)	\([^	]*\)	substantiivi	49/\1	NOUN\2	NOUN_KYYNEL	kotus/" \
+    -e "s/\(${B}[lrn]\)	\([^	]*\)	substantiivi	49/\1	NOUN\2	NOUN_ASKAR	kotus/" \
+    -e "s/\([lrn]\)	\([^	]*\)	substantiivi	49/\1	NOUN\2	NOUN_KYYNEL	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	49/\1	NOUN\2	NOUN_ASTE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	substantiivi	49/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	49/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(${F}pe\)	\([^	]*\)	substantiivi	48\*B/\1	NOUN\2	NOUN_KÄSITE	kotus/" \
+    -e "s/\(${B}te\)	\([^	]*\)	substantiivi	48\*C/\1	NOUN\2	NOUN_OSOITE	kotus/" \
+    -e "s/\(${F}te\)	\([^	]*\)	substantiivi	48\*C/\1	NOUN\2	NOUN_KÄSITE	kotus/" \
+    -e "s/\(te\)	\([^	]*\)	substantiivi	48\*C/\1	NOUN\2	NOUN_KÄSITE	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	48\*D/\1	NOUN\2	NOUN_KOE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	substantiivi	48\*D/\1	NOUN\2	NOUN_PYYHE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	48\*D/\1	NOUN\2	NOUN_PYYHE	kotus/" \
+    -e "s/\(${B}ke\)	\([^	]*\)	substantiivi	48\*A/\1	NOUN\2	NOUN_KASTIKE	kotus/" \
+    -e "s/\(${F}ke\)	\([^	]*\)	substantiivi	48\*A/\1	NOUN\2	NOUN_LÄÄKE	kotus/" \
+    -e "s/\(ke\)	\([^	]*\)	substantiivi	48\*A/\1	NOUN\2	NOUN_LÄÄKE	kotus/" \
+    -e "s/\(${B}pe\)	\([^	]*\)	substantiivi	48\*B/\1	NOUN\2	NOUN_APE	kotus/" \
+    -e "s/\(${F}pe\)	\([^	]*\)	substantiivi	48\*B/\1	NOUN\2	NOUN_RIPE	kotus/" \
+    -e "s/\(pe\)	\([^	]*\)	substantiivi	48\*B/\1	NOUN\2	NOUN_RIPE	kotus/" \
+    -e "s/\(peet\)	\([^	]*\)	substantiivi	48\*B/\1	NOUN\2	NOUN_KAMPPEET	kotus/" \
+    -e "s/\(${B}ve\)	\([^	]*\)	substantiivi	48\*E/\1	NOUN\2	NOUN_TAIVE	kotus/" \
+    -e "s/\(${F}ve\)	\([^	]*\)	substantiivi	48\*E/\1	NOUN\2	NOUN_VIIVE	kotus/" \
+    -e "s/\(ve\)	\([^	]*\)	substantiivi	48\*E/\1	NOUN\2	NOUN_VIIVE	kotus/" \
+    -e "s/\(${B}de\)	\([^	]*\)	substantiivi	48\*F/\1	NOUN\2	NOUN_LUODE	kotus/" \
+    -e "s/\(${F}de\)	\([^	]*\)	substantiivi	48\*F/\1	NOUN\2	NOUN_KIDE	kotus/" \
+    -e "s/\(de\)	\([^	]*\)	substantiivi	48\*F/\1	NOUN\2	NOUN_KIDE	kotus/" \
+    -e "s/\(${B}teet\)	\([^	]*\)	substantiivi	48\*F/\1	NOUN\2	NOUN_LAUTEET	kotus/" \
+    -e "s/\(${B}mme\)	\([^	]*\)	substantiivi	48\*H/\1	NOUN\2	NOUN_LUMME	kotus/" \
+    -e "s/\(${B}lle\)	\([^	]*\)	substantiivi	48\*I/\1	NOUN\2	NOUN_VUOLLE	kotus/" \
+    -e "s/\(${F}lle\)	\([^	]*\)	substantiivi	48\*I/\1	NOUN\2	NOUN_MIELLE	kotus/" \
+    -e "s/\(lle\)	\([^	]*\)	substantiivi	48\*I/\1	NOUN\2	NOUN_MIELLE	kotus/" \
+    -e "s/\(${B}nne\)	\([^	]*\)	substantiivi	48\*J/\1	NOUN\2	NOUN_RAKENNE	kotus/" \
+    -e "s/\(${F}nne\)	\([^	]*\)	substantiivi	48\*J/\1	NOUN\2	NOUN_KIINNE	kotus/" \
+    -e "s/\(nne\)	\([^	]*\)	substantiivi	48\*J/\1	NOUN\2	NOUN_KIINNE	kotus/" \
+    -e "s/\(${B}rre\)	\([^	]*\)	substantiivi	48\*K/\1	NOUN\2	NOUN_AARRE	kotus/" \
+    -e "s/\(${F}rre\)	\([^	]*\)	substantiivi	48\*K/\1	NOUN\2	NOUN_KIERRE	kotus/" \
+    -e "s/\(rre\)	\([^	]*\)	substantiivi	48\*K/\1	NOUN\2	NOUN_KIERRE	kotus/" \
+    -e "s/\(${B}keet\)	\([^	]*\)	substantiivi	48\*L/\1	NOUN\2	NOUN_ALKEET	kotus/" \
+    -e "s/\(${B}je\)	\([^	]*\)	substantiivi	48\*L/\1	NOUN\2	NOUN_POHJE	kotus/" \
+    -e "s/\(${F}je\)	\([^	]*\)	substantiivi	48\*L/\1	NOUN\2	NOUN_HYLJE	kotus/" \
+    -e "s/\(je\)	\([^	]*\)	substantiivi	48\*L/\1	NOUN\2	NOUN_HYLJE	kotus/" \
+    -e "s/\(${B}eet\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_ALKEET	kotus/" \
+    -e "s/\(${F}eet\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_RÄMEET	kotus/" \
+    -e "s/\(eet\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_RÄMEET	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_ASTE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_ORI	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_KIIRU	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	48/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(eet\)	\([^	]*\)	substantiivi	47/\1	NOUN\2	NOUN_LIITTOUTUNEET	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	substantiivi	47/\1	NOUN\2	NOUN_AIVOKUOLLUT	kotus/" \
+    -e "s/\(ät\)	\([^	]*\)	substantiivi	44/\1	NOUN\2	NOUN_KEVÄT	kotus/" \
+    -e "s/\(mmyt\)	\([^	]*\)	substantiivi	43\*H/\1	NOUN\2	NOUN_IMMYT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	substantiivi	43/\1	NOUN\2	NOUN_NEITSYT	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	substantiivi	43/\1	NOUN\2	NOUN_OLUT	kotus/" \
+    -e "s/\(mies\)	\([^	]*\)	substantiivi	42/\1	NOUN\2	NOUN_MIES	kotus/" \
+    -e "s/\(ras\)	\([^	]*\)	substantiivi	41\*K/\1	NOUN\2	NOUN_PORRAS	kotus/" \
+    -e "s/\(nas\)	\([^	]*\)	substantiivi	41\*J/\1	NOUN\2	NOUN_KINNAS	kotus/" \
+    -e "s/\(näs\)	\([^	]*\)	substantiivi	41\*J/\1	NOUN\2	NOUN_RYNNÄS	kotus/" \
+    -e "s/\(las\)	\([^	]*\)	substantiivi	41\*I/\1	NOUN\2	NOUN_ALLAS	kotus/" \
+    -e "s/\(ltaat\)	\([^	]*\)	substantiivi	41\*I/\1	NOUN\2	NOUN_MALTAAT	kotus/" \
+    -e "s/\(mas\)	\([^	]*\)	substantiivi	41\*H/\1	NOUN\2	NOUN_HAMMAS	kotus/" \
+    -e "s/\(gas\)	\([^	]*\)	substantiivi	41\*G/\1	NOUN\2	NOUN_KANGAS	kotus/" \
+    -e "s/\(gäs\)	\([^	]*\)	substantiivi	41\*G/\1	NOUN\2	NOUN_KÖNGÄS	kotus/" \
+    -e "s/\(das\)	\([^	]*\)	substantiivi	41\*F/\1	NOUN\2	NOUN_TEHDAS	kotus/" \
+    -e "s/\(vas\)	\([^	]*\)	substantiivi	41\*E/\1	NOUN\2	NOUN_VARVAS	kotus/" \
+    -e "s/\(väs\)	\([^	]*\)	substantiivi	41\*E/\1	NOUN\2	NOUN_SEIVÄS	kotus/" \
+    -e "s/\(es\)	\([^	]*\)	substantiivi	41\*D/\1	NOUN\2	NOUN_IES	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	substantiivi	41\*D/\1	NOUN\2	NOUN_VARAS	kotus/" \
+    -e "s/\(is\)	\([^	]*\)	substantiivi	41\*D/\1	NOUN\2	NOUN_RUIS	kotus/" \
+    -e "s/\(taat\)	\([^	]*\)	substantiivi	41\*C/\1	NOUN\2	NOUN_RATTAAT	kotus/" \
+    -e "s/\(tas\)	\([^	]*\)	substantiivi	41\*C/\1	NOUN\2	NOUN_RATAS	kotus/" \
+    -e "s/\(tus\)	\([^	]*\)	substantiivi	41\*C/\1	NOUN\2	NOUN_VANTUS	kotus/" \
+    -e "s/\(täs\)	\([^	]*\)	substantiivi	41\*C/\1	NOUN\2	NOUN_MÄTÄS	kotus/" \
+    -e "s/\(päs\)	\([^	]*\)	substantiivi	41\*B/\1	NOUN\2	NOUN_RYPÄS	kotus/" \
+    -e "s/\(pas\)	\([^	]*\)	substantiivi	41\*B/\1	NOUN\2	NOUN_SAAPAS	kotus/" \
+    -e "s/\(kaat\)	\([^	]*\)	substantiivi	41\*A/\1	NOUN\2	NOUN_TIKKAAT	kotus/" \
+    -e "s/\(käs\)	\([^	]*\)	substantiivi	41\*A/\1	NOUN\2	NOUN_KÄRSÄKÄS	kotus/" \
+    -e "s/\(kas\)	\([^	]*\)	substantiivi	41\*A/\1	NOUN\2	NOUN_ASUKAS	kotus/" \
+    -e "s/\(käs\)	\([^	]*\)	substantiivi	41\*A/\1	NOUN\2	NOUN_KÄRSÄKÄS	kotus/" \
+    -e "s/\(${B}es\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_AKILLES	kotus/" \
+    -e "s/\(${F}es\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_KIRVES	kotus/" \
+    -e "s/\(es\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_KIRVES	kotus/" \
+    -e "s/\(äs\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_ÄYRÄS	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_RUUMIS	kotus/" \
+    -e "s/\(us\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_KIIRUS	kotus/" \
+    -e "s/\(at\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_VALJAAT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_HYNTTYYT	kotus/" \
+    -e "s/\(${B}is\)	\([^	]*\)	substantiivi	41/\1	NOUN\2	NOUN_PATSAS	kotus/" \
+    -e "s/\(${F}s\)	\([^	]*\)	substantiivi	40/\1	NOUN\2	NOUN_KÖYHYYS	kotus/" \
+    -e "s/\(${B}s\)	\([^	]*\)	substantiivi	40/\1	NOUN\2	NOUN_AAKKOSELLISUUS	kotus/" \
+    -e "s/\(${B}kset\)	\([^	]*\)	substantiivi	39/\1	NOUN\2	NOUN_SERKUKSET	kotus/" \
+    -e "s/\(${F}kset\)	\([^	]*\)	substantiivi	39/\1	NOUN\2	NOUN_YSTÄVYKSET	kotus/" \
+    -e "s/\(kset\)	\([^	]*\)	substantiivi	39/\1	NOUN\2	NOUN_YSTÄVYKSET	kotus/" \
+    -e "s/\(${F}s\)	\([^	]*\)	substantiivi	(39)/\1	NOUN\2	NOUN_RÄJÄYTYS	kotus/" \
+    -e "s/\(${F}s\)	\([^	]*\)	substantiivi	39/\1	NOUN\2	NOUN_RÄJÄYTYS	kotus/" \
+    -e "s/\(${B}s\)	\([^	]*\)	substantiivi	39/\1	NOUN\2	NOUN_VAKUUTUS	kotus/" \
+    -e "s/\(s\)	\([^	]*\)	substantiivi	39/\1	NOUN\2	NOUN_RÄJÄYTYS	kotus/" \
+    -e "s/\(${B}set\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	NOUN_RAPPUSET	kotus/" \
+    -e "s/\(${F}set\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	NOUN_VIHKIÄISET	kotus/" \
+    -e "s/\(set\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	NOUN_VIHKIÄISET	kotus/" \
+    -e "s/\(${F}nen\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	NOUN_KYLKIÄINEN	kotus/" \
+    -e "s/\(${B}nen\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	NOUN_AAKKOSTAMINEN	kotus/" \
+    -e "s/\(nen\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	NOUN_KYLKIÄINEN	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi	38/\1	NOUN\2	X_IGNORE	kotus/" \
+    -e "s/\(${B}in\)	\([^	]*\)	substantiivi	36/\1	NOUN\2	NOUN_KYLÄNVANHIN	kotus/" \
+    -e "s/\(mmin\)	\([^	]*\)	substantiivi	35\*H/\1	NOUN\2	NOUN_LÄMMIN	kotus/" \
+    -e "s/\(ton\)	\([^	]*\)	substantiivi	34\*C/\1	NOUN\2	NOUN_OSATON	kotus/" \
+    -e "s/\(rroin\)	\([^	]*\)	substantiivi	33\*K/\1	NOUN\2	NOUN_KERROIN	kotus/" \
+    -e "s/\(${B}rrin\)	\([^	]*\)	substantiivi	33\*K/\1	NOUN\2	NOUN_KIHARRIN	kotus/" \
+    -e "s/\(${F}rrin\)	\([^	]*\)	substantiivi	33\*K/\1	NOUN\2	NOUN_KIERRIN	kotus/" \
+    -e "s/\(rrin\)	\([^	]*\)	substantiivi	33\*K/\1	NOUN\2	NOUN_KIERRIN	kotus/" \
+    -e "s/\(${B}jin\)	\([^	]*\)	substantiivi	33\*L/\1	NOUN\2	NOUN_POLJIN	kotus/" \
+    -e "s/\(${B}timet\)	\([^	]*\)	substantiivi	33\*J/\1	NOUN\2	NOUN_ANTIMET	kotus/" \
+    -e "s/\(${B}nnin\)	\([^	]*\)	substantiivi	33\*J/\1	NOUN\2	NOUN_MUUNNIN	kotus/" \
+    -e "s/\(${F}nnin\)	\([^	]*\)	substantiivi	33\*J/\1	NOUN\2	NOUN_KÄÄNNIN	kotus/" \
+    -e "s/\(nnin\)	\([^	]*\)	substantiivi	33\*J/\1	NOUN\2	NOUN_KÄÄNNIN	kotus/" \
+    -e "s/\(${B}llin\)	\([^	]*\)	substantiivi	33\*I/\1	NOUN\2	NOUN_ASKELLIN	kotus/" \
+    -e "s/\(${F}llin\)	\([^	]*\)	substantiivi	33\*I/\1	NOUN\2	NOUN_SIVELLIN	kotus/" \
+    -e "s/\(llin\)	\([^	]*\)	substantiivi	33\*I/\1	NOUN\2	NOUN_SIVELLIN	kotus/" \
+    -e "s/\(dun\)	\([^	]*\)	substantiivi	33\*F/\1	NOUN\2	NOUN_LAIDUN	kotus/" \
+    -e "s/\(dan\)	\([^	]*\)	substantiivi	33\*F/\1	NOUN\2	NOUN_KUUDAN	kotus/" \
+    -e "s/\(${B}din\)	\([^	]*\)	substantiivi	33\*F/\1	NOUN\2	NOUN_VAADIN	kotus/" \
+    -e "s/\(${F}din\)	\([^	]*\)	substantiivi	33\*F/\1	NOUN\2	NOUN_SÄÄDIN	kotus/" \
+    -e "s/\(din\)	\([^	]*\)	substantiivi	33\*F/\1	NOUN\2	NOUN_SÄÄDIN	kotus/" \
+    -e "s/\(${B}timet\)	\([^	]*\)	substantiivi	33\*F/\1	NOUN\2	NOUN_HOHTIMET	kotus/" \
+    -e "s/\(${B}vin\)	\([^	]*\)	substantiivi	33\*E/\1	NOUN\2	NOUN_RAAVIN	kotus/" \
+    -e "s/\(${F}vin\)	\([^	]*\)	substantiivi	33\*E/\1	NOUN\2	NOUN_SÄRVIN	kotus/" \
+    -e "s/\(vin\)	\([^	]*\)	substantiivi	33\*E/\1	NOUN\2	NOUN_SÄRVIN	kotus/" \
+    -e "s/\(${B}in\)	\([^	]*\)	substantiivi	33\*D/\1	NOUN\2	NOUN_PUIN	kotus/" \
+    -e "s/\(${F}in\)	\([^	]*\)	substantiivi	33\*D/\1	NOUN\2	NOUN_PYYHIN	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	substantiivi	33\*D/\1	NOUN\2	NOUN_PYYHIN	kotus/" \
+    -e "s/\(${F}imet\)	\([^	]*\)	substantiivi	33\*D/\1	NOUN\2	NOUN_NÄKIMET	kotus/" \
+    -e "s/\(${B}tin\)	\([^	]*\)	substantiivi	33\*C/\1	NOUN\2	NOUN_SUODATIN	kotus/" \
+    -e "s/\(${F}tin\)	\([^	]*\)	substantiivi	33\*C/\1	NOUN\2	NOUN_HEITIN	kotus/" \
+    -e "s/\(${F}timet\)	\([^	]*\)	substantiivi	33\*C/\1	NOUN\2	NOUN_SYNNYTTIMET	kotus/" \
+    -e "s/\(${B}timet\)	\([^	]*\)	substantiivi	33\*C/\1	NOUN\2	NOUN_HOKSOTTIMET	kotus/" \
+    -e "s/\(timet\)	\([^	]*\)	substantiivi	33\*C/\1	NOUN\2	NOUN_SYNNYTTIMET	kotus/" \
+    -e "s/\(tin\)	\([^	]*\)	substantiivi	33\*C/\1	NOUN\2	NOUN_HEITIN	kotus/" \
+    -e "s/\(${B}met\)	\([^	]*\)	substantiivi	33/\1	NOUN\2	NOUN_ATERIMET	kotus/" \
+    -e "s/\(${F}met\)	\([^	]*\)	substantiivi	33/\1	NOUN\2	NOUN_KERITSIMET	kotus/" \
+    -e "s/\(met\)	\([^	]*\)	substantiivi	33/\1	NOUN\2	NOUN_KERITSIMET	kotus/" \
+    -e "s/\(${F}n\)	\([^	]*\)	substantiivi	33/\1	NOUN\2	NOUN_ELIN	kotus/" \
+    -e "s/\(${B}n\)	\([^	]*\)	substantiivi	33/\1	NOUN\2	NOUN_PUHELIN	kotus/" \
+    -e "s/\(n\)	\([^	]*\)	substantiivi	33/\1	NOUN\2	NOUN_ELIN	kotus/" \
+    -e "s/\(en\)	\([^	]*\)	substantiivi	32\*D/\1	NOUN\2	NOUN_IEN	kotus/" \
+    -e "s/\(tär\)	\([^	]*\)	substantiivi	32\*C/\1	NOUN\2	NOUN_TYTÄR	kotus/" \
+    -e "s/\(tar\)	\([^	]*\)	substantiivi	32\*C/\1	NOUN\2	NOUN_AJATAR	kotus/" \
+    -e "s/\(${B}n\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_JOUTSEN	kotus/" \
+    -e "s/\(${B}r\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_JOUTSEN	kotus/" \
+    -e "s/\(${F}n\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(${F}l\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(${F}r\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(n\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(l\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(r\)	\([^	]*\)	substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(ksi\)	\([^	]*\)	substantiivi	31/\1	NOUN\2	NOUN_HAAKSI	kotus/" \
+    -e "s/\(2\)	\([^	]*\)	substantiivi	31/\1	NOUN\2	NOUN_ACRO_2	kotus/" \
+    -e "s/\(tsi\)	\([^	]*\)	substantiivi	30/\1	NOUN\2	NOUN_VEITSI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	29/\1	NOUN\2	NOUN_LAPSI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	28\*K/\1	NOUN\2	NOUN_KORSI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	28\*K/\1	NOUN\2	NOUN_VIRSI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	28\*J/\1	NOUN\2	NOUN_PONSI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	28\*K/\1	NOUN\2	NOUN_VIRSI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	28\*I/\1	NOUN\2	NOUN_JÄLSI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	27/\1	NOUN\2	NOUN_KAUSI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	27/\1	NOUN\2	NOUN_KÖYSI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	27/\1	NOUN\2	NOUN_KÖYSI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	26/\1	NOUN\2	NOUN_HIIRI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	26/\1	NOUN\2	NOUN_RUUHI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	26/\1	NOUN\2	NOUN_HIIRI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	25/\1	NOUN\2	NOUN_TUOMI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	25/\1	NOUN\2	NOUN_LIEMI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	25/\1	NOUN\2	NOUN_LIEMI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	24/\1	NOUN\2	NOUN_RUUHI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	24/\1	NOUN\2	NOUN_HIIRI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	24/\1	NOUN\2	NOUN_HIIRI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	23/\1	NOUN\2	NOUN_TULI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	23/\1	NOUN\2	NOUN_SYLI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	23/\1	NOUN\2	NOUN_SYLI	kotus/" \
+    -e "s/\(${B}\)	\([^	]*\)	substantiivi	22/\1	NOUN\2	NOUN_NOUGAT	kotus/" \
+    -e "s/\(${F}\)	\([^	]*\)	substantiivi	22/\1	NOUN\2	NOUN_BEIGNET	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi	22/\1	NOUN\2	NOUN_BEIGNET	kotus/" \
+    -e "s/\(ay\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_GAY	kotus/" \
+    -e "s/\(oy\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_GAY	kotus/" \
+    -e "s/\(ey\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_JOCKEY	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_KUNGFU	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_CHACHACHA	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_BÉBÉ	kotus/" \
+    -e "s/\(é\)	\([^	]*\)	substantiivi	21/\1	NOUN\2	NOUN_BÉBÉ	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	26/\1	NOUN\2	NOUN_RUUHI	kotus/" \
+    -e "s/\(${F}ee\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_BIDEE	kotus/" \
+    -e "s/\(${B}ee\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_PATEE	kotus/" \
+    -e "s/\(${F}eet\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_RÄMEET	kotus/" \
+    -e "s/\(eet\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_RÄMEET	kotus/" \
+    -e "s/\(ee\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_BIDEE	kotus/" \
+    -e "s/\(öö\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_MILJÖÖ	kotus/" \
+    -e "s/\(oo\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_TRIKOO	kotus/" \
+    -e "s/\(yy\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_FONDYY	kotus/" \
+    -e "s/\(uu\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_RAGUU	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	substantiivi	20/\1	NOUN\2	NOUN_NUGAA	kotus/" \
+    -e "s/\(ie\)	\([^	]*\)	substantiivi	19/\1	NOUN\2	NOUN_TIE	kotus/" \
+    -e "s/\(uo\)	\([^	]*\)	substantiivi	19/\1	NOUN\2	NOUN_VUO	kotus/" \
+    -e "s/\(yö\)	\([^	]*\)	substantiivi	19/\1	NOUN\2	NOUN_TYÖ	kotus/" \
+    -e "s/\([A]\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_ACRO_AA	kotus/" \
+    -e "s/\([CGVDTwv]\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_ACRO_EE	kotus/" \
+    -e "s/\([KHkO]\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_ACRO_OO	kotus/" \
+    -e "s/\([Jj]\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_ACRO_II	kotus/" \
+    -e "s/\([U]\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_ACRO_UU	kotus/" \
+    -e "s/\([Y]\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_ACRO_YY	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_PII	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_TEE	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_HAI	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi	(18)/\1	NOUN\2	NOUN_KÖÖ	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_KÖÖ	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_PÄÄ	kotus/" \
+    -e "s/\(ät\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_HÄÄT	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_OOKOO	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_PUU	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_MAA	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_TEE	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_PII	kotus/" \
+    -e "s/\(y\)	\([^	]*\)	substantiivi	18/\1	NOUN\2	NOUN_PYY	kotus/" \
+    -e "s/\(yyt\)	\([^	]*\)	substantiivi	17/\1	NOUN\2	NOUN_HYNTTYYT	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	substantiivi	17/\1	NOUN\2	NOUN_VAINAA	kotus/" \
+    -e "s/\(oot\)	\([^	]*\)	substantiivi	17/\1	NOUN\2	NOUN_TALKOOT	kotus/" \
+    -e "s/\(oo\)	\([^	]*\)	substantiivi	17/\1	NOUN\2	NOUN_TIENOO	kotus/" \
+    -e "s/\(uu\)	\([^	]*\)	substantiivi	17/\1	NOUN\2	NOUN_LEIKKUU	kotus/" \
+    -e "s/\(ea\)	\([^	]*\)	substantiivi	15/\1	NOUN\2	NOUN_SOKEA	kotus/" \
+    -e "s/\(eä\)	\([^	]*\)	substantiivi	15/\1	NOUN\2	NOUN_LIPEÄ	kotus/" \
+    -e "s/\(tta\)	\([^	]*\)	substantiivi	14\*C/\1	NOUN\2	NOUN_POHATTA	kotus/" \
+    -e "s/\(ppa\)	\([^	]*\)	substantiivi	14\*B/\1	NOUN\2	NOUN_ULAPPA	kotus/" \
+    -e "s/\(kkä\)	\([^	]*\)	substantiivi	14\*A/\1	NOUN\2	NOUN_KÄMMEKKÄ	kotus/" \
+    -e "s/\(kka\)	\([^	]*\)	substantiivi	14\*A/\1	NOUN\2	NOUN_LUSIKKA	kotus/" \
+    -e "s/\(kat\)	\([^	]*\)	substantiivi	14\*A/\1	NOUN\2	NOUN_SILAKAT	kotus/" \
+    -e "s/\(at\)	\([^	]*\)	substantiivi	13/\1	NOUN\2	NOUN_KASTILJAT	kotus/" \
+    -e "s/\(à\)	\([^	]*\)	substantiivi	13/\1	NOUN\2	X_IGNORE	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	13/\1	NOUN\2	NOUN_KITARA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	13/\1	NOUN\2	NOUN_SIIVILÄ	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	12/\1	NOUN\2	NOUN_HÄKKYRÄ	kotus/" \
+    -e "s/\(at\)	\([^	]*\)	substantiivi	12/\1	NOUN\2	NOUN_MARKKINAT	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	12/\1	NOUN\2	NOUN_MAKKARA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	11/\1	NOUN\2	NOUN_KÄPÄLÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	11/\1	NOUN\2	NOUN_PROBLEEMA	kotus/" \
+    -e "s/\(kä\)	\([^	]*\)	substantiivi	10\*L/\1	NOUN\2	NOUN_YLKÄ	kotus/" \
+    -e "s/\(rta\)	\([^	]*\)	substantiivi	10\*K/\1	NOUN\2	NOUN_KERTA	kotus/" \
+    -e "s/\(ntä\)	\([^	]*\)	substantiivi	10\*J/\1	NOUN\2	NOUN_HÄNTÄ	kotus/" \
+    -e "s/\(nta\)	\([^	]*\)	substantiivi	10\*J/\1	NOUN\2	NOUN_KUNTA	kotus/" \
+    -e "s/\(lta\)	\([^	]*\)	substantiivi	10\*I/\1	NOUN\2	NOUN_MULTA	kotus/" \
+    -e "s/\(mpa\)	\([^	]*\)	substantiivi	10\*H/\1	NOUN\2	NOUN_KOMPA	kotus/" \
+    -e "s/\(nkä\)	\([^	]*\)	substantiivi	10\*G/\1	NOUN\2	NOUN_KENKÄ	kotus/" \
+    -e "s/\(nka\)	\([^	]*\)	substantiivi	10\*G/\1	NOUN\2	NOUN_HONKA	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	substantiivi	10\*F/\1	NOUN\2	NOUN_SOTA	kotus/" \
+    -e "s/\(tä\)	\([^	]*\)	substantiivi	10\*F/\1	NOUN\2	NOUN_PÖYTÄ	kotus/" \
+    -e "s/\(pa\)	\([^	]*\)	substantiivi	10\*E/\1	NOUN\2	NOUN_LUPA	kotus/" \
+    -e "s/\(pä\)	\([^	]*\)	substantiivi	10\*E/\1	NOUN\2	NOUN_LEIPÄ	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	substantiivi	10\*D/\1	NOUN\2	NOUN_RUOKA	kotus/" \
+    -e "s/\(kä\)	\([^	]*\)	substantiivi	10\*D/\1	NOUN\2	NOUN_YLKÄ	kotus/" \
+    -e "s/\(tta\)	\([^	]*\)	substantiivi	10\*C/\1	NOUN\2	NOUN_ROTTA	kotus/" \
+    -e "s/\(ttä\)	\([^	]*\)	substantiivi	10\*C/\1	NOUN\2	NOUN_KENTTÄ	kotus/" \
+    -e "s/\(ppa\)	\([^	]*\)	substantiivi	10\*B/\1	NOUN\2	NOUN_KUOPPA	kotus/" \
+    -e "s/\(ppä\)	\([^	]*\)	substantiivi	10\*B/\1	NOUN\2	NOUN_SEPPÄ	kotus/" \
+    -e "s/\(kka\)	\([^	]*\)	substantiivi	10\*A/\1	NOUN\2	NOUN_LUOKKA	kotus/" \
+    -e "s/\(kkä\)	\([^	]*\)	substantiivi	10\*A/\1	NOUN\2	NOUN_HÖLKKÄ	kotus/" \
+    -e "s/\(ät\)	\([^	]*\)	substantiivi	10/\1	NOUN\2	NOUN_KÄRÄJÄT	kotus/" \
+    -e "s/\(at\)	\([^	]*\)	substantiivi	10/\1	NOUN\2	NOUN_JUHLAT	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	(10)/\1	NOUN\2	NOUN_HÖPÖTTÄJÄ	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	10/\1	NOUN\2	NOUN_HÖPÖTTÄJÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	10/\1	NOUN\2	NOUN_VOIMA	kotus/" \
+    -e "s/\([rsRS]\)	\([^	]*\)	substantiivi	10/\1	NOUN\2	X_IGNORE	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	substantiivi	9\*A/\1	NOUN\2	NOUN_POLITIIKKA	kotus/" \
+    -e "s/\(kat\)	\([^	]*\)	substantiivi	9\*A/\1	NOUN\2	NOUN_SUKAT	kotus/" \
+    -e "s/\(pa\)	\([^	]*\)	substantiivi	9\*B/\1	NOUN\2	NOUN_TIPPA	kotus/" \
+    -e "s/\(pat\)	\([^	]*\)	substantiivi	9\*B/\1	NOUN\2	NOUN_HIPAT	kotus/" \
+    -e "s/\(tta\)	\([^	]*\)	substantiivi	9\*C/\1	NOUN\2	NOUN_MITTA	kotus/" \
+    -e "s/\(pa\)	\([^	]*\)	substantiivi	9\*E/\1	NOUN\2	NOUN_SALPA	kotus/" \
+    -e "s/\(aika\)	\([^	]*\)	substantiivi	9\*D/\1	NOUN\2	NOUN_AIKA	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	substantiivi	9\*D/\1	NOUN\2	NOUN_VIKA	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	substantiivi	(9\*D)/\1	NOUN\2	NOUN_VIKA	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	substantiivi	9\*F/\1	NOUN\2	NOUN_PATA	kotus/" \
+    -e "s/\(dat\)	\([^	]*\)	substantiivi	9\*F/\1	NOUN\2	NOUN_RAUDAT	kotus/" \
+    -e "s/\(nka\)	\([^	]*\)	substantiivi	9\*G/\1	NOUN\2	NOUN_LANKA	kotus/" \
+    -e "s/\(mpa\)	\([^	]*\)	substantiivi	9\*H/\1	NOUN\2	NOUN_RAMPA	kotus/" \
+    -e "s/\(lta\)	\([^	]*\)	substantiivi	9\*I/\1	NOUN\2	NOUN_VALTA	kotus/" \
+    -e "s/\(nta\)	\([^	]*\)	substantiivi	9\*J/\1	NOUN\2	NOUN_KUTSUNTA	kotus/" \
+    -e "s/\(rta\)	\([^	]*\)	substantiivi	9\*K/\1	NOUN\2	NOUN_KERTA	kotus/" \
+    -e "s/\(ntä\)	\([^	]*\)	substantiivi	9\*J/\1	NOUN\2	NOUN_KYSYNTÄ	kotus/" \
+    -e "s/\(at\)	\([^	]*\)	substantiivi	9/\1	NOUN\2	NOUN_VARAT	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	9/\1	NOUN\2	NOUN_KIRJA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi	9/\1	NOUN\2	NOUN_YMPÄRYSTÄ	kotus/" \
+    -e "s/\(ppe\)	\([^	]*\)	substantiivi	8\*B/\1	NOUN\2	NOUN_JEPPE	kotus/" \
+    -e "s/\(${B}kke\)	\([^	]*\)	substantiivi	8\*A/\1	NOUN\2	NOUN_NUKKE	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	(8)/\1	NOUN\2	NOUN_NALLE	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	8/\1	NOUN\2	NOUN_NALLE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	substantiivi	8/\1	NOUN\2	NOUN_BERNIE	kotus/" \
+    -e "s/\(${F}et\)	\([^	]*\)	substantiivi	8/\1	NOUN\2	NOUN_BÄNET	kotus/" \
+    -e "s/\(${B}et\)	\([^	]*\)	substantiivi	8/\1	NOUN\2	NOUN_RAVET	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	8/\1	NOUN\2	NOUN_BERNIE	kotus/" \
+    -e "s/\(${B}mpi\)	\([^	]*\)	substantiivi	7\*H/\1	NOUN\2	NOUN_SAMPI	kotus/" \
+    -e "s/\(${F}mpi\)	\([^	]*\)	substantiivi	7\*H/\1	NOUN\2	NOUN_RIMPI	kotus/" \
+    -e "s/\(mpi\)	\([^	]*\)	substantiivi	7\*H/\1	NOUN\2	NOUN_RIMPI	kotus/" \
+    -e "s/\(${B}ki\)	\([^	]*\)	substantiivi	7\*L/\1	NOUN\2	NOUN_ARKI	kotus/" \
+    -e "s/\(${F}ki\)	\([^	]*\)	substantiivi	7\*L/\1	NOUN\2	NOUN_JÄRKI	kotus/" \
+    -e "s/\(ki\)	\([^	]*\)	substantiivi	7\*L/\1	NOUN\2	NOUN_JÄRKI	kotus/" \
+    -e "s/\(${B}nki\)	\([^	]*\)	substantiivi	7\*G/\1	NOUN\2	NOUN_ONKI	kotus/" \
+    -e "s/\(${F}nki\)	\([^	]*\)	substantiivi	7\*G/\1	NOUN\2	NOUN_HENKI	kotus/" \
+    -e "s/\(nki\)	\([^	]*\)	substantiivi	7\*G/\1	NOUN\2	NOUN_HENKI	kotus/" \
+    -e "s/\(${F}nget\)	\([^	]*\)	substantiivi	7\*G/\1	NOUN\2	NOUN_LÄNGET	kotus/" \
+    -e "s/\(${B}ti\)	\([^	]*\)	substantiivi	7\*F/\1	NOUN\2	NOUN_LAHTI	kotus/" \
+    -e "s/\(${F}ti\)	\([^	]*\)	substantiivi	7\*F/\1	NOUN\2	NOUN_LEHTI	kotus/" \
+    -e "s/\(ti\)	\([^	]*\)	substantiivi	7\*F/\1	NOUN\2	NOUN_LEHTI	kotus/" \
+    -e "s/\(${B}pi\)	\([^	]*\)	substantiivi	7\*E/\1	NOUN\2	NOUN_KORPI	kotus/" \
+    -e "s/\(${B}ki\)	\([^	]*\)	substantiivi	7\*D/\1	NOUN\2	NOUN_NOKI	kotus/" \
+    -e "s/\(${F}ki\)	\([^	]*\)	substantiivi	7\*D/\1	NOUN\2	NOUN_KÄKI	kotus/" \
+    -e "s/\(ki\)	\([^	]*\)	substantiivi	7\*D/\1	NOUN\2	NOUN_KÄKI	kotus/" \
+    -e "s/\(${F}pi\)	\([^	]*\)	substantiivi	7\*E/\1	NOUN\2	NOUN_KILPI	kotus/" \
+    -e "s/\(pi\)	\([^	]*\)	substantiivi	7\*E/\1	NOUN\2	NOUN_KILPI	kotus/" \
+    -e "s/\(${B}pi\)	\([^	]*\)	substantiivi	7\*B/\1	NOUN\2	NOUN_HAPPI	kotus/" \
+    -e "s/\(${F}pi\)	\([^	]*\)	substantiivi	7\*B/\1	NOUN\2	NOUN_TYPPI	kotus/" \
+    -e "s/\(pi\)	\([^	]*\)	substantiivi	7\*B/\1	NOUN\2	NOUN_TYPPI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	7/\1	NOUN\2	NOUN_KIVI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	7/\1	NOUN\2	NOUN_ONNI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	7/\1	NOUN\2	NOUN_KIVI	kotus/" \
+    -e "s/\(${B}et\)	\([^	]*\)	substantiivi	7/\1	NOUN\2	NOUN_XXXSET	kotus/" \
+    -e "s/\(${F}et\)	\([^	]*\)	substantiivi	7/\1	NOUN\2	NOUN_RIPSET	kotus/" \
+    -e "s/\(et\)	\([^	]*\)	substantiivi	7/\1	NOUN\2	NOUN_RIPSET	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	6/\1	NOUN\2	NOUN_KEHVELI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	6/\1	NOUN\2	NOUN_KANAALI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	6/\1	NOUN\2	NOUN_KEHVELI	kotus/" \
+    -e "s/\(${F}${C}\)	\([^	]*\)	substantiivi	6/\1	NOUN\2	NOUN_BESSERWISSER	kotus/" \
+    -e "s/\(${B}${C}\)	\([^	]*\)	substantiivi	6/\1	NOUN\2	NOUN_STADION	kotus/" \
+    -e "s/\(${C}\)	\([^	]*\)	substantiivi	6/\1	NOUN\2	NOUN_BESSERWISSER	kotus/" \
+    -e "s/\(${F}kki\)	\([^	]*\)	substantiivi	5\*A/\1	NOUN\2	NOUN_HÄKKI	kotus/" \
+    -e "s/\(${B}kki\)	\([^	]*\)	substantiivi	5\*A/\1	NOUN\2	NOUN_LOKKI	kotus/" \
+    -e "s/\(kki\)	\([^	]*\)	substantiivi	5\*A/\1	NOUN\2	NOUN_HÄKKI	kotus/" \
+    -e "s/\(${B}ppi\)	\([^	]*\)	substantiivi	5\*B/\1	NOUN\2	NOUN_KUPPI	kotus/" \
+    -e "s/\(${F}ppi\)	\([^	]*\)	substantiivi	5\*B/\1	NOUN\2	NOUN_TYYPPI	kotus/" \
+    -e "s/\(ppi\)	\([^	]*\)	substantiivi	5\*B/\1	NOUN\2	NOUN_TYYPPI	kotus/" \
+    -e "s/\(${B}tti\)	\([^	]*\)	substantiivi	5\*C/\1	NOUN\2	NOUN_KORTTI	kotus/" \
+    -e "s/\(${F}tti\)	\([^	]*\)	substantiivi	5\*C/\1	NOUN\2	NOUN_SKEITTI	kotus/" \
+    -e "s/\(tti\)	\([^	]*\)	substantiivi	5\*C/\1	NOUN\2	NOUN_SKEITTI	kotus/" \
+    -e "s/\(${B}tit\)	\([^	]*\)	substantiivi	5\*C/\1	NOUN\2	NOUN_KASTANJETIT	kotus/" \
+    -e "s/\(${F}tit\)	\([^	]*\)	substantiivi	5\*C/\1	NOUN\2	NOUN_PINSETIT	kotus/" \
+    -e "s/\(tit\)	\([^	]*\)	substantiivi	5\*C/\1	NOUN\2	NOUN_PINSETIT	kotus/" \
+    -e "s/\(${B}ki\)	\([^	]*\)	substantiivi	5\*D/\1	NOUN\2	NOUN_LAKI	kotus/" \
+    -e "s/\(${B}pi\)	\([^	]*\)	substantiivi	5\*E/\1	NOUN\2	NOUN_HUPI	kotus/" \
+    -e "s/\(${B}ti\)	\([^	]*\)	substantiivi	5\*F/\1	NOUN\2	NOUN_TAUTI	kotus/" \
+    -e "s/\(${F}ti\)	\([^	]*\)	substantiivi	5\*F/\1	NOUN\2	NOUN_NIHTI	kotus/" \
+    -e "s/\(ti\)	\([^	]*\)	substantiivi	5\*F/\1	NOUN\2	NOUN_NIHTI	kotus/" \
+    -e "s/\(${F}dit\)	\([^	]*\)	substantiivi	5\*F/\1	NOUN\2	NOUN_PIHDIT	kotus/" \
+    -e "s/\(dit\)	\([^	]*\)	substantiivi	5\*F/\1	NOUN\2	NOUN_PIHDIT	kotus/" \
+    -e "s/\(${B}ngit\)	\([^	]*\)	substantiivi	5\*G/\1	NOUN\2	NOUN_TONGIT	kotus/" \
+    -e "s/\(${F}ngit\)	\([^	]*\)	substantiivi	5\*G/\1	NOUN\2	NOUN_SYÖMINGIT	kotus/" \
+    -e "s/\(ngit\)	\([^	]*\)	substantiivi	5\*G/\1	NOUN\2	NOUN_SYÖMINGIT	kotus/" \
+    -e "s/\(${B}nki\)	\([^	]*\)	substantiivi	5\*G/\1	NOUN\2	NOUN_VANKI	kotus/" \
+    -e "s/\(${F}nki\)	\([^	]*\)	substantiivi	5\*G/\1	NOUN\2	NOUN_HÄMMINKI	kotus/" \
+    -e "s/\(nki\)	\([^	]*\)	substantiivi	5\*G/\1	NOUN\2	NOUN_HÄMMINKI	kotus/" \
+    -e "s/\(${F}lti\)	\([^	]*\)	substantiivi	5\*I/\1	NOUN\2	NOUN_PELTI	kotus/" \
+    -e "s/\(lti\)	\([^	]*\)	substantiivi	5\*I/\1	NOUN\2	NOUN_PELTI	kotus/" \
+    -e "s/\(${B}nti\)	\([^	]*\)	substantiivi	5\*J/\1	NOUN\2	NOUN_SOINTI	kotus/" \
+    -e "s/\(${F}nti\)	\([^	]*\)	substantiivi	5\*J/\1	NOUN\2	NOUN_VIENTI	kotus/" \
+    -e "s/\(nti\)	\([^	]*\)	substantiivi	5\*J/\1	NOUN\2	NOUN_VIENTI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_RUUVI	kotus/" \
+    -e "s/\(${B}I\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_RUUVI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_TYYLI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_TYYLI	kotus/" \
+    -e "s/\(${B}${C}\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_PUNK	kotus/" \
+    -e "s/\(${F}${C}\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_ZEN	kotus/" \
+    -e "s/\(${C}\)	\([^	]*\)	substantiivi	5/\1	NOUN\2	NOUN_ZEN	kotus/" \
+    -e "s/\(kkö\)	\([^	]*\)	substantiivi	4\*A/\1	NOUN\2	NOUN_YKSIKKÖ	kotus/" \
+    -e "s/\(kko\)	\([^	]*\)	substantiivi	4\*A/\1	NOUN\2	NOUN_LEPAKKO	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	3/\1	NOUN\2	NOUN_ZOMBIE	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi	3/\1	NOUN\2	NOUN_HÄIRIÖ	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi	3/\1	NOUN\2	NOUN_TUOMIO	kotus/" \
+    -e "s/\(ot\)	\([^	]*\)	substantiivi	3/\1	NOUN\2	NOUN_RAUNIOT	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_NALLE	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_JÄÄTELÖ	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_RUIPELO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi	(2)/\1	NOUN\2	NOUN_RUIPELO	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_NEUVOTTELUT	kotus/" \
+    -e "s/\(ot\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_PIPPALOT	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_SEIKKAILU	kotus/" \
+    -e "s/\(y\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	NOUN_VEHKEILY	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi	2/\1	NOUN\2	X_IGNORE	kotus/" \
+    -e "s/\(kku\)	\([^	]*\)	substantiivi	1\*A/\1	NOUN\2	NOUN_TIKKU	kotus/" \
+    -e "s/\(kky\)	\([^	]*\)	substantiivi	1\*A/\1	NOUN\2	NOUN_MYRKKY	kotus/" \
+    -e "s/\(kko\)	\([^	]*\)	substantiivi	1\*A/\1	NOUN\2	NOUN_UKKO	kotus/" \
+    -e "s/\(kkö\)	\([^	]*\)	substantiivi	1\*A/\1	NOUN\2	NOUN_YÖKKÖ	kotus/" \
+    -e "s/\(ppö\)	\([^	]*\)	substantiivi	1\*B/\1	NOUN\2	NOUN_TÖRPPÖ	kotus/" \
+    -e "s/\(ppo\)	\([^	]*\)	substantiivi	1\*B/\1	NOUN\2	NOUN_HAPPO	kotus/" \
+    -e "s/\(ppu\)	\([^	]*\)	substantiivi	1\*B/\1	NOUN\2	NOUN_LIPPU	kotus/" \
+    -e "s/\(ppy\)	\([^	]*\)	substantiivi	1\*B/\1	NOUN\2	NOUN_RYYPPY	kotus/" \
+    -e "s/\(put\)	\([^	]*\)	substantiivi	1\*B/\1	NOUN\2	NOUN_RAPUT	kotus/" \
+    -e "s/\(tty\)	\([^	]*\)	substantiivi	1\*C/\1	NOUN\2	NOUN_PYTTY	kotus/" \
+    -e "s/\(ttu\)	\([^	]*\)	substantiivi	1\*C/\1	NOUN\2	NOUN_TORTTU	kotus/" \
+    -e "s/\(tto\)	\([^	]*\)	substantiivi	1\*C/\1	NOUN\2	NOUN_HIRTTO	kotus/" \
+    -e "s/\(ttö\)	\([^	]*\)	substantiivi	1\*C/\1	NOUN\2	NOUN_PÖNTTÖ	kotus/" \
+    -e "s/\(kö\)	\([^	]*\)	substantiivi	1\*D/\1	NOUN\2	NOUN_NÄKÖ	kotus/" \
+    -e "s/\(ko\)	\([^	]*\)	substantiivi	1\*D/\1	NOUN\2	NOUN_TEKO	kotus/" \
+    -e "s/\(ku\)	\([^	]*\)	substantiivi	1\*D/\1	NOUN\2	NOUN_MAKU	kotus/" \
+    -e "s/\(ky\)	\([^	]*\)	substantiivi	1\*D/\1	NOUN\2	NOUN_HYLKY	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	substantiivi	1\*D/\1	NOUN\2	NOUN_FARKUT	kotus/" \
+    -e "s/\(po\)	\([^	]*\)	substantiivi	1\*E/\1	NOUN\2	NOUN_HEPO	kotus/" \
+    -e "s/\(pu\)	\([^	]*\)	substantiivi	1\*E/\1	NOUN\2	NOUN_APU	kotus/" \
+    -e "s/\(py\)	\([^	]*\)	substantiivi	1\*E/\1	NOUN\2	NOUN_KÄPY	kotus/" \
+    -e "s/\(tö\)	\([^	]*\)	substantiivi	1\*F/\1	NOUN\2	NOUN_HÄÄTÖ	kotus/" \
+    -e "s/\(to\)	\([^	]*\)	substantiivi	1\*F/\1	NOUN\2	NOUN_VETO	kotus/" \
+    -e "s/\(dot\)	\([^	]*\)	substantiivi	1\*F/\1	NOUN\2	NOUN_PIDOT	kotus/" \
+    -e "s/\(tu\)	\([^	]*\)	substantiivi	1\*F/\1	NOUN\2	NOUN_KUITU	kotus/" \
+    -e "s/\(ty\)	\([^	]*\)	substantiivi	1\*F/\1	NOUN\2	NOUN_VETY	kotus/" \
+    -e "s/\(dyt\)	\([^	]*\)	substantiivi	1\*F/\1	NOUN\2	NOUN_KÄÄDYT	kotus/" \
+    -e "s/\(nkö\)	\([^	]*\)	substantiivi	1\*G/\1	NOUN\2	NOUN_YLÄNKÖ	kotus/" \
+    -e "s/\(nky\)	\([^	]*\)	substantiivi	1\*G/\1	NOUN\2	NOUN_SÄNKY	kotus/" \
+    -e "s/\(nku\)	\([^	]*\)	substantiivi	1\*G/\1	NOUN\2	NOUN_VINKU	kotus/" \
+    -e "s/\(nko\)	\([^	]*\)	substantiivi	1\*G/\1	NOUN\2	NOUN_RUNKO	kotus/" \
+    -e "s/\(mpu\)	\([^	]*\)	substantiivi	1\*H/\1	NOUN\2	NOUN_RUMPU	kotus/" \
+    -e "s/\(mpo\)	\([^	]*\)	substantiivi	1\*H/\1	NOUN\2	NOUN_SAMPO	kotus/" \
+    -e "s/\(mpö\)	\([^	]*\)	substantiivi	1\*H/\1	NOUN\2	NOUN_LÄMPÖ	kotus/" \
+    -e "s/\(ntu\)	\([^	]*\)	substantiivi	1\*J/\1	NOUN\2	NOUN_LINTU	kotus/" \
+    -e "s/\(nty\)	\([^	]*\)	substantiivi	1\*J/\1	NOUN\2	NOUN_MÄNTY	kotus/" \
+    -e "s/\(nto\)	\([^	]*\)	substantiivi	1\*J/\1	NOUN\2	NOUN_TUNTO	kotus/" \
+    -e "s/\(nnot\)	\([^	]*\)	substantiivi	1\*J/\1	NOUN\2	NOUN_OPINNOT	kotus/" \
+    -e "s/\(ntö\)	\([^	]*\)	substantiivi	1\*J/\1	NOUN\2	NOUN_KÄÄNTÖ	kotus/" \
+    -e "s/\(lto\)	\([^	]*\)	substantiivi	1\*I/\1	NOUN\2	NOUN_KIELTO	kotus/" \
+    -e "s/\(ltö\)	\([^	]*\)	substantiivi	1\*I/\1	NOUN\2	NOUN_SISÄLTO	kotus/" \
+    -e "s/\(lty\)	\([^	]*\)	substantiivi	1\*I/\1	NOUN\2	NOUN_EPÄILTY	kotus/" \
+    -e "s/\(rto\)	\([^	]*\)	substantiivi	1\*K/\1	NOUN\2	NOUN_SIIRTO	kotus/" \
+    -e "s/\(uku\)	\([^	]*\)	substantiivi	1\*M/\1	NOUN\2	NOUN_LUKU	kotus/" \
+    -e "s/\(yky\)	\([^	]*\)	substantiivi	1\*M/\1	NOUN\2	NOUN_KYKY	kotus/" \
+    -e "s/\(ot\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_AIVOT	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_TALO	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi	(1)/\1	NOUN\2	NOUN_ASU	kotus/" \
+    -e "s/\(kut\)	\([^	]*\)	substantiivi	1\*A/\1	NOUN\2	NOUN_FARKUT	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_HOUSUT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_PÖKSYT	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	X_IGNORE	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_ASU	kotus/" \
+    -e "s/\(Y\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_KÄRRY	kotus/" \
+    -e "s/\(y\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_KÄRRY	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi	1/\1	NOUN\2	NOUN_MÖMMÖ	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi	100/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi	99/\1	ADJ\2	ADJ_PIKKU	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi	50/\1	ADJ\2	ADJ_50XXX	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	adjektiivi	48\*F/\1	ADJ\2	ADJ_KADE	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	adjektiivi	48/\1	ADJ\2	ADJ_AHNE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	adjektiivi	48/\1	ADJ\2	ADJ_TERVE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	adjektiivi	48/\1	ADJ\2	ADJ_TERVE	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	adjektiivi	47/\1	ADJ\2	ADJ_KULUNUT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	adjektiivi	47/\1	ADJ\2	ADJ_ÄLLISTYNYT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	adjektiivi	43/\1	ADJ\2	ADJ_EHYT	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	adjektiivi	43/\1	ADJ\2	ADJ_OHUT	kotus/" \
+    -e "s/\(käs\)	\([^	]*\)	adjektiivi	41\*A/\1	ADJ\2	ADJ_TYYLIKÄS	kotus/" \
+    -e "s/\(kas\)	\([^	]*\)	adjektiivi	41\*A/\1	ADJ\2	ADJ_VOIMAKAS	kotus/" \
+    -e "s/\(pas\)	\([^	]*\)	adjektiivi	41\*B/\1	ADJ\2	ADJ_REIPAS	kotus/" \
+    -e "s/\(tis\)	\([^	]*\)	adjektiivi	41\*C/\1	ADJ\2	ADJ_RAITIS	kotus/" \
+    -e "s/\(tas\)	\([^	]*\)	adjektiivi	41\*C/\1	ADJ\2	ADJ_RIETAS	kotus/" \
+    -e "s/\(das\)	\([^	]*\)	adjektiivi	41\*F/\1	ADJ\2	ADJ_HIDAS	kotus/" \
+    -e "s/\(ras\)	\([^	]*\)	adjektiivi	41\*K/\1	ADJ\2	ADJ_HARRAS	kotus/" \
+    -e "s/\(${B}is\)	\([^	]*\)	adjektiivi	41/\1	ADJ\2	ADJ_VALMIS	kotus/" \
+    -e "s/\(${F}is\)	\([^	]*\)	adjektiivi	41/\1	ADJ\2	ADJ_TIIVIS	kotus/" \
+    -e "s/\(is\)	\([^	]*\)	adjektiivi	41/\1	ADJ\2	ADJ_TIIVIS	kotus/" \
+    -e "s/\(äs\)	\([^	]*\)	adjektiivi	41/\1	ADJ\2	ADJ_TYÖLÄS	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	adjektiivi	41/\1	ADJ\2	ADJ_AUTUAS	kotus/" \
+    -e "s/\(${F}es\)	\([^	]*\)	adjektiivi	39/\1	ADJ\2	ADJ_SYMPPIS	kotus/" \
+    -e "s/\(${F}is\)	\([^	]*\)	adjektiivi	39/\1	ADJ\2	ADJ_SYMPPIS	kotus/" \
+    -e "s/\(es\)	\([^	]*\)	adjektiivi	39/\1	ADJ\2	ADJ_SYMPPIS	kotus/" \
+    -e "s/\(is\)	\([^	]*\)	adjektiivi	39/\1	ADJ\2	ADJ_SYMPPIS	kotus/" \
+    -e "s/\(${F}nen\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	ADJ_KYLMÄJÄRKINEN	kotus/" \
+    -e "s/\(${B}nen\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	ADJ_AAKKOSELLINEN	kotus/" \
+    -e "s/\(sensa\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(seni\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(sesi\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(nenkin\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(nen\)	\([^	]*\)	adjektiivi	38/\1	ADJ\2	ADJ_KYLMÄJÄRKINEN	kotus/" \
+    -e "s/\(sen\)	\([^	]*\)	adjektiivi	37/\1	ADJ\2	ADJ_VASEN	kotus/" \
+    -e "s/\(${B}in\)	\([^	]*\)	adjektiivi	36/\1	ADJ\2	ADJ_PAHIN	kotus/" \
+    -e "s/\(${F}in\)	\([^	]*\)	adjektiivi	36/\1	ADJ\2	ADJ_SISIN	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	adjektiivi	36/\1	ADJ\2	ADJ_SISIN	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	adjektiivi	35\*H/\1	ADJ\2	ADJ_LÄMMIN	kotus/" \
+    -e "s/\(tön\)	\([^	]*\)	adjektiivi	34\*C/\1	ADJ\2	ADJ_KYVYTÖN	kotus/" \
+    -e "s/\(ton\)	\([^	]*\)	adjektiivi	34\*C/\1	ADJ\2	ADJ_VIATON	kotus/" \
+    -e "s/\(tön\)	\([^	]*\)	adjektiivi	34\*A/\1	ADJ\2	ADJ_KYVYTÖN	kotus/" \
+    -e "s/\(ton\)	\([^	]*\)	adjektiivi	34/\1	ADJ\2	ADJ_ALASTON	kotus/" \
+    -e "s/\(${B}n\)	\([^	]*\)	adjektiivi	33\*B/\1	ADJ\2	ADJ_HAPAN	kotus/" \
+    -e "s/\(${B}n\)	\([^	]*\)	adjektiivi	33/\1	ADJ\2	ADJ_AVOIN	kotus/" \
+    -e "s/\(${F}n\)	\([^	]*\)	adjektiivi	32/\1	ADJ\2	ADJ_TYVEN	kotus/" \
+    -e "s/\(si\)	\([^	]*\)	adjektiivi	27/\1	ADJ\2	ADJ_UUSI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	adjektiivi	26/\1	ADJ\2	ADJ_SUURI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	adjektiivi	26/\1	ADJ\2	ADJ_PIENI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	adjektiivi	26/\1	ADJ\2	ADJ_PIENI	kotus/" \
+    -e "s/\(${B}ee\)	\([^	]*\)	adjektiivi	21/\1	ADJ\2	ADJ_TAXFREE	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	adjektiivi	17/\1	ADJ\2	ADJ_VAPAA	kotus/" \
+    -e "s/\(${B}mpi\)	\([^	]*\)	adjektiivi	16\*H/\1	ADJ\2	ADJ_AIEMPI	kotus/" \
+    -e "s/\(${F}mpi\)	\([^	]*\)	adjektiivi	16\*H/\1	ADJ\2	ADJ_LÄHEMPI	kotus/" \
+    -e "s/\(mpi\)	\([^	]*\)	adjektiivi	16\*H/\1	ADJ\2	ADJ_LÄHEMPI	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi	15/\1	ADJ\2	ADJ_JÄREÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi	15/\1	ADJ\2	ADJ_AINOA	kotus/" \
+    -e "s/\(kkä\)	\([^	]*\)	adjektiivi	14\*A/\1	ADJ\2	ADJ_RÄVÄKKÄ	kotus/" \
+    -e "s/\(kka\)	\([^	]*\)	adjektiivi	14\*A/\1	ADJ\2	ADJ_HAILAKKA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi	13/\1	ADJ\2	ADJ_LATUSKA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi	12/\1	ADJ\2	ADJ_HÖPPÄNÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi	11/\1	ADJ\2	ADJ_HAPERA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi	11/\1	ADJ\2	ADJ_SÄKKÄRÄ	kotus/" \
+    -e "s/\(rta\)	\([^	]*\)	adjektiivi	10\*K/\1	ADJ\2	ADJ_TURTA	kotus/" \
+    -e "s/\(ntä\)	\([^	]*\)	adjektiivi	10\*J/\1	ADJ\2	ADJ_LÄNTÄ	kotus/" \
+    -e "s/\(nta\)	\([^	]*\)	adjektiivi	10\*J/\1	ADJ\2	ADJ_VIHANTA	kotus/" \
+    -e "s/\(nkä\)	\([^	]*\)	adjektiivi	10\*G/\1	ADJ\2	ADJ_VÄNKÄ	kotus/" \
+    -e "s/\(pa\)	\([^	]*\)	adjektiivi	10\*E/\1	ADJ\2	ADJ_VOIPA	kotus/" \
+    -e "s/\(pä\)	\([^	]*\)	adjektiivi	10\*E/\1	ADJ\2	ADJ_KÄYPÄ	kotus/" \
+    -e "s/\(kä\)	\([^	]*\)	adjektiivi	10\*D/\1	ADJ\2	ADJ_MÄRKÄ	kotus/" \
+    -e "s/\(pä\)	\([^	]*\)	adjektiivi	10\*B/\1	ADJ\2	ADJ_HÖMPPÄ	kotus/" \
+    -e "s/\(kä\)	\([^	]*\)	adjektiivi	10\*A/\1	ADJ\2	ADJ_MYKKÄ	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	adjektiivi	10\*A/\1	ADJ\2	ADJ_HOIKKA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi	10/\1	ADJ\2	ADJ_RUMA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi	10/\1	ADJ\2	ADJ_MATALA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi	10/\1	ADJ\2	ADJ_TYHMÄ	kotus/" \
+    -e "s/\(mpa\)	\([^	]*\)	adjektiivi	9\*H/\1	ADJ\2	ADJ_RAMPA	kotus/" \
+    -e "s/\(pa\)	\([^	]*\)	adjektiivi	9\*B/\1	ADJ\2	ADJ_POPPA	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	adjektiivi	9\*D/\1	ADJ\2	ADJ_TARKKA	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	adjektiivi	9\*F/\1	ADJ\2	ADJ_EHTA	kotus/" \
+    -e "s/\(pa\)	\([^	]*\)	adjektiivi	9\*E/\1	ADJ\2	ADJ_HALPA	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	adjektiivi	9\*C/\1	ADJ\2	ADJ_MATTA	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	adjektiivi	9\*A/\1	ADJ\2	ADJ_TARKKA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi	9/\1	ADJ\2	ADJ_XXXA	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	adjektiivi	8/\1	ADJ\2	ADJ_XXXXE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	adjektiivi	8/\1	ADJ\2	ADJ_BEIGE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	adjektiivi	8/\1	ADJ\2	ADJ_BEIGE	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	adjektiivi	6/\1	ADJ\2	ADJ_ABNORMAALI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	adjektiivi	6/\1	ADJ\2	ADJ_ÖYKKÄRI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	adjektiivi	6/\1	ADJ\2	ADJ_ÖYKKÄRI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	adjektiivi	6/\1	ADJ\2	ADJ_ÖYKKÄRI	kotus/" \
+    -e "s/\(${C}\)	\([^	]*\)	adjektiivi	6/\1	ADJ\2	ADJ_RANDOM	kotus/" \
+    -e "s/\(${B}ti\)	\([^	]*\)	adjektiivi	5\*F/\1	ADJ\2	ADJ_TUHTI	kotus/" \
+    -e "s/\(${F}ti\)	\([^	]*\)	adjektiivi	5\*F/\1	ADJ\2	ADJ_REHTI	kotus/" \
+    -e "s/\(ti\)	\([^	]*\)	adjektiivi	5\*F/\1	ADJ\2	ADJ_REHTI	kotus/" \
+    -e "s/\(${B}tti\)	\([^	]*\)	adjektiivi	5\*C/\1	ADJ\2	ADJ_XXXTTI	kotus/" \
+    -e "s/\(${F}tti\)	\([^	]*\)	adjektiivi	5\*C/\1	ADJ\2	ADJ_VÄÄRTTI	kotus/" \
+    -e "s/\(tti\)	\([^	]*\)	adjektiivi	5\*C/\1	ADJ\2	ADJ_VÄÄRTTI	kotus/" \
+    -e "s/\(${F}ppi\)	\([^	]*\)	adjektiivi	5\*B/\1	ADJ\2	ADJ_SIPPI	kotus/" \
+    -e "s/\(${B}ppi\)	\([^	]*\)	adjektiivi	5\*B/\1	ADJ\2	ADJ_SKARPPI	kotus/" \
+    -e "s/\(ppi\)	\([^	]*\)	adjektiivi	5\*B/\1	ADJ\2	ADJ_SIPPI	kotus/" \
+    -e "s/\(${B}kki\)	\([^	]*\)	adjektiivi	5\*A/\1	ADJ\2	ADJ_XXXKKI	kotus/" \
+    -e "s/\(${F}kki\)	\([^	]*\)	adjektiivi	5\*A/\1	ADJ\2	ADJ_PINKKI	kotus/" \
+    -e "s/\(kki\)	\([^	]*\)	adjektiivi	5\*A/\1	ADJ\2	ADJ_PINKKI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	adjektiivi	5/\1	ADJ\2	ADJ_STYDI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	adjektiivi	5/\1	ADJ\2	ADJ_ABNORMI	kotus/" \
+    -e "s/\(${B}[lrncd]\)	\([^	]*\)	adjektiivi	5/\1	ADJ\2	ADJ_COOL	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	adjektiivi	5/\1	ADJ\2	ADJ_STYDI	kotus/" \
+    -e "s/\([nlrcd]\)	\([^	]*\)	adjektiivi	(5)/\1	ADJ\2	ADJ_CHIC	kotus/" \
+    -e "s/\(kko\)	\([^	]*\)	adjektiivi	4\*A/\1	ADJ\2	ADJ_HUPAKKO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi	3/\1	ADJ\2	ADJ_AUTIO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi	2/\1	ADJ\2	ADJ_KOHELO	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	adjektiivi	2/\1	ADJ\2	ADJ_LÖPERÖ	kotus/" \
+    -e "s/\(kku\)	\([^	]*\)	adjektiivi	1\*A/\1	ADJ\2	ADJ_VIRKKU	kotus/" \
+    -e "s/\(kko\)	\([^	]*\)	adjektiivi	1\*A/\1	ADJ\2	ADJ_KOLKKO	kotus/" \
+    -e "s/\(kkö\)	\([^	]*\)	adjektiivi	1\*A/\1	ADJ\2	ADJ_KÖKKÖ	kotus/" \
+    -e "s/\(kky\)	\([^	]*\)	adjektiivi	1\*A/\1	ADJ\2	ADJ_SÄIKKY	kotus/" \
+    -e "s/\(ppo\)	\([^	]*\)	adjektiivi	1\*B/\1	ADJ\2	ADJ_SUIPPO	kotus/" \
+    -e "s/\(ppö\)	\([^	]*\)	adjektiivi	1\*B/\1	ADJ\2	ADJ_LÖRPPÖ	kotus/" \
+    -e "s/\(ttu\)	\([^	]*\)	adjektiivi	1\*C/\1	ADJ\2	ADJ_VIMMATTU	kotus/" \
+    -e "s/\(tty\)	\([^	]*\)	adjektiivi	1\*C/\1	ADJ\2	ADJ_YLENNETTY	kotus/" \
+    -e "s/\(tto\)	\([^	]*\)	adjektiivi	1\*C/\1	ADJ\2	ADJ_VELTTO	kotus/" \
+    -e "s/\(ttö\)	\([^	]*\)	adjektiivi	1\*C/\1	ADJ\2	ADJ_PÖNTTÖ	kotus/" \
+    -e "s/\(to\)	\([^	]*\)	adjektiivi	1\*F/\1	ADJ\2	ADJ_MIETO	kotus/" \
+    -e "s/\(tu\)	\([^	]*\)	adjektiivi	1\*F/\1	ADJ\2	ADJ_VIIPALOITU	kotus/" \
+    -e "s/\(ty\)	\([^	]*\)	adjektiivi	1\*F/\1	ADJ\2	ADJ_YKSILÖITY	kotus/" \
+    -e "s/\(po\)	\([^	]*\)	adjektiivi	(1\*E)/\1	ADJ\2	ADJ_KELPO	kotus/" \
+    -e "s/\(po\)	\([^	]*\)	adjektiivi	1\*E/\1	ADJ\2	ADJ_KELPO	kotus/" \
+    -e "s/\(nko\)	\([^	]*\)	adjektiivi	1\*G/\1	ADJ\2	ADJ_LENKO	kotus/" \
+    -e "s/\(ltu\)	\([^	]*\)	adjektiivi	1\*I/\1	ADJ\2	ADJ_PARANNELTU	kotus/" \
+    -e "s/\(lto\)	\([^	]*\)	adjektiivi	1\*I/\1	ADJ\2	ADJ_MELTO	kotus/" \
+    -e "s/\(nto\)	\([^	]*\)	adjektiivi	1\*J/\1	ADJ\2	ADJ_VENTO	kotus/" \
+    -e "s/\(rto\)	\([^	]*\)	adjektiivi	1\*K/\1	ADJ\2	ADJ_MARTO	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	adjektiivi	1/\1	ADJ\2	ADJ_HÖLÖ	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi	1/\1	ADJ\2	ADJ_TUMMAHKO	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	adjektiivi	1/\1	ADJ\2	ADJ_VALKAISTU	kotus/" \
+    -e "s/\(y\)	\([^	]*\)	adjektiivi	1/\1	ADJ\2	ADJ_HÄPÄISTY	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	verbi	100/\1	VERB\2	VERB_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	verbi	99/\1	VERB\2	VERB_XXX	kotus/" \
+    -e "s/\(ää\)	\([^	]*\)	verbi	78/\1	VERB\2	VERB_ÄHKÄÄ	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	verbi	78/\1	VERB\2	VERB_RAIKAA	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	verbi	77/\1	VERB\2	VERB_KUMAJAA	kotus/" \
+    -e "s/\(ää\)	\([^	]*\)	verbi	77/\1	VERB\2	VERB_HELÄJÄÄ	kotus/" \
+    -e "s/\(tää\)	\([^	]*\)	verbi	76\*F/\1	VERB\2	VERB_TIETÄÄ	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	76\*F/\1	VERB\2	VERB_TAITAA	kotus/" \
+    -e "s/\(llota\)	\([^	]*\)	verbi	75\*I/\1	VERB\2	VERB_AALLOTA	kotus/" \
+    -e "s/\(llitä\)	\([^	]*\)	verbi	75\*I/\1	VERB\2	VERB_HELLITÄ	kotus/" \
+    -e "s/\(mmitä\)	\([^	]*\)	verbi	75\*H/\1	VERB\2	VERB_LÄMMITÄ	kotus/" \
+    -e "s/\(dota\)	\([^	]*\)	verbi	75\*F/\1	VERB\2	VERB_MUODOTA	kotus/" \
+    -e "s/\(itä\)	\([^	]*\)	verbi	75\*D/\1	VERB\2	VERB_KERITÄ	kotus/" \
+    -e "s/\(tota\)	\([^	]*\)	verbi	75\*C/\1	VERB\2	VERB_PEITOTA	kotus/" \
+    -e "s/\(pytä\)	\([^	]*\)	verbi	75\*B/\1	VERB\2	VERB_KERITÄ	kotus/" \
+    -e "s/\(ita\)	\([^	]*\)	verbi	75/\1	VERB\2	VERB_LASSOTA	kotus/" \
+    -e "s/\(ytä\)	\([^	]*\)	verbi	75/\1	VERB\2	VERB_SELVITÄ	kotus/" \
+    -e "s/\(uta\)	\([^	]*\)	verbi	75/\1	VERB\2	VERB_HALUTA	kotus/" \
+    -e "s/\(ota\)	\([^	]*\)	verbi	75/\1	VERB\2	VERB_LASSOTA	kotus/" \
+    -e "s/\(itä\)	\([^	]*\)	verbi	75/\1	VERB\2	VERB_SELVITÄ	kotus/" \
+    -e "s/\(etä\)	\([^	]*\)	verbi	75/\1	VERB\2	VERB_SELVITÄ	kotus/" \
+    -e "s/\(keta\)	\([^	]*\)	verbi	74\*A/\1	VERB\2	VERB_POIKETA	kotus/" \
+    -e "s/\(kota\)	\([^	]*\)	verbi	74\*A/\1	VERB\2	VERB_KAIKOTA	kotus/" \
+    -e "s/\(kuta\)	\([^	]*\)	verbi	74\*A/\1	VERB\2	VERB_KOUKUTA	kotus/" \
+    -e "s/\(pota\)	\([^	]*\)	verbi	74\*B/\1	VERB\2	VERB_UPOTA	kotus/" \
+    -e "s/\(puta\)	\([^	]*\)	verbi	74\*B/\1	VERB\2	VERB_PULPUTA	kotus/" \
+    -e "s/\(tota\)	\([^	]*\)	verbi	74\*C/\1	VERB\2	VERB_LOTOTA	kotus/" \
+    -e "s/\(tuta\)	\([^	]*\)	verbi	74\*C/\1	VERB\2	VERB_LUUTUTA	kotus/" \
+    -e "s/\(ota\)	\([^	]*\)	verbi	74\*D/\1	VERB\2	VERB_KAIKOTA	kotus/" \
+    -e "s/\(etä\)	\([^	]*\)	verbi	74\*D/\1	VERB\2	VERB_KERETÄ	kotus/" \
+    -e "s/\(eta\)	\([^	]*\)	verbi	74\*D/\1	VERB\2	VERB_POIKETA	kotus/" \
+    -e "s/\(veta\)	\([^	]*\)	verbi	74\*E/\1	VERB\2	VERB_KORVETA	kotus/" \
+    -e "s/\(vetä\)	\([^	]*\)	verbi	74\*E/\1	VERB\2	VERB_REVETÄ	kotus/" \
+    -e "s/\(vota\)	\([^	]*\)	verbi	74\*E/\1	VERB\2	VERB_KIRVOTA	kotus/" \
+    -e "s/\(vuta\)	\([^	]*\)	verbi	74\*E/\1	VERB\2	VERB_KIVUTA	kotus/" \
+    -e "s/\(deta\)	\([^	]*\)	verbi	74\*F/\1	VERB\2	VERB_TODETA	kotus/" \
+    -e "s/\(detä\)	\([^	]*\)	verbi	74\*F/\1	VERB\2	VERB_VYYHDETÄ	kotus/" \
+    -e "s/\(dota\)	\([^	]*\)	verbi	74\*F/\1	VERB\2	VERB_VAAHDOTA	kotus/" \
+    -e "s/\(duta\)	\([^	]*\)	verbi	74\*F/\1	VERB\2	VERB_LIIDUTA	kotus/" \
+    -e "s/\(ngeta\)	\([^	]*\)	verbi	74\*G/\1	VERB\2	VERB_TUNGETA	kotus/" \
+    -e "s/\(ngetä\)	\([^	]*\)	verbi	74\*G/\1	VERB\2	VERB_ÄNGETÄ	kotus/" \
+    -e "s/\(ngota\)	\([^	]*\)	verbi	74\*G/\1	VERB\2	VERB_PINGOTA	kotus/" \
+    -e "s/\(mmeta\)	\([^	]*\)	verbi	74\*H/\1	VERB\2	VERB_KAMMETA	kotus/" \
+    -e "s/\(mmota\)	\([^	]*\)	verbi	74\*H/\1	VERB\2	VERB_SAMMOTA	kotus/" \
+    -e "s/\(mmuta\)	\([^	]*\)	verbi	74\*H/\1	VERB\2	VERB_KUMMUTA	kotus/" \
+    -e "s/\(nnota\)	\([^	]*\)	verbi	74\*J/\1	VERB\2	VERB_INNOTA	kotus/" \
+    -e "s/\(rota\)	\([^	]*\)	verbi	74\*K/\1	VERB\2	VERB_IRROTA	kotus/" \
+    -e "s/\(jetä\)	\([^	]*\)	verbi	74\*L/\1	VERB\2	VERB_ILJETÄ	kotus/" \
+    -e "s/\(jeta\)	\([^	]*\)	verbi	74\*L/\1	VERB\2	VERB_HALJETA	kotus/" \
+    -e "s/\(tä\)	\([^	]*\)	verbi	74/\1	VERB\2	VERB_TÄHYTÄ	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	verbi	74/\1	VERB\2	VERB_KARHUTA	kotus/" \
+    -e "s/\(kätä\)	\([^	]*\)	verbi	73\*A/\1	VERB\2	VERB_YÖKÄTÄ	kotus/" \
+    -e "s/\(kata\)	\([^	]*\)	verbi	73\*A/\1	VERB\2	VERB_MORKATA	kotus/" \
+    -e "s/\(pata\)	\([^	]*\)	verbi	73\*B/\1	VERB\2	VERB_SIEPATA	kotus/" \
+    -e "s/\(pätä\)	\([^	]*\)	verbi	73\*B/\1	VERB\2	VERB_VÄLPÄTÄ	kotus/" \
+    -e "s/\(tata\)	\([^	]*\)	verbi	73\*C/\1	VERB\2	VERB_LUNTATA	kotus/" \
+    -e "s/\(tätä\)	\([^	]*\)	verbi	73\*C/\1	VERB\2	VERB_LÄNTÄTÄ	kotus/" \
+    -e "s/\(ata\)	\([^	]*\)	verbi	73\*D/\1	VERB\2	VERB_MORKATA	kotus/" \
+    -e "s/\(ätä\)	\([^	]*\)	verbi	73\*D/\1	VERB\2	VERB_YÖKÄTÄ	kotus/" \
+    -e "s/\(vätä\)	\([^	]*\)	verbi	73\*E/\1	VERB\2	VERB_LEVÄTÄ	kotus/" \
+    -e "s/\(vata\)	\([^	]*\)	verbi	73\*E/\1	VERB\2	VERB_KAIVATA	kotus/" \
+    -e "s/\(data\)	\([^	]*\)	verbi	73\*F/\1	VERB\2	VERB_JAHDATA	kotus/" \
+    -e "s/\(dätä\)	\([^	]*\)	verbi	73\*F/\1	VERB\2	VERB_TÄHDÄTÄ	kotus/" \
+    -e "s/\(gätä\)	\([^	]*\)	verbi	73\*G/\1	VERB\2	VERB_VÄNGÄTÄ	kotus/" \
+    -e "s/\(gata\)	\([^	]*\)	verbi	73\*G/\1	VERB\2	VERB_VONGATA	kotus/" \
+    -e "s/\(mata\)	\([^	]*\)	verbi	73\*H/\1	VERB\2	VERB_TEMMATA	kotus/" \
+    -e "s/\(lata\)	\([^	]*\)	verbi	73\*I/\1	VERB\2	VERB_MULLATA	kotus/" \
+    -e "s/\(nätä\)	\([^	]*\)	verbi	73\*J/\1	VERB\2	VERB_RYNNÄTÄ	kotus/" \
+    -e "s/\(nata\)	\([^	]*\)	verbi	73\*J/\1	VERB\2	VERB_SUUNNATA	kotus/" \
+    -e "s/\(rata\)	\([^	]*\)	verbi	73\*K/\1	VERB\2	VERB_VERRATA	kotus/" \
+    -e "s/\(jätä\)	\([^	]*\)	verbi	73\*L/\1	VERB\2	VERB_PELJÄTÄ	kotus/" \
+    -e "s/\(ätä\)	\([^	]*\)	verbi	73/\1	VERB\2	VERB_YNNÄTÄ	kotus/" \
+    -e "s/\(ata\)	\([^	]*\)	verbi	73/\1	VERB\2	VERB_ARVATA	kotus/" \
+    -e "s/\(ata\)	\([^	]*\)	verbi	(73)/\1	VERB\2	VERB_ARVATA	kotus/" \
+    -e "s/\(jeta\)	\([^	]*\)	verbi	72\*L/\1	VERB\2	VERB_ROHJETA	kotus/" \
+    -e "s/\(jetä\)	\([^	]*\)	verbi	72\*L/\1	VERB\2	VERB_ILJETÄ	kotus/" \
+    -e "s/\(netä\)	\([^	]*\)	verbi	72\*J/\1	VERB\2	VERB_KIINNETÄ	kotus/" \
+    -e "s/\(metä\)	\([^	]*\)	verbi	72\*H/\1	VERB\2	VERB_LÄMMETÄ	kotus/" \
+    -e "s/\(dota\)	\([^	]*\)	verbi	72\*F/\1	VERB\2	VERB_LEUDOTA	kotus/" \
+    -e "s/\(detä\)	\([^	]*\)	verbi	72\*F/\1	VERB\2	VERB_PIDETÄ	kotus/" \
+    -e "s/\(dätä\)	\([^	]*\)	verbi	72\*F/\1	VERB\2	VERB_MÄDÄTÄ	kotus/" \
+    -e "s/\(veta\)	\([^	]*\)	verbi	72\*E/\1	VERB\2	VERB_KAVETA	kotus/" \
+    -e "s/\(eta\)	\([^	]*\)	verbi	72\*D/\1	VERB\2	VERB_NIUKETA	kotus/" \
+    -e "s/\(etä\)	\([^	]*\)	verbi	72\*D/\1	VERB\2	VERB_KERETÄ	kotus/" \
+    -e "s/\(ota\)	\([^	]*\)	verbi	72\*D/\1	VERB\2	VERB_ULOTA	kotus/" \
+    -e "s/\(tota\)	\([^	]*\)	verbi	72\*C/\1	VERB\2	VERB_LOITOTA	kotus/" \
+    -e "s/\(pata\)	\([^	]*\)	verbi	72\*B/\1	VERB\2	VERB_HAPATA	kotus/" \
+    -e "s/\(petä\)	\([^	]*\)	verbi	72\*B/\1	VERB\2	VERB_TYLPETÄ	kotus/" \
+    -e "s/\(peta\)	\([^	]*\)	verbi	72\*B/\1	VERB\2	VERB_SUPETA	kotus/" \
+    -e "s/\(pota\)	\([^	]*\)	verbi	72\*B/\1	VERB\2	VERB_HELPOTA	kotus/" \
+    -e "s/\(ketä\)	\([^	]*\)	verbi	72\*A/\1	VERB\2	VERB_JYRKETÄ	kotus/" \
+    -e "s/\(keta\)	\([^	]*\)	verbi	72\*A/\1	VERB\2	VERB_NIUKETA	kotus/" \
+    -e "s/\(kota\)	\([^	]*\)	verbi	72\*A/\1	VERB\2	VERB_ULOTA	kotus/" \
+    -e "s/\(ata\)	\([^	]*\)	verbi	72/\1	VERB\2	VERB_KARHETA	kotus/" \
+    -e "s/\(etä\)	\([^	]*\)	verbi	72/\1	VERB\2	VERB_VÄHETÄ	kotus/" \
+    -e "s/\(eta\)	\([^	]*\)	verbi	72/\1	VERB\2	VERB_KARHETA	kotus/" \
+    -e "s/\(ota\)	\([^	]*\)	verbi	72/\1	VERB\2	VERB_KARHETA	kotus/" \
+    -e "s/\(uta\)	\([^	]*\)	verbi	72/\1	VERB\2	VERB_KARHETA	kotus/" \
+    -e "s/\(tenee\)	\([^	]*\)	verbi	72/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(kanee\)	\([^	]*\)	verbi	72/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(anee\)	\([^	]*\)	verbi	72/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(konee\)	\([^	]*\)	verbi	72/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(kenee\)	\([^	]*\)	verbi	72/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(dä\)	\([^	]*\)	verbi	71/\1	VERB\2	VERB_TEHDÄ	kotus/" \
+    -e "s/\(tä\)	\([^	]*\)	verbi	70/\1	VERB\2	VERB_PIESTÄ	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	verbi	70/\1	VERB\2	VERB_JUOSTA	kotus/" \
+    -e "s/\(tä\)	\([^	]*\)	verbi	69/\1	VERB\2	VERB_MERKITÄ	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	verbi	69/\1	VERB\2	VERB_PALKITA	kotus/" \
+    -e "s/\(dä\)	\([^	]*\)	verbi	68/\1	VERB\2	VERB_ISÄNNÖIDÄ	kotus/" \
+    -e "s/\(da\)	\([^	]*\)	verbi	68/\1	VERB\2	VERB_MELLAKOIDA	kotus/" \
+    -e "s/\(kella\)	\([^	]*\)	verbi	67\*A/\1	VERB\2	VERB_NAKELLA	kotus/" \
+    -e "s/\(kellä\)	\([^	]*\)	verbi	67\*A/\1	VERB\2	VERB_LEIKELLÄ	kotus/" \
+    -e "s/\(pella\)	\([^	]*\)	verbi	67\*B/\1	VERB\2	VERB_TAPELLA	kotus/" \
+    -e "s/\(pellä\)	\([^	]*\)	verbi	67\*B/\1	VERB\2	VERB_HYPELLÄ	kotus/" \
+    -e "s/\(tella\)	\([^	]*\)	verbi	67\*C/\1	VERB\2	VERB_SULATELLA	kotus/" \
+    -e "s/\(tellä\)	\([^	]*\)	verbi	67\*C/\1	VERB\2	VERB_HERÄTELLÄ	kotus/" \
+    -e "s/\(ella\)	\([^	]*\)	verbi	67\*D/\1	VERB\2	VERB_NAKELLA	kotus/" \
+    -e "s/\(della\)	\([^	]*\)	verbi	67\*F/\1	VERB\2	VERB_TIPAHDELLA	kotus/" \
+    -e "s/\(dellä\)	\([^	]*\)	verbi	67\*F/\1	VERB\2	VERB_SÄPSÄHDELLÄ	kotus/" \
+    -e "s/\(lellä\)	\([^	]*\)	verbi	67\*I/\1	VERB\2	VERB_KIILLELLÄ	kotus/" \
+    -e "s/\(lella\)	\([^	]*\)	verbi	67\*I/\1	VERB\2	VERB_VAELLELLA	kotus/" \
+    -e "s/\(nellä\)	\([^	]*\)	verbi	67\*J/\1	VERB\2	VERB_KÄÄNNELLÄ	kotus/" \
+    -e "s/\(nella\)	\([^	]*\)	verbi	67\*J/\1	VERB\2	VERB_KOMENNELLA	kotus/" \
+    -e "s/\(mella\)	\([^	]*\)	verbi	67\*H/\1	VERB\2	VERB_OMMELLA	kotus/" \
+    -e "s/\(skella\)	\([^	]*\)	verbi	67\*J/\1	VERB\2	X_IGNORE	kotus/" \
+    -e "s/\(rella\)	\([^	]*\)	verbi	67\*K/\1	VERB\2	VERB_NAKERRELLA	kotus/" \
+    -e "s/\(rellä\)	\([^	]*\)	verbi	67\*K/\1	VERB\2	VERB_KIHERRELLÄ	kotus/" \
+    -e "s/\(llä\)	\([^	]*\)	verbi	67/\1	VERB\2	VERB_XXXLLÄ	kotus/" \
+    -e "s/\(rra\)	\([^	]*\)	verbi	67/\1	VERB\2	VERB_SURRA	kotus/" \
+    -e "s/\(rrä\)	\([^	]*\)	verbi	67/\1	VERB\2	VERB_PIERRÄ	kotus/" \
+    -e "s/\(lla\)	\([^	]*\)	verbi	67/\1	VERB\2	VERB_ARVAILLA	kotus/" \
+    -e "s/\(nna\)	\([^	]*\)	verbi	67/\1	VERB\2	VERB_PANNA	kotus/" \
+    -e "s/\(nnä\)	\([^	]*\)	verbi	67/\1	VERB\2	VERB_MENNÄ	kotus/" \
+    -e "s/\(vista\)	\([^	]*\)	verbi	66\*E/\1	VERB\2	VERB_VAVISTA	kotus/" \
+    -e "s/\(väistä\)	\([^	]*\)	verbi	66\*E/\1	VERB\2	VERB_HÄVÄISTÄ	kotus/" \
+    -e "s/\(gaista\)	\([^	]*\)	verbi	66\*G/\1	VERB\2	VERB_RANGAISTA	kotus/" \
+    -e "s/\(tä\)	\([^	]*\)	verbi	66/\1	VERB\2	VERB_ÄRISTÄ	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	verbi	66/\1	VERB\2	VERB_MARISTA	kotus/" \
+    -e "s/\(ta\)	\([^	]*\)	verbi	(66)/\1	VERB\2	VERB_MARISTA	kotus/" \
+    -e "s/\(dä\)	\([^	]*\)	verbi	65/\1	VERB\2	VERB_KÄYDÄ	kotus/" \
+    -e "s/\(da\)	\([^	]*\)	verbi	64/\1	VERB\2	VERB_TUODA	kotus/" \
+    -e "s/\(dä\)	\([^	]*\)	verbi	64/\1	VERB\2	VERB_SYÖDÄ	kotus/" \
+    -e "s/\(dä\)	\([^	]*\)	verbi	63/\1	VERB\2	VERB_JÄÄDÄ	kotus/" \
+    -e "s/\(da\)	\([^	]*\)	verbi	63/\1	VERB\2	VERB_SAADA	kotus/" \
+    -e "s/\(dä\)	\([^	]*\)	verbi	62/\1	VERB\2	VERB_ÖYKKÄRÖIDÄ	kotus/" \
+    -e "s/\(da\)	\([^	]*\)	verbi	62/\1	VERB\2	VERB_KOPIOIDA	kotus/" \
+    -e "s/\(lkiä\)	\([^	]*\)	verbi	61\*L/\1	VERB\2	VERB_HYLKIÄ	kotus/" \
+    -e "s/\(ntia\)	\([^	]*\)	verbi	61\*J/\1	VERB\2	VERB_KONTIA	kotus/" \
+    -e "s/\(mpiä\)	\([^	]*\)	verbi	61\*H/\1	VERB\2	VERB_TYMPIÄ	kotus/" \
+    -e "s/\(nkia\)	\([^	]*\)	verbi	61\*G/\1	VERB\2	VERB_ONKIA	kotus/" \
+    -e "s/\(nkiä\)	\([^	]*\)	verbi	61\*G/\1	VERB\2	VERB_MÖNKIÄ	kotus/" \
+    -e "s/\(tia\)	\([^	]*\)	verbi	61\*F/\1	VERB\2	VERB_AHNEHTIA	kotus/" \
+    -e "s/\(tiä\)	\([^	]*\)	verbi	61\*F/\1	VERB\2	VERB_EHTIÄ	kotus/" \
+    -e "s/\(piä\)	\([^	]*\)	verbi	61\*E/\1	VERB\2	VERB_RIIPIÄ	kotus/" \
+    -e "s/\(pia\)	\([^	]*\)	verbi	61\*E/\1	VERB\2	VERB_RAAPIA	kotus/" \
+    -e "s/\(kiä\)	\([^	]*\)	verbi	61\*D/\1	VERB\2	VERB_SÖRKKIÄ	kotus/" \
+    -e "s/\(kia\)	\([^	]*\)	verbi	61\*D/\1	VERB\2	VERB_KUKKIA	kotus/" \
+    -e "s/\(tiä\)	\([^	]*\)	verbi	61\*C/\1	VERB\2	VERB_MIETTIÄ	kotus/" \
+    -e "s/\(tia\)	\([^	]*\)	verbi	61\*C/\1	VERB\2	VERB_MOITTIA	kotus/" \
+    -e "s/\(pia\)	\([^	]*\)	verbi	61\*B/\1	VERB\2	VERB_KALPPIA	kotus/" \
+    -e "s/\(piä\)	\([^	]*\)	verbi	61\*B/\1	VERB\2	VERB_HYPPIÄ	kotus/" \
+    -e "s/\(kia\)	\([^	]*\)	verbi	61\*A/\1	VERB\2	VERB_KUKKIA	kotus/" \
+    -e "s/\(kiä\)	\([^	]*\)	verbi	61\*A/\1	VERB\2	VERB_SÖRKKIÄ	kotus/" \
+    -e "s/\(kyä\)	\([^	]*\)	verbi	61\*A/\1	VERB\2	VERB_KÄRKKYÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	verbi	61/\1	VERB\2	VERB_KOSIA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	verbi	61/\1	VERB\2	VERB_RYSKIÄ	kotus/" \
+    -e "s/\(teä\)	\([^	]*\)	verbi	60\*F/\1	VERB\2	VERB_LÄHTEÄ	kotus/" \
+    -e "s/\(tea\)	\([^	]*\)	verbi	59\*J/\1	VERB\2	VERB_TUNTEA	kotus/" \
+    -e "s/\(keä\)	\([^	]*\)	verbi	58\*L/\1	VERB\2	VERB_SÄRKEÄ	kotus/" \
+    -e "s/\(kea\)	\([^	]*\)	verbi	58\*L/\1	VERB\2	VERB_POLKEA	kotus/" \
+    -e "s/\(nkea\)	\([^	]*\)	verbi	58\*G/\1	VERB\2	VERB_TUNKEA	kotus/" \
+    -e "s/\(kea\)	\([^	]*\)	verbi	58\*D/\1	VERB\2	VERB_PUKEA	kotus/" \
+    -e "s/\(peä\)	\([^	]*\)	verbi	58\*E/\1	VERB\2	VERB_RYPEÄ	kotus/" \
+    -e "s/\(teä\)	\([^	]*\)	verbi	58\*F/\1	VERB\2	VERB_PÄTEÄ	kotus/" \
+    -e "s/\(tea\)	\([^	]*\)	verbi	58\*F/\1	VERB\2	VERB_KUTEA	kotus/" \
+    -e "s/\(eä\)	\([^	]*\)	verbi	58/\1	VERB\2	VERB_KYTKEÄ	kotus/" \
+    -e "s/\(ea\)	\([^	]*\)	verbi	58/\1	VERB\2	VERB_SOTKEA	kotus/" \
+    -e "s/\(rtaa\)	\([^	]*\)	verbi	57\*K/\1	VERB\2	VERB_SAARTAA	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	57\*F/\1	VERB\2	VERB_KAATAA	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	56\*J/\1	VERB\2	VERB_KANTAA	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	56\*F/\1	VERB\2	VERB_SATAA	kotus/" \
+    -e "s/\(kaa\)	\([^	]*\)	verbi	56\*D/\1	VERB\2	VERB_VIRKKAA	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	56\*C/\1	VERB\2	VERB_VIEROITTAA	kotus/" \
+    -e "s/\(paa\)	\([^	]*\)	verbi	56\*B/\1	VERB\2	VERB_TAPPAA	kotus/" \
+    -e "s/\(kaa\)	\([^	]*\)	verbi	56\*A/\1	VERB\2	VERB_VIRKKAA	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	verbi	56/\1	VERB\2	VERB_KASVAA	kotus/" \
+    -e "s/\(ntää\)	\([^	]*\)	verbi	55\*J/\1	VERB\2	VERB_ENTÄÄ	kotus/" \
+    -e "s/\(ltää\)	\([^	]*\)	verbi	55\*I/\1	VERB\2	VERB_YLTÄÄ	kotus/" \
+    -e "s/\(tää\)	\([^	]*\)	verbi	55\*F/\1	VERB\2	VERB_KIITÄÄ	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	55\*F/\1	VERB\2	VERB_SOUTAA	kotus/" \
+    -e "s/\(ltaa\)	\([^	]*\)	verbi	54\*I/\1	VERB\2	VERB_SIVALTAA	kotus/" \
+    -e "s/\(ltää\)	\([^	]*\)	verbi	54\*I/\1	VERB\2	VERB_VIHELTÄÄ	kotus/" \
+    -e "s/\(ntaa\)	\([^	]*\)	verbi	54\*J/\1	VERB\2	VERB_HUONONTAA	kotus/" \
+    -e "s/\(ntää\)	\([^	]*\)	verbi	54\*J/\1	VERB\2	VERB_HIVENTÄÄ	kotus/" \
+    -e "s/\(rtaa\)	\([^	]*\)	verbi	54\*K/\1	VERB\2	VERB_KUHERTAA	kotus/" \
+    -e "s/\(rtää\)	\([^	]*\)	verbi	54\*K/\1	VERB\2	VERB_NÄPERTAA	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	54\*F/\1	VERB\2	VERB_HUUTAA	kotus/" \
+    -e "s/\(tää\)	\([^	]*\)	verbi	54\*F/\1	VERB\2	VERB_PYYTÄÄ	kotus/" \
+    -e "s/\(ää\)	\([^	]*\)	verbi	54/\1	VERB\2	VERB_XXXISTÄÄ	kotus/" \
+    -e "s/\(ntää\)	\([^	]*\)	verbi	53\*J/\1	VERB\2	VERB_KYNTÄÄ	kotus/" \
+    -e "s/\(ltaa\)	\([^	]*\)	verbi	53\*I/\1	VERB\2	VERB_SIVALTAA	kotus/" \
+    -e "s/\(taa\)	\([^	]*\)	verbi	53\*F/\1	VERB\2	VERB_MOJAHTAA	kotus/" \
+    -e "s/\(tää\)	\([^	]*\)	verbi	53\*F/\1	VERB\2	VERB_YSKÄHTÄÄ	kotus/" \
+    -e "s/\(kaa\)	\([^	]*\)	verbi	53\*D/\1	VERB\2	VERB_PURKAA	kotus/" \
+    -e "s/\(tella\)	\([^	]*\)	verbi	53\*C/\1	VERB\2	X_IGNORE	kotus/" \
+    -e "s/\(ttaa\)	\([^	]*\)	verbi	53\*C/\1	VERB\2	VERB_VIEROITTAA	kotus/" \
+    -e "s/\(ttää\)	\([^	]*\)	verbi	53\*C/\1	VERB\2	VERB_RÄPSYTTÄÄ	kotus/" \
+    -e "s/\(ää\)	\([^	]*\)	verbi	53/\1	VERB\2	VERB_KIVISTÄÄ	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	verbi	53/\1	VERB\2	VERB_MUTRISTAA	kotus/" \
+    -e "s/\(rtoa\)	\([^	]*\)	verbi	52\*K/\1	VERB\2	VERB_VARTOA	kotus/" \
+    -e "s/\(rtyä\)	\([^	]*\)	verbi	52\*K/\1	VERB\2	VERB_KIERTYÄ	kotus/" \
+    -e "s/\(rtua\)	\([^	]*\)	verbi	52\*K/\1	VERB\2	VERB_PUSERTUA	kotus/" \
+    -e "s/\(ntua\)	\([^	]*\)	verbi	52\*J/\1	VERB\2	VERB_VAKAANTUA	kotus/" \
+    -e "s/\(ntyä\)	\([^	]*\)	verbi	52\*J/\1	VERB\2	VERB_TYHJENTYÄ	kotus/" \
+    -e "s/\(ltyä\)	\([^	]*\)	verbi	52\*I/\1	VERB\2	VERB_MIELTYÄ	kotus/" \
+    -e "s/\(ltua\)	\([^	]*\)	verbi	52\*I/\1	VERB\2	VERB_HUMALTUA	kotus/" \
+    -e "s/\(nkua\)	\([^	]*\)	verbi	52\*G/\1	VERB\2	VERB_VINKUA	kotus/" \
+    -e "s/\(nkoa\)	\([^	]*\)	verbi	52\*G/\1	VERB\2	VERB_PINKOA	kotus/" \
+    -e "s/\(mpoa\)	\([^	]*\)	verbi	52\*H/\1	VERB\2	VERB_TEMPOA	kotus/" \
+    -e "s/\(mpua\)	\([^	]*\)	verbi	52\*H/\1	VERB\2	VERB_AMPUA	kotus/" \
+    -e "s/\(tiä\)	\([^	]*\)	verbi	52\*F/\1	VERB\2	VERB_EHTIÄ	kotus/" \
+    -e "s/\(tyä\)	\([^	]*\)	verbi	52\*F/\1	VERB\2	VERB_SILIYTYÄ	kotus/" \
+    -e "s/\(toa\)	\([^	]*\)	verbi	52\*F/\1	VERB\2	VERB_KIETOA	kotus/" \
+    -e "s/\(tua\)	\([^	]*\)	verbi	52\*F/\1	VERB\2	VERB_ROHTUA	kotus/" \
+    -e "s/\(pua\)	\([^	]*\)	verbi	52\*E/\1	VERB\2	VERB_HIIPUA	kotus/" \
+    -e "s/\(poa\)	\([^	]*\)	verbi	52\*E/\1	VERB\2	VERB_SILPOA	kotus/" \
+    -e "s/\(pyä\)	\([^	]*\)	verbi	52\*E/\1	VERB\2	VERB_SYÖPYÄ	kotus/" \
+    -e "s/\(koa\)	\([^	]*\)	verbi	52\*D/\1	VERB\2	VERB_TAKOA	kotus/" \
+    -e "s/\(kua\)	\([^	]*\)	verbi	52\*D/\1	VERB\2	VERB_NUOKKUA	kotus/" \
+    -e "s/\(kyä\)	\([^	]*\)	verbi	52\*D/\1	VERB\2	VERB_MÄIKYÄ	kotus/" \
+    -e "s/\(tyä\)	\([^	]*\)	verbi	52\*C/\1	VERB\2	VERB_KIVETTYÄ	kotus/" \
+    -e "s/\(tua\)	\([^	]*\)	verbi	52\*C/\1	VERB\2	VERB_HERMOTTUA	kotus/" \
+    -e "s/\(toa\)	\([^	]*\)	verbi	52\*C/\1	VERB\2	VERB_VIITTOA	kotus/" \
+    -e "s/\(poa\)	\([^	]*\)	verbi	52\*B/\1	VERB\2	VERB_HARPPOA	kotus/" \
+    -e "s/\(pua\)	\([^	]*\)	verbi	52\*B/\1	VERB\2	VERB_LOPPUA	kotus/" \
+    -e "s/\(pyä\)	\([^	]*\)	verbi	52\*B/\1	VERB\2	VERB_LEPPYÄ	kotus/" \
+    -e "s/\(kyä\)	\([^	]*\)	verbi	52\*A/\1	VERB\2	VERB_KÄRKKYÄ	kotus/" \
+    -e "s/\(koa\)	\([^	]*\)	verbi	52\*A/\1	VERB\2	VERB_HAUKKOA	kotus/" \
+    -e "s/\(kua\)	\([^	]*\)	verbi	52\*A/\1	VERB\2	VERB_HOIPPUA	kotus/" \
+    -e "s/\(yä\)	\([^	]*\)	verbi	52/\1	VERB\2	VERB_ÄLLISTYÄ	kotus/" \
+    -e "s/\(öä\)	\([^	]*\)	verbi	52/\1	VERB\2	VERB_SÄILÖÄ	kotus/" \
+    -e "s/\(ua\)	\([^	]*\)	verbi	52/\1	VERB\2	VERB_KAUNISTUA	kotus/" \
+    -e "s/\(oa\)	\([^	]*\)	verbi	52/\1	VERB\2	VERB_PUNOA	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	numeraali	45/\1	NUM\2	NUM_KAHDEKSAS	kotus/" \
+    -e "s/\(tuhatta\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_TUHATTA	kotus/" \
+    -e "s/\(sen\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_KAHDEKSISEN	kotus/" \
+    -e "s/\(sentoista\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_KAHDEKSISEN	kotus/" \
+    -e "s/\(sensataa\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_KAHDEKSISEN	kotus/" \
+    -e "s/\(toistasataa\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_KAHDEKSISEN	kotus/" \
+    -e "s/\(kymmentä\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_KYMMENTÄ	kotus/" \
+    -e "s/\(kaks\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_VIIS	kotus/" \
+    -e "s/\(yks\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_VIIS	kotus/" \
+    -e "s/\(tuhannen\)	\([^	]*\)	numeraali	99/\1	NUM\2	NUM_WTF	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	numeraali	51/\1	NUM\2	NUM_XXX	kotus/" \
+    -e "s/\(at\)	\([^	]*\)	numeraali	46/\1	NUM\2	NUM_TUHAT	kotus/" \
+    -e "s/\(es\)	\([^	]*\)	numeraali	45/\1	NUM\2	NUM_SEITSEMÄS	kotus/" \
+    -e "s/\(äs\)	\([^	]*\)	numeraali	45/\1	NUM\2	NUM_SEITSEMÄS	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	numeraali	45/\1	NUM\2	NUM_KOLMAS	kotus/" \
+    -e "s/\(${F}nen\)	\([^	]*\)	numeraali	38/\1	NUM\2	NUM_ENSIMMÄINEN	kotus/" \
+    -e "s/\(nen\)	\([^	]*\)	numeraali	32/\1	NUM\2	NUM_KYMMENEN	kotus/" \
+    -e "s/\(yksi\)	\([^	]*\)	numeraali, substantiivi	31/\1	NUM\2	NUM_YKSI	kotus/" \
+    -e "s/\(toinen\)	\([^	]*\)	numeraali, järjestysluku, pronomini, adjektiivi	38/\1	NUM\2	NUM_TOINEN	kotus/" \
+    -e "s/\(kaksi\)	\([^	]*\)	numeraali	31/\1	NUM\2	NUM_KAKSI	kotus/" \
+    -e "s/\(usi\)	\([^	]*\)	numeraali	27/\1	NUM\2	NUM_KUUSI	kotus/" \
+    -e "s/\(isi\)	\([^	]*\)	numeraali	27/\1	NUM\2	NUM_VIISI	kotus/" \
+    -e "s/\(an\)	\([^	]*\)	numeraali	10/\1	NUM\2	NUM_KAHDEKSAN	kotus/" \
+    -e "s/\(än\)	\([^	]*\)	numeraali	10/\1	NUM\2	NUM_YHDEKSÄN	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	numeraali	10/\1	NUM\2	NUM_MILJOONA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	numeraali	10/\1	NUM\2	NUM_NELJÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	numeraali, substantiivi	10/\1	NUM\2	NUM_MILJOONA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	numeraali	9\*F/\1	NUM\2	NUM_SATA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	numeraali	9/\1	NUM\2	NUM_SATA	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	numeraali	8/\1	NUM\2	NUM_KOLME	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	numeraali	5/\1	NUM\2	NUM_MILJARDI	kotus/" \
+    -e "s/\(nää\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_SÄ	kotus/" \
+    -e "s/\(mä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_SÄ	kotus/" \
+    -e "s/\(sä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_SÄ	kotus/" \
+    -e "s/\(sa\)	\([^	]*\)	pronomini	99/\1	PRON\2	PRON_SA	kotus/" \
+    -e "s/\(se\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_SE	kotus/" \
+    -e "s/\(te\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TE	kotus/" \
+    -e "s/\(toi\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TOI	kotus/" \
+    -e "s/\(noi\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TOI	kotus/" \
+    -e "s/\(tuo\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TUO	kotus/" \
+    -e "s/\(nuo\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TUO	kotus/" \
+    -e "s/\(tää\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TÄÄ	kotus/" \
+    -e "s/\(tämä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TÄMÄ	kotus/" \
+    -e "s/\(nämä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_TÄMÄ	kotus/" \
+    -e "s/\(he\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_HE	kotus/" \
+    -e "s/\(ne\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_HE	kotus/" \
+    -e "s/\(hän\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_HÄN	kotus/" \
+    -e "s/\(kukin\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_KUKIN	kotus/" \
+    -e "s/\(muuan\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_KUKIN	kotus/" \
+    -e "s/\(eräs\)	\([^	]*\)	pronomini	41/\1	PRON\2	PRON_ERÄS	kotus/" \
+    -e "s/\(joka\)	\([^	]*\)	pronomini	99/\1	PRON\2	PRON_JOKA	kotus/" \
+    -e "s/\(joka\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_JOKA	kotus/" \
+    -e "s/\(kuka\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_KUKA	kotus/" \
+    -e "s/\(kukaan\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_KUKAAN	kotus/" \
+    -e "s/\(ken\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_KEN	kotus/" \
+    -e "s/\(kenkään\)	\([^	]*\)	pronomini	101/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(ketä\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(ketään\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(nenkin\)	\([^	]*\)	pronomini	38/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(nenkaan\)	\([^	]*\)	pronomini	38/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(nen\)	\([^	]*\)	pronomini	38/\1	PRON\2	PRON_JOKAINEN	kotus/" \
+    -e "s/\(mpi\)	\([^	]*\)	pronomini	16\*H/\1	PRON\2	PRON_KUMPI	kotus/" \
+    -e "s/\(mpikin\)	\([^	]*\)	pronomini	16\*H/\1	PRON\2	PRON_KUMPI	kotus/" \
+    -e "s/\(mpikaan\)	\([^	]*\)	pronomini	16\*H/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(me\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_ME	kotus/" \
+    -e "s/\(ma\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_MA	kotus/" \
+    -e "s/\(mi\)	\([^	]*\)	pronomini	99/\1	PRON\2	PRON_MI	kotus/" \
+    -e "s/\(monta\)	\([^	]*\)	pronomini	99/\1	PRON\2	PRON_MONTA	kotus/" \
+    -e "s/\(montaa\)	\([^	]*\)	pronomini	99/\1	PRON\2	PRON_MONTAA	kotus/" \
+    -e "s/\(mmat\)	\([^	]*\)	pronomini	16\*H/\1	PRON\2	PRON_MOLEMMAT	kotus/" \
+    -e "s/\(ea\)	\([^	]*\)	pronomini	15/\1	PRON\2	PRON_USEA	kotus/" \
+    -e "s/\(ni\)	\([^	]*\)	pronomini	23/\1	PRON\2	PRON_MONI	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	pronomini	41/\1	PRON\2	PRON_MONIAS	kotus/" \
+    -e "s/\(s\)	\([^	]*\)	pronomini	45/\1	PRON\2	PRON_MONES	kotus/" \
+    -e "s/\(minä\)	\([^	]*\)	pronomini, substantiivi	101/\1	PRON\2	PRON_MINÄ	kotus/" \
+    -e "s/\(sinä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_MINÄ	kotus/" \
+    -e "s/\(mikä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_MIKÄ	kotus/" \
+    -e "s/\(missä\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_MIKÄ	kotus/" \
+    -e "s/\(mitään\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(mistä\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(mistään\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(missään\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(mikään\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_MIKÄÄN	kotus/" \
+    -e "s/\(millään\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	pronomini	101/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(joku\)	\([^	]*\)	pronomini	101/\1	PRON\2	PRON_JOKU	kotus/" \
+    -e "s/\(jotkut\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(uu\)	\([^	]*\)	pronomini	18/\1	PRON\2	PRON_MUU	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	pronomini	99/\1	PRON\2	X_IGNORE	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	pronomini	10/\1	PRON\2	PRON_MUUTAMA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	pronomini	9/\1	PRON\2	PRON_SAMA	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	pronomini	7\*A/\1	PRON\2	PRON_KAIKKI	kotus/" \
+    -e "s/\(itse\)	\([^	]*\)	pronomini, substantiivi	8/\1	PRON\2	PRON_ITSE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi, substantiivi	99/\1	NOUN\2	NOUN_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi, substantiivi	50/\1	NOUN\2	NOUN_50XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi, adjektiivi	50/\1	NOUN\2	NOUN_50XXX	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	substantiivi, adjektiivi	48/\1	NOUN\2	NOUN_ASTE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	substantiivi, adjektiivi	48/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(${F}e\)	\([^	]*\)	adjektiivi, substantiivi	48/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	adjektiivi, substantiivi	48/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi, adjektiivi	48/\1	NOUN\2	NOUN_PISTE	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi, adjektiivi	48/\1	NOUN\2	NOUN_KIIRU	kotus/" \
+    -e "s/\(äs\)	\([^	]*\)	adjektiivi, substantiivi	41/\1	ADJ\2	ADJ_TYÖLÄS	kotus/" \
+    -e "s/\(ton\)	\([^	]*\)	adjektiivi, substantiivi	34\*C/\1	ADJ\2	ADJ_VIATON	kotus/" \
+    -e "s/\(tön\)	\([^	]*\)	adjektiivi, substantiivi	34\*C/\1	ADJ\2	ADJ_KYVYTÖN	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	substantiivi, adjektiivi	47/\1	ADJ\2	ADJ_KULUNUT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	substantiivi, adjektiivi	47/\1	ADJ\2	ADJ_ÄLLISTYNYT	kotus/" \
+    -e "s/\(ut\)	\([^	]*\)	adjektiivi, substantiivi	47/\1	ADJ\2	ADJ_KULUNUT	kotus/" \
+    -e "s/\(yt\)	\([^	]*\)	adjektiivi, substantiivi	47/\1	ADJ\2	ADJ_ÄLLISTYNYT	kotus/" \
+    -e "s/\(kas\)	\([^	]*\)	adjektiivi, substantiivi	41\*A/\1	ADJ\2	ADJ_VOIMAKAS	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	adjektiivi, substantiivi	41/\1	ADJ\2	ADJ_AUTUAS	kotus/" \
+    -e "s/\(${B}is\)	\([^	]*\)	adjektiivi, substantiivi	41/\1	ADJ\2	ADJ_VALMIS	kotus/" \
+    -e "s/\(is\)	\([^	]*\)	adjektiivi, substantiivi	39/\1	ADJ\2	ADJ_SYMPPIS	kotus/" \
+    -e "s/\(us\)	\([^	]*\)	substantiivi, adjektiivi	41/\1	NOUN\2	NOUN_KIIRUS	kotus/" \
+    -e "s/\(as\)	\([^	]*\)	substantiivi, adjektiivi	41/\1	NOUN\2	NOUN_xXX	kotus/" \
+    -e "s/\(s\)	\([^	]*\)	substantiivi, adjektiivi	39/\1	NOUN\2	NOUN_RÄJÄYTYS	kotus/" \
+    -e "s/\(${B}nen\)	\([^	]*\)	substantiivi, adjektiivi	38/\1	NOUN\2	NOUN_SUOMALAINEN	kotus/" \
+    -e "s/\(${B}nen\)	\([^	]*\)	adjektiivi, substantiivi	38/\1	ADJ\2	ADJ_SUOMALAINEN	kotus/" \
+    -e "s/\(${F}nen\)	\([^	]*\)	substantiivi, adjektiivi	38/\1	NOUN\2	NOUN_BRITTILÄINEN	kotus/" \
+    -e "s/\(${F}nen\)	\([^	]*\)	adjektiivi, substantiivi	38/\1	ADJ\2	ADJ_BRITTILÄINEN	kotus/" \
+    -e "s/\(nen\)	\([^	]*\)	adjektiivi, substantiivi	38/\1	ADJ\2	ADJ_BRITTILÄINEN	kotus/" \
+    -e "s/\(nen\)	\([^	]*\)	substantiivi, adjektiivi	38/\1	ADJ\2	ADJ_BRITTILÄINEN	kotus/" \
+    -e "s/\(${B}in\)	\([^	]*\)	substantiivi, adjektiivi	36/\1	ADJ\2	ADJ_PAHIN	kotus/" \
+    -e "s/\(${F}in\)	\([^	]*\)	substantiivi, adjektiivi	36/\1	ADJ\2	ADJ_SISIN	kotus/" \
+    -e "s/\(${F}in\)	\([^	]*\)	adjektiivi, substantiivi	36/\1	ADJ\2	ADJ_SISIN	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	adjektiivi, substantiivi	36/\1	ADJ\2	ADJ_SISIN	kotus/" \
+    -e "s/\(in\)	\([^	]*\)	substantiivi, adjektiivi	36/\1	ADJ\2	ADJ_SISIN	kotus/" \
+    -e "s/\(mmin\)	\([^	]*\)	substantiivi, adjektiivi	35\*H/\1	NOUN\2	NOUN_LÄMMIN	kotus/" \
+    -e "s/\(mmin\)	\([^	]*\)	adjektiivi, substantiivi	35\*H/\1	NOUN\2	NOUN_LÄMMIN	kotus/" \
+    -e "s/\(${F}n\)	\([^	]*\)	adjektiivi, substantiivi	32/\1	NOUN\2	NOUN_SIEMEN	kotus/" \
+    -e "s/\(si\)	\([^	]*\)	adjektiivi, substantiivi	27/\1	ADJ\2	ADJ_UUSI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi, adjektiivi	26/\1	NOUN\2	NOUN_RUUHI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	adjektiivi, substantiivi	26/\1	NOUN\2	NOUN_HIIRI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	adjektiivi, substantiivi	26/\1	ADJ\2	ADJ_PIENI	kotus/" \
+    -e "s/\(ee\)	\([^	]*\)	adjektiivi, substantiivi	21/\1	NOUN\2	NOUN_JOCKEY	kotus/" \
+    -e "s/\(${F}ee\)	\([^	]*\)	substantiivi, adjektiivi	20/\1	NOUN\2	NOUN_BIDEE	kotus/" \
+    -e "s/\(${B}ee\)	\([^	]*\)	substantiivi, adjektiivi	20/\1	NOUN\2	NOUN_PATEE	kotus/" \
+    -e "s/\(ee\)	\([^	]*\)	substantiivi, adjektiivi	20/\1	NOUN\2	NOUN_BIDEE	kotus/" \
+    -e "s/\(öö\)	\([^	]*\)	substantiivi, adjektiivi	20/\1	NOUN\2	NOUN_MILJÖÖ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi, adjektiivi	12/\1	NOUN\2	NOUN_MAKKARA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi, substantiivi	10/\1	ADJ\2	ADJ_RUMA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi, adjektiivi	10/\1	NOUN\2	NOUN_VOIMA	kotus/" \
+    -e "s/\(${B}mpi\)	\([^	]*\)	adjektiivi, adverbi	16\*H/\1	ADJ\2	ADJ_AIEMPI	kotus/" \
+    -e "s/\(${F}mpi\)	\([^	]*\)	adjektiivi, adverbi	16\*H/\1	ADJ\2	ADJ_LÄHEMPI	kotus/" \
+    -e "s/\(mpi\)	\([^	]*\)	adjektiivi, adverbi	16\*H/\1	ADJ\2	ADJ_LÄHEMPI	kotus/" \
+    -e "s/\(aa\)	\([^	]*\)	adjektiivi, substantiivi	17/\1	ADJ\2	ADJ_VAPAA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi, substantiivi	15/\1	ADJ\2	ADJ_AINOA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi, substantiivi	15/\1	ADJ\2	ADJ_JÄREÄ	kotus/" \
+    -e "s/\(kkä\)	\([^	]*\)	substantiivi, adjektiivi	14\*A/\1	NOUN\2	NOUN_KÄMMEKKÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi, adjektiivi	13/\1	NOUN\2	NOUN_KITARA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi, substantiivi	13/\1	NOUN\2	NOUN_KITARA	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi, substantiivi	12/\1	NOUN\2	NOUN_HÄKKYRÄ	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi, adjektiivi	11/\1	NOUN\2	NOUN_PROBLEEMA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi, substantiivi	11/\1	NOUN\2	NOUN_PROBLEEMA	kotus/" \
+    -e "s/\(rpä\)	\([^	]*\)	substantiivi, adjektiivi	10\*E/\1	NOUN\2	NOUN_LEIPÄ	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	substantiivi, adjektiivi	10/\1	ADJ\2	ADJ_TYHMÄ	kotus/" \
+    -e "s/\(ä\)	\([^	]*\)	adjektiivi, substantiivi	10/\1	ADJ\2	ADJ_TYHMÄ	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	substantiivi, adverbi	9\*A/\1	NOUN\2	NOUN_POLITIIKKA	kotus/" \
+    -e "s/\(harva\)	\([^	]*\)	pronomini, adjektiivi	9/\1	PRON\2	PRON_SAMA	kotus/" \
+    -e "s/\(tti\)	\([^	]*\)	adjektiivi, substantiivi	5\*C/\1	NOUN\2	NOUN_KORTTI	kotus/" \
+    -e "s/\(tti\)	\([^	]*\)	substantiivi, adjektiivi	5\*C/\1	NOUN\2	NOUN_KORTTI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	adjektiivi, substantiivi	5/\1	ADJ\2	ADJ_ABNORMI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_RUUVI	kotus/" \
+    -e "s/\(ka\)	\([^	]*\)	adjektiivi, substantiivi, adverbi	9\*D/\1	NOUN\2	NOUN_VIKA	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	adjektiivi, substantiivi	9/\1	ADJ\2	ADJ_AAVA	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	adjektiivi, substantiivi	6/\1	ADJ\2	ADJ_ABNORMAALI	kotus/" \
+    -e "s/\(a\)	\([^	]*\)	substantiivi, adjektiivi	9/\1	NOUN\2	NOUN_KIRJA	kotus/" \
+    -e "s/\(kko\)	\([^	]*\)	adjektiivi, substantiivi	4\*A/\1	NOUN\2	NOUN_LEPAKKO	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi, adjektiivi	2/\1	NOUN\2	NOUN_JÄÄTELÖ	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	adjektiivi, substantiivi	2/\1	NOUN\2	NOUN_JÄÄTELÖ	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi, adjektiivi	2/\1	NOUN\2	NOUN_RUIPELO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi, substantiivi	2/\1	NOUN\2	NOUN_RUIPELO	kotus/" \
+    -e "s/\(y\)	\([^	]*\)	adjektiivi, substantiivi	1/\1	NOUN\2	NOUN_KÄRRY	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	adjektiivi, substantiivi	1/\1	NOUN\2	NOUN_MÖMMÖ	kotus/" \
+    -e "s/\(ö\)	\([^	]*\)	substantiivi, adjektiivi	1/\1	NOUN\2	NOUN_MÖMMÖ	kotus/" \
+    -e "s/\(kku\)	\([^	]*\)	substantiivi, adjektiivi	1\*A/\1	NOUN\2	NOUN_TIKKU	kotus/" \
+    -e "s/\(tto\)	\([^	]*\)	adjektiivi, substantiivi	1\*C/\1	ADJ\2	ADJ_MIETO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi, substantiivi	1/\1	ADJ\2	ADJ_XXXO	kotus/" \
+    -e "s/\(ttu\)	\([^	]*\)	substantiivi, adjektiivi	1\*C/\1	NOUN\2	NOUN_TORTTU	kotus/" \
+    -e "s/\(${B}e\)	\([^	]*\)	adjektiivi, substantiivi	8/\1	NOUN\2	NOUN_NALLE	kotus/" \
+    -e "s/\(e\)	\([^	]*\)	substantiivi, adjektiivi	8/\1	NOUN\2	NOUN_NALLE	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi, adjektiivi	6/\1	NOUN\2	NOUN_KEHVELI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi, adjektiivi	6/\1	NOUN\2	NOUN_KANAALI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi, adjektiivi	6/\1	NOUN\2	NOUN_KEHVELI	kotus/" \
+    -e "s/\(${F}kki\)	\([^	]*\)	adjektiivi, substantiivi	5\*A/\1	ADJ\2	ADJ_PINKKI	kotus/" \
+    -e "s/\(kki\)	\([^	]*\)	adjektiivi, substantiivi	5\*A/\1	ADJ\2	ADJ_PINKKI	kotus/" \
+    -e "s/\(kki\)	\([^	]*\)	substantiivi, adjektiivi	5\*A/\1	NOUN\2	NOUN_HÄKKI	kotus/" \
+    -e "s/\(${B}i\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_RUUVI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_TYYLI	kotus/" \
+    -e "s/\(${F}i\)	\([^	]*\)	adjektiivi, substantiivi	5/\1	NOUN\2	NOUN_TYYLI	kotus/" \
+    -e "s/\(${B}${C}\)	\([^	]*\)	adjektiivi, substantiivi	5/\1	NOUN\2	NOUN_PUNK	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_TYYLI	kotus/" \
+    -e "s/\(i\)	\([^	]*\)	adjektiivi, substantiivi	5/\1	NOUN\2	NOUN_TYYLI	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi, substantiivi	3/\1	ADJ\2	ADJ_AUTIO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi, adjektiivi	3/\1	NOUN\2	NOUN_TUOMIO	kotus/" \
+    -e "s/\(lty\)	\([^	]*\)	substantiivi, adjektiivi	1\*I/\1	NOUN\2	NOUN_EPÄILTY	kotus/" \
+    -e "s/\(ppo\)	\([^	]*\)	substantiivi, adjektiivi	1\*B/\1	NOUN\2	NOUN_HAPPO	kotus/" \
+    -e "s/\(ppu\)	\([^	]*\)	substantiivi, adjektiivi	1\*B/\1	NOUN\2	NOUN_LIPPU	kotus/" \
+    -e "s/\(ttu\)	\([^	]*\)	substantiivi, adjektiivi	1\*C/\1	NOUN\2	NOUN_TORTTU	kotus/" \
+    -e "s/\(tty\)	\([^	]*\)	adjektiivi, substantiivi	1\*C/\1	ADJ\2	ADJ_YLENNETTY	kotus/" \
+    -e "s/\(to\)	\([^	]*\)	substantiivi, adjektiivi	1\*F/\1	NOUN\2	NOUN_VETO	kotus/" \
+    -e "s/\(kky\)	\([^	]*\)	substantiivi, adjektiivi	1\*A/\1	NOUN\2	NOUN_MYRKKY	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	adjektiivi, substantiivi	1/\1	NOUN\2	NOUN_ASU	kotus/" \
+    -e "s/\(y\)	\([^	]*\)	substantiivi, adjektiivi	1/\1	NOUN\2	NOUN_KÄRRY	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi, adjektiivi	1/\1	NOUN\2	NOUN_TALO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	substantiivi, adverbi	1/\1	NOUN\2	NOUN_TALO	kotus/" \
+    -e "s/\(o\)	\([^	]*\)	adjektiivi, adverbi, substantiivi	1/\1	NOUN\2	NOUN_TALO	kotus/" \
+    -e "s/\(u\)	\([^	]*\)	substantiivi, postpositio, prepositio, adverbi	1/\1	NOUN\2	NOUN_ASU	kotus/" \
+    -e "s/\(${B}[bcdfghjklmnpqrstvwxz]\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_PUNK	kotus/" \
+    -e "s/\(${F}[bcdfghjklmnpqrstvwxz]\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_ZEN	kotus/" \
+    -e "s/\([bcdfghjklmnpqrstvwxz]\)	\([^	]*\)	substantiivi, adjektiivi	5/\1	NOUN\2	NOUN_ZEN	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	38/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	99/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	100/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	9\*J/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	9/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	(.)/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi	(..)/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	konjunktio	99/\1	SCONJ\2	SCONJ_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	konjunktio, adverbi	99/\1	SCONJ\2	SCONJ_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	konjunktio, substantiivi	99/\1	SCONJ\2	SCONJ_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, konjunktio	99/\1	SCONJ\2	SCONJ_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, adjektiivi	99/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi, adverbi, substantiivi	27/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	postpositio, adverbi	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, postpositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi, adverbi, postpositio	26/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, prepositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, prepositio, substantiivi	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	prepositio, adverbi	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, interjektio, substantiivi	(.)/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	prepositio, postpositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	postpositio, prepositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	postpositio, prepositio, adverbi	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	postpositio, adverbi, prepositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	prepositio, postpositio, adverbi	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, postpositio, substantiivi	39/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, prepositio, substantiivi	39/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, postpositio, prepositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, prepositio, postpositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	interjektio, substantiivi	(17)/\1	INTJ\2	INTJ_HAH	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	substantiivi, interjektio	(1)/\1	INTJ\2	INTJ_HAH	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	interjektio, adverbi	99/\1	INTJ\2	INTJ_HAH	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	prepositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	postpositio	99/\1	ADP\2	ADP_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi, adverbi	99/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adjektiivi, adverbi	9\*D/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	kieltoverbi, substantiivi	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	kieltoverbi, rinnastuskonjunktio	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	kieltoverbi + rinnastuskonjunktio	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	rinnastuskonjunktio + kieltoverbi	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	alistuskonjunktio + kieltoverbi	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi + kieltoverbi	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi + kieltoverbi, adverbi	99/\1	X\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)	adverbi, substantiivi	.*/\1	ADV\2	ADV_XXX	kotus/" \
+    -e "s/\(.\)	\([^	]*\)		34\*C/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)		1\*C/\1	ADJ\2	X_IGNORE	kotus/" \
+    -e "s/\(.\)	\([^	]*\)		99/\1	X\2	X_IGNORE	kotus/" |\
+    $SED -e 's/kotus, 50/kotus/' -e 's/kotus, 51/kotus/' \
+    -e 's/kotus, 5\*F/kotus/' -e 's/kotus, 9\*J/kotus/' \
+    -e 's/kotus, 72\*D/kotus/' -e 's/kotus, 74\*D/kotus/' \
+    -e 's/kotus, 32\*C/kotus/' |\
+    $SED -e 's/		substantiivi	/	NOUN	NOUN_XXX	kotus/' \
+    -e 's/		adjektiivi	/	ADJ	ADJ_XXX	kotus/' \
+    -e 's/		adverbi	/	ADV	ADV_XXX	kotus/' \
+    -e 's/		numeraali	/	NUM	NUM_XXX	kotus/' \
+    -e 's/		verbi	/	VERB	VERB_XXX	kotus/' \
+    -e 's/			/	X	XXX	kotus/' |\
+    $SED -e 's/^Hakusana	Homonymia	Sanaluokka	Taivutustiedot$/lemma	homonym	new_para	origin/' > nykysuomensanalista.tsv.unsort
+python ../python/tsvsort.py -i nykysuomensanalista.tsv.unsort \
+    -o nykysuomensanalista.tsv
+python ../python/tsvmerge.py -i ../lexemes.tsv -m nykysuomensanalista.tsv \
+    -o lexemes+nssl.tsv.unsort
+python ../python/tsvsort.py -i lexemes+nssl.tsv.unsort -o ../lexemes+nssl.tsv
+diff -u ../lexemes.tsv ../lexemes+nssl.tsv
+echo if nothing broke just cp ../lexemes+nssl.tsv ../lexemes.tsv and
+echo "do cd .. make checks and all"
