@@ -3,6 +3,16 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 0.9.12
+
+* Updated nykysuomen sanalista to 2024:
+    * 5 new paradigms for: *kuudan*, *köyryselkä* adj, *tuppisuu* adj,
+      *harmaahapsi* adj, *taxfree* adj
+    * xxx new lexemes: many prefixes and suffixes, compounds, e.g.
+      *väliaikaisravintola*, *trifle*, *tiedostomuoto*, *tarvepainate*,
+      ...
+* huge thanks to **Patreons** and **Github Sponsors** for their support
+
 ## Significant changes in 0.9.11
 
 * New words from open sources: 7000 new lexemes
