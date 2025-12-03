@@ -339,18 +339,18 @@ generated/master.tsv: generated/joint.tsv paradigms.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
-	tail -n +2 < $@.unsrt | sort -k 1,1 >> $@
+	tail -n +2 < $@.unsrt | LC_COLLATE=C sort -k 1,1 >> $@
 	-rm -f $@.unsrt
 # inner(?) join(mwes, paradigms)
 generated/mwe-master.tsv: generated/mwe-joint.tsv paradigms.tsv
 	$(PYTHON) $(srcdir)/python/tsv_expand.py \
 		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
-	tail -n +2 < $@.unsrt | sort -k 1,1 >> $@
+	tail -n +2 < $@.unsrt | LC_COLLATE=C sort -k 1,1 >> $@
 	-rm -f $@.unsrt
 
 generated/continuations.tsv: continuations.tsv generated/timestamp
-	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' | sort -k 1,1 > $@
+	cat $^ | grep -v '^#' | fgrep -v 'HEADERS' > $@
 
 # database to omorfi native lexcies:
 # segmenter
