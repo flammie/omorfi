@@ -1137,6 +1137,10 @@ Kaarti	PROPN	overlaps more common *Kaarti* (guard)
 Kaarto	PROPN	overlaps more common *Kaarto* (curve)
 Kaataja	PROPN	overlaps more common *Kaataja* (pine)
 Kaava	PROPN	overlaps more common *Kaava* (formula)
+kahdeksansataa	NUM	eight hundred
+kahdeksantoista	NUM	eighteen
+kahdeksantuhatta	NUM	eight thousand
+kahdeksastoista	NUM	eighteenth
 Kadettikunta	PROPN	overlaps more common *Kadettikunta* (cadets)
 Kahdeksainen	PROPN	overlaps more common *Kahdeksainen* (eight)
 Kahdeksikko	PROPN	overlaps more common *Kahdeksikko* (eight)
@@ -1168,9 +1172,13 @@ Kakkara	PROPN	overlaps more common *Kakkara* (FIXME)
 Kakkonen	PROPN	overlaps more common *Kakkonen* (two)
 Kakkula	PROPN	overlaps more common *Kakkula* (glasses)
 Kako	PROPN	overlaps more common *Kako* (FIXME)
+kaksikymmentä	NUM	twenty
 Kaksinainen	PROPN	overlaps more common *Kaksinainen* (dual)
 Kaksinkertainen	PROPN	overlaps more common *Kaksinkertainen* (double)
 Kaksipäinen	PROPN	overlaps more common *Kaksipäinen* (twi-headed)
+kaksisataa	NUM	two hundreds
+kaksitoista	NUM	twelve
+kaksituhatta	NUM	two thousands
 Kaksonen	PROPN	overlaps more common *Kaksonen* (twin)
 Kala	PROPN	overlaps more common *Kala* (fish)
 Kalakukko	PROPN	overlaps more common *Kalakukko* (fish bread)
@@ -1578,6 +1586,10 @@ Kolikko	PROPN	overlaps more common *Kolikko* (coin)
 Kolkka	PROPN	overlaps more common *Kolkka* (edge)
 Kolkko	PROPN	overlaps more common *Kolkko* (gloomy)
 Kolli	PROPN	overlaps more common *Kolli* (bobcat)
+kolmekymmentä	NUM	thirty
+kolmesataa	NUM	three hundreds
+kolmetoista	NUM	thirteen
+kolmetuhatta	NUM	three thousands
 Kolmihaarainen	PROPN	overlaps more common *Kolmihaarainen* (threeprong)
 Kolmikko	PROPN	overlaps more common *Kolmikko* (triplet)
 Kolminainen	PROPN	overlaps more common *Kolminainen* (threeway)
@@ -1811,10 +1823,14 @@ Kuusenhako	PROPN	overlaps more common *Kuusenhako* (FIXME)
 Kuusi	PROPN	overlaps more common *Kuusi* (six, fir)
 Kuusikanta	PROPN	overlaps more common *Kuusikanta* (hexagon)
 Kuusikko	PROPN	overlaps more common *Kuusikko* (group of six)
+kuusikymmentä	NUM	sixty
 Kuusimetsä	PROPN	overlaps more common *Kuusimetsä* (pine forest)
 Kuusinen	PROPN	overlaps more common *Kuusinen* (six)
 Kuusio	PROPN	overlaps more common *Kuusio* (six room apt.)
+kuusisataa	NUM	six hundreds
 Kuusisto	PROPN	overlaps more common *Kuusisto* (pines)
+kuusitoista	NUM	sixteen
+kuusituhatta	NUM	six thousands
 Kuutamo	PROPN	overlaps more common *Kuutamo* (moon)
 Kuutonen	PROPN	overlaps more common *Kuutonen* (six)
 Kuutti	PROPN	overlaps more common *Kuutti* (baby seal)
@@ -2534,6 +2550,10 @@ Neilikka	PROPN	overlaps more common *Neilikka* (clove)
 Neliapila	PROPN	overlaps more common *Neliapila* (clover)
 Neliskulmainen	PROPN	overlaps more common *Neliskulmainen* (rectangular)
 Neliö	PROPN	overlaps more common *Neliö* (square)
+neljäkymmentä	NUM	forty
+neljäsataa	NUM	four hundreds
+neljätoista	NUM	fourteen
+neljätuhatta	NUM	four thousands
 Nelonen	PROPN	overlaps more common *Nelonen* (four)
 Nenä	PROPN	overlaps more common *Nenä* (nose)
 Neon	PROPN	overlaps more common *Neon* (neon)
@@ -3025,6 +3045,7 @@ Puoleinen	PROPN	overlaps more common *Puoleinen* (FIXME)
 puolesta	ADP	adposition (behalf of) when can be attached to a genitive NP, otherwise noun forms of *puoli* (side)
 Puolimatka	PROPN	overlaps more common *Puolimatka* (halfway)
 puolin	ADV	usually seen as adverb (sides), but can be analysed as instructive of the noun *puoli* (half, side)
+puolitoista	NUM	one and a half (lit. halfteen)
 Puoliväli	PROPN	overlaps more common *Puoliväli* (halfway)
 Puolue	PROPN	overlaps more common *Puolue* (party)
 Puolukka	PROPN	overlaps more common *Puolukka* (lingonberry)
@@ -3463,6 +3484,10 @@ SDP	PROPN	Sosiali-Demokraattinen Puolue
 Seikka	PROPN	overlaps more common *Seikka* (thing)
 Seili	PROPN	overlaps more common *Seili* (sail)
 Seiska	PROPN	overlaps more common *Seiska* (seven)
+seitsemänkymmentä	NUM	seventy
+seitsemänsataa	NUM	seven hundreds
+seitsemäntoista	NUM	seventeen
+seitsemäntuhatta	NUM	seven thousands
 sekä	PROPN	and too, coordinating conj, “kissat sekä koirat“
 sekä	PROPN	and too, coordinating conj, “kissat sekä koirat”
 selin	1	usually seen as adverb (back facing), but can be analysed as instructive of the noun *selkä* (back)
@@ -4211,7 +4236,11 @@ Viisari	PROPN	overlaps more common *Viisari* (pointer)
 Viisi	PROPN	overlaps more common *Viisi* (five)
 Viisikanta	PROPN	overlaps more common *Viisikanta* (pentagon)
 Viisikko	PROPN	overlaps more common *Viisikko* (group of five)
+viisikymmentä	NUM	fifty
 Viisikymppinen	PROPN	overlaps more common *Viisikymppinen* (fifty-yo)
+viisisataa	NUM	five hundreds
+viisitoista	NUM	fifteen
+viisituhatta	NUM	five thousands
 Viitonen	PROPN	overlaps more common *Viitonen* (five)
 Viitta	PROPN	overlaps more common *Viitta* (cape)
 Viive	PROPN	overlaps more common *Viive* (delay)
@@ -4315,6 +4344,10 @@ WWW	NOUN	World Wide Web
 XML	NOUN	Extensible Markup Language
 Y2K	NOUN	Year 2000
 yhdessä	ADV	usually seen as adverb (together), but can be analysed as inessive of the adjective *yksi* (one)
+yhdeksänkymmentä	NUM	ninety
+yhdeksänsataa	NUM	nine hundreds
+yhdeksäntoista	NUM	nineteen
+yhdeksäntuhatta	NUM	nine thousands
 yhteensä	ADV	usually seen as adverb (altogether), but can be analysed as a form of *yksi* (one)
 Yhteislaidun	PROPN	overlaps more common *Yhteislaidun* (common greens)
 Yhtiö	PROPN	overlaps more common *Yhtiö* (company)
@@ -4326,6 +4359,7 @@ yksiin	ADV	usually seen as adverb (together), but can be analysed as illative of
 Yksinäinen	PROPN	overlaps more common *Yksinäinen* (lonely)
 yksinään	ADV	usually seen as adverb (alone), but can be analysed as a form of *yksi* (one)
 Yksipuinen	PROPN	overlaps more common *Yksipuinen* (single tree)
+yksitoista	NUM	eleven
 yksistään	ADV	usually seen as adverb (by --self), but can be analysed as a form of *yksi* (one)
 Ylhäinen	PROPN	overlaps more common *Ylhäinen* (upper)
 Ylikäytävä	PROPN	overlaps more common *Ylikäytävä* (overpass)

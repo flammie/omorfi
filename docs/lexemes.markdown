@@ -78,21 +78,21 @@ We link to all original sources for reference.
 | Aamu |  overlaps more common *aamu* (morning) | 🧑¹☢♀ |  |
 | Aamunkoitto |  overlaps more common *aamunkoitto* (dawn) | 🌍☢ |  |
 | Aamutähti |  overlaps more common *aamutähti* (morning star) | 🧑²☢ |  |
-| Aapa |  overlaps more common *aapa* (swamp) | 🌍☢ |  |
+| Aapa |  overlaps more common *aapa* (swamp) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aapa)  |
 | Aaria |  overlaps more common *aaria* (aria) | 🌍☢ |  |
 | Aarni |  overlaps more common *aarni* (treasure, loot) | 🧑¹🧑²☢♂ |  |
-| Aarnio |  overlaps more common *aarnio* (thicket) | 🌍🧑²☢ |  |
-| Aarre |  overlaps more common *aarre* (treasure) | 🧑¹🌍🧑²☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aarre)  |
+| Aarnio |  overlaps more common *aarnio* (thicket) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Aarnio)  |
+| Aarre |  overlaps more common *aarre* (treasure) | 🧑¹🌍🧑²☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Aarre) [enwikt](https://en.wiktionary.org/wiki/Aarre)  |
 | Aarre₂ |  without gradation (partial overlaps with *aarre*) |  |
 | Aarrehauta |  overlaps more common *aarrehauta* (tomb) | 🌍☢ |  |
-| Aarto |  with gradation | 🧑¹🧑²♂ |  |
+| Aarto |  with gradation | 🧑¹🧑²♂ | [enwikt](https://en.wiktionary.org/wiki/Aarto)  |
 | Aarto₂ |  without gradation |  |
 | Aate |  overlaps more common *aate* (idea) | 🧑²☢ |  |
 | Aatos |  overlaps more common *aatos* (thought) | 🧑¹🧑²☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Aatos) [enwikt](https://en.wiktionary.org/wiki/Aatos)  |
 | Aatto |  overlaps more common *aatto* (eve) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Aatto)  |
 | Aava |  overlaps more common *aava* (open) | 🧑¹🌍☢♀ | [enwikt](https://en.wiktionary.org/wiki/Aava)  |
 | Aave |  overlaps more common *aave* (ghost) | 🧑¹☢ |  |
-| Aavikko |  overlaps more common *aavikko* (desert) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aavikko)  |
+| Aavikko |  overlaps more common *aavikko* (desert) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aavikko) [enwikt](https://en.wiktionary.org/wiki/Aavikko)  |
 | Abbas |  without stem alternation | 🧑² |  |
 | Abbas₂ |  with stem alternation |  |
 | Acheloos |  without stem alternation | 🌍 |  |
@@ -118,7 +118,7 @@ We link to all original sources for reference.
 | Agios Nikolaos₂ |  with stem alternation |  |
 | Agnes |  without stem alternation | 🧑¹♀ | [fiwikt](https://fi.wiktionary.org/wiki/Agnes)  |
 | Agnes₂ |  with stem alternation |  |
-| Ahava |  overlaps more common *ahava* (FIXME) | 🌍🧑²org☢ |  |
+| Ahava |  overlaps more common *ahava* (FIXME) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Ahava)  |
 | Ahdinko |  overlaps more common *ahdinko* (trouble) | 🌍☢ |  |
 | Ahjo |  overlaps more common *ahjo* (FIXME) | 🌍☢ |  |
 | Ahkera |  overlaps more common *ahkera* (FIXME) | 🌍☢ |  |
@@ -131,7 +131,7 @@ We link to all original sources for reference.
 | Ahto |  without gradation | 🧑¹🧑²♂ | [enwikt](https://en.wiktionary.org/wiki/Ahto)  |
 | Ahto₂ |  with gradation |  |
 | Ahven |  overlaps more common *ahven* (pike) | 🧑²☢ |  |
-| Ahvenlampi |  without gradation | 🌍 | [fiwikt](https://fi.wiktionary.org/wiki/Ahvenlampi)  |
+| Ahvenlampi |  without gradation | 🌍 | [fiwikt](https://fi.wiktionary.org/wiki/Ahvenlampi) [enwikt](https://en.wiktionary.org/wiki/Ahvenlampi)  |
 | Ahvenlampi₂ |  with gradation |  |
 | Ahvenojanrimpi |  without gradation | 🌍 |  |
 | Ahvenojanrimpi₂ |  with gradation |  |
@@ -156,7 +156,7 @@ We link to all original sources for reference.
 | Ainoa |  overlaps very common *ainoa* “only“. | 🧑²☢ |  |
 | Ainoa |  overlaps very common *ainoa* “only”. | 🧑²☢ |  |
 | Ainokainen |  overlaps more common *ainokainen* (singleton) | org☢ |  |
-| Airo |  overlaps more common *airo* (FIXME) | 🧑²☢ |  |
+| Airo |  overlaps more common *airo* (FIXME) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Airo)  |
 | Airut |  overlaps more common *airut* (FIXME) | 🧑²☢ |  |
 | ais |  A-sharp in music notation, rare and causes compounding problems | ☢ | [fiwikt](https://fi.wiktionary.org/wiki/ais) [enwikt](https://en.wiktionary.org/wiki/ais)  |
 | Aisti |  overlaps more common *aisti* (sense) | 🌍☢ |  |
@@ -165,7 +165,7 @@ We link to all original sources for reference.
 | Aitarimpi₂ |  with gradation |  |
 | Aitio |  overlaps more common *aitio* (box) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aitio)  |
 | Aito |  overlaps more common *Aito* (real) | 🌍☢ |  |
-| Aitta |  overlaps more common *Aitta* (barn) | 🌍🧑²☢ |  |
+| Aitta |  overlaps more common *Aitta* (barn) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Aitta)  |
 | Aittalamminrimpi |  without gradation | 🌍 |  |
 | Aittalamminrimpi₂ |  with gradation |  |
 | Aivolanpuhti |  without gradation | 🌍 |  |
@@ -181,7 +181,7 @@ We link to all original sources for reference.
 | ajalta |  from time of smth as adposition, “ristiretkien ajalta” |  |  |
 | Ajankulu |  overlaps more common *Ajankulu* (passing of time) | 🌍☢ |  |
 | ajatuksissaan |  in thought, as adverb, “olin ajatuksissaan ~ ajatuksissani”, see VISK § 655 |  |  |
-| Ajo |  overlaps more common *Ajo* (driving) | 🌍🧑²☢ |  |
+| Ajo |  overlaps more common *Ajo* (driving) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ajo)  |
 | ajoilta |  from times of smth as adposition, “ristiretkien ajoilta” |  |  |
 | Akanrimpi |  without gradation | 🌍 |  |
 | Akanrimpi₂ |  with gradation |  |
@@ -198,7 +198,7 @@ We link to all original sources for reference.
 | Akra Archangelos |  old stem alternation |  |
 | Akra Archangelos₂ |  new stem alternation |  |
 | Akseli |  overlaps more common *Akseli* (axis) | 🧑¹🌍🧑²☢♂ | [enwikt](https://en.wiktionary.org/wiki/Akseli)  |
-| Ala |  overlaps more common *Ala* (field) | 🌍🧑²☢ |  |
+| Ala |  overlaps more common *Ala* (field) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ala)  |
 | Ala-Asmunti |  without gradation | 🌍 |  |
 | Ala-Asmunti₂ |  with gradation |  |
 | Ala-Savi |  alternations | 🌍 |  |
@@ -213,12 +213,12 @@ We link to all original sources for reference.
 | alapuolelta |  from under, as adposition, genitive complement or possessive, “laiturin alapuolelta” |  |  |
 | alapuolelta |  under, as adposition, genitive complement or possessive, “laiturin alapuolelta” |  |  |
 | Alapää |  overlaps more common *Alapää* (genitalia) | 🌍☢ |  |
-| alas |  to under, down, as adverb, “tule alas” |  |  |
+| alas |  to under, down, as adverb, “tule alas” |  | [enwikt](https://en.wiktionary.org/wiki/alas)  |
 | alas |  down (the road or such), as adposition, partitive complement or possessive, “alas tietä pitkin” |  |  |
 | Alas |  overlaps more common *Alas* (down) | 🌍☢ |  |
 | Alaselkä |  overlaps more common *Alaselkä* (downback) | 🌍☢ |  |
 | Alasin |  overlaps more common *Alasin* (anvil) | 🌍☢ |  |
-| Alava |  overlaps more common *Alava* (low) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Alava)  |
+| Alava |  overlaps more common *Alava* (low) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Alava) [enwikt](https://en.wiktionary.org/wiki/Alava)  |
 | Alavirta |  overlaps more common *Alavirta* (downstream) | 🌍☢ |  |
 | Ale |  overlaps more common *Ale* (discount) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Ale)  |
 | Ales |  alternations | 🌍 |  |
@@ -234,14 +234,14 @@ We link to all original sources for reference.
 | Algyógy |  no alternations | 🌍 |  |
 | Algyógy₂ |  alternations  |  |
 | Alfa |  overlaps more common *Alfa* (alpha) | 🧑¹☢♀ |  |
-| Alhainen |  overlaps more common *Alhainen* (peasant) | 🌍☢ |  |
+| Alhainen |  overlaps more common *Alhainen* (peasant) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Alhainen)  |
 | ali |  to / through underneath, as adverb, “täytyy mennä ali” |  |  |
 | ali |  to / through underneath, as adposition, genitive complement or possessive, “kölin ali” |  |  |
 | Alimmainen |  overlaps more common *Alimmainen* (bottommost) | 🌍☢ |  |
 | alitse |  via under, as adposition, genitive complement or possessive, “kölin alitse” |  |  |
 | alkaen |  onwards, to start, as adverb, “alun alkaen” |  | [fiwikt](https://fi.wiktionary.org/wiki/alkaen)  |
 | alkaen |  beginning from timepoint, as adposition, elative complement, “maanantaista alkaen” |  |  |
-| Alkio |  overlaps more common *Alkio* (unit) | 🌍🧑²☢ |  |
+| Alkio |  overlaps more common *Alkio* (unit) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Alkio)  |
 | Alku |  overlaps more common *Alku* (beginning) | 🌍🧑²🧑¹☢ |  |
 | Alku₂ |  no gradations |  |
 | alkupuolella |  in the beginning, as adposition, genitive complement or possessive, “tarinan alkupuolella“ |  |  |
@@ -268,13 +268,13 @@ We link to all original sources for reference.
 | Amýntaio₂ |  partitives etc. |  |
 | alla |  under, as adposition, genitive complement or possessive, “laiturin alla” |  |  |
 | Alla |  overlaps more common *Alla* (under) | 🌍🧑¹☢ |  |
-| alle |  to under, as adposition, genitive complement or possessive, “laiturin alle” |  |  |
+| alle |  to under, as adposition, genitive complement or possessive, “laiturin alle” |  | [enwikt](https://en.wiktionary.org/wiki/alle)  |
 | Allekirjoittanut |  overlaps very common *allekirjoittanut* (signee) | 🎶☢ |  |
 | Allianssi |  overlaps more common *Allianssi* (alliance) | org☢ |  |
 | Allikko |  overlaps more common *Allikko* (ditch) | 🌍☢ |  |
 | Allofoni |  overlaps more common *Allofoni* (allophone) | org☢ |  |
 | Alpakka |  overlaps more common *Alpakka* (alpaca) | 🌍☢ |  |
-| Alppi |  overlaps more common *Alppi* (alp) | 🌍🧑²☢ |  |
+| Alppi |  overlaps more common *Alppi* (alp) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Alppi)  |
 | alta |  from under, as adposition, genitive complement or possessive, “laiturin alta” |  |  |
 | Alta |  overlaps more common *Alta* (under) | 🌍☢ |  |
 | Altis |  overlaps more common *Altis* (prone) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Altis)  |
@@ -283,7 +283,7 @@ We link to all original sources for reference.
 | alussa |  in the beginning, as adposition, genitive complement or possessive, “tarinan alussa“ |  |  |
 | alussa |  in the beginning, as adposition, genitive complement or possessive, “tarinan alussa” |  |  |
 | Alusvesi |  overlaps more common *Alusvesi* (underwater) | 🌍☢ |  |
-| Ampuja |  overlaps more common *Ampuja* (shooter) | 🧑²☢ |  |
+| Ampuja |  overlaps more common *Ampuja* (shooter) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ampuja)  |
 | Ananias |  alternations | 🧑¹ |  |
 | Ananias₂ |  alternations  |  |
 | Andreas |  alternations | 🧑¹♂ | [enwikt](https://en.wiktionary.org/wiki/Andreas)  |
@@ -330,7 +330,7 @@ We link to all original sources for reference.
 | Armas₂ |  alternations  |  |
 | Arpo |  gradations | 🧑¹🌍 |  |
 | Arpo₂ |  no gradations  |  |
-| Arppe |  no gradations | 🧑² |  |
+| Arppe |  no gradations | 🧑² | [enwikt](https://en.wiktionary.org/wiki/Arppe)  |
 | Arppe₂ |  gradations  |  |
 | Arras |  inflects with ’ | 🌍 |  |
 | Arras₂ |  inflects with i |  |
@@ -340,7 +340,7 @@ We link to all original sources for reference.
 | Asarias₂ |  alternations  |  |
 | Asos |  no alternations | org |  |
 | Asos₂ |  alternations  |  |
-| Asunta |  variations | 🌍🧑² |  |
+| Asunta |  variations | 🌍🧑² | [enwikt](https://en.wiktionary.org/wiki/Asunta)  |
 | Asunta₂ |  variations |  |
 | Asus |  no alternations | org |  |
 | Asus₂ |  alternations  |  |
@@ -364,9 +364,9 @@ We link to all original sources for reference.
 | Aunee₂ |  alternations  |  |
 | Aurora |  alternations | 🌍🧑¹♀ | [enwikt](https://en.wiktionary.org/wiki/Aurora)  |
 | Aurora₂ |  alternations  |  |
-| Autti |  alternations | 🌍🧑² |  |
+| Autti |  alternations | 🌍🧑² | [enwikt](https://en.wiktionary.org/wiki/Autti)  |
 | Autti₂ |  no alternations  |  |
-| Autto |  alternations | 🌍🧑² |  |
+| Autto |  alternations | 🌍🧑² | [enwikt](https://en.wiktionary.org/wiki/Autto)  |
 | Autto₂ |  no alternations  |  |
 | Avis |  no alternations | org |  |
 | Avis₂ |  alternations  |  |
@@ -388,10 +388,10 @@ We link to all original sources for reference.
 | Angervo |  overlaps more common *Angervo* (flower) | 🧑²☢ |  |
 | Ani |  overlaps more common *Ani* (very) | 🌍🧑¹☢ |  |
 | Ankka |  overlaps more common *Ankka* (duck) | 🌍☢ |  |
-| Ankkuri |  overlaps more common *Ankkuri* (anchor) | 🌍🧑²☢ |  |
+| Ankkuri |  overlaps more common *Ankkuri* (anchor) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ankkuri)  |
 | Annansilmä |  overlaps more common *Annansilmä* (flower) | 🌍☢ |  |
-| Ansa |  overlaps more common *Ansa* (trap) | 🌍🧑¹☢♀ |  |
-| Ansio |  overlaps more common *Ansio* (profit) | 🌍🧑²☢ |  |
+| Ansa |  overlaps more common *Ansa* (trap) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ansa)  |
+| Ansio |  overlaps more common *Ansio* (profit) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ansio)  |
 | Anto |  overlaps more common *Anto* (output) | 🧑¹🌍🧑²☢ |  |
 | Apaja |  overlaps more common *Apaja* () | 🌍☢ |  |
 | Ape |  overlaps more common *Ape* (food) | 🌍☢ |  |
@@ -405,10 +405,10 @@ We link to all original sources for reference.
 | Arkki |  overlaps more common *Arkki* (ark) | 🌍☢ |  |
 | Armas |  overlaps more common *Armas* (dear) | 🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Armas) [enwikt](https://en.wiktionary.org/wiki/Armas)  |
 | Armo |  overlaps more common *Armo* (grace) | 🧑¹☢ |  |
-| Aro |  overlaps more common *Aro* (grassland) | 🌍🧑²☢ |  |
+| Aro |  overlaps more common *Aro* (grassland) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Aro)  |
 | Arpi |  overlaps more common *Arpi* (scar) | 🌍🧑²☢ |  |
 | Arvanheitto |  overlaps more common *Arvanheitto* (gamble) | 🌍☢ |  |
-| Arvio |  overlaps more common *Arvio* (estimate) | 🌍🧑²☢ |  |
+| Arvio |  overlaps more common *Arvio* (estimate) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Arvio)  |
 | Arvo |  overlaps more common *Arvo* (value) | 🧑¹🌍🧑²☢♂ | [enwikt](https://en.wiktionary.org/wiki/Arvo)  |
 | As |  overlaps forms of very common *asia* “thing”, among others | 🌍☢ |  |
 | Asema |  overlaps very common *asema* “station”. | 🌍☢ |  |
@@ -426,23 +426,23 @@ We link to all original sources for reference.
 | Asti |  overlaps more common adposition *asti* (since) | 🌍☢ |  |
 | Asu |  overlaps more common *Asu* (outfit) | 🧑²☢ |  |
 | Asuja |  overlaps more common *Asuja* (tenant) | 🌍☢ |  |
-| Asukas |  overlaps more common *Asukas* (tenant) | 🧑²☢ |  |
+| Asukas |  overlaps more common *Asukas* (tenant) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Asukas)  |
 | Asuma |  overlaps more common *Asuma* (living) | 🌍☢ |  |
 | Asumaton |  overlaps more common *Asumaton* (unliving) | 🌍☢ |  |
 | Asunto |  overlaps more common *Asunto* (dwelling) | 🌍☢ |  |
 | Asuntola |  overlaps more common *Asuntola* (dormitory) | 🌍☢ |  |
 | Asuntomessut |  overlaps more common *Asuntomessut* (house fare) | org☢ |  |
 | Ateenalainen |  overlaps more common *Ateenalainen* (athenian) | 🧑²☢ |  |
-| atk |  automaattinen tekstinkäsittely |  |  |
+| atk |  automaattinen tekstinkäsittely |  | [enwikt](https://en.wiktionary.org/wiki/atk)  |
 | Auki |  overlaps more common *Auki* (open) | 🌍☢ |  |
 | Aukio |  overlaps more common *Aukio* (square) | 🌍☢ |  |
-| Aula |  overlaps more common *Aula* (lobby) | 🌍🧑²☢ |  |
+| Aula |  overlaps more common *Aula* (lobby) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Aula)  |
 | Aulis |  overlaps more common *Aulis* (willing) | 🧑²🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Aulis) [enwikt](https://en.wiktionary.org/wiki/Aulis)  |
 | Auma |  overlaps more common *Auma* (hip) | 🌍☢ |  |
-| Aura |  overlaps more common *Aura* (aura, plow) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Aura)  |
+| Aura |  overlaps more common *Aura* (aura, plow) | 🌍🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Aura) [enwikt](https://en.wiktionary.org/wiki/Aura)  |
 | Aurankurki |  overlaps more common *Aurankurki* (plow crane) | 🌍☢ |  |
 | Aurinko |  overlaps more common *Aurinko* (sun) | 🌍org⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Aurinko) [enwikt](https://en.wiktionary.org/wiki/Aurinko)  |
-| Autio |  overlaps more common *Autio* (desert) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Autio)  |
+| Autio |  overlaps more common *Autio* (desert) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Autio) [enwikt](https://en.wiktionary.org/wiki/Autio)  |
 | Autiomaa |  overlaps more common *Autiomaa* (desertlands) | 🌍☢ |  |
 | Avara |  overlaps more common *Avara* (wide open) | 🌍org☢ |  |
 | Avokallio |  overlaps more common *Avokallio* (bedrock) | 🌍☢ |  |
@@ -463,7 +463,7 @@ We link to all original sources for reference.
 | Bo₂ |  suffixes |  |
 | Bordeaux |  inflect with ’: *Bordeaux* : *Bordeaux’n* | 🌍 |  |
 | Bordeaux₂ |  inflect with i: *Bordeaux* : *Bordeauxin* |  |
-| Botswana |  suffixes: *Botswana* : *Botswanoja* | 🌍⚐ |  |
+| Botswana |  suffixes: *Botswana* : *Botswanoja* | 🌍⚐ | [fiwikt](https://fi.wiktionary.org/wiki/Botswana)  |
 | Botswana₂ |  suffixes: *Botswana* : *Botswanoita |  |
 | Bouquet |  inflect with ’: *Bouquet* : *Bouquet’n* | 🧑² |  |
 | Bouquet₂ |  inflect with i: *Bouquet* : *Bouquetin* |  |
@@ -530,7 +530,7 @@ We link to all original sources for reference.
 | Dilemma |  overlaps more common *Dilemma* (dilemma) | org☢ |  |
 | Dingo |  overlaps more common *Dingo* (dingo) | 🎶☢ |  |
 | Dipoli |  overlaps more common *Dipoli* (dipole) | 🌍☢ |  |
-| DJ |  Disc Jockey |  |  |
+| DJ |  Disc Jockey |  | [enwikt](https://en.wiktionary.org/wiki/DJ)  |
 | dna |  deoxyribonucleic acid |  |  |
 | DNA |  Deoxyribo-Nucleic Acid |  | [enwikt](https://en.wiktionary.org/wiki/DNA)  |
 | Dominikaaninen |  overlaps more common *Dominikaaninen* (FIXME) | 🌍☢ |  |
@@ -539,7 +539,7 @@ We link to all original sources for reference.
 | DVD |  Digital Versatile Disc |  |  |
 | Ebola |  overlaps more common *Ebola* (ebola) | 🌍☢ |  |
 | Ede |  overlaps forms of very common *edellä* “front, etc. | 🌍🧑² |  |
-| edessä |  on the way, “olet edessä” |  | [fiwikt](https://fi.wiktionary.org/wiki/edessä)  |
+| edessä |  on the way, “olet edessä” |  | [fiwikt](https://fi.wiktionary.org/wiki/edessä) [enwikt](https://en.wiktionary.org/wiki/edessä)  |
 | edessä |  in front of, complement is genitive or possessive, “talon edessä” |  |  |
 | edestä |  out of the way, “siirry edestä” |  | [fiwikt](https://fi.wiktionary.org/wiki/edestä)  |
 | edestä |  by/from front of, complement is genitive or possessive, “talon edestä“ |  |  |
@@ -576,7 +576,7 @@ We link to all original sources for reference.
 | Enne |  overlaps more common *Enne* (premonition) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Enne)  |
 | ennen |  in the old times, as adverb, “ennen oli kaikki paremmin” |  |  |
 | ennen |  before, as adposition, complement in partitive, “ennen kaikkea” |  | [fiwikt](https://fi.wiktionary.org/wiki/ennen)  |
-| Eno |  overlaps more common *Eno* (uncle) | 🌍🧑²☢ |  |
+| Eno |  overlaps more common *Eno* (uncle) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Eno)  |
 | Ensi |  overlaps more common *Ensi* (first) | 🧑¹☢ |  |
 | Erakko |  overlaps more common *Erakko* (hermit) | 🌍☢ |  |
 | Erikoinen |  overlaps more common *Erikoinen* (special) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Erikoinen)  |
@@ -593,7 +593,7 @@ We link to all original sources for reference.
 | Etappi |  overlaps more common *Etappi* (waypoint) | 🌍☢ |  |
 | Eteinen |  overlaps more common *Eteinen* (hallway) | 🌍☢ |  |
 | Etelä |  overlaps more common *Etelä* (south) | 🌍☢ |  |
-| Eteläinen |  overlaps more common *Eteläinen* (southern) | 🌍🧑²☢ |  |
+| Eteläinen |  overlaps more common *Eteläinen* (southern) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Eteläinen)  |
 | Eteläkärki |  overlaps more common *Eteläkärki* (south tip) | 🌍☢ |  |
 | Etelämaa |  overlaps more common *Etelämaa* (southlands) | 🌍☢ |  |
 | Eteläpuoli |  overlaps more common *Eteläpuoli* (southside) | 🌍☢ |  |
@@ -618,7 +618,7 @@ We link to all original sources for reference.
 | Fatima |  overlaps more common *Fatima* (fatima) | 🌍☢ |  |
 | FBI |  Federal Bureau of Investigation | org |  |
 | FIFA |  Football Assoc. | org |  |
-| Finni |  overlaps more common *Finni* (pimple) | 🌍🧑²☢ |  |
+| Finni |  overlaps more common *Finni* (pimple) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Finni)  |
 | Fobia |  overlaps more common *Fobia* (fobia) | org☢ |  |
 | Fokus |  overlaps more common *Fokus* (focus) | org☢ |  |
 | Fryygia |  overlaps more common *Fryygia* (fryygia) | 🌍☢ |  |
@@ -626,16 +626,16 @@ We link to all original sources for reference.
 | GM |  General Motors | org |  |
 | Gouda |  overlaps more common *Gouda* (gouda) | 🌍☢ |  |
 | Guinea |  overlaps more common *Guinea* (guinea) | 🌍☢⚐ |  |
-| halata |  hug, *halata* : *halaa* |  | [fiwikt](https://fi.wiktionary.org/wiki/halata)  |
+| halata |  hug, *halata* : *halaa* |  | [fiwikt](https://fi.wiktionary.org/wiki/halata) [enwikt](https://en.wiktionary.org/wiki/halata)  |
 | halata₂ |  desire (archaic), *halata* : *halajaa* |  |  |
 | isota |  embiggen, *isota* : *isonee* |  | [fiwikt](https://fi.wiktionary.org/wiki/isota) [enwikt](https://en.wiktionary.org/wiki/isota)  |
-| isota₂ |  desire (archaic), *isota* : *isoaa* |  |  |
+| isota₂ |  desire (archaic), *isota* : *isoaa* |  |
 | keritä |  have time, make it, *keritä* : *kerkiää* |  |  |
 | keritä₂ |  shave, *keritä* : *keritsee* |  |  |
 | kitaristi |  guitarist, *kitaristi* : *kitaristeja* |  | [fiwikt](https://fi.wiktionary.org/wiki/kitaristi) [enwikt](https://en.wiktionary.org/wiki/kitaristi)  |
 | kitaristi₂ |  mouth crucifix, *kitaristi* : *kitaristejä* |  |
 | kuori |  skin (veg.), *kuori* : *kuorta* |  | [fiwikt](https://fi.wiktionary.org/wiki/kuori)  |
-| kuori₂ |  some fish, *kuori* : *kuoria* |  |  |
+| kuori₂ |  some fish, *kuori* : *kuoria* |  |
 | lahti |  peninsula, *lahti* : *lahden* |  | [fiwikt](https://fi.wiktionary.org/wiki/lahti) [enwikt](https://en.wiktionary.org/wiki/lahti)  |
 | lahti₂ |  slaughter, *lahti* : *lahdin* |  |
 | laki |  law, *laki* : *lait* |  | [fiwikt](https://fi.wiktionary.org/wiki/laki) [enwikt](https://en.wiktionary.org/wiki/laki)  |
@@ -650,15 +650,15 @@ We link to all original sources for reference.
 | raueta₂ |  ???, *raueta* : *raukeaa* |  |  |
 | sietä |  ???, *sietä*: *raukenee* |  | [enwikt](https://en.wiktionary.org/wiki/sietä)  |
 | sietä₂ |  ???, *sietä* : *raukeaa* |  |  |
-| tavata |  syllabify, *tavata* : *tavaa* |  |  |
+| tavata |  syllabify, *tavata* : *tavaa* |  | [enwikt](https://en.wiktionary.org/wiki/tavata)  |
 | tacata₂ |  meet, *tavata* : *tapaa* |  |
 | Ha |  overlaps more common *Ha* (ha) | 🌍☢ |  |
 | Haahka |  overlaps more common *Haahka* (owl) | 🌍🧑²☢ |  |
-| Haahti |  overlaps more common *Haahti* (shipwreck) | 🧑²☢ |  |
+| Haahti |  overlaps more common *Haahti* (shipwreck) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haahti)  |
 | Haaksi |  overlaps more common *Haaksi* (shipwreck) | 🌍☢ |  |
-| Haapa |  overlaps more common *Haapa* (tree) | 🌍🧑²☢ |  |
+| Haapa |  overlaps more common *Haapa* (tree) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haapa)  |
 | Haapainen |  overlaps more common *Haapainen* (treey) | 🌍☢ |  |
-| Haara |  overlaps more common *Haara* (crotch) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Haara)  |
+| Haara |  overlaps more common *Haara* (crotch) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Haara) [enwikt](https://en.wiktionary.org/wiki/Haara)  |
 | Haarikko |  overlaps more common *Haarikko* (FIXME) | 🌍☢ |  |
 | Haarukka |  overlaps more common *Haarukka* (fork) | 🌍☢ |  |
 | Haaska |  overlaps more common *Haaska* (corpse) | 🌍☢ |  |
@@ -666,15 +666,15 @@ We link to all original sources for reference.
 | Habitus |  overlaps more common *Habitus* (habitus) | org☢ |  |
 | Hahmo |  overlaps more common *Hahmo* (pattern) | 🧑²☢ |  |
 | Hai |  overlaps more common *Hai* (shark) | 🧑²☢ |  |
-| Haikala |  overlaps more common *Haikala* (sharkfish) | 🌍🧑²☢ |  |
-| Haikara |  overlaps more common *Haikara* (bird) | 🌍🧑²☢ |  |
+| Haikala |  overlaps more common *Haikala* (sharkfish) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haikala)  |
+| Haikara |  overlaps more common *Haikara* (bird) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haikara)  |
 | Hailakka |  overlaps more common *Hailakka* (pale) | 🌍☢ |  |
 | Haiseva |  overlaps more common *Haiseva* (smelly) | 🌍☢ |  |
 | Haisu |  overlaps more common *Haisu* (smell) | 🌍☢ |  |
 | Haitta |  overlaps more common *Haitta* (har,) | 🌍☢ |  |
 | Haka |  overlaps more common *Haka* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Haka)  |
-| Hakamaa |  overlaps more common *Hakamaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hakamaa)  |
-| Hakanen |  overlaps more common *Hakanen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hakanen)  |
+| Hakamaa |  overlaps more common *Hakamaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hakamaa) [enwikt](https://en.wiktionary.org/wiki/Hakamaa)  |
+| Hakanen |  overlaps more common *Hakanen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hakanen) [enwikt](https://en.wiktionary.org/wiki/Hakanen)  |
 | Hakattu |  overlaps more common *Hakattu* (beaten) | 🌍☢ |  |
 | Hakkuri |  overlaps more common *Hakkuri* (FIXME) | 🌍☢ |  |
 | Hakkuu |  overlaps very common *hakkuu* “felling of trees“ | 🌍☢ |  |
@@ -687,35 +687,35 @@ We link to all original sources for reference.
 | Halkaisija |  overlaps more common *Halkaisija* (diameter) | 🌍☢ |  |
 | Halkinainen |  overlaps more common *Halkinainen* (split) | 🌍☢ |  |
 | Halkio |  overlaps more common *Halkio* (FIXME) | 🌍☢ |  |
-| Halko |  overlaps more common *Halko* (log) | 🌍🧑²☢ |  |
+| Halko |  overlaps more common *Halko* (log) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Halko)  |
 | Halla |  overlaps more common *Halla* (frost) | 🌍🧑²☢ |  |
 | Hallanpesä |  overlaps more common *Hallanpesä* (FIXME) | 🌍☢ |  |
 | Hallanvaara |  overlaps more common *Hallanvaara* (frost warning) | 🌍☢ |  |
 | Halli |  overlaps more common *Halli* (fox) | 🌍🧑²☢ |  |
 | Hallittu |  overlaps more common *Hallittu* (guided) | 🌍☢ |  |
-| Haltia |  overlaps more common *Haltia* (elf) | 🌍🧑²☢ |  |
+| Haltia |  overlaps more common *Haltia* (elf) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haltia)  |
 | Haltio |  overlaps more common *Haltio* (FIXME) | 🧑²☢ |  |
 | Halunen |  overlaps forms of very common *halu* “will”. | 🌍 | [fiwikt](https://fi.wiktionary.org/wiki/Halunen)  |
 | Halva |  overlaps more common *Halva* (halva) | org☢ |  |
-| Hamara |  overlaps more common *Hamara* (blunt side) | 🌍🧑²☢ |  |
+| Hamara |  overlaps more common *Hamara* (blunt side) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hamara)  |
 | Hammas |  overlaps more common *Hammas* (teeth) | 🧑²☢ |  |
 | Hamppu |  overlaps more common *Hamppu* (hemp) | 🌍☢ |  |
 | Hanhi |  overlaps more common *Hanhi* (goose) | 🌍☢ |  |
 | Hani |  overlaps more common *Hani* (honey) | 🌍☢ |  |
-| Hanka |  overlaps more common *Hanka* (crotch) | 🌍🧑²☢ |  |
-| Hankala |  overlaps more common *Hankala* (difficult) | 🌍☢ |  |
-| Hanko |  overlaps more common *Hanko* (pitchfork) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hanko)  |
+| Hanka |  overlaps more common *Hanka* (crotch) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hanka)  |
+| Hankala |  overlaps more common *Hankala* (difficult) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hankala)  |
+| Hanko |  overlaps more common *Hanko* (pitchfork) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hanko) [enwikt](https://en.wiktionary.org/wiki/Hanko)  |
 | Hansaliitto |  overlaps more common *Hansaliitto* (FIXME) | org☢ | [enwikt](https://en.wiktionary.org/wiki/Hansaliitto)  |
 | Hanska |  overlaps very common *hanska* “glove“. | 🌍☢ |  |
 | Hanska |  overlaps very common *hanska* “glove”. | 🌍☢ |  |
 | Hanska |  overlaps more common *Hanska* (glove) | 🌍☢ |  |
 | Hantti |  overlaps more common *Hantti* (FIXME) | 🌍☢ |  |
-| Happo |  overlaps more common *Happo* (acid) | 🧑²☢ |  |
-| Harakka |  overlaps more common *Harakka* (crow) | 🌍🧑²☢ |  |
+| Happo |  overlaps more common *Happo* (acid) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Happo)  |
+| Harakka |  overlaps more common *Harakka* (crow) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Harakka)  |
 | Harha |  overlaps more common *Harha* (delusion) | 🌍☢ |  |
-| Harja |  overlaps more common *Harja* (brush) | 🌍🧑²☢ |  |
+| Harja |  overlaps more common *Harja* (brush) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Harja)  |
 | Harjakivi |  overlaps more common *Harjakivi* (brush stone) | 🌍☢ |  |
-| Harjanne |  overlaps more common *Harjanne* (FIXME) | 🌍🧑²☢ |  |
+| Harjanne |  overlaps more common *Harjanne* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Harjanne) [enwikt](https://en.wiktionary.org/wiki/Harjanne)  |
 | Harju |  overlaps more common *Harju* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Harju)  |
 | Harjus |  overlaps more common *Harjus* (FIXME) | 🧑²☢ |  |
 | Harkko |  overlaps more common *Harkko* (bar) | 🌍☢ |  |
@@ -729,20 +729,20 @@ We link to all original sources for reference.
 | Harsu |  overlaps more common *Harsu* (FIXME) | 🌍☢ |  |
 | Harva |  overlaps more common *Harva* (few) | 🌍🧑²☢ |  |
 | Hassu |  overlaps more common *Hassu* (funny) | 🌍☢ |  |
-| Hatara |  overlaps more common *Hatara* (fragile) | 🌍☢ |  |
+| Hatara |  overlaps more common *Hatara* (fragile) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hatara)  |
 | Hattara |  overlaps more common *Hattara* (cloud) | 🌍🧑²☢ |  |
 | Hattu |  overlaps more common *Hattu* (hat) | 🌍☢ |  |
 | Hauenkoukku |  overlaps more common *Hauenkoukku* (pirch hook) | 🌍☢ |  |
 | Hauki |  overlaps more common *Hauki* (pirch) | 🌍☢ |  |
-| Haukka |  overlaps more common *Haukka* (hawk) | 🌍🧑²☢ |  |
+| Haukka |  overlaps more common *Haukka* (hawk) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haukka)  |
 | Haukku |  overlaps more common *Haukku* (bite) | 🧑¹☢ |  |
 | Hauska |  overlaps very common *hauska* “funny”. | 🌍☢ |  |
-| Hauta |  overlaps more common *Hauta* (tomb) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hauta)  |
+| Hauta |  overlaps more common *Hauta* (tomb) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hauta) [enwikt](https://en.wiktionary.org/wiki/Hauta)  |
 | Hautakumpu |  overlaps more common *Hautakumpu* (tombhill) | 🌍☢ |  |
 | Hautausmaa |  overlaps more common *Hautausmaa* (graveyard) | 🌍☢ |  |
 | Hauva |  overlaps more common *Hauva* (dog) | 🌍☢ |  |
-| Haveri |  overlaps more common *Haveri* (accident) | 🌍🧑²☢ |  |
-| Havu |  overlaps more common *Havu* (pine) | 🌍🧑²☢ |  |
+| Haveri |  overlaps more common *Haveri* (accident) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Haveri)  |
+| Havu |  overlaps more common *Havu* (pine) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Havu)  |
 | he |  This interjection overlaps very common pronoun *he* “they”. |  |  |
 | He |  overlaps very common pronoun *he* “they”. | 🧑²☢ |  |
 | Hede |  overlaps more common *Hede* (petal) | 🧑²☢ |  |
@@ -764,7 +764,7 @@ We link to all original sources for reference.
 | Hekuma |  overlaps more common *Hekuma* (lust) | 🌍☢ |  |
 | Hela |  overlaps more common *Hela* (FIXME) | 🌍🧑²☢ |  |
 | Helinä |  overlaps more common *Helinä* (cling) | 🧑²🧑¹☢♀ |  |
-| Hella |  overlaps more common *Hella* (stove) | 🌍🧑²🧑¹☢ |  |
+| Hella |  overlaps more common *Hella* (stove) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Hella)  |
 | Helle |  overlaps more common *Helle* (heat) | 🌍🧑²🧑¹☢♀ |  |
 | Hellä |  overlaps more common *Hellä* (tender) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Hellä)  |
 | Helmi |  overlaps more common *Helmi* (pearl) | 🌍🧑²org🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Helmi) [enwikt](https://en.wiktionary.org/wiki/Helmi)  |
@@ -774,7 +774,7 @@ We link to all original sources for reference.
 | Hely |  overlaps more common *Hely* (tchatchke) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Hely)  |
 | Hemmo |  overlaps more common *Hemmo* (guy) | 🌍🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Hemmo)  |
 | Hemppo |  overlaps more common *Hemppo* (FIXME) | 🌍☢ |  |
-| Hento |  overlaps more common *Hento* (fragile) | 🌍🧑²☢ |  |
+| Hento |  overlaps more common *Hento* (fragile) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hento)  |
 | Hepo |  overlaps more common *Hepo* (horse) | 🌍☢ |  |
 | Herastuomari |  overlaps more common *Herastuomari* (FIXME) | 🌍☢ |  |
 | Herkkä |  overlaps more common *Herkkä* (fragile) | 🌍☢ |  |
@@ -782,13 +782,13 @@ We link to all original sources for reference.
 | Herne |  overlaps more common *Herne* (pea) | 🌍☢ |  |
 | Herra |  overlaps more common *Herra* (mister) | ⁈☢ | [fiwikt](https://fi.wiktionary.org/wiki/Herra) [enwikt](https://en.wiktionary.org/wiki/Herra)  |
 | Herttaässä |  overlaps more common *Herttaässä* (ace of hearts) | org☢ |  |
-| Herttua |  overlaps more common *Herttua* (count) | 🌍🧑²☢ |  |
-| Herukka |  overlaps more common *Herukka* (berry) | 🌍🧑²☢ |  |
+| Herttua |  overlaps more common *Herttua* (count) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Herttua)  |
+| Herukka |  overlaps more common *Herukka* (berry) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Herukka)  |
 | Hete |  overlaps more common *Hete* (FIXME) | 🌍🧑²☢ |  |
 | Hevosenkenkä |  overlaps more common *Hevosenkenkä* (horseshoe) | 🌍☢ |  |
 | Hevosurheilu |  overlaps more common *Hevosurheilu* (horsesports) | org☢📺 |  |
-| Hiekka |  overlaps more common *Hiekka* (sand) | 🌍🧑²☢ |  |
-| Hiekkaharju |  overlaps more common *Hiekkaharju* (sand hill) | 🌍🧑²☢ |  |
+| Hiekka |  overlaps more common *Hiekka* (sand) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hiekka)  |
+| Hiekkaharju |  overlaps more common *Hiekkaharju* (sand hill) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hiekkaharju)  |
 | Hiekkamaa |  overlaps more common *Hiekkamaa* (sand lands) | 🌍☢ |  |
 | Hiekkanummi |  overlaps more common *Hiekkanummi* (sands) | 🌍☢ |  |
 | Hiekkapohja |  overlaps more common *Hiekkapohja* (FIXME) | 🌍☢ |  |
@@ -797,7 +797,7 @@ We link to all original sources for reference.
 | Hiekkatörmä |  overlaps more common *Hiekkatörmä* (FIXME) | 🌍☢ |  |
 | Hieno |  overlaps more common *Hieno* (fine) | 🌍☢ |  |
 | Hietamaa |  overlaps more common *Hietamaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hietamaa)  |
-| Hietikko |  overlaps more common *Hietikko* (sands) | 🌍🧑²☢ |  |
+| Hietikko |  overlaps more common *Hietikko* (sands) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hietikko)  |
 | HIFK |  Helsingfors International Football Klubben | org |  |
 | Hihna |  overlaps more common *Hihna* (tape) | 🌍☢ |  |
 | Hiidenkirnu |  overlaps more common *Hiidenkirnu* (FIXME) | 🌍☢ |  |
@@ -811,46 +811,46 @@ We link to all original sources for reference.
 | Hiippakunta |  overlaps more common *Hiippakunta* (papal) | 🌍☢ |  |
 | Hiirakko |  overlaps more common *Hiirakko* (FIXME) | 🌍☢ |  |
 | Hiirenhäntä |  overlaps more common *Hiirenhäntä* (rat’s tail) | 🌍☢ |  |
-| Hiiri |  overlaps more common *Hiiri* (mouse) | 🌍🧑²☢ |  |
-| Hiiva |  overlaps more common *Hiiva* (yeast) | 🌍☢ |  |
+| Hiiri |  overlaps more common *Hiiri* (mouse) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hiiri)  |
+| Hiiva |  overlaps more common *Hiiva* (yeast) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hiiva)  |
 | Hikka |  overlaps more common *Hikka* (hiccouhg) | 🌍☢ |  |
 | Hila |  overlaps more common *Hila* (FIXME) | 🌍☢ |  |
 | Hilkka |  overlaps more common *Hilkka* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Hilkka)  |
 | Hilla |  overlaps more common *Hilla* (cloudberry) | 🌍🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Hilla) [enwikt](https://en.wiktionary.org/wiki/Hilla)  |
 | Hilleri |  overlaps more common *Hilleri* (animal) | 🌍☢ |  |
-| Hillo |  overlaps more common *Hillo* (jam) | 🌍🧑²☢ |  |
+| Hillo |  overlaps more common *Hillo* (jam) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hillo)  |
 | Himmeli |  overlaps more common *Himmeli* (FIXME) | 🌍☢ |  |
 | Himo |  overlaps more common *Himo* (lust) | 🌍☢ |  |
 | Hinkki |  overlaps more common *Hinkki* (FIXME) | 🌍☢ |  |
 | Hinkuttaja |  overlaps more common *Hinkuttaja* (wanker) | 🌍☢ |  |
-| Hippa |  overlaps more common *Hippa* (it) | 🌍🧑²☢ |  |
-| Hippi |  overlaps more common *Hippi* (hippie) | 🌍🧑²☢ |  |
+| Hippa |  overlaps more common *Hippa* (it) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hippa)  |
+| Hippi |  overlaps more common *Hippi* (hippie) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hippi)  |
 | Hippula |  overlaps more common *Hippula* (FIXME) | 🌍☢ |  |
 | Hiprakka |  overlaps more common *Hiprakka* (drunk) | 🌍☢ |  |
 | Hirmu |  overlaps more common *Hirmu* (really) | 🌍☢ |  |
 | Hirmuinen |  overlaps more common *Hirmuinen* (scary) | 🌍☢ |  |
 | Hirvas |  overlaps more common *Hirvas* (moose) | 🧑²☢ |  |
 | Hirvenpää |  overlaps more common *Hirvenpää* (moose head) | 🌍☢ |  |
-| Hirvi |  overlaps more common *Hirvi* (moose) | 🌍🧑²☢ |  |
+| Hirvi |  overlaps more common *Hirvi* (moose) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hirvi)  |
 | Hirvikanta |  overlaps more common *Hirvikanta* (FIXME) | 🌍🧑²☢ |  |
 | Hirvivaara |  overlaps more common *Hirvivaara* (moose hill) | 🌍☢ |  |
 | Hirviö |  overlaps more common *Hirviö* (monster) | 🌍☢ |  |
-| Hissa |  overlaps more common *Hissa* (history) | 🌍☢ |  |
+| Hissa |  overlaps more common *Hissa* (history) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hissa)  |
 | Hissi |  overlaps more common *Hissi* (lift) | 🌍☢ |  |
-| Hiukka |  overlaps more common *Hiukka* (little) | 🌍🧑²☢ |  |
+| Hiukka |  overlaps more common *Hiukka* (little) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hiukka)  |
 | Hiukkanen |  overlaps more common *Hiukkanen* (bit) | 🌍🧑²☢ |  |
 | HIV₁₁ |  Human Immunodeficiency Virus |  |
 | HJK |  Helsingin Jalkapallo-Klubi | org |  |
 | HKL |  Helsingin Kaupungin Liikenne | org |  |
 | Hohka |  overlaps more common *Hohka* (FIXME) | 🌍☢ |  |
-| Hoikka |  overlaps more common *Hoikka* (thin) | 🌍🧑²☢ |  |
+| Hoikka |  overlaps more common *Hoikka* (thin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hoikka)  |
 | Hoitola |  overlaps more common *Hoitola* (FIXME) | 🌍☢ |  |
 | Holvisto |  overlaps more common *Holvisto* (FIXME) | 🌍☢ |  |
 | Home |  overlaps more common *Home* (mould) | 🧑²☢ |  |
 | Homma |  overlaps more common *Homma* (thing) | 🌍org☢ |  |
 | Homo |  overlaps more common *Homo* (gay) | 🌍☢ |  |
 | Hongikko |  overlaps more common *Hongikko* (FIXME) | 🌍☢ |  |
-| Honka |  overlaps more common *Honka* (pine tree) | 🌍🧑²☢ |  |
+| Honka |  overlaps more common *Honka* (pine tree) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Honka)  |
 | Honkainen |  overlaps more common *Honkainen* (FIXME) | 🌍🧑²☢ |  |
 | Hopeakanta |  overlaps more common *Hopeakanta* (silverbase) | 🌍☢ |  |
 | Hopeaselkä |  overlaps more common *Hopeaselkä* (silverback) | 🌍☢ |  |
@@ -861,11 +861,11 @@ We link to all original sources for reference.
 | Horsma |  overlaps more common *Horsma* (flower) | 🌍☢ |  |
 | Hotelli |  overlaps more common *Hotelli* (hotel) | 🌍☢ |  |
 | Houkka |  overlaps more common *Houkka* (fool) | 🌍🧑²☢ |  |
-| Hourula |  overlaps more common *Hourula* (madhouse) | 🌍🧑²☢ |  |
+| Hourula |  overlaps more common *Hourula* (madhouse) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hourula)  |
 | Housunpuntti |  overlaps more common *Housunpuntti* (pant) | 🌍☢ |  |
 | Housut |  overlaps more common *Housut* (pants) | 🌍☢ |  |
-| Hovi |  overlaps more common *Hovi* (court) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hovi)  |
-| HS |  Helsingin Sanomat | 📺 |  |
+| Hovi |  overlaps more common *Hovi* (court) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Hovi) [enwikt](https://en.wiktionary.org/wiki/Hovi)  |
+| HS |  Helsingin Sanomat | 📺 | [enwikt](https://en.wiktionary.org/wiki/HS)  |
 | HTML |  Hyper-Text Markup Language |  |
 | HTTP |  Hyper-Text Transfer Protocol |  |
 | Huhmar |  overlaps more common *Huhmar* (FIXME) | 🧑²☢ |  |
@@ -880,7 +880,7 @@ We link to all original sources for reference.
 | Huisku |  overlaps more common *Huisku* (FIXME) | 🌍☢ |  |
 | Huitukka |  overlaps more common *Huitukka* (FIXME) | 🌍☢ |  |
 | Hujakka |  overlaps more common *Hujakka* (FIXME) | 🌍☢ |  |
-| Hukka |  overlaps more common *Hukka* (wolf) | 🌍🧑²☢ |  |
+| Hukka |  overlaps more common *Hukka* (wolf) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hukka)  |
 | Hukki |  overlaps more common *Hukki* (FIXME) | 🌍🧑²☢ |  |
 | Hula |  overlaps more common *Hula* (FIXME) | 🌍☢ |  |
 | Humala |  overlaps more common *Humala* (hop) | 🌍☢ |  |
@@ -895,25 +895,25 @@ We link to all original sources for reference.
 | Huoli |  overlaps more common *Huoli* (concern) | 🌍☢ |  |
 | huolimatta |  adposition (regardless) when can be attached to a partitive NP, otherwise form of *huolia* (icare, concenr of) |  |  |
 | Huomenlahja |  overlaps more common *Huomenlahja* (FIXME) | 🌍☢ |  |
-| Huopainen |  overlaps more common *Huopainen* (FIXME) | 🌍🧑²☢ |  |
+| Huopainen |  overlaps more common *Huopainen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Huopainen)  |
 | Hupa |  overlaps more common *Hupa* (fun) | 🧑²☢ |  |
 | Hupeneva |  overlaps more common *Hupeneva* (FIXME) | 🌍☢ |  |
 | Hurja |  overlaps more common *Hurja* (crazy) | 🌍☢ |  |
 | Hurma |  overlaps more common *Hurma* (FIXME) | 🌍org☢ |  |
-| Hurme |  overlaps more common *Hurme* (FIXME) | 🌍🧑²☢ |  |
-| Hurri |  overlaps more common *Hurri* (Swede) | 🌍🧑²☢ |  |
-| Hurtta |  overlaps more common *Hurtta* (mutt) | 🌍🧑²☢ |  |
+| Hurme |  overlaps more common *Hurme* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hurme)  |
+| Hurri |  overlaps more common *Hurri* (Swede) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hurri)  |
+| Hurtta |  overlaps more common *Hurtta* (mutt) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hurtta)  |
 | Hurtti |  overlaps more common *Hurtti* (raunchy) | 🌍☢ |  |
 | Huti |  overlaps more common *Huti* (miss) | 🌍🧑²☢ |  |
-| Huttu |  overlaps more common *Huttu* (porridge) | 🌍🧑²☢ |  |
+| Huttu |  overlaps more common *Huttu* (porridge) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Huttu)  |
 | Huuhkaja |  overlaps more common *Huuhkaja* (owl) | 🌍☢ |  |
-| Huurre |  overlaps more common *Huurre* (frost) | 🌍🧑²org☢ |  |
+| Huurre |  overlaps more common *Huurre* (frost) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Huurre)  |
 | Huussi |  overlaps more common *Huussi* (outhouse) | 🧑²☢ |  |
 | Huutaja |  overlaps more common *Huutaja* (yeller) | 🌍☢ |  |
 | Huuti |  overlaps more common *Huuti* (FIXME) | 🌍☢ |  |
 | Huutolainen |  overlaps more common *Huutolainen* (FIXME) | 🌍☢ |  |
 | Huvi |  overlaps more common *Huvi* (fun) | 🌍🧑¹☢ |  |
-| Huvila |  overlaps more common *Huvila* (mansion) | 🌍🧑²☢ |  |
+| Huvila |  overlaps more common *Huvila* (mansion) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Huvila)  |
 | Hybridi |  overlaps more common *Hybridi* (hybrid) | org☢ |  |
 | Hyeena |  overlaps more common *Hyeena* (hyena) | 🧑¹☢ |  |
 | Hylly |  overlaps more common *Hylly* (shelf) | 🌍☢ |  |
@@ -922,12 +922,12 @@ We link to all original sources for reference.
 | Hyppynen |  overlaps more common *Hyppynen* (FIXME) | 🌍☢ |  |
 | Hyppyrimäki |  overlaps more common *Hyppyrimäki* (FIXME) | 🌍☢ |  |
 | Hyrrä |  overlaps more common *Hyrrä* (spintop) | 🌍☢ |  |
-| Hyrsky |  overlaps more common *Hyrsky* (FIXME) | 🌍☢ |  |
-| Hytti |  overlaps more common *Hytti* (cabin) | 🌍🧑²☢ |  |
+| Hyrsky |  overlaps more common *Hyrsky* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Hyrsky)  |
+| Hytti |  overlaps more common *Hytti* (cabin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hytti)  |
 | Hytykkä |  overlaps more common *Hytykkä* (FIXME) | 🌍☢ |  |
 | Hyväkasvuinen |  overlaps more common *Hyväkasvuinen* (well grown) | 🌍☢ |  |
 | Hyvänen |  overlaps more common *Hyvänen* (dear) | 🌍☢ |  |
-| Hyypiö |  overlaps more common *Hyypiö* (creep) | 🌍🧑²☢ |  |
+| Hyypiö |  overlaps more common *Hyypiö* (creep) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Hyypiö)  |
 | Hyöty |  overlaps more common *Hyöty* (benefit) | 🌍🧑²☢ |  |
 | Häikkä |  overlaps more common *Häikkä* (problem) | 🌍☢ |  |
 | Häivä |  overlaps more common *Häivä* (touch) | 🌍☢ |  |
@@ -944,7 +944,7 @@ We link to all original sources for reference.
 | Häntä |  overlaps more common *Häntä* (tail) | 🌍☢ |  |
 | Häntäpää |  overlaps more common *Häntäpää* (tailend) | 🌍☢ |  |
 | Härkä |  overlaps more common *Härkä* (bull) | 🌍☢ |  |
-| Härkänen |  overlaps more common *Härkänen* (bull) | 🧑²☢ |  |
+| Härkänen |  overlaps more common *Härkänen* (bull) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Härkänen)  |
 | Härkäpää |  overlaps more common *Härkäpää* (bullhead) | 🌍🧑²☢ |  |
 | Häränhäntä |  overlaps more common *Häränhäntä* (oxtail) | 🌍☢ |  |
 | Häränsilmä |  overlaps more common *Häränsilmä* (bull’s eye) | 🌍☢ |  |
@@ -963,12 +963,12 @@ We link to all original sources for reference.
 | Höyhen |  overlaps more common *Höyhen* (feather) | 🧑²☢ |  |
 | Höyheninen |  overlaps more common *Höyheninen* (FIXME) | 🌍☢ |  |
 | Höyhensaaret |  overlaps more common *Höyhensaaret* (asleep) | 🌍☢ |  |
-| Höylä |  overlaps more common *Höylä* (level) | 🌍☢ |  |
+| Höylä |  overlaps more common *Höylä* (level) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Höylä)  |
 | Höyry |  overlaps more common *Höyry* (steam) | 🌍☢ |  |
 | IBM |  International Business Machines | org |  |
 | Ihana |  overlaps very common *ihana* “lovely”. | 🌍☢ |  |
-| Ihanainen |  overlaps more common *Ihanainen* (lovely) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ihanainen)  |
-| Ihme |  overlaps more common *Ihme* (miracle) | 🌍☢ |  |
+| Ihanainen |  overlaps more common *Ihanainen* (lovely) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ihanainen) [enwikt](https://en.wiktionary.org/wiki/Ihanainen)  |
+| Ihme |  overlaps more common *Ihme* (miracle) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Ihme)  |
 | Iho |  overlaps more common *Iho* (skin) | 🧑²☢ |  |
 | Illansuu |  overlaps more common *Illansuu* (evening) | 🌍☢ |  |
 | Ilma |  overlaps more common *Ilma* (air) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ilma)  |
@@ -981,10 +981,10 @@ We link to all original sources for reference.
 | Ilmetty |  overlaps more common *Ilmetty* (apparent) | 🌍☢ |  |
 | Ilmi |  overlaps more common *Ilmi* (published) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ilmi)  |
 | Ilmiö |  overlaps more common *Ilmiö* (phenomenon) | 🌍☢ |  |
-| Ilo |  overlaps more common *Ilo* (joy) | 🌍🧑¹☢ |  |
+| Ilo |  overlaps more common *Ilo* (joy) | 🌍🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Ilo)  |
 | Ilta |  overlaps more common *Ilta* (evening) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ilta)  |
 | Iltalehti |  overlaps more common *Iltalehti* (evening) | org☢📺 |  |
-| Iltanen |  overlaps more common *Iltanen* (dinner) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Iltanen)  |
+| Iltanen |  overlaps more common *Iltanen* (dinner) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Iltanen) [enwikt](https://en.wiktionary.org/wiki/Iltanen)  |
 | Iltarusko |  overlaps more common *Iltarusko* (dusk) | 🌍☢ |  |
 | Ilves |  overlaps more common *Ilves* (bobcat) | 🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Ilves)  |
 | Imago |  overlaps more common *Imago* (image) | org☢ |  |
@@ -1020,31 +1020,31 @@ We link to all original sources for reference.
 | ja |  as well, as adverb, colloquial-ish, “mentiin sinne ja” |  |  |
 | Jade |  overlaps more common *Jade* (jade) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Jade) [enwikt](https://en.wiktionary.org/wiki/Jade)  |
 | Jakaja |  overlaps more common *Jakaja* (divider) | 🌍☢ |  |
-| Jakku |  overlaps more common *Jakku* (jacket) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jakku)  |
+| Jakku |  overlaps more common *Jakku* (jacket) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jakku) [enwikt](https://en.wiktionary.org/wiki/Jakku)  |
 | Jako |  overlaps more common *Jako* (split) | 🌍☢ |  |
 | Jakolasku |  overlaps more common *Jakolasku* (division) | 🌍☢ |  |
 | Jalas |  overlaps more common *Jalas* (shoe) | 🧑²org☢ |  |
-| Jalava |  overlaps more common *Jalava* (FIXME) | 🌍🧑²☢ |  |
+| Jalava |  overlaps more common *Jalava* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jalava)  |
 | Jalkamaa |  overlaps more common *Jalkamaa* (footland) | 🌍☢ |  |
 | Jalkapuu |  overlaps more common *Jalkapuu* (FIXME) | 🌍☢ |  |
 | Jalkasilta |  overlaps more common *Jalkasilta* (FIXM-e) | 🌍☢ |  |
 | Jalo |  overlaps more common *Jalo* (noble) | 🌍🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Jalo)  |
-| Jama |  overlaps more common *Jama* (sticky wicket) | 🌍🧑²☢ |  |
+| Jama |  overlaps more common *Jama* (sticky wicket) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jama)  |
 | Jana |  overlaps more common *Jana* (segment) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jana)  |
 | Jano |  overlaps more common *Jano* (thirst) | org☢ |  |
 | Jatke |  overlaps more common *Jatke* (continuation) | org☢ |  |
 | Jatkettu |  overlaps more common *Jatkettu* (continued) | 🌍☢ |  |
 | Jatko |  overlaps more common *Jatko* (continuation) | 🌍☢ |  |
 | Jauhaja |  overlaps more common *Jauhaja* (grinder) | 🌍☢ |  |
-| Jauho |  overlaps more common *Jauho* (flour) | 🌍🧑²☢ |  |
+| Jauho |  overlaps more common *Jauho* (flour) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jauho)  |
 | Jee |  overlaps more common *Jee* (yay) | 🧑²☢ |  |
-| Jeesus |  overlaps more common *Jeesus* (jesus) | ⁈🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Jeesus)  |
+| Jeesus |  overlaps more common *Jeesus* (jesus) | ⁈🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Jeesus) [enwikt](https://en.wiktionary.org/wiki/Jeesus)  |
 | Jin |  overlaps more common *Jin* (FIXME) | 🧑²🧑¹☢ |  |
 | Jo |  overlaps very common *jo* “already”. | 🧑¹☢ |  |
 | Joenhaara |  overlaps more common *Joenhaara* (river branch) | 🌍🧑²☢ |  |
 | Joenmutka |  overlaps more common *Joenmutka* (river shoulder) | 🌍☢ |  |
 | Joenniska |  overlaps more common *Joenniska* (river neck) | 🌍☢ |  |
-| Joenpolvi |  overlaps more common *Joenpolvi* (river knee) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Joenpolvi)  |
+| Joenpolvi |  overlaps more common *Joenpolvi* (river knee) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Joenpolvi) [enwikt](https://en.wiktionary.org/wiki/Joenpolvi)  |
 | Joenranta |  overlaps more common *Joenranta* (river coast) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Joenranta)  |
 | Joensuu |  PROPN_PUU | 🌍🧑² | [enwikt](https://en.wiktionary.org/wiki/Joensuu)  |
 | Joenvarsi |  overlaps more common *Joenvarsi* (riverside) | 🌍☢ |  |
@@ -1052,14 +1052,14 @@ We link to all original sources for reference.
 | Johde |  overlaps more common *Johde* (inducer) | 🌍🧑²☢ |  |
 | johdolla |  adposition (lead by) when can be attached to a genitive NP, otherwise noun forms of *johto* (lead, cord) |  |
 | Johto |  overlaps more common *Johto* (lead, cord) | 🧑²☢ |  |
-| Joki |  overlaps very common *joki* “river”. | 🌍🧑²☢ |  |
+| Joki |  overlaps very common *joki* “river”. | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Joki)  |
 | Jokijärvi |  overlaps more common *Jokijärvi* (riverlake) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokijärvi)  |
 | Jokilaakso |  overlaps more common *Jokilaakso* (rivervalley) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokilaakso)  |
-| Jokiranta |  overlaps more common *Jokiranta* (rivershore) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokiranta)  |
+| Jokiranta |  overlaps more common *Jokiranta* (rivershore) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokiranta) [enwikt](https://en.wiktionary.org/wiki/Jokiranta)  |
 | Jokisuu |  overlaps more common *Jokisuu* (rivermouth) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokisuu)  |
 | Jokitasanko |  overlaps more common *Jokitasanko* (river plains) | 🌍☢ |  |
 | Jokitörmä |  overlaps more common *Jokitörmä* (river bank) | 🌍☢ |  |
-| Jokivarsi |  overlaps more common *Jokivarsi* (river side) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokivarsi)  |
+| Jokivarsi |  overlaps more common *Jokivarsi* (river side) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Jokivarsi) [enwikt](https://en.wiktionary.org/wiki/Jokivarsi)  |
 | joko |  either, paired with tai in either-or structure, rarer sub-ordinating reading, see VISK § 815 |  |  |
 | joko |  already? (from jo+ko), adverb, “joko taas?” |  |  |
 | joko |  either, paired with tai in either-or structure, perhaps (this) co-ordinating is more common interpretation, “joko minä tai sinä“, see VISK § 815 |  |  |
@@ -1070,7 +1070,7 @@ We link to all original sources for reference.
 | jotta |  yota, noun prefix SI unit, rare |  |
 | Jouhi |  overlaps more common *Jouhi* (hair) | 🧑²☢ |  |
 | Jouhikko |  overlaps more common *Jouhikko* (FIXME) | 🌍☢ |  |
-| Jousi |  overlaps more common *Jousi* (bow) | 🧑²☢ |  |
+| Jousi |  overlaps more common *Jousi* (bow) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jousi)  |
 | Jousimies |  overlaps more common *Jousimies* (archer) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jousimies)  |
 | Joutava |  overlaps more common *Joutava* (useless) | 🌍☢ |  |
 | Joutsen |  overlaps more common *Joutsen* (swan) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Joutsen)  |
@@ -1079,9 +1079,9 @@ We link to all original sources for reference.
 | Jumi |  overlaps more common *Jumi* (stuck) | 🌍☢ |  |
 | jumissa |  usually seen as adverb (stuck), but can be analysed as an inessive of the noun *jumi* (bind) |  |
 | Jumppa |  overlaps more common *Jumppa* (gymnastics) | 🌍☢ |  |
-| Junkkari |  overlaps more common *Junkkari* (stud) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Junkkari)  |
+| Junkkari |  overlaps more common *Junkkari* (stud) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Junkkari) [enwikt](https://en.wiktionary.org/wiki/Junkkari)  |
 | Junnu |  overlaps more common *Junnu* (junior) | 🌍🧑¹☢♂ |  |
-| Juntti |  overlaps more common *Juntti* (fool) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Juntti)  |
+| Juntti |  overlaps more common *Juntti* (fool) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Juntti) [enwikt](https://en.wiktionary.org/wiki/Juntti)  |
 | Juokseva |  overlaps more common *Juokseva* (running) | 🌍☢ |  |
 | Juoksu |  overlaps more common *Juoksu* (run) | 🌍☢ |  |
 | Juolukka |  overlaps more common *Juolukka* (berry) | 🌍☢ |  |
@@ -1097,28 +1097,28 @@ We link to all original sources for reference.
 | Juottola |  overlaps more common *Juottola* (drinkery) | 🌍☢ |  |
 | Juova |  overlaps more common *Juova* (drinkingy) | 🌍☢ |  |
 | Jupakka |  overlaps more common *Jupakka* (quarrel) | 🌍☢ |  |
-| Juppi |  overlaps more common *Juppi* (yuppie) | 🧑²☢ |  |
+| Juppi |  overlaps more common *Juppi* (yuppie) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Juppi)  |
 | Jurri |  overlaps more common *Jurri* (drunk) | 🌍☢ |  |
 | Justeeri |  overlaps more common *Justeeri* (saw) | 🌍☢ |  |
 | Juupeli |  overlaps more common *Juupeli* (FIXME) | 🌍☢ |  |
-| Juurakko |  overlaps more common *Juurakko* (roots) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Juurakko)  |
+| Juurakko |  overlaps more common *Juurakko* (roots) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Juurakko) [enwikt](https://en.wiktionary.org/wiki/Juurakko)  |
 | Juureva |  overlaps more common *Juureva* (rooty) | 🌍☢ |  |
 | Juuri |  overlaps more common *Juuri* (root) | 🧑²☢ |  |
 | Juuriharja |  overlaps more common *Juuriharja* (root veg brush) | org☢ |  |
 | Juuristo |  overlaps more common *Juuristo* (roots) | 🌍☢ |  |
 | Juustola |  overlaps more common *Juustola* (cheesy) | 🌍☢ |  |
 | Juutti |  overlaps more common *Juutti* (FIXME) | 🌍🧑²☢ |  |
-| Jylhä |  overlaps more common *Jylhä* (noble) | 🌍🧑²☢ |  |
+| Jylhä |  overlaps more common *Jylhä* (noble) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jylhä)  |
 | Jylisevä |  overlaps more common *Jylisevä* (booming) | 🌍☢ |  |
 | Jyly |  overlaps more common *Jyly* (FIXM) | 🌍☢ |  |
 | Jyrisevä |  overlaps more common *Jyrisevä* (booming) | 🌍☢ |  |
-| Jyrkkä |  overlaps more common *Jyrkkä* (steep) | 🌍🧑²☢ |  |
+| Jyrkkä |  overlaps more common *Jyrkkä* (steep) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jyrkkä)  |
 | Jyrkänne |  overlaps very common *jyrkänne* “cliff”. | 🌍☢ |  |
 | Jyrä |  overlaps more common *Jyrä* (roller) | 🌍🧑²☢ |  |
 | Jyske |  overlaps more common *Jyske* (bang) | 🧑²☢ |  |
 | Jytisevä |  overlaps more common *Jytisevä* (booming) | 🌍☢ |  |
 | Jyty |  overlaps more common *Jyty* (boom) | org☢ |  |
-| Jäkälä |  overlaps more common *Jäkälä* (FIXME) | 🌍🧑²☢ |  |
+| Jäkälä |  overlaps more common *Jäkälä* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Jäkälä)  |
 | jäljelle |  usually seen as adverb (left), but can be analysed as a form of *jälki* (trace) |  | [fiwikt](https://fi.wiktionary.org/wiki/jäljelle)  |
 | jäljellä |  usually seen as adverb (left), but overlaps adessive of the noun *jälki* (trace) |  | [fiwikt](https://fi.wiktionary.org/wiki/jäljellä)  |
 | jäljessä |  behind adverb, |  |  |
@@ -1137,7 +1137,7 @@ We link to all original sources for reference.
 | Järvenpohja |  overlaps more common *Järvenpohja* (lakebottom) | 🌍☢ |  |
 | Järvenranta |  overlaps more common *Järvenranta* (lakeshore) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Järvenranta)  |
 | Järvenselkä |  overlaps more common *Järvenselkä* (lakeback) | 🌍☢ |  |
-| Järvi |  overlaps more common *Järvi* (lake) | 🌍🧑²☢ |  |
+| Järvi |  overlaps more common *Järvi* (lake) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Järvi)  |
 | Järviseutu |  overlaps more common *Järviseutu* (lake area) | 🌍org☢📺 |  |
 | Jättiläinen |  overlaps more common *Jättiläinen* (giant) | 🌍☢ |  |
 | Jäykkä |  overlaps more common *Jäykkä* (stiff) | 🌍🧑²☢ |  |
@@ -1148,21 +1148,25 @@ We link to all original sources for reference.
 | ka |  This noun is SI unit “ka” or abbreviation ‘avg.’ but overlaps forms of very common stuff | 📏 |  |
 | Ka |  overlaps forms of very common some very common stuff | ⁈☢ |  |
 | Kaakeli |  overlaps more common *Kaakeli* (tile) | 🌍☢ |  |
-| Kaakko |  overlaps more common *Kaakko* (southeast) | 🌍🧑²☢ |  |
+| Kaakko |  overlaps more common *Kaakko* (southeast) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kaakko)  |
 | Kaakkuri |  overlaps more common *Kaakkuri* (bird) | 🌍☢ |  |
 | Kaalimaa |  overlaps more common *Kaalimaa* (cabbage patch) | 🌍☢ |  |
 | Kaani |  overlaps more common *Kaani* (khan) | 🌍☢ |  |
 | Kaapeli |  overlaps more common *Kaapeli* (cable) | 🌍☢ |  |
 | Kaapu |  overlaps more common *Kaapu* (cape) | 🌍☢ |  |
 | Kaara |  overlaps more common *Kaara* (car) | 🌍☢ |  |
-| Kaari |  overlaps more common *Kaari* (arc) | 🌍🧑²🧑¹☢ |  |
-| Kaarna |  overlaps more common *Kaarna* (bark) | 🌍🧑²☢ |  |
+| Kaari |  overlaps more common *Kaari* (arc) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Kaari)  |
+| Kaarna |  overlaps more common *Kaarna* (bark) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kaarna)  |
 | Kaarne |  overlaps more common *Kaarne* (FIXME) | 🌍🧑²☢ |  |
-| Kaarre |  overlaps more common *Kaarre* (curve) | 🌍🧑²☢ |  |
+| Kaarre |  overlaps more common *Kaarre* (curve) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kaarre)  |
 | Kaarti |  overlaps more common *Kaarti* (guard) | 🌍☢ |  |
-| Kaarto |  overlaps more common *Kaarto* (curve) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaarto)  |
+| Kaarto |  overlaps more common *Kaarto* (curve) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaarto) [enwikt](https://en.wiktionary.org/wiki/Kaarto)  |
 | Kaataja |  overlaps more common *Kaataja* (pine) | 🌍☢ |  |
 | Kaava |  overlaps more common *Kaava* (formula) | 🌍☢ |  |
+| kahdeksansataa |  eight hundred |  |  |
+| kahdeksantoista |  eighteen |  | [fiwikt](https://fi.wiktionary.org/wiki/kahdeksantoista)  |
+| kahdeksantuhatta |  eight thousand |  |  |
+| kahdeksastoista |  eighteenth |  |  |
 | Kadettikunta |  overlaps more common *Kadettikunta* (cadets) | org☢ |  |
 | Kahdeksainen |  overlaps more common *Kahdeksainen* (eight) | 🌍☢ |  |
 | Kahdeksikko |  overlaps more common *Kahdeksikko* (eight) | 🌍☢ |  |
@@ -1172,32 +1176,36 @@ We link to all original sources for reference.
 | Kaide |  overlaps more common *Kaide* (rail) | 🌍☢ |  |
 | Kaihi |  overlaps more common *Kaihi* (cataract) | 🌍☢ |  |
 | Kaiho |  overlaps more common *Kaiho* (somber) | 🧑¹☢ |  |
-| Kaijanen |  overlaps more common *Kaijanen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaijanen)  |
+| Kaijanen |  overlaps more common *Kaijanen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaijanen) [enwikt](https://en.wiktionary.org/wiki/Kaijanen)  |
 | Kaijat |  overlaps more common *Kaijat* (FIXME) | 🌍☢ |  |
 | kaikkiaan |  usually seen as adverb (all in all), but can be analysed as a form of *kaikki* (all) |  |
 | Kaiku |  overlaps more common *Kaiku* (echo) | 🧑²🧑¹☢ |  |
 | Kainalo |  overlaps more common *Kainalo* (armpit) | 🌍☢ |  |
 | Kainaloinen |  overlaps more common *Kainaloinen* (FIXME) | 🌍☢ |  |
 | Kaino |  overlaps more common *Kaino* (shy) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kaino)  |
-| Kainulainen |  overlaps more common *Kainulainen* (FIXME) | 🧑²☢ |  |
-| Kaisla |  overlaps more common *Kaisla* (grassblade) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kaisla)  |
+| Kainulainen |  overlaps more common *Kainulainen* (FIXME) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kainulainen)  |
+| Kaisla |  overlaps more common *Kaisla* (grassblade) | 🌍🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Kaisla) [enwikt](https://en.wiktionary.org/wiki/Kaisla)  |
 | Kaislikko |  overlaps more common *Kaislikko* (FIXME) | 🌍☢ |  |
 | Kaista |  overlaps more common *Kaista* (lane) | 🌍🧑²☢ |  |
 | Kaistale |  overlaps more common *Kaistale* (splinter) | 🌍☢ |  |
 | Kaita |  overlaps more common *Kaita* (thin) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaita)  |
-| Kaitainen |  overlaps more common *Kaitainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaitainen)  |
+| Kaitainen |  overlaps more common *Kaitainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaitainen) [enwikt](https://en.wiktionary.org/wiki/Kaitainen)  |
 | Kaivanto |  overlaps more common *Kaivanto* (dig) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaivanto)  |
 | Kaivo |  overlaps more common *Kaivo* (well) | 🌍☢ |  |
 | Kaivovesi |  overlaps more common *Kaivovesi* (well water) | 🌍☢ |  |
 | Kajo |  overlaps more common *Kajo* (haze) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kajo)  |
 | Kakkara |  overlaps more common *Kakkara* (FIXME) | 🌍☢ |  |
-| Kakkonen |  overlaps more common *Kakkonen* (two) | 🌍🧑²☢ |  |
+| Kakkonen |  overlaps more common *Kakkonen* (two) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kakkonen)  |
 | Kakkula |  overlaps more common *Kakkula* (glasses) | 🌍☢ |  |
 | Kako |  overlaps more common *Kako* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kako)  |
+| kaksikymmentä |  twenty |  | [fiwikt](https://fi.wiktionary.org/wiki/kaksikymmentä)  |
 | Kaksinainen |  overlaps more common *Kaksinainen* (dual) | 🌍☢ |  |
 | Kaksinkertainen |  overlaps more common *Kaksinkertainen* (double) | 🌍☢ |  |
 | Kaksipäinen |  overlaps more common *Kaksipäinen* (twi-headed) | 🌍☢ |  |
-| Kaksonen |  overlaps more common *Kaksonen* (twin) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaksonen)  |
+| kaksisataa |  two hundreds |  | [fiwikt](https://fi.wiktionary.org/wiki/kaksisataa)  |
+| kaksitoista |  twelve |  |  |
+| kaksituhatta |  two thousands |  |  |
+| Kaksonen |  overlaps more common *Kaksonen* (twin) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kaksonen) [enwikt](https://en.wiktionary.org/wiki/Kaksonen)  |
 | Kala |  overlaps more common *Kala* (fish) | 🌍🧑²☢ |  |
 | Kalakukko |  overlaps more common *Kalakukko* (fish bread) | 🌍☢ |  |
 | Kalalammikko |  overlaps more common *Kalalammikko* (fish pond) | 🌍☢ |  |
@@ -1217,24 +1225,24 @@ We link to all original sources for reference.
 | Kalkkimaa |  overlaps more common *Kalkkimaa* (calcium lands) | 🌍☢ |  |
 | Kalkkinen |  overlaps more common *Kalkkinen* (calciumy) | 🌍🧑²☢ |  |
 | Kallio |  overlaps more common *Kallio* (baserock) | 🌍🧑²🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallio) [enwikt](https://en.wiktionary.org/wiki/Kallio)  |
-| Kallioinen |  overlaps more common *Kallioinen* (rocky) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallioinen)  |
+| Kallioinen |  overlaps more common *Kallioinen* (rocky) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallioinen) [enwikt](https://en.wiktionary.org/wiki/Kallioinen)  |
 | Kallioluoto |  overlaps more common *Kallioluoto* (rocky island) | 🌍☢ |  |
 | Kallionhalkeama |  overlaps more common *Kallionhalkeama* (base rock crack) | 🌍☢ |  |
 | Kallioperä |  overlaps more common *Kallioperä* (base rock end) | 🌍☢ |  |
 | Kalliopohja |  overlaps more common *Kalliopohja* (base rock bottom) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kalliopohja)  |
-| Kallioranta |  overlaps more common *Kallioranta* (base rock beach) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallioranta)  |
-| Kalliosaari |  overlaps more common *Kalliosaari* (base rock island) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kalliosaari)  |
+| Kallioranta |  overlaps more common *Kallioranta* (base rock beach) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kallioranta) [enwikt](https://en.wiktionary.org/wiki/Kallioranta)  |
+| Kalliosaari |  overlaps more common *Kalliosaari* (base rock island) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kalliosaari) [enwikt](https://en.wiktionary.org/wiki/Kalliosaari)  |
 | Kallis |  overlaps more common *Kallis* (expensive) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kallis)  |
-| Kallo |  overlaps more common *Kallo* (skull) | 🌍🧑²☢ |  |
+| Kallo |  overlaps more common *Kallo* (skull) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kallo)  |
 | Kalma |  overlaps more common *Kalma* (death) | 🌍🧑²☢ |  |
-| Kalmari |  overlaps more common *Kalmari* (squid) | 🌍🧑²☢ |  |
+| Kalmari |  overlaps more common *Kalmari* (squid) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kalmari)  |
 | Kalmisto |  overlaps more common *Kalmisto* (grave) | 🌍☢ |  |
 | Kalmo |  overlaps more common *Kalmo* (dead) | 🌍🧑²☢ |  |
 | Kalpa |  overlaps more common *Kalpa* (sword) | 🧑²☢ |  |
-| Kalske |  overlaps more common *Kalske* (clink) | 🧑²☢ |  |
+| Kalske |  overlaps more common *Kalske* (clink) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kalske)  |
 | Kalteri |  overlaps more common *Kalteri* (bar) | 🌍☢ |  |
 | Kalteva |  overlaps more common *Kalteva* (slope) | 🌍☢ |  |
-| Kaltio |  overlaps more common *Kaltio* (FIXME) | 🌍🧑²☢ |  |
+| Kaltio |  overlaps more common *Kaltio* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kaltio)  |
 | Kaltto |  overlaps more common *Kaltto* (FIXME) | 🌍☢ |  |
 | Kalusto |  overlaps more common *Kalusto* (equipment) | 🌍☢ |  |
 | Kalvo |  overlaps more common *Kalvo* (foil) | 🧑²☢ |  |
@@ -1249,7 +1257,7 @@ We link to all original sources for reference.
 | Kampura |  overlaps more common *Kampura* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kampura)  |
 | Kamu |  overlaps more common *Kamu* (bud) | 🌍🧑²☢ |  |
 | Kanaali |  overlaps more common *Kanaali* (canal) | 🌍☢ |  |
-| Kanala |  overlaps more common *Kanala* (hen house) | 🌍🧑²☢ |  |
+| Kanala |  overlaps more common *Kanala* (hen house) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kanala)  |
 | Kananen |  overlaps more common *Kananen* (FIXME) | 🌍🧑²☢ |  |
 | Kanapata |  overlaps more common *Kanapata* (chicken stew) | 🌍☢ |  |
 | Kanava |  overlaps more common *Kanava* (channel) | 🌍☢ |  |
@@ -1257,23 +1265,23 @@ We link to all original sources for reference.
 | Kandi |  overlaps more common *Kandi* (candidate, bachelor) | 🌍☢ |  |
 | Kaneli |  overlaps more common *Kaneli* (FIXME) | 🌍☢ |  |
 | Kanervikko |  overlaps more common *Kanervikko* (FIXME) | 🌍☢ |  |
-| Kanervisto |  overlaps more common *Kanervisto* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kanervisto)  |
+| Kanervisto |  overlaps more common *Kanervisto* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kanervisto) [enwikt](https://en.wiktionary.org/wiki/Kanervisto)  |
 | Kangas |  overlaps more common *Kangas* (fabric) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangas) [enwikt](https://en.wiktionary.org/wiki/Kangas)  |
 | Kangaskorpi |  overlaps more common *Kangaskorpi* (grass forest) | 🌍🧑²☢ |  |
-| Kangasmaa |  overlaps more common *Kangasmaa* (grasslands) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangasmaa)  |
+| Kangasmaa |  overlaps more common *Kangasmaa* (grasslands) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangasmaa) [enwikt](https://en.wiktionary.org/wiki/Kangasmaa)  |
 | Kangasmetsä |  overlaps more common *Kangasmetsä* (grass forest) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kangasmetsä)  |
-| Kani |  overlaps more common *Kani* (bunny) | 🧑²☢ |  |
-| Kankainen |  overlaps more common *Kankainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kankainen)  |
-| Kankare |  overlaps more common *Kankare* (FIXME) | 🌍🧑²☢ |  |
+| Kani |  overlaps more common *Kani* (bunny) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kani)  |
+| Kankainen |  overlaps more common *Kankainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kankainen) [enwikt](https://en.wiktionary.org/wiki/Kankainen)  |
+| Kankare |  overlaps more common *Kankare* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kankare)  |
 | Kankuri |  overlaps more common *Kankuri* (clothemaker) | 🌍🧑²☢ |  |
 | kanna |  a noun refering to any plant of the genus Canna having large sheathing leaves and clusters of large showy flowers (FinnWordNet) but overlaps forms of *kantaa* (to carry). |  | [fiwikt](https://fi.wiktionary.org/wiki/kanna)  |
-| Kannas |  overlaps more common *Kannas* (isthmus) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kannas)  |
+| Kannas |  overlaps more common *Kannas* (isthmus) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kannas) [enwikt](https://en.wiktionary.org/wiki/Kannas)  |
 | Kannel |  overlaps more common *Kannel* (kantele) | 🧑²☢ |  |
 | Kannike |  overlaps more common *Kannike* (foothold) | 🌍☢ |  |
 | Kannikka |  overlaps more common *Kannikka* (bread) | 🌍☢ |  |
 | Kannokko |  overlaps more common *Kannokko* (FIXME) | 🌍☢ |  |
 | Kannonpää |  overlaps more common *Kannonpää* (FIXME) | 🌍☢ |  |
-| Kannus |  overlaps more common *Kannus* (FIXME) | 🌍☢ |  |
+| Kannus |  overlaps more common *Kannus* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kannus)  |
 | Kannustin |  overlaps more common *Kannustin* (FIXME) | 🌍☢ |  |
 | Kansa |  overlaps more common *Kansa* (people) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kansa)  |
 | Kansanpuolue |  overlaps more common *Kansanpuolue* (people's party) | org☢ |  |
@@ -1281,8 +1289,8 @@ We link to all original sources for reference.
 | kanssa |  adposition (with) when can be attached to a genitive NP, otherwise adverb (as well) |  |  |
 | kanssa |  also as well, adverb, perhaps rather limited, “tuletko kanssa?” |  | [fiwikt](https://fi.wiktionary.org/wiki/kanssa)  |
 | Kanta |  overlaps more common *Kanta* (base) | 🌍org☢ |  |
-| Kantele |  overlaps more common *Kantele* (kantele) | 🌍🧑²☢ |  |
-| Kanto |  overlaps more common *Kanto* (stump) | 🌍🧑²☢ |  |
+| Kantele |  overlaps more common *Kantele* (kantele) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kantele)  |
+| Kanto |  overlaps more common *Kanto* (stump) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kanto) [enwikt](https://en.wiktionary.org/wiki/Kanto)  |
 | Kantti |  overlaps more common *Kantti* (corner) | 🌍☢ |  |
 | Kanttori |  overlaps more common *Kanttori* (organist) | 🌍☢ |  |
 | Kanttura |  overlaps more common *Kanttura* (cow) | 🌍☢ |  |
@@ -1290,7 +1298,7 @@ We link to all original sources for reference.
 | Kapakka |  overlaps more common *Kapakka* (pub) | 🌍☢ |  |
 | Kapea |  overlaps more common *Kapea* (thin) | 🌍☢ |  |
 | Kapeikko |  overlaps more common *Kapeikko* (narrow alleyway) | 🌍☢ |  |
-| Kapiainen |  overlaps more common *Kapiainen* (cap’n) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kapiainen)  |
+| Kapiainen |  overlaps more common *Kapiainen* (cap’n) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kapiainen) [enwikt](https://en.wiktionary.org/wiki/Kapiainen)  |
 | Kapiteeli |  overlaps more common *Kapiteeli* (capital) | org☢ |  |
 | Kappa |  overlaps more common *Kappa* (kappa) | 🌍☢ |  |
 | Kappalainen |  overlaps more common *Kappalainen* (priest) | 🌍☢ |  |
@@ -1306,12 +1314,12 @@ We link to all original sources for reference.
 | Karhunpesä |  overlaps more common *Karhunpesä* (bear’s nest) | 🌍☢ |  |
 | Karies |  overlaps more common *Karies* (karies) | 🌍☢ |  |
 | Karikko |  overlaps more common *Karikko* (rocks) | 🌍🧑²☢ |  |
-| Karinen |  overlaps more common *Karinen* (rocky) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Karinen)  |
+| Karinen |  overlaps more common *Karinen* (rocky) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Karinen) [enwikt](https://en.wiktionary.org/wiki/Karinen)  |
 | Karista |  overlaps more common *Karista* (flake) | 🌍☢ |  |
 | Kariste |  overlaps more common *Kariste* (FIXME) | 🧑²☢ |  |
 | Karjamaja |  overlaps more common *Karjamaja* (cow house) | 🌍☢ |  |
 | Karjola |  overlaps more common *Karjola* (FIXME) | 🌍🧑²☢ |  |
-| Karju |  overlaps more common *Karju* (male pig) | 🌍☢ |  |
+| Karju |  overlaps more common *Karju* (male pig) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Karju)  |
 | Karkea |  overlaps more common *Karkea* (scruffy) | 🌍☢ |  |
 | Karkeinen |  overlaps more common *Karkeinen* (FIXME) | 🌍☢ |  |
 | Karkkulainen |  overlaps more common *Karkkulainen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Karkkulainen)  |
@@ -1320,12 +1328,12 @@ We link to all original sources for reference.
 | Karmi |  overlaps more common *Karmi* (FIXME) | 🌍☢ |  |
 | Karpalo |  overlaps more common *Karpalo* (cranberry) | 🌍☢ |  |
 | Karpalosuo |  overlaps more common *Karpalosuo* (cranberryswamp) | 🌍☢ |  |
-| Karppi |  overlaps more common *Karppi* (carp) | 🌍🧑²☢ |  |
+| Karppi |  overlaps more common *Karppi* (carp) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Karppi)  |
 | Karsi |  overlaps more common *Karsi* (FIXME) | 🌍☢ |  |
 | Karsina |  overlaps more common *Karsina* (FIXME) | 🌍☢ |  |
 | Karta |  overlaps forms of very common *kartta* “map“ and *karttaa* "avoid". | 🧑² |  |
 | Karta |  overlaps forms of very common *kartta* “map” and *karttaa* "avoid". | 🧑² |  |
-| Kartano |  overlaps more common *Kartano* (mansion) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kartano)  |
+| Kartano |  overlaps more common *Kartano* (mansion) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kartano) [enwikt](https://en.wiktionary.org/wiki/Kartano)  |
 | Kartelli |  overlaps more common *Kartelli* (cartel) | org☢ |  |
 | Kartio |  overlaps more common *Kartio* (cone) | 🌍🧑²☢ |  |
 | Karttu |  overlaps more common *Karttu* (brush) | 🌍🧑²☢ |  |
@@ -1336,31 +1344,31 @@ We link to all original sources for reference.
 | Kasa |  overlaps more common *Kasa* (pile) | 🌍☢ |  |
 | Kasakka |  overlaps more common *Kasakka* (kazakh) | 🌍☢ |  |
 | Kasakki |  overlaps more common *Kasakki* (kozakh) | 🌍☢ |  |
-| Kasari |  overlaps more common *Kasari* (pan) | 🌍☢ |  |
+| Kasari |  overlaps more common *Kasari* (pan) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kasari)  |
 | Kasarmi |  overlaps more common *Kasarmi* (military) | 🌍☢ |  |
-| Kaseva |  overlaps more common *Kaseva* (FIXME) | 🌍☢ |  |
+| Kaseva |  overlaps more common *Kaseva* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kaseva)  |
 | Kasi |  overlaps more common *Kasi* (eight) | 🌍☢ |  |
-| Kaski |  overlaps more common *Kaski* (FIXME) | 🌍🧑²☢ |  |
+| Kaski |  overlaps more common *Kaski* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kaski)  |
 | Kaskimaa |  overlaps more common *Kaskimaa* (FIXME) | 🌍🧑²☢ |  |
 | Kassa |  overlaps more common *Kassa* (cash register) | 🌍☢ |  |
 | Kassapää |  overlaps more common *Kassapää* (FIXME) | 🌍☢ |  |
 | Kassara |  overlaps more common *Kassara* (saw) | 🌍☢ |  |
 | Kassi |  overlaps more common *Kassi* (bag) | 🌍☢ |  |
 | Kaste |  overlaps more common *Kaste* (baptism) | 🧑²🧑¹☢♀ |  |
-| Kastehelmi |  overlaps more common *Kastehelmi* (baptiosm pearl) | 🧑¹☢♀ |  |
+| Kastehelmi |  overlaps more common *Kastehelmi* (baptiosm pearl) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kastehelmi)  |
 | Kasti |  overlaps more common *Kasti* (caste) | 🌍☢ |  |
 | Kasvi |  overlaps more common *Kasvi* (plant) | 🧑²☢ |  |
-| Kataja |  overlaps more common *Kataja* (pine) | 🌍🧑²☢ |  |
-| Katajainen |  overlaps more common *Katajainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Katajainen)  |
+| Kataja |  overlaps more common *Kataja* (pine) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kataja)  |
+| Katajainen |  overlaps more common *Katajainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Katajainen) [enwikt](https://en.wiktionary.org/wiki/Katajainen)  |
 | Katajikko |  overlaps more common *Katajikko* (FIXME) | 🌍☢ |  |
-| Katajisto |  overlaps more common *Katajisto* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Katajisto)  |
+| Katajisto |  overlaps more common *Katajisto* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Katajisto) [enwikt](https://en.wiktionary.org/wiki/Katajisto)  |
 | Katala |  overlaps more common *Katala* (evil) | 🌍🧑²☢ |  |
 | Katara |  overlaps more common *Katara* (FIXME) | 🌍🧑²☢ |  |
 | Kate |  overlaps more common *Kate* (profit) | 🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kate)  |
 | Katharsis |  overlaps more common *Katharsis* (catharsis) | org☢ |  |
 | Kati |  overlaps more common *Kati* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Kati)  |
 | Katinkulta |  overlaps more common *Katinkulta* (fool’s gold) | 🌍☢ |  |
-| Katiska |  overlaps more common *Katiska* (fish trap) | 🌍☢ |  |
+| Katiska |  overlaps more common *Katiska* (fish trap) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Katiska)  |
 | Katkelma |  overlaps more common *Katkelma* (FIXME) | 🌍☢ |  |
 | Katkera |  overlaps more common *Katkera* (bitter) | 🌍☢ |  |
 | Katko |  overlaps more common *Katko* (FIXME) | 🌍org☢ |  |
@@ -1381,8 +1389,8 @@ We link to all original sources for reference.
 | Kaula |  overlaps more common *Kaula* (neck) | 🧑²☢ |  |
 | Kaulin |  overlaps more common *Kaulin* (rolling pin) | 🧑²☢ |  |
 | Kauno |  overlaps more common *Kauno* (cursive) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Kauno)  |
-| Kauppala |  overlaps more common *Kauppala* (village) | 🌍🧑²☢ |  |
-| Kaura |  overlaps more common *Kaura* (crop) | 🌍☢ |  |
+| Kauppala |  overlaps more common *Kauppala* (village) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kauppala)  |
+| Kaura |  overlaps more common *Kaura* (crop) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kaura)  |
 | Kaurapelto |  overlaps more common *Kaurapelto* (oatfield) | 🌍☢ |  |
 | Kauris |  overlaps more common *Kauris* (capricorn) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kauris)  |
 | Kautsu |  overlaps more common *Kautsu* (rubber) | 🌍☢ |  |
@@ -1392,11 +1400,11 @@ We link to all original sources for reference.
 | Kavala |  overlaps more common *Kavala* (evil) | 🌍☢ |  |
 | Kavi |  overlaps more common *Kavi* (FIXME) | 🌍☢ |  |
 | Kavio |  overlaps more common *Kavio* (hoof) | 🌍☢ |  |
-| kea |  Nestor notabilis, a parrot of New Zealand; this rare noun is problematic with compounding | ☢ | [enwikt](https://en.wiktionary.org/wiki/kea) [finnwn](https://sanat.csc.fi/w/index.php?search=kea)  |
+| kea |  Nestor notabilis, a parrot of New Zealand; this rare noun is problematic with compounding | ☢ | [fiwikt](https://fi.wiktionary.org/wiki/kea) [enwikt](https://en.wiktionary.org/wiki/kea) [finnwn](https://sanat.csc.fi/w/index.php?search=kea)  |
 | Keho |  overlaps more common *Keho* (body) | 🌍☢ |  |
 | Kehä |  overlaps more common *Kehä* (circle) | 🌍☢ |  |
 | Keidassuo |  overlaps more common *Keidassuo* (FIXME) | 🌍☢ |  |
-| Keihäs |  overlaps more common *Keihäs* (spear) | 🧑²☢ |  |
+| Keihäs |  overlaps more common *Keihäs* (spear) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Keihäs)  |
 | Keiju |  overlaps more common *Keiju* (fairy) | 🧑²☢ |  |
 | Keikka |  overlaps more common *Keikka* (gig) | 🌍☢ |  |
 | Keila |  overlaps more common *Keila* (pin) | 🌍☢ |  |
@@ -1407,17 +1415,17 @@ We link to all original sources for reference.
 | Keittola |  overlaps more common *Keittola* (FIXME) | 🌍☢ |  |
 | Kekkuli |  overlaps more common *Kekkuli* (FIXME) | 🌍☢ |  |
 | Keko |  overlaps more common *Keko* (pile) | 🌍☢ |  |
-| Kekäle |  overlaps more common *Kekäle* (ember) | 🌍🧑²org☢ |  |
+| Kekäle |  overlaps more common *Kekäle* (ember) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Kekäle)  |
 | Kela |  overlaps more common *Kela* (roll) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Kela)  |
 | Kelju |  overlaps more common *Kelju* (nasty) | 🌍☢ |  |
-| Kelkka |  overlaps more common *Kelkka* (sled) | 🌍🧑²☢ |  |
+| Kelkka |  overlaps more common *Kelkka* (sled) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kelkka)  |
 | Kelkkamäki |  overlaps more common *Kelkkamäki* (sledhill) | 🌍☢ |  |
 | Kellari |  overlaps more common *Kellari* (cellar) | 🌍🧑²☢ |  |
 | Kello |  overlaps very common *kello* “clock“. | 🌍☢ |  |
 | Kellonsoittaja |  overlaps more common *Kellonsoittaja* (clock plaher) | 🌍☢ |  |
 | Kellotapuli |  overlaps more common *Kellotapuli* (clock tower) | 🌍☢ |  |
 | Kellukka |  overlaps more common *Kellukka* (FIXME) | 🌍☢ |  |
-| Kelo |  overlaps more common *Kelo* (hollow dead tree trunk) | 🌍🧑²☢ |  |
+| Kelo |  overlaps more common *Kelo* (hollow dead tree trunk) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kelo)  |
 | Kelohonka |  overlaps more common *Kelohonka* (hollow dead tree trunk) | 🌍☢ |  |
 | Kelokko |  overlaps more common *Kelokko* (FIXME) | 🌍☢ |  |
 | Kelpo |  overlaps more common *Kelpo* (passable) | 🧑¹☢ |  |
@@ -1426,13 +1434,13 @@ We link to all original sources for reference.
 | Keltto |  overlaps more common *Keltto* (FIXME) | 🌍☢ |  |
 | Kelvoton |  overlaps more common *Kelvoton* (useless) | 🌍☢ |  |
 | Kemianteollisuus |  overlaps more common *Kemianteollisuus* (chemistry industry) | org☢ |  |
-| Kemiläinen |  overlaps more common *Kemiläinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kemiläinen)  |
+| Kemiläinen |  overlaps more common *Kemiläinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kemiläinen) [enwikt](https://en.wiktionary.org/wiki/Kemiläinen)  |
 | Ken |  overlaps more common *Ken* (who) | 🧑¹☢ |  |
 | Kenkku |  overlaps more common *Kenkku* (nasty) | 🌍☢ |  |
 | Kenkä |  overlaps more common *Kenkä* (shoe) | 🌍☢ |  |
 | Kenno |  overlaps more common *Kenno* (hexagon) | 🌍☢ |  |
 | Kenraali |  overlaps more common *Kenraali* (general) | 🌍☢ |  |
-| Kenttä |  overlaps more common *Kenttä* (field) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kenttä)  |
+| Kenttä |  overlaps more common *Kenttä* (field) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kenttä) [enwikt](https://en.wiktionary.org/wiki/Kenttä)  |
 | Keppi |  overlaps more common *Keppi* (stick) | 🌍☢ |  |
 | Kepponen |  overlaps more common *Kepponen* (trick) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kepponen)  |
 | Kepu |  overlaps more common *Kepu* (agrarian party) | org☢ |  |
@@ -1452,12 +1460,12 @@ We link to all original sources for reference.
 | Keskiväli |  overlaps more common *Keskiväli* (mioddle length) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Keskiväli)  |
 | Keskiö |  overlaps more common *Keskiö* (center) | 🌍☢ |  |
 | Kessu |  overlaps more common *Kessu* (sargeant) | 🌍☢ |  |
-| Kesti |  overlaps more common *Kesti* (party) | 🌍🧑²☢ |  |
+| Kesti |  overlaps more common *Kesti* (party) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kesti)  |
 | Kestikievari |  overlaps more common *Kestikievari* (partytavern) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kestikievari)  |
 | Kesä |  overlaps more common *Kesä* (summer) | 🌍☢ |  |
 | Kesäkoti |  overlaps more common *Kesäkoti* (summerhome) | 🌍☢ |  |
 | Ketale |  overlaps more common *Ketale* (bastard) | 🌍☢ |  |
-| Keto |  overlaps more common *Keto* (grass) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Keto)  |
+| Keto |  overlaps more common *Keto* (grass) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Keto) [enwikt](https://en.wiktionary.org/wiki/Keto)  |
 | Ketto |  overlaps more common *Ketto* (FIXME) | 🌍☢ |  |
 | Kettu |  overlaps more common *Kettu* (fox) | 🌍🧑²☢ |  |
 | Ketunhäntä |  overlaps more common *Ketunhäntä* (foxtail) | 🌍☢ |  |
@@ -1481,7 +1489,7 @@ We link to all original sources for reference.
 | Kihti |  overlaps more common *Kihti* (cast) | 🌍☢ |  |
 | Kiikari |  overlaps more common *Kiikari* (binocular) | 🌍☢ |  |
 | Kiikku |  overlaps more common *Kiikku* (swing) | 🌍☢ |  |
-| Kiila |  overlaps more common *Kiila* (ledge) | 🌍org☢ |  |
+| Kiila |  overlaps more common *Kiila* (ledge) | 🌍org☢ | [enwikt](https://en.wiktionary.org/wiki/Kiila)  |
 | Kiille |  overlaps more common *Kiille* (FIXME) | 🧑²☢ |  |
 | Kiilto |  overlaps more common *Kiilto* (shine) | org☢ |  |
 | Kiilu |  overlaps more common *Kiilu* (FIXME) | 🌍☢ |  |
@@ -1497,26 +1505,26 @@ We link to all original sources for reference.
 | Kilju |  overlaps more common *Kilju* (moonshine) | 🌍☢ |  |
 | Kiljuva |  overlaps more common *Kiljuva* (screaming) | 🌍☢ |  |
 | Killinki |  overlaps more common *Killinki* (coin) | 🌍☢ |  |
-| Kilo |  overlaps more common *Kilo* (kilogram) | 🌍☢ |  |
+| Kilo |  overlaps more common *Kilo* (kilogram) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kilo)  |
 | Kilpi |  overlaps more common *Kilpi* (shield) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kilpi)  |
 | Kilsa |  overlaps more common *Kilsa* (kilometre) | 🌍☢ |  |
 | Kilta |  overlaps more common *Kilta* (guild) | 🌍☢ |  |
 | Kiltti |  overlaps more common *Kiltti* (nice) | 🌍☢ |  |
-| Kimalainen |  overlaps more common *Kimalainen* (bumblebee) | 🌍☢ |  |
+| Kimalainen |  overlaps more common *Kimalainen* (bumblebee) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kimalainen)  |
 | Kimppa |  overlaps more common *Kimppa* (group) | 🌍☢ |  |
 | Kimpsu |  overlaps more common *Kimpsu* (stuff) | 🌍☢ |  |
 | Kina |  overlaps more common *Kina* (quarrel) | 🌍☢ |  |
 | Kinkku |  overlaps more common *Kinkku* (ham) | 🌍☢ |  |
 | Kino |  overlaps more common *Kino* (movies) | 🌍☢ |  |
-| Kinos |  overlaps more common *Kinos* (snowpile) | 🧑²☢ |  |
+| Kinos |  overlaps more common *Kinos* (snowpile) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kinos)  |
 | Kinttu |  overlaps more common *Kinttu* (leg) | 🌍☢ |  |
 | Kinttupolku |  overlaps more common *Kinttupolku* (footpath) | 🌍☢ |  |
 | Kipakka |  overlaps more common *Kipakka* (FIXME) | 🌍☢ |  |
 | Kiperä |  overlaps more common *Kiperä* (tough) | 🌍☢ |  |
-| Kipinä |  overlaps more common *Kipinä* (spark) | 🌍☢ |  |
+| Kipinä |  overlaps more common *Kipinä* (spark) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kipinä)  |
 | Kippari |  overlaps more common *Kippari* (skipper) | 🌍☢ |  |
-| Kippo |  overlaps more common *Kippo* (cup) | 🌍🧑²☢ |  |
-| Kiri |  overlaps more common *Kiri* (FIXME) | 🌍🧑²☢ |  |
+| Kippo |  overlaps more common *Kippo* (cup) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kippo)  |
+| Kiri |  overlaps more common *Kiri* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kiri)  |
 | Kiristäjä |  overlaps more common *Kiristäjä* (blackmailer) | 🌍☢ |  |
 | Kirjanen |  overlaps more common *Kirjanen* (booklet) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kirjanen)  |
 | Kirjava |  overlaps more common *Kirjava* (colourful) | 🌍☢ |  |
@@ -1529,8 +1537,8 @@ We link to all original sources for reference.
 | Kirnunmäntä |  overlaps more common *Kirnunmäntä* (jug stick) | 🌍☢ |  |
 | Kirnupiimä |  overlaps more common *Kirnupiimä* (jug milk) | 🌍☢ |  |
 | Kirpakka |  overlaps more common *Kirpakka* (sour) | 🌍☢ |  |
-| Kirppu |  overlaps more common *Kirppu* (flea) | 🌍🧑²☢ |  |
-| Kirves |  overlaps more common *Kirves* (ax) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kirves)  |
+| Kirppu |  overlaps more common *Kirppu* (flea) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kirppu)  |
+| Kirves |  overlaps more common *Kirves* (ax) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kirves) [enwikt](https://en.wiktionary.org/wiki/Kirves)  |
 | Kirvesmies |  overlaps more common *Kirvesmies* (axman) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kirvesmies)  |
 | Kisko |  overlaps more common *Kisko* (rail)) | 🌍☢ |  |
 | Kissa |  overlaps more common *Kissa* (cat) | 🌍☢ |  |
@@ -1538,10 +1546,10 @@ We link to all original sources for reference.
 | Kita |  overlaps more common *Kita* (mouth) | 🌍☢ |  |
 | Kitka |  overlaps more common *Kitka* (friction) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kitka)  |
 | Kitsi |  overlaps more common *Kitsi* (FIXME) | 🌍☢ |  |
-| Kitti |  overlaps more common *Kitti* (speckle) | 🌍🧑²☢ |  |
+| Kitti |  overlaps more common *Kitti* (speckle) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kitti)  |
 | Kiukku |  overlaps more common *Kiukku* (anger) | 🌍☢ |  |
 | Kiulu |  overlaps more common *Kiulu* (FIXME) | 🌍☢ |  |
-| Kiuru |  overlaps more common *Kiuru* (FIXME) | 🌍🧑²☢ |  |
+| Kiuru |  overlaps more common *Kiuru* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kiuru)  |
 | Kiusa |  overlaps more common *Kiusa* (FIXME) | 🌍☢ |  |
 | Kiva |  overlaps very common *kiva* “nice“. | 🌍☢ |  |
 | Kiva |  overlaps very common *kiva* “nice”. | 🌍☢ |  |
@@ -1555,7 +1563,7 @@ We link to all original sources for reference.
 | Kivikäs |  overlaps more common *Kivikäs* (stony) | 🧑²☢ |  |
 | Kivilouhimo |  overlaps more common *Kivilouhimo* (stonequarry) | 🌍☢ |  |
 | Kivimuuri |  overlaps more common *Kivimuuri* (stonewall) | 🌍☢ |  |
-| Kivipelto |  overlaps more common *Kivipelto* (stonefield) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kivipelto)  |
+| Kivipelto |  overlaps more common *Kivipelto* (stonefield) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kivipelto) [enwikt](https://en.wiktionary.org/wiki/Kivipelto)  |
 | Kivipyykki |  overlaps more common *Kivipyykki* (stoneboundary) | 🌍☢ |  |
 | Kivirikko |  overlaps more common *Kivirikko* (stonebreak) | 🧑²☢ |  |
 | Kivisilta |  overlaps more common *Kivisilta* (stonebridge) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kivisilta)  |
@@ -1567,7 +1575,7 @@ We link to all original sources for reference.
 | Knalli |  overlaps more common *Knalli* (hat) | 🌍☢ |  |
 | Kohelo |  overlaps more common *Kohelo* (clumsy) | 🧑²☢ |  |
 | Kohina |  overlaps more common *Kohina* (noise) | 🌍☢ |  |
-| Koho |  overlaps more common *Koho* (bob) | 🌍🧑²☢ |  |
+| Koho |  overlaps more common *Koho* (bob) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Koho)  |
 | Kohosuo |  overlaps more common *Kohosuo* (bob swamp) | 🌍☢ |  |
 | kohta |  place, spot, noun |  | [fiwikt](https://fi.wiktionary.org/wiki/kohta) [enwikt](https://en.wiktionary.org/wiki/kohta)  |
 | kohta |  soon, adverb |  |  |
@@ -1581,7 +1589,7 @@ We link to all original sources for reference.
 | Koirankorva |  overlaps more common *Koirankorva* (dog’s ear) | 🌍☢ |  |
 | Koiso |  overlaps more common *Koiso* (FIXME) | 🌍☢ |  |
 | Koitto |  overlaps more common *Koitto* (dawn) | 🌍org☢ |  |
-| Koivikko |  overlaps more common *Koivikko* (birches) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koivikko)  |
+| Koivikko |  overlaps more common *Koivikko* (birches) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koivikko) [enwikt](https://en.wiktionary.org/wiki/Koivikko)  |
 | Koivisto |  overlaps more common *Koivisto* (birches) | 🌍🧑²☢ |  |
 | Koivu |  overlaps more common *Koivu* (birch) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Koivu)  |
 | Koivuinen |  overlaps more common *Koivuinen* (birchy) | 🌍☢ |  |
@@ -1593,33 +1601,37 @@ We link to all original sources for reference.
 | Kokkare |  overlaps more common *Kokkare* (clump) | 🌍☢ |  |
 | Kokkari |  overlaps more common *Kokkari* (meeting) | 🌍🧑²☢ |  |
 | Kokkarit |  overlaps more common *Kokkarit* (meeting) | 🌍☢ |  |
-| Kokki |  overlaps more common *Kokki* (cook) | 🌍🧑²☢ |  |
+| Kokki |  overlaps more common *Kokki* (cook) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kokki)  |
 | Kokko |  overlaps more common *Kokko* (bonfire) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kokko)  |
 | Kokoomus |  overlaps more common *Kokoomus* (coalition) | org☢ | [enwikt](https://en.wiktionary.org/wiki/Kokoomus)  |
-| Kola |  overlaps more common *Kola* (plow) | 🌍🧑²☢ |  |
-| Kolari |  overlaps more common *Kolari* (crash) | 🌍🧑²☢ |  |
+| Kola |  overlaps more common *Kola* (plow) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kola)  |
+| Kolari |  overlaps more common *Kolari* (crash) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kolari)  |
 | Kolea |  overlaps more common *Kolea* (cold) | 🌍☢ |  |
 | Kolhoosi |  overlaps more common *Kolhoosi* (golhoz) | 🌍☢ |  |
 | Kolikko |  overlaps more common *Kolikko* (coin) | 🌍☢ |  |
-| Kolkka |  overlaps more common *Kolkka* (edge) | 🌍🧑²☢ |  |
+| Kolkka |  overlaps more common *Kolkka* (edge) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kolkka)  |
 | Kolkko |  overlaps more common *Kolkko* (gloomy) | 🌍☢ |  |
 | Kolli |  overlaps more common *Kolli* (bobcat) | 🌍☢ |  |
+| kolmekymmentä |  thirty |  | [fiwikt](https://fi.wiktionary.org/wiki/kolmekymmentä)  |
+| kolmesataa |  three hundreds |  |  |
+| kolmetoista |  thirteen |  |  |
+| kolmetuhatta |  three thousands |  |  |
 | Kolmihaarainen |  overlaps more common *Kolmihaarainen* (threeprong) | 🌍☢ |  |
 | Kolmikko |  overlaps more common *Kolmikko* (triplet) | 🌍☢ |  |
 | Kolminainen |  overlaps more common *Kolminainen* (threeway) | 🌍☢ |  |
 | Kolmio |  overlaps more common *Kolmio* (triangle) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kolmio)  |
 | Kolmiodraama |  overlaps more common *Kolmiodraama* (triangle drama) | 🎶☢ |  |
 | Kolmipäinen |  overlaps more common *Kolmipäinen* (three-head) | 🌍☢ |  |
-| Kolmonen |  overlaps more common *Kolmonen* (three) | 🌍🧑²☢ |  |
+| Kolmonen |  overlaps more common *Kolmonen* (three) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kolmonen)  |
 | Kolo |  overlaps more common *Kolo* (hole) | 🌍☢ |  |
 | Koloinen |  overlaps more common *Koloinen* (hole) | 🌍☢ |  |
 | Komero |  overlaps more common *Komero* (closet) | 🧑²☢ |  |
 | Komori |  overlaps more common *Komori* (FIXME) | 🌍☢ |  |
 | Kompleksi |  overlaps more common *Kompleksi* (complex) | org☢ |  |
 | Komppi |  overlaps more common *Komppi* (comp) | 🌍☢ |  |
-| Komu |  overlaps more common *Komu* (FIXME) | 🌍🧑²☢ |  |
+| Komu |  overlaps more common *Komu* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Komu)  |
 | Kone |  overlaps more common *Kone* (machine) | org☢ |  |
-| Konga |  overlaps more common *Konga* (conga) | 🧑²☢ |  |
+| Konga |  overlaps more common *Konga* (conga) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Konga)  |
 | Koni |  overlaps more common *Koni* (horse) | 🌍☢ |  |
 | Konjakki |  overlaps more common *Konjakki* (cognac) | 🌍☢ |  |
 | Konkari |  overlaps more common *Konkari* (pro) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Konkari)  |
@@ -1630,12 +1642,12 @@ We link to all original sources for reference.
 | Konnari |  overlaps more common *Konnari* (conductor) | 🌍☢ |  |
 | Konsa |  overlaps more common *Konsa* (when) | 🌍☢ |  |
 | Konsepti |  overlaps more common *Konsepti* (concept) | org☢ |  |
-| Konsti |  overlaps more common *Konsti* (trick) | 🧑²☢ |  |
+| Konsti |  overlaps more common *Konsti* (trick) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Konsti)  |
 | Kontakti |  overlaps more common *Kontakti* (contact) | org☢ |  |
-| Kontio |  overlaps more common *Kontio* (bear) | 🌍🧑²☢ |  |
+| Kontio |  overlaps more common *Kontio* (bear) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kontio)  |
 | Kontti |  overlaps more common *Kontti* (container) | 🌍🧑²☢ |  |
-| Konttori |  overlaps more common *Konttori* (office) | 🌍☢ |  |
-| Kontu |  overlaps more common *Kontu* (shire) | 🌍🧑²☢ |  |
+| Konttori |  overlaps more common *Konttori* (office) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Konttori)  |
+| Kontu |  overlaps more common *Kontu* (shire) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kontu)  |
 | KOP |  Kansallis-Osake-Pankki | org |  |
 | Kopina |  overlaps more common *Kopina* (clop) | 🌍☢ |  |
 | Kopio |  overlaps more common *Kopio* (copy) | 🌍☢ |  |
@@ -1651,7 +1663,7 @@ We link to all original sources for reference.
 | Korko |  overlaps more common *Korko* (interest) | 🌍🧑²☢ |  |
 | Kornetti |  overlaps more common *Kornetti* (cornet) | 🌍☢ |  |
 | Korni |  overlaps more common *Korni* (korny) | 🌍☢ |  |
-| Korpi |  overlaps more common *Korpi* (forest) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korpi)  |
+| Korpi |  overlaps more common *Korpi* (forest) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korpi) [enwikt](https://en.wiktionary.org/wiki/Korpi)  |
 | Korpimaa |  overlaps more common *Korpimaa* (wasteland) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korpimaa)  |
 | Korpimetsä |  overlaps more common *Korpimetsä* (forest) | 🌍☢ |  |
 | Korpiniitty |  overlaps more common *Korpiniitty* (greens) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korpiniitty)  |
@@ -1660,21 +1672,21 @@ We link to all original sources for reference.
 | Korppi |  overlaps more common *Korppi* (raven) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Korppi)  |
 | Korpraali |  overlaps more common *Korpraali* (corporal) | 🌍☢ |  |
 | Korsi |  overlaps more common *Korsi* (grassblade) | 🧑²☢ |  |
-| Korsika |  overlaps more common *Korsika* (corsica) | 🌍☢ |  |
+| Korsika |  overlaps more common *Korsika* (corsica) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Korsika)  |
 | Korsu |  overlaps more common *Korsu* (bunker) | 🌍☢ |  |
 | Kortisto |  overlaps more common *Kortisto* (dole) | 🌍☢ |  |
 | Kortteikko |  overlaps more common *Kortteikko* (FIXME) | 🌍☢ |  |
-| Korva |  overlaps more common *Korva* (ear) | 🌍🧑²☢ |  |
+| Korva |  overlaps more common *Korva* (ear) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Korva)  |
 | Korvaton |  overlaps more common *Korvaton* (earless) | 🌍☢ |  |
 | Korvike |  overlaps more common *Korvike* (replacement) | 🌍☢ |  |
 | kos |  This noun means a unit of length in India (FinnWordNet) but overlaps forms of very common *koska* “because” etc. | ☢ | [finnwn](https://sanat.csc.fi/w/index.php?search=kos)  |
-| Kos |  overlaps more common *Kos* (kos) | 🌍☢ |  |
+| Kos |  overlaps more common *Kos* (kos) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kos)  |
 | koska |  when, as adverb, “koska tulet?” |  |  |
 | koska |  because, sub-ordinating conj, “koska olen hyvä” |  | [fiwikt](https://fi.wiktionary.org/wiki/koska)  |
 | Koski |  overlaps more common *Koski* (rapids) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koski) [enwikt](https://en.wiktionary.org/wiki/Koski)  |
 | Koskinen |  overlaps more common *Koskinen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Koskinen)  |
 | Kosminen |  overlaps more common *Kosminen* (cosmic) | 🧑²☢ |  |
-| Koste |  overlaps more common *Koste* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koste)  |
+| Koste |  overlaps more common *Koste* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Koste) [enwikt](https://en.wiktionary.org/wiki/Koste)  |
 | Kosteikko |  overlaps more common *Kosteikko* (FIXME) | 🌍☢ |  |
 | Kosto |  overlaps more common *Kosto* (revenge) | 🌍☢ |  |
 | Kota |  overlaps more common *Kota* (tent) | 🌍🧑²☢ |  |
@@ -1697,7 +1709,7 @@ We link to all original sources for reference.
 | Kottero |  overlaps more common *Kottero* (car) | 🌍☢ |  |
 | Koukero |  overlaps more common *Koukero* (squiggle) | 🌍☢ |  |
 | Koukeroinen |  overlaps more common *Koukeroinen* (squiggly) | 🌍☢ |  |
-| Koukku |  overlaps more common *Koukku* (hook) | 🌍🧑²☢ |  |
+| Koukku |  overlaps more common *Koukku* (hook) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Koukku)  |
 | Koulu |  overlaps more common *Koulu* (school) | 🌍🧑²☢ |  |
 | Koulumies |  overlaps more common *Koulumies* (schoolman) | 🧑²☢ |  |
 | Koura |  overlaps more common *Koura* (hand) | 🌍☢ |  |
@@ -1709,18 +1721,18 @@ We link to all original sources for reference.
 | Kranaatti |  overlaps more common *Kranaatti* (grenate) | 🌍☢ |  |
 | Kranssi |  overlaps more common *Kranssi* (twigs) | 🌍☢ |  |
 | Krappi |  overlaps more common *Krappi* (FIXME) | 🌍☢ |  |
-| Krapu |  overlaps more common *Krapu* (crab) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Krapu)  |
-| Kreivi |  overlaps more common *Kreivi* (count) | 🌍🧑²☢ |  |
+| Krapu |  overlaps more common *Krapu* (crab) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Krapu) [enwikt](https://en.wiktionary.org/wiki/Krapu)  |
+| Kreivi |  overlaps more common *Kreivi* (count) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kreivi)  |
 | Kriisi |  overlaps more common *Kriisi* (crisis) | 🌍☢ |  |
 | Kritiikki |  overlaps more common *Kritiikki* (critique) | org☢ |  |
-| Krouvi |  overlaps more common *Krouvi* (tavern) | 🌍☢ |  |
+| Krouvi |  overlaps more common *Krouvi* (tavern) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Krouvi)  |
 | Kruuna |  overlaps more common *Kruuna* (crown) | 🌍☢ |  |
 | Kruununmaa |  overlaps more common *Kruununmaa* (crownland) | 🌍☢ |  |
-| Kuha |  overlaps more common *Kuha* (fish) | 🌍🧑²☢ |  |
+| Kuha |  overlaps more common *Kuha* (fish) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuha)  |
 | Kuhankeittäjä |  overlaps more common *Kuhankeittäjä* (baseball stuff) | 🌍☢ |  |
 | Kuhmolainen |  overlaps more common *Kuhmolainen* (FIXME) | org☢📺 |  |
 | kui |  This noun means the Dravidian language spoken by the Kui in southeastern India (FinnWordNet) but overlaps forms of very common *kuin* “as”. | ☢ | [finnwn](https://sanat.csc.fi/w/index.php?search=kui)  |
-| Kuikka |  overlaps more common *Kuikka* (bird) | 🌍🧑²☢ |  |
+| Kuikka |  overlaps more common *Kuikka* (bird) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuikka)  |
 | kuin |  as ... as, sub-ordinating conj, comparative particle, “niin kauan kuin”, "parempi kuin" |  |  |
 | kuin |  both ... and, paired with niin, co-ordinating conj, “niin kissoja kuin koiriakin” |  |  |
 | Kuiru |  overlaps more common *Kuiru* (FIXME) | 🌍☢ |  |
@@ -1731,37 +1743,37 @@ We link to all original sources for reference.
 | kuivilla |  dry from smth (alcohol, drug etc.), elative complement “olen kuivilla viinasta kolme kuukautta” |  |  |
 | kuivilla |  dry also literally “olen kuivilla” |  | [fiwikt](https://fi.wiktionary.org/wiki/kuivilla)  |
 | kuiville |  into dry from smth. (alcohol, drug etc.) “pitää päästä kuiville viinasta” |  |  |
-| kuiville |  getting dry from, also literally “päästä kuiville” |  |
+| kuiville |  getting dry from, also literally “päästä kuiville” |  |  |
 | Kuja |  overlaps more common *Kuja* (alley) | 🌍🧑²☢ |  |
 | Kukinto |  overlaps more common *Kukinto* (bloom) | 🧑²☢ |  |
 | Kukka |  overlaps more common *Kukka* (flower) | 🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Kukka) [enwikt](https://en.wiktionary.org/wiki/Kukka)  |
 | Kukkamaa |  overlaps more common *Kukkamaa* (flowerlands) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkamaa)  |
-| Kukkanen |  overlaps more common *Kukkanen* (flowerling) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkanen)  |
+| Kukkanen |  overlaps more common *Kukkanen* (flowerling) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkanen) [enwikt](https://en.wiktionary.org/wiki/Kukkanen)  |
 | Kukkaro |  overlaps more common *Kukkaro* (purse) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kukkaro)  |
 | Kukkatarha |  overlaps more common *Kukkatarha* (flowergarden) | 🌍☢ |  |
 | Kukkia |  overlaps more common *Kukkia* (bloom) | 🌍☢ |  |
 | Kukko |  overlaps more common *Kukko* (cock) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kukko)  |
 | Kukkonen |  overlaps more common *Kukkonen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kukkonen)  |
 | Kukkopilli |  overlaps more common *Kukkopilli* (whistle) | 🌍☢ |  |
-| Kukkula |  overlaps more common *Kukkula* (hill) | 🌍🧑²☢ |  |
+| Kukkula |  overlaps more common *Kukkula* (hill) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kukkula)  |
 | Kukkulainen |  overlaps more common *Kukkulainen* (FIXME) | 🌍☢ |  |
 | Kukkura |  overlaps more common *Kukkura* (FIXME) | 🌍☢ |  |
 | Kukonharja |  overlaps more common *Kukonharja* (roosterthing) | 🌍☢ |  |
 | Kulho |  overlaps more common *Kulho* (bowl) | 🌍☢ |  |
-| Kulju |  overlaps more common *Kulju* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kulju)  |
+| Kulju |  overlaps more common *Kulju* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kulju) [enwikt](https://en.wiktionary.org/wiki/Kulju)  |
 | Kulkija |  overlaps more common *Kulkija* (trabllelr) | 🌍☢ |  |
 | Kulku |  overlaps more common *Kulku* (journey) | 🧑²☢ |  |
 | Kullero |  overlaps more common *Kullero* (FIXME) | 🌍☢ |  |
 | Kulma |  overlaps more common *Kulma* (corner) | 🌍org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kulma)  |
 | Kulmio |  overlaps more common *Kulmio* (polygon) | 🌍☢ |  |
-| Kulo |  overlaps more common *Kulo* (fire) | 🌍☢ |  |
+| Kulo |  overlaps more common *Kulo* (fire) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kulo)  |
 | Kulovalkea |  overlaps more common *Kulovalkea* (fire) | org☢ |  |
-| Kulta |  overlaps more common *Kulta* (gold) | 🌍☢ |  |
-| Kultala |  overlaps more common *Kultala* (FIXME) | 🌍🧑²☢ |  |
+| Kulta |  overlaps more common *Kulta* (gold) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kulta)  |
+| Kultala |  overlaps more common *Kultala* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kultala)  |
 | Kultamaa |  overlaps more common *Kultamaa* (goldlands) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kultamaa)  |
-| Kultanen |  overlaps more common *Kultanen* (golden) | 🌍🧑²☢ |  |
+| Kultanen |  overlaps more common *Kultanen* (golden) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kultanen)  |
 | Kultarinta |  overlaps more common *Kultarinta* (goldbreasts) | 🌍☢ |  |
-| Kultti |  overlaps more common *Kultti* (cult) | 🌍🧑²org☢ |  |
+| Kultti |  overlaps more common *Kultti* (cult) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Kultti)  |
 | Kumara |  overlaps more common *Kumara* (humpback) | 🌍🧑²☢ |  |
 | Kumina |  overlaps more common *Kumina* (cumin) | 🌍☢ |  |
 | Kumma |  overlaps more common *Kumma* (weird) | 🌍☢ |  |
@@ -1770,10 +1782,10 @@ We link to all original sources for reference.
 | Kummoinen |  overlaps more common *Kummoinen* (FIXME) | 🌍☢ |  |
 | Kumo |  overlaps more common *Kumo* (FIXME) | 🌍☢ |  |
 | Kumpare |  overlaps more common *Kumpare* (hill) | 🌍☢ |  |
-| Kumpu |  overlaps more common *Kumpu* (hill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kumpu)  |
+| Kumpu |  overlaps more common *Kumpu* (hill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kumpu) [enwikt](https://en.wiktionary.org/wiki/Kumpu)  |
 | Kumpusuo |  overlaps more common *Kumpusuo* (hillswamp) | 🌍☢ |  |
 | kun |  when, sub-ordinating conj, “kun menen kotiin”, see VISK § 818 |  |  |
-| Kuningas |  overlaps more common *Kuningas* (king) | 🧑²☢ |  |
+| Kuningas |  overlaps more common *Kuningas* (king) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuningas)  |
 | kunnes |  until, sub-ordinating conjunction, “kunnes olet valmis” |  |  |
 | Kunnia |  overlaps more common *Kunnia* (honor) | 🌍🧑²☢ |  |
 | Kunnoton |  overlaps more common *Kunnoton* (nogood) | 🌍☢ |  |
@@ -1782,17 +1794,17 @@ We link to all original sources for reference.
 | Kuohari |  overlaps more common *Kuohari* (FIXME) | 🌍☢ |  |
 | Kuohu |  overlaps more common *Kuohu* (foam) | 🌍☢ |  |
 | Kuohuva |  overlaps more common *Kuohuva* (foamy) | 🌍☢ |  |
-| Kuokka |  overlaps more common *Kuokka* (plow) | 🌍🧑²☢ |  |
+| Kuokka |  overlaps more common *Kuokka* (plow) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuokka)  |
 | Kuolema |  overlaps more common *Kuolema* (death) | 🌍☢ |  |
 | Kuolinpaikka |  overlaps more common *Kuolinpaikka* (place of death) | 🌍☢ |  |
 | Kuolio |  overlaps more common *Kuolio* (necrosy) | 🌍☢ |  |
 | Kuoma |  overlaps more common *Kuoma* (pal) | 🌍☢ |  |
 | Kuona |  overlaps more common *Kuona* (crap) | 🌍☢ |  |
 | Kuontalo |  overlaps more common *Kuontalo* (hairs) | 🌍☢ |  |
-| Kuoppa |  overlaps more common *Kuoppa* (hole) | 🌍🧑²☢ |  |
+| Kuoppa |  overlaps more common *Kuoppa* (hole) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuoppa)  |
 | Kuopus |  overlaps more common *Kuopus* (youngest child) | 🧑²☢ |  |
-| Kupari |  overlaps more common *Kupari* (copper) | 🌍🧑²☢ |  |
-| Kuparinen |  overlaps more common *Kuparinen* (coppery) | 🌍🧑²☢ |  |
+| Kupari |  overlaps more common *Kupari* (copper) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kupari)  |
+| Kuparinen |  overlaps more common *Kuparinen* (coppery) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuparinen)  |
 | Kuperkeikka |  overlaps more common *Kuperkeikka* (wheelbarrow) | 🌍☢ |  |
 | Kuppa |  overlaps more common *Kuppa* (chlamydia) | 🌍☢ |  |
 | Kuppari |  overlaps more common *Kuppari* (FIXME) | 🌍☢ |  |
@@ -1801,16 +1813,16 @@ We link to all original sources for reference.
 | Kura |  overlaps more common *Kura* (dirt) | 🌍☢ |  |
 | Kuri |  overlaps more common *Kuri* (discipline) | 🌍☢ |  |
 | Kuristin |  overlaps more common *Kuristin* (FIXME) | 🌍☢ |  |
-| Kurjenmiekka |  overlaps more common *Kurjenmiekka* (flower) | 🌍☢ |  |
+| Kurjenmiekka |  overlaps more common *Kurjenmiekka* (flower) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kurjenmiekka)  |
 | Kurjennokka |  overlaps more common *Kurjennokka* (FIXME) | 🌍☢ |  |
 | Kurjenpolvi |  overlaps more common *Kurjenpolvi* (FIXME) | 🌍☢ |  |
 | Kurki |  overlaps more common *Kurki* (crane) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kurki) [enwikt](https://en.wiktionary.org/wiki/Kurki)  |
 | Kurkku |  overlaps more common *Kurkku* (throat, cucumber) | 🌍🧑²☢ |  |
-| Kurko |  overlaps more common *Kurko* (king) | 🧑²☢ |  |
+| Kurko |  overlaps more common *Kurko* (king) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kurko)  |
 | Kurssi |  overlaps more common *Kurssi* (course) | 🌍☢ |  |
 | Kurttu |  overlaps more common *Kurttu* (FIXME) | 🌍☢ |  |
-| Kurvi |  overlaps more common *Kurvi* (curve) | 🌍☢ |  |
-| Kurvinen |  overlaps more common *Kurvinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kurvinen)  |
+| Kurvi |  overlaps more common *Kurvi* (curve) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kurvi)  |
+| Kurvinen |  overlaps more common *Kurvinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kurvinen) [enwikt](https://en.wiktionary.org/wiki/Kurvinen)  |
 | Kusettaja |  overlaps more common *Kusettaja* (scammer) | 🌍☢ |  |
 | Kusiainen |  overlaps more common *Kusiainen* (fireant) | 🌍☢ |  |
 | Kusiaispesä |  overlaps more common *Kusiaispesä* (fireants’ nest) | 🌍☢ |  |
@@ -1834,23 +1846,27 @@ We link to all original sources for reference.
 | Kuuru |  overlaps more common *Kuuru* (FIXME) | 🌍🧑²☢ |  |
 | Kuusama |  overlaps more common *Kuusama* (FIXME) | 🌍☢ |  |
 | Kuusenhako |  overlaps more common *Kuusenhako* (FIXME) | 🌍☢ |  |
-| Kuusi |  overlaps more common *Kuusi* (six, fir) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kuusi)  |
+| Kuusi |  overlaps more common *Kuusi* (six, fir) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kuusi) [enwikt](https://en.wiktionary.org/wiki/Kuusi)  |
 | Kuusikanta |  overlaps more common *Kuusikanta* (hexagon) | 🌍☢ |  |
-| Kuusikko |  overlaps more common *Kuusikko* (group of six) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kuusikko)  |
+| Kuusikko |  overlaps more common *Kuusikko* (group of six) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kuusikko) [enwikt](https://en.wiktionary.org/wiki/Kuusikko)  |
+| kuusikymmentä |  sixty |  |  |
 | Kuusimetsä |  overlaps more common *Kuusimetsä* (pine forest) | 🌍☢ |  |
 | Kuusinen |  overlaps more common *Kuusinen* (six) | 🌍🧑²☢ |  |
-| Kuusio |  overlaps more common *Kuusio* (six room apt.) | 🌍🧑²☢ |  |
+| Kuusio |  overlaps more common *Kuusio* (six room apt.) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuusio)  |
+| kuusisataa |  six hundreds |  |  |
 | Kuusisto |  overlaps more common *Kuusisto* (pines) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuusisto)  |
+| kuusitoista |  sixteen |  |  |
+| kuusituhatta |  six thousands |  |  |
 | Kuutamo |  overlaps more common *Kuutamo* (moon) | 🌍☢ |  |
 | Kuutonen |  overlaps more common *Kuutonen* (six) | 🌍org☢📺 |  |
-| Kuutti |  overlaps more common *Kuutti* (baby seal) | 🌍🧑²☢ |  |
-| Kuva |  overlaps more common *Kuva* (picture) | 🌍☢ |  |
+| Kuutti |  overlaps more common *Kuutti* (baby seal) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kuutti)  |
+| Kuva |  overlaps more common *Kuva* (picture) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kuva)  |
 | Kuvaaja |  overlaps more common *Kuvaaja* (graph) | 🧑²☢ |  |
 | Kuvasto |  overlaps more common *Kuvasto* (catalogue) | org☢ |  |
 | Kuvatus |  overlaps more common *Kuvatus* (ugly thing) | org☢ |  |
 | kuvi |  This noun means a Dravidian language spoken in southeast India (FinnWordNet) but overlaps forms of very common *kuva* (picture). |  | [finnwn](https://sanat.csc.fi/w/index.php?search=kuvi)  |
 | Kylkiäinen |  overlaps more common *Kylkiäinen* (freebie) | 🌍☢ |  |
-| Kylmä |  overlaps more common *Kylmä* (cold) | 🌍☢ |  |
+| Kylmä |  overlaps more common *Kylmä* (cold) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kylmä)  |
 | Kylmäsilta |  overlaps more common *Kylmäsilta* (cold bridge) | 🌍☢ |  |
 | Kylväjä |  overlaps more common *Kylväjä* (planter) | 🌍☢ |  |
 | Kylvö |  overlaps more common *Kylvö* (planting) | 🌍☢ |  |
@@ -1860,7 +1876,7 @@ We link to all original sources for reference.
 | Kynnys |  overlaps more common *Kynnys* (step) | org☢ |  |
 | Kynnäs |  overlaps more common *Kynnäs* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kynnäs)  |
 | Kynsi |  overlaps more common *Kynsi* (nail) | 🌍🧑²☢ |  |
-| Kyntäjä |  overlaps more common *Kyntäjä* (plower) | 🌍🧑²☢ |  |
+| Kyntäjä |  overlaps more common *Kyntäjä* (plower) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kyntäjä)  |
 | Kyntö |  overlaps more common *Kyntö* (plowing) | 🌍☢ |  |
 | Kypäri |  overlaps more common *Kypäri* (FIXME) | 🌍☢ |  |
 | Kypärä |  overlaps more common *Kypärä* (helmet) | 🌍☢ |  |
@@ -1869,13 +1885,13 @@ We link to all original sources for reference.
 | Kyykkä |  overlaps more common *Kyykkä* (petanque) | 🌍☢ |  |
 | Kyynärä |  overlaps more common *Kyynärä* (foot) | 🌍☢ |  |
 | Kähmä |  overlaps more common *Kähmä* (FIXME) | 🌍☢ |  |
-| Kähärä |  overlaps more common *Kähärä* (FIXME) | 🌍☢ |  |
+| Kähärä |  overlaps more common *Kähärä* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kähärä)  |
 | Kähäräinen |  overlaps more common *Kähäräinen* (FIXME) | 🧑²☢ |  |
-| Käki |  overlaps more common *Käki* (woodpecker) | 🌍🧑²☢ |  |
+| Käki |  overlaps more common *Käki* (woodpecker) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Käki)  |
 | Käkkyrä |  overlaps more common *Käkkyrä* (FIXME) | 🌍☢ |  |
 | Käkkärä |  overlaps more common *Käkkärä* (FIXME) | 🌍☢ |  |
 | Käkkärämänty |  overlaps more common *Käkkärämänty* (FIXME) | 🌍☢ |  |
-| Käkönen |  overlaps more common *Käkönen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Käkönen)  |
+| Käkönen |  overlaps more common *Käkönen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Käkönen) [enwikt](https://en.wiktionary.org/wiki/Käkönen)  |
 | Kämppä |  overlaps more common *Kämppä* (house) | 🌍☢ |  |
 | Känni |  overlaps more common *Känni* (inebriation) | 🌍☢ |  |
 | Känninen |  overlaps more common *Känninen* (drunk) | 🌍🧑²☢ |  |
@@ -1887,8 +1903,8 @@ We link to all original sources for reference.
 | Käpylintu |  overlaps more common *Käpylintu* (pineconebird) | 🌍☢ |  |
 | Käpälä |  overlaps more common *Käpälä* (paw) | 🌍☢ |  |
 | Käpälämäki |  overlaps more common *Käpälämäki* (elope) | 🌍☢ |  |
-| Kärki |  overlaps more common *Kärki* (head) | 🌍🧑²☢ |  |
-| Kärkäs |  overlaps more common *Kärkäs* (eager) | 🧑²☢ |  |
+| Kärki |  overlaps more common *Kärki* (head) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kärki)  |
+| Kärkäs |  overlaps more common *Kärkäs* (eager) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kärkäs)  |
 | Kärppä |  overlaps more common *Kärppä* (badger) | 🌍🧑²☢ |  |
 | Kärpänen |  overlaps more common *Kärpänen* (fly) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Kärpänen)  |
 | Kärri |  overlaps more common *Kärri* (cart) | 🌍☢ |  |
@@ -1900,22 +1916,22 @@ We link to all original sources for reference.
 | käsiksi |  usually seen as adverb (intervene), but can be analysed as translative of the noun *käsi* (hand) |  |  |
 | käsin |  manually “by hand”, as opposed to automatically "tee se käsin" |  |  |
 | käsin |  from smwh. ablative complement “mereltä käsin” |  |  |
-| Käsivarsi |  overlaps more common *Käsivarsi* (arm) | 🌍☢ |  |
+| Käsivarsi |  overlaps more common *Käsivarsi* (arm) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Käsivarsi)  |
 | Kätevä |  overlaps more common *Kätevä* (handy) | 🌍☢ |  |
 | Kätkö |  overlaps more common *Kätkö* (hideout) | 🌍☢ |  |
 | Käymälä |  overlaps more common *Käymälä* (toilet) | 🌍☢ |  |
-| Käyrä |  overlaps more common *Käyrä* (bent) | 🌍🧑²☢ |  |
+| Käyrä |  overlaps more common *Käyrä* (bent) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Käyrä)  |
 | Käytävä |  overlaps more common *Käytävä* (hallway) | 🌍☢ |  |
 | Kääkkä |  overlaps more common *Kääkkä* (FIXME) | 🌍☢ |  |
 | Käänne |  overlaps more common *Käänne* (turn) | 🌍☢ |  |
 | Käännekohta |  overlaps more common *Käännekohta* (turning point) | 🌍☢ |  |
 | Kääntöpiiri |  overlaps more common *Kääntöpiiri* (tropic) | org☢ |  |
-| Kääpä |  overlaps more common *Kääpä* (FIXME) | 🌍🧑²☢ |  |
-| Kääriä |  overlaps more common *Kääriä* (roll) | 🌍🧑²☢ |  |
+| Kääpä |  overlaps more common *Kääpä* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kääpä)  |
+| Kääriä |  overlaps more common *Kääriä* (roll) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Kääriä)  |
 | Kääriäinen |  overlaps more common *Kääriäinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Kääriäinen) [enwikt](https://en.wiktionary.org/wiki/Kääriäinen)  |
 | Käärmekuusi |  overlaps more common *Käärmekuusi* (snake fir) | 🌍☢ |  |
 | Kökkö |  overlaps more common *Kökkö* (clunky) | 🌍☢ |  |
-| Köngäs |  overlaps more common *Köngäs* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Köngäs)  |
+| Köngäs |  overlaps more common *Köngäs* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Köngäs) [enwikt](https://en.wiktionary.org/wiki/Köngäs)  |
 | Köntti |  overlaps more common *Köntti* (clump) | 🌍☢ |  |
 | Körtti |  overlaps more common *Körtti* (heathen) | 🌍☢ |  |
 | Köyhä |  overlaps more common *Köyhä* (poor) | 🌍☢ |  |
@@ -1923,23 +1939,23 @@ We link to all original sources for reference.
 | Köykky |  overlaps more common *Köykky* (FIXME) | 🌍☢ |  |
 | Köyry |  overlaps more common *Köyry* (FIXME) | 🌍☢ |  |
 | Köyryselkä |  overlaps more common *Köyryselkä* (FIXME) | 🌍☢ |  |
-| Laaja |  overlaps more common *Laaja* (wide) | 🌍🧑²☢ |  |
+| Laaja |  overlaps more common *Laaja* (wide) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Laaja)  |
 | Laaka |  overlaps more common *Laaka* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Laaka)  |
 | Laakeri |  overlaps more common *Laakeri* (FIXME) | 🌍☢ |  |
 | Laakerikivi |  overlaps more common *Laakerikivi* (FIXME) | 🌍☢ |  |
 | Laakso |  overlaps more common *Laakso* (valley) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Laakso)  |
 | Laama |  overlaps more common *Laama* (llama) | 🌍☢ |  |
 | Laamanni |  overlaps more common *Laamanni* (layman) | 🌍☢ |  |
-| Laari |  overlaps more common *Laari* (lair) | 🌍🧑²☢ |  |
+| Laari |  overlaps more common *Laari* (lair) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Laari)  |
 | Laatta |  overlaps more common *Laatta* (slab) | 🌍☢ |  |
 | Laattakivi |  overlaps more common *Laattakivi* (slabstone) | 🌍☢ |  |
-| Laatu |  overlaps more common *Laatu* (quality) | 🌍🧑²☢ |  |
+| Laatu |  overlaps more common *Laatu* (quality) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Laatu)  |
 | Laava |  overlaps more common *Laava* (lava) | 🌍☢ |  |
 | Laavajärvi |  overlaps more common *Laavajärvi* (lava lake) | 🌍☢ |  |
 | Laavu |  overlaps more common *Laavu* (FIXME) | 🌍☢ |  |
 | Lady |  overlaps more common *Lady* (lady) | 🧑¹☢ |  |
 | Lahdeke |  overlaps more common *Lahdeke* (FIXME) | 🌍☢ |  |
-| Lahdelma |  overlaps more common *Lahdelma* (FIXME) | 🌍🧑²☢ |  |
+| Lahdelma |  overlaps more common *Lahdelma* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lahdelma)  |
 | Lahdenpohja |  overlaps more common *Lahdenpohja* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lahdenpohja)  |
 | Lahja |  overlaps more common *Lahja* (gift) | 🌍🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lahja) [enwikt](https://en.wiktionary.org/wiki/Lahja)  |
 | Lahje |  overlaps more common *Lahje* (pant) | 🌍☢ |  |
@@ -1957,14 +1973,14 @@ We link to all original sources for reference.
 | Laita |  overlaps more common *Laita* (side) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Laita)  |
 | Laitama |  overlaps more common *Laitama* (side) | 🌍☢ |  |
 | Laitimmainen |  overlaps more common *Laitimmainen* (sidemost) | 🌍☢ |  |
-| Laituri |  overlaps more common *Laituri* (jetty) | 🌍☢ |  |
+| Laituri |  overlaps more common *Laituri* (jetty) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Laituri)  |
 | Laivaranta |  overlaps more common *Laivaranta* (ship coast) | 🌍☢ |  |
 | Lakea |  overlaps more common *Lakea* (flat) | 🌍☢ |  |
 | Lakeinen |  overlaps more common *Lakeinen* (FIXME) | 🌍☢ |  |
 | Lakeus |  overlaps more common *Lakeus* (flatness) | 🧑²☢ |  |
 | Laki |  overlaps more common *Laki* (law) | 🌍☢ |  |
-| Lakka |  overlaps more common *Lakka* (cloudberry) | 🌍🧑²☢ |  |
-| Lakkapää |  overlaps more common *Lakkapää* (FIXME) | 🌍🧑²org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lakkapää)  |
+| Lakka |  overlaps more common *Lakka* (cloudberry) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lakka)  |
+| Lakkapää |  overlaps more common *Lakkapää* (FIXME) | 🌍🧑²org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lakkapää) [enwikt](https://en.wiktionary.org/wiki/Lakkapää)  |
 | Lakkari |  overlaps more common *Lakkari* (FIXME) | 🌍☢ |  |
 | Lakki |  overlaps more common *Lakki* (hat) | 🌍☢ |  |
 | Lakko |  overlaps more common *Lakko* (strike) | 🌍☢ |  |
@@ -1972,21 +1988,21 @@ We link to all original sources for reference.
 | Lammastarha |  overlaps more common *Lammastarha* (FIXME) | 🌍☢ |  |
 | Lammikko |  overlaps more common *Lammikko* (pond) | 🌍☢ |  |
 | Lampaansaparo |  overlaps more common *Lampaansaparo* (sheeptail) | 🌍☢ |  |
-| Lampi |  overlaps more common *Lampi* (pond) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lampi)  |
-| Lamppu |  overlaps more common *Lamppu* (lamp) | 🧑²☢ |  |
+| Lampi |  overlaps more common *Lampi* (pond) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lampi) [enwikt](https://en.wiktionary.org/wiki/Lampi)  |
+| Lamppu |  overlaps more common *Lamppu* (lamp) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lamppu)  |
 | Lampuri |  overlaps more common *Lampuri* (FIXME) | 🌍☢ |  |
 | Lana |  overlaps more common *Lana* (FIXME) | 🌍☢ |  |
 | Lanka |  overlaps more common *Lanka* (yarn) | 🌍☢ |  |
 | Lankku |  overlaps more common *Lankku* (plank) | 🌍☢ |  |
 | Lanko |  overlaps more common *Lanko* (brother-in-law) | 🌍☢ |  |
-| Lanne |  overlaps more common *Lanne* (waist) | 🌍🧑²☢ |  |
+| Lanne |  overlaps more common *Lanne* (waist) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lanne)  |
 | Lanssi |  overlaps more common *Lanssi* (lance) | 🌍☢ |  |
 | Lantatunkio |  overlaps more common *Lantatunkio* (shit compost) | 🌍☢ |  |
 | Lantinki |  overlaps more common *Lantinki* (FIXME) | 🌍☢ |  |
-| Lapinkylä |  overlaps more common *Lapinkylä* (FIXME) | 🌍☢ |  |
+| Lapinkylä |  overlaps more common *Lapinkylä* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lapinkylä)  |
 | Lapio |  overlaps more common *Lapio* (shovel) | 🌍☢ |  |
 | Lappalainen |  overlaps more common *Lappalainen* (lapp) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lappalainen)  |
-| Lappi |  overlaps more common *Lappi* (lapland) | 🌍🧑²🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lappi) [enwikt](https://en.wiktionary.org/wiki/Lappi)  |
+| Lappi |  overlaps more common *Lappi* (lapland) | 🌍🧑²🧑¹ | [fiwikt](https://fi.wiktionary.org/wiki/Lappi) [enwikt](https://en.wiktionary.org/wiki/Lappi)  |
 | Lappo |  overlaps more common *Lappo* (FIXME) | 🌍☢ |  |
 | Lappunen |  overlaps more common *Lappunen* (post-it note) | 🌍☢ |  |
 | Larva |  overlaps more common *Larva* (FIXME) | 🌍☢ |  |
@@ -1995,22 +2011,22 @@ We link to all original sources for reference.
 | Lasku |  overlaps more common *Lasku* (bill) | 🌍☢ |  |
 | lassa |  a fever virus (lassa), causes some problems with compoundings | ☢ |  |
 | Lastu |  overlaps more common *Lastu* (chip) | 🌍☢ |  |
-| Lastunen |  overlaps more common *Lastunen* (FIXME) | 🌍🧑²☢ |  |
+| Lastunen |  overlaps more common *Lastunen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lastunen)  |
 | Lati |  overlaps more common *Lati* (FIXME) | 🧑¹☢ |  |
 | Latomeri |  overlaps more common *Latomeri* (FIXME) | 🌍☢ |  |
 | Latu |  overlaps more common *Latu* (ski track) | 🌍☢ |  |
 | Laturi |  overlaps more common *Laturi* (charger) | 🌍☢ |  |
-| Latva |  overlaps more common *Latva* (treetop) | 🌍🧑²☢ |  |
+| Latva |  overlaps more common *Latva* (treetop) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Latva)  |
 | Lauantainen |  overlaps more common *Lauantainen* (FIXME) | 🌍☢ |  |
-| Lauha |  overlaps more common *Lauha* (mild) | 🌍🧑²🧑¹☢♀ |  |
+| Lauha |  overlaps more common *Lauha* (mild) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Lauha)  |
 | Lauhkea |  overlaps more common *Lauhkea* (mild) | 🌍☢ |  |
-| Laukka |  overlaps more common *Laukka* (trot) | 🌍🧑²☢ |  |
+| Laukka |  overlaps more common *Laukka* (trot) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Laukka)  |
 | Laukku |  overlaps more common *Laukku* (bag) | 🌍☢ |  |
-| Laulaja |  overlaps more common *Laulaja* (singer) | 🌍🧑²☢ |  |
+| Laulaja |  overlaps more common *Laulaja* (singer) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Laulaja)  |
 | Laulu |  overlaps more common *Laulu* (song) | 🌍☢ |  |
 | Lauma |  overlaps more common *Lauma* (herd) | 🌍☢ |  |
 | Lautakatto |  overlaps more common *Lautakatto* (wood ceiling) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lautakatto)  |
-| Lautanen |  overlaps more common *Lautanen* (plate) | 🌍🧑²☢ |  |
+| Lautanen |  overlaps more common *Lautanen* (plate) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lautanen)  |
 | Lauttasilta |  overlaps more common *Lauttasilta* (ferrybbridge) | 🌍☢ |  |
 | Lava |  overlaps very common *lava* (stage) | 🌍☢ |  |
 | Lavaste |  overlaps more common *Lavaste* (requisite) | 🧑²☢ |  |
@@ -2018,9 +2034,9 @@ We link to all original sources for reference.
 | Lavetti |  overlaps more common *Lavetti* (FIXME) | 🌍☢ |  |
 | Lehdistö |  overlaps more common *Lehdistö* (press) | 🌍🧑²☢ |  |
 | Lehmihaka |  overlaps more common *Lehmihaka* (FIXME) | 🌍☢ |  |
-| Lehmus |  overlaps more common *Lehmus* (tree) | 🧑²☢ |  |
+| Lehmus |  overlaps more common *Lehmus* (tree) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lehmus)  |
 | Lehmä |  overlaps more common *Lehmä* (cow) | 🌍☢ |  |
-| Lehmänen |  overlaps more common *Lehmänen* (FIXME) | 🌍☢ |  |
+| Lehmänen |  overlaps more common *Lehmänen* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lehmänen)  |
 | Lehteri |  overlaps more common *Lehteri* (FIXME) | 🌍☢ |  |
 | Lehti |  overlaps more common *Lehti* (leaf) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehti) [enwikt](https://en.wiktionary.org/wiki/Lehti)  |
 | Lehtikanta |  overlaps more common *Lehtikanta* (FIXME) | 🌍☢ |  |
@@ -2028,10 +2044,10 @@ We link to all original sources for reference.
 | Lehtimaja |  overlaps more common *Lehtimaja* (treehouse) | 🌍🧑²☢ |  |
 | Lehtinen |  overlaps more common *Lehtinen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lehtinen)  |
 | Lehtipuu |  overlaps more common *Lehtipuu* (leafy tree) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehtipuu)  |
-| Lehtiö |  overlaps more common *Lehtiö* (leaflet) | 🌍☢ |  |
+| Lehtiö |  overlaps more common *Lehtiö* (leaflet) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Lehtiö)  |
 | lehtiö-pc |  notebook–Personal Computer |  |
 | Lehto |  overlaps more common *Lehto* (FIXME) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Lehto)  |
-| Lehtomaa |  overlaps more common *Lehtomaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehtomaa)  |
+| Lehtomaa |  overlaps more common *Lehtomaa* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lehtomaa) [enwikt](https://en.wiktionary.org/wiki/Lehtomaa)  |
 | Lehtoniitty |  overlaps more common *Lehtoniitty* (FIXME) | 🌍☢ |  |
 | Lehvistö |  overlaps more common *Lehvistö* (FIXME) | 🌍☢ |  |
 | Lei |  overlaps more common *Lei* (lei) | 🧑¹☢ |  |
@@ -2041,30 +2057,30 @@ We link to all original sources for reference.
 | Leikkaa |  overlaps forms of very common *leikata* (to cut). | 🌍 |  |
 | Leikkaamaton |  overlaps more common *Leikkaamaton* (uncut) | 🌍☢ |  |
 | Leikkuu |  overlaps more common *Leikkuu* (cutting) | 🌍☢ |  |
-| Leimu |  overlaps more common *Leimu* (flame) | 🌍☢ |  |
+| Leimu |  overlaps more common *Leimu* (flame) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Leimu)  |
 | Leipoja |  overlaps more common *Leipoja* (baker) | 🌍☢ |  |
 | Leiri |  overlaps more common *Leiri* (camp) | 🌍🧑²☢ |  |
-| Leiviskä |  overlaps more common *Leiviskä* (FIXME) | 🌍🧑²☢ |  |
-| Leivonen |  overlaps more common *Leivonen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Leivonen)  |
+| Leiviskä |  overlaps more common *Leiviskä* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Leiviskä)  |
+| Leivonen |  overlaps more common *Leivonen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Leivonen) [enwikt](https://en.wiktionary.org/wiki/Leivonen)  |
 | Leivätön |  overlaps more common *Leivätön* (breadless) | 🌍☢ |  |
 | Leka |  overlaps more common *Leka* (hammer) | 🧑²☢ |  |
 | Lekkeri |  overlaps more common *Lekkeri* (FIXME) | 🌍☢ |  |
 | Lelu |  overlaps more common *Lelu* (toy) | 🌍☢ |  |
 | Lemmikki |  overlaps more common *Lemmikki* (pet) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Lemmikki)  |
-| Lemmitty |  overlaps more common *Lemmitty* (loved) | 🌍🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Lemmitty)  |
+| Lemmitty |  overlaps more common *Lemmitty* (loved) | 🌍🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lemmitty) [enwikt](https://en.wiktionary.org/wiki/Lemmitty)  |
 | Lempeä |  overlaps more common *Lempeä* (nice) | 🌍☢ |  |
 | Lempi |  overlaps more common *Lempi* (love) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Lempi) [enwikt](https://en.wiktionary.org/wiki/Lempi)  |
 | Lemu |  overlaps more common *Lemu* (smell) | 🌍☢ |  |
-| Lento |  overlaps more common *Lento* (flight) | 🌍🧑²☢ |  |
+| Lento |  overlaps more common *Lento* (flight) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lento)  |
 | Lentokenttä |  overlaps more common *Lentokenttä* (airport) | 🌍☢ |  |
 | Lentomäki |  overlaps more common *Lentomäki* (airhill) | 🌍☢ |  |
 | Lepakko |  overlaps more common *Lepakko* (bat) | 🌍☢ |  |
-| Lepikko |  overlaps more common *Lepikko* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepikko)  |
+| Lepikko |  overlaps more common *Lepikko* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepikko) [enwikt](https://en.wiktionary.org/wiki/Lepikko)  |
 | Lepikkö |  overlaps more common *Lepikkö* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepikkö)  |
 | Lepistö |  overlaps more common *Lepistö* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lepistö)  |
-| Lepo |  overlaps more common *Lepo* (rest) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepo)  |
+| Lepo |  overlaps more common *Lepo* (rest) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lepo) [enwikt](https://en.wiktionary.org/wiki/Lepo)  |
 | Lepopaikka |  overlaps more common *Lepopaikka* (resting place) | 🌍☢ |  |
-| Leppä |  overlaps more common *Leppä* (tree) | 🌍🧑²☢ |  |
+| Leppä |  overlaps more common *Leppä* (tree) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Leppä)  |
 | Leski |  overlaps more common *Leski* (widow) | 🌍☢ |  |
 | Letku |  overlaps more common *Letku* (pipe) | 🌍🧑²☢ |  |
 | Letto |  overlaps more common *Letto* (swamp) | 🌍🧑²☢ |  |
@@ -2076,8 +2092,8 @@ We link to all original sources for reference.
 | Levike |  overlaps more common *Levike* (FIXME) | 🌍☢ |  |
 | Levikintarkastus |  overlaps more common *Levikintarkastus* (FIXME) | org☢ |  |
 | Levoton |  overlaps more common *Levoton* (restless) | 🌍☢ |  |
-| Levy |  overlaps more common *Levy* (plate) | 🧑²☢ |  |
-| Levä |  overlaps more common *Levä* (seaweed) | 🌍🧑²☢ |  |
+| Levy |  overlaps more common *Levy* (plate) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Levy)  |
+| Levä |  overlaps more common *Levä* (seaweed) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Levä)  |
 | Leväkkö |  overlaps more common *Leväkkö* (FIXME) | 🌍☢ |  |
 | Liehuva |  overlaps more common *Liehuva* (FIXME) | 🌍☢ |  |
 | Lieju |  overlaps more common *Lieju* (sludge) | 🌍☢ |  |
@@ -2098,25 +2114,25 @@ We link to all original sources for reference.
 | Liivi |  overlaps more common *Liivi* (vest) | 🧑¹☢ |  |
 | Likainen |  overlaps more common *Likainen* (dirty) | 🌍☢ |  |
 | Likavesi |  overlaps more common *Likavesi* (dirtwater) | 🌍☢ |  |
-| Lila |  overlaps more common *Lila* (lila) | 🧑¹☢♀ |  |
+| Lila |  overlaps more common *Lila* (lila) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Lila)  |
 | Lillukka |  overlaps more common *Lillukka* (berry) | 🌍☢ |  |
 | Lima |  overlaps more common *Lima* (slime) | 🌍☢ |  |
 | Limakko |  overlaps more common *Limakko* (FIXME) | 🌍☢ |  |
 | Limppu |  overlaps more common *Limppu* (bread) | 🌍☢ |  |
-| Linja |  overlaps more common *Linja* (line) | 🌍☢ |  |
+| Linja |  overlaps more common *Linja* (line) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Linja)  |
 | Linkki |  overlaps more common *Linkki* (link) | 🌍org☢ |  |
 | Linkku |  overlaps more common *Linkku* (bus) | 🌍☢ |  |
-| Linko |  overlaps more common *Linko* (sling) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linko)  |
+| Linko |  overlaps more common *Linko* (sling) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linko) [enwikt](https://en.wiktionary.org/wiki/Linko)  |
 | Linkomies |  overlaps more common *Linkomies* (slingman) | 🧑²☢ |  |
 | Linna |  overlaps more common *Linna* (castle) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linna) [enwikt](https://en.wiktionary.org/wiki/Linna)  |
-| Linnavuori |  overlaps more common *Linnavuori* (castle mountain) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linnavuori)  |
+| Linnavuori |  overlaps more common *Linnavuori* (castle mountain) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Linnavuori) [enwikt](https://en.wiktionary.org/wiki/Linnavuori)  |
 | Linnunlaulu |  overlaps more common *Linnunlaulu* (birdsong) | 🌍☢ |  |
 | Linnunrata |  overlaps more common *Linnunrata* (milky way) | ⁈☢ | [enwikt](https://en.wiktionary.org/wiki/Linnunrata)  |
-| Lintu |  overlaps more common *Lintu* (bird) | 🌍🧑²☢ |  |
+| Lintu |  overlaps more common *Lintu* (bird) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lintu)  |
 | Lintujärvi |  overlaps more common *Lintujärvi* (birdlake) | 🌍☢ |  |
 | Lintukoto |  overlaps more common *Lintukoto* (birdhome) | 🌍☢ |  |
-| Lintula |  overlaps more common *Lintula* (birdplace) | 🌍🧑²☢ |  |
-| Lintulahti |  overlaps more common *Lintulahti* (birddove) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lintulahti)  |
+| Lintula |  overlaps more common *Lintula* (birdplace) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lintula)  |
+| Lintulahti |  overlaps more common *Lintulahti* (birddove) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lintulahti) [enwikt](https://en.wiktionary.org/wiki/Lintulahti)  |
 | Lintuluoto |  overlaps more common *Lintuluoto* (birdstone) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lintuluoto)  |
 | Lintunen |  overlaps more common *Lintunen* (birdie) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lintunen)  |
 | Lintuvuori |  overlaps more common *Lintuvuori* (birdmountain) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lintuvuori)  |
@@ -2126,7 +2142,7 @@ We link to all original sources for reference.
 | Lipidi |  overlaps more common *Lipidi* (lipid) | org☢ |  |
 | Lippa |  overlaps more common *Lippa* (cap) | 🌍☢ |  |
 | Lippi |  overlaps more common *Lippi* (FIXME) | 🌍☢ |  |
-| Lippo |  overlaps more common *Lippo* (FIXME) | 🌍🧑²☢ |  |
+| Lippo |  overlaps more common *Lippo* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lippo)  |
 | Lippu |  overlaps more common *Lippu* (flag) | 🌍🧑²🧑¹☢ |  |
 | Liro |  overlaps more common *Liro* (FIXME) | 🧑²☢ |  |
 | Lisko |  overlaps more common *Lisko* (lizard) | 🌍☢ |  |
@@ -2134,8 +2150,8 @@ We link to all original sources for reference.
 | Lisäke |  overlaps more common *Lisäke* (side) | 🌍☢ |  |
 | Liukas |  overlaps more common *Liukas* (slippery) | 🧑²☢ |  |
 | Liukumäki |  overlaps more common *Liukumäki* (slide) | 🌍☢ |  |
-| Liuska |  overlaps more common *Liuska* (slab) | 🌍🧑²☢ |  |
-| Lohi |  overlaps more common *Lohi* (salmon) | 🌍🧑²☢ |  |
+| Liuska |  overlaps more common *Liuska* (slab) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Liuska)  |
+| Lohi |  overlaps more common *Lohi* (salmon) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lohi)  |
 | Lohijoki |  overlaps more common *Lohijoki* (salmon river) | 🌍☢ |  |
 | Lohkare |  overlaps more common *Lohkare* (rock) | 🧑²☢ |  |
 | Lohko |  overlaps more common *Lohko* (section) | 🌍🧑²☢ |  |
@@ -2167,21 +2183,21 @@ We link to all original sources for reference.
 | Lumikko |  overlaps more common *Lumikko* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lumikko)  |
 | Lumme |  overlaps more common *Lumme* (FIXME) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lumme)  |
 | Lumous |  overlaps more common *Lumous* (enchantment) | 🧑²☢ |  |
-| Lunki |  overlaps more common *Lunki* (relaxed) | 🌍🧑²☢ |  |
+| Lunki |  overlaps more common *Lunki* (relaxed) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lunki)  |
 | Lunnas |  overlaps more common *Lunnas* (ransom) | 🧑²☢ |  |
 | Lunni |  overlaps more common *Lunni* (bird) | 🌍☢ |  |
 | Luo |  overlaps more common *Luo* (to nearby) | 🧑²☢ |  |
-| Luode |  overlaps more common *Luode* (northwest) | 🌍🧑²☢ |  |
+| Luode |  overlaps more common *Luode* (northwest) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Luode)  |
 | Luoja |  overlaps more common *Luoja* (creator) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Luoja)  |
 | Luokka |  overlaps more common *Luokka* (class) | 🌍☢ |  |
 | Luola |  overlaps more common *Luola* (cave) | 🌍☢ |  |
-| Luomi |  overlaps more common *Luomi* (mole) | 🌍🧑²☢ |  |
+| Luomi |  overlaps more common *Luomi* (mole) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Luomi)  |
 | Luomus |  overlaps more common *Luomus* (creation) | org☢ |  |
 | Luonnonmäki |  overlaps more common *Luonnonmäki* (natural hill) | 🌍☢ |  |
 | Luopio |  overlaps more common *Luopio* (bastard) | 🌍☢ |  |
-| Luostari |  overlaps more common *Luostari* (closter) | 🌍☢ |  |
+| Luostari |  overlaps more common *Luostari* (closter) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Luostari)  |
 | Luoteiskärki |  overlaps more common *Luoteiskärki* (northwest tip) | 🌍☢ |  |
-| Luoti |  overlaps more common *Luoti* (bullet) | 🧑²☢ |  |
+| Luoti |  overlaps more common *Luoti* (bullet) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Luoti)  |
 | Luoto |  overlaps more common *Luoto* (rock) | 🌍🧑²☢ |  |
 | Luovi |  overlaps more common *Luovi* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Luovi)  |
 | Luppi |  overlaps more common *Luppi* (FIXME) | 🌍☢ |  |
@@ -2191,17 +2207,17 @@ We link to all original sources for reference.
 | Lutukka |  overlaps more common *Lutukka* (FIXME) | 🌍☢ |  |
 | Luu |  overlaps more common *Luu* (bone) | 🌍☢ |  |
 | Luupää |  overlaps more common *Luupää* (bonehead) | 🌍☢ |  |
-| Luuri |  overlaps more common *Luuri* (phone) | 🌍☢ |  |
+| Luuri |  overlaps more common *Luuri* (phone) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Luuri)  |
 | Luuta |  overlaps more common *Luuta* (mop) | 🌍☢ |  |
 | Luutnantti |  overlaps more common *Luutnantti* (lieutenant) | 🌍☢ |  |
 | Luuttu |  overlaps more common *Luuttu* (lute) | 🌍☢ |  |
 | Luvata |  overlaps more common *Luvata* (promise) | org☢ |  |
 | Lyhty |  overlaps more common *Lyhty* (stormlight) | 🌍☢ |  |
-| Lyhykäinen |  overlaps more common *Lyhykäinen* (short) | 🧑²☢ |  |
+| Lyhykäinen |  overlaps more common *Lyhykäinen* (short) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lyhykäinen)  |
 | Lysti |  overlaps more common *Lysti* (fun) | 🌍☢ |  |
 | Lyyli |  overlaps more common *Lyyli* (lady) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Lyyli)  |
 | Lyyra |  overlaps more common *Lyyra* (lire) | 🌍🧑²☢ |  |
-| Lähde |  overlaps more common *Lähde* (source) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lähde)  |
+| Lähde |  overlaps more common *Lähde* (source) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Lähde) [enwikt](https://en.wiktionary.org/wiki/Lähde)  |
 | Lähdejärvi |  overlaps more common *Lähdejärvi* (source lake) | 🌍☢ |  |
 | Lähdet |  overlaps forms of very common *lähde* (source). | 🧑² |  |
 | Lähellä |  overlaps forms of very common *lähellä* (close). |  |
@@ -2217,13 +2233,13 @@ We link to all original sources for reference.
 | Länsipuoli |  overlaps more common *Länsipuoli* (FIXME) | 🌍☢ |  |
 | Länsiranta |  overlaps more common *Länsiranta* (westcoast) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Länsiranta)  |
 | Länsirinne |  overlaps more common *Länsirinne* (westhill) | 🌍☢ |  |
-| Läntinen |  overlaps more common *Läntinen* (western) | 🌍🧑²☢ |  |
+| Läntinen |  overlaps more common *Läntinen* (western) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Läntinen)  |
 | läpeensä |  usually seen as adverb (thoroughly), but can be analysed as a form of *läpi* (hole) |  | [fiwikt](https://fi.wiktionary.org/wiki/läpeensä)  |
 | läpi |  adposition (through) when can be attached to a genitive NP, otherwise adverb (through) |  |  |
 | Läski |  overlaps more common *Läski* (fat) | 🌍☢ |  |
 | Läskinen |  overlaps more common *Läskinen* (fatty) | 🌍☢ |  |
 | Lätsä |  overlaps more common *Lätsä* (cap) | 🌍☢ |  |
-| Lätti |  overlaps more common *Lätti* (sty) | 🌍🧑²☢ |  |
+| Lätti |  overlaps more common *Lätti* (sty) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Lätti)  |
 | Lätty |  overlaps more common *Lätty* (pancake) | 🌍☢ |  |
 | Lätäkkö |  overlaps more common *Lätäkkö* (puddle) | 🌍☢ |  |
 | Lääketeollisuus |  overlaps more common *Lääketeollisuus* (pharmaceutical industry) | org☢ |  |
@@ -2251,7 +2267,7 @@ We link to all original sources for reference.
 | Maakunta |  overlaps  very common *maakunta* (county). | org☢ |  |
 | Maakuntaliitto |  overlaps more common *Maakuntaliitto* (county union) | org☢ |  |
 | Maalaisliitto |  overlaps more common *Maalaisliitto* (farmer union) | org☢ |  |
-| Maalari |  overlaps more common *Maalari* (painter) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Maalari)  |
+| Maalari |  overlaps more common *Maalari* (painter) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Maalari) [enwikt](https://en.wiktionary.org/wiki/Maalari)  |
 | Maamies |  overlaps more common *Maamies* (countryman) | 🧑²☢ |  |
 | Maantie |  overlaps more common *Maantie* (country road) | 🌍☢ |  |
 | Maapohja |  overlaps more common *Maapohja* (ground ground) | 🌍☢ |  |
@@ -2267,18 +2283,18 @@ We link to all original sources for reference.
 | Mahla |  overlaps more common *Mahla* (tree stuff) | 🌍☢ |  |
 | Maho |  overlaps more common *Maho* (barren) | 🌍☢ |  |
 | Maila |  overlaps more common *Maila* (bat) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Maila)  |
-| Maili |  overlaps more common *Maili* (mile) | 🧑¹☢♀ |  |
+| Maili |  overlaps more common *Maili* (mile) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Maili)  |
 | Maina |  overlaps more common *Maina* (FIXME) | 🧑²☢ |  |
 | Maine |  overlaps more common *Maine* (reputation) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Maine)  |
-| Mainio |  overlaps more common *Mainio* (great) | 🌍🧑²🧑¹☢♂ |  |
+| Mainio |  overlaps more common *Mainio* (great) | 🌍🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Mainio)  |
 | Maisti |  overlaps more common *Maisti* (drunk) | 🌍☢ |  |
 | Maitoinen |  overlaps more common *Maitoinen* (milky) | 🌍☢ |  |
-| Maja |  overlaps more common *Maja* (hut) | 🌍🧑¹☢♀ |  |
+| Maja |  overlaps more common *Maja* (hut) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Maja)  |
 | Majakka |  overlaps more common *Majakka* (lighthouse) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Majakka)  |
 | Majapaikka |  overlaps more common *Majapaikka* (accom) | 🌍☢ |  |
 | Majatalo |  overlaps more common *Majatalo* (inn) | 🌍☢ |  |
-| Majava |  overlaps more common *Majava* (beaver) | 🌍🧑²☢ |  |
-| Majuri |  overlaps more common *Majuri* (major) | 🌍🧑²☢ |  |
+| Majava |  overlaps more common *Majava* (beaver) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Majava)  |
+| Majuri |  overlaps more common *Majuri* (major) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Majuri)  |
 | Makkara |  overlaps  very common *makkara* (sausage). | 🌍☢ |  |
 | Maksa |  overlaps more common *Maksa* (liver) | 🧑²☢ |  |
 | Maku |  overlaps  very common *maku* (taste). | 🌍☢ |  |
@@ -2287,7 +2303,7 @@ We link to all original sources for reference.
 | Mallasjuoma |  overlaps more common *Mallasjuoma* (malt drink) | org☢ |  |
 | Malli |  overlaps more common *Malli* (model) | 🌍☢ |  |
 | Mallinen |  overlaps more common *Mallinen* (FIXME) | 🌍🧑²☢ |  |
-| Malminen |  overlaps more common *Malminen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Malminen)  |
+| Malminen |  overlaps more common *Malminen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Malminen) [enwikt](https://en.wiktionary.org/wiki/Malminen)  |
 | Mamba |  overlaps more common *Mamba* (mamba) | 🎶☢ |  |
 | Manga |  overlaps more common *Manga* (manga) | 🌍☢ |  |
 | Mango |  overlaps more common *Mango* (mango) | org☢ |  |
@@ -2295,13 +2311,13 @@ We link to all original sources for reference.
 | Mankka |  overlaps more common *Mankka* (radio) | 🌍☢ |  |
 | Manna |  overlaps more common *Manna* (mana) | 🌍🧑¹☢ |  |
 | Manne |  overlaps more common *Manne* (gypsy) | 🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Manne)  |
-| Manner |  overlaps more common *Manner* (continent) | 🧑²☢ |  |
-| Mannermaa |  overlaps more common *Mannermaa* (continental land) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mannermaa)  |
-| Mansikka |  overlaps more common *Mansikka* (strawberry) | 🌍🧑²☢ |  |
+| Manner |  overlaps more common *Manner* (continent) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Manner)  |
+| Mannermaa |  overlaps more common *Mannermaa* (continental land) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mannermaa) [enwikt](https://en.wiktionary.org/wiki/Mannermaa)  |
+| Mansikka |  overlaps more common *Mansikka* (strawberry) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mansikka)  |
 | Mansikkamaa |  overlaps more common *Mansikkamaa* (strawberry land) | 🌍🧑²☢ |  |
 | Mansikkapelto |  overlaps more common *Mansikkapelto* (stawberry field) | 🌍☢ |  |
 | Manteli |  overlaps more common *Manteli* (almond) | 🌍☢ |  |
-| Mantere |  overlaps more common *Mantere* (continent) | 🌍🧑²☢ |  |
+| Mantere |  overlaps more common *Mantere* (continent) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mantere)  |
 | Mantu |  overlaps more common *Mantu* (lands) | 🧑²☢ |  |
 | Marakatti |  overlaps more common *Marakatti* (chimpanzee) | 🌍☢ |  |
 | Marina |  overlaps more common *Marina* (whine) | 🌍🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Marina)  |
@@ -2313,15 +2329,15 @@ We link to all original sources for reference.
 | Massa |  overlaps more common *Massa* (mass) | 🌍🧑²☢ |  |
 | Masto |  overlaps more common *Masto* (mast) | 🌍☢ |  |
 | Masu |  overlaps more common *Masu* (tummy) | 🌍☢ |  |
-| Matala |  overlaps more common *Matala* (low) | 🌍🧑²☢ |  |
+| Matala |  overlaps more common *Matala* (low) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Matala)  |
 | Matalainen |  overlaps more common *Matalainen* (FIXME) | 🌍☢ |  |
 | Matami |  overlaps more common *Matami* (madame) | 🌍☢ |  |
-| Matikka |  overlaps more common *Matikka* (fish) | 🌍🧑²☢ |  |
+| Matikka |  overlaps more common *Matikka* (fish) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Matikka)  |
 | Matka |  overlaps  very common *matka* (trip). | 🌍☢ |  |
 | Mato |  overlaps more common *Mato* (worm) | 🧑²☢ |  |
 | Matonen |  overlaps more common *Matonen* (worm) | 🌍☢ |  |
 | Matroona |  overlaps more common *Matroona* (matron) | 🧑¹☢ |  |
-| Matsi |  overlaps more common *Matsi* (match) | 🌍☢ |  |
+| Matsi |  overlaps more common *Matsi* (match) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Matsi)  |
 | Maustaja |  overlaps more common *Maustaja* (spicer) | org☢ |  |
 | Media |  overlaps more common *Media* (media) | org☢ |  |
 | media-pc |  Personal Computer |  |  |
@@ -2330,16 +2346,16 @@ We link to all original sources for reference.
 | Mei |  overlaps forms of very common *me* (we). | 🧑² |  |
 | Meijeri |  overlaps more common *Meijeri* (milk factory) | 🌍☢ |  |
 | Meininki |  overlaps more common *Meininki* (happening) | 🌍☢ |  |
-| Mela |  overlaps more common *Mela* (oar) | 🧑²org☢ |  |
+| Mela |  overlaps more common *Mela* (oar) | 🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Mela)  |
 | Mellakka |  overlaps more common *Mellakka* (riot) | 🌍☢ |  |
-| Melto |  overlaps more common *Melto* (FIXME) | 🌍🧑²☢ |  |
+| Melto |  overlaps more common *Melto* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Melto)  |
 | Menolippu |  overlaps more common *Menolippu* (ticket) | org☢ |  |
 | Merenlahti |  overlaps more common *Merenlahti* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Merenlahti)  |
 | Merenmies |  overlaps more common *Merenmies* (seaman) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Merenmies)  |
 | Merenranta |  overlaps more common *Merenranta* (seacoast) | 🌍☢ |  |
 | Merensaari |  overlaps more common *Merensaari* (sea island) | 🌍☢ |  |
 | Merenselkä |  overlaps more common *Merenselkä* (seaback) | 🌍☢ |  |
-| Meri |  overlaps more common *Meri* (sea) | 🌍🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Meri)  |
+| Meri |  overlaps more common *Meri* (sea) | 🌍🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Meri) [enwikt](https://en.wiktionary.org/wiki/Meri)  |
 | Meridiaani |  overlaps more common *Meridiaani* (meridian) | org☢ |  |
 | Merihiekka |  overlaps more common *Merihiekka* (sea sand) | 🌍☢ |  |
 | Merihirviö |  overlaps more common *Merihirviö* (sea monster) | 🌍☢ |  |
@@ -2347,17 +2363,17 @@ We link to all original sources for reference.
 | Merisatama |  overlaps more common *Merisatama* (sea docks) | 🌍☢ |  |
 | Meritie |  overlaps more common *Meritie* (sea road) | 🌍☢ |  |
 | Merituuli |  overlaps more common *Merituuli* (sea wind) | 🧑¹☢♀ |  |
-| Merivirta |  overlaps more common *Merivirta* (sea stream) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Merivirta)  |
+| Merivirta |  overlaps more common *Merivirta* (sea stream) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Merivirta) [enwikt](https://en.wiktionary.org/wiki/Merivirta)  |
 | Mesikämmen |  overlaps more common *Mesikämmen* (bear) | 🧑²☢ |  |
-| Mesiäinen |  overlaps more common *Mesiäinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mesiäinen)  |
+| Mesiäinen |  overlaps more common *Mesiäinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mesiäinen) [enwikt](https://en.wiktionary.org/wiki/Mesiäinen)  |
 | Messu |  overlaps more common *Messu* (fair) | 🌍☢ |  |
 | Mestari |  overlaps more common *Mestari* (master) | 🌍☢ |  |
 | Meta |  overlaps more common *Meta* (meta) | ⁈☢ |  |
 | Meteli |  overlaps more common *Meteli* (noise) | 🌍☢ |  |
 | Metro |  overlaps more common *Metro* (metro) | org☢ |  |
 | Metsikkö |  overlaps more common *Metsikkö* (forest) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Metsikkö)  |
-| Metso |  overlaps more common *Metso* (bird) | 🌍🧑²org☢ |  |
-| Metsä |  overlaps  very common *metsä* (forest). | 🌍🧑²org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Metsä)  |
+| Metso |  overlaps more common *Metso* (bird) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Metso)  |
+| Metsä |  overlaps  very common *metsä* (forest). | 🌍🧑²org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Metsä) [enwikt](https://en.wiktionary.org/wiki/Metsä)  |
 | Metsäkana |  overlaps more common *Metsäkana* (forest chicken) | 🌍☢ |  |
 | Metsäkukka |  overlaps more common *Metsäkukka* (forest flower) | 🌍☢ |  |
 | Metsälampi |  overlaps more common *Metsälampi* (forest pond) | 🌍🧑²☢ |  |
@@ -2377,10 +2393,10 @@ We link to all original sources for reference.
 | Miekka |  overlaps more common *Miekka* (sword) | 🌍🧑²☢ |  |
 | Miele |  overlaps forms of very common *mieli* (mind, opinion). | org |  |
 | mielellään |  usually seen as adverb (gladly), but can be analysed as possessive adessive of the noun *mieli* (mind) |  | [fiwikt](https://fi.wiktionary.org/wiki/mielellään)  |
-| mieliksi |  usually seen as adverb (enjoy), but can be analysed as translative of the noun *mieli* (mind) |  |
+| mieliksi |  usually seen as adverb (enjoy), but can be analysed as translative of the noun *mieli* (mind) |  |  |
 | Miero |  overlaps more common *Miero* (poor) | 🌍☢ |  |
 | Mierolainen |  overlaps more common *Mierolainen* (poor) | 🌍☢ |  |
-| Mies |  overlaps  very common *mies* (man). | 🧑¹☢♂ |  |
+| Mies |  overlaps  very common *mies* (man). | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Mies)  |
 | Miete |  overlaps more common *Miete* (though) | 🧑²☢ |  |
 | Mieto |  overlaps more common *Mieto* (mild) | 🌍🧑²☢ |  |
 | Mietti |  overlaps forms of very common *miettiä* (to think). | 🌍 |  |
@@ -2410,7 +2426,7 @@ We link to all original sources for reference.
 | Mokka |  overlaps more common *Mokka* (mocca) | 🌍☢ |  |
 | mon |  This noun means the Mon-Khmer language spoken by the Mon (FinnWordNet) but overlaps forms of very common *moni* (many). | ☢ | [finnwn](https://sanat.csc.fi/w/index.php?search=mon)  |
 | Monikko |  overlaps more common *Monikko* (plural) | 🌍☢ |  |
-| Monni |  overlaps more common *Monni* (fish) | 🌍🧑²☢ |  |
+| Monni |  overlaps more common *Monni* (fish) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Monni) [enwikt](https://en.wiktionary.org/wiki/Monni)  |
 | Mono |  overlaps more common *Mono* (ski boot) | 🌍☢ |  |
 | Montaasi |  overlaps more common *Montaasi* (montage) | org☢ |  |
 | Moodi |  overlaps more common *Moodi* (mode) | org☢ |  |
@@ -2421,7 +2437,7 @@ We link to all original sources for reference.
 | MTV |  Music TeleVision | 📺 |  |
 | MTV3 |  Mainos-Tele-Visio | org📺 |  |
 | Muhkura |  overlaps more common *Muhkura* (bump) | 🌍☢ |  |
-| Muikku |  overlaps more common *Muikku* (fish) | 🌍🧑²☢ |  |
+| Muikku |  overlaps more common *Muikku* (fish) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Muikku)  |
 | Muisto |  overlaps more common *Muisto* (memory) | 🌍☢ |  |
 | mukaan |  adposition (with) when can be attached to a genitive NP, otherwise adverb (along) |  |  |
 | mukaan |  along, adv, verb complement, “lähde mukaan!” |  | [fiwikt](https://fi.wiktionary.org/wiki/mukaan)  |
@@ -2431,8 +2447,8 @@ We link to all original sources for reference.
 | Multamaa |  overlaps more common *Multamaa* (dirtland) | 🌍☢ |  |
 | Mummola |  overlaps more common *Mummola* (grandma’s) | 🌍☢ |  |
 | Muna |  overlaps more common *Muna* (egg) | 🌍☢ |  |
-| Munkki |  overlaps more common *Munkki* (doughnut) | 🌍🧑²☢ |  |
-| Muona |  overlaps more common *Muona* (food) | 🧑²☢ |  |
+| Munkki |  overlaps more common *Munkki* (doughnut) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Munkki)  |
+| Muona |  overlaps more common *Muona* (food) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Muona)  |
 | Muori |  overlaps more common *Muori* (grandma) | 🌍☢ |  |
 | Muotiala |  overlaps more common *Muotiala* (fashion business) | 🌍☢ |  |
 | Muotti |  overlaps more common *Muotti* (mould) | 🌍☢ |  |
@@ -2440,8 +2456,8 @@ We link to all original sources for reference.
 | Murju |  overlaps more common *Murju* (house) | 🌍☢ |  |
 | Muro |  overlaps more common *Muro* (cereal) | 🌍☢ |  |
 | Murros |  overlaps more common *Murros* (breakout) | 🧑²☢ |  |
-| Mursu |  overlaps more common *Mursu* (walrus) | 🌍🧑²☢ |  |
-| Murto |  overlaps more common *Murto* (breakin) | 🌍🧑²☢ |  |
+| Mursu |  overlaps more common *Mursu* (walrus) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mursu)  |
+| Murto |  overlaps more common *Murto* (breakin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Murto)  |
 | Murtomaa |  overlaps more common *Murtomaa* (broken land) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Murtomaa)  |
 | Murto-osa |  overlaps more common *Murto-osa* (fraction) | 🌍☢ |  |
 | Murtovesi |  overlaps more common *Murtovesi* (broken water) | 🌍☢ |  |
@@ -2451,23 +2467,23 @@ We link to all original sources for reference.
 | Musta |  overlaps more common *Musta* (black) | 🌍☢ |  |
 | Mustajuuri |  overlaps more common *Mustajuuri* (black root) | 🌍☢ |  |
 | Mustalainen |  overlaps more common *Mustalainen* (gypsy) | 🌍☢ |  |
-| Mustapää |  overlaps more common *Mustapää* (blackhead) | 🌍🧑²☢ |  |
+| Mustapää |  overlaps more common *Mustapää* (blackhead) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mustapää)  |
 | Mustasilmä |  overlaps more common *Mustasilmä* (shiner) | 🌍☢ |  |
 | Mustikka |  overlaps more common *Mustikka* (blueberry) | 🌍☢ |  |
 | Muta |  overlaps more common *Muta* (mud) | 🌍🧑²☢ |  |
 | Mutainen |  overlaps more common *Mutainen* (muddy) | 🌍☢ |  |
-| Mutka |  overlaps more common *Mutka* (turn) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mutka)  |
+| Mutka |  overlaps more common *Mutka* (turn) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Mutka) [enwikt](https://en.wiktionary.org/wiki/Mutka)  |
 | Mutkamäki |  overlaps more common *Mutkamäki* (turn hill) | 🌍☢ |  |
 | Mutku |  overlaps more common *Mutku* (but) | 🌍☢ |  |
 | mutta |  REMOVED non CC version, provide examples to get it back |  |  |
 | mutta |  co-ordinating conjunction, “ei hyvä, mutta ok” |  |  |
-| Mutta |  overlaps more common *Mutta* (but) | 🌍🧑²☢ |  |
+| Mutta |  overlaps more common *Mutta* (but) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mutta)  |
 | Muu |  overlaps  very common *muu* (other). | org☢ |  |
 | Muuli |  overlaps more common *Muuli* (mule) | 🌍☢ |  |
 | Muunto |  overlaps more common *Muunto* (exchange) | 🌍☢ |  |
 | Muurahainen |  overlaps more common *Muurahainen* (ant) | 🌍☢ |  |
 | Muurain |  overlaps more common *Muurain* (cloudberry) | 🌍☢ |  |
-| Muuri |  overlaps forms of very common *muuri* (wall). | 🌍🧑²☢ |  |
+| Muuri |  overlaps forms of very common *muuri* (wall). | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Muuri)  |
 | Muusa |  overlaps more common *Muusa* (muse) | org🧑¹☢ |  |
 | muutoin |  usually seen as adverb (otherwise), but overlaps instructive of the noun *muutto* (move) |  | [fiwikt](https://fi.wiktionary.org/wiki/muutoin)  |
 | muutti |  a noun meaning something I don't know, but overlaps forms of *muuttaa* (to move). |  |  |
@@ -2475,14 +2491,14 @@ We link to all original sources for reference.
 | Myhkyrä |  overlaps more common *Myhkyrä* (bump) | 🌍☢ |  |
 | Mykkä |  overlaps more common *Mykkä* (mute) | 🌍☢ |  |
 | Myky |  overlaps more common *Myky* (FIXME) | 🌍☢ |  |
-| Mylly |  overlaps more common *Mylly* (mill) | 🌍🧑²☢ |  |
+| Mylly |  overlaps more common *Mylly* (mill) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mylly)  |
 | Myllylampi |  overlaps more common *Myllylampi* (millpond) | 🌍☢ |  |
 | Myllypato |  overlaps more common *Myllypato* (milldam) | 🌍☢ |  |
-| Mylläri |  overlaps more common *Mylläri* (miller) | 🌍🧑²☢ |  |
-| Myntti |  overlaps more common *Myntti* (coin) | 🌍🧑²☢ |  |
+| Mylläri |  overlaps more common *Mylläri* (miller) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mylläri)  |
+| Myntti |  overlaps more common *Myntti* (coin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Myntti)  |
 | Myrkky |  overlaps more common *Myrkky* (poison) | 🌍☢ |  |
-| Mytty |  overlaps more common *Mytty* (clump) | 🧑²☢ |  |
-| Myyrä |  overlaps more common *Myyrä* (mole) | 🌍🧑²☢ |  |
+| Mytty |  overlaps more common *Mytty* (clump) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mytty)  |
+| Myyrä |  overlaps more common *Myyrä* (mole) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Myyrä)  |
 | myöhemmin |  usually seen as adverb (later), but can be analysed as instructive of the adjective *myöhä* (late) |  | [fiwikt](https://fi.wiktionary.org/wiki/myöhemmin)  |
 | myöhään |  usually seen as adverb (late), but can be analysed as illative of the adjective *myöhä* (late) |  | [fiwikt](https://fi.wiktionary.org/wiki/myöhään)  |
 | Myöntäjä |  overlaps more common *Myöntäjä* (giver) | 🌍☢ |  |
@@ -2492,33 +2508,33 @@ We link to all original sources for reference.
 | Myötämäki |  overlaps more common *Myötämäki* (downhill) | 🌍☢ |  |
 | Mäenrinne |  overlaps more common *Mäenrinne* (hill) | 🌍☢ |  |
 | Mäki |  overlaps more common *Mäki* (hill) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mäki)  |
-| Mäkimaa |  overlaps more common *Mäkimaa* (hill land) | 🌍🧑²☢ |  |
+| Mäkimaa |  overlaps more common *Mäkimaa* (hill land) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mäkimaa)  |
 | Mäkinen |  overlaps more common *Mäkinen* (hilly) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mäkinen)  |
 | Mäkitupa |  overlaps more common *Mäkitupa* (hill hut) | 🌍☢ |  |
 | Mäkitupalainen |  overlaps more common *Mäkitupalainen* (hill hutter) | 🌍☢ |  |
 | Mäkärä |  overlaps more common *Mäkärä* (mosquito) | 🌍☢ |  |
-| Mäkäräinen |  overlaps more common *Mäkäräinen* (mosquito) | 🌍🧑²☢ |  |
+| Mäkäräinen |  overlaps more common *Mäkäräinen* (mosquito) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mäkäräinen)  |
 | Mälli |  overlaps more common *Mälli* (cum) | 🌍☢ |  |
-| Mämmi |  overlaps more common *Mämmi* (mämmi) | 🌍☢ |  |
-| Männikkö |  overlaps more common *Männikkö* (pines) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Männikkö)  |
+| Mämmi |  overlaps more common *Mämmi* (mämmi) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Mämmi)  |
+| Männikkö |  overlaps more common *Männikkö* (pines) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Männikkö) [enwikt](https://en.wiktionary.org/wiki/Männikkö)  |
 | Männistö |  overlaps more common *Männistö* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Männistö)  |
-| Mänty |  overlaps more common *Mänty* (pine) | 🌍🧑²☢ |  |
+| Mänty |  overlaps more common *Mänty* (pine) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mänty)  |
 | Mättäikkö |  overlaps more common *Mättäikkö* (FIXME) | 🌍☢ |  |
-| Mäyrä |  overlaps more common *Mäyrä* (mole) | 🌍🧑²☢ |  |
+| Mäyrä |  overlaps more common *Mäyrä* (mole) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mäyrä)  |
 | Mökki |  overlaps more common *Mökki* (hut) | 🌍☢ |  |
 | Mökkikylä |  overlaps more common *Mökkikylä* (hut village) | 🌍☢ |  |
 | Mökä |  overlaps more common *Mökä* (noise) | 🌍☢ |  |
 | Mölli |  overlaps more common *Mölli* (FIXME) | 🌍☢ |  |
 | Möly |  overlaps more common *Möly* (noise) | 🌍☢ |  |
-| Mömmö |  overlaps more common *Mömmö* (stuff) | 🌍☢ |  |
+| Mömmö |  overlaps more common *Mömmö* (stuff) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Mömmö)  |
 | Mörkö |  overlaps more common *Mörkö* (scary creature) | 🧑²☢ |  |
-| Mörsky |  overlaps more common *Mörsky* (FIXME) | 🌍🧑²☢ |  |
+| Mörsky |  overlaps more common *Mörsky* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Mörsky)  |
 | Mörä |  overlaps forms of very common *möristä* (growl). | 🧑² |  |
 | Mössö |  overlaps more common *Mössö* (mush) | 🌍☢ |  |
 | Möykky |  overlaps more common *Möykky* (clump) | 🌍☢ |  |
 | Möykkä |  overlaps more common *Möykkä* (noise) | 🌍☢ |  |
 | Möyry |  overlaps more common *Möyry* (FIXME) | 🌍☢ |  |
-| Naakka |  overlaps more common *Naakka* (bird) | 🌍🧑²☢ |  |
+| Naakka |  overlaps more common *Naakka* (bird) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Naakka) [enwikt](https://en.wiktionary.org/wiki/Naakka)  |
 | Naali |  overlaps more common *Naali* (arctic fox) | org☢ |  |
 | naan |  Indian bread type, overlaps possessive suffix with essive | ☢ | [fiwikt](https://fi.wiktionary.org/wiki/naan) [enwikt](https://en.wiktionary.org/wiki/naan) [finnwn](https://sanat.csc.fi/w/index.php?search=naan)  |
 | Naapuri |  overlaps more common *Naapuri* (neighbour) | 🌍🧑²☢ |  |
@@ -2529,16 +2545,16 @@ We link to all original sources for reference.
 | Nahkahousut |  overlaps more common *Nahkahousut* (leather pants) | 🌍☢ |  |
 | Nahkapää |  overlaps more common *Nahkapää* (bald) | 🌍☢ |  |
 | Nahkiainen |  overlaps more common *Nahkiainen* (FIXME) | 🌍☢ |  |
-| Nahkuri |  overlaps more common *Nahkuri* (leather tailor) | 🌍☢ |  |
+| Nahkuri |  overlaps more common *Nahkuri* (leather tailor) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Nahkuri)  |
 | naimisiin |  usually seen as adverb (married), but can be analysed as a form of *naiminen* (marriage) |  |  |
 | naimisissa |  usually seen as adverb (married), but can be analysed as a form of *naiminen* (marriage) |  |  |
 | Naisliike |  overlaps more common *Naisliike* (feminist movement) | org☢ |  |
 | Nalikka |  overlaps more common *Nalikka* (FIXME) | 🌍☢ |  |
 | Nalkki |  overlaps more common *Nalkki* (FIXME) | 🌍☢ |  |
 | Nalle |  overlaps more common *Nalle* (bear) | 🌍🧑¹☢ |  |
-| Nalli |  overlaps more common *Nalli* (FIXME) | 🌍☢ |  |
+| Nalli |  overlaps more common *Nalli* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Nalli)  |
 | Nami |  overlaps more common *Nami* (yummy) | 🧑¹☢ |  |
-| Nanna |  overlaps more common *Nanna* (grandma) | 🧑¹☢♀ |  |
+| Nanna |  overlaps more common *Nanna* (grandma) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Nanna)  |
 | Napa |  overlaps more common *Napa* (pole) | org☢ |  |
 | Napapiiri |  overlaps more common *Napapiiri* (polar circle) | 🌍☢ |  |
 | Napero |  overlaps more common *Napero* (kid) | 🌍☢ |  |
@@ -2548,11 +2564,11 @@ We link to all original sources for reference.
 | Narikka |  overlaps more common *Narikka* (cloakroom) | 🌍☢ |  |
 | Narttu |  overlaps more common *Narttu* (bitch) | 🌍☢ |  |
 | NASA |  National Air and Space A | org |  |
-| Naskali |  overlaps more common *Naskali* (FIXME) | 🌍🧑²☢ |  |
+| Naskali |  overlaps more common *Naskali* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Naskali)  |
 | Nassakka |  overlaps more common *Nassakka* (FIXME) | 🌍☢ |  |
 | Nasta |  overlaps more common *Nasta* (pin) | 🌍org☢ |  |
 | NATO |  North-Atlantic Terror Organisation | org |  |
-| Nauha |  overlaps more common *Nauha* (tape) | 🌍☢ |  |
+| Nauha |  overlaps more common *Nauha* (tape) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Nauha)  |
 | Naula |  overlaps more common *Naula* (nail) | 🌍🧑²☢ |  |
 | Nauru |  overlaps more common *Nauru* (laughter) | 🌍☢⚐ |  |
 | NBA |  National Basketball Association |  |  |
@@ -2560,10 +2576,14 @@ We link to all original sources for reference.
 | Neliapila |  overlaps more common *Neliapila* (clover) | org☢ |  |
 | Neliskulmainen |  overlaps more common *Neliskulmainen* (rectangular) | 🌍☢ |  |
 | Neliö |  overlaps more common *Neliö* (square) | 🌍☢ |  |
+| neljäkymmentä |  forty |  |  |
+| neljäsataa |  four hundreds |  | [enwikt](https://en.wiktionary.org/wiki/neljäsataa)  |
+| neljätoista |  fourteen |  |  |
+| neljätuhatta |  four thousands |  |  |
 | Nelonen |  overlaps more common *Nelonen* (four) | 🌍org☢📺 |  |
 | Nenä |  overlaps more common *Nenä* (nose) | 🌍☢ |  |
 | Neon |  overlaps more common *Neon* (neon) | org☢ |  |
-| Neste |  overlaps more common *Neste* (liquid) | 🌍☢ |  |
+| Neste |  overlaps more common *Neste* (liquid) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Neste)  |
 | netti-tv |  net Tele-visio |  |
 | Neula |  overlaps more common *Neula* (needle) | 🌍☢ |  |
 | Neuvo |  overlaps more common *Neuvo* (advice) | 🌍🧑²☢ |  |
@@ -2580,19 +2600,19 @@ We link to all original sources for reference.
 | Niemennenä |  overlaps more common *Niemennenä* (nose of peninsula) | 🌍☢ |  |
 | Niemennokka |  overlaps more common *Niemennokka* (tip of peninsula) | 🌍☢ |  |
 | Niemi |  overlaps more common *Niemi* (peninsula) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niemi) [enwikt](https://en.wiktionary.org/wiki/Niemi)  |
-| Niemimaa |  overlaps more common *Niemimaa* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niemimaa)  |
+| Niemimaa |  overlaps more common *Niemimaa* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niemimaa) [enwikt](https://en.wiktionary.org/wiki/Niemimaa)  |
 | niin |  so, such, adverb, “tehtiin niin” |  |  |
 | niin |  as well as, paired co-ordinating conjunction with kuin, “niin kissoja kuin koiriakin” |  |  |
 | Niitty |  overlaps more common *Niitty* (grass) | 🌍☢ |  |
 | Niittykukka |  overlaps more common *Niittykukka* (grass flower) | 🧑²☢ |  |
-| Nikkari |  overlaps more common *Nikkari* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nikkari)  |
+| Nikkari |  overlaps more common *Nikkari* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nikkari) [enwikt](https://en.wiktionary.org/wiki/Nikkari)  |
 | Nilkki |  overlaps more common *Nilkki* (slug) | 🌍☢ |  |
 | Nimetön |  overlaps more common *Nimetön* (nameless) | 🌍☢ |  |
 | Ninja |  overlaps more common *Ninja* (ninja) | 🧑¹☢ |  |
 | Nipukka |  overlaps more common *Nipukka* (nip) | 🌍☢ |  |
 | Nirri |  overlaps more common *Nirri* (life) | 🌍☢ |  |
 | Nirvana |  overlaps more common *Nirvana* (nirvana) | 🎶org☢ |  |
-| Niska |  overlaps more common *Niska* (neck) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niska)  |
+| Niska |  overlaps more common *Niska* (neck) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Niska) [enwikt](https://en.wiktionary.org/wiki/Niska)  |
 | Niskaoja |  overlaps more common *Niskaoja* (FIXME) | 🌍☢ |  |
 | Nisu |  overlaps more common *Nisu* (bun) | 🌍☢ |  |
 | Niuha |  overlaps more common *Niuha* (tight) | 🌍☢ |  |
@@ -2601,21 +2621,21 @@ We link to all original sources for reference.
 | n:o |  abbreviation for number, often in europarl language etc. |  |  |
 | Noita |  overlaps more common *Noita* (witch) | 🌍☢ |  |
 | Nokare |  overlaps more common *Nokare* (FIXME) | 🌍☢ |  |
-| Nokka |  overlaps more common *Nokka* (beak) | 🌍🧑²☢ |  |
-| Nokkonen |  overlaps more common *Nokkonen* (nettle) | 🌍🧑²☢ |  |
+| Nokka |  overlaps more common *Nokka* (beak) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Nokka)  |
+| Nokkonen |  overlaps more common *Nokkonen* (nettle) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Nokkonen)  |
 | Nolo |  overlaps more common *Nolo* (embarasment) | 🌍☢ |  |
 | Noppa |  overlaps more common *Noppa* (die) | 🌍☢ |  |
 | Normi |  overlaps more common *Normi* (norm) | 🧑²☢ |  |
-| Noro |  overlaps more common *Noro* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Noro)  |
-| Noronen |  overlaps more common *Noronen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Noronen)  |
-| Norppa |  overlaps more common *Norppa* (seal) | 🌍🧑²☢ |  |
+| Noro |  overlaps more common *Noro* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Noro) [enwikt](https://en.wiktionary.org/wiki/Noro)  |
+| Noronen |  overlaps more common *Noronen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Noronen) [enwikt](https://en.wiktionary.org/wiki/Noronen)  |
+| Norppa |  overlaps more common *Norppa* (seal) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Norppa)  |
 | Norssi |  overlaps more common *Norssi* (FIXME) | 🌍☢ |  |
 | Notkelma |  overlaps more common *Notkelma* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Notkelma)  |
 | Notko |  overlaps more common *Notko* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Notko)  |
 | Nousema |  overlaps more common *Nousema* (raise) | 🌍☢ |  |
 | Nousu |  overlaps more common *Nousu* (hike) | 🌍🧑²☢ |  |
 | NPC |  Non-Player Character | ⁈ |  |
-| Nuija |  overlaps more common *Nuija* (club) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nuija)  |
+| Nuija |  overlaps more common *Nuija* (club) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nuija) [enwikt](https://en.wiktionary.org/wiki/Nuija)  |
 | Nukka |  overlaps more common *Nukka* (FIXME) | 🧑²☢ |  |
 | Nulikka |  overlaps more common *Nulikka* (brat) | 🌍☢ |  |
 | Nummi |  overlaps more common *Nummi* (FIXME) | 🌍🧑²☢ |  |
@@ -2623,10 +2643,10 @@ We link to all original sources for reference.
 | Nunna |  overlaps more common *Nunna* (nun) | 🌍☢ |  |
 | Nuoli |  overlaps more common *Nuoli* (arrow) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Nuoli)  |
 | Nuoliainen |  overlaps more common *Nuoliainen* (FIXME) | 🌍☢ |  |
-| Nuora |  overlaps more common *Nuora* (rope) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nuora)  |
+| Nuora |  overlaps more common *Nuora* (rope) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nuora) [enwikt](https://en.wiktionary.org/wiki/Nuora)  |
 | Nuorkauppakamari |  overlaps more common *Nuorkauppakamari* (FIXME) | org☢ |  |
 | Nuotanperä |  overlaps more common *Nuotanperä* (FIXME) | 🌍☢ |  |
-| Nuotio |  overlaps more common *Nuotio* (campfire) | 🌍🧑²☢ |  |
+| Nuotio |  overlaps more common *Nuotio* (campfire) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Nuotio)  |
 | Nuotta-apaja |  overlaps more common *Nuotta-apaja* (fishing stuff) | 🌍☢ |  |
 | Nuottakota |  overlaps more common *Nuottakota* (FIXME) | 🌍☢ |  |
 | Nuotti |  overlaps more common *Nuotti* (note) | 🌍☢ |  |
@@ -2634,7 +2654,7 @@ We link to all original sources for reference.
 | Nuppu |  overlaps more common *Nuppu* (FIXME) | 🌍🧑¹☢♀ |  |
 | Nurina |  overlaps more common *Nurina* (murmur) | 🌍☢ |  |
 | Nurja |  overlaps more common *Nurja* (wrong side) | 🌍☢ |  |
-| Nurkka |  overlaps more common *Nurkka* (corner) | 🌍🧑²☢ |  |
+| Nurkka |  overlaps more common *Nurkka* (corner) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Nurkka)  |
 | Nurmi |  overlaps more common *Nurmi* (grass) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nurmi) [enwikt](https://en.wiktionary.org/wiki/Nurmi)  |
 | Nurmikko |  overlaps more common *Nurmikko* (grass) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Nurmikko)  |
 | Nurminen |  overlaps more common *Nurminen* (FIXME) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Nurminen)  |
@@ -2651,11 +2671,11 @@ We link to all original sources for reference.
 | Näkyvä |  overlaps more common *Näkyvä* (visible) | 🌍🧑²☢ |  |
 | Näköala |  overlaps more common *Näköala* (sight) | 🌍☢ |  |
 | Nälkäinen |  overlaps more common *Nälkäinen* (hungry) | 🌍☢ |  |
-| Nälkämaa |  overlaps more common *Nälkämaa* (hungerland) | 🌍☢ |  |
-| Näppi |  overlaps more common *Näppi* (finger) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Näppi)  |
+| Nälkämaa |  overlaps more common *Nälkämaa* (hungerland) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Nälkämaa)  |
+| Näppi |  overlaps more common *Näppi* (finger) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Näppi) [enwikt](https://en.wiktionary.org/wiki/Näppi)  |
 | Näppärä |  overlaps more common *Näppärä* (handy) | 🌍☢ |  |
 | Näpsä |  overlaps more common *Näpsä* (handy) | 🌍☢ |  |
-| Närhi |  overlaps more common *Närhi* (bird) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Närhi)  |
+| Närhi |  overlaps more common *Närhi* (bird) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Närhi) [enwikt](https://en.wiktionary.org/wiki/Närhi)  |
 | Närä |  overlaps more common *Närä* (discontent) | 🌍☢ |  |
 | Näsiä |  overlaps more common *Näsiä* (flower) | 🌍☢ |  |
 | Nätkelmä |  overlaps more common *Nätkelmä* (FIXME) | 🌍☢ |  |
@@ -2669,14 +2689,14 @@ We link to all original sources for reference.
 | Oikotie |  overlaps more common *Oikotie* (shortcut) | 🌍org☢ |  |
 | Oinas |  overlaps more common *Oinas* (cancer) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Oinas)  |
 | Oiva |  overlaps more common *Oiva* (great) | 🌍🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Oiva)  |
-| Oja |  overlaps more common *Oja* (ditch) | 🌍🧑²☢ |  |
+| Oja |  overlaps more common *Oja* (ditch) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Oja)  |
 | Ojanvarsi |  overlaps more common *Ojanvarsi* (ditch) | 🌍☢ |  |
 | Ojasto |  overlaps more common *Ojasto* (FIXME) | 🌍☢ |  |
 | Ojennus |  overlaps more common *Ojennus* (handout) | 🧑²☢ |  |
 | Ojikko |  overlaps more common *Ojikko* (ditches) | 🌍☢ |  |
 | OK |  not pronounced in words |  |
 | Oka |  overlaps more common *Oka* (thorn) | 🧑²org☢ |  |
-| Oksa |  overlaps more common *Oksa* (twig) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Oksa)  |
+| Oksa |  overlaps more common *Oksa* (twig) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Oksa) [enwikt](https://en.wiktionary.org/wiki/Oksa)  |
 | Ole |  overlaps forms of very common *olla* (to be). | 🧑¹♂ |  |
 | Olento |  overlaps more common *Olento* (creature) | 🌍☢ |  |
 | Olin |  overlaps forms of very common *olla* (to be). | 🧑² |  |
@@ -2691,19 +2711,19 @@ We link to all original sources for reference.
 | Oma |  overlaps more common *Oma* (own) | 🧑¹☢ |  |
 | Ominainen |  overlaps more common *Ominainen* (natural) | 🌍☢ |  |
 | Onginta |  overlaps more common *Onginta* (fishing) | 🌍☢ |  |
-| Onkalo |  overlaps more common *Onkalo* (hole) | 🌍☢ |  |
+| Onkalo |  overlaps more common *Onkalo* (hole) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Onkalo)  |
 | Onkki |  overlaps forms of very common *onki* (fishing rod). | 🌍 |  |
-| Onnela |  overlaps more common *Onnela* (FIXME) | 🌍🧑²☢ |  |
+| Onnela |  overlaps more common *Onnela* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Onnela)  |
 | Onnenmaa |  overlaps more common *Onnenmaa* (FIXME) | 🌍☢ |  |
 | Onneton |  overlaps more common *Onneton* (unhappy) | 🌍☢ |  |
 | Onni |  overlaps  very common *onni* (happiness). | 🌍🧑¹☢♂ | [fiwikt](https://fi.wiktionary.org/wiki/Onni) [enwikt](https://en.wiktionary.org/wiki/Onni)  |
 | Ontto |  overlaps more common *Ontto* (hollow) | 🌍☢ |  |
-| Opas |  overlaps more common *Opas* (guide) | 🧑²☢ |  |
+| Opas |  overlaps more common *Opas* (guide) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Opas)  |
 | Opus |  overlaps more common *Opus* (book) | org☢ |  |
 | Oranki |  overlaps more common *Oranki* (orangutang) | 🌍☢ |  |
 | Oranssi |  overlaps more common *Oranssi* (orange) | org☢ |  |
 | Oraspelto |  overlaps more common *Oraspelto* (FIXME) | 🌍☢ |  |
-| Orava |  overlaps more common *Orava* (squirrel) | 🌍🧑²org☢ |  |
+| Orava |  overlaps more common *Orava* (squirrel) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Orava)  |
 | Ori |  overlaps more common *Ori* (stud) | 🌍☢ |  |
 | Orpo |  overlaps more common *Orpo* (orphan) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Orpo)  |
 | Orvokki |  overlaps more common *Orvokki* (flower) | 🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Orvokki)  |
@@ -2718,14 +2738,14 @@ We link to all original sources for reference.
 | Oulu |  a large city in North Finland, a high frequency proper noun | 🌍 |  |
 | oy |  Osake-Yhtiö | org | [enwikt](https://en.wiktionary.org/wiki/oy)  |
 | OY |  Osake-Yhtiö |  |  |
-| oyj |  Julkinen Osake-Yhtiö | org |  |
+| oyj |  Julkinen Osake-Yhtiö | org | [enwikt](https://en.wiktionary.org/wiki/oyj)  |
 | Paakari |  overlaps more common *Paakari* (baker) | 🌍☢ |  |
 | Paarma |  overlaps more common *Paarma* (wasp) | 🌍🧑²☢ |  |
 | Paasto |  overlaps more common *Paasto* (fast) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Paasto)  |
 | Paatti |  overlaps more common *Paatti* (boat) | 🌍☢ |  |
 | Paavi |  overlaps more common *Paavi* (pope) | 🌍☢ |  |
-| Paavilainen |  overlaps more common *Paavilainen* (FIXME) | 🌍🧑²☢ |  |
-| Paavolainen |  overlaps more common *Paavolainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Paavolainen)  |
+| Paavilainen |  overlaps more common *Paavilainen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Paavilainen)  |
+| Paavolainen |  overlaps more common *Paavolainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Paavolainen) [enwikt](https://en.wiktionary.org/wiki/Paavolainen)  |
 | Pahka |  overlaps more common *Pahka* (FIXME) | 🌍☢ |  |
 | Pahkurainen |  overlaps more common *Pahkurainen* (FIXME) | 🌍☢ |  |
 | Pahlavi |  overlaps more common *Pahlavi* (FIXME) | 🧑²☢ |  |
@@ -2733,7 +2753,7 @@ We link to all original sources for reference.
 | pai |  This noun means a pie but overlaps forms of very common *paikka* (place) among others. |  | [enwikt](https://en.wiktionary.org/wiki/pai)  |
 | Paikka |  overlaps more common *Paikka* (place) | 🌍☢ |  |
 | paikoin |  usually seen as adverb (in places), but can be analysed as instructive of the noun *paikka* (place) |  |
-| Paimen |  overlaps more common *Paimen* (shepherd) | 🌍☢ |  |
+| Paimen |  overlaps more common *Paimen* (shepherd) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Paimen)  |
 | Painaa |  overlaps more common *Painaa* (push) | 🌍☢ |  |
 | Paino |  overlaps more common *Paino* (weight) | 🌍☢ |  |
 | Painua |  overlaps more common *Painua* (depress) | 🌍☢ |  |
@@ -2745,12 +2765,12 @@ We link to all original sources for reference.
 | paitsi |  but not, as adverb, “jään paitsi” |  |  |
 | paitsi |  except, as sub-ordinating conjunction, “kerroin kaiken muun, paitsi en totuutta” UD Finnish, see also VISK § 708 examples d) |  |  |
 | Paja |  overlaps more common *Paja* (hut) | 🌍☢ |  |
-| Pajari |  overlaps more common *Pajari* (weed) | 🌍🧑²☢ |  |
-| Paju |  overlaps more common *Paju* (willow) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Paju)  |
+| Pajari |  overlaps more common *Pajari* (weed) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pajari)  |
+| Paju |  overlaps more common *Paju* (willow) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Paju) [enwikt](https://en.wiktionary.org/wiki/Paju)  |
 | Pajukko |  overlaps more common *Pajukko* (willows) | 🌍🧑²☢ |  |
 | Pakina |  overlaps more common *Pakina* (rant) | 🌍☢ |  |
-| Pakka |  overlaps more common *Pakka* (deck) | 🌍🧑²☢ |  |
-| Pakkanen |  overlaps more common *Pakkanen* (frost) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pakkanen)  |
+| Pakka |  overlaps more common *Pakka* (deck) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pakka)  |
+| Pakkanen |  overlaps more common *Pakkanen* (frost) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pakkanen) [enwikt](https://en.wiktionary.org/wiki/Pakkanen)  |
 | Pakki |  overlaps more common *Pakki* (reverse) | 🌍☢ |  |
 | Pakotie |  overlaps more common *Pakotie* (escape route) | 🌍☢ |  |
 | Paksu |  overlaps more common *Paksu* (fat) | 🌍🧑²☢ |  |
@@ -2767,12 +2787,12 @@ We link to all original sources for reference.
 | Palkkisilta |  overlaps more common *Palkkisilta* (FIXME) | 🌍☢ |  |
 | Palko |  overlaps more common *Palko* (pea) | 🌍🧑²☢ |  |
 | Pallo |  overlaps more common *Pallo* (ball) | 🌍☢ |  |
-| Palmu |  overlaps more common *Palmu* (palm) | 🌍🧑²☢ |  |
+| Palmu |  overlaps more common *Palmu* (palm) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Palmu)  |
 | Palo |  overlaps more common *Palo* (burn) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Palo)  |
 | Palokaivo |  overlaps more common *Palokaivo* (FIXME) | 🌍☢ |  |
 | Palokärki |  overlaps more common *Palokärki* (FIXME) | 🌍☢ |  |
 | Palopaikka |  overlaps more common *Palopaikka* (FIXME) | 🌍☢ |  |
-| Palovaara |  overlaps more common *Palovaara* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Palovaara)  |
+| Palovaara |  overlaps more common *Palovaara* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Palovaara) [enwikt](https://en.wiktionary.org/wiki/Palovaara)  |
 | Palsta |  overlaps more common *Palsta* (column) | 🌍☢ |  |
 | Pam |  overlaps more common *Pam* (bam) | org🧑¹☢ |  |
 | Pamppu |  overlaps more common *Pamppu* (club) | 🌍☢ |  |
@@ -2786,7 +2806,7 @@ We link to all original sources for reference.
 | Papatti |  overlaps more common *Papatti* (FIXME) | 🌍☢ |  |
 | Paperinkeräys |  overlaps more common *Paperinkeräys* (FIXME) | org☢ |  |
 | Pappi |  overlaps more common *Pappi* (priest) | 🌍🧑²☢ |  |
-| Pappila |  overlaps more common *Pappila* (FIXME) | 🌍☢ |  |
+| Pappila |  overlaps more common *Pappila* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pappila)  |
 | Papu |  overlaps more common *Papu* (bean) | 🌍🧑²☢ |  |
 | par |  This noun means a par in e.g., golf but overlaps forms of very common *paras* (best) among others. |  |
 | Parantaa |  overlaps more common *Parantaa* (heal) | 🌍☢ |  |
@@ -2799,36 +2819,36 @@ We link to all original sources for reference.
 | Parkua |  overlaps more common *Parkua* (cry) | 🌍☢ |  |
 | Parras |  overlaps more common *Parras* (FIXME) | 🧑²☢ |  |
 | Parsi |  overlaps more common *Parsi* (FIXME) | 🌍☢ |  |
-| Parta |  overlaps more common *Parta* (beard) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Parta)  |
-| Partio |  overlaps more common *Partio* (scouts) | 🧑²☢ |  |
+| Parta |  overlaps more common *Parta* (beard) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Parta) [enwikt](https://en.wiktionary.org/wiki/Parta)  |
+| Partio |  overlaps more common *Partio* (scouts) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Partio)  |
 | Parvi |  overlaps more common *Parvi* (group) | 🌍☢ |  |
 | Paskoja |  overlaps more common *Paskoja* (shitter) | 🌍☢ |  |
-| Passi |  overlaps more common *Passi* (passport) | 🌍🧑²☢ |  |
+| Passi |  overlaps more common *Passi* (passport) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Passi)  |
 | Pata |  overlaps more common *Pata* (pot) | 🌍☢ |  |
 | Pataässä |  overlaps more common *Pataässä* (ace of spades) | 🌍☢ |  |
 | Pato |  overlaps more common *Pato* (dam) | 🌍☢ |  |
-| Patteri |  overlaps more common *Patteri* (radiator) | 🌍☢ |  |
+| Patteri |  overlaps more common *Patteri* (radiator) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Patteri)  |
 | Patti |  overlaps more common *Patti* (bump) | 🌍☢ |  |
 | Patu |  overlaps more common *Patu* (guy) | 🧑¹☢ |  |
 | Pauhu |  overlaps more common *Pauhu* (FIXME) | 🌍☢ |  |
-| Paukku |  overlaps more common *Paukku* (boom) | 🌍🧑²☢ |  |
-| Pauna |  overlaps more common *Pauna* (FIXME) | 🌍🧑²☢ |  |
+| Paukku |  overlaps more common *Paukku* (boom) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Paukku)  |
+| Pauna |  overlaps more common *Pauna* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pauna)  |
 | Paviljonki |  overlaps more common *Paviljonki* (pavillion) | 🌍☢ |  |
 | PDF |  Portable Document Format |  |
 | Pedaali |  overlaps more common *Pedaali* (pedal) | org☢ |  |
 | Pehko |  overlaps more common *Pehko* (FIXME) | 🌍☢ |  |
 | Peikko |  overlaps more common *Peikko* (troll) | org☢ |  |
-| Peippo |  overlaps more common *Peippo* (tit) | 🌍🧑²☢ |  |
+| Peippo |  overlaps more common *Peippo* (tit) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Peippo)  |
 | Peipponen |  overlaps more common *Peipponen* (tit) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Peipponen)  |
 | Peitsi |  overlaps more common *Peitsi* (spear) | 🧑²☢ |  |
 | Pelimanni |  overlaps more common *Pelimanni* (player) | 🌍☢ |  |
 | pelkästään |  usually seen as adverb (only), but can be analysed as a form of *pelkkä* (sole) |  | [fiwikt](https://fi.wiktionary.org/wiki/pelkästään)  |
 | Pellava |  overlaps more common *Pellava* (willow) | 🌍☢ |  |
 | Pelle |  overlaps more common *Pelle* (clown) | 🧑¹☢ |  |
-| Pelto |  overlaps more common *Pelto* (field) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pelto)  |
-| Peltomaa |  overlaps more common *Peltomaa* (FIXME) | 🌍🧑²☢ |  |
+| Pelto |  overlaps more common *Pelto* (field) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pelto) [enwikt](https://en.wiktionary.org/wiki/Pelto)  |
+| Peltomaa |  overlaps more common *Peltomaa* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Peltomaa)  |
 | Penger |  overlaps more common *Penger* (ditch) | 🧑²☢ |  |
-| Peni |  overlaps more common *Peni* (dog) | 🧑¹☢ |  |
+| Peni |  overlaps more common *Peni* (dog) | 🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Peni)  |
 | Penikka |  overlaps more common *Penikka* (FIXME) | 🌍☢ |  |
 | Penkere |  overlaps more common *Penkere* (FIXME) | 🌍☢ |  |
 | Penkki |  overlaps more common *Penkki* (bench) | 🌍☢ |  |
@@ -2846,15 +2866,15 @@ We link to all original sources for reference.
 | Perimmäinen |  overlaps more common *Perimmäinen* (last) | 🌍☢ |  |
 | Perintö |  overlaps more common *Perintö* (inheritance) | 🌍☢ |  |
 | Perkuu |  overlaps more common *Perkuu* (FIXME) | 🌍☢ |  |
-| Permanto |  overlaps more common *Permanto* (FIXME) | 🌍🧑²☢ |  |
+| Permanto |  overlaps more common *Permanto* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Permanto)  |
 | Perna |  overlaps more common *Perna* (spleen) | 🌍🧑²☢ |  |
 | Perso |  overlaps more common *Perso* (FIXME) | 🌍☢ |  |
 | Perunamaa |  overlaps more common *Perunamaa* (potatoland) | 🌍☢ |  |
 | perusteella |  adposition (because of) when can be attached to a genitive NP, otherwise noun forms of *peruste* (basis) |  |
 | Pervo |  overlaps more common *Pervo* (perv) | 🌍🧑²☢ |  |
-| Perä |  overlaps more common *Perä* (butt) | 🌍☢ |  |
+| Perä |  overlaps more common *Perä* (butt) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Perä)  |
 | Peräkulma |  overlaps more common *Peräkulma* (FIXME) | 🌍☢ |  |
-| Peräkylä |  overlaps more common *Peräkylä* (back village) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Peräkylä)  |
+| Peräkylä |  overlaps more common *Peräkylä* (back village) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Peräkylä) [enwikt](https://en.wiktionary.org/wiki/Peräkylä)  |
 | Perälaita |  overlaps more common *Perälaita* (FIXME) | 🌍☢ |  |
 | Perällinen |  overlaps more common *Perällinen* (FIXME) | 🌍☢ |  |
 | Peräportti |  overlaps more common *Peräportti* (back gate) | 🌍☢ |  |
@@ -2862,31 +2882,31 @@ We link to all original sources for reference.
 | perässä |  behind, as adposition |  |  |
 | Perätön |  overlaps more common *Perätön* (baseless) | 🌍☢ |  |
 | Pesemätön |  overlaps more common *Pesemätön* (unwashed) | 🌍☢ |  |
-| Pesu |  overlaps more common *Pesu* (wash) | 🌍🧑²☢ |  |
+| Pesu |  overlaps more common *Pesu* (wash) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pesu)  |
 | Pesä |  overlaps more common *Pesä* (nest) | 🧑²☢ |  |
 | Pesäpönttö |  overlaps more common *Pesäpönttö* (FIXME) | 🌍☢ |  |
 | Petkele |  overlaps more common *Petkele* (FIXME) | 🌍☢ |  |
 | Pettäjä |  overlaps more common *Pettäjä* (traitor) | 🌍☢ |  |
-| Petäjä |  overlaps more common *Petäjä* (fir) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Petäjä)  |
+| Petäjä |  overlaps more common *Petäjä* (fir) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Petäjä) [enwikt](https://en.wiktionary.org/wiki/Petäjä)  |
 | Petäjäinen |  overlaps more common *Petäjäinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Petäjäinen)  |
 | Peukalo |  overlaps more common *Peukalo* (thumb) | 🌍☢ |  |
 | Peukalohanka |  overlaps more common *Peukalohanka* (FIXME) | 🌍☢ |  |
 | Peukaloinen |  overlaps more common *Peukaloinen* (thumbella) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Peukaloinen)  |
-| Peura |  overlaps more common *Peura* (deer) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Peura)  |
+| Peura |  overlaps more common *Peura* (deer) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Peura) [enwikt](https://en.wiktionary.org/wiki/Peura)  |
 | pH |  per Hydrogen | 📏 |  |
-| Pia |  overlaps forms of very common *pian* (soon). | 🧑¹♀ |  |
+| Pia |  overlaps forms of very common *pian* (soon). | 🧑¹♀ | [enwikt](https://en.wiktionary.org/wiki/Pia)  |
 | Picnic |  overlaps more common *Picnic* (picnic) | org☢ |  |
 | pien-pc |  little Personal Computer |  |  |
 | Pientalo |  overlaps more common *Pientalo* (small house) | 🌍☢ |  |
 | Pieru |  overlaps more common *Pieru* (fart) | 🌍☢ |  |
 | Piha |  overlaps  very common *piha* (yard). | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Piha)  |
 | Pihamaa |  overlaps more common *Pihamaa* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pihamaa)  |
-| Pihlaja |  overlaps more common *Pihlaja* (FIXME) | 🌍🧑²☢ |  |
+| Pihlaja |  overlaps more common *Pihlaja* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pihlaja)  |
 | Pihti |  overlaps more common *Pihti* (FIXME) | 🌍☢ |  |
 | Pii |  overlaps more common *Pii* (pi, silicon) | 🌍☢ |  |
 | Piika |  overlaps more common *Piika* (wench) | 🌍☢ |  |
 | Piikivi |  overlaps more common *Piikivi* (silicon) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Piikivi)  |
-| Piikki |  overlaps more common *Piikki* (spike) | 🌍🧑²☢ |  |
+| Piikki |  overlaps more common *Piikki* (spike) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Piikki)  |
 | Piikkinen |  overlaps more common *Piikkinen* (FIXME) | 🌍☢ |  |
 | Piilo |  overlaps more common *Piilo* (hideout) | 🌍☢ |  |
 | Piilopirtti |  overlaps more common *Piilopirtti* (hideout house) | 🌍☢ |  |
@@ -2894,10 +2914,10 @@ We link to all original sources for reference.
 | Piippu |  overlaps more common *Piippu* (pipe) | 🌍☢ |  |
 | Piiri |  overlaps more common *Piiri* (ring) | 🌍☢ |  |
 | Piironki |  overlaps more common *Piironki* (FIXME) | 🌍☢ |  |
-| Piirto |  overlaps more common *Piirto* (drawing) | 🌍🧑²☢ |  |
+| Piirto |  overlaps more common *Piirto* (drawing) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Piirto)  |
 | Piiru |  overlaps more common *Piiru* (FIXME) | 🌍☢ |  |
-| Piispa |  overlaps more common *Piispa* (bishop) | 🌍🧑²🧑¹☢ |  |
-| Piispanristi |  overlaps more common *Piispanristi* (FIXME) | 🌍☢ |  |
+| Piispa |  overlaps more common *Piispa* (bishop) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Piispa)  |
+| Piispanristi |  overlaps more common *Piispanristi* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Piispanristi)  |
 | Pikatie |  overlaps more common *Pikatie* (expressway) | 🌍☢ |  |
 | Pikinokka |  overlaps more common *Pikinokka* (FIXME) | 🌍☢ |  |
 | Pikkukanava |  overlaps more common *Pikkukanava* (little chnnel) | 🌍☢ |  |
@@ -2911,17 +2931,17 @@ We link to all original sources for reference.
 | Pilkka |  overlaps more common *Pilkka* (insult) | 🌍🧑²☢ |  |
 | Pilkottu |  overlaps more common *Pilkottu* (split) | 🌍☢ |  |
 | Pilleri |  overlaps more common *Pilleri* (pill) | 🌍☢ |  |
-| Pilli |  overlaps more common *Pilli* (straw) | 🌍☢ |  |
+| Pilli |  overlaps more common *Pilli* (straw) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pilli)  |
 | Pillistö |  overlaps more common *Pillistö* (FIXME) | 🌍☢ |  |
 | Piltti |  overlaps more common *Piltti* (kid) | 🌍🧑²☢ |  |
-| Pilvi |  overlaps more common *Pilvi* (cloud) | 🧑²🧑¹☢♀ |  |
+| Pilvi |  overlaps more common *Pilvi* (cloud) | 🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Pilvi)  |
 | Pilvilinna |  overlaps more common *Pilvilinna* (FIXME) | 🌍☢ |  |
 | Pilvinen |  overlaps more common *Pilvinen* (cloudy) | 🧑²☢ |  |
 | Pinni |  overlaps more common *Pinni* (pin) | 🌍☢ |  |
 | Pinta |  overlaps more common *Pinta* (surface) | 🌍🧑²☢ |  |
 | pinta-WWW |  World Wide Web |  |  |
 | Pipo |  overlaps more common *Pipo* (hat) | 🌍☢ |  |
-| Pippuri |  overlaps more common *Pippuri* (pepper) | 🌍🧑²☢ |  |
+| Pippuri |  overlaps more common *Pippuri* (pepper) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pippuri)  |
 | Pirssi |  overlaps more common *Pirssi* (car) | 🌍☢ |  |
 | Pirta |  overlaps more common *Pirta* (FIXME) | 🧑¹☢ |  |
 | Pirtti |  overlaps more common *Pirtti* (FIXME) | 🌍☢ |  |
@@ -2929,10 +2949,10 @@ We link to all original sources for reference.
 | Pisara |  overlaps more common *Pisara* (droplet) | 🌍☢ |  |
 | Piski |  overlaps more common *Piski* (mutt) | 🌍☢ |  |
 | Piste |  overlaps more common *Piste* (dot) | 🌍☢ |  |
-| Pisto |  overlaps more common *Pisto* (injection) | 🌍☢ |  |
+| Pisto |  overlaps more common *Pisto* (injection) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pisto)  |
 | Pistooli |  overlaps more common *Pistooli* (pistol) | 🌍🧑²☢ |  |
-| Pitko |  overlaps more common *Pitko* (FIXME) | 🌍🧑²☢ |  |
-| Pitkä |  overlaps  very common *pitkä* (long). | 🌍🧑²☢ |  |
+| Pitko |  overlaps more common *Pitko* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pitko)  |
+| Pitkä |  overlaps  very common *pitkä* (long). | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pitkä)  |
 | Pitkäinen |  overlaps more common *Pitkäinen* (FIXME) | 🌍☢ |  |
 | pitkällä |  usually seen as adverb (afar), but can be analysed as possessive elative of the adjective *pitkä* (long) |  |
 | pitkään |  usually seen as adverb (a long time), but can be analysed as illative of the adjective *pitkä* (long, tall) |  |
@@ -2950,9 +2970,9 @@ We link to all original sources for reference.
 | Pohatta |  overlaps more common *Pohatta* (rich) | 🌍☢ |  |
 | Pohja |  overlaps more common *Pohja* (bottom) | 🌍🧑²☢ |  |
 | Pohjahiekka |  overlaps more common *Pohjahiekka* (FIXME) | 🌍☢ |  |
-| Pohjalainen |  overlaps more common *Pohjalainen* (FIXME) | 🌍🧑²org☢📺 | [fiwikt](https://fi.wiktionary.org/wiki/Pohjalainen)  |
+| Pohjalainen |  overlaps more common *Pohjalainen* (FIXME) | 🌍🧑²org☢📺 | [fiwikt](https://fi.wiktionary.org/wiki/Pohjalainen) [enwikt](https://en.wiktionary.org/wiki/Pohjalainen)  |
 | Pohjanmies |  overlaps more common *Pohjanmies* (FIXME) | 🧑²☢ |  |
-| Pohjanpalo |  overlaps more common *Pohjanpalo* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pohjanpalo)  |
+| Pohjanpalo |  overlaps more common *Pohjanpalo* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pohjanpalo) [enwikt](https://en.wiktionary.org/wiki/Pohjanpalo)  |
 | Pohjantähti |  overlaps more common *Pohjantähti* (FIXME) | 🌍org☢ | [enwikt](https://en.wiktionary.org/wiki/Pohjantähti)  |
 | Pohjaton |  overlaps more common *Pohjaton* (bottomless) | 🌍☢ |  |
 | Pohjatuuli |  overlaps more common *Pohjatuuli* (northwind) | 🌍☢ |  |
@@ -2963,21 +2983,21 @@ We link to all original sources for reference.
 | Pohjola |  overlaps more common *Pohjola* (nordic) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Pohjola)  |
 | Poika |  overlaps more common *Poika* (boy) | 🌍🧑¹☢ | [fiwikt](https://fi.wiktionary.org/wiki/Poika)  |
 | Poikanen |  overlaps more common *Poikanen* (offspring) | 🌍☢ |  |
-| Poikkeus |  overlaps more common *Poikkeus* (exception) | 🧑²☢ |  |
+| Poikkeus |  overlaps more common *Poikkeus* (exception) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Poikkeus)  |
 | Poikkikäytävä |  overlaps more common *Poikkikäytävä* (crossway) | 🌍☢ |  |
 | Poikkipuolinen |  overlaps more common *Poikkipuolinen* (cross) | 🌍☢ |  |
 | Poikkitie |  overlaps more common *Poikkitie* (FIXME) | 🌍☢ |  |
 | Poju |  overlaps more common *Poju* (boy) | 🧑¹☢ |  |
 | Poka |  overlaps more common *Poka* (FIXME) | 🌍☢ |  |
-| Pokka |  overlaps more common *Pokka* (pokerface) | 🌍🧑²☢ |  |
+| Pokka |  overlaps more common *Pokka* (pokerface) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pokka)  |
 | Polku |  overlaps more common *Polku* (path) | 🌍☢ |  |
-| Pollari |  overlaps more common *Pollari* (police) | 🌍🧑²☢ |  |
+| Pollari |  overlaps more common *Pollari* (police) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pollari)  |
 | Polle |  overlaps more common *Polle* (horse) | 🧑¹☢ |  |
-| Polo |  overlaps more common *Polo* (poor) | 🌍🧑²☢ |  |
+| Polo |  overlaps more common *Polo* (poor) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Polo)  |
 | Polttimo |  overlaps more common *Polttimo* (FIXME) | org☢ |  |
 | Poltto |  overlaps more common *Poltto* (FIXME) | 🌍☢ |  |
 | Polveke |  overlaps more common *Polveke* (FIXME) | 🌍☢ |  |
-| Polvi |  overlaps more common *Polvi* (knee) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Polvi)  |
+| Polvi |  overlaps more common *Polvi* (knee) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Polvi) [enwikt](https://en.wiktionary.org/wiki/Polvi)  |
 | Ponneton |  overlaps more common *Ponneton* (FIXME) | 🌍☢ |  |
 | Ponsi |  overlaps more common *Ponsi* (FIXME) | 🧑²☢ |  |
 | Ponteva |  overlaps more common *Ponteva* (FIXME) | 🧑¹☢ |  |
@@ -2989,9 +3009,9 @@ We link to all original sources for reference.
 | Porraskivi |  overlaps more common *Porraskivi* (stepping stone) | 🌍☢ |  |
 | Porrasperä |  overlaps more common *Porrasperä* (FIXME) | 🌍☢ |  |
 | Porstua |  overlaps more common *Porstua* (FIXME) | 🌍☢ |  |
-| Portti |  overlaps more common *Portti* (gate) | 🌍🧑²☢ |  |
-| Porvari |  overlaps more common *Porvari* (bourgeois) | 🌍☢ |  |
-| Poskiparta |  overlaps more common *Poskiparta* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Poskiparta)  |
+| Portti |  overlaps more common *Portti* (gate) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Portti)  |
+| Porvari |  overlaps more common *Porvari* (bourgeois) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Porvari)  |
+| Poskiparta |  overlaps more common *Poskiparta* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Poskiparta) [enwikt](https://en.wiktionary.org/wiki/Poskiparta)  |
 | Posti |  overlaps more common *Posti* (post) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Posti)  |
 | Potaska |  overlaps more common *Potaska* (potassium) | 🌍☢ |  |
 | Potero |  overlaps more common *Potero* (FIXME) | 🌍☢ |  |
@@ -3001,7 +3021,7 @@ We link to all original sources for reference.
 | Potta |  overlaps more common *Potta* (FIXME) | 🌍☢ |  |
 | Potti |  overlaps more common *Potti* (fIXME) | 🌍☢ |  |
 | Poukama |  overlaps more common *Poukama* (FIXME) | 🌍☢ |  |
-| Pouta |  overlaps more common *Pouta* (FIXME) | 🌍🧑²☢ |  |
+| Pouta |  overlaps more common *Pouta* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pouta)  |
 | Povi |  overlaps more common *Povi* (breast) | 🌍☢ |  |
 | PPI |  Points Per Inch |  |
 | PR |  Public Relations |  |
@@ -3010,13 +3030,13 @@ We link to all original sources for reference.
 | Pro |  overlaps more common *Pro* (pro) | org☢ |  |
 | Proto |  overlaps more common *Proto* (proto) | 🌍☢ |  |
 | Präntti |  overlaps more common *Präntti* (FIXME) | 🌍☢ |  |
-| Pudas |  overlaps more common *Pudas* (FIXME) | 🧑²☢ |  |
-| Puhto |  overlaps more common *Puhto* (FIXME) | 🌍🧑²☢ |  |
+| Pudas |  overlaps more common *Pudas* (FIXME) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pudas)  |
+| Puhto |  overlaps more common *Puhto* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Puhto)  |
 | Puhumaton |  overlaps more common *Puhumaton* (unsaid) | 🌍☢ |  |
-| Puikko |  overlaps more common *Puikko* (stick) | 🌍🧑²☢ |  |
+| Puikko |  overlaps more common *Puikko* (stick) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Puikko)  |
 | Puiseva |  overlaps more common *Puiseva* (FIXME) | 🌍🧑²☢ |  |
 | Puistikko |  overlaps more common *Puistikko* (park) | 🌍☢ |  |
-| Puisto |  overlaps more common *Puisto* (park) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puisto)  |
+| Puisto |  overlaps more common *Puisto* (park) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puisto) [enwikt](https://en.wiktionary.org/wiki/Puisto)  |
 | Puistometsä |  overlaps more common *Puistometsä* (FIXME) | 🌍☢ |  |
 | Pujo |  overlaps more common *Pujo* (grass) | 🌍☢ |  |
 | Pujoparta |  overlaps more common *Pujoparta* (FIXME) | 🌍☢ |  |
@@ -3024,10 +3044,10 @@ We link to all original sources for reference.
 | Pukinparta |  overlaps more common *Pukinparta* (goat beard) | 🌍☢ |  |
 | Pukinsarvi |  overlaps more common *Pukinsarvi* (FIXME) | 🌍☢ |  |
 | Pukkari |  overlaps more common *Pukkari* (FIXME) | 🌍☢ |  |
-| Pukki |  overlaps more common *Pukki* (goat) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pukki)  |
+| Pukki |  overlaps more common *Pukki* (goat) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pukki) [enwikt](https://en.wiktionary.org/wiki/Pukki)  |
 | Pula |  overlaps more common *Pula* (trouble) | 🌍☢ |  |
-| Pulju |  overlaps more common *Pulju* (shop) | 🌍🧑²☢ |  |
-| Pulkka |  overlaps more common *Pulkka* (sled) | 🌍🧑²☢ |  |
+| Pulju |  overlaps more common *Pulju* (shop) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pulju)  |
+| Pulkka |  overlaps more common *Pulkka* (sled) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pulkka)  |
 | Pulkkamäki |  overlaps more common *Pulkkamäki* (FIXME) | 🌍☢ |  |
 | Pulla |  overlaps more common *Pulla* (bun) | 🧑²☢ |  |
 | Pullero |  overlaps more common *Pullero* (FIXME) | 🌍☢ |  |
@@ -3036,13 +3056,13 @@ We link to all original sources for reference.
 | Pullukka |  overlaps more common *Pullukka* (FIXME) | 🌍☢ |  |
 | Pulma |  overlaps more common *Pulma* (crux) | 🧑²☢ |  |
 | Pulmunen |  overlaps more common *Pulmunen* (FIXME) | 🌍☢ |  |
-| Pulska |  overlaps more common *Pulska* (fat) | 🌍🧑²☢ |  |
+| Pulska |  overlaps more common *Pulska* (fat) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pulska)  |
 | Pultti |  overlaps more common *Pultti* (FIXME) | 🌍🧑²☢ |  |
 | Pummi |  overlaps more common *Pummi* (bum) | 🌍☢ |  |
 | Punamulta |  overlaps more common *Punamulta* (FIXME) | 🌍☢ |  |
 | Punapää |  overlaps more common *Punapää* (redhead) | 🌍☢ |  |
 | Punikki |  overlaps more common *Punikki* (FIXME) | 🌍☢ |  |
-| Punkka |  overlaps more common *Punkka* (bed) | 🌍🧑²☢ |  |
+| Punkka |  overlaps more common *Punkka* (bed) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Punkka)  |
 | Punkki |  overlaps more common *Punkki* (tick) | 🌍☢ |  |
 | Punta |  overlaps more common *Punta* (pound) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Punta)  |
 | Puntari |  overlaps more common *Puntari* (FIXME) | 🌍☢ |  |
@@ -3051,27 +3071,28 @@ We link to all original sources for reference.
 | puolesta |  adposition (behalf of) when can be attached to a genitive NP, otherwise noun forms of *puoli* (side) |  |  |
 | Puolimatka |  overlaps more common *Puolimatka* (halfway) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Puolimatka)  |
 | puolin |  usually seen as adverb (sides), but can be analysed as instructive of the noun *puoli* (half, side) |  | [fiwikt](https://fi.wiktionary.org/wiki/puolin)  |
+| puolitoista |  one and a half (lit. halfteen) |  | [enwikt](https://en.wiktionary.org/wiki/puolitoista)  |
 | Puoliväli |  overlaps more common *Puoliväli* (halfway) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puoliväli) [enwikt](https://en.wiktionary.org/wiki/Puoliväli)  |
 | Puolue |  overlaps more common *Puolue* (party) | org☢ |  |
 | Puolukka |  overlaps more common *Puolukka* (lingonberry) | 🌍☢ |  |
 | Puomi |  overlaps more common *Puomi* (beam) | 🌍☢ |  |
-| Puoskari |  overlaps more common *Puoskari* (quack) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puoskari)  |
+| Puoskari |  overlaps more common *Puoskari* (quack) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puoskari) [enwikt](https://en.wiktionary.org/wiki/Puoskari)  |
 | Pupu |  overlaps more common *Pupu* (bunny) | 🧑¹☢ |  |
 | Purje |  overlaps more common *Purje* (sail) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Purje)  |
 | Purnu |  overlaps more common *Purnu* (FIXME) | 🌍☢ |  |
 | Purnukka |  overlaps more common *Purnukka* (FIXME) | 🌍☢ |  |
-| Puro |  overlaps more common *Puro* (stream) | 🌍🧑²☢ |  |
+| Puro |  overlaps more common *Puro* (stream) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Puro)  |
 | Puronen |  overlaps more common *Puronen* (FIXME) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puronen)  |
 | Puronsuu |  overlaps more common *Puronsuu* (FIXME) | 🌍☢ |  |
 | Puronvarsi |  overlaps more common *Puronvarsi* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puronvarsi)  |
 | Purovesi |  overlaps more common *Purovesi* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Purovesi)  |
 | Purra |  overlaps more common *Purra* (bite) | 🧑²☢ |  |
 | Pursi |  overlaps more common *Pursi* (FIXME) | 🧑²☢ |  |
-| Purtilo |  overlaps more common *Purtilo* (FIXME) | 🌍☢ |  |
+| Purtilo |  overlaps more common *Purtilo* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Purtilo)  |
 | Puru |  overlaps more common *Puru* (bite) | 🌍☢ |  |
 | Pusi |  overlaps more common *Pusi* (FIXME) | 🌍☢ |  |
 | Pusikko |  overlaps more common *Pusikko* (bush) | 🌍☢ |  |
-| Puska |  overlaps more common *Puska* (bush) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puska)  |
+| Puska |  overlaps more common *Puska* (bush) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Puska) [enwikt](https://en.wiktionary.org/wiki/Puska)  |
 | Puskisto |  overlaps more common *Puskisto* (FIXME) | 🌍☢ |  |
 | Pussi |  overlaps more common *Pussi* (bag) | 🌍☢ |  |
 | Pussinperä |  overlaps more common *Pussinperä* (FIXME) | 🌍☢ |  |
@@ -3084,17 +3105,17 @@ We link to all original sources for reference.
 | Puu |  overlaps  very common *puu* (tree). | 🧑²☢ |  |
 | Puuha |  overlaps more common *Puuha* (doing stuff) | 🌍☢ |  |
 | Puujalka |  overlaps more common *Puujalka* (peg leg) | 🌍🧑²☢ |  |
-| Puukko |  overlaps more common *Puukko* (knife) | 🌍🧑²☢ |  |
+| Puukko |  overlaps more common *Puukko* (knife) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Puukko)  |
 | Puuraja |  overlaps more common *Puuraja* (wood line) | 🌍☢ |  |
 | Puusilta |  overlaps more common *Puusilta* (wood bridge) | 🌍☢ |  |
-| Puuska |  overlaps more common *Puuska* (FIXME) | 🌍☢ |  |
+| Puuska |  overlaps more common *Puuska* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Puuska)  |
 | Puute |  overlaps  very common *puute* (deficit). | 🌍☢ |  |
 | Pyhä |  overlaps  very common *pyhä* (holy). | 🧑¹☢ |  |
-| Pykälä |  overlaps more common *Pykälä* (law section) | 🌍🧑²org☢ |  |
-| Pykäläinen |  overlaps more common *Pykäläinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pykäläinen)  |
+| Pykälä |  overlaps more common *Pykälä* (law section) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Pykälä)  |
+| Pykäläinen |  overlaps more common *Pykäläinen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pykäläinen) [enwikt](https://en.wiktionary.org/wiki/Pykäläinen)  |
 | Pylkkä |  overlaps more common *Pylkkä* (FIXME) | 🌍☢ |  |
 | Pylpyrä |  overlaps more common *Pylpyrä* (circle) | 🌍☢ |  |
-| Pylväs |  overlaps more common *Pylväs* (pillar) | 🧑²☢ |  |
+| Pylväs |  overlaps more common *Pylväs* (pillar) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pylväs)  |
 | Pyrintö |  overlaps more common *Pyrintö* (try) | 🌍☢ |  |
 | Pyry |  overlaps more common *Pyry* (flurry) | 🌍🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Pyry)  |
 | Pyssy |  overlaps more common *Pyssy* (gun) | 🌍☢ |  |
@@ -3106,12 +3127,12 @@ We link to all original sources for reference.
 | Pysäkki |  overlaps more common *Pysäkki* (stop) | 🌍☢ |  |
 | Pytinki |  overlaps more common *Pytinki* (building) | 🌍☢ |  |
 | Pytty |  overlaps more common *Pytty* (FIXME) | 🌍☢ |  |
-| Pyy |  overlaps more common *Pyy* (bird) | 🌍🧑²☢ |  |
+| Pyy |  overlaps more common *Pyy* (bird) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pyy)  |
 | Pyylevä |  overlaps more common *Pyylevä* (fat) | 🌍☢ |  |
 | Pyöreä |  overlaps more common *Pyöreä* (circle) | 🌍☢ |  |
-| Pyöriä |  overlaps more common *Pyöriä* (go round) | 🌍🧑²☢ |  |
+| Pyöriä |  overlaps more common *Pyöriä* (go round) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pyöriä)  |
 | Pyöriäinen |  overlaps more common *Pyöriäinen* (dolphin) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pyöriäinen)  |
-| Pyörre |  overlaps more common *Pyörre* (tornado) | 🌍🧑²☢ |  |
+| Pyörre |  overlaps more common *Pyörre* (tornado) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pyörre)  |
 | Pyörtää |  overlaps more common *Pyörtää* (turn around) | 🌍☢ |  |
 | Pyörykkä |  overlaps more common *Pyörykkä* (ball) | 🌍☢ |  |
 | Pyörä |  overlaps more common *Pyörä* (wheel) | 🌍☢ |  |
@@ -3123,15 +3144,15 @@ We link to all original sources for reference.
 | Päiste |  overlaps more common *Päiste* (FIXME) | 🌍☢ |  |
 | Päivikki |  overlaps more common *Päivikki* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Päivikki)  |
 | Päivittäistavarakauppa |  overlaps more common *Päivittäistavarakauppa* (FIXME) | org☢ |  |
-| Päivä |  overlaps more common *Päivä* (day) | 🌍🧑¹☢♀ |  |
+| Päivä |  overlaps more common *Päivä* (day) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Päivä)  |
 | Päivänen |  overlaps more common *Päivänen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Päivänen)  |
-| Pälli |  overlaps more common *Pälli* (FIXME) | 🌍☢ |  |
-| Pälvi |  overlaps more common *Pälvi* (FIXME) | 🌍🧑²🧑¹☢♀ |  |
+| Pälli |  overlaps more common *Pälli* (FIXME) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pälli)  |
+| Pälvi |  overlaps more common *Pälvi* (FIXME) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Pälvi)  |
 | Pännä |  overlaps more common *Pännä* (FIXME) | 🌍☢ |  |
 | Pärrä |  overlaps more common *Pärrä* (FIXME) | 🌍☢ |  |
 | Pässi |  overlaps more common *Pässi* (goat) | 🌍☢ |  |
 | Pässinpää |  overlaps more common *Pässinpää* (goathead) | 🌍☢ |  |
-| Pätsi |  overlaps more common *Pätsi* (hell) | 🌍🧑²☢ |  |
+| Pätsi |  overlaps more common *Pätsi* (hell) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pätsi)  |
 | Pätäkkä |  overlaps more common *Pätäkkä* (money) | 🌍☢ |  |
 | Päähine |  overlaps more common *Päähine* (headgear) | 🌍☢ |  |
 | Pääjoki |  overlaps more common *Pääjoki* (headrver) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Pääjoki)  |
@@ -3145,20 +3166,20 @@ We link to all original sources for reference.
 | Pökkelö |  overlaps more common *Pökkelö* (FIXME) | 🌍☢ |  |
 | Pöksy |  overlaps more common *Pöksy* (pant) | 🌍☢ |  |
 | Pöksyt |  overlaps more common *Pöksyt* (pants) | 🌍☢ |  |
-| Pölhö |  overlaps more common *Pölhö* (idiot) | 🌍☢ |  |
+| Pölhö |  overlaps more common *Pölhö* (idiot) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Pölhö)  |
 | Pöljä |  overlaps more common *Pöljä* (idiot) | 🌍☢ |  |
 | Pölkky |  overlaps more common *Pölkky* (FIXME) | 🌍org☢ |  |
 | Pölli |  overlaps more common *Pölli* (FIXME) | 🌍☢ |  |
 | Pölly |  overlaps more common *Pölly* (FIXME) | 🌍☢ |  |
 | Pöllö |  overlaps more common *Pöllö* (owl) | 🌍🧑²☢ |  |
-| Pöllönen |  overlaps more common *Pöllönen* (FIXME) | 🌍🧑²☢ |  |
+| Pöllönen |  overlaps more common *Pöllönen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pöllönen)  |
 | Pömpeli |  overlaps more common *Pömpeli* (FIXME) | 🌍☢ |  |
 | Pönttö |  overlaps more common *Pönttö* (can) | 🌍☢ |  |
 | Pöperö |  overlaps more common *Pöperö* (foodstuff) | 🌍☢ |  |
 | Pörrö |  overlaps more common *Pörrö* (furry) | 🌍☢ |  |
 | Pörssi |  overlaps more common *Pörssi* (stock market) | org☢ |  |
 | Pössy |  overlaps more common *Pössy* (weed) | 🌍☢ |  |
-| Pösö |  overlaps more common *Pösö* (rich) | 🌍🧑²☢ |  |
+| Pösö |  overlaps more common *Pösö* (rich) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Pösö)  |
 | Pöyhiä |  overlaps more common *Pöyhiä* (ruffle) | 🧑²☢ |  |
 | Pöytäkannu |  overlaps more common *Pöytäkannu* (FIXME) | 🌍☢ |  |
 | Pöytävuori |  overlaps more common *Pöytävuori* (FIXME) | 🌍☢ |  |
@@ -3172,7 +3193,7 @@ We link to all original sources for reference.
 | Raasu |  overlaps more common *Raasu* (FIXME) | 🌍☢ |  |
 | Raati |  overlaps more common *Raati* (advisory) | 🌍☢ |  |
 | Radikaali |  overlaps more common *Radikaali* (radical) | org☢ |  |
-| Rae |  overlaps more common *Rae* (grain) | 🌍🧑²☢ |  |
+| Rae |  overlaps more common *Rae* (grain) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rae)  |
 | Rahakirstu |  overlaps more common *Rahakirstu* (money chest) | 🌍☢ |  |
 | Rahapaja |  overlaps more common *Rahapaja* (mint) | org☢ |  |
 | Rahapuu |  overlaps more common *Rahapuu* (money tree) | 🌍☢ |  |
@@ -3183,18 +3204,18 @@ We link to all original sources for reference.
 | Raide |  overlaps more common *Raide* (rail) | 🧑²☢ |  |
 | Raikaa |  overlaps more common *Raikaa* (FIXME) | 🌍☢ |  |
 | Raikas |  overlaps more common *Raikas* (fresh) | 🧑²🧑¹☢ |  |
-| Railo |  overlaps more common *Railo* (FIXME) | 🌍🧑²☢ |  |
+| Railo |  overlaps more common *Railo* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Railo)  |
 | Raina |  overlaps more common *Raina* (story) | 🌍🧑²☢ |  |
 | Raippa |  overlaps more common *Raippa* (FIXME) | 🌍☢ |  |
 | Raita |  overlaps more common *Raita* (stripe) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Raita)  |
-| Raitio |  overlaps more common *Raitio* (tram) | 🌍🧑²☢ |  |
+| Raitio |  overlaps more common *Raitio* (tram) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Raitio)  |
 | Raitis |  overlaps more common *Raitis* (sober) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Raitis)  |
 | Raivo |  overlaps more common *Raivo* (rage) | 🌍☢ |  |
-| Raja |  overlaps more common *Raja* (border) | 🌍☢ |  |
+| Raja |  overlaps more common *Raja* (border) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Raja)  |
 | Rajajoki |  overlaps more common *Rajajoki* (border river) | 🌍☢ |  |
 | Rajakivi |  overlaps more common *Rajakivi* (border stone) | 🌍☢ |  |
 | Rajakulma |  overlaps more common *Rajakulma* (border corner) | 🌍☢ |  |
-| Rajakylä |  overlaps more common *Rajakylä* (border village) | 🌍🧑²☢ |  |
+| Rajakylä |  overlaps more common *Rajakylä* (border village) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rajakylä)  |
 | Rajamaa |  overlaps more common *Rajamaa* (borderland) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rajamaa)  |
 | Rajavartiolaitos |  overlaps more common *Rajavartiolaitos* (FIXME) | org☢ |  |
 | Raju |  overlaps more common *Raju* (rough) | 🌍☢ |  |
@@ -3212,31 +3233,31 @@ We link to all original sources for reference.
 | Rankka |  overlaps more common *Rankka* (rough) | 🌍☢ |  |
 | Rankki |  overlaps more common *Rankki* (rank) | 🌍☢ |  |
 | Ranko |  overlaps more common *Ranko* (FIXME) | 🌍☢ |  |
-| Ranne |  overlaps more common *Ranne* (wrist) | 🌍🧑²☢ |  |
-| Rannikko |  overlaps more common *Rannikko* (coast) | 🌍🧑²☢ |  |
+| Ranne |  overlaps more common *Ranne* (wrist) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ranne)  |
+| Rannikko |  overlaps more common *Rannikko* (coast) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rannikko)  |
 | Rannikkoseutu |  overlaps more common *Rannikkoseutu* (FIXME) | org☢📺 |  |
 | Ranta |  overlaps more common *Ranta* (beach) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ranta) [enwikt](https://en.wiktionary.org/wiki/Ranta)  |
-| Rantakallio |  overlaps more common *Rantakallio* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantakallio)  |
+| Rantakallio |  overlaps more common *Rantakallio* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantakallio) [enwikt](https://en.wiktionary.org/wiki/Rantakallio)  |
 | Rantakivi |  overlaps more common *Rantakivi* (beach rock) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantakivi)  |
 | Rantakoivikko |  overlaps more common *Rantakoivikko* (FIXME) | 🌍☢ |  |
 | Rantakoivu |  overlaps more common *Rantakoivu* (FIXME) | 🌍☢ |  |
-| Rantama |  overlaps more common *Rantama* (FIXME) | 🌍☢ |  |
+| Rantama |  overlaps more common *Rantama* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantama)  |
 | Rantametsä |  overlaps more common *Rantametsä* (beach forest) | 🌍☢ |  |
 | Rantamökki |  overlaps more common *Rantamökki* (FIXME) | 🌍☢ |  |
 | Rantaniitty |  overlaps more common *Rantaniitty* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantaniitty)  |
 | Rantapalsta |  overlaps more common *Rantapalsta* (FIXME) | 🌍☢ |  |
 | Rantariutta |  overlaps more common *Rantariutta* (FIXME) | 🌍☢ |  |
-| Rantatalo |  overlaps more common *Rantatalo* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantatalo)  |
+| Rantatalo |  overlaps more common *Rantatalo* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rantatalo) [enwikt](https://en.wiktionary.org/wiki/Rantatalo)  |
 | Rantatie |  overlaps more common *Rantatie* (FIXME) | 🌍☢ |  |
 | Rantatörmä |  overlaps more common *Rantatörmä* (FIXME) | 🌍☢ |  |
 | Rapa |  overlaps more common *Rapa* (mud) | 🌍☢ |  |
 | Rapakivi |  overlaps more common *Rapakivi* (FIXME) | 🌍☢ |  |
-| Rapakko |  overlaps more common *Rapakko* (mud puddle) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rapakko)  |
+| Rapakko |  overlaps more common *Rapakko* (mud puddle) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rapakko) [enwikt](https://en.wiktionary.org/wiki/Rapakko)  |
 | Rappu |  overlaps more common *Rappu* (step) | 🌍☢ |  |
 | Rappunen |  overlaps more common *Rappunen* (step) | 🌍☢ |  |
-| Rapu |  overlaps more common *Rapu* (crab) | 🌍☢ |  |
+| Rapu |  overlaps more common *Rapu* (crab) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Rapu)  |
 | Rasta |  overlaps more common *Rasta* (rasta) | 🧑²☢ |  |
-| Rastas |  overlaps more common *Rastas* (bird) | 🧑²☢ |  |
+| Rastas |  overlaps more common *Rastas* (bird) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rastas)  |
 | Rasti |  overlaps more common *Rasti* (ex) | 🌍☢ |  |
 | Rasva |  overlaps more common *Rasva* (fat) | 🌍🧑²☢ |  |
 | Rasvakattila |  overlaps more common *Rasvakattila* (grease kettle) | 🌍☢ |  |
@@ -3244,18 +3265,18 @@ We link to all original sources for reference.
 | Ratas |  overlaps more common *Ratas* (cog) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ratas)  |
 | Ratina |  overlaps more common *Ratina* (rattle) | 🌍☢ |  |
 | Rauha |  overlaps more common *Rauha* (peace) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Rauha)  |
-| Rauhanen |  overlaps more common *Rauhanen* (FIXME) | 🌍🧑²☢ |  |
+| Rauhanen |  overlaps more common *Rauhanen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rauhanen)  |
 | Raukka |  overlaps more common *Raukka* (poor) | 🌍☢ |  |
-| Raunio |  overlaps more common *Raunio* (ruin) | 🌍🧑²☢ |  |
+| Raunio |  overlaps more common *Raunio* (ruin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Raunio)  |
 | Raunioinen |  overlaps more common *Raunioinen* (FIXME) | 🌍☢ |  |
-| Rauta |  overlaps more common *Rauta* (iron) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rauta)  |
+| Rauta |  overlaps more common *Rauta* (iron) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rauta) [enwikt](https://en.wiktionary.org/wiki/Rauta)  |
 | Rautakoura |  overlaps more common *Rautakoura* (iron fist) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rautakoura)  |
 | Rautanaula |  overlaps more common *Rautanaula* (iron nail) | 🌍☢ |  |
 | Rautapata |  overlaps more common *Rautapata* (iron pot) | 🌍☢ |  |
 | Rautaruukki |  overlaps more common *Rautaruukki* (FIXME) | 🌍org☢ |  |
 | Rautatie |  overlaps more common *Rautatie* (railway) | 🌍☢ |  |
-| Ravi |  overlaps more common *Ravi* (trot) | 🌍🧑²🧑¹☢ |  |
-| Rehu |  overlaps more common *Rehu* (feed) | 🌍🧑²☢ |  |
+| Ravi |  overlaps more common *Ravi* (trot) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Ravi)  |
+| Rehu |  overlaps more common *Rehu* (feed) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rehu)  |
 | Reitti |  overlaps more common *Reitti* (route) | 🌍☢ |  |
 | Reivi |  overlaps more common *Reivi* (rave) | 🌍☢ |  |
 | Remakka |  overlaps more common *Remakka* (FIXME) | 🌍☢ |  |
@@ -3269,7 +3290,7 @@ We link to all original sources for reference.
 | Resonanssi |  overlaps more common *Resonanssi* (resonance) | org☢ |  |
 | Retku |  overlaps more common *Retku* (FIXME) | 🌍☢ |  |
 | Retuperä |  overlaps more common *Retuperä* (FIXME) | 🌍☢ |  |
-| Reuna |  overlaps more common *Reuna* (border) | 🌍☢ |  |
+| Reuna |  overlaps more common *Reuna* (border) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Reuna)  |
 | Reunama |  overlaps more common *Reunama* (FIXME) | 🌍☢ |  |
 | Revonhäntä |  overlaps more common *Revonhäntä* (FIXME) | 🌍☢ |  |
 | Riekale |  overlaps more common *Riekale* (FIXME) | 🌍☢ |  |
@@ -3279,7 +3300,7 @@ We link to all original sources for reference.
 | Riesa |  overlaps more common *Riesa* (FIXME) | org☢ |  |
 | Rieska |  overlaps more common *Rieska* (flatbread) | 🌍☢ |  |
 | Riimukivi |  overlaps more common *Riimukivi* (runestone) | 🌍☢ |  |
-| Riippa |  overlaps more common *Riippa* (FIXME) | 🌍🧑²☢ |  |
+| Riippa |  overlaps more common *Riippa* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Riippa)  |
 | Riippakivi |  overlaps more common *Riippakivi* (FIXME) | 🌍☢ |  |
 | Riistamaa |  overlaps more common *Riistamaa* (FIXME) | 🌍☢ |  |
 | Riistapelto |  overlaps more common *Riistapelto* (FIXME) | 🌍☢ |  |
@@ -3291,11 +3312,11 @@ We link to all original sources for reference.
 | Rinne |  overlaps more common *Rinne* (hill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rinne)  |
 | Rinneniitty |  overlaps more common *Rinneniitty* (FIXME) | 🌍☢ |  |
 | Rinnepelto |  overlaps more common *Rinnepelto* (FIXME) | 🌍☢ |  |
-| Rinta |  overlaps more common *Rinta* (breast) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rinta)  |
+| Rinta |  overlaps more common *Rinta* (breast) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rinta) [enwikt](https://en.wiktionary.org/wiki/Rinta)  |
 | Rintava |  overlaps more common *Rintava* (breasty) | 🌍☢ |  |
 | Ripuli |  overlaps more common *Ripuli* (diarrhea) | 🌍☢ |  |
 | Risa |  overlaps more common *Risa* (broken) | 🌍🧑¹☢ |  |
-| Riski |  overlaps more common *Riski* (risk) | 🧑²☢ |  |
+| Riski |  overlaps more common *Riski* (risk) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Riski)  |
 | Risti |  overlaps more common *Risti* (cross) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Risti)  |
 | Ristikko |  overlaps more common *Ristikko* (hatch) | 🌍☢ |  |
 | Ristintie |  overlaps more common *Ristintie* (FIXME) | 🌍☢ |  |
@@ -3304,10 +3325,10 @@ We link to all original sources for reference.
 | Risu |  overlaps more common *Risu* (twig) | 🌍☢ |  |
 | Risukasa |  overlaps more common *Risukasa* (FIXME) | 🌍☢ |  |
 | Risukko |  overlaps more common *Risukko* (FIXME) | 🌍☢ |  |
-| Ritari |  overlaps more common *Ritari* (knigth) | 🌍🧑²☢ |  |
+| Ritari |  overlaps more common *Ritari* (knigth) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ritari)  |
 | Riuku |  overlaps more common *Riuku* (FIXME) | 🌍🧑²☢ |  |
 | Riuska |  overlaps more common *Riuska* (strong) | 🌍☢ |  |
-| Riutta |  overlaps more common *Riutta* (FIXME) | 🌍🧑²☢ |  |
+| Riutta |  overlaps more common *Riutta* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Riutta)  |
 | Rivi |  overlaps more common *Rivi* (row) | 🌍🧑²☢ |  |
 | Rivo |  overlaps more common *Rivo* (rowdy) | 🌍☢ |  |
 | RNA |  Ribonucleic Acid |  |
@@ -3317,7 +3338,7 @@ We link to all original sources for reference.
 | Roima |  overlaps more common *Roima* (FIXME) | 🌍☢ |  |
 | Roina |  overlaps more common *Roina* (junk) | 🌍☢ |  |
 | Roju |  overlaps more common *Roju* (junk) | 🌍☢ |  |
-| Rokka |  overlaps more common *Rokka* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rokka)  |
+| Rokka |  overlaps more common *Rokka* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Rokka) [enwikt](https://en.wiktionary.org/wiki/Rokka)  |
 | Rokkapata |  overlaps more common *Rokkapata* (FIXME) | 🌍☢ |  |
 | Rokki |  overlaps more common *Rokki* (rock) | 🌍☢ |  |
 | Rokko |  overlaps more common *Rokko* (measles) | 🧑²☢ |  |
@@ -3325,17 +3346,17 @@ We link to all original sources for reference.
 | Rommi |  overlaps more common *Rommi* (rom) | 🧑²☢ |  |
 | Romppu |  overlaps more common *Romppu* (cd-rom) | 🌍☢ |  |
 | Rompsu |  overlaps more common *Rompsu* (FIXME) | 🌍☢ |  |
-| Romu |  overlaps more common *Romu* (junk) | 🌍🧑²☢ |  |
+| Romu |  overlaps more common *Romu* (junk) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Romu)  |
 | Ronkeli |  overlaps more common *Ronkeli* (FIXME) | 🌍☢ |  |
-| Rontti |  overlaps more common *Rontti* (FIXME) | 🌍🧑²☢ |  |
-| Ropo |  overlaps more common *Ropo* (coin) | 🌍🧑²☢ |  |
-| Roponen |  overlaps more common *Roponen* (FIXME) | 🌍🧑²☢ |  |
+| Rontti |  overlaps more common *Rontti* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rontti)  |
+| Ropo |  overlaps more common *Ropo* (coin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ropo)  |
+| Roponen |  overlaps more common *Roponen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Roponen)  |
 | Rotanhäntä |  overlaps more common *Rotanhäntä* (rattail) | 🌍☢ |  |
 | Rotko |  overlaps more common *Rotko* (canyon) | 🌍🧑²☢ |  |
 | Rouhe |  overlaps more common *Rouhe* (FIXME) | 🧑²☢ |  |
 | Rovasti |  overlaps more common *Rovasti* (priest) | 🌍☢ |  |
 | Rove |  overlaps more common *Rove* (FIXME) | 🧑²☢ |  |
-| Rovio |  overlaps more common *Rovio* (bonfire) | 🌍org☢ |  |
+| Rovio |  overlaps more common *Rovio* (bonfire) | 🌍org☢ | [enwikt](https://en.wiktionary.org/wiki/Rovio)  |
 | Ruhtinas |  overlaps more common *Ruhtinas* (royalty) | 🧑²☢ |  |
 | Ruijalainen |  overlaps more common *Ruijalainen* (FIXME) | 🌍☢ |  |
 | Ruis |  overlaps more common *Ruis* (rye) | 🧑²☢ |  |
@@ -3349,9 +3370,9 @@ We link to all original sources for reference.
 | Runo |  overlaps more common *Runo* (poem) | 🌍🧑¹☢♂ |  |
 | Ruohikko |  overlaps more common *Ruohikko* (grsdd) | 🌍☢ |  |
 | Ruohisto |  overlaps more common *Ruohisto* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruohisto)  |
-| Ruoho |  overlaps more common *Ruoho* (grass) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruoho)  |
+| Ruoho |  overlaps more common *Ruoho* (grass) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruoho) [enwikt](https://en.wiktionary.org/wiki/Ruoho)  |
 | Ruohokorpi |  overlaps more common *Ruohokorpi* (FIXME) | 🌍☢ |  |
-| Ruohomaa |  overlaps more common *Ruohomaa* (grassland) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruohomaa)  |
+| Ruohomaa |  overlaps more common *Ruohomaa* (grassland) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruohomaa) [enwikt](https://en.wiktionary.org/wiki/Ruohomaa)  |
 | Ruohosto |  overlaps more common *Ruohosto* (FIXME) | 🌍☢ |  |
 | Ruokala |  overlaps more common *Ruokala* (cafeteria) | 🌍☢ |  |
 | Ruoko |  overlaps more common *Ruoko* (straw) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ruoko)  |
@@ -3368,11 +3389,11 @@ We link to all original sources for reference.
 | Ruuhi |  overlaps more common *Ruuhi* (boat) | 🌍☢ |  |
 | Ruukki |  overlaps more common *Ruukki* (FIXME) | 🌍🧑²org☢ |  |
 | Ruuna |  overlaps more common *Ruuna* (horse) | 🌍☢ |  |
-| Ruusu |  overlaps more common *Ruusu* (rose) | 🧑²🧑¹☢♀ |  |
+| Ruusu |  overlaps more common *Ruusu* (rose) | 🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Ruusu)  |
 | Ruutana |  overlaps more common *Ruutana* (fish) | 🌍☢ |  |
 | Ruuti |  overlaps more common *Ruuti* (blackpowder) | 🌍🧑²☢ |  |
 | Ruutikuiva |  overlaps more common *Ruutikuiva* (bonedry) | 🌍☢ |  |
-| Ruutu |  overlaps more common *Ruutu* (square) | 🌍🧑²☢ |  |
+| Ruutu |  overlaps more common *Ruutu* (square) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ruutu)  |
 | Ryhmä |  overlaps more common *Ryhmä* (groupwork) | 🌍☢ |  |
 | Ryhmätyö |  overlaps more common *Ryhmätyö* (groupwork) | org☢ |  |
 | Ryhti |  overlaps more common *Ryhti* (FIXME) | 🌍☢ |  |
@@ -3381,13 +3402,13 @@ We link to all original sources for reference.
 | Ryysy |  overlaps more common *Ryysy* (FIXME) | 🌍☢ |  |
 | Ryysyläinen |  overlaps more common *Ryysyläinen* (FIXME) | 🧑²☢ |  |
 | Ryönä |  overlaps more common *Ryönä* (junk) | 🌍☢ |  |
-| Ryöppy |  overlaps more common *Ryöppy* (FIXME) | 🌍🧑²☢ |  |
+| Ryöppy |  overlaps more common *Ryöppy* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ryöppy) [enwikt](https://en.wiktionary.org/wiki/Ryöppy)  |
 | Ryöväri |  overlaps more common *Ryöväri* (robber) | 🌍☢ |  |
 | Rähmä |  overlaps more common *Rähmä* (FIXME) | 🌍☢ |  |
 | Räme |  overlaps more common *Räme* (swamp) | 🌍☢ |  |
 | Rämeikkö |  overlaps more common *Rämeikkö* (FIXME) | 🌍☢ |  |
 | Rämesuo |  overlaps more common *Rämesuo* (FIXME) | 🌍☢ |  |
-| Rämä |  overlaps more common *Rämä* (broken) | 🌍🧑²☢ |  |
+| Rämä |  overlaps more common *Rämä* (broken) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Rämä)  |
 | Rämäkkä |  overlaps more common *Rämäkkä* (FIXME) | 🌍☢ |  |
 | Ränni |  overlaps more common *Ränni* (gutter) | 🌍☢ |  |
 | Räppänä |  overlaps more common *Räppänä* (FIXME) | 🌍☢ |  |
@@ -3399,22 +3420,22 @@ We link to all original sources for reference.
 | Röyhy |  overlaps more common *Röyhy* (FIXME) | 🌍☢ |  |
 | Röykkiö |  overlaps more common *Röykkiö* (FIXME) | 🌍☢ |  |
 | s. |  sivu, “p.” or page |  |  |
-| Saaga |  overlaps more common *Saaga* (saga) | 🧑¹☢♀ |  |
+| Saaga |  overlaps more common *Saaga* (saga) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Saaga)  |
 | Saaja |  overlaps more common *Saaja* (recipient) | 🌍☢ |  |
 | Saakeli |  overlaps more common *Saakeli* (darn) | 🌍☢ |  |
-| Saali |  overlaps more common *Saali* (shale) | 🌍☢ |  |
+| Saali |  overlaps more common *Saali* (shale) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Saali)  |
 | Saanti |  overlaps more common *Saanti* (input) | 🌍☢ |  |
 | Saareke |  overlaps more common *Saareke* (isle) | 🌍🧑²☢ |  |
 | Saarelainen |  overlaps more common *Saarelainen* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saarelainen) [enwikt](https://en.wiktionary.org/wiki/Saarelainen)  |
-| Saarelma |  overlaps more common *Saarelma* (FIXME) | 🌍🧑²☢ |  |
+| Saarelma |  overlaps more common *Saarelma* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saarelma)  |
 | Saarento |  overlaps more common *Saarento* (FIXME) | 🌍🧑²☢ |  |
 | Saari |  overlaps more common *Saari* (island) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saari) [enwikt](https://en.wiktionary.org/wiki/Saari)  |
 | Saarinen |  overlaps more common *Saarinen* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saarinen)  |
-| Saaristo |  overlaps more common *Saaristo* (FIXME) | 🌍🧑²☢ |  |
+| Saaristo |  overlaps more common *Saaristo* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saaristo)  |
 | Saarnastuoli |  overlaps more common *Saarnastuoli* (FIXME) | 🌍☢ |  |
-| Saarto |  overlaps more common *Saarto* (ambush) | 🌍🧑²☢ |  |
+| Saarto |  overlaps more common *Saarto* (ambush) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saarto)  |
 | saati |  also not even, coordinating conj, “ei kissoja saati koiria”, see VISK § 816 |  |  |
-| Sade |  overlaps more common *Sade* (rain) | 🧑¹☢♀ |  |
+| Sade |  overlaps more common *Sade* (rain) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Sade)  |
 | Saha |  overlaps more common *Saha* (saw) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saha)  |
 | Saikku |  overlaps more common *Saikku* (sick leave) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Saikku)  |
 | Saita |  overlaps more common *Saita* (pennypincher) | 🌍☢ |  |
@@ -3422,25 +3443,25 @@ We link to all original sources for reference.
 | Sakara |  overlaps more common *Sakara* (FIXME) | 🌍☢ |  |
 | Sake |  overlaps more common *Sake* (sake) | 🌍☢ |  |
 | Sakeus |  overlaps more common *Sakeus* (FIXME) | 🧑¹☢ |  |
-| Sakki |  overlaps more common *Sakki* (chess, group) | 🌍🧑²org☢ |  |
-| Sakko |  overlaps  very common *sakko* (a fine). | 🌍🧑²☢ |  |
+| Sakki |  overlaps more common *Sakki* (chess, group) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Sakki)  |
+| Sakko |  overlaps  very common *sakko* (a fine). | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sakko)  |
 | Saksi |  overlaps more common *Saksi* (scissor) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saksi)  |
 | Saku |  overlaps more common *Saku* (FIXME) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Saku)  |
 | Salainen |  overlaps more common *Salainen* (secret) | 🌍☢ |  |
-| Salakari |  overlaps more common *Salakari* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salakari)  |
+| Salakari |  overlaps more common *Salakari* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salakari) [enwikt](https://en.wiktionary.org/wiki/Salakari)  |
 | Salakavala |  overlaps more common *Salakavala* (FIXME) | 🌍☢ |  |
 | Salama |  overlaps more common *Salama* (lighting) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Salama)  |
 | Salaoja |  overlaps more common *Salaoja* (ditch) | 🌍☢ |  |
 | Sali |  overlaps more common *Sali* (hall) | 🌍☢ |  |
 | Salko |  overlaps more common *Salko* (FIXME) | 🌍🧑²☢ |  |
 | Salmeke |  overlaps more common *Salmeke* (FIXME) | 🌍☢ |  |
-| Salmensuu |  overlaps more common *Salmensuu* (FIXME) | 🌍🧑²☢ |  |
+| Salmensuu |  overlaps more common *Salmensuu* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Salmensuu)  |
 | Salmi |  overlaps more common *Salmi* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salmi) [enwikt](https://en.wiktionary.org/wiki/Salmi)  |
-| Salmisto |  overlaps more common *Salmisto* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salmisto)  |
+| Salmisto |  overlaps more common *Salmisto* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salmisto) [enwikt](https://en.wiktionary.org/wiki/Salmisto)  |
 | Salo |  overlaps more common *Salo* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Salo)  |
 | Salokylä |  overlaps more common *Salokylä* (FIXME) | 🌍☢ |  |
 | Salolainen |  overlaps more common *Salolainen* (FIXME) | 🧑²☢ |  |
-| Salomaa |  overlaps more common *Salomaa* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salomaa)  |
+| Salomaa |  overlaps more common *Salomaa* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Salomaa) [enwikt](https://en.wiktionary.org/wiki/Salomaa)  |
 | Salonki |  overlaps more common *Salonki* (salon) | org☢ |  |
 | Salvia |  overlaps more common *Salvia* (sage) | 🌍☢ |  |
 | samalla |  usually seen as adverb (meanwhile), but can be analysed as possessive elative of the adjective *sama* (same) |  |
@@ -3449,13 +3470,13 @@ We link to all original sources for reference.
 | Sammal |  overlaps more common *Sammal* (FIXME) | 🌍🧑²☢ |  |
 | Sammalikko |  overlaps more common *Sammalikko* (FIXME) | 🌍☢ |  |
 | Sammalinen |  overlaps more common *Sammalinen* (FIXME) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sammalinen)  |
-| Sammalisto |  overlaps more common *Sammalisto* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sammalisto)  |
+| Sammalisto |  overlaps more common *Sammalisto* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sammalisto) [enwikt](https://en.wiktionary.org/wiki/Sammalisto)  |
 | Sammio |  overlaps more common *Sammio* (FIXME) | 🌍☢ |  |
-| Sana |  overlaps more common *Sana* (word) | 🧑²☢ |  |
+| Sana |  overlaps more common *Sana* (word) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sana)  |
 | Sanasto |  overlaps more common *Sanasto* (dictionary) | org☢ |  |
-| Sane |  overlaps more common *Sane* (wordform) | 🧑²org☢ |  |
+| Sane |  overlaps more common *Sane* (wordform) | 🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Sane)  |
 | Sanka |  overlaps more common *Sanka* (FIXME) | 🌍☢ |  |
-| Sankari |  overlaps more common *Sankari* (hero) | 🌍🧑²☢ |  |
+| Sankari |  overlaps more common *Sankari* (hero) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sankari)  |
 | Sanoma |  overlaps more common *Sanoma* (news) | org☢ |  |
 | Santa |  overlaps more common *Santa* (sand) | 🌍🧑²☢ |  |
 | Saparo |  overlaps more common *Saparo* (pig tail) | 🌍☢ |  |
@@ -3465,30 +3486,34 @@ We link to all original sources for reference.
 | Sarake |  overlaps more common *Sarake* (column) | 🌍☢ |  |
 | Sarka |  overlaps more common *Sarka* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sarka)  |
 | Sarkajako |  overlaps more common *Sarkajako* (FIXME) | 🌍☢ |  |
-| Sarvi |  overlaps more common *Sarvi* (horn) | 🌍🧑²☢ |  |
+| Sarvi |  overlaps more common *Sarvi* (horn) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sarvi)  |
 | Satakerta |  overlaps more common *Satakerta* (hundredfold) | 🌍☢ |  |
 | Satakieli |  overlaps more common *Satakieli* (bird) | 🌍☢ |  |
-| Satama |  overlaps more common *Satama* (docks) | 🌍🧑²☢ |  |
+| Satama |  overlaps more common *Satama* (docks) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Satama)  |
 | Satiainen |  overlaps more common *Satiainen* (crabs) | 🌍☢ |  |
 | Sato |  overlaps more common *Sato* (yield) | 🌍org☢ |  |
 | Sattuma |  overlaps more common *Sattuma* (coincidence) | 🌍☢ |  |
 | Satula |  overlaps more common *Satula* (saddle) | 🌍☢ |  |
 | Satumaa |  overlaps more common *Satumaa* (fairyland) | org☢ |  |
-| Saukko |  overlaps more common *Saukko* (otter) | 🌍🧑²☢ |  |
+| Saukko |  overlaps more common *Saukko* (otter) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Saukko)  |
 | Sauna |  overlaps more common *Sauna* (sauna) | 🧑²☢ |  |
 | Saunaranta |  overlaps more common *Saunaranta* (sauna beach) | 🌍☢ |  |
 | Saunoja |  overlaps more common *Saunoja* (FIXME) | 🌍☢ |  |
 | Savi |  overlaps more common *Savi* (clay) | 🌍🧑²☢ |  |
 | Savikivi |  overlaps more common *Savikivi* (claystone) | 🌍☢ |  |
-| Savikko |  overlaps more common *Savikko* (clays) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Savikko)  |
+| Savikko |  overlaps more common *Savikko* (clays) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Savikko) [enwikt](https://en.wiktionary.org/wiki/Savikko)  |
 | Savimaa |  overlaps more common *Savimaa* (clayland) | 🌍☢ |  |
-| Savinen |  overlaps more common *Savinen* (clay) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Savinen)  |
+| Savinen |  overlaps more common *Savinen* (clay) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Savinen) [enwikt](https://en.wiktionary.org/wiki/Savinen)  |
 | Savipohja |  overlaps more common *Savipohja* (clay base) | 🌍☢ |  |
 | Savolainen |  overlaps more common *Savolainen* (savonian) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Savolainen)  |
 | SDP |  Sosiali-Demokraattinen Puolue | orgPOLIT |  |
 | Seikka |  overlaps more common *Seikka* (thing) | 🌍☢ |  |
 | Seili |  overlaps more common *Seili* (sail) | 🌍☢ |  |
 | Seiska |  overlaps more common *Seiska* (seven) | 🌍☢ |  |
+| seitsemänkymmentä |  seventy |  | [fiwikt](https://fi.wiktionary.org/wiki/seitsemänkymmentä)  |
+| seitsemänsataa |  seven hundreds |  |  |
+| seitsemäntoista |  seventeen |  |  |
+| seitsemäntuhatta |  seven thousands |  |  |
 | sekä |  and too, coordinating conj, “kissat sekä koirat“ |  |
 | sekä |  and too, coordinating conj, “kissat sekä koirat” |  |
 | selin₁₁ |  usually seen as adverb (back facing), but can be analysed as instructive of the noun *selkä* (back) |  |
@@ -3496,44 +3521,44 @@ We link to all original sources for reference.
 | Selkonen |  overlaps more common *Selkonen* (FIXME) | 🌍☢ |  |
 | Selkä |  overlaps more common *Selkä* (back) | 🌍☢ |  |
 | Selänpää |  overlaps more common *Selänpää* (backhead) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Selänpää)  |
-| Semi |  overlaps more common *Semi* (semi) | 🧑¹☢ |  |
+| Semi |  overlaps more common *Semi* (semi) | 🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Semi)  |
 | Sentraali |  overlaps more common *Sentraali* (central) | org☢ |  |
 | Seppä |  overlaps more common *Seppä* (blacksmith) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Seppä)  |
 | Serkku |  overlaps more common *Serkku* (cousin) | 🌍☢ |  |
 | Servo |  overlaps more common *Servo* (servo) | 🌍🧑²☢ |  |
 | Seula |  overlaps more common *Seula* (sieve) | 🌍☢ |  |
 | Seura |  overlaps more common *Seura* (group) | 🌍☢ |  |
-| Seuranen |  overlaps forms of very common *seura* (company). | 🌍🧑² |  |
+| Seuranen |  overlaps forms of very common *seura* (company). | 🌍🧑² | [enwikt](https://en.wiktionary.org/wiki/Seuranen)  |
 | Seutu |  overlaps more common *Seutu* (area) | 🧑²☢ |  |
 | SGML |  Standardised General Markup Language |  |
 | Siansaparo |  overlaps more common *Siansaparo* (pig tail) | 🌍☢ |  |
 | Siemen |  overlaps more common *Siemen* (seed) | 🧑²☢ |  |
 | Sieppo |  overlaps more common *Sieppo* (bird) | 🌍☢ |  |
 | Siika |  overlaps more common *Siika* (fish) | 🌍🧑²☢ |  |
-| Siili |  overlaps more common *Siili* (hedgehog) | 🌍🧑²☢ |  |
+| Siili |  overlaps more common *Siili* (hedgehog) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Siili)  |
 | Siipi |  overlaps more common *Siipi* (wing) | 🧑²☢ |  |
 | Siippa |  overlaps more common *Siippa* (spouse) | 🌍☢ |  |
 | Siirappi |  overlaps more common *Siirappi* (syrup) | 🌍☢ |  |
 | Siirto |  overlaps more common *Siirto* (move) | 🌍☢ |  |
-| Siirtola |  overlaps more common *Siirtola* (FIXME) | 🌍🧑²☢ |  |
+| Siirtola |  overlaps more common *Siirtola* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Siirtola)  |
 | Siirtomaa |  overlaps more common *Siirtomaa* (FIXME) | 🌍☢ |  |
 | Siivo |  overlaps more common *Siivo* (mess) | 🌍☢ |  |
 | Siivottu |  overlaps more common *Siivottu* (cleaned) | 🌍☢ |  |
 | sijaan |  adposition (instead of) when can be attached to a genitive NP, otherwise noun forms of *sija* (place), verb *sijata* (make place) |  |  |
 | sijaan |  adverv (instead) |  |  |
-| Sikala |  overlaps more common *Sikala* (pig sty) | 🌍🧑²☢ |  |
-| Sikiö |  overlaps more common *Sikiö* (foetus) | 🌍🧑²☢ |  |
+| Sikala |  overlaps more common *Sikala* (pig sty) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sikala)  |
+| Sikiö |  overlaps more common *Sikiö* (foetus) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sikiö)  |
 | siksi |  REMOVED, in lack of adpositional evidence |  |  |
 | siksi |  thus, therefore, that's why, notably also translative of *se* (it) |  |  |
 | Silakka |  overlaps more common *Silakka* (herring) | 🌍🧑²☢ |  |
 | Sileeni |  overlaps more common *Sileeni* (silenium) | 🌍☢ |  |
 | Sileä |  overlaps more common *Sileä* (flat) | 🌍☢ |  |
-| Sillankorva |  overlaps more common *Sillankorva* (bridge ear) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sillankorva)  |
+| Sillankorva |  overlaps more common *Sillankorva* (bridge ear) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sillankorva) [enwikt](https://en.wiktionary.org/wiki/Sillankorva)  |
 | Silli |  overlaps more common *Silli* (herring) | 🌍🧑²☢ |  |
 | silloin |  adposition is rare and I haven't found good examples after I started documenting these stuffs, so it may be deprecated and removed in future versions |  |  |
 | silloin |  usually seen as adverb (then), but overlaps instructive of the noun *silta* (bridge) |  |  |
 | sillä |  because, subordinating conj, “sillä tiedän paremmin” (NB ambig with many se adessives) |  |  |
-| Silmu |  overlaps more common *Silmu* (flower petal thing) | 🌍🧑²☢ |  |
+| Silmu |  overlaps more common *Silmu* (flower petal thing) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Silmu) [enwikt](https://en.wiktionary.org/wiki/Silmu)  |
 | Silmukka |  overlaps more common *Silmukka* (noose) | 🌍☢ |  |
 | Silmä |  overlaps more common *Silmä* (eye) | 🌍☢ |  |
 | Silmäke |  overlaps more common *Silmäke* (center) | 🌍☢ |  |
@@ -3546,20 +3571,20 @@ We link to all original sources for reference.
 | Sininen |  overlaps more common *Sininen* (blue) | 🌍☢ |  |
 | Sinisukka |  overlaps more common *Sinisukka* (blue sock) | org☢ |  |
 | Sinivuokko |  overlaps more common *Sinivuokko* (police, flower) | 🧑²☢ |  |
-| Sinko |  overlaps more common *Sinko* (bazooka) | 🧑²☢ |  |
+| Sinko |  overlaps more common *Sinko* (bazooka) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sinko)  |
 | Sipuli |  overlaps more common *Sipuli* (onion) | 🌍☢ |  |
-| Sireeni |  overlaps more common *Sireeni* (siren) | 🌍☢ |  |
+| Sireeni |  overlaps more common *Sireeni* (siren) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Sireeni)  |
 | Sirkkeli |  overlaps more common *Sirkkeli* (circle saw) | 🌍☢ |  |
-| Siro |  overlaps more common *Siro* (fragile) | 🌍🧑²🧑¹☢ |  |
+| Siro |  overlaps more common *Siro* (fragile) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Siro)  |
 | Sirpale |  overlaps more common *Sirpale* (shard) | 🌍☢ |  |
 | Sirppi |  overlaps more common *Sirppi* (crescent) | 🌍☢ |  |
 | Siru |  overlaps more common *Siru* (shard) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Siru)  |
 | Sisko |  overlaps more common *Sisko* (sister) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Sisko)  |
 | Sissi |  overlaps more common *Sissi* (guerilla) | 🧑¹☢♀ |  |
-| Sisu |  overlaps more common *Sisu* (guts) | 🌍🧑¹☢♂ |  |
+| Sisu |  overlaps more common *Sisu* (guts) | 🌍🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Sisu)  |
 | sisällä |  adverb |  | [fiwikt](https://fi.wiktionary.org/wiki/sisällä)  |
 | sisällä |  adposition (inside of) when can be attached to a genitive NP, otherwise adverb (inside) |  |  |
-| sisältä |  adverb |  | [fiwikt](https://fi.wiktionary.org/wiki/sisältä)  |
+| sisältä |  adverb |  | [fiwikt](https://fi.wiktionary.org/wiki/sisältä) [enwikt](https://en.wiktionary.org/wiki/sisältä)  |
 | sisältä |  from inside. as adposition, “talon sisältä” |  |  |
 | Sisämaa |  overlaps more common *Sisämaa* (inlands) | 🌍☢ |  |
 | Sisäpohja |  overlaps more common *Sisäpohja* (inner bottom) | 🌍☢ |  |
@@ -3582,9 +3607,9 @@ We link to all original sources for reference.
 | Soiva |  overlaps more common *Soiva* (playing) | 🧑²☢ |  |
 | SOK |  Suomen Osuus-Kauppa |  |
 | Sokeritoppa |  overlaps more common *Sokeritoppa* (sugartop) | 🌍☢ |  |
-| Sokka |  overlaps more common *Sokka* (pin) | 🌍🧑²☢ |  |
+| Sokka |  overlaps more common *Sokka* (pin) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sokka)  |
 | Sokkelo |  overlaps more common *Sokkelo* (labyrinth) | 🌍☢ |  |
-| Sola |  overlaps more common *Sola* (valley) | 🌍🧑²☢ |  |
+| Sola |  overlaps more common *Sola* (valley) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sola)  |
 | Solakka |  overlaps more common *Solakka* (thin) | 🌍☢ |  |
 | Solki |  overlaps more common *Solki* (buckle) | 🌍☢ |  |
 | Solmio |  overlaps more common *Solmio* (tie) | 🌍☢ |  |
@@ -3595,22 +3620,22 @@ We link to all original sources for reference.
 | Sonni |  overlaps more common *Sonni* (bull) | 🌍☢ |  |
 | Sontiainen |  overlaps more common *Sontiainen* (cockroach) | 🌍☢ |  |
 | Soppa |  overlaps more common *Soppa* (soup) | 🌍☢ |  |
-| Soppi |  overlaps more common *Soppi* (place) | 🌍🧑²☢ |  |
+| Soppi |  overlaps more common *Soppi* (place) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Soppi)  |
 | Sopukka |  overlaps more common *Sopukka* (cranny) | 🌍☢ |  |
 | Sora |  overlaps more common *Sora* (rubble) | 🌍☢ |  |
 | Soraharju |  overlaps more common *Soraharju* (rubble hill) | 🌍☢ |  |
 | Sorainen |  overlaps more common *Sorainen* (rubbley) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sorainen)  |
 | Soratie |  overlaps more common *Soratie* (rubble road) | 🧑²☢ |  |
-| Sorja |  overlaps more common *Sorja* (FIXME) | 🧑¹☢♀ |  |
+| Sorja |  overlaps more common *Sorja* (FIXME) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Sorja)  |
 | Sorkka |  overlaps more common *Sorkka* (hoof) | 🌍☢ |  |
 | Sormio |  overlaps more common *Sormio* (piano) | 🧑²☢ |  |
 | Sorsa |  overlaps more common *Sorsa* (duck) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sorsa)  |
 | Sorsimo |  overlaps more common *Sorsimo* (FIXME) | 🌍☢ |  |
 | Sorto |  overlaps more common *Sorto* (oppression) | 🌍☢ |  |
 | Sortti |  overlaps more common *Sortti* (kind of) | 🌍☢ |  |
-| Sorvari |  overlaps more common *Sorvari* (FIXME) | 🌍🧑²☢ |  |
+| Sorvari |  overlaps more common *Sorvari* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sorvari)  |
 | Sotku |  overlaps more common *Sotku* (mess) | 🌍☢ |  |
-| Soukka |  overlaps more common *Soukka* (FIXME) | 🌍🧑²☢ |  |
+| Soukka |  overlaps more common *Soukka* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Soukka)  |
 | Soutaja |  overlaps more common *Soutaja* (rower) | 🌍☢ |  |
 | Sovinto |  overlaps more common *Sovinto* (agreement) | 🌍☢ |  |
 | Spitaali |  overlaps more common *Spitaali* (leprosy) | 🌍☢ |  |
@@ -3626,14 +3651,14 @@ We link to all original sources for reference.
 | suhteen |  adverb |  |  |
 | suhteen |  adposition (with regards to) when can be attached to a genitive NP, otherwise noun forms of *suhde* (relation) |  |  |
 | Suikale |  overlaps more common *Suikale* (splice) | 🌍☢ |  |
-| Suikka |  overlaps more common *Suikka* (hat) | 🌍🧑²☢ |  |
+| Suikka |  overlaps more common *Suikka* (hat) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Suikka)  |
 | Suikula |  overlaps more common *Suikula* (oval) | 🌍☢ |  |
 | suinkaan |  usually seen as adverb (at all, negative), but overlaps instructive of the noun *suu* (mouth) |  |
 | suinkin |  usually seen as adverb (at all, affirmative), but overlaps instructive of the noun *suu* (mouth) |  |
 | Suisto |  overlaps more common *Suisto* (river stream) | 🌍☢ |  |
 | Sukkela |  overlaps more common *Sukkela* (fast) | 🌍☢ |  |
 | Sukkula |  overlaps more common *Sukkula* (rocket) | 🌍☢ |  |
-| Suksi |  overlaps more common *Suksi* (ski) | 🌍🧑²☢ |  |
+| Suksi |  overlaps more common *Suksi* (ski) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Suksi)  |
 | Suksia |  overlaps more common *Suksia* (ski) | 🌍☢ |  |
 | Sukupolvi |  overlaps more common *Sukupolvi* (generation) | 🧑²☢ |  |
 | SUL |  Suomen Urheilu-Liitto | org |  |
@@ -3641,16 +3666,16 @@ We link to all original sources for reference.
 | Sulake |  overlaps more common *Sulake* (fuse) | org☢ |  |
 | Sulattaja |  overlaps more common *Sulattaja* (melter) | 🌍☢ |  |
 | Sulava |  overlaps more common *Sulava* (melting) | 🌍☢ |  |
-| Sulho |  overlaps more common *Sulho* (husband) | 🧑¹☢♂ |  |
+| Sulho |  overlaps more common *Sulho* (husband) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Sulho)  |
 | Sulka |  overlaps more common *Sulka* (feather) | 🧑²🧑¹☢ |  |
-| Sulku |  overlaps more common *Sulku* (lock) | 🌍🧑²☢ |  |
+| Sulku |  overlaps more common *Sulku* (lock) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sulku)  |
 | Sulkusaari |  overlaps more common *Sulkusaari* (lock island) | 🌍☢ |  |
 | Sulttaani |  overlaps more common *Sulttaani* (sultan) | 🌍☢ |  |
 | Summa |  overlaps more common *Summa* (sum) | 🌍🧑²☢ |  |
 | Sumppi |  overlaps more common *Sumppi* (coffee) | 🌍☢ |  |
 | Sumppu |  overlaps more common *Sumppu* (stau) | 🌍☢ |  |
 | Sun |  overlaps more common *Sun* (FIXME) | 🧑²org⁈☢ |  |
-| Suntio |  overlaps more common *Suntio* (priest) | 🌍🧑²☢ |  |
+| Suntio |  overlaps more common *Suntio* (priest) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Suntio)  |
 | Suo |  overlaps  very common *suo* (swamp). | 🌍☢ |  |
 | Suo |  overlaps more common *Suo* (swamp) | 🌍☢ |  |
 | Suoja |  overlaps more common *Suoja* (protection) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suoja)  |
@@ -3686,7 +3711,7 @@ We link to all original sources for reference.
 | Surma |  overlaps more common *Surma* (manslaughter) | 🧑²☢ |  |
 | Surunauha |  overlaps more common *Surunauha* (sorrowband) | org☢ |  |
 | Suruton |  overlaps more common *Suruton* (happy) | 🌍☢ |  |
-| Susi |  overlaps more common *Susi* (wolf) | 🌍🧑²☢ |  |
+| Susi |  overlaps more common *Susi* (wolf) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Susi)  |
 | Susitarha |  overlaps more common *Susitarha* (wolf garden) | 🌍☢ |  |
 | Sutia |  overlaps more common *Sutia* (brush) | 🌍☢ |  |
 | Suullinen |  overlaps more common *Suullinen* (oral) | 🌍☢ |  |
@@ -3696,18 +3721,18 @@ We link to all original sources for reference.
 | Suunta |  overlaps more common *Suunta* (direction) | 🌍🧑²☢ |  |
 | Suurisilmä |  overlaps more common *Suurisilmä* (big eye) | 🌍☢ |  |
 | Suurmäki |  overlaps more common *Suurmäki* (big hill) | 🌍☢ |  |
-| Suutari |  overlaps more common *Suutari* (shoe maker) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suutari)  |
-| Suvanto |  overlaps more common *Suvanto* (FIXME) | 🌍🧑²☢ |  |
+| Suutari |  overlaps more common *Suutari* (shoe maker) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suutari) [enwikt](https://en.wiktionary.org/wiki/Suutari)  |
+| Suvanto |  overlaps more common *Suvanto* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Suvanto)  |
 | Suvi |  overlaps more common *Suvi* (summer) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Suvi) [enwikt](https://en.wiktionary.org/wiki/Suvi)  |
-| Suvinen |  overlaps more common *Suvinen* (summery) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suvinen)  |
+| Suvinen |  overlaps more common *Suvinen* (summery) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Suvinen) [enwikt](https://en.wiktionary.org/wiki/Suvinen)  |
 | Suvituuli |  overlaps more common *Suvituuli* (summerwind) | 🌍☢ |  |
 | Sydänkäpy |  overlaps more common *Sydänkäpy* (beloved) | 🌍☢ |  |
-| Sydänmaa |  overlaps more common *Sydänmaa* (heartland) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sydänmaa)  |
+| Sydänmaa |  overlaps more common *Sydänmaa* (heartland) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Sydänmaa) [enwikt](https://en.wiktionary.org/wiki/Sydänmaa)  |
 | Syke |  overlaps more common *Syke* (pulse) | 🎶org☢ |  |
 | Syksy |  overlaps more common *Syksy* (autumn) | 🧑¹☢ |  |
 | Symbioosi |  overlaps more common *Symbioosi* (symbiosis) | org☢ |  |
 | Synapsi |  overlaps more common *Synapsi* (synapse) | org☢ |  |
-| Syrjä |  overlaps more common *Syrjä* (far) | 🌍🧑²☢ |  |
+| Syrjä |  overlaps more common *Syrjä* (far) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Syrjä)  |
 | Syrjäkulma |  overlaps more common *Syrjäkulma* (far end) | 🌍☢ |  |
 | Sysi |  overlaps more common *Sysi* (pitchblack) | 🧑²☢ |  |
 | Systeemi |  overlaps more common *Systeemi* (system) | org☢ |  |
@@ -3716,24 +3741,24 @@ We link to all original sources for reference.
 | syvällä |  usually seen as adverb (deep), but can be analysed as possessive elative of the adjective *syvä* (deep) |  |
 | Syvänne |  overlaps more common *Syvänne* (depth) | 🧑²☢ |  |
 | Säde |  overlaps more common *Säde* (ray) | 🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Säde) [enwikt](https://en.wiktionary.org/wiki/Säde)  |
-| Säilä |  overlaps more common *Säilä* (sword) | 🌍🧑²☢ |  |
+| Säilä |  overlaps more common *Säilä* (sword) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Säilä)  |
 | Säilö |  overlaps more common *Säilö* (locker) | 🌍☢ |  |
 | Säkki |  overlaps more common *Säkki* (bag) | 🌍☢ |  |
 | Säleikkö |  overlaps more common *Säleikkö* (grid) | 🌍☢ |  |
 | Sänki |  overlaps more common *Sänki* (stubble) | 🌍☢ |  |
 | Säppi |  overlaps more common *Säppi* (lock) | 🌍☢ |  |
 | Särki |  overlaps more common *Särki* (fish) | 🧑²☢ |  |
-| Särkkä |  overlaps more common *Särkkä* (rock) | 🌍🧑²☢ |  |
+| Särkkä |  overlaps more common *Särkkä* (rock) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Särkkä)  |
 | Särö |  overlaps more common *Särö* (crack) | 🧑²☢ |  |
 | Sätky |  overlaps more common *Sätky* (shock) | 🌍☢ |  |
 | Sävel |  overlaps more common *Sävel* (chord) | 🧑²🧑¹☢ |  |
 | Sääksi |  overlaps more common *Sääksi* (mosquito) | 🌍☢ |  |
 | Sääri |  overlaps more common *Sääri* (leg) | 🌍☢ |  |
-| Sääski |  overlaps more common *Sääski* (mosquito) | 🌍🧑²☢ |  |
+| Sääski |  overlaps more common *Sääski* (mosquito) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Sääski)  |
 | Säästö |  overlaps more common *Säästö* (saving) | 🌍☢ |  |
 | Säästöpankki |  overlaps more common *Säästöpankki* (savings bank) | org☢ |  |
 | Säästöpankkiryhmä |  overlaps more common *Säästöpankkiryhmä* (savings bank group) | org☢ |  |
-| taas |  again, adverb, “taas myöhässä” |  | [fiwikt](https://fi.wiktionary.org/wiki/taas)  |
+| taas |  again, adverb, “taas myöhässä” |  | [fiwikt](https://fi.wiktionary.org/wiki/taas) [enwikt](https://en.wiktionary.org/wiki/taas)  |
 | taas |  when again, as paired sub-ordinating conjunction with kun, “kun taas huomenna ei” |  |  |
 | Taatto |  overlaps more common *Taatto* (grandpa) | 🌍☢ |  |
 | Tahi |  overlaps more common *Tahi* (or) | 🌍☢ |  |
@@ -3742,12 +3767,12 @@ We link to all original sources for reference.
 | tai |  or, coordinating conjunction, “kissat tai koirat” |  |  |
 | tai |  a Kadai language, noun, rather rare but ambiguous with common conjunction | ☢ | [enwikt](https://en.wiktionary.org/wiki/tai)  |
 | tai |  This noun means the most widespread and best known of the Kadai family of languages (FinnWordNet) but overlaps  very common *tai* (or). | ☢ | [enwikt](https://en.wiktionary.org/wiki/tai)  |
-| Taika |  overlaps more common *Taika* (spell) | 🧑¹☢♀ |  |
+| Taika |  overlaps more common *Taika* (spell) | 🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Taika)  |
 | Taikina |  overlaps more common *Taikina* (dough) | 🌍☢ |  |
 | Taikinainen |  overlaps more common *Taikinainen* (doughy) | 🌍☢ |  |
 | Taimi |  overlaps more common *Taimi* (seedling) | 🧑²org🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Taimi)  |
 | Taimikko |  overlaps more common *Taimikko* (seedlings) | 🌍☢ |  |
-| Taimisto |  overlaps more common *Taimisto* (seedlings) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Taimisto)  |
+| Taimisto |  overlaps more common *Taimisto* (seedlings) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Taimisto) [enwikt](https://en.wiktionary.org/wiki/Taimisto)  |
 | Taimitarha |  overlaps more common *Taimitarha* (seedling garden) | 🌍☢ |  |
 | Taipua |  overlaps more common *Taipua* (bend) | 🌍☢ |  |
 | Taito |  overlaps more common *Taito* (skill) | 🌍🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Taito)  |
@@ -3755,12 +3780,12 @@ We link to all original sources for reference.
 | Taivaanranta |  overlaps more common *Taivaanranta* (sky beach, horizon) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Taivaanranta)  |
 | Taivaanvuohi |  overlaps more common *Taivaanvuohi* (sky goat) | 🌍☢ |  |
 | Taival |  overlaps more common *Taival* (way) | 🌍🧑²☢ |  |
-| Taivas |  overlaps more common *Taivas* (sky) | org☢ |  |
+| Taivas |  overlaps more common *Taivas* (sky) | org☢ | [enwikt](https://en.wiktionary.org/wiki/Taivas)  |
 | Taive |  overlaps more common *Taive* (bent) | 🧑²☢ |  |
-| taka |  This noun means backside but overlaps forms of very common *takana* (behind) etc. |  | [fiwikt](https://fi.wiktionary.org/wiki/taka)  |
+| taka |  This noun means backside but overlaps forms of very common *takana* (behind) etc. |  | [fiwikt](https://fi.wiktionary.org/wiki/taka) [enwikt](https://en.wiktionary.org/wiki/taka)  |
 | Taka |  overlaps more common *Taka* (back) | 🧑²☢ |  |
 | Takalisto |  overlaps more common *Takalisto* (ass) | 🌍☢ |  |
-| Takamaa |  overlaps more common *Takamaa* (backland) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Takamaa)  |
+| Takamaa |  overlaps more common *Takamaa* (backland) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Takamaa) [enwikt](https://en.wiktionary.org/wiki/Takamaa)  |
 | Takametsä |  overlaps more common *Takametsä* (back forest) | 🌍☢ |  |
 | takana |  adposition (behind of) when can be attached to a genitive NP, otherwise adverb or noun reading |  |  |
 | Takaniitty |  overlaps more common *Takaniitty* (back greens) | 🌍☢ |  |
@@ -3772,29 +3797,29 @@ We link to all original sources for reference.
 | takia |  because of, as adpoistion, complement is genitive |  |  |
 | Takkakivi |  overlaps more common *Takkakivi* (fireplacestone) | 🌍☢ |  |
 | Takki |  overlaps more common *Takki* (coat) | 🌍🧑²☢ |  |
-| Takku |  overlaps more common *Takku* (knot) | 🌍🧑²☢ |  |
+| Takku |  overlaps more common *Takku* (knot) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Takku)  |
 | Takoja |  overlaps more common *Takoja* (FIXME) | 🌍☢ |  |
 | Tali |  overlaps more common *Tali* (FIXME) | 🌍☢ |  |
-| Talja |  overlaps more common *Talja* (FIXME) | 🌍🧑²☢ |  |
+| Talja |  overlaps more common *Talja* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Talja)  |
 | Talkkari |  overlaps more common *Talkkari* (super) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talkkari)  |
 | Talkkuna |  overlaps more common *Talkkuna* (alun) | 🌍☢ |  |
 | Talli |  overlaps more common *Talli* (stables) | 🌍☢ |  |
 | Talo |  overlaps more common *Talo* (house) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talo)  |
 | Talonpaikka |  overlaps more common *Talonpaikka* (houseplace) | 🌍☢ |  |
-| Talonpoika |  overlaps more common *Talonpoika* (farmhand) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talonpoika)  |
+| Talonpoika |  overlaps more common *Talonpoika* (farmhand) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talonpoika) [enwikt](https://en.wiktionary.org/wiki/Talonpoika)  |
 | Talouselämä |  overlaps more common *Talouselämä* (financial life) | org☢ |  |
 | Taloustutkimus |  overlaps more common *Taloustutkimus* (financial research) | org☢ |  |
 | Taltta |  overlaps more common *Taltta* (chisel) | 🌍☢ |  |
 | Talvenselkä |  overlaps more common *Talvenselkä* (winterback) | 🌍☢ |  |
-| Talvi |  overlaps more common *Talvi* (winter) | 🌍🧑²☢ |  |
+| Talvi |  overlaps more common *Talvi* (winter) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Talvi)  |
 | Talvilampare |  overlaps more common *Talvilampare* (winterhill) | 🌍☢ |  |
-| Talvitie |  overlaps more common *Talvitie* (winterroad) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talvitie)  |
+| Talvitie |  overlaps more common *Talvitie* (winterroad) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Talvitie) [enwikt](https://en.wiktionary.org/wiki/Talvitie)  |
 | Tammi |  overlaps more common *Tammi* (oak) | 🌍🧑²org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tammi) [enwikt](https://en.wiktionary.org/wiki/Tammi)  |
-| Tammilehto |  overlaps more common *Tammilehto* (oak grove) | 🌍🧑²☢ |  |
+| Tammilehto |  overlaps more common *Tammilehto* (oak grove) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tammilehto)  |
 | Tammimetsä |  overlaps more common *Tammimetsä* (oak forest) | org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tammimetsä)  |
 | Tamminen |  overlaps more common *Tamminen* (oaky) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tamminen)  |
-| Tammisto |  overlaps more common *Tammisto* (oak forest) | 🌍🧑²☢ |  |
-| Tanhua |  overlaps more common *Tanhua* (FIXME) | 🌍🧑²☢ |  |
+| Tammisto |  overlaps more common *Tammisto* (oak forest) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tammisto)  |
+| Tanhua |  overlaps more common *Tanhua* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tanhua)  |
 | Tanner |  overlaps more common *Tanner* (ground) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tanner)  |
 | Tantere |  overlaps more common *Tantere* (ground) | 🌍🧑²☢ |  |
 | Tapa |  overlaps more common *Tapa* (habit) | 🌍☢ |  |
@@ -3804,15 +3829,15 @@ We link to all original sources for reference.
 | Tappura |  overlaps more common *Tappura* (FIXME) | 🌍☢ |  |
 | Tapulikaupunki |  overlaps more common *Tapulikaupunki* (FIXME) | 🌍☢ |  |
 | Tarha |  overlaps more common *Tarha* (garden) | 🌍org☢ |  |
-| Tarkka |  overlaps more common *Tarkka* (exact, prices) | 🌍🧑²☢ |  |
+| Tarkka |  overlaps more common *Tarkka* (exact, prices) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tarkka)  |
 | Tarkki |  overlaps forms of very common *tarkka* (exact, precise). | 🌍🧑² |  |
 | Tarot |  overlaps more common *Tarot* (tarot) | 🌍☢ |  |
 | tarpeeksi |  adposition (enough of it), partitive ocmplements |  |  |
 | tarpeeksi |  usually seen as adverb (enough), but can be analysed as translative of the noun *tarve* (greater) |  |  |
 | Tarra |  overlaps more common *Tarra* (sticker) | 🌍☢ |  |
-| Tasa |  overlaps more common *Tasa* (level) | 🌍🧑²☢ |  |
+| Tasa |  overlaps more common *Tasa* (level) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tasa)  |
 | Tasamaa |  overlaps more common *Tasamaa* (Fflatland) | 🌍☢ |  |
-| Tasanko |  overlaps more common *Tasanko* (flatlands) | 🌍🧑²☢ |  |
+| Tasanko |  overlaps more common *Tasanko* (flatlands) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tasanko)  |
 | Tasankomaa |  overlaps more common *Tasankomaa* (flatland) | 🌍☢ |  |
 | Tasanne |  overlaps more common *Tasanne* (FIXME) | 🌍☢ |  |
 | Tasapää |  overlaps more common *Tasapää* (levelhead) | 🌍☢ |  |
@@ -3820,19 +3845,19 @@ We link to all original sources for reference.
 | Tasku |  overlaps more common *Tasku* (pocket) | 🌍org☢ |  |
 | Taso |  overlaps more common *Taso* (level) | org☢ |  |
 | Tassu |  overlaps more common *Tassu* (paw) | 🌍☢ |  |
-| Tatti |  overlaps more common *Tatti* (mushroom) | 🧑²☢ |  |
+| Tatti |  overlaps more common *Tatti* (mushroom) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tatti)  |
 | Taulu |  overlaps more common *Taulu* (painting) | 🌍☢ |  |
 | Tausta |  overlaps more common *Tausta* (background) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tausta)  |
 | tavallaan |  usually seen as adverb (in their way), but can be analysed as possessive adessive of the noun *tosi* (truth) |  | [fiwikt](https://fi.wiktionary.org/wiki/tavallaan)  |
 | Taverna |  overlaps more common *Taverna* (tavern) | 🌍☢ |  |
-| Tavi |  overlaps more common *Tavi* (bird) | 🌍🧑²☢ |  |
+| Tavi |  overlaps more common *Tavi* (bird) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tavi)  |
 | TCP |  Transmission Control Protocol |  |  |
 | TCP/IP |  Transmission Control Protocol / Internet Protocol |  |  |
 | Teema |  overlaps  very common *teema* (theme). | org☢📺 |  |
 | Teema |  overlaps more common *Teema* (theme) | org☢📺 |  |
 | Teeri |  overlaps more common *Teeri* (bird) | 🌍🧑²☢ |  |
 | Teho |  overlaps more common *Teho* (power) | 🧑¹☢ |  |
-| Teini |  overlaps more common *Teini* (teen) | 🌍☢ |  |
+| Teini |  overlaps more common *Teini* (teen) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Teini)  |
 | Tekari |  overlaps more common *Tekari* (fake teeth) | 🌍☢ |  |
 | Teko |  overlaps more common *Teko* (act) | org☢ |  |
 | Tekojärvi |  overlaps more common *Tekojärvi* (artificial lake) | 🌍☢ |  |
@@ -3851,34 +3876,34 @@ We link to all original sources for reference.
 | Tere |  overlaps more common *Tere* (hi) | 🧑¹☢ |  |
 | Terska |  overlaps more common *Terska* (foreskin) | 🌍☢ |  |
 | Terva |  overlaps more common *Terva* (tar) | 🌍☢ |  |
-| Tervahauta |  overlaps more common *Tervahauta* (tar pit) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tervahauta)  |
+| Tervahauta |  overlaps more common *Tervahauta* (tar pit) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tervahauta) [enwikt](https://en.wiktionary.org/wiki/Tervahauta)  |
 | Tervahovi |  overlaps more common *Tervahovi* (FIXME) | 🌍☢ |  |
 | Tervakko |  overlaps more common *Tervakko* (FIXME) | 🌍🧑²☢ |  |
 | Tervaleppä |  overlaps more common *Tervaleppä* (tree) | 🌍☢ |  |
 | Tervaskanto |  overlaps more common *Tervaskanto* (stump) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tervaskanto)  |
 | Terä |  overlaps more common *Terä* (blade) | 🌍🧑²☢ |  |
-| Teräs |  overlaps more common *Teräs* (steel) | 🧑²☢ |  |
-| Terävä |  overlaps more common *Terävä* (sharp) | 🌍🧑²☢ |  |
+| Teräs |  overlaps more common *Teräs* (steel) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Teräs)  |
+| Terävä |  overlaps more common *Terävä* (sharp) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Terävä)  |
 | tet |  teth, a letter in hebrew etc: *ט*, causes bunch of problems with compounding | ☢ | [finnwn](https://sanat.csc.fi/w/index.php?search=tet)  |
 | Teva |  overlaps more common *Teva* (FIXME) | 🌍org☢ |  |
 | TI |  Texas Instruments | ⁈ |  |
 | Tie |  overlaps more common *Tie* (road) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tie)  |
-| Tienhaara |  overlaps more common *Tienhaara* (intersection) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tienhaara)  |
+| Tienhaara |  overlaps more common *Tienhaara* (intersection) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tienhaara) [enwikt](https://en.wiktionary.org/wiki/Tienhaara)  |
 | Tienlaita |  overlaps more common *Tienlaita* (roadside) | 🌍☢ |  |
 | Tienmutka |  overlaps more common *Tienmutka* (curb) | 🌍☢ |  |
 | Tiensivu |  overlaps more common *Tiensivu* (roadside) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tiensivu)  |
 | Tienvarsi |  overlaps more common *Tienvarsi* (roadside) | 🌍☢ |  |
-| Tienvieri |  overlaps more common *Tienvieri* (roadside) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tienvieri)  |
+| Tienvieri |  overlaps more common *Tienvieri* (roadside) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tienvieri) [enwikt](https://en.wiktionary.org/wiki/Tienvieri)  |
 | tietenkin |  usually seen as adverb (of course), but can be analysed as a form of *tieten* (knowingly) |  | [fiwikt](https://fi.wiktionary.org/wiki/tietenkin)  |
-| tietenkään |  usually seen as adverb (of course not), but can be analysed as a form of *tieten* (knowingly) |  |  |
+| tietenkään |  usually seen as adverb (of course not), but can be analysed as a form of *tieten* (knowingly) |  | [fiwikt](https://fi.wiktionary.org/wiki/tietenkään)  |
 | Tieto |  overlaps  very common *tieto* (knowledge). | org☢ |  |
 | Tieto |  overlaps more common *Tieto* (knowldege) | org☢ |  |
 | Tietty |  overlaps  very common *tietty* (specific). | 🌍☢ |  |
 | Tietty |  overlaps more common *Tietty* (surely) | 🌍☢ |  |
-| Tietäväinen |  overlaps more common *Tietäväinen* (wise) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tietäväinen)  |
-| Tiili |  overlaps more common *Tiili* (tile) | 🌍🧑²☢ |  |
+| Tietäväinen |  overlaps more common *Tietäväinen* (wise) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tietäväinen) [enwikt](https://en.wiktionary.org/wiki/Tietäväinen)  |
+| Tiili |  overlaps more common *Tiili* (tile) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tiili)  |
 | Tikapuu |  overlaps more common *Tikapuu* (ladder) | 🌍☢ |  |
-| Tikka |  overlaps more common *Tikka* (woodpecker) | 🌍🧑²org☢ |  |
+| Tikka |  overlaps more common *Tikka* (woodpecker) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Tikka)  |
 | Tikkari |  overlaps more common *Tikkari* (lollipop) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tikkari)  |
 | Tila |  overlaps very common *tila* “space“. | 🌍☢ |  |
 | Tila |  overlaps very common *tila* “space”. | 🌍☢ |  |
@@ -3886,7 +3911,7 @@ We link to all original sources for reference.
 | Tili |  overlaps more common *Tili* (account) | 🌍☢ |  |
 | Tilkka |  overlaps more common *Tilkka* (bit) | 🌍☢ |  |
 | Tilkku |  overlaps more common *Tilkku* (patch) | 🌍☢ |  |
-| Tilli |  overlaps more common *Tilli* (dill) | 🌍🧑²☢ |  |
+| Tilli |  overlaps more common *Tilli* (dill) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tilli)  |
 | Tippa |  overlaps more common *Tippa* (droplet) | 🌍☢ |  |
 | Tippi |  overlaps more common *Tippi* (tip) | 🌍☢ |  |
 | Tissi |  overlaps more common *Tissi* (boob) | 🌍☢ |  |
@@ -3907,16 +3932,16 @@ We link to all original sources for reference.
 | Toivo |  overlaps more common *Toivo* (hope) | 🌍🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Toivo)  |
 | Toki |  overlaps more common *Toki* (sure) | 🌍☢ |  |
 | Tollo |  overlaps more common *Tollo* (idiot) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tollo)  |
-| Tolppa |  overlaps more common *Tolppa* (balkon) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tolppa)  |
+| Tolppa |  overlaps more common *Tolppa* (balkon) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tolppa) [enwikt](https://en.wiktionary.org/wiki/Tolppa)  |
 | Tonni |  overlaps more common *Tonni* (tonne) | 🌍☢ |  |
-| Tontti |  overlaps more common *Tontti* (hut) | 🌍🧑²☢ |  |
+| Tontti |  overlaps more common *Tontti* (hut) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tontti)  |
 | Tonttimaa |  overlaps more common *Tonttimaa* (hutland) | 🌍☢ |  |
 | Tonttu |  overlaps more common *Tonttu* (elf) | 🌍☢ |  |
 | Torakka |  overlaps more common *Torakka* (roach) | 🌍☢ |  |
 | Tori |  overlaps more common *Tori* (market) | 🌍☢ |  |
-| Torni |  overlaps more common *Torni* (tower) | 🌍☢ |  |
-| Torppa |  overlaps more common *Torppa* (hut) | 🌍🧑²☢ |  |
-| Torvi |  overlaps more common *Torvi* (trumpet) | 🌍🧑²☢ |  |
+| Torni |  overlaps more common *Torni* (tower) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Torni)  |
+| Torppa |  overlaps more common *Torppa* (hut) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Torppa)  |
+| Torvi |  overlaps more common *Torvi* (trumpet) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Torvi)  |
 | Tos |  overlaps forms of very common *toi* (that), etc. | ⁈ |  |
 | tosiaan |  usually seen as adverb (real), but can be analysed as a form of *tosi* (true, truth) |  | [fiwikt](https://fi.wiktionary.org/wiki/tosiaan)  |
 | Tossu |  overlaps more common *Tossu* (shoe) | 🌍☢ |  |
@@ -3932,7 +3957,7 @@ We link to all original sources for reference.
 | Tuhlari |  overlaps more common *Tuhlari* (spender) | 🌍☢ |  |
 | Tuhti |  overlaps more common *Tuhti* (fat) | 🌍☢ |  |
 | Tuikku |  overlaps more common *Tuikku* (tea light) | 🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Tuikku)  |
-| Tuisku |  overlaps more common *Tuisku* (flurry) | 🌍🧑²🧑¹☢♂ |  |
+| Tuisku |  overlaps more common *Tuisku* (flurry) | 🌍🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Tuisku)  |
 | Tukala |  overlaps more common *Tukala* (slim) | 🌍☢ |  |
 | Tukeva |  overlaps more common *Tukeva* (fat) | 🌍☢ |  |
 | Tuki |  overlaps more common *Tuki* (support) | 🌍🧑²☢ |  |
@@ -3946,26 +3971,26 @@ We link to all original sources for reference.
 | Tulipalo |  overlaps more common *Tulipalo* (burn) | 🌍☢ |  |
 | Tulisija |  overlaps more common *Tulisija* (fire place) | 🌍☢ |  |
 | Tulivuori |  overlaps more common *Tulivuori* (volcano) | 🌍☢ |  |
-| Tulkki |  overlaps more common *Tulkki* (interpreter) | 🌍🧑²☢ |  |
-| Tulla |  overlaps more common *Tulla* (to come) | 🌍🧑²☢ |  |
+| Tulkki |  overlaps more common *Tulkki* (interpreter) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tulkki)  |
+| Tulla |  overlaps more common *Tulla* (to come) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tulla)  |
 | Tulli |  overlaps more common *Tulli* (customs) | 🌍org☢ |  |
 | Tulliliitto |  overlaps more common *Tulliliitto* (customs union) | org☢ |  |
 | Tulliportti |  overlaps more common *Tulliportti* (customs gate) | 🌍☢ |  |
-| Tulokas |  overlaps more common *Tulokas* (newcomer) | 🧑²☢ |  |
+| Tulokas |  overlaps more common *Tulokas* (newcomer) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tulokas)  |
 | Tulvamaa |  overlaps more common *Tulvamaa* (floodland) | 🌍☢ |  |
 | Tuma |  overlaps more common *Tuma* (cell) | 🧑²☢ |  |
 | Tumma |  overlaps more common *Tumma* (dark) | 🌍☢ |  |
 | Tunkio |  overlaps more common *Tunkio* (compost) | 🌍☢ |  |
 | Tunneli |  overlaps more common *Tunneli* (tunnel) | 🌍☢ |  |
 | Tunto |  overlaps more common *Tunto* (feel) | 🌍☢ |  |
-| Tunturi |  overlaps more common *Tunturi* (mountain) | 🌍🧑²org☢ |  |
+| Tunturi |  overlaps more common *Tunturi* (mountain) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Tunturi)  |
 | Tunturijärvi |  overlaps more common *Tunturijärvi* (mountain lake) | 🌍☢ |  |
 | Tunturikuru |  overlaps more common *Tunturikuru* (mountain valley) | 🌍☢ |  |
 | Tunturilampi |  overlaps more common *Tunturilampi* (mountain pond) | 🌍☢ |  |
 | Tuohi |  overlaps more common *Tuohi* (bark) | 🌍☢ |  |
 | Tuoksu |  overlaps more common *Tuoksu* (smell) | 🌍☢ |  |
 | Tuomenkukka |  overlaps more common *Tuomenkukka* (flower) | 🌍☢ |  |
-| Tuomi |  overlaps more common *Tuomi* (tree) | 🌍🧑²🧑¹☢♀ |  |
+| Tuomi |  overlaps more common *Tuomi* (tree) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Tuomi)  |
 | Tuonela |  overlaps more common *Tuonela* (hell) | 🌍⁈☢ |  |
 | Tuonnimmainen |  overlaps more common *Tuonnimmainen* (furthermost) | 🌍☢ |  |
 | Tuore |  overlaps more common *Tuore* (fresh) | 🌍☢ |  |
@@ -3990,16 +4015,16 @@ We link to all original sources for reference.
 | Tuulenpesä |  overlaps more common *Tuulenpesä* (wind nest) | 🌍☢ |  |
 | Tuulensuoja |  overlaps more common *Tuulensuoja* (wind shelter) | 🌍☢ |  |
 | Tuulentupa |  overlaps more common *Tuulentupa* (wind home) | 🌍☢ |  |
-| Tuuli |  overlaps more common *Tuuli* (wind) | 🌍🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Tuuli)  |
+| Tuuli |  overlaps more common *Tuuli* (wind) | 🌍🧑²🧑¹☢♀ | [fiwikt](https://fi.wiktionary.org/wiki/Tuuli) [enwikt](https://en.wiktionary.org/wiki/Tuuli)  |
 | Tuulihattu |  overlaps more common *Tuulihattu* (cake) | 🌍☢ |  |
 | Tuulimylly |  overlaps more common *Tuulimylly* (windmill) | 🌍☢ |  |
 | Tuulinen |  overlaps more common *Tuulinen* (windy) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tuulinen)  |
 | Tuulispää |  overlaps more common *Tuulispää* (windhead) | 🌍☢ |  |
-| Tuuri |  overlaps more common *Tuuri* (luck) | 🌍🧑²🧑¹☢ |  |
-| Tuutti |  overlaps more common *Tuutti* (cone) | 🧑²☢ |  |
+| Tuuri |  overlaps more common *Tuuri* (luck) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Tuuri)  |
+| Tuutti |  overlaps more common *Tuutti* (cone) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tuutti)  |
 | tv |  tele-visio |  |  |
 | Tykki |  overlaps more common *Tykki* (cannon) | 🌍🧑²☢ |  |
-| Tylli |  overlaps more common *Tylli* (tutu) | 🌍🧑²☢ |  |
+| Tylli |  overlaps more common *Tylli* (tutu) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tylli)  |
 | Tylsä |  overlaps more common *Tylsä* (broing) | 🌍☢ |  |
 | Tynkä |  overlaps more common *Tynkä* (stub) | 🌍☢ |  |
 | Typpi |  overlaps more common *Typpi* (nitrogen) | 🌍🧑²☢ |  |
@@ -4007,9 +4032,9 @@ We link to all original sources for reference.
 | Tyrni |  overlaps more common *Tyrni* (berry) | 🌍🧑²☢ |  |
 | Tyvi |  overlaps more common *Tyvi* (FIXME) | 🌍☢ |  |
 | Tyyni |  overlaps more common *Tyyni* (FIXME) | 🌍🧑²🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Tyyni)  |
-| Tähkä |  overlaps more common *Tähkä* (corn) | 🌍🧑²☢ |  |
+| Tähkä |  overlaps more common *Tähkä* (corn) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tähkä)  |
 | Tähkäpää |  overlaps more common *Tähkäpää* (cornrow) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tähkäpää) [enwikt](https://en.wiktionary.org/wiki/Tähkäpää)  |
-| Tähti |  overlaps more common *Tähti* (star) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tähti)  |
+| Tähti |  overlaps more common *Tähti* (star) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Tähti) [enwikt](https://en.wiktionary.org/wiki/Tähti)  |
 | Tähtinen |  overlaps more common *Tähtinen* (starred) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tähtinen)  |
 | Täkäläinen |  overlaps more common *Täkäläinen* (them there) | 🌍☢ |  |
 | Tälli |  overlaps more common *Tälli* (hit) | 🌍☢ |  |
@@ -4017,16 +4042,16 @@ We link to all original sources for reference.
 | täyteen |  usually seen as adverb (up to brink), but can be analysed as illative of the adjective *täysi* (full) |  |  |
 | Tökerö |  overlaps more common *Tökerö* (inelegant) | 🌍☢ |  |
 | Tölkki |  overlaps more common *Tölkki* (can) | 🌍☢ |  |
-| Tölli |  overlaps more common *Tölli* (hut) | 🌍🧑²☢ |  |
+| Tölli |  overlaps more common *Tölli* (hut) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Tölli)  |
 | Töllö |  overlaps more common *Töllö* (tv) | 🌍☢ |  |
-| Törmä |  overlaps more common *Törmä* (bay cliff) | 🌍🧑²☢ |  |
+| Törmä |  overlaps more common *Törmä* (bay cliff) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Törmä)  |
 | Töyssy |  overlaps more common *Töyssy* (bump) | 🌍☢ |  |
 | Uhrikivi |  overlaps more common *Uhrikivi* (victim rock) | 🌍☢ |  |
 | Uhrilehto |  overlaps more common *Uhrilehto* (sacred grounds) | 🌍☢ |  |
 | Uhrilähde |  overlaps more common *Uhrilähde* (victim source) | 🌍☢ |  |
 | Uimaranta |  overlaps more common *Uimaranta* (beach) | 🌍☢ |  |
 | Uimari |  overlaps more common *Uimari* (swimmer) | 🌍🧑²☢ |  |
-| Uitto |  overlaps more common *Uitto* (FIXME) | 🌍🧑²☢ |  |
+| Uitto |  overlaps more common *Uitto* (FIXME) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Uitto)  |
 | Uittohaka |  overlaps more common *Uittohaka* (FIXME) | 🌍☢ |  |
 | Uittokanava |  overlaps more common *Uittokanava* (canal) | 🌍☢ |  |
 | Uittoruuhi |  overlaps more common *Uittoruuhi* (boat) | 🌍☢ |  |
@@ -4043,7 +4068,7 @@ We link to all original sources for reference.
 | Ulkosatama |  overlaps more common *Ulkosatama* (outer harbour) | 🌍☢ |  |
 | Ullakko |  overlaps more common *Ullakko* (attic) | 🌍🧑²☢ |  |
 | Ulommainen |  overlaps more common *Ulommainen* (outermost) | 🌍☢ |  |
-| ulos |  adverb (out) |  | [fiwikt](https://fi.wiktionary.org/wiki/ulos)  |
+| ulos |  adverb (out) |  | [fiwikt](https://fi.wiktionary.org/wiki/ulos) [enwikt](https://en.wiktionary.org/wiki/ulos)  |
 | ulos |  adposition (out of) when can be attached to a elative NP, otherwise adverb (out) |  |  |
 | Ulpukka |  overlaps more common *Ulpukka* (a flower) | 🧑¹☢ |  |
 | Umpinainen |  overlaps more common *Umpinainen* (blocked) | 🌍☢ |  |
@@ -4063,7 +4088,7 @@ We link to all original sources for reference.
 | URL |  Uniform Resource Locator |  |
 | USA |  United States of America | 🌍 |  |
 | usein |  usually seen as adverb (often), but can be analysed as a form of *usea* (many) |  | [fiwikt](https://fi.wiktionary.org/wiki/usein)  |
-| Usko |  overlaps more common *Usko* (belief) | 🌍🧑¹☢♂ |  |
+| Usko |  overlaps more common *Usko* (belief) | 🌍🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Usko)  |
 | uudelleen |  usually seen as adverb (again), but can be analysed as possessive allative of the adjective *uusi* (new) |  | [fiwikt](https://fi.wiktionary.org/wiki/uudelleen)  |
 | uudestaan |  usually seen as adverb (again), but can be analysed as possessive elative of the adjective *uusi* (new) |  | [fiwikt](https://fi.wiktionary.org/wiki/uudestaan)  |
 | Uudistalo |  overlaps more common *Uudistalo* (new house) | 🌍☢ |  |
@@ -4072,9 +4097,9 @@ We link to all original sources for reference.
 | Uupunut |  overlaps more common *Uupunut* (tired) | 🌍☢ |  |
 | Uuras |  overlaps more common *Uuras* (FIXME) | 🧑¹☢ |  |
 | Uurna |  overlaps more common *Uurna* (urn) | 🌍☢ |  |
-| Uutinen |  overlaps more common *Uutinen* (news) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Uutinen)  |
+| Uutinen |  overlaps more common *Uutinen* (news) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Uutinen) [enwikt](https://en.wiktionary.org/wiki/Uutinen)  |
 | Uuttera |  overlaps more common *Uuttera* (busy) | 🌍☢ |  |
-| Vaahtera |  overlaps more common *Vaahtera* (maple) | 🌍🧑²☢ |  |
+| Vaahtera |  overlaps more common *Vaahtera* (maple) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vaahtera)  |
 | Vaahto |  overlaps more common *Vaahto* (foam) | org☢ |  |
 | Vaaka |  overlaps more common *Vaaka* (scale) | org☢ |  |
 | vaan |  but rather, as cconj, see VISK § 1106 |  |  |
@@ -4082,16 +4107,16 @@ We link to all original sources for reference.
 | vaan |  really indeed, as adverb, “ei nyt vaan pysty” |  | [fiwikt](https://fi.wiktionary.org/wiki/vaan)  |
 | Vaan |  overlaps more common *Vaan* (only) | 🧑²☢ |  |
 | Vaania |  overlaps more common *Vaania* (stalk) | 🌍☢ |  |
-| Vaara |  overlaps more common *Vaara* (danger) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vaara)  |
+| Vaara |  overlaps more common *Vaara* (danger) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vaara) [enwikt](https://en.wiktionary.org/wiki/Vaara)  |
 | Vaaranalainen |  overlaps more common *Vaaranalainen* (extinct) | 🌍☢ |  |
 | Vaaranlaki |  overlaps more common *Vaaranlaki* (danger top) | 🌍☢ |  |
 | Vaaranrinne |  overlaps more common *Vaaranrinne* (danger hill) | 🌍☢ |  |
 | Vadelma |  overlaps more common *Vadelma* (raspberry) | 🌍☢ |  |
 | Vaha |  overlaps more common *Vaha* (wax) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vaha)  |
 | Vahti |  overlaps more common *Vahti* (guard) | 🌍☢ |  |
-| vai |  Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or). | 🗪 |  |
+| vai |  Mande language spoken by the Vai people (Wikipedia), or the people themself, but overlaps  very common *vai* (exclusive or). | ☢🗪 |  |
 | vai |  really so, as adverb, colloquial, “ai on vai” |  |  |
-| vai |  or, as cconj, used in contrastive position only, “kissoja vai koiria” | ☢ |  |
+| vai |  or, as cconj, used in contrastive position only, “kissoja vai koiria” |  |  |
 | vaikk |  even though, as subordinating conjunction, colloquial “vaikka ärsyttäisikin”, see VISK § 816 |  |  |
 | vaikka |  REMOVED |  |  |
 | vaikka |  even, as adverb, “vaikka mitä”, ‘vaikka kuinka paljon’ see VISK § 841 |  |  |
@@ -4110,12 +4135,12 @@ We link to all original sources for reference.
 | vallassa |  possessed by smth., genitive complement “pahan hengen vallassa” |  |  |
 | vallasta |  dethroned, “kuningas syöstiin vallasta” |  |  |
 | vallasta |  exorcised of smth., genitive complement “pahan hengen vallasta” |  |  |
-| Valli |  overlaps more common *Valli* (wall) | 🌍🧑²🧑¹☢ |  |
+| Valli |  overlaps more common *Valli* (wall) | 🌍🧑²🧑¹☢ | [enwikt](https://en.wiktionary.org/wiki/Valli)  |
 | Valmis |  overlaps more common *Valmis* (ready) | 🧑¹☢♂ |  |
-| Valo |  overlaps more common *Valo* (light) | 🌍🧑²🧑¹☢♂ |  |
-| Valovirta |  overlaps more common *Valovirta* (light stream) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Valovirta)  |
-| Valpas |  overlaps more common *Valpas* (alert) | 🧑²☢ |  |
-| Valta |  overlaps more common *Valta* (power) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Valta)  |
+| Valo |  overlaps more common *Valo* (light) | 🌍🧑²🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Valo)  |
+| Valovirta |  overlaps more common *Valovirta* (light stream) | 🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Valovirta) [enwikt](https://en.wiktionary.org/wiki/Valovirta)  |
+| Valpas |  overlaps more common *Valpas* (alert) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Valpas)  |
+| Valta |  overlaps more common *Valta* (power) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Valta) [enwikt](https://en.wiktionary.org/wiki/Valta)  |
 | Valtakunta |  overlaps more common *Valtakunta* (kingdom) | 🌍☢ |  |
 | Valtatie |  overlaps more common *Valtatie* (highway) | org☢ | [fiwikt](https://fi.wiktionary.org/wiki/Valtatie)  |
 | Valtimo |  overlaps more common *Valtimo* (artery) | 🌍☢ |  |
@@ -4126,8 +4151,8 @@ We link to all original sources for reference.
 | Vana |  overlaps more common *Vana* (stripe) | 🧑²☢ |  |
 | Vanha |  overlaps more common *Vanha* (old) | 🌍🧑²☢ |  |
 | vanhastaan |  usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old) |  | [fiwikt](https://fi.wiktionary.org/wiki/vanhastaan)  |
-| Vankka |  overlaps more common *Vankka* (sturdy) | 🌍🧑²☢ |  |
-| Vanne |  overlaps more common *Vanne* (hoop) | 🌍🧑²☢ |  |
+| Vankka |  overlaps more common *Vankka* (sturdy) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vankka)  |
+| Vanne |  overlaps more common *Vanne* (hoop) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vanne)  |
 | Vantaa |  PROPN_VAINAA | 🌍 | [enwikt](https://en.wiktionary.org/wiki/Vantaa)  |
 | Vappu |  overlaps more common *Vappu* (may day) | 🌍🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Vappu)  |
 | Vara |  overlaps more common *Vara* (spare) | 🧑²☢ |  |
@@ -4135,7 +4160,7 @@ We link to all original sources for reference.
 | Varaton |  overlaps more common *Varaton* (broke) | 🌍☢ |  |
 | Varikko |  overlaps more common *Varikko* (pit stop) | 🌍☢ |  |
 | Varis |  overlaps more common *Varis* (raven) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Varis)  |
-| Varjo |  overlaps more common *Varjo* (shadow) | 🌍🧑²☢ |  |
+| Varjo |  overlaps more common *Varjo* (shadow) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Varjo) [enwikt](https://en.wiktionary.org/wiki/Varjo)  |
 | Varma |  overlaps more common *Varma* (sure) | 🌍org🧑¹☢♀ | [enwikt](https://en.wiktionary.org/wiki/Varma)  |
 | varmaan |  usually seen as adverb (probably), but can be analysed as illative of the adjective *varma* (secure) |  |
 | Varo |  overlaps forms of very common *varoa* (beware). | 🌍🧑² |  |
@@ -4146,12 +4171,12 @@ We link to all original sources for reference.
 | varsin |  usually seen as adverb (really), but can be analysed as a form of *varsi* (stem) |  |
 | Vartalo |  overlaps more common *Vartalo* (body) | 🌍☢ |  |
 | Vartija |  overlaps more common *Vartija* (guard) | 🌍☢ |  |
-| Vartio |  overlaps more common *Vartio* (guard) | 🌍🧑²☢ |  |
+| Vartio |  overlaps more common *Vartio* (guard) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vartio)  |
 | Vartti |  overlaps more common *Vartti* (quarter) | 🌍☢ |  |
 | Varuskunta |  overlaps more common *Varuskunta* (military stuff) | 🌍☢ |  |
 | Varvas |  overlaps more common *Varvas* (toe) | 🧑²☢ |  |
 | Vasa |  overlaps more common *Vasa* (baby deer) | 🌍☢ |  |
-| Vasara |  overlaps more common *Vasara* (hammer) | 🌍🧑²org☢ |  |
+| Vasara |  overlaps more common *Vasara* (hammer) | 🌍🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Vasara)  |
 | Vasikka |  overlaps more common *Vasikka* (baby goat) | 🌍☢ |  |
 | Vasikkahaka |  overlaps more common *Vasikkahaka* (baby goat stuff) | 🌍☢ |  |
 | Vaski |  overlaps more common *Vaski* (copper) | 🌍☢ |  |
@@ -4159,7 +4184,7 @@ We link to all original sources for reference.
 | vastaan |  adverb (against) |  |  |
 | Vastakarva |  overlaps more common *Vastakarva* (FIXME) | org☢ |  |
 | Vastamaa |  overlaps more common *Vastamaa* (opposite land) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vastamaa)  |
-| Vastamäki |  overlaps more common *Vastamäki* (uphill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vastamäki)  |
+| Vastamäki |  overlaps more common *Vastamäki* (uphill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vastamäki) [enwikt](https://en.wiktionary.org/wiki/Vastamäki)  |
 | Vastaranta |  overlaps more common *Vastaranta* (opposite beach) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vastaranta)  |
 | Vastarinne |  overlaps more common *Vastarinne* (uphill) | 🌍☢ |  |
 | Vastike |  overlaps more common *Vastike* (FIXME) | 🌍☢ |  |
@@ -4185,7 +4210,7 @@ We link to all original sources for reference.
 | Veneranta |  overlaps more common *Veneranta* (boat bay) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Veneranta)  |
 | Ventti |  overlaps more common *Ventti* (blackjack) | 🌍☢ |  |
 | Venymä |  overlaps more common *Venymä* (stretch) | 🌍☢ |  |
-| Verho |  overlaps more common *Verho* (curtain) | 🌍☢ |  |
+| Verho |  overlaps more common *Verho* (curtain) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Verho)  |
 | Verkko |  overlaps more common *Verkko* (net) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Verkko)  |
 | Verohallinto |  overlaps more common *Verohallinto* (tax ministry) | org☢ |  |
 | Verohallitus |  overlaps more common *Verohallitus* (tax ministry) | ⁈☢ |  |
@@ -4193,7 +4218,7 @@ We link to all original sources for reference.
 | Veräjä |  overlaps more common *Veräjä* (pen) | 🌍☢ |  |
 | Vesihiisi |  overlaps more common *Vesihiisi* (water hiisi) | 🧑²☢ |  |
 | Vesikivi |  overlaps more common *Vesikivi* (water rock) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vesikivi)  |
-| Vesikko |  overlaps more common *Vesikko* (otter) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vesikko)  |
+| Vesikko |  overlaps more common *Vesikko* (otter) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vesikko) [enwikt](https://en.wiktionary.org/wiki/Vesikko)  |
 | Vesilasku |  overlaps more common *Vesilasku* (water bill) | 🌍☢ |  |
 | Vesinoro |  overlaps more common *Vesinoro* (water stream) | 🌍☢ |  |
 | Vesiperä |  overlaps more common *Vesiperä* (fail) | 🌍☢ |  |
@@ -4206,38 +4231,42 @@ We link to all original sources for reference.
 | Vientiluotto |  overlaps more common *Vientiluotto* (export credit) | org☢ |  |
 | Vieras |  overlaps more common *Vieras* (foreign, guest) | 🧑²☢ |  |
 | Vieremä |  overlaps more common *Vieremä* (avalanche) | 🌍☢ |  |
-| Vieri |  overlaps more common *Vieri* (vicinity) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vieri)  |
+| Vieri |  overlaps more common *Vieri* (vicinity) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vieri) [enwikt](https://en.wiktionary.org/wiki/Vieri)  |
 | Vierusta |  overlaps more common *Vierusta* (vicinity) | 🌍☢ |  |
 | Vietti |  overlaps more common *Vietti* (interest) | org🧑¹☢ |  |
 | Vietto |  overlaps more common *Vietto* (time spending) | 🌍☢ |  |
 | Vietävä |  overlaps more common *Vietävä* (damned) | 🌍☢ |  |
 | Vihainen |  overlaps more common *Vihainen* (angry) | 🌍☢ |  |
-| Vihanta |  overlaps more common *Vihanta* (fruitful) | 🌍🧑²☢ |  |
+| Vihanta |  overlaps more common *Vihanta* (fruitful) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vihanta)  |
 | Vihattu |  overlaps more common *Vihattu* (hated) | 🌍☢ |  |
 | vihdoin |  usually seen as adverb (finally), but overlaps instructive of the noun *vihta* (birch twig) |  |
 | Vihi |  overlaps more common *Vihi* (trail) | 🌍☢ |  |
-| Vihko |  overlaps more common *Vihko* (block) | 🌍🧑²☢ |  |
-| Vihma |  overlaps more common *Vihma* (FIXME) | 🧑²☢ |  |
+| Vihko |  overlaps more common *Vihko* (block) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vihko)  |
+| Vihma |  overlaps more common *Vihma* (FIXME) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vihma)  |
 | Vihne |  overlaps more common *Vihne* (FIXME) | 🧑²☢ |  |
-| Viholainen |  overlaps more common *Viholainen* (enemy) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Viholainen)  |
+| Viholainen |  overlaps more common *Viholainen* (enemy) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Viholainen) [enwikt](https://en.wiktionary.org/wiki/Viholainen)  |
 | Vihollinen |  overlaps more common *Vihollinen* (enemy) | 🌍☢ |  |
 | Vihtori |  overlaps more common *Vihtori* (FIXME) | 🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Vihtori)  |
 | Viidakko |  overlaps more common *Viidakko* (jungle) | 🌍☢ |  |
-| Viikari |  overlaps more common *Viikari* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Viikari)  |
+| Viikari |  overlaps more common *Viikari* (FIXME) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Viikari) [enwikt](https://en.wiktionary.org/wiki/Viikari)  |
 | Viikate |  overlaps more common *Viikate* (reap) | 🎶🧑²☢ |  |
 | Viikuna |  overlaps more common *Viikuna* (fig) | 🌍☢ |  |
 | Viileke |  overlaps more common *Viileke* (cold stuff) | 🌍☢ |  |
 | Viili |  overlaps more common *Viili* (sour milk) | 🌍☢ |  |
 | Viimeinen |  overlaps more common *Viimeinen* (last) | 🌍☢ |  |
-| Viinamäki |  overlaps more common *Viinamäki* (spirithill) | 🌍🧑²☢ |  |
+| Viinamäki |  overlaps more common *Viinamäki* (spirithill) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Viinamäki)  |
 | Viinimaa |  overlaps more common *Viinimaa* (wineland) | 🌍☢ |  |
-| Viiri |  overlaps more common *Viiri* (fan) | 🌍🧑²☢ |  |
-| Viiru |  overlaps more common *Viiru* (stripe) | 🌍🧑²☢ |  |
+| Viiri |  overlaps more common *Viiri* (fan) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Viiri)  |
+| Viiru |  overlaps more common *Viiru* (stripe) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Viiru)  |
 | Viisari |  overlaps more common *Viisari* (pointer) | 🌍☢ |  |
 | Viisi |  overlaps more common *Viisi* (five) | 🌍☢ |  |
 | Viisikanta |  overlaps more common *Viisikanta* (pentagon) | 🌍☢ |  |
 | Viisikko |  overlaps more common *Viisikko* (group of five) | 🌍☢ |  |
+| viisikymmentä |  fifty |  |  |
 | Viisikymppinen |  overlaps more common *Viisikymppinen* (fifty-yo) | 🌍☢ |  |
+| viisisataa |  five hundreds |  |  |
+| viisitoista |  fifteen |  |  |
+| viisituhatta |  five thousands |  |  |
 | Viitonen |  overlaps more common *Viitonen* (five) | 🌍☢ |  |
 | Viitta |  overlaps more common *Viitta* (cape) | 🌍☢ |  |
 | Viive |  overlaps more common *Viive* (delay) | 🧑¹☢ |  |
@@ -4248,20 +4277,20 @@ We link to all original sources for reference.
 | Viljava |  overlaps more common *Viljava* (grainy) | 🌍☢ |  |
 | Viljavarasto |  overlaps more common *Viljavarasto* (grain silo) | 🌍☢ |  |
 | Viljavuori |  overlaps more common *Viljavuori* (grainmountain) | 🌍☢ |  |
-| Vilkas |  overlaps more common *Vilkas* (active) | 🧑²org☢ |  |
+| Vilkas |  overlaps more common *Vilkas* (active) | 🧑²org☢ | [enwikt](https://en.wiktionary.org/wiki/Vilkas)  |
 | Vilke |  overlaps more common *Vilke* (twink) | 🧑²☢ |  |
 | Vilkku |  overlaps more common *Vilkku* (blink) | 🌍🧑¹☢ |  |
-| Villa |  overlaps more common *Villa* (wool) | 🌍🧑²☢ |  |
+| Villa |  overlaps more common *Villa* (wool) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Villa)  |
 | Villi |  overlaps more common *Villi* (wild) | 🌍🧑²☢ |  |
 | Villikko |  overlaps more common *Villikko* (wild) | 🌍☢ |  |
-| Vilpas |  overlaps more common *Vilpas* (FIXME) | 🧑²☢ |  |
+| Vilpas |  overlaps more common *Vilpas* (FIXME) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vilpas)  |
 | Vilpoinen |  overlaps more common *Vilpoinen* (breezy) | 🌍☢ |  |
 | Vilpola |  overlaps more common *Vilpola* (FIXME) | 🌍☢ |  |
 | Vilu |  overlaps more common *Vilu* (cold) | 🌍☢ |  |
 | Vimma |  overlaps more common *Vimma* (berserk) | 🧑²☢ |  |
 | Vinka |  overlaps more common *Vinka* (FIXME) | 🌍☢ |  |
 | Vinkkeli |  overlaps more common *Vinkkeli* (corner) | 🌍☢ |  |
-| Vinkki |  overlaps more common *Vinkki* (hint) | 🌍🧑²☢ |  |
+| Vinkki |  overlaps more common *Vinkki* (hint) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vinkki)  |
 | Vinkua |  overlaps more common *Vinkua* (squeak) | 🌍☢ |  |
 | Vinkuva |  overlaps more common *Vinkuva* (squeaky) | 🌍☢ |  |
 | vinossa |  usually seen as adverb (tilted), but can be analysed as inessive of the adjective *vino* (diagonal) |  |
@@ -4282,20 +4311,20 @@ We link to all original sources for reference.
 | Voirasia |  overlaps more common *Voirasia* (butter box) | 🌍☢ |  |
 | Voitto |  overlaps more common *Voitto* (victory) | 🌍🧑¹☢♂ | [enwikt](https://en.wiktionary.org/wiki/Voitto)  |
 | Voivuori |  overlaps more common *Voivuori* (butter mountain) | 🌍☢ |  |
-| Voltti |  overlaps more common *Voltti* (volt) | 🌍☢ |  |
+| Voltti |  overlaps more common *Voltti* (volt) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Voltti)  |
 | Votka |  overlaps more common *Votka* (vodka) | 🌍☢ |  |
 | Vouti |  overlaps more common *Vouti* (tax collector) | 🌍🧑²☢ |  |
 | VR |  Valtion Rautatiet | org |  |
 | Vuo |  overlaps more common *Vuo* (stream), also forms of *vuosi* (year) etc. | 🧑²☢ |  |
 | Vuohennokka |  overlaps more common *Vuohennokka* (goat tip) | 🌍☢ |  |
-| Vuohi |  overlaps more common *Vuohi* (goat) | 🌍☢ |  |
+| Vuohi |  overlaps more common *Vuohi* (goat) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Vuohi)  |
 | vuoksi |  noun (high tide) |  |
 | vuoksi |  adposition (because of) when can be attached to a genitive NP, otherwise noun forms of *vuo* (stream), *vuoksi* (high tide) |  |  |
 | Vuono |  overlaps more common *Vuono* (fjord) | 🌍☢ |  |
 | Vuorenrinne |  overlaps more common *Vuorenrinne* (mountain hill) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vuorenrinne)  |
 | Vuori |  overlaps more common *Vuori* (mountain) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Vuori) [enwikt](https://en.wiktionary.org/wiki/Vuori)  |
 | Vuoripuro |  overlaps more common *Vuoripuro* (mountain stream) | 🌍☢ |  |
-| Vuoristo |  overlaps more common *Vuoristo* (mountain range) | 🌍🧑²☢ |  |
+| Vuoristo |  overlaps more common *Vuoristo* (mountain range) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Vuoristo)  |
 | Vuoristolampi |  overlaps more common *Vuoristolampi* (mountain pond) | 🌍☢ |  |
 | Vuotava |  overlaps more common *Vuotava* (leaky) | 🌍☢ |  |
 | Vuoto |  overlaps more common *Vuoto* (leak) | 🌍☢ |  |
@@ -4305,23 +4334,23 @@ We link to all original sources for reference.
 | vähintään |  usually seen as adverb (at least), but can be analysed as a form of *vähän* (a little) |  | [fiwikt](https://fi.wiktionary.org/wiki/vähintään)  |
 | vähän |  usually seen as adverb (less), but can be analysed as genetive of the adjective *vähempi* (lesser) |  |  |
 | Väistö |  overlaps more common *Väistö* (dodge) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Väistö)  |
-| Väkevä |  overlaps more common *Väkevä* (strong) | 🌍🧑²☢ |  |
+| Väkevä |  overlaps more common *Väkevä* (strong) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Väkevä)  |
 | Väkinäinen |  overlaps more common *Väkinäinen* (forced) | 🌍☢ |  |
 | Väli |  overlaps more common *Väli* (space) | 🧑²☢ |  |
 | Välikkö |  overlaps more common *Välikkö* (inbetween) | 🌍☢ |  |
 | Välikorva |  overlaps more common *Välikorva* (middle ear) | 🌍☢ |  |
-| Välinen |  overlaps more common *Välinen* (between) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Välinen)  |
+| Välinen |  overlaps more common *Välinen* (between) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Välinen) [enwikt](https://en.wiktionary.org/wiki/Välinen)  |
 | Välipohja |  overlaps more common *Välipohja* (middle bottom) | 🌍☢ |  |
 | Välitila |  overlaps more common *Välitila* (middle space) | 🌍☢ |  |
 | Välittäjä |  overlaps more common *Välittäjä* (transmitter) | 🌍☢ |  |
 | Välivesi |  overlaps more common *Välivesi* (middle water) | 🌍☢ |  |
 | Välivuori |  overlaps more common *Välivuori* (middle mountain) | 🌍☢ |  |
-| Väljä |  overlaps more common *Väljä* (wide) | 🌍☢ |  |
+| Väljä |  overlaps more common *Väljä* (wide) | 🌍☢ | [enwikt](https://en.wiktionary.org/wiki/Väljä)  |
 | Välke |  overlaps more common *Välke* (blink) | 🧑²☢ |  |
-| Välkky |  overlaps more common *Välkky* (smart) | 🌍🧑²☢ |  |
+| Välkky |  overlaps more common *Välkky* (smart) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Välkky)  |
 | Välttävä |  overlaps more common *Välttävä* (passing) | 🌍☢ |  |
 | Vänkä |  overlaps more common *Vänkä* (wonky) | 🌍☢ |  |
-| Väre |  overlaps more common *Väre* (ripple) | 🧑²☢ |  |
+| Väre |  overlaps more common *Väre* (ripple) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Väre)  |
 | Väri |  overlaps more common *Väri* (colour) | 🌍☢ |  |
 | Västäräkki |  overlaps more common *Västäräkki* (tit) | 🌍☢ |  |
 | Väylä |  overlaps more common *Väylä* (way) | 🌍☢ |  |
@@ -4329,7 +4358,7 @@ We link to all original sources for reference.
 | Vääntäjä |  overlaps more common *Vääntäjä* (twister) | 🌍☢ |  |
 | Vääntö |  overlaps more common *Vääntö* (twist) | 🌍☢ |  |
 | Väärtti |  overlaps more common *Väärtti* (worth) | 🌍☢ |  |
-| Väärä |  overlaps more common *Väärä* (wrong) | 🌍🧑²☢ |  |
+| Väärä |  overlaps more common *Väärä* (wrong) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Väärä)  |
 | WAP |  Wireles Application Protocol |  |  |
 | WC |  Water Closet |  | [enwikt](https://en.wiktionary.org/wiki/WC)  |
 | WHO |  World Health Organisation |  |  |
@@ -4341,6 +4370,10 @@ We link to all original sources for reference.
 | XML |  Extensible Markup Language |  |  |
 | Y2K |  Year 2000 | ⏰ |  |
 | yhdessä |  usually seen as adverb (together), but can be analysed as inessive of the adjective *yksi* (one) |  | [fiwikt](https://fi.wiktionary.org/wiki/yhdessä)  |
+| yhdeksänkymmentä |  ninety |  | [fiwikt](https://fi.wiktionary.org/wiki/yhdeksänkymmentä)  |
+| yhdeksänsataa |  nine hundreds |  |  |
+| yhdeksäntoista |  nineteen |  |  |
+| yhdeksäntuhatta |  nine thousands |  |  |
 | yhteensä |  usually seen as adverb (altogether), but can be analysed as a form of *yksi* (one) |  | [fiwikt](https://fi.wiktionary.org/wiki/yhteensä)  |
 | Yhteislaidun |  overlaps more common *Yhteislaidun* (common greens) | 🌍☢ |  |
 | Yhtiö |  overlaps more common *Yhtiö* (company) | 🌍☢ |  |
@@ -4352,8 +4385,9 @@ We link to all original sources for reference.
 | Yksinäinen |  overlaps more common *Yksinäinen* (lonely) | 🌍☢ |  |
 | yksinään |  usually seen as adverb (alone), but can be analysed as a form of *yksi* (one) |  | [fiwikt](https://fi.wiktionary.org/wiki/yksinään) [enwikt](https://en.wiktionary.org/wiki/yksinään)  |
 | Yksipuinen |  overlaps more common *Yksipuinen* (single tree) | 🌍☢ |  |
+| yksitoista |  eleven |  |  |
 | yksistään |  usually seen as adverb (by --self), but can be analysed as a form of *yksi* (one) |  |  |
-| Ylhäinen |  overlaps more common *Ylhäinen* (upper) | 🌍🧑²☢ |  |
+| Ylhäinen |  overlaps more common *Ylhäinen* (upper) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ylhäinen)  |
 | Ylikäytävä |  overlaps more common *Ylikäytävä* (overpass) | 🌍☢ |  |
 | Ylimeno |  overlaps more common *Ylimeno* (overapss) | 🌍☢ |  |
 | Ylimmäinen |  overlaps more common *Ylimmäinen* (highest) | 🌍☢ |  |
@@ -4363,15 +4397,15 @@ We link to all original sources for reference.
 | Yltiö |  overlaps more common *Yltiö* (over) | 🌍☢ |  |
 | Yläleuka |  overlaps more common *Yläleuka* (upper chin) | 🌍☢ |  |
 | Ylämaa |  overlaps more common *Ylämaa* (highlands) | 🌍☢ |  |
-| Ylämäki |  overlaps more common *Ylämäki* (uphill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ylämäki)  |
+| Ylämäki |  overlaps more common *Ylämäki* (uphill) | 🌍🧑²☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ylämäki) [enwikt](https://en.wiktionary.org/wiki/Ylämäki)  |
 | Ylänkö |  overlaps more common *Ylänkö* (highlands) | 🌍🧑²☢ |  |
-| Ylänne |  overlaps more common *Ylänne* (highlands) | 🌍🧑²☢ |  |
+| Ylänne |  overlaps more common *Ylänne* (highlands) | 🌍🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Ylänne)  |
 | Yläpohja |  overlaps more common *Yläpohja* (higher bottom) | 🌍☢ |  |
 | Yläpää |  overlaps more common *Yläpää* (head) | 🌍☢ |  |
 | Ylärinne |  overlaps more common *Ylärinne* (uphill) | 🌍☢ | [fiwikt](https://fi.wiktionary.org/wiki/Ylärinne)  |
 | Ylävirta |  overlaps more common *Ylävirta* (upstream) | 🌍☢ |  |
 | Ylävä |  overlaps more common *Ylävä* (highlands) | 🌍☢ |  |
-| ylös |  adverb (upwards) |  | [fiwikt](https://fi.wiktionary.org/wiki/ylös)  |
+| ylös |  adverb (upwards) |  | [fiwikt](https://fi.wiktionary.org/wiki/ylös) [enwikt](https://en.wiktionary.org/wiki/ylös)  |
 | ylös |  adposition (up from) when can be attached to a partitive NP, otherwise adverb (upwards) |  |  |
 | Ymmyrkäinen |  overlaps more common *Ymmyrkäinen* (confused) | 🌍☢ |  |
 | Ympyriäinen |  overlaps more common *Ympyriäinen* (circular) | 🌍☢ |  |
@@ -4380,7 +4414,7 @@ We link to all original sources for reference.
 | ynnä |  plus, as an adverb |  |  |
 | ynnä |  and, as co-ordinating conjunction, rare |  |  |
 | Ynnä |  overlaps more common *Ynnä* (plus) | org☢ |  |
-| Yritys |  overlaps more common *Yritys* (company) | 🧑²☢ |  |
+| Yritys |  overlaps more common *Yritys* (company) | 🧑²☢ | [enwikt](https://en.wiktionary.org/wiki/Yritys)  |
 | Yrtti |  overlaps more common *Yrtti* (herb) | 🌍☢ |  |
 | Yrttitarha |  overlaps more common *Yrttitarha* (herb garden) | 🌍☢ |  |
 | Yökkö |  overlaps more common *Yökkö* (night fly) | 🌍☢ |  |
