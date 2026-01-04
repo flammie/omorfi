@@ -81,3 +81,18 @@ gutenberg-fi: *huomautuksesi on suorastaan nerokas -- sanoi Lauri* (I am gussing
 
 1. your remark is absolutely brilliant, Lauri said
 1. your remark is swamp bird's smart, Lauri said
+
+## Tyynen valtameri
+
+Ambiguity of:
+
+1. tyyni, adj: calm, primarily used of bodies of water
+1. Tyyni, Proper noun: Pacific, as in the Ocean
+1. Tyyne, Proper noun: Finnish woman's name, perhaps old-fashioned
+
+YLE news: **Kuvasarja Yhdysvaltain tuhoamasta veneestä Tyynellä valtamerellä.**
+
+1. Images of a vessel detroyed by USA on a Calm ocean
+1. Images of a vessel destroyed by USA on Pacific Ocean
+1. Images of a vessel destroyed by USA on Tyyne's Ocean
+
