@@ -7,7 +7,7 @@
 .PHONY: update always-update
 
 update: stuff.markdown paradigms.markdown lexemes.markdown statistics.markdown\
-		mwe.markdown \
+		mwe.markdown proper-nouns.markdown \
 		NEWS.markdown README.markdown AUTHORS.markdown CITATION.markdown \
 		CODE_OF_CONDUCT.markdown CONTRIBUTING.markdown COPYING.markdown \
 		ChangeLog.markdown INSTALL.markdown THANKS.markdown \
@@ -21,8 +21,11 @@ paradigms.markdown: always-update
 	$(PYTHON) generate-paradigms.py -P ../src/docs/paradigms.tsv \
 		-A ../src/paradigms.tsv -o paradigms.markdown 
 
-lexemes.markdown: generate-lexemes.py
+lexemes.markdown: generate-lexemes.py ../src/docs/lexemes.tsv
 	$(PYTHON) $< -L ../src/docs/lexemes.tsv -l ../src/generated/master.tsv -o $@
+
+proper-nouns.markdown: generate-lexemes.py ../src/docs/propns.tsv
+	$(PYTHON) $< -L ../src/docs/propns.tsv -l ../src/generated/master.tsv -o $@
 
 mwe.markdown: generate-mwe.py
 	$(PYTHON) $< -m ../src/generated/mwe-master.tsv -o $@

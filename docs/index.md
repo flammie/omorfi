@@ -75,8 +75,10 @@ paradigms or noteworthy words:
 
 1. [Words](lexemes.html), particularly those that are problematic (a FAQ for
    word entries, in a way)
+    1. [Proper nouns](proper-nouns.html), separately, since there's a large
+       amount of problematic ones
 1. [Paradigms](paradigms.html), i.e. inflection patterns
-1. [Internal keys and codes](stuff.html)
+1. [Internal keys and codes](stuff.html), for developers who want to help
 1. [All forms of *kauppa*](genkau3.html), a retake on old experiment
 
 ### Design, historical notes, stuff
