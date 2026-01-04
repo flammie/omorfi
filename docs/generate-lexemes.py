@@ -164,10 +164,13 @@ def main():
     print("_This is an automatically generated documentation based on omorfi" +
           " lexical database._", file=args.output)
     print(file=args.output)
-    print("Lexemes are the word-entries of omorfi, currently we have only " +
-          "documented the ones that are commonly problematic, in terms of " +
-          "unexpected ambiguity, exceptional spelling or anything otherwise " +
-          "worth noting.", file=args.output)
+    print("Lexemes are the word-entries of omorfi.", file=args.output)
+    print("We currently only have extra documentation for " +
+          "the ones that are commonly problematic:", file=args.output)
+    print("1. all homonyms", file=args.output)
+    print("1. other ambiguity", file=args.output)
+    print("1. exceptional spelling, inflection or so", file=args.output)
+    print("1. any other FAQ", file=args.output)
     print(file=args.output)
     print("In attributes column we use following emoji shorthands:",
           file=args.output)
@@ -206,7 +209,6 @@ def main():
     print(file=args.output)
     print("| Lexeme | Short notes | Attributes | Links |", file=args.output)
     print("|:------:|:-----------:|:----------:|:------|", file=args.output)
-
     lexdata = {}
     with open(args.lexemes, "r", newline="", encoding="UTF-8") as tsv_file:
         tsv_reader = csv.DictReader(tsv_file, delimiter=args.separator,
@@ -235,7 +237,7 @@ def main():
                       tsv_parts, file=stderr)
                 continue
             lemmamd = markdownify(tsv_parts["lemma"])
-            homonym = homonymify(tsv_parts(["homonym"]))
+            homonym = homonymify(tsv_parts["homonym"])
             lemmacolumn = lemmamd + homonym
             print(f"| {lemmacolumn} |", end="", file=args.output)
             if tsv_parts["lemma"] != prev_lemma:

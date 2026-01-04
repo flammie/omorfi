@@ -2,7 +2,12 @@
 
 _This is an automatically generated documentation based on omorfi lexical database._
 
-Lexemes are the word-entries of omorfi, currently we have only documented the ones that are commonly problematic, in terms of unexpected ambiguity, exceptional spelling or anything otherwise worth noting.
+Lexemes are the word-entries of omorfi.
+We currently only have extra documentation for the ones that are commonly problematic:
+1. all homonyms
+1. other ambiguity
+1. exceptional spelling, inflection or so
+1. any other FAQ
 
 In attributes column we use following emoji shorthands:
 * ☢ for lexemes listed as unlikely for disambiguation purposes
@@ -16,7 +21,7 @@ In attributes column we use following emoji shorthands:
 * 📺 for media
 * 🎶 for band or artists
 * 🗪 for languages
-* org for organisations
+* 🗺️ for organisations
 * 📏 for unit of measurement
 * ⏰ for point in time or span of time
 * ⁈ for proper noun not suitable for other categories of proper nouns
@@ -284,9 +289,9 @@ We link to all original sources for reference.
 | oikeastaan |  usually seen as adverb (actually), but can be analysed as a form of *oikea* (right) |  | [fiwikt](https://fi.wiktionary.org/wiki/oikeastaan)  |
 | osaksi |  usually seen as adverb (partially), but can be analysed as translative of the noun *osa* (part) |  | [fiwikt](https://fi.wiktionary.org/wiki/osaksi)  |
 | ottamatta |  excepting, as adposition, illative complement, mainly “lukuun ottamatta” |  |  |
-| oy |  Osake-Yhtiö | org | [enwikt](https://en.wiktionary.org/wiki/oy)  |
+| oy |  Osake-Yhtiö | 🗺️ | [enwikt](https://en.wiktionary.org/wiki/oy)  |
 | OY |  Osake-Yhtiö |  |  |
-| oyj |  Julkinen Osake-Yhtiö | org | [enwikt](https://en.wiktionary.org/wiki/oyj)  |
+| oyj |  Julkinen Osake-Yhtiö | 🗺️ | [enwikt](https://en.wiktionary.org/wiki/oyj)  |
 | pai |  This noun means a pie but overlaps forms of very common *paikka* (place) among others. |  | [enwikt](https://en.wiktionary.org/wiki/pai)  |
 | paitsi |  except, as adposition, complement is partitive, see VISK § 708 |  | [fiwikt](https://fi.wiktionary.org/wiki/paitsi)  |
 | paitsi |  but not, as adverb, “jään paitsi” |  |  |
