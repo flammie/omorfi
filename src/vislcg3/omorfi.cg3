@@ -313,7 +313,7 @@ LIST RARER-PROPN =
     ("Valla" UPOS=PROPN) ("Vo" UPOS=PROPN) ("turpa" UPOS=PROPN)
     ("Isä" UPOS=PROPN) ("Ta" UPOS=PROPN) ("Vie" UPOS=PROPN)
     ("Ny" UPOS=PROPN) ("Ove" UPOS=PROPN) ("Ky" UPOS=PROPN)
-    ("Ni" UPOS=PROPN) ("Nii" UPOS=PROPN) ("Koko" UPOS=PROPN) 
+    ("Ni" UPOS=PROPN) ("Nii" UPOS=PROPN) ("Koko" UPOS=PROPN)
     ("Ny" UPOS=PROPN) ("Mon" UPOS=PROPN) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
@@ -325,7 +325,7 @@ LIST RARER-NOUN =
     ("suura" UPOS=NOUN) ("sai" UPOS=NOUN) ("saava" UPOS=NOUN)
     ("pitkänen" UPOS=NOUN) ("niisi" UPOS=NOUN) ("valin" UPOS=NOUN)
     ("talossa" UPOS=NOUN) ("juko" UPOS=NOUN) ("hän" UPOS=NOUN)
-    ("viera" UPOS=NOUN) ("kiven" UPOS=NOUN) ("sellainen" UPOS=NOUN) 
+    ("viera" UPOS=NOUN) ("kiven" UPOS=NOUN) ("sellainen" UPOS=NOUN)
     ("moni" UPOS=NOUN) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs, and some fixed expressions
@@ -791,6 +791,10 @@ LIST JUOSTA-VERB = ("juosta" UPOS=VERB) ;
 LIST JUOSTA-NOUN = ("juko" UPOS=NOUN) ;
 # ,
 LIST COMMA = ("," UPOS=PUNCT) ;
+# Tyynen valtameri
+LIST TYYNI-PROPN = ("Tyyni" UPOS=PROPN) ;
+LIST TYYNE-PROPN = ("Tyyne" UPOS=PROPN) ;
+LIST VALTAMERI = ("Valtameri" UPOS=PROPN) ("valtameri" UPOS=NOUN) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -961,6 +965,8 @@ SELECT:ei-blah-vaan-cconj VAAN-CCONJ (-2* Polarity=Neg BARRIER BEGINSENT) ;
 REMOVE:pitää-over-pidetä PIDETÄ-PASS (0 PITÄÄ-PASS) ;
 ##! € jotta voisi keksiä esimerkin
 REMOVE:missing-hyphen-compounds MISSING-HYPHEN ;
+##! $ Tyynen valtameren jotain jotain
+SELECT:tyynen-valtameri TYYNI-PROPN (1 VALTAMERI) ;
 
 # }}}
 SECTION # {{{ Fred Karlsson's CG1
