@@ -10,7 +10,7 @@ pkgconfigdir=$(datarootdir)/pkgconfig
 pkgconfig_DATA=omorfi.pc
 
 omorfi-hfst-models-$(PACKAGE_VERSION).tar.xz:
-	tar -C src/generated -cJvf omorfi-models-$(PACKAGE_VERSION).tar.xz \
+	tar -C src/generated -cJvf $@ \
 		omorfi.accept.hfst omorfi.analyse.hfst omorfi.describe.hfst \
 		omorfi.generate.hfst omorfi_recased.analyse.hfst \
 		omorfi_recased.describe.hfst omorfi.segment.hfst \

@@ -33,6 +33,7 @@ EXTRA_DIST=rough-tests.sh \
 		   scripts-runnable.sh \
 		   faithfulness.py \
 		   conllu-compare.py \
+		   tokenisation-test.bash \
 		   $(TESTDATAFILES)
 
 CLEANFILES=wordforms.anals wordforms-common.anals
