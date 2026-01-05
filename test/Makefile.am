@@ -5,6 +5,7 @@ TESTS=rough-tests.sh \
 	  rougher-tests.bash \
 	  scripts-runnable.sh \
 	  regressions.sh \
+	  tokenisation-test.bash \
 	  tools-python.bash \
 	  ftb-3.1-quick-test.bash \
 	  coverages-all-quick.bash \

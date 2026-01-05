@@ -87,6 +87,8 @@ class Tokeniser:
         posttokens = []
         for i in range(4):
             for j in range(4):
+                pretokens = []
+                posttokens = []
                 if len(token.surf) > (i + j):
                     if j == 0:
                         resurf = token.surf[i:]
