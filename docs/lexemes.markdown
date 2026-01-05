@@ -148,11 +148,16 @@ We link to all original sources for reference.
 | ettei |  compound of että+ei with inflection (technically part of the dictionary, but as a non-inflecting particle set) |  |  |
 | että |  that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature “tiesin, että on yö” |  |  |
 | että |  that, co-ordinating conjunction, one of the more generic conjunctions, sometimes co-ordinating, refer to VISK § 819 |  |  |
+| EU |  Euroopan Unioni | 🗺️ | [enwikt](https://en.wiktionary.org/wiki/EU)  |
 | euro |  euro, european currency from 2001- | 💱 | [fiwikt](https://fi.wiktionary.org/wiki/euro) [enwikt](https://en.wiktionary.org/wiki/euro)  |
+| Eurooppa |  Europe | 🌍 | [fiwikt](https://fi.wiktionary.org/wiki/Eurooppa) [enwikt](https://en.wiktionary.org/wiki/Eurooppa)  |
+| EY |  Euroopan Yhteisö | 🗺️ |  |
 | halata |  hug, *halata* : *halaa* |  | [fiwikt](https://fi.wiktionary.org/wiki/halata) [enwikt](https://en.wiktionary.org/wiki/halata)  |
 | halata₂ |  desire (archaic), *halata* : *halajaa* |  |  |
+| Helsinki |  included in low coverage analyser: Finland's capital | 🌍 | [fiwikt](https://fi.wiktionary.org/wiki/Helsinki)  |
 | isota |  embiggen, *isota* : *isonee* |  | [fiwikt](https://fi.wiktionary.org/wiki/isota) [enwikt](https://en.wiktionary.org/wiki/isota)  |
 | isota₂ |  desire (archaic), *isota* : *isoaa* |  |
+| Joensuu |  included in low coverage analyser: top XXX biggest cities | 🌍🧑² | [enwikt](https://en.wiktionary.org/wiki/Joensuu)  |
 | keritä |  have time, make it, *keritä* : *kerkiää* |  |  |
 | keritä₂ |  shave, *keritä* : *keritsee* |  |  |
 | kitaristi |  guitarist, *kitaristi* : *kitaristeja* |  | [fiwikt](https://fi.wiktionary.org/wiki/kitaristi) [enwikt](https://en.wiktionary.org/wiki/kitaristi)  |
@@ -165,6 +170,7 @@ We link to all original sources for reference.
 | laki₂ |  mountaintop, *laki* : *laet* |  |  |
 | oieta |  straighten, *oieta* : *oikenee* |  | [fiwikt](https://fi.wiktionary.org/wiki/oieta) [enwikt](https://en.wiktionary.org/wiki/oieta)  |
 | oieta₂ |  straighten, *oieta* : *oikeaa* |  |  |
+| Oulu |  included in low coverage analyser: top XXX biggest cities | 🌍 |  |
 | palata |  return, *palata* : *palaa* |  | [fiwikt](https://fi.wiktionary.org/wiki/palata) [enwikt](https://en.wiktionary.org/wiki/palata)  |
 | palata₂ |  ??? (archaic), *palata* : *palajaa* |  |  |
 | pokata |  pick up, *pokata*: *pokaan* |  | [fiwikt](https://fi.wiktionary.org/wiki/pokata) [enwikt](https://en.wiktionary.org/wiki/pokata)  |
@@ -173,8 +179,9 @@ We link to all original sources for reference.
 | raueta₂ |  ???, *raueta* : *raukeaa* |  |  |
 | sietä |  ???, *sietä*: *raukenee* |  | [enwikt](https://en.wiktionary.org/wiki/sietä)  |
 | sietä₂ |  ???, *sietä* : *raukeaa* |  |  |
+| Suomi |  Finland | 🌍🧑²⚐ | [fiwikt](https://fi.wiktionary.org/wiki/Suomi)  |
 | tavata |  syllabify, *tavata* : *tavaa* |  | [enwikt](https://en.wiktionary.org/wiki/tavata)  |
-| tacata₂ |  meet, *tavata* : *tapaa* |  |
+| tavata₂ |  meet, *tavata* : *tapaa* |  |  |
 | he |  This interjection overlaps very common pronoun *he* “they”. |  |  |
 | HIV₁₁ |  Human Immunodeficiency Virus |  |
 | huolimatta |  adposition (regardless) when can be attached to a partitive NP, otherwise form of *huolia* (icare, concenr of) |  |  |
@@ -386,6 +393,7 @@ We link to all original sources for reference.
 | vallasta |  dethroned, “kuningas syöstiin vallasta” |  |  |
 | vallasta |  exorcised of smth., genitive complement “pahan hengen vallasta” |  |  |
 | vanhastaan |  usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old) |  | [fiwikt](https://fi.wiktionary.org/wiki/vanhastaan)  |
+| Vantaa |  included in low coverage analyser: top XXX biggest cities in Finland | 🌍 | [enwikt](https://en.wiktionary.org/wiki/Vantaa)  |
 | vastaan |  adposition (against smth) when can be attached to a partitive NP, otherwise adverb (against) |  |  |
 | vastaan |  adverb (against) |  |  |
 | viisikymmentä |  fifty |  |  |

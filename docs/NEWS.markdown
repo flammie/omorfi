@@ -3,6 +3,24 @@
 This file lists noteworthy changes between releases, for full list of changes,
 see git log and then `ChangeLog.old`.
 
+## Significant changes in 0.9.12
+
+* Updated nykysuomen sanalista to 2024
+* Updated wiktionaries to 2025-07
+* new paradigms for: *kuudan* noun, *köyryselkä* adj, *tuppisuu* adj,
+  *harmaahapsi* adj, *taxfree* adj, *kuullen*, adp, *taxfree* adj,
+* 4850 new lexemes: many prefixes and suffixes, compounds, e.g.
+  *väliaikaisravintola* (popup restaurant), *trifle*, *tiedostomuoto*
+  (file format), *tarvepainate* (print on demand), *abassi*, *apsi* (mobile
+  app) ...
+* removed technical doublets of some numerals
+* Swapped python library from HFST to pyhfst
+* fixes to disambiguation based on data and experiments
+* even more documentation about ambiguity
+* started making a gold annotated disambiguation corpus by hand
+* fixed a bug in fall-back (python based) tokenisation
+* huge thanks to **Patreons** and **Github Spongsors** for their support
+
 ## Significant changes in 0.9.11
 
 * New words from open sources: 7000 new lexemes
@@ -15,7 +33,7 @@ see git log and then `ChangeLog.old`.
   mostly proper nouns from the two government's open access name databases:
   * all first names and surnames used in Finland from dvv.fi name registry
   * all place names from the GML data by maanmittauslaitos
-  * get details from [statistics 
+  * get details from [statistics
     page](https://flammie.github.io/omorfi/statistics.html)
 * minor fixes to tags and formats, disambiguation and words:
     * apertium format has more subcategories

@@ -17,6 +17,14 @@ I try to keep this `README` very condensed for github.
 For more detailed information, see [github pages for
 omorfi](//flammie.github.io/omorfi/).
 
+## Licence
+
+Omorfi is licenced [GNU GPLv3](COPYING) (not later). The bundled HFST in the
+java API demo is [Apache](COPYING-hfst-java).
+
+* [Further information about licence and copyright in
+  documentation](//flammie.github.io/omorfi/licence.html)
+
 ## Citing and academic works
 
 Citation information is available in github's *cite this repository* function,
@@ -37,7 +45,7 @@ or the most current version using git. For more information, see
 
 * **hfst-3.15** or greater,
 * **python-3.5** or greater,
-* **hfst-python**,
+* **pyhfst**,
 * **C++** compiler and **libtool**
 * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config**
   implementation
@@ -47,6 +55,31 @@ Optionally:
 * *VISL CG 3*
 * *hfst-ospell-0.2.0* or greater needed for spell-checking
 * *Java 7*, or greater, for Java bindings
+
+### Installing dependencies
+
+**HFST** can be installed from following [instructions from
+giellalt](https://giellalt.github.io/infra/GettingStarted.html) (only need to
+do step 1) or [instructions from
+apertium](https://wiki.apertium.org/wiki/Installation#Installing:_a_summary.)
+
+**Pyhfst** can be installed from **pip**:
+
+```console
+$ pip install pyhfst
+```
+
+If you are stuck on a platform that doesn't let you install from pip, you may
+need to use `venv` like instructed by pip:
+
+```console
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install pyhfst
+```
+
+Other tools like compilers, autotools and pkgconfig should be installed from
+the operating systems' software manager (apt, brew, ...)
 
 ## Installation
 

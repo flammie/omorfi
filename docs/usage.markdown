@@ -97,9 +97,9 @@ HTTP-Anforderung gesendet, auf Antwort wird gewartet … 200 OK
 Länge: 13756036 (13M) [application/octet-stream]
 Wird in »omorfi-hfst-models-20191111.tar.xz« gespeichert.
 
-omorfi-hfst-models-20191111.t 100%[===========>]  13,12M  4,86MB/s    in 2,7s
+omorfi-hfst-models-VERSION.t 100%[===========>]  13,12M  4,86MB/s    in 2,7s
 
-2019-11-16 12:57:11 (4,86 MB/s) - »omorfi-hfst-models-0.9.9.tar.xz«↲
+2019-11-16 12:57:11 (4,86 MB/s) - »omorfi-hfst-models-VERSION.tar.xz«↲
 gespeichert [13756036/13756036]
 
 omorfi.accept.hfst
@@ -440,12 +440,11 @@ Coverage	Ambiguity
 
 ### omorfi-conllu.bash
 
-[Universal Dependencies](http://universaldependencies.org) are the up-and-coming
-standard for all your morpho-syntactic needs! Omorfi is currently scheduled to
-follow up on Universal dependencies relaeas schedules and analysis and design
-principles. Omorfi can fill in the LEMMA, UPOS, and UFEAT morphological feature
-field, also the MISC field is used for omorfi data that is not covered by
-CONLL-U.
+[Universal Dependencies](http://universaldependencies.org) is a *de facto*
+standard for morphosyntactic annotations. Omorfi is closely following
+Universal dependencies design principles. Omorfi can fill in the LEMMA,
+UPOS, and UFEAT morphological feature field, also the MISC field is used for
+omorfi data that is not covered by CONLL-U.
 
 Use `omorfi-conllu.bash` for basic parsing:
 
@@ -644,7 +643,7 @@ are part of inflection and not derivation or compounding.
 of obsolete in favor of neural machine translation platforms._
 
 It is possible to produce a so-called factored output for use in conjunction
-with [https://statmt.org/moses/] to create morphologically informed statistical
+with <https://statmt.org/moses/> to create morphologically informed statistical
 machine translation. Use omorfi-factorise.bash for this:
 
 ```

@@ -166,6 +166,7 @@ All other lexical information is coded on per lexeme basis
 |  ADP_MUKAAN | ADP | optional possessive, -n assimilation, ba... | 99 | back |
 |  ADP_MUKAISESTI | ADP | adposition without possessives, clitic, ... | 99 | both |
 |  ADP_NÄHDEN | ADP | de:te variation before optional possessi... | 99 | front |
+|  ADP_KUULLEN | ADP | le:te variation before optional possessi... | 99 | front |
 |  ADP_NÄKYVIIN | ADP | optional possessive, -n assimilation, fr... | 99 | front |
 |  ADP_TYKÖ | ADP | optional possessive, front harmony | 99 | front |
 |  ADP_VALTAAN | ADP | optional possessive, -n assimilation, ba... | 99 | back |
@@ -1619,6 +1620,7 @@ All other lexical information is coded on per lexeme basis
 |  X_FORGN_EN | PROPN | new particles of English origin, such as... | 99 | both |
 |  X_FORGN_SV | PROPN | new particles of Swedish origin; used of... | 99 | both |
 |  X_IGNORE | X | words that need to be in lexicon for leg... | 99 | both |
+|  X_PREFIX_GOESWITH | X | some prefixes are mistakenly spelled sep... | 99 | both |
 |  X_SUFFIX_GOESWITH | X | some suffixes that appear mistokenised, ... | 99 | both |
 
 <!-- vim: set ft=markdown:-->

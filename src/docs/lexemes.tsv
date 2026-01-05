@@ -117,11 +117,16 @@ esim.	NOUN	esimerkiksi, “e.g.” or for example
 ettei	X	compound of että+ei with inflection (technically part of the dictionary, but as a non-inflecting particle set)
 että	SCONJ	that, sub-ordinating conjunction, one of the more generic conjunctions, mainly used as subordinating feature “tiesin, että on yö”
 että	CCONJ	that, co-ordinating conjunction, one of the more generic conjunctions, sometimes co-ordinating, refer to VISK § 819
+EU	PROPN	Euroopan Unioni
 euro	NOUN	euro, european currency from 2001-
+Eurooppa	PROPN	Europe
+EY	PROPN	Euroopan Yhteisö
 halata	VERB	hug, *halata* : *halaa*
 halata	VERB2	desire (archaic), *halata* : *halajaa*
+Helsinki	PROPN	included in low coverage analyser: Finland's capital
 isota	VERB	embiggen, *isota* : *isonee*
 isota	VERB2	desire (archaic), *isota* : *isoaa*
+Joensuu	PROPN	included in low coverage analyser: top XXX biggest cities
 keritä	VERB	have time, make it, *keritä* : *kerkiää*
 keritä	VERB2	shave, *keritä* : *keritsee*
 kitaristi	NOUN	guitarist, *kitaristi* : *kitaristeja*
@@ -134,6 +139,7 @@ laki	NOUN	law, *laki* : *lait*
 laki	NOUN2	mountaintop, *laki* : *laet*
 oieta	VERB	straighten, *oieta* : *oikenee*
 oieta	VERB2	straighten, *oieta* : *oikeaa*
+Oulu	PROPN	included in low coverage analyser: top XXX biggest cities
 palata	VERB	return, *palata* : *palaa*
 palata	VERB2	??? (archaic), *palata* : *palajaa*
 pokata	VERB	pick up, *pokata*: *pokaan*
@@ -142,8 +148,9 @@ raueta	VERB	dissolve, *raueta*: *raukenee*
 raueta	VERB2	???, *raueta* : *raukeaa*
 sietä	VERB	???, *sietä*: *raukenee*
 sietä	VERB2	???, *sietä* : *raukeaa*
+Suomi	PROPN	Finland
 tavata	VERB	syllabify, *tavata* : *tavaa*
-tacata	VERB2	meet, *tavata* : *tapaa*
+tavata	VERB2	meet, *tavata* : *tapaa*
 he	INTJ	This interjection overlaps very common pronoun *he* “they”.
 HIV	1	Human Immunodeficiency Virus
 huolimatta	ADP	adposition (regardless) when can be attached to a partitive NP, otherwise form of *huolia* (icare, concenr of)
@@ -355,6 +362,7 @@ vallassa	ADP	possessed by smth., genitive complement “pahan hengen vallassa”
 vallasta	ADV	dethroned, “kuningas syöstiin vallasta”
 vallasta	ADP	exorcised of smth., genitive complement “pahan hengen vallasta”
 vanhastaan	ADV	usually seen as adverb (traditionally), but can be analysed as a form of *vanha* (old)
+Vantaa	PROPN	included in low coverage analyser: top XXX biggest cities in Finland
 vastaan	ADP	adposition (against smth) when can be attached to a partitive NP, otherwise adverb (against)
 vastaan	ADV	adverb (against)
 viisikymmentä	NUM	fifty
