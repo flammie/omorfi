@@ -24,7 +24,7 @@ def main():
     a.add_argument('-v', '--verbose', action="store_true", default=False,
                    help="Print verbosely while processing")
     a.add_argument('-t', '--thresholds', metavar='THOLDS', default=99, type=int,
-                   help="require THOLD % for lemma, UPOS and UFEAT or exit 1 (for testing)")
+                   help="require THOLD per cent for lemma, UPOS and UFEAT or exit 1 (for testing)")
     options = a.parse_args()
     #
     lines = 0
