@@ -349,7 +349,7 @@ NOUN_ASU	NOUN	NOUN	1	None	False	weaken	back	u	None	False	False	[Uuúūù]
 NOUN_ATERIMET	NOUN	NOUN	33	None	obligatory	strengthen	back	None	None	False	False	met	met
 NOUN_AUER	NOUN	NOUN	49	T	False	strengthen	back	None	None	False	False	er	er
 NOUN_BÉBÉ	NOUN	NOUN	21	None	False	weaken	front	e	None	False	False	.	
-ADJ_TAXFREE	ADJ	ADJ	21	None	False	weaken	front	e	None	False	False	.	
+ADJ_TAXFREE	ADJ	ADJECTIVE	21	None	False	weaken	front	e	None	False	False	.	
 NOUN_BEIGNET	NOUN	NOUN	22	None	False	weaken	front	e	None	False	False	.	
 NOUN_BERNIE	NOUN	NOUN	3	None	False	weaken	front	None	None	False	False	e	
 NOUN_BESSERWISSER	NOUN	NOUN	6	None	False	weaken	front	None	None	False	False		
@@ -383,7 +383,7 @@ NOUN_HAPAN	NOUN	NOUN	34	B	False	strengthen	back	None	None	False	False	pan	an
 NOUN_HAPPI	NOUN	NOUN	7	B	False	weaken	back	None	None	False	False	ppi	pi
 NOUN_HAPPO	NOUN	NOUN	1	B	False	weaken	back	None	None	False	False	ppo	po
 NOUN_HAPSI	NOUN	NOUN	29	None	False	weaken	back	None	None	False	False	psi	psi
-ADJ_HARMAAHAPSI	ADJ	ADJ	29	None	False	weaken	back	None	None	False	False	psi	psi
+ADJ_HARMAAHAPSI	ADJ	ADJECTIVE	29	None	False	weaken	back	None	None	False	False	psi	psi
 NOUN_HARMAAT	NOUN	NOUN	17	None	obligatory	weaken	back	None	None	False	False	aat	at
 NOUN_HAŠIŠ	NOUN	NOUN	39	None	False	strengthen	back	None	None	False	False	š	š
 NOUN_HEITIN	NOUN	NOUN	33	C	False	strengthen	front	None	None	False	False	tin	in
@@ -580,7 +580,7 @@ NOUN_NYLJIN	NOUN	NOUN	33	L	False	strengthen	front	None	None	False	False	jin	jin
 NOUN_NÄKY	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	ky	ky
 NOUN_NÄKÖ	NOUN	NOUN	1	D	False	weaken	front	None	None	False	False	kö	kö
 NOUN_NÄLKÄ	NOUN	NOUN	10	D	False	weaken	front	ä	None	False	False	kä	kä
-ADJ_KÖYRYSELKÄ	ADJ	ADJ	10	D	False	weaken	front	ä	None	False	False	kä	kä
+ADJ_KÖYRYSELKÄ	ADJ	ADJECTIVE	10	D	False	weaken	front	ä	None	False	False	kä	kä
 NOUN_OIKEUDET	NOUN	NOUN	40	None	obligatory	strengthen	back	None	None	False	False	det	det
 NOUN_OLKA	NOUN	NOUN	10	L	False	weaken	back	a	None	False	False	ka	ka
 NOUN_OLUT	NOUN	NOUN	43	None	False	strengthen	back	None	None	False	False	ut	t
@@ -629,7 +629,7 @@ NOUN_PUHELIN	NOUN	NOUN	33	None	False	strengthen	back	None	None	False	False	n	n
 NOUN_PUIN	NOUN	NOUN	33	D	False	strengthen	back	None	None	False	False	in	in
 NOUN_PUKIMET	NOUN	NOUN	33	D	obligatory	strengthen	back	None	None	False	False	kimet	met
 NOUN_PUNK	NOUN	NOUN	5	None	False	weaken	back	None	None	False	False		
-ADJ_TUPPISUU	ADJ	ADJ	18	None	False	weaken	back	u	None	False	False	u	u
+ADJ_TUPPISUU	ADJ	ADJECTIVE	18	None	False	weaken	back	u	None	False	False	u	u
 NOUN_PUU	NOUN	NOUN	18	None	False	weaken	back	u	None	False	False	u	u
 NOUN_PUUT	NOUN	NOUN	18	None	obligatory	weaken	back	None	None	False	False	uut	ut
 NOUN_PYRAMIDI	NOUN	NOUN	5	None	False	weaken	both	None	None	False	False	i	i
