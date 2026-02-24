@@ -13,6 +13,7 @@ jobs:
       run: |
         wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
         sudo apt-get install hfst python3-hfst libhfst-dev cg3
+        pip install pyhfst
     - name: autogen
       run: ./autogen.sh
     - name: configure
