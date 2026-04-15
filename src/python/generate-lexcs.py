@@ -32,13 +32,13 @@ import csv
 from sys import argv, stderr
 from time import strftime
 
-from omorfi.formats.apertium_formatter import ApertiumFormatter
-from omorfi.formats.ftb3_formatter import Ftb3Formatter
-from omorfi.formats.giella_formatter import GiellaFormatter
-from omorfi.formats.labeled_segments_formatter import LabeledSegmentsFormatter
-from omorfi.formats.no_tags_formatter import NoTagsFormatter
-from omorfi.formats.omor_formatter import OmorFormatter
-
+from apertium_formatter import ApertiumFormatter
+from ftb3_formatter import Ftb3Formatter
+from giella_formatter import GiellaFormatter
+from labeled_segments_formatter import LabeledSegmentsFormatter
+from lexc import copyright_lexc
+from no_tags_formatter import NoTagsFormatter
+from omor_formatter import OmorFormatter
 
 # standard UI stuff
 
@@ -169,7 +169,7 @@ def main():
             print("Not writing closed parts-of-speech data in",
                   ",".join(args.exclude_pos))
     # print definitions to rootfile
-    print(formatter.copyright_lexc(), file=args.output)
+    print(copyright_lexc(), file=args.output)
     if args.verbose:
         print("Creating Multichar_Symbols and Root")
     print(formatter.multichars_lexc(), file=args.output)
@@ -182,7 +182,7 @@ def main():
         print("! Omorfi stubs generated from", tsv_filename,
               "\n! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"),
               "\n! params: ", ' '.join(argv), file=args.output)
-        print(formatter.copyright_lexc(), file=args.output)
+        print(copyright_lexc(), file=args.output)
         curr_lexicon = ""
         # for each line
         with open(tsv_filename, "r", newline='') as tsv_file:
@@ -285,7 +285,7 @@ def main():
         print("! Omorfi continuations generated from", tsv_file.name,
               "! date:", strftime("%Y-%m-%d %H:%M:%S+%Z"),
               "! params: ", ' '.join(argv), file=args.output)
-        print(formatter.copyright_lexc(), file=args.output)
+        print(copyright_lexc(), file=args.output)
         curr_lexicon = ""
         with open(tsv_filename, 'r', newline='') as tsv_file:
             tsv_reader = csv.reader(tsv_file, delimiter=args.separator,

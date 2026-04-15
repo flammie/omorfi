@@ -23,12 +23,8 @@ This script generates twolc files from database data.
 
 import argparse
 
-from omorfi.formats.twolc_formatter import (format_alphabet_twolc,
-                                            format_copyright_twolc,
-                                            format_definitions_twolc,
-                                            format_rules_twolc,
-                                            format_sets_twolc)
-
+from twolc_formatter import (format_alphabet_twolc, format_copyright_twolc, format_definitions_twolc,
+                             format_rules_twolc, format_sets_twolc)
 
 # standard UI stuff
 

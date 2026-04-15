@@ -4,10 +4,9 @@
 
 from sys import stderr
 
-from ..settings import (common_multichars, fin_consonants, fin_lowercase,
-                        fin_symbols, fin_uppercase, fin_vowels,
-                        newword_boundary, optional_hyphen, word_boundary)
-from ..string_manglers import twolc_escape
+from settings import (common_multichars, fin_consonants, fin_lowercase, fin_symbols, fin_uppercase, fin_vowels,
+                      newword_boundary, optional_hyphen, word_boundary)
+from string_manglers import twolc_escape
 
 
 def format_copyright_twolc():

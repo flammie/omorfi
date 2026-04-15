@@ -20,12 +20,12 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from .formatter import Formatter
-from ..settings import optional_hyphen, word_boundary
-from ..string_manglers import lexc_escape
+from lexc import multichars_lexc, root_lexicon_lexc
+from settings import optional_hyphen, word_boundary
+from string_manglers import lexc_escape
 
 
-class NoTagsFormatter(Formatter):
+class NoTagsFormatter:
     """A formatter that can create tagless analysers. This is used for e.g.,
     lemmatisers, acceptors, and morph segmenters."""
 
@@ -117,7 +117,7 @@ class NoTagsFormatter(Formatter):
                 analyses
         """
         multichars = "Multichar_Symbols\n"
-        multichars += Formatter.multichars_lexc(self)
+        multichars += multichars_lexc()
         return multichars
 
     def root_lexicon_lexc(self):
@@ -125,7 +125,7 @@ class NoTagsFormatter(Formatter):
 
         @return lexc-format string for Root lexicon of lemmatiser
         """
-        root = Formatter.root_lexicon_lexc(self)
+        root = root_lexicon_lexc()
         return root
 
 

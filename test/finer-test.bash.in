@@ -1,5 +1,5 @@
 #!/bin/bash
-if test -z $srcdir ; then
+if test -z "$srcdir" ; then
     echo Use make check or define srcdir
     exit 1
 fi
@@ -20,12 +20,12 @@ if test ! -r $finers ; then
     echo missing $finers, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-ner.py -a $analyser \
+if ! @OMORFI_NER@ -a $analyser \
         -i $finers -o $finers.omorfi -M $mwedata  ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/finer-compare.py -H $finers.omorfi -r $finers \
+if ! @PYTHON@ "$srcdir/finer-compare.py" -H $finers.omorfi -r $finers \
         -l corpora/digitoday.2015.test.nerlog -t $thold ; then
     echo We missed the target of $thold % finer matches
     exit 1

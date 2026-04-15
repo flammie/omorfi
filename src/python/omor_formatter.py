@@ -24,12 +24,12 @@
 import re
 import sys
 
-from ..error_logging import fail_formatting_missing_for, just_fail
-from ..string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
-from .formatter import Formatter
+from error_logging import fail_formatting_missing_for, just_fail
+from lexc import multichars_lexc, root_lexicon_lexc
+from string_manglers import egrep2xerox, lexc_escape, regex_delete_surface
 
 
-class OmorFormatter(Formatter):
+class OmorFormatter:
     """Converts Omorfi's default formats for strings."""
 
     ## Omorfi multichars for all omorfi analysers
@@ -799,7 +799,7 @@ class OmorFormatter(Formatter):
         multichars += "!! OMOR multichars:\n"
         for mcs in self.common_multichars:
             multichars += mcs + "\n"
-        multichars += Formatter.multichars_lexc(self)
+        multichars += multichars_lexc()
         return multichars
 
     def root_lexicon_lexc(self):
@@ -807,7 +807,7 @@ class OmorFormatter(Formatter):
 
         @return elxc-formatted Root lexicon string for omorfi
         """
-        root = Formatter.root_lexicon_lexc(self)
+        root = root_lexicon_lexc()
         if True:
             # want co-ordinated hyphens
             root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"

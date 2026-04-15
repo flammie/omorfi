@@ -4,9 +4,9 @@
 TESTS=rough-tests.sh \
 	  rougher-tests.bash \
 	  scripts-runnable.sh \
-	  regressions.sh \
-	  tokenisation-test.bash \
-	  tools-python.bash \
+	  regressions.sh
+if CAN_PYTHONISED_TESTS
+TESTS+=tokenisation-test.bash \
 	  ftb-3.1-quick-test.bash \
 	  coverages-all-quick.bash \
 	  coverages-less-quick.bash \
@@ -20,6 +20,7 @@ XFAIL_TESTS=
 if WANT_BIG_TESTS
 TESTS+=coverages-all-slow.bash
 endif
+endif # CAN PYTHONISED TESTS
 
 TESTDATAFILES=wordforms.list \
 			  wordforms-common.list \

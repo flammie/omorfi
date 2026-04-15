@@ -19,15 +19,12 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from ..error_logging import (fail_formatting_missing_for, fail_guess_because,
-                             just_fail)
-from .formatter import Formatter
-from ..settings import (deriv_boundary, morph_boundary, optional_hyphen,
-                        word_boundary)
-from ..string_manglers import lexc_escape
+from error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
+from settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
+from string_manglers import lexc_escape
 
 
-class Ftb3Formatter(Formatter):
+class Ftb3Formatter:
     """Formatter for converting omorfi to FTB 3 -like formats."""
 
     ## FTB-3 multichar symbols

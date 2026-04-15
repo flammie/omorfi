@@ -1,5 +1,5 @@
 #!/bin/bash
-if test -z $srcdir ; then
+if test -z "$srcdir" ; then
     echo Use make check or define srcdir
     exit 1
 fi
@@ -18,7 +18,7 @@ if test ! -r $cuf ; then
     echo missing $cuf, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-unimorph.py -a $fsa -i $cuf \
+if ! @OMORFI_UNIMORPH@ -a $fsa -i $cuf \
         -o unimorph-fin.unimorphlog -t 86; then
     echo We missed the target of 86 % approximate recall
     exit 1

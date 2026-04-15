@@ -21,9 +21,9 @@
 
 import sys
 
-from ..error_logging import fail_formatting_missing_for
-from ..settings import deriv_boundary, morph_boundary, optional_hyphen, stub_boundary, weak_boundary, word_boundary
-from .apertium_formatter import ApertiumFormatter
+from apertium_formatter import ApertiumFormatter
+from error_logging import fail_formatting_missing_for
+from settings import deriv_boundary, morph_boundary, optional_hyphen, stub_boundary, weak_boundary, word_boundary
 
 monodix_sdefs = {
     "abbr",

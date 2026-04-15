@@ -1,5 +1,5 @@
 #!/bin/bash
-if test -z $srcdir ; then
+if test -z "$srcdir" ; then
     echo Use make check or define srcdir
     exit 1
 fi
@@ -18,7 +18,7 @@ if test ! -r $cf ; then
     echo missing $cf, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-freq-evals.py -a $fsa -i $cf \
+if ! @OMORFI_FREQ_EVALS@ -a $fsa -i $cf \
         -c 1000 -o ftb3.1-short.log -f ftb3.1 -t 90 ; then
     echo We missed the target of 90 % faithfulness
     exit 1

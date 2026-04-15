@@ -21,13 +21,12 @@
 # utils to format apertium style data from omorfi database values
 import sys
 
-from ..error_logging import fail_formatting_missing_for, just_fail
-from ..settings import weak_boundary, word_boundary
-from ..string_manglers import lexc_escape
-from .formatter import Formatter
+from error_logging import fail_formatting_missing_for, just_fail
+from settings import weak_boundary, word_boundary
+from string_manglers import lexc_escape
 
 
-class ApertiumFormatter(Formatter):
+class ApertiumFormatter:
     """Formatter that handles conversions for apertium's conventions."""
 
     ## All apertium multichar symbols

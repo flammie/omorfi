@@ -288,12 +288,25 @@ AC_PATH_PROGS([DATE], [gdate date])
 # require python for stuff
 AM_PATH_PYTHON([3.2])
 AM_CONDITIONAL([CAN_PYTHON], [test x$PYTHON != x:])
-AX_PYTHON_MODULE([pyhfst], [true])
 AC_PATH_PROG([JEKYLL], [jekyll], [false])
 AC_PATH_PROG([DOXYGEN], [doxygen], [false])
 AM_CONDITIONAL([CAN_DOC], [test "x$doxygen" != xfalse])
 AC_PATH_PROGS([HFSTTESTER], [HfstTester.py HfstTester], [false])
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$HFSTTESTER" != xfalse])
+
+AC_PATH_PROGS([OMORFI_CONLLU], [omorfi-conllu], [false])
+AC_PATH_PROGS([OMORFI_FREQ_EVALS], [omorfi-freq-evals], [false])
+AC_PATH_PROGS([OMORFI_FTB3], [omorfi-ftb3], [false])
+AC_PATH_PROGS([OMORFI_LOOKUP], [omorfi-lookup], [false])
+AC_PATH_PROGS([OMORFI_NER], [omorfi-ner], [false])
+AC_PATH_PROGS([OMORFI_SEGMENT], [omorfi-segment], [false])
+AC_PATH_PROGS([OMORFI_TOKENISE], [omorfi-tokenise], [false])
+AC_PATH_PROGS([OMORFI_UNIMORPH], [omorfi-unimorph], [false])
+AC_PATH_PROGS([OMORFI_VISLCG], [omorfi-vislcg], [false])
+AS_IF([test x$OMORFI_CONLLU = xfalse],
+      [AC_MSG_WARN([tests need omorfi python,
+                    say pipx install git+https://github.com/flammie/omorfi-python])])
+AM_CONDITIONAL([CAN_PYTHONISED_TESTS], [test x$OMORFI_CONLLU != xfalse])
 
 # check java when not disabled
 AS_IF([test "x$with_java" != xno], [
@@ -370,8 +383,8 @@ AC_CONFIG_FILES([test/coverages-less-quick.bash],
                 [chmod +x test/coverages-less-quick.bash])
 AC_CONFIG_FILES([test/coverages-all-slow.bash],
                 [chmod +x test/coverages-all-slow.bash])
-AC_CONFIG_FILES([test/tools-python.bash],
-                [chmod +x test/tools-python.bash])
+AC_CONFIG_FILES([test/tokenisation-test.bash],
+                [chmod +x test/tokenisation-test.bash])
 AC_CONFIG_FILES([docs/generate-statistics.bash],
                 [chmod +x docs/generate-statistics.bash])
 AS_IF([test x$with_pbs_mail != xno],

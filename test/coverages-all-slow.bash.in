@@ -1,7 +1,7 @@
 #!/bin/bash
 # coverage for everything
 fsa="@top_builddir@/src/generated/omorfi.describe.hfst"
-if test -z $srcdir ; then
+if test -z "$srcdir" ; then
     echo invoke from make check or define srcdir=.
     exit 1
 fi
@@ -17,14 +17,14 @@ fi
 
 function coverage_check() {
     if ! test -f corpora/"$1.uniq.freqs" ; then
-        echo missing corpus data corpora/$1.uniq.freqs, run get-covered.bash and retry
+        echo "missing corpus data corpora/$1.uniq.freqs,"
+        echo "run get-covered.bash and retry"
         exit 77
     fi
-    echo Looking up corpora/$1.uniq.freqs for at least $2 % coverage
-    if ! PYTHONPATH=$PYTHONPATH:@top_builddir@/src/python @PYTHON@ \
-            @top_builddir@/src/python/omorfi-freq-evals.py -a $fsa \
-            -i corpora/$1.uniq.freqs -c $hapax\
-            -o corpora/$1.coveragelog -t $2 ; then
+    echo "Looking up corpora/$1.uniq.freqs for at least $2 % coverage"
+    if ! @OMORFI_FREQ_EVALS@ -a $fsa \
+            -i "corpora/$1.uniq.freqs" -c $hapax\
+            -o "corpora/$1.coveragelog" -t "$2" ; then
         exit 1
     fi
     return 0

@@ -24,13 +24,12 @@ automatic guessing. The
 
 import argparse
 import csv
-from sys import stderr, exit
-from omorfi.entryguessing.guess_feats import guess_bound_morphs
-from omorfi.entryguessing.parse_csv_data import parse_defaults_from_tsv,\
-    parse_extras_from_tsv
-from omorfi.entryguessing.stub import stub_all_new_para
-from omorfi.entryguessing.wordmap import get_wordmap_fieldnames, init_wordmap
+from sys import exit, stderr
 
+from guess_feats import guess_bound_morphs
+from parse_csv_data import parse_defaults_from_tsv, parse_extras_from_tsv
+from stub import stub_all_new_para
+from wordmap import get_wordmap_fieldnames, init_wordmap
 
 # standard UI stuff
 

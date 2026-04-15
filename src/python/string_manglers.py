@@ -24,7 +24,7 @@ import re
 import unicodedata
 from sys import stderr
 
-from .error_logging import fail_guess_because
+from error_logging import fail_guess_because
 
 
 # Xerox stuff

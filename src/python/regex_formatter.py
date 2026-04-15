@@ -19,10 +19,9 @@
 #
 # utils to format xerox regexes from omor's lexical data sources.
 
-from ..settings import (deriv_boundary, fin_lowercase, fin_orth_pairs,
-                        fin_uppercase, morph_boundary, stub_boundary,
-                        weak_boundary, word_boundary)
-from .twolc_formatter import twolc_escape
+from settings import (deriv_boundary, fin_lowercase, fin_orth_pairs, fin_uppercase, morph_boundary, stub_boundary,
+                      weak_boundary, word_boundary)
+from twolc_formatter import twolc_escape
 
 
 def format_rules_regex(formatter, ruleset):

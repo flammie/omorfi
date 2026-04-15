@@ -24,8 +24,7 @@ This script generates edit distance.
 import argparse
 from sys import exit
 
-from omorfi.settings import fin_lowercase, fin_symbols, fin_uppercase
-
+from settings import fin_lowercase, fin_symbols, fin_uppercase
 
 # standard UI stuff
 

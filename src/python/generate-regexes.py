@@ -23,10 +23,9 @@ This script generates regexes for omorfi.
 
 import argparse
 
-from omorfi.formats.ftb3_formatter import Ftb3Formatter
-from omorfi.formats.omor_formatter import OmorFormatter
-from omorfi.formats.regex_formatter import format_rules_regex
-
+from ftb3_formatter import Ftb3Formatter
+from omor_formatter import OmorFormatter
+from regex_formatter import format_rules_regex
 
 # standard UI stuff
 

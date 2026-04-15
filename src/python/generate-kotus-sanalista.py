@@ -31,9 +31,7 @@ import argparse
 import csv
 from sys import stderr
 
-from omorfi.formats.kotus_sanalista_formatter import\
-    format_wordmap_kotus_sanalista
-
+from kotus_sanalista_formatter import format_wordmap_kotus_sanalista
 
 # standard UI stuff
 

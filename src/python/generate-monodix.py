@@ -26,12 +26,8 @@ import csv
 import re
 from sys import stderr
 
-from omorfi.formats.monodix_formatter import (format_monodix_alphabet,
-                                              format_monodix_entry,
-                                              format_monodix_licence,
-                                              format_monodix_pardef,
-                                              format_monodix_sdefs)
-
+from monodix_formatter import (format_monodix_alphabet, format_monodix_entry, format_monodix_licence,
+                               format_monodix_pardef, format_monodix_sdefs)
 
 # standard UI stuff
 

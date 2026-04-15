@@ -20,14 +20,13 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from ..error_logging import fail_formatting_missing_for
-from .formatter import Formatter
-from .no_tags_formatter import NoTagsFormatter
-from ..settings import optional_hyphen, word_boundary
-from ..string_manglers import lexc_escape
+from error_logging import fail_formatting_missing_for
+from no_tags_formatter import NoTagsFormatter
+from settings import optional_hyphen, word_boundary
+from string_manglers import lexc_escape
 
 
-class LabeledSegmentsFormatter(Formatter):
+class LabeledSegmentsFormatter:
     """Handles conversions for morph segmenter with morph labels.
     Experimental.
     """

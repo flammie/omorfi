@@ -198,45 +198,8 @@ bin_SCRIPTS=bash/omorfi-analyse-text.sh \
 			bash/omorfi-ftb3.bash \
 			bash/omorfi-vislcg.bash \
 			bash/omorfi-download.bash \
-			bash/omorfi.bash \
-			python/omorfi-factorise.py \
-			python/omorfi-vislcg.py \
-			python/omorfi-conllu.py \
-			python/omorfi-tokenise.py \
-			python/omorfi-segment.py \
-			python/omorfi-freq-evals.py \
-			python/omorfi-ftb3.py
+			bash/omorfi.bash
 
-# Actual python API omorfi.* (no need to add unused internal stuff)
-pkgpython_PYTHON=python/omorfi/__init__.py \
-				 python/omorfi/omorfi.py \
-				 python/omorfi/settings.py \
-				 python/omorfi/analysis.py \
-				 python/omorfi/analyser.py \
-				 python/omorfi/generator.py \
-				 python/omorfi/segmenter.py \
-				 python/omorfi/tokeniser.py \
-				 python/omorfi/labelsegmenter.py \
-				 python/omorfi/lemmatiser.py \
-				 python/omorfi/hyphenator.py \
-				 python/omorfi/guesser.py \
-				 python/omorfi/hfst.py \
-				 python/omorfi/doc.py \
-				 python/omorfi/error_logging.py \
-				 python/omorfi/string_manglers.py \
-				 python/omorfi/token.py
-pkgpythonformatsdir=$(pkgpythondir)/formats/
-pkgpythonformats_PYTHON=\
-				 python/omorfi/formats/__init__.py \
-				 python/omorfi/formats/fileformats.py \
-				 python/omorfi/formats/formatter.py \
-				 python/omorfi/formats/omor_formatter.py
-pkgpythondisamparsulatedir=$(pkgpythondir)/disamparsulate/
-pkgpythondisamparsulate_PYTHON=\
-				 python/omorfi/disamparsulate/__init__.py \
-				 python/omorfi/disamparsulate/disamparsulator.py \
-				 python/omorfi/disamparsulate/evidence.py \
-				 python/omorfi/disamparsulate/matcher.py
 
 
 # These go into dist tarballs... which we no longer make
@@ -246,13 +209,6 @@ EXTRA_DIST=$(XML_SRCS) $(LEXEMES) $(LEMMA_JOINS) $(PARADIGM_JOINS) \
 		   $(SCIRPTS) \
 		   $(CONTINUATIONS) \
 		   voikko/voikko-fi_FI.pro voikko/index.xml \
-		   python/omorfi-factorise.py \
-		   python/omorfi-conllu.py \
-		   python/omorfi-vislcg.py \
-		   python/omorfi-segment.py \
-		   python/omorfi-tokenise.py \
-		   python/omorfi-freq-evals.py \
-		   python/omorfi-ftb3.py \
 		   bash/omorfi-analyse-text.sh \
 		   bash/omorfi-analyse-tokenised.sh \
 		   bash/omorfi-generate.sh \

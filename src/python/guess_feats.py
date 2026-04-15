@@ -17,7 +17,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from ..error_logging import fail_guess_because
+from error_logging import fail_guess_because
 
 
 def guess_pos_from_newpara(wordmap):

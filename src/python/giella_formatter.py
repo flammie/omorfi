@@ -19,14 +19,13 @@
 #
 # utils to format apertium style data from omorfi database values
 
-from ..error_logging import fail_formatting_missing_for, just_fail
-from .formatter import Formatter
-from ..settings import (deriv_boundary, morph_boundary, stub_boundary,
+from error_logging import fail_formatting_missing_for, just_fail
+from settings import (deriv_boundary, morph_boundary, stub_boundary,
                         weak_boundary, word_boundary)
-from ..string_manglers import lexc_escape
+from string_manglers import lexc_escape
 
 
-class GiellaFormatter(Formatter):
+class GiellaFormatter:
     """Formatter that handles conversions to giellatekno.uit.no conventions."""
 
     ## Giellatekno style analysis tags

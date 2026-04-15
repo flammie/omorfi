@@ -1,5 +1,5 @@
 #!/bin/bash
-if test -z $srcdir ; then
+if test -z "$srcdir" ; then
     echo Use make check or define srcdir
     exit 1
 fi
@@ -19,7 +19,7 @@ if test ! -r $vislcgs ; then
     echo missing $vislcgs, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-vislcg.py -F vislcg -a $analyser \
+if ! @OMORFI_VISLCG@ -F vislcg -a $analyser \
         -i $vislcgs -o omorfi-ud-test.cg3text ; then
     echo analysis failed
     exit 2

@@ -7,12 +7,12 @@ fi
 
 if ! test -f ftb3.1.conllx ; then
     echo corpus ftb3.1.conllx missing, run
-    echo \tget-covered.bash
+    echo $'\t'get-covered.bash
     echo and retry
     exit 1
 fi
 tail -n +2 < ftb3.1.conllx |\
-    egrep -v '^<' |\
+    grep -E -v '^<' |\
     cut -f 2 | head -n 1000000 > ftb3.1.tokens.1M
 echo Timing up ftb3.1 
 echo -e "Real\tUser\tSystem\tWait" > 100.times

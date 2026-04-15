@@ -1,5 +1,5 @@
 #!/bin/bash
-if test -z $srcdir ; then
+if test -z "$srcdir" ; then
     echo Use make check or define srcdir
     exit 1
 fi
@@ -19,13 +19,12 @@ if test ! -r $conllus ; then
     echo missing $conllus, use $cs and re-try
     exit 77
 fi
-if ! @PYTHON@ @top_builddir@/src/python/omorfi-conllu.py -a $analyser \
-        -i $conllus -o $conllus.omorfi -O \
-        --not-rules $srcdir/../src/disamparsulation/omorfi.xml ; then
+if ! @OMORFI_CONLLU@ -a $analyser -i $conllus -o $conllus.omorfi -O \
+        --not-rules "$srcdir/../src/disamparsulation/omorfi.xml" ; then
     echo analysis failed
     exit 2
 fi
-if ! @PYTHON@ $srcdir/conllu-compare.py -H $conllus.omorfi -r $conllus \
+if ! @PYTHON@ "$srcdir/conllu-compare.py" -H $conllus.omorfi -r $conllus \
         -l omorfi_tdt-ud-dev.log -t $thold ; then
     echo We missed the target of $thold % conllu matches
     exit 1
