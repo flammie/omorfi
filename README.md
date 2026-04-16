@@ -45,16 +45,17 @@ or the most current version using git. For more information, see
 
 * **hfst-3.15** or greater,
 * **python-3.5** or greater,
-* **pyhfst**,
-* **C++** compiler and **libtool**
 * GNU **autoconf-2.64**, **automake-1.12**; compatible **pkg-config**
   implementation
 
 Optionally:
 
+* *omorfi-python* for tests and running
 * *VISL CG 3*
 * *hfst-ospell-0.2.0* or greater needed for spell-checking
+* *C++ compiler* for compiling the C++ demo
 * *Java 7*, or greater, for Java bindings
+
 
 ### Installing dependencies
 
@@ -63,19 +64,16 @@ giellalt](https://giellalt.github.io/infra/GettingStarted.html) (only need to
 do step 1) or [instructions from
 apertium](https://wiki.apertium.org/wiki/Installation#Installing:_a_summary.)
 
-**Pyhfst** can be installed from **pip**:
+*omorfi-python* can be installed with **pipx**:
 
 ```console
-$ pip install pyhfst
+$ pipx install git+https://flammie.github.com/omorfi-python
 ```
 
-If you are stuck on a platform that doesn't let you install from pip, you may
-need to use `venv` like instructed by pip:
+or **pip**:
 
 ```console
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip install pyhfst
+$ pip install omorfi
 ```
 
 Other tools like compilers, autotools and pkgconfig should be installed from
@@ -112,25 +110,6 @@ src/bash/omorfi-download.bash
 
 This will download some of the pre-compiled dictionaries into your current
 working directory.
-
-### Python installation
-
-It is possible to install within python via `pip` or `anaconda`. The
-dependencies that are not available in pip or anaconda will not be usable, e.g.
-syntactic analysis and disambiguation using VISL CG 3.
-
-```
-pip install omorfi
-```
-
-[![Anaconda](https://anaconda.org/flammie/omorfi/badges/installer/conda.svg)](https://anaconda.org/flammie/omorfi/)
-
-```
-conda install -c flammie omorfi
-```
-
-**NB: since conda does not have new version of hfst buildable with recent
-pythons or something, only older versions are available on conda.**
 
 ### Docker
 
