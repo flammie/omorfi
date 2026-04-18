@@ -423,6 +423,11 @@ generated/omorfi-token-separator.regex:
 	$(PYTHON) $(srcdir)/python/generate-regexes.py \
 		-r token-separator -o $@
 
+# generator components
+generated/optional-generations.regex:
+	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+		-r optional-generations -o $@
+
 generated/omorfi-hyphenate.twolc:
 	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
 
@@ -1236,8 +1241,11 @@ generated/omorfi_recased.describe.hfst: generated/temporary.describe.hfst genera
 		$(HF2F) -f olw $(HFST_FLAGS) -o $@
 
 # create generator from large analyzer
-generated/omorfi.generate.hfst: generated/temporary-omor.hyphenated.hfst  generated/omorfi-remove-boundaries.regex.hfst
+generated/omorfi.generate.hfst: generated/temporary-omor.hyphenated.hfst \
+		generated/omorfi-remove-boundaries.regex.hfst \
+		generated/optional-generations.regex.hfst
 	$(HCOMP) $(HFST_FLAGS) -1 $< -2 generated/omorfi-remove-boundaries.regex.hfst |\
+		$(HCOMP) $(HFST_FLAGS) -1 generated/optional-generations.regex.hfst -2 - |\
 		$(HF2F) $(HFST_FLAGS) -f olw -o $@
 
 # guesser

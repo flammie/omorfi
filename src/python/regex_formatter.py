@@ -146,6 +146,14 @@ def format_rules_regex(formatter, ruleset):
         regexstring += "[ %. | %, | %: | %; | %? | %! | %- | %  ] ;"
     elif ruleset == "token-separator":
         regexstring += "0:\"\\n\" ;"
+    elif ruleset == "optional-generations":
+        regexstring += "0 (<-) "
+        regexstring += ", 0 (<-) ".join([twolc_escape(formatter.stuff2lexc(tag)) for tag in
+                                        ["MALE", "FEMALE", "CULTGRP", "PRODUCT",
+                                         "ARTWORK", "EVENT", "FIRST", "LAST",
+                                         "GEO", "ORG", "MISC", "COUNTRY"]
+                                         if formatter.stuff2lexc(tag)])
+        regexstring += " ;\n"
     else:
         print("Unknown ruleset", ruleset)
         return None

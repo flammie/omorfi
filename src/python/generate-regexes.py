@@ -55,7 +55,7 @@ def main():
     # check args
     formatter = None
     if args.format == "omor":
-        formatter = OmorFormatter(args.verbose)
+        formatter = OmorFormatter(args.verbose, props=True, sem=True)
     elif args.format == "ftb3":
         formatter = Ftb3Formatter(args.verbose)
     else:
