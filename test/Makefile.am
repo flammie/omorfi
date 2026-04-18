@@ -14,11 +14,11 @@ TESTS+=tokenisation-test.bash \
 	  conllu-fi-tdt-ud-test.bash \
 	  conllu-fi-ftb-ud-test.sh \
 	  vislcg-fi-ud-test.sh \
-	  finer-test.bash \
-	  unimorph-test.bash
+	  finer-test.bash
 XFAIL_TESTS=
 if WANT_BIG_TESTS
-TESTS+=coverages-all-slow.bash
+TESTS+=coverages-all-slow.bash \
+	  unimorph-test.bash
 endif
 endif # CAN PYTHONISED TESTS
 
