@@ -304,7 +304,7 @@ AC_PATH_PROGS([OMORFI_TOKENISE], [omorfi-tokenise], [false])
 AC_PATH_PROGS([OMORFI_UNIMORPH], [omorfi-unimorph], [false])
 AC_PATH_PROGS([OMORFI_VISLCG], [omorfi-vislcg], [false])
 AS_IF([test x$OMORFI_CONLLU = xfalse],
-      [AC_MSG_WARN([tests need omorfi python,
+      [AC_MSG_WARN([tests and convenience bashing need omorfi python,
                     say pipx install git+https://github.com/flammie/omorfi-python])])
 AM_CONDITIONAL([CAN_PYTHONISED_TESTS], [test x$OMORFI_CONLLU != xfalse])
 
