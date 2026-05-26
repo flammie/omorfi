@@ -771,13 +771,7 @@ class OmorFormatter:
         if wordmap["style"]:
             wordmap["analysis"] += self.stuff2lexc(wordmap["style"])
 
-        if self.ktnkav and wordmap["upos"] != "ACRONYM":
-            ktn = lexc_escape(wordmap["kotus_tn"])
-            tag = f"[KTN={ktn}]"
-            if tag in self.ktnkav_multichars:
-                wordmap["analysis"] += tag
-                if wordmap["kotus_av"]:
-                    wordmap["analysis"] += f"[KAV={wordmap['kotus_av']}]"
+        wordmap["analysis"] += self.kotus_tags(wordmap)
         if self.newparas:
             wordmap["analysis"] += f"[NEWPARA={wordmap['new_para']}]"
 
@@ -790,6 +784,32 @@ class OmorFormatter:
         else:
             return lexc_line
 
+    def kotus_tags(self, wordmap):
+        """Build the KOTUS dictionary class tags for a wordmap.
+
+        Returns the [KTN=N] tag, plus [KAV=X] when the lexeme has a
+        gradation class, or "" when ktnkav output is off, the word is an
+        acronym, or the class is not a declared multichar symbol (the
+        pipe-joined ambiguous classes such as "5|6" are not declared and so
+        emit nothing, as before).
+
+        The class number is deliberately not passed through lexc_escape.
+        [KTN=N] and [KAV=X] are multichar symbols (see multichars_lexc), so
+        the digits are part of the symbol name rather than lexc text.
+        lexc_escape rewrites the lexc epsilon symbol "0" to "%0", which would
+        turn class numbers containing a zero (10, 20, ..., 70, 1009, ...)
+        into "[KTN=1%0]" etc. -- a string that matches neither the declared
+        symbol nor ktnkav_multichars, so the tag would be dropped.
+        """
+        if not self.ktnkav or wordmap["upos"] == "ACRONYM":
+            return ""
+        tag = f"[KTN={wordmap['kotus_tn']}]"
+        if tag not in self.ktnkav_multichars:
+            return ""
+        if wordmap["kotus_av"]:
+            tag += f"[KAV={wordmap['kotus_av']}]"
+        return tag
+
     def multichars_lexc(self):
         """Create analysis tags description for lexc for omorfi tags
 
@@ -799,6 +819,10 @@ class OmorFormatter:
         multichars += "!! OMOR multichars:\n"
         for mcs in self.common_multichars:
             multichars += mcs + "\n"
+        if self.ktnkav:
+            multichars += "!! KOTUS dictionary class multichars:\n"
+            for mcs in self.ktnkav_multichars:
+                multichars += mcs + "\n"
         multichars += multichars_lexc()
         return multichars
 

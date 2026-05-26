@@ -105,6 +105,9 @@ def main():
                     help="include PROPER= in raw analyses")
     ap.add_argument("--omor-sem", action="store_true", default=False,
                     help="include SEM= in raw analyses")
+    ap.add_argument("--omor-ktnkav", action="store_true", default=False,
+                    help="include KTN= and KAV= KOTUS dictionary class tags "
+                    "in raw analyses")
     ap.add_argument("--homonyms", action="store_false", default=True,
                     help="include HOMONYM= in raw analyses")
     ap.add_argument("--none-lemmas", action="store_true", default=False,
@@ -123,7 +126,8 @@ def main():
     if args.format == 'omor':
         formatter = OmorFormatter(args.verbose, newparas=args.omor_new_para,
                                   allo=args.omor_allo, props=args.omor_props,
-                                  sem=args.omor_sem, homonyms=args.homonyms)
+                                  sem=args.omor_sem, homonyms=args.homonyms,
+                                  ktnkav=args.omor_ktnkav)
         if args.omor_sem:
             args.splits.append("sem")
         if args.omor_props:
