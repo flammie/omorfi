@@ -125,6 +125,17 @@ less strict divide between a noun lexeme and adjectival one: *sini* (blue N) ~
 *sininen* (blue N/A), *kulta* (gold N), *kultainen* (golden A). To recognise
 adjectives, ...
 
+## Adjectives don't have possessives
+
+Some grammars have taken the stance that adjectives do not have possessive
+suffixes, but this is not totally accurate. Using possessive suffixes with
+adjectives can for example happen in the following ellipsis construction:
+*minun keltainen kukkani ja hänen punaisensa*. This construction works with all
+adjectives, not just those that are potentially conversible to nouns (see
+above). Furthermore, an adjective with a possessive suffix does not sound
+ungrammatical to average speaker so recognising them in a descriptive analyser
+is a good thing.
+
 ## Proper noun as noun too?
 
 There are also groups of proper nouns that systematically double as nouns. Most
