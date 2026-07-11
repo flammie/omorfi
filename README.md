@@ -19,8 +19,7 @@ omorfi](//flammie.github.io/omorfi/).
 
 ## Licence
 
-Omorfi is licenced [GNU GPLv3](COPYING) (not later). The bundled HFST in the
-java API demo is [Apache](COPYING-hfst-java).
+Omorfi is licenced [GNU GPLv3](COPYING) (not later).
 
 * [Further information about licence and copyright in
   documentation](//flammie.github.io/omorfi/licence.html)
@@ -54,8 +53,6 @@ Optionally:
 * *VISL CG 3*
 * *hfst-ospell-0.2.0* or greater needed for spell-checking
 * *C++ compiler* for compiling the C++ demo
-* *Java 7*, or greater, for Java bindings
-
 
 ### Installing dependencies
 

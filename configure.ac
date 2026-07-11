@@ -118,11 +118,6 @@ AC_ARG_ENABLE([hyphenator],
 AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
 
 # libraries
-AC_ARG_WITH([java],
-            [AS_HELP_STRING([--without-java],
-                            [do not build java library])],
-            [with_java=$withval],
-            [with_java=no])
 AC_ARG_WITH([cpp],
             [AS_HELP_STRING([--without-cpp],
                             [do not build cpp library])],
