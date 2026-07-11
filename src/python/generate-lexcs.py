@@ -71,7 +71,7 @@ def main():
                     help="read lemmas to include from ILFILE")
     ap.add_argument("--exclude-blacklisted", "-B", action="append", type=str,
                     metavar="BLIST", help="exclude lemmas in BLIST blacklist",
-                    choices=["FGK", "PROPN-BLOCKING", "NOUN-BLOCKING-PROPN",
+                    choices=["CONTRIB", "PROPN-BLOCKING", "NOUN-BLOCKING-PROPN",
                              "TOOSHORTFORCOMPOUND"])
     ap.add_argument("--include-origin", "-O", action="append", type=str,
                     metavar="ORIGIN",

@@ -5,7 +5,7 @@ HFST_FLAGS=
 voikkosharedir=$(libdir)/voikko/3/
 
 HLEXC_FLAGS=--alignStrings
-BLACKLIST_FLAGS=-B PROPN-BLOCKING -B FGK
+BLACKLIST_FLAGS=-B PROPN-BLOCKING -B CONTRIB
 ORIGIN_FLAGS=-O kotus -O omorfi++
 
 # {{{ Files
@@ -343,7 +343,7 @@ generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
 generated/omorfi-omor.reweight:
 	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
 
-# Gold dictionary lexc: kotus + omorfi++ - FGK - PROPN blockers
+# Gold dictionary lexc: kotus + omorfi++ - CONTRIB - PROPN blockers
 generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
 	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=omor \
