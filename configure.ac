@@ -3,12 +3,9 @@
 
 AC_PREREQ([2.69])
 AC_INIT([omorfi],[0.9.12],[https://github.com/flammie/omorfi/issues],[https://github.com/flammie/omorfi/])
-LT_PREREQ([2.2.6])
 AC_CONFIG_AUX_DIR([config-aux])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz color-tests subdir-objects])
 AC_CONFIG_MACRO_DIR([m4])
-AC_CONFIG_SRCDIR([src/cpp/omorfi.cc])
-AC_CONFIG_HEADERS([config.h])
 
 PACKAGE=omorfi
 VERSION=0.9.12
@@ -117,13 +114,6 @@ AC_ARG_ENABLE([hyphenator],
                              [enable_hyphenator=no])
 AM_CONDITIONAL([WANT_HYPHENATE], [test x$enable_hyphenator != xno])
 
-# libraries
-AC_ARG_WITH([cpp],
-            [AS_HELP_STRING([--without-cpp],
-                            [do not build cpp library])],
-            [with_cpp=$withval],
-            [with_cpp=yes])
-
 # run some things on clusters
 AC_ARG_WITH([pbs-mail],
             [AS_HELP_STRING([--with-pbs-mail],
@@ -157,9 +147,6 @@ AC_MSG_RESULT([we are the new world order])
 
 # Checks for programs
 AM_PROG_AR
-AC_PROG_CC
-AC_PROG_CXX
-LT_INIT
 AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MAKE_SET
@@ -303,21 +290,6 @@ AS_IF([test x$OMORFI_CONLLU = xfalse],
                     say pipx install git+https://github.com/flammie/omorfi-python])])
 AM_CONDITIONAL([CAN_PYTHONISED_TESTS], [test x$OMORFI_CONLLU != xfalse])
 
-# check java when not disabled
-AS_IF([test "x$with_java" != xno], [
-    AX_CHECK_CLASSPATH
-    AX_PROG_JAVA
-    AX_PROG_JAVAC
-    AX_CHECK_CLASS([net.sf.hfst.Transducer])
-    ])
-AS_IF([test "x$with_java" = xyes], [
-    AS_IF([test "x$HAVE_net_sf_hfst_Transducer" = xno],
-          [AC_MSG_WARN(Building java with bundled hfst then)
-          AC_SUBST([HFSTCLASSPATH], [java])
-          ])
-    ], [AC_SUBST([HFSTCLASSPATH], [$with_java])])
-AM_CONDITIONAL([CAN_JAVA], [test x$with_java != xno])
-
 # separated my scripts for corpora fetching, some preprocessing
 AC_PATH_PROG([FETCH_EUROPARL], [fetch-europarl.bash], [false])
 AC_PATH_PROG([FETCH_WIKIMEDIA], [fetch-wikimedia.bash], [false])
@@ -333,24 +305,6 @@ AM_CONDITIONAL([CAN_BIG_CORPORA], [test x$FETCH_EUROPARL != xfalse])
 AC_PATH_PROG([QSUB], [qsub], [false])
 AC_PATH_PROG([SBATCH], [sbatch], [false])
 
-
-AC_LANG([C++])
-# Checks for libraries
-PKG_CHECK_MODULES([LIBHFST], [hfst >= 3.15],
-                  [AC_DEFINE([HAVE_LIBHFST], [1], [Use libhfst])])
-AC_MSG_CHECKING([can compile libhfst stufffs with c++])
-AC_COMPILE_IFELSE([AC_LANG_SOURCE([#include <hfst/hfst.h>
-		   
-		   void main(void) {return;}])], 
-		   [AC_MSG_RESULT([yes])],
-		   [AC_MSG_RESULT([no])
-		    with_cpp=no])
-AM_CONDITIONAL([WANT_CPP], [test x$with_cpp != xno])
-
-# Checks for header files
-# Checks for typedefs, structures and compiler characteristics
-AX_CXX_COMPILE_STDCXX_11
-# Checks for library functions
 
 AC_CONFIG_FILES([Makefile src/Makefile src/voikko/index.xml
                  test/Makefile test/test-header.yaml

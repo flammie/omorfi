@@ -1343,21 +1343,6 @@ generated/omorfi.cg3bin: vislcg3/omorfi.cg3
 endif
 # }}}
 
-# {{{ C++ library
-
-if WANT_CPP
-lib_LTLIBRARIES=libomorfi.la
-include_HEADERS=cpp/omorfi.hh
-libomorfi_la_SOURCES=cpp/omorfi.cc
-libomorfi_la_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
-libomorfi_la_LDFLAGS=-no-undefined -version-info 0:0:0 $(LIBHFST_LIBS)
-bin_PROGRAMS=omorfi-lookup
-omorfi_lookup_SOURCES=cpp/omorfi-lookup.cc
-omorfi_lookup_LDADD=libomorfi.la $(LIBHFST_LIBS)
-omorfi_lookup_CXXFLAGS=$(AM_CXXFLAGS) $(CXXFLAGS) $(LIBHFST_CFLAGS)
-endif
-
-# }}}
 # {{{ cleaning
 CLEAN_FILES=generated/ftb1-avaaminen_omorfi.hfst \
 			 generated/ftb1-avaaminen.regex.hfst \
@@ -1433,19 +1418,11 @@ conversions: $(DB_GENERTED) $(GENERIC_GENERATED) $(OMOR_GENERATED) \
 	$(LABELSEGMENT_GENERATED) \
 	$(FTB3_GENERATED) $(APE_GENERATED)
 
-# }}}
-
-pip:
-	pushd python
-	$(PYTHON) setup.py sdist bdist_wheel
-	popd
-	echo "Now do:"
-	echo "  cd python"
-	echo "	$(PYTHON) -m twine upload dist/*"
 
 sorted:
 	$(PYTHON) python/tsvsort.py -i lexemes.tsv -o lexemes.tsv.sort
 	mv -v lexemes.tsv.sort lexemes.tsv
+# }}}
 
 #
 # vim: set foldmethod=marker:

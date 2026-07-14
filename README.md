@@ -52,7 +52,6 @@ Optionally:
 * *omorfi-python* for tests and running
 * *VISL CG 3*
 * *hfst-ospell-0.2.0* or greater needed for spell-checking
-* *C++ compiler* for compiling the C++ demo
 
 ### Installing dependencies
 
@@ -140,10 +139,16 @@ For further details please refer to:
    pages](https://flammie.github.io/omorfi/usage.html)
 * [omorfi man pages](https://flammie.github.io/omorfi/man/)
 
-## Programming APIs
+## Programming APIs / libraries
 
 Omorfi can be used via very simple programming APIs, the design is detailed in
 [omorfi API design](https://flammie.github.io/omorfi/API-design.html)
+
+*The packaging of libraries is in separate github repos:*
+
+* [omorfi-python](https://github.com/flammie/omorfi-python)
+* [omorfi-java](https://github.com/flammie/omorfi-python)
+* [omorfi-c++](https://github.com/flammie/omorfi-cpp)
 
 ## Using binary models
 
