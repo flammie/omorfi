@@ -22,8 +22,3 @@ conversions:
 
 test:
 	$(MAKE) check
-
-clean-local:
-	if test -d com ; then \
-		find com/github/flammie/omorfi -name '*.class' -delete ;\
-	fi
