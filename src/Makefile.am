@@ -49,48 +49,21 @@ CONTINUATIONS=continuations.tsv
 TOKENS=tokeniser/omorfi.tokenise.pmatch
 # }}} 
 #
-# {{{Scripts
+# {{{DB Scripts
 # NB: (variable name = SCIRPTS cause automagic _SCRIPTS)
-# tag formats
-FORMAT_SCIRPTS=python/omorfi/formats/apertium_formatter.py \
-			   python/omorfi/formats/ftb3_formatter.py \
-			   python/omorfi/formats/omor_formatter.py \
-			   python/omorfi/formats/giella_formatter.py \
-			   python/omorfi/formats/tdt_formatter.py \
-			   python/omorfi/formats/lexc_formatter.py \
-			   python/omorfi/formats/twolc_formatter.py \
-			   python/omorfi/formats/regex_formatter.py \
-			   python/omorfi/formats/monodix_formatter.py \
-			   python/omorfi/formats/no_tags_formatter.py \
-			   python/omorfi/formats/labeled_segments_formatter.py \
-			   python/omorfi/token.py \
-			   python/omorfi/formats/formatter.py \
-			   python/omorfi/formats/kotus_sanalista_formatter.py
 # file formats
-GENERATOR_SCIRPTS=python/generate-lexcs.py \
-				  python/generate-twolcs.py \
-				  python/generate-regexes.py \
-				  python/generate-reweights.py \
-				  python/generate-edit-distance.py \
-				  python/generate-monodix.py \
-				  python/generate-yaml.py \
-				  python/generate-kotus-sanalista.py
+GENERATOR_SCIRPTS=db-scripts/generate-lexcs.py \
+				  db-scripts/generate-twolcs.py \
+				  db-scripts/generate-regexes.py \
+				  db-scripts/generate-reweights.py \
+				  db-scripts/generate-edit-distance.py \
+				  db-scripts/generate-monodix.py \
+				  db-scripts/generate-yaml.py \
+				  db-scripts/generate-kotus-sanalista.py
 # Raw-ish database handling
-DATABASE_SCIRPTS=python/tsvjoin.py \
-				 python/tsv_expand.py
-# Finnish specific lot
-FIN_SCIRPTS=python/omorfi/entryguessing/gradation.py \
-			python/omorfi/entryguessing/parse_csv_data.py \
-			python/omorfi/entryguessing/plurale_tantum.py \
-			python/omorfi/entryguessing/stub.py \
-			python/omorfi/entryguessing/guess_feats.py \
-			python/omorfi/entryguessing/guess_new_class.py \
-			python/omorfi/entryguessing/wordmap.py \
-			python/omorfi/string_manglers.py \
-			python/omorfi/error_logging.py \
-			python/omorfi/settings.py
-SCIRPTS=$(FORMAT_SCIRPTS) $(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS) \
-		$(FIN_SCIRPTS)
+DATABASE_SCIRPTS=db-scripts/tsvjoin.py \
+				 db-scripts/tsv_expand.py
+SCIRPTS=$(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS)
 # }}}
 #
 # {{{Generated files
@@ -269,7 +242,7 @@ generated/timestamp:
 
 # right(?) join(lexemes, attributes)
 generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
-	$(PYTHON) $(srcdir)/python/tsvjoin.py -i $< \
+	$(PYTHON) $(srcdir)/db-scripts/tsvjoin.py -i $< \
 		-j $(srcdir)/attributes/abbr.tsv \
 		-j $(srcdir)/attributes/adptype.tsv \
 		-j $(srcdir)/attributes/blacklisted.tsv \
@@ -287,19 +260,19 @@ generated/joint.tsv: lexemes.tsv $(LEMMA_JOINS) generated/timestamp
 		-j $(srcdir)/attributes/verb-arguments.tsv -o $@
 # right(?) join(mwe, mwe/attributes)
 generated/mwe-joint.tsv: mwe.tsv $(LEMMA_JOINS) generated/timestamp
-	$(PYTHON) $(srcdir)/python/tsvjoin.py -i $< \
+	$(PYTHON) $(srcdir)/db-scripts/tsvjoin.py -i $< \
 		-j $(srcdir)/attributes/mwe/proper-classes.tsv \
 		-j $(srcdir)/attributes/mwe/semantic.tsv -o $@
 # inner(?) join(lexemes, paradigms)
 generated/master.tsv: generated/joint.tsv paradigms.tsv
-	$(PYTHON) $(srcdir)/python/tsv_expand.py \
+	$(PYTHON) $(srcdir)/db-scripts/tsv_expand.py \
 		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | LC_COLLATE=C sort -k 1,1 >> $@
 	-rm -f $@.unsrt
 # inner(?) join(mwes, paradigms)
 generated/mwe-master.tsv: generated/mwe-joint.tsv paradigms.tsv
-	$(PYTHON) $(srcdir)/python/tsv_expand.py \
+	$(PYTHON) $(srcdir)/db-scripts/tsv_expand.py \
 		-j $(srcdir)/paradigms.tsv -i $< -o $@.unsrt
 	head -n 1 < $@.unsrt > $@
 	tail -n +2 < $@.unsrt | LC_COLLATE=C sort -k 1,1 >> $@
@@ -311,41 +284,41 @@ generated/continuations.tsv: continuations.tsv generated/timestamp
 # database to omorfi native lexcies:
 # segmenter
 generated/omorfi.segment.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-segments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 # lemmatiser
 generated/omorfi.lemmatise.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=none --none-lemmas \
 		--break-loops \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 # acceptor
 generated/omorfi.accept.lexc:  generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv  \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv  \
 		-c generated/continuations.tsv -o $@ -f=none \
 		--break-loops \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 # segmented analysis experiment
 generated/omorfi-labelsegments.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=labelsegments \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS)
 
 # YAML tests
 generated/omorfi-omor-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=omor
+	$(PYTHON) $(srcdir)/db-scripts/generate-yaml.py -i $< -o $@ -f=omor
 
 # baseline reweighter
 generated/omorfi-omor.reweight:
-	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=omor -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-reweights.py -f=omor -o $@
 
 # Gold dictionary lexc: kotus + omorfi++ - CONTRIB - PROPN blockers
 generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=omor \
 		$(ORIGIN_FLAGS) $(BLACKLIST_FLAGS) \
 		--break-loops \
@@ -353,121 +326,121 @@ generated/omorfi.lexc: generated/master.tsv generated/continuations.tsv
 
 # Real omorfi dictionary
 generated/omorfi-large.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=omor \
 		$(OMORALLOFLAG) $(OMORPARAFLAG) $(OMORSEMFLAG) $(OMORPROPFLAG)
 
 
 # Xerox style guesser
 generated/omorfi-guesser.lexc: paradigms.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-guessers.py   \
+	$(PYTHON) $(srcdir)/db-scripts/generate-guessers.py   \
 		-r paradigms/suffix-regexes.tsv -d paradigms/stub-deletions.tsv \
 		-c generated/continuations.tsv -o $@ -f=omor
 
 # hacks
 generated/omorfi-rewrite-tags.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=omor \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py -f=omor \
 		-r rewrite-tags-omor -o $@
 
 # misc twol rules
 generated/omorfi-phon.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r phon -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -r phon -o $@
 
 # recasing optional rules
 generated/omorfi-recase-any.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r recase-any -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -r recase-any -o $@
 
 # uppercasing optional rules
 generated/omorfi-uppercase-any.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-any -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -r uppercase-any -o $@
 
 # titlecasing optional rules
 generated/omorfi-uppercase-first.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r uppercase-first -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -r uppercase-first -o $@
 
 # hyphenation rules
 generated/omorfi-hyphens.twolc: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -r hyphens -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -r hyphens -o $@
 
 # orthography rules
 generated/omorfi-orthographic-variations.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r orthographic-variations -o $@
 
 # ž rules
 generated/omorfi-zh.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r zh -o $@
 
 # š rules
 generated/omorfi-sh.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r sh -o $@
 
 # removing extra markers
 generated/omorfi-remove-boundaries.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r remove-boundaries -o $@
 
 
 # tokeniser components
 generated/omorfi-between-tokens.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r between-tokens -o $@
 
 generated/omorfi-token.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r token -o $@
 
 generated/omorfi-token-separator.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r token-separator -o $@
 
 # generator components
 generated/optional-generations.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r optional-generations -o $@
 
 generated/omorfi-hyphenate.twolc:
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -f=ftb3 -r hyphenate -o $@
 
 generated/omorfi-boundary.reweight:
-	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=boundary -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-reweights.py -f=boundary -o $@
 
 
 # database to ftb3
 generated/omorfi-ftb3-tests.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=ftb3
+	$(PYTHON) $(srcdir)/db-scripts/generate-yaml.py -i $< -o $@ -f=ftb3
 
 generated/omorfi-ftb3.reweight:
-	$(PYTHON) $(srcdir)/python/generate-reweights.py  -f=ftb3 -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-reweights.py  -f=ftb3 -o $@
 
 generated/omorfi-ftb3.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py  -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py  -m generated/master.tsv \
 		$(BLACKLIST_FLAGS) \
 		-c generated/continuations.tsv -o $@ -f=ftb3
 
 generated/omorfi-ftb3-rewrite-tags.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py -f=ftb3 \
 		-r rewrite-tags-ftb3 -o $@
 
 generated/omorfi-ftb3-lemmatise.regex:
-	$(PYTHON) $(srcdir)/python/generate-regexes.py -f=ftb3 \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py -f=ftb3 \
 		-r lemmatise -o $@
 
 # database to apertium
 generated/apertium-fin.fin.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@ -f=apertium
 
 generated/apertium-fin.fin.twolc:
-	$(PYTHON) $(srcdir)/python/generate-twolcs.py -f=apertium -r apertium -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-twolcs.py -f=apertium -r apertium -o $@
 
 generated/apertium-fin.fin.yaml: $(top_srcdir)/test/gtd-tests.tsv
-	$(PYTHON) $(srcdir)/python/generate-yaml.py -i $< -o $@ -f=apertium
+	$(PYTHON) $(srcdir)/db-scripts/generate-yaml.py -i $< -o $@ -f=apertium
 
 generated/apertium-fin.fin.reweight:
-	$(PYTHON) $(srcdir)/python/generate-reweights.py -f=apertium -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-reweights.py -f=apertium -o $@
 
 generated/apertium-fin.fin.rlx: vislcg3/omorfi.cg3 vislcg3/omorfi2apertium.sed
 	echo "## AUTOMATICALLY GENERATED from omorfi" > $@
@@ -477,23 +450,23 @@ generated/apertium-fin.fin.rlx: vislcg3/omorfi.cg3 vislcg3/omorfi2apertium.sed
 
 # database to monodix
 generated/omorfi.dix: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-monodix.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-monodix.py -m generated/master.tsv \
 		-c generated/continuations.tsv -o $@
 
 # database to giella
 generated/omorfi-giella.lexc: generated/master.tsv generated/continuations.tsv
-	$(PYTHON) $(srcdir)/python/generate-lexcs.py -m generated/master.tsv \
+	$(PYTHON) $(srcdir)/db-scripts/generate-lexcs.py -m generated/master.tsv \
 		$(BLACKLIST_FLAGS) -B TOOSHORTFORCOMPOUND \
 		-c generated/continuations.tsv -o $@ -f=giella
 
 generated/omorfi-remove-boundaries-giella.regex: generated/timestamp
-	$(PYTHON) $(srcdir)/python/generate-regexes.py \
+	$(PYTHON) $(srcdir)/db-scripts/generate-regexes.py \
 		-r remove-boundaries-giella -o $@
 
 
 # database (back) to kotus
 generated/omorfi-sanalista.xml: generated/master.tsv
-	$(PYTHON) $(srcdir)/python/generate-kotus-sanalista.py -m generated/master.tsv -o $@
+	$(PYTHON) $(srcdir)/db-scripts/generate-kotus-sanalista.py -m generated/master.tsv -o $@
 endif
  # }}}
 #
@@ -1308,7 +1281,7 @@ generated/omorfi-giella.generate.hfst: generated/temporary-giella.analyse.hfst
 # }}}
 # {{{SPELL-CHECKING
 # voikko speller LIBHFST beta targets'
-generated/errmodel.edit-distance.txt: python/generate-edit-distance.py
+generated/errmodel.edit-distance.txt: db-scripts/generate-edit-distance.py
 	$(PYTHON) $< -o $@
 
 generated/errmodel.edit-distance-1.hfst: generated/errmodel.edit-distance.hfst
@@ -1420,7 +1393,7 @@ conversions: $(DB_GENERTED) $(GENERIC_GENERATED) $(OMOR_GENERATED) \
 
 
 sorted:
-	$(PYTHON) python/tsvsort.py -i lexemes.tsv -o lexemes.tsv.sort
+	$(PYTHON) db-scripts/tsvsort.py -i lexemes.tsv -o lexemes.tsv.sort
 	mv -v lexemes.tsv.sort lexemes.tsv
 # }}}
 
