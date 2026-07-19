@@ -102,6 +102,29 @@ sometimes guess that *äitinsä* (their mother/mothers) is more often singular a
 *kätensä* (their hand/hands) are more often plural, but this is not a 100 % rule
 and therefore not in the automatic disambiguations.
 
+
+## Interjections or adverbs
+
+Interjections are generally supposed to be used as an analysis for somewhat
+spoken word-forms, including mumbling and humming and perhaps even artificial
+sounds written in characters, but also some discourse turns such as greetings,
+curses and self-corrections. People seem to forget or disagree some of these
+roles of interjections, so there are several that are doubled up in adverbs.
+
+## Particles?
+
+Computer linguists often have strong opinions of what is good part-of-speech or
+tagging choice for the words and word-forms that don't fit into any other
+categories neatly. In Finnish it is a group of non-inflecting words or words
+that have partial or historic inflectional paradigms, or words that generally
+don't inflect but people sometimes play with language and inflect them anyway.
+Locally *particles* has been the dumpster class in Finnish grammars, many IE
+computer linguists reject particles but their solution is oftentimes just moving
+everything into *adverbs*. This debate is sometimes reflected in omorfi database
+although I believe we have taken the no-particles approach overall (following
+UD-Finnish etc. etc.).
+
+
 * * *
 
 
