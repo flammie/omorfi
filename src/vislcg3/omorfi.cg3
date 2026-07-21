@@ -503,7 +503,7 @@ LIST SG2POSS-CONFUSION =
     ("viitta" Number[psor]=Sing Person[psor]=2)
     ("osa" Number[psor]=Sing Person[psor]=2)
     ("huoma" Number[psor]=Sing Person[psor]=2)
-    ("koho" Numberpsor]=Sing Person[psor]=2) ;
+    ("koho" Number[psor]=Sing Person[psor]=2) ;
 LIST ADJ-RARELY-NOUN = ("kauhea" UPOS=NOUN) ("komea" UPOS=NOUN) ;
 LIST WHAT-THE-ADJ = ("pelko" UPOS=ADJ) ;
 LIST NUMNOMGENS = ("seitsemän" UPOS=NUM) ("kahdeksan" UPOS=NUM)
