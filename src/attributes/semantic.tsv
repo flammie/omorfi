@@ -4261,7 +4261,7 @@ kW	NOUN	measure
 kWb	NOUN	measure
 kWh	NOUN	measure
 ka	NOUN	measure
-kaakkois-	NOUN	geo
+kaakkois-	ADJ	geo
 kaarinalainen	ADJ	country
 kaarinalainen	NOUN	inhabitant
 kaarlelalainen	ADJ	country
@@ -4551,7 +4551,7 @@ kodisjokelainen	ADJ	country
 kodisjokelainen	NOUN	inhabitant
 koijärveläinen	ADJ	country
 koijärveläinen	NOUN	inhabitant
-koillis-	NOUN	geo
+koillis-	ADJ	geo
 koivulahtelainen	ADJ	country
 koivulahtelainen	NOUN	inhabitant
 kok.	NOUN	polit|title
@@ -4894,7 +4894,7 @@ loppelainen	ADJ	country
 loppelainen	NOUN	inhabitant
 loppilainen	ADJ	country
 loppilainen	NOUN	inhabitant
-lounais-	NOUN	geo
+lounais-	ADJ	geo
 loviisalainen	ADJ	country
 loviisalainen	NOUN	inhabitant
 lozi	NOUN	language
@@ -4920,7 +4920,7 @@ luopioislainen	ADJ	country
 luopioislainen	NOUN	inhabitant
 luopiolainen	ADJ	country
 luopiolainen	NOUN	inhabitant
-luoteis-	NOUN	geo
+luoteis-	ADJ	geo
 luotolainen	ADJ	country
 luotolainen	NOUN	inhabitant
 luotsineuvos	NOUN	title
