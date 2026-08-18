@@ -24,11 +24,11 @@ format.
 import argparse
 from sys import exit
 
-from omorfi.formats.apertium_formatter import ApertiumFormatter
-from omorfi.formats.ftb3_formatter import Ftb3Formatter
-from omorfi.formats.no_tags_formatter import NoTagsFormatter
-from omorfi.formats.omor_formatter import OmorFormatter
-from omorfi.settings import stuff_weights
+from apertium_formatter import ApertiumFormatter
+from ftb3_formatter import Ftb3Formatter
+from no_tags_formatter import NoTagsFormatter
+from omor_formatter import OmorFormatter
+from settings import stuff_weights
 
 
 # standard UI stuff
@@ -51,11 +51,11 @@ def main():
     ap.add_argument("--separator", action="store", default="\t",
                     metavar="SEP", help="use SEP as separator")
     ap.add_argument("--comment", "-C", action="append", default=["#"],
-                    metavar="COMMENT", 
+                    metavar="COMMENT",
                     help="skip lines starting with COMMENT that" +
                     "do not have SEPs")
     ap.add_argument("--strip", action="store",
-                    metavar="STRIP", 
+                    metavar="STRIP",
                     help="strip STRIP from fields before using")
 
     ap.add_argument("--format", "-f", action="store", default="omor",

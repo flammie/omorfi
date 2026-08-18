@@ -20,6 +20,7 @@
 # utils to format apertium style data from omorfi database values
 
 from error_logging import fail_formatting_missing_for, fail_guess_because, just_fail
+from lexc import multichars_lexc, root_lexicon_lexc
 from settings import deriv_boundary, morph_boundary, optional_hyphen, word_boundary
 from string_manglers import lexc_escape
 
@@ -583,7 +584,7 @@ class Ftb3Formatter:
         multichars += "!! FTB 3.1 multichar set:\n"
         for mcs in self.multichars:
             multichars += mcs + "\n"
-        multichars += Formatter.multichars_lexc(self)
+        multichars += multichars_lexc()
         return multichars
 
     def root_lexicon_lexc(self):
@@ -591,7 +592,7 @@ class Ftb3Formatter:
 
         @return lexc-formatted string for Root lexicon for FTB3 format
         """
-        root = Formatter.root_lexicon_lexc(self)
+        root = root_lexicon_lexc()
         if True:
             # want co-ordinated hyphens left
             root += "!! LEXICONS that can be co-ordinated hyphen -compounds\n"

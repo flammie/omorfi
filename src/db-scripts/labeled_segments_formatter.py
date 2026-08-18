@@ -21,6 +21,7 @@
 # utils to format apertium style data from omorfi database values
 
 from error_logging import fail_formatting_missing_for
+from lexc import multichars_lexc, root_lexicon_lexc
 from no_tags_formatter import NoTagsFormatter
 from settings import optional_hyphen, word_boundary
 from string_manglers import lexc_escape
@@ -396,7 +397,7 @@ class LabeledSegmentsFormatter:
         multichars = "Multichar_Symbols\n"
         for mc in self.multichars:
             multichars += lexc_escape(mc) + "\n"
-        multichars += Formatter.multichars_lexc(self)
+        multichars += multichars_lexc()
         return multichars
 
     def root_lexicon_lexc(self):
@@ -404,7 +405,7 @@ class LabeledSegmentsFormatter:
 
         @return lexc-format Root lexicon for labeled morph segments
         """
-        root = Formatter.root_lexicon_lexc(self)
+        root = root_lexicon_lexc()
         return root
 
 
