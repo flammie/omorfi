@@ -125,6 +125,7 @@ ADJ_VAPAA	ADJ	ADJECTIVE	17	None	False	weaken	back	a	None	False	False	aa	a
 ADJ_VASEN	ADJ	ADJECTIVE	37	None	False	strengthen	back	None	None	False	False	n	n
 ADJ_VELTTO	ADJ	ADJECTIVE	1	C	False	weaken	back	None	None	False	False	tto	to
 ADJ_VENTO	ADJ	ADJECTIVE	1	J	False	weaken	back	None	None	False	False	nto	to
+ADJ_ONNETOIN	ADJ	ADJECTIVE	34	C	False	strengthen	back	None	None	False	False	toin	oin
 ADJ_VIATON	ADJ	ADJECTIVE	34	C	False	strengthen	back	None	None	False	False	ton	on
 ADJ_VIHANTA	ADJ	ADJECTIVE	9	J	False	weaken	back	a	None	False	False	nta	ta
 ADJ_VIHERIÄ	ADJ	ADJECTIVE	15	None	False	weaken	front	ä	None	False	False	iä	ä
@@ -460,6 +461,7 @@ NOUN_KIHARRIN	NOUN	NOUN	33	K	False	strengthen	back	None	None	False	False	rrin	ri
 NOUN_KIINNE	NOUN	NOUN	48	J	False	strengthen	front	None	None	False	False	nne	ne
 NOUN_KIIRU	NOUN	NOUN	48	None	False	strengthen	back	u	None	False	False	u	
 NOUN_KIIRUS	NOUN	NOUN	41	None	False	strengthen	back	None	None	False	False	us	s
+ADJ_KIIRUS	ADJ	ADJ	41	None	False	strengthen	back	None	None	False	False	us	s
 NOUN_KILPIKKÄÄT	NOUN	NOUN	41	A	obligatory	strengthen	front	None	None	False	False	kkäät	käät
 NOUN_KILPI	NOUN	NOUN	7	E	False	weaken	front	None	None	False	False	pi	pi
 NOUN_KINNAS	NOUN	NOUN	41	J	False	strengthen	back	None	None	False	False	nnas	nas
@@ -1553,6 +1555,7 @@ NUM_TOINEN	NUM	NUMERAL	38	None	False	strengthen	back	None	None	False	False	inen	
 NUM_TUHAT	NUM	NUMERAL	46	None	False	strengthen	back	None	None	False	False	tuhat	t
 NUM_VIISI	NUM	NUMERAL	27	None	False	weaken	front	None	None	False	False	viisi	si
 NUM_VIITISEN	NUM	NUMERAL	99	None	False	False	front	None	None	False	False	isen	
+NUM_SEITSEN	NUM	NUMERAL	10	None	False	weaken	front	None	None	False	False	en	n
 NUM_YHDEKSÄN	NUM	NUMERAL	10	None	False	weaken	front	None	None	False	False	än	än
 NUM_YKSI	NUM	NUMERAL	31	None	False	weaken	front	None	None	False	False	yksi	ksi
 PRON_AINOA	PRON	PRONOUN	15	None	False	weaken	back	a	None	False	False	oa	a
@@ -2119,6 +2122,7 @@ PROPN_TYTÖT	PROPN	NOUN	1	C	obligatory	weaken	front	None	None	False	False	töt	�
 PROPN_TYYLI	PROPN	NOUN	5	None	False	weaken	front	None	None	False	False	i	i
 PROPN_TYYPPI	PROPN	NOUN	5	B	False	weaken	front	None	None	False	False	ppi	pi
 PROPN_TYÖ	PROPN	NOUN	19	None	False	weaken	front	None	None	False	False	yö	yö
+NOUN_TYÖTTÖMÄT	NOUN	NOUN	34	C	obligatory	strengthen	front	None	None	False	False	ttömät	tömät
 PROPN_TYÖTTÖMÄT	PROPN	NOUN	34	C	obligatory	strengthen	front	None	None	False	False	ttömät	tömät
 PROPN_TÖLPÄKÖT	PROPN	NOUN	4	A	obligatory	weaken	front	None	None	False	False	köt	öt
 PROPN_TÖLPÄT	PROPN	NOUN	10	B	obligatory	weaken	front	None	None	False	False	pät	ät

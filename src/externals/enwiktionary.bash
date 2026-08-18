@@ -25,9 +25,9 @@ fi
 bash enwikt2omorfi.bash "$EWPREFIX.xml"  > "$EWPREFIX.tsv.noheaders"
 printf "lemma\thomonym\tnew_para\torigin\n" | cat - "$EWPREFIX.tsv.noheaders" \
     > "$EWPREFIX.tsv.unsort"
-python ../python/tsvsort.py -i "$EWPREFIX.tsv.unsort" \
+python ../db-scripts/tsvsort.py -i "$EWPREFIX.tsv.unsort" \
     -o "$EWPREFIX.tsv"
-python ../python/tsvmerge.py -i ../lexemes.tsv -m "$EWPREFIX.tsv" \
+python ../db-scripts/tsvmerge.py -i ../lexemes.tsv -m "$EWPREFIX.tsv" \
     -o ../lexemes+enwikt.tsv
 diff -u ../lexemes.tsv ../lexemes+enwikt.tsv
 echo if nothing broke just cp ../lexemes+enwikt.tsv ../lexemes.tsv and
