@@ -67,7 +67,6 @@ SCIRPTS=$(GENERATOR_SCIRPTS) $(DATABASE_SCIRPTS)
 # }}}
 #
 # {{{Generated files
-if WANT_HFST
 GENERIC_AUTOMATA=generated/omorfi.accept.hfst \
 				 generated/omorfi.tokenise.pmatchfst
 if WANT_LEMMATISE
@@ -140,7 +139,6 @@ LABELSEGMENT_AUTOMATA=generated/omorfi.labelsegment.hfst
 LABELSEGMENT_GENERATED=generated/omorfi-labelsegments.lexc
 endif
 
-endif
 DB_GENERATED=generated/master.tsv generated/joint.tsv \
 			 generated/mwe-master.tsv generated/mwe-joint.tsv
 if CAN_VISLCG3

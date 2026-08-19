@@ -11,12 +11,16 @@ PACKAGE=omorfi
 VERSION=0.9.12
 
 # Options
+AC_ARG_WITH([hfst-rs],
+            [AS_HELP_STRING([--with-hfst-rs=DIRECTORY],
+                            [define hfst-rs binary path if not in PATH @<:@default=PATH@:>@])],
+            [with_hfst_rs=$withval],
+            [with_hfst_rs=check])
 AC_ARG_WITH([hfst],
             [AS_HELP_STRING([--with-hfst=DIRECTORY],
-            [define HFST binary path if not in PATH @<:@default=PATH@:>@])],
-            [],
-            [with_hfst=yes])
-AM_CONDITIONAL([WANT_HFST], [test "x$with_hfst" != "xno"])
+                            [define HFST binary path if not in PATH @<:@default=PATH@:>@])],
+            [with_hfst=$withval],
+            [with_hfst=check])
 AC_ARG_ENABLE([voikko],
               [AS_HELP_STRING([--enable-voikko],
                               [compile voikko support @<:@default=yes@:>@])],
@@ -151,110 +155,239 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MAKE_SET
 AC_PATH_PROG([TIME], [time], [false])
-AS_IF([test "x$with_hfst" = "xyes" ], [
-       AC_PATH_PROG([HLEXC], [hfst-lexc], [no])
-       AS_IF([test "x$HLEXC" = "xno"],
-             [AC_MSG_ERROR([hfst-lexc is needed])])
-       AC_PATH_PROG([HTWOLC], [hfst-twolc], [no])
-       AS_IF([test "x$HTWOLC" = "xno"],
-             [AC_MSG_ERROR([hfst-twolc is needed])])
-       AC_PATH_PROG([HIC], [hfst-compose-intersect], [no])
-       AS_IF([test "x$HIC" = "xno"],
-             [AC_MSG_ERROR([hfst-compose-intersect is needed])])
-       AC_PATH_PROG([HINV], [hfst-invert], [no])
-       AS_IF([test "x$HINV" = "xno"],
-            [AC_MSG_ERROR([hfst-invert is needed])])
-       AC_PATH_PROG([HREGEX], [hfst-regexp2fst], [no])
-       AS_IF([test "x$HREGEX" = "xno"],
-             [AC_MSG_ERROR([hfst-regexp2fst is needed])])
-       AC_PATH_PROG([HSUB], [hfst-substitute], [no])
-       AS_IF([test "x$HSUB" = "xno"],
-             [AC_MSG_ERROR([hfst-substitute is needed])])
-       AC_PATH_PROG([HPR], [hfst-project], [no])
-       AS_IF([test "x$HPR" = "xno"],
-             [AC_MSG_ERROR([hfst-project is needed for speller automata])])
-       AC_PATH_PROG([HMIN], [hfst-minimize], [no])
-       AS_IF([test "x$HMIN" = "xno"],
-             [AC_MSG_ERROR([hfst-minimize is needed])])
-       AC_PATH_PROG([HF2F], [hfst-fst2fst], [no])
-       AS_IF([test "x$HF2F" = "xno"],
-             [AC_MSG_ERROR([hfst-fsts2fst is needed for optimized automata])])
-       AC_PATH_PROG([HRUNR], [hfst-lookup], [no])
-       AS_IF([test "x$HRUNR" = "xno"],
-             [AC_MSG_ERROR([hfst-lookup is needed for regression tests])])
-       AC_PATH_PROG([HCOMP], [hfst-compose], [no])
-       AS_IF([test "x$HCOMP" = "xno"],
-             [AC_MSG_ERROR([hfst-compose is needed])])
-       AC_PATH_PROG([HT2F], [hfst-txt2fst], [no])
-       AS_IF([test "x$HT2F" = "xno"],
-             [AC_MSG_ERROR([hfst-txt2fst is needed])])
-       AC_PATH_PROG([HSPL], [hfst-split], [no])
-       AS_IF([test "x$HSPL" = "xno"],
-             [AC_MSG_ERROR([hfst-split is needed])])
-       AC_PATH_PROG([HIX], [hfst-conjunct], [no])
-       AS_IF([test "x$HIX" = "xno"],
-             [AC_MSG_ERROR([hfst-conjunct is needed])])
-       AC_PATH_PROG([HPROC], [hfst-proc hfst-apertium-proc], [no])
-       AS_IF([test "x$HPROC" = "xno"],
-             [AC_MSG_WARN([hfst-proc is needed for some corpus analysis])])
-       AC_PATH_PROG([HREP], [hfst-repeat], [no])
-       AS_IF([test "x$HREP" = xno],
-             [AC_MSG_ERROR([hfst-repeat is needed for edit distance repetition])])
-       AC_PATH_PROG([HCAT], [hfst-concatenate], [no])
-       AS_IF([test "x$HCAT" = xno],
-             [AC_MSG_ERROR([hfst-concatenate is needed])])
-       AC_PATH_PROG([HUN], [hfst-disjunct], [no])
-       AS_IF([test "x$HCAT" = xno],
-             [AC_MSG_ERROR([hfst-disjunct is needed])])
-       AC_PATH_PROG([HS2F], [hfst-strings2fst], [no])
-       AS_IF([test "x$HCAT" = xno],
-             [AC_MSG_ERROR([hfst-strings2fst is needed])])
-       AC_PATH_PROG([HMINUS], [hfst-subtract], [no])
-       AS_IF([test "x$HCAT" = xno],
-             [AC_MSG_ERROR([hfst-subtract is needed])])
-       AC_PATH_PROG([HREW], [hfst-reweight], [no])
-       AS_IF([test "x$HREW" = xno],
-             [AC_MSG_ERROR([hfst-reweight is needed for weights])])
-       AC_PATH_PROG([HOSPELL], [hfst-ospell], [no])
-       AS_IF([test "x$HOSPELL" = "xno"],
-             [AC_MSG_WARN([hfst-ospell is needed for spell-checking])])
-       AC_PATH_PROG([HLOOKUP], [hfst-lookup], [no])
-       AS_IF([test "x$HLOOKUP" = "xno"],
-             [AC_MSG_WARN([hfst-lookup is needed for bash scripts])])
-       AC_PATH_PROG([ADT], [apertium-destxt], [cat])
-       AS_IF([test x$ADT = xcat],
-          [AC_MSG_WARN([corpus analysis script works better with apertium tools])])],
-    [AS_IF([test x$with_hfst != xno],
-           [AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], [HAVE_HFST=1], [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
-    AC_SUBST([HLEXC], $with_hfst/hfst-lexc)
-    AC_SUBST([HTWOLC], $with_hfst/hfst-twolc)
-    AC_SUBST([HIC], $with_hfst/hfst-compose-intersect)
-    AC_SUBST([HINV], $with_hfst/hfst-invert)
-    AC_SUBST([HU2W], $with_hfst/hfst-unweighted2weighted)
-    AC_SUBST([HF2F], $with_hfst/hfst-fst2fst)
-    AC_SUBST([HPR], $with_hfst/hfst-project)
-    AC_SUBST([HRUNR], $with_hfst/hfst-lookup)
-    AC_SUBST([HREGEX], $with_hfst/hfst-regexp2fst)
-    AC_SUBST([HSUB], $with_hfst/hfst-substitute)
-    AC_SUBST([HMIN], $with_hfst/hfst-minimize)
-    AC_SUBST([HCOMP], $with_hfst/hfst-compose)
-    AC_SUBST([HT2F], $with_hfst/hfst-txt2fst)
-    AC_SUBST([HIX], $with_hfst/hfst-conjunct)
-    AC_SUBST([HSPL], $with_hfst/hfst-split)
-    AC_SUBST([HPROC], $with_hfst/hfst-proc)
-    AC_SUBST([HAPROC], $with_hfst/hfst-apertium-proc)
-    AC_SUBST([HREP], $with_hfst/hfst-repeat)
-    AC_SUBST([HCAT], $with_hfst/hfst-concatenate)
-    AC_SUBST([HUN], $with_hfst/hfst-disjunct)
-    AC_SUBST([HS2F], $with_hfst/hfst-strings2fst)
-    AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
-    AC_SUBST([HOSPELL], $with_hfst/hfst-ospell)
-    AC_SUBST([HLOOKUP], $with_hfst/hfst-lookup)
-    AC_SUBST([HREW], $with_hfst/hfst-reweight)])
-])
+AS_CASE([$with_hfst],
+        [yes],
+        [AC_PATH_PROG([HLEXC], [hfst-lexc], [no])
+         AS_IF([test "x$HLEXC" = "xno"],
+               [AC_MSG_ERROR([hfst-lexc is needed])])
+         AC_PATH_PROG([HTWOLC], [hfst-twolc], [no])
+         AS_IF([test "x$HTWOLC" = "xno"],
+               [AC_MSG_ERROR([hfst-twolc is needed])])
+         AC_PATH_PROG([HIC], [hfst-compose-intersect], [no])
+         AS_IF([test "x$HIC" = "xno"],
+               [AC_MSG_ERROR([hfst-compose-intersect is needed])])
+         AC_PATH_PROG([HINV], [hfst-invert], [no])
+         AS_IF([test "x$HINV" = "xno"],
+               [AC_MSG_ERROR([hfst-invert is needed])])
+         AC_PATH_PROG([HREGEX], [hfst-regexp2fst], [no])
+         AS_IF([test "x$HREGEX" = "xno"],
+               [AC_MSG_ERROR([hfst-regexp2fst is needed])])
+         AC_PATH_PROG([HSUB], [hfst-substitute], [no])
+         AS_IF([test "x$HSUB" = "xno"],
+               [AC_MSG_ERROR([hfst-substitute is needed])])
+         AC_PATH_PROG([HPR], [hfst-project], [no])
+         AS_IF([test "x$HPR" = "xno"],
+               [AC_MSG_ERROR([hfst-project is needed for speller automata])])
+         AC_PATH_PROG([HMIN], [hfst-minimize], [no])
+         AS_IF([test "x$HMIN" = "xno"],
+               [AC_MSG_ERROR([hfst-minimize is needed])])
+         AC_PATH_PROG([HF2F], [hfst-fst2fst], [no])
+         AS_IF([test "x$HF2F" = "xno"],
+               [AC_MSG_ERROR([hfst-fsts2fst is needed for optimized automata])])
+         AC_PATH_PROG([HRUNR], [hfst-lookup], [no])
+         AS_IF([test "x$HRUNR" = "xno"],
+               [AC_MSG_ERROR([hfst-lookup is needed for regression tests])])
+         AC_PATH_PROG([HCOMP], [hfst-compose], [no])
+         AS_IF([test "x$HCOMP" = "xno"],
+               [AC_MSG_ERROR([hfst-compose is needed])])
+         AC_PATH_PROG([HT2F], [hfst-txt2fst], [no])
+         AS_IF([test "x$HT2F" = "xno"],
+               [AC_MSG_ERROR([hfst-txt2fst is needed])])
+         AC_PATH_PROG([HSPL], [hfst-split], [no])
+         AS_IF([test "x$HSPL" = "xno"],
+               [AC_MSG_ERROR([hfst-split is needed])])
+         AC_PATH_PROG([HIX], [hfst-conjunct], [no])
+         AS_IF([test "x$HIX" = "xno"],
+               [AC_MSG_ERROR([hfst-conjunct is needed])])
+         AC_PATH_PROG([HPROC], [hfst-proc hfst-apertium-proc], [no])
+         AS_IF([test "x$HPROC" = "xno"],
+               [AC_MSG_WARN([hfst-proc is needed for some corpus analysis])])
+         AC_PATH_PROG([HREP], [hfst-repeat], [no])
+         AS_IF([test "x$HREP" = xno],
+               [AC_MSG_ERROR([hfst-repeat is needed for edit distance repetition])])
+         AC_PATH_PROG([HCAT], [hfst-concatenate], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [AC_MSG_ERROR([hfst-concatenate is needed])])
+         AC_PATH_PROG([HUN], [hfst-disjunct], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [AC_MSG_ERROR([hfst-disjunct is needed])])
+         AC_PATH_PROG([HS2F], [hfst-strings2fst], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [AC_MSG_ERROR([hfst-strings2fst is needed])])
+         AC_PATH_PROG([HMINUS], [hfst-subtract], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [AC_MSG_ERROR([hfst-subtract is needed])])
+         AC_PATH_PROG([HREW], [hfst-reweight], [no])
+         AS_IF([test "x$HREW" = xno],
+               [AC_MSG_ERROR([hfst-reweight is needed for weights])])
+         AC_PATH_PROG([HOSPELL], [hfst-ospell], [no])
+         AS_IF([test "x$HOSPELL" = "xno"],
+               [AC_MSG_WARN([hfst-ospell is needed for spell-checking])])
+         AC_PATH_PROG([HLOOKUP], [hfst-lookup], [no])
+         AS_IF([test "x$HLOOKUP" = "xno"],
+               [AC_MSG_WARN([hfst-lookup is needed for bash scripts])])
+         WITH_HFST=yes],
+        [check],
+        [WITH_HFST=yes
+         AC_PATH_PROG([HLEXC], [hfst-lexc], [no])
+         AS_IF([test "x$HLEXC" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HTWOLC], [hfst-twolc], [no])
+         AS_IF([test "x$HTWOLC" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HIC], [hfst-compose-intersect], [no])
+         AS_IF([test "x$HIC" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HINV], [hfst-invert], [no])
+         AS_IF([test "x$HINV" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HREGEX], [hfst-regexp2fst], [no])
+         AS_IF([test "x$HREGEX" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HSUB], [hfst-substitute], [no])
+         AS_IF([test "x$HSUB" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HPR], [hfst-project], [no])
+         AS_IF([test "x$HPR" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HMIN], [hfst-minimize], [no])
+         AS_IF([test "x$HMIN" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HF2F], [hfst-fst2fst], [no])
+         AS_IF([test "x$HF2F" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HRUNR], [hfst-lookup], [no])
+         AS_IF([test "x$HRUNR" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HCOMP], [hfst-compose], [no])
+         AS_IF([test "x$HCOMP" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HT2F], [hfst-txt2fst], [no])
+         AS_IF([test "x$HT2F" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HSPL], [hfst-split], [no])
+         AS_IF([test "x$HSPL" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HIX], [hfst-conjunct], [no])
+         AS_IF([test "x$HIX" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HPROC], [hfst-proc hfst-apertium-proc], [no])
+         AS_IF([test "x$HPROC" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HREP], [hfst-repeat], [no])
+         AS_IF([test "x$HREP" = xno],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HCAT], [hfst-concatenate], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HUN], [hfst-disjunct], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HS2F], [hfst-strings2fst], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HMINUS], [hfst-subtract], [no])
+         AS_IF([test "x$HCAT" = xno],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HREW], [hfst-reweight], [no])
+         AS_IF([test "x$HREW" = xno],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HOSPELL], [hfst-ospell], [no])
+         AS_IF([test "x$HOSPELL" = "xno"],
+               [WITH_HFST=no])
+         AC_PATH_PROG([HLOOKUP], [hfst-lookup], [no])
+         AS_IF([test "x$HLOOKUP" = "xno"],
+               [WITH_HFST=no])
+        ],
+        [no],
+        [WITH_HFST=no],
+        [AC_CHECK_FILES([$with_hfst/hfst-lexc $with_hfst/hfst-twolc $with_hfst/hfst-compose-intersect $with_hfst/hfst-invert $with_hfst/hfst-project $with_hfst/hfst-fst2fst $with_hfst/hfst-regexp2fst $with_hfst/hfst-substitute $with_hfst/hfst-minimize $with_hfst/hfst-compose $with_hfst/hfst-txt2fst $with_hfst/hfst-split $with_hfst/hfst-conjunct $with_hfst/hfst-proc $with_hfst/hfst-repeat $with_hfst/hfst-concatenate $with_hfst/hfst-disjunct $with_hfst/hfst-strings2fst $with_hfst/hfst-subtract $with_hfst/hfst-reweight], 
+                        [HAVE_HFST=1],
+                        [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst])])
+         AC_SUBST([HLEXC], $with_hfst/hfst-lexc)
+         AC_SUBST([HTWOLC], $with_hfst/hfst-twolc)
+         AC_SUBST([HIC], $with_hfst/hfst-compose-intersect)
+         AC_SUBST([HINV], $with_hfst/hfst-invert)
+         AC_SUBST([HU2W], $with_hfst/hfst-unweighted2weighted)
+         AC_SUBST([HF2F], $with_hfst/hfst-fst2fst)
+         AC_SUBST([HPR], $with_hfst/hfst-project)
+         AC_SUBST([HRUNR], $with_hfst/hfst-lookup)
+         AC_SUBST([HREGEX], $with_hfst/hfst-regexp2fst)
+         AC_SUBST([HSUB], $with_hfst/hfst-substitute)
+         AC_SUBST([HMIN], $with_hfst/hfst-minimize)
+         AC_SUBST([HCOMP], $with_hfst/hfst-compose)
+         AC_SUBST([HT2F], $with_hfst/hfst-txt2fst)
+         AC_SUBST([HIX], $with_hfst/hfst-conjunct)
+         AC_SUBST([HSPL], $with_hfst/hfst-split)
+         AC_SUBST([HPROC], $with_hfst/hfst-proc)
+         AC_SUBST([HAPROC], $with_hfst/hfst-apertium-proc)
+         AC_SUBST([HREP], $with_hfst/hfst-repeat)
+         AC_SUBST([HCAT], $with_hfst/hfst-concatenate)
+         AC_SUBST([HUN], $with_hfst/hfst-disjunct)
+         AC_SUBST([HS2F], $with_hfst/hfst-strings2fst)
+         AC_SUBST([HMINUS], $with_hfst/hfst-subtract)
+         AC_SUBST([HOSPELL], $with_hfst/hfst-ospell)
+         AC_SUBST([HLOOKUP], $with_hfst/hfst-lookup)
+         AC_SUBST([HREW], $with_hfst/hfst-reweight)
+         WITH_HFST=yes])
+AS_CASE([$with_hfst_rs],
+        [yes],
+        [AC_PATH_PROG([HFST_RS], [hfst], [no])
+         AS_IF([test "x$HFST_RS" = "xno"],
+               [AC_MSG_ERROR([hfst is needed])])
+         WITH_HFST_RS=yes],
+        [check],
+        [WITH_HFST_RS=yes
+         AC_PATH_PROG([HFST_RS], [hfst], [no])
+         AS_IF([test "x$HFST_RS" = "xno"],
+               [WITH_HFST_RS=no])
+        ],
+        [no],
+        [WITH_HFST_RS=no],
+        [AC_CHECK_FILES([$with_hfst_rs/hfst],
+                        [HAVE_HFST_RS=1],
+                        [AC_MSG_ERROR([HFST commandline tools are needed in $with_hfst_rs])])
+         AC_SUBST([HFST_RS], $with_hfst_rs/hfst)])
+AC_MSG_CHECKING([which backend are we using])
+AS_IF([test x$WITH_HFST_RS = xyes],
+      [AC_SUBST([HLEXC], ["$HFST_RS lexc"])
+       AC_SUBST([HTWOLC], ["$HFST_RS twolc"])
+       AC_SUBST([HIC], ["$HFST_RS compose-intersect"])
+       AC_SUBST([HINV], ["$HFST_RS invert"])
+       AC_SUBST([HU2W], ["$HFST_RS unweighted2weighted"])
+       AC_SUBST([HF2F], ["$HFST_RS fst2fst"])
+       AC_SUBST([HPR], ["$HFST_RS project"])
+       AC_SUBST([HRUNR], ["$HFST_RS lookup"])
+       AC_SUBST([HREGEX], ["$HFST_RS regex2fst"])
+       AC_SUBST([HSUB], ["$HFST_RS substitute"])
+       AC_SUBST([HMIN], ["$HFST_RS minimise"])
+       AC_SUBST([HCOMP], ["$HFST_RS compose"])
+       AC_SUBST([HT2F], ["$HFST_RS txt2fst"])
+       AC_SUBST([HIX], ["$HFST_RS intersect"])
+       AC_SUBST([HSPL], ["$HFST_RS split"])
+       AC_SUBST([HPROC], ["$HFST_RS proc"])
+       AC_SUBST([HAPROC], ["$HFST_RS apertium-proc"])
+       AC_SUBST([HREP], ["$HFST_RS repeat"])
+       AC_SUBST([HCAT], ["$HFST_RS concatenate"])
+       AC_SUBST([HUN], ["$HFST_RS disjunct"])
+       AC_SUBST([HS2F], ["$HFST_RS strings2fst"])
+       AC_SUBST([HMINUS], ["$HFST_RS subtract"])
+       AC_SUBST([HLOOKUP], ["$HFST_RS lookup"])
+       AC_SUBST([HREW], ["$HFST_RS reweight"])
+       AC_MSG_RESULT([rusty])],
+      [AS_IF([test x$WITH_HFST = xyes],
+             [AC_MSG_RESULT([c++])],
+             [AC_MSG_RESULT([none])
+              AC_MSG_ERROR([found neither HFST nor HFST-rs])])])
+
+
+
 AC_PATH_PROG([CGCOMP], [cg-comp], [false])
 AC_PATH_PROG([CGPROC], [cg-proc], [false])
 AM_CONDITIONAL([CAN_VISLCG3], [test x$CGCOMP != xfalse])
+AC_PATH_PROG([ADT], [apertium-destxt], [cat])
+AS_IF([test x$ADT = xcat],
+      [AC_MSG_WARN([corpus analysis script works better with apertium tools])])
 
 AS_IF([test "x$enable_voikko" = "xyes"],
       [AC_PATH_PROG([ZIP], [zip], [false])
