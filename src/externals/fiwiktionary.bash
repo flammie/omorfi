@@ -28,8 +28,8 @@ fi
 bash fiwikt2omorfi.bash "$FWPREFIX.xml"  > "$FWPREFIX.tsv.noheaders"
 printf "lemma\thomonym\tnew_para\torigin\n" | cat - "$FWPREFIX.tsv.noheaders" \
     > "$FWPREFIX.tsv.unsort"
-python ../python/tsvsort.py -i "$FWPREFIX.tsv.unsort" -o "$FWPREFIX.tsv"
-python ../python/tsvmerge.py -i ../lexemes.tsv -m "$FWPREFIX.tsv" \
+python ../db-scripts/tsvsort.py -i "$FWPREFIX.tsv.unsort" -o "$FWPREFIX.tsv"
+python ../db-scripts/tsvmerge.py -i ../lexemes.tsv -m "$FWPREFIX.tsv" \
     -o ../lexemes+fiwikt.tsv
 diff -u ../lexemes.tsv ../lexemes+fiwikt.tsv
 echo if nothing broke just cp ../lexemes+fiwikt.tsv ../lexemes.tsv and

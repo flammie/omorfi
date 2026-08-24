@@ -590,6 +590,7 @@ NOUN_OMMEL	NOUN	NOUN	49	H	False	strengthen	back	None	None	False	False	mmel	mel
 NOUN_ONKI	NOUN	NOUN	7	G	False	weaken	back	None	None	False	False	ki	ki
 NOUN_ONNET	NOUN	NOUN	7	J	obligatory	weaken	back	None	None	False	False	net	et
 NOUN_ONNI	NOUN	NOUN	7	None	False	weaken	back	None	None	False	False	i	i
+ADJ_OOKOO	ADJ	ADJECTIVE	18	None	False	weaken	back	o	None	False	False	oo	o
 NOUN_OOKOO	NOUN	NOUN	18	None	False	weaken	back	o	None	False	False	oo	o
 NOUN_OPINNOT	NOUN	NOUN	1	J	obligatory	weaken	back	None	None	False	False	nnot	not
 NOUN_ORI	NOUN	NOUN	48	None	False	strengthen	back	i	None	False	False	i	i
